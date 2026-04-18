@@ -1,0 +1,31 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+---
+<BaseLayout
+  title="このサイトについて"
+  description="GitLab Handbook 非公式日本語訳サイトについて"
+>
+  <h1>このサイトについて</h1>
+  <p>
+    このサイトは <a href="https://handbook.gitlab.com/" rel="external noopener">GitLab Handbook</a>
+    のコミュニティによる非公式日本語訳プロジェクトです。
+  </p>
+
+  <h2>翻訳の方針</h2>
+  <ul>
+    <li>翻訳は <a href="https://claude.com/" rel="external noopener">Anthropic Claude</a> による機械翻訳を基にしています。</li>
+    <li>原文の更新を定期的に検出し、差分のみ再翻訳します。</li>
+    <li>翻訳が古い可能性があるページには警告バナーを表示します。</li>
+  </ul>
+
+  <h2>ライセンスと免責事項</h2>
+  <ul>
+    <li>原文ライセンス: <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="external noopener">CC BY-SA 4.0</a></li>
+    <li>本翻訳も同ライセンスで配布します。</li>
+    <li>このサイトは GitLab Inc. とは関係ありません。GitLab のロゴ・マスコット・ブランドカラーは使用していません。</li>
+    <li>正確性が重要な場合は、必ず原文 (英語) を参照してください。</li>
+  </ul>
+
+  <h2>コントリビューション</h2>
+  <p>誤訳の修正や改善提案は GitHub リポジトリの Issue / Pull Request で受け付けています。</p>
+</BaseLayout>

@@ -1,0 +1,39 @@
+# infra/
+
+Terraform で Cloudflare リソースを管理します。
+
+## 管理対象
+
+| リソース | 用途 |
+| --- | --- |
+| `cloudflare_pages_project.site` | サイトホスティング（direct upload 型） |
+| `cloudflare_pages_domain.site` | サイトのカスタムドメイン (任意) |
+| `cloudflare_record.site` | サイトドメインの CNAME (任意) |
+| `cloudflare_r2_bucket.images` | ハンドブック画像バケット |
+| `cloudflare_r2_custom_domain.images` | R2 公開用カスタムドメイン (任意) |
+
+Pages は direct upload 型にしており、デプロイは GitHub Actions (`.github/workflows/deploy.yml`) から `wrangler` / `pages-action` で行います。Terraform はインフラの宣言のみを担当し、ビルド成果物の push は行いません。
+
+## セットアップ
+
+```bash
+cd infra
+cp terraform.tfvars.example terraform.tfvars   # 値を埋める
+export CLOUDFLARE_API_TOKEN=...                # 必要権限は providers.tf 参照
+
+terraform init
+terraform plan
+terraform apply
+```
+
+## state
+
+デフォルトはローカル state です。チームで共有する場合は [backend.tf](./backend.tf) のコメントアウト部分を有効化し、R2 を S3 互換バックエンドとして使ってください。
+
+## トークン権限
+
+Cloudflare API Token に必要な権限：
+
+- Account · Cloudflare Pages · Edit
+- Account · Workers R2 Storage · Edit
+- Zone · DNS · Edit（`zone_id` を設定する場合のみ）

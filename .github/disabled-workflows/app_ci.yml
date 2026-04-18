@@ -1,0 +1,90 @@
+name: App CI
+
+on:
+  pull_request:
+    branches:
+      - main
+    paths:
+      - 'src/**'
+      - 'scripts/**'
+      - 'public/**'
+      - 'package.json'
+      - 'package-lock.json'
+      - 'astro.config.mjs'
+      - 'tsconfig.json'
+      - 'tailwind.config.mjs'
+      - '.github/workflows/app_ci.yml'
+
+permissions:
+  contents: read
+  pull-requests: read
+
+concurrency:
+  group: app-ci-${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  # ---------------------------------------------------------------------------
+  # Build the site and validate types + content schema.
+  #   - `astro check` verifies TypeScript and content-collection frontmatter
+  #     against the zod schema in src/content/config.ts.
+  #   - `astro build` catches issues that pure type checks miss (broken
+  #     imports, invalid layouts, integration failures, etc.).
+  # No submodule checkout: the build only consumes files under
+  # src/content/ja/handbook/, which are committed to this repo.
+  # ---------------------------------------------------------------------------
+  build:
+    name: Build & Type Check
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - uses: actions/setup-node@49933ea5288caeca8642d1e84afbd3f7d6820020 # v4.4.0
+        with:
+          node-version: '22'
+          cache: 'npm'
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Astro check (types + content schema)
+        run: npm run check
+
+      - name: Build
+        run: npm run build
+
+  # ---------------------------------------------------------------------------
+  # Flag PRs that introduce new dependencies with known vulnerabilities or
+  # incompatible licenses before they land.
+  # ---------------------------------------------------------------------------
+  dependency-review:
+    name: Dependency Review
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+
+      - uses: actions/dependency-review-action@2031cfc080254a8a887f58cffee85186f0e49e48 # v4.9.0
+        with:
+          fail-on-severity: high
+          comment-summary-in-pr: on-failure
+          # Reject copyleft licenses that would bind the entire codebase.
+          deny-licenses: AGPL-1.0-or-later, AGPL-3.0-or-later, GPL-2.0-or-later, GPL-3.0-or-later
+
+  # ---------------------------------------------------------------------------
+  # Scan the diff for accidentally-committed secrets (API tokens, keys, etc.).
+  # fetch-depth: 0 is required so gitleaks can diff the full history.
+  # ---------------------------------------------------------------------------
+  secret-scan:
+    name: Secret Scan (gitleaks)
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+    steps:
+      - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
+        with:
+          fetch-depth: 0
+
+      - uses: gitleaks/gitleaks-action@ff98106e4c7b2bc287b24eaf42907196329070c7 # v2.3.9
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}

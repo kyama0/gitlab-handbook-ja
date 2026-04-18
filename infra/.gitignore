@@ -1,0 +1,13 @@
+.terraform/
+.terraform.lock.hcl.*.bak
+
+# Never commit secrets or actual state
+terraform.tfvars
+*.auto.tfvars
+terraform.tfstate
+terraform.tfstate.*
+crash.log
+crash.*.log
+
+# Plan output
+*.tfplan

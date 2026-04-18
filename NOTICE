@@ -1,0 +1,33 @@
+NOTICE
+
+This project contains translations derived from the GitLab Handbook.
+
+Original work
+  Title:   GitLab Handbook
+  URL:     https://handbook.gitlab.com/
+  Source:  https://gitlab.com/gitlab-com/content-sites/handbook
+  License: Creative Commons Attribution-ShareAlike 4.0 International
+           (CC BY-SA 4.0)
+  Rights:  (c) GitLab Inc. and contributors
+
+Modifications made in this project
+  - Translated from English into Japanese.
+  - Layout, navigation, and typography adapted for Japanese readers.
+  - Images are served via a separate CDN (Cloudflare R2) for performance;
+    original image content is unchanged.
+  - Some links to GitLab-internal tools (Slack, Workday, etc.) are kept
+    as in the original; they will not work for external readers.
+
+Distribution
+  This translated work is distributed under the same license as the
+  original: CC BY-SA 4.0. See LICENSE.
+
+Trademarks (not licensed)
+  "GitLab", the GitLab logo, and the GitLab Tanuki mascot are trademarks
+  of GitLab Inc. This project does not use those marks and is not
+  affiliated with, endorsed by, or sponsored by GitLab Inc.
+
+Disclaimer
+  This is an unofficial translation provided for convenience. For
+  authoritative and up-to-date information, always refer to the
+  original English handbook at https://handbook.gitlab.com/.

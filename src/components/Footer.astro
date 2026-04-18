@@ -1,0 +1,30 @@
+---
+interface Props {
+  upstreamUrl?: string | null;
+}
+const { upstreamUrl } = Astro.props;
+---
+<footer class="border-t border-gray-200 bg-gray-50 text-sm text-gray-600">
+  <div class="max-w-5xl mx-auto px-4 py-6 space-y-2">
+    <p>
+      このサイトは
+      <a href="https://handbook.gitlab.com/" rel="external noopener">GitLab Handbook</a>
+      の非公式日本語訳です。GitLab Inc. とは関係ありません。
+    </p>
+    <p>
+      原文ライセンス:
+      <a href="https://creativecommons.org/licenses/by-sa/4.0/" rel="external noopener">CC BY-SA 4.0</a>
+      ／ 本翻訳も同ライセンスで配布しています。
+      {upstreamUrl && (
+        <>
+          {' · '}
+          <a href={upstreamUrl} rel="external noopener">このページの原文</a>
+        </>
+      )}
+    </p>
+    <p class="text-xs text-gray-500">
+      "GitLab", the GitLab logo, and the GitLab Tanuki are trademarks of GitLab Inc.
+      and are not used on this site.
+    </p>
+  </div>
+</footer>

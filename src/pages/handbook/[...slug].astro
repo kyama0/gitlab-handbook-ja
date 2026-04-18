@@ -1,0 +1,41 @@
+---
+import BaseLayout from '~/layouts/BaseLayout.astro';
+import StaleBanner from '~/components/StaleBanner.astro';
+import { getCollection, type CollectionEntry } from 'astro:content';
+
+export async function getStaticPaths() {
+  const pages = await getCollection('handbook');
+  return pages.map((page) => ({
+    params: { slug: page.slug },
+    props: { page },
+  }));
+}
+
+type Props = { page: CollectionEntry<'handbook'> };
+const { page } = Astro.props;
+const { Content } = await page.render();
+
+const upstreamBase = import.meta.env.PUBLIC_UPSTREAM_BASE ?? 'https://handbook.gitlab.com';
+const upstreamUrl = new URL(page.data.upstream_path, upstreamBase).toString();
+---
+<BaseLayout
+  title={page.data.title}
+  description={page.data.description}
+  upstreamPath={page.data.upstream_path}
+>
+  <article class="max-w-prose">
+    {page.data.stale && <StaleBanner upstreamUrl={upstreamUrl} />}
+    <h1>{page.data.title}</h1>
+    <Content />
+    <hr class="my-8 border-gray-200" />
+    <p class="text-sm text-gray-500">
+      原文:
+      <a href={upstreamUrl} rel="external noopener">{upstreamUrl}</a>
+      {page.data.translated_at && (
+        <>
+          {' · '}翻訳: {new Date(page.data.translated_at).toLocaleDateString('ja-JP')} ({page.data.translator})
+        </>
+      )}
+    </p>
+  </article>
+</BaseLayout>

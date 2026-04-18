@@ -1,0 +1,12 @@
+---
+interface Props {
+  upstreamUrl: string;
+}
+const { upstreamUrl } = Astro.props;
+---
+<div class="border border-amber-300 bg-amber-50 text-amber-900 text-sm rounded px-3 py-2 my-4">
+  このページの翻訳は原文の最新版に追随できていない可能性があります。
+  正確性が重要な場合は
+  <a href={upstreamUrl} rel="external noopener" class="underline">原文 (EN)</a>
+  をご確認ください。
+</div>

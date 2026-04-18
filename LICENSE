@@ -1,0 +1,23 @@
+Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0)
+
+This repository's translated content is licensed under CC BY-SA 4.0,
+matching the license of the original GitLab Handbook.
+
+Full license text: https://creativecommons.org/licenses/by-sa/4.0/legalcode
+
+Attribution:
+  Original work: GitLab Handbook (https://handbook.gitlab.com/)
+  Original license: CC BY-SA 4.0
+  This work: Japanese translation by the gitlab-handbook-ja contributors.
+  Changes: Translated from English into Japanese; some formatting and
+  navigation adapted for Japanese readers. See NOTICE for details.
+
+Trademarks:
+  "GitLab", the GitLab logo, and the GitLab Tanuki mascot are trademarks
+  of GitLab Inc. and are NOT covered by this license. This project does
+  not use those marks and is not affiliated with GitLab Inc.
+
+The code and configuration files in this repository (outside of
+translated content under src/content/) are also provided under CC BY-SA 4.0
+for simplicity. If you need a different license for the code portion,
+please open an issue.
