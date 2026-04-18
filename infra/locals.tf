@@ -15,4 +15,13 @@ locals {
   # Pages Functions runtime
   compatibility_date  = "2025-09-01"
   compatibility_flags = ["nodejs_compat"]
+
+  production_env_vars = merge(
+    local.images_domain != null ? {
+      PUBLIC_R2_BASE = { type = "plain_text", value = "https://${local.images_domain}" }
+    } : {},
+    local.site_domain != null ? {
+      SITE_URL = { type = "plain_text", value = "https://${local.site_domain}" }
+    } : {},
+  )
 }
