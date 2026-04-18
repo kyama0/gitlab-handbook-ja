@@ -13,14 +13,7 @@ resource "cloudflare_pages_project" "site" {
     production = {
       compatibility_date  = local.compatibility_date
       compatibility_flags = local.compatibility_flags
-      env_vars = merge(
-        local.images_domain != null ? {
-          PUBLIC_R2_BASE = { type = "plain_text", value = "https://${local.images_domain}" }
-        } : {},
-        local.site_domain != null ? {
-          SITE_URL = { type = "plain_text", value = "https://${local.site_domain}" }
-        } : {},
-      )
+      env_vars            = length(local.production_env_vars) > 0 ? local.production_env_vars : null
     }
     preview = {
       compatibility_date  = local.compatibility_date
