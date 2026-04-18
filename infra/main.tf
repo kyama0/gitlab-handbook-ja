@@ -45,13 +45,13 @@ resource "cloudflare_pages_domain" "site" {
   count        = local.site_domain != null ? 1 : 0
   account_id   = var.account_id
   project_name = cloudflare_pages_project.site.name
-  name         = local.site_domain
+  name         = coalesce(local.site_domain, "placeholder.invalid")
 }
 
 resource "cloudflare_dns_record" "site" {
   count   = local.site_domain != null && local.zone_id != null ? 1 : 0
-  zone_id = local.zone_id
-  name    = local.site_domain
+  zone_id = coalesce(local.zone_id, "placeholder")
+  name    = coalesce(local.site_domain, "placeholder.invalid")
   type    = "CNAME"
   content = "${cloudflare_pages_project.site.name}.pages.dev"
   proxied = true
@@ -63,7 +63,7 @@ resource "cloudflare_r2_custom_domain" "images" {
   count       = local.images_domain != null && local.zone_id != null ? 1 : 0
   account_id  = var.account_id
   bucket_name = cloudflare_r2_bucket.images.name
-  domain      = local.images_domain
-  zone_id     = local.zone_id
+  domain      = coalesce(local.images_domain, "placeholder.invalid")
+  zone_id     = coalesce(local.zone_id, "placeholder")
   enabled     = true
 }
