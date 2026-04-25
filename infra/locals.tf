@@ -6,10 +6,10 @@ locals {
   # Allowed: apac, eeur, enam, weur, wnam, oc. Null for automatic.
   r2_location = "apac"
 
-  # Custom domain settings — leave all three null to skip custom domain wiring
+  # Custom domain settings — leave them null to skip custom domain wiring
   # and only use the default *.pages.dev URL.
-  zone_id       = null
-  site_domain   = null
+  zone_id       = "975c43daab7967831b8cd29d07830937"
+  site_domain   = "gl-handbook-ja.page"
   images_domain = null
 
   # Pages Functions runtime
