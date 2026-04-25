@@ -36,8 +36,8 @@ terraform apply
 
 Cloudflare API Token に必要な権限：
 
-- すべてのアカウント · Cloudflare Pages · 編集
-- すべてのアカウント · Workers R2 Storage · 編集
-- すべてのアカウント · アカウント ルールセット · 編集（Bulk Redirect の ruleset 用）
-- すべてのアカウント · フィルタ リストについて · 編集（Bulk Redirect の list / list_item 用）
-- 該当ゾーン · DNS · 編集（`zone_id` を設定する場合のみ）
+- アカウント · Cloudflare Pages · 編集
+- アカウント · Workers R2 Storage · 編集
+- アカウント · アカウント ルールセット · 編集（Bulk Redirect の ruleset 用）
+- アカウント · フィルタ リストについて · 編集（Bulk Redirect の list / list_item 用）
+- ゾーン · DNS · 編集（`zone_id` を設定する場合のみ）
