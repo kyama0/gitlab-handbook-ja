@@ -1,0 +1,31 @@
+---
+interface Heading {
+  depth: number;
+  slug: string;
+  text: string;
+}
+interface Props {
+  headings: Heading[];
+}
+const { headings } = Astro.props;
+const items = headings.filter((h) => h.depth === 2 || h.depth === 3);
+---
+{items.length > 0 && (
+  <nav aria-label="このページの目次" class="text-[15px]">
+    <div class="mb-3 text-xs font-bold uppercase tracking-wider text-gray-500">
+      On this page
+    </div>
+    <ul class="list-none pl-0 space-y-1">
+      {items.map((h) => (
+        <li class={h.depth === 3 ? 'ml-4' : ''}>
+          <a
+            href={`#${h.slug}`}
+            class="block py-0.5 no-underline text-gray-600 hover:text-accent-600"
+          >
+            {h.text}
+          </a>
+        </li>
+      ))}
+    </ul>
+  </nav>
+)}

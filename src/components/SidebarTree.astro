@@ -1,0 +1,67 @@
+---
+export interface NavNode {
+  title: string;
+  href: string | null;
+  weight: number;
+  children: NavNode[];
+}
+interface Props {
+  nodes: NavNode[];
+  pathname: string;
+}
+const { nodes, pathname } = Astro.props;
+
+function containsActive(node: NavNode, pathname: string): boolean {
+  if (node.href === pathname) return true;
+  return node.children.some((c) => containsActive(c, pathname));
+}
+
+function linkClass(active: boolean): string {
+  return active
+    ? 'block flex-1 no-underline font-semibold text-accent-700'
+    : 'block flex-1 no-underline text-gray-700 hover:text-accent-700';
+}
+---
+<ul class="list-none pl-0 my-0 leading-snug">
+  {nodes.map((n) => {
+    const active = n.href === pathname;
+    const hasChildren = n.children.length > 0;
+    const expanded = hasChildren && containsActive(n, pathname);
+    return (
+      <li>
+        {hasChildren ? (
+          <details open={expanded} class="nav-details">
+            <summary class="nav-summary flex items-center gap-1.5 py-1.5 cursor-pointer select-none">
+              <svg
+                class="nav-chevron w-3 h-3 text-gray-500 shrink-0"
+                viewBox="0 0 12 12"
+                fill="none"
+                stroke="currentColor"
+                stroke-width="2"
+                aria-hidden="true"
+              >
+                <polyline points="4,2 8,6 4,10" stroke-linecap="round" stroke-linejoin="round" />
+              </svg>
+              {n.href ? (
+                <a href={n.href} class={linkClass(active)}>{n.title}</a>
+              ) : (
+                <span class="block flex-1 text-gray-900 font-medium">{n.title}</span>
+              )}
+            </summary>
+            <div class="ml-4">
+              <Astro.self nodes={n.children} pathname={pathname} />
+            </div>
+          </details>
+        ) : (
+          <div class="flex items-center py-1.5 pl-[18px]">
+            {n.href ? (
+              <a href={n.href} class={linkClass(active)}>{n.title}</a>
+            ) : (
+              <span class="text-gray-900 font-medium">{n.title}</span>
+            )}
+          </div>
+        )}
+      </li>
+    );
+  })}
+</ul>

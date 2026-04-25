@@ -7,9 +7,10 @@ interface Props {
   title: string;
   description?: string;
   upstreamPath?: string;
+  wide?: boolean;
 }
 
-const { title, description, upstreamPath } = Astro.props;
+const { title, description, upstreamPath, wide = false } = Astro.props;
 const siteTitle = 'GitLab Handbook 非公式日本語訳';
 const fullTitle = title === siteTitle ? title : `${title} | ${siteTitle}`;
 const upstreamBase = import.meta.env.PUBLIC_UPSTREAM_BASE ?? 'https://handbook.gitlab.com';
@@ -32,7 +33,7 @@ const upstreamUrl = upstreamPath ? new URL(upstreamPath, upstreamBase).toString(
   </head>
   <body class="min-h-screen flex flex-col">
     <Header />
-    <main class="flex-1 w-full max-w-5xl mx-auto px-4 py-8">
+    <main class={`flex-1 w-full py-8 ${wide ? 'px-4 sm:px-6 lg:px-8' : 'max-w-5xl mx-auto px-4'}`}>
       <slot />
     </main>
     <Footer upstreamUrl={upstreamUrl} />

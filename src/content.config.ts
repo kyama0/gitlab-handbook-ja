@@ -1,10 +1,14 @@
 import { defineCollection, z } from 'astro:content';
+import { glob } from 'astro/loaders';
 
 const handbook = defineCollection({
-  type: 'content',
+  loader: glob({ pattern: '**/*.md', base: './content/ja/handbook' }),
   schema: z.object({
     title: z.string(),
     description: z.string().optional(),
+    // Hugo ordering hint carried over from upstream. Lower values appear first
+    // in the sidebar; missing values default to 0.
+    weight: z.number().optional(),
     // Path of the original English page, relative to handbook.gitlab.com.
     // e.g. "/handbook/engineering/" — used to build hreflang and "original" link.
     upstream_path: z.string(),

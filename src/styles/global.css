@@ -12,15 +12,21 @@
   a {
     @apply text-accent-600 underline decoration-accent-100 underline-offset-2 hover:decoration-accent-500;
   }
-  h1, h2, h3, h4 {
-    @apply font-semibold tracking-tight;
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-bold tracking-tight text-gray-900;
   }
-  h1 { @apply text-3xl mt-8 mb-4; }
-  h2 { @apply text-2xl mt-8 mb-3 border-b border-gray-200 pb-1; }
-  h3 { @apply text-xl mt-6 mb-2; }
-  p, ul, ol, blockquote { @apply my-3 leading-7; }
+  h1 { @apply text-4xl mt-4 mb-6 leading-tight; }
+  h2 { @apply text-3xl mt-10 mb-4 leading-snug; }
+  h3 { @apply text-xl mt-8 mb-3; }
+  h4 { @apply text-lg mt-6 mb-2; }
+  h5 { @apply text-base mt-5 mb-2; }
+  h6 { @apply text-base mt-4 mb-2 text-gray-700; }
+  p, ul, ol, blockquote { @apply my-4 leading-8; }
   ul { @apply list-disc pl-6; }
   ol { @apply list-decimal pl-6; }
+  li { @apply my-1.5; }
+  li > ul, li > ol { @apply my-1.5; }
+  li > p { @apply my-1.5; }
   blockquote { @apply border-l-4 border-gray-200 pl-4 text-gray-600 italic; }
   code { @apply font-mono text-[0.9em] bg-gray-100 px-1 py-0.5 rounded; }
   pre { @apply font-mono text-sm bg-gray-900 text-gray-100 p-4 rounded overflow-x-auto my-4; }
@@ -28,4 +34,8 @@
   table { @apply w-full my-4 border-collapse; }
   th, td { @apply border border-gray-200 px-3 py-2 text-left; }
   th { @apply bg-gray-50; }
+  /* Tailwind Preflight forces `img { display: block }`. Upstream handbook
+     pages rely on inline image flow (e.g. rows of icons inside a <p>), so
+     restore inline-block within article content. */
+  article img { @apply inline-block align-middle max-w-full h-auto; }
 }

@@ -40,8 +40,8 @@ async function main() {
   console.log(`Changed files: ${changed.length}`);
   for (const c of changed) console.log(`  [${c.reason}] ${c.path}`);
 
-  // TODO: write changed list to a queue file consumed by translate.ts,
-  // or pipe it directly in-process.
+  // 翻訳は GHA では走らせない方針なので、このリストを使ってローカルで Claude Code
+  // の `translator` サブエージェントを呼び出して翻訳・PR 作成する。
 }
 
 main().catch((err) => {

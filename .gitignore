@@ -13,6 +13,9 @@ dist/
 *.swp
 .DS_Store
 
+# Claude Code per-user settings (committed: .claude/agents/)
+.claude/settings.local.json
+
 # Build artifacts / local caches
 .cache/
 coverage/

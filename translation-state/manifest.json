@@ -1,4 +1,47 @@
 {
   "version": 1,
-  "entries": {}
+  "entries": {
+    "content/handbook/_index.md": {
+      "path": "content/handbook/_index.md",
+      "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
+      "translated_at": "2026-04-19T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a7a8e85aefe83161b75871f9c77e87a83ed97b47ebf79705f69c021286d4ea4b"
+    },
+    "content/handbook/about/_index.md": {
+      "path": "content/handbook/about/_index.md",
+      "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
+      "translated_at": "2026-04-19T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1063f98f47e509f60e036d240b8ab971a73d7b06e797f64000bda0af9adb1ca6"
+    },
+    "content/handbook/about/handbook-usage.md": {
+      "path": "content/handbook/about/handbook-usage.md",
+      "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
+      "translated_at": "2026-04-19T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1558af072d2ae2245b0354a24efd87c7b7cc97c98914cc2e7472cbbb2c74c64c"
+    },
+    "content/handbook/company/_index.md": {
+      "path": "content/handbook/company/_index.md",
+      "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "44180cf8acbfcf08a2c2848a8d5ea94ef6780422a1320f6a84d640a8a7de3cc5"
+    },
+    "content/handbook/company/mission.md": {
+      "path": "content/handbook/company/mission.md",
+      "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
+      "translated_at": "2026-04-19T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1f91800ef24beca75242526ec22a4771831b73605b5347ef7615ab2c75cde41c"
+    },
+    "content/handbook/company/purpose.md": {
+      "path": "content/handbook/company/purpose.md",
+      "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
+      "translated_at": "2026-04-19T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a01ad3d083f5192a80b690fce76fabff9e45dbdaea02d8042b751e1f53a7400"
+    }
+  }
 }

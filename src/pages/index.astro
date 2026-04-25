@@ -1,36 +1,53 @@
 ---
 import BaseLayout from '~/layouts/BaseLayout.astro';
+import Sidebar from '~/components/Sidebar.astro';
 import { getCollection } from 'astro:content';
 
 const pages = await getCollection('handbook');
-pages.sort((a, b) => a.slug.localeCompare(b.slug));
+pages.sort((a, b) => a.id.localeCompare(b.id));
+
+function toSlug(id: string): string {
+  return id.replace(/(^|\/)index$/, '$1').replace(/\/$/, '');
+}
 ---
 <BaseLayout
   title="GitLab Handbook 非公式日本語訳"
   description="GitLab Handbook のコミュニティによる非公式日本語訳。Claude による機械翻訳を基にしています。"
+  wide
 >
-  <h1>GitLab Handbook 非公式日本語訳</h1>
-  <p>
-    <a href="https://handbook.gitlab.com/" rel="external noopener">GitLab Handbook</a>
-    のコミュニティによる非公式日本語訳です。翻訳は Claude による機械翻訳を基にしており、
-    原文の更新に追随して自動的に更新されます。
-  </p>
-  <p>
-    <strong>正確性が要求される場面では、必ず原文 (英語) を参照してください。</strong>
-    このサイトは GitLab Inc. とは一切関係ありません。
-  </p>
+  <div class="lg:grid lg:grid-cols-[14rem_minmax(0,1fr)] lg:gap-10">
+    <div class="hidden lg:block lg:sticky lg:top-4 lg:self-start lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto lg:pr-2">
+      <Sidebar />
+    </div>
+    <article class="min-w-0 text-lg">
+      <h1>GitLab Handbook 非公式日本語訳</h1>
+      <p>
+        <a href="https://handbook.gitlab.com/" rel="external noopener">GitLab Handbook</a>
+        のコミュニティによる非公式日本語訳です。翻訳は Claude による機械翻訳を基にしており、
+        原文の更新に追随して自動的に更新されます。
+      </p>
+      <p>
+        <strong>正確性が要求される場面では、必ず原文 (英語) を参照してください。</strong>
+        このサイトは GitLab Inc. とは一切関係ありません。
+      </p>
 
-  <h2>公開中のページ</h2>
-  {pages.length === 0 ? (
-    <p class="text-gray-500">まだ翻訳済みページはありません。<code>npm run translate</code> を実行してください。</p>
-  ) : (
-    <ul>
-      {pages.map((p) => (
-        <li>
-          <a href={`/handbook/${p.slug}/`}>{p.data.title}</a>
-          {p.data.stale && <span class="ml-2 text-xs text-amber-700">（要更新）</span>}
-        </li>
-      ))}
-    </ul>
-  )}
+      <h2>公開中のページ</h2>
+      {pages.length === 0 ? (
+        <p class="text-gray-500">まだ翻訳済みページはありません。</p>
+      ) : (
+        <ul>
+          {pages.map((p) => {
+            const slug = toSlug(p.id);
+            const href = slug ? `/handbook/${slug}/` : '/handbook/';
+            return (
+              <li>
+                <a href={href}>{p.data.title}</a>
+                {p.data.stale && <span class="ml-2 text-xs text-amber-700">（要更新）</span>}
+              </li>
+            );
+          })}
+        </ul>
+      )}
+    </article>
+  </div>
 </BaseLayout>

@@ -1,0 +1,60 @@
+---
+import { getCollection } from 'astro:content';
+
+interface Props {
+  entryId: string;
+}
+const { entryId } = Astro.props;
+
+const entries = await getCollection('handbook');
+const byId = new Map(entries.map((e) => [e.id, e]));
+
+function toSlug(id: string): string {
+  return id.replace(/(^|\/)index$/, '$1').replace(/\/$/, '');
+}
+function idToHref(id: string): string {
+  const s = toSlug(id);
+  return s ? `/handbook/${s}/` : '/handbook/';
+}
+
+const rawSegments = entryId.split('/');
+if (rawSegments[rawSegments.length - 1] === 'index') rawSegments.pop();
+const segments = rawSegments;
+
+const crumbs: { title: string; href: string | null }[] = [];
+
+const rootEntry = byId.get('index');
+crumbs.push({
+  title: rootEntry?.data.title ?? 'ハンドブック',
+  href: segments.length === 0 ? null : '/handbook/',
+});
+
+let accum = '';
+for (let i = 0; i < segments.length; i++) {
+  accum = accum ? `${accum}/${segments[i]}` : segments[i];
+  const entry = byId.get(accum) ?? byId.get(`${accum}/index`);
+  const isLast = i === segments.length - 1;
+  if (entry) {
+    crumbs.push({
+      title: entry.data.title,
+      href: isLast ? null : idToHref(entry.id),
+    });
+  } else {
+    crumbs.push({ title: segments[i], href: null });
+  }
+}
+---
+<nav aria-label="パンくずリスト" class="text-sm text-gray-600 mb-4">
+  <ol class="list-none pl-0 flex flex-wrap items-center gap-x-1 gap-y-0.5">
+    {crumbs.map((c, i) => (
+      <li class="flex items-center">
+        {i > 0 && <span class="mx-1 text-gray-400" aria-hidden="true">/</span>}
+        {c.href ? (
+          <a href={c.href} class="no-underline hover:underline">{c.title}</a>
+        ) : (
+          <span class="text-gray-900">{c.title}</span>
+        )}
+      </li>
+    ))}
+  </ol>
+</nav>

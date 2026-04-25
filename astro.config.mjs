@@ -1,25 +1,40 @@
+import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
+import { rewriteAssetPaths } from './src/plugins/rewrite-asset-paths.mjs';
+import { headingIds } from './src/plugins/heading-ids.mjs';
 
 // NOTE: Replace with the final production URL before launch.
 const SITE = process.env.SITE_URL ?? 'https://gitlab-handbook-ja.pages.dev';
+const UPSTREAM_BASE = 'https://handbook.gitlab.com';
+// Asset host for absolute paths inside Markdown (`/images/...` etc.). In prod
+// builds set PUBLIC_R2_BASE to the R2 public URL (e.g. https://pub-xxx.r2.dev).
+// When unset, fall back to the upstream handbook so local dev keeps working
+// without an R2 bucket.
+const ASSET_BASE = process.env.PUBLIC_R2_BASE ?? UPSTREAM_BASE;
 
 export default defineConfig({
   site: SITE,
   output: 'static',
   trailingSlash: 'always',
   integrations: [mdx(), sitemap(), tailwind()],
+  markdown: {
+    remarkPlugins: [headingIds(), rewriteAssetPaths({ base: ASSET_BASE })],
+  },
   build: {
     format: 'directory',
   },
   vite: {
+    resolve: {
+      alias: {
+        '~': fileURLToPath(new URL('./src', import.meta.url)),
+      },
+    },
     define: {
-      'import.meta.env.PUBLIC_UPSTREAM_BASE': JSON.stringify('https://handbook.gitlab.com'),
-      'import.meta.env.PUBLIC_R2_BASE': JSON.stringify(
-        process.env.PUBLIC_R2_BASE ?? 'https://images.example.com'
-      ),
+      'import.meta.env.PUBLIC_UPSTREAM_BASE': JSON.stringify(UPSTREAM_BASE),
+      'import.meta.env.PUBLIC_R2_BASE': JSON.stringify(ASSET_BASE),
     },
   },
 });
