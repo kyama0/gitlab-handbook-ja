@@ -6,6 +6,7 @@ on:
       - main
     paths:
       - 'src/**'
+      - 'content/**'
       - 'scripts/**'
       - 'public/**'
       - 'package.json'
@@ -31,7 +32,7 @@ jobs:
   #   - `astro build` catches issues that pure type checks miss (broken
   #     imports, invalid layouts, integration failures, etc.).
   # No submodule checkout: the build only consumes files under
-  # src/content/ja/handbook/, which are committed to this repo.
+  # content/ja/handbook/, which are committed to this repo.
   # ---------------------------------------------------------------------------
   build:
     name: Build & Type Check

@@ -36,7 +36,7 @@ async function main() {
   for (const s of stale) console.log(`  ${s}`);
 
   // TODO: optionally update frontmatter `stale: true` in the corresponding
-  // src/content/ja/handbook/*.md so the UI shows the warning banner.
+  // content/ja/handbook/*.md so the UI shows the warning banner.
   process.exitCode = stale.length > 0 ? 1 : 0;
 }
 

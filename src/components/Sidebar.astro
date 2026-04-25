@@ -1,0 +1,101 @@
+---
+import { getCollection } from 'astro:content';
+import SidebarTree, { type NavNode } from './SidebarTree.astro';
+
+const entries = await getCollection('handbook');
+
+function toSlug(id: string): string {
+  return id.replace(/(^|\/)index$/, '$1').replace(/\/$/, '');
+}
+function idToHref(id: string): string {
+  const slug = toSlug(id);
+  return slug ? `/handbook/${slug}/` : '/handbook/';
+}
+
+const root: NavNode = { title: 'ハンドブック', href: '/handbook/', weight: 0, children: [] };
+const nodeBySlug = new Map<string, NavNode>();
+nodeBySlug.set('', root);
+
+function ensureNode(slug: string, segmentTitle: string): NavNode {
+  const existing = nodeBySlug.get(slug);
+  if (existing) return existing;
+  const node: NavNode = { title: segmentTitle, href: null, weight: 0, children: [] };
+  nodeBySlug.set(slug, node);
+  const segments = slug.split('/');
+  const parentSlug = segments.slice(0, -1).join('/');
+  const parent = ensureNode(parentSlug, segments[segments.length - 2] ?? '');
+  parent.children.push(node);
+  return node;
+}
+
+for (const e of entries) {
+  const slug = toSlug(e.id);
+  const segments = slug.split('/').filter(Boolean);
+  if (segments.length === 0) {
+    root.title = e.data.title;
+    root.href = '/handbook/';
+    root.weight = e.data.weight ?? 0;
+    continue;
+  }
+  const node = ensureNode(segments.join('/'), segments[segments.length - 1]);
+  node.title = e.data.title;
+  node.href = idToHref(e.id);
+  node.weight = e.data.weight ?? 0;
+}
+
+function sortTree(node: NavNode): void {
+  node.children.sort((a, b) => {
+    if (a.weight !== b.weight) return a.weight - b.weight;
+    return a.title.localeCompare(b.title, 'ja');
+  });
+  for (const c of node.children) sortTree(c);
+}
+sortTree(root);
+
+const pathname = Astro.url.pathname;
+---
+<nav aria-label="ハンドブックナビゲーション" class="text-[15px]">
+  <div class="mb-3 text-xs font-bold uppercase tracking-wider text-gray-500">
+    Handbook
+  </div>
+  <ul class="list-none pl-0 my-0 leading-snug">
+    <li>
+      <a
+        href="/handbook/"
+        class={`block py-1.5 no-underline ${
+          pathname === '/handbook/'
+            ? 'font-semibold text-accent-700'
+            : 'text-gray-900 font-medium hover:text-accent-700'
+        }`}
+      >
+        {root.title}
+      </a>
+      {root.children.length > 0 && (
+        <SidebarTree nodes={root.children} pathname={pathname} />
+      )}
+    </li>
+  </ul>
+</nav>
+
+<style is:global>
+  nav[aria-label="ハンドブックナビゲーション"] summary {
+    list-style: none;
+  }
+  nav[aria-label="ハンドブックナビゲーション"] summary::-webkit-details-marker {
+    display: none;
+  }
+  nav[aria-label="ハンドブックナビゲーション"] .nav-chevron {
+    transition: transform 0.15s ease;
+  }
+  nav[aria-label="ハンドブックナビゲーション"] details[open] > summary .nav-chevron {
+    transform: rotate(90deg);
+  }
+</style>
+
+<script>
+  for (const a of document.querySelectorAll<HTMLAnchorElement>(
+    'nav[aria-label="ハンドブックナビゲーション"] summary a'
+  )) {
+    a.addEventListener('click', (e) => e.stopPropagation());
+  }
+</script>
