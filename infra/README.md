@@ -34,12 +34,15 @@ terraform apply
 
 ## トークン権限
 
-Cloudflare API Token に必要な権限：
+Cloudflare API Token に必要な権限（JP UI の表記に合わせる）:
 
-- Account · Cloudflare Pages · Edit
-- Account · Workers R2 Storage · Edit
-- Account · Account Filter Lists · Edit（Bulk Redirect の list / list_item 用）
-- Account · Account Rulesets · Edit（Bulk Redirect の ruleset 用）
-- Zone · DNS · Edit（`zone_id` を設定する場合のみ）
+すべてのアカウント:
+- Cloudflare Pages: 編集
+- Workers R2 Storage: 編集
+- アカウント ルールセット: 編集（Bulk Redirect の ruleset 用）
+- フィルタ リストについて: 編集（Bulk Redirect の list / list_item 用）
 
-Account scope の権限は新規トークン作成時のドロップダウンに **Account を選択した状態** で `Filter Lists` / `Rulesets` を検索すれば候補に出ます。既存トークンの編集 UI では候補が制限されることがあるので、見つからない場合は新規作成して差し替えてください。
+該当ゾーン（`zone_id` を設定する場合のみ）:
+- DNS: 編集
+
+Account scope の権限は **「すべてのアカウント」を選択した状態** で `ルールセット` / `フィルタ` で検索すれば候補に出ます。既存トークンの編集 UI では候補が制限されることがあるので、見つからない場合は新規作成して `CLOUDFLARE_API_TOKEN` secret を差し替えてください。
