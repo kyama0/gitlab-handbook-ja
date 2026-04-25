@@ -7,13 +7,16 @@ import { rewriteAssetPaths } from './src/plugins/rewrite-asset-paths.mjs';
 import { headingIds } from './src/plugins/heading-ids.mjs';
 
 // NOTE: Replace with the final production URL before launch.
-const SITE = process.env.SITE_URL ?? 'https://gitlab-handbook-ja.pages.dev';
+// `||` (not `??`) — GitHub Actions injects unset `vars.*` as empty strings,
+// not undefined, so `??` would not fall back and Astro would reject the
+// empty string with "Invalid URL".
+const SITE = process.env.SITE_URL || 'https://gitlab-handbook-ja.pages.dev';
 const UPSTREAM_BASE = 'https://handbook.gitlab.com';
 // Asset host for absolute paths inside Markdown (`/images/...` etc.). In prod
 // builds set PUBLIC_R2_BASE to the R2 public URL (e.g. https://pub-xxx.r2.dev).
-// When unset, fall back to the upstream handbook so local dev keeps working
-// without an R2 bucket.
-const ASSET_BASE = process.env.PUBLIC_R2_BASE ?? UPSTREAM_BASE;
+// When unset (or empty), fall back to the upstream handbook so local dev
+// keeps working without an R2 bucket.
+const ASSET_BASE = process.env.PUBLIC_R2_BASE || UPSTREAM_BASE;
 
 export default defineConfig({
   site: SITE,
