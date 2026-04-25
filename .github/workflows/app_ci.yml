@@ -63,14 +63,14 @@ jobs:
     name: Dependency Review
     runs-on: ubuntu-latest
     timeout-minutes: 5
-    # Non-blocking: requires GitHub's Dependency graph feature to be enabled
-    # in repo Settings → Code security. Without it, the action errors out;
-    # we still want it surfaced as a warning rather than gating PRs.
-    continue-on-error: true
     steps:
       - uses: actions/checkout@34e114876b0b11c390a56381ad16ebd13914f8d5 # v4.3.1
 
       - uses: actions/dependency-review-action@2031cfc080254a8a887f58cffee85186f0e49e48 # v4.9.0
+        # Requires GitHub's Dependency graph feature, enabled in repo Settings
+        # → Code security. Without it the action errors out; mark the step
+        # non-blocking so the check still surfaces but does not gate PRs.
+        continue-on-error: true
         with:
           fail-on-severity: high
           comment-summary-in-pr: on-failure
