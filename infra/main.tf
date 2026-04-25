@@ -31,6 +31,16 @@ resource "cloudflare_r2_bucket" "images" {
   location   = local.r2_location
 }
 
+# Enables the bucket's managed `pub-<accountid>.r2.dev` subdomain so the site
+# can serve handbook images from R2. Cloudflare rate-limits r2.dev access and
+# documents it for development use, but it is acceptable for low-traffic
+# launches; flip `images_domain` later to shift to a custom domain.
+resource "cloudflare_r2_managed_domain" "images" {
+  account_id  = var.account_id
+  bucket_name = cloudflare_r2_bucket.images.name
+  enabled     = true
+}
+
 # -----------------------------------------------------------------------------
 # Custom domains (optional — only created when the locals are set)
 # -----------------------------------------------------------------------------
