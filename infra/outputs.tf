@@ -19,6 +19,6 @@ output "r2_bucket_name" {
 }
 
 output "images_base_url" {
-  value       = local.images_domain != null ? "https://${local.images_domain}" : null
-  description = "Public base URL for R2 images (null until images_domain is set)."
+  value       = local.images_base_url
+  description = "Public base URL for R2 images. Custom domain when set, otherwise the bucket's managed r2.dev subdomain. Feed into the GitHub Actions `PUBLIC_R2_BASE` repo variable."
 }
