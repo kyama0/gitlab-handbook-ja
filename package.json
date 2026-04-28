@@ -6,7 +6,8 @@
   "description": "Unofficial Japanese translation of the GitLab Handbook",
   "scripts": {
     "dev": "astro dev",
-    "build": "astro build",
+    "build": "astro build && npm run index:search",
+    "index:search": "pagefind --site dist",
     "preview": "astro preview",
     "astro": "astro",
     "check": "astro check",
@@ -21,12 +22,14 @@
     "@astrojs/sitemap": "^3.2.0",
     "@astrojs/tailwind": "^6.0.2",
     "astro": "^6.1.8",
+    "remark-cjk-friendly": "^2.0.1",
     "tailwindcss": "^3.4.19"
   },
   "devDependencies": {
     "@astrojs/check": "^0.9.4",
     "@aws-sdk/client-s3": "^3.650.0",
     "@types/node": "^25.6.0",
+    "pagefind": "^1.5.2",
     "tsx": "^4.19.0",
     "typescript": "^6.0.3",
     "yaml": "^2.8.3"

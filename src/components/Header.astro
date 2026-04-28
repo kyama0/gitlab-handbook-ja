@@ -2,15 +2,17 @@
 // Header intentionally uses plain text (no GitLab logo / Tanuki) to avoid
 // trademark confusion. The "非公式" badge is always visible.
 ---
-<header class="bg-accent-700 text-white">
+<header class="bg-accent-700 text-white relative z-50">
   <div class="w-full px-4 sm:px-6 lg:px-8 py-4 flex items-center justify-between gap-4">
-    <a href="/" class="no-underline flex items-baseline gap-3 text-white hover:text-white">
+    <a href="/" class="no-underline flex items-baseline gap-2 sm:gap-3 text-white hover:text-white shrink-0">
       <span class="text-xl font-semibold tracking-tight">Handbook JA</span>
-      <span class="text-[11px] font-medium uppercase tracking-wider border border-white/50 rounded px-1.5 py-0.5">
+      <span class="hidden sm:inline-block text-[11px] font-medium uppercase tracking-wider border border-white/50 rounded px-1.5 py-0.5 relative -top-1">
         非公式 / Unofficial
       </span>
     </a>
-    <nav class="text-sm flex items-center gap-5">
+
+    <!-- Desktop nav (md+) -->
+    <nav class="hidden md:flex text-sm items-center gap-5">
       <a href="/handbook/" class="text-white/90 hover:text-white no-underline">Handbook</a>
       <a href="/about/" class="text-white/90 hover:text-white no-underline">このサイトについて</a>
       <a
@@ -18,6 +20,152 @@
         rel="external noopener"
         class="text-white/90 hover:text-white no-underline"
       >原文 (EN)</a>
+      <a
+        href="https://github.com/kyama0/gitlab-handbook-ja"
+        rel="external noopener"
+        aria-label="GitHub リポジトリ"
+        title="GitHub リポジトリ"
+        class="text-white/90 hover:text-white no-underline flex items-center"
+      >
+        <svg
+          class="w-6 h-6"
+          viewBox="0 0 24 24"
+          fill="currentColor"
+          aria-hidden="true"
+        >
+          <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.97 3.22 9.18 7.69 10.67.56.1.77-.24.77-.54 0-.27-.01-1.16-.02-2.1-3.13.68-3.79-1.34-3.79-1.34-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.55 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .94-.3 3.09 1.15.9-.25 1.86-.38 2.81-.38s1.91.13 2.81.38c2.15-1.45 3.09-1.15 3.09-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.31-2.63 5.27-5.14 5.54.4.35.76 1.03.76 2.07 0 1.5-.01 2.71-.01 3.07 0 .3.2.65.78.54 4.46-1.49 7.68-5.7 7.68-10.67C23.25 5.48 18.27.5 12 .5z" />
+        </svg>
+      </a>
+      <button
+        type="button"
+        class="header-search-trigger flex items-center gap-1.5 rounded-full bg-white/15 hover:bg-white/25 border border-white/30 hover:border-white/50 transition-colors pl-2.5 pr-2 py-1 text-xs text-white focus:outline-none focus:ring-2 focus:ring-white/60"
+        aria-label="検索"
+      >
+        <svg
+          class="w-4 h-4"
+          viewBox="0 0 20 20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <circle cx="9" cy="9" r="6" />
+          <path d="m14 14 4 4" stroke-linecap="round" />
+        </svg>
+        <span class="hidden sm:inline">検索</span>
+        <kbd class="hidden md:flex items-center gap-0.5 ml-1 text-[10px] font-medium text-white/80">
+          <span class="border border-white/50 rounded px-1 py-0.5">Ctrl</span>
+          <span class="border border-white/50 rounded px-1 py-0.5">K</span>
+        </kbd>
+      </button>
+    </nav>
+
+    <!-- Mobile actions: search + hamburger (< md) -->
+    <div class="flex md:hidden items-center gap-2">
+      <button
+        type="button"
+        class="header-search-trigger flex items-center justify-center rounded-full bg-white/15 hover:bg-white/25 border border-white/30 transition-colors p-2 text-white focus:outline-none focus:ring-2 focus:ring-white/60"
+        aria-label="検索"
+      >
+        <svg
+          class="w-5 h-5"
+          viewBox="0 0 20 20"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <circle cx="9" cy="9" r="6" />
+          <path d="m14 14 4 4" stroke-linecap="round" />
+        </svg>
+      </button>
+      <button
+        type="button"
+        id="mobile-menu-toggle"
+        aria-label="メニューを開く"
+        aria-expanded="false"
+        aria-controls="mobile-menu"
+        class="flex items-center justify-center p-2 text-white rounded hover:bg-white/20 focus:outline-none focus:ring-2 focus:ring-white/60"
+      >
+        <svg
+          id="hamburger-icon"
+          class="w-6 h-6"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+        </svg>
+        <svg
+          id="close-icon"
+          class="w-6 h-6 hidden"
+          viewBox="0 0 24 24"
+          fill="none"
+          stroke="currentColor"
+          stroke-width="2"
+          aria-hidden="true"
+        >
+          <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" />
+        </svg>
+      </button>
+    </div>
+  </div>
+
+  <!-- Mobile dropdown menu -->
+  <div id="mobile-menu" class="hidden md:hidden border-t border-white/20 bg-accent-700">
+    <nav class="px-4 py-4 flex flex-col gap-1 text-base">
+      <a href="/handbook/" class="text-white/90 hover:text-white no-underline px-2 py-2.5 rounded hover:bg-white/10">Handbook</a>
+      <a href="/about/" class="text-white/90 hover:text-white no-underline px-2 py-2.5 rounded hover:bg-white/10">このサイトについて</a>
+      <a
+        href="https://handbook.gitlab.com/"
+        rel="external noopener"
+        class="text-white/90 hover:text-white no-underline px-2 py-2.5 rounded hover:bg-white/10"
+      >原文 (EN)</a>
+      <a
+        href="https://github.com/kyama0/gitlab-handbook-ja"
+        rel="external noopener"
+        class="text-white/90 hover:text-white no-underline px-2 py-2.5 rounded hover:bg-white/10 flex items-center gap-2"
+      >
+        <svg class="w-5 h-5 shrink-0" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+          <path d="M12 .5C5.73.5.75 5.48.75 11.75c0 4.97 3.22 9.18 7.69 10.67.56.1.77-.24.77-.54 0-.27-.01-1.16-.02-2.1-3.13.68-3.79-1.34-3.79-1.34-.51-1.3-1.25-1.65-1.25-1.65-1.02-.7.08-.69.08-.69 1.13.08 1.73 1.16 1.73 1.16 1 1.72 2.63 1.22 3.27.93.1-.73.39-1.22.71-1.5-2.5-.28-5.13-1.25-5.13-5.55 0-1.23.44-2.23 1.16-3.02-.12-.28-.5-1.43.11-2.98 0 0 .94-.3 3.09 1.15.9-.25 1.86-.38 2.81-.38s1.91.13 2.81.38c2.15-1.45 3.09-1.15 3.09-1.15.61 1.55.23 2.7.11 2.98.72.79 1.16 1.79 1.16 3.02 0 4.31-2.63 5.27-5.14 5.54.4.35.76 1.03.76 2.07 0 1.5-.01 2.71-.01 3.07 0 .3.2.65.78.54 4.46-1.49 7.68-5.7 7.68-10.67C23.25 5.48 18.27.5 12 .5z" />
+        </svg>
+        GitHub
+      </a>
     </nav>
   </div>
 </header>
+
+<script>
+  // Both desktop and mobile search buttons
+  document.querySelectorAll<HTMLButtonElement>('.header-search-trigger').forEach(btn => {
+    btn.addEventListener('click', () => {
+      (window as any).__openSearchDialog?.();
+    });
+  });
+
+  // Hamburger toggle
+  const toggle = document.getElementById('mobile-menu-toggle');
+  const menu = document.getElementById('mobile-menu');
+  const hamburgerIcon = document.getElementById('hamburger-icon');
+  const closeIcon = document.getElementById('close-icon');
+
+  toggle?.addEventListener('click', () => {
+    const willOpen = menu?.classList.contains('hidden');
+    menu?.classList.toggle('hidden');
+    toggle.setAttribute('aria-expanded', String(willOpen));
+    hamburgerIcon?.classList.toggle('hidden', !!willOpen);
+    closeIcon?.classList.toggle('hidden', !willOpen);
+  });
+
+  // Close on nav link click
+  menu?.querySelectorAll('a').forEach(link => {
+    link.addEventListener('click', () => {
+      menu.classList.add('hidden');
+      toggle?.setAttribute('aria-expanded', 'false');
+      hamburgerIcon?.classList.remove('hidden');
+      closeIcon?.classList.add('hidden');
+    });
+  });
+</script>

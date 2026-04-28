@@ -8,6 +8,14 @@ export type ShortcodeHandler = (
   ctx: ShortcodeContext
 ) => string | Promise<string>;
 
+// Handler for paired shortcodes like `{{% alert %}}...{{% /alert %}}`.
+// Receives the args from the opening tag plus the inner Markdown content.
+export type PairedShortcodeHandler = (
+  args: string,
+  inner: string,
+  ctx: ShortcodeContext
+) => string | Promise<string>;
+
 export interface ParsedArgs {
   positional: string[];
   named: Record<string, string>;

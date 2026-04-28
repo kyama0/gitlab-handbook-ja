@@ -3,8 +3,10 @@ import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwind from '@astrojs/tailwind';
+import remarkCjkFriendly from 'remark-cjk-friendly';
 import { rewriteAssetPaths } from './src/plugins/rewrite-asset-paths.mjs';
 import { headingIds } from './src/plugins/heading-ids.mjs';
+import { stripUpstreamStylesheets } from './src/plugins/strip-upstream-stylesheets.mjs';
 
 // `||` (not `??`) — GitHub Actions injects unset `vars.*` as empty strings,
 // not undefined, so `??` would not fall back and Astro would reject the
@@ -23,7 +25,12 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [mdx(), sitemap(), tailwind()],
   markdown: {
-    remarkPlugins: [headingIds(), rewriteAssetPaths({ base: ASSET_BASE })],
+    remarkPlugins: [
+      remarkCjkFriendly,
+      headingIds(),
+      rewriteAssetPaths({ base: ASSET_BASE }),
+      stripUpstreamStylesheets(),
+    ],
   },
   build: {
     format: 'directory',

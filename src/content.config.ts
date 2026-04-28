@@ -14,7 +14,14 @@ const handbook = defineCollection({
     upstream_path: z.string(),
     // Git SHA of the upstream commit this translation is based on.
     upstream_sha: z.string(),
-    translated_at: z.string().datetime().optional(),
+    // YAML auto-parses unquoted ISO 8601 timestamps as Date; coerce back to
+    // string so downstream code (and the schema's .datetime() check) works.
+    translated_at: z
+      .preprocess(
+        (v) => (v instanceof Date ? v.toISOString() : v),
+        z.string().datetime(),
+      )
+      .optional(),
     translator: z.enum(['claude', 'human', 'claude+human']).default('claude'),
     // When true, the page is shown with a "translation out of date" banner.
     stale: z.boolean().default(false),

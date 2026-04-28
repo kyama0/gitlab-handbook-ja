@@ -39,7 +39,7 @@ model: inherit
 - 追跡用フィールドを **常に** 付与（既存があれば値を更新）:
   - `upstream_path`: handbook.gitlab.com 上の URL（例: `/handbook/company/mission/`）。ファイルパスではない。`_index.md` は末尾スラッシュ、通常ファイルは `.md` を取って末尾スラッシュ付きの URL に変換。
   - `upstream_sha`: 翻訳の根拠とした upstream コミット SHA。`git -C upstream rev-parse HEAD` で取得。
-  - `translated_at`: ISO 8601 の現在時刻。
+  - `translated_at`: ISO 8601 の現在時刻。**必ずダブルクォートで囲むこと**（例: `translated_at: "2026-04-25T12:00:00Z"`）。クォートなしだと YAML が Date オブジェクトとして解釈され Astro のスキーマエラーになる。
   - `translator`: `claude`（人手レビューが入った場合は `claude+human`）。
   - `stale`: `false`。
 
@@ -52,7 +52,7 @@ model: inherit
 
 # 書き込み後
 
-1. `npm run transform:shortcodes -- <出力ファイルパス>` を Bash で実行してショートコードを HTML に展開する（smartypants が引用符をいじる前に必ずやる）。
+1. `npm run transform:shortcodes -- <出力ファイルパス>` を Bash で実行してショートコードを HTML に展開する（smartypants が引用符をいじる前に必ずやる）。実行結果に `Unknown shortcodes:` の警告が出た場合は、未対応のショートコード名を最終レポートに **必ず明記する**（ユーザーが `scripts/shortcodes/` にハンドラーを追加するかどうか判断するため）。勝手にハンドラーを実装しない — そのファイル自身は raw のまま残してよい。
 2. `translation-state/manifest.json` の対応するエントリを更新（または新規追加）:
    - キー: 原文の相対パス（例: `content/handbook/company/mission.md`）
    - 値: `{ path, upstream_sha, translated_at, model: "claude-opus-4-7", input_hash }`。`input_hash` は原文ファイルの SHA-256（`sha256sum upstream/content/handbook/...md` の結果）。
