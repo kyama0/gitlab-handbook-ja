@@ -1,6 +1,19 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+@import "tailwindcss";
+
+@source "../../content";
+
+@theme {
+  --color-accent-50: #e6f7f5;
+  --color-accent-100: #b3e6e0;
+  --color-accent-500: #00857c;
+  --color-accent-600: #006b63;
+  --color-accent-700: #00524b;
+
+  --font-sans: "Hiragino Kaku Gothic ProN", "Noto Sans JP", system-ui, -apple-system, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+
+  --max-width-prose: 72ch;
+}
 
 @layer base {
   html {
