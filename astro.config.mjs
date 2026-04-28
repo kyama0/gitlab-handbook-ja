@@ -2,7 +2,7 @@ import { fileURLToPath } from 'node:url';
 import { defineConfig } from 'astro/config';
 import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
-import tailwind from '@astrojs/tailwind';
+import tailwindcss from '@tailwindcss/vite';
 import remarkCjkFriendly from 'remark-cjk-friendly';
 import { rewriteAssetPaths } from './src/plugins/rewrite-asset-paths.mjs';
 import { headingIds } from './src/plugins/heading-ids.mjs';
@@ -23,7 +23,7 @@ export default defineConfig({
   site: SITE,
   output: 'static',
   trailingSlash: 'always',
-  integrations: [mdx(), sitemap(), tailwind()],
+  integrations: [mdx(), sitemap()],
   markdown: {
     remarkPlugins: [
       remarkCjkFriendly,
@@ -36,6 +36,7 @@ export default defineConfig({
     format: 'directory',
   },
   vite: {
+    plugins: [tailwindcss()],
     resolve: {
       alias: {
         '~': fileURLToPath(new URL('./src', import.meta.url)),

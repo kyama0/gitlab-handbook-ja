@@ -20,7 +20,7 @@
   "dependencies": {
     "@astrojs/mdx": "^5.0.4",
     "@astrojs/sitemap": "^3.2.0",
-    "@astrojs/tailwind": "^6.0.2",
+    "@tailwindcss/vite": "^4.2.2",
     "astro": "^6.1.9",
     "remark-cjk-friendly": "^2.0.1",
     "tailwindcss": "^4.2.2"
