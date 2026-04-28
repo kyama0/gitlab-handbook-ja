@@ -16,10 +16,11 @@ function containsActive(node: NavNode, pathname: string): boolean {
   return node.children.some((c) => containsActive(c, pathname));
 }
 
-function linkClass(active: boolean): string {
+function linkClass(active: boolean, bold: boolean = false): string {
+  const weight = bold ? 'font-bold' : 'font-normal';
   return active
-    ? 'block flex-1 no-underline font-semibold text-accent-700'
-    : 'block flex-1 no-underline text-gray-700 hover:text-accent-700';
+    ? `block flex-1 no-underline font-bold text-accent-700`
+    : `block flex-1 no-underline ${weight} text-gray-700 hover:text-accent-700`;
 }
 ---
 <ul class="list-none pl-0 my-0 leading-snug">
@@ -32,20 +33,11 @@ function linkClass(active: boolean): string {
         {hasChildren ? (
           <details open={expanded} class="nav-details">
             <summary class="nav-summary flex items-center gap-1.5 py-1.5 cursor-pointer select-none">
-              <svg
-                class="nav-chevron w-3 h-3 text-gray-500 shrink-0"
-                viewBox="0 0 12 12"
-                fill="none"
-                stroke="currentColor"
-                stroke-width="2"
-                aria-hidden="true"
-              >
-                <polyline points="4,2 8,6 4,10" stroke-linecap="round" stroke-linejoin="round" />
-              </svg>
+              <span class="nav-chevron text-[10px] text-gray-500 shrink-0 leading-none" aria-hidden="true">▶</span>
               {n.href ? (
-                <a href={n.href} class={linkClass(active)}>{n.title}</a>
+                <a href={n.href} class={linkClass(active, true)}>{n.title}</a>
               ) : (
-                <span class="block flex-1 text-gray-900 font-medium">{n.title}</span>
+                <span class="block flex-1 text-gray-900 font-bold">{n.title}</span>
               )}
             </summary>
             <div class="ml-4">

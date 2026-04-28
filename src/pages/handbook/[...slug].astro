@@ -30,11 +30,55 @@ const upstreamUrl = new URL(page.data.upstream_path, upstreamBase).toString();
   upstreamPath={page.data.upstream_path}
   wide
 >
-  <div class="md:grid md:grid-cols-[14rem_minmax(0,1fr)] md:gap-8 xl:grid-cols-[14rem_minmax(0,1fr)_22rem]">
+  <!-- Mobile sidebar drawer (hidden on md+) -->
+  <div
+    id="mobile-nav-overlay"
+    class="hidden fixed inset-0 z-[60]"
+    role="dialog"
+    aria-modal="true"
+    aria-label="ナビゲーション"
+  >
+    <div id="mobile-nav-backdrop" class="absolute inset-0 bg-black/50"></div>
+    <aside class="absolute inset-y-0 left-0 w-72 max-w-[85vw] bg-white shadow-2xl flex flex-col">
+      <div class="flex items-center justify-between px-4 py-3 border-b border-gray-200 shrink-0">
+        <span class="font-semibold text-gray-900 text-sm">ナビゲーション</span>
+        <button
+          id="mobile-nav-close"
+          class="p-1.5 rounded hover:bg-gray-100 text-gray-600 focus:outline-none focus:ring-2 focus:ring-accent-500"
+          aria-label="閉じる"
+        >
+          <svg class="w-5 h-5" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+            <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" />
+          </svg>
+        </button>
+      </div>
+      <div class="overflow-y-auto flex-1 px-4 py-3">
+        <Sidebar />
+      </div>
+    </aside>
+  </div>
+
+  <!-- Floating nav button (mobile only, hidden on md+) -->
+  <div class="fixed bottom-5 right-5 z-30 md:hidden">
+    <button
+      id="mobile-nav-open"
+      class="flex items-center gap-2 bg-accent-700 text-white rounded-full shadow-lg px-4 py-2.5 text-sm font-medium hover:bg-accent-600 active:scale-95 transition-transform focus:outline-none focus:ring-2 focus:ring-accent-500 focus:ring-offset-2"
+      aria-label="ナビゲーションを開く"
+      aria-expanded="false"
+      aria-controls="mobile-nav-overlay"
+    >
+      <svg class="w-4 h-4" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <path d="M3 6h18M3 12h18M3 18h18" stroke-linecap="round" />
+      </svg>
+      ナビ
+    </button>
+  </div>
+
+  <div class="md:grid md:grid-cols-[18rem_minmax(0,1fr)] md:gap-8 xl:grid-cols-[18rem_minmax(0,1fr)_20rem]">
     <div class="hidden md:block md:sticky md:top-4 md:self-start md:max-h-[calc(100vh-2rem)] md:overflow-y-auto md:pr-2">
       <Sidebar />
     </div>
-    <article class="min-w-0 text-lg">
+    <article class="min-w-0" data-pagefind-body>
       <Breadcrumbs entryId={page.id} />
       {page.data.stale && <StaleBanner upstreamUrl={upstreamUrl} />}
       <h1>{page.data.title}</h1>
@@ -54,4 +98,36 @@ const upstreamUrl = new URL(page.data.upstream_path, upstreamBase).toString();
       <Toc headings={headings} />
     </div>
   </div>
+
+  <script>
+    const overlay = document.getElementById('mobile-nav-overlay');
+    const openBtn = document.getElementById('mobile-nav-open');
+    const closeBtn = document.getElementById('mobile-nav-close');
+    const backdrop = document.getElementById('mobile-nav-backdrop');
+
+    function openNav() {
+      overlay?.classList.remove('hidden');
+      openBtn?.setAttribute('aria-expanded', 'true');
+      document.body.style.overflow = 'hidden';
+    }
+
+    function closeNav() {
+      overlay?.classList.add('hidden');
+      openBtn?.setAttribute('aria-expanded', 'false');
+      document.body.style.overflow = '';
+    }
+
+    openBtn?.addEventListener('click', openNav);
+    closeBtn?.addEventListener('click', closeNav);
+    backdrop?.addEventListener('click', closeNav);
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') closeNav();
+    });
+
+    // Close drawer when navigating (links inside the overlay)
+    overlay?.querySelectorAll('a').forEach(link => {
+      link.addEventListener('click', closeNav);
+    });
+  </script>
 </BaseLayout>
