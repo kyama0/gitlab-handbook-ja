@@ -1,7 +1,6 @@
 ---
-import BaseLayout from '~/layouts/BaseLayout.astro';
+import PageLayout from '~/layouts/PageLayout.astro';
 import Sidebar from '~/components/Sidebar.astro';
-import MobileNav from '~/components/MobileNav.astro';
 import { getCollection } from 'astro:content';
 
 const pages = await getCollection('handbook');
@@ -11,15 +10,13 @@ function toSlug(id: string): string {
   return id.replace(/(^|\/)index$/, '$1').replace(/\/$/, '');
 }
 ---
-<BaseLayout
+<PageLayout
   title="GitLab Handbook 非公式日本語訳"
   description="GitLab Handbook のコミュニティによる非公式日本語訳。AI による機械翻訳を基にしています。"
   wide
 >
-  <MobileNav hiddenFrom="lg" />
-
-  <div class="lg:grid lg:grid-cols-[14rem_minmax(0,1fr)] lg:gap-10">
-    <div class="hidden lg:block lg:sticky lg:top-4 lg:self-start lg:max-h-[calc(100vh-2rem)] lg:overflow-y-auto lg:pr-2">
+  <div class="md:grid md:grid-cols-[18rem_minmax(0,1fr)] md:gap-8">
+    <div class="hidden md:block md:sticky md:top-4 md:self-start md:max-h-[calc(100vh-2rem)] md:overflow-y-auto md:overflow-x-hidden md:pr-2">
       <Sidebar />
     </div>
     <article class="min-w-0">
@@ -53,4 +50,4 @@ function toSlug(id: string): string {
       )}
     </article>
   </div>
-</BaseLayout>
+</PageLayout>
