@@ -117,8 +117,9 @@ export const teamMembersLink: ShortcodeHandler = async (_args, ctx) => {
 export function upstreamSection(label: string, anchor: string): ShortcodeHandler {
   return async (_args, ctx) => {
     const upstreamPath = await readUpstreamPath(ctx);
+    const hash = anchor ? `#${anchor}` : '';
     const url = upstreamPath
-      ? `https://handbook.gitlab.com${upstreamPath}#${anchor}`
+      ? `https://handbook.gitlab.com${upstreamPath}${hash}`
       : 'https://handbook.gitlab.com';
     return `\n<p class="my-3 text-sm text-gray-600 italic">${label}は <a href="${url}" rel="external noopener">原文 (英語)</a> を参照してください。</p>\n`;
   };
