@@ -20,13 +20,14 @@
     scroll-behavior: smooth;
   }
   body {
-    @apply bg-white text-gray-900 antialiased;
+    @apply bg-white text-gray-900 antialiased overflow-x-clip;
   }
   /* Default body text size for article content. Override per-page by adding
      a Tailwind text-* utility on the <article> element (utilities win over
      base layer). */
   article {
     @apply text-base;
+    overflow-wrap: anywhere;
   }
   a {
     @apply text-accent-600 underline decoration-accent-100 underline-offset-2 hover:decoration-accent-500;
@@ -50,7 +51,7 @@
   code { @apply font-mono text-[0.9em] bg-gray-100 px-1 py-0.5 rounded; }
   pre { @apply font-mono text-sm bg-gray-900 text-gray-100 p-4 rounded overflow-x-auto my-4; }
   pre code { @apply bg-transparent p-0; }
-  table { @apply w-full my-4 border-collapse; }
+  table { @apply block w-full my-4 border-collapse overflow-x-auto; }
   th, td { @apply border border-gray-200 px-3 py-2 text-left; }
   th { @apply bg-gray-50; }
   /* Tailwind Preflight forces `img { display: block }`. Upstream handbook
