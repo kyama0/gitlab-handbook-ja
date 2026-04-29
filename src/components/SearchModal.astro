@@ -72,8 +72,9 @@
           document.head.appendChild(link);
         });
         const url = '/pagefind/pagefind-ui.js';
-        const mod: any = await import(/* @vite-ignore */ url);
-        new mod.PagefindUI({
+        await import(/* @vite-ignore */ url);
+        const PagefindUI = (window as any).PagefindUI;
+        new PagefindUI({
           element: '#pagefind-container',
           showSubResults: true,
           resetStyles: false,
