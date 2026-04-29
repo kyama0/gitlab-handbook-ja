@@ -1,0 +1,10 @@
+---
+import BaseLayout from './BaseLayout.astro';
+import MobileNav from '~/components/MobileNav.astro';
+
+type Props = Parameters<typeof BaseLayout>[0];
+---
+<BaseLayout {...Astro.props}>
+  <MobileNav hiddenFrom="md" />
+  <slot />
+</BaseLayout>
