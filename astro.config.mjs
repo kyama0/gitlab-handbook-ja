@@ -4,6 +4,7 @@ import mdx from '@astrojs/mdx';
 import sitemap from '@astrojs/sitemap';
 import tailwindcss from '@tailwindcss/vite';
 import remarkCjkFriendly from 'remark-cjk-friendly';
+import remarkSimplePlantuml from '@akebifiky/remark-simple-plantuml';
 import { rewriteAssetPaths } from './src/plugins/rewrite-asset-paths.mjs';
 import { headingIds } from './src/plugins/heading-ids.mjs';
 import { stripUpstreamStylesheets } from './src/plugins/strip-upstream-stylesheets.mjs';
@@ -25,8 +26,18 @@ export default defineConfig({
   trailingSlash: 'always',
   integrations: [mdx(), sitemap()],
   markdown: {
+    shikiConfig: {
+      langAlias: {
+        prompt: 'plaintext',
+        patch: 'plaintext',
+        ebnf: 'plaintext',
+        pseudocode: 'plaintext',
+        rego: 'plaintext',
+      },
+    },
     remarkPlugins: [
       remarkCjkFriendly,
+      remarkSimplePlantuml,
       headingIds(),
       rewriteAssetPaths({ base: ASSET_BASE }),
       stripUpstreamStylesheets(),

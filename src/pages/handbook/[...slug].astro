@@ -100,6 +100,19 @@ const upstreamUrl = new URL(page.data.upstream_path, upstreamBase).toString();
   </div>
 
   <script>
+    import mermaid from 'mermaid';
+    mermaid.initialize({ startOnLoad: false });
+    document.querySelectorAll('pre[data-language="mermaid"]').forEach(async (pre) => {
+      const code = pre.textContent ?? '';
+      const id = `mermaid-${Math.random().toString(36).slice(2)}`;
+      const { svg } = await mermaid.render(id, code);
+      const div = document.createElement('div');
+      div.innerHTML = svg;
+      pre.replaceWith(div);
+    });
+  </script>
+
+  <script>
     const overlay = document.getElementById('mobile-nav-overlay');
     const openBtn = document.getElementById('mobile-nav-open');
     const closeBtn = document.getElementById('mobile-nav-close');
