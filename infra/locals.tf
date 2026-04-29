@@ -27,6 +27,7 @@ locals {
   production_env_vars = merge(
     {
       PUBLIC_R2_BASE = { type = "plain_text", value = local.images_base_url }
+      PUBLIC_GA4_ID  = { type = "plain_text", value = "G-ED5RXHWDV6" }
     },
     local.site_domain != null ? {
       SITE_URL = { type = "plain_text", value = "https://${local.site_domain}" }
