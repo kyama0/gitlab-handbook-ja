@@ -19,7 +19,10 @@ import { anchor } from './anchor.ts';
 import { label } from './label.ts';
 import { teamSize } from './team-size.ts';
 import { misusedTerms } from './misused-terms.ts';
-import { upstreamLink, noop } from './upstream-link.ts';
+import { upstreamLink, teamMembersLink, noop } from './upstream-link.ts';
+import { designDocumentHeader } from './design-document-header.ts';
+import { note } from './note.ts';
+import { details } from './details.ts';
 
 const HANDLERS: Record<string, ShortcodeHandler> = {
   youtube,
@@ -54,6 +57,10 @@ const HANDLERS: Record<string, ShortcodeHandler> = {
     'プロダクト優先順位',
     'https://handbook.gitlab.com/handbook/product/product-priorities/',
   ),
+  'engineering/design-document-header': designDocumentHeader,
+  'team-by-manager-slug': teamMembersLink,
+  'team-by-manager-role': teamMembersLink,
+  'team-by-departments': teamMembersLink,
   // JS-driven UI controls in upstream — drop silently in the static export.
   'all-remote/country-select': noop,
 };
@@ -66,6 +73,8 @@ const PAIRED_HANDLERS: Record<string, PairedShortcodeHandler> = {
   card,
   alert,
   panel,
+  details,
+  note,
 };
 
 // Matches both `{{< name args >}}` and `{{% name args %}}`. Names allow

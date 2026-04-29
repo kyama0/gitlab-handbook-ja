@@ -53,6 +53,12 @@ model: inherit
 # 書き込み後
 
 1. `npm run transform:shortcodes -- <出力ファイルパス>` を Bash で実行してショートコードを HTML に展開する（smartypants が引用符をいじる前に必ずやる）。実行結果に `Unknown shortcodes:` の警告が出た場合は、未対応のショートコード名を最終レポートに **必ず明記する**（ユーザーが `scripts/shortcodes/` にハンドラーを追加するかどうか判断するため）。勝手にハンドラーを実装しない — そのファイル自身は raw のまま残してよい。
+
+   **`team-by-*` 系ショートコードについて**: `team-by-manager-slug`, `team-by-manager-role`, `team-by-departments` はチームメンバー情報を動的に引くショートコードで、`scripts/shortcodes/upstream-link.ts` の `TEAM_ANCHORS` マップに登録済みのページであれば自動的に原文へのリンクに変換される。新規ページを翻訳して `Unknown shortcodes` にこれらが含まれた場合は、以下の手順でマップに追加すること:
+   1. 翻訳ファイルのショートコード直上の見出し（英語原文）を確認する
+   2. `curl -s "https://handbook.gitlab.com{upstream_path}"` で upstream ページの見出し ID を取得: `grep -oP '<h[1-6][^>]*id="[^"]*"[^>]*>[^<]+'`
+   3. 該当する見出しの `id` 属性値を `TEAM_ANCHORS` に追加（key: `upstream_path`、value: アンカー ID）
+   4. 追加後に `npm run transform:shortcodes` を再実行する
 2. `translation-state/manifest.json` の対応するエントリを更新（または新規追加）:
    - キー: 原文の相対パス（例: `content/handbook/company/mission.md`）
    - 値: `{ path, upstream_sha, translated_at, model: "claude-opus-4-7", input_hash }`。`input_hash` は原文ファイルの SHA-256（`sha256sum upstream/content/handbook/...md` の結果）。
