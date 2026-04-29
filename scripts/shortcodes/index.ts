@@ -1,8 +1,4 @@
-import type {
-  ShortcodeContext,
-  ShortcodeHandler,
-  PairedShortcodeHandler,
-} from './types.ts';
+import { parseArgs, type ShortcodeContext, type ShortcodeHandler, type PairedShortcodeHandler } from './types.ts';
 import { youtube } from './youtube.ts';
 import { include } from './include.ts';
 import { handbookDataToc } from './handbook-data-toc.ts';
@@ -19,10 +15,51 @@ import { anchor } from './anchor.ts';
 import { label } from './label.ts';
 import { teamSize } from './team-size.ts';
 import { misusedTerms } from './misused-terms.ts';
-import { upstreamLink, teamMembersLink, noop } from './upstream-link.ts';
+import { upstreamLink, upstreamSection, teamMembersLink, noop } from './upstream-link.ts';
 import { designDocumentHeader } from './design-document-header.ts';
 import { note } from './note.ts';
 import { details } from './details.ts';
+
+// Allure test report shortcode — emits the pipeline name in a code span since
+// the actual report URLs are dynamic CI artifacts we can't reconstruct statically.
+const allureLink: ShortcodeHandler = (args) => {
+  const { positional } = parseArgs(args);
+  const name = positional[0] ?? '';
+  return name ? `\`${name}\`` : '—';
+};
+
+// Renders parsed Slack/issue links for verify team communication shortcodes.
+const verifyTeamCommunication: ShortcodeHandler = (args) => {
+  const { named } = parseArgs(args);
+  const slackChannel = named['slack-channel'];
+  const slackUrl = named['slack-url'];
+  const groupLabel = named['group-label'];
+  const groupIssuesUrl = named['group-issues-url'];
+  const parts: string[] = [];
+  if (slackChannel && slackUrl)
+    parts.push(`Slack: <a href="${slackUrl}" rel="external noopener">#${slackChannel}</a>`);
+  if (groupLabel && groupIssuesUrl)
+    parts.push(`Issues: <a href="${groupIssuesUrl}" rel="external noopener">${groupLabel}</a>`);
+  if (!parts.length) return '';
+  return `\n<p class="my-3 text-sm text-gray-600">${parts.join(' · ')}</p>\n`;
+};
+
+// Links to the GitLab profile page where the README is hosted.
+const includeReadme: ShortcodeHandler = (args) => {
+  const { named } = parseArgs(args);
+  const username = named['username'];
+  if (!username) return '';
+  const url = `https://gitlab.com/${username}`;
+  return `\n<p class="my-3 text-sm text-gray-600 italic">README は <a href="${url}" rel="external noopener">GitLab プロフィール (${username})</a> を参照してください。</p>\n`;
+};
+
+// Renders DevOps stage names as a notice linking to the upstream page.
+const devopsDiagram: ShortcodeHandler = (args) => {
+  const { positional } = parseArgs(args);
+  const stages = positional.join(' · ');
+  const notice = stages ? `DevOps ステージ図 (${stages})` : 'DevOps ステージ図';
+  return `\n<p class="my-3 text-sm text-gray-600 italic">${notice}は <a href="https://handbook.gitlab.com" rel="external noopener">原文 (英語)</a> を参照してください。</p>\n`;
+};
 
 const HANDLERS: Record<string, ShortcodeHandler> = {
   youtube,
@@ -63,6 +100,37 @@ const HANDLERS: Record<string, ShortcodeHandler> = {
   'team-by-departments': teamMembersLink,
   // JS-driven UI controls in upstream — drop silently in the static export.
   'all-remote/country-select': noop,
+  // Team member shortcodes — all pull from the people system; link to upstream.
+  'member-by-gitlab': teamMembersLink,
+  'member-by-name': teamMembersLink,
+  'member-and-role-by-gitlab': teamMembersLink,
+  'manager-by-report-name': teamMembersLink,
+  'group-by-slugs': teamMembersLink,
+  'engineering/stable-counterparts': teamMembersLink,
+  // Engineering utilities
+  'engineering/test-execution-allure-link': allureLink,
+  'engineering/workflow-labels': upstreamSection('ワークフローラベル', 'workflow'),
+  'engineering/create-retrospectives': upstreamSection('レトロスペクティブ', 'retrospectives'),
+  'engineering/design-documents-list': upstreamSection('設計ドキュメント一覧', 'design-documents'),
+  'engineering/verify-team-communication': verifyTeamCommunication,
+  'engineering/create/career-development': upstreamSection('キャリア開発', 'career-development'),
+  'engineering/service-maturity-scores': upstreamSection('サービス成熟度スコア', 'service-maturity-model'),
+  'engineering/service-maturity-details': upstreamSection('サービス成熟度詳細', 'service-maturity-model'),
+  'engineering/projects-table': upstreamSection('プロジェクト一覧', ''),
+  'engineering/projects-body': upstreamSection('プロジェクト詳細', ''),
+  'engineering/child-dashboards': upstreamSection('ダッシュボード', ''),
+  // Product
+  'product/jtbd': upstreamSection('Jobs to be Done (JTBD)', 'jobs-to-be-done'),
+  // Customer success
+  'customer-success/sku-tables': upstreamSection('SKU テーブル', 'skus'),
+  // Includes
+  'include-readme': includeReadme,
+  // Data visualization
+  tableau: upstreamSection('Tableau ダッシュボード', ''),
+  // Release
+  'release-schedule': upstreamSection('リリーススケジュール', 'monthly-release-schedule'),
+  // Diagrams
+  'devops-diagram': devopsDiagram,
 };
 
 // Paired shortcodes: `{{% name args %}}...{{% /name %}}`.
