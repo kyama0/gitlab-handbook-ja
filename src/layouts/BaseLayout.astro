@@ -31,6 +31,17 @@ const upstreamUrl = upstreamPath ? new URL(upstreamPath, upstreamBase).toString(
     {description && <meta property="og:description" content={description} />}
     <meta property="og:locale" content="ja_JP" />
     <meta name="robots" content="index,follow" />
+    {import.meta.env.PUBLIC_GA4_ID && (
+      <>
+        <script is:inline async src={`https://www.googletagmanager.com/gtag/js?id=${import.meta.env.PUBLIC_GA4_ID}`} />
+        <script is:inline define:vars={{ ga4Id: import.meta.env.PUBLIC_GA4_ID }}>
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', ga4Id);
+        </script>
+      </>
+    )}
   </head>
   <body class="min-h-screen flex flex-col">
     <Header />
