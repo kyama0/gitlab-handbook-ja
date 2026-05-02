@@ -546,6 +546,20 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "84869efa9609805ee2df8bb8e9f082aab3d9684851fa2d651851babe3b5f72d6"
     },
+    "content/handbook/labor-and-employment-notices/_index.md": {
+      "path": "content/handbook/labor-and-employment-notices/_index.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c057538e28a052fd9c7c40c08786fe046228c3cc41275d923f6e1870f22e892b"
+    },
+    "content/handbook/labor-and-employment-notices/offboarding-documents.md": {
+      "path": "content/handbook/labor-and-employment-notices/offboarding-documents.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b4623bb3a294ed73a0d6bd7400a581bcf016a3fe9e8dc9f1985206ed05b6a87b"
+    },
     "content/handbook/marketing/digital-experience/_index.md": {
       "path": "content/handbook/marketing/digital-experience/_index.md",
       "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
