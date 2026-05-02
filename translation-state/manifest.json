@@ -540,6 +540,237 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "0a98b9f29d95786d96f654db27a54d883d18202e79e093c66d869c3cdde666b5"
     },
+    "content/handbook/engineering/readmes/_index.md": {
+      "path": "content/handbook/engineering/readmes/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "06c3d8945928a74fa39302449c39522fc5092d85a6b852c36e5402a5404095da"
+    },
+    "content/handbook/engineering/readmes/alexander-sosna.md": {
+      "path": "content/handbook/engineering/readmes/alexander-sosna.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "335f0fc3947c5d14e836210ab1ead881035bad3832d95a411b9c6bb075d6188f"
+    },
+    "content/handbook/engineering/readmes/alexives.md": {
+      "path": "content/handbook/engineering/readmes/alexives.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0b112fe71d84da8ce7894bdd04db7f6ffa7c208ce61efdde37daba6de0444604"
+    },
+    "content/handbook/engineering/readmes/amy-shiel.md": {
+      "path": "content/handbook/engineering/readmes/amy-shiel.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2de749282a1fbb1b9ef9f09443418bb46037231fce2b34e6e2b5662f079b743d"
+    },
+    "content/handbook/engineering/readmes/ben-king.md": {
+      "path": "content/handbook/engineering/readmes/ben-king.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3804f4ccf974f91877cd937298213d94c7e0a3006c0b4687cb9470342b7a9952"
+    },
+    "content/handbook/engineering/readmes/chris-kaburu.md": {
+      "path": "content/handbook/engineering/readmes/chris-kaburu.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f85d2a5416e1df3617a43e8c441f5b1342b74d8b2daa87e077582696ed4c995c"
+    },
+    "content/handbook/engineering/readmes/craig-miskell.md": {
+      "path": "content/handbook/engineering/readmes/craig-miskell.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "46d339dc54b665a3d19d8657739485f95a5371ff56a1eccd0a6af04e9ddc791d"
+    },
+    "content/handbook/engineering/readmes/daniel-diniz/index.md": {
+      "path": "content/handbook/engineering/readmes/daniel-diniz/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ebfd48296c00c48c45b78000e3b9933e32db711ccf67b413554a329212e3c20f"
+    },
+    "content/handbook/engineering/readmes/david-wainaina.md": {
+      "path": "content/handbook/engineering/readmes/david-wainaina.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6a4b7e9e36ba2e10c7de0c7f20f7fc3d4577680e83074379f5e703929c796108"
+    },
+    "content/handbook/engineering/readmes/duncan-harris.md": {
+      "path": "content/handbook/engineering/readmes/duncan-harris.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dac83b9d3c0ace5deea442d178a43bab1a3b206696ab522e7a0116d3e292c180"
+    },
+    "content/handbook/engineering/readmes/eduardo-bonet.md": {
+      "path": "content/handbook/engineering/readmes/eduardo-bonet.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d8156175084bc88128e124ceba893f82b98713f77cffffbfeae074764bfc220c"
+    },
+    "content/handbook/engineering/readmes/emily-chang.md": {
+      "path": "content/handbook/engineering/readmes/emily-chang.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d6f3b5d9bbc4a1083889d504fced2b5afd6645ab69a59d5fb08193cb54414cdc"
+    },
+    "content/handbook/engineering/readmes/gabey.md": {
+      "path": "content/handbook/engineering/readmes/gabey.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "48706992229335d3fb912d49683d6ac0d6d846081bab454e69e302eaa2af16a4"
+    },
+    "content/handbook/engineering/readmes/jane-gianoutsos.md": {
+      "path": "content/handbook/engineering/readmes/jane-gianoutsos.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b8039608bab7f10700fd860e15b0e7a3a467db3ab5e3d8d08d642d165cce5044"
+    },
+    "content/handbook/engineering/readmes/juan-silva.md": {
+      "path": "content/handbook/engineering/readmes/juan-silva.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0c0ce07cd384ecc4d5b6109710a6ee974524cc8b3ec5bc58b1c35c607595ef0c"
+    },
+    "content/handbook/engineering/readmes/kamil-trzcinski.md": {
+      "path": "content/handbook/engineering/readmes/kamil-trzcinski.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8dbb7a39ce1fac6d0ac33d2ef785e0cc236da1037c4ca4ccce29d7b622c63c66"
+    },
+    "content/handbook/engineering/readmes/katrin-leinweber.md": {
+      "path": "content/handbook/engineering/readmes/katrin-leinweber.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "17d42e41585559420bd04e2f02d6d707c45b82aec09f54aa3f46e47500f909ad"
+    },
+    "content/handbook/engineering/readmes/lee-matos.md": {
+      "path": "content/handbook/engineering/readmes/lee-matos.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c8833e08f2f11ae7bb26622c7e3e5493af0b26eba5487f103e588b646ada6d15"
+    },
+    "content/handbook/engineering/readmes/lyle-kozloff.md": {
+      "path": "content/handbook/engineering/readmes/lyle-kozloff.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0ea6bbb6e38e177f5758b1ea4e78841f7ba3640b5ad7cd7973b60da65ceaef8a"
+    },
+    "content/handbook/engineering/readmes/marin-jankovski.md": {
+      "path": "content/handbook/engineering/readmes/marin-jankovski.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2eb1138dab21222d499e30a07a705498d19577e2422cbd022f824f0a1bd97bf4"
+    },
+    "content/handbook/engineering/readmes/mario-mora.md": {
+      "path": "content/handbook/engineering/readmes/mario-mora.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "03bbb980a34d2c8434d8c76ed6e3925021cde180791e4f6d5ddc5fdb4ca5baa7"
+    },
+    "content/handbook/engineering/readmes/matt-kirkevold/index.md": {
+      "path": "content/handbook/engineering/readmes/matt-kirkevold/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d7cb70b32b8429f99be77b885e0eede8d9cbee8d8f30469fe599a673524b2b94"
+    },
+    "content/handbook/engineering/readmes/matt-nohr.md": {
+      "path": "content/handbook/engineering/readmes/matt-nohr.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "11e56cf74e8b5d62c13b4cb01612f96d57db673b1f4cf5e633126fe63c43ef55"
+    },
+    "content/handbook/engineering/readmes/max-woolf.md": {
+      "path": "content/handbook/engineering/readmes/max-woolf.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "02e5d055952f333afb08ecabd0d8a9562541259b0cee35b5840a40abf915b47e"
+    },
+    "content/handbook/engineering/readmes/mike-dunninger.md": {
+      "path": "content/handbook/engineering/readmes/mike-dunninger.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "35be3816ab9879aae193875745a31ddade65bd17c4b38aee46a35ac8afd020fd"
+    },
+    "content/handbook/engineering/readmes/mike-lockhart.md": {
+      "path": "content/handbook/engineering/readmes/mike-lockhart.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e9dd6bdaaa8fc878ea2c10e0510b68dd835e3acfe4df167eacb798278a38f543"
+    },
+    "content/handbook/engineering/readmes/mlunoe.md": {
+      "path": "content/handbook/engineering/readmes/mlunoe.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "16616e453a01409b670d5827e43222b20d73ea9b82041e16b7a800358ba9b73f"
+    },
+    "content/handbook/engineering/readmes/nick-veenhof.md": {
+      "path": "content/handbook/engineering/readmes/nick-veenhof.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "adcdc657d351cf94ded1503eb1b4215671c755d7eaec23f86c3ffe0fb7f94c94"
+    },
+    "content/handbook/engineering/readmes/ronnie-alfaro.md": {
+      "path": "content/handbook/engineering/readmes/ronnie-alfaro.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a53815f1cbc7c6bd458c45af481976c13ca6415301f826b0d4617d7893653977"
+    },
+    "content/handbook/engineering/readmes/savas-vedova.md": {
+      "path": "content/handbook/engineering/readmes/savas-vedova.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "80301a58fd58f9545e6eec8bc199a2aaca3872c6b85d5e6029304281bf51c166"
+    },
+    "content/handbook/engineering/readmes/simon-street.md": {
+      "path": "content/handbook/engineering/readmes/simon-street.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "db45ac4548e8727738f484020f859e16ea44b4b4b9ecedcabf2a4ce3cb189100"
+    },
+    "content/handbook/engineering/readmes/thong-kuah.md": {
+      "path": "content/handbook/engineering/readmes/thong-kuah.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7f057d7ed3e622ce352f3e4990bd381cf1226ac598826eaf81dd8997e0bec61d"
+    },
+    "content/handbook/engineering/readmes/tom-mcatee.md": {
+      "path": "content/handbook/engineering/readmes/tom-mcatee.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1162a7c81c7d6d4b7df3a01e2d72d82a58bf1fde7f289290c1d02f5ab55feaa7"
+    },
     "content/handbook/engineering/recognition.md": {
       "path": "content/handbook/engineering/recognition.md",
       "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
