@@ -70,6 +70,30 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "0ba9ff4e833d04220c6bacb231961895c63b29d7ffdb6ef176b33ec508f1a550"
     },
+    "content/handbook/acquisitions/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:59:08Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0ea7e45082679631091c7ba5843014bbc4db4be399505eae04a8799c5c525e01"
+    },
+    "content/handbook/acquisitions/acquisition-process/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:59:08Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "762c73cec412e129793e76808c77e05dbf267eed7cef6364ebe933c1cfbf8c82"
+    },
+    "content/handbook/acquisitions/acquisition-process/acquisition-process-communications.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T08:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cd2d4478cd05445a7061f41402fc570e317007288ee0df643fe6596ceafe2566"
+    },
+    "content/handbook/acquisitions/acquisition-process/integration.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T08:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "672c5fb3dc26dba2d6ec4ebdaaf767eef619a3ff88d6482d28a53ecd524c41f5"
+    },
     "content/handbook/alliances/_index.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-25T08:00:00Z",
