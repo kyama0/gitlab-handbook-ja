@@ -1807,6 +1807,524 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "e628ebe3d46d426316860494d953f55ad135ce9f658c50162c1efebef208df51"
     },
+    "content/handbook/finance/_index.md": {
+      "path": "content/handbook/finance/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a1eab10fb4cf6ba7759afca732c3b2deff2d742b64b8eadbaccbd0cfb48ea098"
+    },
+    "content/handbook/finance/accounting/_index.md": {
+      "path": "content/handbook/finance/accounting/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "36b02961d80b65da166165ed2ae4f5c17baf49e1c55c4c62517cd68a0cf34ff1"
+    },
+    "content/handbook/finance/accounting/finance-ops/_index.md": {
+      "path": "content/handbook/finance/accounting/finance-ops/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1950e7d088b7d68414995cf014f4c1d09a3868bb836a45b6c078b1075f03f3f8"
+    },
+    "content/handbook/finance/accounting/finance-ops/billing-ops-GPO/_index.md": {
+      "path": "content/handbook/finance/accounting/finance-ops/billing-ops-GPO/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0c0cbcced5e3eec8da2e19516daa063d9ada11ed98338a4046138ac51dd0554d"
+    },
+    "content/handbook/finance/accounting/finance-ops/billing-ops/_index.md": {
+      "path": "content/handbook/finance/accounting/finance-ops/billing-ops/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8fba1eb790d3f11f23e069f2bb0a189a975863e7e3dfbf42f31825948db268d1"
+    },
+    "content/handbook/finance/accounting/finance-ops/teck-stack-guide-netsuite.md": {
+      "path": "content/handbook/finance/accounting/finance-ops/teck-stack-guide-netsuite.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cf4bdd050beb0424c2dd6b47bda9f6e673c45cf3754e5f93def76ef718e016c7"
+    },
+    "content/handbook/finance/accounts-payable/_index.md": {
+      "path": "content/handbook/finance/accounts-payable/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "aac9af726662e1f1522e18163cf70c641c3af23e4906c9a06d328853d6aa151d"
+    },
+    "content/handbook/finance/accounts-payable/corp-credit-cards.md": {
+      "path": "content/handbook/finance/accounts-payable/corp-credit-cards.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e5da0fcb06079141a7f35bd7efaeb742f3ae4fc472425955b4db0f10c17035d4"
+    },
+    "content/handbook/finance/accounts-payable/coupa-virtual-card-guide-for-accounts-payable.md": {
+      "path": "content/handbook/finance/accounts-payable/coupa-virtual-card-guide-for-accounts-payable.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9f6da47ffdae61c2b447d8c5c9b0fe8db1ad75954da6cc442e122ca7e382e9aa"
+    },
+    "content/handbook/finance/accounts-payable/tech-stack-guide-coupa.md": {
+      "path": "content/handbook/finance/accounts-payable/tech-stack-guide-coupa.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1af9e05cb9d0e289b60030da02f87c25cfdbc94e37b50c64f4e42d94799a2460"
+    },
+    "content/handbook/finance/accounts-payable/tech-stack-guide-liquid.md": {
+      "path": "content/handbook/finance/accounts-payable/tech-stack-guide-liquid.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "19eb165b5f72572e296fb81f2622ca784170abc8f76e4d40833dc4b128f0a487"
+    },
+    "content/handbook/finance/authorization-matrix.md": {
+      "path": "content/handbook/finance/authorization-matrix.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "55772bbf00f2e6e12735313008dd7be439fd7b4bc903a21d43941a4e73145cf9"
+    },
+    "content/handbook/finance/committee-composition.md": {
+      "path": "content/handbook/finance/committee-composition.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a8d6db74a062ae103eff71c898d2d05c13bd490df58c110af9dcbc5c37297cae"
+    },
+    "content/handbook/finance/expenses.md": {
+      "path": "content/handbook/finance/expenses.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dc997bfa84f2c1311a40d983eba2e031f886de3364bf36d509d1b2f728a903ff"
+    },
+    "content/handbook/finance/finance-team-performance-indicators.md": {
+      "path": "content/handbook/finance/finance-team-performance-indicators.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "187bbfe32dc8b5294e0c95213f6ab46b11d13b53b6e44c4b4e0ed141429e33ec"
+    },
+    "content/handbook/finance/financial-planning-and-analysis/_index.md": {
+      "path": "content/handbook/finance/financial-planning-and-analysis/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "95d8c28897c0ff973d17db05de16eec76915cafce1ce9859fdd2531fc1d8c583"
+    },
+    "content/handbook/finance/financial-planning-and-analysis/adaptive-insights.md": {
+      "path": "content/handbook/finance/financial-planning-and-analysis/adaptive-insights.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d818c311991c5bb0bede768b5cd4e2371b8ad275736d8f1293edb06857190fc9"
+    },
+    "content/handbook/finance/financial-planning-and-analysis/corporate-finance.md": {
+      "path": "content/handbook/finance/financial-planning-and-analysis/corporate-finance.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c72c163821e2ea6186d30254a9b471dd98e30450f47ec063477ae2e2c9d85e2e"
+    },
+    "content/handbook/finance/financial-planning-and-analysis/fpa-definitions.md": {
+      "path": "content/handbook/finance/financial-planning-and-analysis/fpa-definitions.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1c52955c2cd7e349710f6238963e31af068441e596a07b86cb1e46987c98693b"
+    },
+    "content/handbook/finance/financial-planning-and-analysis/fpa-metrics.md": {
+      "path": "content/handbook/finance/financial-planning-and-analysis/fpa-metrics.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "afc8be94ce551cb5f78e6990c864a9e335e52c19c386cc9f6a517098023fcb1b"
+    },
+    "content/handbook/finance/financial-planning-and-analysis/fpa-processes.md": {
+      "path": "content/handbook/finance/financial-planning-and-analysis/fpa-processes.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8abe21c7bdf70c462c37d11e1efad4cff07df1ad19cac4d75f0a5e3eb4c7d812"
+    },
+    "content/handbook/finance/financial-planning-and-analysis/ga-finance.md": {
+      "path": "content/handbook/finance/financial-planning-and-analysis/ga-finance.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "91a5215b399e7c9e17a32bbfb4465423d57d9618880f34286ec10cc791147022"
+    },
+    "content/handbook/finance/financial-planning-and-analysis/gtm-analytics-hub.md": {
+      "path": "content/handbook/finance/financial-planning-and-analysis/gtm-analytics-hub.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0432d3c16c0b8d5a7a850b0413e402d985d0db0b4beccda07f9da4039b47ecf0"
+    },
+    "content/handbook/finance/financial-planning-and-analysis/headcount-metrics-and-processes.md": {
+      "path": "content/handbook/finance/financial-planning-and-analysis/headcount-metrics-and-processes.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a5ef4f17a89e6e2575bda23eae81c4dc230eb4ddbbad657cb8b29d8e02f8d477"
+    },
+    "content/handbook/finance/financial-planning-and-analysis/r-and-d-finance/_index.md": {
+      "path": "content/handbook/finance/financial-planning-and-analysis/r-and-d-finance/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "daa3700416c87287abe5548a6e05c8bd28ecba2a272c75ccfd553520ff0bfb7e"
+    },
+    "content/handbook/finance/financial-planning-and-analysis/r-and-d-finance/hosting-main.md": {
+      "path": "content/handbook/finance/financial-planning-and-analysis/r-and-d-finance/hosting-main.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T18:40:41Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "faa2f497a3a72a1e563672ce120baeab483a2d5becf0916d6fcd9d142e7866b4"
+    },
+    "content/handbook/finance/financial-planning-and-analysis/team-structure.md": {
+      "path": "content/handbook/finance/financial-planning-and-analysis/team-structure.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T18:40:41Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1a8997ed2dcdb46f12254859f35068fefbe91600b6937b4e143f8f980d549543"
+    },
+    "content/handbook/finance/growth-and-development/_index.md": {
+      "path": "content/handbook/finance/growth-and-development/_index.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T18:40:41Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9d67e42d3e06ee3fdccea6e2614be5f7031571612ded0e88a4b780ad484e80ac"
+    },
+    "content/handbook/finance/growth-and-development/career-growth.md": {
+      "path": "content/handbook/finance/growth-and-development/career-growth.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T18:40:41Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8b3b82db86b739b3657d2be61c8adf5d2927371036ec997f3118aa6dbccaf001"
+    },
+    "content/handbook/finance/growth-and-development/cfo-shadow-program.md": {
+      "path": "content/handbook/finance/growth-and-development/cfo-shadow-program.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T18:40:41Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "81610ec27b0530217792fc22876eacc0bf44914a385c0dc7e64ab7ffe9ded285"
+    },
+    "content/handbook/finance/growth-and-development/finbt-mentorship.md": {
+      "path": "content/handbook/finance/growth-and-development/finbt-mentorship.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T18:40:41Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "154b8c6f42344417266488a793fd68f82666bdbef616399ce932901e74d0cbfc"
+    },
+    "content/handbook/finance/growth-and-development/learning-development.md": {
+      "path": "content/handbook/finance/growth-and-development/learning-development.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T18:40:41Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8d8c5ced096977ccd1ae07d8187e3d912da52f3528c09fbcf7c552502235672e"
+    },
+    "content/handbook/finance/growth-and-development/mentorship.md": {
+      "path": "content/handbook/finance/growth-and-development/mentorship.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T18:40:41Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dfa1d0b21001d263844dc50cd633518598a3332132a0c7e6b5fa81176ad98178"
+    },
+    "content/handbook/finance/internal-audit/_index.md": {
+      "path": "content/handbook/finance/internal-audit/_index.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T18:40:41Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2b9d3ee2105b4cc64800645a939378c76c5c08bfab907de41a9a43a3f8c3fa9b"
+    },
+    "content/handbook/finance/internal-audit/sarbanes-oxley.md": {
+      "path": "content/handbook/finance/internal-audit/sarbanes-oxley.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T18:40:41Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ad0cc281f02cf37ec90b638da5af109a1db8b5d355173320221c4345ce7da30d"
+    },
+    "content/handbook/finance/investor-relations.md": {
+      "path": "content/handbook/finance/investor-relations.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T19:06:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6741c5d309eebc4268fee0704ce5fd5fee80d39dbad582add162ede5564eedbe"
+    },
+    "content/handbook/finance/jihu-support/_index.md": {
+      "path": "content/handbook/finance/jihu-support/_index.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T19:06:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cf35600ffd86adf5969158387a482e824d1f16827ceb548a45a49e6a466d364e"
+    },
+    "content/handbook/finance/jihu-support/jihu-contribution-process.md": {
+      "path": "content/handbook/finance/jihu-support/jihu-contribution-process.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T19:06:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "347ae7c0f8124a1842187de053dcd22da60f5def173a5f79a8ecb0824f2f6c8e"
+    },
+    "content/handbook/finance/jihu-support/jihu-database-change-process.md": {
+      "path": "content/handbook/finance/jihu-support/jihu-database-change-process.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T19:06:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c64ac4754b36c50e20b10ae5086aee77a90eaaa62d475a23b864498ef8b7509d"
+    },
+    "content/handbook/finance/jihu-support/jihu-security-review-process.md": {
+      "path": "content/handbook/finance/jihu-support/jihu-security-review-process.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T19:06:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5eeb1fc1a96c627cfbe91bd3bb91c7441e537474b5acf44d77c32c1c79f06003"
+    },
+    "content/handbook/finance/jihu-support/jihu-validation-pipelines.md": {
+      "path": "content/handbook/finance/jihu-support/jihu-validation-pipelines.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T19:06:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "826596f4fd8391cb1c62401582342b26193fc7440d4017288c7b06b13e555c3c"
+    },
+    "content/handbook/finance/jihu-support/release-certification.md": {
+      "path": "content/handbook/finance/jihu-support/release-certification.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T19:06:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0319c997fba77088e3ae626cfb4a23343d8f855cdb582a98950fc2329b751e92"
+    },
+    "content/handbook/finance/payroll.md": {
+      "path": "content/handbook/finance/payroll.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T19:06:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "330022e763ca0f9bc5a49a46ef51c81143114953ed346501333af3984ba2a8ba"
+    },
+    "content/handbook/finance/procurement/_index.md": {
+      "path": "content/handbook/finance/procurement/_index.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T19:06:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8f70ebb584ef28fae85ee569c632f93b0a3e409689ffe789e405743bcf4c03c5"
+    },
+    "content/handbook/finance/procurement/charitable-contributions.md": {
+      "path": "content/handbook/finance/procurement/charitable-contributions.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T19:06:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f05be1dd807fca261184b71bc5e0692cb5f68a9956a6eeb0134c122b1a07870f"
+    },
+    "content/handbook/finance/procurement/consultants.md": {
+      "path": "content/handbook/finance/procurement/consultants.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6c69791c312786399999b2337cf30fedc22b53007fbe214427d4d9fd1211d580"
+    },
+    "content/handbook/finance/procurement/contingent-worker-policy.md": {
+      "path": "content/handbook/finance/procurement/contingent-worker-policy.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8fd567adc558f7e99972cef2d56546c337a15a886bc99aea40b99b349962a6a7"
+    },
+    "content/handbook/finance/procurement/coupa-faq.md": {
+      "path": "content/handbook/finance/procurement/coupa-faq.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9d114ee14436620e664d63f404e0d4357758cf5d4cf5df57b29804565ef9bd52"
+    },
+    "content/handbook/finance/procurement/field-marketing-events.md": {
+      "path": "content/handbook/finance/procurement/field-marketing-events.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "eb54bf320c4a0302a6f538ada878acef524c2f795eccb3306061d47e50cdc751"
+    },
+    "content/handbook/finance/procurement/individual-use-software.md": {
+      "path": "content/handbook/finance/procurement/individual-use-software.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "944c8ea8767d58070afbffa5d5d93930d5197b58c5cbc1b4122191f490cde309"
+    },
+    "content/handbook/finance/procurement/office-equipment-supplies.md": {
+      "path": "content/handbook/finance/procurement/office-equipment-supplies.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1def54f67abcb1229763ea60f55dd236b7548394673c621224fcef9fba5899cc"
+    },
+    "content/handbook/finance/procurement/tips-for-submitting-a-zip-request.md": {
+      "path": "content/handbook/finance/procurement/tips-for-submitting-a-zip-request.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "89e11b891297f94986c7cc806e83c883d5a3e003e1ed8a9fa9d8a8ec2798958d"
+    },
+    "content/handbook/finance/procurement/trial-agreement.md": {
+      "path": "content/handbook/finance/procurement/trial-agreement.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0a6f06d002511cda0ed7b01d4472823b58eff690001cec88a6974d0f9ec1698b"
+    },
+    "content/handbook/finance/procurement/vendor-guidelines/_index.md": {
+      "path": "content/handbook/finance/procurement/vendor-guidelines/_index.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1db12c2d8e30114effe59a432354edbdc3c70257ff19b495cda324767a8c7812"
+    },
+    "content/handbook/finance/procurement/vendor-guidelines/legacy-vendor-agreement-v1.md": {
+      "path": "content/handbook/finance/procurement/vendor-guidelines/legacy-vendor-agreement-v1.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7cc49324beac32cfe0aa7c1a22ea91fbacf56ac8c02700b57b7759cdbd5ef7af"
+    },
+    "content/handbook/finance/procurement/vendor-guidelines/mutual-non-disclosure-agreement.md": {
+      "path": "content/handbook/finance/procurement/vendor-guidelines/mutual-non-disclosure-agreement.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T20:09:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "34ef3bf860948d73ef66947595974eb40e834f1ef3b1058c1cea1d18a6e5f5b5"
+    },
+    "content/handbook/finance/procurement/vendor-guidelines/po-terms.md": {
+      "path": "content/handbook/finance/procurement/vendor-guidelines/po-terms.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T20:09:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7bb7a9807517ba1e51ed197f1c6e4aa28782693e7c3533947035da1ee612cd88"
+    },
+    "content/handbook/finance/procurement/vendor-guidelines/vendor-agreement.md": {
+      "path": "content/handbook/finance/procurement/vendor-guidelines/vendor-agreement.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T20:09:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3815f6cb141dca06a25350224b4700882299f20b48bc0ae25f04d27f7935693a"
+    },
+    "content/handbook/finance/procurement/vendor-guidelines/vendor-security-addendum.md": {
+      "path": "content/handbook/finance/procurement/vendor-guidelines/vendor-security-addendum.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T20:09:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "afa8b26ebfb95cab21b81d1c323558f77f74141d695d7cd736793bab80230fd0"
+    },
+    "content/handbook/finance/procurement/virtual-cards.md": {
+      "path": "content/handbook/finance/procurement/virtual-cards.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T20:09:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8e845a23c738e37e2ba80e51bcff9655dfbbb721948c4bc6f926511550da55b2"
+    },
+    "content/handbook/finance/readmes/_index.md": {
+      "path": "content/handbook/finance/readmes/_index.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T20:09:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3aed387c705feed48035deb850b96b8cb4a625a1e84a767edc6cab16a7d05b4f"
+    },
+    "content/handbook/finance/readmes/danielle-ritter.md": {
+      "path": "content/handbook/finance/readmes/danielle-ritter.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T20:09:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2f3b3aa07b50839228ba0cdf31a99cb00e475665b3cd994cea6bdb8d52152696"
+    },
+    "content/handbook/finance/readmes/james-gladen.md": {
+      "path": "content/handbook/finance/readmes/james-gladen.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T20:09:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "321ef43fb57b90515f62feaa458a1f6e585b7f344918f758856d8f8793eec77e"
+    },
+    "content/handbook/finance/readmes/jessica-ross.md": {
+      "path": "content/handbook/finance/readmes/jessica-ross.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T20:09:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "71db4c7f740225852845a25ee0337d818a52ee7820afe529bc4446fe3fe601a4"
+    },
+    "content/handbook/finance/readmes/julie-malloy.md": {
+      "path": "content/handbook/finance/readmes/julie-malloy.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T20:09:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bedc9bb39715b442c69be8eef12cd4b4671df6a4871548182f84b3374441b592"
+    },
+    "content/handbook/finance/readmes/simon-mundy.md": {
+      "path": "content/handbook/finance/readmes/simon-mundy.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "84165df08f60542952da4e07b814cdd6cdd3597bf3029e3379f84e2580242b3a"
+    },
+    "content/handbook/finance/readmes/yao-chew.md": {
+      "path": "content/handbook/finance/readmes/yao-chew.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "166c174ae7ea0f36a9fd930026069bd6f32d2ce5d199faddece9f323d09e3c1f"
+    },
+    "content/handbook/finance/readmes/yyugitlab.md": {
+      "path": "content/handbook/finance/readmes/yyugitlab.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c4b96c562f7f3608bb256cf28326a2a748e9ad0ffe875d004a4062b5dd92f2c2"
+    },
+    "content/handbook/finance/sales-comp-plan.md": {
+      "path": "content/handbook/finance/sales-comp-plan.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "98de474b0f5b7adf8c8e84446f0f1df10ae5d94adeb7d5605e90ece25863ba58"
+    },
+    "content/handbook/finance/spending-company-money.md": {
+      "path": "content/handbook/finance/spending-company-money.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d08dca36457b978e0206e65a390fe827c2fd14bbdcfd1913c6e662d1b6c85846"
+    },
+    "content/handbook/finance/tax/_index.md": {
+      "path": "content/handbook/finance/tax/_index.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9f0903c44871b5a3261833007ecc42d1396c5ed67d03b74e6d109d74a40da751"
+    },
+    "content/handbook/finance/timekeeping/_index.md": {
+      "path": "content/handbook/finance/timekeeping/_index.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "70fdaad1bb5081f34347853d1e4fcb4abef7d1565b9a032706beb3bb3bb36e11"
+    },
+    "content/handbook/finance/travel/_index.md": {
+      "path": "content/handbook/finance/travel/_index.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bf0544a1b10bd55cb5d0db28754b36a9628e8cafc75efd649e59df2a3e3272ac"
+    },
+    "content/handbook/finance/travel/sponsored.md": {
+      "path": "content/handbook/finance/travel/sponsored.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "30bb69ce49613603df4b4f0479eb36dcf5d1a7f50a8b381e50c8f9e255383ce4"
+    },
     "content/handbook/hiring/_index.md": {
       "path": "content/handbook/hiring/_index.md",
       "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
