@@ -46,11 +46,7 @@ GitLab の Issue／MR でチーム全体に連絡を取るには `@gitlab-org/co
 
 | カテゴリ          | カウンターパート                                                                       |
 |-------------------|--------------------------------------------------------------------------------------|
-| プロダクトマネージャー   | 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/ai/context-systems/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-                                                |
-| テクニカルライティング | 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/ai/context-systems/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-                                                |
+| プロダクトマネージャー   | <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/ai/context-systems/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p> |
+| テクニカルライティング | <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/ai/context-systems/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p> |
 | UX                | TBD                                                                                  |
 | サポート              | [TBD](/handbook/support/support-stable-counterparts/)                                |
