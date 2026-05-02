@@ -314,6 +314,48 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "3ec2fd6ce11b9f11923b46b4582fadb500b51012a46b5df6bfaa8f26ecd805c7"
     },
+    "content/handbook/entity/_index.md": {
+      "path": "content/handbook/entity/_index.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b6bce1d07281775cddba61e18b384ecfb037383dde792542aea677a95a1ca974"
+    },
+    "content/handbook/entity/entity-specific-employment-policies.md": {
+      "path": "content/handbook/entity/entity-specific-employment-policies.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "573a03b740c630ac4c0b7521ce485fdfd22e01f784ddcc3c3c2e43419aa8f7fd"
+    },
+    "content/handbook/entity/gmbh-germany.md": {
+      "path": "content/handbook/entity/gmbh-germany.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be0cccb76aaf129a74c5ff1871708301f3f70b874bc70e2336c4138949cfa9d0"
+    },
+    "content/handbook/entity/iberia-srl-spain.md": {
+      "path": "content/handbook/entity/iberia-srl-spain.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "68f5cb8895e81804bc2ca645ad8128c3b4bf0600acba126ddc3f9ef0c9890fdc"
+    },
+    "content/handbook/entity/india-pvt-ltd.md": {
+      "path": "content/handbook/entity/india-pvt-ltd.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bfc89d8c3ec307c87dd8b40b6788a0dff2975c7c9a73d83f37522afcb3b67fbc"
+    },
+    "content/handbook/entity/israel-ltd.md": {
+      "path": "content/handbook/entity/israel-ltd.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8bfeadbf804ab3e1c69ead1bdec07279b214db6745283b8c61d3d2aaab757f8b"
+    },
     "content/handbook/hiring/_index.md": {
       "path": "content/handbook/hiring/_index.md",
       "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
