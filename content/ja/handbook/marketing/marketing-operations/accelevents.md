@@ -1,5 +1,5 @@
 ---
-# title: "Accelevents"
+title: "Accelevents"
 description: "Accelevents は、対面イベントを開催したいイベントプランナー向けのオールインワンのイベント登録およびイベント管理ソリューションです。"
 upstream_path: /handbook/marketing/marketing-operations/accelevents/
 upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
