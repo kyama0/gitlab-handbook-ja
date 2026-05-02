@@ -70,6 +70,18 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "0ba9ff4e833d04220c6bacb231961895c63b29d7ffdb6ef176b33ec508f1a550"
     },
+    "content/handbook/alliances/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T08:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0ad940ac3d5030b0e69629cc5cbaf8ede2365d19d60a3a94f7104f18c591a9b6"
+    },
+    "content/handbook/alliances/integration-instructions.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T08:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e3d70169f25c84dc4d96ea46d66a17974c06d00ba6ee4112859527bd06f3f026"
+    },
     "content/handbook/board-meetings/_index.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-25T08:00:00Z",
