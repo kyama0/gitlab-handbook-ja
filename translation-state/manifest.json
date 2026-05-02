@@ -43,6 +43,90 @@
       "model": "claude-opus-4-7",
       "input_hash": "7a01ad3d083f5192a80b690fce76fabff9e45dbdaea02d8042b751e1f53a7400"
     },
+    "content/handbook/engineering/architecture/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c226a191d04de77525de94f278bd1416cbe887fb926ccf37f240dc2e77eb34b3"
+    },
+    "content/handbook/engineering/architecture/abstractions/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "469f029cc84d89f63788bd7cd61fa216af30c9a012296f6ba7a6effc4805a915"
+    },
+    "content/handbook/engineering/architecture/abstractions/candidate/nats.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9ac7e3579953730afdf02693325204d1a704cfb3352312f66f80a0bcc5cdb61c"
+    },
+    "content/handbook/engineering/architecture/abstractions/candidate/sidekiq.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a81f04a383fe92082cd30915c2da0df0a76cc9bfcdf042d003cea88c14f0ee63"
+    },
+    "content/handbook/engineering/architecture/abstractions/postgresql.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6aab2e8d3e5bbc2fe80352af42e26f4de3aca0ae2899d44b969ab2607f2e7a0f"
+    },
+    "content/handbook/engineering/architecture/guidelines/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "99725429f17d95c87418f4e889ff89794655ddff7e344445808379c4c7833780"
+    },
+    "content/handbook/engineering/architecture/guidelines/data_lifecycle/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "23901737e307287bdabaece52b309eb97228d1f1346562cd363cac48c0bcb17a"
+    },
+    "content/handbook/engineering/architecture/guidelines/data_lifecycle/data_retention.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a10e96d058fd25dba2bda88a0874dd78121bb6d11fc6617883b9a26c8f817d28"
+    },
+    "content/handbook/engineering/architecture/guidelines/database.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e5aacac9872f508b7f7c9fc0e6b7ecbfd9935bcc9567f1cc982c8ed287918c85"
+    },
+    "content/handbook/engineering/architecture/practice/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b9bde721501fd62ae80efe1e54c5ad3517f9de958384f3dabd38236126ec5a7e"
+    },
+    "content/handbook/engineering/architecture/practice/availability/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/architecture/practice/scalability/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/architecture/roadmap.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0b130fc8ca98960c88f819555e2f247f8898489dcf8044ae4b1290e08d51c443"
+    },
+    "content/handbook/engineering/architecture/workflow/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
     "content/handbook/engineering/testing/_index.md": {
       "path": "content/handbook/engineering/testing/_index.md",
       "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
