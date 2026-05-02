@@ -1,0 +1,323 @@
+---
+title: "ClickHouse 向けスケーラブルなデータ取り込み抽象化"
+status: proposed
+creation-date: "2023-01-10"
+authors: [ "@ankitbhatnagar", "@ahegyi", "@mikolaj_wawrzyniak" ]
+coach: "@grzesiek"
+approvers: [ "@nhxnguyen", "@stkerr" ]
+owning-stage: "~workinggroup::clickhouse"
+participating-stages: [ "~section::ops", "~section::dev" ]
+toc_hide: true
+upstream_path: /handbook/engineering/architecture/design-documents/clickhouse_ingestion_pipeline/
+upstream_sha: 0ee1352c26e468fa8032143d735391a793de7086
+translated_at: "2026-04-26T10:00:00Z"
+translator: claude
+stale: false
+---
+
+
+<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
+このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
+</div>
+
+<div class="overflow-x-auto my-4">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-100 text-left">
+<th class="px-3 py-2 border border-gray-300">Status</th>
+<th class="px-3 py-2 border border-gray-300">Authors</th>
+<th class="px-3 py-2 border border-gray-300">Coach</th>
+<th class="px-3 py-2 border border-gray-300">DRIs</th>
+<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
+<th class="px-3 py-2 border border-gray-300">Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">proposed</span></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/ankitbhatnagar" class="text-blue-600 hover:underline">@ankitbhatnagar</a>, <a href="https://gitlab.com/ahegyi" class="text-blue-600 hover:underline">@ahegyi</a>, <a href="https://gitlab.com/mikolaj_wawrzyniak" class="text-blue-600 hover:underline">@mikolaj_wawrzyniak</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/grzesiek" class="text-blue-600 hover:underline">@grzesiek</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/nhxnguyen" class="text-blue-600 hover:underline">@nhxnguyen</a>, <a href="https://gitlab.com/stkerr" class="text-blue-600 hover:underline">@stkerr</a></td>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~workinggroup::clickhouse</span></td>
+<td class="px-3 py-2 border border-gray-300">2023-01-10</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## 目次
+
+- [概要](#summary)
+  - [なぜ](#why)
+  - [どのように](#how)
+- [動機](#motivation)
+- [ケーススタディ](#case-studies)
+  - [既存データの ClickHouse へのレプリケーション](#1-replicating-existing-data-into-clickhouse)
+  - [ClickHouse への大量データの取り込み](#2-ingesting-large-volumes-of-data-into-clickhouse)
+- [目標](#goals)
+- [非目標](#non-goals)
+- [一般的な考慮事項](#general-considerations)
+- [構築の課題](#major-challenges-around-building-such-a-capability)
+- [提案するソリューション](#proposed-solution)
+- [設計と実装](#design--implementation)
+- [参考文献](#references)
+
+## 概要
+
+高スループットシステムから ClickHouse へ大量のデータを効率的に取り込むための、スケーラブルで信頼性の高いデータ取り込み抽象化を開発します。
+
+### なぜ
+
+GitLab のあらゆるアプリケーションが、現在または将来において生成するデータのスケールに関わらず、必要なデータを ClickHouse に書き込めるようにするためです。ClickHouse を最初に選ぶ理由については[動機](#motivation)をご覧ください。
+
+### どのように
+
+ユーザーが ClickHouse にデータを書き込むことができ、計装、サービスディスカバリーなどに関するすべての必要な設定、規則、ベストプラクティスが組み込まれた書き込み抽象化（API/ライブラリ）を構築することで実現します。
+
+## 動機
+
+ClickHouse は、あまり変化しないリアルタイムの集計データの取得を必要とするユースケースを支えるオンライン分析処理（OLAP）データベースです。ClickHouse は高性能で、PostgreSQL や MySQL などの従来のトランザクションリレーショナルデータベース（OLTP）と比較して大量のデータにスケールできます。ClickHouse の機能の詳細については、[[1]](https://about.gitlab.com/blog/2022/04/29/two-sizes-fit-most-postgresql-and-clickhouse/)、[[2]](https://clickhouse.com/blog/migrating-data-between-clickhouse-postgres)、[[3]](https://posthog.com/blog/clickhouse-vs-postgres) をご覧ください。
+
+GitLab では、[現在および将来の ClickHouse の使用/機能](https://gitlab.com/groups/gitlab-com/-/epics/2075)が、ClickHouse をバッキングデータストアとして使用することで実現できる複数のユースケースを参照・説明しています。これらのほとんどは以下の 2 つの主要な懸念事項について説明しています:
+
+1. [ClickHouse の OLAP 機能](https://clickhouse.com/docs/en/faq/general/olap)を活用して、基盤となるシステムが短期・長期の両方でデータの集計分析を実行できるようにすること。
+1. これらの操作を主に PostgreSQL に保存されている現在の既存データセットで実行することが、困難かつ非効率になり始めているという事実。
+
+今後、アプリケーションから生成されるデータ量の増加と生成速度を考慮すると、それをより*有能な*システムに効果的かつ効率的に取り込む能力が、アプリケーションのスケールとビジネス成長への準備を支援します。
+
+## ケーススタディ
+
+ClickHouse を利用する意向の（報告された）すべてのユースケースの初期評価から、以下の広範な使用パターンが観察されます:
+
+1. 他のデータベース（最も顕著なのは PostgreSQL）から ClickHouse へ効率的に既存データをレプリケーションすること。
+1. 非同期処理、データ集計・分析のために ClickHouse へ直接大量のデータを取り込むこと。
+
+以下のセクションでは各問題領域の詳細を説明します:
+
+### 1. 既存データの ClickHouse へのレプリケーション
+
+この点に関する以前の作業を参考にすると、PostgreSQL からの論理レプリケーションは遅すぎることが確認されています。代わりに、データベーストランザクション内でデータ変更イベントを発行し、それを非同期で処理して ClickHouse の対応するデータを書き込みまたは更新できるようにする必要があります。
+
+以下のケーススタディは、各グループが根本的な問題をどのように解決しようとしているかを説明しています:
+
+- ~group::optimize は、アプリケーション層で実装できるスケーラブルな PostgreSQL データレプリケーション戦略に取り組んでいます。
+
+  - [提案: スケーラブルなデータ同期/レプリケーション戦略](https://gitlab.com/gitlab-org/gitlab/-/issues/382172) は、そのような戦略とキューイング/バッチ処理のニーズに Sidekiq を使用する追加の課題について議論しています。
+
+  - `PostgreSQL` から `ClickHouse` へデータを直接ポンプすることは、問題に取り組む正しい方法ではないことが観察されています。
+
+  - 上記の問題に加えて、システム間でデータをレプリケーションする場合の別のクラスの問題として、アップストリームで発生するデータのバックフィルやデータマイグレーションの処理もあります。
+
+- [group::data](../../../../business-technology/data-team/) は、Snowflake ベースのデータウェアハウスに一部の PostgreSQL データベースからデータを同期する作業を行っています。検討されたオプションについてはこの Issue をご覧ください: [PostgreSQL から Snowflake へのパイプラインの全オプションのリストアップ](https://gitlab.com/gitlab-data/gitlab.com-saas-data-pipeline/-/issues/13)
+
+  - [次世代 GitLab SaaS データパイプライン](https://docs.google.com/presentation/d/1hVaCY42YhaO5UvgLzp3mbuMYJIFuTFYFJjdhixFTxPE/edit#slide=id.g143a48de8a3_0_0)に関する作業により、データチームは `updated_at` タイムスタンプカラムに基づいた増分データ抽出を行う「カスタム」パイプラインを所有しています。これにより、運用データベースリレーションの重要なサブセットを Snowflake データウェアハウスにインポートできます。
+
+  - データ量が増加するにつれて、この（ETL）パイプラインの実行により多くの時間とリソースが必要になり、データが生成されてから Snowflake データウェアハウスで利用可能になるまでの時間が遅延することが予見されます。
+
+  - 現在のセットアップでは行の削除が Snowflake に転送されないため、データの不整合/不完全性の問題も発生する可能性があり、データ量が膨らんで分析が歪む恐れがあります。インポート間隔期間中に発生した複数の更新に関する情報も失われます。
+
+  - データベースからデータを中間システムや ClickHouse にほぼリアルタイムでレプリケーションできるスケーラブルな取り込みパイプラインがあれば、このシステムの運用特性を改善できます。
+
+### 2. ClickHouse への大量データの取り込み
+
+ClickHouse への取り込みにより、潜在的に大量の未集計データを取り込む必要があり、これは大量の小さな書き込みになる可能性があります。これは ClickHouse がデータを処理・保存する方法に悪影響を与える可能性があります。この問題を軽減するために、小さな書き込みをキューに入れてより大きなバッチにまとめ、取り込みパイプラインを常に効率的に保つ必要があります。
+
+以下のケーススタディは、各グループが根本的な問題をどのように解決しようとしているかを説明しています:
+
+- ~group::observability は、以下の 2 つの Issue でその大量データの ClickHouse への取り込みニーズを説明しています:
+
+  - [提案: GitLab オブザービリティプラットフォーム - データ取り込み](https://gitlab.com/gitlab-org/opstrace/opstrace/-/issues/1878) は、Kafka などの外部イベントストアを使用してユーザーから受信したデータを最初に取り込み、それを ClickHouse に大きなバッチで書き込むことで、ClickHouse の `MergeTree` が取り込みデータを処理する方法の書き込みパフォーマンスを損なうことなく大量の小さな書き込みを排除する必要性について話しています。
+
+  - さらに、[ClickHouse: ClickHouse への書き込みをバッチ処理するためのクライアント側バッファリングの調査](https://gitlab.com/gitlab-org/opstrace/opstrace/-/issues/2044) は、上記の問題を回避するためのアプリケーションローカルキューイング/バッチ処理の実験について述べています。
+
+- ~"group::analytics instrumentation" は分析サービスの構築に取り組んでおり、最近システムの一部を構築または改善することを検討しています。
+
+  - [プロダクトアナリティクスコレクターコンポーネント](https://gitlab.com/groups/gitlab-org/-/epics/9346) は、トラッキングイベントの収集と処理のために Jitsu を Snowplow に置き換えることについて述べています。提案の詳細については [Jitsu の代替](https://gitlab.com/gitlab-org/analytics-section/analytics-instrumentation/proposals/-/blob/62d332baf5701810d9e7a0b2c00df18431e82f22/doc/jitsu_replacement.md) をご覧ください。
+
+  - 初期設計は [Jitsu 代替としての Snowplow PoC](https://gitlab.com/gitlab-org/analytics-section/product-analytics/devkit/-/merge_requests/37) でプロトタイプされました。
+
+  - この設計から、大量のデータが ClickHouse に取り込まれ、スケーラブルな取り込みパイプラインの使用から恩恵を受けられる可能性が高いことが簡単に観察できます。
+
+## 目標
+
+### 明確に定義されたクライアント抽象化
+
+アプリケーション自体の設計を妨げることなく ClickHouse にデータを取り込むことができ、基盤となるコードバックエンドに依存しない、完全に機能するアプリケーション側の抽象化を定義・確立したいと考えています。提案する抽象化は、GitLab のコアまたはサテライトのいかなるアプリケーションにとっても、デフォルトの選択肢となるべきです。
+
+### 書き込みの大量スループットのサポート
+
+ここでのソリューションは、アプリケーションが成長してスケールアウトしても成長を可能にしながら、基盤となるデータベースに任意の量の挿入（1 秒あたり最大 1,000〜5,000 回の書き込みのオーダー）を効率的に書き込めるようにするべきです。ClickHouse が受信した書き込みを処理する方法を考慮すると、提案するソリューションは多数の非常に小さな書き込みをより大きなバッチにまとめられる必要があります。
+
+### 信頼性の高い一貫したデータ配信
+
+ここでのソリューションは、ClickHouse に最終的に永続化される前のデータの不当な損失を最小限に抑えながら、取り込まれたデータの信頼性の高い一貫した配信も保証するべきです。
+
+## 非目標
+
+### データ型、スキーマ、フォーマットへの対応
+
+この提案のこの段階では、受信した取り込みデータのデータ型、スキーマ、フォーマットへの対応を最適化していません。それはバックエンド固有の実装自体に委ねられるべきで、書き込み抽象化内では処理されません。
+
+### 現在のデータソースの場所への対応
+
+この時点では、設計にクライアント側の特定の詳細も取り入れていません。書き込み抽象化は、それが書かれた言語のツールであるべきです。アプリケーションがサードパーティライブラリと同様にデータを書き込むために使用できる限り、その上に構築できるはずです。
+
+## 一般的な考慮事項
+
+前述の 2 つの問題領域の詳細を踏まえ、提案するソリューションを以下の論理的な構造でモデル化できます:
+
+- 取り込み
+  - API/SDK
+  - HTTP2/gRPC サイドカー
+- 転送とルーティング
+  - 複数の宛先
+- 処理/コンピュート
+  - エンリッチメント
+  - 処理
+  - 永続化
+
+## このような機能の構築における主な課題
+
+### セルフマネージド環境
+
+ClickHouse と関連システムの導入における最大の課題は、GitLab をセルフマネージド環境で実行しているユーザーが利用できるようにすることです。この提案の目的は意図的にそれらの制約の範囲内に保たれています。また、ここで*提案している*ことがセルフマネージド環境内から ClickHouse を使用するアプリケーションに適用されることを確認することも重要です。
+
+セルフマネージド環境向けの管理された ClickHouse インスタンスのディストリビューションとデプロイを合理化するための継続的な取り組みが、より大きなスコープの [GitLab での ClickHouse 使用](https://docs.gitlab.com/ee/architecture/blueprints/clickhouse_usage/index.html)の範囲内で進められています。前述の問題の一部に取り組むその他のいくつかの Issue は:
+
+- [GitLab で ClickHouse インスタンスを実行するためのコンポーネントコストと保守要件の調査と理解](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/14384)
+- [ClickHouse の保守とコスト調査](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/116669)
+
+### さまざまなデータソース、構造、使用パターン
+
+ClickHouse に取り込むデータはさまざまなデータソースから来て、異なるスキーマやフォーマットで構造化される可能性があります。それを考慮すると、すべてのユースケースを効率的に満たすソリューションを起草することは簡単ではありません。
+
+中間取り込みシステムを構築する場合、任意のソリューションはソース/スキーマ/フォーマットに依存しないデータ転送レイヤーと、最大数のアプリケーションが使用できる確立された成熟したクライアント抽象化を提供するのに役立つべきです。
+
+### 現在のデータベースインフラの上に構築する
+
+現在のデータベースインフラはかなり大規模で動作しており、継続的に読み書きするアプリケーションを追加することで既存のリソースへの負荷が増加します。異なるコンテキストで安全に処理できるワークロードやデータセットを移動させることが重要です。
+
+### サービスディスカバリー
+
+アプリケーション向けの ClickHouse クラスターやインスタンスのディストリビューションとデプロイに関する詳細をまだ標準化しています。最終的にどのように実装するかによって、クライアントがどの ClickHouse クラスター、シャード、またはテーブルを使用すべきかを発見できるようにすることが、そのようなソリューションの一部となる必要があります。
+
+## 提案するソリューション
+
+前述の問題を踏まえ、特にアプリケーションから ClickHouse へ書き込まれるデータの量とスケールを考慮すると、ニーズに応じて外部の中間システムの使用を許可することが望ましいです。
+
+そのため、現在のスケールに関わらず、アプリケーションが ClickHouse にデータを保存できる抽象化を開発する予定です。また:
+
+- パフォーマンスとスケール要件が変化した場合に、ある*テクノロジー*から別のテクノロジーへ切り替えられるようにします。
+- バックエンド固有の規則、設定、計装やサービスディスカバリーなどのベストプラクティスを 1 か所にエンコードして、すべてのアプリケーションが一貫して活用できるようにします。
+
+## 設計と実装
+
+### 中核となる前提
+
+- 前述の非目標で述べたように、ClickHouse へのデータ書き込みのみに集中します。データが ClickHouse に届く方法の詳細については、このドキュメントは（意図的に）データのソースについては取り上げません。それらの詳細の一部はそのデータを生成するアプリケーションに委ねられています。つまり、この抽象化を使用できる限り、ClickHouse にデータを書き込めるはずです。
+
+- 異なるストレージバックエンドの選択は、このスコープの範囲外であるため、後続のブループリントや Epic に委ねる予定です。ClickHouse がデータの最終的な宛先であることを考えると、このドキュメントはそこへのデータ書き込みについてのみ述べています。直接か、キューイング/バッチ処理システムを介した間接的な方法で。
+
+### アーキテクチャ
+
+![アーキテクチャ](/images/engineering/architecture/design-documents/clickhouse_ingestion_pipeline/clickhouse_dbwriter.png)
+
+データ書き込みの抽象化を持つことで、クライアント側の計装がバックエンドに依存せず、実行場所に応じてコードパスを切り替えられるようになります。
+
+設定例:
+
+```ruby
+Gitlab::Database::Writer.config do |config|
+  #
+  # sync モードを使用する場合、データは ClickHouse に直接書き込まれます
+  # そのため、ここではバックエンドが ClickHouse であることも前提とします
+  config.mode = :sync OR :async
+  config.backend = :clickhouse # optional
+  # または
+  #
+  # async モードを使用する場合、データはまず中間システムに書き込まれ
+  # その後非同期で ClickHouse に書き込まれます
+  config.mode = :async
+  config.backend = :pubsub OR :kafka OR :otherbackend
+  #
+  # 以降はバックエンド固有の設定
+  #
+  config.url = 'tcp://user:pwd@localhost:9000/database'
+  # 例えば、シリアライザーはデータが通信回線上でどのように転送されるかを定義します
+  config.json_serializer = ClickHouse::Serializer::JsonSerializer
+  # ...
+end
+Gitlab::Database::Writer.write(
+  Gitlab::Database::Model::MyTable,
+  [{ id: 1, foo: 'bar' }],
+)
+```
+
+`Gitlab::Database::Writer.backend` はバックエンド固有のクライアント実装にできるだけ近い形で保持する予定です。バニラクライアントのラッパーを持つことで、サービスディスカバリーなどのバックエンドに関する周辺的な懸念を処理しながら、ユーザーが特定のクライアントの機能を活用できるようにします。
+
+### イテレーション
+
+この取り組みの大きなスコープと実際の使用状況に関するフィードバックの必要性を考慮して、以下のように説明できる複数のイテレーションにわたって提案する抽象化を構築する予定です:
+
+#### イテレーション 1 - sync モードで書き込み抽象化を開発する
+
+まず、ユーザーが ClickHouse にデータを書き込み始めるために使用できるシンプルな書き込み抽象化を調査・開発します。これにより、選択した基礎クライアントが十分に調査されており、できるだけ多くの報告されたユースケースのニーズを満たすことが確保されます。これが実際に動作しているのを見ることで、ユーザーフィードバックを収集して書き込み API/インターフェースを改善できます。
+
+このフィードバックと ClickHouse を各環境にどのようにデプロイするかに関するさらなる開発により、この抽象化に必要な規則やベストプラクティスを組み込み、接続プーリングやサービスディスカバリーなどの詳細を抽象化することが適切になります。
+
+#### イテレーション 2 - スキーマとデータ検証のサポートを追加する
+
+次のイテレーションでは、スキーマの使用と検証のサポートを追加する予定です。これにより、モデル定義が適切に保たれ、挿入されるデータの検証が可能になります。
+
+#### イテレーション 3 - async モードのサポートを追加し、1 つのバックエンドで PoC を実施する
+
+上記の 2 つのイテレーションが十分に実行されたら、ClickHouse への非同期書き込みの前に中間データストアへの書き込みサポートを追加して書き込み抽象化をスケールアップし始められます。少なくとも 1 つのそのようなバックエンドでこのような実装をプロトタイプすることを目指します。
+
+#### 以降のイテレーション
+
+バックエンドに依存しない抽象化がクライアントと対話する取り込みインターフェースになることで、この抽象化内から解決できるさまざまな他のユースケースがあります。それらのいくつかは:
+
+- ゼロ設定の複数ソースからのデータ取り込み
+- 複数ソースからのデータの動的なエンリッチメント
+- 長期保存データストアへのデータのオフロード
+
+### 可能なバックエンド実装
+
+- ClickHouse に直接書き込むアプリケーション
+  - アプリケーションローカルのインメモリキューイング/バッチ処理
+  - アプリケーションローカルの永続的なキューイング/バッチ処理
+- 最終的に ClickHouse に書き込む前の非ローカルキューイング/バッチ処理
+  - マネージドクラウドバックエンド:
+    - [Google PubSub](https://cloud.google.com/pubsub)
+    - [AWS Kinesis](https://aws.amazon.com/kinesis/)
+  - セルフマネージドバックエンド:
+    - [CHProxy](https://www.chproxy.org/)
+    - [Kafka](https://kafka.apache.org/)
+    - [RedPanda](https://www.redpanda.com/)
+    - [Vector](https://vector.dev/)
+    - [RabbitMQ](https://www.rabbitmq.com/)
+
+### 非ローカルバックエンドを使用する際の追加の複雑さ
+
+- 対象のバックエンドからデータを読み込んで効率的かつ確実に ClickHouse に書き込む追加のプロセス/サブシステムを実行する必要があります。
+- バックエンドを経由する追加のホップにより、このデータが ClickHouse に届くまでに潜在的な遅延が生じる可能性があります。
+
+上記の点はアプリケーションにとって追加の複雑さを示していますが、スケールでのデータ取り込みのニーズを仮定すると、有効なトレードオフとして扱うことができます。
+
+### 複数の次元でバックエンドを比較する
+
+| 次元 | CHProxy | Redis | Google PubSub | Apache Kafka |
+|---|---|---|---|---|
+| 運用 | 簡単 | 簡単 | マネージド | 複雑 |
+| データ保持 | 非永続 | 非永続 | 永続 | 永続 |
+| パフォーマンス | 良好 | 良好 | 高い | 高い |
+| データストリーミング | なし | 最小限 | 良好 | 最高 |
+| セルフマネージド環境での適性 | 簡単 | 簡単 | - | 複雑 |
+
+## 参考文献
+
+- [Manage 内の ClickHouse ユースケース](https://gitlab.com/groups/gitlab-org/-/epics/7964)
+- [PostgreSQL から Snowflake へのパイプラインの全オプションのリストアップ](https://gitlab.com/gitlab-data/gitlab.com-saas-data-pipeline/-/issues/13)
+- [データイベントキャプチャのための Snowplow の設計スパイク](https://gitlab.com/gitlab-data/analytics/-/issues/12397)
+- [監査イベントのパフォーマンス制限](https://gitlab.com/gitlab-org/gitlab/-/issues/375545)
