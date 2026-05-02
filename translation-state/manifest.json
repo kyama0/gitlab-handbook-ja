@@ -15,12 +15,194 @@
       "model": "claude-opus-4-7",
       "input_hash": "1063f98f47e509f60e036d240b8ab971a73d7b06e797f64000bda0af9adb1ca6"
     },
+    "content/handbook/about/contributing.md": {
+      "path": "content/handbook/about/contributing.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:45:05Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "efc9d99b9a9437770a8b59b19a80fa0e083bc46a6d352d5405a387be965079cf"
+    },
+    "content/handbook/about/direction.md": {
+      "path": "content/handbook/about/direction.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:45:05Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3b32982b5eb385c07d19d908a31a741af4a6410990f6f6404db124b2976038ab"
+    },
+    "content/handbook/about/editing-handbook/_index.md": {
+      "path": "content/handbook/about/editing-handbook/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:45:05Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "36781aeda921da57ff697d7750f52989e1dde4bf9c2299158c62cec62dd03ac7"
+    },
+    "content/handbook/about/editing-handbook/edit-team-page.md": {
+      "path": "content/handbook/about/editing-handbook/edit-team-page.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:45:05Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "700af2a3bc5fa36b2d53e73c33741c352fc43792d2fe78012de066aaa1307947"
+    },
+    "content/handbook/about/editing-handbook/practical-handbook-edits.md": {
+      "path": "content/handbook/about/editing-handbook/practical-handbook-edits.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:45:05Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f21a1e2ea3a196324afe9f254c4b24246c5f9abe151b42d45ac4da66f3f11a51"
+    },
+    "content/handbook/about/escalation.md": {
+      "path": "content/handbook/about/escalation.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:59:08Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ec1874f3541b6c8e66f0a237210167ee55787fb58f6b1cc23612a37cbab8ad9c"
+    },
     "content/handbook/about/handbook-usage.md": {
       "path": "content/handbook/about/handbook-usage.md",
       "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
       "translated_at": "2026-04-19T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "1558af072d2ae2245b0354a24efd87c7b7cc97c98914cc2e7472cbbb2c74c64c"
+    },
+    "content/handbook/about/maintenance.md": {
+      "path": "content/handbook/about/maintenance.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:59:08Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "28e4e2508214fdb60ac5db492cda64a7d9617c8fc3d2159b54bfb72efed988f5"
+    },
+    "content/handbook/about/style-guide.md": {
+      "path": "content/handbook/about/style-guide.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:59:08Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0ba9ff4e833d04220c6bacb231961895c63b29d7ffdb6ef176b33ec508f1a550"
+    },
+    "content/handbook/acquisitions/_index.md": {
+      "path": "content/handbook/acquisitions/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:59:08Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0ea7e45082679631091c7ba5843014bbc4db4be399505eae04a8799c5c525e01"
+    },
+    "content/handbook/acquisitions/acquisition-process/_index.md": {
+      "path": "content/handbook/acquisitions/acquisition-process/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:59:08Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "762c73cec412e129793e76808c77e05dbf267eed7cef6364ebe933c1cfbf8c82"
+    },
+    "content/handbook/acquisitions/acquisition-process/acquisition-process-communications.md": {
+      "path": "content/handbook/acquisitions/acquisition-process/acquisition-process-communications.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T08:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cd2d4478cd05445a7061f41402fc570e317007288ee0df643fe6596ceafe2566"
+    },
+    "content/handbook/acquisitions/acquisition-process/integration.md": {
+      "path": "content/handbook/acquisitions/acquisition-process/integration.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T08:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "672c5fb3dc26dba2d6ec4ebdaaf767eef619a3ff88d6482d28a53ecd524c41f5"
+    },
+    "content/handbook/alliances/_index.md": {
+      "path": "content/handbook/alliances/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T08:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0ad940ac3d5030b0e69629cc5cbaf8ede2365d19d60a3a94f7104f18c591a9b6"
+    },
+    "content/handbook/alliances/integration-instructions.md": {
+      "path": "content/handbook/alliances/integration-instructions.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T08:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e3d70169f25c84dc4d96ea46d66a17974c06d00ba6ee4112859527bd06f3f026"
+    },
+    "content/handbook/board-meetings/_index.md": {
+      "path": "content/handbook/board-meetings/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T08:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "32204aea6483cd4ef5001281641ed3460786c52d55ca45f1e2576e0eee15054f"
+    },
+    "content/handbook/ceo/_index.md": {
+      "path": "content/handbook/ceo/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "771461100348f3ee03e711a34705e82a0df34632d1b75b31eef7dcc9ecd9bdc0"
+    },
+    "content/handbook/ceo/shadow.md": {
+      "path": "content/handbook/ceo/shadow.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3d684cd954a17f6ea7f46bdd8d518dac3637c33dbe3eb612c0fb10313503bb74"
+    },
+    "content/handbook/communication/_index.md": {
+      "path": "content/handbook/communication/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "924475fca41eb95abc992e66d4a50643935b6e049c1d541c66f4bebff91e7e6b"
+    },
+    "content/handbook/communication/ask-me-anything.md": {
+      "path": "content/handbook/communication/ask-me-anything.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a89a447d9b2675a050b0379b9005134d6144768b56670ace47b37e00c332967c"
+    },
+    "content/handbook/communication/chat.md": {
+      "path": "content/handbook/communication/chat.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0103f01c57f25468d1cb3024e0897a96853377b700f1260d7055f27d4357fd50"
+    },
+    "content/handbook/communication/confidentiality-levels.md": {
+      "path": "content/handbook/communication/confidentiality-levels.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "063963c90a4aafbd4649c117ec836050900b52da92ec2393a78d065d3ae7d486"
+    },
+    "content/handbook/communication/deep-dives.md": {
+      "path": "content/handbook/communication/deep-dives.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "87e7cf5548c57dd0e89686a6c6e3974e737c21fd00a8e56b2f2413aca1971e41"
+    },
+    "content/handbook/communication/power-of-the-pause.md": {
+      "path": "content/handbook/communication/power-of-the-pause.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "90f8d4ab6e238af0b77c6f8609ce11d98fe8abbe72afc61b8e8871e2e0354681"
+    },
+    "content/handbook/communication/top-misused-terms.md": {
+      "path": "content/handbook/communication/top-misused-terms.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0b4f64a14cfb753bbb284f2700054cea4eced4d215429d939993239c31289d20"
+    },
+    "content/handbook/communication/zoom/_index.md": {
+      "path": "content/handbook/communication/zoom/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "122d2b719d26a9e1fe3df64c4c1c497780e027b2c37b399315b536d2865d2516"
+    },
+    "content/handbook/communication/zoom/webinars.md": {
+      "path": "content/handbook/communication/zoom/webinars.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "477e26ecbd7655533ecc82aadec1ff194aff527fdcfeea7831e1bd85bb4ca01a"
     },
     "content/handbook/company/_index.md": {
       "path": "content/handbook/company/_index.md",
@@ -42,6 +224,1064 @@
       "translated_at": "2026-04-19T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "7a01ad3d083f5192a80b690fce76fabff9e45dbdaea02d8042b751e1f53a7400"
+    },
+    "content/handbook/customer-experience/_index.md": {
+      "path": "content/handbook/customer-experience/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "48428a593dffb60d3e0f653cd27dad163e8d90cce4b8dfe3cf2ae6d237e05dcc"
+    },
+    "content/handbook/customer-experience/about-cx.md": {
+      "path": "content/handbook/customer-experience/about-cx.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fbd74929bdc9d1597f6bc33bab2d15a877a66bad8ef988f78357770b41c0dbd4"
+    },
+    "content/handbook/customer-experience/cx-journey/_index.md": {
+      "path": "content/handbook/customer-experience/cx-journey/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a0cb1abfa5277a4f1b54ae3e0e04c834288c9bc6a6e1caa660cab933702f291b"
+    },
+    "content/handbook/customer-experience/cx-journey/prem-ult-epic.md": {
+      "path": "content/handbook/customer-experience/cx-journey/prem-ult-epic.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:49:11Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5aca8f8f33de33befda75dc56fe6cc62295d4785ed3c2440201153d84704706c"
+    },
+    "content/handbook/customer-experience/raci.md": {
+      "path": "content/handbook/customer-experience/raci.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:49:11Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "271fe0251e18cef1a629ade0fa8c9d6200a84bb9f8dbad19894b2729e9f680d2"
+    },
+    "content/handbook/eba/_index.md": {
+      "path": "content/handbook/eba/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8a98a8eca98c07e14af9ad0e43735d5de3484ee3e5298f85b4c583a6630d1f66"
+    },
+    "content/handbook/eba/ceo-scheduling.md": {
+      "path": "content/handbook/eba/ceo-scheduling.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6946dbecf666ff5150fc8accb61175a87ea5a2e9ad3664c59ef34f78c35aad41"
+    },
+    "content/handbook/eba/e-group-scheduling.md": {
+      "path": "content/handbook/eba/e-group-scheduling.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3cf5510dba064ed15ba4d67c83216007e428ebfdb98544ebcf05b69cbbc987cf"
+    },
+    "content/handbook/engineering/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "804083ef783ecd119785d0b5e8a5c0d24b1a62b19f74a2f9b2fe5c75c9013a76"
+    },
+    "content/handbook/engineering/ai/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c98202bd963a2c00e3e132d59d6757e583839636fb53b219b82962411aa7bfae"
+    },
+    "content/handbook/engineering/ai/agent-foundations/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ca5c8f3d01d0aad1edced0ab0588b1b98d2008a6ff1688372ae3df12c2d9cce4"
+    },
+    "content/handbook/engineering/ai/agent-foundations/troubleshooting.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e0de17b1c47f6f856713316aa5c9a221847d00ad1eb793c62b33cf27a5508afa"
+    },
+    "content/handbook/engineering/ai/ai-coding/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2d06b7a7b5c08a9ba311c8fb59805008e91a0cc217e2de975f6e3f486867ddf6"
+    },
+    "content/handbook/engineering/ai/ai-coding/ai_assisted_service.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0d21c95e75d785075c5c5167421b997eb72aff04818fac3102712a467f4669ea"
+    },
+    "content/handbook/engineering/ai/ai-coding/code_suggestions/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5632aa9b71e5c680badbe2021c64d687ab251fb0156a49fafee0a242747d38a0"
+    },
+    "content/handbook/engineering/ai/ai-coding/code_suggestions/development_guide/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "21570940833974d954d402ccf54a89a4ee55e6d9c4fde213fb24457b63183385"
+    },
+    "content/handbook/engineering/ai/ai-coding/code_suggestions/development_guide/implementation_guidelines.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ab4acf9cf88ba0f4cb35eabe43958d5196b4b27b3a2192a328a9a8d6d3c9aa24"
+    },
+    "content/handbook/engineering/ai/ai-coding/code_suggestions/development_guide/model_evaluation_guide.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1a850e9d1ef4f2e2b555814f7305779008f749a3d75695df1850c66d912b2f52"
+    },
+    "content/handbook/engineering/ai/ai-coding/code_suggestions/development_guide/model_rollout_guide.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fdb66d8c93f9951c309372b4dde4dd8b0458c042b99cbff3c866e64abb381365"
+    },
+    "content/handbook/engineering/ai/ai-coding/code_suggestions/development_guide/testing_guide.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "47972a5425c488e5b004ef6d5cfa0c9ee236491d58ae788f79c21adafd1440c7"
+    },
+    "content/handbook/engineering/ai/ai-coding/code_suggestions/engineering_overview.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d1a93eddc6dcbbe12797b2c16c09753c41b074494168e6b9f5c438bc42923531"
+    },
+    "content/handbook/engineering/ai/ai-coding/codebase_semantic_indexing.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dcf5fe0dad32f757234ba74abe9c3ad94193f0c4cff2ccc90482e0a13bf66e1b"
+    },
+    "content/handbook/engineering/ai/ai-coding/duo_code_review.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "408bde88ee166ad5d87125575652946132289d15d0a8321e2ef9f5607cf5208e"
+    },
+    "content/handbook/engineering/ai/ai-coding/duo_context_exclusion.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "54300ebe3d8dfdc10986c79e50eb04946a65c381a8472482493a97ae0ab13c78"
+    },
+    "content/handbook/engineering/ai/ai-coding/event_platform.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c17e048b8049f558d34a3750567694eff047aeb04b6436299777738495d3ca8c"
+    },
+    "content/handbook/engineering/ai/ai-coding/how-we-work/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "464091bed105215c0db8dabf24579cf5791c171f5f949aecc90711c916855fa5"
+    },
+    "content/handbook/engineering/ai/ai-coding/how-we-work/ai-prompts.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8da4756c66e9d2507dc4a07a56edcfaa730ab3e1490e028a1bf75bc92c568fe6"
+    },
+    "content/handbook/engineering/ai/ai-coding/how-we-work/async-updates.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d32ae2004d0951bc6dfad2cda11402a51cdb75a0b31e84dbc0057cb1961aabd6"
+    },
+    "content/handbook/engineering/ai/ai-coding/how-we-work/milestone_planning.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d1acce0ca44d3a0631e56ab8e4256fcb1e11f886571967253e7c34e92eb6ce94"
+    },
+    "content/handbook/engineering/ai/ai-coding/repository_xray.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "11d2d835e877745e070ce4de797bef9d1efe709bae72c76dde37152535ae19e5"
+    },
+    "content/handbook/engineering/ai/ai-coding/slash_commands.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "395519652147f7da600d4ad26fbe6fa4337b6148131588a71131a9d5c44a753d"
+    },
+    "content/handbook/engineering/ai/ai-framework/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a95607b3273debf1aeaaccb346ae106b115e6d836679b17bd3a5803d7527d175"
+    },
+    "content/handbook/engineering/ai/ai-framework/model-validation/model_evaluation.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e4eab8a3d86ec0b030de73fbb7da27243153035d305b246143e2d288c37e2724"
+    },
+    "content/handbook/engineering/ai/context-systems/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4e3bbbdb117bc45d5586f2180ebfb7df85a53fc9ccea8986012ef4b889db6732"
+    },
+    "content/handbook/engineering/ai/custom-models/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c005d7df944a72f31479e364e56c48e3491a22ec5521356be63800ab5f998743"
+    },
+    "content/handbook/engineering/ai/duo-chat/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e2ee60974d7e908cdd1a056ee08c731fd64a408adb64d206b41f5ff31dcee47e"
+    },
+    "content/handbook/engineering/ai/duo-chat/technical-strategy.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "958f66da9aa84bbff08d6f46adb7d772196f756527cb1f4d7c3bcfe7a5b67e79"
+    },
+    "content/handbook/engineering/ai/editor-extensions-multi-platform/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9925dd2d9f87462e3d6b83b4307c3ae56b03aa7b069b1e726c2a40c51ecdba56"
+    },
+    "content/handbook/engineering/ai/editor-extensions-multi-platform/duo-cli/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1560603c50b8a2449ba2736e374fb0f1735a4f78a16f2401979b6e1885314015"
+    },
+    "content/handbook/engineering/ai/editor-extensions-vscode/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "567a0589a362f030891fe13f2ebef8e6b900067f156d6188dad288acb61cd576"
+    },
+    "content/handbook/engineering/ai/editor-extensions-vscode/ownership.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7593fa517bb464bf48edc94736c2193ef0fc0b6ee912fd1fad501e1730d95150"
+    },
+    "content/handbook/engineering/ai/operating-principles/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b7ef5c68fc974a9aa36c4fade5394d89a05559468474189e5d6bc308f8866690"
+    },
+    "content/handbook/engineering/ai/search/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "30d73b2ffe73dad99e1de8c64a9aeade4eeb03d0319f2738b45a82a46fb5cd12"
+    },
+    "content/handbook/engineering/ai/search/es-rollout-timeline.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dce869922c49c26e345c644e64a1791b36354863c260d8f91104314d7163bed0"
+    },
+    "content/handbook/engineering/ai/search/jtbd.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "865624bdaf5853c1c4aa5461b9c60a982f611953d2842cd96fa16ca88171dc62"
+    },
+    "content/handbook/engineering/ai/workflow-catalog/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c003b8151f0d4f932a842f8e699a24299d9752d854f595c769035694adc8ce6c"
+    },
+    "content/handbook/engineering/architecture/_index.md": {
+      "path": "content/handbook/engineering/architecture/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c226a191d04de77525de94f278bd1416cbe887fb926ccf37f240dc2e77eb34b3"
+    },
+    "content/handbook/engineering/architecture/abstractions/_index.md": {
+      "path": "content/handbook/engineering/architecture/abstractions/_index.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "469f029cc84d89f63788bd7cd61fa216af30c9a012296f6ba7a6effc4805a915"
+    },
+    "content/handbook/engineering/architecture/abstractions/candidate/nats.md": {
+      "path": "content/handbook/engineering/architecture/abstractions/candidate/nats.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9ac7e3579953730afdf02693325204d1a704cfb3352312f66f80a0bcc5cdb61c"
+    },
+    "content/handbook/engineering/architecture/abstractions/candidate/sidekiq.md": {
+      "path": "content/handbook/engineering/architecture/abstractions/candidate/sidekiq.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a81f04a383fe92082cd30915c2da0df0a76cc9bfcdf042d003cea88c14f0ee63"
+    },
+    "content/handbook/engineering/architecture/abstractions/postgresql.md": {
+      "path": "content/handbook/engineering/architecture/abstractions/postgresql.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6aab2e8d3e5bbc2fe80352af42e26f4de3aca0ae2899d44b969ab2607f2e7a0f"
+    },
+    "content/handbook/engineering/architecture/guidelines/_index.md": {
+      "path": "content/handbook/engineering/architecture/guidelines/_index.md",
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "99725429f17d95c87418f4e889ff89794655ddff7e344445808379c4c7833780"
+    },
+    "content/handbook/engineering/architecture/guidelines/data_lifecycle/_index.md": {
+      "path": "content/handbook/engineering/architecture/guidelines/data_lifecycle/_index.md",
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "23901737e307287bdabaece52b309eb97228d1f1346562cd363cac48c0bcb17a"
+    },
+    "content/handbook/engineering/architecture/guidelines/data_lifecycle/data_retention.md": {
+      "path": "content/handbook/engineering/architecture/guidelines/data_lifecycle/data_retention.md",
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a10e96d058fd25dba2bda88a0874dd78121bb6d11fc6617883b9a26c8f817d28"
+    },
+    "content/handbook/engineering/architecture/guidelines/database.md": {
+      "path": "content/handbook/engineering/architecture/guidelines/database.md",
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e5aacac9872f508b7f7c9fc0e6b7ecbfd9935bcc9567f1cc982c8ed287918c85"
+    },
+    "content/handbook/engineering/architecture/practice/_index.md": {
+      "path": "content/handbook/engineering/architecture/practice/_index.md",
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b9bde721501fd62ae80efe1e54c5ad3517f9de958384f3dabd38236126ec5a7e"
+    },
+    "content/handbook/engineering/architecture/practice/availability/_index.md": {
+      "path": "content/handbook/engineering/architecture/practice/availability/_index.md",
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/architecture/practice/scalability/_index.md": {
+      "path": "content/handbook/engineering/architecture/practice/scalability/_index.md",
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/architecture/roadmap.md": {
+      "path": "content/handbook/engineering/architecture/roadmap.md",
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0b130fc8ca98960c88f819555e2f247f8898489dcf8044ae4b1290e08d51c443"
+    },
+    "content/handbook/engineering/architecture/workflow/_index.md": {
+      "path": "content/handbook/engineering/architecture/workflow/_index.md",
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/cto-leadership-team.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:21:43Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "acc84195ca0da3d29e837343094e5496c0d948365162cce24ed25a43dd6091b1"
+    },
+    "content/handbook/engineering/data-engineering/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:21:43Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9b947fb8dacb9fe5d34f487c4a55320cb2d8a00ef0f052e36a5330ef910d4268"
+    },
+    "content/handbook/engineering/data-engineering/analytics/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:21:43Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "81e8f0df43cfa5244b59287b8e625e1e85d217a9c1110d449b9ab18f4e320d53"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:21:43Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5a997d89db738aa5ca19a43bd49531a3929d13782bfe3090b961f86daa208e1e"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/infrastructure.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "130ab5a1fe252e042f8f8eb9208932fb1c0c63f83f4f47d748381c425bf15656"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/monitoring_troubleshooting.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "159b5466e538bf837820a4ea24d6a8317e836ee343572c77853ba246204702ff"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "65c39c3e911b54f377c176101ca673aced1a8fc761d0787622e49d45240b05b2"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint/current-state/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3d6dae4e0b0d00a94ba34f759be47381128b6b32a44898f4e3af2def190d3990"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint/current-state/adoption.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "657579bcef4dd94355149b8a42d495ce681160242ef9f34afe49fc50f340f344"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint/current-state/internal-events-data-flows.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f4d77a1042efdaf98b412cc7f44e63fa4a9d4a7e97b2b8da78c23aa064e55175"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint/current-state/service-ping-data-flows.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "eef2b56bb5ce5eb8bdbcefff001919b5189b2021553bdbb7769addec51f6e2da"
+    },
+    "content/handbook/engineering/data-engineering/analytics/optimize.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dfdea44398da483fdfeb8a66dc76727bf79efca90f294dd4040b44d221c2e5fd"
+    },
+    "content/handbook/engineering/data-engineering/analytics/platform-insights.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f4e4135a28c1fc714b84bb53735a6037fda0abed358f8d8f260fc754cba823be"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b4f1e691604c5a4b6d80f8649a0c190ae7e1a4d34fb7964fe800ae19f2739c9f"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-architecture/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fe0d8799be25e8fb075d3213788de8f070ebc8f1e636b587e59d5d359ae5bcaf"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-automation/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f9470f1e96028dfae2bcf31bcb77641be1eb1c21fdea511e252a9d5a02701b6b"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7ea8c5c8dd865f49edfc3842b50a388863db88bfbae69bca96ec3536a0456a11"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/activity-log.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d2abd2a3dbe09f31349736289312623918a30b80e46b8d9ae0867f799bcb1dce"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/citus.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dbb7ab54606dedce3e0e1a53c54667c5d0b47c7cf4b7d9c9535712533380385b"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/container-registry/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/fdw-sharding.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6a9a9faec16093dc90d98fdf124dd7c1a3205380d1bad6fd35edb6539a2e7472"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/gitlab-com-database.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8c47dcb06b37345cde2dc16c3738a32fb4026167c0f050f7bc2e9406b68210f9"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/issue-group-search-partitioning/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/lexicon.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9a7b04275c61b8a10b33f17cbd377fbe548a94677cc3c55cebd0d922cdac0036"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/multidb-bg-migrations/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/partitioning.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1bb33decad815d364bc008cbd3254d4da6f86e9110459a6ad826d704e2b10408"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/root-namespace-sharding/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/strategy.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0797731183e2cb674a266313de33a187922a5d8393168cd179f5842fb6a7b378"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/training-content/batched-background-migrations.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "35a087c2efbb64a27b7b48645f49f1066cf76d77d841f65aec61f0216b564303"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/training-content/index-performance.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e52f92e07840326bd456b1d2b961c97ebaa629c8cfa602f008e1792d82ea2fd2"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/training-content/introduction-to-database-review.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d887cc138914b59a4a181573cf75269519962e2af95077683224785072c8a298"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/training-content/query-plans.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b57506160a604fa0e7eda6bdbdf980d7851fefab2b37e42e4f79f78bbbfc3877"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/workload-analysis/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/identifying-database-issues.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5a2f91dc9376a6f5940a2e80076a731cc08fee5737971deef897c8266b016e31"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/postgresql-upgrade-cadence.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ae03a46cde7be4f1fb79c80198f042411884c440cef7b5cbadc002bd90d8c834"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/stable.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "858aba034c025c605a92d5713eca19ef52c6209e03f515a954cf519ed65954d8"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-health/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "85867b423294501c3fe464d952fcca3caaae3f92f262c5f88b0597e44d53bdbc"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-operations/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3493878f666ed52f03c7da5b746ac17a5648c6f0c93ad485f788d161ea9c2e34"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-operations/dbre-escalation-process.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "57f8e526eca1f8895f2cd5d7cd34d0377f6d6eb622cb0caf815d1a75fb511835"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-stakeholders.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c667eeddb99a9160d0c8c4ea1930707c0ca9cf5bbe9bc1c632c7c21c768b0a31"
+    },
+    "content/handbook/engineering/deployments-and-releases/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fda19e1fbe99d060baa7993b36f31bd68307e9fa9a84dc5610320bf8334dbeda"
+    },
+    "content/handbook/engineering/deployments-and-releases/deployments/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/embody-team/_index.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f8897ad9d8f61df3c482a79ca94ebe88a95b83d4e55e8bcb54af4389e857d70a"
+    },
+    "content/handbook/engineering/error-budgets/_index.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "24a127bfcd65b48638a46812605a3006237d23415fb5dc210ac8826ec6e3dda4"
+    },
+    "content/handbook/engineering/error-budgets/custom-targets.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f9627fb2334cd186b18d05deb95045b023f7c93e2d00d69cac751b1a02b6980a"
+    },
+    "content/handbook/engineering/error-budgets/error-budget-by-stage-group-example.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "11f687cdf56f77209aa4747cd8fda77c6b42df1500185a6e731d58217d73e05a"
+    },
+    "content/handbook/engineering/gitlab-com/_index.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8bdbf7a31b22ed125c525839e5dca1585e400ae61ccebcb0945e691f16ea7b85"
+    },
+    "content/handbook/engineering/gitlab-com/policies/backup/_index.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be6b38406e61c973e834e6aa0867b146eaaf690fa338ed9519d5bf2f528f26d9"
+    },
+    "content/handbook/engineering/gitlab-com/policies/disaster-recovery/_index.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3f94571df5ba6f47d650540ca0df9447e5753d03807c8431bbb3f366c86b5c90"
+    },
+    "content/handbook/engineering/gitlab-com/policies/monitoring/_index.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "218176c22c696ecfc61cac65e16bebbb3a84f29c78361723f6793309356080b9"
+    },
+    "content/handbook/engineering/gitlab-com/policies/teleport/_index.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d7f6893d01f633ec7476de7e3a5f9b9aae53c9025435287d6528b3b75822e658"
+    },
+    "content/handbook/engineering/incident-management.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7c9260f6515ec1b7a7b5f86d7c9bcc002902248219d5fccea493f7e47bc0af75"
+    },
+    "content/handbook/engineering/infrastructure/_index.md": {
+      "path": "content/handbook/engineering/infrastructure/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4a2eb7d22b2d38300e802f5b81cc1e621d027dddfbc798c278da22979e1da722"
+    },
+    "content/handbook/engineering/infrastructure/team/_index.md": {
+      "path": "content/handbook/engineering/infrastructure/team/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "719864182d09f0a61b2b56654e90eb32536e4de01d8fd69a6717cc4a7cf6cf72"
+    },
+    "content/handbook/engineering/infrastructure/team/cloud-connector/_index.md": {
+      "path": "content/handbook/engineering/infrastructure/team/cloud-connector/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "652996b4e7511048efb664f347f39ec852532b0237f39c3b91e8c2df04efdb25"
+    },
+    "content/handbook/engineering/monitoring/_index.md": {
+      "path": "content/handbook/engineering/monitoring/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6947b4f6108371a8e42dec54a2a86e6e25b752c78ca57e9b4e2bde9c7260577e"
+    },
+    "content/handbook/engineering/monitoring/staging-monitoring.md": {
+      "path": "content/handbook/engineering/monitoring/staging-monitoring.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "69d30b8d736b518592a23577a8998634757b890ca1383962f45a0e24f8d23779"
+    },
+    "content/handbook/engineering/on-call.md": {
+      "path": "content/handbook/engineering/on-call.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "59bf2fb4275777af396c2bced54b587eec0643230ffc7684fd1fcff29f17faea"
+    },
+    "content/handbook/engineering/open-source/_index.md": {
+      "path": "content/handbook/engineering/open-source/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "36db04e2e4f127c446d0a106ad8149960b0c469f3ae751f16dfc8facaa9c0c37"
+    },
+    "content/handbook/engineering/open-source/growth-strategy.md": {
+      "path": "content/handbook/engineering/open-source/growth-strategy.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "722762c2fca98f357956682b4eee38cb3b1ee895ff76d625116c962874cea7e9"
+    },
+    "content/handbook/engineering/performance-indicators/maturity.md": {
+      "path": "content/handbook/engineering/performance-indicators/maturity.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5c25cc8afaf7f7ac7a5052bebe63d23378938c07c95f553d77c123a12894289a"
+    },
+    "content/handbook/engineering/performance.md": {
+      "path": "content/handbook/engineering/performance.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c9b487a38d9a63aad449170ac289318037056b2c538bda6c2afd4e6e2a423e36"
+    },
+    "content/handbook/engineering/projects/_index.md": {
+      "path": "content/handbook/engineering/projects/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0a98b9f29d95786d96f654db27a54d883d18202e79e093c66d869c3cdde666b5"
+    },
+    "content/handbook/engineering/readmes/_index.md": {
+      "path": "content/handbook/engineering/readmes/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "06c3d8945928a74fa39302449c39522fc5092d85a6b852c36e5402a5404095da"
+    },
+    "content/handbook/engineering/readmes/alexander-sosna.md": {
+      "path": "content/handbook/engineering/readmes/alexander-sosna.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "335f0fc3947c5d14e836210ab1ead881035bad3832d95a411b9c6bb075d6188f"
+    },
+    "content/handbook/engineering/readmes/alexives.md": {
+      "path": "content/handbook/engineering/readmes/alexives.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0b112fe71d84da8ce7894bdd04db7f6ffa7c208ce61efdde37daba6de0444604"
+    },
+    "content/handbook/engineering/readmes/amy-shiel.md": {
+      "path": "content/handbook/engineering/readmes/amy-shiel.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2de749282a1fbb1b9ef9f09443418bb46037231fce2b34e6e2b5662f079b743d"
+    },
+    "content/handbook/engineering/readmes/ben-king.md": {
+      "path": "content/handbook/engineering/readmes/ben-king.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3804f4ccf974f91877cd937298213d94c7e0a3006c0b4687cb9470342b7a9952"
+    },
+    "content/handbook/engineering/readmes/chris-kaburu.md": {
+      "path": "content/handbook/engineering/readmes/chris-kaburu.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f85d2a5416e1df3617a43e8c441f5b1342b74d8b2daa87e077582696ed4c995c"
+    },
+    "content/handbook/engineering/readmes/craig-miskell.md": {
+      "path": "content/handbook/engineering/readmes/craig-miskell.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "46d339dc54b665a3d19d8657739485f95a5371ff56a1eccd0a6af04e9ddc791d"
+    },
+    "content/handbook/engineering/readmes/daniel-diniz/index.md": {
+      "path": "content/handbook/engineering/readmes/daniel-diniz/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ebfd48296c00c48c45b78000e3b9933e32db711ccf67b413554a329212e3c20f"
+    },
+    "content/handbook/engineering/readmes/david-wainaina.md": {
+      "path": "content/handbook/engineering/readmes/david-wainaina.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6a4b7e9e36ba2e10c7de0c7f20f7fc3d4577680e83074379f5e703929c796108"
+    },
+    "content/handbook/engineering/readmes/duncan-harris.md": {
+      "path": "content/handbook/engineering/readmes/duncan-harris.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dac83b9d3c0ace5deea442d178a43bab1a3b206696ab522e7a0116d3e292c180"
+    },
+    "content/handbook/engineering/readmes/eduardo-bonet.md": {
+      "path": "content/handbook/engineering/readmes/eduardo-bonet.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d8156175084bc88128e124ceba893f82b98713f77cffffbfeae074764bfc220c"
+    },
+    "content/handbook/engineering/readmes/emily-chang.md": {
+      "path": "content/handbook/engineering/readmes/emily-chang.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d6f3b5d9bbc4a1083889d504fced2b5afd6645ab69a59d5fb08193cb54414cdc"
+    },
+    "content/handbook/engineering/readmes/gabey.md": {
+      "path": "content/handbook/engineering/readmes/gabey.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "48706992229335d3fb912d49683d6ac0d6d846081bab454e69e302eaa2af16a4"
+    },
+    "content/handbook/engineering/readmes/jane-gianoutsos.md": {
+      "path": "content/handbook/engineering/readmes/jane-gianoutsos.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b8039608bab7f10700fd860e15b0e7a3a467db3ab5e3d8d08d642d165cce5044"
+    },
+    "content/handbook/engineering/readmes/juan-silva.md": {
+      "path": "content/handbook/engineering/readmes/juan-silva.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0c0ce07cd384ecc4d5b6109710a6ee974524cc8b3ec5bc58b1c35c607595ef0c"
+    },
+    "content/handbook/engineering/readmes/kamil-trzcinski.md": {
+      "path": "content/handbook/engineering/readmes/kamil-trzcinski.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8dbb7a39ce1fac6d0ac33d2ef785e0cc236da1037c4ca4ccce29d7b622c63c66"
+    },
+    "content/handbook/engineering/readmes/katrin-leinweber.md": {
+      "path": "content/handbook/engineering/readmes/katrin-leinweber.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "17d42e41585559420bd04e2f02d6d707c45b82aec09f54aa3f46e47500f909ad"
+    },
+    "content/handbook/engineering/readmes/lee-matos.md": {
+      "path": "content/handbook/engineering/readmes/lee-matos.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c8833e08f2f11ae7bb26622c7e3e5493af0b26eba5487f103e588b646ada6d15"
+    },
+    "content/handbook/engineering/readmes/lyle-kozloff.md": {
+      "path": "content/handbook/engineering/readmes/lyle-kozloff.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0ea6bbb6e38e177f5758b1ea4e78841f7ba3640b5ad7cd7973b60da65ceaef8a"
+    },
+    "content/handbook/engineering/readmes/marin-jankovski.md": {
+      "path": "content/handbook/engineering/readmes/marin-jankovski.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2eb1138dab21222d499e30a07a705498d19577e2422cbd022f824f0a1bd97bf4"
+    },
+    "content/handbook/engineering/readmes/mario-mora.md": {
+      "path": "content/handbook/engineering/readmes/mario-mora.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "03bbb980a34d2c8434d8c76ed6e3925021cde180791e4f6d5ddc5fdb4ca5baa7"
+    },
+    "content/handbook/engineering/readmes/matt-kirkevold/index.md": {
+      "path": "content/handbook/engineering/readmes/matt-kirkevold/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d7cb70b32b8429f99be77b885e0eede8d9cbee8d8f30469fe599a673524b2b94"
+    },
+    "content/handbook/engineering/readmes/matt-nohr.md": {
+      "path": "content/handbook/engineering/readmes/matt-nohr.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "11e56cf74e8b5d62c13b4cb01612f96d57db673b1f4cf5e633126fe63c43ef55"
+    },
+    "content/handbook/engineering/readmes/max-woolf.md": {
+      "path": "content/handbook/engineering/readmes/max-woolf.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "02e5d055952f333afb08ecabd0d8a9562541259b0cee35b5840a40abf915b47e"
+    },
+    "content/handbook/engineering/readmes/mike-dunninger.md": {
+      "path": "content/handbook/engineering/readmes/mike-dunninger.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "35be3816ab9879aae193875745a31ddade65bd17c4b38aee46a35ac8afd020fd"
+    },
+    "content/handbook/engineering/readmes/mike-lockhart.md": {
+      "path": "content/handbook/engineering/readmes/mike-lockhart.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T06:46:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e9dd6bdaaa8fc878ea2c10e0510b68dd835e3acfe4df167eacb798278a38f543"
+    },
+    "content/handbook/engineering/readmes/mlunoe.md": {
+      "path": "content/handbook/engineering/readmes/mlunoe.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "16616e453a01409b670d5827e43222b20d73ea9b82041e16b7a800358ba9b73f"
+    },
+    "content/handbook/engineering/readmes/nick-veenhof.md": {
+      "path": "content/handbook/engineering/readmes/nick-veenhof.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "adcdc657d351cf94ded1503eb1b4215671c755d7eaec23f86c3ffe0fb7f94c94"
+    },
+    "content/handbook/engineering/readmes/ronnie-alfaro.md": {
+      "path": "content/handbook/engineering/readmes/ronnie-alfaro.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a53815f1cbc7c6bd458c45af481976c13ca6415301f826b0d4617d7893653977"
+    },
+    "content/handbook/engineering/readmes/savas-vedova.md": {
+      "path": "content/handbook/engineering/readmes/savas-vedova.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "80301a58fd58f9545e6eec8bc199a2aaca3872c6b85d5e6029304281bf51c166"
+    },
+    "content/handbook/engineering/readmes/simon-street.md": {
+      "path": "content/handbook/engineering/readmes/simon-street.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "db45ac4548e8727738f484020f859e16ea44b4b4b9ecedcabf2a4ce3cb189100"
+    },
+    "content/handbook/engineering/readmes/thong-kuah.md": {
+      "path": "content/handbook/engineering/readmes/thong-kuah.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7f057d7ed3e622ce352f3e4990bd381cf1226ac598826eaf81dd8997e0bec61d"
+    },
+    "content/handbook/engineering/readmes/tom-mcatee.md": {
+      "path": "content/handbook/engineering/readmes/tom-mcatee.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1162a7c81c7d6d4b7df3a01e2d72d82a58bf1fde7f289290c1d02f5ab55feaa7"
+    },
+    "content/handbook/engineering/recognition.md": {
+      "path": "content/handbook/engineering/recognition.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "79dfed46ffd99ca90a877021881f5ace9304071cc65971d7ff05faeb3333df7e"
+    },
+    "content/handbook/engineering/releases/_index.md": {
+      "path": "content/handbook/engineering/releases/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "539952e015e05bc81364e6f042d2621bd1e89b056e84accc8c2686a4124baaf3"
+    },
+    "content/handbook/engineering/releases/backports.md": {
+      "path": "content/handbook/engineering/releases/backports.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "628ff32e80cbcf0d52da7bf8cf5f68bc5256ea52f1e7f18ca6577d482fdbcdef"
+    },
+    "content/handbook/engineering/releases/internal-releases/index.md": {
+      "path": "content/handbook/engineering/releases/internal-releases/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b34c9a996007f18cdf1d6e0dcfd7eb2b9a9f81f6a7d81653ab0289dcb0727bb0"
+    },
+    "content/handbook/engineering/releases/monthly-releases/index.md": {
+      "path": "content/handbook/engineering/releases/monthly-releases/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "af196b47b434883f8c7527661e9742ea85d67bb7d6d23994d85de25bb14f3d3f"
+    },
+    "content/handbook/engineering/releases/patch-releases/index.md": {
+      "path": "content/handbook/engineering/releases/patch-releases/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a62bd709d41ad14ec3a97c2ee369ee3055c70d95289abdbdfc062b7818484194"
+    },
+    "content/handbook/engineering/releases/stable_branches.md": {
+      "path": "content/handbook/engineering/releases/stable_branches.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a12b53b4ffba2c17ce05de66e215ab8b320765702e03b1e475f01f0b1b3eaba9"
+    },
+    "content/handbook/engineering/tax-credits.md": {
+      "path": "content/handbook/engineering/tax-credits.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "21760050a9bc4428a5b1703e26108484fdc2281671afe0b135a1f3a41f1c5246"
     },
     "content/handbook/engineering/testing/_index.md": {
       "path": "content/handbook/engineering/testing/_index.md",
@@ -176,6 +1416,307 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "3ec2fd6ce11b9f11923b46b4582fadb500b51012a46b5df6bfaa8f26ecd805c7"
     },
+    "content/handbook/engineering/workflow/_index.md": {
+      "path": "content/handbook/engineering/workflow/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6f6c7c8054328a3144db7556a9a6f5f2a85db308cb60aa757f3640500fbececa"
+    },
+    "content/handbook/engineering/workflow/ai-assisted-development.md": {
+      "path": "content/handbook/engineering/workflow/ai-assisted-development.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "191f1f2784d8d190a67d6382749ae76fb72e907402ff83abc8aaf7e1aef41208"
+    },
+    "content/handbook/engineering/workflow/automation.md": {
+      "path": "content/handbook/engineering/workflow/automation.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9c835987dd08d90f0bfc2d10ea9cd2c869f3d03b82f66352142aca609a078ee9"
+    },
+    "content/handbook/engineering/workflow/code-review.md": {
+      "path": "content/handbook/engineering/workflow/code-review.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "54f63850cd19c9d93e7cab3ada24557142ee53b0315a585f80efe9c8b547bed4"
+    },
+    "content/handbook/engineering/workflow/cross-functional-prioritization.md": {
+      "path": "content/handbook/engineering/workflow/cross-functional-prioritization.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "114f3509c0abf3f79fc0461a100cfb795cd36feb775d72a1283d71dd64ba3a11"
+    },
+    "content/handbook/engineering/workflow/demos.md": {
+      "path": "content/handbook/engineering/workflow/demos.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bc9ffa07df483ce5c3f450ef866211e1148bc75c07d9267ac69f87732429ce73"
+    },
+    "content/handbook/engineering/workflow/developer-onboarding.md": {
+      "path": "content/handbook/engineering/workflow/developer-onboarding.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "84104677533994ae2acdaac6d8d7b1e8e2c671f0202c972ad66ffd8036c4eb4d"
+    },
+    "content/handbook/engineering/workflow/development-onboarding/_index.md": {
+      "path": "content/handbook/engineering/workflow/development-onboarding/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f0be593e011b098ee805f14ea3bc3c9e1d315699b12f3d276f5143010297174e"
+    },
+    "content/handbook/engineering/workflow/development-onboarding/manager.md": {
+      "path": "content/handbook/engineering/workflow/development-onboarding/manager.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "140bb93d3027faeffabc6d7f1b387c9e7c83cac639bdf553f62d16efaf7a7f6e"
+    },
+    "content/handbook/engineering/workflow/development-processes/_index.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "195ca2d6d4be34df6c55e8256c51c0592188d3441fe2dd796d5e8c708431f7d5"
+    },
+    "content/handbook/engineering/workflow/development-processes/follow-the-sun-coverage.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/follow-the-sun-coverage.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "78a7cd7302db5fcfb32dfba101f6a5af9b13797537a4f7bb4a3458f7811687b2"
+    },
+    "content/handbook/engineering/workflow/development-processes/hiring-contractors.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/hiring-contractors.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cea8d9b6f4af5ab7c3e997e9d70c5830892b6e8fa4ff3df38114e7c4c7b55b53"
+    },
+    "content/handbook/engineering/workflow/development-processes/infra-dev-escalation/_index.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/infra-dev-escalation/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fb6378fa2b0f48bb92b70cad92fb0000a4738632eb94c5119757c68fa69abbfe"
+    },
+    "content/handbook/engineering/workflow/development-processes/infra-dev-escalation/process/index.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/infra-dev-escalation/process/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "451c11fc67085bd21d3bafd277b1122400cf8775f157419deded6b03066a303e"
+    },
+    "content/handbook/engineering/workflow/development-processes/rollout-plans.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/rollout-plans.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7b20d6ead5e2055f098419f554a2b9254e60027e6b8033482a997edd2a5ad7b2"
+    },
+    "content/handbook/engineering/workflow/development-processes/talent-assessment.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/talent-assessment.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f59a4018b555f3e58f5cfddfa963818bf094e06976cef601dbe360daaf3925ab"
+    },
+    "content/handbook/engineering/workflow/duo-first-development.md": {
+      "path": "content/handbook/engineering/workflow/duo-first-development.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a56f545b75b78651bdf6e35232087c80b80dddf213322b4bedf30e7d4dfdca32"
+    },
+    "content/handbook/engineering/workflow/engineering-comms/_index.md": {
+      "path": "content/handbook/engineering/workflow/engineering-comms/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4ddc646df6b0b70cdbcc15371f3ce00bd532803c76199ee2606f348f061dc291"
+    },
+    "content/handbook/engineering/workflow/engineering-comms/engineering-poster-boards.md": {
+      "path": "content/handbook/engineering/workflow/engineering-comms/engineering-poster-boards.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d2d787e49393f6a99b38744f4bd7e50851b55ed1669a8992f85003962591698a"
+    },
+    "content/handbook/engineering/workflow/engineering-innovation.md": {
+      "path": "content/handbook/engineering/workflow/engineering-innovation.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e248dbed150968f337da9b3b69e01697554b64fb3f652748098f1991e55d8c5c"
+    },
+    "content/handbook/engineering/workflow/fast-boot.md": {
+      "path": "content/handbook/engineering/workflow/fast-boot.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d7f8c63665ee103763d2f2682f664e50f368ddda5ac92b6b6e6275427cd586b1"
+    },
+    "content/handbook/engineering/workflow/gitlab-repositories.md": {
+      "path": "content/handbook/engineering/workflow/gitlab-repositories.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "240eaf73f2639216cf49e680b23293faa8bb23d4edf8b333de31c05290c13124"
+    },
+    "content/handbook/engineering/workflow/hiring.md": {
+      "path": "content/handbook/engineering/workflow/hiring.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c6148b1df4158bfa3c7b64ff06a078d3d4223b49a002fbc33d0cbe5882d10b53"
+    },
+    "content/handbook/engineering/workflow/iteration.md": {
+      "path": "content/handbook/engineering/workflow/iteration.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "97044ad0e9097aa4ff2da636bfec8cc5bdacddfecff641c742bbf67d4c1e6d92"
+    },
+    "content/handbook/engineering/workflow/related-workflows/index.md": {
+      "path": "content/handbook/engineering/workflow/related-workflows/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "eb31ebe4f45c9bfd107b359b217a82471129ca71a5f439f9ebaffaad195416de"
+    },
+    "content/handbook/engineering/workflow/release-feature-determination-workflow.md": {
+      "path": "content/handbook/engineering/workflow/release-feature-determination-workflow.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c3eff9be36d6113f1edb4bd7301b8785a8746c1d081df0db18399e9330bda2e2"
+    },
+    "content/handbook/engineering/workflow/reviewer-values.md": {
+      "path": "content/handbook/engineering/workflow/reviewer-values.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "859c4026e1a07df291115252c1a8b5427b1b1063c5db4a8981bed2a4ae8834de"
+    },
+    "content/handbook/engineering/workflow/root-cause-analysis.md": {
+      "path": "content/handbook/engineering/workflow/root-cause-analysis.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bb08e8bd183c36cefae2fe1907e4c6e68c0546d4d626c75225c7a8d56da2e885"
+    },
+    "content/handbook/engineering/workflow/strategic-priority-codes.md": {
+      "path": "content/handbook/engineering/workflow/strategic-priority-codes.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c17ec35207d71761fa7ee6a9f61b8da1e633e95f63e3aeb4705e0dc1b81fdcee"
+    },
+    "content/handbook/engineering/workflow/unplanned-upgrade-stop.md": {
+      "path": "content/handbook/engineering/workflow/unplanned-upgrade-stop.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4a863ea1de445392106c9a23317178bb38baada9f67b33f790bdfab538625b84"
+    },
+    "content/handbook/entity/_index.md": {
+      "path": "content/handbook/entity/_index.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b6bce1d07281775cddba61e18b384ecfb037383dde792542aea677a95a1ca974"
+    },
+    "content/handbook/entity/entity-specific-employment-policies.md": {
+      "path": "content/handbook/entity/entity-specific-employment-policies.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "573a03b740c630ac4c0b7521ce485fdfd22e01f784ddcc3c3c2e43419aa8f7fd"
+    },
+    "content/handbook/entity/gmbh-germany.md": {
+      "path": "content/handbook/entity/gmbh-germany.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be0cccb76aaf129a74c5ff1871708301f3f70b874bc70e2336c4138949cfa9d0"
+    },
+    "content/handbook/entity/iberia-srl-spain.md": {
+      "path": "content/handbook/entity/iberia-srl-spain.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "68f5cb8895e81804bc2ca645ad8128c3b4bf0600acba126ddc3f9ef0c9890fdc"
+    },
+    "content/handbook/entity/india-pvt-ltd.md": {
+      "path": "content/handbook/entity/india-pvt-ltd.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bfc89d8c3ec307c87dd8b40b6788a0dff2975c7c9a73d83f37522afcb3b67fbc"
+    },
+    "content/handbook/entity/israel-ltd.md": {
+      "path": "content/handbook/entity/israel-ltd.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8bfeadbf804ab3e1c69ead1bdec07279b214db6745283b8c61d3d2aaab757f8b"
+    },
+    "content/handbook/eta/_index.md": {
+      "path": "content/handbook/eta/_index.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d14b3ea1d2d8adf9001d9827ad2f3b446217750028c589bd9df33398f7091ddd"
+    },
+    "content/handbook/eta/ai/_index.md": {
+      "path": "content/handbook/eta/ai/_index.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7d9c0b0e17ea25a6a8806de640cc33f0a017ff9969e1eeaa9c1634c56effa1f4"
+    },
+    "content/handbook/eta/arb/_index.md": {
+      "path": "content/handbook/eta/arb/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "79173127600ffd25a9c9db6e5fe8f530ec0a14563721fa2818e5e7affca61260"
+    },
+    "content/handbook/eta/business-systems/_index.md": {
+      "path": "content/handbook/eta/business-systems/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ebc5cd0e13f6942af9de2619aba4ca89827eb924c863104bab49a302d45db3c8"
+    },
+    "content/handbook/eta/corporate-it/_index.md": {
+      "path": "content/handbook/eta/corporate-it/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d6de1c8cb5591b1ac44babb2921dc63ec4509bd0f726ea7421c3b02557011ff5"
+    },
+    "content/handbook/eta/enterprise-data/_index.md": {
+      "path": "content/handbook/eta/enterprise-data/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d97e0c4c4e216bd15375eb22dad1cce93045fc5fbb939533b0ec69a19eeabe72"
+    },
+    "content/handbook/eta/strategy-and-operations/_index.md": {
+      "path": "content/handbook/eta/strategy-and-operations/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e628ebe3d46d426316860494d953f55ad135ce9f658c50162c1efebef208df51"
+    },
     "content/handbook/hiring/_index.md": {
       "path": "content/handbook/hiring/_index.md",
       "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
@@ -273,6 +1814,356 @@
       "translated_at": "2026-04-29T06:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "82289ec19635c9b5cc56ba32c4f81a59eb107d44c91898e6f4d0edc43b131fd8"
+    },
+    "content/handbook/it/_index.md": {
+      "path": "content/handbook/it/_index.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "37fb2123fbe1f44e2c3e1a2e0f042a673cd35dc2ac7dfc265a993ada242ba0e1"
+    },
+    "content/handbook/job-description-library/_index.md": {
+      "path": "content/handbook/job-description-library/_index.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "84869efa9609805ee2df8bb8e9f082aab3d9684851fa2d651851babe3b5f72d6"
+    },
+    "content/handbook/labor-and-employment-notices/_index.md": {
+      "path": "content/handbook/labor-and-employment-notices/_index.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c057538e28a052fd9c7c40c08786fe046228c3cc41275d923f6e1870f22e892b"
+    },
+    "content/handbook/labor-and-employment-notices/offboarding-documents.md": {
+      "path": "content/handbook/labor-and-employment-notices/offboarding-documents.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b4623bb3a294ed73a0d6bd7400a581bcf016a3fe9e8dc9f1985206ed05b6a87b"
+    },
+    "content/handbook/leadership/1-1/_index.md": {
+      "path": "content/handbook/leadership/1-1/_index.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dda3397f9f2b1f0f641f451a6e8dcc496da724ceedadf502130aa6608f0f7a92"
+    },
+    "content/handbook/leadership/1-1/suggested-agenda-format.md": {
+      "path": "content/handbook/leadership/1-1/suggested-agenda-format.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be7141f155845415f328b81c3d4f4dbec6d300c755fac1cfe93d1e0a03459d31"
+    },
+    "content/handbook/leadership/_index.md": {
+      "path": "content/handbook/leadership/_index.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cc4352b2a718aaccf26c4f0d438b47bfe671f1742d344153f0803ec9638b5cf3"
+    },
+    "content/handbook/leadership/biggest-tailwinds.md": {
+      "path": "content/handbook/leadership/biggest-tailwinds.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "55c8094daad4f9b1b9a453a255188abd06800694e9c2436e71ef5eae0bb82abe"
+    },
+    "content/handbook/leadership/book-clubs.md": {
+      "path": "content/handbook/leadership/book-clubs.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3f1dd4f56dac8f59c7612fc7ad42afb65814c6cdc740606e941e03f307fdc1d5"
+    },
+    "content/handbook/leadership/building-trust.md": {
+      "path": "content/handbook/leadership/building-trust.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5fd4a34bca58136f9ddcc09a86664cc2e4f97ad89854953e61880214b1366196"
+    },
+    "content/handbook/leadership/coaching.md": {
+      "path": "content/handbook/leadership/coaching.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4a69617dbfbac2165392507a450737874edabf162aabb86c24f0d523df09e2c2"
+    },
+    "content/handbook/leadership/compensation-review-conversations.md": {
+      "path": "content/handbook/leadership/compensation-review-conversations.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5f7327ee45ee7764a335181c190943b68569731968a2263ef7ff65edf8ae515a"
+    },
+    "content/handbook/leadership/crucial-conversations.md": {
+      "path": "content/handbook/leadership/crucial-conversations.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "49539fc761025a56c925ad81c6669be03ea8a03a20f7fa4db088fcef96f8ea4b"
+    },
+    "content/handbook/leadership/effective-delegation.md": {
+      "path": "content/handbook/leadership/effective-delegation.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "900fe6984b37c118a8efc048b344d20a1736b99d1d691c315a89f5a594d8badc"
+    },
+    "content/handbook/leadership/emotional-intelligence/_index.md": {
+      "path": "content/handbook/leadership/emotional-intelligence/_index.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0cd415358566a176903234d5177c1ee60ed53527d11e55d614c53ac3c995a52d"
+    },
+    "content/handbook/leadership/emotional-intelligence/psychological-safety-short-course.md": {
+      "path": "content/handbook/leadership/emotional-intelligence/psychological-safety-short-course.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "889d2411d730043cbda552903b8fd0682460f0b9415b1af2d63371e6080d2b6e"
+    },
+    "content/handbook/leadership/emotional-intelligence/psychological-safety.md": {
+      "path": "content/handbook/leadership/emotional-intelligence/psychological-safety.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4a3e0ed9ce73620d9472c5c41d7e6ea4e30c7092d4095736ff9ba009789a5017"
+    },
+    "content/handbook/leadership/emotional-intelligence/social-styles.md": {
+      "path": "content/handbook/leadership/emotional-intelligence/social-styles.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fd78fc113a7acdac0cdd9888df7d3bde5d6b1ae670f80c7c2eb6d7409c749eca"
+    },
+    "content/handbook/leadership/high-output-management.md": {
+      "path": "content/handbook/leadership/high-output-management.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be3d34b4dd85b1fd3b12e90b95c691f9de366d711f1f8fbbe5621226dae98116"
+    },
+    "content/handbook/leadership/in-person.md": {
+      "path": "content/handbook/leadership/in-person.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "59de8e7860646635d91a039c1817e26184a943ec1b65bf3d792fb821af8be55e"
+    },
+    "content/handbook/leadership/making-decisions.md": {
+      "path": "content/handbook/leadership/making-decisions.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fc05293e6769d932be786fd78561efc43541015dce682ed955b8d5bdac8d0f6e"
+    },
+    "content/handbook/leadership/managing-burnout.md": {
+      "path": "content/handbook/leadership/managing-burnout.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5f82d97291919877581b9c10c8b7751fa4632cbb9a0baa09f420888e52154390"
+    },
+    "content/handbook/leadership/managing-conflict/_index.md": {
+      "path": "content/handbook/leadership/managing-conflict/_index.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8ace37e773e940646fa6baff9ab9363b133dbb28a09281d8111db7f72874bd70"
+    },
+    "content/handbook/leadership/managing-conflict/leading-through-adversity.md": {
+      "path": "content/handbook/leadership/managing-conflict/leading-through-adversity.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "39fe8c503b95f4252a6b768eb40836429e790b78d3a9db79f62a015e9d902251"
+    },
+    "content/handbook/leadership/no-matrix-organization.md": {
+      "path": "content/handbook/leadership/no-matrix-organization.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "008b5103db123875f061de4f4d4a372416e9ee1b4144bb2ef3e3cfb7356e6e4c"
+    },
+    "content/handbook/leadership/skip-levels.md": {
+      "path": "content/handbook/leadership/skip-levels.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f3901efeba2d57bd0d9f3440e21d2109c0aade406ddd8ca4723b86f3b436999f"
+    },
+    "content/handbook/leadership/underperformance.md": {
+      "path": "content/handbook/leadership/underperformance.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "72f7f5cbdaaa5a540adfe39810ddaee4f4e593985409cd4c41cfe927e0c36a67"
+    },
+    "content/handbook/leadership/workforce-planning.md": {
+      "path": "content/handbook/leadership/workforce-planning.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "429874d7e7f6b148e528a8e09e1c3c7ca496025271de8c2e64d5abb18371ba2b"
+    },
+    "content/handbook/marketing/digital-experience/_index.md": {
+      "path": "content/handbook/marketing/digital-experience/_index.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5e56e50b2daf3d0f9948fc0af132732228d234673b4589a6f7b5ac2a40f50ba5"
+    },
+    "content/handbook/marketing/digital-experience/analytics/_index.md": {
+      "path": "content/handbook/marketing/digital-experience/analytics/_index.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d8b26106541a30b5db2a41972cdc014a8b8e32b96268708d83670d2f06ada30a"
+    },
+    "content/handbook/marketing/digital-experience/analytics/google-lighthouse.md": {
+      "path": "content/handbook/marketing/digital-experience/analytics/google-lighthouse.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a0d553ebfaf85d53b21e5bd15cd84fa217dad711283425446613e00d656eefc2"
+    },
+    "content/handbook/marketing/digital-experience/decap-cms/_index.md": {
+      "path": "content/handbook/marketing/digital-experience/decap-cms/_index.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1a45f31c2d6a6eaa296be7ef08d50bb62ebde553582b4084eaae1eed022d8609"
+    },
+    "content/handbook/marketing/digital-experience/digital-definitions.md": {
+      "path": "content/handbook/marketing/digital-experience/digital-definitions.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e5316a390cbbd96f691308fc031637155660ad74bb93a8c7f62f9ac21e658029"
+    },
+    "content/handbook/marketing/digital-experience/engineering/accessibility.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/accessibility.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fd9f45b825a548c5f0ddd287385c3a3dd1b6efa85a4b2c3a7468ccaa6a8670ba"
+    },
+    "content/handbook/marketing/digital-experience/engineering/code-review.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/code-review.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e99b888d26f3e7b2c174beb82619c4a288c09494be4644c247ab40dc4c38d9a6"
+    },
+    "content/handbook/marketing/digital-experience/engineering/cwv.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/cwv.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "103805dff19b01fc4144d7913043748a8de10f84d2a6c98571617af91972a1ac"
+    },
+    "content/handbook/marketing/digital-experience/engineering/data-dictionary.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/data-dictionary.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7d1df494771cc0632cb0500af6731d5e4b585e86c9adee64384d2aa436d0fc1d"
+    },
+    "content/handbook/marketing/digital-experience/engineering/dexbot.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/dexbot.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "18abf04d790dbfd3759eb114b182197b8aba94cd7219d6fed33ee0bb3f632fb5"
+    },
+    "content/handbook/marketing/digital-experience/engineering/engineering-marketo.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/engineering-marketo.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "94ac0758ad6ac15ca5fd02fb4f085404c544674e9051d609e6608bd27cec226b"
+    },
+    "content/handbook/marketing/digital-experience/engineering/image-guidelines.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/image-guidelines.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3b7389f5f1e3ea583778fcaec9c9d4af631296fb65408d77d9fa2d785c0459b8"
+    },
+    "content/handbook/marketing/digital-experience/engineering/incident-response-playbook.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/incident-response-playbook.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5340ade26707a2d2ebd86b78c33e1e87a13117acd683369af6d2a096f7d9debd"
+    },
+    "content/handbook/marketing/digital-experience/engineering/localization.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/localization.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d7686dcb1f6df9793586847a7b892f80f09f570d565f20a3e2d3e053b3bacb26"
+    },
+    "content/handbook/marketing/digital-experience/engineering/marketing-site-approval-process.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/marketing-site-approval-process.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8020ec5d78d8270556c9fa7116c10c6cbfe52ba62c63d9f58d99bd46383101cf"
+    },
+    "content/handbook/marketing/digital-experience/engineering/navigation-repository.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/navigation-repository.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f40f220d824ca299f2d9f1b7448ab2525d14880d59bc1628308f7cd13eeaf055"
+    },
+    "content/handbook/marketing/digital-experience/engineering/onetrust-cookie-consent.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/onetrust-cookie-consent.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9fc84b94d354ef3d1a36671b64d5df733ff0963983d6c5dfd745422673dedffc"
+    },
+    "content/handbook/marketing/digital-experience/figma.md": {
+      "path": "content/handbook/marketing/digital-experience/figma.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "69077542fdeba3ada1ca32d5aa9928ab633c4180b3d7a0e417acb2b85c09b8ea"
+    },
+    "content/handbook/marketing/digital-experience/foundations-agenda.md": {
+      "path": "content/handbook/marketing/digital-experience/foundations-agenda.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "af036fa0683ea38322de873034e7e25fdadd9f8dba7daeeaf149acf291332129"
+    },
+    "content/handbook/marketing/digital-experience/marketing-cookie.md": {
+      "path": "content/handbook/marketing/digital-experience/marketing-cookie.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "339afdb8dc0e5b34a5ff44cd15f88103a6a497b32ae0b4aac001f7d8219c2f5a"
+    },
+    "content/handbook/marketing/digital-experience/onetrust.md": {
+      "path": "content/handbook/marketing/digital-experience/onetrust.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e42ddbaac840d81e00159e1b568156cc921646bc97992d253dee0f17f54507d5"
+    },
+    "content/handbook/marketing/digital-experience/optimizely.md": {
+      "path": "content/handbook/marketing/digital-experience/optimizely.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "aac206330971c59f72634a56c6e6514605399e4433ce3e149ed0a308242e442a"
     },
     "content/handbook/marketing/marketing-operations/6sense.md": {
       "path": "content/handbook/marketing/marketing-operations/6sense.md",
