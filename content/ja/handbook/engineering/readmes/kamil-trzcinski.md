@@ -24,7 +24,7 @@ stale: false
 * [ops.gitlab.net アカウント](https://ops.gitlab.net/kamil)
 * [チームページ](/handbook/company/team/#kamil)
 
-## 私のフォーカス
+## 私が注力していること
 
 主なフォーカスは Memory チームに関連する作業と CI/CD 空間に関連する作業です。上記のトピックに関連する多くの議論に積極的に参加しています。単純にそのトピックに興味があり、有益なフィードバックを提供できると思っているからです。
 

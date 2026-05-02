@@ -1,6 +1,6 @@
 ---
-title: "Craig Miskell README"
-description: "Craig Miskell、Staff Site Reliability Engineer、GitLab"
+title: "Craig Miskell の README"
+description: "Craig Miskell（Staff Site Reliability Engineer、GitLab）の個人 README ページ"
 job: "Staff Site Reliability Engineer"
 upstream_path: "/handbook/engineering/readmes/craig-miskell/"
 upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
