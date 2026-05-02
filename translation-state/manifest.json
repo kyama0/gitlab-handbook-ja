@@ -22,6 +22,60 @@
       "model": "claude-opus-4-7",
       "input_hash": "1558af072d2ae2245b0354a24efd87c7b7cc97c98914cc2e7472cbbb2c74c64c"
     },
+    "content/handbook/communication/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "924475fca41eb95abc992e66d4a50643935b6e049c1d541c66f4bebff91e7e6b"
+    },
+    "content/handbook/communication/ask-me-anything.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a89a447d9b2675a050b0379b9005134d6144768b56670ace47b37e00c332967c"
+    },
+    "content/handbook/communication/chat.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0103f01c57f25468d1cb3024e0897a96853377b700f1260d7055f27d4357fd50"
+    },
+    "content/handbook/communication/confidentiality-levels.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "063963c90a4aafbd4649c117ec836050900b52da92ec2393a78d065d3ae7d486"
+    },
+    "content/handbook/communication/deep-dives.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "87e7cf5548c57dd0e89686a6c6e3974e737c21fd00a8e56b2f2413aca1971e41"
+    },
+    "content/handbook/communication/power-of-the-pause.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "90f8d4ab6e238af0b77c6f8609ce11d98fe8abbe72afc61b8e8871e2e0354681"
+    },
+    "content/handbook/communication/top-misused-terms.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0b4f64a14cfb753bbb284f2700054cea4eced4d215429d939993239c31289d20"
+    },
+    "content/handbook/communication/zoom/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "122d2b719d26a9e1fe3df64c4c1c497780e027b2c37b399315b536d2865d2516"
+    },
+    "content/handbook/communication/zoom/webinars.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "477e26ecbd7655533ecc82aadec1ff194aff527fdcfeea7831e1bd85bb4ca01a"
+    },
     "content/handbook/company/_index.md": {
       "path": "content/handbook/company/_index.md",
       "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
