@@ -72,7 +72,7 @@ AIGW への直接リクエストの場合、このエンドポイントは AIGW 
 新しいモデルをデプロイする前に、ロールアウト計画を作成する必要があります。
 詳細については、[Rollout Guide](model_rollout_guide.md#create-a-rollout-plan) を参照してください。
 
-### 機能フラグの背後に導入する
+### 機能フラグの背後に導入する {#introduce-behind-a-feature-flag}
 
 AIGW への直接リクエストと GitLab Rails 経由の間接リクエストの両方について、どのモデルを使用するかの決定は最終的に GitLab Rails から来ます。新しいモデルを導入する際は、新しいモデルの有効化を切り替えるために
 [GitLab Rails で `beta` タイプの機能フラグを作成](https://docs.gitlab.com/ee/development/feature_flags/) する必要があります。この機能フラグには、対応する

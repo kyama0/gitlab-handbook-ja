@@ -74,7 +74,7 @@ Code Completion インタラクションは、IDE によってトリガーでき
 
 Language Server によって準備されたリクエストは、追加のコンテキストを付加せず、ほぼ修正されていない形式でプロキシされます。この機能における GitLab Rails の役割は、ほとんど認可エンティティとして、特定のユーザーが Code Suggestions 機能を使用することを許可されていることを保証することに限定されます。
 
-### Code Completion 直接接続の図
+### Code Completion 直接接続の図 {#code-completion-direct-connection-diagram}
 
 ```mermaid
 sequenceDiagram

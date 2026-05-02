@@ -17,9 +17,9 @@ Context Systems グループは AI Engineering 組織の一員で、私たちの
 Context Systems チームは、以下のプロジェクトをオーナーとして積極的に取り組んでいます。
 
 - [Knowledge Graph](/handbook/engineering/architecture/design-documents/gitlab_knowledge_graph/) - コードベース内の意味理解と関係性。
-- [Codebase Semantic Indexing](/handbook/engineering/ai/ai-coding/codebase_semantic_indexing.md) - 埋め込みを利用した高度なコード検索と発見機能。
-- [Repository X-Ray](/handbook/engineering/ai/ai-coding/repository_xray.md) - コード提案のコンテキストを強化するためのリポジトリ解析とメタデータ抽出。
-- [Duo Context Exclusion](/handbook/engineering/ai/ai-coding/duo_context_exclusion.md) - 機密性の高い、または無関係なコードコンテキストのフィルタリング。
+- [Codebase Semantic Indexing](/handbook/engineering/ai/ai-coding/codebase_semantic_indexing/) - 埋め込みを利用した高度なコード検索と発見機能。
+- [Repository X-Ray](/handbook/engineering/ai/ai-coding/repository_xray/) - コード提案のコンテキストを強化するためのリポジトリ解析とメタデータ抽出。
+- [Duo Context Exclusion](/handbook/engineering/ai/ai-coding/duo_context_exclusion/) - 機密性の高い、または無関係なコードコンテキストのフィルタリング。
 
 ## お問い合わせ
 
