@@ -554,6 +554,55 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "8bfeadbf804ab3e1c69ead1bdec07279b214db6745283b8c61d3d2aaab757f8b"
     },
+    "content/handbook/eta/_index.md": {
+      "path": "content/handbook/eta/_index.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d14b3ea1d2d8adf9001d9827ad2f3b446217750028c589bd9df33398f7091ddd"
+    },
+    "content/handbook/eta/ai/_index.md": {
+      "path": "content/handbook/eta/ai/_index.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7d9c0b0e17ea25a6a8806de640cc33f0a017ff9969e1eeaa9c1634c56effa1f4"
+    },
+    "content/handbook/eta/arb/_index.md": {
+      "path": "content/handbook/eta/arb/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "79173127600ffd25a9c9db6e5fe8f530ec0a14563721fa2818e5e7affca61260"
+    },
+    "content/handbook/eta/business-systems/_index.md": {
+      "path": "content/handbook/eta/business-systems/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ebc5cd0e13f6942af9de2619aba4ca89827eb924c863104bab49a302d45db3c8"
+    },
+    "content/handbook/eta/corporate-it/_index.md": {
+      "path": "content/handbook/eta/corporate-it/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d6de1c8cb5591b1ac44babb2921dc63ec4509bd0f726ea7421c3b02557011ff5"
+    },
+    "content/handbook/eta/enterprise-data/_index.md": {
+      "path": "content/handbook/eta/enterprise-data/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d97e0c4c4e216bd15375eb22dad1cce93045fc5fbb939533b0ec69a19eeabe72"
+    },
+    "content/handbook/eta/strategy-and-operations/_index.md": {
+      "path": "content/handbook/eta/strategy-and-operations/_index.md",
+      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e628ebe3d46d426316860494d953f55ad135ce9f658c50162c1efebef208df51"
+    },
     "content/handbook/hiring/_index.md": {
       "path": "content/handbook/hiring/_index.md",
       "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
