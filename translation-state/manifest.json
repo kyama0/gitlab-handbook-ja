@@ -508,6 +508,13 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "82289ec19635c9b5cc56ba32c4f81a59eb107d44c91898e6f4d0edc43b131fd8"
     },
+    "content/handbook/it/_index.md": {
+      "path": "content/handbook/it/_index.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "37fb2123fbe1f44e2c3e1a2e0f042a673cd35dc2ac7dfc265a993ada242ba0e1"
+    },
     "content/handbook/marketing/digital-experience/_index.md": {
       "path": "content/handbook/marketing/digital-experience/_index.md",
       "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
