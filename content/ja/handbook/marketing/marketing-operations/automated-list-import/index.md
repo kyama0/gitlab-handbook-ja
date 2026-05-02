@@ -1,7 +1,7 @@
 ---
 title: "自動リストインポート"
 description: "Marketo Auto List Importer によるリスト取り込みプロセス"
-upstream_path: https://handbook.gitlab.com/handbook/marketing/marketing-operations/automated-list-import/
+upstream_path: /handbook/marketing/marketing-operations/automated-list-import/
 upstream_sha: 556213935f9d4b2d786892c3568ad51be8ee2f6a
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude

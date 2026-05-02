@@ -49,7 +49,7 @@ Marketo 用に BeeFree でメールを作成するときは、`{{my.tokenName}}`
 
 4. メール内のメール詳細 (件名とプリヘッダーテキストのみ) を必ず更新すること。これはメールのタイトルとプレビューテキストに表示されます
 
-   ![Email details section](/handbook/marketing/marketing*operations/beefree/Screenshot_2025*10*06_at_5.19.51_PM.png "件名とプリヘッダーテキストフィールドを示すメール詳細セクション")
+   ![Email details section](/handbook/marketing/marketing-operations/beefree/Screenshot_2025_10_06_at_5.19.51_PM.png "件名とプリヘッダーテキストフィールドを示すメール詳細セクション")
 
 5. メール内に主要な CTA リンクが 1 つある場合、リンクにはトークンを使用すること (例: スケーラビリティのための Marketo 用 `https://{{my.LandingPageURL}}?lb_email={{lead.email address}}&{{my.utm}}`)
 
@@ -67,8 +67,8 @@ Marketo 用に BeeFree でメールを作成するときは、`{{my.tokenName}}`
    * 件名とプリヘッダーテキストが反映されていることを確認すること
      * Marketo の場合、以下の詳細が記入されていることを確認:
 
-       ![Marketo email settings](/handbook/marketing/marketing*operations/beefree/Screenshot_2025*10*07_at_2.10.59_PM.png "件名とプリヘッダー設定を示す Marketo のメール設定")
+      ![Marketo email settings](/handbook/marketing/marketing-operations/beefree/Screenshot_2025_10_07_at_2.10.59_PM.png "件名とプリヘッダー設定を示す Marketo のメール設定")
 
      * Iterable の場合: 以下の詳細が記入されていることを確認:
 
-       ![Iterable email settings](/handbook/marketing/marketing*operations/beefree/Screenshot_2025*10*07_at_2.12.59_PM.png "件名とプリヘッダー設定を示す Iterable のメール設定")
+      ![Iterable email settings](/handbook/marketing/marketing-operations/beefree/Screenshot_2025_10_07_at_2.12.59_PM.png "件名とプリヘッダー設定を示す Iterable のメール設定")
