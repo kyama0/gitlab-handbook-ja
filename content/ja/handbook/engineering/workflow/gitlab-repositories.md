@@ -52,7 +52,7 @@ GitLab は多くのサブプロジェクトで構成されています。GitLab 
 
 既存のリポジトリの設定を変更する際は、[コミュニケーション](/handbook/engineering/workflow/engineering-comms/#communication)を念頭に置くことが重要です。Issue で変更を議論し、関連するチャットチャンネル（例: `#development`）でアナウンスするだけでなく、[Engineering Week-in-Review ドキュメント](/handbook/engineering/workflow/engineering-comms/#communication)でのアナウンスも検討してください。これは [GitLab](https://gitlab.com/gitlab-org/gitlab) リポジトリへの変更では特に重要です。
 
-### CI/CD 設定
+### CI/CD 設定 {#cicd-configuration}
 
 以下は、`gitlab-org` および `gitlab-com` グループ配下のすべてのプロジェクトで使用すべきデフォルトの `.gitlab-ci.yml` 設定です:
 

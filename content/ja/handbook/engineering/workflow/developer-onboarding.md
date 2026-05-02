@@ -92,8 +92,8 @@ GitLab チームメンバーは[これらの手順](/handbook/support/internal-s
 - [コミュニティ Discord](https://discord.gg/gitlab)に参加する
 - チームが[コミュニティオフィスアワー](/handbook/marketing/developer-relations/engineering/community-contributors-workflows/#community-office-hours)を開催することを奨励する
 - Slack の `#developer-relations-engineering` で[Developer Relations エンジニアリングチーム](/handbook/marketing/developer-relations/engineering)に連絡する
-- 行うことにコミュニティを巻き込む
-- 公開でを会話する
+- あなたの活動にコミュニティを巻き込む
+- 公開で会話する
 - チームの Issue をトリアージし、特に[ハッカソン](https://about.gitlab.com/community/hackathon/)に向けて `quick win` でラベル付けする
 - [コミュニティフォーク](https://gitlab.com/gitlab-community)を使用する
 - チームメンバーおよび/またはコミュニティと[ライブストリーミング](/handbook/marketing/marketing-operations/youtube/#public-or-private-streaming)と[ペアリングセッション](/handbook/marketing/developer-relations/engineering/community-pairing-sessions/)を検討する

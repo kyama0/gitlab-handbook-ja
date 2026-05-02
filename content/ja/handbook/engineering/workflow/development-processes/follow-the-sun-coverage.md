@@ -1,5 +1,5 @@
 ---
-title: "フォローザサン カバレッジ - 開発部門"
+title: "フォローザサンカバレッジ - 開発部門"
 description: "開発部門がフォローザサンカバレッジとペアリングをどのように活用しているか"
 upstream_path: /handbook/engineering/workflow/development-processes/follow-the-sun-coverage/
 upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
