@@ -175,6 +175,24 @@
       "model": "claude-opus-4-7",
       "input_hash": "7a01ad3d083f5192a80b690fce76fabff9e45dbdaea02d8042b751e1f53a7400"
     },
+    "content/handbook/eba/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8a98a8eca98c07e14af9ad0e43735d5de3484ee3e5298f85b4c583a6630d1f66"
+    },
+    "content/handbook/eba/ceo-scheduling.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6946dbecf666ff5150fc8accb61175a87ea5a2e9ad3664c59ef34f78c35aad41"
+    },
+    "content/handbook/eba/e-group-scheduling.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3cf5510dba064ed15ba4d67c83216007e428ebfdb98544ebcf05b69cbbc987cf"
+    },
     "content/handbook/engineering/architecture/_index.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-26T03:00:00Z",
