@@ -42,6 +42,139 @@
       "translated_at": "2026-04-19T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "7a01ad3d083f5192a80b690fce76fabff9e45dbdaea02d8042b751e1f53a7400"
+    },
+    "content/handbook/engineering/testing/_index.md": {
+      "path": "content/handbook/engineering/testing/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b463f36b438cd65f01bab9c9df96caf1e0e15876ce3baac1cd4d2dc0a50c14b4"
+    },
+    "content/handbook/engineering/testing/deployment_paths.md": {
+      "path": "content/handbook/engineering/testing/deployment_paths.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e279eb6e665bbbace69b04cdac070f521ba1a5664e9fba91b339c90534b0a1a0"
+    },
+    "content/handbook/engineering/testing/distribution.md": {
+      "path": "content/handbook/engineering/testing/distribution.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f895b569fb7e45b78c71a95c6e063b53f1ae1b7682e511de61a00c4982df02c4"
+    },
+    "content/handbook/engineering/testing/end-to-end-pipeline-monitoring.md": {
+      "path": "content/handbook/engineering/testing/end-to-end-pipeline-monitoring.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2db74c84f3adfa279608e4dca4dca678bf02f6f28679a44e7a36cf76b2e636a1"
+    },
+    "content/handbook/engineering/testing/flaky-tests/_index.md": {
+      "path": "content/handbook/engineering/testing/flaky-tests/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4f29a8f3f0023b6d5de73e9b81d6642e23de3cdd1bf9a193a7132934dac5cb09"
+    },
+    "content/handbook/engineering/testing/guide-to-e2e-test-failure-issues.md": {
+      "path": "content/handbook/engineering/testing/guide-to-e2e-test-failure-issues.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8de8b96d67aee9c3796ee8efe34e629badc8481cca67bac826bf337e29dd2545"
+    },
+    "content/handbook/engineering/testing/observability_performance.md": {
+      "path": "content/handbook/engineering/testing/observability_performance.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "563de113ff1285c907e687dc256ddf298de893d85ae2458e930c04fa761e9393"
+    },
+    "content/handbook/engineering/testing/oncall-rotation.md": {
+      "path": "content/handbook/engineering/testing/oncall-rotation.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6bac09ed706754518ff47479fceb2f0ac2ea7052bb5c7b90b67ac250d82c0597"
+    },
+    "content/handbook/engineering/testing/operational-verification.md": {
+      "path": "content/handbook/engineering/testing/operational-verification.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2dcda2048a227857b330abbd909398d3a98a1bdef37ef699635717dc6d82ec3d"
+    },
+    "content/handbook/engineering/testing/performance-contracts.md": {
+      "path": "content/handbook/engineering/testing/performance-contracts.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a6d793844c755d5061cd758cbb53af62928e511099bbec419b56b775d6d7cbea"
+    },
+    "content/handbook/engineering/testing/performance-tools.md": {
+      "path": "content/handbook/engineering/testing/performance-tools.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "121bb5e7b4abc8e30e5e65c3986231e5bd212772d8f79c678cd69e33a6f861f4"
+    },
+    "content/handbook/engineering/testing/pipeline-triage.md": {
+      "path": "content/handbook/engineering/testing/pipeline-triage.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "690250f7e1a6ba63dc1e98affcfa05d8d9eb834311c03ac493f07d778715a3c4"
+    },
+    "content/handbook/engineering/testing/prep-performance-metrics.md": {
+      "path": "content/handbook/engineering/testing/prep-performance-metrics.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c8b0381074862f0859b5d88ec3265535446ad17da88b778aedeaa16f99d0c190"
+    },
+    "content/handbook/engineering/testing/quarantine-process.md": {
+      "path": "content/handbook/engineering/testing/quarantine-process.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6ccf6d386db30bc8a3d1818b5f60d6dfef52ae1b85fca5482fd019d4b23fd5eb"
+    },
+    "content/handbook/engineering/testing/risk-mapping.md": {
+      "path": "content/handbook/engineering/testing/risk-mapping.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5b5b4d0a322fc938fb46e76b09c420e75e7eda6d1b13ad765d95f83e5576817c"
+    },
+    "content/handbook/engineering/testing/self-service-performance-regression-testing.md": {
+      "path": "content/handbook/engineering/testing/self-service-performance-regression-testing.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dbb0cc7b307bcccf16223742b058bf8fa8e1a8053f1447fe0f8a8f8a0cb84389"
+    },
+    "content/handbook/engineering/testing/test-coverage.md": {
+      "path": "content/handbook/engineering/testing/test-coverage.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8c5f59c6de84dcbeb5b2fe61bbdf5459fade4886e302315026eadf2b5f0d853b"
+    },
+    "content/handbook/engineering/testing/test-environments-catalog.md": {
+      "path": "content/handbook/engineering/testing/test-environments-catalog.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3dea36ac7004c166b3088975f44f152485fca1b0c01cf02347ca6e35ce6b0c63"
+    },
+    "content/handbook/engineering/testing/using-duo-to-debug-test-failures.md": {
+      "path": "content/handbook/engineering/testing/using-duo-to-debug-test-failures.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3ec2fd6ce11b9f11923b46b4582fadb500b51012a46b5df6bfaa8f26ecd805c7"
     }
   }
 }
