@@ -281,6 +281,12 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "3cf5510dba064ed15ba4d67c83216007e428ebfdb98544ebcf05b69cbbc987cf"
     },
+    "content/handbook/engineering/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "804083ef783ecd119785d0b5e8a5c0d24b1a62b19f74a2f9b2fe5c75c9013a76"
+    },
     "content/handbook/engineering/architecture/_index.md": {
       "path": "content/handbook/engineering/architecture/_index.md",
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -378,6 +384,217 @@
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": ""
+    },
+    "content/handbook/engineering/cto-leadership-team.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:21:43Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "acc84195ca0da3d29e837343094e5496c0d948365162cce24ed25a43dd6091b1"
+    },
+    "content/handbook/engineering/deployments-and-releases/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fda19e1fbe99d060baa7993b36f31bd68307e9fa9a84dc5610320bf8334dbeda"
+    },
+    "content/handbook/engineering/deployments-and-releases/deployments/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/embody-team/_index.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f8897ad9d8f61df3c482a79ca94ebe88a95b83d4e55e8bcb54af4389e857d70a"
+    },
+    "content/handbook/engineering/error-budgets/_index.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "24a127bfcd65b48638a46812605a3006237d23415fb5dc210ac8826ec6e3dda4"
+    },
+    "content/handbook/engineering/error-budgets/custom-targets.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f9627fb2334cd186b18d05deb95045b023f7c93e2d00d69cac751b1a02b6980a"
+    },
+    "content/handbook/engineering/error-budgets/error-budget-by-stage-group-example.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "11f687cdf56f77209aa4747cd8fda77c6b42df1500185a6e731d58217d73e05a"
+    },
+    "content/handbook/engineering/gitlab-com/_index.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8bdbf7a31b22ed125c525839e5dca1585e400ae61ccebcb0945e691f16ea7b85"
+    },
+    "content/handbook/engineering/gitlab-com/policies/backup/_index.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be6b38406e61c973e834e6aa0867b146eaaf690fa338ed9519d5bf2f528f26d9"
+    },
+    "content/handbook/engineering/gitlab-com/policies/disaster-recovery/_index.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3f94571df5ba6f47d650540ca0df9447e5753d03807c8431bbb3f366c86b5c90"
+    },
+    "content/handbook/engineering/gitlab-com/policies/monitoring/_index.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "218176c22c696ecfc61cac65e16bebbb3a84f29c78361723f6793309356080b9"
+    },
+    "content/handbook/engineering/gitlab-com/policies/teleport/_index.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d7f6893d01f633ec7476de7e3a5f9b9aae53c9025435287d6528b3b75822e658"
+    },
+    "content/handbook/engineering/incident-management.md": {
+      "upstream_sha": "27d1e9b21984fe11eff53db49a85c2ba08ef901c",
+      "translated_at": "2026-04-28T15:26:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7c9260f6515ec1b7a7b5f86d7c9bcc002902248219d5fccea493f7e47bc0af75"
+    },
+    "content/handbook/engineering/infrastructure/_index.md": {
+      "path": "content/handbook/engineering/infrastructure/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4a2eb7d22b2d38300e802f5b81cc1e621d027dddfbc798c278da22979e1da722"
+    },
+    "content/handbook/engineering/infrastructure/team/_index.md": {
+      "path": "content/handbook/engineering/infrastructure/team/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "719864182d09f0a61b2b56654e90eb32536e4de01d8fd69a6717cc4a7cf6cf72"
+    },
+    "content/handbook/engineering/infrastructure/team/cloud-connector/_index.md": {
+      "path": "content/handbook/engineering/infrastructure/team/cloud-connector/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "652996b4e7511048efb664f347f39ec852532b0237f39c3b91e8c2df04efdb25"
+    },
+    "content/handbook/engineering/monitoring/_index.md": {
+      "path": "content/handbook/engineering/monitoring/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6947b4f6108371a8e42dec54a2a86e6e25b752c78ca57e9b4e2bde9c7260577e"
+    },
+    "content/handbook/engineering/monitoring/staging-monitoring.md": {
+      "path": "content/handbook/engineering/monitoring/staging-monitoring.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "69d30b8d736b518592a23577a8998634757b890ca1383962f45a0e24f8d23779"
+    },
+    "content/handbook/engineering/on-call.md": {
+      "path": "content/handbook/engineering/on-call.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "59bf2fb4275777af396c2bced54b587eec0643230ffc7684fd1fcff29f17faea"
+    },
+    "content/handbook/engineering/open-source/_index.md": {
+      "path": "content/handbook/engineering/open-source/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:26:36Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "36db04e2e4f127c446d0a106ad8149960b0c469f3ae751f16dfc8facaa9c0c37"
+    },
+    "content/handbook/engineering/open-source/growth-strategy.md": {
+      "path": "content/handbook/engineering/open-source/growth-strategy.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "722762c2fca98f357956682b4eee38cb3b1ee895ff76d625116c962874cea7e9"
+    },
+    "content/handbook/engineering/performance-indicators/maturity.md": {
+      "path": "content/handbook/engineering/performance-indicators/maturity.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5c25cc8afaf7f7ac7a5052bebe63d23378938c07c95f553d77c123a12894289a"
+    },
+    "content/handbook/engineering/performance.md": {
+      "path": "content/handbook/engineering/performance.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c9b487a38d9a63aad449170ac289318037056b2c538bda6c2afd4e6e2a423e36"
+    },
+    "content/handbook/engineering/projects/_index.md": {
+      "path": "content/handbook/engineering/projects/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T05:50:35Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0a98b9f29d95786d96f654db27a54d883d18202e79e093c66d869c3cdde666b5"
+    },
+    "content/handbook/engineering/recognition.md": {
+      "path": "content/handbook/engineering/recognition.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "79dfed46ffd99ca90a877021881f5ace9304071cc65971d7ff05faeb3333df7e"
+    },
+    "content/handbook/engineering/releases/_index.md": {
+      "path": "content/handbook/engineering/releases/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "539952e015e05bc81364e6f042d2621bd1e89b056e84accc8c2686a4124baaf3"
+    },
+    "content/handbook/engineering/releases/backports.md": {
+      "path": "content/handbook/engineering/releases/backports.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "628ff32e80cbcf0d52da7bf8cf5f68bc5256ea52f1e7f18ca6577d482fdbcdef"
+    },
+    "content/handbook/engineering/releases/internal-releases/index.md": {
+      "path": "content/handbook/engineering/releases/internal-releases/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b34c9a996007f18cdf1d6e0dcfd7eb2b9a9f81f6a7d81653ab0289dcb0727bb0"
+    },
+    "content/handbook/engineering/releases/monthly-releases/index.md": {
+      "path": "content/handbook/engineering/releases/monthly-releases/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "af196b47b434883f8c7527661e9742ea85d67bb7d6d23994d85de25bb14f3d3f"
+    },
+    "content/handbook/engineering/releases/patch-releases/index.md": {
+      "path": "content/handbook/engineering/releases/patch-releases/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a62bd709d41ad14ec3a97c2ee369ee3055c70d95289abdbdfc062b7818484194"
+    },
+    "content/handbook/engineering/releases/stable_branches.md": {
+      "path": "content/handbook/engineering/releases/stable_branches.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a12b53b4ffba2c17ce05de66e215ab8b320765702e03b1e475f01f0b1b3eaba9"
+    },
+    "content/handbook/engineering/tax-credits.md": {
+      "path": "content/handbook/engineering/tax-credits.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "21760050a9bc4428a5b1703e26108484fdc2281671afe0b135a1f3a41f1c5246"
     },
     "content/handbook/engineering/testing/_index.md": {
       "path": "content/handbook/engineering/testing/_index.md",
