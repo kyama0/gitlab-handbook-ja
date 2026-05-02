@@ -273,6 +273,160 @@
       "translated_at": "2026-04-29T06:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "82289ec19635c9b5cc56ba32c4f81a59eb107d44c91898e6f4d0edc43b131fd8"
+    },
+    "content/handbook/marketing/digital-experience/_index.md": {
+      "path": "content/handbook/marketing/digital-experience/_index.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5e56e50b2daf3d0f9948fc0af132732228d234673b4589a6f7b5ac2a40f50ba5"
+    },
+    "content/handbook/marketing/digital-experience/analytics/_index.md": {
+      "path": "content/handbook/marketing/digital-experience/analytics/_index.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d8b26106541a30b5db2a41972cdc014a8b8e32b96268708d83670d2f06ada30a"
+    },
+    "content/handbook/marketing/digital-experience/analytics/google-lighthouse.md": {
+      "path": "content/handbook/marketing/digital-experience/analytics/google-lighthouse.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a0d553ebfaf85d53b21e5bd15cd84fa217dad711283425446613e00d656eefc2"
+    },
+    "content/handbook/marketing/digital-experience/decap-cms/_index.md": {
+      "path": "content/handbook/marketing/digital-experience/decap-cms/_index.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1a45f31c2d6a6eaa296be7ef08d50bb62ebde553582b4084eaae1eed022d8609"
+    },
+    "content/handbook/marketing/digital-experience/digital-definitions.md": {
+      "path": "content/handbook/marketing/digital-experience/digital-definitions.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e5316a390cbbd96f691308fc031637155660ad74bb93a8c7f62f9ac21e658029"
+    },
+    "content/handbook/marketing/digital-experience/engineering/accessibility.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/accessibility.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fd9f45b825a548c5f0ddd287385c3a3dd1b6efa85a4b2c3a7468ccaa6a8670ba"
+    },
+    "content/handbook/marketing/digital-experience/engineering/code-review.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/code-review.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e99b888d26f3e7b2c174beb82619c4a288c09494be4644c247ab40dc4c38d9a6"
+    },
+    "content/handbook/marketing/digital-experience/engineering/cwv.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/cwv.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "103805dff19b01fc4144d7913043748a8de10f84d2a6c98571617af91972a1ac"
+    },
+    "content/handbook/marketing/digital-experience/engineering/data-dictionary.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/data-dictionary.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7d1df494771cc0632cb0500af6731d5e4b585e86c9adee64384d2aa436d0fc1d"
+    },
+    "content/handbook/marketing/digital-experience/engineering/dexbot.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/dexbot.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "18abf04d790dbfd3759eb114b182197b8aba94cd7219d6fed33ee0bb3f632fb5"
+    },
+    "content/handbook/marketing/digital-experience/engineering/engineering-marketo.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/engineering-marketo.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "94ac0758ad6ac15ca5fd02fb4f085404c544674e9051d609e6608bd27cec226b"
+    },
+    "content/handbook/marketing/digital-experience/engineering/image-guidelines.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/image-guidelines.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3b7389f5f1e3ea583778fcaec9c9d4af631296fb65408d77d9fa2d785c0459b8"
+    },
+    "content/handbook/marketing/digital-experience/engineering/incident-response-playbook.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/incident-response-playbook.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T10:36:34Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5340ade26707a2d2ebd86b78c33e1e87a13117acd683369af6d2a096f7d9debd"
+    },
+    "content/handbook/marketing/digital-experience/engineering/localization.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/localization.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d7686dcb1f6df9793586847a7b892f80f09f570d565f20a3e2d3e053b3bacb26"
+    },
+    "content/handbook/marketing/digital-experience/engineering/marketing-site-approval-process.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/marketing-site-approval-process.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8020ec5d78d8270556c9fa7116c10c6cbfe52ba62c63d9f58d99bd46383101cf"
+    },
+    "content/handbook/marketing/digital-experience/engineering/navigation-repository.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/navigation-repository.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f40f220d824ca299f2d9f1b7448ab2525d14880d59bc1628308f7cd13eeaf055"
+    },
+    "content/handbook/marketing/digital-experience/engineering/onetrust-cookie-consent.md": {
+      "path": "content/handbook/marketing/digital-experience/engineering/onetrust-cookie-consent.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9fc84b94d354ef3d1a36671b64d5df733ff0963983d6c5dfd745422673dedffc"
+    },
+    "content/handbook/marketing/digital-experience/figma.md": {
+      "path": "content/handbook/marketing/digital-experience/figma.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "69077542fdeba3ada1ca32d5aa9928ab633c4180b3d7a0e417acb2b85c09b8ea"
+    },
+    "content/handbook/marketing/digital-experience/foundations-agenda.md": {
+      "path": "content/handbook/marketing/digital-experience/foundations-agenda.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "af036fa0683ea38322de873034e7e25fdadd9f8dba7daeeaf149acf291332129"
+    },
+    "content/handbook/marketing/digital-experience/marketing-cookie.md": {
+      "path": "content/handbook/marketing/digital-experience/marketing-cookie.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "339afdb8dc0e5b34a5ff44cd15f88103a6a497b32ae0b4aac001f7d8219c2f5a"
+    },
+    "content/handbook/marketing/digital-experience/onetrust.md": {
+      "path": "content/handbook/marketing/digital-experience/onetrust.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e42ddbaac840d81e00159e1b568156cc921646bc97992d253dee0f17f54507d5"
+    },
+    "content/handbook/marketing/digital-experience/optimizely.md": {
+      "path": "content/handbook/marketing/digital-experience/optimizely.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "aac206330971c59f72634a56c6e6514605399e4433ce3e149ed0a308242e442a"
     }
   }
 }
