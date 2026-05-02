@@ -121,7 +121,7 @@ flowchart LR
 
 オンボーディングから変更のマージまで、卓越した効率的かつ迅速なコントリビューター体験を提供します。取り組みの一つは、コントリビュージャーニーをより効率的にするためのコントリビューションの障壁を削減することです。これらの障壁は、広域コミュニティのコントリビューター、プロダクトチーム、GitLab チームメンバーからコントリビューションの摩擦についてフィードバックを収集することで特定されます。
 
-#### オープンコミュニティ MR エイジの削減
+#### オープンコミュニティ MR エイジの削減 {#reduce-open-community-mr-age}
 
 * **理由:** [オープンコミュニティ MR エイジ (OCMA)](/handbook/marketing/developer-relations/performance-indicators/#open-community-mr-age) とレビュー時間を削減することで、本番環境へのコントリビューションのスピードを向上させます。OCMA が最も高いプロダクトグループを特定しました。最大の機会があるプロダクトグループに対処するための分析と改善が必要です。MR レビューの改善とフィードバックの収集も行います。
 * **DRI:** [Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/)
@@ -145,12 +145,12 @@ flowchart LR
 
 魅力的な価値を提供し、コントリビューターの作業に対する定期的な認定を行うことで、コントリビューターを促進、引き付け、維持します。コントリビューターのキャリア昇進資料と表彰も含みます。
 
-#### 魅力的なコントリビューター価値提案の作成
+#### 魅力的なコントリビューター価値提案の作成 {#create-a-compelling-contributor-value-proposition}
 
 * **理由:** 人々が GitLab にコントリビューションしようとする理由を明確に定義し、コードコントリビューション増加のための魅力的な価値提案を提示する必要があります。この課題を推進するプログラムの一つが、お客様向けの [Co-Create プログラム](https://about.gitlab.com/community/co-create/)です。
 * **DRI:** [Developer Relations team](/handbook/marketing/developer-relations/)
 
-#### コントリビューター認定・昇進システム
+#### コントリビューター認定・昇進システム {#contributor-recognition--advancement-system}
 
 * **理由:** オープンソースプロジェクトでは、コントリビューターはバグの修正や機能の追加だけでなく、経験を積んでオンラインプレゼンスを構築することにも意欲を持ちます。これはレベルアップ、バッジ、その他のインセンティブシステムで解決できます。さらに、コントリビューターを認定して維持するための継続的かつ影響力のある認定を提供します。認定の頻度を高め、コントリビューターのタイプやペルソナに合わせた対象を絞った認定を行います。
 * **DRI:** [Developer Relations Engineering team](/handbook/marketing/developer-relations/engineering/)
@@ -197,12 +197,12 @@ flowchart LR
 
 フルタイムのカスタマーコントリビューターモデルを活用し、持続可能な成長のための広域コミュニティチームを作ります。
 
-#### リピートコントリビューターと頻繁なコントリビューター
+#### リピートコントリビューターと頻繁なコントリビューター {#returning--frequent-contributors}
 
 * **理由:** お客様、パートナー、OSS コミュニティなど GitLab を使用または拡張する組織からの継続的なコントリビューションを動機付けることで、コントリビューションを増加させます。そのステータスを達成した人々に、個人と組織にとって価値ある GitLab の特典で報います。
 * **DRI:** [Developer Relations team](/handbook/marketing/developer-relations/) および [Developer Relations Engineering team](/handbook/marketing/developer-relations/engineering/)
 
-#### コード以外のコントリビューション
+#### コード以外のコントリビューション {#non-code-contributions}
 
 * **理由:** 私たちのユーザーベースはさまざまなペルソナで構成されており、それぞれが価値あるコントリビューションをして GitLab を改善できます。設計の提案、コードレビュー、Issue のトリアージ、または関係するすべての当事者の健全な議論を促進することは、私たちの目標達成を加速させます。さらに、プロダクトの宣伝、イベントへの参加、その他の方法でのコントリビューションといった非コードコントリビューションも認定し称えるべきです。
 * **DRI:** [Developer Relations Engineering team](/handbook/marketing/developer-relations/engineering/)
