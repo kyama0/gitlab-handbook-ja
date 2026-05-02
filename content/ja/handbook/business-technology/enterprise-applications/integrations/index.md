@@ -1,0 +1,49 @@
+---
+title: "アーキテクチャ & インテグレーション"
+upstream_path: "/handbook/business-technology/enterprise-applications/integrations/"
+upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
+translated_at: "2026-04-25T06:02:44Z"
+translator: "claude"
+stale: false
+---
+
+<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
+
+## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちについて
+
+私たちは、Enterprise Applications エコシステムに存在する複雑なインテグレーションと自動化のエコシステムを設計、構築、維持するチームです。ハイブリッドインテグレーションプラットフォームを使用してこれを実現しています。また、すべての Enterprise Application システムとインテグレーションに[標準とコンベンション](/handbook/business-technology/enterprise-applications/integrations/)を適用することで、システムインテグレーションとリアルタイムデータフローに関してガバナンスの役割も担っています。
+
+## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちのチーム（組織図）
+
+[私たちのチーム（組織図）](https://internal.gitlab.com/handbook/it-enterprise-applications/about-us/enterprise-applications-integrations/)
+
+## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちのサービス
+
+- システムインテグレーションと API
+  - システム A とシステム B の接続
+  - API の理解とシステム間のカスタム接続の構築
+  - ネイティブコネクターの評価
+  - インテグレーションのビルドか購入かの問題への対処
+  - システムのコンプライアンス要件の把握
+  - カスタム API の構築
+  - 自動化とワークフローの構築
+
+## 高度にテストされた堅牢なデータマッピング
+
+ユニットテストとインテグレーションテストの組み合わせを使用して、マッピング対象のデータモデルが現在も将来も正確であることを保証する自動テストを構築しています。
+
+## システムの疎結合
+
+私たちが使用するインテグレーションプラットフォームにより、イベント発生システムをダウンストリームのコンシューマーから切り離すことができます。これにより、アップストリームシステムの切り替えや新しいダウンストリームシステムの導入を決定した場合でも、自分たちやシステムオーナーに大量の手戻りを発生させることなく、迅速かつ簡単に対応できます。
+
+## スケジュール自動化
+
+CRON スケジューリング機能を通じて、非常に柔軟な時間ベースの自動化を構築できます。
+
+## Slack インテグレーション
+
+Slack インテグレーションの自動化とワークフローが必要な場合は、Workato に組み込まれた Slack コネクターを通じて提供しています。どのようにサポートできるかについては、お問い合わせください。
+
+## ビルトインのビジネスシステムコネクター
+
+Workato との統合を通じて、多くの標準的なビジネスシステムに対応したすぐに使えるコネクターを提供しています。利用可能なものについては、[Workato コネクターリスト](https://docs.workato.com/connectors.html)をご覧ください。お使いのシステムがそのウェブサイトに記載されていない場合は、追加システム向けのカスタムコネクターも定期的に構築していますので、お問い合わせください。
