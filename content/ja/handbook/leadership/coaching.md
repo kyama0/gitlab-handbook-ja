@@ -64,7 +64,7 @@ graph TD
 1. コーチーに完全に集中する。
 1. サポートを提供しながら深く聴く。
 
-### コーチングの必須スキル
+### コーチングの必須スキル {#essential-coaching-skills}
 
 効果的なコーチはコーチング会話を可能にするための特定のスキルセットを使用します。これらのスキルには次のものが含まれます。
 
@@ -207,7 +207,7 @@ graph TD
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQwmhv3MIUV4065TeQ4N1Lz4xhjROQRTaTW2XNa5qH4k-mq4GNLgRYhi2fr2hjZslZ7V8JBipbvuaBv/embed?start=true&loop=false&delayms=3000" frameborder="0" width="700" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 </figure>
 
-#### 信頼の方程式
+#### 信頼の方程式 {#the-trust-equation}
 
 **[信頼の方程式&trade;](https://trustedadvisor.com/why-trust-matters/understanding-trust/understanding-the-trust-equation#:~:text=The%20Trust%20Equation%20uses%20four,%2C%20Intimacy%20and%20Self%2DOrientation.&text=The%20Trust%20Quotient%20is%20a,trustworthiness%20against%20the%20four%20variables.)** はチームの信頼性を高めるための概念です。チームメンバーとの信頼が高ければ高いほど、コーチングの会話は容易になります。
 
@@ -261,7 +261,7 @@ graph TD
 - [MindTool のウィルとスキル動画](https://www.youtube.com/watch?v=4DAk7fjai6c)
 - [OMT Global のウィルとスキル動画](https://www.youtube.com/watch?v=KkkGt15-qtc)
 
-### 内なるフィクサーを管理する
+### 内なるフィクサーを管理する {#managing-your-inner-fixer}
 
 効果的にコーチングするためには、内なるフィクサーを管理することが重要です - 内なるフィクサーは必死に「伝えたい！」のです！コーチの役割は、チームメンバーが新しい習慣を開発し、新しい関与の方法を探求し、自分の最善を尽くすために何が必要かを見つけるのをサポートすることです。このアプローチは、教えることよりも多くのコーチングが必要です。指示を与えるよりも多くのサポートが必要です。
 
@@ -269,7 +269,7 @@ graph TD
 - [修正をやめてコーチングを始める](https://baird-group.com/stop-fixing-start-coaching/)
 - [コーチングで：正しい質問をすることはすべての答えを持つことよりも重要ですか？](https://www.fourstreamscoaching.com/in-coaching-is-asking-the-right-questions-more-important-than-having-all-the-answers/)
 
-## GROW モデル
+## GROW モデル {#grow-model}
 
 GROW モデルは、コーチーとコーチングの会話を行うための4ステップの方法です。コーチングセッション中に適用して、コーチーを未来志向の議論を通じて導くことができます。
 
