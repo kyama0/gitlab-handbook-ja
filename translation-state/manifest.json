@@ -613,6 +613,240 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "acc84195ca0da3d29e837343094e5496c0d948365162cce24ed25a43dd6091b1"
     },
+    "content/handbook/engineering/data-engineering/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:21:43Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9b947fb8dacb9fe5d34f487c4a55320cb2d8a00ef0f052e36a5330ef910d4268"
+    },
+    "content/handbook/engineering/data-engineering/analytics/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:21:43Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "81e8f0df43cfa5244b59287b8e625e1e85d217a9c1110d449b9ab18f4e320d53"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:21:43Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5a997d89db738aa5ca19a43bd49531a3929d13782bfe3090b961f86daa208e1e"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/infrastructure.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "130ab5a1fe252e042f8f8eb9208932fb1c0c63f83f4f47d748381c425bf15656"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/monitoring_troubleshooting.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "159b5466e538bf837820a4ea24d6a8317e836ee343572c77853ba246204702ff"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "65c39c3e911b54f377c176101ca673aced1a8fc761d0787622e49d45240b05b2"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint/current-state/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3d6dae4e0b0d00a94ba34f759be47381128b6b32a44898f4e3af2def190d3990"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint/current-state/adoption.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "657579bcef4dd94355149b8a42d495ce681160242ef9f34afe49fc50f340f344"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint/current-state/internal-events-data-flows.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f4d77a1042efdaf98b412cc7f44e63fa4a9d4a7e97b2b8da78c23aa064e55175"
+    },
+    "content/handbook/engineering/data-engineering/analytics/analytics-instrumentation/technical-blueprint/current-state/service-ping-data-flows.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "eef2b56bb5ce5eb8bdbcefff001919b5189b2021553bdbb7769addec51f6e2da"
+    },
+    "content/handbook/engineering/data-engineering/analytics/optimize.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dfdea44398da483fdfeb8a66dc76727bf79efca90f294dd4040b44d221c2e5fd"
+    },
+    "content/handbook/engineering/data-engineering/analytics/platform-insights.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f4e4135a28c1fc714b84bb53735a6037fda0abed358f8d8f260fc754cba823be"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T02:53:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b4f1e691604c5a4b6d80f8649a0c190ae7e1a4d34fb7964fe800ae19f2739c9f"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-architecture/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fe0d8799be25e8fb075d3213788de8f070ebc8f1e636b587e59d5d359ae5bcaf"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-automation/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f9470f1e96028dfae2bcf31bcb77641be1eb1c21fdea511e252a9d5a02701b6b"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7ea8c5c8dd865f49edfc3842b50a388863db88bfbae69bca96ec3536a0456a11"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/activity-log.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d2abd2a3dbe09f31349736289312623918a30b80e46b8d9ae0867f799bcb1dce"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/citus.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dbb7ab54606dedce3e0e1a53c54667c5d0b47c7cf4b7d9c9535712533380385b"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/container-registry/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/fdw-sharding.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6a9a9faec16093dc90d98fdf124dd7c1a3205380d1bad6fd35edb6539a2e7472"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/gitlab-com-database.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8c47dcb06b37345cde2dc16c3738a32fb4026167c0f050f7bc2e9406b68210f9"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/issue-group-search-partitioning/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/lexicon.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9a7b04275c61b8a10b33f17cbd377fbe548a94677cc3c55cebd0d922cdac0036"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/multidb-bg-migrations/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/partitioning.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1bb33decad815d364bc008cbd3254d4da6f86e9110459a6ad826d704e2b10408"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/root-namespace-sharding/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/strategy.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0797731183e2cb674a266313de33a187922a5d8393168cd179f5842fb6a7b378"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/training-content/batched-background-migrations.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "35a087c2efbb64a27b7b48645f49f1066cf76d77d841f65aec61f0216b564303"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/training-content/index-performance.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e52f92e07840326bd456b1d2b961c97ebaa629c8cfa602f008e1792d82ea2fd2"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/training-content/introduction-to-database-review.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d887cc138914b59a4a181573cf75269519962e2af95077683224785072c8a298"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/training-content/query-plans.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b57506160a604fa0e7eda6bdbdf980d7851fefab2b37e42e4f79f78bbbfc3877"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/workload-analysis/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/identifying-database-issues.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-27T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5a2f91dc9376a6f5940a2e80076a731cc08fee5737971deef897c8266b016e31"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/postgresql-upgrade-cadence.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ae03a46cde7be4f1fb79c80198f042411884c440cef7b5cbadc002bd90d8c834"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/stable.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "858aba034c025c605a92d5713eca19ef52c6209e03f515a954cf519ed65954d8"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-health/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "85867b423294501c3fe464d952fcca3caaae3f92f262c5f88b0597e44d53bdbc"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-operations/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3493878f666ed52f03c7da5b746ac17a5648c6f0c93ad485f788d161ea9c2e34"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-operations/dbre-escalation-process.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "57f8e526eca1f8895f2cd5d7cd34d0377f6d6eb622cb0caf815d1a75fb511835"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/database-stakeholders.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c667eeddb99a9160d0c8c4ea1930707c0ca9cf5bbe9bc1c632c7c21c768b0a31"
+    },
     "content/handbook/engineering/deployments-and-releases/_index.md": {
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-28T04:23:44Z",
