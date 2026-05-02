@@ -15,12 +15,60 @@
       "model": "claude-opus-4-7",
       "input_hash": "1063f98f47e509f60e036d240b8ab971a73d7b06e797f64000bda0af9adb1ca6"
     },
+    "content/handbook/about/contributing.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:45:05Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "efc9d99b9a9437770a8b59b19a80fa0e083bc46a6d352d5405a387be965079cf"
+    },
+    "content/handbook/about/direction.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:45:05Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3b32982b5eb385c07d19d908a31a741af4a6410990f6f6404db124b2976038ab"
+    },
+    "content/handbook/about/editing-handbook/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:45:05Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "36781aeda921da57ff697d7750f52989e1dde4bf9c2299158c62cec62dd03ac7"
+    },
+    "content/handbook/about/editing-handbook/edit-team-page.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:45:05Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "700af2a3bc5fa36b2d53e73c33741c352fc43792d2fe78012de066aaa1307947"
+    },
+    "content/handbook/about/editing-handbook/practical-handbook-edits.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:45:05Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f21a1e2ea3a196324afe9f254c4b24246c5f9abe151b42d45ac4da66f3f11a51"
+    },
+    "content/handbook/about/escalation.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:59:08Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ec1874f3541b6c8e66f0a237210167ee55787fb58f6b1cc23612a37cbab8ad9c"
+    },
     "content/handbook/about/handbook-usage.md": {
       "path": "content/handbook/about/handbook-usage.md",
       "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
       "translated_at": "2026-04-19T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "1558af072d2ae2245b0354a24efd87c7b7cc97c98914cc2e7472cbbb2c74c64c"
+    },
+    "content/handbook/about/maintenance.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:59:08Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "28e4e2508214fdb60ac5db492cda64a7d9617c8fc3d2159b54bfb72efed988f5"
+    },
+    "content/handbook/about/style-guide.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T04:59:08Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0ba9ff4e833d04220c6bacb231961895c63b29d7ffdb6ef176b33ec508f1a550"
     },
     "content/handbook/board-meetings/_index.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
