@@ -175,6 +175,104 @@
       "translated_at": "2026-04-29T12:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "3ec2fd6ce11b9f11923b46b4582fadb500b51012a46b5df6bfaa8f26ecd805c7"
+    },
+    "content/handbook/hiring/_index.md": {
+      "path": "content/handbook/hiring/_index.md",
+      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2fdec9527245ad7d4c3dd1871e57925f4ac928a20ae03ad4fbcf402a7ea7d60f"
+    },
+    "content/handbook/hiring/candidate-faq/_index.md": {
+      "path": "content/handbook/hiring/candidate-faq/_index.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "78154a94ba0131842050b075d9dcd11f410c22a4433ab7986932a2dcd3034d1d"
+    },
+    "content/handbook/hiring/candidate-faq/recruitment-privacy-policy.md": {
+      "path": "content/handbook/hiring/candidate-faq/recruitment-privacy-policy.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f73433c8c9403f74b9cbef49555bfa818558e63275535fa47e49e681ccbef513"
+    },
+    "content/handbook/hiring/conducting-a-gitlab-interview.md": {
+      "path": "content/handbook/hiring/conducting-a-gitlab-interview.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e6171394dfe145c5328a1107fbdbdcdda31ce02d48d410035f7ade6b9e409595"
+    },
+    "content/handbook/hiring/interviewing/_index.md": {
+      "path": "content/handbook/hiring/interviewing/_index.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9f41ec6246011b829c6bba945adbdbd3c9c38886885433e0a5bb405bcb94fed3"
+    },
+    "content/handbook/hiring/interviewing/customer-support-interviewing.md": {
+      "path": "content/handbook/hiring/interviewing/customer-support-interviewing.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "03436166fbb4d9d12d5ab2df54cf2210238aeec0f24e2463b72a379b46d9cb17"
+    },
+    "content/handbook/hiring/interviewing/infrastructure-interview.md": {
+      "path": "content/handbook/hiring/interviewing/infrastructure-interview.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "42266547b95b834699f3b9879a92bb3932251446ada3a1318802effba81e8bec"
+    },
+    "content/handbook/hiring/interviewing/panel.md": {
+      "path": "content/handbook/hiring/interviewing/panel.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4456b739dc127e6be0b6290731e42c1dfc440b86acfb1630509cfc00eb2b0441"
+    },
+    "content/handbook/hiring/interviewing/technical.md": {
+      "path": "content/handbook/hiring/interviewing/technical.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6b5d93d5a2e98ce154d413a7794cfd89e26544ddf8c4e329d3725bbb4f5bd369"
+    },
+    "content/handbook/hiring/job-description-library.md": {
+      "path": "content/handbook/hiring/job-description-library.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "530cf56530a7460450add99115d4f3fd1a92627a53a9c788594633ffae50d064"
+    },
+    "content/handbook/hiring/referral-operations.md": {
+      "path": "content/handbook/hiring/referral-operations.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f2bf0f3e1b79690c2ea019cc88ab07c9716d2dc5c15a74f9805004a8166c2bbe"
+    },
+    "content/handbook/hiring/referral-process.md": {
+      "path": "content/handbook/hiring/referral-process.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b0e3ed9e6bc85fd70924fdafc184510e27b0782bb3547c9dd11a1e1395f25d4d"
+    },
+    "content/handbook/hiring/talent-acquisition-framework/coordinator.md": {
+      "path": "content/handbook/hiring/talent-acquisition-framework/coordinator.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T08:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8541c41093cfe2bb38a2c7af13d17ab8f03ef7e38cd7d5e161235e21364ed09f"
+    },
+    "content/handbook/hiring/talent-acquisition-framework/internal-hiring-process.md": {
+      "path": "content/handbook/hiring/talent-acquisition-framework/internal-hiring-process.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "82289ec19635c9b5cc56ba32c4f81a59eb107d44c91898e6f4d0edc43b131fd8"
     }
   }
 }
