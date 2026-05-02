@@ -2101,6 +2101,559 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "429874d7e7f6b148e528a8e09e1c3c7ca496025271de8c2e64d5abb18371ba2b"
     },
+    "content/handbook/marketing/developer-relations/_index.md": {
+      "path": "content/handbook/marketing/developer-relations/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eda9aecfe3ca6fe5b49a4af7d8d1f47a0362d61e1af75949a88d6c0a93124a22"
+    },
+    "content/handbook/marketing/developer-relations/community-pathway.md": {
+      "path": "content/handbook/marketing/developer-relations/community-pathway.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a820507c9c242d1dc6df89e39445c80d56f59a6f76cc57c58b2954c4168862ba"
+    },
+    "content/handbook/marketing/developer-relations/content-effectiveness.md": {
+      "path": "content/handbook/marketing/developer-relations/content-effectiveness.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8f96de555378b41d02e317d93942f5a52e3b1122e70d64828ee7d683511d779a"
+    },
+    "content/handbook/marketing/developer-relations/content-request.md": {
+      "path": "content/handbook/marketing/developer-relations/content-request.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "abdd28552850360a9404d4109672859234d08bdbf4bd351e26f0298a994203b5"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/_index.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2cfb96167aa4427c93b098eba803e2145e3f54edacd5ede5e5629d2dbe93583c"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/calendar.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/calendar.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bea05c5a3070d1bb55e27a2664dc23aedf0d1e0bc7eb375a5c65d7c46ee3cb21"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/cfps.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/cfps.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "af872a3ca5c2fe1dd1e2a1dd93383124724ca0f87a751bf72d22e3c1ec08f213"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/community-response.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/community-response.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a413438ecece8d919ea66b60581f12ef089a2581442f6fde2679bbe4cee7d0ee"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/consultancy.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/consultancy.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d585f208a75e864d073429402f309682d2aeedc67a3b221d3c34a8a4b7926038"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/content.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/content.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8943af95b990885fddd347efd4b5959cddf67edb71e1eca9a18cf2acd4e05156"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "87b169957639face6d41a6f4272532dadb6ed875109393f8520d0097faadaaa1"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d7e2187e27c26cc2f236a7d9f8bb1b5bdc82f8e1cbae080881e8b85ec3d133ee"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/learn-developer-advocacy.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/learn-developer-advocacy.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1de6df4c79e14708869386ae4142e9440a7d890314f9e382b5bad6392ab8a176"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/mentoring-coaching.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/mentoring-coaching.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b22f38a49f351b788758214eec7c5848caa32969882b313fb3b2e95f8b5abc66"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/oss-contributions.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/oss-contributions.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "36a2676ecd96dafff5278fc9a2b214bab6831717a10bb750a93033bae4c349fd"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/projects.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/projects.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0c1f94cb7e61181a29e57cc3acca04fcdafff4311392c0fb6297d5d17a5c062b"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/social-media.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/social-media.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "122961af69d15c5a675626e596a3e7305c3f6b53555177e42d1bc1a233009bed"
+    },
+    "content/handbook/marketing/developer-relations/developer-advocacy/workflow.md": {
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/workflow.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ff541f2714f0e34f941ad0d2e651d556cf05da5883d8ab44c5f98883d2c9a835"
+    },
+    "content/handbook/marketing/developer-relations/engineering/_index.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0567ca919eb9eda941aafa131529ac15be8d69e6d9f950f0207b377d557e5fa7"
+    },
+    "content/handbook/marketing/developer-relations/engineering/community-contributors-workflows.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/community-contributors-workflows.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f117e356fc980cdad71509ce18c571bcfba5ee0819132772ae29f91010a01344"
+    },
+    "content/handbook/marketing/developer-relations/engineering/community-hackathons.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/community-hackathons.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b43c4a668318cdc0de24e892365de5a3cb48e2d623ebb828f8727921c8a1823f"
+    },
+    "content/handbook/marketing/developer-relations/engineering/community-pairing-sessions.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/community-pairing-sessions.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "70da4c1da751e4bb776f7b34c51f16f2a9b63093fb3ef16dda3de140cb49bb73"
+    },
+    "content/handbook/marketing/developer-relations/engineering/core-team.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/core-team.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b8cac93c6c1df2a30e82b9db625f3f1785770e87ab3d72fc869d797491aa4f74"
+    },
+    "content/handbook/marketing/developer-relations/engineering/innovation-pitch-competition.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/innovation-pitch-competition.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e225dda8e8a566ce338b9774a1eca2b0fa5d7f1a432e56e1383cb9a50afa52ad"
+    },
+    "content/handbook/marketing/developer-relations/engineering/merge-request-coach-lifecycle.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/merge-request-coach-lifecycle.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53dcc89f84f9cd0a99dc4d56d08f471c4d2d92287e7a64386359ddd56d44b3da"
+    },
+    "content/handbook/marketing/developer-relations/engineering/metrics.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/metrics.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5222d283374cb2d6c3cc8728c7c61ab174310d3e3a90c8199fdc66d0748b18bc"
+    },
+    "content/handbook/marketing/developer-relations/engineering/notable-contributor-process.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/notable-contributor-process.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "79aef08c37c86d714b191acc214d945b691d5d1c4d61fd5362812c056ff920ad"
+    },
+    "content/handbook/marketing/developer-relations/engineering/showcase-your-contributions/_index.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/showcase-your-contributions/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ae47faf313e43df46e606a3da846d4109ff81560b955644e3e7c5bec3d143a04"
+    },
+    "content/handbook/marketing/developer-relations/engineering/showcase-your-contributions/linkedin.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/showcase-your-contributions/linkedin.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "25a907468d0f9b5e4e796e2d9a85805f12fa49c2a8b2066ff20f5ac2af5461fd"
+    },
+    "content/handbook/marketing/developer-relations/engineering/showcase-your-contributions/stats-banner.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/showcase-your-contributions/stats-banner.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "51ffe48f6fc0c38017047603cb6323fe04583b45a55522b2c3a7b678e22d8d01"
+    },
+    "content/handbook/marketing/developer-relations/engineering/templates/email-templates.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/templates/email-templates.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "73955d376d5177592235e5537fdf856a17ad50637cb1720969fc8a6a2764c853"
+    },
+    "content/handbook/marketing/developer-relations/engineering/user-journey.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/user-journey.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ee7849a4b96355840bb5e051bb3d9308585872b6450b79da9dffed15dbf6ba9"
+    },
+    "content/handbook/marketing/developer-relations/events.md": {
+      "path": "content/handbook/marketing/developer-relations/events.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "964dc8ebd7a82e17a60eaedca705f10cfd4656d214ead2fef4c43d12318a7159"
+    },
+    "content/handbook/marketing/developer-relations/meetup-checklist/index.md": {
+      "path": "content/handbook/marketing/developer-relations/meetup-checklist/index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3375ce2e601189a95d3d79eef5cb5bf0876ae33340a87604bd18edd2e43a9411"
+    },
+    "content/handbook/marketing/developer-relations/performance-indicators.md": {
+      "path": "content/handbook/marketing/developer-relations/performance-indicators.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ce606c97d63b8ed675f43536508115a315ba5ba050b00fa6968f38de349cb6cc"
+    },
+    "content/handbook/marketing/developer-relations/programs/_index.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "43b1fdaa6cd0f0c8d0ec43fe899b9903259d9bd90c36426b88ea4bb3c68dea57"
+    },
+    "content/handbook/marketing/developer-relations/programs/cocreate/_index.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/cocreate/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c14e1315b048699b933fa09dbdc3321b3233d227ff3e7362fcfcff7247a830c8"
+    },
+    "content/handbook/marketing/developer-relations/programs/cocreate/license-compatibility-guide.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/cocreate/license-compatibility-guide.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "39220c1c59b50270fda54c4591d2d96fe1bece32a725bbfb0a5f824a1e690a27"
+    },
+    "content/handbook/marketing/developer-relations/programs/cocreate/on-site-engineer-guide.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/cocreate/on-site-engineer-guide.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4e8361001812702e9ae1c46241f14a365ab0839c93be65b5b5080602e75522e9"
+    },
+    "content/handbook/marketing/developer-relations/programs/cocreate/plan-fy26q1.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/cocreate/plan-fy26q1.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d88f9758368fd4055eebb98ecd37b6bfbeb513e410320532649d9b6665f8ab74"
+    },
+    "content/handbook/marketing/developer-relations/programs/cocreate/success-metrics.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/cocreate/success-metrics.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ffb99c83b335387d47c251c5013023bc4c32d0f036d8deb1c9a745951b8f1750"
+    },
+    "content/handbook/marketing/developer-relations/programs/contributors-program.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/contributors-program.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e1ac410d7f1a7183fde67eb6d7c8208fbe3e1abff0426199e84cdf89f6295588"
+    },
+    "content/handbook/marketing/developer-relations/programs/education-program/_index.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/education-program/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "514efceba02a07a0c1b1e76eba9fc9e4011c9eafeb3099b438685fe757c7b607"
+    },
+    "content/handbook/marketing/developer-relations/programs/education-program/edu-program-workflows.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/education-program/edu-program-workflows.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1c1218d3451d8be85141640f94a912d91b47425ee18b4a98fbb163f614dd145c"
+    },
+    "content/handbook/marketing/developer-relations/programs/education-strategy.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/education-strategy.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8eb7b5ef1de08173da7212e1f886393ca21780b6706cc68c542841b073a6b2ef"
+    },
+    "content/handbook/marketing/developer-relations/programs/open-source-program/_index.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/open-source-program/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6396097b8ac1aec5eb24488724317a436a1c281ac80196c63734e3a1e9cef64f"
+    },
+    "content/handbook/marketing/developer-relations/programs/open-source-program/oss-program-workflows.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/open-source-program/oss-program-workflows.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bbb7c7701eb9a93072e6914da93b4be835db337f50e7a12242cc5ab73ba756ea"
+    },
+    "content/handbook/marketing/developer-relations/programs/operational-guidelines.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/operational-guidelines.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8b8a2ded193db50a36e0d042317bd5ce3bf6cae8bfb42ae77bb73f05ee751f5b"
+    },
+    "content/handbook/marketing/developer-relations/programs/program-resources.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/program-resources.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cc6af450954f48415f1f912ea8078440398eefb0739c840ff4bc6a6a69651c67"
+    },
+    "content/handbook/marketing/developer-relations/programs/strategic-plans/_index.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/strategic-plans/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6fcdc6a9d7d3c7a19c7ecc16cc9c09e0c6d87a5d60b77e3cfb9fe95a8de0b4fb"
+    },
+    "content/handbook/marketing/developer-relations/programs/strategic-plans/contributor-program-unification.md": {
+      "path": "content/handbook/marketing/developer-relations/programs/strategic-plans/contributor-program-unification.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b041b79e6fda46d0f074267b2825e84929ccdb9f843c2346a54001d02c8ca9c5"
+    },
+    "content/handbook/marketing/developer-relations/technical-marketing/_index.md": {
+      "path": "content/handbook/marketing/developer-relations/technical-marketing/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c5bafdbf247b21973e5de249de45c14db8439f3f63fa5385cafb36a284c6ec71"
+    },
+    "content/handbook/marketing/developer-relations/technical-marketing/assets2stakeholders.md": {
+      "path": "content/handbook/marketing/developer-relations/technical-marketing/assets2stakeholders.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b8cecbd716f123d443693800d1f02e02abb37a9fa733a623e19c66fcd6c70313"
+    },
+    "content/handbook/marketing/developer-relations/technical-marketing/content-library.md": {
+      "path": "content/handbook/marketing/developer-relations/technical-marketing/content-library.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0a6b0f0b3eb5a94cc13b5c91aed3b0054ae8346a05c616843d5f04882f7178ce"
+    },
+    "content/handbook/marketing/developer-relations/technical-marketing/event-booth-questions.md": {
+      "path": "content/handbook/marketing/developer-relations/technical-marketing/event-booth-questions.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "924c12f9c80c8fd30b9c1a6d689250c26845a721215202e27c6652141cb50f0f"
+    },
+    "content/handbook/marketing/developer-relations/technical-marketing/gl-com-demo-logins.md": {
+      "path": "content/handbook/marketing/developer-relations/technical-marketing/gl-com-demo-logins.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5acbbfec5e37a802974b2cafa1e784bf31328ed8d4f7f05cb74a2ea88eadf307"
+    },
+    "content/handbook/marketing/developer-relations/technical-marketing/howto/_index.md": {
+      "path": "content/handbook/marketing/developer-relations/technical-marketing/howto/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9642ff9877e5bd121d8d1cd9d0970e9cb66fb04d7ff0478f531d172d093ece29"
+    },
+    "content/handbook/marketing/developer-relations/technical-marketing/howto/add-ctas-to-learn-videos.md": {
+      "path": "content/handbook/marketing/developer-relations/technical-marketing/howto/add-ctas-to-learn-videos.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fd63ca3785ad5df56457bad42fb9696ee7265acd433e852aad6fd253188eb9b7"
+    },
+    "content/handbook/marketing/developer-relations/technical-marketing/howto/autogen-comparison-infographics.md": {
+      "path": "content/handbook/marketing/developer-relations/technical-marketing/howto/autogen-comparison-infographics.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e7258c4696acc180636c9d66de2449c7d7a8e687899a4fc608fbe797fcd20b9f"
+    },
+    "content/handbook/marketing/developer-relations/technical-marketing/howto/create-and-publish-demos.md": {
+      "path": "content/handbook/marketing/developer-relations/technical-marketing/howto/create-and-publish-demos.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0bcab31ddea639f514c51127c15ab05194e33543754091010c9fadfaf0f7f9ec"
+    },
+    "content/handbook/marketing/developer-relations/technical-marketing/howto/eks-cluster-for-demo.md": {
+      "path": "content/handbook/marketing/developer-relations/technical-marketing/howto/eks-cluster-for-demo.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4088a89828207e5c7cfe9e5c5158818acc1287e6ae3644d0d2f1f25433474c6e"
+    },
+    "content/handbook/marketing/developer-relations/technical-marketing/howto/publish_video_on_youtube.md": {
+      "path": "content/handbook/marketing/developer-relations/technical-marketing/howto/publish_video_on_youtube.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7230d21d45df52c50f7a4b9056706f00a8207c9f0729b1d1b5bb837f0e0b02b6"
+    },
+    "content/handbook/marketing/developer-relations/technical-marketing/making_better_videos.md": {
+      "path": "content/handbook/marketing/developer-relations/technical-marketing/making_better_videos.md",
+      "upstream_sha": "6b2970dac4d9078a5a79c285a6ee08817ecbd954",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "149c5aa34ae8e346cdc18214e85a5ad8fec9902095a0b95f369f5b4d070a225e"
+    },
+    "content/handbook/marketing/developer-relations/utm-strategy.md": {
+      "path": "content/handbook/marketing/developer-relations/utm-strategy.md",
+      "upstream_sha": "6b2970dac4d9078a5a79c285a6ee08817ecbd954",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "67443f1c62a33ebaa0383affab3d3803901df2c298f043c128020941661a4988"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/_index.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/_index.md",
+      "upstream_sha": "6b2970dac4d9078a5a79c285a6ee08817ecbd954",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b75662a8251233a66bded09a3706a22c72dec470821988fcd6366ca2c8b3dd82"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/cloud-resources.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/cloud-resources.md",
+      "upstream_sha": "6b2970dac4d9078a5a79c285a6ee08817ecbd954",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0eb850f81382def851634c8256fa00d176504f4088eda2420b9906c25cc03c86"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/code-of-conduct-enforcement.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/code-of-conduct-enforcement.md",
+      "upstream_sha": "6b2970dac4d9078a5a79c285a6ee08817ecbd954",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9f313470e02a914dbc4847d4af2feda41217def819b236a5145a964da3ab0b7f"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/common-room.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/common-room.md",
+      "upstream_sha": "6b2970dac4d9078a5a79c285a6ee08817ecbd954",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3412536b3130bb1e97b9a3242b0aca207eb8d42b02c1d19f2f919d012b439191"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/content-review.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/content-review.md",
+      "upstream_sha": "6b2970dac4d9078a5a79c285a6ee08817ecbd954",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "725dd7dd2c1759b64a6b9676504e47d80ef5ff1d18e597b48db184bd2ff89c36"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/discord.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/discord.md",
+      "upstream_sha": "6b2970dac4d9078a5a79c285a6ee08817ecbd954",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e88c1d5584d65b55f988d38b4965110df2f1849cda168adb7d3659ba1814b3ea"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/e-mail.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/e-mail.md",
+      "upstream_sha": "6b2970dac4d9078a5a79c285a6ee08817ecbd954",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b660549032b7da7c7dfbcb7249577c152f56352c9e033f1e1337b9c2ded38ecf"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/forum.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/forum.md",
+      "upstream_sha": "6b2970dac4d9078a5a79c285a6ee08817ecbd954",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8368195d46fcd117f324381449dbc0e943cd43686d8dbcd2930f9f7e430bc38e"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/reddit.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/reddit.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c40f0a340b96f755fa44b6035b421a2bf74e1111f7fe4ae648737d9367317a27"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/stackoverflow.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/stackoverflow.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "511cbf8ab159565f009ae86bb43d818172364a0a92da218aad817a3cc059990c"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/swag.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/swag.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "855c36fedc1a19c517aac778aed9c45811e0ca48cc55c4d1554e7f7beff2dc7b"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/team-budgets.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/team-budgets.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a1b43c1d5c1e1612043e2520ee0d5f09405d721c94332cf70906546074881580"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/twitter.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/twitter.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a1d703cd0d94ae34cba8b1815fd7a8b9d29561445906289409aa63dce764617"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/workato.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/workato.md",
+      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
+      "translated_at": "2026-05-01T14:48:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d2849dccf3739ace78ecd0f89f4e9f2f6287e0797c8a901a45c0b136b54cb914"
+    },
+    "content/handbook/marketing/developer-relations/workflows-tools/zapier.md": {
+      "path": "content/handbook/marketing/developer-relations/workflows-tools/zapier.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7fbc34fccebf694bcb01891785d26a61d6116c96aef0a96ecc1037bb7c4dede8"
+    },
     "content/handbook/marketing/digital-experience/_index.md": {
       "path": "content/handbook/marketing/digital-experience/_index.md",
       "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
