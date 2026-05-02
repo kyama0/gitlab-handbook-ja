@@ -512,6 +512,216 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "3ec2fd6ce11b9f11923b46b4582fadb500b51012a46b5df6bfaa8f26ecd805c7"
     },
+    "content/handbook/engineering/workflow/_index.md": {
+      "path": "content/handbook/engineering/workflow/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6f6c7c8054328a3144db7556a9a6f5f2a85db308cb60aa757f3640500fbececa"
+    },
+    "content/handbook/engineering/workflow/ai-assisted-development.md": {
+      "path": "content/handbook/engineering/workflow/ai-assisted-development.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "191f1f2784d8d190a67d6382749ae76fb72e907402ff83abc8aaf7e1aef41208"
+    },
+    "content/handbook/engineering/workflow/automation.md": {
+      "path": "content/handbook/engineering/workflow/automation.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9c835987dd08d90f0bfc2d10ea9cd2c869f3d03b82f66352142aca609a078ee9"
+    },
+    "content/handbook/engineering/workflow/code-review.md": {
+      "path": "content/handbook/engineering/workflow/code-review.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "54f63850cd19c9d93e7cab3ada24557142ee53b0315a585f80efe9c8b547bed4"
+    },
+    "content/handbook/engineering/workflow/cross-functional-prioritization.md": {
+      "path": "content/handbook/engineering/workflow/cross-functional-prioritization.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "114f3509c0abf3f79fc0461a100cfb795cd36feb775d72a1283d71dd64ba3a11"
+    },
+    "content/handbook/engineering/workflow/demos.md": {
+      "path": "content/handbook/engineering/workflow/demos.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bc9ffa07df483ce5c3f450ef866211e1148bc75c07d9267ac69f87732429ce73"
+    },
+    "content/handbook/engineering/workflow/developer-onboarding.md": {
+      "path": "content/handbook/engineering/workflow/developer-onboarding.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "84104677533994ae2acdaac6d8d7b1e8e2c671f0202c972ad66ffd8036c4eb4d"
+    },
+    "content/handbook/engineering/workflow/development-onboarding/_index.md": {
+      "path": "content/handbook/engineering/workflow/development-onboarding/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f0be593e011b098ee805f14ea3bc3c9e1d315699b12f3d276f5143010297174e"
+    },
+    "content/handbook/engineering/workflow/development-onboarding/manager.md": {
+      "path": "content/handbook/engineering/workflow/development-onboarding/manager.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "140bb93d3027faeffabc6d7f1b387c9e7c83cac639bdf553f62d16efaf7a7f6e"
+    },
+    "content/handbook/engineering/workflow/development-processes/_index.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "195ca2d6d4be34df6c55e8256c51c0592188d3441fe2dd796d5e8c708431f7d5"
+    },
+    "content/handbook/engineering/workflow/development-processes/follow-the-sun-coverage.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/follow-the-sun-coverage.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "78a7cd7302db5fcfb32dfba101f6a5af9b13797537a4f7bb4a3458f7811687b2"
+    },
+    "content/handbook/engineering/workflow/development-processes/hiring-contractors.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/hiring-contractors.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cea8d9b6f4af5ab7c3e997e9d70c5830892b6e8fa4ff3df38114e7c4c7b55b53"
+    },
+    "content/handbook/engineering/workflow/development-processes/infra-dev-escalation/_index.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/infra-dev-escalation/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fb6378fa2b0f48bb92b70cad92fb0000a4738632eb94c5119757c68fa69abbfe"
+    },
+    "content/handbook/engineering/workflow/development-processes/infra-dev-escalation/process/index.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/infra-dev-escalation/process/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "451c11fc67085bd21d3bafd277b1122400cf8775f157419deded6b03066a303e"
+    },
+    "content/handbook/engineering/workflow/development-processes/rollout-plans.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/rollout-plans.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7b20d6ead5e2055f098419f554a2b9254e60027e6b8033482a997edd2a5ad7b2"
+    },
+    "content/handbook/engineering/workflow/development-processes/talent-assessment.md": {
+      "path": "content/handbook/engineering/workflow/development-processes/talent-assessment.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f59a4018b555f3e58f5cfddfa963818bf094e06976cef601dbe360daaf3925ab"
+    },
+    "content/handbook/engineering/workflow/duo-first-development.md": {
+      "path": "content/handbook/engineering/workflow/duo-first-development.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a56f545b75b78651bdf6e35232087c80b80dddf213322b4bedf30e7d4dfdca32"
+    },
+    "content/handbook/engineering/workflow/engineering-comms/_index.md": {
+      "path": "content/handbook/engineering/workflow/engineering-comms/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4ddc646df6b0b70cdbcc15371f3ce00bd532803c76199ee2606f348f061dc291"
+    },
+    "content/handbook/engineering/workflow/engineering-comms/engineering-poster-boards.md": {
+      "path": "content/handbook/engineering/workflow/engineering-comms/engineering-poster-boards.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d2d787e49393f6a99b38744f4bd7e50851b55ed1669a8992f85003962591698a"
+    },
+    "content/handbook/engineering/workflow/engineering-innovation.md": {
+      "path": "content/handbook/engineering/workflow/engineering-innovation.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e248dbed150968f337da9b3b69e01697554b64fb3f652748098f1991e55d8c5c"
+    },
+    "content/handbook/engineering/workflow/fast-boot.md": {
+      "path": "content/handbook/engineering/workflow/fast-boot.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d7f8c63665ee103763d2f2682f664e50f368ddda5ac92b6b6e6275427cd586b1"
+    },
+    "content/handbook/engineering/workflow/gitlab-repositories.md": {
+      "path": "content/handbook/engineering/workflow/gitlab-repositories.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "240eaf73f2639216cf49e680b23293faa8bb23d4edf8b333de31c05290c13124"
+    },
+    "content/handbook/engineering/workflow/hiring.md": {
+      "path": "content/handbook/engineering/workflow/hiring.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c6148b1df4158bfa3c7b64ff06a078d3d4223b49a002fbc33d0cbe5882d10b53"
+    },
+    "content/handbook/engineering/workflow/iteration.md": {
+      "path": "content/handbook/engineering/workflow/iteration.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "97044ad0e9097aa4ff2da636bfec8cc5bdacddfecff641c742bbf67d4c1e6d92"
+    },
+    "content/handbook/engineering/workflow/related-workflows/index.md": {
+      "path": "content/handbook/engineering/workflow/related-workflows/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "eb31ebe4f45c9bfd107b359b217a82471129ca71a5f439f9ebaffaad195416de"
+    },
+    "content/handbook/engineering/workflow/release-feature-determination-workflow.md": {
+      "path": "content/handbook/engineering/workflow/release-feature-determination-workflow.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c3eff9be36d6113f1edb4bd7301b8785a8746c1d081df0db18399e9330bda2e2"
+    },
+    "content/handbook/engineering/workflow/reviewer-values.md": {
+      "path": "content/handbook/engineering/workflow/reviewer-values.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "859c4026e1a07df291115252c1a8b5427b1b1063c5db4a8981bed2a4ae8834de"
+    },
+    "content/handbook/engineering/workflow/root-cause-analysis.md": {
+      "path": "content/handbook/engineering/workflow/root-cause-analysis.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bb08e8bd183c36cefae2fe1907e4c6e68c0546d4d626c75225c7a8d56da2e885"
+    },
+    "content/handbook/engineering/workflow/strategic-priority-codes.md": {
+      "path": "content/handbook/engineering/workflow/strategic-priority-codes.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c17ec35207d71761fa7ee6a9f61b8da1e633e95f63e3aeb4705e0dc1b81fdcee"
+    },
+    "content/handbook/engineering/workflow/unplanned-upgrade-stop.md": {
+      "path": "content/handbook/engineering/workflow/unplanned-upgrade-stop.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4a863ea1de445392106c9a23317178bb38baada9f67b33f790bdfab538625b84"
+    },
     "content/handbook/entity/_index.md": {
       "path": "content/handbook/entity/_index.md",
       "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
