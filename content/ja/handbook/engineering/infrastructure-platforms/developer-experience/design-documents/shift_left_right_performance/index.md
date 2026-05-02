@@ -1,0 +1,122 @@
+---
+title: シフトレフトとライトのパフォーマンス
+status: proposed
+creation-date: "2024-12-13"
+authors: [ "@AndyWH" ]
+coaches: [ ]
+dris: [ "@ksvoboda" ]
+owning-stage: ""
+participating-stages: []
+toc_hide: true
+upstream_path: /handbook/engineering/infrastructure-platforms/developer-experience/design-documents/shift_left_right_performance/
+upstream_sha: 6a459a3ca969603754a3b5133342edb804d3012c
+translated_at: "2026-04-28T17:23:43Z"
+translator: claude
+stale: false
+---
+
+<!-- Design Documents often contain forward-looking statements -->
+<!-- vale gitlab.FutureTense = NO -->
+
+<!-- This renders the design document header on the detail page, so don't remove it-->
+
+<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
+このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
+</div>
+
+<div class="overflow-x-auto my-4">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-100 text-left">
+<th class="px-3 py-2 border border-gray-300">Status</th>
+<th class="px-3 py-2 border border-gray-300">Authors</th>
+<th class="px-3 py-2 border border-gray-300">Coach</th>
+<th class="px-3 py-2 border border-gray-300">DRIs</th>
+<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
+<th class="px-3 py-2 border border-gray-300">Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">proposed</span></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/AndyWH" class="text-blue-600 hover:underline">@AndyWH</a></td>
+<td class="px-3 py-2 border border-gray-300"></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/ksvoboda" class="text-blue-600 hover:underline">@ksvoboda</a></td>
+<td class="px-3 py-2 border border-gray-300"></td>
+<td class="px-3 py-2 border border-gray-300">2024-12-13</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## サマリー
+
+パフォーマンスはソフトウェア品質の重要な側面であり、ユーザー満足度とビジネスの成功に直接影響します。私たちはパフォーマンステストが開発の最終ステップではなく、ソフトウェアライフサイクル全体の不可欠な部分であると認識しています。本ブループリントは、パフォーマンステストに対する包括的なアプローチを概説します。これは従来の負荷テストを超え、幅広いテクニックと実践を包含しています。
+
+私たちは、継続的なパフォーマンス意識の文化を生み出すため、パフォーマンステストを左（開発の早い段階）にも右（本番監視）にもシフトすることを信じています。ユニットテストから本番監視まで、すべての段階でパフォーマンスの考慮事項を統合することで、パフォーマンス問題を早期に特定・対処し、システムをプロアクティブに最適化し、成長・進化を続ける中でユーザーに一貫して高性能な製品を提供することを目指しています。
+
+このガイドはリソースとして機能し、パフォーマンスエンジニアリングのための戦略、ツール、ベストプラクティスを紹介します。卓越性へのコミットメントと、GitLab が成長・進化し続ける中で速く、応答性が高く、スケーラブルであり続けることを保証するための革新的なアプローチを示しています。
+
+## 動機
+
+私たちは[リファレンスアーキテクチャ](https://docs.gitlab.com/ee/administration/reference_architectures/)に対する負荷テストのために [GPT](https://gitlab.com/gitlab-org/quality/performance) などのツールを効果的に使用してきました。[大規模なデータセットを使用したデータベースパフォーマンステスト](https://gitlab.com/gitlab-org/gitlab/-/issues/434465)などの経験を通じて、開発プロセスにおいてパフォーマンステストを左にシフトすることの利点が実証されています。
+
+より幅広いパフォーマンスエンジニアリングの実践を採用することで、ライブ環境で問題として表面化する前にパフォーマンスの懸念をより積極的に解決できます。このアプローチは、優れたユーザー体験を提供し、成長し続ける中で GitLab のスケーラビリティを維持するというコミットメントと一致しています。
+
+### 目標
+
+* [ハンドブックページ](/handbook/engineering/testing/performance-tools/)でのパフォーマンスエンジニアリング実践に関するより完全なドキュメント
+* すべてのエンジニアリングチームにこれらの実践を採用するための計画の策定
+* ソフトウェア開発ライフサイクル全体でパフォーマンス意識の文化を醸成
+* パフォーマンス問題の早期検出と解決の改善
+* GitLab の全体的なパフォーマンスとスケーラビリティの強化
+* GitLab でのパフォーマンス問題の優先順位付けを標準化し、チームによって異なる「本番インシデントへの対応」という最低基準を撤廃
+* 開発プロセスの早期にパフォーマンスを定着させる
+
+### 非目標
+
+* パフォーマンスが別のチームが所有し推進する責任になること（各チームが自身のパフォーマンス目標のオーナーシップを持つべき）
+* パフォーマンスが進捗するためにチェックする必要があるチェックリスト/ゲートキーパー項目として見られること
+
+## 提案
+
+提案するシフトレフトとライトのパフォーマンステスト戦略には以下が含まれます:
+
+1. シフトレフトのアプローチ:
+   * ユニットテスト: Ruby 向けの benchmark-ips などのツールを使用したパフォーマンスに焦点を当てたユニットテストの実装。
+   * 早期プロファイリング: ruby-prof などのプロファイリングツールを開発パイプラインに統合。
+   * 継続的なパフォーマンス意識: 開発全体にわたるインストルメンテッドテストと可観測性ツールの使用。
+
+2. シフトライトのアプローチ:
+   * 負荷テスト: GitLab Performance Tool（GPT）を使用した負荷テストの継続と強化。
+   * 本番監視: 本番環境でのリアルタイムの可観測性とユーザー中心のパフォーマンスメトリクスの実装。
+   * カオスエンジニアリング: システムの回復力をテストするための制御された障害の導入。
+
+3. ツールとテクニックの採用:
+   * ユニットレベルのパフォーマンステストのためのモジュールの採用を推進
+   * プロファイリングツールを開発パイプラインに統合
+   * 継続的なパフォーマンス監視のための可観測性ツールの実装
+
+4. トレーニングと文化:
+   * パフォーマンステストテクニックに関するエンジニア向けトレーニングプログラムの開発
+   * 各開発段階でのパフォーマンスベンチマークと目標の確立
+   * チーム間でパフォーマンスインサイトを共有するシステムの作成
+
+## 設計と実装の詳細
+
+## 代替ソリューション
+
+1. 現在の GPT 中心のアプローチを維持する:
+   * 長所: 慣れ親しんだプロセス、初期の労力が少ない
+   * 短所: 早期のパフォーマンス最適化の機会を逃し、コストのかかる後期の修正につながる可能性がある
+
+2. 本番監視のみに焦点を当てる:
+   * 長所: 実世界のデータ、開発プロセスへの影響が少ない
+   * 短所: プロアクティブではなくリアクティブ、ユーザーに影響するインシデントの可能性がある
+
+3. シフトライトなしのシフトレフトのみを実装する:
+   * 長所: 早期の問題検出、潜在的に開発が速くなる
+   * 短所: 実世界のパフォーマンス問題を見逃す可能性があり、包括的なアプローチが不足している
+
+提案するシフトレフトとライトの戦略は、これらの代替案の制限に対処する均衡のとれた包括的なパフォーマンステストアプローチを提供します。
