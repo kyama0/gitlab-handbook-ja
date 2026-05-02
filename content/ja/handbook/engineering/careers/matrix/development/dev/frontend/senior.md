@@ -21,7 +21,7 @@ stale: false
 
 ---
 
-### リーダーシップコンピテンシー
+### リーダーシップコンピテンシー {#leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/senior-leadership-competency.md (no localized version under content/ja/) -->
@@ -30,7 +30,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/development-senior-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### テクニカルコンピテンシー
+### テクニカルコンピテンシー {#technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/senior-technical-competency.md (no localized version under content/ja/) -->
@@ -46,7 +46,7 @@ stale: false
 - GitLab のコードベースにおける低速・非効率なフロントエンド実装を特定し対処する
 - サービスや技術スタックの複数レベルにまたがるプロダクション問題をデバッグする
 
-### バリューズへの整合
+### バリューズへの整合 {#values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

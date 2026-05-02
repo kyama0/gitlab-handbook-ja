@@ -646,402 +646,469 @@
       "input_hash": ""
     },
     "content/handbook/engineering/careers/_index.md": {
+      "path": "content/handbook/engineering/careers/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "96eeac5303e8ff8d1392ed81b253c8993d4c6d89882086ff31d355f8877614fe"
     },
     "content/handbook/engineering/careers/ic-leadership/_index.md": {
+      "path": "content/handbook/engineering/careers/ic-leadership/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "138890e53e3d8792fe2bd68750fe38a0bda2ca2f3c12c6a71f495e9e8b4ce569"
     },
     "content/handbook/engineering/careers/ic-leadership/tech-lead.md": {
+      "path": "content/handbook/engineering/careers/ic-leadership/tech-lead.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "64601e7fdd96987122f8dfc8db99128911a1b257d54b6e3d753c9c9358b7ce58"
     },
     "content/handbook/engineering/careers/management/_index.md": {
+      "path": "content/handbook/engineering/careers/management/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "f3ed29521dcc8819386f35c6b12b4c92576dac55e0baf8c8c174f2e8090e4f7a"
     },
     "content/handbook/engineering/careers/management/group-retrospectives.md": {
+      "path": "content/handbook/engineering/careers/management/group-retrospectives.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "18a771d2c0f38df735b1e74ef961bc083e9429dd489c4b780d0e1bec4da036b9"
     },
     "content/handbook/engineering/careers/management/hiring.md": {
+      "path": "content/handbook/engineering/careers/management/hiring.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "a4127471eea232619d3066c27c1841dad8841e2b42136a6a473bc6f589650087"
     },
     "content/handbook/engineering/careers/management/management-career-development.md": {
+      "path": "content/handbook/engineering/careers/management/management-career-development.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "1320f024409ab3420e38369249d3ec8d119328ccdd49aca17bae0da9f2b8ab83"
     },
     "content/handbook/engineering/careers/management/project-management.md": {
+      "path": "content/handbook/engineering/careers/management/project-management.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "27b6fada08bb19b0fd33ffed0a01f95e904070bd1ea4f92fea2854c77a58eda1"
     },
     "content/handbook/engineering/careers/matrix/_index.md": {
+      "path": "content/handbook/engineering/careers/matrix/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "e877aba895c6c4bdd48f8f5ae6d0d2e59d3591626b7e8984dfcbbe9e80646fe6"
     },
     "content/handbook/engineering/careers/matrix/associate.md": {
+      "path": "content/handbook/engineering/careers/matrix/associate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "ea045006962a8ccdacde52a64e3dd4d3d0a65c5855e9dbd227ccc07d0a1b8713"
     },
     "content/handbook/engineering/careers/matrix/development/_index.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "4f1ef38f50223a516ae53c117f2cf5c6195dce72011a4f57bc957ba06b10f692"
     },
     "content/handbook/engineering/careers/matrix/development/dev/_index.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "ff6c229aff904a922758df2a2672afc96a4e68b4b8ac976390b97db92301cfab"
     },
     "content/handbook/engineering/careers/matrix/development/dev/backend/_index.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/backend/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "d8569204b88190bbcc515c9c40c4e68093e90fd9aec28b5f8172c941a506fb3b"
     },
     "content/handbook/engineering/careers/matrix/development/dev/backend/intermediate.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/backend/intermediate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "49e99b2041cdd330c5907d44e0898176040819d2adbc59639cb1c4c40aa66d29"
     },
     "content/handbook/engineering/careers/matrix/development/dev/backend/senior.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/backend/senior.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "2580b80335696d259eac21da609a9efdc4ffe4c00ce04ad6a7ffa64f291411c9"
     },
     "content/handbook/engineering/careers/matrix/development/dev/backend/staff.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/backend/staff.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "c25e7245eef85b8bd2f6fdfc280146b8f295bc3e551f01ee95c553cc9028e510"
     },
     "content/handbook/engineering/careers/matrix/development/dev/frontend/_index.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/frontend/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "5721a418fd99bd033f8c7c5aed29b44c8f6b4d34a94b8dc88546813b401ccd90"
     },
     "content/handbook/engineering/careers/matrix/development/dev/frontend/intermediate.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/frontend/intermediate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "20752c7f17f45f00f30f1e953129a5d4b831474d7bc5faabcb77cb416f2ae682"
     },
     "content/handbook/engineering/careers/matrix/development/dev/frontend/senior.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/frontend/senior.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "d908aef25acd1a0f326920fabceca9159bb23906d3b7a898b00a025f6c57ed6f"
     },
     "content/handbook/engineering/careers/matrix/development/dev/frontend/staff.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/frontend/staff.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "40705a4cca562665a8becbc7d23f33a2e9efe29269c525dcfc78b667979f236c"
     },
     "content/handbook/engineering/careers/matrix/development/dev/fullstack/_index.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/fullstack/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "b453ee22bf00f578059d1912e7fc42818422aa692ba8e2186f78f34d3226401f"
     },
     "content/handbook/engineering/careers/matrix/development/dev/fullstack/intermediate.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/fullstack/intermediate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "6549a4e5eb9ec58370e560a432c1765b31a5b0d1fd6d8c7a2bd40685e6e6d9f0"
     },
     "content/handbook/engineering/careers/matrix/development/dev/fullstack/senior.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/fullstack/senior.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "b422ab5d6bb1a30f44abe92a293b1de82ab0b0e031ee89a41546361783f567e0"
     },
     "content/handbook/engineering/careers/matrix/development/dev/fullstack/staff.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/fullstack/staff.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "d27198497325e34b22e5078f466ef80943052126dd77409d25069a328947ae73"
     },
     "content/handbook/engineering/careers/matrix/development/dev/principal.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/dev/principal.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "cf119d8d064cdd09d6658ee52f81a09d98edab516ef85a14a8cd811c3840ae42"
     },
     "content/handbook/engineering/careers/matrix/development/intermediate.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/intermediate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "01fea730bf2ba6fefbe918bacc3645938326a37eb7d0a960cf554e3d7e9a35e8"
     },
     "content/handbook/engineering/careers/matrix/development/intern.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/intern.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "6cebc6ec5d2a51a088614ba422b1fcd06e71fd3ae486d9a02ebf153e86e1cd42"
     },
     "content/handbook/engineering/careers/matrix/development/principal.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/principal.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "a4f6ace1b7a739016bb4c6331a666569693088269a18c89c99c0ef2432a45a0b"
     },
     "content/handbook/engineering/careers/matrix/development/senior-staff.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/senior-staff.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "10c75b42eac07b348bf382ec3dfc1ed72a16ea8036051810233c67e24b09a6f8"
     },
     "content/handbook/engineering/careers/matrix/development/senior.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/senior.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "b1cbf6153671980cd56ff36ddc379aeb5ae0182c8014d3f78ff797495d0d1851"
     },
     "content/handbook/engineering/careers/matrix/development/staff.md": {
+      "path": "content/handbook/engineering/careers/matrix/development/staff.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "bc811831a99f1edaaea2aa55bfdc71acaaa25b298df99264347bec8d815c77ff"
     },
     "content/handbook/engineering/careers/matrix/infrastructure/_index.md": {
+      "path": "content/handbook/engineering/careers/matrix/infrastructure/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "76b7d9acbc5c11d62a2e23f9c703fd2283be73a95f8325501c2feebc4ebfd5fe"
     },
     "content/handbook/engineering/careers/matrix/infrastructure/associate.md": {
+      "path": "content/handbook/engineering/careers/matrix/infrastructure/associate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "ffcc7095cfdc15a44c27b0d38fd5baa296754878fde2921e2772e573077300e6"
     },
     "content/handbook/engineering/careers/matrix/infrastructure/core-platform/_index.md": {
+      "path": "content/handbook/engineering/careers/matrix/infrastructure/core-platform/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "20d37046762572c6f7aaa27197a7eefa177e257ec91a9cadff22ae90844827bb"
     },
     "content/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/_index.md": {
+      "path": "content/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "239f331f20784ad970420cd85b8ecefa7f2998c38d5c2a9f2eb74de8eb8d44ab"
     },
     "content/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/intermediate.md": {
+      "path": "content/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/intermediate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "0cd3d830fd005dbe26815ae97230c28db8388104a834c24588c1aec653e94078"
     },
     "content/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/senior.md": {
+      "path": "content/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/senior.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "1451ca1bf7594246f7095a4d77042911f35e662adf34ecd8a754d2a1959aa760"
     },
     "content/handbook/engineering/careers/matrix/infrastructure/intermediate.md": {
+      "path": "content/handbook/engineering/careers/matrix/infrastructure/intermediate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "a02d3b46d4243da9e5cce39fc2fa8d57d5bb32605b4ddfd70bbc005b27fc66ab"
     },
     "content/handbook/engineering/careers/matrix/infrastructure/intern.md": {
+      "path": "content/handbook/engineering/careers/matrix/infrastructure/intern.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "ceed281836dbd3ec53d258e2517d8fa18895880446c057243c2b7ba264c4829f"
     },
     "content/handbook/engineering/careers/matrix/infrastructure/principal.md": {
+      "path": "content/handbook/engineering/careers/matrix/infrastructure/principal.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "862dc97e6250b4687f4ca9c0bd94c726d2919ccef1cf56547e5653ae27574259"
     },
     "content/handbook/engineering/careers/matrix/infrastructure/senior.md": {
+      "path": "content/handbook/engineering/careers/matrix/infrastructure/senior.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "c61e293d9c567c4863aa1bd0302daa6f5945957ad04631050de373bf627e9e71"
     },
     "content/handbook/engineering/careers/matrix/infrastructure/staff.md": {
+      "path": "content/handbook/engineering/careers/matrix/infrastructure/staff.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T12:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "f182ed347a9af531db6f507dd8cd730c30a79bbdd8649eb0904dbd05efc3a132"
     },
     "content/handbook/engineering/careers/matrix/intermediate.md": {
+      "path": "content/handbook/engineering/careers/matrix/intermediate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T12:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "e370dcb019027c8da01db0a3bf96b6b04f7306e42e048d813d17b54dc666b692"
     },
     "content/handbook/engineering/careers/matrix/intern.md": {
+      "path": "content/handbook/engineering/careers/matrix/intern.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T12:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "92696f2b585c61697bf152a9594d563a8eba7d5bd8ebdd61c317580dfcb27846"
     },
     "content/handbook/engineering/careers/matrix/principal.md": {
+      "path": "content/handbook/engineering/careers/matrix/principal.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T12:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "29365b361389ffc9e32ed1008780a608e3b860599754d10b08828185a4a33cb7"
     },
     "content/handbook/engineering/careers/matrix/quality/_index.md": {
+      "path": "content/handbook/engineering/careers/matrix/quality/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T12:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "98d171b34f6d98f8ecb5bee3d64941614033328da050b201ee84c2512dcee2bf"
     },
     "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/_index.md": {
+      "path": "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T12:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "17f16cba122377d72d1aaa830cdbf7748723b7e4b3d943b486705cb350fd9b32"
     },
     "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/associate.md": {
+      "path": "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/associate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T12:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "d229f58332a40401b236e0af82c751031831eb5d82ddb25e84fa4dc87a1d72c4"
     },
     "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/intermediate.md": {
+      "path": "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/intermediate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T12:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "f812f2d0e7503f36614d03acb3c295da4c6bdffffdbf1c50acd4eb6d45b40c75"
     },
     "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/principal.md": {
+      "path": "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/principal.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T12:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "d6cfc16d71f851117088717da05cbdd05dfd1b9d8ba9d07e649c9dfc9173ed4d"
     },
     "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/senior.md": {
+      "path": "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/senior.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T12:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "c355cb764a9ff2dc46561f243dfdf0006e802efeac24f5d3ebebf41ff9fe45c8"
     },
     "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/staff.md": {
+      "path": "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/staff.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "edb2766284489dfa5d86445d924aa6560cbfe886ee64c87efcfa03ed9e94995c"
     },
     "content/handbook/engineering/careers/matrix/senior-staff.md": {
+      "path": "content/handbook/engineering/careers/matrix/senior-staff.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "2b15d73e9c3178948f8f4ab9b808c08cb6bd6e5e42870c78a306a3fcf6195ca9"
     },
     "content/handbook/engineering/careers/matrix/senior.md": {
+      "path": "content/handbook/engineering/careers/matrix/senior.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "451eba9c2b9cfd249a88b803816d6a2178604d9bd90f11d5f94a99e85d34bfba"
     },
     "content/handbook/engineering/careers/matrix/staff.md": {
+      "path": "content/handbook/engineering/careers/matrix/staff.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "6af90e4e7e2868097f3b37da63ef96549e044a8cc194676a302a25a99f6eb725"
     },
     "content/handbook/engineering/careers/matrix/support/_index.md": {
+      "path": "content/handbook/engineering/careers/matrix/support/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "7747fadff2ef037ffc4a88d668e140bed0a8eb56a88b98e74ef1177197d1728d"
     },
     "content/handbook/engineering/careers/matrix/support/associate.md": {
+      "path": "content/handbook/engineering/careers/matrix/support/associate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "74f8e0b9de5d4d6ce89ca6ef874a17c48f7bc0df423f52d729795ffb72f58b5e"
     },
     "content/handbook/engineering/careers/matrix/support/csr.md": {
+      "path": "content/handbook/engineering/careers/matrix/support/csr.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "176ff4e5cee7077b70bbaa61b933d8ddb5fdb68195c38b9f0849bea90e1e2632"
     },
     "content/handbook/engineering/careers/matrix/support/intermediate.md": {
+      "path": "content/handbook/engineering/careers/matrix/support/intermediate.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "ff5cc3d9dcfdd193f884e0f93f3dff16adad64454324766106357296b79bca2b"
     },
     "content/handbook/engineering/careers/matrix/support/senior.md": {
+      "path": "content/handbook/engineering/careers/matrix/support/senior.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "f28e34dfa65057733f49e0d2bddfc8888ac041892e23c872864e192e77c74cc6"
     },
     "content/handbook/engineering/careers/matrix/support/staff.md": {
+      "path": "content/handbook/engineering/careers/matrix/support/staff.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-27T00:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "734feacfce7756dc49cc9f29cb76a955eb06a9ca15a025674bfdc5357cf2ff0e"
     },
     "content/handbook/engineering/careers/training/_index.md": {
+      "path": "content/handbook/engineering/careers/training/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-28T02:21:43Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "0beb5fea7d4100fb375971be84e527de50fb61917d6aa27ed5d37564c660009c"
     },
     "content/handbook/engineering/careers/training/em-role/_index.md": {
+      "path": "content/handbook/engineering/careers/training/em-role/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-28T02:21:43Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "e5de772323f06734628c1c23f25d1ab799e1c98e805bad3afcf48908ed4c4668"
     },
     "content/handbook/engineering/careers/training/em-role/work_of_a_manager.md": {
+      "path": "content/handbook/engineering/careers/training/em-role/work_of_a_manager.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-28T02:21:43Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "b4a79c17c9778b7880eb41990d939556dc173588c34302c961007e87f7cdf2e8"
     },
     "content/handbook/engineering/careers/training/ic-to-manager.md": {
+      "path": "content/handbook/engineering/careers/training/ic-to-manager.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-28T02:21:43Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "928bdff31044d54539bbdce666dd9b0b641bb92339d2aac04eabfad70c3e3015"
     },
     "content/handbook/engineering/careers/training/staff-engineers.md": {
+      "path": "content/handbook/engineering/careers/training/staff-engineers.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-28T02:21:43Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "bc34688278c058295b05a7bfb38e37f69a7bc6ddb2e6d0e877d86e2e51985497"
     },
     "content/handbook/engineering/careers/training/staff-plus-role.md": {
+      "path": "content/handbook/engineering/careers/training/staff-plus-role.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
       "translated_at": "2026-04-28T02:21:43Z",
       "model": "claude-sonnet-4-6",

@@ -21,7 +21,7 @@ stale: false
 
 ---
 
-### リーダーシップコンピテンシー
+### リーダーシップコンピテンシー {#leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/staff-leadership-competency.md (no localized version under content/ja/) -->
@@ -31,7 +31,7 @@ stale: false
 - Support に影響する将来の問題を予測し、計画を立てる。
 - 必要に応じてワーキンググループに参加する。
 
-### テクニカルコンピテンシー
+### テクニカルコンピテンシー {#technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/staff-technical-competency.md (no localized version under content/ja/) -->
@@ -41,7 +41,7 @@ stale: false
 - 顧客に影響する問題の修正を頻繁に提出する。
 - GitLab Support の有効性を向上させるためのツールを作成する。
 
-### バリューアライメント
+### バリューアライメント {#values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

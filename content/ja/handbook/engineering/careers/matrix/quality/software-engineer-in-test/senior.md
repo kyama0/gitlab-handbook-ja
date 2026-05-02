@@ -22,19 +22,19 @@ stale: false
 
 ---
 
-### Senior リーダーシップコンピテンシー
+### Senior リーダーシップコンピテンシー {#senior-leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/senior-leadership-competency.md (no localized version under content/ja/) -->
 
   
-### Senior テクニカルコンピテンシー
+### Senior テクニカルコンピテンシー {#senior-technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/quality-senior-technical-competency.md (no localized version under content/ja/) -->
 
 
-### Senior バリュー整合性
+### Senior バリュー整合性 {#senior-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

@@ -17,7 +17,7 @@ stale: false
 
 ---
 
-### Intern リーダーシップコンピテンシー
+### Intern リーダーシップコンピテンシー {#intern-leadership-competencies}
 
 現行のコンピテンシーについては[エンジニアリングジョブレベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)を参照してください。
 
@@ -25,7 +25,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/intern-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### Intern テクニカルコンピテンシー
+### Intern テクニカルコンピテンシー {#intern-technical-competencies}
 
 現行のコンピテンシーについては[エンジニアリングジョブレベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)を参照してください。
 
@@ -33,7 +33,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/intern-technical-competency.md (no localized version under content/ja/) -->
 
 
-### Intern バリュー整合性
+### Intern バリュー整合性 {#intern-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

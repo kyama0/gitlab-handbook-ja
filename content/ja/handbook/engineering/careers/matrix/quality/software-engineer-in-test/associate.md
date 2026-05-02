@@ -22,19 +22,19 @@ stale: false
 
 ---
 
-### Associate リーダーシップコンピテンシー
+### Associate リーダーシップコンピテンシー {#associate-leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/associate-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### Associate テクニカルコンピテンシー
+### Associate テクニカルコンピテンシー {#associate-technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/quality-associate-technical-competency.md (no localized version under content/ja/) -->
 
 
-### Associate バリュー整合性
+### Associate バリュー整合性 {#associate-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

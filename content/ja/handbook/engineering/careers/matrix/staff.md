@@ -18,7 +18,7 @@ stale: false
 
 ---
 
-### Staff リーダーシップコンピテンシー
+### Staff リーダーシップコンピテンシー {#staff-leadership-competencies}
 
 現在のコンピテンシーについては、[Engineering Job Levels](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618) を参照してください。
 
@@ -26,7 +26,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/staff-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### Staff テクニカルコンピテンシー
+### Staff テクニカルコンピテンシー {#staff-technical-competencies}
 
 現在のコンピテンシーについては、[Engineering Job Levels](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618) を参照してください。
 
@@ -34,7 +34,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/staff-technical-competency.md (no localized version under content/ja/) -->
 
 
-### Staff バリューアライメント
+### Staff バリューアライメント {#staff-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

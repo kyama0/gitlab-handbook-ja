@@ -23,7 +23,7 @@ stale: false
 
 ---
 
-### Senior リーダーシップコンピテンシー
+### Senior リーダーシップコンピテンシー {#leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/senior-leadership-competency.md (no localized version under content/ja/) -->
@@ -36,7 +36,7 @@ stale: false
 - 複数のステージにまたがるコードレビューを定期的に実施する
 - 必要に応じてワーキンググループに参加する
 
-### Senior テクニカルコンピテンシー
+### Senior テクニカルコンピテンシー {#technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/senior-technical-competency.md (no localized version under content/ja/) -->
@@ -52,7 +52,7 @@ stale: false
 - サービスや技術スタックの複数レベルにまたがるプロダクション問題をデバッグできる
 - 既存の機能を拡張してアーキテクチャを発展させる
 
-### Senior バリューズへの整合
+### Senior バリューズへの整合 {#values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

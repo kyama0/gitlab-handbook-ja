@@ -22,19 +22,19 @@ stale: false
 
 ---
 
-### Staff リーダーシップコンピテンシー
+### Staff リーダーシップコンピテンシー {#staff-leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/staff-leadership-competency.md (no localized version under content/ja/) -->
 
   
-### Staff テクニカルコンピテンシー
+### Staff テクニカルコンピテンシー {#staff-technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/quality-staff-technical-competency.md (no localized version under content/ja/) -->
 
 
-### Staff バリューアライメント
+### Staff バリューアライメント {#staff-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

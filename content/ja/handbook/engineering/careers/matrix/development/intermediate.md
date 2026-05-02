@@ -21,7 +21,7 @@ stale: false
 
 ---
 
-### 中級リーダーシップコンピテンシー
+### 中級リーダーシップコンピテンシー {#intermediate-leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/intermediate-leadership-competency.md (no localized version under content/ja/) -->
@@ -30,7 +30,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/development-intermediate-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### 中級テクニカルコンピテンシー
+### 中級テクニカルコンピテンシー {#intermediate-technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/intermediate-technical-competency.md (no localized version under content/ja/) -->
@@ -39,7 +39,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/development-intermediate-technical-competency.md (no localized version under content/ja/) -->
 
 
-### 中級バリューへの整合
+### 中級バリューへの整合 {#intermediate-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

@@ -22,13 +22,13 @@ stale: false
 
 ---
 
-### リーダーシップコンピテンシー
+### リーダーシップコンピテンシー {#leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/senior-leadership-competency.md (no localized version under content/ja/) -->
 
 
-{{$ include "includes/engineering/development-senior-leadership-competency.md" %}}
+{{% include "includes/engineering/development-senior-leadership-competency.md" %}}
 
 #### Distribution
 
@@ -40,7 +40,7 @@ stale: false
 - サービスコンポーネントをエンドユーザーにリリースするためのコーチとして機能します。
 - エンジニアリングプロジェクトを提案・議論・実行を含めてコンセプトから本番まで一貫してオーナーシップを持てます。
 
-### テクニカルコンピテンシー
+### テクニカルコンピテンシー {#technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/senior-technical-competency.md (no localized version under content/ja/) -->
@@ -58,7 +58,7 @@ stale: false
 - 本番インストールに対するデプロイ推奨事項を提供できます。
 - 自分のドメインの機能が本番環境においてどのようにスケールして動作するかを理解しています。
 
-### バリュー整合
+### バリュー整合 {#values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

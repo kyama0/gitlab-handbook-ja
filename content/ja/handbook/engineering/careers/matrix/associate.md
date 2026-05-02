@@ -17,7 +17,7 @@ stale: false
 
 ---
 
-### アソシエイトリーダーシップコンピテンシー
+### アソシエイトリーダーシップコンピテンシー {#associate-leadership-competencies}
 
 現在のコンピテンシーについては [Engineering Job Levels](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618) を参照してください。
 
@@ -25,7 +25,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/associate-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### アソシエイトテクニカルコンピテンシー
+### アソシエイトテクニカルコンピテンシー {#associate-technical-competencies}
 
 現在のコンピテンシーについては [Engineering Job Levels](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618) を参照してください。
 
@@ -33,7 +33,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/associate-technical-competency.md (no localized version under content/ja/) -->
 
 
-### アソシエイトバリューアライメント
+### アソシエイトバリューアライメント {#associate-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

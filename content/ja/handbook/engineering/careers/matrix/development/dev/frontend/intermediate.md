@@ -21,7 +21,7 @@ stale: false
 
 ---
 
-### リーダーシップコンピテンシー
+### リーダーシップコンピテンシー {#leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/intermediate-leadership-competency.md (no localized version under content/ja/) -->
@@ -30,7 +30,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/development-intermediate-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### テクニカルコンピテンシー
+### テクニカルコンピテンシー {#technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/intermediate-technical-competency.md (no localized version under content/ja/) -->
@@ -50,7 +50,7 @@ stale: false
 - プロダクション環境で発生した問題をデバッグする
 - GitLab プロダクトの使い方を説明するドキュメントや手順書を作成する
 
-### バリューズへの整合
+### バリューズへの整合 {#values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

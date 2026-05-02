@@ -23,13 +23,13 @@ stale: false
 
 ---
 
-### リーダーシップコンピテンシー
+### リーダーシップコンピテンシー {#leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/csr-competency.md (no localized version under content/ja/) -->
 
 
-### テクニカルコンピテンシー
+### テクニカルコンピテンシー {#technical-competencies}
 
 - カスタマーサポートの経験と、カスタマーサポートスキルを伸ばしたいという意欲。
 - 顧客や同僚に対して基本的なワークフローを伝える能力。
@@ -47,7 +47,7 @@ stale: false
 - 関連する新しいプロダクト機能とワークフローについて常に最新情報を把握する。
 - Support ワークフローへの改善を提案する。
 
-### バリューアライメント
+### バリューアライメント {#values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

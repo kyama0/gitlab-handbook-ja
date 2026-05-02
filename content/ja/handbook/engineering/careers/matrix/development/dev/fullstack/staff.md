@@ -21,7 +21,7 @@ stale: false
 
 ---
 
-### リーダーシップコンピテンシー
+### リーダーシップコンピテンシー {#leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/staff-leadership-competency.md (no localized version under content/ja/) -->
@@ -30,7 +30,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/development-staff-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### テクニカルコンピテンシー
+### テクニカルコンピテンシー {#technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/staff-technical-competency.md (no localized version under content/ja/) -->
@@ -39,7 +39,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/development-staff-technical-competency.md (no localized version under content/ja/) -->
 
 
-### バリューへの整合
+### バリューへの整合 {#values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

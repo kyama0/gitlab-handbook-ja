@@ -22,19 +22,19 @@ stale: false
 
 ---
 
-### Intermediate リーダーシップコンピテンシー
+### Intermediate リーダーシップコンピテンシー {#intermediate-leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/intermediate-leadership-competency.md (no localized version under content/ja/) -->
 
   
-### Intermediate テクニカルコンピテンシー
+### Intermediate テクニカルコンピテンシー {#intermediate-technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/quality-intermediate-technical-competency.md (no localized version under content/ja/) -->
 
 
-### Intermediate バリュー整合性
+### Intermediate バリュー整合性 {#intermediate-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

@@ -21,15 +21,15 @@ stale: false
 
 ---
 
-### シニア Staff リーダーシップコンピテンシー
+### シニア Staff リーダーシップコンピテンシー {#senior-staff-leadership-competencies}
 
 現在のコンピテンシーについては、[Engineering Job Levels](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618) を参照してください。
 
-### シニア Staff テクニカルコンピテンシー
+### シニア Staff テクニカルコンピテンシー {#senior-staff-technical-competencies}
 
 現在のコンピテンシーについては、[Engineering Job Levels](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618) を参照してください。
 
-### シニア Staff バリューへの整合
+### シニア Staff バリューへの整合 {#senior-staff-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

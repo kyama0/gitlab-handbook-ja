@@ -21,7 +21,7 @@ stale: false
 
 ---
 
-### リーダーシップコンピテンシー
+### リーダーシップコンピテンシー {#leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/staff-leadership-competency.md (no localized version under content/ja/) -->
@@ -34,7 +34,7 @@ stale: false
 - 他チームと頻繁に連携し、効率的な解決策につながる大規模な変更を主導する
 - GitLab のコードベース全体にわたるコードレビューを定期的に実施する
 
-### テクニカルコンピテンシー
+### テクニカルコンピテンシー {#technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/staff-technical-competency.md (no localized version under content/ja/) -->
@@ -47,7 +47,7 @@ stale: false
 - サーバーサイドプログラミング言語とそのフレームワークに関する幅広い知識を持つ
 - エンジニアリングの標準・ツール・プロセスを改善する
 
-### バリューズへの整合
+### バリューズへの整合 {#values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

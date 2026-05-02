@@ -59,7 +59,7 @@ stale: false
 
 ## エンジニアリングとの整合
 
-### プリンシパルのリーダーシップコンピテンシー
+### プリンシパルのリーダーシップコンピテンシー {#principal-leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/principal-leadership-competency.md (no localized version under content/ja/) -->

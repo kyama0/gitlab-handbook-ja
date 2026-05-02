@@ -22,19 +22,19 @@ stale: false
 
 ---
 
-### Principal リーダーシップコンピテンシー
+### Principal リーダーシップコンピテンシー {#principal-leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/principal-leadership-competency.md (no localized version under content/ja/) -->
 
   
-### Principal テクニカルコンピテンシー
+### Principal テクニカルコンピテンシー {#principal-technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/quality-principal-technical-competency.md (no localized version under content/ja/) -->
 
 
-### Principal バリュー整合性
+### Principal バリュー整合性 {#principal-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

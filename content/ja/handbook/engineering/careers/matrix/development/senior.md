@@ -19,7 +19,7 @@ stale: false
 - [シニアテクニカルコンピテンシー](#senior-technical-competencies)
 - [シニアバリューへの整合](#senior-values-alignment)
 
-### シニアリーダーシップコンピテンシー
+### シニアリーダーシップコンピテンシー {#senior-leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/senior-leadership-competency.md (no localized version under content/ja/) -->
@@ -28,7 +28,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/development-senior-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### シニアテクニカルコンピテンシー
+### シニアテクニカルコンピテンシー {#senior-technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/senior-technical-competency.md (no localized version under content/ja/) -->
@@ -37,7 +37,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/development-senior-technical-competency.md (no localized version under content/ja/) -->
 
 
-### シニアバリューへの整合
+### シニアバリューへの整合 {#senior-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

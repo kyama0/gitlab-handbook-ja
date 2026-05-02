@@ -18,7 +18,7 @@ stale: false
 
 ---
 
-### Principal リーダーシップコンピテンシー
+### Principal リーダーシップコンピテンシー {#principal-leadership-competencies}
 
 現行のコンピテンシーについては[エンジニアリングジョブレベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)を参照してください。
 
@@ -26,7 +26,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/principal-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### Principal テクニカルコンピテンシー
+### Principal テクニカルコンピテンシー {#principal-technical-competencies}
 
 現行のコンピテンシーについては[エンジニアリングジョブレベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)を参照してください。
 
@@ -34,7 +34,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/principal-technical-competency.md (no localized version under content/ja/) -->
 
 
-### Principal バリュー整合性
+### Principal バリュー整合性 {#principal-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

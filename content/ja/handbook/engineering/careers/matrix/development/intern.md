@@ -29,7 +29,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/development-intern-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### インターンテクニカルコンピテンシー
+### インターンテクニカルコンピテンシー {#intern-technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/intern-technical-competency.md (no localized version under content/ja/) -->
@@ -38,7 +38,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/development-intern-technical-competency.md (no localized version under content/ja/) -->
 
 
-### インターンバリューへの整合
+### インターンバリューへの整合 {#intern-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

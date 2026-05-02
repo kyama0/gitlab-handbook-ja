@@ -21,7 +21,7 @@ stale: false
 
 ---
 
-### リーダーシップコンピテンシー
+### リーダーシップコンピテンシー {#leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/senior-leadership-competency.md (no localized version under content/ja/) -->
@@ -33,7 +33,7 @@ stale: false
 - ディープダイブ、グループペアリング、学習モジュール、動画などを通じて専門知識をチームに広める。
 - 新しい Support Engineer の採用に関与する。
 
-### テクニカルコンピテンシー
+### テクニカルコンピテンシー {#technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/senior-technical-competency.md (no localized version under content/ja/) -->
@@ -47,7 +47,7 @@ stale: false
 - GitLab のアーキテクチャに対する強固な理解を持つ。
 - Support チームのツールボックスに貢献する。
 
-### バリューアライメント
+### バリューアライメント {#values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

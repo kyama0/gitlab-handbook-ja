@@ -18,7 +18,7 @@ stale: false
 
 ---
 
-### Senior リーダーシップコンピテンシー
+### Senior リーダーシップコンピテンシー {#senior-leadership-competencies}
 
 現在のコンピテンシーについては、[Engineering Job Levels](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618) を参照してください。
 
@@ -26,7 +26,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/senior-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### Senior テクニカルコンピテンシー
+### Senior テクニカルコンピテンシー {#senior-technical-competencies}
 
 現在のコンピテンシーについては、[Engineering Job Levels](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618) を参照してください。
 
@@ -34,7 +34,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/senior-technical-competency.md (no localized version under content/ja/) -->
 
 
-### Senior バリューアライメント
+### Senior バリューアライメント {#senior-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

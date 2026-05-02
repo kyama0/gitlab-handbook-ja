@@ -21,7 +21,7 @@ stale: false
 
 ---
 
-### プリンシパルリーダーシップコンピテンシー
+### プリンシパルリーダーシップコンピテンシー {#principal-leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/principal-leadership-competency.md (no localized version under content/ja/) -->
@@ -30,7 +30,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/development-principal-leadership-competency.md (no localized version under content/ja/) -->
 
 
-### プリンシパルテクニカルコンピテンシー
+### プリンシパルテクニカルコンピテンシー {#principal-technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/principal-technical-competency.md (no localized version under content/ja/) -->
@@ -39,7 +39,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/development-principal-technical-competency.md (no localized version under content/ja/) -->
 
 
-### プリンシパルバリューへの整合
+### プリンシパルバリューへの整合 {#principal-values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

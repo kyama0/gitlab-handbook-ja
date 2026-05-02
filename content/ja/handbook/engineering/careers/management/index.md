@@ -20,7 +20,7 @@ GitLab では、エンジニアリングにおけるリーダーシップには 
 
 ## 一般的なリーダーシップ原則
 
-すべての Engineering Manager はハンドブックに定められた[一般的なリーダーシップ原則](/handbook/leadership/)に従うべきです。特に、Engineering Manager が以下の領域で苦労することは珍しくないため、これらを注意深く確認し、マネージャーと自信のレベルについて話し合うことをお勧めします:
+すべての Engineering Manager はハンドブックに定められた[一般的なリーダーシップ原則](/handbook/leadership/)に従うべきです。特に、Engineering Manager が以下の領域で苦労することは珍しくないため、これらを注意深く確認し、マネージャーと自身のレベルについて話し合うことをお勧めします:
 
 - [1-1](/handbook/leadership/1-1/)
 - [定期的なフィードバックの提供](/handbook/leadership/#giving-feedback)

@@ -21,7 +21,7 @@ stale: false
 
 ---
 
-### リーダーシップコンピテンシー
+### リーダーシップコンピテンシー {#leadership-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/intermediate-leadership-competency.md (no localized version under content/ja/) -->
@@ -31,7 +31,7 @@ stale: false
 - Support の KPI を理解し、チームの目標達成に向けて個人のワークフローを最適化する。
 - ドキュメント化されたすべての Support のプラクティス、プロセス、ポリシーを理解して採用し、それらを改善するための適切な変更を提案する。
 
-### テクニカルコンピテンシー
+### テクニカルコンピテンシー {#technical-competencies}
 
 
 <!-- include omitted: includes/engineering-careers/intermediate-technical-competency.md (no localized version under content/ja/) -->
@@ -44,7 +44,7 @@ stale: false
 - GitLab のコードベースを通じてアプリケーションの動作をトレースできる。
 - [チケット対応フローチャート](/handbook/support/workflows/working-on-tickets/#working-on-tickets-flowchart)に従って Issue にセルフアサインする。
 
-### バリューアライメント
+### バリューアライメント {#values-alignment}
 
 
 <!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->
