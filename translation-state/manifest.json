@@ -88,6 +88,18 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "32204aea6483cd4ef5001281641ed3460786c52d55ca45f1e2576e0eee15054f"
     },
+    "content/handbook/ceo/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "771461100348f3ee03e711a34705e82a0df34632d1b75b31eef7dcc9ecd9bdc0"
+    },
+    "content/handbook/ceo/shadow.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3d684cd954a17f6ea7f46bdd8d518dac3637c33dbe3eb612c0fb10313503bb74"
+    },
     "content/handbook/communication/_index.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-25T12:00:00Z",
