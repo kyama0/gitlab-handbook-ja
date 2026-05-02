@@ -19,7 +19,7 @@ stale: false
 1. アセットの最新バージョンを持っていることを確認してください。
 1. [ブログスタイルガイド](/handbook/marketing/brand-and-product-marketing/content/editorial-team/) に従ってください。
 
-### コンテンツのアップロード方法
+### コンテンツのアップロード方法 {#how-to-upload-content}
 
 1. コンテンツライブラリの右上にある `Add Content` をクリックします。
 1. アセットをどのようにアップロードするか（Website URL、ファイルアップロード、CSV）を選択します。
