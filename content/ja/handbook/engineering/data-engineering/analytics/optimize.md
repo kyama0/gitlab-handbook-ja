@@ -164,7 +164,7 @@ Basecamp はこれらの段階を[丘の登りと降り](https://basecamp.com/#f
   - プロダクトの承認は、Issue が `workflow::planning breakdown` に移行することで表されます。
   - エンジニアリングの承認は、その複雑さを測定する Issue ウェイトで表されます。
 
-##### Issue の分解またはプロモーション
+##### Issue の分解またはプロモーション {#breaking-down-or-promoting-issues}
 
 Issue の複雑さに応じて、Issue を分解またはプロモートする必要がある場合があります。いくつかのサンプルシナリオを示します:
 

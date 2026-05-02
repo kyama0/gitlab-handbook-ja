@@ -30,7 +30,7 @@ flowchart LR
         subgraph instances[GitLab Instances]
             sm[Self-Managed]
             ded[Dedicated]
-            com[Gitlab.com]
+            com[GitLab.com]
         end
         version[version.gitlab.com]
         s3[\Amazon S3 Bucket/]
