@@ -37,9 +37,9 @@ stale: false
 _（DRI: サポートチーム、またはイシューを検出したチーム/個人）_
 
 1. エラーに対する [バグテンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Bug.md?ref_type=heads) を使用して Issue を作成します（お客様によってまだ作成されていない場合）
-1. 簡単な概要・お客様への影響・検出内容を含む[計画外のアップグレード停止 RCA Issue](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/rca_upgrade_stop.md) を作成します
-1. RCA Issue をバグを所有するエンジニアリングチームの PM または EM に割り当てます
-1. [#f_gitlab_upgrades](https://gitlab.enterprise.slack.com/archives/C04FXB5CP08) Slack チャンネルに投稿します
+1. 簡単な概要・お客様への影響・検出内容を含む[計画外のアップグレード停止 RCA Issue](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/rca_upgrade_stop.md) を作成してください
+1. RCA Issue をバグを所有するエンジニアリングチームの PM または EM に割り当ててください
+1. [#f_gitlab_upgrades](https://gitlab.enterprise.slack.com/archives/C04FXB5CP08) Slack チャンネルに投稿してください
 
 ## 計画外のアップグレード停止の解決
 
