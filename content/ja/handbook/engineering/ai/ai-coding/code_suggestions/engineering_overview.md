@@ -70,7 +70,7 @@ Code Suggestions には 2 種類のインタラクションがあります。
 Code Completion インタラクションは、IDE によってトリガーできる 2 種類の Code Suggestions リクエストの 1 つです。その目的は、より小さな提案サイズと、周辺のソースコードやリポジトリファイルに対するコンテキスト認識の少なさと引き換えに、非常に高速なレスポンス（< 1 秒）を提供することです。
 
 デフォルトでは、code completion リクエストは [後述のシーケンス](#code-completion-direct-connection-diagram)に示すように、GitLab Rails モノリスから取得した直接接続の詳細を使用して、AI Gateway に直接送信されます。
-あるいは、リクエストは [Code Suggestions 技術概要の図](#code-suggestions-技術概要)に示すように、GitLab Rails モノリスからルーティングすることもできます。
+あるいは、リクエストは [Code Suggestions 技術概要の図](#code-suggestions-technical-overview)に示すように、GitLab Rails モノリスからルーティングすることもできます。
 
 Language Server によって準備されたリクエストは、追加のコンテキストを付加せず、ほぼ修正されていない形式でプロキシされます。この機能における GitLab Rails の役割は、ほとんど認可エンティティとして、特定のユーザーが Code Suggestions 機能を使用することを許可されていることを保証することに限定されます。
 
@@ -102,7 +102,7 @@ sequenceDiagram
     EXT->>IDE: triggers IDE code suggestion UI: "a + b"
 ```
 
-図に描かれているコンポーネントは [技術概要](#code-suggestions-技術概要)セクションで説明されています。
+図に描かれているコンポーネントは [技術概要](#code-suggestions-technical-overview)セクションで説明されています。
 
 ## Code Generation
 
@@ -124,7 +124,7 @@ sequenceDiagram
     GLR->>-AIGW: trigger code generation ` "#35; generate function `
 ```
 
-上記の図では、簡潔さのためいくつかのコンポーネント（GitLab Workhorse や Language Server を含む）が省略されています。しかし、[技術概要](#code-suggestions-技術概要)セクションに示されているリクエストの高レベルなフローは変わりません。
+上記の図では、簡潔さのためいくつかのコンポーネント（GitLab Workhorse や Language Server を含む）が省略されています。しかし、[技術概要](#code-suggestions-technical-overview)セクションに示されているリクエストの高レベルなフローは変わりません。
 
 ## API リファレンス
 
