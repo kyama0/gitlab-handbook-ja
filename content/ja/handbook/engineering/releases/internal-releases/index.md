@@ -14,7 +14,7 @@ stale: false
 
 所有権、例外プロセス、エスカレーションパスを含む一般的なリリースポリシーのフレームワークについては、[リリースポリシー](/handbook/engineering/releases/#release-policy)セクションを参照してください。
 
-内部リリースがセキュリティインシデントの結果でない場合、[インシデントを申告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)する必要があります。インシデントには「計画的なアクティビティ」とマークし、アウトオブバンドパッチの必要性を考慮してS1またはS2の重大度を設定してください。GitLabプラットフォームの信頼性と可用性を維持するために、[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)と[FCL]の完了は必須です。
+内部リリースがセキュリティインシデントの結果でない場合、[インシデントを申告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)する必要があります。インシデントには「計画的なアクティビティ」とマークし、アウトオブバンドパッチの必要性を考慮してS1またはS2の重大度を設定してください。GitLabプラットフォームの信頼性と可用性を維持するために、[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)と[FCL](/handbook/engineering/#feature-change-locks)の完了は必須です。
 
 ## 内部リリースの概要
 

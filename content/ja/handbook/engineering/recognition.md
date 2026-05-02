@@ -14,7 +14,7 @@ stale: false
 - [エンジニアリング四半期優秀者チャット](#engineering-quarterly-achievers-chat)への招待
 - [エンジニアリング四半期優秀者表彰ディナー](#engineering-quarterly-achievers-recognition-dinner)への参加 — あなた自身、友人、家族が仕事を祝うための経費負担付きの食事
 
-### エンジニアリング四半期優秀者チャット
+### エンジニアリング四半期優秀者チャット {#engineering-quarterly-achievers-chat}
 
 四半期優秀者チャットは、その四半期で卓越した活躍をしたエンジニアリングチームメンバーを、最高技術責任者と E-Group の2名が参加するお祝いのチャットに招待することで表彰します。このメリットは3つあります:
 
@@ -29,7 +29,7 @@ stale: false
 - CTO と E-Group メンバー2名の出席が必須
 - 録画なし
 
-### エンジニアリング四半期優秀者表彰ディナー
+### エンジニアリング四半期優秀者表彰ディナー {#engineering-quarterly-achievers-recognition-dinner}
 
 このイニシアチブの一環として、エンジニアリング四半期優秀者は最大250.00ドル（USD）の食事を経費処理できます。
 

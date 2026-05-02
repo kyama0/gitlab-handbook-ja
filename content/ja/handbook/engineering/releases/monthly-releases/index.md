@@ -41,7 +41,7 @@ stale: false
 <p class="my-3 text-sm text-gray-600 italic">リリーススケジュールは <a href="https://handbook.gitlab.com/handbook/engineering/releases/monthly-releases/#monthly-release-schedule" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
-### マンスリーリリースプロセス
+### マンスリーリリースプロセス {#monthly-release-process}
 
 マンスリーリリースのタイムラインは[リリース日](/handbook/engineering/releases/)を中心に集中しています。
 
@@ -105,7 +105,7 @@ stale: false
 特定のバージョンに特定の機能が絶対に必要な場合は、開発サイクルの早い段階で機能をマージしてください。
 リリース日の近くでのマージは、その特定の`マンスリーリリース`に含まれることは絶対に保証されません。
 
-## マージリクエストがマンスリーリリースに含まれるかどうかをどのように判断できますか？
+## マージリクエストがマンスリーリリースに含まれるかどうかをどのように判断できますか？ {#how-can-i-determine-if-my-merge-request-will-make-it-into-the-monthly-release}
 
 マージリクエストが次のマンスリーリリースに含まれるかどうかを判断するために、複数のツールが利用可能です。このセクションでは、参照しやすいよう利用可能なすべてのツールをまとめています。
 
@@ -117,13 +117,13 @@ stale: false
 1. [リリースダッシュボード](#monthly-release-information-dashboard)
 1. [Slackの#releasesチャンネルのアナウンス](#slack-announcements-on-releases-channel)
 
-### 次回のマンスリーリリースへの包含を示すラベル
+### 次回のマンスリーリリースへの包含を示すラベル {#labels-indicating-inclusion-in-upcoming-monthly-release}
 
 リリース候補（RC）に含まれたマージリクエストはマンスリーリリースの一部になります。リリース候補に関する詳細は["リリース候補とは何ですか？いつ作成されますか？"](#what-is-a-release-candidate-and-when-are-they-created)を参照してください。マージリクエストはRCへの包含を示すために`released::candidate`ラベルを受け取ります。
 
 マージリクエストは`13.6.0`や`13.5.2`などの最終リリースに含まれ、[`release.gitlab.net`](/handbook/engineering/infrastructure-platforms/environments/#release)にデプロイされると、`released::candidate`ラベルを置き換える`released::published`ラベルを受け取ります。
 
-### マージリクエストウィジェット
+### マージリクエストウィジェット {#merge-request-widget}
 
 マージリクエストウィジェットは、すべてのマージリクエストの環境とデプロイ時間を表示します。
 これにより、マージリクエストがリリースプロセスのどこにあるかを理解するための情報が提供されます。
@@ -142,7 +142,7 @@ stale: false
 
 ウィジェットに環境が表示されない場合、MRはまだいずれの環境にもデプロイされていません。
 
-### ChatOpsコマンド
+### ChatOpsコマンド {#chatops-commands}
 
 GitLabチームメンバーはSlackの`#releases`チャンネルでChatOpsコマンドを使用して、マージリクエストのステータスを確認できます。
 
@@ -164,7 +164,7 @@ GitLabチームメンバーはSlackの`#releases`チャンネルでChatOpsコマ
 
 1. **次回のマンスリーリリースにMRが含まれる可能性を確認する**: `/chatops run release check <MR URL> <次回リリースバージョン>`
 
-### マンスリーリリース情報ダッシュボード
+### マンスリーリリース情報ダッシュボード {#monthly-release-information-dashboard}
 
 GitLabチームメンバーは[内部Grafanaダッシュボード「リリース情報」](https://dashboards.gitlab.net/d/delivery-release_info/delivery3a-release-information?orgId=1)で以下の情報を確認できます。
 
@@ -179,7 +179,7 @@ GitLabチームメンバーは[内部Grafanaダッシュボード「リリース
 
 この情報を表示するために使用されるメトリクスは、[マンスリーリリースプロセス](#monthly-release-process)全体を通じて自動的に更新されます。
 
-#### Slackの#releasesチャンネルのアナウンス
+#### Slackの#releasesチャンネルのアナウンス {#slack-announcements-on-releases-channel}
 
 [リリース日](/handbook/engineering/releases/)の直前に、リリースマネージャーはリリースに含まれる最終コミットをアナウンスします。このような通知はSlackの[#releases](https://gitlab.slack.com/archives/C0XM5UU6B)チャンネルで共有され、次のようになります（フォーマットは[release-toolsマンスリーテンプレート](https://gitlab.com/gitlab-org/release-tools/-/blob/master/templates/monthly.md.erb)で定義されています）。
 
@@ -193,7 +193,7 @@ GitLabチームメンバーは[内部Grafanaダッシュボード「リリース
 
 [GitLab リリースマネージャー](https://about.gitlab.com/community/release-managers/)スケジュールを確認することで分かります。
 
-### リリース候補とは何ですか？いつ作成されますか？
+### リリース候補とは何ですか？いつ作成されますか？ {#what-is-a-release-candidate-and-when-are-they-created}
 
 リリース候補（RC）とは、変更がリバートされる必要があるまれなケースを除いて、最終マンスリーリリースに含まれる変更を含むGitLabパッケージです。RCはマンスリーリリースにのみ作成され、パッチリリースには作成されません。通常、リリースごとに1つのRCが作成されますが、GitLab.comの状態に基づいてさらにRCが作成される場合があります。
 

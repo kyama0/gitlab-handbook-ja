@@ -117,7 +117,7 @@ flowchart LR
 * [リピートコントリビューターと頻繁なコントリビューター](/handbook/engineering/open-source/growth-strategy/#returning--frequent-contributors)
 * [コード以外のコントリビューション](/handbook/engineering/open-source/growth-strategy/#non-code-contributions)
 
-### コントリビュータージャーニーの改善
+### コントリビュータージャーニーの改善 {#improve-contributor-journey}
 
 オンボーディングから変更のマージまで、卓越した効率的かつ迅速なコントリビューター体験を提供します。取り組みの一つは、コントリビュージャーニーをより効率的にするためのコントリビューションの障壁を削減することです。これらの障壁は、広域コミュニティのコントリビューター、プロダクトチーム、GitLab チームメンバーからコントリビューションの摩擦についてフィードバックを収集することで特定されます。
 
@@ -141,7 +141,7 @@ flowchart LR
 * **理由:** ツールを通じて迅速かつ効率的なコントリビューター体験を提供します。コントリビューターツールはコントリビューターの生産性向けに最適化する必要があります。
 * **DRI:** [Development Tooling team](/handbook/engineering/infrastructure-platforms/developer-experience/development-tooling/)
 
-### コントリビューション価値の向上
+### コントリビューション価値の向上 {#increase-contribution-value}
 
 魅力的な価値を提供し、コントリビューターの作業に対する定期的な認定を行うことで、コントリビューターを促進、引き付け、維持します。コントリビューターのキャリア昇進資料と表彰も含みます。
 
@@ -155,7 +155,7 @@ flowchart LR
 * **理由:** オープンソースプロジェクトでは、コントリビューターはバグの修正や機能の追加だけでなく、経験を積んでオンラインプレゼンスを構築することにも意欲を持ちます。これはレベルアップ、バッジ、その他のインセンティブシステムで解決できます。さらに、コントリビューターを認定して維持するための継続的かつ影響力のある認定を提供します。認定の頻度を高め、コントリビューターのタイプやペルソナに合わせた対象を絞った認定を行います。
 * **DRI:** [Developer Relations Engineering team](/handbook/marketing/developer-relations/engineering/)
 
-### 多様性・公平性・包括性の促進
+### 多様性・公平性・包括性の促進 {#foster-diversity-equity-and-inclusion}
 
 オープンソースコミュニティの関係と広域コミュニティのコントリビューターの中で、多様性・公平性・包括性を中心に据えます。トップコントリビューターのより大きな層にリーチし、より公平なコントリビューションの機会を提供します。
 
@@ -169,7 +169,7 @@ flowchart LR
 * **理由:** 新規コントリビューターとリピートコントリビューターのコントリビューター体験を改善し、異なる経験レベルのコントリビューターに対応します。より包括的な体験を作ることで、コントリビューターの再訪の可能性を高められます。
 * **DRI:** [Developer Relations Engineering team](/handbook/marketing/developer-relations/engineering/)
 
-### アウトリーチの拡大
+### アウトリーチの拡大 {#expand-outreach}
 
 コンテンツとイベントによる認知度向上で、多くのコントリビューターを呼び込みます。これまでのアウトリーチ活動は限られていました。認知度を高め、外部コミュニティからメンバーを引き込む積極的かつ集中的な取り組みが必要です。エンジニアリングは拡大されたアウトリーチイベントで Developer Relations と協力します。
 
@@ -193,7 +193,7 @@ flowchart LR
 * **理由:** 現在の限られたメディア (Twitter、Discord) を超えてソーシャルメディアプレゼンスを拡大することで、既存の開発者コミュニティにアクセスできるようになります。
 * **DRI:** [Developer Relations team](/handbook/marketing/developer-relations/)
 
-### コミュニティのスケール拡大
+### コミュニティのスケール拡大 {#scale-the-community}
 
 フルタイムのカスタマーコントリビューターモデルを活用し、持続可能な成長のための広域コミュニティチームを作ります。
 

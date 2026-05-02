@@ -55,7 +55,7 @@ graph TD
 
 [メンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)でどの GitLab バージョンがカバーされているかを確認できます。
 
-### バックポートがメンテナンスポリシーでカバーされていない場合は？
+### バックポートがメンテナンスポリシーでカバーされていない場合は？ {#what-if-my-backport-is-not-covered-by-the-maintenance-policy}
 
 [メンテナンスポリシー](https://docs.gitlab.com/policy/maintenance/#maintained-versions)外のバージョンへのバックポートは例外であり、Delivery/Platforms 組織内のエンジニアリングリーダーシップ（Senior Engineering Manager 以上）の承認が必要です。これは他のリリースポリシー例外と同じ[例外プロセス](/handbook/engineering/releases/#exception-process)に従います。
 

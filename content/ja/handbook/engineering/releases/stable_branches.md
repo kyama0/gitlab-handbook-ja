@@ -34,7 +34,7 @@ stale: false
 ## ビルドインフラストラクチャ
 
 リリースアーティファクトはミラーリングされたリポジトリから専用のCIランナーインフラストラクチャを使用してビルドされます。
-どのミラーが存在するか、何がどこでビルドされるか、およびこのアーキテクチャの背後にある理由の詳細については、[ビルドインフラストラクチャドキュメント](../infrastructure-platforms/gitlab-delivery/build-infrastructure.md)を参照してください。
+どのミラーが存在するか、何がどこでビルドされるか、およびこのアーキテクチャの背後にある理由の詳細については、[ビルドインフラストラクチャドキュメント](/handbook/engineering/infrastructure-platforms/gitlab-delivery/build-infrastructure.md)を参照してください。
 
 ## 壊れたステーブルブランチ
 

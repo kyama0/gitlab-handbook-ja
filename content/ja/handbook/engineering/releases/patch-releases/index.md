@@ -65,7 +65,7 @@ GitLabエンジニアで以下を実施しようとしている場合:
 
 バックポートを準備するGitLabチームメンバーは、[パッチリリース情報ダッシュボード](#patch-release-information-dashboard)を参照してください。
 
-## パッチリリースのケイデンス
+## パッチリリースのケイデンス {#patch-release-cadence}
 
 パッチリリースは月に2回スケジュールされており、[マンスリーリリース](/handbook/engineering/releases/monthly-releases/#monthly-release-schedule)（第3木曜日）の前後の水曜日を対象としています。正確な日付は月によって異なり、運用上のニーズに基づいてベストエフォートで調整されます。
 
@@ -97,7 +97,7 @@ GitLabには2種類のパッチリリースプロセスがあります。
 
       GitLabプラットフォームの信頼性と可用性を維持するために、[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)と[FCL](/handbook/engineering/#feature-change-locks)の完了は必須です。
 
-## パッチリリースプロセス
+## パッチリリースプロセス {#patch-release-process}
 
 パッチリリースのプロセスはすべての種類で同じですが、1つの重要な違いがあります: 計画されたパッチはパッチリリース準備時に利用可能なすべてのバグとセキュリティ修正を含み、計画外のパッチは高重大度の脆弱性のセキュリティ修正のみを含む可能性が高いです。
 
@@ -134,7 +134,7 @@ GitLabには2種類のパッチリリースプロセスがあります。
   - **ステップ6a**: パッチリリースのブログ投稿が公開されます
   - **ステップ6b**: デフォルトブランチ、ステーブルブランチ、タグがセキュリティリポジトリから正規リポジトリに同期され、オープンな作業に戻ります。
 
-## パッチリリース情報ダッシュボード
+## パッチリリース情報ダッシュボード {#patch-release-information-dashboard}
 
 GitLabチームメンバーは[内部Grafanaダッシュボード「リリース情報」](https://dashboards.gitlab.net/d/delivery-release_info/delivery3a-release-information?orgId=1)で次回のパッチリリースに関する以下の情報を確認できます。
 
