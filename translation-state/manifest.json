@@ -199,6 +199,36 @@
       "model": "claude-opus-4-7",
       "input_hash": "7a01ad3d083f5192a80b690fce76fabff9e45dbdaea02d8042b751e1f53a7400"
     },
+    "content/handbook/customer-experience/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "48428a593dffb60d3e0f653cd27dad163e8d90cce4b8dfe3cf2ae6d237e05dcc"
+    },
+    "content/handbook/customer-experience/about-cx.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fbd74929bdc9d1597f6bc33bab2d15a877a66bad8ef988f78357770b41c0dbd4"
+    },
+    "content/handbook/customer-experience/cx-journey/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a0cb1abfa5277a4f1b54ae3e0e04c834288c9bc6a6e1caa660cab933702f291b"
+    },
+    "content/handbook/customer-experience/cx-journey/prem-ult-epic.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:49:11Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5aca8f8f33de33befda75dc56fe6cc62295d4785ed3c2440201153d84704706c"
+    },
+    "content/handbook/customer-experience/raci.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:49:11Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "271fe0251e18cef1a629ade0fa8c9d6200a84bb9f8dbad19894b2729e9f680d2"
+    },
     "content/handbook/eba/_index.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-26T03:00:00Z",
