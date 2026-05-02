@@ -729,6 +729,174 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "b4623bb3a294ed73a0d6bd7400a581bcf016a3fe9e8dc9f1985206ed05b6a87b"
     },
+    "content/handbook/leadership/1-1/_index.md": {
+      "path": "content/handbook/leadership/1-1/_index.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dda3397f9f2b1f0f641f451a6e8dcc496da724ceedadf502130aa6608f0f7a92"
+    },
+    "content/handbook/leadership/1-1/suggested-agenda-format.md": {
+      "path": "content/handbook/leadership/1-1/suggested-agenda-format.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be7141f155845415f328b81c3d4f4dbec6d300c755fac1cfe93d1e0a03459d31"
+    },
+    "content/handbook/leadership/_index.md": {
+      "path": "content/handbook/leadership/_index.md",
+      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
+      "translated_at": "2026-04-29T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cc4352b2a718aaccf26c4f0d438b47bfe671f1742d344153f0803ec9638b5cf3"
+    },
+    "content/handbook/leadership/biggest-tailwinds.md": {
+      "path": "content/handbook/leadership/biggest-tailwinds.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "55c8094daad4f9b1b9a453a255188abd06800694e9c2436e71ef5eae0bb82abe"
+    },
+    "content/handbook/leadership/book-clubs.md": {
+      "path": "content/handbook/leadership/book-clubs.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3f1dd4f56dac8f59c7612fc7ad42afb65814c6cdc740606e941e03f307fdc1d5"
+    },
+    "content/handbook/leadership/building-trust.md": {
+      "path": "content/handbook/leadership/building-trust.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5fd4a34bca58136f9ddcc09a86664cc2e4f97ad89854953e61880214b1366196"
+    },
+    "content/handbook/leadership/coaching.md": {
+      "path": "content/handbook/leadership/coaching.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4a69617dbfbac2165392507a450737874edabf162aabb86c24f0d523df09e2c2"
+    },
+    "content/handbook/leadership/compensation-review-conversations.md": {
+      "path": "content/handbook/leadership/compensation-review-conversations.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5f7327ee45ee7764a335181c190943b68569731968a2263ef7ff65edf8ae515a"
+    },
+    "content/handbook/leadership/crucial-conversations.md": {
+      "path": "content/handbook/leadership/crucial-conversations.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "49539fc761025a56c925ad81c6669be03ea8a03a20f7fa4db088fcef96f8ea4b"
+    },
+    "content/handbook/leadership/effective-delegation.md": {
+      "path": "content/handbook/leadership/effective-delegation.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "900fe6984b37c118a8efc048b344d20a1736b99d1d691c315a89f5a594d8badc"
+    },
+    "content/handbook/leadership/emotional-intelligence/_index.md": {
+      "path": "content/handbook/leadership/emotional-intelligence/_index.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0cd415358566a176903234d5177c1ee60ed53527d11e55d614c53ac3c995a52d"
+    },
+    "content/handbook/leadership/emotional-intelligence/psychological-safety-short-course.md": {
+      "path": "content/handbook/leadership/emotional-intelligence/psychological-safety-short-course.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "889d2411d730043cbda552903b8fd0682460f0b9415b1af2d63371e6080d2b6e"
+    },
+    "content/handbook/leadership/emotional-intelligence/psychological-safety.md": {
+      "path": "content/handbook/leadership/emotional-intelligence/psychological-safety.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4a3e0ed9ce73620d9472c5c41d7e6ea4e30c7092d4095736ff9ba009789a5017"
+    },
+    "content/handbook/leadership/emotional-intelligence/social-styles.md": {
+      "path": "content/handbook/leadership/emotional-intelligence/social-styles.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fd78fc113a7acdac0cdd9888df7d3bde5d6b1ae670f80c7c2eb6d7409c749eca"
+    },
+    "content/handbook/leadership/high-output-management.md": {
+      "path": "content/handbook/leadership/high-output-management.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be3d34b4dd85b1fd3b12e90b95c691f9de366d711f1f8fbbe5621226dae98116"
+    },
+    "content/handbook/leadership/in-person.md": {
+      "path": "content/handbook/leadership/in-person.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "59de8e7860646635d91a039c1817e26184a943ec1b65bf3d792fb821af8be55e"
+    },
+    "content/handbook/leadership/making-decisions.md": {
+      "path": "content/handbook/leadership/making-decisions.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fc05293e6769d932be786fd78561efc43541015dce682ed955b8d5bdac8d0f6e"
+    },
+    "content/handbook/leadership/managing-burnout.md": {
+      "path": "content/handbook/leadership/managing-burnout.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5f82d97291919877581b9c10c8b7751fa4632cbb9a0baa09f420888e52154390"
+    },
+    "content/handbook/leadership/managing-conflict/_index.md": {
+      "path": "content/handbook/leadership/managing-conflict/_index.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8ace37e773e940646fa6baff9ab9363b133dbb28a09281d8111db7f72874bd70"
+    },
+    "content/handbook/leadership/managing-conflict/leading-through-adversity.md": {
+      "path": "content/handbook/leadership/managing-conflict/leading-through-adversity.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "39fe8c503b95f4252a6b768eb40836429e790b78d3a9db79f62a015e9d902251"
+    },
+    "content/handbook/leadership/no-matrix-organization.md": {
+      "path": "content/handbook/leadership/no-matrix-organization.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "008b5103db123875f061de4f4d4a372416e9ee1b4144bb2ef3e3cfb7356e6e4c"
+    },
+    "content/handbook/leadership/skip-levels.md": {
+      "path": "content/handbook/leadership/skip-levels.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f3901efeba2d57bd0d9f3440e21d2109c0aade406ddd8ca4723b86f3b436999f"
+    },
+    "content/handbook/leadership/underperformance.md": {
+      "path": "content/handbook/leadership/underperformance.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "72f7f5cbdaaa5a540adfe39810ddaee4f4e593985409cd4c41cfe927e0c36a67"
+    },
+    "content/handbook/leadership/workforce-planning.md": {
+      "path": "content/handbook/leadership/workforce-planning.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "429874d7e7f6b148e528a8e09e1c3c7ca496025271de8c2e64d5abb18371ba2b"
+    },
     "content/handbook/marketing/digital-experience/_index.md": {
       "path": "content/handbook/marketing/digital-experience/_index.md",
       "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
