@@ -1716,6 +1716,629 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "4a863ea1de445392106c9a23317178bb38baada9f67b33f790bdfab538625b84"
     },
+    "content/handbook/enterprise-data/_index.md": {
+      "path": "content/handbook/enterprise-data/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ea0a62612e2080c0bfe557b419907e98c4d3d08e95aded2aa638a892a3e74368"
+    },
+    "content/handbook/enterprise-data/data-governance/_index.md": {
+      "path": "content/handbook/enterprise-data/data-governance/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f5cdb9fd923ce697da28f32b9dd652d8e297f3492d14d54c6fcab4ca7c33e5d5"
+    },
+    "content/handbook/enterprise-data/data-governance/data-catalog/_index.md": {
+      "path": "content/handbook/enterprise-data/data-governance/data-catalog/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "812cda0d0aacc3083e485191e52b4194435710870e708ab30c0f3f2e4926ccb3"
+    },
+    "content/handbook/enterprise-data/data-governance/data-management.md": {
+      "path": "content/handbook/enterprise-data/data-governance/data-management.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fe39ad9aad13ba1e9fce980ec8d9926e943c33d07e364bdf3e5b819396c7bba2"
+    },
+    "content/handbook/enterprise-data/data-governance/data-quality-program.md": {
+      "path": "content/handbook/enterprise-data/data-governance/data-quality-program.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e259c9e3bc95ff134cd3f2f7ef97e2e4c987142b47a5338edafbad5038ad8429"
+    },
+    "content/handbook/enterprise-data/data-governance/data-quality.md": {
+      "path": "content/handbook/enterprise-data/data-governance/data-quality.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "205bfe06f39f184ed8e8cdc0c66575dcf0c99274c8f44438d0f9b950d1e36311"
+    },
+    "content/handbook/enterprise-data/data-governance/data-stewardship-practices.md": {
+      "path": "content/handbook/enterprise-data/data-governance/data-stewardship-practices.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fa27d6d19a0e283f751e05fa75aee28824c111881fd3a4a9b43b6c66054a58ff"
+    },
+    "content/handbook/enterprise-data/data-governance/enterprise-data-catalog.md": {
+      "path": "content/handbook/enterprise-data/data-governance/enterprise-data-catalog.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f1c09b4f0f2dc449d746eebadc47f9a3c9f9e555f9878b122560702c8f7311c6"
+    },
+    "content/handbook/enterprise-data/data-governance/incident-management.md": {
+      "path": "content/handbook/enterprise-data/data-governance/incident-management.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "762f7ca4aa35dd3caf30e94bae87a55ebe7c0cd45c95c271edcc77cfd8a1fc60"
+    },
+    "content/handbook/enterprise-data/how-we-work/_index.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "edc25807980e94bb33fa15954b3660bad3bfea00e34c32469e6beb609edcece8"
+    },
+    "content/handbook/enterprise-data/how-we-work/calendar.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/calendar.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2e3170d93a8eb74a449461796bf38973e0fdc8bfe939ac7acee9fc17fb2a065f"
+    },
+    "content/handbook/enterprise-data/how-we-work/data-development/index.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/data-development/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0c6bb8027d979c603209325a6d33e2280b72d6f3aa4a89516d77453b6912229b"
+    },
+    "content/handbook/enterprise-data/how-we-work/dbt-change-workflow.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/dbt-change-workflow.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "26d37fcc581a86a37c7fa99c494ea48dff993ad6d16fe38dc6360d08485263ad"
+    },
+    "content/handbook/enterprise-data/how-we-work/functional-analytics-center-of-excellence/_index.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/functional-analytics-center-of-excellence/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7653ff6ce9297131665e46ed9fd5727a5555c486483a9c52bd2b3ba3afec108a"
+    },
+    "content/handbook/enterprise-data/how-we-work/mr-review.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/mr-review.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9298b759f6958cff5dd824971e48a811b02cabfcd936630d4463e43c99277fb8"
+    },
+    "content/handbook/enterprise-data/how-we-work/new-data-source.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/new-data-source.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "996d89cf9ba1a91781c162a883daa8f1623fd971e2995c89f1e8ed18838f07a7"
+    },
+    "content/handbook/enterprise-data/how-we-work/planning/index.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/planning/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5a0d404619cd3689e414ac671406a696b414a61b114f3c050e4cfef916f5f62e"
+    },
+    "content/handbook/enterprise-data/how-we-work/practical-guide/_index.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/practical-guide/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "13998a6007a12ad69f0be784ee846b3f7a1b1c9bb5afe1846e2a54e9d0d516c7"
+    },
+    "content/handbook/enterprise-data/how-we-work/practical-guide/preparing-your-mr/_index.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/practical-guide/preparing-your-mr/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ad476976a62305ef4745bdb14d82cea33bf5bd5b09045c02b8ac170875b3d9de"
+    },
+    "content/handbook/enterprise-data/how-we-work/practical-guide/top-ci-jobs/_index.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/practical-guide/top-ci-jobs/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "26df8eff511cbdd73ea0177a6614358d1d4c512e5b899654e11396bae76bdfcf"
+    },
+    "content/handbook/enterprise-data/how-we-work/practical-guide/web-ide/_index.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/practical-guide/web-ide/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2b3f22a9c6d25310368cc6902cbaf33fb056dfe05a1f2bbbc4c2396d8fcd8b00"
+    },
+    "content/handbook/enterprise-data/how-we-work/triage/_index.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/triage/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "90fcc97c38e0890baad454b6619f033af9666c248cbe681052f542d305effae1"
+    },
+    "content/handbook/enterprise-data/how-we-work/triage/analytics-engineering-triage/_index.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/triage/analytics-engineering-triage/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "efc5a6582b6e74b917b2861b2243abf8ba16a5f43a392e261cafa5ceb1ea0a26"
+    },
+    "content/handbook/enterprise-data/how-we-work/triage/data-platform-triage/_index.md": {
+      "path": "content/handbook/enterprise-data/how-we-work/triage/data-platform-triage/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5b9c72f84f7e72dd90dd74e7b13b30d00b997c5267bfb7a8793f6b10c835f714"
+    },
+    "content/handbook/enterprise-data/marketing-analytics/_index.md": {
+      "path": "content/handbook/enterprise-data/marketing-analytics/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "984a09f95cdaa9ab5190dadc3b6268fa8a84e28a782bf7c1d461569c34cb233f"
+    },
+    "content/handbook/enterprise-data/marketing-analytics/allocadia/index.md": {
+      "path": "content/handbook/enterprise-data/marketing-analytics/allocadia/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bcac48c5c9aca61f429bae9c5176be664f026d445501e39bf63f424c5729c86a"
+    },
+    "content/handbook/enterprise-data/marketing-analytics/dashboards/_index.md": {
+      "path": "content/handbook/enterprise-data/marketing-analytics/dashboards/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "05a311d2c3eff1a5a8595fc9283271cf44fa16250a36a2b021f31327f85f43af"
+    },
+    "content/handbook/enterprise-data/marketing-analytics/dashboards/demand-generation-dashboard.md": {
+      "path": "content/handbook/enterprise-data/marketing-analytics/dashboards/demand-generation-dashboard.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e1daeb595e50762475ea46f09a5ec38c257313419b9ec428d52b7a842c78e72c"
+    },
+    "content/handbook/enterprise-data/marketing-analytics/google-analytics-4.md": {
+      "path": "content/handbook/enterprise-data/marketing-analytics/google-analytics-4.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d0eea350b2bd792b6d654504f6b753486c7b86b3d68ff9c4619d473bcf4aa010"
+    },
+    "content/handbook/enterprise-data/marketing-analytics/google-tag-manager.md": {
+      "path": "content/handbook/enterprise-data/marketing-analytics/google-tag-manager.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e663a4757200662146f0a778e84eb85a57b010ff9ee9722344d1be6d5a977408"
+    },
+    "content/handbook/enterprise-data/marketing-analytics/marketing-analytics-data/_index.md": {
+      "path": "content/handbook/enterprise-data/marketing-analytics/marketing-analytics-data/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fb22dcc793b6287e99f59da754be7fa14225289c14b83ee089c07025756e5a92"
+    },
+    "content/handbook/enterprise-data/marketing-analytics/marketing-analytics-data/marketing-analytics-data-l2r.md": {
+      "path": "content/handbook/enterprise-data/marketing-analytics/marketing-analytics-data/marketing-analytics-data-l2r.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a03db74c69381b936acc64f2337454f3edd1bc98971ed24699425559930c335a"
+    },
+    "content/handbook/enterprise-data/marketing-analytics/marketing-analytics-data/marketing-analytics-data-sfdc.md": {
+      "path": "content/handbook/enterprise-data/marketing-analytics/marketing-analytics-data/marketing-analytics-data-sfdc.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "28dc37b55b33e2de7bcc34a13fb6ae7f454cc40808b81e2b8f8205fcac5bf46b"
+    },
+    "content/handbook/enterprise-data/marketing-analytics/marketing-analytics-engineering.md": {
+      "path": "content/handbook/enterprise-data/marketing-analytics/marketing-analytics-engineering.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be183f68fde39ed0398d3526c84cfddfee82a34e1a61389570aec50866270210"
+    },
+    "content/handbook/enterprise-data/marketing-analytics/marketing-metrics.md": {
+      "path": "content/handbook/enterprise-data/marketing-analytics/marketing-metrics.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "da6c31cdb3824861169163a88ef5358db19dc8e41e99186c68d4183772398a9e"
+    },
+    "content/handbook/enterprise-data/marketing-analytics/persona-mapping.md": {
+      "path": "content/handbook/enterprise-data/marketing-analytics/persona-mapping.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7ebb434aed5016cb1aac412c5cffbef0e46f5f416ca11abbed78741af8e60df1"
+    },
+    "content/handbook/enterprise-data/organization/_index.md": {
+      "path": "content/handbook/enterprise-data/organization/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9c9406d8de1a1948fad9c50af44ea20d301111b81c249a7168b3da54c9b385b5"
+    },
+    "content/handbook/enterprise-data/organization/analytics-engineering.md": {
+      "path": "content/handbook/enterprise-data/organization/analytics-engineering.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:40:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "994747ddb86044af3e2e958a81bdc3c21ac95a42618f193e9ce55d1dbf494259"
+    },
+    "content/handbook/enterprise-data/organization/analytics.md": {
+      "path": "content/handbook/enterprise-data/organization/analytics.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:40:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "934614e7a803feb9e0dcedc81a0c8a7d69f799432a0a2005a7d107e14fc558f9"
+    },
+    "content/handbook/enterprise-data/organization/data-science/_index.md": {
+      "path": "content/handbook/enterprise-data/organization/data-science/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:40:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "44112432f9cea182df53a30fd9b7b582934b9dd7005360bf4b03b4f45ed524f5"
+    },
+    "content/handbook/enterprise-data/organization/data-science/project_dev_approach/index.md": {
+      "path": "content/handbook/enterprise-data/organization/data-science/project_dev_approach/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:40:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "911adb3fe682a1690a2d4ea1b4df1edd5554ccfc4b5b456bd854bccd61c4b826"
+    },
+    "content/handbook/enterprise-data/organization/data-steering.md": {
+      "path": "content/handbook/enterprise-data/organization/data-steering.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:40:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4b115dd44fe23d2f0e62d1331034c9158ff8d5ec6dfa83ab4203f6baa3997105"
+    },
+    "content/handbook/enterprise-data/organization/engineering.md": {
+      "path": "content/handbook/enterprise-data/organization/engineering.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:40:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3ad2b23122f35f0ce9396456bbf81f6ccd1746bf5ecf5369d13ff7cc407cc6ae"
+    },
+    "content/handbook/enterprise-data/organization/internship-experience/_index.md": {
+      "path": "content/handbook/enterprise-data/organization/internship-experience/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:40:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "10ac9527cbd7db929dc790036e0d460d1e6931b315c3321ff9a9c1b3515eeca1"
+    },
+    "content/handbook/enterprise-data/organization/internship-experience/lessons-from-the-trenches-ved-prakash.md": {
+      "path": "content/handbook/enterprise-data/organization/internship-experience/lessons-from-the-trenches-ved-prakash.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:40:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0bf5364c440a0940693a418fabc882fde1623d1cb8ef90327a22333b7b67400b"
+    },
+    "content/handbook/enterprise-data/organization/internships.md": {
+      "path": "content/handbook/enterprise-data/organization/internships.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:40:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fbf002e6e5ed7786d93a2eab38e793221ca6b785e9b4d9c08591b8028f26841c"
+    },
+    "content/handbook/enterprise-data/organization/learning-library.md": {
+      "path": "content/handbook/enterprise-data/organization/learning-library.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T12:40:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "39d7f2492b3e96b41f82ca2af09f055cb43cd08f7efb441cc41e8279671b5359"
+    },
+    "content/handbook/enterprise-data/organization/principles.md": {
+      "path": "content/handbook/enterprise-data/organization/principles.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ce497d2ca2e6d407b5a36c362bd0ab9ec362e7c8726c06668dea1cffd1fdf92a"
+    },
+    "content/handbook/enterprise-data/organization/programs/_index.md": {
+      "path": "content/handbook/enterprise-data/organization/programs/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9537f3f64b0bcb9b82fc7f40217d061d60b278070ce265c4ecd9eede19551459"
+    },
+    "content/handbook/enterprise-data/organization/programs/data-for-product-managers/index.md": {
+      "path": "content/handbook/enterprise-data/organization/programs/data-for-product-managers/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "082966a57af2ce0912e019ea3fc4126c38bd4fad419bf6521854032f086a0fb7"
+    },
+    "content/handbook/enterprise-data/platform/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ebeaf887633332e8c762664ce746331cff9e1087d2158545c471e966f4626ac0"
+    },
+    "content/handbook/enterprise-data/platform/agentic-tool-development/index.md": {
+      "path": "content/handbook/enterprise-data/platform/agentic-tool-development/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e8fa6f14798cac3df4aaeacb9b07834ec57e0efa0d96cd9f7967c1f150a8ca07"
+    },
+    "content/handbook/enterprise-data/platform/aws-guide.md": {
+      "path": "content/handbook/enterprise-data/platform/aws-guide.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "30ac5673065609ee5cb1bad61f82be5c0eccfac07b62e717be73e4aedd0cdc45"
+    },
+    "content/handbook/enterprise-data/platform/ci-for-ds-pipelines/index.md": {
+      "path": "content/handbook/enterprise-data/platform/ci-for-ds-pipelines/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1c2bf6eba84bba219e11a55e0cae494bcfefd855733800949c18d2e224160e9e"
+    },
+    "content/handbook/enterprise-data/platform/ci-jobs/index.md": {
+      "path": "content/handbook/enterprise-data/platform/ci-jobs/index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2fe0d250db4c8df78d8e83f06f66b6c7c16fa325f3d29ce0d8b41d03d61baf2f"
+    },
+    "content/handbook/enterprise-data/platform/data-enablement.md": {
+      "path": "content/handbook/enterprise-data/platform/data-enablement.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e2a23fcfbe738fbaa2bb6134ffbd78dbb40a66d66015d2cb491e8f09ea2ee258"
+    },
+    "content/handbook/enterprise-data/platform/data-platform-security/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/data-platform-security/_index.md",
+      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
+      "translated_at": "2026-04-29T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c24c15944c9840b82e54b10d5c70444b4e66400d6e29b410b20f53f2ba07222c"
+    },
+    "content/handbook/enterprise-data/platform/data-platform-security/web-application-penetration-testing-process/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/data-platform-security/web-application-penetration-testing-process/_index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "96971613953a2d02268047dac29a0e2d76bbf47fe7cfeab0963928e5021c31fa"
+    },
+    "content/handbook/enterprise-data/platform/data-with-duo/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/data-with-duo/_index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "43eab6aa8802da451a94b7fd27834b615136bb242cc2e391401482ba3787535a"
+    },
+    "content/handbook/enterprise-data/platform/data-with-duo/duo-inspiriation-hub.md": {
+      "path": "content/handbook/enterprise-data/platform/data-with-duo/duo-inspiriation-hub.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "db42a603e9d28484c2254ae87c566d51fc178845d08bd864f6729974e80e77c3"
+    },
+    "content/handbook/enterprise-data/platform/dbt-guide.md": {
+      "path": "content/handbook/enterprise-data/platform/dbt-guide.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9bcbad61318cd0aeb44c7d9af5dfe960b73af7c6b4c3a7ee13b55a213a479ccb"
+    },
+    "content/handbook/enterprise-data/platform/edw/index.md": {
+      "path": "content/handbook/enterprise-data/platform/edw/index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e1272063b458b31091ad765e9e0373a24f1e781de44d52fa9bbf08839c284643"
+    },
+    "content/handbook/enterprise-data/platform/feature-store/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/feature-store/_index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2aa507f888472ad570f391a076f5059510bf670c45ac1362f9abd6d89abcadb8"
+    },
+    "content/handbook/enterprise-data/platform/gdpr-deletions.md": {
+      "path": "content/handbook/enterprise-data/platform/gdpr-deletions.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "401dcae2bb286e50adf67fa912e04b01c28e23444dbd3ae4ffa1a885151e15bb"
+    },
+    "content/handbook/enterprise-data/platform/infrastructure/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/infrastructure/_index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "27fb4bc325f9848e8aca948808c5709064395b1c752c6d512cbd809391eace59"
+    },
+    "content/handbook/enterprise-data/platform/jupyter-guide/index.md": {
+      "path": "content/handbook/enterprise-data/platform/jupyter-guide/index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fb9b42e072659092be502cfef7cb3c8ec049160a75a7e3ca40e9044e4c1d56ba"
+    },
+    "content/handbook/enterprise-data/platform/monte-carlo/index.md": {
+      "path": "content/handbook/enterprise-data/platform/monte-carlo/index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e23378d07de00cbcb9033ad5a31b0b2a86ca4abcf8e83cd887f8ee88a67818a5"
+    },
+    "content/handbook/enterprise-data/platform/permifrost.md": {
+      "path": "content/handbook/enterprise-data/platform/permifrost.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "86304492c6ba2af0d9d4082bc1ee36efbcd237e3c8b8781ad5fe539ef5511fe8"
+    },
+    "content/handbook/enterprise-data/platform/pipelines/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/pipelines/_index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "60219df5325547150092951d8953826bc8ba0b79be34ca2558d102ecbcafed77"
+    },
+    "content/handbook/enterprise-data/platform/pipelines/when_to_deprecate_pipeline.md": {
+      "path": "content/handbook/enterprise-data/platform/pipelines/when_to_deprecate_pipeline.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "38f86c1b83c9f61223b6a426f267f5da83702949224e3b992281919e7d11c7a8"
+    },
+    "content/handbook/enterprise-data/platform/python-guide.md": {
+      "path": "content/handbook/enterprise-data/platform/python-guide.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "15edc8569c3405ae3fb72c6dd803c5582030b8221d945ae4c0964085369c7733"
+    },
+    "content/handbook/enterprise-data/platform/python-tool-package-management/index.md": {
+      "path": "content/handbook/enterprise-data/platform/python-tool-package-management/index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9b4d0c34a133a2de00aa6d9bda8d4f230f93c5a89afb4d63e412b76ef98a67ca"
+    },
+    "content/handbook/enterprise-data/platform/rstudio/index.md": {
+      "path": "content/handbook/enterprise-data/platform/rstudio/index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f0e7a322d9cd6c1009763a5a164f54b328f084ff61a840e018b5ea8769ceee4a"
+    },
+    "content/handbook/enterprise-data/platform/safe-data/index.md": {
+      "path": "content/handbook/enterprise-data/platform/safe-data/index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3824f9fb06876ae40415e6493481c5bb11e11a380efecf22876a8a148637c530"
+    },
+    "content/handbook/enterprise-data/platform/snowflake-benchmarking-guide.md": {
+      "path": "content/handbook/enterprise-data/platform/snowflake-benchmarking-guide.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "005dbfad886daa9d7bb6a314b00abbce9518a1b962e7eac45507d1b9adbbf51c"
+    },
+    "content/handbook/enterprise-data/platform/snowflake/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/snowflake/_index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7544e342ed0f23ecdea4515d96af1a1067b519d8d0dcee9a0489007565e20d9b"
+    },
+    "content/handbook/enterprise-data/platform/snowflake/clustering/index.md": {
+      "path": "content/handbook/enterprise-data/platform/snowflake/clustering/index.md",
+      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d6fbb69b4703634e98075a15f88fefd38d10ca226227875dd25cff4e5894b035"
+    },
+    "content/handbook/enterprise-data/platform/snowflake/snowflake-ai-function/snowflake-ai-credits-alert.md": {
+      "path": "content/handbook/enterprise-data/platform/snowflake/snowflake-ai-function/snowflake-ai-credits-alert.md",
+      "upstream_sha": "b751749fb746d2e0131db68b13218fc2e08cf6b2",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e94b4bf6abc46c3f8e38cf392e19f50ac642eb29fa7b9b094792b0c165d6bf8f"
+    },
+    "content/handbook/enterprise-data/platform/snowflake/snowflake-ai-function/snowflake-ai-function.md": {
+      "path": "content/handbook/enterprise-data/platform/snowflake/snowflake-ai-function/snowflake-ai-function.md",
+      "upstream_sha": "b751749fb746d2e0131db68b13218fc2e08cf6b2",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5e2dcc0345359747a1c787d281e0a427c15024b058f24f4f3e163523676da86a"
+    },
+    "content/handbook/enterprise-data/platform/snowflake/snowpipe/index.md": {
+      "path": "content/handbook/enterprise-data/platform/snowflake/snowpipe/index.md",
+      "upstream_sha": "b751749fb746d2e0131db68b13218fc2e08cf6b2",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0105fda672a16409bf3c321e567529f28d3b154ec624ff8e49dae71d4008d619"
+    },
+    "content/handbook/enterprise-data/platform/snowplow/index.md": {
+      "path": "content/handbook/enterprise-data/platform/snowplow/index.md",
+      "upstream_sha": "b751749fb746d2e0131db68b13218fc2e08cf6b2",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b0184e9ce2ef75bde3994419cc854fb1e0d0404aaf921f485811ef11534b3cd0"
+    },
+    "content/handbook/enterprise-data/platform/sql-style-guide.md": {
+      "path": "content/handbook/enterprise-data/platform/sql-style-guide.md",
+      "upstream_sha": "b751749fb746d2e0131db68b13218fc2e08cf6b2",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "95bb50899f97e7ebc681425701377061ddf795cf0ac3226609d084722a44456f"
+    },
+    "content/handbook/enterprise-data/platform/tableau/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/tableau/_index.md",
+      "upstream_sha": "b751749fb746d2e0131db68b13218fc2e08cf6b2",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8063d777613420a344f3ebebc19d022fe151204b75bef1bf7e0623bee83c8ded"
+    },
+    "content/handbook/enterprise-data/platform/tableau/embed-demo/index.md": {
+      "path": "content/handbook/enterprise-data/platform/tableau/embed-demo/index.md",
+      "upstream_sha": "b751749fb746d2e0131db68b13218fc2e08cf6b2",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "afb52e6a902d4a967e8b3653db70b97fb26561cf529331c80ccafa2187d06612"
+    },
+    "content/handbook/enterprise-data/platform/tableau/tableau-admin-guide/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/tableau/tableau-admin-guide/_index.md",
+      "upstream_sha": "b751749fb746d2e0131db68b13218fc2e08cf6b2",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7db98cf19654af3b8e451edaf08527c300d7a5f1cda939940869906accc417ca"
+    },
+    "content/handbook/enterprise-data/platform/tableau/tableau-developer-guide/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/tableau/tableau-developer-guide/_index.md",
+      "upstream_sha": "b751749fb746d2e0131db68b13218fc2e08cf6b2",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0818e92f973c1c75499fa01d01a4e624113a4d7d3a579bda9d3bb872fe7d77d8"
+    },
+    "content/handbook/enterprise-data/platform/tableau/tableau-developer-guide/tableau-style-guide/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/tableau/tableau-developer-guide/tableau-style-guide/_index.md",
+      "upstream_sha": "b751749fb746d2e0131db68b13218fc2e08cf6b2",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2630837632d32596702b19ada1e77eb0a4973aa2f0f4b996809956cec4e4f0c5"
+    },
+    "content/handbook/enterprise-data/platform/tableau/tableau-developer-guide/tips-and-tricks-for-developers/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/tableau/tableau-developer-guide/tips-and-tricks-for-developers/_index.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fe70cbbade9e888d59e5165e2bc15916bcf4baaea0ef2bf42cd7bfa2997add90"
+    },
+    "content/handbook/enterprise-data/platform/tableau/tableau-project-leaders-guide/_index.md": {
+      "path": "content/handbook/enterprise-data/platform/tableau/tableau-project-leaders-guide/_index.md",
+      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9e6ddf26d6f4af7efdec980f1e1fd99d9364d08b7f48f38053d4c6c6eede83ae"
+    },
     "content/handbook/entity/_index.md": {
       "path": "content/handbook/entity/_index.md",
       "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
