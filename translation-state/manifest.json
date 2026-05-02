@@ -273,6 +273,324 @@
       "translated_at": "2026-04-29T06:00:00Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "82289ec19635c9b5cc56ba32c4f81a59eb107d44c91898e6f4d0edc43b131fd8"
+    },
+    "content/handbook/marketing/marketing-operations/6sense.md": {
+      "path": "content/handbook/marketing/marketing-operations/6sense.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7d3d54c878c7c2d67da50ed4f6ef8354812c3ea2c1f34b67bdcde20e63ed9eff"
+    },
+    "content/handbook/marketing/marketing-operations/_index.md": {
+      "path": "content/handbook/marketing/marketing-operations/_index.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a9c0a8246f5a6e3555e6b8d9eba6475cd367f14e4e168f86fda82db3cd43f70"
+    },
+    "content/handbook/marketing/marketing-operations/accelevents.md": {
+      "path": "content/handbook/marketing/marketing-operations/accelevents.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "934edb688f3c519bd212c4e9c354043c23cf4536e8e07982334ed8a463ba322a"
+    },
+    "content/handbook/marketing/marketing-operations/ai-in-marketing/index.md": {
+      "path": "content/handbook/marketing/marketing-operations/ai-in-marketing/index.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2fed55348f9dbfc1c42c19d59bf2ebcd6f5c48851a42277e0a26d32a6ee72219"
+    },
+    "content/handbook/marketing/marketing-operations/asana/index.md": {
+      "path": "content/handbook/marketing/marketing-operations/asana/index.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7aa503483218369733cdc738a589fc0f0e1b94384687b7bf5dee1c1d824f4c93"
+    },
+    "content/handbook/marketing/marketing-operations/automated-list-import/index.md": {
+      "upstream_sha": "556213935f9d4b2d786892c3568ad51be8ee2f6a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3973ec43bde1fb917ce80ad4678189977eb28a953bd66cabfe2fe85f22832b9f"
+    },
+    "content/handbook/marketing/marketing-operations/backblaze.md": {
+      "upstream_sha": "b88590d344d3d4499bed98511f47733b492b67ed",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "55bb2133c0e701298191cc75bc7a5f159ca9310c335e06ba2d8e96db2ff13c4a"
+    },
+    "content/handbook/marketing/marketing-operations/beefree/index.md": {
+      "upstream_sha": "3643eb9e2a76b6b43e2cd19ce4ff6e0c89afa639",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "081e7542dbc3f6b66848900de0ee8a0c96cef5e0231fe666be4a330103aea0eb"
+    },
+    "content/handbook/marketing/marketing-operations/bizible/index.md": {
+      "upstream_sha": "aedff1c8904bde915a5c5cf6c8bb65de6fa94e1c",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "89649bb96495ffdf5e99e2d22aedc25a1f47b668ca64702430059577260239b0"
+    },
+    "content/handbook/marketing/marketing-operations/brilliant.md": {
+      "upstream_sha": "2eb0e1624f4f25f2cc7fdb860f9fea3f4df9ae11",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "20529b1ee2ce8c73679eaff8f0f832d28b9767fa84eb3d97496574f2619e5361"
+    },
+    "content/handbook/marketing/marketing-operations/campaign-operations.md": {
+      "upstream_sha": "3643eb9e2a76b6b43e2cd19ce4ff6e0c89afa639",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "de8bdf6635d1756b5749380650c3741031ec9cd9c3de1e1ee52068d27d18e3bc"
+    },
+    "content/handbook/marketing/marketing-operations/campaigns-and-programs.md": {
+      "upstream_sha": "8de5a2b2942d4ea5a54a7f65cd1b6b12714af2c2",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4b1c77c4774a48210361149aac4d149a71cb9dacbe6c0fa689657127345660aa"
+    },
+    "content/handbook/marketing/marketing-operations/cognism.md": {
+      "upstream_sha": "a5b638fa0e0322f75ff5afd220e7b1de88c6615a",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d5b8aa6e2ba2f3e8dbfa5c338688ab1b134e21de6a5ab4c300876f828a588921"
+    },
+    "content/handbook/marketing/marketing-operations/email-management/_index.md": {
+      "upstream_sha": "aedff1c8904bde915a5c5cf6c8bb65de6fa94e1c",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b1367ecd5838d43d217f2245cd86e071d020e478c73630e63ccf4e0f96a4c7f4"
+    },
+    "content/handbook/marketing/marketing-operations/email-management/operational-email-sends.md": {
+      "upstream_sha": "a70aef43e37dd2a14257b9d0771c39bc88b26dfe",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "befbb92a925bd16967a1efe5a73aff228e3d8276a598d7161b990e7ba402819e"
+    },
+    "content/handbook/marketing/marketing-operations/goldcast/index.md": {
+      "upstream_sha": "0b5a5f39bf48045cf2d6f198c5637420369674de",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6935819c66c72806c0fe35c837a4b264a22922e9112750cb30013604eb2807e9"
+    },
+    "content/handbook/marketing/marketing-operations/hightouch/index.md": {
+      "upstream_sha": "a54c394b9342ff56e8c56b183a77030c2b8f0db2",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "29d19bf2621658dae85e787f25c8f1ef260991939cf86de398afb9a291a6973b"
+    },
+    "content/handbook/marketing/marketing-operations/iconik.md": {
+      "upstream_sha": "b88590d344d3d4499bed98511f47733b492b67ed",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8afc41dd5c7d993b2ecb75b002154b8feb17eceb02e45c96dab02aec9f3d9522"
+    },
+    "content/handbook/marketing/marketing-operations/impartner/index.md": {
+      "upstream_sha": "3643eb9e2a76b6b43e2cd19ce4ff6e0c89afa639",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b63ce0d7602f1585c2870f183461315004ea1edaf4d4bdbbd3bb26eb01182768"
+    },
+    "content/handbook/marketing/marketing-operations/iterable.md": {
+      "upstream_sha": "dd3e167cd479058c4b3b218169e16d58dde63f17",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f14fd764c52d079282bcdfcfdd229200ab44cba041a6dfc794e0202fdc17aba6"
+    },
+    "content/handbook/marketing/marketing-operations/jifflenow/index.md": {
+      "upstream_sha": "3643eb9e2a76b6b43e2cd19ce4ff6e0c89afa639",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "145d2e9f91f7519e4bb3bddd15078cc1c0c76ae0e90195710d6614a3626d986e"
+    },
+    "content/handbook/marketing/marketing-operations/lead-lifecycle.md": {
+      "upstream_sha": "0e4c97831815a29fb542a3af9e2bb95940eaf281",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3387b225be83c237f68ac4c89b5d0fcceb4bc9f82144d04393b8a8d68d6c8c69"
+    },
+    "content/handbook/marketing/marketing-operations/leadgenius.md": {
+      "upstream_sha": "59e6ae9b323594b172935626b076071c69cff833",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "32a195846b73c054c3b226f0a69954066568807f618e69dab8346a26982fe955"
+    },
+    "content/handbook/marketing/marketing-operations/learning.md": {
+      "path": "content/handbook/marketing/marketing-operations/learning.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "22025ea28ecaf119e720469efee815dda84f92c17766cad42d42ad5024b2c270"
+    },
+    "content/handbook/marketing/marketing-operations/list-import.md": {
+      "path": "content/handbook/marketing/marketing-operations/list-import.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8d4cdaa8abc3eb3712dd15e3e1753bebec327637bd8e6f641f1431a021a57823"
+    },
+    "content/handbook/marketing/marketing-operations/litmus.md": {
+      "path": "content/handbook/marketing/marketing-operations/litmus.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "343eda8483523f26eb0389aed2e1328721df8484fc9da3a26ec1f8e3a0042ac1"
+    },
+    "content/handbook/marketing/marketing-operations/marketing-technology-tiering-system.md": {
+      "path": "content/handbook/marketing/marketing-operations/marketing-technology-tiering-system.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cf113fc9ded42108f41dd8ef3f968eab4aea687ee085968dc22bd5fa12f6118b"
+    },
+    "content/handbook/marketing/marketing-operations/marketo/_index.md": {
+      "path": "content/handbook/marketing/marketing-operations/marketo/_index.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "914bb7da33472dbe63fd5452ac02325162f137996791e4bb768ad455996673c8"
+    },
+    "content/handbook/marketing/marketing-operations/marketo/interesting-moments.md": {
+      "path": "content/handbook/marketing/marketing-operations/marketo/interesting-moments.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a71daadd9bff4b254695af4453af27cff8f3e9c88bbd8995fca373310b347628"
+    },
+    "content/handbook/marketing/marketing-operations/marketo/tech-stack-guide-marketo.md": {
+      "path": "content/handbook/marketing/marketing-operations/marketo/tech-stack-guide-marketo.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d569169f2c40eaed284c66ca2a762f8aa9b508bced4cfd03a916ad300ea696bc"
+    },
+    "content/handbook/marketing/marketing-operations/mql-sla.md": {
+      "path": "content/handbook/marketing/marketing-operations/mql-sla.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "92e1a117ee3b465d3624895eb22a1d61988af28fe8661e6ff7e0961a7d648d67"
+    },
+    "content/handbook/marketing/marketing-operations/mutiny/index.md": {
+      "path": "content/handbook/marketing/marketing-operations/mutiny/index.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0ce95390498254cd50a7953ca21559a447bd6936115254b939d5ac6537b816a4"
+    },
+    "content/handbook/marketing/marketing-operations/oceanfrogs.md": {
+      "path": "content/handbook/marketing/marketing-operations/oceanfrogs.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8bd7611514c104d1c71eb58765038f836a34f0ccaa078e9a87a4dcb2780ce181"
+    },
+    "content/handbook/marketing/marketing-operations/opensense/index.md": {
+      "path": "content/handbook/marketing/marketing-operations/opensense/index.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "79a4ed8493a85e6d97be41b733964333a5454d0ab1ab9569480065b19e852f62"
+    },
+    "content/handbook/marketing/marketing-operations/outreach/index.md": {
+      "path": "content/handbook/marketing/marketing-operations/outreach/index.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7715fe040af097b4fbaab2870c16f1067f3207e8b152c2d9a803f382a189a612"
+    },
+    "content/handbook/marketing/marketing-operations/pathfactory/_index.md": {
+      "path": "content/handbook/marketing/marketing-operations/pathfactory/_index.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c158f22960a0a83af85cfc47c586e61e75e95cba37978ec4758e669cae16faad"
+    },
+    "content/handbook/marketing/marketing-operations/pathfactory/content-library.md": {
+      "path": "content/handbook/marketing/marketing-operations/pathfactory/content-library.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e69f060b594b2627ae0aaaf32f42f1ac56b4836331c916dcc1795a824816652a"
+    },
+    "content/handbook/marketing/marketing-operations/pathfactory/pathfactory-analytics.md": {
+      "path": "content/handbook/marketing/marketing-operations/pathfactory/pathfactory-analytics.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3e035d83be202820292177c5fc6f977b31a783661f07264ec42af0ea8517437a"
+    },
+    "content/handbook/marketing/marketing-operations/qualified.md": {
+      "path": "content/handbook/marketing/marketing-operations/qualified.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c104678adddeed8ea8637ceefa9dced91c54fecb39b89fdff472428118dcb53f"
+    },
+    "content/handbook/marketing/marketing-operations/ringlead.md": {
+      "path": "content/handbook/marketing/marketing-operations/ringlead.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5634664ab572b0b4c6d3682c21020f05025cbf562d3ee0b721fe56af2b901a09"
+    },
+    "content/handbook/marketing/marketing-operations/similarweb.md": {
+      "path": "content/handbook/marketing/marketing-operations/similarweb.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d14baca028bea10b3a76623c71181545a7ba1e78c932ec42d4fefc6f1a019551"
+    },
+    "content/handbook/marketing/marketing-operations/startups-application.md": {
+      "path": "content/handbook/marketing/marketing-operations/startups-application.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9acedc3446e79edec77aa095d076e08c6bcaf40eefee905aee5446ec67b0a866"
+    },
+    "content/handbook/marketing/marketing-operations/traction-lead-complete.md": {
+      "path": "content/handbook/marketing/marketing-operations/traction-lead-complete.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9dd601db271871f39f7f3526997cec7bee8ff575a3b4ae89c478760a30f450bf"
+    },
+    "content/handbook/marketing/marketing-operations/usergems.md": {
+      "path": "content/handbook/marketing/marketing-operations/usergems.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-01T01:10:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c1d9d317a754bcc20e2554d1af618c4858e6cd6aa203265a0f35a1dae0a59e06"
+    },
+    "content/handbook/marketing/marketing-operations/vimeo.md": {
+      "path": "content/handbook/marketing/marketing-operations/vimeo.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-01T01:15:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2c17f24e78bdb3cee840ed397d35807e3d784399248a9c42df4cc88d1a4d9417"
+    },
+    "content/handbook/marketing/marketing-operations/workato.md": {
+      "path": "content/handbook/marketing/marketing-operations/workato.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-01T01:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "652a116a59641c041014d1d5b81d572783eeb1e28bc4fd97f2b502d6f9823f15"
+    },
+    "content/handbook/marketing/marketing-operations/youtube/index.md": {
+      "path": "content/handbook/marketing/marketing-operations/youtube/index.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-01T01:35:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8aeb5ef8de35f6e4cc566ff7f6f9cd9ddcfca448a057959693eb6ce20e30bfbf"
+    },
+    "content/handbook/marketing/marketing-operations/zoominfo.md": {
+      "path": "content/handbook/marketing/marketing-operations/zoominfo.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-01T01:25:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d16915b7c035700506607b046e93ccfc13d07d66b6dcb9997ff36b92139c67cb"
     }
   }
 }
