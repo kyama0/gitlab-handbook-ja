@@ -22,6 +22,12 @@
       "model": "claude-opus-4-7",
       "input_hash": "1558af072d2ae2245b0354a24efd87c7b7cc97c98914cc2e7472cbbb2c74c64c"
     },
+    "content/handbook/board-meetings/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T08:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "32204aea6483cd4ef5001281641ed3460786c52d55ca45f1e2576e0eee15054f"
+    },
     "content/handbook/communication/_index.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-25T12:00:00Z",
