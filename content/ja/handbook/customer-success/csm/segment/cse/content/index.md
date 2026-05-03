@@ -65,7 +65,7 @@ CSE コンテンツチームの主な目標は次のとおりです:
 - [タイトル](Issue/Epic)（内部）。
 --->
 
-## <i class="fa-solid fa-users" style="color: #B197FC;"></i></i> チームメンバーとフォーカス領域
+## <i class="fa-solid fa-users" style="color: #B197FC;"></i> チームメンバーとフォーカス領域
 
 私たちは[カスタマーサクセスエンジニアリングチーム](/handbook/customer-success/csm/segment/cse)のメンバーです。
 

@@ -21,4 +21,4 @@ CSM ビジネスのリズムは、CSM の取り組みを最も実りある日次
 
 以下のチャートの[ダウンロード版](https://lucid.app/documents/view/fd53487f-143b-420f-ae66-9e73f3505ef2)はこちらからアクセスできます。
 
-<iframe allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/fd53487f-143b-420f-ae66-9e73f3505ef2" id="LvjclsjZrJBQ"></iframe>
+<iframe title="CSM リズムチャート" allowfullscreen frameborder="0" style="width:640px; height:480px" src="https://lucid.app/documents/embeddedchart/fd53487f-143b-420f-ae66-9e73f3505ef2" id="LvjclsjZrJBQ"></iframe>

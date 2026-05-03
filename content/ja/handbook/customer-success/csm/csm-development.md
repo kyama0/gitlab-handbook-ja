@@ -19,7 +19,7 @@ GitLab の Customer Success Manager として、[成長のための 70-20-10 ル
 1. [FY24 CSM 計画済みイネーブルメントロードマップ](https://docs.google.com/presentation/d/1maP9grsRJTlEsPsvQSw3d2jxw6BB-tgnURmA2lvOC_I/edit#slide=id.g23e6c497812_0_432)
 1. [CSM イネーブルメントコーナー](https://docs.google.com/document/d/1xyaxc37iCDtfeabo2NXCRV31pNOdvieXoVDxJw_aXoM/edit?usp=sharing)（主要な日程と CSM が必要なアクションで四半期ごとに更新）
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTB9tOQWZ771-M2nrIQkqIpx3XF7f9q1xXbBRkW5D-_UAyksak626FVn0Ovrj0j7rHDurML4N8f83IY/embed?start=false&loop=false&delayms=3000&slide=id.g23e582b58af_0_829" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
+<iframe title="CSM 学習・開発リソース" src="https://docs.google.com/presentation/d/e/2PACX-1vTB9tOQWZ771-M2nrIQkqIpx3XF7f9q1xXbBRkW5D-_UAyksak626FVn0Ovrj0j7rHDurML4N8f83IY/embed?start=false&loop=false&delayms=3000&slide=id.g23e582b58af_0_829" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
 ## カスタマーサクセスマネジメント - 学習・開発リソース
 
