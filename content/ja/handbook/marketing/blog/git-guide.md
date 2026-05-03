@@ -68,7 +68,7 @@ git rebase origin/master
 git push origin  0000-branch-name
 ```
 
-## マージコンフリクトの解決方法
+## マージコンフリクトの解決方法 {#how-to-resolve-merge-conflicts}
 
 ### 公式 GitLab ドキュメント
 

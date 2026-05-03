@@ -2,7 +2,7 @@
 title: ソーシャルアドボカシーキュレータープログラム
 description: GitLab 関連のニュースをチームメンバーが共有できるようにキュレーターを支援するための戦略と詳細
 twitter_image: /images/opengraph/handbook/social-marketing/social-advocacy-curator-program-opengraph.png
-twitter_image_alt: GitLab のソーシャルメディアハンドブックブランド画像
+twitter_image_alt: GitLab's Social Media Handbook branded image
 twitter_site: gitlab
 twitter_creator: gitlab
 upstream_path: /handbook/marketing/integrated-marketing/digital-strategy/social-marketing/social-advocacy-curators/
@@ -33,8 +33,6 @@ stale: false
 ### 🔗 AMA を視聴
 
 [AMA はこちらから視聴できます。動画にアクセスするには GitLab Unfiltered の YouTube アカウントにログインしている必要があります。](https://youtu.be/tob7weMR-uc)
-
-</details>
 
 ### キュレーターの現行リスト
 

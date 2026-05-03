@@ -8,7 +8,7 @@ translator: claude
 stale: true
 ---
 
-> **翻訳について**: このページは原文が非常に大規模 (1064 行) のため、完全な翻訳は今後のイテレーションで対応予定です。現時点では正確性のため [英語の原文](https://handbook.gitlab.com/handbook/marketing/field-marketing/field-marketing-owned-virtual-events/) を参照してください。
+> **翻訳について**: このページは原文が非常に大規模 (1064 行) のため、完全な翻訳は今後のイテレーションで対応予定です。フル翻訳は [Issue #77](https://github.com/kyama0/gitlab-handbook-ja/issues/77) で追跡しています。現時点では正確性のため [英語の原文](https://handbook.gitlab.com/handbook/marketing/field-marketing/field-marketing-owned-virtual-events/) を参照してください。
 
 ## 概要
 

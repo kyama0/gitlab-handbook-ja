@@ -2,7 +2,7 @@
 title: "ソーシャルメディアレポーティング"
 description: 指標の定義、サイクル、目標
 twitter_image: "/images/opengraph/handbook/social-marketing/social-handbook-reporting.png"
-twitter_image_alt: "GitLab のソーシャルメディアハンドブックブランド画像"
+twitter_image_alt: "GitLab's Social Media Handbook branded image"
 twitter_site: "gitlab"
 twitter_creator: "gitlab"
 upstream_path: /handbook/marketing/integrated-marketing/digital-strategy/social-marketing/social-reporting/

@@ -12,4 +12,4 @@ stale: false
 
 <!-- To update the list, see the relevant YAML file https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/release_post_managers.yml -->
 
-{{< marketing/release-post-scheduling >}}
+<p class="my-3 text-sm text-gray-600 italic">リリース投稿スケジュールは <a href="https://handbook.gitlab.com/handbook/marketing/blog/release-posts/managers/" rel="external noopener">原文 (英語)</a> を参照してください。</p>

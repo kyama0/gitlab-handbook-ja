@@ -2,7 +2,7 @@
 title: ソーシャルメディアコミュニティマネジメント
 description: 'コミュニティへのエンゲージと応答'
 twitter_image: /images/opengraph/handbook/social-marketing/social-admin-cm.png
-twitter_image_alt: GitLab のソーシャルメディアコミュニティマネジメントハンドブックページ
+twitter_image_alt: GitLab's Social Media Community Management Handbook Page
 twitter_site: 'gitlab'
 twitter_creator: 'gitlab'
 upstream_path: /handbook/marketing/integrated-marketing/digital-strategy/social-marketing/community-management/

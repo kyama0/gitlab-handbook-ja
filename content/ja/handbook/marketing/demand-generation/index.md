@@ -11,8 +11,6 @@ translator: claude
 stale: false
 ---
 
----
-
 ### デマンドジェネレーションの主要指標 {#key-metrics}
 
 - **ノーススター指標:** MQL

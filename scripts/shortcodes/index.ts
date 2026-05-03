@@ -131,6 +131,7 @@ const HANDLERS: Record<string, ShortcodeHandler> = {
   tableau: upstreamSection('Tableau ダッシュボード', ''),
   // Release
   'release-schedule': upstreamSection('リリーススケジュール', 'monthly-release-schedule'),
+  'marketing/release-post-scheduling': upstreamSection('リリース投稿スケジュール', ''),
   // Diagrams
   'devops-diagram': devopsDiagram,
 };

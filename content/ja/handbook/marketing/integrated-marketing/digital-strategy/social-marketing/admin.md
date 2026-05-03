@@ -2,7 +2,7 @@
 title: "ソーシャルメディアプロジェクトマネジメントと管理"
 description: GitLab チームメンバー向けのワークフロー、テンプレートなど
 twitter_image: "/images/opengraph/handbook/social-marketing/social-handbook-admin-pm.png"
-twitter_image_alt: "GitLab のソーシャルメディアハンドブックブランド画像"
+twitter_image_alt: "GitLab's Social Media Handbook branded image"
 twitter_site: "gitlab"
 twitter_creator: "gitlab"
 upstream_path: /handbook/marketing/integrated-marketing/digital-strategy/social-marketing/admin/

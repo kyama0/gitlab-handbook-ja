@@ -2,7 +2,7 @@
 title: チームメンバーソーシャルメディアアドボカシー
 description: チームメンバーが個人のソーシャルメディアチャンネルで GitLab 関連のニュースを共有できるよう支援するための戦略と詳細
 twitter_image: /images/opengraph/handbook/social-marketing/team-member-social-advocacy-opengraph.png
-twitter_image_alt: GitLab のソーシャルメディアハンドブックブランド画像
+twitter_image_alt: GitLab's Social Media Handbook branded image
 twitter_site: gitlab
 twitter_creator: gitlab
 upstream_path: /handbook/marketing/integrated-marketing/digital-strategy/social-marketing/team-member-social-advocacy/
