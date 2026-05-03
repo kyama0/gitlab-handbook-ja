@@ -51,7 +51,7 @@ GitLab法務[コマーシャル](/handbook/legal/commercial/)チームは、GitL
 
 ### 戦略・法務オペレーション
 
-[戦略・法務オペレーション](/handbook/legal/legalops/)グループは、LАCAが効率的かつ効果的にパフォーマンスできるよう、最適なツールと技術の調達を含む継続的なプロセス改善を推進します。
+[戦略・法務オペレーション](/handbook/legal/legalops/)グループは、LACAが効率的かつ効果的にパフォーマンスできるよう、最適なツールと技術の調達を含む継続的なプロセス改善を推進します。
 
 ### サステナビリティ
 
@@ -81,7 +81,7 @@ GitLab法務[コマーシャル](/handbook/legal/commercial/)チームは、GitL
 
 ## 秘密保持契約（NDA）
 
-NDАを送付するには、[秘密保持契約のプロセス](/handbook/legal/nda/)に従ってください。
+NDAを送付するには、[秘密保持契約のプロセス](/handbook/legal/nda/)に従ってください。
 
 ## コンプライアンス研修
 
@@ -104,4 +104,3 @@ NDАを送付するには、[秘密保持契約のプロセス](/handbook/legal/
 </style>
 
 </details>
-

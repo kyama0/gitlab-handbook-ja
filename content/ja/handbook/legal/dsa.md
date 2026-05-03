@@ -15,11 +15,11 @@ stale: false
             <form action="https://us-central1-glsec-trust-safety-live.cloudfunctions.net/dsa-webhook" method="post" id="dsaForm" target="hidden-form">
                 <div class="mb-3">
                     <label for="email" class="form-label">メールアドレス</label>
-                    <input name="email" type="email" required class="form-control">
+                    <input id="email" name="email" type="email" required class="form-control">
                 </div>
                 <div class="mb-3">
                     <label for="violation" class="form-label">報告する法的違反の種類</label>
-                    <select name="violation" required class="form-control" id="lang">
+                    <select id="violation" name="violation" required class="form-control">
                         <option value="violence">暴力</option>
                         <option value="terrorist">テロリストコンテンツ</option>
                         <option value="hateful">ヘイトコンテンツ</option>
@@ -32,15 +32,15 @@ stale: false
                 </div>
                 <div class="mb-3">
                     <label for="location" class="form-label">違法コンテンツの場所または URL</label>
-                    <textarea name="location" type="text" required class="form-control"></textarea>
+                    <textarea id="location" name="location" type="text" required class="form-control"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="description" class="form-label">このコンテンツが違法と考える理由の詳細な説明を記入してください</label>
-                    <textarea name="description" type="text" required class="form-control"></textarea>
+                    <textarea id="description" name="description" type="text" required class="form-control"></textarea>
                 </div>
                 <div class="mb-3">
                     <label for="country" class="form-label">所在する EU 加盟国</label>
-                    <select name="country" required class="form-control" id="lang">
+                    <select id="country" name="country" required class="form-control">
                         <option value="austria">Austria</option>
                         <option value="belgium">Belgium</option>
                         <option value="bulgaria">Bulgaria</option>
@@ -98,10 +98,19 @@ stale: false
 </div>
 
 <script>
+    let dsaSubmitted = false;
+
     $("#dsaForm").on("submit", function(event) {
-        console.log("Triggering submit");
+        dsaSubmitted = true;
+    });
+
+    $("iframe[name='hidden-form']").on("load", function() {
+        if (!dsaSubmitted) {
+            return;
+        }
         $("#thankyou").show();
         $("#dsaFormDiv").hide();
+        dsaSubmitted = false;
     });
 </script>
 

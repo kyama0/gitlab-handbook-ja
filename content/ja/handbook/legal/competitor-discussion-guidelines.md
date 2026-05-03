@@ -1,6 +1,6 @@
 ---
 title: "競合他社製品機能の公開討論に関するガイドライン"
-description: "公開 Issue、GitLab ドキュメント、およびその他の公開向けメディアにおける競合他社製品の機能とスクリーンショットの参照方法について規定するガイドライン。"
+description: "公開 Issue、GitLab [ドキュメント](http://docs.gitlab.com)、およびその他の公開向けメディアにおける競合他社製品の機能とスクリーンショットの参照方法について規定するガイドライン。"
 upstream_path: "/handbook/legal/competitor-discussion-guidelines/"
 upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
 translated_at: "2026-04-29T00:00:00Z"
