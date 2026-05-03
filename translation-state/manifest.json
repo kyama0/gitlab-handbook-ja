@@ -5145,6 +5145,201 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "429874d7e7f6b148e528a8e09e1c3c7ca496025271de8c2e64d5abb18371ba2b"
     },
+    "content/handbook/marketing/_index.md": {
+      "path": "content/handbook/marketing/_index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T07:54:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "27a38ede9d6c7ae730886c5ea5892ee30b1e4200403b2ab4fb1fa36ad8d107c7"
+    },
+    "content/handbook/marketing/account-based-marketing/_index.md": {
+      "path": "content/handbook/marketing/account-based-marketing/_index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T07:54:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "35e4aa2aee6a3a02368b0d8436d3ef636991afce73f3283db63a5bfa13d25ff1"
+    },
+    "content/handbook/marketing/blog/_index.md": {
+      "path": "content/handbook/marketing/blog/_index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T07:54:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f78fd6812d880e7ca4eac3332c63c15c46599f92bc24ab7c49b88f175af1d796"
+    },
+    "content/handbook/marketing/blog/blog-metrics.md": {
+      "path": "content/handbook/marketing/blog/blog-metrics.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T07:54:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c5d9c11a0c7261bb858bec3c26ac7069d944f656140f5d06ccdd6188a6d34a03"
+    },
+    "content/handbook/marketing/blog/git-guide.md": {
+      "path": "content/handbook/marketing/blog/git-guide.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T07:54:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "78b2faca9b030f7e001d50a7ff69202f9b6a2beeb023dea5c37b39f0603655a1"
+    },
+    "content/handbook/marketing/blog/release-posts/_index.md": {
+      "upstream_sha": "4dd867bb5474243a3eda82ced06a78b7e4682f34",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "00fb97012761b394d294f80be9da3294a1a6fdc0bde73928fa73eeadd16074fc"
+    },
+    "content/handbook/marketing/blog/release-posts/managers.md": {
+      "path": "content/handbook/marketing/blog/release-posts/managers.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0e2413bd720ffd4ce3dcd7e3a3b3ecda8b252b82d4838d33bdf7b9060df03be6"
+    },
+    "content/handbook/marketing/blog/release-posts/manual-release-post-kickoff/index.md": {
+      "path": "content/handbook/marketing/blog/release-posts/manual-release-post-kickoff/index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "39f2b517ad1e6354948df968855463a63dae16919c369bbbc9ddd81e2ccca3f4"
+    },
+    "content/handbook/marketing/campaigns/_index.md": {
+      "path": "content/handbook/marketing/campaigns/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4cfa13f1c9e2900306e9a9a82ce05f2ddede120f30a13ba6d63310c8bf42e419"
+    },
+    "content/handbook/marketing/campaigns/cicd.md": {
+      "path": "content/handbook/marketing/campaigns/cicd.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fdad4cdfb4705049dc35147a31a16daa3a9dad1d847fd9a8d854cb226ae6c872"
+    },
+    "content/handbook/marketing/campaigns/devsecops2.md": {
+      "path": "content/handbook/marketing/campaigns/devsecops2.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "88de48d2ebc9f123eb92d364b71a7db08f9ac7896d6524ed0efbcdaf17f292d6"
+    },
+    "content/handbook/marketing/campaigns/template.md": {
+      "path": "content/handbook/marketing/campaigns/template.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9963790d7b60022edcbf2578b2f638f23cefaaed5da059337249a9bf23e0ec5b"
+    },
+    "content/handbook/marketing/channel-marketing/_index.md": {
+      "path": "content/handbook/marketing/channel-marketing/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8e804795efe68414973912c0675828007af50ae587aabbb650002c0821f74f9d"
+    },
+    "content/handbook/marketing/channel-marketing/channel-marketing-epics/_index.md": {
+      "path": "content/handbook/marketing/channel-marketing/channel-marketing-epics/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "26be4e23713c4496c61dab34942b812c0c3f9d304dc1c10e60cc8095b15435f1"
+    },
+    "content/handbook/marketing/channel-marketing/channel-marketing-epics/channel-marketing-service-offerings.md": {
+      "path": "content/handbook/marketing/channel-marketing/channel-marketing-epics/channel-marketing-service-offerings.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f2375766daf37c3080b6b3234ccd8b76356f8c997e74cdb75ab226e916d56c39"
+    },
+    "content/handbook/marketing/channel-marketing/hyperscalers.md": {
+      "path": "content/handbook/marketing/channel-marketing/hyperscalers.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4fb92042d92174aa0f7657538a178168437486d619d131aa8b8e4b479fd6a806"
+    },
+    "content/handbook/marketing/channel-marketing/mdf-operations-process.md": {
+      "path": "content/handbook/marketing/channel-marketing/mdf-operations-process.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "538f24084947b9707cd7f110afad92b4ac2f2826a2ed5245d62abf1b123d6815"
+    },
+    "content/handbook/marketing/cmo-shadow.md": {
+      "path": "content/handbook/marketing/cmo-shadow.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e8a29f2a6cb2cd78546562732ea2635bcdd5f1ed7f370af79e22d8457cd8039c"
+    },
+    "content/handbook/marketing/cmo.md": {
+      "path": "content/handbook/marketing/cmo.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ccef5f0e84b8f954ee4ea30b95656a241f5cb565df7ef328ddcf3a7cafff0f5"
+    },
+    "content/handbook/marketing/corporate-communications/_index.md": {
+      "path": "content/handbook/marketing/corporate-communications/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dbf243e02896f5d2471edd95e72e6de0052adf51b34a607a12c2e1849c0ef4e1"
+    },
+    "content/handbook/marketing/corporate-communications/incident-communications-plan.md": {
+      "path": "content/handbook/marketing/corporate-communications/incident-communications-plan.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cc765d7b5fa035f7c7af1093987f44d0593ddc7fff05ff30690c3990c36c3fed"
+    },
+    "content/handbook/marketing/corporate-communications/resources-trainings.md": {
+      "path": "content/handbook/marketing/corporate-communications/resources-trainings.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9a702ae6b4b38e60b291ede61e112d6034ffac766af08488275c4a0fdb90df66"
+    },
+    "content/handbook/marketing/corporate-communications/speaking-resources.md": {
+      "path": "content/handbook/marketing/corporate-communications/speaking-resources.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d084331197bd5eaca1170f1b2ff1b80c0c8313d42a2b53d0d2be51f67774d342"
+    },
+    "content/handbook/marketing/demand-generation/_index.md": {
+      "path": "content/handbook/marketing/demand-generation/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0903a4dba9b0e026d9a006fdc411ce8e2f13f7763a53c50616ec8f3ba595f5e2"
+    },
+    "content/handbook/marketing/demand-generation/campaigns/_index.md": {
+      "path": "content/handbook/marketing/demand-generation/campaigns/_index.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "47275f7fc059f3bcb29845b83ac6a6a50381ed7920c6db347bf12297ca089129"
+    },
+    "content/handbook/marketing/demand-generation/campaigns/content-in-campaigns.md": {
+      "path": "content/handbook/marketing/demand-generation/campaigns/content-in-campaigns.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "760c993b66fc535c77da9b27fa824301a51d93ea5e5b60c5112c5d2587f7b7c8"
+    },
+    "content/handbook/marketing/demand-generation/campaigns/direct-mail.md": {
+      "path": "content/handbook/marketing/demand-generation/campaigns/direct-mail.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "877130ba71e0cf1e0b8d84799d61800b0dd49b63cf616c042156733152ee966d"
+    },
+    "content/handbook/marketing/demand-generation/campaigns/landing-pages.md": {
+      "path": "content/handbook/marketing/demand-generation/campaigns/landing-pages.md",
+      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ee15e443f3a36b69989b78803cb75a7fce8638dc0cc20d9d48889fb0e74ffc9c"
+    },
     "content/handbook/marketing/developer-relations/_index.md": {
       "path": "content/handbook/marketing/developer-relations/_index.md",
       "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
@@ -5852,6 +6047,322 @@
       "model": "claude-opus-4-7",
       "input_hash": "aac206330971c59f72634a56c6e6514605399e4433ce3e149ed0a308242e442a"
     },
+    "content/handbook/marketing/efficiency-wg-fy24.md": {
+      "path": "content/handbook/marketing/efficiency-wg-fy24.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "94668474a0ea85d50d0d9838565a79a63df542e175e0d38599c2a9f3014f158a"
+    },
+    "content/handbook/marketing/emergency-response.md": {
+      "path": "content/handbook/marketing/emergency-response.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T12:25:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d724ffc2d4e0060e15da8891818372d7f4da99838bf1dfad5fbd97f0723834dc"
+    },
+    "content/handbook/marketing/events/_index.md": {
+      "path": "content/handbook/marketing/events/_index.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T12:25:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "235447a868c666e1879771ac740da79bb2aff20ebf9c339482f47f8cd8e01210"
+    },
+    "content/handbook/marketing/events/event-requirements.md": {
+      "path": "content/handbook/marketing/events/event-requirements.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T12:25:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "45f89fe2faee99877146c6b773875e29a39f8bdcbb1896fa1acccecbee6619bb"
+    },
+    "content/handbook/marketing/field-marketing/_index.md": {
+      "upstream_sha": "cee17ee633d1662afe3dff93fdaab9bcbeddee99",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ca5ab962b4a9f097d547edb2c7eda57fb40783fa5e86f699de438203ef163444"
+    },
+    "content/handbook/marketing/field-marketing/field-marketing-epics.md": {
+      "path": "content/handbook/marketing/field-marketing/field-marketing-epics.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T12:25:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "653cdf92ef0412fb90f333c1d06beabcc6987669c153448e056cca4f08864c2f"
+    },
+    "content/handbook/marketing/field-marketing/field-marketing-owned-virtual-events.md": {
+      "upstream_sha": "edd8c6568dbcc09416a52d0c74b1d275e419c48b",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dda6aace043dabf1be1a5f670271381ce3bbba6b9b739cf7783a14188efa3089"
+    },
+    "content/handbook/marketing/growth/_index.md": {
+      "path": "content/handbook/marketing/growth/_index.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T12:25:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8ff237e6071e6444d56a026c0d49ca756695c48f0b12014b40895bd44984cd66"
+    },
+    "content/handbook/marketing/inbound-marketing/_index.md": {
+      "path": "content/handbook/marketing/inbound-marketing/_index.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T12:25:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1a432cac712d17f117f5377a92969e7b75a20c5ee97b7670638ecf217750d5ec"
+    },
+    "content/handbook/marketing/inbound-marketing/search-marketing/_index.md": {
+      "path": "content/handbook/marketing/inbound-marketing/search-marketing/_index.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T12:25:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "885234675c8bc7e4ae3098188705d42c3665e8f7b890d1ed7c370fe759c8d800"
+    },
+    "content/handbook/marketing/inbound-marketing/search-marketing/handbook-error-mash.md": {
+      "path": "content/handbook/marketing/inbound-marketing/search-marketing/handbook-error-mash.md",
+      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
+      "translated_at": "2026-05-01T12:25:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d806cfd01360ac9417cb2940067e88feed14bbf63b4a875f9de154bd90f290ba"
+    },
+    "content/handbook/marketing/inbound-marketing/search-marketing/seo-content-manual.md": {
+      "path": "content/handbook/marketing/inbound-marketing/search-marketing/seo-content-manual.md",
+      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d68c3cd263638e32a3e33479263b0eebf53e7ee6749a84080d621ae511fb170f"
+    },
+    "content/handbook/marketing/inbound-marketing/search-marketing/seo-strategy.md": {
+      "path": "content/handbook/marketing/inbound-marketing/search-marketing/seo-strategy.md",
+      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7c0326fab2c5365bb8aa9832abc740807a2bfbccbdaf6f854db1e05dbaf9f035"
+    },
+    "content/handbook/marketing/inbound-marketing/search-marketing/sitebulb.md": {
+      "path": "content/handbook/marketing/inbound-marketing/search-marketing/sitebulb.md",
+      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ca756f1cf0e866e19179c3c8cfc02c4c79eab40a4d1e97e1b7c6cf7e96673028"
+    },
+    "content/handbook/marketing/inbound-marketing/search-marketing/testing.md": {
+      "path": "content/handbook/marketing/inbound-marketing/search-marketing/testing.md",
+      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "27ad5dd38b5c203278b016aef415bc2c423eaf7b5059da0b136431c666e53511"
+    },
+    "content/handbook/marketing/integrated-marketing/_index.md": {
+      "path": "content/handbook/marketing/integrated-marketing/_index.md",
+      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "be324f4dcfcc279816389b2949c53dd346cb298389a85bd3c02a34687061374c"
+    },
+    "content/handbook/marketing/integrated-marketing/corporate-events.md": {
+      "path": "content/handbook/marketing/integrated-marketing/corporate-events.md",
+      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4ed86ac51017e4ac52d6539ea813ed5f5e414830b170b3505b95febbffef44f9"
+    },
+    "content/handbook/marketing/integrated-marketing/digital-strategy/_index.md": {
+      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/_index.md",
+      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "838dd1c3fc61cef6940050a2fde1de6d0b322429c4d446263a0d7bedca88819b"
+    },
+    "content/handbook/marketing/integrated-marketing/digital-strategy/agency.md": {
+      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/agency.md",
+      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9f0935a49fbb14868e861309d292b30db01600466e8be02e9de31b91bb8a99c9"
+    },
+    "content/handbook/marketing/integrated-marketing/digital-strategy/digital-strategy-management/_index.md": {
+      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/digital-strategy-management/_index.md",
+      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2133c366563afa537a148d3fed3202cf80a3e38d549623aecfac8bd222bcb32d"
+    },
+    "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/_index.md": {
+      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/_index.md",
+      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b970f6814bc9ba33fc8011dd2ef4c4c539c7093a8b9df850f8b1ce6d84e93472"
+    },
+    "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/admin.md": {
+      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/admin.md",
+      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
+      "translated_at": "2026-05-01T14:48:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8da3873590c64f46a3a0a21129dfb0930ac0467ab4b0e8a44c7c7becf0616f42"
+    },
+    "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/community-management.md": {
+      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/community-management.md",
+      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
+      "translated_at": "2026-05-01T14:48:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fe690d34a54b79a7220d3c4b455902806001ada55436519f3c5f2909bb60cacc"
+    },
+    "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/open-source-social.md": {
+      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/open-source-social.md",
+      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
+      "translated_at": "2026-05-01T14:48:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "df0dcddc63ff278da6deadb29b91f026afe1bed468ee5416e6f88f4625c88503"
+    },
+    "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/social-advocacy-curators.md": {
+      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/social-advocacy-curators.md",
+      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
+      "translated_at": "2026-05-01T14:48:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b2a010484fcff959df5f68eb46d81d413c579282866ffc3b04255e65fdf59c00"
+    },
+    "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/social-reporting.md": {
+      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/social-reporting.md",
+      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
+      "translated_at": "2026-05-01T14:48:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ccc223bc4410b24684badb3f2b30262ab560fcb89ea46313c096e8ed8fedc57a"
+    },
+    "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/team-member-social-advocacy.md": {
+      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/team-member-social-advocacy.md",
+      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
+      "translated_at": "2026-05-01T14:48:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "87ef35550ea3a1272f6ed7afd009760bda4242346ceecdf35d767721f0e785b7"
+    },
+    "content/handbook/marketing/journeys.md": {
+      "path": "content/handbook/marketing/journeys.md",
+      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
+      "translated_at": "2026-05-01T14:48:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7dfe2e0db608e586c32007800e000af23e22e5e8b0519640e01844d538e684ac"
+    },
+    "content/handbook/marketing/lifecycle-marketing/_index.md": {
+      "path": "content/handbook/marketing/lifecycle-marketing/_index.md",
+      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
+      "translated_at": "2026-05-01T14:48:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ee3491c01b9f07072a5c223fa3775b20cdac21518816c43017027394abc4b5b2"
+    },
+    "content/handbook/marketing/lifecycle-marketing/email-best-practices.md": {
+      "path": "content/handbook/marketing/lifecycle-marketing/email-best-practices.md",
+      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
+      "translated_at": "2026-05-01T14:48:17Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1c8a757e83fc5da6088e33bce327fb438847fd52dbee4ac701e5242eaede6bf1"
+    },
+    "content/handbook/marketing/lifecycle-marketing/email-processes-requests.md": {
+      "path": "content/handbook/marketing/lifecycle-marketing/email-processes-requests.md",
+      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cc8573db4e2f5b877cf8a0d09ce1aad4ae995b4cc7e6a5c129487b8dc32cd8e5"
+    },
+    "content/handbook/marketing/lifecycle-marketing/emails-nurture/index.md": {
+      "path": "content/handbook/marketing/lifecycle-marketing/emails-nurture/index.md",
+      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5e2b3ba91b67a88ca374abbf0bba0707af1c703284800b8f27765f12cd179c98"
+    },
+    "content/handbook/marketing/localization/_index.md": {
+      "path": "content/handbook/marketing/localization/_index.md",
+      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a1dd1ec011cbb6c35b2fb3d0a94cab9a0d4159b22c676aa982fdd36f8188a430"
+    },
+    "content/handbook/marketing/localization/category_internationalization.md": {
+      "path": "content/handbook/marketing/localization/category_internationalization.md",
+      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "553f1248c091c953d7e526083944eef218cdedd5225f9b3f0730abaf2d034043"
+    },
+    "content/handbook/marketing/localization/engineering.md": {
+      "path": "content/handbook/marketing/localization/engineering.md",
+      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5daa70704923c4d4f81aee0cfe0fa1ccc157bf50108b4bf81b37ab51863ceb03"
+    },
+    "content/handbook/marketing/localization/localization_technology.md": {
+      "path": "content/handbook/marketing/localization/localization_technology.md",
+      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "439f8cbd82909ef812a988d591a85a12e2b77551e2172ae3a577ec24de3656cb"
+    },
+    "content/handbook/marketing/localization/marketing_localization.md": {
+      "path": "content/handbook/marketing/localization/marketing_localization.md",
+      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e0a2e73e4db13aa39773ae112889c1cf9158e669cac69411949c43c4cc2057a0"
+    },
+    "content/handbook/marketing/localization/tech_docs_localization.md": {
+      "path": "content/handbook/marketing/localization/tech_docs_localization.md",
+      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2fe27a55cab8c5b9249504cc00b712af614592530acb206795185c9c870f1544"
+    },
+    "content/handbook/marketing/localization/translation_mr_review_workflow.md": {
+      "path": "content/handbook/marketing/localization/translation_mr_review_workflow.md",
+      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "455984638570af6fb658a2ef1eefa07cb59072b51a0cfb1701ce0c422b244607"
+    },
+    "content/handbook/marketing/marketing-career-development/_index.md": {
+      "path": "content/handbook/marketing/marketing-career-development/_index.md",
+      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c278f193fd4716d6227241e76294ef3cd65eba4bf1276fc94dc535c3d30c40ee"
+    },
+    "content/handbook/marketing/marketing-career-development/career-path.md": {
+      "upstream_sha": "6d57cb48e5122af4d9d6d86f68303aef0a09a7d8",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "40c38d3b48fde4be3d6cae1d197108a0662e1a5a1ea750fee697ce2ead4d6dd5"
+    },
+    "content/handbook/marketing/marketing-career-development/contributor-success/_index.md": {
+      "upstream_sha": "6d57cb48e5122af4d9d6d86f68303aef0a09a7d8",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "613b5413e19bf436295778dbcca2380b9f13bd8deb2350ed42cd03db907bea7a"
+    },
+    "content/handbook/marketing/marketing-career-development/contributor-success/intermediate.md": {
+      "upstream_sha": "6d57cb48e5122af4d9d6d86f68303aef0a09a7d8",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d34da30e8d2573ba958b9f666a2b3a92290f4eb158dde9263957e22d1337cc72"
+    },
+    "content/handbook/marketing/marketing-career-development/contributor-success/senior.md": {
+      "upstream_sha": "6d57cb48e5122af4d9d6d86f68303aef0a09a7d8",
+      "translated_at": "2026-05-01T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "68a4c4434517f4e5c4522afaaa33a5150d3d88e281840e0f77ecb2da5b6d73f5"
+    },
+    "content/handbook/marketing/marketing-career-development/contributor-success/staff.md": {
+      "path": "content/handbook/marketing/marketing-career-development/contributor-success/staff.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3a2508f53631fdbeff63f9547930ab34744aad147f191410c8204a5b8f2e522a"
+    },
+    "content/handbook/marketing/marketing-enablement.md": {
+      "path": "content/handbook/marketing/marketing-enablement.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bf78cd97cc56d3f457104b9e921584eb6854fb19a69cae5a818e7bbe03a0aa25"
+    },
     "content/handbook/marketing/marketing-operations/6sense.md": {
       "path": "content/handbook/marketing/marketing-operations/6sense.md",
       "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
@@ -6187,6 +6698,111 @@
       "translated_at": "2026-05-01T01:25:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "d16915b7c035700506607b046e93ccfc13d07d66b6dcb9997ff36b92139c67cb"
+    },
+    "content/handbook/marketing/marketing-strategy-and-platforms.md": {
+      "path": "content/handbook/marketing/marketing-strategy-and-platforms.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-01T01:05:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a247108bbe3b02af0b424970277cdfe6c5d8d988f8522540408eace95060f087"
+    },
+    "content/handbook/marketing/marketing-team-processes.md": {
+      "path": "content/handbook/marketing/marketing-team-processes.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-01T01:50:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8712fe91dc42cd98efe042af777daec42d10610427815f2fe8dcdab1d25518ec"
+    },
+    "content/handbook/marketing/plan-fy22.md": {
+      "path": "content/handbook/marketing/plan-fy22.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-01T02:15:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e46a37afbd174e5007f6d5346b8cb36455ab0cdcd1ccbbb646e4e69a7c7de03c"
+    },
+    "content/handbook/marketing/plan-fy23.md": {
+      "path": "content/handbook/marketing/plan-fy23.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-01T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "844be9965d819580e6e7495b1fb60d487cf5ded9a6a85de2599faac437156372"
+    },
+    "content/handbook/marketing/positioning-faq.md": {
+      "path": "content/handbook/marketing/positioning-faq.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-01T02:05:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1a1b3c600230048ea7a6a8120a9371ad547b18cf267652587872106c14b616d1"
+    },
+    "content/handbook/marketing/prescriptive-buyer-journeys.md": {
+      "path": "content/handbook/marketing/prescriptive-buyer-journeys.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "943582fbeb6d92212dba96495c9b1e485c09506d7e5556f36940b53781006f02"
+    },
+    "content/handbook/marketing/project-management-guidelines/_index.md": {
+      "path": "content/handbook/marketing/project-management-guidelines/_index.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1f9a1181773c36ed29ca02ea61e52dc83b821eb523c88663313ebe8c68a3c8a3"
+    },
+    "content/handbook/marketing/project-management-guidelines/boards.md": {
+      "path": "content/handbook/marketing/project-management-guidelines/boards.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "17723b6cf42df6c106c94de38d7a13fb1d0933ca5ad9f133f7b15a174b340a25"
+    },
+    "content/handbook/marketing/project-management-guidelines/commitment.md": {
+      "path": "content/handbook/marketing/project-management-guidelines/commitment.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b5aff60aa28dddcab4ce9abd94870a4e564101de6f895b28f627726e98e7b7e3"
+    },
+    "content/handbook/marketing/project-management-guidelines/epics.md": {
+      "path": "content/handbook/marketing/project-management-guidelines/epics.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5d2b65aba42ae5523e8359a5d73effc61051e826763b38fd1652832d9f59b96f"
+    },
+    "content/handbook/marketing/project-management-guidelines/groups.md": {
+      "path": "content/handbook/marketing/project-management-guidelines/groups.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4c590b2f34551aca9e4bde7cb7e1ad0d5230b2110d4649401fc20e2763eba77b"
+    },
+    "content/handbook/marketing/project-management-guidelines/issues.md": {
+      "path": "content/handbook/marketing/project-management-guidelines/issues.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ca917f533c6c887000245de5bd6be89d3f416f242170ebad172bd842fd9a9d09"
+    },
+    "content/handbook/marketing/project-management-guidelines/labels.md": {
+      "path": "content/handbook/marketing/project-management-guidelines/labels.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8a7caec0a6c53acf8364d655c9e75ec34b752b0d737933d78d10612c28b87a5a"
+    },
+    "content/handbook/marketing/project-management-guidelines/milestones.md": {
+      "path": "content/handbook/marketing/project-management-guidelines/milestones.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9b075579e51c37e85d3f59b07bdc385e33bfcfeff785ee057ab79cb563715915"
+    },
+    "content/handbook/marketing/readmes/_index.md": {
+      "path": "content/handbook/marketing/readmes/_index.md",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-04-30T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ebb3e4a36116fddfde2cd2ad19f80fbaccd4a1a5777234c6840d079dcafe19ef"
     }
   }
 }
