@@ -109,21 +109,21 @@ flowchart TD;
 
 __即座に__
 
-1. [CS Help リクエスト](#cs-help-request)を開始またはレビューする
-      1. CSM が DRI の場合は、CS Help - エスカレーションサポートケースを開始する
-      1. 地域 CSE リーダーが DRI の場合は、エスカレーションを特定した AE、RM、SA、または他の GitLab 従業員によって開始された CS Help - エスカレーションサポートケースをレビューする
-1. GitLab 内部でのエスカレーション中のコミュニケーションを促進するための [Slack チャンネル](#temporary-slack-channel)を作成する
-1. [エスカレーション DRI と即座の依頼を特定する](#identify-escalation-dri-and-immediate-asks)
-1. `#escalated_customers` でのエスカレーション宣言の自動確認を待つ
+1. [CS Help リクエスト](#cs-help-request)を開始またはレビューしてください
+      1. CSM が DRI の場合は、CS Help - エスカレーションサポートケースを開始してください
+      1. 地域 CSE リーダーが DRI の場合は、エスカレーションを特定した AE、RM、SA、または他の GitLab 従業員によって開始された CS Help - エスカレーションサポートケースをレビューしてください
+1. GitLab 内部でのエスカレーション中のコミュニケーションを促進するための [Slack チャンネル](#temporary-slack-channel)を作成してください
+1. [エスカレーション DRI と即座の依頼を特定してください](#identify-escalation-dri-and-immediate-asks)
+1. `#escalated_customers` でのエスカレーション宣言の自動確認を待ってください
 
 __24 時間以内に__
 
-1. エスカレーション実行中の[内部スタンドアップケイデンス](#internal-standup-cadence)シリーズを設定して文書化し、詳細をエスカレーションケースに記載する
+1. エスカレーション実行中の[内部スタンドアップケイデンス](#internal-standup-cadence)シリーズを設定して文書化し、詳細をエスカレーションケースに記載してください
 
 __継続的に__
 
-1. [重大度レベルの定義](#definitions-of-severity-levels)で説明されているケイデンスに従って、Gainsight ケース CTA にアップデートを投稿する
-1. [CS Help リクエスト](#cs-help-request)の終了基準と DRI を最新の状態に保つ
+1. [重大度レベルの定義](#definitions-of-severity-levels)で説明されているケイデンスに従って、Gainsight ケース CTA にアップデートを投稿してください
+1. [CS Help リクエスト](#cs-help-request)の終了基準と DRI を最新の状態に保ってください
 
 #### 一時的な Slack チャンネル {#temporary-slack-channel}
 
