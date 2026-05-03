@@ -238,5 +238,5 @@ GitLab の全員は[影響を測定し、活動量を測定しない](/handbook/
 
 取り組む作業を選んだら、以下を実施してください:
 
-1. 標準ワークフローに従い、自分にアサインする。
-1. [#s_plan](https://gitlab.slack.com/archives/s_plan) でシェアする - さらに広く（[#development](https://gitlab.slack.com/archives/development) や [#backend](https://gitlab.slack.com/archives/backend) など）でも構いません。
+1. 標準ワークフローに従い、自分にアサインしてください。
+1. [#s_plan](https://gitlab.slack.com/archives/s_plan) でシェアしてください（さらに広く、[#development](https://gitlab.slack.com/archives/development) や [#backend](https://gitlab.slack.com/archives/backend) などでも構いません）。

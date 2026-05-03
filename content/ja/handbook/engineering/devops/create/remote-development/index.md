@@ -256,39 +256,39 @@ graph TD;
 
 **前提条件：** まだの場合は Polly アプリを Slack に追加してください。
 
-1. Slack の Apps セクションから Polly アプリケーションに移動する。
-1. Create a Polly を選択する。
-1. Create New を選択する。
-1. Multiple Choice を選択する。
-1. 作成オプションを入力する：
-    1. Create Question：Weight for: **_ここに Issue のリンクを追加_**
-    1. Question Type：Multiple Choice。
-    1. 以下の選択肢を入力：**0 1 2 3 5 8**（各数字を別の行に）
-    1. Choose audience：**_remote_development_async_ipm_** チャンネルを選択。
-    1. "Send polly as direct message" が**_チェックされていない_**ことを確認する。
-    1. Settings ボタンを選択する。
-    1. Responses：**_Non-anonymous_** を選択する。
-    1. Results：**_Show after close_** を選択する。
-    1. Submit を選択して変更を保存する。
-1. Polly を送信する。
+1. Slack の Apps セクションから Polly アプリケーションに移動してください。
+1. Create a Polly を選択してください。
+1. Create New を選択してください。
+1. Multiple Choice を選択してください。
+1. 作成オプションを入力してください：
+    1. Create Question に Weight for: **_ここに Issue のリンクを追加_** と入力してください。
+    1. Question Type で Multiple Choice を選択してください。
+    1. 以下の選択肢を入力してください：**0 1 2 3 5 8**（各数字を別の行に）
+    1. Choose audience で **_remote_development_async_ipm_** チャンネルを選択してください。
+    1. "Send polly as direct message" が**_チェックされていない_**ことを確認してください。
+    1. Settings ボタンを選択してください。
+    1. Responses で **_Non-anonymous_** を選択してください。
+    1. Results で **_Show after close_** を選択してください。
+    1. Submit を選択して変更を保存してください。
+1. Polly を送信してください。
 
 **オプションのステップ：テンプレートの作成**
 
 これにより、設定を標準化することで、以降の Async IPM を速くできます。作成後、ユーザーは "My Templates" セクションからテンプレートを選択し、Use Template を選択して、"Create Question" フィールドの Issue リンクを更新するだけで済みます。
 
-1. Slack の Apps セクションから Polly アプリケーションに移動する。
-1. Go to Polly Dashboard を選択する。
-1. 作成した Polly を選択する。
-1. Controls ボタンを選択する。
-1. Save as Template を選択する。
-1. Template のタイトル：**_Remote development async ipm_**。
-1. "Save audience with template" が**_チェックされている_**ことを確認する。
-1. Save を選択する。
+1. Slack の Apps セクションから Polly アプリケーションに移動してください。
+1. Go to Polly Dashboard を選択してください。
+1. 作成した Polly を選択してください。
+1. Controls ボタンを選択してください。
+1. Save as Template を選択してください。
+1. Template のタイトルに **_Remote development async ipm_** と入力してください。
+1. "Save audience with template" が**_チェックされている_**ことを確認してください。
+1. Save を選択してください。
 
 **非同期重み付けオプション：**
 
 - 重み付けは `#remote_development_async_ipm` Slack チャンネルを通じて非同期でも行えます。
-- 非同期重み付けを開始するには、重み付けが必要な Issue と[Polly ポール](https://www.polly.ai/help/slack/creating-polls)を投稿して入力を集める。
+- 非同期重み付けを開始するには、重み付けが必要な Issue と[Polly ポール](https://www.polly.ai/help/slack/creating-polls)を投稿して入力を集めてください。
 
 この構造により、同期および非同期の両方の参加が可能になり、今後の作業について徹底的な準備とアラインメントが実現できます。
 

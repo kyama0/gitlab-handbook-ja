@@ -26,13 +26,10 @@ Package ステージは以下のチームで構成されています：
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/package/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/package/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
-
 ### ステーブルカウンターパート
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/package/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">ステーブルカウンターパート情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/package/#stable-counterparts" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 ### パッケージフォーマット DRI
