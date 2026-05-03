@@ -98,6 +98,8 @@ const HANDLERS: Record<string, ShortcodeHandler> = {
   'team-by-manager-slug': teamMembersLink,
   'team-by-manager-role': teamMembersLink,
   'team-by-departments': teamMembersLink,
+  'department-member-count': teamMembersLink,
+  'department-members': teamMembersLink,
   // JS-driven UI controls in upstream — drop silently in the static export.
   'all-remote/country-select': noop,
   // Team member shortcodes — all pull from the people system; link to upstream.
