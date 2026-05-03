@@ -79,7 +79,7 @@ Import グループの作業は以下の Issue ボードで追跡できます：
 
 - [現在のマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/1459244?milestone_title=Upcoming&label_name[]=group%3A%3Aimport)
 
-### Issue ラベル
+### Issue ラベル {#issue-labels}
 
 良いラベルの管理を維持するために、Issue を作成またはトリアージする際は正しいラベルを適用してください。
 
@@ -107,7 +107,7 @@ Import グループの作業は以下の Issue ボードで追跡できます：
 使用するウェイトは以下のとおりです：
 
 | ウェイト | 説明 |
-| --- | --- | --- |
+| --- | --- |
 | 1: 些細 | 問題は非常によく理解されており、追加の調査は不要で、正確な解決策はすでにわかっていてあとは実装するだけです。予期せぬ問題はなく、他のチームや人々との調整も不要です。<br><br>例：ドキュメントの更新、すでに調査・検討済みで数行のコードで修正できる単純なリグレッションやバグ、またはまだ時間が見つかっていないだけで正確な対処方法がわかっているテクニカルデット。 |
 | 2: 小 | 問題はよく理解されており解決策の概要が描かれていますが、解決策を実現するためにもう少し追加の調査が必要な可能性があります。あったとしても少数の予期せぬ問題があり、他のチームや人々との調整は不要です。<br><br>例：既存のデータや機能を公開する新しい API エンドポイントのようなシンプルな機能、またはすでに調査が始まっている通常のバグやパフォーマンス Issue。 |
 | 3: 中 | よく理解されており比較的簡単な機能。解決策の概要が描かれ、ほとんどのエッジケースが考慮されていますが、解決策を実現するためにある程度の追加調査が必要です。いくつかの予期せぬ問題が予想され、他のチームや人々との調整が必要な場合があります。<br><br>比較的よく理解されておらず、まだ提案された解決策がないかもしれないバグ。重大な調査が確実に必要ですが、問題が見つかれば比較的簡単に解決できるはずです。<br><br>例：バックエンドとフロントエンドのコンポーネントを持つ通常の機能、またはほとんどのバグやパフォーマンス Issue。 |
@@ -192,7 +192,7 @@ Import グループでは、これらのガイドラインに加えて以下の 
 - [インポーター依存関係](#importer-dependencies)をレビューし、サードパーティ API の変更による必要な変更の Issue を作成する
 - マイルストーン終了時に [`@gitlab-com/create-team/import/reaction-rotation` のメンバーシップ](https://gitlab.com/groups/gitlab-com/create-team/import/reaction-rotation/-/group_members?with_inherited_permissions=exclude)を更新する
 
-##### インポーター依存関係
+##### インポーター依存関係 {#importer-dependencies}
 
 各マイルストーンで、各インポーターの依存関係の変更履歴を確認し、今後の破壊的変更や API の非推奨化がないかをチェックしてください。[GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/) を使って影響を評価し、更新が必要な変更には関連する `~"Importer:"` ラベルを付けた Issue を作成してください。
 
@@ -462,7 +462,7 @@ GitLab for Jira Cloud アプリワーカー：
 - [`JiraConnect::SyncProjectWorker`](https://log.gprd.gitlab.net/goto/5f0e03847ddc1b074d6346199c8bc4d2) エラー。
 - [すべての JiraConnect 同期ワーカー](https://log.gprd.gitlab.net/goto/39348f2d169e6929c41dba2d6fb063ee) タイムアウトエラー。
 
-### エラーバジェット
+### エラーバジェット {#error-budgets}
 
 GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使用して機能の可用性とパフォーマンスを測定しています。
 各エンジニアリンググループには独自のバジェット消費があります。Import チームの現在の28日間の消費は[Grafana ダッシュボード](https://dashboards.gitlab.net/d/stage-groups-import_and_integrate/stage-groups-import-and-integrate-group-dashboard?orgId=1)で確認できます。

@@ -22,7 +22,7 @@ Plan:Project Management チームは [Plan ステージ](/handbook/engineering/d
 ### 安定したカウンターパート
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">安定したカウンターパート情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/plan/project-management/#stable-counterparts" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 ### 採用チャート
@@ -149,8 +149,8 @@ GitLab の全員は[影響を測定し、活動量を測定しない](/handbook/
 
 取り組む作業を選んだら、以下を実施してください:
 
-1. 標準ワークフローに従い、自分にアサインする。
-1. [#s_plan](https://gitlab.slack.com/archives/s_plan) でシェアする - さらに広く（#development や #backend など）でも構いません。
+1. 標準ワークフローに従い、自分にアサインしてください。
+1. [#s_plan](https://gitlab.slack.com/archives/s_plan) でシェアしてください（さらに広く、#development や #backend などでも構いません）。
 
 ### 回顧
 
