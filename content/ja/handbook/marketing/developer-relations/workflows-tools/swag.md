@@ -8,5 +8,3 @@ stale: false
 ---
 
 Contributor Success チームのメンバーは、[Contributor Platform](https://contributors.gitlab.com/rewards) を通じて [Reward Store](https://rewards.gitlab.com/) のクレジットを付与できます。クレジットは swag やバーチャル報酬と交換可能で、たとえば [GitLab Forest](https://tree-nation.com/profile/gitlab/) で木を植えることができます。
-</content>
-</invoke>

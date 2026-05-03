@@ -32,6 +32,4 @@ stale: false
 
 ## 現在のマージリクエストコーチ
 
-GitLab には現在、{{< department-member-count "Merge Request Coach" >}}名のマージリクエストコーチがいます:
-
-{{< department-members "Merge Request Coach" >}}
+<p class="my-3 text-sm text-gray-600 italic">現在のマージリクエストコーチ数と一覧は <a href="https://handbook.gitlab.com/handbook/marketing/developer-relations/engineering/merge-request-coach-lifecycle/" rel="external noopener">原文 (英語)</a> を参照してください。</p>

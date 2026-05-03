@@ -7,7 +7,7 @@ translator: claude
 stale: false
 ---
 
-### 1. 動画をアップロードする
+## 1. 動画をアップロードする
 
 1. GitLab で使用する YouTube チャンネルは 2 つあります:
 
@@ -19,23 +19,23 @@ stale: false
    警告:
    これらのチャンネルに [**SAFE**](/handbook/legal/safe-framework/) データを公開してはいけません。何かが機密に該当する可能性があると思う場合は、法務に相談してください。
 
-1. 動画を投稿したい GitLab YouTube アカウントにログインします。
+1. 動画を投稿したい GitLab YouTube アカウントにログインしてください。
    GitLab ログインからすでに権限があるはずです。
    権限がなく、必要だと思う場合はアクセスリクエストを開いてください。
 
-1. プロフィール画像をクリックして **YouTube Studio** を選択します
+1. プロフィール画像をクリックして **YouTube Studio** を選択してください
 
    ![youtube studio option](/images/marketing/developer-relations/technical-marketing/publish_video_on_youtube/youtube_studio.png)
 
-1. 次に、プロフィール画像の隣にある **CREATE** ボタンをクリックして **Upload videos** を選択します
+1. 次に、プロフィール画像の隣にある **CREATE** ボタンをクリックして **Upload videos** を選択してください
 
    ![upload video option](/images/marketing/developer-relations/technical-marketing/publish_video_on_youtube/upload_video_option.png)
 
-1. ポップアップウィンドウが表示され、動画のアップロードを求められます
+1. ポップアップウィンドウが表示され、動画のアップロードを求められることを確認してください
 
    ![upload video popup](/images/marketing/developer-relations/technical-marketing/publish_video_on_youtube/upload_video_popup.png)
 
-1. 動画がアップロードされると、動画設定画面が表示されます
+1. 動画がアップロードされると、動画設定画面が表示されることを確認してください
 
    ![video configuration screen](/images/marketing/developer-relations/technical-marketing/publish_video_on_youtube/video_configuration_screen.png)
 
@@ -48,7 +48,7 @@ stale: false
    1. タイトルは潜在的な視聴者が最初に目にするものの 1 つで、動画をクリックするかどうかの決定に重要な役割を果たします。
       - タイトルは動画の内容を明確に説明するべきです。
       - 簡潔に、要点を押さえてください。
-   1. タイトルは検索にとって重要なため、タイトルを作成する際には、動画を検索するユーザーをターゲットにして、関連するキーワードを使用することを検討する必要があります。
+   1. タイトルは検索にとって重要なため、タイトルを作成する際には、動画を検索するユーザーをターゲットにして、関連するキーワードを使用することを検討してください。
 
 #### 説明文
 
@@ -70,7 +70,7 @@ stale: false
    1. 動画が長い場合や、複数のトピックを扱う場合は、タイムスタンプを含めてください。
    1. 適切に構造化された正確なタイムスタンプを提供することで、ユーザーエクスペリエンスを向上させ、視聴者が最も関連性の高いコンテンツに簡単に移動できるようにし、視聴者のエンゲージメントと満足度を高めます。
    1. タイムスタンプには、時刻 **「HH:MM:SS」** に続いて、そのセグメントが何についてのものかの簡単な説明が含まれます。
-   1. タイムスタンプを含め、動画をチャプターに分割するには、**Description** フィールドにタイムスタンプのリストを提供する必要があります
+   1. タイムスタンプを含め、動画をチャプターに分割するには、**Description** フィールドにタイムスタンプのリストを提供してください
 
       ![timestamps in the description](/images/marketing/developer-relations/technical-marketing/publish_video_on_youtube/timestamps_in_description.png)
 
@@ -129,14 +129,14 @@ stale: false
 
    ![next button in the checks tab](/images/marketing/developer-relations/technical-marketing/publish_video_on_youtube/next_in_checks_tab.png)
 
-1. **Visibility** タブでは、公開設定を指定し、動画が公開される日付をスケジュールできます
+1. **Visibility** タブでは、公開設定を指定し、動画が公開される日付をスケジュールしてください
 
    ![visibility screen](/images/marketing/developer-relations/technical-marketing/publish_video_on_youtube/visibility_screen.png)
 
 ### 3. 動画を公開する
 
-1. すべて設定したら **Save** ボタンをクリックします
+1. すべて設定したら **Save** ボタンをクリックしてください
 
    ![save button](/images/marketing/developer-relations/technical-marketing/publish_video_on_youtube/save_button.png)
 
-1. チャンネルで動画を表示し、すべてが期待通りに表示されることを確認します。
+1. チャンネルで動画を表示し、すべてが期待通りに表示されることを確認してください。

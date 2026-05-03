@@ -71,5 +71,3 @@ GitLab サブレディットには 3 種類の[投稿フレア](https://support.
 * [r/sysadmin](https://www.reddit.com/r/sysadmin/)
 * [r/Python](https://www.reddit.com/r/Python/)
 * [r/selfhosted](https://www.reddit.com/r/selfhosted/)
-</content>
-</invoke>

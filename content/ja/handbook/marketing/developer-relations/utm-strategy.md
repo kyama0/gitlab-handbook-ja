@@ -134,11 +134,11 @@ TBD
                 case 'display-blog':
                     result = result + 'utm_medium=display&utm_source=blog'
                     break;
-                case 'display-blog':
-                    result = result + 'utm_medium=display&utm_source=blog'
-                    break;
-                case 'display-blog':
+                case 'display-partner':
                     result = result + 'utm_medium=display&utm_source=partner'
+                    break;
+                case 'email':
+                    result = result + 'utm_medium=email&utm_source=mailjet'
                     break;
                 case 'display':
                     result = result + 'utm_medium=display'
