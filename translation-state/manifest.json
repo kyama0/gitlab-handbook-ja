@@ -2842,6 +2842,582 @@
       "model": "claude-sonnet-4-6",
       "input_hash": ""
     },
+    "content/handbook/engineering/development/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b399409581c02c08dd738471ba4a5003c93ef472719ceb071f8c639acab321b0"
+    },
+    "content/handbook/engineering/development/data-science/ai-powered/model-validation/model_evaluation.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e4eab8a3d86ec0b030de73fbb7da27243153035d305b246143e2d288c37e2724"
+    },
+    "content/handbook/engineering/development/database.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:38:02Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a3fb417c5065c7d1156e5f92bd2771ff8f32f77cfb199fd25323a370b80fe22c"
+    },
+    "content/handbook/engineering/development/fulfillment/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:38:02Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9efd152462c3fc987418bfacacd1f948e5d66ba35e321e889f11fe0c7971a837"
+    },
+    "content/handbook/engineering/development/fulfillment/dib.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:38:02Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "25fbdcd59dc73c3955914c68adbc79c14fc874e6f37717dddc9349f268f7da21"
+    },
+    "content/handbook/engineering/development/fulfillment/fulfillment-platform.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:38:02Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "329df3d9f1b119ca175d031be180db82749e6e570444e722a472b08688188134"
+    },
+    "content/handbook/engineering/development/fulfillment/provision.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:38:02Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8676ba47ba0d6a748bfdeb219ddfc366ed31bf9eb8fb0ca76a7e0ffd8fce2069"
+    },
+    "content/handbook/engineering/development/fulfillment/seat-management.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:38:02Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "78ed4aa1eab3d09e3e46e0440bbf877e3fd421b53482d666b74c5736540ff55d"
+    },
+    "content/handbook/engineering/development/fulfillment/subscription-management.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:38:02Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "04b4e925dedb8911ac5450a7abc1295200268c5b9c6bd940a1fdbb572d993763"
+    },
+    "content/handbook/engineering/development/fulfillment/utilization/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:38:02Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/development/growth/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:38:02Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6a1e3f9a0351e373b5f69f3c6685c6249d7174d99a3c2ad59f208d0f962c569d"
+    },
+    "content/handbook/engineering/development/growth/ai-prompts/epic-summary-prompt.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T04:38:02Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "84e15efc908ff263036c545d682096bd2da69052ac9ca5efdb8192c2124e97e7"
+    },
+    "content/handbook/engineering/development/growth/ai-prompts/follow-up-issue-enhancement-prompt.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:15:25Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "501a8ab7a208892ed82fdf03af11355f75e91b143ad4038f7633bdbdeb107737"
+    },
+    "content/handbook/engineering/development/growth/ai-prompts/refinement-assist.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:15:25Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8bf0b78068bab0e2794915943e53f0ab8b137449a26b16fd7d92ac8fbbc38298"
+    },
+    "content/handbook/engineering/development/growth/customersdot-collaboration.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:15:25Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "694c6aca13af4a9c5f3826e2c8e33c638dfba176376cee2e2ec851db2b6363c7"
+    },
+    "content/handbook/engineering/development/growth/engineering_dri.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:15:25Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2bf79e020a1ba9bbbbff87038e879cbd0de4107e2ca84c76ea9bc5fb046a98f9"
+    },
+    "content/handbook/engineering/development/growth/experimentation.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:15:25Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1cd5188be74342895b5c8580fa6145da87572c45bbc49c8c66e4e5eb429d2855"
+    },
+    "content/handbook/engineering/development/growth/fast-boot.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:15:25Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "13692b5726e06a7a34748966b7509f4a28751af23f64f7422391638237568c5c"
+    },
+    "content/handbook/engineering/development/growth/initiative_refinement_estimation.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:15:25Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ad69531ea27297354b88ae9195c65937b88e992901491109aac0d9b4633b408d"
+    },
+    "content/handbook/engineering/development/growth/operating_model_growth.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:15:25Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a4096a82c7de6feb3e3ae70b976c0a2adadabc338b6e112b81bc4cb08908c3e5"
+    },
+    "content/handbook/engineering/development/growth/technical_spikes.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:15:25Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7d74e54c57dcae88a4bb994f29c226a64c6a5009813d881b25fcdfa7d0deb08f"
+    },
+    "content/handbook/engineering/development/principles.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:15:25Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "09705e29157b44c8ff7f52a04d9332c02fcdc3ae5bd05ab56a734572ac448306"
+    },
+    "content/handbook/engineering/development/required-approvals.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:48:28Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ce7704fabe95eec7c0305848c66cc2463d13806663c5fb501f0fc568b8747a06"
+    },
+    "content/handbook/engineering/development/sec/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:48:28Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "58c105cb8597d1ba4faaa2164bb430b0fcfb095e4d69d8aae239a1af29191eba"
+    },
+    "content/handbook/engineering/development/sec/delineate-sec.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:48:28Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e245c1dcdaf5cf7c9fed3d8ddbc5be35a4025be1528d115db8f151037e6f39c4"
+    },
+    "content/handbook/engineering/development/sec/secure/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:48:28Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e18056f3d3b0bfff21592c3948f1f300f96a2550a9c39e4d76bd61a152a1f665"
+    },
+    "content/handbook/engineering/development/sec/secure/analyzer-observability-metrics.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:48:28Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "11d98df643e7bcc99d9b6ee5c58872501c084b73a0d463aaf8f448e1d78c7be5"
+    },
+    "content/handbook/engineering/development/sec/secure/composition-analysis/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:48:28Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0c9ed4f960cf88e730af9e3ac2f669d53de4873cf7ce4596656ba85ed2455ba0"
+    },
+    "content/handbook/engineering/development/sec/secure/composition-analysis/runbooks/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:48:28Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6908c2c988b41c81e2c68580e8ccaa54b4637d9c7d88c9ca3cf114779af3ca27"
+    },
+    "content/handbook/engineering/development/sec/secure/composition-analysis/runbooks/semver-dialect-errors-in-sentry.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:48:28Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fb545850a8e2435f514b7fde803d17708ceae0df51bc1d5da2f813af4b12d353"
+    },
+    "content/handbook/engineering/development/sec/secure/dynamic-analysis/api-security.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:48:28Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bbc2afcbb7201a8beb13c0361564beea4e4bbeca81cff1f45f64f9e67c2a4b95"
+    },
+    "content/handbook/engineering/development/sec/secure/dynamic-analysis/dynamic-analysis.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T05:48:28Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0ce781c6d6fd884294148912b4291231f05cda7da8799b1d8ac3bf595ee1d512"
+    },
+    "content/handbook/engineering/development/sec/secure/planning.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "983adb1ef3bb3e2c04873072eac202dc791343f6955de8268de876abe9d63f4e"
+    },
+    "content/handbook/engineering/development/sec/secure/products/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "43dbfc3436e3449d36ae827494968e7c75bcc0a07c373fa84af9d4c5aa53143f"
+    },
+    "content/handbook/engineering/development/sec/secure/products/metrics.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dfecf99493ba1c97253c5d177cc6bd47ccf4bf7af0b0f0e4abc89a67c5824077"
+    },
+    "content/handbook/engineering/development/sec/secure/qa_process.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "967145f3e217ad4510ce2713578c1464d3ce0e113122c64bb856e5038beeff25"
+    },
+    "content/handbook/engineering/development/sec/secure/secret-detection/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2c9456dbd78987ae3877cf61c869e31bb3b7ea8f1036680251537928251c8177"
+    },
+    "content/handbook/engineering/development/sec/secure/secret-detection/metrics/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b66a219f12596f070ce63b0ba22c56dfc5aa673e4633eb572539175aae6e7cd6"
+    },
+    "content/handbook/engineering/development/sec/secure/secret-detection/rule-development-process.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d3a07288378fc4d9a2c7388e9cb854b361e99540f81bd7b64b84cb8aa4798aed"
+    },
+    "content/handbook/engineering/development/sec/secure/secret-detection/runbooks/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7e2b8f71f5c22787756613dbc5f0c4866672e7d1832a0b2abb58fea9be3e14e0"
+    },
+    "content/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-detection-svc-faqs.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e7b6c8bd34363a0c4293018f4da7ee5f6f6c4c1bf4918c67f9fbd4f647f7ad22"
+    },
+    "content/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-detection-svc-monitoring.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "83eb4ce8d22229e0d053b468d64649bf1b01e09035a091a209e727b2c715bb1a"
+    },
+    "content/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-detection-validity-check-faqs.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "53d98387725c492c8c544b3f7e8c4d9dd8affe498d1edc0f8d26e4b11ea7330e"
+    },
+    "content/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-detection-validity-check-monitoring.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "915d72067cd089287393d013e6371af8970124dd7b86db2aeda5252d677b6569"
+    },
+    "content/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-detection-validity-check-troubleshooting.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ec29420f898acb596c913cff83fdcbb6874ddf5f0b0a61fa9a42a47dd1933322"
+    },
+    "content/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-push-protection-monitoring.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "df7a73e2138a92cbd5b42143f20a532fa854b334a741243db9992c004e674268"
+    },
+    "content/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-push-protection-performance-testing.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a745504bc8074907d9b640d71dbdb8dce5e08c144cff3a1054af5f4839edde47"
+    },
+    "content/handbook/engineering/development/sec/secure/secret-detection/runbooks/secret-push-protection-troubleshooting.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9a62a22fbcc34c919cf5f2db69e991613ec83cd18e767fe167395c547b388324"
+    },
+    "content/handbook/engineering/development/sec/secure/static-analysis/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3a663a6e5fed2581cb6e87161841a411341e48748708c1d1e733a4790c14b630"
+    },
+    "content/handbook/engineering/development/sec/secure/static-analysis/code_review.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1218107f05a87038924aeb9d37c8fbf4018d3b9e9f68a3bcf99bf1a16941eacf"
+    },
+    "content/handbook/engineering/development/sec/secure/static-analysis/ec2_dev_environment_setup.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5057cab0319fbdb28d88a6ab2f8f1229c8dc5d3d588cede15cc1b84a43a42af5"
+    },
+    "content/handbook/engineering/development/sec/secure/static-analysis/false_positives.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8c86b41e34b6a07e0e9f1930951da53d80524c6c36db8095cb921765abf7b41d"
+    },
+    "content/handbook/engineering/development/sec/secure/static-analysis/reaction_rotation.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T07:31:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "56b1f19356d1596f5d958f754c5ace0bfe3a19cec565771107e6e9d2272af23e"
+    },
+    "content/handbook/engineering/development/sec/secure/static-analysis/retrospectives_summary.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T07:31:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4b9ca167b928ef613fa0e6ad9f5ff7856e2f406f897af6882f8c7920d56fb956"
+    },
+    "content/handbook/engineering/development/sec/secure/static-analysis/runbooks/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T07:31:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9b79c20ba253e5084163a7e02db110d31c3c43a2272b84f61b6d229ebc77031f"
+    },
+    "content/handbook/engineering/development/sec/secure/static-analysis/runbooks/analyzer-deprecation-and-removal-instructions.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T07:31:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bc749c863e72d2f78c595a501e0ca0e280ef246781fe8d87b261fcab7e1c7032"
+    },
+    "content/handbook/engineering/development/sec/secure/static-analysis/runbooks/analyzer-rollback-production.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T07:31:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e7b0a8022e1987c35ec4dc5f2cf102fd5eeae3e910fe1e0fcf6412803f468298"
+    },
+    "content/handbook/engineering/development/sec/secure/static-analysis/runbooks/how-to-monitor-and-respond-to-issues-with-sast-automatic-vulnerability-resolution.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T07:31:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f3f5acd6ec5f9b2ee2c9371d70e9ec5202194344ddb8681d7d5a774836977326"
+    },
+    "content/handbook/engineering/development/sec/secure/tech-docs/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T07:31:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2ba148021ef144e1a26194db5386a665dca594061342c16fec4bfb2e81769549"
+    },
+    "content/handbook/engineering/development/sec/secure/tech-docs/data-model-for-dependencies-information.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T07:31:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "175d6bde120e46a3df5d9b6e6b52d0f7502f18c1224a68e77918a9b3ef6fecd3"
+    },
+    "content/handbook/engineering/development/sec/secure/tech-docs/feedback.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T07:31:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "29e941b9a0f1f3bc451701014e4de584f9aba848f233e3588d9ec2e622b04228"
+    },
+    "content/handbook/engineering/development/sec/secure/vulnerability-research/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T07:31:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dba46dd4dd553e84209b591103967f72bbbff5f7a94be6b2cd5568ce41b1c50e"
+    },
+    "content/handbook/engineering/development/sec/secure/vulnerability-research/cna.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:04:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f4302ea4253bb0bf9fcc2a168a89f2be416ce8324c02062cd6b336523eb76d42"
+    },
+    "content/handbook/engineering/development/sec/secure/vulnerability-research/reaction_rotation.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:04:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "902b1581a529bb7a62327b31a0e22869b57be9fe2003cd54e85af9ef05b2e0fe"
+    },
+    "content/handbook/engineering/development/sec/security-risk-management/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:04:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "86273c6360e7fc3ca21d966582f85bbde5b73d21057138bd18925eeb93d6ad0e"
+    },
+    "content/handbook/engineering/development/sec/security-risk-management/security-infrastructure/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:04:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7abbbdfd51099cb5bc833521433bbaf04a23326ae96e77cba1c53637ff62d435"
+    },
+    "content/handbook/engineering/development/sec/security-risk-management/security-insights/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:04:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1318309aaed9019102981806d8bc9d8fd354630c943ec979a40c71c1a7f3cd27"
+    },
+    "content/handbook/engineering/development/sec/security-risk-management/security-insights/developer_setup.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:04:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5851de829fc72e19e9e7b671cbbe33b892f082932bf47f860082c34b3a7c3e64"
+    },
+    "content/handbook/engineering/development/sec/security-risk-management/security-insights/ve_vr_setup.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:04:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "760e4302bcc53bb7f28f074c497448c507468d4ae93888d8b1e6bc81985046bb"
+    },
+    "content/handbook/engineering/development/sec/security-risk-management/security-insights/ve_vr_troubleshooting.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:04:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d7ef39d441129fcbf117e6e58f6af0fe329c1980a6a914df31bb969c80fb3655"
+    },
+    "content/handbook/engineering/development/sec/security-risk-management/security-insights/vulnerability_archival_setup.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:04:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d41cb615a6d13113635474ed976684ad96d02abd33dc3a5c7776d46c4544cb97"
+    },
+    "content/handbook/engineering/development/sec/security-risk-management/security-policies/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:04:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "de4a8f43c297161a88402599860e8c0685ecd85cbedb93f210f8c8a6e59eb0d9"
+    },
+    "content/handbook/engineering/development/sec/security-risk-management/security-policies/feature_process.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:31:27Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0f08a286d8e28c520beb5f818e1b1c5102bc43a2512f79a2803c915bda4988fd"
+    },
+    "content/handbook/engineering/development/sec/security-risk-management/security-policies/planning.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:31:27Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f183d9c66693fe0664459b980d9b4b8421469af1e80dfa94bf9285b8bedcba03"
+    },
+    "content/handbook/engineering/development/sec/security-risk-management/security-policies/workflow.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:31:27Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3bb2bbfcce29e3b59c569ac1e4cb1cd74f34c50a95c0053b6e0e81daef969a7b"
+    },
+    "content/handbook/engineering/development/sec/security-risk-management/srm-planning.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:31:27Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ff50c2d14867ea7038b6b8c53fb20ee41d1c94a411f9da6cb2fb8f2091b63683"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:31:27Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "035dc193be387055335b31d9b47ce78913031218abd1743811b925a097152c74"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/anti-abuse.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:31:27Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "45eee407eeec08d4ffc4ec7639145f555c1bb6f06b4b2c66684406cce70d97dd"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/authentication.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:31:27Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "98950ff97e49bb1e4541f634c813e94f8bf64a3bc58cf19f41ccc092fb2873f8"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/authorization.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:31:27Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f3e9bf647e3cd2f7ca0ac4a41e3b19501eb3be4df1dffa0e1b1439261f36ccfa"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/compliance.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:31:27Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f554980370d31100cf4fb698c5403b0cbb2bf05075d1839f210402e203dee875"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/_index.md": {
+      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
+      "translated_at": "2026-04-28T08:31:27Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0344a2cf305b783d520a26811605f2949e20cfc3f82995c541cb296460be0d05"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/communication-and-culture.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "991db18fc8903d967d7e1e91cff76a8ce3a61b9b30c6a5d427609c986a5a0953"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/coverage-and-scheduling.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "42372f8e9173a657fc9742579c39e47f8abc5d6f64f3d4fc05be4b4e6feb3ab1"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/faq.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4a3cfb968c326dff481c24d9ff22f05e5c91738cb4aea03c3753f2bdaa7a0e9d"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/handoff-and-continuity.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bc0dd73ace07c836749c10ef5403d4de4e428ebd9f74c481ecf2def2b822d19e"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/joining-and-leaving-rotation.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "732c5d453382a842dced20c500ffa1b2c0b2a985caf1b6de454ce89b78108ed3"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/measuring-success.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b491b70d5910f6d270603ec2282a5e0f8818969961a6627927197f24959f1ba0"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/rotation-leader.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ae3d843ae46290d18ea9ccfc3b5bd3ea6c49f10fa2003d5b29a4edfccc9ea855"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/time-off-and-holidays.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "360ee6a7d007115d178b89fa4803ed40709c2150edb2a15e1a2a36170ce91a5d"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/tools-and-access.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2a56ca380058f4a9de492433b3d1d7604965ec40d403e0eef8117e608575f835"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/understanding-the-basics.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c6ba426c3047cd55c6eda5b4f85f2df8d4f7c289fbb008aa25b0cde673ad5d46"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/your-first-shift.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T09:42:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bf7b3e455136fdb439afc6d53058b505c6aa75da214d42a55b1a7ae105537d90"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/pipeline-security/_index.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T09:42:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5c2d433e8add755f2015616b779105994380873fa0201b65454769a01aa7a9e3"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/pipeline-security/ai-prompts.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T09:42:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cc1c23316c02888863b728e0690941a43e3113a800c6cf809eaf7b6e910cc556"
+    },
+    "content/handbook/engineering/development/sec/software-supply-chain-security/pipeline-security/jtbd.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T09:42:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8a5f1a11a49b3c0616c2561e4815a1289fd1db253d076b481e0a335c242b0858"
+    },
     "content/handbook/engineering/devops/_index.md": {
       "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
       "translated_at": "2026-04-28T09:42:29Z",
