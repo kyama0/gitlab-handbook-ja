@@ -8,7 +8,7 @@ translator: claude
 stale: false
 ---
 
-## <i class="fas fa-book biz-tech-icons"></i> アクセスリクエスト
+## <i class="fas fa-book" id="biz-tech-icons"></i> アクセスリクエスト
 
 プロビジョニングされる多くのファイナンスシステムは SOX システムとも見なされており、[SOX プログラム](https://internal.gitlab.com/handbook/internal-audit/sarbanes-oxley/)の対象となります。
 

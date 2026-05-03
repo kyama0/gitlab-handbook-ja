@@ -10,7 +10,7 @@ stale: false
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## <i class="fas fa-users biz-tech-icons"></i> IT エンタープライズアプリケーション手順へのリンク
+## <i class="fas fa-users" id="biz-tech-icons"></i> IT エンタープライズアプリケーション手順へのリンク
 
 **このページは現在作成中です**
 

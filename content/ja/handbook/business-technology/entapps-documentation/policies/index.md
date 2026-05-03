@@ -10,7 +10,7 @@ stale: false
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## <i class="fas fa-users biz-tech-icons"></i> GitLab ポリシーへのリンク
+## <i class="fas fa-users" id="biz-tech-icons"></i> GitLab ポリシーへのリンク
 
 1. <https://handbook.gitlab.com/handbook/security/security-and-technology-policies/access-management-policy/>
 2. <https://handbook.gitlab.com/handbook/security/policies_and_standards/password-standard/>

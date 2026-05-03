@@ -9,21 +9,21 @@ stale: false
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## <i class="fas fa-users biz-tech-icons"></i> 私たちについて
+## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちについて
 
 エンタープライズアプリケーションサービス（EAS）は、エンタープライズサービスの水平的なサポート、運用、管理、ガバナンス、リスク評価、コンプライアンスを提供しています。ITIL フレームワークを活用し、EAS はエンドツーエンドのサービスおよびアプリケーションライフサイクル管理を担い、IT ポリシーとプロセスガバナンス（変更管理、リリース管理、インシデント管理を含む）を通じて運用上の卓越性を促進しながら、コンプライアンスレビューを通じて業務有効性を確保しています。
 
-## <i class="fas fa-bullseye biz-tech-icons"></i> ミッション
+## <i class="fas fa-bullseye" id="biz-tech-icons"></i> ミッション
 
 使いやすいサービス管理ツールを提供し、すべてのエンタープライズアプリケーションの単一窓口として機能し、コンプライアンス、ガバナンス、変更およびリリース管理によるリスク軽減を図ることで、GitLab チームメンバーに摩擦のない、世界クラスのアプリケーションサポートエクスペリエンスを提供します。
 
-## <i class="fas fa-users biz-tech-icons"></i> ロードマップ
+## <i class="fas fa-users" id="biz-tech-icons"></i> ロードマップ
 
-## <i class="fas fa-users biz-tech-icons"></i> 私たちのチーム
+## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちのチーム
 
 GitLab のエンタープライズアプリケーションをサポートする[チームとロール](https://internal.gitlab.com/handbook/it-enterprise-applications/organizational-structure/services-and-operations/)の詳細をご覧ください。
 
-## <i class="fas fa-bullhorn biz-tech-icons"></i> 私たちのサービス
+## <i class="fas fa-bullhorn" id="biz-tech-icons"></i> 私たちのサービス
 
 サービスオペレーション
 
@@ -41,7 +41,7 @@ IT コンプライアンス（SOX、GRC）
 - ユーザーアクセスレビュー
 - 職務分離
 
-## <i class="fas fa-users biz-tech-icons"></i> 業務の進め方
+## <i class="fas fa-users" id="biz-tech-icons"></i> 業務の進め方
 
 - [運営標準としてのアジャイル方法論](https://docs.google.com/presentation/d/1XAOalsNDOPvsunkMb2r5fwxdhRhhnNbzqdhwiXqxUaU/edit#slide=id.g12b319f6181_0_0)
 - [エンゲージメントモデル](https://docs.google.com/presentation/d/1slrn20jIenBnm-wbCs9Dv9gTDax11NnrXygCL7yMev4/edit#slide=id.g12b319f6181_0_0)

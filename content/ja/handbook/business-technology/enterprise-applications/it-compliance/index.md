@@ -13,7 +13,7 @@ stale: false
 
 GitLab の IT コンプライアンス機能は、会社として IT 一般コントロール（ITGC）の SOX 監査に合格できる準備を確保するためにあります。IT コンプライアンスは、長期的にコンプライアンスを維持できるプロセスを構築します。Business Technology アプリケーションを専門としており、それが私たちの重点領域です。
 
-## <i class="far fa-paper-plane biz-tech-icons"></i> 連絡方法
+## <i class="far fa-paper-plane" id="biz-tech-icons"></i> 連絡方法
 
 <div class="flex-row" markdown="0">
   <div>
