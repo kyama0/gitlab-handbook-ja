@@ -736,6 +736,461 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "271fe0251e18cef1a629ade0fa8c9d6200a84bb9f8dbad19894b2729e9f680d2"
     },
+    "content/handbook/customer-success/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:49:11Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a4af53bd64300dbbd4f9218421c41a6a8c6eb117bc8106c1b47872c199076492",
+      "path": "content/handbook/customer-success/_index.md"
+    },
+    "content/handbook/customer-success/account-team.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:49:11Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fc121d878127fdcba08baadedcb3fd328f0e256743fe99b66c1c024aa86c7b21",
+      "path": "content/handbook/customer-success/account-team.md"
+    },
+    "content/handbook/customer-success/apj-customer-success.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:49:11Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7ccb4a6d73d9f0a834b9b896a8f9acb001aa457c75238e28eaab3e0a1eb70809",
+      "path": "content/handbook/customer-success/apj-customer-success.md"
+    },
+    "content/handbook/customer-success/comm-sales/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:49:11Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cb23c336f49dba326e5cd0bcd9bd832133a1c76359af5cf24ff2efb8e66a35a0",
+      "path": "content/handbook/customer-success/comm-sales/_index.md"
+    },
+    "content/handbook/customer-success/comm-sales/renewals.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:49:11Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "677b37795d37a9476fb118579dae6b8d2a7f3e661b94fa0585a30237079f718c",
+      "path": "content/handbook/customer-success/comm-sales/renewals.md"
+    },
+    "content/handbook/customer-success/customer-content.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b666eebc4d9cb25b022990cb9e66dc2b421101f1992592ff0c0b77afdac56978",
+      "path": "content/handbook/customer-success/customer-content.md"
+    },
+    "content/handbook/customer-success/customer-terrain-mapping.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f1857baa5c7e7be1cff23f761021a35059ebef08ab3e7f036dfa60df8565471c",
+      "path": "content/handbook/customer-success/customer-terrain-mapping.md"
+    },
+    "content/handbook/customer-success/demo-systems/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:17:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "07901dcfe2fb5e2f6e8403b70448592c21aa99829fcb3d0be22d5b8af47975e8",
+      "path": "content/handbook/customer-success/demo-systems/_index.md"
+    },
+    "content/handbook/customer-success/demo-systems/environments/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:17:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f07df32d35d306e4cd57ffcefdd2df0a8621ecd4d8e5536db0eff6dffc704dc1",
+      "path": "content/handbook/customer-success/demo-systems/environments/_index.md"
+    },
+    "content/handbook/customer-success/demo-systems/environments/training-cloud.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:17:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "94e8f762a4716dabc6a7e77666e6c718b138ccd7dfe7e10d66ec2116592c0438",
+      "path": "content/handbook/customer-success/demo-systems/environments/training-cloud.md"
+    },
+    "content/handbook/customer-success/demo-systems/infrastructure/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:17:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "86f6e58890b8f8915e3876182cc0f20f21aa1a87c374c8357ce1edacd98330f6",
+      "path": "content/handbook/customer-success/demo-systems/infrastructure/_index.md"
+    },
+    "content/handbook/customer-success/demo-systems/infrastructure/kubernetes.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:17:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f3e9eba387b466e17768d47a536414472d1fa68fcd6ed000196e18b233d43097",
+      "path": "content/handbook/customer-success/demo-systems/infrastructure/kubernetes.md"
+    },
+    "content/handbook/customer-success/demo-systems/infrastructure/networking.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:17:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fd22fcd716706b4445788cc754d1b5ac7fef05bfb7e1abb6e96da6214be2fc3a",
+      "path": "content/handbook/customer-success/demo-systems/infrastructure/networking.md"
+    },
+    "content/handbook/customer-success/demo-systems/onboarding.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:17:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6f8cb325b70510d71c1fbaada2f34a80bc638c473ffac259857809036fa31ee8",
+      "path": "content/handbook/customer-success/demo-systems/onboarding.md"
+    },
+    "content/handbook/customer-success/demo-systems/tutorials/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:17:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5fd9efbd35794b1e79bc7867e0d1a32287d969099654b6a6b52c2fb83ee68f32",
+      "path": "content/handbook/customer-success/demo-systems/tutorials/_index.md"
+    },
+    "content/handbook/customer-success/demo-systems/tutorials/getting-started/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:17:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b5829f461b1c619755f3f29fa9cffd2e48a1eb101391ee4d46c518777c0a0969",
+      "path": "content/handbook/customer-success/demo-systems/tutorials/getting-started/_index.md"
+    },
+    "content/handbook/customer-success/demo-systems/tutorials/getting-started/configuring-group-cluster.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:17:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "22deb5657b70808325e240e7eed227aa9267bffee60a83f0526c70fa667a3492",
+      "path": "content/handbook/customer-success/demo-systems/tutorials/getting-started/configuring-group-cluster.md"
+    },
+    "content/handbook/customer-success/demo-systems/tutorials/integrations/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b7b3d85080e2d6b15b272c210f7aa0a9d3beec1685e887dcdecca39bf09f0046",
+      "path": "content/handbook/customer-success/demo-systems/tutorials/integrations/_index.md"
+    },
+    "content/handbook/customer-success/demo-systems/tutorials/integrations/create-jenkins-pipeline.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9d7ee202b202bf584d7a30e96ab694d97873deaeac0ab1dcb9ca87de4aeb689d",
+      "path": "content/handbook/customer-success/demo-systems/tutorials/integrations/create-jenkins-pipeline.md"
+    },
+    "content/handbook/customer-success/education-enablement.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "041e595f5f8c3789c8aea710481bb1e865598b2854f28fac1871dfeaa257f443",
+      "path": "content/handbook/customer-success/education-enablement.md"
+    },
+    "content/handbook/customer-success/education-services/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1532911e98d47ba354bedfcb27738047ec1ba2eb3a7b93fda046a34efebf6999",
+      "path": "content/handbook/customer-success/education-services/_index.md"
+    },
+    "content/handbook/customer-success/education-services/gitlab-education-services-support.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f3784c0801c132ccacda219cde092a3450a4e28b5b4299dee83cb1be56aa0b8a",
+      "path": "content/handbook/customer-success/education-services/gitlab-education-services-support.md"
+    },
+    "content/handbook/customer-success/education-services/tech-stack/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c7fc2a4d85190225e3e2e1eae10aea8ad4e331eff9c283543fe2e7914a305e9d",
+      "path": "content/handbook/customer-success/education-services/tech-stack/_index.md"
+    },
+    "content/handbook/customer-success/education-services/tech-stack/articulate.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d69f468bf9af4a75b0c945b4eed630496528b984329db2fc5bcc3b73f449e3f7",
+      "path": "content/handbook/customer-success/education-services/tech-stack/articulate.md"
+    },
+    "content/handbook/customer-success/education-services/tech-stack/credly.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "58ff703a22335f424fbfafab6c3b7283669f4b64502aa5c2c9e16c15db800ed8",
+      "path": "content/handbook/customer-success/education-services/tech-stack/credly.md"
+    },
+    "content/handbook/customer-success/education-services/tech-stack/instruqt.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "70a79f6e40714590a7188313f59dc2fea6644a14bb4da70c00e4e2acd5c67422",
+      "path": "content/handbook/customer-success/education-services/tech-stack/instruqt.md"
+    },
+    "content/handbook/customer-success/faq.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "10fc4ebb9ef80c68074ca5ecfa3ad90a71f592ba2ed33c00587fc7e55fbfab65",
+      "path": "content/handbook/customer-success/faq.md"
+    },
+    "content/handbook/customer-success/gitlab-training-seminar.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:49:20Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bfb9df5be0edfb66af73e3b5486ee00848f4b2d5ad707f3944c0b01c867f15cf",
+      "path": "content/handbook/customer-success/gitlab-training-seminar.md"
+    },
+    "content/handbook/customer-success/gitlab-university.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:49:20Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3a195f40f3530d61c92dee0c157fe439b65bc22dce78fb718c0c7e4b1b985446",
+      "path": "content/handbook/customer-success/gitlab-university.md"
+    },
+    "content/handbook/customer-success/initiatives/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:49:20Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c0521b2120063e96d8a30d39a54188c4d287a0c6d656a76efd6d0a38b55d9cf5",
+      "path": "content/handbook/customer-success/initiatives/_index.md"
+    },
+    "content/handbook/customer-success/initiatives/communities-of-practice.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:49:20Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "114680245a2d7a1fe7c8c6de02ce7b3a5a0e5c7b5d5a46b13bb882588136c617",
+      "path": "content/handbook/customer-success/initiatives/communities-of-practice.md"
+    },
+    "content/handbook/customer-success/partners/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:49:20Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e00813b3987ad022b287225c9ea6a3d6f34b8ab30887fed88fd6f791d24b76ea",
+      "path": "content/handbook/customer-success/partners/_index.md"
+    },
+    "content/handbook/customer-success/partners/capabilities-journey.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:49:20Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "42906c5a4ecea8778476b311fa7cdca71c2e042640ea13689624f1e19a2eb8d0",
+      "path": "content/handbook/customer-success/partners/capabilities-journey.md"
+    },
+    "content/handbook/customer-success/playbooks/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:49:20Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c97cfd18ab042c3600af802761feceef195fcbe7b955d82d4d5574293778467b",
+      "path": "content/handbook/customer-success/playbooks/_index.md"
+    },
+    "content/handbook/customer-success/playbooks/cd-release.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:49:20Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "85b218a9950cbd1dbb3311f3b0cb1c6644fda97b7cc1d60048efed904b2cbd02",
+      "path": "content/handbook/customer-success/playbooks/cd-release.md"
+    },
+    "content/handbook/customer-success/playbooks/ci-verify.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:49:20Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "76971d072758e98508721d818165a7595b7cc8f66394f6500c7fab3e622bffec",
+      "path": "content/handbook/customer-success/playbooks/ci-verify.md"
+    },
+    "content/handbook/customer-success/playbooks/server-migrations.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T02:49:20Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "107b241ae08194cad418bfa8c23f755932e4c57764b7b1ffd8766f0880941975",
+      "path": "content/handbook/customer-success/playbooks/server-migrations.md"
+    },
+    "content/handbook/customer-success/pre-sales-post-sales-transition.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a498a8c8fffaba4cdc8588779901e159d073e0bb8a63d2e99989931b77ec485c",
+      "path": "content/handbook/customer-success/pre-sales-post-sales-transition.md"
+    },
+    "content/handbook/customer-success/product-usage-data/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c99f4d4a61cb99041711e99934387f273bcb9d7cc1043d1637a88dd3a21a8a32",
+      "path": "content/handbook/customer-success/product-usage-data/_index.md"
+    },
+    "content/handbook/customer-success/product-usage-data/freemium-saas-usage-data.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ee00d7f41b242142f697e0f4cdd6b314ad8ea4fa5940e212261eab465ba4415d",
+      "path": "content/handbook/customer-success/product-usage-data/freemium-saas-usage-data.md"
+    },
+    "content/handbook/customer-success/product-usage-data/maturity-scoring.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4bf33986ef2f2b493e216bca379f65440ed65ffd61efb1edc8618d95cc598b7f",
+      "path": "content/handbook/customer-success/product-usage-data/maturity-scoring.md"
+    },
+    "content/handbook/customer-success/product-usage-data/metrics-based-playbooks.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2ceb8146594f7747e9ef09dc8b2cff455691a8dc7c48adf2f55dc36e800364ae",
+      "path": "content/handbook/customer-success/product-usage-data/metrics-based-playbooks.md"
+    },
+    "content/handbook/customer-success/product-usage-data/platform-value-score.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b7aec2378680abb2065e0032dd0fc876172bc742e25a685eb84f64277032697b",
+      "path": "content/handbook/customer-success/product-usage-data/platform-value-score.md"
+    },
+    "content/handbook/customer-success/product-usage-data/usage-statistics.html.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "39ce21d8346b2951397c32ef22afda4043def14191a28434f92fed7b4c579cf0",
+      "path": "content/handbook/customer-success/product-usage-data/usage-statistics.html.md"
+    },
+    "content/handbook/customer-success/product-usage-data/using-gainsight-data-in-sfdc.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "94b9ef0bf79178282686d0493b95a1c6c6d7176b3975f3281250deb8b154f8a6",
+      "path": "content/handbook/customer-success/product-usage-data/using-gainsight-data-in-sfdc.md"
+    },
+    "content/handbook/customer-success/product-usage-data/using-product-usage-data-in-gainsight.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "55aa6586a4bd8f994dd70acacf65654fb467458264b3a9869e32a191d98c0f3a",
+      "path": "content/handbook/customer-success/product-usage-data/using-product-usage-data-in-gainsight.md"
+    },
+    "content/handbook/customer-success/public-sector/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1417923c8743fb968982779fd3d7192d21194a7f480d2c6d0245ff7c1a70fc76",
+      "path": "content/handbook/customer-success/public-sector/_index.md"
+    },
+    "content/handbook/customer-success/public-sector/solutions-architects.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "32cc6d631aa0f129290ea63cf8a908bf593ac25145255fc5d714a873bb514403",
+      "path": "content/handbook/customer-success/public-sector/solutions-architects.md"
+    },
+    "content/handbook/customer-success/renewals-managers/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "462f15bb1ebd56ead4fb70537656a5151011b013b45e79c482d2f4ae8a19b865",
+      "path": "content/handbook/customer-success/renewals-managers/_index.md"
+    },
+    "content/handbook/customer-success/renewals-managers/how.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6a59632443e3df89f44052f1e5e95aa54666d7406b83187225dce706c9e4c8d9",
+      "path": "content/handbook/customer-success/renewals-managers/how.md"
+    },
+    "content/handbook/customer-success/renewals-managers/rm-onboarding.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9d614d4ce13a4e3f82a10d837662c35ffc93361b91b37b4bfcc53135532a425e",
+      "path": "content/handbook/customer-success/renewals-managers/rm-onboarding.md"
+    },
+    "content/handbook/customer-success/renewals-managers/what.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "973149c4d8355577f739c4849e961cce5aa55b4982d195440adde6f8342d2855",
+      "path": "content/handbook/customer-success/renewals-managers/what.md"
+    },
+    "content/handbook/customer-success/reporting-and-dashboarding-framework.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9d0a1d303be80d298e9564efe48a30ec759615943506dee860b127723746e5b1",
+      "path": "content/handbook/customer-success/reporting-and-dashboarding-framework.md"
+    },
+    "content/handbook/customer-success/roles-overview/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d550b895bbc5ed03c6fcd88b0d5839e91b9ba09a4ad82c382e0ee119030a0c14",
+      "path": "content/handbook/customer-success/roles-overview/_index.md"
+    },
+    "content/handbook/customer-success/submitting-customer-feedback.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6da1c8a54ecd902ecc49286c8706e7ed19b5913a912ac1bd31b89117f7536b5b",
+      "path": "content/handbook/customer-success/submitting-customer-feedback.md"
+    },
+    "content/handbook/customer-success/success-services/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "22d7cea692f193d6d1c38ac4198839ae40358bb3a07f324827a7cc3ec71e12a3",
+      "path": "content/handbook/customer-success/success-services/_index.md"
+    },
+    "content/handbook/customer-success/success-services/accelerator-catalog/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9a1e7e922b965848613c0fbaed247d0a5c954c9ff2e24d56b10268221de1807a",
+      "path": "content/handbook/customer-success/success-services/accelerator-catalog/_index.md"
+    },
+    "content/handbook/customer-success/success-services/accelerator-development/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a7b88401f7f9f2705b95e4671e86cf9cf2a08d38bb452551e747e39916771acf",
+      "path": "content/handbook/customer-success/success-services/accelerator-development/_index.md"
+    },
+    "content/handbook/customer-success/success-services/glu-panorama/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dc3cac16cde7de24581d0a8d11c518f71c9e5868d1afb38135bc509678299da2",
+      "path": "content/handbook/customer-success/success-services/glu-panorama/_index.md"
+    },
+    "content/handbook/customer-success/using-salesforce-within-customer-success.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2b7321c18feb91ad27b9439892a565dce714f794c9e2512e0b009396146d57ac",
+      "path": "content/handbook/customer-success/using-salesforce-within-customer-success.md"
+    },
+    "content/handbook/customer-success/workshops/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7b81a0fea7119d91a397bc52298d735cbbad1c21664e0d57ccd99962761dad60",
+      "path": "content/handbook/customer-success/workshops/_index.md"
+    },
+    "content/handbook/customer-success/workshops/ci-workshop.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "abf2cc85af5dfaef14a35034e7debf43cec774a72aa0bb558625fd0e608a95a3",
+      "path": "content/handbook/customer-success/workshops/ci-workshop.md"
+    },
+    "content/handbook/customer-success/workshops/innersource-workshop.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "16a522f0990db2dff31fcac64d3eee56d8b2b1588d803ed4f786bb404448dd76",
+      "path": "content/handbook/customer-success/workshops/innersource-workshop.md"
+    },
+    "content/handbook/customer-success/workshops/secure/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e044106156b2b31bc02f965ac1e505d04af7b4e961729cb208fae6acc93b9386",
+      "path": "content/handbook/customer-success/workshops/secure/_index.md"
+    },
+    "content/handbook/customer-success/workshops/secure/questionnaire.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "349d2dd6e66b5389eaa4f5e8ac787f97898e19ab140aa375892bb990a1ba3058",
+      "path": "content/handbook/customer-success/workshops/secure/questionnaire.md"
+    },
     "content/handbook/eba/_index.md": {
       "path": "content/handbook/eba/_index.md",
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -3535,6 +3990,41 @@
       "translated_at": "2026-05-01T01:25:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "d16915b7c035700506607b046e93ccfc13d07d66b6dcb9997ff36b92139c67cb"
+    },
+    "content/handbook/customer-success/customer-health-scoring/index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ace43988a4208284ffd7fd5661c05c72b2d1e8d7c90492ca228075db0f5212c5",
+      "path": "content/handbook/customer-success/customer-health-scoring/index.md"
+    },
+    "content/handbook/customer-success/customer-onboarding/index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4177d942ac1413432cecf0496b7606616d242bf50ba1e22d6d8b4481e879ceb7",
+      "path": "content/handbook/customer-success/customer-onboarding/index.md"
+    },
+    "content/handbook/customer-success/customer-success-vision/index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "12c495516ffee9a3792449baa3aab9bd1e617d4879cac7eafdf30fab977c0fc0",
+      "path": "content/handbook/customer-success/customer-success-vision/index.md"
+    },
+    "content/handbook/customer-success/product-usage-data/use-case-adoption/index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "acb70db34bde78ed3051ac78ce3f49c7dd5f7b3b446003eae7aa9ccf0d51a7bd",
+      "path": "content/handbook/customer-success/product-usage-data/use-case-adoption/index.md"
+    },
+    "content/handbook/customer-success/renewals-managers/home/index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fe8e284526042077fe8c44a1c0b5610148f24bb46c7bd8847cf3b37301da4ecc",
+      "path": "content/handbook/customer-success/renewals-managers/home/index.md"
     }
   }
 }
