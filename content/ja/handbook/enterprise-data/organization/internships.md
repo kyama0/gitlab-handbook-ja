@@ -8,8 +8,6 @@ translator: claude
 stale: false
 ---
 
----
-
 ## はじめに
 
 **Data Team インターンシッププログラム**のページへようこそ。エンタープライズデータチームは、興味のある GitLab チームメンバーがデータの急速に変化する成果志向の世界での生活を体験できるよう支援することに喜びを感じています！このプログラムは[GitLab インターンシップ フォー ラーニング プログラム](/handbook/people-group/learning-and-development/internship-for-learning/)に従っており、既存の GitLab チームメンバーのキャリア開発を支援することに注力しています。
