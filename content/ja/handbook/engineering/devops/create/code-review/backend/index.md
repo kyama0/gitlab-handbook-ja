@@ -76,16 +76,16 @@ GitLab での Code Review BE チームへの連絡には、`@code-review-be` ハ
 
 アナウンスメント Issue は `~Announcements` ラベルが付けられ、通常はバックエンドエンジニアとエンジニアリングマネージャーを対象にしています。[アナウンスメント Issue テンプレート](https://gitlab.com/gitlab-com/create-stage/code-review-be/-/issues/new?description_template=announcement)はプロダクトマネージャーおよび/または安定したカウンターパートへの通知オプションも提供しています。
 
-チームの誰でもこの形式を使ってアナウンスメントを共有できます。マイナーまたは繰り返しのアナウンスメントはまだ Slack 経由で送信される場合があります（例: PTO のマイルストームリマインダー）。
+チームの誰でもこの形式を使ってアナウンスメントを共有できます。マイナーまたは繰り返しのアナウンスメントはまだ Slack 経由で送信される場合があります（例: PTO のマイルストーンリマインダー）。
 
 ### フォローアップ Issue
 
 リリースで何かに取り組んだが技術的負債、フィーチャーフラグのロールアウトや削除、Issue の非ブロッキング作業などのタスクが残っている場合、フォローアップ Issue が蓄積します。これらについては、少なくとも2つの方法で対処できます:
 
-- フォローアップ Issue に重みと、その Issue に取り組むことの重要性についての良い説明を付けた適切な将来のマイルストームを追加する
+- フォローアップ Issue に重みと、その Issue に取り組むことの重要性についての良い説明を付けた適切な将来のマイルストーンを追加する
 - Issue を関連する[計画 Issue](https://gitlab.com/gitlab-org/create-stage/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Acode%20review&search=planning)に追加する
 
-一般的に、[完成の定義](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#definition-of-done)の一部であるフォローアップ作業を引き受けるべきです。できれば元の作業と同じマイルストーム、またはすぐ後のマイルストームで行います。これが相当量の作業を表す場合は、スケジュールの決定に影響する可能性があるため、マネージャーに知らせてください。
+一般的に、[完成の定義](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#definition-of-done)の一部であるフォローアップ作業を引き受けるべきです。できれば元の作業と同じマイルストーン、またはすぐ後のマイルストーンで行います。これが相当量の作業を表す場合は、スケジュールの決定に影響する可能性があるため、マネージャーに知らせてください。
 
 フォローアップ Issue が多数ある場合は、エピックの作成を検討してください。
 
@@ -97,7 +97,7 @@ GitLab での Code Review BE チームへの連絡には、`@code-review-be` ハ
 
 取り組むべきことの主要なソースは、現在のイテレーションサイクルの [Code Review リリースボード](https://gitlab.com/groups/gitlab-org/-/boards/2159734?milestone_title=Started)です。これは、このサイクルにスケジュールされたすべての Deliverable と Stretch の Issue をリスト表示します。
 
-リストはプロダクトマネージャーとエンジニアリングマネージャーが[マイルストーム計画プロセス](/handbook/engineering/devops/create/code-review/backend/manager)に従って、チームと他のステークホルダーのインプットを受けてまとめます。イテレーションサイクルは月の第3木曜日前の月曜日に開始し、リリースされる GitLab バージョンで識別されます。
+リストはプロダクトマネージャーとエンジニアリングマネージャーが[マイルストーン計画プロセス](/handbook/engineering/devops/create/code-review/backend/manager)に従って、チームと他のステークホルダーのインプットを受けてまとめます。イテレーションサイクルは月の第3木曜日前の月曜日に開始し、リリースされる GitLab バージョンで識別されます。
 
 [Code Review バックエンド _割り当て_ Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/2142016?milestone_title=Started)もあります。これは同じ Deliverable と Stretch の Issue を担当者別にグループ化して表示し、左端のリストにはバックエンドエンジニアに現在割り当てられていない Issue が表示されます。
 
@@ -105,7 +105,7 @@ GitLab での Code Review BE チームへの連絡には、`@code-review-be` ハ
 
 Deliverable は最高優先度とみなされ、月の第3木曜日前の金曜日に終了するイテレーションサイクルの最後までに完了することが期待されています。これは[月次リリース](/handbook/engineering/releases/)に間に合わせるためです。
 
-これらの最高優先度 Issue はマイルストーム開始時またはそれ以前にエンジニアに割り当てられ、そのサイクル中に最善を尽くして完了させる責任があります。成功の妨げになるものがあればエンジニアリングマネージャーに知らせる必要があります。
+これらの最高優先度 Issue はマイルストーン開始時またはそれ以前にエンジニアに割り当てられ、そのサイクル中に最善を尽くして完了させる責任があります。成功の妨げになるものがあればエンジニアリングマネージャーに知らせる必要があります。
 割り当てられた Issue は [Code Review バックエンド割り当て Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/2142016?milestone_title=Started)で確認できます。
 
 月中には様々なことが起こり、Deliverable が実際にサイクルの終わりまでに完了しない結果になる可能性があります。これは通常、エンジニアリングマネージャーが Issue の重みを楽観的に見積もりすぎたか、エンジニアの他の責任が予想以上に時間を要したことを示していますが、これがエンジニアリングマネージャーへの驚きになってはいけません。
@@ -204,5 +204,5 @@ AI 機能の監視に特化したダッシュボードもあります: [Create: 
 ## その他の関連ページ
 
 - [Create:Code Review BE エンジニアリソース](/handbook/engineering/devops/create/code-review/backend/engineers)（チームビルディングやキャリア開発など）
-- [Create:Code Review BE エンジニアリングマネージャーの責任](/handbook/engineering/devops/create/code-review/backend/manager)（マイルストーム計画、タレント評価、プロジェクト管理など）
+- [Create:Code Review BE エンジニアリングマネージャーの責任](/handbook/engineering/devops/create/code-review/backend/manager)（マイルストーン計画、タレント評価、プロジェクト管理など）
 - [Create:Code Review AI プロンプト](/handbook/engineering/devops/create/code-review/ai-prompts/)（より効率的に使用する一般的なプロンプト）
