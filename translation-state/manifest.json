@@ -771,12 +771,501 @@
       "input_hash": "677b37795d37a9476fb118579dae6b8d2a7f3e661b94fa0585a30237079f718c",
       "path": "content/handbook/customer-success/comm-sales/renewals.md"
     },
+    "content/handbook/customer-success/csm/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:49:11Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "00f6df78cd5f438d772eb6c3370554129f6188a863417a9978de2e4b970c5d5d"
+    },
+    "content/handbook/customer-success/csm/account-handoff.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:49:11Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bc74d311c1ea9b1b75c5f5e6017a994a2e9ca81ff2387d6ab440fc53e4eb22e1"
+    },
+    "content/handbook/customer-success/csm/adoption-landing-zones/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:49:11Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a04e73686bc7f6e23fd6601c8b7228beb4940106c34848ec779709f8c97cb3b8"
+    },
+    "content/handbook/customer-success/csm/adoption-landing-zones/ai-ml.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d31de6e3c119164f3f609fd8b5da23bf6d718a85f5f32829c3c87fc9c44e3b0a"
+    },
+    "content/handbook/customer-success/csm/adoption-landing-zones/ci.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8f73220ce774b327d6c14db43bb691f0abafbc445aefb07fd0537393c5b13dc9"
+    },
+    "content/handbook/customer-success/csm/adoption-landing-zones/devsecops.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "63eebeb4682af863172f5d9a39d4284a7f5e948a98582c3b1d8f1ca78069b0b7"
+    },
+    "content/handbook/customer-success/csm/aspiring-leaders-program.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8e050451efaed511a6ff740c905b1c3b6f3a07063a45defa8112dfd9d8bcc763"
+    },
+    "content/handbook/customer-success/csm/cadence-calls.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "77953b32e3d3b841441dfadb402ba3135251c2f89f00834bfded747004484ee7"
+    },
+    "content/handbook/customer-success/csm/calendly/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/customer-success/csm/csm-development.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d0c42c7e648ded32326191d08580fad3a1e27865dec477148a32ba336711c594"
+    },
+    "content/handbook/customer-success/csm/csm-internship.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3d4a3be8fcd7bcc40b886e0fcc22d5a918016cf4a7f32c647bc13029a9b7abd9"
+    },
+    "content/handbook/customer-success/csm/csm-manager/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2941b5b1c8a4acd407e8ed07e5f67033b3328dce9624486e16cb52476af0640a"
+    },
+    "content/handbook/customer-success/csm/csm-manager/qbr.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "81251b235b15fa5caff8efb6123bcab52901df096fa04f2ba2e221e6fb195ce4"
+    },
+    "content/handbook/customer-success/csm/csm-manager/risk-renewal.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1cb7869cc72599a080d31ca7a6701bee7cecefc985416e6c7ee68891a8c53a82"
+    },
+    "content/handbook/customer-success/csm/csm-manager/roles/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d49370eb46778071b8ae7a25311278b36c3bc0cbcf6eac248ee161ab5643a32a"
+    },
+    "content/handbook/customer-success/csm/csm-manager/roles/operations-manager.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0b5f96d907348cbcdece1e7c3673d51b0c800097c5c999b593fedc8f1c3315ef"
+    },
+    "content/handbook/customer-success/csm/csm-okrs.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a46607ac76f6255cf661b50f32f7a6546de32da80ea1d9e945747bb2475c69ba"
+    },
+    "content/handbook/customer-success/csm/csm-onboarding/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "50eb65b4d05eeadc21b17f4d1bb7f910b7fc0bf464984f44bd6f410fcd90a701"
+    },
+    "content/handbook/customer-success/csm/csm-onboarding/shadowing.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7e9ce6f20aee286c9b258615029dbbfb4add54a9775003759af0ced1aee02d6e"
+    },
+    "content/handbook/customer-success/csm/customer-collaboration-project.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f163bb043fb08cbeedc254acfd4a3a217fe835b8bc14b335c8b522897e416a14"
+    },
+    "content/handbook/customer-success/csm/devsecops-adoption-tracking.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c29729b06b30b1855b0b3c64a44ce8d7d147a9a7c58462787b08a746011b0567"
+    },
+    "content/handbook/customer-success/csm/digital-journey/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/customer-success/csm/ebr.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "37803422862372c7ddab369b3bcd89221987278d3610db04c3ae5d97fb5d4eea"
+    },
+    "content/handbook/customer-success/csm/engagement-survey.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:47:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "08939dce751e905e30096e7d5b888f880222e19ba71c5eff6f5047fd672f4d6b"
+    },
+    "content/handbook/customer-success/csm/engagement/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:47:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6e973d206fbc3dbe3851cd92c9526f9c1802a75f4a9ab4827e6f0a533ab044f5"
+    },
+    "content/handbook/customer-success/csm/engagement/non-engaged-customer-strategies.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:47:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b5c37f94efcda2aa9c3aefeceb319a353ec434894cb2d77766a1eec454c0db60"
+    },
+    "content/handbook/customer-success/csm/engaging-with-partners.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:47:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "848e97b10ce72f8af8021943e2793056e62a7b3deb4e143bcf01e0e27000b259"
+    },
+    "content/handbook/customer-success/csm/engaging-with-ps.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:47:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dca3e997a9b77c5c9444a110e30eee1b34f9dcb2b63533576335667a608cf7be"
+    },
+    "content/handbook/customer-success/csm/escalations/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:47:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "44672cd4fa6ca7b4382ea19db15014aef6d3162433e33a692a73c02cf38e6a60"
+    },
+    "content/handbook/customer-success/csm/escalations/infrastructure.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:47:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b0a5d241174fd7fa05735f4fe4761a3ae375fb895d407c36db107290175bc39d"
+    },
+    "content/handbook/customer-success/csm/executive-relationships.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:47:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "481395eb5f8d86f1bbacd5c1466c181961530630fbdaed84449cbbff9660d001"
+    },
+    "content/handbook/customer-success/csm/fy23.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:47:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9c2d005d930c49b9ce67e3fa18c39a1272c065e65a0c0168eca115ce8296bff2"
+    },
+    "content/handbook/customer-success/csm/fy24.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:47:38Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0249156d22bbefb6861f846c1ab576127ef00d333b897888d353836ba64742b7"
+    },
+    "content/handbook/customer-success/csm/gainsight/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:01:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f4124b1aa332cdc39a4a7a8d7908ce79a951211dd38c51f750cb07d8f3476763"
+    },
+    "content/handbook/customer-success/csm/gainsight/c360-overview.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:01:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d6ff0821aa96971604661b993dbb8e7c496b41312acd04a832d9eb6f59cbbf7f"
+    },
+    "content/handbook/customer-success/csm/gainsight/ctas.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:01:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4c5643d0deebcefb056d8ab8d45bb6f12b22c81999ed9249759264862b1f5b0d"
+    },
+    "content/handbook/customer-success/csm/gainsight/dashboards-overview.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:01:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f49ef5c744e21508cf6ca961beea571dcd1c3e80ad17c183cbbd94c07d47cd59"
+    },
+    "content/handbook/customer-success/csm/gainsight/dashboards.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:01:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e3e5339c3b88a8bb221826c30cc078ed75a0e0ef394e4a64141853eccb051bbc"
+    },
+    "content/handbook/customer-success/csm/gainsight/deployment-types.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:01:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a018886745cbddd54b80bd2b35ca6f5868186e93964a6c4448b61736b79fe3a5"
+    },
+    "content/handbook/customer-success/csm/gainsight/timeline.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:01:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3191719804fc77e4b68f84db0aac708a6f8bbd0ac4e65749a299a10bdd5f9e1a"
+    },
+    "content/handbook/customer-success/csm/health-score-triage/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:01:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/customer-success/csm/issue-prioritization.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:01:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4b3c1e2888faf193d72ec1d65c0e5a91de4005ed554add53ae8dc54d0d5885ca"
+    },
+    "content/handbook/customer-success/csm/leadership-recurring-checkin.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:01:39Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "65a8027ec27b0c36147012086e75e7d2de5b6285aa1abf4a4da9fb5c374b7c62"
+    },
+    "content/handbook/customer-success/csm/onboarding.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:14:15Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8283eb045c74f23d8213d22fd13b580efb4abccf35d6948d9340e2d379dbefa2"
+    },
+    "content/handbook/customer-success/csm/pto.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:14:15Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "07f184ff5ca4cc972b536de658c4a060469ca921306b9c992b682daf8f43120c"
+    },
+    "content/handbook/customer-success/csm/qbr/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:14:15Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "18a960eed4a2d3214451361553c6594529457fe0850a7aa42e65e7350f53c692"
+    },
+    "content/handbook/customer-success/csm/readmes/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:14:15Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "70953f67f448257a6df9d4848e942a9f3e6dff40cacb959827b81cdccaf2e9f8"
+    },
+    "content/handbook/customer-success/csm/readmes/aleeshadawson/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:14:15Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bfd35b92eebf6b485bee70d00ace0634061affbc3f53fb5a2a029741bbefef2b"
+    },
+    "content/handbook/customer-success/csm/readmes/ofalk/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:14:15Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f775dcf1f77106559819d5a05a4cca31e62a5c3c63498a9beaa63ac803ca08d2"
+    },
+    "content/handbook/customer-success/csm/renewals/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:14:15Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/customer-success/csm/researching-customer-questions/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:14:15Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/customer-success/csm/retrospectives.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:14:15Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c80b3ab7b278e52223d527dba330d9ae27ebd661aba022a18982bc8c919930fd"
+    },
+    "content/handbook/customer-success/csm/rhythm.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:14:15Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a8012260b2dd883a9f550fdd6019e19d158c86e75f650184b0915a0f695bfd36"
+    },
+    "content/handbook/customer-success/csm/risk-mitigation/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0abc89999741507fa43cf9486608b1f1f812fbca8fa3ff0f29af6d88e1437598"
+    },
+    "content/handbook/customer-success/csm/risk-mitigation/self-managed-vs-saas.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "88793b50e79bc9f9c35d43ab4a7e70dad20f42945e7d548fdb8e092e55b02a9c"
+    },
+    "content/handbook/customer-success/csm/roleplays.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "16103fd39e4278523cbfb397b5ca6b79b5478534fb4c42aeaba72d6a4b00029b"
+    },
+    "content/handbook/customer-success/csm/segment/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a2f16a116978ca4e879453e2f67e8078d1808a0cc83cc42f2d7c67fafee360c7"
+    },
+    "content/handbook/customer-success/csm/segment/amer.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f29ec37a8f9af8f79c20dde518c0bff05588a7c0417458bfe8ac692a838dc85a"
+    },
+    "content/handbook/customer-success/csm/segment/apj.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f2f0db7d0b3b8b89443b63642a0be5a9333367c93749c0324e7e6abc545006c4"
+    },
+    "content/handbook/customer-success/csm/segment/csa/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "834fa76039f451f49db187cac81475806647d6e5f92ea87ebc02b8b91346e147"
+    },
+    "content/handbook/customer-success/csm/segment/cse/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f42d81c053fe9a6e7916a61295107f21d90ac132d7d7cd42ce00f3d96aa24116"
+    },
+    "content/handbook/customer-success/csm/segment/cse/content/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1f4a54358eb754c4f26a68c99131d1251d68675a69b3d642635c083aeab51449"
+    },
+    "content/handbook/customer-success/csm/segment/cse/cse-dris.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9ed845efe030b1afafedf379bb46fb49602f5dfbc6b420b316c7e7d270bf0bd3"
+    },
+    "content/handbook/customer-success/csm/segment/cse/cse-operating-rhythm.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:39:45Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "776009d229df2be7560647d5fd33de85c2ccaf15fbfa1ce6e761bc81e4f2d701"
+    },
+    "content/handbook/customer-success/csm/segment/cse/cse-tm-onboarding.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:39:45Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "da96c1fe5478b7a48fa82ef6db2ce660e8d5db6302574043f083ac1bf6bd13e5"
+    },
+    "content/handbook/customer-success/csm/segment/cse/csm-to-cse-handover.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:39:45Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2b0bc00302d9e5f1a61c1ea133de92be44bd0fe5a8019fc2112864cb7fc3adf8"
+    },
+    "content/handbook/customer-success/csm/segment/cse/customer-onboarding-best-practices.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:39:45Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0dcdc1e705fd411fcfbf37209cbc2a535dc8e34c755b8bdcf05f0c145b081ff5"
+    },
+    "content/handbook/customer-success/csm/segment/cse/playbooks/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:39:45Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8cf88132069d06d2f04c37a523b3eafabe02e8cbc8c78b04460a66f332ef5550"
+    },
+    "content/handbook/customer-success/csm/segment/emea.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:39:45Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8f3114645af6bf8d96670b9404d2024061e856cbe67f664dc9676a88f0699ff2"
+    },
+    "content/handbook/customer-success/csm/service-ping-faq.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:39:45Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be7a660cf88a3e49674f881553fe204e0dd9b76d9663dc15258b6d5d32c1730f"
+    },
+    "content/handbook/customer-success/csm/services/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:39:45Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fff3ea3d39bc50f7dcfe961e5761feb0858dad8201455990cd49531bf0681bc6"
+    },
+    "content/handbook/customer-success/csm/services/infrastructure-upgrade.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:39:45Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d3d52739a13d157d77808b9f9644e6dd3aed002f627c155dad86a92bf24d202d"
+    },
+    "content/handbook/customer-success/csm/stage-adoption.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:39:45Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e0bbbcd8d980fb1cec60b71a178936c78602b05c050748a5d630616be0b3bc39"
+    },
+    "content/handbook/customer-success/csm/success-plans/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9a66aaf26b26fa1e7c55a5ba21399dab5a2bcfbf4381a5b175d4716330a224bc"
+    },
+    "content/handbook/customer-success/csm/success-plans/continuous-planning/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0997dc9252b4f38b92afb120b29e04227002b3c5446dc0298ba4c9eeb33e9083"
+    },
+    "content/handbook/customer-success/csm/success-plans/questions-techniques.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c37ce8d3ddc8fee79e41fdaa6a9a02977a7c37e009e1acde6e2abd8d18efe7ac"
+    },
+    "content/handbook/customer-success/csm/support.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0a2d5ff767c916e21be4ecfc72224fa89d139a7804b03fd3a3d141af18d69da4"
+    },
+    "content/handbook/customer-success/csm/workshops.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9a9e440f89e55959b92fe5ce90c7600b40539614a4d628fb62dd2797221d6883"
+    },
     "content/handbook/customer-success/customer-content.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-26T01:56:09Z",
       "model": "claude-sonnet-4-6",
       "input_hash": "b666eebc4d9cb25b022990cb9e66dc2b421101f1992592ff0c0b77afdac56978",
       "path": "content/handbook/customer-success/customer-content.md"
+    },
+    "content/handbook/customer-success/customer-health-scoring/index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ace43988a4208284ffd7fd5661c05c72b2d1e8d7c90492ca228075db0f5212c5",
+      "path": "content/handbook/customer-success/customer-health-scoring/index.md"
+    },
+    "content/handbook/customer-success/customer-onboarding/index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4177d942ac1413432cecf0496b7606616d242bf50ba1e22d6d8b4481e879ceb7",
+      "path": "content/handbook/customer-success/customer-onboarding/index.md"
+    },
+    "content/handbook/customer-success/customer-success-vision/index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T01:56:09Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "12c495516ffee9a3792449baa3aab9bd1e617d4879cac7eafdf30fab977c0fc0",
+      "path": "content/handbook/customer-success/customer-success-vision/index.md"
     },
     "content/handbook/customer-success/customer-terrain-mapping.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1044,6 +1533,13 @@
       "input_hash": "39ce21d8346b2951397c32ef22afda4043def14191a28434f92fed7b4c579cf0",
       "path": "content/handbook/customer-success/product-usage-data/usage-statistics.html.md"
     },
+    "content/handbook/customer-success/product-usage-data/use-case-adoption/index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "acb70db34bde78ed3051ac78ce3f49c7dd5f7b3b446003eae7aa9ccf0d51a7bd",
+      "path": "content/handbook/customer-success/product-usage-data/use-case-adoption/index.md"
+    },
     "content/handbook/customer-success/product-usage-data/using-gainsight-data-in-sfdc.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-26T00:00:00Z",
@@ -1078,6 +1574,13 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "462f15bb1ebd56ead4fb70537656a5151011b013b45e79c482d2f4ae8a19b865",
       "path": "content/handbook/customer-success/renewals-managers/_index.md"
+    },
+    "content/handbook/customer-success/renewals-managers/home/index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fe8e284526042077fe8c44a1c0b5610148f24bb46c7bd8847cf3b37301da4ecc",
+      "path": "content/handbook/customer-success/renewals-managers/home/index.md"
     },
     "content/handbook/customer-success/renewals-managers/how.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -4508,41 +5011,6 @@
       "translated_at": "2026-05-01T01:25:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "d16915b7c035700506607b046e93ccfc13d07d66b6dcb9997ff36b92139c67cb"
-    },
-    "content/handbook/customer-success/customer-health-scoring/index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T01:56:09Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "ace43988a4208284ffd7fd5661c05c72b2d1e8d7c90492ca228075db0f5212c5",
-      "path": "content/handbook/customer-success/customer-health-scoring/index.md"
-    },
-    "content/handbook/customer-success/customer-onboarding/index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T01:56:09Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "4177d942ac1413432cecf0496b7606616d242bf50ba1e22d6d8b4481e879ceb7",
-      "path": "content/handbook/customer-success/customer-onboarding/index.md"
-    },
-    "content/handbook/customer-success/customer-success-vision/index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T01:56:09Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "12c495516ffee9a3792449baa3aab9bd1e617d4879cac7eafdf30fab977c0fc0",
-      "path": "content/handbook/customer-success/customer-success-vision/index.md"
-    },
-    "content/handbook/customer-success/product-usage-data/use-case-adoption/index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "acb70db34bde78ed3051ac78ce3f49c7dd5f7b3b446003eae7aa9ccf0d51a7bd",
-      "path": "content/handbook/customer-success/product-usage-data/use-case-adoption/index.md"
-    },
-    "content/handbook/customer-success/renewals-managers/home/index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "fe8e284526042077fe8c44a1c0b5610148f24bb46c7bd8847cf3b37301da4ecc",
-      "path": "content/handbook/customer-success/renewals-managers/home/index.md"
     }
   }
 }
