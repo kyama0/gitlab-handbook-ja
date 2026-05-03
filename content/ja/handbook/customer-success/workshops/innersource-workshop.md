@@ -25,7 +25,7 @@ stale: false
   <iframe src="https://www.youtube.com/embed/ZS1mCpBHXaI" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
-## ディスカバリー質問 {#discovery-questions}
+<h2 id="discovery-questions">ディスカバリー質問</h2>
 
 ディスカバリー質問の目標は、顧客がこれをより大きなイニシアチブに結びつけ、彼らの取り組みをスポンサーするチャンピオンを特定するのを助けることです。チャンピオンは、セッション 1 を一緒に実行する人物です。
 
