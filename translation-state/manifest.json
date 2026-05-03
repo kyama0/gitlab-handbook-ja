@@ -2842,6 +2842,564 @@
       "model": "claude-sonnet-4-6",
       "input_hash": ""
     },
+    "content/handbook/engineering/devops/_index.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T09:42:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "281b5284951ebde4746db5dddce49e44124289e3c2e19360c112f03a5555fd01"
+    },
+    "content/handbook/engineering/devops/create/_index.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T09:42:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "08b230a8a46774fbbdc4ef110482382ad13149504a44a26cadda4d527933d1d7"
+    },
+    "content/handbook/engineering/devops/create/code-review/_index.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T09:42:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5db9914a675664443bc84290934ca81da5e34e3ead9ca9f8720e30198dd1ea99"
+    },
+    "content/handbook/engineering/devops/create/code-review/ai-prompts.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T09:42:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bd269846722bc19358aadd96cd54e0c8173665d7a86e8bd4d6b9f04fde7412ee"
+    },
+    "content/handbook/engineering/devops/create/code-review/backend/_index.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T09:42:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b4418f44e45d7cfed3ee96e3cf32ce1fd91d0ad8b207cfe771edef8797c382a0"
+    },
+    "content/handbook/engineering/devops/create/code-review/backend/engineers.md": {
+      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
+      "translated_at": "2026-04-28T09:42:29Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b3a8cea8f202e136eada31854131d56c8f7bc9e8dc71c420f5aa5ced3894f6cd"
+    },
+    "content/handbook/engineering/devops/create/code-review/backend/manager.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:21:26Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "36100733fbffdd96a362a922471bcfdcf44be94f1392c99fa35258d1e180ac53"
+    },
+    "content/handbook/engineering/devops/create/code-review/frontend.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:21:26Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cc0c58026dc77247af0b48c4181bdd1fdda3ed1f2ef02ec16d6f5c54b593d883"
+    },
+    "content/handbook/engineering/devops/create/code-review/report-widgets-dri-list.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:21:26Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2cf0b4887e4dee99b11b412cac3f72e592ae1dbba89d09d3843df7508f62cd97"
+    },
+    "content/handbook/engineering/devops/create/decision-making-process/_index.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:21:26Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/devops/create/engineering-managers/_index.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:21:26Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d56d8cf3e4aa060af47a48bf85040ec673f05f8211cc3c9798669c24854eabe8"
+    },
+    "content/handbook/engineering/devops/create/engineering-managers/books.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:21:26Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "89339a58272a64c761b004ba393e42b2e053fd42ec18099b49a3d78d7222c5c3"
+    },
+    "content/handbook/engineering/devops/create/engineering-managers/live.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:21:26Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7804fb1775def7fd14d1863e6a06f5ab56a25fae3626408db18fce53720c2215"
+    },
+    "content/handbook/engineering/devops/create/engineering-managers/meetings.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:21:26Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ae0e7a4d9bb17a093cacaecca269b13ea76c47a4f2d29f481bc3f3caa876423f"
+    },
+    "content/handbook/engineering/devops/create/engineering-managers/monitoring.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:21:26Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b5833027de38fe7c4c093e6088373dc18927f6e07b2e474ed6370cbd1979f114"
+    },
+    "content/handbook/engineering/devops/create/engineering-managers/okrs.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:21:26Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "768795fa30d5ad615a0473f702c0080534189cc1b1f12147312da1ffbca9f3b2"
+    },
+    "content/handbook/engineering/devops/create/engineering-managers/training.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:48:33Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "aa9e3127802a9881a42cee51d7ade3f9257c86cd41912c3646e7d76cf7512c7b"
+    },
+    "content/handbook/engineering/devops/create/engineers/_index.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:48:33Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "72de99af84429a84ba89b8135689a3e022547978bb686c5821362cd9f490a41a"
+    },
+    "content/handbook/engineering/devops/create/engineers/books.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:48:33Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "39231fc1229c0a53ba791314bbaad08e07aadfd97201e8b4c44537d42cc62ee5"
+    },
+    "content/handbook/engineering/devops/create/engineers/conferences.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:48:33Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1f1dbffacb827f875992fb871cdfc44d740f92a5590de2e5ee4bfb5bf6d3862f"
+    },
+    "content/handbook/engineering/devops/create/engineers/iteration.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:48:33Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0fc7485b62280600dbd13903352dbaa417e331b25f4b8fa1db2f1c28507b34ae"
+    },
+    "content/handbook/engineering/devops/create/engineers/professional-development.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:48:33Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "aa8a750dee108c766a467bf61cfb8a62318ac0f5c1ac73a1eae67c22bd0ab8a5"
+    },
+    "content/handbook/engineering/devops/create/engineers/skip-level.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:48:33Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "57681e79652f4a2f6d14c291ce7a158cbf09d39716fba02931dd5991965097a3"
+    },
+    "content/handbook/engineering/devops/create/engineers/training.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:48:33Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "898cfff3d9cc85f1516af0a06333da75372cbc3e00e55680a2e76b13b1131177"
+    },
+    "content/handbook/engineering/devops/create/import/_index.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:48:33Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "071ad0ce481510541f0348438c4c01cfe643b5488b1dc3b18351ab1e646e88f0"
+    },
+    "content/handbook/engineering/devops/create/remote-development/_index.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T10:48:33Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8e7e6f659116d6f475cc8594eb39d4ade6a8d6e8714026d812ed905d26be930e"
+    },
+    "content/handbook/engineering/devops/create/remote-development/community-contributions.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T11:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "69671c39b710540e12cfbe19785cb462152aaa087c1002fef744a6b8ff35a08c"
+    },
+    "content/handbook/engineering/devops/create/remote-development/developer-cheatsheet.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T11:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d9ab69c1869915a8dcd7412a4d500a429d877d2b7f793103cfcb13f9bb13d570"
+    },
+    "content/handbook/engineering/devops/create/remote-development/principles.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T11:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "096ffd0b59d63a9050e62beb1f7fc523fb84ecd9464705a6cde79b1cfd43d1e5"
+    },
+    "content/handbook/engineering/devops/create/source-code/_index.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T11:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7affd97acf6050c8b0270a4aa099efec10d935e69dd5a8f13a86c0effc7148e2"
+    },
+    "content/handbook/engineering/devops/create/source-code/ai-prompts.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T11:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "229f975731cc4e270560e5d07816e5e99f0521d714cdfaeb8dea7f6ca4146488"
+    },
+    "content/handbook/engineering/devops/create/source-code/backend/_index.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T11:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/devops/create/source-code/frontend/_index.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T11:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "879df8e85ecd14ea409ddca5dd620e9c909288961d2d9f0e55fef0cdc60463e1"
+    },
+    "content/handbook/engineering/devops/create/talent-assessments/_index.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T11:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/devops/create/tech-lead/_index.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T11:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/devops/oncall/_index.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T11:23:44Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "577dd7df13070cb9802b8483d4cbe7016421155189eed932ac24e6fadbd69b58"
+    },
+    "content/handbook/engineering/devops/oncall/communication-and-culture.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7b2bda9ddb5677735f2de9c3144d737c52bf265c4e5252db0cce3ea2b8d93d2c"
+    },
+    "content/handbook/engineering/devops/oncall/coverage-and-scheduling.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5efa24d69aad4bc375c0d0f969e3f7f3a47ce1b4ed90e2f91e65c484b33aedc2"
+    },
+    "content/handbook/engineering/devops/oncall/handoff-and-continuity.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5fb6d418a1a469a4923b633d0b7ad275d996e178c1991253d83a43200bcf0057"
+    },
+    "content/handbook/engineering/devops/oncall/joining-and-leaving-rotation.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2b40ac767b7ce3276d37bb1173e64b5c62ae5621d06af1985bd9fa60ec044b52"
+    },
+    "content/handbook/engineering/devops/oncall/measuring-success.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f3aa8b21cda58d5d773c0ec0b3ede3d2dd9ba819e45155e6a6cc7f7a2372fea6"
+    },
+    "content/handbook/engineering/devops/oncall/rotation-leader.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "dff85d6b8153500317dbade598572346e820d19b972daaec6d218e5a9791661b"
+    },
+    "content/handbook/engineering/devops/oncall/understanding-the-basics.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "09bf6b78144f81e8966a77edb5d3ca2b15f402f918d8aae3e422d40ee4d95d83"
+    },
+    "content/handbook/engineering/devops/oncall/your-first-shift.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "110b95a44e292c89e93de1a144c8e43fb5a06e35264d7e464476fd97da62a5ca"
+    },
+    "content/handbook/engineering/devops/package/_index.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e9a6a465b11ab3479259ff697e9ee7eebd46e43e602a1851d2b8124fdc850efc"
+    },
+    "content/handbook/engineering/devops/package/jtbd.md": {
+      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0d01db531bba51a31f2b0252486f99c2c53501a070cf1f961ccc4b29ef7faff1"
+    },
+    "content/handbook/engineering/devops/package/quality.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "48b6f5e7b3fe2c6ef72134774fde1090393592792e0bb215451e3080b7d02b8b"
+    },
+    "content/handbook/engineering/devops/plan/_index.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "96e015d068d36e258b5b94007702ba6f4c2277680c9e69254d0cacc28c093345"
+    },
+    "content/handbook/engineering/devops/plan/internship.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c7413d23a0c9f8776e43d33154453af248f89471425f8358945ad0e42ed76aef"
+    },
+    "content/handbook/engineering/devops/plan/knowledge.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "918c2b2bc1d37c82106c8c424ab9b80c3301f2f7c1c4c4d38e63b418292ea34d"
+    },
+    "content/handbook/engineering/devops/plan/product-planning/_index.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0e71e2305d4831d6f359ffc9d09d22e0bba100cc0d2510775a17d45b2f707192"
+    },
+    "content/handbook/engineering/devops/plan/product-planning/how-we-work.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fddfbe31ab497422cb1c3f7e81f6f2a35a48cc844bea4a988eeb1a7fe7e78c2b"
+    },
+    "content/handbook/engineering/devops/plan/product-planning/project-example-boards.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f58a99eaa023c35c5b440f6cda63ac8beb4234d1505262e5333613a9d9583005"
+    },
+    "content/handbook/engineering/devops/plan/project-management.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4d599a3d11801aeaec854be3287881549cd19b55b6854ed9e54d1e5a9a44af81"
+    },
+    "content/handbook/engineering/devops/plan/working-groups/_index.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c43c27a256838a5604294b6be6f39e8f1994b96bb48ff8f0f2a440d0123ae5ad"
+    },
+    "content/handbook/engineering/devops/plan/working-groups/epic-work-items-migration.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ec702803fcb074b75bd9a9debf1e3c319fe707c6672766db0a4f1860e5d33978"
+    },
+    "content/handbook/engineering/devops/plan/working-groups/work-items-api-performance.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T13:03:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "09e108c85250f8dacf78b5458e1fe4631893222a0e27a847a3137486f7486c27"
+    },
+    "content/handbook/engineering/devops/project-plans/_index.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T13:03:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c65222b8b7285aaf1630287b54a779fc32711c4532d58d9a058d0e54d5398b8b"
+    },
+    "content/handbook/engineering/devops/project-plans/ci-catalog/_index.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T13:03:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/devops/project-plans/ci-steps.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T13:03:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f68d12181b7f2abcbe8f046cff4057b2bcdb9c44e02ec510aaf290f0424d20bb"
+    },
+    "content/handbook/engineering/devops/project-plans/cluster-web-terminal.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T13:03:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8282254eaa798e28271ef3f75bff0b82f059467a0894ca9e1e430d01d360ef71"
+    },
+    "content/handbook/engineering/devops/project-plans/container-registry-v2.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T13:03:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "86590397bfcaf10e4ff2f346b690984133ebdc9a3f04e10001e6165783fc1f8f"
+    },
+    "content/handbook/engineering/devops/project-plans/external-ci-keyword.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T13:03:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ef0a5962a70e89e93398020cceab705b506420498cbbb5eb8491803abaded633"
+    },
+    "content/handbook/engineering/devops/project-plans/gcp-secrets-integration.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T13:03:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "166b748203aec42104e8693e1514ae50e2fa28a7db93119fb63603ff4a6a3855"
+    },
+    "content/handbook/engineering/devops/project-plans/k8s-dashboard.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T13:03:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fa656a7e280df5b6de42748d1637f9f33fff3ba7da9ec304fc05353bc1170f56"
+    },
+    "content/handbook/engineering/devops/project-plans/secrets-manager.md": {
+      "upstream_sha": "bb4e4d0fc1a355c00a1d82b1528ff729c83af189",
+      "translated_at": "2026-04-28T13:03:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c55f7fe92988cb0daafba087d72cad9454a9b53810e0c48aaf91be840f3a138b"
+    },
+    "content/handbook/engineering/devops/project-plans/service-desk-ticket-work-item.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T13:32:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a687bfa628b23a81f887646bf22068fd0e3b12e06ba6fcf09c7eb848d9f3bfb0"
+    },
+    "content/handbook/engineering/devops/runner/_index.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T13:32:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2a233968f170c0fa9a40e6d540d6be62a4ce5e5f50855d6da89e9c469a9ec6a0"
+    },
+    "content/handbook/engineering/devops/runner/ci-functions-platform/_index.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T13:32:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "285dfbabe958a6eb8459709fa73ddc177b486562763fb8c4fc6944640c74f0c7"
+    },
+    "content/handbook/engineering/devops/runner/environments/_index.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T13:32:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2bb583fda2a964295734c3ad3e4c52bae822c3a74855092e33dbf85ceffcfe47"
+    },
+    "content/handbook/engineering/devops/runner/environments/autodevops.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T13:32:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bd4ce68e94bb0541bfca4a6e2fd47e14b48482b698a0a18f478cb26c678911e2"
+    },
+    "content/handbook/engineering/devops/runner/environments/quality.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T13:32:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "af55052bcbc32d415882d6ce6057bd33680119294cede397fda71da85d43c961"
+    },
+    "content/handbook/engineering/devops/runner/jtbd.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T13:32:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "beedef283d62f581f1cc303912d19c6948fdda9fa116380d6fad9a148cbff9e0"
+    },
+    "content/handbook/engineering/devops/runner/project-plans.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T13:32:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d414ee3b24a81fa643bc0ce173cf5be752fcd41abe48af2bbaf7b8598757b2d2"
+    },
+    "content/handbook/engineering/devops/runner/risk-map.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T13:32:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "50f9a9a48a91d70f87e1ca64add3cd94824ca66df7b9d1d44fbf56b2dad1dd0c"
+    },
+    "content/handbook/engineering/devops/runner/runner-core/_index.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T13:32:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "08339dd194967d887d0036ac21e22038a7706e94427f615bd4374e32b43b58eb"
+    },
+    "content/handbook/engineering/devops/runner/runner-core/bug-triage-matrix.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T14:02:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "25eeffe9b48c40ce046febda2b9f96e6d0de32d2dbe47750e690117599124e0f"
+    },
+    "content/handbook/engineering/devops/runner/team-resources/_index.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T14:02:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/engineering/devops/runner/user-stories.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T14:02:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "30d439388b60e7231f826bf6c8ef3c321d5c6ed79895aeaf608ca4f8262aa671"
+    },
+    "content/handbook/engineering/devops/verify/_index.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T14:02:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "142db0ee587e104fedc52b40cc14eb673420b064ff28c12d6ece9e5f44356829"
+    },
+    "content/handbook/engineering/devops/verify/ci-platform/_index.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T14:02:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "22a9aeb1d17b530901a80329e619e68ebf309545fe86ea58399b42234990f0a1"
+    },
+    "content/handbook/engineering/devops/verify/pipeline-authoring/_index.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T14:02:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2a0c389e68b8eec913edf1855766103a59c7a4269af7bc0ec0dba333c65ab536"
+    },
+    "content/handbook/engineering/devops/verify/pipeline-authoring/duo-prompts.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T14:02:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "263d7276c2853614de45628997c519c03eef54a52d38b75f732d493d44d43be1"
+    },
+    "content/handbook/engineering/devops/verify/pipeline-authoring/frontend-architecture.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T14:02:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e5f10a17f626332d1802f43ebd8c4ffb8036ac7b54479d2f74d273ed26becda0"
+    },
+    "content/handbook/engineering/devops/verify/pipeline-authoring/jtbd.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T14:02:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2e4be972fc7e13adabb37f3c93cceca94cd5a0781ad4ab8775e16240bca006e0"
+    },
+    "content/handbook/engineering/devops/verify/pipeline-authoring/team-resources.md": {
+      "upstream_sha": "1065c86ab1ba75adefbb07560d726608885e6d4e",
+      "translated_at": "2026-04-28T14:02:31Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5629d605e4abb197e879b9e5ad1e54a17e24b7c5f0fc4ccbbb3f81867a63cfff"
+    },
+    "content/handbook/engineering/devops/verify/pipeline-execution/_index.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e7cf346981f1bd3e1135bb89c1839fb1983cce4d3e672b1990b76e6dfe655e0f"
+    },
+    "content/handbook/engineering/devops/verify/pipeline-execution/jtbd.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d604a24efc07ed65a7699e3679ff2789c61f708e11f3703e67e57c7674d08b07"
+    },
+    "content/handbook/engineering/devops/verify/pipeline-execution/project-plans/_index.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c294c62112f304b395711737e76087bc9c74e9ca6ec9f85d5b409cf913592f29"
+    },
+    "content/handbook/engineering/devops/verify/pipeline-execution/project-plans/ci-data-partitioning.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "954691fd030e16f1a2386aeba794804b805149b6adc1dfaf9029b36956d5d280"
+    },
+    "content/handbook/engineering/devops/verify/pipeline-execution/project-plans/ci-pk-conversion.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f22e4b128da955d716a8ca2ae806e9f19ab88dc4b87570ce82a28d579ee3222e"
+    },
+    "content/handbook/engineering/devops/verify/pipeline-execution/project-plans/merge-trains.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a6253cbefd52c6eaf50349b87792f787a05dcfb3ab171b169bcbe35d53ae69fa"
+    },
+    "content/handbook/engineering/devops/verify/pipeline-execution/risk-map.md": {
+      "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
+      "translated_at": "2026-04-28T14:37:32Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0a4aab681aa0eceb66b16b574db40d1f2c039ddc9fd783ebf63b25381d2d9510"
+    },
     "content/handbook/engineering/embody-team/_index.md": {
       "path": "content/handbook/engineering/embody-team/_index.md",
       "upstream_sha": "99a722ddc313408ef3d54d179c211cd76390f2bd",
