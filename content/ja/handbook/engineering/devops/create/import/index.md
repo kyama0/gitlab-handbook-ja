@@ -79,7 +79,9 @@ Import グループの作業は以下の Issue ボードで追跡できます：
 
 - [現在のマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/1459244?milestone_title=Upcoming&label_name[]=group%3A%3Aimport)
 
-### Issue ラベル {#issue-labels}
+<span id="issue-labels"></span>
+
+### Issue ラベル
 
 良いラベルの管理を維持するために、Issue を作成またはトリアージする際は正しいラベルを適用してください。
 
@@ -192,7 +194,9 @@ Import グループでは、これらのガイドラインに加えて以下の 
 - [インポーター依存関係](#importer-dependencies)をレビューし、サードパーティ API の変更による必要な変更の Issue を作成する
 - マイルストーン終了時に [`@gitlab-com/create-team/import/reaction-rotation` のメンバーシップ](https://gitlab.com/groups/gitlab-com/create-team/import/reaction-rotation/-/group_members?with_inherited_permissions=exclude)を更新する
 
-##### インポーター依存関係 {#importer-dependencies}
+<span id="importer-dependencies"></span>
+
+##### インポーター依存関係
 
 各マイルストーンで、各インポーターの依存関係の変更履歴を確認し、今後の破壊的変更や API の非推奨化がないかをチェックしてください。[GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/) を使って影響を評価し、更新が必要な変更には関連する `~"Importer:"` ラベルを付けた Issue を作成してください。
 
@@ -462,7 +466,9 @@ GitLab for Jira Cloud アプリワーカー：
 - [`JiraConnect::SyncProjectWorker`](https://log.gprd.gitlab.net/goto/5f0e03847ddc1b074d6346199c8bc4d2) エラー。
 - [すべての JiraConnect 同期ワーカー](https://log.gprd.gitlab.net/goto/39348f2d169e6929c41dba2d6fb063ee) タイムアウトエラー。
 
-### エラーバジェット {#error-budgets}
+<span id="error-budgets"></span>
+
+### エラーバジェット
 
 GitLab は[エラーバジェット](/handbook/engineering/error-budgets/)を使用して機能の可用性とパフォーマンスを測定しています。
 各エンジニアリンググループには独自のバジェット消費があります。Import チームの現在の28日間の消費は[Grafana ダッシュボード](https://dashboards.gitlab.net/d/stage-groups-import_and_integrate/stage-groups-import-and-integrate-group-dashboard?orgId=1)で確認できます。
@@ -500,7 +506,9 @@ Tableau で機能使用のデータを表示できます。
 - [インポーター使用状況ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/workbooks/2214374/views) - まだ作業中です。
 - [ユーザーコントリビューションマッピング使用状況ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/workbooks/3238494/views) - インポート中に作成されたプレースホルダーユーザーに関するデータを表示します。
 
-## リンクとリソース {#links}
+<span id="links"></span>
+
+## リンクとリソース
 
 
 <!-- include omitted: includes/engineering/foundations/shared-links.md (no localized version under content/ja/) -->

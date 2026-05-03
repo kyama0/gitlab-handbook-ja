@@ -31,7 +31,9 @@ WG メンバーは毎週木曜日 14:30 UTC にシンクコールを行い、前
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/videoseries?list=PL05JrBw4t0KrEtDK8xRruSY5VtQb9DmdX" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
-### 終了基準 {#exit-criteria}
+<span id="exit-criteria"></span>
+
+### 終了基準
 
 アップデートは [&11777](https://gitlab.com/groups/gitlab-org/-/epics/11777)（毎週月曜日に更新）で追跡されています。
 

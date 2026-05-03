@@ -38,7 +38,9 @@ Plan の多くの機能は、同じ work-items API・データベース・検索
 
 TBD
 
-### 終了基準 {#exit-criteria}
+<span id="exit-criteria"></span>
+
+### 終了基準
 
 - [ ] グループ/プロジェクトの Issue フィルターを Work Items API へ移行する
 - [ ] Work Items API のパフォーマンスを計測し、改善目標を設定する（例:）:
