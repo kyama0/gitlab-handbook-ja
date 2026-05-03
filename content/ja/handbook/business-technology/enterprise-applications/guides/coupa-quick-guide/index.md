@@ -25,7 +25,7 @@ stale: false
 
 <br>
 
-## <i class="fas fa-stream" id="biz-tech-icons"></i> 購買依頼プロセスについて詳しく知りたいですか？
+## <i class="fas fa-stream biz-tech-icons"></i> 購買依頼プロセスについて詳しく知りたいですか？
 
 以下のボックスをクリックすると、プロセスの詳細が確認できます:
 <div class="flex-row" markdown="0" style="height:110px;justify-content:center">
@@ -39,7 +39,7 @@ stale: false
 
 </div>
 
-## <i class="fas fa-stream" id="biz-tech-icons"></i> 請求書プロセスについて詳しく知りたいですか？
+## <i class="fas fa-stream biz-tech-icons"></i> 請求書プロセスについて詳しく知りたいですか？
 
 以下のボックスをクリックすると、プロセスの詳細が確認できます:
 <div class="flex-row" markdown="0" style="height:110px;justify-content:center">
@@ -57,7 +57,7 @@ stale: false
 
 <br>
 
-**<i class="fas fa-stream" id="biz-tech-icons"></i> ソフトウェア、フィールドマーケティング & イベント、またはプロフェッショナルサービスのプロセスについて詳しく知りたいですか？**
+**<i class="fas fa-stream biz-tech-icons"></i> ソフトウェア、フィールドマーケティング & イベント、またはプロフェッショナルサービスのプロセスについて詳しく知りたいですか？**
 
 以下のボックスをクリックすると、プロセスの詳細が確認できます:
 <div class="flex-row" markdown="0" style="height:110px;justify-content:center">

@@ -9,7 +9,7 @@ stale: false
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## Netsuite でカスタムフィールドを作成する方法
+## NetSuite でカスタムフィールドを作成する方法
 
 レコーディング（財務システム情報のため非公開）: [https://youtu.be/7QEw0-E4dTQ](https://youtu.be/7QEw0-E4dTQ)
 

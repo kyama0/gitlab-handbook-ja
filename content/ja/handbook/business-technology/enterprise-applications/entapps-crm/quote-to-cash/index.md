@@ -37,7 +37,7 @@ stale: false
 <div class="grid-item-small" style="background-color: #7c7ccc; grid-column-start: 4;grid-column-end: 5;">Billing</div>
 <div class="grid-item-small" style="background-color: #a6a6de; grid-column-start: 2;grid-column-end: 4;">Zuora Billing</div>
 <div class="grid-item-small" style="background-color: #7c7ccc; grid-column-start: 4;grid-column-end: 5;">Finance</div>
-<div class="grid-item-small" style="background-color: #a6a6de; grid-column-start: 2;grid-column-end: 4;">収益認識（Netsuite）</div>
+<div class="grid-item-small" style="background-color: #a6a6de; grid-column-start: 2;grid-column-end: 4;">収益認識（NetSuite）</div>
 <div class="grid-item-small" style="background-color: #7c7ccc; grid-column-start: 4;grid-column-end: 5;">Enterprise Apps</div>
 <div class="grid-item-empty" style="grid-column-start: 1;grid-column-end: 5;grid-row-start: 12;grid-row-end: 13"><i class="fas fa-arrow-down"></i></div>
 <div class="grid-item-large" style="background-color: #73afea; grid-row-start: 13;grid-row-end: 14; grid-column-start: 1;grid-column-end: 2;"><b>フルフィルメント</b></div>

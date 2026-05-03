@@ -211,12 +211,12 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "2db44ec3aea4cefa589c67ea87967ce5411865a0983decad9e2c59697298175f"
     },
-    "content/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/troubleshooting/_index.md": {
-      "path": "content/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/troubleshooting/_index.md",
+    "content/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/troubleshooting/index.md": {
+      "path": "content/handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/troubleshooting/index.md",
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-25T06:00:00Z",
       "model": "claude-sonnet-4-6",
-      "input_hash": ""
+      "input_hash": "4d90f81ed1304d26a053324734cbdfb999fecb25c4fd50e793f23227b7e22141"
     },
     "content/handbook/business-technology/enterprise-applications/entapps-services/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/entapps-services/_index.md",
@@ -225,12 +225,12 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "1729ad7cb32b6018d013f3cb0801404c0e8760ecb935c68c7efc063510d56138"
     },
-    "content/handbook/business-technology/enterprise-applications/finance-ops/_index.md": {
-      "path": "content/handbook/business-technology/enterprise-applications/finance-ops/_index.md",
+    "content/handbook/business-technology/enterprise-applications/finance-ops/index.md": {
+      "path": "content/handbook/business-technology/enterprise-applications/finance-ops/index.md",
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-25T06:00:00Z",
       "model": "claude-sonnet-4-6",
-      "input_hash": ""
+      "input_hash": "294380d7fd579dfb63af6c3ca3052b630bc39b412d78093007bf9fabbcaadc55"
     },
     "content/handbook/business-technology/enterprise-applications/guides/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/_index.md",
@@ -288,19 +288,19 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "4661d2362cd51f8532e4e49e066230a51a706d4b5a882b882a9bee6effe42676"
     },
-    "content/handbook/business-technology/enterprise-applications/guides/glean-guide/_index.md": {
-      "path": "content/handbook/business-technology/enterprise-applications/guides/glean-guide/_index.md",
+    "content/handbook/business-technology/enterprise-applications/guides/glean-guide/index.md": {
+      "path": "content/handbook/business-technology/enterprise-applications/guides/glean-guide/index.md",
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-25T05:49:40Z",
       "model": "claude-sonnet-4-6",
-      "input_hash": ""
+      "input_hash": "32bc33a73bb41a202ec78cde7cd0d35295605441b677a7ca0c693356ea70af93"
     },
-    "content/handbook/business-technology/enterprise-applications/guides/glean-tips/_index.md": {
-      "path": "content/handbook/business-technology/enterprise-applications/guides/glean-tips/_index.md",
+    "content/handbook/business-technology/enterprise-applications/guides/glean-tips/index.md": {
+      "path": "content/handbook/business-technology/enterprise-applications/guides/glean-tips/index.md",
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-25T05:49:40Z",
       "model": "claude-sonnet-4-6",
-      "input_hash": ""
+      "input_hash": "f9fcc91c9c75c9cb3ef88db55b9d376e10bf25fbe3842d66f63530aec845f977"
     },
     "content/handbook/business-technology/enterprise-applications/guides/helplab-guide/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/helplab-guide/_index.md",
@@ -386,12 +386,12 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "9783cca9e3ba8a7762259fd98bcb43454e4681f9c49d9ca28aea693e006f898c"
     },
-    "content/handbook/business-technology/how-we-work/rolly/_index.md": {
-      "path": "content/handbook/business-technology/how-we-work/rolly/_index.md",
+    "content/handbook/business-technology/how-we-work/rolly/index.md": {
+      "path": "content/handbook/business-technology/how-we-work/rolly/index.md",
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-25T08:00:00Z",
       "model": "claude-sonnet-4-6",
-      "input_hash": ""
+      "input_hash": "4cb9191ff4f4b7b91f98e6949b80c035f2ae06ac508db2b9903a6870c0bc4a8b"
     },
     "content/handbook/business-technology/readmes/_index.md": {
       "path": "content/handbook/business-technology/readmes/_index.md",
@@ -575,12 +575,12 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "900bd6d57ba0234c98aeeb12f46684e03d598b427ea5fba3c43a01d488adcbdb"
     },
-    "content/handbook/business-technology/tech-stack-guide/_index.md": {
-      "path": "content/handbook/business-technology/tech-stack-guide/_index.md",
+    "content/handbook/business-technology/tech-stack-guide/index.md": {
+      "path": "content/handbook/business-technology/tech-stack-guide/index.md",
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-25T09:00:00Z",
       "model": "claude-sonnet-4-6",
-      "input_hash": ""
+      "input_hash": "d5404f3a1f44879eff24b5ae40dd73862b094b284c256dd2b5b0e78a4d6d4bee"
     },
     "content/handbook/business-technology/tech-stack.md": {
       "path": "content/handbook/business-technology/tech-stack.md",

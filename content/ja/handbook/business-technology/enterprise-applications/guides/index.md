@@ -20,7 +20,7 @@ stale: false
 
 ## エンタープライズテクノロジー & AI システムガイド
 
-- [Netsuite でカスタムフィールドを作成する方法](ns-custom-field/)
+- [NetSuite でカスタムフィールドを作成する方法](/handbook/business-technology/enterprise-applications/guides/finance-guides/nscustomfields/)
 - [Coupa エンドユーザーガイド](coupa-guide/)
 - [Zip エンドユーザーガイド](zip-guide/)
 - [製品カタログガイド](product-catalog/)

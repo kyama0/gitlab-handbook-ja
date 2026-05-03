@@ -55,8 +55,8 @@ YES!! Rolly は誰でも使用できます。
 
 Rolly の設定はとても簡単です：
 
-1. [rollup-bot-configuration](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/integrations/rollup-bot-configuration/-/blob/master/rollupconf.yml) の yaml ファイルに設定を追加した MR を送信します。
-2. `@bt_bot` がエピックを持つすべてのグループに少なくとも `Reporter` 権限を持ち、Issue を作成するためのステータスロールアッププロジェクトにも少なくとも `Reporter` 権限を持つことを確認します。
+1. [rollup-bot-configuration](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/integrations/rollup-bot-configuration/-/blob/master/rollupconf.yml) の yaml ファイルに設定を追加した MR を送信してください。
+2. `@bt_bot` がエピックを持つすべてのグループに少なくとも `Reporter` 権限を持ち、Issue を作成するためのステータスロールアッププロジェクトにも少なくとも `Reporter` 権限を持つことを確認してください。
 
 ### Rolly の設定でサポートが必要です
 

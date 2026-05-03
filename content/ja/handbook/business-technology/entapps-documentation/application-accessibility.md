@@ -34,7 +34,7 @@ MacOS は以下をサポートするフィーチャーを備えています：
 1. Salesforce
 2. ServiceNow
 3. Coupa
-4. Netsuite
+4. NetSuite
 5. UIPath
 6. Workato
 7. Tropic
