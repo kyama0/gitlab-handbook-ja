@@ -6279,6 +6279,769 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "429874d7e7f6b148e528a8e09e1c3c7ca496025271de8c2e64d5abb18371ba2b"
     },
+    "content/handbook/legal/_index.md": {
+      "path": "content/handbook/legal/_index.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d3e3ca3233d263504082956dd4d910a2768135fe5ab21b09eda9016794f9b13f"
+    },
+    "content/handbook/legal/acceptable-use-policy.md": {
+      "path": "content/handbook/legal/acceptable-use-policy.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "03bccc088bc532600695f7c69c2bfbfae03e0e250c7ebe714430b94289f58ef0"
+    },
+    "content/handbook/legal/agile-planning-terms-v1.md": {
+      "path": "content/handbook/legal/agile-planning-terms-v1.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b84094d1dad95809f6d4529f71c8a69f8b1138a0da5fbe0b99753e3375bd36a7"
+    },
+    "content/handbook/legal/agile-planning-terms.md": {
+      "path": "content/handbook/legal/agile-planning-terms.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "86262ad661e9cf447999785cfccb92b05c1ee2e626d97549c365d676196d9fa1"
+    },
+    "content/handbook/legal/ai-functionality-terms-v1.md": {
+      "path": "content/handbook/legal/ai-functionality-terms-v1.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fb5ec6ac6da25f90c15ae6ab59f076a9ba8621bb48bd99e306eca638b0a6b934"
+    },
+    "content/handbook/legal/ai-functionality-terms-v2.md": {
+      "path": "content/handbook/legal/ai-functionality-terms-v2.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6b8f70436047483d234ba6a02d358f3dd9e78f1ae9da356fd14a68a1090bfd24"
+    },
+    "content/handbook/legal/ai-functionality-terms-v3.md": {
+      "path": "content/handbook/legal/ai-functionality-terms-v3.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9f45281bc71e4dd44e312304fca9e12b398b6aa748d8c8cd0e44d79f1c3f5ff9"
+    },
+    "content/handbook/legal/ai-functionality-terms-v4.md": {
+      "path": "content/handbook/legal/ai-functionality-terms-v4.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f47894cab2b70d6ffbf3915ff839c2baa2929b5304a070e0adf4b94e3a3d78d3"
+    },
+    "content/handbook/legal/ai-functionality-terms.md": {
+      "path": "content/handbook/legal/ai-functionality-terms.md",
+      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a8e2cbbfba69e3742b3f452f1913515a65d28bfbf8cdefaf6e11c6766c541a94"
+    },
+    "content/handbook/legal/anti-corruption-policy.md": {
+      "path": "content/handbook/legal/anti-corruption-policy.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "51324da8baec83407d984b529d7808b9dbee98d3f377feb4d335429e2a20bec9"
+    },
+    "content/handbook/legal/anti-fraud-policy.md": {
+      "path": "content/handbook/legal/anti-fraud-policy.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f10ed3ef0b8264a75eca50895fae13fb18f375e34a1c47044569f884630645a4"
+    },
+    "content/handbook/legal/anti-retaliation-policy.md": {
+      "path": "content/handbook/legal/anti-retaliation-policy.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "af4146df3d3e3c4d57c8f29fa2990c592fb451cfc4fd24465a27e257cb2e6aca"
+    },
+    "content/handbook/legal/api-terms.md": {
+      "path": "content/handbook/legal/api-terms.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7a000581aaa573a8f5b104f867ed2dc8ecc3f26dd6701041e6d3735193f355d2"
+    },
+    "content/handbook/legal/commercial/index.md": {
+      "path": "content/handbook/legal/commercial/index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "af035b343244a7689b6438e74e59919174f6003e20729ff8a511d639a217360f"
+    },
+    "content/handbook/legal/competitor-discussion-guidelines.md": {
+      "path": "content/handbook/legal/competitor-discussion-guidelines.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "43358c6e1cf59fa975e9b4c0be26c484e1d22f7c5f4110d05330a21d0b355ea5"
+    },
+    "content/handbook/legal/conference-sweepstakes-rules-german-version.md": {
+      "path": "content/handbook/legal/conference-sweepstakes-rules-german-version.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a5e8e238037cf66619b6185abe5c20fe60bb6a75fb8c8e0f30d964ef648e7d7f"
+    },
+    "content/handbook/legal/conference-sweepstakes-rules.md": {
+      "path": "content/handbook/legal/conference-sweepstakes-rules.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d7d819351b8229b3a9c70d337d10c722a3a3ce5e132071bc5444160fb54d8301"
+    },
+    "content/handbook/legal/corporate-communications.md": {
+      "path": "content/handbook/legal/corporate-communications.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9d82bb08b6c2232c7c0f8b908a7d6b6da35d160c8a6bce7a801975c07a746fb6"
+    },
+    "content/handbook/legal/customer-negotiations.md": {
+      "path": "content/handbook/legal/customer-negotiations.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d328f5af8eab6f5de06c1fc92896c47dfab15419a672464fd6219f11df21d155"
+    },
+    "content/handbook/legal/data-processing-agreement.md": {
+      "path": "content/handbook/legal/data-processing-agreement.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T00:55:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c8653b4b91a5f19acfa399d9204161f3c2160fc7b125d28bdf281286e5a6a1b2"
+    },
+    "content/handbook/legal/dmca.md": {
+      "path": "content/handbook/legal/dmca.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T00:55:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "996cb1b6770a9fd977ee6a53410a92a414073ec9f0ce0bcccf0b0706c01505a0"
+    },
+    "content/handbook/legal/dora.md": {
+      "path": "content/handbook/legal/dora.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T00:55:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "831abeeb9fc30072bfc093157963999f6ffdf26afa9f947fbbeb1e1af82c3cc9"
+    },
+    "content/handbook/legal/dsa.md": {
+      "path": "content/handbook/legal/dsa.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T00:55:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "22326b4a3f6622e06e1ed435315cb87c1215976a310715be3cbd83c31ea6f000"
+    },
+    "content/handbook/legal/education-agreement.md": {
+      "path": "content/handbook/legal/education-agreement.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T00:55:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "744d97b51423072eaf88e66d61acf78c061329aa0dbdbeca3b3d9c94b0fddb83"
+    },
+    "content/handbook/legal/employment-law.md": {
+      "path": "content/handbook/legal/employment-law.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T00:55:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "742f038fc2cdc78fd17bf92185970ccbbbe560208a596e34c3aa99e3a8019359"
+    },
+    "content/handbook/legal/esg/_index.md": {
+      "path": "content/handbook/legal/esg/_index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T00:55:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "25017c7cb39e5fee9ed9652c6a74b1aae297a33ecfda3fbc258e064c72dd2c41"
+    },
+    "content/handbook/legal/esg/earth-month/_index.md": {
+      "path": "content/handbook/legal/esg/earth-month/_index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T00:55:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4363d3c7e10c686b306fc753e04862382c7ec4e6884d5b8d6e783a2995577fd2"
+    },
+    "content/handbook/legal/esg/esg-training.md": {
+      "path": "content/handbook/legal/esg/esg-training.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T00:55:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f857b1cbd62b15e1162754197aba526055bfe738f0921c7397fa0dab18147069"
+    },
+    "content/handbook/legal/esg/fy23-esg-report.md": {
+      "path": "content/handbook/legal/esg/fy23-esg-report.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-30T00:55:37Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cf0a8ecc0303d18def0dda7ffbda3a564f779a76c993233966cc37f1842875c7"
+    },
+    "content/handbook/legal/esg/team-member-sustainability-guide/_index.md": {
+      "path": "content/handbook/legal/esg/team-member-sustainability-guide/_index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5e43bec711b2ca1d46d200cd8a37255bd209290436c9df131dc5133f51b408a7"
+    },
+    "content/handbook/legal/ethics-compliance-program/_index.md": {
+      "path": "content/handbook/legal/ethics-compliance-program/_index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3a9de285bed2675790b22474a83b75cdc50a007387d0c0e8e0ece0cdb1850d72"
+    },
+    "content/handbook/legal/ethics-compliance-program/ai-ethics-principles.md": {
+      "path": "content/handbook/legal/ethics-compliance-program/ai-ethics-principles.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fd8242a2179a662ac7c7807ea6a310926e858e336186ed1e8d9450fade4ac71e"
+    },
+    "content/handbook/legal/ethics-compliance-program/compliance-training.md": {
+      "path": "content/handbook/legal/ethics-compliance-program/compliance-training.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bdd2a31f34188b69beb39e394d740c7613d72aeaa732c4d610b15bac73cd23f7"
+    },
+    "content/handbook/legal/ethics-compliance-program/learning-content-accessibility-guidelines.md": {
+      "path": "content/handbook/legal/ethics-compliance-program/learning-content-accessibility-guidelines.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ac468cb53f8984a44e0653c12c0928f12c1385183feaf3c2daa29c1b16525cae"
+    },
+    "content/handbook/legal/eu-data-act-terms.md": {
+      "path": "content/handbook/legal/eu-data-act-terms.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "340ed18762b30ddde25d2be98195c0fb34b49410ecdc4b65a31ce87dc33b2703"
+    },
+    "content/handbook/legal/eudataact.md": {
+      "path": "content/handbook/legal/eudataact.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2f506538c3d53e89dfc337a13c03b82e7307527138e5acd98e652b7382b1e06c"
+    },
+    "content/handbook/legal/external-materials-compliance-tips.md": {
+      "path": "content/handbook/legal/external-materials-compliance-tips.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "65e860981e384e64eb81df14ce06072221ebccbf0dd62aa2a511d654c16d9e4d"
+    },
+    "content/handbook/legal/gitlab-code-of-business-conduct-and-ethics.md": {
+      "path": "content/handbook/legal/gitlab-code-of-business-conduct-and-ethics.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6f93663aa01c5da8de1cab0654490ebc3ff2af0f43cdb3e28e9bfebf7b6ecbfc"
+    },
+    "content/handbook/legal/gitlab-related-party-transactions-policy.md": {
+      "path": "content/handbook/legal/gitlab-related-party-transactions-policy.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "27b278f6a96e027a0f513f69edb915bc045b7965986bb0d7e5e1c09b9845e908"
+    },
+    "content/handbook/legal/ip-public-materials-guidelines.md": {
+      "path": "content/handbook/legal/ip-public-materials-guidelines.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "23d15b504f707d213122669fd46f3671fc0895f4be0c750193a7379d39e768f3"
+    },
+    "content/handbook/legal/legacy/_index.md": {
+      "path": "content/handbook/legal/legacy/_index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a6c80523eece840521a43b4000f65b459c5935c959cbfb095ef12a4df8f01cfb"
+    },
+    "content/handbook/legal/legacy/data-processing-addendum-and-standard-contractual-clauses.md": {
+      "path": "content/handbook/legal/legacy/data-processing-addendum-and-standard-contractual-clauses.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bcb29530c9fa689a1f5653efdeadc9a19d04950e7b9cfe543d8081b99b46fce9"
+    },
+    "content/handbook/legal/legacy/legacy-ospa-v1.md": {
+      "path": "content/handbook/legal/legacy/legacy-ospa-v1.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "de26ae6a3d02c16916921759e74e2379a85daebb09b4b2e722137b556a6c5e60"
+    },
+    "content/handbook/legal/legacy/legacy-psa-v1.md": {
+      "path": "content/handbook/legal/legacy/legacy-psa-v1.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "30235772681de801cdad80d73057b734fabd7fe393d045be0c70209ee2733869"
+    },
+    "content/handbook/legal/legacy/legacy-psa-v2.md": {
+      "path": "content/handbook/legal/legacy/legacy-psa-v2.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4c7cba00749550fe3fc3a3a2de52785e924f4e965e7175916063a321625cee7d"
+    },
+    "content/handbook/legal/legacy/legacy-psa-v3.md": {
+      "path": "content/handbook/legal/legacy/legacy-psa-v3.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "188e08998fbb55e650c90b6be562b3d70376d519519c2aaba1ce081361c24480"
+    },
+    "content/handbook/legal/legacy/legacy-reseller-agreement-v1.md": {
+      "path": "content/handbook/legal/legacy/legacy-reseller-agreement-v1.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5a66e89d58cfa113eb46911368379ba32cf58f7fe8c27880587889ca11710ead"
+    },
+    "content/handbook/legal/legacy/legacy-subscription-agreement-v2.md": {
+      "path": "content/handbook/legal/legacy/legacy-subscription-agreement-v2.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:30:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f8b9dbc8f8161d8cf9226722e946028c5f91c188b3b8a0e9262728638d5d8440"
+    },
+    "content/handbook/legal/legacy/legacy-subscription-agreement-v3.md": {
+      "path": "content/handbook/legal/legacy/legacy-subscription-agreement-v3.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:30:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a8e5c32f671ac3a37a00d147f944544f153b18b4754b750bbacbea329eb58d8b"
+    },
+    "content/handbook/legal/legacy/legacy-subscription-agreement-v4.md": {
+      "path": "content/handbook/legal/legacy/legacy-subscription-agreement-v4.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fd301ecaaf6322757cf1a3122bf951fd845a8ec1dfb91bcd5e3b0a92dc40838b"
+    },
+    "content/handbook/legal/legacy/legacy-subscription-agreement-v5.md": {
+      "path": "content/handbook/legal/legacy/legacy-subscription-agreement-v5.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "aec4db89078253bc0ece739be2bdb17edc8331e1a75ecc4a7d0f97cfd5b1f2f9"
+    },
+    "content/handbook/legal/legacy/legacy-subscription-agreement-v6.md": {
+      "path": "content/handbook/legal/legacy/legacy-subscription-agreement-v6.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "185a614801023aa96c450a99dcbf0e9a3f39958a7cbf7d105b37b39fed92ac50"
+    },
+    "content/handbook/legal/legacy/legacy-subscription-agreement-v7.md": {
+      "path": "content/handbook/legal/legacy/legacy-subscription-agreement-v7.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5249b2f04ac271277fa2165919c402a711ab5851e89e5974f1ef0c7c0983e739"
+    },
+    "content/handbook/legal/legacy/privacy-statement-v2.md": {
+      "path": "content/handbook/legal/legacy/privacy-statement-v2.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c63f45a51911a41bd071b3241633b5acce18199cd2c65d5c840d1905ccaac184"
+    },
+    "content/handbook/legal/legacy/privacy-statement.md": {
+      "path": "content/handbook/legal/legacy/privacy-statement.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fb40d0702313d00a82626e2fee1aff832928c5338b207acc32d8295c78f00b3a"
+    },
+    "content/handbook/legal/legalops/_index.md": {
+      "path": "content/handbook/legal/legalops/_index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fee8987e5a814f5d74cbee820310f53a6a678fe973156332f335b6c95612ea88"
+    },
+    "content/handbook/legal/marketing-collaboration.md": {
+      "path": "content/handbook/legal/marketing-collaboration.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "57aa35e4c6a5cc7c63d04621520efe1e0522c6b522c4e5be3805502bd1a6998c"
+    },
+    "content/handbook/legal/materials-legal-review-process.md": {
+      "path": "content/handbook/legal/materials-legal-review-process.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4c0a78f94714022763379bf4ccef2b4454e16cfaca623561be36805c16304aa1"
+    },
+    "content/handbook/legal/modern-slavery-act-transparency-statement.md": {
+      "path": "content/handbook/legal/modern-slavery-act-transparency-statement.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4345086f66328e6a78133ebfad6cdf6aed81fe4db16188d812989a2932bbcefc"
+    },
+    "content/handbook/legal/nda.md": {
+      "path": "content/handbook/legal/nda.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "81bc7d3cde5ab630291a728965a2c020b7a3a88e789de704de7e994c8d0435cf"
+    },
+    "content/handbook/legal/opensource-agreement.md": {
+      "path": "content/handbook/legal/opensource-agreement.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6b12d333f22d5f9629943b9731f8be54e6795ba4d5eaa91e7b37c34f33e368c9"
+    },
+    "content/handbook/legal/partner-code-of-ethics.md": {
+      "path": "content/handbook/legal/partner-code-of-ethics.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "66c6c8a541f9fe5c238c4a2f209a0d128d0d4be7668ac20c9253d05918976f57"
+    },
+    "content/handbook/legal/patent-program.md": {
+      "path": "content/handbook/legal/patent-program.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a0acbda78ea49d8865c3b207caa2b76bbaac6ae6bbc2c9538e8094751bceaf7c"
+    },
+    "content/handbook/legal/philanthropy-policy.md": {
+      "path": "content/handbook/legal/philanthropy-policy.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c8d1a31b2ac4bb898d879e244bbdbaff6008ecc804e18342df948b7a0fc4a8e7"
+    },
+    "content/handbook/legal/policies/_index.md": {
+      "path": "content/handbook/legal/policies/_index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f679922f1865c2ab0ea322ab613ee36c0ac7fcf190dfbfd89708a620e62119a7"
+    },
+    "content/handbook/legal/policies/gifts-contributions.md": {
+      "path": "content/handbook/legal/policies/gifts-contributions.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8fe14354e52d7c363aca5977c8e52e9879e4482c9ebfd531bbd693fe25d84b77"
+    },
+    "content/handbook/legal/policies/product-third-party-trademarks-guidelines.md": {
+      "path": "content/handbook/legal/policies/product-third-party-trademarks-guidelines.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5ca758b6625d05b5077785273555a7732118dcc2ef2dd34150e29f171710e8c6"
+    },
+    "content/handbook/legal/policies/website-terms-of-use.md": {
+      "path": "content/handbook/legal/policies/website-terms-of-use.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "81c62ee76beaf799ce99c54879a6723106cd2ad18eb3d28fc7d7d756da0ecce6"
+    },
+    "content/handbook/legal/privacy/_index.md": {
+      "path": "content/handbook/legal/privacy/_index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fadcd70b6ef63ff3b61dab7bba0e2d0078c2793ecdbd9f40c774bc7bbce7ae8d"
+    },
+    "content/handbook/legal/privacy/customer-product-usage-information.md": {
+      "path": "content/handbook/legal/privacy/customer-product-usage-information.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T07:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a024d21b2e51f8cdab17bd9c8cc17e8c18e7672e3f66aca70915dfe484e3b956"
+    },
+    "content/handbook/legal/privacy/dpia.md": {
+      "path": "content/handbook/legal/privacy/dpia.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T07:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c5bbc91402d519cad5c9cc576341b163e853068605208de44d6eedb35b71dfd5"
+    },
+    "content/handbook/legal/privacy/employee-privacy-policy.md": {
+      "path": "content/handbook/legal/privacy/employee-privacy-policy.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T07:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cf42f185622afe6e8b2e6165cea2dbab39cb7294a64d8e48739710f9d3e0affb"
+    },
+    "content/handbook/legal/privacy/gdpr.md": {
+      "path": "content/handbook/legal/privacy/gdpr.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T07:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "812cd31cd439cb43b3865e7100dd465e95f5feeb4225cedb3544e6256d71a9ca"
+    },
+    "content/handbook/legal/privacy/law-enforcement-guidelines.md": {
+      "path": "content/handbook/legal/privacy/law-enforcement-guidelines.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T07:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ede35cbc2f336c4086e6c4df02b69ba2db77982e2d54eeaf0a33858c14c50f61"
+    },
+    "content/handbook/legal/privacy/product-usage-events-faq.md": {
+      "path": "content/handbook/legal/privacy/product-usage-events-faq.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T07:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a4ac52e884c1a6906b86e96fbbca99653bc2ed15fea8479c7c4591fb539f7374"
+    },
+    "content/handbook/legal/privacy/transparency-reports.md": {
+      "path": "content/handbook/legal/privacy/transparency-reports.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T07:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b3f0a08be8b31ad903d1c29e305b71ddf6701b556c8a7298205ab8c1857b5d99"
+    },
+    "content/handbook/legal/process-for-a-conference-sweepstakes.md": {
+      "path": "content/handbook/legal/process-for-a-conference-sweepstakes.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T07:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6cd39bc87399717e8fe2174003b4e9553ca8e445c01ed47f8f3a87ad4d0eb3fd"
+    },
+    "content/handbook/legal/process-for-ux-research-prize-draws/index.md": {
+      "path": "content/handbook/legal/process-for-ux-research-prize-draws/index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T07:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "10089906bbd34efff1f2e39ae41cdb7481c3bc32d3ff9dbe8155764c57aa9abc"
+    },
+    "content/handbook/legal/procurement-guide-collaborating-with-gitlab-legal.md": {
+      "path": "content/handbook/legal/procurement-guide-collaborating-with-gitlab-legal.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T07:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a9e0eff39088d32842ba3dbd589029945e924f6b2e799e232049797269493cac"
+    },
+    "content/handbook/legal/product.md": {
+      "path": "content/ja/handbook/legal/product.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c8c65fd7ab8f59545c33f879d536f709510ae1f8ffea92afec1d5930fd7b1a55"
+    },
+    "content/handbook/legal/professional-services-agreement.md": {
+      "path": "content/ja/handbook/legal/professional-services-agreement.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1d81e9efebfdd492e24b5dee668267ac2be9cf504237a76dd86e728de6eff398"
+    },
+    "content/handbook/legal/promotional-game-standard-rules.md": {
+      "path": "content/ja/handbook/legal/promotional-game-standard-rules.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "86af959a8cc226aa05377abf4a19546abb56256d4dc27377ad427b22223c9541"
+    },
+    "content/handbook/legal/public-policy/_index.md": {
+      "path": "content/ja/handbook/legal/public-policy/index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3be43fdb3a46185362f5e9e0f07b7051166137556c3a44ad392b449bb6b4adc2"
+    },
+    "content/handbook/legal/publiccompanyresources.md": {
+      "path": "content/ja/handbook/legal/publiccompanyresources.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a6fd9ef6858de0f395e6cda748f3fb2af6ec867deca3ffc63dee6f52e7266098"
+    },
+    "content/handbook/legal/publicity-waiver-release.md": {
+      "path": "content/ja/handbook/legal/publicity-waiver-release.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1fd755e74034c2d8fb752a336744c0434f00e6546cb8919bbafe500157b8f18a"
+    },
+    "content/handbook/legal/readmes/_index.md": {
+      "path": "content/ja/handbook/legal/readmes/index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "eb2430cd49fa909c13169377263983e96f3672bbf72e604be78e1ba1812cdd6f"
+    },
+    "content/handbook/legal/readmes/emilyplotkin.md": {
+      "path": "content/ja/handbook/legal/readmes/emilyplotkin.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8e1cf0cff959cfdbeb2751154e761b5f09e69295f7db90b112429d146405550a"
+    },
+    "content/handbook/legal/readmes/joelfluss.md": {
+      "path": "content/ja/handbook/legal/readmes/joelfluss.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ea15a90c841eac0cc511794f00bba7dc7a36a6946eb39b5dcf626550bc406019"
+    },
+    "content/handbook/legal/readmes/miguelsilva.md": {
+      "path": "content/ja/handbook/legal/readmes/miguelsilva.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "269bac406a55a6b87ea076ab0328cb8d4ffb5af5096e8658b0c0292f96002a65"
+    },
+    "content/handbook/legal/readmes/rashmichachra.md": {
+      "path": "content/ja/handbook/legal/readmes/rashmichachra.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9447bc070f9960de94b8b2554611348c218744dbdb19fd496225190de3c1dc28"
+    },
+    "content/handbook/legal/readmes/readmetemplate.md": {
+      "path": "content/ja/handbook/legal/readmes/readmetemplate.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1919551c6e2f87e57c836ef4c7f673ed711ae4a999f7975c92bec425a2dee55d"
+    },
+    "content/handbook/legal/readmes/stacycline.md": {
+      "path": "content/ja/handbook/legal/readmes/stacycline.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4b57fde41e1187cfa39817d4c4d449aef06bbde44a772f10eb3c44df970582f3"
+    },
+    "content/handbook/legal/record-retention-policy.md": {
+      "path": "content/ja/handbook/legal/record-retention-policy.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d4d8c4812e503b16666af8b17b08b4f3036f97b6736e4f9fbee7f5039d83841c"
+    },
+    "content/handbook/legal/reseller-agreement.md": {
+      "path": "content/ja/handbook/legal/reseller-agreement.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2f7c8c78db75b0462063fbc26d3f0f7765486514552454d7593de3433cf13b4c"
+    },
+    "content/handbook/legal/reseller-flow-through.md": {
+      "path": "content/ja/handbook/legal/reseller-flow-through.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f4c132340996df9c6919069bf84dcdecf8bad7b29bef8003cc400bf715bc4630"
+    },
+    "content/handbook/legal/risk-management-dispute-resolution.md": {
+      "path": "content/ja/handbook/legal/risk-management-dispute-resolution.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "04b84720cf652935eee9e9fe0045e1842210be707eb0f1b4c5c4021c2bfcc88b"
+    },
+    "content/handbook/legal/safe-framework/index.md": {
+      "path": "content/ja/handbook/legal/safe-framework/index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "462e1709bacaa0b54a772edc5418fc732f83f75177ff59c3d0d363ce415b1ee3"
+    },
+    "content/handbook/legal/subscription-agreement/index.md": {
+      "path": "content/ja/handbook/legal/subscription-agreement/index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1c2b0d6a86c75c616afebef1c7e1c8ba854fc6f26188e19b97d80d53342d2e97"
+    },
+    "content/handbook/legal/technology-partner-agreement.md": {
+      "path": "content/ja/handbook/legal/technology-partner-agreement.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "13b9bae8b4f283417428100320166032dfafa03f8a4da628a4d39e2af0bb004b"
+    },
+    "content/handbook/legal/testing-agreement-v1.md": {
+      "path": "content/ja/handbook/legal/testing-agreement-v1.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d35c2d92d4c9a055933ab6089308a853171a72acf048b473234fca0fb4f9f0d9"
+    },
+    "content/handbook/legal/testing-agreement-v2.md": {
+      "path": "content/ja/handbook/legal/testing-agreement-v2.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "76d19bd34b5928402faba7ee5895681b461fc205e409567f3b8bbfc261373132"
+    },
+    "content/handbook/legal/testing-agreement-v3.md": {
+      "path": "content/ja/handbook/legal/testing-agreement-v3.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "01ba252887727e87b29f2c08be3897a811041e440446b6edff8ce213669e9364"
+    },
+    "content/handbook/legal/testing-agreement-v4.md": {
+      "path": "content/ja/handbook/legal/testing-agreement-v4.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "92df131cef774e125c7c781d341690519a6d632aa34048379dc87d5b88db5e5a"
+    },
+    "content/handbook/legal/testing-agreement.md": {
+      "path": "content/ja/handbook/legal/testing-agreement.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f6119803a15791587e40bfe171524ed6ee3eb18a9e3a96a56874186aee92c7ae"
+    },
+    "content/handbook/legal/trade-compliance.md": {
+      "path": "content/ja/handbook/legal/trade-compliance.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fae85faa950736aab5d4f170213e8e5bcefa45bf20a309765e614fd92f29b916"
+    },
+    "content/handbook/legal/trademarks-at-gitlab.md": {
+      "path": "content/ja/handbook/legal/trademarks-at-gitlab.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4e86f685a1206824e8c0463798a699dda0249d0aeab107a5398a1849b6db2aee"
+    },
+    "content/handbook/legal/vendor-contract-filing-process/index.md": {
+      "path": "content/ja/handbook/legal/vendor-contract-filing-process/index.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "acd3efd1910a56de5a74992997da5e26521708e19ab2da0874b6495411417b05"
+    },
+    "content/handbook/legal/vendor-dpa.md": {
+      "path": "content/ja/handbook/legal/vendor-dpa.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5ebb99399652b705cb66b7717eadd92255c33e46c2c316b00fa714aa4026059c"
+    },
+    "content/handbook/legal/whistleblowing.md": {
+      "path": "content/ja/handbook/legal/whistleblowing.md",
+      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
+      "translated_at": "2026-04-29T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0332ee7abd70b7afe4962c9a4ebb9d0bd475893d27d2f2b0260eeb3260952712"
+    },
     "content/handbook/marketing/_index.md": {
       "path": "content/handbook/marketing/_index.md",
       "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
