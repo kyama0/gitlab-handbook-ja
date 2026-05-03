@@ -18,7 +18,7 @@ JiHu enablement の効率性エージングとレビュー指標は、この[ダ
 
 [エンジニアリング生産性](/handbook/engineering/infrastructure-platforms/developer-experience/)チームは JiHu エンジニアリング enablement 効率ツールと指標の DRI です。
 
-### アップストリームコントリビューションのガイドライン
+## アップストリームコントリビューションのガイドライン
 
 JiHu 独自のコンテンツを含まないコントリビューションは、アップストリームプロジェクトに対して作成されます。
 
@@ -97,7 +97,7 @@ JiHu のアップストリームコントリビューションは、開発者権
       1. 認証関連コード
    1. [GitLab セキュリティレビュー](/handbook/finance/jihu-support/jihu-security-review-process/#security-review-workflow-for-jihu-contributions)（自動的にトリガーされる）
 
-#### 必要な承認
+#### 必要な承認 {#what-approvals-are-required}
 
 アップストリームマージリクエストは、他のすべてのマージリクエストと同じレベルのレビューと承認が必要です：
 

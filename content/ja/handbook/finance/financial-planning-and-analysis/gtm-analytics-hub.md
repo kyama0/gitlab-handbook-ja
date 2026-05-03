@@ -9,7 +9,7 @@ stale: false
 
 ## 共通リンク
 
-- [Sales Finance](_index.md)
+- [Sales Finance](index.md)
 - [Sales Strategy & Analytics (SS&A)](/handbook/sales/field-operations/sales-strategy/)
 
 ## レポートとダッシュボード

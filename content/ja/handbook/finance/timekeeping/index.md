@@ -7,4 +7,4 @@ translator: claude
 stale: false
 ---
 
-[Internal handbookリンク](https://internal.gitlab.com/handbook/finance/payroll/timekeeping/)
+[内部ハンドブックの勤怠管理ページ](https://internal.gitlab.com/handbook/finance/payroll/timekeeping/)
