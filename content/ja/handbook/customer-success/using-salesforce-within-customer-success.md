@@ -171,16 +171,16 @@ Salesforce で Email をログとして残すには:
 
 新しいレポートを作成するよりも、既存のレポートを使用するほうがベストプラクティスであり、整然と保つことができます。不明な場合は、Operations チームに尋ねてください。Salesforce レポートの作成は難しく感じる場合がありますが、ここでいくつかのヒントを示します。お好みであれば、[Report Builder](https://www.youtube.com/watch?v=7_LkmrhKf2g) の動画を視聴することもできます。
 
-1. Salesforce の Reports に移動
-1. "New Report" をクリック
-1. "Report Type" を選択
+1. Salesforce の Reports に移動してください
+1. "New Report" をクリックしてください
+1. "Report Type" を選択してください
    1. ヒント: 通常、Account（Salesforce アカウントを調査したい場合）または Opportunity（オープン/クローズの Opportunity をレポートしたい場合）を選択するでしょう
    1. ヒント: "Report Type" は使用したいフィールドのグループを選択することです（例: Opportunity: Opportunity に関連するすべてのデータ）
-1. レポート構造:
-   1. Show: どの Account/Opportunity を表示するか選択（通常は "all" を選択したい）
-   2. Date field: 結果をフィルタする日付を選択。常に "All Time" を選択することもできます
-   3. Add filters（白いボックス）: 左側の任意のフィールドを使用してフィルタできます
-   4. Preview: 任意のフィールドを新しい列としてドラッグできます。たとえば、Account Name、Account Owner、Customer Success Manager/Solutions Architect を追加できます
-1. 完了したら、"Save" を押すか "Run Report" を押してレポートをプレビューします。実行する場合、次のページで Save を押すことができます。
+1. レポート構造を設定してください:
+   1. Show: どの Account/Opportunity を表示するか選択してください（通常は "all" を選択したい）
+   2. Date field: 結果をフィルタする日付を選択してください。常に "All Time" を選択することもできます
+   3. Add filters（白いボックス）: 左側の任意のフィールドを使用してフィルタしてください
+   4. Preview: 任意のフィールドを新しい列としてドラッグしてください。たとえば、Account Name、Account Owner、Customer Success Manager/Solutions Architect を追加できます
+1. 完了したら、"Save" を押すか "Run Report" を押してレポートをプレビューしてください。実行する場合、次のページで Save を押すことができます。
 1. 何があっても、透明性のために他のユーザーもアクセスできるフォルダーに保存することを確認してください
 1. おめでとうございます！完了です。

@@ -1,5 +1,5 @@
 ---
-title: "Communities of Practice"
+title: "実践コミュニティ"
 description: "特定のトピックに焦点を当てたクロスファンクショナルチーム。詳細はこちら！"
 upstream_path: /handbook/customer-success/initiatives/communities-of-practice/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
