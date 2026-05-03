@@ -86,25 +86,25 @@ Verify ステージは 3 つのグループで構成されています:
 ### Verify:Pipeline Execution
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#verifypipeline-authoring" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#verifypipeline-execution" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 ### Verify:CI Platform
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#verifypipeline-authoring" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#verifyci-platform" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 ### Verify エンジニアリングリーダー
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#verifypipeline-authoring" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#verify-engineering-leaders" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 ### ステーブルカウンターパート
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#verifypipeline-authoring" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#stable-counterparts" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 ## 私たちの働き方

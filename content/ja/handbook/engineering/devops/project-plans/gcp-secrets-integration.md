@@ -70,4 +70,4 @@ stale: false
 - [https://gitlab.com/gitlab-org/gitlab/-/issues/428400](https://gitlab.com/gitlab-org/gitlab/-/issues/428400) GCP との Runner 認証を完了する
 - [https://gitlab.com/gitlab-org/gitlab/-/issues/428401](https://gitlab.com/gitlab-org/gitlab/-/issues/428401) Rails サポートの開発を完了する
 
-</details
+</details>

@@ -262,7 +262,7 @@ stale: false
 #### 目標
 
 - [Secrets Manager インデックスページを作成する](https://gitlab.com/gitlab-org/gitlab/-/issues/424457)
-- [シークレット追加/編集フォームを作成する](https://gitlab.com/gitlab-org/gitlab/-/issues/424458)### マイルストーン 16.7（2023年11月13日〜12月15日）
+- [シークレット追加/編集フォームを作成する](https://gitlab.com/gitlab-org/gitlab/-/issues/424458)
 
 ### 2023年11月13日の週（マイルストーン 16.6）
 

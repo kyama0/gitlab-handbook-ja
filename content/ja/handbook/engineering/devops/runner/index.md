@@ -20,8 +20,8 @@ stale: false
 
 Verify:Runner は 2 つのチームで構成されています。
 
-- [CI Functions Platform](/handbook/engineering/devops/runner/ci-functions-platform/_index.md)
-- [Runner Core](/handbook/engineering/devops/runner/runner-core/_index.md)
+- [CI Functions Platform](/handbook/engineering/devops/runner/ci-functions-platform/)
+- [Runner Core](/handbook/engineering/devops/runner/runner-core/)
 
 ### CI Functions Platform
 
@@ -32,13 +32,13 @@ Verify:Runner は 2 つのチームで構成されています。
 ### Runner Core
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/runner/#ci-functions-platform" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/runner/#runner-core" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 ### Runner Leadership
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/runner/#ci-functions-platform" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/runner/#runner-leadership" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 ## 連絡方法

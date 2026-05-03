@@ -208,7 +208,7 @@ group = "gitlab-org" and assignee = currentUser() and label in ("workflow::in de
 ```
 ````
 
-### 優先度ラベル
+### 優先度ラベル {#priority-labels}
 
 `~Knowledge::P1/P2/P3` ラベルを使用して、`~workflow::*` ステップとマイルストーム内の Issue の優先度を示します。
 

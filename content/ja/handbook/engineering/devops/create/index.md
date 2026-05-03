@@ -19,9 +19,7 @@ stale: false
 | [Create ステージ](/handbook/engineering/devops/create/) | [André Luís](/handbook/company/team/#andr3) |
 | [Create:Code Review](/handbook/engineering/devops/create/code-review/) | [François Rosé](/handbook/company/team/#francoisrose) |
 | [Create:Source Code](/handbook/engineering/devops/create/source-code/) | [Andre Richards](/handbook/company/team/#andrevr)（バックエンド & フロントエンド） |
-| [Create:Import](/handbook/engineering/devops/create/import/) | [Thiago Figueiró](/handbook/company/team/#thiagocsf)（フルスタック）— 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
- に報告 |
+| [Create:Import](/handbook/engineering/devops/create/import/) | [Thiago Figueiró](/handbook/company/team/#thiagocsf)（フルスタック）— [原文 (英語)](https://handbook.gitlab.com/handbook/engineering/devops/create/) を参照 |
 | [Create:Remote Development](/handbook/engineering/devops/create/remote-development/) | — |
 
 ## ミッション
