@@ -79,9 +79,9 @@ GitLab データ品質プログラムは6つの主要な次元で品質を測定
 
 #### Issue の分類と深刻度
 
-Issue テンプレートで定義されているビジネスへの影響に基づいて、適切な深刻度レベル（Sev1〜4）を選択します。
+Issue テンプレートで定義されているビジネスへの影響に基づいて、適切な深刻度レベル（Sev1〜4）を選択してください。
 
-**⚠️ Sev1/Sev2 の Issue の場合:** すぐに #data-team Slack チャンネルに通知し、`@data-governance` をタグ付けしてください
+**⚠️ Sev1/Sev2 の Issue の場合:** すぐに `#data-team` Slack チャンネルに通知してください。また、`@data-governance` をタグ付けしてください
 
 インシデント管理と深刻度レベルの詳細については、[データチームインシデント管理](/handbook/enterprise-data/data-governance/incident-management/)ハンドブックページを参照してください。
 

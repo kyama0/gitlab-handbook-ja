@@ -41,7 +41,7 @@ personがInquiryになった時期を特定するためのロジックは`true_i
   inquiry_reporting_date
   FROM common_mart_marketing.mart_crm_person
   where
-  lower(Status) != 'raw`
+  lower(Status) != 'raw'
   and true_inquiry_date is not null
 ```
 

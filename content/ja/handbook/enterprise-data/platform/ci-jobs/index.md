@@ -14,7 +14,7 @@ stale: false
 
 ## パイプラインが失敗した場合の対処
 
-- 週末が過ぎていた場合は、以前に実行した CLONE ステップを再実行してください。毎週日曜日（5:00AM UTC）に 14 日以上経過した古いパイプラインデータベースがすべて SnowFlake から[削除](https://gitlab.com/gitlab-data/analytics/-/blob/master/orchestration/drop_snowflake_objects.py)されます。
+- 週末が過ぎていた場合は、以前に実行した CLONE ステップを再実行してください。毎週日曜日（5:00AM UTC）に 14 日以上経過した古いパイプラインデータベースがすべて Snowflake から[削除](https://gitlab.com/gitlab-data/analytics/-/blob/master/orchestration/drop_snowflake_objects.py)されます。
 ![ci-db-deletion-schema.png](/images/enterprise-data/platform/ci-jobs/ci-db-deletion-schema.png)
 - master ブランチをマージします。dbt がパッケージを処理する方法により、最新ブランチで常に処理されるべきパッケージの失敗によってパイプラインが失敗することがあります。
 - [モデル選択構文](https://docs.getdbt.com/reference/node-selection/syntax)を確認します。一般的には、変更しているモデルのファイル名を使用するだけで最も簡単です。

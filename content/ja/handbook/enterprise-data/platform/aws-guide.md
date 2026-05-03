@@ -33,19 +33,19 @@ stale: false
 
 ### AWS CLI での認証
 
-1. Okta 経由で `AWS access portal` に移動します
-1. `gitlab SaaS production` アカウントで、`DataEngineeringAccess` ロールの横にある `Access keys` をクリックします
-1. 以下の情報をコピーします
+1. Okta 経由で `AWS access portal` に移動してください
+1. `gitlab SaaS production` アカウントで、`DataEngineeringAccess` ロールの横にある `Access keys` をクリックしてください
+1. 以下の情報をコピーしてください
     - SSO スタート URL
     - SSO リージョン
-1. コマンドラインで [`aws configure sso`](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html) を実行します
+1. コマンドラインで [`aws configure sso`](https://docs.aws.amazon.com/cli/latest/userguide/cli-configure-sso.html) を実行してください
     1. 保存した情報を入力するよう求められます
     1. その後、インターネットブラウザに確認を求めるポップアップが表示されます
-    1. 最後に、シェルで以下を選択・入力する必要があります：
-        - プロジェクトを選択します（例：`gitlab SaaS production`）
-        - ロールを選択します（例：`DataEngineeringAccess`）
-        - リージョンなど残りのプロンプトは、\<Enter> を入力するだけでデフォルト値を使用できます
-1. 認証後、`--profile DataEngineeringAccess-8552xxxxx` 引数を追加することで通常通り AWS CLI コマンドを実行できます。CLI プロンプトがこれを含めるよう通知します。
+    1. 最後に、シェルで以下を選択・入力してください：
+        - プロジェクトを選択してください（例：`gitlab SaaS production`）
+        - ロールを選択してください（例：`DataEngineeringAccess`）
+        - リージョンなど残りのプロンプトは、\<Enter> を入力してデフォルト値を使用してください
+1. 認証後、`--profile DataEngineeringAccess-8552xxxxx` 引数を追加して通常通り AWS CLI コマンドを実行してください。CLI プロンプトがこれを含めるよう通知します。
 
 #### コマンド例
 

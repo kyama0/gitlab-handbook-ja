@@ -48,7 +48,7 @@ stale: false
 
 ### workflow::1 - triage
 
-すべての新しいデータソースのリクエストは Issue から始まります。これは既に抽出されているが拡張が必要なデータソースと、まったく新しいデータソースの両方に適用されます。`New Data Source` [テンプレート](https://gitlab.com/gitlab-data/analytics/-/blob/master/.gitlab/issue_templates/%5BNew%20Request%5D%20New%20Data%20Source.md)を使用してください。新しい Issue を[Manager, Data Platform](https://gitlab.com/dvanrooijen)に割り当てて、データチームがタイムリーに Issue をトリアージできるようにします。すべての初期情報が要求者から提供され、データチームによって評価されます。データが既にデータウェアハウスに存在しないかどうかの相互確認が行われます。
+すべての新しいデータソースのリクエストは Issue から始まります。これは既に抽出されているが拡張が必要なデータソースと、まったく新しいデータソースの両方に適用されます。`New Data Source` [テンプレート](https://gitlab.com/gitlab-data/analytics/-/blob/master/.gitlab/issue_templates/%5BNew%20Request%5D%20New%20Data%20Source.md)を使用してください。新しい Issue を[Manager, Data Platform](https://gitlab.com/dvanrooijen)に割り当ててください。そうすることで、データチームがタイムリーに Issue をトリアージできるようになります。すべての初期情報が要求者から提供され、データチームによって評価されます。データが既にデータウェアハウスに存在しないかどうかの相互確認が行われます。
 
 ### workflow::2 - validation
 

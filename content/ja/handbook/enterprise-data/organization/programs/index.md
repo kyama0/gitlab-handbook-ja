@@ -25,9 +25,9 @@ stale: false
 
 GitLab にオンボーディングし、エンジニア、アナリスト、またはデベロッパーとしてデータプログラムで作業する場合は、以下の手順に従ってください。
 
-1. [GitLab Data Analytics](https://gitlab.com/gitlab-data/analytics/-/issues) で `Data Onboarding` テンプレートを使用して新しい Issue を開きます。
-1. Issue にわかりやすい名前を付けます: `あなたの名前 - Data Onboarding`
-1. 関連コンテンツを追加・削除するためにマネージャーに Issue を割り当てます
+1. [GitLab Data Analytics](https://gitlab.com/gitlab-data/analytics/-/issues) で `Data Onboarding` テンプレートを使用して新しい Issue を開いてください。
+1. Issue にわかりやすい名前を付けてください: `あなたの名前 - Data Onboarding`
+1. 関連コンテンツを追加・削除するためにマネージャーに Issue を割り当ててください
 
 ## <i class="far fa-newspaper" id="biz-tech-icons"></i> データ PoV（Proof of Value）ガイド
 
