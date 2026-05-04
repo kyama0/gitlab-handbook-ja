@@ -41,5 +41,3 @@ stale: false
 1. [サイクルタイム - ベロシティを向上する方法](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/it-groups/build/cycle-time/)
 1. [セキュアなアプリケーションを提供する方法](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/it-groups/build/secure-applications/)
 1. [ハイブリッドクラウドをロックインなしでナビゲートする方法](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/it-groups/build/modernize/)
-
--

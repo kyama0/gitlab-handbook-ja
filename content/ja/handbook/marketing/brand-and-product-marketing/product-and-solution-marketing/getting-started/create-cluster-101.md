@@ -21,7 +21,8 @@ Google Cloud Platform アカウントが必要です。GitLab の従業員はこ
 ### Kubernetes クラスターを作成する手順
 
 |  **手順**   | **見え方** |
-| 1. ブラウザを開いて [Google Kubernetes Engine](https://console.cloud.google.com/kubernetes) にログインします  |
+| --- | --- |
+| 1. ブラウザを開いて [Google Kubernetes Engine](https://console.cloud.google.com/kubernetes) にログインします |  |
 | 2. GitLab の従業員 - GitLab メールアドレスでサインインします。  |  |
 | 3. GitLab の従業員は gitlab-demos プロジェクトを使用してください。それ以外の方は、作業用のプロジェクトを選択または作成してください。| ![gitlab demos](/images/workshop/k8s/2_gitlab_demos.png)|
 | 4. サイドバーの COMPUTE 配下から Kubernetes Engine -> Clusters を選択します。|  ![kubernetes engine](/images/workshop/k8s/3_clusters.png)|
@@ -31,5 +32,5 @@ Google Cloud Platform アカウントが必要です。GitLab の従業員はこ
 | 8. レガシー認可を有効にします。 | ![kubernetes engine](/images/workshop/k8s/7_legacy_auth.png)|
 | 9. クラスター作成の準備が整いました。Create をクリックします。 | ![kubernetes engine](/images/workshop/k8s/8_create.png)|
 | 10. クラスターの作成には数分かかります。作成されると、リストに作成したばかりのクラスターが表示されます。| ![kubernetes engine](/images/workshop/k8s/9_cluster_list.png)|
-| 11. これで、GitLab プロジェクトを Kubernetes と連携させ、Auto DevOps 機能を使う準備ができました。
-| 12. クリーンアップ手順 PLACEHOLDER ||
+| 11. これで、GitLab プロジェクトを Kubernetes と連携させ、Auto DevOps 機能を使う準備ができました。 |  |
+| 12. クリーンアップ手順 PLACEHOLDER |  |

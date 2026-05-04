@@ -12,7 +12,7 @@ stale: false
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## <i class="fas fa-bullhorn fa-fw\"></i>  GitLab Content Strategy & Ops ハンドブックへようこそ
+## <i class="fas fa-bullhorn fa-fw"></i>  GitLab Content Strategy & Ops ハンドブックへようこそ
 
 ### GitLab Content Strategy & Ops チームの紹介 👋
 

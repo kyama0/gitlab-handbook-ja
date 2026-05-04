@@ -1,5 +1,5 @@
 ---
-title: "Sacha ペルソナスニペット"
+title: "Sasha ペルソナスニペット"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/sasha/
 upstream_sha: 214b98c98d2eb739dbe3a358027667a7f128ec69
 translated_at: "2026-04-30T12:00:00Z"

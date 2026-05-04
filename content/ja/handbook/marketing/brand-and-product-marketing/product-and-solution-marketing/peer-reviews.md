@@ -10,30 +10,19 @@ translator: claude
 stale: false
 ---
 
-.blank-header
-  = image_tag "/images/home/icons-pattern-left.svg", class: "image-border image-border-left", alt: "GitLab hero border pattern left svg"
-  = image_tag "/images/home/icons-pattern-right.svg", class: "image-border image-border-right", alt: "GitLab hero border pattern right svg"
-  .header-content
-    %h1 ピアレビュー
-    %p みなさんの声をご覧ください
+<div class="blank-header">
+  <img src="/images/home/icons-pattern-left.svg" class="image-border image-border-left" alt="GitLab hero border pattern left svg">
+  <img src="/images/home/icons-pattern-right.svg" class="image-border image-border-right" alt="GitLab hero border pattern right svg">
+  <div class="header-content">
+    <h1>ピアレビュー</h1>
+    <p>みなさんの声をご覧ください</p>
+  </div>
+</div>
 
-.gitlab-content-container.margin-top50
-  .content
-    .content-section
-      - data.proofpoints.each do |review,review_comments |
-        %h4
-          = review
-          <hr>
-        - review_comments.each do |pp, index|
-          %li
-            = succeed ',' do
-              %a{ href: "#{pp.quotelink}", target: "_blank" }
-                = pp.quote
-            = succeed ',' do
-              = pp.role
-            = succeed ',' do
-              = pp.industry
-            = succeed ',' do
-              = pp.csize
-            = pp.region
-        <hr>
+<div class="gitlab-content-container margin-top50">
+  <div class="content">
+    <div class="content-section">
+      <p>ピアレビューの動的な一覧は、現在この Astro サイトでは移植されていません。正確性については <a href="https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/peer-reviews/">英語の原文</a> を参照してください。</p>
+    </div>
+  </div>
+</div>

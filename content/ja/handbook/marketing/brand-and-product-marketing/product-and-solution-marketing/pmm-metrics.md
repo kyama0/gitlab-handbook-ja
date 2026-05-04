@@ -15,20 +15,7 @@ GitLab では、MVC を出荷し、素早くイテレーションして価値を
 
 主要な PMM の活動・成果物を捕捉して、ベロシティを追跡・可視化・測定するために GitLab を使用します。次のハイレベルな PMM 活動に関連する Issue を明確にタグ付けするために、ラベルを使用します:
 
-MVC として、まずは [プロダクトマーケティングプロジェクト](https://gitlab.com/gitlab-com/marketing/product-marketing) で、いくつかの排他的なトップレベルプロジェクトラベルから始めます。
-
-| トピック | 詳細 | ラベル |
-|----|---|---|
-| アナリストリレーションズ | ブリーフィング、レポート、問い合わせ | pmm::AR |
-| カスタマーリレーションズ | 事例 | pmm::Cust |
-| コラテラル | ホワイトペーパー、データシート、ROI モデル | pmm::Collateral |
-| イネーブルメント | 営業、XDR、パートナーなど | pmm::Enable |
-| イベント | 物理・バーチャルイベント: 講演、ブース、抄録執筆など | pmm::Event |
-| リサーチ | 市場調査、調査の起草、文書化 | pmm::Research |
-| プレゼンテーション | ピッチデッキ、プロダクトデッキなどデッキの構築・更新 | pmm::Deck |
-| PR | ブリーフィング、プレスリリースなど | pmm::PR |
-| 営業サポート | 特定の営業サポートミーティング、スライドなど | pmm::Sales |
-| Web 更新 | ハンドブック、プロダクトページ、ソリューションページ、ブログなどの Web コンテンツ | pmm::Web |
+MVC として、まずは [プロダクトマーケティングプロジェクト](https://gitlab.com/gitlab-com/marketing/product-marketing) で、いくつかの排他的なトップレベルプロジェクトラベルから始めます。PMM ラベルの定義は [Product and Solution Marketing プロジェクトマネジメント概要](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/sm-project-management/#metrics-and-kpis-gitlab-insights) のラベル一覧に集約しています。
 
 ### レポーティングと追跡
 
