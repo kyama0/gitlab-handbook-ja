@@ -90,4 +90,3 @@ Data Access サブ部門は、顧客のニーズと GitLab のビジネス目標
 
 
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/data-access/#gitaly" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-

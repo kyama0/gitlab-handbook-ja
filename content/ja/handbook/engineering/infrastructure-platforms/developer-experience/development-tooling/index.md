@@ -29,7 +29,7 @@ flowchart LR
     DT --> ObservabilityTooling[Observability Tooling]
     ObservabilityTooling --> labkit[LabKit]
     click labkit "https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/labkit/"
-    
+
     DT --> DeliveryTooling[Delivery Tooling]
     DeliveryTooling --> featuregates[Feature Gates]
 

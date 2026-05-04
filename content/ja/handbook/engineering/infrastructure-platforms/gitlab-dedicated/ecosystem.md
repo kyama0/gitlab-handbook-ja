@@ -74,8 +74,8 @@ GitLab Dedicated の機能を拡張する外部サービスの運用信頼性、
 
 ---
 
-**DRI**: @nitinduttsharma  
-**チーム**: 
+**DRI**: @nitinduttsharma
+**チーム**:
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-dedicated/ecosystem/#what-others-own" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 **承認**: @fviegas - ディレクター、Dedicated インフラストラクチャ

@@ -167,7 +167,7 @@ graph TD
     A[Feature development starts] --> B{Does feature introduce<br/><a href="#when-prep-is-required">infrastructure concerns</a>?}
     B -->|No| C[Standard development process]
     B -->|Yes| D[Start PREP]
-  
+
     D --> F[Determine development stage]
 
     F --> G{Development Stage}

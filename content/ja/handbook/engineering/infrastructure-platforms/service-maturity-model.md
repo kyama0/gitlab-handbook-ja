@@ -32,4 +32,3 @@ stale: false
 
 
 <p class="my-3 text-sm text-gray-600 italic">サービス成熟度詳細は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/service-maturity-model/#service-maturity-model" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
