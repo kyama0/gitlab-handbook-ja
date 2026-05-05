@@ -11,10 +11,12 @@ useDefault = true
 id = "sourcegraph-access-token"
 [rules.allowlist]
 description = "translation manifest upstream_sha (commit hash, not a token)"
+condition = "AND"
 regexes = [
   '''^upstream_sha:\s*[a-fA-F0-9]{40}\s*$''',
+  '''"upstream_sha"\s*:\s*"[a-fA-F0-9]{40}"''',
 ]
 paths = [
-  '''content/ja/handbook/.*\.md''',
-  '''translation-state/manifest\.json''',
+  '''^content/ja/handbook/.*\.md$''',
+  '''^translation-state/manifest\.json$''',
 ]
