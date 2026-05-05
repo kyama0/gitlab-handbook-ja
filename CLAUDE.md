@@ -37,7 +37,12 @@ cd infra && terraform plan / apply       # Cloudflare Pages + R2 (direct-upload 
 
 **サイドバー**: docsy が upstream のサイドバーをそのまま生成します。順序は `weight` 昇順 → タイトル昇順。新規翻訳ではアップストリームの `weight` をそのまま保持してください。セクション配下に `_index.md` の翻訳が無いとサイドバーで URL セグメントがそのまま表示されるので、セクション `_index.md` の翻訳は優先度高めです。
 
-**画像パス**: Markdown 内の root-absolute なアセット URL（`/images/...` 等）は upstream Hugo の URL 構造そのまま（Hugo の `canonifyURLs: true` が `baseURL` を補完します）。本番では `baseURL` を本サイトのドメインにすると `/images/foo.svg` → `https://<domain>/images/foo.svg` になります。R2 配信は `static/images/` 経由でホストするか、別途 redirect/rewrite ルールで対応してください（このパスは旧 Astro 環境とは設計が変わっています）。
+**画像パス**: Markdown の `![alt](/images/...)` は `layouts/_markup/render-image.html` (Goldmark の image render hook) が `params.image_base_url` を前置して外部ホストへ解決します。
+
+- **dev**: `image_base_url: "https://handbook.gitlab.com"` (config 既定値) → upstream にホットリンクしてローカルでも画像が表示される。
+- **prod**: CI で `HUGO_PARAMS_image_base_url=https://pub-xxxx.r2.dev` のように env var で R2 公開 URL を指定。R2 へは `scripts/upload-images-r2.ts` で `upstream/static/images/` から同期する。
+
+protocol-relative (`//foo`) や絶対 URL (`https://...`) はそのまま、相対パス (`./foo`) も leaf bundle 想定で素通し。raw HTML の `<img src="/images/...">` (29 ファイル程度に存在) は Goldmark の render hook 対象外なので書き換わらない — それらは render hook ではなく原文 markdown のほうを Markdown 構文に直すか、必要なら別途 post-process で対応する。
 
 **見出し ID**: Hugo/Pandoc 流の `## 見出し {#custom-id}` は Goldmark の `parser.attribute.block: true` でネイティブ対応します（remark プラグインは不要）。
 

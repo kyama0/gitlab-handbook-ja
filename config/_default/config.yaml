@@ -51,6 +51,11 @@ params:
     showLightDarkModeMenu: true
   copyright: "GitLab (handbook content) / kyama0 (translation)"
   privacy_policy: https://about.gitlab.com/privacy/
+  # ルート絶対パスの画像 URL (/images/...) に前置するベース URL。
+  # dev: handbook.gitlab.com にホットリンクして画像表示
+  # prod: CI で HUGO_PARAMS_image_base_url=https://pub-xxxx.r2.dev に上書き
+  # (R2 へは scripts/upload-images-r2.ts で同期済み)
+  image_base_url: "https://handbook.gitlab.com"
   links:
     user:
       - name: "原文 (handbook.gitlab.com)"
