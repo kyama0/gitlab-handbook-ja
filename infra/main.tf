@@ -1,8 +1,9 @@
 # -----------------------------------------------------------------------------
 # Cloudflare Pages — direct-upload project
-# The GitHub Actions workflow (`.github/workflows/deploy.yml`) pushes builds
-# via `cloudflare/pages-action`, so we intentionally do NOT configure a
-# `source` block (that is only for Git-integrated projects).
+# The GitHub Actions workflow (`.github/workflows/app_deploy.yml`) builds the
+# site with Hugo and pushes the resulting `public/` directory via
+# `cloudflare/pages-action`, so we intentionally do NOT configure a `source`
+# block (that is only for Git-integrated projects).
 # -----------------------------------------------------------------------------
 resource "cloudflare_pages_project" "site" {
   account_id        = var.account_id
