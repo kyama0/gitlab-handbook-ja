@@ -96,8 +96,9 @@ npm run check:staleness
 
 | 変数 | 用途 |
 | --- | --- |
-| `R2_ACCOUNT_ID` | Cloudflare R2 |
-| `R2_ACCESS_KEY_ID` | R2 |
-| `R2_SECRET_ACCESS_KEY` | R2 |
-| `R2_BUCKET` | R2 バケット名 |
+| `AWS_ACCESS_KEY_ID` | R2 の S3 互換 access key (Terraform backend と画像 upload で共用) |
+| `AWS_SECRET_ACCESS_KEY` | R2 の S3 互換 secret key (同上) |
+| `CLOUDFLARE_ACCOUNT_ID` | R2 エンドポイント URL の組み立てに使用 (`<account>.r2.cloudflarestorage.com`) |
+| `CLOUDFLARE_API_TOKEN` | Terraform で Cloudflare リソースを操作するための API token |
+| `R2_BUCKET` | 画像バケット名 (例: `gitlab-handbook-ja-images`) |
 | `SITE_URL` | 本番サイト URL（Hugo の `baseURL` を上書き） |
