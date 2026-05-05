@@ -1,0 +1,132 @@
+languageCode: ja
+locale: ja-JP
+title: GitLab ハンドブック (非公式日本語訳)
+
+enableRobotsTXT: true
+enableGitInfo: true
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+
+params:
+  title: GitLab ハンドブック (非公式日本語訳)
+  social:
+    twitter: GitLab
+  defaultContentLanguage: ja
+  locale: ja-JP
+  description: GitLab Handbook の非公式日本語訳。正確性については英語の原文を参照してください。
+  # Algolia search is upstream-only. Disable until we run our own index.
+  search:
+    algolia:
+      appId: ""
+      apiKey: ""
+      indexName: ""
+  images:
+    - images/gitlab-cover.png
+  branch: main
+  project: kyama0/gitlab-handbook-ja
+  # repoid is GitLab-specific (used by docsy-gitlab for "Edit this page" links to GitLab MRs).
+  # We're on GitHub so this is unused; leave as a placeholder.
+  repoid: 0
+  plantuml:
+    enable: true
+  mermaid:
+    enable: true
+  offlineSearch: false
+  ui:
+    sidebar_menu_compact: false
+    sidebar_menu_foldable: true
+    sidebar_cache_limit: 1000
+    sidebar_menu_truncate: 125
+    navbar_logo: true
+    footer_about_disable: true
+    showLightDarkModeMenu: true
+  copyright: "GitLab (handbook content) / kyama0 (translation)"
+  privacy_policy: https://about.gitlab.com/privacy/
+  links:
+    user:
+      - name: "原文 (handbook.gitlab.com)"
+        url: "https://handbook.gitlab.com/"
+        icon: "fa-solid fa-book"
+        desc: "公式英語ハンドブック"
+      - name: "Repository"
+        url: "https://github.com/kyama0/gitlab-handbook-ja"
+        icon: "fa-brands fa-github"
+        desc: "翻訳プロジェクトの GitHub リポジトリ"
+    developer: []
+
+caches:
+  getresource:
+    dir: :cacheDir/:project
+    maxAge: 24h
+
+staticDir:
+  - data
+  - static
+
+menu:
+  main:
+    - weight: -2
+      name: GitLab
+      url: https://about.gitlab.com/
+      pre: '<i class="fab fa-gitlab"></i>'
+
+mediaTypes:
+  text/netlify:
+    delimiter: ""
+    suffixes: [""]
+outputs:
+  home: ["HTML", "REDIRECTS"]
+  section: ["HTML"]
+outputformats:
+  redirects:
+    baseName: "_redirects"
+    isPlainText: true
+    mediaType: "text/netlify"
+    notAlternative: true
+
+markup:
+  goldmark:
+    renderHooks:
+      link:
+        useEmbedded: fallback
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  highlight:
+    tabWidth: 2
+    noClasses: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+
+security:
+  funcs:
+    getenv: ["^HUGO_", "PERISCOPE_EMBED_API_KEY", "PRODUCT_ANALYTICS_APP_KEY", "PRODUCT_ANALYTICS_HOST", "PUBLIC_HANDBOOK_REF"]
+
+canonifyURLs: true
+pluralizeListTitles: false
+enableEmoji: true
+
+module:
+  proxy: https://proxy.golang.org
+  hugoVersion:
+    extended: true
+    min: 0.123
+  imports:
+    - path: gitlab.com/gitlab-com/content-sites/docsy-gitlab
+      disable: false
+    - path: github.com/google/docsy
+      disable: false
+    - path: github.com/google/docsy/dependencies
+      disable: false
+
+ignoreErrors:
+  - error-tweet-failed
+
+timeout: "300s"
