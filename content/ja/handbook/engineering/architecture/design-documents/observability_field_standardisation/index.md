@@ -1,0 +1,182 @@
+---
+title: オブザーバビリティにおけるフィールド標準化
+status: ongoing
+creation-date: "2025-10-15"
+coaches: []
+authors: [ "@e_forbes" ]
+dris: [ "@swiskow", "@amyphillips" ]
+owning-stage: "~devops::developer experience"
+participating-stages: []
+toc_hide: true
+upstream_path: "/handbook/engineering/architecture/design-documents/observability_field_standardisation/"
+upstream_sha: "856dbb5acbecaff51b3ea0c961ad3adb3d37a953"
+translated_at: "2026-04-27T10:00:00Z"
+translator: claude
+stale: false
+---
+
+<!-- This renders the design document header on the detail page, so don't remove it-->
+
+<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
+このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
+</div>
+
+<div class="overflow-x-auto my-4">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-100 text-left">
+<th class="px-3 py-2 border border-gray-300">Status</th>
+<th class="px-3 py-2 border border-gray-300">Authors</th>
+<th class="px-3 py-2 border border-gray-300">Coach</th>
+<th class="px-3 py-2 border border-gray-300">DRIs</th>
+<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
+<th class="px-3 py-2 border border-gray-300">Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">ongoing</span></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/e_forbes" class="text-blue-600 hover:underline">@e_forbes</a></td>
+<td class="px-3 py-2 border border-gray-300"></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/swiskow" class="text-blue-600 hover:underline">@swiskow</a>, <a href="https://gitlab.com/amyphillips" class="text-blue-600 hover:underline">@amyphillips</a></td>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::developer experience</span></td>
+<td class="px-3 py-2 border border-gray-300">2025-10-15</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## 概要
+
+このドキュメントでは、サービス間で使用されるフィールド名に関して、オブザーバビリティセットアップに標準化を導入するためのアプローチを説明します。
+
+## 用語集
+
+- MTTR - Mean Time To Recovery - 問題が特定されてから正常な状態に回復するまでの平均時間
+- SSOT - Single Source of Truth（唯一の情報源）
+
+## 動機
+
+異なるセクションのスタッフとの議論で定期的に浮上してきた課題の1つが、フィールド名に関するもの、具体的にはフィールド名の定義における一貫性の欠如です。
+
+あるサービスはフィールド名 X を処理されるリクエストに関連する情報を表すために定義し、別のサービスはフィールド名 X_ID または Y として定義します。
+
+これにより、開発者がシステムの異なる部分に特化した個別のクエリを構築し、それらを互いに統合する作業に時間を費やすことになります。
+
+この状況はインシデントにおける MTTR の増加として現れ、ひいては顧客の満足度低下につながります。
+
+これは8月の DX サーベイで開発者から特定された最大の問題領域の1つでもあります。これはサーベイで特定されたすべての問題を直接解決するものではありませんが、最大の問題の1つに対処するはずです。
+
+### 目標
+
+- 社内で開発されているすべてのランタイムとサービス間の一貫性を改善するのに役立つシンプルなパターンを定義する
+- 以前に定義されたフィールドの使用に対する自動的な強制を提供する
+- マイグレーション戦略と後方互換性の維持に関するガイダンスを提供する
+
+#### 二次目標
+
+- オブザーバビリティスタックのフィールドマッピングを削減し、Kibana UI での開発者体験を向上させる
+- 動的フィールド名を削減または完全に排除し、専任チームが引き込まれるインシデントの数をさらに削減する
+- オブザーバビリティチームが明示的なフィールドスキーマを構築する際に活用できるパターンを提供する
+
+#### これによって何が可能になるか？
+
+オブザーバビリティチームはトレーシングを提供する計画があります。提案された設計は、ロギングセットアップと、提供されるトレーシング実装の両方にわたって一貫性をもたらすのに役立つはずです。
+
+### 非目標
+
+この作業はスタンダードスキーマを明示的に定義しません。そのオーナーシップはオブザーバビリティチームが持ちます。
+
+## 提案
+
+ここでのソリューションは標準化です。組織はこれまで、ロギングなどの一般的なタスクに対して一貫したセットアップを強制することに十分な価値を置いてきませんでした。これはその一例です。
+
+提案は、「ビッグ3」言語ランタイム: Go、Ruby、Rust のすべてにわたって一貫性と標準化を導入することです。
+
+これは LabKit を通じて実装されます。Fields と呼ばれる新しいパッケージが定義されます。これはすべての標準フィールド名の SSOT となります。
+
+時間が経つにつれてこれらのフィールドの採用が増えると、ロギングシステムの一貫性も向上し、異なるサービスから出力されるログ行を統合する方法が改善されます。
+
+## 設計と実装の詳細
+
+開発者がコードをインストルメントする際に、これらの新しい Fields パッケージを使用する習慣を身につけることが求められます。
+
+フィールド名が存在せず、複数のドメインが関心を持つ値を出力する場合は、他の人が将来利用できるように LabKit の仕様にそのフィールド名を追加するよう努めるべきです。
+LabKit の仕様が唯一の情報源として機能し、そこでの変更は Go、Ruby、Rust の LabKit ライブラリに自動的に伝播されます。
+
+これにより追加のオーバーヘッドが生じます。しかし、インシデントでの長い MTTR のコスト、および通常の業務タスクを実行する際の追加の手間とオーバーヘッドは、このオーバーヘッドを上回るはずです。
+
+スキーマが確立されるにつれて、オーバーヘッドは時間とともに減少するはずです。
+
+### 例
+
+避けたいのは、システム内のよく定義されたオブジェクトを表すために使用されるフリーテキストフィールド名の量です。
+
+例えば、次のような行があるとします:
+
+```ruby
+Gitlab::AppLogger.info(message: "Pipeline #{log_message}", user_id: current_user.id)
+```
+
+これには3つのプレーンテキストフィールド名が含まれており、次のように変換されます:
+
+```json
+{"message": "Pipeline #{log_message}", "user_id": 2345}
+```
+
+これはエラーが起きやすく、システムの異なる部分をインストルメントする開発者間で不一致につながる可能性があります。
+
+ユーザー ID を一貫した方法で出力するための改善は次のとおりです:
+
+```ruby
+Gitlab::AppLogger.info(message: "Pipeline #{log_message}", Labkit::Fields::GL_USER_ID => current_user.id)
+```
+
+> 注意: これらの変更を行う際は、これらのフィールドがすでにログに存在しているかどうかを検証するべきです。
+重複を削除することで、オブザーバビリティインフラへの要求を削減するのに役立ちます。
+
+### Labkit
+
+LabKit のフィールド仕様とライブラリ実装が公開されています:
+
+- https://gitlab.com/gitlab-org/ruby/gems/labkit-ruby/-/blob/master/lib/labkit/fields.rb?ref_type=heads
+- https://gitlab.com/gitlab-org/labkit/-/tree/master/fields?ref_type=heads
+
+これらはロギング、メトリクス、トレーシング全体で使用されることを意図しているため、既存のログパッケージとは明示的に分離されています。
+
+## 一貫性の維持
+
+このアプローチで提起された課題の1つは、「すべての言語ランタイムにわたってどのように一貫性を維持するか？」という問いです。
+
+これは LabKit の仕様によって解決されます。LabKit の仕様はすべてのフィールド定義の唯一の情報源として機能します。
+
+プロセスは次のように機能します:
+
+1. エンジニアが LabKit の仕様に対して MR を提起し、`main` にマージします。
+1. `main` へのマージが自動的に3つの MR の作成をトリガーします — Go、Ruby、Rust の各 LabKit ライブラリに1つずつ — それぞれ対応するフィールドの変更を含みます。
+1. Development Tooling チームが3つのライブラリ MR それぞれをレビューおよび承認してからマージします。
+
+これにより、3つのライブラリすべてが仕様と同期した状態を保ちながら、ライブラリに加えられる変更について Development Tooling チームがループに入ることができます。
+
+## 安全なマイグレーション
+
+出力されるフィールドがダウンストリームシステムで使用されていないかどうかを検証することをお勧めします。これについてフィーチャーチームが最もよく理解しているため、変更を展開する前に所有チームとの相談を行ってください。
+
+リスクの高いマイグレーションでは、古いフィールド名に素早く切り替えて影響の可能性を最小化する能力を保持するために、フィーチャーフラグを使用することが価値があります。
+
+これを行う方法の参考として https://gitlab.com/gitlab-org/gitlab/-/merge_requests/207458/diffs をご覧ください。
+
+状況によっては、簡単なマイグレーションを促進するために、両方のフィールド名を同時に出力する必要があることもあります。
+
+## 代替ソリューション
+
+これに対する代替ソリューションはほとんど特定されていませんが、存在する場合は、それを強調することをお勧めします。
+
+何もしない - フィールドが完全に主観的かつ微妙に異なるフィールド名で無秩序に存在し続けることを許容します。
+
+このアプローチはフィールドの異質性を増加させ、その後の標準化作業をより困難にします。
+
+## 決定ログ
+
+- [ADR 001: 標準化されたアプリケーションフィールド命名戦略](decisions/001_logging_field_name_standardization.md)

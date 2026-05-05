@@ -1,0 +1,148 @@
+---
+title: "オブジェクトストレージ: direct_upload の統合"
+status: accepted
+creation-date: "2021-11-18"
+authors: [ "@nolith" ]
+coach: "@glopezfernandez"
+approvers: [ "@marin" ]
+owning-stage: "~devops::data stores"
+participating-stages: []
+toc_hide: true
+upstream_path: "/handbook/engineering/architecture/design-documents/object_storage/"
+upstream_sha: "856dbb5acbecaff51b3ea0c961ad3adb3d37a953"
+translated_at: "2026-04-27T10:00:00Z"
+translator: claude
+stale: false
+---
+
+<!-- vale gitlab.FutureTense = NO -->
+
+<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
+このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
+</div>
+
+<div class="overflow-x-auto my-4">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-100 text-left">
+<th class="px-3 py-2 border border-gray-300">Status</th>
+<th class="px-3 py-2 border border-gray-300">Authors</th>
+<th class="px-3 py-2 border border-gray-300">Coach</th>
+<th class="px-3 py-2 border border-gray-300">DRIs</th>
+<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
+<th class="px-3 py-2 border border-gray-300">Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">accepted</span></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/nolith" class="text-blue-600 hover:underline">@nolith</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/glopezfernandez" class="text-blue-600 hover:underline">@glopezfernandez</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/marin" class="text-blue-600 hover:underline">@marin</a></td>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::data stores</span></td>
+<td class="px-3 py-2 border border-gray-300">2021-11-18</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## 概要
+
+GitLab はユーザーデータを3つのクラスに格納しています: データベースレコード、Git リポジトリ、ユーザーがアップロードしたファイル（ブループリント全体を通じてファイルストレージと呼ばれます）。
+
+ファイルストレージに関するユーザーと貢献者のエクスペリエンスには、大きな改善の余地があります:
+
+- GitLab の初期セットアップでは、1つではなく13のバケットの作成とセットアップが必要です。
+- ファイルストレージを使用する機能では、貢献者がローカルストレージとオブジェクトストレージの両方について考える必要があり、摩擦と複雑さが生じます。これにより壊れた機能とセキュリティの問題が生じることがよくあります。
+- ファイルストレージに取り組む貢献者は、Workhorse、Omnibus、クラウドネイティブ GitLab（CNG）のコードも書く必要があることが多いです。
+
+## 問題の定義
+
+オブジェクトストレージは GitLab の基本的なコンポーネントであり、共有された分散型の高可用性（HA）ファイルストレージの基盤となる実装を提供します。
+
+時間の経過とともに、アプリケーション全体でオブジェクトストレージのサポートを構築し、[多くのイテレーション](../../../../company/working-groups/object-storage/#company-efforts-on-uploads)で特定の問題を解決してきました。これにより、開発（新機能とバグ修正）からインストールまで、全体的な複雑さが増加しました:
+
+- GitLab の新規インストールでは、機能グループごとに独自のバケットが必要なため、1つではなく複数のオブジェクトストレージバケットの作成と設定が必要です。これはインストールエクスペリエンスと新機能の採用に影響を与え、シンプルなソリューションから遠ざかります。
+- クラウドネイティブ GitLab のリリースでは NFS 共有ストレージを削除し、ダイレクトアップロードを開発する必要がありました。この機能はマイルストーンごとに複数のタイプのアップロードに拡張されましたが、グローバルに有効化されることはありませんでした。
+- 現在、GitLab はローカルストレージとオブジェクトストレージの両方をサポートしています。ローカルストレージは、HA なしの単一ボックスインストール、または[推奨しなくなった](https://docs.gitlab.com/ee/administration/nfs.html) NFS でのみ機能し、GitLab.com では使用されなくなりました。
+- すべての動作部分とフローを理解することは非常に複雑です: CarrierWave、Fog、Go S3/Azure SDK がすべて使用されており、テストも複雑になっています。
+- Fog と CarrierWave はネイティブ SDK（例: AWS S3 SDK）ほどメンテナンスされていないため、通常であれば「無料で」利用できるはずの顧客要求機能（例: [Issue #242245](https://gitlab.com/gitlab-org/gitlab/-/issues/242245)）をサポートするためにこれらのツールを維持したりモンキーパッチを当てたりする必要があります。
+- 多くの場合、オブジェクトストレージファイルを不必要にコピーしています（例: [Issue #285597](https://gitlab.com/gitlab-org/gitlab/-/issues/285597)）。大きなファイル（例: LFS とパッケージ）は最終化が遅いか、まったく機能しません。
+
+## 現状からの改善
+
+以下は、オブジェクトストレージ実装に影響を与えている問題点を解消するために取れる主な方向性の簡単な説明です。
+
+これは[Object Storage Working Group](../../../../company/working-groups/object-storage/)のために録画された[YouTube 動画](https://youtu.be/X9V_w8hsM8E)としても利用できます。
+
+### MinIO を同梱して GitLab アーキテクチャを簡略化する
+
+当初、オブジェクトストレージのサポートは CE ディストリビューションの一部ではなく、Premium 機能でした。そのため、ローカルストレージとオブジェクトストレージの両方をサポートする必要がありました。
+
+ローカルストレージでは、コンポーネント間の共有ストレージが前提とされています。これは HA なしの単一ボックスインストール、または[推奨しなくなった](https://docs.gitlab.com/ee/administration/nfs.html) NFS で実現できます。
+
+オブジェクトストレージに関するテストギャップがあります。Workhorse と MinIO も必要ですが、これらはパイプラインに存在しないため、多くがモック実装に置き換えられています。さらに、CI とローカル開発の両方で共有ディスクが存在すると、HA 環境にデプロイするまで壊れた実装が隠れてしまうことが多いです。
+
+検討できる対策の1つは、MinIO を製品の一部として出荷することを検討することです。これにより、クラウドとローカルインストールの違いが減り、ファイルストレージを単一の技術に標準化できます。
+
+ローカルディスク操作の削除により、開発の複雑さが軽減されるとともに、ローカルストレージにユーザー提供データを書き込まなくなるため、セキュリティ攻撃ベクターも軽減されます。
+
+また、開発モードでは常にローカルオブジェクトストレージを実行し、ローカルファイルディスクへのアクセスはマージリクエストレビュー中に赤信号として発生するため、ヒューマンエラーも削減できます。
+
+この取り組みは[このエピック](https://gitlab.com/groups/gitlab-org/-/epics/6099)で説明されています。
+
+特定のサードパーティ技術を検討する前に、オープンソースソフトウェアライセンスへの影響を考慮する必要があります。2021年4月23日時点で、[MinIO は AGPL v3 ライセンスに移行しています](https://github.com/minio/minio/commit/069432566fcfac1f1053677cc925ddafd750730a)。このブループリントで提案されているように MinIO を出荷するかどうかについて決定を下す前に、GitLab Legal に相談しなければなりません。
+
+### すべてのアップロードでデフォルトでダイレクトアップロードを有効にする
+
+機能のグループごとに独自のバケットが必要なため、どこでもダイレクトアップロードが有効になっているわけではありません。新しいアップロードを貢献するには、Ruby on Rails と Go の両方でコーディングする必要があります。
+
+専用バケットを持たない機能を新規実装するには、Omnibus と CNG にもマージリクエストを作成し、自分たちの環境用に新しいバケットを設定するために SRE と調整する必要があります。
+
+これにより機能採用も遅くなります。ユーザーが GitLab を再設定し、インフラに新しいバケットを準備する必要があるためです。また、機能ごとにインストールがより複雑になります。
+
+[統合されたオブジェクトストレージ設定](https://docs.gitlab.com/ee/administration/object_storage.html#configure-a-single-storage-connection-for-all-object-types-consolidated-form#configure-a-single-storage-connection-for-all-object-types-consolidated-form)でデフォルトでダイレクトアップロードを実装することで、新機能を出荷するために必要なマージリクエストの数を4つから1つに減らすことができます。また、バケットは常に同じになるため SRE の介入も不要になります。
+
+これにより、開発とレビューのプロセスが簡略化され、GitLab の設定ファイルも簡略化されます。また、すべてのユーザーがインフラの作業なしに新機能にすぐにアクセスできるようになります。
+
+### オブジェクトストレージコードを簡略化する
+
+私たちの実装は、すべてのオブジェクトストレージクライアントがサードパーティライブラリであるサードパーティフレームワークの上に構築されています。残念ながら、その一部はメンテナンスされていません。
+[顧客が 5 GB の Git LFS オブジェクトをプッシュできない問題](https://gitlab.com/gitlab-org/gitlab/-/issues/216442)がありますが、このような重要な機能がサードパーティライブラリに実装されているため、修正が遅れており、外部メンテナーに修正のマージとリリースを依存しています。
+
+ダイレクトアップロードの導入前は、[CarrierWave](https://github.com/carrierwaveuploader/carrierwave)（「Ruby アプリケーションからファイルをアップロードするシンプルで非常に柔軟な方法を提供する gem」）を使用することが定番のソリューションでした。しかし、Workhorse からファイルをアップロードするようになった現在は、このライブラリは私たちのユースケースではなくなっており、ダイレクトアップロードをサポートするために [CarrierWave の内部にパッチを当てる](https://gitlab.com/gitlab-org/gitlab/-/issues/285597#note_452696638)必要がありました。
+
+CarrierWave の削除と新しいシンプルな内部アップロード API をカバーする簡単な提案が[この Issue コメント](https://gitlab.com/gitlab-org/gitlab/-/issues/213288#note_325358026)に記載されています。
+
+理想的には、Go と Ruby のオブジェクトストレージクライアントを複製する必要がなくなります。CarrierWave を削除することで、プロバイダーの S3 互換性レベルが不十分な場合に公式サポートのネイティブクライアントを利用できます。
+
+## イテレーション
+
+このセクションでは、可能なイテレーションをいくつか列挙します。これは最終的なロードマップを意図したものではなく、Object Storage Working Group のための議論の出発点です。
+
+1. CarrierWave なしで認可のための新しいキャッチオールバケットと統合された内部 API を作成します。
+1. Omnibus に MinIO を同梱します（CNG イメージにはすでに含まれています）。
+1. GitLab-QA を拡張して、サポートされているすべての設定をカバーします。
+1. ローカルディスクアクセスを廃止します。
+1. 複数バケットを持つ設定を廃止します。
+1. バケット間のマイグレーションを実装します。
+1. 現在の CarrierWave アップロードを新しい実装に移行します。
+1. 次のメジャーリリース: ローカルディスクアクセスのサポートと複数バケットを持つ設定を削除します。
+
+### 現在のイテレーション計画の利点
+
+現在の計画は、最初のステップから具体的なメリットを提供するように設計されています。
+
+キャッチオールバケットの導入により、現在ダイレクトアップロードの対象でないすべてのアップロードがそのメリットを享受でき、新機能は単一のマージリクエストで出荷できるようになります。
+
+MinIO を Omnibus に同梱することで、新規インストールをデフォルトでオブジェクトストレージにでき、Omnibus がバケットの作成を担当できます。これにより Kubernetes 外での HA インストールが簡略化されます。
+
+その後、各 CarrierWave アップローダーを新しい実装に移行し、GitLab のインストールに1つのバケットだけが必要になるポイントまで到達できます。
+
+## 追加の参考資料
+
+- [アップロード開発ガイド](https://docs.gitlab.com/ee/development/uploads/index.html)
+- [Speed up the monolith, building a smart reverse proxy in Go](https://archive.fosdem.org/2020/schedule/event/speedupmonolith/): Workhorse の歴史と最初のクラウドネイティブインストールのリリースで直面した課題を説明するプレゼンテーション。
+- [オブジェクトストレージ改善エピック](https://gitlab.com/groups/gitlab-org/-/epics/483)。
+- GraphQL API に移行していますが、[ダイレクトアップロードをサポートしていません](https://gitlab.com/gitlab-org/gitlab/-/issues/280819)。
