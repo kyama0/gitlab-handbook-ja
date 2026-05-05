@@ -16,7 +16,7 @@ stale: false
 ---
 
 このブループリントは Organization を隔離するための要件を詳述します。
-Organization とは何かについては [Organization](_index.md) をご覧ください。
+Organization とは何かについては [Organization](index.md) をご覧ください。
 
 ## 何をするのか？
 

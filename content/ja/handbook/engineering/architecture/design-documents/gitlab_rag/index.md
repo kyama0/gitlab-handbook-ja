@@ -54,9 +54,9 @@ stale: false
 
 | 機能 | 現行 | 非推奨 | 進行中 | リンク |
 |---------|---------|------------|----------|-------|
-| Duo Chat の RAG: ドキュメント Q&A | [Vertex AI Search](vertex_ai_search.md) %17.0 でリリース | [PGVector 拡張を使った Postgres](postgresql.md) %16.0 でリリース、%17.0 で非推奨 | [AI Context 抽象化レイヤー](../ai_context_abstraction_layer/_index.md)が完成次第、埋め込みを移行可能 | [GitLab Duo RAG ブループリント](../gitlab_duo_rag/_index.md) |
+| Duo Chat の RAG: ドキュメント Q&A | [Vertex AI Search](vertex_ai_search.md) %17.0 でリリース | [PGVector 拡張を使った Postgres](postgresql.md) %16.0 でリリース、%17.0 で非推奨 | [AI Context 抽象化レイヤー](../ai_context_abstraction_layer/index.md)が完成次第、埋め込みを移行可能 | [GitLab Duo RAG ブループリント](../gitlab_duo_rag/index.md) |
 | 検索機能の RAG: ハイブリッド Issue・エピック検索 | [Elasticsearch](elasticsearch.md) %17.6 でリリース | | | [ハイブリッド Issue 検索エピック](https://gitlab.com/groups/gitlab-org/-/epics/13474) |
-| 将来の RAG 機能 | | | [AI Context 抽象化レイヤー](../ai_context_abstraction_layer/_index.md)が Elasticsearch、OpenSearch、または Postgres 上の GitLab データの埋め込みストレージと検索をサポートする | [AI Context 抽象化レイヤーブループリント](../ai_context_abstraction_layer/_index.md) [AI Context エピック](https://gitlab.com/groups/gitlab-org/-/epics/16008) |
+| 将来の RAG 機能 | | | [AI Context 抽象化レイヤー](../ai_context_abstraction_layer/index.md)が Elasticsearch、OpenSearch、または Postgres 上の GitLab データの埋め込みストレージと検索をサポートする | [AI Context 抽象化レイヤーブループリント](../ai_context_abstraction_layer/index.md) [AI Context エピック](https://gitlab.com/groups/gitlab-org/-/epics/16008) |
 
 ## RAG の概要
 

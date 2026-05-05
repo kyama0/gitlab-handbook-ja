@@ -214,7 +214,7 @@ limit 30;
 
 <!-- vale gitlab.Spelling = NO -->
 
-問題のあるテーブルの解決策の特定は、[GitLab データベースチーム](../../../data-engineering/database-excellence/database-frameworks/_index.md)と各ステージグループによって推進されます。
+問題のあるテーブルの解決策の特定は、[GitLab データベースチーム](../../../data-engineering/database-excellence/database-frameworks/index.md)と各ステージグループによって推進されます。
 
 | 役割               | 担当者 |
 |--------------------|-----|

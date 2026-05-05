@@ -39,7 +39,7 @@ stale: false
 
 ## Organization には独自の公開設定（パブリック/プライベート）があることが想定されますか？
 
-公開設定はメインの [Organization ページ](_index.md#visibility) に記載されています。
+公開設定はメインの [Organization ページ](index.md#visibility) に記載されています。
 
 ## トップレベルグループから Organization への機能の移行はどのようなものになりますか？
 

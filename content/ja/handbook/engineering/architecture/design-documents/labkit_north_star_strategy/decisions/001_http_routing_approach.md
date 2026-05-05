@@ -70,7 +70,7 @@ LabKit v2 の開発の一環として、[go-chi/chi](https://github.com/go-chi/c
    ルーティングニーズを持っており、それを必要としないサービスに依存関係を義務付けることは「最小限の
    API サーフェス」原則に反するため、却下されました。
 
-1. 何もしない。共有ミドルウェアの欠如により、[LabKit ノーススター戦略](../_index.md)で参照されている
+1. 何もしない。共有ミドルウェアの欠如により、[LabKit ノーススター戦略](../index.md)で参照されている
    DX サーベイの結果に文書化されているように、サービス全体で断片化した観測性セットアップにつながるため、
    却下されました。
 
@@ -79,4 +79,4 @@ LabKit v2 の開発の一環として、[go-chi/chi](https://github.com/go-chi/c
 - [議論 Issue: team-tasks#4311](https://gitlab.com/gitlab-org/quality/quality-engineering/team-tasks/-/issues/4311)
 - [ルーター調査: team-tasks#4294](https://gitlab.com/gitlab-org/quality/quality-engineering/team-tasks/-/issues/4294)
 - [Lab Bench プロポーザル](https://docs.google.com/document/d/11Zj918LuZeY3fPcU50ZPhzJtcqzvyXaO0SDamW7cDc8/)
-- [LabKit ノーススター戦略](../_index.md)
+- [LabKit ノーススター戦略](../index.md)

@@ -20,7 +20,7 @@ stale: false
 1. `plans` のような静的データテーブルは同期を必要とせず、アプリケーションコードにハードコードすることで常に一貫性を保つよう変換します。
    良い例として [VisibilityLevel](https://gitlab.com/gitlab-org/gitlab/-/blob/5ae43dface737373c50798ccd909174bcdd9b664/lib/gitlab/visibility_level.rb#L25-27) があります。
 1. `application_settings` のような Cell 設定テーブルは独立して設定できます。
-   [Terraform](https://gitlab.com/gitlab-org/gitlab/-/issues/505685) のような外部のシングルソースオブトゥルースが、Cell の各[リング](../infrastructure/_index.md#rings)に対して目標値を伝播します。
+   [Terraform](https://gitlab.com/gitlab-org/gitlab/-/issues/505685) のような外部のシングルソースオブトゥルースが、Cell の各[リング](../infrastructure/index.md#rings)に対して目標値を伝播します。
    これをサポートするために、各 Cell 設定テーブルに内部 API が必要です。
 
 ## 長所
