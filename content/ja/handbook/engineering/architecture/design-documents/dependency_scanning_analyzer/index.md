@@ -124,7 +124,7 @@ For long pages, consider creating a table of contents.
 
 脆弱性スキャンの実装（エラー処理戦略、リトライロジック、並行処理モデルを含む）の詳細については、[ADR 002: SBOM Scan API を使用した脆弱性スキャン](./decisions/002_vulnerability_scanning.md)を参照してください。
 
-## 決定事項
+## 決定事項 {#decisions}
 
 - [ADR 001: グラフエクスポートのみ](./decisions/001_graph_export_only.md) - ロックファイルとグラフファイルのみをサポートする初期ビジョンを記録
 - [ADR 002: SBOM Scan API を使用した脆弱性スキャン](./decisions/002_vulnerability_scanning.md) - DS アナライザー内に脆弱性スキャン機能を再導入する決定を記録
