@@ -196,7 +196,7 @@ GitLab が[オール・リモートのチームメンバーをどのようにオ
 
 
 <div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/embed/GKMUs7WXm-E" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
+  <iframe src="https://www.youtube.com/embed/GKMUs7WXm-E" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
 
 </div>
 
@@ -205,4 +205,4 @@ GitLab が[オール・リモートのチームメンバーをどのようにオ
 
 [オール・リモートのメリットに関する完全ガイドはこちら](remote-benefits/)からご覧ください。
 
-メインの[オール・リモートページ](_index.md)に戻る。
+メインの[オール・リモートページ](index.md)に戻る。
