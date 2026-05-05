@@ -158,5 +158,3 @@ hybrid モードで、namespace レベルではなくリポジトリレベルの
 - [ADR-022: Namespace Decoupling](022_namespace_decoupling.md)（設定境界としての namespace）
 - [S01: HTTP Server and Routing](https://gitlab.com/gitlab-org/ops/artifact-registry/-/merge_requests/34)（この決定によって影響を受けるタイムアウトとレスポンスサイズの前提）
 - [リダイレクト vs プロキシに関する関連議論](https://gitlab.com/gitlab-org/ops/artifact-registry/-/merge_requests/34#note_3276797114)
-</content>
-</invoke>
