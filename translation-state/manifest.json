@@ -687,6 +687,186 @@
       "model": "claude-opus-4-7",
       "input_hash": "44180cf8acbfcf08a2c2848a8d5ea94ef6780422a1320f6a84d640a8a7de3cc5"
     },
+    "content/handbook/company/cadence.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5e6ba63cf8410a3556a02a83fc6100e03944efbb8646dc7689008aa4937afc41"
+    },
+    "content/handbook/company/e-group-weekly.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9cc317b148c44e43b34bfcf96783d6f1c3c4c8b86d8a5e9df8d3a632fc59bfd4"
+    },
+    "content/handbook/company/esg.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ff22b23013652e69356e6133ca2de3456a0f8e28c787a43d98c6a6d7a1268858"
+    },
+    "content/handbook/company/family-and-friends-day.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8fa1011d07c3c22194d5e4497c441573b1f29cc4a72f24fac384a249870a26f3"
+    },
+    "content/handbook/company/faq-gitlab-licensing-technology-to-independent-chinese-company.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "62ef6cdfd591fd2466296eb2b0b10fe97b9359d7192f2840e2ad998e481f4580"
+    },
+    "content/handbook/company/gitlab-all-company-meetings.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5e2843c74a72cee8fa921da7ed1d1cb0fc19d54722903ffc0ccd8d010a4aaa68"
+    },
+    "content/handbook/company/history.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "197aced74981a3f012a0b8f5a1bbf90ecf9e04269d60c7612db45bbaa5af6ba0"
+    },
+    "content/handbook/company/infrastructure-standards/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "abf880025339b195f25d74cd1b78bf4752351ac31f8592c2cf7d48950504a7c4"
+    },
+    "content/handbook/company/infrastructure-standards/helpdesk.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e6e9230260aa9b2ca0c155f43b3d53aaf9c59c374e3a3ff6d72dee2aa0d07ab5"
+    },
+    "content/handbook/company/infrastructure-standards/labels-tags.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3a5e9c6e8d128abea363d70ae5a6b1cf8b8f61751bc9dd93aea46b5e0ddd81ee"
+    },
+    "content/handbook/company/infrastructure-standards/policies.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5411b264c5a1837c523b724fbb688c91791cf611e92b1805c77bd4d48acbf018"
+    },
+    "content/handbook/company/infrastructure-standards/realms/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1e46e7624ead4355c28b9075e68526b0faddd20df02faf9db9f63b3e5aa0ceed"
+    },
+    "content/handbook/company/infrastructure-standards/realms/eng-infra/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b4e24812396cf8bf0aa238752b542861bed55e1dea5951f932bc32fce53bee54"
+    },
+    "content/handbook/company/infrastructure-standards/realms/eng-infra/labels-tags.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b784d789d373a5b9e423e6a1bf081f30a67e0f246017eec159719295c6fd0be6"
+    },
+    "content/handbook/company/infrastructure-standards/realms/infra-shared-services/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1f45ad25e7342a4b1b6697df8a5bdea478975e99bea9c4cbaa82a2a6db26f640"
+    },
+    "content/handbook/company/infrastructure-standards/realms/infra-shared-services/labels-tags.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "53009b7a6f147d8b05da9d54a1648266012d5aae976fc1856f217c5af847e8a7"
+    },
+    "content/handbook/company/infrastructure-standards/realms/it/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ab1e1cf98380d6c4fb39db4c3c3c64061d56530fb49d360b736027b774f15e9e"
+    },
+    "content/handbook/company/infrastructure-standards/realms/it/labels-tags.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7484a9748cc240b5b4bd06dcc3f613e1871ccd05114b7007304303f141277348"
+    },
+    "content/handbook/company/infrastructure-standards/realms/saas/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d446f091a4c63fb0d3e9de237239f3e425b428b7d7399dc123895d0336588178"
+    },
+    "content/handbook/company/infrastructure-standards/realms/saas/labels-tags.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fd21826b0f32589871330463c47a846f6d28b7d598970f7e70ccf5b4441900f9"
+    },
+    "content/handbook/company/infrastructure-standards/realms/sandbox/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f723dd82674b288fc88a1a9fb579ad91adcd8cb298a6c7af1141451fe484382a"
+    },
+    "content/handbook/company/infrastructure-standards/realms/sandbox/labels-tags.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T15:43:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "261e3328a93977474b152fc4a701ecbf25b036253ea3d5b3b1cb008d0f6e6cd7"
+    },
+    "content/handbook/company/infrastructure-standards/realms/security/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T15:43:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bdf62b9607f6b9b387a104468cf6c3c9e8dd7c7a7a3d86a7c70a5320409e1930"
+    },
+    "content/handbook/company/infrastructure-standards/realms/security/labels-tags.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T15:43:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "534270f1091f1796a1c24a8ee959a85715d516c4a627ac6814d8acee467e83c5"
+    },
+    "content/handbook/company/infrastructure-standards/tutorials/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T15:43:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a535a5c38c4180377c172bb12307e543a0a26e90e0ecda6b05dd4b074088969c"
+    },
+    "content/handbook/company/infrastructure-standards/tutorials/groups/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T15:43:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "28e4ff42d035dc604023a2a78b110e4136c482ffcbf06d82cf65c00ecb22636c"
+    },
+    "content/handbook/company/infrastructure-standards/tutorials/groups/access-request.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T15:43:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "48bad7706dbeb17ffab3b259bb8760dbc9fb2bd41f245c9831310bb805b79d7f"
+    },
+    "content/handbook/company/infrastructure-standards/tutorials/realms/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T15:43:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b4c9284310b481dad874887ba661224949a02c9e7328898de6780f1228e048f8"
+    },
+    "content/handbook/company/infrastructure-standards/tutorials/realms/create-realm.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T15:43:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "08c6999cd03964165f61c41f34d76501bbf2bde9106cfd126956d72a2aebace5"
+    },
+    "content/handbook/company/kpis.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T15:43:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "32a62086a56768a9fada5d14b007f418b7aebb18494ee3ccbef26d7fc41b5464"
+    },
     "content/handbook/company/mission.md": {
       "path": "content/handbook/company/mission.md",
       "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
@@ -694,12 +874,78 @@
       "model": "claude-opus-4-7",
       "input_hash": "1f91800ef24beca75242526ec22a4771831b73605b5347ef7615ab2c75cde41c"
     },
+    "content/handbook/company/offsite/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T15:43:48Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8e4a724b9e5b208edf28050dad5e69eaa6c9c58771b405b53c8bf25655e930db"
+    },
+    "content/handbook/company/offsite/beware-sticky-bears.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8799203cb73fe5b8e295ef3e88c3d23b872b4719840b94e6635765a43d0a1d16"
+    },
+    "content/handbook/company/okrs/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c786d306ee9b710bae95709039f42a7ad10185630cf2f5c8cb19f635699cd3e9"
+    },
+    "content/handbook/company/only-healthy-constraints.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fdadb8f6042cd929600ab44cb61585cceace4a00c0c67170fd3a7b268e4d6f6a"
+    },
+    "content/handbook/company/pricing.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "29f608f3e2129811d96948fe1ec3bed285927841be7de3c576e50c92d75a23c2"
+    },
     "content/handbook/company/purpose.md": {
       "path": "content/handbook/company/purpose.md",
       "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
       "translated_at": "2026-04-19T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "7a01ad3d083f5192a80b690fce76fabff9e45dbdaea02d8042b751e1f53a7400"
+    },
+    "content/handbook/company/quote-to-cash.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b0c5055bdb7c8810cbf0fcc9458e39cb9c7e98fc68bc250f2ae586f299ee40f2"
+    },
+    "content/handbook/company/stewardship.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "219bf204f02600b45a753a1f01e0332be93fa63579cf260b77eb7a49c0e0181b"
+    },
+    "content/handbook/company/still-a-startup.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "997f68252f2cb9692acff44f0348f77a70e50d949be8b6eda0eb49870d64a4b6"
+    },
+    "content/handbook/company/structure.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "99f994e98c71d5b5e7a448bdd0ed19e8fb83dddb02b82d098e696ff4efc3de99"
+    },
+    "content/handbook/company/team.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3e1ef92551847154b3a6c58536e95092d5598df082914fc6ac99496d274a9221"
+    },
+    "content/handbook/company/vision.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0f31205e175e23c8d00ff225d05123485b85b437bee376c561783f353cd8e94d"
     },
     "content/handbook/customer-experience/_index.md": {
       "path": "content/handbook/customer-experience/_index.md",
