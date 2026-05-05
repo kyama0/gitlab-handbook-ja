@@ -16,7 +16,7 @@ stale: false
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
-<!-- value gitlab.FutureTense = NO -->
+<!-- vale gitlab.FutureTense = NO -->
 
 <!-- This renders the design document header on the detail page, so don't remove it-->
 

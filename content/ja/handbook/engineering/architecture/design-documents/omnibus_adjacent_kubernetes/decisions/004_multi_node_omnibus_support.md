@@ -95,7 +95,7 @@ Geo セットアップでは、Helm values はプライマリサイトの Rails 
 
 ## 参考資料
 
-- [OAK デザインドキュメント](../_index.md)
+- [OAK デザインドキュメント](../index.md)
 - [マルチノード Omnibus PoC — work item #9691](https://gitlab.com/gitlab-org/omnibus-gitlab/-/work_items/9691)
 - PoC: [デモ（内部リンク）](https://drive.google.com/file/d/1ZriEHz1Sjg-9rJLSi0EpUurmaHVscPTP/view) と [実装の詳細](https://gitlab.com/-/snippets/5974860)
 - [ADR: `gitlabhq_production` を超えたデータベースの Omnibus HA サポートなし](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18927)

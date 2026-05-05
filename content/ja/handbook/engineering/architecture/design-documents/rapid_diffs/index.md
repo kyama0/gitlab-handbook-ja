@@ -175,7 +175,7 @@ GitLab の完了の定義の項目に加えて、RRD の作業は以下の要件
 ---
 <sup>1</sup>: [The Performance Inequality Gap, 2023](https://infrequently.org/2022/12/performance-baseline-2023/)
 
-### 完全読み込み改善計算式
+### 完全読み込み改善計算式 {#fully-loaded-improvement-formula}
 
 <details>
 <summary>クリックして展開</summary>
@@ -609,7 +609,7 @@ that is not feasible, images should be placed under `images/` in the same
 directory as the `index.md` for the proposal.
 -->
 
-## 代替案
+## 代替案 {#alternative-solutions}
 
 <!--
 It might be a good idea to include a list of alternative solutions or paths considered, although it is not required. Include pros and cons for

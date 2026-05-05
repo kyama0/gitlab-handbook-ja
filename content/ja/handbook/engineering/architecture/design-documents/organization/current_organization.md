@@ -108,7 +108,7 @@ Admin操作
 : システム全体の管理タスクは明示的なコンテキスト免除ブロックを使用します
 
 スケジュールされたタスク
-: Cronジョブは、Current Organizationなしでジョブを初期化し、その後Organizationのバッチごとにurrent Organizationを定義する可能性があります。
+: Cronジョブは、Current Organizationなしでジョブを初期化し、その後Organizationのバッチごとに Current Organization を定義する可能性があります。
 
 例外の例:
 

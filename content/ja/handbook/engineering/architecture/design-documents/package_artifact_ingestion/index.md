@@ -6,7 +6,7 @@ title: パッケージアーティファクトの取り込み
 status: proposed
 creation-date: "2024-09-25"
 authors: [ "@idawson" ]
-coaches: [ "" ]
+coaches: []
 dris: [ "@idawson", "@gonzoyumo", "@dabeles" ]
 owning-stage: "~devops::application security testing"
 participating-stages: []

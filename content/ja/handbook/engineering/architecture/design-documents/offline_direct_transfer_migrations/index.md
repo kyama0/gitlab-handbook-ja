@@ -253,7 +253,7 @@ sequenceDiagram
     Destination-->Destination: インポート開始（非同期）
     Destination-->>Owner: 開始済み
     loop 各エンティティリレーションに対して（ステータス確認なし）
-        GDestination->>ObjectStorage: リレーションエクスポートファイルをフェッチ
+        Destination->>ObjectStorage: リレーションエクスポートファイルをフェッチ
         ObjectStorage-->>Destination: リレーションエクスポートデータ
         Destination->>Destination: リレーションデータを抽出・変換・ロード
     end

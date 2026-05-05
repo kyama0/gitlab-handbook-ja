@@ -38,7 +38,7 @@ stale: false
 <td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/stanhu" class="text-blue-600 hover:underline">@stanhu</a>, <a href="https://gitlab.com/fabiopitino" class="text-blue-600 hover:underline">@fabiopitino</a>, <a href="https://gitlab.com/shekharpatnaik" class="text-blue-600 hover:underline">@shekharpatnaik</a></td>
 <td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/TBD" class="text-blue-600 hover:underline">@TBD</a></td>
 <td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/product-manager" class="text-blue-600 hover:underline">@product-manager</a>, <a href="https://gitlab.com/engineering-manager" class="text-blue-600 hover:underline">@engineering-manager</a></td>
-<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::<stage></span></td>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::&lt;stage&gt;</span></td>
 <td class="px-3 py-2 border border-gray-300">2025-04-10</td>
 </tr>
 </tbody>
@@ -309,7 +309,7 @@ repositories:
 
 1. チェンジセットの差分を単一ビューで集約。
 1. 特定のプロジェクトからの差分を表示可能。
-1. [ラピッド差分](../rapid_diffs/_index.md)のサポート。
+1. [ラピッド差分](../rapid_diffs/index.md)のサポート。
 
 ### v0.4: チェンジセットマージ V2
 

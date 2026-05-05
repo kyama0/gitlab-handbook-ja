@@ -37,7 +37,7 @@ stale: false
 <tbody>
 <tr>
 <td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">proposed</span></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/pursultani, @sarahwalker, @a_richter" class="text-blue-600 hover:underline">@pursultani, @sarahwalker, @a_richter</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/pursultani" class="text-blue-600 hover:underline">@pursultani</a>, <a href="https://gitlab.com/sarahwalker" class="text-blue-600 hover:underline">@sarahwalker</a>, <a href="https://gitlab.com/a_richter" class="text-blue-600 hover:underline">@a_richter</a></td>
 <td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/WarheadsSE" class="text-blue-600 hover:underline">@WarheadsSE</a></td>
 <td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/product-manager" class="text-blue-600 hover:underline">@product-manager</a>, <a href="https://gitlab.com/engineering-manager" class="text-blue-600 hover:underline">@engineering-manager</a></td>
 <td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::platforms</span></td>
