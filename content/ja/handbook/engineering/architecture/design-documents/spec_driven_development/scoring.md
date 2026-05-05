@@ -14,7 +14,7 @@ translator: claude
 stale: false
 ---
 
-SDD の詳細については [Spec-Driven Development](_index.md) をご覧ください。
+SDD の詳細については [Spec-Driven Development](index.md) をご覧ください。
 
 **成熟度: 定義中**
 

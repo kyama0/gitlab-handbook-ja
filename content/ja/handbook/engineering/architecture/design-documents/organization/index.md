@@ -354,4 +354,4 @@ Organization Membershipの管理とダッシュボードを含むOrganizationの
 - [Organization: よくある質問](faq.md)
 - [Organization開発ガイドライン](https://docs.gitlab.com/development/organization/)
 - [Enterprise Users](https://docs.gitlab.com/ee/user/enterprise_user/index.html)
-- [Cellsブループリント](../cells/_index.md)
+- [Cellsブループリント](../cells/index.md)

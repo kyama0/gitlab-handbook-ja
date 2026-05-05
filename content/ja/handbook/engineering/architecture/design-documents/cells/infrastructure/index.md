@@ -47,7 +47,7 @@ stale: false
 
 ## 事前学習
 
-1. [Cells イテレーション](../_index.md#cells-iterations)、特に `Cells 1.0`
+1. [Cells イテレーション](../index.md#cells-iterations)、特に `Cells 1.0`
 1. [GitLab Dedicated](https://about.gitlab.com/dedicated/)
 1. [GitLab Dedicated アーキテクチャ](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/architecture/Architecture.html)
 

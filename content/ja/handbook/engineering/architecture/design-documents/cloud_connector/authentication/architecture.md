@@ -10,7 +10,7 @@ stale: false
 ---
 
 このページは Cloud Connector の最新の状態における一般的なアーキテクチャをカバーしています。
-過去および将来の段階的な変更は [ADR](_index.md#decisions) として文書化されています。
+過去および将来の段階的な変更は [ADR](index.md#decisions) として文書化されています。
 
 ## 用語
 

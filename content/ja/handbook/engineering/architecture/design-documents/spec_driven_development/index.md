@@ -154,7 +154,7 @@ flowchart LR
 
 - [親エピック](https://gitlab.com/groups/gitlab-org/-/work_items/21218)
 - [Wiki SSoT](https://gitlab.com/groups/gitlab-org/plan-stage/-/wikis/Spec-driven-development-(SDD))
-- [AI パネルアーキテクチャ](../ai_panel/_index.md)
+- [AI パネルアーキテクチャ](../ai_panel/index.md)
 - [設計 Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/592316)
 - [エンジニアリングスパイク](https://gitlab.com/gitlab-org/gitlab/-/work_items/592314)
 - [ワークショップノート](https://docs.google.com/document/d/1zFs7ziXNBrY7rYvXhhWZvyavWT-j_DAqNwmxbMMTa4o/edit?tab=t.0)
