@@ -39,6 +39,9 @@ jobs:
         env:
           HUGO_BASEURL: ${{ vars.SITE_URL }}
 
+      - name: Pagefind index (CJK-aware static site search)
+        run: npx pagefind --site public
+
       - uses: cloudflare/pages-action@f0a1cd58cd66095dee69bfa18fa5efd1dde93bca # v1.5.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}

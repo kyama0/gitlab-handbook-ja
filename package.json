@@ -9,12 +9,15 @@
     "sync:upstream": "tsx scripts/sync-upstream.ts",
     "upload:images": "tsx --env-file-if-exists=.env scripts/upload-images-r2.ts",
     "check:staleness": "tsx scripts/check-staleness.ts",
-    "restore:shortcodes": "tsx scripts/restore-shortcodes.ts"
+    "restore:shortcodes": "tsx scripts/restore-shortcodes.ts",
+    "build": "hugo --minify && npx pagefind --site public",
+    "build:dev": "hugo && npx pagefind --site public"
   },
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.1038.0",
     "@types/node": "^25.6.0",
     "autoprefixer": "^10.4.21",
+    "pagefind": "^1.5.2",
     "postcss": "^8.5.6",
     "postcss-cli": "^11.0.1",
     "tsx": "^4.19.0",

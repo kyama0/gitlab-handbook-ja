@@ -43,3 +43,13 @@ h3 > a > sup {
   color: $warning;
   font-weight: 800;
 }
+
+// Navbar 内のメニューアイコン (FontAwesome <i> 要素) を大きめに表示。
+// icon-only エントリ (params.iconOnly: true、layouts/_partials/navbar.html
+// 参照) と通常エントリの両方に効く。
+.td-navbar .navbar-nav .nav-link {
+  i {
+    font-size: 1.35rem;
+    vertical-align: middle;
+  }
+}

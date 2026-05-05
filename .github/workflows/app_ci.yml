@@ -63,6 +63,9 @@ jobs:
       - name: Hugo build
         run: hugo --logLevel error
 
+      - name: Pagefind index
+        run: npx pagefind --site public
+
   # ---------------------------------------------------------------------------
   # Flag PRs that introduce new dependencies with known vulnerabilities or
   # incompatible licenses before they land.

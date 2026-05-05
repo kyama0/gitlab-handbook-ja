@@ -1,5 +1,9 @@
 languageCode: ja
 locale: ja-JP
+# `<html lang="ja">` を出力させるために top-level で defaultContentLanguage
+# を ja に。これがないと Hugo は en にフォールバックして、Pagefind の
+# 自動言語検出 (CJK 用 tokenizer) も英語モードで動作してしまう。
+defaultContentLanguage: ja
 title: GitLab ハンドブック (非公式日本語訳)
 
 # static/robots.txt を真とするため、Hugo の自動生成は無効化する
@@ -20,12 +24,9 @@ params:
   defaultContentLanguage: ja
   locale: ja-JP
   description: GitLab Handbook の非公式日本語訳。正確性については英語の原文を参照してください。
-  # Algolia search is upstream-only. Disable until we run our own index.
-  search:
-    algolia:
-      appId: ""
-      apiKey: ""
-      indexName: ""
+  # 検索は Pagefind (静的サイト用、CJK ネイティブ対応) を使う。
+  # docsy 側の Algolia 連携は使わないので params.search セクションは
+  # 設けない (空でも入ると docsy が algolia 検索 UI を render してしまう)。
   images:
     - images/gitlab-cover.png
   branch: main
@@ -56,11 +57,7 @@ params:
   # (R2 へは scripts/upload-images-r2.ts で同期済み)
   image_base_url: "https://handbook.gitlab.com"
   links:
-    user:
-      - name: "原文 (handbook.gitlab.com)"
-        url: "https://handbook.gitlab.com/"
-        icon: "fa-solid fa-book"
-        desc: "公式英語ハンドブック"
+    user: []
     developer: []
 
 caches:
@@ -74,13 +71,22 @@ staticDir:
 
 menu:
   main:
-    # navbar に翻訳プロジェクトの GitHub リポジトリへのリンクを表示。
+    # navbar の external link 群。params.iconOnly: true を立てたエントリは
+    # layouts/_partials/navbar.html がアイコンのみ render する (テキスト省略)。
     # docsy-gitlab module 側 menu (Changelog, The Handbook) は
-    # layouts/_partials/navbar.html で除外している。
+    # 同 partial で除外している。
+    - weight: 90
+      name: 原文 (handbook.gitlab.com)
+      url: https://handbook.gitlab.com/
+      pre: '<i class="fa-solid fa-book"></i>'
+      params:
+        iconOnly: true
     - weight: 100
       name: GitHub
       url: https://github.com/kyama0/gitlab-handbook-ja
       pre: '<i class="fa-brands fa-github"></i>'
+      params:
+        iconOnly: true
 
 mediaTypes:
   text/netlify:
