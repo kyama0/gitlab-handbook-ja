@@ -39,7 +39,7 @@ stale: false
 | ボード                         | [Lighthouse メトリクス定義ボード](https://gitlab.com/gitlab-data/analytics/-/boards/7148077?label_name%5B%5D=WorkingGroup%3A%3ALighthouseMetric) |
 | 概要 & ステータス              | 以下の[完了基準](#exit-criteria)を参照 |
 
-## 完了基準
+## 完了基準 {#exit-criteria}
 
 これらのゴールは高い水準を設定するための目標であることに注意してください（十分なものを達成できない低い水準を設定するよりも、十分なものを目指して高い水準を設定します）。
 

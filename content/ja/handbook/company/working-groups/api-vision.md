@@ -58,7 +58,7 @@ REST API と GraphQL API の間に一貫したビューがありません。Grap
   - コントリビュータードキュメントのレビュー
   - チームメンバー向け（特に GraphQL について）の学習パスの作成
 
-### 終了基準
+### 終了基準 {#exit-criteria}
 
 以下のテーブルにはワーキンググループのすべての終了基準が記載されています。これが[トップレベルエピック](https://gitlab.com/groups/gitlab-org/-/epics/8638)です。
 

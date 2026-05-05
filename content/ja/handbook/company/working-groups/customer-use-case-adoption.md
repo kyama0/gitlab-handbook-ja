@@ -38,7 +38,7 @@ FY25 の年間目標には CI および Security & Compliance の採用に関す
 | エピック - プライマリ           | [Use Case Adoption Measurement & Improvement](https://gitlab.com/groups/gitlab-com/-/epics/2190) |
 | 概要 & ステータス              | 以下の[終了基準](#exit-criteria)を参照 |
 
-## 終了基準
+## 終了基準 {#exit-criteria}
 
 これらの目標は高い基準を設定するための意欲的なものです（低い基準を設定して達成するよりも、高い基準を設定して達成し甲斐のある何かを実現することを目指します）。
 

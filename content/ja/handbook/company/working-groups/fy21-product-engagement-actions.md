@@ -19,7 +19,7 @@ stale: false
 | Epics/Issues    | [エンゲージメントサーベイ Issue](https://gitlab.com/gitlab-com/Product/-/issues/1986) / [Issue ボード](https://gitlab.com/groups/gitlab-com/-/boards/1453895?scope=all&utf8=%E2%9C%93&label_name[]=Product%20Operations&label_name[]=wg-fy21-engagement-actions) / エンゲージメントアクションアイテム Epic: [1386](https://gitlab.com/groups/gitlab-com/-/epics/1386)  [1387](https://gitlab.com/groups/gitlab-com/-/epics/1387)  [1388](https://gitlab.com/groups/gitlab-com/-/epics/1388) |
 | ラベル           | `~wg-fy21-engagement-actions` |
 
-## 解決すべき問題
+## 解決すべき問題 {#problems-to-solve}
 
 詳細については[プロダクト FY'21 エンゲージメントサーベイの結果](https://gitlab.com/gitlab-com/Product/-/issues/1986)を参照してください。
 
@@ -61,7 +61,7 @@ stale: false
 
 ミーティングは録画され、[Product GDrive](https://drive.google.com/drive/u/0/folders/1IUqmhv6V2CMw51gOsU-JIRQ7eIFjLmll) で利用可能です。ファシリテーターは毎週の同期後に Slack でミーティングのサマリーの一部としてビデオリンクを投稿します。このワーキンググループのテーマと、すべての同期ミーティングで機密性の高い顧客情報が議論される可能性が高いため、プレイリストは非公開であり、GitLab チームメンバーのみがアクセスできます。
 
-## 終了基準
+## 終了基準 {#exit-criteria}
 
 [プロダクト FY'21 エンゲージメントサーベイの結果](https://gitlab.com/gitlab-com/Product/-/issues/1986)で要求されている事項：
 
