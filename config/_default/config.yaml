@@ -2,7 +2,10 @@ languageCode: ja
 locale: ja-JP
 title: GitLab ハンドブック (非公式日本語訳)
 
-enableRobotsTXT: true
+# static/robots.txt を真とするため、Hugo の自動生成は無効化する
+# (enable した場合 docsy が `User-agent: *` だけの最小版を生成して
+# static/robots.txt を上書きしてしまう)
+enableRobotsTXT: false
 enableGitInfo: true
 
 sitemap:
