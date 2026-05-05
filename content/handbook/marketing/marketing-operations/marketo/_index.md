@@ -626,9 +626,7 @@ Marketo セグメンテーションはスマートリストに似ていますが
 [ローカライズされたフッター、ブルーフルフッター - Footer - LOC - Blue](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/ds/snippet/145/overview/details) - これは `View in Web Browser` とローカライズされたブログへの直接リンクを含むフルフッターです。ブルーのフッターを持つメールに使用してください。
 
 
-<details>
-<summary>ローカライズされたメールフッタースニペットの使用方法</summary>
-
+{{% details summary="ローカライズされたメールフッタースニペットの使用方法" %}}
 ローカライズされたメールフッタースニペットをメールで使用するには:
 
 1. 右サイドバーのメールモジュールテンプレートから「Body Text 1 Column」モジュールを選択します。このセクションを既存の購読解除文言の下にドラッグします。
@@ -637,16 +635,13 @@ Marketo セグメンテーションはスマートリストに似ていますが
 1. 既存の購読解除文言を持つモジュールを選択し、ギアをクリックして `Delete` をクリックします。今、購読解除文言/フッターは 1 度だけ表示されるはずです。
 
 スニペットをテストするには、`Preview` をクリックし、`View by: Segmentation` を選択します。「Language Preference」を選択し、プレビューしたい言語を選択します。選択した言語に基づいて購読解除文言が変わるのが確認できます。
-
-</details>
+{{% /details %}}
 
 
 [Trust Logo スニペット](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/ds/snippet/8/overview/details) - このスニペットは、承認された顧客ロゴを表示するために使用されます。通常はサンクスページで使用されますが、ランディングページでも使用できます。スニペットは、ランディングページの `Trust Logos` セクションがオンに切り替えられた時に表示されます。マーケティングオペレーションのみが、カスタマーアドボカシーチームの指示に基づいてこのスニペットを編集できます。
 
 
-<details>
-<summary>MOps 用 - Trust Logo スニペットの編集方法</summary>
-
+{{% details summary="MOps 用 - Trust Logo スニペットの編集方法" %}}
 以下の手順は MOps Admin ユーザー向けです。
 
 1. すべての画像は、黒またはグレースケールで、50px 高 x 110px 幅以下のサイズである必要があります。Canva の[このテンプレート](https://www.canva.com/design/DAFiV-KHYew/OazKFgDLLNOIjnVHaJrpKw/edit?utm_content=DAFiV-KHYew&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)を使用して画像のサイズを変更できます。Marketo は Canva からダウンロードされた .svg ファイルを拒否するため、ファイルを .png として保存するのが最も簡単です。
@@ -658,16 +653,13 @@ Marketo セグメンテーションはスマートリストに似ていますが
 `<a href="INSERT LINK TO CUSTOMER CASE STUDY" target="_blank"> <img src="/images/marketing/marketing-operations/marketo/INSERT LINK FROM DESIGN STUDIO" alt="ENTER NAME OF COMPANY logo" /></a>`
 1. これを HTML の下部にある `</div>` の直前に配置し、指示通りに大文字のテキストを置き換えます。alt テキストはすべて大文字にしないでください。これにより、新しいロゴがリストの末尾に追加されます。別の場所に配置したい場合は、ロゴを表示したい場所にコードを配置します。
 1. コードを更新したら、Apply をクリックします。自動保存が完了したら、スニペットを閉じることができます。次に、ドラフトを承認し、「Update all」を選択します。「Update All」は、すべての承認されたアセットとすべてのドラフトアセットにスニペットを追加します。ドラフトアセットを自動承認することはありません。[ドラフトなしスニペット更新](https://nation.marketo.com/t5/knowledgebase/no-draft-snippet-limitations-and-troubleshooting/ta-p/300799)の詳細は、Marketo ドキュメントで確認できます。
-
-</details>
+{{% /details %}}
 
 
 ### その他のフィールドドキュメントと定義
 
 
-<details>
-<summary>メール検証 - ZoomInfo 接続およびバウンスなどの他の Marketo データポイントによって入力されます。</summary>
-
+{{% details summary="メール検証 - ZoomInfo 接続およびバウンスなどの他の Marketo データポイントによって入力されます。" %}}
 |フィールド名|定義              | 送信可能か?|
 |----------|------------------------|------------|
 |Valid     |実在のアドレスとして検証済み| はい |
@@ -675,8 +667,7 @@ Marketo セグメンテーションはスマートリストに似ていますが
 |Disposable|一時的な使い捨てアドレス    | いいえ|
 |Accept all (Unverifiable)| ドメイン全体の設定（詳細は説明を参照）| はい/いいえ|
 |Unknown   |サーバーに到達できない| いいえ|
-
-</details>
+{{% /details %}}
 
 
 ### アカウントベースドマーケティングリスト

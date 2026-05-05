@@ -102,10 +102,7 @@ GitLab の UX チームとデザインチームがリモートでどのように
 ### 人員計画
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/xt5cxXBv1-A" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "xt5cxXBv1-A" >}}
 
 
 *上記の [GitLab Unfiltered](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7QUX-Ux5fOunQotqJbECc) 動画では、GitLab のリモート担当部長 Darren M. が、リモートコラボレーションプラットフォーム [CoScreen](https://www.coscreen.co/) の作成者 Till P. とリモートチームコラボレーションについて話し合っています。*

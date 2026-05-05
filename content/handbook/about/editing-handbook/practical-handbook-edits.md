@@ -103,10 +103,7 @@ gsed -i 's,<searchtext>,<replacementtext>,g' file.md
 ## コンテンツの検索と置換の方法
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/lWBkNqxPxw8" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "lWBkNqxPxw8" >}}
 
 
 単語、フレーズ、またはリンクのすべてのインスタンスを見つける必要があり、ハンドブックのオンライン検索フィールドで検索するのが面倒で正確な結果を返さないことがあります。コードエディタとターミナルを使用すると、コンテンツを簡単かつ素早く検索および置換できます。
@@ -248,8 +245,5 @@ find content/handbook -type f -name '*.md' -exec sh -c "sed -i 's/[ \t]*$//' "$1
 1. `Add comment now` をクリックし、提案を適用します
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/Kfdf2VAk9sM" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "Kfdf2VAk9sM" >}}
 

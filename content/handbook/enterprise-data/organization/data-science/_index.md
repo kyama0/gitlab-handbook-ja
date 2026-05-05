@@ -17,13 +17,9 @@ stale: false
 GitLab では[ハンドブックファースト](/handbook/about/handbook-usage/#why-handbook-first)を実践しており、データサイエンスチームのページが目標・プロセス・プロジェクトに関する最新かつ正確な情報で更新された状態を維持することでこの考え方を推進しています。また、有益なリソースやデータサイエンスのツールセットもハンドブックに最新の状態で掲載するよう努めています。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">詳しく知りたい方へ</p>
-
+{{% alert title="詳しく知りたい方へ" %}}
 [Slack の #data-science にアクセスする](https://gitlab.slack.com/archives/C01AJB3KJRZ)、[Data Team の動画を視聴する](https://www.youtube.com/playlist?list=PL05JrBw4t0KrRVTZY33WEHv8SjlA_-keI)。ご意見をお聞かせください！
-
-</div>
+{{% /alert %}}
 
 
 ## データサイエンスの責務

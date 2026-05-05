@@ -228,10 +228,7 @@ GitLab における他のメンタリングリソースは[ハンドブックの
 セッション 3：
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/pR-WPq4uH5o" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "pR-WPq4uH5o" >}}
 
 
 [セッション 1](https://www.youtube.com/embed/cuRT7nUU10Q) と [セッション 2](https://www.youtube.com/embed/sY57W3xbLJU) は GitLab Unfiltered YouTube チャンネルでご覧いただけます。

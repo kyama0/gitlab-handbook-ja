@@ -231,9 +231,7 @@ sequenceDiagram
 
 #### GitLab CI コンポーネント
 
-<details>
-<summary>出所署名コンポーネント</summary>
-
+{{% details summary="出所署名コンポーネント" %}}
 出所署名コンポーネントは、出所の生成と署名の複雑さを抽象化します。テンプレート YAML ファイルを使用した GitLab CI コンポーネントとして実装されます。
 
 **コンポーネントの概要**
@@ -300,12 +298,9 @@ component:
       - ${BUNDLE_FILE}
     expire_in: 7d
 ```
+{{% /details %}}
 
-</details>
-
-<details>
-<summary>出所検証コンポーネント</summary>
-
+{{% details summary="出所検証コンポーネント" %}}
 出所検証コンポーネントは証明を検証し、VSA を生成します。テンプレート YAML ファイルを使用した GitLab CI コンポーネントとして実装されます。
 
 **コンポーネントの概要**
@@ -449,12 +444,9 @@ component:
 
   allow_failure: true
 ```
+{{% /details %}}
 
-</details>
-
-<details>
-<summary>例: パイプラインへのコンポーネントの追加</summary>
-
+{{% details summary="例: パイプラインへのコンポーネントの追加" %}}
 プロジェクトが再利用可能なコンポーネントを .gitlab-ci.yml パイプラインに統合する方法を示します。
 
 パイプライン YAML の例
@@ -515,8 +507,7 @@ verify_provenance:
     RESOURCE_URL: "${ARTIFACT_URL}"
     POLICY_URL: "https://gitlab.com/my-policy"
 ```
-
-</details>
+{{% /details %}}
 
 #### パイプラインワークフローの説明
 

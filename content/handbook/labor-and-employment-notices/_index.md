@@ -12,9 +12,7 @@ stale: false
 GitLabは[オールリモート](/handbook/company/culture/all-remote/)の会社であるため、重要な労働・雇用に関する通知を掲示する物理的な職場や休憩室がありません。このページはその代替となるものです。
 
 
-<details>
-<summary>GitLab, Inc. & GitLab Federal LLC</summary>
-
+{{% details summary="GitLab, Inc. & GitLab Federal LLC" %}}
 ### アラバマ州
 
 - [Child Labor Law](https://labor.alabama.gov/docs/posters/childlaborlawposter_english.pdf)
@@ -693,14 +691,11 @@ GitLabは[オールリモート](/handbook/company/culture/all-remote/)の会社
 ### USERRAに基づくあなたの権利
 
 - [Your Rights Under the Uniformed Services Employment and Reemployment Rights Act](https://www.dol.gov/sites/dolgov/files/VETS/files/USERRA-Poster.pdf)
-
-</details>
-
+{{% /details %}}
 
 
-<details>
-<summary>GitLab Canada Corp.</summary>
 
+{{% details summary="GitLab Canada Corp." %}}
 ### オンタリオ州
 
 - [Employment Standards in Ontario](https://files.ontario.ca/mltsd-employment-standards-poster-en-2020-09-08.pdf)
@@ -721,14 +716,11 @@ GitLabは[オールリモート](/handbook/company/culture/all-remote/)の会社
 ### マニトバ州
 
 - [Safe Work Manitoba](https://www.safemanitoba.com/Page%20Related%20Documents/resources/Poster_Everyones%20Responsibility%20Triangle%20Poster_SWMB15.pdf)
-
-</details>
-
+{{% /details %}}
 
 
-<details>
-<summary>GitLab BV</summary>
 
+{{% details summary="GitLab BV" %}}
 ### オランダ
 
 - [European Agency for Safety and Health at Work - Netherlands](https://osha.europa.eu/en/about-eu-osha/national-focal-points/netherlands)
@@ -739,18 +731,14 @@ GitLabは[オールリモート](/handbook/company/culture/all-remote/)の会社
 
 - [Mehiläinen Occupational Health Service Provider](https://drive.google.com/file/d/19_K1NZHqXXrYrY0Nt5LDWxTKBT3iA7o7/view?usp=sharing)
 - [OmaMehiläinen mobile application and online service.](https://drive.google.com/file/d/1Uev0iTR-gDHpFYgYdBr6PH-UWvcCyJkh/view?usp=sharing)
-
-</details>
-
+{{% /details %}}
 
 
-<details>
-<summary>GitLab GmbH</summary>
 
+{{% details summary="GitLab GmbH" %}}
 ### ドイツ
 
 - [European Agency for Safety and Health at Work](https://osha.europa.eu/en)
 - [Working Hours Act](https://www.gesetze-im-internet.de/arbzg/index.html)
-
-</details>
+{{% /details %}}
 

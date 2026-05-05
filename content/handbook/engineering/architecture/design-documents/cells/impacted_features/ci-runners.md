@@ -11,11 +11,9 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 このドキュメントは作業中であり、Cells 設計の非常に初期の状態を表しています。重要な側面は文書化されていませんが、将来追加する予定です。これは Cells のアーキテクチャの 1 つの可能性であり、実装するアプローチを決定する前に代替案と比較検討する予定です。このアプローチを実装しないと決定した場合でも、このアプローチを選択しなかった理由を文書化できるよう、このドキュメントは保持されます。
-
-</div>
+{{% /alert %}}
 
 
 GitLab は [GitLab Runner](https://gitlab.com/gitlab-org/gitlab-runner/) を通じて CI ジョブを実行します。これは多くの場合、顧客のインフラストラクチャで管理されています。

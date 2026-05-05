@@ -95,27 +95,11 @@ stale: false
 対面ミーティングを適切に運営するためのアドバイスの多くは、いくつかの注目すべき違いはありますが、リモートミーティングにも当てはまります。
 
 
-<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 my-4">
-
-
-<div class="border border-gray-200 rounded overflow-hidden">
-
-<div class="px-3 py-2">
-
+{{< cardpane >}}
+{{% card footer="どうしてもミーティングを開く必要があるなら、せめて楽しいものにしましょう！" %}}
 ![GitLab marketing team Show & Tell social call](/images/all-remote/gitlab-zoom-meeting-hat-filter.jpg)
-
-</div>
-
-<div class="bg-gray-50 px-3 py-2 text-sm text-gray-700 border-t border-gray-200">
-
-どうしてもミーティングを開く必要があるなら、せめて楽しいものにしましょう！
-
-</div>
-
-</div>
-
-
-</div>
+{{% /card %}}
+{{< /cardpane >}}
 
 
 ### 1. ミーティングへの出席をオプションにする

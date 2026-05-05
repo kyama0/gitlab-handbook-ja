@@ -299,12 +299,7 @@ GitLab の全体的な[コミュニケーションガイドライン](/handbook/
 - `/weight` - 1〜5 の重み付けを追加します。1 が最も簡単（1〜4 時間程度の時間）、5 が最も複雑（1 週間分の作業）です。Issue の大部分は 1〜2 に該当するはずです。見積もりが weight 3 以上の場合は、マイルストーンに収まるより管理しやすい部分のために別々の Issue に分割します。（例: `/weight 1`）
 - `/epic` - 物事を整理するために、包括的なキャンペーンまたはプロジェクトのエピックを追加します。ほとんどすべての場合、Issue が関連する大規模なイニシアチブがあるため、可視性のために最も関連性のあるエピックに Issue を関連付けるのがベストプラクティスです。（例: `/epic [https://gitlab.com/groups/gitlab-com/marketing/-/epics/370](https://gitlab.com/groups/gitlab-com/marketing/-/epics/370)`）
 
-<details>
-
-<summary>
-インテイクプロセス日次／週次の手順（廃止）
-</summary>
-
+{{% details summary="インテイクプロセス日次／週次の手順（廃止）" %}}
 チームマネージャーは、[トリアージ中の Issue](https://gitlab.com/groups/gitlab-com/-/boards/1919630?&label_name%5B%5D=Marketing%20Programs) を毎日レビューし、以下の基準を評価します:
 
 - `Submitter Checklist` のすべての詳細が、作業を開始するのに十分に完了しているか？
@@ -312,14 +307,9 @@ GitLab の全体的な[コミュニケーションガイドライン](/handbook/
   - いいえの場合、リクエスターにコメントし、`mktg-status::blocked` に移動します
 - リクエストは FY21-22 セグメントマーケティング計画に整合しているか？
   - いいえの場合、優先順位を考慮した現実的なタイムラインを検討します（コメントでリクエスターと共有し、必要であれば議論する時間を設定する）
+{{% /details %}}
 
-</details>
-
-<details>
-<summary>
-プロジェクト管理用の Issue コメントショートカット（廃止）
-</summary>
-
+{{% details summary="プロジェクト管理用の Issue コメントショートカット（廃止）" %}}
 **チームメンバーがバックログから Issue を取り上げる際:**
 
 ```text
@@ -329,8 +319,7 @@ GitLab の全体的な[コミュニケーションガイドライン](/handbook/
 ```
 
 これにより、ステータスが wip（作業中）に変更され、迅速な割り当てが可能になり、適切なマイルストーンに追加されます。
-
-</details>
+{{% /details %}}
 
 ### マイルストーン {#milestones}
 

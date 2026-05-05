@@ -9,13 +9,9 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">これは管理されたハンドブックページです</p>
-
+{{% alert title="これは管理されたハンドブックページです" %}}
 GitLab のコンプライアンス義務に沿って、変更はコードオーナーによって承認またはマージされる必要があります。すべての貢献を歓迎し、奨励しています。
-
-</div>
+{{% /alert %}}
 
 
 ## GitLab における内部告発

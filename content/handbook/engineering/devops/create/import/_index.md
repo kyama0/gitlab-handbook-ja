@@ -202,9 +202,7 @@ Import グループでは、これらのガイドラインに加えて以下の 
 
 レビュー後、計画 Issue にサマリーと作成した Issue へのリンクを含むコメントを残してください。EM にタグ付けして注意を促してください。
 
-<details>
-<summary>推奨プロンプト</summary>
-
+{{% details summary="推奨プロンプト" %}}
 `[START_DATE]` を依存関係が最後に確認された日付に置き換えてください。
 
 ```text
@@ -247,8 +245,7 @@ Then, for each importer, list:
 
 If no actionable changes are found, confirm that and note the date range you checked.
 ```
-
-</details>
+{{% /details %}}
 
 ### セキュリティとの連携
 

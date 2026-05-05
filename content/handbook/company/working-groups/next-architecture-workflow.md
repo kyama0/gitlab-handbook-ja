@@ -47,10 +47,7 @@ stale: false
 以下は、[Rate Limit Architecture](/handbook/company/working-groups/rate-limit-architecture/)ワーキンググループの録画で、ワーキンググループ終了後に成功した実装につながる終了基準を再定義しようとする中で、このトピックに関する有機的な議論が含まれています:
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/um9deEVp618?start=1961" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "um9deEVp618?start=1961" >}}
 
 
 > *注:* この動画はプライベートです。埋め込み動画が再生できない場合は[こちらのリンク](https://www.youtube.com/watch?v=um9deEVp618&t=1961s)をお試しください。

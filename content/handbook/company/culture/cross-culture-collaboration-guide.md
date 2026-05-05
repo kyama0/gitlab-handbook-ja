@@ -81,10 +81,7 @@ GitLabのすべてのチームメンバーの責任は[価値観](/handbook/valu
 2022年3月23日にGitLabチームメンバーとともに開催された異文化コミュニケーションに関するパネルディスカッションを以下でお聴きください。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/XS4H_hVLF7o" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "XS4H_hVLF7o" >}}
 
 
 **セッションの主要ポイント**

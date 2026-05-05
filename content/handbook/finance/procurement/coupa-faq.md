@@ -107,22 +107,10 @@ stale: false
   - [https://supplier.coupa.com/help/remit-to-improvements](https://supplier.coupa.com/help/remit-to-improvements)
 
 
-<div class="my-4 border border-sky-300 rounded overflow-hidden">
-
-<div class="bg-sky-100 text-sky-900 px-4 py-2 font-semibold border-b border-sky-300">
-
-**重要なご注意**
-
-</div>
-
-<div class="px-4 py-3">
-
+{{% panel header="**重要なご注意**" header-bg="info" %}}
 - Remit-To アドレスを入力する際は特殊文字を使用しないでください。
 - 銀行口座の通貨は請求書の通貨と一致している必要があります。
-
-</div>
-
-</div>
+{{% /panel %}}
 
 
 Remit-To アカウントの設定に問題がある場合は、Coupa サポートチーム（supplier@coupa.com）にメールでご連絡ください。

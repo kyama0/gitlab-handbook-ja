@@ -75,9 +75,7 @@ Okta から Snowflake にログインしてください。
 
 #### 1. テーブルサイズ（出発点）
 
-<details>
-<summary>クリックして展開</summary>
-
+{{% details summary="クリックして展開" %}}
 テーブルレコード数に基づいた開始ウェアハウスサイズについては上記のマークダウンテーブルを参照してください。
 
 **常にテーブルサイズを最初に確認してください:**
@@ -85,14 +83,11 @@ Okta から Snowflake にログインしてください。
 ```sql
 SELECT COUNT(*) FROM your_table;
 ```
-
-</details>
+{{% /details %}}
 
 #### 2. フィルターの選択性（小さいままでいられるか？）
 
-<details>
-<summary>クリックして展開</summary>
-
+{{% details summary="クリックして展開" %}}
 ##### 時間範囲フィルター（最も強力）
 
 時間ベースの述語は時系列データに対して通常最も選択的です:
@@ -108,27 +103,21 @@ SELECT COUNT(*) FROM your_table;
 - **クラスタリングキーフィルター**（例: `behavior_at`）: テーブルクラスタリングと整合している場合に最も効果的
 
 **ヒント:** 完全な結果セットのマテリアライゼーションを避けるために開発中は `LIMIT` 句を追加してください。
-
-</details>
+{{% /details %}}
 
 #### 3. クエリの複雑さ（より多くのパワーが必要か？）
 
-<details>
-<summary>クリックして展開</summary>
-
+{{% details summary="クリックして展開" %}}
 - **シンプルなスキャン**: フィルター + 集計 → 推奨サイズに留まる
 - **重い操作**: 大きな JOIN、ウィンドウ関数、複雑な集計 → **1レベルアップ**
 - **マルチテーブル JOIN**: 特にフィルタリングされていないディメンションとの場合 → **1-2レベルアップ**
-
-</details>
+{{% /details %}}
 
 ### 実例: `mart_behavior_structured_event`
 
 これらの例は、最大テーブルの1つでも `XS` で十分な場合があることを示しています:
 
-<details>
-<summary>例 1: XS で十分（狭い時間範囲の場合）</summary>
-
+{{% details summary="例 1: XS で十分（狭い時間範囲の場合）" %}}
 ```sql
 -- 51 seconds on DEV_XS
 -- No LIMIT, but highly filtered time range (3 days)
@@ -140,12 +129,9 @@ WHERE BEHAVIOR_AT BETWEEN '2025-01-01' AND '2025-01-03'
 ```
 
 **XS で機能する理由:** 3日間の時間ウィンドウ + 特定の event_action = 小さなスキャン
+{{% /details %}}
 
-</details>
-
-<details>
-<summary>例 2: XS が許容範囲（集計、2週間範囲）</summary>
-
+{{% details summary="例 2: XS が許容範囲（集計、2週間範囲）" %}}
 ```sql
 -- 49 seconds on DEV_XS
 -- Aggregation with moderate time range
@@ -160,12 +146,9 @@ ORDER BY ct DESC;
 ```
 
 **XS で機能する理由:** 集計により結果セットが削減され、2週間のウィンドウは管理可能
+{{% /details %}}
 
-</details>
-
-<details>
-<summary>例 3: M が必要（大きな JOIN + 広い範囲）</summary>
-
+{{% details summary="例 3: M が必要（大きな JOIN + 広い範囲）" %}}
 ```sql
 -- 71 seconds on DEV_M
 -- Joins 2TB fact table (filtered) with 260GB dimension (unfiltered)
@@ -179,8 +162,7 @@ LIMIT 10000;
 ```
 
 **M が必要な理由:** 大きな JOIN + フィルタリングされていないディメンションでより多くのメモリが必要
-
-</details>
+{{% /details %}}
 
 ## VS Code の Snowflake 拡張機能
 

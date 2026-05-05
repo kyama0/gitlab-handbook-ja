@@ -69,9 +69,7 @@ graph TD
 効果的なコーチはコーチング会話を可能にするための特定のスキルセットを使用します。これらのスキルには次のものが含まれます。
 
 
-<details>
-<summary>質問する</summary>
-
+{{% details summary="質問する" %}}
 強力でオープンエンドな質問をすることです。コーチングは教えることではなく、尋ねることから来ており、チームメンバーが自分の解決策を生み出せるよう支援します。コーチングは個人から洞察を「引き出す」ことを目的としています。
 
 **質問の組み立て方**
@@ -88,14 +86,11 @@ graph TD
 - なぜという質問 - これはコーチーを防御的にさせ、コーチからの学習を妨げる可能性がある。
 - 質問の形を取った誘導質問、発言、意見。これはコーチーを自分が行くべきと思う場所に向けるものですが、コーチーは自分の結論に達したときにより行動にコミットします。
 - 古くなった質問 - セッションの開始時に考えたが、もはや関連性がなくなった質問をすることを避ける（もし質問するための適切なタイミングを待っていることに気づいたら、もう聴いていないサインかもしれません）。
-
-</details>
-
+{{% /details %}}
 
 
-<details>
-<summary>聴く</summary>
 
+{{% details summary="聴く" %}}
 聴くことはオープンさと好奇心を可能にします。また、コーチーに完全に存在していることを伝えます。優れた質問をするためには、完全に聴く必要があります。
 
 **コーチのように聴く**
@@ -120,14 +115,11 @@ graph TD
 - 盲点
 - 個人の価値観と何が最も重要か
 - ポーズと沈黙
-
-</details>
-
+{{% /details %}}
 
 
-<details>
-<summary>励ます</summary>
 
+{{% details summary="励ます" %}}
 コーチーの強みを特定して信頼を構築し、情熱を示して励ます。オープンになり、個々のチームメンバーの強みを基盤にしましょう。気づいたことを振り返り、コーチーへの影響を判断して[フィードバック](/handbook/people-group/guidance-on-feedback/)が届いているかを確認します。
 
 **いつ励ますか**
@@ -142,14 +134,11 @@ graph TD
 - 承認する：コーチーに焦点を当てる - 人として誰であるか、生活の中で何を成し遂げたか、内なる性格。コーチーに独自性を感じさせ、際立たせているものを認識していることを伝える。
 - 感謝する：他者への行為の肯定的な影響と貢献に焦点を当てる。
 - 称賛する：行為に焦点を当てる - 人々が行うこと - [成果](/handbook/values/#results)、[透明性](/handbook/values/#transparency)、[効率](/handbook/values/#efficiency)、[インクルージョン](/handbook/company/culture/inclusion/)、パフォーマンス。
-
-</details>
-
+{{% /details %}}
 
 
-<details>
-<summary>挑戦する</summary>
 
+{{% details summary="挑戦する" %}}
 コーチーにコンフォートゾーンを超え、バーを上げ、より大きな役割を担うよう挑戦しましょう。コーチとしての役割は、何が可能かというより大きな絵を描くことです。優れた挑戦はコーチーにコンフォートゾーンの限界を検討し、それを超えるよう刺激します。
 
 **いつ挑戦するか**
@@ -157,14 +146,11 @@ graph TD
 - コーチーがコンフォートゾーンにとどまっていたり、長すぎるほど安全策を取っていたとき。
 - 速いペースで動き、挑戦を楽しむコーチー。
 - コーチーの自己信頼を高め、何が可能かという認識を広げるために。
-
-</details>
-
+{{% /details %}}
 
 
-<details>
-<summary>存在する</summary>
 
+{{% details summary="存在する" %}}
 判断なしに相手に集中します。コーチーに完全な注意を向けましょう。バーチャルコーチングセッション中は他のプログラムを閉じてください。何が機能しているか、何が機能していないかを特定することで、オープンで好奇心旺盛になりましょう。身体的、精神的、感情的に本当に存在しましょう。
 
 **存在するための戦略**
@@ -174,8 +160,7 @@ graph TD
 - オープンで好奇心旺盛で感謝的なマインドセットに自分を根付かせる。
 - コーチー、自己、コーチングプロセスについて何か感謝できることを探す。
 - コーチング会話への自分の意図に自分を根付かせる。
-
-</details>
+{{% /details %}}
 
 
 ### 異なる会話への異なる帽子
@@ -362,17 +347,13 @@ Manager Challenge Pilot の第2週に、[信頼の構築](/handbook/leadership/b
 2回のセッションのうち最初の録画はこちらです。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/jvjBgC3Bi2s" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "jvjBgC3Bi2s" >}}
 
 
 ### コーチングへの入門
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/9qUlp8LrduM" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "9qUlp8LrduM" >}}
 
 
 2020年12月3日に、50分間のコーチングへの入門[ライブラーニング](/handbook/people-group/learning-and-development/#learning-delivery-methods---definitions)セッションを開催しました。録画は[スライドデッキ](https://docs.google.com/presentation/d/1jOAZQkIJq9iU7ho6a09AOANKJs7W7IwnbVYBIlX9kmk/edit?usp=sharing)と[アジェンダ](https://docs.google.com/document/d/1UIyIeyCcWCtNcOR2Wz5jvbSdKHI2OanLoM-WR7Gtknw/edit?usp=sharing)に沿っています。

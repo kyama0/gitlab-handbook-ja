@@ -9,11 +9,9 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 本決定はコード補完リクエストに限定されます。コード補完リクエストは、[コード提案リクエスト](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/index.html) の一種です。
-
-</div>
+{{% /alert %}}
 
 
 ## 概要

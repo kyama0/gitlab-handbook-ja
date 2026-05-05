@@ -8,13 +8,9 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">プロセス廃止 - 1月5日付で有効</p>
-
+{{% alert title="プロセス廃止 - 1月5日付で有効" %}}
 開発エスカレーションプロセスは1月5日付で廃止されました。専門家サポートには**Tier 2 オンコールプログラム**をご利用ください。
-
-</div>
+{{% /alert %}}
 
 
 ## プロセス変更

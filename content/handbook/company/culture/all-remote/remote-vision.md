@@ -13,10 +13,7 @@ stale: false
 ---
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/_HhlqwJsNyM" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "_HhlqwJsNyM" >}}
 
 
 *上記の[GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A)動画では、Darren（GitLab）とAnna-Karin（Because Mondays）がリモートワーク、企業のリモート移行、非同期での作業、デフォルトのドキュメント化に関する多くの課題と解決策について議論しています。*
@@ -48,10 +45,7 @@ stale: false
 これらの影響はオールリモート企業だけに見られるわけではありません。実際、大規模なキャンパスを持つ一部の組織では、従業員は別の建物に行くのに10分かかる代わりに、日常的にビデオ通話を行うことがあります。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/eIs71f5IEUU?start=468" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "eIs71f5IEUU?start=468" >}}
 
 
 *上記の[Stuart Miniman](https://twitter.com/stu)（[theCUBE](https://www.thecube.net)）との[インタビュー](https://youtu.be/eIs71f5IEUU)では、GitLabの共同創業者Sid Sijbrandijが100%リモート組織で運営することのメリットと、なぜそれが仕事の未来だと信じているかについて語っています。*

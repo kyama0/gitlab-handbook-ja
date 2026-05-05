@@ -78,10 +78,7 @@ GitLabの[リモートチームソリューションページ](/handbook/company
 リモート企業の管理は、あらゆる企業の管理によく似ています。それは**信頼、コミュニケーション、共有された目標への会社全体のサポート**に帰着します。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/R0AB8ZvnEIU" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "R0AB8ZvnEIU" >}}
 
 
 *上記の[動画](https://youtu.be/IU2nTj6NSlQ)では、GitLabのHead of Remoteが[Lattice](https://lattice.com)のCEO、[Jack Altman](https://twitter.com/jaltma)と共に、在宅勤務を強いられた従業員と雇用主向けのトップヒントを共有しています。GitLabの[Remote Workプレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7QUX-Ux5fOunQotqJbECc)で詳しく見てください。*

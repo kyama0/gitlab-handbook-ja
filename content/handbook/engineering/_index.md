@@ -136,13 +136,9 @@ GitLab のエンジニアリング文化は、すべて [GitLab Values](/handboo
 ### 休暇の取得
 
 
-<div class="my-4 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-blue-700">Note:</p>
-
+{{% note %}}
 このプロセスは、隣接する祝日 (週末を除く) を含む 5 営業日連続以上の PTO に対して期待されます。5 営業日未満の PTO の場合 (5 営業日未満の PTO ブロックが複数あり、間に数営業日が挟まれているケースを含む)、coverage Issue は必要ありませんが、特にチームの継続性と個人の柔軟性のバランスを取るのに役立つ場合は、任意の長さの PTO に対して coverage Issue を提出できます。
-
-</div>
+{{% /note %}}
 
 
 ビジネスの継続性を確保し、コミットメントを実現するため、エンジニアリング部門は PTO Coverage Issue Process を採用しています。このようなプロセスは GitLab で既に正式化されており (例: [PM Coverage Issue](/handbook/product/product-management/product-manager-role/#creating-a-pm-coverage-issue))、エンジニアリング内の一部のチームでは管理職以上のレベルで定期的に実施されています。これにより、チームの残りに悪影響を与えることなく、休暇を通じてチームメンバーのウェルビーイングをサポートし続けることができます。

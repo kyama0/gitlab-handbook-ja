@@ -11,15 +11,11 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">廃止</p>
-
+{{% alert title="廃止" %}}
 この ADR は廃止され、[ADR 024: Use Backup and Restore for Disaster Recovery](024_disaster_recovery_cells.md) によって置き換えられました。
 
 ディザスタリカバリーに Geo を使用するという決定は、Cells の隔離モデルにより整合し、リージョナルなリカバリーに対してより柔軟性を提供するバックアップとリストア戦略によって取って代わられました。現在のアプローチについては ADR 024 を参照してください。
-
-</div>
+{{% /alert %}}
 
 
 ## 背景

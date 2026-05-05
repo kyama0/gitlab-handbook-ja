@@ -12,23 +12,11 @@ stale: false
 環境の Terraform 設定は [`config-mgmt`](https://ops.gitlab.net/gitlab-com/gl-infra/config-mgmt/-/tree/main/environments) にあります。
 
 
-<div class="my-4 border border-sky-300 rounded overflow-hidden">
-
-<div class="bg-sky-100 text-sky-900 px-4 py-2 font-semibold border-b border-sky-300">
-
-**インフラストラクチャ標準に関する今後のイテレーション**
-
-</div>
-
-<div class="px-4 py-3">
-
+{{% panel header="**インフラストラクチャ標準に関する今後のイテレーション**" header-bg="info" %}}
 会社全体のインフラストラクチャ標準についてイテレーションを行う WIP イニシアチブがあります。詳しくは <a href="/handbook/infrastructure-standards">インフラストラクチャ標準ハンドブックページ</a> をご覧ください。
 
 このページは、標準が文書化され、実装され、環境への変更が行われるにつれて段階的にリファクタリングされます。
-
-</div>
-
-</div>
+{{% /panel %}}
 
 
 ### 開発

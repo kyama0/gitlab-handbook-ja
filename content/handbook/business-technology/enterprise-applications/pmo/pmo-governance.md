@@ -57,11 +57,9 @@ stale: false
 ビジネス要件書（BRD）は、新しいプログラムを開始するために、プログラム DRI がビジネスリードと共同で最初に作成するドキュメントです。BRD は、なぜそのプログラムが実施されるかを説明し、成功のために新しいプログラムが必要とするすべての詳細を記載したレポートで、ステークホルダーに明確さとコンテキストを提供します。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 [ビジネス要件書（BRD）テンプレート](https://docs.google.com/document/d/1qKqFLqgolDPXImhJL7iq4yu2A52iv0Te1ho5q3UBEVg/edit)
-
-</div>
+{{% /alert %}}
 
 
 ### プログラムチャーター
@@ -98,11 +96,9 @@ SMART（具体的、測定可能、達成可能、関連性のある、時間的
 すべてのプログラムには成功指標が必要です。これらの指標は、収益の増加またはコスト削減に役立つ効率の向上のいずれかを示すものでなければなりません。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 [プロジェクトキックオフテンプレート](https://docs.google.com/presentation/d/1p04S-TpitASMmdLn1fhKB4KewDr0-y9twP52Cel1oIo/edit#slide=id.p1)
-
-</div>
+{{% /alert %}}
 
 
 ### ステアリングコミッティ
@@ -110,11 +106,9 @@ SMART（具体的、測定可能、達成可能、関連性のある、時間的
 プログラムチャーターの一環として、経営陣によるステアリングコミッティを指名する必要があります。これには、スポンサーとなるビジネス組織の経営幹部と IT の経営幹部が含まれる必要があります。例えば、私たちの経費管理プログラムでは、VP IT、VP コントローラー、VP フィールドオペレーションを含むステアリングコミッティを設立しました。このステアリングコミッティにより、有効化とフロントオフィス、バックオフィス、および IT の経営幹部をカバーしています。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 [ステアリングコミッティミーティングテンプレート](https://docs.google.com/presentation/d/1hKXH1WA9W-1_l66kwDV-rzoisdJ1z04tm15fHlHkOUs/edit#slide=id.p1)
-
-</div>
+{{% /alert %}}
 
 
 ### コアチーム
@@ -130,11 +124,9 @@ SMART（具体的、測定可能、達成可能、関連性のある、時間的
 大規模プログラムについては、Rolly からの情報に基づき、IT プログラムマネージャーがプログラムチーム全体に共有するステータスレポートを作成することがあります。このレポートは、週次プログラムステータスミーティング中にレビューされることが多いです。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 [ステータスレポートテンプレート](https://docs.google.com/presentation/d/1FvtL0MHftG33b-6eKO1sVx3vPFKu0DaeVp-GGbLdpcs/edit#slide=id.p1)
-
-</div>
+{{% /alert %}}
 
 
 #### Geekbot
@@ -159,11 +151,9 @@ IT プログラムマネージャーは、[Geekbot](https://geekbot.com/) を使
 小さな増分でプログラムを提供できるよう、スプリントが定義された明確なプログラムタイムラインが必要です。主要な要件期限、成果物のマイルストーン、テストタイムラインについて、全員が明確に把握できるようにする必要があります。プログラムタイムラインでは、会社の休日、有効化の時間を考慮し、複雑な要件に対して追加の時間を設けることも検討してください（必要な場合）。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 IT PMO チームは、各プログラムの進捗を追跡するために [GitLab ロードマップ](https://docs.gitlab.com/ee/user/group/roadmap/#roadmap)機能を使用しています。
-
-</div>
+{{% /alert %}}
 
 
 ### データモデルの明確なドキュメント
@@ -219,11 +209,9 @@ IT PMO チームは、各プログラムの進捗を追跡するために [GitLa
 - 有効化計画のドキュメントと、変更が変更されたシステムのユーザーに効果的に伝達されたことを示す。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 [SOX コンプライアンステンプレート](https://gitlab.com/gitlab-com/business-technology/enterprise-apps/intake/-/issues/772)
-
-</div>
+{{% /alert %}}
 
 
 ### 有効化計画

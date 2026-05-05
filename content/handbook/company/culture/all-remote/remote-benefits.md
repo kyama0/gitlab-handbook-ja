@@ -32,10 +32,7 @@ stale: false
 [リモートとハイブリッドチームの10のモデルについて詳しく読む](stages/)。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/Xw-31PZkHOo" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "Xw-31PZkHOo" >}}
 
 
 この[動画](https://www.youtube.com/watch?v=Xw-31PZkHOo)では、GitLabのグローバルピープルオペレーションディレクター[Carol Teskey](https://gitlab.com/cteskey)が、オールリモートの多くのメリットと、それに伴う競争上の優位性について見解を共有しています。
@@ -52,10 +49,7 @@ stale: false
 [Google](https://web.archive.org/web/20191123234200/https://www.forbes.com/sites/abdullahimuhammed/2019/05/18/5-important-takeaways-from-googles-two-year-study-of-remote-work/)、[Buffer](https://buffer.com/state-of-remote-work/2019)、[FlexJobs](https://www.prweb.com/releases/global-workplace-analytics-amp-flexjobs-report-159-percent-increase-in-remote-work-since-2005-863776940.html)、[IWG](https://assets.regus.com/pdfs/iwg-workplace-survey/iwg-workplace-survey-2019.pdf)などの多数の研究によると、自律性と柔軟性を高く評価する意欲的な個人は、オールリモート環境で新たなレベルの喜びと生産性を経験できることが示されています。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/tTQAU78QSt8" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "tTQAU78QSt8" >}}
 
 
 *上記の[GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A)動画では、2人のGitLab同僚がオールリモートのメリットについて議論しています。様々な場所に友人や家族がいる人にとって、チームメンバーは有給休暇日数を数える心配なしに、大切な人たちとの時間を過ごし、関係に投資できます。*
@@ -132,10 +126,7 @@ stale: false
 ### 世界にとってのメリット
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/BC7Prkm3v3g" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "BC7Prkm3v3g" >}}
 
 
 *上記の[GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A)動画では、2人のGitLab同僚が友人、家族、コミュニティの近くにある生活コストの低い環境に住むメリットについて議論しています。*

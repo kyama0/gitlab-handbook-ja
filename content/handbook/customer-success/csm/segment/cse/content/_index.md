@@ -75,11 +75,7 @@ CSE コンテンツチームの主な目標は次のとおりです:
 | [Tearyne Almendariz](/handbook/company/team/#talmendariz) <br/> コンテンツアーキテクト | 四半期計画/バックログ管理、コンテンツ作成（デモ以外）、コンテンツオペレーション |
 | [James Wormwell](/handbook/company/team/#jwormwell) <br/> デモアーキテクト | コンテンツ作成（デモ）、デモ/ラボコンテンツ作成、デモオペレーション、デモアセットのメンテナンス |
 
-<details>
-<summary>
-    責任の詳細
-</summary>
-
+{{% details summary="責任の詳細" %}}
 ---
 
 > **注**: 以下の RACI チャートは、各 `責任` 領域においてコンテンツ作成のステークホルダーがどのように連携するかを理解するために使用できます。チームの進化と成熟に合わせて継続的に更新されます。
@@ -99,8 +95,7 @@ CSE コンテンツチームの主な目標は次のとおりです:
 | **コンテンツオペレーション**: GLU カレンダー（Thought Industries）の更新、Zoom 登録プロセス、すべてのコンテンツのアップロード。GS でのメールキャンペーン管理も含む。 | Informed | DRI | Informed | Informed | Consulted | Informed |
 | **デモオペレーション**: ハンズオンラボのデモコードを管理する。CSE ニーズのためにアーキテクチャチームと協力する（PTO カバレッジのために SA DA が対応） | Informed | Informed | DRI | Informed | Informed | Informed |
 | **GL リリース管理**: 各 GL リリース後にラーンラボを更新する。CSE 組織向けに月次 TLDR を作成し、すべてのコンテンツデリバリーに使用する。リリースにより変更されたコンテンツアセットを更新し、CSE が価値とトークトラックを理解していることを確認する | Consulted | Consulted | DRI | Informed | Informed | Informed |
-
-</details>
+{{% /details %}}
 
 ## <i class="fa-solid fa-book" style="color: #B197FC;"></i> コンテンツカタログ
 

@@ -114,17 +114,13 @@ Vertex AI API の仕様については、[SearchRequest](https://cloud.google.co
 |新方式（Vertex AI Search 使用）|3.7209302325581382|3.6976744186046511|3.9069767441860455|claude-2|
 |現行方式（GitLab-Rails と PGVector による手動埋め込み）|3.7441860465116279|3.6976744186046511|3.9767441860465116|claude-2|
 
-<details>
-
-<summary>データセット</summary>
-
+{{% details summary="データセット" %}}
 - 入力 Bigquery テーブル: `dev-ai-research-0e2f8974.duo_chat_external.documentation__input_v1`
 - 出力 Bigquery テーブル:
   - `dev-ai-research-0e2f8974.duo_chat_external_results.sm_doc_tool_vertex_ai_search`
   - `dev-ai-research-0e2f8974.duo_chat_external_results.sm_doc_tool_legacy`
 - コマンド: `promptlib duo-chat eval --config-file /eval/data/config/duochat_eval_config.json`
-
-</details>
+{{% /details %}}
 
 ### 完了予定時期
 

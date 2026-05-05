@@ -54,10 +54,7 @@ stale: false
 <small>2017 年 1 月時点で、チームは GitLab チームメンバー 150 名に成長しました！</small>*
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/XDfTj8iv9qw" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "XDfTj8iv9qw" >}}
 
 
 ### アメリカ合衆国テキサス州オースティン Summit
@@ -71,9 +68,7 @@ stale: false
 <small>2016 年 5 月時点で、チームは GitLab チームメンバー合計 85 名でした</small>*
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://player.vimeo.com/video/175270564" title="Vimeo video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< vimeo 175270564 >}}
 
 
 ### オランダ・アムステルダム Summit
@@ -85,10 +80,7 @@ stale: false
 <small>2015 年 10 月時点で、チームは GitLab チームメンバー約 30 名に成長しました！</small>*
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/GJP-3BNyCXw" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "GJP-3BNyCXw" >}}
 
 
 ### セルビア・ノヴィ・サド Summit

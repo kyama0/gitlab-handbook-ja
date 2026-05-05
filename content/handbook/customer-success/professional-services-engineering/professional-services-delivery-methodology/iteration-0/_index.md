@@ -177,15 +177,11 @@ ZenDesk light（読み取り専用）アクセスを持っていない場合:
 ### サポートノートの作成
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">Note</p>
-
+{{% alert title="Note" %}}
 以下の情報は Zendesk Global 専用です。組織が Zendesk US Government を使っている場合は、[#support_operations](https://gitlab.enterprise.slack.com/archives/C018ZGZAMPD) に投稿し、Zendesk US Government で組織ノートを変更する必要があることを明記してください。Salesforce Account または Zendesk Organization のリンクを必ず提供してください（顧客名やその他の機密情報は記載しないでください）。
 
 Customer Support Operations（Zendesk US Government にアクセスできる人々）が完了に向けて協力します。
-
-</div>
+{{% /alert %}}
 
 
 #### Step 1: 顧客組織を見つける

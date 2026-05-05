@@ -71,9 +71,7 @@ Gitlab.com は現在 4 つの OAuth プロバイダー（Google、Github、Bitbu
 [セルフマネージド GitLab](https://docs.gitlab.com/integration/omniauth/) は
 [OmniAuth](https://github.com/omniauth/omniauth) をベースとして、さらに多くのプロバイダーをサポートしています。
 
-<details>
-<summary>現在の OAuth クライアントフロー - シーケンス図</summary>
-
+{{% details summary="現在の OAuth クライアントフロー - シーケンス図" %}}
 ~~~mermaid
 sequenceDiagram
     participant User
@@ -126,8 +124,7 @@ sequenceDiagram
     GitLab->>Browser: Redirect to intended destination
     Note right of GitLab: HTTP 302 to originally requested resource<br/>or default dashboard
 ~~~
-
-</details>
+{{% /details %}}
 
 ## 提案
 
@@ -142,9 +139,7 @@ sequenceDiagram
 
 ### 提案されたフロー - シーケンス図
 
-<details>
-<summary>GitLab での Google ログイン - シーケンス図</summary>
-
+{{% details summary="GitLab での Google ログイン - シーケンス図" %}}
 ~~~mermaid
 sequenceDiagram
     participant Browser as User/Browser
@@ -210,8 +205,7 @@ sequenceDiagram
     Note left of Cell1: HTTP 302 to originally requested resource<br/>or default dashboard
     Cell1->>Browser: Redirect to intended destination
 ~~~
-
-</details>
+{{% /details %}}
 
 ### 代替フロー 1
 
@@ -229,9 +223,7 @@ sequenceDiagram
 
 #### 提案された代替フロー - シーケンス図
 
-<details>
-<summary>メール入力後の Google でのログイン</summary>
-
+{{% details summary="メール入力後の Google でのログイン" %}}
 ~~~mermaid
 sequenceDiagram
     participant Browser as User/Browser
@@ -314,8 +306,7 @@ sequenceDiagram
     Note right of Cell1: HTTP 302 to originally requested resource<br/>or default dashboard
     Router->>Browser: Redirect to intended destination
 ~~~
-
-</details>
+{{% /details %}}
 <br/>
 
 **却下された理由:** ユーザーが OAuth フローを開始する前にメールアドレスを入力しなければならず、ユーザー体験が低下します。また、状態管理とクロス Cell 通信において大幅な複雑さが増し、システムのメンテナンスが困難になります。
@@ -338,9 +329,7 @@ sequenceDiagram
 
 #### 提案された代替フロー - シーケンス図
 
-<details>
-<summary>グローバルログインページでの Google ログイン</summary>
-
+{{% details summary="グローバルログインページでの Google ログイン" %}}
 ~~~mermaid
 sequenceDiagram
     participant Browser as User/Browser
@@ -410,8 +399,7 @@ sequenceDiagram
     Note right of Cell1: HTTP 302 to originally requested resource<br/>or default dashboard
     Router->>Browser: Redirect to intended destination
 ~~~
-
-</details>
+{{% /details %}}
 <br/>
 
 **却下された理由:** このアプローチは新しい認証スタックアーキテクチャと整合せず、レガシー Cell とユーザーが属する Cell 間で SAML 認証を確立するための大量のスロー・アウェイ作業が必要になります。

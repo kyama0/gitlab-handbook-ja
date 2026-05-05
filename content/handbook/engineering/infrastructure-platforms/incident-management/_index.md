@@ -8,35 +8,27 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 GitLab チームメンバーで GitLab.com の可用性に関する問題を Reliability Engineering に報告したい場合は、インシデント報告の簡単な手順をこちらでご確認ください：[インシデントの報告](#reporting-an-incident)。
-
-</div>
-
+{{% /alert %}}
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
 
+{{% alert %}}
 GitLab チームメンバーで現在のオンコール担当エンジニア（EOC）を確認したい場合は、[現在の EOC は誰ですか？](#who-is-the-current-eoc)セクションをご覧ください。
-
-</div>
-
+{{% /alert %}}
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
 
+{{% alert %}}
 GitLab チームメンバーで最近のインシデントの状況を確認したい場合は、インシデント[ボード](https://gitlab.com/gitlab-com/gl-infra/production/-/boards/1717012?&label_name%5B%5D=incident)をご覧ください。インシデントのステータス変更に関する詳細は[インシデントワークフロー](#incident-workflow)セクションをご覧ください。
-
-</div>
-
+{{% /alert %}}
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
 
+{{% alert %}}
 incident.io がダウンしているまたは利用できない場合は、[incident.io がダウンしている場合の対処方法](incident-io-down.md)に従ってください。
-
-</div>
+{{% /alert %}}
 
 
 ## インシデント管理

@@ -8,13 +8,9 @@ translator: claude
 stale: false
 ---
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">これは管理対象文書です</p>
-
+{{% alert title="これは管理対象文書です" %}}
 GitLab の規制上の義務に沿って、[管理対象文書](/handbook/security/controlled-document-procedure/)への変更はコードオーナーによる承認またはマージが必要です。すべての貢献を歓迎し、奨励します。
-
-</div>
+{{% /alert %}}
 
 
 GITLAB INC. 関連当事者取引ポリシー

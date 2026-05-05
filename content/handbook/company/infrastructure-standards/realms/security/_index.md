@@ -20,21 +20,9 @@ stale: false
 このレルムは、エンジニアリングセキュリティチームが共有およびチーム固有のインフラリソースをデプロイするためのものです。
 
 
-<div class="my-4 border border-sky-300 rounded overflow-hidden">
-
-<div class="bg-sky-100 text-sky-900 px-4 py-2 font-semibold border-b border-sky-300">
-
-**エンジニアリングインフラハンドブックページとの将来のイテレーション**
-
-</div>
-
-<div class="px-4 py-3">
-
+{{% panel header="**エンジニアリングインフラハンドブックページとの将来のイテレーション**" header-bg="info" %}}
 [エンジニアリングインフラ環境ハンドブックページ](/handbook/engineering/infrastructure-platforms/environments/)が現在の環境に関する SSOT です。会社全体のインフラ標準を反復する WIP イニシアチブが進化するにつれて、エンジニアリングインフラページは、標準が文書化・実装され、環境への変更が行われるにつれて段階的にリファクタリングされます。
-
-</div>
-
-</div>
+{{% /panel %}}
 
 
 ### アクセスリクエスト

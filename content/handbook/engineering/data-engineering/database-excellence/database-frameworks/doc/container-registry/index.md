@@ -105,9 +105,7 @@ LIMIT 100
 モデル1との細かな違いとして、アルゴリズムとダイジェストの両方を格納するために単一の `digest` カラムを使用し、メディアタイプ情報をルックアップテーブルに正規化しています。
 
 
-<details>
-<summary>参考用 SQL スキーマ</summary>
-
+{{% details summary="参考用 SQL スキーマ" %}}
 ```sql
 BEGIN;
 
@@ -290,8 +288,7 @@ INSERT INTO layers (repository_id, manifest_id, digest, size, media_type_id) VAL
 COMMIT;
 
 ```
-
-</details>
+{{% /details %}}
 
 
 ![alternative_model](/images/engineering/data-engineering/database-excellence/database-frameworks/doc/container-registry/container-registry/alternative_model.png)

@@ -193,11 +193,9 @@ GitLab は機能の可用性とパフォーマンスを測定するために[エ
 ## エンジニアリングカスタマー/サポートローテーションプロセス
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 **注意**: このプロセスは現在、Organizations がまだ開発中であるため、チームの Groups & Projects 側に固有のものです。製品が一般リリースされたときに Organizations にも同様のものを展開する予定です。
-
-</div>
+{{% /alert %}}
 
 
 2 週間ごとに、Groups & Projects エンジニアがカスタマーサポートチケットの技術評価のための DRI として割り当てられ、サポート Issue や `master` パイプラインの失敗のための [#g_organizations](https://gitlab.slack.com/archives/g_organizations) チャンネルの監視、およびトリアージと優先順位付けが行われたバグやサポートリクエストへの対応を担当します。

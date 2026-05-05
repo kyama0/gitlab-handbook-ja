@@ -98,9 +98,7 @@ Editor Extensions 共有カレンダー（カレンダー ID: c_673d889354d021f7
 私たちは [プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/) に従って、Issue の `Status` フィールドでステータスを示します。
 
 
-<details>
-<summary>詳細を表示</summary>
-
+{{% details summary="詳細を表示" %}}
 . シンプルさを保つため、以下の主要なステータスに焦点を当て、必要に応じて他のステータスも使用します。
 
 - **New →** まだ優先順位付けや絞り込みがされていません。
@@ -118,8 +116,7 @@ Editor Extensions 共有カレンダー（カレンダー ID: c_673d889354d021f7
 - **Closed →** 完了（または重複・wontfix としてクローズ）し、結果を記録します。
 
 **注:** Issue とタスクの両方に存在するステータスである `Planning breakdown` と `Ready for development` を選んでいるため、単一のステータスフィルターで統一されたボードと埋め込みテーブルを簡単に構築できます。
-
-</details>
+{{% /details %}}
 
 
 ### Issue ボード
@@ -138,9 +135,7 @@ Editor Extensions 共有カレンダー（カレンダー ID: c_673d889354d021f7
 - **アウトプット:** 最新の [ローリングバックログ](#rolling-backlog-wiki-page) ＋ [マイルストーン計画 Issue](#milestone-planning-issues) の週次更新の可能性
 
 
-<details>
-<summary>詳細を表示</summary>
-
+{{% details summary="詳細を表示" %}}
 #### ローリングバックログ Wiki ページ {#rolling-backlog-wiki-page}
 
 この [ローリングバックログページ](https://gitlab.com/gitlab-org/editor-extensions/meta/-/wikis/Editor-Extensions:-Multi-Platform-Rolling-Backlog) はこの絞り込みプロセスのアウトプットであり、私たちが所有するすべてのスコープ（次の1〜2か月の作業になり得る）について、可視化され優先順位付けされチームでレビュー済みのバックログ上位リストとして機能します。
@@ -191,8 +186,7 @@ Editor Extensions 共有カレンダー（カレンダー ID: c_673d889354d021f7
 #### 参加方法（チームメンバー以外向け）
 
 チームに Issue を注目してほしい場合は、Issue を作成してください。Issue がまだ存在しない場合は、[#g_editor-extensions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C) でご連絡ください。
-
-</details>
+{{% /details %}}
 
 
 ### 月次計画
@@ -206,9 +200,7 @@ Editor Extensions 共有カレンダー（カレンダー ID: c_673d889354d021f7
   - 更新された Issue フィールド: `status`、`milestone`、`deliverable` を含むラベル
 
 
-<details>
-<summary>詳細を表示</summary>
-
+{{% details summary="詳細を表示" %}}
 #### マイルストーン計画 Issue {#milestone-planning-issues}
 
 私たちは [マイルストーン計画 Issue](https://gitlab.com/gitlab-org/editor-extensions/meta/-/issues/?sort=created_date&state=all&label_name%5B%5D=Planning%20Issue) を使用して、現在/今後のマイルストーンの目標を定義します。
@@ -230,8 +222,7 @@ PM と EM が目標のすり合わせを担当します。
      - フラグが立った技術的負債
    - EM はチームと連携して [Deliverable](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=Deliverable) ラベルと [Stretch](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=Stretch) ラベルを付与し、Issue のステータス・[ウェイト](#issues-weight)・マイルストーンが最新の優先度を反映していることを確認します
      - 週次の 1:1 や非同期で行うこともあります
-
-</details>
+{{% /details %}}
 
 
 ### マイルストーン計画 Issue とローリングバックログ Wiki ページの違い

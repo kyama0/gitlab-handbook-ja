@@ -9,21 +9,9 @@ stale: false
 ---
 
 
-<div class="my-4 border border-sky-300 rounded overflow-hidden">
-
-<div class="bg-sky-100 text-sky-900 px-4 py-2 font-semibold border-b border-sky-300">
-
-**これはセキュアなドキュメントです**
-
-</div>
-
-<div class="px-4 py-3">
-
+{{% panel header="**これはセキュアなドキュメントです**" header-bg="info" %}}
 [役割と責任](/handbook/entity/gmbh-germany/#roles--responsibilities)に記載のとおり、このページへの変更はコードオーナーによる承認またはマージが必要です。すべての貢献を歓迎し、奨励します。
-
-</div>
-
-</div>
+{{% /panel %}}
 
 
 ### 対象範囲

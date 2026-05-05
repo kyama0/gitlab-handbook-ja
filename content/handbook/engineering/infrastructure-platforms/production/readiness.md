@@ -8,14 +8,10 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">注</p>
-
+{{% alert title="注" %}}
 本番環境レディネスレビューは本番環境レディネス有効化プロセス - PREP に統合されています。
 機能を本番環境に移行するには、新しい [PREP 評価](https://gitlab.com/gitlab-org/architecture/readiness)を作成してください。
-
-</div>
+{{% /alert %}}
 
 
 ## 概要

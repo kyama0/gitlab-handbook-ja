@@ -464,13 +464,9 @@ each alternative solution/path.
 主要なアーキテクチャ上の意思決定は、Architecture Decision Records (ADR) として文書化されています。
 
 
-<div class="my-4 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-blue-700">Note:</p>
-
+{{% note %}}
 一部の ADR には、初回提案時にまだ決定していない詳細を記録した **Open Questions** セクションが含まれています。これらはレビューをブロックするものではなく、後続の更新や新しい ADR で対応されます。
-
-</div>
+{{% /note %}}
 
 
 1. [ADR-001: Organizations as Anchor Point](decisions/001_organizations_as_anchor_point.md) - レジストリが Organizations をアンカーとする理由

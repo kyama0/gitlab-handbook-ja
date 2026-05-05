@@ -177,9 +177,7 @@ GitLab の完了の定義の項目に加えて、RRD の作業は以下の要件
 
 ### 完全読み込み改善計算式 {#fully-loaded-improvement-formula}
 
-<details>
-<summary>クリックして展開</summary>
-
+{{% details summary="クリックして展開" %}}
 Diff 行に基づく改善の期待される進行は以下を使用して計算できます:
 
 ```math
@@ -200,8 +198,7 @@ Improvement(N) = 3 + 5.5 × ln(N)
 - `Improvement(500) => 37.2%`
 - `Improvement(700) => 39.0%`
 - `Improvement(1000) => 41%`
-
-</details>
+{{% /details %}}
 
 ### フロントエンド
 

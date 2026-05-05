@@ -218,9 +218,7 @@ GitLabのリーダーシップとマネジメントのアプローチは、「[H
 1. 信頼構築の影響を測定・報告することの価値
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/te3ZfJgFRxI" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "te3ZfJgFRxI" >}}
 
 
 **マネージャーのための[高パフォーマンスチームコンピテンシー構築](/handbook/people-group/competencies/#list)のスキルと行動**：

@@ -49,9 +49,7 @@ stale: false
 このページには 2 つのテンプレートがあります。最初のテンプレートは、職務記述書に 1 〜 2 つの役職とより多くのレベル（ジュニア、中級、シニア、マネージャー、ディレクターなど）または専門性がある場合に適しています；[例として](/job-description-library/engineering/backend-engineer)。各役職に多くのレベルがあります。2 番目のテンプレートは、同じファミリー内に多くの異なる役職がある場合に適しています；[例として](/job-description-library/people-group/total-rewards)。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/8cUTvSwUqVc" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "8cUTvSwUqVc" >}}
 
 
 ### 職務記述書テンプレート 1
@@ -264,9 +262,7 @@ Additional details about our process can be found on our [hiring page]({{</* ref
 ## ゼロから新しい職務記述書を作成する
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/x3q2KVFwMUY" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "x3q2KVFwMUY" >}}
 
 
 このプロセスの簡単な[ウォークスルー](https://docs.google.com/presentation/d/1ZNsMLhk5ZB_NMinV4X2QPWLudnHHWapasxRz5HJCuCQ/edit#slide=id.g551bcad215_0_146)があります。これらのスライドを使用する場合は、ハンドブックが最新であり、スライドや動画が古くなっている可能性があることを忘れないでください。
@@ -294,9 +290,7 @@ Additional details about our process can be found on our [hiring page]({{</* ref
 職務記述書が非常に大きい場合は、職務記述書の概要ページを作成することを検討できます。これは外部の候補者に役割についてアクティブにソーシングしている場合に役立ちます。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/eECNGB-JkZE" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "eECNGB-JkZE" >}}
 
 
 - 職務記述書に新しいレベルや新しい役割を追加するときは概要ページを更新する必要があることを覚えておいてください。
@@ -333,9 +327,7 @@ title: {job-family title}
 このビデオでは、職務記述書の URL を変更する方法と古い URL のリダイレクトを設定する方法を説明します。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/MRzgOzlbsPQ" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "MRzgOzlbsPQ" >}}
 
 
 ## パイプラインの失敗
@@ -355,9 +347,7 @@ title: {job-family title}
 すべての職務記述書に対してインクルーシブ言語チェックを実行するためにオープンソースの [Ruby gem](https://gitlab.com/lienvdsteen/linter) を使用しています。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/0ZIfDU0l2sU" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "0ZIfDU0l2sU" >}}
 
 
 現在そのライブラリは以下をカバーしています：
@@ -388,9 +378,7 @@ title: {job-family title}
 ## 職務記述書にパフォーマンス指標が必要な理由
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/9EJkgBRUSDA" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "9EJkgBRUSDA" >}}
 
 
 - すべての職務記述書にはパフォーマンス指標（PI）が必要です。

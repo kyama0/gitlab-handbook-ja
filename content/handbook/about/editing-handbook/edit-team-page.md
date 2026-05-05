@@ -42,12 +42,10 @@ stale: false
 - あなたの役割への相対リンク。リンクが `https://handbook.gitlab.com/job-description-library/engineering/support-engineer/` であれば、`/job-description-library/engineering/support-engineer/` を使用してください。他のエントリを参考にしてください。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 **Note**
 以下に記載されている `Export Name/Location to Team Page?` のオプトイン設定の詳細については、[「How to: Set Team Page Export Preferences」 Google ドキュメント](https://drive.google.com/drive/search?q=how+to+Set+Team+Page+Export+Preferences)（社内）を検索してください。
-
-</div>
+{{% /alert %}}
 
 
 ### 方法 1：Web IDE を使って GitLab.com で情報を追加する

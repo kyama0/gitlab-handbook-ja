@@ -21,9 +21,7 @@ stale: false
 ### デプロイメントとリリースプロセスの概要
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/aAQuhUnpbQE" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "aAQuhUnpbQE" >}}
 
 
 テスト目的のため、すべての変更はセルフマネージドリリースの候補として検討される前に GitLab.com にデプロイされます。デプロイメントとリリースのサイクルは異なるタイムラインで運用されており、変更は 1 日に複数回 GitLab.com にデプロイされ、パッケージは月に数回セルフマネージドユーザー向けにリリースされます。

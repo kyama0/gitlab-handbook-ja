@@ -46,15 +46,12 @@ click D "/handbook/legal/publicity-waiver-release/#team-member-general-publicity
 各チームメンバーはチームメンバー免責・リリースに一度だけ署名すれば十分です。
 
 
-<details>
-<summary>チームメンバー一般パブリシティ免責・リリースを使用する DRI 向けの手順を展開する</summary>
-
+{{% details summary="チームメンバー一般パブリシティ免責・リリースを使用する DRI 向けの手順を展開する" %}}
 1. [GitLab チームメンバー免責・リリーストラッカー](https://docs.google.com/spreadsheets/d/1fOENNDeCoAzXSdHIcD7GGJnwpUYL1qlqzwB1WbHrdlg/edit#gid=249560389)を検索して、資料に登場するチームメンバーとの間にすでにリリースが締結されているかどうかを確認します。すべてのチームメンバーとリリースが締結されている場合、必要なリリースはすでに締結されているため、追加のアクションは不要です。
 1. リリースが締結されていない場合は、資料に登場するすべてのチームメンバーに[チームメンバー免責・リリースフォーム](https://docs.google.com/forms/d/1QACcbwfmEZzGSvBQ-UzPtQjsgduSxy5B5cV-C0DUmWs/edit)を送信します。
 1. 資料に登場するチームメンバーがリリースを確認してフォームに記入します。
 1. 資料に登場するすべてのチームメンバーがリリースに同意してフォームに記入したら、[トラッカー](https://docs.google.com/spreadsheets/d/1fOENNDeCoAzXSdHIcD7GGJnwpUYL1qlqzwB1WbHrdlg/edit#gid=249560389)でこれを確認します。
-
-</details>
+{{% /details %}}
 
 
 ## 一般免責・リリース
@@ -62,9 +59,7 @@ click D "/handbook/legal/publicity-waiver-release/#team-member-general-publicity
 チームメンバー以外の方全員に対しては、一般免責・リリーステンプレートを使用します。チームメンバーの場合、資料が有料アウトバウンド広告に使用**される**場合は、一般免責・リリーステンプレートを使用します。
 
 
-<details>
-<summary>一般免責・リリースを使用する DRI 向けの手順を展開する</summary>
-
+{{% details summary="一般免責・リリースを使用する DRI 向けの手順を展開する" %}}
 1. DocuSign へのアクセス権がない場合は、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を開いて取得します。
 1. DocuSign へのアクセス権を取得したら、[一般免責・リリーステンプレート](https://app.docusign.com/templates/details/0716de66-3f1e-4969-b305-4562b9af665d)にアクセスします。
 1. `USE` をクリックします。
@@ -78,8 +73,7 @@ click D "/handbook/legal/publicity-waiver-release/#team-member-general-publicity
 1. 署名者がリリースに署名すると、メールで通知されます。
 1. 署名済みリリースを関連 Issue にアップロードします。Issue がない場合は、署名済みリリースのコピーを intellectualproperty@gitlab.com に送信します。
 1. 資料に登場する各個人に対してこのプロセスを繰り返します。同じ資料のために10名以上の個人からリリースを取得する必要がある場合は、一括送信について [Slack の #legal](https://app.slack.com/client/T02592416/C78E74A6L) に連絡してください。
-
-</details>
+{{% /details %}}
 
 
 ## イベント撮影・ビデオ撮影肖像リリース

@@ -11,11 +11,9 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 このドキュメントは作業中であり、Cells 設計の非常に初期段階を表しています。重要な側面は文書化されていませんが、今後追加する予定です。これは Cells の可能なアーキテクチャの一つであり、どのアプローチを実装するかを決定する前に代替案と比較検討する予定です。このアプローチを実装しないことにした場合でも、その理由を文書化できるようにこのドキュメントは保持されます。
-
-</div>
+{{% /alert %}}
 
 
 スニペットは Organization にスコープされます。当初は Organization をまたいでスニペットコレクションを集約することはできません。[Issue #416954](https://gitlab.com/gitlab-org/gitlab/-/issues/416954) も参照してください。

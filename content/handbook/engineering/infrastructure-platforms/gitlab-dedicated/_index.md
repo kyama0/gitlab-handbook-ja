@@ -199,13 +199,9 @@ GitLab Dedicated はテナント環境に対する厳格な[アクセス制御](
 ### GitLab Dedicated への製品修正の迅速な取り込み
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">Note</p>
-
+{{% alert title="Note" %}}
 このセクションは、GitLab Dedicated インシデント管理プロセスページが利用可能になった際にそこへ移動される予定です。
-
-</div>
+{{% /alert %}}
 
 
 製品修正が GitLab Dedicated のインシデントや

@@ -43,13 +43,9 @@ stale: false
 Developer Relations Program Manager は、プログラムメンバーへのメールアウトリーチキャンペーンを担当します。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">Note</p>
-
+{{% alert title="Note" %}}
 このプロセスは見直し中です
-
-</div>
+{{% /alert %}}
 
 
 1. [Marketing Operations issue](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new?issuable_template=dma_list) をファイルし、既存のデータベース内の既知のプログラムメンバー全員のリストを作成します。データベースのセグメンテーション制約があるため、このリストはコンバート済みのリードと、[GitLab for Education プログラム](https://about.gitlab.com/solutions/education/)、[GitLab for Open Source プログラム](https://about.gitlab.com/solutions/open-source/)、[GitLab for Startups プログラム](https://about.gitlab.com/solutions/startups/) など、既存のプログラムにすでにサインアップしている機関、コミュニティ、企業に直接関連付けられたコンタクトから生成する必要があります。
@@ -135,9 +131,7 @@ Developer Relations Engineering チームは [Developer Relations Engineering At
 1. [サポート](/handbook/marketing/developer-relations/programs/program-resources/#common-issues): 新規申請者と更新中のメンバーは、申請プロセスの問題やその他のプログラムリクエストに関するサポートを求めることができます。
 
 
-<details>
-<summary>詳細なワークフローを展開</summary>
-
+{{% details summary="詳細なワークフローを展開" %}}
 ### 申請
 
 #### Customers Portal
@@ -227,14 +221,11 @@ Developer Relations Programs チームが、プログラムメンバーの行為
 ### 更新
 
 プログラムメンバーシップを更新する申請者は、引き続きの適格性を確保するために、それぞれのプログラムに再申請する必要があります。これを行うには、初回登録時と同じ申請フォームを使用し、唯一の違いは予約ステージで使用するリンクです。
-
-</details>
-
+{{% /details %}}
 
 
-<details>
-<summary>一般的な問題を展開</summary>
 
+{{% details summary="一般的な問題を展開" %}}
 ### 一般的な問題
 
 自動申請ワークフローの各ステップには、異なるエラーセットと関連するサポートワークフローがあります。
@@ -263,8 +254,7 @@ gitlab-support@proxi.id で Proxi.id チームに連絡
 `education@gitlab.com` または `opensource@gitlab.com` に連絡
 
 Developer Relations Programs チームは、GitLab for Education および GitLab for Open Source を含む Developer Relations Programs のライセンス発行に関するすべてのプロセスを担当します。
-
-</details>
+{{% /details %}}
 
 
 ## Salesforce

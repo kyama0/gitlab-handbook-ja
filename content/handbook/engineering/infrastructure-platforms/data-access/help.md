@@ -11,13 +11,9 @@ stale: false
 このガイドは、Reliability エンジニアと Support エンジニアがデータベース関連の緊急事態で必要なヘルプを迅速かつ簡単に見つけるためのものです。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">注意</p>
-
+{{% alert title="注意" %}}
 このページは緊急事態中にリソースを見つける際の支援を目的としています。緊急事態でない場合（つまり S1/S2 以外の Issue の場合）は、チームがトリアージできるように適切なラベルが付いた Issue を作成してください。
-
-</div>
+{{% /alert %}}
 
 
 ### 緊急でない場合

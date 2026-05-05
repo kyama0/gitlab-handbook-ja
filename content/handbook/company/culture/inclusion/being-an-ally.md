@@ -91,10 +91,7 @@ GitLab で働く上で、アライである必要はありません。GitLab に
 ### アライになるには共感が必要
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/1Evwgu369Jw" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "1Evwgu369Jw" >}}
 
 
 #### 共感を持って応答する
@@ -180,10 +177,7 @@ TBC
 ## アライ・ラボ学習グループ
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/dPywm-j1iic" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "dPywm-j1iic" >}}
 
 
 アライ・ラボ学習グループは、アライシップの成長という同じ目標を持つ仲間のグループの中で、アライになるまたはより良いアライになることを学ぶための取り組みです。すべてのチームメンバーは、アンダーリプレゼンテッドグループ（URG）の一員であるかどうかにかかわらず、アライになる能力があります。自分が属していないURGが存在し、そのグループのアライになれます。定期的に新しいメンバーをグループに受け入れます。
@@ -232,10 +226,7 @@ TBC
 2020年1月28日に50分間の[ライブラーニング](/handbook/people-group/learning-and-development/#learning-delivery-methods---definitions)アライトレーニングを開催しました。録画とともに[スライドデッキ](https://docs.google.com/presentation/d/18Qyn2mBJu0Loq3x_RT5bL2lnL-3YHvac1sQhmqqZNso/edit?usp=sharing)と[アジェンダ](https://docs.google.com/document/d/1lGPImuahahjDejI5-9cNNCg-NMQJ4GCHO6n0fcntjs8/edit?usp=sharing)も以下からご確認ください。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/wwZeFjDc4zE" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "wwZeFjDc4zE" >}}
 
 
 <figure class="video_container">

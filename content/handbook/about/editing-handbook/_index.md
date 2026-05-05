@@ -114,10 +114,7 @@ stale: false
 - このハンドブックで紹介されている実用的なハンドブック編集のヒント。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/DJo4bQdawSo" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "DJo4bQdawSo" >}}
 
 
 ### 過去の動画

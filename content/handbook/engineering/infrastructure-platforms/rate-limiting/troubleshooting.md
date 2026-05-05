@@ -119,12 +119,9 @@ flowchart TD
 サンプリングされた結果が返ることがあります。
 このダッシュボードを使用して、パス、IP、ソースユーザーエージェント、データセンターなどを検索してください。
 
-<details>
-<summary>Cloudflare HTTP トラフィック分析を表示するにはクリック</summary>
-
+{{% details summary="Cloudflare HTTP トラフィック分析を表示するにはクリック" %}}
 ![Cloudflare HTTP Traffic Analytics](/images/handbook/engineering/infrastructure/rate-limiting/troubleshooting/cloudflare-http-traffic-analytics.jpeg)
-
-</details>
+{{% /details %}}
 
 #### フィルターを追加する
 
@@ -149,12 +146,9 @@ HTTP トラフィックを確認する際に適用できるフィルターが多
 ブロック、チャレンジ、またはスキップされたリクエストの量を表示します。
 このダッシュボードを使用して、Cloudflare ルールがトラフィックをブロックしているかどうか（そして何が）を調査してください。
 
-<details>
-<summary>Cloudflare セキュリティイベントを表示するにはクリック</summary>
-
+{{% details summary="Cloudflare セキュリティイベントを表示するにはクリック" %}}
 ![Cloudflare Security Events](/images/handbook/engineering/infrastructure/rate-limiting/troubleshooting/cloudflare-security-events.jpeg)
-
-</details>
+{{% /details %}}
 
 #### フィルターを追加する
 
@@ -185,14 +179,11 @@ HTTP トラフィックを確認する際に適用できるフィルターが多
 結果の中に特に興味深いものがある場合、
 値にカーソルを合わせると `Filter` または `Exclude` でさらに深く調査できます。
 
-<details>
-<summary>Cloudflare セキュリティイベントの結果を表示するにはクリック</summary>
-
+{{% details summary="Cloudflare セキュリティイベントの結果を表示するにはクリック" %}}
 以下の結果は、潜在的に機密性の高い情報を削除するために編集されています。
 
 ![Cloudflare Security Events Example](/images/handbook/engineering/infrastructure/rate-limiting/troubleshooting/cloudflare-security-events-example.jpeg)
-
-</details>
+{{% /details %}}
 
 ### SSH トラフィック
 
@@ -213,12 +204,9 @@ SSH トラフィックに関する Cloudflare ログのクエリの詳細は [Cl
 他のすべてのオプションを使い果たした後に、
 自動化か人間のリクエストかの可能性を判断するのに役立ちます。
 
-<details>
-<summary>Cloudflare Bot Analytics を表示するにはクリック</summary>
-
+{{% details summary="Cloudflare Bot Analytics を表示するにはクリック" %}}
 ![Cloudflare Bot Analytics Example](/images/handbook/engineering/infrastructure/rate-limiting/troubleshooting/cloudflare-bot-analytics.png)
-
-</details>
+{{% /details %}}
 
 ## HAProxy
 

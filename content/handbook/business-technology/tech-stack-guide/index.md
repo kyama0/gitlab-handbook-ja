@@ -27,11 +27,9 @@ stale: false
 また、内部ハンドブックに置かれるセキュリティアプリケーション用の Security Stack YAML という 2 番目の YAML ファイルを作成する予定です。これらのアプリケーションにも同じテンプレートアプローチを使用します。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 テックスタックガイドテンプレート
-
-</div>
+{{% /alert %}}
 
 
 ## テックスタックアプリケーション名

@@ -35,11 +35,9 @@ stale: false
 ## シャットダウンまでの日数 (`gl_sandbox_shutdown_after_days`) {#shutdown-after-days-gl_sandbox_shutdown_after_days}
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 このラベル/タグは必須です。一部の Terraform モジュールはこれを自動的に計算します。
-
-</div>
+{{% /alert %}}
 
 
 ```terraform
@@ -63,11 +61,9 @@ gl_sandbox_shutdown_after_days: '14'
 ## 営業時間外のリソースのシャットダウン (`gl_sandbox_shutdown_working_hours`) {#shutdown-resources-outside-of-working-hours-gl_sandbox_shutdown_working_hours}
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 このラベル/タグは推奨されます。一部の Terraform モジュールはこれを自動的に計算します。これは将来的な対応のためのものであり、このイテレーションでは完全には実装されていない場合があります。
-
-</div>
+{{% /alert %}}
 
 
 ```terraform
@@ -84,11 +80,9 @@ gl_sandbox_shutdown_working_hours: 'true'
 ## リソースのシャットダウン期限日 (`gl_sandbox_shutdown_date`) {#expiration-date-for-resources-to-shutdown-gl_sandbox_shutdown_date}
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 このラベル/タグは任意です。一部の Terraform モジュールはこれを自動的に計算します。
-
-</div>
+{{% /alert %}}
 
 
 ```terraform

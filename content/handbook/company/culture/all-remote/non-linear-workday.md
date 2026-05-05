@@ -24,10 +24,7 @@ stale: false
 ## ルーティンに関する先入観を打ち破る
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/ZlUpDkoq_v0" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "ZlUpDkoq_v0" >}}
 
 
 *上記の [GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A) 動画では、Darren M.（GitLab のHead of Remote）と Elisa R.（The Cowork Experience の創設者）が、満足度と生産性の観点からルーティンの影響と意義について話し合っています。*
@@ -41,10 +38,7 @@ stale: false
 ## 非線形ワークデイとは何か？
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/SeTTehyZsFc" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "SeTTehyZsFc" >}}
 
 
 *上記の[動画](https://youtu.be/SeTTehyZsFc)では、GitLab の Head of Remote が、Megan Dilley（Remote Work Association ディレクター）と、リモートワークの民主化の力、コミュニティの重要性、そして2020年の大規模なリモートワーク移行後の生活予測について話し合っています。詳細は GitLab の [Remote Work プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7QUX-Ux5fOunQotqJbECc)でご確認ください。*
@@ -159,10 +153,7 @@ stale: false
 大切なのは、非線形な考え方が[ルーティンから自由になる](/handbook/company/culture/all-remote/)選択肢を与え、毎日を違った形で組み立てられるということです。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/csS3iTjIHNo?start=1193" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "csS3iTjIHNo?start=1193" >}}
 
 
 *[GitLab Unfiltered](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7QUX-Ux5fOunQotqJbECc) の対話の中で、Ceridian の Dani が GitLab の Head of Remote に次の質問をしました：「リモートワークについて、人々が聞かないけれど聞くべきだと思う質問は何ですか？」*
@@ -215,10 +206,7 @@ GitLab の[ミーティングへのアプローチ](meetings/)は、他のすべ
 非線形ワークデイは結果重視です。結果に集中するためのシステムを構築することで、過負荷や燃え尽き症候群を防ぎます。以下の動画では、重要な優先事項を設定・達成するための方法として**3タスクシステム**を紹介しています。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/H5Sg3Gw8E0Y" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "H5Sg3Gw8E0Y" >}}
 
 
 **3タスクシステムのまとめ**

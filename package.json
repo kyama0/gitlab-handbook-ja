@@ -15,7 +15,8 @@
     "sync:upstream": "tsx scripts/sync-upstream.ts",
     "upload:images": "tsx --env-file-if-exists=.env scripts/upload-images-r2.ts",
     "check:staleness": "tsx scripts/check-staleness.ts",
-    "transform:shortcodes": "tsx scripts/transform-shortcodes.ts"
+    "transform:shortcodes": "tsx scripts/transform-shortcodes.ts",
+    "restore:shortcodes": "tsx scripts/restore-shortcodes.ts"
   },
   "dependencies": {
     "@akebifiky/remark-simple-plantuml": "^1.0.2",

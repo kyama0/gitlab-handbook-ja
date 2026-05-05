@@ -14,11 +14,9 @@ stale: false
 所有権、例外プロセス、エスカレーションパスを含む一般的なリリースポリシーのフレームワークについては、[リリースポリシー](/handbook/engineering/releases/#release-policy)セクションを参照してください。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 **プロダクトチームとマーケティングチームへ:** イベント、アナウンス、機能リリースは[マンスリーリリーススケジュール](/handbook/engineering/releases/monthly-releases/#monthly-release-schedule)に合わせる必要があります。機能はマンスリーリリースのみで提供されます — パッチリリースと内部リリースには新しい機能は含まれません。機能がマンスリーの期限に間に合わなかった場合は、ステークホルダーに遅延を伝えてください。次のマンスリーリリースがその機能をリリースするための適切な手段です。[期限を逃した場合の所有権](/handbook/engineering/releases/#ownership-when-deadlines-are-missed)を参照してください。
-
-</div>
+{{% /alert %}}
 
 
 ## マンスリーリリースの概要

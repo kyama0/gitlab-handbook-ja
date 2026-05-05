@@ -154,10 +154,7 @@ stale: false
 インターンがチームのシニアリーダーと繋がりネットワークを築く機会を作ることも検討してください。REMOTE by GitLab でのセッションで、Raj Choudhury 教授はハーバード・ビジネス・スクールの研究結果を共有し、シニアマネージャーとの簡単なバーチャルウォータークーラーセッションが、リモート環境の新入りの仕事やキャリアに利益をもたらす可能性があることを示しました。詳しくはレコーディングをご覧ください。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/RVMUworx2Vk" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "RVMUworx2Vk" >}}
 
 
 ### プロジェクトを意図的に選択する

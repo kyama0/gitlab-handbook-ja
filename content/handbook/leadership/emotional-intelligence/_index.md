@@ -27,9 +27,7 @@ EQ が高まると、リモートチームとの関係が改善されます。EQ
 2022年9月に GitLab の L&D チームが主催した Claire Doody 氏による「Being Human」というセッションを視聴して、感情知性についてさらに学んでください。[Reini Chipman による感情知性の多様性](https://youtu.be/DErrcLrw-ag)と[Christopher Connors によるモダンリーダー向け EQ](https://youtu.be/6gwPV6Y5YUQ)の会話も GitLab がホストしています。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/ai6DbsNIOF4" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "ai6DbsNIOF4" >}}
 
 
 ## EQ でインクルーシブな環境を構築する

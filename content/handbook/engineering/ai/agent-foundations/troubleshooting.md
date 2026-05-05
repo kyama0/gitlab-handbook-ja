@@ -13,9 +13,7 @@ stale: false
 GitLab Duo workflows のトラブルシューティングに関する包括的なウォークスルーをご覧ください。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/T1KWz_xthEY" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "T1KWz_xthEY" >}}
 
 
 ## ツール

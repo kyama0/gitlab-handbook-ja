@@ -220,10 +220,7 @@ flowchart LR
 
 私たちの Gemfile には [rspec-benchmark](https://github.com/piotrmurach/rspec-benchmark) が含まれています。これはパフォーマンステスト用の RSpec マッチャーを提供する gem です。実行時間、1 秒あたりのイテレーション数、割り当て数、メモリ使用量など、さまざまなパフォーマンス側面をアサートするためのさまざまなマッチャーを提供します。
 
-<details>
-
-<summary>テストケースの例</summary>
-
+{{% details summary="テストケースの例" %}}
 以下は rspec-benchmark を使用してメソッドのパフォーマンスをテストする完全な例です：
 
 ```ruby
@@ -256,8 +253,7 @@ RSpec.describe UserFinder do
   end
 end
 ```
-
-</details>
+{{% /details %}}
 
 ### プロファイリングツール
 

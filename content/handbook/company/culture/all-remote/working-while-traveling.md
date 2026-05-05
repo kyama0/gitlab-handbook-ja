@@ -26,27 +26,11 @@ stale: false
 ## インターネットの冗長性
 
 
-<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 my-4">
-
-
-<div class="border border-gray-200 rounded overflow-hidden">
-
-<div class="px-3 py-2">
-
+{{< cardpane >}}
+{{% card footer="テザリングを有効にしたスマートフォンはデジタルノマドにとって不可欠です。Photo by Darren Murph" %}}
 ![A smartphone with tethering enabled is vital for digital nomads. Photo by Darren Murph](/images/all-remote/smartphone-tethering-laptop-dm.jpg)
-
-</div>
-
-<div class="bg-gray-50 px-3 py-2 text-sm text-gray-700 border-t border-gray-200">
-
-テザリングを有効にしたスマートフォンはデジタルノマドにとって不可欠です。Photo by Darren Murph
-
-</div>
-
-</div>
-
-
-</div>
+{{% /card %}}
+{{< /cardpane >}}
 
 
 リモートワーカーにとって、インターネットへの安定した接続は[不可欠](https://about.gitlab.com/blog/2016/03/23/remote-communication/)です。これは[自宅](https://about.gitlab.com/blog/2019/09/12/not-everyone-has-a-home-office/)や[コワーキング会場](https://about.gitlab.com/blog/2019/09/04/not-all-remote-is-created-equal/)では管理しやすいですが、旅行中は特別な考慮が必要です。[旅行好きの方](https://about.gitlab.com/blog/2019/06/25/how-remote-work-at-gitlab-enables-location-independence/)は、少なくとも2つの接続ソースを維持すべきです — 理想的には、異なるモバイルネットワークに接続する2つのソースです。
@@ -83,27 +67,11 @@ Airaloを使用するためのヒント:
 ## RV・キャンプ、長期賃貸、ソファサーフィン
 
 
-<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 my-4">
-
-
-<div class="border border-gray-200 rounded overflow-hidden">
-
-<div class="px-3 py-2">
-
+{{< cardpane >}}
+{{% card footer="地球の果てから働けることはオールリモートの大きな特典です。Photo by Darren Murph" %}}
 ![Working from the ends of the earth is a major perk of all-remote. Photo by Darren Murph](/images/all-remote/gitlab-working-easter-island-dm.jpg)
-
-</div>
-
-<div class="bg-gray-50 px-3 py-2 text-sm text-gray-700 border-t border-gray-200">
-
-地球の果てから働けることはオールリモートの大きな特典です。Photo by Darren Murph
-
-</div>
-
-</div>
-
-
-</div>
+{{% /card %}}
+{{< /cardpane >}}
 
 
 どこからでも働けることは、[RV・キャンパーでの長期ロードトリップ](https://about.gitlab.com/blog/2019/06/25/how-remote-work-at-gitlab-enables-location-independence/)を含む新しいライフスタイルの可能性を生み出します。このようなライフスタイルを検討している方は、オンラインフォーラムを閲覧して日々の需要を理解し、接続が確保できないまま行き詰まらないよう旅の計画を慎重に立ててください。
@@ -115,27 +83,11 @@ Airaloを使用するためのヒント:
 ## ステータスと場所を連絡する
 
 
-<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 my-4">
-
-
-<div class="border border-gray-200 rounded overflow-hidden">
-
-<div class="px-3 py-2">
-
+{{< cardpane >}}
+{{% card footer="GitLab Commit London 2019での作業" %}}
 ![Working at GitLab Commit London 2019](/images/all-remote/gitlab-commit-london-coworking-2019.jpg)
-
-</div>
-
-<div class="bg-gray-50 px-3 py-2 text-sm text-gray-700 border-t border-gray-200">
-
-GitLab Commit London 2019での作業
-
-</div>
-
-</div>
-
-
-</div>
+{{% /card %}}
+{{< /cardpane >}}
 
 
 [非同期コミュニケーション](/handbook/communication/)の素晴らしい点は、特定の時間にオンラインにいる必要がなく、より自由に旅行できることです。オフィスを外出先に（または空の上に）持ち出す際は、Slackのステータスを現在地、タイムゾーン、予定している就業時間で更新してください。これにより、世界中のチームメンバーがあなたの現在地を簡単に確認し、変更した就業時間を尊重できるようになります。

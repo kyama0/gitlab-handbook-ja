@@ -32,10 +32,7 @@ stale: false
 詳細については、GitLabの[企業をリモートワークに移行するガイド](/handbook/company/culture/all-remote/)をご覧ください。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/_HhlqwJsNyM" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "_HhlqwJsNyM" >}}
 
 
 *上記の[GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A)動画では、Darren（GitLab）とAnna-Karin（Because Mondays）がリモートワーク、企業のリモート移行、非同期での作業、デフォルトのドキュメント化に関する多くの課題と解決策について議論しています。*
@@ -175,10 +172,7 @@ stale: false
 これは在宅勤務の取り決めを可能にするだけではありません。オールリモートは*どこからでも*作業する取り決めを生み出します。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/jdN5mj5ieLk?start=2115" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "jdN5mj5ieLk?start=2115" >}}
 
 
 ハーバードビジネススクールのケーススタディ[インタビュー](https://youtu.be/jdN5mj5ieLk)（上記に示す）の一部として、GitLabの共同創業者Sid SijbrandijがPrithwiraj Choudhury教授とリモートワークのさまざまなステージについて話しました。

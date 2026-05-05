@@ -15,9 +15,7 @@ GitLabで最も愛読されている書籍の一つが、Andrew Grove 著の「[
 ## ハイ・アウトプット・マネジメントの実践
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/CHs8NxRSGPw" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "CHs8NxRSGPw" >}}
 
 
 Sid と学習・開発チームが、CEO ハンドブック学習セッション中にハイ・アウトプット・マネジメントについて議論しています。このビデオでは、この本が GitLab のマネジメントプロセスおよびポリシーをどのように形成したかを探ります。

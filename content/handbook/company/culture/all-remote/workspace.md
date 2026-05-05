@@ -28,10 +28,7 @@ stale: false
 [MillerKnoll](https://www.millerknoll.com)のワークスペース専門家Ryan Andersonが、エルゴノミクス、生産性、環境のベストプラクティスを使って個人ワークスペースを設定する方法を共有しています。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/l9jmb8TE7sw" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "l9jmb8TE7sw" >}}
 
 
 Ryanが言うように、ホームオフィスを進化するプロジェクトとして見ることが重要です。[イテレーション](/handbook/values/#iteration)はワークスペースにも適用されます。オフィスで作業を開始すると、モニターをずらしたり、照明を追加したり、ヘッドフォンで音楽を聴くよりも静寂や環境音の中でより多くの作業をこなせることに気づくかもしれません。

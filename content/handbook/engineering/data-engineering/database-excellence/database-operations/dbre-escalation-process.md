@@ -9,13 +9,9 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">注意</p>
-
+{{% alert title="注意" %}}
 エスカレーションには [incident.io](https://app.incident.io/gitlab/on-call/schedules/01JXJ7MN4T14008GQKWYYNT6E8) を使用しています。
-
-</div>
+{{% /alert %}}
 
 
 ## このページについて

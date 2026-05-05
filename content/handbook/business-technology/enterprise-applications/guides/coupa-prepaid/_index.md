@@ -11,21 +11,9 @@ stale: false
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
 
-<div class="my-4 border border-sky-300 rounded overflow-hidden">
-
-<div class="bg-sky-100 text-sky-900 px-4 py-2 font-semibold border-b border-sky-300">
-
-**重要事項**
-
-</div>
-
-<div class="px-4 py-3">
-
+{{% panel header="**重要事項**" header-bg="info" %}}
 **2023-02-01 より Zip が実装されたことに伴い、Coupa における前払いフィールドは FP&A が担当します。**
-
-</div>
-
-</div>
+{{% /panel %}}
 
 
 効率的なプロセスを実現するため、経理チームは償却仕訳の自動化を実装しました。Coupa での購買依頼のレビュー・承認プロセスの一環として、FP&A チームは以下のいずれかに該当する場合に変更が必要かどうかを判断します:
@@ -59,19 +47,7 @@ stale: false
 <br>
 
 
-<div class="my-4 border border-sky-300 rounded overflow-hidden">
-
-<div class="bg-sky-100 text-sky-900 px-4 py-2 font-semibold border-b border-sky-300">
-
-**注意事項**
-
-</div>
-
-<div class="px-4 py-3">
-
+{{% panel header="**注意事項**" header-bg="info" %}}
 購買依頼で選択した情報はすべて、請求書が提出された際に対応する請求書に引き継がれます。請求書は支払い承認前に追加のレビューが必要です。誤った情報が見つかった場合、請求書はコメント付きで差し戻されます。
-
-</div>
-
-</div>
+{{% /panel %}}
 

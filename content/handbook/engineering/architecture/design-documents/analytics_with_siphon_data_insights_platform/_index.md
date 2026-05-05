@@ -174,9 +174,7 @@ Materialized View 戦略:
 
 例えば、[Siphon](https://gitlab.com/gitlab-org/analytics-section/siphon/) プロジェクトの `traversal_path='1/9970/55154808/95754906/'` です。
 
-<details>
-<summary>SQL 定義を示し、特定のユーザーまでフィルターするための具体的な例</summary>
-
+{{% details summary="SQL 定義を示し、特定のユーザーまでフィルターするための具体的な例" %}}
 ```sql
 CREATE TABLE namespace_traversal_paths(
   `id` Int64 DEFAULT 0,
@@ -270,8 +268,7 @@ ALTER TABLE hierarchy_issues ADD INDEX idx_author_id author_id TYPE set(1000) GR
 ```plaintext
 20 rows in set. Elapsed: 0.022 sec. Processed 421.14 thousand rows
 ```
-
-</details>
+{{% /details %}}
 
 #### 3. Siphon のリフレッシュメカニズムによるデータ整合性 {#3-data-consistency-with-refresh-mechanisms-in-siphon}
 

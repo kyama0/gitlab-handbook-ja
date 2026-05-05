@@ -46,13 +46,9 @@ stale: false
 ### コンテンツアセンブリ: リリース投稿アイテム（コンテンツブロック）をブランチにマージする
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">重要</p>
-
+{{% alert title="重要" %}}
 この手順は 18 日の <time datetime="07:59">07:59 UTC（18 日の ET 02:59 / 17 日の PT 23:59）</time> まで適用されます。この時刻以降、今後のリリース投稿に変更を含めたい場合は、`release-X-Y` ブランチを対象にした別の MR でリリース投稿マネージャーと直接調整するか、リリース投稿マネージャーに割り当ててマージしてもらう必要があります。詳細については、[フィーチャーブランチでの開発](https://docs.gitlab.com/topics/git/add_files/)に関するドキュメントを参照してください。
-
-</div>
+{{% /alert %}}
 
 
 リリース投稿をアセンブルする時が来たら、コンテンツブロックファイルを `data/release_posts/unreleased` から `data/release_posts/X_Y` に移動し、画像を `source/images/unreleased` から `source/images/X_Y` に移動します。

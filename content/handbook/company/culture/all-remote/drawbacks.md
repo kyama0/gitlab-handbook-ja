@@ -15,10 +15,7 @@ stale: false
 [多くのメリット](remote-benefits/)があるにもかかわらず、オール・リモートワークは誰にでも向いているわけではありません。ライフスタイルや仕事の好みによって、潜在的な従業員や組織に不利な点があることがあります。[透明性](/handbook/values/#transparency)の精神に則り、これらの課題に対する反論と解決策も強調します。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/CwOLAKSdlfs" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "CwOLAKSdlfs" >}}
 
 
 上記の[動画](https://youtu.be/CwOLAKSdlfs)では、GitLab テクニカルエバンジェリズム担当ディレクターの [Priyanka Sharma](https://gitlab.com/pritianka) が、[TFiR](https://tfir.io/)、[Arm](https://www.arm.com/)、[ISG Research](https://isg-one.com/research) の専門家パネルとリモートワークの長所と短所について話しています。
@@ -195,10 +192,7 @@ GitLab が[オール・リモートのチームメンバーをどのようにオ
 オフィススペースのコスト削減から従業員の日々の生活における柔軟性の向上まで、オール・リモートワークは組織とその人々に多くのメリットを提供します。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/GKMUs7WXm-E" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "GKMUs7WXm-E" >}}
 
 
 > **「リモートは乗り越えるべき課題ではありません。明確なビジネスの優位性です。」** -Victor、プロダクトマネージャー、GitLab

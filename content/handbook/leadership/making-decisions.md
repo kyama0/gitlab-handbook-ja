@@ -91,7 +91,5 @@ GitLab の E-Group と学習・開発チームが、CEO ハンドブック学習
 1. 不確実性の中での意思決定
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/-by6ohMIi_M" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "-by6ohMIi_M" >}}
 

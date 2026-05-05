@@ -111,10 +111,7 @@ Please read through the [Event Handbook page](https://about.gitlab.com/handbook/
 
 ## :package: Swag and Event Assets
 
-<details>
-
-<summary> Expand </summary>
-
+{{% details summary="Expand" %}}
 For all details regarding swag, [please see here](https://about.gitlab.com/handbook/marketing/channel-marketing/#requesting-swag-for-channel-events-and-awards).
 
 ### Shipping Details
@@ -132,8 +129,7 @@ For all details regarding swag, [please see here](https://about.gitlab.com/handb
 
 * [ ] Import lead list to Google Drive
 * [ ] Add proof of performance to the epic by posting the SFDC Fund Claim link
-
-</details>
+{{% /details %}}
 
 /label ~"mktg-status::wip" ~“Channel Marketing" ~"Channel" ~"MDF" ~"Pending MDF Approval"
 

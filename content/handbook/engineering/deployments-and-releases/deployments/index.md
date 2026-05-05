@@ -14,9 +14,7 @@ stale: false
 ### リリースマネージャーによる自動デプロイのツアー
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/zdVzX5ZY7o4" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-</div>
+{{< youtube "zdVzX5ZY7o4" >}}
 
 
 ### GitLab.com のデプロイメントプロセス {#gitlabcom-deployments-process}

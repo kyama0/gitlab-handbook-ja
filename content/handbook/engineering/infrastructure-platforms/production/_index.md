@@ -9,19 +9,15 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 GitLab チームメンバーで GitLab.com の可用性の問題について Reliability Engineering に通知したい場合は、インシデントを報告するための簡単な手順をこちらで確認してください: [インシデントの報告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)。
-
-</div>
-
+{{% /alert %}}
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
 
+{{% alert %}}
 セキュリティの問題についてサポートを求めている GitLab チームメンバーは、[セキュリティオンコールへの連絡](/handbook/security/security-operations/sirt/engaging-security-on-call/)セクションを参照してください。
-
-</div>
+{{% /alert %}}
 
 
 <span class="inline-block rounded px-2 py-0.5 text-xs font-medium" style="background-color:#E24329;color:#ffffff">Visibility: Audit</span>

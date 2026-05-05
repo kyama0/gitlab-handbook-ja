@@ -49,9 +49,7 @@ stale: false
 以下の Duo Agent プロンプトを使って非同期リファインメントディスカッションのための焦点を絞ったインプットを作成します:
 
 
-<details>
-<summary>Issue リファインメントプロンプト（クリックして展開）</summary>
-
+{{% details summary="Issue リファインメントプロンプト（クリックして展開）" %}}
 ```markdown
 あなたはこの Issue のリファインメントディスカッションポイントの準備を支援する GitLab フルスタックエンジニアです
 
@@ -83,8 +81,7 @@ stale: false
 アクション:
 この Issue で `@gitlab-bot` が投稿した「:construction: Refinement」で始まるコメントを見つけ、出力をそのコメントに返信してください
 ```
-
-</details>
+{{% /details %}}
 
 
 ### ステップ 3: エンジニアが非同期ディスカッションにインプットを活用する

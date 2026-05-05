@@ -279,40 +279,16 @@ dbt固有:
 Kimball式のウェアハウスへの移行に伴い、ウェアハウスとプロジェクト構造内でのモデルの整理方法を改善しています。
 
 
-<div class="my-4 border border-sky-300 rounded overflow-hidden">
-
-<div class="bg-sky-100 text-sky-900 px-4 py-2 font-semibold border-b border-sky-300">
-
-**レガシー構造**
-
-</div>
-
-<div class="px-4 py-3">
-
+{{% panel header="**レガシー構造**" header-bg="info" %}}
 Kimball次元モデリングへの注力以前は、[「Agile Data Warehouse Design」by Corr and Stagnitto](https://books.google.com/books/about/Agile_Data_Warehouse_Design.html?id=TRWFmnv8jP0C&source=kp_book_description)で紹介されたBEAM\*アプローチに触発されたモデリングを行っていました。
 既存のモデルの多くはまだそのパターンに従っています。
-
-</div>
-
-</div>
+{{% /panel %}}
 
 
 
-<div class="my-4 border border-sky-300 rounded overflow-hidden">
-
-<div class="bg-sky-100 text-sky-900 px-4 py-2 font-semibold border-b border-sky-300">
-
-**FY21-Q4 モデル移行**
-
-</div>
-
-<div class="px-4 py-3">
-
+{{% panel header="**FY21-Q4 モデル移行**" header-bg="info" %}}
 FY21-Q4に`analytics`データベースを置き換えるために`prod`と`prep`データベースが導入されました。
-
-</div>
-
-</div>
+{{% /panel %}}
 
 
 #### ソース

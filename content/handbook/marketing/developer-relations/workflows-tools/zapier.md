@@ -21,12 +21,10 @@ Zapier のサブスクリプションは [Team プラン](https://zapier.com/app
 ログイン後は、[Developer Relations](https://zapier.com/app/zaps/folder/275996) フォルダーで Zap のアクセス、編集、作成が可能です。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 <i class="fas fa-hand-point-right" aria-hidden="true" style="color: rgb(138, 109, 59)
 ;"></i> Zap を編集または新規作成した後は、Zap 一覧でタスク名の隣にあるトグルスイッチで Zap をオンに切り替えるのを忘れないでください。
-
-</div>
+{{% /alert %}}
 
 
 ### 現行の Zap

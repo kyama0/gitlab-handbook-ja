@@ -79,10 +79,7 @@ include
 会社のオフィスを維持する必要がないため、オールリモート組織はスケールで大きな機動性と効率性を実現できます。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/EuGsen3FxXc?start=640" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "EuGsen3FxXc?start=640" >}}
 
 
 上記の[GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A)動画では、GitLabの共同創業者Sid Sijbrandijが[INSEAD](https://www.insead.edu/)の研究者たちとオールリモートのスケーラビリティ（その他のトピックも含めて）について議論しています。

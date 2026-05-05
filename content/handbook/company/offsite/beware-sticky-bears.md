@@ -15,8 +15,5 @@ stale: false
 以下は、Hooli の CEO、Gavin Belson による「やってはいけないこと」の極端な例です。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/i92Ws7qPTRg" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "i92Ws7qPTRg" >}}
 

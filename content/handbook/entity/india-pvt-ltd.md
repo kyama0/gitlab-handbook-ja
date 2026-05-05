@@ -9,21 +9,9 @@ stale: false
 ---
 
 
-<div class="my-4 border border-sky-300 rounded overflow-hidden">
-
-<div class="bg-sky-100 text-sky-900 px-4 py-2 font-semibold border-b border-sky-300">
-
-**これはセキュアなドキュメントです**
-
-</div>
-
-<div class="px-4 py-3">
-
+{{% panel header="**これはセキュアなドキュメントです**" header-bg="info" %}}
 [役割と責任](/handbook/entity/india-pvt-ltd/#roles--responsibilities)に記載のとおり、このページへの変更はコードオーナーによる承認またはマージが必要です。すべての貢献を歓迎し、奨励します。
-
-</div>
-
-</div>
+{{% /panel %}}
 
 
 このハンドブックページは GitLab India Private Limited に雇用されているチームメンバー向けで、必要な情報または参考になる情報がすべて含まれています。ここにないもので含まれるべきだと思うことがあれば、ご提案ください。

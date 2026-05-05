@@ -42,10 +42,7 @@ stale: false
 2019年12月に、包括性トレーニングを3セッション開催しました。以下から[スライドデッキ](https://docs.google.com/presentation/d/1WujXXxNDorIXB3NJeEnneC0dnOoqdFtcL6OhM-zWt4s/edit?usp=sharing)と[アジェンダ](https://docs.google.com/document/d/1za96EEONFnOp-cI1kflIstE-MIAKSlsYZbivjnhr6ys/edit?usp=sharing)に沿った録画セッションをご覧いただけます。
 
 
-<div class="relative my-6" style="aspect-ratio: 16 / 9;">
-  <iframe src="https://www.youtube.com/embed/gsQ2OsmgqVM" title="YouTube video" loading="lazy" allowfullscreen class="absolute inset-0 w-full h-full"></iframe>
-
-</div>
+{{< youtube "gsQ2OsmgqVM" >}}
 
 
 ## 包括性ナレッジ評価

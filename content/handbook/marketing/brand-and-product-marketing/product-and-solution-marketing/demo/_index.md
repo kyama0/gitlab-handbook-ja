@@ -10,13 +10,9 @@ stale: false
 ## デモについて
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">Note</p>
-
+{{% alert title="Note" %}}
 このページは非推奨です。すべてのコンテンツが他の場所で利用可能であることを確認する移行期間中、ここに残されています。
-
-</div>
+{{% /alert %}}
 
 
 ## このページの新しいバージョンは https://university.gitlab.com/ にあります

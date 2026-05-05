@@ -9,13 +9,9 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">注記</p>
-
+{{% alert title="注記" %}}
 このページには、今後リリース予定の製品、機能、機能性に関する情報が含まれている場合があります。ここに記載されている情報は情報提供のみを目的としており、購入計画や導入計画の根拠としないでください。すべてのプロジェクトと同様に、ここで言及されている項目は変更または遅延する可能性があり、製品・機能・機能性の開発、リリース、タイミングはすべて GitLab Inc. の単独の裁量に委ねられています。
-
-</div>
+{{% /alert %}}
 
 
 [CI Catalog は 17.0 で一般提供（GA）としてリリースされました。](https://about.gitlab.com/releases/2024/05/16/gitlab-17-0-released/#cicd-catalog-with-components-and-inputs-now-generally-available)

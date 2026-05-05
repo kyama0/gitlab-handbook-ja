@@ -73,14 +73,7 @@ details summary * {
 }
 </style>
 
-<details>
-
-<summary>
-
-#### コアチームがアクセスできる Slack チャンネル
-
-</summary>
-
+{{% details summary="#### コアチームがアクセスできる Slack チャンネル" %}}
 - backend
 - backend_maintainers
 - backend_pairs
@@ -148,17 +141,9 @@ details summary * {
 - ux_coworking
 - vim
 - website
+{{% /details %}}
 
-</details>
-
-<details>
-
-<summary>
-
-#### コアチームがアクセスできない Slack チャンネル
-
-</summary>
-
+{{% details summary="#### コアチームがアクセスできない Slack チャンネル" %}}
 - release-post
 - security
 - questions
@@ -171,8 +156,7 @@ details summary * {
 - company-fyi
 - contribute2021
 - ux
-
-</details>
+{{% /details %}}
 
 #### Slack チャンネルへのコアチームアクセスのリクエスト
 

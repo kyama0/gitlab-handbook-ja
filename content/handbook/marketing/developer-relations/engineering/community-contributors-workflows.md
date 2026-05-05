@@ -119,13 +119,9 @@ GitLab チームメンバーが完了する必要があります:
 サポートチームは、24 時間以内に[このワークフロー](/handbook/support/license-and-renewals/workflows/self-managed/creating-wider-community-license)に従って応答します。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
-<p class="!mt-0 !mb-1 font-bold text-amber-700">注</p>
-
+{{% alert title="注" %}}
 (GitLab チームメンバー) Google Drive で[ここで](https://drive.google.com/drive/u/0/search?q=Wider_EE_Developer_License_Renewal.mov)検索することで、これのビデオを見つけることができます
-
-</div>
+{{% /alert %}}
 
 
 #### クローズ

@@ -49,21 +49,9 @@ APはサプライヤーへの恒久的なバーチャルカードSPAセットア
 - ステップ5. 新しいSPAがアクティブになった後、申請の**コメント**セクションを更新し、恒久的なバーチャルカードSPAが作成されたことを記載します。
 
 
-<div class="my-4 border border-sky-300 rounded overflow-hidden">
-
-<div class="bg-sky-100 text-sky-900 px-4 py-2 font-semibold border-b border-sky-300">
-
-**タイミングに関する注意**
-
-</div>
-
-<div class="px-4 py-3">
-
+{{% panel header="**タイミングに関する注意**" header-bg="info" %}}
 **バーチャルカードSPAは、申請が完全に承認される前に作成する必要があります。そうしないとリクエスト者へのバーチャルカードが生成されません。**
-
-</div>
-
-</div>
+{{% /panel %}}
 
 
 **シナリオC**：上記**シナリオB**のステップ1〜2に従います。
@@ -73,21 +61,9 @@ APはサプライヤーへの恒久的なバーチャルカードSPAセットア
 ![apvcard5](/images/finance/accounts-payable/apvcard5.png)
 
 
-<div class="my-4 border border-sky-300 rounded overflow-hidden">
-
-<div class="bg-sky-100 text-sky-900 px-4 py-2 font-semibold border-b border-sky-300">
-
-**重要な注意**
-
-</div>
-
-<div class="px-4 py-3">
-
+{{% panel header="**重要な注意**" header-bg="info" %}}
 **サプライヤーのメールアドレスが正しく入力されていることを確認してください。バーチャルカードが発行された後、他のメールアドレスに再送することはできません。**
-
-</div>
-
-</div>
+{{% /panel %}}
 
 
 - ステップ4. **作成**をクリックします。新しいSPAリクエストは**内部SPA承認グループ**に承認のためルーティングされます。

@@ -13,9 +13,7 @@ stale: false
 このハンドブックページへの案内は、必要な通知を提供するための私たちのしくみとして機能しています。以下から該当する州（適用がある場合）を参照して、通知にアクセスしてください。ご不明な点は `people_operations@gitlab.com` までお問い合わせください。
 
 
-<details>
-<summary>GitLab, Inc. & GitLab Federal LLC</summary>
-
+{{% details summary="GitLab, Inc. & GitLab Federal LLC" %}}
 ### アラバマ州
 
 - [Unemployment Compensation Documents](https://labor.alabama.gov/docs/Default2.aspx)
@@ -153,6 +151,5 @@ stale: false
 ### ウェストバージニア州
 
 - [Unemployment Claimant Handbook](https://workforcewv.org/wp-content/uploads/2024/05/WFWV-Claimant-Handbook-08.23-2.pdf)
-
-</details>
+{{% /details %}}
 

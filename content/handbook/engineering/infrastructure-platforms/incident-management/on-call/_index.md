@@ -8,11 +8,9 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 インシデントに取り組んでいる GitLab チームメンバーは、[インシデント管理ハンドブックページ](../_index.md)をご覧ください。
-
-</div>
+{{% /alert %}}
 
 
 ## GitLab のオンコール

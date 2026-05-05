@@ -9,12 +9,10 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 **Note**
 GitLab にコントリビュートする際の *Developer Certificate of Origin + License* については、[リポジトリのコントリビューションファイル](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/CONTRIBUTING.md)を参照してください。
-
-</div>
+{{% /alert %}}
 
 
 [ハンドブックプロジェクト](https://gitlab.com/gitlab-com/content-sites/handbook/) にマージリクエストを送信することで、[GitLab ハンドブック](/) のウェブサイトの改善に貢献できます。

@@ -13,11 +13,9 @@ stale: false
 ---
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 ℹ️ このページは、GitLab ブランドソーシャルチャンネルに関するすべての管理タスク、テンプレート、プロジェクトマネジメントニーズの単一の情報源です。「どうすればいい？」という質問の答えはここにあります。
-
-</div>
+{{% /alert %}}
 
 
 ## ソーシャルメディアプロジェクトマネジメント
@@ -33,11 +31,9 @@ stale: false
 ### ソーシャルカバレッジをリクエストする新しい Issue を作成する
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 ℹ️ ソーシャルでプロモートするためには、**専用のソーシャル Issue が必要です**。複数のアクティベーションポイントを持つキャンペーンの多くは、Epic も必要です。何が必要か分からない場合は、#social_media_action Slack チャンネルでチームにメッセージを送ってください。
-
-</div>
+{{% /alert %}}
 
 
 [コーポレートマーケティングプロジェクト](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/issues) に進み、下記から最適なテンプレートで新しい Issue を作成してください。

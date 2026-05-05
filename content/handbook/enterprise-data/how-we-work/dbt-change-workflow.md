@@ -326,10 +326,7 @@ dbt build -s pump_disaster_relief_fund
 
 組み込みのテストに加えて、以下のクエリを使用して変更をテストしました。
 
-<details>
-
-<summary>SQL</summary>
-
+{{% details summary="SQL" %}}
 ```sql
 SET query_id = (
   SELECT QUERY_ID
@@ -369,8 +366,7 @@ WITH compare AS (
 SELECT count(*) from compare
 
 ```
-
-</details>
+{{% /details %}}
 
 #### 検証
 

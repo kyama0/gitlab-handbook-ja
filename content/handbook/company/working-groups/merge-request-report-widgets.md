@@ -69,44 +69,16 @@ stale: false
 以下のスクリーンショットは、ワーキンググループが提供した成果の前後におけるマージリクエスト レポートウィジェットを示しています。
 
 
-<div class="grid gap-4 sm:grid-cols-2 lg:grid-cols-3 my-4">
-
-
-<div class="border border-gray-200 rounded overflow-hidden">
-
-<div class="bg-gray-50 text-gray-800 px-3 py-2 font-semibold border-b border-gray-200">
-
-**Before**
-
-</div>
-
-<div class="px-3 py-2">
-
+{{< cardpane >}}
+{{% card header="**Before**" %}}
 ![MR Widgets Before](/images/company/working-groups/MR_Widgets_Before.png)
-
-</div>
-
-</div>
+{{% /card %}}
 
 
-<div class="border border-gray-200 rounded overflow-hidden">
-
-<div class="bg-gray-50 text-gray-800 px-3 py-2 font-semibold border-b border-gray-200">
-
-**After**
-
-</div>
-
-<div class="px-3 py-2">
-
+{{% card header="**After**" %}}
 ![MR Widgets After](/images/company/working-groups/MR_Widgets_After.png)
-
-</div>
-
-</div>
-
-
-</div>
+{{% /card %}}
+{{< /cardpane >}}
 
 
 ## 役割と責任

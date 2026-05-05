@@ -13,11 +13,9 @@ stale: false
 このページでは、コスト配分と帰属戦略に対して*準拠している*と見なされる要件を定義します。
 
 
-<div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
-
+{{% alert %}}
 このドキュメントのスコープは GCP のみです。
-
-</div>
+{{% /alert %}}
 
 
 このページでは、リソースとプロジェクトに必要なラベルを記載しています。
