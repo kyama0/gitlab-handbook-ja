@@ -77,13 +77,6 @@ staticDir:
   - data
   - static
 
-menu:
-  main:
-    - weight: -2
-      name: GitLab
-      url: https://about.gitlab.com/
-      pre: '<i class="fab fa-gitlab"></i>'
-
 mediaTypes:
   text/netlify:
     delimiter: ""
