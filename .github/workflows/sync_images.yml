@@ -1,14 +1,11 @@
-name: Sync Images to R2
+name: Sync Images to R2 (manual)
 
-# Periodically (and on-demand) sync images referenced by translated Markdown
-# from upstream/static/ to the R2 bucket. The deploy workflow does NOT do this
-# (it'd require checking out the upstream submodule on every deploy and would
-# slow things down), so we run it on a weekly cron and as a manual trigger.
+# 通常は app_deploy.yml の `Sync referenced images to R2` ステップが
+# 毎 deploy で同期するため、このワークフローは普段は使わない。
+# main へ push せずに R2 だけ強制的に再同期したい場合 (例: バケット
+# 復元後、orphan 検証後) に GitHub Actions UI から手動で起動する。
 
 on:
-  schedule:
-    # Mondays at 02:30 UTC (= 11:30 JST). Adjust as needed.
-    - cron: '30 2 * * 1'
   workflow_dispatch:
 
 permissions:

@@ -17,6 +17,11 @@ jobs:
       deployments: write
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          # upstream submodule を shallow checkout (165 MB 程度、~30 秒)。
+          # upload-images-r2 が upstream/static/<path> を読むために必要。
+          submodules: true
+          fetch-depth: 1
 
       - uses: actions/setup-go@d35c59abb061a4a6fb18e82ac0862c26744d6ab5 # v5.5.0
         with:
@@ -33,6 +38,17 @@ jobs:
           cache: 'npm'
 
       - run: npm ci
+
+      - name: Sync referenced images to R2 (idempotent)
+        # 翻訳済みコンテンツが参照する画像のうち R2 に未アップロードのもの
+        # だけを upstream/static/ から取得して送る。新規/変更のみ HEAD で
+        # 検知してアップロードするので、毎回 deploy しても重くはならない。
+        run: npm run upload:images
+        env:
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
 
       - name: Hugo build
         run: hugo --minify
