@@ -1,10 +1,10 @@
 // Local development server: hugo + pagefind together.
 //
-// `hugo server` alone serves pages from memory and never produces a
-// `public/pagefind/` directory, so the search box on the navbar 404s. This
-// script runs hugo with `--renderToDisk` so the site goes to `public/` (with
-// hot-reload still active), then kicks off pagefind once so the search index
-// is ready alongside the served files. No second port, no python -m http.server.
+// `hugo server` by default writes files to `public/` while serving (you can
+// opt into memory-only rendering with `--renderToMemory`, but we want the
+// disk copy so pagefind has something to walk). Once the initial build is on
+// disk, this script runs pagefind once so the navbar search box is wired up.
+// No second port, no python -m http.server.
 //
 // Trade-off: pagefind takes ~60-90s on full content. We index once at startup
 // and let the user re-run `npm run pagefind` manually if they need fresh
@@ -17,12 +17,11 @@ import { setTimeout as sleep } from 'node:timers/promises';
 const args = process.argv.slice(2);
 const port = Number(args[args.indexOf('--port') + 1] || 1313);
 
-console.log(`[dev] starting hugo server (--renderToDisk, port ${port})...`);
+console.log(`[dev] starting hugo server (port ${port})...`);
 const hugo = spawn(
   'hugo',
   [
     'server',
-    '--renderToDisk',
     '--noBuildLock',
     '--bind',
     '127.0.0.1',
