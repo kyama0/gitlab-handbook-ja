@@ -1,0 +1,91 @@
+---
+title: "CI/CD ビルドスピード"
+status: ongoing
+creation-date: "2024-01-12"
+authors: [ "@grzesiek" ]
+coach: "@grzesiek"
+approvers: [ "@gabrielengel_gl"]
+toc_hide: true
+upstream_path: /handbook/engineering/architecture/design-documents/ci_build_speed/
+upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
+translated_at: "2026-04-26T00:00:00Z"
+translator: claude
+stale: false
+---
+
+
+<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
+このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
+</div>
+
+<div class="overflow-x-auto my-4">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-100 text-left">
+<th class="px-3 py-2 border border-gray-300">Status</th>
+<th class="px-3 py-2 border border-gray-300">Authors</th>
+<th class="px-3 py-2 border border-gray-300">Coach</th>
+<th class="px-3 py-2 border border-gray-300">DRIs</th>
+<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
+<th class="px-3 py-2 border border-gray-300">Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">ongoing</span></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/grzesiek" class="text-blue-600 hover:underline">@grzesiek</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/grzesiek" class="text-blue-600 hover:underline">@grzesiek</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/gabrielengel_gl" class="text-blue-600 hover:underline">@gabrielengel_gl</a></td>
+<td class="px-3 py-2 border border-gray-300"></td>
+<td class="px-3 py-2 border border-gray-300">2024-01-12</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## 概要
+
+GitLab CI は、さまざまなジョブ、ビルド、パイプラインを実行するために広く使用されている継続的インテグレーションプラットフォームです。[2015年9月にGitLabに統合され](https://about.gitlab.com/releases/2015/09/22/gitlab-8-0-released/)、[最も支持されているCI/CDソリューションの一つ](https://about.gitlab.com/blog/2017/09/27/gitlab-leader-continuous-integration-forrester-wave/)になりました。
+
+長年にわたり、GitLab CI プラットフォームに多くの新機能とコードを追加してきました。「最も支持されているソリューションの一つ」という地位を維持するためには、速度、信頼性、セキュリティにも注意を払う必要があります。この設計ドキュメントでは、前者（GitLab CI を高速化することでCI ビルドスピードを改善する）への道筋を説明します。
+
+## ゴール
+
+1. GitLab CI を他のプラットフォームと比較するための CI スピードベンチマークを確立する。
+1. 長期的に GitLab CI のスピードを測定するための CI ベンチマークフレームワークを構築する。
+1. GitLab CI ビルドスピードを改善するための次のステップを説明する。
+
+## プロポーザル
+
+### CI スピードベンチマーク
+
+まず、さまざまな CI/CD プラットフォームで特定のシナリオを実行し、結果をデータウェアハウスに取り込むための [CI スピードベンチマーク](benchmark.md) ソリューションを構築する予定です。
+
+これにより、多くの異なるシナリオに対して CI ビルドスピードのベースラインを定義し、私たちや他のプロバイダーが経時的に行っている進捗を追跡できるようになります。
+
+このゴールの核心部分は、ビルドスピードのプロキシメトリクスを構築できるシナリオのセットを定義することです。例えば、以下のシナリオを実行できます:
+
+1. `echo "Hello World"` ビルドのビルドログの最初のバイトまでの時間。
+1. CPU 負荷の高い暗号化操作を実行するまでの結果までの時間。
+1. 指定したバイト数のメモリ負荷の高い処理を実行するまでの結果までの時間。
+1. Linux カーネルをビルドするまでの結果までの時間。
+
+シナリオはべき等かつ決定論的であるべきです。
+
+最初のイテレーションでは、特定のスタートアップ時間の比較などの詳細には踏み込まず、ジョブの総実行時間のみに焦点を当てます。
+
+### CI ベンチマークフレームワーク
+
+実装したいシナリオを定義したら、[CI ベンチマークフレームワーク](benchmark.md) を構築する必要があります。このフレームワークは、継続的インテグレーション環境でシナリオを実行し、分析と比較のために結果をデータウェアハウスに送信するために使用されます。
+
+フレームワークの設計選択における主な原則は以下のとおりです:
+
+1. CI プラットフォームに依存しないようにする。あらゆる継続的インテグレーションプラットフォームで実行できること。
+1. 一部のプラットフォームでは利用できない可能性のある特定の技術に依存しないこと。
+1. 多くの依存関係を必要としない、簡単なインストールセットアップ。ゼロ依存が理想的。
+1. より良い方法がない限り、HTTP リクエストを通じて GitLab に結果を送信すること。
+
+#### CI ビルドスピードの改善
+
+CI ビルドスピードを測定できるようになれば、改善が可能になります。初期結果が出た後、スピードを改善するための次のステップを定義します。

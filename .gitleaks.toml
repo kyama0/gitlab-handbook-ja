@@ -1,0 +1,36 @@
+# gitleaks 設定
+# デフォルトの gitleaks ルールを継承しつつ、本リポジトリ特有の誤検知を除外する。
+[extend]
+useDefault = true
+
+# 翻訳ファイルの frontmatter にある `upstream_sha:` は git の commit SHA で、
+# 機密情報ではない。ただし 40 桁 hex で、関連ページに「sourcegraph」というキーワードが
+# 含まれると、gitleaks の `sourcegraph-access-token` ルール（`[a-fA-F0-9]{40}` を含む
+# 緩い alternation）が誤検知する。これらを許可する。
+#
+# 設計判断:
+#   - `paths` は使わず `regexes`（`regexTarget = "line"`）のみで判定する。
+#     gitleaks の allowlist は `regexes` と `paths` の両方を指定すると OR 結合になる
+#     （`condition = "AND"` は v8.24.3 で意図通り動作しないことをローカル検証で確認）。
+#     CodeRabbit が指摘するとおり OR では「対象パスにあるだけで本物のトークンも素通り」する
+#     ため、より制約の強い regex のみで判定し、安全性を担保する。
+#   - `regexTarget = "line"` でマッチ対象を行全体に拡張する（既定の secret 部分のみだと
+#     `upstream_sha:` プレフィックスが含まれずマッチできない）。
+#   - 1つ目の regex は YAML frontmatter（`upstream_sha: <40hex>`）、
+#     2つ目の regex は JSON manifest（`"upstream_sha": "<40hex>"`）にマッチする。
+#     どちらも `upstream_sha` キーの後に 40 桁 hex が続く非常に固定的な形なので、
+#     本物の Sourcegraph token がこの形で出現することは実質的にあり得ず、
+#     誤検知のみを抑止できる。
+[[rules]]
+id = "sourcegraph-access-token"
+description = "Sourcegraph access token (overridden to refine allowlist)"
+regex = '''\b(sgp_(?:[a-fA-F0-9]{16}|local)_[a-fA-F0-9]{40}|[a-fA-F0-9]{40})\b'''
+keywords = ["sourcegraph"]
+
+[rules.allowlist]
+description = "translation manifest upstream_sha (commit hash, not a token)"
+regexTarget = "line"
+regexes = [
+  '''upstream_sha:\s*[a-fA-F0-9]{40}''',
+  '''"upstream_sha"\s*:\s*"[a-fA-F0-9]{40}"''',
+]
