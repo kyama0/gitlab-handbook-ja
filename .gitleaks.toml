@@ -34,3 +34,23 @@ regexes = [
   '''upstream_sha:\s*[a-fA-F0-9]{40}''',
   '''"upstream_sha"\s*:\s*"[a-fA-F0-9]{40}"''',
 ]
+
+# Education Services の教材ページには学習用のサンプル値が含まれており、
+# gitleaks の `gitlab-runner-authentication-token` / `private-key` ルールに
+# 実トークンとして検出される。これらは upstream の教育コンテンツに由来する
+# 固定サンプル（GitLab Education Services のラボ手順）であり、本物の機密情報
+# ではないため、ファイル単位で許可する。
+#
+# 設計判断:
+#   - `paths` は gitleaks の allowlist で正規表現として評価され、`MatchString()` で
+#     部分一致する。意図せず広いファイル群が許可されないよう、必ず `^…$` で
+#     パス全体に完全一致させ、ドット (`.`) もエスケープする。
+#   - グローバル allowlist にすることで、将来 upstream が別形式の追加サンプルを
+#     増やした場合でも追従しやすくする（教材ページは翻訳パイプラインで自動同期
+#     するのみで、私たちが新規にトークンを書き込むことはない）。
+[allowlist]
+description = "Upstream education-services lab pages contain sample tokens/keys for training"
+paths = [
+  '''^content/ja/handbook/customer-success/professional-services-engineering/education-services/secessentialshandson1\.md$''',
+  '''^content/ja/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1\.md$''',
+]
