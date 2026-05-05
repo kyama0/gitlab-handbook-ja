@@ -40,7 +40,7 @@ stale: false
 
 1. **Edit > Edit single file** を選択してください。
 
-1. すべてのコードを以下のコードに置き換えます:
+1. すべてのコードを以下のコードに置き換えてください:
 
     ```go
     package main
@@ -65,7 +65,7 @@ stale: false
 
 1. 任意のコミットメッセージを入力し、ターゲットブランチを **main** に設定して、**Commit changes** を選択してください。
 
-1. 左サイドバーで **Build > Pipelines** を選択し、パイプラインが完了するまで待ちます。
+1. 左サイドバーで **Build > Pipelines** を選択し、パイプラインが完了するまで待ってください。
 
 1. パイプラインが完了したら、左サイドバーで **Secure > Vulnerability Report** に移動してください。
 
@@ -79,7 +79,7 @@ stale: false
 
 1. **Explain with AI** を選択してください。
 
-1. GitLab Duo が生成した応答を確認して脆弱性を理解します。
+1. GitLab Duo が生成した応答を確認して脆弱性を理解してください。
 
 ## タスク B. 脆弱性を解決する
 
