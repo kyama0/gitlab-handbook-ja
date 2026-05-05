@@ -2994,6 +2994,762 @@
       "input_hash": "55aa6586a4bd8f994dd70acacf65654fb467458264b3a9869e32a191d98c0f3a",
       "path": "content/handbook/customer-success/product-usage-data/using-product-usage-data-in-gainsight.md"
     },
+    "content/handbook/customer-success/professional-services-engineering/education-services/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:19:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "772daf47536fdd27df44318b4e372cd1570eb325e6f6f4ca5a8b53d9eb7b7dbb"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduo.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:19:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "24d1bd6755ea9bfcc995e2ee762c2e06fbc74df78db7c0a0a5433bc1e69c2802"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:19:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5d31dc9c92d1ac3b16ee055acb0667a888a0c1bd658fc1a42ae5ded86ebccf10"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:19:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "201e408b63b28da7d90cbc00d65330e7ce6cf69af5ddd63640bda57ef43d8307"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:19:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "716ce068e9ca78a5a058d38202103507dbcdde059d8bf46a0c480926ecf17358"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:19:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "da1143598150f44cbe4edf740035157aa783666641e21eafff764cb199a944ea"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:19:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1621c93a77257de3096d5c391005278f8504b08466e9f3783796cb7836bb39d4"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandson.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:19:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be8d68bddd6e4da08da3fb278fb140449f4a2bedeb063a0d541d4931e3e13072"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:52:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "05df4e22c556dff92e838614b310718c741aea2c5ecd63cc2be602095b8bb5b6"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:52:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e544814c038aae9dad1a0013c1ca06667cfa07511605f091e09f8648d31e24d1"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:52:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e20c3314ee96367a65bf0368a77172d18732d8058e2c77a4588fb3f01da00634"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:52:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f9f80a5116d107a7979d0bbcb76980308634477014bbc8dbf9f5106130fb8e0c"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:52:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "304d1550278f322a9ab427a3f91cf8e02f1344220addb654c636ff033994ce80"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab6.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:52:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d2c0a2fd1347d2270cb670515d94787d3682449e84b4c38aeb0d32323a0d1a3a"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandson.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:52:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "59fe3161f4194a37a96e5237bffd3dcb4b7718245c9f42a7088bf853aa11c9a8"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandsonlab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:52:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "edaa21059766e6c6f421c138edee4c67d83615814c7eb59ee17d06da87461d75"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandsonlab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:52:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "93e4b3579dffa880c58e58737b591b2244b5eb4f0b0f36a4f35fb260ee1e8b18"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandsonlab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:52:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "321c6f173825d1d747d4bfed049dafdf8d44d4e3a042b93431e7526d1d16f357"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandsonlab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:07:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "36f0ec0d51147ac32e24d1389b57301ca5ada2cb77cdda6100178ee0f5c1af80"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandsonlab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:07:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1250de5498550ea0e6ae3dec4ba1c1aeffa4be9a00e5961302f19a1bd0bb6000"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandsonlab6.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:07:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9c2a4ef34c2131c1912800aac492d5c55d8b57bbdafcf1ab8949ac95a0861f18"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandsonlab7.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:07:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "570600700ff67fa6d125a23c7b8e768dd3b551a08bf6725700b9cec0c7eef67b"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandsonlab8.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:07:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f4d315719e422f52c7e8af4d28045e92346e230f91f30d2f560cc06a061220f6"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandsonlab9.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:07:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "75e109039b738415135eea12d2a4f31b87d49f8bef737d943ffc6a5364dd717c"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandsonlab9alt.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:07:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f884d0e7f42973d5a798845b921192dde67c069851408ed94d2308028cc1d133"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandson.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:07:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d56235cb73d470552c5bd4ea9e279dd2d2f384877b298eb90376dc4152af40a6"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:07:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "888cb7c19e500ef1cfb6ad20457db6940167f6332f562df553c4b1ca63301399"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab10.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:07:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "53d227ca457c3db12b32f17cf03b3aa6acf5e60a573ff004abf844fbc58b44f8"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:14:42Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d5548be897cecd325f8dba79ca97c8ad886e8bb62aa7e617169f224a9e9807ac"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:14:42Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fe322f48e1d443e8b00acafc830842f9f136798e5573a3a95f81c3e1d294d7ed"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:14:42Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e013c3595c670e05b593f8a27fc199bf1f53166095839ad7074bb6e2b11799ad"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:14:42Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "835ccbe3bc208a73c7c57f493c74258b49b7ed79f2f9877b324b67d04ad9174c"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab6.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:14:42Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b3b946e9c3e9ac4e23d6ecb9e51c2faaf05116199a5cf2533eab7ea441baa6f1"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab7.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:14:42Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "02bde545d5306cc291220874f74023a62dbbe2b3bb0f7479a0b88e219665544c"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab8.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:14:42Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b7a89327b904ca1d022373d3415d431d7fe8044d851be55f30b61711d8877ce0"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab9.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:14:42Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e2fcff755aa50c2f4588216d67534dab6950bf68c1b341a0685070cba7619413"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:14:42Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be324afa81e33b2f445d80e96fed36a7b330857f047e863e166199e3ca993704"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandson.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:14:42Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "42a63b4fe107b2ca3e55892acb7a6b9b575b2a9be45c3c4d42696497597d3dc5"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2d63aadf8104f8f5d37738bbb79dbc25a974402af48682a3e76d3b6e8a732c16"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7b8c95b3f386403306d23e652fbb942de71a4323a9490c4b38fd26f83aadb889"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1fcefbc03294f78c35b4fe64a75d40b199f481ce3a2bb2536563d35790fa7d06"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1989432f7ebbc49c8ebeab3506f8efbaa6ac75009284eb30f6751b2b9c9cf1df"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5c0b92774842b213ce6dfd0e544b75d989bd6af07d698ba06e088374c9867546"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab6.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2b9cd38f30dae358544cae55dc8b476d17307dfa0dcc367e1f223a13dde6393c"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab7.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f28849d6e17446ca2263d381fb356c72991ee9268362748a9ecf4c026fd2e381"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduo.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4f2f0cd55ad2bbc2f37481b78701bef660627c9f03db2df407b163ac586b412e"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9bf0f067dc5ed989b7efd2de0735b9596b5d207c4903e14e277f678c39a23404"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "87197c4876b145b393cf940c9f485b7c22860b1bcdc7084057c19565c9e06ded"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:33:12Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8d75eb6b39c107c4c2e30a477e6d1f867d3ae4098f83fb477ad380401679af4c"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:33:12Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8446f53ed805a9c5295838e240fd1bc83e9a044b2b9e53c0ae918c00a87e9217"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:33:12Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "27ab8f3df984b617ddd10f8020fcfdb90470090f50e136c39f3a8f9489a6af6e"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab6.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:33:12Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0f67fdc47d86d27ecdb67161495210fd3d48ac12527ba8cbbfa21f2a46db235e"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandson.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:33:12Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "75fc553f1b82fb86f36682199aa4e59d210ab8c92c0eb3fbbd6357b2b7fa9d82"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:33:12Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3e6dadaa23d2e3824b2426c75217c5653c1099834e6ff7c0612b40a7f151a5a4"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:33:12Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3efe1c3943a0ddab72e0d5f58108e8139144417f65d2f6253a43d1043f136043"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:33:12Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "31db581537a5fe5a37d35c4d86c1c47c9d3d7fc35520dd55bec1c8c180954877"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:33:12Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cc60bdd380173c706ad2afb9ff485531c635d534be1c77774365d4381d729a61"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:33:12Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e42f100f63bceae606720a41c446ed8be263019107e811e76ae9d6e8fedc5593"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab6.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a7d76311c45dd32e7e48b658c38014fe76e561d09e238cf197d76b78d8e2cc54"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandson.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b6d958ee207ebb8615e149e004ed344999d5dc43cd8e8be0a4034877250f3174"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "923db1116ff2e1c944db8f3f9ef0aacff27c90c9a04d06842e6a2f5b3ed96aae"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1b7a55bb4899b74295677c4464f0379e215151b12ab126115a62e27b3c90d4bd"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0d55841a8a114a53e37bbdf86e02426c894563bedaf2b8eb1cf37a27a572d2f3"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "aead2a328d7ccdcf140b66e6d943ab2eef63ef6c9f7b38eae147b51a1c4d070b"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f954ab4784a8e3529c797a95958db1c477f49b4ed1defb5737e6853f964cb765"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab6.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7ae57db4acfe64e83d7e622f0c06f5a3886406035e36e73eceff222fb1bde0ac"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab7.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "182b2c54757a153c964b785e538a36459ee70d452f823f1dc23e8980713a3e85"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab8.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a07b4d05ee693ddaeeeee59810547dbc951cb710a2c75bd56aec07bf1868e0ec"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandson.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:51:58Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a881d2da1816e3f0621845d8677331e1e3b65c278687b1da96b9c24426fd46c7"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:51:58Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "796341e5f7994a0bab38a999ec1ac27eecd3f5ca5dfec8af560ec669c0a89b45"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:51:58Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "775fdf6450b989838e8861bad2d547ad46ccf7d6eeabc45bd0cad4a5bb24a392"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:51:58Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c0244e354d61efc2034660066328099caf0ac1469be95272b0e5ce3ebeb2c68d"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:51:58Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7a8b9634119e83a4928a584805b36bcafbaa149230c80ba62f5ba7b6555c2974"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:51:58Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c9e5c45ecbd653db90e5e719a914daf53461c6f846b2250f4e9f4eae57c6e3fe"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandson.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:51:58Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b8fed6220d635ae6e3628ea11340dadab49a29784e98a30727c242a7f7c0197e"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:51:58Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7102d97de05aed22a14798037e003bebcc4e0422e8e78c70ad4a677134c8a97e"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:51:58Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "69d94a7be36c2e872904d02f989fe3e84ef25bc73e221ac28d4ee79cdb5967ed"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T04:51:58Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "67f80e3c75753f8a9626dffebf789858984a4fd807f62a142832e3c05ea4aa8d"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "20ba48b513e8150fd9ac61e72527c663bd574438b1217c378fea25b306ef0822"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "99bea995c238a29303889a911b195cc84da3ab1bc312f01f88aa743f3ca7e71c"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab6.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "70fc50594ebf6cbb2e2792af4b9af7208f77ee2a0bc16140612512ad130b72d3"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab7.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b1c379e08e95206ecf955367bbb7f2f4afcdd443a7824d942e679a9339d40b1d"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandson.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "abae9dbd1fbbaea9ed1f412c8f85a32dbe9a4ef46885968d520704d991373a4e"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c427efadda05e306392051d0b9cc21fe25864049da74a7707621908fb32d7bf1"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "33ddd7930810cba58091379d8b07162a27660e517c9b2c322c4a6e162307439d"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8d5664721e6c6a62dc99f25bad5b5605d6b5457ac85b382dd295d5f758e785be"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "86e0f8dc182c272390f26d6782b77a4b5a2f2dcab36d426cebbfc2ffc0ad27ad"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d60308b5e489ff2065d3424f915fa4dfd59111dae61155f823534b39256a8250"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentials.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:12:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "13ef40dbac57da59ef8bedba2eaec4802ef6544bf4e9383a92e852d2106b9ad0"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:12:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "088d47e4b39ccc9213cd2f7148948edf7746ed78db021893f51c659bbeff4094"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:12:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7732cc26d18af6fea31b499183e697b320e42e206ed51bea2b9c90f3669a5cb6"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:12:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "da086bd1b9f53d37eff86d6cb69a9ade27e172a2732193c0b9754b2024cd64f8"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:12:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6e26bc625efcb25bdce3d0f06e490d5a32667f67f3692ccc78eb5b7e05316e3c"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:12:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b6cb8849a99fda9daf4b23b986d0f1b28253d3b50884c5def3941913e4f0ef5e"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab6.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:12:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9c2408dc2dac255fe27daa541c98042ec12ccb0c33a7e9ecbad90120d9f17853"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandson.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:12:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ee844240f83cbb24dd8fe8ff60891fd7bcf52c9a9c8bf7849b376608361f14a7"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonk8s.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:12:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c86ff8652d87db5f750af66be96cb873cc89ede90b21f0a0646f2812ed4f5c36"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:12:10Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "84862f79a3552cf93bb1e5f2a3b426c45c60425a466d32a4dd9e43c71052aee8"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab1k8s.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3dc4ece690c728de75e85f0ef970341bbef589b4f4f90a05749291b01bde1405"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "175ae39ffb1837ec1a4a1fa8ade049d8f5b2baea50465ae19727607b1aefac61"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab2k8s.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "95324de1b05985ddf2711fa52d416bbc01ca379ac57cdbab6a722dfc63c4d803"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "85b2b2b49d921888ca988920770ccc8345d4d69d694ffb282ae7a59beafacb3a"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab3k8s.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "094bec39bcbd23c27a7956c8ab18b33c6496ffce0b2d843d5ac3b8abaa9d4eb0"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "279e90524de01d40913d88d061eb2115f80c69f92e6ba17578e53938cfb33860"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab4k8s.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f2897475a985ff0e4dff499b1c03d0e383d6c5b17e7e5e6cb83cedba3473d4b7"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b8b58eb0e20271fbfb9349540501bb90caadf9b1982e96b2af1ae2dced08cb1b"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab5k8s.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "11ef822ab43fc130985967f3252fd4f2b35046b14f176a8b622277e7722fceb1"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab6.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "751a2661b19a41f1ca5667b30f4569a6da1f0e0d61071533bae751e1daffdb76"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab6k8s.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:28:22Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "04df03879d976cec7fe4dc7da8c3066068901e349e0327799af40f53b8726250"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/lms.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:28:22Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5687101ab42b058b6d7d0e00b04c6dab3a9f941c74c82c996499407e44ba2712"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/secessentialshandson.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:28:22Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a8a15c537486922d90f0a7097934222216cc4ce9d963a3990aa8d1cd4084afdd"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/secessentialshandson1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:28:22Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8766e155aa06b8bcddf2028b9208aaa7bffce4492e023188e5e1bf2babf553d2"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/secessentialshandson2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:28:22Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2c3964f7ce97bad708a104d8ee5c94a1d0f5a8c53eae8fd74ea746a639e19f7d"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/secessentialshandson3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:28:22Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2fd4a441fe0e60440013faab18c5642637961445664dea946b5b1dd6f638a467"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/secessentialshandson4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:28:22Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ce08421c383fc4b085a834299489fbbc16eb3385a0ffbd32eb6853e0fe564a48"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/secessentialshandson5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:28:22Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "837bac74b48f8f2109a6a31c572393fe5484e863ca5a9f72682f504c91131d5b"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/secessentialshandson6.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:28:22Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1b665c2b6c1452e1f39ab96e922d5747967367802df759b5e9c15c1d288b69a5"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/sysadminhandson.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T05:28:22Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "038cf2f115556530cbb57ee9fcc9f5b27cea8dcfa89cc0d5c889c977fd239801"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/sysadminhandsonlab1.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2c08e7584c80464da261372b6e6ae85175961504bc25e3e5dfe673038e3a3e35"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/sysadminhandsonlab2.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c2af13198aefbaf19b3a75c2f5727d90b3ef378f2561390fdaa265bf14aead9f"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/sysadminhandsonlab3.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9bc0d5e9135b8097800ae79227a08a90bacbc40149dd519bdf2b212ba2a4af2b"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/sysadminhandsonlab4.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "109cd41e15eba1e140805a914c007c87963e5c54300ddd358c2b647311452701"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/sysadminhandsonlab5.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cffda24164aa6dc17758f1b0c6165b5fad6b2d5cb57d984fab3adc8c5b14fb0f"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/sysadminhandsonlab6.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1397b026dad9b21ca63d48778a5aa30810744cc8e060713b29cd4cf0c140b577"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/sysadminhandsonlab7.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d7606a6621eee5a31f7e6c61c012fdf16c19de386496ec3ec184c6a41e990239"
+    },
+    "content/handbook/customer-success/professional-services-engineering/education-services/sysadminhandsonlab8.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4f70db9b2fa0742dcf29da5c79bbdb63f8acbca466658fd3fce03b42f76fa9a2"
+    },
     "content/handbook/customer-success/public-sector/_index.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-26T03:00:00Z",
