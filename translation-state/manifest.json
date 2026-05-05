@@ -3456,6 +3456,522 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "6aab2e8d3e5bbc2fe80352af42e26f4de3aca0ae2899d44b969ab2607f2e7a0f"
     },
+    "content/handbook/engineering/architecture/design-documents/cells/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5532b5aa2cc1b9391a9600ce7b4bd99bee053b1628398ea33cb6068ba0c3b716"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/container_registry_routing_service.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "df85ef6335704e3adbbd1dcebdf5b33ab7dd9ed316bed0c91fe242ee627f08b0"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/001_routing_technology.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c063f30f2a79b3030fbe36dce54f26f758bbcca0483689d75eff61d279c4fa0e"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/002_gcp_project_boundary.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "51c4d26938618911d39b713325b094e0d79dba30fb103bd1a952d429fc874bfa"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/003_num_gke_clusters_per_cell.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "608d7df732957457693c4d34e8f98efac483cfdf18e14494d368992c650f4e7f"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/004_vpc_subnet_design.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "42d7401948b3b9f17029feb8dac5258963c7383bbfd82e4ed0f300ae7440a6dc"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/005_flexible_reference_architectures.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ff723e694c7b12f0431887f8230cc2519c8875e73dd5dc8cc4d9d8979fb1856d"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/006_disaster_recovery_geo.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d471501d336a1e526e8f9bf23ebcf63fdd220bb8dc16a7f969b89f66ff4a8c59"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/007_internal_customers.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e22429fe07877444a8d50243a31945c3d7ac4834e77c18344bdd8413b91e0e0a"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/008_database_sequences.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1168cbcd4daee6eaabd71bb67a2a50cd30ae7ae8564d1e3d839c96777abc3d6d"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/009_cell_initial_sizing.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "78ee0639c35590b946519fd43e75e64177b1d75fb986153730bd825484792e60"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/010_http_router_rules_and_cache.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "048eddf319a228484205cf2a05ae253eabc21b9a30b81721b0b212b02148b89d"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/011_cell_specific_configuration.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3120267526e5b42e0c86c0cfdd4fe6ec7a80c81c919a43eae303915e4cf1fd70"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/012_cell_unique_identifier.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d1fdec51d7a752699ba2669ff1e67e8c9825f2411ebf67e9e580df564b0b1bd1"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/013_cell_restore_from_backup.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "65995d85104e972b8b7465cbe83d87c904c29b80ae017002767e3dbbd37ba0fc"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/014_clusterwide_syncing_in_cells_1_0.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cda1f0f886cbfefa6ebd27948145e2c3114069e89230eb0833e28875f21aa509"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/015_spanner_multiregional.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0f60ee4138ae6eae898697f08e344fcba79d33f5d3aa0186fd570d9c54db63ee"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/016_cross_cloud_dependecies.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "56ded4f43aa5284cd0ceb95445184560ac214dd1948a9690a636bbcbe0b8642d"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/017_container_registry.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e2f50ae7cd6bf48e224cc0b344e8c6eaf5c314fe2a3aed65ad36260af91dd8c2"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/018_topology_service_transactional_behavior.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2c3d83eb9ff0586a06d47e54e372fb760e2510f5a206920647f451a4e08d36fe"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/019_aws_primary_region_selection_for_cells.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "22cfb7c9f19acce241cfec1898e9d804d7e948251ea6720f46e46e1606251a28"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/020_spanner_backup_strategy.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "87885fe05c14279268582e788ed30349f19e7f2886bdc8b17a115d306da6b8f9"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/021_claims_in_database_transaction.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be0b12b10ba34b74cef52f6356ad43774c73b7fddda0badabb10d71ca24a963a"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/022_ring_definition_for_protocells.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9795c3bd0e407b19b424111b94bd984efff4678e3b02cfcc284995024d53a815"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/023_database_configuration.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bc8a62c543a77418cef9477899a64ec4d321985c3e679c215c25125604e164f6"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/024_disaster_recovery_cells.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bf4ca90f110b8e74751ea0edd4e258332c14f492f389d1ff3dd879a15810168d"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/025_separate_worker_for_jobs_request_endpoint.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "94c870d281dc6cd51ed3cb147003dc638317c874998b8799b8e527f847f3db50"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/decisions/026_hono_for_http_router.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9a882e7bd2136c2476d4cec3533f53cf7f1dff173a849cd7a72dd14ba8f59e5c"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/diagrams/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "27c61875b7d2d94060fe4023d8dbcdf4d02787d34481f1862d5871f1668acc52"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/feature_flags.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7c8cc1490d4f38671ba1f185282fe71c680b5b769d941b111253af345ae4725c"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/goals.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1db137d96784fa8be94a01abfcbfd61d5279d874d0c411be36841504ac82765e"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/http_routing_service.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "57d57c4af8cb405b94fe1cdcc67671bcb0cc3accf9fbe836f3e4f0e0ee6a70cf"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/admin-area.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2cc8488b2d2d938bb45daf8cf8b9444d580383b177e7f5842adae8bb1fd08760"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/advanced-search.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e3ddeb076e4c5bcbd5778fffc4e781d155d6a730b9869e515ee6f4c5434dfd94"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/agent-for-kubernetes.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7c37d60c4d9de912d65c9976c816487fba56d740a79a767c2b13dd8e6becd204"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/backups.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7f77bb718093254cce14fe29deae9397802b5f82d0ac835009c0a27a30caadbc"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/ci-cd-catalog.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bb5d9456b0088b6694ba732e5c09ab2692e25cc297eaebb18abe99328cbdc288"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/ci-runners.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0f32c3e014379fbee097bc46298de65e3a4c15db23abb7931a2b674e06f63c4c"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/container-registry.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "477644a7faaa372ffb196ee83787367b95eb6efb294e7d1f92e29db43a489a47"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/contributions-forks.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "36bd8da7048a32af98b1153b4cce7e4e0a9b078b9cc33929ec52de5eeee1ba9a"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/data-migration.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "000db0802678bf803db083c7ff8c7a77dd73e475b3098e37fd1a67dac8c268fa"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/data-pipeline-ingestion.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f08b9a238b1e50fe131f91ca0fef30d6ceef54f7c950c93a5c22d47b3610c41d"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/dependency-proxy.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8ae0eb6f17e4890775a6d1223e4e765c4615ca6d328889522ab9b0f61bb2d6d4"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/explore.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "90dfdb06c3141900f26b2f1e63d951d5d31201bbba7aac2929e833090f8852d7"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/git-access.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "64ec87f7d41da16402a10f327128fbb497e0b94525361cc077017a3b4d7ad8b3"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/gitlab-pages.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d58a6dd890a23854b3c082e0b2c4c3a9a63a2e264dfc315fdaf24b2fb72703a3"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/global-search.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "04e8e878ae2494cab96224ff29d695624b480d6efa1d6fc98dab872bc442abcb"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/graphql.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a2c31859fb9435513c3d4f20532557ee2ec428f5fe6c083cc662168b8101b2d3"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/group-transfer.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6ba7465c1baceb371ebc5a9e735caec202d2ac6730d8991d8f29ac6bf8a2cda5"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/issues.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "781bb9b7ffe5bc05c7330adf2d1b7f8e5503eaf135b009e7b2877c6bf5626a8c"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/merge-requests.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c362e1c23da196ad429b9feeca12e9c660308b87789dfdcd0a1d8221643216a3"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/organizations.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a0856774e526ddcaef873179fa5844d64e157fb18b857956fa30ad745a096200"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/personal-access-tokens.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2f465c6e2486d83f7070bad626ff41abb6a8f02e5a3ec7cff1cd29d99e4ceda2"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/personal-namespaces.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "692f71ab9605843ffb42b9101539673d45397c1a6d7c75dd5514ea76fe008d78"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/project-transfer.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "528d5c7c6da8680a9745700b32c069d0727409fedba7337997698b50c50d9f38"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/router-endpoints-classification.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "beea36762323a2e6768671e99884182d786a325abac460c1067bca0d311b5363"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/schema-changes.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d0eca3ecb92d0f57539aa25d3c6e052855c03e6784e38c01a6d1b5b4e232144c"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/secrets.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "168475288982d7f6757b8f8b1884a6600cf43af80c1fceadd23ba4069fc21db6"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/snippets.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4972e481f6a2d085614dfb2ead46021910329da0835b2552653a0d696543bcdc"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/template.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3c5685513ef8022786fd158e25e5031a120f3e1c247cce0209c64ca6f3ded1d4"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/uploads.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "92fe1de27bd11f1177b2b00e17ee3f177b17c32ef90fdb236e88b75454eddd12"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/user-profile.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9f95b2ad7a81c046eeeb7b23fb35a3a4121411e5de6ed84f936afde1292e3024"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/your-work.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9c3f5e74882021fe4f8bf449fc01663fac963e5728cd3eeb508d646ed6fd3e9b"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/infrastructure/_index.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9e127f80353830c59f1f26045d1d665441a3682743e7295850a9495c443d7d65"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/infrastructure/cell_arch_tooling.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6cd833a1ec235ce635fe62d825c6cdf335391bc3fa60585ce2831a769736b908"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/infrastructure/deployments.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3e963fdc37126fdd80d22de2b0bdca9bf14daf58610e4db0bd4632aa3e2da112"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/infrastructure/diff-between-dedicated.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bd2688783d4e24b9bed4cd7c24c8ef44651d54a82e014013303be759f86c3978"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/infrastructure/disaster_recovery.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f949df3ea8f448bb61a98256f2fbbd1f3e1310757df63588c9940c3d7b262bb0"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/infrastructure/feature_flags.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6a5fe4ade24f85d94e140b5ec9d8a65fdf84f1a1568e1ccfac5975ab8a8dcbb2"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/infrastructure/managing_changes.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2724ac218e70f219d12d50edb0f0a1768a488b12999c211d6b0c3a853126bc07"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/infrastructure/networking.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f96596ed7faf4db397e6696ec095a472fb33472b686b4425ba15cc6774f790d8"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/infrastructure/observability.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fcb87cbcb9c47367a27c9e503a77f592faa63180ec9c2d01163c021b74863564"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/infrastructure/postgresql.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1959295746ed80eaf7794623a62098865aee645aedd3e312d0f09034750efe40"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/infrastructure/runner.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "76118837c47c6273fc206103f7bfea2e62bb561fb20aefeb679ff8f621da32ce"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/iterations/cells-1.0.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "37541a54f9a34012b5fd15b0e4fd2f4aa6c33942ad337f38438bc09802c5f031"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/iterations/cells-1.5.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0c8756159133cb3655f4eb7fea39eef7b659653184359b00a55c49245c094cf9"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/iterations/cells-2.0.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c95f010e0f596e9869f340102c5c044da53abbe3cffc2d5c4c47c101c2a32717"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/mutual_authentication_between_cell_services.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f25792a07fad0c55e6643bc50f387233d2f9b1d77699db6c100f64ffd17beb84"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/proposal-admin_area_setting_sychronization_in_cells.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e240ebfc99b021551b3ff4f588768d32f10104808c537b3796ac07f32e3e48d1"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/rejected/deployment-architecture.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a80f5a1882b2e5726182dc7c1ca27fe65d91a415e6c9cf40ebde9e743a260c70"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/rejected/proposal-stateless-router-with-buffering-requests.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1fc18b35caad4e145ec4ffc82fb7d54554299b87f71422300e84621450b44e4f"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/rejected/proposal-stateless-router-with-routes-learning.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e47c7572d1881d062a9eb65ee2071406206cf1a99393b1306548e08420e5596a"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/routable_tokens.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "34f9df28a8d18f11d55b15cd27cdfe631ba3bf28beddca737e8790bcd554ddc2"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/ssh_routing_service.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "be50691ba46ad03eb9df15a3f9185005bc2dd076011bc2532ee733850012ec40"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/topology_service.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bf4efed7867a0d29e488649c17d93146eb7a5d44f2131a8c2a1c856cc0756c10"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/topology_service_transactional_behavior.md": {
+      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "50fb95399e39b951835dc77f49c8145671dbb2ab7912552e2026b6af65d25726"
+    },
     "content/handbook/engineering/architecture/guidelines/_index.md": {
       "path": "content/handbook/engineering/architecture/guidelines/_index.md",
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
