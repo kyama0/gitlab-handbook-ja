@@ -59,13 +59,12 @@ h3 > a > sup {
 // 表示される。lg+ では sidebar 側を非表示にし、navbar の search に統合。
 // モバイル (< lg) では navbar 側の search が `d-none d-lg-block` で
 // 隠れているため、sidebar 側がそのまま表示される (UX 維持)。
-// Bootstrap の lg breakpoint は 992px。_variables_project.scss は
-// Bootstrap mixin を読み込む前に評価されるため、`@include
-// media-breakpoint-up(lg)` ではなく素の @media を使う。
-@media (min-width: 992px) {
-  .td-sidebar__search {
-    display: none !important;
-  }
+// サイドバー側の search 領域は full-width で表示する (検索バー風)。
+// navbar 側は別の見た目 (ピル型トリガー、後述) で並立可能なため、
+// 旧コミットで lg+ では非表示にしていたルールは廃止。
+.td-sidebar__search {
+  width: 100%;
+  padding-right: 0;
 }
 
 // =====================================================================
@@ -128,19 +127,39 @@ h3 > a > sup {
   }
 }
 
-// サイドバー (mobile) コンテキストの色補正: 背景が明るいので
-// ボタンを暗めの透明にする。
+// サイドバー側のトリガー: navbar 側のピル型に対し、こちらは
+// サイドバー幅いっぱいに伸びる検索バー風 (左寄せ、ラベル + Ctrl K
+// ヒントは右端に押しやる)。背景はサイドバーの明色トーンに合わせる。
 .td-sidebar__search .header-search-trigger {
-  background: rgba(0, 0, 0, 0.05);
-  border-color: rgba(0, 0, 0, 0.15);
-  color: #1f2937;
+  width: 100%;
+  justify-content: flex-start;
+  border-radius: 1.25rem;
+  padding: 0.4rem 0.9rem;
+  font-size: 0.85rem;
+  background: rgba(0, 0, 0, 0.04);
+  border-color: rgba(0, 0, 0, 0.12);
+  color: #4b5563;
+
   &:hover, &:focus-visible {
-    background: rgba(0, 0, 0, 0.1);
-    border-color: rgba(0, 0, 0, 0.3);
+    background: rgba(0, 0, 0, 0.08);
+    border-color: rgba(0, 0, 0, 0.25);
+  }
+
+  // sidebar context: ラベルは常に表示し、kbd ヒントは右端に押しやる
+  .header-search-trigger__label {
+    display: inline;
+    flex: 1;
+    text-align: left;
+    color: #6b7280;
   }
   .header-search-trigger__kbd {
-    color: rgba(0, 0, 0, 0.65);
-    > span { border-color: rgba(0, 0, 0, 0.3); }
+    display: inline-flex;
+    margin-left: auto;
+    color: rgba(0, 0, 0, 0.55);
+    > span { border-color: rgba(0, 0, 0, 0.25); }
+  }
+  .header-search-trigger__icon {
+    color: #6b7280;
   }
 }
 
