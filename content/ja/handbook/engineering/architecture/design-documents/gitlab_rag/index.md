@@ -1,0 +1,217 @@
+---
+title: "GitLab における検索拡張生成（RAG）"
+status: ongoing
+creation-date: "2024-02-20"
+authors: [ "@maddievn", "@mikolaj_wawrzyniak", "@dgruzd" ]
+coach: [ "@stanhu" ]
+approvers: [ "@pwietchner", "@oregand", "@shinya.meda", "@mikolaj_wawrzyniak" ]
+owning-stage: "~devops::data stores"
+participating-stages: ["~devops::ai-powered", "~devops::create"]
+toc_hide: true
+upstream_path: /handbook/engineering/architecture/design-documents/gitlab_rag/
+upstream_sha: 9e852ac812142230dfe1e1db31be2862cd857cfd
+translated_at: "2026-04-27T10:36:33Z"
+translator: claude
+stale: false
+---
+
+
+<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
+このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
+</div>
+
+<div class="overflow-x-auto my-4">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-100 text-left">
+<th class="px-3 py-2 border border-gray-300">Status</th>
+<th class="px-3 py-2 border border-gray-300">Authors</th>
+<th class="px-3 py-2 border border-gray-300">Coach</th>
+<th class="px-3 py-2 border border-gray-300">DRIs</th>
+<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
+<th class="px-3 py-2 border border-gray-300">Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">ongoing</span></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/maddievn" class="text-blue-600 hover:underline">@maddievn</a>, <a href="https://gitlab.com/mikolaj_wawrzyniak" class="text-blue-600 hover:underline">@mikolaj_wawrzyniak</a>, <a href="https://gitlab.com/dgruzd" class="text-blue-600 hover:underline">@dgruzd</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/stanhu" class="text-blue-600 hover:underline">@stanhu</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/pwietchner" class="text-blue-600 hover:underline">@pwietchner</a>, <a href="https://gitlab.com/oregand" class="text-blue-600 hover:underline">@oregand</a>, <a href="https://gitlab.com/shinya.meda" class="text-blue-600 hover:underline">@shinya.meda</a>, <a href="https://gitlab.com/mikolaj_wawrzyniak" class="text-blue-600 hover:underline">@mikolaj_wawrzyniak</a></td>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::data stores</span></td>
+<td class="px-3 py-2 border border-gray-300">2024-02-20</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## ゴール
+
+このブループリントの目的は、デプロイメントタイプを問わず GitLab における RAG の実行可能なオプションを説明することです。私たちの AI 機能—ひいてはお客様—に最高クラスのユーザー体験を提供する RAG 実装を説明することを目指します。
+
+## GitLab における RAG の現状
+
+| 機能 | 現行 | 非推奨 | 進行中 | リンク |
+|---------|---------|------------|----------|-------|
+| Duo Chat の RAG: ドキュメント Q&A | [Vertex AI Search](vertex_ai_search.md) %17.0 でリリース | [PGVector 拡張を使った Postgres](postgresql.md) %16.0 でリリース、%17.0 で非推奨 | [AI Context 抽象化レイヤー](../ai_context_abstraction_layer/_index.md)が完成次第、埋め込みを移行可能 | [GitLab Duo RAG ブループリント](../gitlab_duo_rag/_index.md) |
+| 検索機能の RAG: ハイブリッド Issue・エピック検索 | [Elasticsearch](elasticsearch.md) %17.6 でリリース | | | [ハイブリッド Issue 検索エピック](https://gitlab.com/groups/gitlab-org/-/epics/13474) |
+| 将来の RAG 機能 | | | [AI Context 抽象化レイヤー](../ai_context_abstraction_layer/_index.md)が Elasticsearch、OpenSearch、または Postgres 上の GitLab データの埋め込みストレージと検索をサポートする | [AI Context 抽象化レイヤーブループリント](../ai_context_abstraction_layer/_index.md) [AI Context エピック](https://gitlab.com/groups/gitlab-org/-/epics/16008) |
+
+## RAG の概要
+
+RAG（検索拡張生成）は、いくつかの主要なプロセスブロックを含みます:
+
+- **入力変換**: このステップでは、ユーザーの入力を処理します。入力は自然言語テキストから JSON やキーワードまでさまざまです。効果的なクエリ構築のために、LLM を使用して入力を標準的な期待フォーマットに変換したり、特定のキーワードを抽出したりすることがあります。
+- **検索（Retrieval）**: ここでは、ベクトルデータベース、グラフデータベース、リレーショナルデータベースなどの多様なストレージエンジンを含む指定されたデータソースから関連データを取得します。このフェーズ中に[データアクセスチェック](#data-access-policy)を実施することが重要です。取得後、生成されたレスポンスの品質を高めるために、データを後処理して LLM 向けに最適化するべきです。
+- **生成**: このフェーズでは、取得したデータでプロンプトを作成し、LLM に送信します。LLM はそれを受けて AI パワードのレスポンスを生成します。
+
+![Current page](/images/engineering/architecture/design-documents/gitlab_rag/blog_figure-1.jpg)
+
+（画像出典: [Deconstructing RAG](https://blog.langchain.dev/deconstructing-rag/)）
+
+## RAG の課題
+
+### LLM 向けデータ
+
+LLM 向けにデータを最適化することは、一貫して高品質な AI レスポンスを生成するために重要です。LLM にコンテキストを提供する際にはいくつかの課題があります:
+
+- **長いコンテキスト:** 長大なコンテキストは LLM のパフォーマンスを低下させる可能性があります。これは「Lost in the Middle（中間で迷子）」問題として知られています。Reranker を使用するとパフォーマンスが向上する可能性がありますが、処理時間が長くなるため計算コストも増加する可能性があります。
+- **重複コンテンツ:** 繰り返しのコンテンツは検索結果の多様性を低下させる可能性があります。例えば、セマンティック検索が「Tom は大統領である」を示す 10 件の結果を返しても、11 件目に「Tom はアメリカに住んでいる」という情報があった場合、上位 10 件のみを使用すると重要な情報が省略されます。最大限界関連性（MMR）などを通じて重複コンテンツをフィルタリングすることでこの問題を軽減できます。
+- **矛盾する情報:** 複数のソースから矛盾するデータを取得すると LLM の「幻覚」につながる可能性があります。例えば、「RAG」を異なる方法で定義しているソースを混在させると LLM が混乱します。慎重なソース選択とコンテンツのキュレーションが不可欠です。
+- **無関係なコンテンツ:** 無関係なデータを含めると LLM のパフォーマンスに悪影響を与える可能性があります。関連性スコアの閾値を設定するか、一部の無関係なコンテンツが実際に出力品質を向上させる可能性を考慮することが、この課題に対処するための戦略です。
+
+LLM パフォーマンスを最大化するための最適なデータフォーマットとサイズを評価することを強く推奨します。パフォーマンスと結果品質への影響は、データの構造に基づいて大幅に変わる可能性があるためです。
+
+参考文献:
+
+- [Benchmarking Methods for Semi-Structured RAG](https://youtu.be/KMZZh7Z5mno?si=-Gr-acXcjg7QXmBU)
+- [Edge cases of semantic search](https://youtu.be/DY3sT4yIezs?feature=shared&t=1382)
+
+#### 埋め込みの再生成
+
+AI 分野は急速に進化しており、ユーザー体験を向上させる可能性のある新しいモデルやアプローチが毎日のように登場しています。モデル切り替えコストを意識したいと思います。モデルを変更したり、チャンキング戦略を変更したりする場合（2 つの例として）、既存の埋め込みをすべて削除し、新しいモデルの埋め込みや新しいテキストチャンクなどで完全に置き換える必要があります。影響を受けるデータの埋め込みの完全な再生成の必要性をトリガーする可能性のある考慮すべき要因には以下が含まれます:
+
+- テキストチャンクの最適サイズの変更
+- 前処理ステップの変更（例えば、テキストチャンクに新しいフィールドを追加するもの）
+- 以前に埋め込まれていたフィールドの削除などのコンテンツの除外
+- 埋め込む必要がある新しいメタデータの追加
+
+### マルチソース検索
+
+複雑なクエリに対応するには、複数のソースからデータが必要な場合があります。例えば、Issue とマージリクエストを結びつけるクエリは両方の詳細の取得が必要です。[ReACT フレームワーク](https://arxiv.org/abs/2210.03629)を使用する GitLab Duo Chat は、PostgreSQL テーブルから順次データを取得しますが、複数のツールと LLM 推論の逐次実行により取得プロセスが長くなる可能性があります。
+
+## データの検索
+
+適切な検索方法の選択は、機能設計と UX 最適化にとって極めて重要です。以下に一般的な検索技術を示します:
+
+### 埋め込みを使用したセマンティック検索
+
+セマンティック検索は、単なる単語ではなく、言葉の背後にあるコンテキストや意図の理解を求める複雑なクエリを処理するときに真価を発揮します。完全な文章や質問など、特定のキーワードの重要性よりも全体的な意味が優先される自然言語で表現されたクエリに特に効果的です。セマンティック検索は、クエリで直接言及されていない関連概念をキャプチャし、より微妙または間接的に関連する情報を明らかにすることで、トピックの包括的なカバレッジを提供することに優れています。
+
+セマンティック検索の領域では、埋め込みを使用してユーザー入力に意味的に近いデータセグメントを識別するために K 近傍法（KNN）メソッドが一般的に使用されます。意味的な近さを測定するために、さまざまな方法が使用されます:
+
+- **コサイン類似度:** ベクトルの方向のみに焦点を当てます。
+- **L2 距離（ユークリッド距離）:** ベクトルの方向と大きさの両方を考慮します。これらのベクトルは「埋め込み」として知られ、データソースを埋め込みモデルで処理することによって作成されます。現在、GitLab 本番環境では、Vertex AI が提供する `textembedding-gecko` モデルを使用しています。ただし、コストを削減するために HuggingFace で利用可能なものなど、代替の埋め込みモデルを使用することを検討するシナリオもあるかもしれません。異なるモデルを選択する場合、選択したモデルの使用が GitLab ポリシーに準拠することを確保するために、法務チームとの包括的な評価と協議が必要です。詳細については [Security, Legal, and Compliance](https://gitlab.com/gitlab-org/gitlab/-/blob/52f4fcb033d13f3d909a777728ba8f3fa2c93256/doc/architecture/blueprints/gitlab_duo_rag/index.md#security-legal-and-compliance) セクションを参照してください。また、多言語サポートは埋め込みモデルによって大きく異なる可能性があり、モデルの切り替えはリグレッションにつながる可能性があることも重要です。
+
+大規模なデータセットには、クエリパフォーマンスを向上させるためのインデックスの実装が推奨されます。近似最近傍（ANN）検索と組み合わせた HNSW（Hierarchical Navigable Small World）メソッドは、この目的に人気のある戦略です。大規模アプリケーションでの HNSW の有効性についての洞察は、[大規模アプリケーションでのパフォーマンスに関するベンチマーク](https://supabase.com/blog/increase-performance-pgvector-hnsw)を検討してください。
+
+既存の Elasticsearch のフレームワークとスケーラビリティのため、[Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/451431)、マージリクエストなどの大規模なデータセットの埋め込みは Elasticsearch に保存されます。これは[ハイブリッド検索](https://gitlab.com/gitlab-org/gitlab/-/issues/440424)の実行に使用されますが、重複の検索、類似結果、ドキュメントの分類などの他の機能にも役立ちます。
+
+### キーワード検索
+
+キーワード検索は、ユーザーが検索意図について明確で、正確な用語やフレーズを提供できる単純で特定のクエリに最適です。このメソッドは完全一致の取得に非常に効果的で、構造化されたデータベース内での検索や、特定のドキュメント、用語、フレーズを探す場合に適しています。
+
+キーワード検索は、データベースまたはドキュメントコレクション内のコンテンツとクエリ用語を直接照合する原則で動作し、クエリ用語の頻度が高い結果を優先します。その効率性と直接性は、特定のキーワードやフレーズに基づいて迅速で正確な結果を期待するユーザーにとって特に有用です。
+
+Elasticsearch はキーワード検索を実行するために BM25 アルゴリズムを使用します。
+既存の[インデックス化されたドキュメントタイプ](https://docs.gitlab.com/ee/integration/advanced_search/elasticsearch.html#advanced-search-index-scopes)がカバーされていない場合、[新しいドキュメントタイプ](https://docs.gitlab.com/ee/development/advanced_search.html#add-a-new-document-type-to-elasticsearch)を追加できます。
+
+### ハイブリッド検索
+
+ハイブリッド検索は、セマンティック検索の深さとキーワード検索の精度を組み合わせ、コンテキスト豊かなクエリと特定のクエリの両方に対応する包括的な検索ソリューションを提供します。セマンティック検索とキーワード検索の両方を同時に実行することで、両方の方法の長所—セマンティック検索のコンテキストを理解する能力とキーワード検索の完全一致を識別する精度—を統合します。
+
+両方の検索の結果は、関連性スコアを正規化して統一された結果セットを提供するために結合されます。このアプローチは、クエリがどちらの方法だけでは完全にサービス提供できないシナリオに特に効果的で、複雑な検索ニーズに対してバランスのとれたニュアンスのあるレスポンスを提供します。セマンティック検索の一部である kNN 検索の計算上の要求と、[BM25](https://pub.aimind.so/understanding-the-bm25-ranking-algorithm-19f6d45c6ce)キーワード検索の相対的な効率性を対比することで、ハイブリッド検索は多様なデータセット全体のパフォーマンス最適化のための戦略的な選択となります。
+
+最初のハイブリッド検索スコープは Issue であり、埋め込みを使用した kNN マッチとキーワード検索を組み合わせます。
+
+### コード検索
+
+上記の他のデータタイプと同様に、ソースコード検索タスクは異なるクエリに対応するのにより適したさまざまな検索タイプを使用できます。
+
+2 つのコード検索が利用可能です: `Elasticsearch` と `Zoekt`。
+
+Elasticsearch は[高度な検索構文](https://docs.gitlab.com/ee/user/search/advanced_search.html#syntax)をサポートする Blob 検索を提供します。
+
+[Zoekt](https://docs.gitlab.com/ee/architecture/blueprints/code_search_with_zoekt/index.html) は、ソースコードの完全一致キーワード検索と正規表現検索機能を提供するために GitLab.com で使用されています。
+
+コードのセマンティック検索とハイブリッド検索機能はまだ実装されていません。
+
+### ID 検索
+
+Issue リンクなどの特定のリソース ID を使用したデータ取得を容易にします。例えば、Issue リンクやショートカットなどの特定のリソース ID からデータを取得します。詳細は [ID 検索](postgresql.md#id-search)を参照してください。
+
+### Knowledge Graph
+
+Knowledge Graph 検索は、グラフ形式で表現されたデータの相互接続された性質を活用することで、従来の検索方法の限界を超えます。コンテンツの類似性に焦点を当てるセマンティック検索とは異なり、Knowledge Graph 検索は異なるデータポイント間の関係を理解・活用し、データの豊かでコンテキスト的な探索を提供します。
+
+このアプローチは、より広いコンテキストやデータエンティティの相互接続性の理解から恩恵を受けるクエリに理想的です。グラフデータベースはデータと並んで関係を保存し、これらの接続をナビゲートして高度にコンテキスト的でニュアンスのある情報を取得できる複雑なクエリを可能にします。
+
+Knowledge Graph は、推薦システム、複雑なデータ分析、セマンティッククエリなど、エンティティ間の関係への深い洞察を必要とするシナリオに特に有用で、大規模な相互接続されたデータセットを探索・理解するための動的な方法を提供します。
+
+## セキュリティ、法律、コンプライアンス
+
+### データアクセスポリシー
+
+検索プロセスは [GitLab データ分類基準](/handbook/security/policies_and_standards/data-classification-standard/) に準拠しなければなりません。
+ユーザーがデータへのアクセス権を持っていない場合、GitLab はプロンプトの構築のためにそのデータを取得しません。
+
+例えば:
+
+- データが GitLab ドキュメント（GREEN レベル）の場合、認証なしにデータを取得できます。
+- データが Issue、マージリクエストなどのお客様データ（RED レベル）の場合、権限とロールに基づいた適切な認証でデータを取得しなければなりません。
+
+外部の公開データベースからデータを取得することを提案している場合（例: LLM が量子生物学に関する質問に答えられるように `arxiv.org` からデータを取得する）、外部データが GitLab が処理するのに不適切でないことを確認するために徹底的なレビューを実施してください。
+
+### データ使用
+
+新しい埋め込みモデルの使用や新しいストレージへのデータの永続化には[法律レビュー](../../../../legal/)が必要です。詳細については以下のリンクを参照してください:
+
+- [データプライバシー](https://docs.gitlab.com/ee/user/gitlab_duo/data_usage.html#data-privacy)
+- [データ保持](https://docs.gitlab.com/ee/user/gitlab_duo/data_usage.html#data-retention)
+- [トレーニングデータ](https://docs.gitlab.com/ee/user/gitlab_duo/data_usage.html#training-data)
+
+## 評価
+
+評価は検索プロセスの品質を客観的に判断するための重要なステップです。特定のユーザーフィードバックに基づいて検索プロセスを調整すると偏った最適化につながり、他のユーザーにとってリグレッションを引き起こす可能性があります。包括的な品質評価のために専用のテストデータセットとツールを持つことが不可欠です。AI 評価の支援については、Global Search チームに連絡してください。
+
+## RAG を実装する前に
+
+システムに検索拡張生成（RAG）を統合する前に、それが AI 生成レスポンスの品質を向上させるかどうかを評価することが重要です。以下の本質的な質問を検討してください:
+
+- **典型的なユーザー入力はどのようなものか？**
+  - 例えば、「このリポジトリで外部 HTTP リクエストを行うためにどのクラスを使うべきか？」
+- **望ましい AI 生成レスポンスは何か？**
+  - 例: 「このリポジトリでは、Class-A が...に一般的に使用されています」
+- **LLM からの現在のレスポンスは何か？**（これにより、LLM が必要な知識をすでにカバーしているかどうかを判断するのに役立ちます。）
+  - 例: Anthropic Claude 2.1 モデルから「申し訳ありませんが、その答えがありません。」というレスポンスを受け取る。
+- **LLM のコンテキストウィンドウに必要なデータは何か？**
+  - 例: Class-A のコード。
+- **類似タスクに現在使用されている検索方法を考慮する**（自分に問いかける: 手元のツールを使ってこのデータを現在どのように検索するか？）
+  - 例: コード検索ページに移動して「http」の出現箇所を探す。
+- **サンプルデータで望ましい AI レスポンスの生成に成功したか？** サードパーティのプロンプトプレイグラウンドや Google Colab で実験してみてください。
+- **セマンティック検索を検討している場合**、特定の検索ニーズを満たすことを確認するために、まずプロトタイプを開発することを **強く推奨** します。セマンティック検索は、特にデータソースにコメントのないコードなど自然言語のコンテキストが欠けている場合、予想とは異なる方法でクエリを解釈する可能性があります。このような場合、セマンティック検索は従来のキーワード検索ほど機能しない可能性があります。CI ジョブ設定のセマンティック検索をデモンストレーションする[プロトタイプの例](https://colab.research.google.com/drive/1K1gf6FibV-cjlXvTJPboQJtjYcSsyYi2?usp=sharing)はこちらです。
+
+## 評価済みソリューション
+
+以下のソリューションは、GitLab ドキュメントを使用した GitLab Duo Chat のベクトルストレージと検索の基本要件を満たすことを確認するために PoC によって検証されています。各ソリューションの RAG に関連する属性の詳細についてはリンクをクリックしてください:
+
+- [PostgreSQL with PGVector](postgresql.md)
+- [Elasticsearch](elasticsearch.md)
+- [Google Vertex](vertex_ai_search.md)
+
+[GitLab Duo Chat PoC](../gitlab_duo_rag/) の詳細については、以下を参照してください:
+
+- [PGVector PoC](../gitlab_duo_rag/postgresql.md)
+- [Elasticsearch PoC](../gitlab_duo_rag/elasticsearch.md)
+- [Google Vertex PoC](../gitlab_duo_rag/vertex_ai_search.md)
