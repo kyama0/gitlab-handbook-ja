@@ -87,7 +87,7 @@ TBD
 
 ## ユーザーはいつ Organization を見ることができるのか？
 
-Organization の公開設定の詳細については、[公開設定](_index.md#visibility) を参照してください。
+Organization の公開設定の詳細については、[公開設定](index.md#visibility) を参照してください。
 
 ## ユーザーは Organization 内で何を見ることができるのか？
 

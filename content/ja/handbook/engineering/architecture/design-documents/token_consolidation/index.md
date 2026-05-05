@@ -1,0 +1,183 @@
+---
+# This is the title of your design document. Keep it short, simple, and descriptive. A
+# good title can help communicate what the design document is and should be considered
+# as part of any review.
+title: トークンの統合
+status: proposed
+creation-date: "2025-02-23"
+authors: [ "@ifarkas" ]
+coaches: [ "@grzesiek" ]
+dris: [ "@hsutor", "@adil.farrukh" ]
+owning-stage: "~devops::software_supply_chain_security"
+participating-stages: []
+# Hides this page in the left sidebar. Recommended so we don't pollute it.
+toc_hide: true
+upstream_path: /handbook/engineering/architecture/design-documents/token_consolidation/
+upstream_sha: d5f4aa38819ae2b572eb32e0d967394d0361a975
+translated_at: "2026-04-27T10:00:00Z"
+translator: claude
+stale: false
+---
+
+<!-- Design Documents often contain forward-looking statements -->
+<!-- vale gitlab.FutureTense = NO -->
+
+<!-- This renders the design document header on the detail page, so don't remove it-->
+
+<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
+このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
+</div>
+
+<div class="overflow-x-auto my-4">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-100 text-left">
+<th class="px-3 py-2 border border-gray-300">Status</th>
+<th class="px-3 py-2 border border-gray-300">Authors</th>
+<th class="px-3 py-2 border border-gray-300">Coach</th>
+<th class="px-3 py-2 border border-gray-300">DRIs</th>
+<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
+<th class="px-3 py-2 border border-gray-300">Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">proposed</span></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/ifarkas" class="text-blue-600 hover:underline">@ifarkas</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/grzesiek" class="text-blue-600 hover:underline">@grzesiek</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/hsutor" class="text-blue-600 hover:underline">@hsutor</a>, <a href="https://gitlab.com/adil.farrukh" class="text-blue-600 hover:underline">@adil.farrukh</a></td>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::software_supply_chain_security</span></td>
+<td class="px-3 py-2 border border-gray-300">2025-02-23</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## 概要
+
+トークンの統合は、分散したトークンの状況を統一されたフレームワークに変換し、
+すべてのトークンタイプにわたって一貫したセキュリティとトークン管理機能をもたらし、
+重大なセキュリティと運用上のリスクに対処することを目指しています。
+
+標準化されたトークンフレームワークを実装することで、セキュリティを強化し、
+メンテナンスのオーバーヘッドを削減し、ユーザーエクスペリエンスを改善します。
+
+提案されるアプローチは 3 つのフェーズで構成されています：
+
+1. コアフレームワークとアーキテクチャの構築。
+2. 既存のトークンタイプを統一フレームワークに移行する。
+3. レガシーのユーザーフローを廃止する。
+
+## 動機
+
+GitLab は 20 種類以上の異なるトークンタイプを提供しています。
+既存のトークンタイプを活用して適応させるのではなく、チームはしばしば新しいトークンタイプを
+作成してきました。これにより、セキュリティが一貫していない分散したトークンの状況、
+管理機能の不整合、セキュリティのギャップ、機能の重複、複雑さの増加が生じました。
+
+確立されたトークン標準にもかかわらず、多くの重要なセキュリティ機能が欠如しているか、
+異なるトークンタイプ間で一貫性のない実装がされています：
+
+- 暗号化ストレージ
+- 合理的な最短有効期限のサポート
+- 細粒度のアクセス制御
+- ログ、監査、トークン使用の可視性
+- 設定可能なトークンプレフィックス
+- ローテーション
+- 自動的な再利用検出
+- 保持コントロール
+- Cells と Organizations のためのルーティング可能性
+- 有効期限
+
+トークン実装間のこの不整合は、システムの複雑さを増大させ、
+組織全体で均一なセキュリティ基準を強制することを困難にしています。
+
+大量のトークンタイプを維持することは、長期的なメンテナンスの負担を大幅に増加させます。
+セキュリティ更新や新機能が必要な場合、各トークンタイプを個別に修正、テスト、
+メンテナンスしなければなりません — これにより、開発を遅らせ、不整合、
+セキュリティのギャップ、潜在的な脆弱性のリスクを増大させる継続的なメンテナンスの課題が生じます。
+
+### 目標
+
+- すべてのトークンタイプの基礎的な構成要素として統一トークンを確立する
+- トークンを中心とした認証と認可のモデルを標準化する
+- すべてのトークンタイプにわたって一貫した機能を有効にすることでセキュリティを強化する
+- 冗長なトークン実装を排除することで保守性を改善する
+- トークンの使用と管理を簡素化することでユーザーエクスペリエンスを改善する
+
+### 非目標
+
+- トークン交換サービスの定義
+
+## 提案
+
+トークンの統合は、階層化されたモデル（L0（レルム）、L1（リージョン）、L2（デプロイメントユニット））を導入する新しい認証アーキテクチャと統合されます。統一トークンは、L2 セキュアトークンサービス（STS）によって発行された署名付き JWT です。
+
+### トークン形式
+
+署名付き JWT を使用するメリット：
+
+- クレームやその他のメタデータの組み込みサポート
+- デジタル署名により真正性を確保し、改ざんを防ぐ
+- 自己完結型の認証と認可データ
+- ルーティングメタデータをトークンに直接埋め込める
+
+### ストレージ
+
+トークンデータは 2 つのデータベースシステムに格納されます：
+
+- IAM データベース（L1 および L2）：認証と検証のためのトークンハッシュ。L0 経由で L1 にレプリケートされます。
+- `gitlab-rails` データベース（L2）：リソースのアソシエーション、名前、使用状況トラッキングを含むトークンメタデータ。
+- L2 が信頼できるデータソースです。
+
+### サービス統合
+
+GATE 内で、IAM サービスは以下のために STS に委任します：
+
+- トークンの発行
+- トークンの失効
+
+### 失効
+
+失効リストは L1/L2 で維持され、L0 では OAuth サービスが調整します：
+
+- L2：権威あるデプロイメントユニットデータベースでの即時失効
+- L1：リージョンの分散データベースにレプリケートされた失効リスト
+- L0：OAuth サービスがレルム全体の調整を処理
+
+### 有効期限
+
+有効期限のないトークンは廃止されます。統一トークンはさまざまな有効期限のオプションをサポートします：
+
+- OAuth アクセストークンのような短命トークン（2 時間で期限切れ）
+- 個人アクセストークンのような長命トークン（最大 1 年）
+
+有効期限のない既存のトークンは、有効期限を使用するよう移行が必要です。
+これにより、すべてのトークンが有効期限を持つことが保証され、セキュリティが強化されます。
+
+### 権限
+
+トークンの権限は、最小権限アクセスを維持しながら柔軟性を確保する `scope` クレームに基づいて設定されます。スコープは現在の `api` スコープのように汎用的にも、特定のユースケース（例：プロジェクトレベルのアクセス）に対して細粒度にもできます：
+
+```json
+"scope": {
+  "read_project": ["gid://gitlab/Project/42"]
+}
+```
+
+### Cells との互換性
+
+統一トークンには、追加のルックアップオーバーヘッドなしに所有する Cell への効率的なルーティングを可能にするルーティングメタデータが含まれています。このメタデータは JWT クレームに直接埋め込まれており、ルーティングレイヤーがデータベースルックアップなしに正しい Cell にリクエストを転送できるようにします。
+
+### 既存トークンの統合
+
+トークンを作成、管理、監視する統一的な方法を提供する、トークン管理のための集中インターフェースが導入されます。
+
+既存のトークンはバックエンドとして統一トークンを使用するよう移行し、実装を標準化します。各トークンタイプの移行パスは、機能の同等性、セキュリティへの影響、ユーザーへの影響を考慮して個別に評価されます。移行後、それらの管理は統一トークン管理インターフェースを通じて利用可能になります。
+
+ユーザーワークフローが統一トークンモデルに移行するにつれて、元のトークンとレガシートークンフローを UI から廃止・削除できます。この段階的なアプローチにより、新しいトークンフレームワークへのシームレスな移行を確保しながら中断を最小限に抑えます。
+
+## 代替案
+
+- 何もしない: 既存の問題は未解決のまま残る；分散したトークンの状況が続く。
