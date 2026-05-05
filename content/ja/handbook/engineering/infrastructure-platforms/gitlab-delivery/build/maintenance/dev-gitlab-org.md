@@ -50,22 +50,22 @@ stale: false
 安定性を確保するために行われます。
 
 1. まず、ダウングレードするインストールバージョンの詳細と関連するIssueへのリンクを記載した
-   team-tasksの[issue-tracker]にIssueを作成します。Issueを自分にアサインします。
+   team-tasksの[issue-tracker]にIssueを作成してください。Issueを自分にアサインしてください。
 
-1. 次に、パッケージをダウングレードする前に`#announcements` Slackチャンネルでアナウンスします：
+1. 次に、パッケージをダウングレードする前に`#announcements` Slackチャンネルでアナウンスしてください：
 
     ```text
     I will be manually downgrading package on dev.gitlab.org to <version> as latest nightly is not working as expected. <link to issue>
     ```
 
-1. アップグレード中にデータが変更されないよう、sidekiqとunicornを停止します。
+1. アップグレード中にデータが変更されないよう、sidekiqとunicornを停止してください。
 
     ```bash
     sudo gitlab-ctl stop sidekiq
     sudo gitlab-ctl stop unicorn
     ```
 
-1. 前の動作していたバージョンのパッケージを見つけてダウングレードします：
+1. 前の動作していたバージョンのパッケージを見つけてダウングレードしてください：
 
     ```bash
     sudo apt-get install gitlab-ce=<インストールするバージョン>
@@ -79,27 +79,27 @@ stale: false
 
     これにより自動的にreconfigureが実行され、必要な変更が適用されます。
 
-1. reconfigureが完了したら、すべてのサービスが稼働していることを確認します。
+1. reconfigureが完了したら、すべてのサービスが稼働していることを確認してください。
 
     ```bash
     sudo gitlab-ctl status
     ```
 
-1. `https://dev.gitlab.org/help`にアクセスして、正しいバージョンがデプロイされていることを確認します。
+1. `https://dev.gitlab.org/help`にアクセスして、正しいバージョンがデプロイされていることを確認してください。
 
-1. 自動アップグレードを防ぐためにパッケージのホールドを作成します：
+1. 自動アップグレードを防ぐためにパッケージのホールドを作成してください：
 
     ```bash
     sudo apt-mark hold gitlab-ce
     ```
 
-    そしてホールドが設定されていることを確認します。
+    そしてホールドが設定されていることを確認してください。
 
     ```bash
     sudo apt-mark showhold
     ```
 
-1. `#announcements`チャンネルに戻り、ダウングレードが完了したことを知らせるメッセージを残します：
+1. `#announcements`チャンネルに戻り、ダウングレードが完了したことを知らせるメッセージを残してください：
 
     ```text
     Downgrade completed. The package has also been put on hold to prevent automatic upgrades. <link to issue>

@@ -49,7 +49,7 @@ Distributionチームはコードレビュープロセスで[Reviewers機能](ht
 
 マージリクエストが事前レビューなしにメンテナーに直接アサインされた場合、利用可能なレビュアーにアサインすることをお勧めします。レビュアーに直接アサインされた場合は判断を使ってください。すぐに対応できない場合は、別のレビュアーを見つけるようにしてください。
 
-## サービスレベル目標
+## サービスレベル目標 {#service-level-objective}
 
 取り組むマージリクエストを探す際は、[GitLab Review-response SLO](/handbook/engineering/workflow/code-review/#review-response-slo)を検討してください。そのDeadlineを超えそうなものを最優先で確認します。
 

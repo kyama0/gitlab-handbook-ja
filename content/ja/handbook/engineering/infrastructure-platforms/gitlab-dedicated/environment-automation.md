@@ -15,17 +15,7 @@ Environment Automation は [Dedicated グループ](/handbook/engineering/infras
 
 ## チームメンバー
 
-
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-dedicated/environment-automation/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
-
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-dedicated/environment-automation/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
-
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-dedicated/environment-automation/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
 
 ## 私たちとの連携
 
