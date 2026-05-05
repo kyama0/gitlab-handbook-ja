@@ -2994,6 +2994,438 @@
       "input_hash": "55aa6586a4bd8f994dd70acacf65654fb467458264b3a9869e32a191d98c0f3a",
       "path": "content/handbook/customer-success/product-usage-data/using-product-usage-data-in-gainsight.md"
     },
+    "content/handbook/customer-success/professional-services-engineering/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:19:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "830bf9373c3b5f5396280fb60c32bbd48810832c98f6104c53cec9311b4c7464"
+    },
+    "content/handbook/customer-success/professional-services-engineering/development-environment.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:19:14Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2316aa22a621d0fa98bf7ed5bc718361b9de0d5487707a69264f95536278235a"
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5332b7024f5049225152b5d9ab79ab7ddbb5b0be3574ad4206b006fe28086bcf"
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/aws-marketplace.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f0664c29bf02ad6fe467fed5f9fed20282d2bd08e696ab380441a81d7f174d01"
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/gitlab-certified-engagement-manager.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "644f612dd0fb1bf56d4d955fac9f05543586bdbb966228b632df083f53083963"
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/scoping-information/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cf4cf68f15248d0c238793add7240edc7c0395c07960f0ee4cd77ed10d1dd38d"
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/scoping-information/ci-pipeline.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3b168b3326fbf4769af9ee8287046a42c3528d0233dffcd266cf4dae6823f629"
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/scoping-information/implementation.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cd17ad7336fb75370f9da97f12c88aa7b41d6904c6483a74b9b38b2a5d4892d3"
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/scoping-information/migrations/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9ceff1c0e891d21dc11a4d82a8002a194660d67b006b7739f554db38240d5021"
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/scoping-information/migrations/sm-to-saas/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/scoping-information/readiness.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4f7002d353b82291fd629a1f77864c0a236b9843cb4afe0c4ec35db1368653d3"
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/scoping-information/transformational-services.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "36bcd09b8445c36f3e683ae8c9ba84fecb087059441cbfde6cb93fb88e32c542"
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/sow-processing.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2d78b727eb616e1a8a763d91e4ff5fc5562d6dd91dca664177b8ff5794ca23a3"
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/task-prioritization.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "28e5b4cffcc6cfe5d2585cbf48d7c8812e631f1ee25aa84d15f76ce39f95219d"
+    },
+    "content/handbook/customer-success/professional-services-engineering/engagement-mgmt/tracking-opps.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ea0cd4dd3f14e9b67f810f9cd85b50554dcddb224c403892641b53f86c8c2790"
+    },
+    "content/handbook/customer-success/professional-services-engineering/examples/partner_invoice_mockup.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3b02372cc623d9370ac8cfb6f36dd15a1f318bfa5b2e6e696d365ed28fe244fc"
+    },
+    "content/handbook/customer-success/professional-services-engineering/framework.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2905a149e670fa7ebd73ec4f4fa75abf41880d399ca513d1fcc3271ac158fd89"
+    },
+    "content/handbook/customer-success/professional-services-engineering/gitlab-certified-migration-services-engineer.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "084c6583ac4a43427a2c93cf42f048dc7ad40938647d48e686289263e86c3240"
+    },
+    "content/handbook/customer-success/professional-services-engineering/gitlab-certified-trainer-process.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3e602c7a7f7c618249a2529af07f99e9b6897305a04fc8e0a834a157aabbbdaa"
+    },
+    "content/handbook/customer-success/professional-services-engineering/gitlab-technical-certifications.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3649b54c210701cd21be1402b5bc7d4a6f0ab00331552b9c3aa5be2ed355cde5"
+    },
+    "content/handbook/customer-success/professional-services-engineering/instruct-dev.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c97d9a4f43ca5bfa00e629af0199c023c5ecd7b22511d09b3f6b8487ffaa55ed"
+    },
+    "content/handbook/customer-success/professional-services-engineering/offerings.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "70d8e661f54121bc5ad0d9b774ce1a8c2e4bb17c18e2678f3a31faa044d2d36e"
+    },
+    "content/handbook/customer-success/professional-services-engineering/partner-collaboration.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "872c57cfe1f6e2ff001e83ea5cf04704558b08e11ea548bf8058675d8ebdc0d7"
+    },
+    "content/handbook/customer-success/professional-services-engineering/positioning/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/customer-success/professional-services-engineering/practice-mgmt.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "55a6dcbaa3af74bb24510e95ae544a50694cacd99d9ce5142323617f4d575aeb"
+    },
+    "content/handbook/customer-success/professional-services-engineering/processes/delivery-checklists.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e1f449c9543338171e6810cf00b9ecd4fa02b81e12dbe5d6481f3f2a156305ca"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1085fb0272800f71a4bd9a153b8077ea8d2d55685d9dc3613a76d0342c80057a"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/agile-to-gitlab-terminology/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7b0175261c0c3fa2206e7c453289f70ebcefc952085d53519b98c21efa68f51f"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/archetype-definition/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "efb334ecdb2032434fa9277aec7161fbbf38e3b282ec95d3810f73f345cd9930"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/backlog-management/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "43f5b45f2b4b7fb2cea45b5c8eef53f713072c0dca72108da34256c27d7164dd"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/cp/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0538ea22231522a7c4c77e77c1bbc243dc14fc9eae84e0c4319b53cf95bde2e7"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/definition-of-done/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fdde03a63001d140edf05b582580e311f6772a2a1402397e112edfed30955078"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/definition-of-ready/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b2fd2113c0fcfff350ee5174dbab7724583aa1b2b9930c5a584acbbf9bebf12b"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/discovery/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "65a1e3d3789da5f244acfc5416c5422c053eb37465279bbd769ebfb3773c495d"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/gitlab-best-practices/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0b4dee00ec47267280afe5640e9ffcd968ca6f52084b26d6ad677ac1e638cb41"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/good-estimation-techniques/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6f9fe8a1c83a47b609e437f589a1037229f21b2be6e1f1d61864efc6bf86b00f"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/good-user-stories/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b7ab872a3e4469e90d863d8fa4124af37eba0a4c107209202fe4360c5eef069d"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e608cf0cd6c179184a9e49ecaf377ae96a918ac9f724b2223e0affe544b85740"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/iteration-0/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ffd8d5cf7b9d36b93c9fb1db76d3702f54a653c2e0301c6d2a452da5c49310ab"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/iteration-planning-per-service-offering/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d4b69be2c995e9868519de0c0cb92e0dfdef95a6519a0bc5bba70f9949119224"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/iteration-scheduling/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1b7c5fb29846019a1ad6375bc661348657463b92c87f5bfdb805f2d571d6e5bf"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/manage-risk/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "79aac00bd553c51118f511c1d14749dd75e72c5f44e0f191534d116631729cd6"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/retrospectives/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f3353f30716928b4da6ba6d78fa9db76ef64028b28d253b036b95910b915ab21"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-operations/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5457ee6b625453f8c4bfcb38a53b69a12a8b730934a57b6b4748756b09f03c67"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-operations/mavenlink-processes/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-presale-methodology/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "edc3ba271b6e0bdf88a3b9547cf30def9be1eae70606e1b5abdeb9ddb5bc4890"
+    },
+    "content/handbook/customer-success/professional-services-engineering/professional-services-tooling.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "627faf541c4d00349ea81e1acce5e77fa1bbc32674cb75a156f6ff9fbc4d16bd"
+    },
+    "content/handbook/customer-success/professional-services-engineering/project-mgmt/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "70d90999feb1b4628496aa9749f9e009d32946218360d7beb29a96033e399092"
+    },
+    "content/handbook/customer-success/professional-services-engineering/remote-training-session-setup.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f462ed87f22fb8368fda4458cb2a4fae8b7481d6fadaed7c71e07137aa877043"
+    },
+    "content/handbook/customer-success/professional-services-engineering/remote-training-tips.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8b2a3eefd7005b47b9f608d4bc6a8f584fab5ee44b56de511fffced1994c0543"
+    },
+    "content/handbook/customer-success/professional-services-engineering/sales-enablement.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6ea4ecbc3abe9db4067fd3c813b47265e369c5f1bbd4a2944efc0af55d80a616"
+    },
+    "content/handbook/customer-success/professional-services-engineering/selling.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d10b0dd0839678e3079965ee94fc61b57296b76ac430cabad0d5e860dc7fc89e"
+    },
+    "content/handbook/customer-success/professional-services-engineering/skus.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a6a356d91b722a373fd1a7906170205f4faf011d1736125bb47fa790e17c3eee"
+    },
+    "content/handbook/customer-success/professional-services-engineering/technical-architect/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": ""
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6949fe3cb4ab2a8d06ed9c3957c9ad3ef61711d6454aee2ccd5710e2c64b24e9"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/artifacts/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2515754c6f0ff1d6b41efabb0b2230dfe23b0f730bca8a304da345e67a206eaa"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/artifacts/after-action.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "747307403b263d4f3e8016312bb62158674898920fdf6040224151488d2e7029"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/artifacts/arch-diagram.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "036420d6ca2762d109e5edf4b17d78ddf706ded83ac0bc1d3251bacbfc601b57"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/intake/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7b1bedd0ca2278b398b673c441d669fb48657bbd87095e6a107065c4a0c4d01e"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/intake/aws.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cf68ffe8115247f2c39e132584fc1d792dd69d517e86d71c3c6e94f1b2963e9b"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/intake/on-prem.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2c26b95b1bc41a73bb11c339fcb0efa700b9ee3fb276add058729361ad92e6f0"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/internal/15minute-standup.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a77e6fe3ea947e6ebad460c39e072deb4ed76fc2c56bebf5d976423a68285231"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/internal/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "97af55a0c21de3d3c5c62421bba2bf13b858c4f6f29c9034f7128bf21bb8f060"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/internal/biz-ops.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a853ab27d4dfce22d82cb24227011228fe62f5c4b9e4e0d19b29eb77e4fc5c71"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/internal/root-cause-analysis.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f9e8467b2f6b1b0e77c9acb9a1b1a90467d3a948b7fe388395f68c1c4eb3da9b"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/process.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "245e72e6be82f67a3821605cecddd86e43fad8f008eed21ab6ea7b04b76cf81c"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/project-execution/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1d22fd378d8dd7d4ff5f578a6ce4933b40876d8a37b8ac539a14d67272a338f1"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/project-execution/calls.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "668d32d4a38946849b8636dcfa523572162b7febb6ceb0e9922ff26944f592ac"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/project-execution/kick-off.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d6ed2857cd8c263d0aee6dc898cca753082da3e2c164db486eecbd3a8dc244ec"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/project-execution/sign-off.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "40ea159fae99187cd83cafd1f9b9320fb4e5be1ecabe0e55293bc84e9abc3253"
+    },
+    "content/handbook/customer-success/professional-services-engineering/workflows/project-execution/welcome-email.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "573aa4acb0d9d5c215ef472bba83d8c18843126799374a95f1596e62eea1494b"
+    },
+    "content/handbook/customer-success/professional-services-engineering/working-with.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T03:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2fd5e4381a8fc83639b21eb30b0a2a1f841b3f8b5a6006e01937c3fac16bbd75"
+    },
     "content/handbook/customer-success/public-sector/_index.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-26T03:00:00Z",
