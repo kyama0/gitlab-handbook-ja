@@ -693,6 +693,498 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "5e6ba63cf8410a3556a02a83fc6100e03944efbb8646dc7689008aa4937afc41"
     },
+    "content/handbook/company/culture/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5fe15b8d807ff8bcf492093c230d92ebc60d234ed23b88c8f036364c1724ee06"
+    },
+    "content/handbook/company/culture/all-remote/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c79ca92890a2dd6194c7b5c9ca85a236d96f78d1e2fa09bebc9d5f0d867b60b7"
+    },
+    "content/handbook/company/culture/all-remote/asynchronous.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5f2b15120ab7bcecc2fbfbe73375a1cedddf9932003cdfd96acac9a44ff4ad18"
+    },
+    "content/handbook/company/culture/all-remote/being-a-great-remote-manager.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "756ef93bae25ca7a5f0e3f6298824cf29e4bc34ca2aaa0bab3f6debe64798a69"
+    },
+    "content/handbook/company/culture/all-remote/building-culture.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "13a9907140c940c9ee8b9db91f767ce3fd23fd32875bde0350c879a0659b0b71"
+    },
+    "content/handbook/company/culture/all-remote/collaboration-and-whiteboarding/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "82c29c9d81f77ce1765ccf4abeb59c12fff0d1ccd13b79c4fc90ad853eb533bd"
+    },
+    "content/handbook/company/culture/all-remote/collaboration-and-whiteboarding/setups.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "12b19fd286bb98c810ae30c6cf6a4b6ef2a98cc40fb306976274eb3f9944854f"
+    },
+    "content/handbook/company/culture/all-remote/drawbacks.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4f65371e2ede35db73724c6adc79c200cb7aa58f7bea932a113059ea0afec7ec"
+    },
+    "content/handbook/company/culture/all-remote/getting-started.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "72e3355b1acfd763e30939610000aa5ce31cc60cb5cb625d51d12b46fd236509"
+    },
+    "content/handbook/company/culture/all-remote/gitlab-for-remote.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "135d2823cf7408d78d4d61c5624cd85ee1cae1523313270213753482a6449745"
+    },
+    "content/handbook/company/culture/all-remote/guide/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "068afe048a2cd22d367deb5d548573d1c66dcc71545eefca1791b2617823b857"
+    },
+    "content/handbook/company/culture/all-remote/guide/design.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3e0f72a5aad1bb9b51f93b496892b82b394faabec9126cbc41706becb1dcb1fc"
+    },
+    "content/handbook/company/culture/all-remote/guide/finance.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8ccae92b25b8ad10755d1b26024cc9bd06cbf9bd2edd5f84efad38353d9776e2"
+    },
+    "content/handbook/company/culture/all-remote/guide/legal.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "94ebb48a829884e6239251bcbd29b24c652bd22f5698a2ffe4c25621c8a0a4c0"
+    },
+    "content/handbook/company/culture/all-remote/guide/people-operations.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3cbecb7fd3cf58a0ed5e4be5660bacde77ef13abf51ef51e4dd98c393a2074b4"
+    },
+    "content/handbook/company/culture/all-remote/handbook-first.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c64fdb51caade5d2c1202a8bd3c351145122451364c4f11a2515abde4de52524"
+    },
+    "content/handbook/company/culture/all-remote/informal-communication.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6cc32f9395ce458a77f6af86d73717e79deebbe233d65f2f12ed6252a06059ab"
+    },
+    "content/handbook/company/culture/all-remote/internship.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8af90acf865d54949db41f64df1a9644437234edf1fa89c4033510dec36d530f"
+    },
+    "content/handbook/company/culture/all-remote/live-doc-meetings.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ae3a3c774742f6431fd3b96b61b6bffab3ab2173cda3551717ad4ecaee3297ec"
+    },
+    "content/handbook/company/culture/all-remote/meetings.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "677bab66bd8e257ec39e75aef48f1082cfebeaecb320ad05a54fa24909eb26be"
+    },
+    "content/handbook/company/culture/all-remote/mental-health.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "22ab4a4fb5a5847db4994cd154e10702fc9e59bce2447341f8b1f63fd5931287"
+    },
+    "content/handbook/company/culture/all-remote/non-linear-workday.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4b8fddc7537575b819e1bd197efc2a9e94127f9eb329d0c0dedd3ea9ba1eb3ed"
+    },
+    "content/handbook/company/culture/all-remote/onboarding.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7a58beb180aac2b3f36631d80e23921c7275fa5b7e00737dd969511eeb6f01d0"
+    },
+    "content/handbook/company/culture/all-remote/parenting.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "08860da84b1c107c8df5758f815201d35bbf7b90240c9d5b4d2d58f966169dae"
+    },
+    "content/handbook/company/culture/all-remote/phases-of-remote-adaptation.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "922858c547232ae4d15ebfc2fcc9f681557f344ef9a28eb5520c3aeae345b8c3"
+    },
+    "content/handbook/company/culture/all-remote/remote-benefits.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d5621dc54796410ef816c72bb851363903a8fcb261b2deecd6b77d3055d8761d"
+    },
+    "content/handbook/company/culture/all-remote/remote-vision.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c04abafd6576f2034bb0b1c10909be678b0568540c63e5669c92e587dd865004"
+    },
+    "content/handbook/company/culture/all-remote/remote-work-emergency-plan.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a3df33319f09f91be763d82cf6b8d8d62c75824f705e4f29c5979d2bed9c9ea7"
+    },
+    "content/handbook/company/culture/all-remote/remote-work-report.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5198c372bb5862b64f3032c61f851184d952ed4ffd16bcbcdea5f55d925ce834"
+    },
+    "content/handbook/company/culture/all-remote/remote-work-starter-guide.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6645c4978ee98a669dea146f8f2eab315b61fda42552fcafe395e629d79318ac"
+    },
+    "content/handbook/company/culture/all-remote/scaling.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ac36bbb845381ef83ad8f7ce3c2e0c4386403240f40c6501cbf4fd9976095ec2"
+    },
+    "content/handbook/company/culture/all-remote/stages.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7f5177519074a90b67bb0315fa8c26dd232c4a90a1aada54b2998ad4e82aa49b"
+    },
+    "content/handbook/company/culture/all-remote/terminology.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T06:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "32ae3ca716086de80fbf71d2e65ddf73a6e8cd1368fbc9d6d73d9a7224c1eaa3"
+    },
+    "content/handbook/company/culture/all-remote/the-gitlab-test-remote-work.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2c9166832ca6c60e441652177303eab15a56a76cbd371640cf1484262d0d5a36"
+    },
+    "content/handbook/company/culture/all-remote/what-not-to-do.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "80e7022f438b7160fec65e65b59d93f6cba55691db17d2391abb41112dc19018"
+    },
+    "content/handbook/company/culture/all-remote/work-from-home-field-guide.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3233c274249e00e45810d52ec57315212f9c8a01f77a4ceb4a47582f4869d585"
+    },
+    "content/handbook/company/culture/all-remote/working-while-traveling.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a64309032534a28be7b0b7ce676a754dc1e03a95907b336898bbe83e0596ec63"
+    },
+    "content/handbook/company/culture/all-remote/workspace.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "25d4895ecbad85e98ff9e8fe4e004a0e88f6fba2ca9190e48b6d4bc09cf3c918"
+    },
+    "content/handbook/company/culture/cross-culture-collaboration-guide.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6b66dd7ffcbb00ab384cf8bbfcd2f08d88e99057800f8dda17cc2833403b121c"
+    },
+    "content/handbook/company/culture/ecoc.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "85ba0a3860cc25b61f75bcc3f5befa8078d17e35f6b8b98610340b2369100891"
+    },
+    "content/handbook/company/culture/exec-connect.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c69ac0c2ebb145eced8cff3a051c8e91badacf71af628d091133f25efd8fa819"
+    },
+    "content/handbook/company/culture/gitlab-101.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8dd79d221ee69efd861fc26192c5e50418fd285a0c8e75c3e6aa4d6efadc25a0"
+    },
+    "content/handbook/company/culture/inclusion/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d3781dc42e31835fc5e240a514ee12b222f6bfdd0d7fca558a180465a641e546"
+    },
+    "content/handbook/company/culture/inclusion/advisory-group-members.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b9ab8184aa7bf99e79fbfbb84cef670902e9ff702b22d73e5c5f9ba8e75076f8"
+    },
+    "content/handbook/company/culture/inclusion/being-an-ally.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f308b4d439f1918ae174b97759fa17c194fc1444968dfa52b641fe6c35dbe066"
+    },
+    "content/handbook/company/culture/inclusion/being-inclusive.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fc3c4ae1f23328852e406c54d8d224a579ece00795cc5ee3cbc0d19f1b5a43cf"
+    },
+    "content/handbook/company/culture/inclusion/dib-communications-strategy.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4cdbbd0eee84e375b0c3afe694e2aea4886b916fdcb6105abb22b2c45e765d3b"
+    },
+    "content/handbook/company/culture/inclusion/dib-speaker-series.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0a33561bf423830d4c495ab07931f450b0d0a2806591d836bd3497cee203445e"
+    },
+    "content/handbook/company/culture/inclusion/dib-sponsorship.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "13e7947f7ac92620658fe202e1e80a324b07d6e53d59bd2105b61d51559a20cb"
+    },
+    "content/handbook/company/culture/inclusion/dib-working-groups/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ed72ae823a05b4f93d04e78981584cde6ff8817319b201ac8152ab31fb975de5"
+    },
+    "content/handbook/company/culture/inclusion/dib-working-groups/inclusive-practices.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0ac26df5ef5978a40771c5f21a8b89d58d483e0f1ba58f49e7549e02fad46978"
+    },
+    "content/handbook/company/culture/inclusion/engineering-initiatives.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6cd1178a5a9519142dba0d4513306bbcec4be74c626d5db4a321af9569c20deb"
+    },
+    "content/handbook/company/culture/inclusion/identity-data.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "935ebb88daac9c20e9ff8705bba72f3cccbda569cf843882684c132bb648bc4c"
+    },
+    "content/handbook/company/culture/inclusion/leadership-dib-council/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "821b1922f3632ed9ab7fe52c0badd899696b72d50f0b97887227c7d9d355e5c9"
+    },
+    "content/handbook/company/culture/inclusion/neurodiversity-and-neuroinclusion/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4bc7b21641160d25f294887d59019ce55f3aadbc4c00ca2ec94f2ace4406115c"
+    },
+    "content/handbook/company/culture/inclusion/neurodiversity-and-neuroinclusion/neurodiversity-resources.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "67c282fdc1f0b9458efdec83a75fc32c1db3176b02e171eea94a27ef69e41e99"
+    },
+    "content/handbook/company/culture/inclusion/neurodiversity-and-neuroinclusion/neuroinclusion-in-practice.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "79f0f484d4d84ac56c7b37a152e8f9f47863f72b9e3f0971407e5c506195c5ca"
+    },
+    "content/handbook/company/culture/inclusion/neurodiversity-and-neuroinclusion/understanding-neurodivergence.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "58ba8370023cbffd123191500fd0d1235ff7f2eafaa32fee8686f23ddb49e269"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c6058577de283e169be8df2cafdb7330533bf73cb62d51ff54d46caa0e076e4e"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/erg-gitlab-diversability.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "75bc4c66ca9dd60bb5d17292ce4332a32aae96118b1fee038de4ea3536c489c2"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/leaders/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "12818bf69cc3ef80dd98e688f82565fe3ec43f23755a6ec5a6fbc3597e5aeccc"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/leaders/definitions.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9d9d3804fb8e4e394af8797c0d222eaa6260c9ffca2335511b172500ecd57be7"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/leaders/event-planning.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0b20d4c465737b3955afa7b4f81c4bcced5e397b39a7af3fd9f139adee44a323"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/leaders/executive-sponsorship.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5e6109a5dbb9d18de6ca0c5dde087a3180587670469ae2d6a84f6cb52c1802e8"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/leaders/measuring-impact.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4f5868c4fc3fb6785fd54e49f68401f6794db917da6fab64a5935600bc57c969"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/leaders/quarterly-planning.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1f547e1fafe483f2210610ae0406380fd57bc8f3d7d837a79fa25257dbb3b5bc"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/leaders/templates.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a3ea5416855071813109b16907b21754eba42655ef3ddb05f86b8e54ce769bd4"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/tmag-gitlab-generational-understanding.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "98018b03ad395918a9c85848d46fe84ea874388ab5a60e17769a1648c2bc6689"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/tmag-mental-health.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7216d12fd2627049b71d7aa24ff1cd951f693f0eea67f151709cd96a8ac5e490"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-caregivers.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "03f5af8e56b251914506645dced7c4aec33c0f9241a06c6805ea628d3d992e05"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-api.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "574bc696cc0e840e4a706235555a31664803a4b56f5555b799fa4090fa005530"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-black/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2c973816630a8157e8f56cdb83515423742380999ab4dde2fe6220e0e732c94f"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-gente.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T10:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4374bc16f35d2c9e4570810e5596c454cbc4e4d575480f13e99f1ba47a001454"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-pride/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8d50ae058f19b9e0a53fcdffd6fbf9b2abbf6a027ff81cefd648a61ac2e00a12"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-pride/mentorship-program.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d20052c0f7661e53c6564830c38d0d5c4494f1a7511e3653f09152ac0fa3f4b9"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c2df568cda95d0b84f793507855f0ed5b07e50842d8b978687adb75850ad3122"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/agile-career.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "32d2699af6434c1831707261c56821cf551157f04189c5a84f5821343741ffe0"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/mentorship-program.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "353256de93c517814534e1ae6215cb21d1f8be7c5ac2f83e538d272ee321d985"
+    },
+    "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-global-voices.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0a1b6337ab635d86c54420d534a3745418ac317084524f1ddc6a5d32762f9eda"
+    },
+    "content/handbook/company/culture/inclusion/unconscious-bias.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4fb839f376ac713344b76296bc66564256fb9df4e6d380d19a3f3ea0deb781be"
+    },
+    "content/handbook/company/culture/summit/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f006a61fced62bffa64b8515a921c6dcfde41bcdd6368ab569abf85866235bd2"
+    },
+    "content/handbook/company/culture/summit/previous.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1a0822296d9af2f4abab5c7fc845d2d54dd2a3e6765e2d99ba06bf2ca9879a89"
+    },
     "content/handbook/company/e-group-weekly.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
       "translated_at": "2026-04-25T12:00:00Z",
