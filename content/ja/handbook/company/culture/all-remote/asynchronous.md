@@ -15,7 +15,7 @@ stale: false
 ## 非同期（async）を始める方法
 
 ![GitLab customer path illustration](/images/all-remote/gitlab-customer-path.jpg)
-{style="max-width: 50%"}}
+{style="max-width: 50%"}
 
 GitLab は、オールリモートが[仕事の未来](remote-vision/)であると信じています。リモートワークを取り入れる第一歩は、非同期（async）ワークフローとコミュニケーションを理解し、*かつ* 非同期を**あなたのために機能させる**方法を理解することです。
 

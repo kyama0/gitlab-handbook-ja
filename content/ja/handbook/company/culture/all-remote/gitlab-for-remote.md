@@ -14,7 +14,7 @@ stale: false
 ---
 
 <div class="container">
-<div class="row my-5 5align-items-start">
+<div class="row my-5 align-items-start">
     <div class="col-8 d-flex align-items-center">
         <div>
             <p class="h3 mb-4">GitLab を使えば、組織内のすべてのチームが1つのプラットフォームで協力でき、完全な透明性、一貫性、追跡可能性でより速くビジネス成果を実現できます。</p>
