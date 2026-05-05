@@ -54,7 +54,7 @@ model: inherit
 3. ショートコード（`{{< ... >}}` 等）が原文と同じ位置に同じ数だけ・**同じ構文**で残っているか（HTML 展開しない）。
 4. ショートコードの開き／閉じのペアが揃っているか（特に `{{% details %}} ... {{% /details %}}`）。
 5. フロントマターが YAML として valid か（インデント・引用符）。
-6. 出力先のファイル名が upstream と同じか（`_index.md` を `index.md` にリネームしない）。
+6. 出力先のファイル名が upstream と同じか（`_index.md` を `index.md` にリネームしない）。**例外**: upstream のファイル名が `*.html.md` (legacy URL 互換用の二重拡張子) の場合は **`*.md` にリネーム**して書き出し、`aliases` フロントマターに upstream の URL (例: `/handbook/foo/bar.html/`) を追加すること。Pagefind が `*.html` で終わるディレクトリを誤読する問題の回避と URL 互換性維持を両立させる。`scripts/normalize-content-names.ts` をすでに翻訳済みのファイルに対する一括処理として用意してある (新規ファイルは agent 側でこのルールを守ること)。
 
 # 書き込み後
 
