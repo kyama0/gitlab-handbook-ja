@@ -7,21 +7,36 @@
    render する。本サイトは Pagefind を採用しているため、ここで直接 UI の
    マウントポイントとスクリプトを書き出す。
 
+   docsy のレイアウトは search-input.html を navbar (lg+ 表示) と
+   sidebar の両方から呼ぶため、同じ partial が 1 ページ内で複数回展開
+   される。そのまま `id="pagefind-search"` を固定値で書くと HTML の
+   id 衝突 + PagefindUI の二重初期化 (同一要素を奪い合う) が起きるので、
+   .Scratch でカウンタを持ち、各呼び出しに固有 id を割り当てる。
+
+   ホットリロードで Pagefind の UI 資産 (CSS/JS) が複数 link/script
+   として書き出されるが、ブラウザがキャッシュ重複を吸収するので動作
+   問題はない (整理したい場合は #1 のときだけ出す等で抑制可)。
+
    Pagefind index は CI/build パイプラインで `npx pagefind --site public`
    を hugo build の直後に実行することで生成される (ファイル: public/pagefind/
    配下)。<html lang="ja"> を見て Pagefind は CJK tokenizer を自動選択するため、
    日本語の検索もそのまま動く。
 */}}
+{{- .Scratch.Add "pagefindSearchIdNum" 1 -}}
+{{- $idx := .Scratch.Get "pagefindSearchIdNum" -}}
+{{- $id := printf "pagefind-search-%d" $idx -}}
 <div class="td-search td-search--pagefind">
-  <div id="pagefind-search"></div>
+  <div id="{{ $id }}"></div>
 </div>
+{{- if eq $idx 1 }}
 <link rel="stylesheet" href="/pagefind/pagefind-ui.css" />
 <script src="/pagefind/pagefind-ui.js"></script>
+{{- end }}
 <script>
   window.addEventListener('DOMContentLoaded', () => {
     if (typeof PagefindUI !== 'undefined') {
       new PagefindUI({
-        element: '#pagefind-search',
+        element: '#{{ $id }}',
         showSubResults: true,
         translations: {
           placeholder: '検索…',

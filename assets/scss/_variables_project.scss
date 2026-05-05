@@ -53,3 +53,17 @@ h3 > a > sup {
     vertical-align: middle;
   }
 }
+
+// docsy の sidebar partial は navbar とは別に search-input をレンダー
+// するため、デスクトップ (lg+) では navbar 側 search box と被って 2 個
+// 表示される。lg+ では sidebar 側を非表示にし、navbar の search に統合。
+// モバイル (< lg) では navbar 側の search が `d-none d-lg-block` で
+// 隠れているため、sidebar 側がそのまま表示される (UX 維持)。
+// Bootstrap の lg breakpoint は 992px。_variables_project.scss は
+// Bootstrap mixin を読み込む前に評価されるため、`@include
+// media-breakpoint-up(lg)` ではなく素の @media を使う。
+@media (min-width: 992px) {
+  .td-sidebar__search {
+    display: none !important;
+  }
+}
