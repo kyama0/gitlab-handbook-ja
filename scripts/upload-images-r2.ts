@@ -2,15 +2,17 @@
  * Sync images referenced by translated Markdown into the R2 bucket.
  *
  * Strategy:
- * - Walk `content/ja/handbook/**\/*.md` and collect every root-absolute
- *   asset URL (e.g. `/images/foo.svg`, both `<img src>` and `![](...)`).
+ * - Walk `content/handbook` and collect every root-absolute asset URL
+ *   (e.g. `/images/foo.svg`, both `<img src>` and `![](...)`).
  * - For each unique reference, look it up under `upstream/static/<path>`
  *   and upload to R2 with key `<path>` (no leading slash). That way the
- *   public bucket URL `${PUBLIC_R2_BASE}/<path>` matches the absolute path
- *   that lives in the Markdown source — the runtime remark plugin in
- *   `src/plugins/rewrite-asset-paths.mjs` just prefixes `PUBLIC_R2_BASE`
+ *   public bucket URL `<base>/<path>` matches the absolute path that
+ *   lives in the Markdown source — the Hugo image render hook
+ *   (layouts/_markup/render-image.html) prefixes `params.image_base_url`
  *   and the URL resolves.
  * - Idempotent: HEAD-checks each key and skips uploads that already exist.
+ *
+ * Env vars: R2_ACCOUNT_ID, R2_ACCESS_KEY_ID, R2_SECRET_ACCESS_KEY, R2_BUCKET.
  */
 import { S3Client, PutObjectCommand, HeadObjectCommand } from '@aws-sdk/client-s3';
 import { readFile, stat } from 'node:fs/promises';
@@ -38,7 +40,7 @@ const s3 = new S3Client({
   },
 });
 
-const TRANSLATED_ROOT = path.resolve('content/ja/handbook');
+const TRANSLATED_ROOT = path.resolve('content/handbook');
 const UPSTREAM_STATIC = path.resolve('upstream/static');
 const IMAGE_EXT = new Set(['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.avif', '.ico']);
 
