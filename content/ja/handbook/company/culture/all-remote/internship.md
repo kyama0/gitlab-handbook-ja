@@ -16,7 +16,7 @@ stale: false
 
 ## リモートインターンシップのメリットとは？
 
-![GitLab collaboration illustration](/images/all-remote/gitlab-collaboration-illustration.jpg)]
+![GitLab collaboration illustration](/images/all-remote/gitlab-collaboration-illustration.jpg)
 {style="max-width: 50%;"}
 
 リモートインターンシップがあらゆる組織に価値をもたらす理由は多岐にわたります。
@@ -46,7 +46,7 @@ stale: false
 
 ## リモートインターンシップが通常のインターンシップと異なる点は何か？
 
-![GitLab journey illustration](/images/all-remote/gitlab-journey-and-navigation.jpg)]
+![GitLab journey illustration](/images/all-remote/gitlab-journey-and-navigation.jpg)
 {style="max-width: 50%;"}
 
 リモートインターンシップには主に一つのユニークな点があります：物理的なオフィスが関与しないことです。インターンシップのおおよそのタイムライン（3〜6ヶ月）は、通常、リモートインターンシップでもほとんどのコロケーションインターンシップと同様です。インターンシップは仕事の基準が形成される場であり、リモートで行うには全員から特別なケアと配慮が必要です。
@@ -59,7 +59,7 @@ stale: false
 
 ## 雇用者が考慮すべき事項
 
-![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)]
+![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
 
 インターンが[自律的に動けるマネージャー](/handbook/values/#managers-of-one)になる準備ができていることはほとんどなく、企業はインターンにかなりのサポートが必要だと予想すべきです。
