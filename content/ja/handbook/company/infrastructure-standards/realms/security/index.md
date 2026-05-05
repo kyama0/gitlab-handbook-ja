@@ -1,6 +1,6 @@
 ---
-title: "Security レーム"
-description: "このレームは、エンジニアリングセキュリティチームが共有およびチーム固有のインフラリソースをデプロイするためのものです。"
+title: "Security レルム"
+description: "このレルムは、エンジニアリングセキュリティチームが共有およびチーム固有のインフラリソースをデプロイするためのものです。"
 upstream_path: "/handbook/company/infrastructure-standards/realms/security/"
 upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T15:43:48Z"
@@ -17,7 +17,7 @@ stale: false
 
 ## 概要
 
-このレームは、エンジニアリングセキュリティチームが共有およびチーム固有のインフラリソースをデプロイするためのものです。
+このレルムは、エンジニアリングセキュリティチームが共有およびチーム固有のインフラリソースをデプロイするためのものです。
 
 
 <div class="my-4 border border-sky-300 rounded overflow-hidden">
@@ -43,7 +43,7 @@ stale: false
 
 > メール認証のセキュリティ上の理由から、インフラリクエストにはオーナーまたはカウンターパートへの GitLab の Issue または Slack メッセージのみが許可されています。
 
-### レームオーナー
+### レルムオーナー
 
 | 名前                  | GitLab.com ハンドル | グループロール   | 役職                                            |
 |----------------------|-------------------------|------------------|-------------------------------------------------|
@@ -51,15 +51,15 @@ stale: false
 | Paulo Martins        | `pmartinsgl`            | カウンターパート  | Senior Security Engineer - Infrastructure       |
 | James Ritchey        | `jritchey`              | カウンターパート  | Sr. Manager, Product Security                   |
 
-## レームラベルとタグ
+## レルムラベルとタグ
 
-[グローバルラベル/タグ](/handbook/company/infrastructure-standards/labels-tags/)と[レームラベル/タグ](/handbook/company/infrastructure-standards/realms/security/labels-tags/)を各リソースに適用する必要があります。
+[グローバルラベル/タグ](/handbook/company/infrastructure-standards/labels-tags/)と[レルムラベル/タグ](/handbook/company/infrastructure-standards/realms/security/labels-tags/)を各リソースに適用する必要があります。
 
-## レームグループ
+## レルムグループ
 
 各 gl_dept_group には、グループメンバー向けの共有 GCP プロジェクトおよび/または AWS アカウントがあります。
 
-グループがまだ実装されていない場合は、レームオーナーにお問い合わせください。グループが実装されると、使用ドキュメントを含む個別のハンドブックページが作成されます。
+グループがまだ実装されていない場合は、レルムオーナーにお問い合わせください。グループが実装されると、使用ドキュメントを含む個別のハンドブックページが作成されます。
 
 | グループ名（AWS アカウント/GCP プロジェクト名） | 使用ドキュメント（空のセルはまだ実装されていません）                                                         |
 |-------------------------------------------|---------------------------------------------------------------------------------------------------------------------------------|
@@ -75,4 +75,4 @@ stale: false
 
 ## 使用ガイドライン
 
-これは、このインフラのベストプラクティスと使用ガイドラインに関するレームオーナーの指示のプレースホルダーです。
+これは、このインフラのベストプラクティスと使用ガイドラインに関するレルムオーナーの指示のプレースホルダーです。

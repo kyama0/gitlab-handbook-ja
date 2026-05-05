@@ -1,5 +1,5 @@
 ---
-title: "Sandbox レームのラベルとタグ"
+title: "Sandbox レルムのラベルとタグ"
 description: "このハンドブックセクションでは、GitLab の全部門・グループにわたる AWS および GCP のインフラ標準の最新イテレーションを定義します。"
 upstream_path: "/handbook/company/infrastructure-standards/realms/sandbox/labels-tags/"
 upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
@@ -10,7 +10,7 @@ stale: false
 
 ## クイックリンク
 
-- [インフラ標準 - Sandbox レームドキュメント](/handbook/company/infrastructure-standards/realms/sandbox/)
+- [インフラ標準 - Sandbox レルムドキュメント](/handbook/company/infrastructure-standards/realms/sandbox/)
 - [インフラ標準 - グローバルラベルとタグ標準](/handbook/company/infrastructure-standards/labels-tags/)
 - [インフラ標準 - ポリシー](/handbook/company/infrastructure-standards/policies/)
 - [インフラ標準 - チュートリアル](/handbook/company/infrastructure-standards/tutorials/)
@@ -24,7 +24,7 @@ stale: false
 
 各リソースに適用すべき[グローバルラベルとタグの一覧](/handbook/company/infrastructure-standards/labels-tags/)をご参照ください。
 
-### Sandbox レームラベル/タグ
+### Sandbox レルムラベル/タグ
 
 | スラグ/ラベル/タグ/キー                      | 使用方法         | 人間が読める名前               | ドキュメント |
 |-------------------------------------------|--------------------|--------------------------------|-----------------------------------------------------------------|
@@ -32,7 +32,7 @@ stale: false
 | `gl_sandbox_shutdown_working_hours`       | 任意           | 営業時間外のシャットダウン      | [使用ドキュメント](#shutdown-resources-outside-of-working-hours-gl_sandbox_shutdown_working_hours)              |
 | `gl_sandbox_shutdown_date`                | 自動計算        | シャットダウン日               | [使用ドキュメント](#expiration-date-for-resources-to-shutdown-gl_sandbox_shutdown_date)              |
 
-## シャットダウンまでの日数 (`gl_sandbox_shutdown_after_days`)
+## シャットダウンまでの日数 (`gl_sandbox_shutdown_after_days`) {#shutdown-after-days-gl_sandbox_shutdown_after_days}
 
 
 <div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
@@ -60,7 +60,7 @@ gl_sandbox_shutdown_after_days: '14'
 | `91` 〜 `365` | これらの値は使用できますが、インフラ/セキュリティレビューが実施されます。        |
 | `null`        | 電源をオフにしない常時稼働環境に推奨される値。`null` 値のすべての環境はインフラ/セキュリティレビューの対象となります。 |
 
-## 営業時間外のリソースのシャットダウン (`gl_sandbox_shutdown_working_hours`)
+## 営業時間外のリソースのシャットダウン (`gl_sandbox_shutdown_working_hours`) {#shutdown-resources-outside-of-working-hours-gl_sandbox_shutdown_working_hours}
 
 
 <div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
@@ -81,7 +81,7 @@ gl_sandbox_shutdown_working_hours: 'true'
 | `true`        | （デフォルト）`env_timezone` に設定された環境オーナーのタイムゾーンに基づき、夜間（18:00〜06:00）および週末にリソースを体系的にシャットダウンできます。これにより、週あたりのコンピューティング時間が168時間から60時間に削減され、65% の節約になります。 |
 | `false`       | すべてのリソースが中断なく24時間365日稼働します。月あたり720コンピューティング時間を消費します。 |
 
-## リソースのシャットダウン期限日 (`gl_sandbox_shutdown_date`)
+## リソースのシャットダウン期限日 (`gl_sandbox_shutdown_date`) {#expiration-date-for-resources-to-shutdown-gl_sandbox_shutdown_date}
 
 
 <div class="my-4 border-l-4 border-amber-500 bg-amber-50 px-4 py-3 rounded-r">
