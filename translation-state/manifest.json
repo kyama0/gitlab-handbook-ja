@@ -1439,6 +1439,708 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "0f31205e175e23c8d00ff225d05123485b85b437bee376c561783f353cd8e94d"
     },
+    "content/handbook/company/working-groups/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f8376aab06b838d169b94890d58a35bafc43341740011bc7f0f911a2054820f3"
+    },
+    "content/handbook/company/working-groups/account-escalation-process.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a238a8186684e2a31c29f0e52dde364d5aa3c8e391359fa1ff9b5f4e550666a9"
+    },
+    "content/handbook/company/working-groups/administration.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "bf2880df4e10f20779dd5537c623505048db6b2a250cac14a2a08e7453555292"
+    },
+    "content/handbook/company/working-groups/ai-integration.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "73c15377461cfeadb6b81ef65098286a13a8e0d678ab6effb604f0be814b5e46"
+    },
+    "content/handbook/company/working-groups/ai-native-hiring.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "efaf09a095767a2c00f3db71cacb940a4c62c2f04b65a4289c815c05e9f8a2f5"
+    },
+    "content/handbook/company/working-groups/ai-security.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "528db6cc9ba0daa31c54672da890de941a9b88be6037bcbe89ea5fe4d75a3a4c"
+    },
+    "content/handbook/company/working-groups/api-vision.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "45d50517b023e8b54894c5f1cb740dad6b9769501201ab5becf8ca349904a347"
+    },
+    "content/handbook/company/working-groups/architecture-kickoff.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f891f9401338f3e3cd794929e72083b3c2cd82d4abe4c51f1b1e776e3c0a38d6"
+    },
+    "content/handbook/company/working-groups/automotive-development.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "20355805b752eac6dfdfbf07312d718936f713672172cd39f0b307a63f078c36"
+    },
+    "content/handbook/company/working-groups/bounded-contexts.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T09:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "efa957b2c54fee71f569067d84b239a5b54a7bae8ac1a50b6fd3ed5a888580aa"
+    },
+    "content/handbook/company/working-groups/category-leadership.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e20068b8ad48e6c74e1b689c916de3f00953119652a08c63dbf143a8f2a70ad8"
+    },
+    "content/handbook/company/working-groups/china-service.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fbb37b1a9270fcc602c2d77c43a92680cc22fd0964ad3e27cb8e21e8fbbd21dd"
+    },
+    "content/handbook/company/working-groups/ci-build-speed.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "87e033a13b2a01992b4f004df7775c8e4fce4dbdcd4646a935373a978f2b5725"
+    },
+    "content/handbook/company/working-groups/ci-queue-stability.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0caab0e02392fffcc0161648b4069791a293336105e34c757588d370a62c6275"
+    },
+    "content/handbook/company/working-groups/clickhouse-datastore.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fad83fc0436d48f5a2afba60dd6337675e45142cf8ace791d1ad7468d98ebb4d"
+    },
+    "content/handbook/company/working-groups/cloud-native-tool-strategy.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e03d906403ef0ac27b073c6b7c6529563f7d480c645031c063f059104278bae1"
+    },
+    "content/handbook/company/working-groups/commercial-licensing.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6205c6fb35a1f4039f9261bda9bf53c923d3ba8902789d57d40be343593c0f88"
+    },
+    "content/handbook/company/working-groups/continuous-scanning.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2e3f8a77e62baaf317dc1399b300180bdd84172a2688776671fd3c688413ce61"
+    },
+    "content/handbook/company/working-groups/contributor-growth.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6d001613299a521f1342386c12f8abd1d86bca5539a6bd1fdcfd6a3d9f100edf"
+    },
+    "content/handbook/company/working-groups/cross-functional-prioritization.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5c515bbd26f29222bfe4ec87e70279242d6c0b1052dc2e0c0d16d457ecb87508"
+    },
+    "content/handbook/company/working-groups/customer-use-case-adoption.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9037eb3b224877621061054b58aae3a93582463ca3c1e37f4cff2d48e25541ac"
+    },
+    "content/handbook/company/working-groups/dashboards.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1dd0f90b9516d74e5d2ec6a631832a60405e4c15593eaee1a00c244c061afe9a"
+    },
+    "content/handbook/company/working-groups/data-poc.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6bf4fe7b6f717b2de921aeb4953387d7d6761a6d3a0635210e1e88be312465cb"
+    },
+    "content/handbook/company/working-groups/database-scalability/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c48ce7ff5f31c0531a6965adc424fdf50c19a80594619d924f47bb6f7a017b11"
+    },
+    "content/handbook/company/working-groups/database-scalability/read-mostly.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "48c1a630457d61648afc64aa6d4b2d586c8a2b30fbbe7ace737bf30ea7dc7424"
+    },
+    "content/handbook/company/working-groups/database-scalability/time-decay.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "559e5ab5e89ceeedbd2056e80c4e53f0332bbe5aefc3660218a59cc83dbf0042"
+    },
+    "content/handbook/company/working-groups/demo-test-data.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8ef4f25d246226077ffca53daf3eeb600458474ded804d9d04d4b57e7c16fb68"
+    },
+    "content/handbook/company/working-groups/development-metrics.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4a40cc91497df2e8f33b7112c3c80c6e67ac17be136381173984cc8665ccf5fd"
+    },
+    "content/handbook/company/working-groups/devsecops-adoption.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "66fc70c8a1250d09c0cb9a0feef8f04074688fdc7b5e843cd7cbb656bf3be134"
+    },
+    "content/handbook/company/working-groups/digital-smb-sa.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4e09b6354b8d9b74669a86b999469e7cf145c72c80e88cab1505eaf5d1095598"
+    },
+    "content/handbook/company/working-groups/disaster-recovery.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b9bc7ba2e963a9cde45a564c1adb64f0093fa32e441be8ae0d2828b20b208ddd"
+    },
+    "content/handbook/company/working-groups/dogfood-plan.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "264ed21bda2162a24b90b748bea47ebfb616420aa3805c666b06125b9b6aeeff"
+    },
+    "content/handbook/company/working-groups/ecommerce.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "48b578017f238eec3fbbba8b68978d1ffdb1b361ad0b522a6fdbf4ed76401048"
+    },
+    "content/handbook/company/working-groups/emerging-talent.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "36089f161e71925a2a11d8fe980253ccd1516bb68d21e31defc88c800f2fd34f"
+    },
+    "content/handbook/company/working-groups/engineering-career-matrices.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5efbaed67041d217629a91f80ae0539e8869ac77861101344155873ac85ebed0"
+    },
+    "content/handbook/company/working-groups/engineering-internship.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b10d656a41babf81b18c50f47cf3c3ecbc302b6d678a0199a1524392bc68a01a"
+    },
+    "content/handbook/company/working-groups/enterprise-market-leadership.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "16f698649e4a5bcdd6b11d6e32fcb445ef8a856874cf37ac8a4e8fe3b92436fc"
+    },
+    "content/handbook/company/working-groups/event-stream.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "fcd756d6ea2fba33fe6cbd3eaa10d815ec203dbfc11dbe6985bb376b2994930d"
+    },
+    "content/handbook/company/working-groups/expense-management.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "b93c768556a39b684c76a102602f396bae379edf40091725f31919c10dfdcad7"
+    },
+    "content/handbook/company/working-groups/experimentation.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3fd435d9668762b785cc5825e50622c6523888bc5d4b3ed7d724dc42cb1c79b2"
+    },
+    "content/handbook/company/working-groups/feature-flag-usage.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "469b50ead23d18c0eb0424d0ee23a97201019eaf53bb3861c9a2e313a13dc18b"
+    },
+    "content/handbook/company/working-groups/feature-testing.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "96de3b63ce827a882b9484414f7648b47dcec943adaabc25f98c8294508f535d"
+    },
+    "content/handbook/company/working-groups/fedramp-execution.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4b45bf7cfde652bd937872dda562b0b081a5cb6e7e924e80d77f7b0a5b6fe7a9"
+    },
+    "content/handbook/company/working-groups/frontend-observability.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "79bd337ff5b1cb03fb10272dc8d81d3351d96f14c5d4f39f2931702761e66a99"
+    },
+    "content/handbook/company/working-groups/frontend-vision.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "06e62269370323a077168e76b7e653f4b28ad791e3303b617c7d6ba7cd71cc0c"
+    },
+    "content/handbook/company/working-groups/fy21-product-engagement-actions.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2450a55ed203c473c7914c0dbfff48d47e7db8f42a3a9a63ec3c1ac5260468fe"
+    },
+    "content/handbook/company/working-groups/gcp-partnership.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "228a95311e0ee39f09f4dd082ad5bf6e9919d902853923a7928cb3df4ce1407a"
+    },
+    "content/handbook/company/working-groups/githost-migration.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "70fbbfcf9ba98a0ba98d1294bd01c6a4c8422c727a6f4ce3865e8f3bdf3ae320"
+    },
+    "content/handbook/company/working-groups/gitlab-com-cost.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7896f1a8496b27408289d2eeaf978eefd26c9433a76396da0604e35a29907a95"
+    },
+    "content/handbook/company/working-groups/gitlab-com-revenue.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3172cc5ca11bbe676354208c0aab98532146d7ae66d63bd200c8ff67b5863f85"
+    },
+    "content/handbook/company/working-groups/gitlab-com-saas-data-pipeline.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "11d90d66466ee32d3b54f8d0da37d0e65dc407d786d09b13c76e8ab1f0db45d5"
+    },
+    "content/handbook/company/working-groups/gitlab-dedicated.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "06a68a610c26033378991bc44d84c11891e778aa35eb4d034dced4bcb7054664"
+    },
+    "content/handbook/company/working-groups/gitlab-ui.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "972ab6bee9fa2f89f8bd0d3afde1ba43cb73cd06c653fb9ab98d6654436778dd"
+    },
+    "content/handbook/company/working-groups/globalization.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1f863bf5637d8345efd9fa13f2c8e28949e1ff248ac68d49be662b619b7c2afc"
+    },
+    "content/handbook/company/working-groups/hpt-product-division.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "580d19fe7358abf5b1e6e106190461a458f93bcd9338f55da1b39121cbc9fe44"
+    },
+    "content/handbook/company/working-groups/iacv-delta-arr.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e4c0bbb4193b3558ee7dfe4d08bf67acd53dd2fcbe65d19b885e47adc3665249"
+    },
+    "content/handbook/company/working-groups/ic-gearing.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "daa454243f67bf8b365332885039c2a77f73496e654b42ef187d431cfe3a3f36"
+    },
+    "content/handbook/company/working-groups/improve-ops-quality.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "e4d967e65f314f0869006275f94bb292c1c7d57854fe11a97debd476ce81a7b2"
+    },
+    "content/handbook/company/working-groups/incident-response-lifecycle.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4ae3fe8ed19c6788b6bc5fd6d4990cba5d2e29999a42835595a801dc210060cf"
+    },
+    "content/handbook/company/working-groups/internship-pilot.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "38d6776ea371a51f1c99e847ffb1aec77c14df74546a38f66492a23bd12b570d"
+    },
+    "content/handbook/company/working-groups/isolation/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ac59c50639e9e595e0cb232f2459121f7529f8f2cb030918ce2e2361e54102b3"
+    },
+    "content/handbook/company/working-groups/isolation/fault_tolerance.html.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a3097f48848e30846b6597dde8576a127ec6e19c0f02c039980f0195e25b7144"
+    },
+    "content/handbook/company/working-groups/issue-prioritization-framework.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f17bf81423ad6fcd45c86b7e1f5d5fdf467952932c62c9447660c8caf8d5dbb9"
+    },
+    "content/handbook/company/working-groups/keep-around-refs.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "0615aad6784f32f7b91299883c5330e1dcd3c3ffebf331a4e4cc7b0f72a4ab00"
+    },
+    "content/handbook/company/working-groups/leading-organizations.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d6e2552d88e09784a2b1d9655953340d5f4cd3a35fb333a5537d522e9ef4b9e7"
+    },
+    "content/handbook/company/working-groups/learning-experience.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "89344f5a95cfad46f02e3b9c40fc192b022fd356a5315b227acaacb3893b80a2"
+    },
+    "content/handbook/company/working-groups/learning-restructure.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "70216ba14f47cfea83d092b8ace7cc3a0f1242a83ae1857fe07c0bd2858e6730"
+    },
+    "content/handbook/company/working-groups/licensing-transactions-improvements.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8ca186079d6f17d2709e50f48f856bbd1b202336f6db2dc8890d071fbb751696"
+    },
+    "content/handbook/company/working-groups/lighthouse-metric-definitions.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d595ff37e39b29ebc1d95b7b6375cce2410c9f3ac1ff7414b9e3e7c1b1a7ca33"
+    },
+    "content/handbook/company/working-groups/log-aggregation.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "68f93c52822f73af648b19b43e2526939b29e109c120aac5af0f705cbde5c291"
+    },
+    "content/handbook/company/working-groups/logging.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c046b5c8254b9014770102259f75c4ed6cff9209cc3421e7b07d89b5ff85cd93"
+    },
+    "content/handbook/company/working-groups/maintainership.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a54389b219ab16a3c397dbb74bb7fad4126857758cff17c60fa988500f696215"
+    },
+    "content/handbook/company/working-groups/major-releases.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7add008ffacd7576890f1bcfaa12f18a1a2eeaa30d2a4eb756d0ac1c8d0e2966"
+    },
+    "content/handbook/company/working-groups/merge-request-report-widgets.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "09d22ab0f227d68b57aac20cb7449e36728949ff42f6adeb2c740adbbe5590ed"
+    },
+    "content/handbook/company/working-groups/mit-mentoring.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "ac7f42415e8bbc27740ddad381015431eab03ce45be9a1f36cd80fe0774806dc"
+    },
+    "content/handbook/company/working-groups/mlops.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "24f4c510bea28ee5fe6b26fb503becc6b8d5538a49bdbafe44a26fa8ef1cc7bf"
+    },
+    "content/handbook/company/working-groups/modern-applications-gtm.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d649986944c505ebf50234c7ebf24fda70a654e28725cf72b110d5d2bf556e29"
+    },
+    "content/handbook/company/working-groups/multi-large.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "714ea1840940d4a31523016142da735d56c5c508846ca8daef1f58edc6ab0ac6"
+    },
+    "content/handbook/company/working-groups/next-architecture-workflow.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a54b69f8292908345d687eca5d3fbf107d7b44a1a23839c1bd13cbf7cd7d4ad8"
+    },
+    "content/handbook/company/working-groups/object-storage.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "cc4155b591966bdd724a1ff538a135767581490d29c70eecf4bd71cdd91e8e39"
+    },
+    "content/handbook/company/working-groups/performance-indicators.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4b9124bcd1fec55eedf6a8807a0d029320d7580037928b6c8a34e6291c2469b0"
+    },
+    "content/handbook/company/working-groups/pipeline-validation-service-operations.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "2114dcd6e2a499c0fdff7d2127ebf0dab7e2b348eecb1da3c71942f40951509d"
+    },
+    "content/handbook/company/working-groups/product-accessibility.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "4cbd3d9484eca6ee48f8a1e9c439a4127b49c0f3d0392f7c3dc894e818191c19"
+    },
+    "content/handbook/company/working-groups/product-analytics-gtm.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9f73da9b85d6403d93cb34fb9af6769720d44b33b91867f4ff8b9844f1fd0411"
+    },
+    "content/handbook/company/working-groups/product-analytics.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "7891a7cfaf6e34ddb8aa56821fb9350420170ac46fc6def756c36748beac4438"
+    },
+    "content/handbook/company/working-groups/product-career-development-framework.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9c025bc961319d2efa63475f1a275e1623ceac60cef7fb65885f735592371af4"
+    },
+    "content/handbook/company/working-groups/product-development-flow.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1e02abbb4e35165b324a0a843f72b1b250218dded0999dabd6a217c5becc06bc"
+    },
+    "content/handbook/company/working-groups/purchasing-reliability.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c515722278eaa8e6f77750bb033ef52707f16688da93a9010b61ced1dc00bb61"
+    },
+    "content/handbook/company/working-groups/python-stewardship.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c0648fb23699b1093d374e07a5a9fe1b6b9069b1f8ca26f387dfbc8f6d46f9e9"
+    },
+    "content/handbook/company/working-groups/rate-limit-architecture.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T00:00:00Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f18a212b5ebe7787467753250133f2092bf181f7c32b11f9a0fa71af4b147cfd"
+    },
+    "content/handbook/company/working-groups/real-time/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:18:21Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6b48b29e2502d4964bbe81a65a12838b778d16dde2a388ddeef8b7d7696deda3"
+    },
+    "content/handbook/company/working-groups/real-time/design_document.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:18:21Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "6c34a65bccaac0ec460317e440f8ccd450c0d7bcf76280682a177bfe2d04f2e9"
+    },
+    "content/handbook/company/working-groups/recruiting-ssot.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:18:21Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "037642a53b1e70ec9f48d7fc656255997185af3d6eef2da35ff7bcced92b66e4"
+    },
+    "content/handbook/company/working-groups/runtime-update-process.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:18:21Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "df28dc7facdd9edcce30e922f58c7f13f57652d944218617f74e6dd29e418faa"
+    },
+    "content/handbook/company/working-groups/secure-govern-database-decomposition/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:18:21Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3fd9a7f27d83ccf8803ef634533e3db6145cf78f706732427ff16caa7b4e3792"
+    },
+    "content/handbook/company/working-groups/secure-offline-environment.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:18:21Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9f7889557083d1724cb9749c1ce8cb3d3b707a0d5e87175aefb4da0a5493b64a"
+    },
+    "content/handbook/company/working-groups/self-managed-scalability.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:18:21Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "c044a52fa1fa8a49a1b35290edf525eb1b467691c3d0829d2ada129b7a215371"
+    },
+    "content/handbook/company/working-groups/sharding.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:18:21Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "5bb9425e0b06f42cea298197b201c53fc205cddf8a3b591eda3af1b6d24f977a"
+    },
+    "content/handbook/company/working-groups/simplify-groups-and-projects.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:18:21Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a5b9a010a3684452f92248de4d71d2cab20487f6e8a88999c9a63a2c705303db"
+    },
+    "content/handbook/company/working-groups/single-codebase.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:18:21Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "a5b363ea91212fb0997feaa804848b71e4d69ff698aa31e573414518da7e02eb"
+    },
+    "content/handbook/company/working-groups/software-supply-chain-security.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:31:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8dd41fa27c5df7d28ba6c6ad11cbe33f531ca27c5af84a80e56751ccea551b2d"
+    },
+    "content/handbook/company/working-groups/sox.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:31:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "022c5df01834cd79f4dcf1c3dfcd0dbdfb664d528af96d12b539144cda95152a"
+    },
+    "content/handbook/company/working-groups/task-groups/_index.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:31:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8c6b279adb2f56313b8c9ec6981109f6abf4ed37afb2418bf4250e3c84a7efd1"
+    },
+    "content/handbook/company/working-groups/task-groups/bootstrap-vue-removal.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:31:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "d39454350d0d397b9b6adac0116e829cf59de5fbd90816e53a515a8c51e14bce"
+    },
+    "content/handbook/company/working-groups/task-groups/css-utils.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:31:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9587efc1471578f7af2ba1ef001256e4f951045d2cab266bfbe1e42de3c05de7"
+    },
+    "content/handbook/company/working-groups/task-groups/gitlab-ui-vue-compat.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:31:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "afb618131103be82691e2bad99fd6511057bfa970f0ca06e569f337817cfec24"
+    },
+    "content/handbook/company/working-groups/task-groups/vue3-quarantined-tests.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:31:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "9ece235daa31b6064a887465e836edfab05a23ca192a824b32dc75b05d1cea03"
+    },
+    "content/handbook/company/working-groups/task-groups/vue3-router4-tests.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:31:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "31c6f9c74ae286fab2e451be062ba2e6663a65e1f111a73cee016b0fb2ed1ec8"
+    },
+    "content/handbook/company/working-groups/teamops-sales-marketing.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:31:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "48be50547a89f3182f0e1816ab284b8583875d37efc23e4b6d4020bf11f8137e"
+    },
+    "content/handbook/company/working-groups/tiering.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:31:04Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "708d32f14597802d047230a22f0ae9f5e9238d19b03284f461071e9b2129a01e"
+    },
+    "content/handbook/company/working-groups/token-management.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "f71bac9805dcc60d8bc227e8e9fbe2217072ac1de6fc416dd04efe8060569779"
+    },
+    "content/handbook/company/working-groups/transient-bugs.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "07dcdecdac199581d0a4f614f898ff63724ceaae706c94e7f64922f8703a458a"
+    },
+    "content/handbook/company/working-groups/upgrade-improvements.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "390a4eb85962deb0765b2fdfbde4b69d31ce3ba97eb1100b714f1cea2fe76e64"
+    },
+    "content/handbook/company/working-groups/upstream-diversity.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "3a6af89b03b9e0d8dcc38d8b76171c2a0704621bb8bc57766fc326fd35561381"
+    },
+    "content/handbook/company/working-groups/user-journey-map.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "8b91f6ecc1fe7b34a8306378fc8981d3bec9a1e52b797f44120d105744242524"
+    },
+    "content/handbook/company/working-groups/vuejs-3-migration.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "40e71c262a6736e0cbfc229d0d9cad926de8c5804c6396e5cb4be8bcafd7ea1f"
+    },
+    "content/handbook/company/working-groups/webpack.md": {
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T23:40:34Z",
+      "model": "claude-sonnet-4-6",
+      "input_hash": "1f7fbd4375e321a2acafd87b19d4eba90a8006f4a609ff706a1cbf00a0f67e12"
+    },
     "content/handbook/customer-experience/_index.md": {
       "path": "content/handbook/customer-experience/_index.md",
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
