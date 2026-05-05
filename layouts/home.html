@@ -1,6 +1,14 @@
+{{/*
+   Home page template. type: docs を frontmatter に指定すると docsy の
+   docs/baseof.html (sidebar + container + content area) が baseof として
+   使われるが、template lookup ではこの home.html が kind=home に対して
+   優先されるため、ここで main ブロックを docs/list.html と同等の
+   <div class="td-content"> 構造で定義する。
+*/}}
 {{ define "main" }}
-{{ with .Content }}
-{{ . }}
-
-{{ end }}
+<div class="td-content">
+  {{ with .Title }}<h1>{{ . }}</h1>{{ end }}
+  {{ with .Params.description }}<div class="lead">{{ . | markdownify }}</div>{{ end }}
+  {{ .Content }}
+</div>
 {{ end }}

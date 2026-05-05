@@ -1,6 +1,7 @@
 ---
 title: "このサイトについて"
 description: "GitLab Handbook 非公式日本語訳サイトについて"
+type: docs
 menu:
   main:
     weight: 50
