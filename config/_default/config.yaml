@@ -41,7 +41,14 @@ params:
   ui:
     sidebar_menu_compact: false
     sidebar_menu_foldable: true
-    sidebar_cache_limit: 1000
+    # docsy はサイト総ページ数 >= sidebar_cache_limit のとき「キャッシュ
+    # モード」に切り替わり、サイドバー内側に d-none を初期付与して JS
+    # (toggleClass) で見せる仕組みになるが、何らかの理由で toggle が
+    # 効かないとサイドバーが永遠に表示されない。本サイトは upstream
+    # 由来のページ込みで 2500+ ページあるため、デフォルト 2000 を超えて
+    # キャッシュが活性化していた。limit を引き上げて非キャッシュモード
+    # にし、サイドバーを直接 render させる。
+    sidebar_cache_limit: 10000
     sidebar_menu_truncate: 125
     # GitLab tanuki ロゴ (assets/icons/logo.svg) は商標のため使わない方針。
     # docsy navbar が resources.Get "icons/logo.svg" で参照する処理を
