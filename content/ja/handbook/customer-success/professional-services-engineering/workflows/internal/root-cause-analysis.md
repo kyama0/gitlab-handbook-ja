@@ -11,10 +11,10 @@ stale: false
 
 ## 根本原因分析のスケジューリング
 
-1. Issue を作成します。
-1. [RCA](/handbook/engineering/workflow/root-cause-analysis/) を使用します。テンプレートへの変更は Professional Services プロジェクトへの MR として追加できます。
-1. Issue に `Root Cause Analysis` ラベルが付いていることを確認します。
-1. 根本原因分析のためのカレンダーイベントを作成し、Issue とこのページへのリンクを含めます。
+1. Issue を作成してください。
+1. [RCA](/handbook/engineering/workflow/root-cause-analysis/) を使用してください。テンプレートへの変更は Professional Services プロジェクトへの MR として追加できます。
+1. Issue に `Root Cause Analysis` ラベルが付いていることを確認してください。
+1. 根本原因分析のためのカレンダーイベントを作成し、Issue とこのページへのリンクを含めてください。
 
    - Strategic Account Executive（SAE）、Customer Success Manager（CSM）、Professional Service Engineer（PSE）、自分のマネージャー、その他関心のある GitLab メンバーを参加者に含めます。
 
@@ -51,8 +51,8 @@ stale: false
    - うまくいかなかったことは何か？
    - 次回への提案は何か？
 
-1. 提案を実行に移すためのアクションアイテムを割り当て、必要に応じて Issue や MR を作成します。
-1. IaC に関する学びがあれば、メインラインの IaC リポジトリへの MR として作成します。
+1. 提案を実行に移すためのアクションアイテムを割り当て、必要に応じて Issue や MR を作成してください。
+1. IaC に関する学びがあれば、メインラインの IaC リポジトリへの MR として作成してください。
 
 #### アクションアイテムの割り当て
 

@@ -36,7 +36,7 @@ stale: false
 
 MongoDB または DynamoDB を使用します。MongoDB へは [PyMongo](https://pymongo.readthedocs.io/en/stable/) で、DynamoDB へは [PynamoDB](https://pynamodb.readthedocs.io/en/stable/) でアクセスします。
 
-## ローカルテスト
+## ローカルテスト {#local-testing}
 
 AWS の外で AWS リソースをモックする必要がある場合は、[Localstack](https://localstack.cloud/) を使用します。
 

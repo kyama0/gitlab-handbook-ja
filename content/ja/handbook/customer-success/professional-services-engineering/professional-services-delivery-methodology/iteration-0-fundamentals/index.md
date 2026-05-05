@@ -59,7 +59,7 @@ EM>PS デリバリー移管から始まり、Stakeholder Planning Meeting と Cu
 
 1. プロジェクトバックログ（ユーザーストーリーと受け入れ基準 - 2 イテレーション）を洗練し優先順位付けする。
 2. 初期リリース計画（初期計画と設計）に Issue を割り当てる。
-3. [Definition of Done (DoD)](../definition-of-done/_index.md) を定義し、必要であれば [Definition of Ready (DoR)](../definition-of-ready/_index.md) も定義する。
+3. [Definition of Done (DoD)](../definition-of-done/index.md) を定義し、必要であれば [Definition of Ready (DoR)](../definition-of-ready/index.md) も定義する。
 4. 自分のチーム固有の制約、阻害要因、リスクを理解する。
 
 ![Team-Norms.png](/images/customer-success/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/align-team-norms.png)

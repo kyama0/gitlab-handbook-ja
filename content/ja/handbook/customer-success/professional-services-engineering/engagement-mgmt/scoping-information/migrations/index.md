@@ -10,9 +10,9 @@ stale: false
 
 ## セールス向け情報 - SaaS へのマイグレーションのポジショニング
 
-- [GitLab セルフマネージドから SaaS へのマイグレーション](SM-to-SaaS/)
+- [GitLab セルフマネージドから SaaS へのマイグレーション](sm-to-saas/)
 
-## マイグレーションスコーピングの詳細
+## マイグレーションスコーピングの詳細 {#migration-scoping-details}
 
 このページでは、GitLab、Bitbucket Server、または GitHub（Enterprise または .com）から、宛先 GitLab インスタンス（セルフマネージドまたは SaaS）へのマイグレーションのスコーピングについて説明します。これらのマイグレーションでは、通常、自動化ツールである [Congregate](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate) を使用します。他の SCM システムからのマイグレーションや、GitLab 以外の CI/CD マイグレーションは、このマイグレーションツールの対象外であり、別途スコーピングする必要があります。
 
