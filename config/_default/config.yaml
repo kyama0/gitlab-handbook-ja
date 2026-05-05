@@ -113,6 +113,11 @@ canonifyURLs: true
 pluralizeListTitles: false
 enableEmoji: true
 
+# /job-description-library/ etc. are external micro-sites that don't exist
+# in this repo. Match upstream's tolerant behavior on broken refs.
+refLinksErrorLevel: WARNING
+refLinksNotFoundURL: ""
+
 module:
   proxy: https://proxy.golang.org
   hugoVersion:

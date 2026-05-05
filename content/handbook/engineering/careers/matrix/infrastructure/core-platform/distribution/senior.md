@@ -28,7 +28,7 @@ stale: false
 <!-- include omitted: includes/engineering-careers/senior-leadership-competency.md (no localized version under content/ja/) -->
 
 
-{{% include "includes/engineering/development-senior-leadership-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/development-senior-leadership-competency.md (no localized version under content/ja/) -->
 
 #### Distribution
 

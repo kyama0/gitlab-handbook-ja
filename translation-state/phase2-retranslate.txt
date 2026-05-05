@@ -10,3 +10,5 @@
 # upstream file. Format: <repo-relative path to JA file>
 
 content/handbook/marketing/developer-relations/workflows-tools/_index.md
+content/handbook/marketing/developer-relations/engineering/merge-request-coach-lifecycle.md
+content/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/senior.md

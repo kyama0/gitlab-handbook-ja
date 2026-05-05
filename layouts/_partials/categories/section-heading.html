@@ -1,0 +1,425 @@
+{{ $section_data := . }}
+{{ $team_data := partial "categories/team-members" }}
+{{- $pmTeam := slice }}
+{{- $pdTeam := slice }}
+{{- $uxrTeam := slice }}
+{{- $uxTeam := slice }}
+{{- $supportTeam := slice }}
+{{- $pmmTeam := slice }}
+{{- $qualityTeam := slice }}
+{{- $twTeam := slice }}
+{{- $twmTeam := slice }}
+{{- $csTeam := slice }}
+{{- $sreTeam := slice }}
+{{- $arTeam := slice }}
+{{- $remTeam := slice }}
+{{- $legalTeam := slice }}
+{{- $appsecEngineer := slice }}
+{{- $infrasecEngineer := slice }}
+
+
+{{- with $section_data.appsec_engineer }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $appsecEngineer =  append $appsecEngineer ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.infrasec_engineer }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $infrasecEngineer =  append $infrasecEngineer ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.pm }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $pmTeam =  append $pmTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- /* Combine all engineering managers from team tags */ -}}
+{{- $allManagers := slice }}
+{{- with $section_data.em }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $allManagers = append $allManagers ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- with $section_data.backend_engineering_manager }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $allManagers = append $allManagers ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- with $section_data.frontend_engineering_manager }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $allManagers = append $allManagers ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- with $section_data.fullstack_managers }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $allManagers = append $allManagers ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.pdm }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $pdTeam =  append $pdTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.twm }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $twmTeam =  append $twmTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.uxr }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $uxrTeam =  append $uxrTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.ux }}
+{{- range (slice | append .) }}
+    {{- with . }}
+        {{- $uxTeam =  append $uxTeam ($team_data.Get . | default slice) }}
+    {{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.support }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $supportTeam =  append $supportTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.qm }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $qualityTeam =  append $qualityTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.tw }}
+{{ if ne . true }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $twTeam =  append $twTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.tech_writer }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- if hasPrefix . "#" }}
+{{- $twTeam = $twTeam | append (dict "name" . "slack_channel" true) }}
+{{- else }}
+{{- $teamMember := $team_data.Get . }}
+{{- if $teamMember }}
+{{- $twTeam = $twTeam | append $teamMember }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.rem }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $remTeam =  append $remTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.pmm }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $pmmTeam =  append $pmmTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.sets }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $qualityTeam =  append $qualityTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+
+{{- with $section_data.pm_team_tag }}
+{{- $pmTeam = append $pmTeam ($team_data.Get . | default slice) }}
+{{- end }}
+
+{{- $allEngineers := slice }}
+{{- with $section_data.eng_ic_team_tag }}
+{{- $allEngineers = append $allEngineers ($team_data.Get . | default slice) }}
+{{- end }}
+
+{{- /* Deduplicate engineers */ -}}
+{{- $uniqueEngineers := slice }}
+{{- $seen := dict }}
+{{- range $allEngineers }}
+  {{- $id := .id | default .name | default (printf "%v" .) }}
+  {{- if not (index $seen $id) }}
+    {{- $uniqueEngineers = $uniqueEngineers | append . }}
+    {{- $seen = merge $seen (dict $id true) }}
+  {{- end }}
+{{- end }}
+{{- $allEngineers = $uniqueEngineers }}
+
+{{- with $section_data.support_team_tag }}
+{{- $supportTeam = append $supportTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- with $section_data.sm }}
+{{- range (slice | append .) }}
+{{- with . }}
+{{- $supportTeam = append $supportTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- end }}
+{{- end }}
+{{- with $section_data.tw_team_tag }}
+{{- $twTeam = append $twTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- with $section_data.cs_team_tag }}
+{{- $csTeam = append $csTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- with $section_data.sre_team_tag }}
+{{- $sreTeam = append $sreTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- with $section_data.ar_team_tag }}
+{{- $arTeam = append $arTeam ($team_data.Get . | default slice) }}
+{{- end }}
+{{- with $section_data.legal_team_tag }}
+{{- $legalTeam = append $legalTeam ($team_data.Get . | default slice) }}
+{{- end }}
+
+<table style="display: table;">
+{{- with $section_data.slack.channel }}
+<tr>
+    <th>Slack Channel</th>
+    <td><a href="https://gitlab.slack.com/channels/{{.}}"><i class="fa-brands fa-slack"></i> #{{ . }}</a></td>
+</tr>
+{{- end }}
+{{- with $section_data.slack.alias }}
+<tr>
+    <th>Slack Alias</th>
+    <td><i class="fa-brands fa-slack"></i> {{.}}</td>
+</tr>
+{{- end }}
+{{- with $section_data.gitlab_group }}
+<tr>
+    <th>GitLab Group</th>
+    <td><i class="fa-brands fa-gitlab"></i> @{{.}}</td>
+</tr>
+{{- end }}
+{{- with $section_data.handbook }}
+<tr>
+    <th>Handbook Page</th>
+    <td>
+    {{- $pagePath := path.Join "/handbook" . }}
+    {{- with page.GetPage $pagePath }}
+    <a href="{{ .Permalink }}"><i class="fa fa-book"></i> {{ .Title }}</a>
+    {{- end }}
+    </td>
+</tr>
+{{- end -}}
+
+{{- if .focus }}
+<tr>
+    <th>Focus</th>
+    <td>
+        {{ .focus }}
+    </td>
+</tr>
+{{- end }}
+{{- if .group }}
+<tr>
+    <th>Features in this Group</th>
+    {{- $pageRef := printf "/handbook/product/categories/features/#%s" (anchorize .display_name) -}}
+    <td><a href="{{$pageRef}}"><i class="fa fa-book"></i> Features</a></td>
+</tr>
+{{- end }}
+{{- with $pmTeam }}
+<tr>
+    <th>Product</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}
+    </td>
+</tr>
+{{- end }}
+
+{{- with $allManagers }}
+<tr>
+    <th>Engineering Leadership</th>
+    <td>{{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}</td>
+</tr>
+{{- end }}
+{{- with $allEngineers }}
+<tr>
+    <th>Engineering ({{ len . }})</th>
+    <td>{{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}</td>
+</tr>
+{{- end }}
+
+{{- with $pdTeam  }}
+<tr>
+    <th>Product Design</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}
+    </td>
+</tr>
+{{- end }}
+
+{{- with $uxrTeam  }}
+<tr>
+    <th>UX Research</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}
+    </td>
+</tr>
+{{- end }}
+{{- with $uxTeam  }}
+<tr>
+    <th>Product Designer</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}
+    </td>
+</tr>
+{{- end }}
+{{- with $pmmTeam  }}
+<tr>
+    <th>Product Marketing</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}
+    </td>
+</tr>
+{{- end }}
+{{- with $supportTeam  }}
+<tr>
+    <th>Support</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}
+    </td>
+</tr>
+{{- end }}
+{{- with $qualityTeam  }}
+<tr>
+    <th>Quality</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}
+    </td>
+</tr>
+{{- end }}
+{{- if or $twmTeam $twTeam }}
+<tr>
+    <th>Technical Writing</th>
+    <td>
+        {{- range $twmTeam -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}
+        {{- range $twTeam -}}
+            {{- if .slack_channel -}}
+                <a href="https://gitlab.slack.com/channels/{{ strings.TrimPrefix "#" .name }}"><i class="fa-brands fa-slack"></i> {{ .name }}</a>&nbsp;
+            {{- else -}}
+                {{ partial "member/with-gitlab-link" . -}}&nbsp;
+            {{- end -}}
+        {{- end -}}
+    </td>
+</tr>
+{{- end }}
+{{- with $appsecEngineer  }}
+<tr>
+    <th>Application Security Engineer</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end }}
+    </td>
+</tr>
+{{- end }}
+{{- with $infrasecEngineer  }}
+<tr>
+    <th>Infrastructure Security Engineer</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end }}
+    </td>
+</tr>
+{{- end }}
+{{- with $sreTeam  }}
+<tr>
+    <th>Infrastructure</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end }}
+    </td>
+</tr>
+{{- end }}
+{{- with $remTeam  }}
+<tr>
+    <th>Infrastructure Leadership</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}
+    </td>
+</tr>
+{{- end }}
+{{- with $csTeam  }}
+<tr>
+    <th>Customer Success</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end }}
+    </td>
+</tr>
+{{- end }}
+{{- with $arTeam  }}
+<tr>
+    <th>Analyst Relations</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}
+    </td>
+</tr>
+{{- end }}
+
+{{- with $legalTeam  }}
+<tr>
+    <th>Legal & Corporate Affairs</th>
+    <td>
+        {{- range . -}}{{ partial "member/with-gitlab-link" . -}}&nbsp;{{- end -}}
+    </td>
+</tr>
+{{- end }}
+{{- with .internal_customers }}
+<tr>
+    <th>Internal Customers</th>
+    <td>{{- range . }}
+        <div style="display: table; min-width: 40%">
+            <div style="display: table-cell; width: 40%"><strong>{{ .department }}</strong></div>
+            {{- with .dri }}
+            {{- range $team_data.Get . }}
+            <div style="display: table-cell; width: 40%">{{ partial "member/with-gitlab-link" . -}}</div>
+            {{- end }}
+            {{- end }}
+        </div>
+        {{- end }}
+    </td>
+</tr>
+{{- end }}
+</table>
