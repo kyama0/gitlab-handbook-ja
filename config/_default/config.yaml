@@ -71,16 +71,16 @@ staticDir:
 
 menu:
   main:
-    # navbar の external link 群。params.iconOnly: true を立てたエントリは
-    # layouts/_partials/navbar.html がアイコンのみ render する (テキスト省略)。
+    # navbar の右側メニュー。順序 (weight 昇順):
+    #   Handbook (content/handbook/_index.md frontmatter で weight 0)
+    #   このサイトについて (content/about/_index.md frontmatter で weight 50)
+    #   原文 (EN) ← weight 70
+    #   GitHub アイコン ← weight 100 (params.iconOnly でアイコンのみ)
     # docsy-gitlab module 側 menu (Changelog, The Handbook) は
-    # 同 partial で除外している。
-    - weight: 90
-      name: 原文 (handbook.gitlab.com)
+    # layouts/_partials/navbar.html で除外している。
+    - weight: 70
+      name: 原文 (EN)
       url: https://handbook.gitlab.com/
-      pre: '<i class="fa-solid fa-book"></i>'
-      params:
-        iconOnly: true
     - weight: 100
       name: GitHub
       url: https://github.com/kyama0/gitlab-handbook-ja

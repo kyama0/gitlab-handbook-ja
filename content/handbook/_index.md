@@ -3,6 +3,7 @@ title: "ハンドブック"
 no_list: true
 menu:
   main:
+    weight: 10
     name: Handbook
     pre: '<i class="fa-solid fa-book"></i>'
 cascade:
