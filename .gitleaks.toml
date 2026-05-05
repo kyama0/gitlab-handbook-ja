@@ -1,0 +1,20 @@
+# gitleaks 設定
+# デフォルトの gitleaks ルールを継承しつつ、本リポジトリ特有の誤検知を除外する。
+[extend]
+useDefault = true
+
+# 翻訳ファイルの frontmatter にある `upstream_sha:` は git の commit SHA で、
+# 機密情報ではない。ただし 40 桁 hex で、関連ページに「sourcegraph」というキーワードが
+# 含まれると、gitleaks の `sourcegraph-access-token` ルール（`[a-fA-F0-9]{40}` を含む
+# 緩い alternation）が誤検知する。これらを許可する。
+[[rules]]
+id = "sourcegraph-access-token"
+[rules.allowlist]
+description = "translation manifest upstream_sha (commit hash, not a token)"
+regexes = [
+  '''^upstream_sha:\s*[a-fA-F0-9]{40}\s*$''',
+]
+paths = [
+  '''content/ja/handbook/.*\.md''',
+  '''translation-state/manifest\.json''',
+]
