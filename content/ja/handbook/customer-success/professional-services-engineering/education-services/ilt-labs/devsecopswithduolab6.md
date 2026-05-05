@@ -3,7 +3,7 @@ title: "GitLab Duo の原則 - ハンズオンラボ: GitLab Duo Agent Platform"
 description: "このハンズオンガイドでは、GitLab Duo Agent Platform を使って複雑なトピックを処理する手順を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab6/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: 2026-04-26T04:33:12Z
+translated_at: "2026-04-26T04:33:12Z"
 translator: claude
 stale: false
 ---

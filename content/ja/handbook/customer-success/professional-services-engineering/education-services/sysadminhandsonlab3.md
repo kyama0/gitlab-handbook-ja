@@ -17,15 +17,15 @@ stale: false
 
 ### タスク A. gitlab-runner パッケージをインストールする
 
-1. 割り当てられた IP アドレスと SSH キーファイルを使って、**GitLab Runner** サーバー（Omnibus サーバーで*はない*ほう）にログインします。
+1. 割り当てられた IP アドレスと SSH キーファイルを使って、**GitLab Runner** サーバー（Omnibus サーバーで*はない*ほう）にログインしてください。
 
     ```bash
     ssh -i <YOUR_ASSIGNED_SSH_KEYFILE> root@<YOUR_RUNNER_SERVER_PUBLIC_IP>
     ```
 
-1. システムが認証警告を表示した場合は、`yes` と入力して <kbd>Enter</kbd> を押します。
+1. システムが認証警告を表示した場合は、`yes` と入力して <kbd>Enter</kbd> を押してください。
 
-1. GitLab Runner のインストールリポジトリを追加します。
+1. GitLab Runner のインストールリポジトリを追加してください。
 
     ```bash
     curl -L "https://packages.gitlab.com/install/repositories/runner/gitlab-runner/script.deb.sh" | sudo bash
@@ -37,7 +37,7 @@ stale: false
     sudo apt-get install -y gitlab-runner
     ```
 
-1. インストールが完了したら、サービスが稼働していることを確認します。
+1. インストールが完了したら、サービスが稼働していることを確認してください。
 
     ```bash
     sudo gitlab-runner status
@@ -45,51 +45,51 @@ stale: false
 
 ### タスク B. ランナーを GitLab に登録する
 
-1. Web ブラウザーで GitLab インスタンスにサインインし、左サイドバーから **Admin Area** を選択します。
+1. Web ブラウザーで GitLab インスタンスにサインインし、左サイドバーから **Admin Area** を選択してください。
 
-1. 左サイドバーの **CI/CD** で **Runners** を選択します。
+1. 左サイドバーの **CI/CD** で **Runners** を選択してください。
 
-1. **New instance runner** を選択します。
+1. **New instance runner** を選択してください。
 
-1. **Tags** セクションで **Run untagged jobs** を選択します。
+1. **Tags** セクションで **Run untagged jobs** を選択してください。
 
     > これにより、ランナーは特定のタグが付いたジョブだけでなく、あらゆるジョブを取得できるようになります。
 
-1. その他のオプションはデフォルトのままにして、**Create runner** を選択します。
+1. その他のオプションはデフォルトのままにして、**Create runner** を選択してください。
 
-1. ランナーの **Operating system** として **Linux** が選択されていることを確認します。
+1. ランナーの **Operating system** として **Linux** が選択されていることを確認してください。
 
-1. **Step 1** のコマンドをコピーして、コマンドの前に `sudo` を追加します。コマンドプロンプトで実行します。
+1. **Step 1** のコマンドをコピーして、コマンドの前に `sudo` を追加してください。コマンドプロンプトで実行してください。
 
-1. コマンドはまず GitLab インスタンスの URL を尋ねてきます。この URL が GitLab インスタンスと一致することを確認したら、<kbd>Enter</kbd> を押します。
+1. コマンドはまず GitLab インスタンスの URL を尋ねてきます。この URL が GitLab インスタンスと一致することを確認したら、<kbd>Enter</kbd> を押してください。
 
-1. ランナーに任意の適切な名前を入力します。
+1. ランナーに任意の適切な名前を入力してください。
 
-1. エグゼキューターを尋ねられたら、`shell` と入力します。
+1. エグゼキューターを尋ねられたら、`shell` と入力してください。
 
-    > shell エグゼキューターは、インスタンスのシェルを使ってジョブを実行します。エグゼキューターについて詳しくは、[ドキュメント](https://docs.gitlab.com/runner/executors/) を確認してください。
+    > shell エグゼキューターは、インスタンスのシェルを使ってジョブを実行してください。エグゼキューターについて詳しくは、[ドキュメント](https://docs.gitlab.com/runner/executors/) を確認してください。
 
-1. 登録後にランナーを確認するため、`sudo gitlab-runner list` を実行します。
+1. 登録後にランナーを確認するため、`sudo gitlab-runner list` を実行してください。
 
-1. Web ブラウザーに戻って **View runners** を選択します。登録したランナーが一覧に表示され、オンラインとして表示されていることを確認します。
+1. Web ブラウザーに戻って **View runners** を選択してください。登録したランナーが一覧に表示され、オンラインとして表示されていることを確認してください。
 
 ### タスク C. CI/CD パイプラインでランナーをテストする
 
-1. 左サイドバーの上部にある GitLab アイコンを選択して、GitLab インスタンスのホームページに戻ります。
+1. 左サイドバーの上部にある GitLab アイコンを選択して、GitLab インスタンスのホームページに戻ってください。
 
-1. **Create a project** を選択します。
+1. **Create a project** を選択してください。
 
-1. **Create blank project** を選択します。
+1. **Create blank project** を選択してください。
 
-1. プロジェクト名として `CICD Test` と入力します。
+1. プロジェクト名として `CICD Test` と入力してください。
 
-1. `Project URL` で、ネームスペースのドロップダウンから `root` を選択します。
+1. `Project URL` で、ネームスペースのドロップダウンから `root` を選択してください。
 
-1. その他の設定はそのままにして、**Create project** をクリックします。
+1. その他の設定はそのままにして、**Create project** をクリックしてください。
 
-1. プロジェクトのランディングページの中央、プロジェクトタイトルの下にある **+** ドロップダウンを選択します。**New file** を選択します。
+1. プロジェクトのランディングページの中央、プロジェクトタイトルの下にある **+** ドロップダウンを選択してください。**New file** を選択してください。
 
-1. 新しいファイルのページで、ファイル名として `.gitlab-ci.yml` を入力します。
+1. 新しいファイルのページで、ファイル名として `.gitlab-ci.yml` を入力してください。
 
 1. 以下のコードをファイルの本文に貼り付けます。
 
@@ -109,13 +109,13 @@ stale: false
         - echo "The test stage requires at least one job"
     ```
 
-1. **Commit changes** を選択します。
+1. **Commit changes** を選択してください。
 
-1. 左サイドバーで **Build > Pipelines** を選択します。
+1. 左サイドバーで **Build > Pipelines** を選択してください。
 
-1. パイプラインのステータス（**passed** と表示されているはず）を選択します。
+1. パイプラインのステータス（**passed** と表示されているはず）を選択してください。
 
-1. **build_app** および **test_app** ジョブのそれぞれをクリックして、ジョブのログとランナー上で実行されたコマンドを確認します。
+1. **build_app** および **test_app** ジョブのそれぞれをクリックして、ジョブのログとランナー上で実行されたコマンドを確認してください。
 
 ## ラボガイド完了
 

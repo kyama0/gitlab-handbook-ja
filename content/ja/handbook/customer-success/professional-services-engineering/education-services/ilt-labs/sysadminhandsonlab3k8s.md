@@ -46,7 +46,7 @@ stale: false
               gcpProject: demosys-ilt-training-cloud
     ```
 
-1. これらのバケットにアクセスできるようにするには、AWS サービスアカウントの認証情報を提供する必要があります。これを行うには、`kubectl create secret generic storage-config --from-file=config=storage.config` コマンドを実行します。
+1. これらのバケットにアクセスできるようにするには、GCS サービスアカウントの認証情報を提供する必要があります。これを行うには、`kubectl create secret generic storage-config --from-file=config=storage.config` コマンドを実行します。
 
 1. この設定を追加したら、`helm upgrade --install gitlab gitlab/gitlab --version 9.4.3 --timeout 100s -f values.yml` コマンドを実行します。
 

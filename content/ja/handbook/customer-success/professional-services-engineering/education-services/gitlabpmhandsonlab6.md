@@ -1,7 +1,7 @@
 ---
 title: "GitLab アジャイルポートフォリオ管理 - ハンズオンラボ: マージリクエストを使用してコードをレビュー・マージする"
 description: "このハンズオンガイドでは、GitLab でマージリクエストと承認ルールを作成する手順を説明します。"
-upstream_path: /handbook/customer-success/professional-services-engineering/education-services/gitlabpmhandsonlab6/
+upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab6/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: 2026-04-26T04:14:42Z
 translator: claude
