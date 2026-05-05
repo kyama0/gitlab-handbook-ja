@@ -38,7 +38,7 @@ GitLab の[ドキュメント](https://docs.gitlab.com/administration/object_sto
 
 これらのシナリオの一部は、現時点で大規模に GitLab の顧客に影響しています。サードパーティ S3 互換ソリューション（NetApp、Ceph Object Gateway）を利用しており、CA／ファイアウォール／ルーティングの制約が現実問題になっている顧客などです。
 
-### デュアルパーソナリティ・デプロイモデル
+### デュアルパーソナリティ・デプロイモデル {#the-dual-personality-deployment-model}
 
 Artifact Registry は、GitLab.com（SaaS）、GitLab Dedicated、Self-Managed という複数のデプロイモデルに対応できる、モジュラーなサービスとして設計されています。リモート／デュアルパーソナリティモデルでは、Self-Managed もしくは Dedicated のインスタンスが、リモートバックエンドとして GitLab.com の Artifact Registry に接続します。
 
