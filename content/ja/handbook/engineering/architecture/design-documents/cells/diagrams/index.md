@@ -25,10 +25,10 @@ Cells で使用されるダイアグラムは [draw.io](https://app.diagrams.net
 
 ファイルからダイアグラムを作成するには:
 
-1. 既存のファイルをコピーしてリネームします。拡張子が `.drawio.png` または `.drawio.svg` であることを確認してください。
-1. ダイアグラムを編集します。
-1. ファイルを保存します。
-1. `pngquant -f --ext .png *.drawio.png` を使用して画像を最適化し、サイズを 2〜3 倍削減します。
+1. 既存のファイルをコピーしてリネームしてください。拡張子が `.drawio.png` または `.drawio.svg` であることを確認してください。
+1. ダイアグラムを編集してください。
+1. ファイルを保存してください。
+1. `pngquant -f --ext .png *.drawio.png` を使用して画像を最適化し、サイズを 2〜3 倍削減してください。
 
 [draw.io デスクトップ](https://github.com/jgraph/drawio-desktop/releases) を使用してゼロからダイアグラムを作成するには:
 
@@ -36,6 +36,6 @@ Cells で使用されるダイアグラムは [draw.io](https://app.diagrams.net
 1. **File > Save As** で **Editable Bitmap .png** を選択し、`.drawio.png` 拡張子で保存します。
 1. 画像品質を向上させるために、**File > Properties** で **Zoom** を **200%** に設定します。
 1. 新しいズーム設定でファイルを保存するには、**File > Save** を選択します。
-1. `pngquant -f --ext .png *.drawio.png` を使用して画像を最適化し、サイズを 2〜3 倍削減します。
+1. `pngquant -f --ext .png *.drawio.png` を使用して画像を最適化し、サイズを 2〜3 倍削減してください。
 
 **File > Export** 機能は使用しないでください。ダイアグラムは簡単に編集できるよう `.png` に埋め込む必要があります。

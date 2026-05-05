@@ -1,7 +1,7 @@
 ---
 stage: enablement
 group: Tenant Scale
-title: 'Cells: Organization'
+title: 'Cells: Organization (組織)'
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/impacted_features/organizations/
 upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9

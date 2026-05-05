@@ -1,5 +1,5 @@
 ---
-title: "Container Registry Routing Service"
+title: "Container Registry ルーティングサービス"
 status: accepted
 creation-date: "2025-07-17"
 authors: [ "@ayufan" ]
