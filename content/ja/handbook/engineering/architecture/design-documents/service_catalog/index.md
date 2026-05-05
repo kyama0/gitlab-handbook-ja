@@ -1,0 +1,148 @@
+---
+title: "次世代サービスカタログ"
+status: proposed
+creation-date: "2024-07-11"
+authors: [ "@reprazent" ]
+coach: "@andrewn"
+approvers: [ "@tmillhouse", "@lmcandrew", "@rnienaber", "@swiskow" ]
+owning-stage: "~devops::platforms"
+participating-stages: ["~devops::platforms"]
+toc_hide: true
+upstream_path: /handbook/engineering/architecture/design-documents/service_catalog/
+upstream_sha: 86cfa2bd7d73df5a673fe5ebd33b028d0f540434
+translated_at: "2026-04-27T08:00:00Z"
+translator: claude
+stale: false
+---
+
+
+<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
+このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
+</div>
+
+<div class="overflow-x-auto my-4">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-100 text-left">
+<th class="px-3 py-2 border border-gray-300">Status</th>
+<th class="px-3 py-2 border border-gray-300">Authors</th>
+<th class="px-3 py-2 border border-gray-300">Coach</th>
+<th class="px-3 py-2 border border-gray-300">DRIs</th>
+<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
+<th class="px-3 py-2 border border-gray-300">Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">proposed</span></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/reprazent" class="text-blue-600 hover:underline">@reprazent</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/andrewn" class="text-blue-600 hover:underline">@andrewn</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/tmillhouse" class="text-blue-600 hover:underline">@tmillhouse</a>, <a href="https://gitlab.com/lmcandrew" class="text-blue-600 hover:underline">@lmcandrew</a>, <a href="https://gitlab.com/rnienaber" class="text-blue-600 hover:underline">@rnienaber</a>, <a href="https://gitlab.com/swiskow" class="text-blue-600 hover:underline">@swiskow</a></td>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::platforms</span></td>
+<td class="px-3 py-2 border border-gray-300">2024-07-11</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## 概要
+
+**スケーラビリティのテーマ:**
+
+- [プロダクションフリート全体のオブザーバビリティがすべての人にアクセス可能](https://about.gitlab.com/direction/production_engineering/#observability-across-the-production-fleet-is-accessible-for-all)
+- [舗装された道路がすべてのチームメンバーにとってデフォルト](https://about.gitlab.com/direction/production_engineering/#paved-roads-are-the-default-for-all-team-members)
+
+このドキュメントは、メトリクスカタログとサービスカタログを各サービスの単一の YAML 定義に統合したい方法を説明します。サービスを説明する単一の情報源を持ちます。YAML は Kubernetes の `kind` に関連する spec を参考にしており、容易に検証できます。
+
+サービスカタログエントリは、サービスのオーナーシップ・デプロイ・監視 & アラート・デプロイプロパティについて何かを知りたい、または調整したいすべての人のためのフロントエンドとなります。
+
+サービスカタログである静的 YAML は、サービスオーナーが複数のバックエンドを設定するためにインタラクトするフロントエンドになります。これらのバックエンドは YAML を消費してアラート・ダッシュボード・記録ルールを生成します。
+
+これは [&1355](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1355) の基盤です。
+
+## 用語集
+
+| 名前                        | 説明                                                                                                   |
+|-----------------------------|--------------------------------------------------------------------------------------------------------|
+| サービスカタログフロントエンド | 人々がインタラクトするサービス定義を含む静的 YAML。                                                    |
+| サービスカタログバックエンド  | サービスカタログの単一責任コンシューマー: ダッシュボード・アラート・記録ルールなどを生成する。           |
+
+## 動機
+
+現在、サービスの定義が 2 つあります: メトリクスカタログと サービスカタログです。
+
+メトリクスカタログは Jsonnet で定義されており、サービスの監視とアラートを関連グループにルーティングするために必要なすべてのものを含みます。これにはラベリング情報・デプロイタイプ・オーナーシップ情報が含まれます。
+
+サービスカタログは現在、ラベリング・オーナーシップ・ドキュメントや監視リソースへのリンクなど、すべてのサービスをリスト化した単一の YAML ファイルとして定義されています。
+
+つまり、多くの情報が重複しています。両方の場所にサービスを定義する必要があり、どちらか一方を忘れやすいです。
+
+さらに、メトリクスカタログが Jsonnet で書かれているため、誰でも貢献するのが難しいです。SLI を追加・変更できるよう、言語と私たちの DSL に慣れ親しむ必要があります。
+
+両方の定義を静的 YAML フロントエンドに統合することで、まず GitLab 全員がよりアクセスしやすくなります。GitLab.com、GitLab.com の Cells、GitLab-Dedicated テナント、多くのセルフマネージドデプロイは、バックエンドが消費して監視リソースを生成するための異なるサービスカタログを持てます。
+
+将来的にはサービスカタログを使用してさらなる専用バックエンドを追加できます。
+
+Runway を使用して本番環境に新しいサービスをデプロイするのを大幅に簡単にしました。しかし、新しいサービスを実際に[オブザーバブル](https://docs.runway.gitlab.com/reference/observability/)にするためにサービスカタログとメトリクスカタログに追加することはまだ手動のステップです。これにより、単一のサービスエントリに削減し、現在 Runway に必要なサービスインベントリの代わりにサービスカタログを Runway サービスの単一情報源として使用する道を開きます（[runway#122](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/122)）。
+
+これにより GitLab の監視を製品化する道も開きます。GitLab.com と GitLab Dedicated の監視に異なるサービスカタログ定義を使用するためです。監視ミックスインのデフォルト設定としてカタログを公開する方法を検討できます（[scalability#2832](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2832)）。これは以下の非目標にリストされていますが、このプロジェクトを進める際に将来これを困難にする変更を導入しないよう注意を払います。
+
+## 目標
+
+1. メトリクスカタログへの貢献を誰でも簡単にします。SLO と SLI の変更がもはや困難でないようにします。
+
+   **期待される影響:** サービスオーナーは Scalability-Observability の関与を最小限にして、サービスのオブザーバビリティのオーナーシップを持てます。
+
+1. Runway を使用して新しいサービスをデプロイした人々にとって、サービスのオンボーディングがはるかに簡単になります。静的ファイルに単一のエントリのみが必要です。
+
+   **期待される影響:** すべての本番 Runway サービスが新しいサービスカタログにエントリを持ちます。その結果、少なくともデフォルトのダッシュボードを常に持つことになります。
+
+1. インシデント対応者がアラートに関連するロウメトリクスを見やすくします。
+
+   **期待される影響:** より迅速なインシデントの軽減と、オンコール担当者のストレス軽減。
+
+1. ダッシュボード・記録ルール・アラートルールの生成とデプロイをサービス定義から切り離します。
+
+   **期待される影響:** ダッシュボード・記録ルール・サービスの変更が、より明確なオーナーシップを持つ Runbooks と分離されたプロジェクトのメンテナーにとってレビューしやすくなります。
+
+1. 監視リソースがまったくないサービスを避けます。または サービスカタログにエントリがないアラートを避けます。
+
+   **期待される影響:** 監視されていないサービスやサービスオーナーの発見に関する驚きが少なくなります。
+
+1. サービス定義からルール・ダッシュボード生成を切り離すことで、メトリクススタックをイテレーションしやすくします。
+
+   **期待される影響:** [Covered Experience SLIs](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2612) や [grafonnet 依存関係のアップグレード](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2573) などのプロジェクトを取り上げて並行化しやすくします。
+
+### 非目標
+
+1. 現在の記録ルール・アラート・ダッシュボードを生成するプロセスから Jsonnet を削除すること。
+1. セルフマネージドインストールの監視リソースを再利用可能にすること。監視ミックスインを公開するようなことを行う道は開きますが（[#2832](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2832)）、これはこの取り組みの直接的な目標ではありません。
+
+## 実装フェーズ
+
+サービス定義の YAML ファイルを持つという望ましい目標に到達するために、以下のフェーズでイテレーションできます。
+
+1. 既存のサービスカタログとメトリクスカタログの内容に基づいて、サービスごとに静的ファイルを生成します。
+
+   この段階では、runbooks リポジトリの生成にもう 1 つのステップを追加します。将来サービスオーナーがインタラクトしたいファイルを生成します。
+
+   ファイルの仕様を決定し、その仕様のバリデーションを追加します。仕様はこのブループリントでドキュメント化され、最新の状態に保たれます。
+
+   **結果:** runbooks の MR をレビューする人々は、この静的ファイルの差分を使用して、どの SLI が導入されてどの SLO が適用されているかをよりよく理解できます。
+
+1. 新しいプロジェクトで生成されたサービス定義を消費して、ルールファイル・アラート・ダッシュボードを生成します。ここで runbooks リポジトリからものを移し始めます。これらのサービス定義を Jsonnet + YAML から生成するために必要なものすべてが残ります。
+
+   この時点で、何かがもはや意味をなさないため、事前定義されたスキーマを調整する必要があるかもしれません。
+
+   **結果:** runbooks からものを移したとき、Jsonnet コードを改善できます。複数のリポジトリで再利用できるライブラリに共有の責任を抽出でき、ダッシュボードやルールファイルを生成するために使用できます。
+
+   ダッシュボードとそのカスタマイズは、このステップで Runbooks リポジトリとは異なるリポジトリに移ります。
+
+   SLI と SLO への変更は、このステップでは runbooks の Jsonnet ファイルに残ります。
+
+1. runbooks リポジトリから Jsonnet と古い `service-catalog.yml` を削除します。サービスカタログの他のコンシューマーを新しいサービス定義を使用するように更新する必要があります。
+
+   **結果:** サービスオーナーは保守する単一の静的サービス定義を持ちます。
+
+これらのフェーズのそれぞれは、Scalability-Observability が取り組める 1 つ以上のプロジェクトです。それぞれが小さな部分を提供し、各プロジェクト間で優先度を再評価できます。
