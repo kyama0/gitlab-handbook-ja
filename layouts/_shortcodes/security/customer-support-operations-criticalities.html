@@ -1,0 +1,43 @@
+<!-- To edit the content, see: /data/customer_support_operations_criticalities.yaml -->
+<div class="responsive-table">
+  <table>
+    <thead>
+      <tr>
+        <th class="criticalities-criticality">Level</th>
+        <th class="criticalities-name">Item</th>
+        <th class="criticalities-data_classification">
+          <a href='/handbook/security/policies_and_standards/data-classification-standard/'>Data classification</a>
+        </th>
+        <th class="criticalities-links">Links</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{ $s1 := (where .Site.Data.customer_support_operations_criticalities "criticality" "Mission Critical" ) }}
+      {{ $s2 := (where .Site.Data.customer_support_operations_criticalities "criticality" "Business Critical" ) }}
+      {{ $s3 := (where .Site.Data.customer_support_operations_criticalities "criticality" "Business Operational" ) }}
+      {{ $s4 := (where .Site.Data.customer_support_operations_criticalities "criticality" "Administrative" ) }}
+      {{ range $sections := slice $s1 $s2 $s3 $s4 }}
+        {{ if $sections }}
+          {{ range $index, $element := sort $sections "name" }}
+            <tr>
+              {{ if eq $index 0 }}
+                <td rowspan="{{ len $sections }}">{{ $element.criticality }}</td>
+              {{ end }}
+              <td>{{ $element.name }}</td>
+              <td style="text-align: center;">{{ title $element.data_classification }}</td>
+              <td>
+                {{ if $element.links }}
+                  {{ range $link := sort $element.links "name" }}
+                    <a href='{{ $link.href }}'>{{ $link.name }}</a>
+                  {{ end }}
+                {{ else }}
+                  N/A
+                {{ end }}
+              </td>
+            </tr>
+          {{ end }}
+        {{ end }}
+      {{ end }}
+    </tbody>
+  </table>
+</div>

@@ -16,8 +16,7 @@ stale: false
 - **目標: 12時間**
 
 
-<p class="my-3 text-sm text-gray-600 italic">Tableau ダッシュボードは <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/metrics/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< tableau height="900px" toolbar="hidden" src="https://10az.online.tableau.com/t/gitlab/views/InfrastructureKPIs/MeanTimetoProductionKPI" >}}
 {{< /tableau >}}
 
 MTTP は gitlab-org/gitlab プロジェクトのマスターブランチに変更をマージしてから、その変更を GitLab.com にデプロイするまでの経過時間（時間単位）を測定します。

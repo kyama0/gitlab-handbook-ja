@@ -1,0 +1,30 @@
+{{ $lookup_names := dict "acia" "Access Control (AC) or Identification and Authentication (IA)" "at" "Awareness and Training (AT)" "au" "Audit and Accountability (AU)" "caplscsi" "Assessment, Authorization, and Monitoring (CA), Planning (PL), System and Communications Protection (SC), or System and Information Integrity (SI)" "cmma" "Configuration Management (CM) or Maintenance (MA)" "cpir" "Contingency Planning (CP) or Incident Response (IR)" "mp" "Media Protection (MP)" "pe" "Physical and Environmental Protection (PE)" "ps" "Personnel Security (PS)" "ra" "Risk Assessment (RA)" "sasr" "System and Services Acquisition (SA) or Supply Chain Risk Management (SR)" }}
+{{ $type_names := dict "policy" "Policies" "standard" "Standards" }}
+
+{{ $data := dict }}
+{{ $tag_data := dict }}
+{{ $tag_generator := "security_%s_%s" }}
+
+<ul>
+{{ range $cat, $cat_name := $lookup_names }}
+  <li>
+    <strong>{{- $cat_name -}}</strong>
+    <ul>
+      {{ range $doc_type, $doc_type_name := $type_names }}
+        <li>{{ $doc_type_name }}
+          <ul>
+            {{ $generated_tag := printf $tag_generator $doc_type $cat }}
+            {{ $external_iterable := index $.Site.Taxonomies.tags $generated_tag }}
+
+            {{ with $external_iterable }}
+              {{ range . }}
+               <li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+              {{ end }}
+            {{ end }}
+          </ul>
+        </li>
+      {{ end }}
+    </ul>
+  </li>
+{{ end }}
+</ul>
