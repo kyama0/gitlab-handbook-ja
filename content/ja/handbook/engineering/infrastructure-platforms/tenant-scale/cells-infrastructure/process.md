@@ -12,7 +12,7 @@ stale: false
 
 意思決定権限フレームワークは、エンジニアへのノイズや気散らしを最小限に抑えながら、意思決定プロセスを加速させるために存在します。また、エンジニアが早い段階で[双方向の決定](/handbook/values/#make-two-way-door-decisions)を行い、ソリューションをイテレーションできるように権限を与えるためにも存在します。
 
-Epic の [DRI（直接責任者）](/handbook/people-group/directly-responsible-individuals/)は、そのスコープ内での一次的な意思決定権限を持ちます。DRI の責任の詳細については、チームの概要にある [DRI とサポート貢献者のセクション](_index.md#dri--supporting-contributors)を参照してください。
+Epic の [DRI（直接責任者）](/handbook/people-group/directly-responsible-individuals/)は、そのスコープ内での一次的な意思決定権限を持ちます。DRI の責任の詳細については、チームの概要にある [DRI とサポート貢献者のセクション](./#dri--supporting-contributors)を参照してください。
 
 意思決定を行う際、常に合意に達するとは限りません。そのような場合、[同意の上でコミット](/handbook/values/#disagree-and-commit)の原則に従うことが重要です。DRI は、恣意的な選択ではなく、利用可能な情報と推論に基づいてデータドリブンな決定を行うべきです。複数の意見が関与する場合、DRI は以下の権限レベルテーブルを使用して特定の決定にエスカレートしてコミットする義務があります。
 
@@ -40,7 +40,7 @@ Epic の [DRI（直接責任者）](/handbook/people-group/directly-responsible-
 - [Issue の例](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/cells-infrastructure/team/-/issues/519)
 - [Issue の例（ADR を含む）](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/cells-infrastructure/team/-/issues/364)
 
-**実践において**: 明確なタイトル、適切なラベル、関連作業へのリンクを含む GitLab の Issue に決定を文書化します。Issue トラッキングとラベリング要件の詳細なガイダンスについては、[Issue トラッキングセクション](_index.md#issue-tracking)を参照してください。プロジェクト全体に影響する決定を行う場合は [ADR](/handbook/engineering/architecture/design-documents/cells/#decision-log) を作成します。
+**実践において**: 明確なタイトル、適切なラベル、関連作業へのリンクを含む GitLab の Issue に決定を文書化します。Issue トラッキングとラベリング要件の詳細なガイダンスについては、[Issue トラッキングセクション](./#issue-tracking)を参照してください。プロジェクト全体に影響する決定を行う場合は [ADR](/handbook/engineering/architecture/design-documents/cells/#decision-log) を作成します。
 
 ### 2. 同期的な決定を文書化する
 

@@ -40,7 +40,7 @@ Runners Platform チームは以下に注力します。
 
 ## サポートの受け方
 
-#g_runners_platform でご連絡ください。
+`#g_runners_platform` でご連絡ください。
 
 ## 作業方法
 

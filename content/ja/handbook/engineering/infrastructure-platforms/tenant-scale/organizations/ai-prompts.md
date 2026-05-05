@@ -98,7 +98,7 @@ Identify if any other issues in the `request-for-help` project could be related.
 
 </details>
 
-## エピックサマリープロンプト
+## エピックサマリープロンプト {#epic-summary-prompt}
 
 このプロンプトは、個々のエピックを確認し、先週の最も最近の変更とブロッカーを要約するよう Duo に求めるために使用できます。週次ステータスアップデートメッセージを作成するために使用します。読みやすく、リンクで深掘りしやすいものになります。
 
