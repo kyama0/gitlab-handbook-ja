@@ -42,7 +42,7 @@ cd infra && terraform plan / apply       # Cloudflare Pages + R2 (direct-upload 
 - **dev**: `image_base_url: "https://handbook.gitlab.com"` (config 既定値) → upstream にホットリンクしてローカルでも画像が表示される。
 - **prod**: CI で `HUGO_PARAMS_image_base_url=https://pub-xxxx.r2.dev` のように env var で R2 公開 URL を指定。R2 へは `scripts/upload-images-r2.ts` で `upstream/static/images/` から同期する。
 
-protocol-relative (`//foo`) や絶対 URL (`https://...`) はそのまま、相対パス (`./foo`) も leaf bundle 想定で素通し。raw HTML の `<img src="/images/...">` (29 ファイル程度に存在) は Goldmark の render hook 対象外なので書き換わらない — それらは render hook ではなく原文 markdown のほうを Markdown 構文に直すか、必要なら別途 post-process で対応する。
+protocol-relative (`//foo`) や絶対 URL (`https://...`) はそのまま、相対パス (`./foo`) も leaf bundle 想定で素通し。raw HTML の `<img src="/images/...">` (29 ファイル程度に存在) は Goldmark の render hook 対象外なので書き換わらないが、`layouts/index.redirects` 経由で `_redirects` に `/images/* {image_base_url}/images/:splat 301` を出力しているので、本番 (Cloudflare Pages) では Cloudflare の Bulk Redirects が走って外部ホストへ 301 でリダイレクトされる。ローカル `hugo server` ではこの `_redirects` は使われないので生 HTML 画像はローカルでは表示されない。
 
 **見出し ID**: Hugo/Pandoc 流の `## 見出し {#custom-id}` は Goldmark の `parser.attribute.block: true` でネイティブ対応します（remark プラグインは不要）。
 
