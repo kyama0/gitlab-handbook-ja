@@ -1,0 +1,129 @@
+---
+title: "開発フィーチャーフラグのアーキテクチャ"
+status: implemented
+creation-date: "2020-06-10"
+authors: [ "@ayufan" ]
+coach: "@glopezfernandez"
+approvers: [ "@kencjohnston", "@craig-gomes" ]
+owning-stage: "~devops::non_devops"
+participating-stages: []
+toc_hide: true
+upstream_path: /handbook/engineering/architecture/design-documents/feature_flags_development/
+upstream_sha: ec55f130cc95389b6faf798cebffd864abdbb4c5
+translated_at: "2026-04-27T00:00:00Z"
+translator: claude
+stale: false
+---
+
+
+<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
+このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
+</div>
+
+<div class="overflow-x-auto my-4">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-100 text-left">
+<th class="px-3 py-2 border border-gray-300">Status</th>
+<th class="px-3 py-2 border border-gray-300">Authors</th>
+<th class="px-3 py-2 border border-gray-300">Coach</th>
+<th class="px-3 py-2 border border-gray-300">DRIs</th>
+<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
+<th class="px-3 py-2 border border-gray-300">Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">implemented</span></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/ayufan" class="text-blue-600 hover:underline">@ayufan</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/glopezfernandez" class="text-blue-600 hover:underline">@glopezfernandez</a></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/kencjohnston" class="text-blue-600 hover:underline">@kencjohnston</a>, <a href="https://gitlab.com/craig-gomes" class="text-blue-600 hover:underline">@craig-gomes</a></td>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::non_devops</span></td>
+<td class="px-3 py-2 border border-gray-300">2020-06-10</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+フィーチャーフラグの使用は GitLab の開発において不可欠になっています。フィーチャーフラグは変更を早期にリリースし、機能が安定してパフォーマンスに優れることを確認しながら広い対象者に安全にロールアウトするための便利な方法です。
+
+機能の存在が専用の条件で制御されるため、開発者は機能のテストに最適な時期を選択し、機能が時期尚早に有効にされないようにすることができます。
+
+## 課題
+
+フィーチャーフラグの広範な使用はいくつかの課題をもたらします
+
+- コードベースに追加するフィーチャーフラグは、設定の組み合わせマトリックスを追加するため、すべてが `~"technical debt"` になります。
+- フィーチャーフラグのすべての組み合わせをテストすることはほぼ不可能なため、代わりに最も一般的なシナリオに対してフィーチャーフラグのテストを最適化しようとします。
+- 増え続けるフィーチャーフラグの保守という課題が増大しています。フィーチャーフラグの設定方法や、なぜまだ削除していないのかを忘れてしまうことがあります。
+- フィーチャーフラグの使用は、`~"type::feature"` や `~"type::bug"` の修正がフィーチャーフラグにどのように依存しているか、またはこのフィーチャーフラグがどのように設定されているかを完全に理解していない可能性がある開発外の人々に混乱をもたらす可能性があります。あるいは、機能がリリース投稿の一部として発表されるべきかどうかも同様です。
+- フィーチャーフラグの保守は、異なる環境 / 対象での異なる設定を管理しなければならないという追加の課題をもたらします。テスト、開発、ステージング、本番用の異なるフィーチャーフラグ設定があり、オンプレミス向けとして顧客にリリースされるものもあります。
+
+## 目標
+
+フィーチャーフラグの使用に関する最大の課題は、その暗黙性です。フィーチャーフラグはコードベースの一部であり、開発機能の外から理解するのが難しくなっています。
+
+フィーチャーフラグを使った開発を、関心のあるすべての当事者がアクセスできるようにすべきです。
+
+- 開発者 / エンジニア
+  - 新しいフィーチャーフラグを簡単に追加し、その状態を設定できる
+  - 別のフィーチャーフラグに触れる場合に誰に連絡すればよいかをすぐに見つけられる
+  - 古くなったフィーチャーフラグをすぐに見つけられる
+- エンジニアリングマネージャー
+  - 自分のグループが管理するフィーチャーフラグを理解できる
+- エンジニアリングマネージャーとディレクター
+  - 管理しなければならないフィーチャーフラグの量による `~"technical debt"` の量を理解できる
+  - 各リリースで追加・削除されるフィーチャーフラグの数を理解できる
+- プロダクトマネージャーとドキュメントライター
+  - どの機能がどのフィーチャーフラグによって制御されているかを理解できる
+  - 機能とそのフィーチャーフラグが GitLab.com で一般公開されているかどうかを理解できる
+  - 機能とそのフィーチャーフラグがオンプレミスインストールでデフォルトで有効かどうかを理解できる
+- デリバリーエンジニア
+  - 連続するデプロイメント間で導入・変更されたフィーチャーフラグを理解できる
+- サポートおよびリライアビリティエンジニア
+  - リリース間でフィーチャーフラグがどのように変化したかを理解できる: どのフィーチャーフラグが有効になり、何が削除されたか
+  - 進行中のサポートリクエストやインシデントで助けになる可能性のある個人を知るための、フィーチャーフラグに関する関連情報をすぐに見つけられる
+
+## 提案
+
+上記の目標を実現するために、フィーチャーフラグの使用を明示的にし、すべての関係者が理解できるようにすべきです。
+
+YAML で記述された `feature-flags/<name-of-feature.yml>` を導入し、以下を可能にします:
+
+1. すべてのフィーチャーフラグが文書化される中央の場所
+1. 特定のフィーチャーフラグが導入された理由の説明
+1. どの関連 Issue とマージリクエストによって導入されたか
+1. コードベース内のすべてのフィーチャーフラグを含む自動ドキュメントのビルド
+1. 特定のグループに属するフィーチャーフラグの数の追跡
+1. リリース間で追加・削除されるフィーチャーフラグの数の追跡
+1. この情報をすべての人が簡単にアクセスできるようにする
+1. 顧客が機能を有効にする方法を簡単に発見し、異なるリリース間で何が変わったかの情報をすぐに見つけられるようにする
+
+### YAML
+
+```yaml
+---
+name: ci_disallow_to_create_merge_request_pipelines_in_target_project
+introduced_by_url: https://gitlab.com/gitlab-org/gitlab/-/merge_requests/40724
+rollout_issue_url: https://gitlab.com/gitlab-org/gitlab/-/issues/235119
+group: group::environments
+type: development
+default_enabled: false
+```
+
+## 理由
+
+これらの変更が必要な理由:
+
+- 現在約 500 種類のフィーチャーフラグがある
+- その使用状況の追跡が困難
+- `default_enabled:` と `actors` が異なるフィーチャーフラグの曖昧な使用がある
+- 誰が何のフィーチャーフラグを所有し、関連情報をどこで見つけるかの明確な指示がない
+- フィーチャーフラグが実際には `~"technical debt"` であることを示すフィーチャーフラグロールアウト Issue 作成の要求を強調していない
+- コードベースに正確にどのフィーチャーフラグがあるかわからない
+- 異なる環境でフィーチャーフラグがどのように設定されているかを正確に知らない: `test` に何が使用されているか、`on-premise` に何をリリースしているか、`staging`、`qa`、`production` の設定はどうか
+
+## イテレーション
+
+この作業は専用の Epic: [フィーチャーフラグの内部使用の改善](https://gitlab.com/groups/gitlab-org/-/epics/3551) の一部として行われています。この Epic はこれらの変更を行うためのメタ理由を説明しています。

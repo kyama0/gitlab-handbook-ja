@@ -1,0 +1,225 @@
+---
+title: "notes テーブルのパーティショニング"
+status: ongoing
+creation-date: "2023-12-22"
+authors: [ "@engwan", "@euko" ]
+owning-stage: "~devops::plan"
+participating-stages: [ "~devops::create" ]
+toc_hide: true
+upstream_path: /handbook/engineering/architecture/design-documents/notes_table_partitioning/
+upstream_sha: 7970b7fb241c268e1af118c106ab79642da33ed0
+translated_at: "2026-04-27T13:58:39Z"
+translator: claude
+stale: false
+---
+
+
+<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
+このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
+</div>
+
+<div class="overflow-x-auto my-4">
+<table class="w-full text-sm border-collapse">
+<thead>
+<tr class="bg-gray-100 text-left">
+<th class="px-3 py-2 border border-gray-300">Status</th>
+<th class="px-3 py-2 border border-gray-300">Authors</th>
+<th class="px-3 py-2 border border-gray-300">Coach</th>
+<th class="px-3 py-2 border border-gray-300">DRIs</th>
+<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
+<th class="px-3 py-2 border border-gray-300">Created</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">ongoing</span></td>
+<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/engwan" class="text-blue-600 hover:underline">@engwan</a>, <a href="https://gitlab.com/euko" class="text-blue-600 hover:underline">@euko</a></td>
+<td class="px-3 py-2 border border-gray-300"></td>
+<td class="px-3 py-2 border border-gray-300"></td>
+<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::plan</span></td>
+<td class="px-3 py-2 border border-gray-300">2023-12-22</td>
+</tr>
+</tbody>
+</table>
+</div>
+
+
+## 問題
+
+`notes` テーブルは GitLab 最大の PostgreSQL DB テーブルの 1 つであり、2023年11月時点で `.com` の本番データベースのサイズが 1.5TB を超え、GitLab.com と大規模なセルフマネージドインスタンスの信頼性を [ますます危険にさらして](https://gitlab.com/groups/gitlab-org/-/epics/6211) います。
+
+テーブルに対して利用可能なパーティショニングまたはシャーディング方法を評価し、100GB のテーブルサイズ制限ターゲットを達成するためにできるだけ早く実行する必要があります。
+
+## `notes` テーブルの概要
+
+### 2023年11月時点のテーブル構成
+
+テーブルのレコードの大部分はマージリクエストのものでした。
+
+| Noteable タイプ  | 総レコード数に占める割合 | レコード数  |
+|----------------|--------------------|-----------:|
+| Merge Request  | 67%                | 1002272868 |
+| Issue          | 23%                | 348020507  |
+| Commit         | <～ 5 %            | 67790930   |
+| Epic           | <～ 0.05 %         | 6196244    |
+| その他          | <～ 5%             |            |
+| 合計           |                    | 1488612100 |
+
+`note` と `note_html` カラムはそれぞれ 183GB と 580GB を占め、テーブルとその補助インデックスが使用するストレージスペースの約 77% を占めていました。
+
+`note` は生のノートテキストを保存し、`note_html` は生のノートテキストの HTML レンダリングをキャッシュします。
+
+| カラム              | サイズ (GB)   | 全体に占める割合 |
+|---------------------|-------------|------------|
+| `note`              | 183 GB      | 16%        |
+| `note_html`         | 580 GB      | 51%        |
+| MR 関連カラム        | 94 GB       | 0.8%       |
+| その他のカラム       | 383 GB      | 24%        |
+| 合計                | 1,240 GB    | ～100%     |
+
+テーブルのインデックスが残りの約 300GB を占めていました。
+
+### `notes` テーブルの設計
+
+`notes` は以下の 3 つのカラムを通じてポリモーフィック関連を持っています。
+
+- `noteable_type`: noteable のタイプを保存します（例: `Issue`、`MergeRequest`、`Commit`）。
+
+- `noteable_id`: noteable の ID を保存します。
+
+- `commit_id`: コミットの Git SHA を保存します。
+
+ノートの `noteable_type` が `Commit` の場合、`noteable_id` は `NULL` となり、`commit_id` がコミットを参照するために使用されます。
+
+関連モデルは: `MergeRequest`、`Vulnerability`、`Epic`、`Snippet`、`Commit`、
+`DesignManagement::Design`、`Issue`、`AlertManagement::Alert`、`AbuseReport` です。
+
+インスタンスレベルの abuse notes を除き、すべてのノートは noteable を通じて名前空間に属する必要があります。
+
+#### lock_manager lwlock の競合の削減
+
+テーブルのポリモーフィック関連には、パーティショニングにとって重要な意味があります。
+
+パーティショニングは、テーブルを対象とするクエリが最小数のパーティションにアクセスするように、または [lock_manager lwlock の競合を削減する](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2301) ために 16 の fastpath ロックを消費しない方法で行う必要があります。
+
+例えば、`notes` テーブルの最も一般的なアクセスパターンは Issue などの noteable のノートを取得することです。テーブルを `id`（範囲、ハッシュ、リスト）でパーティション分割した場合、次のクエリはすべてのパーティションにアクセスする可能性があります: `SELECT * FROM notes WHERE noteable_type='Issue' AND noteable_id=1;`。
+代わりに、ユーザーアクティビティや TODO を表示するために `id` でノートを取得する必要があるとします:
+`SELECT * FROM todos INNER JOIN notes WHERE notes.id=todos.note_id AND todos.id IN (1, 2, 3);`。
+PostgreSQL は `note_id` を含まないパーティションをプルーニングし、クエリを実行するために必要な最小のパーティションにのみアクセスできます。
+
+`notes` テーブルの多くのカラムが NULL 可能であるという点が課題であり、ポリモーフィック関連に使用されるカラムや名前空間とプロジェクトも同様で、パーティショニングには通常 NULL 不可のパーティショニングカラムが必要です。
+
+## パーティショニング方法
+
+ここでは `notes` テーブルのパーティショニングと再構造化のための様々なオプションを検討します。
+
+### 1. ドメインモデルによるテーブルの分割
+
+ドメインモデル（Issue、MR、Epic）による個別テーブルへの分割はベストプラクティスに沿っていますが、結果のテーブルは依然として 100GB を超えるでしょう。
+例えば、`issue_notes`、`merge_request_notes`、`epic_notes` という個別テーブルを持つことができます。
+
+**メリット:**
+
+- ドメインモデルと [テーブルの構成](#テーブルの構成-2023年11月時点) に沿っています
+  - 他のパーティショニング戦略の適用を妨げ、インデックスの肥大化や最適でないデータの整合を引き起こすマージリクエスト固有のカラムが多数あります。
+
+- [ポリモーフィック関連](https://docs.gitlab.com/ee/development/database/polymorphic_associations.html) と制約の問題に対処します
+  - ポリモーフィック関連がすでに推奨されていないことに加え、Git SHA ハッシュを保存する `commit_id` カラムの存在がデータベース制約の完全な活用を妨げています。
+
+**デメリット:**
+
+- コードベース全体で**重大な**コード変更が必要です
+
+- ドメインで分割した後でも、結果のドメインテーブルは 100GB のターゲットサイズ制限を超え、各テーブルをパーティション分割する必要があります。
+
+### 2. `namespace_id` を使用したハッシュによるパーティショニング
+
+noteable のノートを取得する典型的なアクセスパターンを踏まえ、ハッシュキーカラムとして `noteable_type`、`noteable_id`、`commit_id` を使用することを検討するかもしれません。
+しかし、`id` で動作するノートのプリロードに使用されるクエリがあるため、[唯一のハッシュキーとしては `namespace_id` の方が適切な選択](https://gitlab.com/gitlab-org/gitlab/-/issues/416127#note_1467349405) と考えられます。
+
+**メリット:**
+
+- 将来的にはいくつかのパーティションが速い速度で成長する可能性はあるものの、追加の作業なしに 100GB のターゲットサイズ制限を達成できます。
+
+**デメリット:**
+
+- ハッシュパーティション分割されたテーブルのプライマリキーにはハッシュキーカラムを含める必要がありますが、ここで提案されているすべてのハッシュキーは NULL 可能であるため、プライマリキーの一部にすることができず、参照整合性が失われます。ただし、このデメリットはポリモーフィック関連カラムでパーティショニングする場合にのみ存在します。`namespace_id` は近い将来 Cells の `notes` テーブルのシャーディングキーになる予定です。
+
+- `namespace_id` は `notes` テーブルを参照するすべてのテーブルのシャーディングキーになる可能性があり、Cells の作業が進むにつれてパーティション分割された `notes` テーブルへの外部キーを容易に追加できます。
+
+- `namespace_id` を含めるようにすべての notes クエリを更新するためのコード変更が依然として必要です。
+
+- この方法は、ポリモーフィック関連やマージリクエスト固有のカラムが多すぎること（および結果）のような既存の構造上の問題のいずれにも対処しません。
+
+### 3. テーブルの垂直分割
+
+最大の 2 カラム `note` と `note_html`、またはただ `note_html` だけを別のテーブルに垂直分割することで、全体のストレージ使用量を削減できます。
+notes テーブルは PostgreSQL の [TOAST 機能](https://www.postgresql.org/docs/current/storage-toast.html) から大きな恩恵を受けられないことは注目に値します。
+ほとんどのノートテキスト（`note` カラム）は、圧縮と OUT-OF-LINE ストレージをトリガーするために必要なデフォルトの 2kB しきい値を超えていません。
+
+垂直分割されたカラムのテーブルは、`notes` テーブルの `id` カラムを使用して [int range でパーティション分割](https://docs.gitlab.com/ee/development/database/partitioning/int_range.html) できます。
+
+**メリット:**
+
+- `note` と `note_html` カラムの垂直パーティショニングにより、テーブルのレイアウトが改善され、残りの `notes` テーブルのタプルサイズがコンパクト化され、より良い空間的局所性が可能になります。
+
+- `notes` テーブルはそのままであるため、より漸進的なアプローチと見なせます。
+
+**デメリット:**
+
+- [ロック競合問題](#notes-テーブルの設計) を避けるために、垂直分割されたカラムを含むテーブルをプリロードする際にバッチ処理戦略を実装する必要があります。
+  16 以上のパーティションがあるとします。最初のパーティションには ID が `<100` の `notes` レコードのデータが含まれます。
+  2 番目のパーティションには ID が `>=100` の `notes` レコードのデータが含まれます。以下同様です。
+  プリロードクエリが過多のパーティションにアクセスしないようにするために、いくつかのクエリに分割できます:
+  `SELECT * FROM p_notes_data WHERE note_id < 100 AND note_id IN (1, 100, 20000, 30000)`,
+  `SELECT * FROM p_notes_data WHERE note_id >= 20000 AND note_id IN (1, 100, 20000, 30000)` など。
+
+- `notes` が使用するコンサーン `CacheMarkdownField` は、コードベースの他の部分への暗黙の依存関係があります。
+  関連するメソッドをオーバーライドしたり透過的に委任しようとする試みは、クリーンにも容易にも機能しません。
+  [Markdown キャッシングに関するセクション](#db-ベースの-markdown-キャッシングに関する注記) も参照してください。
+
+- 100GB のターゲットサイズ制限を達成するために `notes` テーブルの追加パーティショニング作業が依然として必要です。
+
+- この方法は、ポリモーフィック関連やマージリクエスト固有のカラムが多すぎること（および結果）のような既存の構造上の問題のいずれにも対処しません。
+
+#### DB ベースの Markdown キャッシングに関する注記
+
+マージリクエストのノートは、マージリクエストがクローズされると関連性が失われ始めるという典型的な減衰パターンに従います。
+同様の減衰パターンが他の noteable タイプにも適用できる可能性があり、
+一定期間より古いノートのキャッシュされた Markdown を削除することが、保存データを削減する実行可能な方法になる可能性があります。
+
+一つの潜在的なリスクは、キャッシュされた Markdown が削除された古いノートを再計算することが、
+Rails アプリケーションと PostgreSQL ホストの両方にスラッシング効果をもたらす可能性があることです。
+過去には、ノートの多数のレンダリングとキャッシュの更新が、notes のキャッシュ Markdown バージョンがバンプされるたびに
+アプリケーションとデータベースを著しく圧迫することが観察されていました。
+
+スラッシング効果がそれほど懸念されないことが判明した場合、Markdown を Redis のみにキャッシュし、
+データベースキャッシュ層を削除することを調査する価値があります。
+
+### 4. `noteable_type` を使用したリストによるパーティショニング
+
+`notes` テーブル自体を `noteable_type` カラムの値でパーティション分割することを検討できます。
+
+NOTE:
+2024年3月8日時点で、`noteable_type` に `INVALID` の NOT NULL チェック制約があります。
+`noteable_type` のない少数の `notes` レコードが GitLab.com の本番データベースで発見・削除されました。
+NOT NULL チェック制約は [17.0 で検証される予定](https://gitlab.com/gitlab-org/gitlab/-/issues/443667) です。
+
+**メリット:**
+
+- ほぼすべての `notes` クエリに `noteable_type` が含まれており、リストによるパーティショニングの際に使用するカラムとして理想的な選択です。
+
+- `noteable_type` でリストパーティショニングすることで、結果のパーティションをさらにドメインでパーティション分割できます。
+
+**デメリット:**
+
+- サブパーティショニングでも、ルートテーブルのプライマリキーにパーティショニングキーが存在する必要があります。
+
+- このアプローチでは、`notes` テーブルを参照するテーブルに多くの外部キーを追加する必要があります。
+  パーティション分割されたテーブルは複合プライマリキー `(noteable_type, id)` を使用するため、
+  まず `noteable_type` をすべての参照テーブルに追加してバックフィルする必要があります。
+
+- Active Record モデルが複合プライマリキーを使用するパーティション分割されたテーブルで動作することを確保するために、
+  より多くのコード変更が必要になる場合があります。
+
+- この方法は、ポリモーフィック関連やマージリクエスト固有のカラムが多すぎることのような既存の構造上の問題のいずれにも対処しません。ただし、ドメインによるサブパーティショニングの可能性が、このデメリットをある程度緩和します。
