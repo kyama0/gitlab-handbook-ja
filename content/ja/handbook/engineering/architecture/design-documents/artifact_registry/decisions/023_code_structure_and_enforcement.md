@@ -129,7 +129,7 @@ artifact-registry/
       testutil.go                 # 共有テストヘルパー
 ```
 
-### 強制ツーリング
+### 強制ツーリング {#enforcement-tooling}
 
 2 つのツールが強制可能なすべてのアーキテクチャ境界をカバーします。
 

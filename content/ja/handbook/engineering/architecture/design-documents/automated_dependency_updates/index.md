@@ -6,7 +6,7 @@ authors: [ "@hacks4oats" ]
 coaches: [ "@mbenayoun" ]
 dris: [ "@connorgilbert", "@nilieskou" ]
 owning-stage: "~devops::application security testing"
-participating-stages: [ ~"devops::application security testing" ]
+participating-stages: [ "~devops::application security testing" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/automated_dependency_updates/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
