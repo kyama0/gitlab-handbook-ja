@@ -81,7 +81,7 @@ stale: false
 
 データベース関連のインシデントと考えられる原因により、アプリケーション（または主要なコンポーネント、例：Sidekiq）がダウンまたは応答不能になっている場合は、「全員出動」です。
 
-1. 専門的なヘルプを求めるために [#database](https://gitlab.enterprise.slack.com/archives/C3NBYFJ6N)、[#g_database](https://gitlab.enterprise.slack.com/archives/CNZ8E900G)、[#g_infra_database_reliability](https://gitlab.enterprise.slack.com/archives/C02K0JTKAHJ) チャンネル（内部）で `@db-team`（データベース機能）または `@dbre`（データベース信頼性）グループハンドルを使用して連絡します。
+1. 専門的なヘルプを求めるために [#database](https://gitlab.enterprise.slack.com/archives/C3NBYFJ6N)、[#g_database](https://gitlab.enterprise.slack.com/archives/CNZ8E900G)、[#g_infra_database_reliability](https://gitlab.enterprise.slack.com/archives/C02K0JTKAHJ) チャンネル（内部）で `@db-team`（データベース機能）または `@dbre`（データベース信頼性）グループハンドルを使用して連絡してください。
 
 ### 6. マイグレーションソースの特定 {#6-determine-migration-source}
 
@@ -101,10 +101,10 @@ git log --first-parent {path/to/migration.rb}
 
 各データベーステーブルには、対応するグループを特定するために使用できるドキュメントファイルがあります。
 
-1. https://gitlab.com/gitlab-org/gitlab/-/tree/master/db/docs に `{table_name}.yml` という名前のファイルを探します
-1. ファイル内で関連する `feature_categories` のリストを見つけます
-1. 機能カテゴリを使用して [8. 機能カテゴリに基づいてチームに連絡する](#8-reach-out-to-a-team-based-on-feature-category) に進みます
-1. カテゴリが複数ある場合は、リストから一つ選んでそのチームから始めます
+1. https://gitlab.com/gitlab-org/gitlab/-/tree/master/db/docs に `{table_name}.yml` という名前のファイルを探してください
+1. ファイル内で関連する `feature_categories` のリストを見つけてください
+1. 機能カテゴリを使用して [8. 機能カテゴリに基づいてチームに連絡する](#8-reach-out-to-a-team-based-on-feature-category) に進んでください
+1. カテゴリが複数ある場合は、リストから一つ選んでそのチームから始めてください
 1. どのチームに連絡すればよいかまだ不明な場合は [9. 支援のエスカレーション](#9-escalating-assistance) に進んでください。Issue を引き起こしているテーブルと、それが関係していると考える理由の詳細を必ず含めてください。
 
 ### 8. 機能カテゴリに基づいてチームに連絡する {#8-reach-out-to-a-team-based-on-feature-category}
@@ -128,11 +128,11 @@ git log --first-parent {path/to/migration.rb}
 
 #### GitLab.com または Dedicated の継続的なインシデントの場合
 
-1. 開発オンコールが追加のデータベースの専門知識を必要とする場合は [#database](https://gitlab.enterprise.slack.com/archives/C3NBYFJ6N) で連絡します
-1. 15 分以内に応答がない場合、またはリクエストが緊急の場合は、元のメッセージのスレッドで `@db-team`（アプリケーション）または `@dbre`（インフラストラクチャ/オペレーション）にタグを付けます
-1. 15 分以内に ping への応答がなく、リクエストが緊急の場合は、Slack を使用してデータベースまたは DBRE マネージャーの電話番号を見つけ、テキストまたは電話で連絡します。
+1. 開発オンコールが追加のデータベースの専門知識を必要とする場合は [#database](https://gitlab.enterprise.slack.com/archives/C3NBYFJ6N) で連絡してください
+1. 15 分以内に応答がない場合、またはリクエストが緊急の場合は、元のメッセージのスレッドで `@db-team`（アプリケーション）または `@dbre`（インフラストラクチャ/オペレーション）にタグを付けてください
+1. 15 分以内に ping への応答がなく、リクエストが緊急の場合は、Slack を使用してデータベースまたは DBRE マネージャーの電話番号を見つけ、テキストまたは電話で連絡してください。
 
 #### サポートエスカレーションの場合
 
-1. [ヘルプリクエスト Issue](https://gitlab.com/gitlab-com/enablement-sub-department/section-enable-request-for-help/) を申請します
-1. [#database](https://gitlab.enterprise.slack.com/archives/C3NBYFJ6N) で連絡し、ヘルプリクエストへのリンクを含めます
+1. [ヘルプリクエスト Issue](https://gitlab.com/gitlab-com/enablement-sub-department/section-enable-request-for-help/) を申請してください
+1. [#database](https://gitlab.enterprise.slack.com/archives/C3NBYFJ6N) で連絡し、ヘルプリクエストへのリンクを含めてください
