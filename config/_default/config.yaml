@@ -43,7 +43,10 @@ params:
     sidebar_menu_foldable: true
     sidebar_cache_limit: 1000
     sidebar_menu_truncate: 125
-    navbar_logo: true
+    # GitLab tanuki ロゴ (assets/icons/logo.svg) は商標のため使わない方針。
+    # docsy navbar が resources.Get "icons/logo.svg" で参照する処理を
+    # この flag で無効化している。
+    navbar_logo: false
     footer_about_disable: true
     showLightDarkModeMenu: true
   copyright: "GitLab (handbook content) / kyama0 (translation)"
