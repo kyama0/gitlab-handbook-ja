@@ -60,7 +60,7 @@ model: inherit
 
 1. `translation-state/manifest.json` の対応するエントリを更新（または新規追加）:
    - キー: 原文の相対パス（例: `content/handbook/company/mission.md`）
-   - 値: `{ path, upstream_sha, translated_at, model: "claude-opus-4-7", input_hash }`。`input_hash` は原文ファイルの SHA-256（`sha256sum upstream/content/handbook/...md` の結果）。
+   - 値: `{ path, upstream_sha, translated_at, model, input_hash }`。`model` は実行時に使用した Claude モデル名（`model: inherit` で起動した場合は親エージェントから継承された実モデル名）を記録する。`input_hash` は原文ファイルの SHA-256（`sha256sum upstream/content/handbook/...md` の結果）。
 2. ローカル動作確認: `hugo --renderToMemory --quiet` を走らせて該当ページにエラーが出ないことを確認する（任意。エラーが出たらショートコード／HTML の取り扱いを見直す）。
 3. レビュー前提なら `translation-reviewer` サブエージェントに渡して観点 (1) 正確性 (2) 自然さ をチェックさせる。
 
