@@ -1,6 +1,4 @@
 node_modules/
-dist/
-.astro/
 .env
 .env.local
 .env.*.local
@@ -19,3 +17,8 @@ dist/
 # Build artifacts / local caches
 .cache/
 coverage/
+
+# Hugo
+public/
+resources/
+.hugo_build.lock

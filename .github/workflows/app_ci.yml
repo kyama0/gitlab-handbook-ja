@@ -5,15 +5,18 @@ on:
     branches:
       - main
     paths:
-      - 'src/**'
       - 'content/**'
+      - 'layouts/**'
+      - 'data/**'
+      - 'assets/**'
+      - 'static/**'
+      - 'config/**'
       - 'scripts/**'
-      - 'public/**'
       - 'package.json'
       - 'package-lock.json'
-      - 'astro.config.mjs'
-      - 'tsconfig.json'
-      - 'tailwind.config.mjs'
+      - 'go.mod'
+      - 'go.sum'
+      - '.tool-versions'
       - '.github/workflows/app_ci.yml'
 
 permissions:
@@ -26,34 +29,42 @@ concurrency:
 
 jobs:
   # ---------------------------------------------------------------------------
-  # Build the site and validate types + content schema.
-  #   - `astro check` verifies TypeScript and content-collection frontmatter
-  #     against the zod schema in src/content/config.ts.
-  #   - `astro build` catches issues that pure type checks miss (broken
-  #     imports, invalid layouts, integration failures, etc.).
-  # No submodule checkout: the build only consumes files under
-  # content/ja/handbook/, which are committed to this repo.
+  # Build the site with Hugo (matches the production deploy build).
+  # `hugo` exits non-zero on shortcode/render errors, so passing CI implies
+  # the same site can be deployed.
+  # No submodule checkout: the build consumes only committed files
+  # (content/, layouts/, data/, assets/, static/, config/) plus Hugo Modules
+  # downloaded via `hugo mod get` from the public proxy.
   # ---------------------------------------------------------------------------
   build:
-    name: Build & Type Check
+    name: Hugo Build
     runs-on: ubuntu-latest
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+
+      - uses: actions/setup-go@d35c59abb061a4a6fb18e82ac0862c26744d6ab5 # v5.5.0
+        with:
+          go-version-file: '.tool-versions'
+
+      - uses: peaceiris/actions-hugo@75d2e84710de30f6ff7268e08f310b60ef14033f # v3.0.0
+        with:
+          hugo-version: '0.151.0'
+          extended: true
 
       - uses: actions/setup-node@48b55a011bda9f5d6aeb4c2d9c7362e8dae4041e # v6.4.0
         with:
           node-version: '22'
           cache: 'npm'
 
-      - name: Install dependencies
+      - name: Install Node deps (postcss / autoprefixer for Docsy CSS pipeline)
         run: npm ci
 
-      - name: Astro check (types + content schema)
-        run: npm run check
+      - name: Hugo build
+        run: hugo --logLevel error
 
-      - name: Build
-        run: npm run build
+      - name: Pagefind index
+        run: npx pagefind --site public
 
   # ---------------------------------------------------------------------------
   # Flag PRs that introduce new dependencies with known vulnerabilities or

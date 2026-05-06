@@ -1,0 +1,152 @@
+languageCode: ja
+locale: ja-JP
+# `<html lang="ja">` を出力させるために top-level で defaultContentLanguage
+# を ja に。これがないと Hugo は en にフォールバックして、Pagefind の
+# 自動言語検出 (CJK 用 tokenizer) も英語モードで動作してしまう。
+defaultContentLanguage: ja
+title: GitLab ハンドブック (非公式日本語訳)
+
+# static/robots.txt を真とするため、Hugo の自動生成は無効化する
+# (enable した場合 docsy が `User-agent: *` だけの最小版を生成して
+# static/robots.txt を上書きしてしまう)
+enableRobotsTXT: false
+enableGitInfo: true
+
+sitemap:
+  changefreq: monthly
+  filename: sitemap.xml
+  priority: 0.5
+
+params:
+  title: GitLab ハンドブック (非公式日本語訳)
+  social:
+    twitter: GitLab
+  defaultContentLanguage: ja
+  locale: ja-JP
+  description: GitLab Handbook の非公式日本語訳。正確性については英語の原文を参照してください。
+  # 検索は Pagefind (静的サイト用、CJK ネイティブ対応) を使う。
+  # docsy 側の Algolia 連携は使わないので params.search セクションは
+  # 設けない (空でも入ると docsy が algolia 検索 UI を render してしまう)。
+  images:
+    - images/gitlab-cover.png
+  branch: main
+  project: kyama0/gitlab-handbook-ja
+  # repoid is GitLab-specific (used by docsy-gitlab for "Edit this page" links to GitLab MRs).
+  # We're on GitHub so this is unused; leave as a placeholder.
+  repoid: 0
+  plantuml:
+    enable: true
+  mermaid:
+    enable: true
+  offlineSearch: false
+  ui:
+    sidebar_menu_compact: false
+    sidebar_menu_foldable: true
+    sidebar_cache_limit: 1000
+    sidebar_menu_truncate: 125
+    # GitLab tanuki ロゴ (assets/icons/logo.svg) は商標のため使わない方針。
+    # docsy navbar が resources.Get "icons/logo.svg" で参照する処理を
+    # この flag で無効化している。
+    navbar_logo: false
+    footer_about_disable: true
+    showLightDarkModeMenu: true
+  copyright: "GitLab (handbook content) / kyama0 (translation)"
+  # ルート絶対パスの画像 URL (/images/...) に前置するベース URL。
+  # dev: handbook.gitlab.com にホットリンクして画像表示
+  # prod: CI で HUGO_PARAMS_image_base_url=https://pub-xxxx.r2.dev に上書き
+  # (R2 へは scripts/upload-images-r2.ts で同期済み)
+  image_base_url: "https://handbook.gitlab.com"
+  links:
+    user: []
+    developer: []
+
+caches:
+  getresource:
+    dir: :cacheDir/:project
+    maxAge: 24h
+
+staticDir:
+  - data
+  - static
+
+menu:
+  main:
+    # navbar の右側メニュー。順序 (weight 昇順):
+    #   Handbook (content/handbook/_index.md frontmatter で weight 0)
+    #   このサイトについて (content/about/_index.md frontmatter で weight 50)
+    #   原文 (EN) ← weight 70
+    #   GitHub アイコン ← weight 100 (params.iconOnly でアイコンのみ)
+    # docsy-gitlab module 側 menu (Changelog, The Handbook) は
+    # layouts/_partials/navbar.html で除外している。
+    - weight: 70
+      name: 原文 (EN)
+      url: https://handbook.gitlab.com/
+    - weight: 100
+      name: GitHub
+      url: https://github.com/kyama0/gitlab-handbook-ja
+      pre: '<i class="fa-brands fa-github"></i>'
+      params:
+        iconOnly: true
+
+mediaTypes:
+  text/netlify:
+    delimiter: ""
+    suffixes: [""]
+outputs:
+  home: ["HTML", "REDIRECTS"]
+  section: ["HTML"]
+outputformats:
+  redirects:
+    baseName: "_redirects"
+    isPlainText: true
+    mediaType: "text/netlify"
+    notAlternative: true
+
+markup:
+  goldmark:
+    renderHooks:
+      link:
+        useEmbedded: fallback
+    parser:
+      attribute:
+        block: true
+    renderer:
+      unsafe: true
+  highlight:
+    tabWidth: 2
+    noClasses: false
+  tableOfContents:
+    startLevel: 2
+    endLevel: 4
+    ordered: false
+
+security:
+  funcs:
+    getenv: ["^HUGO_", "PERISCOPE_EMBED_API_KEY", "PRODUCT_ANALYTICS_APP_KEY", "PRODUCT_ANALYTICS_HOST", "PUBLIC_HANDBOOK_REF"]
+
+canonifyURLs: true
+pluralizeListTitles: false
+enableEmoji: true
+
+# /job-description-library/ etc. are external micro-sites that don't exist
+# in this repo. Match upstream's tolerant behavior on broken refs.
+refLinksErrorLevel: WARNING
+refLinksNotFoundURL: ""
+
+module:
+  proxy: https://proxy.golang.org
+  hugoVersion:
+    extended: true
+    min: 0.123
+  imports:
+    - path: gitlab.com/gitlab-com/content-sites/docsy-gitlab
+      disable: false
+    - path: github.com/google/docsy
+      disable: false
+    - path: github.com/google/docsy/dependencies
+      disable: false
+
+ignoreErrors:
+  - error-tweet-failed
+
+timeout: "300s"

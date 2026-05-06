@@ -7891,9 +7891,9 @@
     },
     "content/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/senior.md": {
       "path": "content/handbook/engineering/careers/matrix/infrastructure/core-platform/distribution/senior.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-27T00:00:00Z",
-      "model": "claude-sonnet-4-6",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-05T00:00:00Z",
+      "model": "claude-opus-4-7",
       "input_hash": "1451ca1bf7594246f7095a4d77042911f35e662adf34ecd8a754d2a1959aa760"
     },
     "content/handbook/engineering/careers/matrix/infrastructure/intermediate.md": {
@@ -15181,8 +15181,8 @@
     },
     "content/handbook/marketing/developer-relations/engineering/merge-request-coach-lifecycle.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/merge-request-coach-lifecycle.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-05T12:56:33Z",
       "model": "claude-opus-4-7",
       "input_hash": "53dcc89f84f9cd0a99dc4d56d08f471c4d2d92287e7a64386359ddd56d44b3da"
     },
@@ -15461,10 +15461,10 @@
     },
     "content/handbook/marketing/developer-relations/workflows-tools/_index.md": {
       "path": "content/handbook/marketing/developer-relations/workflows-tools/_index.md",
-      "upstream_sha": "6b2970dac4d9078a5a79c285a6ee08817ecbd954",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
+      "translated_at": "2026-05-05T12:56:31Z",
       "model": "claude-opus-4-7",
-      "input_hash": "b75662a8251233a66bded09a3706a22c72dec470821988fcd6366ca2c8b3dd82"
+      "input_hash": "9d2117e00ab09c1466b0fbac6e9dfb4b62c5d0dcf755b8c3e320b14614e83ec9"
     },
     "content/handbook/marketing/developer-relations/workflows-tools/cloud-resources.md": {
       "path": "content/handbook/marketing/developer-relations/workflows-tools/cloud-resources.md",

@@ -1,0 +1,27 @@
+{{/*
+   Markdown image render hook.
+
+   翻訳済みコンテンツ内の Markdown 画像 ![alt](/images/foo.png) は
+   upstream の `static/images/` 配下にあるファイルを参照しているが、
+   本リポジトリは upstream を git submodule として保持しているだけで
+   画像ファイルそのものは持っていない。
+
+   このフックはルート絶対パス (/foo.png) で参照される画像 URL の前に
+   `params.image_base_url` を前置して外部ホスト (handbook.gitlab.com
+   または R2) に解決させる。
+
+   - 開発時:        params 未設定 → "https://handbook.gitlab.com" にフォールバック
+                    (upstream にホットリンクして画像を表示)
+   - 本番ビルド時:  HUGO_PARAMS_image_base_url=https://pub-xxxx.r2.dev
+                    のように env var で R2 公開 URL を指定
+                    (R2 には scripts/upload-images-r2.ts で同期済み)
+
+   protocol-relative (//foo) や絶対 URL (https://...)、相対パス
+   (./foo, ../foo) はそのまま (Hugo のデフォルト挙動)。
+*/}}
+{{- $dst := .Destination -}}
+{{- $base := strings.TrimSuffix "/" (site.Params.image_base_url | default "https://handbook.gitlab.com") -}}
+{{- if and (hasPrefix $dst "/") (not (hasPrefix $dst "//")) -}}
+  {{- $dst = printf "%s%s" $base $dst -}}
+{{- end -}}
+<img src="{{ $dst | safeURL }}" alt="{{ .PlainText }}"{{ with .Title }} title="{{ . | safeHTML }}"{{ end }}>

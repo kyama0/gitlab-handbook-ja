@@ -2,15 +2,21 @@
  * Sync images referenced by translated Markdown into the R2 bucket.
  *
  * Strategy:
- * - Walk `content/ja/handbook/**\/*.md` and collect every root-absolute
- *   asset URL (e.g. `/images/foo.svg`, both `<img src>` and `![](...)`).
+ * - Walk `content/handbook` and collect every root-absolute asset URL
+ *   (e.g. `/images/foo.svg`, both `<img src>` and `![](...)`).
  * - For each unique reference, look it up under `upstream/static/<path>`
  *   and upload to R2 with key `<path>` (no leading slash). That way the
- *   public bucket URL `${PUBLIC_R2_BASE}/<path>` matches the absolute path
- *   that lives in the Markdown source — the runtime remark plugin in
- *   `src/plugins/rewrite-asset-paths.mjs` just prefixes `PUBLIC_R2_BASE`
+ *   public bucket URL `<base>/<path>` matches the absolute path that
+ *   lives in the Markdown source — the Hugo image render hook
+ *   (layouts/_markup/render-image.html) prefixes `params.image_base_url`
  *   and the URL resolves.
  * - Idempotent: HEAD-checks each key and skips uploads that already exist.
+ *
+ * Env vars (infra workflow と統一されている命名):
+ *   AWS_ACCESS_KEY_ID       — R2 の access key (AWS SDK が自動で読む標準名)
+ *   AWS_SECRET_ACCESS_KEY   — R2 の secret key (同上)
+ *   CLOUDFLARE_ACCOUNT_ID   — エンドポイント URL の組み立てに使用
+ *   R2_BUCKET               — 画像バケット名 (e.g. gitlab-handbook-ja-images)
  */
 import { S3Client, PutObjectCommand, HeadObjectCommand } from '@aws-sdk/client-s3';
 import { readFile, stat } from 'node:fs/promises';
@@ -18,27 +24,32 @@ import { glob } from 'node:fs/promises';
 import path from 'node:path';
 
 const {
-  R2_ACCOUNT_ID,
-  R2_ACCESS_KEY_ID,
-  R2_SECRET_ACCESS_KEY,
+  AWS_ACCESS_KEY_ID,
+  AWS_SECRET_ACCESS_KEY,
+  CLOUDFLARE_ACCOUNT_ID,
   R2_BUCKET,
 } = process.env;
 
-if (!R2_ACCOUNT_ID || !R2_ACCESS_KEY_ID || !R2_SECRET_ACCESS_KEY || !R2_BUCKET) {
-  console.error('R2 environment variables are missing (R2_ACCOUNT_ID / R2_ACCESS_KEY_ID / R2_SECRET_ACCESS_KEY / R2_BUCKET).');
+if (!AWS_ACCESS_KEY_ID || !AWS_SECRET_ACCESS_KEY || !CLOUDFLARE_ACCOUNT_ID || !R2_BUCKET) {
+  console.error(
+    'Missing env vars. Required: AWS_ACCESS_KEY_ID, AWS_SECRET_ACCESS_KEY, CLOUDFLARE_ACCOUNT_ID, R2_BUCKET.',
+  );
   process.exit(1);
 }
 
+// AWS SDK は AWS_ACCESS_KEY_ID / AWS_SECRET_ACCESS_KEY を自動で読むため
+// credentials を明示しなくてもよいが、ローカルの ~/.aws/credentials が
+// AWS 本体のものと混ざる事故を避けるため明示する。
 const s3 = new S3Client({
   region: 'auto',
-  endpoint: `https://${R2_ACCOUNT_ID}.r2.cloudflarestorage.com`,
+  endpoint: `https://${CLOUDFLARE_ACCOUNT_ID}.r2.cloudflarestorage.com`,
   credentials: {
-    accessKeyId: R2_ACCESS_KEY_ID,
-    secretAccessKey: R2_SECRET_ACCESS_KEY,
+    accessKeyId: AWS_ACCESS_KEY_ID,
+    secretAccessKey: AWS_SECRET_ACCESS_KEY,
   },
 });
 
-const TRANSLATED_ROOT = path.resolve('content/ja/handbook');
+const TRANSLATED_ROOT = path.resolve('content/handbook');
 const UPSTREAM_STATIC = path.resolve('upstream/static');
 const IMAGE_EXT = new Set(['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.avif', '.ico']);
 

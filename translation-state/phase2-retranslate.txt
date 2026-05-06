@@ -1,0 +1,12 @@
+# Phase 2 retranslation queue
+#
+# These files were translated when the legacy `transform-shortcodes.ts` script
+# replaced data-driven shortcodes with HTML stubs (e.g. "see upstream" links),
+# making the original shortcode call unrecoverable from the translated text.
+# After the Hugo migration, these files should be re-translated from the current
+# upstream content so they once again contain valid shortcode invocations.
+#
+# Usage: feed each line to the `translator` subagent against the corresponding
+# upstream file. Format: <repo-relative path to JA file>
+
+# All initially-queued files have been retranslated as of 2026-05-05.
