@@ -25,20 +25,20 @@
     <path d="m14 14 4 4" stroke-linecap="round"></path>
   </svg>
   <span class="header-search-trigger__label">検索</span>
-  <kbd class="header-search-trigger__kbd"><span>Ctrl</span><span>K</span></kbd>
+  <kbd class="header-search-trigger__kbd"><span>⌘ / Ctrl</span><span>K</span></kbd>
 </button>
 
 {{- if eq $idx 1 }}
-<dialog id="search-dialog" class="search-dialog">
+<dialog id="search-dialog" class="search-dialog" aria-labelledby="search-dialog-title">
   <div class="search-dialog__inner">
     <div class="search-dialog__header">
-      <span class="search-dialog__title">検索</span>
+      <span id="search-dialog-title" class="search-dialog__title">検索</span>
       <button type="button" id="search-dialog-close" class="search-dialog__close" aria-label="閉じる">×</button>
     </div>
     <div id="pagefind-container" class="search-dialog__body"></div>
     <div class="search-dialog__footer">
       <span><kbd>Esc</kbd> 閉じる</span>
-      <span><kbd>Ctrl</kbd>+<kbd>K</kbd> 開く</span>
+      <span><kbd>⌘</kbd> / <kbd>Ctrl</kbd>+<kbd>K</kbd> 開く</span>
     </div>
   </div>
 </dialog>
