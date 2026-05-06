@@ -1,0 +1,109 @@
+{{/* Data lives in gitlab-com/www-gitlab-com/-/blob/master/data/releases.yml */}}
+{{- $currentDate := now.Format "2006-01-02" -}}
+{{- $currentVersionData := dict -}}
+{{- $upcomingVersionData := dict -}}
+
+{{- if site.Data.public.releases -}}
+  {{- /* Find current version: most recent release with date < today */ -}}
+  {{- range $index, $release := site.Data.public.releases -}}
+    {{- $releaseDate := .date -}}
+    {{- if lt $releaseDate $currentDate -}}
+      {{- if or (not $currentVersionData.date) (gt $releaseDate $currentVersionData.date) -}}
+        {{- $currentVersionData = . -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- /* Find upcoming version: next release after current version */ -}}
+  {{- if $currentVersionData.date -}}
+    {{- range site.Data.public.releases -}}
+      {{- $releaseDate := .date -}}
+      {{- if gt $releaseDate $currentVersionData.date -}}
+        {{- if or (not $upcomingVersionData.date) (lt $releaseDate $upcomingVersionData.date) -}}
+          {{- $upcomingVersionData = . -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- /* Create upcoming_releases array (releases with date >= current_version date) */ -}}
+  {{- $upcomingReleases := slice -}}
+  {{- if $currentVersionData.date -}}
+    {{- range site.Data.public.releases -}}
+      {{- if ge .date $currentVersionData.date -}}
+        {{- $upcomingReleases = $upcomingReleases | append . -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else -}}
+    {{- /* If no current version found, show all releases */ -}}
+    {{- $upcomingReleases = site.Data.public.releases -}}
+  {{- end -}}
+
+  {{- /* Use Hugo's sort function for ascending order by date */ -}}
+  {{- $sortedReleases := sort $upcomingReleases "date" -}}
+
+  {{- $currentDate := now.Format "2006-01-02" -}}
+{{- $startDate := "2017-05-21" -}}
+{{- $pastReleasesCount := 0 -}}
+{{- range site.Data.public.releases -}}
+  {{- if and (gt .date $startDate) (lt .date $currentDate) -}}
+    {{- $pastReleasesCount = add $pastReleasesCount 1 -}}
+  {{- end -}}
+{{- end -}}
+  {{- /* 67 is added to the date for the number of historical releases prior to the "cut-off" date */ -}}
+GitLab has been releasing every month for the last {{ add $pastReleasesCount 67 }} months straight!
+
+<div style="overflow-x: auto;">
+    <table style="display: table; width: 100%;">
+      <thead>
+        <tr>
+          <th>Version</th>
+          <th>Release Date</th>
+        </tr>
+      </thead>
+      <tbody>
+        {{- /* Show in ascending order: current version at top, farthest future at bottom */ -}}
+        {{- range $sortedReleases -}}
+          {{- $releaseDate := .date -}}
+          {{- $version := .version -}}
+          {{- $isUpcoming := eq $version $upcomingVersionData.version -}}
+          {{- $parsedDate := time $releaseDate -}}
+          {{- $day := $parsedDate.Day -}}
+
+          {{- /* Calculate ordinal suffix inline */ -}}
+          {{- $ordinal := "th" -}}
+          {{- if or (eq $day 11) (eq $day 12) (eq $day 13) -}}
+            {{- $ordinal = "th" -}}
+          {{- else if eq (mod $day 10) 1 -}}
+            {{- $ordinal = "st" -}}
+          {{- else if eq (mod $day 10) 2 -}}
+            {{- $ordinal = "nd" -}}
+          {{- else if eq (mod $day 10) 3 -}}
+            {{- $ordinal = "rd" -}}
+          {{- end -}}
+
+          {{- $formattedDate := printf "%s %d%s, %d" ($parsedDate.Format "January") $day $ordinal ($parsedDate.Year) -}}
+
+          <tr>
+            <td>
+              {{- if $isUpcoming -}}
+                <strong>{{ $version }}</strong>
+              {{- else -}}
+                {{ $version }}
+              {{- end -}}
+            </td>
+            <td>
+              {{- if $isUpcoming -}}
+                <strong>{{ $formattedDate }}</strong>
+              {{- else -}}
+                {{ $formattedDate }}
+              {{- end -}}
+            </td>
+          </tr>
+        {{- end -}}
+      </tbody>
+    </table>
+  </div>
+{{- else -}}
+  <p><em>Release schedule data is not available. Please ensure the releases.yml data file is properly configured.</em></p>
+{{- end -}}

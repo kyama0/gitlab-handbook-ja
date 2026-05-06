@@ -1,0 +1,54 @@
+{{- $categories := dict }}
+{{ $stages := site.Data.public.stages.stages }}
+{{- range $stage_key, $stage_data := $stages }}
+  {{- range $group_key, $group_data := $stage_data.groups }}
+    {{- range $group_data.categories }}
+      {{- $categories = merge $categories (dict . (dict "group" (merge $group_data (dict "id" $group_key)) "stage" $stage_data "type" "direction")) }}
+    {{- end }}
+    {{- range $group_data.maintained_categories }}
+      {{- $categories = merge $categories (dict . (dict "group" (merge $group_data (dict "id" $group_key)) "stage" $stage_data "type" "maintained")) }}
+    {{- end }}
+  {{- end }}
+{{- end }}
+
+<table>
+    <thead>
+        <tr>
+            <th>Category</th>
+            <th>Details</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{ range $category, $v := $categories }}
+            <tr>
+                <td><code>{{$category}}</code></td>
+                <td>
+                    Group: <a href='/handbook/product/categories/#{{ replace $v.group.id "_" "-" }}-group'>{{ or $v.group.display_name $v.group.name}}</a><br/>
+                    Slack: <a href='https://gitlab.slack.com/channels/{{ $v.group.slack.channel }}'>#{{ $v.group.slack.channel }}</a><br/>
+
+                    {{- $team_data := partial "categories/team-members" -}}
+
+                    {{- $emList := or $v.group.em $v.group.backend_engineering_manager -}}
+                    {{- with $emList -}}
+                    {{- $emSlice := cond (reflect.IsSlice .) . (slice .) -}}
+                        Engineering Manager:&nbsp;{{- range $emSlice -}}
+                        {{- $member := $team_data.Get . -}}
+                            {{- with $member }}{{ partial "member/with-gitlab-link" (index . 0) -}}&nbsp;{{- else }}{{ . }}{{- end -}}
+                        {{- end -}}<br/>
+                    {{- end -}}
+
+                    {{- $pmList := $v.group.pm -}}
+                    {{- with $pmList -}}
+                    {{- $pmSlice := cond (reflect.IsSlice .) . (slice .) -}}
+                        Product Manager:&nbsp;{{- range $pmSlice -}}
+                        {{- $member := $team_data.Get . -}}
+                            {{- with $member }}{{ partial "member/with-gitlab-link" (index . 0) -}}&nbsp;{{- else }}{{ . }}{{- end -}}
+                        {{- end -}}<br/>
+                    {{- end -}}
+
+                    Category type: {{ $v.type }}<br />
+                </td>
+            </tr>
+        {{ end }}
+    </tbody>
+</table>

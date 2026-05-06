@@ -1,0 +1,8 @@
+{{ range $category, $skills := .Site.Data.support_skill_areas }}
+<h3>{{ $category }}</h3>
+<ul>
+{{ range $skills }}
+  <li>{{ . }}</li>
+{{ end }}
+</ul>
+{{ end }}

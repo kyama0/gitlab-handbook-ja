@@ -1,0 +1,34 @@
+<section id="td-lead" class="td-box td-box--white td-box--height-auto">
+    <div class="container" style="max-width: 100%!important">
+        <div class="row text-start mb-md-5">
+            <div class="col-md-8">
+                <h1>Welcome to the GitLab Handbook</h1>
+                <p class="lead">As an all-remote company, GitLab takes a handbook-first approach. You can explore the handbook to learn more about how we run our company.</p>
+            </div>
+        </div>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-5 row-card">
+            {{- range .Site.Data.toc }}
+            <div class="col mb-4">
+                <div class="lead--card">
+                    {{ $svgIcon := safeHTML .svg }}
+                    {{- if $svgIcon }}
+                    {{ $svgIcon }}
+                    {{- end }}
+                    <h2 class="h3">{{ .name }}</h2>
+                    <ul class="list-unstyled mb-0">
+                        {{- range .links }}
+                        {{- $u := urls.Parse .url }}
+                        {{- $url := .url }}
+                        {{- if not $u.IsAbs }}
+                        <li><a href="{{ relref $.Page .url }}">{{ .name }}</a></li>
+                        {{- else }}
+                        <li><a href="{{ $url }}">{{ .name }} <sup><i class="fa-solid fa-up-right-from-square"></i></sup></a></li>
+                        {{- end }}
+                        {{- end }}
+                    </ul>
+                </div>
+            </div>
+            {{- end }}
+        </div>
+    </div>
+</section>
