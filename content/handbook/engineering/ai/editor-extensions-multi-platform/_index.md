@@ -45,7 +45,7 @@ stale: false
   - Eclipse 拡張機能: [##f_eclipse_plugin](https://gitlab.enterprise.slack.com/archives/C07MKHCFGHG)
   - Neovim 拡張機能: [#f_neovim_plugin](https://gitlab.slack.com/archives/C05BF7L6PEX)
 
-### 共有カレンダー
+### 共有カレンダー {#shared-calendar}
 
 Editor Extensions 共有カレンダー（カレンダー ID: c_673d889354d021f7fa9f20a003b5867185a9bf12989b5eaacbc8b537cc9ef27c@group.calendar.google.com）
 
@@ -119,7 +119,7 @@ Editor Extensions 共有カレンダー（カレンダー ID: c_673d889354d021f7
 - [担当者別](https://gitlab.com/groups/gitlab-org/-/boards/9154815?label_name[]=group%3A%3Aeditor%20extensions)
 - [ステータス別](https://gitlab.com/groups/gitlab-org/-/boards/9651444?label_name%5B%5D=group%3A%3Aeditor%20extensions)
 
-### 週次の Issue 絞り込み
+### 週次の Issue 絞り込み {#weekly-issues-refinement}
 
 - **目的:** バックログを集中的かつ最新の状態に保つ
   - 優先度を見直し、変化する要件に適応します
@@ -131,7 +131,7 @@ Editor Extensions 共有カレンダー（カレンダー ID: c_673d889354d021f7
 
 {{% details summary="詳細を表示"%}}
 
-#### ローリングバックログ Wiki ページ
+#### ローリングバックログ Wiki ページ {#rolling-backlog-wiki-page}
 
 この [ローリングバックログページ](https://gitlab.com/gitlab-org/editor-extensions/meta/-/wikis/Editor-Extensions:-Multi-Platform-Rolling-Backlog) はこの絞り込みプロセスのアウトプットであり、私たちが所有するすべてのスコープ（次の 1〜2 か月の作業になり得る）について、可視化され優先順位付けされ、チームでレビュー済みのバックログ上位リストとして機能します。
 
@@ -196,7 +196,7 @@ Editor Extensions 共有カレンダー（カレンダー ID: c_673d889354d021f7
 
 {{% details summary="詳細を表示"%}}
 
-#### マイルストーン計画 Issue
+#### マイルストーン計画 Issue {#milestone-planning-issues}
 
 私たちは [マイルストーン計画 Issue](https://gitlab.com/gitlab-org/editor-extensions/meta/-/issues/?sort=created_date&state=all&label_name%5B%5D=Planning%20Issue) を使用して、現在／今後のマイルストーンの目標を定義します。
 PM と EM が目標のすり合わせを担当します。
@@ -251,7 +251,7 @@ PM と EM が目標のすり合わせを担当します。
 | [`Editor Extensions::All`](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=Editor%20Extensions%3A%3AAll) | 複数のエディター拡張機能に影響する横断的な項目。 |
 | [`Deliverable`](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=Deliverable) | マイルストーンに対してコミット済みの項目／必達作業。 |
 
-### Issue のウェイト
+### Issue のウェイト {#issues-weight}
 
 Issue の複雑さの大まかな見積もりを示すため、3 つのウェイトを使用します。ウェイトは 2 つの要素から構成されます:
 

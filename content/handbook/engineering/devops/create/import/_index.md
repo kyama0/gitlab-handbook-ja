@@ -76,7 +76,7 @@ Import グループの作業は、以下の Issue ボードで追跡できます
 
 - [現在のマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/1459244?milestone_title=Upcoming&label_name[]=group%3A%3Aimport)
 
-### Issue ラベル
+### Issue ラベル {#issue-labels}
 
 ラベル管理を健全に保つため、Issue を作成またはトリアージする際は適切なラベルを付与してください。
 
@@ -190,7 +190,7 @@ Support 組織のメンバーでない場合、まず Support に相談するこ
 - [インポーターの依存関係](#importer-dependencies)をレビューし、サードパーティ API の変更に伴って必要な変更について Issue を作成する
 - マイルストーン終了時に [`@gitlab-com/create-team/import/reaction-rotation` のメンバーシップ](https://gitlab.com/groups/gitlab-com/create-team/import/reaction-rotation/-/group_members?with_inherited_permissions=exclude)を更新する
 
-##### インポーターの依存関係
+##### インポーターの依存関係 {#importer-dependencies}
 
 マイルストームごとに 1 度、各インポーターの依存関係の変更履歴を確認し、近づいている破壊的変更や API の非推奨化を把握してください。[GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/) を使って影響を評価し、更新が必要な変更については、関連する `~"Importer:"` ラベルを付けた Issue を作成します。
 
@@ -460,7 +460,7 @@ GitLab for Jira Cloud アプリのワーカー:
 - [`JiraConnect::SyncProjectWorker`](https://log.gprd.gitlab.net/goto/5f0e03847ddc1b074d6346199c8bc4d2) のエラー。
 - [全 JiraConnect 同期ワーカー](https://log.gprd.gitlab.net/goto/39348f2d169e6929c41dba2d6fb063ee) のタイムアウトエラー。
 
-### エラーバジェット
+### エラーバジェット {#error-budgets}
 
 GitLab は機能の可用性とパフォーマンスを測定するために[エラーバジェット](/handbook/engineering/error-budgets/)を使っています。
 エンジニアリンググループごとに固有の予算消費があります。Import チームの直近 28 日の消費は、この [Grafana ダッシュボード](https://dashboards.gitlab.net/d/stage-groups-import_and_integrate/stage-groups-import-and-integrate-group-dashboard?orgId=1)で確認できます。

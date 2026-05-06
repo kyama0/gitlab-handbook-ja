@@ -152,7 +152,7 @@ Dependency Scanning は主に Gemnasium エンジンに依拠しています。
 
 ### 脆弱性管理プロセス
 
-#### 自動化
+#### 自動化 {#automation}
 
 私たちは脆弱性ライフサイクルの自動化に [Vulnmapper ツール](https://gitlab.com/gitlab-com/gl-security/product-security/vulnerability-management/vulnerability-management-internal/vulnmapper)を使用しています。このツールは以下のアクションを実行します。
 

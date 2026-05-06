@@ -34,7 +34,7 @@ GitLab の製品は [GitLab Flow](https://about.gitlab.com/blog/2023/07/27/gitla
 
 `pipeline::expedited` ラベルと `master:broken` または `master:foss-broken` ラベルは、MR パイプラインを高速化するために一部の非必須ジョブをスキップするよう `master` を修正するマージリクエストに設定する必要があります。
 
-## Broken `master`
+## Broken `master` {#broken-master}
 
 [GitLab](https://gitlab.com/gitlab-org/gitlab) または [GitLab FOSS](https://gitlab.com/gitlab-org/gitlab-foss) の `master` ブランチのパイプラインが失敗していることに気づいた場合、ビルドを合格状態に戻すことが他のすべての開発関連作業より優先されます。テストが壊れている間に行うことすべてが以下を引き起こす可能性があるためです:
 
