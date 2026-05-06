@@ -69,7 +69,7 @@ Analytics Instrumentation ツールによって収集されたビリングイベ
 1. [Snowplow Pseudonymization](https://gitlab.com/gitlab-org/analytics-section/analytics-instrumentation/snowplow-pseudonymization)
 1. [GitLab 用 Iglu Schema リポジトリ](https://gitlab.com/gitlab-org/iglu)
 
-## チームメンバー
+## チームメンバー {#team-members}
 
 以下は Analytics Instrumentation グループの正式メンバーです:
 

@@ -192,7 +192,7 @@ Support 組織のメンバーでない場合、まず Support に相談するこ
 
 ##### インポーターの依存関係 {#importer-dependencies}
 
-マイルストームごとに 1 度、各インポーターの依存関係の変更履歴を確認し、近づいている破壊的変更や API の非推奨化を把握してください。[GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/) を使って影響を評価し、更新が必要な変更については、関連する `~"Importer:"` ラベルを付けた Issue を作成します。
+マイルストーンごとに 1 度、各インポーターの依存関係の変更履歴を確認し、近づいている破壊的変更や API の非推奨化を把握してください。[GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/) を使って影響を評価し、更新が必要な変更については、関連する `~"Importer:"` ラベルを付けた Issue を作成します。
 
 レビュー後は、計画 Issue にサマリーと作成した Issue へのリンクを書いたコメントを残してください。EM の注意を引くためにタグ付けします。
 
