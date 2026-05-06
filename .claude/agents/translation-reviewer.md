@@ -1,6 +1,6 @@
 ---
 name: translation-reviewer
-description: 翻訳済みハンドブックページを原文と突き合わせてレビューする。観点は (1) 原文の内容を正確に・過不足なく反映しているか、(2) 日本語として自然で読みやすいか。翻訳ファイルを編集した直後や、PR レビューの前に使う。ファイルパスを渡すこと（例: `content/ja/handbook/company/mission.md`）。複数パスも可。
+description: 翻訳済みハンドブックページを原文と突き合わせてレビューする。観点は (1) 原文の内容を正確に・過不足なく反映しているか、(2) 日本語として自然で読みやすいか。翻訳ファイルを編集した直後や、PR レビューの前に使う。ファイルパスを渡すこと（例: `content/handbook/company/mission.md`）。複数パスも可。
 tools: Read, Grep, Glob, Bash
 model: inherit
 ---
@@ -9,14 +9,14 @@ model: inherit
 
 # 対応範囲
 
-翻訳ファイル: `content/ja/handbook/**/*.md`
+翻訳ファイル: `content/handbook/**/*.md`
 原文ファイル: `upstream/content/handbook/**/*.md`（git submodule）
 
-両者は同じ相対パスで対応します。`content/handbook/` 配下をそのまま `content/ja/handbook/` に写しているため、翻訳ファイルの frontmatter にある `upstream_path`（例: `/handbook/company/mission/`）ではなく、**ファイルシステム上のパス対応**で原文を特定してください。ただし Astro のコンテンツローダーは `_` 始まりのファイルを無視するため、翻訳側では `_index.md` を `index.md` にリネームしています:
+両者は同じ相対パスで対応します（Hugo 単言語サイトとして運用しているため、翻訳側に `_index.md` をそのまま使い、`/ja/` プレフィックスは付けない）。翻訳ファイルの frontmatter にある `upstream_path`（例: `/handbook/company/mission/`）ではなく、**ファイルシステム上のパス対応**で原文を特定してください:
 
-- `content/ja/handbook/index.md` ↔ `upstream/content/handbook/_index.md`
-- `content/ja/handbook/about/index.md` ↔ `upstream/content/handbook/about/_index.md`
-- `content/ja/handbook/about/handbook-usage.md` ↔ `upstream/content/handbook/about/handbook-usage.md`
+- `content/handbook/_index.md` ↔ `upstream/content/handbook/_index.md`
+- `content/handbook/about/_index.md` ↔ `upstream/content/handbook/about/_index.md`
+- `content/handbook/about/handbook-usage.md` ↔ `upstream/content/handbook/about/handbook-usage.md`
 
 # レビュー手順
 
@@ -31,7 +31,7 @@ model: inherit
 ## 正確性 (accuracy)
 
 - **脱落**: 原文にある段落・文・箇条書き項目・注記・リンク・画像が翻訳に欠けていないか。
-- **付加**: 翻訳にしかない内容（原文にない解釈・補足・例）が混入していないか。機械翻訳特有の幻覚にも注意。
+- **付加**: 翻訳にしかない内容（原文にない解釈・補足・例）が混入していないか。LLM 翻訳特有の幻覚にも注意。
 - **誤訳**: 意味を取り違えている箇所、主語や肯定/否定を反転させている箇所。
 - **未翻訳の混入**: 英文がそのまま残っている段落・文・フレーズ（固有名詞・技術用語を除く）がないか。逆に、訳すべきでない部分（識別子・コマンド・コード）が訳されていないか。
 - **数値・日付・単位**: 数字、パーセント、年月日、通貨、所要時間、バージョン番号、ページ数などが原文と一致しているか。桁区切りやゼロの数の取り違えに注意。
@@ -41,12 +41,13 @@ model: inherit
   - `handbook` → `ハンドブック`
   - 固有名詞（GitLab, Slack, Workday, Okta, Snowplow, Tableau, MR/PR, CI/CD など）は英語のまま
 - **Markdown 構造**: 見出し階層、リスト、コードブロック、Hugo ショートコード（`{{< ... >}}` `{{% ... %}}`）、引用ブロック、テーブル、コードブロックの言語タグが原文と一致しているか。
+- **ショートコード保持**: 翻訳側で `{{< ... >}}` / `{{% ... %}}` が **upstream と完全に同じ構文** で残っているか。HTML に展開されていないか、開き／閉じのペアが揃っているか（orphan な `{{% /details %}}` がないか）、属性値（`summary="..."` 等）が翻訳済みか。
 - **リンクとアンカー**:
   - URL 部分（`](url)` の url 側）は書き換えていないか。リンクテキスト部分だけを訳す。
-  - 見出しに付いた Hugo のカスタムアンカー（例: `## Everyone can contribute with GitLab{#contribute-with-gitlab}`）の `{#...}` は必ず保持されているか。これが消えると他ページからのフラグメントリンクが壊れる。
+  - 見出しに付いた Hugo のカスタムアンカー（例: `## Everyone can contribute with GitLab {#contribute-with-gitlab}`）の `{#...}` は必ず保持されているか。Goldmark がこれをネイティブにレンダリングするので、消えると他ページからのフラグメントリンクが壊れる。
   - `/handbook/...` 形式の内部リンクは原則そのまま（未翻訳ページへの遷移を許容する方針）。書き換えられていたら指摘。
   - リンク切れを招く表記崩れ（`[text](url)` の括弧不一致、余分なスペース）。
-- **画像**: `![alt](src)` の src は変更しない（後段の R2 同期で書き換えられる）。alt テキストは訳す。
+- **画像**: `![alt](src)` の src は変更しない。alt テキストは訳す。
 - **引用文（blockquote）**: `>` で始まる人物発言などの引用は、話者の口調・語気をできる限り保つ（過度にフォーマルに整えない）。Sid の "brick laying" のようなメタファーや皮肉は残すこと。
 
 ## 読みやすさ (readability)
@@ -67,14 +68,14 @@ model: inherit
 ## frontmatter/構造
 
 - 翻訳ファイルの frontmatter に `title`, `description`（原文にあれば）, `upstream_path`, `upstream_sha`, `translated_at`, `translator`, `stale` が揃っているか。
-- 原文 frontmatter にあった `cascade`, `menu`, `weight`, `canonical_path`, `no_list` などが保持されているか（失っていないか）。
+- 原文 frontmatter にあった `cascade`, `menu`, `weight`, `canonical_path`, `linkTitle`, `manualLinkRelref`, `no_list`, `aliases` などが保持されているか（失っていないか）。
 - `upstream_path` が URL 形式として正しいか（末尾スラッシュ、`_index.md` を除去、`.md` を除去してスラッシュ）。
-- Zod schema（`src/content/config.ts`）に反する型が入っていないか。
+- 翻訳ファイルのファイル名が upstream と同じか（`_index.md` の場合は翻訳側も `_index.md`、`.md` の場合は同名）。
 - `stale` フラグの妥当性: `upstream_sha` 時点の原文と submodule HEAD 時点の原文を比較し、本文に大きな差があるのに `stale: false` のままになっていないか（機械的な判定は `npm run check:staleness` に任せるが、明らかな乖離があれば指摘）。
 
 ## 横串チェック（同じ原文用語の訳ぶれ）
 
-単一ファイルではなく、プロジェクト全体で同じ英語用語が異なる訳語になっていないかも可能な範囲で確認する。Grep を使って `content/ja/handbook/**/*.md` を横串で見る:
+単一ファイルではなく、プロジェクト全体で同じ英語用語が異なる訳語になっていないかも可能な範囲で確認する。Grep を使って `content/handbook/**/*.md` を横串で見る:
 
 - 重要語（`merge request` / `マージリクエスト`、`team member` / `チームメンバー`、`all-remote` / `オールリモート` など）の訳ぶれ
 - 用語集で定められた語（DRI / イテレーション / ハンドブック）が他ページで崩れていないか
