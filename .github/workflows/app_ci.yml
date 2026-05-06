@@ -18,6 +18,9 @@ on:
       - 'go.sum'
       - '.tool-versions'
       - '.github/workflows/app_ci.yml'
+      - 'upstream'
+      - 'upstream/**'
+      - '.gitmodules'
 
 permissions:
   contents: read
@@ -32,9 +35,9 @@ jobs:
   # Build the site with Hugo (matches the production deploy build).
   # `hugo` exits non-zero on shortcode/render errors, so passing CI implies
   # the same site can be deployed.
-  # No submodule checkout: the build consumes only committed files
-  # (content/, layouts/, data/, assets/, static/, config/) plus Hugo Modules
-  # downloaded via `hugo mod get` from the public proxy.
+  # upstream submodule をチェックアウトして scripts/sync-data.sh を実行する
+  # 必要がある。docsy-gitlab モジュールの一部ページが data/public/* を参照
+  # しており、それらは upstream と同じく動的取得方式で供給する。
   # ---------------------------------------------------------------------------
   build:
     name: Hugo Build
@@ -42,6 +45,9 @@ jobs:
     timeout-minutes: 10
     steps:
       - uses: actions/checkout@de0fac2e4500dabe0009e67214ff5f5447ce83dd # v6.0.2
+        with:
+          submodules: true
+          fetch-depth: 1
 
       - uses: actions/setup-go@d35c59abb061a4a6fb18e82ac0862c26744d6ab5 # v5.5.0
         with:
@@ -59,6 +65,9 @@ jobs:
 
       - name: Install Node deps (postcss / autoprefixer for Docsy CSS pipeline)
         run: npm ci
+
+      - name: Sync upstream public data (team.yml, tech_stack.yml, ...)
+        run: bash upstream/scripts/sync-data.sh
 
       - name: Hugo build
         run: hugo --logLevel error
