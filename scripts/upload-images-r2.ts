@@ -135,9 +135,11 @@ async function main() {
 
   console.log(`\n${uploaded} uploaded, ${skipped} already in R2, ${missing.length} missing in upstream/static.`);
   if (missing.length > 0) {
-    console.warn('Missing (referenced in Markdown but not found under upstream/static):');
+    // upstream のマークダウン中に書かれていても upstream/static に実体が無い参照
+    // （= upstream 側で元々リンク切れ。handbook.gitlab.com でも 403 で表示できない）
+    // はこちらでは直しようが無いので、警告のみ出してデプロイは通す。
+    console.warn('Missing (referenced in Markdown but not found under upstream/static — upstream-side broken refs, ignored):');
     for (const u of missing) console.warn(`  ${u}`);
-    process.exitCode = 2;
   }
 }
 
