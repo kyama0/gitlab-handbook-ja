@@ -18,6 +18,7 @@ on:
       - 'go.sum'
       - '.tool-versions'
       - '.github/workflows/app_ci.yml'
+      - 'upstream'
       - 'upstream/**'
       - '.gitmodules'
 
