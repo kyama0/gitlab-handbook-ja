@@ -48,13 +48,7 @@ jobs:
           AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
           AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
           CLOUDFLARE_ACCOUNT_ID: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          R2_BUCKET: gitlab-handbook-ja-images
-
-      - name: Sync upstream public data (team.yml, tech_stack.yml, ...)
-        # docsy-gitlab モジュールの content/handbook/company/team.md など、
-        # data/public/* を参照するページが多数あるため、upstream と同じ方式で
-        # ビルド前に動的に取得する（git に入れない方針）。
-        run: bash upstream/scripts/sync-data.sh
+          R2_BUCKET: ${{ secrets.R2_BUCKET }}
 
       - name: Hugo build
         run: hugo --minify
