@@ -25,7 +25,7 @@ stale: false
 
 ### Security Infrastructure
 
-EM:
+EM: 
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
@@ -35,11 +35,11 @@ EM:
 
 ### Security Insights
 
-PM:
+PM: 
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
-EM:
+EM: 
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
@@ -49,11 +49,11 @@ EM:
 
 ### Security Platform Management
 
-PM:
+PM: 
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
-EM:
+EM: 
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
@@ -63,13 +63,14 @@ EM:
 
 ### Security Policies
 
-PM:
+PM: 
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
-EM:
+EM: 
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+

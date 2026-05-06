@@ -46,10 +46,10 @@ stale: false
   - Language Server: [#f_language_server](https://gitlab.slack.com/archives/C05B1PFHRPU)
   - JetBrains 拡張機能: [#f_jetbrains_plugin](https://gitlab.slack.com/archives/C02UY9XKABH)
   - Visual Studio 拡張機能: [#f_visual_studio_extension](https://gitlab.slack.com/archives/C0581SE363C)
-  - Eclipse 拡張機能: [#f_eclipse_plugin](https://gitlab.enterprise.slack.com/archives/C07MKHCFGHG)
+  - Eclipse 拡張機能: [##f_eclipse_plugin](https://gitlab.enterprise.slack.com/archives/C07MKHCFGHG)
   - Neovim 拡張機能: [#f_neovim_plugin](https://gitlab.slack.com/archives/C05BF7L6PEX)
 
-### 共有カレンダー {#shared-calendar}
+### 共有カレンダー
 
 Editor Extensions 共有カレンダー（カレンダー ID: c_673d889354d021f7fa9f20a003b5867185a9bf12989b5eaacbc8b537cc9ef27c@group.calendar.google.com）
 
@@ -124,7 +124,7 @@ Editor Extensions 共有カレンダー（カレンダー ID: c_673d889354d021f7
 - [担当者別](https://gitlab.com/groups/gitlab-org/-/boards/9154815?label_name[]=group%3A%3Aeditor%20extensions)
 - [ステータス別](https://gitlab.com/groups/gitlab-org/-/boards/9651444?label_name%5B%5D=group%3A%3Aeditor%20extensions)
 
-### 週次の Issue 絞り込み {#weekly-issues-refinement}
+### 週次の Issue 絞り込み
 
 - **目的:** バックログを集中的かつ最新の状態に保つ
   - 優先度を見直し、変化する要件に適応します
@@ -256,7 +256,7 @@ PM と EM が目標のすり合わせを担当します。
 | [`Editor Extensions::All`](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=Editor%20Extensions%3A%3AAll) | 複数のエディター拡張機能に影響する横断的な項目。 |
 | [`Deliverable`](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=Deliverable) | マイルストーンに対してコミット済みの項目／必達作業。 |
 
-### Issue のウェイト {#issues-weight}
+### Issue のウェイト
 
 Issue の複雑さの大まかな見積もりを示すために、3つのウェイトを使用します。ウェイトは2つの要素から構成されます:
 

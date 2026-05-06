@@ -26,10 +26,13 @@ Package ステージは以下のチームで構成されています：
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/package/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/package/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+
+
 ### ステーブルカウンターパート
 
 
-<p class="my-3 text-sm text-gray-600 italic">ステーブルカウンターパート情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/package/#stable-counterparts" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/package/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 ### パッケージフォーマット DRI
@@ -81,7 +84,7 @@ Package ステージは以下のチームで構成されています：
    - 次のマイルストーンにすでにスケジュールされているものを確認する
    - [ワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/1284221?label_name%5B%5D=devops::package) を使って Issue のステータスを追跡する
    - 完了したものとキャリーオーバーするものを特定する
-   - キャリーオーバーの Issue を新しいマイルストーンで更新する
+   - キャリーオーバーの Issue を新しいマイルストールで更新する
 
 6. **プロジェクト DRI と調整する**
    - プロジェクトオーナーにメッセージを送り、マイルストーンの機能 Issue を追加してもらう
@@ -91,7 +94,7 @@ Package ステージは以下のチームで構成されています：
 
 Issue は以下のように優先順位付けされます：
 
-- `Package:P1`: マイルストーンのコミット作業
+- `Package:P1`: マイルストールのコミット作業
 - `Package:P2` + `Stretch`: キャパシティが許せばのストレッチ目標
 - `Deliverable`: 開発準備が整った P1 Issue
 
@@ -118,9 +121,9 @@ Issue は以下のように優先順位付けされます：
 
 #### 主要な計画リソース
 
-- [機能別ブレークダウンボード](https://gitlab.com/groups/gitlab-org/-/boards/1548554?label_name%5B%5D=group%3A%3Apackage%20registry) — マイルストーン全体で機能別に Issue を表示
-- [マイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/1196366?label_name%5B%5D=group%3A%3Apackage%20registry) — 機能別に分類された Issue を確認
-- [ワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/1284221?label_name%5B%5D=devops::package) — マイルストーン全体で Issue のステータスを追跡
+- [機能別ブレークダウンボード](https://gitlab.com/groups/gitlab-org/-/boards/1548554?label_name%5B%5D=group%3A%3Apackage%20registry) — マイルストール全体で機能別に Issue を表示
+- [マイルストールボード](https://gitlab.com/groups/gitlab-org/-/boards/1196366?label_name%5B%5D=group%3A%3Apackage%20registry) — 機能別に分類された Issue を確認
+- [ワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/1284221?label_name%5B%5D=devops::package) — マイルストール全体で Issue のステータスを追跡
 - [トリアージレポート](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues?sort=created_date&state=opened&label_name%5B%5D=devops::package&label_name%5B%5D=triage%20report) — 現在のバグ優先度
 
 ### スタイルガイドラインとアーキテクチャ標準
@@ -166,7 +169,7 @@ Issue は以下のように優先順位付けされます：
 - **実装計画**: 技術的なアプローチと依存関係を含める
 - **完了の定義**: 「完了」の意味を明確に定義する
 - **ラベル要件**: タイプ・カテゴリー・ワークフロー・Package:P1 または Package:P2 の適切なラベルを適用する
-- **マイルストーン割り当て**: Issue が正しいマイルストーンに割り当てられていることを確認する
+- **マイルストーン割り当て**: Issue が正しいマイルストールに割り当てられていることを確認する
 
 [整理が必要な Issue フィルター](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=devops::package&label_name%5B%5D=workflow::refinement)を使って注意が必要な作業を特定します。
 
@@ -194,7 +197,7 @@ Issue は以下のように優先順位付けされます：
 - **カテゴリー**: `Category:Container Registry`・`Category:Package Registry`・または `Category:Virtual Registry`
 - **優先度**: `Package:P1`・`Package:P2`・または適切な優先度ラベル
 - **ワークフロー**: 開始前に `workflow::ready for development`
-- **マイルストーン**: 現在または計画されたマイルストーンに割り当て
+- **マイルストーン**: 現在または計画されたマイルストールに割り当て
 
 #### デザインとプロダクトとの連携
 
@@ -252,7 +255,7 @@ Package チームは、[request-for-help ハンドブックページのタイム
 
 - RFH の Issue は SLA 要件を満たす場合、通常は計画作業より優先される
 - Severity 1・2 の Issue は即座のコンテキスト切り替えが必要な場合がある
-- Severity 3・4 の Issue は SLO ウィンドウ内に対処すべきだが、現在または次のマイルストーンに組み込むことができる
+- Severity 3・4 の Issue は SLO ウィンドウ内に対処すべきだが、現在または次のマイルストールに組み込むことができる
 - SLO 内に対応できない RFH はエンジニアリングマネージャーにエスカレーションする
 
 **RFH Issue の処理**

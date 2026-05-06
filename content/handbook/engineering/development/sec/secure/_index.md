@@ -51,6 +51,10 @@ Application Security Testing ステージの開発ピープルリーダーへの
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/secure/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
+
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/secure/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+
+
 ### Static Analysis
 
 チームページ: [Static Analysis](static-analysis/)
@@ -162,8 +166,6 @@ Dependency Scanning は主に Gemnasium エンジンに依存しています。
 詳細は [QA プロセス](qa_process.html)を参照してください。
 
 ### 脆弱性管理プロセス
-
-<span id="automation"></span>
 
 #### 自動化
 

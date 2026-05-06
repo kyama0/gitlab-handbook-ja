@@ -20,22 +20,23 @@ stale: false
 #### Create:Code Review Frontend
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createcode-review-frontend" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createcode-review-backend" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 #### Create:Remote Development
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createremote-development" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createcode-review-backend" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 #### Create:Source Code Backend
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createsource-code-backend" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createcode-review-backend" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 #### Create:Source Code Frontend
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createsource-code-frontend" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createcode-review-backend" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+

@@ -108,7 +108,7 @@ GitLab では、`~Deliverable` ラベルは[リリーススコープラベル](h
 
 - Issue のウェイトを考えると、エンジニアがマイルストーン内で Issue を提供するのに十分な時間が残っていると合理的に確信できますか?
   - 現在、ウェイト 13 の Issue は単一のマイルストーン内で提供できると仮定しています。
-- 今から作業を始めれば、次のマイルストーンの早期に達成できますか?
+- 今から作業を始めれば、次のマイルストールの早期に達成できますか?
   - そうであれば、プロダクトマネージャーと状況について話し合ってください。プロダクトマネージャーが提案されたタイムラインに同意し、進めたい場合は作業を開始できます。
   - 作業を続ける前にマイルストーンが更新されていることを確認してください。
 - これはオーバーヘッドを追加することなくさらに分割できない、価値を追加する最小のテスト可能な作業単位ですか?
@@ -167,8 +167,6 @@ GitLab では、`~Deliverable` ラベルは[リリーススコープラベル](h
 - ~"type::bug"
 
 Issue の作成時に重大度/優先度に疑問がある場合や重大度/優先度ラベルが追加されていない場合、[Appsec エスカレーションエンジン](https://gitlab.com/gitlab-com/gl-security/engineering-and-research/automation-team/appsec-escalator#appsec-escalation-engine) を活用して Appsec チームとのディスカッションを開始できます。このボットは ~security とラベル付けされていて ~test または ~"type::feature" とラベル付けされていない Issue を監視します。重大度/優先度ラベルがない場合は、security-sp-label-missing と security-triage-psirt ラベルが追加され、この Issue は [AppSec トリアージダッシュボード](https://triage-dashboard-2c1ad6.gitlab.io/) にリストされます。その後、グループの Appsec 安定したカウンターパートまたは Appsec チームのトリアージ担当者が Issue を引き継ぎ、Appsec トリアージローテーションの一部として重大度を割り当てます。
-
-<span id="we-own-what-we-ship"></span>
 
 ### 出荷したものに責任を持つ
 

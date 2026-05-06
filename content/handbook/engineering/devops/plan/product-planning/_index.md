@@ -41,7 +41,7 @@ Plan:Product Planning チームは [Plan ステージ](/handbook/engineering/dev
 
 ## 便利なリンク
 
-- [:Plan:Product Planning](https://gitlab.com/groups/gitlab-org/-/boards/1569369?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&not[label_name][]=group%3A%3Aproject%20management]) - マイルストーンフィルターを適用して現在のリリースの作業を確認する
+- [:Plan:Product Planning](https://gitlab.com/groups/gitlab-org/-/boards/1569369?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&not[label_name][]=group%3A%3Aproject%20management]) - マイルストームフィルターを適用して現在のリリースの作業を確認する
 - Slack の [#s_plan](https://gitlab.slack.com/archives/s_plan)
 - [録画されたミーティング](https://www.youtube.com/playlist?list=PL05JrBw4t0KoceqcTneOVmAzhEp6NinY0)
 - [回顧](https://gitlab.com/gl-retrospectives/plan/issues?scope=all&utf8=%E2%9C%93&state=all&label_name[]=retrospective)

@@ -15,7 +15,7 @@ stale: false
 
 ### IC のためのマネジメント業務ガイド
 
-短い記事: [あなたのマネージャーは一日何をしているの？マネージャーになるとはどういうことか？](/handbook/engineering/careers/training/em-role/work_of_a_manager/)
+短い記事: [あなたのマネージャーは一日何をしているの？マネージャーになるとはどういうことか？](work_of_a_manager.html)
 
 ### ビデオ
 

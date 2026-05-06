@@ -13,8 +13,6 @@ stale: false
 - [重大度レベル](https://docs.gitlab.com/ee/user/application_security/vulnerabilities/severities.html)
 - [フィードバック](feedback/)（却下、Issue またはマージリクエストの作成）
 
-<span id="overview"></span>
-
 ## 概要
 
 Secure 機能をサポートするアーキテクチャは、主に 2 つの部分に分かれています。
