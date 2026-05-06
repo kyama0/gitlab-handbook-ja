@@ -140,7 +140,9 @@ Issue の進捗を伝えるために [Issue のヘルスステータス機能](h
 
 1. リアクションローテーションは継続的なプロセスであるため、以下のテンプレートを使用してリアクションローテーション Issue に引き継ぎステータスを投稿してください:
 
-{{% details summary="リアクションローテーション引き継ぎテンプレート" %}}
+<details>
+<summary>リアクションローテーション引き継ぎテンプレート</summary>
+
 ### リアクションローテーション引き継ぎテンプレート
 
 ```markdown
@@ -184,7 +186,8 @@ Issue の進捗を伝えるために [Issue のヘルスステータス機能](h
 ```
 
 この引き継ぎテンプレートは、担当開始エンジニアがタスク、Issue の現在のステータス、および重要なコンテキストについて完全に把握されることを確保します。スムーズな移行を促進し、重要な責務を見落とすリスクを最小限に抑えます。
-{{% /details %}}
+
+</details>
 
 1. [リアクションローテーショングループ](https://gitlab.com/groups/gitlab-org/secure/composition-analysis-dev/reaction-rotation/-/group_members?with_inherited_permissions=exclude)の所有権を新しいエンジニアに割り当てます。
 

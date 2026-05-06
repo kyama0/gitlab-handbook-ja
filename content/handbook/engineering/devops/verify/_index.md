@@ -2,8 +2,8 @@
 title: "Verify"
 description: "Verify 開発グループのハンドブックページ。"
 upstream_path: "/handbook/engineering/devops/verify/"
-upstream_sha: "1065c86ab1ba75adefbb07560d726608885e6d4e"
-translated_at: "2026-04-28T14:02:31Z"
+upstream_sha: "eb9c7122b4259a2111ed65628e5384768922a597"
+translated_at: "2026-05-06T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -79,33 +79,23 @@ Verify ステージは 3 つのグループで構成されています:
 
 ### Verify:Pipeline Authoring
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#verifypipeline-authoring" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-role "Engineering Manager(.+)Pipeline Authoring" >}}
 
 ### Verify:Pipeline Execution
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#verifypipeline-authoring" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-role "Engineering Manager(.+)Pipeline Execution" >}}
 
 ### Verify:CI Platform
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#verifypipeline-authoring" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-role role="Engineering Manager(.+)CI Platform" >}}
 
 ### Verify エンジニアリングリーダー
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#verifypipeline-authoring" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-role role="Senior(.+)Manager(.+)(Verify)" team="(Principal|Pipeline)">}}
 
 ### ステーブルカウンターパート
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/#verifypipeline-authoring" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< engineering/stable-counterparts role="Verify" other-manager-roles="Engineering Manager(.+)(Pipeline Authoring|Pipeline Execution|Runners)|Senior Manager(.+)Verify" >}}
 
 ## 私たちの働き方
 

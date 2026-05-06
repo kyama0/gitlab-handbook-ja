@@ -2,8 +2,8 @@
 title: Analytics Instrumentation グループ
 description: "Analytics Instrumentation グループは、GitLab プロジェクト全体でプライバシーを重視したプロダクトアナリティクスの機能強化と実装に取り組んでいます"
 upstream_path: /handbook/engineering/data-engineering/analytics/analytics-instrumentation/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-28T02:21:43Z"
+upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
+translated_at: "2026-05-06T13:30:00Z"
 translator: claude
 stale: false
 ---
@@ -73,9 +73,7 @@ Analytics Instrumentation ツールによって収集されたビリングイベ
 
 以下は Analytics Instrumentation グループの正式メンバーです:
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/data-engineering/analytics/analytics-instrumentation/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< engineering/stable-counterparts role="Analytics.+Analytics.Instrumentation" >}}
 
 ## プロジェクト管理プロセス
 

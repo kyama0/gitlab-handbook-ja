@@ -2,8 +2,8 @@
 title: Secret Detection グループ
 description: "Secret Detection グループは、GitLab 上での認証情報、トークン、その他のシークレットの漏洩からお客様を保護します。"
 upstream_path: /handbook/engineering/development/sec/secure/secret-detection/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
+translated_at: "2026-05-06T13:30:00Z"
 translator: claude
 stale: false
 ---
@@ -31,9 +31,7 @@ Secret Detection グループは、顧客のソフトウェアリポジトリ向
 
 ### チームメンバー
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/secure/secret-detection/#our-team" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-role role="Engineering(.)Manager(.)Secure:Secret Detection" team="Engineer" >}}
 
 ## 作業方法
 

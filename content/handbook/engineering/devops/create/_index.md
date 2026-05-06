@@ -4,8 +4,8 @@ description: >-
   Create ステージは、Code Review、Remote Development、Source Code を含む
   チームグループです。
 upstream_path: /handbook/engineering/devops/create/
-upstream_sha: 8e5460327d5f02f1967a05539db73f8e5cfebbb3
-translated_at: "2026-04-28T09:42:29Z"
+upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
+translated_at: "2026-05-06T13:30:00Z"
 translator: claude
 stale: false
 ---
@@ -16,12 +16,10 @@ stale: false
 
 | チーム | エンジニアリングマネージャー |
 | ---- | -------------------- |
-| [Create ステージ](/handbook/engineering/devops/create/) | [André Luís](/handbook/company/team/#andr3) |
-| [Create:Code Review](/handbook/engineering/devops/create/code-review/) | [François Rosé](/handbook/company/team/#francoisrose) |
-| [Create:Source Code](/handbook/engineering/devops/create/source-code/) | [Andre Richards](/handbook/company/team/#andrevr)（バックエンド & フロントエンド） |
-| [Create:Import](/handbook/engineering/devops/create/import/) | [Thiago Figueiró](/handbook/company/team/#thiagocsf)（フルスタック）— 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
- に報告 |
+| [Create ステージ](/handbook/engineering/devops/create/) | [André Luís](https://gitlab.com/andr3) |
+| [Create:Code Review](/handbook/engineering/devops/create/code-review/) | [François Rosé](https://gitlab.com/francoisrose) |
+| [Create:Source Code](/handbook/engineering/devops/create/source-code/) | [Andre Richards](https://gitlab.com/andrevr)（バックエンド & フロントエンド） |
+| [Create:Import](/handbook/engineering/devops/create/import/) | [Thiago Figueiró](https://gitlab.com/thiagocsf)（フルスタック）— {{< manager-by-report-name "Thiago Figueiró" >}} に報告 |
 | [Create:Remote Development](/handbook/engineering/devops/create/remote-development/) | — |
 
 ## ミッション

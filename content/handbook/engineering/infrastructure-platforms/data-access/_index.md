@@ -1,8 +1,8 @@
 ---
 title: Data Access サブ部門
 upstream_path: "/handbook/engineering/infrastructure-platforms/data-access/"
-upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
-translated_at: "2026-04-28T16:26:29Z"
+upstream_sha: "eb9c7122b4259a2111ed65628e5384768922a597"
+translated_at: "2026-05-06T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -80,14 +80,10 @@ Data Access サブ部門は、顧客のニーズと GitLab のビジネス目標
 
 [Gitaly](/handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/) チームは、GitLab インスタンス、特に *GitLab.com* の Git データが信頼性が高く、セキュアで高速であることを保証するシステムを構築・維持します。
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/data-access/#gitaly" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug manager="jcaigitlab" >}}
 
 ### Git
 
 [Git](/handbook/engineering/infrastructure-platforms/tenant-scale/git/) チームは、コミュニティと GitLab の目標に沿って Git を開発し、私たちのプロダクトに統合します。
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/data-access/#gitaly" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-departments "Git Team" >}}

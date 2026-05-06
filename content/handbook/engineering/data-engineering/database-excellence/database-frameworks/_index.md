@@ -1,196 +1,196 @@
 ---
-title: Database Framework Group
+title: Database Framework グループ
 upstream_path: /handbook/engineering/data-engineering/database-excellence/database-frameworks/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-27T10:00:00Z"
+upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
+translated_at: "2026-05-06T12:00:00Z"
 translator: claude
 stale: false
 ---
 
 ## ビジョン
 
-データベースとのインタラクションに関するスケーラビリティ、アプリケーションパフォーマンス、データ増加、そして開発者支援に向けたソリューションを開発します。
+データベースとのインタラクションに関わるスケーラビリティ、アプリケーションパフォーマンス、データ増加、そして開発者の生産性向上に向けたソリューションを開発します。
 
 ## ミッション
 
-データベースにフォーカスし、私たちのミッションはお客様の要求に応じてスケールできるソリューションを提供することです。データベース上のパフォーマンスボトルネックを事前に特定し、開発ライフサイクルの早い段階で開発者に情報を提供するためのツールを提供します。
+データベースに焦点を当て、私たちのミッションはお客様の要求に応じてスケールできるソリューションを提供することです。データベースのパフォーマンスボトルネックを能動的に特定し、開発ライフサイクルの早い段階で開発者に情報を提供するためのツールを提供します。
 
 データベースメンテナーの数を増やし、コミュニティコントリビューターおよび GitLab 内の開発チームにデータベースのベストプラクティスを提供します。
 
 ## チームメンバー
 
-以下の方々がデータベースチームの常任メンバーです:
+以下のメンバーは Database チームの常任メンバーです。
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/data-engineering/database-excellence/database-frameworks/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-departments "Database BE Team" >}}
 
 ## 安定したカウンターパート
 
-他の機能チームのメンバーで、私たちの安定したカウンターパートは以下の通りです:
+他の機能チームのメンバーで、私たちの安定したカウンターパートは以下のとおりです。
 
-| **名前**                                                 | **役割** |
+| **名前**                                                 | **ロール** |
 | -------------------------------------------------------- | -------- |
-| [Mark Wood](/handbook/company/team#mjwood) | [グループプロダクトマネージャー, Data Access](/job-description-library/product/product-manager) |
-| [Mark Nagle](/handbook/company/team#mnagle2) | [サポートエンジニア](/job-description-library/engineering/support-engineer/) |
-| [Chris Nightengale](/handbook/company/team#cnightingale) | [サポートエンジニア](/job-description-library/engineering/support-engineer/) |
+| [Mark Wood](/handbook/company/team#mjwood) | [Group Product Manager, Data Access](/job-description-library/product/product-manager) |
+| [Mark Nagle](/handbook/company/team#mnagle2) | [Support Engineer](/job-description-library/engineering/support-engineer/) |
+| [Chris Nightengale](/handbook/company/team#cnightingale) | [Support Engineer](/job-description-library/engineering/support-engineer/) |
 
-### 他チームへの安定したカウンターパート
+### 他チームに対する安定したカウンターパート
 
-データベースグループは、他グループへのコンサルティングを頻繁に求められます。
-これらのリクエストをより効率的にサポートするため、この[安定したカウンターパートテーブル](stable.html)を作成しました。
+Database グループは他のグループへのコンサルティングを依頼されることが頻繁にあります。これらの依頼をより効率的にサポートするため、[安定したカウンターパートのテーブル](stable.html) を作成しました。
 
 ## ミーティング
 
-可能な限り、Issue、マージリクエスト、Slack を使った非同期コミュニケーションを好みます。ただし、個人的なつながりを構築したり、ブロッカーなど同期的な議論の方が効率的な項目に対処するために、対面ミーティングも有益です。
+可能な限り、私たちは Issue、マージリクエスト、Slack を使った非同期コミュニケーションを優先します。ただし、対面ミーティングは個人的なつながりを構築する上で有用であり、ブロッカーのように同期的に議論するほうが効率的な事項に対処するのにも役立ちます。
 
-- データベースフレームワークグループシンク: 毎週火曜日と木曜日
-  - 火曜日（15:00 UTC | EMEA） — [~infradev Issue](https://gitlab.com/groups/gitlab-org/-/issues/?sort=created_date&state=opened&label_name%5B%5D=infradev&label_name%5B%5D=group%3A%3Adatabase%20frameworks&first_page_size=100) で注意が必要なものを確認した後、週次優先事項に集中します。
-  - 木曜日（21:30 UTC | APAC） — 当週の[トリアージ Issue](https://gitlab.com/gitlab-org/database-team/team-tasks/-/issues/?sort=created_date&state=opened&search=Database%20Group%20Triage%20for%20week%20ending&first_page_size=100) を確認し、週次優先事項に集中します。
-- [データベースオフィスアワー](https://docs.google.com/document/d/1wgfmVL30F8SdMg-9yY6Y8djPSxWNvKmhR5XmsvYX1EI/edit?usp=sharing)
-（内部リンク）; [YouTube 録画](https://www.youtube.com/playlist?list=PL05JrBw4t0Kp-kqXeiF7fF7cFYaKtdqXM)
-  - 水曜日、15:30 UTC（隔週）
-  - （APAC）木曜日、3:30 UTC（隔週、交互）
+- Database Frameworks グループの同期は毎週火曜日と木曜日に実施。
+  - 火曜日 (15:00 UTC | EMEA) - 注意が必要な [~infradev Issue](https://gitlab.com/groups/gitlab-org/-/issues/?sort=created_date&state=opened&label_name%5B%5D=infradev&label_name%5B%5D=group%3A%3Adatabase%20frameworks&first_page_size=100) から開始し、その後 1 週間の優先事項に集中します。
+  - 木曜日 (21:30 UTC | APAC) - その週の [トリアージ Issue](https://gitlab.com/gitlab-org/database-team/team-tasks/-/issues/?sort=created_date&state=opened&search=Database%20Group%20Triage%20for%20week%20ending&first_page_size=100) から開始し、1 週間の優先事項に集中します。
+- [Database Office Hours](https://docs.google.com/document/d/1wgfmVL30F8SdMg-9yY6Y8djPSxWNvKmhR5XmsvYX1EI/edit?usp=sharing)
+(社内リンク); [YouTube 録画](https://www.youtube.com/playlist?list=PL05JrBw4t0Kp-kqXeiF7fF7cFYaKtdqXM)
+  - 水曜日、3:30pm UTC (隔週)
+  - (APAC) 木曜日、3:30am UTC (隔週、交互)
 
-## 作業
+## ワーク
 
-GitLab の[エンジニアリングワークフロー](/handbook/engineering/workflow/)ガイドラインに従います。私たちの注意を引くための Issue は、関連プロジェクトに作成してください。`~"group::database frameworks"` ラベルと、その他の関連ラベルを追加してください。
+私たちは GitLab の [エンジニアリングワークフロー](/handbook/engineering/workflow/) ガイドラインに従います。注目してほしい Issue がある場合は、関連するプロジェクトに Issue を作成してください。`~"group::database frameworks"` ラベルと、その他の関連するラベルを追加してください。
 
-緊急の Issue の場合は、[エンジニアリングマネージャー](#team-members)または Slack チャンネル（[#g_database_frameworks](https://gitlab.slack.com/app_redirect?channel=g_database_frameworks)）に連絡してください。
+緊急の Issue の場合は、[エンジニアリングマネージャー](#team-members) または Slack チャンネル ([#g_database_frameworks](https://gitlab.slack.com/app_redirect?channel=g_database_frameworks)) に連絡してください。
 
-### 私たちがやること
+### 私たちが行うこと
 
-チームは、高パフォーマンスなクエリを実現しながら、スケーラビリティのサポートと可用性の強化のための機能を提供するために、PostgreSQL アプリケーションインタラクションに責任を持ちます。PostgreSQL は Rails アプリケーションの中核であり、データベースの観点から GitLab をよりパフォーマントで、スケーラブルで、高可用性を持つものにする作業には事欠きません。
+このチームは、PostgreSQL アプリケーションのインタラクションを担当し、スケーラビリティをサポートし可用性を強化する機能を提供しながら、高パフォーマンスなクエリを実現することに責任を持ちます。PostgreSQL は Rails アプリケーションの中核であり、データベースの観点から GitLab をよりパフォーマンスが高く、スケーラブルで、高可用性なものにする作業には事欠きません。
 
-過去の作業の一部を以下に示します:
+過去の取り組みには、以下のようなものがあります。
 
-- クエリパフォーマンスの向上とテーブル増加の制御のために、様々な[パーティショニング](https://docs.gitlab.com/development/database/partitioning/)戦略と関連ツールを実装しました。
-- [データベースマイグレーションパイプライン](https://docs.gitlab.com/development/database/database_migration_pipeline/)を導入し、開発中の各 MR で DB マイグレーションを実行することで、潜在的な問題を早い段階で特定できるようになりました。
-- [バッチバックグラウンドマイグレーション](https://docs.gitlab.com/development/database/batched_background_migrations/)を開発し、データベースヘルスに基づくスロットリングを備えた大規模データマイグレーションを効率的に実行できるようにしました。
+- クエリパフォーマンスの改善とテーブル成長の制御のために、さまざまな [パーティショニング](https://docs.gitlab.com/development/database/partitioning/) 戦略と関連ツールを実装。
+- 開発中の各 MR で DB マイグレーションを実行する [Database migration pipeline](https://docs.gitlab.com/development/database/database_migration_pipeline/) を導入し、潜在的な問題を早い段階で特定できるようにしました。
+- データベースの健全性に基づいたスロットリングを備えた [Batched Background migrations](https://docs.gitlab.com/development/database/batched_background_migrations/) を開発し、大規模なデータマイグレーションを効率的に実行できるようにしました。
 
-現在進行中のプロジェクトの一部を以下に示します:
+現在進行中のプロジェクトには、以下のようなものがあります。
 
-- GitLab SQL トラフィックリプレイ — [epics/17719](https://gitlab.com/groups/gitlab-org/-/epics/17719)
-- データベースサチュレーションポイントを管理するツールとグラフの構築
-- バッチバックグラウンドオペレーション — [epics/16152](https://gitlab.com/groups/gitlab-org/-/epics/16152)
+- GitLab SQL トラフィックリプレイ - [epics/17719](https://gitlab.com/groups/gitlab-org/-/epics/17719)。
+- データベースの飽和点を管理するためのツールとグラフの構築。
+- Batched Background operations - [epics/16152](https://gitlab.com/groups/gitlab-org/-/epics/16152)。
 
-私たちは常にデータベースのパフォーマンスを継続的に向上させ、開発者向け[ドキュメント](https://docs.gitlab.com/development/database/)を改善する方法を探しています。
-私たちが取り組んでいる内容の詳細については、[ロードマップ](#roadmap)セクションをご確認ください。
+私たちは常にデータベースのパフォーマンスを継続的に気遣い、開発者向け [ドキュメント](https://docs.gitlab.com/development/database/) を改善する方法を探しています。私たちが取り組んでいる内容のより詳細については、以下の [ロードマップ](#roadmap) セクションをご覧ください。
 
-データベースグループが現在取り組んでいる内容を把握するには、[新マイルストーンのグループキックオフプレゼンテーション](https://www.youtube.com/playlist?list=PL05JrBw4t0KqP3MYrcoQHrqPUqn_jJZSN)および[対応するマイルストーンプランニング Issue](https://gitlab.com/gitlab-org/database-team/team-tasks/-/issues?scope=all&state=all&search=database+group+planning) を確認することをお勧めします。
+データベースグループが現在取り組んでいる内容を追うには、[新しいマイルストーンに向けたグループのキックオフプレゼンテーション](https://www.youtube.com/playlist?list=PL05JrBw4t0KqP3MYrcoQHrqPUqn_jJZSN) と [それぞれのマイルストーンの計画 Issue](https://gitlab.com/gitlab-org/database-team/team-tasks/-/issues?scope=all&state=all&search=database+group+planning) を視聴することをおすすめします。
 
 ### アクティビティログ
 
-2021年末から、過去のプロジェクトと成果を追跡するための[アクティビティログ](activity-log.html)を維持しています。
+2021 年末から、過去のプロジェクトと成果を追跡するために [アクティビティログ](activity-log.html) を維持しています。
 
-## プランニング
+## 計画
 
-[プランニング Issue](https://gitlab.com/gitlab-org/database-team/team-tasks/-/blob/master/.gitlab/issue_templates/Planning.md) を使って、マイルストーンの優先事項とコミットメントについて議論します。これは主に非同期で行われますが、同期的な議論が必要な場合は、同期チーム[ミーティング](#meetings)のタイムスロット中に議論します。
+私たちは [計画 Issue](https://gitlab.com/gitlab-org/database-team/team-tasks/-/blob/master/.gitlab/issue_templates/Planning.md) を使ってマイルストーンの優先順位とコミットメントを議論します。これは主に非同期で行われますが、同期的な議論が必要な場合はチームの同期 [ミーティング](#meetings) のタイムスロットで議論します。
 
 ### Issue の重み付け
 
-データベースフレームワークグループは、Issue の重みとして期待されるマージリクエスト数を使う実験を行っています。各マイルストーンが始まる前に、重みのない割り当て済み Issue にそれぞれ重みを追加するようお願いします。
+Database Frameworks グループは、想定されるマージリクエスト数を Issue の重みとして使用する実験を行っています。各マイルストーンが始まる前に、重みが付いていないアサイン済みの Issue にメンションして、メンバーに重みを追加してもらうよう依頼します。
 
-マージリクエスト数を Issue の重みとして使う理由は以下の通りです:
+私たちがマージリクエスト数を Issue の重みとして使うことに決めた理由はいくつかあります。
 
-- このプロセスにより、Issue をより細かく分解する方法を事前に検討し、事前に列挙することが促されます。
-- 説明と学習が容易で、チーム全体で共通理解を得やすくなります。
-- マージリクエストのレートは、チームが測定される主な指標の1つです。
+- このプロセスは、Issue がどのように分割可能か、事前にどのように列挙できるかを考えるよう促します。
+- 説明と学習が容易で、チームが共通理解に到達しやすくなります。
+- マージリクエストレートは、私たちのチームが評価される主要な指標の 1 つです。
 
 #### Issue の重み付けプロセス
 
-1. 長期間かかりレビューとマージが難しくなる可能性のある大きな変更よりも、小さく反復的な変更を重視し、この Issue をいくつのマージリクエストに分解できるかを検討してください。
-2. 期待されるマージリクエストを列挙したコメントを追加してください。例:
+1. レビューとマージに時間がかかる大きな変更ではなく、より小さくイテレーティブな変更を重視し、これがいくつのマージリクエストに分割できるかを検討します。
+2. 想定されるマージリクエストを列挙したコメントを追加します。例えば:
 
-   > ドキュメントへの1つのマージリクエストのみ
+   > ドキュメントへのマージリクエストが 1 つ
    >
-   > データベース変更用に gitlab への1つ、新機能用に1つ、ドキュメント変更用に1つ、omnibus への1つ
+   > データベース変更のための gitlab への 1 つ、新機能のための 1 つ、ドキュメント変更のための 1 つ、omnibus への 1 つ
 
-3. カウントを重みとして追加してください。例えば、データベース変更用に gitlab への1つ、新機能用に1つ、ドキュメント変更用に1つ、omnibus への1つがあると思われる場合は、`/weight 4` を割り当てます。
+3. 数を重みとして追加します。例えば、データベース変更のための gitlab への 1 つ、新機能のための 1 つ、ドキュメント変更のための 1 つ、omnibus への 1 つがあると考える場合は、`/weight 4` をアサインします。
 
 ### トリアージローテーション
 
-シンプルなトリアージローテーションを実施しています。毎週、1人のチームメンバーがデータベースフレームワークグループの受信 Issue のトリアージ専任となります。これにより、残りのチームメンバーは割り込みを最小限に抑えて現在の優先事項に集中できます。毎週、ボットがローテーションの次のチームメンバーに自動割り当てされる Issue を作成します。非常にシンプルにするため、ローテーションの順序はファーストネームのアルファベット順としています。割り当てられた週に PTO 中のチームメンバーがいる場合、Issue は次の人に再割り当てされます。
+私たちはかなりシンプルなトリアージローテーションを採用しています。毎週、1 人のチームメンバーが Database Frameworks グループに入ってくる Issue のトリアージを担当します。これにより、残りのチームメンバーは中断を少なくして現在の優先事項に集中できます。毎週、ボットが Issue を作成し、ローテーションの次のチームメンバーに自動的にアサインされます。シンプルさを保つため、ファーストネームのアルファベット順でトリアージローテーションを並べています。アサインされた週にチームメンバーが PTO 中の場合、その Issue はローテーションの次の人に再アサインされます。
 
-トリアージが必要な Issue はさまざまな経路で届きます。トリアージ中に監視すべき一般的な領域:
+トリアージが必要な Issue は、さまざまな経路で入ってきます。トリアージ中に監視する一般的な領域は以下のとおりです。
 
-- `~database` ラベルが付いているがグループに割り当てられていない新しい Issue（7日未満）。[検索例](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=database&scope=all&sort=created_date&state=opened&utf8=%E2%9C%93)
-- `~group::database frameworks` が割り当てられているが、スループットラベルや `~database::triage` ラベルが付いていない新しい Issue。[検索例](https://gitlab.com/dashboard/issues?scope=all&state=opened&label_name[]=group%3A%3Adatabase%20frameworks&not[label_name][]=type%3A%3Abug&not[label_name][]=type%3A%3Afeature&not[label_name][]=type%3A%3Amaintenance&not[label_name][]=type%3A%3Aignore)
-- `~database::triage` が割り当てられているが、これまでにレビューされていない新しい Issue。
-- `#g_database` Slack チャンネルで支援を求められた場合。
+- グループにアサインされていない `~database` ラベル付きの新しい Issue (作成 7 日以内)。[検索例](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=database&scope=all&sort=created_date&state=opened&utf8=%E2%9C%93)
+- `~group::database frameworks` がアサインされたものの、スループットラベルや `~database::triage` ラベルが付いていない新しい Issue。[検索例](https://gitlab.com/dashboard/issues?scope=all&state=opened&label_name[]=group%3A%3Adatabase%20frameworks&not[label_name][]=type%3A%3Abug&not[label_name][]=type%3A%3Afeature&not[label_name][]=type%3A%3Amaintenance&not[label_name][]=type%3A%3Aignore)
+- `~database::triage` がアサインされたが、まだレビューされていない新しい Issue。
+- #g_database Slack チャンネルで支援のためにメンションされたとき。
 
-トリアージ担当者がチームの注意が必要な Issue を発見した場合、想定される対応は以下の通りです:
+トリアージ担当のチームメンバーがチームの注意を要する Issue を発見した場合、考えられる結果には以下のようなものがあります。
 
-- 簡単な修正であれば Issue に直接対処する
-- 必要に応じてカスタマーサポートのカウンターパートに誘導する
-- `~database::triage` ラベルを追加してチーム同期ミーティング中にレビューする
-- マイルストーンを追加してマネージャーに ping するか、Issue に `~workflow::scheduling` ラベルを付ける
-- 重複としてクローズし、重複 Issue にリンクする
-- 非同期で回答されなかった質問がある場合はチーム同期で議論する
+- 簡単な修正であれば直接対処
+- 適切に応じてカスタマーサポートのカウンターパートに振り分け
+- `~database::triage` ラベルを追加し、チームの同期ミーティングでレビュー
+- マイルストーンを追加してマネージャーにメンションするか、`~workflow::scheduling` で Issue をラベル付け
+- 重複としてクローズし、重複している Issue にリンク
+- 非同期で答えが出ていない未解決の質問があれば、チームシンクで議論する。
 
-トリアージ Issue の数を少なく管理しやすい状態に保つことが目標です。
+目標は、トリアージのための Issue 数を少なく管理可能に保つことです。
 
-ヒント: クローズ済み Issue をトリアージボードから除外するには、[この検索](https://gitlab.com/gitlab-org/gitlab/-/issues?scope=all&state=closed&label_name[]=group%3A%3Adatabase%20frameworks&label_name[]=database%3A%3Atriage)を使い、複数の Issue を一度に編集して `~database::triage` ラベルを削除してください。
+ヒント: トリアージボードからクローズ済み Issue を削除するには、[この検索](https://gitlab.com/gitlab-org/gitlab/-/issues?scope=all&state=closed&label_name[]=group%3A%3Adatabase%20frameworks&label_name[]=database%3A%3Atriage) を使用し、複数の Issue を一度に編集して `~database::triage` ラベルを削除してください。
 
 ### ボード
 
-[マイルストーン別データベース](https://gitlab.com/groups/gitlab-org/-/boards/1426239)
-マイルストーンボードは、各マイルストーンで計画されている Issue の「全体像」を提供します。
+[Database by Milestone](https://gitlab.com/groups/gitlab-org/-/boards/1426239)
+マイルストーンボードは、各マイルストーンで計画された Issue の「全体像」ビューを提供します。
 
-[Database: Build · Boards · GitLab.org · GitLab](https://gitlab.com/groups/gitlab-org/-/boards/1324138) ビルドボードは、`group::database frameworks` の現在の作業状況の概要を提供します。これらの Issue はすでにバリデーションを経ており、[プロダクト開発ビルドトラック](/handbook/product-development/how-we-work/product-development-flow/#build-track)に乗っています。
-Issue は現在有効なマイルストーンと `group::database frameworks` ラベルを追加することでこのボードに追加されます。`workflow::ready for development` 列の Issue は優先度順（上から下）に並んでいます。チームメンバーはこの列を使って次に取り組む項目を選択します。
+[Database: Build · Boards · GitLab.org · GitLab](https://gitlab.com/groups/gitlab-org/-/boards/1324138) ビルドボードでは、`group::database frameworks` の作業の現在の状態の概要が確認できます。これらの Issue はすでにバリデーションを通過し、[製品開発ビルドトラック](/handbook/product-development/how-we-work/product-development-flow/#build-track) にあります。
+Issue は、現在のアクティブなマイルストーンと `group::database frameworks` ラベルを追加することでこのボードに追加されます。`workflow::ready for development` カラムの Issue は、優先順位順 (上から下へ) で並べられます。チームメンバーは次に取り組む項目を選ぶためにこのカラムを使用します。
 
 [Database: Validation](https://gitlab.com/groups/gitlab-org/-/boards/2305758?scope=all&utf8=%E2%9C%93&label_name[]=database%3A%3Avalidation)
-バリデーションボードは、プロダクトマネージャーがレビューする受信 Issue のキューです。データベースチームのバリデーションボードでよく見られるシナリオは、アクションを起こす前にさらなる定義が必要な Issue が作成された場合です。Issue は通常、大きなアイデアを述べていますが、アクションを起こすには詳細が不十分です。その後、データベースチームは Issue を実行可能なステップに分解し、終了条件を作成し、進行中の取り組みと優先順位付けを行う改善プロセスを行います。Issue が大きすぎる場合はエピックに昇格され、小さなサブ Issue が作成されます。
+バリデーションボードは、プロダクトマネージャーがレビューする受信 Issue のキューです。Database チームバリデーションボードの一般的なシナリオは、優先順位を付ける前にさらなる定義が必要な Issue が作成された場合です。Issue は通常、大きな構想を述べていますが、行動を起こすのに十分な詳細がまだありません。Database チームはその後、Issue を実行可能な手順に分解し、終了基準を作成し、進行中の取り組みに対して優先順位を付けるリファインメントプロセスを進めます。Issue が大きすぎる場合は、エピックに昇格させ、小さなサブ Issue が作成されます。
 
 [Database: Triage](https://gitlab.com/groups/gitlab-org/-/boards/2305765?scope=all&utf8=%E2%9C%93&label_name[]=database%3A%3Atriage)
-トリアージボードは、チームの割り当て、優先順位付け、既存 Issue の調査などが必要な受信 Issue のためのものです。データベースフレームワークグループでは、1人のチームメンバーが適時な対応のためにこのボードを監視する週次トリアージローテーションを実施しています。
+トリアージボードは、チームへのアサイン、優先順位付け、既存 Issue の確認などのために、さらなる調査が必要な受信 Issue 用です。Database Frameworks グループでは、適時の対応のためにこのボードを監視する週次トリアージローテーションを実装しています。
 
-#### Say/Do 比率
+#### Say/Do 比
 
-`~Deliverable` ラベルを使って Say/Do 比率を追跡しています。各マイルストーンの開始時、データベースグループ週次ミーティング中に Issue をレビューし、マイルストーン内に確実に届けられると判断した Issue を特定します。その Issue には `~Deliverable` ラベルが付けられます。マイルストーン終了時、`~Deliverable` ラベルが付いた正常完了 Issue は2か所で追跡されます。マイルストーン内に届けられた数を計算し、移動した Issue を考慮する Tableau のダッシュボードがあります。また、マイルストーンレトロ Issue には、マイルストーンを逃したものと合わせて、出荷したすべての `~Deliverable` Issue がリストアップされます。
+私たちは Say/Do 比を追跡するために `~Deliverable` ラベルを使用します。各マイルストーンの開始時、Database Group Weekly ミーティング中に、私たちは Issue をレビューし、マイルストーン内で配信できる自信のある Issue を決定します。Issue は `~Deliverable` ラベルでマークされます。マイルストーン終了時に、`~Deliverable` ラベル付きの正常に完了した Issue は 2 か所で追跡されます。Tableau のダッシュボードがマイルストーン内に何件配信されたかを計算し、移動された Issue を考慮してくれます。さらに、私たちのマイルストーン振り返り Issue では、出荷されたすべての `~Deliverable` Issue が、マイルストーンに間に合わなかったものと併せて一覧表示されます。
 
 #### ロードマップ
 
-データベースグループの[ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Roadmap&label_name[]=group%3A%3Adatabase%20frameworks)は、現在進行中のプロジェクトと、今後3か月以上で優先付けされたプロジェクトを確認できます。
+Database グループの [ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Roadmap&label_name[]=group%3A%3Adatabase%20frameworks) は、現在進行中のものに加えて、今後 3 か月以上先の優先順位の高いプロジェクトのビューを提供します。
 
-### 週次チームアップデート
+### ウィークリーチームアップデート
 
-進行中の各エピックには `@service-epic-status-automation` からステータステンプレート付きの自動コメントが届き、そのプロジェクトに取り組むチームメンバーがステータス詳細を返信として投稿します。これは[データベースフレームワークステータス](https://gitlab.com/groups/gitlab-org/data-access/dbf/-/epics/1)エピックに追加され、進行中のすべてのエピックのステータスが含まれます。
+進行中の各エピックでは `@service-epic-status-automation` からステータステンプレート付きの自動コメントが入り、それらのプロジェクトに取り組んでいるチームメンバーがステータスの詳細を返信投稿します。それは [Database Frameworks Status](https://gitlab.com/groups/gitlab-org/data-access/dbf/-/epics/1) エピックに追加され、進行中のすべてのエピックのステータスがここに含まれます。
 
 ### ドキュメント
 
-このセクションでは、私たちの知見、ロードマップ、その他の関連資料を文書化しています。
+このセクションでは、私たちのインサイト、ロードマップ、その他の関連資料を文書化しています。
 
-1. [データベースレキシコン — データベースに関連する用語と定義](doc/lexicon.html)
-1. [データベース戦略: 提案されたデータベース変更のガイダンス](doc/strategy.html)
-1. [テーブルパーティショニングについて](doc/partitioning.html)（2020年2月）
-1. [PostgreSQL: フォーリンデータラッパーとパーティショニングによるシャーディング](doc/fdw-sharding.html)
-1. [トップレベルネームスペースによる GitLab のシャーディング](doc/root-namespace-sharding.html)
-1. [CitusDB によるシャーディング](doc/citus.html)（2020年4月）
-1. [テーブルパーティショニング: Issue グループ検索を例として](doc/issue-group-search-partitioning.html)（2020年3月）
-1. [開発者向け GitLab.com データベースの操作方法](doc/gitlab-com-database.html)
-1. [コンテナレジストリのデータベーススキーマ提案](doc/container-registry.html)（2020年9月）
-1. [GitLab.com のワークロード分析](doc/workload-analysis.html)（2020年10月）
-1. [マルチデータベースバックグラウンドマイグレーション](doc/multidb-bg-migrations.html)（2021年10月）
+1. [Database Lexicon - データベースに関連する用語と定義](doc/lexicon.html)
+1. [Database Strategy: 提案されたデータベース変更のためのガイダンス](doc/strategy.html)
+1. [テーブルパーティショニングについて](doc/partitioning.html) (2020 年 2 月)
+1. [Postgres: foreign data wrapper とパーティショニングによるシャーディング](doc/fdw-sharding.html)
+1. [トップレベル名前空間による GitLab のシャーディング](doc/root-namespace-sharding.html)
+1. [CitusDB によるシャーディング](doc/citus.html) (2020 年 4 月)
+1. [テーブルパーティショニング: Issue グループ検索を例として](doc/issue-group-search-partitioning.html) (2020 年 3 月)
+1. [開発者向けの GitLab.com データベースの操作](doc/gitlab-com-database.html)
+1. [コンテナレジストリのデータベーススキーマ提案](doc/container-registry.html) (2020 年 9 月)
+1. [GitLab.com のワークロード分析](doc/workload-analysis.html) (2020 年 10 月)
+1. [マルチデータベースバックグラウンドマイグレーション](doc/multidb-bg-migrations.html)
+   (2021 年 10 月)
 
-### パフォーマンス指標（内部）
+### Performance Indicator (内部)
 
-1. [Enablement::Database — パフォーマンス指標ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/workbooks/2326872/views)
+1. [Enablement::Database - Performance Indicators Dashboard](https://10az.online.tableau.com/#/site/gitlab/workbooks/2326872/views)
 1. GitLab.com の平均クエリ Apdex
    - マスター
-     - [目標: 100ms — 許容: 250ms](https://tinyurl.com/64e6acku)
-     - [目標: 50ms — 許容: 100ms](https://tinyurl.com/4mjw5azv)
+     - [ターゲット: 100ms - 許容 250ms](https://tinyurl.com/64e6acku)
+     - [ターゲット: 50ms - 許容 100ms](https://tinyurl.com/4mjw5azv)
    - レプリカ
-     - [目標: 100ms — 許容: 250ms](https://tinyurl.com/yde68e2k)
-     - [目標: 50ms — 許容: 100ms](https://tinyurl.com/42wc7n2z)
+     - [ターゲット: 100ms - 許容 250ms](https://tinyurl.com/yde68e2k)
+     - [ターゲット: 50ms - 許容 100ms](https://tinyurl.com/42wc7n2z)
 
-### 共通リンク
+### よく使われるリンク
 
-- Slack チャンネル [#g_database_frameworks](https://gitlab.slack.com/app_redirect?channel=g_database_frameworks) — 公式業務
-- Slack チャンネル [#db-lounge](https://gitlab.slack.com/app_redirect?channel=db-lounge) — チームチャット
-- [データベースフレームワークエピック](https://gitlab.com/groups/gitlab-org/-/epics?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Adatabase%20frameworks)
-- [データベースサブグループ](https://gitlab.com/gitlab-org/database-team) — チームプロセスとプロジェクトに関連する Issue とテンプレート
-- [プロダクト開発タイムライン](/handbook/engineering/workflow/#product-development-timeline)
-- [YouTube: データベースチームプレイリスト](https://www.youtube.com/watch?v=BqwsRDpknfg&list=PL05JrBw4t0KoxfN-uO2YfvQUabp2kdUYT)
-- [YouTube: データベースオフィスアワープレイリスト](https://www.youtube.com/watch?v=p3ful2h8H-c&list=PL05JrBw4t0Kp-kqXeiF7fF7cFYaKtdqXM)
+- Slack チャンネル
+  [#g_database_frameworks](https://gitlab.slack.com/app_redirect?channel=g_database_frameworks) -
+  公式業務用
+- Slack チャンネル
+  [#db-lounge](https://gitlab.slack.com/app_redirect?channel=db-lounge) - チームチャット
+- [Database Frameworks Epics](https://gitlab.com/groups/gitlab-org/-/epics?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Adatabase%20frameworks)
+- [Database Subgroup](https://gitlab.com/gitlab-org/database-team) - チームプロセスとチームが所有するプロジェクトに関する Issue とテンプレート。
+- [製品開発タイムライン](/handbook/engineering/workflow/#product-development-timeline)
+- [YouTube: Database Team Playlist](https://www.youtube.com/watch?v=BqwsRDpknfg&list=PL05JrBw4t0KoxfN-uO2YfvQUabp2kdUYT)
+- [YouTube: Database Office Hours Playlist](https://www.youtube.com/watch?v=p3ful2h8H-c&list=PL05JrBw4t0Kp-kqXeiF7fF7cFYaKtdqXM)

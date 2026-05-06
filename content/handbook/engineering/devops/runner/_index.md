@@ -2,15 +2,15 @@
 title: "Runner"
 description: "GitLab Runner チームページ。"
 upstream_path: /handbook/engineering/devops/runner/
-upstream_sha: 1065c86ab1ba75adefbb07560d726608885e6d4e
-translated_at: "2026-04-28T13:32:34Z"
+upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
+translated_at: "2026-05-06T10:00:00Z"
 translator: claude
 stale: false
 ---
 
 ## ビジョン
 
-2025年までに、GitLab Runner に関して私たちが掲げるビジョンは、大規模環境でのセットアップと日常運用がほぼゼロフリクションな体験になることです。
+2025 年までに、GitLab Runner に関して私たちが掲げるビジョンは、大規模環境でのセットアップと日常運用がほぼゼロフリクションな体験になることです。
 
 ## ミッション
 
@@ -25,21 +25,15 @@ Verify:Runner は 2 つのチームで構成されています。
 
 ### CI Functions Platform
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/runner/#ci-functions-platform" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug manager="nicole-williams" team="(Principal|Functions)" >}}
 
 ### Runner Core
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/runner/#ci-functions-platform" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug manager="adebayo_a" >}}
 
 ### Runner Leadership
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/runner/#ci-functions-platform" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug manager="nicole-williams" team="(Principal|Manager)" >}}
 
 ## 連絡方法
 
@@ -49,71 +43,71 @@ Slack
 - [`#g_runner_core`](https://gitlab.slack.com/archives/C09EDQXBMPH)
 - [`#g_ci_functions_platform`](https://gitlab.slack.com/archives/C09HJ2UL9L4)
 
-サポートリクエスト:
-カスタマーサポートリクエストは、Request for Help プロジェクトの [Issue を作成](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-Runner)してください。
+サポート依頼:
+お客様のサポート依頼については、Request for Help プロジェクトで [Issue を作成](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-Runner)してください。
 
-## 安定したカウンターパート
+## Stable Counterpart
 
-カウンターパートの包括的なリストについては、[Runner プロダクトカテゴリ](/handbook/product/categories/#runner-group) を参照してください。
+カウンターパートの包括的なリストについては、[Runner プロダクトカテゴリー](/handbook/product/categories/#runner-group)を参照してください。
 
 ## 技術ビジョン
 
-Runner Core と CI Functions Platform チームの優先事項と技術ロードマップは、[Runner 技術ビジョン](/handbook/engineering/architecture/design-documents/runner_technical_vision/) によって導かれています。これは GitLab Runner があらゆる規模で CI/CD ワークロードの簡単なインストール・設定・実行をサポートするために進化する方法を定義するアーキテクチャ設計書です。
+Runner Core および CI Functions Platform チームの優先事項と技術ロードマップは、[Runner technical vision](/handbook/engineering/architecture/design-documents/runner_technical_vision/) によって導かれています。これは、GitLab Runner があらゆる規模での CI/CD ワークロードを容易にインストール・設定・実行できるよう進化していくためのアーキテクチャ設計図です。
 
-## 作業の進め方
+## 私たちの働き方
 
-### 優先度フレームワーク
+### 優先順位付けフレームワーク
 
-私たちのチームは、複数の重要な要素に基づいて優先順位を明確に維持しています（優先度順）。
+私たちのチームは、いくつかの重要な要因に基づいて作業の優先順位付けとスケジュールを行うという明確なコミットメントを維持しています（優先度順）。
 
-- **強制優先度 Issue**（infradev、セキュリティ、可用性）は最高優先度として即時にリソースを割り当てます
-- **重大バグの解決**により品質と信頼性を維持します
-- **長期ビジョンを推進する戦略的方向性の機能**
-- **技術的負債の削減**により持続可能な開発速度を確保します
-- **システムの健全性を保つメンテナンス活動**
-- **ユーザーに価値をもたらし、コントリビューター参加を支援するコミュニティコントリビューション**
+- **強制優先付け Issue**（infradev、セキュリティ、可用性）は最優先としてただちにリソースを割り当てます
+- **重大なバグ解決** によって品質と信頼性を維持します
+- **戦略的方向性に沿った機能** で長期ビジョンを推進します
+- **技術的負債の削減** によって持続的な開発速度を確保します
+- **メンテナンス活動** でシステムの健全性を保ちます
+- **コミュニティコントリビューション** によりユーザーへ価値を届け、コントリビューターのエンゲージメントをサポートします
 
-このフレームワークはリソース割り当ての意思決定を導き、GitLab Runner の信頼性・セキュリティ・継続的な進化において最も重要な事項に集中できるようにします。
+このフレームワークにより、リソース配分の意思決定を導き、GitLab Runner の信頼性、セキュリティ、継続的な進化において最も重要なものに集中できるようにします。
 
 ## 共有責任
 
-Runner Core と CI Functions Platform グループは自律的に運営されていますが、メンテナンスのオーバーヘッドを分散するために特定の責任を共同で担います。
+Runner Core グループと CI Functions Platform グループは自律的に運営されますが、メンテナンスのオーバーヘッドを分散するために特定の責任については協力しています。
 
 ### リリース
 
-各イテレーションの終わりに、Runner と関連プロジェクトをリリースします。リリースプロセスは [releases プロジェクトの README](https://gitlab.com/gitlab-org/ci-cd/runner-tools/releases/-/blob/main/README.md) に記載されています。
+各イテレーションの終わりに、Runner および関連プロジェクトをリリースします。リリースプロセスは [releases プロジェクトの README](https://gitlab.com/gitlab-org/ci-cd/runner-tools/releases/-/blob/main/README.md) にドキュメント化されています。
 
-Runner プロジェクト Wiki には [リリース済み Runner バージョンの一覧](https://gitlab.com/gitlab-org/gitlab-runner/-/wikis/Released-runner-versions) を管理しています。
+[リリース済み Runner バージョンのリスト](https://gitlab.com/gitlab-org/gitlab-runner/-/wikis/Released-runner-versions)を Runner プロジェクトの wiki でメンテナンスしています。
 
-#### リリースマネージャーのローテーション
+#### リリースマネージャーローテーション
 
-各マイルストーンごとに、[team-tasks プロジェクト](https://gitlab.com/gitlab-com/runner-group/team-tasks/-/issues?sort=created_date&state=opened&first_page_size=100) に自動で Issue が作成され、そのイテレーションのリリースマネージャーとして 1 名のエンジニアが割り当てられます。この自動化は [team-tasks-release-rotation プロジェクト](https://gitlab.com/gitlab-org/ci-cd/runner-tools/team-tasks-release-rotation) によって管理されます。
+各マイルストーンで、[team-tasks プロジェクト](https://gitlab.com/gitlab-com/runner-group/team-tasks/-/issues?sort=created_date&state=opened&first_page_size=100)に Issue が自動作成され、そのイテレーションのリリースマネージャーとして 1 名のエンジニアが割り当てられます。この自動化は [team-tasks-release-rotation プロジェクト](https://gitlab.com/gitlab-org/ci-cd/runner-tools/team-tasks-release-rotation)で管理されています。
 
-生成された各 Issue にはリリースプロセスを完了するための詳細な手順が含まれています。割り当てられたチームメンバーが担当リリース期間中に不在となる場合、その人が代替者を探す責任を負います。
+生成された各 Issue には、リリースプロセスを完了するための詳細な手順が含まれています。割り当てられたチームメンバーが担当期間中にオフィスを離れる予定の場合は、代替を見つける責任があります。
 
 ### メンテナンスローテーション
 
-Runner チームは、サポート・トリアージ・コミュニティエンゲージメント活動の継続的なカバレッジを確保するため、週次のローテーションによるメンテナンス割り当てを行っています。
+Runner チームには、サポート、トリアージ、コミュニティへのエンゲージメント活動について一貫したカバレッジを確保するため、毎週ローテーションするメンテナンスアサインメントがあります。
 
 #### 仕組み
 
-毎週、[team-tasks プロジェクト](https://gitlab.com/gitlab-com/runner-group/team-tasks/-/issues) に役割割り当てを含む Issue が自動作成されます。チームメンバーは異なる担当をローテーションし、作業負荷を分散しつつ、全員がチーム運営のすべての側面に習熟できるようにしています。
+毎週、その週の役割割り当てを含む Issue が [team-tasks プロジェクト](https://gitlab.com/gitlab-com/runner-group/team-tasks/-/issues)に自動作成されます。チームメンバーは、ワークロードのバランスを取り、全員がチーム運営のあらゆる側面に精通し続けるために、自動的に異なる責任にローテーションされます。
 
-#### 担当内容
+#### 責任
 
-各セクションの詳細な手順は、チームタスクジェネレーターの [Issue テンプレート](https://gitlab.com/gitlab-org/ci-cd/runner-tools/runner-team-task-issue-generator/-/blob/main/template.md?ref_type=heads)に記載されています。
+各セクションの詳細な手順は、チームタスクジェネレーターの [Issue テンプレート](https://gitlab.com/gitlab-org/ci-cd/runner-tools/runner-team-task-issue-generator/-/blob/main/template.md?ref_type=heads)で確認できます。
 
 | タスク | 説明 |
 | ------ | ------ |
-| **🐛 バグ担当者 🤠** | 受信したバグが適切な重大度と優先度ラベルを持つようトリアージを担当します。 |
-| **🛟 サポート & セキュリティ対応者 🚒** | 受信したセキュリティ脆弱性やサポートリクエストの監視・ラベル付け・対応を担当します。セキュリティレビュープロセスの詳細については、チームリソースページをご覧ください。 |
-| **🥷 マージ担当者 🏴‍☠️** | コミュニティコントリビューターのマージリクエストが適時に対応されるよう担当します。 |
-| **💬 コミュニティコントリビューションのトリアージ担当 📌** | 新しいコミュニティコントリビューションの初期トリアージを担当します。 |
+|    **🐛 Bug Wrangler 🤠**     |   入ってくるバグをトリアージし、適切な重要度と優先度のラベルが付いていることを確認する責任があります。     |
+|   **🛟 Support & Security Responder 🚒**     |    入ってくるセキュリティ脆弱性とサポート依頼の監視、ラベル付け、対応を行う責任があります。セキュリティレビュープロセスの詳細は、チームリソースページで確認できます。    |
+|     **🥷 Merge Marauder 🏴‍☠️**    |    コミュニティコントリビューターからのマージリクエストがタイムリーに対応されるよう確認する責任があります。    |
+|     **💬 Community Contribution Triager 📌**    |    新しいコミュニティコントリビューションの初期トリアージを担当します。    |
 
-#### 担当の確認方法
+#### あなたのアサインメントを確認する
 
-[team-tasks プロジェクト](https://gitlab.com/gitlab-com/runner-group/team-tasks/-/issues) の今週の Issue で自分の担当を確認してください。Issue は毎週月曜日に自動作成され、週のローテーションスケジュールと各職務の完了を追跡するためのチェックボックスが含まれています。
+担当を確認するには、[team-tasks プロジェクト](https://gitlab.com/gitlab-com/runner-group/team-tasks/-/issues)でその週の Issue をチェックしてください。Issue は毎週月曜日にその週のローテーションスケジュールとともに自動作成され、週を通して担当業務の完了を追跡するためのチェックボックスが含まれています。
 
 ## チームリソース
 
-[専用ページ](/handbook/engineering/devops/runner/team-resources/#overview)をご覧ください。
+[専用ページ](/handbook/engineering/devops/runner/team-resources/#overview)を参照してください。

@@ -2,8 +2,8 @@
 title: Security Risk Management、Security Insights
 description: "GitLab の Security Insights グループは、お客様がセキュリティリスクを効果的かつ効率的に管理できるよう支援するソリューションの開発を担っています。"
 upstream_path: /handbook/engineering/development/sec/security-risk-management/security-insights/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-28T08:04:29Z"
+upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
+translated_at: "2026-05-06T10:00:00Z"
 translator: claude
 stale: false
 ---
@@ -34,9 +34,7 @@ Security Insights グループは、[バーティカルスライス](https://www
 
 ### チーム構成
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/security-insights/#security-insights-team-structure" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{% team-by-manager-slug manager="nmccorrison" team="Engineer(.*)Security Risk Management:Security Insights" %}}
 
 ## 共通リンク
 

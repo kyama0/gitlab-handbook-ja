@@ -1,8 +1,8 @@
 ---
 title: "Plan"
 upstream_path: /handbook/engineering/devops/plan/
-upstream_sha: bb4e4d0fc1a355c00a1d82b1528ff729c83af189
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
+translated_at: "2026-05-06T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -53,9 +53,7 @@ UX に関する質問は、Plan ステージのプロダクトデザイナーを
 
 Plan 内のグループは、今後の作業を見積もる際に同じ数値スケールを使用します。
 
-
-<!-- include omitted: includes/engineering/plan/estimating-effort.md (no localized version under content/ja/) -->
-
+{{% include "includes/engineering/plan/estimating-effort.md" %}}
 
 #### Issue
 
