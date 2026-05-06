@@ -1,0 +1,5 @@
+{{- if .marketing_page}}
+{{ printf "https://about.gitlab.com%s" .marketing_page }}
+{{- else if .documentation }}
+{{ .documentation }}
+{{- end }}

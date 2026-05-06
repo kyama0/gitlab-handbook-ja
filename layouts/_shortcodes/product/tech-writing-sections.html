@@ -1,0 +1,29 @@
+{{- /* To edit the content, see: https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/sections.yml */}}
+<table>
+    <thead>
+        <tr>
+            <th>Section</th>
+            <th>Assigned Manager</th>
+        </tr>
+    </thead>
+    <tbody>
+        {{- range $section_key, $section := site.Data.public.sections }}
+        {{- with .twm -}}
+        <tr>
+            <td><a href="{{ ref page (printf "/handbook/product/categories#%s-section" $section_key) }}">{{ $section.name }}</a></td>
+            <td>
+                {{- range (slice | append .) -}}
+                    <div class="mb-2">
+                    {{- with (index (where site.Data.public.team "name" "eq" .) 0) }}
+                    {{- partial "member/with-gitlab-link" . }}<br>
+                    {{- else }}
+                    <span class="not-found" style="white-space: nowrap;"><img class="avatar" src="https://about.gitlab.com/images/gitlab-logo-extra-whitespace.png" width="40" height="40" alt="{{ . }}">{{.}}</span><br>
+                    {{- end }}
+                    </div>
+                {{- end }}
+            </td>
+        </tr>
+        {{- end }}
+        {{- end }}
+    </tbody>
+</table>
