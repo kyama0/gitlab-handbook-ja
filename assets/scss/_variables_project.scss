@@ -1,10 +1,8 @@
 // Project-level Bootstrap/Docsy variable overrides for the JA handbook site.
-//
 // This file overrides the equivalent file in the docsy-gitlab module. Hugo's
 // resource resolution prefers project-level `assets/scss/_variables_project.scss`
 // over a module's, so editing this file (and rebuilding) is enough to retheme
 // the site without forking the upstream module.
-//
 // Per the project README, GitLab's brand colors are not used here. The values
 // below replace docsy-gitlab's GitLab-purple/orange/red palette with neutral
 // slate / gray / standard alert-red equivalents.
@@ -15,9 +13,7 @@ $success:   #16a34a; // green-600
 $warning:   #f59e0b; // amber-500
 $important: #dc2626; // red-600  (was #E24329 GitLab red)
 $orange:    #f97316; // orange-500 (BS default)
-
 $border-radius: .25rem;
-
 $display-font-sizes: (
   1: 4.5rem,
   2: 4rem,
@@ -26,7 +22,6 @@ $display-font-sizes: (
   5: 2.5rem,
   6: 2rem
 );
-
 $google_font_name: "Inter";
 
 .home-section-h {
@@ -69,7 +64,6 @@ h3 > a > sup {
 
 // =====================================================================
 //   Search dialog (Pagefind) - 旧 Astro 版と同じ UX を再現
-//
 //   - ナビバー / サイドバー両方で <button.header-search-trigger>
 //     (ピル型) をレンダーし、クリックで modal <dialog> を openModal。
 //   - Ctrl/Cmd + K でも開閉可。
