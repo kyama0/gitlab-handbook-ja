@@ -168,9 +168,7 @@ GitLab では、`~Deliverable` ラベルは[リリーススコープラベル](h
 
 Issue の作成時に重大度/優先度に疑問がある場合や重大度/優先度ラベルが追加されていない場合、[Appsec エスカレーションエンジン](https://gitlab.com/gitlab-com/gl-security/engineering-and-research/automation-team/appsec-escalator#appsec-escalation-engine) を活用して Appsec チームとのディスカッションを開始できます。このボットは ~security とラベル付けされていて ~test または ~"type::feature" とラベル付けされていない Issue を監視します。重大度/優先度ラベルがない場合は、security-sp-label-missing と security-triage-psirt ラベルが追加され、この Issue は [AppSec トリアージダッシュボード](https://triage-dashboard-2c1ad6.gitlab.io/) にリストされます。その後、グループの Appsec 安定したカウンターパートまたは Appsec チームのトリアージ担当者が Issue を引き継ぎ、Appsec トリアージローテーションの一部として重大度を割り当てます。
 
-<span id="we-own-what-we-ship"></span>
-
-### 出荷したものに責任を持つ
+### 出荷したものに責任を持つ {#we-own-what-we-ship}
 
 私たちが開発するセキュリティアナライザーはオープンソースソフトウェアに大きく依存する場合があります。
 これはそれらのソフトウェアパッケージの変更によって大きな影響を受ける可能性があることを意味します。私たちは[GitLab リリース](https://about.gitlab.com/releases/)ごとにこれらのパッケージの更新を確認します。新しいバージョンは以下の側面から精査されます:

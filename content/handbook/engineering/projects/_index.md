@@ -1,21 +1,17 @@
 ---
-title: エンジニアリングプロジェクト
+title: Engineering Projects
 upstream_path: "/handbook/engineering/projects/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T05:50:35Z"
+upstream_sha: "eb9c7122b4259a2111ed65628e5384768922a597"
+translated_at: "2026-05-06T00:00:00Z"
 translator: claude
 stale: false
 ---
 
-
-<p class="my-3 text-sm text-gray-600 italic">プロジェクト一覧は <a href="https://handbook.gitlab.com/handbook/engineering/projects/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< engineering/projects-table >}}
 
 ---
 
-
-<p class="my-3 text-sm text-gray-600 italic">プロジェクト詳細は <a href="https://handbook.gitlab.com/handbook/engineering/projects/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{% engineering/projects-body %}}
 
 ---
 

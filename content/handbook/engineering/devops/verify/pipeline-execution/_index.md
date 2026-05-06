@@ -2,8 +2,8 @@
 title: "Verify:Pipeline Execution グループ"
 description: "Pipeline Execution グループの GitLab チームページです。"
 upstream_path: /handbook/engineering/devops/verify/pipeline-execution/
-upstream_sha: 99a722ddc313408ef3d54d179c211cd76390f2bd
-translated_at: "2026-04-28T14:37:32Z"
+upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
+translated_at: "2026-05-06T12:00:00Z"
 translator: claude
 stale: false
 ---
@@ -12,52 +12,53 @@ stale: false
 
 ## ビジョン
 
-このチームが何に取り組む予定かを理解するには、[プロダクトビジョン](https://about.gitlab.com/direction/verify/) をご覧ください。このチームは以下の方向性の実現に責任を持ちます：
+このチームが何に取り組んでいくかを理解するには、[プロダクトの方向性](https://about.gitlab.com/direction/verify/) をご覧ください。このチームは以下の方向性の実現に責任を持ちます。
 
 - [Continuous Integration](https://about.gitlab.com/direction/verify/continuous_integration/)
-- [マージトレイン](https://about.gitlab.com/direction/verify/merge_trains/)
+- [Merge Trains](https://about.gitlab.com/direction/verify/merge_trains/)
 
 ## ミッション
 
-パフォーマンスが高く、スケーラブルで、使いやすい Continuous Integration プロダクトを作成・サポートすることにより、ソフトウェア開発をより簡単に、より速く、より信頼できるものにします。
+パフォーマンスが高く、スケーラブルで、愛される Continuous Integration 製品を作成・サポートすることで、ソフトウェア開発をより簡単に、より速く、より信頼できるものにします。
 
-Verify:Pipeline Execution グループは、[Continuous Integration](https://about.gitlab.com/solutions/continuous-integration/) に関する機能のサポートに重点を置いています。PE グループにとって重要な取り組みは、パフォーマンス指標で追跡している成果を達成する機能を提供することです。
+Verify:Pipeline Execution グループは、[Continuous Integration](https://about.gitlab.com/solutions/continuous-integration/) に関する機能のサポートに焦点を当てています。PE グループの主要な焦点は、Performance Indicator で追跡している成果を達成する機能を提供することです。
 
-## 推進要因
+## 駆動要因
 
 ### パフォーマンス
 
-- 顧客視点での体感パフォーマンスの向上（例：レスポンシブな UI、結果表示時間の短縮）。
-- Pipeline Execution が所有するコードの処理時間の短縮。
-- 結果の信頼性の確保（例：ウェブリクエストに対してタイムリーに結果を返す（スケーラビリティと重複））。
+- お客様の視点から見た体感パフォーマンスの向上。例: レスポンシブな UI、結果が出るまでの時間の短縮。
+- Pipeline Execution が所有するコードでの処理時間の削減。
+- 結果の信頼性の確保。例: Web リクエストへの結果のタイムリーな返却 (スケーラビリティと重複)。
 
 ### スケーラビリティ
 
-- 多数の顧客のサポート。
-- 大規模かつ複雑な構成を持つ単一顧客のサポート。
+- 多くのお客様をサポート。
+- 大規模で複雑なセットアップを持つ単一のお客様をサポート。
 
-### 開発者効率
+### 開発者の効率
 
 - コードベースの複雑さの軽減。
 - チームが所有するコードの幅広さへの対処。
-- MR がレビュープロセスを通過するのにかかる時間の短縮。
-- コミュニティコントリビューションに関連した効率の確保：
-  - Issue をコミュニティがアプローチしやすくすること。
-  - コミュニティコントリビューションのレビュープロセスの効率改善。
+- レビュープロセスを通じて MR が承認されるまでの時間の短縮。
+- コミュニティコントリビューションに関連する効率の確保
+  - Issue がコミュニティにとって取り組みやすいことを確保。
+  - コミュニティコントリビューションに対するレビュープロセスの効率向上。
 
-### カスタマーエクスペリエンス
+### お客様の体験
 
-- 顧客の Issue をタイムリーに解決すること。
-- SUS に影響する Issue をタイムリーに対処すること。
-- 信頼性が高く正確なドキュメントを提供すること。
+- お客様の Issue がタイムリーに解決されることを確保。
+- SUSImpacting Issue へのタイムリーな対処。
+- 信頼性が高く正確なドキュメントの提供。
 
-## パフォーマンス指標
+## Performance Indicator
 
-私たちが貢献している価値は、パフォーマンス指標（PI）を使用して測定しています。PI を定義し、進捗の追跡に活用しています。現在の [Pipeline Execution グループの PI](https://internal.gitlab.com/handbook/company/performance-indicators/product/#verify-ci-verify-runner-count-of-pipelines-triggered-by-unique-users) は `ci_pipelines をトリガーしたユニークユーザー数` です。詳細については [プロダクトチームパフォーマンス指標](https://internal.gitlab.com/handbook/company/performance-indicators/product/#regular-performance-indicators) をご確認ください。最新の Verify ステージ ci_pipeline データは [Tableau ダッシュボード](https://10az.online.tableau.com/t/gitlab/views/VerifyPerformanceIndicatorDashboard/VerifyPerformanceIndicatorHub) でご確認いただけます。
+Performance Indicator (PI) を使って提供する価値を測定し、進捗を追跡します。
+[Pipeline Execution グループの現在の PI](https://internal.gitlab.com/handbook/company/performance-indicators/product/#verify-ci-verify-runner-count-of-pipelines-triggered-by-unique-users) は `ci_pipelines をトリガーするユニークユーザー数` です。詳細については、[プロダクトチームの Performance Indicator](https://internal.gitlab.com/handbook/company/performance-indicators/product/#regular-performance-indicators) をご覧ください。最新の Verify ステージの ci_pipeline データを確認するには、[Tableau ダッシュボード](https://10az.online.tableau.com/t/gitlab/views/VerifyPerformanceIndicatorDashboard/VerifyPerformanceIndicatorHub) をご覧ください。
 
 ### 利用ファネル
 
-AARRR フレームワーク（Acquisition、Activation、Retention、Revenue、Referral）に基づき、このファネルは GitLab CI を利用する顧客のジャーニーを表しています。ファネルの各ステートは行動を測定するメトリクスで定義されています。プロダクトマネージャーは、望ましいアクションを促す機能を優先させるため、ファネルのさまざまなステートに注目することができます。
+AARRR フレームワーク (Acquisition、Activation、Retention、Revenue、Referral) に基づき、このファネルは GitLab CI の利用におけるカスタマージャーニーを表しています。ファネルの各状態には、行動を測定するためのメトリクスが定義されています。プロダクトマネージャーは、望ましいアクションを促進する機能の優先順位を付けるため、ファネル内のさまざまな状態のいずれかに焦点を当てることができます。
 
 ```mermaid
 classDiagram
@@ -78,12 +79,12 @@ classDiagram
     Referral: Measurement (Total count of Pipelines page views from social media))
 ```
 
-### コアドメイン
+### コアドメイン {#core-domain}
 
 | ドメイン | Issue |
 | ------ | ------ |
-| パイプライン処理：パイプライン、ステージ、ジョブの状態遷移を担うプロセス | [~pipeline processing](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=pipeline%20processing&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
-| Rails-Runner 間通信：ジョブのキューイング、API エンドポイント、および Runner によって・Runner のために実行される操作に関連する基盤機能 |  |
+| Pipeline 処理: パイプライン、ステージ、ジョブの遷移を担当するプロセス。 | [~pipeline processing](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=pipeline%20processing&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
+| Rails-Runner 通信: ジョブのキューイング、API エンドポイント、および Runner によって実行される、または Runner のために実行される操作に関連する基盤機能。 |  |
 
 #### Continuous Integration ドメイン
 
@@ -92,147 +93,148 @@ classDiagram
 | Continuous Integration および Deployment 管理エリア設定 | [~CI/CD Settings](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=CI%2FCD%20Settings&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
 | グループのリポジトリ分析 | [~CI reports](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=CI%20reports&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
 | GitLab CI/CD アーティファクトレポートタイプ | [~CI reports](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=CI%20reports&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
-| ユニットテストレポート | [~testing::code testing](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=testing%3A%3Acode%20testing&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
-| GitLab CI/CD でテストし、マージリクエストでレポートを生成 |  |
+| 単体テストレポート | [~testing::code testing](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=testing%3A%3Acode%20testing&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
+| GitLab CI/CD でテストし、マージリクエストでレポートを生成する |  |
 | 負荷パフォーマンステスト | [~testing::load performance](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=testing%3A%3Aload%20performance&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
 | メトリクスレポート |   |
-| テストカバレッジの可視化 | [~testing::coverage](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=testing%3A%3Acoverage&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
+| テストカバレッジ可視化 | [~testing::coverage](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=testing%3A%3Acoverage&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
 | ブラウザパフォーマンステスト | [~testing::browser performance](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=testing%3A%3Abrowser%20performance&first_page_size=20) |
-| フェイルファストテスト |   |
+| Fail Fast テスト |   |
 | アクセシビリティテスト | [~testing::accessibility](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=testing%3A%3Aaccessibility&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
 | ユーザビリティテスト | [~testing::usability](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=testing%3A%3Ausability&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
-| レビューアプリ（廃止予定） | [~testing::review apps](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=testing%3A%3Areview%20apps&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
-| ビジュアルレビューツール（廃止予定） | [~testing::visual review tool](https://gitlab.com/gitlab-org/gitlab/-/issues/?label_name%5B%5D=testing%3A%3Avisual%20review%20tool) |
+| Review apps (非推奨) | [~testing::review apps](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=testing%3A%3Areview%20apps&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20) |
+| ビジュアルレビューツール (非推奨) | [~testing::visual review tool](https://gitlab.com/gitlab-org/gitlab/-/issues/?label_name%5B%5D=testing%3A%3Avisual%20review%20tool) |
 | スケジュールパイプライン | [~pipeline schedules](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=pipeline%20schedules&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20)  |
-| パイプライン効率 | [~ci::scaling](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=ci%3A%3Ascaling&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20)  |
-| Docker を使ったイメージビルド |   |
-| 外部 SCM および CI インテグレーション |   |
-| 外部パイプライン検証 |   |
-| パイプライン作成のレートリミット | [~Category:Continuous Integration + ~Eng-Inter-Dept::Rate Limits](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=Category%3AContinuous%20Integration&label_name%5B%5D=group%3A%3Apipeline%20execution&label_name%5B%5D=Eng-Inter-Dept%3A%3ARate%20Limits&first_page_size=20)  |
+| パイプラインの効率性 | [~ci::scaling](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=ci%3A%3Ascaling&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20)  |
+| Docker を使ったイメージのビルド |   |
+| 外部 SCM および CI 連携 |   |
+| 外部パイプラインバリデーション |   |
+| パイプライン作成のレート制限 | [~Category:Continuous Integration + ~Eng-Inter-Dept::Rate Limits](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=Category%3AContinuous%20Integration&label_name%5B%5D=group%3A%3Apipeline%20execution&label_name%5B%5D=Eng-Inter-Dept%3A%3ARate%20Limits&first_page_size=20)  |
 | ジョブログ |   |
 | ジョブログアーティファクト |   |
-| マージトレイン | [~Category:Merge Trains](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=group%3A%3Apipeline%20execution&label_name%5B%5D=Category%3AMerge%20Trains&first_page_size=20)  |
+| Merge Trains | [~Category:Merge Trains](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=milestone_due_desc&state=opened&label_name%5B%5D=group%3A%3Apipeline%20execution&label_name%5B%5D=Category%3AMerge%20Trains&first_page_size=20)  |
 
-Pipeline Execution グループのドメインに含まれないもの：
+Pipeline Execution グループのドメインに含まれないもの:
 
-- シークレット管理（[方向性ページ](https://about.gitlab.com/direction/software_supply_chain_security/pipeline_security/secrets_management/)を参照）
-- Pipeline Authoring（[方向性ページ](https://about.gitlab.com/direction/verify/pipeline_composition/)を参照）
-- パイプラインのコンプライアンス（[方向性ページ](https://about.gitlab.com/direction/software_supply_chain_security/compliance/compliance-management/)を参照）
-- [ジョブアーティファクト：アーティファクトのストレージと管理は多くの CI/CD 機能のゲートウェイ](https://about.gitlab.com/direction/verify/)
+- シークレット管理。[direction page](https://about.gitlab.com/direction/software_supply_chain_security/pipeline_security/secrets_management/) を参照。
+- Pipeline オーサリング。[direction page](https://about.gitlab.com/direction/verify/pipeline_composition/) を参照。
+- パイプラインにおけるコンプライアンス。[direction page](https://about.gitlab.com/direction/software_supply_chain_security/compliance/compliance-management/) を参照。
+- [ジョブアーティファクト: アーティファクトのストレージと管理は多くの CI/CD 機能のゲートウェイです](https://about.gitlab.com/direction/verify/)
 
 ---
 
-## テクニカルロードマップ
+## 技術ロードマップ
 
 ### FY25
 
-これらは年間のハイレベルなエンジニアリング主導の目標です。私たちのすべての目標と同様に、野心的であり変更される可能性があります。
+これらは、私たちの 1 年間の高レベルなエンジニアリング主導の目標です。私たちのどの目標とも同様、これらは野心的であり変更される可能性があります。
 
 #### パフォーマンス
 
 ##### パイプライン速度
 
-**目標：**
+**目標:**
 
-- パイプライン速度を改善するために何ができるかを理解する
-- 少なくとも 1 つの大きな改善をプロトタイプ化する
+- パイプライン速度を向上させるために何ができるかを理解する
+- 大きな改善のための少なくとも 1 つのプロトタイプを作成する
 
-##### 長期に渡るパイプラインステータス Issue の修正
+##### 長年の Pipeline ステータス Issue の修正
 
-**目標：**
+**目標:**
 
-- 既存のパイプラインステータス Issue とコードを深く調査する
-  - 多数の Issue に対処するための体系的な変更の有無を判断し、実施する
+- 既存のパイプラインステータスの Issue とコードに深く踏み込む
+  - 多くの Issue に対処するための体系的変更があるか判断し、変更を行う
 
 #### スケーラビリティ
 
 ##### Sidekiq
 
-**目標：**
+**目標:**
 
-- バックグラウンドワーカーのパフォーマンスを改善し、信頼性とスケーラビリティを向上させる
+- 信頼性とスケーラビリティを高めるため、バックグラウンドワーカーのパフォーマンスを向上させる
 
-##### ジョブ検索機能の改善サポート
+##### ジョブ検索機能の強化サポート
 
-**目標：**
+**目標:**
 
-- ジョブの追加検索とフィルタリング機能をサポートする能力を強化する
+- ジョブに対する追加の検索とフィルタリング機能をサポートする能力を向上させる
 
 ##### 運用コストの削減
 
-**目標：**
+**目標:**
 
 - データ保持計画への貢献
-- ジョブログの圧縮によるコスト削減の可能性を特定する - [スパイク](https://gitlab.com/gitlab-org/gitlab/-/issues/390114)
+- ジョブログの圧縮による潜在的なコスト削減を特定する - [Spike](https://gitlab.com/gitlab-org/gitlab/-/issues/390114)
   - 結果に応じて、圧縮を実装する作業をスケジュールする
 
-#### 開発者効率
+#### 開発者の効率
 
 ##### 技術的負債の削減
 
-**目標：**
+**目標:**
 
-- コードベース内の技術的負債全体を削減する
-- フォローアップ Issue を迅速にスケジュールして長期的な負債の蓄積を回避する
+- コードベース内に存在する全体的な技術的負債を削減する
+- フォローアップ Issue を迅速にスケジュールすることで、長期的な負債のさらなる蓄積を回避する
 
-##### フロントエンドの Vue へのリファクタリング
+##### Vue へのフロントエンドリファクタリング
 
-**目標：**
+**目標:**
 
 - パイプラインサブスクリプションページの Vue へのリファクタリングを完了する
-- リファクタリングすべき追加エリアを特定する [Epic](https://gitlab.com/groups/gitlab-org/-/epics/12836)
+- リファクタリングすべき追加の領域を特定する [Epic](https://gitlab.com/groups/gitlab-org/-/epics/12836)
 
 ##### パイプラインレンダリング
 
-**目標：**
+**目標:**
 
-- パイプラインページのレンダリングのパフォーマンス改善を完了する。この機能は開発者が頻繁に使用しており、パフォーマンスが低いと生産性に影響します。
+- パイプラインページレンダリングのパフォーマンス改善を完了する。この機能は開発者によって頻繁に使用されており、パフォーマンスが悪いと生産性に影響します。
 
-##### マージトレイン
+##### Merge Trains
 
-**目標：**
+**目標:**
 
-- マージトレインを GitLab プロジェクトで効果的に使用できる程度にスケーラブルな状態にする。
+- Merge Trains を、GitLab プロジェクトで効果的に利用するのに十分なほどスケーラブルな状態にする。
 
 ---
 
 ## チームメンバー
 
+{{< team-by-manager-role role="Engineering Manager(.*)Verify:Pipeline Execution" >}}
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/verify/pipeline-execution/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+### 追加のチームの責務
 
-
-### チームの追加責任
-
-これらの役割・責任は、チームメンバーに持ち回りで割り当てられます。これにより、チーム全体に負荷を分散し、特定の個人がこれらのタスクの唯一の担当者になることで過度な負担を抱えないようにします。
+これらのロール／責務は、負荷をチーム全体に分散し、これらのいずれかのタスクの「頼られる」人がたった 1 人となって過度の負担を負うことのないように、ローテーションでチームメンバーにアサインされます。
 
 #### フロントラインレスポンダー
 
-このチームメンバーは、マイルストーン期間中に以下の責任を持ちます（優先順位順）。~Deliverable の割り当てはありません：
+このチームメンバーは、マイルストーンに対して以下の責任を (優先順位順に) 持ち、~Deliverable のアイテムをアサインされません。
 
-1. Pipeline Execution の broken-master アラートへの対応。
+1. Pipeline Execution の broken-master アラートに対応する。
 1. サポートからの受信ヘルプリクエストの DRI。
-    1. 既存のヘルプリクエストは、現在の DRI の判断によって引き継がれる場合があります。
-    1. リクエストの対応には必要に応じて他のメンバーを引き込めますが、リクエストが確実に対処されるよう DRI として残ります。
-1. 別のチームメンバーを選ぶ明確な理由がない限り、顧客エスカレーションに最初に引き込まれる開発者。
-1. 【任意】追加チームメンバーとヘルプリクエストに取り組むための週次スウォームミーティングの企画・ホスト。
-1. `#pipeline-execution` および `#s-verify`（Pipeline Execution に関連する場合）の Slack で受信した質問への対応。
-    1. 必要に応じて他のチームメンバーに転送できます。重要なのは私たちが応答力を持つことを確保することです。
-1. エラーバジェットの超過に関する調査。
-1. 追加メンテナンスタスク（推奨優先順位順）：
-    1. 時間の許す範囲でフレーキーなテストに対処する。
-    1. 時間の許す範囲で長期的なメンテナンス Issue に取り組む。
-        1. 例：対処が必要な非常に古いフィーチャーフラグのリストがあります。
-    1. ~"cicd::planning" の ~"type::maintenance" Issue の精査（時間の許す範囲で）。
-    1. ~"cicd::active" のその他の ~"type::maintenance" Issue（時間の許す範囲で）。
+    1. 既存のヘルプリクエストは、既存の DRI の裁量により彼らに移管される場合があります。
+    1. リクエストに対処するために必要に応じて他のメンバーを呼び込むのは自由ですが、リクエストが対処されることを確実にする DRI のままです。
+1. お客様のエスカレーションに最初に投入される開発者。明らかに別のチームメンバーを選ぶ理由がない限り。
+1. [オプション] 追加のチームメンバーとともにヘルプリクエストに取り組む週次スウォームミーティングを企画・主催する。
+1. Slack の `#pipeline-execution` および `#s-verify` (Pipeline Execution に関連する場合) で寄せられる質問に対応する。
+    1. 必要に応じて他のチームメンバーにリダイレクトすることができます。重要なのは、私たちが応答していることを確保することです。
+1. エラーバジェットの超過を調査する。
+1. 追加のメンテナンスタスク (推奨される優先順位順):
+    1. 時間が許す範囲で flaky テストに対処する。
+    1. 時間が許す範囲で長期的なメンテナンス Issue に取り組む。
+        1. 例: 対処が必要な非常に古い機能フラグの長いリスト。
+    1. 時間が許す範囲で ~"cicd::planning" 内の ~"type::maintenance" Issue のリファインメント。
+    1. 時間が許す範囲で ~"cicd::active" 内のその他の ~"type::maintenance" Issue。
 
-上記のタスクのいずれかについて、チームメンバーの勤務時間外に緊急事態が発生した場合、他のチームメンバーが最初に対応する必要があります。そのマイルストーンのフロントラインレスポンダーは、自分の勤務時間中にそのような Issue をフォローアップする責任があります。マイルストーン期間中に 24 時間 365 日オンコールであることは期待されません。マイルストーンの終わりに、まだ進行中の Issue は次のファーストレスポンダーに引き継ぐ場合があります。元のチームメンバーが引き続き DRI であり続けることが理にかなっている場合は、そのようにすることもできます。
+上記のいずれかのタスクについて、緊急の Issue がチームメンバーの労働時間外に発生した場合、他のチームメンバーが最初の対応者になる必要があります。
+マイルストーンのフロントラインレスポンダーは、自分の労働時間中にそうした Issue をフォローアップする責任を持ちます。
+彼らはマイルストーン中に 24 時間 365 日オンコールであることが期待されているわけではありません。
+マイルストーンの終わりに、まだ進行中の Issue は、次回のフロントラインレスポンダーに移管される場合があります。元のチームメンバーが引き続き DRI のままであることが理にかなっている場合、それも可能です。
 
 #### コミュニティコーディネーター
 
-このチームメンバーは、~Deliverable タスクに加えてマイルストーン期間中に以下の責任を持ちます：
+このチームメンバーは、~Deliverable タスクに加えて、マイルストーンに対して以下の責任を持ちます。
 
-1. 週次の [`Verify Pipeline teams: Community contributions report`](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=Community%20contribution&label_name%5B%5D=devops%3A%3Averify&first_page_size=20) で特定された新しいコミュニティコントリビューションを一次確認し、正しい方向に進んでいるかを確認します。
+1. 週次の [`Verify Pipeline teams: Community contributions report`](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=Community%20contribution&label_name%5B%5D=devops%3A%3Averify&first_page_size=20) で特定された新しいコミュニティコントリビューションをファーストパスで確認し、正しい方向に進んでいるように見えるかを確認する。
 
 #### ローテーションスケジュール
 
@@ -243,575 +245,591 @@ Pipeline Execution グループのドメインに含まれないもの：
 
 ## 安定したカウンターパート
 
-安定したカウンターパートは、Pipeline Execution [プロダクトカテゴリリスト](/handbook/product/categories/#pipeline-execution-group) をご確認ください。
+私たちの安定したカウンターパートを見つけるには、Pipeline Execution の [プロダクトカテゴリ一覧](/handbook/product/categories/#pipeline-execution-group) を参照してください。
 
 ## テクノロジー
 
-ほとんどの GitLab バックエンドチームと同様に、メインの [GitLab CE アプリ](https://gitlab.com/gitlab-org/gitlab-ce) の Rails で多くの時間を費やしますが、[GitLab Runner](https://gitlab.com/gitlab-org/gitlab-runner) が書かれている言語である Go でも多くの作業を行います。Docker と Kubernetes の知識もチームで役立ちます。
+ほとんどの GitLab バックエンドチームと同様、私たちは Rails のメイン [GitLab CE アプリ](https://gitlab.com/gitlab-org/gitlab-ce) で多くの時間を過ごしますが、[GitLab Runner](https://gitlab.com/gitlab-org/gitlab-runner) が書かれている言語である Go でも多くの作業を行います。Docker と Kubernetes に親しんでいることも、私たちのチームでは有用です。
 
-## 便利なリンク
+## 役立つリンク
 
-- [Issue トラッカー：`~group::pipeline execution`](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=group%3A%3Apipeline+execution&scope=all)
-- [Slack チャンネル：`#g_pipeline-execution`](https://gitlab.slack.com/archives/CPCJ8CCCX)
-- [GitLab unfiltered：Pipeline Execution グループ](https://www.youtube.com/playlist?list=PL05JrBw4t0KpsVi6PG4PvDaVM8lKmB6lV)
+- [Issue トラッカー: `~group::pipeline execution`](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=group%3A%3Apipeline+execution&scope=all)
+- [Slack チャンネル: `#g_pipeline-execution`](https://gitlab.slack.com/archives/CPCJ8CCCX)
+- [GitLab unfiltered: Pipeline Execution グループ](https://www.youtube.com/playlist?list=PL05JrBw4t0KpsVi6PG4PvDaVM8lKmB6lV)
 - [Grafana ダッシュボード](https://dashboards.gitlab.net/d/stage-groups-pipeline_execution/stage-groups-group-dashboard-verify-pipeline-execution?orgId=1)
-- [Tableau ダッシュボード（移行予定）](https://gitlab.com/gitlab-data/tableau/-/issues/208)
-- [次回プランニング Issue](https://gitlab.com/gitlab-org/ci-cd/pipeline-execution/-/issues/?sort=popularity&state=opened&label_name%5B%5D=Planning%20Issue&first_page_size=20)
-- [Pipeline Execution へのヘルプリクエスト](https://gitlab.com/gitlab-com/ops-sub-department/section-ops-request-for-help/-/issues/?state=opened&label_name%5B%5D=Help%20group%3A%3Apipeline%20execution)
-- [現マイルストーンのレトロ](https://gitlab.com/gl-retrospectives/verify-stage/pipeline-execution/-/issues?search=Pipeline+Execution+retrospective&sort=popularity&state=opened)
-- [重み付け必要なボード](https://gitlab.com/groups/gitlab-org/-/boards/4178322)
-- [現マイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/1372896)
+- [Tableau ダッシュボード (移行予定)](https://gitlab.com/gitlab-data/tableau/-/issues/208)
+- [次回の計画 Issue](https://gitlab.com/gitlab-org/ci-cd/pipeline-execution/-/issues/?sort=popularity&state=opened&label_name%5B%5D=Planning%20Issue&first_page_size=20)
+- [Pipeline execution のヘルプリクエスト](https://gitlab.com/gitlab-com/ops-sub-department/section-ops-request-for-help/-/issues/?state=opened&label_name%5B%5D=Help%20group%3A%3Apipeline%20execution)
+- [現在のマイルストーン振り返り](https://gitlab.com/gl-retrospectives/verify-stage/pipeline-execution/-/issues?search=Pipeline+Execution+retrospective&sort=popularity&state=opened)
+- [Needs weight ボード](https://gitlab.com/groups/gitlab-org/-/boards/4178322)
+- [現在のマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/1372896)
 
 ### 開発ドキュメント
 
-チームに新しく参加した方にとって、プロダクトやテクノロジーについて詳しく学ぶのに役立つリンクです。
+チームに新しく加わった人にとって、これらのリンクは製品とテクノロジーについて学ぶのに役立つかもしれません。
 
 - [CI/CD 開発ドキュメント](https://docs.gitlab.com/ee/development/cicd/index.html)
 
-### エンジニアリングの概要
+### エンジニアリング概要
 
-- [CI バックエンドアーキテクチャウォークスルー - 2020年5月](https://www.youtube.com/watch?v=ew4BwohS5OY)
-- [フロントエンド CI プロダクト / コードベースの概要 - 2020年6月](https://www.youtube.com/watch?v=7CUd7aAUiWo)
+- [CI バックエンドアーキテクチャウォークスルー - 2020 年 5 月](https://www.youtube.com/watch?v=ew4BwohS5OY)
+- [Frontend CI 製品 / コードベース概要 - 2020 年 6 月](https://www.youtube.com/watch?v=7CUd7aAUiWo)
 
 ## ダッシュボード
 
-[内部ハンドブックページ](https://internal.gitlab.com/handbook/engineering/core-development/ci/verify/pipeline-execution)をご覧ください。
+[内部ハンドブックページ](https://internal.gitlab.com/handbook/engineering/core-development/ci/verify/pipeline-execution) を参照してください。
 
-### クロスファンクショナルな優先順位付け
+### 部門横断的な優先順位付け
 
-チームは [`#g_pipeline_execution_quad`](https://gitlab.slack.com/archives/C03KK284L23) Slack チャンネルを使用して、クロスファンクショナルな優先順位付けや、クォッドが協力する必要があるその他のトピックについて議論しています。
+チームは [`#g_pipeline_execution_quad`](https://gitlab.slack.com/archives/C03KK284L23) Slack チャンネルを使って、quad で協力する必要のあるその他のトピックに加えて、部門横断的な優先順位付けを議論します。
 
-## 作業の進め方
+## 私たちの働き方
 
-[Pipeline Execution ワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/1372896) は、現在および今後の作業の唯一の情報源です。
+[Pipeline Execution Workflow ボード](https://gitlab.com/groups/gitlab-org/-/boards/1372896) は、現在および今後の作業の信頼できる情報源です。
 
-### プランニング
+### 計画 {#planning}
 
-プランニングタイムラインは [GitLab プロダクト開発タイムライン](/handbook/engineering/workflow/#product-development-timeline) に従います。
+私たちの計画タイムラインは [GitLab プロダクト開発タイムライン](/handbook/engineering/workflow/#product-development-timeline) に従います。
 
-`Engineering Time` に関する情報は [エンジニアリングイニシアティブ](/handbook/engineering/#engineering-initiatives) をご覧ください。
+`Engineering Time` についての情報は、[Engineering Initiatives](/handbook/engineering/#engineering-initiatives) を参照してください。
 
-**PM**（必要に応じて **EM** の助けを借りて）は、[`Candidate::x.x` かつ `Engineering Time` でない Issue のリスト](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=candidate%3A%3A17.x&label_name%5B%5D=group%3A%3Apipeline%20execution&not%5Blabel_name%5D%5B%5D=Engineering%20Time&first_page_size=20) をキュレーションし、いつでも適切な数の高優先度 Issue から選択できるようにします。探しているマイルストーンの Issue がない場合は、将来のマイルストーンから選択できます。
+**PM** (必要に応じて **EM** の助けを得て) は、[`Candidate::x.x` + not `Engineering Time` のリスト](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=candidate%3A%3A17.x&label_name%5B%5D=group%3A%3Apipeline%20execution&not%5Blabel_name%5D%5B%5D=Engineering%20Time&first_page_size=20) をキュレーションし、いつでも合理的な数の優先度の高い Issue が選択肢として存在するようにします。探しているマイルストーンに Issue がない場合は、将来のマイルストーンから選択できます。
 
-**EM**（必要に応じて **PM** の助けを借りて）は、[`Engineering Time` かつ `Candidate::x.x` の Issue のリスト](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=candidate%3A%3A17.x&label_name%5B%5D=group%3A%3Apipeline%20execution&label_name%5B%5D=Engineering%20Time&first_page_size=20) を管理し、いつでも適切な数の高優先度 Issue から選択できるようにします。
+**EM** (必要に応じて **PM** の助けを得て) は、[`Engineering Time` + `Candidate::x.x` のリスト](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=candidate%3A%3A17.x&label_name%5B%5D=group%3A%3Apipeline%20execution&label_name%5B%5D=Engineering%20Time&first_page_size=20) Issue を維持し、いつでも合理的な数の優先度の高い Issue が選択肢として存在するようにします。探しているマイルストーンに Issue がない場合は、将来のマイルストーンから選択できます。
 
-現在のマイルストーン終了の 2 週間前の金曜日までに、各**エンジニア**は：
+現在のマイルストーン終了の 2 週間前の金曜日までに、各 **エンジニア** は次のことを行います。
 
 - 現在の Issue のマイルストーンが、最新の知識に基づいて完了すると思われるマイルストーンを反映していることを確認する
-  - **注：** 完了しない現在のマイルストーンの進行中の Issue は、条件に合致する限り、新しい Issue を選択する代わりに使用できます
-    - 進行中の Issue がまだ優先事項かどうか不確かな場合は、EM と PM に確認してください
-    - 必要に応じて ~Deliverable または ~Stretch ラベルを更新してください
-- 次のマイルストーンで取り組む [`Candidate::x.x` かつ `Engineering Time` でない Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&not%5Blabel_name%5D%5B%5D=Engineering%20Time&label_name%5B%5D=group%3A%3Apipeline%20execution&label_name%5B%5D=candidate%3A%3A17.x&first_page_size=20) を 1 件選択する。~priority::1 の Issue から始め、次に ~priority::2、~priority::3
-  - 自分をアサインする
-  - ウェイトが設定されていることを確認する
-  - 作業が完了すると予想するマイルストーンにマイルストーンを設定する
-    - 次のマイルストーンでない場合、できれば次のマイルストーンで完了できるものを含む複数の Issue に分割する
-      - 元の Issue のコメントで EM/PM に通知し、残りの Issue が適切に計画されていることを確認する
-  - `Deliverable` ラベルを追加する
-- 修正する [`flaky-test` Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=group%3A%3Apipeline%20execution&label_name%5B%5D=failure%3A%3Aflaky-test&first_page_size=20) を 1 件選択する
-  - 同じ Issue が原因と明らかに見られる複数の Issue があるかどうかを確認し、これらを関連リンクするかつ/または自分にアサインする
-  - テストがいつ修正されるかを示す適切なマイルストーンを設定する
-    - タイムラインが不確かな場合、マイルストーンへのコミットが快適になるまで設定を遅らせることができます
-- [今後の作業](https://gitlab.com/groups/gitlab-org/-/boards/4178322) について重み付けと精査を行うアイテムを 1 件選択する
-  - このアイテムを自分にアサインする。精査プロセスが完了したらアサインを外せます
-    - 精査目的のみのアサインであることを示すコメントを追加することで混乱を避けることもできます（完全に任意）
-  - Issue にマイルストーンを設定しないでください
-  - 精査にかなりの労力が必要な場合は、[精査「~spike」Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Pipeline%20Execution%20Refinement%20Spike) を作成します（[スパイク](#spikes) および [Issue の精査と重み付けのステップ](#steps-for-refining-and-weighting-issues) も参照）
-    - スパイクを作成したことを EM にコメントで通知してください
-    - これをマイルストーンの `Engineering Time` アイテムとして使用してください
-- [コミュニティコントリビューション](https://gitlab.com/groups/gitlab-org/-/boards/4178322) の重み付けと精査を行うアイテムを 1 件選択する
-  - このアイテムを自分にアサインする。精査プロセスが完了したらアサインを外せます
-    - 精査目的のみのアサインであることを示すコメントを追加することで混乱を避けることもできます（完全に任意）
-  - Issue にマイルストーンを設定しないでください
-  - 精査にかなりの労力が必要な場合は、[精査「~spike」Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Pipeline%20Execution%20Refinement%20Spike) を作成します（[スパイク](#spikes) および [Issue の精査と重み付けのステップ](#steps-for-refining-and-weighting-issues) も参照）
-    - スパイクを作成したことを EM にコメントで通知してください
-    - これをマイルストーンの `Engineering Time` アイテムとして使用してください
-- 修正する [`Engineering Time` かつ `Candidate::x.x` の Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=candidate%3A%3A17.x&label_name%5B%5D=group%3A%3Apipeline%20execution&label_name%5B%5D=Engineering%20Time&first_page_size=20) を 1 件選択する
-- 自分をアサインする
-  - ウェイトが設定されていることを確認する
-  - 作業が完了すると予想するマイルストーンにマイルストーンを設定する
-    - 次のマイルストーンでない場合、できれば次のマイルストーンで完了できるものを含む複数の Issue に分割する
-      - 元の Issue のコメントで EM/PM に通知し、残りの Issue が適切に計画されていることを確認する
-  - `Deliverable` または `Stretch` ラベルを追加する
-- マイルストーンプランニング Issue にコメントを追加して、このプランニング作業が完了したことと選択した Issue を示す
+  - **注:** 現在のマイルストーンで完了しない進行中の Issue は、基準が一致する限り、新しい Issue を選択する代わりに使用できます
+    - 進行中の Issue が依然として優先事項かどうかわからない場合は、EM と PM に確認してください。
+    - 必要に応じて ~Deliverable または ~Stretch ラベルを更新する
+- 次のマイルストーンで取り組む 1 つの [`Candidate::x.x` + not `Engineering Time` Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&not%5Blabel_name%5D%5B%5D=Engineering%20Time&label_name%5B%5D=group%3A%3Apipeline%20execution&label_name%5B%5D=candidate%3A%3A17.x&first_page_size=20) を選択する。最初に ~priority::1 Issue から始め、次に ~priority::2 と ~priority::3 と続ける
+  - 自分自身をアサインする
+  - 重みが設定されていることを確認する
+  - 作業が完了すると予想されるマイルストーンに従ってマイルストーンを設定する
+    - 次のマイルストーンでない場合、Issue を複数の Issue に分割し、可能であればそのうちの 1 つを次のマイルストーンで完了できるようにする。
+      - 元の Issue にコメントで EM/PM にこのことを知らせ、残りの Issue が適切に計画されることを確実にしてください。
+  - `Deliverable` ラベルを追加する。
+- 修正する 1 つの [`flaky-test` Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=group%3A%3Apipeline%20execution&label_name%5B%5D=failure%3A%3Aflaky-test&first_page_size=20) を選択する。
+  - 同じ問題によって明らかに引き起こされている複数の Issue があるかをすばやく確認し、それらを関連としてリンクし、もしくは自分にアサインします。
+  - テストが修正されるタイミングを示すために、マイルストーンを適切に設定する。
+    - タイムラインがわからない場合、マイルストーンへのコミットに納得できるようになるまでマイルストーンの設定を遅らせることができます。
+- [今後の作業](https://gitlab.com/groups/gitlab-org/-/boards/4178322) のために重み付けとリファインメントを行う 1 つのアイテムを選択する
+  - このアイテムを自分自身にアサインします。リファインメントプロセスが完了したら、アサインを外してかまいません。
+    - 混乱を避けるために、リファインメント目的のみで自分にアサインしていることを示すコメントを追加することを推奨します。これは完全に任意です。
+  - Issue にマイルストーンを設定しない。
+  - リファインメントにかなりの労力が必要になりそうな場合は、リファインメント "~spike" Issue を作成する ([Spikes](#spikes) と [Issue のリファインメントと重み付けの手順](#steps-for-refining-and-weighting-issues) も参照)
+    - スパイクのコメントで **EM** にタグを付けて、このスパイクを作成したことを知らせます。
+    - これをマイルストーンの `Engineering Time` アイテムとして使用する。
+- [コミュニティコントリビューション](https://gitlab.com/groups/gitlab-org/-/boards/4178322) のために重み付けとリファインメントを行う 1 つのアイテムを選択する
+  - このアイテムを自分自身にアサインします。リファインメントプロセスが完了したら、アサインを外してかまいません。
+    - 混乱を避けるために、リファインメント目的のみで自分にアサインしていることを示すコメントを追加することを推奨します。これは完全に任意です。
+  - Issue にマイルストーンを設定しない。
+  - リファインメントにかなりの労力が必要になりそうな場合は、リファインメント "~spike" Issue を作成する ([Spikes](#spikes) と [Issue のリファインメントと重み付けの手順](#steps-for-refining-and-weighting-issues) も参照)
+    - スパイクのコメントで **EM** にタグを付けて、このスパイクを作成したことを知らせます。
+    - これをマイルストーンの `Engineering Time` アイテムとして使用する。
+- 修正する 1 つの [`Engineering Time` + `Candidate::x.x` Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=candidate%3A%3A17.x&label_name%5B%5D=group%3A%3Apipeline%20execution&label_name%5B%5D=Engineering%20Time&first_page_size=20) を選択する。
+- 自分にアサインする
+  - 重みが設定されていることを確認する
+  - 作業が完了すると予想されるマイルストーンに従ってマイルストーンを設定する
+    - 次のマイルストーンでない場合、Issue を複数の Issue に分割し、可能であればそのうちの 1 つを次のマイルストーンで完了できるようにする。
+      - 元の Issue にコメントで EM/PM にこのことを知らせ、残りの Issue が適切に計画されることを確実にしてください。
+  - `Deliverable` ラベルまたは `Stretch` ラベルを追加する。
+- マイルストーン計画 Issue にコメントを追加し、この計画作業を完了したことと選択した Issue を示す。
 
-マイルストーン全体を通じて、**エンジニア**がタスクを完了して余裕がある場合：
+マイルストーン全体を通じて、**エンジニア** がタスクを完了し、追加のキャパシティがある場合:
 
-- [次に何を取り組むか](#what-do-i-work-on-next) を確認する
+- [What do I work on next](#what-do-i-work-on-next) を確認する
 
-- マイルストーン終了週の月曜日までに：
-  - プランニング Issue が確定し、**PM** はマネージャー、SET/QEM、プロダクトデザイン、エンジニア、EM にレビューとフィードバックのためにタグ付けします
+- マイルストーン終了の週の月曜日までに:
+  - 計画 Issue が確定し、**PM** がレビューとフィードバックのためにマネージャー、SET/QEM、Product Designer、エンジニア、EM をタグ付けする。
 
-- マイルストーン終了の金曜日までに：
-  - **エンジニア**は計画された作業の変更についてプランニング Issue にコメントします
-  - **PM** は `~direction` および `Deliverable` Issue をフィーチャーした月次キックオフビデオを完成させます
+- マイルストーン終了の金曜日までに:
+  - **エンジニア** は、計画した作業の変更について計画 Issue にコメントする。
+  - **PM** は、`~direction` および `Deliverable` Issue を取り上げた月次キックオフビデオを完成させる
 
-- リリース週の月曜日までに：
-  - **EM** はマイルストーン Issue のラベルが正しく設定されていることを確認します
+- リリース週の月曜日までに:
+  - **EM** は、すべてのマイルストーン Issue に対してラベルが正しく設定されていることを確認する
 
-**注：** **EM** と **PM** は [カスタマーリザルト](/handbook/values/#results) を計画よりも優先させるため、チームのコミットメントを変更し、次のマイルストーンの作業をスケジュールする必要があるかもしれません。
+**注:** [Customer Results](/handbook/values/#results) を計画していたものより重視するため、**EM** と **PM** はチームのコミットメントを修正し、次回のマイルストーンに向けた作業をスケジュールし直す必要がある場合があります。
 
-#### エンジニアによる Issue の精査方法
+#### エンジニアリングが Issue をリファインする方法 {#how-engineering-refines-issues}
 
-*補足：[Grooming より Refining（精査）の使用を推奨しています](/handbook/communication/top-misused-terms)*
+*余談: 私たちは [Grooming より Refining](/handbook/communication/top-misused-terms) を使用することを好みます*
 
-エンジニアは各マイルストーンで [`~needs weight` ボード](https://gitlab.com/groups/gitlab-org/-/boards/4178322) の Issue を精査・重み付けするために約 6 時間を割り当てることが期待されています。
+エンジニアは、各マイルストーンで [`~needs weight` ボード](https://gitlab.com/groups/gitlab-org/-/boards/4178322) 上の Issue のリファインメントと重み付けに約 6 時間を割り当てることが期待されています。
 
-Issue を精査する目的は、問題文が大まかな作業量の見積もりを提供するのに十分明確かを確認することです。精査中に**解決策の検証**を提供することは意図されていません。Issue の精査において、エンジニアは 1 Issue あたり最大 2 時間に活動をタイムボックスする必要があります。Issue が複雑でより多くの調査が必要な場合は、マイルストーン計画に確実に反映するため、精査「~spike」での努力を追跡する必要があります。「~spike」は元の Issue のブロッカーとしてリンクされ、期待される成果と取り組みのタイムボックスが指定される必要があります。元の Issue には「~workflow::blocked」のラベルを付けます。
+Issue のリファインメントの目的は、問題ステートメントが大まかな労力サイズの見積もりを提供できる程度に十分に明確であることを確保することです。意図はリファインメント中に **ソリューション検証** を提供することではありません。Issue をリファインする際、エンジニアは Issue ごとに 2 時間以下にタイムボックスする必要があります。Issue が複雑で、より多くの調査が必要な場合は、その労力をマイルストーン計画で考慮するために、リファインメント "~spike" でその労力を追跡する必要があります。"~spike" は元の Issue をブロックするとリンクし、期待される成果と労力に対するタイムボックスを指定する必要があります。元の Issue は "~workflow::blocked" としてラベル付けされる必要があります。
 
-エンジニアリングは[重みを決定するための以下のハンドブックガイダンス](#weighting-issues) を使用します。Issue に `~frontend ~backend ~Quality ~UX ~documentation` の追加レビューが必要な場合は、それぞれの個人にアサインされます。
+エンジニアリングは、[重み決定のためのハンドブックガイダンス](#weighting-issues) を使用します。Issue が追加の `~frontend ~backend ~Quality ~UX ~documentation` レビューを必要とする場合、それぞれの個人にアサインされます。
 
-##### Issue 精査のチェックリスト
+##### Issue リファインメントのチェックリスト
 
-1. Issue の説明に問題文があるか？
-1. Issue には、誰でも理解できるほど明確に期待される動作が説明されているか？
-1. Issue には、ステークホルダー（例：BE、FE、PM、UX、テクニカルライター）が明示されているか？
-1. Issue の説明に提案はあるか？ *ある場合：*
-    1. 提案は問題文に対応しているか？
-    1. 実装に意図しない副作用はあるか？
-1. Issue には実施すべき作業に一致する適切なラベリングがあるか？（例：バグ、機能、パフォーマンス）
+1. Issue の説明に問題ステートメントがありますか？
+1. Issue は、誰でも理解できるほど十分に説明された期待される動作を持っていますか？
+1. Issue はステークホルダー (BE、FE、PM、UX または Tech Writer など) を明示的に定義していますか？
+1. Issue の説明に提案がありますか？*もしあれば:*
+    1. 提案は問題ステートメントに対処していますか？
+    1. 実装に意図しない副作用はありますか？
+1. Issue には、実行すべきジョブに合わせた適切なラベル付けがされていますか？(例: バグ、機能、パフォーマンス)
 
-チームの誰でもこのチェックリストの質問に回答に貢献できますが、最終的な決定は PM と EM に委ねられます。
+このチェックリスト内の質問に答えることにチームの誰もが貢献できますが、最終決定は PM と EM 次第です。
 
-##### Issue の精査と重み付けのステップ
+##### Issue のリファインメントと重み付けの手順 {#steps-for-refining-and-weighting-issues}
 
-エンジニアは：
+エンジニアは:
 
-1. アサインされた Issue について上記のチェックリストを確認する。
-1. バックエンドの作業がフロントエンドの作業が開始できる前に完了する必要がある場合、バックエンド Issue をメイン Issue から分割する。
-1. [定義に基づいてウェイトを追加する](#weighting-issues)。
-1. `~workflow::` ラベルを適切なステータスに更新する。例：
-   - さらなるデザイン精査が必要な場合は ~"workflow::design" とし、デザイナーに通知する。
-   - 精査が完了してウェイトが適用された場合は ~"workflow::ready for development" とし、実装の準備ができて Issue の優先順位付けができることを示す
-   - より多くの調査・研究が必要な場合は ~"workflow::blocked" として、[精査「~spike」Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Pipeline%20Execution%20Refinement%20Spike) を作成し、PM と EM に連絡する
-1. 重み付けが完了した場合は「~needs weight」ラベルを削除する。
-1. Issue の精査と重み付けが完了したら、Issue からアサインを外す。
+1. 自分にアサインされた Issue について、上記のリファインメントチェックリストを実行する。
+1. フロントエンド作業を開始する前にバックエンド作業を完了する必要がある場合、メイン Issue からバックエンド Issue を分離する。
+1. [定義に基づく重み](#weighting-issues) を追加する。
+1. `~workflow::` ラベルを適切なステータスに更新する。例:
+   - ~"workflow::design" : さらなる設計のリファインメントが必要な場合。デザイナーに知らせる。
+   - ~"workflow::ready for development" : リファインメントが完了し重みが適用されたとき。実装の準備ができ、Issue の優先順位を付けられるようになったことを示す
+   - ~"workflow::blocked" : さらなる調査と研究が必要な場合。リファインメント "~spike" Issue を作成し、PM と EM にメンションする。
+1. 重み付けが完了したら "~needs weight" ラベルを削除する。
+1. Issue のリファインメントと重み付けが完了したら、Issue から自分のアサインを外す。
 
-##### Issue 精査のタイムボックス
+##### Issue リファインメントのタイムボックス
 
-Issue 1 件あたり 2 時間以上費やすべきでないため、以下に基づいてより多くの時間が必要かスパイクが必要かを再評価します：
+Issue ごとに 2 時間を超えてはならないため、以下に基づき、より多くの時間が必要か、スパイクが必要かを再評価する必要があります。
 
-1. Issue が GitLab.com でまだ再現可能かどうか。原因が明らかでない場合、まず良い第一歩は著者に明確化を求めることです。
-1. Issue に Support の関与があるかどうか。GitLab チームメンバーが作成した Issue かどうか、または ~customer ラベルがあるかどうかで判断できます。
-1. Issue が GitLab.com に関するものか、セルフマネージドインスタンスに関するものか。セルフマネージドインスタンスのみに影響する場合、代わりにヘルプリクエスト Issue を求めることができます。
-1. Issue のスコープと影響。1 人の顧客にのみ影響するか、複数の顧客に影響するか。
+1. Issue が GitLab.com でまだ再現可能か。原因が明らかでない場合、最初の良いステップは作成者に明確化を求めることです。
+1. Issue にサポートエンゲージメントが存在するか。Issue が GitLab チームメンバーによって作成されたか、~customer ラベルがあるかでわかります。
+1. Issue が GitLab.com 上にあるか、self-managed インスタンス上にあるか。これが self-managed インスタンスのみに影響する場合、代わりにヘルプリクエスト Issue を依頼できます。
+1. Issue のスコープと影響。1 人のお客様にのみ影響しているか、複数のお客様に存在しているか。
 
-一般的な良い規則として、P* レベルを確認します。P1 Issue は次のマイルストーンで即座に取り組まれるため、精査が必要です。P2 と P3 は、より多くの時間が必要な場合にスパイク Issue を分割できます。
+良い一般ルールは P* レベルを見ることです。P1 Issue は、次のマイルストーンですぐに作業されるためリファインされるべきです。P2 と P3 は、より多くの時間が必要な場合、スパイク Issue をスピンオフすることができます。
 
-#### Issue の重み付け
+#### Issue の重み付け {#weighting-issues}
 
-チームは [`~needs weight` ボード](https://gitlab.com/groups/gitlab-org/-/boards/4178322) を使用します。このボードには、今後のマイルストーンのために重み付けが必要な Issue が表示されます。条件は `~needs weight` と `~cicd::planning` が適用されていることです。月を通じて、チームメンバーは [`~needs weight` ボード](https://gitlab.com/groups/gitlab-org/-/boards/4178322) を確認し、自分自身に Issue をアサインします。優先順位は列で決まります：`Verify::P1`、`Verify::P2`、`Verify::P3`、次に「Open」。重み付けの緊急性が高い Issue がある場合は、優先レビューのためにチームメンバーが直接 Issue にアサインされることもあります。
+このチームは、今後のマイルストーンに向けて重み付けが必要な Issue を表示する [`~needs weight` ボード](https://gitlab.com/groups/gitlab-org/-/boards/4178322) を活用しています。基準は `~needs weight` と `~cicd::planning` が適用されていることで示されます。月を通して、チームメンバーは [`~needs weight` ボード](https://gitlab.com/groups/gitlab-org/-/boards/4178322) を確認し、Issue を自分にアサインします。優先順位はカラムによって決定されます: `Verify::P1`、`Verify::P2`、`Verify::P3`、その後に「Open」。重み付けの緊急度がより高い Issue がある場合、優先的なレビューのためにチームメンバーが Issue に直接アサインされる場合があります。
 
-Issue に `Weight` を追加することで、Issue を完了するために必要な作業量を見積もります。複雑さと作業に必要な追加の調整を考慮に入れます。フィボナッチ数列に従って複雑さに基づいて Issue に重み付けします：
+私たちは、Issue を完了するために必要な労力を見積もる方法として、Issue に `Weight` を追加します。複雑さや、Issue で作業するために必要な追加の調整を考慮します。フィボナッチ数列に従って、複雑さに基づいて Issue を重み付けします。
 
-| ウェイト | 説明  |
+| 重み | 説明  |
 | --- | --- | --- |
-| 1: 些細 | 問題はよく理解されており、追加の調査は必要なく、正確な解決策はすでに知られていて実装するだけでよく、予想外のことは期待されず、他のチームや人との調整も必要ない。<br><br>例：ドキュメントの更新、すでに調査・議論されて数行のコードで修正できるシンプルなリグレッションや他のバグ、または対処方法はわかっているがまだ時間を見つけていない技術的負債。約 1 MR で対処 |
-| 2: 小 | 問題はよく理解されており、解決策の概要が示されているが、解決策を実現するためにはまだ少し追加調査が必要。予想外のことはほとんどなく、他のチームや人との調整も必要ない。<br><br>例：既存のデータや機能を公開する新しい API エンドポイントなどのシンプルな機能、またはすでにある程度調査が行われた通常のバグやパフォーマンス Issue。2 MR 以内で対処 |
-| 3: 中 | よく理解されており比較的シンプルな機能。解決策の概要が示され、いくつかのエッジケースが考慮されるが、アプローチを確認するために追加調査が必要な場合もある。いくつかの予想外のことが期待され、他のチームメンバーとの調整が必要な場合もある。<br><br>比較的よく理解されているが、追加調査が必要な場合もあるバグ。問題が確認され、主要なエッジケースが特定されれば、解決策は比較的シンプルであることが期待される。<br><br>例：バックエンドまたはフロントエンドの依存関係やパフォーマンス Issue を持つ通常の機能。3 MR 以上で対処|
-| 5: 大 | よく理解されているが、より多くの曖昧さと複雑さを持つ機能。解決策の概要が示され、主要なエッジケースが考慮されるが、アプローチを検証するために追加調査がおそらく必要。特定のエッジケースでの予想外のことが期待され、複数のエンジニアやチームからのフィードバックが必要な場合もある。<br><br>バグは複雑で、理解できる場合とできない場合があり、Issue 精査中に詳細な解決策が定義されていない場合もある。追加調査がおそらく必要で、問題が特定されると、複数の解決策のイテレーションが検討される場合もある。<br><br>例：バックエンドとフロントエンドの依存関係を持つ大きな機能、または解決策の概要が示されているが、より詳細な解決策の検証が必要なパフォーマンス Issue。対処する MR の数は不明、分解が必要。|
+| 1: Trivial | 問題は非常によく理解されており、追加の調査は必要なく、正確なソリューションがすでにわかっており、実装が必要なだけで、サプライズは予想されず、他のチームや人との調整は不要。<br><br>例としては、ドキュメントの更新、簡単なリグレッション、すでに調査・議論されており数行のコードで修正できるその他のバグ、または対処方法はわかっているがまだ時間が見つかっていない技術的負債など。対処に約 1 MR |
+| 2: Small | 問題はよく理解されており、ソリューションは概要が示されているが、ソリューションを実現するためには少し追加の調査がおそらくまだ必要。サプライズはほとんど予想されず、他のチームや人との調整は不要。<br><br>例としては、既存のデータや機能を公開する新しい API エンドポイントのようなシンプルな機能、または既に調査が行われている通常のバグやパフォーマンス Issue。対処に 2 MR 未満 |
+| 3: Medium | よく理解されており比較的簡単な機能。ソリューションが概要として示され、いくつかのエッジケースが考慮されますが、アプローチを確認するために追加の調査が必要な場合があります。一部のサプライズが予想され、他のチームメンバーとの調整が必要な場合があります。<br><br>比較的よく理解されているバグですが、追加の調査が必要な場合があります。問題が確認され、主要なエッジケースが特定されれば、ソリューションは比較的簡単であることが期待されます。<br><br>例としては、バックエンドやフロントエンドの依存関係を持つ可能性のある通常の機能や、パフォーマンス Issue。対処に 3 つ以上の MR|
+| 5: Large | よく理解されているがより多くの曖昧さと複雑さを持つ機能。ソリューションが概要として示され、主要なエッジケースが考慮されますが、アプローチを検証するために追加の調査がおそらく必要になります。特定のエッジケースに関するサプライズが予想され、複数のエンジニアやチームからのフィードバックが必要な場合があります。<br><br>バグは複雑で、理解されている場合もあれば、Issue リファインメント中に詳細なソリューションが定義されていない場合もあります。追加の調査がおそらく必要で、問題が特定されたら、ソリューションの複数のイテレーションが検討される場合があります。<br><br>例としては、バックエンドとフロントエンドの依存関係を持つ大きな機能、ソリューションは概要として示されているがより詳細なソリューションの検証が必要なパフォーマンス Issue。対処の MR の数が不明であり、分割が必要。|
 
-Issue の最大重み付け値は `5` であり、追加の依存関係や複雑さによって 1 マイルストーンを超えることがあります。`5` の重み付けの Issue がどのように小さなイテレーションに分割できるかを検討し、[分割してください](#splitting-issues)。
+Issue の最大重み付け値は `5` であり、追加の依存関係や複雑さによって、完了に 1 つ以上のマイルストーンを超える場合があります。`5` で重み付けされた Issue がより小さなイテレーションにどう分解できるかを検討し、[そうしてください](#splitting-issues)。
 
-精査・重み付けで想定される場合は、[フィーチャーフラグロールアウト Issue](#release-plans) を作成してください。これはウェイト `1` です。
+[機能フラグロールアウト Issue](#release-plans) は、リファインメント／重み付け中に予期される場合に作成する必要があります。これらは重み `1` です。
 
-### リリース計画
+### リリース計画 {#release-plans}
 
-チーム内のより多くの透明性とコラボレーションを促進し、各マイルストーンの終わりに公開する [リリースポスト](/handbook/marketing/blog/release-posts/) に合わせるために、13.2 から開始し、[フィーチャーフラグロールアウトの Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Feature%20Flag%20Roll%20Out.md) に基づいて、リリースされる各機能の**フィーチャーフラグロールアウト計画**を強調する別の Issue を作成します。機能を実装したエンジニアは、フィーチャーフラグをいつどのように切り替えるかの詳細を強調するためにこの別の Issue を作成し、その後 Issue を機能 Issue にリンクする責任があります。プロダクトマネージャーはこの Issue をリリースポストのブロッカーとしてタグ付けし、全員が機能のリリース計画を確認できるようにします。
+チーム間の透明性とコラボレーションを高め、各マイルストーンの最後に公開する [リリースポスト](/handbook/marketing/blog/release-posts/) と整合させるため、13.2 から、[機能フラグロールアウトの Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Feature%20Flag%20Roll%20Out.md) に基づいて、リリースされる各機能の **機能フラグロールアウト計画** をハイライトする別の Issue を作成しています。機能を実装するエンジニアは、機能フラグの切り替え時期と方法の詳細を強調するためにこの別の Issue を作成し、続いてこの Issue を機能 Issue にリンクする責任があります。プロダクトマネージャーは、機能のリリース計画について全員の認識が揃うように、この Issue をリリースポストのブロッカーとしてタグ付けします。
 
 #### Issue の優先順位付け
 
-チームは `Verify::P*` ラベルを使用して Issue の優先順位を示します。マイルストーンの計画とレビューの一部として、Issue の新しい優先度を反映するためにラベルを変更または削除することがあります。現在、これらのラベルは以下のように適用されます：
+このチームは、Issue の優先順位を示すために `Verify::P*` ラベルを活用します。マイルストーン計画とレビューの一環として、Issue の新しい優先順位を反映するためにラベルを変更または削除することを決定する場合があります。現在、これらのラベルは以下のように適用されます。
 
 | 優先度ラベル | 適用理由 |
 | ---- | ---- |
-| `Verify::P1` | これらの Issue は、`priority::x` グループ内で最高優先度です。 |
-| `Verify::P2` | これらの Issue は、`priority::x` グループ内で 2 番目の高優先度です。 |
-| `Verify::P3` | これらの Issue は、`priority::x` グループ内で 3 番目の高優先度です。 |
+| `Verify::P1` | これらの Issue は、それぞれの `priority::x` グループ内で最高の優先度の Issue です。 |
+| `Verify::P2` | これらの Issue は、それぞれの `priority::x` グループ内で 2 番目に高い優先度の Issue です。 |
+| `Verify::P3` | これらの Issue は、それぞれの `priority::x` グループ内で 3 番目に高い優先度の Issue です。 |
 
 ### ワークフロー
 
-現在のマイルストーンで取り組む内容を追跡するために [Pipeline Execution ワークフロー Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/1372896) を使用します。
+私たちは [Pipeline Execution Workflow Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/1372896) を使って、現在のマイルストーンで取り組んでいる作業を追跡します。
 
-開発は以下の順でワークフローステートを移動します：
+開発は、以下の順序でワークフロー状態を進みます。
 
-1. `workflow::design`（該当する場合）
+1. `workflow::design` (該当する場合)
 1. `workflow::planning breakdown`
 1. `workflow::ready for development`
 1. `workflow::in dev`
-1. `workflow::blocked`（必要に応じて）
+1. `workflow::blocked` (必要に応じて)
 1. `workflow::in review`
 1. `workflow::verification`
-1. `workflow::awaiting security release`（該当する場合）
-1. `workflow::feature-flagged`（該当する場合）
+1. `workflow::awaiting security release` (該当する場合)
+1. `workflow::feature-flagged` (該当する場合)
 1. `workflow::complete` `Closed`
 
-`workflow::planning breakdown` はプロダクトが主導しますが、プロダクトとエンジニアリングの共同作業です。**計画の分解**のステップは通常以下のとおりです：
+`workflow::planning breakdown` は Product 主導ですが、Product と Engineering の協力的な取り組みです。**planning breakdown** のステップは通常、以下で構成されます。
 
-- プロダクトが問題文を定義または明確化する。プロダクトは必要に応じて `problem validation` でコラボレーションします。
-- エンジニアリングが記載されている Issue の説明を明確化する。そして Issue の精査と重み付けを行う。十分な情報がない場合は PM を Issue でタグ付けし、ワークフローステートを `workflow::problem validation` に設定します。
+- Product が問題ステートメントを定義または明確化する。Product は必要に応じて `problem validation` で協力します。
+- Engineering が記載された Issue 説明を明確化する。その後、Issue をリファインして重み付けする。十分な情報がない場合、Issue で PM をタグ付けし、ワークフロー状態を `workflow::problem validation` に設定する必要があります。
 
-いつでも Issue がブロックされた場合、`workflow::blocked` ステータスになります。ブロッキング Issue がある場合は、Issue の説明に追加するか、「blocked by」の関係で Issue にリンクする必要があります。ブロッキング Issue がない場合、ブロックされている理由は Issue のコメントで明確に伝えます。
+任意の時点で、Issue がブロックされた場合、`workflow::blocked` ステータスになります。ブロッカー Issue がある場合、Issue 説明に追加するか、'blocked by' 関係で Issue にリンクする必要があります。ブロッカー Issue がない場合、ブロックされている理由を Issue のコメントで明確に伝える必要があります。
 
-`workflow::ready for development` は、エンジニアリングによって Issue が[十分に精査され、重み付けされた](#how-engineering-refines-issues)ことを意味します。`cicd::active` のラベルが付いているこのステートの Issue は、マイルストーンで取り組むべきものです。開発者が Issue の作業を開始するとき、[マイルストーンを設定し](#setting-the-milestone)、開始したマイルストーンではなく、Issue が最も完了しそうなマイルストーンに設定します。
+`workflow::ready for development` は、Issue が [エンジニアリングによって十分にリファインされ重み付けされた](#how-engineering-refines-issues) ことを意味します。`cicd::active` とラベル付けされたこの状態の Issue は、マイルストーンで作業すべき Issue です。開発者が Issue で作業を開始するときには、開始したマイルストーンではなく、Issue がもっとも完了する可能性が高いマイルストーンに [マイルストーンを設定](#setting-the-milestone) する必要があります。
 
-`workflow::awaiting security release` は、セキュリティ Issue が検証を通過した後にエンジニアによって適用され、このラベルはプロダクション向けの準備ができているが次の[月次セキュリティリリース](https://gitlab.com/gitlab-com/gl-infra/readiness/-/tree/master/library/security-releases-development)を待っていることを示します。このラベルが適用されたとき、Issue のマイルストーンも次のセキュリティリリースが行われる時期に合わせて次のマイルストーンに更新します。
+`workflow::awaiting security release` は、セキュリティ Issue が検証を通過した後にエンジニアによって適用され、このラベルは本番準備ができているが次の [月次セキュリティリリース](https://gitlab.com/gitlab-com/gl-infra/readiness/-/tree/master/library/security-releases-development) を待っていることを示します。このラベルが適用されると、Issue のマイルストーンも次のセキュリティリリースが行われるタイミングと整合させるために、次のマイルストーンに更新する必要があります。
 
-`workflow::feature-flagged` は、別のフィーチャーフラグロールアウト Issue を通じて有効化されている Issue に適用されます。機能が検証されると、ステータスは `workflow::complete` に移動し、Issue はクローズされます。
+`workflow::feature-flagged` は、別の機能フラグロールアウト Issue を通じて有効化されている Issue に適用されます。機能が検証されると、ステータスは `workflow::complete` に移動し、Issue はクローズされます。
 
-`Closed` は、Issue に関連するすべてのコード変更が gitlab.com で完全に有効化されたことを意味します。フィーチャーフラグの後ろでロールアウトされている場合、gitlab.com のすべてのユーザーにフィーチャーフラグが有効化されていることを意味します。
+`Closed` は、Issue に関連するすべてのコード変更が gitlab.com で完全に有効化されていることを意味します。機能フラグの背後にロールアウトされている場合、それは機能フラグが gitlab.com 上のすべてのユーザーに対して有効化されていることを意味します。
 
-ワークフローの詳細は [プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/) ページで確認できます。
+ワークフローの詳細は [Product-Development Flow](/handbook/product-development/how-we-work/product-development-flow/) ページで確認できます。
 
-### 「次に何を取り組むか？」
+### "次に何に取り組むか?" {#what-do-i-work-on-next}
 
-- チームメンバーと確認して、コミットされた作業を完了するためにサポートが必要かどうかを確認する。[WIP を減らすために右から左へ作業する](#working-right-to-left-to-reduce-wip)を参照
-- EM または PM に確認して、サポートできる顧客サポートリクエストがあるかどうかを確認する
-- [プランニング](#planning) で使用するリストを参照して、取り組める追加の未割り当てアイテムを見つける
+- チームメンバーがコミットした作業を完了するために助けが必要かどうか確認する。[WIP を減らすために右から左へ作業する](#working-right-to-left-to-reduce-wip) を参照
+- EM や PM に、助けられるカスタマーサポートのリクエストがあるかを確認する。
+- 取り組む追加のクレームされていないアイテムを見つけるために、[計画](#planning) で使用されるリストを参照する。
 
-#### このマイルストーンの優先事項は何か？
+#### このマイルストーンの優先事項は？
 
-マイルストーンの最高優先事項の Issue を示すために一連のラベルを使用します。
+私たちは、マイルストーン内の最高優先度の Issue を示すために一連のラベルを使用します。
 
-1. 特定のマイルストーンでの最高優先事項は、`Verify::P1`、`Deliverable`、`group::pipeline execution` のラベルが付いた Issue です。これにより、マイルストーンのテーマと目標に合わせます。
-1. 各マイルストーンは、`Deliverable` および `group::pipeline execution` のラベルが付いたエンジニアごとに 1 Issue から始まります。これにより、平均マイルストーン合計重みの約 30% を占めます。
-1. すべての `Verify::P1` Issue が着手されて `workflow:in dev` 以降になったら、後のマイルストーンで `Verify::P1` Issue になる可能性のある重要な Issue を示す `Verify::P2` と `Verify::P3` があります。
+1. 特定のマイルストーンの最高優先度は、マイルストーンのテーマと目標に整合する `Verify::P1`、`Deliverable`、`group::pipeline execution` のラベルが付いた Issue になります。
+1. 各マイルストーンは、エンジニア 1 人につき 1 件の Issue から始まり、これらは `Deliverable` および `group::pipeline execution` としてラベル付けされます。これは、平均的なマイルストーン全体重みの約 30% に相当する必要があります。
+1. すべての `Verify::P1` Issue がピックアップされ、`workflow:in dev` 以降になったら、私たちは `Verify::P2` と `Verify::P3` を使って、重要で、後のマイルストーンで `Verify::P1` Issue になる可能性が高い Issue を示します。
 
-優先順位に従い、[プランニング](#planning) で使用するリストがキュレーションされ、各チームメンバーが容量に応じてこれらのリストからアイテムを選択できます。
+優先事項に従って、[計画](#planning) で使用されるリストがキュレーションされ、各チームメンバーがキャパシティに応じて、これらのリストからアイテムを引き出すことができます。
 
-##### マイルストーンの設定
+##### マイルストーンの設定 {#setting-the-milestone}
 
-DRI が Issue を選択するとき、自分自身を Issue にアサインし、Issue が最も出荷されると予想するマイルストーンを追加します（現在のマイルストーンではない場合もある）。DRI は将来のマイルストーンにある Issue に取り組むことがあります。マイルストーンが将来のマイルストーンに設定されているか設定されていない場合、かつ現在のマイルストーンで確実に出荷されると確信している場合は、マイルストーンを現在のものにリセットします。これはまた、ウェイトと提案を再評価する良い機会です。特に Issue を選択した DRI が元々重み付けし精査した個人と異なる場合です。理想的には、イテレーションを行ってユーザーにできるだけ多くの価値をマイルストーン内で提供したいと考えています。つまり、新しい Issue の作業を開始するときにより効率的な方法が見えた場合、コメントを追加してより反復的な価値を提供するための提案を更新できます。
+DRI が Issue を選択する際、Issue に自分自身をアサインし、Issue がもっとも出荷される可能性が高いと考えるマイルストーンを追加します。これは現在のマイルストーンでない場合があります。DRI は将来のマイルストーンにある Issue で作業することがあります。マイルストーンが将来のマイルストーンに設定されているか設定されていない場合で、現在のマイルストーンで出荷されることが確実な場合は、マイルストーンを現在のものにリセットします。これは、特に Issue をピックアップする DRI が元々 Issue を重み付け・リファインした個人と異なる場合、重みと提案を再評価する良いタイミングでもあります。理想的には、私たちはイテレートし、ユーザーに対してマイルストーンでできる限り多くの価値を出荷するよう取り組みを分割しようと努めます。これは、新しい Issue で作業を開始するときに、より効率的な前進方法が見えた場合、コメントを上げて提案を更新することで、よりイテレーティブな価値を提供する自由があることを意味します。
 
-#### WIP を減らすために右から左へ作業する
+#### WIP を減らすために右から左へ作業する {#working-right-to-left-to-reduce-wip}
 
-チームの各メンバーは、Issue にアサインすることでマイルストーン中に取り組む Issue を選択できます。マイルストーンが進んで作業を探している場合、デフォルトで **[Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/1372896)** の最も右側の列の Issue を引き出すことで**右から左へ**作業します。チームメンバーがボード上でサポートできる Issue があれば、新しい作業を始める代わりにそれを行います。これには、チームメンバーがアサインされていない Issue のコードレビューを行うことも含まれます（価値を追加して Issue の完了を助けられると判断した場合）。また、`workflow::ready for development` 列のトップから次の Issue を選ぶ前に、チームメンバーは [`~needs weight` ボード](https://gitlab.com/groups/gitlab-org/-/boards/4178322) を確認し、今後のマイルストーンの候補に重み付けがされていることを確認します。
+チームの各メンバーは、Issue を自分自身にアサインすることでマイルストーン中に取り組む Issue を選択できます。マイルストーンが順調に進行し、私たちが作業を探している場合、デフォルトでは **[Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/1372896)** で **右から左** に作業し、もっとも右のカラムから Issue をプルします。チームメンバーがボード上の Issue で助けられる Issue があれば、新しい作業を開始する代わりにそれを行うべきです。これには、チームメンバーがアサインされていない Issue に対するコードレビューも含まれ、価値を加え、Issue が完了に向かって進むのを助けられると感じる場合に行います。さらに、`workflow::ready for development` カラムの先頭から次の Issue を選ぶ前に、チームメンバーは [`~needs weight` ボード](https://gitlab.com/groups/gitlab-org/-/boards/4178322) を確認し、今後のマイルストーンの候補が重み付けされていることを確認する必要があります。
 
-具体的には、私たちの作業は以下の順序で優先されます：
+具体的には、これは私たちの作業が以下の順序で優先順位付けされることを意味します。
 
-- `workflow::verification` または `workflow::production` にあるコードの検証
-- `workflow::in review` にある Issue のコードレビュー
-- 該当する場合、`workflow::blocked` または `workflow::in dev` にある人のブロック解除
-- 現在のマイルストーンで重み付けが必要な Issue の [`~needs weight` ボード](https://gitlab.com/groups/gitlab-org/-/boards/4178322) 確認
-- 次に、`workflow::ready for development` 列のトップから選択
+- `workflow::verification` または `workflow::production` のコードに対する検証
+- `workflow::in review` の Issue でのコードレビューの実施
+- 該当する場合、`workflow::blocked` または `workflow::in dev` のメンバーのブロック解除
+- 現在のマイルストーンで重み付けが必要な Issue について [`~needs weight` ボード](https://gitlab.com/groups/gitlab-org/-/boards/4178322) を確認
+- その後、`workflow::ready for development` カラムの上から選ぶ
 
-このプロセスの目標は、任意の時点での進行中の作業（WIP）量を削減することです。WIP を減らすことで「始める量を減らし、完了する量を増やす」ことを強制し、サイクルタイムも短縮されます。エンジニアは MR の DRI は **著者** であることを念頭に置いてください。これはチームワークの重要性を反映するためであり、[DRI を持つことが私たちの価値観によって奨励されている](/handbook/people-group/directly-responsible-individuals/#dris-and-our-values)という概念を薄めるためではありません。
+このプロセスの目標は、いつでも進行中の作業 (WIP) の量を減らすことです。WIP を減らすことで、私たちは「より少なく開始し、より多く完了する」ことを強制され、サイクルタイムも短縮されます。エンジニアは、マージリクエストの DRI が **作成者** であることを念頭に置く必要があります。これにより、[DRI が私たちの価値で奨励されている](/handbook/people-group/directly-responsible-individuals/#dris-and-our-values) という概念を希薄にせずにチームワークの重要性を反映します。
 
-#### Issue の分割
+#### Issue の分割 {#splitting-issues}
 
-Issue に複数のコンポーネント（例：~frontend、~backend、~documentation）がある場合、別個の実装 Issue に分割すると便利なことがあります。元の Issue には機能に関するすべての議論を保持し、実装 Issue は完了した作業を追跡するために使用します。実装が 1 マイルストーン以上かかる場合や、元の Issue に対して実装が行われない場合は、Epic に昇格させます。これにより次のようなメリットがあります：
+Issue にいくつかのコンポーネント (例: ~frontend、~backend、または ~documentation) がある場合、別々の実装 Issue に分割するのが有用な場合があります。
+元の Issue は機能に関するすべての議論を保持し、実装 Issue は完了した作業を追跡するために使用されます。実装に 1 マイルストーン以上かかる場合や、元の Issue に対して実装が行われない場合、エピックに昇格させる必要があります。
+これを行うことには、いくつかの利点があります。
 
-1. 1 つの Issue に 1 人の DRI がいる。
-1. ワークフローラベルとヘルスステータスがより適切になる。
-1. より精度高く Issue に重み付けできる。
-1. 1 つの実装を別のブロッカーとしてマークできる。
-1. 各機能グループが着手できる作業を確認しやすくなる。
-1. 複数のマイルストーンにわたって機能作業をスケジュールできる。
+1. Issue ごとに DRI が 1 人だけ。
+1. ワークフローラベルとヘルスステータスがより関連性を持つ。
+1. Issue をより正確に重み付けできる。
+1. 1 つの実装を別の実装のブロッカーとしてマークできる。
+1. 各機能グループによってどの作業がピックアップできるかが見やすくなる。
+1. 複数のマイルストーンにまたがって機能作業をスケジュールできる。
 
-`workflow::design` から `workflow::planning breakdown` を経て実装に Issue を移動する際は、次のプロセスのいずれかを使用してください：
+`workflow::design` から `workflow::planning breakdown` および実装に Issue を移動する場合、以下のプロセスのいずれかを使用します。
 
-| フロントエンド？ | バックエンド？ | アクション |
+| Frontend? | Backend? | アクション |
 | --------- | -------- | ------ |
-| あり       | あり      | 元の Issue はフロントエンド実装 Issue にリネームされ、別の バックエンド実装 Issue が作成される。 |
-| なし        | あり      | 元の Issue はバックエンド実装 Issue にリネームされる。 |
-| あり       | なし       | 元の Issue はフロントエンド実装 Issue にリネームされる。 |
+| Yes       | Yes      | 元の Issue は `Frontend` 実装 Issue に名前が変更され、別の `Backend` 実装 Issue が作成されます。 |
+| No        | Yes      | 元の Issue は `Backend` 実装 Issue に名前が変更されます。 |
+| Yes       | No       | 元の Issue は `Frontend` 実装 Issue に名前が変更されます。 |
 
-`workflow::design` の Issue が効果的に 1 つの Issue で実装するには大きすぎる場合、または Issue が古くなってディスカッションで溢れている場合、Issue をより小さな Issue に分割できます。プロダクトデザイナーは `workflow::design` 中にエンジニアとプロダクトマネージャーと協力して、可能な反復計画を理解し、大きなデザイン提案をできる限り小さな部分に分割します。
+`workflow::design` の Issue が 1 つの Issue で効果的に実装するにはスコープが大きすぎる場合や、Issue が古く議論で散らかりすぎている場合、Issue をより小さな Issue に分解できます。Product Designer は `workflow::design` 中にエンジニアおよびプロダクトマネージャーと協力して、可能なイテレーション計画を理解し、可能な限り大きな設計提案を小さな部分に分解します。
 
-新しい実装 Issue が作成されたとき、それらは常に提案と関連するディスカッションを含む初期の Issue にリンクされるべきです。
+新しい実装 Issue が作成されたとき、それらは常に提案と関連する議論を含む最初の Issue にリンクされる必要があります。
 
-実装 Issue は責任を持って使用してください。大きな Issue には意味がありますが、小さな機能には煩雑になることがあります。
+実装 Issue は責任を持って使用してください。
+それらはより大きな Issue に意味がありますが、より小さな機能には面倒な場合があります。
 
-#### 週次 Issue 進捗アップデート
+#### 週次 Issue 進捗更新
 
-ステークホルダーに進行中の作業について情報を提供するために、Issue の**ヘルスステータス**を更新するか、**非同期の Issue アップデート**を追加することで Issue のアップデートを提供します。
+私たちは、ステークホルダーが進行中の作業について常に把握できるよう、Issue の **ヘルスステータス** を更新するか **非同期 Issue 更新** を追加することで Issue の更新を提供します。
 
 ##### Issue ヘルスステータス
 
-現在のマイルストーンの Issue については、[Issue ヘルスステータス機能](https://docs.gitlab.com/ee/user/project/issues/#health-status) を使用して、Issue が現在のマイルストーンで出荷される確率を示します。このステータスは、DRI（[直接責任者](/handbook/people-group/directly-responsible-individuals/)）が確率が変化したと認識したらすぐに更新されます。ステータスに変更がない場合、Issue のステータスが*評価済み*であることを示すコメントが役立ちます。
+現在のマイルストーンの Issue については、現在のマイルストーンで Issue が出荷される確率を示すために [Issue Health Status 機能](https://docs.gitlab.com/ee/user/project/issues/#health-status) を使用します。このステータスは DRI ([directly responsible individual](/handbook/people-group/directly-responsible-individuals/)) によって、確率が変わったと認識した時点で更新されます。ステータスに変化がない場合、Issue のステータスが *評価された* ことを示すコメントが役立ちます。
 
-ヘルスステータスオプションの定義：
+以下はヘルスステータスオプションの定義です。
 
-- `On Track` - Issue に現在のブロッカーはなく、現在のマイルストーンで完了する可能性が高い。
-- `Needs Attention` - Issue はまだ現在のマイルストーンで完了する可能性があるが、リリース期日を逃す可能性のある後退またはタイム制約がある。
-- `At Risk` - Issue は現在のマイルストーンで完了するのが非常に**難しく**、おそらくリリース期日を逃す。
+- `On Track` - Issue には現在ブロッカーがなく、現在のマイルストーンで完了する可能性が高い。
+- `Needs Attention` - Issue は依然として現在のマイルストーンで完了する可能性が高いが、Issue がリリース期限に間に合わない原因となる可能性のある後退や時間の制約がある。
+- `At Risk` - Issue は現在のマイルストーンで完了する可能性が **きわめて低く**、おそらくリリース期限に間に合わない。
 
-ステータスアップデートの追加方法の例：
+ステータス更新が追加される方法の例:
 
-1. ヘルスステータスが `On Track` から `Needs attention` または `At Risk` に変わった場合、DRI が [Issue ステータスアップデート](#issue-status-updates) で変更の理由を述べた短いコメントを追加することを推奨します。
-1. Issue が引き続き `On Track` の場合、DRI は解決策（何であれ）の実装が続いており、同じマイルストーンで提供される予定であることを示すコメントを提供できます。
+1. ヘルスステータスが `On Track` から `Needs attention` または `At Risk` に変わった場合、DRI が変更の理由を述べる短いコメントを [Issue ステータス更新](#issue-status-updates) で追加することを推奨します。
+1. Issue が `On Track` のままである場合、DRI はソリューション (それが何であれ) が引き続き実装されており、同じマイルストーンで提供されるよう *予定どおり* であることを示すコメントを提供できます。
 
-##### Issue ステータスアップデート
+##### Issue ステータス更新 {#issue-status-updates}
 
-DRI が Issue を積極的に取り組んでいる場合（ワークフローステータスが `workflow::in dev`、~`workflow::in review`、または現在のマイルストーンの `workflow::verification`）、ステータスアップデートを記載したコメントを Issue に追加します。内容：
+DRI が積極的に Issue に取り組んでいる場合 (現在のマイルストーンでワークフローステータスが `workflow::in dev`、`~workflow::in review`、または `workflow::verification`)、ステータス更新を含むコメントを Issue に追加し、以下の詳細を記載します。
 
 - 更新された Issue ヘルスステータス
-- 更新された Issue ヘルスステータスに基づいて何が行われたかのメモ（特に `On Track` でない場合）
-- DRI が進捗を反映するために有益と感じるその他のこと
+- 更新された Issue ヘルスステータスに基づいて行われたことに関するメモ (特に `On Track` でない場合)
+- 進捗を反映するために DRI が有益と感じるその他の事項
 
-このアプローチには次のようなメリットがあります：
+このアプローチにはいくつかの利点があります。
 
-- チームメンバーが Issue をボード上で進めるためにできることをより良く特定できる
-- アイデアがある場合、他のチームメンバーが関与・協力するきっかけになる
-- ステータスアップデートを残すことは、質問して議論を始める良いきっかけになる
-- より広い GitLab コミュニティがプロダクト開発をより簡単に追えるようになる
-- Issue が遭遇した障害の履歴は、振り返りのためにすぐに利用できる
-- プロダクトとエンジニアリングのマネージャーが作業の進捗をより簡単に把握できる
+- チームメンバーが、Issue をボードで動かすために何ができるかをより良く特定できる
+- 他のチームメンバーがアイデアがあれば関与・協力する開放的な機会を作る
+- ステータス更新を残すことは質問をし議論を始める良いきっかけになる
+- より広い GitLab コミュニティが、製品開発をより簡単に追えるようになる
+- 振り返りの場合に、Issue が遭遇した障害の履歴がすぐに利用できる
+- プロダクトとエンジニアリングのマネージャーが、作業の進捗をより簡単に把握できる
 
-進行中の作業のアップデートを提供する DRI への期待：
+進行中の作業に対する更新を提供する DRI に対する期待:
 
-- ステータスアップデートは週 1 回提供されます（特別な状況を除き、例：PTO）
-- 理想的には、アップデートは DRI のワークフローの論理的な部分で行われ、中断を最小化します。毎週同じ時間/曜日である必要はありません
-  - 一般的に、*Issue ヘルスステータスの変化*など、アップデートを残すのに論理的な時間がある場合がベストタイミングです
-  - 他のステークホルダーに関連する技術的な調査結果や情報を提示するために使用できます
+- ステータス更新は週に 1 回提供されます (例: PTO のような特別な状況を除く)
+- 理想的には、更新は混乱を最小限に抑えるために DRI のワークフローの論理的な部分で行われ、必ずしも毎週同じ時間／日である必要はありません
+  - 一般的に、*Issue ヘルスステータスの変更* など、更新を残す論理的なタイミングがあるとき、それがそうするのに最適なタイミングです
+  - 他のステークホルダーに関連する技術的発見や情報を提示するために使用できます
 
 ##### 非アクティブ Issue の追跡
 
-一般的な規則として、積極的に取り組まれている Issue はすべて次のワークフローラベルの 1 つを持ちます：
+一般的なルールとして、積極的に取り組まれているすべての Issue には次のいずれかのワークフローラベルがあります。
 
 - `workflow::in dev`
 - `workflow::in review`
 - `workflow::verification`
-- `workflow::complete`（Issue の**クローズ**時）
+- `workflow::complete` (Issue を **クローズ** すると)
 
-これらの Issue のヘルスステータスは以下のように更新されます：
+これらの Issue のヘルスステータスは以下のように更新する必要があります。
 
-1. `Needs Attention` - 月の `1日` に。
-1. `At Risk` - 月の `8日` に。
+1. `Needs Attention` - 月の `1 日`。
+1. `At Risk` - 月の `8 日`。
 
-EM は [マイルストーン内の非アクティブ Issue](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=group%3A%3Acontinuous%20integration&milestone_title=%23upcoming&amp;not%5Blabel_name%5D%5B%5D=workflow%3A%3Acanary&amp;not%5Blabel_name%5D%5B%5D=workflow%3A%3Ain+dev&amp;not%5Blabel_name%5D%5B%5D=workflow%3A%3Ain+review&amp;not%5Blabel_name%5D%5B%5D=workflow%3A%3Aproduction&amp;not%5Blabel_name%5D%5B%5D=workflow%3A%3Astaging&amp;not%5Blabel_name%5D%5B%5D=workflow%3A%3Averification&page=2&scope=all&state=opened) のヘルスステータスを手動で更新する責任があります。
+EM は、それに応じて [マイルストーン内の任意の非アクティブ Issue](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=group%3A%3Acontinuous%20integration&milestone_title=%23upcoming&amp;not%5Blabel_name%5D%5B%5D=workflow%3A%3Acanary&amp;not%5Blabel_name%5D%5B%5D=workflow%3A%3Ain+dev&amp;not%5Blabel_name%5D%5B%5D=workflow%3A%3Ain+review&amp;not%5Blabel_name%5D%5B%5D=workflow%3A%3Aproduction&amp;not%5Blabel_name%5D%5B%5D=workflow%3A%3Astaging&amp;not%5Blabel_name%5D%5B%5D=workflow%3A%3Averification&page=2&scope=all&state=opened) のヘルスステータスを手動で更新する責任があります。
 
-### スパイク
+### スパイク {#spikes}
 
-スパイクはアジャイルソフトウェア開発で一般的に実施されるタイムボックス調査です。機能の技術的な観点からどのように進めるかについて不確実性がある場合、機能を開発する前に Spike Issue を作成します。
+スパイクは、アジャイルソフトウェア開発で通常実行される時間制限のある調査です。機能が開発される前に、技術的な観点からどのように進むかについて不確実性がある場合、スパイク Issue を作成します。
 
 #### ガイドライン
 
-- スパイクは通常、エンジニアからの明確な所有権を確保するため deliverable としてマークされます
-- スパイクは通常、短い期間（時に 1 週間、決して 1 マイルストーンを超えない）にタイムボックスされます
-- 調査が次のイテレーションの計画の前に完了するよう、イテレーションの開始時にスパイクをスケジュールするよう心がけます
-- グループあたり 1 マイルストーンで最大 2 件のスパイクに制限します
-- 通常、複数のチームメンバーがスパイクで協力します。複数の異なる視点を確保し、調査に焦点を当て効率的に行います
-- スパイクは、両方の視点から Issue を検討するため、フロントエンドとバックエンドのエンジニア各 1 名にアサインされます
+- スパイクは通常、エンジニアからの明確なオーナーシップを確保するためにデリバラブルとしてマークされます
+- スパイクは通常、短い期間 (時には 1 週間) にタイムボックス化され、1 マイルストーンを超えることはありません。
+- 私たちは、調査が次のイテレーションの計画前に終結するように、イテレーションの開始時にスパイクをスケジュールするよう試みるべきです。
+- グループあたりのマイルストーンあたりのスパイクは 2 つを超えないように制限してください。
+- 通常、複数のチームメンバーがスパイクで協力します。私たちは複数の異なる視点を得つつ、研究を集中させ効率的に保つようにしたいと考えています。
+- 両方の観点から Issue を考慮するために、スパイクは少なくとも 1 人のフロントエンドと 1 人のバックエンドのエンジニアにアサインされる必要があります。
 
 #### カテゴリラベル
 
-Pipeline Execution グループは以下のプロダクトマーケティングカテゴリをサポートします：
+Pipeline Execution グループは以下に説明されるプロダクトマーケティングカテゴリをサポートします。
 
 | ラベル                 | |  | | |
 | ----------------------| -------| ----|------------| ---|
-| `Category:Continuous Integration` | [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Category%3AContinuous%20Integration) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=Category%3AContinuous%20Integration) | [方向性](https://about.gitlab.com/direction/verify/continuous_integration/) | [ドキュメント](https://docs.gitlab.com/ee/ci/) |
-| `Category:Merge Trains` | [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Category%3AMerge%20Trains) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=Category%3AMerge%20Trains) | [方向性](https://about.gitlab.com/direction/verify/merge_trains/) | [ドキュメント](https://docs.gitlab.com/ee/ci/pipelines/merge_trains.html) |
+| `Category:Continuous Integration` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Category%3AContinuous%20Integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=Category%3AContinuous%20Integration) | [Direction](https://about.gitlab.com/direction/verify/continuous_integration/) | [Documentation](https://docs.gitlab.com/ee/ci/) |
+| `Category:Merge Trains` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Category%3AMerge%20Trains) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=Category%3AMerge%20Trains) | [Direction](https://about.gitlab.com/direction/verify/merge_trains/) | [Documentation](https://docs.gitlab.com/ee/ci/pipelines/merge_trains.html) |
 
 #### 機能ラベル
 
 | ラベル                 | |  | 説明 |
 | ----------------------| -------| ----|------------|
-| `api` | [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=api&label_name[]=group%3A%3Acontinuous%20integration) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=api&label_name[]=group%3A%3Acontinuous%20integration) | CI 機能の API エンドポイントに関連する Issue。 |
-| `CI permissions` | [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=CI+permissions&label_name[]=group%3A%3Acontinuous%20integration) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=CI+permissions&label_name[]=group%3A%3Acontinuous%20integration) | `CI_JOB_TOKEN` と CI 認証に関連する Issue |
-| `Compute minutes` | [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=CI+minutes&label_name[]=group%3A%3Acontinuous%20integration) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=CI+minutes&label_name[]=group%3A%3Acontinuous%20integration) | CI 分の計算方法と使用量の算出に関連するすべての Issue と MR。旧名 `~ci minutes` |
-| `merge requests` | [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=merge+requests&label_name[]=group%3A%3Acontinuous%20integration) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=merge+requests&label_name[]=group%3A%3Acontinuous%20integration) | マージリクエスト内の CI 機能に関連する Issue。 |
-| `notifications` | [Issue](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=notifications&label_name[]=group%3A%3Acontinuous%20integration) | [MR](https://gitlab.com/groups/gitlab-org/-/merge_requests?label_name%5B%5D=notifications&label_name[]=group%3A%3Acontinuous%20integration) | CI 機能に関連するさまざまな形式の通知に関連する Issue。 |
-| `pipeline analytics` | [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=pipeline+analytics&label_name[]=group%3A%3Acontinuous%20integration) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=pipeline+analytics&label_name[]=group%3A%3Acontinuous%20integration) | CI パイプラインの統計とダッシュボードに関連する Issue。 |
-| `pipeline processing` | [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=pipeline+processing&label_name[]=group%3A%3Acontinuous%20integration) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=pipeline+processing&label_name[]=group%3A%3Acontinuous%20integration) | DAG、子パイプライン、マトリックスビルドジョブを含むパイプラインジョブの実行に関連する Issue |
+| `api` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=api&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=api&label_name[]=group%3A%3Acontinuous%20integration) | CI 機能の API エンドポイントに関連する Issue。 |
+| `CI permissions` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=CI+permissions&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=CI+permissions&label_name[]=group%3A%3Acontinuous%20integration) | `CI_JOB_TOKEN` と CI 認証に関連する Issue |
+| `Compute minutes` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=CI+minutes&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=CI+minutes&label_name[]=group%3A%3Acontinuous%20integration) | Continuous Integration の分数を数え、利用量を計算する方法に関連するすべての Issue と MR。以前の `~ci minutes` |
+| `merge requests` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=merge+requests&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=merge+requests&label_name[]=group%3A%3Acontinuous%20integration) | マージリクエスト内の CI 機能に関連する Issue。 |
+| `notifications` | [Issues](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=notifications&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/groups/gitlab-org/-/merge_requests?label_name%5B%5D=notifications&label_name[]=group%3A%3Acontinuous%20integration) | CI 機能に関連するさまざまな形式の通知に関連する Issue。 |
+| `pipeline analytics` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=pipeline+analytics&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=pipeline+analytics&label_name[]=group%3A%3Acontinuous%20integration) | CI パイプラインの統計とダッシュボードに関連する Issue。 |
+| `pipeline processing` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=pipeline+processing&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=pipeline+processing&label_name[]=group%3A%3Acontinuous%20integration) | DAG、子パイプライン、マトリックスビルドジョブを含む、パイプラインジョブの実行に関連する Issue |
 
-#### その他の主要ラベル
+#### その他の注目すべきラベル
 
 | ラベル                 | |  | 説明 |
 | ----------------------| -------| ----|------------|
-| `CI/CD core platform` | [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=CI%2FCD%20Core%20Platform) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=CI%2FCD+Core+Platform) | [CI/CD コアドメイン](#core-domain) に関連するすべての Issue とマージリクエスト（変更や観察可能な副作用として）。 |
-| `onboarding` | [Issue](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Apipeline%20authoring&label_name[]=onboarding) | | 新しいチームメンバーのオンボーディングに役立つ Issue。 |
-| `Good for 1st time contributors` | [Issue](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Apipeline%20authoring&label_name[]=Good%20for%201st%20time%20contributors) | | 初めてのコミュニティコントリビューターに適した Issue。同様に `onboarding` のラベルが付けられる場合もある |
-| `Seeking community contributions` | [Issue](https://gitlab.com/groups/gitlab-org/-/issues?sort=created_date&state=opened&label_name[]=group::pipeline+execution&label_name[]=Seeking+community+contributions) | | より広いコミュニティに貢献してほしい Issue。`Seeking community contributions` ラベルも付いている場合がある |
+| `CI/CD core platform` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=CI%2FCD%20Core%20Platform) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=CI%2FCD+Core+Platform) | [CI/CD コアドメイン](#core-domain) に関連する変更または観察可能な副作用としてのすべての Issue とマージリクエスト。 |
+| `onboarding` | [Issues](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Apipeline%20authoring&label_name[]=onboarding) | | 新しいチームメンバーとしてオンボーディングする人にとって役立つ Issue。 |
+| `Good for 1st time contributors` | [Issues](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Apipeline%20authoring&label_name[]=Good%20for%201st%20time%20contributors) | | 初回のコミュニティコントリビューターに適しており、`onboarding` のラベルを付けることもできる Issue。 |
+| `Seeking community contributions` | [Issues](https://gitlab.com/groups/gitlab-org/-/issues?sort=created_date&state=opened&label_name[]=group::pipeline+execution&label_name[]=Seeking+community+contributions) | | 私たちが、より広いコミュニティにコントリビュートしてもらいたい Issue で、`Seeking community contributions` のラベルが付いている場合もある。 |
 
-### フィーチャーフラグを使った開発
+### 機能フラグを使った開発
 
-高い影響が見込まれる機能を構築する際、チームは [GitLab のフィーチャーフラグに関するガイドライン](/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/) を使用します。
+影響が大きい可能性のある機能を構築する場合、チームは機能フラグの確立された [GitLab ガイドライン](/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/) を使用します。
 
-また、機能が有効化される前に[ロールアウト Issue を通じてアラートを送信](https://docs.gitlab.com/ee/development/feature_flags/controls.html#communicate-the-change)することで、顧客サポートと顧客サクセスのチームメイトとのコラボレーションも確保しています。
+私たちはまた、機能が有効化される前に [ロールアウト Issue について彼らに警告する](https://docs.gitlab.com/ee/development/feature_flags/controls.html#communicate-the-change) ことで、カスタマーサポートとカスタマーサクセスのチームメイトと協力していることを確実にします。
 
-チームがコードに導入したフィーチャーフラグは[この表](https://10az.online.tableau.com/t/gitlab/views/Engineering-Featureflags/Engineering-FeatureFlags/6ecdfc19-ff4b-4a81-b7b6-25948fe8816f/c486cf97-81c5-4d83-9533-bf259ead2885)で確認できます。
+チームによって導入されたコード内に残っている機能フラグは、[このテーブル](https://10az.online.tableau.com/t/gitlab/views/Engineering-Featureflags/Engineering-FeatureFlags/6ecdfc19-ff4b-4a81-b7b6-25948fe8816f/c486cf97-81c5-4d83-9533-bf259ead2885) で確認できます。
 
-Sam の素晴らしい[ツール](https://samdbeckham.gitlab.io/feature-flags/#%5B%7B%22type%22:%22group%22,%22value%22:%7B%22data%22:%22group::pipeline%C2%A0execution%22,%22operator%22:%22=%22%7D%7D,%7B%22type%22:%22filtered-search-term%22,%22value%22:%7B%22data%22:%22%22%7D%7D%5D)（pipeline execution 用にフィルタリング済み）からすべてのフィーチャーフラグを検索することもできます。
+すべての機能フラグは、Sam の素晴らしい [ツール](https://samdbeckham.gitlab.io/feature-flags/#%5B%7B%22type%22:%22group%22,%22value%22:%7B%22data%22:%22group::pipeline%C2%A0execution%22,%22operator%22:%22=%22%7D%7D,%7B%22type%22:%22filtered-search-term%22,%22value%22:%7B%22data%22:%22%22%7D%7D%5D) でも検索できます (pipeline execution 用にプリフィルター済み)。
 
 ### UX とエンジニアリングとのコラボレーション
 
-機能的で使いやすい高品質なプロダクトを作るために、エンジニアリング、PM、プロダクトデザイナーは緊密に協力し、手法を組み合わせ、プロダクト開発プロセス全体を通じてよく連携します。彼らは `workflow::design` を使用して、提案された解決策に関する複雑さ、課題、ブロッカーを議論します。
+機能的で有用な高品質な製品を作成するため、エンジニアリング、PM、Product Designer は緊密に協力し、方法論を組み合わせ、製品開発プロセス全体を通じて頻繁につながります。彼らは `workflow::design` を使って、提案されたソリューションをめぐる可能な複雑さ、課題、ブロッカーを議論します。
 
-プロダクトデザイナーは、ユーザー向け Issue のプロダクト開発において重要な役割を果たします。エンジニアリングとプロダクトマネージャーと協力して、機能のユーザーエクスペリエンスをデザインします。デザインソリューションが提案・合意・検証されたら、エンジニアリング [DRI](/handbook/people-group/directly-responsible-individuals/) が Issue が計画されているマイルストーン中にそのデザインと機能を実装するためにアサインされます。
+Product Designer は、ユーザー向け Issue の製品開発で重要な役割を果たします。彼らはエンジニアリングとプロダクトマネージャーと協力して、機能のためのユーザー体験を設計します。設計ソリューションが提案され、合意され、検証されたら、エンジニアリングの [DRI](/handbook/people-group/directly-responsible-individuals/) が、Issue が計画されたマイルストーン中にその設計と機能を実装することにアサインされます。
 
-[コードレビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html#approval-guidelines) に従うことは、ユーザー向けの変更があるすべての MR がプロダクトデザイナーにレビューされることを保証するべきです。UX レビューは、品質を維持しながらベロシティへの影響を軽減するため、[デザイナーレビューガイドライン](/handbook/product/ux/product-designer/mr-reviews/) にできるだけ沿って行われます。
+[コードレビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html#approval-guidelines) に従うことは、ユーザー向けの変更を伴うすべての MR が Product Designer によってレビューされることを確実にすることを意味します。UX レビューは、品質を維持しながら速度への影響を減らすため、可能な限り [デザイナーレビューガイドライン](/handbook/product/ux/product-designer/mr-reviews/) に近い形で従う必要があります。
 
-#### インクルーシブな開発
+#### インクルーシブ開発
 
-私たちの計画と開発プロセスは、承認ゲートや自動通知メカニズムよりも、過剰なコミュニケーションに大きく依存しています。私たちは、プロセスのあらゆるステップが可能な限り透明になることを確保するために、全員が積極的な姿勢と責任を持ちます。計画と構築の両方において、直接的な、クロスファンクショナルな、その他の関連するステークホルダーをプロセスに早い段階から含めます。これにより、全員が自分の能力を最大限に発揮し、適切なタイミングで貢献できます。これには GitLab のオブジェクト、Slack、ミーティング、デイリースタンドアップが含まれますが、これに限定されません。
+私たちの計画と開発のプロセスは、承認ゲートや自動通知メカニズムよりも、過剰なコミュニケーションに大きく依存しています。私たちは、プロセスのあらゆるステップが可能な限り透明であることを確実にするための、関係者全員のプロアクティブな考え方と責任を堅持しています。これは、計画と構築の両方で、直接的、機能横断的、その他の関連するステークホルダーがプロセスの早い段階で含まれることを意味します。これにより、誰もが自分のキャパシティを最大限に発揮し、プロセスの正しい時点で貢献できます。これには、GitLab オブジェクト、Slack、ミーティング、毎日のスタンドアップなどを含めることができますが、これらに限定されません。
 
-その実践的な例：
+これのいくつかの実用的な例:
 
-- Epic、Issue、マージリクエストをオープンまたは作業を開始するとき、すべてのステークホルダーがこれを認識しているか、または更新される必要があるかを検討する。不明な場合は、沈黙するよりも更新する方向でエラーを犯す。
-- 重要な進捗があった場合、自動メール通知に頼るのではなく、直接フィードバックを必要としない場合でも関連するステークホルダーにメンションすることで、彼らの関与を明示的にする。
+- エピック、Issue、またはマージリクエストをオープンするか、それで作業を開始するときに、すべてのステークホルダーがこれを認識しているか、または更新する必要があるかを検討してください。確信が持てない場合は、黙っているよりも更新することを誤りとしてください。
+- 重要な進捗を遂げるときには、自動メール通知に依存するのではなく、それらをメンションすることで、即座のフィードバックが必要なくても、関連するステークホルダーに見られていることを確認してください。彼らの関与を明示してください。
 
-注：マージリクエストエクスペリエンスに関連する Issue については、技術的または Deferred UX が発生しないように、常に [コードレビューグループ](/handbook/product/categories/#code-review-group) を必ずループに入れてください。コラボレーションフレームワークの詳細については、[マージリクエストエクスペリエンスに関するコラボレーション](/handbook/product/cross-stage-features/merge-requests/) ページを参照してください。
+注: マージリクエスト体験に関連する Issue については、技術的または Deferred UX が発生するのを避けるために、常に [Code Review グループ](/handbook/product/categories/#code-review-group) に情報を共有してください。コラボレーションフレームワークについて詳しく学ぶには、[マージリクエスト体験のコラボレーション](/handbook/product/cross-stage-features/merge-requests/) ページを参照してください。
 
-注：直接アクションを要求するのではなく、情報提供のみを目的としてステークホルダーをメンションする際の良い慣行として、@メンションハンドルの直後に `FYI` を入れることです。
+注: メンションされたステークホルダーから直接的なアクションを要求するのではなく、情報提供のみを目的とする場合の良いプラクティスは、@mention ハンドルの直後に `FYI` を配置することです。
 
 #### UX スコアカード
 
-私たちにとってトップ優先事項はユーザビリティであり、[JTBD](/handbook/engineering/devops/verify/pipeline-execution/jtbd/) を効果的に評価する 1 つの方法は、定期的な [UX スコアカード](/handbook/product/ux/ux-scorecards/) です。機能的なクラスターやプロビジョニングされた環境と `.gitlab-ci.yml` ファイルなど、インフラサポートが必要な技術的タスクについては、プロダクトデザイナーとプロダクトマネージャーはエンジニアリングマネージャーと Quality の安定したカウンターパートと協力して、JTBD のテストシナリオに基づいたプロジェクトを作成できます。この場合に一緒に作業するためのガイドライン：
+私たちにとっての最優先事項はユーザビリティであり、[JTBD](/handbook/engineering/devops/verify/pipeline-execution/jtbd/) を効果的に評価する 1 つの方法は、定期的な [UX スコアカード](/handbook/product/ux/ux-scorecards/) です。機能的なクラスタや `.gitlab-ci.yml` ファイルを持つプロビジョニングされた環境などのインフラストラクチャサポートを必要とする技術的なタスクについては、Product Designer とプロダクトマネージャーが、エンジニアリングマネージャーおよび Quality 安定したカウンターパートと協力して、JTBD のテストシナリオに基づいたプロジェクトを作成できます。この場合に協力するためのいくつかのガイドライン:
 
-- 安定したカウンターパートに十分なリードタイムを確保するため、*少なくとも* 1 マイルストーン前にスケジュールすること
-- 全体的な Epic を作成し、インフラ作成のタスク追跡のための Issue を追加する
-- 評価される JTBD について全員が共通理解を持てるよう、シナリオのキックオフを開催するかウォークスルーを録画する
+- 安定したカウンターパートに十分なリードタイムがあるよう、*少なくとも* 1 マイルストーン前にスケジュールしてください
+- 全体的なエピックを作成し、インフラストラクチャ作成のためのタスク追跡用 Issue を追加してください
+- キックオフをスケジュールするか、評価される JTBD についての全員の共通理解を持てるよう、シナリオのウォークスルーを記録してください
 
-また、エンジニアリングチームからのコントリビューションのために [CI サンプルプロジェクトグループ](https://gitlab.com/ci-sample-projects) で事前作成されたタスクのライブラリを維持するための取り組みも行っています。これにより、将来の UX スコアカードのオーバーヘッドを減らすことができます。
+私たちはまた、エンジニアリングチームからのコントリビューションのために、[CI Sample Projects グループ](https://gitlab.com/ci-sample-projects) で事前に作成されたタスクのライブラリを維持することにも取り組んでいます。これらは、将来 UX スコアカードからのオーバーヘッドが大きすぎることを避けるのに役立つでしょう。
 
-#### イテレーションのための Issue の分解
+#### イテレーションのために Issue を分解する
 
-最短時間で最良の結果を達成するために、次のステップに従います：
+最短時間で最良の結果を達成するため、以下の手順に従います。
 
-1. ユーザーリサーチや顧客フィードバックがユーザーニーズを特定し、そのニーズを満たすためのアイデアが生まれた後、プロダクトデザイナーが PM とエンジニアリングチームを早期かつ頻繁に巻き込みながら、それらのアイデアをデザイン提案に移動するプロセスを主導します。[UX Definition of Done](https://docs.gitlab.com/development/contributing/merge_request_workflow/#definition-of-done) は、MVC が開発フェーズに移行する前に設計ワークフローのどのステップを完了する必要があるか、カウンターパートにより良い洞察を提供するために参照できます。
-1. 提案された解決策への確信度に応じて、それらのプロトタイプをユーザーテストを通じて、元の問題を解決できるかどうかを検証する場合があります。
-1. エンジニア、プロダクトデザイナー、EM、PM は、解決策のスコープとチームの経験に基づいて、どれを最初に取り組むかを決定するために複数の可能なエンジニアリングアプローチを比較・対照します。
-1. 解決策が検証され、チームが必要な工数を明確に理解したら、大きな解決策をより小さな Issue に分解する時期です。これは通常 `workflow::planning breakdown` フェーズで行われ、チーム全体（PM、エンジニア、プロダクトデザイナー、QA、テクニカルライター）がプロセスに関与します。彼らは緊密に協力して、初期の顧客に価値を提供し、将来のプロダクト開発のフィードバックを得るための最も技術的に実現可能で最小限の機能セットを見つけます。反復戦略についてはヘルプを参照してください。
+1. ユーザーリサーチやお客様のフィードバックがユーザーニーズを特定し、そのニーズを満たすためのいくつかのアイデアを生成した後、Product Designer は、これらのアイデアを設計提案に移動するプロセスを推進し、PM とエンジニアリングチームを早く頻繁に巻き込みます。MVC が開発フェーズに移動できるようになる前に、設計ワークフローのどのステップを完了する必要があるかについての洞察をカウンターパートに提供するために、[UX Definition of Done](https://docs.gitlab.com/development/contributing/merge_request_workflow/#definition-of-done) を参照できます。
+1. 提案されたソリューションへの私たちの自信に応じて、これらのプロトタイプをユーザーテストにかけて、元の問題を解決するかどうか検証する場合があります。
+1. エンジニア、Product Designer、EM、PM は、ソリューションのスコープとチームの経験に基づいて、最初に取り組むかを決定するために、複数の可能なエンジニアリングアプローチを比較対照できます。
+1. ソリューションが検証され、チームが必要な労力を明確に理解したら、大きなソリューションをより小さな Issue に分解する時間です。これは通常、`workflow::planning breakdown` フェーズで行われ、チーム全体 (PM、エンジニア、Product Designer、QA、テクニカルライター) がプロセスに関わります。彼らは緊密に協力して、もっとも技術的に実現可能で最小の機能セットを見つけ、初期のお客様に価値を提供し、将来の製品開発のためのフィードバックを提供します。助けが必要な場合はイテレーション戦略を確認してください。
 
-Epic または完全な機能について少なくとも 1 マイルストーン前に広くデザインし、その後大きな解決策をより小さな Issue に分割して次のマイルストーンで取り組む目標を目指します。大きな解決策をデザインするために 1 マイルストーン前に作業することが不可能な場合、エンジニアリングとプロダクトデザイナーは、同じマイルストーンで実装される初期の顧客を満足させる最も技術的に実現可能で最小限の機能セット（[MVC](/handbook/values/#minimal-valuable-change-mvc)）を定義します。
+私たちは、エピックや完全な機能のために少なくとも 1 マイルストーン前に広範に設計し、その後、次のマイルストーンでピックアップする小さな Issue に大きなソリューションを分解することを目指します。
+大きなソリューションを設計するために 1 マイルストーン前に作業することが不可能だと仮定します。その場合、エンジニアリングと Product Designer は、同じマイルストーンで実装される、初期のお客様を満足させる最初のもっとも技術的に実現可能で最小の機能セット ([MVC](/handbook/values/#minimal-valuable-change-mvc)) を定義します。
 
-#### UX、プロダクト、エンジニアリング間のクランチタイムの回避
+#### UX、Product、Engineering の間でのクランチタイムを避ける
 
-- 理想的には、プロダクトマネジメントとプロダクトデザイナーは、構築前に問題の定義と解決策が十分に検証されることを確保するために、エンジニアリングの提案より 3 ヶ月前に作業を進めます。詳細は [バリデーショントラック](/handbook/product-development/how-we-work/product-development-flow/#validation-track) を参照してください。これにより、事前に大きなアイデアを考え、エンジニアリングとさらに協力してより小さなイテレーションに分解できます。これは実装マイルストーンが開始する前に完了していることが理想的です。
-- プロダクトデザイナー、PM、エンジニアリングは、バリデーショントラックの[デザインフェーズ](/handbook/product-development/how-we-work/product-development-flow/#validation-phase-4-design)を使用して、複雑さについて話し、課題を議論し、ブロッカーを明らかにします。全員が合意したら、[ソリューションバリデーションフェーズ](/handbook/product-development/how-we-work/product-development-flow/#validation-phase-5-solution-validation)に移行できます。
-- デザインソリューションの技術的実現可能性を理解・調査するのに 1 週間以上かかる場合は、ワークフローラベルを `~workflow::blocked` に更新し、技術的ディスカッションが解決するまでエンジニアリング DRI にアサインを変更します。ディスカッションが長引き、目的とするマイルストーンでデザインソリューションが提供される可能性が低くなる場合は、現在の Issue をブロックするディスカッションのために[スパイク Issue を作成することを検討します](/handbook/engineering/devops/verify/pipeline-execution/#spikes)。
-- エンジニアとプロダクトデザイナーは連絡を取り合い、[ビルドトラック](/handbook/product-development/how-we-work/product-development-flow/#build-track) 全体で頻繁に連携して、計画外の変更を避けます。
+- 理想的には、プロダクトマネジメントと Product Designer は、構築前に問題定義とソリューションが十分に検証されていることを確認するために、エンジニアリング提案より 3 か月先に作業することを目指します。詳細は [検証トラック](/handbook/product-development/how-we-work/product-development-flow/#validation-track) を参照してください。これにより、より大きなアイデアを事前に思いつき、エンジニアリングとさらに協力してそれをより小さなイテレーションに分解できます。理想的には、これは実装マイルストーンが始まる前に完了する必要があります。
+- Product Designer、PM、エンジニアリングは、検証トラックの [設計フェーズ](/handbook/product-development/how-we-work/product-development-flow/#validation-phase-4-design) を使って複雑さについて話し、課題を議論し、ブロッカーを発見します。私たち全員が合意したら、それを [ソリューション検証フェーズ](/handbook/product-development/how-we-work/product-development-flow/#validation-phase-5-solution-validation) に移動できます。
+- 設計ソリューションの技術的実現可能性を理解・調査するのに 1 週間以上かかっている場合、ワークフローラベルを `~workflow::blocked` に更新し、技術的議論が解決されるまでアサインをエンジニアリング DRI に変更します。議論がより長く続くことが予想され、設計ソリューションが意図したマイルストーンで提供される可能性が低くなる場合は、現在の Issue をブロックする議論のための [スパイク Issue](/handbook/engineering/devops/verify/pipeline-execution/#spikes) の作成を検討してください。
+- エンジニアと Product Designer は、計画外の変更を避けるために、[Build トラック](/handbook/product-development/how-we-work/product-development-flow/#build-track) を通じて連絡を取り合い、頻繁にアラインする必要があります。
 
-### コミュニティマージリクエストへのより広いコミュニティとのコラボレーション
+### コミュニティマージリクエストでの広範なコミュニティとのコラボレーション
 
-GitLab への一般的なコントリビューション方法の詳細については、[ドキュメント](https://docs.gitlab.com/ee/development/contributing/)をご覧ください。
+GitLab に一般的にコントリビュートする方法の詳細については、[ドキュメント](https://docs.gitlab.com/ee/development/contributing/) を参照してください。
 
-#### 機能開発の連携
+#### 機能開発のアラインメント
 
-エンジニアリング DRI は `workflow:in dev` フェーズ全体でプロダクトデザイナーと協力して、元々合意された内容とは異なる予期しない動作を示す解決策の問題を早期に発見します。最初の Issue で合意されていない変更を追加する必要がある場合は、フォローアップ Issue を作成し、エンジニアリング DRI はプロダクトマネージャーと協力してその Issue を次のマイルストーンにスケジュールします。これにより、[サインオフよりもクリーンアップ](/handbook/values/#cleanup-over-sign-off)に焦点を当て、[低レベルの恥](/handbook/values/#low-level-of-shame-when-dogfooding) で Issue を迅速にイテレーションし、合意したことを達成できます。これらのフォローアップ Issue の完了を遅らせて、大量の Deferred UX Issue が蓄積されないよう注意が必要です。
+エンジニアリング DRI は、当初合意された内容と異なる予期しない動作を示すソリューションに関する潜在的な問題を、`workflow:in dev` フェーズを通じて十分早期に明らかにするため、Product Designer と協力します。最初の Issue で合意されていなかった追加すべき変更がある場合 - フォローアップ Issue を作成し、エンジニアリング DRI はプロダクトマネージャーと協力して、その Issue を続くマイルストーンでスケジュールする必要があります。これにより、[サインオフではなくクリーンアップ](/handbook/values/#cleanup-over-sign-off) に焦点を当て、[低レベルの恥ずかしさで](/handbook/values/#low-level-of-shame-when-dogfooding) Issue で素早くイテレートし、それでも私たちが合意したことを成し遂げることができます。延期された UX Issue を大量に積み上げないように、これらのフォローアップ Issue の完了を後回しにしないように注意する必要があります。
 
-解決策が合意されたデザインと一致しないことが続く場合、DRI、デザイナー、プロダクトマネージャーとのレトロスペクティブを開催して、コミュニケーションのギャップを議論し、改善します。エンジニアリング DRI が要件を満たすために、特定の Issue のマージリクエストに UX 承認を必要とし始めることが必要になる場合があります。
+ソリューションが合意された設計と一貫して一致しないことがわかった場合、私たちは DRI、デザイナー、プロダクトマネージャーと一緒に振り返りを行い、ギャップがどこにあるかを議論し改善できるようにします。エンジニアリング DRI が要件を満たすのを助けるために、特定の Issue のマージリクエストに UX 承認を要求し始める必要があるかもしれません。
 
 ### GitLab の他のプロダクトグループとのコラボレーション
 
-私たちのプロダクトエリアのスコープが Create:Source Code や Verify:Runner を含む他の多くのグループに影響することから、私たちはできる限り協力的に作業するよう努めています。コラボレーションを可能にするために、機能やドキュメントを更新または作成するための単一の MR で内部ステークホルダーと協力することがあります。https://gitlab.com/gitlab-org/gitlab/-/merge_requests/76253 は、これがうまく機能する例です。
+私たちの製品領域のスコープが Create:Source Code や Verify:Runner を含む他の多くのグループに触れるため、私たちは作業において可能な限り協力的であろうとします。コラボレーションを可能にするために、機能とドキュメントを更新または作成するために、単一の MR で他の社内ステークホルダーと一緒に働くことがあります。https://gitlab.com/gitlab-org/gitlab/-/merge_requests/76253 は、これがどのように非常にうまく機能するかの一例です。
 
 ### E2E テスト
 
-可能な限り、エンジニアは新しい機能やバグ修正に関連するすべてのテストを追加します。エンジニアは新しい機能やバグ修正に関連するすべてのテスト（ユニット、コンポーネント、インテグレーション、または E2E）を追加することが常に求められます。ただし、E2E テストの作成については複数の理由から体系的に適用できない場合があることを認識しています。このセクションでは、テストを手間なく効率的に提供するためのいくつかの方法を挙げます。
+可能な場合は常に、エンジニアは新しい機能やバグ修正と一緒にすべての関連テストを追加する必要があります。
+新しい機能やバグ修正と一緒に、エンジニアがすべての関連テスト (単体、コンポーネント、統合、または E2E) を追加することは常に必要です。
+ただし、E2E テストの作成では、複数の理由でこれを体系的に適用できないことを認識しています。このセクションでは、私たちが痛みなく効率的にテストを提供するために働く方法のいくつかをリストします。
 
 #### 事前に計画する
 
-クワッドプランニングで必要なテストを早期に定義することを目指します。すべてのテストは実装が始まる前に定義され、すべての関係者が以下について合意する必要があります：
+私たちは、Quad プランニングで必要なテストを早期に定義することを目指します。
+すべてのテストは実装が始まる前に定義され、すべての関係者が以下に同意する必要があります。
 
 - どのタイプのテストカバレッジが必要か。
 - どのテストの DRI が誰か。
 - 何が提供されるか。
 - いつ提供されるか。
-  - フィーチャーフラグが必要な場合は、[エンドツーエンドテストでのフィーチャーフラグのテスト戦略](https://gitlab.com/gitlab-org/quality/team-tasks/-/issues/782)を考慮する
+  - 機能フラグが必要な場合、[End to End テストでの機能フラグのテスト戦略](https://gitlab.com/gitlab-org/quality/team-tasks/-/issues/782) を検討してください
 
 #### E2E テストは並行して書かれる
 
-新しい機能を書くとき、新しい E2E スペックを書く必要があるかもしれません。Pipeline Execution では、フロントエンドとバックエンドの MR を別々にするのと同様に、E2E テストを別の MR に追加することを推奨します。クワッドプランニング中に、その別の MR が機能の出荷に必要かどうかを決定することが重要です。すべての新機能にフィーチャーフラグを使用しているため、別の MR で作業し、チームが機能が本番に使用するのに十分なカバレッジがあると感じたときにフラグを有効にすることは比較的容易です。したがって、典型的なフルスタック機能は複数のバックエンド MR、次にフロントエンド MR、最後に E2E テスト MR を含む場合があります。
+新しい機能を書くとき、新しい E2E スペックを書く必要がある場合があります。Pipeline Execution では、フロントエンドとバックエンドの MR を分けるのを好むのと同じように、別々の MR で E2E テストを追加することを好みます。Quad プランニング中、その別々の MR が機能を出荷するために必要かどうかを判断することが不可欠です。私たちはすべての新機能に機能フラグを使うため、別々の MR で作業し、チームが機能が本番使用に十分なカバレッジを持っていると感じたときにフラグをオンにすることはとても簡単です。したがって、典型的なフルスタック機能には、複数のバックエンド MR、その後フロントエンド MR、最後に E2E テスト MR が含まれる可能性があります。
 
-#### ジョブに最適な人
+#### 仕事のための最適な人
 
-テストの作成はチームの取り組みであり、単一のグループに委任されるべきではありません。私たちは全員が品質に責任があります。とはいえ、Software Engineers in Tests（SET）が E2E テストを書くのに最も多くの知識を持っていることは認めています。E2E スペックを別の MR に分割することの利点は、機能の DRI 以外の人がアサインできることです。これにより、SET、バックエンド、またはフロントエンド（状況に応じて）などのより適切な人がスペックを書けます。
+テストの作成はチームの努力であり、決して 1 つのグループに委任されるべきではありません。私たちは皆、品質に責任があります。
+そうは言っても、Software Engineers in Tests (SET) が E2E テストの作成について最も知識を持っていることを認識しています。E2E スペックを別の MR に分割する利点は、機能の DRI 以外の誰かにアサインできることで、より適切な人がスペックを書けるようになります。これは状況に応じて、SET、バックエンド、またはフロントエンドである場合があります。
 
-E2E テストを書くのに必要な Ruby の専門知識を考えると、SET とバックエンドエンジニアが主にテストを書くべきです。フロントエンドエンジニアは自信がある場合、SET のサポートのもとで書くことを申し出ることができますが、それは**期待されていません**。
+E2E テストを書くために必要な Ruby の専門知識を考えると、SET とバックエンドエンジニアがそれらを書くプライマリチームメンバーであるべきです。フロントエンドエンジニアは自信があれば SET のサポートを得ながらそれらを書くために自発的に取り組むことができますが、それは彼らに **期待されていません**。
 
-可能な限り、バックエンドエンジニアは新しい機能やバグ修正の E2E テストを書く手助けをします。必要に応じてチームの SET に連絡（例：MR のレビューのため）することに快適に感じるべきです。これにより SET の作業負荷が軽減され、E2E テストの責任が SET のみにならないようにします。ただし、必要な E2E テストを書くのに快適でない場合は、SET が取り組みを主導する計画を立てます。SET はコンテキストを最も持ち、毎日スペックを扱っているため、より速く書けます。さらに重要なことに、**より良い**スペックを書けます。DRI のエンジニアは SET が必要なテストを理解するのを積極的に手助けすべきです。
+可能な場合は常に、バックエンドエンジニアは新しい機能またはバグ修正の E2E テストの作成を支援する必要があります。
+彼らは、必要に応じてチームの SET にメンションすることに快適に感じる必要があります (例: MR をレビューするため)。
+これにより、SET が独力で E2E テストの責任を全部負わなくて済むよう、彼らのワークロードを軽減するのに役立ちます。
+ただし、必要な E2E テストを書くのに快適でない場合、計画は SET が労力をリードすることである必要があります。その理由は、SET がもっとも多くのコンテキストを持ち、毎日スペックで作業しているため、はるかに速く書けるからです。さらに重要なのは、彼らがはるかに **より良い** スペックを書けることです。
+DRI エンジニアは、SET が必要なテストを理解できるよう、プロアクティブに支援する必要があります。
 
-#### 容量の考慮
+#### キャパシティの考慮
 
-SET が書くべき E2E テストが多すぎる場合、チームのバックエンドエンジニアがいくつかの取り組みを主導できるか確認する必要があります。テストは必要な作業の一部であるため、Issue をマイルストーンにアサインする際に E2E テストを考慮に入れる必要があります。
+SET が書くべき E2E テストが多すぎる場合、彼らはチームのバックエンドエンジニアに、いくつかの労力をリードできるかどうかを確認する必要があります。テストは必要な作業の一部であるため、Issue をマイルストーンにアサインするときに E2E テストを考慮する必要があります。
 
-#### 追加のテストカバレッジを必要とするバグ修正
+#### 追加のテストカバレッジが必要なバグ修正
 
-バグを修正するとき、このバグが将来再び起きることを防ぐためのテストを理想的には書きたいです。ただし、書く必要があるスペック（ユニット、インテグレーション、または E2E テスト）が、できるだけ早くマージする必要があるコード変更（例：タイムセンシティブな解決策が必要）の一部である場合、修正を先にマージし、その後スペックを書く Issue を作成することが好ましいです。これにより MR のマージがブロックされません。この例外であるべきです。
+バグを修正するとき、私たちは理想的には、将来このバグが再発するのをキャッチして防ぐテストを書きたいと考えています。
+ただし、書く必要のあるスペック (単体、統合、または E2E テスト) が、できるだけ早くマージする必要のあるコード変更の一部である場合 (例: 時間に敏感な解決が必要)、修正を最初にマージし、その後にスペックを書く Issue を作成して、MR のマージをブロックしないようにする方が好ましいです。この例は、ルールではなく例外と見なされる必要があります。
 
-#### スペックのフォローアップ Issue の作成
+#### スペック用のフォローアップ Issue の作成
 
-テストのフォローアップ Issue を作成する際、バックログに積まれないことを確保する必要があります。テストは不可欠であり、そのように優先されるべきです。必要なテストのフォローアップ Issue を作成するとき：
+テスト用のフォローアップ Issue を作成するとき、それらがバックログの山の上に座らないことを確実にする必要があります。
+テストは必須であり、そのように優先順位付けされる必要があります。
+必要なテスト用のフォローアップ Issue を作成するとき:
 
-- 次のマイルストーンに Issue をアサインし、取り組むための余地を作る。
-- 説明に機能のテストに必要なすべてのコンテキストを追加する（例：どこにあるか、どのように機能するか、どのように設定するか）。
-- すぐに DRI をアサインし、Issue と必要な作業を認識できるようプロダクトマネージャーに cc する。
+- 次のマイルストーンに Issue をアサインし、取り組むためのスペースを作ることを確認してください。
+- 機能をテストするために必要なすべてのコンテキストを説明に追加してください。例: それがどこにあるか、どのように機能するか、どのように設定するかなど。
+- すぐに DRI をアサインし、プロダクトマネージャーが Issue と必要な作業を認識できるよう cc してください。
 
 ### バグ
 
-グループとして、バグの [Severity Service Level Objective](/handbook/product-development/how-we-work/issue-triage/#severity-slos) を満たすよう努めています。すべてのバグを定期的にレビューし、`~missed-SLO` ラベルと週次の [トリアージレポート](/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#group-level-bugs-features-and-deferred-ux) を通じて SLO に近づいている Issue を優先します。グループの目標の 1 つは、Quality 部門が [KPI](/handbook/engineering/infrastructure/performance-indicators/#s2-oba) として追跡しているオープンな S2 バグの平均経過時間を削減することです。これを達成するために、毎マイルストーンで古いバグをトリアージし、可能なものはクローズし、誤ってラベル付けされたバグの重大度を下げ、再現できない Issue の詳細を依頼し、特定された [JTBD](/handbook/engineering/devops/verify/pipeline-execution/jtbd/) のバグに焦点を当てて再現可能なものを優先します。
+グループとして、私たちはバグの [Severity Service Level Objective](/handbook/product-development/how-we-work/issue-triage/#severity-slos) を満たすよう努めます。私たちは定期的にすべてのバグをレビューし、毎週の [Triage Report](/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#group-level-bugs-features-and-deferred-ux) を通じて、`~missed-SLO` ラベルが付いた Issue と SLO (Service Level Objective) に近づいている Issue を優先順位付けします。グループの目標の 1 つは、Quality 部門が [KPI](/handbook/engineering/infrastructure/performance-indicators/#s2-oba) として追跡しているオープンな S2 バグの中央値の年齢を減らすことです。これを行うために、私たちは各マイルストーンで古いバグをトリアージし、できるものをクローズし、ミスラベルされたバグの重大度を下げ、再現できない Issue について詳細を求め、特定された [JTBD](/handbook/engineering/devops/verify/pipeline-execution/jtbd/) のバグに焦点を当てて再現できるものを優先順位付けします。
 
 ### 機能
 
-新しい機能を構築する際、イテレーション価値観に沿って、機能のコアな側面をカバーする MVC を目指します。その後、残りの機能をイテレーションするために `~feature::enhancement` ラベルの Issue を作成します。新しい機能が多く使用されるほど、ユーザーには欠けている機能がバグのように見えるようになります。
+私たちが新しい機能を構築するとき、Iteration の価値に沿って、機能の中核的な側面をカバーする MVC を目指します。
+その後、残りの機能をイテレートするために `~feature::enhancement` ラベル付きの Issue を作成します。新しい機能が使われれば使われるほど、最終的にはユーザーによって不足している機能がバグとして認識される可能性があります。
 
-`~feature::enhancement` に `severity::1`、`severity::2`、`severity::3`、`severity::4` ラベルを使用して、それらが `~type::bug` にならないようにするためのこれらの Issue の影響を分類します。影響の評価ガイドライン：
+私たちは、これらの Issue が `~type::bug` になるのを防ぐために、`severity::1`、`severity::2`、`severity::3`、`severity::4` ラベルを `~feature::enhancement` と一緒に使って、これらの Issue の影響を分類します。
+影響の評価のためのガイドラインとして以下のリストを使用します。
 
 | ラベル         | 定義           | 説明 |
 |---------------|----------------------|-------------|
-| `severity::1` | ブロッキングまたはクリティカル | 機能のコアに対してエンハンスメントが不可欠。機能が現在不完全か、追加のアクションが必要。 |
-| `severity::2` | 高                 | 機能の一部の重要な側面が欠けているが、機能は価値を提供。ただし、欠けている動作により機能がバグのように見える場合がある。 |
-| `severity::3` | 中程度               | 機能は動作しているが、あまり一般的でないシナリオではエンハンスメントが必要。 |
-| `severity::4` | 低                  | 機能は正常に動作しており、改善は顧客満足度の向上を目的としている。 |
+| `severity::1` | ブロッキングまたはクリティカル | 機能の中核に対して拡張は重要です。機能は現在不完全か、追加のアクションが必要です。 |
+| `severity::2` | 高                 | 機能のいくつかの重要な側面が欠けていますが、機能は価値を提供します。ただし、欠けている動作により、機能がバグがあるように見える可能性があります。 |
+| `severity::3` | 中               | 機能はうまく動作しますが、より一般的でないシナリオでは拡張が必要です。 |
+| `severity::4` | 低                  | 機能は問題なく動作し、改善はお客様の満足度を向上させることを目指しています。 |
 
 ### 技術的負債
 
-[Pipeline Execution 技術的負債 Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/1438885) を使用して技術的負債を追跡しています。このボードでは計画段階の Issue を追跡します。
+私たちは、計画フェーズの Issue を追跡する [Pipeline Execution Technical Debt issue board](https://gitlab.com/groups/gitlab-org/-/boards/1438885) を使って、技術的負債を追跡します。
 
-このボードには 2 つの主なセクションがあります：
+このボードには 2 つの主要セクションがあります。
 
 1. Issue の準備状況
-    - `workflow::planning breakdown` には現在精査中の Issue があります。
-    - `workflow::ready for development` には明確に定義されウェイトが割り当てられた Issue があります。
+    - `workflow::planning breakdown` には、現在リファイン中の Issue があります。
+    - `workflow::ready for development` には、明確に定義され、重みがアサインされた Issue があります。
 
-1. 影響の内訳。`severity::1`、`severity::2`、`severity::3`、`severity::4` ラベルを使用して特定の技術的負債項目の影響を分類します。以下のリストを影響の評価ガイドラインとして使用します：
+1. 影響の内訳。`severity::1`、`severity::2`、`severity::3`、`severity::4` ラベルを使って、特定の技術的負債項目の影響を分類します。
+   影響の評価のためのガイドラインとして以下のリストを使用します。
     - `severity::1` ブロッキングまたはクリティカル
-      - そのエリアでのさらなる変更を妨げるブロッキング負債
-      - 毎回同じ複雑なコードにつまずき、開発に深刻な遅延を引き起こす
-      - 問題は多くの機能の依存関係であるドメインのコアな部分に存在する
-      - 問題はいくつかのドメインにわたって広く存在する
-      - 問題は多くの報告された `severity::1` バグに関連している
+      - その領域でのさらなる変更を妨げるブロッキング負債
+      - 私たちは毎回同じ複雑なコードに遭遇し、開発に深刻な遅延を引き起こす
+      - 問題は、多数の機能の依存関係を表す私たちのドメインの中核部分に存在する
+      - 問題は複数のドメインに広く広がっている
+      - 問題は、報告された `severity::1` バグの数に関連している
     - `severity::2` 高
-      - エリアの多くの変更をブロックするか、回避が難しくする
-      - 問題は頻繁に変更されるエリアに存在し、簡単に広がる原因や回避策になる
-      - 問題は重要な機能（例：マルチプロジェクトパイプライン）に関連している
-      - 問題は特定のドメインで非常に一般的で、他のドメインにも漏れ出している
-      - 問題は多くの報告された `severity::2` バグに関連している
-    - `severity::3` 中程度
-      - 問題はドメインで支援的な役割を持つ機能に存在する
-      - 問題は頻繁に変更されないエリアに存在する
-      - 問題は特定のドメインで非常に一般的だが、そのドメインの境界内に限られる
-      - 回避策により開発が遅くなる
-      - 問題は多くの報告された `severity::3` バグに関連している
+      - その領域での多くの変更をブロックするか、それらを回避するのを困難にする
+      - 問題は頻繁に変更される領域に存在し、それまたは回避策が簡単に広がる
+      - 問題は重要な機能 (例: マルチプロジェクトパイプライン) に関連している
+      - 問題は特定のドメインで非常に一般的で、他のドメインにも漏れ出す
+      - 問題は、報告された `severity::2` バグの数に関連している
+    - `severity::3` 中
+      - 問題は、私たちのドメインでサポート的な役割を持つ機能に存在する
+      - 問題は頻繁に変更されない領域に存在する
+      - 問題は特定のドメインで非常に一般的だが、そのドメイン境界に限定されている
+      - 回避策が開発を遅らせる
+      - 問題は、報告された `severity::3` バグの数に関連している
     - `severity::4` 低
-      - 問題は非常に孤立しており、開発への影響が低いか全くない
-      - 影響を受けるエリアは頻繁に変更されない
-      - 問題は多くの報告された `severity::4` バグに関連している
+      - 問題は非常に孤立しており、開発への影響は低いか、ない
+      - 影響を受ける領域は頻繁に変更されない
+      - 問題は、報告された `severity::4` バグの数に関連している
 
-1. Issue のスケジューリング。エンジニアリングマネージャーは [PE 技術的負債 Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/3567075?scope=all&label_name[]=group%3A%3Apipeline%20execution&label_name[]=technical%20debt&assignee_id=None) をレビューし、今後のマイルストーンにスケジュールする Issue を推薦します。マイルストーンの [プランニング Issue](#planning) に追加するか、次のマイルストーンに Issue をスケジュールする必要性についてプロダクトと連絡を取ります。チームはスプリント容量の 20% を技術的負債 Issue で満たすよう努めています。
+1. Issue のスケジューリング。エンジニアリングマネージャーは [PE Technical Debt issue board](https://gitlab.com/groups/gitlab-org/-/boards/3567075?scope=all&label_name[]=group%3A%3Apipeline%20execution&label_name[]=technical%20debt&assignee_id=None) をレビューし、Issue をマイルストーンの [計画 Issue](#planning) に追加するか、Product と来るべきマイルストーンで Issue をスケジュールする必要性についてコミュニケートすることで、今後のマイルストーンにスケジュールする Issue を推奨します。チームは、スプリントのキャパシティの 20% を技術的負債 Issue で埋めるよう努めます。
 
-複数の要因が同時に存在する場合があります。その場合は判断を使って影響スコアを上げるか下げるかを決めます。例えば：
+複数の要因が同時に存在する可能性があることに注意してください。その場合、影響度スコアを上げるか下げるかは判断に基づいて決定してください。例えば:
 
-- 問題はドメインで支援的な役割を持つ機能に存在するが、多くの `severity::2` バグに関連している。
-  この場合は `severity::2` を選択します。
-- 問題は重要な機能に関連しているが、回避策は許容可能で、その周りのコードはあまり変更されない。この場合は `severity::3` を選択します。
+- 問題は、私たちのドメインでサポート的な役割を持つ機能に存在しますが、それは多数の `severity::2` バグに関連しています。
+  その場合、`severity::2` を選択してください。
+- 問題は重要な機能に関連していますが、その周辺のコードは頻繁に変更されないため、回避策は受け入れ可能です。その場合、`severity::3` を選択してください。
 
 ### リスクマッピング
 
-リスク環境とリスクの原因・結果をより良く理解するために、Pipeline Execution チームは [リスクマップ](/handbook/engineering/devops/verify/pipeline-execution/risk-map/) をリスク管理ツールとして使用し、軽減戦略を優先して品質を向上させます。
+リスク環境とそれぞれのリスクの原因と結果をよりよく理解するため、Pipeline Execution チームは [リスクマップ](/handbook/engineering/devops/verify/pipeline-execution/risk-map/) をリスク管理ツールとして使い、緩和戦略を優先順位付けし、品質を向上させます。
 
-### レトロスペクティブ
+### 振り返り
 
-
-<!-- include omitted: includes/engineering/verify-retrospectives.md (no localized version under content/ja/) -->
-
+{{% include "includes/engineering/verify-retrospectives.md" %}}
 
 ### チームコミュニケーション
 
-
+{{% engineering/verify-team-communication slack-channel="g_pipeline-execution" slack-url="https://gitlab.slack.com/archives/CPCJ8CCCX" group-label="group:pipeline execution" group-issues-url="https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=group%3A%3Apipeline+execution&scope=all" gitlab-subgroup="pipeline-execution-group" %}}
 
 ## 開発者オンボーディング
 
-[Verify の開発者オンボーディング](/handbook/engineering/devops/verify/#developer-onboarding-in-verify) セクションをご参照ください。
+[Verify における開発者オンボーディング](/handbook/engineering/devops/verify/#developer-onboarding-in-verify) セクションを参照してください。

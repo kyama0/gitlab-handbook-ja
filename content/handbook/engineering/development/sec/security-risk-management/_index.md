@@ -7,8 +7,8 @@ description: >-
   開発チームで構成されています。GitLab のセキュリティとコンプライアンスポートフォリオ
   全体のニーズをサポートし、その能力を最大限に活用してこの目標を達成します。
 upstream_path: /handbook/engineering/development/sec/security-risk-management/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-28T08:04:29Z"
+upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
+translated_at: "2026-05-06T12:00:00Z"
 translator: claude
 stale: false
 ---
@@ -25,51 +25,30 @@ stale: false
 
 ### Security Infrastructure
 
-EM:
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+EM: {{< member-by-gitlab "ryaanwells" >}}
 
-
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< member-and-role-by-gitlab "minac" "schmil.monderer" "bala.kumar" "ghavenga" "Quintasan" "srushik" "anarinesingh" >}}
 
 ### Security Insights
 
-PM:
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+PM: {{< member-by-gitlab "mclausen35" >}}
 
+EM: {{< member-by-gitlab "ajbiton" >}}
 
-EM:
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
-
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< member-and-role-by-gitlab "bwill" "svedova" "charlieeekroon" "dpisek" "lorenzvanherwaarden" "sming-gitlab" "subashis" "hptrs" "uokeadu" >}}
 
 ### Security Platform Management
 
-PM:
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+PM: {{< member-by-gitlab "g.hickman" >}}
 
+EM: {{< member-by-gitlab "or-gal" >}}
 
-EM:
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
-
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< member-and-role-by-gitlab "djadmin" "mamos-gl" "rossfuhrman" "ccharnolevsky" "gkatz1" "mfluharty" "nrotaru" >}}
 
 ### Security Policies
 
-PM:
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+PM: {{< member-by-gitlab "g.hickman" >}}
 
+EM: {{< member-by-gitlab "alan" >}}
 
-EM:
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
-
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{< member-and-role-by-gitlab "aturinske" "sashi_kumar" "mcavoj" "Andyschoenen" "bauerdominic" "arfedoro" "mc_rocha" "imam_h" >}}

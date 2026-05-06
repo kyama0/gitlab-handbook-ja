@@ -1,8 +1,8 @@
 ---
 title: エンジニア
 upstream_path: /handbook/engineering/devops/create/engineers/
-upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
-translated_at: "2026-04-28T10:48:33Z"
+upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
+translated_at: "2026-05-06T10:00:00Z"
 translator: claude
 stale: false
 ---
@@ -13,29 +13,20 @@ stale: false
 
 #### Create:Code Review Backend
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createcode-review-backend" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug "francoisrose" >}}
 
 #### Create:Code Review Frontend
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createcode-review-frontend" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-role role="Senior Engineering Manager(.*)Create:Code Review" team=".*(Frontend|Fullstack).*Create:Code Review" >}}
 
 #### Create:Remote Development
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createremote-development" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug "adebayo_a" >}}
 
 #### Create:Source Code Backend
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createsource-code-backend" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-role role="Senior Engineering Manager(.*)Create:Source Code" team=".*(Backend).*Create:Source Code" >}}
 
 #### Create:Source Code Frontend
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/create/engineers/#createsource-code-frontend" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{< team-by-manager-role role="Senior Engineering Manager(.*)Create:Source Code" team=".*(Frontend|Fullstack).*Create:Source Code" >}}

@@ -4,8 +4,8 @@ description: >-
   競争力のあるアプリケーションセキュリティプラットフォームとして、エンタープライズ顧客の需要と
   必要な機能を満たすために必要なインフラストラクチャとデータベースリソースを提供します。
 upstream_path: /handbook/engineering/development/sec/security-risk-management/security-infrastructure/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-28T08:04:29Z"
+upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
+translated_at: "2026-05-06T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -18,9 +18,6 @@ stale: false
 
 ## チーム構成
 
-EM:
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/security-infrastructure/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+EM: {{< member-by-gitlab "ryaanwells" >}}
 
-
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/sec/security-risk-management/security-infrastructure/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{< member-and-role-by-gitlab "minac" "schmil.monderer" "bala.kumar" "ghavenga" "Quintasan" "srushik" "anarinesingh" >}}
