@@ -60,7 +60,7 @@ model: inherit
 
 1. `translation-state/manifest.json` の対応するエントリを更新（または新規追加）:
    - キー: 原文の相対パス（例: `content/handbook/company/mission.md`）
-   - 値: `{ path, upstream_sha, translated_at, model: "claude-opus-4-7", input_hash }`。`input_hash` は原文ファイルの SHA-256（`sha256sum upstream/content/handbook/...md` の結果）。
+   - 値: `{ path, upstream_sha, translated_at, model, input_hash }`。`model` は実行時に使用した Claude モデル名（`model: inherit` で起動した場合は親エージェントから継承された実モデル名）を記録する。`input_hash` は原文ファイルの SHA-256（`sha256sum upstream/content/handbook/...md` の結果）。
 2. ローカル動作確認: `hugo --renderToMemory --quiet` を走らせて該当ページにエラーが出ないことを確認する（任意。エラーが出たらショートコード／HTML の取り扱いを見直す）。
 3. レビュー前提なら `translation-reviewer` サブエージェントに渡して観点 (1) 正確性 (2) 自然さ をチェックさせる。
 
@@ -68,7 +68,12 @@ model: inherit
 
 `{{< handbook-counts >}}`, `{{< team-by-* >}}`, `{{< department-members >}}`, `{{< performance-indicators ... >}}`, `{{< marketing/release-post-scheduling >}}` 等のデータ駆動ショートコードは **テンプレートが render 時に site.Data や upstream API を参照する**。これらは翻訳しても本文の出力に影響しないので、**原文のまま残せばよい**。
 
-ただし、対応するデータファイル（`data/public/team.json` 等）が repo に無い場合は build 時にエラーになる。その場合は呼び出しを HTML コメントで囲んで一時的に無効化し、`translation-state/phase2-retranslate.txt` ではなく `translation-state/missing-data.txt` 等に記録する（**HTML コメント内のショートコードも Hugo は parse するので、リテラル文字列として書く**）。
+ただし、対応するデータファイル（`data/public/team.json` 等）が repo に無い場合は build 時にエラーになる。**Hugo は HTML コメント内のショートコード呼び出しも parse する**ため、`<!-- {{< foo >}} -->` で囲んでも build エラーは消えない。一時的に無効化したい場合は次のいずれかにする:
+
+1. リテラル表示構文に置き換える: `{{</* foo */>}}` / `{{%/* foo */%}}` （シェル展開風のエスケープ。レンダリングされず、原文が出力される）
+2. ショートコード呼び出しを完全に削除し、原文ファイルへのリンクと TODO コメントを残す
+
+いずれの場合も `translation-state/missing-data.txt` 等に記録する。
 
 # 出力フォーマット
 
