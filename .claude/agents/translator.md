@@ -68,7 +68,12 @@ model: inherit
 
 `{{< handbook-counts >}}`, `{{< team-by-* >}}`, `{{< department-members >}}`, `{{< performance-indicators ... >}}`, `{{< marketing/release-post-scheduling >}}` 等のデータ駆動ショートコードは **テンプレートが render 時に site.Data や upstream API を参照する**。これらは翻訳しても本文の出力に影響しないので、**原文のまま残せばよい**。
 
-ただし、対応するデータファイル（`data/public/team.json` 等）が repo に無い場合は build 時にエラーになる。その場合は呼び出しを HTML コメントで囲んで一時的に無効化し、`translation-state/phase2-retranslate.txt` ではなく `translation-state/missing-data.txt` 等に記録する（**HTML コメント内のショートコードも Hugo は parse するので、リテラル文字列として書く**）。
+ただし、対応するデータファイル（`data/public/team.json` 等）が repo に無い場合は build 時にエラーになる。**Hugo は HTML コメント内のショートコード呼び出しも parse する**ため、`<!-- {{< foo >}} -->` で囲んでも build エラーは消えない。一時的に無効化したい場合は次のいずれかにする:
+
+1. リテラル表示構文に置き換える: `{{</* foo */>}}` / `{{%/* foo */%}}` （シェル展開風のエスケープ。レンダリングされず、原文が出力される）
+2. ショートコード呼び出しを完全に削除し、原文ファイルへのリンクと TODO コメントを残す
+
+いずれの場合も `translation-state/missing-data.txt` 等に記録する。
 
 # 出力フォーマット
 

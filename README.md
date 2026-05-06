@@ -22,7 +22,7 @@ GitLab のロゴ、タヌキマスコット、ブランドカラーは GitLab In
 
 ## ディレクトリ構成
 
-```
+```text
 upstream/              本家 handbook を git submodule として配置（英語原文）
 content/handbook/      翻訳済み Markdown（upstream と同じパス・同じファイル名で 1:1 対応）
 config/_default/       Hugo サイト設定（upstream config を JA 化したもの）
