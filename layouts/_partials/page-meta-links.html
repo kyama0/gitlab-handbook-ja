@@ -1,0 +1,26 @@
+{{ with .Page.File }}
+{{ $viewHref := printf "https://gitlab.com/%s/blob/%s/content/%s" site.Params.project site.Params.branch .Path }}
+{{ $editHref := printf "https://gitlab.com/-/ide/project/%s/edit/%s/-/content/%s" site.Params.project site.Params.branch .Path}}
+{{ if hasPrefix .Path "docs" }}
+  {{ $viewHref = printf "https://gitlab.com/gitlab-com/content-sites/docsy-gitlab/-/tree/main/content/%s" .Path }}
+  {{ $editHref = printf "https://gitlab.com/-/ide/project/gitlab-com/content-sites/docsy-gitlab/edit/main/-/content/%s" .Path }}
+{{ end }}
+
+<div class="td-page-meta ml-2 pb-3 pt-2 mb-0">
+  <a
+    href="{{ $viewHref }}"
+    class="td-page-meta--view" target="_blank" rel="noopener">
+    <i class="fa fa-file-code fa-fw"></i> {{ T "post_view_this" }}
+  </a>
+  <a
+    href="{{ $editHref }}"
+    class="td-page-meta--edit" target="_blank" rel="noopener">
+    <i class="fa fa-edit fa-fw"></i> {{ T "post_edit_this" }}
+  </a>
+  {{ partial "gitlab/codeowners-line-edit.html" . }}
+</div>
+{{ end }}
+
+{{- if ne .Section "news" }}
+<h5 class="td-sidebar-link tree-root">On This Page</h5>
+{{- end }}

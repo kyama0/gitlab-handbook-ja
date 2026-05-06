@@ -1,0 +1,14 @@
+{{- $name := replaceRE `\s\(.*\)` "" . -}}
+{{- $meta := index (findRE `\s\(.*\)` .) 0 -}}
+{{- $report := index (where site.Data.public.team "name" "eq" $name) 0 }}
+{{- with $report }}
+    {{- $managerSlug := .reports_to }}
+    {{- $manager := index (where site.Data.public.team "slug" "eq" $managerSlug) 0 }}
+    {{- with $manager }}
+<span style="white-space: nowrap;">{{- partial "member/with-gitlab-link" . -}} {{ $meta }}</span>
+    {{- else -}}
+<span style="white-space: nowrap;">{{ $managerSlug }} {{ $meta }}</span>
+    {{- end -}}
+{{- else -}}
+<span style="white-space: nowrap;">{{$name}} {{$meta}}</span>
+{{- end -}}

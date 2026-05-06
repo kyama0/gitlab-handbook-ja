@@ -1,0 +1,272 @@
+{{- $stages := slice }}
+{{if gt (len .Params) 0 }}
+    {{- $stages = .Params }}
+{{- else }}
+  {{- errorf "The %q shortcode requires at least single positional argument for Stages."}}
+{{- end }}
+
+<style>
+  .diagramwrapper * {
+    box-sizing: border-box
+  }
+
+  .diagramwrapper {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+  }
+
+  @media (min-width: 992px) {
+    .diagramwrapper {
+      max-width: 80%;
+    }
+  }
+
+  .diagramwrapper .box {
+    width: 70%;
+    padding: 10px;
+    display: flex;
+    background-color: #fff
+  }
+
+  .diagramwrapper .box svg {
+    width: 100%
+  }
+
+  .diagramwrapper .stagename {
+    display: flex;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    align-self: center;
+  }
+</style>
+{{if gt (len  $stages ) 5  }}
+<style>
+  .diagramwrapper .circle {
+    width: 40px;
+    height: 40px;
+    margin-right: 10px;
+    border: #999 1px solid;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 0;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+
+  .diagramwrapper .circle img {
+    fill: #524684;
+    width: 24px;
+    display: flex;
+  }
+
+  .diagramwrapper .stages {
+    display: flex;
+    margin-left: 30px;
+    width: 30%;
+    flex-flow: row wrap;
+    justify-content: space-evenly;
+    align-content: space-evenly;
+  }
+
+  .diagramwrapper .stage {
+    width: 50%;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-self: flex-start;
+  }
+
+  @media (max-width: 1200px) {
+    .diagramwrapper .stage {
+      width: 100%;
+    }
+  }
+</style>
+{{else}}
+<style>
+  .diagramwrapper .circle {
+    width: 60px;
+    height: 60px;
+    margin-right: 20px;
+    border: #999 1px solid;
+    border-radius: 50%;
+    background-color: #fff;
+    padding: 0;
+    display: flex;
+    flex-shrink: 0;
+    justify-content: center;
+  }
+
+  .diagramwrapper .circle img {
+    fill: #524684;
+    width: 40px;
+    display: flex;
+  }
+
+  @media (max-width: 1200px) {
+    .diagramwrapper .circle {
+      width: 40px;
+      height: 40px;
+      margin-right: 10px;
+    }
+    .diagramwrapper .circle img {
+      fill: #524684;
+      width: 24px;
+      display: flex;
+    }
+  }
+
+  .diagramwrapper .stages {
+    display: flex;
+    margin-left: 30px;
+    width: 30%;
+    flex-flow: column wrap;
+    justify-content: space-evenly;
+  }
+
+  .diagramwrapper .stage {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    display: flex;
+    align-self: flex-start;
+  }
+
+  .diagramwrapper .stagename {
+    display: flex;
+    font-family: Source Sans Pro, sans-serif;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    align-self: center;
+  }
+</style>
+{{end}}
+
+<div class="diagramwrapper">
+  {{if eq (len (intersect $stages (slice "All"))) 0 }}
+  <div class="box">
+  {{end}}
+
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1025 500" role="img" aria-label="GitLab DevSecOps Lifecycle">
+    <style>
+      .text {
+        font-family: Inter,Source Sans Pro,sans-serif;
+        font-size: 20px;
+        font-weight: bold;
+        fill: #2b2838;
+        letter-spacing: .02em;
+        dominant-baseline: middle;
+        text-anchor: middle;
+      }
+      .text2 {
+        font-size: 26px;
+        fill: #2b2838;
+      }
+      .devsecops {
+        font-size: 56px;
+        fill: black;
+      }
+      .mix {
+        mix-blend-mode: color-burn;
+      }
+      .line {
+        fill: none;
+        stroke: #2b2838;
+        stroke-width: 2px;
+      }
+      .highlighted {
+        font-size: 22px;
+      }
+      .highlightedline {
+        stroke-width: 3px;
+      }
+      .white_fill {
+        fill: #fff;
+      }
+      .faded {
+        fill: #a09fa4;
+      }
+      .fadestroke {
+        stroke: #a09fa4;
+      }
+      .lightline{
+        stroke: #d3d0d4;
+        stroke-width: 3px;
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="18" y1="250" x2="1007" y2="250" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#e6dcf4"/>
+      <stop offset="1" stop-color="#ffd0be"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-2" x1="720.88" y1="337.91" x2="370.24" y2="74.18" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2b2838" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#45424d" stop-opacity="0"/>
+    </linearGradient>
+    <linearGradient id="linear-gradient-3" x1="304.12" y1="162.09" x2="654.76" y2="425.82" gradientTransform="matrix(1, 0, 0, 1, 0, 0)" gradientUnits="userSpaceOnUse">
+      <stop offset="0" stop-color="#2b2838" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#45424d" stop-opacity="0"/>
+    </linearGradient>
+    <path id="background" fill="#fff" d="M 0,0 L 1025,0 L 1025,500 L 0,500" />
+    <path id="upper_arc" class="line {{ if gt (len (intersect $stages (slice "Application Security Testing" "Security Risk Management" "All"))) 0 }}highlightedline{{else}}fadestroke{{end}}" d="M 0,250 a238,238 0 0,1 238,-238 L 787,12 a238,238 0 0,1 238,238" />
+    <path id="lower_arc" class="line {{ if gt (len (intersect $stages (slice "Software Supply Chain Security" "Security Risk Management" "All"))) 0}}highlightedline{{else}}fadestroke{{end}}" d="M 0,250 a238,238 0 0,0 238,238 L 787,488 a238,238 0 0,0 238,-238" />
+    <path id="clear_1" fill="#fff" d="M -3,190 L -3,310 L 1028,310 L 1028,190" />
+    <path id="clear_2" fill="#fff" d="M 422,0 L 603,0 L 603,500 L 422,500" />
+    <path id="loop" fill="url(#linear-gradient)" d="M 512.5,181.18 L 370.24,74.18 a220,220 0 1,0 0,351.64 L 512.5,318.8 L 654.76,425.82 a220,220 0 1,0 0,-351.64" />
+    <path id="cutout_1" fill="#fff" d="M 421,250 L 304.12,162.09 a110,110 0 1,0 0,175.82" />
+    <path id="cutout_2" fill="#fff" d="M 604,250 L 720.88,162.09 a110,110 0 1,1 0,175.82" />
+    <path id="shadow_1" fill="url(#linear-gradient-2)" class="mix" d="M 512.5,181.18 L 421,250 L 304.12,162.09 L 370.24,74.18" />
+    <path id="shadow_2" fill="url(#linear-gradient-3)" class="mix" d="M 512.5,318.8 L 604,250 L 720.88,337.91 L 654.76,425.82" />
+    {{if eq (len (intersect $stages (slice "Release" "Configure"))) 2  }} <path id="deploy_operate" class="line" d="M 898,130 a165,165 0 0,1 0,240" />{{end}}
+    {{if eq (len (intersect $stages (slice "Configure" "Monitor"))) 2  }} <path id="operate_monitor" class="line" d="M 898,370 a165,165 0 0,1 -210.18,11.86 L 672,370" />{{end}}
+    {{if eq (len (intersect $stages (slice "Monitor" "Plan"))) 2  }} <path id="monitor_plan" class="line" d="M 672,370 L 558.25,284.41 M 466.75,215.59 L 353,130" />{{end}}
+    {{if eq (len (intersect $stages (slice "Plan" "Create"))) 2  }} <path id="plan_code" class="line" d="M 353,130 L 337.18,118.135 a165,165 0 0,0 -210.18,11.86" />{{end}}
+    {{if eq (len (intersect $stages (slice "Create" "Verify"))) 2  }} <path id="code_build" class="line" d="M 127,130 a165,165 0 0,0 0,240" />{{end}}
+    {{if eq (len (intersect $stages (slice "Verify"))) 1  }} <path id="build_test" class="line" d="M 127,370 a165,165 0 0,0 226,0" />{{end}}
+    {{if eq (len (intersect $stages (slice "Verify" "Package"))) 2  }} <path id="test_release" class="line" d="M 353,370 L 672,130" />{{end}}
+    {{if eq (len (intersect $stages (slice "Package" "Release"))) 2  }} <path id="release_deploy" class="line" d="M 672,130 a165,165 0 0,1 226,0" />{{end}}
+    {{if eq (len (intersect $stages (slice "Plan"))) 1  }} <path id="plan_box" fill="#2b2838" d="M 318,115 L 388,115 L 388,131 C 388,138 381,145 374,145 L 318,145Z" />{{end}}
+    {{if eq (len (intersect $stages (slice "Create"))) 1  }} <path id="code_box" fill="#2b2838" d="M 87,115 L 167,115 L 167,131 C 167,138 160,145 153,145 L 87,145Z" />{{end}}
+    {{if eq (len (intersect $stages (slice "Verify"))) 1  }} <path id="build_box" fill="#2b2838" d="M 88,355 L 166,355 L 166,371 C 166,378 159,385 152,385 L 88,385Z" />{{end}}
+    {{if eq (len (intersect $stages (slice "Verify"))) 1  }} <path id="test_box" fill="#2b2838" d="M 317,355 L 389,355 L 389,371 C 389,378 382,385 375,385 L 317,385Z" />{{end}}
+    {{if eq (len (intersect $stages (slice "Package"))) 1  }} <path id="release_box" fill="#2b2838" d="M 619,115 L 725,115 L 725,131 C 725,138 718,145 711,145 L 619,145Z" />{{end}}
+    {{if eq (len (intersect $stages (slice "Release"))) 1  }} <path id="deploy_box" fill="#2b2838" d="M 850,115 L 946,115 L 946,131 C 946,138 939,145 932,145 L 850,145Z" />{{end}}
+    {{if eq (len (intersect $stages (slice "Configure"))) 1  }} <path id="operate_box" fill="#2b2838" d="M 844,355 L 952,355 L 952,371 C 952,378 945,385 938,385 L 844,385Z" />{{end}}
+    {{if eq (len (intersect $stages (slice "Monitor"))) 1  }} <path id="monitor_box" fill="#2b2838" d="M 619,355 L 725,355 L 725,371 C 725,378 718,385 711,385 L 619,385Z" />{{end}}
+    <path class="lightline" fill="none" d="M 421,256 L 304.12,168.09 a104,104 0 1,0 -64.12,185.91 L 225,341" />
+    <path class="lightline" fill="none" d="M 604,256 L 720.88,168.09 a104,104 0 1,1 64.12,185.91 L 800,341" />
+    <path fill="#fff" class="lightline" d="M 357,205 L 668,205 a45,45 0 0,1 0,90 L 357,295 a45,45 0 0,1 0,-90" />
+    <path d="M536.514 419L536.448 418.82L529.663 401.124C529.526 400.778 529.281 400.483 528.965 400.283C528.73 400.131 528.461 400.039 528.184 400.01C527.905 399.981 527.624 400.018 527.363 400.118C527.1 400.216 526.866 400.376 526.676 400.583C526.488 400.789 526.35 401.037 526.274 401.306L521.695 415.326H503.151L498.571 401.306C498.495 401.037 498.357 400.79 498.169 400.584C497.979 400.378 497.745 400.219 497.484 400.119C497.221 400.02 496.941 399.982 496.662 400.011C496.384 400.04 496.116 400.133 495.88 400.283C495.565 400.483 495.32 400.778 495.183 401.124L488.403 418.824L488.331 419C487.355 421.551 487.235 424.35 487.989 426.976C488.743 429.601 490.33 431.911 492.511 433.556L492.536 433.575L492.594 433.62L502.914 441.355L508.034 445.224L511.145 447.575C511.51 447.851 511.955 448 512.411 448C512.869 448 513.314 447.851 513.679 447.575L516.789 445.224L521.909 441.355L532.303 433.575L532.331 433.553C534.513 431.909 536.1 429.6 536.854 426.975C537.609 424.35 537.489 421.551 536.514 419Z" fill="#E24329"/>
+    <path d="M536.514 419L536.448 418.82C533.141 419.499 530.028 420.899 527.328 422.923L512.431 434.186L521.916 441.355L532.309 433.575L532.339 433.553C534.517 431.908 536.104 429.599 536.858 426.974C537.61 424.349 537.49 421.55 536.514 419Z" fill="#FC6D26"/>
+    <path d="M502.914 441.355L508.034 445.224L511.145 447.575C511.51 447.851 511.954 448 512.411 448C512.869 448 513.314 447.851 513.679 447.575L516.789 445.224L521.909 441.355L512.425 434.186L502.914 441.355Z" fill="#FCA326"/>
+    <path d="M497.519 422.923C494.82 420.9 491.706 419.5 488.403 418.824L488.331 419C487.355 421.551 487.235 424.35 487.989 426.976C488.743 429.601 490.33 431.911 492.511 433.556L492.536 433.575L492.594 433.62L502.914 441.355L512.405 434.186L497.519 422.923Z" fill="#FC6D26"/>
+    <text x="50%" y="255" class="text devsecops">DevSecOps</text>
+    <text x="353" y="131" class="text {{ if gt (len (intersect $stages (slice "Plan"))) 0 }}highlighted white_fill{{else}}faded{{end}}">Plan</text>
+    <text x="127" y="131" class="text {{ if gt (len (intersect $stages (slice "Create"))) 0 }}highlighted white_fill{{else}}faded{{end}}">Code</text>
+    <text x="127" y="371" class="text {{ if gt (len (intersect $stages (slice "Verify"))) 0 }}highlighted white_fill{{else}}faded{{end}}">Build</text>
+    <text x="353" y="371" class="text {{ if gt (len (intersect $stages (slice "Verify"))) 0 }}highlighted white_fill{{else}}faded{{end}}">Test</text>
+    <text x="672" y="131" class="text {{ if gt (len (intersect $stages (slice "Package"))) 0 }}highlighted white_fill{{else}}faded{{end}}">Release</text>
+    <text x="898" y="131" class="text {{ if gt (len (intersect $stages (slice "Release"))) 0 }}highlighted white_fill{{else}}faded{{end}}">Deploy</text>
+    <text x="898" y="371" class="text {{ if gt (len (intersect $stages (slice "Configure"))) 0 }}highlighted white_fill{{else}}faded{{end}}">Operate</text>
+    <text x="672" y="371" class="text {{ if gt (len (intersect $stages (slice "Monitor"))) 0 }}highlighted white_fill{{else}}faded{{end}}">Monitor</text>
+    <text x="50%" y="13" class="text text2 {{ if gt (len (intersect $stages (slice "Application Security Testing" "Security Risk Management" "All"))) 0 }}highlighted{{else}}faded{{end}}">Security</text>
+    <text x="50%" y="488" class="text text2 {{ if gt (len (intersect $stages (slice "Software Supply Chain Security" "Security Risk Management" "All"))) 0 }}highlighted{{else}}faded{{end}}">Compliance</text>
+  </svg>
+{{if eq (len (intersect $stages (slice "All"))) 0  }}
+  </div>
+  <div class="stages">
+    {{- range $stages }}
+    <div class="stage">
+      <div class="circle">
+        <img src="/images/sdlc-icons/{{ . | replaceRE " " "_" | lower }}.svg">
+      </div>
+      <div class="stagename">{{ . }}</div>
+    </div>
+    {{- end}}
+  </div>
+{{end}}
+</div>
