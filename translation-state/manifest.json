@@ -17358,6 +17358,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "2c09ed4482bf72f90933e057a4e5948f210d2da71b94be24ee20d1c30f124c05"
     },
+    "content/handbook/support/workflows/handling_sales_info_requests.md": {
+      "path": "content/handbook/support/workflows/handling_sales_info_requests.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b7c75fb97c39e39c6c3eb5999f0b9b45c2f11a2d7627c56058107ffc81aff5b0"
+    },
+    "content/handbook/support/workflows/handling_upgrade_renewal_requests.md": {
+      "path": "content/handbook/support/workflows/handling_upgrade_renewal_requests.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0f480c28f766f32d1f31d6b28d1f449a852eb1628b256d22ce670856c40558c8"
+    },
+    "content/handbook/support/workflows/high-priority-all-regions-tickets-workflow.md": {
+      "path": "content/handbook/support/workflows/high-priority-all-regions-tickets-workflow.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cdd1dedc518b43d7e0b1340654fb58c912ff75cc8a4e26152c19655990def3d7"
+    },
+    "content/handbook/support/workflows/how-to-create-npm-package.md": {
+      "path": "content/handbook/support/workflows/how-to-create-npm-package.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "164a902f6d78518cfcfdd49e0036f65fb60de8db18f800db59fa61c2943c7141"
+    },
+    "content/handbook/support/workflows/how-to-get-help.md": {
+      "path": "content/handbook/support/workflows/how-to-get-help.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7fba0135e635639c0373ff588ffbedcc66d6c723fcd3615b8b4216965fa477a1"
+    },
+    "content/handbook/support/workflows/how-to-respond-to-feedback.md": {
+      "path": "content/handbook/support/workflows/how-to-respond-to-feedback.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "da73c8bdcde8cb469b6a74793402e1c494e7e3c52c8a2920aff403abd1e6c25e"
+    },
+    "content/handbook/support/workflows/how-to-respond-to-tickets.md": {
+      "path": "content/handbook/support/workflows/how-to-respond-to-tickets.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7ce4442532204ac97d34d1186258b4b741ca0017bd29a8fe249602b4f02a3f80"
+    },
+    "content/handbook/support/workflows/how-to-set-up-shift-coverage-for-an-event.md": {
+      "path": "content/handbook/support/workflows/how-to-set-up-shift-coverage-for-an-event.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "577c0294ed635842d7276e488a02814adb7f3ff527d853f883d7117065c99308"
+    },
+    "content/handbook/support/workflows/how-to-wir-podcast.md": {
+      "path": "content/handbook/support/workflows/how-to-wir-podcast.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6f852117bd20dcaea884628d08423630654ce23dbce0c194aa657237e1973ee5"
+    },
+    "content/handbook/support/workflows/improving-documentation.md": {
+      "path": "content/handbook/support/workflows/improving-documentation.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ad7e946dcf1e4c3d5c313ab824e10978a571d1c949a42415b1ac2ee45905761d"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
