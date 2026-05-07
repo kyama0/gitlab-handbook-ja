@@ -17078,6 +17078,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "bf2a7cd8bfa44c3a8dd87fe1d3bcc6acad76b5038a442a7fb8fccc5bb9964df3"
     },
+    "content/handbook/support/workflows/ai_features.md": {
+      "path": "content/handbook/support/workflows/ai_features.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e0d2c5ccf088e2fe21608aa53ca380ff5a3f2e9208de43da42d9600836366c8c"
+    },
+    "content/handbook/support/workflows/browserstack.md": {
+      "path": "content/handbook/support/workflows/browserstack.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5a020bcfe082ddfd6ffb28a52eb329e1b5cd94094ac4dd8be8d0cc33330a1cf7"
+    },
+    "content/handbook/support/workflows/calendly.md": {
+      "path": "content/handbook/support/workflows/calendly.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "acb020ae9083dbe515191aa1a9fb5714546a04db762ca1bb944cdc32b4aa6c92"
+    },
+    "content/handbook/support/workflows/chatops.md": {
+      "path": "content/handbook/support/workflows/chatops.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "abdebb0a8183f3d03767f8e0368241c448717ed0b4c01b29a08a96773f8f0e66"
+    },
+    "content/handbook/support/workflows/ci_minute_limit_removal.md": {
+      "path": "content/handbook/support/workflows/ci_minute_limit_removal.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "086c65c5c83852c9721493550f9e72c93d1680e6f1966998a2f25fe90e1382a0"
+    },
+    "content/handbook/support/workflows/cmoc_practice_events.md": {
+      "path": "content/handbook/support/workflows/cmoc_practice_events.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "54829e1d41b4a5d95b1267665ef657bd908d3c8c698475b6bbfc768f13caa2f5"
+    },
+    "content/handbook/support/workflows/cmoc_workflows.md": {
+      "path": "content/handbook/support/workflows/cmoc_workflows.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "055d0d15a4ae34e469413b670b95dc9a347c874ce14925cba793a7411c03f691"
+    },
+    "content/handbook/support/workflows/communication-tips.md": {
+      "path": "content/handbook/support/workflows/communication-tips.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c6f7bee3d649718691a6b65e450015e88ad64c87a48005cfee70b8741898a31a"
+    },
+    "content/handbook/support/workflows/community-support.md": {
+      "path": "content/handbook/support/workflows/community-support.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "99b072ad2a4c8854410bf10e6b9012dc7cafdb5cea01658e8c81749633f0c41e"
+    },
+    "content/handbook/support/workflows/confirmation_emails.md": {
+      "path": "content/handbook/support/workflows/confirmation_emails.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a13638facf8e99e4880251b72611a6fca3c16282b27d210cde377b0f015395a"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
