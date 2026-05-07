@@ -17218,6 +17218,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "c8f75b8f545177285ef2db451243ae2b6b6302b6ca18d8068ce1b136ea711c1c"
     },
+    "content/handbook/support/workflows/dedicated_logs.md": {
+      "path": "content/handbook/support/workflows/dedicated_logs.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5e8f7b6ee1354f2846e8ea2b91b59f4b9c9e8bd06aae293e1d16a7d8c8c9c88d"
+    },
+    "content/handbook/support/workflows/dedicated_runners.md": {
+      "path": "content/handbook/support/workflows/dedicated_runners.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8886608bf6c129a79f1d51a78c54c0c6d095e1dac7fa39902499eea343b6475b"
+    },
+    "content/handbook/support/workflows/dedicated_switchboard.md": {
+      "path": "content/handbook/support/workflows/dedicated_switchboard.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ce9b8c2c41097e013287a20efa8640600d4cff4c9a8b1072fbb28698783f5a47"
+    },
+    "content/handbook/support/workflows/dev_pulse.md": {
+      "path": "content/handbook/support/workflows/dev_pulse.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f9789cc8da174fd1c7af9f74ca8a8a2248e8d4af094b0aa5056e80ad30171f34"
+    },
+    "content/handbook/support/workflows/dmca.md": {
+      "path": "content/handbook/support/workflows/dmca.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "964768aa84f73bcca1063e31973fa52ee9b8c8f902e0b9aa3fbdbb617e155db3"
+    },
+    "content/handbook/support/workflows/downtime_credits_workflow.md": {
+      "path": "content/handbook/support/workflows/downtime_credits_workflow.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "81fdff11e318a684a5a5ebdbc5ef6789b86ef31f57efcd58c52a120adf00e38e"
+    },
+    "content/handbook/support/workflows/duo_chat_in_support.md": {
+      "path": "content/handbook/support/workflows/duo_chat_in_support.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "928e8b29c5576d2ae72cd9b0d5db3598566185dbf9e882b9b50ba8b6f4744f1a"
+    },
+    "content/handbook/support/workflows/emergency-to-escalation-process.md": {
+      "path": "content/handbook/support/workflows/emergency-to-escalation-process.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3d1ae3fff46435dd5fdf931ba015e16f9b31a5a5f3cc61445131369d74bfd175"
+    },
+    "content/handbook/support/workflows/emergency_exception_workflow.md": {
+      "path": "content/handbook/support/workflows/emergency_exception_workflow.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "59e6236b322e60007358bb48a31e00d155d448715f2017e5903bb2e118163473"
+    },
+    "content/handbook/support/workflows/emotionally-charged-tickets.md": {
+      "path": "content/handbook/support/workflows/emotionally-charged-tickets.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e35c48fb4e3fb93522ce67b1b039ead5b6f021c905d600a1241896a112a36183"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
