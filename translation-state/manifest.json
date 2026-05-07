@@ -16475,6 +16475,76 @@
       "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ebb3e4a36116fddfde2cd2ad19f80fbaccd4a1a5777234c6840d079dcafe19ef"
+    },
+    "content/handbook/values/_index.md": {
+      "path": "content/handbook/values/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4cc995ac89293b07dfa4061d70ebcf334ecd989f0239cf0ca9acd0e6c742ca57"
+    },
+    "content/handbook/upstream-studios/_index.md": {
+      "path": "content/handbook/upstream-studios/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "87636fb092b79ca9122d7711a36a6ed4221537f11be8fb7fda8f5b8a7d62994d"
+    },
+    "content/handbook/upstream-studios/vision-strategy/_index.md": {
+      "path": "content/handbook/upstream-studios/vision-strategy/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "47855f5c06dbff45da994e914becacb9dba10e00f1c34198f5670b1924f9df73"
+    },
+    "content/handbook/total-rewards/_index.md": {
+      "path": "content/handbook/total-rewards/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5379feb4cd434b92f512618122a57d970f7ea77a86d772949f1357c4edede3cf"
+    },
+    "content/handbook/total-rewards/incentives.md": {
+      "path": "content/handbook/total-rewards/incentives.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "29c23f75c4d69fe0eb31ca222494df32984147c0cec3382073c08883a515a8de"
+    },
+    "content/handbook/total-rewards/stock-options.md": {
+      "path": "content/handbook/total-rewards/stock-options.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ce62cd564e06a522d5f64eb11e534f4d378ff62f36b6c724ea7f084be1b6d606"
+    },
+    "content/handbook/total-rewards/compensation/_index.md": {
+      "path": "content/handbook/total-rewards/compensation/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3384141e5c1fb956522d5c627df2a5350cb59d720661a9342f7319a1f1dbad7e"
+    },
+    "content/handbook/total-rewards/compensation/compensation-review-cycle/_index.md": {
+      "path": "content/handbook/total-rewards/compensation/compensation-review-cycle/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "54b0adad0897f59da2dd191a35c18eaa607069d9debbe97686840363abc4ebde"
+    },
+    "content/handbook/total-rewards/benefits/_index.md": {
+      "path": "content/handbook/total-rewards/benefits/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "93fe96ec49c01e94e5bda1c999d2cec9b45c253870e045767fa9f96438125062"
+    },
+    "content/handbook/total-rewards/benefits/modern-health.md": {
+      "path": "content/handbook/total-rewards/benefits/modern-health.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "246f22b96e7b0bae695b118e89e71a014b69cc29ad67343d9e39b92d19ba7635"
     }
   }
 }
