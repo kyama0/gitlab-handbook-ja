@@ -16938,6 +16938,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "8e3178895a432b1241a712c2f764c8c0f8ca3f4e8e0d4c4e225638806975cdc5"
     },
+    "content/handbook/support/performance-indicators.md": {
+      "path": "content/handbook/support/performance-indicators.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d6c8ef8cab244de3ca55a1c7949ab3cabd7bbbfc33fd69e83a08d17e33a4ed07"
+    },
+    "content/handbook/support/priority_prospects.md": {
+      "path": "content/handbook/support/priority_prospects.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0a5385b6f4721d33f602adf505c58827f67e0d7a476db171ee2f03c29cf04061"
+    },
+    "content/handbook/support/providing_excellent_customer_service.md": {
+      "path": "content/handbook/support/providing_excellent_customer_service.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1a49fd08ec26302252cd73cf21db147c58ad62b3b658341c123aac65921826c0"
+    },
+    "content/handbook/support/support-engineer-career-path.md": {
+      "path": "content/handbook/support/support-engineer-career-path.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7fec181fc3facb6dac37246b0b38581139cc3ac7986b9ea09a60852ce3582bd7"
+    },
+    "content/handbook/support/support-engineer-responsibilities.md": {
+      "path": "content/handbook/support/support-engineer-responsibilities.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b61865c459225ffb128fd2b559bb27f50895bab63f8cfe2aa8be15c6b1beb487"
+    },
+    "content/handbook/support/support-idk.md": {
+      "path": "content/handbook/support/support-idk.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3708c15dbe0085cbabc764e7b3178eca5b0c5372a4ea5a5a7678c266cd5eb3e4"
+    },
+    "content/handbook/support/support-incident-response.md": {
+      "path": "content/handbook/support/support-incident-response.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "54235cc3c2ec675a3a9470a1ec4d2895c067dc419c438c59b2bc58e4b596e11a"
+    },
+    "content/handbook/support/support-innovation-group.md": {
+      "path": "content/handbook/support/support-innovation-group.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3bd1054fae99f07cd40986fb9635638f321b990fa02bfddb48bf60522b8f0395"
+    },
+    "content/handbook/support/support-stable-counterparts.md": {
+      "path": "content/handbook/support/support-stable-counterparts.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "570597b9d28f763abe86ffa1be67ce81a21204b9eae256f2c2a0ed7e8c0f5682"
+    },
+    "content/handbook/support/support-time-off-buddies.md": {
+      "path": "content/handbook/support/support-time-off-buddies.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b7c9530095ba503b9eb16cffb502521e6a00b1f32f594e7592194bfa09396f7b"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
