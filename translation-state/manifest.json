@@ -17778,6 +17778,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "97b999521a1e265d03b7e1e30108d929d0fa56b0e709d22c04679ea016a3c0d6"
     },
+    "content/handbook/support/workflows/ticket_triage.md": {
+      "path": "content/handbook/support/workflows/ticket_triage.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3d87b3d2ecc03dd47f94a07404f59d0cbc74069be9560ce5eddc86f4f6cf9a1d"
+    },
+    "content/handbook/support/workflows/ticketing_style_guide.md": {
+      "path": "content/handbook/support/workflows/ticketing_style_guide.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1f08a067398863eea4dfd61f5b754a1b510f43310178d330c4d3b226e4b2f7ca"
+    },
+    "content/handbook/support/workflows/tracking_incidents.md": {
+      "path": "content/handbook/support/workflows/tracking_incidents.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "df85ee5ec833ca4f45e1d4ddb1560ecac75679f22cfa32a70f92a49713c57f18"
+    },
+    "content/handbook/support/workflows/translating_tickets.md": {
+      "path": "content/handbook/support/workflows/translating_tickets.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1a6cf56cc8da53c554a481fc8d53b60a28bbaf682d2a9ed167bb41efdd64f9bb"
+    },
+    "content/handbook/support/workflows/troubleshooting_kubernetes.md": {
+      "path": "content/handbook/support/workflows/troubleshooting_kubernetes.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9bd1e9c31bff84dd71208f3c24ab366d5e17b387cb70171ed02f1a674235e155"
+    },
+    "content/handbook/support/workflows/upgrade-assistance.md": {
+      "path": "content/handbook/support/workflows/upgrade-assistance.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4b9be5dfbf91aeb0c706cf2153c8e524cce2019f6a6d0d0468157349d909082e"
+    },
+    "content/handbook/support/workflows/usgovernment_oncall.md": {
+      "path": "content/handbook/support/workflows/usgovernment_oncall.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a4fd722d4cbf1dbc9c50e48d5d89c1e8dfe4134b4bac95307dd83662669d4186"
+    },
+    "content/handbook/support/workflows/usgovernment_oncall_checklist.md": {
+      "path": "content/handbook/support/workflows/usgovernment_oncall_checklist.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5a59863087a1ec7898f4e062097980b1a400bca3416f0e840b56f243d99b6001"
+    },
+    "content/handbook/support/workflows/usgovernment_tickets.md": {
+      "path": "content/handbook/support/workflows/usgovernment_tickets.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "55e8d54978ae632a9b01b97fa197d224ee12cf3bf23e49ca8b6ad6617f981425"
+    },
+    "content/handbook/support/workflows/verify_pages_domain.md": {
+      "path": "content/handbook/support/workflows/verify_pages_domain.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8299bdf05f469318bb5e0e7992b341989d84bd61cf9af81204a3146b035cb742"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
