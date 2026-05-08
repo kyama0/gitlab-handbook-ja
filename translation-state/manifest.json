@@ -16545,6 +16545,76 @@
       "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "246f22b96e7b0bae695b118e89e71a014b69cc29ad67343d9e39b92d19ba7635"
+    },
+    "content/handbook/total-rewards/benefits/parental-leave-toolkit.md": {
+      "path": "content/handbook/total-rewards/benefits/parental-leave-toolkit.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b9a0f392ec5f954de59d53e965a42930f05c0323755449fb5917377167f95a1a"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/_index.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/_index.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6f71bef7d63708d20fcab6c98dcd9a88067ad92cb6052a7417261c985d2713b7"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7047cbe407bcb3e36a36b589e6ed99ae70f42acdd81bccf5555f5d66563648fa"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-finland.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-finland.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "35de8c8fd18aac98bbd1c298b55ac3810bc2df68199cc9a12e67146829db4a52"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "033b0e68b49702a69486d267f84ce684f6d6c476ec612ef7e97eb52ced2ad92e"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1335157d0b2b6b13122f90e969d87adb722ce33aff143ee066c24b0d3b6aa25c"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "384890e65760c56f1852877f2d872664e0e59fb07d3c2a692c445ddf6260af4c"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/france-sas.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/france-sas.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "370131b1ef85f0cf79cdb68e1dff2bfc9cc57fcaf8b32ce82ddc19a6f42dac5b"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "63cf847eb25b2c39a76a339636692d6fd15bc90daa7157fd9c3198a92e155bf5"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b40813e0220d03848af8efc7137507dc530044849e838a5d28e78d4dad21af92"
     }
   }
 }
