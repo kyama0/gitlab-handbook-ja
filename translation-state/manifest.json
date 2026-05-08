@@ -19485,6 +19485,76 @@
       "translated_at": "2026-05-09T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ce47df836371e7b483910cc9551b4fe13903fbfda4bf13003f25cee91dcdb025"
+    },
+    "content/handbook/solutions-architects/playbooks/sales-plays.md": {
+      "path": "content/handbook/solutions-architects/playbooks/sales-plays.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "6657a87206e8501672e3d842312e3836d6a5c5e1d4b177c51d8efcd960edb77e"
+    },
+    "content/handbook/solutions-architects/playbooks/selling-professional-services.md": {
+      "path": "content/handbook/solutions-architects/playbooks/selling-professional-services.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "66e51fc23ecc314b52b5a6d029713493d400bd235908a872ed756a7c229e934e"
+    },
+    "content/handbook/solutions-architects/playbooks/strategic-solution-selling/index.md": {
+      "path": "content/handbook/solutions-architects/playbooks/strategic-solution-selling/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a3c012a7ddf4bace847ffaf863ca3e0b84cdd5d43d294f7e65b7ecafba4784f6"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/_index.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b322463ddfbb7585d0027dd9c22c86294538f092e38c3b78f5e699f17672f771"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/ai.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/ai.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "20ee90181325a9705dafe88b55570e5e9d5298bc5a03674a88f4274f1bb96570"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/automation.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/automation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ec88a58757adb4283f8d23dd1068b509a6a3a7fe6d4e9fb66392d78776e11545"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/compliance.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/compliance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "71a75cc6e58f8e058c567d183bf3550272334461c4dd94d3e9a5a8a890454d21"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/devsecops.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/devsecops.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e4ff02b8f7df193d584e389974df1a23a7eb424265c8b0f2c81c648c66cd2fc9"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/platform.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/platform.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2933bf5445889060a9cb401a85c1e6e28ac09d686619a3565eb0ed4db451c540"
+    },
+    "content/handbook/solutions-architects/center-of-excellence/_index.md": {
+      "path": "content/handbook/solutions-architects/center-of-excellence/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "715d7a7b91f81c5f5c76929a71a0e8999f41332bc816ad14fe05861a4ad9f306"
     }
   }
 }
