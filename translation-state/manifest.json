@@ -19275,6 +19275,76 @@
       "translated_at": "2026-05-08T18:59:21Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "37b7ea24514151f97c4ea95fb1e88e641c2c045ef108699c96c08d108ccf31cf"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-program.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-program.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a85db051e39c51c0e7f0503cb88b8212a6217eb0a57377662e02d12a1472f3f"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-request.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-request.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "395e8a7a3921716f7b7e3500bb01bbad334b82dc23f45095f30dca9c7d66be9b"
+    },
+    "content/handbook/solutions-architects/sa-practices/communities-of-practice/_index.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/communities-of-practice/_index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "55812fdb6ad36e5bef5c452817e69728defd6dcf9198fb3b5988152f2943b75b"
+    },
+    "content/handbook/solutions-architects/sa-practices/communities-of-practice/integration-technologies.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/communities-of-practice/integration-technologies.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fe4a221ffa55ad56da60df89c713429171a64793fcff73ae7d53b5ad911eeaba"
+    },
+    "content/handbook/solutions-architects/sa-manager/_index.md": {
+      "path": "content/handbook/solutions-architects/sa-manager/_index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c730e27acfcc2abca0112bfd136b5be9d1d25a4e937381a06efb3175a03a7834"
+    },
+    "content/handbook/solutions-architects/sa-manager/gong-scorecards.md": {
+      "path": "content/handbook/solutions-architects/sa-manager/gong-scorecards.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "289c22464cca5ec5acd52115766da949b794ff5667ad967635645235b2c5f57d"
+    },
+    "content/handbook/solutions-architects/sa-manager/sa-offsites.md": {
+      "path": "content/handbook/solutions-architects/sa-manager/sa-offsites.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "24b0d41fb7c845ed37f56a41fea470650c8885c4ed5d2fe422eea2220a469f31"
+    },
+    "content/handbook/solutions-architects/sa-enablement/_index.md": {
+      "path": "content/handbook/solutions-architects/sa-enablement/_index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a8eb4afff913a7af3e1fe950fc28d8d5bca1f728fc4821774d0d2f71fa655e6"
+    },
+    "content/handbook/solutions-architects/sa-enablement/sa-onboarding.md": {
+      "path": "content/handbook/solutions-architects/sa-enablement/sa-onboarding.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "78f1d7a27d0ac154d69f73d34a623b55731d5e4979ae3a5ebee8a73cf53f5904"
+    },
+    "content/handbook/solutions-architects/rules-of-engagement/_index.md": {
+      "path": "content/handbook/solutions-architects/rules-of-engagement/_index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ed9e8e8b3db4cf0944eedf3fd0d72c902b7d1acd85c51a792f6720b5395a4456"
     }
   }
 }
