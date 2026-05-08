@@ -18995,6 +18995,76 @@
       "translated_at": "2026-05-09T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "f9624ac07a174160c55abd32d5e84d49d3a7761966fce9bd3839d380a816a136"
+    },
+    "content/handbook/support/browser-extensions/_index.md": {
+      "path": "content/handbook/support/browser-extensions/_index.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6cd32c6b2900df52967ea6b1f274d357b0d8494a3efe8acc90e2757a953ecb00"
+    },
+    "content/handbook/support/ai/_index.md": {
+      "path": "content/handbook/support/ai/_index.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "885012ca0adb2586244b16b9d016d2af60a1023f33f7946577fad8d1190e9bb5"
+    },
+    "content/handbook/support/ai/ai-tool-selection.md": {
+      "path": "content/handbook/support/ai/ai-tool-selection.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "042063e52580c83060050f58647fc06cd8e416f5cf8f80e27115f4e0a4221172"
+    },
+    "content/handbook/support/ai/ai-usage-recommendations.md": {
+      "path": "content/handbook/support/ai/ai-usage-recommendations.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c7680f5435c48f3b11aa1650de18014a65625aa77785e15ce0efdf4d0ebf8b92"
+    },
+    "content/handbook/support/ai/using-ai-in-support.md": {
+      "path": "content/handbook/support/ai/using-ai-in-support.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a986ce2ea97282bf1dff5fc23643a666bc1c912c9aaea3d2cac39e535ab56f04"
+    },
+    "content/handbook/support/advanced-topics/index.md": {
+      "path": "content/handbook/support/advanced-topics/index.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53728b559c9b7d39c6ac957ba2443e3d3d8c1f9933199e1d378e859a3b864b7d"
+    },
+    "content/handbook/solutions-architects/_index.md": {
+      "path": "content/handbook/solutions-architects/_index.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e89403094b77e567445bf118b23cfda6793f29bf86f88f9942fe8793aaa507b3"
+    },
+    "content/handbook/solutions-architects/demonstrations.md": {
+      "path": "content/handbook/solutions-architects/demonstrations.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ff19d12b12d0153de95510dea865ba7b5796be478b6d7e78f4223fed4865772d"
+    },
+    "content/handbook/solutions-architects/sa-career-development.md": {
+      "path": "content/handbook/solutions-architects/sa-career-development.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6eed60a88a53f878bca4b35f3ac9bb8b7362dfb38aa027f90c9f4374318f32cb"
+    },
+    "content/handbook/solutions-architects/sa-documentation.md": {
+      "path": "content/handbook/solutions-architects/sa-documentation.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ea066e12259f815b161c9a2368dad84bd60487b9aaf5cf9e32c8edac20e09077"
     }
   }
 }
