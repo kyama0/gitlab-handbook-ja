@@ -18925,6 +18925,76 @@
       "translated_at": "2026-05-09T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "4278b7f0b3da853d22452805c02e77372284afe4a6cf6ed4121c8449d533d009"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-reports.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-reports.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "90ce5405b45582a125f9fb6191920c222fdeda7d34d7c4dc8eca3fe67a398525"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-tickets-or-issues.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-tickets-or-issues.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c502a51b320d01eb7851488f77b2518fbb099bb732a5c8438564e3db6813b383"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-time-tracking.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-time-tracking.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "279e7eaa922d27b62a3040b99ff7dde88e971cdc1b3e88a8b9c76242c1271b66"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/customer-onboarding.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/customer-onboarding.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "07794969fefb47ffad62e8fe64e8b99abff978409c4d0adde07ff76f04b815cf"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/introductory-meeting.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/introductory-meeting.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cc3792d12ef8c7b24bb47088100cdfc78188e749749617f4e6d7c8c106abeea7"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/planning-pto-as-ase.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/planning-pto-as-ase.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ee70294d3ae10b53b67d2801067538ef740917b0e59557bd5808822b1db92d5a"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ticket-tsunami.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ticket-tsunami.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9287bde1f55e49db44388c746281eba274ca32598202e7e12903e8e1e8c178c1"
+    },
+    "content/handbook/support/engineering/_index.md": {
+      "path": "content/handbook/support/engineering/_index.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1c14136186abe806bfa4b14f75d12b7df23403894584fc1b0b4a3785483648bb"
+    },
+    "content/handbook/support/engineering/mentorship.md": {
+      "path": "content/handbook/support/engineering/mentorship.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "beafa3a9880b65fb7f8aef24539250d94237def94b4b461f418ad1a757360304"
+    },
+    "content/handbook/support/engineering/staff.md": {
+      "path": "content/handbook/support/engineering/staff.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f9624ac07a174160c55abd32d5e84d49d3a7761966fce9bd3839d380a816a136"
     }
   }
 }
