@@ -17078,6 +17078,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "2356dcf98ee5d82640d4850a25b7d808c1bc1d8f93037b0c66e6b8fb30615fb4"
     },
+    "content/handbook/support/license-and-renewals/workflows/billing_contact_change_payments.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/billing_contact_change_payments.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T10:35:08Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4170a3ce8137cf70017a2a6337c58713005f43b6690e954443ddc4d58d77342d"
+    },
+    "content/handbook/support/license-and-renewals/workflows/communicating_lnr_workflow_changes.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/communicating_lnr_workflow_changes.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T10:35:08Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fba3e5466c65088a14835533abd4b0de66347e543302da7c417000f72272cacc"
+    },
+    "content/handbook/support/license-and-renewals/workflows/duo_trials.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/duo_trials.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T10:35:08Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "970c3973d458289ddea4c8f6aed533d9546f95c382ecc8bd85a367b10eeec1fa"
+    },
+    "content/handbook/support/license-and-renewals/workflows/license_troubleshooting.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/license_troubleshooting.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T10:35:08Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "528d19c859c8ef876f252d5ac8e35f3686c100b8f6e5ff951f8c269b75e06838"
+    },
+    "content/handbook/support/license-and-renewals/workflows/lr_request_automation.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/lr_request_automation.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T10:35:08Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "16c11b1f02a305b7a44bad63c35a666630277599d083142f375344b0eb475bdb"
+    },
+    "content/handbook/support/license-and-renewals/workflows/managers_working_with_extensions.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/managers_working_with_extensions.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T10:35:08Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4ad6473763df320fdf973b4041c75eece75a867ebc61fbdf4ceed6156417f730"
+    },
+    "content/handbook/support/license-and-renewals/workflows/managing_product_issues.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/managing_product_issues.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T10:35:08Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2cad90b3710334bf73311d62f71225a14b193ce8a4051956cd0f39ebc035ad8a"
+    },
+    "content/handbook/support/license-and-renewals/workflows/merge_or_split_subscription.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/merge_or_split_subscription.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T10:35:08Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "550ab1879902b4d0d62b352e8415a33adf0857c0e3d40b0e100f3ec072bd8010"
+    },
+    "content/handbook/support/license-and-renewals/workflows/quarterly_subscription_reconciliations.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/quarterly_subscription_reconciliations.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T10:35:08Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "28d3f30ae56368f1e974025eb950aab821d40406c196299a5ad8f82087f9a75d"
+    },
+    "content/handbook/support/license-and-renewals/workflows/requests_for_documents_from_gitlab.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/requests_for_documents_from_gitlab.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T10:35:08Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "61e5d2efbef253bc2f8a48a4a3c5c9c0659eec181d525a32f52fbd822cfdf940"
+    },
     "content/handbook/support/partnerships/_index.md": {
       "path": "content/handbook/support/partnerships/_index.md",
       "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
