@@ -17022,6 +17022,48 @@
       "model": "claude-opus-4-7",
       "input_hash": "c0ff411b22b148adfaf7db487fe1217a341c26a56b1e6233ac4e165cca0e0876"
     },
+    "content/handbook/support/support-pods/ai/_index.md": {
+      "path": "content/handbook/support/support-pods/ai/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1ce9964721bfe9450186ca7e36e0f9d249797dcfa30b1aa64c64347807a77dd7"
+    },
+    "content/handbook/support/support-pods/authentication-and-authorization/_index.md": {
+      "path": "content/handbook/support/support-pods/authentication-and-authorization/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "05400d10d6ac943ceb7b5fd3bf6a8e938a92d9065ef96c8264e5166baa6d4d7c"
+    },
+    "content/handbook/support/support-pods/ci-cd/_index.md": {
+      "path": "content/handbook/support/support-pods/ci-cd/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a5260c979376e135326a7bb94b72f7f01aed8af15fdf1401c0b251ecdc6d2940"
+    },
+    "content/handbook/support/support-pods/code-contributions/_index.md": {
+      "path": "content/handbook/support/support-pods/code-contributions/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "219593408e6458baccc56739acbac89bf246f01eed9470b36aeb9e31dc759e5e"
+    },
+    "content/handbook/support/support-pods/database/_index.md": {
+      "path": "content/handbook/support/support-pods/database/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "97ebd07da98f45441b9aa3df72190d29066079c85ec86a9e15824a165d16bd2b"
+    },
+    "content/handbook/support/support-pods/docs/_index.md": {
+      "path": "content/handbook/support/support-pods/docs/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "12c15922f1199272ef3597231f5ca8a5044fd06f9fd67f7839ca9e6044677a29"
+    },
     "content/handbook/support/support-pods/example-pod.md": {
       "path": "content/handbook/support/support-pods/example-pod.md",
       "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
@@ -17029,12 +17071,40 @@
       "model": "claude-opus-4-7",
       "input_hash": "eb6dcb9c72878faba86c2fa0ca76ee23409b9f83173042da671ccf4518dc3e19"
     },
+    "content/handbook/support/support-pods/geo/_index.md": {
+      "path": "content/handbook/support/support-pods/geo/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ff9c3895834015751040cd797116e9f4509c881adabed0a45a4eb6ebecdc7d61"
+    },
+    "content/handbook/support/support-pods/get/_index.md": {
+      "path": "content/handbook/support/support-pods/get/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9c7ac73353b4c5353f8284d33a02ea57180036d3968a4674994876d8db587467"
+    },
+    "content/handbook/support/support-pods/git-and-gitaly/_index.md": {
+      "path": "content/handbook/support/support-pods/git-and-gitaly/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "af6fd6588a62f21c542432883fbeea74251eac95f0289682c2c5de019067f5dc"
+    },
     "content/handbook/support/support-pods/gitlab-dedicated/_index.md": {
       "path": "content/handbook/support/support-pods/gitlab-dedicated/_index.md",
       "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
       "translated_at": "2026-05-08T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "c56e917663f5e471cc6c47f476804ed68abd56b87db4e56766ef206efe28c569"
+    },
+    "content/handbook/support/support-pods/gitlab-dedicated/ssc-monthly-business-review-prep.md": {
+      "path": "content/handbook/support/support-pods/gitlab-dedicated/ssc-monthly-business-review-prep.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a3fd4c405ff49953e34cccc31398c080a04a87c4b7326ca5f37d49efe3c7fc32"
     },
     "content/handbook/support/support-pods/import/_index.md": {
       "path": "content/handbook/support/support-pods/import/_index.md",
