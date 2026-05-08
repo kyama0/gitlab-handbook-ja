@@ -19135,6 +19135,76 @@
       "translated_at": "2026-05-08T17:29:46Z",
       "model": "claude-opus-4-7",
       "input_hash": "0a752be0ef03176b7d1adc40eb800a4459cc8de852fe913dadceb360b73eb8a3"
+    },
+    "content/handbook/solutions-architects/sa-practices/_index.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/_index.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e7c2ce883afc528660bf15c613c66db5277d46b1952d4184c39a51fe9187c20e"
+    },
+    "content/handbook/solutions-architects/sa-practices/business-value-consulting.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/business-value-consulting.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d274c72323d91aaa6851607564f8195012715e80e9e41de0b182aa28666ce4cd"
+    },
+    "content/handbook/solutions-architects/sa-practices/day-in-the-life.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/day-in-the-life.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "7ece1d6f670748a3842d1e36282bf271a0f35d2c6dadd53e47e49014798f8c04"
+    },
+    "content/handbook/solutions-architects/sa-practices/deliberate-practice.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/deliberate-practice.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "7d4b322d240c7872b5d2d96e270cd1b107212670b134c091f76a448632aac0e9"
+    },
+    "content/handbook/solutions-architects/sa-practices/effective-objection-handling-practice.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/effective-objection-handling-practice.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4fe1d5be5d71b908ea5cf308203d4739851a290d09cd68a3517addebede5cb8c"
+    },
+    "content/handbook/solutions-architects/sa-practices/monthly-release-quiz.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/monthly-release-quiz.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "dcf7c040ac4f38afa4a3839d84c932317962c5be85e2c57a9682990618172390"
+    },
+    "content/handbook/solutions-architects/sa-practices/recognizing-cognitive-bias.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/recognizing-cognitive-bias.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4554702f356106e7d1cc050596034e1384f5523765d216b81c0c1bc5dd66e838"
+    },
+    "content/handbook/solutions-architects/sa-practices/ride-alongs.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/ride-alongs.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "6bf7b6edbdc1e9cf636b7c376169a4b88439843ed555d37fe411afca2d27c967"
+    },
+    "content/handbook/solutions-architects/sa-practices/sa-leader-shadow.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/sa-leader-shadow.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e1206f2f75b587fcc441fd56ea8d7223c44fb445210cbf20f618dfd95fbf2fd3"
+    },
+    "content/handbook/solutions-architects/sa-practices/sa-office-hours.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/sa-office-hours.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "6934d73c74978c11b431326e30fbd866458bdaa133741fd4fece8884a1c8fad3"
     }
   }
 }
