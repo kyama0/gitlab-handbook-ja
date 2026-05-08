@@ -1,6 +1,6 @@
 ---
 title: "Global Expansion"
-description: "Global Expansion"
+description: "Global Expansion パートナーシップによる、世界中のチームメンバー向けの包括的な福利厚生"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion/
 upstream_sha: 23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0
 translated_at: "2026-05-07T22:45:00Z"
