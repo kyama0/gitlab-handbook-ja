@@ -17638,6 +17638,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "714c5bc9ffa2b78777e1d71e9cb630db29ca5ffcd39722e75ef359b196609b7f"
     },
+    "content/handbook/support/workflows/remove_validation.md": {
+      "path": "content/handbook/support/workflows/remove_validation.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b0ebe691ef9332599fed0ccffc1a5aa525c0d47fcc55fff84809f541d6de3c88"
+    },
+    "content/handbook/support/workflows/removing-sensitive-information.md": {
+      "path": "content/handbook/support/workflows/removing-sensitive-information.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b366a6fd7b1e3ba84b62b639c9499d1069a9fa95f79b88c208e0b3df36e91887"
+    },
+    "content/handbook/support/workflows/residency_doc_request.md": {
+      "path": "content/handbook/support/workflows/residency_doc_request.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "49b1ea896f18e8ffd9071b830a4ccc3d7f414c1bf33b39de9c4827daa699f436"
+    },
+    "content/handbook/support/workflows/restore_requests.md": {
+      "path": "content/handbook/support/workflows/restore_requests.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0985176a4af5661ea79423ea403f6c8286149f4844bdda8636d70cb32e8ae9f6"
+    },
+    "content/handbook/support/workflows/restore_requests_dedicated.md": {
+      "path": "content/handbook/support/workflows/restore_requests_dedicated.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "528cf75a1b81747e562e4e4ffd73040e158cc64439d89d0013d2824944ec0ec8"
+    },
+    "content/handbook/support/workflows/saas_feature_flags.md": {
+      "path": "content/handbook/support/workflows/saas_feature_flags.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d896b12e0338e7583f0109856176744ca17a8277ac4a458880b2fcf6e5dcecee"
+    },
+    "content/handbook/support/workflows/saas_sm_cheatsheet.md": {
+      "path": "content/handbook/support/workflows/saas_sm_cheatsheet.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4568a7f804038efdc3500d0e45ee097288d3f2420aec1c04134066cdf3414479"
+    },
+    "content/handbook/support/workflows/sending_notices.md": {
+      "path": "content/handbook/support/workflows/sending_notices.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f6ceca10ac9fef7dfc3fb1332370605f55a40c6d970abae9f1289ef02abb3fd4"
+    },
+    "content/handbook/support/workflows/sentry.md": {
+      "path": "content/handbook/support/workflows/sentry.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bdf475b8c9da6be6c3b9ead802b23404eedbcdde9916408472a1960a6c42e2be"
+    },
+    "content/handbook/support/workflows/service_desk_troubleshooting.md": {
+      "path": "content/handbook/support/workflows/service_desk_troubleshooting.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c4b2e0f803432da8e68776c01e58f101eaf1299e14a8a7e00df96d0d6f3feeaf"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
