@@ -17918,6 +17918,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "8be9cc33af052c599453c55463e7937b8a1677c170c4dbcf866934df15fc6d6b"
     },
+    "content/handbook/support/workflows/zendesk_agent_personalization.md": {
+      "path": "content/handbook/support/workflows/zendesk_agent_personalization.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:34:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "337c4c5e48bd5e965bdd6fde0dab50b82fb91d331c306025af283e868039aaeb"
+    },
+    "content/handbook/support/workflows/zendesk_organizations_and_users_overview.md": {
+      "path": "content/handbook/support/workflows/zendesk_organizations_and_users_overview.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:34:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "339bfb57f936521df09eed60f87f9fc7fdb170802bd5f98cc6f63c8e4ee26496"
+    },
+    "content/handbook/support/workflows/team/_index.md": {
+      "path": "content/handbook/support/workflows/team/_index.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:34:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "98358181d85d77d614c605e5a74097a6344b49fa452d84c26fe0cf5829411f9a"
+    },
+    "content/handbook/support/workflows/team/performance_review.md": {
+      "path": "content/handbook/support/workflows/team/performance_review.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:34:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "471025b2a6d4a30e480029889a96633c80be0e0af5ff472cd999b9a65bcb10a8"
+    },
+    "content/handbook/support/workflows/team/promotions.md": {
+      "path": "content/handbook/support/workflows/team/promotions.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:34:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1e65cfe03641b0c51edca4609eb1b504ae428bbc00d0969632ba09f419a69315"
+    },
+    "content/handbook/support/workflows/team/shift_chair.md": {
+      "path": "content/handbook/support/workflows/team/shift_chair.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:34:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eeaa43eef4fc608aa7658c79451dc0b2a9b7e43adb4bdd1b4b187fe2ee25a3c2"
+    },
+    "content/handbook/support/workflows/team/technical_interview.md": {
+      "path": "content/handbook/support/workflows/team/technical_interview.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:34:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fd0c489cbd10431346a5648661e11b57b3e565ddbb8bcac69b387235ee13f9d6"
+    },
+    "content/handbook/support/workflows/team/weekly_team_call.md": {
+      "path": "content/handbook/support/workflows/team/weekly_team_call.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:34:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b999138e1b4ec44e0fa76248dc5694a60944eb79d2f86661f9527b05dd4d1b65"
+    },
+    "content/handbook/support/workflows/regions/_index.md": {
+      "path": "content/handbook/support/workflows/regions/_index.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:34:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7690737c3cb31921f63cd884727cfe3c201d957bf6934263fe98ecb494a8e5ee"
+    },
+    "content/handbook/support/workflows/regions/cross_region.md": {
+      "path": "content/handbook/support/workflows/regions/cross_region.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:34:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "154746917ed596682e4dad87bec43b66e28cea822176564f2e5d112db62a39a9"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
