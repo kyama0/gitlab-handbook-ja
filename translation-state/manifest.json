@@ -18645,6 +18645,76 @@
       "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "4cc995ac89293b07dfa4061d70ebcf334ecd989f0239cf0ca9acd0e6c742ca57"
+    },
+    "content/handbook/support/license-and-renewals/workflows/self-managed/sending_license_to_different_email.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/self-managed/sending_license_to_different_email.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T12:45:20Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e9c35b8acfd5478a29239af92d21eb1ee2abbdb807bdcaeebcca8cacde1df2a6"
+    },
+    "content/handbook/support/license-and-renewals/workflows/self-managed/trials.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/self-managed/trials.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T12:45:20Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e485c975494f811d32d9c43d70f04374e939d4a2ad2e530c955e59d575035ecd"
+    },
+    "content/handbook/support/license-and-renewals/workflows/self-managed/troubleshoot_cloud_licensing.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/self-managed/troubleshoot_cloud_licensing.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T12:45:20Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ca5c0284489c5376b271b49c16b972098320e1f2416c8f2690ca60e3e4e128ea"
+    },
+    "content/handbook/support/license-and-renewals/workflows/self-managed/troubleshoot_license_purchase_issues.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/self-managed/troubleshoot_license_purchase_issues.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T12:45:20Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f6afc8a2b9cac56a338a6f8c67c94ef83d17915e42fca1f8d417e134a5155786"
+    },
+    "content/handbook/support/license-and-renewals/workflows/self-managed/troubleshoot_license_upload_issues.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/self-managed/troubleshoot_license_upload_issues.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T12:45:20Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d09b3444e203c27e3ae94ccc9dff5eace4d9dcb7b043fc8ecfd3bc4eb9f37b09"
+    },
+    "content/handbook/support/license-and-renewals/workflows/saas/_index.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/saas/_index.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T12:45:20Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "bd93f1ac94d89e8d3f18514766b0532ac852cc89dddb897530e8d3806723a065"
+    },
+    "content/handbook/support/license-and-renewals/workflows/saas/associate_subscription_and_namespace.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/saas/associate_subscription_and_namespace.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T12:45:20Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "98db609782c3f7aa579d3a654a9e91dbd71151287f486f475af8f5c54d881ffb"
+    },
+    "content/handbook/support/license-and-renewals/workflows/saas/compute_minutes_and_storage.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/saas/compute_minutes_and_storage.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T12:45:20Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9e9146c57debd2130fd086b8f00d36402cd6d9cc538ead5d242a9e1de385a07b"
+    },
+    "content/handbook/support/license-and-renewals/workflows/saas/trials_and_plan_change.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/saas/trials_and_plan_change.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T12:45:20Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "811185989c737d7b43824e706d46f4d51f8bb5a7364f061bb68feddf0ba6acc1"
+    },
+    "content/handbook/support/license-and-renewals/workflows/customersdot/_index.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/customersdot/_index.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T12:45:20Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cd3a1f0a1acc9d8bb5d66b3dd48e4c47fc68f4f47ed80a5cd9135ccb085f1ec9"
     }
   }
 }
