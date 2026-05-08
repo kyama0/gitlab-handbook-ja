@@ -18785,6 +18785,76 @@
       "translated_at": "2026-05-08T13:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "68e869d84e5e57e4b03c452f30d8bcffb2723eb6360cba023fa487338bfc4134"
+    },
+    "content/handbook/support/knowledge-base/kcs.md": {
+      "path": "content/handbook/support/knowledge-base/kcs.md",
+      "upstream_sha": "597f4cdde51f70d22792d64c8bf63dff58c6fda8",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "abd3d1250f395e15550706eb869d3b5d7dfaf4985c01dd2abc563725409d741c"
+    },
+    "content/handbook/support/knowledge-base/knowledge-base-training.md": {
+      "path": "content/handbook/support/knowledge-base/knowledge-base-training.md",
+      "upstream_sha": "597f4cdde51f70d22792d64c8bf63dff58c6fda8",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "802d1904c7da727e3c0151ff1c28f41584dec11a17c9973e4ef4452c65cb650c"
+    },
+    "content/handbook/support/knowledge-base/knowledge-communications.md": {
+      "path": "content/handbook/support/knowledge-base/knowledge-communications.md",
+      "upstream_sha": "597f4cdde51f70d22792d64c8bf63dff58c6fda8",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1690b211841385f94bb3fcf64cd7015e24be1d736209dca56262a3c7d9af0e2e"
+    },
+    "content/handbook/support/knowledge-base/knowledge-features-roadmap.md": {
+      "path": "content/handbook/support/knowledge-base/knowledge-features-roadmap.md",
+      "upstream_sha": "597f4cdde51f70d22792d64c8bf63dff58c6fda8",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "fc83188ea4b32fa44bccb8f11eead26700e6b6529443a0b0e8c28d7abfd1bbb1"
+    },
+    "content/handbook/support/knowledge-base/knowledge-linking.md": {
+      "path": "content/handbook/support/knowledge-base/knowledge-linking.md",
+      "upstream_sha": "597f4cdde51f70d22792d64c8bf63dff58c6fda8",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "fd52b260b95fad03074d867ca0223430fc2467b9f32cf59d22b766314ec34522"
+    },
+    "content/handbook/support/knowledge-base/knowledge-roles.md": {
+      "path": "content/handbook/support/knowledge-base/knowledge-roles.md",
+      "upstream_sha": "597f4cdde51f70d22792d64c8bf63dff58c6fda8",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9e6b47bd0c83e58a2e61ae28698542a456b8063cd83eb92e0c549459cd739748"
+    },
+    "content/handbook/support/knowledge-base/knowledge-workflow.md": {
+      "path": "content/handbook/support/knowledge-base/knowledge-workflow.md",
+      "upstream_sha": "597f4cdde51f70d22792d64c8bf63dff58c6fda8",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0d74c76f020c1711a2397230043c5b698e4df810abe597087b389f8bf7f7f6c2"
+    },
+    "content/handbook/support/knowledge-base/reporting-and-metrics.md": {
+      "path": "content/handbook/support/knowledge-base/reporting-and-metrics.md",
+      "upstream_sha": "597f4cdde51f70d22792d64c8bf63dff58c6fda8",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "19e19b8acef09b406efa5bd5deed409e8e2d0570affedde792f5e5215d4854ba"
+    },
+    "content/handbook/support/knowledge-base/working-with-knowledge-articles.md": {
+      "path": "content/handbook/support/knowledge-base/working-with-knowledge-articles.md",
+      "upstream_sha": "597f4cdde51f70d22792d64c8bf63dff58c6fda8",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0e229b37a2208da6b004d900fb5d7cdad05ab0003b6f4c35004ae65de800e5bd"
+    },
+    "content/handbook/support/internal-support/_index.md": {
+      "path": "content/handbook/support/internal-support/_index.md",
+      "upstream_sha": "597f4cdde51f70d22792d64c8bf63dff58c6fda8",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "35b765d9818d3531c11a71bf14902220331c43fd26cd2a247e7b14bba5de89ce"
     }
   }
 }
