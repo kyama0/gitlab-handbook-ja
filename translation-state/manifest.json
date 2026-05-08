@@ -16615,6 +16615,76 @@
       "translated_at": "2026-05-07T13:21:11Z",
       "model": "claude-opus-4-7",
       "input_hash": "b40813e0220d03848af8efc7137507dc530044849e838a5d28e78d4dad21af92"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0010f8bcf4025a5a05e16ab8bf784b2d9434b80d65e9ced085a39df730b7c9a2"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1f76885869bb73d5429944e2c04b11153830e566d62b13b090c446519e1c47b6"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a3faf6b3b3b46763c7e6fcd2082675e79408d9db484f7b1020c5ab882cf176c0"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a05601812c977e3dcb65ae83c800a0bde14362d70916b354315bed7be98ee629"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "13fb38b939daeaf1b4c9bd2f1f92ddf6365e3cbf7facdaa4aa1e4cc4a4efdfbe"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "be31201b40eb09e3e56fff2cfc224a2014919a1683651174ed6f86e337134041"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5fa3510d51f626a9f8719bd154063593a36b08b1cac99cfbff3ded81eca5ec3a"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0cc61cb79f32a1f58f781248a6dcd8c9ad3b33167cbb41ba1750d59177ba092c"
+    },
+    "content/handbook/tools-and-tips/_index.md": {
+      "path": "content/handbook/tools-and-tips/_index.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0c796c956f6b6c92f8f3d43a7638e77994447216488913bf8e0d1bab67ebdd1f"
+    },
+    "content/handbook/tools-and-tips/git.md": {
+      "path": "content/handbook/tools-and-tips/git.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9b738b4e68a831b2b97b8dfd7fd4898f3429d420cd55b47c97223b4587443c7d"
     }
   }
 }
