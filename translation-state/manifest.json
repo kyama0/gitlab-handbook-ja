@@ -17498,6 +17498,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "857918bb7a1f5cc71f8fc6c9edd55fd30b9766cbc1206ea5be629f950cdfbad3"
     },
+    "content/handbook/support/workflows/log_requests.md": {
+      "path": "content/handbook/support/workflows/log_requests.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "012ed46e890765663e999466c8ec5695aac324dda05c4222a4dc3897a7696138"
+    },
+    "content/handbook/support/workflows/looking_up_customer_account_details.md": {
+      "path": "content/handbook/support/workflows/looking_up_customer_account_details.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "482d82175c56002b43dc2d6e30ae66354d75e35e0e02fa38ded5b0bb7d2c244a"
+    },
+    "content/handbook/support/workflows/looking_up_customer_technical_details.md": {
+      "path": "content/handbook/support/workflows/looking_up_customer_technical_details.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "58ffec210f7f8baf1827a3b40172ffb0b91069474a6fc0c218fcebdbc8d181af"
+    },
+    "content/handbook/support/workflows/lost_emails.md": {
+      "path": "content/handbook/support/workflows/lost_emails.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2baade70c2d734e12aa40cc5236e23bf3198eec8d13ad8617b0396c94d543ee2"
+    },
+    "content/handbook/support/workflows/malicious_ticket.md": {
+      "path": "content/handbook/support/workflows/malicious_ticket.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8ba63a3dac9e08f0c8d5c688c8775e92c39962ac26bd6f943bcd6b7d44c6dd0c"
+    },
+    "content/handbook/support/workflows/marking_tickets_as_spam.md": {
+      "path": "content/handbook/support/workflows/marking_tickets_as_spam.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9a1ba237fcee972f23d75b780167e0f82a8c1d515c82bcd6a129695ae2be6a4e"
+    },
+    "content/handbook/support/workflows/mattermost.md": {
+      "path": "content/handbook/support/workflows/mattermost.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5880071a17e12988f2d299c6e18b5529fa57be04ac6a6fcf39cccce0a64abe81"
+    },
+    "content/handbook/support/workflows/meeting-frt-sla.md": {
+      "path": "content/handbook/support/workflows/meeting-frt-sla.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dc90b76d68cf01a95aa18e51c9a3a4d2dd5f33f0dfc9217da1331aedc57a5a10"
+    },
+    "content/handbook/support/workflows/namesquatting_policy.md": {
+      "path": "content/handbook/support/workflows/namesquatting_policy.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b8215657a65446fc446878ddadd2741273d4da58ff7ba24fd47bf129b215b55d"
+    },
+    "content/handbook/support/workflows/ooo-ticket-management.md": {
+      "path": "content/handbook/support/workflows/ooo-ticket-management.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5f68e2b496bb4e749e4da6fb6a36cbd1675e39247b362afe3769e49486ef2a7e"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
