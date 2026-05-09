@@ -19765,6 +19765,76 @@
       "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "9fbc2f7e020e19a9fdb90c51eb2b16562e61a5baf4e742589ab47c0cd671e867"
+    },
+    "content/handbook/security/security-and-technology-policy-exception.md": {
+      "path": "content/handbook/security/security-and-technology-policy-exception.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "901229e75e35417575a940a076ba4da0364d76d999258f98f27659ee4ca30dac"
+    },
+    "content/handbook/security/security-change-management-procedure.md": {
+      "path": "content/handbook/security/security-change-management-procedure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "41688d06f750d2ebabd833c9cf59f8692cebc0625936ca771a7c8f8519ff07ef"
+    },
+    "content/handbook/security/security-division-dogfooding.md": {
+      "path": "content/handbook/security/security-division-dogfooding.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1bd10877ae19bffbd5c15cdae16525df04458c25e49215238b5cd14e810807ac"
+    },
+    "content/handbook/security/security-observations-risk-management.md": {
+      "path": "content/handbook/security/security-observations-risk-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cb95eb0189309669c4dc7487858123668dbe60203dd5c0cfa28c0da8da71a773"
+    },
+    "content/handbook/security/security-shadow-sec-eng-res.md": {
+      "path": "content/handbook/security/security-shadow-sec-eng-res.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "7dd5040d6a2848614cf02a5545cebafe024727ffe6931247d1fc8e0b2f3596ed"
+    },
+    "content/handbook/security/security-shadow-security-assurance.md": {
+      "path": "content/handbook/security/security-shadow-security-assurance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "853c786a493d5bdcfb2da1d0e2b28516b0e79903f858b1acd7458179887feb5e"
+    },
+    "content/handbook/security/security-shadow.md": {
+      "path": "content/handbook/security/security-shadow.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "8fbf7b8a9083893d5a170b6855dd98c1c9efcd2d1f436dd71494aa589dae5c59"
+    },
+    "content/handbook/security/security_labs_blog.md": {
+      "path": "content/handbook/security/security_labs_blog.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9a0160c10565edb38e38c6692d8591aa0275fb0f62b46fe23f4bdf7f2c19ddf8"
+    },
+    "content/handbook/security/transparency-by-default.md": {
+      "path": "content/handbook/security/transparency-by-default.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9649f622a459324409755872d02915189141e3e1118a5361a04b7d2458a0817e"
+    },
+    "content/handbook/security/women-in-security.md": {
+      "path": "content/handbook/security/women-in-security.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5bbd18f8e9dd6290290d1534fc95a5dd760648a8c6c9856b04676f1d04082b19"
     }
   }
 }
