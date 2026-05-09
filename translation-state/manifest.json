@@ -21305,6 +21305,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "fe445ffaec8442f66a215c447e0ac8168d45f7123d8db1a4959d8f78db5b0774"
+    },
+    "content/handbook/security/identity/guide/policy/_index.md": {
+      "path": "content/handbook/security/identity/guide/policy/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c2556f47110ecf7052211b177997678edb77f89b3b9dccf3e11d6fb7a98790fa"
+    },
+    "content/handbook/security/identity/guide/onboarding/_index.md": {
+      "path": "content/handbook/security/identity/guide/onboarding/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d7804d27be0d04ab5c4319a81336b814d9a22d53559b6b91921f3865e6dee0b9"
+    },
+    "content/handbook/security/identity/guide/offboarding/_index.md": {
+      "path": "content/handbook/security/identity/guide/offboarding/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c9e4bac44a626cb819e03499658d6234fd4fe82e66114a049f82e2eb6a189a18"
+    },
+    "content/handbook/security/identity/guide/manager/_index.md": {
+      "path": "content/handbook/security/identity/guide/manager/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "fd22fa43f8cefc307dfa386d64960c6bae0161dd7499ac8f515446892b85a76a"
+    },
+    "content/handbook/security/identity/guide/incident/_index.md": {
+      "path": "content/handbook/security/identity/guide/incident/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "66256592967e8e7c46951d9f89b27ae10a8e20b38e6c4cd98c5f8e71495d2b0b"
+    },
+    "content/handbook/security/identity/guide/developer/_index.md": {
+      "path": "content/handbook/security/identity/guide/developer/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2f1ed12e0612a1112c9c0d99f95b28b3e9351db4e172905443f5f0e31b473b3d"
+    },
+    "content/handbook/security/identity/guide/change-mgmt/_index.md": {
+      "path": "content/handbook/security/identity/guide/change-mgmt/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "49d587bd444c80bea913df910c0e92bcf006b9e3c38ed624f6f15424c0227911"
+    },
+    "content/handbook/security/identity/guide/audit/_index.md": {
+      "path": "content/handbook/security/identity/guide/audit/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "80807566c0c59fcaa42c4e542519c3188748ec30860b7b8f06f2760318066230"
+    },
+    "content/handbook/security/identity/guide/app/_index.md": {
+      "path": "content/handbook/security/identity/guide/app/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cb379c004bdbf4e0cb09929cec373815871b545179cf7ec889712c07e61a5a11"
+    },
+    "content/handbook/security/identity/guide/admin/_index.md": {
+      "path": "content/handbook/security/identity/guide/admin/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4fd18d85f9f98911ba7d504563ad5ce211e4524334e567b06e30e057acac69e0"
     }
   }
 }
