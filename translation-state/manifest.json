@@ -20745,6 +20745,76 @@
       "translated_at": "2026-05-09T12:40:09Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "cc954fe30719838ebdb215b668eb9af23a134a2ec01f669a96b6f273e7273818"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/runway-guidelines.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/runway-guidelines.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:50:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "28416651394a9d30bbe92a31954cd4bd3fee0027d3ccbc63b7eac5b4d6bd2f17"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/team-member-upskilling.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/team-member-upskilling.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:50:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2faf36dd15ba0f425ad98db96ba2ccb5c765a69d188c23f7a9dd9866223cfca1"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:50:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1ba905f7c7310d90198731e8b9f22375f50e2be4311e944c008414d74c6c93f0"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/application-security-automation-monitoring.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/application-security-automation-monitoring.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:50:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "50700234f8f4e8c33b9005251f435a80239f1d8554c276246faba9e2e7e8cda1"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-async.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-async.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:50:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0d5a997c2601fc249e9e35eaa7c8c40fa7a15b7e148cd55934c0d8fff748646e"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-dogfooding-feature-requests.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-dogfooding-feature-requests.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:50:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ee628c7e932d86883865654f02fb83779b5345e5fcd5ab1a55be9623abd51d77"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-organization.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-organization.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:50:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d2457a7e602daf5de9691a52dca17ae5318cd992ae6d2301aae22671cfe8988c"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:50:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9138ff25ed7f54f5cd5bfbee14f504dfe8d31ef21756698e2eb2ba4b0d927322"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/inventory.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/inventory.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:50:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a77602a2ea6f17719bd33b487bb25c3376872a8dab64440d9c64cefffaae8487"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/milestone-planning.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/milestone-planning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:50:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "af25d734573341962ab7450ff153d49d452d91af83c366a304d4b5aed8cb6adb"
     }
   }
 }
