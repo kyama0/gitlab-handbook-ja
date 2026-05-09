@@ -16476,6 +16476,13 @@
       "model": "claude-opus-4-7",
       "input_hash": "ebb3e4a36116fddfde2cd2ad19f80fbaccd4a1a5777234c6840d079dcafe19ef"
     },
+    "content/handbook/teamops/_index.md": {
+      "path": "content/handbook/teamops/_index.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b5af68a530cbd61e1c7fb46520459863ecf8a6ec866f8c17211651a5f0db5462"
+    },
     "content/handbook/tools-and-tips/_index.md": {
       "path": "content/handbook/tools-and-tips/_index.md",
       "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
@@ -16503,6 +16510,13 @@
       "translated_at": "2026-05-08T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "863ae36f2635dfa0f86c1158ab24eb173dfbf2358536d339db8720fa9f83e98e"
+    },
+    "content/handbook/tools-and-tips/ai/security_division_ai_usecases.md": {
+      "path": "content/handbook/tools-and-tips/ai/security_division_ai_usecases.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a3fa6af02f77933b40c0a8b14c478069359a8111b797d62461b2e25fafc8edb8"
     },
     "content/handbook/tools-and-tips/editors-and-ides/_index.md": {
       "path": "content/handbook/tools-and-tips/editors-and-ides/_index.md",
@@ -16867,6 +16881,62 @@
       "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "29c23f75c4d69fe0eb31ca222494df32984147c0cec3382073c08883a515a8de"
+    },
+    "content/handbook/support/_index.md": {
+      "path": "content/handbook/support/_index.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3e833f59dee9568af40db3eedf22f1643cded591d5fa9b7715d3cedc7964ae95"
+    },
+    "content/handbook/support/amer.md": {
+      "path": "content/handbook/support/amer.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ad86414e849a770d24cda23c114b8cb723307ede7191b1db9efe1c56f504d987"
+    },
+    "content/handbook/support/apac.md": {
+      "path": "content/handbook/support/apac.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d2a1843f75312405da1a1aa18b8ce04363c4fa50ad84b4c50ea091781e1964e1"
+    },
+    "content/handbook/support/aspiring_leaders.md": {
+      "path": "content/handbook/support/aspiring_leaders.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "94b8b5e38d21d631460c7bb8492626a8f626449623edebccc9adfc7c015d0c77"
+    },
+    "content/handbook/support/channels.md": {
+      "path": "content/handbook/support/channels.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "820d9da6e02b3e93a2e26fc5583ec4c0c28a672aebea74548c32aa1ad1e340d1"
+    },
+    "content/handbook/support/data-analysis.md": {
+      "path": "content/handbook/support/data-analysis.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f2c7a660b7a1249639a7130c6dfb88094f57190aa220ec7a23c3244531e618cd"
+    },
+    "content/handbook/support/gratis-support.md": {
+      "path": "content/handbook/support/gratis-support.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6233faab81422ead9e17292bc4995f381d9527cd58375f42cf64cbbac0b1bb27"
+    },
+    "content/handbook/support/on-call.md": {
+      "path": "content/handbook/support/on-call.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8e3178895a432b1241a712c2f764c8c0f8ca3f4e8e0d4c4e225638806975cdc5"
     },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
