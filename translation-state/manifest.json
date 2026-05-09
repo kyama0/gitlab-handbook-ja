@@ -21445,6 +21445,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "dd9a6d298ee0478b9ad2c317c37ef67ae51fd6c2ed6f3b2973cb5facf9687746"
+    },
+    "content/handbook/security/customer-support-operations/faqs.md": {
+      "path": "content/handbook/security/customer-support-operations/faqs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:03:24Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "ff147efb03881dc5c2f3ff4dd0e267069ea83e94fbfa2626d9af01ba5f85dff4"
+    },
+    "content/handbook/security/customer-support-operations/token-management.md": {
+      "path": "content/handbook/security/customer-support-operations/token-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:03:24Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "b3d460f1e1d7e1535c8985cc047f4bb0c7b243aa60f4dc13f53433b4a5052067"
+    },
+    "content/handbook/security/customer-support-operations/zendesk-salesforce-sync/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk-salesforce-sync/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:03:24Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "c728b33ee71b1303ccd2b2ca7286d2ccc0518d145fa8811882f51cca8ab67e7c"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:03:24Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "b7cb83ca547c6526dab7200040d94585744908f832c7045ddc219ce36ebe8a18"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/webhooks/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/webhooks/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:03:24Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "d37b872bc32b753539d1079e8f8b05bbf42588879141b3eae129b25869bcf2a6"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/views/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/views/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:03:24Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "eb0ddd373d9557d16819c095ffd1d617cad54b6428cad3fa6060a09f2322f7e3"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/users/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/users/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:03:24Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "f3c2ea3387e15bd6e871dbfcb688cfd932244b9b95e33722db75b3d916879225"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/users/agents.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/users/agents.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:03:24Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "0a01d6669fc55cd6b2f793dc820a42870850ddd2ebbae7f5788fb3c4009da5f5"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/users/audit-events-analyzer.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/users/audit-events-analyzer.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:03:24Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "b826d0f968f807c310f90adfa75b6d5dcac6255445eda31b2d3f687cbddc2036"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/users/automated-user-deletion.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/users/automated-user-deletion.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:03:24Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "e8877f61345caa1b61d387b542d939fe83713a32bc64ca91f00ec79fa8bee281"
     }
   }
 }
