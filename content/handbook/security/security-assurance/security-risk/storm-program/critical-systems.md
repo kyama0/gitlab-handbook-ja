@@ -1,6 +1,6 @@
 ---
 title: "クリティカルシステム階層化方法論"
-summary: "クリティカルシステム階層化方法論の目的は、GitLab がお客様にサービスを提供するために重要であるとみなされる、組織全体で利用される特定のシステムを特定および理解する支援をすることです。"
+summary: "The purpose of the Critical System Tiering Methodology is to support GitLab in identifying and understanding the specific systems utilized across the organization that are considered critical to serving GitLab's Customers."
 controlled_document: true
 upstream_path: /handbook/security/security-assurance/security-risk/storm-program/critical-systems/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141

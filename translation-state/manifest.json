@@ -19769,70 +19769,70 @@
     "content/handbook/security/security-and-technology-policy-exception.md": {
       "path": "content/handbook/security/security-and-technology-policy-exception.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T14:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "901229e75e35417575a940a076ba4da0364d76d999258f98f27659ee4ca30dac"
     },
     "content/handbook/security/security-change-management-procedure.md": {
       "path": "content/handbook/security/security-change-management-procedure.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T14:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "41688d06f750d2ebabd833c9cf59f8692cebc0625936ca771a7c8f8519ff07ef"
     },
     "content/handbook/security/security-division-dogfooding.md": {
       "path": "content/handbook/security/security-division-dogfooding.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T14:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "1bd10877ae19bffbd5c15cdae16525df04458c25e49215238b5cd14e810807ac"
     },
     "content/handbook/security/security-observations-risk-management.md": {
       "path": "content/handbook/security/security-observations-risk-management.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T14:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "cb95eb0189309669c4dc7487858123668dbe60203dd5c0cfa28c0da8da71a773"
     },
     "content/handbook/security/security-shadow-sec-eng-res.md": {
       "path": "content/handbook/security/security-shadow-sec-eng-res.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T14:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "7dd5040d6a2848614cf02a5545cebafe024727ffe6931247d1fc8e0b2f3596ed"
     },
     "content/handbook/security/security-shadow-security-assurance.md": {
       "path": "content/handbook/security/security-shadow-security-assurance.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T14:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "853c786a493d5bdcfb2da1d0e2b28516b0e79903f858b1acd7458179887feb5e"
     },
     "content/handbook/security/security-shadow.md": {
       "path": "content/handbook/security/security-shadow.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T14:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "8fbf7b8a9083893d5a170b6855dd98c1c9efcd2d1f436dd71494aa589dae5c59"
     },
     "content/handbook/security/security_labs_blog.md": {
       "path": "content/handbook/security/security_labs_blog.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T14:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "9a0160c10565edb38e38c6692d8591aa0275fb0f62b46fe23f4bdf7f2c19ddf8"
     },
     "content/handbook/security/transparency-by-default.md": {
       "path": "content/handbook/security/transparency-by-default.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T14:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "9649f622a459324409755872d02915189141e3e1118a5361a04b7d2458a0817e"
     },
     "content/handbook/security/women-in-security.md": {
       "path": "content/handbook/security/women-in-security.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T14:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "5bbd18f8e9dd6290290d1534fc95a5dd760648a8c6c9856b04676f1d04082b19"
     },
@@ -19909,140 +19909,140 @@
     "content/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com.md": {
       "path": "content/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "d62e10e2e13f6d390e7eb5d34d22df1ee207ebb7e6bdd7cb91c9220f31d88c2b"
     },
     "content/handbook/security/security-operations/threat-intelligence/_index.md": {
       "path": "content/handbook/security/security-operations/threat-intelligence/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "6f23f9cfdd9f6101c6346ec6e998e6cd87269532afd27cf6abe6f8aadaed1d52"
     },
     "content/handbook/security/security-operations/sirt/_index.md": {
       "path": "content/handbook/security/security-operations/sirt/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "a5f749224c07ff67381069baf9d4a341d72079da5b9c2f33e17ab94fe74b5392"
     },
     "content/handbook/security/security-operations/sirt/engaging-security-on-call.md": {
       "path": "content/handbook/security/security-operations/sirt/engaging-security-on-call.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "6693ba927e83cd86dbcfc0f8e7547f46933f238707a666c3038dad4df44d7985"
     },
     "content/handbook/security/security-operations/sirt/sec-incident-response.md": {
       "path": "content/handbook/security/security-operations/sirt/sec-incident-response.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "301ff73a3d06b6d771c5d72f8e2594e7c820286228bdcf99d50bc10e526864c4"
     },
     "content/handbook/security/security-operations/sirt/security-incident-communication-plan.md": {
       "path": "content/handbook/security/security-operations/sirt/security-incident-communication-plan.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "379749fa7477e0ae622aebf03f70ff4961c96ebd1306e7fadcf25a7f0a28fa4f"
     },
     "content/handbook/security/security-operations/sirt/security-shadow-security-operations.md": {
       "path": "content/handbook/security/security-operations/sirt/security-shadow-security-operations.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "09c3471f660d819e6b7eb023b7f401ae9202fa42ec629fcac5ed7ba7c22b2bc7"
     },
     "content/handbook/security/security-operations/sirt/severity-matrix.md": {
       "path": "content/handbook/security/security-operations/sirt/severity-matrix.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "135279d382b70a522f54d220b0f9ee3207f6d37eb3e36954a86ccaec852b8b13"
     },
     "content/handbook/security/security-operations/signals-engineering/_index.md": {
       "path": "content/handbook/security/security-operations/signals-engineering/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "e9a65196db3854d922a2c467c7f454ccf5ebea65e9a1b656ae6181349a076567"
     },
     "content/handbook/security/security-operations/security-logging/_index.md": {
       "path": "content/handbook/security/security-operations/security-logging/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "dcd1969c429b58b6ffe62342d805e377a0233f1c67eba689222c5b6d53bb3f64"
     },
     "content/handbook/security/security-operations/security-logging/critical-logging-methodology.md": {
       "path": "content/handbook/security/security-operations/security-logging/critical-logging-methodology.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "17317d753729c792bf7f97a7a00c06e103860511911c9b52056a776214212c9c"
     },
     "content/handbook/security/security-operations/red-team/_index.md": {
       "path": "content/handbook/security/security-operations/red-team/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "12227cb281cfa6845a8c5cc960ce1089e4b6034d553d07eeb6df8e323701074b"
     },
     "content/handbook/security/security-operations/red-team/stealth-operations.md": {
       "path": "content/handbook/security/security-operations/red-team/stealth-operations.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "f3455f49d8a88c11fe28e3329eb45845894fea3e910bec91c060bcaa9515c343"
     },
     "content/handbook/security/security-operations/red-team/purple-teaming/_index.md": {
       "path": "content/handbook/security/security-operations/red-team/purple-teaming/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "663bbd21cb98583c14f8ce925428413813d2691c0b091293cb6285775362f77a"
     },
     "content/handbook/security/security-operations/red-team/opportunistic-attacks/_index.md": {
       "path": "content/handbook/security/security-operations/red-team/opportunistic-attacks/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "866f9873f536aeef65f5d3f6d0ea90fdc593c825beb97171a12bebfcfd1305fd"
     },
     "content/handbook/security/security-operations/red-team/how-we-operate/_index.md": {
       "path": "content/handbook/security/security-operations/red-team/how-we-operate/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "17960bfb465257ce3d2a70a13425f636aa9baee5a3954904704bcb6e08e7f69a"
     },
     "content/handbook/security/security-operations/red-team/how-we-operate/rules-of-engagement.md": {
       "path": "content/handbook/security/security-operations/red-team/how-we-operate/rules-of-engagement.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "0a6419e78778f8d43768a5580440c861577056be859eb774a028ba7279c86ec1"
     },
     "content/handbook/security/security-assurance/_index.md": {
       "path": "content/handbook/security/security-assurance/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "a3ac3bbc6d785cea315906d0575d00e87775e7ee934271b1fd6373156ddd1536"
     },
     "content/handbook/security/security-assurance/automation-and-compliance.md": {
       "path": "content/handbook/security/security-assurance/automation-and-compliance.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "0bc41b7e04264e3ccf8993bdcffe2c03f6df57806dcc1b8b437435d05094357e"
     },
     "content/handbook/security/security-assurance/governance_and_field_security_team_charter.md": {
       "path": "content/handbook/security/security-assurance/governance_and_field_security_team_charter.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "7d54c37d3b432dc548ac16e6e311dc82e4233c722f2c5ee6061f11ebbee26a09"
     },
@@ -20259,70 +20259,70 @@
     "content/handbook/security/security-assurance/governance/sec-training.md": {
       "path": "content/handbook/security/security-assurance/governance/sec-training.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "a3fa4519e3409573f711128bb98a3760bd9c57f432ec02830d1025767cd1f8f3"
     },
     "content/handbook/security/security-assurance/governance/security-assurance-automation.md": {
       "path": "content/handbook/security/security-assurance/governance/security-assurance-automation.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ce67c22adf0d45e829d160cd1a745bd0f4595bd2d95c10325f6bc4516229b9b9"
     },
     "content/handbook/security/security-assurance/governance/security-training.md": {
       "path": "content/handbook/security/security-assurance/governance/security-training.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "f974303791a8b06e559181a0262eb479048631a8705ca4a8ee2553e659f6ac25"
     },
     "content/handbook/security/security-assurance/field-security/_index.md": {
       "path": "content/handbook/security/security-assurance/field-security/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "a9ddff8b6da887fc509cfe32069adc4f0b8071d5bfeb4eb32fcb5a59f0026fbd"
     },
     "content/handbook/security/security-assurance/field-security/answerbase_quality_guide.md": {
       "path": "content/handbook/security/security-assurance/field-security/answerbase_quality_guide.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "f5e889f51cb2b0b36ecc60dc62b1cee29ec60f8e198a97d230494229aa9e5fd3"
     },
     "content/handbook/security/security-assurance/field-security/customer-security-assessment-process.md": {
       "path": "content/handbook/security/security-assurance/field-security/customer-security-assessment-process.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "2a35a1ddc98e71f88ff903033b3dc5d632cfb759eb46063cd1a2dceebda2e4a9"
     },
     "content/handbook/security/security-assurance/field-security/evangelism.md": {
       "path": "content/handbook/security/security-assurance/field-security/evangelism.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "9338d4e787bbe4cb07f33a2967d6581c8bb8ea96e85bbcb3cc403043cbcf0476"
     },
     "content/handbook/security/security-assurance/field-security/field-security-research-program.md": {
       "path": "content/handbook/security/security-assurance/field-security/field-security-research-program.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "d7b1614075e7d3a1d9742d8cc672c8e1dc99cb4fdef653faa6c0137eee18f068"
     },
     "content/handbook/security/security-assurance/field-security/field-security-rfp.md": {
       "path": "content/handbook/security/security-assurance/field-security/field-security-rfp.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "c19bdca7c84e3841c1293bdc51b1de0a14ddacbe66a99c5e59d935c32aa985f3"
     },
     "content/handbook/security/security-assurance/field-security/field-security-study.md": {
       "path": "content/handbook/security/security-assurance/field-security/field-security-study.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
+      "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "51bd76c38e924003db18c4b1810cccf187a2506ec1217954850911b66680858b"
     },
@@ -20675,356 +20675,6 @@
       "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ba8d6e76e01df3205f462081cfbb820cecbdd32535dac0dd3ae07ba3ccf73484"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/security-architecture/_index.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/security-architecture/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:40:09Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "c622e58b7bd8caa933f9c2d7480d840cd98704a177f91c6085275ce24c0b2ad4"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/security-architecture/zero-trust.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/security-architecture/zero-trust.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:40:09Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "114b76cf0f825927a853bc38d089b7db36525bb7e7bfac98bc0f48c28a97de78"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/risk-register/_index.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/risk-register/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:40:09Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "76b6f8287e83ab8ab9ec7745b9eaeedf81039d2aed88548c7787eecf2bfbf106"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/risk-register/well-articulated-prodsec-risks.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/risk-register/well-articulated-prodsec-risks.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:40:09Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "28c345c202749301e608f46ba84da2699c3c8bdcc41119e6e8e240777e65e735"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/_index.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:40:09Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "524dd8600832b74850746a33531ddd3949fbf68838093a63b539328c49356d8d"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/detailed-workflow.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/detailed-workflow.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:40:09Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "4b3de9918f16ab069c8b679f944bcf6d091802e4279e3579dc14721df59b7478"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/_index.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:40:09Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "8a24f28f6af48349cc6dde3013dd4185d6c25c0dab18c970f68cbd89db328a3e"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/hackerone-tooling.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/hackerone-tooling.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:40:09Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "7e8412618b0f4448f0d804d6f2633c7f9811ee8f7cb3f90e5a5bc452e9ef55dd"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/product-security-automation-token-management.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/product-security-automation-token-management.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:40:09Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "47ff6ea12e102fee4fc275fba710b11c787b7fc8bfe0c8b52c902fa2507f4e65"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/rotate-service-account-personal-access-tokens.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/rotate-service-account-personal-access-tokens.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:40:09Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "cc954fe30719838ebdb215b668eb9af23a134a2ec01f669a96b6f273e7273818"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/runway-guidelines.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/runway-guidelines.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:50:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "28416651394a9d30bbe92a31954cd4bd3fee0027d3ccbc63b7eac5b4d6bd2f17"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/team-member-upskilling.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/team-member-upskilling.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:50:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "2faf36dd15ba0f425ad98db96ba2ccb5c765a69d188c23f7a9dd9866223cfca1"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/_index.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:50:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "1ba905f7c7310d90198731e8b9f22375f50e2be4311e944c008414d74c6c93f0"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/application-security-automation-monitoring.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/application-security-automation-monitoring.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:50:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "50700234f8f4e8c33b9005251f435a80239f1d8554c276246faba9e2e7e8cda1"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-async.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-async.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:50:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "0d5a997c2601fc249e9e35eaa7c8c40fa7a15b7e148cd55934c0d8fff748646e"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-dogfooding-feature-requests.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-dogfooding-feature-requests.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:50:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "ee628c7e932d86883865654f02fb83779b5345e5fcd5ab1a55be9623abd51d77"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-organization.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-organization.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:50:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "d2457a7e602daf5de9691a52dca17ae5318cd992ae6d2301aae22671cfe8988c"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:50:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9138ff25ed7f54f5cd5bfbee14f504dfe8d31ef21756698e2eb2ba4b0d927322"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/inventory.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/inventory.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:50:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a77602a2ea6f17719bd33b487bb25c3376872a8dab64440d9c64cefffaae8487"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/milestone-planning.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/milestone-planning.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:50:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "af25d734573341962ab7450ff153d49d452d91af83c366a304d4b5aed8cb6adb"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/reproducible-builds.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/reproducible-builds.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "10f20f77cc9cb239b11d95c68605f80838e9c5ed5251518920790fd56c6e4556"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/reproducible-vulnerabilities.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/reproducible-vulnerabilities.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "269a699bdcd11b5f8d984df486cf870414dd7f61c9c405a91bf3dac9e47edfbe"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/vulnerability-management.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/vulnerability-management.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5334419feb5990045f7f7c3b2ee6b8d25e7037156886f2e4d1b8a23b382f7308"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/_index.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "078c840578995989176935936bde1004b1b5df6feb86c0e8493b161919be0c4c"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/howto.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/howto.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "864d82ff0a9ec788f990627802d7f1faa0dd9661ebb31efd69bab6cbeb02affa"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/_index.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "257399a57e7c9642061c3ca75afcc8b62bd0489d3738aa2426212e826d920c8b"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/bug-hunting-day.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/bug-hunting-day.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "4123a597f2fc7c288fa6ed2d923ea3ec5d30f6df9ebfcf9fa104f385a7e34aee"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/dependency-review-guidelines.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/dependency-review-guidelines.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "e9f6f5ed378db1d1c9ac050fd205fd21dc1c5ae9aee04ecc7247de0fb9dcd143"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/faq.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/faq.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "44274a866c0a63a29deee2608c22389c76817940388327d83d1fe7f120547034"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/federal-appsec-container-scanning-review.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/federal-appsec-container-scanning-review.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "2a5ee65af2660d498bc8b448d83ee6a8ff1cc8e7204bad4a06dd8c9dd8068e55"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/holiday-coverage.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/holiday-coverage.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "c884f4e228bffa4e113b2b7cf3a4f5c2211bc748d4f62d9e2118c355d74cf24a"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/investigating-package-hunter-findings.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/investigating-package-hunter-findings.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "664d9400e7b8eb4a158eaa16b10a3e3dc687991386120bae853d3503f3a6ed64"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/jihu-contribution-merge-monitor-reports.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/jihu-contribution-merge-monitor-reports.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "ae15463a79c0bd3942c14bb0c85c0bbe8e5dd55ab57d191829d92fc376cafcdd"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/local-setup.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/local-setup.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "403272eee9cf94a0ef52d26c540c123ec2c6915f310c669bddf4b881b1a5cae5"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/review-process.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/review-process.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "f75faaeeaac5246eb247a5fad5b966bbe604e27dde5c921acab1a493998900a8"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/scw-engagement-plan.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/scw-engagement-plan.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "bcbe67dcb6715014f3bf71e032308d6c64930f00d8ef7ddb63864933ba8c53fe"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/security-dashboard-review.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/security-dashboard-review.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "3fb2f03662827f24d8fc220fbf8b14dc0a8f8c3c8d912e77b56b07e5c537f3be"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/threat-modeling.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/threat-modeling.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5f45f07c13607dbd6a44ea27668e99dfcbfca0ea09fb2c5d6e62a83ec53e1f9f"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/triage-rotation.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/triage-rotation.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a36f10fe65668c93b106af63600516c76e6a6091c45693834734b198af5df6f4"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/_index.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "fce4c2fa7485c0a25587a567d63156ea5b839fa6fc87bad2591c0c1013f36a05"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/capacity.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/capacity.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "bffc489bc7690b9461f484f8c707ea7420eb3fcbe3f003c275ca3ac8a279536b"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/key-performance-indicators.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/key-performance-indicators.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9a3c465ffe29a6f064f3d9cfb6e9163e71dba382d03cf33cb73fd8b1e3fb522a"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/results.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/results.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b94d1be639d6c697a116af6e26eae01a7a95e0704c3e532f1559cca1878f98c7"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/risk-patterns.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/risk-patterns.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "d644f9fe425e9878b26ac52d8e89b5c01c8ce1bcb57923f009f2ec7e144da7a3"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/appsec-ops-index.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/appsec-ops-index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "37ad6fb6c79d40b41085c81b0d15d06fa5458f50e7d477163c9ae94bbb57edb2"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/psirt-services.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/psirt-services.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "1eba002a37a7ff8e59849b19c1b719609b927d832213b584b13bc66e304b9dac"
-    },
-    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/sdd-services.md": {
-      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/sdd-services.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a30748f0648dc2e0f1bcff691d924175f8a6d6271f07fefa5ec28092b3dd846d"
-    },
-    "content/handbook/security/product-security/security-capabilities-engineering/_index.md": {
-      "path": "content/handbook/security/product-security/security-capabilities-engineering/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "374d1b7bf2a04155fb73b1a759762c303c202c828d55df444a4c0f1b90c2d1b6"
-    },
-    "content/handbook/security/product-security/psirt/_index.md": {
-      "path": "content/handbook/security/product-security/psirt/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "18fbb6329519c63a61a9658f30bc637f581f907d905ad0c97ca75c6015416b95"
-    },
-    "content/handbook/security/product-security/psirt/runbooks/_index.md": {
-      "path": "content/handbook/security/product-security/psirt/runbooks/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T16:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "52a5eeb901effe61fbc0c9ae0be8489f13db61a40635aef718da7e12328556fa"
     }
   }
 }
