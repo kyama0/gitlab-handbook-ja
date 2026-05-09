@@ -21235,6 +21235,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "79fcc286a4ee30051b4392b84e4c599776ccbdd62d55fba1d99abe1ea4284976"
+    },
+    "content/handbook/security/identity/platform/provisioning/_index.md": {
+      "path": "content/handbook/security/identity/platform/provisioning/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4a7272dcde1a88fbf0247dc926cc7dfaea3b8986faef7cadfdd3d721234fe525"
+    },
+    "content/handbook/security/identity/platform/provisioning/okta/_index.md": {
+      "path": "content/handbook/security/identity/platform/provisioning/okta/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2ef6c1161652937e304239a625ee2566d463d462c8d09d5d34c4928459d66613"
+    },
+    "content/handbook/security/identity/platform/provisioning/google/_index.md": {
+      "path": "content/handbook/security/identity/platform/provisioning/google/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cd65a8ffa8e269b1838a812652f995213efb01a6dcdca3511c337e9e65b91f89"
+    },
+    "content/handbook/security/identity/platform/provisioning/gitlab/_index.md": {
+      "path": "content/handbook/security/identity/platform/provisioning/gitlab/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "201f8895223c41e433b742759a653a2ae6137e333b39c307dc9b5fc2dfe00d29"
+    },
+    "content/handbook/security/identity/platform/manifests/_index.md": {
+      "path": "content/handbook/security/identity/platform/manifests/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a3e02b4915b3b7f7a62062f7c37b6040147e67017e1849212892084c7fb3db27"
+    },
+    "content/handbook/security/identity/platform/auditlog/_index.md": {
+      "path": "content/handbook/security/identity/platform/auditlog/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "43130f198238fc6b5896e5424888bb8029d4067866239fa6de214486d1e90faa"
+    },
+    "content/handbook/security/identity/platform/accesschk/_index.md": {
+      "path": "content/handbook/security/identity/platform/accesschk/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1063118e7bb3af1368c1dba765d39ae3e02a72c63f44ff7b889b86e8ab21e940"
+    },
+    "content/handbook/security/identity/kingdoms/_index.md": {
+      "path": "content/handbook/security/identity/kingdoms/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0f24a817e480bd65a1623e3ee13deb7e66cf49565e10adec0948da9fd491da39"
+    },
+    "content/handbook/security/identity/infrastructure/_index.md": {
+      "path": "content/handbook/security/identity/infrastructure/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b0475591b95a66fe9b1637fa8c8ffa9b6e52ee9a564310b8e45f40338121b678"
+    },
+    "content/handbook/security/identity/guide/user/_index.md": {
+      "path": "content/handbook/security/identity/guide/user/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "fe445ffaec8442f66a215c447e0ac8168d45f7123d8db1a4959d8f78db5b0774"
     }
   }
 }
