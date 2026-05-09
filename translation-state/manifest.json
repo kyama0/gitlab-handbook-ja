@@ -20185,6 +20185,76 @@
       "translated_at": "2026-05-09T06:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "e1761db95724a15852234564e6a9291b257cbf1c9eea5bebc0e7c19c2c0bab31"
+    },
+    "content/handbook/security/security-assurance/security-compliance/risk-based-compliance.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/risk-based-compliance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "34dfbeb71105d0c0b79b81a262a15f03a1ed1e724e0b25a17cb5b6315ed7d0f2"
+    },
+    "content/handbook/security/security-assurance/security-compliance/risk-based-control-testing.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/risk-based-control-testing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "de3ddb44015bba796362946c0344b06792b81990c9dc8844c9adc6b4bb075ce2"
+    },
+    "content/handbook/security/security-assurance/security-compliance/sbom-plan.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/sbom-plan.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ccd1876c4363864265dbc08c92342e87703530f79d246e143962eb65973fe058"
+    },
+    "content/handbook/security/security-assurance/security-compliance/scap-scanning.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/scap-scanning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "7b0402c489913d0c2b395a9c1bbf2603a61351839138a1dab1d00724630de7a7"
+    },
+    "content/handbook/security/security-assurance/security-compliance/sec-controls.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/sec-controls.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "69f9bf39def8360ed7f8b36cd3e2a8094ac9c3af12ea0d820a15f9f749aa18f1"
+    },
+    "content/handbook/security/security-assurance/security-compliance/security-control-lifecycle.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/security-control-lifecycle.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "505112ef427eb607bb645ada68dde0a302d2101abee67cb8eeae24cde7a0faa8"
+    },
+    "content/handbook/security/security-assurance/governance/_index.md": {
+      "path": "content/handbook/security/security-assurance/governance/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f62c0da9edd04b8062ad064e34e629ba019943a9b918f646f174f6c4290dfed9"
+    },
+    "content/handbook/security/security-assurance/governance/automation-library.md": {
+      "path": "content/handbook/security/security-assurance/governance/automation-library.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2b0bca9ca2986112cfc3cc441f91df987d24911f38e01392525d1ddea7e70f32"
+    },
+    "content/handbook/security/security-assurance/governance/phishing.md": {
+      "path": "content/handbook/security/security-assurance/governance/phishing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "057b03b94e33730d8fe6e034bd98febab8275f2b5c382532b916618b56364040"
+    },
+    "content/handbook/security/security-assurance/governance/sec-awareness-training.md": {
+      "path": "content/handbook/security/security-assurance/governance/sec-awareness-training.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f28f291efad419fc59df5dd1becf94c54f5de1c7c34ee230595f102f0760feed"
     }
   }
 }
