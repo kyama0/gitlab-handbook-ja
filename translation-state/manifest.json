@@ -17288,6 +17288,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "e35c48fb4e3fb93522ce67b1b039ead5b6f021c905d600a1241896a112a36183"
     },
+    "content/handbook/support/workflows/escalations-support_manager.md": {
+      "path": "content/handbook/support/workflows/escalations-support_manager.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c83d3a0a39f6ecfa1584744384401e7afeb243d61f1b390085424be293681f52"
+    },
+    "content/handbook/support/workflows/exporting_projects.md": {
+      "path": "content/handbook/support/workflows/exporting_projects.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "de1644e71d8aaaa918b83fbc73de3abc0e13f2beceef5642771ecbaa1f175bdf"
+    },
+    "content/handbook/support/workflows/feedbacks_and_complaints.md": {
+      "path": "content/handbook/support/workflows/feedbacks_and_complaints.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "77ca60ff429037333505c6d67edf7d58bbff1c5272a680b314ca7ccfbf3e8e1c"
+    },
+    "content/handbook/support/workflows/fieldnote_issues.md": {
+      "path": "content/handbook/support/workflows/fieldnote_issues.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b5851a8a54537dda14406d26641509ae0cfc32d35187a0caeacf95c568f1069d"
+    },
+    "content/handbook/support/workflows/gitlab-com_customizations.md": {
+      "path": "content/handbook/support/workflows/gitlab-com_customizations.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "24566f3dc944c29b482193d073df552ea71a1ff39f15c7e736478bd872f7fdd2"
+    },
+    "content/handbook/support/workflows/gitlab-com_overview.md": {
+      "path": "content/handbook/support/workflows/gitlab-com_overview.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ca4ff28d55224349484140917690be17f17341160dc083648b08ba7b3e62a68"
+    },
+    "content/handbook/support/workflows/google_cloud_credit_troubleshooting.md": {
+      "path": "content/handbook/support/workflows/google_cloud_credit_troubleshooting.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bacb59405bac2db993c2011a523f8adbf6b424ea4085d80c5657052afcb9fbd5"
+    },
+    "content/handbook/support/workflows/gpt_quick_start.md": {
+      "path": "content/handbook/support/workflows/gpt_quick_start.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "850e29eabd6509c5eb98213c59ec0d791f38741dbed9314e4e527e005cf917a8"
+    },
+    "content/handbook/support/workflows/hackerone-redirect.md": {
+      "path": "content/handbook/support/workflows/hackerone-redirect.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6420844c008e9c08cf9507a7da0f05ecf91f9baa5e7e3d61dcb9e4153cef8ca2"
+    },
+    "content/handbook/support/workflows/handling_offer_migration_tickets.md": {
+      "path": "content/handbook/support/workflows/handling_offer_migration_tickets.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2c09ed4482bf72f90933e057a4e5948f210d2da71b94be24ee20d1c30f124c05"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
