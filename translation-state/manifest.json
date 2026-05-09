@@ -17008,6 +17008,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "a72e37f56b0ee366b04cbcb8170719d165662275c9a2798a92e6d5b0daa1766c"
     },
+    "content/handbook/support/managers/promoting-a-support-team-member.md": {
+      "path": "content/handbook/support/managers/promoting-a-support-team-member.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T09:50:12Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5f7c97a323b96a118efa85f534057cf28f9c896c60fc21855384ce953d5743c0"
+    },
+    "content/handbook/support/managers/senior-leadership-sync.md": {
+      "path": "content/handbook/support/managers/senior-leadership-sync.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T09:50:12Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e899eb2aeb0a60e6f4264d1b1bad2bdff74292a72d4a49e6e733f4977c305016"
+    },
+    "content/handbook/support/managers/support-1-1s.md": {
+      "path": "content/handbook/support/managers/support-1-1s.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T09:50:12Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f1edd7548b3bea44643189a2fec57b2ea004e9ce3e36ea4833cee39bd380b2fb"
+    },
+    "content/handbook/support/managers/metrics-analysis/_index.md": {
+      "path": "content/handbook/support/managers/metrics-analysis/_index.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T09:50:12Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "805cd305aab1c355612053de887c9ba9ebd77794957d560db52c8f5d330646eb"
+    },
+    "content/handbook/support/managers/metrics-analysis/actions.md": {
+      "path": "content/handbook/support/managers/metrics-analysis/actions.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T09:50:12Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f5f6590a367f8e5a2f2bf167a2bd22f6940adcdfaa172268b6f4c33f5b7961e2"
+    },
+    "content/handbook/support/license-and-renewals/_index.md": {
+      "path": "content/handbook/support/license-and-renewals/_index.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T09:50:12Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d3a5a519e09dd28fee53e20c41c54c548463a91584fef4c86168769516b9e4ec"
+    },
+    "content/handbook/support/license-and-renewals/amer-region.md": {
+      "path": "content/handbook/support/license-and-renewals/amer-region.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T09:50:12Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "db2ac77edf26ceeadaee7c161bcdc8a9930c4aec59e736286388dd2d3b410a94"
+    },
+    "content/handbook/support/license-and-renewals/license-and-renewals-glossary.md": {
+      "path": "content/handbook/support/license-and-renewals/license-and-renewals-glossary.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T09:50:12Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a8c5843430307873b2953fdee4ea3ee172054c1957d4bd127126e93c5227ea89"
+    },
+    "content/handbook/support/license-and-renewals/workflows/_index.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/_index.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T09:50:12Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e1f8a5fb356753b6b56990c56ccbd293688f0bd6bd5fd601b6268085faf88fde"
+    },
+    "content/handbook/support/license-and-renewals/workflows/aws_marketplace_license.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/aws_marketplace_license.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T09:50:12Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2356dcf98ee5d82640d4850a25b7d808c1bc1d8f93037b0c66e6b8fb30615fb4"
+    },
     "content/handbook/support/partnerships/_index.md": {
       "path": "content/handbook/support/partnerships/_index.md",
       "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
