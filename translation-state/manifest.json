@@ -19695,6 +19695,76 @@
       "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "533125152b1944d2c7b75324f42f0d98fa56e3927493a65d2f5acf2c28d24be8"
+    },
+    "content/handbook/security/learning-and-development.md": {
+      "path": "content/handbook/security/learning-and-development.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "796b9b8b80be2cbb35d2b31d34aeaf29a793e9234296c55609e63204dc9e2e33"
+    },
+    "content/handbook/security/maturity-models.md": {
+      "path": "content/handbook/security/maturity-models.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "000360e6f774e07e4f3b5a0c9a0eebabb9c11376733c653a55dd3dc10df75ee6"
+    },
+    "content/handbook/security/network-isolation.md": {
+      "path": "content/handbook/security/network-isolation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "779dbbc8b33752933ba51044b03724f3e1ceac6175d396bede366036e519a0fc"
+    },
+    "content/handbook/security/okr.md": {
+      "path": "content/handbook/security/okr.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "93402ed5efd6d8d454ab87e505b2a82547fa58709223044e730438b6337b2bbf"
+    },
+    "content/handbook/security/password-guidelines.md": {
+      "path": "content/handbook/security/password-guidelines.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4186e9a7cb4cf9af3f1037bb748634cb4ce76aab7bcdbc351c29b6170e9fea8b"
+    },
+    "content/handbook/security/performance-indicators.md": {
+      "path": "content/handbook/security/performance-indicators.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c1e61fce2301b3047bb0ea8ac0491160abf099f742e1507c93c6d4528faa8687"
+    },
+    "content/handbook/security/pgp_process.md": {
+      "path": "content/handbook/security/pgp_process.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "84d8a0895f57d7995476418fd8d31fac297a620b0d7a21bfcb293d5218dc65c2"
+    },
+    "content/handbook/security/responding-to-ransomware.md": {
+      "path": "content/handbook/security/responding-to-ransomware.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a2f00321f5bea82eb75621017a2cacda25d75c3cf1bb59fbe3fba4200e105386"
+    },
+    "content/handbook/security/root-cause-analysis.md": {
+      "path": "content/handbook/security/root-cause-analysis.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2c32b189825b3347da87cd910f079c48d9fc71250a7f9e4a2f17dfd2003a415b"
+    },
+    "content/handbook/security/secure-coding-training.md": {
+      "path": "content/handbook/security/secure-coding-training.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9fbc2f7e020e19a9fdb90c51eb2b16562e61a5baf4e742589ab47c0cd671e867"
     }
   }
 }
