@@ -18925,6 +18925,986 @@
       "translated_at": "2026-05-09T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "4278b7f0b3da853d22452805c02e77372284afe4a6cf6ed4121c8449d533d009"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-reports.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-reports.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "90ce5405b45582a125f9fb6191920c222fdeda7d34d7c4dc8eca3fe67a398525"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-tickets-or-issues.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-tickets-or-issues.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c502a51b320d01eb7851488f77b2518fbb099bb732a5c8438564e3db6813b383"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-time-tracking.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-time-tracking.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "279e7eaa922d27b62a3040b99ff7dde88e971cdc1b3e88a8b9c76242c1271b66"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/customer-onboarding.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/customer-onboarding.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "07794969fefb47ffad62e8fe64e8b99abff978409c4d0adde07ff76f04b815cf"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/introductory-meeting.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/introductory-meeting.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cc3792d12ef8c7b24bb47088100cdfc78188e749749617f4e6d7c8c106abeea7"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/planning-pto-as-ase.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/planning-pto-as-ase.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ee70294d3ae10b53b67d2801067538ef740917b0e59557bd5808822b1db92d5a"
+    },
+    "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ticket-tsunami.md": {
+      "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ticket-tsunami.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9287bde1f55e49db44388c746281eba274ca32598202e7e12903e8e1e8c178c1"
+    },
+    "content/handbook/support/engineering/_index.md": {
+      "path": "content/handbook/support/engineering/_index.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1c14136186abe806bfa4b14f75d12b7df23403894584fc1b0b4a3785483648bb"
+    },
+    "content/handbook/support/engineering/mentorship.md": {
+      "path": "content/handbook/support/engineering/mentorship.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "beafa3a9880b65fb7f8aef24539250d94237def94b4b461f418ad1a757360304"
+    },
+    "content/handbook/support/engineering/staff.md": {
+      "path": "content/handbook/support/engineering/staff.md",
+      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f9624ac07a174160c55abd32d5e84d49d3a7761966fce9bd3839d380a816a136"
+    },
+    "content/handbook/support/browser-extensions/_index.md": {
+      "path": "content/handbook/support/browser-extensions/_index.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6cd32c6b2900df52967ea6b1f274d357b0d8494a3efe8acc90e2757a953ecb00"
+    },
+    "content/handbook/support/ai/_index.md": {
+      "path": "content/handbook/support/ai/_index.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "885012ca0adb2586244b16b9d016d2af60a1023f33f7946577fad8d1190e9bb5"
+    },
+    "content/handbook/support/ai/ai-tool-selection.md": {
+      "path": "content/handbook/support/ai/ai-tool-selection.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "042063e52580c83060050f58647fc06cd8e416f5cf8f80e27115f4e0a4221172"
+    },
+    "content/handbook/support/ai/ai-usage-recommendations.md": {
+      "path": "content/handbook/support/ai/ai-usage-recommendations.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c7680f5435c48f3b11aa1650de18014a65625aa77785e15ce0efdf4d0ebf8b92"
+    },
+    "content/handbook/support/ai/using-ai-in-support.md": {
+      "path": "content/handbook/support/ai/using-ai-in-support.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a986ce2ea97282bf1dff5fc23643a666bc1c912c9aaea3d2cac39e535ab56f04"
+    },
+    "content/handbook/support/advanced-topics/index.md": {
+      "path": "content/handbook/support/advanced-topics/index.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53728b559c9b7d39c6ac957ba2443e3d3d8c1f9933199e1d378e859a3b864b7d"
+    },
+    "content/handbook/solutions-architects/_index.md": {
+      "path": "content/handbook/solutions-architects/_index.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e89403094b77e567445bf118b23cfda6793f29bf86f88f9942fe8793aaa507b3"
+    },
+    "content/handbook/solutions-architects/demonstrations.md": {
+      "path": "content/handbook/solutions-architects/demonstrations.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ff19d12b12d0153de95510dea865ba7b5796be478b6d7e78f4223fed4865772d"
+    },
+    "content/handbook/solutions-architects/sa-career-development.md": {
+      "path": "content/handbook/solutions-architects/sa-career-development.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6eed60a88a53f878bca4b35f3ac9bb8b7362dfb38aa027f90c9f4374318f32cb"
+    },
+    "content/handbook/solutions-architects/sa-documentation.md": {
+      "path": "content/handbook/solutions-architects/sa-documentation.md",
+      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ea066e12259f815b161c9a2368dad84bd60487b9aaf5cf9e32c8edac20e09077"
+    },
+    "content/handbook/solutions-architects/strategic-field-org.md": {
+      "path": "content/handbook/solutions-architects/strategic-field-org.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7e6227ae84e072e9a7b1e588c749e0c0ccc044e086318f005586613ae748fd2b"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/_index.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/_index.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fb06c2a8cb9acd5900db22184c39757cf0fe5c115073dfd34676f412f0c7cb05"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/dap-issue-reporting.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/dap-issue-reporting.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "99ace5083d8b471c1cc9ff636aeba82bac978dc0450f8f62715c9a624c668104"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/trial-guidelines.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/trial-guidelines.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a4cf2ceb7030d711b122d8f1ff972dfddb00cfa111bf75e22005bcf41e0d39ab"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/workshop.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/workshop.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c637c9ee90efe98be8f7d77c1dd6c3b1fc831ba9c1d3444335369fa10eb2036a"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/stackoverflow/_index.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/stackoverflow/_index.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fc8f843aa99319ec4a7c74b8a69b9d3f6e70c2abe693b7fdc14da703d5f90dc2"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/stackoverflow/administration.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/stackoverflow/administration.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d488c2c0b942d23429699c7ddb4d2a65a283d49e66a0e970c024a53cbd377e6a"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/stackoverflow/adoping.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/stackoverflow/adoping.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ba99b915f19be3276e2aa361641eb0618c5b458814f4f31e607814aabf25d6e6"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/stackoverflow/onboarding.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/stackoverflow/onboarding.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b4f0a0e448c0dea12510f83ae08d4c7cd6702854f263dc285c6ae34e0f4f2f3d"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/stackoverflow/outomes.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/stackoverflow/outomes.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0a752be0ef03176b7d1adc40eb800a4459cc8de852fe913dadceb360b73eb8a3"
+    },
+    "content/handbook/solutions-architects/sa-practices/_index.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/_index.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e7c2ce883afc528660bf15c613c66db5277d46b1952d4184c39a51fe9187c20e"
+    },
+    "content/handbook/solutions-architects/sa-practices/business-value-consulting.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/business-value-consulting.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d274c72323d91aaa6851607564f8195012715e80e9e41de0b182aa28666ce4cd"
+    },
+    "content/handbook/solutions-architects/sa-practices/day-in-the-life.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/day-in-the-life.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7ece1d6f670748a3842d1e36282bf271a0f35d2c6dadd53e47e49014798f8c04"
+    },
+    "content/handbook/solutions-architects/sa-practices/deliberate-practice.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/deliberate-practice.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7d4b322d240c7872b5d2d96e270cd1b107212670b134c091f76a448632aac0e9"
+    },
+    "content/handbook/solutions-architects/sa-practices/effective-objection-handling-practice.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/effective-objection-handling-practice.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4fe1d5be5d71b908ea5cf308203d4739851a290d09cd68a3517addebede5cb8c"
+    },
+    "content/handbook/solutions-architects/sa-practices/monthly-release-quiz.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/monthly-release-quiz.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dcf7c040ac4f38afa4a3839d84c932317962c5be85e2c57a9682990618172390"
+    },
+    "content/handbook/solutions-architects/sa-practices/recognizing-cognitive-bias.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/recognizing-cognitive-bias.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4554702f356106e7d1cc050596034e1384f5523765d216b81c0c1bc5dd66e838"
+    },
+    "content/handbook/solutions-architects/sa-practices/ride-alongs.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/ride-alongs.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6bf7b6edbdc1e9cf636b7c376169a4b88439843ed555d37fe411afca2d27c967"
+    },
+    "content/handbook/solutions-architects/sa-practices/sa-leader-shadow.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/sa-leader-shadow.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e1206f2f75b587fcc441fd56ea8d7223c44fb445210cbf20f618dfd95fbf2fd3"
+    },
+    "content/handbook/solutions-architects/sa-practices/sa-office-hours.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/sa-office-hours.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T18:13:56Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6934d73c74978c11b431326e30fbd866458bdaa133741fd4fece8884a1c8fad3"
+    },
+    "content/handbook/solutions-architects/sa-practices/sa-retrospective-feedback.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/sa-retrospective-feedback.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "548466219f29c48101634daa3b71a7087d11c5f704f3cce6c2b1302117569311"
+    },
+    "content/handbook/solutions-architects/sa-practices/workshops.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/workshops.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "90f62dc04ce994c54eddce11ab06ea75f16f7af3d93c801126a7619da8294712"
+    },
+    "content/handbook/solutions-architects/sa-practices/whiteboard-based-facilitation/_index.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/whiteboard-based-facilitation/_index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c72e8ae9e1312316eb53cf62698225a72a23e5a8a9e200538254d6889338fa4c"
+    },
+    "content/handbook/solutions-architects/sa-practices/value-stream-discovery/index.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/value-stream-discovery/index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f40e50c547c784460cecd6c0e234c472a79196e5fb5733b245e25b0a430472b9"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/_index.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/_index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "88f0d5c5806bbb3d5973e3e7c5352feb007cf598c511c90256e229373b9a9c6a"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-cadences.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-cadences.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1d80204f030179badb956795d7c491705e97f2d5e915d2629413cc3661c67e6d"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-collateral.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-collateral.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6a643867fedd3c3af12f3fd181eb11b36f2e12e47ac2ed00fcb5db4a165483c3"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-customer-feedback.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-customer-feedback.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2db29e048d73c5a53c7e3a304d783564750b3ed5aa4554d6fe322527d5a6c8ed"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-engage-pm.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-engage-pm.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ee4c72e0939624296292d1ca202c750823b7b59134d03cc0c84c6a379d138f82"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-operations.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-operations.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "37b7ea24514151f97c4ea95fb1e88e641c2c045ef108699c96c08d108ccf31cf"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-program.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-program.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a85db051e39c51c0e7f0503cb88b8212a6217eb0a57377662e02d12a1472f3f"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-request.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-request.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "395e8a7a3921716f7b7e3500bb01bbad334b82dc23f45095f30dca9c7d66be9b"
+    },
+    "content/handbook/solutions-architects/sa-practices/communities-of-practice/_index.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/communities-of-practice/_index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "55812fdb6ad36e5bef5c452817e69728defd6dcf9198fb3b5988152f2943b75b"
+    },
+    "content/handbook/solutions-architects/sa-practices/communities-of-practice/integration-technologies.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/communities-of-practice/integration-technologies.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fe4a221ffa55ad56da60df89c713429171a64793fcff73ae7d53b5ad911eeaba"
+    },
+    "content/handbook/solutions-architects/sa-manager/_index.md": {
+      "path": "content/handbook/solutions-architects/sa-manager/_index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c730e27acfcc2abca0112bfd136b5be9d1d25a4e937381a06efb3175a03a7834"
+    },
+    "content/handbook/solutions-architects/sa-manager/gong-scorecards.md": {
+      "path": "content/handbook/solutions-architects/sa-manager/gong-scorecards.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "289c22464cca5ec5acd52115766da949b794ff5667ad967635645235b2c5f57d"
+    },
+    "content/handbook/solutions-architects/sa-manager/sa-offsites.md": {
+      "path": "content/handbook/solutions-architects/sa-manager/sa-offsites.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "24b0d41fb7c845ed37f56a41fea470650c8885c4ed5d2fe422eea2220a469f31"
+    },
+    "content/handbook/solutions-architects/sa-enablement/_index.md": {
+      "path": "content/handbook/solutions-architects/sa-enablement/_index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a8eb4afff913a7af3e1fe950fc28d8d5bca1f728fc4821774d0d2f71fa655e6"
+    },
+    "content/handbook/solutions-architects/sa-enablement/sa-onboarding.md": {
+      "path": "content/handbook/solutions-architects/sa-enablement/sa-onboarding.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "78f1d7a27d0ac154d69f73d34a623b55731d5e4979ae3a5ebee8a73cf53f5904"
+    },
+    "content/handbook/solutions-architects/rules-of-engagement/_index.md": {
+      "path": "content/handbook/solutions-architects/rules-of-engagement/_index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ed9e8e8b3db4cf0944eedf3fd0d72c902b7d1acd85c51a792f6720b5395a4456"
+    },
+    "content/handbook/solutions-architects/processes/_index.md": {
+      "path": "content/handbook/solutions-architects/processes/_index.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2f704a5369b72de0ef2624eebbbc9d4e81d077324a82487f4d571af7f4e78740"
+    },
+    "content/handbook/solutions-architects/processes/account-planning.md": {
+      "path": "content/handbook/solutions-architects/processes/account-planning.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bc78318a35d0486078ade52675f90a41ee90809e82213138ca3aa9b35a7838e9"
+    },
+    "content/handbook/solutions-architects/processes/alliance.md": {
+      "path": "content/handbook/solutions-architects/processes/alliance.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d73de0ef4fee4f168cf8ce26c1194916aab0f9635d02d9549688e5fe128bd7f1"
+    },
+    "content/handbook/solutions-architects/processes/channel.md": {
+      "path": "content/handbook/solutions-architects/processes/channel.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f67444a05b9051a53593ed9af74806cc7255ad22678230d75e150379522a49cd"
+    },
+    "content/handbook/solutions-architects/processes/collaboration-project.md": {
+      "path": "content/handbook/solutions-architects/processes/collaboration-project.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0ebd24ea41666a0e2f2b399624ee52815d26c7467a187a5c31ece1ca43ce3dc3"
+    },
+    "content/handbook/solutions-architects/processes/commercial.md": {
+      "path": "content/handbook/solutions-architects/processes/commercial.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0e8412d09b00ef71ee6cb92ce95c8b5d67744e7d61c55039a3180d0fb0c8ec47"
+    },
+    "content/handbook/solutions-architects/processes/ecosystem.md": {
+      "path": "content/handbook/solutions-architects/processes/ecosystem.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5d63dce8db3891795f5824ffec9fdec8f4da4b2bd3802cd8bbbd5beb6a1603aa"
+    },
+    "content/handbook/solutions-architects/processes/rfp.md": {
+      "path": "content/handbook/solutions-architects/processes/rfp.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cf690158c86ab801a852f1a4bc8b79f941a3ae37145d32ed25d4890fc9881123"
+    },
+    "content/handbook/solutions-architects/processes/sa-opportunity-hygiene.md": {
+      "path": "content/handbook/solutions-architects/processes/sa-opportunity-hygiene.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ce7510d4815099db4b6116252d10562ea04d8b6b2a90048af3262ba11f590f74"
+    },
+    "content/handbook/solutions-architects/processes/technical-discovery.md": {
+      "path": "content/handbook/solutions-architects/processes/technical-discovery.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "84dffbd984c451ad0788cb3b2eef8677fdc1ccfb1ac63f4ae1a36e8d0e8c04bb"
+    },
+    "content/handbook/solutions-architects/processes/technical-win.md": {
+      "path": "content/handbook/solutions-architects/processes/technical-win.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fd0ddf5f417b37f4b6494172b9c28b821c92f516c1d2f6117d83c5a580a76de4"
+    },
+    "content/handbook/solutions-architects/processes/ecosystem-sa/esa-operating-rhythm.md": {
+      "path": "content/handbook/solutions-architects/processes/ecosystem-sa/esa-operating-rhythm.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2ea2119b3108df83483c53ae96cde25521a4981855c2999cc849068a888b3dff"
+    },
+    "content/handbook/solutions-architects/processes/customer-success-plan/_index.md": {
+      "path": "content/handbook/solutions-architects/processes/customer-success-plan/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "363958d940bcf0e85010c9dd3a47d646039b067ae630a1eedfdd1688429fe833"
+    },
+    "content/handbook/solutions-architects/processes/activity-capture/_index.md": {
+      "path": "content/handbook/solutions-architects/processes/activity-capture/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "05d31fec6e47243666622c03dd0c3b84ddfdef18903fa9b6ace34e41c39eae2b"
+    },
+    "content/handbook/solutions-architects/processes/activity-capture/activity-logging.md": {
+      "path": "content/handbook/solutions-architects/processes/activity-capture/activity-logging.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7cb7237d5188be05d3b3780b2d159a7f1ab74e33e3207e66486fc52f77c260e8"
+    },
+    "content/handbook/solutions-architects/processes/activity-capture/customer-success-plans.md": {
+      "path": "content/handbook/solutions-architects/processes/activity-capture/customer-success-plans.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a1f364e7b53cca8c060f3e74a7cf875f3f5c7c7580a095e27714c62d571effef"
+    },
+    "content/handbook/solutions-architects/processes/activity-capture/email-logging.md": {
+      "path": "content/handbook/solutions-architects/processes/activity-capture/email-logging.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "915e0f19986a7c23851a3a169757d2b646a567d0a5db911f5451f09ebc6f13a9"
+    },
+    "content/handbook/solutions-architects/processes/activity-capture/sfdc-logging.md": {
+      "path": "content/handbook/solutions-architects/processes/activity-capture/sfdc-logging.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9785e588de9642b36ed2c2fedfaabb1730f46d3afb26ae7c8dd8a85f77b01c68"
+    },
+    "content/handbook/solutions-architects/playbooks/_index.md": {
+      "path": "content/handbook/solutions-architects/playbooks/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "87aeddc6811ccb954c54a037170bcdfa41f7880a56bedcf64ad4ac63aef1af02"
+    },
+    "content/handbook/solutions-architects/playbooks/gitlab-dedicated-prospects.md": {
+      "path": "content/handbook/solutions-architects/playbooks/gitlab-dedicated-prospects.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ce47df836371e7b483910cc9551b4fe13903fbfda4bf13003f25cee91dcdb025"
+    },
+    "content/handbook/solutions-architects/playbooks/sales-plays.md": {
+      "path": "content/handbook/solutions-architects/playbooks/sales-plays.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6657a87206e8501672e3d842312e3836d6a5c5e1d4b177c51d8efcd960edb77e"
+    },
+    "content/handbook/solutions-architects/playbooks/selling-professional-services.md": {
+      "path": "content/handbook/solutions-architects/playbooks/selling-professional-services.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "66e51fc23ecc314b52b5a6d029713493d400bd235908a872ed756a7c229e934e"
+    },
+    "content/handbook/solutions-architects/playbooks/strategic-solution-selling/index.md": {
+      "path": "content/handbook/solutions-architects/playbooks/strategic-solution-selling/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a3c012a7ddf4bace847ffaf863ca3e0b84cdd5d43d294f7e65b7ecafba4784f6"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/_index.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b322463ddfbb7585d0027dd9c22c86294538f092e38c3b78f5e699f17672f771"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/ai.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/ai.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "20ee90181325a9705dafe88b55570e5e9d5298bc5a03674a88f4274f1bb96570"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/automation.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/automation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ec88a58757adb4283f8d23dd1068b509a6a3a7fe6d4e9fb66392d78776e11545"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/compliance.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/compliance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "71a75cc6e58f8e058c567d183bf3550272334461c4dd94d3e9a5a8a890454d21"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/devsecops.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/devsecops.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e4ff02b8f7df193d584e389974df1a23a7eb424265c8b0f2c81c648c66cd2fc9"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/platform.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/platform.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2933bf5445889060a9cb401a85c1e6e28ac09d686619a3565eb0ed4db451c540"
+    },
+    "content/handbook/solutions-architects/center-of-excellence/_index.md": {
+      "path": "content/handbook/solutions-architects/center-of-excellence/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "715d7a7b91f81c5f5c76929a71a0e8999f41332bc816ad14fe05861a4ad9f306"
+    },
+    "content/handbook/solutions-architects/center-of-excellence/demo-architecture.md": {
+      "path": "content/handbook/solutions-architects/center-of-excellence/demo-architecture.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4488bf0f338604e51a6ca6c30e1bc84269693a12bee7d06b0554ca7fad5aa77a"
+    },
+    "content/handbook/solutions-architects/center-of-excellence/demo-systems-tos.md": {
+      "path": "content/handbook/solutions-architects/center-of-excellence/demo-systems-tos.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a6b2fdb5187ef5eecf64d8a718b3fa94a9d68e09166c30bef4024b02b64121a"
+    },
+    "content/handbook/solutions-architects/center-of-excellence/new-business-sa.md": {
+      "path": "content/handbook/solutions-architects/center-of-excellence/new-business-sa.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0668a17be5dd5ce1af8ed468f37fecb5785bb907bf280fd16f8899a2e91a0a94"
+    },
+    "content/handbook/solutions-architects/center-of-excellence/workshop-contribution-guidelines.md": {
+      "path": "content/handbook/solutions-architects/center-of-excellence/workshop-contribution-guidelines.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d019cbe647665bd93b5a0befa5e2934e09da90236873d5ab910a23bb7153a3bb"
+    },
+    "content/handbook/security/_index.md": {
+      "path": "content/handbook/security/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d437696b1667226285693a7a2d085a57f1627af6ab031dd369698e63c7541067"
+    },
+    "content/handbook/security/contributing-to-gitlab-the-product.md": {
+      "path": "content/handbook/security/contributing-to-gitlab-the-product.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bbb7ded65aed285bcfc2b206291d68fb4d150e798fd01244b5cd4eb19a469d62"
+    },
+    "content/handbook/security/controlled-document-procedure.md": {
+      "path": "content/handbook/security/controlled-document-procedure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a9db0d524766f5ffdcfd8d3c35f4efe809b7d189efb75201001ea951bfb224dd"
+    },
+    "content/handbook/security/critical-projects.md": {
+      "path": "content/handbook/security/critical-projects.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "81d9f25052c0085f0662879258863dd7421562b2527498c758f8a3d80e6f0969"
+    },
+    "content/handbook/security/customer-requests.md": {
+      "path": "content/handbook/security/customer-requests.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "07650232aed9516c1533e0ab45a1ada89a6d3bf3f2de5ee252807bc59426d262"
+    },
+    "content/handbook/security/ecosystem.md": {
+      "path": "content/handbook/security/ecosystem.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b3300c2b6f7b057f283243c2803b41250cd5db6ede668587bb6ff204776935ae"
+    },
+    "content/handbook/security/engaging-with-security.md": {
+      "path": "content/handbook/security/engaging-with-security.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cafb7810925d1d2e0ce69c0bac4fb588569182cf1018964bcc18d7af1f8466da"
+    },
+    "content/handbook/security/external-secret-storage.md": {
+      "path": "content/handbook/security/external-secret-storage.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "326ba6c16216cfeb0108c8cbb7cba23d49abfaaf728117c0a214f2d32d277f0c"
+    },
+    "content/handbook/security/external-security-communications-procedure.md": {
+      "path": "content/handbook/security/external-security-communications-procedure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4cc68b01158f45939714c6ba2df51026575d3349fa10925998b4f5fc29715473"
+    },
+    "content/handbook/security/gearing-ratios.md": {
+      "path": "content/handbook/security/gearing-ratios.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "041b3c21eeb01d5d301ddbe3c090c150285ee1a6fae35db28036f8e0037b6221"
+    },
+    "content/handbook/security/gitlab_security_resource_center.md": {
+      "path": "content/handbook/security/gitlab_security_resource_center.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e285a0fe7c507b137862abc2e579fde4abd6d122f13e521ecd6e42def3f7a353"
+    },
+    "content/handbook/security/gitleaks.md": {
+      "path": "content/handbook/security/gitleaks.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5952c75f18d3a13fbe43b3e14545758f1cb1bf768cc323245233e33f10bc1d38"
+    },
+    "content/handbook/security/individual-development-plan.md": {
+      "path": "content/handbook/security/individual-development-plan.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0b5f850132bb9ef3b865a14ad499ed70b10e2e9dc20e2107daccadb71e6af334"
+    },
+    "content/handbook/security/information-system-contingency-plan-iscp.md": {
+      "path": "content/handbook/security/information-system-contingency-plan-iscp.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "181f48a1a40e395bde0c2ccffa5e6368d5e81c2a2b0c2acd69df5b7995cbd12c"
+    },
+    "content/handbook/security/internship.md": {
+      "path": "content/handbook/security/internship.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ac8d933b26d64f35cb1b341db67bb31a8e53a521060502a68d172c941d17aeaa"
+    },
+    "content/handbook/security/isms.md": {
+      "path": "content/handbook/security/isms.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "533125152b1944d2c7b75324f42f0d98fa56e3927493a65d2f5acf2c28d24be8"
+    },
+    "content/handbook/security/learning-and-development.md": {
+      "path": "content/handbook/security/learning-and-development.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "796b9b8b80be2cbb35d2b31d34aeaf29a793e9234296c55609e63204dc9e2e33"
+    },
+    "content/handbook/security/maturity-models.md": {
+      "path": "content/handbook/security/maturity-models.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "000360e6f774e07e4f3b5a0c9a0eebabb9c11376733c653a55dd3dc10df75ee6"
+    },
+    "content/handbook/security/network-isolation.md": {
+      "path": "content/handbook/security/network-isolation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "779dbbc8b33752933ba51044b03724f3e1ceac6175d396bede366036e519a0fc"
+    },
+    "content/handbook/security/okr.md": {
+      "path": "content/handbook/security/okr.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "93402ed5efd6d8d454ab87e505b2a82547fa58709223044e730438b6337b2bbf"
+    },
+    "content/handbook/security/password-guidelines.md": {
+      "path": "content/handbook/security/password-guidelines.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4186e9a7cb4cf9af3f1037bb748634cb4ce76aab7bcdbc351c29b6170e9fea8b"
+    },
+    "content/handbook/security/performance-indicators.md": {
+      "path": "content/handbook/security/performance-indicators.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c1e61fce2301b3047bb0ea8ac0491160abf099f742e1507c93c6d4528faa8687"
+    },
+    "content/handbook/security/pgp_process.md": {
+      "path": "content/handbook/security/pgp_process.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "84d8a0895f57d7995476418fd8d31fac297a620b0d7a21bfcb293d5218dc65c2"
+    },
+    "content/handbook/security/responding-to-ransomware.md": {
+      "path": "content/handbook/security/responding-to-ransomware.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a2f00321f5bea82eb75621017a2cacda25d75c3cf1bb59fbe3fba4200e105386"
+    },
+    "content/handbook/security/root-cause-analysis.md": {
+      "path": "content/handbook/security/root-cause-analysis.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2c32b189825b3347da87cd910f079c48d9fc71250a7f9e4a2f17dfd2003a415b"
+    },
+    "content/handbook/security/secure-coding-training.md": {
+      "path": "content/handbook/security/secure-coding-training.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9fbc2f7e020e19a9fdb90c51eb2b16562e61a5baf4e742589ab47c0cd671e867"
+    },
+    "content/handbook/security/security-and-technology-policy-exception.md": {
+      "path": "content/handbook/security/security-and-technology-policy-exception.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "901229e75e35417575a940a076ba4da0364d76d999258f98f27659ee4ca30dac"
+    },
+    "content/handbook/security/security-change-management-procedure.md": {
+      "path": "content/handbook/security/security-change-management-procedure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "41688d06f750d2ebabd833c9cf59f8692cebc0625936ca771a7c8f8519ff07ef"
+    },
+    "content/handbook/security/security-division-dogfooding.md": {
+      "path": "content/handbook/security/security-division-dogfooding.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1bd10877ae19bffbd5c15cdae16525df04458c25e49215238b5cd14e810807ac"
+    },
+    "content/handbook/security/security-observations-risk-management.md": {
+      "path": "content/handbook/security/security-observations-risk-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cb95eb0189309669c4dc7487858123668dbe60203dd5c0cfa28c0da8da71a773"
+    },
+    "content/handbook/security/security-shadow-sec-eng-res.md": {
+      "path": "content/handbook/security/security-shadow-sec-eng-res.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7dd5040d6a2848614cf02a5545cebafe024727ffe6931247d1fc8e0b2f3596ed"
+    },
+    "content/handbook/security/security-shadow-security-assurance.md": {
+      "path": "content/handbook/security/security-shadow-security-assurance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "853c786a493d5bdcfb2da1d0e2b28516b0e79903f858b1acd7458179887feb5e"
+    },
+    "content/handbook/security/security-shadow.md": {
+      "path": "content/handbook/security/security-shadow.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8fbf7b8a9083893d5a170b6855dd98c1c9efcd2d1f436dd71494aa589dae5c59"
+    },
+    "content/handbook/security/security_labs_blog.md": {
+      "path": "content/handbook/security/security_labs_blog.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9a0160c10565edb38e38c6692d8591aa0275fb0f62b46fe23f4bdf7f2c19ddf8"
+    },
+    "content/handbook/security/transparency-by-default.md": {
+      "path": "content/handbook/security/transparency-by-default.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9649f622a459324409755872d02915189141e3e1118a5361a04b7d2458a0817e"
+    },
+    "content/handbook/security/women-in-security.md": {
+      "path": "content/handbook/security/women-in-security.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T14:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5bbd18f8e9dd6290290d1534fc95a5dd760648a8c6c9856b04676f1d04082b19"
+    },
+    "content/handbook/security/working-in-security.md": {
+      "path": "content/handbook/security/working-in-security.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5d2548393b11369956d69dcb0176de35e250d8002076c256b7dee393e6bc68f1"
+    },
+    "content/handbook/security/threat-management/_index.md": {
+      "path": "content/handbook/security/threat-management/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2c8366477303914dd8794291a1b5f2bad0a5a39a81183967474e494028f764a3"
+    },
+    "content/handbook/security/threat-management/identity/_index.md": {
+      "path": "content/handbook/security/threat-management/identity/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4741c3f2c3a8ebf86a46157fb9d738887714c37ed7b23a5ee7268798b11d3764"
+    },
+    "content/handbook/security/standards/_index.md": {
+      "path": "content/handbook/security/standards/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "424bcbaae7e38c0b3a1c92b20d7890811b90547aece8961f4acf4987ebc75b1b"
+    },
+    "content/handbook/security/security-operations/_index.md": {
+      "path": "content/handbook/security/security-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f3bd484d7429fad3ae3c43f13183ea999797cff6642831a5f27464184c50162a"
+    },
+    "content/handbook/security/security-operations/secops-oncall.md": {
+      "path": "content/handbook/security/security-operations/secops-oncall.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ed8759a5ada2631e68e246c8cb9fb7039539bcb9856e0c2a6e9a76b373bd35b3"
+    },
+    "content/handbook/security/security-operations/trustandsafety/_index.md": {
+      "path": "content/handbook/security/security-operations/trustandsafety/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "00e2dd4adc50ef4cac062db70082825ac8e081ef113e0f70fea59e9cbce0725b"
+    },
+    "content/handbook/security/security-operations/trustandsafety/abuse-on-gitlab-com.md": {
+      "path": "content/handbook/security/security-operations/trustandsafety/abuse-on-gitlab-com.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "52e914221a0bfe28e49261053e5f3dc84e9bdfa1d781425997df76ed1664c233"
+    },
+    "content/handbook/security/security-operations/trustandsafety/diy.md": {
+      "path": "content/handbook/security/security-operations/trustandsafety/diy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bef58747a633bb6dacbe80f762f8f5684a74554fba5b56762aebbd924cc176ea"
+    },
+    "content/handbook/security/security-operations/trustandsafety/faq.md": {
+      "path": "content/handbook/security/security-operations/trustandsafety/faq.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "97d25c1728e46020640d4d199e23d0d17adaf694b5354e3d445c2f36fb590fe6"
     }
   }
 }
