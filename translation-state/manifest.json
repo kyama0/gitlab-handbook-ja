@@ -19835,6 +19835,76 @@
       "translated_at": "2026-05-09T14:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "5bbd18f8e9dd6290290d1534fc95a5dd760648a8c6c9856b04676f1d04082b19"
+    },
+    "content/handbook/security/working-in-security.md": {
+      "path": "content/handbook/security/working-in-security.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5d2548393b11369956d69dcb0176de35e250d8002076c256b7dee393e6bc68f1"
+    },
+    "content/handbook/security/threat-management/_index.md": {
+      "path": "content/handbook/security/threat-management/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2c8366477303914dd8794291a1b5f2bad0a5a39a81183967474e494028f764a3"
+    },
+    "content/handbook/security/threat-management/identity/_index.md": {
+      "path": "content/handbook/security/threat-management/identity/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4741c3f2c3a8ebf86a46157fb9d738887714c37ed7b23a5ee7268798b11d3764"
+    },
+    "content/handbook/security/standards/_index.md": {
+      "path": "content/handbook/security/standards/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "424bcbaae7e38c0b3a1c92b20d7890811b90547aece8961f4acf4987ebc75b1b"
+    },
+    "content/handbook/security/security-operations/_index.md": {
+      "path": "content/handbook/security/security-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f3bd484d7429fad3ae3c43f13183ea999797cff6642831a5f27464184c50162a"
+    },
+    "content/handbook/security/security-operations/secops-oncall.md": {
+      "path": "content/handbook/security/security-operations/secops-oncall.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ed8759a5ada2631e68e246c8cb9fb7039539bcb9856e0c2a6e9a76b373bd35b3"
+    },
+    "content/handbook/security/security-operations/trustandsafety/_index.md": {
+      "path": "content/handbook/security/security-operations/trustandsafety/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "00e2dd4adc50ef4cac062db70082825ac8e081ef113e0f70fea59e9cbce0725b"
+    },
+    "content/handbook/security/security-operations/trustandsafety/abuse-on-gitlab-com.md": {
+      "path": "content/handbook/security/security-operations/trustandsafety/abuse-on-gitlab-com.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "52e914221a0bfe28e49261053e5f3dc84e9bdfa1d781425997df76ed1664c233"
+    },
+    "content/handbook/security/security-operations/trustandsafety/diy.md": {
+      "path": "content/handbook/security/security-operations/trustandsafety/diy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "bef58747a633bb6dacbe80f762f8f5684a74554fba5b56762aebbd924cc176ea"
+    },
+    "content/handbook/security/security-operations/trustandsafety/faq.md": {
+      "path": "content/handbook/security/security-operations/trustandsafety/faq.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T03:09:44Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "97d25c1728e46020640d4d199e23d0d17adaf694b5354e3d445c2f36fb590fe6"
     }
   }
 }
