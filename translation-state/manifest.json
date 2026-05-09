@@ -19555,6 +19555,76 @@
       "translated_at": "2026-05-09T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "715d7a7b91f81c5f5c76929a71a0e8999f41332bc816ad14fe05861a4ad9f306"
+    },
+    "content/handbook/solutions-architects/center-of-excellence/demo-architecture.md": {
+      "path": "content/handbook/solutions-architects/center-of-excellence/demo-architecture.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4488bf0f338604e51a6ca6c30e1bc84269693a12bee7d06b0554ca7fad5aa77a"
+    },
+    "content/handbook/solutions-architects/center-of-excellence/demo-systems-tos.md": {
+      "path": "content/handbook/solutions-architects/center-of-excellence/demo-systems-tos.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "7a6b2fdb5187ef5eecf64d8a718b3fa94a9d68e09166c30bef4024b02b64121a"
+    },
+    "content/handbook/solutions-architects/center-of-excellence/new-business-sa.md": {
+      "path": "content/handbook/solutions-architects/center-of-excellence/new-business-sa.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0668a17be5dd5ce1af8ed468f37fecb5785bb907bf280fd16f8899a2e91a0a94"
+    },
+    "content/handbook/solutions-architects/center-of-excellence/workshop-contribution-guidelines.md": {
+      "path": "content/handbook/solutions-architects/center-of-excellence/workshop-contribution-guidelines.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d019cbe647665bd93b5a0befa5e2934e09da90236873d5ab910a23bb7153a3bb"
+    },
+    "content/handbook/security/_index.md": {
+      "path": "content/handbook/security/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d437696b1667226285693a7a2d085a57f1627af6ab031dd369698e63c7541067"
+    },
+    "content/handbook/security/contributing-to-gitlab-the-product.md": {
+      "path": "content/handbook/security/contributing-to-gitlab-the-product.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "bbb7ded65aed285bcfc2b206291d68fb4d150e798fd01244b5cd4eb19a469d62"
+    },
+    "content/handbook/security/controlled-document-procedure.md": {
+      "path": "content/handbook/security/controlled-document-procedure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a9db0d524766f5ffdcfd8d3c35f4efe809b7d189efb75201001ea951bfb224dd"
+    },
+    "content/handbook/security/critical-projects.md": {
+      "path": "content/handbook/security/critical-projects.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "81d9f25052c0085f0662879258863dd7421562b2527498c758f8a3d80e6f0969"
+    },
+    "content/handbook/security/customer-requests.md": {
+      "path": "content/handbook/security/customer-requests.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "07650232aed9516c1533e0ab45a1ada89a6d3bf3f2de5ee252807bc59426d262"
+    },
+    "content/handbook/security/ecosystem.md": {
+      "path": "content/handbook/security/ecosystem.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T08:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b3300c2b6f7b057f283243c2803b41250cd5db6ede668587bb6ff204776935ae"
     }
   }
 }
