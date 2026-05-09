@@ -20045,6 +20045,76 @@
       "translated_at": "2026-05-09T17:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "7d54c37d3b432dc548ac16e6e311dc82e4233c722f2c5ee6061f11ebbee26a09"
+    },
+    "content/handbook/security/security-assurance/observation-management-procedure.md": {
+      "path": "content/handbook/security/security-assurance/observation-management-procedure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T05:30:11Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "bced28b0025e5d8ec1098d25f6f68a0c725b32253093cee3d2d923802af9f7e3"
+    },
+    "content/handbook/security/security-assurance/security-terms-glossary.md": {
+      "path": "content/handbook/security/security-assurance/security-terms-glossary.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T05:30:11Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "43e81646b4087c23d854cdc4aa8e3e209d85f6e0673f3a22e91c49fbeab251c0"
+    },
+    "content/handbook/security/security-assurance/technical-and-organizational-measures.md": {
+      "path": "content/handbook/security/security-assurance/technical-and-organizational-measures.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T05:30:11Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "58afe2405d774667a2377ca275a1b767a11e9d2c2946535c36c361c6066bc596"
+    },
+    "content/handbook/security/security-assurance/technical-security-validation.md": {
+      "path": "content/handbook/security/security-assurance/technical-security-validation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T05:30:11Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "ade6d71301c026ad578adcb34216baa36c413b9dabe934c3ba6853eae3d36ecb"
+    },
+    "content/handbook/security/security-assurance/security-risk/_index.md": {
+      "path": "content/handbook/security/security-assurance/security-risk/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T05:30:11Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "d934e09a39dc21e1ac2ef6943298d1d78f59229509e68f647ac4e1ff33a32462"
+    },
+    "content/handbook/security/security-assurance/security-risk/sox_cuec_mapping_procedure.md": {
+      "path": "content/handbook/security/security-assurance/security-risk/sox_cuec_mapping_procedure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T05:30:11Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "5db8e1fc2ff8e614651a855332899dcd7a9db8545925cde77c8d16ab6507a37b"
+    },
+    "content/handbook/security/security-assurance/security-risk/third-party-risk-management.md": {
+      "path": "content/handbook/security/security-assurance/security-risk/third-party-risk-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T05:30:11Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "13f0612d461ff706792da522a65af9faf6b9b45c7972e1e399a0def3b74eba76"
+    },
+    "content/handbook/security/security-assurance/security-risk/storm-program/_index.md": {
+      "path": "content/handbook/security/security-assurance/security-risk/storm-program/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T05:30:11Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "a4574167b6817dfd54de9ccbb51bc59edefc8b1ab77a1318bdd604b531f1edc8"
+    },
+    "content/handbook/security/security-assurance/security-risk/storm-program/business-impact-analysis.md": {
+      "path": "content/handbook/security/security-assurance/security-risk/storm-program/business-impact-analysis.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T05:30:11Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "483e40d7633f59f160699f2c2c42db763beb4413c4f7105ed506ba4d8b6a60b0"
+    },
+    "content/handbook/security/security-assurance/security-risk/storm-program/critical-systems.md": {
+      "path": "content/handbook/security/security-assurance/security-risk/storm-program/critical-systems.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T05:30:11Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "ebb848a9f6024162a68ec33cd899fea15d1bc334e1696b42ed00113b3b0a9025"
     }
   }
 }
