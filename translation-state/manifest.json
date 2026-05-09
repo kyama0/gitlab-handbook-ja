@@ -16938,6 +16938,986 @@
       "model": "claude-opus-4-7",
       "input_hash": "8e3178895a432b1241a712c2f764c8c0f8ca3f4e8e0d4c4e225638806975cdc5"
     },
+    "content/handbook/support/performance-indicators.md": {
+      "path": "content/handbook/support/performance-indicators.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d6c8ef8cab244de3ca55a1c7949ab3cabd7bbbfc33fd69e83a08d17e33a4ed07"
+    },
+    "content/handbook/support/priority_prospects.md": {
+      "path": "content/handbook/support/priority_prospects.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0a5385b6f4721d33f602adf505c58827f67e0d7a476db171ee2f03c29cf04061"
+    },
+    "content/handbook/support/providing_excellent_customer_service.md": {
+      "path": "content/handbook/support/providing_excellent_customer_service.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1a49fd08ec26302252cd73cf21db147c58ad62b3b658341c123aac65921826c0"
+    },
+    "content/handbook/support/support-engineer-career-path.md": {
+      "path": "content/handbook/support/support-engineer-career-path.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7fec181fc3facb6dac37246b0b38581139cc3ac7986b9ea09a60852ce3582bd7"
+    },
+    "content/handbook/support/support-engineer-responsibilities.md": {
+      "path": "content/handbook/support/support-engineer-responsibilities.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b61865c459225ffb128fd2b559bb27f50895bab63f8cfe2aa8be15c6b1beb487"
+    },
+    "content/handbook/support/support-idk.md": {
+      "path": "content/handbook/support/support-idk.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3708c15dbe0085cbabc764e7b3178eca5b0c5372a4ea5a5a7678c266cd5eb3e4"
+    },
+    "content/handbook/support/support-incident-response.md": {
+      "path": "content/handbook/support/support-incident-response.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "54235cc3c2ec675a3a9470a1ec4d2895c067dc419c438c59b2bc58e4b596e11a"
+    },
+    "content/handbook/support/support-innovation-group.md": {
+      "path": "content/handbook/support/support-innovation-group.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3bd1054fae99f07cd40986fb9635638f321b990fa02bfddb48bf60522b8f0395"
+    },
+    "content/handbook/support/support-stable-counterparts.md": {
+      "path": "content/handbook/support/support-stable-counterparts.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "570597b9d28f763abe86ffa1be67ce81a21204b9eae256f2c2a0ed7e8c0f5682"
+    },
+    "content/handbook/support/support-time-off-buddies.md": {
+      "path": "content/handbook/support/support-time-off-buddies.md",
+      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b7c9530095ba503b9eb16cffb502521e6a00b1f32f594e7592194bfa09396f7b"
+    },
+    "content/handbook/support/support-time-off.md": {
+      "path": "content/handbook/support/support-time-off.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T19:23:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ffb1078dd0cecf49b222529c9a6dd6c12932118a0a06c3f2236a5b1744278cae"
+    },
+    "content/handbook/support/workflows/_index.md": {
+      "path": "content/handbook/support/workflows/_index.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T19:23:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3bc1f4188463043f23423c15b88e36f13674b6f7865ac00b34ee18046cb716e2"
+    },
+    "content/handbook/support/workflows/2fa-removal.md": {
+      "path": "content/handbook/support/workflows/2fa-removal.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T19:23:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6e54544ee8a7796b052a90f02d0245aba807c36ae512ff53f339cac09e316168"
+    },
+    "content/handbook/support/workflows/500_errors.md": {
+      "path": "content/handbook/support/workflows/500_errors.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T19:23:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cd6767575e8c9ca6308b18e843942b5e84401a67e6cac3260192b252c67d0703"
+    },
+    "content/handbook/support/workflows/abuse_report_review_request.md": {
+      "path": "content/handbook/support/workflows/abuse_report_review_request.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T19:23:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c4aedb9e3e0e28e7e208325a42e00448150bd76d09b3744f6da16af90980181b"
+    },
+    "content/handbook/support/workflows/account_changes.md": {
+      "path": "content/handbook/support/workflows/account_changes.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T19:23:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "26be9ef77afe55a8a2a015ebd875b171beb7267131500f88495fccc5960d525a"
+    },
+    "content/handbook/support/workflows/account_deletion_access_request_workflows.md": {
+      "path": "content/handbook/support/workflows/account_deletion_access_request_workflows.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T19:23:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6ae13c47f510e2c4d9b9e523f52b9f33fd83c206bdcd2231bea9c43d2c1bf61d"
+    },
+    "content/handbook/support/workflows/account_verification.md": {
+      "path": "content/handbook/support/workflows/account_verification.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T19:23:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eae9e8df57e6ba77b07a79406d54d86dc713e1d742b6287ca80bfad8572c8b3a"
+    },
+    "content/handbook/support/workflows/admin_note.md": {
+      "path": "content/handbook/support/workflows/admin_note.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T19:23:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b1a57a08f44923800bb23ae1991601e3b0b602b6e3e29badcf42d784ccd6bbcd"
+    },
+    "content/handbook/support/workflows/advanced-sast-code-request.md": {
+      "path": "content/handbook/support/workflows/advanced-sast-code-request.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T19:23:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bf2a7cd8bfa44c3a8dd87fe1d3bcc6acad76b5038a442a7fb8fccc5bb9964df3"
+    },
+    "content/handbook/support/workflows/ai_features.md": {
+      "path": "content/handbook/support/workflows/ai_features.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e0d2c5ccf088e2fe21608aa53ca380ff5a3f2e9208de43da42d9600836366c8c"
+    },
+    "content/handbook/support/workflows/browserstack.md": {
+      "path": "content/handbook/support/workflows/browserstack.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5a020bcfe082ddfd6ffb28a52eb329e1b5cd94094ac4dd8be8d0cc33330a1cf7"
+    },
+    "content/handbook/support/workflows/calendly.md": {
+      "path": "content/handbook/support/workflows/calendly.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "acb020ae9083dbe515191aa1a9fb5714546a04db762ca1bb944cdc32b4aa6c92"
+    },
+    "content/handbook/support/workflows/chatops.md": {
+      "path": "content/handbook/support/workflows/chatops.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "abdebb0a8183f3d03767f8e0368241c448717ed0b4c01b29a08a96773f8f0e66"
+    },
+    "content/handbook/support/workflows/ci_minute_limit_removal.md": {
+      "path": "content/handbook/support/workflows/ci_minute_limit_removal.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "086c65c5c83852c9721493550f9e72c93d1680e6f1966998a2f25fe90e1382a0"
+    },
+    "content/handbook/support/workflows/cmoc_practice_events.md": {
+      "path": "content/handbook/support/workflows/cmoc_practice_events.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "54829e1d41b4a5d95b1267665ef657bd908d3c8c698475b6bbfc768f13caa2f5"
+    },
+    "content/handbook/support/workflows/cmoc_workflows.md": {
+      "path": "content/handbook/support/workflows/cmoc_workflows.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "055d0d15a4ae34e469413b670b95dc9a347c874ce14925cba793a7411c03f691"
+    },
+    "content/handbook/support/workflows/communication-tips.md": {
+      "path": "content/handbook/support/workflows/communication-tips.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c6f7bee3d649718691a6b65e450015e88ad64c87a48005cfee70b8741898a31a"
+    },
+    "content/handbook/support/workflows/community-support.md": {
+      "path": "content/handbook/support/workflows/community-support.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "99b072ad2a4c8854410bf10e6b9012dc7cafdb5cea01658e8c81749633f0c41e"
+    },
+    "content/handbook/support/workflows/confirmation_emails.md": {
+      "path": "content/handbook/support/workflows/confirmation_emails.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:14:55Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a13638facf8e99e4880251b72611a6fca3c16282b27d210cde377b0f015395a"
+    },
+    "content/handbook/support/workflows/cost-optimizations-with-cloud-instances.md": {
+      "path": "content/handbook/support/workflows/cost-optimizations-with-cloud-instances.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "04822f1a69d583d0782211673884e9b8cfcc27556df59f3fc02fab73620a7600"
+    },
+    "content/handbook/support/workflows/customer-emergency-retro.md": {
+      "path": "content/handbook/support/workflows/customer-emergency-retro.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bce0cb99992224bbbadacc79a6ca824bf23d11348496c5a2a8765d8599f9408d"
+    },
+    "content/handbook/support/workflows/customer_calls.md": {
+      "path": "content/handbook/support/workflows/customer_calls.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3326f4e4dd0d38d9a693d92fa5f99eb73835ba6e0e686a7e8e44f908c96d476e"
+    },
+    "content/handbook/support/workflows/customer_emergencies_workflows.md": {
+      "path": "content/handbook/support/workflows/customer_emergencies_workflows.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cea58900d12b60ea48373ca79399dc2dfbd3ad147424ad9e745535dc17a13d0e"
+    },
+    "content/handbook/support/workflows/data_handling.md": {
+      "path": "content/handbook/support/workflows/data_handling.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4f5519c0b9fd9bda864b6fb3ef88cee8b6ce578c544df79deedf8ce6e7143306"
+    },
+    "content/handbook/support/workflows/data_processing_addendums.md": {
+      "path": "content/handbook/support/workflows/data_processing_addendums.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c29d991c5e84010eaefea4294a066fbb8b6d8cd29f93152a8ec0cea2c040f7ab"
+    },
+    "content/handbook/support/workflows/debugging_ldap.md": {
+      "path": "content/handbook/support/workflows/debugging_ldap.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "000478a08bb4b694c7d9741592ee8724d42430dd77af7c20bfd01bf86ff1a74d"
+    },
+    "content/handbook/support/workflows/dedicated.md": {
+      "path": "content/handbook/support/workflows/dedicated.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ef3782149b2d20242a0b69c26777fb5e975e955b9502587af4a4414eaa70f3b"
+    },
+    "content/handbook/support/workflows/dedicated_cmoc.md": {
+      "path": "content/handbook/support/workflows/dedicated_cmoc.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ebcde46b71a7247dc4f9a18b7977a199da0d349da158a36b4ae2a86b9e361f4e"
+    },
+    "content/handbook/support/workflows/dedicated_instance_health.md": {
+      "path": "content/handbook/support/workflows/dedicated_instance_health.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c8f75b8f545177285ef2db451243ae2b6b6302b6ca18d8068ce1b136ea711c1c"
+    },
+    "content/handbook/support/workflows/dedicated_logs.md": {
+      "path": "content/handbook/support/workflows/dedicated_logs.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5e8f7b6ee1354f2846e8ea2b91b59f4b9c9e8bd06aae293e1d16a7d8c8c9c88d"
+    },
+    "content/handbook/support/workflows/dedicated_runners.md": {
+      "path": "content/handbook/support/workflows/dedicated_runners.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8886608bf6c129a79f1d51a78c54c0c6d095e1dac7fa39902499eea343b6475b"
+    },
+    "content/handbook/support/workflows/dedicated_switchboard.md": {
+      "path": "content/handbook/support/workflows/dedicated_switchboard.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ce9b8c2c41097e013287a20efa8640600d4cff4c9a8b1072fbb28698783f5a47"
+    },
+    "content/handbook/support/workflows/dev_pulse.md": {
+      "path": "content/handbook/support/workflows/dev_pulse.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f9789cc8da174fd1c7af9f74ca8a8a2248e8d4af094b0aa5056e80ad30171f34"
+    },
+    "content/handbook/support/workflows/dmca.md": {
+      "path": "content/handbook/support/workflows/dmca.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "964768aa84f73bcca1063e31973fa52ee9b8c8f902e0b9aa3fbdbb617e155db3"
+    },
+    "content/handbook/support/workflows/downtime_credits_workflow.md": {
+      "path": "content/handbook/support/workflows/downtime_credits_workflow.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "81fdff11e318a684a5a5ebdbc5ef6789b86ef31f57efcd58c52a120adf00e38e"
+    },
+    "content/handbook/support/workflows/duo_chat_in_support.md": {
+      "path": "content/handbook/support/workflows/duo_chat_in_support.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "928e8b29c5576d2ae72cd9b0d5db3598566185dbf9e882b9b50ba8b6f4744f1a"
+    },
+    "content/handbook/support/workflows/emergency-to-escalation-process.md": {
+      "path": "content/handbook/support/workflows/emergency-to-escalation-process.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3d1ae3fff46435dd5fdf931ba015e16f9b31a5a5f3cc61445131369d74bfd175"
+    },
+    "content/handbook/support/workflows/emergency_exception_workflow.md": {
+      "path": "content/handbook/support/workflows/emergency_exception_workflow.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "59e6236b322e60007358bb48a31e00d155d448715f2017e5903bb2e118163473"
+    },
+    "content/handbook/support/workflows/emotionally-charged-tickets.md": {
+      "path": "content/handbook/support/workflows/emotionally-charged-tickets.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T21:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e35c48fb4e3fb93522ce67b1b039ead5b6f021c905d600a1241896a112a36183"
+    },
+    "content/handbook/support/workflows/escalations-support_manager.md": {
+      "path": "content/handbook/support/workflows/escalations-support_manager.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c83d3a0a39f6ecfa1584744384401e7afeb243d61f1b390085424be293681f52"
+    },
+    "content/handbook/support/workflows/exporting_projects.md": {
+      "path": "content/handbook/support/workflows/exporting_projects.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "de1644e71d8aaaa918b83fbc73de3abc0e13f2beceef5642771ecbaa1f175bdf"
+    },
+    "content/handbook/support/workflows/feedbacks_and_complaints.md": {
+      "path": "content/handbook/support/workflows/feedbacks_and_complaints.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "77ca60ff429037333505c6d67edf7d58bbff1c5272a680b314ca7ccfbf3e8e1c"
+    },
+    "content/handbook/support/workflows/fieldnote_issues.md": {
+      "path": "content/handbook/support/workflows/fieldnote_issues.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b5851a8a54537dda14406d26641509ae0cfc32d35187a0caeacf95c568f1069d"
+    },
+    "content/handbook/support/workflows/gitlab-com_customizations.md": {
+      "path": "content/handbook/support/workflows/gitlab-com_customizations.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "24566f3dc944c29b482193d073df552ea71a1ff39f15c7e736478bd872f7fdd2"
+    },
+    "content/handbook/support/workflows/gitlab-com_overview.md": {
+      "path": "content/handbook/support/workflows/gitlab-com_overview.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ca4ff28d55224349484140917690be17f17341160dc083648b08ba7b3e62a68"
+    },
+    "content/handbook/support/workflows/google_cloud_credit_troubleshooting.md": {
+      "path": "content/handbook/support/workflows/google_cloud_credit_troubleshooting.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bacb59405bac2db993c2011a523f8adbf6b424ea4085d80c5657052afcb9fbd5"
+    },
+    "content/handbook/support/workflows/gpt_quick_start.md": {
+      "path": "content/handbook/support/workflows/gpt_quick_start.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "850e29eabd6509c5eb98213c59ec0d791f38741dbed9314e4e527e005cf917a8"
+    },
+    "content/handbook/support/workflows/hackerone-redirect.md": {
+      "path": "content/handbook/support/workflows/hackerone-redirect.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6420844c008e9c08cf9507a7da0f05ecf91f9baa5e7e3d61dcb9e4153cef8ca2"
+    },
+    "content/handbook/support/workflows/handling_offer_migration_tickets.md": {
+      "path": "content/handbook/support/workflows/handling_offer_migration_tickets.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2c09ed4482bf72f90933e057a4e5948f210d2da71b94be24ee20d1c30f124c05"
+    },
+    "content/handbook/support/workflows/handling_sales_info_requests.md": {
+      "path": "content/handbook/support/workflows/handling_sales_info_requests.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b7c75fb97c39e39c6c3eb5999f0b9b45c2f11a2d7627c56058107ffc81aff5b0"
+    },
+    "content/handbook/support/workflows/handling_upgrade_renewal_requests.md": {
+      "path": "content/handbook/support/workflows/handling_upgrade_renewal_requests.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0f480c28f766f32d1f31d6b28d1f449a852eb1628b256d22ce670856c40558c8"
+    },
+    "content/handbook/support/workflows/high-priority-all-regions-tickets-workflow.md": {
+      "path": "content/handbook/support/workflows/high-priority-all-regions-tickets-workflow.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cdd1dedc518b43d7e0b1340654fb58c912ff75cc8a4e26152c19655990def3d7"
+    },
+    "content/handbook/support/workflows/how-to-create-npm-package.md": {
+      "path": "content/handbook/support/workflows/how-to-create-npm-package.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "164a902f6d78518cfcfdd49e0036f65fb60de8db18f800db59fa61c2943c7141"
+    },
+    "content/handbook/support/workflows/how-to-get-help.md": {
+      "path": "content/handbook/support/workflows/how-to-get-help.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7fba0135e635639c0373ff588ffbedcc66d6c723fcd3615b8b4216965fa477a1"
+    },
+    "content/handbook/support/workflows/how-to-respond-to-feedback.md": {
+      "path": "content/handbook/support/workflows/how-to-respond-to-feedback.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "da73c8bdcde8cb469b6a74793402e1c494e7e3c52c8a2920aff403abd1e6c25e"
+    },
+    "content/handbook/support/workflows/how-to-respond-to-tickets.md": {
+      "path": "content/handbook/support/workflows/how-to-respond-to-tickets.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7ce4442532204ac97d34d1186258b4b741ca0017bd29a8fe249602b4f02a3f80"
+    },
+    "content/handbook/support/workflows/how-to-set-up-shift-coverage-for-an-event.md": {
+      "path": "content/handbook/support/workflows/how-to-set-up-shift-coverage-for-an-event.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "577c0294ed635842d7276e488a02814adb7f3ff527d853f883d7117065c99308"
+    },
+    "content/handbook/support/workflows/how-to-wir-podcast.md": {
+      "path": "content/handbook/support/workflows/how-to-wir-podcast.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6f852117bd20dcaea884628d08423630654ce23dbce0c194aa657237e1973ee5"
+    },
+    "content/handbook/support/workflows/improving-documentation.md": {
+      "path": "content/handbook/support/workflows/improving-documentation.md",
+      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ad7e946dcf1e4c3d5c313ab824e10978a571d1c949a42415b1ac2ee45905761d"
+    },
+    "content/handbook/support/workflows/information-request.md": {
+      "path": "content/handbook/support/workflows/information-request.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e01582deff5ba1e4f2413d2c74a2db0d1bfd72e271518e604e6a76d61c2f63e4"
+    },
+    "content/handbook/support/workflows/internal_requests.md": {
+      "path": "content/handbook/support/workflows/internal_requests.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c4281b10f80c86d8dda0f46a38d7fff3a71682b552f66c58864cb29097dcce94"
+    },
+    "content/handbook/support/workflows/investigate_blocked_pipeline.md": {
+      "path": "content/handbook/support/workflows/investigate_blocked_pipeline.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e732d9daaaf8808b4fa22b504d483d5eea60171e3b3744abdcd6b751ed333270"
+    },
+    "content/handbook/support/workflows/investigate_commits.md": {
+      "path": "content/handbook/support/workflows/investigate_commits.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "31c2241c4b85822e52e90602d289807fcf89434fa07476624130ece784aaa7f4"
+    },
+    "content/handbook/support/workflows/investigate_db_perf_issues.md": {
+      "path": "content/handbook/support/workflows/investigate_db_perf_issues.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cc37e92b645d774badb0582864cb443c8e5bc5f040f599f33a5ff8047795e5bb"
+    },
+    "content/handbook/support/workflows/ip-blocks.md": {
+      "path": "content/handbook/support/workflows/ip-blocks.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8bcd50756a8b5bb8d4677e64a77e9b1114ecbd1e1c8f07112788371106f53035"
+    },
+    "content/handbook/support/workflows/jira-server.md": {
+      "path": "content/handbook/support/workflows/jira-server.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "70f834500838ef513410023d6007ac26f3480a28ce4e2f8c3a3b08d029a63348"
+    },
+    "content/handbook/support/workflows/keycloak-test-server.md": {
+      "path": "content/handbook/support/workflows/keycloak-test-server.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9d13ddc08c1668c3d0da65dd2bb8e23ce69a663a11fbc98543e07670d8deb550"
+    },
+    "content/handbook/support/workflows/kibana.md": {
+      "path": "content/handbook/support/workflows/kibana.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a1b86b9c8870f7eb2324264918cebdf7b44ab0a09679e8500e75127225bd2dbb"
+    },
+    "content/handbook/support/workflows/knowledge_areas.md": {
+      "path": "content/handbook/support/workflows/knowledge_areas.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "857918bb7a1f5cc71f8fc6c9edd55fd30b9766cbc1206ea5be629f950cdfbad3"
+    },
+    "content/handbook/support/workflows/log_requests.md": {
+      "path": "content/handbook/support/workflows/log_requests.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "012ed46e890765663e999466c8ec5695aac324dda05c4222a4dc3897a7696138"
+    },
+    "content/handbook/support/workflows/looking_up_customer_account_details.md": {
+      "path": "content/handbook/support/workflows/looking_up_customer_account_details.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "482d82175c56002b43dc2d6e30ae66354d75e35e0e02fa38ded5b0bb7d2c244a"
+    },
+    "content/handbook/support/workflows/looking_up_customer_technical_details.md": {
+      "path": "content/handbook/support/workflows/looking_up_customer_technical_details.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "58ffec210f7f8baf1827a3b40172ffb0b91069474a6fc0c218fcebdbc8d181af"
+    },
+    "content/handbook/support/workflows/lost_emails.md": {
+      "path": "content/handbook/support/workflows/lost_emails.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2baade70c2d734e12aa40cc5236e23bf3198eec8d13ad8617b0396c94d543ee2"
+    },
+    "content/handbook/support/workflows/malicious_ticket.md": {
+      "path": "content/handbook/support/workflows/malicious_ticket.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8ba63a3dac9e08f0c8d5c688c8775e92c39962ac26bd6f943bcd6b7d44c6dd0c"
+    },
+    "content/handbook/support/workflows/marking_tickets_as_spam.md": {
+      "path": "content/handbook/support/workflows/marking_tickets_as_spam.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9a1ba237fcee972f23d75b780167e0f82a8c1d515c82bcd6a129695ae2be6a4e"
+    },
+    "content/handbook/support/workflows/mattermost.md": {
+      "path": "content/handbook/support/workflows/mattermost.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5880071a17e12988f2d299c6e18b5529fa57be04ac6a6fcf39cccce0a64abe81"
+    },
+    "content/handbook/support/workflows/meeting-frt-sla.md": {
+      "path": "content/handbook/support/workflows/meeting-frt-sla.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dc90b76d68cf01a95aa18e51c9a3a4d2dd5f33f0dfc9217da1331aedc57a5a10"
+    },
+    "content/handbook/support/workflows/namesquatting_policy.md": {
+      "path": "content/handbook/support/workflows/namesquatting_policy.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b8215657a65446fc446878ddadd2741273d4da58ff7ba24fd47bf129b215b55d"
+    },
+    "content/handbook/support/workflows/ooo-ticket-management.md": {
+      "path": "content/handbook/support/workflows/ooo-ticket-management.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5f68e2b496bb4e749e4da6fb6a36cbd1675e39247b362afe3769e49486ef2a7e"
+    },
+    "content/handbook/support/workflows/pairify.md": {
+      "path": "content/handbook/support/workflows/pairify.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1650b4eef16c3110eaa1e9f974d54a4647b54541e5a69f92beb843e991b0435b"
+    },
+    "content/handbook/support/workflows/pairing-sessions.md": {
+      "path": "content/handbook/support/workflows/pairing-sessions.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a967fbcdd993d788d9834717b7f1119a7ea69d295a55c8f41bc0c6fb560d74d"
+    },
+    "content/handbook/support/workflows/patching_an_instance.md": {
+      "path": "content/handbook/support/workflows/patching_an_instance.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e5a4ba5751e8ab83fe63d906359b4a1df932e6e6e191234e1d6398897babba48"
+    },
+    "content/handbook/support/workflows/personal_data_access_account_deletion.md": {
+      "path": "content/handbook/support/workflows/personal_data_access_account_deletion.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ec939e46a978113dc904feb7b64645af46ff27d58b7e8db8b4b7f5eb855ba192"
+    },
+    "content/handbook/support/workflows/pii_removal_requests.md": {
+      "path": "content/handbook/support/workflows/pii_removal_requests.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d7b5bc5f774fb7a4e24702a87cd900411c434d0129f60ccba2c6d96d75c511e7"
+    },
+    "content/handbook/support/workflows/printing_ticket_thread_without_internal_notes.md": {
+      "path": "content/handbook/support/workflows/printing_ticket_thread_without_internal_notes.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4c83f7ec019ed9680c72026fe26cb610cadea7699411dfe172d04d42f53828da"
+    },
+    "content/handbook/support/workflows/product_category_field.md": {
+      "path": "content/handbook/support/workflows/product_category_field.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "48a441b307284f79b3abda79d8c0c3a1c580ab0bf5deb518306fe08abaaf8175"
+    },
+    "content/handbook/support/workflows/quick-reference.md": {
+      "path": "content/handbook/support/workflows/quick-reference.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0bba0be2e45003007384576bfe5f834ad3cf64cab7018b8ac4da981b9b7999f8"
+    },
+    "content/handbook/support/workflows/rbl_delisting.md": {
+      "path": "content/handbook/support/workflows/rbl_delisting.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6c45bf52f19e6a84208b0456e0a0d9c2a9ac44fca1ce1378deafdd77bcd8f324"
+    },
+    "content/handbook/support/workflows/reinstating-blocked-accounts.md": {
+      "path": "content/handbook/support/workflows/reinstating-blocked-accounts.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "714c5bc9ffa2b78777e1d71e9cb630db29ca5ffcd39722e75ef359b196609b7f"
+    },
+    "content/handbook/support/workflows/remove_validation.md": {
+      "path": "content/handbook/support/workflows/remove_validation.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b0ebe691ef9332599fed0ccffc1a5aa525c0d47fcc55fff84809f541d6de3c88"
+    },
+    "content/handbook/support/workflows/removing-sensitive-information.md": {
+      "path": "content/handbook/support/workflows/removing-sensitive-information.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b366a6fd7b1e3ba84b62b639c9499d1069a9fa95f79b88c208e0b3df36e91887"
+    },
+    "content/handbook/support/workflows/residency_doc_request.md": {
+      "path": "content/handbook/support/workflows/residency_doc_request.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "49b1ea896f18e8ffd9071b830a4ccc3d7f414c1bf33b39de9c4827daa699f436"
+    },
+    "content/handbook/support/workflows/restore_requests.md": {
+      "path": "content/handbook/support/workflows/restore_requests.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0985176a4af5661ea79423ea403f6c8286149f4844bdda8636d70cb32e8ae9f6"
+    },
+    "content/handbook/support/workflows/restore_requests_dedicated.md": {
+      "path": "content/handbook/support/workflows/restore_requests_dedicated.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "528cf75a1b81747e562e4e4ffd73040e158cc64439d89d0013d2824944ec0ec8"
+    },
+    "content/handbook/support/workflows/saas_feature_flags.md": {
+      "path": "content/handbook/support/workflows/saas_feature_flags.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d896b12e0338e7583f0109856176744ca17a8277ac4a458880b2fcf6e5dcecee"
+    },
+    "content/handbook/support/workflows/saas_sm_cheatsheet.md": {
+      "path": "content/handbook/support/workflows/saas_sm_cheatsheet.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4568a7f804038efdc3500d0e45ee097288d3f2420aec1c04134066cdf3414479"
+    },
+    "content/handbook/support/workflows/sending_notices.md": {
+      "path": "content/handbook/support/workflows/sending_notices.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f6ceca10ac9fef7dfc3fb1332370605f55a40c6d970abae9f1289ef02abb3fd4"
+    },
+    "content/handbook/support/workflows/sentry.md": {
+      "path": "content/handbook/support/workflows/sentry.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bdf475b8c9da6be6c3b9ead802b23404eedbcdde9916408472a1960a6c42e2be"
+    },
+    "content/handbook/support/workflows/service_desk_troubleshooting.md": {
+      "path": "content/handbook/support/workflows/service_desk_troubleshooting.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T02:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c4b2e0f803432da8e68776c01e58f101eaf1299e14a8a7e00df96d0d6f3feeaf"
+    },
+    "content/handbook/support/workflows/setting_ticket_priority.md": {
+      "path": "content/handbook/support/workflows/setting_ticket_priority.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2feb4ccd93c0f609b243576fd1b9d61151b6180db4c1f920ddf2a0c8b70c904b"
+    },
+    "content/handbook/support/workflows/sidekiq_support.md": {
+      "path": "content/handbook/support/workflows/sidekiq_support.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5b85e3981592a984b31e306129e4992664cd118509f2812aaaeb18328343b25c"
+    },
+    "content/handbook/support/workflows/sla_and_views.md": {
+      "path": "content/handbook/support/workflows/sla_and_views.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3c9abeb0fad76adbf07d3f439eb6cb18fedf56dae60c078f4953dbb8c3c80c07"
+    },
+    "content/handbook/support/workflows/support-assisted-customer-requests.md": {
+      "path": "content/handbook/support/workflows/support-assisted-customer-requests.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4cc4c0f8badd61628a937a28bc1bff3bc0ecabaa24c421cd2496782fbd963ab6"
+    },
+    "content/handbook/support/workflows/support-sales-escalations.md": {
+      "path": "content/handbook/support/workflows/support-sales-escalations.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "364ba19e00c0818cc1504ff2e01bcb5507884b9aea98cd4f84f3dd885d2f4603"
+    },
+    "content/handbook/support/workflows/support_hold.md": {
+      "path": "content/handbook/support/workflows/support_hold.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c3ac0415c8036b8827e9de077d3593d1092114e1e2c992681ce6a6cc2960e241"
+    },
+    "content/handbook/support/workflows/support_manager-on-call.md": {
+      "path": "content/handbook/support/workflows/support_manager-on-call.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "88ee3e8e46b61c7eab84001d2e8ef53b7dd3546167f918cd5c2d88f9c6dda321"
+    },
+    "content/handbook/support/workflows/test_env.md": {
+      "path": "content/handbook/support/workflows/test_env.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3e7088c12c5e771343e444405b885f2968f2da5a2a97c9319de33ecbadca0aa4"
+    },
+    "content/handbook/support/workflows/ticket-transfers.md": {
+      "path": "content/handbook/support/workflows/ticket-transfers.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fec579dfc5ebff0adca9d76b7a105a1a62a7518de05132d3a11a97735bbaced0"
+    },
+    "content/handbook/support/workflows/ticket_lifecycle.md": {
+      "path": "content/handbook/support/workflows/ticket_lifecycle.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "97b999521a1e265d03b7e1e30108d929d0fa56b0e709d22c04679ea016a3c0d6"
+    },
+    "content/handbook/support/workflows/ticket_triage.md": {
+      "path": "content/handbook/support/workflows/ticket_triage.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3d87b3d2ecc03dd47f94a07404f59d0cbc74069be9560ce5eddc86f4f6cf9a1d"
+    },
+    "content/handbook/support/workflows/ticketing_style_guide.md": {
+      "path": "content/handbook/support/workflows/ticketing_style_guide.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1f08a067398863eea4dfd61f5b754a1b510f43310178d330c4d3b226e4b2f7ca"
+    },
+    "content/handbook/support/workflows/tracking_incidents.md": {
+      "path": "content/handbook/support/workflows/tracking_incidents.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "df85ee5ec833ca4f45e1d4ddb1560ecac75679f22cfa32a70f92a49713c57f18"
+    },
+    "content/handbook/support/workflows/translating_tickets.md": {
+      "path": "content/handbook/support/workflows/translating_tickets.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1a6cf56cc8da53c554a481fc8d53b60a28bbaf682d2a9ed167bb41efdd64f9bb"
+    },
+    "content/handbook/support/workflows/troubleshooting_kubernetes.md": {
+      "path": "content/handbook/support/workflows/troubleshooting_kubernetes.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9bd1e9c31bff84dd71208f3c24ab366d5e17b387cb70171ed02f1a674235e155"
+    },
+    "content/handbook/support/workflows/upgrade-assistance.md": {
+      "path": "content/handbook/support/workflows/upgrade-assistance.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4b9be5dfbf91aeb0c706cf2153c8e524cce2019f6a6d0d0468157349d909082e"
+    },
+    "content/handbook/support/workflows/usgovernment_oncall.md": {
+      "path": "content/handbook/support/workflows/usgovernment_oncall.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a4fd722d4cbf1dbc9c50e48d5d89c1e8dfe4134b4bac95307dd83662669d4186"
+    },
+    "content/handbook/support/workflows/usgovernment_oncall_checklist.md": {
+      "path": "content/handbook/support/workflows/usgovernment_oncall_checklist.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5a59863087a1ec7898f4e062097980b1a400bca3416f0e840b56f243d99b6001"
+    },
+    "content/handbook/support/workflows/usgovernment_tickets.md": {
+      "path": "content/handbook/support/workflows/usgovernment_tickets.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "55e8d54978ae632a9b01b97fa197d224ee12cf3bf23e49ca8b6ad6617f981425"
+    },
+    "content/handbook/support/workflows/verify_pages_domain.md": {
+      "path": "content/handbook/support/workflows/verify_pages_domain.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T04:02:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8299bdf05f469318bb5e0e7992b341989d84bd61cf9af81204a3146b035cb742"
+    },
+    "content/handbook/support/workflows/very_breached_tickets.md": {
+      "path": "content/handbook/support/workflows/very_breached_tickets.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bbb5146cbce848cdee322c8ff257b706f1a39647f55d1c8a5d0cacacbf9cc18e"
+    },
+    "content/handbook/support/workflows/working-on-tickets.md": {
+      "path": "content/handbook/support/workflows/working-on-tickets.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "630e8c2ac3bb17fc3baad249221cd950bdd98033de2bbfdfebf7e99bfac02351"
+    },
+    "content/handbook/support/workflows/working-on-zendesk-content.md": {
+      "path": "content/handbook/support/workflows/working-on-zendesk-content.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b685847228900620cb25fd91be8b6d4c92cd14e46905190e523bd13bf35a1dea"
+    },
+    "content/handbook/support/workflows/working-with-issues.md": {
+      "path": "content/handbook/support/workflows/working-with-issues.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "75951c47c5ecab59d8ad8ff76182c0f2d6ed95db1ab1c10f31e41b02d76a4174"
+    },
+    "content/handbook/support/workflows/working-with-pods.md": {
+      "path": "content/handbook/support/workflows/working-with-pods.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "827e64630e4c1b5b30ba1ffaeb0e857271ec2fbeef1a2b00d2c1dc4f4cfa8402"
+    },
+    "content/handbook/support/workflows/working_with_security.md": {
+      "path": "content/handbook/support/workflows/working_with_security.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f242d338c92cc3d624d202c10006d84cf9f5927cd673aa3e4c33ebc996ac4528"
+    },
+    "content/handbook/support/workflows/working_with_support_ops.md": {
+      "path": "content/handbook/support/workflows/working_with_support_ops.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "27acb9f76324097052d065d3b658c00a07baa76599016bdc5c98b6ca28d1f05c"
+    },
+    "content/handbook/support/workflows/writing_workflows.md": {
+      "path": "content/handbook/support/workflows/writing_workflows.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8012734d36af19afe6fd5c9a66a73b36cdf1cd0ba8c59e2bd84082874856d74b"
+    },
+    "content/handbook/support/workflows/zendesk-instances.md": {
+      "path": "content/handbook/support/workflows/zendesk-instances.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6b04437974f953b1e49d7c6c62138127137fe3a60874a1942064b4e82faa5113"
+    },
+    "content/handbook/support/workflows/zendesk-ticket-basics.md": {
+      "path": "content/handbook/support/workflows/zendesk-ticket-basics.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8be9cc33af052c599453c55463e7937b8a1677c170c4dbcf866934df15fc6d6b"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
