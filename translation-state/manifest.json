@@ -16938,6 +16938,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "8e3178895a432b1241a712c2f764c8c0f8ca3f4e8e0d4c4e225638806975cdc5"
     },
+    "content/handbook/support/managers/_index.md": {
+      "path": "content/handbook/support/managers/_index.md",
+      "upstream_sha": "f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7eae9d531c5da0d613a7a51eba3dbdb71a37cbfb8e470001a7d06dcd6eaac2f4"
+    },
+    "content/handbook/support/managers/amer.md": {
+      "path": "content/handbook/support/managers/amer.md",
+      "upstream_sha": "f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "69f483f6c995602e6dedcfbb5be55e850181139429ad935ea0cda995433ca639"
+    },
+    "content/handbook/support/managers/areas-of-focus.md": {
+      "path": "content/handbook/support/managers/areas-of-focus.md",
+      "upstream_sha": "f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "af1084cb43d1157cbc683f981d9801791de2c602e0764c5836284fb6361e9e2c"
+    },
+    "content/handbook/support/managers/change-management.md": {
+      "path": "content/handbook/support/managers/change-management.md",
+      "upstream_sha": "f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a9b395a510917b2e1cfa0c5da64546554fb651ddc44548afe32f43fe5ac67569"
+    },
+    "content/handbook/support/managers/getting-to-know-you.md": {
+      "path": "content/handbook/support/managers/getting-to-know-you.md",
+      "upstream_sha": "f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "65059982c76d047d385c34ff13ce4dee37ae4daafce7110868f8c71d06b40e12"
+    },
+    "content/handbook/support/managers/hazards-and-challenges.md": {
+      "path": "content/handbook/support/managers/hazards-and-challenges.md",
+      "upstream_sha": "f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3ed72eb027d9e3ebf8ef5dd24444169db2fb9c099e57d5524a87abf43e1a6b08"
+    },
+    "content/handbook/support/managers/hiring.md": {
+      "path": "content/handbook/support/managers/hiring.md",
+      "upstream_sha": "f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bd153d5770d3a79fef3d2824614e5657f74650241804edd13ee16588f88b1e48"
+    },
+    "content/handbook/support/managers/leadership-sync.md": {
+      "path": "content/handbook/support/managers/leadership-sync.md",
+      "upstream_sha": "f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d0d89bd19bdbff385179e142fdec0c0706347743d72d18b15d980362b3315992"
+    },
+    "content/handbook/support/managers/manager-responsibilities.md": {
+      "path": "content/handbook/support/managers/manager-responsibilities.md",
+      "upstream_sha": "f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a2150b903392e2eba31aae4e7cb98d482f5631e4c089e7e300fbb79805ab4625"
+    },
+    "content/handbook/support/managers/performance-management.md": {
+      "path": "content/handbook/support/managers/performance-management.md",
+      "upstream_sha": "f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1",
+      "translated_at": "2026-05-08T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a72e37f56b0ee366b04cbcb8170719d165662275c9a2798a92e6d5b0daa1766c"
+    },
     "content/handbook/support/partnerships/_index.md": {
       "path": "content/handbook/support/partnerships/_index.md",
       "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
