@@ -20955,6 +20955,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "fce4c2fa7485c0a25587a567d63156ea5b839fa6fc87bad2591c0c1013f36a05"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/capacity.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/capacity.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "bffc489bc7690b9461f484f8c707ea7420eb3fcbe3f003c275ca3ac8a279536b"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/key-performance-indicators.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/key-performance-indicators.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9a3c465ffe29a6f064f3d9cfb6e9163e71dba382d03cf33cb73fd8b1e3fb522a"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/results.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/results.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b94d1be639d6c697a116af6e26eae01a7a95e0704c3e532f1559cca1878f98c7"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/risk-patterns.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/risk-patterns.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d644f9fe425e9878b26ac52d8e89b5c01c8ce1bcb57923f009f2ec7e144da7a3"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/appsec-ops-index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/appsec-ops-index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "37ad6fb6c79d40b41085c81b0d15d06fa5458f50e7d477163c9ae94bbb57edb2"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/psirt-services.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/psirt-services.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1eba002a37a7ff8e59849b19c1b719609b927d832213b584b13bc66e304b9dac"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/sdd-services.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-operations/sdd-services.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a30748f0648dc2e0f1bcff691d924175f8a6d6271f07fefa5ec28092b3dd846d"
+    },
+    "content/handbook/security/product-security/security-capabilities-engineering/_index.md": {
+      "path": "content/handbook/security/product-security/security-capabilities-engineering/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "374d1b7bf2a04155fb73b1a759762c303c202c828d55df444a4c0f1b90c2d1b6"
+    },
+    "content/handbook/security/product-security/psirt/_index.md": {
+      "path": "content/handbook/security/product-security/psirt/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "18fbb6329519c63a61a9658f30bc637f581f907d905ad0c97ca75c6015416b95"
+    },
+    "content/handbook/security/product-security/psirt/runbooks/_index.md": {
+      "path": "content/handbook/security/product-security/psirt/runbooks/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "52a5eeb901effe61fbc0c9ae0be8489f13db61a40635aef718da7e12328556fa"
     }
   }
 }
