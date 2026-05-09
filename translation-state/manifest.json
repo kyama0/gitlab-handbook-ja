@@ -18715,6 +18715,76 @@
       "translated_at": "2026-05-08T12:45:20Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "cd3a1f0a1acc9d8bb5d66b3dd48e4c47fc68f4f47ed80a5cd9135ccb085f1ec9"
+    },
+    "content/handbook/support/license-and-renewals/workflows/customersdot/associating_purchases.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/customersdot/associating_purchases.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T13:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b21afeeab9625621a5a9b2dae402554e79b9a9657956032bea7856b01e0e4096"
+    },
+    "content/handbook/support/license-and-renewals/workflows/customersdot/customer_console.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/customersdot/customer_console.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T13:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "42cfa8acf5b2e4cdec8438adf15cce949f48e7744b71cbfc997084ba9ffeb249"
+    },
+    "content/handbook/support/license-and-renewals/workflows/customersdot/customerdot_account.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/customersdot/customerdot_account.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T13:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2983ffb9fd230bcb67bce4a5fb9c567ac3dfb8017c265f9538d218f1a2bfbbf5"
+    },
+    "content/handbook/support/license-and-renewals/workflows/customersdot/support_tools.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/customersdot/support_tools.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T13:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "acc401fe54560ee77fabb73e77ef0fac8e7272ef9de8ac5dcac344734d3c3fcf"
+    },
+    "content/handbook/support/license-and-renewals/workflows/customersdot/troubleshoot_errors_while_making_purchases.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/customersdot/troubleshoot_errors_while_making_purchases.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T13:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2b81488755a4d1fb0a6a3207381d3bc89687576443d2501400a7677f41ffb28e"
+    },
+    "content/handbook/support/knowledge-base/_index.md": {
+      "path": "content/handbook/support/knowledge-base/_index.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T13:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "899cf902d78bdd3e2f4f8d3655ab366dc044b63f4964a811de71e3cb6e2aca37"
+    },
+    "content/handbook/support/knowledge-base/article-review.md": {
+      "path": "content/handbook/support/knowledge-base/article-review.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T13:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "209c66fee82a24c9ec25cdf7bd0332cbbea7a5f71a7226871574244554dd2969"
+    },
+    "content/handbook/support/knowledge-base/docs-vs-kb.md": {
+      "path": "content/handbook/support/knowledge-base/docs-vs-kb.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T13:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0d71ef5b6bc61406dab40e47fceb6460e9aa64d75904e7a137a2b15a850610cf"
+    },
+    "content/handbook/support/knowledge-base/kb-faq.md": {
+      "path": "content/handbook/support/knowledge-base/kb-faq.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T13:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "3ec0259515060e75caac12d1437952692ee77321d56d3140092e47ac08fcebbe"
+    },
+    "content/handbook/support/knowledge-base/kb-style-guide.md": {
+      "path": "content/handbook/support/knowledge-base/kb-style-guide.md",
+      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
+      "translated_at": "2026-05-08T13:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "68e869d84e5e57e4b03c452f30d8bcffb2723eb6360cba023fa487338bfc4134"
     }
   }
 }
