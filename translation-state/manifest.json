@@ -19975,6 +19975,76 @@
       "translated_at": "2026-05-09T16:00:00Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "dcd1969c429b58b6ffe62342d805e377a0233f1c67eba689222c5b6d53bb3f64"
+    },
+    "content/handbook/security/security-operations/security-logging/critical-logging-methodology.md": {
+      "path": "content/handbook/security/security-operations/security-logging/critical-logging-methodology.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "17317d753729c792bf7f97a7a00c06e103860511911c9b52056a776214212c9c"
+    },
+    "content/handbook/security/security-operations/red-team/_index.md": {
+      "path": "content/handbook/security/security-operations/red-team/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "12227cb281cfa6845a8c5cc960ce1089e4b6034d553d07eeb6df8e323701074b"
+    },
+    "content/handbook/security/security-operations/red-team/stealth-operations.md": {
+      "path": "content/handbook/security/security-operations/red-team/stealth-operations.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "f3455f49d8a88c11fe28e3329eb45845894fea3e910bec91c060bcaa9515c343"
+    },
+    "content/handbook/security/security-operations/red-team/purple-teaming/_index.md": {
+      "path": "content/handbook/security/security-operations/red-team/purple-teaming/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "663bbd21cb98583c14f8ce925428413813d2691c0b091293cb6285775362f77a"
+    },
+    "content/handbook/security/security-operations/red-team/opportunistic-attacks/_index.md": {
+      "path": "content/handbook/security/security-operations/red-team/opportunistic-attacks/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "866f9873f536aeef65f5d3f6d0ea90fdc593c825beb97171a12bebfcfd1305fd"
+    },
+    "content/handbook/security/security-operations/red-team/how-we-operate/_index.md": {
+      "path": "content/handbook/security/security-operations/red-team/how-we-operate/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "17960bfb465257ce3d2a70a13425f636aa9baee5a3954904704bcb6e08e7f69a"
+    },
+    "content/handbook/security/security-operations/red-team/how-we-operate/rules-of-engagement.md": {
+      "path": "content/handbook/security/security-operations/red-team/how-we-operate/rules-of-engagement.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "0a6419e78778f8d43768a5580440c861577056be859eb774a028ba7279c86ec1"
+    },
+    "content/handbook/security/security-assurance/_index.md": {
+      "path": "content/handbook/security/security-assurance/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "a3ac3bbc6d785cea315906d0575d00e87775e7ee934271b1fd6373156ddd1536"
+    },
+    "content/handbook/security/security-assurance/automation-and-compliance.md": {
+      "path": "content/handbook/security/security-assurance/automation-and-compliance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "0bc41b7e04264e3ccf8993bdcffe2c03f6df57806dcc1b8b437435d05094357e"
+    },
+    "content/handbook/security/security-assurance/governance_and_field_security_team_charter.md": {
+      "path": "content/handbook/security/security-assurance/governance_and_field_security_team_charter.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "7d54c37d3b432dc548ac16e6e311dc82e4233c722f2c5ee6061f11ebbee26a09"
     }
   }
 }
