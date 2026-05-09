@@ -20605,6 +20605,76 @@
       "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "d4bc5ba5881b0ab5db3ffaa0df7740463177addd34f97ee4e84dda3e096402cb"
+    },
+    "content/handbook/security/product-security/vulnerability-management/runbooks/so-you-have-a-vulnerability-finding.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/runbooks/so-you-have-a-vulnerability-finding.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "68307229992f2a8e250b3baeabed0897945c3af21f37a420c9a892e89d5aacca"
+    },
+    "content/handbook/security/product-security/vulnerability-management/runbooks/supply-chain-investigations.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/runbooks/supply-chain-investigations.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0abd8445120f982ba1794b2bb7b89faa6850e742fd1f304a81312c609c7d8339"
+    },
+    "content/handbook/security/product-security/vulnerability-management/runbooks/weekly-triage.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/runbooks/weekly-triage.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "80270bfa6e661c245ed17f75808f46aa5eb4091793413e5facaf3f658b7645bb"
+    },
+    "content/handbook/security/product-security/supply-chain-risk-management/_index.md": {
+      "path": "content/handbook/security/product-security/supply-chain-risk-management/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4f48a844a297c1454a2c173f91487780d149f038ea314b6c1f8a28790a857481"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cc659fb38d796777e4eb5784aa284e3190997be60e7be345f8911e87dad1c91f"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/security-research/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/security-research/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0078d98ff5be09de74ac810c35c09ce1afe02ad989b11e2f175f9a03a016a4e9"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/security-interlock/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/security-interlock/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "659d2f6ce0851e516061a7f4bd5db7cbcb40905b2d1453803a2512dffd8b6e93"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/security-interlock/customer-zero-triage-process.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/security-interlock/customer-zero-triage-process.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ef1101426af128ed194c441805419aafd8aa1080236c3f10f4afe40630cbd382"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/security-interlock/request-customer-zero-validation.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/security-interlock/request-customer-zero-validation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1bd0a283651c416112839fd8456fa4397a6df427f71d0572273b27b6ed769e37"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/security-interlock/prodsec-to-product-workflow/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/security-interlock/prodsec-to-product-workflow/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ba8d6e76e01df3205f462081cfbb820cecbdd32535dac0dd3ae07ba3ccf73484"
     }
   }
 }
