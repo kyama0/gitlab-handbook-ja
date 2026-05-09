@@ -1,6 +1,6 @@
 ---
 title: 意図しない脆弱性開示の取り扱い
-summary: 意図しない脆弱性開示の様々なシナリオに対応するためのランブック。
+summary: The runbook for handling different scenarios of unintended vulnerability disclosures.
 upstream_path: /handbook/security/product-security/psirt/runbooks/unintended-vuln-disclosure/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
