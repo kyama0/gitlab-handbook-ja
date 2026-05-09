@@ -16938,6 +16938,48 @@
       "model": "claude-opus-4-7",
       "input_hash": "8e3178895a432b1241a712c2f764c8c0f8ca3f4e8e0d4c4e225638806975cdc5"
     },
+    "content/handbook/support/partnerships/_index.md": {
+      "path": "content/handbook/support/partnerships/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8874975510839f0c784a0e316601bff082cb90c8bcc1bc15937c54a1e3641ca9"
+    },
+    "content/handbook/support/partnerships/alliance-partner-support-guide.md": {
+      "path": "content/handbook/support/partnerships/alliance-partner-support-guide.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e055cab5640e367c2432a6328702a2a5282fcacffa3003a5f1f1620e2d7ff6c1"
+    },
+    "content/handbook/support/partnerships/alliance.md": {
+      "path": "content/handbook/support/partnerships/alliance.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c85f36efad4ab0fc97d7983852fb10da3d511482b7317a82a2f39b55702472bb"
+    },
+    "content/handbook/support/partnerships/jihu.md": {
+      "path": "content/handbook/support/partnerships/jihu.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "de56d0a9b8ac4a4d8e91386255784136964286dca396ed22e1b0d7645c5a6b33"
+    },
+    "content/handbook/support/partnerships/open.md": {
+      "path": "content/handbook/support/partnerships/open.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2e450951c5f29739f980e0b884ead7a85deb5899c372913d2c3cad39fe6dd5e3"
+    },
+    "content/handbook/support/partnerships/select.md": {
+      "path": "content/handbook/support/partnerships/select.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "15ac68b815889d780582b5d1d60a9c40542cd61c64ef370423dc83eb9a9796bc"
+    },
     "content/handbook/support/performance-indicators.md": {
       "path": "content/handbook/support/performance-indicators.md",
       "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
@@ -16952,12 +16994,33 @@
       "model": "claude-opus-4-7",
       "input_hash": "0a5385b6f4721d33f602adf505c58827f67e0d7a476db171ee2f03c29cf04061"
     },
+    "content/handbook/support/public-sector-knowledge/knowledgearticles.md": {
+      "path": "content/handbook/support/public-sector-knowledge/knowledgearticles.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "78c52aeffe4d99e9f1dcb4dc0d7195f2b8734b1a5735108f1933131bc92b1e85"
+    },
     "content/handbook/support/providing_excellent_customer_service.md": {
       "path": "content/handbook/support/providing_excellent_customer_service.md",
       "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
       "translated_at": "2026-05-08T18:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "1a49fd08ec26302252cd73cf21db147c58ad62b3b658341c123aac65921826c0"
+    },
+    "content/handbook/support/readiness/_index.md": {
+      "path": "content/handbook/support/readiness/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9c4babbd536ff726bf00af2254365485bb7a0fac6b87c10a4fa75b67c6cc521a"
+    },
+    "content/handbook/support/readiness/data/_index.md": {
+      "path": "content/handbook/support/readiness/data/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0430fdc6ceb2abd7704cb83187f8226fe803552dc1e85b616ca0b5cb1ec9a182"
     },
     "content/handbook/support/support-engineer-career-path.md": {
       "path": "content/handbook/support/support-engineer-career-path.md",
@@ -17021,6 +17084,13 @@
       "translated_at": "2026-05-08T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "c0ff411b22b148adfaf7db487fe1217a341c26a56b1e6233ac4e165cca0e0876"
+    },
+    "content/handbook/support/support-pods/advanced-search/_index.md": {
+      "path": "content/handbook/support/support-pods/advanced-search/_index.md",
+      "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1ebe89e49de37728188e29a86a6134996e9c4f4afa6bc0035cbd20d1a0eede37"
     },
     "content/handbook/support/support-pods/ai/_index.md": {
       "path": "content/handbook/support/support-pods/ai/_index.md",
