@@ -19345,6 +19345,76 @@
       "translated_at": "2026-05-09T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ed9e8e8b3db4cf0944eedf3fd0d72c902b7d1acd85c51a792f6720b5395a4456"
+    },
+    "content/handbook/solutions-architects/processes/_index.md": {
+      "path": "content/handbook/solutions-architects/processes/_index.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2f704a5369b72de0ef2624eebbbc9d4e81d077324a82487f4d571af7f4e78740"
+    },
+    "content/handbook/solutions-architects/processes/account-planning.md": {
+      "path": "content/handbook/solutions-architects/processes/account-planning.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bc78318a35d0486078ade52675f90a41ee90809e82213138ca3aa9b35a7838e9"
+    },
+    "content/handbook/solutions-architects/processes/alliance.md": {
+      "path": "content/handbook/solutions-architects/processes/alliance.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d73de0ef4fee4f168cf8ce26c1194916aab0f9635d02d9549688e5fe128bd7f1"
+    },
+    "content/handbook/solutions-architects/processes/channel.md": {
+      "path": "content/handbook/solutions-architects/processes/channel.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f67444a05b9051a53593ed9af74806cc7255ad22678230d75e150379522a49cd"
+    },
+    "content/handbook/solutions-architects/processes/collaboration-project.md": {
+      "path": "content/handbook/solutions-architects/processes/collaboration-project.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0ebd24ea41666a0e2f2b399624ee52815d26c7467a187a5c31ece1ca43ce3dc3"
+    },
+    "content/handbook/solutions-architects/processes/commercial.md": {
+      "path": "content/handbook/solutions-architects/processes/commercial.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0e8412d09b00ef71ee6cb92ce95c8b5d67744e7d61c55039a3180d0fb0c8ec47"
+    },
+    "content/handbook/solutions-architects/processes/ecosystem.md": {
+      "path": "content/handbook/solutions-architects/processes/ecosystem.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5d63dce8db3891795f5824ffec9fdec8f4da4b2bd3802cd8bbbd5beb6a1603aa"
+    },
+    "content/handbook/solutions-architects/processes/rfp.md": {
+      "path": "content/handbook/solutions-architects/processes/rfp.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cf690158c86ab801a852f1a4bc8b79f941a3ae37145d32ed25d4890fc9881123"
+    },
+    "content/handbook/solutions-architects/processes/sa-opportunity-hygiene.md": {
+      "path": "content/handbook/solutions-architects/processes/sa-opportunity-hygiene.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ce7510d4815099db4b6116252d10562ea04d8b6b2a90048af3262ba11f590f74"
+    },
+    "content/handbook/solutions-architects/processes/technical-discovery.md": {
+      "path": "content/handbook/solutions-architects/processes/technical-discovery.md",
+      "upstream_sha": "5eeae5a75957f16a16538b0ec5f531ce723f3a8a",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "84dffbd984c451ad0788cb3b2eef8677fdc1ccfb1ac63f4ae1a36e8d0e8c04bb"
     }
   }
 }
