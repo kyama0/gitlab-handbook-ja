@@ -16476,26 +16476,243 @@
       "model": "claude-opus-4-7",
       "input_hash": "ebb3e4a36116fddfde2cd2ad19f80fbaccd4a1a5777234c6840d079dcafe19ef"
     },
-    "content/handbook/values/_index.md": {
-      "path": "content/handbook/values/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
+    "content/handbook/teamops/_index.md": {
+      "path": "content/handbook/teamops/_index.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
       "model": "claude-opus-4-7",
-      "input_hash": "4cc995ac89293b07dfa4061d70ebcf334ecd989f0239cf0ca9acd0e6c742ca57"
+      "input_hash": "b5af68a530cbd61e1c7fb46520459863ecf8a6ec866f8c17211651a5f0db5462"
     },
-    "content/handbook/upstream-studios/_index.md": {
-      "path": "content/handbook/upstream-studios/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
+    "content/handbook/tools-and-tips/_index.md": {
+      "path": "content/handbook/tools-and-tips/_index.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "87636fb092b79ca9122d7711a36a6ed4221537f11be8fb7fda8f5b8a7d62994d"
+      "input_hash": "0c796c956f6b6c92f8f3d43a7638e77994447216488913bf8e0d1bab67ebdd1f"
     },
-    "content/handbook/upstream-studios/vision-strategy/_index.md": {
-      "path": "content/handbook/upstream-studios/vision-strategy/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
+    "content/handbook/tools-and-tips/ai/_index.md": {
+      "path": "content/handbook/tools-and-tips/ai/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "47855f5c06dbff45da994e914becacb9dba10e00f1c34198f5670b1924f9df73"
+      "input_hash": "75c66ef2e6afdbff1398d680106648f1aedf7ed9fe95b47a3dedd0ef0000ca12"
+    },
+    "content/handbook/tools-and-tips/ai/claude.md": {
+      "path": "content/handbook/tools-and-tips/ai/claude.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c96df0244f8520912700b491d19de53dff49e40b0203aba37028ac37034c7249"
+    },
+    "content/handbook/tools-and-tips/ai/gitlab-duo.md": {
+      "path": "content/handbook/tools-and-tips/ai/gitlab-duo.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "863ae36f2635dfa0f86c1158ab24eb173dfbf2358536d339db8720fa9f83e98e"
+    },
+    "content/handbook/tools-and-tips/ai/security_division_ai_usecases.md": {
+      "path": "content/handbook/tools-and-tips/ai/security_division_ai_usecases.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a3fa6af02f77933b40c0a8b14c478069359a8111b797d62461b2e25fafc8edb8"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "99bd50f2fa423e80a6c7703dc4f18f135bd03e4a3d03c4f8a9754ebde8d1a6bc"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/emacs.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/emacs.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ff4e395ad5dca8b1537485b006c32c6a5238ba2170bbecb709a20bab11a93b7"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/gitlab-web-ide.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/gitlab-web-ide.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "763c3860d1c9020ea84c34780082dbf5fea95e90676e354ffbbc5b4f0aab81bf"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9cca9ce5a6d0aa4dac3ae978839e2a675049a67cbd999d695698bc2b47f0e72b"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/code-inspection/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/code-inspection/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7cae242547c725186870564b5058127ba9dddb0d466555843f9dcf783698abc8"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/code-inspection/why-are-there-noinspection-comments.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/code-inspection/why-are-there-noinspection-comments.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1e27d4f7da9632111ccc93e63381cef06abfa201c29832e90ea2bfe03ff61c42"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5fcf3c225e9ed200ca9b534dc3c4076bb9da149c4382cb8c266a006bdb0cc5ce"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/goland.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/goland.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f38217903b8407b19079c89e54ee59ec085c10534e801867988fa2e61fa78bea"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/rubymine.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/rubymine.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e8f09e6e4a78e63f7532ce8e89888cffa1adc257f2870432c1f3c32a4eeb60a8"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/webstorm.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/webstorm.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "00e7b9b8d8c08c4fa853b1aa92539115522f34b3a08a5b86cd7b25625cf84916"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/licenses/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/licenses/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "57f95d1fc3b91078230870e714f7303df8daf8c431c5599982758bc4c87f5762"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/setup-and-config/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/setup-and-config/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ed4545d22e5c0e2bbadc11d6b9f91d821d8afdb936a96814fc603c190c1ec519"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/tracked-jetbrains-issues/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/tracked-jetbrains-issues/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "21e74538db35d046a2d5251bba6040776ade8236c5f9dbc62839e7564c8b4b66"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/sublime-text.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/sublime-text.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "40f7f754892cf7377ff5cf9154bffa257199a531d969e6bcb2de4af8227da1c2"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/vim.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/vim.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "237c1765a60ac1793ddc14361bfb1cba22f598c0f108abe333b95f5c9d7e2c5e"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/visual-studio-code.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/visual-studio-code.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f2653e3f92b8867b9be18bed04fbf0b90cef2b2ecd57e67a0ac3343c49ae1416"
+    },
+    "content/handbook/tools-and-tips/git.md": {
+      "path": "content/handbook/tools-and-tips/git.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9b738b4e68a831b2b97b8dfd7fd4898f3429d420cd55b47c97223b4587443c7d"
+    },
+    "content/handbook/tools-and-tips/linux.md": {
+      "path": "content/handbook/tools-and-tips/linux.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b2b959abb1ae0018b7c603812de9ab29eb6d922c155b30378842848a6b2998b8"
+    },
+    "content/handbook/tools-and-tips/mac.md": {
+      "path": "content/handbook/tools-and-tips/mac.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4fcc86d0aff07fa35381e69d941b95e296209f3e9282984b7737b2bc476b1b22"
+    },
+    "content/handbook/tools-and-tips/mermaid.md": {
+      "path": "content/handbook/tools-and-tips/mermaid.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "af2b33ed99cb9439188a3b9e3ed530bfec1100185133c258e37ba7032f2085cb"
+    },
+    "content/handbook/tools-and-tips/onepassword-cli.md": {
+      "path": "content/handbook/tools-and-tips/onepassword-cli.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7c6a8b8c944551cf4eaeec97dce6c5f7a07387b2e99951f539d5aaf16bfe9d99"
+    },
+    "content/handbook/tools-and-tips/other-apps.md": {
+      "path": "content/handbook/tools-and-tips/other-apps.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9dcd6aed3a02e71d5bf7c674b25e1947659bb73fa5f6e16b5a525854a4408d0b"
+    },
+    "content/handbook/tools-and-tips/personal-vpn.md": {
+      "path": "content/handbook/tools-and-tips/personal-vpn.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "757784d4f3daadc3195db6747b33e0eaaa5d4fb98c22bdc80e263ac2fa584e96"
+    },
+    "content/handbook/tools-and-tips/rubocop.md": {
+      "path": "content/handbook/tools-and-tips/rubocop.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "aced50b5f73bac4eaa9f00e1b68f31639153ed84afe085bf22a20afbdbd3c0f8"
+    },
+    "content/handbook/tools-and-tips/searching/_index.md": {
+      "path": "content/handbook/tools-and-tips/searching/_index.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1c3fff6915cb848344b4753418b1bc5c8ae26211d41b65de3267ad7c0c49bff5"
+    },
+    "content/handbook/tools-and-tips/searching/gitlab-keyword-search-firefox-bookmarks.md": {
+      "path": "content/handbook/tools-and-tips/searching/gitlab-keyword-search-firefox-bookmarks.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "61e8edfe8a434abdec10c127f73d53d6965a5b62105d8bb1f5e976ffa5674cd1"
+    },
+    "content/handbook/tools-and-tips/slack.md": {
+      "path": "content/handbook/tools-and-tips/slack.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "10e2c86c8b5f7547173644ce73cf4e2a99c12737bf64958249edc5d28559b0a4"
+    },
+    "content/handbook/tools-and-tips/zoom.md": {
+      "path": "content/handbook/tools-and-tips/zoom.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "af7d8d3cda89a3b5288e5ed004e490746b7dc2a012202e2ec3a39a80c6fdb937"
     },
     "content/handbook/total-rewards/_index.md": {
       "path": "content/handbook/total-rewards/_index.md",
@@ -16504,19 +16721,145 @@
       "model": "claude-opus-4-7",
       "input_hash": "5379feb4cd434b92f512618122a57d970f7ea77a86d772949f1357c4edede3cf"
     },
-    "content/handbook/total-rewards/incentives.md": {
-      "path": "content/handbook/total-rewards/incentives.md",
+    "content/handbook/total-rewards/benefits/_index.md": {
+      "path": "content/handbook/total-rewards/benefits/_index.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
       "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "29c23f75c4d69fe0eb31ca222494df32984147c0cec3382073c08883a515a8de"
+      "input_hash": "93fe96ec49c01e94e5bda1c999d2cec9b45c253870e045767fa9f96438125062"
     },
-    "content/handbook/total-rewards/stock-options.md": {
-      "path": "content/handbook/total-rewards/stock-options.md",
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/_index.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/_index.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6f71bef7d63708d20fcab6c98dcd9a88067ad92cb6052a7417261c985d2713b7"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7047cbe407bcb3e36a36b589e6ed99ae70f42acdd81bccf5555f5d66563648fa"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-finland.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-finland.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "35de8c8fd18aac98bbd1c298b55ac3810bc2df68199cc9a12e67146829db4a52"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "033b0e68b49702a69486d267f84ce684f6d6c476ec612ef7e97eb52ced2ad92e"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1335157d0b2b6b13122f90e969d87adb722ce33aff143ee066c24b0d3b6aa25c"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "384890e65760c56f1852877f2d872664e0e59fb07d3c2a692c445ddf6260af4c"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/france-sas.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/france-sas.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "370131b1ef85f0cf79cdb68e1dff2bfc9cc57fcaf8b32ce82ddc19a6f42dac5b"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-gk.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "63cf847eb25b2c39a76a339636692d6fd15bc90daa7157fd9c3198a92e155bf5"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b40813e0220d03848af8efc7137507dc530044849e838a5d28e78d4dad21af92"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0010f8bcf4025a5a05e16ab8bf784b2d9434b80d65e9ced085a39df730b7c9a2"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1f76885869bb73d5429944e2c04b11153830e566d62b13b090c446519e1c47b6"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a3faf6b3b3b46763c7e6fcd2082675e79408d9db484f7b1020c5ab882cf176c0"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a05601812c977e3dcb65ae83c800a0bde14362d70916b354315bed7be98ee629"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "13fb38b939daeaf1b4c9bd2f1f92ddf6365e3cbf7facdaa4aa1e4cc4a4efdfbe"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "be31201b40eb09e3e56fff2cfc224a2014919a1683651174ed6f86e337134041"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5fa3510d51f626a9f8719bd154063593a36b08b1cac99cfbff3ded81eca5ec3a"
+    },
+    "content/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd.md": {
+      "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0cc61cb79f32a1f58f781248a6dcd8c9ad3b33167cbb41ba1750d59177ba092c"
+    },
+    "content/handbook/total-rewards/benefits/modern-health.md": {
+      "path": "content/handbook/total-rewards/benefits/modern-health.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
       "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ce62cd564e06a522d5f64eb11e534f4d378ff62f36b6c724ea7f084be1b6d606"
+      "input_hash": "246f22b96e7b0bae695b118e89e71a014b69cc29ad67343d9e39b92d19ba7635"
+    },
+    "content/handbook/total-rewards/benefits/parental-leave-toolkit.md": {
+      "path": "content/handbook/total-rewards/benefits/parental-leave-toolkit.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b9a0f392ec5f954de59d53e965a42930f05c0323755449fb5917377167f95a1a"
     },
     "content/handbook/total-rewards/compensation/_index.md": {
       "path": "content/handbook/total-rewards/compensation/_index.md",
@@ -16532,19 +16875,96 @@
       "model": "claude-opus-4-7",
       "input_hash": "54b0adad0897f59da2dd191a35c18eaa607069d9debbe97686840363abc4ebde"
     },
-    "content/handbook/total-rewards/benefits/_index.md": {
-      "path": "content/handbook/total-rewards/benefits/_index.md",
+    "content/handbook/total-rewards/incentives.md": {
+      "path": "content/handbook/total-rewards/incentives.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
       "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "93fe96ec49c01e94e5bda1c999d2cec9b45c253870e045767fa9f96438125062"
+      "input_hash": "29c23f75c4d69fe0eb31ca222494df32984147c0cec3382073c08883a515a8de"
     },
-    "content/handbook/total-rewards/benefits/modern-health.md": {
-      "path": "content/handbook/total-rewards/benefits/modern-health.md",
+    "content/handbook/support/_index.md": {
+      "path": "content/handbook/support/_index.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3e833f59dee9568af40db3eedf22f1643cded591d5fa9b7715d3cedc7964ae95"
+    },
+    "content/handbook/support/amer.md": {
+      "path": "content/handbook/support/amer.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ad86414e849a770d24cda23c114b8cb723307ede7191b1db9efe1c56f504d987"
+    },
+    "content/handbook/support/apac.md": {
+      "path": "content/handbook/support/apac.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d2a1843f75312405da1a1aa18b8ce04363c4fa50ad84b4c50ea091781e1964e1"
+    },
+    "content/handbook/support/aspiring_leaders.md": {
+      "path": "content/handbook/support/aspiring_leaders.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "94b8b5e38d21d631460c7bb8492626a8f626449623edebccc9adfc7c015d0c77"
+    },
+    "content/handbook/support/channels.md": {
+      "path": "content/handbook/support/channels.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "820d9da6e02b3e93a2e26fc5583ec4c0c28a672aebea74548c32aa1ad1e340d1"
+    },
+    "content/handbook/support/data-analysis.md": {
+      "path": "content/handbook/support/data-analysis.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f2c7a660b7a1249639a7130c6dfb88094f57190aa220ec7a23c3244531e618cd"
+    },
+    "content/handbook/support/gratis-support.md": {
+      "path": "content/handbook/support/gratis-support.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6233faab81422ead9e17292bc4995f381d9527cd58375f42cf64cbbac0b1bb27"
+    },
+    "content/handbook/support/on-call.md": {
+      "path": "content/handbook/support/on-call.md",
+      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
+      "translated_at": "2026-05-08T17:40:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8e3178895a432b1241a712c2f764c8c0f8ca3f4e8e0d4c4e225638806975cdc5"
+    },
+    "content/handbook/total-rewards/stock-options.md": {
+      "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
       "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "246f22b96e7b0bae695b118e89e71a014b69cc29ad67343d9e39b92d19ba7635"
+      "input_hash": "ce62cd564e06a522d5f64eb11e534f4d378ff62f36b6c724ea7f084be1b6d606"
+    },
+    "content/handbook/upstream-studios/_index.md": {
+      "path": "content/handbook/upstream-studios/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "87636fb092b79ca9122d7711a36a6ed4221537f11be8fb7fda8f5b8a7d62994d"
+    },
+    "content/handbook/upstream-studios/vision-strategy/_index.md": {
+      "path": "content/handbook/upstream-studios/vision-strategy/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "47855f5c06dbff45da994e914becacb9dba10e00f1c34198f5670b1924f9df73"
+    },
+    "content/handbook/values/_index.md": {
+      "path": "content/handbook/values/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4cc995ac89293b07dfa4061d70ebcf334ecd989f0239cf0ca9acd0e6c742ca57"
     }
   }
 }
