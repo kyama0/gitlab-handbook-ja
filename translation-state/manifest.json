@@ -17148,6 +17148,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "61e5d2efbef253bc2f8a48a4a3c5c9c0659eec181d525a32f52fbd822cfdf940"
     },
+    "content/handbook/support/license-and-renewals/workflows/self-managed/_index.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/self-managed/_index.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T11:18:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f00fa4162b54354fd03ffae10352fc997589fc06a56da59188618d2649f1f790"
+    },
+    "content/handbook/support/license-and-renewals/workflows/self-managed/cloud-licensing.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/self-managed/cloud-licensing.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T11:18:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8a47d76e306b33feec3044985321c3314d3f884834c242020280bed1a994f2d0"
+    },
+    "content/handbook/support/license-and-renewals/workflows/self-managed/creating-wider-community-license.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/self-managed/creating-wider-community-license.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T11:18:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "51a2569a038f8eb77bda61ba9b7fa8511579cb90ab52a29a4b7e7d7b751d8a2f"
+    },
+    "content/handbook/support/license-and-renewals/workflows/special-programs.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/special-programs.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T11:18:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7768b8b1d74bcccca1b4c79808c56bab82b9e4d26ea30e2f01ade5c5e108b439"
+    },
+    "content/handbook/support/license-and-renewals/workflows/updating_customer_organization_name.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/updating_customer_organization_name.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T11:18:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8d8875e520670bcd4c1f711bf497009fae2ae2b7da458312c774950eb3f04f76"
+    },
+    "content/handbook/support/license-and-renewals/workflows/usage_billing.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/usage_billing.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T11:18:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "99333d0a14a70b2e9185d1dacd3c975637cf48bfe0f46549ccfb4b838ba10063"
+    },
+    "content/handbook/support/license-and-renewals/workflows/working_internal_requests.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/working_internal_requests.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T11:18:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "84a0817a4f5859c3d89c310a664e5c3c5b749c75a9ca8ead300cb9c24481f806"
+    },
+    "content/handbook/support/license-and-renewals/workflows/working_with_reseller_related_requests.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/working_with_reseller_related_requests.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T11:18:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a1edee9acaa438e851ca16969a5f465ae205d2dcb1c021ca24e40d4783e71e88"
+    },
+    "content/handbook/support/license-and-renewals/workflows/working_with_sales.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/working_with_sales.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T11:18:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6da8136808f0f6e0969279ee10948d332db5de02c0657e68c9058f017572e687"
+    },
+    "content/handbook/support/license-and-renewals/workflows/zendesk.md": {
+      "path": "content/handbook/support/license-and-renewals/workflows/zendesk.md",
+      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
+      "translated_at": "2026-05-08T11:18:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "42e08ba18efc1469e2d3ec82b07fefd232872c44ba5413e04242cd5717e7a6ab"
+    },
     "content/handbook/support/partnerships/_index.md": {
       "path": "content/handbook/support/partnerships/_index.md",
       "upstream_sha": "1426909c018f3e75bf94ea36ef7e2a30be77e167",
