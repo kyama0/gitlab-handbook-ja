@@ -17568,6 +17568,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "5f68e2b496bb4e749e4da6fb6a36cbd1675e39247b362afe3769e49486ef2a7e"
     },
+    "content/handbook/support/workflows/pairify.md": {
+      "path": "content/handbook/support/workflows/pairify.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1650b4eef16c3110eaa1e9f974d54a4647b54541e5a69f92beb843e991b0435b"
+    },
+    "content/handbook/support/workflows/pairing-sessions.md": {
+      "path": "content/handbook/support/workflows/pairing-sessions.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a967fbcdd993d788d9834717b7f1119a7ea69d295a55c8f41bc0c6fb560d74d"
+    },
+    "content/handbook/support/workflows/patching_an_instance.md": {
+      "path": "content/handbook/support/workflows/patching_an_instance.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e5a4ba5751e8ab83fe63d906359b4a1df932e6e6e191234e1d6398897babba48"
+    },
+    "content/handbook/support/workflows/personal_data_access_account_deletion.md": {
+      "path": "content/handbook/support/workflows/personal_data_access_account_deletion.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ec939e46a978113dc904feb7b64645af46ff27d58b7e8db8b4b7f5eb855ba192"
+    },
+    "content/handbook/support/workflows/pii_removal_requests.md": {
+      "path": "content/handbook/support/workflows/pii_removal_requests.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d7b5bc5f774fb7a4e24702a87cd900411c434d0129f60ccba2c6d96d75c511e7"
+    },
+    "content/handbook/support/workflows/printing_ticket_thread_without_internal_notes.md": {
+      "path": "content/handbook/support/workflows/printing_ticket_thread_without_internal_notes.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4c83f7ec019ed9680c72026fe26cb610cadea7699411dfe172d04d42f53828da"
+    },
+    "content/handbook/support/workflows/product_category_field.md": {
+      "path": "content/handbook/support/workflows/product_category_field.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "48a441b307284f79b3abda79d8c0c3a1c580ab0bf5deb518306fe08abaaf8175"
+    },
+    "content/handbook/support/workflows/quick-reference.md": {
+      "path": "content/handbook/support/workflows/quick-reference.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0bba0be2e45003007384576bfe5f834ad3cf64cab7018b8ac4da981b9b7999f8"
+    },
+    "content/handbook/support/workflows/rbl_delisting.md": {
+      "path": "content/handbook/support/workflows/rbl_delisting.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6c45bf52f19e6a84208b0456e0a0d9c2a9ac44fca1ce1378deafdd77bcd8f324"
+    },
+    "content/handbook/support/workflows/reinstating-blocked-accounts.md": {
+      "path": "content/handbook/support/workflows/reinstating-blocked-accounts.md",
+      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
+      "translated_at": "2026-05-08T01:46:59Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "714c5bc9ffa2b78777e1d71e9cb630db29ca5ffcd39722e75ef359b196609b7f"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
