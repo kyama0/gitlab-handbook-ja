@@ -20115,6 +20115,76 @@
       "translated_at": "2026-05-09T05:30:11Z",
       "model": "claude-opus-4-7-1m",
       "input_hash": "ebb848a9f6024162a68ec33cd899fea15d1bc334e1696b42ed00113b3b0a9025"
+    },
+    "content/handbook/security/security-assurance/security-compliance/_index.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T06:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "6937a7dc36b54d376afb849d336a4d67c2527390b2f73c19dc6e100d4b25bf77"
+    },
+    "content/handbook/security/security-assurance/security-compliance/access-reviews.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/access-reviews.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T06:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "f5ff34ab135e9903786e99c14294c1a09904c67a3bb071b6b21daddd6c25aa22"
+    },
+    "content/handbook/security/security-assurance/security-compliance/automated-control-testing.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/automated-control-testing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T06:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "d88e6eb01d130ec800ef6188f6012b6bc8714c4599eb1d3245c0d29011f0c513"
+    },
+    "content/handbook/security/security-assurance/security-compliance/certifications.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/certifications.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T06:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "e6527bbec99e2c12d66a6acf22ad11505710c6e5041993fa9f3a461a80f922ab"
+    },
+    "content/handbook/security/security-assurance/security-compliance/fedramp-compliance.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/fedramp-compliance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T06:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "7f92a092715f78ae4cd8915e67ea98a03c3c2498732e73b5d4a061f21372c8b4"
+    },
+    "content/handbook/security/security-assurance/security-compliance/gap-analysis-program.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/gap-analysis-program.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T06:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "f815c58d2fcc6a31ebd71bbd2740a23bb11c7b29a7ce57975121664f22b261fa"
+    },
+    "content/handbook/security/security-assurance/security-compliance/pci-charter.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/pci-charter.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T06:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "ebf42cfbd7fbddfa81fc791c20dd76c1c6717a28bc9186047b4364fae28632cc"
+    },
+    "content/handbook/security/security-assurance/security-compliance/pci-internal-control-review.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/pci-internal-control-review.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T06:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "ddb43ba293c3615daf26e62a80fe4adbc076828d69a1dca863ad69e6cbcdbbac"
+    },
+    "content/handbook/security/security-assurance/security-compliance/poam-deviation-request-procedure.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/poam-deviation-request-procedure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T06:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "eca8481d5b4d8d8d733ba107dda7a705b0c3d4e97d2a1a828dffa5e04b88acd8"
+    },
+    "content/handbook/security/security-assurance/security-compliance/policy-as-code.md": {
+      "path": "content/handbook/security/security-assurance/security-compliance/policy-as-code.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T06:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "e1761db95724a15852234564e6a9291b257cbf1c9eea5bebc0e7c19c2c0bab31"
     }
   }
 }
