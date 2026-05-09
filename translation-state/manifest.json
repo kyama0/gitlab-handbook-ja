@@ -19625,6 +19625,146 @@
       "translated_at": "2026-05-09T08:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "b3300c2b6f7b057f283243c2803b41250cd5db6ede668587bb6ff204776935ae"
+    },
+    "content/handbook/security/engaging-with-security.md": {
+      "path": "content/handbook/security/engaging-with-security.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cafb7810925d1d2e0ce69c0bac4fb588569182cf1018964bcc18d7af1f8466da"
+    },
+    "content/handbook/security/external-secret-storage.md": {
+      "path": "content/handbook/security/external-secret-storage.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "326ba6c16216cfeb0108c8cbb7cba23d49abfaaf728117c0a214f2d32d277f0c"
+    },
+    "content/handbook/security/external-security-communications-procedure.md": {
+      "path": "content/handbook/security/external-security-communications-procedure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4cc68b01158f45939714c6ba2df51026575d3349fa10925998b4f5fc29715473"
+    },
+    "content/handbook/security/gearing-ratios.md": {
+      "path": "content/handbook/security/gearing-ratios.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "041b3c21eeb01d5d301ddbe3c090c150285ee1a6fae35db28036f8e0037b6221"
+    },
+    "content/handbook/security/gitlab_security_resource_center.md": {
+      "path": "content/handbook/security/gitlab_security_resource_center.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e285a0fe7c507b137862abc2e579fde4abd6d122f13e521ecd6e42def3f7a353"
+    },
+    "content/handbook/security/gitleaks.md": {
+      "path": "content/handbook/security/gitleaks.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5952c75f18d3a13fbe43b3e14545758f1cb1bf768cc323245233e33f10bc1d38"
+    },
+    "content/handbook/security/individual-development-plan.md": {
+      "path": "content/handbook/security/individual-development-plan.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0b5f850132bb9ef3b865a14ad499ed70b10e2e9dc20e2107daccadb71e6af334"
+    },
+    "content/handbook/security/information-system-contingency-plan-iscp.md": {
+      "path": "content/handbook/security/information-system-contingency-plan-iscp.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "181f48a1a40e395bde0c2ccffa5e6368d5e81c2a2b0c2acd69df5b7995cbd12c"
+    },
+    "content/handbook/security/internship.md": {
+      "path": "content/handbook/security/internship.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ac8d933b26d64f35cb1b341db67bb31a8e53a521060502a68d172c941d17aeaa"
+    },
+    "content/handbook/security/isms.md": {
+      "path": "content/handbook/security/isms.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "533125152b1944d2c7b75324f42f0d98fa56e3927493a65d2f5acf2c28d24be8"
+    },
+    "content/handbook/security/learning-and-development.md": {
+      "path": "content/handbook/security/learning-and-development.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "796b9b8b80be2cbb35d2b31d34aeaf29a793e9234296c55609e63204dc9e2e33"
+    },
+    "content/handbook/security/maturity-models.md": {
+      "path": "content/handbook/security/maturity-models.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "000360e6f774e07e4f3b5a0c9a0eebabb9c11376733c653a55dd3dc10df75ee6"
+    },
+    "content/handbook/security/network-isolation.md": {
+      "path": "content/handbook/security/network-isolation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "779dbbc8b33752933ba51044b03724f3e1ceac6175d396bede366036e519a0fc"
+    },
+    "content/handbook/security/okr.md": {
+      "path": "content/handbook/security/okr.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "93402ed5efd6d8d454ab87e505b2a82547fa58709223044e730438b6337b2bbf"
+    },
+    "content/handbook/security/password-guidelines.md": {
+      "path": "content/handbook/security/password-guidelines.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4186e9a7cb4cf9af3f1037bb748634cb4ce76aab7bcdbc351c29b6170e9fea8b"
+    },
+    "content/handbook/security/performance-indicators.md": {
+      "path": "content/handbook/security/performance-indicators.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c1e61fce2301b3047bb0ea8ac0491160abf099f742e1507c93c6d4528faa8687"
+    },
+    "content/handbook/security/pgp_process.md": {
+      "path": "content/handbook/security/pgp_process.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "84d8a0895f57d7995476418fd8d31fac297a620b0d7a21bfcb293d5218dc65c2"
+    },
+    "content/handbook/security/responding-to-ransomware.md": {
+      "path": "content/handbook/security/responding-to-ransomware.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a2f00321f5bea82eb75621017a2cacda25d75c3cf1bb59fbe3fba4200e105386"
+    },
+    "content/handbook/security/root-cause-analysis.md": {
+      "path": "content/handbook/security/root-cause-analysis.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2c32b189825b3347da87cd910f079c48d9fc71250a7f9e4a2f17dfd2003a415b"
+    },
+    "content/handbook/security/secure-coding-training.md": {
+      "path": "content/handbook/security/secure-coding-training.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9fbc2f7e020e19a9fdb90c51eb2b16562e61a5baf4e742589ab47c0cd671e867"
     }
   }
 }
