@@ -20325,6 +20325,76 @@
       "translated_at": "2026-05-09T21:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "51bd76c38e924003db18c4b1810cccf187a2506ec1217954850911b66680858b"
+    },
+    "content/handbook/security/security-assurance/field-security/field_security_observation_and_ofi_quality_guide.md": {
+      "path": "content/handbook/security/security-assurance/field-security/field_security_observation_and_ofi_quality_guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5106d9ede99f1b862c4a75a191243a3b5a1a81496408185df1f912b7ebe71285"
+    },
+    "content/handbook/security/security-assurance/field-security/fsstp.md": {
+      "path": "content/handbook/security/security-assurance/field-security/fsstp.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ded5dfbf7edd1fe36cf7ee1645c9b2de50b9b4b902461cd12c0ab6f8e7301702"
+    },
+    "content/handbook/security/security-assurance/field-security/independent_security_assurance.md": {
+      "path": "content/handbook/security/security-assurance/field-security/independent_security_assurance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "54c057085394e5f3843252db69a84eb46f32e8dfe63b9c01c10f53301f71a19f"
+    },
+    "content/handbook/security/security-assurance/field-security/knowledge_base.md": {
+      "path": "content/handbook/security/security-assurance/field-security/knowledge_base.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4f33053cff852020fa934ddc019ed3b82d9feef5a957a55c452fd22a6cc723cf"
+    },
+    "content/handbook/security/security-assurance/field-security/qbrs.md": {
+      "path": "content/handbook/security/security-assurance/field-security/qbrs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "7706badc5c27b3da562085e14d7595eb01e824630f96fb6b215cc08e9b707620"
+    },
+    "content/handbook/security/security-assurance/field-security/trust_center_guide.md": {
+      "path": "content/handbook/security/security-assurance/field-security/trust_center_guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "91fc3ef5db4b39d1868605caf66dfad865e6c9a7542d88c2cbcb97f6876839ea"
+    },
+    "content/handbook/security/security-and-technology-policies/access-management-policy.md": {
+      "path": "content/handbook/security/security-and-technology-policies/access-management-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "590a2bc9e5fc0b953a3a95be6bd9aa331ac999942e61c37320f83f4e7db38e0d"
+    },
+    "content/handbook/security/security-and-technology-policies/audit-logging-policy.md": {
+      "path": "content/handbook/security/security-and-technology-policies/audit-logging-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e6cd4816807e880e2213d5b206c07df855a37555a9caa233b45d4bfc93a1aa3b"
+    },
+    "content/handbook/security/security-and-technology-policies/change-management-policy.md": {
+      "path": "content/handbook/security/security-and-technology-policies/change-management-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "36ffd07727c9aae601fe33db594ccbde8cba1878c1174b4fd62ec4c6199d4cb9"
+    },
+    "content/handbook/security/security-and-technology-policies/penetration-testing-policy.md": {
+      "path": "content/handbook/security/security-and-technology-policies/penetration-testing-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e2e27f0839a3265f928e2da5b5077f81054b6e04bc2f563e149b55108acf9e4e"
     }
   }
 }
