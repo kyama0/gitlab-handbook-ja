@@ -106,7 +106,7 @@ Firefox のキーワード検索はブックマークとして保存されてい
 これをテストするには、新しいタブを開き、アドレスバーに `gd merge requests` と入力して Enter キーを押します。
 GitLab ドキュメント検索結果ページが `merge requests` の検索結果を表示してロードされるはずです。
 
-### キーワード検索 URL の例
+### キーワード検索 URL の例 {#examples-of-keyword-search-urls}
 
 以下の表は、ブラウザで設定できるいくつかのキーワード検索 URL を示しています。
 Chrome と Firefox でキーワード検索を追加する手順は上記のとおりです。
