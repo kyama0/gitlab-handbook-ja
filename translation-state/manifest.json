@@ -21655,6 +21655,76 @@
       "translated_at": "2026-05-09T22:41:14Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "3d53b5839b33fd6785071a65ea8cb328633be8a624af7b8f073ac328be76f6c9"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/organizations/fields.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/organizations/fields.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T23:27:10Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a3f77c01f92665464e7b4ea42c596d56569cc7d50af3d02ed1e7b3ed1b842bb9"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/organizations/shared-orgs.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/organizations/shared-orgs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T23:27:10Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "028cc9902ff7f8181bf56137778c694a7a3cb200f9162b98d5789b0e09ca39d4"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/mid-ticket-feedback/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/mid-ticket-feedback/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T23:27:10Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a114751fe05d93514a750ea945548821469e4a4a331032c7abc7f3fb0d1023dc"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/metrics-definitions/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/metrics-definitions/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T23:27:10Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "43dbf8209783530d8d81162c32692c592c65bdd685deb8c91620e55e2d0af59d"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/maintenance/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/maintenance/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T23:27:10Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "3aa6492f4bcc9728e54ceab3432feaa000af0ec47d231dadefc3d7ad5837bdce"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/macros/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/macros/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T23:27:10Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "69e303df7fc2af97ac0d793edde2b99e0e4ef8ad10893f58bd5bf0a5bf05e7ab"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/liquid/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/liquid/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T23:27:10Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5326eb2faa1e8851a417c8d71f3e1fdf728b86b983bfb36aa51b1e9bcceb3439"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/knowledge-center/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/knowledge-center/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T23:27:10Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "be246f77301a8b485c4a4e988ad01d56f04acc9398b99bd2d69422a13629bdf3"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/knowledge-center/articles.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/knowledge-center/articles.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T23:27:10Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9734e068cf4f0e82e0ec6ebda5752b4a9d34cce834168b7e96022952daedccdc"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/knowledge-center/categories.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/knowledge-center/categories.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T23:27:10Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ecdf7586f7239b0f3dd318ac8463733ab4e9a1ecf50238d72ab4b01dd76d9cd4"
     }
   }
 }
