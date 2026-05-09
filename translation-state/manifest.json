@@ -19065,6 +19065,76 @@
       "translated_at": "2026-05-09T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ea066e12259f815b161c9a2368dad84bd60487b9aaf5cf9e32c8edac20e09077"
+    },
+    "content/handbook/solutions-architects/strategic-field-org.md": {
+      "path": "content/handbook/solutions-architects/strategic-field-org.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7e6227ae84e072e9a7b1e588c749e0c0ccc044e086318f005586613ae748fd2b"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/_index.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/_index.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fb06c2a8cb9acd5900db22184c39757cf0fe5c115073dfd34676f412f0c7cb05"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/dap-issue-reporting.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/dap-issue-reporting.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "99ace5083d8b471c1cc9ff636aeba82bac978dc0450f8f62715c9a624c668104"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/trial-guidelines.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/trial-guidelines.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a4cf2ceb7030d711b122d8f1ff972dfddb00cfa111bf75e22005bcf41e0d39ab"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/workshop.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/workshop.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c637c9ee90efe98be8f7d77c1dd6c3b1fc831ba9c1d3444335369fa10eb2036a"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/stackoverflow/_index.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/stackoverflow/_index.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fc8f843aa99319ec4a7c74b8a69b9d3f6e70c2abe693b7fdc14da703d5f90dc2"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/stackoverflow/administration.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/stackoverflow/administration.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d488c2c0b942d23429699c7ddb4d2a65a283d49e66a0e970c024a53cbd377e6a"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/stackoverflow/adoping.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/stackoverflow/adoping.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ba99b915f19be3276e2aa361641eb0618c5b458814f4f31e607814aabf25d6e6"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/stackoverflow/onboarding.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/stackoverflow/onboarding.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b4f0a0e448c0dea12510f83ae08d4c7cd6702854f263dc285c6ae34e0f4f2f3d"
+    },
+    "content/handbook/solutions-architects/tools-and-resources/stackoverflow/outomes.md": {
+      "path": "content/handbook/solutions-architects/tools-and-resources/stackoverflow/outomes.md",
+      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
+      "translated_at": "2026-05-08T17:29:46Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0a752be0ef03176b7d1adc40eb800a4459cc8de852fe913dadceb360b73eb8a3"
     }
   }
 }
