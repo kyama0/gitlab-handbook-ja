@@ -20675,6 +20675,76 @@
       "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "ba8d6e76e01df3205f462081cfbb820cecbdd32535dac0dd3ae07ba3ccf73484"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/security-architecture/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/security-architecture/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:40:09Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c622e58b7bd8caa933f9c2d7480d840cd98704a177f91c6085275ce24c0b2ad4"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/security-architecture/zero-trust.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/security-architecture/zero-trust.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:40:09Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "114b76cf0f825927a853bc38d089b7db36525bb7e7bfac98bc0f48c28a97de78"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/risk-register/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/risk-register/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:40:09Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "76b6f8287e83ab8ab9ec7745b9eaeedf81039d2aed88548c7787eecf2bfbf106"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/risk-register/well-articulated-prodsec-risks.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/risk-register/well-articulated-prodsec-risks.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:40:09Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "28c345c202749301e608f46ba84da2699c3c8bdcc41119e6e8e240777e65e735"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:40:09Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "524dd8600832b74850746a33531ddd3949fbf68838093a63b539328c49356d8d"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/detailed-workflow.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/detailed-workflow.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:40:09Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4b3de9918f16ab069c8b679f944bcf6d091802e4279e3579dc14721df59b7478"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:40:09Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "8a24f28f6af48349cc6dde3013dd4185d6c25c0dab18c970f68cbd89db328a3e"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/hackerone-tooling.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/hackerone-tooling.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:40:09Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "7e8412618b0f4448f0d804d6f2633c7f9811ee8f7cb3f90e5a5bc452e9ef55dd"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/product-security-automation-token-management.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/product-security-automation-token-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:40:09Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "47ff6ea12e102fee4fc275fba710b11c787b7fc8bfe0c8b52c902fa2507f4e65"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/rotate-service-account-personal-access-tokens.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/rotate-service-account-personal-access-tokens.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:40:09Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cc954fe30719838ebdb215b668eb9af23a134a2ec01f669a96b6f273e7273818"
     }
   }
 }
