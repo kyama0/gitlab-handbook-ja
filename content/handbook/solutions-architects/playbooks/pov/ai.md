@@ -538,7 +538,7 @@ SA は SAE および AE と協力し、ビジネス価値および GitLab ソリ
 
 ## AI エンゲージメント全般
 
-### Discovery - 顧客のコンテキストに合わせる
+### Discovery - 顧客のコンテキストに合わせる {#discovery---adapt-to-the-customers-context}
 
 可能な限り早期に、顧客特有のコンテキストを能動的に発見してください。基本のディスカバリー手法については、[Sales Discovery Playbook](/handbook/sales/playbook/discovery/) を参照し、[Command Plan](/handbook/sales/command-of-the-message/command-plan/) で [MEDDPPICC](/handbook/sales/meddppicc/) フィールドが入力されていることを確認してください。AI 評価では特に、POV 前にベースラインメトリクスを確立するため [Value Stream Discovery ワークショップ](/handbook/solutions-architects/sa-practices/value-stream-discovery/)を検討し、インタラクティブなディスカバリーセッションには[ホワイトボードベースのファシリテーション](/handbook/solutions-architects/sa-practices/whiteboard-based-facilitation/) (Current State Discovery、Day-in-the-Life テンプレート) を使用してください。
 
