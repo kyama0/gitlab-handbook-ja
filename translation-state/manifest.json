@@ -20395,6 +20395,76 @@
       "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "e2e27f0839a3265f928e2da5b5077f81054b6e04bc2f563e149b55108acf9e4e"
+    },
+    "content/handbook/security/security-and-technology-policies/security-and-technology-policies-management.md": {
+      "path": "content/handbook/security/security-and-technology-policies/security-and-technology-policies-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "209dcd8e86f0fa889afb2b72fe5b89281902f55141c9f05e8578d3c6c2c9f795"
+    },
+    "content/handbook/security/security-and-technology-policies/software-development-lifecycle-policy.md": {
+      "path": "content/handbook/security/security-and-technology-policies/software-development-lifecycle-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "3c03341401f5665ac46f06eb9773201d15551c21c47f8862b85d96de2d5ed7ae"
+    },
+    "content/handbook/security/readmes/_index.md": {
+      "path": "content/handbook/security/readmes/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9c50e06cc1520278ee7f8dda83116a9a3600d58e014a84a415085c19e9bc8b33"
+    },
+    "content/handbook/security/readmes/byron-boots.md": {
+      "path": "content/handbook/security/readmes/byron-boots.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f36b7caa231ce7fa4df97aef23e6ba299f5dccd965e89d384630e2e3ba6e5a6b"
+    },
+    "content/handbook/security/readmes/chaim-mazal.md": {
+      "path": "content/handbook/security/readmes/chaim-mazal.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e486d39413161154f6665de33f95686d6d35587ba9617b4002dd5e9933a2a145"
+    },
+    "content/handbook/security/readmes/joseph-longo.md": {
+      "path": "content/handbook/security/readmes/joseph-longo.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ffd4d10883b86cbf09f26642c9d122a35a1513f3027fed13065c467887a6df31"
+    },
+    "content/handbook/security/readmes/julie-davila.md": {
+      "path": "content/handbook/security/readmes/julie-davila.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "36cf948020d6e9f14520dd431d9b1d0977d9b71d3022e62a2467cf41d322df43"
+    },
+    "content/handbook/security/readmes/nick-malcolm.md": {
+      "path": "content/handbook/security/readmes/nick-malcolm.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "997be998aeee015f3821ab944e862028324256108ef3695ecf0d6a930a34bc32"
+    },
+    "content/handbook/security/readmes/ty-dilbeck.md": {
+      "path": "content/handbook/security/readmes/ty-dilbeck.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f9ed3dd30714479f4c7b1c7f81a8acf0c4f35389eae070215a3e9cb8e8711de5"
+    },
+    "content/handbook/security/product-security/_index.md": {
+      "path": "content/handbook/security/product-security/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "00dac5baf8b74717704a1457d5188e8c7a27767edf05575b39a3f4b0f4ad105e"
     }
   }
 }
