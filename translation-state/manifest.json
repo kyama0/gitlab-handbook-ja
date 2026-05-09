@@ -20535,6 +20535,76 @@
       "translated_at": "2026-05-09T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "40c312dc9125d6d3466f02b40643b5de9fbb2d75fe7002c49fd2801c269513fe"
+    },
+    "content/handbook/security/product-security/vulnerability-management/labels.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/labels.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c71da455d2166e3ff0740f8b47b5861351cc7b5ef06d4860be11e8603d873c37"
+    },
+    "content/handbook/security/product-security/vulnerability-management/lifecycle.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/lifecycle.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "742f55622bc73bc8b3de7416158fa23502d2806da453ba5f49635891013eb026"
+    },
+    "content/handbook/security/product-security/vulnerability-management/sla-exceptions.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/sla-exceptions.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4ca287871d02e555aa4f9255c4943fa2674ddb6e3c7d1648db7874c52aa6754e"
+    },
+    "content/handbook/security/product-security/vulnerability-management/sla.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/sla.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "8ba85f73eeeb850d60941433d781cbd873c9ea4e97e6301dca040d98dd5adf38"
+    },
+    "content/handbook/security/product-security/vulnerability-management/what-does-fixed-mean.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/what-does-fixed-mean.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4a69961e3ee676fd903120a9beb3ef81afb970a82e861c3d46d4320c79110853"
+    },
+    "content/handbook/security/product-security/vulnerability-management/what-is-a-vulnerability.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/what-is-a-vulnerability.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "693c061f7d620b536d0f835d00400e3c2dfa29231ec95a4d04d3b1753dac698f"
+    },
+    "content/handbook/security/product-security/vulnerability-management/why-should-we-fix-vulnerabilities.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/why-should-we-fix-vulnerabilities.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d2c56a99fb78e6496c82b17c2b53b90aa9aabf83ecc20c453473a1f9fe333482"
+    },
+    "content/handbook/security/product-security/vulnerability-management/vulnerability-management-team/_index.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/vulnerability-management-team/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "6eccaa4e0153d0af40db679b4e12a8d9b93cd7d5bbc18c1533fa74c2437890cf"
+    },
+    "content/handbook/security/product-security/vulnerability-management/runbooks/_index.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/runbooks/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "14cf7559e11da020738601a4e0e886f5b18a815e604b0cff7b6bf0978e7f0293"
+    },
+    "content/handbook/security/product-security/vulnerability-management/runbooks/fixing-vulnerabilities.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/runbooks/fixing-vulnerabilities.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d4bc5ba5881b0ab5db3ffaa0df7740463177addd34f97ee4e84dda3e096402cb"
     }
   }
 }
