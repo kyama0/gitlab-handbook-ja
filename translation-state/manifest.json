@@ -21165,6 +21165,76 @@
       "translated_at": "2026-05-09T17:22:11Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "ce0b59eecebca0af9b1da3c1ae9538bf2b1e2c28eeccf356938c37eff63ca548"
+    },
+    "content/handbook/security/policies_and_standards/password-standard.md": {
+      "path": "content/handbook/security/policies_and_standards/password-standard.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "3ae759a3228ea2e8c024aa523811146acc9fe015f8f04a8abf617c739dc492d9"
+    },
+    "content/handbook/security/policies_and_standards/physical-security-standard-for-company-assets.md": {
+      "path": "content/handbook/security/policies_and_standards/physical-security-standard-for-company-assets.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "8a0df29e220c508181cd6e5da9b26995c5814cfe648d4aef7e93f1d1b33b4a70"
+    },
+    "content/handbook/security/policies_and_standards/records-retention-deletion.md": {
+      "path": "content/handbook/security/policies_and_standards/records-retention-deletion.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c09e9f8096877d4f694ac4d9fba74bdaf4fe4873df7eb38c92982a40e9bf31c7"
+    },
+    "content/handbook/security/policies_and_standards/security-logging-standard.md": {
+      "path": "content/handbook/security/policies_and_standards/security-logging-standard.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e1a3dcbc51fc78c4b406ec44014324dbfd51c290912716234f33aba9ee807af0"
+    },
+    "content/handbook/security/policies_and_standards/software-development-lifecycle-standard.md": {
+      "path": "content/handbook/security/policies_and_standards/software-development-lifecycle-standard.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "567660a3e1805640a42e54cd168bdab52c7e4b99e5fa4e972e73a49c6f1ce7a1"
+    },
+    "content/handbook/security/policies_and_standards/token-management-standard.md": {
+      "path": "content/handbook/security/policies_and_standards/token-management-standard.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "6fa18a72023c63f0eacf0dfa7db94766aca58b38c78b31d726e8e16fcdfce7ec"
+    },
+    "content/handbook/security/planning/_index.md": {
+      "path": "content/handbook/security/planning/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b9eedb89ba14875974de818f2fd5ad74f980dc47ad9d8e2ab0b24dd2e5d3b785"
+    },
+    "content/handbook/security/planning/security-development-deployment-requirements.md": {
+      "path": "content/handbook/security/planning/security-development-deployment-requirements.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1091c7f3290f13347eded4e1d807ccfd7de77399229e1726b8fded7974809d4a"
+    },
+    "content/handbook/security/identity/_index.md": {
+      "path": "content/handbook/security/identity/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "96edbf2b130e4dbc555f976531309ffb99c48904196a04a78791274abb9e4735"
+    },
+    "content/handbook/security/identity/platform/_index.md": {
+      "path": "content/handbook/security/identity/platform/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "79fcc286a4ee30051b4392b84e4c599776ccbdd62d55fba1d99abe1ea4284976"
     }
   }
 }
