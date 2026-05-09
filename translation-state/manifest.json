@@ -17148,6 +17148,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "2a13638facf8e99e4880251b72611a6fca3c16282b27d210cde377b0f015395a"
     },
+    "content/handbook/support/workflows/cost-optimizations-with-cloud-instances.md": {
+      "path": "content/handbook/support/workflows/cost-optimizations-with-cloud-instances.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "04822f1a69d583d0782211673884e9b8cfcc27556df59f3fc02fab73620a7600"
+    },
+    "content/handbook/support/workflows/customer-emergency-retro.md": {
+      "path": "content/handbook/support/workflows/customer-emergency-retro.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bce0cb99992224bbbadacc79a6ca824bf23d11348496c5a2a8765d8599f9408d"
+    },
+    "content/handbook/support/workflows/customer_calls.md": {
+      "path": "content/handbook/support/workflows/customer_calls.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3326f4e4dd0d38d9a693d92fa5f99eb73835ba6e0e686a7e8e44f908c96d476e"
+    },
+    "content/handbook/support/workflows/customer_emergencies_workflows.md": {
+      "path": "content/handbook/support/workflows/customer_emergencies_workflows.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cea58900d12b60ea48373ca79399dc2dfbd3ad147424ad9e745535dc17a13d0e"
+    },
+    "content/handbook/support/workflows/data_handling.md": {
+      "path": "content/handbook/support/workflows/data_handling.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4f5519c0b9fd9bda864b6fb3ef88cee8b6ce578c544df79deedf8ce6e7143306"
+    },
+    "content/handbook/support/workflows/data_processing_addendums.md": {
+      "path": "content/handbook/support/workflows/data_processing_addendums.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c29d991c5e84010eaefea4294a066fbb8b6d8cd29f93152a8ec0cea2c040f7ab"
+    },
+    "content/handbook/support/workflows/debugging_ldap.md": {
+      "path": "content/handbook/support/workflows/debugging_ldap.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "000478a08bb4b694c7d9741592ee8724d42430dd77af7c20bfd01bf86ff1a74d"
+    },
+    "content/handbook/support/workflows/dedicated.md": {
+      "path": "content/handbook/support/workflows/dedicated.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ef3782149b2d20242a0b69c26777fb5e975e955b9502587af4a4414eaa70f3b"
+    },
+    "content/handbook/support/workflows/dedicated_cmoc.md": {
+      "path": "content/handbook/support/workflows/dedicated_cmoc.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ebcde46b71a7247dc4f9a18b7977a199da0d349da158a36b4ae2a86b9e361f4e"
+    },
+    "content/handbook/support/workflows/dedicated_instance_health.md": {
+      "path": "content/handbook/support/workflows/dedicated_instance_health.md",
+      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
+      "translated_at": "2026-05-08T20:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c8f75b8f545177285ef2db451243ae2b6b6302b6ca18d8068ce1b136ea711c1c"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
