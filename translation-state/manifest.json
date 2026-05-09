@@ -21095,6 +21095,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "fb028639ee314b36b55c662dd7dc4b66cad88699485f3e8c3c7f07c211b75039"
+    },
+    "content/handbook/security/product-security/infrastructure-security/_index.md": {
+      "path": "content/handbook/security/product-security/infrastructure-security/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:22:11Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "522d9bddb85c757f9350a69567b3edfc2e366576fb3f68f500ebe854b974c99a"
+    },
+    "content/handbook/security/product-security/infrastructure-security/issue-lifecycle.md": {
+      "path": "content/handbook/security/product-security/infrastructure-security/issue-lifecycle.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:22:11Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "dd5e0b5abc5648ecb6c1565a90c61595b41267e810c9b558f0e4973ddda29dcd"
+    },
+    "content/handbook/security/product-security/infrastructure-security/teleport/_index.md": {
+      "path": "content/handbook/security/product-security/infrastructure-security/teleport/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:22:11Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "47c5db8b1d013a4a6bfbdab104e95534fad396068fadefd60f64c0c5f0a94311"
+    },
+    "content/handbook/security/product-security/infrastructure-security/metrics/capacity.md": {
+      "path": "content/handbook/security/product-security/infrastructure-security/metrics/capacity.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:22:11Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "80cb467430edaab894d959936dcb47d51741ec14e11b62d4498ebb17cb3f62c6"
+    },
+    "content/handbook/security/product-security/data-security/_index.md": {
+      "path": "content/handbook/security/product-security/data-security/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:22:11Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "edcb524845b77737db4ea6d5b337c03ba8f1ac43f03aa1ecd1ee4cfb08443ff5"
+    },
+    "content/handbook/security/product-security/application-security/runbooks/vulnerability-triage.md": {
+      "path": "content/handbook/security/product-security/application-security/runbooks/vulnerability-triage.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:22:11Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b4769691d65cd798fd241bd3b0d2b93b2efb804d7c9a4e7e6926d68436dea37e"
+    },
+    "content/handbook/security/policies_and_standards/_index.md": {
+      "path": "content/handbook/security/policies_and_standards/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:22:11Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9491a22acc2271cd587995495018d19c8e6573b8bd947e8033a5fb72f80b088a"
+    },
+    "content/handbook/security/policies_and_standards/cryptographic-standard.md": {
+      "path": "content/handbook/security/policies_and_standards/cryptographic-standard.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:22:11Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "fea152d88150ff1ea7f1295900259237149f9713bf5cf96828e430734074af44"
+    },
+    "content/handbook/security/policies_and_standards/data-classification-standard.md": {
+      "path": "content/handbook/security/policies_and_standards/data-classification-standard.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:22:11Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "01e0bbb6f7a37edcccd6c6f4f8241a7efb4d920abbbe08119158acdddf69cefc"
+    },
+    "content/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements.md": {
+      "path": "content/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T17:22:11Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ce0b59eecebca0af9b1da3c1ae9538bf2b1e2c28eeccf356938c37eff63ca548"
     }
   }
 }
