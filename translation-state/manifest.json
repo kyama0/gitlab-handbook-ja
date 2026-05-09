@@ -20885,6 +20885,76 @@
       "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "2a5ee65af2660d498bc8b448d83ee6a8ff1cc8e7204bad4a06dd8c9dd8068e55"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/holiday-coverage.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/holiday-coverage.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c884f4e228bffa4e113b2b7cf3a4f5c2211bc748d4f62d9e2118c355d74cf24a"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/investigating-package-hunter-findings.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/investigating-package-hunter-findings.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "664d9400e7b8eb4a158eaa16b10a3e3dc687991386120bae853d3503f3a6ed64"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/jihu-contribution-merge-monitor-reports.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/jihu-contribution-merge-monitor-reports.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ae15463a79c0bd3942c14bb0c85c0bbe8e5dd55ab57d191829d92fc376cafcdd"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/local-setup.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/local-setup.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "403272eee9cf94a0ef52d26c540c123ec2c6915f310c669bddf4b881b1a5cae5"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/review-process.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/review-process.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f75faaeeaac5246eb247a5fad5b966bbe604e27dde5c921acab1a493998900a8"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/scw-engagement-plan.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/scw-engagement-plan.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "bcbe67dcb6715014f3bf71e032308d6c64930f00d8ef7ddb63864933ba8c53fe"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/security-dashboard-review.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/security-dashboard-review.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "3fb2f03662827f24d8fc220fbf8b14dc0a8f8c3c8d912e77b56b07e5c537f3be"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/threat-modeling.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/threat-modeling.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5f45f07c13607dbd6a44ea27668e99dfcbfca0ea09fb2c5d6e62a83ec53e1f9f"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/triage-rotation.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/triage-rotation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a36f10fe65668c93b106af63600516c76e6a6091c45693834734b198af5df6f4"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/metrics/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "fce4c2fa7485c0a25587a567d63156ea5b839fa6fc87bad2591c0c1013f36a05"
     }
   }
 }
