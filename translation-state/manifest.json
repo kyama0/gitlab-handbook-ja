@@ -19205,6 +19205,76 @@
       "translated_at": "2026-05-08T18:13:56Z",
       "model": "claude-opus-4-7",
       "input_hash": "6934d73c74978c11b431326e30fbd866458bdaa133741fd4fece8884a1c8fad3"
+    },
+    "content/handbook/solutions-architects/sa-practices/sa-retrospective-feedback.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/sa-retrospective-feedback.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "548466219f29c48101634daa3b71a7087d11c5f704f3cce6c2b1302117569311"
+    },
+    "content/handbook/solutions-architects/sa-practices/workshops.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/workshops.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "90f62dc04ce994c54eddce11ab06ea75f16f7af3d93c801126a7619da8294712"
+    },
+    "content/handbook/solutions-architects/sa-practices/whiteboard-based-facilitation/_index.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/whiteboard-based-facilitation/_index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c72e8ae9e1312316eb53cf62698225a72a23e5a8a9e200538254d6889338fa4c"
+    },
+    "content/handbook/solutions-architects/sa-practices/value-stream-discovery/index.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/value-stream-discovery/index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f40e50c547c784460cecd6c0e234c472a79196e5fb5733b245e25b0a430472b9"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/_index.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/_index.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "88f0d5c5806bbb3d5973e3e7c5352feb007cf598c511c90256e229373b9a9c6a"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-cadences.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-cadences.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1d80204f030179badb956795d7c491705e97f2d5e915d2629413cc3661c67e6d"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-collateral.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-collateral.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "6a643867fedd3c3af12f3fd181eb11b36f2e12e47ac2ed00fcb5db4a165483c3"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-customer-feedback.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-customer-feedback.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2db29e048d73c5a53c7e3a304d783564750b3ed5aa4554d6fe322527d5a6c8ed"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-engage-pm.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-engage-pm.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ee4c72e0939624296292d1ca202c750823b7b59134d03cc0c84c6a379d138f82"
+    },
+    "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-operations.md": {
+      "path": "content/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-operations.md",
+      "upstream_sha": "fb150f3a4f831172cf23c7f0d75b0d6310a68972",
+      "translated_at": "2026-05-08T18:59:21Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "37b7ea24514151f97c4ea95fb1e88e641c2c045ef108699c96c08d108ccf31cf"
     }
   }
 }
