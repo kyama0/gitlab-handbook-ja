@@ -19905,6 +19905,76 @@
       "translated_at": "2026-05-09T03:09:44Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "97d25c1728e46020640d4d199e23d0d17adaf694b5354e3d445c2f36fb590fe6"
+    },
+    "content/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com.md": {
+      "path": "content/handbook/security/security-operations/trustandsafety/intellectual-property-on-gitlab-com.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T16:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "d62e10e2e13f6d390e7eb5d34d22df1ee207ebb7e6bdd7cb91c9220f31d88c2b"
+    },
+    "content/handbook/security/security-operations/threat-intelligence/_index.md": {
+      "path": "content/handbook/security/security-operations/threat-intelligence/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T16:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "6f23f9cfdd9f6101c6346ec6e998e6cd87269532afd27cf6abe6f8aadaed1d52"
+    },
+    "content/handbook/security/security-operations/sirt/_index.md": {
+      "path": "content/handbook/security/security-operations/sirt/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T16:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "a5f749224c07ff67381069baf9d4a341d72079da5b9c2f33e17ab94fe74b5392"
+    },
+    "content/handbook/security/security-operations/sirt/engaging-security-on-call.md": {
+      "path": "content/handbook/security/security-operations/sirt/engaging-security-on-call.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T16:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "6693ba927e83cd86dbcfc0f8e7547f46933f238707a666c3038dad4df44d7985"
+    },
+    "content/handbook/security/security-operations/sirt/sec-incident-response.md": {
+      "path": "content/handbook/security/security-operations/sirt/sec-incident-response.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T16:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "301ff73a3d06b6d771c5d72f8e2594e7c820286228bdcf99d50bc10e526864c4"
+    },
+    "content/handbook/security/security-operations/sirt/security-incident-communication-plan.md": {
+      "path": "content/handbook/security/security-operations/sirt/security-incident-communication-plan.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T16:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "379749fa7477e0ae622aebf03f70ff4961c96ebd1306e7fadcf25a7f0a28fa4f"
+    },
+    "content/handbook/security/security-operations/sirt/security-shadow-security-operations.md": {
+      "path": "content/handbook/security/security-operations/sirt/security-shadow-security-operations.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T16:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "09c3471f660d819e6b7eb023b7f401ae9202fa42ec629fcac5ed7ba7c22b2bc7"
+    },
+    "content/handbook/security/security-operations/sirt/severity-matrix.md": {
+      "path": "content/handbook/security/security-operations/sirt/severity-matrix.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T16:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "135279d382b70a522f54d220b0f9ee3207f6d37eb3e36954a86ccaec852b8b13"
+    },
+    "content/handbook/security/security-operations/signals-engineering/_index.md": {
+      "path": "content/handbook/security/security-operations/signals-engineering/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T16:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "e9a65196db3854d922a2c467c7f454ccf5ebea65e9a1b656ae6181349a076567"
+    },
+    "content/handbook/security/security-operations/security-logging/_index.md": {
+      "path": "content/handbook/security/security-operations/security-logging/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T16:00:00Z",
+      "model": "claude-opus-4-7-1m",
+      "input_hash": "dcd1969c429b58b6ffe62342d805e377a0233f1c67eba689222c5b6d53bb3f64"
     }
   }
 }
