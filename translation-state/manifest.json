@@ -19415,6 +19415,76 @@
       "translated_at": "2026-05-09T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "84dffbd984c451ad0788cb3b2eef8677fdc1ccfb1ac63f4ae1a36e8d0e8c04bb"
+    },
+    "content/handbook/solutions-architects/processes/technical-win.md": {
+      "path": "content/handbook/solutions-architects/processes/technical-win.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fd0ddf5f417b37f4b6494172b9c28b821c92f516c1d2f6117d83c5a580a76de4"
+    },
+    "content/handbook/solutions-architects/processes/ecosystem-sa/esa-operating-rhythm.md": {
+      "path": "content/handbook/solutions-architects/processes/ecosystem-sa/esa-operating-rhythm.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2ea2119b3108df83483c53ae96cde25521a4981855c2999cc849068a888b3dff"
+    },
+    "content/handbook/solutions-architects/processes/customer-success-plan/_index.md": {
+      "path": "content/handbook/solutions-architects/processes/customer-success-plan/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "363958d940bcf0e85010c9dd3a47d646039b067ae630a1eedfdd1688429fe833"
+    },
+    "content/handbook/solutions-architects/processes/activity-capture/_index.md": {
+      "path": "content/handbook/solutions-architects/processes/activity-capture/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "05d31fec6e47243666622c03dd0c3b84ddfdef18903fa9b6ace34e41c39eae2b"
+    },
+    "content/handbook/solutions-architects/processes/activity-capture/activity-logging.md": {
+      "path": "content/handbook/solutions-architects/processes/activity-capture/activity-logging.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7cb7237d5188be05d3b3780b2d159a7f1ab74e33e3207e66486fc52f77c260e8"
+    },
+    "content/handbook/solutions-architects/processes/activity-capture/customer-success-plans.md": {
+      "path": "content/handbook/solutions-architects/processes/activity-capture/customer-success-plans.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a1f364e7b53cca8c060f3e74a7cf875f3f5c7c7580a095e27714c62d571effef"
+    },
+    "content/handbook/solutions-architects/processes/activity-capture/email-logging.md": {
+      "path": "content/handbook/solutions-architects/processes/activity-capture/email-logging.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "915e0f19986a7c23851a3a169757d2b646a567d0a5db911f5451f09ebc6f13a9"
+    },
+    "content/handbook/solutions-architects/processes/activity-capture/sfdc-logging.md": {
+      "path": "content/handbook/solutions-architects/processes/activity-capture/sfdc-logging.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9785e588de9642b36ed2c2fedfaabb1730f46d3afb26ae7c8dd8a85f77b01c68"
+    },
+    "content/handbook/solutions-architects/playbooks/_index.md": {
+      "path": "content/handbook/solutions-architects/playbooks/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "87aeddc6811ccb954c54a037170bcdfa41f7880a56bedcf64ad4ac63aef1af02"
+    },
+    "content/handbook/solutions-architects/playbooks/gitlab-dedicated-prospects.md": {
+      "path": "content/handbook/solutions-architects/playbooks/gitlab-dedicated-prospects.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ce47df836371e7b483910cc9551b4fe13903fbfda4bf13003f25cee91dcdb025"
     }
   }
 }
