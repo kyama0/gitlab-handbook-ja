@@ -20255,6 +20255,76 @@
       "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "f28f291efad419fc59df5dd1becf94c54f5de1c7c34ee230595f102f0760feed"
+    },
+    "content/handbook/security/security-assurance/governance/sec-training.md": {
+      "path": "content/handbook/security/security-assurance/governance/sec-training.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a3fa4519e3409573f711128bb98a3760bd9c57f432ec02830d1025767cd1f8f3"
+    },
+    "content/handbook/security/security-assurance/governance/security-assurance-automation.md": {
+      "path": "content/handbook/security/security-assurance/governance/security-assurance-automation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ce67c22adf0d45e829d160cd1a745bd0f4595bd2d95c10325f6bc4516229b9b9"
+    },
+    "content/handbook/security/security-assurance/governance/security-training.md": {
+      "path": "content/handbook/security/security-assurance/governance/security-training.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f974303791a8b06e559181a0262eb479048631a8705ca4a8ee2553e659f6ac25"
+    },
+    "content/handbook/security/security-assurance/field-security/_index.md": {
+      "path": "content/handbook/security/security-assurance/field-security/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a9ddff8b6da887fc509cfe32069adc4f0b8071d5bfeb4eb32fcb5a59f0026fbd"
+    },
+    "content/handbook/security/security-assurance/field-security/answerbase_quality_guide.md": {
+      "path": "content/handbook/security/security-assurance/field-security/answerbase_quality_guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f5e889f51cb2b0b36ecc60dc62b1cee29ec60f8e198a97d230494229aa9e5fd3"
+    },
+    "content/handbook/security/security-assurance/field-security/customer-security-assessment-process.md": {
+      "path": "content/handbook/security/security-assurance/field-security/customer-security-assessment-process.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2a35a1ddc98e71f88ff903033b3dc5d632cfb759eb46063cd1a2dceebda2e4a9"
+    },
+    "content/handbook/security/security-assurance/field-security/evangelism.md": {
+      "path": "content/handbook/security/security-assurance/field-security/evangelism.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9338d4e787bbe4cb07f33a2967d6581c8bb8ea96e85bbcb3cc403043cbcf0476"
+    },
+    "content/handbook/security/security-assurance/field-security/field-security-research-program.md": {
+      "path": "content/handbook/security/security-assurance/field-security/field-security-research-program.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d7b1614075e7d3a1d9742d8cc672c8e1dc99cb4fdef653faa6c0137eee18f068"
+    },
+    "content/handbook/security/security-assurance/field-security/field-security-rfp.md": {
+      "path": "content/handbook/security/security-assurance/field-security/field-security-rfp.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c19bdca7c84e3841c1293bdc51b1de0a14ddacbe66a99c5e59d935c32aa985f3"
+    },
+    "content/handbook/security/security-assurance/field-security/field-security-study.md": {
+      "path": "content/handbook/security/security-assurance/field-security/field-security-study.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T21:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "51bd76c38e924003db18c4b1810cccf187a2506ec1217954850911b66680858b"
     }
   }
 }
