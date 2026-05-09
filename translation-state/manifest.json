@@ -21025,6 +21025,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "52a5eeb901effe61fbc0c9ae0be8489f13db61a40635aef718da7e12328556fa"
+    },
+    "content/handbook/security/product-security/psirt/runbooks/cvss-calculation.md": {
+      "path": "content/handbook/security/product-security/psirt/runbooks/cvss-calculation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4fabe88cd9b397dad7df236bb9355fcc5624d3102d24b2362e0c156455f17d6f"
+    },
+    "content/handbook/security/product-security/psirt/runbooks/hackerone-process.md": {
+      "path": "content/handbook/security/product-security/psirt/runbooks/hackerone-process.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c49b757c10b7fd4da07205819ca7da08c38f28827e7b1e111e10b405c1ff46a6"
+    },
+    "content/handbook/security/product-security/psirt/runbooks/handling-s1p1.md": {
+      "path": "content/handbook/security/product-security/psirt/runbooks/handling-s1p1.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "25401cd61e3444756f5b086e8a69f0ff082deca1f1bd95e803ac8c051a6ead9c"
+    },
+    "content/handbook/security/product-security/psirt/runbooks/holiday-coverage.md": {
+      "path": "content/handbook/security/product-security/psirt/runbooks/holiday-coverage.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9f5bfabb2b17e0250abf8d04c9b228af0bbde3bc9831ec32dc766f3a3b069848"
+    },
+    "content/handbook/security/product-security/psirt/runbooks/psirt-case-lifecycle.md": {
+      "path": "content/handbook/security/product-security/psirt/runbooks/psirt-case-lifecycle.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f4616b64fcdba51ba0f6b57bb8ee241299e17ccd03999605857ff6e2509fb2fa"
+    },
+    "content/handbook/security/product-security/psirt/runbooks/security-engineer.md": {
+      "path": "content/handbook/security/product-security/psirt/runbooks/security-engineer.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "029e2b1a2392b0a2d5325722a48f700224a0e1fb97fe2f17cf9f6dc6d20da06b"
+    },
+    "content/handbook/security/product-security/psirt/runbooks/unintended-vuln-disclosure.md": {
+      "path": "content/handbook/security/product-security/psirt/runbooks/unintended-vuln-disclosure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cb482ae24b6e6af5aeac772e219a9805acc23429e20d603ebdcd8d7d03451cbd"
+    },
+    "content/handbook/security/product-security/psirt/runbooks/upstream-security-patches.md": {
+      "path": "content/handbook/security/product-security/psirt/runbooks/upstream-security-patches.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "10d13551501d5ca2963aa00d1f9f52cda8e941e3ab1423b4e373d12171f0d7e6"
+    },
+    "content/handbook/security/product-security/psirt/runbooks/verifying-security-fixes.md": {
+      "path": "content/handbook/security/product-security/psirt/runbooks/verifying-security-fixes.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "68d4090bd4c1e359c248b98779e1163e60c361e32ae6175c7428cb82de0b4851"
+    },
+    "content/handbook/security/product-security/psirt/runbooks/working-with-sirt.md": {
+      "path": "content/handbook/security/product-security/psirt/runbooks/working-with-sirt.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "fb028639ee314b36b55c662dd7dc4b66cad88699485f3e8c3c7f07c211b75039"
     }
   }
 }
