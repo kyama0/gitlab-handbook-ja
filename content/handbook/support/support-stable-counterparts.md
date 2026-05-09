@@ -1,5 +1,5 @@
 ---
-title: Support Stable Counterparts
+title: サポートステーブルカウンターパート
 description: Support Stable Counterpart の役割と関連する期待・目標の概要。
 upstream_path: /handbook/support/support-stable-counterparts/
 upstream_sha: 18c3e90de89449f1cbbf92c21776a3ea7899476c
