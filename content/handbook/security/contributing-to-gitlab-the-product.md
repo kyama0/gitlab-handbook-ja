@@ -34,6 +34,6 @@ stale: false
 
 セキュリティチームは Community Outreach チームと協力し、関連する場合にセキュリティレビューが実施されることを保証します。貢献の詳細については、[Contribute to GitLab](https://about.gitlab.com/community/contribute/) ページを参照してください。
 
-## パッケージ署名{#package-signing}
+## パッケージ署名 {#package-signing}
 
 当社が出荷するパッケージは、[GitLab ドキュメント](https://docs.gitlab.com/ee/administration/package_information/signed_packages.html) に記載されているとおり、GPG キーで署名されています。鍵ペアを安全な方法で作成・保管するプロセスは、[runbooks](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/packaging/manage-package-signing-keys.md) に記載されています。Distribution チームがパッケージ署名キーの更新を担当します。GitLab における鍵の場所とアクセスに固有の詳細については、Google Drive 上の社内向け Google ドキュメント "Package Signing Keys at GitLab" を参照してください。
