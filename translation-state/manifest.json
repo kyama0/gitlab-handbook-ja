@@ -20815,6 +20815,76 @@
       "translated_at": "2026-05-09T12:50:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "af25d734573341962ab7450ff153d49d452d91af83c366a304d4b5aed8cb6adb"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/reproducible-builds.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/reproducible-builds.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "10f20f77cc9cb239b11d95c68605f80838e9c5ed5251518920790fd56c6e4556"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/reproducible-vulnerabilities.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/reproducible-vulnerabilities.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "269a699bdcd11b5f8d984df486cf870414dd7f61c9c405a91bf3dac9e47edfbe"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/vulnerability-management.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/vulnerability-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5334419feb5990045f7f7c3b2ee6b8d25e7037156886f2e4d1b8a23b382f7308"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "078c840578995989176935936bde1004b1b5df6feb86c0e8493b161919be0c4c"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/howto.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/threat-modeling/howto.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "864d82ff0a9ec788f990627802d7f1faa0dd9661ebb31efd69bab6cbeb02affa"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "257399a57e7c9642061c3ca75afcc8b62bd0489d3738aa2426212e826d920c8b"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/bug-hunting-day.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/bug-hunting-day.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4123a597f2fc7c288fa6ed2d923ea3ec5d30f6df9ebfcf9fa104f385a7e34aee"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/dependency-review-guidelines.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/dependency-review-guidelines.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e9f6f5ed378db1d1c9ac050fd205fd21dc1c5ae9aee04ecc7247de0fb9dcd143"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/faq.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/faq.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "44274a866c0a63a29deee2608c22389c76817940388327d83d1fe7f120547034"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/federal-appsec-container-scanning-review.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/federal-appsec-container-scanning-review.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T12:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2a5ee65af2660d498bc8b448d83ee6a8ff1cc8e7204bad4a06dd8c9dd8068e55"
     }
   }
 }
