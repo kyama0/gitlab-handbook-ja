@@ -59,7 +59,7 @@ stale: false
 - アプリケーションセキュリティアーキテクチャ（旧称「セキュリティアーキテクチャ」）は[セキュリティプラットフォームとアーキテクチャ](../../security-platforms-architecture/_index.md)内にあり、アプリケーション層の関心事に焦点を当てます
 - インフラストラクチャセキュリティアーキテクチャは[インフラストラクチャセキュリティ](../../infrastructure-security/_index.md)内にある新しい機能です
 
-## セキュリティアーキテクチャ要件
+## セキュリティアーキテクチャ要件 {#security-architecture-requirements}
 
 ### アプリケーションセキュリティ
 
