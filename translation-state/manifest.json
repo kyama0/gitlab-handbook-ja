@@ -16476,26 +16476,229 @@
       "model": "claude-opus-4-7",
       "input_hash": "ebb3e4a36116fddfde2cd2ad19f80fbaccd4a1a5777234c6840d079dcafe19ef"
     },
-    "content/handbook/values/_index.md": {
-      "path": "content/handbook/values/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
+    "content/handbook/tools-and-tips/_index.md": {
+      "path": "content/handbook/tools-and-tips/_index.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "4cc995ac89293b07dfa4061d70ebcf334ecd989f0239cf0ca9acd0e6c742ca57"
+      "input_hash": "0c796c956f6b6c92f8f3d43a7638e77994447216488913bf8e0d1bab67ebdd1f"
     },
-    "content/handbook/upstream-studios/_index.md": {
-      "path": "content/handbook/upstream-studios/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
+    "content/handbook/tools-and-tips/ai/_index.md": {
+      "path": "content/handbook/tools-and-tips/ai/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "87636fb092b79ca9122d7711a36a6ed4221537f11be8fb7fda8f5b8a7d62994d"
+      "input_hash": "75c66ef2e6afdbff1398d680106648f1aedf7ed9fe95b47a3dedd0ef0000ca12"
     },
-    "content/handbook/upstream-studios/vision-strategy/_index.md": {
-      "path": "content/handbook/upstream-studios/vision-strategy/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
+    "content/handbook/tools-and-tips/ai/claude.md": {
+      "path": "content/handbook/tools-and-tips/ai/claude.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "47855f5c06dbff45da994e914becacb9dba10e00f1c34198f5670b1924f9df73"
+      "input_hash": "c96df0244f8520912700b491d19de53dff49e40b0203aba37028ac37034c7249"
+    },
+    "content/handbook/tools-and-tips/ai/gitlab-duo.md": {
+      "path": "content/handbook/tools-and-tips/ai/gitlab-duo.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "863ae36f2635dfa0f86c1158ab24eb173dfbf2358536d339db8720fa9f83e98e"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "99bd50f2fa423e80a6c7703dc4f18f135bd03e4a3d03c4f8a9754ebde8d1a6bc"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/emacs.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/emacs.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ff4e395ad5dca8b1537485b006c32c6a5238ba2170bbecb709a20bab11a93b7"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/gitlab-web-ide.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/gitlab-web-ide.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "763c3860d1c9020ea84c34780082dbf5fea95e90676e354ffbbc5b4f0aab81bf"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9cca9ce5a6d0aa4dac3ae978839e2a675049a67cbd999d695698bc2b47f0e72b"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/code-inspection/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/code-inspection/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7cae242547c725186870564b5058127ba9dddb0d466555843f9dcf783698abc8"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/code-inspection/why-are-there-noinspection-comments.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/code-inspection/why-are-there-noinspection-comments.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1e27d4f7da9632111ccc93e63381cef06abfa201c29832e90ea2bfe03ff61c42"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5fcf3c225e9ed200ca9b534dc3c4076bb9da149c4382cb8c266a006bdb0cc5ce"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/goland.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/goland.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f38217903b8407b19079c89e54ee59ec085c10534e801867988fa2e61fa78bea"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/rubymine.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/rubymine.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e8f09e6e4a78e63f7532ce8e89888cffa1adc257f2870432c1f3c32a4eeb60a8"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/webstorm.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/individual-ides/webstorm.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "00e7b9b8d8c08c4fa853b1aa92539115522f34b3a08a5b86cd7b25625cf84916"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/licenses/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/licenses/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "57f95d1fc3b91078230870e714f7303df8daf8c431c5599982758bc4c87f5762"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/setup-and-config/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/setup-and-config/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ed4545d22e5c0e2bbadc11d6b9f91d821d8afdb936a96814fc603c190c1ec519"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/tracked-jetbrains-issues/_index.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/tracked-jetbrains-issues/_index.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "21e74538db35d046a2d5251bba6040776ade8236c5f9dbc62839e7564c8b4b66"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/sublime-text.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/sublime-text.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "40f7f754892cf7377ff5cf9154bffa257199a531d969e6bcb2de4af8227da1c2"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/vim.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/vim.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "237c1765a60ac1793ddc14361bfb1cba22f598c0f108abe333b95f5c9d7e2c5e"
+    },
+    "content/handbook/tools-and-tips/editors-and-ides/visual-studio-code.md": {
+      "path": "content/handbook/tools-and-tips/editors-and-ides/visual-studio-code.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f2653e3f92b8867b9be18bed04fbf0b90cef2b2ecd57e67a0ac3343c49ae1416"
+    },
+    "content/handbook/tools-and-tips/git.md": {
+      "path": "content/handbook/tools-and-tips/git.md",
+      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
+      "translated_at": "2026-05-07T22:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9b738b4e68a831b2b97b8dfd7fd4898f3429d420cd55b47c97223b4587443c7d"
+    },
+    "content/handbook/tools-and-tips/linux.md": {
+      "path": "content/handbook/tools-and-tips/linux.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b2b959abb1ae0018b7c603812de9ab29eb6d922c155b30378842848a6b2998b8"
+    },
+    "content/handbook/tools-and-tips/mac.md": {
+      "path": "content/handbook/tools-and-tips/mac.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4fcc86d0aff07fa35381e69d941b95e296209f3e9282984b7737b2bc476b1b22"
+    },
+    "content/handbook/tools-and-tips/mermaid.md": {
+      "path": "content/handbook/tools-and-tips/mermaid.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "af2b33ed99cb9439188a3b9e3ed530bfec1100185133c258e37ba7032f2085cb"
+    },
+    "content/handbook/tools-and-tips/onepassword-cli.md": {
+      "path": "content/handbook/tools-and-tips/onepassword-cli.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7c6a8b8c944551cf4eaeec97dce6c5f7a07387b2e99951f539d5aaf16bfe9d99"
+    },
+    "content/handbook/tools-and-tips/other-apps.md": {
+      "path": "content/handbook/tools-and-tips/other-apps.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9dcd6aed3a02e71d5bf7c674b25e1947659bb73fa5f6e16b5a525854a4408d0b"
+    },
+    "content/handbook/tools-and-tips/personal-vpn.md": {
+      "path": "content/handbook/tools-and-tips/personal-vpn.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "757784d4f3daadc3195db6747b33e0eaaa5d4fb98c22bdc80e263ac2fa584e96"
+    },
+    "content/handbook/tools-and-tips/rubocop.md": {
+      "path": "content/handbook/tools-and-tips/rubocop.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "aced50b5f73bac4eaa9f00e1b68f31639153ed84afe085bf22a20afbdbd3c0f8"
+    },
+    "content/handbook/tools-and-tips/searching/_index.md": {
+      "path": "content/handbook/tools-and-tips/searching/_index.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1c3fff6915cb848344b4753418b1bc5c8ae26211d41b65de3267ad7c0c49bff5"
+    },
+    "content/handbook/tools-and-tips/searching/gitlab-keyword-search-firefox-bookmarks.md": {
+      "path": "content/handbook/tools-and-tips/searching/gitlab-keyword-search-firefox-bookmarks.md",
+      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
+      "translated_at": "2026-05-08T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "61e8edfe8a434abdec10c127f73d53d6965a5b62105d8bb1f5e976ffa5674cd1"
+    },
+    "content/handbook/tools-and-tips/slack.md": {
+      "path": "content/handbook/tools-and-tips/slack.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "10e2c86c8b5f7547173644ce73cf4e2a99c12737bf64958249edc5d28559b0a4"
+    },
+    "content/handbook/tools-and-tips/zoom.md": {
+      "path": "content/handbook/tools-and-tips/zoom.md",
+      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
+      "translated_at": "2026-05-07T15:33:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "af7d8d3cda89a3b5288e5ed004e490746b7dc2a012202e2ec3a39a80c6fdb937"
     },
     "content/handbook/total-rewards/_index.md": {
       "path": "content/handbook/total-rewards/_index.md",
@@ -16504,54 +16707,12 @@
       "model": "claude-opus-4-7",
       "input_hash": "5379feb4cd434b92f512618122a57d970f7ea77a86d772949f1357c4edede3cf"
     },
-    "content/handbook/total-rewards/incentives.md": {
-      "path": "content/handbook/total-rewards/incentives.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "29c23f75c4d69fe0eb31ca222494df32984147c0cec3382073c08883a515a8de"
-    },
-    "content/handbook/total-rewards/stock-options.md": {
-      "path": "content/handbook/total-rewards/stock-options.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "ce62cd564e06a522d5f64eb11e534f4d378ff62f36b6c724ea7f084be1b6d606"
-    },
-    "content/handbook/total-rewards/compensation/_index.md": {
-      "path": "content/handbook/total-rewards/compensation/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "3384141e5c1fb956522d5c627df2a5350cb59d720661a9342f7319a1f1dbad7e"
-    },
-    "content/handbook/total-rewards/compensation/compensation-review-cycle/_index.md": {
-      "path": "content/handbook/total-rewards/compensation/compensation-review-cycle/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "54b0adad0897f59da2dd191a35c18eaa607069d9debbe97686840363abc4ebde"
-    },
     "content/handbook/total-rewards/benefits/_index.md": {
       "path": "content/handbook/total-rewards/benefits/_index.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
       "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "93fe96ec49c01e94e5bda1c999d2cec9b45c253870e045767fa9f96438125062"
-    },
-    "content/handbook/total-rewards/benefits/modern-health.md": {
-      "path": "content/handbook/total-rewards/benefits/modern-health.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "246f22b96e7b0bae695b118e89e71a014b69cc29ad67343d9e39b92d19ba7635"
-    },
-    "content/handbook/total-rewards/benefits/parental-leave-toolkit.md": {
-      "path": "content/handbook/total-rewards/benefits/parental-leave-toolkit.md",
-      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
-      "translated_at": "2026-05-07T13:21:11Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b9a0f392ec5f954de59d53e965a42930f05c0323755449fb5917377167f95a1a"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/_index.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/_index.md",
@@ -16672,159 +16833,68 @@
       "model": "claude-opus-4-7",
       "input_hash": "0cc61cb79f32a1f58f781248a6dcd8c9ad3b33167cbb41ba1750d59177ba092c"
     },
-    "content/handbook/tools-and-tips/_index.md": {
-      "path": "content/handbook/tools-and-tips/_index.md",
-      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
-      "translated_at": "2026-05-07T22:45:00Z",
+    "content/handbook/total-rewards/benefits/modern-health.md": {
+      "path": "content/handbook/total-rewards/benefits/modern-health.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "0c796c956f6b6c92f8f3d43a7638e77994447216488913bf8e0d1bab67ebdd1f"
+      "input_hash": "246f22b96e7b0bae695b118e89e71a014b69cc29ad67343d9e39b92d19ba7635"
     },
-    "content/handbook/tools-and-tips/git.md": {
-      "path": "content/handbook/tools-and-tips/git.md",
-      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
-      "translated_at": "2026-05-07T22:45:00Z",
+    "content/handbook/total-rewards/benefits/parental-leave-toolkit.md": {
+      "path": "content/handbook/total-rewards/benefits/parental-leave-toolkit.md",
+      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
+      "translated_at": "2026-05-07T13:21:11Z",
       "model": "claude-opus-4-7",
-      "input_hash": "9b738b4e68a831b2b97b8dfd7fd4898f3429d420cd55b47c97223b4587443c7d"
+      "input_hash": "b9a0f392ec5f954de59d53e965a42930f05c0323755449fb5917377167f95a1a"
     },
-    "content/handbook/tools-and-tips/linux.md": {
-      "path": "content/handbook/tools-and-tips/linux.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
+    "content/handbook/total-rewards/compensation/_index.md": {
+      "path": "content/handbook/total-rewards/compensation/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "b2b959abb1ae0018b7c603812de9ab29eb6d922c155b30378842848a6b2998b8"
+      "input_hash": "3384141e5c1fb956522d5c627df2a5350cb59d720661a9342f7319a1f1dbad7e"
     },
-    "content/handbook/tools-and-tips/mac.md": {
-      "path": "content/handbook/tools-and-tips/mac.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
+    "content/handbook/total-rewards/compensation/compensation-review-cycle/_index.md": {
+      "path": "content/handbook/total-rewards/compensation/compensation-review-cycle/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "4fcc86d0aff07fa35381e69d941b95e296209f3e9282984b7737b2bc476b1b22"
+      "input_hash": "54b0adad0897f59da2dd191a35c18eaa607069d9debbe97686840363abc4ebde"
     },
-    "content/handbook/tools-and-tips/mermaid.md": {
-      "path": "content/handbook/tools-and-tips/mermaid.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
+    "content/handbook/total-rewards/incentives.md": {
+      "path": "content/handbook/total-rewards/incentives.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "af2b33ed99cb9439188a3b9e3ed530bfec1100185133c258e37ba7032f2085cb"
+      "input_hash": "29c23f75c4d69fe0eb31ca222494df32984147c0cec3382073c08883a515a8de"
     },
-    "content/handbook/tools-and-tips/onepassword-cli.md": {
-      "path": "content/handbook/tools-and-tips/onepassword-cli.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
+    "content/handbook/total-rewards/stock-options.md": {
+      "path": "content/handbook/total-rewards/stock-options.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7c6a8b8c944551cf4eaeec97dce6c5f7a07387b2e99951f539d5aaf16bfe9d99"
+      "input_hash": "ce62cd564e06a522d5f64eb11e534f4d378ff62f36b6c724ea7f084be1b6d606"
     },
-    "content/handbook/tools-and-tips/other-apps.md": {
-      "path": "content/handbook/tools-and-tips/other-apps.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
+    "content/handbook/upstream-studios/_index.md": {
+      "path": "content/handbook/upstream-studios/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "9dcd6aed3a02e71d5bf7c674b25e1947659bb73fa5f6e16b5a525854a4408d0b"
+      "input_hash": "87636fb092b79ca9122d7711a36a6ed4221537f11be8fb7fda8f5b8a7d62994d"
     },
-    "content/handbook/tools-and-tips/personal-vpn.md": {
-      "path": "content/handbook/tools-and-tips/personal-vpn.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
+    "content/handbook/upstream-studios/vision-strategy/_index.md": {
+      "path": "content/handbook/upstream-studios/vision-strategy/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "757784d4f3daadc3195db6747b33e0eaaa5d4fb98c22bdc80e263ac2fa584e96"
+      "input_hash": "47855f5c06dbff45da994e914becacb9dba10e00f1c34198f5670b1924f9df73"
     },
-    "content/handbook/tools-and-tips/rubocop.md": {
-      "path": "content/handbook/tools-and-tips/rubocop.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
+    "content/handbook/values/_index.md": {
+      "path": "content/handbook/values/_index.md",
+      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
+      "translated_at": "2026-05-07T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "aced50b5f73bac4eaa9f00e1b68f31639153ed84afe085bf22a20afbdbd3c0f8"
-    },
-    "content/handbook/tools-and-tips/searching/_index.md": {
-      "path": "content/handbook/tools-and-tips/searching/_index.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "1c3fff6915cb848344b4753418b1bc5c8ae26211d41b65de3267ad7c0c49bff5"
-    },
-    "content/handbook/tools-and-tips/searching/gitlab-keyword-search-firefox-bookmarks.md": {
-      "path": "content/handbook/tools-and-tips/searching/gitlab-keyword-search-firefox-bookmarks.md",
-      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "61e8edfe8a434abdec10c127f73d53d6965a5b62105d8bb1f5e976ffa5674cd1"
-    },
-    "content/handbook/tools-and-tips/editors-and-ides/_index.md": {
-      "path": "content/handbook/tools-and-tips/editors-and-ides/_index.md",
-      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "99bd50f2fa423e80a6c7703dc4f18f135bd03e4a3d03c4f8a9754ebde8d1a6bc"
-    },
-    "content/handbook/tools-and-tips/editors-and-ides/emacs.md": {
-      "path": "content/handbook/tools-and-tips/editors-and-ides/emacs.md",
-      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9ff4e395ad5dca8b1537485b006c32c6a5238ba2170bbecb709a20bab11a93b7"
-    },
-    "content/handbook/tools-and-tips/editors-and-ides/gitlab-web-ide.md": {
-      "path": "content/handbook/tools-and-tips/editors-and-ides/gitlab-web-ide.md",
-      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "763c3860d1c9020ea84c34780082dbf5fea95e90676e354ffbbc5b4f0aab81bf"
-    },
-    "content/handbook/tools-and-tips/editors-and-ides/sublime-text.md": {
-      "path": "content/handbook/tools-and-tips/editors-and-ides/sublime-text.md",
-      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "40f7f754892cf7377ff5cf9154bffa257199a531d969e6bcb2de4af8227da1c2"
-    },
-    "content/handbook/tools-and-tips/editors-and-ides/vim.md": {
-      "path": "content/handbook/tools-and-tips/editors-and-ides/vim.md",
-      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "237c1765a60ac1793ddc14361bfb1cba22f598c0f108abe333b95f5c9d7e2c5e"
-    },
-    "content/handbook/tools-and-tips/editors-and-ides/visual-studio-code.md": {
-      "path": "content/handbook/tools-and-tips/editors-and-ides/visual-studio-code.md",
-      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "f2653e3f92b8867b9be18bed04fbf0b90cef2b2ecd57e67a0ac3343c49ae1416"
-    },
-    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/_index.md": {
-      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/_index.md",
-      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9cca9ce5a6d0aa4dac3ae978839e2a675049a67cbd999d695698bc2b47f0e72b"
-    },
-    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/tracked-jetbrains-issues/_index.md": {
-      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/tracked-jetbrains-issues/_index.md",
-      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "21e74538db35d046a2d5251bba6040776ade8236c5f9dbc62839e7564c8b4b66"
-    },
-    "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/setup-and-config/_index.md": {
-      "path": "content/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/setup-and-config/_index.md",
-      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "ed4545d22e5c0e2bbadc11d6b9f91d821d8afdb936a96814fc603c190c1ec519"
-    },
-    "content/handbook/tools-and-tips/slack.md": {
-      "path": "content/handbook/tools-and-tips/slack.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "10e2c86c8b5f7547173644ce73cf4e2a99c12737bf64958249edc5d28559b0a4"
-    },
-    "content/handbook/tools-and-tips/zoom.md": {
-      "path": "content/handbook/tools-and-tips/zoom.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "af7d8d3cda89a3b5288e5ed004e490746b7dc2a012202e2ec3a39a80c6fdb937"
+      "input_hash": "4cc995ac89293b07dfa4061d70ebcf334ecd989f0239cf0ca9acd0e6c742ca57"
     }
   }
 }
