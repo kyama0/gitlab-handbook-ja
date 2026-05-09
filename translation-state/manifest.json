@@ -21375,6 +21375,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "4fd18d85f9f98911ba7d504563ad5ce211e4524334e567b06e30e057acac69e0"
+    },
+    "content/handbook/security/identity/gitops/_index.md": {
+      "path": "content/handbook/security/identity/gitops/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9a08a4c3d40ff62b7e94f57d2888447234759c24cef39b82660c3b9774310430"
+    },
+    "content/handbook/security/identity/gitops/okta/_index.md": {
+      "path": "content/handbook/security/identity/gitops/okta/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0bbc129b90e969b276f3f622a3d2184e2ea1e0897a58abf58eeec1ab26e7acb2"
+    },
+    "content/handbook/security/identity/gitops/gcp/_index.md": {
+      "path": "content/handbook/security/identity/gitops/gcp/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "66d55394f96f95596046c1b16d1d8247651e62979bdeacef1f7fd5e21a21c426"
+    },
+    "content/handbook/security/identity/gitops/aws/_index.md": {
+      "path": "content/handbook/security/identity/gitops/aws/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f11d9ee60d947b0b439052675db47a053b91b5d087007e2ccb972deb4a909b53"
+    },
+    "content/handbook/security/identity/counterparts/_index.md": {
+      "path": "content/handbook/security/identity/counterparts/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f8a764a0b4c24a610ea51ac19092c524b38d6f2aca311be63c0301eee1345bd0"
+    },
+    "content/handbook/security/identity/boundaries/_index.md": {
+      "path": "content/handbook/security/identity/boundaries/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "02be08e096798b1a6241b146bbde0c2ad37702ef4eb409e37171b3940fdb5970"
+    },
+    "content/handbook/security/identity/approvals/_index.md": {
+      "path": "content/handbook/security/identity/approvals/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9c75b30aa8621875caca63e6c1453541f47ff988e6ac7cd98c24e7defe81e5c4"
+    },
+    "content/handbook/security/identity/access-requests/_index.md": {
+      "path": "content/handbook/security/identity/access-requests/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "888b0f81aecf1615fc691e60fec1f98d08d093e21d8ad9cfea9fa2cfa7c65b9c"
+    },
+    "content/handbook/security/customer-support-operations/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1660e39c20d6b4ac22ca38ee86d4a2c645701af069028600e5130174b5763a1b"
+    },
+    "content/handbook/security/customer-support-operations/contacting-third-parties.md": {
+      "path": "content/handbook/security/customer-support-operations/contacting-third-parties.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "dd9a6d298ee0478b9ad2c317c37ef67ae51fd6c2ed6f3b2973cb5facf9687746"
     }
   }
 }
