@@ -1,5 +1,5 @@
 ---
-title: "Women in Security"
+title: "Women in Security（セキュリティの女性たち）"
 upstream_path: /handbook/security/women-in-security/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T14:00:00Z"

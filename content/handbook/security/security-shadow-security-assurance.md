@@ -1,5 +1,5 @@
 ---
-title: "Security Shadow: Security Assurance"
+title: "セキュリティシャドウ: Security Assurance"
 upstream_path: /handbook/security/security-shadow-security-assurance/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T14:00:00Z"
