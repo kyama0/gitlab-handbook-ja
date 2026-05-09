@@ -20465,6 +20465,76 @@
       "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "00dac5baf8b74717704a1457d5188e8c7a27767edf05575b39a3f4b0f4ad105e"
+    },
+    "content/handbook/security/product-security/security-review-framework.md": {
+      "path": "content/handbook/security/product-security/security-review-framework.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "621a07ce05f91439a58e008dd69bbdce249a4c59d93d6d459e9c475e4f796208"
+    },
+    "content/handbook/security/product-security/vulnerability-management/_index.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "80d11f8412fcfd1849e858e956948d598bba38ade7eecf879833b3a1ad800f56"
+    },
+    "content/handbook/security/product-security/vulnerability-management/automation.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/automation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f616bbd79a47891b896f47332f514e1f3f745dabbf8ae5d33d69556ee302dc33"
+    },
+    "content/handbook/security/product-security/vulnerability-management/closing-issues.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/closing-issues.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "54c59dd0b4d95b03077ad92516c720db9d7d654c5a6d92f6032ad03e2ca28856"
+    },
+    "content/handbook/security/product-security/vulnerability-management/customer-scan-review-requests.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/customer-scan-review-requests.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2aa782688ca0369688cc8478b3bf093ec38773e3c09aa76fef1afce8b2ce3629"
+    },
+    "content/handbook/security/product-security/vulnerability-management/development-and-code-review.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/development-and-code-review.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "adb5b187627715f2c0eb5773602de4b8ba370751ebc3c709162dfffc7890904e"
+    },
+    "content/handbook/security/product-security/vulnerability-management/development-labels.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/development-labels.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d1925b2f28c1d33b9cd82b14241c8a19299f077fde1c2aa69ed3190b74569a0e"
+    },
+    "content/handbook/security/product-security/vulnerability-management/encryption-policy.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/encryption-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4c95dc1d1b9638655be831ad8d9db3e91b2652e927608ddd13561e0c529a35ea"
+    },
+    "content/handbook/security/product-security/vulnerability-management/incident-response-guidance.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/incident-response-guidance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d1b4c6395a5fbc0f0dbb39a90772fec1c204c023bb70c7b56aa2288446d6b54c"
+    },
+    "content/handbook/security/product-security/vulnerability-management/infrastructure-vulnerability-procedure.md": {
+      "path": "content/handbook/security/product-security/vulnerability-management/infrastructure-vulnerability-procedure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-09T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "40c312dc9125d6d3466f02b40643b5de9fbb2d75fe7002c49fd2801c269513fe"
     }
   }
 }
