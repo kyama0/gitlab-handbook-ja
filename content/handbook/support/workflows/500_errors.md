@@ -32,7 +32,7 @@ GitLab.com で動作の遅さに関する報告を受け取った場合、まず
 
 ### GitLab.com で自身が遅さに気づいた場合
 
-#production に投稿したり Issue を作成する前に、問題を絞り込むのに役立つデータを取得する有用な方法をいくつか紹介します:
+Issue を作成したり #production に投稿する前に、問題を絞り込むのに役立つデータを取得する有用な方法をいくつか紹介します:
 
 1. `performance_bar=flamegraph` クエリパラメータを追加して [CPU フレームグラフ](https://docs.gitlab.com/development/profiling/#speedscope-flamegraphs) を生成できます。
 1. ブラウザウィンドウで `pb` と入力して [パフォーマンスバー](https://docs.gitlab.com/administration/monitoring/performance/performance_bar/) を使用します。ページをリロードしてサーバー側からの情報を取得します。
