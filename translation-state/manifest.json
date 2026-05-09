@@ -17708,6 +17708,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "c4b2e0f803432da8e68776c01e58f101eaf1299e14a8a7e00df96d0d6f3feeaf"
     },
+    "content/handbook/support/workflows/setting_ticket_priority.md": {
+      "path": "content/handbook/support/workflows/setting_ticket_priority.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2feb4ccd93c0f609b243576fd1b9d61151b6180db4c1f920ddf2a0c8b70c904b"
+    },
+    "content/handbook/support/workflows/sidekiq_support.md": {
+      "path": "content/handbook/support/workflows/sidekiq_support.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5b85e3981592a984b31e306129e4992664cd118509f2812aaaeb18328343b25c"
+    },
+    "content/handbook/support/workflows/sla_and_views.md": {
+      "path": "content/handbook/support/workflows/sla_and_views.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3c9abeb0fad76adbf07d3f439eb6cb18fedf56dae60c078f4953dbb8c3c80c07"
+    },
+    "content/handbook/support/workflows/support-assisted-customer-requests.md": {
+      "path": "content/handbook/support/workflows/support-assisted-customer-requests.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4cc4c0f8badd61628a937a28bc1bff3bc0ecabaa24c421cd2496782fbd963ab6"
+    },
+    "content/handbook/support/workflows/support-sales-escalations.md": {
+      "path": "content/handbook/support/workflows/support-sales-escalations.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "364ba19e00c0818cc1504ff2e01bcb5507884b9aea98cd4f84f3dd885d2f4603"
+    },
+    "content/handbook/support/workflows/support_hold.md": {
+      "path": "content/handbook/support/workflows/support_hold.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c3ac0415c8036b8827e9de077d3593d1092114e1e2c992681ce6a6cc2960e241"
+    },
+    "content/handbook/support/workflows/support_manager-on-call.md": {
+      "path": "content/handbook/support/workflows/support_manager-on-call.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "88ee3e8e46b61c7eab84001d2e8ef53b7dd3546167f918cd5c2d88f9c6dda321"
+    },
+    "content/handbook/support/workflows/test_env.md": {
+      "path": "content/handbook/support/workflows/test_env.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3e7088c12c5e771343e444405b885f2968f2da5a2a97c9319de33ecbadca0aa4"
+    },
+    "content/handbook/support/workflows/ticket-transfers.md": {
+      "path": "content/handbook/support/workflows/ticket-transfers.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fec579dfc5ebff0adca9d76b7a105a1a62a7518de05132d3a11a97735bbaced0"
+    },
+    "content/handbook/support/workflows/ticket_lifecycle.md": {
+      "path": "content/handbook/support/workflows/ticket_lifecycle.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T03:10:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "97b999521a1e265d03b7e1e30108d929d0fa56b0e709d22c04679ea016a3c0d6"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
