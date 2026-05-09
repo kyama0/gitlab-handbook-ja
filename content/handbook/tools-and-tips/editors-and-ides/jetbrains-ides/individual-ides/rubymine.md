@@ -69,7 +69,7 @@ GitLab Workhorse と Puma がどのように協調動作するかの詳細につ
 
 まず ["GUI でデータベースにアクセスする"](https://docs.gitlab.com/ee/development/database/database_debugging.html#access-the-database-with-a-gui) の手順に従って、GDK 配下の postgresql を localhost で動作するよう再設定します。
 
-次に develoment データベースを設定します:
+次に development データベースを設定します:
 
 1. `File -> New -> Data Source -> Postgresql` に移動します（または右側の `Databases` タブから）
 1. 名前を入力: `gitlabhq_development@localhost`
