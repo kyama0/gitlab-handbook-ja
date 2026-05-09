@@ -54,7 +54,7 @@ JetBrains は [RubyMine 用共有インデックス](https://www.jetbrains.com/h
 
 ただし、これは設定プロセスがかなり手間取るようです。共有インデックスのセットアップと保守を手伝いたい方は、ぜひ [Chat Groups](../#chat-groups) でお知らせください！
 
-## 除外フォルダーのセットアップ
+## 除外フォルダーのセットアップ {#set-up-excluded-folders}
 
 除外フォルダーをセットアップすることが重要です。さもないと、インデックス作成や検索に必要以上に時間がかかります。
 
@@ -86,13 +86,13 @@ JetBrains は [RubyMine 用共有インデックス](https://www.jetbrains.com/h
 ## ターミナルから RubyMine でファイルを開く
 
 これは OS レベルでセットアップでき、すべての種類のファイルで動作します。たとえば、すべての .rb ファイルを開くようにセットアップするには:
-1, `Finder` で `*.rb` ファイルを開きます
+1. `Finder` で `*.rb` ファイルを開きます
 2. 右クリックして `Get Info` を選択します
-3, `Open With` を展開します
+3. `Open With` を展開します
 4. `RubyMine.app` を選択します
 5. `Change All...` を選択します
 
-## 設定
+## 設定 {#configuration}
 
 ### UPDATE 2025-05
 
