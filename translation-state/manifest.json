@@ -17848,6 +17848,76 @@
       "model": "claude-opus-4-7",
       "input_hash": "8299bdf05f469318bb5e0e7992b341989d84bd61cf9af81204a3146b035cb742"
     },
+    "content/handbook/support/workflows/very_breached_tickets.md": {
+      "path": "content/handbook/support/workflows/very_breached_tickets.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bbb5146cbce848cdee322c8ff257b706f1a39647f55d1c8a5d0cacacbf9cc18e"
+    },
+    "content/handbook/support/workflows/working-on-tickets.md": {
+      "path": "content/handbook/support/workflows/working-on-tickets.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "630e8c2ac3bb17fc3baad249221cd950bdd98033de2bbfdfebf7e99bfac02351"
+    },
+    "content/handbook/support/workflows/working-on-zendesk-content.md": {
+      "path": "content/handbook/support/workflows/working-on-zendesk-content.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b685847228900620cb25fd91be8b6d4c92cd14e46905190e523bd13bf35a1dea"
+    },
+    "content/handbook/support/workflows/working-with-issues.md": {
+      "path": "content/handbook/support/workflows/working-with-issues.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "75951c47c5ecab59d8ad8ff76182c0f2d6ed95db1ab1c10f31e41b02d76a4174"
+    },
+    "content/handbook/support/workflows/working-with-pods.md": {
+      "path": "content/handbook/support/workflows/working-with-pods.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "827e64630e4c1b5b30ba1ffaeb0e857271ec2fbeef1a2b00d2c1dc4f4cfa8402"
+    },
+    "content/handbook/support/workflows/working_with_security.md": {
+      "path": "content/handbook/support/workflows/working_with_security.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f242d338c92cc3d624d202c10006d84cf9f5927cd673aa3e4c33ebc996ac4528"
+    },
+    "content/handbook/support/workflows/working_with_support_ops.md": {
+      "path": "content/handbook/support/workflows/working_with_support_ops.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "27acb9f76324097052d065d3b658c00a07baa76599016bdc5c98b6ca28d1f05c"
+    },
+    "content/handbook/support/workflows/writing_workflows.md": {
+      "path": "content/handbook/support/workflows/writing_workflows.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8012734d36af19afe6fd5c9a66a73b36cdf1cd0ba8c59e2bd84082874856d74b"
+    },
+    "content/handbook/support/workflows/zendesk-instances.md": {
+      "path": "content/handbook/support/workflows/zendesk-instances.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6b04437974f953b1e49d7c6c62138127137fe3a60874a1942064b4e82faa5113"
+    },
+    "content/handbook/support/workflows/zendesk-ticket-basics.md": {
+      "path": "content/handbook/support/workflows/zendesk-ticket-basics.md",
+      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
+      "translated_at": "2026-05-08T05:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8be9cc33af052c599453c55463e7937b8a1677c170c4dbcf866934df15fc6d6b"
+    },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
       "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
