@@ -35,6 +35,30 @@ regexes = [
   '''"upstream_sha"\s*:\s*"[a-fA-F0-9]{40}"''',
 ]
 
+# PSIRT runbook (hackerone-process.md) のコードブロックには
+# `Authorization: Bearer LEAKED_TOKEN` という *リテラルなプレースホルダー* が含まれており、
+# gitleaks の `curl-auth-header` ルールが「本物の Bearer トークン」として誤検知する。
+# これは upstream 由来のサンプル文字列で、実際の機密情報ではないため許可する。
+#
+# 設計判断:
+#   - `regexTarget = "line"` で行全体にマッチさせ、`LEAKED_TOKEN` という固定文字列
+#     を含む行のみを許可する（`Bearer` の後に何でも来る形だと本物のトークンも
+#     通ってしまうため、必ず `LEAKED_TOKEN` を含む行に限定する）。
+#   - グローバル `[allowlist]` だとルール固有のオーバーライドが上書きされる可能性があるため、
+#     `curl-auth-header` ルールを明示的にオーバーライドして allowlist を付与する。
+[[rules]]
+id = "curl-auth-header"
+description = "Curl Authorization header (overridden to allow LEAKED_TOKEN placeholder)"
+regex = '''(?i)\b(?:curl[^\n]*?-H\s+["'])(?i)Authorization:\s+(?:Bearer|Basic|Token)\s+([^"'\s]+)["']'''
+keywords = ["curl", "authorization"]
+
+[rules.allowlist]
+description = "PSIRT runbook placeholder string LEAKED_TOKEN"
+regexTarget = "line"
+regexes = [
+  '''Authorization:\s+Bearer\s+LEAKED_TOKEN''',
+]
+
 # Education Services の教材ページには学習用のサンプル値が含まれており、
 # gitleaks の `gitlab-runner-authentication-token` / `private-key` ルールに
 # 実トークンとして検出される。これらは upstream の教育コンテンツに由来する
