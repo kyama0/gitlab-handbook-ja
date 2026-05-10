@@ -23509,6 +23509,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "25a190d3ee79b217d4186c67f1684a4138cdf009da116be732aa5cdb70de72e8"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/unattended/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/unattended/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eb2c052716939c1d56c63623cbce0aa7193d13cd57cb017e8b7b0c8fa4064c11"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/touchid/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/touchid/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5867f082b036ed38948faac7392d0f5a6e6043eb60e861040021c5fac51c4ab0"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/personal/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/personal/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "111ce42f20abe1385a40faa82bb05607a95ca588ec6f7c6ba6d39e2560ce888d"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/passwords/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/passwords/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "619cbf17a5459a88ae347dcc14ac166df34e8e6c39f13cbbe7fb46161131f5a9"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/networks/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/networks/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "692289bcde977d3d4d4ac8be0fa2d5b6df55b3171f7fb5813988bc11b7297c50"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/management/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/management/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "36b7dff6fff9c1aa4c634811a552c2d37f45d239eb761d2de7a34bd6bad5b74d"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/icloud/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/icloud/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e2ae6699c118fde30d0a46327d71d447251e4116e2ebc266548800c950a92564"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/firewall/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/firewall/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0138f7bc39ea34382624b6f5f1818a4ab20fb8d40ab1df5c9a7bc4ecdc5661be"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/encryption/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/encryption/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6a3f6ace3f4a8352c39b707bedcb024941522dae7ae8eabc891897b2c40b9faa"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/browsers/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/browsers/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "02bb33ae44cd6c699154fbab537efbeca34ec7500e174130019b5d80b059af7d"
     }
   }
 }
