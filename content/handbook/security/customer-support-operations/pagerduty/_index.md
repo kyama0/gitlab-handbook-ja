@@ -1,6 +1,6 @@
 ---
-title: 'Pagerduty'
-description: 'Pagerduty に関するドキュメント'
+title: 'PagerDuty'
+description: 'PagerDuty に関するドキュメント'
 date: 2026-01-07
 upstream_path: /handbook/security/customer-support-operations/pagerduty/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
@@ -9,21 +9,21 @@ translator: claude
 stale: false
 ---
 
-このガイドでは、GitLab において Customer Support Operations が Pagerduty とどのように関わり利用しているかを説明します。
+このガイドでは、GitLab において Customer Support Operations が PagerDuty とどのように関わり利用しているかを説明します。
 
-## Pagerduty について
+## PagerDuty について
 
-### Pagerduty とは
+### PagerDuty とは
 
-PagerDuty は SaaS ベースのインシデント管理プラットフォームで、IT・DevOps・セキュリティの各チームがアラートを自動化し、対応をオーケストレーションし、運用に対するリアルタイムな可視性を提供することで、ビジネスに影響を与える問題を予防・解決するのを支援します。これにより、適切な人に適切なタイミングで通知が届くようになり、ダウンタイムを最小化し、顧客体験を改善します。Pagerduty は監視ツールからアラートを収集し、オンコールスケジュールとエスカレーションポリシーを使用し、インシデントの要約や自動化のために AI も提供します。
+PagerDuty は SaaS ベースのインシデント管理プラットフォームで、IT・DevOps・セキュリティの各チームがアラートを自動化し、対応をオーケストレーションし、運用に対するリアルタイムな可視性を提供することで、ビジネスに影響を与える問題を予防・解決するのを支援します。これにより、適切な人に適切なタイミングで通知が届くようになり、ダウンタイムを最小化し、顧客体験を改善します。PagerDuty は監視ツールからアラートを収集し、オンコールスケジュールとエスカレーションポリシーを使用し、インシデントの要約や自動化のために AI も提供します。
 
-### Pagerduty 内のアイテムの管理方法
+### PagerDuty 内のアイテムの管理方法
 
-私たちは現在、Pagerduty 内のすべてのアイテムを Pagerduty 自体で管理しています。
+私たちは現在、PagerDuty 内のすべてのアイテムを PagerDuty 自体で管理しています。
 
 Customer Support Operations のページング (呼び出し) や Customer Support Operations のオンコール業務についての情報は、[オンコールドキュメント](/handbook/security/customer-support-operations/pagerduty/oncall) を参照してください。
 
-## Customer Support Operations の Pagerduty 構成要素
+## Customer Support Operations の PagerDuty 構成要素
 
 ### スケジュール
 
