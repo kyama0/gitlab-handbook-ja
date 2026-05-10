@@ -21935,6 +21935,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "40282405e3f21c8c86d0d05a3085c4d797f5b4b9573252de92cd474a26377474"
+    },
+    "content/handbook/security/customer-support-operations/salesforce/cases.md": {
+      "path": "content/handbook/security/customer-support-operations/salesforce/cases.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5f76a6650b3fd0934f69a020bea52bdec9c70b02a19a7e68381fd26709808a11"
+    },
+    "content/handbook/security/customer-support-operations/salesforce/skus.md": {
+      "path": "content/handbook/security/customer-support-operations/salesforce/skus.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4a48945ea79d1e9daab80e1ecde7eb183d46b2e9e6371b7f70c1b4429340c924"
+    },
+    "content/handbook/security/customer-support-operations/resources/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/resources/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5fd42fb07b817d499d99f64f4e216f0840e3a0dcc5ac99d59cdd103943307e54"
+    },
+    "content/handbook/security/customer-support-operations/resources/coding-standards.md": {
+      "path": "content/handbook/security/customer-support-operations/resources/coding-standards.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "18e82be219b3190f13a9cf14daf2953b0d226f69791d6b263620c28371ffb121"
+    },
+    "content/handbook/security/customer-support-operations/resources/recommended-setup.md": {
+      "path": "content/handbook/security/customer-support-operations/resources/recommended-setup.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a291a8a50eb24d4e9e00fd2dc1484b1749821c7271254b3a6a05da3bb3312c73"
+    },
+    "content/handbook/security/customer-support-operations/pagerduty/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/pagerduty/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ed2e2d1a232754bccc8d5431f6badf044bb774a26fc633f11828d34d00b721dd"
+    },
+    "content/handbook/security/customer-support-operations/pagerduty/oncall.md": {
+      "path": "content/handbook/security/customer-support-operations/pagerduty/oncall.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "aa456040b3af5ebfb979000473683a3e19e528026650c4184bd654549e98237e"
+    },
+    "content/handbook/security/customer-support-operations/incidents/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/incidents/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ec993822680038186db90f06e0b0bb8567270bac0e4144633863109bd95dae74"
+    },
+    "content/handbook/security/customer-support-operations/incident-io/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/incident-io/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5437550e12f435552281920f5c2eb60702f582781d686e2f86a6666897bd9202"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1e62a9df02d788a7a5cf05e4ff9504e87ea54c1624a19e99b67127c850923401"
     }
   }
 }
