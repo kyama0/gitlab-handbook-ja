@@ -14,7 +14,7 @@ stale: false
 - [ベンダードキュメント](https://support.google.com/a/users/answer/168126)
 - [ベンダードキュメント](https://support.google.com/calendar/answer/37082)
 
-## カレンダーの権限レベル
+## カレンダーの権限レベル {#calendar-permission-levels}
 
 - `See only free/busy (hide details)` - チームメンバーは、カレンダー上であなたが空いているか取り込み中かのみを確認できます。これは外部（GitLab 外）への共有における唯一のオプションです。
 - `See all event details` - チームメンバーは、あなたのカレンダーイベントをすべて閲覧できますが、編集することはできません。
