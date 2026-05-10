@@ -22949,6 +22949,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "054fa30678eb86b4214a1040cfd6f6df2a70a1d5cdfd84b95d5f5c2ac1ec0425"
+    },
+    "content/handbook/security/corporate/systems/gitlab/com/groups/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/com/groups/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a08d6ab8f8e505de2885f8dfdf43005b975ae18026ef251f0c0fdb0ca5f5738"
+    },
+    "content/handbook/security/corporate/systems/demosys/_index.md": {
+      "path": "content/handbook/security/corporate/systems/demosys/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d4520198946dc0d156b269e2d004f7b432704d280a3d9ed267659d8c87463b23"
+    },
+    "content/handbook/security/corporate/systems/backblaze/_index.md": {
+      "path": "content/handbook/security/corporate/systems/backblaze/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "10561676e6e889e5b1473fadc723ecaa3d5ef15d6a8595dd678b0e2902895364"
+    },
+    "content/handbook/security/corporate/systems/azure/_index.md": {
+      "path": "content/handbook/security/corporate/systems/azure/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "04c99963d80c84d3d7964a67e358e4de7d5c3f165788bed794265e95800b8979"
+    },
+    "content/handbook/security/corporate/systems/aws/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "01678853f7d072ce613c21f84031cdb56a189b86b6642a2ed10ffd737a8578bc"
+    },
+    "content/handbook/security/corporate/systems/aws/training/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/training/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b010f77b47ade2ab0610f72cc36e8b9100dfd4f2fd6adc639f8f3e2f490bbe2e"
+    },
+    "content/handbook/security/corporate/systems/aws/systems/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/systems/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bde41f0f4dd02fb179d851421dba2ee025b3f1d98f3ddc55963adc61a765741b"
+    },
+    "content/handbook/security/corporate/systems/aws/services/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/services/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e353b31f482b5951cf71cf2a48a60c081c4063498afc147e81c06461da65aaf0"
+    },
+    "content/handbook/security/corporate/systems/aws/services/users/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/services/users/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f4ca48d5ccaaf3e5b4b595bafed26fb31b7d86f5a1685b6b24962e7b5f6e0bc7"
+    },
+    "content/handbook/security/corporate/systems/aws/services/accounts/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/services/accounts/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "569ac5ba75dcc958662a4edffae522c231c1648a482f23da995faa6d0feb5b16"
     }
   }
 }
