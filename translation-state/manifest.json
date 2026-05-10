@@ -23159,6 +23159,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "51fea8efed4fc21ec065e31a9545acac5728014174236b4cd8006b18326e8f76"
+    },
+    "content/handbook/security/corporate/services/_index.md": {
+      "path": "content/handbook/security/corporate/services/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "078e0e6eda51390b345562828ed701ea98479c372641bcacf763fe6131f64658"
+    },
+    "content/handbook/security/corporate/services/temporary-users/_index.md": {
+      "path": "content/handbook/security/corporate/services/temporary-users/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4dd3a7afc1ec063f112df582fb5ecea045f9c24b687ab16abb88e585edf98e0f"
+    },
+    "content/handbook/security/corporate/services/service-accounts/_index.md": {
+      "path": "content/handbook/security/corporate/services/service-accounts/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "43bba691e04ebd68a50ebcbc3f5fc8afdb81a5963b748e35c3f909fd82bcdb5d"
+    },
+    "content/handbook/security/corporate/services/role-changes/_index.md": {
+      "path": "content/handbook/security/corporate/services/role-changes/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "747bc1c37097001746cc1c415988d8d8c7d855c97cf006e9081a63f159c2a21a"
+    },
+    "content/handbook/security/corporate/services/phones/_index.md": {
+      "path": "content/handbook/security/corporate/services/phones/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "edf7e6535dbd2faa3e78fec2b46b11713ff8a27bd7058b8cd9a2ad52bb48c8e8"
+    },
+    "content/handbook/security/corporate/services/onboarding/_index.md": {
+      "path": "content/handbook/security/corporate/services/onboarding/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "95c7287e46af98d60d265db1d172a180d7a271b2232983e0958b825098dc313c"
+    },
+    "content/handbook/security/corporate/services/offboarding/_index.md": {
+      "path": "content/handbook/security/corporate/services/offboarding/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ee97845e68bf4f4685e8f3f5b6cd4422f4e94a05b856b86133b02ba593dc5e50"
+    },
+    "content/handbook/security/corporate/services/infrastructure/_index.md": {
+      "path": "content/handbook/security/corporate/services/infrastructure/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d511759d6982a519a1821e98ecc3b9134f2751e7dcbf45dc08d0fa5ad7c7c4ce"
+    },
+    "content/handbook/security/corporate/services/identity/_index.md": {
+      "path": "content/handbook/security/corporate/services/identity/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8ad623967a61469fa2e362c1c7627d21dd862bf5cc65cdc029559c3df35be075"
+    },
+    "content/handbook/security/corporate/services/helpdesk/_index.md": {
+      "path": "content/handbook/security/corporate/services/helpdesk/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5a2c2a3e096647fdab6e99dcec51ea0600c8dd223c8ae1c7bd7c7934007bb655"
     }
   }
 }
