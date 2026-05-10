@@ -21865,6 +21865,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "2cc27edabb206edf5300f4855ef1744cb7e75633dcb3eaaca0bef47dc6b62dfe"
+    },
+    "content/handbook/security/customer-support-operations/transcend/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/transcend/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c919db4dcad9366edd3dacf3c69a2e386cac787d5fdd05d754294ead8774c7fe"
+    },
+    "content/handbook/security/customer-support-operations/system-checkers/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/system-checkers/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "93177b4251b6eb3242c7318967794a07b7cdf408972cd50ac6e41d120935a828"
+    },
+    "content/handbook/security/customer-support-operations/system-checkers/calendly.md": {
+      "path": "content/handbook/security/customer-support-operations/system-checkers/calendly.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "8398ffc4407413301a4d07b6e97d733b93f0fb20479e4b2eb9f4d541e95de245"
+    },
+    "content/handbook/security/customer-support-operations/system-checkers/gitlab.md": {
+      "path": "content/handbook/security/customer-support-operations/system-checkers/gitlab.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0fa8de3b21b39cb25dac38b226b40332738c6285d16bb84b8e1f9aafdcd7e693"
+    },
+    "content/handbook/security/customer-support-operations/system-checkers/pagerduty.md": {
+      "path": "content/handbook/security/customer-support-operations/system-checkers/pagerduty.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "fa094e26b210eabe0500684cb5ccc744b0ac1fc8c0f84fae46c081ef50d81341"
+    },
+    "content/handbook/security/customer-support-operations/system-checkers/zendesk-global.md": {
+      "path": "content/handbook/security/customer-support-operations/system-checkers/zendesk-global.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "8f14d5e7209846c56479e277e8c0faac7c604d55cbf401387eb1af3cc9428fab"
+    },
+    "content/handbook/security/customer-support-operations/system-checkers/zendesk-us-government.md": {
+      "path": "content/handbook/security/customer-support-operations/system-checkers/zendesk-us-government.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "125e61d8415e9e11bd3169816041ad2f705f9e47757fa897b66ff4702712e31e"
+    },
+    "content/handbook/security/customer-support-operations/slack/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/slack/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e5fa94cb6d530d7bd6541db8223739960b6654e642707f4d1e4d4826b7a34294"
+    },
+    "content/handbook/security/customer-support-operations/salesforce/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/salesforce/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a554f125ee3b339004ccf9c608ed91ae845c496d1c4f8c1794011b2fdedd6641"
+    },
+    "content/handbook/security/customer-support-operations/salesforce/account-merges.md": {
+      "path": "content/handbook/security/customer-support-operations/salesforce/account-merges.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "40282405e3f21c8c86d0d05a3085c4d797f5b4b9573252de92cd474a26377474"
     }
   }
 }
