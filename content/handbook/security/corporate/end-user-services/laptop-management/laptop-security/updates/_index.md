@@ -33,7 +33,7 @@ stale: false
 - [ベンダードキュメント - VS Code](https://code.visualstudio.com/docs/setup/setup-overview#_update-cadence)
 - [ベンダードキュメント - Zoom](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0060716)
 
-## macOS 更新のための Nudge
+## macOS 更新のための Nudge {#nudge-for-macos-updates}
 
 これはプレースホルダーです。
 
