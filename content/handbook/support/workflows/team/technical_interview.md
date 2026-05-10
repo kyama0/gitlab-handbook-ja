@@ -14,7 +14,7 @@ stale: false
 ### Sandbox での初期セットアップ
 
 1. <https://gitlabsandbox.cloud/cloud>
-1. GCP を使用 - 私はこれを GCP でのみテストしました
+1. GCP を使用 - 私たちはこれを GCP でのみテストしました
 1. アカウントを選択（未選択の場合）
 1. 「Create Terraform Environment」
 1. Cloud account では自分のアカウントを選択（まだ選択されていない場合）

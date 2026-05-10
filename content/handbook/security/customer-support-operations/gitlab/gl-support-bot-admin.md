@@ -9,9 +9,9 @@ translator: claude
 stale: false
 ---
 
-## gl-support-bot について
+## gl-support-bot-admin について
 
-### gl-support-bot とは
+### gl-support-bot-admin とは
 
 管理者アクセスを必要とするスクリプトや自動化処理では、チーム全体のサービスアカウントとして [gl-support-bot-admin](https://gitlab.com/gl-support-bot-admin) ユーザーを使用します。これは、自動化処理が特定の人間のユーザーに紐付かないようにし、一貫して動作することを保証するためです。
 
