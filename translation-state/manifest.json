@@ -22775,6 +22775,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "1a7a7c3af0a55b7cf81b132b6cc7378c811d336d9ba197098e8ace485a6d61bb"
+    },
+    "content/handbook/security/corporate/systems/google/cloud/cells-dev/projects/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/cloud/cells-dev/projects/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "054fa30678eb86b4214a1040cfd6f6df2a70a1d5cdfd84b95d5f5c2ac1ec0425"
+    },
+    "content/handbook/security/corporate/systems/google/cloud/billing/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/cloud/billing/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "7485c742395b28d649ff898ba97d52e8f5bb5803854efeb14d586173b1691735"
+    },
+    "content/handbook/security/corporate/systems/google/chrome/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/chrome/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2c96415403b55cef2bfc15a10362a962900672551f1e17adead4dac63150a1db"
+    },
+    "content/handbook/security/corporate/systems/google/calendar/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/calendar/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "8d33753f2a1f672ee5d4a2738731a6e5a46af1582ed506f5b3b64f06bfac496d"
+    },
+    "content/handbook/security/corporate/systems/google/calendar/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/calendar/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "bbbd58609b134802b2682d45c8d8a030a9e8e3051c9a078a25b2b9fe963e3acc"
+    },
+    "content/handbook/security/corporate/systems/google/calendar/delegation/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/calendar/delegation/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "42730f7c73a74415a60c43186c15d7ed584d915001de4d34c31bb053ff32ad0b"
+    },
+    "content/handbook/security/corporate/systems/google/apps/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/apps/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "fab751b113f8234499973bc046deed23f54c9a40df81d5bca351f37edfa5f748"
+    },
+    "content/handbook/security/corporate/systems/gitlab/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "82b1367bd127d82878bc8fea495bfc6901d3dcbe041e98ad3dd4b1967225b58e"
+    },
+    "content/handbook/security/corporate/systems/gitlab/sys/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/sys/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cc2e7d97dbc6369dd123c968b67a1749c338c0595f744eb192e283e321f903de"
+    },
+    "content/handbook/security/corporate/systems/gitlab/stg/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/stg/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d1d5a9e8c6d463dde2479c2f58dafff4d329abc6bbd7057e35f25319cbc94011"
     }
   }
 }
