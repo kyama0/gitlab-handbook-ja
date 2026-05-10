@@ -22145,6 +22145,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "df11ca61c91119c83285589ff0b31bc18f519b947dfedb62ce875ede2a5b28b0"
+    },
+    "content/handbook/security/corporate/systems/zoom/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/zoom/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c92ae0aacd104ab9407b12b59f83247455dc60473b004fede9e15ea195ba944e"
+    },
+    "content/handbook/security/corporate/systems/yubikey/_index.md": {
+      "path": "content/handbook/security/corporate/systems/yubikey/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "08d22fa9cb90233a73239f4d66fc6ee52f40e11ddf2db9c512af256fbecad016"
+    },
+    "content/handbook/security/corporate/systems/yubikey/purchasing/_index.md": {
+      "path": "content/handbook/security/corporate/systems/yubikey/purchasing/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e151af2eb45d703e1306672cc72b16cb6332078b99c7630921115641c36b9e72"
+    },
+    "content/handbook/security/corporate/systems/yubikey/2fa/_index.md": {
+      "path": "content/handbook/security/corporate/systems/yubikey/2fa/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "66d189ad6bf24e3024e0b565c7c68242c73ceb2f49c2350760b190222780ce8a"
+    },
+    "content/handbook/security/corporate/systems/yubikey/2fa/okta/_index.md": {
+      "path": "content/handbook/security/corporate/systems/yubikey/2fa/okta/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "32ef57b16121482280d8e95bac1fedfd85ade9fa9b04f250594ac260f8e9d99c"
+    },
+    "content/handbook/security/corporate/systems/yubikey/2fa/ios/_index.md": {
+      "path": "content/handbook/security/corporate/systems/yubikey/2fa/ios/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "70b0f4893233b95830cf987ba3f887e4751d9f0bbe21bbfb1c159b7f6a490594"
+    },
+    "content/handbook/security/corporate/systems/yubikey/2fa/google/_index.md": {
+      "path": "content/handbook/security/corporate/systems/yubikey/2fa/google/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "649ea4807edd5f050b6be369f6ff31fd8676541a5f7419e1c8b0aacf28813a44"
+    },
+    "content/handbook/security/corporate/systems/yubikey/2fa/gitlab/_index.md": {
+      "path": "content/handbook/security/corporate/systems/yubikey/2fa/gitlab/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d9e5d899985ab9e4327b9c12156662a7400ad6c1a1f91b94a265a63317dfa445"
+    },
+    "content/handbook/security/corporate/systems/yubikey/2fa/android/_index.md": {
+      "path": "content/handbook/security/corporate/systems/yubikey/2fa/android/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9944d174105099139d0b828cd7f0977f490f13222144b3c3fbe4b5be592ae2e5"
+    },
+    "content/handbook/security/corporate/systems/windows/_index.md": {
+      "path": "content/handbook/security/corporate/systems/windows/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2da8b9f029453edb1df1d11bbc3f880537b65d9e8ea0ae9092f039639e8c6343"
     }
   }
 }
