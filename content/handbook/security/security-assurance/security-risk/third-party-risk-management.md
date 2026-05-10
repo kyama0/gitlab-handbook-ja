@@ -1,5 +1,5 @@
 ---
-title: "Security Third Party Risk Management"
+title: "セキュリティ第三者リスク管理"
 controlled_document: true
 tags:
   - security_standard

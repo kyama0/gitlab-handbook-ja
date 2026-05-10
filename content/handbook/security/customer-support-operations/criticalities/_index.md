@@ -15,7 +15,7 @@ stale: false
 
 重要度は、Issue/MR をどのデプロイに含めるかを決定する際に考慮されます。
 
-### 変更重要度の定義
+### 変更重要度の定義 {#change-criticality-definitions}
 
 #### 変更重要度 1
 
