@@ -23019,6 +23019,146 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "569ac5ba75dcc958662a4edffae522c231c1648a482f23da995faa6d0feb5b16"
+    },
+    "content/handbook/security/corporate/systems/aws/services/accounts/vdi-workspaces/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/services/accounts/vdi-workspaces/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "88052e458905ed680d1ec9ecb10d1395250306300894ec38a1d2e2109f34f6ed"
+    },
+    "content/handbook/security/corporate/systems/aws/sandbox/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/sandbox/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "47d43cb22157770942d05614002b6ffe215a858e511fa0a21eb0a2c1d82cd282"
+    },
+    "content/handbook/security/corporate/systems/aws/sandbox/accounts/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/sandbox/accounts/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "156e22c177cf784bd9a65e6a6a838eb11d6071043013ef4dabd295497400933d"
+    },
+    "content/handbook/security/corporate/systems/aws/red-ops/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/red-ops/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fe0dda0dbf4b0e0a10715e40ebcf4107b0f62ea3771eaa3b0b5f4286a5c6212d"
+    },
+    "content/handbook/security/corporate/systems/aws/marketplace/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/marketplace/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "685f926b88f84f86e54309002d5347cd7b2bf33ff74119c557a31b8077e70a50"
+    },
+    "content/handbook/security/corporate/systems/aws/dedicated-prd/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/dedicated-prd/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "132c59885d92a542278d2be8e744e871a8485412bc8f274222d30c81dade95df"
+    },
+    "content/handbook/security/corporate/systems/aws/dedicated-dev/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/dedicated-dev/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "47e691a20cdf9102141e32217081264e79672987dc5921bcc4a6d0dcdd0cb8aa"
+    },
+    "content/handbook/security/corporate/systems/aws/dedicated-dev/accounts/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/dedicated-dev/accounts/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "108dc1c38e2601353de40fdcb5a8e29d88a4b3454d807f94efe7994b92d2e2ab"
+    },
+    "content/handbook/security/corporate/systems/aws/cells-prod/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/cells-prod/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9fa538b77837715828b350017a64230c722103357cb11b4f6562461830cb699a"
+    },
+    "content/handbook/security/corporate/systems/aws/cells-dev/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/cells-dev/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "abe47959f7484841e4c9b051f73e3a8611fbf957795d9d142c605b2289574f81"
+    },
+    "content/handbook/security/corporate/systems/aws/billing/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/billing/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "277513d2dd3a9a17405cf9075f17dd196cc9dd7977db63100db433275c21700e"
+    },
+    "content/handbook/security/corporate/systems/accessctl/_index.md": {
+      "path": "content/handbook/security/corporate/systems/accessctl/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2e0077aad948f04f3361cd53c703a3f28cbc5ce9e9b8c48060cb605772bcf758"
+    },
+    "content/handbook/security/corporate/systems/accesschk/_index.md": {
+      "path": "content/handbook/security/corporate/systems/accesschk/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a8614a952fbf2eb4539f39a3f19db337fcb0e46aef72c8d360586176f5daabd"
+    },
+    "content/handbook/security/corporate/systems/1password/_index.md": {
+      "path": "content/handbook/security/corporate/systems/1password/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0b4ab52db1031de887450f27706c5f141c03fb6156695ed3a0b764ea1769fede"
+    },
+    "content/handbook/security/corporate/systems/1password/vault/_index.md": {
+      "path": "content/handbook/security/corporate/systems/1password/vault/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6b6c0b5f60753229faae5e0313e754cd19a7dac7e432d7d2e2f4891c53c70aed"
+    },
+    "content/handbook/security/corporate/systems/1password/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/1password/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "287f16abdda7b3495aeff975d63588e879fc0162a2dc3078e3a6dfad6f8e1a0b"
+    },
+    "content/handbook/security/corporate/systems/1password/passkey/_index.md": {
+      "path": "content/handbook/security/corporate/systems/1password/passkey/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e2031c52e086172605827ccfc2346338203d162732acaff4f396c6b78afcdeb5"
+    },
+    "content/handbook/security/corporate/systems/1password/group/_index.md": {
+      "path": "content/handbook/security/corporate/systems/1password/group/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d6e7309f0000bf202f73de06a7b246bc821d7aa7d2b40d2c2e459c6a6b305526"
+    },
+    "content/handbook/security/corporate/support/_index.md": {
+      "path": "content/handbook/security/corporate/support/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "522b80015a2b48b4cbab059a6fa93fe699d628b84616448ab0ffe3cea9f7dc50"
+    },
+    "content/handbook/security/corporate/support/usb-encryption/_index.md": {
+      "path": "content/handbook/security/corporate/support/usb-encryption/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "51fea8efed4fc21ec065e31a9545acac5728014174236b4cd8006b18326e8f76"
     }
   }
 }
