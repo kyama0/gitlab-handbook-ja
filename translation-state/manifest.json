@@ -22355,6 +22355,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "19fe11a35424f93545022a5a9b86f0a63f62b9a110f035fa2d78fa75b2faf19a"
+    },
+    "content/handbook/security/corporate/systems/okta/policy/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/policy/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "78427968aae22de357c338cf82b16c459a6d642c65335e257a47a5fb2471fadd"
+    },
+    "content/handbook/security/corporate/systems/okta/policy/device-posture-checks/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/policy/device-posture-checks/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "39eaa0013bf712df21940a9f4df9881db6921b73935cbe398cf2e4d345683925"
+    },
+    "content/handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-windows/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-windows/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f009cacf5088a76f3a52e745776775f4f1cc214ef0a614310f51b8b53c75d6b1"
+    },
+    "content/handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-macos/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-macos/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "97530fc00b43afaf92a17fb3fc5c9f2a2a6e1c1778c1ed4aa51cc6bb9683c141"
+    },
+    "content/handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-ios/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-ios/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "fd82734f26115e9b28e21a229c2e7c3857e174b769a8c9c04ca15217f7a3e332"
+    },
+    "content/handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-chrome-device-trust/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-chrome-device-trust/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "ec3dff40822e58bcc4367af0887875b692d3e9aebad47d1e99f28c92083d004c"
+    },
+    "content/handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-android/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-android/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c81f638cad587d2a304b10011992784aa21fac12b25c54b620c3c9b16ea5de45"
+    },
+    "content/handbook/security/corporate/systems/okta/org/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/org/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e1e6f8228fbb6eb3a1b7d67ede2188b723c8a126e062dde50df9a3ecf6d614e6"
+    },
+    "content/handbook/security/corporate/systems/okta/okta-workday/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/okta-workday/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b3f5bdfb0c9f69fdd39e748e647266b49e4de7fd06db3e734228a8fd96260162"
+    },
+    "content/handbook/security/corporate/systems/okta/group/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/group/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "609f161c0906b6f206ec3722899ab3b8f33c52eb20e8bc504ada90bfbbac5a3d"
     }
   }
 }
