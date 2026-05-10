@@ -23299,6 +23299,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "e45c94286e677eb8123efba76367df5d31dc3574e4b9d1e1b5c0c41d34c6fb68"
+    },
+    "content/handbook/security/corporate/engineering/infrastructure/_index.md": {
+      "path": "content/handbook/security/corporate/engineering/infrastructure/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fd41c1b90c46f091777ce2e461e491f10294f1f48e7505c37a638838cae23241"
+    },
+    "content/handbook/security/corporate/engineering/identity/_index.md": {
+      "path": "content/handbook/security/corporate/engineering/identity/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ad4d90047aefe47a3d98ef6a0b83125d81ed70837d694cb884d5e2fdde8b51ee"
+    },
+    "content/handbook/security/corporate/engineering/device-trust/_index.md": {
+      "path": "content/handbook/security/corporate/engineering/device-trust/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a086129ff4a799a9d4a7941de15cecb26176a40418159b155fb455b07f8d29e9"
+    },
+    "content/handbook/security/corporate/end-user-services/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "87af309e9a94dc04a230c4fcf47b5f8e4d2d666908d6eb8808259277071270e2"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "62f18c8ef328f9501d2209857b3acc93d1c0a3b861ff71a21d0e7a67544b1687"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/zoom/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/zoom/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "19230cc4556e7b5af61a92b55f0d56b7706e1792e2333082440c86d12b3995e1"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-additional-config.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-additional-config.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dce5c098c2cc178990e70c05e6e699c779168a9da95f9bac8b338f3ead99b0bd"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-ai.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-ai.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9b77914ac4efc523bc7f301b5ddd6829359b95e5059c98920e297383faccb966"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-meetings.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-meetings.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a8b2056288b246bd3e425f3a63e05fe4911f0d16b956d16592880cc9ef21b898"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-recording.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-recording.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c7756029a8444e64c03b0be4ee72d58c0892a6e7c980581ffa269534f4a65f63"
     }
   }
 }
