@@ -22565,6 +22565,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "f5aa0b8b966d4b64c5249bbe8c145b972ad8d1193057f6ed861beefb97a1b606"
+    },
+    "content/handbook/security/corporate/systems/jamf/_index.md": {
+      "path": "content/handbook/security/corporate/systems/jamf/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f48a2f916962ead4d7fbfc3c53d24edd408153a680cb5196cd2ce1c4536cd828"
+    },
+    "content/handbook/security/corporate/systems/jamf/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/jamf/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c09a4ae7e0c6f9baa9c799459120ae1d64f2c979d42f8964ccc3d88be169e121"
+    },
+    "content/handbook/security/corporate/systems/jamf/policies/_index.md": {
+      "path": "content/handbook/security/corporate/systems/jamf/policies/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cbf755b15419fd4825af51c33cece7d764f3a9b70c30aee160a81dfcdbd9f4d6"
+    },
+    "content/handbook/security/corporate/systems/hackystack/_index.md": {
+      "path": "content/handbook/security/corporate/systems/hackystack/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2d75f76cc54861e0e6225bc90cec7d9d11316647c83db984ac586c9d336e6e83"
+    },
+    "content/handbook/security/corporate/systems/google/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "dad3f047fe34e7002f0be7f020c1bae52a5a10447ba6836caf9f0bc9109c9500"
+    },
+    "content/handbook/security/corporate/systems/google/workspace/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/workspace/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "3aa5eb64ba857023bf4d9ddf23e61435d399254b25c0866597a4897ffb54662d"
+    },
+    "content/handbook/security/corporate/systems/google/user/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/user/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b8f26878eb7fd90dee1a4ae799cc7407c795182bf84bc5596bf59188be1aac5d"
+    },
+    "content/handbook/security/corporate/systems/google/user/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/user/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f8d2c3475ea81dd15dc2d65a9d580f6b5b9367e8a90857376104f1ce3c39d272"
+    },
+    "content/handbook/security/corporate/systems/google/mail/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/mail/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0eb9a86e97e489aacc1940c2ef97869b4491335dbfb8993134a408512d0f6904"
+    },
+    "content/handbook/security/corporate/systems/google/mail/verification/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/mail/verification/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "29194749a9612ff59a35422285e6e1f41a8f48daa5f58e7d4bb28f6a4b2492ff"
     }
   }
 }
