@@ -24,7 +24,7 @@ stale: false
 
 ユーザーに対して新しい請求アカウントメンバーシップを作成しても、Zuora の `Sold To:` 連絡先は更新されません。
 
-## サブスクリプション管理連絡先を追加する
+## サブスクリプション管理連絡先を追加する {#add-subscription-management-contact}
 
 請求アカウントメンバーシップを作成して、追加の CustomersDot ユーザーにサブスクリプションへのアクセスを提供します。
 
@@ -43,7 +43,7 @@ stale: false
 
 サブスクリプションオーナーの変更、所有権移譲、組織からすでに離脱した別の人がセットアップしたサブスクリプションへのアクセス回復のリクエストには、このワークフローを使用します。
 
-### セルフサービスオプション
+### セルフサービスオプション {#self-service-option}
 
 [Support::L&R::Change Customers Portal Contact](https://gitlab.com/gitlab-com/support/support-ops/zendesk-global/macros/-/blob/master/macros/active/Support/Self-Managed/Change%20Customers%20Portal%20Contact.yaml) マクロを使ってリクエスト者がセルフサービスで対応できるように検討してください。**重要:** 既存の `Sold To:` 連絡先を CC として追加してはいけません。リクエスト者にメールアドレスが見えてしまうと、個人データ漏えいとみなされます。
 
@@ -124,7 +124,7 @@ stale: false
 1. [請求アカウントメンバーシップを削除するワークフロー](#remove-a-billing-account-membership) に従って、以前の `Sold To:` 連絡先のサブスクリプションとの関連付けを削除します。
 1. [CustomersDot を使って Zuora の Sold To 連絡先を更新するワークフロー](#update-zuora-sold-to-contact-using-customersdot) に従います。
 
-#### 既存でない CustomersDot ユーザーの場合のプロセス
+#### 既存でない CustomersDot ユーザーの場合のプロセス {#process-for-non-existing-customersdot-user}
 
 メール検索でリクエスト者が既存の CustomersDot ユーザーでない場合:
 

@@ -19,7 +19,7 @@ stale: false
 - [ベンダードキュメント - Google ドライブのファイル](https://support.google.com/drive/answer/2494822?hl=en&ref_topic=7000947)
 - [ベンダードキュメント - Google ドライブのフォルダ](https://support.google.com/drive/answer/7166529?hl=en&co=GENIE.Platform%3DDesktop)
 
-## Google ドライブの権限レベル
+## Google ドライブの権限レベル {#google-drive-permission-levels}
 
 - `Viewer` (閲覧者) - 閲覧はできますが、ファイルを変更したり他者と共有したりすることはできません
 - `Commenter` (コメント可) - コメントや提案はできますが、ファイルを変更したり他者と共有したりすることはできません
