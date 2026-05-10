@@ -1,6 +1,6 @@
 ---
 title: "GitLab BV (フィンランド) 福利厚生"
-description: "オランダ在住のチームメンバー向けの GitLab BV (フィンランド) 福利厚生。"
+description: "フィンランド在住のチームメンバー向けの GitLab BV (フィンランド) 福利厚生。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-finland/
 upstream_sha: 9bd896709582cfb6bccdb0d721755db917231bc6
 translated_at: "2026-05-07T13:21:11Z"

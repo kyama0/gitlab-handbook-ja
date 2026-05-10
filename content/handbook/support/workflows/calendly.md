@@ -96,7 +96,7 @@ Zapが正常に動作している場合、1〜2分以内にカレンダーイベ
 
 個人のCalendlyお客様向けイベントに [**必須の質問** を追加](https://help.calendly.com/hc/en-us/articles/226893168#invitee-question-and-answer-types-0-5) してください。この質問では、お客様があなたとスケジュールする際にGitLab Supportのチケット番号を入力するように求めます。これによりカレンダーイベントにチケット番号が表示され、他のメンバーが通話に参加してサポートする際の文脈が提供されます。
 
-## シングルユースCalendlyリンクの生成
+## シングルユースCalendlyリンクの生成 {#generating-a-single-use-calendly-link}
 
 ### Chrome プラグイン / Firefox 拡張機能を使用する
 
@@ -231,7 +231,7 @@ PagerDutyシフトをブロックするのと同じ原則を使い、
 1. 同僚の `…@gitlab.com` エントリ経由で、同僚のカレンダーを利用可能チェックに追加します。
 1. 通話のスケジュールが完了したら、そのエントリを再度削除します。
 
-## 提案
+## 提案 {#suggestions}
 
 Ben Prescott
 
