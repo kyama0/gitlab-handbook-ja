@@ -23719,6 +23719,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "3872b5a3af195ae38e51d8e86360a33ba8d40a91089334bd7850a70535010f1f"
+    },
+    "content/handbook/sales/insidesales.md": {
+      "path": "content/handbook/sales/insidesales.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c30c23ee8ce2b2574a70d6278588ee5189f4442b6e1b4aef507839358bebbe7a"
+    },
+    "content/handbook/sales/it-agility-director-interview.md": {
+      "path": "content/handbook/sales/it-agility-director-interview.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "da44c4eecbc8120f3fa652bdbf7d9429a2d415e737acde127ee1453c420ed6f9"
+    },
+    "content/handbook/sales/meddppicc.md": {
+      "path": "content/handbook/sales/meddppicc.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "803cadf02c319c0bd37ce10eb05c8b7fd06ef3b93fe4640a0e73fe5a4f7c1dc1"
+    },
+    "content/handbook/sales/negotiate-to-close.md": {
+      "path": "content/handbook/sales/negotiate-to-close.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "10943c45646f22c20746698f5b217c1e9248a497fb4ef1f0131ee52abdf56ac2"
+    },
+    "content/handbook/sales/prospect-engagement-best-practices.md": {
+      "path": "content/handbook/sales/prospect-engagement-best-practices.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f7da25af6a8f77ddbfa1fe3316922fef8707c73db730df20bb3a50be4c95668f"
+    },
+    "content/handbook/sales/prospecting.md": {
+      "path": "content/handbook/sales/prospecting.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8d052c26389af7c7e829d35883be83f0b639299b00dd434e44a4d5093b235a8f"
+    },
+    "content/handbook/sales/public-sector.md": {
+      "path": "content/handbook/sales/public-sector.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "478216c6aaf8b758a7af53df6e8d4ddc4e59aa5fda56793c8a6c48e20cbc7484"
+    },
+    "content/handbook/sales/qualification-questions.md": {
+      "path": "content/handbook/sales/qualification-questions.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fa9de697b2e99679e1fcf90d8fda587111aa6ae8c3a1463f5f917d2a6bc0f9a2"
+    },
+    "content/handbook/sales/revenue-programs.md": {
+      "path": "content/handbook/sales/revenue-programs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b814d47d188d446862ea266a150ca98a96a92b03be722b7a36b7fa0e4862011b"
+    },
+    "content/handbook/sales/sales-meetings.md": {
+      "path": "content/handbook/sales/sales-meetings.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f836e77fa70a127a602c5969a8f45f1ff817a238b7d1e0d27c3c482dd49556d7"
     }
   }
 }
