@@ -246,7 +246,7 @@ GitLab Premium および GitLab Ultimate Opportunity をより多く特定する
   - [Dynamic Application Security Testing (DAST)](https://docs.gitlab.com/ee/user/application_security/dast/) - レビューアプリケーションを分析して潜在的なセキュリティ問題を特定
   - [Dependency Scanning](https://docs.gitlab.com/ee/user/application_security/dependency_scanning/) - サードパーティの依存関係を評価して潜在的なセキュリティ問題を特定
   - [Container Scanning](https://docs.gitlab.com/ee/user/application_security/container_scanning/) - Docker イメージを分析し潜在的なセキュリティ問題をチェック
-  - [Security Dashboard](https://docs.gitlab.com/ee/user/application_security/security_dashboard/#project-security-dashboard) - 各プロジェクトのおよびプロジェクト全体での最新のセキュリティステータスを可視化
+  - [Security Dashboard](https://docs.gitlab.com/ee/user/application_security/security_dashboard/#project-security-dashboard) - 各プロジェクトおよびプロジェクト全体での最新のセキュリティステータスを可視化
   - [Security Metrics and Trends (future)](https://gitlab.com/gitlab-org/gitlab-ee/issues/6954) - 発見、対処、解決された脆弱性の数と、完全なサイクルに費やされた時間のメトリクスと履歴データ
 
 #### コンプライアンス
