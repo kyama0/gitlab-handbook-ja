@@ -2,6 +2,11 @@
 # REVIEW: Possible overlap with processes/activity-capture/customer-success-plans.md. See restructuring issue #628 for details.
 title: カスタマーサクセスプラン
 description: カスタマーサクセスプランは、GitLab 採用を通じて価値を実現するための、顧客向けかつ相互合意のロードマップです。これは GitLab ソリューションアーキテクチャと顧客の協働の成果であり、顧客が成功することを確実にすることを主目的としています。このプロセスは、製品スコープの会話（特定の機能・機能群に焦点を当て、DevSecOps の特定のステージのサブセットに限定された議論）から、ソリューション（特定のペインポイントの解決）または戦略（トップレベルの戦略イニシアチブに紐づく、組織横断のプロセス革新と変革を通じてビジネス成果を形作る）スコープへのシフトを支援するように設計されています。このサクセスプランは販売前プロセスから始まり、販売後のサクセスプランへと引き継がれることを意図しています。**場合によっては、販売後のサクセスプランに明確な GitLab オーナーがいないことがあります。これがあるからといって、必要な場合にソリューションアーキテクトがサクセスプランを作成し、顧客レビューを行うことを妨げてはなりません。** カスタマーサクセスプランは動的であることが意図されており、合意された頻度で定期的にレビューされるべきです。
+upstream_path: /handbook/solutions-architects/processes/customer-success-plan/
+upstream_sha: 1fce460c6f8e6db987516c8a24367667792e8ff9
+translated_at: "2026-05-09T00:00:00Z"
+translator: claude
+stale: false
 
 ---
 
