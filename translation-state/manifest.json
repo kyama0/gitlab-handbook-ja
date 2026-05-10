@@ -22215,6 +22215,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "2da8b9f029453edb1df1d11bbc3f880537b65d9e8ea0ae9092f039639e8c6343"
+    },
+    "content/handbook/security/corporate/systems/vpn/_index.md": {
+      "path": "content/handbook/security/corporate/systems/vpn/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "fd641be970977e317748fea50c1ba583bc415b5fa565790ed17330a93781490a"
+    },
+    "content/handbook/security/corporate/systems/vpn/troubleshooting/_index.md": {
+      "path": "content/handbook/security/corporate/systems/vpn/troubleshooting/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cb808d02b36bb246c08811d8c333ce197d335b654675cfb9e3694f50d78d4c4d"
+    },
+    "content/handbook/security/corporate/systems/vpn/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/vpn/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "75197831cbe1f1b531376974fee72a737c3042ed5b02e0f5e4bbf8617773eec4"
+    },
+    "content/handbook/security/corporate/systems/trainingctl/_index.md": {
+      "path": "content/handbook/security/corporate/systems/trainingctl/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e21066f2fa7c0bd438dd71cb6e184ac8745914c1cd8c195b42d0882349a99064"
+    },
+    "content/handbook/security/corporate/systems/slack/_index.md": {
+      "path": "content/handbook/security/corporate/systems/slack/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "8558d607d07c62caaf4884b82c2acdc3f87bb32412214fb42947c8f80b29dd53"
+    },
+    "content/handbook/security/corporate/systems/slack/webhooks/_index.md": {
+      "path": "content/handbook/security/corporate/systems/slack/webhooks/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "be54225d7548149e9d54f92449b8c44f4cba1659c7e9625a2c755051642617b0"
+    },
+    "content/handbook/security/corporate/systems/slack/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/slack/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "6b0fae0dceba9b29de6b8c421fd5149ea47d55182f8ba9088bee47001ebcba62"
+    },
+    "content/handbook/security/corporate/systems/slack/groups/_index.md": {
+      "path": "content/handbook/security/corporate/systems/slack/groups/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "eeae51e676476a7df4c1cbcc0e7fc91b061e5c92b2e976f4b3edca0e594538ee"
+    },
+    "content/handbook/security/corporate/systems/slack/external-users/_index.md": {
+      "path": "content/handbook/security/corporate/systems/slack/external-users/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c3e691177418cec8a4f0cf611f8c81db5a6e208e82b4ecea2db4890c5a5c036f"
+    },
+    "content/handbook/security/corporate/systems/slack/channels/_index.md": {
+      "path": "content/handbook/security/corporate/systems/slack/channels/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "dd85b3f8ee12d93f89e56b7ad1afbfe22576bc1f69518010227c4e495b3b06b8"
     }
   }
 }
