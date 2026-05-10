@@ -23929,6 +23929,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "4ba8905f9b4a411a930ef39f412685f76e6b971a3c48959d7ff8f4b2da58611f"
+    },
+    "content/handbook/sales/training/sales-enablement-sessions/_index.md": {
+      "path": "content/handbook/sales/training/sales-enablement-sessions/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ad1c687bde45fbb40715d28159e4c63c5c809f1c67ed561b87e86e12f889ef68"
+    },
+    "content/handbook/sales/training/sales-enablement-sessions/enablement/_index.md": {
+      "path": "content/handbook/sales/training/sales-enablement-sessions/enablement/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ade0e1a52030f45b8a33ec6d59e0870ff1794078bc79515ef60519bf30be81e3"
+    },
+    "content/handbook/sales/training/sales-enablement-sessions/enablement/collaborating-community-programs.md": {
+      "path": "content/handbook/sales/training/sales-enablement-sessions/enablement/collaborating-community-programs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d73a1b8599348381af0e48c7c8806304c6ed1d70a17e3530fde5015bf46ef876"
+    },
+    "content/handbook/sales/training/field-certification/_index.md": {
+      "path": "content/handbook/sales/training/field-certification/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "970bfc30d50d2cbdcad685dfe79c71ad97926333782997a1ab04606df5a75fe3"
+    },
+    "content/handbook/sales/training/field-certification/csm.md": {
+      "path": "content/handbook/sales/training/field-certification/csm.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "52fc3858627decbaaf52ffe31e19eb32cbfe90a85366de27c95c1adfd7f273e2"
+    },
+    "content/handbook/sales/training/field-certification/sa.md": {
+      "path": "content/handbook/sales/training/field-certification/sa.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b1baff182ca724cb23aa3becb5c3bd1c8629a98c15ea98ad2eb322676c35f789"
+    },
+    "content/handbook/sales/training/field-certification/sal.md": {
+      "path": "content/handbook/sales/training/field-certification/sal.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "473eb33f69bd071862c8c4e3de5bdeda2926644f5227daf604e7752e231379fc"
+    },
+    "content/handbook/sales/territories/_index.md": {
+      "path": "content/handbook/sales/territories/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ac0ab54dd8c97a0bad8f1cf81fa0297bc19e05f025b5c4c3f020740d8dd213d"
+    },
+    "content/handbook/sales/territories/latam.md": {
+      "path": "content/handbook/sales/territories/latam.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0857afea85eb9be8294dae253e59489717111c29ca1f28dd3a5244a82817a5f2"
+    },
+    "content/handbook/sales/territories/territory-deprecate.md": {
+      "path": "content/handbook/sales/territories/territory-deprecate.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5294edfeb1312f09293e3c59fa25b08eb56d819bc6d2703cc673ad8ec7119df8"
     }
   }
 }
