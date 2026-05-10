@@ -11,20 +11,20 @@ stale: false
 
 Customer Support Operations チームは、Support Operations を担当するメンバーのオンコールローテーションを維持しています。このローテーションにより、サポートチームが常にサポートを提供できる状態を確保しています。
 
-{{% alert title="Pagerduty へのアクセス権がない場合" color="warning" %}}
+{{% alert title="PagerDuty へのアクセス権がない場合" color="warning" %}}
 
-Customer Support Operations チーム (または Customer Support Operations チームの特定の人) をページングする必要があるが Pagerduty へのアクセス権がない場合は、ページを送ってもらえるよう同僚に相談してください! 誰に依頼すればよいか分からない場合、一般的におすすめなのは以下の Slack チャンネルです。
+Customer Support Operations チーム (または Customer Support Operations チームの特定の人) をページングする必要があるが PagerDuty へのアクセス権がない場合は、ページを送ってもらえるよう同僚に相談してください! 誰に依頼すればよいか分からない場合、一般的におすすめなのは以下の Slack チャンネルです。
 
 - [#it_help](https://gitlab.enterprise.slack.com/archives/CK4EQH50E)
 - [#support_leadership](https://gitlab.enterprise.slack.com/archives/C01F9S37AKT)
 
-ロール上 Pagerduty へのアクセス権が必要な場合は、マネージャーに相談してアクセス権を取得してください。
+ロール上 PagerDuty へのアクセス権が必要な場合は、マネージャーに相談してアクセス権を取得してください。
 
 {{% /alert %}}
 
 ## Customer Support Operations のページング {#paging-customer-support-operations}
 
-Customer Support Operations チームをページングするには、Pagerduty で手動でトリガーする必要があります。手順:
+Customer Support Operations チームをページングするには、PagerDuty で手動でトリガーする必要があります。手順:
 
 1. gitlab.pagerduty.com にログインします
 1. ページ右上の `New Incident` ボタンをクリックします
@@ -42,7 +42,7 @@ Customer Support Operations チームをページングするには、Pagerduty 
 
 ### 特定の人をページングする {#paging-a-specific-person}
 
-Customer Support Operations チーム内の特定の人をページングする必要がある場合、Pagerduty で手動でトリガーする必要があります。手順:
+Customer Support Operations チーム内の特定の人をページングする必要がある場合、PagerDuty で手動でトリガーする必要があります。手順:
 
 1. gitlab.pagerduty.com にログインします
 1. ページ右上の `New Incident` ボタンをクリックします
