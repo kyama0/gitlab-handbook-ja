@@ -27,22 +27,22 @@ GitLab への参加おめでとうございます！このページは IT オン
    - [Google アカウントのセットアップ](#linux-step-3-google-account-setup)
    - [GitLab メールおよび GitLab.com アカウントへのアクセス](#linux-step-4-access-gitlab-email--gitlabcom-account)
 
-## 始める前に
+## 始める前に {#before-you-begin}
 
 個人のメールに Okta 有効化メールが届きます。これが GitLab のシステムへのアクセスを取得するための最初のステップです。
 
-## ラップトップセットアップ: MacBook
+## ラップトップセットアップ: MacBook {#laptop-setup-macbook}
 
 > **重要**: 開始日まで仕事用 MacBook にはアクセスできません。開始日に、このガイドに従ってください。
 
-### MacBook ステップ 1: Okta アカウントを有効化する
+### MacBook ステップ 1: Okta アカウントを有効化する {#macbook-step-1-activate-your-okta-account}
 
 1. モバイルデバイスで、個人のメールから Okta 有効化メールを確認します。
 1. メール内のリンクをクリックしてパスワードを設定します
 1. パスワードを設定すると、ブラウザは Okta ダッシュボードにリダイレクトされます。**重要: ステップ 2 のラップトップセットアッププロセスを完了する前に、Gmail（G Suite SSO Mail）または任意の Google アプリケーション（G Suite SSO Drive、G Suite SSO Calendar、G Suite SSO Account）を開かないでください。これらのアプリケーションを早く開くと、ラップトップからロックアウトされます。**
 1. Okta から **Security Method enrolled** という件名のフォローアップメールが届きます。
 
-### MacBook ステップ 2: 初期セットアップ
+### MacBook ステップ 2: 初期セットアップ {#macbook-step-2-initial-setup}
 
 > **重要**: ラップトップで `Remote Management` が利用できない場合は、[Jamf MDM Setup Guide](/handbook/security/corporate/systems/jamf/setup/) を使用してデバイスを手動で登録してください。
 
@@ -93,7 +93,7 @@ GitLab への参加おめでとうございます！このページは IT オン
   </li>
 </ol>
 
-### MacBook ステップ 3: システム構成
+### MacBook ステップ 3: システム構成 {#macbook-step-3-system-configuration}
 
 <ol>
   <li><b>Welcome to your new Mac!</b> 画面で、アプリケーションが自動的にインストールされる間お待ちください
@@ -130,7 +130,7 @@ GitLab への参加おめでとうございます！このページは IT オン
   </li>
 </ol>
 
-### MacBook ステップ 4: Google アカウントのセットアップ
+### MacBook ステップ 4: Google アカウントのセットアップ {#macbook-step-4-google-account-setup}
 
 1. Google Chrome を開きます
 1. **Sign in to Chrome** ウィンドウで、**Sign in** をクリックします
@@ -143,7 +143,7 @@ GitLab への参加おめでとうございます！このページは IT オン
 1. **Your organization will manage this profile** が表示されたら、**Continue** をクリックします
 1. **Turn on Sync** ウィンドウで、**Yes, I'm in** をクリックします
 
-### MacBook ステップ 5: Okta アカウントの確認
+### MacBook ステップ 5: Okta アカウントの確認 {#macbook-step-5-okta-account-verification}
 
 <ol>
   <li>Chrome で、https://gitlab.okta.com に移動し、Okta Verify が開くのを待ちます
@@ -174,24 +174,24 @@ GitLab への参加おめでとうございます！このページは IT オン
    </li>
 </ol>
 
-### MacBook ステップ 6: GitLab メールおよび GitLab.com アカウントへのアクセス
+### MacBook ステップ 6: GitLab メールおよび GitLab.com アカウントへのアクセス {#macbook-step-6-access-gitlab-email--gitlabcom-account}
 
 1. Okta で **G Suite SSO Mail** をクリックして、GitLab メールにアクセスします
 1. 「**Welcome to GitLab Onboarding, `yourname`!**」というタイトルのメールを GitLab メールで確認します
 1. メール内の指示に従って GitLab.com アカウントをセットアップし、オンボーディング Issue にアクセスします
 
-## ラップトップセットアップ: Linux
+## ラップトップセットアップ: Linux {#laptop-setup-linux}
 
 このガイドは Ubuntu を使用していることを前提としています。コマンドの構文は、選択したディストリビューションに合わせて調整してください。
 
-### Linux ステップ 1: Okta アカウントを有効化する
+### Linux ステップ 1: Okta アカウントを有効化する {#linux-step-1-activate-your-okta-account}
 
 1. モバイルデバイスで、個人のメールから Okta 有効化メールを確認します。
 1. メール内のリンクをクリックしてパスワードを設定します
 1. パスワードを設定すると、ブラウザは Okta ダッシュボードにリダイレクトされます
 1. Okta から **Security Method enrolled** という件名のフォローアップメールが届きます
 
-### Linux ステップ 2: Okta セットアップ
+### Linux ステップ 2: Okta セットアップ {#linux-step-2-okta-setup}
 
 > **重要**: Linux 上のウェブブラウザは、Dell ラップトップの指紋リーダーにアクセスできません。Okta のパスキーを保存するには、YubiKey または携帯電話のいずれかを使用する必要があります。<br>
 ラップトップとともに YubiKey は受け取れませんが、[こちら](/handbook/security/corporate/systems/yubikey/purchasing/) の手順に従ってリクエストできます。<br>
@@ -224,7 +224,7 @@ GitLab への参加おめでとうございます！このページは IT オン
   </li>
 </ol>
 
-### Linux ステップ 3: Google アカウントのセットアップ
+### Linux ステップ 3: Google アカウントのセットアップ {#linux-step-3-google-account-setup}
 
 1. Google Chrome を開きます
 1. **Sign in to Chrome** ウィンドウで、**Sign in** をクリックします
@@ -236,7 +236,7 @@ GitLab への参加おめでとうございます！このページは IT オン
 1. **Your organization will manage this profile** が表示されたら、**Continue** をクリックします
 1. **Turn on Sync** ウィンドウで、**Yes, I'm in** をクリックします
 
-### Linux ステップ 4: GitLab メールおよび GitLab.com アカウントへのアクセス
+### Linux ステップ 4: GitLab メールおよび GitLab.com アカウントへのアクセス {#linux-step-4-access-gitlab-email--gitlabcom-account}
 
 1. 「**Welcome to GitLab Onboarding, `yourname`!**」というタイトルのメールを GitLab メールで確認します
 1. メール内の指示に従って GitLab.com アカウントをセットアップし、オンボーディング Issue にアクセスします
