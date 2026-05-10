@@ -22635,6 +22635,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "29194749a9612ff59a35422285e6e1f41a8f48daa5f58e7d4bb28f6a4b2492ff"
+    },
+    "content/handbook/security/corporate/systems/google/mail/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/mail/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e611c1bc0c4fbd9655ae9a2915e70e9e38b7e3623ff9f494f9ec143fc63077df"
+    },
+    "content/handbook/security/corporate/systems/google/mail/delegation/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/mail/delegation/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "385548b51028d301810b038bce18dba699d8901906112a95a284b129463346f3"
+    },
+    "content/handbook/security/corporate/systems/google/groups/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/groups/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e65cd6c529e6a248f6f21875a24faa5f69d4f0f673ee5e6cbf91a53375e287fb"
+    },
+    "content/handbook/security/corporate/systems/google/groups/automated-groups/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/groups/automated-groups/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5689d3f14b4a74288f79bf50ae497031d636efffaf2ad6e765f217a467dbbc8b"
+    },
+    "content/handbook/security/corporate/systems/google/drive/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/drive/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "96d4e3c1ee5b7b21abec823b742c6e5d96a8a0b99e438a57f96c029e8fca8ce5"
+    },
+    "content/handbook/security/corporate/systems/google/drive/internal-sharing/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/drive/internal-sharing/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "24ddabc190369c6db32fb77414b779c88950a47e0898420a47a30100074a5578"
+    },
+    "content/handbook/security/corporate/systems/google/drive/external-sharing/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/drive/external-sharing/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "6bc94567c654d028482841e7d55e416f160e02db52dd3d1911aaff2b98a0ec66"
+    },
+    "content/handbook/security/corporate/systems/google/drive/ar/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/drive/ar/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "243127a71764d174b34448b44ec74148c9120d7ab326ec626441c512d83e4150"
+    },
+    "content/handbook/security/corporate/systems/google/cloud/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/cloud/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "88292bfb7881c44e27611a99be0a73a5d09e64fb467ddd792d830547dcab213d"
+    },
+    "content/handbook/security/corporate/systems/google/cloud/sys/_index.md": {
+      "path": "content/handbook/security/corporate/systems/google/cloud/sys/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d7cbd2d0a3f3f2a8ad2d8d542edcb4b6c33b0da877e5c8e6262caee34f6d528e"
     }
   }
 }
