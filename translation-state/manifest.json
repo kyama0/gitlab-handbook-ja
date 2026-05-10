@@ -22005,6 +22005,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "1e62a9df02d788a7a5cf05e4ff9504e87ea54c1624a19e99b67127c850923401"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/gl-support-bot-admin.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/gl-support-bot-admin.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "544677b7aa51c838839246ab4d5ace03bd37727377b77ae56f2c5eb58cc8f76d"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/gl-support-bot.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/gl-support-bot.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9a82c683f19ab107a5f3aaecbdc30a31d0c1638a57caf2b735d68905d41c593f"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/iterations.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/iterations.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "68efd41a30387f5769719ee1bc3f9a1e914cae40612e24896cb0101ecb764728"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/labels.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/labels.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "856b4317e6c646c1612d7ad5fb32fd4520cc978300a810c220a393cd06ffcbe3"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/milestones.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/milestones.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0001a8771fb2713601210cd1f7f084192f7da81b82b06ed95f77f8e6758fb5b9"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/mirroring.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/mirroring.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0776eab6eb69236d01db6d0bd551ef1661578ef1a0689fa7a8aa653e3c4b995f"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/project-setup.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/project-setup.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1c87924d365e1c74247e83867216f6860092b0d8122dbc56cc89c623638a336d"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/support-team-yaml-files.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/support-team-yaml-files.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4230001a725ac7e10e36f85cf7f257872bda650e7d7d3f44360d7144a7dba906"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/working-merge-requests.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/working-merge-requests.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9ccc99e9fe2c8ebce9764103cccfdc5c71e82ade290a30b72fbb7af22045919c"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/issues/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/issues/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "dc325d3ab9742556bd7c8eaaf9f1f8989f20703e19348ad0fc5ff7d5b474c3d6"
     }
   }
 }
