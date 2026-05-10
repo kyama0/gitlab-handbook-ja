@@ -46,7 +46,7 @@ Field Accreditation プログラムには、以下の機能とソフトスキル
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vR-T2H_KC9sJ5RwDLubKccE7ZdBJZGlfHPqTovGPD0qgQbR40u-G5loZsPMc4MVX4LjzLjBDH6XhEfZ/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 
-**注:* プロセスは引き続き成熟し進化しています。最新版を見るには、以下のスライドを確認してください。*
+**注:** プロセスは引き続き成熟し進化しています。最新版を見るには、以下のスライドを確認してください。
 
 <figure class="video_container">
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQNYu_4jB3j3i_fYukM3yMtcbhgbpKbivbaaiKnuih3X6pdn-oI9ic0k6TqtwP2qjqVAaC-HXIC0uD7/embed?start=false&loop=false&delayms=3000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
