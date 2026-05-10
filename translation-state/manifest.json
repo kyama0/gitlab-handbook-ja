@@ -23089,6 +23089,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "abe47959f7484841e4c9b051f73e3a8611fbf957795d9d142c605b2289574f81"
+    },
+    "content/handbook/security/corporate/systems/aws/billing/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/billing/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "277513d2dd3a9a17405cf9075f17dd196cc9dd7977db63100db433275c21700e"
+    },
+    "content/handbook/security/corporate/systems/accessctl/_index.md": {
+      "path": "content/handbook/security/corporate/systems/accessctl/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2e0077aad948f04f3361cd53c703a3f28cbc5ce9e9b8c48060cb605772bcf758"
+    },
+    "content/handbook/security/corporate/systems/accesschk/_index.md": {
+      "path": "content/handbook/security/corporate/systems/accesschk/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a8614a952fbf2eb4539f39a3f19db337fcb0e46aef72c8d360586176f5daabd"
+    },
+    "content/handbook/security/corporate/systems/1password/_index.md": {
+      "path": "content/handbook/security/corporate/systems/1password/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0b4ab52db1031de887450f27706c5f141c03fb6156695ed3a0b764ea1769fede"
+    },
+    "content/handbook/security/corporate/systems/1password/vault/_index.md": {
+      "path": "content/handbook/security/corporate/systems/1password/vault/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6b6c0b5f60753229faae5e0313e754cd19a7dac7e432d7d2e2f4891c53c70aed"
+    },
+    "content/handbook/security/corporate/systems/1password/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/1password/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "287f16abdda7b3495aeff975d63588e879fc0162a2dc3078e3a6dfad6f8e1a0b"
+    },
+    "content/handbook/security/corporate/systems/1password/passkey/_index.md": {
+      "path": "content/handbook/security/corporate/systems/1password/passkey/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e2031c52e086172605827ccfc2346338203d162732acaff4f396c6b78afcdeb5"
+    },
+    "content/handbook/security/corporate/systems/1password/group/_index.md": {
+      "path": "content/handbook/security/corporate/systems/1password/group/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d6e7309f0000bf202f73de06a7b246bc821d7aa7d2b40d2c2e459c6a6b305526"
+    },
+    "content/handbook/security/corporate/support/_index.md": {
+      "path": "content/handbook/security/corporate/support/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "522b80015a2b48b4cbab059a6fa93fe699d628b84616448ab0ffe3cea9f7dc50"
+    },
+    "content/handbook/security/corporate/support/usb-encryption/_index.md": {
+      "path": "content/handbook/security/corporate/support/usb-encryption/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "51fea8efed4fc21ec065e31a9545acac5728014174236b4cd8006b18326e8f76"
     }
   }
 }
