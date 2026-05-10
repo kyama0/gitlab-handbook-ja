@@ -24069,6 +24069,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "7aff47be6eb27bb8159da7b3fd41ea914b64aa410c10471a88a35cbfa13013e5"
+    },
+    "content/handbook/sales/readmes/_index.md": {
+      "path": "content/handbook/sales/readmes/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "237c47deeea415e8eec75061a758644bce2b5f5aba9b3986ecad06ae769001c4"
+    },
+    "content/handbook/sales/readmes/ian-steward.md": {
+      "path": "content/handbook/sales/readmes/ian-steward.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8466186e97c4ba08c2889cf804a7b25fb81d5c84c505ced89389d78330c83a44"
+    },
+    "content/handbook/sales/readmes/noah-ing.md": {
+      "path": "content/handbook/sales/readmes/noah-ing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9287dee2228fc7acc3c816494b93344de39a48d532b9f338717c589e846167df"
+    },
+    "content/handbook/sales/readmes/tim-poffenbarger.md": {
+      "path": "content/handbook/sales/readmes/tim-poffenbarger.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "58de3e41ba5de5c2d459b605b432de99847699c94e5cdcbf93f6e4ffe2b56884"
+    },
+    "content/handbook/sales/qbrs/index.md": {
+      "path": "content/handbook/sales/qbrs/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c0681cbf3d43555055db65cde978ae6831a9e1731b56996ba092a34f3d0d1c2b"
+    },
+    "content/handbook/sales/process/_index.md": {
+      "path": "content/handbook/sales/process/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cd28d5a2a4728265e3150b73a77e0df0a4f2e4a819ad4c794b5ad851637d75b2"
+    },
+    "content/handbook/sales/process/account-management.md": {
+      "path": "content/handbook/sales/process/account-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53db63e22fa1a04ab73df4944c8f7292993b041269c8fe4d4503261c51d1f18b"
+    },
+    "content/handbook/sales/process/version-check/index.md": {
+      "path": "content/handbook/sales/process/version-check/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0d774e87567599573a991d1a7f6346c2fda9e830fb24f1cc6d68657012976269"
+    },
+    "content/handbook/sales/playbook/_index.md": {
+      "path": "content/handbook/sales/playbook/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1bf5d4e9e78e4b79c3783e250e2c0acda95227da1554c645049cbc6d96659d5d"
+    },
+    "content/handbook/sales/playbook/discovery/index.md": {
+      "path": "content/handbook/sales/playbook/discovery/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "95cdaa58e2391f974444008d3211eb5a5cbbccbfe40c10f67665d1e3f7630729"
     }
   }
 }
