@@ -104,7 +104,7 @@ Compute インスタンスや GKE クラスターと同様に、Cloud Functions 
 
 [RED、ORANGE、YELLOW に分類されたデータ](/handbook/security/policies_and_standards/data-classification-standard/#data-classification-levels) は、顧客データや個人データとともに、テストまたはデモインスタンスにコピーまたは保存してはなりません。
 
-#### クリーンアップ
+#### クリーンアップ {#clean-up}
 
 テストインスタンスは一時的なものでなければなりません。
 
