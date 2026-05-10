@@ -23439,6 +23439,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "a3fcc0592a1c24f9b148b0413e9a29deea52e5926456abedc6e220169cb598d3"
+    },
+    "content/handbook/security/corporate/end-user-services/onboarding101/linux-onboarding101.md": {
+      "path": "content/handbook/security/corporate/end-user-services/onboarding101/linux-onboarding101.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e03dd05ee00d4af6c66c9defdfb818f767434e8894b8894fbd1ebd319c7353d6"
+    },
+    "content/handbook/security/corporate/end-user-services/onboarding101/onboarding-mobile-devices.md": {
+      "path": "content/handbook/security/corporate/end-user-services/onboarding101/onboarding-mobile-devices.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c02cc7547a2c71c56adc3b248f3bc0df414b1ba6513ad22b3a1c09e31fa1fe68"
+    },
+    "content/handbook/security/corporate/end-user-services/okta/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/okta/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "232562c68a9f9e14c44f45cb4da8544aa4f952c169c7bc4eaa28761225ddda6e"
+    },
+    "content/handbook/security/corporate/end-user-services/okta/okta-enduser-faq/index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/okta/okta-enduser-faq/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "be13d4562e28954635c92e9729418e88477dfef0ad6d7d87bb94ebf59a7f9372"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/_index-old.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/_index-old.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b6e54e7e11460b1951d304bf9326d928a329e0d649a048575bba7d0e1bf3f7c6"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c5431359a17a15e17353acad99563dff0ef6c5e5388fa43530cd75bb9a8d8fde"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-wipe/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-wipe/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1dfa75f7a260617290b3889d0f792390d49881542b2975acdb8d750983f8cb7c"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-vendors/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-vendors/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cc2b90ebeeffc5dfc4bf70e2f424fa394228b28f3329322fa03248fe1a67d555"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fc7c3e7b1781f1f2ad7452f4ffeaf6cc753434f839eeade9f84abf844858c6cf"
+    },
+    "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/updates/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/laptop-management/laptop-security/updates/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "25a190d3ee79b217d4186c67f1684a4138cdf009da116be732aa5cdb70de72e8"
     }
   }
 }
