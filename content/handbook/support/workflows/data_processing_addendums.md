@@ -24,7 +24,7 @@ stale: false
 
 1. 自分でファイルを添付できない場合は、[legal@gitlab.com](mailto:<legal@gitlab.com>?subject=Signed DPA) に Salesforce アカウントへのリンクを添えて転送してください。
 
-### スクリーンショット
+### スクリーンショット {#screenshots}
 
 1. ![Salesforce ID in Zendesk organization](/images/support/workflows/assets/dpa_1.png)
 1. ![Salesforce ID in Zendesk ticket note](/images/support/workflows/assets/dpa_2.png)
