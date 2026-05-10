@@ -28,7 +28,7 @@ stale: false
 
 #### abuse@gitlab.comへのメール
 
-1. 詳細な不正利用報告は `abuse@gitlab.com` から報告できます。
+1. 詳細な不正利用報告は `abuse@gitlab.com` を通じて報告できます。
     1. より詳細な報告を送信したい場合は、`abuse@gitlab.com` にメールを送信していただければ、私たちのチームのメンバーがあなたの報告を確認します。
 
 ### gitlab.comアカウントの復元
