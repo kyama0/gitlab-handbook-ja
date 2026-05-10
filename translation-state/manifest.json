@@ -21795,6 +21795,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "b6bd7545058d218e89d821e08483776ca7e62a42c02fdb98ef227078c86bc6de"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/apps/development.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/apps/development.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "8c04beeaa6c4046a4dea1e545b108702ed1ae51fa435f1f4cf56cbdc6eaa7fac"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/apps/global.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/apps/global.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4d7b088a369ee5a86c852e2009db8fc106af8a20e6388e41e73792a568ef6fd2"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/apps/us-government.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/apps/us-government.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "71332f658efe952440a025b62a30b543bea2ce26bdb1787265a2ed2a03dedc4b"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/api/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/api/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cc1f15aedaf39a89b5c9cc6b699807516e6500ee94c0dce37940e07573a02a2a"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/analytics/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/analytics/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "22c75a7d8ceb8e0e1de12a84a8acdadaa04d1a0c9112b0bce9c0627ef7316483"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/analytics/dashboards.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/analytics/dashboards.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "bf54e854b402bbabd68f492627c1c8d61fb6b31ccf5e9f9055e114941f02cb76"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/analytics/reports.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/analytics/reports.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2f2bb2647ef8503db39a36884ef5863c415fc1a01b97a42b231be993ec7cb26a"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/agent-workspace/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/agent-workspace/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "6fd370bc7b4a86886acc06011b365506019dc5d313bd450cd5ff01b93a88f300"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/access-logs/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/zendesk/access-logs/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "42d41e646c74f984702fbd684ef5dcedb0266fc4f0127592d88856edda8e416a"
+    },
+    "content/handbook/security/customer-support-operations/workato/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/workato/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2cc27edabb206edf5300f4855ef1744cb7e75633dcb3eaaca0bef47dc6b62dfe"
     }
   }
 }
