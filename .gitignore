@@ -20,5 +20,5 @@ coverage/
 
 # Hugo
 public/
-resources/
+/resources/
 .hugo_build.lock
