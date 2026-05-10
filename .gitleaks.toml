@@ -59,6 +59,30 @@ regexes = [
   '''Authorization:\s+Bearer\s+LEAKED_TOKEN''',
 ]
 
+# Zendesk API ドキュメント (zendesk/api/_index.md) のコードブロックには
+# `curl ... -u jcolyer@example.com:my_password` という *サンプルの Basic 認証情報* が
+# 含まれており、gitleaks の `curl-auth-user` ルールが「本物の認証情報」として誤検知する。
+# これは upstream 由来の固定サンプル（メールアドレス `jcolyer@example.com` と
+# 文字列 `my_password`）で、実際の機密情報ではないため許可する。
+#
+# 設計判断:
+#   - `regexTarget = "line"` で行全体にマッチさせ、`my_password` という固定文字列
+#     を含む `-u ...` の行のみを許可する。`-u user:` 部分が一致しても通せるよう、
+#     プレースホルダーを示す固定値（`example.com` ドメインかつ `my_password` パスワード）
+#     を含む行に限定する。
+[[rules]]
+id = "curl-auth-user"
+description = "Curl basic-auth -u flag (overridden to allow my_password placeholder)"
+regex = '''\bcurl[^\n]*?\s-u\s+["']?([^"'\s:]+):([^"'\s]+)["']?'''
+keywords = ["curl"]
+
+[rules.allowlist]
+description = "Zendesk API docs sample placeholder my_password"
+regexTarget = "line"
+regexes = [
+  '''-u\s+jcolyer@example\.com:my_password''',
+]
+
 # Education Services の教材ページには学習用のサンプル値が含まれており、
 # gitleaks の `gitlab-runner-authentication-token` / `private-key` ルールに
 # 実トークンとして検出される。これらは upstream の教育コンテンツに由来する
