@@ -23649,6 +23649,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "cdb3eb3310770cac3869674f5555ccc07df92d9ff456c9449a0e84b34ba9ae97"
+    },
+    "content/handbook/security/corporate/automation/slack/helpdesk/_index.md": {
+      "path": "content/handbook/security/corporate/automation/slack/helpdesk/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3d24718d900ddee2a617b58bd9f7a2aea9ed9ab13a10108a4d62149e3cf748f5"
+    },
+    "content/handbook/security/corporate/automation/google-workspace/deprovisioning/_index.md": {
+      "path": "content/handbook/security/corporate/automation/google-workspace/deprovisioning/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a2762af44c20e3a870e246b235a93ab757915561056ef88cb8628a9982ea6e67"
+    },
+    "content/handbook/security/best-practices/google-cloud-security-best-practices.md": {
+      "path": "content/handbook/security/best-practices/google-cloud-security-best-practices.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6125a1adf417c693aebaf37002d5953d6bc72210d092f42457fe0e0caf58fb17"
+    },
+    "content/handbook/security/best-practices/supply-chain-security-for-dependencies.md": {
+      "path": "content/handbook/security/best-practices/supply-chain-security-for-dependencies.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f7e3ab88a2c8768fa515be751bf7846f4712893513fd220c511a9a4b45158c09"
+    },
+    "content/handbook/sales/_index.md": {
+      "path": "content/handbook/sales/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ba9405168639a9d12fc0b9845eb751e161014b6c603215959858fa08c4016305"
+    },
+    "content/handbook/sales/build-value-with-customers.md": {
+      "path": "content/handbook/sales/build-value-with-customers.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "631a49749e3cd274058715d3148e3ae3dc35e153c1deb75c9caac61be78a0cc3"
+    },
+    "content/handbook/sales/crodevday.md": {
+      "path": "content/handbook/sales/crodevday.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f8abb1f8323e58780a20ba37ccc2b87527d0f8fee026cf9d2a2d48de913b2d0d"
+    },
+    "content/handbook/sales/customer-partner-fireside-chat.md": {
+      "path": "content/handbook/sales/customer-partner-fireside-chat.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cafc0997357ad7d2f07b801b4c373302f5efdacf55c43b4770f537c9b3205a52"
+    },
+    "content/handbook/sales/faq-from-prospects.md": {
+      "path": "content/handbook/sales/faq-from-prospects.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e72ad05546bbd6c5b6600f2d27d22fab9ad45644cb6b46742033d7736177545d"
+    },
+    "content/handbook/sales/field-manager-development.md": {
+      "path": "content/handbook/sales/field-manager-development.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3872b5a3af195ae38e51d8e86360a33ba8d40a91089334bd7850a70535010f1f"
     }
   }
 }
