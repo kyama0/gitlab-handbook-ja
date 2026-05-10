@@ -23859,6 +23859,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "271aca580872b12c53e56db68f225f0bd35797cfe3affab2c46bc7016801b332"
+    },
+    "content/handbook/sales/training/field-functional-competencies.md": {
+      "path": "content/handbook/sales/training/field-functional-competencies.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "650ef4b840d90b41e42c71146c130692686dae30dbd8166152046ef04d16df18"
+    },
+    "content/handbook/sales/training/product-certification.md": {
+      "path": "content/handbook/sales/training/product-certification.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a65a902fad632fc3e0efa1892c9423b1c55ca7b3060cab119531b7e41a01d04"
+    },
+    "content/handbook/sales/training/social-selling.md": {
+      "path": "content/handbook/sales/training/social-selling.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f9cea30acae28a318b6673fcc18102509d5e69b787be096ea6236ede6c575550"
+    },
+    "content/handbook/sales/training/technical-questions-for-sales.md": {
+      "path": "content/handbook/sales/training/technical-questions-for-sales.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "325a56d143e5be16d83639fb3be35853eab584a53c7c00c93af5ccc412996b3b"
+    },
+    "content/handbook/sales/training/sko/2020.md": {
+      "path": "content/handbook/sales/training/sko/2020.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8c5e4e132d5d665ed7e7131ce8bcc709fb46ececc938b4e79d5c3e8225aeceb0"
+    },
+    "content/handbook/sales/training/sko/2021.md": {
+      "path": "content/handbook/sales/training/sko/2021.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e1be457494dfb9fb62361c3904430c3ae401b5a651a0d0f9abdabfd264da2d5b"
+    },
+    "content/handbook/sales/training/sko/2022.md": {
+      "path": "content/handbook/sales/training/sko/2022.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "596ae2aae28f11b9e3e23a0cd390bfca656a46cbfcb6a3e6064462a594e600c6"
+    },
+    "content/handbook/sales/training/sko/2023.md": {
+      "path": "content/handbook/sales/training/sko/2023.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2f88301fd0da388d8bbc58646937b90881554104c6c65700b099499f3671ac08"
+    },
+    "content/handbook/sales/training/sko/_index.md": {
+      "path": "content/handbook/sales/training/sko/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "865eaac9da45cda099c5b424981d94653e7032246aaffbb7972f56e9a1a6590b"
+    },
+    "content/handbook/sales/training/sko/sko-planning.md": {
+      "path": "content/handbook/sales/training/sko/sko-planning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4ba8905f9b4a411a930ef39f412685f76e6b971a3c48959d7ff8f4b2da58611f"
     }
   }
 }
