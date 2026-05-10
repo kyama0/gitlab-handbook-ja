@@ -22075,6 +22075,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "dc325d3ab9742556bd7c8eaaf9f1f8989f20703e19348ad0fc5ff7d5b474c3d6"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/issues/issue-boards.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/issues/issue-boards.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5bdd833551e0b2964040edb434089a28934179876cc1e1ef376a15dbdcb09075"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/issues/working-issues.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/issues/working-issues.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b4a826d3a6443012cc0fdc4b9c5c5e3e9107becfa9784f4fffd4fb144661beae"
+    },
+    "content/handbook/security/customer-support-operations/criticalities/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/criticalities/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2298bb132a9048d144ddc7e2f51a53579b6bb0085cdcb8c78b0e4c841de0137e"
+    },
+    "content/handbook/security/customer-support-operations/change-management/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/change-management/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e13e4c23c1280663a80c5e425e5129dea9c9d9ede9aa6598435512941c60c4e5"
+    },
+    "content/handbook/security/customer-support-operations/calendly/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/calendly/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "4a8c98379230f7d891465e4da9fba6eb1d067b744e1e54e2f14dab7c6ddbc871"
+    },
+    "content/handbook/security/customer-support-operations/audits/_index.md": {
+      "path": "content/handbook/security/customer-support-operations/audits/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a995a28de20a2ca3fe4368ee65e18aa2ce8b1f93ef42cece760de986582248c7"
+    },
+    "content/handbook/security/corporate/_index.md": {
+      "path": "content/handbook/security/corporate/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "fa96715da344d5abc94930527aedcbbb6b7bc18a6eea194f8657f5b8fdb8efff"
+    },
+    "content/handbook/security/corporate/team/_index.md": {
+      "path": "content/handbook/security/corporate/team/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9f097c0598324ba42b9be39078af10115285813e42909f73024bf6d1d0898a4d"
+    },
+    "content/handbook/security/corporate/systems/_index.md": {
+      "path": "content/handbook/security/corporate/systems/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cfbcae4cb3ce891522c6281726ccc6a9e2e3ac50101f4d6c7a475c997b62d933"
+    },
+    "content/handbook/security/corporate/systems/zoom/_index.md": {
+      "path": "content/handbook/security/corporate/systems/zoom/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "df11ca61c91119c83285589ff0b31bc18f519b947dfedb62ce875ede2a5b28b0"
     }
   }
 }
