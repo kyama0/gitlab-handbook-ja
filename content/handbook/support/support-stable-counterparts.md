@@ -1,5 +1,5 @@
 ---
-title: Support Stable Counterparts
+title: サポートステーブルカウンターパート
 description: Support Stable Counterpart の役割と関連する期待・目標の概要。
 upstream_path: /handbook/support/support-stable-counterparts/
 upstream_sha: 18c3e90de89449f1cbbf92c21776a3ea7899476c
@@ -42,7 +42,7 @@ stale: false
 
 ## SSC ロールの目標
 
-### 製品グループとの関係を確立し維持する
+### 製品グループとの関係を確立し維持する {#establish-and-maintain-a-relationship-with-your-product-groups}
 
 私たちと同じように、製品チームは世界中に散らばっています。このため、必ずしもカウンターパートと同期できるとは限りません。
 
@@ -58,7 +58,7 @@ stale: false
   - 彼らの Slack チャンネルに参加する。
 - 選んだグループにすでに SSC がいる場合は、既存のカウンターパートとコーヒーチャットをスケジュールしてもっと知ってください！
 
-### グループで起こっていることに警戒し関与する
+### グループで起こっていることに警戒し関与する {#be-alert-and-engaged-on-whats-happening-with-the-group}
 
 - **必須タスク**: [対応する Issue テンプレート](https://gitlab.com/gitlab-com/request-for-help/-/tree/main/.gitlab/issue_templates?ref_type=heads) で CC を介してグループの新しい RFH Issue を購読する
 - 製品領域の主要な Issue（特に severity::1）と回避策を認識する。
@@ -68,7 +68,7 @@ stale: false
 - 製品グループの優先事項と課題を認識する。
 - 彼らがカバーする機能の使用における主題専門家になることを目指す。
 
-### グループに関連する定期的なコミュニケーションでサポートを有効にする
+### グループに関連する定期的なコミュニケーションでサポートを有効にする {#enable-support-with-periodic-communication-relevant-to-the-group}
 
 - **必須タスク**: 担当する製品グループ（複数の場合あり）の [Support MBR スライド](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/?sort=created_asc&state=all&label_name%5B%5D=Support%20MBR&search=Support%20Stable%20Counterpart%20Feedback&first_page_size=20) を毎月更新する
 - [SWIR](/handbook/support/#support-week-in-review) と関連するサポート Slack チャンネルを通じて発表を共有する。
@@ -87,7 +87,7 @@ stale: false
 - [オプション] 新しいチームメンバーとあなたのグループについてチャットし、SSC としての経験を共有するために四半期ごとのオフィスアワーを行うことを検討する。
 - [オプション] あなたの製品グループの [Support Preparedness Issue](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/?sort=due_date&state=all&label_name%5B%5D=Support%20Preparedness&first_page_size=100) で DRI になるか、DRI を確実に見つけて、主要な変更が広く伝達されるようにする。
 
-### グループに関連する定期的なコミュニケーションで Product を有効にする
+### グループに関連する定期的なコミュニケーションで Product を有効にする {#enable-product-with-periodic-communication-relevant-to-the-group}
 
 - **必須タスク**: 月に少なくとも 1 回、関連するチケットに関与する
 - チケットからの顧客フィードバックを Product チームと共有する。
@@ -149,7 +149,7 @@ stale: false
 
 [以下の表](#product-counterparts) は、現在 SSC が割り当てられていないすべてのグループとステージをリストしています。Product および／または Engineering Manager がサポートに連絡して SSC をリクエストしたグループのリストは、[support-stable-counterpart プロジェクト](https://gitlab.com/gitlab-com/support/support-stable-counterpart/-/issues) で確認できます。
 
-## カウンターパートとして登録するには
+## カウンターパートとして登録するには {#how-can-i-enroll-and-be-a-counterpart}
 
 グループのステーブルカウンターパートになることに興味がある場合、
 
@@ -184,7 +184,7 @@ stale: false
 | UX               | Tech Writing           | TBD                                          | {{< member-by-name "Mike Lockhart" >}} | weekly team meeting |
 | Quality          | Reference Architecture | {{< member-by-name "Grant Young" >}}         | {{< member-by-name "Simon Street" >}}  | N/A |
 
-## Product カウンターパート
+## Product カウンターパート {#product-counterparts}
 
 {{< engineering/section-counterparts >}}
 
