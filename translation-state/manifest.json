@@ -20675,6 +20675,76 @@
       "translated_at": "2026-05-09T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ba8d6e76e01df3205f462081cfbb820cecbdd32535dac0dd3ae07ba3ccf73484"
+    },
+    "content/handbook/security/corporate/systems/gitlab/self/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/self/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "42f1c3f322343d500baa6a7fbe86f629f18c75a7c8dff6403f5151ebbf62aa7e"
+    },
+    "content/handbook/security/corporate/systems/gitlab/self/licenses/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/self/licenses/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6c5dd8332a9a2010a0a80933a3179b64607900469888b052ad79ab8969ec6e99"
+    },
+    "content/handbook/security/corporate/systems/gitlab/ops/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/ops/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2943e3abc4a5e4aa391c4f2a309c32b8bbb50093d6a5fd27f58fcfb9e63c2b23"
+    },
+    "content/handbook/security/corporate/systems/gitlab/dev/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/dev/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6ef7ee2eacca0805fea2f552173204116cc6df9a7279c69309ecd8d3f2324d56"
+    },
+    "content/handbook/security/corporate/systems/gitlab/demo/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/demo/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c6d28400cee564543cbe4f76a2286e536129dfeb44cb5292a2accbedc7befe2d"
+    },
+    "content/handbook/security/corporate/systems/gitlab/com/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/com/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6dd242f76d7f7ae7b365e7529ec32de0b06c9f0b50e6c612f6d8c32ac4337669"
+    },
+    "content/handbook/security/corporate/systems/gitlab/com/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/com/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "52cca6a1ef7919508eef6f074d032c85150eec33ec59ef50cc1b5ffe0de08eea"
+    },
+    "content/handbook/security/corporate/systems/gitlab/com/projects/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/com/projects/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ae301fdb10ea938e185ab1ea4e7dfa93fc369ab1c6f0c9094f58df552b4ec48"
+    },
+    "content/handbook/security/corporate/systems/gitlab/com/namespaces/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/com/namespaces/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e984004c51669d64f4f6d823721dc159eb004bcab2a2cdcf5f95f16aaf01ab92"
+    },
+    "content/handbook/security/corporate/systems/gitlab/com/licenses/_index.md": {
+      "path": "content/handbook/security/corporate/systems/gitlab/com/licenses/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0fdfc4789ebff5abccf89306285c2af7f655508e0ad84894c54b70ccd9ae548f"
     }
   }
 }
