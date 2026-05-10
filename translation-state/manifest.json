@@ -22495,6 +22495,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "90bb35372faff1861e4518e6f6433bbe79a71b9c3db84c7769fb4e607fe38d20"
+    },
+    "content/handbook/security/corporate/systems/okta/api/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/api/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "a4b5ea5f62ce917eb6e60a3126658408cd7474a840442ba26e7bf05f2577ea0b"
+    },
+    "content/handbook/security/corporate/systems/nira/_index.md": {
+      "path": "content/handbook/security/corporate/systems/nira/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "e0a74ac90a2485ad5d13190dcdf5ccf6d2d7eb6caee01934ad4f02456936f82a"
+    },
+    "content/handbook/security/corporate/systems/macos/_index.md": {
+      "path": "content/handbook/security/corporate/systems/macos/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "d9fdad79dd788a028053a6dca1cdb889d3fabe965cf446865f39b2cb5a30f058"
+    },
+    "content/handbook/security/corporate/systems/macos/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/macos/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9fbfdd7f798ae1b4dff64e1e80a63f523760af5134225d1d68cda08b24c1c4aa"
+    },
+    "content/handbook/security/corporate/systems/lumos/_index.md": {
+      "path": "content/handbook/security/corporate/systems/lumos/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "457dc9ff4e4ba785689bd0a744237b6ed0b6e488eee20cb9e4bd4852b06cb319"
+    },
+    "content/handbook/security/corporate/systems/lumos/ar/_index.md": {
+      "path": "content/handbook/security/corporate/systems/lumos/ar/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "97a353602f88b8872796a4d1784b3e6847bbd181d4b7ec527eab3a893a17c56f"
+    },
+    "content/handbook/security/corporate/systems/lumos/access_reviews/_index.md": {
+      "path": "content/handbook/security/corporate/systems/lumos/access_reviews/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "cf6143c271a9c1dd3de626ab320271a5d2fcfe0e0ab3f35540fae7055f64412d"
+    },
+    "content/handbook/security/corporate/systems/linux/_index.md": {
+      "path": "content/handbook/security/corporate/systems/linux/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "785ad85bbe2299ab0e54e32739c3dc22e0a76f948f5b68a63ab72ffbd52c1f65"
+    },
+    "content/handbook/security/corporate/systems/linux/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/linux/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "453b59da7fd55393f06872094d6f9c6988a2bce412cc851bdd8eba390eef16ed"
+    },
+    "content/handbook/security/corporate/systems/linux/security/_index.md": {
+      "path": "content/handbook/security/corporate/systems/linux/security/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f5aa0b8b966d4b64c5249bbe8c145b972ad8d1193057f6ed861beefb97a1b606"
     }
   }
 }
