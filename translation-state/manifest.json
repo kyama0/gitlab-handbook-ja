@@ -22285,6 +22285,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "dd85b3f8ee12d93f89e56b7ad1afbfe22576bc1f69518010227c4e495b3b06b8"
+    },
+    "content/handbook/security/corporate/systems/slack/apps/_index.md": {
+      "path": "content/handbook/security/corporate/systems/slack/apps/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c5dfbf0cd365d74e6c159532cd4b14e2f232b71f5115ffa16dcefe4aacdf9170"
+    },
+    "content/handbook/security/corporate/systems/sentinelone/_index.md": {
+      "path": "content/handbook/security/corporate/systems/sentinelone/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5a2e49d38ca5e7e77f80842ae6949346927d674d17fb77c1e3a0fcdd1c226bcf"
+    },
+    "content/handbook/security/corporate/systems/sentinelone/troubleshooting/_index.md": {
+      "path": "content/handbook/security/corporate/systems/sentinelone/troubleshooting/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "0d090ac84d18a54fc16983bae053699761813000c5eaaa03393fbb02d8e9b54f"
+    },
+    "content/handbook/security/corporate/systems/sentinelone/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/sentinelone/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "c8cb63cb5effb399b982b8ad0fca37513f13d144ab5bb5d2cbfe407f29cf2f8e"
+    },
+    "content/handbook/security/corporate/systems/okta/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b7b11b901d1cd7a92b5c03de79e2c443149b6f5b9b629597f2753de6adf6d54c"
+    },
+    "content/handbook/security/corporate/systems/okta/workflows/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/workflows/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b36b4e7b0fe871e4bf53fdb9b632ab3ad814063a9770f132694d4aace60164c5"
+    },
+    "content/handbook/security/corporate/systems/okta/workflows/flows/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/workflows/flows/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "9ae9eb00d59e5d03c92637eed54b0686e4e3653e11505a30bd9471e5ea96d71d"
+    },
+    "content/handbook/security/corporate/systems/okta/workflows/flows/google-deprovsioner-flow.md": {
+      "path": "content/handbook/security/corporate/systems/okta/workflows/flows/google-deprovsioner-flow.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "b962e9961247bae2a480754d1c9ba9fcab1d82115e396fa87caa13eba7a84c7b"
+    },
+    "content/handbook/security/corporate/systems/okta/verify/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/verify/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "11fd837af50ec230157bb441103ac93317c143c2b08d1de6e1cf174c78908dea"
+    },
+    "content/handbook/security/corporate/systems/okta/user/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/user/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "19fe11a35424f93545022a5a9b86f0a63f62b9a110f035fa2d78fa75b2faf19a"
     }
   }
 }
