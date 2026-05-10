@@ -213,7 +213,7 @@ classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
 
 ## ポリシーとマニフェストの破壊的変更
 
-### 属性キーがもう存在しない場合
+### 属性キーがもう存在しない場合 {#attribute-key-no-longer-exists}
 
 マニフェスト作成前にポリシーが解析されると、`manifests/attributes/{attribute}.yml` ファイルが解析され、属性キーが存在することを検証します。このファイルには Okta API のユーザーから取得した最新のユニーク値リストが含まれています。
 
