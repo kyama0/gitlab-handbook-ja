@@ -23789,6 +23789,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "f836e77fa70a127a602c5969a8f45f1ff817a238b7d1e0d27c3c482dd49556d7"
+    },
+    "content/handbook/sales/sales-renewal-process.md": {
+      "path": "content/handbook/sales/sales-renewal-process.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9e33f56114c007d6eab28778baab67df712de11c025dccd5b8c32ec09ca8273d"
+    },
+    "content/handbook/sales/selling-professional-services.md": {
+      "path": "content/handbook/sales/selling-professional-services.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "06a4c9d9eacfc6c11a0b3d5d097389a54c5e47192941b67e8dbab6fbaa654d66"
+    },
+    "content/handbook/sales/shadow-program.md": {
+      "path": "content/handbook/sales/shadow-program.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "931b1dbc4ed79f04c3cc6243d7657c52180269dfab9c269eb6cbb49aa58f51e7"
+    },
+    "content/handbook/sales/sop.md": {
+      "path": "content/handbook/sales/sop.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f33909f6dac3fb8eadac1c44f88d9408363ff8cb765ba4257bbc6fb89a89c9eb"
+    },
+    "content/handbook/sales/tam.md": {
+      "path": "content/handbook/sales/tam.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "68214b4ab0498e71220d763c67e3fc205a1fd88293a71a147493adc25e1392d5"
+    },
+    "content/handbook/sales/territory-planning.md": {
+      "path": "content/handbook/sales/territory-planning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7578437f9a502041b0b0d6ac3a419603aae4c7ee45f001cacd826e9679f37f46"
+    },
+    "content/handbook/sales/understand-customer-gitlab-use.md": {
+      "path": "content/handbook/sales/understand-customer-gitlab-use.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "98d133a35bea10d314671f41bdfbbb8a67dde558fa52d8ffb83706843ac41ed6"
+    },
+    "content/handbook/sales/training/_index.md": {
+      "path": "content/handbook/sales/training/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d5f841ac32ba050aff6958e4a13583aca5ba240aeca013f76b72177c28f17a84"
+    },
+    "content/handbook/sales/training/additional-resources.md": {
+      "path": "content/handbook/sales/training/additional-resources.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a3e112706e90cc558d49f5f2faae88930eff3a4ff8d2ec9d49827b4251af4292"
+    },
+    "content/handbook/sales/training/customer-success-skills-exchange.md": {
+      "path": "content/handbook/sales/training/customer-success-skills-exchange.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "271aca580872b12c53e56db68f225f0bd35797cfe3affab2c46bc7016801b332"
     }
   }
 }
