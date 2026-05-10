@@ -22425,6 +22425,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7[1m]",
       "input_hash": "609f161c0906b6f206ec3722899ab3b8f33c52eb20e8bc504ada90bfbbac5a3d"
+    },
+    "content/handbook/security/corporate/systems/okta/group/rules_nomenclature/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/group/rules_nomenclature/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "1cd91b9fb93cc8cd9ad62b4963ebc650a12f489675eaa28a0932f41f6ddad659"
+    },
+    "content/handbook/security/corporate/systems/okta/group/nomenclature/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/group/nomenclature/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "f9316bcd79dadd6b23e3db5a3c0293a0c9cd6524a475ada26c1c576329e23d94"
+    },
+    "content/handbook/security/corporate/systems/okta/group/manual/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/group/manual/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "62898f7dc270294d47296f448de104e2a730ba4f90356033085b619ea8554db8"
+    },
+    "content/handbook/security/corporate/systems/okta/group/managed/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/group/managed/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "2c6d885bcd0c9c9163442786073278bdaf4453ad0383394bd48a7b9bc8d68f9d"
+    },
+    "content/handbook/security/corporate/systems/okta/group/hybrid/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/group/hybrid/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "5723e97143953a590513a663e06384a9496a4b1809b62bd9140106e8e5fa7af2"
+    },
+    "content/handbook/security/corporate/systems/okta/ar/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/ar/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "3832528b4bcad8f6c86dfe58bf5004e28a9c3046ac0a6bee1a8c8fd32c48464d"
+    },
+    "content/handbook/security/corporate/systems/okta/app/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/app/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "8e1b2eeea70f24d6d25d06530a29058b0ba4e74cb2164d7ddd7e7e80675f5642"
+    },
+    "content/handbook/security/corporate/systems/okta/app/setup/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/app/setup/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "7cda3c8a6c0d2099f174849753dab0a7362fa12ff18cf3bd0f4f6856e5e41abe"
+    },
+    "content/handbook/security/corporate/systems/okta/app/scim/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/app/scim/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "7695977b7b70a547232c2db8b0e452e9ccc6d9c55d54886a3c2e0d899160aeb0"
+    },
+    "content/handbook/security/corporate/systems/okta/app/nomenclature/_index.md": {
+      "path": "content/handbook/security/corporate/systems/okta/app/nomenclature/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7[1m]",
+      "input_hash": "90bb35372faff1861e4518e6f6433bbe79a71b9c3db84c7769fb4e607fe38d20"
     }
   }
 }
