@@ -23999,6 +23999,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "5294edfeb1312f09293e3c59fa25b08eb56d819bc6d2703cc673ad8ec7119df8"
+    },
+    "content/handbook/sales/sales-term-glossary/_index.md": {
+      "path": "content/handbook/sales/sales-term-glossary/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8edc6219633163ce393ae4ac4c4b7544e6e8cbd621620cc9879e9fa4462d7576"
+    },
+    "content/handbook/sales/sales-term-glossary/arr-in-practice.md": {
+      "path": "content/handbook/sales/sales-term-glossary/arr-in-practice.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d064e40ecf4ee65ad1eb84d9cb17a1cce6f32055ddaa6cb9349f6bd6d0544fca"
+    },
+    "content/handbook/sales/sales-operating-procedures/_index.md": {
+      "path": "content/handbook/sales/sales-operating-procedures/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f73e5f6409f9907694b9ade09ba3071a7af95dfda6267d4aac52ca35f2aa9687"
+    },
+    "content/handbook/sales/sales-operating-procedures/deal-closure.md": {
+      "path": "content/handbook/sales/sales-operating-procedures/deal-closure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "017af9ae8acbad25e83e8a55c6bc9a918f4d89272e8d71586709e71b66a680df"
+    },
+    "content/handbook/sales/sales-operating-procedures/facilitate-the-opportunity.md": {
+      "path": "content/handbook/sales/sales-operating-procedures/facilitate-the-opportunity.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5411a4856bffe27138e8e69ecdc0fdd8c80ccf5f659255ab3978a524184d489b"
+    },
+    "content/handbook/sales/sales-operating-procedures/retain-and-expand.md": {
+      "path": "content/handbook/sales/sales-operating-procedures/retain-and-expand.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "37cfba45fbd6ff86f7c49598727f9f0e42ee6661d539dfff445da77d0d8d1a30"
+    },
+    "content/handbook/sales/sales-operating-procedures/engage-and-educate-the-customer/index.md": {
+      "path": "content/handbook/sales/sales-operating-procedures/engage-and-educate-the-customer/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fa2f2a8635858fab5136b38210a1e88db78d067ff980e98a545e94a0eff9661a"
+    },
+    "content/handbook/sales/sales-google-groups/_index.md": {
+      "path": "content/handbook/sales/sales-google-groups/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eed5a01df1e714f11464c630e5461d5df086baf9f0c4855df7c0caf0874a3fab"
+    },
+    "content/handbook/sales/sales-google-groups/field-fyi-channel.md": {
+      "path": "content/handbook/sales/sales-google-groups/field-fyi-channel.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b4cca7bbcf044f6b38689968ec550c9b662a0bc03fa072047ddc19495a0e3727"
+    },
+    "content/handbook/sales/revenue-analytics/_index.md": {
+      "path": "content/handbook/sales/revenue-analytics/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7aff47be6eb27bb8159da7b3fd41ea914b64aa410c10471a88a35cbfa13013e5"
     }
   }
 }
