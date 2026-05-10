@@ -35,13 +35,13 @@ Technical Skills Exchange のカレンダー招待を受け取るには、sales-
 
 - [Technical Skills Exchange Issue Board](hhttps://gitlab.com/gitlab-com/sales-team/field-operations/enablement/-/boards/7792277?label_name[]=Technical%20Skills%20Exchange) にある現四半期のプランニング Issue にコメントして、私たちのチームと連絡を取ってください
 
-### スピーカーの責任
+### スピーカーの責任 {#speaker-responsibilities}
 
 - セッション開始予定の少なくとも 2 分前に準備を整え、定刻通りに開始できるようにしてください。
 - スライドを Customer Success and SA Enablement プログラムマネージャーに送り、[ノートドキュメント](https://docs.google.com/document/d/1Zyj8u4JfiBi4gUSn9xAbRZ5H1erY9qpb8j0NzvFwwWg/edit) に追加してください
 - その他の関連リンクも [ノートドキュメント](https://docs.google.com/document/d/1Zyj8u4JfiBi4gUSn9xAbRZ5H1erY9qpb8j0NzvFwwWg/edit) に含めてください
 
-### モデレーターの責任
+### モデレーターの責任 {#moderator-responsibilities}
 
 #### Technical Skills Exchange の全体管理
 
