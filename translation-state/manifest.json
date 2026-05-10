@@ -23019,6 +23019,76 @@
       "translated_at": "2026-05-10T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "569ac5ba75dcc958662a4edffae522c231c1648a482f23da995faa6d0feb5b16"
+    },
+    "content/handbook/security/corporate/systems/aws/services/accounts/vdi-workspaces/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/services/accounts/vdi-workspaces/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "88052e458905ed680d1ec9ecb10d1395250306300894ec38a1d2e2109f34f6ed"
+    },
+    "content/handbook/security/corporate/systems/aws/sandbox/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/sandbox/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "47d43cb22157770942d05614002b6ffe215a858e511fa0a21eb0a2c1d82cd282"
+    },
+    "content/handbook/security/corporate/systems/aws/sandbox/accounts/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/sandbox/accounts/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "156e22c177cf784bd9a65e6a6a838eb11d6071043013ef4dabd295497400933d"
+    },
+    "content/handbook/security/corporate/systems/aws/red-ops/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/red-ops/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fe0dda0dbf4b0e0a10715e40ebcf4107b0f62ea3771eaa3b0b5f4286a5c6212d"
+    },
+    "content/handbook/security/corporate/systems/aws/marketplace/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/marketplace/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "685f926b88f84f86e54309002d5347cd7b2bf33ff74119c557a31b8077e70a50"
+    },
+    "content/handbook/security/corporate/systems/aws/dedicated-prd/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/dedicated-prd/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "132c59885d92a542278d2be8e744e871a8485412bc8f274222d30c81dade95df"
+    },
+    "content/handbook/security/corporate/systems/aws/dedicated-dev/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/dedicated-dev/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "47e691a20cdf9102141e32217081264e79672987dc5921bcc4a6d0dcdd0cb8aa"
+    },
+    "content/handbook/security/corporate/systems/aws/dedicated-dev/accounts/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/dedicated-dev/accounts/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "108dc1c38e2601353de40fdcb5a8e29d88a4b3454d807f94efe7994b92d2e2ab"
+    },
+    "content/handbook/security/corporate/systems/aws/cells-prod/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/cells-prod/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9fa538b77837715828b350017a64230c722103357cb11b4f6562461830cb699a"
+    },
+    "content/handbook/security/corporate/systems/aws/cells-dev/_index.md": {
+      "path": "content/handbook/security/corporate/systems/aws/cells-dev/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-10T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "abe47959f7484841e4c9b051f73e3a8611fbf957795d9d142c605b2289574f81"
     }
   }
 }
