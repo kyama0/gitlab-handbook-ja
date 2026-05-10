@@ -23369,6 +23369,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "c7756029a8444e64c03b0be4ee72d58c0892a6e7c980581ffa269534f4a65f63"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-security.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-security.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0a7aa518a5c86f1b185bcee0e4c91aceaa43df0b018b784c872cc81fb0189105"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-setup.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-setup.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3f6b78af96713cec27197f2fad2b873762426b82c6e0b606710fb09b470f710a"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-tips.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-tips.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a6e3505773a4c27bb5204d9799850530696393c1549075e1cb399d6993e7e229"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/reclaim-ai/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/reclaim-ai/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0400fff3ed1b416a69dbe265df80a503f253a42bcadea0c41e5a61ff214d9f5d"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/google-workspace/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/google-workspace/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "496b64a5b46190eaebf169a853fb75e1a2636d69f1580e4e9986dc7dac1c1514"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/google-workspace/google-calendar.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/google-workspace/google-calendar.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bdcfc93ba0dcd9f8c1a31f533a5be1f1551eb406fcf70a7f6a30f24e77e82e8e"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/google-workspace/google-groups.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/google-workspace/google-groups.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f6dcb12e78e4f67f7c68a673b14dc1c493d974962645ca3c3ebf191fefca841d"
+    },
+    "content/handbook/security/corporate/end-user-services/supported-apps/google-workspace/google-mail.md": {
+      "path": "content/handbook/security/corporate/end-user-services/supported-apps/google-workspace/google-mail.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6831123aca02fa8be8897635a3792b52ee244be2c029cb5bebe3b254e17d80de"
+    },
+    "content/handbook/security/corporate/end-user-services/runbooks/template.md": {
+      "path": "content/handbook/security/corporate/end-user-services/runbooks/template.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "42d058841fc48965f685fce6600be479505196df3db936854e139476d6a01da5"
+    },
+    "content/handbook/security/corporate/end-user-services/onboarding101/_index.md": {
+      "path": "content/handbook/security/corporate/end-user-services/onboarding101/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a3fcc0592a1c24f9b148b0413e9a29deea52e5926456abedc6e220169cb598d3"
     }
   }
 }
