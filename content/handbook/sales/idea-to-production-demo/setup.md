@@ -307,7 +307,7 @@ export OC_CLUSTER_ROUTING_SUFFIX=apps.127.0.0.1.xip.io
 oc-cluster up
 ```
 
-## GitLabプラグインインストールソース
+## GitLabプラグインインストールソース {#gitlab-plugin-install-source}
 
 ストレージと権限をプロビジョニングするためにインストールするGitLabプラグインは次のようになります:
 
