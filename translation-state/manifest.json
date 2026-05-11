@@ -24139,6 +24139,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "95cdaa58e2391f974444008d3211eb5a5cbbccbfe40c10f67665d1e3f7630729"
+    },
+    "content/handbook/sales/onboarding/_index.md": {
+      "path": "content/handbook/sales/onboarding/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5600d366f03c9f77d278c005ec2328c595ad8d156ff60d55da71ce4f69f53544"
+    },
+    "content/handbook/sales/onboarding/graduating-sqs.md": {
+      "path": "content/handbook/sales/onboarding/graduating-sqs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7cec52223a36535af188c23cf6c68d757796307de990e5101a062544084cb89d"
+    },
+    "content/handbook/sales/onboarding/sqs-learning-objectives.md": {
+      "path": "content/handbook/sales/onboarding/sqs-learning-objectives.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6365402836c0400a6c39240d0b130158b21b1eebcc05d973af8085db08b6c394"
+    },
+    "content/handbook/sales/onboarding/sqs-workshop.md": {
+      "path": "content/handbook/sales/onboarding/sqs-workshop.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f225b6e2a4b2bbae2bfdb0051d5c470782bd6040484c461ce009c7fa9c2ae72e"
+    },
+    "content/handbook/sales/onboarding/target-roles.md": {
+      "path": "content/handbook/sales/onboarding/target-roles.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "31ca0cad165e74b6c995ae3748fdf3cc45fa0ed650199670244bbce552625cf1"
+    },
+    "content/handbook/sales/onboarding/sales-learning-path/_index.md": {
+      "path": "content/handbook/sales/onboarding/sales-learning-path/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cd0bb5125bef2725d95ac208b0ce0f0a43a7c735f396466a87c9cf4a79851808"
+    },
+    "content/handbook/sales/onboarding/sales-learning-path/onboarding-process.md": {
+      "path": "content/handbook/sales/onboarding/sales-learning-path/onboarding-process.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "161efb1f4b44092109c1afbf878d3d241b88bde17daffa3500d280cc1ac592f6"
+    },
+    "content/handbook/sales/manager-operating-rhythm/_index.md": {
+      "path": "content/handbook/sales/manager-operating-rhythm/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "12b07cf1267c410ffdcd839be5e473a3dc18b9352efa998d815ed654a51eb72a"
+    },
+    "content/handbook/sales/manager-operating-rhythm/channel-sales.md": {
+      "path": "content/handbook/sales/manager-operating-rhythm/channel-sales.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7b934eba78b11d90b5c06f414d390e631d605b5e991bd11dc9646a4b7680f6dd"
+    },
+    "content/handbook/sales/manager-operating-rhythm/enterprise-sales.md": {
+      "path": "content/handbook/sales/manager-operating-rhythm/enterprise-sales.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "abd6a4953f2c1df29e5470eb6030a694c0a3ee77cc9c296c439e47c7154ea584"
     }
   }
 }
