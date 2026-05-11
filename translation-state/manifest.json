@@ -24209,6 +24209,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "abd6a4953f2c1df29e5470eb6030a694c0a3ee77cc9c296c439e47c7154ea584"
+    },
+    "content/handbook/sales/manager-operating-rhythm/mid-market-sales.md": {
+      "path": "content/handbook/sales/manager-operating-rhythm/mid-market-sales.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "343862a801889980538d3991832f2425d97048a11e7628b1c595265ce79594be"
+    },
+    "content/handbook/sales/manager-operating-rhythm/smb-sales.md": {
+      "path": "content/handbook/sales/manager-operating-rhythm/smb-sales.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "19632b9f45fc894d4d636564832c8ca844f07b0e4cd5108373d4709d499bddd9"
+    },
+    "content/handbook/sales/idea-to-production-demo/_index.md": {
+      "path": "content/handbook/sales/idea-to-production-demo/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ded080784009d4acdad786113605ff6d0b3b07b00c546db353f708c6b02561f2"
+    },
+    "content/handbook/sales/idea-to-production-demo/setup.md": {
+      "path": "content/handbook/sales/idea-to-production-demo/setup.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "13a376733f7f586c1438e7aa9db17d914c0594234602a8e17dc8f4e5e43c4533"
+    },
+    "content/handbook/sales/high-velocity-sales-fo-team/_index.md": {
+      "path": "content/handbook/sales/high-velocity-sales-fo-team/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c7547140e54b5a1ecaee4409bb59fda7b92d778c40fa739bffd6c974dce6c852"
+    },
+    "content/handbook/sales/high-velocity-sales-fo-team/hvs_fo_data_ops.md": {
+      "path": "content/handbook/sales/high-velocity-sales-fo-team/hvs_fo_data_ops.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "37808021882e88e5c6e3d5b2733ec456e8e9b3df1644d965cf8b0772593ba3a6"
+    },
+    "content/handbook/sales/high-velocity-sales-fo-team/hvs_product_gtm.md": {
+      "path": "content/handbook/sales/high-velocity-sales-fo-team/hvs_product_gtm.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "338d3a072ede5f6702fdab0c81f8b68f848620380af5ddf8dfa0d6b8bb403ee1"
+    },
+    "content/handbook/sales/high-velocity-sales-fo-team/startups-program/_index.md": {
+      "path": "content/handbook/sales/high-velocity-sales-fo-team/startups-program/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8b464a744deccfaa4f2c2e7a62097fb8c6cb44a515c7d5d8eff2e0e807f24017"
+    },
+    "content/handbook/sales/high-velocity-sales-fo-team/startups-program/startups-program-workflows.md": {
+      "path": "content/handbook/sales/high-velocity-sales-fo-team/startups-program/startups-program-workflows.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ad8181b46064a7b6f90da36547507d33ead6a8b94be8a950b334f3e33fd794ad"
+    },
+    "content/handbook/sales/gainsight/_index.md": {
+      "path": "content/handbook/sales/gainsight/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5a3190e17555842382e76e7b3cb98ceef7da0c0e0675caf0fa8ae3643e6c11e1"
     }
   }
 }
