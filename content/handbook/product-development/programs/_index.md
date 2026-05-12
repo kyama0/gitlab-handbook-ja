@@ -1,5 +1,5 @@
 ---
-title: "Product Development Programs"
+title: "プロダクト開発プログラム"
 description: "すべての共有 R&D プログラム向け。"
 simple_list: true
 upstream_path: /handbook/product-development/programs/

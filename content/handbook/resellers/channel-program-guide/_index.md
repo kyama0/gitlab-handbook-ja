@@ -1,5 +1,5 @@
 ---
-title: "GitLab Channel Program Guide"
+title: "GitLab Channel Program ガイド"
 description: "GitLab Channel パートナープログラムガイド。"
 upstream_path: /handbook/resellers/channel-program-guide/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141

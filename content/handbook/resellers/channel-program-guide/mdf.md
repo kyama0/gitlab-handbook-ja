@@ -1,5 +1,5 @@
 ---
-title: "Marketing Development Funds"
+title: "Marketing Development Funds (MDF)"
 description: "Marketing Development Funds の概要"
 upstream_path: /handbook/resellers/channel-program-guide/mdf/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141

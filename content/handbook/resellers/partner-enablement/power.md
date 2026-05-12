@@ -1,5 +1,5 @@
 ---
-title: "GitLab POWER"
+title: "GitLab POWER（パートナートレーニング）"
 description: "GitLab パートナーオンボーディングワークフロー & イネーブルメントリソース"
 upstream_path: /handbook/resellers/partner-enablement/power/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
