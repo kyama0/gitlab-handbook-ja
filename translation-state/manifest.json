@@ -24979,6 +24979,76 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "f16cd311a6be5a7dea3545fed75595241848833853e6b178bcc520fdf9b2f16a"
+    },
+    "content/handbook/sales/account-planning/coaching-for-asms.md": {
+      "path": "content/handbook/sales/account-planning/coaching-for-asms.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "aabc69d463ad3b876b9f32f25277e5823d83798dce3ce6002cf9fd9e35bb4edc"
+    },
+    "content/handbook/resellers/_index.md": {
+      "path": "content/handbook/resellers/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "552ba153288b1182d51e233d0af67640ae7405772b79c5db97d3e39c866325e3"
+    },
+    "content/handbook/resellers/channel-tools-resources.md": {
+      "path": "content/handbook/resellers/channel-tools-resources.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "69086ba316c8dc901d939933ee1b9f62853d647c5da4843ebe441d0c93e0a3e4"
+    },
+    "content/handbook/resellers/training.md": {
+      "path": "content/handbook/resellers/training.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3b561e3c846a3ae4de0fda3262ad0b972305496bc4010b16e2ff3a062d9300d6"
+    },
+    "content/handbook/resellers/services/_index.md": {
+      "path": "content/handbook/resellers/services/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "afbf55cb68c10b8702494ca0fe89cfdb0dfc6a92b02d62aa693062c16bf867ed"
+    },
+    "content/handbook/resellers/services/services-catalog.md": {
+      "path": "content/handbook/resellers/services/services-catalog.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ef403b70d8ffb5079ad63ba62de36ee596d105ec1af49064faeb728c6657e0a9"
+    },
+    "content/handbook/resellers/partner-enablement/_index.md": {
+      "path": "content/handbook/resellers/partner-enablement/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8865ab645f12c6081c4ba014fb2b72d87680ed51f67902ea2d36fc19972222c9"
+    },
+    "content/handbook/resellers/partner-enablement/llm-system-prompts.md": {
+      "path": "content/handbook/resellers/partner-enablement/llm-system-prompts.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "14ee34964f004ea65dd45596d6f7df0059786ea7d9cdaa3ceef0ed760449faac"
+    },
+    "content/handbook/resellers/partner-enablement/partner-implementation-services.md": {
+      "path": "content/handbook/resellers/partner-enablement/partner-implementation-services.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "06e55f739f81a1c1d3771880dc43e9782fabbdcadf71d7ccf0a4c49d4c79b9c7"
+    },
+    "content/handbook/resellers/partner-enablement/partner-migration-services.md": {
+      "path": "content/handbook/resellers/partner-enablement/partner-migration-services.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e2ea216af26a1b649ff6545d5b8c344a83b4756d79437aad6dbc8c029c6b6157"
     }
   }
 }
