@@ -1,8 +1,8 @@
 ---
 title: Commercial Sales
 department: >-
-  GitLabのCommercial Sales部門は、SMBおよびMid-Marketのお客様がGitLabと共に歩む
-  ジャーニーを通じて、最大の価値を提供することに注力しています
+  The Commercial Sales department at GitLab focuses on delivering maximum value
+  to SMB and Mid-Market customers throughout their entire journey with GitLab
 upstream_path: /handbook/sales/commercial/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
