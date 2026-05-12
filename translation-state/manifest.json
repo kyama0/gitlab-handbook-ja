@@ -24489,6 +24489,76 @@
       "translated_at": "2026-05-12T10:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "0b9e6a0c94a455a2d5d32aa8c3ad2bcfa5f1e57775df6c1192caae493ecb6fe1"
+    },
+    "content/handbook/sales/field-operations/sales-operations/go-to-market/chorus/index.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/go-to-market/chorus/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4d6a29ef94dbbc4b6cae29a67265d243f42ca793ccb7b7f09518efb03b817a86"
+    },
+    "content/handbook/sales/field-operations/requesting-internal-support/_index.md": {
+      "path": "content/handbook/sales/field-operations/requesting-internal-support/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1aa317f4ba5c74ddadb954ab3ec97d5b04bc49a0760dd91fca27870501ddca25"
+    },
+    "content/handbook/sales/field-operations/gtm-resources/_index.md": {
+      "path": "content/handbook/sales/field-operations/gtm-resources/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9e271d74fd10f9830a9dd4a926db164e74f4ebb6ec381bd80c4900780c8976bf"
+    },
+    "content/handbook/sales/field-operations/gtm-resources/rules-of-engagement.md": {
+      "path": "content/handbook/sales/field-operations/gtm-resources/rules-of-engagement.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0e0f75b4e1e964d4ce9fa57319723a72b116a98d7b690f5b581210c8c5767716"
+    },
+    "content/handbook/sales/field-operations/field-enablement/_index.md": {
+      "path": "content/handbook/sales/field-operations/field-enablement/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e1cf19489f8227bc85bf4dbf312c1a6491d586fa2c9e81893aea2742ece8f1c8"
+    },
+    "content/handbook/sales/field-operations/field-enablement/executive-sponsor-program.md": {
+      "path": "content/handbook/sales/field-operations/field-enablement/executive-sponsor-program.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "60f6dd1441329616debd37901e29ad3ac74a1b371a96394473975f0d42db4ba5"
+    },
+    "content/handbook/sales/field-operations/field-enablement/field-team-recognition.md": {
+      "path": "content/handbook/sales/field-operations/field-enablement/field-team-recognition.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "814bdf22482c93544acd649e07217791c08d3e6753cf2c35c6dc7dd9e5bcf76f"
+    },
+    "content/handbook/sales/field-operations/field-enablement/gtm-enablement.md": {
+      "path": "content/handbook/sales/field-operations/field-enablement/gtm-enablement.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "71c45113eea4e722861a29efc3985c307ce835111e4b3e433be2fb5ff7ce26fe"
+    },
+    "content/handbook/sales/field-operations/field-enablement/prioritization-framework.md": {
+      "path": "content/handbook/sales/field-operations/field-enablement/prioritization-framework.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4c1caaeb93530add86e58d9984f6034eef2de61c108327d1ed402ee5e439545d"
+    },
+    "content/handbook/sales/field-operations/field-enablement/sales-manager-best-practices.md": {
+      "path": "content/handbook/sales/field-operations/field-enablement/sales-manager-best-practices.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cc5fefe8f1eb6c0384a8f8dce54ddee9e8b5cf945001f328dacec4c11ac51498"
     }
   }
 }
