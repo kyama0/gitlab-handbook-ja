@@ -46,7 +46,7 @@ stale: false
 - [GitLab Runner Fleet Scaling](https://docs.gitlab.com/runner/fleet_scaling/)
 - [GitLab Runner Monitoring](https://docs.gitlab.com/runner/monitoring/) および [GitLab Runner Fleet Dashboards](https://docs.gitlab.com/ee/ci/runners/runner_fleet_dashboard.html)
 
-## GitLab Community Edition と Enterprise Edition のどちらにするか決める
+## GitLab Community Edition と Enterprise Edition のどちらにするか決める {#deciding-between-gitlab-community-and-enterprise-editions}
 
 GitLab には 2 つのディストリビューションがあります。
 
