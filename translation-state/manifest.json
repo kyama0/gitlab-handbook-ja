@@ -24559,6 +24559,76 @@
       "translated_at": "2026-05-12T11:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "cc5fefe8f1eb6c0384a8f8dce54ddee9e8b5cf945001f328dacec4c11ac51498"
+    },
+    "content/handbook/sales/field-operations/data-intelligence/_index.md": {
+      "path": "content/handbook/sales/field-operations/data-intelligence/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a1fd62faa5aee5d92cf3e1b1b2c8ed59aafbff060bd0e76ab5ff53224d1e69b9"
+    },
+    "content/handbook/sales/field-operations/data-intelligence/data-governance.md": {
+      "path": "content/handbook/sales/field-operations/data-intelligence/data-governance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "38d4d92301d0db6658145c5db60812cd3613353ce2f2be59be6eebff4d796760"
+    },
+    "content/handbook/sales/field-operations/customer-success-strategy/cs-monthly-metrics-dashboard.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-strategy/cs-monthly-metrics-dashboard.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b6036a080c4294eb7385fe831383cbd4955d273a5222d3b5dd7c581f3ebc4387"
+    },
+    "content/handbook/sales/field-operations/customer-success-strategy/customer-success-strategy-analytics.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-strategy/customer-success-strategy-analytics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c060ca73a8b90534372580f0919056da0b4de7da73529526c23140e66b3d91ec"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/_index.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "32d9201e061d2f09e13081d311f96edcc79a2f41a7cf5a25d057a058c4dac4c0"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-rep-assignment-process.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-rep-assignment-process.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7cf69825bdb7fe9d19678ce26baba9fa08f75d595cb70f88fcb9e93cc685a521"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/renewal-ops.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/renewal-ops.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "58f727489ee4e10ad0f3b7eab4749dcd51421b1fe17f71bc473f9bd3f1762fd5"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/troops-administration.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/troops-administration.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3e0e6f24de586bbbd9bd367933ea91503f50c38c6960002f11a8e44ae0cc50c6"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/gainsight/_index.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/gainsight/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d2b1e3a07207393d24de7d24094e27e699b09e24f9f9fd0510ec5ffa473dce2d"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/gainsight/gainsight-gtm.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/gainsight/gainsight-gtm.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cd53e05bf215d0656ff603e5fa3be58f45b9e2c515caa23adb52d856b3843818"
     }
   }
 }
