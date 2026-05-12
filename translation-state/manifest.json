@@ -24629,6 +24629,76 @@
       "translated_at": "2026-05-12T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "cd53e05bf215d0656ff603e5fa3be58f45b9e2c515caa23adb52d856b3843818"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/gainsight/gainsight-user-management.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/gainsight/gainsight-user-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "db04c9c3ddca3d0eebea3a7a6735e9ebcfc1ee5174bd07ae2839b55e5ae9c426"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/_index.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dc09c20dd9d5bd7ce05692ff5ecfc911366cfe6f3b9a77381ecff7af480ed7bd"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/all-customer-csat-cs.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/all-customer-csat-cs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e02e3373d4203d3a788c1ea7a734375415b82d63127eb464ccff64637f96e6fd"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/available-programs.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/available-programs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d2bfac72e2a8d8647149950e4a6cf68f2124bce4920ab85b22832736343ee544"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/contact-role-tagging-for-personalized-communications.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/contact-role-tagging-for-personalized-communications.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "314a18d34393389620d9a420637d76aa3569d561338a6d27305e5b3ea3048a63"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/cs-content-guide.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/cs-content-guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9e94204f453d8aae41df7f397ed87be62e85e098061a220cb22816af5d81537f"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/customer-newsletter.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/customer-newsletter.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "983e746552b30badf1af204a50e4ba0fca3593cc317b81998b001f36463a0307"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/getting-help-from-dcs.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/getting-help-from-dcs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7d4f314b01c1f757f9134858238b1a0843b8a59f54cecdaa5a096155826a15c5"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/nps-csat-scores.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/nps-csat-scores.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8d850f4b59a76c0bb442a64db9b267e4661fe997b109c44971e76f0bf77b17be"
+    },
+    "content/handbook/sales/field-operations/channel-operations/_index.md": {
+      "path": "content/handbook/sales/field-operations/channel-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "51c276bae4e057b1fe16dd51b92e9250ec8affc7d0cad1f53d1ad0af20498788"
     }
   }
 }
