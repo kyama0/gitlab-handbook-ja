@@ -24769,6 +24769,76 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "cdc7c647e827e8e88cb7ef9244dc584b6293add3d9ae5806282a79db24ba212e"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-06-02.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-06-02.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1e6cdb6c29db9d3b5a779fcb73e89ca115e3650bea85ee38455dc84d907d92b7"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-07-07.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-07-07.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "95737fd605a2221b982d2b951df5bbc15c16abc133805fb9c892baaf4b8c8de1"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-08-06.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-08-06.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b8b74fac36e42e7eba832865fd3b56cdf91a417e123035d37c905afe980404c2"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-09-01.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-09-01.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4a02abc28b91a11d2def1d91d9957a3ed48ae8d1b51d13eaff071d84099699f7"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-10-08.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-10-08.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d255b1dd0b1e339b110b8179f7d74e5b42000f1dc65377a4a40a74d46cdf761e"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-11-02.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-11-02.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "24ade7d5c8481ff139f64f125a70ef5adeffe83c033721ec6856062ede1d2e3e"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-12-07.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-12-07.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f00ec28687fc6badb2c434e6f8717249d551f4c90dca786a5420d904afe25d52"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-01-06.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-01-06.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fc77ea00833c4f3047d76d31fdd9f0f94d2d0dbdbd06bb17765a656e1b7eb6c2"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-02-01.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-02-01.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b8de2dab935e94dd725513c0d2af01f54bcd5647c649da75492852f664631148"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-03-01.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-03-01.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "461b0dc48240b8d891d3e653a37b9ac171f671366f2ffca9bfff7c3c830d22a5"
     }
   }
 }
