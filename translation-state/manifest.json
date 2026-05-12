@@ -24909,6 +24909,76 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "94d5380c69e4a26854236fff897393806e35159cc8a9770683fc95ef5fb80965"
+    },
+    "content/handbook/sales/commercial/enablement/_index.md": {
+      "path": "content/handbook/sales/commercial/enablement/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "38378662d7e026c7a854dc90b623debeb677767b7a4a2e824375460c8ed3543c"
+    },
+    "content/handbook/sales/commercial/enablement/required7.md": {
+      "path": "content/handbook/sales/commercial/enablement/required7.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e592261c219b5b149d07745c25d0e7353432e7293965612af46ab34d20cd89aa"
+    },
+    "content/handbook/sales/commercial/comm-sales-opp-stages/_index.md": {
+      "path": "content/handbook/sales/commercial/comm-sales-opp-stages/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "56fb4ed9e0d8990342fef6694f33c0a92fffe5288022f4c3aef50dd263dc9bce"
+    },
+    "content/handbook/sales/command-of-the-message/_index.md": {
+      "path": "content/handbook/sales/command-of-the-message/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9287b296ae70915a19a5436e6a22a27dc03d152450844d6f922d4e7ef92736ce"
+    },
+    "content/handbook/sales/command-of-the-message/command-plan.md": {
+      "path": "content/handbook/sales/command-of-the-message/command-plan.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d1b64b9f122e066717d443fbcbbd8aea98046c849c96deb4776742a0571db0b4"
+    },
+    "content/handbook/sales/command-of-the-message/metrics.md": {
+      "path": "content/handbook/sales/command-of-the-message/metrics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "efa97ce8c170505c6b47d5af5b934da1d6aea7333b6001bcb8bfd0128186f43a"
+    },
+    "content/handbook/sales/command-of-the-message/opportunity-consults.md": {
+      "path": "content/handbook/sales/command-of-the-message/opportunity-consults.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "27dd71d1612a804fef03a93b4e32a3a0c0f285bcf24f7e72de42232c73632ba2"
+    },
+    "content/handbook/sales/command-of-the-message/proof-points.md": {
+      "path": "content/handbook/sales/command-of-the-message/proof-points.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c86dcb14e7c0e26f49862121b850b04975d201ff7dbc866ecf8717f919d93181"
+    },
+    "content/handbook/sales/club/index.md": {
+      "path": "content/handbook/sales/club/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "63b5c0b3f7aa6ec51c44a45ebe3c6efc588c1d23d6c6ebf33e901d217472a0d8"
+    },
+    "content/handbook/sales/account-planning/_index.md": {
+      "path": "content/handbook/sales/account-planning/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f16cd311a6be5a7dea3545fed75595241848833853e6b178bcc520fdf9b2f16a"
     }
   }
 }
