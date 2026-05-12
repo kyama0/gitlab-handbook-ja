@@ -24839,6 +24839,76 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "461b0dc48240b8d891d3e653a37b9ac171f671366f2ffca9bfff7c3c830d22a5"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-04-06.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-04-06.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7dc83f82b87790e0a2d08ef4c12daf06f2e977ff8be698fd808ae94d448ba3f2"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-05-03.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-05-03.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "35250ca1c533f3131ebb20ad4596431464fcc49591cbb6ec8f629dcf179c1c89"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-06-07.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-06-07.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0a272390e68c31fa42f5f04ce8adcc583e95474fcd8a173805f9bdef8a420cf3"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-07-06.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-07-06.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "064159550efef0ebf683cbe029f53e6e77771b333401865319f35b10257817ea"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-08-02.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-08-02.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7b9bb3527fc612d65d1822b84d9056676d2a4eaae5a982ac9552b1d668552d4c"
+    },
+    "content/handbook/sales/commissions/index.md": {
+      "path": "content/handbook/sales/commissions/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1376a5d661cb9ead0645cd4fac28592516759a0461dcaf29d588ff074409745c"
+    },
+    "content/handbook/sales/commercial/_index.md": {
+      "path": "content/handbook/sales/commercial/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ba79e18f8f28fa763f07524c4cb601f18869e82a3d22087353ec8010b4985a03"
+    },
+    "content/handbook/sales/commercial/high_velocity_sales_first_orders.md": {
+      "path": "content/handbook/sales/commercial/high_velocity_sales_first_orders.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "75c93d7b5a25ee655f40e63e1d57365bcd0d6dd82f716973944fc5877b8dfecf"
+    },
+    "content/handbook/sales/commercial/hvs_fo_feedback.md": {
+      "path": "content/handbook/sales/commercial/hvs_fo_feedback.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "858234ccd52d22048932256678ee3beebdf7b4a98dfb12256a268860ff78c981"
+    },
+    "content/handbook/sales/commercial/renewals-faq.md": {
+      "path": "content/handbook/sales/commercial/renewals-faq.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "94d5380c69e4a26854236fff897393806e35159cc8a9770683fc95ef5fb80965"
     }
   }
 }
