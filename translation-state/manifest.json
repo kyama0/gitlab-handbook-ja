@@ -24349,6 +24349,76 @@
       "translated_at": "2026-05-11T10:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ca2bd7ceef916c04535cec6230b1ba1050136d30ca07744718b1ae932aa2dc0d"
+    },
+    "content/handbook/support/cross-platform-support-requests.md": {
+      "path": "content/handbook/support/cross-platform-support-requests.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "743217973ab6e24debec10a003a28c44e28b0f986fbe1a59d17932a20382189f"
+    },
+    "content/handbook/sales/field-operations/sales-systems/salesforce-config.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/salesforce-config.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "607c65d7ad68bddbd2b706af3a43f54ed284150e26b159f2316a69d6d3c14ebd"
+    },
+    "content/handbook/sales/field-operations/sales-systems/super-sonics.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/super-sonics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f4a9446fd16b70ade1668618ec60dedcdb86695549a4d7f345f3c9eca6067d39"
+    },
+    "content/handbook/sales/field-operations/sales-systems/tech-stack-guide-sfdc.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/tech-stack-guide-sfdc.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "187dc010fd3427955449b9bdd7c0fbf395ada4350604e77ed7b7f4594473a5f8"
+    },
+    "content/handbook/sales/field-operations/sales-systems/license-usage-app/index.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/license-usage-app/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6f3ba06ba9cac85d90da7f584163fc391a5dfaca098562322cf26b29442a789f"
+    },
+    "content/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/_index.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a17d732b768b158ee6fb7a806d78f59abd4c9c5b49d4faa80108b338e92fa360"
+    },
+    "content/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/incent.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/incent.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3f480f55727595730a7175bc1c0a18b55784c69387ba12aa7fab5662ff16f68b"
+    },
+    "content/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/sfdc-booking-metric-fields.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/sfdc-booking-metric-fields.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "890e2c016dce58c2c6f4f2b9470fb86fc05fd66e55049baa5a3ca184b4488f59"
+    },
+    "content/handbook/sales/field-operations/sales-strategy/_index.md": {
+      "path": "content/handbook/sales/field-operations/sales-strategy/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d0a6d28c750cf59d920399cc438ba3563fffc2d833355149f6c00979a3a7ef80"
+    },
+    "content/handbook/sales/field-operations/sales-strategy/fy22-field-planning.md": {
+      "path": "content/handbook/sales/field-operations/sales-strategy/fy22-field-planning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "aa8d34cc61a3301b3b7694b5104ead67ee4ad6708f76d1dad850e1eb3647d9d0"
     }
   }
 }
