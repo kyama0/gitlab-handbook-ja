@@ -19,7 +19,7 @@ _[オリジナルかつ GitLab 内部の proof points Google Doc はこちらで
 
 ## GitLab Proof Points
 
-### 顧客リファレンスとケーススタディ
+### 顧客リファレンスとケーススタディ {#customer-references-and-case-studies}
 
 #### Enterprise
 
