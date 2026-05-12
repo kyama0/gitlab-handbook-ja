@@ -25049,6 +25049,76 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "e2ea216af26a1b649ff6545d5b8c344a83b4756d79437aad6dbc8c029c6b6157"
+    },
+    "content/handbook/resellers/partner-enablement/power.md": {
+      "path": "content/handbook/resellers/partner-enablement/power.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "16bce1142842349090ca96bb2fdb160a8846bad754653497a69fd5fee671b847"
+    },
+    "content/handbook/resellers/partner-champions-program/_index.md": {
+      "path": "content/handbook/resellers/partner-champions-program/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a264ab1db856461166dfe6d43ed673a624ade1734ca7e6437d7df177d67b2aa4"
+    },
+    "content/handbook/resellers/channel-working-with-gitlab/index.md": {
+      "path": "content/handbook/resellers/channel-working-with-gitlab/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ca8be9c09719c56a45029ad9895e22148355c39f99580fab7e0f6ed9d837e10b"
+    },
+    "content/handbook/resellers/channel-program-guide/_index.md": {
+      "path": "content/handbook/resellers/channel-program-guide/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cda2a27bdfbd2bc7a79f4c64863892de5d9e50ea9d084ae3695921888fc5e032"
+    },
+    "content/handbook/resellers/channel-program-guide/mdf.md": {
+      "path": "content/handbook/resellers/channel-program-guide/mdf.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "206fc9e80e341b44d16c882ae2fdf51057cb7ebd2f0911dbecc142ee958e2d98"
+    },
+    "content/handbook/product-development/_index.md": {
+      "path": "content/handbook/product-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "af0bb39dac7eb5bbe2f088abdd34efb3cce27d81ffd11b5760a14ca27a5e9c97"
+    },
+    "content/handbook/product-development/r-and-d-pmo/_index.md": {
+      "path": "content/handbook/product-development/r-and-d-pmo/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7c2df2dad86e9ca62a11994afc37f5e696148d33bc88b9157ce780a85302ed72"
+    },
+    "content/handbook/product-development/programs/_index.md": {
+      "path": "content/handbook/product-development/programs/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7f0afeda9509610a78da58587d210f0fd5814d6fa5b7c6347f6a3b27e36be1cb"
+    },
+    "content/handbook/product-development/programs/backlog.md": {
+      "path": "content/handbook/product-development/programs/backlog.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "83980b220d0b2e4b862f50fda2e3db28170d0273ee30ab4ba3462b56f0f7c677"
+    },
+    "content/handbook/product-development/how-we-work/_index.md": {
+      "path": "content/handbook/product-development/how-we-work/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0f988604b2e016149f78e2cab53c8971b10f543c307e3d7bdedb11fc1ca695bb"
     }
   }
 }
