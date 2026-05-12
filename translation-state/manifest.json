@@ -24419,6 +24419,76 @@
       "translated_at": "2026-05-12T10:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "aa8d34cc61a3301b3b7694b5104ead67ee4ad6708f76d1dad850e1eb3647d9d0"
+    },
+    "content/handbook/sales/field-operations/sales-strategy/projects.md": {
+      "path": "content/handbook/sales/field-operations/sales-strategy/projects.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4d74da77431f0d268ba065e06de4c8b79908cd67c2c9f88e914593a4f9aa5fbd"
+    },
+    "content/handbook/sales/field-operations/sales-strategy/sales-headcount.md": {
+      "path": "content/handbook/sales/field-operations/sales-strategy/sales-headcount.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e4af6bd877d6da2c51cf198ae1e8e962145238e22f9d8f858b52d9a7249a9425"
+    },
+    "content/handbook/sales/field-operations/sales-operations/_index.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d662a76ef78350d445beae2972ef30eb0a8472f38c58972056396826dd1037dc"
+    },
+    "content/handbook/sales/field-operations/sales-operations/deal-desk-order-mgmt-kpis.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/deal-desk-order-mgmt-kpis.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9fccb37db645f6c25e6f0835f73f9317d357f1d676b939f51fb7efe827f416f1"
+    },
+    "content/handbook/sales/field-operations/sales-operations/deal-desk.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/deal-desk.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "68a05d696328c66340b5a99cc938e81216a861eb0ed735890ba96962fed43f33"
+    },
+    "content/handbook/sales/field-operations/sales-operations/linkedin-sales-insights.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/linkedin-sales-insights.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "48dfdbe51dd10ab1dcfd5ed3ed06020e90b9427d1a78dc1564eddfb6acfe9f84"
+    },
+    "content/handbook/sales/field-operations/sales-operations/order-management.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/order-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5b14c6f670591c89f366781865ac9f6c519720cecd05b5e8881df3c18de2efdd"
+    },
+    "content/handbook/sales/field-operations/sales-operations/po-acceptance-policy.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/po-acceptance-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2401e4fd9fd120b5854abb3261c0358fad9e7d3852989fc8e8045dac98f1e93b"
+    },
+    "content/handbook/sales/field-operations/sales-operations/sales-operations-owned-provisioning.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/sales-operations-owned-provisioning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c5cc56b58bdf2d1a7240c4575b908cc48807a1b7d67dcb17a3e8765352be30f0"
+    },
+    "content/handbook/sales/field-operations/sales-operations/go-to-market/_index.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/go-to-market/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0b9e6a0c94a455a2d5d32aa8c3ad2bcfa5f1e57775df6c1192caae493ecb6fe1"
     }
   }
 }
