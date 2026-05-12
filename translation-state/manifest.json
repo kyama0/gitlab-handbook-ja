@@ -24279,6 +24279,76 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "5a3190e17555842382e76e7b3cb98ceef7da0c0e0675caf0fa8ae3643e6c11e1"
+    },
+    "content/handbook/sales/field-operations/_index.md": {
+      "path": "content/handbook/sales/field-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c89a4966b30d2cb1adf6f93a1ab75a5051764f26300f8f36d92c3242594d99c0"
+    },
+    "content/handbook/sales/field-operations/finding-seat-counts.md": {
+      "path": "content/handbook/sales/field-operations/finding-seat-counts.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "672dcc1cd096f0fdb697f46211b225d1605383a70662751340437e2462966754"
+    },
+    "content/handbook/sales/field-operations/order-processing.md": {
+      "path": "content/handbook/sales/field-operations/order-processing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b3b97ec307137617b187a55ae126e6cd32eecd3cfe0f4a5f3f912845326aadcb"
+    },
+    "content/handbook/sales/field-operations/release-schedule.md": {
+      "path": "content/handbook/sales/field-operations/release-schedule.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c9ddb5a736a94f91ad40603c1c887c438a23d0e423b529231e74826a3f449983"
+    },
+    "content/handbook/sales/field-operations/rsoe-gd.md": {
+      "path": "content/handbook/sales/field-operations/rsoe-gd.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7e1d095abab627915c6ad5c9ae4a8d060141b949038f8d12373bc58755a379ab"
+    },
+    "content/handbook/sales/field-operations/sales-systems/_index.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b90e0b4c0ea78d339eac976d8f92a28fc75de12ea1e9d6a4d7caf2943f5c0c41"
+    },
+    "content/handbook/sales/field-operations/sales-systems/dataloader-installation.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/dataloader-installation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "00d3c696eec41b69cf470c9904f81b3d583aa4b7541d414427981c7ec7135cfd"
+    },
+    "content/handbook/sales/field-operations/sales-systems/gtm-integrated-environments.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/gtm-integrated-environments.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8955f1718a6b789ee1b8fddbd6949a321088d96cf30ee39588ab65a21015b168"
+    },
+    "content/handbook/sales/field-operations/sfdc.md": {
+      "path": "content/handbook/sales/field-operations/sfdc.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9b9aa1f25571f69f8e27bf58f83909dd410751bd90d9c61b391cb601d144a19a"
+    },
+    "content/handbook/sales/gainsight/account-planning.md": {
+      "path": "content/handbook/sales/gainsight/account-planning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ca2bd7ceef916c04535cec6230b1ba1050136d30ca07744718b1ae932aa2dc0d"
     }
   }
 }
