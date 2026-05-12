@@ -1,0 +1,30 @@
+---
+title: コミッション
+upstream_path: /handbook/sales/commissions/
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-13T00:00:00Z"
+translator: claude
+stale: false
+---
+
+### **チャーター**
+
+Sales CommissionsはField Operationsの一部であり、Sales Operationsにレポートしています。私たちの目標は、Fieldのビジネス獲得をインセンタイズし、コミッションを正確かつタイムリーに処理することで、GitLabをより成功させることです。私たちは、Field Sales、Lead Generation、マネジメントから信頼されるビジネスパートナーと見られることを目指しています。
+
+Quotaの設定とCompensation Designは、Go-To-Market Planning & Operationsチームが主導しています。このチームは、Field Operationsの一部であるSales Strategy & Analyticsに所属し、Sales Commissionsチームと密接に連携しています。私たちの目標は、野心的でありながら達成可能なクォータを設定し、チームメンバーが会社とお客様の最善の利益のために行動するよう動機付けることで、CRO組織の成長を促進することです。
+
+## **チームの紹介**
+
+- Lisa Puzar, Sr. Manager, Sales Commissions
+- Swetha Kashyap, Manager, Sales Commissions
+- Sophie Hamann, Sr. Sales Commissions Analyst
+- Anna Taylor, Sales Commissions Analyst
+- Darren Chin, Sales Commissions Analyst
+
+- Jake Bielecki, VP, Field Operations
+- James Harrison, Sr. Director, Sales Operations
+- Alex Cohen, Sr. Director, GTM Planning & Operations
+- Haseen Selim, Sr. Analyst, GTM Planning & Operations
+
+<BR>
+詳細なSales Commissions Handbookは、[GitLab Internal Handbook](https://internal.gitlab.com/handbook/sales/sales-commission/)に移動しました。
