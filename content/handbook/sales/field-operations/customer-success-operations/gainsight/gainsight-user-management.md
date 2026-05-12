@@ -188,6 +188,6 @@ Salesforce 経由で Gainsight にアクセスするには:
 1. Salesforce にログインし、App Launcher またはワッフルメニューで「Gainsight」をクリックします。
 Gainsight の画面スペースを最大化するために Salesforce のヘッダーを非表示にするには、Gainsight ヘッダー右上のプロファイルアイコンの横にある「二重矢印」アイコンをクリックします。
 
-## トラブルシューティング
+## トラブルシューティング {#troubleshooting}
 
 近日公開！
