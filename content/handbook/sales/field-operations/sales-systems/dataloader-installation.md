@@ -8,7 +8,7 @@ translator: claude
 stale: false
 ---
 
-## ゼロからのインストール
+## ゼロからのインストール {#installing-from-scratch}
 
 1. [Salesforce Dataloader の GitHub リポジトリの Releases](https://github.com/forcedotcom/dataloader/releases) に移動します
 1. 最新版の 1 メジャーバージョン前、ただし最低でも 56.0.6 をダウンロードしてください。ファイル名は *dataloader_mac_v* **ダウンロードしたいバージョン** *.zip* のようになります
@@ -55,7 +55,7 @@ stale: false
 1. zip ファイルと展開したフォルダは削除して構いません
 1. ショートカットを作成した場合は、そのいずれかから Dataloader を開いてみてください。開かない場合や、開く際にエラーがある場合は、Sales Systems の誰かに伝えてください。
 
-## Dataloader のアンインストール
+## Dataloader のアンインストール {#uninstalling-dataloader}
 
 1. 削除したい Dataloader のバージョンの Applications にショートカットを追加した場合
     - Finder で *Applications* に行き、ショートカットを削除します

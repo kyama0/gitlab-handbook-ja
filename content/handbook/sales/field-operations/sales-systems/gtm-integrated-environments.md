@@ -1,5 +1,5 @@
 ---
-title: "Go-To-Market Integrated Environments"
+title: "Go-To-Market 統合環境"
 upstream_path: /handbook/sales/field-operations/sales-systems/gtm-integrated-environments/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T10:00:00Z"
