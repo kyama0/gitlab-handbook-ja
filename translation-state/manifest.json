@@ -24699,6 +24699,76 @@
       "translated_at": "2026-05-12T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "51c276bae4e057b1fe16dd51b92e9250ec8affc7d0cad1f53d1ad0af20498788"
+    },
+    "content/handbook/sales/field-operations/channel-operations/partner-faq.md": {
+      "path": "content/handbook/sales/field-operations/channel-operations/partner-faq.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e9c54040b46412533927054ee9742abc88a41dbba905936eb0a02c5477faee46"
+    },
+    "content/handbook/sales/field-operations/channel-operations/sales-faq.md": {
+      "path": "content/handbook/sales/field-operations/channel-operations/sales-faq.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "aad778d02ec73e3eaae9ddd977764e7c52538f60744cdf9c0a25f8a951625891"
+    },
+    "content/handbook/sales/field-communications/_index.md": {
+      "path": "content/handbook/sales/field-communications/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "45cf464074703eb778c1c446a38b02c74481cd770dfb73deb7c8a9416c589549"
+    },
+    "content/handbook/sales/field-communications/field-alerts.md": {
+      "path": "content/handbook/sales/field-communications/field-alerts.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fe9c70fe2a90479e5b3a8faaf9e6842e5392e646e620072db1984d4d0b978e4f"
+    },
+    "content/handbook/sales/field-communications/field-update-tickers.md": {
+      "path": "content/handbook/sales/field-communications/field-update-tickers.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ea2c1e535a67e79a749ffb5331a2c7b4c4374bf39630224de43aa263e0faeb18"
+    },
+    "content/handbook/sales/field-communications/monthly-release-sales-email.md": {
+      "path": "content/handbook/sales/field-communications/monthly-release-sales-email.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "adadd13a3be4bc4b5307fa9b49ccd33e0dff3941af30e487644ab795d3c80573"
+    },
+    "content/handbook/sales/field-communications/gitlab-highspot/index.md": {
+      "path": "content/handbook/sales/field-communications/gitlab-highspot/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4eed073a6607404eab45467483885fb0c5a786e6ccc6164df6ff10d2c88db30c"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/_index.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "49cef9e3c745c407241a928a1bd0df6ad245595e5abb0acc0b0bd91d3e2780e6"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-04-02.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-04-02.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8d9c9e1caf4565185a6feaaf874cdc02fe777c90b0797df31c2d5cdcd12e589e"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-05-05.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-05-05.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cdc7c647e827e8e88cb7ef9244dc584b6293add3d9ae5806282a79db24ba212e"
     }
   }
 }
