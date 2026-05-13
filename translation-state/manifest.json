@@ -25819,6 +25819,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "dceedc394d514a8f7d5313a8be3c83c0003c87a55d3ad425fc480856a5d43ef7"
+    },
+    "content/handbook/product/ux/experience-research/tracking-research-velocity.md": {
+      "path": "content/handbook/product/ux/experience-research/tracking-research-velocity.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dcd86e7b7298008834cceef4442ba25c030f2db179534a9642ccf111e6821c1c"
+    },
+    "content/handbook/product/ux/experience-research/unmoderated-testing.md": {
+      "path": "content/handbook/product/ux/experience-research/unmoderated-testing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a3379ee5c9c113bc368b0855fa13634782f6a18210d1d45534b2dfa57f6384e"
+    },
+    "content/handbook/product/ux/experience-research/usability-benchmarking.md": {
+      "path": "content/handbook/product/ux/experience-research/usability-benchmarking.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fe1071a8e4788e1ba2d59fdd46181abe57bdaa5de509267f8c508f4730a971fc"
+    },
+    "content/handbook/product/ux/experience-research/usability-testing.md": {
+      "path": "content/handbook/product/ux/experience-research/usability-testing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "16e8c37ea5dc9d49388b35429da18a8e708f0a2f54fc110c04e1a4715a1c74a5"
+    },
+    "content/handbook/product/ux/experience-research/user-story-mapping.md": {
+      "path": "content/handbook/product/ux/experience-research/user-story-mapping.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ab3b01985bb6aa8d39ec5f2abacdb39c0116ba4e3e470b656c573c767db2fe0c"
+    },
+    "content/handbook/product/ux/experience-research/using-rite-to-test-navigation.md": {
+      "path": "content/handbook/product/ux/experience-research/using-rite-to-test-navigation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9f1240556a154442a6130b61f6b1783c1f0eab430ba57ac5f3752e7b136f0cff"
+    },
+    "content/handbook/product/ux/experience-research/ux-research-growth-and-development.md": {
+      "path": "content/handbook/product/ux/experience-research/ux-research-growth-and-development.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6d9566b57235e3f775e97db23cfbfa8827a8d51cc4984c26f31dc100b368f204"
+    },
+    "content/handbook/product/ux/experience-research/ux-researcher-pairings.md": {
+      "path": "content/handbook/product/ux/experience-research/ux-researcher-pairings.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "86b3b9a69dd349ea35252e8f25c08a1f41246122560f5150e28d96dbdd7f953a"
+    },
+    "content/handbook/product/ux/experience-research/writing-usability-testing-script.md": {
+      "path": "content/handbook/product/ux/experience-research/writing-usability-testing-script.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fa5a11d8b2ccc2a6a9f501fa1b3332e4aafaff6187e4aef4e1e04b8d2c058173"
+    },
+    "content/handbook/product/ux/experience-research/write-effective-screener/index.md": {
+      "path": "content/handbook/product/ux/experience-research/write-effective-screener/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "599184f82564ed24ad767ebceeb7847ea2669f5798ddbc7361982746c5c89f99"
     }
   }
 }
