@@ -26239,6 +26239,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "366093f98e52d22087a264b9d1ec9d17171e400bd7809b9b373bf7f988b953ea"
+    },
+    "content/handbook/product/product-processes/dogfooding-for-r-d.md": {
+      "path": "content/handbook/product/product-processes/dogfooding-for-r-d.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "399d1b1adf13ba6f18405f69a90e467f41f10ae877134430be2ef0f5702024d8"
+    },
+    "content/handbook/product/product-processes/making-gifs.md": {
+      "path": "content/handbook/product/product-processes/making-gifs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b5cb50ca11e659505c676bf880d7bfc5750cc28aa7918ccff61bd496c4f5cacc"
+    },
+    "content/handbook/product/product-processes/milestones.md": {
+      "path": "content/handbook/product/product-processes/milestones.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "65f109a667f4ffefe7e6624f4de104538a2c7cc2fe907d42f76b7c32564622ae"
+    },
+    "content/handbook/product/product-processes/planning-with-gitlab.md": {
+      "path": "content/handbook/product/product-processes/planning-with-gitlab.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e261162a5737ecf185ce360b735a6dd2e9866386b6cc6e209869f63f0207a7be"
+    },
+    "content/handbook/product/product-processes/product-launch.md": {
+      "path": "content/handbook/product/product-processes/product-launch.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7c824df6839b96d704c951c423bd1a9b9074118b86fe1446e20ac631d76692a8"
+    },
+    "content/handbook/product/product-processes/product-safe-guidance.md": {
+      "path": "content/handbook/product/product-processes/product-safe-guidance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5081af6054a16b37fc6c45d873db376b4d505331ebbbd4405942775ffb7b2798"
+    },
+    "content/handbook/product/product-processes/sensing-mechanisms.md": {
+      "path": "content/handbook/product/product-processes/sensing-mechanisms.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0d074f47d97516b10bf354dabed0d8bd593fcacc295e7a357b5ee7c98dae1cd9"
+    },
+    "content/handbook/product/product-processes/tiering-guidance-for-features.md": {
+      "path": "content/handbook/product/product-processes/tiering-guidance-for-features.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1ef1273e9a5e3735e9ad8adcfbbd604c9275a5490a97714ea345831976b0330e"
+    },
+    "content/handbook/product/product-processes/pm-tips-and-tricks/_index.md": {
+      "path": "content/handbook/product/product-processes/pm-tips-and-tricks/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "858c1af75ba7460fa8ed36e3ec7aa692399d2ce750ed8050dba6f5feb6a976d5"
+    },
+    "content/handbook/product/product-processes/pm-procedures/_index.md": {
+      "path": "content/handbook/product/product-processes/pm-procedures/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "449e806b75793a3c866204bcd00356586c144a2a8926c87afe6dc8db196211ad"
     }
   }
 }
