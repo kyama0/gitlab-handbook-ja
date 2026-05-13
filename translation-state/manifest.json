@@ -25959,6 +25959,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "668d73095dd5a3b1d0d92a0919c9b29896106fd31574d21af133dcad0a97e3e7"
+    },
+    "content/handbook/product/ux/experience-research/surveys/qualtrics/index.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/qualtrics/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d1be29256eb3c1bc707e5ad00ffaa0aded68534e8d514b20cb78a88e8eb5bc03"
+    },
+    "content/handbook/product/ux/experience-research/surveys/common-types-of-survey-questions/index.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/common-types-of-survey-questions/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8884a3abc78b0bb50842e5bb77353f28e042ea655a32611cb59283bf26220506"
+    },
+    "content/handbook/product/ux/experience-research/strategic-research-at-gitlab/_index.md": {
+      "path": "content/handbook/product/ux/experience-research/strategic-research-at-gitlab/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "16bb86feb29db050ac2371931330bd9402588e5d229674acbac6e17cbf1ce7b9"
+    },
+    "content/handbook/product/ux/experience-research/strategic-research-at-gitlab/gitlab-adoption-research-program.md": {
+      "path": "content/handbook/product/ux/experience-research/strategic-research-at-gitlab/gitlab-adoption-research-program.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4b5a8d7d7aa25d80b4bd591fe1636ee43861d7aed2e7558cf4e99070fb65f444"
+    },
+    "content/handbook/product/ux/experience-research/rite/index.md": {
+      "path": "content/handbook/product/ux/experience-research/rite/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ecb47df3f662b816542fda347481adb47337f25b0bf470cb0a222fec5696f2ae"
+    },
+    "content/handbook/product/ux/experience-research/resources-for-research-dris/index.md": {
+      "path": "content/handbook/product/ux/experience-research/resources-for-research-dris/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "05f07c78a8fe5b3b103e3a97622b99e17d49aba603361db56f785da620c169c1"
+    },
+    "content/handbook/product/ux/experience-research/research-prioritization/index.md": {
+      "path": "content/handbook/product/ux/experience-research/research-prioritization/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5be6c90ca50b3a9659e504f807e438f341865dd109964a0b050d7d3bfa580dea"
+    },
+    "content/handbook/product/ux/experience-research/research-insights/index.md": {
+      "path": "content/handbook/product/ux/experience-research/research-insights/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1c58a06eb633ffa67eac4889fe05a13ff04a96c5638cb57e72ed0aa93b19c362"
+    },
+    "content/handbook/product/ux/experience-research/research-in-the-ai-space/index.md": {
+      "path": "content/handbook/product/ux/experience-research/research-in-the-ai-space/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ea7ff88fa3006d76583f798f7da3e35bfc58d8aeb8ad90c083d2e226b4b64631"
+    },
+    "content/handbook/product/ux/experience-research/recruiting-participants/_index.md": {
+      "path": "content/handbook/product/ux/experience-research/recruiting-participants/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c42ceb9a2b0096590de8ba94c0af3c8f9ae90d6452dcabf654be4bbd77f09ffe"
     }
   }
 }
