@@ -26869,6 +26869,76 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "9fe5dab658d7866851f3359a4dc3aab2b4691db8885d0b3752d3ae508f53fc3e"
+    },
+    "content/handbook/people-group/talent-development-program.md": {
+      "path": "content/handbook/people-group/talent-development-program.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b3b2c9e77911c25692e8b76c87a5d588d7300dec7c69df9645631754e34e420a"
+    },
+    "content/handbook/people-group/team-member-relations.md": {
+      "path": "content/handbook/people-group/team-member-relations.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b9d4a2f83bb3f40e07277e29b7a5aeb77eb193ad98ffdea83a6d87b8d4d21b1c"
+    },
+    "content/handbook/people-group/visas.md": {
+      "path": "content/handbook/people-group/visas.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c017fed8109d2510bc961d04fb1506c26209bce16ac743514c095532ff10faa7"
+    },
+    "content/handbook/people-group/time-off-and-absence/_index.md": {
+      "path": "content/handbook/people-group/time-off-and-absence/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d580c6887c382a9210c4899b794684cd88654c48ef5843faf859cab450f3538b"
+    },
+    "content/handbook/people-group/time-off-and-absence/leave-types.md": {
+      "path": "content/handbook/people-group/time-off-and-absence/leave-types.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2ea820c17225c148c82001abf677ebbacb79322210ce14ad38a9dfc615d5f8d6"
+    },
+    "content/handbook/people-group/time-off-and-absence/time-away-philosophy.md": {
+      "path": "content/handbook/people-group/time-off-and-absence/time-away-philosophy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a44971c62f22873e8e1efccb08be2dd1e8b502ceac5d35d504c8273750cdb169"
+    },
+    "content/handbook/people-group/time-off-and-absence/time-off-types.md": {
+      "path": "content/handbook/people-group/time-off-and-absence/time-off-types.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1e5c656203d809a9a1d63003aab95ddb8a8603871aa02ad462a7e5d9a9abebd2"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/_index.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7fdc33de3543d05a41bf46d69c140bee3f3cd4a737b816e4ad0804cfcc81b432"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/people-analytics/_index.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "88b91b4aa83fb8d007933115d5de3c0e14434ce435e2dd9b8a31cadd86f48a60"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/people-analytics/data-governance.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/data-governance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f9c70170a04cb1223e1c36ea876b96d76c896189718f0b91d4ddc8649e2d45fd"
     }
   }
 }
