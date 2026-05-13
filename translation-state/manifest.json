@@ -25749,6 +25749,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "cccbac281f44ffdf9d9d30b8db10bb89f5127439876e57e3f93ad37896003d95"
+    },
+    "content/handbook/product/ux/experience-research/problem-validation-single-stage-group.md": {
+      "path": "content/handbook/product/ux/experience-research/problem-validation-single-stage-group.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dadc8d5299001eef11382535f46116ab9abe09b9d1df0c772d970dd315cbf863"
+    },
+    "content/handbook/product/ux/experience-research/rapid-validations.md": {
+      "path": "content/handbook/product/ux/experience-research/rapid-validations.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "05a5860a80c332d4210480b288a3feb409d27f8f819d9eb03884bd608468e3b1"
+    },
+    "content/handbook/product/ux/experience-research/research-library.md": {
+      "path": "content/handbook/product/ux/experience-research/research-library.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6aef9497ae8c783c2e08085ccfaa7cdc84725f4984b866293f3032f4f465f2a0"
+    },
+    "content/handbook/product/ux/experience-research/research-panel-management.md": {
+      "path": "content/handbook/product/ux/experience-research/research-panel-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "54550852efe5d1fb6ac7ec89f168c2da7b897a8aff8eeaf754b795cfea8e6558"
+    },
+    "content/handbook/product/ux/experience-research/research-shadowing.md": {
+      "path": "content/handbook/product/ux/experience-research/research-shadowing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4568c35289fdf3899df9bc577523529b2d73bd65b67fb9354920e96cfa4130b8"
+    },
+    "content/handbook/product/ux/experience-research/research-tools.md": {
+      "path": "content/handbook/product/ux/experience-research/research-tools.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8ebaf42836f9f9246b2633edaa23536b12bc7392c3c7c095367eae4de338f896"
+    },
+    "content/handbook/product/ux/experience-research/service-design.md": {
+      "path": "content/handbook/product/ux/experience-research/service-design.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d10da3e1e6704498a5be7c7347ee3ffcdbda81e3a25a82945259233df982871c"
+    },
+    "content/handbook/product/ux/experience-research/solution-validation-and-methods.md": {
+      "path": "content/handbook/product/ux/experience-research/solution-validation-and-methods.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ec318213bd86c5348a6436db02c7d668d87244f2952b0d83bc08f7921906ff68"
+    },
+    "content/handbook/product/ux/experience-research/tracking-actionable-insights.md": {
+      "path": "content/handbook/product/ux/experience-research/tracking-actionable-insights.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d1195a1f2d7e706320035b563cd4fecb4d85c8c8869ed3d1dc2c0aac7d8ee792"
+    },
+    "content/handbook/product/ux/experience-research/tracking-research-projects.md": {
+      "path": "content/handbook/product/ux/experience-research/tracking-research-projects.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dceedc394d514a8f7d5313a8be3c83c0003c87a55d3ad425fc480856a5d43ef7"
     }
   }
 }
