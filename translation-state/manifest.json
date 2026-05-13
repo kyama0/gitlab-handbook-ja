@@ -25259,6 +25259,76 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "588e5c079227cfee17e8f1aa0418f87a58b964a339237e175dd29458d0ebc97a"
+    },
+    "content/handbook/product/ux/ux-resources/_index.md": {
+      "path": "content/handbook/product/ux/ux-resources/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "96a93c285f31b2fd76cfdc866daba8ae3fc32d374756bdd32f8e39a027f94851"
+    },
+    "content/handbook/product/ux/ux-resources/dark-mode-rollout-playbook.md": {
+      "path": "content/handbook/product/ux/ux-resources/dark-mode-rollout-playbook.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "39d72640f0ca17cfbf02f31f64681867b9ef97bea67c6c84c12d445bfff3af18"
+    },
+    "content/handbook/product/ux/ux-resources/designers-guide-to-data.md": {
+      "path": "content/handbook/product/ux/ux-resources/designers-guide-to-data.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6c6783fb2a68df3a4abfaaa5afd77a3b14eee5076553686399c10f55098a6bfd"
+    },
+    "content/handbook/product/ux/ux-resources/designers-step-by-step-guide-to-make-code-changes.md": {
+      "path": "content/handbook/product/ux/ux-resources/designers-step-by-step-guide-to-make-code-changes.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "44d3a856b000a0ef7aec82be17aba7abe813873481fdc88adca7a691bc2b9289"
+    },
+    "content/handbook/product/ux/ux-resources/experimentation.md": {
+      "path": "content/handbook/product/ux/ux-resources/experimentation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "894f8ed6207fa8738fddbcb30e70a84740e4b2723754ab3663822aeb4a738508"
+    },
+    "content/handbook/product/ux/ux-resources/publishing-claude-prototypes.md": {
+      "path": "content/handbook/product/ux/ux-resources/publishing-claude-prototypes.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b09ac9a1d53c1b22db1a82ef2ca8ebe17b917de4d6583ecfd1a5e66eddba65dd"
+    },
+    "content/handbook/product/ux/technical-writing/_index.md": {
+      "path": "content/handbook/product/ux/technical-writing/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "053aeae130c6ff53d6c63024abb4788e1938a361e3d463b40ca46f8dc1a15a2a"
+    },
+    "content/handbook/product/ux/technical-writing/feature-prioritization.md": {
+      "path": "content/handbook/product/ux/technical-writing/feature-prioritization.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d2aa5c1a2747c62bfc4dfac0c6664fe12486000b414d37d71deee265ed329913"
+    },
+    "content/handbook/product/ux/technical-writing/hiring.md": {
+      "path": "content/handbook/product/ux/technical-writing/hiring.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c66ff5ec41430101e9724b39afa24cd15689a781267125580e8a896a94f17023"
+    },
+    "content/handbook/product/ux/research-operations/_index.md": {
+      "path": "content/handbook/product/ux/research-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "135878afa004a2d99117c2063e93a8111c33203423ca706c11b461718f92e8c5"
     }
   }
 }
