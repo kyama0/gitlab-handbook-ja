@@ -25539,6 +25539,566 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "9befe948e9074469ea7efe32081b164228c4f5bb0d3c7a09e05af4a287e2a756"
+    },
+    "content/handbook/product/ux/operations/_index.md": {
+      "path": "content/handbook/product/ux/operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9fa415ac9a90b455ae9f439f0f92ffc3f6b2105184e84e7471904231a9a29594"
+    },
+    "content/handbook/product/ux/navigation/_index.md": {
+      "path": "content/handbook/product/ux/navigation/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "67a10ae1e6d16c993832ecaeedb8155edc411ed9f4662087cfccc6cb52c037aa"
+    },
+    "content/handbook/product/ux/navigation/inventory.md": {
+      "path": "content/handbook/product/ux/navigation/inventory.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dca9fe5eee040bbb16e6c7862ebc7de0181bb50854c3b0592f3b69cfdb882af0"
+    },
+    "content/handbook/product/ux/learning-and-development/_index.md": {
+      "path": "content/handbook/product/ux/learning-and-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2e7a9dc6b488f7bb46f8cf097ab9444a54a768ec888f9214dda7a3214003be2d"
+    },
+    "content/handbook/product/ux/learning-and-development/tufts-university-capstone-course.md": {
+      "path": "content/handbook/product/ux/learning-and-development/tufts-university-capstone-course.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "94ea7b23dfaeabd6cc39defcfea381e5602e021d3573d7f29b28d4749d758429"
+    },
+    "content/handbook/product/ux/jobs-to-be-done/_index.md": {
+      "path": "content/handbook/product/ux/jobs-to-be-done/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1760bdb0025f556183166b02d6fa50112e3f881c788fe4deaae02a7cc957a065"
+    },
+    "content/handbook/product/ux/jobs-to-be-done/jtbd-beyond-the-playbook.md": {
+      "path": "content/handbook/product/ux/jobs-to-be-done/jtbd-beyond-the-playbook.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "79f095a1e87a7fc951a32499f83a1f443f4e07988de925ac8f9f8d7afa3dc698"
+    },
+    "content/handbook/product/ux/jobs-to-be-done/jtbd-canvas-anatomy.md": {
+      "path": "content/handbook/product/ux/jobs-to-be-done/jtbd-canvas-anatomy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "41778f040c3d5da71e5b48bf1fcc1e3d7aed21ae164f5e038f79c6d11a3c216c"
+    },
+    "content/handbook/product/ux/jobs-to-be-done/jtbd-playbook.md": {
+      "path": "content/handbook/product/ux/jobs-to-be-done/jtbd-playbook.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0b053bd00ff4c86e33c53597bdb8b919276a35e52f6e0ef51b6ede972ddbf53a"
+    },
+    "content/handbook/product/ux/jobs-to-be-done/validated-canvases-and-opportunity-scores.md": {
+      "path": "content/handbook/product/ux/jobs-to-be-done/validated-canvases-and-opportunity-scores.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "88158b9ffbccaa93f86e1f57103922a09ba8de9ad4b4b20808208768fee8d693"
+    },
+    "content/handbook/product/ux/how-we-work/_index.md": {
+      "path": "content/handbook/product/ux/how-we-work/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a6d080a2dd0200bfad458b2db07eae6561413e25682ebe7d4bf5b1e27dd8ade8"
+    },
+    "content/handbook/product/ux/how-we-work/ai-usage.md": {
+      "path": "content/handbook/product/ux/how-we-work/ai-usage.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "52a08fd84b2e8ef27b79b5b92a1783a6ba16e4088c044036dc12f9b56910cdaa"
+    },
+    "content/handbook/product/ux/how-we-work/claude-design.md": {
+      "path": "content/handbook/product/ux/how-we-work/claude-design.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a409dd853c26f73f6756e1f87ed1e7ba53953565560991d7f41c7572cd6af68"
+    },
+    "content/handbook/product/ux/how-we-work/figma-provisioning.md": {
+      "path": "content/handbook/product/ux/how-we-work/figma-provisioning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "76cfdd0cb89912f98156693d967e42c941e2a6f0c7e4f8dcb8377b3dfbc075cf"
+    },
+    "content/handbook/product/ux/how-we-work/cross-stage-design-collaboration/_index.md": {
+      "path": "content/handbook/product/ux/how-we-work/cross-stage-design-collaboration/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9490d02b7b54b19ff47103899280f971d12a39f973571f9a79ddeb3401efea9a"
+    },
+    "content/handbook/product/ux/experience-research/_index.md": {
+      "path": "content/handbook/product/ux/experience-research/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6f36ffd401f1671e57881767379ef2fe405fb7f092282958685703b7951034c3"
+    },
+    "content/handbook/product/ux/experience-research/analyzing-research-data.md": {
+      "path": "content/handbook/product/ux/experience-research/analyzing-research-data.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "792e95db49a6750cd7b10f7676b4f79500dc0ef3ecf6daaf5e7979f5020ceb53"
+    },
+    "content/handbook/product/ux/experience-research/analyzing-survey-verbatim.md": {
+      "path": "content/handbook/product/ux/experience-research/analyzing-survey-verbatim.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f2ad3ee9cadb352bfd5c34755512cae792ef0bcd1625713510938dc2b896cea7"
+    },
+    "content/handbook/product/ux/experience-research/attending-a-research-event.md": {
+      "path": "content/handbook/product/ux/experience-research/attending-a-research-event.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4fcb9f099d955be2aee30f0e2f1c3c80b404a610a693d342f6ad7b2e91f7eb26"
+    },
+    "content/handbook/product/ux/experience-research/choosing-a-research-methodology.md": {
+      "path": "content/handbook/product/ux/experience-research/choosing-a-research-methodology.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "054e27045bcd9ee931c304590830f8a866a688049e417cd14979883cd86b74ff"
+    },
+    "content/handbook/product/ux/experience-research/collecting-useful-data.md": {
+      "path": "content/handbook/product/ux/experience-research/collecting-useful-data.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "631334e957346bab888a4f131124230c327251f7337a2c80df5d0adaaf9bc556"
+    },
+    "content/handbook/product/ux/experience-research/comparative-testing-for-navigation.md": {
+      "path": "content/handbook/product/ux/experience-research/comparative-testing-for-navigation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "04f6a734f45a45a2e3727c7278f8c5c181873a63227fb73ba69148f88fa7a1e3"
+    },
+    "content/handbook/product/ux/experience-research/creating-first-click-study-qualtrics.md": {
+      "path": "content/handbook/product/ux/experience-research/creating-first-click-study-qualtrics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a1fc85ebd17b663ac1bd0d17e7ca29081af5c035b819e37749448f87c123eb3e"
+    },
+    "content/handbook/product/ux/experience-research/diary-studies.md": {
+      "path": "content/handbook/product/ux/experience-research/diary-studies.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1161d476cea35201f652d4bd7c7219c5a7b1c9fa5d7ccf056b70c4c7bd75a219"
+    },
+    "content/handbook/product/ux/experience-research/discussion-guide-user-interviews.md": {
+      "path": "content/handbook/product/ux/experience-research/discussion-guide-user-interviews.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6445bf3852b7fdb83f6b81f4e641d2d5f7e74dd676795eebabae632c021c0fea"
+    },
+    "content/handbook/product/ux/experience-research/finding-existing-research.md": {
+      "path": "content/handbook/product/ux/experience-research/finding-existing-research.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1371b3378e22c196185438f09784401ec4a62c56e61ef26d3158da6ec897265a"
+    },
+    "content/handbook/product/ux/experience-research/finding-saas-users.md": {
+      "path": "content/handbook/product/ux/experience-research/finding-saas-users.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6bc6d750d2307f5b550625297a302d1ab7943e95b28b9b73f6122148db62d297"
+    },
+    "content/handbook/product/ux/experience-research/first-click-testing.md": {
+      "path": "content/handbook/product/ux/experience-research/first-click-testing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b5c4a26f227cfd521a162a13aed00e6eddc6ae4668b7d18e53cb6829551a80da"
+    },
+    "content/handbook/product/ux/experience-research/interview-carousel.md": {
+      "path": "content/handbook/product/ux/experience-research/interview-carousel.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e98ed3cb7065081eef1e0144f4aad1895eca6504fc4af833e6196abdfb807451"
+    },
+    "content/handbook/product/ux/experience-research/problem-validation-and-methods.md": {
+      "path": "content/handbook/product/ux/experience-research/problem-validation-and-methods.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cccbac281f44ffdf9d9d30b8db10bb89f5127439876e57e3f93ad37896003d95"
+    },
+    "content/handbook/product/ux/experience-research/problem-validation-single-stage-group.md": {
+      "path": "content/handbook/product/ux/experience-research/problem-validation-single-stage-group.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dadc8d5299001eef11382535f46116ab9abe09b9d1df0c772d970dd315cbf863"
+    },
+    "content/handbook/product/ux/experience-research/rapid-validations.md": {
+      "path": "content/handbook/product/ux/experience-research/rapid-validations.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "05a5860a80c332d4210480b288a3feb409d27f8f819d9eb03884bd608468e3b1"
+    },
+    "content/handbook/product/ux/experience-research/research-library.md": {
+      "path": "content/handbook/product/ux/experience-research/research-library.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6aef9497ae8c783c2e08085ccfaa7cdc84725f4984b866293f3032f4f465f2a0"
+    },
+    "content/handbook/product/ux/experience-research/research-panel-management.md": {
+      "path": "content/handbook/product/ux/experience-research/research-panel-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "54550852efe5d1fb6ac7ec89f168c2da7b897a8aff8eeaf754b795cfea8e6558"
+    },
+    "content/handbook/product/ux/experience-research/research-shadowing.md": {
+      "path": "content/handbook/product/ux/experience-research/research-shadowing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4568c35289fdf3899df9bc577523529b2d73bd65b67fb9354920e96cfa4130b8"
+    },
+    "content/handbook/product/ux/experience-research/research-tools.md": {
+      "path": "content/handbook/product/ux/experience-research/research-tools.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8ebaf42836f9f9246b2633edaa23536b12bc7392c3c7c095367eae4de338f896"
+    },
+    "content/handbook/product/ux/experience-research/service-design.md": {
+      "path": "content/handbook/product/ux/experience-research/service-design.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d10da3e1e6704498a5be7c7347ee3ffcdbda81e3a25a82945259233df982871c"
+    },
+    "content/handbook/product/ux/experience-research/solution-validation-and-methods.md": {
+      "path": "content/handbook/product/ux/experience-research/solution-validation-and-methods.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ec318213bd86c5348a6436db02c7d668d87244f2952b0d83bc08f7921906ff68"
+    },
+    "content/handbook/product/ux/experience-research/tracking-actionable-insights.md": {
+      "path": "content/handbook/product/ux/experience-research/tracking-actionable-insights.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d1195a1f2d7e706320035b563cd4fecb4d85c8c8869ed3d1dc2c0aac7d8ee792"
+    },
+    "content/handbook/product/ux/experience-research/tracking-research-projects.md": {
+      "path": "content/handbook/product/ux/experience-research/tracking-research-projects.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dceedc394d514a8f7d5313a8be3c83c0003c87a55d3ad425fc480856a5d43ef7"
+    },
+    "content/handbook/product/ux/experience-research/tracking-research-velocity.md": {
+      "path": "content/handbook/product/ux/experience-research/tracking-research-velocity.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dcd86e7b7298008834cceef4442ba25c030f2db179534a9642ccf111e6821c1c"
+    },
+    "content/handbook/product/ux/experience-research/unmoderated-testing.md": {
+      "path": "content/handbook/product/ux/experience-research/unmoderated-testing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a3379ee5c9c113bc368b0855fa13634782f6a18210d1d45534b2dfa57f6384e"
+    },
+    "content/handbook/product/ux/experience-research/usability-benchmarking.md": {
+      "path": "content/handbook/product/ux/experience-research/usability-benchmarking.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fe1071a8e4788e1ba2d59fdd46181abe57bdaa5de509267f8c508f4730a971fc"
+    },
+    "content/handbook/product/ux/experience-research/usability-testing.md": {
+      "path": "content/handbook/product/ux/experience-research/usability-testing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "16e8c37ea5dc9d49388b35429da18a8e708f0a2f54fc110c04e1a4715a1c74a5"
+    },
+    "content/handbook/product/ux/experience-research/user-story-mapping.md": {
+      "path": "content/handbook/product/ux/experience-research/user-story-mapping.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ab3b01985bb6aa8d39ec5f2abacdb39c0116ba4e3e470b656c573c767db2fe0c"
+    },
+    "content/handbook/product/ux/experience-research/using-rite-to-test-navigation.md": {
+      "path": "content/handbook/product/ux/experience-research/using-rite-to-test-navigation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9f1240556a154442a6130b61f6b1783c1f0eab430ba57ac5f3752e7b136f0cff"
+    },
+    "content/handbook/product/ux/experience-research/ux-research-growth-and-development.md": {
+      "path": "content/handbook/product/ux/experience-research/ux-research-growth-and-development.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6d9566b57235e3f775e97db23cfbfa8827a8d51cc4984c26f31dc100b368f204"
+    },
+    "content/handbook/product/ux/experience-research/ux-researcher-pairings.md": {
+      "path": "content/handbook/product/ux/experience-research/ux-researcher-pairings.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "86b3b9a69dd349ea35252e8f25c08a1f41246122560f5150e28d96dbdd7f953a"
+    },
+    "content/handbook/product/ux/experience-research/writing-usability-testing-script.md": {
+      "path": "content/handbook/product/ux/experience-research/writing-usability-testing-script.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fa5a11d8b2ccc2a6a9f501fa1b3332e4aafaff6187e4aef4e1e04b8d2c058173"
+    },
+    "content/handbook/product/ux/experience-research/write-effective-screener/index.md": {
+      "path": "content/handbook/product/ux/experience-research/write-effective-screener/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "599184f82564ed24ad767ebceeb7847ea2669f5798ddbc7361982746c5c89f99"
+    },
+    "content/handbook/product/ux/experience-research/when-to-conduct-ux-research/index.md": {
+      "path": "content/handbook/product/ux/experience-research/when-to-conduct-ux-research/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eaa32f0cf14d6b872a6b65a390c801ad9371d7d0ed174d198a059360fa5079b3"
+    },
+    "content/handbook/product/ux/experience-research/ux-research-google-calendar/index.md": {
+      "path": "content/handbook/product/ux/experience-research/ux-research-google-calendar/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "04e3a430dde86de8b36f73926422219c0b5fade0d72e55e2f60b4f38af361c9e"
+    },
+    "content/handbook/product/ux/experience-research/ux-cloud-sandbox/index.md": {
+      "path": "content/handbook/product/ux/experience-research/ux-cloud-sandbox/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a77137a4a52c5c6841898142baaac34fb4bb3e555dcd6fbd07bbb4df32055a74"
+    },
+    "content/handbook/product/ux/experience-research/ux-bash/index.md": {
+      "path": "content/handbook/product/ux/experience-research/ux-bash/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bfd1f6a4d845633fc3214197722a9a8b0020b63752d6ad83fe8e9560c7f9a93e"
+    },
+    "content/handbook/product/ux/experience-research/surveys/_index.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1885241c9685859c24872e623a983de89beaeee0cba0262f6f72dcc6d9b44359"
+    },
+    "content/handbook/product/ux/experience-research/surveys/designing-your-survey.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/designing-your-survey.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "10bb603d3248aaa30ecdbf64fcc4651a2b956dc856d0b889a9ed2cb75fb856b7"
+    },
+    "content/handbook/product/ux/experience-research/surveys/how-to-identify-low-quality-data-when-designing-and-reviewing-your-survey.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/how-to-identify-low-quality-data-when-designing-and-reviewing-your-survey.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dc45a2cae6854a2f3fd0000a85ce3d565833798f70802868b03131a47e8cb577"
+    },
+    "content/handbook/product/ux/experience-research/surveys/piloting-your-survey.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/piloting-your-survey.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d0b99c2cbef33f609c83706158bd0f9a48ebb83334db48bf222aa93a20ba4a69"
+    },
+    "content/handbook/product/ux/experience-research/surveys/sample-sizes-for-surveys.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/sample-sizes-for-surveys.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d31ea236407e881f050d5ca597d41876b2b2bc43faa8d3ebd3ebdbb69f30c7e8"
+    },
+    "content/handbook/product/ux/experience-research/surveys/survey-question-scales/index.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/survey-question-scales/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "668d73095dd5a3b1d0d92a0919c9b29896106fd31574d21af133dcad0a97e3e7"
+    },
+    "content/handbook/product/ux/experience-research/surveys/qualtrics/index.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/qualtrics/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d1be29256eb3c1bc707e5ad00ffaa0aded68534e8d514b20cb78a88e8eb5bc03"
+    },
+    "content/handbook/product/ux/experience-research/surveys/common-types-of-survey-questions/index.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/common-types-of-survey-questions/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8884a3abc78b0bb50842e5bb77353f28e042ea655a32611cb59283bf26220506"
+    },
+    "content/handbook/product/ux/experience-research/strategic-research-at-gitlab/_index.md": {
+      "path": "content/handbook/product/ux/experience-research/strategic-research-at-gitlab/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "16bb86feb29db050ac2371931330bd9402588e5d229674acbac6e17cbf1ce7b9"
+    },
+    "content/handbook/product/ux/experience-research/strategic-research-at-gitlab/gitlab-adoption-research-program.md": {
+      "path": "content/handbook/product/ux/experience-research/strategic-research-at-gitlab/gitlab-adoption-research-program.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4b5a8d7d7aa25d80b4bd591fe1636ee43861d7aed2e7558cf4e99070fb65f444"
+    },
+    "content/handbook/product/ux/experience-research/rite/index.md": {
+      "path": "content/handbook/product/ux/experience-research/rite/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ecb47df3f662b816542fda347481adb47337f25b0bf470cb0a222fec5696f2ae"
+    },
+    "content/handbook/product/ux/experience-research/resources-for-research-dris/index.md": {
+      "path": "content/handbook/product/ux/experience-research/resources-for-research-dris/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "05f07c78a8fe5b3b103e3a97622b99e17d49aba603361db56f785da620c169c1"
+    },
+    "content/handbook/product/ux/experience-research/research-prioritization/index.md": {
+      "path": "content/handbook/product/ux/experience-research/research-prioritization/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5be6c90ca50b3a9659e504f807e438f341865dd109964a0b050d7d3bfa580dea"
+    },
+    "content/handbook/product/ux/experience-research/research-insights/index.md": {
+      "path": "content/handbook/product/ux/experience-research/research-insights/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1c58a06eb633ffa67eac4889fe05a13ff04a96c5638cb57e72ed0aa93b19c362"
+    },
+    "content/handbook/product/ux/experience-research/research-in-the-ai-space/index.md": {
+      "path": "content/handbook/product/ux/experience-research/research-in-the-ai-space/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ea7ff88fa3006d76583f798f7da3e35bfc58d8aeb8ad90c083d2e226b4b64631"
+    },
+    "content/handbook/product/ux/experience-research/recruiting-participants/_index.md": {
+      "path": "content/handbook/product/ux/experience-research/recruiting-participants/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c42ceb9a2b0096590de8ba94c0af3c8f9ae90d6452dcabf654be4bbd77f09ffe"
+    },
+    "content/handbook/product/ux/experience-research/recruiting-participants/recruiting-email-tips.md": {
+      "path": "content/handbook/product/ux/experience-research/recruiting-participants/recruiting-email-tips.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f8eb89f713ef846ce5629ed2c75ef911065b529c12d2adbd8a0b6fd878e036de"
+    },
+    "content/handbook/product/ux/experience-research/recruiting-participants/common-screener/index.md": {
+      "path": "content/handbook/product/ux/experience-research/recruiting-participants/common-screener/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "46f914cffb99bded193d479850164f9cda040a92b10b13195f99ee53d553a4d3"
+    },
+    "content/handbook/product/ux/experience-research/quantitative-data/index.md": {
+      "path": "content/handbook/product/ux/experience-research/quantitative-data/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a2e7dd50662c90e6036c3741bb11bd0e868afb2056ec0799fbf5b12430096319"
+    },
+    "content/handbook/product/ux/experience-research/product-analytics-for-ux-research/_index.md": {
+      "path": "content/handbook/product/ux/experience-research/product-analytics-for-ux-research/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "19dfaa4338f26ed00a5fc0d4cdf5e527c2be475911270cd23380ab30fa957d70"
+    },
+    "content/handbook/product/ux/experience-research/preference-testing/index.md": {
+      "path": "content/handbook/product/ux/experience-research/preference-testing/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "87a9098f5ab2223fb5a439cb15b7f9c234e86808ca5bdc37b11774d846e6f062"
+    },
+    "content/handbook/product/ux/experience-research/mental-modeling/index.md": {
+      "path": "content/handbook/product/ux/experience-research/mental-modeling/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c7bcc3b8fa92577041512f4d8b045275a07d4f81681c13f57dafe5f22c5929ba"
+    },
+    "content/handbook/product/ux/experience-research/longitudinal-studies/index.md": {
+      "path": "content/handbook/product/ux/experience-research/longitudinal-studies/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "367c3021b297b3f5a6f15589103e1fb2bd6d7f2b5616c210f24c4e61914e4d31"
+    },
+    "content/handbook/product/ux/experience-research/kano-model/index.md": {
+      "path": "content/handbook/product/ux/experience-research/kano-model/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5f6b9214bd6c50ba08695638a520f675b208959e46a3b7ca8e2bb6468c0e8120"
+    },
+    "content/handbook/product/ux/experience-research/how-uxr-team-operates/index.md": {
+      "path": "content/handbook/product/ux/experience-research/how-uxr-team-operates/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "150a8c21490c01fd2b2cf644103e814b91cadea0b99f2e203cb2cc5386ea2f10"
+    },
+    "content/handbook/product/ux/experience-research/how-to-conduct-ux-research-workshops/index.md": {
+      "path": "content/handbook/product/ux/experience-research/how-to-conduct-ux-research-workshops/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "14426ce6ef04232eac8d4350b69f96c38b23c5483a8cef65a6f7081092e0f55d"
     }
   }
 }
