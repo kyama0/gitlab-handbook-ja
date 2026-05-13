@@ -26169,6 +26169,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "7a666752b73f8b27fd400aeb0f22d137e069a38ea268f201e8282e1df55ac915"
+    },
+    "content/handbook/product/ux/accessibility/_index.md": {
+      "path": "content/handbook/product/ux/accessibility/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8b2f9930d50a81327a8ffdc3b98343207439a8e0e73f4fd24ecd424ed912ac7b"
+    },
+    "content/handbook/product/readmes/_index.md": {
+      "path": "content/handbook/product/readmes/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b416afa12a1cd5b7356a6c41d99f5fffd67719b7cd37dc9ffd28bca7dd3755e5"
+    },
+    "content/handbook/product/readmes/cynthia.md": {
+      "path": "content/handbook/product/readmes/cynthia.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f355a4b833eeb54081555cea773389edb165304833684b37f8d3a6042913f1a8"
+    },
+    "content/handbook/product/readmes/manav-readme.md": {
+      "path": "content/handbook/product/readmes/manav-readme.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2540294446eef227bfaa1ab4e44d61a08d4b45f71730d67aa9ac42af7ae9e60a"
+    },
+    "content/handbook/product/product-processes/_index.md": {
+      "path": "content/handbook/product/product-processes/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3f5b3e5c8d41eea73a944b7ec875df9c09294a93110641a08a349de777b532ca"
+    },
+    "content/handbook/product/product-processes/board-deck-prep.md": {
+      "path": "content/handbook/product/product-processes/board-deck-prep.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f9163c83d1d0f178434295ca830a5f2a6a513f8636e86b5c5b7b870e2a117944"
+    },
+    "content/handbook/product/product-processes/continuous-interviewing.md": {
+      "path": "content/handbook/product/product-processes/continuous-interviewing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "66028cf20ef551ef5e7cb106baae1364c3d6bd49a2eb9c23f2057bcfd3cc5dbb"
+    },
+    "content/handbook/product/product-processes/cross-functional-prioritization.md": {
+      "path": "content/handbook/product/product-processes/cross-functional-prioritization.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6b3014f7c2a93fad223d734f83154a296d1cdd84bcf0c526a4696cf84b76e6ba"
+    },
+    "content/handbook/product/product-processes/customer-0.md": {
+      "path": "content/handbook/product/product-processes/customer-0.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "897935b76fdde0778f9f23ea34c0823c53426a7994c3d105bd6c629cdef58fde"
+    },
+    "content/handbook/product/product-processes/customer-issues-prioritization-framework.md": {
+      "path": "content/handbook/product/product-processes/customer-issues-prioritization-framework.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "366093f98e52d22087a264b9d1ec9d17171e400bd7809b9b373bf7f988b953ea"
     }
   }
 }
