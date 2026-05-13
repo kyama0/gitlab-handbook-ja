@@ -25609,6 +25609,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "88158b9ffbccaa93f86e1f57103922a09ba8de9ad4b4b20808208768fee8d693"
+    },
+    "content/handbook/product/ux/how-we-work/_index.md": {
+      "path": "content/handbook/product/ux/how-we-work/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a6d080a2dd0200bfad458b2db07eae6561413e25682ebe7d4bf5b1e27dd8ade8"
+    },
+    "content/handbook/product/ux/how-we-work/ai-usage.md": {
+      "path": "content/handbook/product/ux/how-we-work/ai-usage.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "52a08fd84b2e8ef27b79b5b92a1783a6ba16e4088c044036dc12f9b56910cdaa"
+    },
+    "content/handbook/product/ux/how-we-work/claude-design.md": {
+      "path": "content/handbook/product/ux/how-we-work/claude-design.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a409dd853c26f73f6756e1f87ed1e7ba53953565560991d7f41c7572cd6af68"
+    },
+    "content/handbook/product/ux/how-we-work/figma-provisioning.md": {
+      "path": "content/handbook/product/ux/how-we-work/figma-provisioning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "76cfdd0cb89912f98156693d967e42c941e2a6f0c7e4f8dcb8377b3dfbc075cf"
+    },
+    "content/handbook/product/ux/how-we-work/cross-stage-design-collaboration/_index.md": {
+      "path": "content/handbook/product/ux/how-we-work/cross-stage-design-collaboration/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9490d02b7b54b19ff47103899280f971d12a39f973571f9a79ddeb3401efea9a"
+    },
+    "content/handbook/product/ux/experience-research/_index.md": {
+      "path": "content/handbook/product/ux/experience-research/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6f36ffd401f1671e57881767379ef2fe405fb7f092282958685703b7951034c3"
+    },
+    "content/handbook/product/ux/experience-research/analyzing-research-data.md": {
+      "path": "content/handbook/product/ux/experience-research/analyzing-research-data.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "792e95db49a6750cd7b10f7676b4f79500dc0ef3ecf6daaf5e7979f5020ceb53"
+    },
+    "content/handbook/product/ux/experience-research/analyzing-survey-verbatim.md": {
+      "path": "content/handbook/product/ux/experience-research/analyzing-survey-verbatim.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f2ad3ee9cadb352bfd5c34755512cae792ef0bcd1625713510938dc2b896cea7"
+    },
+    "content/handbook/product/ux/experience-research/attending-a-research-event.md": {
+      "path": "content/handbook/product/ux/experience-research/attending-a-research-event.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4fcb9f099d955be2aee30f0e2f1c3c80b404a610a693d342f6ad7b2e91f7eb26"
+    },
+    "content/handbook/product/ux/experience-research/choosing-a-research-methodology.md": {
+      "path": "content/handbook/product/ux/experience-research/choosing-a-research-methodology.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "054e27045bcd9ee931c304590830f8a866a688049e417cd14979883cd86b74ff"
     }
   }
 }
