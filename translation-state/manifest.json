@@ -27079,6 +27079,76 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "a6545176d6c1f5daa7f76abbbee1852b00ab03961b5721a3346e61d962350d09"
+    },
+    "content/handbook/people-group/learning-and-development/growth-and-development/tax.md": {
+      "path": "content/handbook/people-group/learning-and-development/growth-and-development/tax.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8f16615d0a9fd5fff5aecb7e90b0f8811484509c398b6c840dd45b42878ebcb7"
+    },
+    "content/handbook/people-group/learning-and-development/elevate-programs/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/elevate-programs/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "01664f0648ab31b6ef2f705ca5dfb17f3348356c1bc3fb0aeafcdbb358c959dc"
+    },
+    "content/handbook/people-group/learning-and-development/elevate-programs/elevateplus/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/elevate-programs/elevateplus/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5b29b3269df3218783001d0c9f64d387e4b71adc10ef97f935adbbf6d111cc18"
+    },
+    "content/handbook/people-group/learning-and-development/elevate-programs/elevate-prep/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/elevate-programs/elevate-prep/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "868749c1fb00500a7f48adbdca34a9ecd4f485db262cbe070e26f4410fad2cae"
+    },
+    "content/handbook/people-group/learning-and-development/elevate-programs/elevate-applied/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/elevate-programs/elevate-applied/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3689bc77648a223808ee9d5f7cdb7ed017b550ae9852a1fe89067afc1d39c2fe"
+    },
+    "content/handbook/people-group/learning-and-development/elevate-programs/elevate/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/elevate-programs/elevate/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "706659619e649c149b2635e7414b30bc93bf8926b4e0d725949a69ac666d256a"
+    },
+    "content/handbook/people-group/learning-and-development/career-development/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/career-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "34ee249b618d41277580d191bb541aadda90d0153aceeb3d572cd007ca39b9f0"
+    },
+    "content/handbook/people-group/learning-and-development/career-development/igp-guide.md": {
+      "path": "content/handbook/people-group/learning-and-development/career-development/igp-guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "34b2ec6832688c41b75b47b192242c712e88424b5d6538746ea4ba6d59e5952e"
+    },
+    "content/handbook/people-group/general-onboarding/_index.md": {
+      "path": "content/handbook/people-group/general-onboarding/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "969480befb3201368b0207b0346e637c743c0ea4171bc3ca52701d88ad2092e8"
+    },
+    "content/handbook/people-group/general-onboarding/mr-buddies.md": {
+      "path": "content/handbook/people-group/general-onboarding/mr-buddies.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fc71c53faa384f153779ccaf31bbedbe9b860880522e8606516c4233f8d85cab"
     }
   }
 }
