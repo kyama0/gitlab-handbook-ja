@@ -25679,6 +25679,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "054e27045bcd9ee931c304590830f8a866a688049e417cd14979883cd86b74ff"
+    },
+    "content/handbook/product/ux/experience-research/collecting-useful-data.md": {
+      "path": "content/handbook/product/ux/experience-research/collecting-useful-data.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "631334e957346bab888a4f131124230c327251f7337a2c80df5d0adaaf9bc556"
+    },
+    "content/handbook/product/ux/experience-research/comparative-testing-for-navigation.md": {
+      "path": "content/handbook/product/ux/experience-research/comparative-testing-for-navigation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "04f6a734f45a45a2e3727c7278f8c5c181873a63227fb73ba69148f88fa7a1e3"
+    },
+    "content/handbook/product/ux/experience-research/creating-first-click-study-qualtrics.md": {
+      "path": "content/handbook/product/ux/experience-research/creating-first-click-study-qualtrics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a1fc85ebd17b663ac1bd0d17e7ca29081af5c035b819e37749448f87c123eb3e"
+    },
+    "content/handbook/product/ux/experience-research/diary-studies.md": {
+      "path": "content/handbook/product/ux/experience-research/diary-studies.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1161d476cea35201f652d4bd7c7219c5a7b1c9fa5d7ccf056b70c4c7bd75a219"
+    },
+    "content/handbook/product/ux/experience-research/discussion-guide-user-interviews.md": {
+      "path": "content/handbook/product/ux/experience-research/discussion-guide-user-interviews.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6445bf3852b7fdb83f6b81f4e641d2d5f7e74dd676795eebabae632c021c0fea"
+    },
+    "content/handbook/product/ux/experience-research/finding-existing-research.md": {
+      "path": "content/handbook/product/ux/experience-research/finding-existing-research.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1371b3378e22c196185438f09784401ec4a62c56e61ef26d3158da6ec897265a"
+    },
+    "content/handbook/product/ux/experience-research/finding-saas-users.md": {
+      "path": "content/handbook/product/ux/experience-research/finding-saas-users.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6bc6d750d2307f5b550625297a302d1ab7943e95b28b9b73f6122148db62d297"
+    },
+    "content/handbook/product/ux/experience-research/first-click-testing.md": {
+      "path": "content/handbook/product/ux/experience-research/first-click-testing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b5c4a26f227cfd521a162a13aed00e6eddc6ae4668b7d18e53cb6829551a80da"
+    },
+    "content/handbook/product/ux/experience-research/interview-carousel.md": {
+      "path": "content/handbook/product/ux/experience-research/interview-carousel.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e98ed3cb7065081eef1e0144f4aad1895eca6504fc4af833e6196abdfb807451"
+    },
+    "content/handbook/product/ux/experience-research/problem-validation-and-methods.md": {
+      "path": "content/handbook/product/ux/experience-research/problem-validation-and-methods.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cccbac281f44ffdf9d9d30b8db10bb89f5127439876e57e3f93ad37896003d95"
     }
   }
 }
