@@ -25469,6 +25469,76 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "e54e32d2a1c1742a3d2ae33fcfe87959ff5a62782fa251258deb041e1343c503"
+    },
+    "content/handbook/product/ux/product-design/product-design-manager.md": {
+      "path": "content/handbook/product/ux/product-design/product-design-manager.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7cef18032cfff31c1a9930377288d1dce310d9a645adf2cc17be2db13348aada"
+    },
+    "content/handbook/product/ux/product-design/ux-roadmaps/_index.md": {
+      "path": "content/handbook/product/ux/product-design/ux-roadmaps/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b7de86b2186ebbb8ea35645a95d3cfbaa4cad36b80eaf0d6225871eee8bdd8b9"
+    },
+    "content/handbook/product/ux/product-design/operations/_index.md": {
+      "path": "content/handbook/product/ux/product-design/operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ef6903901418dbee634e7f75894d530a3b23e3cf6534a47f9397ef80463714e2"
+    },
+    "content/handbook/product/ux/persona-creation/index.md": {
+      "path": "content/handbook/product/ux/persona-creation/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "86b34ad7606383d4bc73e23b342962774c19dfad30ec2803a5f2aeb8553f970d"
+    },
+    "content/handbook/product/ux/performance-indicators/_index.md": {
+      "path": "content/handbook/product/ux/performance-indicators/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eed0f48f971db28682a2bd505b7ea9139ee6d6eade79d50c2138c3d460dce751"
+    },
+    "content/handbook/product/ux/performance-indicators/usat-plus/_index.md": {
+      "path": "content/handbook/product/ux/performance-indicators/usat-plus/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b2cd621b0cc29514da1adefd41b1260a334e9b20557da8f73cd54d4437abd2e8"
+    },
+    "content/handbook/product/ux/performance-indicators/system-usability-scale/_index.md": {
+      "path": "content/handbook/product/ux/performance-indicators/system-usability-scale/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9aa648cb739a32d4d540977fceacea76bb124b47a6b4dd28218e495c571313c1"
+    },
+    "content/handbook/product/ux/performance-indicators/system-usability-scale/sus-outreach.md": {
+      "path": "content/handbook/product/ux/performance-indicators/system-usability-scale/sus-outreach.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fd85ef77f00c1bd6135807c7ee44134f871c922cf44d784c8c890e44dcfa9e9e"
+    },
+    "content/handbook/product/ux/pajamas-design-system/_index.md": {
+      "path": "content/handbook/product/ux/pajamas-design-system/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e24d718deca52e87c2369cf21360224ad7a8aa5f49feb1f6e5dd96a8279ad707"
+    },
+    "content/handbook/product/ux/pajamas-design-system/design-review.md": {
+      "path": "content/handbook/product/ux/pajamas-design-system/design-review.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9befe948e9074469ea7efe32081b164228c4f5bb0d3c7a09e05af4a287e2a756"
     }
   }
 }
