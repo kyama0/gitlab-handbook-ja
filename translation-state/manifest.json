@@ -26939,6 +26939,76 @@
       "translated_at": "2026-05-13T18:43:26Z",
       "model": "claude-opus-4-7",
       "input_hash": "f9c70170a04cb1223e1c36ea876b96d76c896189718f0b91d4ddc8649e2d45fd"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/people-analytics/data-guide.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/data-guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "97f8f8acfa09a0e84a7ec903d21eb8273553d47ba57ece91d8d0bdd5358eaefa"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/people-analytics/office-hours.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/office-hours.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a378bd50ce3025cf050e5cc0280da6ecd2a93794e202f8ff697163e556d1ed74"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/people-analytics/people-tableau.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/people-tableau.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "26bc1a4e2acd6ca492addbdbac398349df465aa6b7480099febfd23b21dc67f7"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/people-analytics/survey-support.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/survey-support.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "34f887c552d3f786e77d093afcb794d6a7b694169abf46d9757de5006c610893"
+    },
+    "content/handbook/people-group/people-operations/_index.md": {
+      "path": "content/handbook/people-group/people-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "da377e64d569b590c8fbad4d93d5f54aec28052232a5300e3264fcde2d4fc62a"
+    },
+    "content/handbook/people-group/people-compliance/_index.md": {
+      "path": "content/handbook/people-group/people-compliance/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8880fd13a22cebbaf9e23692038c0f229a4bc3145c396d0be83de9878a6d50c2"
+    },
+    "content/handbook/people-group/people-business-partners/_index.md": {
+      "path": "content/handbook/people-group/people-business-partners/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "47314d178e124594b99b6956466d7a32e41be0ce1132928c0411b1b30a6ad005"
+    },
+    "content/handbook/people-group/offboarding/_index.md": {
+      "path": "content/handbook/people-group/offboarding/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3684819dc5994b1020ef7052f924444ab182f75c4c5584a75c89ef0c5a6a391a"
+    },
+    "content/handbook/people-group/offboarding/faq.md": {
+      "path": "content/handbook/people-group/offboarding/faq.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bb91e03261aa9ee470401b9555d017d8165a92d543d41b09fda51079c4058e3d"
+    },
+    "content/handbook/people-group/offboarding/offboarding_standards.md": {
+      "path": "content/handbook/people-group/offboarding/offboarding_standards.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ccdddd3ac0d1d997cf3fe34d3187929ad6d5ad3e4f8dfad208e69a0503f42ffa"
     }
   }
 }
