@@ -27219,6 +27219,76 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "f4cbe604d8967592341c231b4ee31966af817a7605745378c0a8f53bc0046396"
+    },
+    "content/handbook/marketing/virtual-events/_index.md": {
+      "path": "content/handbook/marketing/virtual-events/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "de57f29ef6a3124b5ccd2eb0e186b7d5120ce7b724d8061fbd09ed2d6ee0b718"
+    },
+    "content/handbook/marketing/virtual-events/external-virtual-events.md": {
+      "path": "content/handbook/marketing/virtual-events/external-virtual-events.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a0e8d4a28196904a9e94eb5031e8f6436f06e1bde0aca6ba9a7c61d4b25bd1d6"
+    },
+    "content/handbook/marketing/virtual-events/webcasts/_index.md": {
+      "path": "content/handbook/marketing/virtual-events/webcasts/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "14dababba00ec60e544f950823d6b5a48ea0fa48886ebda791c8b7f18f87e179"
+    },
+    "content/handbook/marketing/virtual-events/webcasts/webex.md": {
+      "path": "content/handbook/marketing/virtual-events/webcasts/webex.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "62abb36212194a07cf624d525c037f3814221df440798b26b2fa352ac75c0872"
+    },
+    "content/handbook/marketing/virtual-events/self-service-virtual-events/index.md": {
+      "path": "content/handbook/marketing/virtual-events/self-service-virtual-events/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0ab8a2e580327a33bc4ecfbedf32275e2dd39dabc1d309549c42983724a568f4"
+    },
+    "content/handbook/marketing/the-source/index.md": {
+      "path": "content/handbook/marketing/the-source/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a9a3512b271207c42c1c08e8be51d5e256cec40c23c0614f8d4d4ea72f524e3"
+    },
+    "content/handbook/marketing/sales-plays-cicd/_index.md": {
+      "path": "content/handbook/marketing/sales-plays-cicd/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "91968070b3a8aa798b5baa81ab9ad8220a69212ab6df4b525e4d9ba70c949175"
+    },
+    "content/handbook/marketing/sales-plays-cicd/message-house-premium-to-ultimate.md": {
+      "path": "content/handbook/marketing/sales-plays-cicd/message-house-premium-to-ultimate.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "749be2fe286825d5fc1327fb472c8c0f4a738c38dc65ffb51d6eddd8bb04ecf4"
+    },
+    "content/handbook/marketing/sales-plays-cicd/planner-premium-to-ultimate.md": {
+      "path": "content/handbook/marketing/sales-plays-cicd/planner-premium-to-ultimate.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fecafeb8ddbab80ec34bd79644978a6d8fd05c4ded31a4baf50636e39fc317d4"
+    },
+    "content/handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate.md": {
+      "path": "content/handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "df46430e968bca4ff0679e56d9eef015c25f0324e7e101db4b484c483c6c12fb"
     }
   }
 }
