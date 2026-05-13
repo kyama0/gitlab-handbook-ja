@@ -27149,6 +27149,76 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "fc71c53faa384f153779ccaf31bbedbe9b860880522e8606516c4233f8d85cab"
+    },
+    "content/handbook/people-group/general-onboarding/onboarding-buddies.md": {
+      "path": "content/handbook/people-group/general-onboarding/onboarding-buddies.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4d19bbcab83cedfbeef9f3329970235ccb57a8e1eedaf2206ef9e33dfca7f661"
+    },
+    "content/handbook/people-group/general-onboarding/tanewki-tips.md": {
+      "path": "content/handbook/people-group/general-onboarding/tanewki-tips.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b70872218f28cada088330fcc0b9e6261a9c781decf9bad23501d921f49d881a"
+    },
+    "content/handbook/people-group/employment-branding/_index.md": {
+      "path": "content/handbook/people-group/employment-branding/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cee10f89ff04842da2861dfc299cd6b1997cc45ac51646faca8e61e61d8c10e4"
+    },
+    "content/handbook/people-group/employment-branding/content-library.md": {
+      "path": "content/handbook/people-group/employment-branding/content-library.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5f2cb34e09c8eb802b6ba2ad46bf073c6fd2e0b1da08f3de302114fb416127a2"
+    },
+    "content/handbook/people-group/employment-branding/people-communications.md": {
+      "path": "content/handbook/people-group/employment-branding/people-communications.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3cce08f5494e9303f13254d99a75b9739f6d9f7a3230ef73ea6d09bf13b1fb0c"
+    },
+    "content/handbook/marketing/smb-marketing.md": {
+      "path": "content/handbook/marketing/smb-marketing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2d0c3f2ffc551ee00fa3b1175f3e6a7e6e572755a5d3aa0bc48ea240f2a519ef"
+    },
+    "content/handbook/marketing/team-member-social-media-policy.md": {
+      "path": "content/handbook/marketing/team-member-social-media-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6690ce440ccdcd854fef3ad6ec7968d3c7886dea08d9fe1f37a009d7872e7f08"
+    },
+    "content/handbook/marketing/use-cases.md": {
+      "path": "content/handbook/marketing/use-cases.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "33444c000ce61ca82eedbb57a19dc0a057c11784a40e41a161caacc5e85ed1a5"
+    },
+    "content/handbook/marketing/user-engagement.md": {
+      "path": "content/handbook/marketing/user-engagement.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9f0a0de88c12db2fe7789a5de30d4a2c6e7d3624572c533357d9d629ad250c5f"
+    },
+    "content/handbook/marketing/utm-strategy.md": {
+      "path": "content/handbook/marketing/utm-strategy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f4cbe604d8967592341c231b4ee31966af817a7605745378c0a8f53bc0046396"
     }
   }
 }
