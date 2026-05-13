@@ -26309,6 +26309,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "449e806b75793a3c866204bcd00356586c144a2a8926c87afe6dc8db196211ad"
+    },
+    "content/handbook/product/product-processes/analytics-instrumentation-guide/_index.md": {
+      "path": "content/handbook/product/product-processes/analytics-instrumentation-guide/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2021597b4adf5384dc876d56c30612c754bfe11312134959521febcfddf816d0"
+    },
+    "content/handbook/product/product-processes/analytics-instrumentation-guide/service-usage-data-commitment.md": {
+      "path": "content/handbook/product/product-processes/analytics-instrumentation-guide/service-usage-data-commitment.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b082ca5ea52c6b2b1af2687ba8c8fbcde10aefa184575eb98a7a4f24fe4316b1"
+    },
+    "content/handbook/product/product-management/_index.md": {
+      "path": "content/handbook/product/product-management/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f86098d7cbbe4fa09224f2e4ca6d3d8bbca1b30c913d649a5ff6f4532ad0128e"
+    },
+    "content/handbook/product/product-management/internship.md": {
+      "path": "content/handbook/product/product-management/internship.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1c22cece1e475d4bdae5ed9de69f2e4c078527fbb92ba518e30e70b289536f32"
+    },
+    "content/handbook/product/product-management/learning-and-development.md": {
+      "path": "content/handbook/product/product-management/learning-and-development.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2291fb46d8b9753e41d3f0028fcffd52ebd720791daca7af45fe9116c948e480"
+    },
+    "content/handbook/product/product-management/product-cdf-competencies.md": {
+      "path": "content/handbook/product/product-management/product-cdf-competencies.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5d1360753d4514dbc840aa58b0a7c9263990ff7cfca75cbf855ef909dfb40767"
+    },
+    "content/handbook/product/product-management/product-manager-buddy-tasks.md": {
+      "path": "content/handbook/product/product-management/product-manager-buddy-tasks.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2d032b5c85b8ac81f6a76caf1c817dc3aaa97cf367897a1fb118e8f473fb5e0a"
+    },
+    "content/handbook/product/product-management/product-manager-role.md": {
+      "path": "content/handbook/product/product-management/product-manager-role.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b4a92c0e6df9dc2218f76c40bdafb12100fd33d1ec12aa2dd8564fe848087d84"
+    },
+    "content/handbook/product/product-leaders/_index.md": {
+      "path": "content/handbook/product/product-leaders/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a7f2faa4c77f9b681e4373bc0c2e3f38e6f761acdf8fc51780e87dc9e77a7694"
+    },
+    "content/handbook/product/product-leaders/cpo-shadow-program.md": {
+      "path": "content/handbook/product/product-leaders/cpo-shadow-program.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e5e49bb0556adb9b591787ff32aea13a4bf3cded72f7e245a6a673ae22b0beac"
     }
   }
 }
