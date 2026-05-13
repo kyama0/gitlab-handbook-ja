@@ -12,7 +12,7 @@ stale: false
 記載された[Roles & Responsibilities](#roles-and-responsibilities)のとおり、このページへの変更は code owner による承認またはマージが必要です。すべての貢献を歓迎し、奨励します。
 {{% /panel %}}
 
-## 役割と責任
+## 役割と責任 {#roles-and-responsibilities}
 
 | 役割 | 責任 |
 |-----------|-----------|

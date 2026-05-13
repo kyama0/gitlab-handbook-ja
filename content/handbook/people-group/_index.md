@@ -65,7 +65,7 @@ Lighthouse には、チームメンバーが使用できるフリーダイヤル
 
 EthicsPoint および Lighthouse に加えて、[Team Member Relations](/handbook/people-group/team-member-relations/) ページをご確認ください。GitLab はまた、任意のチームメンバーが任意のタイプの職場ハラスメントのインスタンスを文書化するために使用できる [Harassment Complaint Form](https://docs.google.com/document/d/1Xk5SXvh2kpO-w-TdykiczjhXNrEBjbMwDQHEt6lMhIk/edit?usp=sharing) も提供します。フォームをコピーして、あなたの情報で記入し、teammemberrelations@gitlab.com で Team Member Relations Specialist に送信するだけです。
 
-## ピープルグループの適切なメンバーへの連絡方法
+## ピープルグループの適切なメンバーへの連絡方法 {#how-to-reach-the-right-member-of-the-people-group}
 
 この表は、ピープルグループ内の特定のグループに連絡したいときに使用するエイリアスを示します。これにより、適切なチームメンバーから、より早く適切な注意を得ることができます。
 
