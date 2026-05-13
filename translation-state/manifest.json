@@ -25329,6 +25329,76 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "135878afa004a2d99117c2063e93a8111c33203423ca706c11b461718f92e8c5"
+    },
+    "content/handbook/product/ux/research-operations/experience-research-participation.md": {
+      "path": "content/handbook/product/ux/research-operations/experience-research-participation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1d695cd1f9f4b319825a8f2e8544b87680bd1637d1078da71297e9e0bea32420"
+    },
+    "content/handbook/product/ux/research-operations/ip-assignment.md": {
+      "path": "content/handbook/product/ux/research-operations/ip-assignment.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ec34470f3178f0bfcfe3b083d6177a9410d698fd605e2ac2eb447390f19b7025"
+    },
+    "content/handbook/product/ux/research-operations/ndas.md": {
+      "path": "content/handbook/product/ux/research-operations/ndas.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bfd65aac4a593b08f112f26d2b98c6320dcdf3d5c3defac0a12b2cc1625f1685"
+    },
+    "content/handbook/product/ux/research-operations/recruitment-methods.md": {
+      "path": "content/handbook/product/ux/research-operations/recruitment-methods.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c696927bebcac6681223c47f1ffaf740986472c00705262ae7e6c083604afd3b"
+    },
+    "content/handbook/product/ux/research-operations/reops-procurement.md": {
+      "path": "content/handbook/product/ux/research-operations/reops-procurement.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9443b1084da79e5846318d56680dfac61cd919f1a6f156894dd703dc65f5ddba"
+    },
+    "content/handbook/product/ux/research-operations/research-specialist-fill-in.md": {
+      "path": "content/handbook/product/ux/research-operations/research-specialist-fill-in.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "421f1b31426ede98af4d31e55d5666ab691b870d31d1e4618248a4572f415710"
+    },
+    "content/handbook/product/ux/research-operations/shareouts/index.md": {
+      "path": "content/handbook/product/ux/research-operations/shareouts/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a450ccc7e9150381e5e0fcdccaf3f3e619772a8d05273141e8550a1effae97f"
+    },
+    "content/handbook/product/ux/research-operations/participation-gratuities/index.md": {
+      "path": "content/handbook/product/ux/research-operations/participation-gratuities/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b670af6be56bb69b8f57c51bed7858ebef0be09e969a3e5f9e8e9ec7e346d265"
+    },
+    "content/handbook/product/ux/product-designer/_index.md": {
+      "path": "content/handbook/product/ux/product-designer/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53ff194da2f8797331afcf42f412224b460685be0a7a32d5949edc4b8ea9aced"
+    },
+    "content/handbook/product/ux/product-designer/ai-design.md": {
+      "path": "content/handbook/product/ux/product-designer/ai-design.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "95e322ee8d528ee51d95da92820ec93e3085ac33b2bdc3b6731b5c6823f18542"
     }
   }
 }
