@@ -71,20 +71,20 @@ EthicsPoint および Lighthouse に加えて、[Team Member Relations](/handboo
 
 | サブグループ | GitLab ハンドル | メール | Slack グループハンドル／チャンネル | Greenhouse | Issue tracker |
 | -------- | ------------- | ----- | -------------------------- | ---------- | ------------- |
-| [People Business Partners](/handbook/people-group/people-business-partners/) | @gl-peoplepartners, *PBP のレビュー、コラボレーション、またはフィードバックを必要とする issue または MR に `pbp-attention` ラベルを追加してください* | peoplepartners@ gitlab.com | @peoplepartners | n/a |  |
-| [Total Rewards](https://gitlab.com/gitlab-com/people-group/total-rewards) | @gl-total-rewards | total-rewards@ gitlab.com | [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b677b7c9474c069067429ee0026d43d1) | n/a |  |
+| [People Business Partners](/handbook/people-group/people-business-partners/) | @gl-peoplepartners, *PBP のレビュー、コラボレーション、またはフィードバックを必要とする issue または MR に `pbp-attention` ラベルを追加してください* | peoplepartners@gitlab.com | @peoplepartners | n/a |  |
+| [Total Rewards](https://gitlab.com/gitlab-com/people-group/total-rewards) | @gl-total-rewards | total-rewards@gitlab.com | [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b677b7c9474c069067429ee0026d43d1) | n/a |  |
 | [People Compliance Partner](https://gitlab.com/gitlab-com/people-group/compliance) | TBA | [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=274b6e52ff3c12903691fe34fc4fd9ee) | TBA | n/a |  |
 | [People Operations Team](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations_team/) | @gl-people-ops-team | HelpLab | @people-ops-team | n/a |  |
 | [Team Member Relations](https://gitlab.com/gitlab-com/people-group/team-member-relations) | @atisdale-ext | teammemberrelations@gitlab.com | n/a | n/a |  |
 | [Absence Management Team](/handbook/people-policies/leave-of-absence/) | @lyndemeiers | leaves@gitlab.com | [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=3df7f70d474c069067429ee0026d434c&in_context=true)| n/a |  |
 | [People Group Engineering](https://gitlab.com/gitlab-com/people-group/peopleops-eng/people-operations-engineering) | @gl-people-engineering | メールグループなし、People Engineering の issue は[ここ](https://gitlab.com/gitlab-com/people-group/peopleops-eng/people-operations-engineering/-/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=)で作成してください | #peopleops-eng | n/a | https://gitlab.com/groups/gitlab-com/people-group/peopleops-eng/-/boards/3941171 |
 | [Diversity, Inclusion and Belonging](https://gitlab.com/gitlab-com/diversity-and-inclusion) | エイリアスはまだなし、@mention the |  |  |  |  |
-| [Diversity, Inclusion and Belonging Partner](/job-description-library/people-group/diversity-inclusion-partner/) | diversityinclusion@ gitlab.com | n/a | n/a |  | [Diversity, Inclusion and Belonging issue tracker](https://gitlab.com/gitlab-com/diversity-and-inclusion/-/issues) |
-| [Learning and Development](https://gitlab.com/gitlab-com/people-group/Training) | `@gitlab-com/people-group/learning-development` | learning@ gitlab.com | #learninganddevelopment | n/a | [L&D Issue Board](https://gitlab.com/groups/gitlab-com/people-group/learning-development/-/boards/1958538)  |
-| [Talent Acquisition](/handbook/company/team/?department=talent-acquisition) | @gl-talent-acquisition | recruiting@ gitlab.com | @talent-acquisition-team | n/a |  |
-| Employer Branding | エイリアスはまだなし、[Senior Talent Brand Manager](https://gitlab.com/bchurch) を @mention | employmentbranding@ gitlab.com | n/a | n/a |  |
-| [Candidate Experience Specialist](/job-description-library/people-group/candidate-experience) | @gitlab-com/gl-ces | ces@ gitlab.com | @ces | @ces* |  |
-| Talent Acquisition Operations and Insights | @gl-talent acquisitionops | talentacquisitionops@ gitlab.com | @talent-acquisition-ops | @talent-acquisitionops |  |
+| [Diversity, Inclusion and Belonging Partner](/job-description-library/people-group/diversity-inclusion-partner/) | diversityinclusion@gitlab.com | n/a | n/a |  | [Diversity, Inclusion and Belonging issue tracker](https://gitlab.com/gitlab-com/diversity-and-inclusion/-/issues) |
+| [Learning and Development](https://gitlab.com/gitlab-com/people-group/Training) | `@gitlab-com/people-group/learning-development` | learning@gitlab.com | #learninganddevelopment | n/a | [L&D Issue Board](https://gitlab.com/groups/gitlab-com/people-group/learning-development/-/boards/1958538)  |
+| [Talent Acquisition](/handbook/company/team/?department=talent-acquisition) | @gl-talent-acquisition | recruiting@gitlab.com | @talent-acquisition-team | n/a |  |
+| Employer Branding | エイリアスはまだなし、[Senior Talent Brand Manager](https://gitlab.com/bchurch) を @mention | employmentbranding@gitlab.com | n/a | n/a |  |
+| [Candidate Experience Specialist](/job-description-library/people-group/candidate-experience) | @gitlab-com/gl-ces | ces@gitlab.com | @ces | @ces* |  |
+| Talent Acquisition Operations and Insights | @gl-talent acquisitionops | talentacquisitionops@gitlab.com | @talent-acquisition-ops | @talent-acquisitionops |  |
 | Sourcing | @gl-sourcingteam | n/a | @sourcingteam | n/a |  |
 | [People Analytics](/handbook/people-group/people-ops-tech-analytics/people-analytics/) | エイリアスなし、People Analytics の issue は[こちら](https://gitlab.com/gitlab-com/people-group/people-analytics/general/-/issues/?sort=updated_desc&state=opened&first_page_size=100)で作成してください | n/a | @peopleanalyticstriage | n/a | [People Analytics Issue Board](https://gitlab.com/gitlab-com/people-group/people-analytics/general/-/boards/5251608) |
 
