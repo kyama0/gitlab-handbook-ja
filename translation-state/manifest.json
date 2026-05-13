@@ -26659,6 +26659,76 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "662ee4f13a405785f9b7600dc1be562e39a26826645cd3b23e49949736527cbb"
+    },
+    "content/handbook/people-policies/_index.md": {
+      "path": "content/handbook/people-policies/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5c3a752dac6b5446c7aeed2aa57e48c85970970883e5ac9f31a4798e51051a48"
+    },
+    "content/handbook/people-policies/inc-usa.md": {
+      "path": "content/handbook/people-policies/inc-usa.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "83be65de624f0bd9a223a22f6dc8200236bde9955f380d46513f5d4df78d3106"
+    },
+    "content/handbook/people-policies/leave-of-absence/_index.md": {
+      "path": "content/handbook/people-policies/leave-of-absence/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b53e80b70775ba34d433dac116c0881abcabc221761257ebe5767b6e0037b110"
+    },
+    "content/handbook/people-policies/leave-of-absence/us.md": {
+      "path": "content/handbook/people-policies/leave-of-absence/us.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1e223dc94e37a6fd099275edc4670f527caf1c4e8ade4a3c1e48d18c16ef3111"
+    },
+    "content/handbook/people-policies/ireland-ltd/right-to-disconnect-policy.md": {
+      "path": "content/handbook/people-policies/ireland-ltd/right-to-disconnect-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c8cfbe7684940f3b20695caed85b76e7dddb51110e0e87803fd11b90f27d7de3"
+    },
+    "content/handbook/people-policies/india-ltd/_index.md": {
+      "path": "content/handbook/people-policies/india-ltd/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53305372d0a93429c4ca39cb6c7c3182a2225e214e8990775bf7a0e478637c3a"
+    },
+    "content/handbook/people-policies/france-sas/remote-work-charter.md": {
+      "path": "content/handbook/people-policies/france-sas/remote-work-charter.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "17a656542cab3a6371fba62dcf3be9b52cc95e72a38ec2424badbd7f22eb5815"
+    },
+    "content/handbook/people-policies/france-sas/right-to-disconnect-charter.md": {
+      "path": "content/handbook/people-policies/france-sas/right-to-disconnect-charter.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4f4734359b7532ce91fb042355a6db66f8c33ec7c8b4665c931d287ed7766f98"
+    },
+    "content/handbook/people-group/360-feedback.md": {
+      "path": "content/handbook/people-group/360-feedback.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ffa90e5fb56baaab83174357235fabe4a7708f444060950b8befc2a2bbbeede3"
+    },
+    "content/handbook/people-group/_index.md": {
+      "path": "content/handbook/people-group/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "75240cb99a76fc883c942f304266b47ad6814aa52ab6a5b5bd760e2c607e8b68"
     }
   }
 }
