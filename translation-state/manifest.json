@@ -26729,6 +26729,76 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "75240cb99a76fc883c942f304266b47ad6814aa52ab6a5b5bd760e2c607e8b68"
+    },
+    "content/handbook/people-group/acceptable-use-policy.md": {
+      "path": "content/handbook/people-group/acceptable-use-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2e88c1baef223734b663cdcdc7dd10f48f4976480ac671500e18afc77282fa75"
+    },
+    "content/handbook/people-group/anti-harassment.md": {
+      "path": "content/handbook/people-group/anti-harassment.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3cbb987e86190dd73651a65d7c7391f291506f120c96037155a236ffac35f4ca"
+    },
+    "content/handbook/people-group/celebrations.md": {
+      "path": "content/handbook/people-group/celebrations.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d25b82f2b243ab4bf3fb0dba809118ff306c9e456b58aca61b41af875492cdf3"
+    },
+    "content/handbook/people-group/competencies.md": {
+      "path": "content/handbook/people-group/competencies.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "17f04df7a98d66a66cbc9b2710e087f8fb04a1e3d4a6b5c064761ab0273b48d4"
+    },
+    "content/handbook/people-group/contracts-probation-periods.md": {
+      "path": "content/handbook/people-group/contracts-probation-periods.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c003a758d9bcd174622a4336b9e450e38358b45fed8c901383999d389f6a84d7"
+    },
+    "content/handbook/people-group/directly-responsible-individuals.md": {
+      "path": "content/handbook/people-group/directly-responsible-individuals.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e838c5ea1f78eab3a03c6e7cffa86cb6b3b8fa4d2641db02bab43bb6e5ec807c"
+    },
+    "content/handbook/people-group/employment-solutions.md": {
+      "path": "content/handbook/people-group/employment-solutions.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5ffe4bf0757360ee31b4d4fbee2704974110a8e894534f78ecdf360cb60b2808"
+    },
+    "content/handbook/people-group/engagement.md": {
+      "path": "content/handbook/people-group/engagement.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "670b0a2446908a62113b43ee6fd7589862a7063b2a60cbe211cb727db288cd98"
+    },
+    "content/handbook/people-group/givelab-volunteer-initiatives.md": {
+      "path": "content/handbook/people-group/givelab-volunteer-initiatives.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "42e449c45da5440ff8c5d0586912a370e66930085fe7f9839fe9472b57fabc41"
+    },
+    "content/handbook/people-group/guidance-on-feedback.md": {
+      "path": "content/handbook/people-group/guidance-on-feedback.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3a7007a0f1358c0001859a775cd9bdac9f62de5cb7d4ad897301bf183f945a71"
     }
   }
 }
