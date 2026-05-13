@@ -25399,6 +25399,76 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "95e322ee8d528ee51d95da92820ec93e3085ac33b2bdc3b6731b5c6823f18542"
+    },
+    "content/handbook/product/ux/product-designer/mr-reviews/_index.md": {
+      "path": "content/handbook/product/ux/product-designer/mr-reviews/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0b500d4ac45bdf58c98ce54d14488d7e7a8a4ada2c98975636119bb468f22216"
+    },
+    "content/handbook/product/ux/product-designer/mr-reviews/preview-mr.md": {
+      "path": "content/handbook/product/ux/product-designer/mr-reviews/preview-mr.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3a8dcd352fa326f598333bb69b22546ba110e82c77519d6a1b8efb441cb486f7"
+    },
+    "content/handbook/product/ux/product-designer/figma/_index.md": {
+      "path": "content/handbook/product/ux/product-designer/figma/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f24e1fe70670ca6d3c2c329c7233341bbd27b2010c5d7f9555657eed18e62e6a"
+    },
+    "content/handbook/product/ux/product-designer/capacity-management/_index.md": {
+      "path": "content/handbook/product/ux/product-designer/capacity-management/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c0d22da55f4340609d5dfc51a883c06c3048054696ecce5288ab748378660b71"
+    },
+    "content/handbook/product/ux/product-design/_index.md": {
+      "path": "content/handbook/product/ux/product-design/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7d9e191ee688eef47995c229d6f1387a46572d7adb140125320abf3a2b7d0d39"
+    },
+    "content/handbook/product/ux/product-design/design-pair-rotation.md": {
+      "path": "content/handbook/product/ux/product-design/design-pair-rotation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3ce0b65241afc9339a1dddca4ec9dd21b2e0650ec01145fda637bab3ee244d63"
+    },
+    "content/handbook/product/ux/product-design/design-reach-program.md": {
+      "path": "content/handbook/product/ux/product-design/design-reach-program.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "deedf07b2b9b9cd5079a9d58b3ac613d1b486dafc31098a4dd1b72a3ce9b0eab"
+    },
+    "content/handbook/product/ux/product-design/design-studios.md": {
+      "path": "content/handbook/product/ux/product-design/design-studios.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "be2250ad21fb1b827443c168561e2d4220ef21c5649b426bfa76865fff934fd9"
+    },
+    "content/handbook/product/ux/product-design/hiring-product-designers.md": {
+      "path": "content/handbook/product/ux/product-design/hiring-product-designers.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7665340f551f504c40d0a131125fd8117e5fa2ef9a6d77457d90721d82869094"
+    },
+    "content/handbook/product/ux/product-design/product-design-manager-pairs.md": {
+      "path": "content/handbook/product/ux/product-design/product-design-manager-pairs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e54e32d2a1c1742a3d2ae33fcfe87959ff5a62782fa251258deb041e1343c503"
     }
   }
 }
