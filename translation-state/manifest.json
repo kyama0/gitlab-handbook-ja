@@ -26099,6 +26099,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "14426ce6ef04232eac8d4350b69f96c38b23c5483a8cef65a6f7081092e0f55d"
+    },
+    "content/handbook/product/ux/experience-research/foundational-research/index.md": {
+      "path": "content/handbook/product/ux/experience-research/foundational-research/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "adbd0035f61b0551c37dd95aa31c46afbafc195301b6bac4f3fc07df74e3237b"
+    },
+    "content/handbook/product/ux/experience-research/facilitating-user-interviews/index.md": {
+      "path": "content/handbook/product/ux/experience-research/facilitating-user-interviews/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a79acbfdf87b865478fe497ea4c7f8f5412a5bda2e2c29d595c1a0dec1d1d45d"
+    },
+    "content/handbook/product/ux/experience-research/evaluating-navigation/index.md": {
+      "path": "content/handbook/product/ux/experience-research/evaluating-navigation/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2c8bc5c8857d2647d088aeb1ee28951928bb0260d58a423a9c4065b5c02c0a0a"
+    },
+    "content/handbook/product/ux/experience-research/early-solution-validation-process-for-navigation/index.md": {
+      "path": "content/handbook/product/ux/experience-research/early-solution-validation-process-for-navigation/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "88fdae3480c890191b767e8f11ae1ca47666fdfd52345a19b93b4ad6c38761ed"
+    },
+    "content/handbook/product/ux/experience-research/defining-goals-objectives-and-hypotheses/index.md": {
+      "path": "content/handbook/product/ux/experience-research/defining-goals-objectives-and-hypotheses/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3215c7611c3841893b6ccdea00f49a1c7a04fcd120aacaf849d3e03cee430fbd"
+    },
+    "content/handbook/product/ux/experience-research/community-contributions-for-actionable-insights/index.md": {
+      "path": "content/handbook/product/ux/experience-research/community-contributions-for-actionable-insights/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "97d259b9ac59e3ac98ea7360b54337b84ab475efc1f032158ed8b5c18d9a1ffd"
+    },
+    "content/handbook/product/ux/dovetail/index.md": {
+      "path": "content/handbook/product/ux/dovetail/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b68df2bcf7e4968350467d8cc17e8776b88e458da744f76bcdf3124d3f0a1b24"
+    },
+    "content/handbook/product/ux/category-maturity/_index.md": {
+      "path": "content/handbook/product/ux/category-maturity/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "621555ebf0556623935ca1be02f87d97726fb82509b17572bc4eb0ad4226e102"
+    },
+    "content/handbook/product/ux/category-maturity/competitor-comparison.md": {
+      "path": "content/handbook/product/ux/category-maturity/competitor-comparison.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "42e9e9b493c2fd497361a1c78043e8adb87f4e9177a37d35d5e5afe7f6500463"
+    },
+    "content/handbook/product/ux/category-maturity/category-maturity-scorecards/index.md": {
+      "path": "content/handbook/product/ux/category-maturity/category-maturity-scorecards/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a666752b73f8b27fd400aeb0f22d137e069a38ea268f201e8282e1df55ac915"
     }
   }
 }
