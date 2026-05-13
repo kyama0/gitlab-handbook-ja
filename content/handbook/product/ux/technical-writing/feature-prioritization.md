@@ -27,7 +27,7 @@ GitLab の[プロダクト原則](../../product-principles.md) と [プロダク
 
 ### トリアージプロセス
 
-テクニカルライティングの Staff エンジニアが、すべての新しい Issue を週 2 ～ 3 回レビューし:
+テクニカルライティングの Staff エンジニアが、すべての新しい Issue を週 2 ～ 3 回レビューし、次の作業を行います。
 
 - [作業タイプラベル](../../groups/product-analysis/engineering/metrics.md#work-type-classification) を適用
 - 追加のカテゴリー分類のための [docs 固有のラベル](https://docs.gitlab.com/development/documentation/workflow/#available-labels) を追加
