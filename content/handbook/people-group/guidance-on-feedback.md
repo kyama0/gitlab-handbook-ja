@@ -127,7 +127,7 @@ GitLab には、多様な[文化と背景](/handbook/company/culture/inclusion/i
    - 個人の背景が、彼らがフィードバックを受け取ることを好む方法に影響を与える可能性があるか？
    - 異なる国のコミュニケーションとフィードバックスタイルを理解するため、[Culture Map](https://erinmeyer.com/book/) を読んでください。
 
-### S-B-I モデル
+### S-B-I モデル {#s-b-i-model}
 
 Situation-Behavior-Impact (S-B-I) モデルは、以下に基づいてフィードバックに焦点を当てます:
 
