@@ -26449,6 +26449,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "789e5bc5170b04b7b6aa4dcb3d08489edf4a1e6e493e41478e12b170f2e2b336"
+    },
+    "content/handbook/product/groups/product-analysis/dashboards-analysis-insights.md": {
+      "path": "content/handbook/product/groups/product-analysis/dashboards-analysis-insights.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "01619e3d74df1269d6d9ee222f950b8cc0f036e5ff20e0ae8afb44839eb4dc2c"
+    },
+    "content/handbook/product/groups/product-analysis/data-model-cheat-sheet.md": {
+      "path": "content/handbook/product/groups/product-analysis/data-model-cheat-sheet.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7de2434a1612ea31f329d6c75c43b2c6ce694bee0a0dc2d41e230a03e9a08f77"
+    },
+    "content/handbook/product/groups/product-analysis/dbt-cheat-sheet.md": {
+      "path": "content/handbook/product/groups/product-analysis/dbt-cheat-sheet.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ec72bd723bf29fe28b1cb8f27c21ca8785517b4699d9bc3ac1367edfefb98dc2"
+    },
+    "content/handbook/product/groups/product-analysis/experimentation.md": {
+      "path": "content/handbook/product/groups/product-analysis/experimentation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "651fc745c7ee850c3b27316f079dbb52118f60cb355033f58d251224fc567881"
+    },
+    "content/handbook/product/groups/product-analysis/team-processes.md": {
+      "path": "content/handbook/product/groups/product-analysis/team-processes.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "002a5f35a862e3bfc0237da8a48f365f6e51a4c8f5a115750c7ea80eb6070996"
+    },
+    "content/handbook/product/groups/product-analysis/engineering/dashboards.md": {
+      "path": "content/handbook/product/groups/product-analysis/engineering/dashboards.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d2ec31701cb1ed1d15210ff8dc8b5051af9aacc98b05ab5a2d154f40c0b522ff"
+    },
+    "content/handbook/product/groups/product-analysis/engineering/data-guide.md": {
+      "path": "content/handbook/product/groups/product-analysis/engineering/data-guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "11a2bf6ba5ee5898658c0225827f3c5b4661228ec6f90c5bc81dc64dfd7fb244"
+    },
+    "content/handbook/product/groups/product-analysis/engineering/metrics.md": {
+      "path": "content/handbook/product/groups/product-analysis/engineering/metrics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "226f0beee8d0314920fba8d166b73ffb1477d606705b2bd7a3f89cb3e7b28a4f"
+    },
+    "content/handbook/product/groups/growth/_index.md": {
+      "path": "content/handbook/product/groups/growth/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7ae24efae2064a23e24adb25a239898574f652921041aa16f2923d13d7b31dc8"
+    },
+    "content/handbook/product/groups/fulfillment/_index.md": {
+      "path": "content/handbook/product/groups/fulfillment/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1bc8b8488c76f358590f53156b14d75e2fc490cf1cdb8fc35adb9958c4ebcc4e"
     }
   }
 }
