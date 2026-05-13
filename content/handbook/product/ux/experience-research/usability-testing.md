@@ -8,7 +8,7 @@ translator: claude
 stale: false
 ---
 
-## GitLab におけるユーザビリティ
+## GitLab におけるユーザビリティ {#usability-at-gitlab}
 
 「ユーザビリティ」という言葉はさまざまな意味を持ち得ます。GitLab では、ユーザーリサーチを実施し製品を設計する際に、ユーザビリティを次のように定義しています。
 
