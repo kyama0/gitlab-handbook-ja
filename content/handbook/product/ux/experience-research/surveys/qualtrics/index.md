@@ -29,7 +29,7 @@ stale: false
 1. アンケートの構築が完了したら、`Preview` で期待通りに動作しているかを確認します。
 1. アンケートを起動する準備ができたら、`Publish` をクリックします。
 
-## スタイリング（Look & Feel 設定）
+## スタイリング（Look & Feel 設定） {#styling-look--feel-settings}
 
 アンケートには以下の設定を適用してください。
 
