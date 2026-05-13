@@ -88,7 +88,7 @@ Gitpod を使用するには:
 - [自動停止を防ぐ](https://docs.gitlab.com/development/testing_guide/review_apps/#auto-stopping-of-review-apps)
 - [📺 機能フラグを切り替える](https://www.youtube.com/watch?v=VBo667LiwBQ)。`curl` や [Postman](https://www.postman.com) などのツールを使用して機能フラグを有効化できます。
 
-## ヘルプ
+## ヘルプ {#help}
 
 行き詰まった場合:
 
