@@ -27,11 +27,11 @@ AI 支援機能の UX 成熟度を評価するには、[プロダクト開発フ
 | [改善](#build-improve) | 該当なし (リリース前のデータがない)。 | チームが設定した品質目標が達成されている。 | チームが設定した品質目標が達成されている。 |
 | [AI 出力とユーザビリティの品質](#evaluating-the-quality-of-ai-output) | 不要。 | チームが設定した品質目標が達成されている。 | チームが設定した品質目標が達成されている。 |
 
-### 検証: 問題の検証
+### 検証: 問題の検証 {#validation-problem-validation}
 
 ソリューションを決定するには、顧客の問題を理解することが不可欠です。[AI 問題検証のガイドライン](/handbook/product/ux/experience-research/research-in-the-ai-space/#the-guidelines)を参照してください。
 
-### 検証: ソリューションの検証
+### 検証: ソリューションの検証 {#validation-solution-validation}
 
 AI ソリューションは、標準的な[ソリューション検証](/handbook/product/ux/experience-research/solution-validation-and-methods/)プロセスに従いますが、いくつかの追加の考慮事項があります。
 
@@ -40,13 +40,13 @@ AI ソリューションは、標準的な[ソリューション検証](/handboo
 
 詳細については、[AI ソリューション検証のガイドライン](/handbook/product/ux/experience-research/research-in-the-ai-space/#the-guidelines)と [AI ユーザビリティメトリクス](/handbook/product/ux/experience-research/research-in-the-ai-space/#ai-usability-metric)を参照してください。
 
-### 構築: 改善
+### 構築: 改善 {#build-improve}
 
 **ソリューションはどれだけ成功しているか?** この質問に答えるため、機能の UX 成熟度の文脈において、チームは成功指標として機能利用率を超えて[ユーザビリティ](/handbook/product/ux/experience-research/usability-testing/#usability-at-gitlab)シグナルを含めるよう努めるべきです。高い利用率は必ずしも機能が成功していることを意味しません。ユーザビリティシグナルは、_有用性、効率性、効果性、満足度、学習可能性_ の観点からソリューションの成功を評価するのに役立ちます。
 
 成功指標に AI 応答の正確性を含めることも重要です。AI 搭載機能は、不正確、無関係、または有害な応答や出力を生成する可能性があります。不正確な応答のリスクは機能によって異なります。形成的評価の一環として AI システムの応答をテストすることが重要です。たとえば、1 人以上の専門評価者 (内部または外部) がさまざまなシナリオをテストして AI 応答を評価することができます。
 
-### AI 出力の品質評価
+### AI 出力の品質評価 {#evaluating-the-quality-of-ai-output}
 
 GitLab は AI ベンダーから使用するモデルを直接制御していませんが、これらのモデルの出力は、私たちが制御するさまざまな技術 (プロンプトエンジニアリング、RAG、コンテキスト強化など) によって影響を受けることがあります。エンドユーザーはこの仕組みを気にしないため、出力の品質は機能の品質として直接認識されます。そのため、チームが出力品質の信頼度とリスクを判断する際に役立つ以下のガイドラインを提供しています。
 
