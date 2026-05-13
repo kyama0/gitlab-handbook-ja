@@ -27289,6 +27289,76 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "df46430e968bca4ff0679e56d9eef015c25f0324e7e101db4b484c483c6c12fb"
+    },
+    "content/handbook/marketing/sales-plays/_index.md": {
+      "path": "content/handbook/marketing/sales-plays/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3b2f5321b4c4973fd2e79ff6dc1b7bc15f3632bf780b424f3ff8e540db055d52"
+    },
+    "content/handbook/marketing/sales-plays/package.md": {
+      "path": "content/handbook/marketing/sales-plays/package.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dad0f335b84d8b64d1970ac5d87d1d328380fce1e013ce1e59b901a5d33e3712"
+    },
+    "content/handbook/marketing/sales-plays/gitops/_index.md": {
+      "path": "content/handbook/marketing/sales-plays/gitops/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8d248c9497c15693b9dc120d9b4b4fd6d1fa83f938f6c271e2c0de50f8b06f4f"
+    },
+    "content/handbook/marketing/sales-plays/gitops/first-order.md": {
+      "path": "content/handbook/marketing/sales-plays/gitops/first-order.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2e96f31ddcba366f5504d7e2746acc1a2b5c8c124ffdda92e9203fb367065d4d"
+    },
+    "content/handbook/marketing/sales-development/_index.md": {
+      "path": "content/handbook/marketing/sales-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "721e5b6da56e84911a8e28252a989110ae9ee1988905530d3cf3404fdf6a42cf"
+    },
+    "content/handbook/marketing/sales-development/tanuki-tech.md": {
+      "path": "content/handbook/marketing/sales-development/tanuki-tech.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "49b1c23193cd6ba867dd599bcb6b8c3ff047fbb9b56f1622cd2e2b582f8cf923"
+    },
+    "content/handbook/marketing/readmes/brian-tabbert.md": {
+      "path": "content/handbook/marketing/readmes/brian-tabbert.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ca411f8087531c82dde03a681166acc3e35a2d0707693394a03d158c064d2d3"
+    },
+    "content/handbook/marketing/readmes/jean-baptiste-larramendy.md": {
+      "path": "content/handbook/marketing/readmes/jean-baptiste-larramendy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f63fb8ce89c77fe5bd7469055444dbc565140f137a984269656741c5b2d0dedc"
+    },
+    "content/handbook/marketing/readmes/laura-duggan.md": {
+      "path": "content/handbook/marketing/readmes/laura-duggan.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3bdf0df48b78494daee1bcb9bce6dbf5fdc2a839c2df40905b649d6bbe2348a7"
+    },
+    "content/handbook/marketing/readmes/lauren-barker.md": {
+      "path": "content/handbook/marketing/readmes/lauren-barker.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e261c406f259d643678dbec5620d873f1b1f22d714503906e19e887e16c29e7e"
     }
   }
 }
