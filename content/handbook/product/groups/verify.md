@@ -1,5 +1,5 @@
 ---
-title: "Verify Product Group"
+title: "Verify プロダクトグループ"
 description: "Verify Product Group は、共有、発見可能性、非同期コミュニケーションへのバイアスを高めることを目指しています。"
 upstream_path: /handbook/product/groups/verify/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141

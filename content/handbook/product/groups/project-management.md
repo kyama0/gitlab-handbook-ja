@@ -112,7 +112,7 @@ Project Management ボード:
 
 [gitlab.com_5icpbg534ot25ujlo58hr05jd0@group.calendar.google.com](mailto:gitlab.com_5icpbg534ot25ujlo58hr05jd0@group.calendar.google.com) という URL を使って、カレンダーを購読し、スケジュールしている顧客ミーティングに参加者として招待できます。
 
-#### レトロスペクティブ
+#### レトロスペクティブ {#retrospectives}
 
 Plan ステージは、GitLab Issue で月次レトロスペクティブを実施しています。
 これらは、最初の議論中は機密扱いとなり、

@@ -21,7 +21,7 @@ GitLab のプロダクトチームには、当社の [プロダクト階層](/ha
 | Senior Leader | [VP](/job-description-library/product/product-leadership/#vp-of-product-management) | All Sections |
 | Executive | [Chief Product Officer](/job-description-library/product/chief-product-officer/) | 部門全体 |
 
-## プロダクトリーダー
+## プロダクトリーダー {#product-leaders}
 
 プロダクト部門の Director 以上はすべてプロダクトリーダーとみなされます。彼らは [`@gl-product-leaders`](https://gitlab.com/groups/gl-product-leaders/-/group_members) ハンドルを使用して参照できます。本ドキュメントは、プロダクトマネジメントチーム特有の重要なリーダーシップの概念を説明します。[GitLab の一般的なリーダーシップガイダンス](/handbook/leadership/) に関するページもあわせてご覧ください。
 
