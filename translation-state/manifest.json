@@ -25889,6 +25889,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "599184f82564ed24ad767ebceeb7847ea2669f5798ddbc7361982746c5c89f99"
+    },
+    "content/handbook/product/ux/experience-research/when-to-conduct-ux-research/index.md": {
+      "path": "content/handbook/product/ux/experience-research/when-to-conduct-ux-research/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eaa32f0cf14d6b872a6b65a390c801ad9371d7d0ed174d198a059360fa5079b3"
+    },
+    "content/handbook/product/ux/experience-research/ux-research-google-calendar/index.md": {
+      "path": "content/handbook/product/ux/experience-research/ux-research-google-calendar/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "04e3a430dde86de8b36f73926422219c0b5fade0d72e55e2f60b4f38af361c9e"
+    },
+    "content/handbook/product/ux/experience-research/ux-cloud-sandbox/index.md": {
+      "path": "content/handbook/product/ux/experience-research/ux-cloud-sandbox/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a77137a4a52c5c6841898142baaac34fb4bb3e555dcd6fbd07bbb4df32055a74"
+    },
+    "content/handbook/product/ux/experience-research/ux-bash/index.md": {
+      "path": "content/handbook/product/ux/experience-research/ux-bash/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bfd1f6a4d845633fc3214197722a9a8b0020b63752d6ad83fe8e9560c7f9a93e"
+    },
+    "content/handbook/product/ux/experience-research/surveys/_index.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1885241c9685859c24872e623a983de89beaeee0cba0262f6f72dcc6d9b44359"
+    },
+    "content/handbook/product/ux/experience-research/surveys/designing-your-survey.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/designing-your-survey.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "10bb603d3248aaa30ecdbf64fcc4651a2b956dc856d0b889a9ed2cb75fb856b7"
+    },
+    "content/handbook/product/ux/experience-research/surveys/how-to-identify-low-quality-data-when-designing-and-reviewing-your-survey.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/how-to-identify-low-quality-data-when-designing-and-reviewing-your-survey.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dc45a2cae6854a2f3fd0000a85ce3d565833798f70802868b03131a47e8cb577"
+    },
+    "content/handbook/product/ux/experience-research/surveys/piloting-your-survey.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/piloting-your-survey.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d0b99c2cbef33f609c83706158bd0f9a48ebb83334db48bf222aa93a20ba4a69"
+    },
+    "content/handbook/product/ux/experience-research/surveys/sample-sizes-for-surveys.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/sample-sizes-for-surveys.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d31ea236407e881f050d5ca597d41876b2b2bc43faa8d3ebd3ebdbb69f30c7e8"
+    },
+    "content/handbook/product/ux/experience-research/surveys/survey-question-scales/index.md": {
+      "path": "content/handbook/product/ux/experience-research/surveys/survey-question-scales/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "668d73095dd5a3b1d0d92a0919c9b29896106fd31574d21af133dcad0a97e3e7"
     }
   }
 }
