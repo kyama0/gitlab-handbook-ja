@@ -12,7 +12,7 @@ stale: false
 
 このページでは、GitLab における機能フラグのライフサイクルプロセスを定義しています。GitLab 開発者およびコードコントリビューター向けの技術情報は、[開発者ドキュメント](https://docs.gitlab.com/development/feature_flags/) にあります。
 
-## 機能フラグを使うべきとき
+## 機能フラグを使うべきとき {#when-to-use-feature-flags}
 
 機能フラグの背後で機能をデプロイすることは、GitLab の既存機能の可用性に影響を与える可能性のある変更には必須です。変更が自分が作成している新しい機能のみに影響する場合、機能フラグが必要かは判断を使って決めてください。
 そのような変更には次のものが含まれます：
@@ -114,7 +114,7 @@ GitLab 開発で機能フラグを始める概要については、[トレーニ
 
 ## 機能フラグのライフサイクル
 
-### 計画
+### 計画 {#planning}
 
 1. 機能フラグが必要か評価する：
    1. [評価のプロセス](#when-to-use-feature-flags)。
@@ -143,7 +143,7 @@ GitLab 開発で機能フラグを始める概要については、[トレーニ
 1. スライスが十分に完了したと判断されたら（[low level of shame](/handbook/values/#low-level-of-shame-when-dogfooding) を念頭に）、ロールアウトプロセスに進みます。
    1. 一部のチームは、機能 Issue がここで完了するとクローズすることを選び、他のチームはロールアウトプロセスが完了するまで待つ場合があります。コードがデフォルトブランチに存在した後に機能 Issue をクローズする場合は、ここで Issue をクローズすべきです。
 
-### ロールアウト
+### ロールアウト {#rollout}
 
 1. ロールアウト計画を最終化する：
    1. [ロールアウトガイドライン](https://docs.gitlab.com/ee/development/feature_flags/controls.html#rolling-out-changes) に従って、機能フラグのロールアウト計画を決定します。
@@ -219,6 +219,6 @@ graph TD
 
 [計画](#planning) フェーズの間、レビューを実行する MR Coach または GitLab チームメンバーが、機能フラグロールアウト Issue で EM と PM を ping して、スケジュール／計画／洗練してもらうことが不可欠です。また、機能フラグを使用する最終的な MR で機能フラグロールアウト Issue をタグ付けし、ロールアウトがまもなく必要になることを EM と PM が認識できるようにすべきです。
 
-## ダッシュボードとメトリクス
+## ダッシュボードとメトリクス {#dashboard--metrics}
 
 機能フラグのライフサイクル（リリースごとにいくつ導入されているか、アプリケーション内にどれくらい存在しているか、どれくらい有効化されているかなど）に関する詳細情報については、[このダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/Engineering-Featureflags/Engineering-FeatureFlags)（社内のみ）を参照してください。また、[Kibana で 7 日分のデータ](https://nonprod-log.gitlab.net/app/r/s/cXyLU)（社内のみ）を保持しており、無効化または有効化された機能フラグについては、GitLab プロジェクト [feature-flag-log](https://gitlab.com/gitlab-com/gl-infra/feature-flag-log/-/issues/?state=closed) が同じものを無期限に保持しています。

@@ -287,7 +287,7 @@ Build トラックは、[MVC](/handbook/product/product-principles/#the-minimal-
 
 **アウトカム：** 1 つ以上の [Product KPI](https://internal.gitlab.com/handbook/company/performance-indicators/product/) および／または [Engineering KPI](/handbook/company/kpis/#engineering-kpis) を改善する、パフォーマンスの高い MVC を提供します。もしそれに失敗した場合は、私たちの Efficiency バリュー（低いレベルの恥を含む）を尊重し、それを放棄して、正しいソリューションを特定するために検証サイクルを再開します。
 
-### Build フェーズ 1：Plan
+### Build フェーズ 1：Plan {#build-phase-1-plan}
 
 #### 必須ステータス
 
@@ -521,7 +521,7 @@ GitLab Product Manager は、自分の experiment および beta 機能に適用
 
 **AI 機能** の終了基準については、上記に加えて、[UX 成熟度要件](/handbook/product/ai/ux-maturity/) を参照してください。
 
-## このページへのコントリビュート
+## このページへのコントリビュート {#contributing-to-this-page}
 
 このページへのすべてのマージリクエストは、Product と Engineering のリーダーシップ（ページの "maintainers" または codeowners を参照）に情報共有することを必要とします。
 文法修正やタイプミスなどの更新については、誰でも承認者にレビューとマージを依頼できます。
