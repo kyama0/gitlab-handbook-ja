@@ -54,7 +54,7 @@ stale: false
 
 > 注: ナビゲーションへの未承認の変更を防ぐために [Code Owners 承認ルール](https://docs.gitlab.com/user/project/codeowners/) が設定されています。このプロセスに従っていない場合、マージリクエストはブロックされます。
 
-### ナビゲーションとは何ですか？
+### ナビゲーションとは何ですか？ {#what-is-navigation}
 
 ナビゲーションとは、ユーザーが GitLab 内を移動するのを助ける要素であり、整理および道案内の手がかりを含みます。ナビゲーション体験は、私たちの機能のユーザビリティと発見可能性に直接影響します。このドキュメントは、[目標を満たし続けながら](https://about.gitlab.com/direction/foundations/personal_productivity/#navigation)、私たちが集団的にナビゲーションを進化させる方法を説明します。
 
@@ -125,7 +125,7 @@ GitLab の UX はユーザーがプロダクト全体をさまざまな方法で
 1. [Growth: Engagement](/handbook/product/categories/#engagement-group) のデザイナーが提案をレビューしインプットを提供することで DRI を支援します。[Growth: Engagement](/handbook/product/categories/#engagement-group) チームからの典型的なターンアラウンド時間は 1 マイルストーンです。フィードバックを提供した後、提案を前進させ、必要に応じて追加のフィードバックを求めることは DRI の責任です。
 1. 承認を得て実装を開始する準備ができたら、[ナビゲーションへの項目追加に関する GitLab Docs](https://docs.gitlab.com/development/navigation_sidebar/#adding-page-specific-vue-content) に従ってください。
 
-#### フル検証パス
+#### フル検証パス {#full-validation-path}
 
 このパスは、大多数の GitLab ユーザーに影響するナビゲーション変更や、新しいデザインパターンを導入する変更に適しています。フル検証を必要とする変更の例には以下が含まれます。
 
@@ -144,7 +144,7 @@ GitLab の UX はユーザーがプロダクト全体をさまざまな方法で
 | カウンターパートのサポート | 提案は、関連するステージグループのプロダクト、デザイン、リサーチのカウンターパートによってサポートされています。 |
 | ソリューション検証 | 他の潜在的な解決策と比較してナビゲーション変更を評価するためのソリューション検証リサーチが実施されます。 |
 
-#### 限定検証パス
+#### 限定検証パス {#limited-validation-path}
 
 このパスは、少数のユーザーに影響するナビゲーション変更や、既存のデザインパターンに従う変更に適しています。限定検証を必要とする変更の例には以下が含まれます。
 

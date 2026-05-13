@@ -1,5 +1,5 @@
 ---
-title: UX Operations
+title: UX オペレーション
 description: >-
   ヘッドカウント計画、調達、ラベル、チームプロセスを含む、UX チームメンバー向けの運用ガイダンス。
 upstream_path: /handbook/product/ux/operations/

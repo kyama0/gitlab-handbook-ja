@@ -172,7 +172,7 @@ stale: false
 
 🎉🥳 おめでとうございます！検証済みの JTBD キャンバスを正常に作成しました！🥳🎉
 
-### 成果機会スコア調査
+### 成果機会スコア調査 {#outcome-opportunity-scores-survey}
 
 成果ステートメントの優先順位付けには、[qualtrics テンプレート](https://gitlab.eu.qualtrics.com/survey-builder/LS_2l5ektxWK1wFRuC/edit?ContextLibraryID=GR_6ziMa2ooJx4Y6SF) を使用してこの調査を実行します。この調査を作成・提供するために UX リサーチャーと連携することを推奨します。
 
