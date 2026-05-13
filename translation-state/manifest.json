@@ -26799,6 +26799,76 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "3a7007a0f1358c0001859a775cd9bdac9f62de5cb7d4ad897301bf183f945a71"
+    },
+    "content/handbook/people-group/incident-response.md": {
+      "path": "content/handbook/people-group/incident-response.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b3371164d651e3a708a57963113c04a9eabd2cdcf8eef8cf16406fb1a2e4bb8e"
+    },
+    "content/handbook/people-group/organizational-change-management.md": {
+      "path": "content/handbook/people-group/organizational-change-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "35daa61d9781b104c742d4be77265dcf731c6db279c7192a1069fc2954364960"
+    },
+    "content/handbook/people-group/orientation-identity.md": {
+      "path": "content/handbook/people-group/orientation-identity.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "82db3d40b1a26ba629791852b7b83fca97b734e4f336069933b0ff8bf7a4c13e"
+    },
+    "content/handbook/people-group/people-group-program-management.md": {
+      "path": "content/handbook/people-group/people-group-program-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "34778d9fa94aef3cdd14e8fd2850a984c8589698bd452f6a6d4cdb2aa4873e35"
+    },
+    "content/handbook/people-group/promotion-document-style-guide.md": {
+      "path": "content/handbook/people-group/promotion-document-style-guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2dfb203c1ef050d8ae352174fd204c4ca0b5138a87d46fdd065fca4771a112d8"
+    },
+    "content/handbook/people-group/promotions-transfers.md": {
+      "path": "content/handbook/people-group/promotions-transfers.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1cb42d42974f6fada46d5624eee5c2ea5ac8c602b9dc6d1c4c96aa42963f453b"
+    },
+    "content/handbook/people-group/pronouns.md": {
+      "path": "content/handbook/people-group/pronouns.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1aa115e05bcdbad793eda3a7d7863c050593d6cb2efb4ce663283fec1fcb3a67"
+    },
+    "content/handbook/people-group/quarterly-talent-review.md": {
+      "path": "content/handbook/people-group/quarterly-talent-review.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d14cecfd6ea2dd209439584df7679792cea8d8e4744cf5fa5fd3337ed8d658d3"
+    },
+    "content/handbook/people-group/relocation.md": {
+      "path": "content/handbook/people-group/relocation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7f01f964e2a23a5c0ba91de331019be9b666291dc3b6d7b0a5aa4bdb7fae530a"
+    },
+    "content/handbook/people-group/talent-assessment.md": {
+      "path": "content/handbook/people-group/talent-assessment.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9fe5dab658d7866851f3359a4dc3aab2b4691db8885d0b3752d3ae508f53fc3e"
     }
   }
 }
