@@ -25189,6 +25189,76 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "84c2e94ecf59e32618df7342492c60ec00d199d568f5a9d806f1d98eab63ee93"
+    },
+    "content/handbook/product/ux/collaborators-playbook.md": {
+      "path": "content/handbook/product/ux/collaborators-playbook.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "929bcbfb13769f0d7625244bec8b89c99d34eb0ac63842765ca46eb275e061cc"
+    },
+    "content/handbook/product/ux/competitor-evaluations.md": {
+      "path": "content/handbook/product/ux/competitor-evaluations.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5126bc267492f7628043cffbce4f38e0fa74c369800d5316aff9ea9f96996da0"
+    },
+    "content/handbook/product/ux/design-sprint.md": {
+      "path": "content/handbook/product/ux/design-sprint.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e67d01e8f0244ad1e8276c4bfda112e94c333492ce7ca6fd3d02388382b836da"
+    },
+    "content/handbook/product/ux/heuristics.md": {
+      "path": "content/handbook/product/ux/heuristics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fea8979cc558c99767bc62e709790fef9fcd339499b74d9f4f81e1ebb5478f8f"
+    },
+    "content/handbook/product/ux/thinkbig.md": {
+      "path": "content/handbook/product/ux/thinkbig.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fe64fc3d2471c21281ee8df5a8e2228bbea35c8896964f55b5c1d3710e98420c"
+    },
+    "content/handbook/product/ux/tracking-critical-experiences.md": {
+      "path": "content/handbook/product/ux/tracking-critical-experiences.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bddc9ea689958898efe7c83e4781c7d9eccd8336b40833c4604d8b1d22e6e850"
+    },
+    "content/handbook/product/ux/user-journeys.md": {
+      "path": "content/handbook/product/ux/user-journeys.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1437e7847859f745ea9b79f703bf3bfb5c9e2391dc2b03fc596c297ef1df822f"
+    },
+    "content/handbook/product/ux/ux-forum.md": {
+      "path": "content/handbook/product/ux/ux-forum.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9f3f0ac6a4fb74a78743e24475a8177b06d2892d73e9026dc339c92c17b620fc"
+    },
+    "content/handbook/product/ux/ux-quality-metrics-framework.md": {
+      "path": "content/handbook/product/ux/ux-quality-metrics-framework.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e1fe8f2b0dda0dfa4d86197d39c9fccf31ffd3691f37063332a96872bd416efc"
+    },
+    "content/handbook/product/ux/ux-scorecards.md": {
+      "path": "content/handbook/product/ux/ux-scorecards.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "588e5c079227cfee17e8f1aa0418f87a58b964a339237e175dd29458d0ebc97a"
     }
   }
 }
