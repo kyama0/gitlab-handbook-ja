@@ -63,7 +63,7 @@ GitLab Design プロジェクトで [UX スコアカードテンプレート](ht
 
 * [ヒューリスティックバディスコアカード](https://gitlab.com/gitlab-org/gitlab-design/-/blob/master/.gitlab/issue_templates/Heuristic%20Buddy%20UX%20Scorecard.md)
 
-## 採点ルーブリック
+## 採点ルーブリック {#grading-rubric}
 
 ### 全体体験
 

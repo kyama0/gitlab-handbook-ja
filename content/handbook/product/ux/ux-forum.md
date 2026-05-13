@@ -87,7 +87,7 @@ stale: false
 - [Secure: グループレベルのセキュリティスキャナーステータスウィジェット](https://youtu.be/4W-cWcEae_o)
 - [Secure: セキュリティワークフローイテレーション](https://youtu.be/v3gv-rplcBI)
 
-### 準備
+### 準備 {#preparation}
 
 - UX フォーラムの前に、ミーティングアジェンダに自分の特定のトピックを追加します。
 - これが APAC フォーラムで、まだホストがいない場合は、[ホスト](#hosting)を検討してください。
@@ -110,7 +110,7 @@ stale: false
   - 現在の課題、次のステップ、未解決の質問は何か？
   - 他の人はこれにどのようにアプローチするか、またはあなたを助けるか？
 
-### 共有する人のための役立つヒント
+### 共有する人のための役立つヒント {#helpful-tips-for-those-sharing}
 
 - 自己紹介をし、トピックの[コンテキスト](#preparation)を提供します。
 - [参加者の体験を楽しいものにする](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-tips/#make-the-participant-experience-an-enjoyable-one): あまりに早く動き回ったり（たとえば Figma プロトタイプを見せるとき）、前のビューで言うのを忘れたために何度もビュー間を行き来したりすることを避けます。
@@ -126,7 +126,7 @@ stale: false
 
 その他のヒントについては、[コミュニケーションハンドブックページ](/handbook/communication/#presentations)を参照してください。
 
-## ホスト
+## ホスト {#hosting}
 
 プロダクトデザインマネージャーが交代で UX フォーラムをホストします。マネージャーは、各セッションの追跡 Issue を作成するために [UX フォーラム Issue テンプレート](https://gitlab.com/gitlab-org/gitlab-design/-/issues/new?issuable_template=UX%20Forum)を使用できます。[テンプレートの使い方](https://docs.gitlab.com/user/project/description_templates/#use-the-templates)を参照してください。現在のホストは、次のホスト用に Issue を作成します。
 
