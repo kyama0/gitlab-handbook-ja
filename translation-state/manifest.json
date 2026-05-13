@@ -26379,6 +26379,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "e5e49bb0556adb9b591787ff32aea13a4bf3cded72f7e245a6a673ae22b0beac"
+    },
+    "content/handbook/product/product-leaders/people-ops-for-product.md": {
+      "path": "content/handbook/product/product-leaders/people-ops-for-product.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8ed44aee6a8d0bc058d5efb648d2e4d58bacc18bbf624cad220e069101e58652"
+    },
+    "content/handbook/product/product-leaders/product-leadership.md": {
+      "path": "content/handbook/product/product-leaders/product-leadership.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ff67efad1e977cc780f11c2edb2e4e0e6e41a9a992270acc1375e8898083a748"
+    },
+    "content/handbook/product/personas/_index.md": {
+      "path": "content/handbook/product/personas/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9de8605eb4da9fa34aa901d58f1787034c79e9fa3067e5b7f44d7c96448b8fba"
+    },
+    "content/handbook/product/personas/organization-archetype.md": {
+      "path": "content/handbook/product/personas/organization-archetype.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "81b8b515d85776726fc13d562efb774fa86b574d7b841d44dd30fb4eba48a95a"
+    },
+    "content/handbook/product/groups/_index.md": {
+      "path": "content/handbook/product/groups/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f251d05361b45d141ab9556811d34e3719f477a99cecb0184e2cae9d9cbc1edc"
+    },
+    "content/handbook/product/groups/analytics.md": {
+      "path": "content/handbook/product/groups/analytics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "868da057a4b107589afb5c31db8547eb1737e8c7d2118695040afc2f58a3480d"
+    },
+    "content/handbook/product/groups/project-management.md": {
+      "path": "content/handbook/product/groups/project-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5c9cd94b2f60214e4acf473dcd0fd8d88e5578b7136f71698e2480b4375b50c1"
+    },
+    "content/handbook/product/groups/verify.md": {
+      "path": "content/handbook/product/groups/verify.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d87a6784bed5026145211d084c38aeda6b4abb5ea63d2d94945b00e70d15231f"
+    },
+    "content/handbook/product/groups/product-analysis/_index.md": {
+      "path": "content/handbook/product/groups/product-analysis/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9f102e0fdf0e4cc5ffd39df926314e0387faaa0154ed4e26ed073b852963cd9d"
+    },
+    "content/handbook/product/groups/product-analysis/crash-course.md": {
+      "path": "content/handbook/product/groups/product-analysis/crash-course.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "789e5bc5170b04b7b6aa4dcb3d08489edf4a1e6e493e41478e12b170f2e2b336"
     }
   }
 }
