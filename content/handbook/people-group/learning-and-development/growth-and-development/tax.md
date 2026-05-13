@@ -3,7 +3,7 @@ title: さまざまな Growth & Development 給付の税務上の取り扱い
 description: 国別の Growth & Development 償還の税務上の取り扱いに関する説明。
 upstream_path: /handbook/people-group/learning-and-development/growth-and-development/tax/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
 ---

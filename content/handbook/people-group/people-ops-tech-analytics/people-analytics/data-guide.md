@@ -2,7 +2,7 @@
 title: "ピープルデータ分析のためのデータガイド"
 upstream_path: /handbook/people-group/people-ops-tech-analytics/people-analytics/data-guide/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
 ---
@@ -451,6 +451,7 @@ GROUP BY 1;
 
 </details>
 
+<details>
 <summary markdown="span">クエリ - マネジメントレベル別の辞職数（voluntary 対 involuntary） </summary>
 
 *Termination type と termination reason はマスクされたフィールドで、Snowflake で `analyst_people` ロールを持つチームメンバーのみクエリできます*

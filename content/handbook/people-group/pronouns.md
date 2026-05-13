@@ -3,7 +3,7 @@ title: "代名詞ガイダンスと情報"
 description: "GitLab における代名詞とその使用法を理解し議論するためのリソース。"
 upstream_path: /handbook/people-group/pronouns/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
 ---

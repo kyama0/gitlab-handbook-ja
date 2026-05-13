@@ -1,9 +1,9 @@
 ---
-title: Directly Responsible Individuals (DRI)
+title: 直接責任個人 (DRI)
 description: "GitLab の DRI (Directly Responsible Individuals) は、特定のプロジェクト、イニシアチブ、または活動を所有します。"
 upstream_path: /handbook/people-group/directly-responsible-individuals/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
 ---

@@ -3,7 +3,7 @@ title: "ジェンダーと性的指向アイデンティティの定義と FAQ"
 description: "ジェンダーと性的アイデンティティの定義、よくある質問、リソース"
 upstream_path: /handbook/people-group/orientation-identity/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
 ---
