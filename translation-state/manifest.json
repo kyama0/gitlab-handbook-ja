@@ -26589,6 +26589,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "193b3e3421a0df8cc16ca4f43bb60d139dd8fd425c65d9cd43cc1b0950b4ec34"
+    },
+    "content/handbook/product/categories/features.md": {
+      "path": "content/handbook/product/categories/features.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7e8979f89aeb40bd301ef9d9c0b0a8bd6c6e4b8ccfc399dee5dae802c51ad28e"
+    },
+    "content/handbook/product/categories/lookup.md": {
+      "path": "content/handbook/product/categories/lookup.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fca0a07190ce02a5bf15520b733dbceee5181ada64af71ddd694195f11da8d93"
+    },
+    "content/handbook/product/categories/gitlab-the-product/_index.md": {
+      "path": "content/handbook/product/categories/gitlab-the-product/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "54540a2817b889cfc451e911008491fe27db0c59f3ffce30629da175d539ef4c"
+    },
+    "content/handbook/product/categories/gitlab-the-product/single-application/_index.md": {
+      "path": "content/handbook/product/categories/gitlab-the-product/single-application/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "36dbf9eac1da099be88801525c77482e78c42d902c3ac276bfd08d05b30c5646"
+    },
+    "content/handbook/product/categories/gitlab-the-product/single-application/dataflow.md": {
+      "path": "content/handbook/product/categories/gitlab-the-product/single-application/dataflow.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "34a508375a3ada72ab0005652e3eeee6051e236a7b50c3911e0eea1db216ee95"
+    },
+    "content/handbook/product/ai/_index.md": {
+      "path": "content/handbook/product/ai/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d622d7819935975732ff8392cc45f193f89934396810f0fdca95f89984b2490a"
+    },
+    "content/handbook/product/ai/continuity-plan.md": {
+      "path": "content/handbook/product/ai/continuity-plan.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eec5847fb1ea2d43f77e93a40491c324789c37eb674266f6d87661f9e8546ace"
+    },
+    "content/handbook/product/ai/model-vendor-selection-guidelines.md": {
+      "path": "content/handbook/product/ai/model-vendor-selection-guidelines.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a695154e859e69bd6f82f47150432fc890053805ce2b7731c4576a05573d7791"
+    },
+    "content/handbook/product/ai/ux-maturity.md": {
+      "path": "content/handbook/product/ai/ux-maturity.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "99459305468e9424026a2c1222935480025ad4c6a5f11f2848da3a05521cf162"
+    },
+    "content/handbook/product/ai/ux-support.md": {
+      "path": "content/handbook/product/ai/ux-support.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "662ee4f13a405785f9b7600dc1be562e39a26826645cd3b23e49949736527cbb"
     }
   }
 }
