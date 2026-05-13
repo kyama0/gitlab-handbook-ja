@@ -26519,6 +26519,76 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "1bc8b8488c76f358590f53156b14d75e2fc490cf1cdb8fc35adb9958c4ebcc4e"
+    },
+    "content/handbook/product/groups/fulfillment/direction/fulfillment_platform.md": {
+      "path": "content/handbook/product/groups/fulfillment/direction/fulfillment_platform.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7faa7971c51f660a751778336087aeea6e5bb43fbd9947572f5828c721c3532c"
+    },
+    "content/handbook/product/groups/fulfillment/direction/fulfillment_section.md": {
+      "path": "content/handbook/product/groups/fulfillment/direction/fulfillment_section.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "431e2f8a11a26b44f3fa4645f69893cf3e03d912b715dc0cd163eef8abaf5c63"
+    },
+    "content/handbook/product/groups/fulfillment/direction/provision.md": {
+      "path": "content/handbook/product/groups/fulfillment/direction/provision.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "03286d1dd5d1f003f8c6f95749c82cf1b5aa3a5aa8da0275bdc5ced59b753a31"
+    },
+    "content/handbook/product/groups/fulfillment/direction/seat_management.md": {
+      "path": "content/handbook/product/groups/fulfillment/direction/seat_management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a0209069097dfb7276e7383393f3574d0cfdb93de080c9a33796e6fde0634520"
+    },
+    "content/handbook/product/groups/fulfillment/direction/subscription_management.md": {
+      "path": "content/handbook/product/groups/fulfillment/direction/subscription_management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "04f92c97a996809375c9b9b40da10673b77881a4f8a0747ab20319be2674ba42"
+    },
+    "content/handbook/product/groups/fulfillment/direction/utilization.md": {
+      "path": "content/handbook/product/groups/fulfillment/direction/utilization.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3d501414d5144ebc724c27ef667078e7d1cdfc0aaf731c57add5f99bc9119b08"
+    },
+    "content/handbook/product/cross-stage-features/_index.md": {
+      "path": "content/handbook/product/cross-stage-features/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f5d6e5c670fc637aff05abc1ffe794aa568b209b38a9be4476413c84e7de839a"
+    },
+    "content/handbook/product/cross-stage-features/merge-requests.md": {
+      "path": "content/handbook/product/cross-stage-features/merge-requests.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "95d41de4750744205feb4a35979b9603cef61902e2834631fed02c5e4aed4289"
+    },
+    "content/handbook/product/cross-stage-features/work-items.md": {
+      "path": "content/handbook/product/cross-stage-features/work-items.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f74d80b92c04e3eda815f0220c6a36b6fc9f88fc5e73b0dfac5a6015f4d0d621"
+    },
+    "content/handbook/product/categories/_index.md": {
+      "path": "content/handbook/product/categories/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "193b3e3421a0df8cc16ca4f43bb60d139dd8fd425c65d9cd43cc1b0950b4ec34"
     }
   }
 }
