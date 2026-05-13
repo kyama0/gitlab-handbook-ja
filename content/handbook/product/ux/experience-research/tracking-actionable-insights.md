@@ -8,7 +8,7 @@ translator: claude
 stale: false
 ---
 
-GitLab では、UX リサーチ研究から得られた[実行可能なインサイト](/handbook/product/ux/experience-research/research-insights/)を追跡しています。これらは `Exploration needed` または `Product change` の形を取ることがあります。
+GitLab では、UX リサーチから得られた[実行可能なインサイト](/handbook/product/ux/experience-research/research-insights/)を追跡しています。これらは `Exploration needed` または `Product change` の形を取ることがあります。
 
 追跡される実行可能なインサイトには、以下のいずれかのラベルが付けられます:
 
