@@ -21,7 +21,7 @@ Growth の究極の目標は、Single DevOps Platform としての GitLab の価
 [Growth チームメンバー全員はこちらにリストされています](/handbook/product/categories/#growth-section)
 私たちは[プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)に従います。
 
-### Growth のアイデア出しと優先順位付け
+### Growth のアイデア出しと優先順位付け {#growth-ideation-and-prioritization}
 
 誰でも [experiment idea](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Experiment%20Idea) テンプレートを使って、[実験アイデアバックログ](https://gitlab.com/groups/gitlab-org/-/boards/2028884?&label_name[]=experiment%20idea)にアイデアを提出することを歓迎します。
 
