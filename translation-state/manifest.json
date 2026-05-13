@@ -27009,6 +27009,76 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ccdddd3ac0d1d997cf3fe34d3187929ad6d5ad3e4f8dfad208e69a0503f42ffa"
+    },
+    "content/handbook/people-group/learning-and-development/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "942e47342b95938481fdffa85c0407a49b3f7980c689d8dd5048a29b8b56fa67"
+    },
+    "content/handbook/people-group/learning-and-development/hone.md": {
+      "path": "content/handbook/people-group/learning-and-development/hone.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0d0a2e13703f03e4d0881cf6f8f43cd82398675704cba652fc9c08a813f0ac8c"
+    },
+    "content/handbook/people-group/learning-and-development/internship-for-learning.md": {
+      "path": "content/handbook/people-group/learning-and-development/internship-for-learning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9d150006d7ee85c0c2e13ce232bc33fd599a262e806485394caebea4cec9dff4"
+    },
+    "content/handbook/people-group/learning-and-development/self-paced-learning.md": {
+      "path": "content/handbook/people-group/learning-and-development/self-paced-learning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0921fc40864e169d1b8c253e47d4ace4b9e8ca0bd7e42b4076cd1dcaff61cfe9"
+    },
+    "content/handbook/people-group/learning-and-development/team-workshops/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/team-workshops/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a2abf72a37c742deea098a7a5ee8088accf65fe4f0fe69ff513d520a7511413"
+    },
+    "content/handbook/people-group/learning-and-development/mentor/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/mentor/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a75cd20081d3f391ce8758ec71877f930692c19b5cd1d7dbb7cd86d8aad7ba00"
+    },
+    "content/handbook/people-group/learning-and-development/manager-development/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/manager-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "270b5326be753e09b9cf3a7916eb10419370a3795e4b4eaf3b5266eb2c070f7e"
+    },
+    "content/handbook/people-group/learning-and-development/level-up/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/level-up/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "98fd0c8cd15710c773d506de69e5b213ab60a53227a0cb865c7c02286de90002"
+    },
+    "content/handbook/people-group/learning-and-development/learning-initiatives/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/learning-initiatives/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "832d9aba975f7dca852e0dd12afef1e0e0d9894ce8ac57ab9217e52f2f7213bf"
+    },
+    "content/handbook/people-group/learning-and-development/growth-and-development/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/growth-and-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a6545176d6c1f5daa7f76abbbee1852b00ab03961b5721a3346e61d962350d09"
     }
   }
 }
