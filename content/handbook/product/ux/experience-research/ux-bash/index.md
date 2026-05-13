@@ -43,15 +43,15 @@ Bashは、[基礎的なリサーチ](/handbook/product/ux/experience-research/fo
 - Bashを通じて達成したいことを明確に定義します（例: 可能な限り多くの異なるバグを特定する）。
 - ユーザビリティの問題、バグ、機能強化を特定するための具体的な目標を設定できます（例: インタラクションの応答時間が十分に速いか）。
 
-#### ステップ2. Bashガイドラインのissueとbash Slackチャンネルを作成する
+#### ステップ2. Bashガイドラインの Issueとbash Slackチャンネルを作成する
 
-- [Bashガイドラインのissue](https://gitlab.com/gitlab-org/ux-research/-/blob/master/.gitlab/issue_templates/UX%20Bash%20Template.md)は、Bashの参加者にとっての単一の信頼できる情報源として設計されています。Bashの目的、テストする機能へのアクセス方法、フィードバックの提供方法、Bash中に判明する既知の問題を含めるべきです。
+- [Bashガイドラインの Issue](https://gitlab.com/gitlab-org/ux-research/-/blob/master/.gitlab/issue_templates/UX%20Bash%20Template.md)は、Bashの参加者にとっての単一の信頼できる情報源として設計されています。Bashの目的、テストする機能へのアクセス方法、フィードバックの提供方法、Bash中に判明する既知の問題を含めるべきです。
   - 例: https://gitlab.com/gitlab-org/ux-research/-/issues/2682
-- Bash専用のプライベートSlackチャンネル（例: #duo_chat_bash_oct24）を作成します。これにより参加者がBash中に協力し、明確化を求めることが可能になります。Bashガイドラインのissueとデータ収集メカニズムをSlackチャンネルのブックマークとして含めるのがベストプラクティスです。
+- Bash専用のプライベートSlackチャンネル（例: #duo_chat_bash_oct24）を作成します。これにより参加者がBash中に協力し、明確化を求めることが可能になります。Bashガイドラインの Issueとデータ収集メカニズムをSlackチャンネルのブックマークとして含めるのがベストプラクティスです。
 
 #### ステップ3. データ収集アプローチを決定する
 
-- Bashの目標はできるだけ多くのフィードバックを収集することなので、その情報を集める手段が必要です。Qualtricsは1回のBashに対して複数のエントリーを認めるアンケートツールの一つですが、あなたとチームに最適なフィードバックメカニズム（つまり、GitLabのissue、Googleフォームなど）を自由に選べます。フィードバックメカニズムは、あなたとチームが最も関心のある情報を収集すべきですが、短く要点を押さえたものにすべきです。参加者の負担にならないようにしつつ、できるだけ多くの情報を集めたいのです。
+- Bashの目標はできるだけ多くのフィードバックを収集することなので、その情報を集める手段が必要です。Qualtricsは1回のBashに対して複数のエントリーを認めるアンケートツールの一つですが、あなたとチームに最適なフィードバックメカニズム（つまり、GitLab の Issue、Googleフォームなど）を自由に選べます。フィードバックメカニズムは、あなたとチームが最も関心のある情報を収集すべきですが、短く要点を押さえたものにすべきです。参加者の負担にならないようにしつつ、できるだけ多くの情報を集めたいのです。
 - たとえば、Duo Chat Bashでは、チームは参加者の正確性に対する認識に最も関心がありました。Qualtricsのアンケートで提示された質問の例を以下に示します（[アンケート例へのリンク](https://gitlab.fra1.qualtrics.com/jfe/form/SV_8p2Hp3HVgsiVEKW)）:
   - Duo Chatに尋ねた質問は何でしたか?
   - Duoの応答は何でしたか?
@@ -76,7 +76,7 @@ Bashは、[基礎的なリサーチ](/handbook/product/ux/experience-research/fo
 
 - [GitLab Discordサーバーに参加します](/handbook/marketing/developer-relations/workflows-tools/discord/)。コミュニティと外部ユーザーが活発に活動しています。
 - Fatima Sarah Khalid（GitLabおよびDiscordのハンドル: sugaroverflow）に連絡して、あなたのDiscordプロフィールをGitLab従業員として表示してもらいます。
-- 参加者に謝礼を支払うために、[インセンティブリクエストissue](/handbook/product/ux/research-operations/participation-gratuities/)を作成します。
+- 参加者に謝礼を支払うために、[インセンティブリクエスト Issue](/handbook/product/ux/research-operations/participation-gratuities/)を作成します。
 - [スクリーナーアンケート](/handbook/product/ux/experience-research/write-effective-screener/)へのリンクとともに、#announcements Discordチャンネルでbashを告知します。
   - ![Discord招待の例](/images/product/ux/ux-research/ux-bash/Bash_Discord_invite.png)
 - 参加者を選びます。
