@@ -1,5 +1,5 @@
 ---
-title: "Cynthia 'Arty' Ng README"
+title: "Cynthia 'Arty' Ng の README"
 description: "GitLab CPO オフィス、Strategy & Operations Staff の Cynthia 'Arty' Ng の個人 README ページ"
 job: "Staff, Strategy and Operations"
 upstream_path: /handbook/product/readmes/cynthia/
