@@ -177,5 +177,3 @@ Old Tax Regime の場合、[ProCloz Employee Self Service portal](https://gitlab
 ### 以前経費精算したホームオフィスアイテムを返却する必要がありますか？
 
 ラップトップガイドラインについては[こちら](/handbook/people-group/offboarding/faq#can-i-keep-my-laptop)を参照してください。1 アイテム 1000 USD 未満の[ホームオフィスアイテム](/handbook/finance/procurement/office-equipment-supplies/)は返却の必要がなく、保持しても問題ありません。1 アイテム 1000 USD（またはそれ以上）GitLab に発生する購入をした場合、これは会社の所有物として分類され、会社を退職する場合はアイテムを返却する必要があります。
-</content>
-</invoke>

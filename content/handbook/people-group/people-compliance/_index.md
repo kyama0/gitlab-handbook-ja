@@ -35,5 +35,3 @@ Global People Compliance チームは、GitLab の最も価値ある資産であ
 - Slack ハンドル: @cassiana gudgenov
 
 {{% /details %}}
-</content>
-</invoke>

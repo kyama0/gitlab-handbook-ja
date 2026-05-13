@@ -362,5 +362,3 @@ Navan Expense から誰かを削除するには、[Navan Expense](https://app.na
 発信者に情報を提供する前に、機関の従業員と話しているか確認してください。州の Unemployment Commission に虚偽の申請があることを確認した場合は、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) を通じて People Operations チームに報告してください。
 
 さらに、こちらは失業保険詐欺を報告するための [U.S Department of Labor 連絡先](https://www.dol.gov/agencies/eta/unemployment-insurance-payment-accuracy/UIFraudReporting) へのリンクです。
-</content>
-</invoke>

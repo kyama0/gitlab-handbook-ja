@@ -55,5 +55,3 @@ Tableau アクセスは [Lumos](/handbook/security/corporate/systems/lumos/ar/) 
    - **Tableau Special Permissions**（**People - Restricted Access** 権限）- People Business Partner であるか、機密性のある People メトリクスを扱う場合
 
 **重要：** ライセンスは 90 日間の非アクティブの後に無効化されます。これが発生した場合はアクセスを再度リクエストする必要があります。
-</content>
-</invoke>

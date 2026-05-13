@@ -121,5 +121,3 @@ People Operations チームは、オフボーディング有効日（最終勤�
 - [GitLab Offboarding](/handbook/people-group/offboarding/)
 - [GitLab Offboarding FAQ](/handbook/people-group/offboarding/faq/)
 - [Offboarding Automation Flow](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854/)
-</content>
-</invoke>

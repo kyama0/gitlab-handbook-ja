@@ -72,5 +72,3 @@ Culture Amp のすべてのサーベイには、設定する必要のある `Lau
 ## レポートアクセスのリクエスト
 
 リーダーが新しいロールに移ったり、People Business Partner の責任が変わって Culture Amp の特定のサーベイレポートへのアクセスを付与する必要がある場合があります。例：新しいディレクターが加入し、前任のリーダーの下での自分の組織のエンゲージメントサーベイの結果をレビューしたい場合。この例では、新ディレクター（またはその People Business Partner）は結果を含むレポートを閲覧するために[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を提出する必要があります。適切な承認が得られた後、Culture Amp への admin アクセスを持つ People Technology チームまたは People Analytics チームのチームメンバーがリクエストされたレポートを共有します。アクセスリクエストプロセスに従うことで、アクセスを付与する前に適切な承認を得ていることを保証します。
-</content>
-</invoke>

@@ -680,5 +680,3 @@ WHERE is_current AND is_current_team_member
 | prep | sensitive | [greenhouse_recruiting_xf](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.greenhouse_recruiting_xf) | `application_id` | 提出されたすべての応募と、オファーデータ、greenhouse の部署（関連 division）、ソースデータを 1 箇所にまとめて表示します。 |  |
 
 </details>
-</content>
-</invoke>

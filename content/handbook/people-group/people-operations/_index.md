@@ -84,5 +84,3 @@ People Operations モデルは、チームメンバーと、彼らの GitLab の
 - チケットの分布
 - ティア別のチケット解決
 - 平均チケット解決時間
-</content>
-</invoke>
