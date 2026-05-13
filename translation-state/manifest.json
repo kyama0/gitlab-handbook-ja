@@ -24909,6 +24909,636 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "94d5380c69e4a26854236fff897393806e35159cc8a9770683fc95ef5fb80965"
+    },
+    "content/handbook/sales/commercial/enablement/_index.md": {
+      "path": "content/handbook/sales/commercial/enablement/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "38378662d7e026c7a854dc90b623debeb677767b7a4a2e824375460c8ed3543c"
+    },
+    "content/handbook/sales/commercial/enablement/required7.md": {
+      "path": "content/handbook/sales/commercial/enablement/required7.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e592261c219b5b149d07745c25d0e7353432e7293965612af46ab34d20cd89aa"
+    },
+    "content/handbook/sales/commercial/comm-sales-opp-stages/_index.md": {
+      "path": "content/handbook/sales/commercial/comm-sales-opp-stages/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "56fb4ed9e0d8990342fef6694f33c0a92fffe5288022f4c3aef50dd263dc9bce"
+    },
+    "content/handbook/sales/command-of-the-message/_index.md": {
+      "path": "content/handbook/sales/command-of-the-message/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9287b296ae70915a19a5436e6a22a27dc03d152450844d6f922d4e7ef92736ce"
+    },
+    "content/handbook/sales/command-of-the-message/command-plan.md": {
+      "path": "content/handbook/sales/command-of-the-message/command-plan.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d1b64b9f122e066717d443fbcbbd8aea98046c849c96deb4776742a0571db0b4"
+    },
+    "content/handbook/sales/command-of-the-message/metrics.md": {
+      "path": "content/handbook/sales/command-of-the-message/metrics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "efa97ce8c170505c6b47d5af5b934da1d6aea7333b6001bcb8bfd0128186f43a"
+    },
+    "content/handbook/sales/command-of-the-message/opportunity-consults.md": {
+      "path": "content/handbook/sales/command-of-the-message/opportunity-consults.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "27dd71d1612a804fef03a93b4e32a3a0c0f285bcf24f7e72de42232c73632ba2"
+    },
+    "content/handbook/sales/command-of-the-message/proof-points.md": {
+      "path": "content/handbook/sales/command-of-the-message/proof-points.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c86dcb14e7c0e26f49862121b850b04975d201ff7dbc866ecf8717f919d93181"
+    },
+    "content/handbook/sales/club/index.md": {
+      "path": "content/handbook/sales/club/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "63b5c0b3f7aa6ec51c44a45ebe3c6efc588c1d23d6c6ebf33e901d217472a0d8"
+    },
+    "content/handbook/sales/account-planning/_index.md": {
+      "path": "content/handbook/sales/account-planning/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f16cd311a6be5a7dea3545fed75595241848833853e6b178bcc520fdf9b2f16a"
+    },
+    "content/handbook/sales/account-planning/coaching-for-asms.md": {
+      "path": "content/handbook/sales/account-planning/coaching-for-asms.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "aabc69d463ad3b876b9f32f25277e5823d83798dce3ce6002cf9fd9e35bb4edc"
+    },
+    "content/handbook/resellers/_index.md": {
+      "path": "content/handbook/resellers/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "552ba153288b1182d51e233d0af67640ae7405772b79c5db97d3e39c866325e3"
+    },
+    "content/handbook/resellers/channel-tools-resources.md": {
+      "path": "content/handbook/resellers/channel-tools-resources.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "69086ba316c8dc901d939933ee1b9f62853d647c5da4843ebe441d0c93e0a3e4"
+    },
+    "content/handbook/resellers/training.md": {
+      "path": "content/handbook/resellers/training.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3b561e3c846a3ae4de0fda3262ad0b972305496bc4010b16e2ff3a062d9300d6"
+    },
+    "content/handbook/resellers/services/_index.md": {
+      "path": "content/handbook/resellers/services/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "afbf55cb68c10b8702494ca0fe89cfdb0dfc6a92b02d62aa693062c16bf867ed"
+    },
+    "content/handbook/resellers/services/services-catalog.md": {
+      "path": "content/handbook/resellers/services/services-catalog.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ef403b70d8ffb5079ad63ba62de36ee596d105ec1af49064faeb728c6657e0a9"
+    },
+    "content/handbook/resellers/partner-enablement/_index.md": {
+      "path": "content/handbook/resellers/partner-enablement/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8865ab645f12c6081c4ba014fb2b72d87680ed51f67902ea2d36fc19972222c9"
+    },
+    "content/handbook/resellers/partner-enablement/llm-system-prompts.md": {
+      "path": "content/handbook/resellers/partner-enablement/llm-system-prompts.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "14ee34964f004ea65dd45596d6f7df0059786ea7d9cdaa3ceef0ed760449faac"
+    },
+    "content/handbook/resellers/partner-enablement/partner-implementation-services.md": {
+      "path": "content/handbook/resellers/partner-enablement/partner-implementation-services.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "06e55f739f81a1c1d3771880dc43e9782fabbdcadf71d7ccf0a4c49d4c79b9c7"
+    },
+    "content/handbook/resellers/partner-enablement/partner-migration-services.md": {
+      "path": "content/handbook/resellers/partner-enablement/partner-migration-services.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e2ea216af26a1b649ff6545d5b8c344a83b4756d79437aad6dbc8c029c6b6157"
+    },
+    "content/handbook/resellers/partner-enablement/power.md": {
+      "path": "content/handbook/resellers/partner-enablement/power.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "16bce1142842349090ca96bb2fdb160a8846bad754653497a69fd5fee671b847"
+    },
+    "content/handbook/resellers/partner-champions-program/_index.md": {
+      "path": "content/handbook/resellers/partner-champions-program/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a264ab1db856461166dfe6d43ed673a624ade1734ca7e6437d7df177d67b2aa4"
+    },
+    "content/handbook/resellers/channel-working-with-gitlab/index.md": {
+      "path": "content/handbook/resellers/channel-working-with-gitlab/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ca8be9c09719c56a45029ad9895e22148355c39f99580fab7e0f6ed9d837e10b"
+    },
+    "content/handbook/resellers/channel-program-guide/_index.md": {
+      "path": "content/handbook/resellers/channel-program-guide/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cda2a27bdfbd2bc7a79f4c64863892de5d9e50ea9d084ae3695921888fc5e032"
+    },
+    "content/handbook/resellers/channel-program-guide/mdf.md": {
+      "path": "content/handbook/resellers/channel-program-guide/mdf.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "206fc9e80e341b44d16c882ae2fdf51057cb7ebd2f0911dbecc142ee958e2d98"
+    },
+    "content/handbook/product-development/_index.md": {
+      "path": "content/handbook/product-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "af0bb39dac7eb5bbe2f088abdd34efb3cce27d81ffd11b5760a14ca27a5e9c97"
+    },
+    "content/handbook/product-development/r-and-d-pmo/_index.md": {
+      "path": "content/handbook/product-development/r-and-d-pmo/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7c2df2dad86e9ca62a11994afc37f5e696148d33bc88b9157ce780a85302ed72"
+    },
+    "content/handbook/product-development/programs/_index.md": {
+      "path": "content/handbook/product-development/programs/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7f0afeda9509610a78da58587d210f0fd5814d6fa5b7c6347f6a3b27e36be1cb"
+    },
+    "content/handbook/product-development/programs/backlog.md": {
+      "path": "content/handbook/product-development/programs/backlog.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "83980b220d0b2e4b862f50fda2e3db28170d0273ee30ab4ba3462b56f0f7c677"
+    },
+    "content/handbook/product-development/how-we-work/_index.md": {
+      "path": "content/handbook/product-development/how-we-work/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0f988604b2e016149f78e2cab53c8971b10f543c307e3d7bdedb11fc1ca695bb"
+    },
+    "content/handbook/product-development/how-we-work/issue-triage.md": {
+      "path": "content/handbook/product-development/how-we-work/issue-triage.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dc723e2a2a42b9c76749e75931d4dc03d4ac9addc8c12a4b43711f5e7d528bca"
+    },
+    "content/handbook/product-development/how-we-work/roles-and-responsibilities/_index.md": {
+      "path": "content/handbook/product-development/how-we-work/roles-and-responsibilities/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "989e86e402a3d397e7e6e46d99ae5d4ecaf2a9091839ea6066e9a466b713e70e"
+    },
+    "content/handbook/product-development/how-we-work/r-and-d-interlock/_index.md": {
+      "path": "content/handbook/product-development/how-we-work/r-and-d-interlock/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ca36e755e1b7061153afbaa0f24fe9a092b18f59e60fe37f2d3592b4c7849605"
+    },
+    "content/handbook/product-development/how-we-work/product-development-flow/_index.md": {
+      "path": "content/handbook/product-development/how-we-work/product-development-flow/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0e2093d53d22581557b8a8dfa3fe3f95ae22a773cda8ebf81b933558b288b339"
+    },
+    "content/handbook/product-development/how-we-work/product-development-flow/phase-template.md": {
+      "path": "content/handbook/product-development/how-we-work/product-development-flow/phase-template.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "480b7e068fe2f7c926822bd95c882f4325cdccc299bed5654c1f073bc7aa6d3e"
+    },
+    "content/handbook/product-development/how-we-work/product-development-flow/product-development-budgeting.md": {
+      "path": "content/handbook/product-development/how-we-work/product-development-flow/product-development-budgeting.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "648f19d8c56b1c04ffed53e4668e767c9a866df3b1939872bc078c9f5745da49"
+    },
+    "content/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/_index.md": {
+      "path": "content/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3e923dfdf45ca061c9d8ce38a22aeb69a54cda91a0ebe88e39708c40ec7d8925"
+    },
+    "content/handbook/product/_index.md": {
+      "path": "content/handbook/product/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "50ef183be2246f6528b5a130f7772073c4a505c6061a917debfef613ad5f17f9"
+    },
+    "content/handbook/product/product-principles.md": {
+      "path": "content/handbook/product/product-principles.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5a9a9725f80163733b1de533e0638635d17b3f76a90ab0c758bacf753ed7316e"
+    },
+    "content/handbook/product/ux/_index.md": {
+      "path": "content/handbook/product/ux/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "84c2e94ecf59e32618df7342492c60ec00d199d568f5a9d806f1d98eab63ee93"
+    },
+    "content/handbook/product/ux/collaborators-playbook.md": {
+      "path": "content/handbook/product/ux/collaborators-playbook.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "929bcbfb13769f0d7625244bec8b89c99d34eb0ac63842765ca46eb275e061cc"
+    },
+    "content/handbook/product/ux/competitor-evaluations.md": {
+      "path": "content/handbook/product/ux/competitor-evaluations.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5126bc267492f7628043cffbce4f38e0fa74c369800d5316aff9ea9f96996da0"
+    },
+    "content/handbook/product/ux/design-sprint.md": {
+      "path": "content/handbook/product/ux/design-sprint.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e67d01e8f0244ad1e8276c4bfda112e94c333492ce7ca6fd3d02388382b836da"
+    },
+    "content/handbook/product/ux/heuristics.md": {
+      "path": "content/handbook/product/ux/heuristics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fea8979cc558c99767bc62e709790fef9fcd339499b74d9f4f81e1ebb5478f8f"
+    },
+    "content/handbook/product/ux/thinkbig.md": {
+      "path": "content/handbook/product/ux/thinkbig.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fe64fc3d2471c21281ee8df5a8e2228bbea35c8896964f55b5c1d3710e98420c"
+    },
+    "content/handbook/product/ux/tracking-critical-experiences.md": {
+      "path": "content/handbook/product/ux/tracking-critical-experiences.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bddc9ea689958898efe7c83e4781c7d9eccd8336b40833c4604d8b1d22e6e850"
+    },
+    "content/handbook/product/ux/user-journeys.md": {
+      "path": "content/handbook/product/ux/user-journeys.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1437e7847859f745ea9b79f703bf3bfb5c9e2391dc2b03fc596c297ef1df822f"
+    },
+    "content/handbook/product/ux/ux-forum.md": {
+      "path": "content/handbook/product/ux/ux-forum.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9f3f0ac6a4fb74a78743e24475a8177b06d2892d73e9026dc339c92c17b620fc"
+    },
+    "content/handbook/product/ux/ux-quality-metrics-framework.md": {
+      "path": "content/handbook/product/ux/ux-quality-metrics-framework.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e1fe8f2b0dda0dfa4d86197d39c9fccf31ffd3691f37063332a96872bd416efc"
+    },
+    "content/handbook/product/ux/ux-scorecards.md": {
+      "path": "content/handbook/product/ux/ux-scorecards.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "588e5c079227cfee17e8f1aa0418f87a58b964a339237e175dd29458d0ebc97a"
+    },
+    "content/handbook/product/ux/ux-resources/_index.md": {
+      "path": "content/handbook/product/ux/ux-resources/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "96a93c285f31b2fd76cfdc866daba8ae3fc32d374756bdd32f8e39a027f94851"
+    },
+    "content/handbook/product/ux/ux-resources/dark-mode-rollout-playbook.md": {
+      "path": "content/handbook/product/ux/ux-resources/dark-mode-rollout-playbook.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "39d72640f0ca17cfbf02f31f64681867b9ef97bea67c6c84c12d445bfff3af18"
+    },
+    "content/handbook/product/ux/ux-resources/designers-guide-to-data.md": {
+      "path": "content/handbook/product/ux/ux-resources/designers-guide-to-data.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6c6783fb2a68df3a4abfaaa5afd77a3b14eee5076553686399c10f55098a6bfd"
+    },
+    "content/handbook/product/ux/ux-resources/designers-step-by-step-guide-to-make-code-changes.md": {
+      "path": "content/handbook/product/ux/ux-resources/designers-step-by-step-guide-to-make-code-changes.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "44d3a856b000a0ef7aec82be17aba7abe813873481fdc88adca7a691bc2b9289"
+    },
+    "content/handbook/product/ux/ux-resources/experimentation.md": {
+      "path": "content/handbook/product/ux/ux-resources/experimentation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "894f8ed6207fa8738fddbcb30e70a84740e4b2723754ab3663822aeb4a738508"
+    },
+    "content/handbook/product/ux/ux-resources/publishing-claude-prototypes.md": {
+      "path": "content/handbook/product/ux/ux-resources/publishing-claude-prototypes.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b09ac9a1d53c1b22db1a82ef2ca8ebe17b917de4d6583ecfd1a5e66eddba65dd"
+    },
+    "content/handbook/product/ux/technical-writing/_index.md": {
+      "path": "content/handbook/product/ux/technical-writing/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "053aeae130c6ff53d6c63024abb4788e1938a361e3d463b40ca46f8dc1a15a2a"
+    },
+    "content/handbook/product/ux/technical-writing/feature-prioritization.md": {
+      "path": "content/handbook/product/ux/technical-writing/feature-prioritization.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d2aa5c1a2747c62bfc4dfac0c6664fe12486000b414d37d71deee265ed329913"
+    },
+    "content/handbook/product/ux/technical-writing/hiring.md": {
+      "path": "content/handbook/product/ux/technical-writing/hiring.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c66ff5ec41430101e9724b39afa24cd15689a781267125580e8a896a94f17023"
+    },
+    "content/handbook/product/ux/research-operations/_index.md": {
+      "path": "content/handbook/product/ux/research-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "135878afa004a2d99117c2063e93a8111c33203423ca706c11b461718f92e8c5"
+    },
+    "content/handbook/product/ux/research-operations/experience-research-participation.md": {
+      "path": "content/handbook/product/ux/research-operations/experience-research-participation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1d695cd1f9f4b319825a8f2e8544b87680bd1637d1078da71297e9e0bea32420"
+    },
+    "content/handbook/product/ux/research-operations/ip-assignment.md": {
+      "path": "content/handbook/product/ux/research-operations/ip-assignment.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ec34470f3178f0bfcfe3b083d6177a9410d698fd605e2ac2eb447390f19b7025"
+    },
+    "content/handbook/product/ux/research-operations/ndas.md": {
+      "path": "content/handbook/product/ux/research-operations/ndas.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bfd65aac4a593b08f112f26d2b98c6320dcdf3d5c3defac0a12b2cc1625f1685"
+    },
+    "content/handbook/product/ux/research-operations/recruitment-methods.md": {
+      "path": "content/handbook/product/ux/research-operations/recruitment-methods.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c696927bebcac6681223c47f1ffaf740986472c00705262ae7e6c083604afd3b"
+    },
+    "content/handbook/product/ux/research-operations/reops-procurement.md": {
+      "path": "content/handbook/product/ux/research-operations/reops-procurement.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9443b1084da79e5846318d56680dfac61cd919f1a6f156894dd703dc65f5ddba"
+    },
+    "content/handbook/product/ux/research-operations/research-specialist-fill-in.md": {
+      "path": "content/handbook/product/ux/research-operations/research-specialist-fill-in.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "421f1b31426ede98af4d31e55d5666ab691b870d31d1e4618248a4572f415710"
+    },
+    "content/handbook/product/ux/research-operations/shareouts/index.md": {
+      "path": "content/handbook/product/ux/research-operations/shareouts/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a450ccc7e9150381e5e0fcdccaf3f3e619772a8d05273141e8550a1effae97f"
+    },
+    "content/handbook/product/ux/research-operations/participation-gratuities/index.md": {
+      "path": "content/handbook/product/ux/research-operations/participation-gratuities/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b670af6be56bb69b8f57c51bed7858ebef0be09e969a3e5f9e8e9ec7e346d265"
+    },
+    "content/handbook/product/ux/product-designer/_index.md": {
+      "path": "content/handbook/product/ux/product-designer/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53ff194da2f8797331afcf42f412224b460685be0a7a32d5949edc4b8ea9aced"
+    },
+    "content/handbook/product/ux/product-designer/ai-design.md": {
+      "path": "content/handbook/product/ux/product-designer/ai-design.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "95e322ee8d528ee51d95da92820ec93e3085ac33b2bdc3b6731b5c6823f18542"
+    },
+    "content/handbook/product/ux/product-designer/mr-reviews/_index.md": {
+      "path": "content/handbook/product/ux/product-designer/mr-reviews/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0b500d4ac45bdf58c98ce54d14488d7e7a8a4ada2c98975636119bb468f22216"
+    },
+    "content/handbook/product/ux/product-designer/mr-reviews/preview-mr.md": {
+      "path": "content/handbook/product/ux/product-designer/mr-reviews/preview-mr.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3a8dcd352fa326f598333bb69b22546ba110e82c77519d6a1b8efb441cb486f7"
+    },
+    "content/handbook/product/ux/product-designer/figma/_index.md": {
+      "path": "content/handbook/product/ux/product-designer/figma/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f24e1fe70670ca6d3c2c329c7233341bbd27b2010c5d7f9555657eed18e62e6a"
+    },
+    "content/handbook/product/ux/product-designer/capacity-management/_index.md": {
+      "path": "content/handbook/product/ux/product-designer/capacity-management/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c0d22da55f4340609d5dfc51a883c06c3048054696ecce5288ab748378660b71"
+    },
+    "content/handbook/product/ux/product-design/_index.md": {
+      "path": "content/handbook/product/ux/product-design/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7d9e191ee688eef47995c229d6f1387a46572d7adb140125320abf3a2b7d0d39"
+    },
+    "content/handbook/product/ux/product-design/design-pair-rotation.md": {
+      "path": "content/handbook/product/ux/product-design/design-pair-rotation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3ce0b65241afc9339a1dddca4ec9dd21b2e0650ec01145fda637bab3ee244d63"
+    },
+    "content/handbook/product/ux/product-design/design-reach-program.md": {
+      "path": "content/handbook/product/ux/product-design/design-reach-program.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "deedf07b2b9b9cd5079a9d58b3ac613d1b486dafc31098a4dd1b72a3ce9b0eab"
+    },
+    "content/handbook/product/ux/product-design/design-studios.md": {
+      "path": "content/handbook/product/ux/product-design/design-studios.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "be2250ad21fb1b827443c168561e2d4220ef21c5649b426bfa76865fff934fd9"
+    },
+    "content/handbook/product/ux/product-design/hiring-product-designers.md": {
+      "path": "content/handbook/product/ux/product-design/hiring-product-designers.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7665340f551f504c40d0a131125fd8117e5fa2ef9a6d77457d90721d82869094"
+    },
+    "content/handbook/product/ux/product-design/product-design-manager-pairs.md": {
+      "path": "content/handbook/product/ux/product-design/product-design-manager-pairs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e54e32d2a1c1742a3d2ae33fcfe87959ff5a62782fa251258deb041e1343c503"
+    },
+    "content/handbook/product/ux/product-design/product-design-manager.md": {
+      "path": "content/handbook/product/ux/product-design/product-design-manager.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7cef18032cfff31c1a9930377288d1dce310d9a645adf2cc17be2db13348aada"
+    },
+    "content/handbook/product/ux/product-design/ux-roadmaps/_index.md": {
+      "path": "content/handbook/product/ux/product-design/ux-roadmaps/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b7de86b2186ebbb8ea35645a95d3cfbaa4cad36b80eaf0d6225871eee8bdd8b9"
+    },
+    "content/handbook/product/ux/product-design/operations/_index.md": {
+      "path": "content/handbook/product/ux/product-design/operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ef6903901418dbee634e7f75894d530a3b23e3cf6534a47f9397ef80463714e2"
+    },
+    "content/handbook/product/ux/persona-creation/index.md": {
+      "path": "content/handbook/product/ux/persona-creation/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "86b34ad7606383d4bc73e23b342962774c19dfad30ec2803a5f2aeb8553f970d"
+    },
+    "content/handbook/product/ux/performance-indicators/_index.md": {
+      "path": "content/handbook/product/ux/performance-indicators/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eed0f48f971db28682a2bd505b7ea9139ee6d6eade79d50c2138c3d460dce751"
+    },
+    "content/handbook/product/ux/performance-indicators/usat-plus/_index.md": {
+      "path": "content/handbook/product/ux/performance-indicators/usat-plus/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b2cd621b0cc29514da1adefd41b1260a334e9b20557da8f73cd54d4437abd2e8"
+    },
+    "content/handbook/product/ux/performance-indicators/system-usability-scale/_index.md": {
+      "path": "content/handbook/product/ux/performance-indicators/system-usability-scale/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9aa648cb739a32d4d540977fceacea76bb124b47a6b4dd28218e495c571313c1"
+    },
+    "content/handbook/product/ux/performance-indicators/system-usability-scale/sus-outreach.md": {
+      "path": "content/handbook/product/ux/performance-indicators/system-usability-scale/sus-outreach.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fd85ef77f00c1bd6135807c7ee44134f871c922cf44d784c8c890e44dcfa9e9e"
+    },
+    "content/handbook/product/ux/pajamas-design-system/_index.md": {
+      "path": "content/handbook/product/ux/pajamas-design-system/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e24d718deca52e87c2369cf21360224ad7a8aa5f49feb1f6e5dd96a8279ad707"
+    },
+    "content/handbook/product/ux/pajamas-design-system/design-review.md": {
+      "path": "content/handbook/product/ux/pajamas-design-system/design-review.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9befe948e9074469ea7efe32081b164228c4f5bb0d3c7a09e05af4a287e2a756"
     }
   }
 }
