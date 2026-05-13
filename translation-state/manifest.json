@@ -23929,6 +23929,986 @@
       "translated_at": "2026-05-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "4ba8905f9b4a411a930ef39f412685f76e6b971a3c48959d7ff8f4b2da58611f"
+    },
+    "content/handbook/sales/training/sales-enablement-sessions/_index.md": {
+      "path": "content/handbook/sales/training/sales-enablement-sessions/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ad1c687bde45fbb40715d28159e4c63c5c809f1c67ed561b87e86e12f889ef68"
+    },
+    "content/handbook/sales/training/sales-enablement-sessions/enablement/_index.md": {
+      "path": "content/handbook/sales/training/sales-enablement-sessions/enablement/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ade0e1a52030f45b8a33ec6d59e0870ff1794078bc79515ef60519bf30be81e3"
+    },
+    "content/handbook/sales/training/sales-enablement-sessions/enablement/collaborating-community-programs.md": {
+      "path": "content/handbook/sales/training/sales-enablement-sessions/enablement/collaborating-community-programs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d73a1b8599348381af0e48c7c8806304c6ed1d70a17e3530fde5015bf46ef876"
+    },
+    "content/handbook/sales/training/field-certification/_index.md": {
+      "path": "content/handbook/sales/training/field-certification/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "970bfc30d50d2cbdcad685dfe79c71ad97926333782997a1ab04606df5a75fe3"
+    },
+    "content/handbook/sales/training/field-certification/csm.md": {
+      "path": "content/handbook/sales/training/field-certification/csm.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "52fc3858627decbaaf52ffe31e19eb32cbfe90a85366de27c95c1adfd7f273e2"
+    },
+    "content/handbook/sales/training/field-certification/sa.md": {
+      "path": "content/handbook/sales/training/field-certification/sa.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b1baff182ca724cb23aa3becb5c3bd1c8629a98c15ea98ad2eb322676c35f789"
+    },
+    "content/handbook/sales/training/field-certification/sal.md": {
+      "path": "content/handbook/sales/training/field-certification/sal.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "473eb33f69bd071862c8c4e3de5bdeda2926644f5227daf604e7752e231379fc"
+    },
+    "content/handbook/sales/territories/_index.md": {
+      "path": "content/handbook/sales/territories/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ac0ab54dd8c97a0bad8f1cf81fa0297bc19e05f025b5c4c3f020740d8dd213d"
+    },
+    "content/handbook/sales/territories/latam.md": {
+      "path": "content/handbook/sales/territories/latam.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0857afea85eb9be8294dae253e59489717111c29ca1f28dd3a5244a82817a5f2"
+    },
+    "content/handbook/sales/territories/territory-deprecate.md": {
+      "path": "content/handbook/sales/territories/territory-deprecate.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5294edfeb1312f09293e3c59fa25b08eb56d819bc6d2703cc673ad8ec7119df8"
+    },
+    "content/handbook/sales/sales-term-glossary/_index.md": {
+      "path": "content/handbook/sales/sales-term-glossary/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8edc6219633163ce393ae4ac4c4b7544e6e8cbd621620cc9879e9fa4462d7576"
+    },
+    "content/handbook/sales/sales-term-glossary/arr-in-practice.md": {
+      "path": "content/handbook/sales/sales-term-glossary/arr-in-practice.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d064e40ecf4ee65ad1eb84d9cb17a1cce6f32055ddaa6cb9349f6bd6d0544fca"
+    },
+    "content/handbook/sales/sales-operating-procedures/_index.md": {
+      "path": "content/handbook/sales/sales-operating-procedures/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f73e5f6409f9907694b9ade09ba3071a7af95dfda6267d4aac52ca35f2aa9687"
+    },
+    "content/handbook/sales/sales-operating-procedures/deal-closure.md": {
+      "path": "content/handbook/sales/sales-operating-procedures/deal-closure.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "017af9ae8acbad25e83e8a55c6bc9a918f4d89272e8d71586709e71b66a680df"
+    },
+    "content/handbook/sales/sales-operating-procedures/facilitate-the-opportunity.md": {
+      "path": "content/handbook/sales/sales-operating-procedures/facilitate-the-opportunity.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5411a4856bffe27138e8e69ecdc0fdd8c80ccf5f659255ab3978a524184d489b"
+    },
+    "content/handbook/sales/sales-operating-procedures/retain-and-expand.md": {
+      "path": "content/handbook/sales/sales-operating-procedures/retain-and-expand.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "37cfba45fbd6ff86f7c49598727f9f0e42ee6661d539dfff445da77d0d8d1a30"
+    },
+    "content/handbook/sales/sales-operating-procedures/engage-and-educate-the-customer/index.md": {
+      "path": "content/handbook/sales/sales-operating-procedures/engage-and-educate-the-customer/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fa2f2a8635858fab5136b38210a1e88db78d067ff980e98a545e94a0eff9661a"
+    },
+    "content/handbook/sales/sales-google-groups/_index.md": {
+      "path": "content/handbook/sales/sales-google-groups/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eed5a01df1e714f11464c630e5461d5df086baf9f0c4855df7c0caf0874a3fab"
+    },
+    "content/handbook/sales/sales-google-groups/field-fyi-channel.md": {
+      "path": "content/handbook/sales/sales-google-groups/field-fyi-channel.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b4cca7bbcf044f6b38689968ec550c9b662a0bc03fa072047ddc19495a0e3727"
+    },
+    "content/handbook/sales/revenue-analytics/_index.md": {
+      "path": "content/handbook/sales/revenue-analytics/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7aff47be6eb27bb8159da7b3fd41ea914b64aa410c10471a88a35cbfa13013e5"
+    },
+    "content/handbook/sales/readmes/_index.md": {
+      "path": "content/handbook/sales/readmes/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "237c47deeea415e8eec75061a758644bce2b5f5aba9b3986ecad06ae769001c4"
+    },
+    "content/handbook/sales/readmes/ian-steward.md": {
+      "path": "content/handbook/sales/readmes/ian-steward.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8466186e97c4ba08c2889cf804a7b25fb81d5c84c505ced89389d78330c83a44"
+    },
+    "content/handbook/sales/readmes/noah-ing.md": {
+      "path": "content/handbook/sales/readmes/noah-ing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9287dee2228fc7acc3c816494b93344de39a48d532b9f338717c589e846167df"
+    },
+    "content/handbook/sales/readmes/tim-poffenbarger.md": {
+      "path": "content/handbook/sales/readmes/tim-poffenbarger.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "58de3e41ba5de5c2d459b605b432de99847699c94e5cdcbf93f6e4ffe2b56884"
+    },
+    "content/handbook/sales/qbrs/index.md": {
+      "path": "content/handbook/sales/qbrs/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c0681cbf3d43555055db65cde978ae6831a9e1731b56996ba092a34f3d0d1c2b"
+    },
+    "content/handbook/sales/process/_index.md": {
+      "path": "content/handbook/sales/process/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cd28d5a2a4728265e3150b73a77e0df0a4f2e4a819ad4c794b5ad851637d75b2"
+    },
+    "content/handbook/sales/process/account-management.md": {
+      "path": "content/handbook/sales/process/account-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53db63e22fa1a04ab73df4944c8f7292993b041269c8fe4d4503261c51d1f18b"
+    },
+    "content/handbook/sales/process/version-check/index.md": {
+      "path": "content/handbook/sales/process/version-check/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0d774e87567599573a991d1a7f6346c2fda9e830fb24f1cc6d68657012976269"
+    },
+    "content/handbook/sales/playbook/_index.md": {
+      "path": "content/handbook/sales/playbook/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1bf5d4e9e78e4b79c3783e250e2c0acda95227da1554c645049cbc6d96659d5d"
+    },
+    "content/handbook/sales/playbook/discovery/index.md": {
+      "path": "content/handbook/sales/playbook/discovery/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "95cdaa58e2391f974444008d3211eb5a5cbbccbfe40c10f67665d1e3f7630729"
+    },
+    "content/handbook/sales/onboarding/_index.md": {
+      "path": "content/handbook/sales/onboarding/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5600d366f03c9f77d278c005ec2328c595ad8d156ff60d55da71ce4f69f53544"
+    },
+    "content/handbook/sales/onboarding/graduating-sqs.md": {
+      "path": "content/handbook/sales/onboarding/graduating-sqs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7cec52223a36535af188c23cf6c68d757796307de990e5101a062544084cb89d"
+    },
+    "content/handbook/sales/onboarding/sqs-learning-objectives.md": {
+      "path": "content/handbook/sales/onboarding/sqs-learning-objectives.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6365402836c0400a6c39240d0b130158b21b1eebcc05d973af8085db08b6c394"
+    },
+    "content/handbook/sales/onboarding/sqs-workshop.md": {
+      "path": "content/handbook/sales/onboarding/sqs-workshop.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f225b6e2a4b2bbae2bfdb0051d5c470782bd6040484c461ce009c7fa9c2ae72e"
+    },
+    "content/handbook/sales/onboarding/target-roles.md": {
+      "path": "content/handbook/sales/onboarding/target-roles.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "31ca0cad165e74b6c995ae3748fdf3cc45fa0ed650199670244bbce552625cf1"
+    },
+    "content/handbook/sales/onboarding/sales-learning-path/_index.md": {
+      "path": "content/handbook/sales/onboarding/sales-learning-path/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cd0bb5125bef2725d95ac208b0ce0f0a43a7c735f396466a87c9cf4a79851808"
+    },
+    "content/handbook/sales/onboarding/sales-learning-path/onboarding-process.md": {
+      "path": "content/handbook/sales/onboarding/sales-learning-path/onboarding-process.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "161efb1f4b44092109c1afbf878d3d241b88bde17daffa3500d280cc1ac592f6"
+    },
+    "content/handbook/sales/manager-operating-rhythm/_index.md": {
+      "path": "content/handbook/sales/manager-operating-rhythm/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "12b07cf1267c410ffdcd839be5e473a3dc18b9352efa998d815ed654a51eb72a"
+    },
+    "content/handbook/sales/manager-operating-rhythm/channel-sales.md": {
+      "path": "content/handbook/sales/manager-operating-rhythm/channel-sales.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7b934eba78b11d90b5c06f414d390e631d605b5e991bd11dc9646a4b7680f6dd"
+    },
+    "content/handbook/sales/manager-operating-rhythm/enterprise-sales.md": {
+      "path": "content/handbook/sales/manager-operating-rhythm/enterprise-sales.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "abd6a4953f2c1df29e5470eb6030a694c0a3ee77cc9c296c439e47c7154ea584"
+    },
+    "content/handbook/sales/manager-operating-rhythm/mid-market-sales.md": {
+      "path": "content/handbook/sales/manager-operating-rhythm/mid-market-sales.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "343862a801889980538d3991832f2425d97048a11e7628b1c595265ce79594be"
+    },
+    "content/handbook/sales/manager-operating-rhythm/smb-sales.md": {
+      "path": "content/handbook/sales/manager-operating-rhythm/smb-sales.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "19632b9f45fc894d4d636564832c8ca844f07b0e4cd5108373d4709d499bddd9"
+    },
+    "content/handbook/sales/idea-to-production-demo/_index.md": {
+      "path": "content/handbook/sales/idea-to-production-demo/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ded080784009d4acdad786113605ff6d0b3b07b00c546db353f708c6b02561f2"
+    },
+    "content/handbook/sales/idea-to-production-demo/setup.md": {
+      "path": "content/handbook/sales/idea-to-production-demo/setup.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "13a376733f7f586c1438e7aa9db17d914c0594234602a8e17dc8f4e5e43c4533"
+    },
+    "content/handbook/sales/high-velocity-sales-fo-team/_index.md": {
+      "path": "content/handbook/sales/high-velocity-sales-fo-team/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c7547140e54b5a1ecaee4409bb59fda7b92d778c40fa739bffd6c974dce6c852"
+    },
+    "content/handbook/sales/high-velocity-sales-fo-team/hvs_fo_data_ops.md": {
+      "path": "content/handbook/sales/high-velocity-sales-fo-team/hvs_fo_data_ops.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "37808021882e88e5c6e3d5b2733ec456e8e9b3df1644d965cf8b0772593ba3a6"
+    },
+    "content/handbook/sales/high-velocity-sales-fo-team/hvs_product_gtm.md": {
+      "path": "content/handbook/sales/high-velocity-sales-fo-team/hvs_product_gtm.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "338d3a072ede5f6702fdab0c81f8b68f848620380af5ddf8dfa0d6b8bb403ee1"
+    },
+    "content/handbook/sales/high-velocity-sales-fo-team/startups-program/_index.md": {
+      "path": "content/handbook/sales/high-velocity-sales-fo-team/startups-program/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8b464a744deccfaa4f2c2e7a62097fb8c6cb44a515c7d5d8eff2e0e807f24017"
+    },
+    "content/handbook/sales/high-velocity-sales-fo-team/startups-program/startups-program-workflows.md": {
+      "path": "content/handbook/sales/high-velocity-sales-fo-team/startups-program/startups-program-workflows.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ad8181b46064a7b6f90da36547507d33ead6a8b94be8a950b334f3e33fd794ad"
+    },
+    "content/handbook/sales/gainsight/_index.md": {
+      "path": "content/handbook/sales/gainsight/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5a3190e17555842382e76e7b3cb98ceef7da0c0e0675caf0fa8ae3643e6c11e1"
+    },
+    "content/handbook/sales/field-operations/_index.md": {
+      "path": "content/handbook/sales/field-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c89a4966b30d2cb1adf6f93a1ab75a5051764f26300f8f36d92c3242594d99c0"
+    },
+    "content/handbook/sales/field-operations/finding-seat-counts.md": {
+      "path": "content/handbook/sales/field-operations/finding-seat-counts.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "672dcc1cd096f0fdb697f46211b225d1605383a70662751340437e2462966754"
+    },
+    "content/handbook/sales/field-operations/order-processing.md": {
+      "path": "content/handbook/sales/field-operations/order-processing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b3b97ec307137617b187a55ae126e6cd32eecd3cfe0f4a5f3f912845326aadcb"
+    },
+    "content/handbook/sales/field-operations/release-schedule.md": {
+      "path": "content/handbook/sales/field-operations/release-schedule.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c9ddb5a736a94f91ad40603c1c887c438a23d0e423b529231e74826a3f449983"
+    },
+    "content/handbook/sales/field-operations/rsoe-gd.md": {
+      "path": "content/handbook/sales/field-operations/rsoe-gd.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7e1d095abab627915c6ad5c9ae4a8d060141b949038f8d12373bc58755a379ab"
+    },
+    "content/handbook/sales/field-operations/sales-systems/_index.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b90e0b4c0ea78d339eac976d8f92a28fc75de12ea1e9d6a4d7caf2943f5c0c41"
+    },
+    "content/handbook/sales/field-operations/sales-systems/dataloader-installation.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/dataloader-installation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "00d3c696eec41b69cf470c9904f81b3d583aa4b7541d414427981c7ec7135cfd"
+    },
+    "content/handbook/sales/field-operations/sales-systems/gtm-integrated-environments.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/gtm-integrated-environments.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8955f1718a6b789ee1b8fddbd6949a321088d96cf30ee39588ab65a21015b168"
+    },
+    "content/handbook/sales/field-operations/sfdc.md": {
+      "path": "content/handbook/sales/field-operations/sfdc.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9b9aa1f25571f69f8e27bf58f83909dd410751bd90d9c61b391cb601d144a19a"
+    },
+    "content/handbook/sales/gainsight/account-planning.md": {
+      "path": "content/handbook/sales/gainsight/account-planning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-11T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ca2bd7ceef916c04535cec6230b1ba1050136d30ca07744718b1ae932aa2dc0d"
+    },
+    "content/handbook/support/cross-platform-support-requests.md": {
+      "path": "content/handbook/support/cross-platform-support-requests.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "743217973ab6e24debec10a003a28c44e28b0f986fbe1a59d17932a20382189f"
+    },
+    "content/handbook/sales/field-operations/sales-systems/salesforce-config.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/salesforce-config.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "607c65d7ad68bddbd2b706af3a43f54ed284150e26b159f2316a69d6d3c14ebd"
+    },
+    "content/handbook/sales/field-operations/sales-systems/super-sonics.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/super-sonics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f4a9446fd16b70ade1668618ec60dedcdb86695549a4d7f345f3c9eca6067d39"
+    },
+    "content/handbook/sales/field-operations/sales-systems/tech-stack-guide-sfdc.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/tech-stack-guide-sfdc.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "187dc010fd3427955449b9bdd7c0fbf395ada4350604e77ed7b7f4594473a5f8"
+    },
+    "content/handbook/sales/field-operations/sales-systems/license-usage-app/index.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/license-usage-app/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6f3ba06ba9cac85d90da7f584163fc391a5dfaca098562322cf26b29442a789f"
+    },
+    "content/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/_index.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a17d732b768b158ee6fb7a806d78f59abd4c9c5b49d4faa80108b338e92fa360"
+    },
+    "content/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/incent.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/incent.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3f480f55727595730a7175bc1c0a18b55784c69387ba12aa7fab5662ff16f68b"
+    },
+    "content/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/sfdc-booking-metric-fields.md": {
+      "path": "content/handbook/sales/field-operations/sales-systems/gtm-technical-documentation/sfdc-booking-metric-fields.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "890e2c016dce58c2c6f4f2b9470fb86fc05fd66e55049baa5a3ca184b4488f59"
+    },
+    "content/handbook/sales/field-operations/sales-strategy/_index.md": {
+      "path": "content/handbook/sales/field-operations/sales-strategy/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d0a6d28c750cf59d920399cc438ba3563fffc2d833355149f6c00979a3a7ef80"
+    },
+    "content/handbook/sales/field-operations/sales-strategy/fy22-field-planning.md": {
+      "path": "content/handbook/sales/field-operations/sales-strategy/fy22-field-planning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "aa8d34cc61a3301b3b7694b5104ead67ee4ad6708f76d1dad850e1eb3647d9d0"
+    },
+    "content/handbook/sales/field-operations/sales-strategy/projects.md": {
+      "path": "content/handbook/sales/field-operations/sales-strategy/projects.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4d74da77431f0d268ba065e06de4c8b79908cd67c2c9f88e914593a4f9aa5fbd"
+    },
+    "content/handbook/sales/field-operations/sales-strategy/sales-headcount.md": {
+      "path": "content/handbook/sales/field-operations/sales-strategy/sales-headcount.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e4af6bd877d6da2c51cf198ae1e8e962145238e22f9d8f858b52d9a7249a9425"
+    },
+    "content/handbook/sales/field-operations/sales-operations/_index.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d662a76ef78350d445beae2972ef30eb0a8472f38c58972056396826dd1037dc"
+    },
+    "content/handbook/sales/field-operations/sales-operations/deal-desk-order-mgmt-kpis.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/deal-desk-order-mgmt-kpis.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9fccb37db645f6c25e6f0835f73f9317d357f1d676b939f51fb7efe827f416f1"
+    },
+    "content/handbook/sales/field-operations/sales-operations/deal-desk.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/deal-desk.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "68a05d696328c66340b5a99cc938e81216a861eb0ed735890ba96962fed43f33"
+    },
+    "content/handbook/sales/field-operations/sales-operations/linkedin-sales-insights.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/linkedin-sales-insights.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "48dfdbe51dd10ab1dcfd5ed3ed06020e90b9427d1a78dc1564eddfb6acfe9f84"
+    },
+    "content/handbook/sales/field-operations/sales-operations/order-management.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/order-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5b14c6f670591c89f366781865ac9f6c519720cecd05b5e8881df3c18de2efdd"
+    },
+    "content/handbook/sales/field-operations/sales-operations/po-acceptance-policy.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/po-acceptance-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2401e4fd9fd120b5854abb3261c0358fad9e7d3852989fc8e8045dac98f1e93b"
+    },
+    "content/handbook/sales/field-operations/sales-operations/sales-operations-owned-provisioning.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/sales-operations-owned-provisioning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c5cc56b58bdf2d1a7240c4575b908cc48807a1b7d67dcb17a3e8765352be30f0"
+    },
+    "content/handbook/sales/field-operations/sales-operations/go-to-market/_index.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/go-to-market/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T10:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0b9e6a0c94a455a2d5d32aa8c3ad2bcfa5f1e57775df6c1192caae493ecb6fe1"
+    },
+    "content/handbook/sales/field-operations/sales-operations/go-to-market/chorus/index.md": {
+      "path": "content/handbook/sales/field-operations/sales-operations/go-to-market/chorus/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4d6a29ef94dbbc4b6cae29a67265d243f42ca793ccb7b7f09518efb03b817a86"
+    },
+    "content/handbook/sales/field-operations/requesting-internal-support/_index.md": {
+      "path": "content/handbook/sales/field-operations/requesting-internal-support/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1aa317f4ba5c74ddadb954ab3ec97d5b04bc49a0760dd91fca27870501ddca25"
+    },
+    "content/handbook/sales/field-operations/gtm-resources/_index.md": {
+      "path": "content/handbook/sales/field-operations/gtm-resources/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9e271d74fd10f9830a9dd4a926db164e74f4ebb6ec381bd80c4900780c8976bf"
+    },
+    "content/handbook/sales/field-operations/gtm-resources/rules-of-engagement.md": {
+      "path": "content/handbook/sales/field-operations/gtm-resources/rules-of-engagement.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0e0f75b4e1e964d4ce9fa57319723a72b116a98d7b690f5b581210c8c5767716"
+    },
+    "content/handbook/sales/field-operations/field-enablement/_index.md": {
+      "path": "content/handbook/sales/field-operations/field-enablement/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e1cf19489f8227bc85bf4dbf312c1a6491d586fa2c9e81893aea2742ece8f1c8"
+    },
+    "content/handbook/sales/field-operations/field-enablement/executive-sponsor-program.md": {
+      "path": "content/handbook/sales/field-operations/field-enablement/executive-sponsor-program.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "60f6dd1441329616debd37901e29ad3ac74a1b371a96394473975f0d42db4ba5"
+    },
+    "content/handbook/sales/field-operations/field-enablement/field-team-recognition.md": {
+      "path": "content/handbook/sales/field-operations/field-enablement/field-team-recognition.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "814bdf22482c93544acd649e07217791c08d3e6753cf2c35c6dc7dd9e5bcf76f"
+    },
+    "content/handbook/sales/field-operations/field-enablement/gtm-enablement.md": {
+      "path": "content/handbook/sales/field-operations/field-enablement/gtm-enablement.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "71c45113eea4e722861a29efc3985c307ce835111e4b3e433be2fb5ff7ce26fe"
+    },
+    "content/handbook/sales/field-operations/field-enablement/prioritization-framework.md": {
+      "path": "content/handbook/sales/field-operations/field-enablement/prioritization-framework.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4c1caaeb93530add86e58d9984f6034eef2de61c108327d1ed402ee5e439545d"
+    },
+    "content/handbook/sales/field-operations/field-enablement/sales-manager-best-practices.md": {
+      "path": "content/handbook/sales/field-operations/field-enablement/sales-manager-best-practices.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T11:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cc5fefe8f1eb6c0384a8f8dce54ddee9e8b5cf945001f328dacec4c11ac51498"
+    },
+    "content/handbook/sales/field-operations/data-intelligence/_index.md": {
+      "path": "content/handbook/sales/field-operations/data-intelligence/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a1fd62faa5aee5d92cf3e1b1b2c8ed59aafbff060bd0e76ab5ff53224d1e69b9"
+    },
+    "content/handbook/sales/field-operations/data-intelligence/data-governance.md": {
+      "path": "content/handbook/sales/field-operations/data-intelligence/data-governance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "38d4d92301d0db6658145c5db60812cd3613353ce2f2be59be6eebff4d796760"
+    },
+    "content/handbook/sales/field-operations/customer-success-strategy/cs-monthly-metrics-dashboard.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-strategy/cs-monthly-metrics-dashboard.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b6036a080c4294eb7385fe831383cbd4955d273a5222d3b5dd7c581f3ebc4387"
+    },
+    "content/handbook/sales/field-operations/customer-success-strategy/customer-success-strategy-analytics.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-strategy/customer-success-strategy-analytics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c060ca73a8b90534372580f0919056da0b4de7da73529526c23140e66b3d91ec"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/_index.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "32d9201e061d2f09e13081d311f96edcc79a2f41a7cf5a25d057a058c4dac4c0"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-rep-assignment-process.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-rep-assignment-process.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7cf69825bdb7fe9d19678ce26baba9fa08f75d595cb70f88fcb9e93cc685a521"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/renewal-ops.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/renewal-ops.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "58f727489ee4e10ad0f3b7eab4749dcd51421b1fe17f71bc473f9bd3f1762fd5"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/troops-administration.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/troops-administration.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3e0e6f24de586bbbd9bd367933ea91503f50c38c6960002f11a8e44ae0cc50c6"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/gainsight/_index.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/gainsight/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d2b1e3a07207393d24de7d24094e27e699b09e24f9f9fd0510ec5ffa473dce2d"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/gainsight/gainsight-gtm.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/gainsight/gainsight-gtm.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cd53e05bf215d0656ff603e5fa3be58f45b9e2c515caa23adb52d856b3843818"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/gainsight/gainsight-user-management.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/gainsight/gainsight-user-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "db04c9c3ddca3d0eebea3a7a6735e9ebcfc1ee5174bd07ae2839b55e5ae9c426"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/_index.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dc09c20dd9d5bd7ce05692ff5ecfc911366cfe6f3b9a77381ecff7af480ed7bd"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/all-customer-csat-cs.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/all-customer-csat-cs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e02e3373d4203d3a788c1ea7a734375415b82d63127eb464ccff64637f96e6fd"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/available-programs.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/available-programs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d2bfac72e2a8d8647149950e4a6cf68f2124bce4920ab85b22832736343ee544"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/contact-role-tagging-for-personalized-communications.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/contact-role-tagging-for-personalized-communications.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "314a18d34393389620d9a420637d76aa3569d561338a6d27305e5b3ea3048a63"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/cs-content-guide.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/cs-content-guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9e94204f453d8aae41df7f397ed87be62e85e098061a220cb22816af5d81537f"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/customer-newsletter.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/customer-newsletter.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "983e746552b30badf1af204a50e4ba0fca3593cc317b81998b001f36463a0307"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/getting-help-from-dcs.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/getting-help-from-dcs.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7d4f314b01c1f757f9134858238b1a0843b8a59f54cecdaa5a096155826a15c5"
+    },
+    "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/nps-csat-scores.md": {
+      "path": "content/handbook/sales/field-operations/customer-success-operations/cs-ops-programs/nps-csat-scores.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8d850f4b59a76c0bb442a64db9b267e4661fe997b109c44971e76f0bf77b17be"
+    },
+    "content/handbook/sales/field-operations/channel-operations/_index.md": {
+      "path": "content/handbook/sales/field-operations/channel-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-12T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "51c276bae4e057b1fe16dd51b92e9250ec8affc7d0cad1f53d1ad0af20498788"
+    },
+    "content/handbook/sales/field-operations/channel-operations/partner-faq.md": {
+      "path": "content/handbook/sales/field-operations/channel-operations/partner-faq.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e9c54040b46412533927054ee9742abc88a41dbba905936eb0a02c5477faee46"
+    },
+    "content/handbook/sales/field-operations/channel-operations/sales-faq.md": {
+      "path": "content/handbook/sales/field-operations/channel-operations/sales-faq.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "aad778d02ec73e3eaae9ddd977764e7c52538f60744cdf9c0a25f8a951625891"
+    },
+    "content/handbook/sales/field-communications/_index.md": {
+      "path": "content/handbook/sales/field-communications/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "45cf464074703eb778c1c446a38b02c74481cd770dfb73deb7c8a9416c589549"
+    },
+    "content/handbook/sales/field-communications/field-alerts.md": {
+      "path": "content/handbook/sales/field-communications/field-alerts.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fe9c70fe2a90479e5b3a8faaf9e6842e5392e646e620072db1984d4d0b978e4f"
+    },
+    "content/handbook/sales/field-communications/field-update-tickers.md": {
+      "path": "content/handbook/sales/field-communications/field-update-tickers.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ea2c1e535a67e79a749ffb5331a2c7b4c4374bf39630224de43aa263e0faeb18"
+    },
+    "content/handbook/sales/field-communications/monthly-release-sales-email.md": {
+      "path": "content/handbook/sales/field-communications/monthly-release-sales-email.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "adadd13a3be4bc4b5307fa9b49ccd33e0dff3941af30e487644ab795d3c80573"
+    },
+    "content/handbook/sales/field-communications/gitlab-highspot/index.md": {
+      "path": "content/handbook/sales/field-communications/gitlab-highspot/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4eed073a6607404eab45467483885fb0c5a786e6ccc6164df6ff10d2c88db30c"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/_index.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "49cef9e3c745c407241a928a1bd0df6ad245595e5abb0acc0b0bd91d3e2780e6"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-04-02.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-04-02.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8d9c9e1caf4565185a6feaaf874cdc02fe777c90b0797df31c2d5cdcd12e589e"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-05-05.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-05-05.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cdc7c647e827e8e88cb7ef9244dc584b6293add3d9ae5806282a79db24ba212e"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-06-02.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-06-02.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1e6cdb6c29db9d3b5a779fcb73e89ca115e3650bea85ee38455dc84d907d92b7"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-07-07.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-07-07.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "95737fd605a2221b982d2b951df5bbc15c16abc133805fb9c892baaf4b8c8de1"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-08-06.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-08-06.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b8b74fac36e42e7eba832865fd3b56cdf91a417e123035d37c905afe980404c2"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-09-01.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-09-01.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4a02abc28b91a11d2def1d91d9957a3ed48ae8d1b51d13eaff071d84099699f7"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-10-08.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-10-08.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d255b1dd0b1e339b110b8179f7d74e5b42000f1dc65377a4a40a74d46cdf761e"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-11-02.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-11-02.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "24ade7d5c8481ff139f64f125a70ef5adeffe83c033721ec6856062ede1d2e3e"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-12-07.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-12-07.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f00ec28687fc6badb2c434e6f8717249d551f4c90dca786a5420d904afe25d52"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-01-06.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-01-06.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fc77ea00833c4f3047d76d31fdd9f0f94d2d0dbdbd06bb17765a656e1b7eb6c2"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-02-01.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-02-01.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b8de2dab935e94dd725513c0d2af01f54bcd5647c649da75492852f664631148"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-03-01.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-03-01.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "461b0dc48240b8d891d3e653a37b9ac171f671366f2ffca9bfff7c3c830d22a5"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-04-06.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-04-06.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7dc83f82b87790e0a2d08ef4c12daf06f2e977ff8be698fd808ae94d448ba3f2"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-05-03.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-05-03.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "35250ca1c533f3131ebb20ad4596431464fcc49591cbb6ec8f629dcf179c1c89"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-06-07.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-06-07.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0a272390e68c31fa42f5f04ce8adcc583e95474fcd8a173805f9bdef8a420cf3"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-07-06.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-07-06.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "064159550efef0ebf683cbe029f53e6e77771b333401865319f35b10257817ea"
+    },
+    "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-08-02.md": {
+      "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2021-08-02.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7b9bb3527fc612d65d1822b84d9056676d2a4eaae5a982ac9552b1d668552d4c"
+    },
+    "content/handbook/sales/commissions/index.md": {
+      "path": "content/handbook/sales/commissions/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1376a5d661cb9ead0645cd4fac28592516759a0461dcaf29d588ff074409745c"
+    },
+    "content/handbook/sales/commercial/_index.md": {
+      "path": "content/handbook/sales/commercial/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ba79e18f8f28fa763f07524c4cb601f18869e82a3d22087353ec8010b4985a03"
+    },
+    "content/handbook/sales/commercial/high_velocity_sales_first_orders.md": {
+      "path": "content/handbook/sales/commercial/high_velocity_sales_first_orders.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "75c93d7b5a25ee655f40e63e1d57365bcd0d6dd82f716973944fc5877b8dfecf"
+    },
+    "content/handbook/sales/commercial/hvs_fo_feedback.md": {
+      "path": "content/handbook/sales/commercial/hvs_fo_feedback.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "858234ccd52d22048932256678ee3beebdf7b4a98dfb12256a268860ff78c981"
+    },
+    "content/handbook/sales/commercial/renewals-faq.md": {
+      "path": "content/handbook/sales/commercial/renewals-faq.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "94d5380c69e4a26854236fff897393806e35159cc8a9770683fc95ef5fb80965"
     }
   }
 }
