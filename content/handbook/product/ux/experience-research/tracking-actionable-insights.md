@@ -1,6 +1,6 @@
 ---
 title: "実行可能なインサイトの追跡"
-description: "UX リサーチ研究から得られた実行可能なインサイトを追跡する方法。"
+description: "UX リサーチから得られた実行可能なインサイトを追跡する方法。"
 upstream_path: /handbook/product/ux/experience-research/tracking-actionable-insights/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
