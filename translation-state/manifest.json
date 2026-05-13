@@ -25539,6 +25539,76 @@
       "translated_at": "2026-05-13T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "9befe948e9074469ea7efe32081b164228c4f5bb0d3c7a09e05af4a287e2a756"
+    },
+    "content/handbook/product/ux/operations/_index.md": {
+      "path": "content/handbook/product/ux/operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9fa415ac9a90b455ae9f439f0f92ffc3f6b2105184e84e7471904231a9a29594"
+    },
+    "content/handbook/product/ux/navigation/_index.md": {
+      "path": "content/handbook/product/ux/navigation/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "67a10ae1e6d16c993832ecaeedb8155edc411ed9f4662087cfccc6cb52c037aa"
+    },
+    "content/handbook/product/ux/navigation/inventory.md": {
+      "path": "content/handbook/product/ux/navigation/inventory.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dca9fe5eee040bbb16e6c7862ebc7de0181bb50854c3b0592f3b69cfdb882af0"
+    },
+    "content/handbook/product/ux/learning-and-development/_index.md": {
+      "path": "content/handbook/product/ux/learning-and-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2e7a9dc6b488f7bb46f8cf097ab9444a54a768ec888f9214dda7a3214003be2d"
+    },
+    "content/handbook/product/ux/learning-and-development/tufts-university-capstone-course.md": {
+      "path": "content/handbook/product/ux/learning-and-development/tufts-university-capstone-course.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "94ea7b23dfaeabd6cc39defcfea381e5602e021d3573d7f29b28d4749d758429"
+    },
+    "content/handbook/product/ux/jobs-to-be-done/_index.md": {
+      "path": "content/handbook/product/ux/jobs-to-be-done/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1760bdb0025f556183166b02d6fa50112e3f881c788fe4deaae02a7cc957a065"
+    },
+    "content/handbook/product/ux/jobs-to-be-done/jtbd-beyond-the-playbook.md": {
+      "path": "content/handbook/product/ux/jobs-to-be-done/jtbd-beyond-the-playbook.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "79f095a1e87a7fc951a32499f83a1f443f4e07988de925ac8f9f8d7afa3dc698"
+    },
+    "content/handbook/product/ux/jobs-to-be-done/jtbd-canvas-anatomy.md": {
+      "path": "content/handbook/product/ux/jobs-to-be-done/jtbd-canvas-anatomy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "41778f040c3d5da71e5b48bf1fcc1e3d7aed21ae164f5e038f79c6d11a3c216c"
+    },
+    "content/handbook/product/ux/jobs-to-be-done/jtbd-playbook.md": {
+      "path": "content/handbook/product/ux/jobs-to-be-done/jtbd-playbook.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0b053bd00ff4c86e33c53597bdb8b919276a35e52f6e0ef51b6ede972ddbf53a"
+    },
+    "content/handbook/product/ux/jobs-to-be-done/validated-canvases-and-opportunity-scores.md": {
+      "path": "content/handbook/product/ux/jobs-to-be-done/validated-canvases-and-opportunity-scores.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "88158b9ffbccaa93f86e1f57103922a09ba8de9ad4b4b20808208768fee8d693"
     }
   }
 }
