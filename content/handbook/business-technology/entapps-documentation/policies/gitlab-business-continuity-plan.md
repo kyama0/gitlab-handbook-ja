@@ -6,7 +6,7 @@ tags:
   - security_policy_cpir
 upstream_path: /handbook/business-technology/entapps-documentation/policies/gitlab-business-continuity-plan/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-15T12:00:00Z"
+translated_at: "2026-05-14T22:00:00Z"
 translator: claude
 stale: false
 ---
