@@ -13712,10 +13712,10 @@
     },
     "content/handbook/marketing/_index.md": {
       "path": "content/handbook/marketing/_index.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-30T07:54:04Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "27a38ede9d6c7ae730886c5ea5892ee30b1e4200403b2ab4fb1fa36ad8d107c7"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "acb0cfd4dbeedbe836cead5a7066dfb8858dc831a7999bb03af5059d3dc76475"
     },
     "content/handbook/marketing/account-based-marketing/_index.md": {
       "path": "content/handbook/marketing/account-based-marketing/_index.md",
@@ -14817,10 +14817,10 @@
     },
     "content/handbook/marketing/developer-relations/_index.md": {
       "path": "content/handbook/marketing/developer-relations/_index.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-04-30T12:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "eda9aecfe3ca6fe5b49a4af7d8d1f47a0362d61e1af75949a88d6c0a93124a22"
+      "input_hash": "c8d69c3d881bf638ad88ca0b233373c413e81a58d6fb1f4f1876c67dcab09d8b"
     },
     "content/handbook/marketing/developer-relations/community-pathway.md": {
       "path": "content/handbook/marketing/developer-relations/community-pathway.md",
@@ -14845,10 +14845,10 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/_index.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/_index.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "2cfb96167aa4427c93b098eba803e2145e3f54edacd5ede5e5629d2dbe93583c"
+      "input_hash": "cbe0c5011ed565603f95aeb9369cf5a11332ab9425af1736972cdb38e5924ccd"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/calendar.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/calendar.md",
@@ -14873,17 +14873,17 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/consultancy.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/consultancy.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "d585f208a75e864d073429402f309682d2aeedc67a3b221d3c34a8a4b7926038"
+      "input_hash": "6f43ba462c72745956b4fb9643970f53f53b4982b6e7c8ba115a77db8627d64e"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/content.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/content.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "8943af95b990885fddd347efd4b5959cddf67edb71e1eca9a18cf2acd4e05156"
+      "input_hash": "926a0ef4641877f7fd77780134ccf606a507b3140b2cf55d8ff26e9be6f15d46"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md",
@@ -14950,10 +14950,10 @@
     },
     "content/handbook/marketing/developer-relations/engineering/community-contributors-workflows.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/community-contributors-workflows.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-04-30T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "f117e356fc980cdad71509ce18c571bcfba5ee0819132772ae29f91010a01344"
+      "input_hash": "5bd154eb0178b174b5444f6b436c7549b5487a70bd05adbe85d5f06853a8f62a"
     },
     "content/handbook/marketing/developer-relations/engineering/community-hackathons.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/community-hackathons.md",
@@ -15314,10 +15314,10 @@
     },
     "content/handbook/marketing/developer-relations/workflows-tools/forum.md": {
       "path": "content/handbook/marketing/developer-relations/workflows-tools/forum.md",
-      "upstream_sha": "6b2970dac4d9078a5a79c285a6ee08817ecbd954",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "8368195d46fcd117f324381449dbc0e943cd43686d8dbcd2930f9f7e430bc38e"
+      "input_hash": "f6b2a6d656bed961363a36bf8d0ceb1630f7776da6ed39818bd983aaddf437c6"
     },
     "content/handbook/marketing/developer-relations/workflows-tools/reddit.md": {
       "path": "content/handbook/marketing/developer-relations/workflows-tools/reddit.md",
@@ -15349,10 +15349,10 @@
     },
     "content/handbook/marketing/developer-relations/workflows-tools/twitter.md": {
       "path": "content/handbook/marketing/developer-relations/workflows-tools/twitter.md",
-      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
-      "translated_at": "2026-04-30T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7a1d703cd0d94ae34cba8b1815fd7a8b9d29561445906289409aa63dce764617"
+      "input_hash": "f50076e05478349915e8dc9d6f2c1ed067dd83eacd52f2b7a7be9f1abc0a64bc"
     },
     "content/handbook/marketing/developer-relations/workflows-tools/workato.md": {
       "path": "content/handbook/marketing/developer-relations/workflows-tools/workato.md",
@@ -15377,10 +15377,10 @@
     },
     "content/handbook/marketing/digital-experience/analytics/_index.md": {
       "path": "content/handbook/marketing/digital-experience/analytics/_index.md",
-      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
-      "translated_at": "2026-04-30T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "d8b26106541a30b5db2a41972cdc014a8b8e32b96268708d83670d2f06ada30a"
+      "input_hash": "63ce2f81bf356811678a8de400b62c914e0cab93f309e2d78b9cca9f432a5cc7"
     },
     "content/handbook/marketing/digital-experience/analytics/google-lighthouse.md": {
       "path": "content/handbook/marketing/digital-experience/analytics/google-lighthouse.md",
@@ -15551,10 +15551,11 @@
       "input_hash": "45f89fe2faee99877146c6b773875e29a39f8bdcbb1896fa1acccecbee6619bb"
     },
     "content/handbook/marketing/field-marketing/_index.md": {
-      "upstream_sha": "cee17ee633d1662afe3dff93fdaab9bcbeddee99",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "path": "content/handbook/marketing/field-marketing/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ca5ab962b4a9f097d547edb2c7eda57fb40783fa5e86f699de438203ef163444"
+      "input_hash": "ad72da34f882e8c316f7da88dbd312575bc02333c8ec918495b00ad4ae70d0ab"
     },
     "content/handbook/marketing/field-marketing/field-marketing-epics.md": {
       "path": "content/handbook/marketing/field-marketing/field-marketing-epics.md",
@@ -15788,10 +15789,10 @@
     },
     "content/handbook/marketing/localization/translation_mr_review_workflow.md": {
       "path": "content/handbook/marketing/localization/translation_mr_review_workflow.md",
-      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "455984638570af6fb658a2ef1eefa07cb59072b51a0cfb1701ce0c422b244607"
+      "input_hash": "52154e587fb33c318027da4cc9d17386cbcabd7704258f44363cb865f0a18bfb"
     },
     "content/handbook/marketing/marketing-career-development/_index.md": {
       "path": "content/handbook/marketing/marketing-career-development/_index.md",
@@ -16505,10 +16506,10 @@
     },
     "content/handbook/tools-and-tips/slack.md": {
       "path": "content/handbook/tools-and-tips/slack.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "10e2c86c8b5f7547173644ce73cf4e2a99c12737bf64958249edc5d28559b0a4"
+      "input_hash": "39ab9b6ed7098daccd98b11e759c3497e256c084cef31f0407cd0f1d6cd9136e"
     },
     "content/handbook/tools-and-tips/zoom.md": {
       "path": "content/handbook/tools-and-tips/zoom.md",
@@ -16848,10 +16849,10 @@
     },
     "content/handbook/support/license-and-renewals/_index.md": {
       "path": "content/handbook/support/license-and-renewals/_index.md",
-      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
-      "translated_at": "2026-05-08T09:50:12Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "d3a5a519e09dd28fee53e20c41c54c548463a91584fef4c86168769516b9e4ec"
+      "input_hash": "1a9636e3607d3e0dc569b8bfd932275c0d09b74d2abf64f5b72cb407ea61696d"
     },
     "content/handbook/support/license-and-renewals/amer-region.md": {
       "path": "content/handbook/support/license-and-renewals/amer-region.md",
@@ -16883,10 +16884,10 @@
     },
     "content/handbook/support/license-and-renewals/workflows/billing_contact_change_payments.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/billing_contact_change_payments.md",
-      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
-      "translated_at": "2026-05-08T10:35:08Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "4170a3ce8137cf70017a2a6337c58713005f43b6690e954443ddc4d58d77342d"
+      "input_hash": "198e570e4870dca84f22714ecc13e9a8a16b542e97126e870e88394fc614c5d5"
     },
     "content/handbook/support/license-and-renewals/workflows/communicating_lnr_workflow_changes.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/communicating_lnr_workflow_changes.md",
@@ -16925,10 +16926,10 @@
     },
     "content/handbook/support/license-and-renewals/workflows/managing_product_issues.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/managing_product_issues.md",
-      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
-      "translated_at": "2026-05-08T10:35:08Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "2cad90b3710334bf73311d62f71225a14b193ce8a4051956cd0f39ebc035ad8a"
+      "input_hash": "1316d39efa9350fb2979ce4a4fa3d9fbec61161464e20c040b20fa32bc7f42bc"
     },
     "content/handbook/support/license-and-renewals/workflows/merge_or_split_subscription.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/merge_or_split_subscription.md",
@@ -16939,10 +16940,10 @@
     },
     "content/handbook/support/license-and-renewals/workflows/quarterly_subscription_reconciliations.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/quarterly_subscription_reconciliations.md",
-      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
-      "translated_at": "2026-05-08T10:35:08Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "28d3f30ae56368f1e974025eb950aab821d40406c196299a5ad8f82087f9a75d"
+      "input_hash": "3898ac266a1e63d9b0cb376e671ad2ed8fd277296cc7be4431ea3d9ca2c03245"
     },
     "content/handbook/support/license-and-renewals/workflows/requests_for_documents_from_gitlab.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/requests_for_documents_from_gitlab.md",
@@ -17205,10 +17206,10 @@
     },
     "content/handbook/support/support-innovation-group.md": {
       "path": "content/handbook/support/support-innovation-group.md",
-      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
-      "translated_at": "2026-05-08T18:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "3bd1054fae99f07cd40986fb9635638f321b990fa02bfddb48bf60522b8f0395"
+      "input_hash": "ab9fd2b6d8294c9fd020d6dac384a04ba38791678ee3a931f310db0a0fa10b0b"
     },
     "content/handbook/support/support-stable-counterparts.md": {
       "path": "content/handbook/support/support-stable-counterparts.md",
@@ -17478,10 +17479,10 @@
     },
     "content/handbook/support/workflows/account_changes.md": {
       "path": "content/handbook/support/workflows/account_changes.md",
-      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
-      "translated_at": "2026-05-08T19:23:50Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "26be9ef77afe55a8a2a015ebd875b171beb7267131500f88495fccc5960d525a"
+      "input_hash": "c524f9da86078608f7b8292f4b274121662f78105fd72ac094d70731c49e41f2"
     },
     "content/handbook/support/workflows/account_deletion_access_request_workflows.md": {
       "path": "content/handbook/support/workflows/account_deletion_access_request_workflows.md",
@@ -17555,10 +17556,10 @@
     },
     "content/handbook/support/workflows/cmoc_workflows.md": {
       "path": "content/handbook/support/workflows/cmoc_workflows.md",
-      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
-      "translated_at": "2026-05-08T20:14:55Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "055d0d15a4ae34e469413b670b95dc9a347c874ce14925cba793a7411c03f691"
+      "input_hash": "84539899b4b556d47d2b98d2052bc70d3c8e53e49e56c95bb438e2c617bf69c4"
     },
     "content/handbook/support/workflows/communication-tips.md": {
       "path": "content/handbook/support/workflows/communication-tips.md",
@@ -17639,10 +17640,10 @@
     },
     "content/handbook/support/workflows/dedicated_cmoc.md": {
       "path": "content/handbook/support/workflows/dedicated_cmoc.md",
-      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
-      "translated_at": "2026-05-08T20:30:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ebcde46b71a7247dc4f9a18b7977a199da0d349da158a36b4ae2a86b9e361f4e"
+      "input_hash": "0a2197325424a4a1790ce4cd41d10caadc645ceeb4a43ce61e5fb1f5749cbee7"
     },
     "content/handbook/support/workflows/dedicated_instance_health.md": {
       "path": "content/handbook/support/workflows/dedicated_instance_health.md",
@@ -17863,17 +17864,17 @@
     },
     "content/handbook/support/workflows/information-request.md": {
       "path": "content/handbook/support/workflows/information-request.md",
-      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
-      "translated_at": "2026-05-08T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "e01582deff5ba1e4f2413d2c74a2db0d1bfd72e271518e604e6a76d61c2f63e4"
+      "input_hash": "89340ce24c65043373eaa504abc2af92b7715c5a0c32611e18d86087b3837954"
     },
     "content/handbook/support/workflows/internal_requests.md": {
       "path": "content/handbook/support/workflows/internal_requests.md",
-      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
-      "translated_at": "2026-05-08T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "c4281b10f80c86d8dda0f46a38d7fff3a71682b552f66c58864cb29097dcce94"
+      "input_hash": "6312521693ea82d57b39ddc6d277c95271ad0b1fedf0ca1a41e65aead9b02a72"
     },
     "content/handbook/support/workflows/investigate_blocked_pipeline.md": {
       "path": "content/handbook/support/workflows/investigate_blocked_pipeline.md",
@@ -18507,10 +18508,10 @@
     },
     "content/handbook/support/license-and-renewals/workflows/saas/trials_and_plan_change.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/saas/trials_and_plan_change.md",
-      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
-      "translated_at": "2026-05-08T12:45:20Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "811185989c737d7b43824e706d46f4d51f8bb5a7364f061bb68feddf0ba6acc1"
+      "input_hash": "6e0dc26e11f57cf4d12590c066ba2e3d7072aae0bfc4a9a3922ee23bf0eaaa40"
     },
     "content/handbook/support/license-and-renewals/workflows/customersdot/_index.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/customersdot/_index.md",
@@ -18703,10 +18704,10 @@
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/working-with-ases/global-support-and-ases.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/working-with-ases/global-support-and-ases.md",
-      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
-      "translated_at": "2026-05-09T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "3cb4d065d78dfdc9409fdf8bd1bdebb3644beb4201793760f73f76144232d44b"
+      "input_hash": "10357970a003c97cec8aa95ce678991620c9585b1d91fb4545b2b8e4dd1b89cc"
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/_index.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/_index.md",
@@ -18752,10 +18753,10 @@
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/customer-onboarding.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/customer-onboarding.md",
-      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
-      "translated_at": "2026-05-09T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "07794969fefb47ffad62e8fe64e8b99abff978409c4d0adde07ff76f04b815cf"
+      "input_hash": "42d18781f997e8ffc3918f5159c9e93d287d47c6945acc8eb501a9f2586d5b92"
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/introductory-meeting.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/introductory-meeting.md",
@@ -18892,10 +18893,10 @@
     },
     "content/handbook/solutions-architects/tools-and-resources/trial-guidelines.md": {
       "path": "content/handbook/solutions-architects/tools-and-resources/trial-guidelines.md",
-      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
-      "translated_at": "2026-05-08T17:29:46Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a4cf2ceb7030d711b122d8f1ff972dfddb00cfa111bf75e22005bcf41e0d39ab"
+      "input_hash": "9a7443a06e81a3aa5830314bba543f46c0a45b4f7bd1bc2bf2946aad7055fa60"
     },
     "content/handbook/solutions-architects/tools-and-resources/workshop.md": {
       "path": "content/handbook/solutions-architects/tools-and-resources/workshop.md",
@@ -18997,10 +18998,10 @@
     },
     "content/handbook/solutions-architects/sa-practices/sa-leader-shadow.md": {
       "path": "content/handbook/solutions-architects/sa-practices/sa-leader-shadow.md",
-      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
-      "translated_at": "2026-05-08T18:13:56Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "e1206f2f75b587fcc441fd56ea8d7223c44fb445210cbf20f618dfd95fbf2fd3"
+      "input_hash": "cb1ddae1344df7ac21422a80e1f9395fb4bf720167113d6da92b1972e474fc61"
     },
     "content/handbook/solutions-architects/sa-practices/sa-office-hours.md": {
       "path": "content/handbook/solutions-architects/sa-practices/sa-office-hours.md",
@@ -19551,9 +19552,9 @@
     "content/handbook/security/responding-to-ransomware.md": {
       "path": "content/handbook/security/responding-to-ransomware.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a2f00321f5bea82eb75621017a2cacda25d75c3cf1bb59fbe3fba4200e105386"
+      "input_hash": "5409dae3f8bed8bc6849a052f6d1a9462b15ed02fed1e62ab29f4a247b5421b7"
     },
     "content/handbook/security/root-cause-analysis.md": {
       "path": "content/handbook/security/root-cause-analysis.md",
@@ -22155,9 +22156,9 @@
     "content/handbook/security/identity/counterparts/_index.md": {
       "path": "content/handbook/security/identity/counterparts/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "f8a764a0b4c24a610ea51ac19092c524b38d6f2aca311be63c0301eee1345bd0"
+      "input_hash": "6bb1a6da109dfc3abcd95b3230ad1a4fd6fce4fc711f00f7d514236b74e41c61"
     },
     "content/handbook/security/identity/gitops/_index.md": {
       "path": "content/handbook/security/identity/gitops/_index.md",
@@ -26243,9 +26244,9 @@
     "content/handbook/product/product-processes/dogfooding-for-r-d.md": {
       "path": "content/handbook/product/product-processes/dogfooding-for-r-d.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "399d1b1adf13ba6f18405f69a90e467f41f10ae877134430be2ef0f5702024d8"
+      "input_hash": "d41c82ae4d5c8dc24f31657fc93814d03ff8df0ee2639fbb332b1ab2eb6f52ca"
     },
     "content/handbook/product/product-processes/making-gifs.md": {
       "path": "content/handbook/product/product-processes/making-gifs.md",
@@ -27149,6 +27150,321 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "fc71c53faa384f153779ccaf31bbedbe9b860880522e8606516c4233f8d85cab"
+    },
+    "content/handbook/people-group/general-onboarding/onboarding-buddies.md": {
+      "path": "content/handbook/people-group/general-onboarding/onboarding-buddies.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4d19bbcab83cedfbeef9f3329970235ccb57a8e1eedaf2206ef9e33dfca7f661"
+    },
+    "content/handbook/people-group/general-onboarding/tanewki-tips.md": {
+      "path": "content/handbook/people-group/general-onboarding/tanewki-tips.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b70872218f28cada088330fcc0b9e6261a9c781decf9bad23501d921f49d881a"
+    },
+    "content/handbook/people-group/employment-branding/_index.md": {
+      "path": "content/handbook/people-group/employment-branding/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cee10f89ff04842da2861dfc299cd6b1997cc45ac51646faca8e61e61d8c10e4"
+    },
+    "content/handbook/people-group/employment-branding/content-library.md": {
+      "path": "content/handbook/people-group/employment-branding/content-library.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5f2cb34e09c8eb802b6ba2ad46bf073c6fd2e0b1da08f3de302114fb416127a2"
+    },
+    "content/handbook/people-group/employment-branding/people-communications.md": {
+      "path": "content/handbook/people-group/employment-branding/people-communications.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3cce08f5494e9303f13254d99a75b9739f6d9f7a3230ef73ea6d09bf13b1fb0c"
+    },
+    "content/handbook/marketing/smb-marketing.md": {
+      "path": "content/handbook/marketing/smb-marketing.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2d0c3f2ffc551ee00fa3b1175f3e6a7e6e572755a5d3aa0bc48ea240f2a519ef"
+    },
+    "content/handbook/marketing/team-member-social-media-policy.md": {
+      "path": "content/handbook/marketing/team-member-social-media-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6690ce440ccdcd854fef3ad6ec7968d3c7886dea08d9fe1f37a009d7872e7f08"
+    },
+    "content/handbook/marketing/use-cases.md": {
+      "path": "content/handbook/marketing/use-cases.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "33444c000ce61ca82eedbb57a19dc0a057c11784a40e41a161caacc5e85ed1a5"
+    },
+    "content/handbook/marketing/user-engagement.md": {
+      "path": "content/handbook/marketing/user-engagement.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9f0a0de88c12db2fe7789a5de30d4a2c6e7d3624572c533357d9d629ad250c5f"
+    },
+    "content/handbook/marketing/utm-strategy.md": {
+      "path": "content/handbook/marketing/utm-strategy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f4cbe604d8967592341c231b4ee31966af817a7605745378c0a8f53bc0046396"
+    },
+    "content/handbook/marketing/virtual-events/_index.md": {
+      "path": "content/handbook/marketing/virtual-events/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "de57f29ef6a3124b5ccd2eb0e186b7d5120ce7b724d8061fbd09ed2d6ee0b718"
+    },
+    "content/handbook/marketing/virtual-events/external-virtual-events.md": {
+      "path": "content/handbook/marketing/virtual-events/external-virtual-events.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a0e8d4a28196904a9e94eb5031e8f6436f06e1bde0aca6ba9a7c61d4b25bd1d6"
+    },
+    "content/handbook/marketing/virtual-events/webcasts/_index.md": {
+      "path": "content/handbook/marketing/virtual-events/webcasts/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "14dababba00ec60e544f950823d6b5a48ea0fa48886ebda791c8b7f18f87e179"
+    },
+    "content/handbook/marketing/virtual-events/webcasts/webex.md": {
+      "path": "content/handbook/marketing/virtual-events/webcasts/webex.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "62abb36212194a07cf624d525c037f3814221df440798b26b2fa352ac75c0872"
+    },
+    "content/handbook/marketing/virtual-events/self-service-virtual-events/index.md": {
+      "path": "content/handbook/marketing/virtual-events/self-service-virtual-events/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0ab8a2e580327a33bc4ecfbedf32275e2dd39dabc1d309549c42983724a568f4"
+    },
+    "content/handbook/marketing/the-source/index.md": {
+      "path": "content/handbook/marketing/the-source/index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7a9a3512b271207c42c1c08e8be51d5e256cec40c23c0614f8d4d4ea72f524e3"
+    },
+    "content/handbook/marketing/sales-plays-cicd/_index.md": {
+      "path": "content/handbook/marketing/sales-plays-cicd/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "91968070b3a8aa798b5baa81ab9ad8220a69212ab6df4b525e4d9ba70c949175"
+    },
+    "content/handbook/marketing/sales-plays-cicd/message-house-premium-to-ultimate.md": {
+      "path": "content/handbook/marketing/sales-plays-cicd/message-house-premium-to-ultimate.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "749be2fe286825d5fc1327fb472c8c0f4a738c38dc65ffb51d6eddd8bb04ecf4"
+    },
+    "content/handbook/marketing/sales-plays-cicd/planner-premium-to-ultimate.md": {
+      "path": "content/handbook/marketing/sales-plays-cicd/planner-premium-to-ultimate.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fecafeb8ddbab80ec34bd79644978a6d8fd05c4ded31a4baf50636e39fc317d4"
+    },
+    "content/handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate.md": {
+      "path": "content/handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "df46430e968bca4ff0679e56d9eef015c25f0324e7e101db4b484c483c6c12fb"
+    },
+    "content/handbook/marketing/sales-plays/_index.md": {
+      "path": "content/handbook/marketing/sales-plays/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3b2f5321b4c4973fd2e79ff6dc1b7bc15f3632bf780b424f3ff8e540db055d52"
+    },
+    "content/handbook/marketing/sales-plays/package.md": {
+      "path": "content/handbook/marketing/sales-plays/package.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dad0f335b84d8b64d1970ac5d87d1d328380fce1e013ce1e59b901a5d33e3712"
+    },
+    "content/handbook/marketing/sales-plays/gitops/_index.md": {
+      "path": "content/handbook/marketing/sales-plays/gitops/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8d248c9497c15693b9dc120d9b4b4fd6d1fa83f938f6c271e2c0de50f8b06f4f"
+    },
+    "content/handbook/marketing/sales-plays/gitops/first-order.md": {
+      "path": "content/handbook/marketing/sales-plays/gitops/first-order.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2e96f31ddcba366f5504d7e2746acc1a2b5c8c124ffdda92e9203fb367065d4d"
+    },
+    "content/handbook/marketing/sales-development/_index.md": {
+      "path": "content/handbook/marketing/sales-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "721e5b6da56e84911a8e28252a989110ae9ee1988905530d3cf3404fdf6a42cf"
+    },
+    "content/handbook/marketing/sales-development/tanuki-tech.md": {
+      "path": "content/handbook/marketing/sales-development/tanuki-tech.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "49b1c23193cd6ba867dd599bcb6b8c3ff047fbb9b56f1622cd2e2b582f8cf923"
+    },
+    "content/handbook/marketing/readmes/brian-tabbert.md": {
+      "path": "content/handbook/marketing/readmes/brian-tabbert.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ca411f8087531c82dde03a681166acc3e35a2d0707693394a03d158c064d2d3"
+    },
+    "content/handbook/marketing/readmes/jean-baptiste-larramendy.md": {
+      "path": "content/handbook/marketing/readmes/jean-baptiste-larramendy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f63fb8ce89c77fe5bd7469055444dbc565140f137a984269656741c5b2d0dedc"
+    },
+    "content/handbook/marketing/readmes/laura-duggan.md": {
+      "path": "content/handbook/marketing/readmes/laura-duggan.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3bdf0df48b78494daee1bcb9bce6dbf5fdc2a839c2df40905b649d6bbe2348a7"
+    },
+    "content/handbook/marketing/readmes/lauren-barker.md": {
+      "path": "content/handbook/marketing/readmes/lauren-barker.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e261c406f259d643678dbec5620d873f1b1f22d714503906e19e887e16c29e7e"
+    },
+    "content/handbook/marketing/readmes/lee-tickett.md": {
+      "path": "content/handbook/marketing/readmes/lee-tickett.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f6869243773cae695b0416fc086fa656e88871c4899ec0760950c1bcbab4b35e"
+    },
+    "content/handbook/marketing/readmes/manav-readme.md": {
+      "path": "content/handbook/marketing/readmes/manav-readme.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "57be2ef2192567b12242630e946b7b4f03b658e5f1daf0b52c60867e7b4e13f4"
+    },
+    "content/handbook/marketing/readmes/michael-friedrich.md": {
+      "path": "content/handbook/marketing/readmes/michael-friedrich.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c19b1c38d4a70cfa71361e12dcf1ba844454f2e41fc6de114fcfee45c45b19da"
+    },
+    "content/handbook/marketing/readmes/nathan-dubord.md": {
+      "path": "content/handbook/marketing/readmes/nathan-dubord.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6e0273405de1e58ffc2d7d4fdf2f5c43eca333384857c0b2b1aa9a9e24f61f03"
+    },
+    "content/handbook/marketing/readmes/salina-tran.md": {
+      "path": "content/handbook/marketing/readmes/salina-tran.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9e511de1cce9299ee8c22777c304adaeaf23219506bb3f5b81eec34f2ec621e8"
+    },
+    "content/handbook/enterprise-data/ai/_index.md": {
+      "path": "content/handbook/enterprise-data/ai/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a00963afb240a6eb8c6d93a43bcd160ca7926c3e5e17e4f82ff22c82a10f17ca"
+    },
+    "content/handbook/enterprise-data/ai/agent-setup.md": {
+      "path": "content/handbook/enterprise-data/ai/agent-setup.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7fe4f7a99eb2f0f4b2da4c5ef7f29cfdd87f3a43c08233025b63cfd25c0bd0d8"
+    },
+    "content/handbook/enterprise-data/ai/agent-usage-guide.md": {
+      "path": "content/handbook/enterprise-data/ai/agent-usage-guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "36d13c059ead5a7927a9c41d08cd7e15e5a5f4919d61fba8a54d9677d5547f44"
+    },
+    "content/handbook/enterprise-data/ai/agentic-tool-development.md": {
+      "path": "content/handbook/enterprise-data/ai/agentic-tool-development.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "01c36f59bd6b49c78546840a9399b71282605d93202606bce79fa1ac15e0cb15"
+    },
+    "content/handbook/enterprise-data/ai/ai-vision-and-strategy.md": {
+      "path": "content/handbook/enterprise-data/ai/ai-vision-and-strategy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dbc7fdfb8de13b5684c4da93f100a69bb9be8310c7c433facaf9daadc9b0d030"
+    },
+    "content/handbook/customer-success/governance-question-bank.md": {
+      "path": "content/handbook/customer-success/governance-question-bank.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c0bd1c415cb7c3ba4189b1289c11d4eb9204f478314d5597a07e6ac20cb7b6f7"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization/decisions/009_state_machine.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/009_state_machine.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a665353722dd1756c1ec8ee041170192c7331ae440de79a162f707e867f67540"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization/lifecycle.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/lifecycle.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2455243ea595a63c0e0fbfcae791698dc1a6448d0abe136c892e578e6953c2b1"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/help.md": {
+      "path": "content/handbook/engineering/data-engineering/database-excellence/help.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "72ee2d745a3023aaeb91f161281eb1ec21c40f6a02b82dfbdf3ed30e099d325d"
+    },
+    "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/communication.md": {
+      "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/communication.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2f35d94bfbea0a5659f026b0e9c7f885420cb66b4efb776c95bf972bc1565f87"
     }
   }
 }

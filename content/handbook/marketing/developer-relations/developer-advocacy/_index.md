@@ -2,8 +2,8 @@
 title: "デベロッパーアドボカシー"
 description: "デベロッパーアドボケイトは、コミュニティに関連するエンジニアリングトピックについて深く有意義な対話を通じて、GitLab の技術的なブランドを構築します。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T12:00:00Z"
 translator: claude
 stale: false
 ---
@@ -130,7 +130,7 @@ stale: false
 私たちのチームは、GitLab の顧客や広範な GitLab コミュニティと定期的に交流します。
 デベロッパーアドボケイトチームは、以下のプラットフォームでの質問と戦略の DRI です:
 
-<!-- This partially duplicates https://handbook.gitlab.com/handbook/marketing/developer-relations/workflows-tools/#tool-stack-overview - when making updates, ensure to keep it in sync. -->
+<!-- This partially duplicates https://handbook.gitlab.com/handbook/marketing/developer-relations/workflows-tools/ - when making updates, ensure to keep it in sync. -->
 
 | プラットフォーム | 説明 | ワークフロー |
 |-------------|-------------|-----------|
@@ -179,7 +179,7 @@ stale: false
 
 GitLab チームメンバーは、いつでも Slack の [#dev-advocacy-team](https://app.slack.com/client/T02592416/CMELFQS4B) チャンネルで私たちに連絡できます。ここで、お互いや広範なチームと更新情報、アイデア、考えを共有しています。
 
-[developer-advocacy-updates](https://gitlab.slack.com/archives/C04R2RME4F7) は、メインチャンネルでノイズを発生させない方が良いコンテンツの共有やその他の更新に使用しています。多くの更新は [Zapier ワークフロー](/handbook/marketing/developer-relations/workflows-tools/zapier/) を使用して自動化されています。
+[#developer-advocacy-updates](https://gitlab.slack.com/archives/C04R2RME4F7) は、メインチャンネルでノイズを発生させない方が良いコンテンツの共有やその他の更新に使用しています。多くの更新は [Workato ワークフロー](/handbook/marketing/developer-relations/workflows-tools/workato/) を使用して自動化されています
 
 ### チームミーティング
 

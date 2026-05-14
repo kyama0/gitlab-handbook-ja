@@ -1,8 +1,8 @@
 ---
 title: "フォーラムのワークフロー"
 upstream_path: /handbook/marketing/developer-relations/workflows-tools/forum/
-upstream_sha: 6b2970dac4d9078a5a79c285a6ee08817ecbd954
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T12:00:00Z"
 translator: claude
 stale: false
 ---
@@ -435,7 +435,7 @@ Google Analytics は、[`Basic Setup` セクション](https://forum.gitlab.com/
 
 #### API
 
-[GitLab Blog Bot](/handbook/marketing/developer-relations/workflows-tools/zapier/#gitlab-blog-forum-bot) などのインテグレーションで使用されます。
+[GitLab Blog Bot](/handbook/marketing/developer-relations/workflows-tools/workato/#gitlab-blog-forum-bot) などのインテグレーションで使用されます。
 
 #### プラグイン
 

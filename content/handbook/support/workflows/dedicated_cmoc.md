@@ -3,8 +3,8 @@ title: GitLab Dedicated CMOC 業務の遂行方法
 category: On-call
 description: "サポートエンジニアリングにおける GitLab Dedicated CMOC ローテーションの役割と責任の説明"
 upstream_path: /handbook/support/workflows/dedicated_cmoc/
-upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
-translated_at: "2026-05-08T20:30:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -71,7 +71,7 @@ Dedicated SRE から、必要なコミュニケーションのタイプを理解
 #### Switchboard を使用したインシデントステータス通知の作成 {#creating-an-incident-status-notification-using-switchboard}
 
 1. [Switchboard にログイン](https://console.gitlab-dedicated.com/v2/login/) します。
-1. 右上のドロップダウンリストから、**Customer notifications** を選択します。
+1. [**Customer notifications**](https://console.gitlab-dedicated.com/customer_notifications) ページに直接移動します。これはホームページの左サイドバーにあります。
 1. **+ New notification** を選択します。
 1. 影響を受けるテナントを選択します。
 1. インシデントに関連するテンプレートを選択します:
@@ -110,6 +110,11 @@ Dedicated SRE から、必要なコミュニケーションのタイプを理解
 [新しいインシデントステータス通知を作成する](#creating-an-incident-status-notification-using-switchboard) ことで、顧客にインシデントステータスを更新します。最後の更新が変わっていない場合は、同じ情報を使用してください。
 
 **60 分ごと** に更新を提供することを確実にしてください。または、インシデントが新しいステージ (Investigation Start → Investigation Update → Mitigation in Progress → Resolved) に進んだときのいずれか早い方です。
+
+#### Switchboard が利用できないときに顧客の連絡先詳細にアクセスする方法
+
+1. 毎日 UTC 6 時に、顧客の連絡先詳細が Switchboard からエクスポートされます
+2. データはこの [Switchboard customer contact details export issue](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/work_items/12182) でアクセスできます
 
 #### インシデント中に顧客が作成した Zendesk チケットの処理
 
