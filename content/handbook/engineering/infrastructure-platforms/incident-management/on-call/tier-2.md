@@ -1,44 +1,44 @@
 ---
 title: オンコールプロセスとポリシー - Tier 2
 upstream_path: /handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
 
-Tier 2 ローテーションとは、人間がチームメンバーをサポートのためにページングするかどうかを判断して対応するオンコールローテーションを指します。
+Tier 2 ローテーションは、サポートのためにチームメンバーをページするかを人間が判断するオンコールローテーションを指します。
 
-## スペシャリストのオンコール（Tier 2 SME）
+## Subject Matter Experts オンコール (Tier 2 SME)
 
-Tier 2 SME オンコールプログラムは、専門的なサポートの第2層を設けることでインシデント対応を強化します。スペシャリスト（SME）がドメイン固有の知識を提供し、複雑なインシデントをより迅速に解決し、MTTR（平均復旧時間）を改善し、サービス信頼性に対するオーナーシップと説明責任を高めます。
+Tier-2 SME On-Call プログラムは、専門的なサポートの第二層を確立することで、インシデント対応を強化します。Subject Matter Experts (SME) は、複雑なインシデントをより速く解決し、MTTR (Mean Time To Recover) を改善し、サービスの信頼性に対するオーナーシップと説明責任を高めるためのドメイン固有の知識を提供します。
 
-このプログラムは 2025 年に GitLab に導入され、専門的なドメイン知識がインシデント対応を改善する領域に対して 24x7 カバレッジの提供を目標としています。実際には、多くのチームがこのレベルのカバレッジを提供できる体制を整えていません。そのため、これらのギャップを把握しチームがこのカバレッジレベルを達成できるよう支援方法を学ぶためのパイロットプログラムから開始しました。
+このプログラムは、専門的なドメイン知識がインシデント対応を改善する領域に対して 24x7 のカバレッジを提供することを目標として、2025 年に GitLab で導入されました。実際には、多くのチームはこのレベルのカバレッジを提供できるように構成されていません。そのため、これらのギャップを理解し、このレベルのカバレッジを達成するためにこれらのチームを支援する方法を学ぶために、まず Pilot Program を始めました。
 
-## Tier 2 へのエスカレーション基準
+## Tier 2 にエスカレーションするタイミング
 
 以下の場合に Tier 2 チームにエスカレーションします:
 
-- インシデントが特定サービスの深いドメイン専門知識を必要とする場合
-- EOC が問題領域を特定したが、専門的なサポートが必要な場合
-- パフォーマンス問題または障害が特定のサブシステムに局在している場合
+- インシデントが特定のサービスに対する深いドメイン専門知識を必要とする
+- EOC が問題領域を特定したが、専門的なアシスタンスが必要
+- パフォーマンスの問題や停止が特定のサブシステムに限定されている
 
 ## エスカレーションの方法
 
-Tier 2 チームにページングするには:
+Tier 2 チームをページするには:
 
-1. Slack で `/inc escalate` コマンドを使用するか、インシデント UI の右サイドバーのエスカレートボタンをクリックします
-2. 「Oncall team」ドロップダウンメニューから適切なチームを選択します
-3. 問題と必要なサポートを明確に説明するメッセージを提供します
+1. Slack で `/inc escalate` コマンドを使うか、インシデント UI の右サイドバーでエスカレーションをクリックします
+2. "Oncall team" ドロップダウンメニューから適切なチームを選択します
+3. 問題と必要な支援を説明する明確なメッセージを提供します
 
 ## アクティブな Tier 2 ローテーション
 
-現在アクティブな Tier 2 ローテーションの一覧を以下に示します。
+現在アクティブな Tier 2 ローテーションのサマリーを以下に示します。
 
 ### Gitaly
 
 - ローテーションリーダー: John Cai
-- カバレッジ: 24x5 部分的（2時間のギャップあり）
+- カバレッジ: 24x5 一部 (2 時間のギャップ)
 - スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01JJWAE08T9WDE8T6D4VZPBNXE)
 - エスカレーション履歴リンク: [escalations](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01JJWB07RXAG02RXYR4QR47J9E)
 - [詳細情報](/handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/#on-call-rotation)
@@ -47,34 +47,34 @@ Tier 2 チームにページングするには:
 
 - Git リポジトリのストレージ、アクセス、レプリケーションの問題
 - Gitaly サービスのパフォーマンスとノード障害
-- リポジトリの破損やデータ整合性の問題
-- Git 操作（clone, fetch, push）の失敗
+- リポジトリの破損やデータ完全性に関する懸念
+- Git 操作 (clone、fetch、push) の失敗
 
-**エスカレーション基準:**
+**エスカレーションのタイミング:**
 
-- Git 操作での高いエラーレート
-- 複数のプロジェクトに影響するリポジトリアクセス障害
-- Gitaly ノードまたはクラスターの問題
+- Git 操作の高いエラー率
+- 複数のプロジェクトに影響するリポジトリアクセスの失敗
+- Gitaly ノードまたはクラスタの問題
 
 ---
 
-### データベース運用（DBO）
+### Database Operations (DBO)
 
 **専門領域:**
 
 - PostgreSQL のパフォーマンス、レプリケーション、フェイルオーバー
-- クエリパフォーマンスの問題、デッドロック、コネクションプールの問題
-- デプロイをブロックするデータベースマイグレーション
-- PgBouncer とデータベースキャパシティの問題
+- クエリのパフォーマンスの問題、デッドロック、コネクションプールの問題
+- デプロイメントをブロックするデータベースマイグレーション
+- PgBouncer とデータベースのキャパシティの問題
 
-**エスカレーション基準:**
+**エスカレーションのタイミング:**
 
-- データベースパフォーマンスの低下またはレプリケーションラグ
-- デプロイをブロックするマイグレーションの失敗
+- データベースのパフォーマンス劣化またはレプリケーション遅延
+- デプロイメントをブロックする失敗したマイグレーション
 - コネクションプールの飽和
-- アプリケーションパフォーマンスに影響する遅いクエリ
+- アプリケーションパフォーマンスに影響を与える遅いクエリ
 
-**カバレッジ:** ベストエフォート - 24x5（月曜〜金曜）
+**カバレッジ:** ベストエフォート - 24x5 (月曜日〜金曜日)
 
 ---
 
@@ -88,270 +88,312 @@ Tier 2 チームにページングするには:
 **専門領域:**
 
 - AI Gateway と Duo 機能の可用性
-- モデルサービングインフラと AI 機能のパフォーマンス
-- トークン使用量、レート制限、AI プロバイダー統合
+- モデルサービングインフラストラクチャと AI 機能のパフォーマンス
+- トークン使用、レート制限、AI プロバイダー統合
 
-**エスカレーション基準:**
+**エスカレーションのタイミング:**
 
-- AI 機能が利用不可または低下している場合
-- AI サービスからの高いエラーレート
-- モデルサービングまたは AI Gateway の接続問題
+- AI 機能が利用できないか劣化している
+- AI サービスからの高いエラー率
+- モデルサービングまたは AI Gateway 接続の問題
 
 ---
 
 ### DevOps
 
-- ローテーションリーダー: [オンコール担当者を確認](https://app.incident.io/gitlab/on-call/schedules/01K611ZT9YX2PSA8WAMEP6A66G)（フォールバック: Michelle Gill）
+- ローテーションリーダー: [現在のオンコールを確認](https://app.incident.io/gitlab/on-call/schedules/01K611ZT9YX2PSA8WAMEP6A66G) (代替: Michelle Gill)
 - カバレッジ: 24x5
 - スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01K611MG8T5CW874Q5JZER3H0Z)
 - エスカレーション履歴リンク: [escalation](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01K6P0Q3D6B7AYV0JT41DP0VME)
-- ローテーション交代用 Slack チャンネル: [`#tier-2-devops-rotation-swaps`](https://gitlab.enterprise.slack.com/archives/C09LLF79AK0)
-- 無応答時のエスカレーション: [`#tier-2-devops-rotation-swaps`](https://gitlab.enterprise.slack.com/archives/C09LLF79AK0) で応答しなかったオンコールチームメンバーの EM または SEM/Director を `@mention` して追加サポートを要請します。リーダーシップが応答しない場合は、[`#tier-2-devops-rotation-swaps`](https://gitlab.enterprise.slack.com/archives/C09LLF79AK0) で `@here + msg` を使用して他の利用可能なエンジニアに協力を求めます。
+- ローテーション交換用 Slack チャンネル: [`#tier-2-devops-rotation-swaps`](https://gitlab.enterprise.slack.com/archives/C09LLF79AK0)
+- 無応答時のエスカレーション: 応答しなかったオンコールチームメンバーの EM または SEM/Director を `@mention` し、追加サポートを依頼するために Slack チャンネル [`#tier-2-devops-rotation-swaps`](https://gitlab.enterprise.slack.com/archives/C09LLF79AK0) を使います。リーダーシップが応答しない場合は、別の利用可能なエンジニアの支援を求めるために [`#tier-2-devops-rotation-swaps`](https://gitlab.enterprise.slack.com/archives/C09LLF79AK0) で `@here + msg` を使います。
 
-DevOps は Rails モノリスの一部である機能グループの名称です。
+DevOps は、Rails モノリスの一部である機能群に付けられた名前です。
 以下のいずれかの機能でサポートが必要な場合に連絡してください。
 
-**DevOps Tier 2 オンコールに参加しているチーム:**
+**DevOps Tier 2 On Call に代表されるチーム:**
 
-CI Platform, Code Review, Container Registry, Environments, Import, Knowledge, Package Registry, Pipeline Authoring, Pipeline Execution, Product Planning, Project Management, Source Code
+CI Platform、Code Review、Container Registry、Environments、Import、Knowledge、Package Registry、Pipeline Authoring、Pipeline Execution、Product Planning、Project Management、Source Code
 
-**DevOps Tier 2 オンコールがカバーするカテゴリ/サービス:**
+**DevOps Tier 2 oncall に代表されるカテゴリ／サービス:**
 
-Fleet Visibility, Design Management, Environments, Deployments, Release Management, Importers, Migration, Direct Transfer, Package Registry, Virtual Registry, Dependency Proxy for Containers, Product Planning, Portfolio Management, Requirements Management, Project Management, Issue Tracking, Work Items, Boards, Workspaces, Source Code Management, Repository Management, Protected Branches, Workspaces Rails code, Container Registry Rails Code
+Fleet Visibility、Design Management、Environments、Deployments、Release Management、Importers、Migration、Direct Transfer、Package Registry、Virtual Registry、Dependency Proxy for Containers、Product Planning、Portfolio Management、Requirements Management、Project Management、Issue Tracking、Work Items、Boards、Workspaces、Source Code Management、Repository Management、Protected Branches、Workspaces Rails code、Container Registry Rails Code
 
-**エスカレーション基準:**
+**エスカレーションのタイミング:**
 
-一般的な Rails の問題ではエスカレーションしないでください。
+一般的な Rails の懸念事項についてエスカレーションしないでください。
 
-- これらの機能のいずれかに原因があるアプリケーションレベルのエラー（500系、422系）
-- このグループが責任を持つワーカーでの Sidekiq キューのバックログや処理失敗
-- このグループに起因する Rails プロセスのメモリ問題
-- このグループの機能に関連する障害が原因でロールバックが必要なアプリケーションデプロイの失敗
+- これらの機能の内部に原因があるアプリケーションレベルのエラー (500 系、422 系)。
+- このグループの責任にあたるワーカーで、Sidekiq キューのバックログまたは処理失敗。
+- このグループから発生する Rails プロセスのメモリ問題。
+- このグループの機能に関連するロールバックを必要とするアプリケーションデプロイメントの失敗。
 
-*注意: APAC カバレッジは APAC 時間帯に IMOC ローテーションを利用します*
+*注: APAC カバレッジは APAC 時間中に IMOC ローテーションを利用します*
 
 ---
 
 ### Runners Platform
 
 - ローテーションリーダー: Kam Kyrala
-- カバレッジ: ベストエフォート - 24x5（月曜〜金曜）
+- カバレッジ: ベストエフォート - 24x5 (月曜日〜金曜日)
 - スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01K7HNBCW9EN2MMS4SHAJ5B2WF)
 - エスカレーション履歴リンク: [escalations](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01K7HSQ433CMD61V4RNS70BJ47)
-- 主要 Slack チャンネル: #g_runners_platform
+- 主な Slack チャンネル: #g_runners_platform
 
 **専門領域:**
 
-- ランナープラットフォームインフラと SaaS ランナーマネージャー
-- ランナーに関連するジョブ実行の問題（プロビジョニング、起動、終了）
-- ランナー登録、キャパシティ、スケジューリングの問題
-- ランナーマネージャーサービスのパフォーマンスと接続性
+- Runner プラットフォームインフラストラクチャと SaaS runner マネージャー
+- Runner に関連するジョブ実行の問題 (プロビジョニング、起動、ティアダウン)
+- Runner の登録、キャパシティ、スケジューリングの懸念
+- Runner マネージャーサービスのパフォーマンスと接続性
 
-**エスカレーション基準:**
+**エスカレーションのタイミング:**
 
-- ランナーまたはランナーマネージャーに起因するジョブ実行に影響するインシデント
-- ランナープロビジョニングの広範な失敗、ハング、予期しないタイムアウト
-- 顧客に影響するランナーマネージャーのキャパシティ不足または飽和
-- ランナープラットフォームの問題が原因と思われる繰り返しのジョブ失敗
+- Runner または runner マネージャーに起因するジョブ実行に影響を与えるインシデント
+- 広範囲な runner プロビジョニング失敗、ハング、または予期しないタイムアウト
+- 顧客に影響する runner マネージャーのキャパシティ不足または飽和
+- Runner プラットフォームの問題が原因と疑われるジョブの繰り返し失敗
 
 ---
 
 ### Fulfillment
 
 - ローテーションリーダー: James Lopez
-- カバレッジ: 24x5（月曜〜金曜、営業時間内）
+- カバレッジ: 24x5 (月曜日〜金曜日、営業時間)
 - スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01K99JAT82M1D5HB1MVXX79WHR)
 - エスカレーション履歴リンク: [escalations](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01K99K4HEXYB7Z7P21BTCY44BF)
-- 主要 Slack チャンネル: #s_fulfillment_engineering
+- 主な Slack チャンネル: #s_fulfillment_engineering
 - [詳細情報](/handbook/engineering/development/fulfillment/#escalation-process-for-incidents-or-outages)
 
 **専門領域:**
 
-- CustomersDot アプリケーションと購入インフラ
-- サブスクリプション管理、請求、プロビジョニングシステム
-- 使用量課金フローと従量制料金
-- ライセンス生成と検証
+- CustomersDot アプリケーションと購入インフラストラクチャ
+- サブスクリプション管理、課金、プロビジョニングシステム
+- 使用量課金フローと従量課金
+- ライセンスの生成と検証
 - Zuora 統合と注文処理
-- カスタマーポータルとセルフサービスワークフロー
+- 顧客ポータルとセルフサービスワークフロー
 
-**エスカレーション基準:**
+**エスカレーションのタイミング:**
 
-- 購入に影響する CustomersDot の障害または重大なエラー
-- サブスクリプションプロビジョニングまたはライセンス生成の失敗
-- 顧客に影響する請求システムの統合問題
-- 購入またはサブスクリプションワークフローでの高いエラーレート
+- 購入に影響を与える CustomersDot の停止または重大なエラー
+- サブスクリプションのプロビジョニングまたはライセンス生成の失敗
+- 顧客に影響を与える課金システム統合の問題
+- 購入またはサブスクリプションワークフローでの高いエラー率
 
 ---
 
 ### Authn/Authz/Pipeline Security
 
 - ローテーションリーダー: Adil Farrukh
-- カバレッジ: 24x5（月曜〜金曜、APAC はベストエフォート）
+- カバレッジ: 24x5 (月曜日〜金曜日、APAC はベストエフォート)
 - スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01KBH1JNFC4M00T7KDJ4BCFRDD)
 - エスカレーション履歴リンク: [escalations](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01KBH1JNFC4M00T7KDJ4BCFRDD)
-- 主要 Slack チャンネル: ##s_software-supply-chain-security（または #g_sscs_authentication, #g_sscs_authorization, #g_sscs_pipeline_security）
+- 主な Slack チャンネル: ##s_software-supply-chain-security (または #g_sscs_authentication、#g_sscs_authorization、#g_sscs_pipeline_security)
 - [詳細情報](/handbook/engineering/development/sec/software-supply-chain-security/oncall/)
 
 **専門領域:**
 
-- 認証（SAML, LDAP, OAuth ログイン、PAT/PrAT/GrAT/CI_JOB_TOKEN などのアクセストークン）
-- 認証（エンタープライズユーザー、サービスアカウント、Cloud Connector 認証）
-- 認可（カスタムロール、CI_JOB_TOKEN/PAT の詳細な権限、ProjectAuthorizationWorker）
-- パイプラインセキュリティ（ID トークンを使用した OIDC、シークレットマネージャー、外部シークレット統合、ビルド証明と Cosign 統合）
+- 認証 (SAML、LDAP、OAuth ログイン、PAT/PrAT/GrATs/CI_JOB_TOKENS などのアクセストークン)
+- 認証 (Enterprise users、サービスアカウント、Cloud Connector 認証)
+- 認可 (カスタムロール、CI_JOB_TOKENS/PAT 上の粒度の細かい権限、ProjectAuthorizationWorker)
+- Pipeline Security (ID トークンによる OIDC、Secrets manager、External Secrets 統合、Build attestation と Cosign 統合)
 
-**エスカレーション基準:**
+**エスカレーションのタイミング:**
 
-- GitLab.com へのログインまたは認証に影響するインシデント
-- 権限更新ワーカーの Sidekiq 過負荷による深刻な障害を引き起こすインシデント
-- エンジニアリングチームによる即時対応が必要な S2 以上の SIRT 問題
-- GitLab.com の可用性を低下させているシークレットマネージャー、詳細な権限、または認証サービスへの最近の機能追加
+- GitLab.com へのログインまたは認証に影響を与えるインシデント
+- 権限更新ワーカー上の sidekiq の過負荷による深刻な中断を引き起こすインシデント
+- 問題を修復するためにエンジニアリングチームから即時のアクションを必要とする S2 以上の SIRT Issue。
+- GitLab.com の可用性を劣化させている secrets manager、粒度の細かい権限、または認証サービスの最近の機能追加
 
 ---
 
 ### Build
 
 - ローテーションリーダー: Denis Afonso
-- カバレッジ: 24x5 部分的（1.5時間のギャップあり）
+- カバレッジ: 24x5 一部 (1.5 時間のギャップ)
 - スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01KJ89WQ5WSB6653WHWJKT1X7T)
 - エスカレーション履歴リンク: [escalations](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01KMFRWXNERC7DZTM92GX81WAK)
 - Slack チャンネル: #g_build
-- [ランブック](https://runbooks.gitlab.com/pulp/)
+- [Runbooks](https://runbooks.gitlab.com/pulp/)
 
 **専門領域:**
 
 - Pulp のパフォーマンスと可用性
 - Pulp リポジトリとパッケージ管理
-- Pulp の運用とメンテナンス
+- Pulp の運用と保守
 
-**エスカレーション基準:**
+**エスカレーションのタイミング:**
 
-- Pulp が利用不可またはパフォーマンスが低下している場合
-- Pulp での高いエラーレート
-- 顧客が Pulp からパッケージをダウンロードできない場合
+- Pulp が利用できないかパフォーマンスが劣化している
+- Pulp で高いエラー率
+- 顧客が Pulp からパッケージをダウンロードする際の問題
 
 ---
 
-### EOC テクニカルエスカレーション
+### Cells Routing and Topology
 
-- ローテーションリーダー: TBD（暫定: Steve Abrams）
+- ローテーションリーダー: David Leach
+- カバレッジ: ベストエフォート
+- スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01KC50DS4EP0C6WV3SCJSPRE07)
+- エスカレーション履歴リンク: TBD
+- 主な Slack チャンネル: [`#g_cells_infrastructure`](https://gitlab.enterprise.slack.com/archives/g_cells_infrastructure)
+
+**専門領域:**
+
+- HTTP Router サービスの可用性とパフォーマンス
+- Topology Service の可用性とパフォーマンス
+
+**エスカレーションのタイミング:**
+
+- HTTP Router サービスに影響を与えるインシデント
+- Topology Service に影響を与えるインシデント
+
+---
+
+### EOC Technical Escalation
+
+- ローテーションリーダー: TBD (暫定 Steve Abrams)
 - カバレッジ: ベストエフォート - 24x7
 - スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01KPRF9XG0HAHM307QS2ZBWC4P?startTime=2026-04-20T00%3A00%3A00&timePeriodOption=two_weeks&calendarToggle=timeline)
 - エスカレーション履歴リンク: [escalations](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01KPRFDZVMB4DCFS0HV9228D33)
 
-このローテーションはベストエフォートで薄いカバレッジのため、特に APAC 時間帯にはページへの応答が常にできるとは限りません。また、IMOC へのエスカレーションまたは [#infrastructure_platforms](https://gitlab.enterprise.slack.com/archives/C02D1HQRTKQ) への連絡によって追加の技術的サポートを求めることもできます。
+このローテーションはカバレッジが薄いベストエフォートで、特に APAC 時間中はページに応答できない場合があります。IMOC にエスカレーションするか、[#infrastructure_platforms](https://gitlab.enterprise.slack.com/archives/C02D1HQRTKQ) で連絡することで、追加の技術サポートを求めることもできます。
 
 **専門領域:**
 
-- GitLab プラットフォームにおけるインフラの深い技術的理解
+- GitLab プラットフォームのインフラストラクチャに関する深い技術的理解
 
-**エスカレーション基準:**
+**エスカレーションのタイミング:**
 
-経験豊富な技術的判断が主な必要事項である場合にエスカレーションします。助けを求めることを恐れる必要はありませんが、エスカレーションは経験とシニア性が重要となる状況に絞るべきです。例えば:
+経験豊富な技術的判断が主に必要な場合にエスカレーションしてください。ヘルプを求めることを恐れるべきではありませんが、エスカレーションは経験とシニアリティが違いを生む状況に予約すべきです。例:
 
-- 標準的でない技術的な修復方法について、管理職の承認が必要かどうかに関わらず、実行前に経験ある目で確認することが有益な場合。特に一方通行の決断（取り消しができない決断）が顕著な例です。
-- 分析が標準的な手法で行き詰まり、オンコールの同僚との連携後もさらなるアイデアや経験が必要な場合。
-- S1 規模の大規模障害で、全てが燃え上がり、全員がパニックに陥っており、冷静な経験豊富な技術リーダーが必要な場合。
+- 標準的でない技術的修復が実行前に経験豊富な目を必要とする場合（管理の承認が別途必要かどうかにかかわらず）。一方通行の決定が特に注目に値する例です。
+- 分析が標準的な手法で進まず、オンコールピアと協力した後でも、問題をデバッグするためにもっとアイデアやもっと経験が必要です。
+- 大規模な S1、すべてが燃え、皆がパニックになり、冷静で経験豊富な技術的リーダーが必要です。
 
 ---
 
-### Dev エスカレーション
+### Security Risk Management Stage
 
-- このオンコールプロセスは、Infrastructure チームによってエスカレーションされた GitLab.com の運用上の問題を対象としています。
-- 開発チームは現在、スケジューリングとページングに PagerDuty または incident.io を使用していません。
-- 平日のスケジュールは維持されておらず、**pagerslack** アプリが利用可能なエンジニアに協力を求めます。
-- 週末のオンコールスケジュールは、この[スケジュールシート](https://docs.google.com/spreadsheets/d/10uI2GzqSvITdxC5djBo3RN34p8zFfxNASVnFlSh8faU/edit#gid=0)で管理されています。
-- 問題は Infrastructure チームによって Slack チャンネル [#dev-escalation](https://gitlab.slack.com/messages/CLKLMSUR4) でエスカレーションされます。
-- 平日は、pagerslack アプリが 2 分ごとに新しいエンジニアに通知し、6 回試みても応答がない場合、バックエンドエンジニアがいる全エンジニアリングマネージャーに通知して担当者を探します。
-- 週末の最初の応答 SLO は 15 分です。最初の 5 分以内に応答がない場合、要請チームはスケジュールシートに記載されているエンジニアの電話番号に電話します。
-- 開発エンジニアは 4 時間シフトで対応します。
-- エンジニアリングマネージャーはスケジューリングコーディネーターとして月単位でシフトを担当します。
-- GitLab.com 運用上の問題をエスカレーションする際は、[プロセスの説明とオンコールワークフロー](/handbook/engineering/workflow/development-processes/infra-dev-escalation/process/)を確認してください。
-- エスカレーションプロセスの[一般情報](/handbook/engineering/workflow/development-processes/infra-dev-escalation/)の詳細も確認してください。
+- ローテーションリーダー: AJ Biton
+- カバレッジ: 24x5 (月曜日〜金曜日)、カバレッジギャップ 23:00-07:00 UTC、イスラエル従業員のため、時折金曜日に低カバレッジ
+- スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01KFB5JGPAR7JJ5CXG2BCBGPMF)
+- エスカレーション履歴リンク: [escalations](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01KFJX8MWG237NPR6HCAH38GJP)
+- 主な Slack チャンネル: #s_srm
 
-## カバレッジの期待値
+**専門領域:**
 
-- **24x5 カバレッジ**: 月曜 00:00 UTC〜金曜 23:59 UTC
-- **応答 SLA**: カバレッジ時間内に 15 分
-- **週末/祝日カバレッジ**: 重大なエスカレーションは IMOC と Infrastructure リーダーシップが担当
+- Vulnerability Management ユーザー向け機能セット (Vulnerability Report、Dependency List、Security Dashboard)
+- マージリクエストフロー内のセキュリティウィジェット
+- セキュリティポリシー (Scan Execution Policies)
+- セキュリティスキャン取り込みパイプライン
 
-## パイロットプログラム
+**エスカレーションのタイミング:**
 
-パイロットプログラムは通常の勤務時間を 24x5 カバレッジでカバーすることを目指しています。S1 および S2 インシデントの 90% が通常の勤務時間中に発生するため、パイロットは完全カバレッジに向けた最初のイテレーションとして許容可能と判断されました。
+- 脆弱性管理ページのいずれかの可用性に影響を与えるインシデント
+- 問題を修復するためにエンジニアリングチームから即時のアクションを必要とする S2 以上の SIRT Issue。
 
-このプログラムにおける通常の勤務時間とは以下を意味します:
+**カバレッジ:** 24x5 (月曜日〜金曜日、07:00-23:00 UTC)
 
-1. *できる限り通常の勤務時間に近い 8 時間*
-2. *祝日または週末ではない*
+### Dev Escalation
 
-メインのオンコールページに記載されているように、ローテーションリーダーはニーズに合った 8 時間サイクルを選択できます。推奨（UTC）は:
+- このオンコールプロセスは、Infrastructure チームによってエスカレーションされる GitLab.com の運用問題のために設計されています。
+- 開発チームは現在、スケジューリングおよびページングに PagerDuty または incident.io を使用していません。
+- 平日のスケジュールは維持されておらず、**pagerslack** アプリが対応可能なエンジニアに支援を求める ping を送ります。
+- 週末オンコールスケジュールは、この [スケジュールシート](https://docs.google.com/spreadsheets/d/10uI2GzqSvITdxC5djBo3RN34p8zFfxNASVnFlSh8faU/edit#gid=0) で維持されています。
+- Issue は、Slack チャンネル [#dev-escalation](https://gitlab.slack.com/messages/CLKLMSUR4) で Infrastructure チームによってエスカレーションされます。
+- 平日は、pagerslack アプリが 2 分ごとに新しいエンジニアに ping を送り、6 回の試行後に誰も応答しない場合は、誰かを見つけるためにバックエンドエンジニアを持つすべてのエンジニアリングマネージャーに ping を送ります。
+- 週末は、初回応答 SLO は 15 分です。最初の 5 分以内に応答がない場合、リクエストするチームはスケジュールシート上のエンジニアの電話番号に電話します。
+- 開発エンジニアは 4 時間のシフトを行います。
+- エンジニアリングマネージャーは、スケジューリングコーディネーターとして月単位のシフトを行います。
+- GitLab.com の運用問題をエスカレーションする際は、[プロセスの説明とオンコールワークフロー](/handbook/engineering/workflow/development-processes/infra-dev-escalation/process/) を確認してください。
+- エスカレーションプロセスの [一般的な情報](/handbook/engineering/workflow/development-processes/infra-dev-escalation/) について、より詳細を確認してください。
+
+## カバレッジの期待
+
+- **24x5 カバレッジ**: 月曜日 00:00 UTC から金曜日 23:59 UTC まで
+- **応答 SLA**: カバレッジ時間中 15 分
+- **週末／祝日のカバレッジ**: 重要なエスカレーションは IMOC と Infrastructure Leadership に送られます
+
+## Pilot プログラム
+
+Pilot プログラムは、24x5 カバレッジで通常の労働時間をカバーすることを目指します。S1 および S2 インシデントの 90% が通常の労働時間中に発生するため、Pilot はフルカバレッジに向けた最初の許容できるイテレーションとして見なされました。
+
+このプログラムの目的において、通常の労働時間とは:
+
+1. *通常働く 8 時間にできるだけ近い*
+2. *祝日や週末ではない*
+
+メインのオンコールページに記載されているように、ローテーションリーダーは自分のニーズに合った 8 時間サイクルを選択できます。推奨は (UTC):
 
 1. APAC 23:00 - 07:00
 2. EMEA 07:00 - 15:00
 3. AMER 15:00 - 23:00
 
-これらの時間に自然に合わないチームメンバーがいる場合は、この状況をどのように管理するかについてはローテーションリーダーの裁量に任されています。カバレッジを提供することと、チームメンバーが意味ある形でオンコールに参加できるようにすることが重要です。柔軟性が必要な状況は常にあり、この柔軟性は双方向です。
+これらの時間に自然に合致しないチームメンバーがいる場合、この状況をどう管理するかはローテーションリーダーの裁量に任されます。カバレッジを提供することと、チームメンバーが意味のある方法でオンコールに貢献できるようにすることが重要です。柔軟性が必要な状況は常にあり、この柔軟性は双方向に機能します。
 
 ### 祝日
 
-ローテーションリーダーがローテーション内の全チームメンバーの祝日を把握することは非常に難しいです。祝日にオンコールが予定されている場合、カバレッジを見つけることはチームメンバー自身の責任です。
+ローテーションリーダーが、自分のローテーションのすべてのチームメンバーの祝日を知るのは非常に困難です。祝日にオンコールがスケジュールされている場合、カバーを見つけるのはチームメンバーの責任です。
 
-祝日に勤務することを希望するチームメンバーは、[祝日ポリシー](/handbook/people-group/time-off-and-absence/time-off-types/#overview-1)に従って祝日を別の日に振り替えることができます。これは任意の行動です。
+チームメンバーが祝日に働きたい場合、[Public Holiday Policy](/handbook/people-group/time-off-and-absence/time-off-types/#overview-1) に従って祝日を別の日に振り替えることができます。これは自発的な行動です。
 
 例外:
 
-1. オランダ - チームメンバーが割り当てられたシフトを担当できない場合、少なくとも 2 営業日前にローテーションリーダーに通知する必要があり、カバレッジを見つける責任はチームメンバーではなくローテーションリーダーにあります（Works Council との合意による）。
+1. オランダ - チームメンバーが割り当てられたシフトを引き受けられない場合、少なくとも 2 営業日前にローテーションリーダーに通知する必要があり、カバーを見つける責任はローテーションリーダー (チームメンバーではない) にあります。(Works Council と合意済み)。
 
-## Tier 2 ローテーションを設ける必要があるかどうかの判断方法
+## 特定の Subject Matter Experts のセットが Tier 2 ローテーションを形成する必要があるかを判断する方法
 
-1. コンポーネントオーナーモデルを通じて追加された新しい機能やサービスは、少なくとも最初の 6 ヶ月間は 24x5 Tier 2 SME を設けるべきです。
-2. 重大度に関わらず多数のインシデントを発生させる機能やサービス。
-3. 頻繁なインシデントが評判に損害を与える可能性がある機能やサービス。
-4. インシデントからの平均復旧時間が常に高い機能やサービス。
+1. Component Owner Model を通じて到着する新しい機能またはサービスは、最低 6 か月間 24x5 Tier 2 SME を持つべきです。
+2. 重大度に関係なく、多くのインシデントを生成する機能またはサービス。
+3. 頻繁なインシデントが評判の損失を引き起こす機能またはサービス。
+4. インシデントからの平均回復時間が一貫して高い機能またはサービス。
 
-### この判断を支援するためにレビューできるメトリクス
+### この決定を支援するためにレビューできるメトリクス
 
-1. インシデントのトレンド分析。[プロダクションインシデントトラッカー](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues?sort=created_date&state=opened&first_page_size=100)で `~incident` ラベルを検索し、グループで絞り込むことができます。
-   1. インシデントの発生頻度を確認し、パターンがないか確認します。
+1. インシデントのトレンド分析。これは、[Production Incident tracker](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues?sort=created_date&state=opened&first_page_size=100) で `~incident` ラベルを検索し、グループによって検索を絞り込むことで行えます。
+   1. インシデントの発生頻度を見て、何かパターンがあるかどうかを検討します。
    2. インシデントの重大度を考慮します。
 2. インシデント解決時間。
 
 ## Tier 2 ローテーションの作成方法
 
-Tier 2 ローテーションはスペシャリスト向けです。平均として、グループ外のエンジニアよりも自身の専門分野について詳しい必要があります。参加者がスペシャリストであることを確認するためのトレーニング資料の提供を検討してください。
+Tier 2 ローテーションは subject matter expert 向けです。平均的に、グループ外のエンジニアよりも自分の専門分野についてより多くの知識を持つべきです。参加者が subject matter expert であることを確認するためのトレーニング資料の提供を検討してください。
 
-[オンコールローテーションの設定方法に関する一般情報](_index.md#how-to-set-up-an-on-call-rotation)を参照してください。
+[オンコールローテーションのセットアップ方法に関する一般情報](_index.md#how-to-set-up-an-on-call-rotation) を参照してください。
 
-[チームオンボーディングテンプレート](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/new?description_template=onboarding-tier2-oncall)を使用して新しい Tier 2 ローテーションを設定してください。
+新しい Tier 2 ローテーションをセットアップするには、[team onboarding template](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/new?description_template=onboarding-tier2-oncall) を使用してください。
 
-作成中およびオンボーディング中のローテーションは、[オンコールローテーションオンボーディングボード](https://gitlab.com/groups/gitlab-com/-/boards/9981508?label_name%5B%5D=On%20Call%20Rotation)で確認できます。
+作成およびオンボーディング中のローテーションは、[On Call Rotation Onboarding board](https://gitlab.com/groups/gitlab-com/-/boards/9981508?label_name%5B%5D=On%20Call%20Rotation) で確認できます。
 
-## Tier 2 がページングされるのはどのような場合か
+## Tier 2 はいつページされるか?
 
-### Tier 1 EOC または IM からのリクエスト
+### Tier 1 EOC または IM のリクエスト
 
 #### エスカレーション基準
 
-Tier 1 エンジニアオンコール（EOC）は初期トリアージを行い、Tier 2 SME にエスカレーションする前に利用可能なドキュメントを使用します。インシデントをサポートしているインシデントマネージャー（IM）からもページが開始される場合があります。
+Tier-1 Engineer On-Call (EOC) は、Tier-2 SME にエスカレーションする前に、初期トリアージを行い、利用可能なドキュメントを使用します。インシデントをサポートしている Incident Manager (IM) によってもページが開始される場合があります。
 
-##### Tier 2 にエスカレーションする前に
+##### Tier-2 にエスカレーションする前に
 
-Tier 1 は以下を行う必要があります:
+Tier-1 は以下を行う必要があります:
 
-1. 影響を受けている領域のランブックおよびプレイブックの全ての推奨事項に従う
-2. 試みた解決策と結果をインシデント Issue に文書化する
+1. 影響を受ける領域のランブックとプレイブックのすべての推奨事項に従う
+2. インシデント Issue で試した解決策とその結果を文書化する
 
 ###### リソースの場所
 
-- [ランブック](https://gitlab.com/gitlab-com/runbooks/-/tree/master/docs)
-- [プレイブック](https://internal.gitlab.com/handbook/engineering/tier2-oncall/playbooks/)
+- [Runbooks](https://gitlab.com/gitlab-com/runbooks/-/tree/master/docs)
+- [Playbooks](https://internal.gitlab.com/handbook/engineering/tier2-oncall/playbooks/)
 
 #### 重大度レベル別
 
-- **S1/S2 インシデント**: Tier 1 チームがランブック、ドキュメント、その他のリソースを使用して独立して解決できない場合。その重大な性質から、ドメイン固有の専門知識が必要な場合、Tier 2 SME はこれらのインシデントでページされることを想定すべきです。
+- **S1/S2 インシデント**: Tier-1 チームが runbook、ドキュメント、または他のソースを使って独立に解決できない場合。重大な性質のため、Tier-2 SME はドメイン固有の専門知識が必要な場合に、これらのインシデントでページされることを期待すべきです。
 
-- **S3/S4 インシデント**: 通常、週末は Tier 2 SME へのエスカレーションは不要です。ただし、以下の特定の状況では Tier 1 が S3/S4 インシデントをエスカレーションすることがあります:
-  - 顧客への影響が不明で、評価にドメイン専門知識が必要な場合
-  - 問題がより高い重大度のインシデントに発展する可能性があるかどうかが不明な場合
-  - 複数の低重大度インシデントが組み合わさり、より広範な影響を及ぼす可能性がある場合
+- **S3/S4 インシデント**: これらは通常、週末に Tier-2 SME へのエスカレーションを必要としません。ただし、Tier-1 は特定の状況で S3/S4 インシデントをエスカレーションする場合があります:
+  - 顧客への影響が不明確で、評価するためにドメイン専門知識が必要な場合
+  - 問題がより高い重大度のインシデントに発展する可能性があるかどうか不明な場合
+  - 複数の低重大度のインシデントが組み合わさって、より広範な影響を作り出す可能性がある場合
 
-- Tier 1 がサービスのエラーや異常な動作が顧客に影響するかどうかを判断するためにサポートが必要な場合、Tier 2 SME に相談することができます
+- Tier-1 が、サービス内のエラーや異常な動作が顧客に影響するかどうかを判断するためにヘルプが必要な場合、Tier-2 SME と協議することができます
