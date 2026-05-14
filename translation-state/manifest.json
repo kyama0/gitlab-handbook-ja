@@ -2170,24 +2170,24 @@
       "input_hash": "271fe0251e18cef1a629ade0fa8c9d6200a84bb9f8dbad19894b2729e9f680d2"
     },
     "content/handbook/customer-success/_index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T23:49:11Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "a4af53bd64300dbbd4f9218421c41a6a8c6eb117bc8106c1b47872c199076492",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5224da2611d5bb6cb3d6d8ff76500fa1efd3ed106c3f86476caab5882ad27961",
       "path": "content/handbook/customer-success/_index.md"
     },
     "content/handbook/customer-success/account-team.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T23:49:11Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "fc121d878127fdcba08baadedcb3fd328f0e256743fe99b66c1c024aa86c7b21",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "249a64caf898733317b747e7286c2af440fd73578c75390a6c2ec747423919fc",
       "path": "content/handbook/customer-success/account-team.md"
     },
     "content/handbook/customer-success/apj-customer-success.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T23:49:11Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "7ccb4a6d73d9f0a834b9b896a8f9acb001aa457c75238e28eaab3e0a1eb70809",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "51aae5294aea0bfefbe4cb9522a0571cc4b8fee590fbde88bea9b490a25fec99",
       "path": "content/handbook/customer-success/apj-customer-success.md"
     },
     "content/handbook/customer-success/comm-sales/_index.md": {
@@ -3305,10 +3305,10 @@
       "input_hash": "cc60bdd380173c706ad2afb9ff485531c635d534be1c77774365d4381d729a61"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab5.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T04:33:12Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "e42f100f63bceae606720a41c446ed8be263019107e811e76ae9d6e8fedc5593"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d44f2002b6a9251c9a4c34e233855e1778cd62cbbabc458c37dd8ae7ccfd5d6e"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab6.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -3377,10 +3377,10 @@
       "input_hash": "a881d2da1816e3f0621845d8677331e1e3b65c278687b1da96b9c24426fd46c7"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab1.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T04:51:58Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "796341e5f7994a0bab38a999ec1ac27eecd3f5ca5dfec8af560ec669c0a89b45"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9a7953dc7b3367c391278ce29cbf852c17c9c7de15a8935a88b26f34192d8e29"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab2.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -3395,16 +3395,16 @@
       "input_hash": "c0244e354d61efc2034660066328099caf0ac1469be95272b0e5ce3ebeb2c68d"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T04:51:58Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "7a8b9634119e83a4928a584805b36bcafbaa149230c80ba62f5ba7b6555c2974"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1bb1ce3da822453011b449da02784948dbd8bc5eb90e0440e94e53fd72f29535"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab5.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T04:51:58Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "c9e5c45ecbd653db90e5e719a914daf53461c6f846b2250f4e9f4eae57c6e3fe"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9277b7dc3c1fec93fb99b39868d7549c218daba401429ddad25aee6a96c8d1e8"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandson.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -3413,10 +3413,10 @@
       "input_hash": "b8fed6220d635ae6e3628ea11340dadab49a29784e98a30727c242a7f7c0197e"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab1.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T04:51:58Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "7102d97de05aed22a14798037e003bebcc4e0422e8e78c70ad4a677134c8a97e"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0d05d829d63e5d66810149e77995157f1da7a60c8d02c37ad2e56f97872f8682"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab2.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -4213,10 +4213,10 @@
       "path": "content/handbook/customer-success/success-services/glu-panorama/_index.md"
     },
     "content/handbook/customer-success/using-salesforce-within-customer-success.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "2b7321c18feb91ad27b9439892a565dce714f794c9e2512e0b009396146d57ac",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "86d12752517dae38c9c091b1077080790fac1018272d186bc6eb473fdd48931b",
       "path": "content/handbook/customer-success/using-salesforce-within-customer-success.md"
     },
     "content/handbook/customer-success/workshops/_index.md": {
@@ -4256,10 +4256,10 @@
     },
     "content/handbook/eba/_index.md": {
       "path": "content/handbook/eba/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "8a98a8eca98c07e14af9ad0e43735d5de3484ee3e5298f85b4c583a6630d1f66"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e28144b5dadfebaf3cc1c1160acf0b970410c536cce8bd32b77dfe920f1b2b9d"
     },
     "content/handbook/eba/ceo-scheduling.md": {
       "path": "content/handbook/eba/ceo-scheduling.md",
