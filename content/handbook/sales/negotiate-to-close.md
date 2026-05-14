@@ -31,7 +31,9 @@ stale: false
 
 このビデオでは、エンタープライズセールス担当 VP の Mike Pyle が、GitLab における価格ロック交渉中に製品の価値を保護しながら交渉にアプローチするためのヒントを紹介しています。これをうまく行う鍵は、この会話を一貫して能動的に行うことです。このガイダンスは、見込み客や既存顧客のサイズに関わらず役立ちます。下記でご覧いただくか、GitLab Unfiltered で直接ご視聴ください: [5 1/2 Tips for Getting Ahead of Price-lock Negotiations (YouTube, 10 分)](https://www.youtube.com/watch?v=mzGc1bXESzI)。
 <!-- blank line -->
-<figure class="video_container"><iframe src="https://www.youtube.com/embed/mzGc1bXESzI"></iframe></figure>これらのヒントに加え、下記の重要なセールススキルも交渉の成功に役立ちます:
+<figure class="video_container"><iframe src="https://www.youtube.com/embed/mzGc1bXESzI"></iframe></figure>
+
+これらのヒントに加え、下記の重要なセールススキルも交渉の成功に役立ちます:
 
 ## お客様のニーズを発見する
 

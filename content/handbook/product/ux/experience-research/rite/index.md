@@ -1,5 +1,5 @@
 ---
-title: "Rapid Iterative Testing and Evaluation (RITE)"
+title: "迅速反復テストと評価（RITE）"
 description: "GitLab で RITE 手法を使う方法"
 upstream_path: /handbook/product/ux/experience-research/rite/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141

@@ -176,7 +176,7 @@ B2B システムの優先順位:
 
 あなたのニーズに適した方法を実行するために UX リサーチと連携してください。
 
-- 全体プロダクトの認識のための [USAT+ サーベイ](/handbook/product/ux/performance-indicators/usat-plus/) - 四半期回転時間（UX リサーチが管理）
+- 全体プロダクトの認識のための [USAT+ サーベイ](/handbook/product/ux/performance-indicators/usat-plus/) - 四半期ごとの実施（UX リサーチが管理）
 - フォローアップインタビュー - 2-3 週間（たとえば、USAT+ 経由でオプトインしたユーザーに連絡できます）
 - [縦断的研究](/handbook/product/ux/experience-research/longitudinal-studies/) - 4-12 週間
 

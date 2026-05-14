@@ -3,7 +3,7 @@ title: タレントアセスメント
 description: "私たちのタレントアセスメントプロセスは、GitLab を成功させる人々を認識し成長させる方法です。パフォーマンスを評価し、成長の可能性を特定し、キータレントにスポットライトを当てることで、あなたが今どこに立っているか、どこに向かっているか、そしてそこに到達するためにどのようにサポートするかについての明確さを作り出します。"
 upstream_path: /handbook/people-group/talent-assessment/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
 ---

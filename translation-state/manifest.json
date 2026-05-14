@@ -15552,6 +15552,7 @@
       "input_hash": "45f89fe2faee99877146c6b773875e29a39f8bdcbb1896fa1acccecbee6619bb"
     },
     "content/handbook/marketing/field-marketing/_index.md": {
+      "path": "content/handbook/marketing/field-marketing/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
       "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",

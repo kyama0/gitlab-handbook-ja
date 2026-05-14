@@ -3,7 +3,7 @@ title: "GitLab オフボーディング"
 description: "GitLab チームメンバーおよびステークホルダー向けのオフボーディング手順"
 upstream_path: /handbook/people-group/offboarding/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
 ---
@@ -26,7 +26,7 @@ stale: false
 
 **注：** 退職日が変更された場合は、HelpLab を通じて People Operations に連絡してください。チームが Workday を更新します。通知は変更の裏付け書類として使用され、チームメンバーの Workday レコードに保存されます。
 
-## 自発的な退職
+## 自発的な退職 {#voluntary-offboarding}
 
 ### 辞任前
 
@@ -237,7 +237,7 @@ Workday での退職トランザクションで提供されるオフボーディ
 GitLab（会社）はチャネルを監視し、独自の裁量で人を削除できます。
 GitLab の[Code of Business Conduct and Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx)はチャネルで適用されます。
 
-## 退職の伝達
+## 退職の伝達 {#communicating-departures}
 
 オフボーディングを伝達する目標は透明性であり、チームメンバーがさようならを言う機会を提供することです。個人によって快適に感じるコミュニケーションのレベルが異なり、各オフボーディング状況にも異なる状況とニュアンスがあることを理解しています。この理由から、また個人への敬意から、オフボーディングを伝達するためのいくつかの主要な指針があります：
 

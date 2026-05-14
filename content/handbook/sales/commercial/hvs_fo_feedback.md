@@ -3,7 +3,7 @@ title: "High Velocity Sales and First Orders - フィードバック収集とベ
 description: "HVSが製品、システム、ケースオペレーションのフィードバックをどのように収集し、フィードバックをどう提供するのが最良かを概説"
 upstream_path: /handbook/sales/commercial/hvs_fo_feedback/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+translated_at: "2026-05-12T00:00:00Z"
 translator: claude
 stale: false
 ---

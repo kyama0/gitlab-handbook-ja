@@ -3,7 +3,7 @@ title: "AI 継続性計画"
 description: "GitLab の AI 継続性計画は、新しい AI ベンダーを選定するプロセスと、AI ベンダーが顧客データの利用に関する慣行に重大な変更を加えた際にどのように対処する方針かを、透明性をもって示すものです。"
 upstream_path: /handbook/product/ai/continuity-plan/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
 ---

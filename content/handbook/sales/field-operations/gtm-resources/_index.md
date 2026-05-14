@@ -32,7 +32,7 @@ stale: false
 - `#marketing`
 - `#developer-relations-programs`
 
-## 用語集
+## 用語集 {#glossary}
 
 | 用語 | 定義 |
 | ---- | ---------- |
@@ -142,7 +142,7 @@ Sales Accepted Opportunity: #criteria-for-sales-accepted-opportunity-sao
 
 MQL とリードスコアリングの詳細は、[marketing operations ハンドブック](/handbook/marketing/marketing-operations/) で確認できます。
 
-### セグメンテーション
+### セグメンテーション {#segmentation}
 
 Sales セグメンテーションは、`Account Demographics: Max Family Employees` に基づきます。これは、当該階層内のアカウントすべての `Account Demographics: Employee Count` 値の最大値です。
 
@@ -765,7 +765,7 @@ Deal Registrant:
 Opportunity Team リスト:
 リセラーユーザーを Opportunity Team リストに「Reseller」のロールで追加してください。そうしないとオポチュニティを表示できません。
 
-#### オポチュニティ命名規則
+#### オポチュニティ命名規則 {#opportunity-naming-convention}
 
 サブスクリプションのオポチュニティは、以下のガイドラインを使用します。
 

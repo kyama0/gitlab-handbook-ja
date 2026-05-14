@@ -78,7 +78,7 @@ Sandbox Cloud は [CorpSec Identity](/handbook/security/corporate/) チームに
 
 将来のイテレーションでは AWS アカウントに取り組む予定です。
 
-#### 協働 AWS アカウントまたは GCP プロジェクト（非本番環境）
+#### 協働 AWS アカウントまたは GCP プロジェクト（非本番環境） {#collaborative-aws-account-or-gcp-project-non-production}
 
 すべてのチームメンバーは、特定のプロジェクトまたはワーキンググループ用、または部門グループによる共有非本番リソースの一般使用のために、新しい AWS アカウントまたは GCP プロジェクトを要求できます。これらは協働アカウント/プロジェクトと呼ばれ、Sandbox Cloud からすべてのチームメンバーが自己プロビジョニングできる個人アカウント/プロジェクトとは対照的です。
 
@@ -113,7 +113,7 @@ GitLab.com SaaS について [Production Architecture](/handbook/engineering/inf
 
 セルフホスト型アプリケーションインフラストラクチャはケースバイケースで決定され、CorpSec Infrastructure、[Infrastructure Security](/handbook/security/product-security/infrastructure-security/)、[Application Security](/handbook/security/product-security/security-platforms-architecture/application-security/)、[3rd Party Risk](/handbook/security/security-assurance/security-risk/third-party-risk-management/) と共同で設計されます。新しいサービスについての予備的ガイダンスについては、Issue で `@vlad` にタグ付けしてください。まだ Issue がない場合は、[CorpSec Infrastructure Issue トラッカー](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues) に作成してください。
 
-#### AWS アカウントへのアクセス
+#### AWS アカウントへのアクセス {#accessing-your-aws-account}
 
 1. [https://gitlabsandbox.cloud](https://gitlabsandbox.cloud) にサインインし、[Cloud Infrastructure](https://gitlabsandbox.cloud/cloud) に移動します。
 1. まだアカウントを作成していない場合は [Create Individual Account](https://gitlabsandbox.cloud/cloud/accounts/create) ボタンをクリックし、フォームを使って新しいアカウントを作成します。既にアカウントを持っている場合は、アクセスしたい AWS アカウントのタイトルまたは歯車アイコンをクリックします。
@@ -125,7 +125,7 @@ GitLab.com SaaS について [Production Architecture](/handbook/engineering/inf
 1. サインイン後、IAM に移動し、ユーザーアカウント用の仮想 MFA デバイスを追加し、1Password レコードに OTP（ワンタイムパスワード）を追加してください。
 1. IAM ユーザーアカウントは、AWS アカウント内で任意のアクションを実行できる `AdministratorAccess` を持っています。`root` ユーザーアカウントへのアクセスは、ブレークガラスセキュリティインシデントまたは [Infrastructure Realm Owners](/handbook/company/infrastructure-standards/#realm-owners) による関連する管理活動でのみ使用するため、チームメンバーには提供しません。
 
-#### GCP プロジェクトへのアクセス
+#### GCP プロジェクトへのアクセス {#accessing-your-gcp-project}
 
 1. [https://gitlabsandbox.cloud](https://gitlabsandbox.cloud) にサインインし、[Cloud Infrastructure](https://gitlabsandbox.cloud/cloud) に移動します。
 1. まだアカウントを作成していない場合は [Create Individual Account](https://gitlabsandbox.cloud/cloud/accounts/create) ボタンをクリックし、フォームを使って新しいアカウントを作成します。既にアカウントを持っている場合は、アクセスしたい GCP プロジェクトのタイトルまたは歯車アイコンをクリックします。
