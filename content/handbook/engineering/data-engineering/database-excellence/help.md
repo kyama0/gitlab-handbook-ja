@@ -10,13 +10,13 @@ stale: false
 
 このガイドは、データベース関連の問題に対して適切なヘルプを見つけるための手順を示します。Step 1 から始め、ご自身の状況に合うパスをたどってください。
 
-## Step 1: どのようなヘルプが必要ですか?
+## Step 1: どのようなヘルプが必要ですか? {#step-1-what-kind-of-help-do-you-need}
 
 * **GitLab.com または Dedicated でアクティブな S1/S2 インシデントが発生している** -> [Step 3: GitLab.com または Dedicated のインシデント](#step-3-gitlabcom-or-dedicated-incident) に進む
 * **セルフマネージドの顧客がデータベースの問題に直面している** -> [Step 2: 顧客のデータベース問題](#step-2-customer-database-issue) に進む
 * **緊急ではない Issue を起票またはルーティングしたい** -> [Step 6: 緊急でない Issue を起票する](#step-6-file-a-non-emergency-issue) に進む
 
-## Step 2: 顧客のデータベース問題
+## Step 2: 顧客のデータベース問題 {#step-2-customer-database-issue}
 
 **まずはサポートの stable counterparts に連絡してください** — 彼らは一般的な顧客のデータベース問題に関するコンテキストを持っており、エンジニアリングにエスカレーションする前にトリアージを支援できます。
 
@@ -57,7 +57,7 @@ stale: false
 
 * **はい** -> RFH を起票した後、[Step 4: Database Excellence にエスカレーションする](#step-4-escalate-to-database-excellence) に進みます。
 
-## Step 3: GitLab.com または Dedicated のインシデント
+## Step 3: GitLab.com または Dedicated のインシデント {#step-3-gitlabcom-or-dedicated-incident}
 
 **データベースの問題によって、アプリケーション (または Sidekiq などの主要コンポーネント) がダウンしている、または広範囲に応答不能になっていますか?**
 
@@ -73,7 +73,7 @@ stale: false
 
 * **はい** -> まず責任を持つ機能チームの特定を試みます。[Step 5: 責任を持つチームを特定する](#step-5-identify-the-responsible-team) に進みます。発生源を特定できない、またはデータベースの専門知識が緊急に必要な場合は、[Step 4: Database Excellence にエスカレーションする](#step-4-escalate-to-database-excellence) に進みます。
 
-## Step 4: Database Excellence にエスカレーションする
+## Step 4: Database Excellence にエスカレーションする {#step-4-escalate-to-database-excellence}
 
 エスカレーションする際は、できるだけ具体的に伝えてください。[コミュニケーションガイドライン](/handbook/communication/#writing-style-guidelines) に従い、可能な限り略語を避けます。常に次を含めます:
 
@@ -143,7 +143,7 @@ stale: false
 1. [SLAs](https://dashboards.gitlab.net/d/general-slas/general-slas?orgId=1)
 1. [Web Overview](https://dashboards.gitlab.net/d/web-main/web-overview?orgId=1)
 
-## Step 5: 責任を持つチームを特定する
+## Step 5: 責任を持つチームを特定する {#step-5-identify-the-responsible-team}
 
 データベースアプリケーションの Issue の多くは、関連する機能を所有するチームが対応するのが最適です。エラーに「database」という言葉が含まれていても、関係するデータパターンを理解しているのは機能チームのため、通常は機能チームが解決に最も適しています。
 
@@ -175,7 +175,7 @@ stale: false
 
 * [Step 4: Database Excellence にエスカレーションする](#step-4-escalate-to-database-excellence) に進む
 
-## Step 6: 緊急でない Issue を起票する
+## Step 6: 緊急でない Issue を起票する {#step-6-file-a-non-emergency-issue}
 
 **Database Excellence チームから何かを必要としていますか** (相談、インフラ変更、stable counterpart、プロジェクト業務)?
 
