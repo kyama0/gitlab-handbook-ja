@@ -11,142 +11,114 @@ group: Organizations
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/
-upstream_sha: 7fadd0122802b16e64b0e88962c637a09d27bd53
-translated_at: "2026-04-27T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
 
+{{< engineering/design-document-header >}}
 
-<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
-このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
-</div>
+このドキュメントは作業中であり、Organization 設計の現状を反映しています。
 
-<div class="overflow-x-auto my-4">
-<table class="w-full text-sm border-collapse">
-<thead>
-<tr class="bg-gray-100 text-left">
-<th class="px-3 py-2 border border-gray-300">Status</th>
-<th class="px-3 py-2 border border-gray-300">Authors</th>
-<th class="px-3 py-2 border border-gray-300">Coach</th>
-<th class="px-3 py-2 border border-gray-300">DRIs</th>
-<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
-<th class="px-3 py-2 border border-gray-300">Created</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">ongoing</span></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/lohrc" class="text-blue-600 hover:underline">@lohrc</a>, <a href="https://gitlab.com/alexpooley" class="text-blue-600 hover:underline">@alexpooley</a></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/ayufan" class="text-blue-600 hover:underline">@ayufan</a>, <a href="https://gitlab.com/tkuah" class="text-blue-600 hover:underline">@tkuah</a></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/jblack7" class="text-blue-600 hover:underline">@jblack7</a>, <a href="https://gitlab.com/mandrewsgl" class="text-blue-600 hover:underline">@mandrewsgl</a></td>
-<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::tenant scale</span></td>
-<td class="px-3 py-2 border border-gray-300">2023-04-05</td>
-</tr>
-</tbody>
-</table>
-</div>
-
-
-このドキュメントはOrganization設計の現状を表す作業中のものです。
-
-## グロッサリー
+## 用語集
 
 - User: ユーザーアカウント。
-- Member: ロールで表現された一連の権限を持つエンティティに属するUser。Userは1つのOrganizationのMemberになれ、そのOrganization内の多くのGroupsとProjectsのMemberになれます。
-- Top-level Group: 他のすべてのGroupの最上位にあるGroupの名称。GroupsとProjectsはTop-level Groupの配下にネストされます。
-- Organization: 1つまたは複数のTop-level Groupsのコンテナー。Organizationsは互いに隔離されています。
-- Organization Member: OrganizationsにはMemberと呼ばれる多くのUsersがいます。Organization MembersのみがOrganizationの可視性を持ちます。Organization内のGroupまたはProjectにUserを追加すると、そのUserはOrganization Memberになります。
-- Default Organization: すべてのGitLabインスタンスにシードされた`ID = 1`のOrganization。
+- Member: ロールで表される権限のセットを持つエンティティに所属する User。User は 1 つの Organization のメンバーであり、その Organization 内の多数の Group と Project のメンバーになることができます。
+- Top-level Group: トップレベルグループは、他のすべてのグループの最上位グループに付けられる名前です。グループとプロジェクトはトップレベルグループの下にネストされます。
+- Organization: Organization は、1 つまたは複数のトップレベルグループのコンテナです。Organization は互いに隔離されています。
+- Organization Member: Organization は Member と呼ばれる多数のユーザーを持ちます。Organization Member のみが Organization の可視性を持ちます。Organization 内のグループまたはプロジェクトにユーザーを追加すると、そのユーザーは Organization Member になります。
+- Default Organization: すべての GitLab インスタンスにシードされる `ID = 1` を持つ Organization。
 
-## 概要
+## サマリー
 
-GitLab.comはGitLabソフトウェアの公開共有インストールです。これはGitLabを便利なSaaSとして提供しますが、重要な点でGitLabの完全な体験に達していません。
+GitLab.com は GitLab ソフトウェアの公開共有インストールです。これは便利な SaaS として GitLab を提供しますが、重要な点でフル機能の GitLab エクスペリエンスには及びません:
 
-1. パリティ: GitLab.comとSelf Managedで顧客に提供される機能が異なります。例えば、GitLab.comでは顧客は管理者権限を受け取らず、これが多くの機能を占めています。
-2. 隔離: GitLab.comでは、顧客はSelf Managedインストールのように他の顧客から独立して存在できません。
+1. パリティ: GitLab.com と Self Managed で顧客に提供される機能は異なります。たとえば、GitLab.com では顧客に管理者権限が付与されず、それは機能のかなりの量を占めます。
+2. 隔離: GitLab.com では、Self Managed インストールのように、顧客が他の顧客から独立して存在することはできません。
 
-Organizationsは、すべてのプラットフォームにまたがる共通コンテナーとなることでこれらの問題を解決します。Organizationコンテナーの作成により、隔離境界を強制し、すべてのトップレベル機能の共通エンティティを提供できます。
+Organization は、すべてのプラットフォームで共通のコンテナとして機能することにより、これらの問題を解決します。Organization コンテナの作成を通じて、隔離境界を強制し、すべてのトップレベル機能のための共通エンティティを提供できます。
 
-実質的に、OrganizationはSelf Managed機能をコンテナーにラップし、この体験を他のすべてのGitLabプラットフォームに提供します。
+実質的に、Organization は Self Managed の機能をコンテナにラップし、このエクスペリエンスを他のすべての GitLab プラットフォームにもたらします。
 
-この隔離ソリューションは、[OrganizationとのCells](cells.md)で説明されている[Cellsプロジェクト](https://docs.gitlab.com/ee/architecture/blueprints/cells/index.html)の前提条件でもあります。
+隔離ソリューションは、[Cells プロジェクト](https://docs.gitlab.com/ee/architecture/blueprints/cells/index.html) の前提条件でもあり、これは [Organization と Cells](cells.md) で Organization との関係で説明されています。
 
 ## よくある質問
 
-特定の質問がある場合は、[FAQ](faq.md)内で回答されているかもしれません。また、「Organization Blueprints」を参照しながら[GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/examples/)に問い合わせることもできます。
+特定の質問がある場合は、[FAQ](faq.md) 内で答えが見つかるか、または "Organization Blueprints" を参照する [GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/examples/) にクエリを試すこともできます。
 
-### GitLab.comプラットフォームの分割
+### GitLab.com プラットフォームの分割
 
-GitLab.comプラットフォームは2つの異なる体験に分割されます。
+GitLab.com プラットフォームは、2 つの異なるエクスペリエンスに分割されます。
 
-今日の顧客はデフォルトOrganization内のTop-level GroupとしてGitLab.comに参加しています。
-この体験は、オープンソースプロジェクトに貢献できる共有ユーザープールを維持するために無期限に存続します。
+顧客は今日 GitLab.com にデフォルト組織内のトップレベルグループとして参加します。
+このエクスペリエンスは、オープンソースプロジェクトに貢献するための共有ユーザープールを可能にするために、無期限に存続します。
 
-GitLab.comはプライベートエンタープライズOrganizationsのソリューションでオファリングを拡大します。
-これらのエンタープライズOrganizationsは、デフォルトOrganizationを含む他のすべてのOrganizationsから完全に隔離して運営されます。
+GitLab.com は、プライベートエンタープライズ Organization のソリューションで提供を拡大します。
+これらのエンタープライズ Organization は、デフォルト組織を含む他のすべての Organization から完全に隔離されて運営されます。
 
-最終的には、顧客がデフォルトOrganizationから自分のプライベートOrganizationに移行できるようになります。
+最終的に、顧客はデフォルト組織から自分自身のプライベート Organization に移行することができるようになります。
 
-## Organizationsの基本原則
+## Organization の基本
 
-- Organizationはほぼすべてのの GitLab機能をラップします。
-- Organizations間でデータの読み書きは行えません。詳細は[Organization Isolation](isolation.md)を参照してください。
-- 多くの製品機能は変わりませんが、ほとんどのインスタンスレベル機能は Organization レベルに移動します。レベル変更については[以下](#level-structure)で詳しく説明します。
-- Usersは単一のOrganizationのMemberにのみなれます。
-- Organizationのオーナーになることも、標準メンバーになることもできます。
-- 将来、UsersがMemberになれるOrganizationsの数を複数に拡張することを検討します。
-- Organizationオーナーは、ユーザーアカウントを削除できる能力など、Organization内で管理者スタイルの権限を持ちます。詳細は[以下](#roles-and-permissions)を参照してください。
-- これらの変更はGitLab.com、Self Managed、Dedicatedを含むすべてのGitLabプラットフォームで行われます。
+- Organization は GitLab のほぼすべての機能をラップします。
+- Organization 間でデータを読み書きすることはできません。詳細は [Organization の隔離](isolation.md) を参照してください。
+- 多くのプロダクト機能は変更されませんが、ほとんどのインスタンスレベルの機能は下位に移動し、他の機能は Organization レベルに上位に移動します。レベルの変更については [下記](#level-structure) で詳述されています。
+- ユーザーは 1 つの Organization のメンバーにのみなれます。
+- ユーザーは Organization のオーナーまたは標準メンバーになることができます。
+- 将来的には、ユーザーが複数の Organization のメンバーになる機能を検討します。
+- Organization のオーナーは、ユーザーアカウントを削除する機能など、自分の Organization 内で管理者スタイルの権限を持ちます。詳細は [下記](#roles-and-permissions) を参照してください。
+- これらの変更は、GitLab.com、Self Managed、Dedicated を含むすべての GitLab プラットフォームで発生します。
 
-## Organization Isolation
+## Organization の隔離
 
-GitLab内のすべてのOrganizationデータと機能は隔離されます。
-隔離とは、データと機能がOrganizationの境界を越えることができないことを意味します。
-詳細については[Organization Isolation](isolation.md)を参照してください。
+GitLab のすべての Organization データと機能は隔離されます。
+隔離は、データと機能が Organization の境界を越えることが決してできないことを意味します。
+これは [Organization の隔離](isolation.md) でさらに詳しく説明されています。
 
-GitLab.comでは、Default OrganizationからTop-level Groupsを段階的に移行するために、Organizationsは**非隔離**状態で始まります。
-Organization範囲のデータに依存する機能は、現在のOrganizationが非隔離か隔離かを確認してから、Organization境界ルールを適用する必要があります。
-詳細については[ADR 008: GitLab.com上の非隔離Organizations](decisions/008_non_isolated_organizations_gitlab_com.md)を参照してください。
+GitLab.com では、Organization はトップレベルグループのデフォルト組織からの段階的な移行をサポートするために **非隔離** 状態で開始されます。
+Organization スコープのデータに依存する機能は、Organization 境界ルールを強制する前に、現在の Organization が非隔離か隔離されているかをチェックする必要があります。
+完全な詳細は [ADR 008: GitLab.com 上の非隔離 Organization](decisions/008_non_isolated_organizations_gitlab_com.md) を参照してください。
 
-## Organizationが他のドメインに与える影響
+## Organization が他のドメインに与える影響
 
-以下は、OrganizationがシステムのNother部分にどのように影響するかを詳しく説明するページの一覧です。
+Organization がシステムの他の部分にどのように影響するかを詳しく説明するページの増え続けるリストは以下のとおりです。
 
 - [Billing](billing.md)
 - [Cells](cells.md)
 - [Settings](settings.md)
+- [Lifecycle](lifecycle.md)
 - [Users](users.md)
 - [Login](login.md)
 - [OAuth - GitLab as SP](oauth_client_auth.md)
 
-## レベル構造 {#level-structure}
+## レベル構造
 
-OrganizationはInstance Levelのほとんどの機能とTop Level Groupのすべての機能を組み合わせた新しいレベルを形成します。
+Organization は、ほとんどのインスタンスレベルの機能とすべてのトップレベルグループ機能を組み合わせた新しいレベルを形成します。
 
-Instance Levelはインフラレベルの設定のために予約されます。
-GitLab.comでは、Instance Levelはセル単位でのみ動作します。
-ほとんどのInstance Level機能と設定はOrganization Levelに移動するべきです。
-Instance Levelをセルローカルのままにすると、チームは各Cellに対して手動設定を行うよう求められる可能性があり、効率的ではありません。
+インスタンスレベルは、インフラレベルの設定のために予約されます。
+GitLab.com では、インスタンスレベルは Cell ローカルベースでのみ動作します。
+ほとんどのインスタンスレベルの機能と設定は、Organization レベルに下げる必要があります。
+インスタンスレベルを Cell ローカルのままにすることは、チームが各 Cell に対して手動設定を実行するように求められる可能性があることを意味し、これは効率的ではありません。
 
-Instance LevelはSelf Managedにとっては問題ではありません。Cellsがなく、Organizationが1つだけだからです。
+セルフマネージドの場合、Cell が存在せず、Organization も 1 つしかないため、インスタンスレベルは問題になりません。
 
-GitLab.comでは、Top-level Groupsは現在、Organizationレベルの機能（請求、設定など）のコンテナーとして機能しています。これらの機能はOrganization Levelに移動します。Top-level GroupsはそれでGitLab.com上にあっていつもと同じ通常のGroupsやSubGroupsとして機能し、「疑似レベル」の区別がなくなります。これにより、GitLab.comはSelf-Managedと同じになります。Self-Managedでは、この区別は存在したことがありませんでした。
+GitLab.com では、現在トップレベルグループが Organization レベルの機能 (billing、settings など) のコンテナとして機能しています。これらの機能は Organization レベルに移動します。トップレベルグループはその後、通常のグループおよびサブグループとまったく同じように機能します - 「擬似レベル」の区別がなくなります。これにより、GitLab.com は、この区別が存在したことのない Self-Managed と整合します。
 
-以下はGitLab内の現在と将来の階層レベルの表です。
+以下は、GitLab 内の現在および将来の階層レベルの図示です。
 
-| 現在の階層         | 将来の階層 |
+| 現在の階層 | 将来の階層 |
 | ------------------------- | -----------------|
-| Instance Level            | ほとんどの設定はOrganizationに移動 |
-|                           | Organization Level |
-| Top Level Group           | 特別な状態を失う。通常のGroupになる |
-| Group                     | Group（変更なし） |
-| Project                   | Project（変更なし） |
+| インスタンスレベル | ほとんどの設定が Organization に移動 |
+|                           | Organization レベル |
+| トップレベルグループ | 特別な状態を失う。通常のグループになる |
+| グループ | グループ (変更なし) |
+| プロジェクト | プロジェクト (変更なし) |
 
-Organization発売前は、コア機能のみがOrganizationに移動されます。
-発売後、残りのすべての機能がOrganizationレベルに移動されます。
+Organization のリリース前には、コア機能のみが Organization に移動されます。
+リリース後、残りのすべての機能は Organization レベルに移動します。
 
-以下はこれらのレベルのエンティティ図です。
+以下は、これらのレベルのエンティティ図です:
 
 ```mermaid
 graph TD
@@ -159,75 +131,75 @@ graph TD
   ns[Namespace] -. has many .- ns[Namespace]
 ```
 
-## User管理
+## ユーザー管理
 
-Organization内でのUserの管理方法については、[Organization Users](users.md)を参照してください。
+Organization 内でユーザーがどのように管理されるかの詳細については、[Organization のユーザー](users.md) を参照してください。
 
 ## 可視性
 
-Organizationsはパブリックまたはプライベートにできます。パブリックOrganizationsはすべての人が見ることができます。パブリックおよびプライベートなGroupsとProjectsを含むことができます。プライベートOrganizationsはOrganizationメンバーのみが見ることができます。プライベートまたは内部のGroupsとProjectsのみを含むことができます。
+Organization は公開 (public) または非公開 (private) にすることができます。公開 Organization は誰でも見ることができます。これらには公開および非公開のグループとプロジェクトを含めることができます。非公開 Organization は、その Organization メンバーのみが見ることができます。これらには非公開グループとプロジェクトのみを含めることができます。
 
-将来、OrganizationsはGroupsとProjectsに追加の内部可視性設定を取得します。これにより、含まれるUsersのみが見ることができる内部Organizationsを導入できます。つまり、Organizationの一部であるUsersのみが以下を見ることができます。
+将来、Organization はグループとプロジェクトのための追加の内部 (internal) 可視性設定を取得します。これにより、含まれるユーザーのみが見られる内部 Organization を導入できるようになります。これは、Organization の一部であるユーザーのみが以下を見られることを意味します:
 
-- Organization URLに移動したときに404ではなくOrganizationフロントページ
-- Organizationの名前
-- Organizationの説明
-- Activity ページ、Groups、Projects、UsersオーバービューなどのOrganizationページ。これらのページの内容は、特定のGroupsとProjectsへの各Userのアクセスによって決まります。例えば、プライベートProjectsはProjectのメンバーのみがプロジェクト概要で見ることができます。
-- 内部GroupsとProjects
+- Organization URL に移動した時の 404 の代わりに、Organization のフロントページ
+- Organization の名前
+- Organization の説明
+- Activity ページ、Groups、Projects、Users の概要などの Organization ページ。これらのページの内容は、各ユーザーの特定のグループとプロジェクトへのアクセスによって決定されます。たとえば、非公開プロジェクトはプロジェクト概要でそのプロジェクトのメンバーのみが見られます。
+- 内部グループとプロジェクト
 
-最終目標として、以下のシナリオを提供する予定です。
+最終目標として、私たちは以下のシナリオを提供する予定です:
 
-| Organization可視性 | Group/Project可視性 | Organizationを見る人は? | Groups/Projectsを見る人は? |
+| Organization の可視性 | Group/Project の可視性 | Organization を誰が見るか? | Groups/Projects を誰が見るか? |
 | ------ | ------ | ------ | ------ |
 | public | public | 全員 | 全員 |
-| public | internal | 全員 | Organizationメンバー |
-| public | private | 全員 | Group/Projectメンバー |
-| private | private | Organizationメンバー | Group/Projectメンバー |
+| public | internal | 全員 | Organization メンバー |
+| public | private | 全員 | Group/Project メンバー |
+| private | private | Organization メンバー | Group/Project メンバー |
 
-## ロールと権限 {#roles-and-permissions}
+## ロールと権限
 
-OrganizationsにはOwnerロールがあります。他のOrganization Membersと比べて、以下の操作を実行できます。
+Organization は Owner ロールを持ちます。他の Organization メンバーと比較して、以下のアクションを実行できます:
 
 | アクション | Owner | Member |
 | ------ | ------ | ----- |
-| Organization設定を表示 | ✓ |  |
-| Organization設定を編集 | ✓ |  |
-| Organizationを削除 | ✓ |  |
-| Usersを削除 | ✓ |  |
-| Organizationフロントページを表示 | ✓ | ✓ |
-| Groupsオーバービューを表示 | ✓ | ✓ (1) |
-| Projectsオーバービューを表示 | ✓ | ✓ (1) |
-| Usersオーバービューを表示 | ✓ |  |
-| Organizationアクティビティページを表示 | ✓ | ✓ (1) |
-| 両方のOwnerであればTop-level GroupをOrganizationに移管 | ✓ |  |
+| Organization 設定を表示 | ✓ |  |
+| Organization 設定を編集 | ✓ |  |
+| Organization を削除 | ✓ |  |
+| ユーザーを削除 | ✓ |  |
+| Organization フロントページを表示 | ✓ | ✓ |
+| Groups 概要を表示 | ✓ | ✓ (1) |
+| Projects 概要を表示 | ✓ | ✓ (1) |
+| Users 概要を表示 | ✓ |  |
+| Organization アクティビティページを表示 | ✓ | ✓ (1) |
+| 両方の Owner の場合、トップレベルグループを Organization に転送 | ✓ |  |
 
-(1) Membersは自分がアクセス権を持つものだけを見ることができます。
+(1) メンバーはアクセス権のあるものだけを見ることができます。
 
-GroupおよびProjectレベルでの[ロール](https://docs.gitlab.com/ee/user/permissions.html)は現在と同様です。
+[ロール](https://docs.gitlab.com/ee/user/permissions.html) はグループおよびプロジェクトレベルで現状のままです。
 
-## Organization OwnerとInstance Adminの関係
+## Organization Owner とインスタンス管理者の関係
 
-（Instance）Adminロールを持つUsersは現在、[Self-ManagedのGitLabインスタンスを管理](https://docs.gitlab.com/ee/administration/index.html)できます。
-機能がOrganizationレベルに移動するにつれて、Organization OwnerはAdminsにのみアクセス可能だった多くの機能にアクセスできるようになります。
-SaaSプラットフォームでは、これは企業がInstance Adminに依存せずに自分のOrganizationをより効率的に管理できるようにする助けになります。Instance Adminは現在GitLabチームメンバーです。
-SaaSでは、Instance AdminとOrganization Ownerは異なるユーザーになることが期待されます。
-Self-managedインスタンスは一般的に単一のOrganizationに限定されるため、この場合は両方のロールが同一人物によって果たされる可能性があります。
-ユーザーがシステムを悪用している場合など、Instance Adminによる介入が必要な状況があります。
-その場合、Instance Adminが取るアクションはOrganization Ownerのアクションを上書きします。
-例えば、Instance AdminはOrganization Ownerに代わってUserをバンまたは削除できます。
+(インスタンス) 管理者ロールを持つユーザーは、現在 [セルフマネージド GitLab インスタンスを管理](https://docs.gitlab.com/ee/administration/index.html) できます。
+機能が Organization レベルに移動されるにつれて、Organization Owner は現在管理者のみがアクセスできる機能にアクセスできるようになります。
+当社の SaaS プラットフォームでは、これは現在 GitLab チームメンバーであるインスタンス管理者に依存せずに、エンタープライズが独自の Organization をより効率的に管理できるようにするのに役立ちます。
+SaaS では、インスタンス管理者と Organization Owner は異なるユーザーであることを期待します。
+セルフマネージドインスタンスは一般的に単一の組織にスコープされているため、この場合、両方のロールが同じ人物によって満たされる可能性があります。
+インスタンス管理者による介入が必要となる状況もあります。たとえば、ユーザーがシステムを悪用している場合などです。
+そのような場合、インスタンス管理者が取るアクションは Organization Owner のアクションを上書きします。
+たとえば、インスタンス管理者は Organization Owner に代わってユーザーを禁止または削除できます。
 
 ## ルーティング
 
-今日、Users、Projects、Namespaces、コンテナーイメージのみが`https://gitlab.com/<path>/-/`でグローバルな一意性を必要とするルーティング可能なエンティティとみなされます。
-私たちはルーティングルールを更新して、既存のグローバルスコープのルートを許可し、新しい並列のOrganizationスコープのルートセットを導入します。
-グローバルスコープのルートは既存のルートとの後方互換性を維持し、単一のOrganizationを持つ可能性が高いGitLab.com以外のプラットフォームのパスの冗長性も削減します。
-[Current Organization](current_organization.md)に詳細があります。
+今日、ユーザー、プロジェクト、名前空間、コンテナイメージのみが `https://gitlab.com/<path>/-/` でグローバルな一意性を必要とするルーティング可能なエンティティと見なされます。
+私たちはルーティングルールを更新して、既存のグローバルスコープのルートを許可し、新しい並列の Organization スコープのルートのセットを導入します。
+グローバルスコープのルートは、既存のルートとの後方互換性を維持するとともに、おそらく単一の Organization を持つ GitLab.com 以外のプラットフォームのパスの冗長性を削減します。
+[Current Organization](current_organization.md) にさらに詳細があります。
 
-## Organization開発
+## Organization の開発
 
-以下はOrganizationsの高レベル開発ロードマップです。
-プロジェクトは複雑で、多くのエンジニアリングチームにわたる調整が必要です。
-それに応じて、ロードマップは以下の広範なフェーズに分割されています。
+以下は、Organization の高レベル開発ロードマップです。
+プロジェクトは複雑で、多くのエンジニアリングチーム間の調整が必要です。
+これに応えて、ロードマップは以下の広範なフェーズに分割されています。
 
 ```mermaid
 gantt
@@ -248,110 +220,110 @@ gantt
     Organization Level Features : co, after now, 2027-02-01
 ```
 
-### 作業ストリーム
+### ワークストリーム
 
-#### OrganizationのコンテキストとIsolation
+#### Organization コンテキストと隔離
 
-テーブルは、少数の例外を除き、Organizationに関連している必要があります。
-Organizationテーブルには、すべてのテーブルが直接または間接的にOrganizationに属するように`organization_id`、`namespace_id`、または`project_id`列が必要です。
-この作業は現在このエピック内にあります: https://gitlab.com/groups/gitlab-org/-/work_items/11670。
-`organization_id`外部キーを持つすべてのテーブルは、nullでない外部キー制約で定義されます。
-すべてのコードパスは正しい`organization_id`値を書き込み、デフォルト値に頼りません。
+少数の例外を除き、テーブルは Organization に関連している必要があります。
+Organization 関連のテーブルには `organization_id`、`namespace_id`、または `project_id` 列が必要であり、すべてのテーブルが直接または間接に Organization に属するようにします。
+この作業は現在、このエピックに位置しています: https://gitlab.com/groups/gitlab-org/-/work_items/11670。
+`organization_id` 外部キーを持つすべてのテーブルは、NOT NULL 外部キー制約付きで定義されます。
+すべてのコードパスは正しい `organization_id` 値を書き込んでおり、デフォルト値に依存していません。
 
-- また[Organizationの境界を越えた読み取りを防ぐ](https://gitlab.com/groups/gitlab-org/-/epics/17388)ことも目指しています。
-- 焦点はGroupとProjectの作成のためのプライマリページ、およびUsersダッシュボードに置かれます。
+- 私たちはまた、[読み取りが Organization の境界を超えて拡張するのを防ぐ](https://gitlab.com/groups/gitlab-org/-/epics/17388) ことを目指しています。
+- 主な焦点は、グループおよびプロジェクト作成のための主要ページ、およびユーザーダッシュボードに置かれます。
 
-#### Organization製品機能
+#### Organization プロダクト機能
 
-Organization Membershipの管理とダッシュボードを含むOrganizationのユーザーインターフェースを構築します。
+Organization メンバーシップ管理とダッシュボードを含む、Organization のユーザーインターフェースを構築します。
 
-初期Organizationターゲットに以下の機能セットを含める予定です。場合によっては意図的に問題の範囲を制限し、後で解決策を拡張する予定です。
+初期 Organization ターゲットには、以下の機能のセットを含めます。場合によっては、問題のスコープを意図的に制限しており、後でソリューションを拡張する予定です。
 
 - **作成**
-  - デフォルトOrganizationはインストールプロセス中にシードされます。
-  - GitLab.comでは、Organizationsはユーザー登録時にのみ作成できます。
-  - Self ManagedとDedicatedは登録時にOrganizationを作成するオプションを提供しません。
-  - Admin設定はOrganizationsを作成する機能を制御します。この設定はGitLab.comで有効になり、他では無効になります。
-  - Admin設定に加え、機能フラグがOrganizationsを作成する機能を制御します。GitLab.comでは、この機能フラグはGitLabチームメンバーのみに有効になります。それ以外では、この機能フラグはデフォルトで無効になります。有効化に対して警告しますが、Self-managedインスタンスがそうすることを防ぐことはできません。
+  - インストールプロセス中にデフォルト組織がシードされます。
+  - GitLab.com では、Organization はユーザー登録時にのみ作成できます。
+  - Self Managed および Dedicated は登録時に Organization を作成するオプションを提供しません。
+  - 管理者設定で Organization を作成する機能を制御します。この設定は GitLab.com では有効、その他では無効です。
+  - 管理者設定に加えて、フィーチャーフラグが Organization を作成する機能を制御します。GitLab.com では、このフィーチャーフラグは GitLab チームメンバーに対してのみ有効になります。その他では、このフィーチャーフラグはデフォルトで無効になります。有効化に対しては警告しますが、セルフマネージドインスタンスがそうすることを防ぐことはできません。
 - **編集**
-  - Organizationsは**Settings > General**セクションで編集できます。フォームフィールドには名前、ID（読み取り専用）、説明、アバター、可視性が含まれます。Organization Ownersのみアクセス可能。
-  - Organizationスラッグは**Settings > General**セクションで変更できます。Organization Ownersのみアクセス可能。
+  - Organization は **Settings > General** セクションで編集できます。フォームフィールドには名前、ID (読み取り専用)、説明、アバター、可視性が含まれます。Organization Owner のみがアクセスできます。
+  - Organization slug は **Settings > General** セクションで変更できます。Organization Owner のみがアクセスできます。
 - **可視性**
-  - Organizationsはパブリックまたはプライベートにできます。
-  - Default Organizationはパブリックです。
-  - `/explore`などのOrganization固有でないエンドポイントへのリクエストはデフォルトOrganizationにデフォルトします。
-  - パブリックOrganizationsは全員が見ることができます。パブリックおよびプライベートなGroupsとProjectsを含むことができます。
-  - プライベートOrganizationsはOrganizationの一部であるUsersのみが見ることができます。プライベートまたは内部のGroupsとProjectsのみを含むことができます。
-- **Users**
+  - Organization は公開または非公開にできます。
+  - デフォルト組織は公開です。
+  - `/explore` などの Organization 固有でないエンドポイントへのリクエストは、デフォルト組織にデフォルト設定されます。
+  - 公開 Organization は誰でも見ることができます。これには公開および非公開のグループとプロジェクトを含めることができます。
+  - 非公開 Organization は、Organization の一部であるユーザーのみが見ることができます。これには非公開または内部のグループとプロジェクトのみを含めることができます。
+- **ユーザー**
   - [ロールと権限](#roles-and-permissions)
-  - Organizationの作成はOrganization Ownerとして作成者Userを任命します。
-  - Organization OwnersはUserの既存ロールをUserからOwnerへ、またはその逆に更新できます。
-  - Organization当たり少なくとも1人のOrganization Ownerが必要です。
-  - UserはOrganizationの1つにのみ所属できます。Userが所属したいOrganizationごとに新しいアカウントを作成する必要があります。
-  - Organization Ownersは自分のOrganization内のUsersを削除できます。
-  - UserがGroupまたはProjectのメンバーになると、Organization Memberとしても追加されます。Organizationに追加されたことを通知するメールを受け取ります。
-  - Userを最後のGroupまたはProjectから削除してもOrganizationから削除されるべきではありません。
-  - Usersは自分のアカウントを削除できます。Usersが自分がOrganizationの最後のOwnerである場合はアカウントを削除できないようにするべきです。
-- **Groups**
-  - 既存のすべてのTop-level GroupsはDefault Organizationの一部です。
-  - GroupsはOrganizationに作成できます。
-  - GroupsはOrganization Ownerが編集できます。
-  - GroupsはOrganization Ownerが削除できます。
-  - Organization MembersはGroupsオーバービューでアクセス権を持つGroupsを表示できます。Groupsのリストはソートおよび検索できます。
-- **Projects**
-  - GitLab.comの既存のすべてのProjectsはDefault Organizationの一部です。
-  - ProjectsはOrganization内に直接作成できません。代わりにOrganizationに属するGroupに作成されます。
-  - ProjectsはOrganization Ownerが編集できます。
-  - ProjectsはOrganization Ownerが削除できます。
-  - Organization MembersはProjectsオーバービューでアクセス権を持つProjectsを表示できます。Projectsのリストはソートおよび検索できます。
-- **Activity**
-  - Organization MembersはOrganizationのActivityページにアクセスできます。
-- **Admin**
-  - 作成されたすべてのOrganizationsはAdmin Areaセクション`Organizations`に一覧表示されます。
-  - Adminsは新しいユーザーにOwnerまたはUserロールを割り当てられます。
-  - AdminsはUserの既存ロールを更新できます。
-  - AdminsはUserを削除でき、そのUserのOrganization関連付けについて警告を受け取ります。Adminsは最後のOrganization Ownerを削除できません。まず新しいOwnerを割り当てる必要があります。
+  - Organization の作成は、作成ユーザーを Organization Owner として任命します。
+  - Organization Owner はユーザーの既存のロールを User から Owner、またはその逆に更新できます。
+  - Organization ごとに少なくとも 1 人の Organization Owner が必要です。
+  - User は 1 つの Organization のみの一部にしかなれません。User が一部になりたい Organization ごとに新しいアカウントを作成する必要があります。
+  - Organization Owner は自分自身の Organization 内のユーザーを削除できます。
+  - ユーザーがグループまたはプロジェクトのメンバーになると、彼らも Organization メンバーとして追加されます。Organization に追加されたことを通知するメールを受け取ります。
+  - ユーザーを最後のグループまたはプロジェクトから削除しても、Organization からは削除されません。
+  - ユーザーは自分自身のアカウントを削除できます。ユーザーが Organization の最後の Owner である場合、自分のアカウントを削除できてはなりません。
+- **グループ**
+  - 既存のトップレベルグループはすべてデフォルト組織の一部です。
+  - グループは Organization 内で作成できます。
+  - グループは Organization Owner によって編集できます。
+  - グループは Organization Owner によって削除できます。
+  - Organization メンバーは、アクセス権のあるグループを Groups 概要で表示できます。グループのリストは並べ替えと検索が可能です。
+- **プロジェクト**
+  - GitLab.com の既存のすべてのプロジェクトはデフォルト組織の一部です。
+  - プロジェクトは Organization 内で直接作成できません。代わりに、Organization に属するグループ内で作成されます。
+  - プロジェクトは Organization Owner によって編集できます。
+  - プロジェクトは Organization Owner によって削除できます。
+  - Organization メンバーは、アクセス権のあるプロジェクトを Projects 概要で表示できます。プロジェクトのリストは並べ替えと検索が可能です。
+- **アクティビティ**
+  - Organization メンバーは Organization の Activity ページにアクセスできます。
+- **管理者**
+  - 作成されたすべての Organization は、管理エリアセクション `Organizations` にリストされます。
+  - 管理者は新しいユーザーに Owner または User ロールを割り当てることができます。
+  - 管理者はユーザーの既存のロールを更新できます。
+  - 管理者はユーザーを削除し、ユーザーの Organization 関連付けに関する警告を受け取ることができます。管理者は最後の Organization Owner を削除できません。最初に新しい Owner を割り当てる必要があります。
 - **ナビゲーション**
-  - 現在のOrganizationコンテキストはナビゲーションサイドバーに表示されます。
+  - 現在の Organization コンテキストは、ナビゲーションサイドバーに示されます。
 
-#### Organization Levelの機能
+#### Organization レベルの機能
 
-機能はInstance LevelとTop Level GroupからOrganization Levelに移動します。新しい機能もOrganization Levelで構築される可能性があります。焦点は認証と請求などのコア機能から始まります。
+機能はインスタンスレベルとトップレベルグループから Organization レベルに移動します。新しい機能も Organization レベルで構築される可能性があります。最初は認証や課金などのコア機能から焦点を当てます。
 
-この作業ストリームには2つのフェーズがあります。最初のフェーズは、Organizationを実用可能にするクリティカルな機能を移行することです。Organization発売後の第2フェーズは、残りのすべての機能をOrganizationレベルに持ち込むことです。
+このワークストリームには 2 つのフェーズがあります。最初のフェーズは、Organization を実行可能にするための重要な機能を移行することです。Organization のリリース後の 2 番目のフェーズは、残りのすべての機能を Organization レベルにもってくることです。
 
-## データ調査
+## データ探索
 
-初期の[データ調査](https://gitlab.com/gitlab-data/analytics/-/issues/16166#note_1353332877)から、UsersとOrganizationsに関する以下の情報を取得しました。
+最初の [データ探索](https://gitlab.com/gitlab-data/analytics/-/issues/16166#note_1353332877) から、ユーザーと Organization について以下の情報を取得しました:
 
-- Organizationに接続されているUsersのうち、大多数（98%）は単一のOrganizationにのみ関連付けられています。つまり、複数のOrganizationsをナビゲートする必要があるUsersは約2%と予想されます。
-- 大多数のUsers（78%）は単一のTop-level Groupのみのメンバーです。
-- 現在のTop-level Groupsの25%はOrganizationに一致させることができます。
-  - これらのTop-level Groupsのほとんど（83%）は複数のTop-level Groupsを持つOrganizationに関連付けられています。
-  - 複数のTop-level Groupsを持つOrganizationsのTop-level Groupsの（中央値）平均数は3です。
-  - 複数のTop-level Groupsを持つOrganizationsに一致するTop-level Groupsのほとんどは、単一のOrganizationに統合することを意図していると想定されます（82%）。
-  - 複数のTop-level Groupsを持つOrganizationsに一致するTop-level Groupsのほとんどは、単一の価格ティアのみを使用しています（59%）。
-- 現在のTop-level Groupsのほとんどはパブリック可視性に設定されています（85%）。
-- Top-level Groupsの0.5%未満が別のTop-level GroupとGroupsを共有しています。
-  これらのGroupsは、解決策を決定するまでOrganizationに移行できません。
+- 組織に接続されているユーザーの大多数 (98%) は、単一の組織にのみ関連付けられています。これは、約 2% のユーザーが複数の Organization 間を移動する必要があると予想されることを意味します。
+- ユーザーの大多数 (78%) は、単一のトップレベルグループのメンバーのみです。
+- 現在のトップレベルグループの 25% は組織に一致させることができます。
+  - これらのトップレベルグループのほとんど (83%) は、複数のトップレベルグループを持つ組織に関連付けられています。
+  - 複数のトップレベルグループを持つ組織のうち、トップレベルグループの (中央値) 平均数は 3 です。
+  - 複数のトップレベルグループを持つ組織に一致するほとんどのトップレベルグループは、単一の組織に統合されることが意図されていると想定されます (82%)。
+  - 複数のトップレベルグループを持つ組織に一致するほとんどのトップレベルグループは、単一の価格帯のみを使用しています (59%)。
+- 現在のトップレベルグループのほとんどは公開可視性に設定されています (85%)。
+- トップレベルグループの 0.5% 未満が別のトップレベルグループとグループを共有しています。
+  これらのグループは、ソリューションを決定するまで Organization に移行できません。
 
-この分析に基づいて、Organizationsを展開する際に同様の動作が見られると予想されます。
+この分析に基づいて、Organization のロールアウト時にも同様の動作が見られることが予想されます。
 
-## 決定
+## 意思決定
 
-- 2023-05-15: [Organizationのルートセットアップ](https://gitlab.com/gitlab-org/gitlab/-/issues/409913#note_1388679761)
-- [001: Organizationコンテキスト解決](decisions/001_organization_context_resolution.md)
-- [004: Organizationパススコープ](decisions/004_path_scope.md)
-- [005: Organizationログイン](decisions/005_organization_login.md)
-- [006: 管理と設定](decisions/006_administration_and_settings.md)
-- [007: Self-ManagedとDedicatedの単一Organization](decisions/007_self_managed_dedicated_single_organization.md)
-- [008: GitLab.com上の非隔離Organizations](decisions/008_non_isolated_organizations_gitlab_com.md)
+- 2023-05-15: [Organization route setup](https://gitlab.com/gitlab-org/gitlab/-/issues/409913#note_1388679761)
+- [001: Organization context resolution](decisions/001_organization_context_resolution.md)
+- [004: Organization path scope](decisions/004_path_scope.md)
+- [005: Organization login](decisions/005_organization_login.md)
+- [006: Administration and Settings](decisions/006_administration_and_settings.md)
+- [007: Self-managed and Dedicated Single Organization](decisions/007_self_managed_dedicated_single_organization.md)
+- [008: Non-isolated organizations on GitLab.com](decisions/008_non_isolated_organizations_gitlab_com.md)
 
 ## リンク
 
 - [Organization epic](https://gitlab.com/groups/gitlab-org/-/epics/9265)
 - [Organization Isolation](isolation.md)
-- [Organization: よくある質問](faq.md)
-- [Organization開発ガイドライン](https://docs.gitlab.com/development/organization/)
+- [Organization: Frequently Asked Questions](faq.md)
+- [Organization development guidelines](https://docs.gitlab.com/development/organization/)
 - [Enterprise Users](https://docs.gitlab.com/ee/user/enterprise_user/index.html)
-- [Cellsブループリント](../cells/index.md)
+- [Cells blueprint](../cells/_index.md)
