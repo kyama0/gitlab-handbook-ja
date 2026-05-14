@@ -27359,6 +27359,76 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "e261c406f259d643678dbec5620d873f1b1f22d714503906e19e887e16c29e7e"
+    },
+    "content/handbook/marketing/readmes/lee-tickett.md": {
+      "path": "content/handbook/marketing/readmes/lee-tickett.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f6869243773cae695b0416fc086fa656e88871c4899ec0760950c1bcbab4b35e"
+    },
+    "content/handbook/marketing/readmes/manav-readme.md": {
+      "path": "content/handbook/marketing/readmes/manav-readme.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "57be2ef2192567b12242630e946b7b4f03b658e5f1daf0b52c60867e7b4e13f4"
+    },
+    "content/handbook/marketing/readmes/michael-friedrich.md": {
+      "path": "content/handbook/marketing/readmes/michael-friedrich.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c19b1c38d4a70cfa71361e12dcf1ba844454f2e41fc6de114fcfee45c45b19da"
+    },
+    "content/handbook/marketing/readmes/nathan-dubord.md": {
+      "path": "content/handbook/marketing/readmes/nathan-dubord.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6e0273405de1e58ffc2d7d4fdf2f5c43eca333384857c0b2b1aa9a9e24f61f03"
+    },
+    "content/handbook/marketing/readmes/salina-tran.md": {
+      "path": "content/handbook/marketing/readmes/salina-tran.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9e511de1cce9299ee8c22777c304adaeaf23219506bb3f5b81eec34f2ec621e8"
+    },
+    "content/handbook/enterprise-data/ai/_index.md": {
+      "path": "content/handbook/enterprise-data/ai/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a00963afb240a6eb8c6d93a43bcd160ca7926c3e5e17e4f82ff22c82a10f17ca"
+    },
+    "content/handbook/enterprise-data/ai/agent-setup.md": {
+      "path": "content/handbook/enterprise-data/ai/agent-setup.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7fe4f7a99eb2f0f4b2da4c5ef7f29cfdd87f3a43c08233025b63cfd25c0bd0d8"
+    },
+    "content/handbook/enterprise-data/ai/agent-usage-guide.md": {
+      "path": "content/handbook/enterprise-data/ai/agent-usage-guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "36d13c059ead5a7927a9c41d08cd7e15e5a5f4919d61fba8a54d9677d5547f44"
+    },
+    "content/handbook/enterprise-data/ai/agentic-tool-development.md": {
+      "path": "content/handbook/enterprise-data/ai/agentic-tool-development.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "01c36f59bd6b49c78546840a9399b71282605d93202606bce79fa1ac15e0cb15"
+    },
+    "content/handbook/enterprise-data/ai/ai-vision-and-strategy.md": {
+      "path": "content/handbook/enterprise-data/ai/ai-vision-and-strategy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dbc7fdfb8de13b5684c4da93f100a69bb9be8310c7c433facaf9daadc9b0d030"
     }
   }
 }
