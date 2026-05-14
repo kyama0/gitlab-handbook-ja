@@ -26449,6 +26449,706 @@
       "translated_at": "2026-05-13T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "789e5bc5170b04b7b6aa4dcb3d08489edf4a1e6e493e41478e12b170f2e2b336"
+    },
+    "content/handbook/product/groups/product-analysis/dashboards-analysis-insights.md": {
+      "path": "content/handbook/product/groups/product-analysis/dashboards-analysis-insights.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "01619e3d74df1269d6d9ee222f950b8cc0f036e5ff20e0ae8afb44839eb4dc2c"
+    },
+    "content/handbook/product/groups/product-analysis/data-model-cheat-sheet.md": {
+      "path": "content/handbook/product/groups/product-analysis/data-model-cheat-sheet.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7de2434a1612ea31f329d6c75c43b2c6ce694bee0a0dc2d41e230a03e9a08f77"
+    },
+    "content/handbook/product/groups/product-analysis/dbt-cheat-sheet.md": {
+      "path": "content/handbook/product/groups/product-analysis/dbt-cheat-sheet.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ec72bd723bf29fe28b1cb8f27c21ca8785517b4699d9bc3ac1367edfefb98dc2"
+    },
+    "content/handbook/product/groups/product-analysis/experimentation.md": {
+      "path": "content/handbook/product/groups/product-analysis/experimentation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "651fc745c7ee850c3b27316f079dbb52118f60cb355033f58d251224fc567881"
+    },
+    "content/handbook/product/groups/product-analysis/team-processes.md": {
+      "path": "content/handbook/product/groups/product-analysis/team-processes.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "002a5f35a862e3bfc0237da8a48f365f6e51a4c8f5a115750c7ea80eb6070996"
+    },
+    "content/handbook/product/groups/product-analysis/engineering/dashboards.md": {
+      "path": "content/handbook/product/groups/product-analysis/engineering/dashboards.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d2ec31701cb1ed1d15210ff8dc8b5051af9aacc98b05ab5a2d154f40c0b522ff"
+    },
+    "content/handbook/product/groups/product-analysis/engineering/data-guide.md": {
+      "path": "content/handbook/product/groups/product-analysis/engineering/data-guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "11a2bf6ba5ee5898658c0225827f3c5b4661228ec6f90c5bc81dc64dfd7fb244"
+    },
+    "content/handbook/product/groups/product-analysis/engineering/metrics.md": {
+      "path": "content/handbook/product/groups/product-analysis/engineering/metrics.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "226f0beee8d0314920fba8d166b73ffb1477d606705b2bd7a3f89cb3e7b28a4f"
+    },
+    "content/handbook/product/groups/growth/_index.md": {
+      "path": "content/handbook/product/groups/growth/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7ae24efae2064a23e24adb25a239898574f652921041aa16f2923d13d7b31dc8"
+    },
+    "content/handbook/product/groups/fulfillment/_index.md": {
+      "path": "content/handbook/product/groups/fulfillment/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1bc8b8488c76f358590f53156b14d75e2fc490cf1cdb8fc35adb9958c4ebcc4e"
+    },
+    "content/handbook/product/groups/fulfillment/direction/fulfillment_platform.md": {
+      "path": "content/handbook/product/groups/fulfillment/direction/fulfillment_platform.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7faa7971c51f660a751778336087aeea6e5bb43fbd9947572f5828c721c3532c"
+    },
+    "content/handbook/product/groups/fulfillment/direction/fulfillment_section.md": {
+      "path": "content/handbook/product/groups/fulfillment/direction/fulfillment_section.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "431e2f8a11a26b44f3fa4645f69893cf3e03d912b715dc0cd163eef8abaf5c63"
+    },
+    "content/handbook/product/groups/fulfillment/direction/provision.md": {
+      "path": "content/handbook/product/groups/fulfillment/direction/provision.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "03286d1dd5d1f003f8c6f95749c82cf1b5aa3a5aa8da0275bdc5ced59b753a31"
+    },
+    "content/handbook/product/groups/fulfillment/direction/seat_management.md": {
+      "path": "content/handbook/product/groups/fulfillment/direction/seat_management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a0209069097dfb7276e7383393f3574d0cfdb93de080c9a33796e6fde0634520"
+    },
+    "content/handbook/product/groups/fulfillment/direction/subscription_management.md": {
+      "path": "content/handbook/product/groups/fulfillment/direction/subscription_management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "04f92c97a996809375c9b9b40da10673b77881a4f8a0747ab20319be2674ba42"
+    },
+    "content/handbook/product/groups/fulfillment/direction/utilization.md": {
+      "path": "content/handbook/product/groups/fulfillment/direction/utilization.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3d501414d5144ebc724c27ef667078e7d1cdfc0aaf731c57add5f99bc9119b08"
+    },
+    "content/handbook/product/cross-stage-features/_index.md": {
+      "path": "content/handbook/product/cross-stage-features/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f5d6e5c670fc637aff05abc1ffe794aa568b209b38a9be4476413c84e7de839a"
+    },
+    "content/handbook/product/cross-stage-features/merge-requests.md": {
+      "path": "content/handbook/product/cross-stage-features/merge-requests.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "95d41de4750744205feb4a35979b9603cef61902e2834631fed02c5e4aed4289"
+    },
+    "content/handbook/product/cross-stage-features/work-items.md": {
+      "path": "content/handbook/product/cross-stage-features/work-items.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f74d80b92c04e3eda815f0220c6a36b6fc9f88fc5e73b0dfac5a6015f4d0d621"
+    },
+    "content/handbook/product/categories/_index.md": {
+      "path": "content/handbook/product/categories/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "193b3e3421a0df8cc16ca4f43bb60d139dd8fd425c65d9cd43cc1b0950b4ec34"
+    },
+    "content/handbook/product/categories/features.md": {
+      "path": "content/handbook/product/categories/features.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7e8979f89aeb40bd301ef9d9c0b0a8bd6c6e4b8ccfc399dee5dae802c51ad28e"
+    },
+    "content/handbook/product/categories/lookup.md": {
+      "path": "content/handbook/product/categories/lookup.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fca0a07190ce02a5bf15520b733dbceee5181ada64af71ddd694195f11da8d93"
+    },
+    "content/handbook/product/categories/gitlab-the-product/_index.md": {
+      "path": "content/handbook/product/categories/gitlab-the-product/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "54540a2817b889cfc451e911008491fe27db0c59f3ffce30629da175d539ef4c"
+    },
+    "content/handbook/product/categories/gitlab-the-product/single-application/_index.md": {
+      "path": "content/handbook/product/categories/gitlab-the-product/single-application/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "36dbf9eac1da099be88801525c77482e78c42d902c3ac276bfd08d05b30c5646"
+    },
+    "content/handbook/product/categories/gitlab-the-product/single-application/dataflow.md": {
+      "path": "content/handbook/product/categories/gitlab-the-product/single-application/dataflow.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "34a508375a3ada72ab0005652e3eeee6051e236a7b50c3911e0eea1db216ee95"
+    },
+    "content/handbook/product/ai/_index.md": {
+      "path": "content/handbook/product/ai/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d622d7819935975732ff8392cc45f193f89934396810f0fdca95f89984b2490a"
+    },
+    "content/handbook/product/ai/continuity-plan.md": {
+      "path": "content/handbook/product/ai/continuity-plan.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eec5847fb1ea2d43f77e93a40491c324789c37eb674266f6d87661f9e8546ace"
+    },
+    "content/handbook/product/ai/model-vendor-selection-guidelines.md": {
+      "path": "content/handbook/product/ai/model-vendor-selection-guidelines.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a695154e859e69bd6f82f47150432fc890053805ce2b7731c4576a05573d7791"
+    },
+    "content/handbook/product/ai/ux-maturity.md": {
+      "path": "content/handbook/product/ai/ux-maturity.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "99459305468e9424026a2c1222935480025ad4c6a5f11f2848da3a05521cf162"
+    },
+    "content/handbook/product/ai/ux-support.md": {
+      "path": "content/handbook/product/ai/ux-support.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "662ee4f13a405785f9b7600dc1be562e39a26826645cd3b23e49949736527cbb"
+    },
+    "content/handbook/people-policies/_index.md": {
+      "path": "content/handbook/people-policies/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5c3a752dac6b5446c7aeed2aa57e48c85970970883e5ac9f31a4798e51051a48"
+    },
+    "content/handbook/people-policies/inc-usa.md": {
+      "path": "content/handbook/people-policies/inc-usa.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "83be65de624f0bd9a223a22f6dc8200236bde9955f380d46513f5d4df78d3106"
+    },
+    "content/handbook/people-policies/leave-of-absence/_index.md": {
+      "path": "content/handbook/people-policies/leave-of-absence/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b53e80b70775ba34d433dac116c0881abcabc221761257ebe5767b6e0037b110"
+    },
+    "content/handbook/people-policies/leave-of-absence/us.md": {
+      "path": "content/handbook/people-policies/leave-of-absence/us.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1e223dc94e37a6fd099275edc4670f527caf1c4e8ade4a3c1e48d18c16ef3111"
+    },
+    "content/handbook/people-policies/ireland-ltd/right-to-disconnect-policy.md": {
+      "path": "content/handbook/people-policies/ireland-ltd/right-to-disconnect-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c8cfbe7684940f3b20695caed85b76e7dddb51110e0e87803fd11b90f27d7de3"
+    },
+    "content/handbook/people-policies/india-ltd/_index.md": {
+      "path": "content/handbook/people-policies/india-ltd/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53305372d0a93429c4ca39cb6c7c3182a2225e214e8990775bf7a0e478637c3a"
+    },
+    "content/handbook/people-policies/france-sas/remote-work-charter.md": {
+      "path": "content/handbook/people-policies/france-sas/remote-work-charter.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "17a656542cab3a6371fba62dcf3be9b52cc95e72a38ec2424badbd7f22eb5815"
+    },
+    "content/handbook/people-policies/france-sas/right-to-disconnect-charter.md": {
+      "path": "content/handbook/people-policies/france-sas/right-to-disconnect-charter.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4f4734359b7532ce91fb042355a6db66f8c33ec7c8b4665c931d287ed7766f98"
+    },
+    "content/handbook/people-group/360-feedback.md": {
+      "path": "content/handbook/people-group/360-feedback.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ffa90e5fb56baaab83174357235fabe4a7708f444060950b8befc2a2bbbeede3"
+    },
+    "content/handbook/people-group/_index.md": {
+      "path": "content/handbook/people-group/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "75240cb99a76fc883c942f304266b47ad6814aa52ab6a5b5bd760e2c607e8b68"
+    },
+    "content/handbook/people-group/acceptable-use-policy.md": {
+      "path": "content/handbook/people-group/acceptable-use-policy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2e88c1baef223734b663cdcdc7dd10f48f4976480ac671500e18afc77282fa75"
+    },
+    "content/handbook/people-group/anti-harassment.md": {
+      "path": "content/handbook/people-group/anti-harassment.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3cbb987e86190dd73651a65d7c7391f291506f120c96037155a236ffac35f4ca"
+    },
+    "content/handbook/people-group/celebrations.md": {
+      "path": "content/handbook/people-group/celebrations.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d25b82f2b243ab4bf3fb0dba809118ff306c9e456b58aca61b41af875492cdf3"
+    },
+    "content/handbook/people-group/competencies.md": {
+      "path": "content/handbook/people-group/competencies.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "17f04df7a98d66a66cbc9b2710e087f8fb04a1e3d4a6b5c064761ab0273b48d4"
+    },
+    "content/handbook/people-group/contracts-probation-periods.md": {
+      "path": "content/handbook/people-group/contracts-probation-periods.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c003a758d9bcd174622a4336b9e450e38358b45fed8c901383999d389f6a84d7"
+    },
+    "content/handbook/people-group/directly-responsible-individuals.md": {
+      "path": "content/handbook/people-group/directly-responsible-individuals.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e838c5ea1f78eab3a03c6e7cffa86cb6b3b8fa4d2641db02bab43bb6e5ec807c"
+    },
+    "content/handbook/people-group/employment-solutions.md": {
+      "path": "content/handbook/people-group/employment-solutions.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5ffe4bf0757360ee31b4d4fbee2704974110a8e894534f78ecdf360cb60b2808"
+    },
+    "content/handbook/people-group/engagement.md": {
+      "path": "content/handbook/people-group/engagement.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "670b0a2446908a62113b43ee6fd7589862a7063b2a60cbe211cb727db288cd98"
+    },
+    "content/handbook/people-group/givelab-volunteer-initiatives.md": {
+      "path": "content/handbook/people-group/givelab-volunteer-initiatives.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "42e449c45da5440ff8c5d0586912a370e66930085fe7f9839fe9472b57fabc41"
+    },
+    "content/handbook/people-group/guidance-on-feedback.md": {
+      "path": "content/handbook/people-group/guidance-on-feedback.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3a7007a0f1358c0001859a775cd9bdac9f62de5cb7d4ad897301bf183f945a71"
+    },
+    "content/handbook/people-group/incident-response.md": {
+      "path": "content/handbook/people-group/incident-response.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b3371164d651e3a708a57963113c04a9eabd2cdcf8eef8cf16406fb1a2e4bb8e"
+    },
+    "content/handbook/people-group/organizational-change-management.md": {
+      "path": "content/handbook/people-group/organizational-change-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "35daa61d9781b104c742d4be77265dcf731c6db279c7192a1069fc2954364960"
+    },
+    "content/handbook/people-group/orientation-identity.md": {
+      "path": "content/handbook/people-group/orientation-identity.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "82db3d40b1a26ba629791852b7b83fca97b734e4f336069933b0ff8bf7a4c13e"
+    },
+    "content/handbook/people-group/people-group-program-management.md": {
+      "path": "content/handbook/people-group/people-group-program-management.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "34778d9fa94aef3cdd14e8fd2850a984c8589698bd452f6a6d4cdb2aa4873e35"
+    },
+    "content/handbook/people-group/promotion-document-style-guide.md": {
+      "path": "content/handbook/people-group/promotion-document-style-guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2dfb203c1ef050d8ae352174fd204c4ca0b5138a87d46fdd065fca4771a112d8"
+    },
+    "content/handbook/people-group/promotions-transfers.md": {
+      "path": "content/handbook/people-group/promotions-transfers.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1cb42d42974f6fada46d5624eee5c2ea5ac8c602b9dc6d1c4c96aa42963f453b"
+    },
+    "content/handbook/people-group/pronouns.md": {
+      "path": "content/handbook/people-group/pronouns.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1aa115e05bcdbad793eda3a7d7863c050593d6cb2efb4ce663283fec1fcb3a67"
+    },
+    "content/handbook/people-group/quarterly-talent-review.md": {
+      "path": "content/handbook/people-group/quarterly-talent-review.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d14cecfd6ea2dd209439584df7679792cea8d8e4744cf5fa5fd3337ed8d658d3"
+    },
+    "content/handbook/people-group/relocation.md": {
+      "path": "content/handbook/people-group/relocation.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7f01f964e2a23a5c0ba91de331019be9b666291dc3b6d7b0a5aa4bdb7fae530a"
+    },
+    "content/handbook/people-group/talent-assessment.md": {
+      "path": "content/handbook/people-group/talent-assessment.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9fe5dab658d7866851f3359a4dc3aab2b4691db8885d0b3752d3ae508f53fc3e"
+    },
+    "content/handbook/people-group/talent-development-program.md": {
+      "path": "content/handbook/people-group/talent-development-program.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b3b2c9e77911c25692e8b76c87a5d588d7300dec7c69df9645631754e34e420a"
+    },
+    "content/handbook/people-group/team-member-relations.md": {
+      "path": "content/handbook/people-group/team-member-relations.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b9d4a2f83bb3f40e07277e29b7a5aeb77eb193ad98ffdea83a6d87b8d4d21b1c"
+    },
+    "content/handbook/people-group/visas.md": {
+      "path": "content/handbook/people-group/visas.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c017fed8109d2510bc961d04fb1506c26209bce16ac743514c095532ff10faa7"
+    },
+    "content/handbook/people-group/time-off-and-absence/_index.md": {
+      "path": "content/handbook/people-group/time-off-and-absence/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d580c6887c382a9210c4899b794684cd88654c48ef5843faf859cab450f3538b"
+    },
+    "content/handbook/people-group/time-off-and-absence/leave-types.md": {
+      "path": "content/handbook/people-group/time-off-and-absence/leave-types.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2ea820c17225c148c82001abf677ebbacb79322210ce14ad38a9dfc615d5f8d6"
+    },
+    "content/handbook/people-group/time-off-and-absence/time-away-philosophy.md": {
+      "path": "content/handbook/people-group/time-off-and-absence/time-away-philosophy.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a44971c62f22873e8e1efccb08be2dd1e8b502ceac5d35d504c8273750cdb169"
+    },
+    "content/handbook/people-group/time-off-and-absence/time-off-types.md": {
+      "path": "content/handbook/people-group/time-off-and-absence/time-off-types.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1e5c656203d809a9a1d63003aab95ddb8a8603871aa02ad462a7e5d9a9abebd2"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/_index.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7fdc33de3543d05a41bf46d69c140bee3f3cd4a737b816e4ad0804cfcc81b432"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/people-analytics/_index.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "88b91b4aa83fb8d007933115d5de3c0e14434ce435e2dd9b8a31cadd86f48a60"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/people-analytics/data-governance.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/data-governance.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-13T18:43:26Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f9c70170a04cb1223e1c36ea876b96d76c896189718f0b91d4ddc8649e2d45fd"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/people-analytics/data-guide.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/data-guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "97f8f8acfa09a0e84a7ec903d21eb8273553d47ba57ece91d8d0bdd5358eaefa"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/people-analytics/office-hours.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/office-hours.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a378bd50ce3025cf050e5cc0280da6ecd2a93794e202f8ff697163e556d1ed74"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/people-analytics/people-tableau.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/people-tableau.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "26bc1a4e2acd6ca492addbdbac398349df465aa6b7480099febfd23b21dc67f7"
+    },
+    "content/handbook/people-group/people-ops-tech-analytics/people-analytics/survey-support.md": {
+      "path": "content/handbook/people-group/people-ops-tech-analytics/people-analytics/survey-support.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "34f887c552d3f786e77d093afcb794d6a7b694169abf46d9757de5006c610893"
+    },
+    "content/handbook/people-group/people-operations/_index.md": {
+      "path": "content/handbook/people-group/people-operations/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "da377e64d569b590c8fbad4d93d5f54aec28052232a5300e3264fcde2d4fc62a"
+    },
+    "content/handbook/people-group/people-compliance/_index.md": {
+      "path": "content/handbook/people-group/people-compliance/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8880fd13a22cebbaf9e23692038c0f229a4bc3145c396d0be83de9878a6d50c2"
+    },
+    "content/handbook/people-group/people-business-partners/_index.md": {
+      "path": "content/handbook/people-group/people-business-partners/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "47314d178e124594b99b6956466d7a32e41be0ce1132928c0411b1b30a6ad005"
+    },
+    "content/handbook/people-group/offboarding/_index.md": {
+      "path": "content/handbook/people-group/offboarding/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3684819dc5994b1020ef7052f924444ab182f75c4c5584a75c89ef0c5a6a391a"
+    },
+    "content/handbook/people-group/offboarding/faq.md": {
+      "path": "content/handbook/people-group/offboarding/faq.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bb91e03261aa9ee470401b9555d017d8165a92d543d41b09fda51079c4058e3d"
+    },
+    "content/handbook/people-group/offboarding/offboarding_standards.md": {
+      "path": "content/handbook/people-group/offboarding/offboarding_standards.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ccdddd3ac0d1d997cf3fe34d3187929ad6d5ad3e4f8dfad208e69a0503f42ffa"
+    },
+    "content/handbook/people-group/learning-and-development/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "942e47342b95938481fdffa85c0407a49b3f7980c689d8dd5048a29b8b56fa67"
+    },
+    "content/handbook/people-group/learning-and-development/hone.md": {
+      "path": "content/handbook/people-group/learning-and-development/hone.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0d0a2e13703f03e4d0881cf6f8f43cd82398675704cba652fc9c08a813f0ac8c"
+    },
+    "content/handbook/people-group/learning-and-development/internship-for-learning.md": {
+      "path": "content/handbook/people-group/learning-and-development/internship-for-learning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9d150006d7ee85c0c2e13ce232bc33fd599a262e806485394caebea4cec9dff4"
+    },
+    "content/handbook/people-group/learning-and-development/self-paced-learning.md": {
+      "path": "content/handbook/people-group/learning-and-development/self-paced-learning.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0921fc40864e169d1b8c253e47d4ace4b9e8ca0bd7e42b4076cd1dcaff61cfe9"
+    },
+    "content/handbook/people-group/learning-and-development/team-workshops/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/team-workshops/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2a2abf72a37c742deea098a7a5ee8088accf65fe4f0fe69ff513d520a7511413"
+    },
+    "content/handbook/people-group/learning-and-development/mentor/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/mentor/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a75cd20081d3f391ce8758ec71877f930692c19b5cd1d7dbb7cd86d8aad7ba00"
+    },
+    "content/handbook/people-group/learning-and-development/manager-development/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/manager-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "270b5326be753e09b9cf3a7916eb10419370a3795e4b4eaf3b5266eb2c070f7e"
+    },
+    "content/handbook/people-group/learning-and-development/level-up/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/level-up/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "98fd0c8cd15710c773d506de69e5b213ab60a53227a0cb865c7c02286de90002"
+    },
+    "content/handbook/people-group/learning-and-development/learning-initiatives/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/learning-initiatives/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "832d9aba975f7dca852e0dd12afef1e0e0d9894ce8ac57ab9217e52f2f7213bf"
+    },
+    "content/handbook/people-group/learning-and-development/growth-and-development/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/growth-and-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a6545176d6c1f5daa7f76abbbee1852b00ab03961b5721a3346e61d962350d09"
+    },
+    "content/handbook/people-group/learning-and-development/growth-and-development/tax.md": {
+      "path": "content/handbook/people-group/learning-and-development/growth-and-development/tax.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8f16615d0a9fd5fff5aecb7e90b0f8811484509c398b6c840dd45b42878ebcb7"
+    },
+    "content/handbook/people-group/learning-and-development/elevate-programs/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/elevate-programs/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "01664f0648ab31b6ef2f705ca5dfb17f3348356c1bc3fb0aeafcdbb358c959dc"
+    },
+    "content/handbook/people-group/learning-and-development/elevate-programs/elevateplus/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/elevate-programs/elevateplus/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5b29b3269df3218783001d0c9f64d387e4b71adc10ef97f935adbbf6d111cc18"
+    },
+    "content/handbook/people-group/learning-and-development/elevate-programs/elevate-prep/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/elevate-programs/elevate-prep/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "868749c1fb00500a7f48adbdca34a9ecd4f485db262cbe070e26f4410fad2cae"
+    },
+    "content/handbook/people-group/learning-and-development/elevate-programs/elevate-applied/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/elevate-programs/elevate-applied/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3689bc77648a223808ee9d5f7cdb7ed017b550ae9852a1fe89067afc1d39c2fe"
+    },
+    "content/handbook/people-group/learning-and-development/elevate-programs/elevate/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/elevate-programs/elevate/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "706659619e649c149b2635e7414b30bc93bf8926b4e0d725949a69ac666d256a"
+    },
+    "content/handbook/people-group/learning-and-development/career-development/_index.md": {
+      "path": "content/handbook/people-group/learning-and-development/career-development/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "34ee249b618d41277580d191bb541aadda90d0153aceeb3d572cd007ca39b9f0"
+    },
+    "content/handbook/people-group/learning-and-development/career-development/igp-guide.md": {
+      "path": "content/handbook/people-group/learning-and-development/career-development/igp-guide.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "34b2ec6832688c41b75b47b192242c712e88424b5d6538746ea4ba6d59e5952e"
+    },
+    "content/handbook/people-group/general-onboarding/_index.md": {
+      "path": "content/handbook/people-group/general-onboarding/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "969480befb3201368b0207b0346e637c743c0ea4171bc3ca52701d88ad2092e8"
+    },
+    "content/handbook/people-group/general-onboarding/mr-buddies.md": {
+      "path": "content/handbook/people-group/general-onboarding/mr-buddies.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fc71c53faa384f153779ccaf31bbedbe9b860880522e8606516c4233f8d85cab"
     }
   }
 }
