@@ -15919,9 +15919,9 @@
     "content/handbook/marketing/marketing-operations/campaigns-and-programs.md": {
       "path": "content/handbook/marketing/marketing-operations/campaigns-and-programs.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T12:00:00Z",
+      "translated_at": "2026-05-15T18:01:53Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7a6dfdaa65ecd9bb5f43070f1bb1ec7dce94acffd2e360033706004ddf2708c2"
+      "input_hash": "de9244591aa66c2f3ffb399d981e16ce246e7f3d69ae091ca048d34ba2159bc0"
     },
     "content/handbook/marketing/marketing-operations/cognism.md": {
       "path": "content/handbook/marketing/marketing-operations/cognism.md",
@@ -27465,6 +27465,20 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "2f35d94bfbea0a5659f026b0e9c7f885420cb66b4efb776c95bf972bc1565f87"
+    },
+    "content/handbook/customer-success/product-usage-data/usage-statistics.html.md": {
+      "path": "content/handbook/customer-success/product-usage-data/usage-statistics.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "39ce21d8346b2951397c32ef22afda4043def14191a28434f92fed7b4c579cf0"
+    },
+    "content/handbook/company/working-groups/isolation/fault_tolerance.html.md": {
+      "path": "content/handbook/company/working-groups/isolation/fault_tolerance.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a3097f48848e30846b6597dde8576a127ec6e19c0f02c039980f0195e25b7144"
     }
   }
 }
