@@ -10,7 +10,7 @@ translator: claude
 stale: false
 ---
 
-## Hello
+## こんにちは
 
 [私たちはCreateステージ](/handbook/engineering/devops/create/engineering-managers/)であり、DevOps部門内のチームグループです。私たちは[GitLab製品内](/handbook/product/categories/#create-stage)の3つの領域で構成されています。
 
