@@ -3,49 +3,43 @@ title: "Katrin Leinweber の README"
 description: "GitLab シニアサポートエンジニア、Katrin Leinweber のパーソナル README ページ"
 job: "Senior Support Engineer (EMEA)"
 upstream_path: "/handbook/engineering/readmes/katrin-leinweber/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T06:46:39Z"
+upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
+translated_at: "2026-05-14T12:00:00Z"
 translator: claude
 stale: false
 ---
 
 ## Katrin の README
 
-こんにちは、Katrin です！生化学の専門教育を受けましたが、ITのゼネラリストの道を自ら選びました。
-2014年からさまざまな形で Git を使ってきており、
-GitLab を取り巻くテクノロジーやアプリケーションをより深く掘り下げることに熱心に取り組んでいます。
+こんにちは、Katrin です！ 訓練を受けた生化学者ですが、選んで IT のジェネラリストになりました。
+2014 年からさまざまな形で Git を使ってきており、GitLab を取り巻く技術とアプリケーションをより深く掘り下げたいと思っています。
 
 ## 関連リンク
 
-* [チームページ](/handbook/company/team/#katrinleinweber)
 * [プロフィール](https://gitlab.com/katrinleinweber)
-* [Calendly ページ](https://calendly.com/katrinleinweber/informal-chat)（気軽なチャットのスケジュール用）
+* 私とチャットを予定する [Calendly ページ](https://calendly.com/katrinleinweber/informal-chat)
 
 ## 私の働き方
 
-自分が完了できるタスクを認識したら素早く飛び込む傾向があり、
-必要に応じてログやコードを調べ回るモードに入ります。
+完了できるタスクを認識したら素早く飛び込み、必要に応じてログとコードの探偵モードに入る傾向があります。
 
-## コミュニケーションについて
+## 私とのコミュニケーション
 
-Issue や MR を通じた非同期作業が好きです。
-GitLab の `To Do` 機能も積極的に活用しています。
-`@katrinleinweber` のメンションは遠慮なく使ってください。
+私は Issue と MR を通じて非同期に作業するのが好きです。
+特に GitLab の `To Do` 機能と組み合わせるのが好きです。
+ぜひ `@katrinleinweber` を気軽に使ってください。
 
-緊急で同期的なコミュニケーションが必要な場合は、Slack や Zoom でも構いませんが、
-本当に緊急かどうかご確認ください。
+緊急の同期コミュニケーションには、Slack や Zoom でも構いませんが、本当に緊急であることを確認してください。
 
-メールはあまりチェックしないため、最適な手段ではありません。
-週に一度確認しないこともあります。
+メールは良い選択ではありません。なぜならめったにチェックせず、週に 1 回も見ないこともあるからです。
 
 ## 弱み
 
-* 緊急タスクに取り組んでいると、立ち止まって全体像を把握することが少なくなりがちです。
-* よいアイデアが浮かぶのは、たいてい一晩ぐっすり眠った後です。
+* 緊急のタスクに取り組んでいるとき、立ち止まって全体像を見ることが少なすぎる。
+* 良いアイデアは時に、一晩よく眠った後にしか思い浮かばない。
 
 ## 強み
 
-よいアイデアはたいてい、一晩ぐっすり眠った後、あるいは[大自然の中](https://www.youtube.com/watch?v=AzttaR1PIlM)を散歩した後に浮かびます。
+良いアイデアは通常、一晩よく眠った後、または[素晴らしい屋外](https://www.youtube.com/watch?v=AzttaR1PIlM)を散歩した後に思い浮かびます。
 
-異なる業種や環境で働いてきた経験から、
-幅広い経験と問題解決アプローチを持っていると思っています。
+異なる業界やコンテキストで働いてきたので、幅広い経験と問題解決アプローチに頼れると思っています。
