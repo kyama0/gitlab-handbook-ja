@@ -2,8 +2,8 @@
 title: "CSM アスパイアリングリーダーズプログラム"
 description: "CSM がリーダーシップに向けてスキルアップするためのガイドです。"
 upstream_path: /handbook/customer-success/csm/aspiring-leaders-program/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -116,4 +116,4 @@ GitLab でマネージャーになる前に、Senior CSM または Staff CSM の
 
 2023 年 5 月から、このプログラムに参加を希望する CSM のためのパイロットグループを発足させます。このグループでは、定期的なコールと非同期ディスカッションを行い、それぞれの進捗、質問、フィードバックなどについて話し合います。
 
-このパイロットグループへの参加に興味がある方は、サインアップフォームにご注目いただくか、このパイロットプログラムを主導し、ご質問にお答えできる [Chloe Whitestone](/handbook/company/team/#chloe) にご連絡ください。
+このパイロットグループへの参加に興味がある方は、サインアップフォームにご注目いただくか、このパイロットプログラムを主導し、ご質問にお答えできる [Chloe Whitestone](https://gitlab.com/chloe) にご連絡ください。
