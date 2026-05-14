@@ -186,7 +186,7 @@ sequenceDiagram
     Destination-->>Owner: Notify import has finished
 ```
 
-### 互換性のある GitLab バージョン
+### 互換性のある GitLab バージョン {#compatible-gitlab-versions}
 
 **最小宛先バージョン**
 
@@ -414,7 +414,7 @@ classDiagram
 - `BulkImport` レコードと同様に、24 時間以上更新されていない `Import::Offline::Export` レコードは古いと見なされ、クリーンアップされます。既存の `BulkImports::StaleImportWorker` を再利用してこれらのレコードをクリーンアップすることが可能かもしれません。
 - 失敗する `BulkImport::Export` は、`Import::Offline::Export` 全体を自動的に失敗させるべきではありません。代わりに、`Import::Offline::Export` レコードで `has_failures` を `true` に設定する必要があります。`Import::Offline::Export` は、エクスポートされたすべてのリレーションが失敗した場合のみ `failed` と見なされます。
 
-#### ストレージプロバイダー
+#### ストレージプロバイダー {#storage-providers}
 
 オフライン転送は当初 AWS S3 をアップロードターゲットとしてサポートします。理由は次のとおりです:
 
