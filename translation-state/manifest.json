@@ -15919,9 +15919,9 @@
     "content/handbook/marketing/marketing-operations/campaigns-and-programs.md": {
       "path": "content/handbook/marketing/marketing-operations/campaigns-and-programs.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T18:01:53Z",
+      "translated_at": "2026-05-15T06:30:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "de9244591aa66c2f3ffb399d981e16ce246e7f3d69ae091ca048d34ba2159bc0"
+      "input_hash": "9498314233d30187aceb19cba065cd79a40a31f109e43f5a175fc5ed19357090"
     },
     "content/handbook/marketing/marketing-operations/cognism.md": {
       "path": "content/handbook/marketing/marketing-operations/cognism.md",
