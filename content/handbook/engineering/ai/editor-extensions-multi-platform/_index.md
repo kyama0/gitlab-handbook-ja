@@ -2,8 +2,8 @@
 title: "エディター拡張機能: マルチプラットフォームグループ"
 description: 私たちは JetBrains、Visual Studio、Neovim、Eclipse の各 IDE 向けコードエディター拡張機能を所有・保守し、Language Server にも貢献することで、GitLab のコア機能と AI 機能を開発者のワークフローに直接届けます。
 upstream_path: /handbook/engineering/ai/editor-extensions-multi-platform/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-06T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -26,7 +26,7 @@ stale: false
 
 以下が私たちの [安定したカウンターパート](/handbook/leadership/#stable-counterparts) です。
 
-{{< group-by-slugs dashaadu mcorren sam_reiss matthewpetersen>}}
+{{< group-by-slugs james.casey sam_reiss matthewpetersen>}}
 
 ---
 
