@@ -34,7 +34,7 @@ Zendesk のタイトルが付いたカラムは、誰もが Zendesk で正しい
 
 ASE は Salesforce へのアクセス権を持っていないため、必要な詳細を見つけるためにマネージャーと連携してください。その後、新しいアカウントの完全なエントリを README のテーブルに追加する MR を提出します。
 
-#### マネージャー向け手順
+#### マネージャー向け手順 {#manager-instructions}
 
 ASE を SFDC Account Team に「Assigned Support Engineer」として追加します。Salesforce のアカウントレコード -> **Account Team** リストに移動します:
 

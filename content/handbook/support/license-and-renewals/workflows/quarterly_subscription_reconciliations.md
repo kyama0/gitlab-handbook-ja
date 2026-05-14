@@ -41,7 +41,7 @@ QSR とその仕組みを説明し、[ドキュメントページ](https://docs.
 
 この時点でサポートチームはプロセスに影響を与えられないため、お客様にはセールスマネージャーとすべてのやり取りを継続するよう案内し、その後チケットをクローズできます。
 
-### サブスクリプションで QSR を一時停止する
+### サブスクリプションで QSR を一時停止する {#pausing-qsr-on-a-subscription}
 
 **重要:** サポートチームは、確認済みのバグ動作の場合を除き、サブスクリプションで QSR を無効化すべきではありません。
 
@@ -59,7 +59,7 @@ QSR とその仕組みを説明し、[ドキュメントページ](https://docs.
 1. バグ修正やその他の回避策が実装された後、再アクティブ化されることを保証する責任を負う必要があります。
    - [Zendesk Super App](/handbook/security/customer-support-operations/zendesk/apps/global#zendesk-super-app)、[reminder app](/handbook/security/customer-support-operations/zendesk/apps/global#gitlab-reminders-app)、Slack 標準のリマインダーツール、その他自分に合ったものを検討してください。
 
-## 最大シート超過の解決
+## 最大シート超過の解決 {#resolving-max-seats-overages}
 
 **重要:** chatter での必要な承認なしにネームスペースの `Max Seats` をリセットしないでください。このステップは True-Up の免除と見なし、sales-ops ハンドブックページの [True-Up の免除: ポリシーと承認要件](/handbook/sales/field-operations/order-processing/#waived-true-ups-policy-and-approval-requirements) を参照してください。
 
