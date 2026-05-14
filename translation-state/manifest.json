@@ -13712,10 +13712,10 @@
     },
     "content/handbook/marketing/_index.md": {
       "path": "content/handbook/marketing/_index.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-30T07:54:04Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "27a38ede9d6c7ae730886c5ea5892ee30b1e4200403b2ab4fb1fa36ad8d107c7"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "acb0cfd4dbeedbe836cead5a7066dfb8858dc831a7999bb03af5059d3dc76475"
     },
     "content/handbook/marketing/account-based-marketing/_index.md": {
       "path": "content/handbook/marketing/account-based-marketing/_index.md",
@@ -16939,10 +16939,10 @@
     },
     "content/handbook/support/license-and-renewals/workflows/quarterly_subscription_reconciliations.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/quarterly_subscription_reconciliations.md",
-      "upstream_sha": "9da08370100b76603b2eb82901592f9d21c9766c",
-      "translated_at": "2026-05-08T10:35:08Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "28d3f30ae56368f1e974025eb950aab821d40406c196299a5ad8f82087f9a75d"
+      "input_hash": "3898ac266a1e63d9b0cb376e671ad2ed8fd277296cc7be4431ea3d9ca2c03245"
     },
     "content/handbook/support/license-and-renewals/workflows/requests_for_documents_from_gitlab.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/requests_for_documents_from_gitlab.md",
@@ -18507,10 +18507,10 @@
     },
     "content/handbook/support/license-and-renewals/workflows/saas/trials_and_plan_change.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/saas/trials_and_plan_change.md",
-      "upstream_sha": "6c73093986242c762a8f4a2769fbfba69b31fcf9",
-      "translated_at": "2026-05-08T12:45:20Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "811185989c737d7b43824e706d46f4d51f8bb5a7364f061bb68feddf0ba6acc1"
+      "input_hash": "6e0dc26e11f57cf4d12590c066ba2e3d7072aae0bfc4a9a3922ee23bf0eaaa40"
     },
     "content/handbook/support/license-and-renewals/workflows/customersdot/_index.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/customersdot/_index.md",
@@ -18703,10 +18703,10 @@
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/working-with-ases/global-support-and-ases.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/working-with-ases/global-support-and-ases.md",
-      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
-      "translated_at": "2026-05-09T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "3cb4d065d78dfdc9409fdf8bd1bdebb3644beb4201793760f73f76144232d44b"
+      "input_hash": "10357970a003c97cec8aa95ce678991620c9585b1d91fb4545b2b8e4dd1b89cc"
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/_index.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/_index.md",
@@ -18752,10 +18752,10 @@
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/customer-onboarding.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/customer-onboarding.md",
-      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
-      "translated_at": "2026-05-09T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "07794969fefb47ffad62e8fe64e8b99abff978409c4d0adde07ff76f04b815cf"
+      "input_hash": "42d18781f997e8ffc3918f5159c9e93d287d47c6945acc8eb501a9f2586d5b92"
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/introductory-meeting.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/introductory-meeting.md",
@@ -18892,10 +18892,10 @@
     },
     "content/handbook/solutions-architects/tools-and-resources/trial-guidelines.md": {
       "path": "content/handbook/solutions-architects/tools-and-resources/trial-guidelines.md",
-      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
-      "translated_at": "2026-05-08T17:29:46Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a4cf2ceb7030d711b122d8f1ff972dfddb00cfa111bf75e22005bcf41e0d39ab"
+      "input_hash": "9a7443a06e81a3aa5830314bba543f46c0a45b4f7bd1bc2bf2946aad7055fa60"
     },
     "content/handbook/solutions-architects/tools-and-resources/workshop.md": {
       "path": "content/handbook/solutions-architects/tools-and-resources/workshop.md",
@@ -18997,10 +18997,10 @@
     },
     "content/handbook/solutions-architects/sa-practices/sa-leader-shadow.md": {
       "path": "content/handbook/solutions-architects/sa-practices/sa-leader-shadow.md",
-      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
-      "translated_at": "2026-05-08T18:13:56Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "e1206f2f75b587fcc441fd56ea8d7223c44fb445210cbf20f618dfd95fbf2fd3"
+      "input_hash": "cb1ddae1344df7ac21422a80e1f9395fb4bf720167113d6da92b1972e474fc61"
     },
     "content/handbook/solutions-architects/sa-practices/sa-office-hours.md": {
       "path": "content/handbook/solutions-architects/sa-practices/sa-office-hours.md",
@@ -19551,9 +19551,9 @@
     "content/handbook/security/responding-to-ransomware.md": {
       "path": "content/handbook/security/responding-to-ransomware.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a2f00321f5bea82eb75621017a2cacda25d75c3cf1bb59fbe3fba4200e105386"
+      "input_hash": "5409dae3f8bed8bc6849a052f6d1a9462b15ed02fed1e62ab29f4a247b5421b7"
     },
     "content/handbook/security/root-cause-analysis.md": {
       "path": "content/handbook/security/root-cause-analysis.md",
@@ -22155,9 +22155,9 @@
     "content/handbook/security/identity/counterparts/_index.md": {
       "path": "content/handbook/security/identity/counterparts/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "f8a764a0b4c24a610ea51ac19092c524b38d6f2aca311be63c0301eee1345bd0"
+      "input_hash": "6bb1a6da109dfc3abcd95b3230ad1a4fd6fce4fc711f00f7d514236b74e41c61"
     },
     "content/handbook/security/identity/gitops/_index.md": {
       "path": "content/handbook/security/identity/gitops/_index.md",
@@ -26243,9 +26243,9 @@
     "content/handbook/product/product-processes/dogfooding-for-r-d.md": {
       "path": "content/handbook/product/product-processes/dogfooding-for-r-d.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "399d1b1adf13ba6f18405f69a90e467f41f10ae877134430be2ef0f5702024d8"
+      "input_hash": "d41c82ae4d5c8dc24f31657fc93814d03ff8df0ee2639fbb332b1ab2eb6f52ca"
     },
     "content/handbook/product/product-processes/making-gifs.md": {
       "path": "content/handbook/product/product-processes/making-gifs.md",
