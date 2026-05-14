@@ -54,7 +54,7 @@ stale: false
 - 部門横断的なニーズをメモする — 例: "FE + BEが必要"、"UIテキスト用にTWレビューが必要"。
 - 他のIssueとのブロックおよび関連関係をマークします。
 
-### スパイクと概念実証
+### スパイクと概念実証 {#spikes-and-proof-of-concepts}
 
 オープンな質問が多すぎる、またはスコープが不明確なIssueには、[Plan - Spikeテンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Plan%20-%20Spike.md)を使用してスパイクまたはPoC Issueを作成し、調査または試用実装にキャパシティを充てます。
 
