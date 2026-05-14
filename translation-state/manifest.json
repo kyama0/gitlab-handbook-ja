@@ -27429,6 +27429,41 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "dbc7fdfb8de13b5684c4da93f100a69bb9be8310c7c433facaf9daadc9b0d030"
+    },
+    "content/handbook/customer-success/governance-question-bank.md": {
+      "path": "content/handbook/customer-success/governance-question-bank.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c0bd1c415cb7c3ba4189b1289c11d4eb9204f478314d5597a07e6ac20cb7b6f7"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization/decisions/009_state_machine.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/009_state_machine.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a665353722dd1756c1ec8ee041170192c7331ae440de79a162f707e867f67540"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization/lifecycle.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/lifecycle.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2455243ea595a63c0e0fbfcae791698dc1a6448d0abe136c892e578e6953c2b1"
+    },
+    "content/handbook/engineering/data-engineering/database-excellence/help.md": {
+      "path": "content/handbook/engineering/data-engineering/database-excellence/help.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "72ee2d745a3023aaeb91f161281eb1ec21c40f6a02b82dfbdf3ed30e099d325d"
+    },
+    "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/communication.md": {
+      "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/communication.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2f35d94bfbea0a5659f026b0e9c7f885420cb66b4efb776c95bf972bc1565f87"
     }
   }
 }
