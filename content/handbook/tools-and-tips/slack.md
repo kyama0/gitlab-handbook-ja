@@ -2,8 +2,8 @@
 title: "Slack"
 description: "GitLab における Slack の利用とヒント"
 upstream_path: /handbook/tools-and-tips/slack/
-upstream_sha: 68af60af15ea4dcb51c3d985f7473b212e4f2cb4
-translated_at: "2026-05-07T15:33:18Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -179,7 +179,7 @@ Slack には、Slack に投稿されたメッセージに含まれる [リンク
 
 `#whats-happening-at-gitlab` のようなチャンネルで、複数のリンクプレビュー付きの投稿を共有しているチームメンバーがおり、それが気を散らすと感じる場合は、[全員がモデレーター](/handbook/communication/#everyone-is-a-moderator) の精神で行動し、次のいずれかを検討してください:
 
-- [DM で知らせる](/handbook/communication/#communicate-directly): メッセージにノイズを加えていることを伝えます。
+- DM で知らせる: メッセージにノイズを加えていることを伝えます。
 - メッセージに `:consider-removing-link-previews-to-keep-the-channel-tidy-please:` 絵文字でリアクションする。
 
 ## カスタムテーマ
