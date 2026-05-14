@@ -611,17 +611,17 @@
     },
     "content/handbook/ceo/shadow.md": {
       "path": "content/handbook/ceo/shadow.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "3d684cd954a17f6ea7f46bdd8d518dac3637c33dbe3eb612c0fb10313503bb74"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2684f77e44c90551d319a02a3df502558832f53a6eafc1874feca2cf03e0c21e"
     },
     "content/handbook/communication/_index.md": {
       "path": "content/handbook/communication/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "924475fca41eb95abc992e66d4a50643935b6e049c1d541c66f4bebff91e7e6b"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "92e4bec3d80ac1d6127fb861bce9eee14d8f212bb30f9b3215302dc891485dae"
     },
     "content/handbook/communication/ask-me-anything.md": {
       "path": "content/handbook/communication/ask-me-anything.md",
@@ -789,10 +789,10 @@
       "input_hash": "c64fdb51caade5d2c1202a8bd3c351145122451364c4f11a2515abde4de52524"
     },
     "content/handbook/company/culture/all-remote/informal-communication.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "6cc32f9395ce458a77f6af86d73717e79deebbe233d65f2f12ed6252a06059ab"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bcdaa27d7bdc0546eecc0c1cfb36ee985b0a2448426e589363d6cc9deb59575f"
     },
     "content/handbook/company/culture/all-remote/internship.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -945,10 +945,10 @@
       "input_hash": "8dd79d221ee69efd861fc26192c5e50418fd285a0c8e75c3e6aa4d6efadc25a0"
     },
     "content/handbook/company/culture/inclusion/_index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "d3781dc42e31835fc5e240a514ee12b222f6bfdd0d7fca558a180465a641e546"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "43bbf697733169c019eff36f8242d525155912d01e46c923d333a1cda658fdb6"
     },
     "content/handbook/company/culture/inclusion/advisory-group-members.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1047,10 +1047,10 @@
       "input_hash": "c6058577de283e169be8df2cafdb7330533bf73cb62d51ff54d46caa0e076e4e"
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/erg-gitlab-diversability.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "75bc4c66ca9dd60bb5d17292ce4332a32aae96118b1fee038de4ea3536c489c2"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5531bd0cae48e4cf96d63d8d1b6d5786d482dd9bf68310ec09c512bab8882ab6"
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/leaders/_index.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1119,10 +1119,10 @@
       "input_hash": "574bc696cc0e840e4a706235555a31664803a4b56f5555b799fa4090fa005530"
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-black/_index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T10:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "2c973816630a8157e8f56cdb83515423742380999ab4dde2fe6220e0e732c94f"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53367735731b69f12d4e36f58c71ce80f7378b6eacb0af315652f3b21533acea"
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-gente.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1131,10 +1131,10 @@
       "input_hash": "4374bc16f35d2c9e4570810e5596c454cbc4e4d575480f13e99f1ba47a001454"
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-pride/_index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "8d50ae058f19b9e0a53fcdffd6fbf9b2abbf6a027ff81cefd648a61ac2e00a12"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "77966764f53337b64e9922632edae2c3cb3c12d7c48fd5413df3d8a3132e7576"
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-pride/mentorship-program.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1143,16 +1143,16 @@
       "input_hash": "d20052c0f7661e53c6564830c38d0d5c4494f1a7511e3653f09152ac0fa3f4b9"
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/_index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "c2df568cda95d0b84f793507855f0ed5b07e50842d8b978687adb75850ad3122"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bc41c3ab97177a46a4e31f8142be46dcd831408f202a0bb782a0170bdd0a2beb"
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/agile-career.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "32d2699af6434c1831707261c56821cf551157f04189c5a84f5821343741ffe0"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3dad90096bdf4f1378933d25eafa374d8b223ec466e7ff968463a0ad49f1bd1b"
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/mentorship-program.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1299,10 +1299,10 @@
       "input_hash": "fd21826b0f32589871330463c47a846f6d28b7d598970f7e70ccf5b4441900f9"
     },
     "content/handbook/company/infrastructure-standards/realms/sandbox/_index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f723dd82674b288fc88a1a9fb579ad91adcd8cb298a6c7af1141451fe484382a"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ee558526a35f238a82f5d368c7e9cc5f892647d8643849888f0320b347afccf3"
     },
     "content/handbook/company/infrastructure-standards/realms/sandbox/labels-tags.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
