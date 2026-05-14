@@ -1,210 +1,210 @@
 ---
-title: "請求オペレーション"
+title: "Billing Operations"
 upstream_path: "/handbook/finance/accounting/finance-ops/billing-ops/"
-upstream_sha: "8aa1a9efd98433fb2296996366f1023b5675ea70"
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
 
-請求業務ハンドブックへようこそ
+Billing Operationsハンドブックへようこそ
 {.h2}
 
-## 憲章
+## チャーター
 
-請求業務チームは Revenue Operations 組織の一部です。私たちの請求チームはグローバルアカウントポートフォリオの請求業務を担当します。
+Billing OperationsチームはRevenue Operations組織の一部です。私たちのBillingチームは、グローバルアカウントポートフォリオの請求機能を担当しています。
 
-**GitLab 請求チームは 3 つの地域チームで構成されています：**
+**GitLab Billingチームは3つのリージョナルチームで構成されています:**
 
-- 米州 - 西部地域
-- 米州 - 東部地域
-- EMEA/APAC 地域
+- Americas - West Region
+- Americas - East Region
+- EMEA/APAC Region
 
-追加情報とリソースについては、内部の [Wiki](https://gitlab.com/gitlab-com/Finance-Division/finance/-/wikis/Billing%20Operations%20&%20Accounts%20Receivable%20Wiki) ページをご覧ください！
+追加情報とリソースについては、内部 [Wiki](https://gitlab.com/gitlab-com/Finance-Division/finance/-/wikis/Billing%20Operations%20&%20Accounts%20Receivable%20Wiki) ページをご覧ください！
 
-## チームメンバーの紹介
+## チーム紹介
 
-- [Tim Cheeney](/handbook/company/team/#tcheeney) - ディレクター、請求＆回収（グローバル）
-- [Josephine Hararah](/handbook/company/team/#josephinehararah) - シニアマネージャー、請求オペレーション（グローバル）
-- [Kinga Polgardi](/handbook/company/team/#kingapolgardi) - マネージャー、請求オペレーション（EMEA および APAC）
-- [Cristine Sotomango Marquardt](/handbook/company/team/#csotomango) - マネージャー、請求オペレーション（AMER）
-- [Karen McKinney](/handbook/company/team/#k.mckinney) - シニア請求オペレーションアナリスト（AMER）
-- [Ausha Saptouw](/handbook/company/team/#aushas) - シニア請求オペレーションアナリスト（EMEA）
-- [Laura Robins](/handbook/company/team/#laurarobins) - シニア請求オペレーションアナリスト（EMEA）
-- [Nicole Ann Garcia](/handbook/company/team/#nprecilla) - 請求オペレーションアナリスト（EMEA/APAC）
-- [Christian Willis](/handbook/company/team/#christianwillis) - シニア請求オペレーションアナリスト（AMER）
-- [Diana Quitevis](/handbook/company/team/#dquitevis) - シニア請求オペレーションアナリスト（AMER）
-- [Bernie Jones](/handbook/company/team/#berniej) - 請求オペレーションアナリスト（EMEA/APAC）
-- [Francisco da Silva](/handbook/company/team/#franciscodasilva) - 請求オペレーションアソシエイト（EMEA/APAC）
-- [Joel Javier](/handbook/company/team/#jjavier3) - 請求オペレーションアナリスト（EMEA/APAC）
+- [Tim Cheeney](https://gitlab.com/tcheeney) - Director, Billing & Collections (Global)
+- [Josephine Hararah](https://gitlab.com/josephinehararah) - Senior Manager, Billing Operations (Global)
+- [Kinga Polgardi](https://gitlab.com/kingapolgardi) - Manager, Billing Operations (EMEA and APAC)
+- [Cristine Sotomango Marquardt](https://gitlab.com/csotomango) - Manager, Billing Operations (AMER)
+- [Karen McKinney](https://gitlab.com/k.mckinney) - Senior Billing Operations Analyst (AMER)
+- [Ausha Saptouw](https://gitlab.com/aushas) - Senior Billing Operations Analyst (EMEA)
+- [Laura Robins](https://gitlab.com/laurarobins) - Senior Billing Operations Analyst (EMEA)
+- [Nicole Ann Garcia](https://gitlab.com/nprecilla) - Billing Operations Analyst (EMEA/APAC)
+- [Christian Willis](https://gitlab.com/christianwillis) - Senior Billing Operations Analyst (AMER)
+- [Diana Quitevis](https://gitlab.com/dquitevis) - Senior Billing Operations Analyst (AMER)
+- [Bernie Jones](https://gitlab.com/berniej) - Billing Operations Analyst (EMEA/APAC)
+- [Francisco da Silva](https://gitlab.com/franciscodasilva) - Billing Operations Associate (EMEA/APAC)
+- [Joel Javier](https://gitlab.com/jjavier3) - Billing Operations Analyst (EMEA/APAC)
 
-*請求チームはセールス、Deal Desk、売掛金、Revenue Operations と緊密に連携して業務を行います。*
+*BillingチームはSales、Deal Desk、Accounts Receivable、Revenue Operationsと緊密に連携しています。*
 
-### 役立つリンク
+### 便利なリンク
 
-- [商談の作成/見積もりの作成方法は？](/handbook/sales/field-operations/sales-operations/deal-desk/)
+- [オポチュニティの作成／クォートの構築方法](/handbook/sales/field-operations/sales-operations/deal-desk/)
 - [注文要件](/handbook/sales/field-operations/order-processing/)
-- [法務チームへの連絡](/handbook/sales/field-operations/order-processing/#process-for-agreement-terms-negotiations-when-applicable-and-contacting-legal)
+- [リーガルチームへの連絡](/handbook/sales/field-operations/order-processing/#process-for-agreement-terms-negotiations-when-applicable-and-contacting-legal)
 - [ライセンスとプランに関する質問](/handbook/support/internal-support#common-internal-requests---sales-team--customer-success-managers--accounts-receivable)
-- [Zuora 請求テックスタックガイド](https://internal.gitlab.com/handbook/finance/accounting/finance-ops/billing-ops/zuora-billing/)
+- [Zuora Billing Tech Stack Guide](https://internal.gitlab.com/handbook/finance/accounting/finance-ops/billing-ops/zuora-billing/)
 
-## 請求チームとの連絡
+## Billingとのコミュニケーション
 
-[Slack でのダイレクトメッセージを避けて](/handbook/communication/#avoid-direct-messages)、請求チームメンバーに直接連絡することは控えてください。#Finance チャンネルで `@billing-ops` をタグ付けしてください。
+Billingチームメンバーに [Slackで直接連絡](/handbook/communication/#avoid-direct-messages) することは避けてください。#Financeチャンネルで `@billing-ops` にタグ付けしてください。
 
-- メール：`billing@gitlab.com`
-- Salesforce：[こちら](/handbook/sales/field-operations/requesting-internal-support/#salesforce-workflow)で説明されている内部サポートリクエストのワークフローに従ってください。これにより、お問い合わせが請求オペレーションチームに確実にルーティングされます。
+- メール: `billing@gitlab.com`
+- Salesforce: [こちら](/handbook/sales/field-operations/requesting-internal-support/#salesforce-workflow) で説明されているRequesting Internal Supportワークフローに従ってください。これにより、お問い合わせがBilling Operationsチームにルーティングされます。
 
-遅延を避けるために、個別のチームメンバーに商談のタグ付けをしないでください。
+潜在的な遅延を避けるため、オポチュニティで個別のチームメンバーにタグ付けしないでください。
 
-**見積もりに関する質問は？** [こちら](/handbook/sales/field-operations/requesting-internal-support/#salesforce-workflow)で説明されている手順に従い、Deal Desk チームにお問い合わせください。
+**クォートに関する質問は？** [こちら](/handbook/sales/field-operations/requesting-internal-support/#salesforce-workflow) で説明されている手順に従ってDeal Deskチームに連絡してください。
 
-## 標準的な業務プロセス
+## 標準オペレーティングプロセス
 
-請求チームは Zuora で毎日の請求照合と請求実行を行います。日次請求実行は前日のすべての受注確定（Close Won）の商談を対象とします。
+BillingチームはZuoraで毎日請求照合とBill Runを実施します。日次のbill runは、前日のすべてのclosed wonオポチュニティを網羅します。
 
-Deal Desk/受注管理から「Close Won」ステージまでの予想サイクルは、商談の複雑さによって 12〜15 時間です。
-「Close Won」から請求書までの予想サイクルは、関連する商談の複雑さによって 24〜48 時間です。
+期待されるDeal Desk/Order ManagementからStage `Close Won` までのサイクルは、オポチュニティの複雑さによって12〜15時間です。
+期待される `Close Won` から請求書発行までのサイクルは、関連するオポチュニティの複雑さによって24〜48時間です。
 
-> - 請求書テンプレートに関する手動更新はすべて法務を通じて行う必要があります。
-> - 予約エラーに関連する商談については SLA は適用されません。
+> - 請求書テンプレートに関する請求書への手動更新は、Legalを経由する必要があります。
+> - SLAは、関連するブッキングエラーにより拒否されたオポチュニティには適用されません。
 
-## 機能上の責任
+## 機能的責任
 
 - **請求情報のレビュー**
-  - 承認待ちおよび請求待ちの商談の日次レビュー
-  - 関連する請求情報の正確性を検証
-  - 顧客アカウントの価格/パッケージングを確認
-  - システム情報を照合して適時かつ正確な請求書の配送を確保
-- **CRM と ERP 間のデータ/情報の同期管理**
-  - 正確性のために毎日システム間の照合を実施
-  - 請求書提出前に顧客、法人、見積もり、契約、請求先/販売先情報が確認されていることを確認
-- **請求書の準備、検証、送付**
-- **コミッションデータレポートと請求書の検証**
-- **月末活動**
-  - 予約から請求書への照合
-  - VAT レポートと検証
-  - プロフェッショナルサービスの請求照合
-  - 関連する貸借対照表 G/L 勘定の照合
+  - 承認と請求書発行を待つオポチュニティの日次レビュー
+  - 関連する請求情報を正確性のために検証
+  - 顧客アカウントの価格／パッケージの確認
+  - タイムリーで正確な請求書配信を確保するためのシステム情報の照合
+- **CRMとERP間のデータ／情報同期の管理**
+  - 正確性のためのシステム間の日次照合の実施
+  - 請求書送信前に、顧客、エンティティ、クォート、契約、bill-to/sold-to情報が検証されていることを確認
+- **請求書の準備、検証、送信**
+- **コミッションデータレポートと請求書検証**
+- **月末アクティビティ**
+  - ブッキングから請求書への照合
+  - VATレポートと検証
+  - プロフェッショナルサービス請求書の照合
+  - 関連するBalance Sheet G/L Accountsの照合
 
-参照：[内部請求チェックリスト](https://gitlab.com/gitlab-com/Finance-Division/finance/-/wikis/Billing%20Checklist%202020)
+参照: [Internal Billing Checklist](https://gitlab.com/gitlab-com/Finance-Division/finance/-/wikis/Billing%20Checklist%202020)
 
-## 請求オペレーションシステム
+## Billing Operationsシステム
 
 ### Salesforce
 
-Salesforce は顧客のソーシング、見積もりの作成、すべての顧客情報とサポートドキュメントの管理に使用されます。請求チームは SFDC を使用して、すべての関連する顧客ドキュメントとアカウント情報を確認します。
+Salesforceは顧客のソーシング、クォートの作成、すべての顧客情報とサポートドキュメンテーションの保管に使用されます。BillingチームはSFDCを使用してすべての関連顧客ドキュメンテーションとアカウント情報を表示します。
 
-参照：[ビジネスオペレーション - Salesforce リファレンス](/handbook/sales/field-operations/sfdc/)
+参照: [Business Operations - Salesforce Reference](/handbook/sales/field-operations/sfdc/)
 
 ### Zuora
 
-[Zuora](https://gitlab.com/gitlab-org/customers-gitlab-com/-/tree/staging/doc/architecture#zuora) は、サブスクリプション管理テクノロジーの分野のリーダーであり、企業のサブスクリプション業務を自動化するプラットフォームを提供します。GitLab では Zuora のプラットフォームを使用して、請求と CRM のための他のプラットフォームとの統合、サブスクリプションフローの自動化、レポート作成のサポートを行っています。このプラットフォームは、プロダクトカタログ、サブスクリプション、請求書など、多くの重要なビジネスオブジェクトの信頼できる情報源とみなされています。Zuora Billing の実装に関する詳細（[Zuora オブジェクトモデル](https://knowledgecenter.zuora.com/Get_Started/Zuora_business_object_model)や CustomersDot などのシステムとの統合を含む）については、**[Zuora 請求テックスタックガイド](https://internal.gitlab.com/handbook/finance/accounting/finance-ops/billing-ops/zuora-billing/)** をご覧ください。
+[Zuora](https://gitlab.com/gitlab-org/customers-gitlab-com/-/tree/staging/doc/architecture#zuora) は、サブスクリプションマネジメント技術スペースのリーダーで、ビジネスのサブスクリプションオペレーションの自動化を可能にするプラットフォームを提供しています。GitLabではZuoraのプラットフォームを使用して、請求書とCRMの他のプラットフォームと統合し、サブスクリプションフローを自動化し、レポート作成を支援します。このプラットフォームは、プロダクトカタログ、サブスクリプション、請求書などの多くの重要なビジネスオブジェクトのsource of truthと見なされています。Zuora Billingの実装に関する詳細については、[Zuora Object Model](https://knowledgecenter.zuora.com/Get_Started/Zuora_business_object_model) とCustomersDotなどのシステムとの統合を含む **[Zuora Billing Tech Stack Guide](https://internal.gitlab.com/handbook/finance/accounting/finance-ops/billing-ops/zuora-billing/)** を参照してください。
 
-- **Zuora は以下のために使用されます：**
-  - すべての顧客アカウントの請求
-  - `ar@gitlab.com` 経由の請求書送付
-  - すべての現金処理（現金受領）
-  - 見積もりのための SFDC との統合（Zuora CPQ）
-  - Avalara 税務報告ソフトウェアとの統合
-  - Zuora Revenue との統合
+- **Zuoraは以下のために使用されます:**
+  - すべての顧客アカウントの請求書発行
+  - `ar@gitlab.com` を介した請求書送信
+  - すべての現金適用（現金レシート）
+  - クォーティングのためのSFDCとの統合（Zuora CPQ）
+  - Avalara Tax Reporting Softwareとの統合
+  - Zuora Revenueとの統合
 
-> 技術的な実装の詳細については、**[Zuora 請求テックスタックガイド](https://internal.gitlab.com/handbook/finance/accounting/finance-ops/billing-ops/zuora-billing/)** をご覧ください。
+> Zuora Billingの実装の詳細については、**[Zuora Billing Tech Stack Guide](https://internal.gitlab.com/handbook/finance/accounting/finance-ops/billing-ops/zuora-billing/)** を参照してください。
 
 ### Zendesk
 
-Zendesk は顧客からの問い合わせのサポートキューです。各ケースは Zendesk チケットに変換され、カテゴリ別に「ビュー」にフィルタリングされます。日常のワークフローの一環として、請求オペレーションチームはこれらのビューを監視し、チケットを完了まで処理します。
+Zendeskは顧客からの問い合わせのためのサポートキューです。各ケースはZendeskチケットに変換され、カテゴリ順に `View` にフィルタリングされます。日次ワークフローの一環として、Billing Operationsチームはこれらのビューを監視し、完了までチケットを処理します。
 
-参照：[Zendesk](/handbook/security/customer-support-operations/zendesk/)
+参照: [Zendesk](/handbook/security/customer-support-operations/zendesk/)
 
-## サポートの受け方
+## ヘルプの取得方法
 
 <details>
 <summary markdown='span'>
-  ライセンスへのアクセスが必要な場合
+  ライセンスへのアクセスにヘルプが必要
 </summary>
 
-1. https://customers.gitlab.com/customers/sign_in でアカウントにログインします。
-1. メールアドレスでログインします（メールアドレスを提供する必要があります）。
-1. 「Manage Purchases」をクリックします。
-1. 「Download License」をクリックします。
+1. https://customers.gitlab.com/customers/sign_in でアカウントにログイン
+1. ログインはメールアドレスです。彼らにメールアドレスを提供する必要があることに注意してください
+1. 「Manage Purchases」をクリック
+1. 「Download License」をクリック
 
-> それでもライセンスにアクセスできない場合は、[こちら](/handbook/support/internal-support#regarding-licensing-and-subscriptions)でサポート Issue を作成してください。
+> それでもライセンスにアクセスできない場合は、[こちら](/handbook/support/internal-support#regarding-licensing-and-subscriptions) でサポートIssueを作成してください。
 
 </details>
 
 <details>
 <summary markdown='span'>
- 支払い方法は？
+ 支払いはどのように行えますか？
 </summary>
 
-- 現在利用可能な支払い方法には以下が含まれます：
+- 現在利用可能な支払い方法は以下を含みます:
   - ACH
-  - 電信送金
+  - Wire
   - 小切手（米国のみ）
   - クレジットカード
 
-> 追加の支払い指示も請求書の「bank information」に記載されています。
+> 追加の支払い指示は、請求書の `bank information` の下でも利用可能です。
 
-- クレジットカードで支払うには、https://customers.gitlab.com にログインしてください。
-  - `Payment Methods` を選択します。
-  - `Add New Payment Method` を選択します。
-
-</details>
-
-<details>
-<summary markdown='span'>
-サードパーティの請求ポータルを通じた GitLab との接続
-</summary>
-
-GitLab は現在、さまざまなサードパーティの請求ポータルをサポートしています。
-
-顧客の請求ポータルは、GitLab が顧客に請求する請求書の PO 受領と提出に使用されます。
-
-顧客がサードパーティの請求ポータルを通じて GitLab と接続する必要があると伝えた場合は、`AR@GitLab.com` にリクエストを送付してください。これにより、請求オペレーションチームがポータルの登録がすでに存在するかどうかを確認できます。
-
-- **一部のサードパーティポータルには以下が含まれます：**
-  - SAP Ariba - GitLab ANID: AN01024039298 への取引関係リクエスト（TRR）を `AR@gitlab.com` に送付してください。
-  - Coupa Supplier Portal - 接続リクエストを `AR@gitlab.com` に送付してください。
-  - Taulia - 接続リクエストを `AR@gitlab.com` に送付してください。
-
-社内チームメンバーの方は、追加情報とリソースについて[顧客請求ポータルの手順](https://gitlab.com/gitlab-com/Finance-Division/finance/-/wikis/Customer%20Billing%20Portal%20Instructions)をご覧ください！
-
-</details>
-
-## 請求 FAQ
-
-<details>
-
-<summary markdown='span'>
-USD 以外の通貨で請求書を発行できますか？
-</summary>
-
-GitLab は例外なく USD のみで請求します。
+- クレジットカードで支払うには、https://customers.gitlab.com でアカウントにログインしてください
+  - `Payment Methods` を選択
+  - `Add New Payment Method` を選択
 
 </details>
 
 <details>
 <summary markdown='span'>
-顧客が外国源泉徴収税を差し引いて支払いたい場合は？
+サードパーティ請求ポータル経由でGitLabに接続する
 </summary>
 
-適用されるすべての費用は、利用規約に従って支払い期日に支払うものとします。
+GitLabは現在、さまざまなサードパーティ請求ポータルをサポートしています。
 
-標準利用規約の第 6 条（支払い）第 6.7 項：
+カスタマー請求ポータルは、GitLabが顧客に請求した請求書のPO受領と提出に使用されます。
 
-> 6.7 未払いの料金には、月 1%（1.0%）または法律で許可された最大値のうち低い方の財務費用、加えて合理的な弁護士費用を含むすべての回収費用が課されます。本契約に基づく料金は、現在または今後、いかなる政府機関によっても課される国税、州税または省税、売上税、付加価値税、財産税および類似税を含むすべての税金または関税を除いた金額です。本契約に基づく料金はいかなる源泉徴収または控除なしに支払われます。**源泉徴収または控除の要件がある場合、お客様は必要な源泉徴収を自ら支払い、それに基づいて GitLab に支払う金額を減額しません。**
+顧客がサードパーティ請求ポータル経由でGitLabに接続する必要があることを通知した場合、`AR@GitLab.com` にリクエストを提出してください。これにより、Billing Operationsチームがポータル登録がすでに存在するかどうかを確認できます。
 
-GitLab のサブスクリプション契約は[こちら](/handbook/legal/subscription-agreement/)でご確認いただけます。
+- **サードパーティポータルの一部には以下が含まれます:**
+  - SAP Ariba - Trade Relationship Request (TRR) をGitLab ANID: AN01024039298宛に `AR@gitlab.com` に送付してください
+  - Coupa Supplier Portal - 接続リクエストを `AR@gitlab.com` に送付してください
+  - Taulia - 接続リクエストを `AR@gitlab.com` に送付してください
+
+内部チームメンバーは、追加情報とリソースについて [Customer Billing Portal Instructions](https://gitlab.com/gitlab-com/Finance-Division/finance/-/wikis/Customer%20Billing%20Portal%20Instructions) を参照してください！
+
+</details>
+
+## Billing FAQ
+
+<details>
+
+<summary markdown='span'>
+USD以外の通貨で請求書を発行できますか？
+</summary>
+
+GitLabは例外なくUSDのみで請求書を発行します。
 
 </details>
 
 <details>
 <summary markdown='span'>
-  ウェブダイレクト注文はどの法人で請求されますか？
+顧客が外国源泉徴収税で支払いを減額したい場合はどうすればよいですか？
 </summary>
 
-現在、すべてのウェブダイレクト（ポータル）購入は GitLab, Inc.（US）法人から請求されます。
+すべての適用される料金は、私たちのサービス利用規約に従って期限内に支払う必要があります。
+
+私たちの標準サービス利用規約のセクション6. PAYMENT OF FEES、article 6.7。
+
+> 6.7 未払いの料金は、月1パーセント（1.0%）、または法律で許可されている最大値のいずれか低い方の財務料金、および回収費用（合理的な弁護士費用を含む）の対象となります。この契約の料金は、政府機関によって今後または将来課せられるすべての税金または関税を除外し、国家、州、または地方税、売上税、付加価値税、財産およびそれに類する税金（ある場合）を含みます。この契約の料金は、源泉徴収または控除なしで支払われるものとします。**控除または源泉徴収要件の場合、顧客は必要な源泉徴収を自分で支払い、その代わりにGitLabに支払う金額を減額しません。**
+
+GitLab Subscription Agreementは [こちら](/handbook/legal/subscription-agreement/) で確認できます。
+
+</details>
+
+<details>
+<summary markdown='span'>
+  Webダイレクト注文はどのエンティティで請求されますか？
+</summary>
+
+現在、すべてのWebダイレクト（ポータル）購入はGitLab, Inc.（米国）エンティティから請求されています。
 
 </details>
 
@@ -213,69 +213,69 @@ GitLab のサブスクリプション契約は[こちら](/handbook/legal/subscr
 請求書を手動で更新できますか？
 </summary>
 
-手動（準）請求書の変更は例外的な状況でのみ行われ、請求リーダーシップチームを通じて承認される必要があります。請求書の変更をリクエストする前に適切な承認を取得してください。
+手動（pro-forma）請求書の修正は例外的な状況でのみ行われ、Billing Leadership Teamによって承認される必要があります。請求書の修正をリクエストする前に、適切な承認があることを確認してください。
 
 </details>
 
 <details>
 <summary markdown='span'>
-セールスチームは請求書が支払われたかどうかを知る方法はありますか？
+セールスチームは請求書が支払われたかどうかをどうやって知ることができますか？
 </summary>
 
-Salesforce の顧客アカウントの `billing account` セクションをご確認ください。
+Salesforceの顧客アカウントの `billing account` セクションをレビューしてください。
 
-請求アカウントは顧客について利用可能なすべての請求書と支払い情報を提供します。
+billing accountは、顧客に利用可能なすべての請求書と支払い情報を提供します。
 
-社内リソース：[セールスが SFDC で請求書と支払い情報を確認する方法](https://gitlab.com/gitlab-com/Finance-Division/finance/-/wikis/How%20Can%20Sales%20View%20Invoices%20&%20Payment%20Info%20in%20SFDC)
+内部リソース: [How Can Sales View Invoices & Payment Info in SFDC](https://gitlab.com/gitlab-com/Finance-Division/finance/-/wikis/How%20Can%20Sales%20View%20Invoices%20&%20Payment%20Info%20in%20SFDC)
 
 </details>
 
 <details>
 <summary markdown='span'>
-GitLab は現在どこで販売税を課税していますか？
+GitLabは現在、どこで売上に対する税金を課しますか？
 </summary>
 
-**対象地域は以下の通りです：**
+**場所は以下を含みます:**
 
-- US > US（ネクサスによって異なります）
+- US > US（nexusによる）
 - DE > DE
 - NL > NL
 - UK > UK
 - AU > AU
-- US > カナダ（ケベック州とブリティッシュコロンビア州のみ）
-- US > 南アフリカ
-- US > ロシア連邦
+- US > Canada（ケベック州とブリティッシュコロンビア州のみ）
+- US > South Africa
+- US > Russian Federation
 
-社内リソース：[VAT と消費税の情報とリソース](https://gitlab.com/gitlab-com/Finance-Division/finance/-/wikis/VAT%20&%20Sales%20Tax%20Information%20&%20Resources)
+内部リソース: [VAT & Sales Tax Information & Resources](https://gitlab.com/gitlab-com/Finance-Division/finance/-/wikis/VAT%20&%20Sales%20Tax%20Information%20&%20Resources)
 
-参照：[GitLab 税務チーム](/handbook/finance/tax/)
+参照: [The GitLab Tax Team](/handbook/finance/tax/)
 
 </details>
 
 <details>
 
 <summary markdown='span'>
-顧客は GitLab 顧客ポータルで請求書を閲覧できますか？
+顧客はGitLab Customers Portalから請求書を閲覧できますか？
 </summary>
 
-はい、顧客は GitLab 顧客ポータルで請求書を閲覧できます！顧客アカウントの管理者は、ポータルの右上のオプションから `View Invoices` オプションを選択し、発行済みの請求書を閲覧するために `Download as PDF` オプションを選択することでアクセスできます。
+はい、顧客はGitLab Customers Portalで請求書を閲覧できます！顧客アカウント管理者は、ポータルの右上のオプションから `View Invoices` オプションを選択し、`Download as PDF` オプションを選択して発行済みの請求書を閲覧することで請求書にアクセスできます。
 
 </details>
 
-## GitLab の請求法人
+## GitLab Billing Entities
 
-グローバル企業として、GitLab は世界中に拠点を持ちます。
+グローバル企業として、GitLabは世界中に場所を持っています。
 
-- GitLab Inc（米国）
-- GitLab BV（オランダ）
-- GitLab Ltd（英国）
-- GitLab GmbH（ドイツ）
-- GitLab PTY LTD（オーストラリア）
+- 米国のGitLab Inc
+- オランダのGitLab BV
+- 英国のGitLab Ltd
+- ドイツのGitLab GmbH
+- オーストラリアのGitLab PTY LTD
 
-[見積もり法人情報](/handbook/sales/field-operations/sales-operations/deal-desk/#quote-entity-information)
+[Quote Entity Information](/handbook/sales/field-operations/sales-operations/deal-desk/#quote-entity-information)
 
-**注意：** ポータルを通じて行われる初期のウェブダイレクトサブスクリプションはすべて US 法人に設定されます。
+**注:** ポータル経由で注文された初回Webダイレクトサブスクリプションはすべて、米国エンティティに配置されます。
 
-> 補足：初回注文が（セールスアシスト注文を通じて）DE 法人で請求された場合、顧客がポータルでアドオンを注文すると、アドオンも DE 法人で請求されます。
+> 明確化: 初回注文がDEエンティティから請求された場合（セールスアシスト注文経由）、顧客がポータル経由でアドオンを注文すると、アドオンもDEから請求されます。
 
-**重要：** アドオンの場合、アドオンの見積もり/注文フォームは初期/ベース取引と同じ請求法人を反映する必要があります。
+**重要:** アドオンの場合、アドオンクォート／注文フォームには初回／ベース取引と同じ請求書エンティティが反映されている必要があります。

@@ -11773,10 +11773,10 @@
     },
     "content/handbook/enterprise-data/platform/_index.md": {
       "path": "content/handbook/enterprise-data/platform/_index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T08:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ebeaf887633332e8c762664ce746331cff9e1087d2158545c471e966f4626ac0"
+      "input_hash": "eec943dc1dd4e69c24a520ae60d11109ddd2a5ec0a4443c3aff10cf84c63fd91"
     },
     "content/handbook/enterprise-data/platform/agentic-tool-development/index.md": {
       "path": "content/handbook/enterprise-data/platform/agentic-tool-development/index.md",
@@ -12165,10 +12165,10 @@
     },
     "content/handbook/finance/accounting/finance-ops/billing-ops/_index.md": {
       "path": "content/handbook/finance/accounting/finance-ops/billing-ops/_index.md",
-      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "8fba1eb790d3f11f23e069f2bb0a189a975863e7e3dfbf42f31825948db268d1"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "024c207eeccffc41c6ebe7bd7a34e655a51f69fe9742905507e9b7b82a1bca4b"
     },
     "content/handbook/finance/accounting/finance-ops/teck-stack-guide-netsuite.md": {
       "path": "content/handbook/finance/accounting/finance-ops/teck-stack-guide-netsuite.md",
@@ -12179,10 +12179,10 @@
     },
     "content/handbook/finance/accounts-payable/_index.md": {
       "path": "content/handbook/finance/accounts-payable/_index.md",
-      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "aac9af726662e1f1522e18163cf70c641c3af23e4906c9a06d328853d6aa151d"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3aa7842c94266e693dce6c00f03256cde5770424f0109f9fd8e8af257e6759aa"
     },
     "content/handbook/finance/accounts-payable/corp-credit-cards.md": {
       "path": "content/handbook/finance/accounts-payable/corp-credit-cards.md",
@@ -12389,10 +12389,10 @@
     },
     "content/handbook/finance/jihu-support/_index.md": {
       "path": "content/handbook/finance/jihu-support/_index.md",
-      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
-      "translated_at": "2026-04-29T19:06:37Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "cf35600ffd86adf5969158387a482e824d1f16827ceb548a45a49e6a466d364e"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "13d06d5365f6c534f46c34be457ace0910803aa5afc8c128dd2c7ffc8c4cf255"
     },
     "content/handbook/finance/jihu-support/jihu-contribution-process.md": {
       "path": "content/handbook/finance/jihu-support/jihu-contribution-process.md",
@@ -12697,10 +12697,10 @@
     },
     "content/handbook/hiring/interviewing/infrastructure-interview.md": {
       "path": "content/handbook/hiring/interviewing/infrastructure-interview.md",
-      "upstream_sha": "fe88192cad67a795a237396e552566cb08c118b9",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "42266547b95b834699f3b9879a92bb3932251446ada3a1318802effba81e8bec"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "61082f04081b00d4f7fd1ed5d59ad5c381eeeee3611368541081eada6fec7829"
     },
     "content/handbook/hiring/interviewing/panel.md": {
       "path": "content/handbook/hiring/interviewing/panel.md",
@@ -12816,17 +12816,17 @@
     },
     "content/handbook/leadership/building-trust.md": {
       "path": "content/handbook/leadership/building-trust.md",
-      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "5fd4a34bca58136f9ddcc09a86664cc2e4f97ad89854953e61880214b1366196"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8b16c8a06375125c2b81b22aaac64936e19c4fa0d063276af916410e93243812"
     },
     "content/handbook/leadership/coaching.md": {
       "path": "content/handbook/leadership/coaching.md",
-      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "4a69617dbfbac2165392507a450737874edabf162aabb86c24f0d523df09e2c2"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cae79b3d97c470c8278858cc514e18629170856503cd556c1a43ae45381a067d"
     },
     "content/handbook/leadership/compensation-review-conversations.md": {
       "path": "content/handbook/leadership/compensation-review-conversations.md",
@@ -12872,10 +12872,10 @@
     },
     "content/handbook/leadership/emotional-intelligence/social-styles.md": {
       "path": "content/handbook/leadership/emotional-intelligence/social-styles.md",
-      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "fd78fc113a7acdac0cdd9888df7d3bde5d6b1ae670f80c7c2eb6d7409c749eca"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "40b7efaaf6927483e62ade28d5ad9f31285fd92b016c46d3f175b8a483a3291d"
     },
     "content/handbook/leadership/high-output-management.md": {
       "path": "content/handbook/leadership/high-output-management.md",
@@ -13145,10 +13145,10 @@
     },
     "content/handbook/legal/esg/fy23-esg-report.md": {
       "path": "content/handbook/legal/esg/fy23-esg-report.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-30T00:55:37Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "cf0a8ecc0303d18def0dda7ffbda3a564f779a76c993233966cc37f1842875c7"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1a7e5773e422b1736abd9376fde47f05b6943c14418d2b7ec6085faf6f650a29"
     },
     "content/handbook/legal/esg/team-member-sustainability-guide/_index.md": {
       "path": "content/handbook/legal/esg/team-member-sustainability-guide/_index.md",
@@ -13320,10 +13320,10 @@
     },
     "content/handbook/legal/legacy/privacy-statement-v2.md": {
       "path": "content/handbook/legal/legacy/privacy-statement-v2.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-29T10:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "c63f45a51911a41bd071b3241633b5acce18199cd2c65d5c840d1905ccaac184"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "14a6b1a8f47726908eb9443f420263c86583021d9a22bdadd351ba5323160439"
     },
     "content/handbook/legal/legacy/privacy-statement.md": {
       "path": "content/handbook/legal/legacy/privacy-statement.md",
