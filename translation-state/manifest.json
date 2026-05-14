@@ -12228,10 +12228,10 @@
     },
     "content/handbook/finance/expenses.md": {
       "path": "content/handbook/finance/expenses.md",
-      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "dc997bfa84f2c1311a40d983eba2e031f886de3364bf36d509d1b2f728a903ff"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9a221577ee5d0928a37537da79a86f3d835de4e96848f05cc851c30502cc7ff0"
     },
     "content/handbook/finance/finance-team-performance-indicators.md": {
       "path": "content/handbook/finance/finance-team-performance-indicators.md",
