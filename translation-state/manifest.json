@@ -27406,9 +27406,9 @@
     "content/handbook/enterprise-data/ai/agent-setup.md": {
       "path": "content/handbook/enterprise-data/ai/agent-setup.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "translated_at": "2026-05-15T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7fe4f7a99eb2f0f4b2da4c5ef7f29cfdd87f3a43c08233025b63cfd25c0bd0d8"
+      "input_hash": "84f8bc429565a55354ed1356bbe0b8f48401d79b396d35deaec8a9fb48f7ae22"
     },
     "content/handbook/enterprise-data/ai/agent-usage-guide.md": {
       "path": "content/handbook/enterprise-data/ai/agent-usage-guide.md",
