@@ -22,7 +22,7 @@ KPI の定義は、[機能と成果](/handbook/about/handbook-usage/#organized-b
 KPI に関連する目標は、定義と一緒に配置するべきです。
 たとえば「リリースあたりのワイダーコミュニティからの貢献数」はハンドブックの Developer Relations の部分にあり、「採用までの平均日数」はハンドブックの Talent Acquisition の部分に置きます。
 
-## KPI インデックス
+## KPI インデックス {#kpi-index}
 
 ## 凡例
 

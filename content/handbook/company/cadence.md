@@ -41,7 +41,7 @@ FY25 の主な会社の日程の概要は[こちら](https://docs.google.com/spr
 1. [Key Performance Indicators（KPI）](/handbook/company/kpis/)は、会社として常時行う重要な事柄に関するパフォーマンス指標です。ある四半期で KPI を変えたい場合、それは通常 OKR となります。
 1. [私たちのバリュー](/handbook/values/)は、このケイデンスページの項目を追求するうえで従う原則ですが、いずれのケイデンスにも属しません。
 
-### ケイデンスの流れ
+### ケイデンスの流れ {#cadence-flow}
 
 以下は、[ケイデンスの流れ](#cadence-flow)の各項目がどのように組み合わさるかを示す一例で、短期的な目標を着実に達成することによって、より長期的な目標がどのように達成されるかを表しています。
 
@@ -61,7 +61,7 @@ FY25 の主な会社の日程の概要は[こちら](https://docs.google.com/spr
 1. [10 年のビジョン](/handbook/company/vision): 3 年ごとにレビュー
 1. 3 年戦略: 毎年レビュー
 
-## 30 年
+## 30 年 {#30-years}
 
 - [私たちのミッション](/handbook/company/mission/)
 - [私たちのパーパス](/handbook/company/purpose/)
@@ -69,14 +69,14 @@ FY25 の主な会社の日程の概要は[こちら](https://docs.google.com/spr
 - [Amazon の寿命](https://www.forbes.com/sites/richardkestenbaum/2018/11/16/amazon-is-not-too-big-to-fail-bezos/#65fba0621626) 「Amazon は失敗しないほど大きいわけではない……実際、私はいつか Amazon は失敗すると予測している。Amazon は倒産するだろう。大企業を見れば、その寿命は 100 年超ではなく 30 年超である傾向にある。」
 - [世代もまた 30 年である](https://pubmed.ncbi.nlm.nih.gov/10677323/)
 
-## 10 年
+## 10 年 {#10-years}
 
 - [ビジョン](/handbook/company/vision/)
 - [プロダクトビジョン](https://about.gitlab.com/direction/#vision)
 - [DZ のコミットメント](https://about.gitlab.com/blog/2021/11/10/a-special-farewell-from-gitlab-dmitriy-zaporozhets/)
 - [カテゴリ創出に必要な時間](https://about.gitlab.com/blog/2023/08/30/origin-of-devsecops-platform-category/)
 
-## 3 年
+## 3 年 {#3-years}
 
 1. 戦略
 1. [3 年のプロダクト方向性戦略](https://about.gitlab.com/direction/#3-year-strategy)
@@ -84,14 +84,14 @@ FY25 の主な会社の日程の概要は[こちら](https://docs.google.com/spr
 1. [制限付株式ユニットのベスティング](/handbook/total-rewards/stock-options/#rsu-vesting--grant-cadence)（6 か月のクリフを超えた後）
 1. チームメンバーの平均在職期間は約 3 年
 
-## 年
+## 年 {#year}
 
 1. [年次計画](/handbook/finance/financial-planning-and-analysis/#annual-operating-plan-aop)
 1. [4 四半期ローリングフォーキャスト](/handbook/finance/financial-planning-and-analysis/#quarterly--monthly-cycle-incl-close-variance-forecast-guidance)
 1. [Direction](https://about.gitlab.com/direction/) の大部分
 1. [会計年度プロダクト投資テーマ](https://about.gitlab.com/direction/#fiscal-year-product-investment-themes)
 
-## 四半期
+## 四半期 {#quarter}
 
 1. [取締役会](/handbook/board-meetings/#board-meeting-process)
 1. セールス目標（[Clari](/handbook/business-technology/tech-stack/#clari) 内）
@@ -99,13 +99,13 @@ FY25 の主な会社の日程の概要は[こちら](https://docs.google.com/spr
 1. [GitLab Assembly](/handbook/company/gitlab-all-company-meetings/)
 1. [決算関連活動](/handbook/finance/investor-relations/)
 
-## 月
+## 月 {#month}
 
 1. [リリース](https://about.gitlab.com/releases/)
 1. [振り返り](/handbook/communication/#kickoffs)
 1. [ほとんどの KPI](/handbook/company/kpis/)
 
-## 週
+## 週 {#week}
 
 1. [部下との 1-1 のケイデンス](/handbook/leadership/1-1/)
 1. [E-Group Weekly](/handbook/company/e-group-weekly/)

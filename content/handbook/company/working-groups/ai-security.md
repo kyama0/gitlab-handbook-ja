@@ -38,7 +38,7 @@ Duo エージェントプラットフォームのローンチに伴い、GitLab 
 1. [エディタエクステンション](https://docs.gitlab.com/editor_extensions/)
 1. [GitLab ランゲージサーバー](https://docs.gitlab.com/editor_extensions/language_server/)
 
-### 終了基準
+### 終了基準 {#exit-criteria}
 
 1. AI プロンプト実装のベストプラクティスがコントリビュータードキュメントに文書化されている。
 1. AI セキュリティツールが SaaS、Dedicated、セルフマネージドのお客様に提供できるものを理解するための概念実証が実行・記録されている。

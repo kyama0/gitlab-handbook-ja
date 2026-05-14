@@ -18,7 +18,7 @@ stale: false
 | Google ドキュメント      | [ワーキンググループアジェンダ](https://docs.google.com/document/d/1n1pslXw6yeoqRmsWGi4VYu9bPg8k46IIXqdUTJR8HSU/edit)（社内からのみアクセス可能） |
 | Issue ボード     | 未定             |
 
-### 終了基準
+### 終了基準 {#exit-criteria}
 
 このワーキンググループの憲章は、2020年9月1日を期限とする、12ヶ月間の技術ロードマップの最初のイテレーションを作成することです。
 

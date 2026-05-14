@@ -22,7 +22,7 @@ stale: false
 
 主要な顧客を GitHost.io から GitLab.com へ正常に移行させます。特定の顧客の詳細については上記の Google Doc を参照してください。
 
-## 終了基準
+## 終了基準 {#exit-criteria}
 
 1. 顧客の受入基準を定義します。 => **完了** 顧客はすべてのデータの移行を希望していることを確認しました。移行に含まれるデータのスコープを確認しており、[ここ](https://docs.google.com/document/d/1O8cF5ylQHJDAXVB3KUoW5FhPRH-RIOpHAOuuuPz0VL0/edit#heading=h.1jbhsgk81yat)の「移行機能」リンクから確認できます。
 1. [この Epic](https://gitlab.com/groups/gitlab-org/-/epics/2584) で移行作業をブロックしている Issue を特定して解決します。 => **完了**。

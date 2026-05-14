@@ -34,7 +34,7 @@ stale: false
 
 * Vue Router 互換性エラーが含まれるテストの修正に特化した別のワーキンググループ [Vue 3 Router 4 テスト互換性タスクグループ](vue3-router4-tests.md) があります。
 
-## 終了基準
+## 終了基準 {#exit-criteria}
 
 * 互換性エラー（非目標を除く）を発行している[テスト](https://docs.gitlab.com/development/testing_guide/testing_vue3/#quarantine-list)が修正されている。
 

@@ -29,7 +29,7 @@ stale: false
 
 - **フィーチャーフラグ** - これは必ずしも[フィーチャーフラグ機能](https://docs.gitlab.com/ee/operations/feature_flags.html)を指すのではなく、[GitLab の開発においてフィーチャーフラグを使用する方法](https://docs.gitlab.com/ee/development/feature_flags/index.html)を指します。
 
-### 終了基準
+### 終了基準 {#exit-criteria}
 
 1. ✅ フィーチャーフラグの[アーキテクチャーブループリント](https://docs.gitlab.com/ee/architecture/blueprints/feature_flags_development/)の達成
 1. ✅ [GitLab.org](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=WorkingGroup%3A%3AFeatureFlagUsage) および [GitLab.com](https://gitlab.com/groups/gitlab-com/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=WorkingGroup%3A%3AFeatureFlagUsage) 上のワーキンググループスコープラベルが付いたすべての Issue の完了

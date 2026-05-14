@@ -37,7 +37,7 @@ stale: false
     - FTE ローテーションプログラム [マーケティング名 = Associate Engineering Program、別名 AEP]
     - インターンシッププログラム [マーケティング名 = Engineering Intership Program、別名 EIP]
 
-### 終了基準
+### 終了基準 {#exit-criteria}
 
 TBD
 

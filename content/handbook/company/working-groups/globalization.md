@@ -19,7 +19,7 @@ stale: false
 | アジェンダ Doc    | [収益グローバリゼーション WG](https://docs.google.com/document/d/1Ul5kvUt3tHiARRpdzS9uOItkgyeQeohpPpwnCPwf4tU/edit#heading=h.pzs8q4jf90f2)（社内からのみアクセス可能） |
 | トラッキング Doc | [トラッキング Doc](https://docs.google.com/spreadsheets/d/14GOJvADjS7R-zonQvx3ejiCgJGsCks3U0IbjwiFChRQ/edit#gid=427771731) |
 
-## 終了基準
+## 終了基準 {#exit-criteria}
 
 このワーキンググループには以下の終了基準があります。
 

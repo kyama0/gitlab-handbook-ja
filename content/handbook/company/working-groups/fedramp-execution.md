@@ -21,7 +21,7 @@ stale: false
 | 公開ハンドブックページ | [GitLab の FedRAMP 認定プログラム](/handbook/security/security-assurance/security-compliance/fedramp-compliance/) |
 | 社内ハンドブックページ | [FedRAMP コンプライアンス](https://internal.gitlab.com/handbook/engineering/fedramp-compliance/) |
 
-### 終了基準
+### 終了基準 {#exit-criteria}
 
 GitLab が新しい SaaS オファリングに対して FedRAMP Moderate 認定（運用認可 - ATO）を取得すること。
 

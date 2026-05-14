@@ -21,7 +21,7 @@ stale: false
 
 GitLab の主要メトリクスである IACV を Delta ARR に変更します。
 
-## 終了基準
+## 終了基準 {#exit-criteria}
 
 Epic を追加...
 
