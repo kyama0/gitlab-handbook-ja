@@ -27479,6 +27479,13 @@
       "translated_at": "2026-04-25T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "a3097f48848e30846b6597dde8576a127ec6e19c0f02c039980f0195e25b7144"
+    },
+    "content/handbook/company/culture/songbook.md": {
+      "path": "content/handbook/company/culture/songbook.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T03:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d690d3f414f9d99cf29c72a8ffe16a7b8e3dba21d63855911d58953524d5556f"
     }
   }
 }
