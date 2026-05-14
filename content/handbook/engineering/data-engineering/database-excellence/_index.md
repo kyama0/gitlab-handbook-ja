@@ -103,7 +103,7 @@ TBD
 
 Stable counterpart やレビュアーなどの長期的なリクエストは、ステージレベルで処理されます。これらのリクエストは [counterpart リクエスト](https://gitlab.com/gitlab-org/database-team/team-tasks/-/work_items/new?description_template=counterpart_request) として提出されるべきです。
 
-### トリアージローテーション
+### トリアージローテーション {#triage-rotations}
 
 TBA
 

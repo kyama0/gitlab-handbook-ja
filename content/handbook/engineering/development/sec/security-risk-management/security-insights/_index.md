@@ -36,7 +36,7 @@ Security Insights グループは、それぞれが [垂直スライス](https:/
 
 {{% team-by-manager-slug manager="ajbiton" team="Engineer(.*)Security Risk Management:Security Insights" %}}
 
-## 共通リンク
+## 共通リンク {#common-links}
 
 * Slack チャンネル:
   * メインチャンネル: [`#g_srm_security_insights`](hhttps://gitlab.enterprise.slack.com/archives/C07UD442PQ9)

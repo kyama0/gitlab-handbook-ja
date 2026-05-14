@@ -157,7 +157,7 @@ Basecamp はこれらの段階を [丘の登りと下り](https://basecamp.com/#
   - Product の承認は、Issue が `workflow::planning breakdown` に移動することで表されます。
   - Engineering の承認は、その複雑さを測定する Issue の weight によって表されます。
 
-##### Issue を分解または昇格させる
+##### Issue を分解または昇格させる {#breaking-down-or-promoting-issues}
 
 Issue の複雑さによっては、Issue を分解または昇格させる必要があるかもしれません。いくつかのサンプルシナリオは次のようになります:
 
