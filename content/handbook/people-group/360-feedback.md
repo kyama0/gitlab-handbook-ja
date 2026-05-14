@@ -4,7 +4,7 @@ description: >-
   360 度フィードバックは、マネージャー、直属の部下、職能横断的なチームメンバーが互いにフィードバックを提供する機会です。
 upstream_path: /handbook/people-group/360-feedback/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
 ---

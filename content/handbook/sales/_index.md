@@ -97,7 +97,7 @@ stale: false
 
 ## 私たちの働き方
 
-GitLab セールスチームは、私たちの仕事のあらゆる側面で CREDIT バリューを体現しています。具体的には、私たちは常にオーバーパフォームし、強力な [results](/handbook/values/#results) を達成するために働いています。私たちはプロセスと運営において [efficiency](/handbook/values/#efficiency) を優先します。私たちは、[transparent](/handbook/values/#transparency) な、クロスファンクショナルな [collaboration](/handbook/values/#collaboration) によって成功します。私たちは [diversity](/handbook/values/#diversity-inclusion) を採用し、祝福することにコミットしており、すべての人にとって [inclusiveness and belonging](/handbook/values/#diversity-inclusion) の環境を作るよう努力しています。そして、私たちは常に改善できることを理解し、[iteration](/handbook/values/#iteration) の精神を受け入れます。
+GitLab セールスチームは、私たちの仕事のあらゆる側面で CREDIT バリューを体現しています。具体的には、私たちは常にオーバーパフォームし、強力な [results](/handbook/values/#results) を達成するために働いています。私たちはプロセスと運営において [efficiency](/handbook/values/#efficiency) を優先します。私たちは、[transparent](/handbook/values/#transparency) な、クロスファンクショナルな [collaboration](/handbook/values/#collaboration) によって成功します。私たちは [diversity](/handbook/values/#diversity-inclusion) を採用し、祝福することにコミットしており、すべての人にとって [inclusiveness and belonging](/handbook/values/#diversity-inclusion) の環境を作るよう努力しています。そして、私たちは常に改善できることを理解し、[イテレーション](/handbook/values/#iteration) の精神を受け入れます。
 
 ### セールステックスタック
 

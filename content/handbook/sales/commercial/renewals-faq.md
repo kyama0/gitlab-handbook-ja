@@ -172,7 +172,7 @@ A: お客様が上記のプロセスに従うと、SalesforceのAccount上のリ
 
 Q: **お客様がチャネル経由で購入したいとアドバイスした場合、どのアクションを取るべきですか？**
 
-A: Channel/Alliance quotes](/handbook/sales/field-operations/channel-operations/sales-faq/#quoting)の見積もりプロセスに従って、既存のRenewal Opportunity内でChannel経由でDirectのお客様を更新できます。
+A: [Channel/Alliance quotes](/handbook/sales/field-operations/channel-operations/sales-faq/#quoting)の見積もりプロセスに従って、既存のRenewal Opportunity内でChannel経由でDirectのお客様を更新できます。
 
 Q: **お客様がSelf-ManagedからSaaSインスタンスに、またはその逆を移動したい場合、どのステップを取る必要がありますか？**
 
