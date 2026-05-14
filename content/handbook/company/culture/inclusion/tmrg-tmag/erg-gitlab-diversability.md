@@ -3,7 +3,7 @@ title: "TMRG - GitLab Disability & Neurodivergence"
 description: "障害を持つチームメンバー、または障害を持つ大切な人をケアしているチームメンバーのための役立つリソース、サポート、活動。"
 upstream_path: "/company/culture/inclusion/tmrg-tmag/erg-gitlab-diversability/"
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-15T12:00:00Z"
+translated_at: "2026-05-14T22:00:00Z"
 translator: claude
 stale: false
 ---
