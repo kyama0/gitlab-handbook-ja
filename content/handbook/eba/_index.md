@@ -11,7 +11,7 @@ stale: false
 
 このページでは、GitLab の Executive Business Administrators（EBA）に固有のプロセスと一般的なガイドラインについて詳述します。このページは参考として活用するためのものであり、必要に応じて自由に逸脱したり、内容を更新したりしてかまいません。
 
-## Executive Business Administrator チーム
+## Executive Business Administrator チーム {#executive-business-administrator-team}
 
 現在のエグゼクティブサポートのアラインメントは[こちら](https://docs.google.com/presentation/d/1_tRO-5bDjcwUfqsLazfy4AcqeCLe8jOvDl04BHYlhEE/edit?usp=sharing)で確認できます。
 

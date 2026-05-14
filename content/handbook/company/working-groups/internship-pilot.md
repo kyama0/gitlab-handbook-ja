@@ -51,7 +51,7 @@ stale: false
 | メンバー                | Liam McNally          | Interim Talent Acquisition Manager      |
 | メンバー                | John Hope             | Engineering Manager, Plan      |
 
-### 終了基準 {#exit-criteria}
+### 終了基準 {#exit-criteria-phase-1}
 
 1. [予算の定義](https://gitlab.com/gitlab-com/www-gitlab-com/issues/5526) => `100%`
     1. 利用可能なインターンシップのポジション数を決定する ✅
@@ -169,7 +169,7 @@ stale: false
 | メンバー                | Liam McNally          | Diversity, Inclusion and Belonging Partner     |
 | メンバー                | John Hope             | Engineering Manager, Plan      |
 
-### 終了基準 {#exit-criteria}
+### 終了基準 {#exit-criteria-phase-2}
 
 1. ホストチームの決定 => `100%`
     1. 関心のあるチーム向けの Q&A セッションを実施する ✅
