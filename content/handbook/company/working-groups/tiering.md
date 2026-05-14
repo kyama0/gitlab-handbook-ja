@@ -36,7 +36,7 @@ stale: false
 | メンバー | Christopher Lefelhocz | VP of Development |
 | メンバー | Scott Williamson | チーフプロダクトオフィサー |
 
-## 終了基準
+## 終了基準 {#exit-criteria}
 
 ティアリング ワーキンググループは以下を提供します:
 

@@ -71,7 +71,7 @@ GitLab.com とセルフマネージドインストールの両方において、
 - https://gitlab.com/gitlab-org/gitlab/-/issues/338454
 - [監査イベントのストリーミング](https://gitlab.com/groups/gitlab-org/-/epics/5925)
 
-## 終了基準
+## 終了基準 {#exit-criteria}
 
 イベントストリームの実装が決定された場合、終了基準は以下のとおりです:
 

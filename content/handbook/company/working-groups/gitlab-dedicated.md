@@ -38,7 +38,7 @@ stale: false
 
 クロスファンクショナル作業のマイルストーンを含む[限定提供ロードマップ](https://about.gitlab.com/direction/gitlab_dedicated/#limited-availability-roadmap)を参照してください。
 
-### 終了基準
+### 終了基準 {#exit-criteria}
 
 GitLab Dedicated トップクロスファンクショナルイニシアティブの終了基準は、[Limited Availability の終了基準](https://about.gitlab.com/direction/gitlab_dedicated/#limited-availability)と同一です。
 

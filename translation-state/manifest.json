@@ -687,10 +687,10 @@
       "input_hash": "44180cf8acbfcf08a2c2848a8d5ea94ef6780422a1320f6a84d640a8a7de3cc5"
     },
     "content/handbook/company/cadence.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "5e6ba63cf8410a3556a02a83fc6100e03944efbb8646dc7689008aa4937afc41"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0b0dabbc97585988131a1ef25ab15a030cc03241e5fa535c6040a5a072f0ec3e"
     },
     "content/handbook/company/culture/_index.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1221,10 +1221,10 @@
       "input_hash": "197aced74981a3f012a0b8f5a1bbf90ecf9e04269d60c7612db45bbaa5af6ba0"
     },
     "content/handbook/company/infrastructure-standards/_index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "abf880025339b195f25d74cd1b78bf4752351ac31f8592c2cf7d48950504a7c4"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8f96eb7a18cb0eac537a2ea8dcb0fc23d05f7525233e6436d7334771113bf6ea"
     },
     "content/handbook/company/infrastructure-standards/helpdesk.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1353,17 +1353,17 @@
       "input_hash": "08c6999cd03964165f61c41f34d76501bbf2bde9106cfd126956d72a2aebace5"
     },
     "content/handbook/company/kpis.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T15:43:48Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "32a62086a56768a9fada5d14b007f418b7aebb18494ee3ccbef26d7fc41b5464"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fc89d7770b2465489f2709def1459b2a9443c7302e630408559eecf9e702868c"
     },
     "content/handbook/company/mission.md": {
       "path": "content/handbook/company/mission.md",
-      "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
-      "translated_at": "2026-04-19T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1f91800ef24beca75242526ec22a4771831b73605b5347ef7615ab2c75cde41c"
+      "input_hash": "26d563b2130d4f918720d4fcb16dafe7af7df88700b3c7597c3efbed4d2fbf55"
     },
     "content/handbook/company/offsite/_index.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1421,16 +1421,16 @@
       "input_hash": "997f68252f2cb9692acff44f0348f77a70e50d949be8b6eda0eb49870d64a4b6"
     },
     "content/handbook/company/structure.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "99f994e98c71d5b5e7a448bdd0ed19e8fb83dddb02b82d098e696ff4efc3de99"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "78b0ce516197cba98628d9a0f8e8b66b4522a4c54a7505801f7ea19c00ce5898"
     },
     "content/handbook/company/team.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "3e1ef92551847154b3a6c58536e95092d5598df082914fc6ac99496d274a9221"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7461fd805719a5dab7d08069c7edbaad2943e92acf61dbf8773ee05172b2e885"
     },
     "content/handbook/company/vision.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1445,10 +1445,10 @@
       "input_hash": "f8376aab06b838d169b94890d58a35bafc43341740011bc7f0f911a2054820f3"
     },
     "content/handbook/company/working-groups/account-escalation-process.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T09:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "a238a8186684e2a31c29f0e52dde364d5aa3c8e391359fa1ff9b5f4e550666a9"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2d76c558e0ac365618f76ea992f0fdad069f0bdc63e149ee0186421d1f7f2bdd"
     },
     "content/handbook/company/working-groups/administration.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1457,10 +1457,10 @@
       "input_hash": "bf2880df4e10f20779dd5537c623505048db6b2a250cac14a2a08e7453555292"
     },
     "content/handbook/company/working-groups/ai-integration.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T09:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "73c15377461cfeadb6b81ef65098286a13a8e0d678ab6effb604f0be814b5e46"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b4b1c6804b06e4059bf7864848dbd138b9277eeafe1d5900000ac00b579c239f"
     },
     "content/handbook/company/working-groups/ai-native-hiring.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1475,10 +1475,10 @@
       "input_hash": "528db6cc9ba0daa31c54672da890de941a9b88be6037bcbe89ea5fe4d75a3a4c"
     },
     "content/handbook/company/working-groups/api-vision.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T09:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "45d50517b023e8b54894c5f1cb740dad6b9769501201ab5becf8ca349904a347"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "18da33a26c2a0525e7c4f18d7a931d070ad50a3d92aca6d0c068a773300a69b4"
     },
     "content/handbook/company/working-groups/architecture-kickoff.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -1637,10 +1637,10 @@
       "input_hash": "48b578017f238eec3fbbba8b68978d1ffdb1b361ad0b522a6fdbf4ed76401048"
     },
     "content/handbook/company/working-groups/emerging-talent.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "36089f161e71925a2a11d8fe980253ccd1516bb68d21e31defc88c800f2fd34f"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dc0d9aaecb588ca2db9a431a554e8f504ebac177aa8e1c4e1ac2f60ce1872e2b"
     },
     "content/handbook/company/working-groups/engineering-career-matrices.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",

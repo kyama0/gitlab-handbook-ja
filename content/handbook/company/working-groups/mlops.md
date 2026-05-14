@@ -70,7 +70,7 @@ Wikipedia によると、**MLOps** または **ML Ops** は、機械学習モデ
 - #feed_tanuki-stan
 - #security-ml
 
-## 終了基準
+## 終了基準 {#exit-criteria}
 
 このワーキンググループのチャーターは、GitLab で ML プロダクトを構築するさまざまなチーム間のギャップを、重複するアーキテクチャ上の懸念を議論することで橋渡しすることです:
 

@@ -31,7 +31,7 @@ GitLab UI ライブラリはさまざまなプロジェクト（GitLab、Switchb
 
 - @vue/compat の採用をブロックしないため、コンポーネントやディレクティブを `MODE: 3` 互換性に近づけることは*行いません*。
 
-## 終了基準
+## 終了基準 {#exit-criteria}
 
 - @vue/compat に関するすべての[既知の問題](https://gitlab.com/groups/gitlab-org/-/epics/12386)が修正されているか、回避策がドキュメント化されている。
 - @vue/compat でのすべてのスクリーンショットテストが合格している。

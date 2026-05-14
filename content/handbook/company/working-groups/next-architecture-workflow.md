@@ -24,7 +24,7 @@ stale: false
 1. [アーキテクチャエボリューションワークフロー](/handbook/engineering/architecture/workflow/)は複雑で、多くのステップがあり、ワークフローの採用と大規模な長期イニシアチブの成功が困難です。
 1. 現在の形式では、[アーキテクチャエボリューションワークフロー](/handbook/engineering/architecture/workflow/)はエンジニアリングの各部門内の多くのイニシアチブで活用されていません。独自のロードマップがなければ、プロダクト自身のロードマップと優先順位を比較検討することが困難です。
 
-### 終了基準
+### 終了基準 {#exit-criteria}
 
 このワーキンググループのチャーターは、[アーキテクチャエボリューションワークフロー](/handbook/engineering/architecture/workflow/)の次のイテレーションを定義・実装することです。
 
