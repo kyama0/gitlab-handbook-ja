@@ -1,152 +1,112 @@
 ---
 title: "Analytics:Platform Insights グループ"
+description: "Analytics Platform Insights グループは、スケーラブルなアーキテクチャによって、顧客がアナリティクスをセルフサービスで利用できるようにする取り組みを行っています"
 upstream_path: /handbook/engineering/data-engineering/analytics/platform-insights/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-28T02:53:44Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
 
-## 私たちについて
+## ビジョン
 
-Platform Insights グループは GitLab の [Analytics Stage](/handbook/engineering/data-engineering/analytics/) の一部であり、[GitLab Observability](https://about.gitlab.com/direction/monitor/platform-insights/) と [Product Analytics](https://about.gitlab.com/direction/monitor/platform-insights/) の製品を構築しています。
+Platform Insights グループは Analytics セクションの一部です。私たちは、AI を活用してスケーラブルなデータインフラストラクチャに支えられた包括的な「ダッシュボード・アズ・ア・サービス」フレームワークを構築することで、GitLab の顧客が自身のアナリティクスをセルフサービスで利用できるようにすることに注力しています。
 
-### チームメンバー
+私たちの **[FY27 の方向性とロードマップ](https://gitlab.com/groups/gitlab-org/analytics-section/platform-insights/-/wikis/Platform-Insights-Direction-and-Roadmap)** は、何を構築しているのか、なぜ構築しているのかについての唯一の信頼できる情報源です。
 
+## 主要なイニシアチブ
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/data-engineering/analytics/platform-insights/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+これらは、チームがオーナーまたは主要な貢献者となっている主なイニシアチブです:
 
+- [Dashboard Foundations](https://gitlab.com/groups/gitlab-org/-/work_items/18072)
+- [Data Analyst Agent](https://gitlab.com/groups/gitlab-org/-/work_items/19499)
+- [GitLab Query Language (GLQL)](https://gitlab.com/gitlab-org/glql)
+- [Data Insights Platform (DIP)](https://gitlab.com/gitlab-org/analytics-section/platform-insights/core)
+- [Siphon data replication](https://gitlab.com/gitlab-org/analytics-section/siphon)
 
-### ステーブルカウンターパート
+下記の図は、ソースから顧客までの典型的なデータフローを非常に高いレベルで示しています。
 
+```mermaid
+graph LR
+    PG[(PostgreSQL)]
+    CH[(ClickHouse)]
+    S[Siphon]
+    DIP[Data Insights Platform]
+    RAILS[🦊 GitLab Rails Monolith]
+    GLQL(GitLab Query Language)
+    DAA[Data Analyst Agent]
+    DF[Dashboard Foundations]
+    USER([👤 Customer])
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/data-engineering/analytics/platform-insights/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+    PG --> S
+    S --> CH
+    CH --> DIP
+    DIP -->|Query API| RAILS
+    RAILS -->|GraphQL| GLQL
+    GLQL -->|GLQL| DAA
+    GLQL -->|GLQL| DF
+    DAA -->|Natural language query| USER
+    DF -->|Custom dashboard| USER
+```
 
+## チーム
 
-## テクニカルアーキテクチャ
+{{< group-by-slugs arun.sori debpaine drosse jiaanlouw nogundu roberthunt vineeth-r snarayanan_gl >}}
 
-### アーキテクチャブループリント
+### Stable counterparts
 
-* [Error Tracking](https://gitlab.com/gitlab-org/opstrace/opstrace/-/blob/main/docs/architecture/error-tracking.md)
-* [Tracing](https://docs.gitlab.com/ee/architecture/blueprints/observability_tracing/)
-* [Metrics](https://docs.gitlab.com/ee/architecture/blueprints/observability_metrics/)
-* [Logs](https://docs.gitlab.com/ee/architecture/blueprints/observability_logging/)
+{{< engineering/stable-counterparts manager-role="Engineering Manager(.*)Analytics:Platform Insights" role="Product(.*)Platform Insights|Principal(.*)Monitor|Security(.*)Monitor" >}}
 
-### アーキテクチャドキュメント
+### 私たちの価値観と原則
 
-* [こちらのページ](https://gitlab.com/gitlab-org/opstrace/opstrace/-/tree/main/docs/architecture)を参照してください。
-
-### プロジェクトリンク
-
-* [トップレベルエピック](https://gitlab.com/groups/gitlab-org/opstrace/-/epics/92)
-* [ソースコードリポジトリ](https://gitlab.com/gitlab-org/opstrace/opstrace)
-
-### ClickHouse データストア
-
-Observability とアナリティクスの機能には大量のデータと挿入負荷の高い要件があり、Postgres や Redis には適していません。[ClickHouse](https://github.com/ClickHouse/ClickHouse) はこれらの機能要件を満たす適切な選択肢として選ばれました。ClickHouse はオープンソースの列指向データベース管理システムです。大量の行にわたって効率的にフィルタリング、集計、合計を行えるため、これらのユースケースに魅力的です。ClickHouse は GitLab のスタックにおける Postgres や Redis の代替として意図されていません。
-
-当初はセルフホスト型の ClickHouse インスタンスを管理していましたが、ClickHouse へのメンテナンスとスケーラビリティのオフロードによりチームの動きを速めるために ClickHouse Cloud への移行を決定しました。
-
-詳細: [ClickHouse データストアワーキンググループ](/handbook/company/working-groups/clickhouse-datastore/)
-
-## 働き方
-
-私たちは会社の [Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/) に基づいたワークフローを採用しています。ワークフローの適用方法に関する変更や明確化については以下に詳述します。
-
-### 非同期スタンドアップ
-
-毎週水曜日に Slack ベースのスタンドアップ（[Geekbot](https://geekbot.com/) を使用）を行い、金曜日にレトロスペクティブを行います。これらの非同期スタンドアップを使用して、達成したこと、現在のブロッカー、次に取り組む予定を伝えます。
-
-### 非同期アップデート
-
-毎週金曜日、EM がチームの進捗の非同期アップデートを提供します。
-
-これらのアップデートは [`general` プロジェクトの Issue](https://gitlab.com/gitlab-org/opstrace/general/-/issues/?sort=created_date&state=all&label_name%5B%5D=OpsSection%3A%3AWeekly-Update&first_page_size=100) として公開されます。
-
-Ops 内のすべてのチームからのアップデートとハイライトは、週/月/四半期別にグループ化されて[こちら](https://gitlab.com/gitlab-com/ops-sub-department/ops-status-updates/-/issues/?sort=created_date&state=opened&first_page_size=20)に自動的に収集されます。
-
-### ミーティング
-
-* **週次チームシンク**: 現在進行中の作業や、ロールアウトや大きなイニシアチブなどの特定の取り組みを整理することに焦点を当てています。
-* 隔月ソーシャルアワー: このミーティングは業務に関係なく、チームが交流してお互いをよく知るのに役立ちます。
-* **チームメンバーコーヒーチャット**: 各チームメンバーは、4〜6週間おきに他のすべてのチームメンバーとコーヒーチャットをスケジュールするべきです。業務や業務外のトピックを自由に話し合えます。タイムゾーンが問題な場合は、非同期の Slack スレッドでチェックインするなど別の方法でつながってください。目標は、1対1でお互いのチームメンバーを知ることです。
-* **Dev シンク**: これらはエンジニア主催の同期ミーティングで、IC がテクニカルな問題を議論したり、EM を必要とせずにテクニカルな作業を調整したりすることができます。
+- 私たちは [GitLab の価値観](/handbook/values/) に従って働いています。
+- チーム内および Analytics セクション内の双方で、緊密に協力しています。
+- 私たちは自分たちのプロダクトとロードマップに対してオーナーシップを持っています。
+- 私たちは行動を強く志向します。
+- 私たちはデータに基づいた意思決定を行います。
 
 ### コミュニケーション
 
-以下の Slack チャンネルを使用して組織します:
+私たちが透明性を持ってコミュニケーションを行い、連絡を取ることができる Slack チャネル:
 
-* プライマリチャンネル: [#g_monitor_platform_insights](https://gitlab.enterprise.slack.com/archives/C02Q93U8J07)
-* スタンドアップチャンネル: [#g_monitor_platform_insights_standup](https://gitlab.enterprise.slack.com/archives/C02VAHG10HW)
-* ソーシャルチャンネル: [#g_monitor_platform_insights_internal](https://gitlab.enterprise.slack.com/archives/C02QLQUB0JZ)
+- メイン: [#g_monitor_platform_insights](https://gitlab.enterprise.slack.com/archives/C02Q93U8J07)
+- スタンドアップ: [#g_monitor_platform_insights_standup](https://gitlab.enterprise.slack.com/archives/C02VAHG10HW)
+- 内部用: [#g_monitor_platform_insights_internal](https://gitlab.enterprise.slack.com/archives/C02QLQUB0JZ)
 
-### 計画方法
+### ミーティング
 
-月次マイルストーンサイクルに従っています。作業は[エピック](https://gitlab.com/groups/gitlab-org/opstrace/-/epics/92 "Observability Group - FY25 HQ")に整理され、関連するマイルストーンに割り当てられます。
+- **週次チームシンク:** 進行中の作業や、ロールアウトやより大規模なイニシアチブなど特定の取り組みを整理することと、重要なアップデートの共有に焦点を当てています。
+- **Dev sync:** エンジニアが主催するミーティングで、IC が EM や PM を必要とせず技術的な問題を議論したり、技術的な作業を調整したりできます。
+- **1:1 コーヒーチャット:** チームメンバーは、数週間ごとにチーム内および広範な Analytics セクション内の他のメンバーすべてとコーヒーチャットをスケジュールすべきです。仕事の話題でも、仕事以外の話題でも歓迎します。タイムゾーンが障壁になる場合は、非同期 Slack スレッドでも構いません。目標は 1:1 のつながりです。
 
-マイルストーンの開始日は [gitlab.org グループのマイルストーン](https://gitlab.com/groups/gitlab-org/-/milestones?search_title=17.0&state=&sort=)で定義されています。[新しい GitLab リリースカレンダー](https://about.gitlab.com/blog/2023/09/18/gitlab-release-date-change/)に従い、毎月変更されます。
+## 私たちの働き方
 
-マイルストーン計画タイムライン:
+私たちは会社の [プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/) に基づいてワークフローを構築しています。ワークフローの適用方法に関する変更や明確化については、以下に詳述します。
 
-* マイルストーン開始 10日前: PM/EM が高レベルのマイルストーン目標を含む計画[ドラフト Issue](https://gitlab.com/groups/gitlab-org/opstrace/-/epics/80) を作成します。
-* マイルストーン開始 8日前: 計画ドラフトをチームと共有します。個別貢献者は、これらの目標に関連するエピックと Issue や前のマイルストーンから引き継がれたものを推薦します。
-* マイルストーン開始 5日前: 計画はチームシンクミーティングでレビューされます。
-* マイルストーン開始日: マイルストーンの目標と関連するエピックおよび Issue が確定・優先順位付けされるべきです。計画された全作業は[マイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/7850744)で確認できます。前のマイルストーンの Issue は新しいマイルストーンまたはバックログに移動されます。
-* マイルストーン中、進捗を分析し必要に応じて再優先順位付けします。
+### マイルストーンプランニング
 
-### Issue の優先順位付け
+私たちは月次リリースサイクルに合わせた GitLab マイルストーンで作業しています。FY27 ロードマップ wiki が計画された優先事項の唯一の信頼できる情報源です。各マイルストーンの開始前に、チームは利用可能なキャパシティに合わせて Issue を精査し、スコープを決めます。
 
-私たちの優先順位はプロダクト全体のガイダンスに従うべきです。これはスケジュールされた Issue の優先度ラベルに反映されるべきです:
+### 非同期スタンドアップ
 
-| 優先度 | 説明 | マイルストーンでの出荷確率 |
-| ------ | ------ | ------ |
-| priority::1 | **緊急**: 特定のマイルストーンで達成するための最優先事項。これらの Issue はリリースにとって最も重要な目標であり、最初に取り組むべきです；一部は時間的に重要だったり他の依存関係をブロックしていたりします。 | ~100% |
-| priority::2 | **高**: ビジネスまたは技術的負債に大きな好影響を与える重要な Issue。重要ですが、時間的に重要ではなく他をブロックしていません。 | ~75% |
-| priority::3 | **通常**: 既存機能への段階的な改善。これらは重要なイテレーションですが、重要度が低いと見なされています。 | ~50% |
-| priority::4 | **低**: 将来のリリースへの先送りが許容されるストレッチ Issue。 | ~25% |
+チームメンバーは毎週金曜日に [Geekbot](https://geekbot.com/) を使用して週次スタンドアップを提出します。私たちはこれらの非同期スタンドアップを使って、達成したこと、現在のブロッカー、次に取り組む予定について連携します。
 
-### 取り組む作業を探す方法
+### レトロスペクティブ
 
-通常、マイルストーン開始時に EM が作業の概要と注力する関連領域について説明します。マイルストーン開始前にすでに Issue が割り当てられている場合もあります。
+私たちは 2 種類のレトロスペクティブを実施しています:
 
-追加の Issue を探している場合:
+**1. マイルストーンレトロスペクティブ (自動化)**
 
-1. Platform Insight の[マイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/7850744)を確認します。
-1. 未割り当ての Issue を特定します。
-1. 自分を Issue に割り当てます。
-1. Issue に `workflow:in dev` ラベルを追加します。
-1. スコープや説明が不明確な場合は、EM や PM に確認するか、（自信がある場合は）自分でグルームして進めます。
-1. Issue に取り組み始めます。
-1. 関連するすべての MR がマージされたら、`~workflow::verification` ラベルを設定します。
-    * MR が Issue を自動クローズしないようにしてください。（MR の説明では `Closes #11111` ではなく `Relates to #11111` を使用します。）
-1. 変更を確認し、例えば `Verified on production` のように検証に使用した環境を Issue にコメントします。
-1. Issue をクローズします！🎉
-1. 繰り返します。
+すべてのマイルストーンが終了した後に自動的に実行されます。マイルストーン全体について、うまくいったこと、つらかったこと、次回違うやり方をしたいことをチームで構造的に振り返るタイミングを提供します。
 
-### Observability Beta をお客様に有効にする方法
+**2. 機能またはインシデントのレトロスペクティブ (必要に応じて)**
 
-特定のお客様に Logs、Tracing、Metrics ベータへのアクセスを有効にするには、以下のプロセスに従います:
+主要な機能のリリース後または重大なインシデント発生後にチームによって企画されます。機能ローンチの場合は、何を達成したかを把握し、スケジュールする必要のあるフォローアップの技術的負債や品質修正を表面化させる機会となります。インシデントの場合は、責任を割り当てることなく何がうまくいかなかったかに焦点を当て、再発をどう防ぐか、そしてアクションするべき修復策や監視の改善に焦点を当てます。
 
-SaaS の場合:
+### ClickHouse データストア
 
-* 事前に、[このページ](https://docs.gitlab.com/ee/development/chatops_on_gitlabcom.html#requesting-access)に詳述されている ChatOps コマンドを実行するための適切なアクセスと権限を持っていることを確認します。
-* お客様にトップレベルグループ名を確認します（例: https://gitlab.com/gitlab-org/ の場合は `gitlab-org`）。
-* #production で、このグループのフィーチャーフラグを有効にするために以下のコマンドを実行します（`gitlab-org` をお客様のグループ名に置き換えます）:
+アナリティクス機能はビッグデータと書き込み重視の要件を持ち、Postgres や Redis には適しません。これらの機能要件を満たすために [ClickHouse](https://github.com/ClickHouse/ClickHouse) が選定されました。ClickHouse はオープンソースの列指向データベース管理システムです。大量の行に対してフィルタリング、集計、合計を効率的に実行できるため、これらのユースケースに魅力的です。ClickHouse は GitLab のスタックで Postgres や Redis を置き換えるためのものではありません。
 
-```text
-/chatops run feature set --group=gitlab-org observability_features true
-```
+最初は自前でホストする ClickHouse インスタンスを管理していましたが、メンテナンスとスケーラビリティを Clickhouse に委ねてチームがより速く動けるようにするため、Clickhouse Cloud への移行を決定しました。
 
-すでに有効になっているグループのリストを確認するには、以下のコマンドを実行します:
-
-```text
-/chatops run feature get observability_features
-```
-
-リストはグループ名ではなくグループ ID を返します。グループの ID を知るには、グループのページ（[例](https://gitlab.com/gitlab-org/)）を閲覧し、ページ右上の "..." メニューを開いて「グループ ID をコピー」を選択します。グループへのアクセス権がない場合は、お客様に行っていただくよう依頼してください。
-
-詳細: 関連する[フィーチャーフラグ Issue](https://gitlab.com/gitlab-org/opstrace/opstrace/-/issues/2444) を参照してください。
-
-セルフマネージドの場合:
-
-* 現時点では利用できません。
+詳細はこちら: [Clickhouse Datastore Working Group](/handbook/company/working-groups/clickhouse-datastore/)
