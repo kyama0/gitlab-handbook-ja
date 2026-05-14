@@ -13075,24 +13075,24 @@
     },
     "content/handbook/legal/customer-negotiations.md": {
       "path": "content/handbook/legal/customer-negotiations.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "d328f5af8eab6f5de06c1fc92896c47dfab15419a672464fd6219f11df21d155"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "662a1214ba8d6281ff5d578a11fff69aa04f1df99e7611ed9a1885d45bdaa572"
     },
     "content/handbook/legal/data-processing-agreement.md": {
       "path": "content/handbook/legal/data-processing-agreement.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-30T00:55:37Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "c8653b4b91a5f19acfa399d9204161f3c2160fc7b125d28bdf281286e5a6a1b2"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c7e1fd3e227aa3e3a2f633cf1e5804da952d27143e9daeae1859eb30264c8c2b"
     },
     "content/handbook/legal/dmca.md": {
       "path": "content/handbook/legal/dmca.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-30T00:55:37Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "996cb1b6770a9fd977ee6a53410a92a414073ec9f0ce0bcccf0b0706c01505a0"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7e79028ebbcb031e0d2815be9b5bf14de6b0e736519b39074108716bbce7a832"
     },
     "content/handbook/legal/dora.md": {
       "path": "content/handbook/legal/dora.md",
@@ -13453,10 +13453,10 @@
     },
     "content/handbook/legal/privacy/gdpr.md": {
       "path": "content/handbook/legal/privacy/gdpr.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-29T07:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "812cd31cd439cb43b3865e7100dd465e95f5feeb4225cedb3544e6256d71a9ca"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fcacd10b8c0b673ecaad07f2b6a70032c2c4ccf13a92a9a5b1dba3f79d55487d"
     },
     "content/handbook/legal/privacy/law-enforcement-guidelines.md": {
       "path": "content/handbook/legal/privacy/law-enforcement-guidelines.md",
@@ -13726,10 +13726,10 @@
     },
     "content/handbook/marketing/blog/_index.md": {
       "path": "content/handbook/marketing/blog/_index.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-30T07:54:04Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f78fd6812d880e7ca4eac3332c63c15c46599f92bc24ab7c49b88f175af1d796"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c989f2148a664c7932dc1c426f764d592f2bae6749a96000059d2b85b3f950d3"
     },
     "content/handbook/marketing/blog/blog-metrics.md": {
       "path": "content/handbook/marketing/blog/blog-metrics.md",
@@ -13746,10 +13746,11 @@
       "input_hash": "78b2faca9b030f7e001d50a7ff69202f9b6a2beeb023dea5c37b39f0603655a1"
     },
     "content/handbook/marketing/blog/release-posts/_index.md": {
-      "upstream_sha": "4dd867bb5474243a3eda82ced06a78b7e4682f34",
-      "translated_at": "2026-04-30T00:00:00Z",
+      "path": "content/handbook/marketing/blog/release-posts/_index.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "00fb97012761b394d294f80be9da3294a1a6fdc0bde73928fa73eeadd16074fc"
+      "input_hash": "d7533ba34c422d65542de1f5a81de6c9dc8b80a9455c1d102379026c7f007e9f"
     },
     "content/handbook/marketing/blog/release-posts/managers.md": {
       "path": "content/handbook/marketing/blog/release-posts/managers.md",
@@ -13851,10 +13852,10 @@
     },
     "content/handbook/marketing/brand-and-product-marketing/content/editorial-team.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/content/editorial-team.md",
-      "upstream_sha": "9bcc3fa641f3c78cb94b2ff71f5a8170ff5b412b",
-      "translated_at": "2026-04-30T12:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "77f6226fddbce6036bfb7380dde66aaf27f92011c813507ee50709e91de4359c"
+      "input_hash": "5c38b98123040f8fd42019e3f40ad1b790c3ba2b6afd73b6fc48d6265bc049c1"
     },
     "content/handbook/marketing/brand-and-product-marketing/design.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/design.md",
@@ -13872,10 +13873,10 @@
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/_index.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/_index.md",
-      "upstream_sha": "9bcc3fa641f3c78cb94b2ff71f5a8170ff5b412b",
-      "translated_at": "2026-04-30T12:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "645b0f6b82940ab2cc57322115b6bd72b75b548ec73eaee6110f9b7ae7517ac3"
+      "input_hash": "7b88c4b7c66b54134ea9c9df3c6c6e6e213337fabe6bd604d4ca8ba80ef2750c"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/ar-briefings.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/ar-briefings.md",
@@ -14075,10 +14076,10 @@
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/cloud-native-ecosystem.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/cloud-native-ecosystem.md",
-      "upstream_sha": "072f834e2cd849e6ac3cfa985e4eb1249dd62cd6",
-      "translated_at": "2026-04-30T12:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "420ebc49da98423cb6c7a257ed107b65a7108d5d297edac126d9f24f9ceeacbc"
+      "input_hash": "e02191d0171de3879081c54543d9890dbac8fa7b765261328a759a21ba2052ff"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions.md",
@@ -14894,10 +14895,10 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "d7e2187e27c26cc2f236a7d9f8bb1b5bdc82f8e1cbae080881e8b85ec3d133ee"
+      "input_hash": "1115888fd1313145b3cf2f85f6e2ed292eaf75ef61e8bf830607731f5d32bb65"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/learn-developer-advocacy.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/learn-developer-advocacy.md",
