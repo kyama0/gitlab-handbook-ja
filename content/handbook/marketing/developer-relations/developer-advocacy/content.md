@@ -2,8 +2,8 @@
 title: "デベロッパーアドボケイトのコンテンツライブラリとワークフロー"
 description: "デベロッパーアドボカシーチームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/content/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T12:00:00Z"
 translator: claude
 stale: false
 ---
@@ -22,6 +22,8 @@ stale: false
 
 **注**: 更新または新規作成されたコンテンツアセットが必要な場合は、[コンテンツリクエストワークフロー](/handbook/marketing/developer-relations/content-request/#how-to-work-with-the-developer-advocate-team) に従ってください。
 
+既存のコンテンツ作業項目は [FY Content strategy epic](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/work_items?sort=created_date&state=opened&label_name%5B%5D=DevRel-Content&type%5B%5D=8&first_page_size=20) にグループ化されています。
+
 ## コンテンツライブラリ {#content-library}
 
 このハンドブックページで関連するコンテンツを検索でき、リンクされたコンテンツ epic または [#dev-advocacy-team](https://app.slack.com/client/T02592416/CMELFQS4B) Slack チャンネルでチームに連絡できます。
@@ -37,46 +39,38 @@ stale: false
 このセクションでは、デベロッパーアドボカシーチームによって執筆された数多くのブログ記事の例を提供します。著者名をクリックすると、ブログ記事の完全なリストが表示されます。
 
 - [Cesar Saavedra](https://about.gitlab.com/blog/authors/cesar-saavedra/)
-  - [Enhance application quality with AI-powered test generation](https://about.gitlab.com/blog/enhance-application-quality-with-ai-powered-test-generation/)
-  - [Speed up code reviews: Let AI handle the feedback implementation](https://about.gitlab.com/blog/speed-up-code-reviews-let-ai-handle-the-feedback-implementation/)
-  - [Accelerate code reviews with GitLab Duo and Amazon Q](https://about.gitlab.com/blog/accelerate-code-reviews-with-gitlab-duo-and-amazon-q/)
-  - [Modernizing a simple C++ application to Java with GitLab Duo](https://about.gitlab.com/blog/2024/12/11/modernizing-a-simple-c-application-to-java-with-gitlab-duo/)
+  - [GitLab Duo Agent Platform with Claude accelerates development](https://about.gitlab.com/blog/gitlab-duo-agent-platform-with-claude-accelerates-development/)
+  - [Vibe coding with GitLab Duo Agent Platform: Issue to MR Flow](https://about.gitlab.com/blog/vibe-coding-with-gitlab-duo-agent-platform-issue-to-mr-flow/)
 - [Daniel Helfand](https://about.gitlab.com/blog/authors/daniel-helfand/)
+  - [Variable and artifact sharing in GitLab parent-child pipelines](https://about.gitlab.com/blog/variable-and-artifact-sharing-in-gitlab-parent-child-pipelines/)
   - [Get started with GitLab Duo Agentic Chat in the web UI](https://about.gitlab.com/blog/get-started-with-gitlab-duo-agentic-chat-in-the-web-ui/)
-  - [How to stream logs through the GitLab Dashboard for Kubernetes](https://about.gitlab.com/blog/2024/08/19/how-to-stream-logs-through-the-gitlab-dashboard-for-kubernetes/)
+  - [How to stream logs through the GitLab Dashboard for Kubernetes](https://about.gitlab.com/blog/how-to-stream-logs-through-the-gitlab-dashboard-for-kubernetes/)
 - [Fatima Sarah Khalid](https://about.gitlab.com/blog/authors/fatima-sarah-khalid/)
   - [Get started with GitLab Duo Agentic Chat in the web UI](https://about.gitlab.com/blog/get-started-with-gitlab-duo-agentic-chat-in-the-web-ui/)
   - [The Co-Create Program: How customers are collaborating to build GitLab](https://about.gitlab.com/blog/the-co-create-program-how-customers-are-collaborating-to-build-gitlab/)
   - [ICYMI: Key AI and security insights from our developer community](https://about.gitlab.com/blog/icymi-key-ai-and-security-insights-from-our-developer-community/)
-  - [Develop C++ unit testing with Catch2, JUnit, and GitLab CI](https://about.gitlab.com/blog/2024/07/02/develop-c-unit-testing-with-catch2-junit-and-gitlab-ci/)
-  - [Explore the Dragon Realm: Build a C++ adventure game with a little help from AI](https://about.gitlab.com/blog/2023/08/24/building-a-text-adventure-using-cplusplus-and-code-suggestions/)
-  - [How to choose the right static site generator](https://about.gitlab.com/blog/2022/04/18/comparing-static-site-generators/)
 - [Fernando Diaz](https://about.gitlab.com/blog/authors/fernando-diaz/)
+  - [A complete guide to GitLab Container Scanning](https://about.gitlab.com/blog/complete-guide-to-gitlab-container-scanning/)
+  - [OWASP Top 10 2025: What's changed and why it matters](https://about.gitlab.com/blog/2025-owasp-top-10-whats-changed-and-why-it-matters/)
+  - [AI-powered vulnerability triaging with GitLab Duo Security Agent](https://about.gitlab.com/blog/vulnerability-triage-made-simple-with-gitlab-security-analyst-agent/)
   - [How to use GitLab's Custom Compliance Frameworks in your DevSecOps environment](https://about.gitlab.com/blog/how-to-use-gitlabs-custom-compliance-frameworks-in-your-devsecops/)
-  - [Enhance application security with GitLab + HackerOne](https://about.gitlab.com/blog/enhance-application-security-with-gitlab-hackerone/)
-  - [Secure and safe login and commits with GitLab + Yubico](https://about.gitlab.com/blog/secure-and-safe-login-and-commits-with-gitlab-yubico/)
-  - [Strengthen data security with custom PII detection rulesets](https://about.gitlab.com/blog/enhance-data-security-with-custom-pii-detection-rulesets/)
-  - [Vulnerability risk prioritization made simple with GitLab](https://about.gitlab.com/blog/vulnerability-risk-prioritization-made-simple-with-gitlab/)
-  - [How to integrate custom security scanners into GitLab](https://about.gitlab.com/blog/2024/02/27/how-to-integrate-custom-security-scanners-into-gitlab/)
+  - [A comprehensive guide to GitLab DAST](https://about.gitlab.com/blog/comprehensive-guide-to-gitlab-dast/)
+  - [Secure Rust development with GitLab](https://about.gitlab.com/blog/secure-rust-development-with-gitlab/)
 - [John Coghlan](https://about.gitlab.com/blog/authors/john-coghlan/)
-  - [Developer Relations at GitLab: What we've learned since our start](https://about.gitlab.com/blog/2024/03/13/developer-relations-at-gitlab-what-weve-learned-since-our-start/)
-  - [Building GitLab with GitLab: How GitLab.com inspired Dedicated](https://about.gitlab.com/blog/2023/08/03/building-gitlab-with-gitlabcom-how-gitlab-inspired-dedicated/)
+  - [GitLab Duo CLI: Agentic AI for the development lifecycle, now in the terminal](https://about.gitlab.com/blog/gitlab-duo-cli/)
+  - [Developer Relations at GitLab: What we've learned since our start](https://about.gitlab.com/blog/developer-relations-at-gitlab-what-weve-learned-since-our-start/)
+  - [Building GitLab with GitLab: How GitLab.com inspired Dedicated](https://about.gitlab.com/blog/building-gitlab-with-gitlabcom-how-gitlab-inspired-dedicated/)
 - [Itzik Gan Baruch](https://about.gitlab.com/blog/authors/itzik-gan-baruch/)
+  - [Get started with GitLab Duo Agent Platform: The complete guide](https://about.gitlab.com/blog/gitlab-duo-agent-platform-complete-getting-started-guide/)
+  - [A developer's guide to building secure retail apps with GitLab](https://about.gitlab.com/blog/a-developers-guide-to-building-secure-retail-apps-with-gitlab/)
   - [Software supply chain security guide: Why organizations struggle](https://about.gitlab.com/blog/software-supply-chain-security-guide-why-organizations-struggle/)
-  - [Why are organizations moving to a unified DevSecOps platform?](https://about.gitlab.com/blog/why-are-organizations-moving-to-a-unified-devsecops-platform/)
-  - [Quickly resolve broken CI/CD pipelines with AI](https://about.gitlab.com/blog/2024/12/03/quickly-resolve-broken-ci-cd-pipelines-with-ai/)
-  - [FAQ: GitLab CI/CD Catalog](https://about.gitlab.com/blog/2024/08/01/faq-gitlab-ci-cd-catalog/)
-  - [Refactoring a CI/CD template to a CI/CD component](https://about.gitlab.com/blog/2024/03/04/refactoring-a-ci-cd-template-to-a-ci-cd-component/)
-  - [Jenkins to GitLab: The ultimate guide to modernizing your CI/CD environment](https://about.gitlab.com/blog/2023/11/01/jenkins-gitlab-ultimate-guide-to-modernizing-cicd-environment/)
 - [Michael Friedrich](https://about.gitlab.com/blog/authors/dnsmichi/)
+  - [Claude Code and GitLab: Three workflows that ship](https://about.gitlab.com/blog/claude-code-and-gitlab/)
   - [Custom rules in GitLab Duo Agentic Chat for greater developer efficiency](https://about.gitlab.com/blog/custom-rules-duo-agentic-chat-deep-dive/)
-  - [Refactor code into modern languages with AI-powered GitLab Duo](https://about.gitlab.com/blog/2024/08/26/refactor-code-into-modern-languages-with-ai-powered-gitlab-duo/)
-  - [Top tips for efficient AI-powered Code Suggestions with GitLab Duo](https://about.gitlab.com/blog/2024/06/11/top-tips-for-efficient-ai-powered-code-suggestions-with-gitlab-duo/)
-  - [10 best practices for using AI-powered GitLab Duo Chat](https://about.gitlab.com/blog/2024/04/02/10-best-practices-for-using-ai-powered-gitlab-duo-chat/)
+  - [Refactor code into modern languages with AI-powered GitLab Duo](https://about.gitlab.com/blog/refactor-code-into-modern-languages-with-ai-powered-gitlab-duo/)
 - [William Arias](https://about.gitlab.com/blog/authors/william-arias/)
-  - [Building GitLab with GitLab: Why there is no MLOps without DevSecOps](https://about.gitlab.com/blog/2023/10/05/there-is-no-mlops-without-devsecops/)
-  - [Modern software development problems require modern AI-powered DevSecOps](https://about.gitlab.com/blog/2023/09/07/modern-software-development-problems-require-modern-ai-powered-devsecops/)
-  - [How Comet can streamline machine learning on The GitLab DevOps Platform](https://about.gitlab.com/blog/2021/11/08/machine-learning-on-the-gitlab-devops-platform/)
+  - [Variable and artifact sharing in GitLab parent-child pipelines](https://about.gitlab.com/blog/variable-and-artifact-sharing-in-gitlab-parent-child-pipelines/)
+  - [Building GitLab with GitLab: Why there is no MLOps without DevSecOps](https://about.gitlab.com/blog/there-is-no-mlops-without-devsecops/)
 
 ### 製品ツアー {#product-tours}
 
@@ -145,19 +139,22 @@ stale: false
 
 GitLab YouTube チャンネル:
 
-- [GitLab Demos](https://www.youtube.com/watch?v=ZQBAuf-CTAY&list=PLFGfElNsQthYv5OtNEFoGwd0cAg-55Hdj)
+- [GitLab Demos](https://www.youtube.com/playlist?list=PLFGfElNsQthYv5OtNEFoGwd0cAg-55Hdj)
+- [GitLab Duo Demos](https://www.youtube.com/playlist?list=PLFGfElNsQthZGazU1ZdfDpegu0HflunXW)
 - [GitLab Snapshots](https://www.youtube.com/playlist?list=PLFGfElNsQthYDx0A_FaNNfUm9NHsK6zED)
 - [GitLab Snapshots - español](https://www.youtube.com/playlist?list=PLFGfElNsQthbm-EfY2AyFNr8o6qT5A2ud)
 - [GitLab Snapshots - português](https://www.youtube.com/playlist?list=PLFGfElNsQthaRSNTv93cM57GBB1l_95Px)
-- [GitLab Duo Snapshots](https://www.youtube.com/playlist?list=PLFGfElNsQthZGazU1ZdfDpegu0HflunXW)
 
 GitLab Unfiltered YouTube チャンネル:
 
 - 講演録画、ワークショップ、コミュニティエンゲージメントを収録した [Developer Advocacy](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq-bYO9jCJaN45BBpzWSLAQ)。
 - [Dev Advocacy: GitLab Duo Agent Platform use cases](https://www.youtube.com/playlist?list=PL05JrBw4t0Ko7aR6sM8e4uXGYtjs4-NqK)
+- AI カタログのパワーを示し、誰もが貢献するよう促すユーザーストーリーを紹介する [Contributor Success AI Catalog / Duo Agent Platform Demos](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq5vFCEQLrowmwGGi5YmCJK)
+
+アーカイブ:
+
 - [GitLab Duo Coffee Chat](/handbook/marketing/developer-relations/developer-advocacy/projects/#gitlab-duo-coffee-chat)、GitLab Duo と AI に関する学習セッション。（ステータス: 非アクティブ）
 - [DevOps with GitLab Duo](https://www.youtube.com/playlist?list=PL05JrBw4t0Krzu4U6gO3tS738hlsQGFz5)、GitLab Duo、DevOps、AI に関する学習セッション。（ステータス: 非アクティブ）
-- AI カタログのパワーを示し、誰もが貢献するように促すユーザーストーリーを紹介する [Contributor Success AI Catalog / Duo Agent Platform Demos](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq5vFCEQLrowmwGGi5YmCJK)
 
 #### GitLab Unfiltered チャンネルへの動画アップロード
 
@@ -176,14 +173,14 @@ GitLab Unfiltered YouTube チャンネル:
 | タイトル | 分野 | 焦点 | リソース | 更新 | DRI |
 |-------|------|-------|-----------|---------|-----|
 | Efficient DevSecOps workflows with a little help from My AI Agents | Agentic AI、GitLab Duo Agent Platform | ユースケースと問題解決、ライブデモと AMA | GitLab DACH Roadshow 2025 [recording](https://www.youtube.com/watch?v=amJQkKhe5ys)、slides: [public](https://dnsmichi.click/efficient-devsecops-ai-agents-gitlab-dach-roadshow-2025), [internal](https://docs.google.com/presentation/d/1YMOQf-5hNzCyfUS2w6yvvDlfu_FqmYebkyxmeFWTyOU/edit)、Demo: [Tanuki IoT Platform](https://gitlab.com/gitlab-da/use-cases/ai/gitlab-duo-agent-platform/demo-environments/tanuki-iot-platform) | 2025-12-04 | @dnsmichi |
-| Breaking and Entering (Open Source): AI for Swift Contribution | AI で貢献し共創する | AI でのベストプラクティスを学ぶ、contributors.gitlab.com を強調 | Bitkom Forum Open Source 2025 slides: [public](https://dnsmichi.click/oss-contributions-ai-bitkom-forum-open-source-2025), [internal](https://docs.google.com/presentation/d/1gqxkzoUiTlajYeI4gwWXGdV8fxC8jQwS3oOeKqQxnxg/edit) | 2025-09-18 | @dnsmichi |
-| Evolving the Edge: AI, CI, and Hardware-in-the-Loop for Embedded | Agentic AI、CI、Embedded | 組み込みハードウェア上で MCP を使った GitLab CI/CD Runners、LLM、Agentic AI のリサーチ | Container Days 2025 [recording](https://www.youtube.com/watch?v=1DGolO9bEfo)、slides: [public](https://dnsmichi.click/evolving-edge-ai-ci-hil-embedded-container-days-2025), [internal](https://docs.google.com/presentation/d/1tcsvvgjCAt4lXc_9vhiTg93Rhgn_K-1DYU5tYsKjmEQ/edit) | 2025-09-10 | @dnsmichi |
-| Learning AI 101: Practical Foundations for Developers | Agentic AI | LLM、RAG、Tools、Agents、MCP のユースケースと実用的なプロンプトなど | Open Source @ Siemens 2025 [recording](https://www.youtube.com/watch?v=6NxSJmpjxfo)、slides: [public](https://dnsmichi.click/learning-ai-101-os-siemens-2025), [internal](https://docs.google.com/presentation/d/1PUCUrVzKnzc25md8gbh1jYznz-dUFfQcENvbR9xUJ7k/edit) | 2025-06-03 | @dnsmichi |
 
 アーカイブ:
 
 | タイトル | 分野 | 焦点 | リソース | 更新 | DRI |
 |-------|------|-------|-----------|---------|-----|
+| Breaking and Entering (Open Source): AI for Swift Contribution | AI で貢献し共創する | AI でのベストプラクティスを学ぶ、contributors.gitlab.com を強調 | Bitkom Forum Open Source 2025 slides: [public](https://dnsmichi.click/oss-contributions-ai-bitkom-forum-open-source-2025), [internal](https://docs.google.com/presentation/d/1gqxkzoUiTlajYeI4gwWXGdV8fxC8jQwS3oOeKqQxnxg/edit) | 2025-09-18 | @dnsmichi |
+| Evolving the Edge: AI, CI, and Hardware-in-the-Loop for Embedded | Agentic AI、CI、Embedded | 組み込みハードウェア上で MCP を使った GitLab CI/CD Runners、LLM、Agentic AI のリサーチ | Container Days 2025 [recording](https://www.youtube.com/watch?v=1DGolO9bEfo)、slides: [public](https://dnsmichi.click/evolving-edge-ai-ci-hil-embedded-container-days-2025), [internal](https://docs.google.com/presentation/d/1tcsvvgjCAt4lXc_9vhiTg93Rhgn_K-1DYU5tYsKjmEQ/edit) | 2025-09-10 | @dnsmichi |
+| Learning AI 101: Practical Foundations for Developers | Agentic AI | LLM、RAG、Tools、Agents、MCP のユースケースと実用的なプロンプトなど | Open Source @ Siemens 2025 [recording](https://www.youtube.com/watch?v=6NxSJmpjxfo)、slides: [public](https://dnsmichi.click/learning-ai-101-os-siemens-2025), [internal](https://docs.google.com/presentation/d/1PUCUrVzKnzc25md8gbh1jYznz-dUFfQcENvbR9xUJ7k/edit) | 2025-06-03 | @dnsmichi |
 | Efficient DevSecOps workflows with a little help from AI | AI、GitLab Duo | Duo を使った製品ユースケース | DACH Roadshow 2024 slides: [public](https://go.gitlab.com/JRFMG4), [internal](https://docs.google.com/presentation/d/1Pm8yT46jpcc3kY0PLZqZlG2slIiFyZiQPKFEgyqqstw/edit)  | 2024-11-14 | @dnsmichi |
 
 ### ワークショップ
@@ -191,6 +188,8 @@ GitLab Unfiltered YouTube チャンネル:
 デベロッパーアドボカシーチームは、さまざまな製品分野と注力分野でワークショップを維持しています。ワークショップにはさまざまな種類があります: ハンズオン形式（聴衆がライブで演習に参加するトレーニングコース）、または聴衆が質問でエンゲージするライブデモ・プログラミングセッションのショーケースなどです。ワークショップは、[Solution Architect](/handbook/solutions-architects/) および [Customer Success](/handbook/customer-success/) チームと協力して作成し、ビジネス目標と整合させる必要があります。
 
 > 注: 特定の顧客に焦点を当てたワークショップは、[顧客コンサルティングハンドブック](/handbook/marketing/developer-relations/developer-advocacy/consultancy/) に従ってリクエストできます。
+
+アーカイブ:
 
 | タイトル | 分野 | タイプ | 焦点 | DRI | リソース |
 |-------|------|------|-------|-----|-----------|
@@ -221,6 +220,17 @@ GitLab Unfiltered YouTube チャンネル:
 | [CI Overview](https://tech-marketing.gitlab.io/static-demos/ci_overview_v1.html) | CI | 2023-10-23 |
 
 注: インターネット接続がない場合、デモはオフラインで実行できます。これを行うには、[こちら](https://gitlab.com/tech-marketing/static-demos/-/tree/master/public) から必要な HTML ファイルを直接取得できます。
+
+### 製品採用イニシアチブ
+
+- [Support Orbit / Knowledge Graph launch (demos, use cases, research) - FY27](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/work_items/1163)
+- [Support GitLab DAP launch: Status, feature tracker, enablement - DevRel FY27](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/work_items/878)
+
+アーカイブ:
+
+- [FY26 GitLab Duo (AI/ML) Adoption strategy (DevRel)](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/work_items/520)
+- [FY25 GitLab Duo adoption - Developer Relations epic](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/475)（社内）。
+- [FY25 CI/CD adoption - Developer Relations epic](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/466)（社内）
 
 ### プロジェクト
 
@@ -530,8 +540,3 @@ Content epic: <URL>
 
 Thanks a lot @HelpfulCoworker for editing this long read :handshake: :purple_heart:
 ```
-
-## 製品採用イニシアチブ
-
-- [FY25 GitLab Duo adoption - Developer Relations epic](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/475) （社内）。
-- [FY25 CI/CD adoption - Developer Relations epic](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/466) （社内）

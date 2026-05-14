@@ -1,8 +1,8 @@
 ---
 title: "Twitter 対応ワークフロー"
 upstream_path: /handbook/marketing/developer-relations/workflows-tools/twitter/
-upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
-translated_at: "2026-04-30T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T12:00:00Z"
 translator: claude
 stale: false
 ---
@@ -26,7 +26,7 @@ stale: false
 1. ユーザーが技術的な問題や問い合わせのヘルプを必要としている場合に、フォーラムへ誘導する
 1. Social Media Team または Communications Team から明示的に依頼された場合に、ツイートのコンテンツを発信する
 
-Community Operations は、Twitter 上の GitLab に対するすべてのメンションを Zapier 経由で Zendesk に取り込みます。Zendesk で Twitter のチケットを解決する際は次のことを行ってください:
+Community Operations は、Twitter 上の GitLab に対するすべてのメンションを Zendesk に取り込むために Zendesk を使用します。Zendesk で Twitter のチケットを解決する際は次のことを行ってください:
 
 1. 技術的な質問を探し、Zendesk から Twitter で返信してフォーラムに誘導します
 1. Social Media Team が興味を持ちそうなリツイート機会を探します
