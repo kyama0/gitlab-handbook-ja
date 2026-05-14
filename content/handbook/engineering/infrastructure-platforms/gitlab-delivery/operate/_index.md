@@ -160,7 +160,7 @@ RFH を開くには、私たちの [how to get help](/handbook/support/workflows
 3. 私たちの [stewardship promises](/handbook/company/stewardship/#promises) に反する決定があれば、Issue を提起します。
 4. [行った変更を還元する](/handbook/engineering/open-source/#using-forks-in-your-code) 機会を見つけます。
 
-## デフォルトでパブリック
+## デフォルトでパブリック {#public-by-default}
 
 チームが行うすべての作業はパブリックです。一部の例外が適用されます:
 

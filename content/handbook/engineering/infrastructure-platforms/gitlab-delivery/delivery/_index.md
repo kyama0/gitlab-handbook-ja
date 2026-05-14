@@ -287,7 +287,7 @@ Release & Deploy グループは、次に取り上げる作業の順序を示す
 
 このグループは、ステージチームと Infrastructure チームの間のタイムラインの違いから来るあいまいさを避けるために、[一般的な Issue トリアージ優先度の定義](/handbook/product-development/how-we-work/issue-triage/#priority) とは異なる方法で優先度ラベルを使用します。私たちは異なるタイムライン (リリースは Delivery に異なる期待をもたらす)、異なる DRI (Delivery には PM がない)、異なる重要性 (ブロックされたリリースは誰も何も出荷できないことを意味する) を持っています。
 
-#### Delivery impact ラベル
+#### Delivery impact ラベル {#delivery-impact-labels}
 
 インシデントには、アクティブな場合にインシデントが持つ影響を示すために、`Delivery impact:*` ラベルが任意で付くことがあります。このラベルは、複数のインシデント間で優先順位付けを行うのに役立つことを目的としています。
 
