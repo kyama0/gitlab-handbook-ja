@@ -2,8 +2,8 @@
 title: "サクセスプラン"
 description: "サクセスプランは、顧客の望むビジネス成果と GitLab ソリューションを結びつけるロードマップです。CSM が作成・管理する生きたドキュメントです。"
 upstream_path: /handbook/customer-success/csm/success-plans/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T01:56:09Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -217,7 +217,7 @@ VO は **SMART** である必要があります: Specific（具体的）、Measu
 
 | フェーズ | リード | 内容 |
 |---|---|---|
-| **プリセールス** | SA + AE | 顧客の目標が文書化され、GitLab の価値実証に使用されます。[相互顧客サクセスプランプロセス](/handbook/solutions-architects/sa-practices/customer-success-plan/)を参照してください。 |
+| **プリセールス** | SA + AE | 顧客の目標が文書化され、GitLab の価値実証に使用されます。[相互顧客サクセスプランプロセス](/handbook/solutions-architects/processes/customer-success-plan/)を参照してください。 |
 | **ポストセールス / オンボーディング** | CSM | CSM が目標をレビューし、正確性を検証し、有効化と実装のためのイニシアチブを追加します。次に何をするか、誰が担当するかについての完全な合意。 |
 | **継続的なエンゲージメント** | CSM | サクセスプランはすべての[ケーデンスコール](/handbook/customer-success/csm/cadence-calls/)と[ビジネスレビュー](/handbook/customer-success/csm/ebr/)の基軸となります。ケーデンスコールが週次の進捗を促し、ビジネスレビューが戦略を評価し新しい目標を発掘します。 |
 

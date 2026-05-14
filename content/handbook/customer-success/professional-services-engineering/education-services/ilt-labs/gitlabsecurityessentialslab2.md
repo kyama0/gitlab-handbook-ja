@@ -2,8 +2,8 @@
 title: "GitLab Security Essentials - ハンズオンラボ: 脆弱性への対応"
 description: "このハンズオンガイドは、アプリケーションの脆弱性をトリアージして対応する方法を案内します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab2/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T05:12:10Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -16,71 +16,53 @@ stale: false
 
 1. Security Labs プロジェクトに移動します。
 
-1. 左サイドバーで **Secure > 脆弱性レポート** を選択します。トリアージプロセスを開始するには、まだトリアージされていない脆弱性に焦点を当てて、重大度順に脆弱性を並べ替えることをお勧めします。これがデフォルトの設定です。
+1. 左サイドバーで **Secure > Vulnerability Report** を選択します。トリアージプロセスを開始するには、まだトリアージされていない脆弱性に焦点を当てて、重大度順に脆弱性を並べ替えることをお勧めします。これがデフォルトの設定です。
 
-1. セキュリティレポートで **重大度** を選択して並べ替え順を変更します。矢印が下を向いていて、重大度が高い順から低い順に並んでいることを確認します。
+1. セキュリティレポートで **Severity** を選択して並べ替え順を変更します。矢印が下を向いていて、重大度が高い順から低い順に並んでいることを確認します。
 
 1. **GitLab Advanced SAST** スキャンで検出された脆弱性 **Active debug code** を選択します。
 
 1. 脆弱性を確認します。`main.py` の HTTP デバッグコードが「True」に設定されているため、この検出結果は有効であることがわかります。
 
-1. 右上隅の **脆弱性を編集** をクリックし、**ステータスを変更** を選択します。ステータスを **確認済み** に設定し、**ステータスを変更** をクリックします。
+1. 右上隅の **Edit Vulnerability** をクリックし、**Change status** を選択します。ステータスを **Confirmed** に設定し、**Change status** をクリックします。
 
-1. ページの下部にスクロールし、**Issue を作成** を選択します。
+1. ページの下部にスクロールし、**Create issue** を選択します。
 
-1. Issue には脆弱性のタイトルと詳細が自動的に入力されています。Issue の詳細を確認し、**Issue を作成** を選択します。
+1. Issue には脆弱性のタイトルと詳細が自動的に入力されています。Issue の詳細を確認し、**Create issue** を選択します。
 
-1. **Secure > 脆弱性レポート** に戻ります。
+1. **Secure > Vulnerability Report** に戻ります。
 
-1. 脆弱性 **SQL コマンドで使用される特殊要素の不適切な無効化（「SQL インジェクション」）** の最初のインスタンスを選択します。
+1. 脆弱性 **Improper neutralization of special elements used in a SQL command ('SQL Injection')** の最初のインスタンスを選択します。
 
-1. **コードフロー** タブを選択します。
+1. **Code flow** タブを選択します。
 
-1. コードフローを確認して、脆弱性がどのように発生するかを確認します。右上隅の **脆弱性を編集** をクリックし、**ステータスを変更** を選択します。ステータスを **確認済み** に設定し、**ステータスを変更** をクリックします。
+1. コードフローを確認して、脆弱性がどのように発生するかを確認します。右上隅の **Edit Vulnerability** をクリックし、**Change status** を選択します。ステータスを **Confirmed** に設定し、**Change status** をクリックします。
 
-1. **詳細** タブを選択します。
+1. **Details** タブを選択します。
 
-1. ページの下部にスクロールし、**Issue を作成** を選択します。
+1. ページの下部にスクロールし、**Create issue** を選択します。
 
-1. Issue を確認し、**Issue を作成** を選択します。
+1. Issue を確認し、**Create issue** を選択します。
 
 この時点で、アプリケーションのセキュリティ Issue として対処すべき 2 つの Issue を作成しました。これらの脆弱性を修正するプロセスを確認しましょう。
 
 ## タスク B. 脆弱性の修正
 
-1. **プラン > 作業アイテム** に移動します。
+これらの脆弱性を解決するために、Duo Agent Platform（DAP）を使用します。Duo Agent Platform は GitLab の AI ソリューションで、Issue 作成、マージリクエストのレビュー、パイプラインの修復、そして今回のように脆弱性の改修にも役立ちます。
 
-1. **Investigate vulnerability: Active debug code** というタイトルの Issue を選択します。
+1. **Settings > General** に移動し、**GitLab Duo** をクリックします。**Turn on SAST false positive detection** と **Turn on SAST vulnerability resolution workflow** のスイッチをクリックしてオンにします。これらのオプションは、脆弱性の改修処理と、誤検知の可能性のチェックに役立ちます。
 
-1. コードの場所 `main.py:14` を選択します。
+1. **Save changes** を選択します。
 
-1. **編集 > Web IDE で開く** を選択します。
+1. **Security > Vulnerability Report** に移動します。244 行目で検出された *Improper neutralization of special elements used in an SQL Command ('SQL Injection')* 脆弱性を選択します。
 
-1. `main.py` ファイルを選択します。
+1. 脆弱性の右上隅で **AI Vulnerability Management** を選択し、**Explain with AI** を選択します。DAP ツールが脆弱性を分析し、その脆弱性がどのように悪用される可能性があるかを説明します。エージェントはまた、その脆弱性を改修する方法も説明します。
 
-1. コードの行を以下のように変更します:
+1. **AI Vulnerability Management** を選択し、**Explain with AI** を選択します。AI は、脆弱性を含むコードがコードベース内でどのように使われているかを分析し、誤検知かどうかをチェックします。実行には数分かかります。
 
-    ```python
-    app.run(debug=False)
-    ```
+1. **AI Vulnerability Management** を選択し、**Resolve with AI** を選択します。これにより、脆弱性を改修するマージリクエストが作成されます。AI が作成を完了すると、そのままマージリクエストに案内されます。
 
-1. 左サイドバーで **ソース管理** アイコンを選択します。
-
-1. 適切なコミットメッセージ（例: 「Turned off debug mode」）を入力し、**新しいブランチを作成してコミット** をクリックします。
-
-1. **Enter** を押してデフォルトのブランチ名を使用します。
-
-1. 画面右下の **MR を作成** を選択します。
-
-1. ページ下部の **マージリクエストを作成** を選択します。
-
-1. マージリクエストのパイプラインが完了するまで待ち、ページを更新します。**パイプラインのすべての検出結果を表示** をクリックします。
-
-1. 検出結果を確認します。セキュリティリストに **Active debug code** の脆弱性が表示されなくなっているはずです。
-
-1. MR に戻り、**マージ** を選択してセキュリティ更新をマージします。
-
-1. main ブランチのパイプラインが完了したら、**脆弱性レポート** に移動します。フィルターの右側にある X をクリックして、レポートからすべてのフィルターを削除します。この脆弱性が自動的に解決済みとしてマークされていることが確認できます。
+1. マージリクエストによって行われた変更を確認し、納得できたら **Merge** を選択します。
 
 ## ラボガイド完了
 

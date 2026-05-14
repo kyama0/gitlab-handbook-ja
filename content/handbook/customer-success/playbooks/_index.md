@@ -1,8 +1,8 @@
 ---
 title: カスタマーサクセス プレイブック
 upstream_path: /handbook/customer-success/playbooks/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T02:49:20Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -85,12 +85,12 @@ stale: false
 | Monitor Expansion Stage Adoption（Monitor 拡大ステージ導入） | 手動 | 目標 | |
 | Package Enablement Stage Adoption（Package イネーブルメントステージ導入） | 手動 | 目標 | |
 | Package Expansion Stage Adoption（Package 拡大ステージ導入） | 手動 | 目標 | |
-| Selling Ultimate to New Customers（新規顧客への Ultimate 販売） | 手動 | 目標 | [ハンドブックリンク](/handbook/solutions-architects/sales-plays/) |
+| Selling Ultimate to New Customers（新規顧客への Ultimate 販売） | 手動 | 目標 | [ハンドブックリンク](/handbook/solutions-architects/playbooks/sales-plays/) |
 | Server Migration - On-Prem to On-Prem（サーバー移行：オンプレミス → オンプレミス） | 手動 | 目標 | [GitLab サーバー移行プレイブック](https://docs.google.com/spreadsheets/d/1cP6czE6zZ9EWT5HGOF2MGP2repiV0GI8a8V2i9iK9vM/edit#gid=0) |
 | Server Migration - On-Prem to Self-Managed Cloud（サーバー移行：オンプレミス → セルフマネージドクラウド） | 手動 | 目標 | [GitLab サーバー移行プレイブック](https://docs.google.com/spreadsheets/d/1cP6czE6zZ9EWT5HGOF2MGP2repiV0GI8a8V2i9iK9vM/edit#gid=0) |
 | Server Migration - On-Prem/Cloud to K8S（サーバー移行：オンプレミス/クラウド → Kubernetes） | 手動 | 目標 | [GitLab サーバー移行プレイブック](https://docs.google.com/spreadsheets/d/1cP6czE6zZ9EWT5HGOF2MGP2repiV0GI8a8V2i9iK9vM/edit#gid=0) |
 | Server Migration - Self-Managed to GitLab SaaS（サーバー移行：セルフマネージド → GitLab SaaS） | 手動 | 目標 | [GitLab サーバー移行プレイブック](https://docs.google.com/spreadsheets/d/1cP6czE6zZ9EWT5HGOF2MGP2repiV0GI8a8V2i9iK9vM/edit#gid=0) |
-| Ultimate Uptier for Existing Customers（既存顧客への Ultimate アップティア） | 手動 | 目標 | [ハンドブックリンク](/handbook/solutions-architects/sales-plays/) |
+| Ultimate Uptier for Existing Customers（既存顧客への Ultimate アップティア） | 手動 | 目標 | [ハンドブックリンク](/handbook/solutions-architects/playbooks/sales-plays/) |
 | Account Handoff（アカウント引き継ぎ） | 手動 | アクティビティ | |
 | Update Stale CSM Sentiment（古い CSM センチメントの更新） | 手動 | アクティビティ | |
 | Upcoming Renewal（更新直前） | 自動 | 更新 | |

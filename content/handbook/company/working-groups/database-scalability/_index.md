@@ -18,7 +18,7 @@ stale: false
 | Google Doc      | [Working Group Agenda](https://docs.google.com/document/d/17go_0DWgU5CZXKiXmlU_CUmWfen5typtFzKrD1qv13w/edit#heading=h.mty28tz7llip)（社内からのみアクセス可） |
 | Issue ボード    | [Sharding:Build Board](https://gitlab.com/groups/gitlab-org/-/boards/2594854?scope=all&utf8=%E2%9C%93&label_name[]=group%3A%3Asharding&label_name[]=sharding%3A%3Aactive)             |
 
-### 終了基準
+### 終了基準 {#exit-criteria}
 
 このワーキンググループのチャーターは、データベースバックエンドストレージをスケーリングするための一連のブループリント・設計・初期実装を生み出すことです。これらの終了基準は、以下の高レベルの目標を達成するための道筋を示します:
 

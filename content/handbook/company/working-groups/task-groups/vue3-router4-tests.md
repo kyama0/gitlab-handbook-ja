@@ -38,7 +38,7 @@ Vue Router の非互換性によって現在失敗しているすべてのテス
 
 * Vue Router 3 と 4 の互換性に直接関係しないテストは、マイグレーション戦略の対象外であるため、考慮しません。
 
-## 終了基準
+## 終了基準 {#exit-criteria}
 
 * ルーター互換性エラー（非目標を除く）を発行している[テスト](https://gitlab-org.gitlab.io/frontend/playground/jest-speed-reporter/vue3)が修正されている。
 

@@ -47,7 +47,7 @@ stale: false
 - 廃止予定ポリシーと GitLab の実際の運用解釈が一致しているか、変更が必要かを検討します。
 - 次のメジャーリリースの状況を改善し、次のイテレーションでこのワーキンググループが不要になるための計画を策定します。
 
-### 終了基準
+### 終了基準 {#exit-criteria}
 
 終了基準は [Future Major Release Coordination & Improvements Epic](https://gitlab.com/groups/gitlab-com/-/epics/2363#exit-criteria) に記載されています。
 

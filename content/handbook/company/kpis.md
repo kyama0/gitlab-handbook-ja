@@ -1,203 +1,177 @@
 ---
 title: KPI
 upstream_path: "/handbook/company/kpis/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T15:43:48Z"
+upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
+translated_at: "2026-05-14T00:00:00Z"
 translator: "claude"
 stale: false
 ---
 
 ## KPI とは
 
-GitLab のすべての部門には重要業績評価指標（KPI）があります。
-より具体的に表現できる場合は「メトリクス」という用語の使用を避けてください。
-代わりに KPI を使用してください。
-各部門の KPI は、e-group の各メンバーが所有します。
-部門はトラッキングする多くのパフォーマンス指標（PI）を持つ場合があり、そのすべてが KPI であるわけではありません。
-KPI は PI のサブセットであり、リーダーシップに提示すべき最も重要な PI を示すために使用されます。
+GitLab のあらゆる部分には Key Performance Indicators（KPI）があります。
+より明示的に表現できる場面では metric という用語を避けます。
+代わりに KPI を使います。
+ある機能の KPI は、E-group の該当メンバーが所有します。
+1 つの機能は、追跡している多くの Performance Indicator（PI）を持つことができ、そのすべてが KPI になるわけではありません。
+KPI は PI のサブセットであるべきで、リーダーシップに対して可視化すべき最も重要な PI を示すために使われます。
 
-KPI の定義は、[機能と結果](/handbook/about/handbook-usage/#organized-by-function-and-results)で整理されたハンドブックの最も関連性の高い部分に記載する必要があります。
-定義の中では、この指標の正規ソースが何であるかに言及する必要があります。
-計算式がある場合は、それも含めてください。
-KPI に関連する目標は定義と共存させてください。
-例えば、「リリースごとのより広いコミュニティの貢献」はハンドブックの Developer Relations 部分に、「採用にかかる平均日数」はハンドブックの Talent Acquisition 部分に記載すべきです。
+KPI の定義は、[機能と成果](/handbook/about/handbook-usage/#organized-by-function-and-results)で構成されたハンドブックの中で最も関連性の高い箇所に置く必要があります。
+定義の中では、この指標の正式な情報源が何かを必ず明記します。
+計算式がある場合は、それも含めます。
+KPI に関連する目標は、定義と一緒に配置するべきです。
+たとえば「リリースあたりのワイダーコミュニティからの貢献数」はハンドブックの Developer Relations の部分にあり、「採用までの平均日数」はハンドブックの Talent Acquisition の部分に置きます。
 
 ## KPI インデックス {#kpi-index}
 
 ## 凡例
 
-以下のアイコンは[フェーズ 1](/handbook/company/kpis/) に関連しており、GitLab の誰でも割り当てることができます。
+以下のアイコンは [Phase 1](/handbook/company/kpis/) に該当し、GitLab の誰でも割り当てることができます。
 
-📊 KPI は運用中であり、公開されており、定義の隣の GitLab ハンドブックに埋め込まれています。
+📊 KPI が稼働中であり、公開されており、GitLab ハンドブック内で定義の隣に埋め込まれている。
 
-🔗 KPI は運用中であり、KPI が[内部](/handbook/communication/confidentiality-levels/#internal)であるか GitLab ハンドブックにまだ埋め込めないため、別のシステムへのリンクがあります。
+🔗 KPI が稼働中であり、別システムへのリンクである。KPI が[Internal](/handbook/communication/confidentiality-levels/#internal)であるか、まだ GitLab ハンドブックに埋め込めないため。
 
-🔒 KPI は運用中であり、[限定アクセス](/handbook/communication/confidentiality-levels/#limited-access)システムへのリンクがあります。
+🔒 KPI が稼働中であり、[Limited Access](/handbook/communication/confidentiality-levels/#limited-access) のシステムへのリンクである。
 
-🚧 KPI は `WIP: 作業中` であり、1ヶ月以内に運用開始予定です。Issue へのリンクを含める必要があります。
+🚧 KPI が `WIP: work in progress` 状態で、1 か月以内に稼働予定。Issue へのリンクを含めるべき。
 
-🐔 KPI は近い将来に運用される可能性が低いです。
+🐔 KPI が近い将来に稼働する見込みが低い。
 
 ## GitLab KPI
 
-GitLab の**ノーススターメトリクス**はランレート収益です。それに加えて、他に 10 の主要な KPI があります。
+GitLab の **North Star metric** はランレート売上です。加えて他に 10 個のトップ KPI があります。
 
-GitLab KPI は、このページの下部にある報告書の目標の複製です。
-GitLab KPI は会社のパフォーマンスの最も重要な 10 の指標であり、最も重要な KPI は Net ARR です。
-これらは取締役会の四半期ごとの会議で確認されます。
-これらの KPI は、会社に対する単独での重要性と、メトリクスの改善に費やされる経営陣の注目量の組み合わせによって決定されます。
+GitLab KPI はこのページの下にあるレポートの目標と重複します。
+GitLab KPI は会社のパフォーマンスを示す最も重要な 10 個の指標であり、最も重要な KPI は Net ARR です。
+これらは取締役会の四半期ごとの会議で毎回レビューします。
+これらの KPI は、会社にとっての単独での重要性と、その指標を改善するために割かれているマネジメントの集中度の組み合わせによって決定されます。
 
-1. [収益](/handbook/company/kpis/#sales-kpis)対計画（ラギング）
-1. [R&D 全体の MR レート](/handbook/engineering/performance-indicators/#rd-overall-mr-rate)（リーディング）
-1. [推定複合月間アクティブユーザー数（CMAU）](https://internal.gitlab.com/handbook/company/performance-indicators/product/#estimated-combined-monthly-active-users)（リーディング）
-1. [新規ビジネスパイプライン作成額（$）](/handbook/marketing/performance-indicators/#net-new-business-pipeline-created) 🐔（リーディング）
-1. [四半期開始時のパイプラインカバレッジ ステージ 3+](/handbook/marketing/performance-indicators/#pipeline-coverage)（リーディング）
-1. [クォータ達成以上のランプ済み担当者の割合](https://internal.gitlab.com/handbook/company/performance-indicators/sales/#percent-of-ramped-reps-at-or-above-quota)（ラギング）
-1. [Net Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)（ラギング）
-1. [Gross Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)（ラギング）
-1. [12ヶ月チームメンバー自発的定着率](/handbook/people-group/people-success-performance-indicators/#team-member-voluntary-retention-rolling-12-months)（ラギング）
-1. [月間ユニークなより広いコミュニティ貢献者数](/handbook/marketing/developer-relations/performance-indicators/#unique-wider-community-contributors-per-month)（ラギング）
-
-## CEO オフィス KPI
-
-
-<p class="my-3 text-sm text-gray-600 italic">KPI ダッシュボードは <a href="https://handbook.gitlab.com/handbook/company/kpis/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+1. [Revenue](/handbook/company/kpis/#sales-kpis) vs. plan（遅行指標）
+1. [R&D Overall MR Rate](/handbook/engineering/performance-indicators/#rd-overall-mr-rate)（先行指標）
+1. [Estimated Combined Monthly Active Users (CMAU)](https://internal.gitlab.com/handbook/company/performance-indicators/product/#estimated-combined-monthly-active-users)（先行指標）
+1. [Net New Business Pipeline Created ($s)](/handbook/marketing/performance-indicators/#net-new-business-pipeline-created) 🐔（先行指標）
+1. [Pipeline coverage start of quarter stage 3+](/handbook/marketing/performance-indicators/#pipeline-coverage)（先行指標）
+1. [Percent of Ramped Reps at or Above Quota](https://internal.gitlab.com/handbook/company/performance-indicators/sales/#percent-of-ramped-reps-at-or-above-quota)（遅行指標）
+1. [Net Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)（遅行指標）
+1. [Gross Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)（遅行指標）
+1. [12 Month Team Member Voluntary Retention](/handbook/people-group/people-success-performance-indicators/#team-member-voluntary-retention-rolling-12-months)（遅行指標）
+1. [Unique Wider Community Contributors per Month](/handbook/marketing/developer-relations/performance-indicators/#unique-wider-community-contributors-per-month)（遅行指標）
 
 ## Sales KPI
 
-[Sales KPI](https://internal.gitlab.com/handbook/company/performance-indicators/sales/#kpi-summary) は[非公開](/handbook/communication/confidentiality-levels/#not-public)であり、[社内ハンドブック](/handbook/about/handbook-usage/#the-internal-handbook)に文書化されています。
+[Sales KPI](https://internal.gitlab.com/handbook/company/performance-indicators/sales/#kpi-summary) は [Not Public](/handbook/communication/confidentiality-levels/#not-public) であり、[Internal handbook](/handbook/about/handbook-usage/#the-internal-handbook) に文書化されています。
 
-
-<p class="my-3 text-sm text-gray-600 italic">KPI ダッシュボードは <a href="https://handbook.gitlab.com/handbook/company/kpis/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< kpi "Sales" >}}
 
 ## Marketing KPI
 
-
-<p class="my-3 text-sm text-gray-600 italic">KPI ダッシュボードは <a href="https://handbook.gitlab.com/handbook/company/kpis/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< kpi "Marketing" >}}
 
 ### Developer Relations 部門 KPI
 
-
-<p class="my-3 text-sm text-gray-600 italic">KPI ダッシュボードは <a href="https://handbook.gitlab.com/handbook/company/kpis/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< kpi "Developer Relations Department" >}}
 
 ## People Group KPI
 
 ### People Success KPI
 
-
-<p class="my-3 text-sm text-gray-600 italic">KPI ダッシュボードは <a href="https://handbook.gitlab.com/handbook/company/kpis/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< kpi "People Success" >}}
 
 ## Finance KPI
 
-### Finance チーム KPI - キーレビューで報告
+### Finance チーム KPI - Key Review にて報告
 
-
-<p class="my-3 text-sm text-gray-600 italic">KPI ダッシュボードは <a href="https://handbook.gitlab.com/handbook/company/kpis/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< kpi "Finance Team" >}}
 
 ## Product KPI
 
-GitLab チームメンバーは、`Okta > GitLab Internal Handbook` から社内ハンドブック内のすべての製品パフォーマンス指標にアクセス・更新できます。
+GitLab のチームメンバーは、`Okta > GitLab Internal Handbook` から Internal handbook 内のすべての Product Performance Indicator にアクセスし、更新できます。
 
 ## Engineering KPI
 
-
-<p class="my-3 text-sm text-gray-600 italic">KPI ダッシュボードは <a href="https://handbook.gitlab.com/handbook/company/kpis/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< kpi "Engineering Function" >}}
 
 ### Customer Support 部門 KPI
 
-
-<p class="my-3 text-sm text-gray-600 italic">KPI ダッシュボードは <a href="https://handbook.gitlab.com/handbook/company/kpis/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< kpi "Customer Support Department" >}}
 
 ### Development 部門 KPI
 
-
-<p class="my-3 text-sm text-gray-600 italic">KPI ダッシュボードは <a href="https://handbook.gitlab.com/handbook/company/kpis/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< kpi "Development Department" >}}
 
 ### Infrastructure 部門 KPI
 
-
-<p class="my-3 text-sm text-gray-600 italic">KPI ダッシュボードは <a href="https://handbook.gitlab.com/handbook/company/kpis/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< kpi "Infrastructure Department" >}}
 
 ### UX 部門 KPI
 
-
-<p class="my-3 text-sm text-gray-600 italic">KPI ダッシュボードは <a href="https://handbook.gitlab.com/handbook/company/kpis/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< kpi "UX Department" >}}
 
 ## 満足度
 
-満足度は 1 から 5 のスケールで、人々がその経験にどれだけ満足しているかを測定します。
-特定のスコアを切り捨てる NPS は使用せず、精度を保持したいためです。
-SAT の前に以下の略称文字を使用します。SAT の前に文字を付けずに使用しないでください:
+私たちは満足度を 1〜5 の段階で測り、体験にどれだけ満足したかを把握します。
+NPS は使いません。NPS は特定のスコアを切り捨てるため、忠実度を保ちたい私たちには合いません。
+SAT の前に以下の略称を 1 文字つけます。前置の文字なしで SAT を使わないでください。
 
-- C = 未使用（顧客は曖昧であるため：製品またはサポートを意味する可能性があり、すべてのユーザーが顧客ではない）
-- E = 未使用（従業員は他の会社で使用されているが、私たちは使用しない）
-- I = 応募者（ここへの応募を勧めるか）
-- L = リーダーシップ（専任の管理サポートを持つ役員として、役員管理サポートはどのように受け取られているか）
-- O = [オンボーディング](/handbook/people-group/people-success-performance-indicators/#onboarding-tsat)（オンボーディング体験はどうだったか）
-- P = [製品](https://internal.gitlab.com/handbook/company/performance-indicators/product/)（GitLab の製品を勧めるか）
-- S = [サポート](/handbook/support/performance-indicators/#support-satisfaction-ssat)（サポートのフォローアップを勧めるか）
-- T = チームメンバー（ここで働くことを勧めるか）
+- C = 使用しません。customer は曖昧（プロダクトかサポートかが分からず、すべてのユーザーが顧客とは限らない）なため
+- E = 使用しません。他社では employee が使われるものの、私たちは使いません
+- I = Interviewee（ここに応募するよう人にすすめますか）
+- L = Leadership（専任の事務サポートを持つエグゼクティブとして、提供される秘書サポートはどうですか）
+- O = [Onboarding](/handbook/people-group/people-success-performance-indicators/#onboarding-tsat)（オンボーディング体験はどうでしたか）
+- P = [Product](https://internal.gitlab.com/handbook/company/performance-indicators/product/)（GitLab プロダクトを他人にすすめますか）
+- S = [Support](/handbook/support/performance-indicators/#support-satisfaction-ssat)（私たちのサポートフォローアップを他人にすすめますか）
+- T = Team-members（ここで働くことを他人にすすめますか）
 
-## 定着率
+## リテンション
 
-多くの方法で定着率をトラッキングしているため、どの種類の定着率かを示さずに単に「定着率」と呼ぶべきではありません。
-私たちがトラッキングしているもの:
+私たちは多くの形でリテンションを追跡しているため、種類を示さずに単に「Retention」と表記するべきではありません。
+追跡しているもの:
 
 - [Net Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)
 - [Gross Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)
-- ユーザー定着率
-- [チームメンバー定着率](/handbook/people-group/people-success-performance-indicators/#team-member-retention)
+- User Retention
+- [Team Member Retention](/handbook/people-group/people-success-performance-indicators/#team-member-retention)
 
-## KPI の層
+## KPI のレイヤー
 
-私たちは多くの異なる[層](/handbook/company/structure/#layers)で KPI を持っています。
+私たちは多くの異なる[レイヤー](/handbook/company/structure/#layers)で KPI を持っています。
 
-KPI は、機能的層に存在する場合にのみ、会社（例: GitLab）層に存在できます。
-言い換えると、GitLab KPI は役員の KPI の複製です。
-すべての機能的 KPI が GitLab KPI であるわけではありませんが、すべての GitLab KPI は機能的 KPI です。
+KPI が会社（たとえば GitLab）レイヤーで存在できるのは、それが機能レイヤーでも存在している場合のみです。
+言い換えれば、GitLab KPI はエグゼクティブの KPI の複製です。
+すべての機能 KPI が GitLab KPI ではありませんが、すべての GitLab KPI は機能 KPI です。
 
-GitLab が成長するにつれて、これは層全体でも同様になります。
-すべての部門 KPI が機能的 KPI であるわけではありませんが、すべての機能的 KPI は部門 KPI になります。
-これは組織全体でカスケードされ、すべてのジョブファミリーにはそれに関連するパフォーマンス指標が設定されます。
+GitLab が成長するにつれて、このことはレイヤー全体にも当てはまるようになります。
+すべての部門 KPI が機能 KPI になるわけではありませんが、すべての機能 KPI は部門 KPI になります。
+これは組織全体にカスケードしていき、すべての職務ファミリーにそれに関連する Performance Indicator が紐づくようになります。
 
-[KPI インデックス](#kpi-index)は、会社、機能、部門の KPI を記録します。これらは最も高い 3 つの層であるためです。
+[KPI インデックス](#kpi-index)は、会社、機能、部門の KPI を捕捉します。これらが最上位の 3 つのレイヤーであるためです。
 
-唯一の例外は、KPI のフィルターが変わる場合です。
-例えば、GitLab KPI は「採用対計画」かもしれませんが、Engineering KPI は「Engineering 採用対計画」かもしれません。
+これに対する唯一の例外は、KPI のフィルターが変わる場合です。
+たとえば、GitLab KPI が「Hires vs Plan」であるのに対し、Engineering KPI は「Engineering Hires vs Plan」となる場合があります。
 ロジックは同じですが、フィルターが変わります。
 
-## KPI の構成要素
+## KPI を構成する要素
 
-KPI またはメトリクスは複数の要素で構成されます:
+KPI または指標は複数の要素から構成されます。
 
-1. 定義: データソースは何か？どのように計算されるか？どのフィールドが含まれるか？どのような注意点があるか？なぜ選択されたか？
-    - 注: 例として[インフラホスティングコスト（MAU あたり）](/handbook/engineering/infrastructure/performance-indicators/#infrastructure-hosting-cost-per-gitlab-com-monthly-active-users)をご参照ください。
-1. 目標: 上回ることを目指すもの（例: ARR には目標がある）
-1. 上限: 下回ることを目指すもの（例: 離職率には上限がある）
-1. [職務記述書](/handbook/hiring/job-description-library/): このパフォーマンス指標を持つ職務記述書へのリンク
-1. 計画: 年間計画に含まれるもの
-1. コミット: 最も否定的な結果
-1. 50/50: 中間推定値、50% の確率で低くなり、高くなる
-1. ベストケース: 最も肯定的な結果
-1. 予測: ローリング 4 四半期予測に使用するもの
-1. 実績: 実際の数値
+1. 定義: データソースは何か。どのように計算されるか。どのフィールドが含まれるか。どんな注意事項が考慮されているか。なぜ選ばれたのか。
+    - 注: 例として [Infrastructure Hosting Cost per MAU](/handbook/engineering/infrastructure/performance-indicators/#infrastructure-hosting-cost-per-gitlab-com-monthly-active-users) を参照してください。
+1. ターゲット: 上回ることを目指すもの。たとえば ARR にはターゲットがあります
+1. 上限: 下回ることを目指すもの。たとえば離職率には上限があります
+1. [職務記述](/handbook/hiring/job-description-library/): この Performance Indicator を含む職務記述へのリンク
+1. 計画: 年次計画に組み込んでいるもの
+1. コミット: 最も悲観的な見通し
+1. 50/50: 中央値の見積もり。上振れと下振れが 50% ずつ
+1. ベストケース: 最も楽観的な見通し
+1. フォーキャスト: 4 四半期のローリングフォーキャストで使うもの
+1. 実績: 実際の数字
 
-## 何が公開されているか？
+## 何が公開されるか
 
-「GitLab Metrics at IPO」というドキュメントには、公開共有する可能性のある KPI が記載されています。
-すべての KPI には公開の定義、目標、およびジョブファミリーへのリンクがあります。
-実際のパフォーマンスとさまざまな推定値は次のとおりです:
+ドキュメント「GitLab Metrics at IPO」には、私たちが公開する可能性のある KPI が記載されています。
+すべての KPI には公開可能な定義、目標、職務ファミリーへのリンクがあります。
+実際の実績と各種見積もりは以下のいずれかになります。
 
 1. ライブ報告
 1. 四半期報告

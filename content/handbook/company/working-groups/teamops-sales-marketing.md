@@ -28,7 +28,7 @@ TeamOps は収益を生み出す必要があり、関連する計画をもう 1 
 
 詳細については、[概要 Issue](https://gitlab.com/gitlab-com/office-of-the-ceo/workplace/teamops-fy24-q1/-/issues/3) をご覧ください。
 
-### 終了基準
+### 終了基準 {#exit-criteria}
 
 1. 既存のプロダクトセールスとマーケティング目標に基づいて、TeamOps セールスのターゲットオーディエンスを優先順位付けする
 1. TeamOps B2C セールスファネルのエンドツーエンドの実現可能性を確認する

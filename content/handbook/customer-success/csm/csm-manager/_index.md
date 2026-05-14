@@ -2,8 +2,8 @@
 title: "CSM マネージャーハンドブック"
 description: "標準的・定期的なプラクティスに関する CSM マネージャー向けフィールドガイド。"
 upstream_path: /handbook/customer-success/csm/csm-manager/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -20,21 +20,21 @@ stale: false
 
 | 名前 | 地域 | レベル | チーム |
 |---|---|---|---|
-| [Sherrod Patching](/handbook/company/team/#spatching) | グローバル | VP | CS |
-| [Ally Frusciano](/handbook/company/team/#afrusciano) | グローバル | ディレクター | CSE |
-| [Erica Sivak](/handbook/company/team/#esivak) | AMER | シニアマネージャー | CSE |
-| [Oliver Falk](/handbook/company/team/#ofalk) | EMEA | マネージャー | CSE |
-| [Catherine Ballantyne](/handbook/company/team/#cballantyne) | APJ | ディレクター | CSM/E |
-| [Kent Georgeson](/handbook/company/team/#kgeorgeson) | グローバル | ディレクター | Success Services |
-| [Sophie Pouliquen](/handbook/company/team/#spouliquen1) | AMER East | シニアマネージャー | CSM |
-| [Chloe Whitestone](/handbook/company/team/#chloe) | AMER East | マネージャー | CSM |
-| [Tiffany McAtee](/handbook/company/team/#tiffanymcatee.gitlab) | AMER East | シニアマネージャー | CSM |
-| [Jamie Reid](/handbook/company/team/#jrreid) | AMER West | マネージャー | CSM |
-| [Cedric Stapleton](/handbook/company/team/#c.stapleton) | AMER West | マネージャー | CSM |
-| [Michael Leutz](/handbook/company/team/#mrleutz) | EMEA | ディレクター | CSM |
-| [Christina Souleles](/handbook/company/team/#csouleles) | DACH | シニアマネージャー | CSM |
-| [Robert Clark](/handbook/company/team/#robclark14) | PubSec | マネージャー | CSM & CSE |
-| [Steven Terhar](/handbook/company/team/#steveterhar) | PubSec | マネージャー | CSM & CSE |
+| [Sherrod Patching](https://gitlab.com/spatching) | グローバル | VP | CS |
+| [Ally Frusciano](https://gitlab.com/afrusciano) | グローバル | ディレクター | CSE |
+| [Erica Sivak](https://gitlab.com/esivak) | AMER | シニアマネージャー | CSE |
+| [Oliver Falk](https://gitlab.com/ofalk) | EMEA | マネージャー | CSE |
+| [Catherine Ballantyne](https://gitlab.com/cballantyne) | APJ | ディレクター | CSM/E |
+| [Kent Georgeson](https://gitlab.com/kgeorgeson) | グローバル | ディレクター | Success Services |
+| [Sophie Pouliquen](https://gitlab.com/spouliquen1) | AMER East | シニアマネージャー | CSM |
+| [Chloe Whitestone](https://gitlab.com/chloe) | AMER East | マネージャー | CSM |
+| [Tiffany McAtee](https://gitlab.com/tiffanymcatee.gitlab) | AMER East | シニアマネージャー | CSM |
+| [Jamie Reid](https://gitlab.com/jrreid) | AMER West | マネージャー | CSM |
+| [Cedric Stapleton](https://gitlab.com/c.stapleton) | AMER West | マネージャー | CSM |
+| [Michael Leutz](https://gitlab.com/mrleutz) | EMEA | ディレクター | CSM |
+| [Christina Souleles](https://gitlab.com/csouleles) | DACH | シニアマネージャー | CSM |
+| [Robert Clark](https://gitlab.com/robclark14) | PubSec | マネージャー | CSM & CSE |
+| [Steven Terhar](https://gitlab.com/steveterhar) | PubSec | マネージャー | CSM & CSE |
 
 ## CSM マネージャーの職責と要件
 
