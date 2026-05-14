@@ -8084,10 +8084,10 @@
     },
     "content/handbook/engineering/data-engineering/analytics/optimize.md": {
       "path": "content/handbook/engineering/data-engineering/analytics/optimize.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-28T02:53:44Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "dfdea44398da483fdfeb8a66dc76727bf79efca90f294dd4040b44d221c2e5fd"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3138bb914f4656bee9bda3d56221cb0d2cf8c49cf7f9db8a332c9dc03a1c7450"
     },
     "content/handbook/engineering/data-engineering/analytics/platform-insights.md": {
       "path": "content/handbook/engineering/data-engineering/analytics/platform-insights.md",
@@ -8098,10 +8098,10 @@
     },
     "content/handbook/engineering/data-engineering/database-excellence/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/_index.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-28T02:53:44Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "b4f1e691604c5a4b6d80f8649a0c190ae7e1a4d34fb7964fe800ae19f2739c9f"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "09e85c39a54b677995add1ec7b484319116b858a6908acd3df1bcea1d98b963e"
     },
     "content/handbook/engineering/data-engineering/database-excellence/database-architecture/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/database-architecture/_index.md",
@@ -8231,10 +8231,10 @@
     },
     "content/handbook/engineering/data-engineering/database-excellence/database-operations/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/database-operations/_index.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-28T04:23:44Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "3493878f666ed52f03c7da5b746ac17a5648c6f0c93ad485f788d161ea9c2e34"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3eea04076c8eec97e4f110b94233d41cc316342e76017b59f8df9b5f06f241fa"
     },
     "content/handbook/engineering/data-engineering/database-excellence/database-operations/dbre-escalation-process.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/database-operations/dbre-escalation-process.md",
@@ -8277,10 +8277,10 @@
     },
     "content/handbook/engineering/development/fulfillment/_index.md": {
       "path": "content/handbook/engineering/development/fulfillment/_index.md",
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-05-06T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "9efd152462c3fc987418bfacacd1f948e5d66ba35e321e889f11fe0c7971a837"
+      "input_hash": "dbef87823118a9123bbaa385128d19fe7aedd0494ef63de52233a131ca6e169b"
     },
     "content/handbook/engineering/development/fulfillment/dib.md": {
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
@@ -8649,10 +8649,10 @@
       "input_hash": "7abbbdfd51099cb5bc833521433bbaf04a23326ae96e77cba1c53637ff62d435"
     },
     "content/handbook/engineering/development/sec/security-risk-management/security-insights/_index.md": {
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-05-06T10:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1318309aaed9019102981806d8bc9d8fd354630c943ec979a40c71c1a7f3cd27"
+      "input_hash": "ee7bc1efa2bb15790f3329a6b7b6b109c3a895bf54a935605209e32f59a4d9e0"
     },
     "content/handbook/engineering/development/sec/security-risk-management/security-insights/developer_setup.md": {
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
@@ -8709,10 +8709,10 @@
       "input_hash": "ff50c2d14867ea7038b6b8c53fb20ee41d1c94a411f9da6cb2fb8f2091b63683"
     },
     "content/handbook/engineering/development/sec/software-supply-chain-security/_index.md": {
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-28T08:31:27Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "035dc193be387055335b31d9b47ce78913031218abd1743811b925a097152c74"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3216bf08c72d9c819c4b65f77a7b5fbd84d5f5e29b13edc06ba38f1a287828a5"
     },
     "content/handbook/engineering/development/sec/software-supply-chain-security/anti-abuse.md": {
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
@@ -8727,10 +8727,10 @@
       "input_hash": "98950ff97e49bb1e4541f634c813e94f8bf64a3bc58cf19f41ccc092fb2873f8"
     },
     "content/handbook/engineering/development/sec/software-supply-chain-security/authorization.md": {
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-28T08:31:27Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f3e9bf647e3cd2f7ca0ac4a41e3b19501eb3be4df1dffa0e1b1439261f36ccfa"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "30f1a284a9cc40855777179aecc532d53627b5e7835b49ef70a141a90a62982e"
     },
     "content/handbook/engineering/development/sec/software-supply-chain-security/compliance.md": {
       "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
@@ -8757,10 +8757,10 @@
       "input_hash": "42372f8e9173a657fc9742579c39e47f8abc5d6f64f3d4fc05be4b4e6feb3ab1"
     },
     "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/faq.md": {
-      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
-      "translated_at": "2026-04-28T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "4a3cfb968c326dff481c24d9ff22f05e5c91738cb4aea03c3753f2bdaa7a0e9d"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "09278452fea31a5e08b0004b1a2ab7c887d817b9330b171ca68794bde6d7d343"
     },
     "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/handoff-and-continuity.md": {
       "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
@@ -8781,16 +8781,16 @@
       "input_hash": "b491b70d5910f6d270603ec2282a5e0f8818969961a6627927197f24959f1ba0"
     },
     "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/rotation-leader.md": {
-      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
-      "translated_at": "2026-04-28T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "ae3d843ae46290d18ea9ccfc3b5bd3ea6c49f10fa2003d5b29a4edfccc9ea855"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cbd31a1c9f9a9040ec755b3281f636519e51f078312fee9c436d1622be376c88"
     },
     "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/time-off-and-holidays.md": {
-      "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
-      "translated_at": "2026-04-28T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "360ee6a7d007115d178b89fa4803ed40709c2150edb2a15e1a2a36170ce91a5d"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "91e85c292e86355658f04170e797b0bdf2d16d3bafebd5d3fe547b3932777ead"
     },
     "content/handbook/engineering/development/sec/software-supply-chain-security/oncall/tools-and-access.md": {
       "upstream_sha": "8e5460327d5f02f1967a05539db73f8e5cfebbb3",
