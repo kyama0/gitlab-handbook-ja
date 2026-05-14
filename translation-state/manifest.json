@@ -58,10 +58,10 @@
     },
     "content/handbook/about/handbook-usage.md": {
       "path": "content/handbook/about/handbook-usage.md",
-      "upstream_sha": "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256",
-      "translated_at": "2026-04-19T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1558af072d2ae2245b0354a24efd87c7b7cc97c98914cc2e7472cbbb2c74c64c"
+      "input_hash": "8df105c0e8baf6173855c02a9c944e80949d99660a818f7b8c790964bd78c24d"
     },
     "content/handbook/about/maintenance.md": {
       "path": "content/handbook/about/maintenance.md",
@@ -163,10 +163,10 @@
     },
     "content/handbook/business-technology/entapps-documentation/policies/gitlab-business-continuity-plan.md": {
       "path": "content/handbook/business-technology/entapps-documentation/policies/gitlab-business-continuity-plan.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T06:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "d9a4fcfa412830513cdabb5c74cf3de1000b6d3301d8ab6d0a09a3ee56e0d7c5"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0ded39389649883b8831a21e89248e08cd16e35df4a840b4d62083b41c113bf3"
     },
     "content/handbook/business-technology/entapps-documentation/procedures/_index.md": {
       "path": "content/handbook/business-technology/entapps-documentation/procedures/_index.md",
@@ -569,10 +569,10 @@
     },
     "content/handbook/business-technology/tech-stack-applications.md": {
       "path": "content/handbook/business-technology/tech-stack-applications.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T09:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "900bd6d57ba0234c98aeeb12f46684e03d598b427ea5fba3c43a01d488adcbdb"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "af3f3e11d85e702c98b3d8a20faac7e498e3807cb5c9a72eab975e575af7335c"
     },
     "content/handbook/business-technology/tech-stack-guide/index.md": {
       "path": "content/handbook/business-technology/tech-stack-guide/index.md",
@@ -15918,10 +15918,10 @@
     },
     "content/handbook/marketing/marketing-operations/campaigns-and-programs.md": {
       "path": "content/handbook/marketing/marketing-operations/campaigns-and-programs.md",
-      "upstream_sha": "8de5a2b2942d4ea5a54a7f65cd1b6b12714af2c2",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "4b1c77c4774a48210361149aac4d149a71cb9dacbe6c0fa689657127345660aa"
+      "input_hash": "7a6dfdaa65ecd9bb5f43070f1bb1ec7dce94acffd2e360033706004ddf2708c2"
     },
     "content/handbook/marketing/marketing-operations/cognism.md": {
       "path": "content/handbook/marketing/marketing-operations/cognism.md",
