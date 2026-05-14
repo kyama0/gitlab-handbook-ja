@@ -1,8 +1,8 @@
 ---
 title: "Hacker News"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/hacker-news/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -11,97 +11,95 @@ stale: false
 
 Hacker News は重要なソーシャルチャネルです。GitLab の構造、バリュー、製品ビジョン、その他の繊細なブログ記事や記事に言及するスレッドは重要として扱う必要があります。一方、Hacker News のフロントページに到達した GitLab に関する投稿は、重要かつ緊急として扱う必要があります。
 
-Hacker News の投稿は、ウェブサイトへのトラフィック、コンテンツへのバックリンク、そして最も重要なのは、製品とプロセスへの貴重なフィードバックを生成できるため重要です。一例として、2022年1月に[このページに関する Hacker News 投稿](https://news.ycombinator.com/item?id=30003221) は、私たちのチームに貴重なフィードバックをもたらしました。
+Hacker News の投稿は、ウェブサイトへのトラフィック、コンテンツへのバックリンク、そして最も重要なのは、製品とプロセスへの貴重なフィードバックを生成できるため重要です。一例として、2022年1月の[このページに関する Hacker News 投稿](https://news.ycombinator.com/item?id=30003221)は、私たちのチームに貴重なフィードバックをもたらしました。
 
-Hacker News での GitLab への言及は [#hn-mentions](https://gitlab.slack.com/messages/hn-mentions) Slack チャンネルで追跡されます。Hacker News のフロントページに到達した GitLab に関する投稿は、[#dev-advocacy-team](https://gitlab.slack.com/messages/dev-advocacy-team) で共有される通知を生成します。詳細は[自動化ドキュメント](/handbook/marketing/developer-relations/developer-advocacy/hacker-news/#automation) を参照してください。
+Hacker News での GitLab への言及は [#hn-mentions](https://gitlab.slack.com/messages/hn-mentions) Slack チャンネルで追跡されます。Hacker News のフロントページに到達した GitLab に関する投稿は、[#dev-advocacy-team](https://gitlab.slack.com/messages/dev-advocacy-team) で共有される通知を生成します。詳細は[自動化ドキュメント](/handbook/marketing/developer-relations/developer-advocacy/hacker-news/#automation)を参照してください。
 
 ## 何がうまくいくか
 
 2020年に、GitLab に関する新しい投稿への興味を生み出すために複数の実験を実施しました。投稿がフロントページに到達するための鍵はコンテンツそのものであることを学びました。投稿が共有されるタイミングも役立つ場合がありますが、自分のコンテンツを投稿しないため、私たちのコントロール外です。Hacker News コミュニティからのオーガニックな興味なしに調整された応答を作成することは、投稿への興味を生み出すには効果的ではありませんでした。コンテンツが成功への鍵です。
 
-GitLab に関する投稿のうちどのタイプが Hacker News のフロントページに到達したかを確認するために監査を行いました。次のタイプの GitLab 関連コンテンツが Hacker News で最も多くの興味を生み出したことを学びました:
+GitLab に関するどのような種類の投稿が Hacker News のフロントページに到達したかを確認するために監査を実施しました。Hacker News で最も興味を引いた GitLab 関連のコンテンツの種類は次のとおりであることがわかりました:
 
-- 資金調達、買収、機能のコアへの移動などに関する発表のような主要な企業ニュース
-- リリース投稿
-- Gnome、KDE、WikiMedia などのオープンソースプログラムメンバーからの発表、その他オープンソースに焦点を当てたコンテンツ
-- 技術ブログ記事
-- ハンドブックページや Remote Work レポートを含むリモートに焦点を当てたコンテンツ
+- 資金調達、買収、機能のコアへの移行に関するアナウンスなどの主要な企業ニュース
+- リリースポスト
+- Gnome、KDE、WikiMedia などのオープンソースプログラムメンバーからのアナウンスやその他のオープンソース重視のコンテンツ
+- 技術ブログ投稿
+- ハンドブックページやリモートワークレポートを含むリモート重視のコンテンツ
 
-ソーシャルメディアで公開するコンテンツのタイプを検討する際、これらはすべて、Twitter、LinkedIn、関連する Slack コミュニティ、その他のソーシャルチャネルで共有するのに適した投稿とページのタイプです。
+ソーシャルメディアで公開するコンテンツの種類を検討する際、これらはすべて Twitter、LinkedIn、関連する Slack コミュニティ、その他のソーシャルチャネルで共有するのに適した投稿やページの種類です。
 
 ## リリース日
 
-GitLab のリリース投稿は、Hacker News で頻繁に好成績を収めています。投稿が[毎月](/handbook/engineering/releases/) リリースされることを知っているため、これらの投稿には常に [コミュニティ対応](/handbook/marketing/developer-relations/developer-advocacy/community-response/) が必要となるよう計画する必要があります。リリース日には、対応を整理するために次のステップに従います:
+GitLab リリースポストは、Hacker News でよく好成績を収めます。投稿が[毎月](/handbook/engineering/releases/)リリースされることがわかっているため、これらの投稿には常に[コミュニティ対応](/handbook/marketing/developer-relations/developer-advocacy/community-response/)を計画する必要があります。リリース日には、対応を組織化するために次の手順に従います:
 
-1. Director, Developer Advocacy は、リマインダーとしてハンドブックのこのセクションへのリンクを本文に含む、リリース日の繰り返しカレンダー招待を、デベロッパーアドボカシーチームメンバーに送信します。
-1. リリース投稿が Hacker News フロントページに到達したという通知が、"Hacker News Front Page" ボットによって #dev-advocacy-team Slack チャンネルに投稿された場合、デベロッパーアドボカシーチームメンバーは、製品マネージャーに警告するためにメッセージを #product と #release-post チャンネルに迅速に再投稿する必要があります。
-1. Hacker News 投稿に質問・コメントが追加されたら、デベロッパーアドボケイトはコミュニティのフィードバックに対処するために迅速に応答する必要があります。
-1. デベロッパーアドボケイトが自分で対処できない質問・コメントについては、専門家を巻き込むために迅速にアクティベートする必要があります。専門家を巻き込む最も効率的な方法は、対処すべきコメントへのリンク付きで、#product チャンネルで作成されたスレッドに `@` メンションで製品マネージャーに通知することです。注: コミュニティのフィードバックは、GitLab を改善する作業を行う上で彼らにとって価値があるため、専門家を巻き込むことを躊躇しないでください。
+1. Director, Developer Advocacy が、リマインダーとして招待状の本文にハンドブックのこのセクションへのリンクを記載した、リリース日の繰り返しカレンダー招待を Developer Advocacy チームメンバーに送信します。
+1. リリースポストが Hacker News フロントページに到達した通知が "Hacker News Front Page" ボットによって #dev-advocacy-team Slack チャンネルに投稿された場合、Developer Advocacy チームメンバーは、プロダクトマネージャーに警告するため、すばやくそのメッセージを #product チャンネルと #release-post チャンネルに再投稿する必要があります。
+1. Hacker News の投稿に質問／コメントが追加された場合、Developer Advocate はすばやく対応してコミュニティのフィードバックに応答する必要があります。
+1. Developer Advocate 自身で対応できない質問／コメントについては、すばやくエキスパートを巻き込むよう動く必要があります。エキスパートを巻き込む最も効率的な方法は、対応してほしいコメントへのリンクとともに #product チャンネルに作成されたスレッド内で `@` メンションを使用してプロダクトマネージャーに通知することです。注: コミュニティのフィードバックは、GitLab の改善に取り組むエキスパートにとっても貴重なものなので、エキスパートを巻き込むことを遠慮しないでください。
 
-[Release Posts](/handbook/marketing/blog/release-posts/)（[Release Post Managers schedule](/handbook/marketing/blog/release-posts/managers/) を含む）に関する詳細情報は、ハンドブックで利用できます。
+[リリースポストマネージャーのスケジュール](/handbook/marketing/blog/release-posts/managers/)を含む[リリースポスト](/handbook/marketing/blog/release-posts/)に関する詳細情報は、ハンドブックでご覧いただけます。
 
-## Hacker News での応答
+## Hacker News での対応
 
-GitLab に関する新しい投稿やコメントが Hacker News に追加されたとき、チームメンバーはこれらの投稿に関するアラートを [#hn-mentions](https://gitlab.slack.com/messages/hn-mentions) Slack チャンネルで見つけることができます。議論に参加したい他のチームメンバーや、より広範な GitLab コミュニティのメンバーと共有してください。質問、フロントページ投稿の応答調整、応答に関するガイダンスなどについては、[#dev-advocacy-team](https://gitlab.slack.com/messages/dev-advocacy-team) Slack チャンネルに参加してください。
+GitLab に関する新しい投稿やコメントが Hacker News に追加された場合、チームメンバーは [#hn-mentions](https://gitlab.slack.com/messages/hn-mentions) Slack チャンネルでこれらの投稿に関するアラートを見つけることができます。これらをディスカッションに参加したい可能性のある他のチームメンバーや、より広い GitLab コミュニティのメンバーと共有することは歓迎されます。質問、フロントページ投稿への対応の調整、対応に関するガイダンスなどについては、[#dev-advocacy-team](https://gitlab.slack.com/messages/dev-advocacy-team) Slack チャンネルにご参加ください。
 
-[デベロッパーアドボカシーチームメンバー](/handbook/marketing/developer-relations/developer-advocacy/) は、適切な場合に新しい投稿のコメントや質問に対処することが推奨されます。
+[Developer Advocacy チームメンバー](/handbook/marketing/developer-relations/developer-advocacy/)は、適切な場合に新しい投稿のコメントや質問に対応することが奨励されています。
 
-### 応答ワークフロー
+### 対応のワークフロー
 
-1. GitLab に言及する記事が Hacker News のフロントページにあると "Hacker News Front Page Bot" によってアラートが届いたとき、デベロッパーアドボケイトは、投稿のレビュー、コメントの監視、および適切な応答のために DRI が割り当てられるように調整する必要があります。
-1. フロントページに到達した投稿は、応答したいと思うチームメンバーの可視性を高めるため、投稿のトピックに関連する Slack チャンネルで共有する必要があります。たとえば、リモートワークのブログは [#remote](https://gitlab.slack.com/messages/remote) チャンネルで共有し、マーケティングサイトのトラッカーに関連する投稿は [#marketing](https://gitlab.slack.com/messages/marketing) で共有します。投稿が [#dev-advocacy-team](https://gitlab.slack.com/messages/dev-advocacy-team) 以外で共有される場合は常に、Slack コメントは可視性のため、そして単一の信頼できる情報源を作るために `#dev-advocacy-team` のアラートスレッドにクロスリンクされる必要があります。
-1. デベロッパーアドボケイトは、応答が必要な言及を見つけるために、[#hn-mentions](https://gitlab.slack.com/messages/hn-mentions) Slack チャンネルを1日1～2回レビューする必要があります。迅速な応答・リソースを提供できる場合は、個人の Hacker News アカウントを使用して [news.ycombinator.com](https://news.ycombinator.com) で返信し、Slack コメントに :white_check_mark: を残して返信したことを示します。_[コメントの編集ウィンドウは2時間](https://github.com/minimaxir/hacker-news-undocumented#editdelete-time-limits) であり、その後は Hacker News コメントを編集または削除できないことに注意してください。_
-1. 必要に応じて、より詳細または洞察に富んだコメントを提供できる関連する専門家とコメントを共有することもできます。これは、追加の入力が必要だと判断した場合に、適切な Slack チャンネルで関連する投稿やコメントを共有することで行えます。
+1. "Hacker News Front Page Bot" によって GitLab を参照する記事が Hacker News のフロントページにあることが通知された場合、Developer Advocate は、レビュー、コメントの監視、適切な対応を行う DRI が投稿に割り当てられていることを確認するために調整する必要があります。
+1. フロントページに到達した投稿は、対応したい可能性のあるチームメンバーの間でより広く可視性を確保するために、投稿のトピックに関連する Slack チャンネルで共有する必要があります。たとえば、リモートワークのブログは [#remote](https://gitlab.slack.com/messages/remote) チャンネルで、マーケティングサイトのトラッカーに関連する投稿は [#marketing](https://gitlab.slack.com/messages/marketing) で共有する必要があります。投稿が [#dev-advocacy-team](https://gitlab.slack.com/messages/dev-advocacy-team) 以外で共有された場合は、可視性と単一の情報源を作成するために、Slack コメントを `#dev-advocacy-team` のアラートスレッドにクロスリンクする必要があります。
+1. Developer Advocate は、対応が必要な言及を確認するために、1日1〜2回 [#hn-mentions](https://gitlab.slack.com/messages/hn-mentions) Slack チャンネルもレビューする必要があります。すばやく対応／リソースを提供できる場合は、個人の Hacker News アカウントを使用して [news.ycombinator.com](https://news.ycombinator.com) で返信し、Slack コメントに :white_check_mark: を残すことで返信したことを示してください。_なお、[コメントを編集できるウィンドウは 2 時間](https://github.com/minimaxir/hacker-news-undocumented#editdelete-time-limits)であり、それ以降は Hacker News のコメントを編集または削除できません。_
+1. 必要に応じて、より詳細または洞察に満ちたコメントを提供できる関連エキスパートとコメントを共有することもできます。追加の入力が必要だと判断した場合は、関連する投稿やコメントを適切な Slack チャンネルで共有することでこれを行うことができます。
 
-### Hacker News での応答のベストプラクティス
+### Hacker News での対応のベストプラクティス
 
-GitLab に関する Hacker News の投稿に応答する際:
+Hacker News で GitLab に関する投稿に対応する場合:
 
-- ほぼ同じ回答を投稿しないでください。代わりに元の回答にリンクしてください。
-- 多面的なコメントを分解し、ポイント、番号付け、引用を使用して対処してください。
-- 誰かが Hacker News のスレッドリンクを投稿したら、そのスレッドを手動で監視してください。[#hn-mentions](https://gitlab.slack.com/messages/hn-mentions) チャンネルの通知を待たないでください。通知が数時間遅れることがあるためです。
-  - 過去1時間の最新投稿を強調表示するために、ブラウザ（macOS では `cmd+f`）で `minutes ago` を検索してください。
-- コメントに個人的に同意するかどうか、または GitLab に批判的かどうかに基づいて、コメントをアップ投票・ダウン投票しないでください。代わりに、HN は好奇心のある会話に関するものであるため、思慮深く実質的かどうかに基づいて投票してください。
+- ほぼ同じ回答を投稿せず、代わりに元の回答にリンクします。
+- 複数の側面を持つコメントには、それらを分解してポイント、番号付け、引用を使用して対応します。
+- 誰かが Hacker News スレッドのリンクを投稿した場合、そのスレッドを手動で監視します。[#hn-mentions](https://gitlab.slack.com/messages/hn-mentions) チャンネルの通知を待たないでください。これらは数時間遅延することがあるためです。
+  - ブラウザ（macOS では `cmd+f`）で `minutes ago` を検索して、過去 1 時間の最新の投稿をハイライトします。
+- コメントに対する個人的な同意・不同意や、GitLab に対する批判的かどうかに基づいて upvote/downvote しないでください。代わりに、HN は好奇心旺盛な会話に関するものなので、思慮深く実質的かどうかに基づいて投票してください。
 
 #### Hacker News のフォーマットのヒント
 
-[フォーマットオプションのドキュメント](https://news.ycombinator.com/formatdoc) に従い、以下に追加のヒントを示します:
+[フォーマットオプションのドキュメント](https://news.ycombinator.com/formatdoc)に従い、以下の追加のヒントを参考にしてください:
 
-1. 特定の文や考えに返信する場合、`>` を使用して返信内のセクションを引用し、空行を追加してから、コメントを記述します。
-2. 行を2つのスペースでインデントして、シェルコマンドとコードをコードブロックとしてフォーマットします（[このコメント](https://news.ycombinator.com/item?id=33108536) のおかげで）
-3. 2つを超える URL を共有する場合、コメント下部の URL リストとともに `[0]`、`[1]` などのアンカーを使用することを検討してください。リストは正しくレンダリングされるためにアイテム間に空行が必要です。テキストから URL を分離することで、コメントの可読性と意図を高め、URL の重要性を低くすることができます（[例](https://news.ycombinator.com/item?id=32155848)）。
+1. 特定の文や考えに返信する場合、`>` を使用して返信内のそのセクションを引用し、空行を追加して、その後にコメントを記載します。
+2. シェルコマンドとコードをコードブロックとしてフォーマットするには、行を 2 つのスペースでインデントします（[このコメント](https://news.ycombinator.com/item?id=33108536)に感謝）
+3. 3 つ以上の URL を共有する場合は、コメントの一番下に URL のリストを記載し、`[0]`、`[1]` などのアンカーを使用することを検討してください。リストが正しくレンダリングされるためには、項目間に空行が必要です。テキストから URL を分離することで、コメントの可読性と意図が向上し、URL の重要性が下がります（[例](https://news.ycombinator.com/item?id=32155848)）。
 
 ### 説得せずに伝える
 
-あなたのコメントは、応答している人物以外の多くの人にも読まれていることを覚えておいてください。あなたが共有する情報がそれらの人々にも役立つようにしてください。返信は、応答している人物だけでなく、会話に関わるすべての人にとって価値あるものを目指してください。批判やネガティブなフィードバックに対処するとき、コメントや視点が敵対的または不快な人の心を変えることはほとんど不可能ですが、あなたの返信は、単に読んで学ぶためにそこにいる人にとって価値があり得ます。
+あなたのコメントは、返信している相手よりも多くの人々に読まれていることを覚えておいてください。共有する情報がそれらの人々にも役立つことを確認してください。返信が、返信している相手だけでなく、会話に関わっているすべての人にとって価値のあるものになるように努めてください。批判や否定的なフィードバックに対応する場合、敵対的または意見の相違があるコメントや観点を持っている人の考えを変えることは可能性が低いですが、あなたの返信は、単に読んで学ぶためにそこにいる人々にとって価値のあるものになる可能性があります。
 
-Hacker News の[コメント](https://news.ycombinator.com/item?id=30006193) は、「説得せずに伝えること」に焦点を当てるように提案することで、これをよくまとめています。コメンテーターは「事実を明確にし、不一致を指摘してください。動機と理由を共有してください。理解できないこと、または複数の解釈ができることを誰かが言ったときには明確化を求めてください。不一致をそのままにし、それを同意に変えるために押し付けないでください」と提案しています。
+Hacker News の[コメント](https://news.ycombinator.com/item?id=30006193)は、「説得せずに伝える」ことに焦点を当てるよう提案して、これをよくまとめています。コメント投稿者は次のように提案しています、「事実を明確にし、意見の相違を指摘することを確保してください。あなたの動機と推論を共有してください。理解できないこと、または複数の解釈が可能な発言があった場合は、明確化を求めてください。意見の相違をそのままにし、合意に変えようと押し付けないでください。」
 
 ## ブログコメント
 
-ブログコメントは、フォーラムトピックを [feedback タグ](/handbook/marketing/developer-relations/workflows-tools/forum/#tags) でフィルタリングすることで簡単にモニタリングできます。
+ブログコメントは、[フィードバックタグ](/handbook/marketing/developer-relations/workflows-tools/forum/#tags)でフォーラムのトピックをフィルタリングすることで簡単に監視できます。
 
-## ソーシャルメディアガイドライン
+## ソーシャルメディアのガイドライン
 
-- GitLab のコンテンツを Hacker News に投稿しないでください。GitLab 以外の Hacker News コミュニティメンバーが投稿した方が信頼性が高くなります。投稿することではなく、投稿を興味深くすることに焦点を当てるべきです。
-- Slack や Twitter で Hacker News のストーリーやコメントへのリンクを共有して、他者にアップ投票を依頼しないでください。投票検出器が反応する可能性があります。
-- Hacker News の投稿に最初のコメントをしないでください。人々がコメントを残し、質問するのを許可してください。
-- 「PeopleOps」などの企業ジャーゴンを避けてください。
-- Hacker News コミュニティを常にピアとして扱ってください。応答では常に謙虚で感謝の念を持つようにしてください。
+- GitLab のコンテンツを Hacker News に投稿してはいけません。GitLab 以外の Hacker News コミュニティメンバーが投稿した方が信頼性が増します。私たちは投稿することではなく、投稿を面白くすることに集中すべきです。
+- 投票検出器が作動する可能性があるため、Hacker News のストーリー／コメントへのリンクを Slack や Twitter で共有して、他の人に upvote するよう求めないでください。
+- Hacker News の投稿に最初のコメントをしないでください。人々がコメントを残したり質問したりできるようにしてください。
+- 「PeopleOps」のような企業用語の使用は避けてください。
+- 常に Hacker News コミュニティを対等な仲間として扱ってください。常に謙虚で感謝の気持ちを持って対応してください。
 - 自分でコメントする場合は、興味深く関連性のあるものであることを確認してください。
-- Hacker News の[ガイドライン](https://news.ycombinator.com/newsguidelines.html) と [FAQ](https://news.ycombinator.com/newsfaq.html) をレビューしてください。
+- Hacker News の[ガイドライン](https://news.ycombinator.com/newsguidelines.html)と [FAQ](https://news.ycombinator.com/newsfaq.html)を確認してください。
 - Hacker News の動作とモデレーションルールを理解するために、[A List of Hacker News's Undocumented Features and Behaviors](https://github.com/minimaxir/hacker-news-undocumented) に精通してください。
-- 応答のトーンを確認してください: 防御的にならず、自分の視点を共有してください。
-- 人々がまだ知らない興味深いことを教えるようにしてください。
+- 返信のトーンをチェックしてください: 防御的にならず、代わりにあなたの観点を共有してください。
+- 人々がまだ知らない興味深いことを教えるように努めてください。
 - データポイントや直接リンクで投稿に価値を加えてください。
 
-**注:** GitLab に関連するソーシャルメディアを使用する前に、[チームメンバーソーシャルメディアポリシー](/handbook/marketing/team-member-social-media-policy/) をレビューしてください。
+**注:** GitLab に関するソーシャルメディアを使用する前に、[チームメンバーのソーシャルメディアポリシーをレビュー](/handbook/marketing/team-member-social-media-policy/)してください。
 
 ## 自動化
 
-GitLab に関する設定済みキーワードの Hacker News 言及は、[Zapier](https://zapier.com) ワークフローを使用して監視されています。
+GitLab 用に設定されたキーワードの Hacker News での言及は、Slack の [RSS アプリ](https://slack.com/help/articles/218688467-Add-RSS-feeds-to-Slack)と [https://hnrss.github.io/](https://hnrss.github.io/) からの RSS フィードを使用して監視されます。
 
-- キーワード言及は、[#hn-mentions](https://gitlab.slack.com/messages/hn-mentions) Slack チャンネルで追跡されます。
-- フロントページ通知は、[#dev-advocacy-team](https://gitlab.slack.com/messages/dev-advocacy-team) Slack チャンネルに投稿されます。
-
-キーワードを持つすべての Zapier ワークフローは、[Hacker News の Algolia Search の使用方法](/handbook/marketing/developer-relations/workflows-tools/zapier/#zaps-for-hacker-news) を含む詳細とともに、[デベロッパーリレーションズハンドブック](/handbook/marketing/developer-relations/workflows-tools/zapier/#current-zaps) でドキュメント化されています。
+- キーワードの言及は [#hn-mentions](https://gitlab.slack.com/messages/hn-mentions) Slack チャンネルで追跡されます。
+- フロントページ通知は [#dev-advocacy-team](https://gitlab.slack.com/messages/dev-advocacy-team) Slack チャンネルに投稿されます。
