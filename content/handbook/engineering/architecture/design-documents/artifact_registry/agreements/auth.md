@@ -4,8 +4,8 @@ owning-stage: "~devops::package"
 description: "Artifact Registry チームと Auth Platform チームのインターフェース合意書"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth/
-upstream_sha: ec55f130cc95389b6faf798cebffd864abdbb4c5
-translated_at: "2026-04-27T07:37:29Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -48,7 +48,7 @@ Artifact Registry は、リクエスト処理中に GitLab インスタンス、
 
 ### GitLab のロールボキャブラリー
 
-ロールの割り当ては、既存の GitLab ロールセット（`guest`、`reporter`、`developer`、`maintainer`、`owner`、カスタム GitLab ロール）を使用します。これらはグローバルなプラットフォームの概念であり、Artifact Registry は独自のロールを定義しません。
+ロールの割り当ては、既存の GitLab ロールセット（`guest`、`reporter`、`developer`、`maintainer`、`owner`）を使用します。これらはグローバルなプラットフォームの概念であり、Artifact Registry は独自のロールを定義しません。カスタムロールは Artifact Registry の初期リリースのスコープ外です。
 
 ## 認証要件
 

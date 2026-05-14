@@ -4,8 +4,8 @@ owning-stage: "~devops::package"
 description: "Artifact Registry のインフラ要件とパフォーマンス制約"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/003_system_requirements/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -45,16 +45,16 @@ Artifact Registry は次のインフラ機能を必要とします。
 
 ### 2. リレーショナルデータベース
 
-**目的**: アーティファクトメタデータ、リポジトリ、ワークスペース、アクセス制御の永続ストレージ。
+**目的**: アーティファクトメタデータ、リポジトリ、Repository collection、アクセス制御の永続ストレージ。
 
 **ユースケース**:
 
-- アーティファクト、リポジトリ、ワークスペースのメタデータ管理
+- アーティファクト、リポジトリ、Repository collection のメタデータ管理
 - アクセス制御ルールと RBAC 定義
 - 監査ログとコンプライアンストラッキング
 - ライフサイクルポリシー定義と実行状態
 - 仮想リポジトリ構成とアップストリームソース管理
-- Organization とワークスペースの階層
+- Organization と Repository collection の階層
 - ガベージコレクション用の参照トラッキング
 
 ### 3. Blob ストレージ

@@ -2,193 +2,194 @@
 title: "GitLab Delivery: Operate"
 description: "Operate チームは、標準化されたツール、リファレンスアーキテクチャ、運用エクセレンスフレームワークを通じて、オペレーターがあらゆる規模で GitLab 環境をデプロイおよびメンテナンスできるよう支援します。GitLab デプロイのためのデプロイインフラと運用ツールを提供します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/gitlab-delivery/operate/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T00:11:38Z"
+upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
 
 ## 概要
 
-Operate チームは、GitLab をさまざまな環境と規模でデプロイできるようにするデプロイツールと運用インフラを構築・維持します。私たちは GitLab のデプロイを実現可能でメンテナンス可能にするツール、自動化、ガイダンスを開発しており、開発チームは GitLab のアプリケーション機能と機能性の所有権を保持しています。
+Operate チームは、さまざまな環境とスケールにわたって GitLab をデプロイできるようにするためのデプロイツールと運用インフラストラクチャを構築・保守します。GitLab デプロイを実行可能で保守可能にするツール、自動化、ガイダンスを開発しています。一方、開発チームは GitLab のアプリケーション機能とその機能性のオーナーシップを保持します。
 
 ## ミッション
 
-Operate チームは、GitLab をさまざまな環境で信頼性高くインストールおよび運用できるようにするデプロイ自動化、インフラツール、運用フレームワークを構築・維持します。私たちは GitLab のパッケージ化されたコンポーネントと多様なインフラ環境での成功したデプロイのギャップを埋めるツールを開発します。
+Operate チームは、GitLab がさまざまな環境にわたって信頼性高くインストールおよび運用できるようにするデプロイ自動化、インフラストラクチャツール、運用フレームワークを構築・保守します。GitLab のパッケージ化されたコンポーネントと、多様なインフラストラクチャ環境における成功裏のデプロイメントとのギャップを埋めるツールを開発しています。
 
-私たちのフォーカスは、GitLab のデプロイを簡素化し、運用の複雑さを軽減する標準化されたデプロイツール、インフラ自動化、運用ガイダンスを作成することです。
+私たちのフォーカスは、GitLab デプロイメントを単純化し、運用上の複雑さを軽減する、標準化されたデプロイツール、インフラストラクチャ自動化、運用ガイダンスを作成することです。
 
-## 戦略的ビジョン
+## 戦略ビジョン
 
-私たちは複数のデプロイパターンをサポートするデプロイツールを開発・維持します:
+私たちは、複数のデプロイメントパターンをサポートするデプロイツールを開発・保守しています:
 
-### シングルノードデプロイ
+### シングルノードデプロイメント
 
-- ツール: [Build](../build/_index.md) チームとの Omnibus デプロイメカニクスの共同所有
+- ツール: [Build](../build/_index.md) チームと Omnibus デプロイメント機構の共同オーナーシップ
 - フォーカス: シンプルなインストール自動化、アップグレードプロセス、運用ガイダンス
-- サポート: シングルノード構成のドキュメントとトラブルシューティング
+- サポート: シングルノード構成のドキュメンテーションおよびトラブルシューティング
 
-### マルチノードおよびクラウドネイティブデプロイ
+### マルチノードおよびクラウドネイティブデプロイメント
 
 - ツール: Omnibus、GitLab Charts、GitLab Operator、GitLab Environment Toolkit (GET)、リファレンスアーキテクチャ
-- フォーカス: インフラ自動化、大規模なオーケストレーション、ゼロダウンタイム運用
-- サポート: マルチノード構成のドキュメントとトラブルシューティング
+- フォーカス: インフラストラクチャ自動化、スケールでのオーケストレーション、ゼロダウンタイム運用
+- サポート: マルチノード構成のドキュメンテーションおよびトラブルシューティング
 
 ## チームメンバー
 
-以下の人々がチームのメンバーです:
+以下のメンバーがチームに所属しています:
 
+{{< team-by-manager-slug manager="cjwilburn" team="Operate">}}
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/operate/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+Product Manager: [Martin Brümmer](https://gitlab.com/mbruemmer)
 
+## 主な責任
 
-プロダクトマネージャー: [Martin Brümmer](/handbook/company/team/#mbruemmer)
+### デプロイメントツールの開発
 
-## 主要責任
+- **Omnibus 統合:** Build チームとのデプロイメント機構の共同開発
+- **GitLab Charts (Helm):** 包括的な設定オプションを備えた主要な Kubernetes デプロイメント方法
+- **GitLab Operator:** OpenShift および vanilla Kubernetes 上に GitLab をデプロイするための Kubernetes オペレーター (新バージョンを開発中)
+- **GitLab Environment Toolkit (GET):** インフラストラクチャプロビジョニングと構成の自動化
+- **リファレンスアーキテクチャ:** デプロイメントパターン、サイジングガイダンス、アーキテクチャ仕様
 
-### デプロイツール開発
+### インフラストラクチャ自動化
 
-- **Omnibus 統合:** Build チームとのデプロイメカニクスの共同開発
-- **GitLab Charts (Helm):** 包括的な設定オプションを持つプライマリ Kubernetes デプロイメソッド
-- **GitLab Operator:** OpenShift と vanilla Kubernetes に GitLab をデプロイするための Kubernetes オペレーター（新バージョン開発中）
-- **GitLab Environment Toolkit (GET):** インフラプロビジョニングと設定自動化
-- **リファレンスアーキテクチャ:** デプロイパターン、サイジングガイダンス、アーキテクチャ仕様
-
-### インフラ自動化
-
-- **プロビジョニング自動化:** クラウドプロバイダー全体で一貫したインフラセットアップのためのツール
-- **設定管理:** GitLab デプロイの自動設定
+- **プロビジョニング自動化:** クラウドプロバイダーをまたいだ一貫したインフラストラクチャセットアップのためのツール
+- **構成管理:** GitLab デプロイの自動化された構成
 - **スケーリング自動化:** 水平および垂直スケーリングのためのツールとプロセス
 
 ### 運用ガイダンスと標準
 
-- **ドキュメント:** インストール手順、運用ランブック、トラブルシューティングガイド
-- **ベストプラクティス:** 運用標準とデプロイガイダンス
+- **ドキュメンテーション:** インストール手順、運用ランブック、トラブルシューティングガイド
+- **ベストプラクティス:** 運用標準とデプロイメントガイダンス
 
 ## 主要プロジェクトとツール
 
-### GitLab Charts (Helm) - プライマリ Kubernetes デプロイ
+### GitLab Charts (Helm) - 主要な Kubernetes デプロイメント
 
 **リポジトリ:** [gitlab-org/charts/gitlab](https://gitlab.com/gitlab-org/charts/gitlab)
-**ドキュメント:** [docs.gitlab.com/charts/](https://docs.gitlab.com/charts/)
+**ドキュメンテーション:** [docs.gitlab.com/charts/](https://docs.gitlab.com/charts/)
 
-Kubernetes 上に GitLab をデプロイするための主要な方法であり、以下を提供します:
+Kubernetes 上に GitLab をデプロイするための主要な方法で、以下を提供します:
 
-- すべての GitLab コンポーネントの包括的な Helm チャート
-- さまざまなデプロイシナリオ向けの柔軟な設定オプション
-- クラウドネイティブエコシステム（Ingress、cert-manager など）との統合
-- 広範なカスタマイズ機能を持つ本番対応のデフォルト設定
-- GitLab リリースに合わせた定期的な更新
+- すべての GitLab コンポーネント向けの包括的な Helm chart
+- さまざまなデプロイメントシナリオに対する柔軟な設定オプション
+- クラウドネイティブエコシステム (Ingress、cert-manager など) との統合
+- 広範なカスタマイズ機能を備えた本番運用ready のデフォルト
+- GitLab リリースに合わせた定期更新
 
-### GitLab Operator（限定提供）
+### GitLab Operator (Limited Availability)
 
 **リポジトリ:** [gitlab-org/cloud-native/gitlab-operator](https://gitlab.com/gitlab-org/cloud-native/gitlab-operator)
 
-現在、置き換えの計画を持つ限定提供:
+現在限定提供で、置き換えが計画されています:
 
-- Kubernetes ネイティブのライフサイクル管理（限定スコープ）
-- [新しいオペレーターバージョン](https://gitlab.com/gitlab-org/cloud-native/operator) で置き換え予定
-- 本番 Kubernetes デプロイには現在 GitLab Charts を推奨
+- Kubernetes ネイティブのライフサイクル管理 (スコープ限定)
+- [新オペレーターバージョン](https://gitlab.com/gitlab-org/cloud-native/operator) で置き換え予定
+- 本番 Kubernetes デプロイメントでは現在 GitLab Charts に注力
 
 ### GitLab Environment Toolkit (GET)
 
 **リポジトリ:** [gitlab-org/gitlab-environment-toolkit](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)
 
-リファレンスアーキテクチャに従ってスケールされた GitLab 環境をデプロイするための意見のある Terraform および Ansible スクリプト。GET は以下を提供します:
+リファレンスアーキテクチャに従ってスケールされた GitLab 環境をデプロイするためのオピニオン化された Terraform と Ansible のスクリプト。GET は以下を提供します:
 
-- クラウドプロバイダー全体での標準化されたインフラプロビジョニング
-- クラウドネイティブ環境向けの GitLab Operator との統合
-- 自動設定管理
-- デプロイモデル間の明確な移行パス
+- クラウドプロバイダーをまたいだ標準化されたインフラストラクチャプロビジョニング
+- Cloud Native 環境のための GitLab Operator との統合
+- 自動化された構成管理
+- デプロイメントモデル間の明確な移行パス
 
 ### リファレンスアーキテクチャ
 
 **リポジトリ:** [gitlab-org/quality/reference-architectures](https://gitlab.com/gitlab-org/quality/reference-architectures)
 
-以下を提供するスケールされたデプロイパターン:
+スケールされたデプロイメントパターンで、以下を提供します:
 
-- 実際の使用メトリクスに基づいたリアルワールドのサイジングガイダンス
-- さまざまな規模と要件に対する検証済みの設定
-- 新しいサービスの統合パターン
+- 実際の使用メトリクスに基づく現実世界のサイジングガイダンス
+- さまざまなスケールと要件に対する検証済み構成
+- 新しいサービスのための統合パターン
 
 ## Operate チームとの連携
 
 ### Slack チャンネル
 
-- **#g_operate** - ディスカッションとリクエストのためのプライマリチャンネル
+- **#g_operate** - ディスカッションとリクエストのための主なチームチャンネル
 - **#gitlab_environment_toolkit** - GET 固有のディスカッションと質問
 - **#reference-architectures** - リファレンスアーキテクチャのディスカッションとリクエスト
 - チームハンドル: `@gitlab-org/software-delivery/operate`
 
-### サポートヘルプリクエスト
+### 支援のためのサポートリクエスト
 
-GitLab は顧客をサポートするためのヘルプリクエスト（RFH）を開くための統合プロセスを提供しています。このプロセスはシングルソースオブトゥルースを確保し、多くの場合リクエストは製品の複数の領域の専門知識を必要とするか、最初はどの領域が顧客をサポートするのに適しているか明確でないため、クロスファンクショナルな協力をより良く行えるようにします。同じサポートリクエストプロセス内で複数の関連グループと情報を共有することで、より効率的にソリューションに到達できます。
+GitLab は、顧客をサポートするための request for help (RFH) を作成する統一プロセスを提供します。このプロセスは、これらの単一の真実の情報源を確保するために整備されており、リクエストは多くの場合、製品の複数領域の専門知識を必要とするか、または顧客をサポートするのにどの領域がより適しているかが最初は明確でないため、機能をまたいでより良くコラボレーションできるようにします。同じサポートリクエストプロセス内で複数の関連グループと情報を共有することで、はるかに効率的に解決策に到達できます。
 
-RFH を開くには、[ヘルプの入手方法](/handbook/support/workflows/how-to-get-help.md) ハンドブックページの手順を参照してください。
+RFH を開くには、私たちの [how to get help](/handbook/support/workflows/how-to-get-help.md) ハンドブックページの手順を参照してください。
 
-このプロセスにより、関与した時間を追跡し、正しい関係者が適切なタイミングで関与することを確保できます。
+このプロセスにより、関与する時間を追跡し、適切な関係者が適切な時期に関与することを確認できます。
 
 ### 環境構築リクエスト
 
-**Operate チームはキャパシティの制約により、カスタム環境構築リクエストを受け付けられません。** また、GET を使用して大規模なサンドボックス環境を構築することは、厳密に必要でない限りコストへの影響から一般的に推奨されません。ただし、これらのタイプの環境をセルフサービスで構築するためのいくつかのオプションがあります:
+**Operate チームは、キャパシティ制約のためにオーダーメイドの環境構築リクエストを満たすことができません。** また、コスト影響のために、厳密に必要でない限り、GET を使った大きなサンドボックス環境の構築は一般的に推奨されません。ただし、これらのタイプの環境を構築する際にセルフサーブできるオプションがいくつかあります:
 
-- GET ドキュメントを使用したセルフサービス
-  - チームは包括的な [GET ドキュメント](https://gitlab.com/gitlab-org/gitlab-environment-toolkit#documentation) に従って独自の環境を構築できます。これはカスタム環境が必要なチームにとって推奨される主要なアプローチです。
-  - テストと開発目的でクラウドアカウントをセットアップするには、自動化された [Sandbox Cloud](/handbook/company/infrastructure-standards/realms/sandbox/) の利用が推奨されています。
-- GitLab をローカルで実行する: よりシンプルなニーズには、コストと複雑さを軽減するために大規模な環境を構築するのではなく、GDK や Docker をローカルで実行することをお勧めします。
-- インフラからの共有環境を使用する: インフラチームが提供する既存の共有環境を活用します。
+- GET ドキュメントを使ったセルフサービス
+  - チームは、自分の環境を構築するために包括的な [GET ドキュメント](https://gitlab.com/gitlab-org/gitlab-environment-toolkit#documentation) に従えます。これは、カスタム環境を必要とするチームにとっての主要な推奨アプローチです。
+  - 自動化された [Sandbox Cloud](/handbook/company/infrastructure-standards/realms/sandbox/) オファリングを使うことが、テストおよび開発目的でクラウドアカウントをセットアップするために推奨されます。
+- GitLab をローカルで実行: より単純なニーズに対しては、コストと複雑さを軽減するために、大きな環境を構築する代わりに GDK または Docker をローカルで実行することが推奨されます。
+- Infra からの共有環境を使用: Infrastructure チームが提供する既存の共有環境を活用します。
 
 ## コミュニティとの連携
 
-インストールとアップグレードプロセスは、GitLab を使用するすべてのシステム管理者が最初に経験する機能です。その結果、Operate チームが管理するプロジェクトはユーザーベースから高いエンゲージメントを受けています。GitLab コミュニティはコード貢献者だけでなく、Issue や機能リクエストを記録するユーザーも含まれており、常に私たちを前進させ、より良い体験を生み出す手助けをしています。
+インストールおよびアップグレードプロセスは、システム管理者が GitLab を扱う際に最初に経験する機能です。
+そのため、Operate チームが管理するプロジェクトはユーザーベースから高いレベルのエンゲージメントを持っています。GitLab コミュニティはコードのコントリビューターだけでなく、Issue や機能リクエストを記録するユーザーは、私たちを継続的に前進させ、より良い体験を作るのに役立っています。
 
-私たちは公開プロジェクトで以下を目指しています:
+私たちのパブリックプロジェクトでは、以下を目指しています:
 
-1. [コミュニティ行動規範](https://about.gitlab.com/community/contribute/code-of-conduct/) を守ること。
-1. [誰でも貢献できる GitLab のミッション](/handbook/company/mission/#mission) を実現すること。
-1. [公開](#public-by-default) で作業を示すこと。
-1. 貢献者の作業を[認識して感謝する](/handbook/marketing/developer-relations/engineering/community-contributors-workflows/#recognition-for-contributors) こと。
-1. [適時のレビューターンアラウンドタイムを提供する](/handbook/engineering/workflow/code-review/#review-turnaround-time) ことで貢献者が提供した時間を尊重すること。
+1. 私たちの [Community Code of Conduct](https://about.gitlab.com/community/contribute/code-of-conduct/) を堅持します。
+1. [GitLab のミッションである誰もがコントリビュートできる](/handbook/company/mission/#mission) を可能にします。
+1. 私たちの作業を [パブリック](#public-by-default) に示します。
+1. コントリビューターの作業に対して[認識し感謝](/handbook/marketing/developer-relations/engineering/community-contributors-workflows/#recognition-for-contributors)します。
+1. [タイムリーなレビュー回答時間](/handbook/engineering/workflow/code-review/#review-turnaround-time)を提供することで、コントリビューターの提供された時間を尊重します。
 
 ### オープンソースコミュニティとの連携
 
-[GitLab のオープンコア](/handbook/company/stewardship) は何千ものオープンソース依存関係の上に構築されています。これらの依存関係とそのコミュニティは GitLab の戦略にとって重要であり、これらの依存関係と協力することは、チームが維持するプロジェクトの不可欠な部分です。
+[GitLab のオープンコア](/handbook/company/stewardship) は、何千ものオープンソース依存関係の上に構築されています。これらの依存関係とそのコミュニティは GitLab 戦略にとって重要であり、これらの依存関係との連携はチームが保守するプロジェクトの本質的な部分です。
 
 私たちは以下を目指しています:
 
-1. 私たちが恩恵を受けているオープンソースコミュニティへの作業の影響を考慮する。
-2. GitLab 内でこれらのオープンソースコミュニティの重要性を促進する。
-3. [スチュワードシップの約束](/handbook/company/stewardship/#promises) に反する決定に異議を唱える。
-4. [私たちが行った変更を貢献し返す機会を見つける](/handbook/engineering/open-source/#using-forks-in-your-code)。
+1. 私たちが恩恵を受けているオープンソースコミュニティに対する作業の影響を考慮します。
+2. GitLab 内でこれらのオープンソースコミュニティの重要性を促進します。
+3. 私たちの [stewardship promises](/handbook/company/stewardship/#promises) に反する決定があれば、Issue を提起します。
+4. [行った変更を還元する](/handbook/engineering/open-source/#using-forks-in-your-code) 機会を見つけます。
 
-## デフォルトで公開 {#public-by-default}
+## デフォルトでパブリック {#public-by-default}
 
-チームが実施するすべての作業は公開されています。一部の例外があります:
+チームが行うすべての作業はパブリックです。一部の例外が適用されます:
 
-- 作業にセキュリティへの影響がある可能性がある場合 - 作業の過程でセキュリティの懸念が無効になった場合、この作業が公開されることが期待されます。
-- 作業が第三者と行われる場合 - 第三者が作業を公開しないよう要求した場合のみ。
-- 作業に財務的な影響がある場合 - 財務詳細を作業から省略できない場合を除く。
-- 作業に法的な影響がある場合 - 法的詳細を作業から省略できない場合を除く。
+- 作業にセキュリティ上の影響の可能性がある場合 - 作業の過程でセキュリティ上の懸念がもはや有効でない場合、この作業はパブリックになることが期待されます。
+- サードパーティとの作業の場合 - サードパーティが作業をパブリックにしないよう要求した場合のみ。
+- 作業に財務上の影響がある場合 - 財務的な詳細を作業から省略できない場合を除く。
+- 作業に法的影響がある場合 - 法的詳細を作業から省略できない場合を除く。
 
-チームの作業の一部は `dev.gitlab.org` にある開発サーバーで実施されます。[インフラ概要ドキュメント](https://docs.gitlab.com/omnibus/release/#infrastructure) にその理由がリストされています。
+チームの作業の一部は、開発サーバー `dev.gitlab.org` で行われます。
+[Infrastructure overview document](https://docs.gitlab.com/omnibus/release/#infrastructure) で理由を一覧化しています。
 
-セキュリティに関連する作業でない限り、他のすべての作業は `GitLab.com` のプロジェクトで実施されます。機密性の高い Issue を提出する必要がある場合は、機密 Issue を使用してください。
+セキュリティに関連しない限り、その他のすべての作業は `GitLab.com` のプロジェクトで行われます。
+機密性の高い Issue を提出する必要がある場合は、機密 Issue を使用してください。
 
-何かをプライベートにしておく必要があるかどうか不明な場合は、チームエンジニアリングマネージャーに確認してください。
+何かをプライベートのままにする必要があるかどうか不明な場合は、チームの Engineering Manager に確認してください。
 
-## ワークライフハーモニー
+## ワーク／ライフハーモニー
 
-[全リモート](/handbook/company/culture/all-remote/) と [非同期優先](/handbook/company/culture/all-remote/asynchronous/) での作業は、チームメンバーが業務日をどう進めるかについて柔軟性を提供します。チームメンバーは作業時間と生活の他の部分のバランスをどのように取るかを選択する必要があります。
+[all-remote](/handbook/company/culture/all-remote/) および [asynchronous first](/handbook/company/culture/all-remote/asynchronous/) で働くことは、チームメンバーが 1 日の作業にどう取り組むかに柔軟性を提供します。チームメンバーは、仕事の時間と人生の他の領域とのバランスを最良の方法で取るための選択をしなければなりません。
 
-新しいチームメンバーには、時間の使い方に焦点を当てる方法の例として以下のリソースを提供します:
+新しいチームメンバーには、自分の時間に集中する方法の例として以下のリソースが用意されています:
 
-- [チームメンバーの一日の過ごし方](https://gitlab.com/gitlab-org/distribution/team-tasks/-/issues/907)
-- ブログ記事: [リモートワーカーの一日](https://about.gitlab.com/blog/2019/06/18/day-in-the-life-remote-worker/)
-- [非線形な業務日](/handbook/company/culture/all-remote/non-linear-workday/) のオプション
-- GitLab ハンドブック: [ワークライフハーモニー](/handbook/company/culture/all-remote/)
+- [How team members approach their day](https://gitlab.com/gitlab-org/distribution/team-tasks/-/issues/907)
+- ブログ記事: [A day in life of a remote worker](https://about.gitlab.com/blog/2019/06/18/day-in-the-life-remote-worker/)
+- [非線形ワークデー](/handbook/company/culture/all-remote/non-linear-workday/) の選択肢
+- GitLab handbook: [Work/life Harmony](/handbook/company/culture/all-remote/)
 
-以下の GitLab ハンドブック分野は健全なワークライフバランスを維持するために重要です。
+健全なワーク／ライフバランスを保つには、以下の GitLab Handbook 領域が重要です。
 
-- [家族と友人を最優先に、仕事は二番目に](/handbook/values/#family-and-friends-first-work-second)
-- [リモートワークにおけるバーンアウト、孤独、不安への対処](/handbook/company/culture/all-remote/mental-health/)
+- [家族と友人優先、仕事は二の次](/handbook/values/#family-and-friends-first-work-second)
+- [リモートワークにおけるバーンアウト、孤立、不安への対処](/handbook/company/culture/all-remote/mental-health/)
 - [バーンアウトの認識](/handbook/people-group/time-off-and-absence/time-off-types/)
