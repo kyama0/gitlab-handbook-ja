@@ -2,8 +2,8 @@
 title: "デベロッパーアドボケイトのコンサルティングワークフロー"
 description: "デベロッパーアドボカシーチームのコンサルティングワークフローとリクエストについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/consultancy/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T12:00:00Z"
 translator: claude
 stale: false
 ---
@@ -45,7 +45,7 @@ stale: false
 - ベストプラクティスのリソース、デモ、製品ツアー、ユースケース（[コンテンツライブラリ](/handbook/marketing/developer-relations/developer-advocacy/content/#content-library) を参照）
 - Slack でフィールドチームをサポート（[#ai-field-strategy](https://gitlab.enterprise.slack.com/archives/C051SLP8WNB)、[#ai-sme-request](https://gitlab.enterprise.slack.com/archives/C05CWJ93WM7)、[#ai-field-technical](https://gitlab.enterprise.slack.com/archives/C053WFAK56U)）。
 
-顧客向けワークショップでのコラボレーションは重要です。[Solution Architect](/handbook/solutions-architects/) は、[GitLab Duo と AI のための Proof of Value（PoV）ワークショップ](/handbook/solutions-architects/tools-and-resources/pov/ai/) をリードします。彼らは、ワークショップのアウトラインを構築するために [SA Demo Architects](/handbook/solutions-architects/center-of-excellence/demo-architecture/) と [Customer Success Management チーム](/handbook/customer-success/) からの支援を得ます。デベロッパーアドボケイトには、プログラミングワークショップ、IDE のセットアップとトラブルシューティング、そして一般的に開発者として顧客の（エンジニアリング）チームとベストプラクティスを共有することで支援することが推奨されます。
+顧客向けワークショップでのコラボレーションは重要です。[Solution Architect](/handbook/solutions-architects/) は、[GitLab Duo と AI のための Proof of Value（PoV）ワークショップ](/handbook/solutions-architects/playbooks/pov/ai/) をリードします。彼らは、ワークショップのアウトラインを構築するために [SA Demo Architects](/handbook/solutions-architects/center-of-excellence/demo-architecture/) と [Customer Success Management チーム](/handbook/customer-success/) からの支援を得ます。デベロッパーアドボケイトには、プログラミングワークショップ、IDE のセットアップとトラブルシューティング、そして一般的に開発者として顧客の（エンジニアリング）チームとベストプラクティスを共有することで支援することが推奨されます。
 
 顧客のフィードバックは、バグレポート、機能提案、ドキュメント更新、ブログチュートリアル、デモストーリーなどに刺激を与えます。顧客とのエンゲージメント中は、常に耳を傾けてメモを取るようにしてください。
 

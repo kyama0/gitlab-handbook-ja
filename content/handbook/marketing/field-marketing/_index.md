@@ -1,9 +1,9 @@
 ---
 title: "Field Marketing"
 description: "GitLab の Field Marketing チームと、私たちが行うことについて"
-upstream_path: https://handbook.gitlab.com/handbook/marketing/field-marketing/
-upstream_sha: cee17ee633d1662afe3dff93fdaab9bcbeddee99
-translated_at: "2026-05-01T00:00:00Z"
+upstream_path: /handbook/marketing/field-marketing/
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T12:00:00Z"
 translator: claude
 stale: true
 ---
