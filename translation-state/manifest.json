@@ -9644,10 +9644,10 @@
       "input_hash": "5a168028ee04e7403c8cab75455283bc0021f1b0d76409a3817136d225a537a9"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/development-tooling/_index.md": {
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-05-06T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "51b4abf19fe474faab066bc445337a3c028472bd8cf9a577e0623fa37d4fb0b6"
+      "input_hash": "e4ef09786e9cdc8acd5a530302c2ef6c6413ebbbac3835c111fc7c49a52abd24"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/engineering-metrics-datastore.md": {
       "upstream_sha": "6a459a3ca969603754a3b5133342edb804d3012c",
@@ -9812,10 +9812,10 @@
       "input_hash": "36f0e473e788a4c87613d5632b5b42285449f890eeedb99aff2791650aabc0b8"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard.md": {
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-28T22:31:40Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "41fe147f72153ea7703c52cea4e32e2c0fc7dee7a9d13b9d837f46977115a8ba"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1ec1770a9d7d9a74aeabe5f31c9d1beb15aa415a5080eecbda8a97d3e61126a7"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/us-public-sector-services.md": {
       "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
@@ -9932,10 +9932,10 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/_index.md": {
       "path": "content/ja/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-28T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1ad406f0a91e3e6dd9f5156212d52ee18f6e0b36c9cef5a16d432318613037ea"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e4a2f7c80af85d6f96417000d9f9d3e2c9ca025bcb386d0fa8492aae26ae6be3"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/ai-use-cases.md": {
       "path": "content/ja/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/ai-use-cases.md",
@@ -10051,10 +10051,10 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/operate/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/operate/_index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T00:11:38Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "11d1bf53265bc4fc33fcfb1514533aacd5f12e6f2d94f9f6e60afc82dc8a3ada"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c2b2498a8bd81f249e9ed5da676dd25e402c311d5525f6f13b38ce0f21498ce4"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/operate/workflow.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/operate/workflow.md",
@@ -10079,10 +10079,10 @@
     },
     "content/handbook/engineering/infrastructure-platforms/incident-management/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/incident-management/_index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-28T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "750de135ca65c6f12223581e68764353b2cb3606bdb981f5474bbf32509a9802"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8ad9b019f127711881118de052796bb3519d47e693d9a813d5f9036bdd48ff84"
     },
     "content/handbook/engineering/infrastructure-platforms/incident-management/incident-follow-ups.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/incident-management/incident-follow-ups.md",
@@ -10121,10 +10121,10 @@
     },
     "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/best-effort-rotations.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/best-effort-rotations.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-28T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "be36a80fd041678c8d88473fbad5e8609c0ae200dbbd3cb8eee44426fe71aad1"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4596b34e47229cfc2fc45102d3c5a549bbebb3bfc4bd60fcb70af122d336db73"
     },
     "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/holiday-coverage-planning.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/holiday-coverage-planning.md",
@@ -10142,10 +10142,10 @@
     },
     "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-28T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "36d6a2cc6ba88ed6dfce47fa4c74e8c82e55cad68f4a742aee9fe26b4636faed"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f8b5096fb4ed3b76b4d2df09cbbb0a85a91e382feaedace93056d5cbb565b4e8"
     },
     "content/handbook/engineering/infrastructure-platforms/incident-management/roles/communications-lead.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/incident-management/roles/communications-lead.md",
@@ -10289,10 +10289,10 @@
     },
     "content/handbook/engineering/infrastructure-platforms/production-engineering/networking-and-incident-management/sre-onboarding.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/networking-and-incident-management/sre-onboarding.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T02:14:34Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "c102002d2e741777fd3fa3fa3c3cddb2c14ebf9513a6fb515ccf4e73d208340e"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "464728e1145ace276ee95f6e638ea8454ca5928f01fea44c4ed62bafa17eff11"
     },
     "content/handbook/engineering/infrastructure-platforms/production-engineering/networking-and-incident-management/sre-oncall-onboarding-buddy.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/networking-and-incident-management/sre-oncall-onboarding-buddy.md",
@@ -10303,10 +10303,10 @@
     },
     "content/handbook/engineering/infrastructure-platforms/production-engineering/observability/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/observability/_index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T02:14:34Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1f9785379554778abe3fa9f6e588dca6dfe6f6f16be24fb8bb7d079030e8ad71"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "80c6762795fe106dc07b3a6cc037150af334148ae7aca57d27c3d1aa309fd312"
     },
     "content/handbook/engineering/infrastructure-platforms/production-engineering/observability/capacity_planning.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/observability/capacity_planning.md",
@@ -10401,10 +10401,10 @@
     },
     "content/handbook/engineering/infrastructure-platforms/production/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production/_index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T02:44:36Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "27651ceb8afec81af27dc3a5d85851124d70c3487b336f7545c7e73c37b8c5c5"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1892c4f1d2fd3c34457ef51d6573665db1d990dc77948380ffaeb2b917d1f473"
     },
     "content/handbook/engineering/infrastructure-platforms/production/architecture/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production/architecture/_index.md",

@@ -2,184 +2,183 @@
 title: "Production"
 controlled_document: true
 upstream_path: "/handbook/engineering/infrastructure-platforms/production/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T02:44:36Z"
+upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
 
-
-{{% alert %}}
-GitLab チームメンバーで GitLab.com の可用性の問題について Reliability Engineering に通知したい場合は、インシデントを報告するための簡単な手順をこちらで確認してください: [インシデントの報告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)。
+{{% alert color="warning" %}}
+GitLab のチームメンバーで、GitLab.com の可用性に関する問題について Reliability Engineering に通知したい場合は、こちらのインシデント報告に関するクイックインストラクションを参照してください: [インシデントの報告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)。
 {{% /alert %}}
 
-
-
-{{% alert %}}
-セキュリティの問題についてサポートを求めている GitLab チームメンバーは、[セキュリティオンコールへの連絡](/handbook/security/security-operations/sirt/engaging-security-on-call/)セクションを参照してください。
+{{% alert color="warning" %}}
+GitLab のチームメンバーで、セキュリティ問題のヘルプを探している場合は、[Security On-Call へのエンゲージ](/handbook/security/security-operations/sirt/engaging-security-on-call/) セクションを参照してください。
 {{% /alert %}}
 
+{{< label name="Visibility: Audit" color="#E24329" >}}
 
-<span class="inline-block rounded px-2 py-0.5 text-xs font-medium" style="background-color:#E24329;color:#ffffff">Visibility: Audit</span>
+## プロダクション環境
 
-## 本番環境
+GitLab.com のプロダクション環境は、gitlab.com を運用する、または運用を支えるサービスで構成されています。
+プロダクションサービスの完全なリストについては、[service catalog](https://gitlab.com/gitlab-com/runbooks/-/blob/master/services/service-catalog.yml) を参照してください。
 
-GitLab.com の本番環境は、gitlab.com を運営する、またはその運営をサポートするサービスで構成されています。
-本番サービスの完全なリストは[サービスカタログ](https://gitlab.com/gitlab-com/runbooks/-/blob/master/services/service-catalog.yml)をご覧ください。
+## ヘルプを得る方法
 
-## サポートの受け方
+[ヘルプの取得方法](/handbook/engineering/infrastructure-platforms/)を参照してください。
 
-[サポートの受け方](/handbook/engineering/infrastructure/team/)を参照してください。
-
-## なぜ `infrastructure` と `production` のキューがあるのか？
+## なぜ `infrastructure` と `production` のキューがあるのか?
 
 ### 前提
 
-長期的には、追加のチームが本番環境での作業を実施するようになります。
+長期的には、プロダクション環境に対する作業を行うチームが増えていきます:
 
-- Release Engineering が本番環境でのデプロイを行います
-- Security が本番環境に対するスキャンを実施します
-- Google が基盤となる本番インフラで作業を行う場合があります
+- Release Engineering はプロダクションへデプロイを行う
+- Security はプロダクションに対するスキャンを行う
+- Google が基盤となるプロダクションインフラストラクチャに対して作業を行う場合がある
 
-増加する*機能的な*キューをまたいで本番環境での**イベント**を追跡し続けることはできません。
+増え続ける*機能別*キューをまたいでプロダクション内の**イベント**を追跡し続けることはできません。
 
-さらに、これらのチームは機能（例: セキュリティ）とサービスの両方でオンコールのローテーションを持つようになります。オンコール担当者にとって、さまざまなキューを調べるよりも、これらのイベントを追跡するための一元的なポイントを持つ方が効果的です。本番環境に関する情報のタイムリーな提供（イベントが発生しているタイミングと、オンコール担当者が状況を把握するまでの時間という意味で）は重要です。`production` キューは本番環境のイベント情報を一元化します。
+さらに、これらのチームは機能（例: security）とサービスの両方についてオンコールローテーションを持つようになります。オンコール中の人にとって、こうしたイベントを追跡するための一元化されたトラッキングポイントがあるほうが、各種キューをあちこち見るよりも効果的です。プロダクション環境に関するタイムリーな情報（イベントの発生時刻や、オンコール担当者が状況を理解するまでの時間）はクリティカルです。`production` キューはプロダクションイベント情報を一元化します。
 
 ### 実装
 
-機能的なキューはチームのワークロード（`infrastructure`、`security` など）を追跡し、実行すべき作業の発生源です。この作業の一部は明らかに本番環境に影響を与えます（新しいストレージノードのビルドとデプロイ）が、本番環境にデプロイされるまで影響しないものもあります（x, y, z を行うツールの開発など）。
+機能別キュー（`infrastructure`、`security` など）はチームのワークロードを追跡し、こなすべき作業のソースとなります。これらの作業の一部は明らかにプロダクションに影響します（新しいストレージノードの構築とデプロイ）。一部はプロダクションにデプロイされるまで影響しません（x、y、z を行うツールを開発する）。
 
-`production` キューは本番環境のイベント、具体的には以下を追跡します。
+`production` キューはプロダクションにおけるイベントを追跡します。具体的には:
 
 - [変更](/handbook/engineering/infrastructure-platforms/change-management/)
 - [インシデント](/handbook/engineering/infrastructure-platforms/incident-management/)
-- デルタ（例外）-- ハンドブックへの記載が必要
+- デルタ（例外） -- まだ handbook に書き起こす必要あり
 
-時間をかけて、`production` キューに変更監査データを*自動的に*注入する自動化のフックを実装していきます。
+時間の経過とともに、自動化にフックを実装し、変更の監査データを `production` キューに*自動的に*注入する予定です。
 
-これにより、単一のデータソースも実現できます。現在、例えば、その週のインシデントレポートはオンコールハンドオフと Infra Call の両方の文書に転記されています（後者では例外も表示しています）。これらのミーティングは異なる目的を持ちますが、重複するデータがあります。このデータの入力は、文書での手動構築ではなく `production` キューへのクエリから行うべきです。
+これによりデータの単一の情報源も実現します。例えば現在、週次のインシデントレポートは On-call Handoff と Infra Call のドキュメントの両方に書き写されています（後者では例外も示しています）。これらのミーティングは目的が異なりますが、データの一部は重複しています。このデータの入力は、ドキュメントで手動構築するのではなく、`production` キューへのクエリにすべきです。
 
-さらに、エラーバジェットの追跡も必要であり、これも `production` キューから導出されるべきです。
+加えて、エラーバジェットも追跡する必要があり、これも `production` キューから派生させるべきです。
 
-`database` キューも `infrastructure` キューに統合します。データベースは確かにインフラの特別な部分ですが、例えばストレージノードも同様です。
+`database` キューも `infrastructure` キューに統合します。データベースはたしかにインフラストラクチャの特別な要素ですが、例えばストレージノードもまたそうです。
 
-オンコール SRE にとって、ページが発生するすべてのイベント（イベントは関連するページのグループである場合があります）は `production` キューで Issue が作成されるべきです。重大度の定義に従い、少なくとも*目に見える*影響（ユーザーへの機能的な不便）がある場合は、それはインシデントであり、Issue には Incident テンプレートを使用する必要があります。これがページイベントの大半になります。例外は通常明白です。つまり、私たちだけに影響し顧客は気づかないもの、またはアクションによってインシデントを回避できるプレインシデントレベルのアラートです。
+オンコール中の SRE にとって、ページを発生させるあらゆるイベント（関連する一連のページの集合かもしれません）には、`production` キュー内に Issue が作成される *べき* です。重大度の定義に従い、少なくとも *可視* な影響（ユーザーへの機能的な不便）がある場合、定義上それはインシデントであり、Issue には Incident テンプレートを使用すべきです。これはおそらくページイベントの大多数を占めます。例外は典型的に明らかで、影響が私たちのみに及び顧客は気付かないようなケースや、インシデントになる前のレベルのアラートで、それに対処することでインシデントを回避できる場合です。
 
 ### セキュリティ関連の変更
 
-GitLab Inc. が顧客または従業員向けに使用する認証・認可メカニズムへのすべての直接的または間接的な変更は、以下のチームの少なくとも 1 つのメンバーによる追加レビューと承認が必要です。
+GitLab Inc. が顧客または従業員によって使用する認証および認可機構に対する直接的または間接的な変更はすべて、以下のいずれかのチームのメンバーによる追加のレビューと承認が必要です:
 
-- [production チーム](/handbook/engineering/infrastructure-platforms/production/)のメンバー
-- [security チーム](https://about.gitlab.com/security/)のメンバー
-- スタッフレベル以上の別チームの開発者
+- [production team](/handbook/engineering/infrastructure-platforms/production/) のメンバー
+- [security team](https://about.gitlab.com/security/) のメンバー
+- 別チームに所属する staff レベル以上の開発者
 
-このプロセスは、[MR 承認](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/)を使用して承認が必須となっている以下のリポジトリに適用されます。
+このプロセスは、以下のリポジトリで
+[MR 承認](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/) を使って承認を必須化することで強制されます:
 
 - [gitlab-oauth2-proxy](https://gitlab.com/gitlab-cookbooks/gitlab-oauth2-proxy)
 - [gitlab_users](https://gitlab.com/gitlab-cookbooks/gitlab_users)
 
-その他のリポジトリもこの承認が必要となる場合があり、ケースバイケースで評価されます。
+その他のリポジトリでもこの承認が必要になる場合があり、
+ケースバイケースで評価できます。
 
-セキュリティチームをいつ変更に巻き込むべきか？以下の領域に大きな変更を加える場合です。
+セキュリティチームを変更にループインすべきタイミングはいつか? 以下のいずれかの領域に大きな変更を加えている場合です:
 
-1. 認証情報/トークンの処理
-1. 認証情報/トークンの保存
-1. 権限昇格のロジック
+1. クレデンシャル/トークンの処理
+1. クレデンシャル/トークンの保存
+1. 特権昇格のロジック
 1. 認可ロジック
-1. ユーザー/アカウントのアクセス制御
-1. 認証メカニズム
-1. 不正使用関連の活動
+1. ユーザー／アカウントのアクセスコントロール
+1. 認証機構
+1. 不正利用関連の活動
 
 #### タイプラベル
 
-タイプラベルは非常に重要です。これらは Issue の種類を定義します。すべての Issue は 1 つ以上のラベルを持つ必要があります。
+タイプラベルは非常に重要です。これは Issue がどのような種類のものであるかを定義します。すべての Issue に 1 つ以上のラベルが必要です。
 
 |       ラベル        | 説明                                                                                                             |
 |--------------------|-------------------------------------------------------------------------------------------------------------------------|
-|      `~Change`     | インフラへの変更を表します。詳細は: [変更](/handbook/engineering/infrastructure-platforms/change-management/)を確認してください |
-|     `~Incident`    | インフラのインシデントを表します。詳細は: [インシデント](/handbook/engineering/infrastructure-platforms/incident-management/)を確認してください |
-|     `~Database`    | データベース関連の問題のラベル                                                                                  |
-|     `~Security`    | セキュリティ関連の問題のラベル                                                                                  |
+|      `~Change`     | インフラストラクチャに対する Change を表します。詳細は [Change](/handbook/engineering/infrastructure-platforms/change-management/) を参照してください                             |
+|     `~Incident`    | インフラストラクチャに対する Incident を表します。詳細は [Incident](/handbook/engineering/infrastructure-platforms/incident-management/) を参照してください                           |
+|     `~Database`    | データベース関連の問題を示すラベル                                                                                  |
+|     `~Security`    | セキュリティ関連の問題を示すラベル                                                                                  |
 
 #### サービス
 
-サービスリストはこちらを参照してください: https://gitlab.com/gitlab-com/runbooks/blob/master/services/service-catalog.yml
+サービスの一覧はこちらに記載されています: https://gitlab.com/gitlab-com/runbooks/blob/master/services/service-catalog.yml
 
-### 常に他者を助ける
+### 常に他の人を助ける
 
-チームメンバーのサポートとブロック解除を決して止めるべきではありません。そのために、自動化の機会と自動化の作成に役立てるためのデータを常に収集すべきです。適切なラベルを付けてリクエストから Issue を作成することが最初のステップです。デフォルトでは、サポートを依頼する人が Issue を作成しますが、そのステップについても必要に応じて助けることができます。
+私たちは決してチームメンバーへの援助やブロック解除を止めるべきではありません。これに向けて、自動化やセルフサービス化の対象領域を浮かび上がらせるためにも、データは常に収集すべきです。リクエストから適切なラベル付きの Issue を作成するのが最初のステップです。デフォルトでは、ヘルプを求めている人が Issue を作成しますが、必要に応じてそのステップを助けることもできます。
 
-この Issue が何らかの理由で緊急の場合は、上記の手順に従ってラベルを付け、進行中のマイルストーンに追加します。
+何らかの理由でこの Issue が緊急の場合は、上記の手順に従ってラベル付けし、進行中の Milestone に追加するべきです。
 
 ## オンコールサポート
 
-スケジュール、ワークフロー、文書化の管理についての詳細は、[オンコールドキュメント](/handbook/engineering/on-call/)を参照してください。
+スケジュール、ワークフロー、ドキュメントの管理に関する詳細は、[オンコールドキュメント](/handbook/engineering/on-call/) を参照してください。
 
-### オンコールエスカレーション
+### オンコールのエスカレーション
 
-私たちが使用するシステムとサービスの数を考えると、それらすべてでエキスパートレベルに達することは非常に困難、あるいは不可能です。インフラへの変更の速さがさらに困難にしています。このため、オンコール担当者はすべてのシステムについてすべてを知っていることを期待されていません。さらに、インシデントは複雑で曖昧な性質を持つことが多く、解決のために異なる視点とアイデアが必要です。
+私たちが使うシステムやサービスの数を考えると、それら全てでエキスパートレベルに達するのはほぼ不可能です。さらに難しくしているのは、インフラストラクチャに加えられる変更の頻度です。そのため、オンコール担当者がすべてのシステムについて全てを知っている必要はありません。さらにインシデントはしばしば複雑で曖昧な性質を持ち、異なる視点や解決のアイディアが必要となります。
 
-助けを求めることは良い習慣と見なされ、能力不足と混同されるべきではありません。エスカレーションガイドラインとチェックリストに従いながら助けを求めることで、情報が明らかになり、問題の解決が早まります。また、未文書化の問題がインシデント後にランブックに記載されたり、他の人が読める Slack チャンネルで質問が行われたりすることで、チーム全体の知識も向上します。これはオンコールの緊急事態だけでなく、プロジェクト作業においても同様です。どんなに基礎的に思える質問であっても、その質問によって判断されることはありません。
+ヘルプを求めることは良いプラクティスと見なされ、能力不足と誤解されるべきではありません。エスカレーションのガイドラインやチェックリストに従ってヘルプを求めることは、情報を引き出し、より迅速な問題解決をもたらします。例えば、インシデント後に未文書化の問題がランブックでカバーされるとき、または他の人が読める Slack チャンネルで質問がされるときなど、チーム全体の知識を向上させます。これはオンコール緊急対応にもプロジェクト作業にも当てはまります。質問がどれほど初歩的でも、それで評価されることはありません。
 
-SRE チームの主要な責任は gitlab.com の可用性です。このため、オンコール担当者への助けはプロジェクト作業よりも優先されるべきです。すべてのインシデントに対して SRE チーム全員がすべてを中断して関与すべきとは言いません。しかし、問題に関連する分野での知識と経験がある場合は、プロジェクト作業よりもそちらを優先する権利があるということです。過去の経験から、インシデントの重大度が増したり、潜在的な原因が除外されるにつれて、会社全体からますます多くの人々が関与するようになることが示されています。
+SRE チームの第一の責任は gitlab.com の可用性です。このため、オンコール担当者の支援はプロジェクト作業より優先されるべきです。これは、すべてのインシデントで SRE チーム全員がすべてを投げ出して関わるべきという意味ではありません。しかし、問題に関連する分野での知識や経験がある人は、それをプロジェクト作業より優先する権利があると感じるべきです。過去の経験では、インシデントの重大度が上がるにつれて、または潜在的な原因が排除されるにつれて、社内のさまざまな人がますます関与してきました。
 
-## 本番環境イベントのログ記録
+## プロダクションイベントのロギング
 
-すべての設定、デプロイ、フィーチャーフラグのイベントは events インデックスを使用して Elastic Search に記録されます。
-イベントのアクセス方法とログ記録の方法の詳細については、[events ランブック](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/events/README.md)を参照してください。
+すべての構成、デプロイ、機能フラグのイベントは、events インデックスを使って Elastic Search に記録されます。
+イベントへのアクセス方法やログ記録方法の詳細は、[events ランブック](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/events/README.md) を参照してください。
 
-これらのイベントには、デプロイ、フィーチャーフラグ、設定（Chef、Terraform）、およびすべての Kubernetes の変更が含まれます。
-イベントはステージングと本番環境で別々に記録されます。
+これらのイベントには、デプロイ、機能フラグ、構成（Chef、Terraform）、すべての Kubernetes 変更が含まれます。
+イベントは staging と production の環境ごとに別々に記録されます。
 
-### インシデントのサブタイプ - 不正使用
+### インシデントのサブタイプ - 不正利用
 
-一部のインシデントでは、問題につながった使用パターンが不正使用であると判明する場合があります。不正使用の定義と対処方法についてはプロセスがあります。
+インシデントによっては、問題を引き起こした使用パターンが不正利用であることが判明する場合があります。私たちには不正利用の定義と扱いに関するプロセスがあります。
 
-1. 不正使用の定義は[ハンドブックのセキュリティ不正使用対応セクション](/handbook/security/)を参照してください
-1. GitLab.com の可用性に影響するインシデントが発生した場合、SRE チームはシステムを利用可能な状態に保つために即座に対応策を取ることがあります。ただし、チームはセキュリティ不正使用チームにも即座に関与してもらう必要があります。PagerDuty に新しい[セキュリティオンコールローテーション](/handbook/security/security-operations/sirt/engaging-security-on-call/)が確立されています - Security Responder ローテーションがあり、Security Manager ローテーションとともにアラートを送ることができます。
+1. 不正利用の定義は、[handbook のセキュリティ不正利用運用セクション](/handbook/security/)に記載されています
+1. GitLab.com の可用性に影響するインシデントが発生した場合、SRE チームはシステム可用性を維持するためにすぐに行動を取る場合があります。ただし、チームは同時に、セキュリティ不正利用チームを必ず関与させる必要があります。新しい [セキュリティオンコールローテーション](/handbook/security/security-operations/sirt/engaging-security-on-call/) が PagerDuty 内に確立されています - Security Manager ローテーションと並んでアラートできる Security Responder ローテーションがあります。
 
-## バックアップと復元
+## バックアップとリストア
 
-[バックアップと復元](/handbook/engineering/gitlab-com/policies/backup)のポリシーを参照してください。
+[バックアップとリストアのポリシー](/handbook/engineering/gitlab-com/policies/backup) を参照してください。
 
 ## パッチ適用
 
 ### ポリシー
 
-GitLab インフラチームが管理・維持するすべての本番環境サーバーは、最新のセキュリティパッチで積極的に維持・パッチ適用されます。
+GitLab infrastructure チームが管理・保守するプロダクション環境のすべてのサーバーは、最新のセキュリティパッチで積極的に保守・パッチ適用されます。
 
-### パッチ適用戦略のまとめ
+### パッチ適用戦略のサマリー
 
-Chef で管理されているすべての本番サーバーには、設定された apt ソースから重要なセキュリティパッケージを自動的にインストールするために [`unattended-upgrades`](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/8c522363bde0248f6d66adae0d1b6c233d31d261/roles/gprd-base.json#L31-42) を設定するベースロールがあります。
-`Unattended-upgrades` は毎日 UTC 6 時から 7 時の間に更新を確認します。ミラーへのアクセスが同時に集中することを避けるために時間はランダム化されています。すべての出力は `/var/log/unattended-upgrades/*.log` にログ記録されます。
+chef で管理されるすべての本番サーバーには、ベースロールが構成されており、各サーバーは [`unattended-upgrades`](https://gitlab.com/gitlab-com/gl-infra/chef-repo/blob/8c522363bde0248f6d66adae0d1b6c233d31d261/roles/gprd-base.json#L31-42) をインストールして、構成された apt ソースから重要なセキュリティパッケージを自動的にインストールします。
+`Unattended-upgrades` は UTC の朝 6 時から 7 時の間に毎日更新をチェックします。時間はランダム化されて、同じタイミングでミラーにアクセスしないようにしています。すべての出力は
+`/var/log/unattended-upgrades/*.log` にログ出力されます。
 
-Unattended upgrades は GitLab オムニバスパッケージを除くすべてのパッケージについて、セキュリティアップグレードを自動的にパッチ適用するように設定されています。
+Unattended upgrades は、GitLab omnibus パッケージを除くすべてのパッケージのセキュリティアップグレードを自動的に適用するよう構成されています。
 
-クリティカルな変更プロセスは[緊急変更プロセス](/handbook/engineering/infrastructure-platforms/emergency-change-processes)の概要に記載されています。
+クリティカルな変更プロセスは [緊急変更プロセス](/handbook/engineering/infrastructure-platforms/emergency-change-processes) の概要で説明されています。
 
 ### パッチ適用の検証
 
-パッチの検証は 3 つの方法で実施できます。
+パッチ検証は 3 つの方法で実施できます。
 
-- ホストのログと [wiz.io](https://www.wiz.io/) の脆弱性検知結果をクロスチェックすることによる手動検証。
-- [脆弱性管理チームの自動化](/handbook/security/product-security/vulnerability-management/automation/)によって GitLab に起票された脆弱性とトラッキング Issue のレビュー。
-- Slack の `#g_vulnerability_management` で脆弱性管理チームに連絡。
+- [wiz.io](https://www.wiz.io/) の脆弱性検出と、ホストのログを照合して手動で検証する。
+- [Vulnerability Management チームの自動化](/handbook/security/product-security/vulnerability-management/automation/) によって GitLab に上げられた脆弱性とトラッキング Issue を確認する
+- Slack で `#g_vulnerability_management` で Vulnerability Management に問い合わせる
 
-### 一般的な OS（Ubuntu またはその他の Linux）バージョンのアップデート
+### 一般的な OS (Ubuntu または他の Linux) のバージョン更新
 
-インフラは Ubuntu LTS リリースの 6 ヶ月後から OS アップグレードを開始し、すべての GCP コンピュートインスタンスをリリースから 5 年以内の LTS に維持するよう努めます。古い OS リリースのセキュリティアップデートの延長のために [Ubuntu Pro](https://ubuntu.com/pro) の [ESM](https://ubuntu.com/security/esm) サービスを活用し、実行中のシステムへのカーネルセキュリティアップデートを自動適用するために [Ubuntu Livepatch](https://ubuntu.com/security/livepatch) を使用しています。
+Infrastructure は、Ubuntu LTS リリースの 6 か月後から OS アップグレードを開始し、すべての GCP コンピュートインスタンスを過去 5 年以内にリリースされた LTS で維持するように努めます。古い OS リリースのセキュリティアップデートを延長するために [Ubuntu Pro](https://ubuntu.com/pro) を利用しており、[ESM](https://ubuntu.com/security/esm) サービスを使い、また実行中のシステムに Kernel セキュリティアップデートを自動で適用するために [Ubuntu Livepatch](https://ubuntu.com/security/livepatch) を利用しています。
 
-## 侵入テスト
+## ペネトレーションテスト
 
-インフラは侵入テスト中に発見された問題について[セキュリティチーム](/handbook/security/)をサポートします。侵入テストの調整や脆弱性に対処・修正するための手順の調整については、[インフラ Issue トラッカー](https://gitlab.com/gitlab-com/infrastructure/issues/)の Issue を通じてインフラチームに連絡してください。
+Infrastructure は、ペネトレーションテストで見つかった問題について [security team](/handbook/security/) をサポートします。pen test の調整、または脆弱性に対処・修復するための手順の調整は、[infrastructure issue tracker](https://gitlab.com/gitlab-com/infrastructure/issues/) の Issue を通じて infrastructure チームに伝える必要があります。
 
-Issue には以下を記載してください。
+Issue では以下を提供してください:
 
 - テストの範囲
-- 推奨される期間
+- 提案する時間枠
 - テストの深度
-- テストするサービス
-- 実施される手順
+- テスト対象のサービス
+- 行われる手順
 - 影響を受ける可能性のあるチーム（サポート、セキュリティなど）
 
-Issue には `~security` ラベルを付け、インフラマネージャーを `/cc` してください。
+Issue には `~security` ラベルを付け、infrastructure マネージャーに `/cc` してください。
