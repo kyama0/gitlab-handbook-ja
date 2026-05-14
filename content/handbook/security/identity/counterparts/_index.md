@@ -2,15 +2,15 @@
 title: "Identity カウンターパート"
 description: "Identity and Access Management (IAM) およびロールベースアクセス制御 (RBAC) は、GitLab の複数のチームにまたがる共有責任です。このページには、私たちのすべての安定したカウンターパートのディレクトリがあります。"
 upstream_path: /handbook/security/identity/counterparts/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
 
 ## Identity v3 プログラム DRI
 
-アーキテクチャ、決定事項、議論、ガイダンス、その他の質問については `@jeffersonmartin` をタグ付けしてください。
+アーキテクチャ、意思決定、議論、ガイダンス、その他の質問については、`@jeffersonmartin` にタグ付けしてください。
 
 <!-- TODO Mermaid Diagram -->
 
@@ -95,7 +95,7 @@ stale: false
     - glopezfernandez
   gitlab_saas_tag: '@glopezfernandez'
   slack_channel: 'g_infra_general'
-  handbook_page: 'https://handbook.gitlab.com/handbook/engineering/infrastructure/team/reliability/general.html'
+  handbook_page: 'https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production-engineering/'
   issue_tracker: 'https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues'
 - infra_scalability_leader:
   team_name: 'Production Engineering Leadership'
@@ -127,7 +127,7 @@ stale: false
     - dsmith
   gitlab_saas_tag: '@dawsmith'
   slack_channel: '#g_release_and_deploy'
-  handbook_page: 'https://handbook.gitlab.com/handbook/engineering/infrastructure/team/delivery/'
+  handbook_page: 'https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/'
   issue_tracker: 'https://gitlab.com/gitlab-com/gl-infra/delivery/-/issues'
 - infra_dedicated_general:
   team_name: 'Dedicated Leadership'
