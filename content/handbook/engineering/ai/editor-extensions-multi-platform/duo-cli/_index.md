@@ -2,8 +2,8 @@
 title: Duo CLI
 description: "私たちは GitLab Duo の AI 機能を開発者のターミナルに直接届けるインテリジェントなコマンドラインインターフェースを構築し、GitLab の DevSecOps プラットフォームとの自然言語による対話を通じて生産性を高めています。"
 upstream_path: /handbook/engineering/ai/editor-extensions-multi-platform/duo-cli/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---

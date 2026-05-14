@@ -4284,10 +4284,10 @@
     },
     "content/handbook/engineering/ai/_index.md": {
       "path": "content/handbook/engineering/ai/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "c98202bd963a2c00e3e132d59d6757e583839636fb53b219b82962411aa7bfae"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "39a360c474010fd269f45bd1b2d4583e785ef547988215d3ce299ccdff1bc0f5"
     },
     "content/handbook/engineering/ai/agent-foundations/_index.md": {
       "path": "content/handbook/engineering/ai/agent-foundations/_index.md",
@@ -4480,24 +4480,24 @@
     },
     "content/handbook/engineering/ai/editor-extensions-multi-platform/_index.md": {
       "path": "content/handbook/engineering/ai/editor-extensions-multi-platform/_index.md",
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-05-06T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "9925dd2d9f87462e3d6b83b4307c3ae56b03aa7b069b1e726c2a40c51ecdba56"
+      "input_hash": "c6102f5c35631652d090d75e230c6d5e1532c8dd34b1c1604cf450c0d5fe107e"
     },
     "content/handbook/engineering/ai/editor-extensions-multi-platform/duo-cli/_index.md": {
       "path": "content/handbook/engineering/ai/editor-extensions-multi-platform/duo-cli/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1560603c50b8a2449ba2736e374fb0f1735a4f78a16f2401979b6e1885314015"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3e42736b578558a7046897275db21547724aa192e100490ff15f0ce8137e186b"
     },
     "content/handbook/engineering/ai/editor-extensions-vscode/_index.md": {
       "path": "content/handbook/engineering/ai/editor-extensions-vscode/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "567a0589a362f030891fe13f2ebef8e6b900067f156d6188dad288acb61cd576"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "185a05857fcd0e60f207b6570abfb654d1d0e9300e77c192cb7f5260b5b5a029"
     },
     "content/handbook/engineering/ai/editor-extensions-vscode/ownership.md": {
       "path": "content/handbook/engineering/ai/editor-extensions-vscode/ownership.md",
@@ -4679,16 +4679,16 @@
       "input_hash": "c4bb676b8c1554b291fd0e1f3778014efff775a0546661dfb98fd88a8a335369"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/_index.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "7298b1baaaae8d2378d25e4efa8a4efef48f8b50b40be503845375604c1cd17a"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3fb6b9c4cbd9c8b0bbf5e8ec3962e4c2df31847411f1708adae316c8666af045"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth.md": {
-      "upstream_sha": "ec55f130cc95389b6faf798cebffd864abdbb4c5",
-      "translated_at": "2026-04-27T07:37:29Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "171a4c1dd23493f28320971f70d56117b4ce8864f075a81e22037dd4a7dc3f80"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f808877a22022705b2fc1407081b20308d20df5c690163f7b32c956cc6e4a577"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/infrastructure.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -4715,10 +4715,10 @@
       "input_hash": "8dc4c4d552f792b0e075235baca4c88794b892ff93da5bd6e21396ca1ce94043"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/003_system_requirements.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "d36ed3afab2fb6a8f9b2127a9185c5a2ffba30fde43504775b7d4c37048124ef"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "506ffba03242525dba1c44829baad0ff463849a15d21ebdcaf073ba90bd1f3df"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/004_data_and_application_limits.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -4734,16 +4734,16 @@
       "input_hash": "817212a9f9c75abc82eb4b146f70716910b4bf925780a4113a6995cfac60696a"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/006_technology_stack.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "08385a9f4520efaddf6f1a70ade8244e649288181316e19b7f8c662e9ea9f068"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fd5b6a5fa14c438cca00fde311a98c16e2985b3a594cdf9cfdaeb58c03b70f01"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "8efc23479fdacf3755316f17f475d9028c24997f1495cb615dbacec976fa7977"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "24f4ec3767df8a4c0771f6f0c7ec53b67dce5514010b04f0739e875194d6dc98"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -4752,10 +4752,10 @@
       "input_hash": "1e9be247e39162704fe2bb9b88071248897bf6d3e199810794234d9455081349"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design.md": {
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "4f8e03d8d96978b506cfee9c34a1eb9cc55a490a486ac519402b7039539030c3"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-14T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "85012acdcba987022099906c398dd4d14e41f61bb603870bc2329343aee39dec"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md": {
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
