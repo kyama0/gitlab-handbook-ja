@@ -84,9 +84,9 @@ Slack チャンネル: [#g_runners_platform](https://gitlab.enterprise.slack.com
 
 #### Release and Deploy
 
-[Request For Help トラッカー](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-Delivery.md) でヘルプリクエストを開いてください)
+[Request For Help トラッカー](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-Delivery.md) でヘルプリクエストを開いてください。
 
--私たちが助けられること:
+私たちが助けられること:
 
 1. GitLab.com へのデプロイ
 1. デプロイ後マイグレーション (デプロイに関連)
