@@ -3,8 +3,8 @@ title: プロダクト Issue の管理
 description: "Support と Fulfillment が連携してプロダクト Issue を管理するためのプロセス"
 category: General
 upstream_path: /handbook/support/license-and-renewals/workflows/managing_product_issues/
-upstream_sha: 9da08370100b76603b2eb82901592f9d21c9766c
-translated_at: "2026-05-08T10:35:08Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -35,7 +35,7 @@ Zendesk チケットの作業中にプロダクト問題に遭遇した場合、
 
 Support と Fulfillment のチームは、Support にとって関心のある Issue と Epic に優先順位を付けて管理するために、1 つの Epic ボードと 2 つの Issue ボードを組み合わせて使用しています。これらは集合的に `Support's Issue List for Fulfillment` と考えることができます。
 
-このリストは、L&R Support が懸念しているプロダクト Issue を記述するための信頼できる唯一の情報源です。Issue や Epic に関連する Fulfillment のアクションについての更新や議論については、[Fulfillment Support Priority Monthly Review issue](https://gitlab.com/gitlab-com/Product/-/issues/?state=all&label_name%5B%5D=Fulfillment%20Support%20Priority%20Review) を毎月確認してください。これは [テンプレート](https://gitlab.com/gitlab-com/Product/-/tree/main/.gitlab/issue_templates/Fulfillment-Support-Priority-Monthly-Review.md) から作成されます。
+このリストは、L&R Support が懸念しているプロダクト Issue を記述するための信頼できる唯一の情報源です。Issue や Epic に関連する Fulfillment のアクションについての更新や議論については、[Fulfillment Support Priority Monthly Review issue](https://gitlab.com/gitlab-com/Product/-/work_items?state=all&label_name%5B%5D=Fulfillment%20Stakeholder%20Priority%20Review) を毎月確認してください。これは [テンプレート](https://gitlab.com/gitlab-com/Product/-/tree/main/.gitlab/issue_templates/Fulfillment-Stakeholder-Priority-Monthly-Review.md) から作成されます。
 
 #### リストへのアクセス
 

@@ -3,8 +3,8 @@ title: 内部リクエストの取り扱い
 description: "Support が internal requests Issue トラッカーで受け取る GitLab.com 関連リクエストを適切に処理するために従うべき各種テンプレートとワークフロー"
 category: GitLab.com
 upstream_path: /handbook/support/workflows/internal_requests/
-upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -65,7 +65,7 @@ graph TD;
 
 ## Solution Architect としてのサポート要請
 
-Solution Architect は、**プリセールス** 中（例: POV エクササイズ、または既存顧客との潜在的な新規取引）にサポートが必要な場合にのみ [Support Super フォーム](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/) を使用してください。このフォームは内部リクエストであり、作業は SA とエンジニアの間で行われます。お客様はこれらのチケットでコラボレーションすることはできません。それ以外の場合、SA はお客様自身でサポートチケットを開くようアドバイスし、明確かつ効率的なコミュニケーションを行うべきです。
+このプロセスは [Requesting Support for Customers](/handbook/support/internal-support/#requesting-support-for-customers) で詳しく説明されています。一般的に、Solution Architect は明確かつ効率的なコミュニケーションのため、お客様自身でサポートチケットを開くようアドバイスすべきです。
 
 ## 非アクティブな Namespace のリクエスト
 
