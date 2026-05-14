@@ -2,8 +2,8 @@
 title: "CSE コンテンツ"
 description: "カスタマーサクセスエンジニアリングのコンテンツチーム、カタログ、作成および貢献ワークフローについて学ぶ。"
 upstream_path: /handbook/customer-success/csm/segment/cse/content/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 ---
@@ -71,9 +71,9 @@ CSE コンテンツチームの主な目標は次のとおりです:
 
 | チームメンバー | 責任 |
 |-------------|-------------|
-| [Nicole Esplin](/handbook/company/team/#nesplin) <br/> コンテンツストラテジスト | クロスファンクショナルコラボレーション、コンテンツ戦略、マーケティング/プロモーション、コンテンツ最適化、コンテンツデリバリー |
-| [Tearyne Almendariz](/handbook/company/team/#talmendariz) <br/> コンテンツアーキテクト | 四半期計画/バックログ管理、コンテンツ作成（デモ以外）、コンテンツオペレーション |
-| [James Wormwell](/handbook/company/team/#jwormwell) <br/> デモアーキテクト | コンテンツ作成（デモ）、デモ/ラボコンテンツ作成、デモオペレーション、デモアセットのメンテナンス |
+| [Nicole Esplin](https://gitlab.com/nesplin) <br/> コンテンツストラテジスト | クロスファンクショナルコラボレーション、コンテンツ戦略、マーケティング/プロモーション、コンテンツ最適化、コンテンツデリバリー |
+| [Tearyne Almendariz](https://gitlab.com/talmendariz) <br/> コンテンツアーキテクト | 四半期計画/バックログ管理、コンテンツ作成（デモ以外）、コンテンツオペレーション |
+| [James Wormwell](https://gitlab.com/jwormwell) <br/> デモアーキテクト | コンテンツ作成（デモ）、デモ/ラボコンテンツ作成、デモオペレーション、デモアセットのメンテナンス |
 
 <details>
 <summary>
