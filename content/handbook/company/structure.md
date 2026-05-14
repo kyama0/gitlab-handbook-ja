@@ -1,561 +1,564 @@
 ---
 title: "組織構造"
-description: "GitLabの会社構造には最大8つの層があります（Associate/Intermediate/Senior、Manager/Staff、Senior Manager/Principal、Director/Distinguished、Senior Director、VP/Fellow、Executives、Board）。詳細はこちら！"
+description: "GitLab の会社構造には最大 8 つの層があります（Associate/Intermediate/Senior、Manager/Staff、Senior Manager/Principal、Director/Distinguished、Senior Director、VP/Fellow、Executives、Board）。詳細はこちら！"
 canonical_path: "/company/structure/"
 upstream_path: "/handbook/company/structure/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
-translator: claude
+upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
+translated_at: "2026-05-14T00:00:00Z"
+translator: "claude"
 stale: false
 ---
 
 ## はじめに
 
-このページでは、GitLabという会社を構成する組織構造、レイヤー、ジョブフレームワークをご紹介します。個人貢献者（IC）向けとピープルマネージャー向けの2つのジョブフレームワークを使用しています。これらのフレームワークの使用方法、その他のプロジェクト、GitLabの組織構造に関するさらなる考慮事項について説明することを目指しています。
+このページでは、GitLab という会社を構成する組織構造、レイヤー、ジョブフレームワークについて説明します。私たちは個人貢献者向けとピープルマネージャー向けの 2 つのジョブフレームワークで運用しています。これらのフレームワークの使い方や、その他のプロジェクト、そして GitLab の組織構造に関するさらなる考慮事項について解説します。
 
 ## 組織図
 
-最新の組織図でどなたが誰に報告しているかを確認するには、Workdayにログインし、「Profile」セクションを選択し、左サイドバーから「Team」を選択して「Org Chart」を表示してください。HRISがチームメンバーと組織情報の唯一の情報源です。
+誰が誰に報告しているかを示す最新の組織図は、Workday にログインし、Profile セクションを選び、左サイドバーから Team を選択して Org Chart を表示することで確認できます。私たちの HRIS はチームメンバーおよび組織情報のシングルソースオブトゥルース（SSOT）です。
 
 ## レイヤー
 
-| レベル（ピープルマネージャー/IC） | 例 | 影響のスコープ | 期待される行動 |
+| レベル（ピープルマネージャー / IC） | 例                                                                                                                                                                                | 影響範囲                       | 期待される行動                            |
 |---------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-------------------------------|------------------------------------------|
-| CEO | [Chief Executive Officer](/job-description-library/chief-executive-officer/) | GitLabグローバル組織 | チャンピオン |
-| Executive | [Chief People Officer](/job-description-library/people-group/chief-people-officer/)および[Chief Technology Officer](/job-description-library/engineering/engineering-management/#chief-technology-officer) | 部門 | チャンピオン |
-| VP/Fellow | [VP of Global Channels](/job-description-library/sales/vp-of-global-channels/) | 部門群 | 変革を推進 |
-| Senior Director | [Senior Director, Engineering](/job-description-library/engineering/development/management/senior-director/) | サブ部門群 | フレームワークと戦略を開発 |
-| Director/Distinguished | [Director of Customer Success Operations](/job-description-library/sales/director-customer-operations/) | サブ部門/複数チーム | フレームワーク、戦略、計画を推進 |
-| Senior Manager/Principal | [Principal Engineer](/job-description-library/engineering/development/management/principal-engineer/) | サブ部門をまたぐ | 育成 |
-| Manager/Staff | [Engineering Manager](/job-description-library/engineering/development/management/engineering-manager/) | チームをまたぐ | 実装 |
-| Senior | [Senior People Operations Specialist](/job-description-library/people-group/people-operations/#senior-people-operations-specialist) | クロスファンクショナルな作業 | モデル提示 |
-| Intermediate | [Intermediate Backend Engineer](/job-description-library/engineering/development/backend/intermediate/) | チーム内の作業 | 成長/行動 |
-| Associate | [Junior Data Analyst](/job-description-library/marketing/enterprise-data/data-analyst/#junior-data-analyst) | 自身の作業 | 学習/開発 |
+| CEO                       | [Chief Executive Officer](/job-description-library/chief-executive-officer/)                                                                                                                 | GitLab 全社組織                | Champions                                |
+| Executive                 | [Chief People Officer](/job-description-library/people-group/chief-people-officer/) と [Chief Technology Officer](/job-description-library/engineering/engineering-management/#chief-technology-officer) | ディビジョン                   | Champions                                |
+| VP/Fellow                 | [VP of Global Channels](/job-description-library/sales/vp-of-global-channels/)                                                                                                               | 部門                          | Drives Change                            |
+| Senior Director           | [Senior Director, Engineering](/job-description-library/engineering/development/management/senior-director/)                                                                                 | サブ部門                       | フレームワークと戦略を策定する             |
+| Director/ Distinguished   | [Director of Customer Success Operations](/job-description-library/sales/director-customer-operations/)                                                                                      | サブ部門 / 複数チーム            | フレームワーク、戦略、計画を推進する         |
+| Senior Manager/Principal  | [Principal Engineer](/job-description-library/engineering/development/management/principal-engineer/)                                                                                        | サブ部門をまたぐ範囲              | Fosters                                  |
+| Manager/Staff             | [Engineering Manager](/job-description-library/engineering/development/management/engineering-manager/)                                                                                            | チームをまたぐ範囲               | Implements                               |
+| Senior                    | [Senior People Operations Specialist](/job-description-library/people-group/people-operations/#senior-people-operations-specialist)                                                            | クロスファンクショナルな業務        | Models                                   |
+| Intermediate              | [Intermediate Backend Engineer](/job-description-library/engineering/development/backend/intermediate/)                                                                                      | チーム内の業務                   | Grows/Acts                               |
+| Associate                 | [Junior Data Analyst](/job-description-library/marketing/enterprise-data/data-analyst/#junior-data-analyst)                                                    | 自身の業務                      | Learns/Develops                          |
 
-GitLabの会社構造には最大8つの層があります（Associate/Intermediate/Senior、Manager、Senior Manager、Director、Senior Director および/または VP、Executives、CEO）。層をスキップすることはできますが、一般的に同じ層の人物に報告することはありません（例：VPがVPに報告するケース）。
+GitLab には会社構造として最大 8 つのレイヤーがあります（Associate/Intermediate/Senior、Manager、Senior Manager、Director、Senior Director および/または VP、Executives、CEO）。レイヤーをスキップすることはできますが、通常、同じレイヤーに報告する人を置くことはありません（例: VP が VP に報告する）。
 
-### GitLabのデュアルキャリアパス
+### GitLab のデュアルキャリアパス
 
-デュアルキャリアパスとは、チームメンバーがピープルマネージャーのポジションに就くことなく、上方への移動が可能なキャリアパスです。この構造は、深い専門的/技術的スキルを持つが、1）ピープルマネージャーのポジションを追求することに関心または傾向がなく、個人貢献者（IC）として働くことを好むか、2）現時点ではチームに追加のピープルマネジメント層を追加するための十分なビジネスニーズがない、チームメンバーを昇進させる手段として機能します。
-今日、デュアルキャリアパスは主にEngineering部門で構築されていますが、会社全体の他の部門も、構造とビジネスニーズが許す場合にこれを構築し始めています。専門的/技術的作業とピープルマネージャートラックの分岐は一般的にSeniorレベルより上です。Seniorレベルのロールに到達し、進歩したい場合は、純粋な専門的/技術的役割を続けるか、ピープルマネージャーロールを追求するかを決定する必要があります。マネージャーは希望する場合に両方のトラックからタスクを試みる機会を提供できます。ほとんどの場合、ICトラックとピープルマネジメントパスの報酬バンドは一致しています。チームメンバーは[報酬ページ](/handbook/total-rewards/compensation/)で報酬の詳細を確認できます。
+デュアルキャリアパスとは、チームメンバーがピープルマネージャーのポジションに就く必要なく、上位への移動を可能にするキャリアパスです。この構造は、深いスペシャリスト/技術スキルを持つチームメンバーで、(1) ピープルマネージャーのポジションを追求することに関心や意向がなく、むしろ個人貢献者（IC）として働きたい場合、または (2) 現時点でチームにさらにピープルマネジメントのレイヤーを追加する十分なビジネス上の必要性がない場合に、彼らを昇進させる方法として機能します。
+現時点でデュアルキャリアパスが最も整備されているのは Engineering ディビジョンですが、構造やビジネスニーズが許す範囲で、他のディビジョンでも整備が始まっています。スペシャリスト/技術職トラックとピープルマネージャートラックの分岐は、通常 Senior レベルより上です。Senior レベルの役職に到達した人が昇進を望むときに、純粋にスペシャリスト/技術職にとどまるか、ピープルマネージャーの役割を追求するかを決める必要があります。マネージャーは、希望すれば両方のトラックの業務を試す機会を提供できます。ほとんどの場合、IC トラックとピープルマネジメントパスの給与帯は一致します。チームメンバーは [報酬ページ](/handbook/total-rewards/compensation/) で報酬の詳細を確認できます。
 
 ## ジョブフレームワーク
 
-私たちはGitLabの各ジョブレベルでの期待における明確さと一貫性を提供するためにジョブフレームワークを開発しました。[個人貢献者向けとピープルマネージャー向けの2つのジョブフレームワーク](https://docs.google.com/spreadsheets/d/1A46wqVK0ZdhmN7HT7G3QrBbExJw6vZJrSCFIiFd9T7U/edit?usp=sharing)があります（GitLab社内チームメンバーのみがアクセス可能）。これらは[ジョブレベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)で概説されているレベルにマッピングされます。フレームワークを更新する際は、常に広く伝達します。チームメンバーとして変更を提案したい場合は、[People Business Partnerプロジェクト](https://gitlab.com/gitlab-com/people-group/people-business-partners/-/issues?sort=created_date&state=opened)で機密Issueを開くことをお勧めします。
+GitLab の各職位レベルに対する期待を明確かつ一貫して示すために、ジョブフレームワークを開発しました。2 つのジョブフレームワーク、[個人貢献者用とピープルマネージャー用](https://docs.google.com/spreadsheets/d/1A46wqVK0ZdhmN7HT7G3QrBbExJw6vZJrSCFIiFd9T7U/edit?usp=sharing)（GitLab 内部のチームメンバーのみ閲覧可能）があり、[ジョブレベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618) で示されるレベルに対応しています。フレームワークに更新があった場合、必ず広く伝達します。チームメンバーとして変更を提案したい場合は、[People Business Partner プロジェクト](https://gitlab.com/gitlab-com/people-group/people-business-partners/-/issues?sort=created_date&state=opened) で confidential issue を開くことをおすすめします。
 
-### ジョブフレームワークの目標
+### ジョブフレームワークの目的
 
-ジョブフレームワークは、チームメンバーが貢献しているキャリアレベルを理解し、組織内のより高いレベルに必要なスキルを理解するのに役立ちます。チームメンバーはまた、ビジネスニーズが追加のスコープをサポートする場合に進歩する準備ができるよう、次のレベルで必要なスキルをより簡単に確認できます。
+ジョブフレームワークは、チームメンバーが現在貢献しているキャリアレベルを理解し、組織内の上位レベルに必要なスキルを理解するのに役立ちます。チームメンバーは、ビジネスニーズが追加スコープを支持する場合に、次のレベルへ進むために自分に何が求められているかをより簡単に把握できます。
 
-このガイダンスにより、マネージャーはパフォーマンス期待とキャリア進歩についてより生産的な会話を行い、チームメンバーが個人開発目標を設定し共有された期待を作成することを支援し、組織全体のさまざまなレベルの期待における一貫性を確保する準備がより整います。
+このガイダンスは、マネージャーがパフォーマンスへの期待やキャリアの進捗についてより生産的な会話を行えるようにし、チームメンバーが個人的な成長目標を設定し共通の期待を作るのを支援できるようにし、組織全体の異なるレベルへの期待の一貫性を確保します。
 
-マネージャーとチームメンバーが共有するジョブフレームワークを持つことで、物事をより透明で、一貫性があり、実行可能で、公平にするのに役立ちます。部門のリードは、People Business Partnerと協力して、ここで提供される一般的なフレームワークを超えた、ジョブ固有のコンピテンシーを持つ特定の機能フレームワークを構築できます。
+マネージャーとチームメンバーが共有するジョブフレームワークを持つことは、透明性、一貫性、実行可能性、公正性を高めます。部門長は People Business Partner と協力し、ここで提供される一般的なフレームワークを超えて、機能ごとの具体的なフレームワークを職種固有のコンピテンシーとともに構築できます。
 
-### ジョブフレームワークの使用方法
+### ジョブフレームワークの使い方
 
-以下のプログラムでジョブフレームワークを使用しています：
+ジョブフレームワークは以下のプログラムで使用しています。
 
 - [昇進プロセス](/handbook/people-group/promotions-transfers/)
-  - ここでは、四半期ごとの部門昇進調整の前にジョブフレームワークのレビューが必要です。
-  - ジョブフレームワークは、次のレベルのコアパフォーマンス分野が会社全体で一貫して把握されていることを確保するために、昇進文書の焦点を提供するのに役立ちます
-- [キャリア開発の会話](/handbook/people-group/learning-and-development/career-development/#having-career-conversations)
-  - マネージャーとチームメンバーの両方が会話でフレームワークを活用できます。
-  - フレームワークはGitLabの異なるレベルのコンピテンシーとジョブ基準の透明性を推進します。チームメンバーのキャリア開発目標と一致させると、チームメンバーとマネージャーは[学習と開発プログラム](/handbook/people-group/learning-and-development/)を活用してこれらのコンピテンシーを開発するために協力できます
-- 組織設計と採用計画
-  - フレームワークはリーダーシップと採用チームが開設すべきロールの適切なレベルを特定するのをサポートします。
-  - 新しいジョブレベルの拡張と導入には、必要な独自のコンピテンシーを確認するためにフレームワークを活用します
-- [タレントアセスメント](/handbook/people-group/talent-assessment/)：
-  - ジョブフレームワークは、グレードレベルのコンピテンシーに対してチームメンバーを評価するための自己評価とマネージャー評価の両方について、タレントアセスメントプログラムで活用される必要があります。レベルごとのコンピテンシーのレビューでは、強みと開発の機会が表面化する場合があり、チームメンバーとマネージャーとの議論につながる将来の開発とキャリアの機会についてのレビューのコンテンツに役立ちます。
-- [サクセッションプランニング](/handbook/people-group/talent-assessment/#succession-planning)：
-  - ロールレベルごとの要件を評価するためにサクセッションプランニングでジョブフレームワークを活用します。
+  - ここでは、ジョブフレームワークのレビューが、四半期ごとの部門昇進キャリブレーションに先立って必須となります。
+  - ジョブフレームワークは、昇進ドキュメントに焦点を提供し、次のレベルでのパフォーマンスのコア領域が、会社全体で一貫して捕捉されるのに役立ちます。
+- [キャリア開発会話](/handbook/people-group/learning-and-development/career-development/#having-career-conversations)
+  - マネージャーとチームメンバーの両方が会話の中でフレームワークを活用できます。
+  - フレームワークは、GitLab の異なるレベルでのコンピテンシーと職務基準の透明性を高めます。チームメンバーのキャリア開発目標と整合させると、チームメンバーとマネージャーは [Learning & Development Programs](/handbook/people-group/learning-and-development/) を活用してこれらのコンピテンシーを発達させるために協力できます。
+- 組織設計とヘッドカウント計画
+  - フレームワークは、リーダーシップと採用チームが、オープンにする予定の役職に適切なレベルを特定するのを支援します。
+  - 既存のジョブレベルの拡張や新たな導入については、フレームワークを活用して必要となる際立ったコンピテンシーをレビューします。
+- [タレントアセスメント](/handbook/people-group/talent-assessment/):
+  - ジョブフレームワークは、自己評価とマネージャー評価の両方において、グレードレベルのコンピテンシーに対してチームメンバーを評価するために、タレントアセスメントプログラムで活用すべきです。レベルごとのコンピテンシーのレビューにおいて、強みと開発機会が浮かび上がる可能性があり、これがレビューの内容として役立ち、チームメンバーとマネージャーの今後の発達やキャリア機会についての議論につながります。
+- [サクセッションプランニング](/handbook/people-group/talent-assessment/#succession-planning):
+  - 各役職レベルの要件を評価する際にサクセッションプランニングでジョブフレームワークを活用します。
 
-### ジョブごとのコンピテンシー
+### 職位ごとのコンピテンシー
 
-各ジョブフレームワークには、各レベルで見られることを期待されるコンピテンシーを説明するためのカテゴリが特定されています。以下は各カテゴリの定義です：
+各ジョブフレームワークでは、各レベルで期待されるコンピテンシーを表すカテゴリを特定しています。以下に各カテゴリの定義を記載します。
 
-- **スコープと影響力**：責任の範囲と各ジョブが製品、チームメンバー、または会社の戦略に影響を与える方法。これは自身の作業への焦点から、製品、チームメンバー、顧客、または会社の戦略の点でのクロスカンパニーおよび外部への影響にまで及びます。
-- **複雑さと問題解決**：日常的な責任とプロジェクトにおける複雑さと問題解決スキルのレベル。これは低/中程度の複雑さと問題解決から、GitLabの長期的な目標の達成に影響を与える非常に複雑なIssueにまで及びます。
-- **リーダーシップとピープルマネジメント/コミュニケーション**：彼らが示すリーダーシップのレベルと組織内でのコミュニケーション方法。個人貢献者もロールでリーダーシップを示すことを期待しています。これはチーム内からエグゼクティブとボードメンバーにまで及びます。
-- [**高パフォーマンスチーム**](https://internal.gitlab.com/handbook/company/high-performing-teams/#high-performing-teams-indicators)：高パフォーマンスの各特性は、成功を認識・測定するのに役立つ3つのインジケーターに分解されます。
-- [**バリューコンピテンシー**](/handbook/people-group/competencies/#values-competencies)：私たちの[CREDITバリュー](/handbook/values/#credit)と整合したコンピテンシー。
-- [**リモートワークコンピテンシー**](/handbook/people-group/competencies/#remote-work-competencies)：リモートワークコンピテンシーと整合したコンピテンシー。
-- [**機能コンピテンシー**](/handbook/people-group/competencies/#functional-competencies)：機能ごとに特定のコンピテンシー。これらは各機能によって構築されます。
+- **Scope & Influence**: 各職位の責任の範囲と、プロダクト、チームメンバー、または会社戦略に対する影響の与え方。
+これは自分自身の業務へのフォーカスから、プロダクト、チームメンバー、顧客、または会社戦略の観点での全社・社外への影響にまで及びます。
+- **Complexity & Problem solving**: 日々の責任とプロジェクトにおける複雑さと問題解決スキルのレベル。
+低/中レベルの複雑さと問題解決から、GitLab の長期目標達成に影響を与える非常に複雑な問題まで及びます。
+- **Leadership & People Management/Communication**: 表すリーダーシップのレベルと、組織内でのコミュニケーションの取り方。個人貢献者もその役割においてリーダーシップを発揮することを期待しています。
+これはチーム内からエグゼクティブや取締役会のメンバーまでに及びます。
+- [**High Performing Teams**](https://internal.gitlab.com/handbook/company/high-performing-teams/#high-performing-teams-indicators): ハイパフォーマンスの各特性は、成功を認識し測定できるように 3 つの指標に分けられています。
+- [**バリューコンピテンシー**](/handbook/people-group/competencies/#values-competencies): [CREDIT バリュー](/handbook/values/#credit) と整合するコンピテンシー。
+- [**リモートワーキングコンピテンシー**](/handbook/people-group/competencies/#remote-work-competencies): リモートワーキングコンピテンシーと整合するコンピテンシー。
+- [**機能別コンピテンシー**](/handbook/people-group/competencies/#functional-competencies): 機能ごとに固有のコンピテンシー。これらは各機能が自ら構築します。
 
-上記のコンピテンシーカテゴリに加えて、ジョブフレームワークに2つのカテゴリを追加しました：
+上記のコンピテンシーカテゴリのほかに、ジョブフレームワークに 2 つのカテゴリを追加しています。
 
-- **典型的な報告構造**：そのジョブレベルの典型的な報告構造を示します。
-- **次のレベルとの違い**：あるレベルと次のレベルを区別する簡単な説明。
+- **典型的なレポートライン構造**: その職位レベルの典型的なレポートライン構造を示します。
+- **次のレベルとの違い**: あるレベルと次のレベルの違いを示す簡潔なステートメント。
 
 ### 個人貢献者ジョブフレームワーク
 
-個人貢献者は[自律的なマネージャー](/handbook/values/#managers-of-one)です。ICはGitLabチームメンバーの大部分を構成します。[ICのジョブフレームワーク](https://docs.google.com/spreadsheets/d/1A46wqVK0ZdhmN7HT7G3QrBbExJw6vZJrSCFIiFd9T7U/edit?usp=sharing)は、ICの各レベルで期待される最低限のコンピテンシーを説明する高レベルガイドです。各レベルの正確な要件と責任については、チームメンバーは各ジョブのJob Familyページを参照すべきです。
+個人貢献者は [Managers of One](/handbook/values/#managers-of-one) です。IC は GitLab チームメンバーの大多数を構成します。[IC 用ジョブフレームワーク](https://docs.google.com/spreadsheets/d/1A46wqVK0ZdhmN7HT7G3QrBbExJw6vZJrSCFIiFd9T7U/edit?usp=sharing) は、IC の各レベルで期待される最低限のコンピテンシーを示すハイレベルなガイドです。レベルごとの厳密な要件と責任については、チームメンバーは各職務の Job Family ページを参照してください。
 
-### ピープルマネージャーズジョブフレームワーク
+### ピープルマネージャージョブフレームワーク
 
-[ピープルマネージャーのジョブフレームワークはこちらのタブで確認できます](https://docs.google.com/spreadsheets/d/1A46wqVK0ZdhmN7HT7G3QrBbExJw6vZJrSCFIiFd9T7U/edit?usp=sharing)。以下に各レベルとその報告構造を説明します。
+[ピープルマネージャー用ジョブフレームワークはこのタブで確認できます](https://docs.google.com/spreadsheets/d/1A46wqVK0ZdhmN7HT7G3QrBbExJw6vZJrSCFIiFd9T7U/edit?usp=sharing)。以下に各レベルとそのレポートライン構造を説明します。
 
 #### すべてのピープルマネージャーへの一般的な期待
 
-すべてのピープルマネージャーには、[以下で説明する](#management-group)行動における一般的な期待があります。これらはジョブフレームワークには記載されていませんが、ピープルマネージャーがチーム/ピアとどのように行動し、どのようにインタラクションするかの期待とGitLabの基本としてのガイドとして使用できます。ジョブフレームワークとの違いは、高レベルのコンピテンシーではなく、非常に具体的な期待とGitLabの基本を設定することです。
+すべてのピープルマネージャーには、[以下に示す](#management-group)行動面での一般的な期待があります。これらはジョブフレームワークには含まれていませんが、私たちがピープルマネージャーに期待する行動やチーム/同僚との関わり方のガイドとして使えます。ジョブフレームワークとの違いは、ハイレベルなコンピテンシーを記述するものではなく、非常に具体的な期待値と GitLab の基本を設定するものである点です。
 
 #### マネージャー
 
-マネージャーは[マネジメントグループ](#management-group)に属します。各コンピテンシーカテゴリの期待については、ジョブフレームワークを参照できます。通常、マネージャーはSenior ManagerまたはDirectorに報告します。
+マネージャーは [マネジメントグループ](#management-group) に属します。コンピテンシーカテゴリごとの期待値はジョブフレームワークで確認できます。通常、マネージャーは Senior Manager または Director に報告します。
 
-#### Senior Manager
+#### シニアマネージャー
 
-Senior Managerは[マネジメントグループ](#management-group)に属します。さらに、各コンピテンシーカテゴリの期待については、ジョブフレームワークを参照できます。通常、Senior ManagerはDirector以上に報告します。
+シニアマネージャーは [マネジメントグループ](#management-group) に属します。さらにコンピテンシーカテゴリごとの期待値はジョブフレームワークで確認できます。通常、シニアマネージャーは Director 以上に報告します。
 
-#### Director
+#### ディレクター
 
-Directorは通常、マネージャーのマネージャーです。[Directorグループ](#director-group)を構成しています。一部のコストセンターでは、DirectorがDepartmentにマッピングされます。例えば、G&A部門の下、Business OperationsはDirectorが率いるDepartmentです。ただし、これは厳格なルールではありません。G&Aの下でPeopleはすべて1つのDepartmentの下にあるように。
-Directorグループのメンバーは、すべてのマネジメントグループメンバーが示すリーダーシップを示すことに加えて、ジョブフレームワークで見つけられる追加のコンピテンシーを示すことが期待されます。通常、DirectorはSenior Director以上に報告します。
+ディレクターは通常、マネージャーのマネージャーです。彼らは [ディレクターグループ](#director-group) を構成します。一部のコストセンターでは、ディレクターは部門にマッピングされます。たとえば G&A ディビジョンの下、Business Operations はディレクターが率いる部門です。ただし、これは厳格な規則ではありません。たとえば G&A の下では、People はすべて 1 つの部門にまとまっています。
+ディレクターグループのメンバーは、すべてのマネジメントグループメンバーが行うリーダーシップに加えて、ジョブフレームワークに記載される追加のコンピテンシーを示すことが期待されます。通常、ディレクターは Senior Director 以上に報告します。
 
-##### Directorグループ {#director-group}
+##### ディレクターグループ
 
-Directorグループのメンバーは、すべての[マネジメントグループ](#management-group)メンバーが示すリーダーシップを示すことに加えて：
+ディレクターグループのメンバーは、すべての [マネジメントグループ](#management-group) のメンバーが行うリーダーシップに加えて、以下を示すことが期待されます。
 
-1. 会社のトップ目標への日常的な実行の整合能力を持ち、トップ目標がチームメンバーによく伝達されることを確保する責任があります。
-1. ピア同士で作業し、Issueを迅速に解決するためにチーム内で健全なコンフリクトをスポンサーし、すべての選択肢が尽きた場合にのみエスカレーションします。
-1. 今後3〜4年間のビジネスに必要なものに対して野心的にロールを定義し、チームを育成・採用します。
-1. [コミュニケーションガイドライン](/handbook/communication/)の中で作業するようにチームをコーチし、率先して例を示します。
+1. 日々の実行を会社のトップ目標に整合させる能力を持ち、トップ目標がチームメンバーに対して適切に伝達されることに責任を持つ。
+1. ピアツーピアで働き、問題を素早く解決するためにチーム内の健全なコンフリクトをスポンサーし、すべての選択肢が尽くされた場合にのみエスカレーションする。
+1. ビジネスから今後 3〜4 年で必要となる役割を野心的に定義し、チームを成長させ採用する。
+1. チームを [コミュニケーションガイドライン](/handbook/communication/) に従って働くようにコーチし、自ら手本を示してリードする。
 
-Slackチャンネル：`#directors-and-above`（プライベート）
+Slack チャンネル: `#directors-and-above`（プライベート）
 
-#### Senior DirectorとVP
+#### シニアディレクターと VP
 
-シニアリーダーはSenior DirectorまたはVPとして定義されます。
+シニアリーダーは、シニアディレクターまたは VP として定義されます。
 
-Senior Directorは通常、Manager やDirectorのマネージャーです。一部の部門では、シニアリーダーはコストセンター構造のDepartmentにマッピングされます。通常、Senior DirectorはVP以上に報告します。
+シニアディレクターは通常、マネージャーや/またはディレクターのマネージャーです。一部のディビジョンでは、シニアリーダーがコストセンター構造の部門にマッピングされます。通常、シニアディレクターは VP 以上に報告します。
 
-VPは通常、Senior DirectorおよびDirectorのマネージャーです。Senior Directorと同様にDepartmentにマッピングされます。通常、VPはExecutiveに報告します。
+VP は通常、シニアディレクターや/またはディレクターのマネージャーです。シニアディレクターと同様に、彼らは部門にマッピングされます。通常、VP はエグゼクティブに報告します。
 
-シニアリーダーは、すべてのDirectorグループメンバーが示すリーダーシップを示すことに加えて、ジョブフレームワークの追加コンピテンシーを示すことが期待されます：
+シニアリーダーは、すべてのディレクターグループメンバーが行うリーダーシップに加えて、ジョブフレームワークに記載される追加のコンピテンシーを示すことが期待されます。
 
-1. 重大な戦略的および機能的な責任を持ちます。
-1. 重大な運営予算の責任（報酬計画、予算配分、交渉、投資トレードオフの決定などの事項）を持ちます。
-1. 大規模なチーム（直接および間接的に報告する両方）のパフォーマンスと成功に対するレバレッジと影響力を持ち、その成功は多くの人々の成功の増加につながります。
-1. 彼らの決定の影響は広範で重大です。
-1. 一部は会社を代表し、会社が説明責任を負う決定と声明を出すために重大な外部責任を持ちます。
+1. 重要な戦略的および機能的責任を持つ。
+1. 重要な運営予算の責任を持つ（報酬計画、予算配分、交渉、投資のトレードオフ判断など）。
+1. 大規模なチーム（直接報告と間接的報告の両方）のパフォーマンスと成功に対するレバレッジと影響力を持ち、その成功は多数の人々全体での成功の拡大につながる。
+1. 意思決定の影響は広範かつ重大である。
+1. 一部は、会社を代表し、会社が責任を負う意思決定や発言を行うために、重要な対外的責任を持つ。
 
 #### VP-Directs
 
-VP-DirectsはGitLabのVPのサブセットで、E-Groupのメンバーに直接報告します。VP-Directsグループのメンバーです。
+VP-Directs は、E-Group メンバーに直接報告する GitLab VP のサブセットです。彼らは VP-Directs グループのメンバーです。
 
-#### Executives
+#### エグゼクティブ
 
-Executive層は以下のように構成されます。R&D重視のExecutiveにはChief Product Officer（CPO）、Chief Information Security Officer（CISO）、Chief Technology Officer（CTO）が含まれます。
-GoToMarket重視のExecutiveにはChief Revenue Officer（CRO）とChief Marketing Officer（CMO）が含まれます。
-法務、財務、人事の3つのイネーブリング機能には、それぞれC-levelのExecutiveとして、Chief Legal Officer（CLO）、Chief Financial Officer（CFO）、Chief People Officer（CPO）がいます。
+エグゼクティブレイヤーは以下のように構成されます。R&D 系のエグゼクティブには、Chief Product Officer (CPO)、Chief Information Security Officer (CISO)、Chief Technology Officer (CTO) が含まれます。
+Go-to-market 系のエグゼクティブには、Chief Revenue Officer (CRO) と Chief Marketing Officer (CMO) が含まれます。
+3 つの enabling 機能、すなわち legal、finance、people には、それぞれ C レベルのエグゼクティブとして Chief Legal Officer (CLO)、Chief Financial Officer (CFO)、Chief People Officer (CPO) がいます。
 
-これらのExecutiveが一緒に[E-group](#e-group)を構成します。
-毎週ミーティングを行い、四半期ごとのボードミーティングに参加し、ほとんどのディスカッショントピックには[パブリックのSlackチャンネル#e-group](https://gitlab.slack.com/messages/C5W3VS1C4)、稀な機密事項についてはプライベートなチャンネルを持っています。
+これらのエグゼクティブで [E-group](#e-group) を構成します。
+彼らは毎週ミーティングを行い、四半期ごとの取締役会に出席し、ほとんどの議論トピックに [public Slack channel #e-group](https://gitlab.slack.com/messages/C5W3VS1C4) を持ち、まれな機密事項のためにプライベートチャンネルも持っています。
 
-Sales とMarketingを除いて、通常は[コストセンター](/handbook/finance/financial-planning-and-analysis/)ごとに複数のExecutiveがいます。例えば、CLO、CFO、CEO、CPOはすべてG&A（General & Administrative Expenses）コストセンターに属します。
+Sales と Marketing を除き、通常、1 つの [コストセンター](/handbook/finance/financial-planning-and-analysis/) には複数のエグゼクティブが属します。たとえば、CLO、CFO、CEO、CPO はすべて G&A（General & Administrative Expenses）コストセンターの下にあります。
 
-##### E-group {#e-group}
+##### E-group
 
-E-groupのメンバーは、すべての[Senior DirectorとVP](/handbook/company/structure/#senior-directors-and-vps)が示すリーダーシップを示すことに加えて：
+E-group のメンバーは、[シニアディレクターと VP](/handbook/company/structure/#senior-directors-and-vps) のすべてのメンバーが行うリーダーシップに加えて、以下を示すことが期待されます。
 
-1. 関連性のある、野心的で、定量化可能なOKRを提案し、その70%を達成します。
-1. 信頼性があり、チームが合意したことを完了することを確保します。
-1. 他の部門が気づく前に、自分の機能内の問題を積極的に検出してコミュニケーションします。
-1. 機能領域でより優れたパフォーマンスを発揮するリーダーを採用・維持します。
-1. 今後3〜4年間に必要なものについてロールを作成し要件を設定し、そのプロファイルのために採用します。
-1. 迅速にイテレーションし、部門をイテレーションでトレーニングすることで、膨大な量のことを成し遂げます。
-1. ビジネスの戦術的なことではなく、ビジネス戦略とビジョンを定義してコミュニケーションします。
-1. 他の機能エリアについての洞察を共有して、他者が仕事をよりよくできるようにします。
-1. クロスファンクショナルプロセスの改善を提案・実施します。
-1. 機能外の結果達成を頻繁に支援します。
-1. 他のExecutiveを自分の分野でより優れたものにします
+1. 関連性が高く、野心的で、定量化可能な OKR を提案し、その 70% を達成する。
+1. 信頼でき、チームが合意したことを確実に完遂するようにする。
+1. 他の部門が気付く前に、自身の機能内の問題を検出し伝達することについてプロアクティブである。
+1. 各自の機能領域でより高いパフォーマンスを発揮するリーダーを採用し、維持する。
+1. 3〜4 年先に必要な役割と要件を作成し、そのプロファイルに合った人材を採用する。
+1. 素早くイテレーションし、部門にイテレーションをトレーニングすることで、膨大な量のことを完了させる。
+1. ビジネスにおいて過度に戦術的になるのではなく、ビジネス戦略とビジョンを定義し伝達する。
+1. 他の機能領域に関する洞察を共有し、他の人をその仕事においてより優れたものにする。
+1. クロスファンクショナルなプロセスに対して改善を提案し実装する。
+1. 自身の機能の外で結果を出すことを頻繁に支援する。
+1. 他のエグゼクティブを、その専門領域においてより優れたものにする。
 
-Slackチャンネル：`#e-group`（パブリック）および機密事項のためのプライベートチャンネル
+Slack チャンネル: `#e-group`（パブリック）と機密事項用のプライベートチャンネル
 
-#### マネジメントグループ {#management-group}
+#### マネジメントグループ
 
-マネジメントグループのメンバーは、[GitLabチームメンバー全員が](/handbook/leadership/)示すリーダーシップを示すことに加えて：
+マネジメントグループのメンバーは、すべての [GitLab チームメンバーが](/handbook/leadership/) 行うリーダーシップに加えて、以下を示すことが期待されます。
 
-1. チームメンバーが包含され、価値を感じられるようにすることはマネージャーの最も重要な任務の1つです。チームメンバーと積極的に心理的安全性を作り出し、多様な視点が聞かれ、誰もが真正かつ創造的にコミュニケーションし貢献できるようにします。
-1. チームメンバーが自分のロールで期待されていることを理解できるようにすることは、マネージャーが会社の成功を確保するために持つ重要なロールです。マネージャーはJob Familyが特定の[パフォーマンス指標](/handbook/hiring/job-description-library/#why-job-descriptions-have-performance-indicators)を含み、各チームメンバーに明確に伝達されることを確保すべきです。
-1. [アンダーパフォーマンスの管理](/handbook/leadership/underperformance)もマネージャーの重要な任務です。
-1. 良い時期には、抑制の声になってください。悪い時期には、希望の声になってください。希望の声として効果的になるために、マネージャーは会社のミッション、目標、リーダーシップの決定を確実に理解していなければなりません。マネージャーがリーダーシップの決定に懸念がある場合は、コンテキストを理解するためにリーダーに伝え、チームメンバーからの重要な洞察を共有して健全な決定ができるようにし、チームメンバーにコンテキストを説明できるようにする必要があります。
-1. 効果的な組織を維持するために、マネージャーのコントロールスパンは4〜10人の範囲で約7人であるべきです。この範囲を下回ると、追加の組織層の非効率性が専門グループのメリットよりも大きくなります。この範囲を上回ると、マネージャーは適切な1対1のミーティングをもはやできなくなります。
-1. コントロールのスパンは組織のすべてのレベルで同じです。これにより、コストを追加し意思決定速度を落とす追加の層を組織に持つことを防ぎます。処理できる報告者の数を増やすには、マネージャーになりうる[直接責任個人](/handbook/people-group/directly-responsible-individuals/)への委任を増やします。今から6ヶ月後に組織がどこにあることを期待するかに基づいて報告者の数を設定します。
-1. 誰かを褒める際は、[公に聴衆の前で行うよう](/handbook/communication/#say-thanks)試みてください。改善の提案を行う際は、プライベートに[1対1](/handbook/leadership/1-1/)で行ってください。[ハーバードの研究](https://hbr.org/2013/03/the-ideal-praise-to-criticism)は、高パフォーマンスチームの肯定的フィードバックと否定的フィードバックの理想的な比率がほぼ6:1であることを示しています。肯定的なフィードバックには寛大になってください。
-1. チームミーティング、グループ会話、およびその他のコミュニケーションで、あなたの意見を建設的に挑戦し難しい質問をする人々への感謝を表明してください。これにより心理的安全性が生まれ、バリューが促進され、[5つの機能不全](/handbook/values/#five-dysfunctions)が防がれます。
-1. 同じ目標に到達するための異なる方法があることを理解してください。異なる視点があり、議論が必要です。
-1. 誰かが退職を考えていると言った場合は、すべてを中断して話を聞いてください。懸念を見つけるために質問してください。遅延すると、その人は価値を感じなくなり、決定は元に戻せなくなります。
-1. 新しいチームメンバーの到着を発表することに加えて、退職もGoogleとSlackのアカウントが取り消された後（詳細は[オフボーディングページ](/handbook/people-group/offboarding/)と[オフボーディングチェックリスト](https://gitlab.com/gitlab-com/people-group/employment-templates/-/blob/main/.gitlab/issue_templates/offboarding.md)参照）に`#team-member-updates`チャットチャンネルで発表されます。当該個人のプライバシーを尊重しなければなりません。誰かがなぜ去ったまたは去っているのかを尋ねられた場合は、共有できることとできないことについて説明している[一般ガイドライン](/handbook/communication/confidentiality-levels/#not-public)セクションにその人を紹介してください。
-1. 人々が求めたり、退職を脅した場合に昇給や肩書きを与えるべきではありません。人々が求める前に積極的に昇給させ昇進させるべきです。求めたときに行うと、求めない人々に対して不公平であり、より多くの人々が求めることになります。
-1. GitLabを[家族として言及しないでください](https://hbr.org/2014/06/your-company-is-not-a-family)。チームが親密なグループのように感じることは素晴らしく、これにより強いチームが構築されるため、これを奨励すべきです。しかし、*家族*と*チーム*は異なります。*家族*は関係のために集まり、それを維持するために重要なことをします。*チーム*はタスクのために集められ、それを完了するために必要なことをします。関係をタスクより上に置かないでください。さらに、家族には[オフボーディングプロセス](/handbook/people-group/offboarding/)がありません。家族は無条件の愛を持つべきですが、チームは条件付きの愛を持ちます。[最良の企業は家族のサポーターです。](https://twitter.com/myriadwill/status/917772249624702976)チームが家族であるというアイデアは、不当なプレッシャーを引き起こす可能性があります：[「このオフィスは家族のようなもの...休日にここにいるよう漠然としたプレッシャーがあるという意味で」](https://twitter.com/emilieschario/status/1182454709925416961)。あなた自身のキャリアのCEOです。GitLabを顧客として扱ってください。
-1. 自分の報告者の作業を会社の他の部分に称え、自分のものとして提示しないでください。これと他の多くの素晴らしい教訓は、読む価値のある[Ask MetaFilterスレッド](https://ask.metafilter.com/300002/My-best-manager-did-this)にあります。
-1. [認知バイアス](https://betterhumans.pub/cognitive-bias-cheat-sheet-55a472476b18)に注意してください。
-1. [一貫性と俊敏性](https://hbr.org/2017/01/the-best-strategic-leaders-balance-agility-and-consistency)を組み合わせてください。
-1. チームの期待と作業スタイルを文書化するREADMEファイルを維持することを検討してください。MRを奨励してください。
-1. タイムスケールは短いですが、[PIPについて考える方法](https://mfbt.ca/how-i-talk-to-leaders-about-firing-people-8149dfcb035b)についての素晴らしい記事があります。
-1. 人々のブロックを解除するために何でも行ってください。誰かが生産的であることを妨げる質問がある場合は、自分でその質問に答えるか、できる人を見つけてください。
-1. あなたの言葉が広く共有される（例えば新聞に掲載される）かのように[プロフェッショナルな態度](/handbook/company/culture/all-remote/)でコミュニケーションしてください。
-1. 重要な決定を伝えるために[マルチモーダルコミュニケーション](/handbook/communication/#multimodal-communication)を採用してください。
-1. [ソーシャルメディアで返答する](/handbook/marketing/team-member-social-media-policy/)ことが期待されています。質問がある場合は、`#social_media`チャットチャンネルでアドバイスを求めてください。
-1. 報告者が仕事に[進捗感](https://tomtunguz.com/progress-principle/)を感じられるようにしてください。
-1. [Sam Altmanのツイート](https://twitter.com/sama/status/804138512878473220)と[Paul Grahamの返信](https://twitter.com/paulg/status/804209365305659392)が最もよく言い表しています：「人々は物事を成し遂げるかしないかのどちらかです。そして、それは難しいことです。なぜなら彼らは賢いかもしれないが実際には何もしない可能性があるため。」質問への明瞭な答えではなく、結果を注視してください。そうしないと、アンダーパフォーマーを特定するのに時間がかかりすぎます。
-1. [GitLab Contribute](/handbook/company/culture/summit/)（旧GitLabサミット）は、会社全体での[非公式なコミュニケーション](/handbook/company/culture/all-remote/informal-communication/)と[絆形成](/handbook/company/culture/all-remote/)を目的としています。GitLab Contributeではビジネス活動の時間は限られているため、通常の会議はその外で行うべきです。個人貢献者を含む非公式で、クロスチーム、かつオープンエンドの会議を望んでいます。例えば、現在GitLabに欠けている機能を誰もが提案するよう招待すること。
-1. GitLab Contributeまで決定を遅延させないでください。代わりに、それらを物事を早く完了させるための期限として使用してください。
-1. GitLabでは明示的な20%タイムはありません。[活動ではなく影響を測定します](/handbook/values/#measure-impact-not-activity)。割り当てられた仕事で良い結果を出している場合、会社の他の部分に貢献したり、副プロジェクトに取り組む自由があります。「その副プロジェクトへの取り組みがパフォーマンスを損なっている」とは言わないでください。代わりに、「Xを完了することに同意しましたが、遅延しています。何が起こりましたか？どのように助けることができますか？」と言ってください。
-1. 何か新しいものを開始する前に指標を選んでください。10の内9つの発売は失敗します。プロジェクトがうまくいっていない場合は、完全にシャットダウンしてください。チームをゆっくり死に至らしめるためにヘッドカウントを奪うことは、倹約でも意欲的でもありません。勝者に資金を提供し、損益分岐点を達成するにはそれでも何年もかかるでしょう。
-1. 昇給の計算方法が昇給決定前に変更される可能性があるため、事前に昇給について議論しないでください。
-1. 変更がすべての承認プロセスを経るまで、昇進、給与の増加、またはボーナスについて議論しないでください。People Opsは、チームメンバーに昇進と増加を通知できるようになったときにマネージャーに通知します。
-1. 報告者に方向性を指示する代わりに、方向性に満足するまで[ソクラテス的方法](https://en.wikipedia.org/wiki/Socratic_method)に従って質問することが最善です。報告者はより狭い領域でより深い知識を持っているため、異なるデータを基にして異なる結論を導くことが容易です。そのため質問が非常に重要です。
-1. [バークシャーの一般的な命令](https://www.harrisonbarnes.com/the-psychology-of-human-misjudgment-by-charles-t-munger/)に従ってください：「悪いニュースはすぐに知らせてください。待てるのは良いニュースだけです。」できる限り迅速に悪いニュースをマネージャーに通知してください。悪いニュースを迅速に報告することは、そこから回復するために必要な信頼を保持するために不可欠です。
-1. 軍事的なアナロジーやイメージを避けるようにしてください。私たちは軍隊ではなく、戦争中ではなく、戦闘はなく、誰も殺していません。軍事言語は[インクルーシブではない](https://www.london.edu/think/killing-the-competition)ため、ゼロサム思考につながる可能性があります。競争と勝つことを真剣に捉えていますが、物理的な暴力の語彙を使って物事を説明する必要はありません。同様に、「ロックスター」や「バッドアス」などの非協調的かつ攻撃的な用語は人々の間に壁を作ります。[Unixプロセスのkill](https://shapeshed.com/unix-kill/#how-to-kill-a-process)などの業界標準の用語は、より効率的であるため使用することは許容されます。レプリケーションメカニズムについては「master-slave」の代わりに「primary-secondary」を使用してください。
-1. 上に不満を伝え、下に説明してください。聞いた懸念をマネージャーに伝えてください。ピアや報告者が不満を言う場合は、決定がなされた理由を説明してください。理由がわからない場合は、マネージャーに尋ねてください。
-1. チームにネガティブな影響を与える他のリーダーからの決定への共感を、その背景にある理由を説明することで生み出してください。チームと他のリーダーとの録音されたAMAセッションを企画し、未回答の質問があれば尋ねるよう（自分もそうするように）チームを奨励してください。ディスカッションが[組織全体にとって最善なこと](/handbook/values/#cross-functional-optimization)を露わにするよう率先して例を示してください。自分が組織の残りからチームを守るように提示しないでください。これにより[包囲メンタリティ](https://en.wikipedia.org/wiki/Siege_mentality)が生まれ、[コラボレーション](/handbook/values/#collaboration)が妨げられます。
-1. [非同期コミュニケーション](/handbook/company/culture/all-remote/)を奨励し、[ハンドブックファースト](/handbook/about/handbook-usage/#why-handbook-first)であり、音声や[ビデオ品質](https://about.gitlab.com/blog/2019/08/05/tips-for-mastering-video-calls/)の劣化を伝え、オープンマイクを指摘することで、チームメンバーが良い[リモートワークの慣行](/handbook/company/culture/all-remote/)を確立するようにコーチしてください。
-1. GitLabのポリシーが遵守されることを確保することはマネージャーの責任の重要な部分です。マネージャーはチームメンバーとビジネスの両方の最善の利益を守る義務があります。マネージャーがチームメンバーがGitLabポリシー（[GitLab Business Conduct and Ethics Code](https://ir.gitlab.com/governance/governance-documents/default.aspx)や[移転ポリシー](/handbook/people-group/relocation/)などを含むがこれに限定されない）に違反していることを知った場合、[aligned People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments)や法務チームに即座に伝える責任があります。
+1. チームメンバーが包摂されていると感じ、価値を認められていると感じるようにすることは、マネージャーの最も重要なタスクの 1 つです。チームメンバーと心理的安全性をプロアクティブに作り出し、多様な視点が聞かれ、誰もが本物の創造的なコミュニケーションと貢献ができるようにします。
+1. チームメンバーが自分の役割で何を期待されているかを理解するようにすることは、マネージャーが会社の成功を確実にするために果たす重要な役割です。マネージャーは、Job Family に具体的な [パフォーマンス指標](/handbook/hiring/job-description-library/#why-job-descriptions-have-performance-indicators) を含み、それが各チームメンバーに明確に伝達されるようにすべきです。
+1. [パフォーマンス不足の管理](/handbook/leadership/underperformance) もマネージャーの重要なタスクです。
+1. 時が良いときは、節度の声であれ。時が悪いときは、希望の声であれ。希望の声を効果的に務めるには、マネージャーが会社のミッション、目標、リーダーシップの意思決定を理解しているようにしてください。マネージャーがリーダーシップの意思決定に懸念を持つ場合、コンテキストを理解するためにリーダーにそれを声に出し、健全な意思決定ができるようチームメンバーからの重要な洞察を共有し、その後チームメンバーにコンテキストを説明できるようにすべきです。
+1. 効果的な組織を維持するために、マネージャーのスパンオブコントロールは約 7 人（4 人から 10 人の範囲）であるべきです。この範囲を下回ると、組織レイヤーを追加することの非効率性が、特化したグループを持つことの利益を上回ります。この範囲を上回ると、マネージャーは適切な 1:1 をする時間がなくなります。
+1. スパンオブコントロールは組織のすべてのレベルで同じです。これにより、組織がコストを増やし意思決定速度を下げる追加レイヤーを持つことを防ぎます。扱える報告者数を増やすには、マネージャーになりうる [directly responsible individual](/handbook/people-group/directly-responsible-individuals/) への委譲を増やします。レポート数は、今から 6 か月後に組織がどこにあると予想するかに基づいてサイズ感を決めます。
+1. 誰かを褒めるときは、[公開の場で、聴衆の前で](/handbook/communication/#say-thanks) 行うようにしてください。改善を提案するときは、プライベートに [1 on 1](/handbook/leadership/1-1/) で行ってください。[Harvard の研究](https://hbr.org/2013/03/the-ideal-praise-to-criticism) によると、ハイパフォーマンスチームに対するポジティブ・ネガティブフィードバックの理想比率はほぼ 6:1 です。ポジティブフィードバックは惜しまず与えてください。
+1. チームミーティング、グループ会話、その他のコミュニケーションで、あなたの意見に建設的に挑戦し、難しい質問をしてくれる人に感謝を表してください。これは心理的安全性を作り出し、私たちのバリューを促進し、[5 つの機能不全](/handbook/values/#five-dysfunctions) を防ぐのに役立ちます。
+1. 同じゴールにたどり着く方法は複数あることを理解してください。異なる視点があり、議論が必要です。
+1. 誰かが辞めることを検討していると言ったら、すべてを置いて彼らの話を聞いてください。彼らの懸念を見つけ出すために質問してください。遅らせると、その人は価値を認められていると感じず、決定は不可逆になります。
+1. 新しいチームメンバーの参加を発表するのに加えて、退職も `#team-member-updates` チャットチャンネルでアナウンスされます（ただし Google/Slack アカウントが取り消された後にのみ。詳細は [オフボーディングページ](/handbook/people-group/offboarding/) と [オフボーディングチェックリスト](https://gitlab.com/gitlab-com/people-group/employment-templates/-/blob/main/.gitlab/issue_templates/offboarding.md) を参照）。当該個人のプライバシーを尊重しなければなりません。誰かが辞めた、もしくは辞めようとしている理由を尋ねられた場合、共有可能・不可能な内容を記述したハンドブックの [一般的なガイドライン](/handbook/communication/confidentiality-levels/#not-public) セクションを参照するように案内してください。
+1. 昇給や肩書は、本人が頼んだからや辞めると脅したから与えるべきではありません。私たちは、頼まれなくともプロアクティブに昇給と昇進を行うべきです。頼まれたときにそれを行うと、頼まない人に対して不公平となり、結果として頼んでくる人がはるかに増えることになります。
+1. GitLab を [家族のように](https://hbr.org/2014/06/your-company-is-not-a-family) 言及しないでください。私たちのチームが緊密なグループのように感じるのは素晴らしいことであり、それはより強いチームを築くので奨励すべきです。しかし、*家族* と *チーム* は異なります。*家族* は関係のために集まり、それを維持するために重要なことを行います。*チーム* は task のために集まり、完了に必要なことを行います。task より関係を優先しないでください。さらに、家族には [オフボーディングプロセス](/handbook/people-group/offboarding/) はありません。家族には無条件の愛があるべきですが、チームには条件付きの愛があります。[最高の会社は家族の支援者です。](https://twitter.com/myriadwill/status/917772249624702976)。チームが家族だという考えは、不当なプレッシャーにつながりかねません: ["このオフィスは家族のようで、休日に来るべきだという漠然とした圧力がある"](https://twitter.com/emilieschario/status/1182454709925416961)。あなたは自分のキャリアの CEO であり、GitLab を顧客として扱ってください。
+1. 報告者の仕事を会社の他の人に対して褒めてクレジットを与え、決して自分のものとして提示しないでください。これと多くの素晴らしい教訓は、読む価値のある [Ask MetaFilter スレッド](https://ask.metafilter.com/300002/My-best-manager-did-this) で見つけられます。
+1. 自身の [認知バイアス](https://betterhumans.pub/cognitive-bias-cheat-sheet-55a472476b18) を意識するようにしてください。
+1. [一貫性と俊敏性](https://hbr.org/2017/01/the-best-strategic-leaders-balance-agility-and-consistency) を組み合わせてください。
+1. チームに対する期待や働き方を文書化した README ファイルを維持することを検討してください。MR を奨励してください。
+1. 私たちのタイムスケールは短いものの、[PIP の考え方](https://mfbt.ca/how-i-talk-to-leaders-about-firing-people-8149dfcb035b) について素晴らしい記事があります。
+1. 人々のブロックを解消するためにあらゆることをしてください。生産性を妨げている質問がある場合、自分でその質問に答えるか、答えられる人を見つけてください。
+1. あたかも言葉が広く共有されるかのように（たとえば新聞に掲載されるかのように）、[プロフェッショナルな方法で](/handbook/company/culture/all-remote/) コミュニケーションしてください。
+1. 重要な決定を放送するために [マルチモーダルコミュニケーション](/handbook/communication/#multimodal-communication) を採用してください。
+1. ソーシャルメディアで [返信することが期待されます](/handbook/marketing/team-member-social-media-policy/)。質問があれば、`#social_media` チャットチャンネルで相談してください。
+1. 報告者が自分の仕事において [進捗の感覚](https://tomtunguz.com/progress-principle/) を持てるようにしてください。
+1. [Sam Altman のツイート](https://twitter.com/sama/status/804138512878473220) と [Paul Graham の返信](https://twitter.com/paulg/status/804209365305659392) の組み合わせがそれを最もよく表現しています: "People either get shit done or they don't. And it's easy to be tricked because they can be smart but never actually do anything." 質問への明確な答えではなく、結果を見てください。さもないと、パフォーマンス不足者を特定するのに時間をかけすぎることになります。
+1. [GitLab Contribute](/handbook/company/culture/summit/)（以前の GitLab summits）は、会社全体での [インフォーマルコミュニケーション](/handbook/company/culture/all-remote/informal-communication/) と [絆作り](/handbook/company/culture/all-remote/) のためのものです。GitLab Contribute 中のビジネス活動の時間は限られているため、すべての定期ミーティングはそれ以外で行うべきです。インフォーマルでクロスチーム、オープンエンドで、個人貢献者を含むミーティングを望みます。たとえば、GitLab に現在欠けている機能を全員に提案してもらうなどです。
+1. GitLab Contribute まで意思決定を遅らせないでください。代わりに、それ以前に物事を完了させるためのデッドラインとして使ってください。
+1. GitLab には明示的な 20% タイムはありません。[活動ではなくインパクト](/handbook/values/#measure-impact-not-activity) を測定します。割り当てられた仕事で良い結果を出している人は、自由に会社の他の部分に貢献したり、ペットプロジェクトに取り組んだりできます。「あなたのペットプロジェクトはあなたのパフォーマンスを損なっています」と言わないでください。代わりに、「X を完了することに合意したが、遅れている。何が起きたのか、どう手伝えるか？」と言ってください。
+1. 何か新しいものを launch する前に指標を選んでください。launch の 10 件のうち 9 件は失敗します。プロジェクトがうまくいっていない場合、完全に shut down してください。チームをヘッドカウントで飢えさせ、ゆっくり死ぬのに任せることは、節約でもモチベーションにもなりません。ブレークイーブンに何年もかかる勝者に資金を投入してください。
+1. 昇給を事前に話し合わないでください。サラリーカリキュレーターは、昇給額が決まる前に変更される可能性があるためです。
+1. 昇進、昇給、ボーナスについて、変更が承認プロセス全体を通過するまで話し合わないでください。People Ops は、マネージャーがチームメンバーに昇進と昇給を伝えてよいタイミングを知らせます。
+1. 報告者に方向性を指示するのではなく、納得のいく方向性に到達するまで [ソクラテス式問答法](https://en.wikipedia.org/wiki/Socratic_method) に従って質問をするのがベストです。報告者はより狭い領域でより深い知識を持つので、彼らは異なるデータに基づいているため、異なる結論を引き出すのが容易です。だからこそ質問が非常に重要です。
+1. [Berkshire の共通の指針](https://www.harrisonbarnes.com/the-psychology-of-human-misjudgment-by-charles-t-munger/) に従ってください: "Always tell us the bad news promptly. It is only the good news that can wait." 悪い知らせはできるだけ早くマネージャーに知らせてください。悪い知らせを迅速に報告することは、それから回復するために必要な信頼を保つために不可欠です。
+1. 軍事的なアナロジーやイメージを避けるようにしてください。私たちは軍隊ではなく、戦争中ではなく、戦闘はなく、誰も殺していなく、武器を持っていません。軍事用語は [包摂的でなく](https://www.london.edu/think/killing-the-competition)、ゼロサム思考につながる可能性があります。私たちは競争と勝利を非常に真剣に受け止めますが、物理的暴力の語彙で物事を記述する必要はありません。同様に、"rock star" や "badass" のような協調的でない攻撃的な用語は、人々の間に壁を作ります。業界で標準的な用語（たとえば [Unix プロセスを kill する](https://shapeshed.com/unix-kill/#how-to-kill-a-process)）であれば、より効率的なので使用しても問題ありません。レプリケーションメカニズムには「master-slave」ではなく「primary-secondary」を使ってください。
+1. 上には不満を、下には説明を。聞いた懸念をマネージャーに伝えてください。同僚や報告者が不満を言う場合、なぜ意思決定が行われたかを説明してください。理由がわからない場合は、マネージャーに尋ねてください。
+1. チームに悪影響を与える他のリーダーからの意思決定について、その背後にある理由を説明することで共感を作り出してください。チームと他のリーダーとの録画された AMA セッションを開催し、未回答の質問をするようチーム（および自分自身）を促してください。議論が [組織全体にとってベスト](/handbook/values/#cross-functional-optimization) なものを明らかにすることで手本を示してください。自分を組織の他の部分からチームを保護する者として決して提示しないでください。これは [シージメンタリティ](https://en.wikipedia.org/wiki/Siege_mentality) を作り出し、[コラボレーション](/handbook/values/#collaboration) を妨げます。
+1. [非同期コミュニケーション](/handbook/company/culture/all-remote/) を奨励し、[handbook-first](/handbook/about/handbook-usage/#why-handbook-first) であることを奨励し、貧弱なオーディオや [ビデオ品質](https://about.gitlab.com/blog/2019/08/05/tips-for-mastering-video-calls/) を伝え、開かれたマイクを指摘することによって、チームメンバーが良い [リモートワーキングプラクティス](/handbook/company/culture/all-remote/) を確立できるようコーチしてください。
+1. GitLab のポリシーが守られるようにすることは、マネージャーの責任の重要な部分です。マネージャーは、チームメンバーとビジネスの最善の利益の両方に配慮する義務があります。マネージャーが、チームメンバーが GitLab ポリシー（[GitLab Code of Business Conduct and Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx) や [Relocation policy](/handbook/people-group/relocation/) などを含むが、これらに限定されない）に違反していることを知った場合、これを [対応する People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments) または Legal チームにすぐに伝えるのは彼らの責任です。
 
-Slackチャンネル：`#managers`、`#people-managers-and-above`（プライベート）
+Slack チャンネル: `#managers`、`#people-managers-and-above`（プライベート）
 
-#### ボードメンバー
+#### 取締役会メンバー
 
-[ボードメンバー](/job-description-library/board-of-directors/board_member)はGitLabのボードで務め、ボードミーティングとボード委員会に参加し、その他の責任を担います。
+[取締役会メンバー](/job-description-library/board-of-directors/board_member) は GitLab の取締役会に従事し、取締役会会議や取締役会委員会、その他の責任に参加します。
 
-## CEOスキップ
+## CEO Skips
 
-E-Groupが「CEOスキップス」コールやミーティングを開催すると聞くことがあります。
-CEOスキップスグループはE-Groupに直接報告する人たちで構成されています。People Business Partner、Chief of Staff、内部コミュニケーションも含まれます。
-一部のIC、マネージャー、ディレクター、シニアリーダーで構成されています。
+E-Group が「CEO Skips」コールやミーティングを開催するという話を時折耳にすることがあります。
+CEO Skips グループは、E-group に直接報告する人々で構成されています。People Business Partner、Chief of Staff、internal communications も含まれます。
+一部の IC、一部のマネージャー、一部のディレクター、一部のシニアリーダーで構成されます。
 
-## 機能リーダー
+## Functional Leaders
 
-機能リーダーにはすべてのCEOスキップスと、E-Groupメンバーによって招待された少数の他のチームメンバーが含まれます。
+Functional Leaders には、すべての CEO Skips と、E-Group メンバーから招待されたごく少数の他のチームメンバーが含まれます。
 
-このグループは適切な場合にインプットを提供し、メッセージングを伝達するために呼ばれます。
+このグループは、適切な場合にインプットとメッセージングのコミュニケーションを支援するために呼び出されます。
 
-例えば、[機能リーダーはすべてのE-Groupオフサイトの後にミーティングを開催します](/handbook/company/offsite/#functional-leaders-meetings)。
+例として、[Functional Leaders は E-group のオフサイトごとに会議を開催します](/handbook/company/offsite/#functional-leaders-meetings)。
 
-Slackチャンネル：`#functional-leaders`（プライベート）
+Slack チャンネル: `#functional-leaders`（プライベート）
 
 ## Directs-Group
 
-Directs-Groupは各機能からのシニアリーダーで構成されるグループです。これらのリーダーはE-Groupの延長として機能し、6〜9ヶ月のローテーションで主要なイニシアチブを支援します。Chief of Staff to the CEOが、コホートのE-Groupスポンサーとの協力でこのグループの組織とオリエンテーションを担当します。
+Directs-Group は、各機能のシニアリーダーから成るグループです。これらのリーダーは E-Group の延長として運営し、6〜9 か月のローテーションで重要なイニシアチブを支援します。Office of the CEO は、コホートの E-Group スポンサーと協力して、このグループの組織化とオリエンテーションに責任を持ちます。
 
-### Directs-Groupプログラムの目的
+### Directs-Group プログラムの目的
 
-1. C-levelポテンシャルを持つリーダーを開発するために、E-Groupおよびその意思決定への露出を高める
-1. 主要なイニシアチブを推進・通知するためにより大きなグループの人々を引き込む
-1. チームと機能内のE-Groupからの情報のカスケードをサポートする。これには機能リーダーシップチームのピアへのカスケードが含まれます。
+1. E-Group と E-Group の意思決定により多くの露出を与え、C レベルの可能性を持つリーダーを育成する。
+1. 重要なイニシアチブを推進し、情報を提供するために、より大きなグループの人々を招集する。
+1. チームと機能内での E-Group からの情報のカスケードを支援する。これには、機能リーダーシップチームの同僚へのカスケードも含まれる。
 
-### Directs-Groupの責任
+### Directs-Group の責任
 
-1. E-Groupと[E-Groupオフサイト](/handbook/company/offsite/)での指定されたミーティングの一部に出席し、貢献する
-1. オンボーディング、オフボーディング、定期的にスケジュールされたDirects-Group同期、専門能力開発プログラム、次のコホートのランプアップに参加する
-1. Directs-Groupへの関与から生じるコミュニケーションカスケードとイニシアチブサポートをサポートする
-1. 既存の責任を管理しながらこのロールを務める
-1. コホートプロジェクトに貢献する
+1. E-Group との指定されたミーティングや [E-Group オフサイト](/handbook/company/offsite/) の一部に出席し、貢献する。
+1. オンボーディング、オフボーディング、定期的にスケジュールされる Directs-Group シンク、専門開発プログラム、次のコホートのランピングに参加する。
+1. Directs-Group での関与から生じるコミュニケーションカスケードとイニシアチブのサポート。
+1. 既存の責任を管理しながらこの役割に従事する。
+1. コホートプロジェクトに貢献する。
 
-### Directs-Group選考プロセス
+### Directs-Group の選考プロセス
 
-1. Chief of Staff to the CEOが十分な時間を確保するためにコホート終了日の3ヶ月前に選考プロセスを開始し、最初のE-Groupオフサイトの前にDirects-Groupの特定とオンボーディングを行い、1つのDirects-Groupから次へと適切に移行します。
-1. 各E-Groupメンバーが第1候補と第2候補を特定します。E-Groupは第1候補の選択の中でTMRG基準が満たされていない場合に議論します。
-1. 候補者は新しいコホートの開始の少なくとも45日前に特定され、通知されます。
-1. 候補者が指名を辞退した場合、機能リーダーは検討する新しい候補者を指名できます。
+1. Office of the CEO は、毎回のコホート終了日の 3 か月前に選考プロセスをキックオフし、最初の E-Group オフサイトの前に Directs-Group の特定とオンボーディングに十分な時間を確保し、Directs グループ間の適切な移行を行います。
+1. 各 E-Group メンバーが第 1 希望と第 2 希望の候補者を特定します。E-Group は、第 1 希望の候補者選定の中で TMRG 基準が満たされない場合に議論します。
+1. 候補者は、その役割を担う新コホートが始まる少なくとも 45 日前に特定され、通知されます。
+1. 候補者が指名を辞退する場合、機能リーダーは検討のため新しい候補者を指名できます。
 
-#### Directs-Group選考基準
+#### Directs-Group の選考基準
 
-各Directs-Groupコホートは以下の基準を満たす必要があります：
+各 Directs-Group コホートは以下の基準を満たす必要があります。
 
-1. 良い立場にある高成長で高パフォーマンスのチームメンバー
-1. E-Groupメンバーへの直属報告者であるDirector以上
-1. [CREDITバリュー](/handbook/values/)を一貫して示す人々
-1. 各コホートの1/3以上が[過小代表グループ](/handbook/company/culture/inclusion/#examples-of-select-underrepresented-groups)のメンバーで構成される必要がある
-1. 米国外を拠点とする人を含める
+1. 良好な状態にある成長性と高パフォーマンスのチームメンバー。
+1. E-Group メンバーへの直接の報告者である Director 以上。
+1. [CREDIT バリュー](/handbook/values/) を一貫して示す人々。
+1. 各コホートの 1/3 以上が、[未代表のグループ](/handbook/company/culture/inclusion/#examples-of-select-underrepresented-groups) のメンバーで構成される必要がある。
+1. 米国外を拠点とする人を 1 名含む。
 
-### Directs-Groupリーダーシップ
+### Directs-Group リーダーシップ
 
-Directs-Groupの指名プロセス中に、E-Groupがコホートをリードする人を指名します。理想的には経験を持つ前のコホートからの人物です。この人の責任は：
+Directs-Group の指名プロセスの間、E-Group はコホートをリードする人を指名します。理想的には、この人は前のコホート出身で経験を持っているのが望ましいです。この人の責任は以下の通りです。
 
-1. E-GroupとDirects-Groupの間で主要な成果物についての合意を得る
-1. グループが適切に機能することを確保する
-1. 入ってくるコホートの公式メンバーになる
-1. 入ってくるコホートのランプアップを支援する
-1. 入ってくるチームの活動と成果物を調整する
-1. E-Groupとのコホート代表を務める
-1. E-Groupスポンサーとの協力でグループが少なくとも1つのコホートプロジェクトで成功を達成することを確保する
+1. 主要な成果物について E-Group と Directs-Group の合意を取り付ける。
+1. グループが適切に機能するようにする。
+1. 新たに到着するコホートの公式メンバーであること。
+1. 新たに到着するコホートのランプアップを助ける。
+1. 新たに到着するチームの活動と成果物を調整する。
+1. E-Group に対するコホートの代表者として務める。
+1. E-Group スポンサーとの協力により、グループが少なくとも 1 つのコホートプロジェクトで成功を達成することを保証する。
 
-この人は以下に基づいて選ばれます：
+この人は以下を基準に選ばれます。
 
-1. クロスファンクショナルなリーダーシップチームをリードする実証された能力
-1. この追加の時間的コミットメントをする能力
+1. クロスファンクショナルなリーダーシップチームをリードする実証された能力。
+1. この追加の時間コミットメントを行える能力。
 
-### Directs-Groupのタイミング
+### Directs-Group のタイミング
 
-コホートはGitLabの会計カレンダーの2〜3四半期に合わせた6〜9ヶ月にわたります。具体的な開始日はE-Groupオフサイトに合わせてタイミングが設定されます。
+コホートは GitLab の会計年度の 2〜3 四半期に合致する 6〜9 か月にわたって進みます。具体的な開始日は E-Group オフサイトに合わせて定められます。
 
-### Directs-GroupのE-Groupスポンサー
+### Directs-Group のための E-Group スポンサー
 
-各コホートにはコホート期間中のE-Groupスポンサーがいます。この人はDirects-Groupのミーティングに参加し、より広いE-Groupへの正式なリンクとして機能します。この人はDirects-Groupリーダーの安定したカウンターパートになります。E-Groupスポンサーとのコホートリーダーは異なる機能から来ます。スポンサーはまた、Directs-Groupがコホートとして貢献できる少なくとも1つの領域を特定するのを助けます。Directs-Groupミーティングでは、スポンサーがイニシアチブの状況を確認しフィードバックを提供します。
+各コホートには、コホートの期間中の E-Group スポンサーがいます。この人は Directs-Group ミーティングに出席し、より広い E-Group との公式リンクとして務めます。この人は Directs-Group リーダーに対する安定したカウンターパートになります。E-Group スポンサーと Directs-Group リーダーは異なる機能から来ます。スポンサーはまた、Directs-Group がコホートとして貢献できる少なくとも 1 つの領域を特定するのを支援します。Directs-Group ミーティングの間、スポンサーはイニシアチブのステータスをチェックし、フィードバックを提供します。
 
-### Directs-Group参加者
+### Directs-Group の参加者
 
-過去、現在、将来のDirects-Group参加者はここにリストされます。
+過去、現在、未来の Directs-Group 参加者はここに列挙されます。
 
-| 期間 | Directs-Groupコホートメンバー |
+| 期間 | Directs-Group コホートメンバー |
 |-------------|--------------------------------|
-| 2022-01 to 2022-10 | Urja Patel、Matt Taylor、Rob Allen、Melissa Smolenksy、Christopher Lefelhocz、Kenny Johnston、Justin Farris |
-| 2022-11 to 2023-08 | Jim Gladen、Pattie Egan、Dave Steer、Hillary Benson、Eliran Mesika（コホートリード）、Stan Hu、Christie Lenneville、Ryan O'Nell、Joaquin Fuentes、Sid Sijbrandij（E-Groupスポンサー） |
+| 2022-01 から 2022-10 | Urja Patel, Matt Taylor, Rob Allen, Melissa Smolenksy, Christopher Lefelhocz, Kenny Johnston, Justin Farris |
+| 2022-11 から 2023-08 | Jim Gladen, Pattie Egan, Dave Steer, Hillary Benson, Eliran Mesika（コホートリード）, Stan Hu, Christie Lenneville, Ryan O'Nell, Joaquin Fuentes, Sid Sijbrandij（E-Group スポンサー） |
 
 ### コホートプロジェクト
 
-各Directs-Groupには少なくとも1つのコホートプロジェクトがあります。コホートプロジェクトは何らかの形でGitLabを改善するように設計されたクロスファンクショナルなイニシアチブであるべきです。少なくとも1つのコホートプロジェクトはコホートの最初の1ヶ月以内に特定されるべきです。選択にはDirects-GroupとE-Groupスポンサーが関与するべきです。コホートは次のコホートのためのプロジェクトアイデアを推薦できます。
+各 Directs-Group には少なくとも 1 つのコホートプロジェクトがあります。コホートプロジェクトは、GitLab を何らかの形で改善するために設計されたクロスファンクショナルなイニシアチブであるべきです。コホートの最初の月内に少なくとも 1 つのコホートプロジェクトを特定すべきです。選定には Directs-Group と E-Group スポンサーが関与すべきです。コホートは、新たに到着するコホート向けにプロジェクトのアイデアを推奨できます。
 
-コホートプロジェクト：
+コホートプロジェクト:
 
-1. **2022-01 to 2022-10**：[Stop Initiative](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/109602/diffs)、内部ハンドブックの更新
-1. **2022-11 to 2023-08**：戦略計画の更新
+1. **2022-01 から 2022-10**: [Stop イニシアチブ](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/109602/diffs)、Internal Handbook 更新
+1. **2022-11 から 2023-08**: 戦略計画のリフレッシュ
 
-## VP-Directsグループ
+## VP-Directs グループ
 
-VP-Directsグループは主にVP-Directs、E-Groupのメンバーに直接報告するVPで構成されています。これは、重要なコミュニケーションのカスケードを支援し、変更管理をサポートし、ミッションとビジョンが組織のすべてのレベルで徹底的に理解されるようにし、最優先のクロスファンクショナル活動をサポートし、会社のセンチメントと関与度の指標として機能できるシニアリーダーの上位グループです。機能に0〜2人のVP-Directsがいる場合、E-Groupメンバーはその機能を代表するのに役立つ追加の1〜2人を機能内から指名することがあります。
+VP-Directs グループは、主に VP-Directs（E-Group メンバーに直接報告する VP）で構成されます。これは、重要なコミュニケーションのカスケード、変革管理の支援、ミッション＆ビジョンが組織のすべてのレベルで徹底的に理解され続けるようにすること、最優先のクロスファンクショナル活動の支援、会社のセンチメントとエンゲージメントのゲージとして機能できるシニアリーダーのグループです。ある機能に VP-Directs が 0〜2 人しかいない場合、E-Group メンバーは機能を代表するために機能内から追加の 1 名または 2 名を指名できます。
 
-### VP-Directsグループの目的
+### VP-Directs グループの目的
 
-月次ミーティングとSlackチャンネルを通じて、このグループは以下に関与します：
+毎月のミーティングと Slack チャンネルを通じて、このグループは以下に従事します。
 
-1. **情報のカスケード：** E-Groupが組織が吸収・理解する必要がある特定のメッセージを持っており、シニアリーダーがメッセージを伝達するのを助けることができます。これは特定のIssueや課題に対して重大な変更管理が必要な場合や、E-Groupが広範なリーダーシップサポートを必要とする場合に特に重要です。このグループにはそれを吸収し、組織を通じて変化を推進するよう求めます。
-1. **情報の提供と視点の共有：** このグループは決定が行われるか行動が取られる際のシニアなサウンドボードになることができます。例えば、このグループはE-GroupがStrategicな組織的転換が必要だと特定し、より広いシニアレベルのインプットが必要な場合に関与します。
-1. **クロスファンクショナルなイニシアチブのリーダーシップを提供する：** E-Groupはこのグループに特定のクロスファンクショナルなイニシアチブを引き受けるよう求めることがあります。例えば、このグループはEmployee Engagement Surveyからのフィードバックへの対応（すべての機能リーダーと共に）や戦略的計画活動のサポートに役割を果たすことができます。
-1. **顧客から話を聞く：** 顧客をこのグループに招待して話してもらい、リーダーシップグループとしてGitLabとその課題と機会についての視点を理解し、組織全体での顧客中心性を推進し続けます。
+1. **情報のカスケード:** E-Group が組織に吸収・理解してほしい具体的なメッセージがあり、シニアリーダーがそのメッセージを伝えるのに役立てます。これは、特定の課題や挑戦に対して重い変革管理が必要となるときや、E-Group が広範なリーダーシップサポートを必要とするときに特に重要です。このグループにそれを吸収し、組織を通じて変革を推進してもらいます。
+1. **情報とパースペクティブの提供:** このグループは、意思決定や行動が取られている際にシニアな意見の交わる場として機能できます。たとえば、E-Group が戦略的な組織のピボットの必要性を特定し、より広範なシニアレベルのインプットが必要な場合、このグループに従事させることができます。
+1. **クロスファンクショナルなイニシアチブのリーダーシップを提供:** E-Group はこのグループに特定のクロスファンクショナルなイニシアチブを引き受けるよう依頼することがあります。たとえば、このグループは Employee Engagement Survey からのフィードバックへの対応（すべての機能リーダーと並んで）や戦略計画活動をサポートする役割を果たすことができます。
+1. **顧客から学ぶ:** 顧客をこのグループに招待して話してもらうことで、リーダーシップグループとして GitLab と私たちの課題と機会に対する顧客の視点を理解し、組織全体に顧客中心性を推進し続けます。
 
-### VP-Directsグループのコミットメント
+### VP-Directs グループのコミットメント
 
-1. 可能な場合は同期で（適切であれば録画されたミーティングで）月次ミーティングに参加する
-1. Slackチャンネルを監視する
-1. 提案と計画についてインプットを共有する
-1. グループの有効性を議論すべきことや改善方法についてのアイデアをプログラムマネージャーに共有する
+1. 月次ミーティングに参加（可能な場合は同期的に。適切な場合は録画ミーティング）
+1. Slack チャンネルをモニター
+1. プロポーザルと計画に対するインプットを共有
+1. 議論すべき内容やグループの効果性を改善する方法のアイデアがあれば、プログラムマネージャーに連絡
 
-### VP-Directsグループ管理
+### VP-Directs グループの管理
 
-初期管理には以下が含まれます：
+初期管理には以下が含まれます。
 
-1. ローテーティングE-Groupスポンサー：E-Groupの正式な代表
-1. Chief of Staff to the CEO：E-Groupのインターロックを所有し、スポンサーとパートナー
-1. VP of Talent and Engagement：チームエンゲージメントを所有し、VP of Global Communicationsと内部コミュニケーションをパートナー。VP of Global Communicationsは必要に応じてより広いコミュニケーションを所有します。
-この初期管理チームは、グループを立ち上げ、厳密さとルーティンを確立する責任があります。このモデルをより良く理解するにつれてイテレーションできます。
-管理チームは：
-1. EBAチームと調整して、招待シリーズが送られ確立されることを確保する
-1. 適切なアクションが記録されフォローアップされることを確保し、必要な場合に説明責任を持つ
-1. E-Groupとフレームワークグループの間の交差点として機能し、ミーティングが明確な目的を持ち、情報が効果的に共有され、グループ目標が達成されることを確保する
+1. ローテーションの E-Group スポンサー: 公式の E-Group 代表者
+1. CEO の Chief of Staff: E-Group インターロックを所有、スポンサーとパートナーする
+1. VP of Talent and Engagement: チームエンゲージメントを所有し、内部コミュニケーションの VP of Global communications とパートナーする。VP of Global communications は、必要に応じて広範なコミュニケーションを所有する。
+この初期管理チームは、グループを軌道に乗せ、規律とルーティンを確立し始めることに責任を持ちます。これをよりよく理解するにつれて、このモデルからイテレーションできます。
+管理チームは以下を行います。
+1. EBA チームと調整して、招待シリーズが送られ、確立されるようにする。
+1. 適切なアクションが記録され、フォローアップされ、必要に応じて説明責任を持つようにする。
+1. ミーティングが明確な目的を持ち、情報が効果的に共有され、グループの目標が満たされるよう、E-Group と VP Group の交差点として務める。
 
 ## 組織構造
 
-- **部門（Division）：** 1人のエグゼクティブの下の領域。*例：* エンジニアリング部門
-- **部署（Department）：** DirectorまたはVPが率い、複数のチームまたはサブ部署を含む *例：* エンジニアリング部門内のインフラストラクチャー部署
-- **サブ部署（Sub-department）：** DirectorまたはSenior Managerが率い、複数のチームを含む *例：* Development部署内のEnablement Sub-department
-- **コンパートメント（Compartment）：** Sub-department構造がすでに使用されている場合にSenior Managerが率いる複数のチームを含む *例：* Dev Sub-department内のManage Compartment
-- **チーム（Team）：** 部署を構成し、ラインマネージャーとその直属報告者で構成される *例：* セキュリティ部署内のセキュリティオペレーションチーム
+- **ディビジョン:** 1 人のエグゼクティブの下の領域。*例:* Engineering ディビジョン。
+- **部門:** Director または VP によってリードされ、複数のチームまたはサブ部門で構成される。*例:* Engineering ディビジョン内の Infrastructure 部門
+- **サブ部門:** Director または Senior Manager によってリードされ、複数のチームで構成される。*例:* Development 部門内の Enablement サブ部門
+- **コンパートメント:** Senior Manager によってリードされ、サブ部門構造がすでに使われている場合の複数のチームで構成される。*例:* Dev サブ部門内の Manage コンパートメント
+- **チーム:** 部門を構成し、ラインマネージャーとその直接の報告者で構成される。*例:* Security 部門内の Security operations チーム
 
-**注意** - EngineeringとProduct部門内では、安定したカウンターパートを組織構造で維持するために組織構造と[製品階層](/handbook/product/categories/#hierarchy)の間の密接な関係を維持しようとします。
+**注** - Engineering と Product ディビジョン内では、組織構造内で安定したカウンターパートを維持するため、組織構造と [プロダクト階層](/handbook/product/categories/#hierarchy) との密接な関係を維持するよう努めています。
 
-Financeも財務計画目的で「部署」という概念を持っています。ただし、これらは私たちの組織上の部署とは一致しません。例えば、financeの部署「プロダクト開発」はPMとEngineeringの両方の機能を包含していますが、Supportの部署は除外されています。この名称の衝突は将来的に解決すべきです。さらなる参照については、会計目的の[部署ロールアップ構造](/handbook/finance/financial-planning-and-analysis/)を参照してください。
+Finance も財務計画目的のために「部門」という概念を持っています。しかし、これらは私たちの組織部門と整合しません。たとえば、Finance 部門の「product development」は PM と Engineering の両方の機能をまとめます。しかし、Engineering 機能の一部ではあるが別の予算である Support 部門は除外されます。この名前の衝突は、おそらく将来解決すべきです。さらなる参照については、会計目的の [部門集計構造](/handbook/finance/financial-planning-and-analysis/) を参照してください。
 
-ハンドブックとドキュメントを最新の状態に保つよう最善を尽くしていますが、過去に使用された特定の用語は時間の経過とともに更新されています。**機能グループ（Functional Group）**という用語はもはや使用されておらず、現在は**部署（Department）**という用語に包含されています。**機能グループリーダー（Functional Group leader）**という用語はもはや使用されておらず、現在は[E-group](#e-group)リーダーという用語に包含されています。
+ハンドブックとドキュメントを最新に保つよう最善を尽くしていますが、過去に使われた特定の用語は時を経て更新されてきました。**Functional Group** という用語はもう使われておらず、現在は **Departments** という用語に包含されています。**Functional Group leader** という用語はもう使われておらず、現在は [E-group](#e-group) リーダーという用語に包含されています。
 
-### アウトプット別の組織化
+### Output（成果）による組織化
 
-多くの意味で、私たちはアウトプット別に組織化されています。
-このようにして、責任が重複しないことを確認できます。
-また、すべての部門が明確な優先順位を持つことを確認します。
+多くの点で、私たちは Output によって組織化されています。
+これにより、責任が重複しないことを保証できます。
+また、すべてのディビジョンが明確な優先事項を持つことを保証します。
 
-| 部門 | アウトプット |
+| ディビジョン | Output |
 |-------------|--------------------------------|
-| マーケティング | パイプラインを生成 |
-| セールス | パイプラインをクローズ |
-| プロダクト | 開発の優先順位付け |
-| エンジニアリング | 開発を実行 |
-| ピープル | 人々をイネーブル |
-| ファイナンス | 正確性を確保 |
-| リーガル | コンプライアンスを確保 |
-| セキュリティ | 信頼を実現 |
+| Marketing | パイプライン創出 |
+| Sales | パイプラインのクローズ |
+| Product | 開発の優先順位付け |
+| Engineering | 開発の実行 |
+| People | 人々を支援する |
+| Finance | 正確性を保証する |
+| Legal | コンプライアンスを保証する |
+| Security | 信頼を可能にする |
 
-### 製品グループ {#product-groups}
+### Product Groups{#product-groups}
 
-私たちのエンジニアリング組織は[製品カテゴリ階層](/handbook/product/categories/#hierarchy)で定義されたグループに直接整合しています。
-私たちのグループは複数の機能からの[安定したカウンターパート](/handbook/leadership/#stable-counterparts)の原則で運営されています。
+私たちのエンジニアリング組織は、[プロダクトカテゴリ階層](/handbook/product/categories/#hierarchy) で定義されているグループに直接整合しています。
+私たちのグループは、複数の機能からの [安定したカウンターパート](/handbook/leadership/#stable-counterparts) の原則で運営されます。
 
-例えば、「Package」と呼ばれるグループに全員が専念するプロダクトマネージャー、プロダクトマーケティングマネージャー、エンジニアリングマネージャー、コンテンツマーケター、バックエンド開発者、フロントエンド開発者、プロダクトデザイナーがいます。これらの個人が集合的に「Packageグループ」を形成します。「Package」という言葉が専門性として彼らのタイトルに現れ、場合によってはチーム名にも現れます。
+たとえば、Product Manager、Product Marketing Manager、Engineering Manager、Content Marketer、Backend Developer、Frontend Developer、Product Designer が、「Package」と呼ばれるグループに専属しています。これらの個人はまとめて「Package グループ」を構成します。「Package」という言葉は、彼らの肩書の中で専門分野として現れ、場合によってはチーム名にも入っています。
 
-これらの製品グループへの安定したカウンターパートの種類を区別するために：
+私たちは、Product Groups の安定したカウンターパートをいくつかのタイプに区別します。
 
-- プライマリ安定カウンターパート - Product、Development、Product Designからの製品階層（通常はグループ）に割り当てられたチームメンバー。
-- 完全安定カウンターパート - プライマリ機能以外の機能から製品階層に割り当てられたすべてのチームメンバーで、[製品カテゴリページ](/handbook/product/categories/)で定義されています。例えば、Support、プロダクトマーケティング、カスタマーサクセスからの安定したカウンターパートは、すべて完全安定カウンターパートの一部と見なされます。
+- Primary Stable Counterparts - Product、Development、Product Design からプロダクト階層（通常はグループ）に割り当てられたチームメンバー。
+- Complete Stable Counterparts - Primary 機能以外の機能からプロダクト階層に割り当てられた、私たちの [プロダクトカテゴリページ](/handbook/product/categories/) で定義されているすべてのチームメンバー。たとえば、Support、Product Marketing、Customer Success から安定したカウンターパートを割り当て、彼らはすべて complete stable counterparts の一部とみなされます。
 
-グループには報告ラインがありません。なぜなら[マトリクス組織を望まない](/handbook/leadership/#no-matrix-organization)からです。
-代わりに、安定したカウンターパートに依存してグループがうまく機能するようにします。
-デザイン、テクニカルライティング、品質などの共有機能では、安定したカウンターパートが存在するように個人が1つ以上のステージにペアリングされます。
+グループにはレポートラインがありません。それは [マトリックス組織を望まないからです](/handbook/leadership/#no-matrix-organization)。
+代わりに、グループが適切に機能するために安定したカウンターパートに頼ります。
+デザイン、テクニカルライティング、品質のような共有機能では、安定したカウンターパートとなるよう個人は 1 つ以上のステージとペアになります。
 
-誰もが貢献できますが、グループのスコープは重複しておらず、他のグループがユーザーに価値を提供するための必須の依存関係であるべきではありません。
-これにより[成果](/handbook/values/#results)、[イテレーション](/handbook/values/#iteration)、[効率性](/handbook/values/#efficiency)が促進されます。
+すべての人が貢献できるとはいえ、グループのスコープは重複せず、他のグループがユーザーに価値を届けるために必要な依存関係にならないべきです。
+これは [結果](/handbook/values/#results)、[イテレーション](/handbook/values/#iteration)、[効率性](/handbook/values/#efficiency) を促進します。
 
-内部プラットフォームグループ（内部APIセットのような非ユーザー向けの製品部分に焦点を当てたもの）は、プラットフォームの改善に依存してユーザーに価値ある機能を提供する他のグループに[重大な調整コストを生み出す](https://anthonysciamanna.com/2017/03/05/remove-cross-team-dependencies.html)傾向があります。効率を維持するために、各グループが非ブロッキングであり、ユーザーに直接価値を提供できることを確保することが重要です。これが内部プラットフォームグループを避ける理由です。
+内部プラットフォームグループ（プロダクトのユーザー向けでない部分、たとえば内部 API セットに焦点を当てるもの）は、プラットフォームの改善に依存する他のグループに対して [重い調整コストを生み出す傾向](https://anthonysciamanna.com/2017/03/05/remove-cross-team-dependencies.html) があります。効率性を保つために、各グループがノンブロッキングで、直接ユーザーに価値を届けられるようにすることが重要です。これが、私たちが内部プラットフォームグループを避ける理由です。
 
-グループが複数のグループにわたって共有されているスコープ定義を持たないことも重要です。以下に2つの例を示します：
+また、グループが複数のグループにまたがって共有されるスコープ定義を持たないようにすることも重要です。2 つの例を挙げます。
 
 1. 国際化グループはありません。
-   その責任は多くのグループにわたって共有されています。
-   代わりに国際化ツールグループがあるかもしれません。
+   その責任は多くのグループに分散されています。
+   代わりに、国際化ツールグループを持つかもしれません。
 1. パフォーマンスグループはありません。
-   GitLabのパフォーマンスを確保することはすべてのグループの責任です。
-   代わりにパフォーマンスツールグループがあるかもしれません。
+   GitLab がパフォーマントであることを保証するのは、すべてのグループの責任です。
+   代わりに、パフォーマンスツールグループを持つかもしれません。
 
-[アプリケーションパフォーマンスグループ](/handbook/product/categories/#application-performance-group)と[データベースグループ](/handbook/product/categories/#database-group)があり、これらのチャーターには他のチームへのコンサルティングとフレームワーク提供が含まれていますが、非ブロッキングと見なされます。
+[Application Performance グループ](/handbook/product/categories/#application-performance-group) と [Database グループ](/handbook/product/categories/#database-group) がありますが、これらの憲章は他のチームのコンサルティングとフレームワークの提供を含み、ノンブロッキングとみなされます。
 
-[アプリケーションパフォーマンスグループ](/handbook/product/categories/#application-performance-group)は、システムのパフォーマンスボトルネックの特定、機能のパフォーマンスの理解と改善において他のグループを支援するためのドキュメントとツールの作成に焦点を当てています。
+[Application Performance グループ](/handbook/product/categories/#application-performance-group) は、システム的なパフォーマンスボトルネックの特定、ドキュメント作成、他のグループが機能のパフォーマンスを理解し改善するのを支援するツールに焦点を当てています。
 
-[データベースグループ](/handbook/product/categories/#database-group)はデータベース管理/スケーリングの特定の側面に焦点を当て、データベース開発のガイダンスを必要とする開発チームにコンサルティングを提供します。データベース関連のMRにはまだデータベースメンテナーの承認が必要ですが、[データベースレビュー](https://docs.gitlab.com/ee/development/database_review.html)プロセスはデータベースチームのメンバーだけを超えて必然的にスケールアップしています。
+[Database グループ](/handbook/product/categories/#database-group) は、データベース管理/スケーリングの細部に焦点を当て、データベース開発ガイダンスを必要とする開発チームのためのコンサルティングを提供することに焦点を当てています。データベース関連のマージリクエストは引き続きデータベースメンテナの承認を必要としますが、私たちの [database review](https://docs.gitlab.com/ee/development/database_review.html) プロセスは、データベースチームのメンバーだけを超えて必然的にスケールしています。
 
-#### 製品グループヘルスアセスメント
+#### Product Group ヘルスアセスメント
 
-製品ロードマップを実行する能力は製品グループのヘルスに依存します。直感、強権的なパーソナリティ、または他のアドホックな方法に頼るのではなく、高パフォーマンスチームを開発するための[Drexler-Sibbetモデル](https://www.kaizenko.com/drexler-sibbet-team-performance-model/)などのフレームワークがあります。さらに、チームヘルスは測定でき、改善を体系的に行うことができます。例えば、[Spotifyヘルスチェックモデル](https://engineering.atspotify.com/2014/09/squad-health-check-model/)は、チーム内で改善できることを視覚化する軽量な方法です。
+プロダクトロードマップを実行する能力は、Product Group の健全性に依存します。直感、強引な個性、その他のアドホックな方法に頼るのではなく、ハイパフォーマンスチームを開発するためのフレームワーク（[Drexler-Sibbet モデル](https://www.kaizenko.com/drexler-sibbet-team-performance-model/) など）が存在します。さらに、チームの健全性は測定でき、改善は体系的に行えます。たとえば、[Spotify Health Check モデル](https://engineering.atspotify.com/2014/09/squad-health-check-model/) は、チーム内で改善できることを可視化する軽量な方法です。
 
-製品グループヘルスアセスメントの目標は、グループが改善エリアを特定できるようにすることです。グループの相対的な「成熟度」を評価するために使用すると、グループができる限り良く見えるように結果を積み上げる歪んだインセンティブが生まれます。そのため、ヘルスアセスメントはマネジメントが製品グループを互いに比較対照するために使用**すべきではありません**。代わりに、製品グループのリーダーが評価を管理し、時間をかけて改善を重ねるDRIです。
+Product Group ヘルスアセスメントの目標は、グループが改善領域を特定できるようにすることです。それらをグループの相対的な「成熟度」を評価するために使用すると、グループが結果をできるだけ良く見せるよう積み上げるという倒錯したインセンティブが生まれます。その結果、ヘルスアセスメントはマネジメントが Product Group 間で比較対照するために使用されるべき**ではありません**。代わりに、Product Group のリーダーが、アセスメントを管理し、時間とともに改善をイテレーションする DRI となります。
 
-始めるには、[チームヘルスサーベイテンプレート](https://docs.google.com/forms/d/1KkvUAfdaQBYDd_dey1ZtzyArIhBtmSj-Y_XwMXSJwPk/edit)のコピーを作成し、開発グループのニーズに合わせて編集してください。
+開始するには、自由に [Team Health Survey テンプレート](https://docs.google.com/forms/d/1KkvUAfdaQBYDd_dey1ZtzyArIhBtmSj-Y_XwMXSJwPk/edit) のコピーを作成し、開発グループのニーズに合わせて編集してください。
 
-##### 高パフォーマンス製品グループ構築学習セッション
+##### Building High Performing Product Groups Learning Session
 
-[学習と開発](/handbook/people-group/learning-and-development/)チームは製品グループとのライブ学習セッションを促進して[高パフォーマンスを実現する](/handbook/leadership/#strategies-to-build-high-performing-teams)ことができます。[Drexler-Sibbetモデル](https://www.kaizenko.com/drexler-sibbet-team-performance-model/)は高パフォーマンスに向けてチームをステージごとに導くためのフレームワークです。ライブ学習セッションでは、L&Dファシリテーターが製品グループと協力して、チームメンバーが高パフォーマンスを達成するために必要なことについて調整するための活動を定義します。セッションのスケジュールに興味がある場合は、`#learninganddevelopment`に連絡して詳細を確認してください。
+[Learning & Development](/handbook/people-group/learning-and-development/) チームは、[高パフォーマンスを可能にする](/handbook/leadership/#strategies-to-build-high-performing-teams) ために Product Group と一緒にライブ学習セッションをファシリテートできます。[Drexler-Sibbet モデル](https://www.kaizenko.com/drexler-sibbet-team-performance-model/) は、チームを段階を経て高パフォーマンスへと導くためのフレームワークです。ライブ学習セッション中、L&D ファシリテーターは Product Group と協力し、高パフォーマンスを達成するために何が起こる必要があるかについてチームメンバーを整合させる活動を定義します。セッションのスケジューリングに興味があれば、`#learninganddevelopment` に連絡して詳細を確認してください。
 
-#### チームメンバーの製品グループの設定
+#### チームメンバー向け Product Group の設定
 
-従業員データの唯一の情報源（SSOT）であるため、Workdayはプロダクトグループ割り当てのSSOTとして機能します。R&D機能（Product/Engineering）の各チームメンバーは`team.yml`エントリに`specialty`フィールドが割り当てられています。このエントリは[www-gitlab-comプロジェクト](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/data/team_members/person)で編集可能ですが、調整はWorkdayからの[日次同期](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854)によって上書きされます。チームメンバーの専門性を調整するには、マネージャーが[Job Information Change](/handbook/people-group/promotions-transfers/#manager-self-service-in-workday-job-information-change)を開始する必要があります。
+従業員データのシングルソースオブトゥルース（SSOT）であるため、Workday は Product Group 割り当ての SSOT として機能します。R&D 機能（Product/Engineering）の各チームメンバーには、`team.yml` エントリで `specialty` フィールドが割り当てられます。このエントリは [www-gitlab-com プロジェクト](https://gitlab.com/gitlab-com/www-gitlab-com/-/tree/master/data/team_members/person) で編集可能ですが、調整は Workday からの [日次同期によって上書きされます](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854)。チームメンバーの specialty を調整するには、彼らのマネージャーが [Job Information Change](/handbook/people-group/promotions-transfers/#manager-self-service-in-workday-job-information-change) を開始する必要があります。
 
-チームメンバーの`specialty`を指定する際は、製品[階層](/handbook/product/categories/#hierarchy)の最小単位と指定された[名前](/handbook/product/categories/#naming)を使用します。例えば：
+チームメンバーの `specialty` を指定する際には、私たちのプロダクト [階層](/handbook/product/categories/#hierarchy) の最小単位と、それらの指定された [名前](/handbook/product/categories/#naming) を使用します。たとえば:
 
-- CreateステージのCode ReviewグループのStable counterpartであるチームメンバーの専門性指定は`Create: Code Review`になります
-- Verifyステージ全体のStable counterpartであるチームメンバーの専門性指定は`Verify`になります
-- ManageステージのAccessグループとImportグループ、およびCreateステージのGitalyグループのStable counterpartであるチームメンバーの専門性指定は`Manage: Access`、`Manage: Import`、`Create: Gitaly`になります。
+- Create ステージの Code Review グループに安定したカウンターパートのチームメンバーは、`Create: Code Review` という specialty 指定になります。
+- Verify ステージ全体に安定したカウンターパートのチームメンバーは、`Verify` という specialty 指定になります。
+- Manage ステージの Access と Import グループ、および Create ステージの Gitaly グループに安定したカウンターパートのチームメンバーは、`Manage: Access`、`Manage: Import`、`Create: Gitaly` という specialty 指定になります。
 
-#### シングルエンジニアグループ
+#### Single-Engineer Groups
 
-シングルエンジニアグループ（SEG）の目標は、GitLabプロジェクト内の計画中または最小限のカテゴリにGitLabを導入することです。シングルエンジニアグループは、既存のviableまたは完全なカテゴリへの投資ではありません。SEGが取り組む候補となるプロダクトアイデアの[リスト](https://about.gitlab.com/direction/#single-engineer-groups)があります。
+Single-Engineer Group（SEG）の目標は、GitLab プロジェクト内の planned または minimal カテゴリで GitLab をイニシエートすることです。Single-Engineer Group は、既存の viable または complete カテゴリに投資するためのものではありません。SEG が取り組む候補となるプロダクトのアイデアのリストは [こちら](https://about.gitlab.com/direction/#single-engineer-groups) です。
 
-GitLabでは、単一のエンジニアが驚くべき成果を成し遂げる力を信じています。多くのオープンソースプロジェクトは、自分が個人的に経験した問題を解決するために構築するという単一のエンジニアの決断から始まりました。例えば、[DZ](/handbook/company/team/#dzaporozhets)による[継続的インテグレーション](https://docs.gitlab.com/ee/ci/)や[Kamil](/handbook/company/team/#ayufan)による[GitLab Runner](https://docs.gitlab.com/runner/)です。このエネルギーのための余地を作りたいと考えています。
+GitLab では、1 人のエンジニアが素晴らしい偉業を達成する力を信じています。多くのオープンソースプロジェクトは、1 人のエンジニアが個人的に経験した問題の周りに構築する決定を下したことから始まりました。たとえば、[DZ](https://gitlab.com/dzaporozhets) による [Continuous Integration](https://docs.gitlab.com/ee/ci/) や、[Kamil](https://gitlab.com/ayufan) による [GitLab Runner](https://docs.gitlab.com/runner/) です。このエネルギーのための場所を作りたいのです。
 
-より大きな組織や既存のコードベース内でアイデアをインキュベートしながら、より大きな組織から生じる摩擦の悪影響を制限することで、より高い成功率を保証できると信じています。SEGのいくつかのメリット：
+私たちは、より大きな組織と既存のコードベースの中でアイデアをインキュベートすることで、より大きな組織から生まれる摩擦のマイナス面を制限しながら、より高い成功率を保証できると信じています。SEG のいくつかの利点は次のとおりです:
 
-1. 単一の脳でより効果的に行われる多くの決断がある。
-1. マージコンフリクトなしに複数の人が取り組むのに十分なコードがない。
-1. 早く作業を開始することで、他の人が貢献できる時間が増える。商業化より何年も前にヘッドスタートが必要。
+1. 行うべき決定がたくさんあり、1 つの脳でより効果的に行われる。
+1. 複数の人がマージコンフリクトに陥らずに作業するには十分なコードがない。
+1. 作業を早めに開始することで、他の人が貢献するためのより多くの時間が生まれる。商業化より数年先んじてスタートする必要がある。
 
-プロセスとして、シングルエンジニアグループは、ステークホルダーと非同期でコラボレーションし、イテレーティブなフィードバックを得て、GitLabの残りとの最小限の整合性を維持しながら自律性を保つ方法として、[ソフトウェアデモプロセス](/handbook/engineering/workflow/demos/#single-engineer-groups-demo)に参加することを要求します。
+プロセスの問題として、Single-Engineer Group は私たちの [Software Demo Process](/handbook/engineering/workflow/demos/#single-engineer-groups-demo) に参加し、ステークホルダーと非同期にコラボレーションし、イテレイティブなフィードバックを取得し、自律性を保ちながら GitLab の他の部分との最低限の整合性を維持する方法とすることを要求します。
 
-グループが採用率で測定されて大きな成功を収め、その製品領域をさらに進化させる必要がある場合、次のステップは複数人グループの形成を検討することです。カテゴリが完成し、グループが成功裏に解散する場合もあります。カテゴリが採用をもたらさない場合もあります。学んだ教訓を収集し、そのグループを解散させるか学びに基づいてさらに投資するかを検討します。
+グループが大きな成功を見つけ、採用によって測定され、プロダクトのその領域をさらに進化させる必要がある場合、次のステップはマルチパーソンのグループを形成することを検討することです。時にはカテゴリが完成し、グループは成功裏に解散できます。カテゴリが採用を生まない場合もあります。学んだ教訓を集め、その学びに基づいてグループを解散させるか、さらに投資するかを検討します。
 
-私たちの前には大きな機会があり、野心的でありたいと考えています。したがって、時間をかけてR&Dの10%をこれらの追求に投資したいと考えています。ただし、イテレーションの精神で、最初は少数のシングルエンジニアグループから始めます。より多くを学び、投資できるドルが増えるにつれて、徐々にSEGを追加します。
+私たちには目の前に大きな機会があり、野心的でありたいと思っています。したがって、時間をかけて私たちの R&D の 10% をこれらを追求し続けるために投資したいと考えています。しかし、イテレーションの精神に基づき、ほんの一握りの Single-Engineer Group から始めます。より多くを学び、投資するドルが増えるにつれて、徐々に SEG を追加していきます。
 
 ##### 成功基準
 
-エンジニアの成功は、プロダクトマーケットフィットの質問に対する迅速で高品質な回答を得ることに関連します。その答えが「ノー」であることも完全にあり得るため、パフォーマンスは複数人グループへのグループの卒業に依存しません。これの測定は[GMAU](https://internal.gitlab.com/handbook/company/performance-indicators/product/#group-monthly-active-users-gmau)です。
+エンジニアの成功は、プロダクト・マーケット・フィットの問いに対する迅速で高品質な答えを得ることに関連します。その答えは絶対に「いいえ」となる場合があり、パフォーマンスはグループがより大きな複数人グループに昇格するかどうかに依存しません。これの測定は [GMAU](https://internal.gitlab.com/handbook/company/performance-indicators/product/#group-monthly-active-users-gmau) です。
 
 ##### スポンサーシップ
 
-GitLabの誰もがシングルエンジニアグループの作成を提案できます。
+GitLab の誰でも、Single-Engineer Group の作成を提案できます。
 
-シングルエンジニアグループは他の新しい投資と同様に優先順位付けされ、以下の承認が必要です
+Single-Engineer Group は、他の新規投資と同様に優先順位付けされ、以下からの承認を得る必要があります。
 
 - Chief Product Officer
 - CTO
 - CEO
 
-##### 選考
+##### 選定
 
-SEGがDevelopment Departmentにある場合、VP of Developmentはシングルエンジニアグループである間のエンジニアの報告構造を決定する責任があります。
+SEG が Development 部門にある場合、VP of Development は、Single-Engineer Group である間のエンジニアのレポート構造を決定する責任を負います。
 
-エンジニアの基準：
+エンジニアの基準:
 
-- エンジニアはシニアエンジニア以上でなければならない
-- 対象の分野について情熱的でなければならない
-- 独立して作業する能力に興奮しているか、同様のモデルでの過去の成功がある
-- 以前の企業テクニカル共同創業者である
-- 成功したオープンソースプロジェクトの初期コントリビューターである
-- 以前のシングルエンジニアグループで成功した経験がある
+- エンジニアはシニアエンジニア（またはそれ以上）でなければならない。
+- 主題に対して情熱的でなければならない。
+- 独立して働ける能力に excited であるか、類似のモデルで以前に成功している必要がある。
+- 過去の会社の技術的共同創業者であること
+- 成功したオープンソースプロジェクトの早期の貢献者であること
+- 過去の Single-Engineer Group で成功裏に働いたこと
 
-##### 安定したカウンターパートなし
+##### Stable counterparts なし
 
-シングルエンジニアグループには安定したカウンターパートはありません。これを考える最善の方法はコミュニティの貢献として考えることです。選考基準は安定したカウンターパートなしで独立して作業できるエンジニアを選択するために設定されています。この設定は以下の望ましくない副作用を避けるためです。
+Single-Engineer Group には stable counterparts はありません。これを考える最良の方法は、コミュニティ貢献です。選定基準は、安定したカウンターパートなしで独立して働けるエンジニアを選ぶために設定されています。このセットアップは、以下の望ましくない副作用を避けるためです。
 
-- ホームグループでフルタイムの責任を持つ他のチームメンバーに貢献を求めることで、バーンアウトとシングルエンジニアグループがモデル化するより多くの投資につながる可能性がある。
-- 安定したカウンターパートが問題の検証や解決策の検証に関してより厳密に主張するため、エンジニアが自由を失う。
+- ホームグループでフルタイムの責任を持つ他のチームメンバーに不注意に貢献を依頼することは、燃え尽きや、Single-Engineer Group がモデルにしている投資量を超える投資につながる可能性があります。
+- 他の安定したカウンターパートが、問題検証や/またはソリューション検証に関するより多くの厳密さを要求する可能性があるため、エンジニアが自由を失う。
 
-##### シングルエンジニアグループ作成の例
+##### Single-Engineer Group の作成例
 
-[MR](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/66180)はシングルエンジニアグループの作成方法の例を説明しています。
+[MR](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/66180) には、Single-Engineer Group の作成方法の例が記述されています。
 
-### ワーキンググループ
+### Working Groups
 
-[ワーキンググループ](/handbook/company/working-groups)は、ビジネス目標を達成するために一定期間集まる特定のタイプのグループです。ワーキンググループは定義された責任を持ち、定期的にミーティングを行います。理想的には、目標が完了したときに蓄積した官僚主義を避けるためにワーキンググループを解散できます。
+[Working Group](/handbook/company/working-groups) は、ビジネス目標を達成するために一定期間集まる特定のタイプのグループです。Working Group には定義された責任があり、定期的に会議を行います。理想的には、Working Group は目標が完了したときに解散でき、蓄積した官僚主義を避けられます。
 
 ### ミドルマネジメント
 
-ミドルマネージャーはCEOに直接報告せず、自分に報告するピープルマネージャーを持つチームメンバーです。
-人物のタイトルや組織図での位置によって定義されるのではなく、これら2つの基準によって定義されます。
+ミドルマネージャーは、CEO に報告せず、ピープルマネージャーが報告してくるチームメンバーです。
+これは誰かのタイトルや組織図での位置によって定義されるのではなく、この 2 つの基準によって定義されます。
 
-## ロール
+## 役割
 
-人々は1つのことを専門とし、複数のことを得意とする場合があります。これらは[チームページ](/handbook/company/team/)にリストされています。
+人はある 1 つのことについてスペシャリストであり、複数のことについてエキスパートであることができます。これらは [チームページ](/handbook/company/team/) にリストされています。
 
 ### スペシャリスト
 
-スペシャリストは特定のトピックの責任を担います。
-このトピックのIssueを追跡し、および/または時間のほとんどをそこに費やします。
-時々、報告するリードがこのトピックにいます。
-1つのトピックのみにスペシャリストになれます。
-スペシャリストの説明は特定のタイトルの職務記述書の段落です。
-スペシャリストはタイトルの後に記載されます。例えば：開発者、データベーススペシャリスト（開発者、データベースと短縮しないこと）。
-多くの専門性は安定したカウンターパートを表します。例えば、「Software Engineer in Test、Create」はCreateステージグループに専念します。
-複数持つことができる場合や、時間のほとんどをそこに費やしていない場合は、おそらく[専門知識（expertise）](#expert)です。
-スペシャリストは同じタイトルを持つ他の人と同じ職務記述書を持つため、同じキャリアパスと報酬を持ちます。
+スペシャリストは、特定のトピックに対する責任を担います。
+彼らはこのトピックの Issue を追跡し、かつ/またはそこで時間の大部分を費やします。
+時にはこのトピックにリードがいて、彼らに報告します。
+スペシャリストになれるのは 1 つのトピックだけです。
+スペシャリストの記述は、特定のタイトルの職務記述内の段落です。
+スペシャリストはタイトルの後にリストされます。たとえば: Developer, database specialist（Developer, database に短縮しないでください）。
+多くの specialty は安定したカウンターパートを表します。たとえば、「Software Engineer in Test, Create」は「Create」ステージグループの specialty を持ち、そのグループに専属します。
+複数を持てる場合や、時間の大部分をそこで費やさない場合、それはおそらく [専門性（エキスパート）](#expert) です。
+スペシャリストは、同じタイトルを持つ他の人と同じ職務記述を持つため、同じキャリアパスと報酬を持ちます。
 
-### エキスパート {#expert}
+### エキスパート
 
-エキスパートとは、特定のトピックについて平均以上の経験を持つことを意味します。
-GitLabでしばらく働いた後、一般的に複数のトピックのエキスパートになります。
-これにより、会社の人々がより詳しく知っている人を迅速に見つけることができます。
-これらのラベルを自分に追加し、マネージャーにMRを割り当ててください。
-専門知識（expertise）は[スペシャリスト](/job-description-library/specialist/)とは異なり、ロールの説明には記載されません。
+エキスパートとは、ある特定のトピックについて平均以上の経験を持つことを意味します。
+一般的に、GitLab で一定期間働いた後、複数のトピックのエキスパートになります。
+これにより、会社の人々が、より詳しい人を素早く見つけられるようになります。
+これらのラベルを自分自身に追加し、マージリクエストをマネージャーに割り当ててください。
+専門性は、[スペシャリスト](/job-description-library/specialist/) と異なり、職務記述にはリストされません。
 
-本番エンジニアの場合、「エキスパート」としてのリストは、個人が別のチームに積極的に組み込まれていることを意味する場合もあります。
-組み込みの期間の後、彼らは上記で説明した通常の意味でのエキスパートになります。
+Production Engineer の場合、「Expert」としてのリストは、その個人が現在別のチームに組み込まれていることも意味する可能性があります。
+組み込まれている期間の後、彼らは上記で説明した通常の意味でのエキスパートになります。
 
-信頼性と本番準備に焦点を当てた開発者は[信頼性エキスパート](/job-description-library/expert/reliability/)と名付けられています。
+Reliability と Production Readiness に焦点を当てた Developer は、[Reliability Expert](/job-description-library/expert/reliability/) と命名されます。
 
 ### メンター
 
-エキスパートが個別のIssueや問題を支援するかもしれませんが、メンタリングとは誰かがキャリア、機能スキル、および/またはソフトスキルを成長させるのを助けることです。これは誰か他者の成長への投資です。
+エキスパートは個々の Issue または問題に対する支援を提供する可能性がある一方、メンターシップは誰かのキャリア、機能スキル、かつ/またはソフトスキルを成長させる手助けに関するものです。それは他人の成長への投資です。
 
-一部の人々は専門知識をハードスキル（Ruby、国際雇用法など）として、ソフトスキル（コンフリクトを通じた管理、セールス組織でのキャリア開発のナビゲーションなど）ではないと考えています。
+エキスパートをハードスキル（Ruby、国際雇用法など）であり、ソフトスキル（コンフリクトを通じてのマネジメント、セールス組織でのキャリア開発のナビゲートなど）ではないと考える人もいます。
 
-特定の領域でメンターになりたい場合は、チームページに情報を追加してください。GitLabの内部および/または外部でメンターになりたいかどうかを明記することが重要です。チームページの専門知識セクションで指定する方法の例：`Mentor - Marketing, Internal to GitLab`または`Mentor - Development (Ruby), External and Internal to GitLab`。
+特定の領域でメンターになりたい場合、その情報をチームページに追加してください。GitLab 内部でメンターになりたいか、外部でなりたいか、両方か、必ず明記することが重要です。チームページの専門性セクションで指定する方法の例: `Mentor - Marketing, Internal to GitLab` または `Mentor - Development (Ruby), External and Internal to GitLab`。
 
 ## その他の考慮事項
 
-### タイトルに「Manager」という単語があっても、ピープルマネジメントや構造を意味しない
+### タイトル中の「Manager」という単語は、ピープルマネジメントや構造を意味しない
 
-一部の個人貢献者（直属報告者なし）は、タイトルにコンマなしの「manager」を含んでいます。これらのタイトルは会社構造や給与計算においてピープルマネージャーとは見なされません。例としては、プロダクトマネージャー、アカウンティングマネージャー、アカウントマネージャー、チャンネルセールスマネージャー、テクニカルアカウントマネージャー、フィールドマーケティングマネージャー、オンラインマーケティングマネージャー、プロダクトマーケティングマネージャーなどがあります。「manager」の後にコンマが続く人が会社構造でのピープルマネージャーです。
+一部の個人貢献者（直接の報告者がいない）は、タイトルにカンマなしで manager が含まれます。これらのタイトルは、私たちの会社構造でもサラリーカリキュレーターでもピープルマネージャーとみなされません。例として、product manager、accounting manager、account manager、channel sales manager、technical account manager、field marketing manager、online marketing manager、product marketing manager があります。manager の後にカンマがある人は、私たちの会社構造でピープルマネージャーです。
 
-### 「チーム」、「チームメンバー」、「コミュニティ」の用語
+### 「Team」、「team member」、「community」の用語
 
-「チーム」という用語は最小のグループのために予約されています。チームはマネージャーとその報告者として定義されます。「チーム」はグループや[部署](/handbook/engineering/development/)を指すのではありません。
+「team」という用語は最小グループに使用されます。team は、マネージャーとその報告者として定義されます。「team」は group や [department](/handbook/engineering/development/) を指しません。
 
-会社のために働くすべての人を「チームメンバー」と呼んでいます。「チーム」が小さなグループを指すことを考えると、これは少し混乱しますが、検討したすべての代替案の中で「チームメンバー」が好ましいと考えています：
+私たちは、会社で働くすべての人を「team members」と呼びます。「team」が小さいグループを指すことを考えるとこれは少し混乱しますが、私たちが検討した代替案すべてに対して「team member」が好ましいと考えています:
 
-1. GitLab Inc.のために働く多くの請負業者がいるため、「従業員」という用語は使用しません。
-1. 「スタッフ」は[私たちがGitLab Inc.のために働く場合にユーザープロファイルに表示されます](https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/29480/diffs)が、[エンジニアリングレベル](/job-description-library/engineering/backend-engineer/#staff-backend-engineer)でもあるため混乱します。
-1. 「Gitlabbers」は、より広いコミュニティを包含しないため、使用しなくなりました。
-1. チームメンバーを「タヌキ」（ロゴを指す）と呼ぶことを検討しましたが、[動物の種で人間を指すことは混乱を招きます](https://gitlab.com/gitlab-com/www-gitlab-com/merge_requests/24447/)。
+1. GitLab Inc. のために働く多くの契約者がいるため、「employees」という用語は使いません。
+1. 「Staff」は [GitLab Inc. で働く場合のユーザープロファイル上に表示されます](https://gitlab.com/gitlab-org/gitlab-ce/merge_requests/29480/diffs) が、これは [エンジニアリングレベル](/job-description-library/engineering/backend-engineer/#staff-backend-engineer) でもあるので混乱します。
+1. 「Gitlabbers」はもう使われません。より広いコミュニティを包含しないためです。
+1. チームメンバーを「Tanuki」（私たちのロゴを指す）と呼ぶことを検討しましたが、[動物の種で人間を指すのは混乱します](https://gitlab.com/gitlab-com/www-gitlab-com/merge_requests/24447/)。
 
-GitLabはGitLab the companyよりも大きなプロジェクトです。会社の人々を含む、GitLabを取り巻くコミュニティとして見ることが非常に重要です。したがって、「コミュニティ」という用語を使用する場合は、チームメンバーを含むすべてのGitLabユーザーとコントリビューターを指すべきです。
+GitLab は GitLab という会社よりも大きいプロジェクトです。GitLab を取り巻くコミュニティを、会社の人々を含むものとして見ることが本当に重要です。したがって、「community」という用語を使うとき、それはすべての GitLab ユーザーと貢献者を指すべきです - チームメンバーを含む。
 
-チームメンバーでないユーザーとコントリビューターを指すには、「より広いコミュニティ」を使用してください。
+チームメンバーでないユーザーと貢献者を指すには、「wider community」を使います。
 
-詳細については、[GitLab執筆ガイドライン](/handbook/communication/#writing-style-guidelines)を参照してください。
+詳細については、[GitLab ライティングガイドライン](/handbook/communication/#writing-style-guidelines) をご覧ください。

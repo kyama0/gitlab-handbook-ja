@@ -2,115 +2,115 @@
 title: "インフラストラクチャ標準"
 description: "このハンドブックセクションでは、GitLab の全部門・グループにわたる AWS および GCP のインフラストラクチャ標準の最新イテレーションを定義します。"
 upstream_path: "/handbook/company/infrastructure-standards/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
-translator: claude
+upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
+translated_at: "2026-05-14T00:00:00Z"
+translator: "claude"
 stale: false
 ---
 
 ## インフラストラクチャ標準の概要
 
-このハンドブックセクションでは、GitLab チームメンバー向けのインフラストラクチャおよびセキュリティ標準の最新イテレーションを定義します。これらは GitLab 組織のベースラインを提供し、特定のビジネスニーズを満たすためにこれらの標準を上書きする各インフラチームのインフラストラクチャレルムがあります。
+このハンドブックセクションでは、GitLab チームメンバー向けのインフラストラクチャとセキュリティ標準の最新イテレーションを定義します。これらは GitLab 組織のためのベースラインを提供するもので、各インフラストラクチャチーム向けに、特定のビジネスニーズに合わせてこれらの標準を上書きする Infrastructure Realm があります。
 
-以下の標準が含まれます:
+カバーされる標準は以下のとおりです:
 
-- アクセスリクエスト
+- Access Requests
 - AWS クラウドプロバイダー
   - アーキテクチャ図
   - 組織ポリシー
   - IAM とアクセスリクエスト
-  - IT レルム
-  - SaaS レルム
-  - サンドボックスレルム
-  - Project Horse レルム
+  - IT Realm
+  - SaaS Realm
+  - Sandbox Realm
+  - Project Horse Realm
 - GCP クラウドプロバイダーアーキテクチャ
   - アーキテクチャ図
   - 組織ポリシー
   - IAM とアクセスリクエスト
-  - IT レルム
-  - SaaS レルム
-  - サンドボックスレルム
+  - IT Realm
+  - SaaS Realm
+  - Sandbox Realm
 - Infrastructure-as-Code
   - Terraform
   - Ansible
-- [ラベルとタグ](/handbook/company/infrastructure-standards/labels-tags/)
-- [ポリシー](/handbook/company/infrastructure-standards/policies/)
+- [Labels and Tags](/handbook/company/infrastructure-standards/labels-tags/)
+- [Policies](/handbook/company/infrastructure-standards/policies/)
 - セキュリティ標準
   - アプリケーションセキュリティ
   - インフラストラクチャセキュリティ
 - [チュートリアル](/handbook/company/infrastructure-standards/tutorials/)
 
-### 背景コンテキスト
+### 背景
 
-これらの標準は、この [sandbox-cloud#3 予算とコスト配分](https://gitlab.com/gitlab-com/demo-systems/sandbox-cloud/sandbox-cloud-issue-tracking/-/issues/3) Issue と [infrastructure&257 非本番利用のためのクラウドリソースの提供](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/257) において部門横断的なコラボレーションによって作成されました。
+これらの標準は、[sandbox-cloud#3 Budget and Cost Allocation](https://gitlab.com/gitlab-com/demo-systems/sandbox-cloud/sandbox-cloud-issue-tracking/-/issues/3) Issue と [infrastructure&257 Provide cloud resources for non-production usage](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/257) における部門横断的なコラボレーションによって作成されました。
 
-これらの標準は新しいインフラストラクチャに適用されます。既存のリソースは、Infrastructure Security・IT・Reliability SRE からの指示がない限り、インフラストラクチャのイテレーション時にこれらの標準を採用できます。
+これらの標準は新しいインフラストラクチャに適用されます。既存のリソースは、Infrastructure Security、IT、Reliability SRE によるアドバイスがない限り、インフラストラクチャがイテレーションされるにつれてこれらの標準を採用できます。
 
-## レルム
+## Realm
 
-各レルムは、そのレルムを使用する部門やグループが他の部門やレルムに影響を与えることなく、インフラストラクチャの設定やセキュリティポリシーを必要に応じてカスタマイズできる柔軟性を提供するドメインまたは名前空間と考えることができます。
+各 realm は、その realm を使用する部門やグループが、他の部門や realm に影響を与えずに、必要に応じてインフラストラクチャ構成やセキュリティポリシーをカスタマイズできる柔軟性を提供する、ドメインまたはネームスペースのようなものと考えることができます。
 
-クラウドインフラストラクチャでは、「レルム」と呼ばれる各クラウドプロバイダーのトップレベル組織アカウント配下に AWS のトップレベル組織単位と GCP フォルダーを作成しています。
+クラウドインフラストラクチャについては、それぞれのクラウドプロバイダーのトップレベル組織アカウントの下に、トップレベルの AWS Organizational Unit と GCP フォルダを作成しており、これらを「realm」と呼んでいます。
 
-### どのレルムを使用すべきですか？
+### どの realm を使うべきか?
 
-| レルム      | データ分類 | 管理者 | 使用ドキュメント | Slack チャンネル |
+| Realm      | データ分類 | リソース管理者 | 使用ドキュメント | Slack チャンネル |
 |------------|---------------------|----------------------|---------------------|---------------|
-| `infra-shared-services`  | Red/Orange/Yellow/Green | `infra-realm-owners` | [レルムドキュメント](/handbook/company/infrastructure-standards/realms/infra-shared-services) | `#infra-realm-owners` |
-| `it`       | Orange/Yellow/Green | [IT Engineering](/handbook/security/corporate/end-user-services/) | [レルムドキュメント](/handbook/company/infrastructure-standards/realms/it) | `#it_help` (`@it-eng` をタグ付け) |
-| `saas`     | Red/Orange/Yellow/Green | [Reliability Engineering](/handbook/engineering/infrastructure/team/) | [レルムドキュメント](/handbook/company/infrastructure-standards/realms/saas) | `#infrastructure-lounge` |
-| `sandbox`  | Green | セルフサービス（チームメンバー） | [サンドボックスクラウド](/handbook/company/infrastructure-standards/realms/sandbox) | `#sandbox-cloud-questions` |
-| `security` | Orange/Yellow/Green | [Infrastructure Security](/handbook/security/product-security/infrastructure-security/) | [レルムドキュメント](/handbook/company/infrastructure-standards/realms/security) | `#security-infrasec` |
+| `infra-shared-services`  | Red/Orange/Yellow/Green | `infra-realm-owners` | [Realm ドキュメント](/handbook/company/infrastructure-standards/realms/infra-shared-services) | `#infra-realm-owners` |
+| `it`       | Orange/Yellow/Green | [IT Engineering](/handbook/security/corporate/end-user-services/) | [Realm ドキュメント](/handbook/company/infrastructure-standards/realms/it) | `#it_help`（`@it-eng` をタグ） |
+| `saas`     | Red/Orange/Yellow/Green | [Reliability Engineering](/handbook/engineering/infrastructure-platforms/) | [Realm ドキュメント](/handbook/company/infrastructure-standards/realms/saas) | `#infrastructure_platforms` |
+| `sandbox`  | Green | セルフサービス（チームメンバー） | [Sandbox Cloud](/handbook/company/infrastructure-standards/realms/sandbox) | `#sandbox-cloud-questions` |
+| `security` | Orange/Yellow/Green | [Infrastructure Security](/handbook/security/product-security/infrastructure-security/) | [Realm ドキュメント](/handbook/company/infrastructure-standards/realms/security) | `#security-infrasec` |
 
-### インフラチームによる管理
+### インフラストラクチャチームによる管理
 
-**本番または本番に近いサービスをデプロイしようとしていますか？** すべてのエンジニアリングまたは製品関連の本番インフラストラクチャは、SRE オンコールカバレッジを持つエンジニアリングインフラストラクチャチームが管理する `saas` レルムにデプロイ・管理されるべきです。すべてのビジネス（非エンジニアリング）本番インフラストラクチャは、セキュリティチームが指定する GCP プロジェクトまたは AWS アカウントの `it` レルムにデプロイされるべきです。`saas` または `it` レルムで管理されない標準化されたセキュリティおよびロギングリソースはすべて `security` レルムにデプロイされるべきです。
+**本番または本番相当のサービスをデプロイする予定ですか?** すべてのエンジニアリングまたはプロダクト関連の本番インフラストラクチャは、SRE オンコールカバレッジを伴う Engineering Infrastructure チームが管理する `saas` realm にデプロイ・管理する必要があります。すべてのビジネス（非エンジニアリング）本番インフラストラクチャは、セキュリティチームによって指定された GCP プロジェクトまたは AWS アカウントの `it` realm にデプロイする必要があります。`saas` または `it` realm で管理されないすべての標準化されたセキュリティおよびロギングリソースは、`security` realm にデプロイする必要があります。
 
-**レルムを追加したいですか？** 独自のレルムを持たない部門は、`sandbox` または `it` レルムにグループ（チーム）向けのリソースを作成すべきです。新しいレルムの作成を正当化するのに十分なクラウドリソースと専任のインフラエンジニアチームメンバーがいる場合は、[新しいインフラストラクチャレルムを作成するための手順](/handbook/company/infrastructure-standards/tutorials/realms/create-realm)をご覧ください。
+**realm を追加したい?** 自身の realm を持たない部門は、`sandbox` または `it` realm にグループ（チーム）用のリソースを作成する必要があります。新しい realm の作成を正当化できるだけの十分なクラウドリソースと専属のインフラストラクチャエンジニアチームメンバーがいる場合は、[新しいインフラストラクチャ realm を作成する手順](/handbook/company/infrastructure-standards/tutorials/realms/create-realm) を参照してください。
 
 ### セルフサービスインフラストラクチャ
 
-GitLab チームメンバーのうち約 750 人が、開発・実験・テスト・**非本番**目的でクラウドインフラストラクチャを使用する部門にいます。これには Customer Success・エンジニアリング部門・Support などのチームメンバーが含まれます。**ドキュメントの目的上、これを *GitLab インフラストラクチャコミュニティ* と呼びます。**
+GitLab のチームメンバーのおよそ 750 人が、開発、実験、テスト、または **非本番** 目的でクラウドインフラストラクチャを使用する部門に所属しています。これには Customer Success、Engineering ディビジョンの部門、Support などのチームメンバーが含まれます。**ドキュメント上はこれを *GitLab インフラストラクチャコミュニティ* と呼びます。**
 
-GitLab インフラストラクチャコミュニティに属さないグループ（Finance・Marketing・Sales など）については、インフラストラクチャのニーズについて `#it_help` にお問い合わせください。
+GitLab インフラストラクチャコミュニティに属さないグループ（例: Finance、Marketing、Sales など）の方は、インフラストラクチャのニーズに関する支援を `#it_help` までお寄せください。
 
-GitLab チームメンバーがプロビジョニングするエフェメラル（サンドボックス）インフラストラクチャの作成と管理方法を標準化しました。
+私たちは、GitLab チームメンバーがプロビジョニングするエフェメラル（sandbox）インフラストラクチャの作成と管理方法を標準化しました。
 
-**過度に単純化したユーザーストーリーは「GCP または AWS で VM やクラスターを立ち上げて何か（何でも、GitLab 製品固有でなくても）試みる必要があります。会社のインフラストラクチャ標準は何ですか？」というものです。**
+**過度に単純化したユーザーストーリーは「何か（GitLab プロダクト固有でない可能性もある）を試したいので、GCP または AWS で VM またはクラスタをスピンアップする必要があります。これを行うための会社のインフラストラクチャ標準は何ですか?」というものです。**
 
-サンドボックスクラウドは、エフェメラルなサンドボックスおよびテストのユースケースに必要な各 GitLab チームメンバー向けに AWS アカウントまたは GCP プロジェクトのプロビジョニングを自動化するカスタムビルドのウェブアプリケーションです。
+Sandbox Cloud は、エフェメラルな sandbox やテストのユースケースのために必要な GitLab チームメンバーごとに、AWS アカウントまたは GCP プロジェクトのプロビジョニングを自動化するカスタムビルドの Web アプリケーションです。
 
-目標は、コスト配分に必要なタグ付け・ベストプラクティスのセキュリティ設定を含む技術的なチームメンバー向けの摩擦のないアプローチを作成し、AWS または GCP ウェブコンソールを使用して必要なリソースを作成するか、各ユーザーアカウントの Terraform 設定ファイルにコピーできるドキュメントと使用例を含む Terraform モジュールの共有ライブラリを使用する能力を提供することです。Okta でサインインすると、Workday と統合された Okta メタデータを使用して部門とエンティティをコスト報告に決定し、作成するリソースのタグ付けポリシーの自動作成に使用します。
+目標は、技術系チームメンバーにとって、コスト配分のためのタグ付け、ベストプラクティスのセキュリティ設定を含み、AWS や GCP の Web コンソールを使うか、ドキュメントと使用例を含む共有 Terraform モジュールのライブラリを使って各ユーザーアカウントの Terraform 設定ファイルにコピーすることで、必要なあらゆるリソースを作成できる能力を提供する、摩擦のないアプローチを作ることです。OKTA でサインインすると、Workday と統合された OKTA メタデータを使って部門とエンティティを特定し、これをコスト報告に使用するとともに、作成したリソースのタグ付けポリシーの自動作成にも使用します。
 
-詳細は[サンドボックスレルム ハンドブックページ](/handbook/company/infrastructure-standards/realms/sandbox)をご覧ください。
+詳しくは [sandbox realm ハンドブックページ](/handbook/company/infrastructure-standards/realms/sandbox) をご覧ください。
 
-#### 個人環境
+#### 個別環境
 
-**サンドボックスまたはテスト用の AWS アカウントまたは GCP プロジェクトをお探しですか？** オーナー権限と GitLab マスターアカウントによる集中管理された請求が付与された、プライベートな AWS アカウントまたは GCP プロジェクトへのアクセスを提供する [GitLab サンドボックスクラウド](/handbook/company/infrastructure-standards/realms/sandbox/#individual-aws-account-or-gcp-project)を使用してください。
+**sandbox またはテスト用の AWS アカウントや GCP プロジェクトを探していますか?** [GitLab Sandbox Cloud](/handbook/company/infrastructure-standards/realms/sandbox/#individual-aws-account-or-gcp-project) を使用してください。これにより、オーナー権限を付与する自分専用のプライベート AWS アカウントまたは GCP プロジェクトにアクセスでき、GitLab マスターアカウントで一元管理された請求になっています。
 
 #### グループ環境
 
-**チームと共有する実験的またはテスト用リソースをデプロイするための AWS アカウントまたは GCP プロジェクトをお探しですか？** サンドボックスクラウドを使用してグループ AWS アカウントまたは GCP プロジェクトをリクエストできます。[手順については ハンドブックページ](/handbook/company/infrastructure-standards/realms/sandbox/#collaborative-aws-account-or-gcp-project-non-production)をご覧ください。
+**チームと共有する実験用またはテスト用のリソースをデプロイするための AWS アカウントまたは GCP プロジェクトを探していますか?** Sandbox Cloud を使用して Group AWS アカウントまたは GCP プロジェクトをリクエストできます。詳細は [手順を記載したハンドブックページ](/handbook/company/infrastructure-standards/realms/sandbox/#collaborative-aws-account-or-gcp-project-non-production) を参照してください。
 
-#### サンドボックスおよびテストインフラストラクチャの定義
+#### Sandbox およびテストインフラストラクチャの定義
 
-- **実際の顧客またはチームメンバーのデータ/情報や RED/ORANGE データを含まない**、あなたまたはチームが管理するインフラストラクチャ。つまり、テスト用のダミーデータを使用した実際のインフラストラクチャです。
-- 内部でのみ使用され（スクリプト・テストアプリ・ツールなど）、サービスが一時的に利用できなくてもビジネス継続性に影響しないインフラストラクチャ。
-- 外部からアクセス可能だが実際の顧客データ/情報/知的財産や RED/ORANGE データを含まないエフェメラルなインフラストラクチャ。これには、（ダミーデータを使用した）顧客問題の共同再現・デモ・概念実証・トレーニング・ワークショップなどが含まれます。
-- グローバルなインフラストラクチャサポートカバレッジを持たないインフラストラクチャ（例: SRE チームによって管理されているか？）。
-- インフラストラクチャに機密情報が含まれていないことを確認するために、[データ分類ポリシー](/handbook/security/policies_and_standards/data-classification-standard/)と[データ分類インデックス](https://internal.gitlab.com/handbook/security/data_classification/)を確認してください。インフラストラクチャがグレーゾーンにある場合は、[セキュリティチーム](/handbook/security/)にレビューを依頼することがベストプラクティスです。
+- あなたまたはあなたのチームが管理する、**実際の顧客またはチームメンバーのデータ/情報、または RED/ORANGE データを含まない**インフラストラクチャ。言い換えれば、テスト用の偽データを使う実際のインフラストラクチャ。
+- 内部のみで使用される（スクリプト、テストアプリ、ツールなど）インフラストラクチャで、サービスが一時的に利用不能になってもビジネス継続性に影響を与えないもの。
+- エフェメラルな性質を持ち、外部から利用可能ながら、実際の顧客データ/情報/知的財産または RED/ORANGE データを含まないインフラストラクチャ。これには、顧客の問題の協力的な再現（偽データを使用）、デモ、概念実証、トレーニング、ワークショップなどが分類上含まれます。
+- グローバルなインフラストラクチャサポートカバレッジを持たないインフラストラクチャ（例: SRE チームによって管理されているか?）。
+- インフラストラクチャに機密情報が含まれないことを保証するため、[データ分類ポリシー](/handbook/security/policies_and_standards/data-classification-standard/) と [Data Classification Index](https://internal.gitlab.com/handbook/security/data_classification/) を必ず確認してください。インフラストラクチャがグレーな領域にある場合は、[セキュリティチーム](/handbook/security/) にレビューを依頼するのがベストプラクティスです。
 
-近い将来、より多くのインフラストラクチャレルムに対して[レディネスレビュー](/handbook/engineering/infrastructure-platforms/production/readiness.md)を導入する予定です。
+近い将来、より多くのインフラストラクチャ realm 向けに [readiness review](/handbook/engineering/infrastructure-platforms/production/readiness.md) を導入する予定です。
 
-### レルムオーナー {#realm-owners}
+### Realm オーナー
 
-各レルムには、そのレルムのすべてのインフラストラクチャアーキテクチャ・請求・リソースプロビジョニング・セキュリティポリシーを担当する [DRI](/handbook/people-group/directly-responsible-individuals/) またはステーブルカウンターパートであるシステムオーナーとなるチームメンバーが 1 人以上います。
+各 realm には、すべてのインフラストラクチャアーキテクチャ、請求、リソースプロビジョニング、セキュリティポリシーを担当する [DRI](/handbook/people-group/directly-responsible-individuals/) または安定したカウンターパートとしてのシステムオーナーが 1 名以上います。
 
-各レルムの DRI またはカウンターパートは、セキュリティインシデントへの対応やレルム内のグループオーナーおよびカウンターパートのサポートを含む、レルムの日常管理に必要なすべての操作を実行できるエンジニアリングマネージャーまたは経験豊富なインフラエンジニアです。
+各 realm DRI またはカウンターパートは、realm の日常管理（セキュリティインシデントへの対応、その realm のグループオーナーやカウンターパートのサポートを含む）に必要なすべてのアクションを実行できるエンジニアリングマネージャーまたは経験豊富なインフラストラクチャエンジニアです。
 
-私たちのインフラストラクチャ標準は、明確に定義されたベースラインを提供しながら、レルムオーナーがレルム内で必要に応じてカスタマイズするためのガイドラインを提供するように設計されています。
+私たちのインフラストラクチャ標準は、realm 内で必要に応じて realm オーナーがカスタマイズできるガイドラインを持つ、明確に定義されたベースラインを提供するように設計されています。
 
-インフラストラクチャレルムオーナーのリストは [Google グループ](https://groups.google.com/a/gitlab.com/g/infra-realm-owners/members)（社内）でご覧いただけます。
+インフラストラクチャ realm オーナーのリストは [Google Group](https://groups.google.com/a/gitlab.com/g/infra-realm-owners/members)（内部）で確認できます。
 
 ## GCP アーキテクチャ図
 
@@ -328,4 +328,4 @@ graph LR;
 
 ### AWS アーキテクチャ図
 
-AWS アーキテクチャは現在設計中です。暫定的に、GitLab Issue を作成して `jeffersonmartin`・`dawsmith`・`jurbanc` をタグ付けしてサポートを依頼してください。
+AWS アーキテクチャは現在設計中です。当面の支援が必要な場合は、GitLab Issue を作成し、`jeffersonmartin`、`dawsmith`、`jurbanc` にタグ付けしてください。

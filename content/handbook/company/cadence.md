@@ -1,118 +1,118 @@
 ---
-title: "カデンス"
-description: "企業内のすべての活動は一定のカデンスで行われます。各カデンスの周期は異なります。GitLab のカデンスについて学びましょう。"
-upstream_path: /handbook/company/cadence/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T06:00:00Z"
-translator: claude
+title: "ケイデンス"
+description: "会社のあらゆる事象は一定のケイデンスで起こります。各ケイデンスの期間はそれぞれ異なります。GitLab におけるケイデンスについて学びます。"
+upstream_path: "/handbook/company/cadence/"
+upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
+translated_at: "2026-05-14T00:00:00Z"
+translator: "claude"
 stale: false
 ---
 
 ## 概要
 
-企業内のすべての活動は一定のカデンスで行われます。
-各カデンスの周期は異なります。
-各周期の間隔は約4倍で、3倍から5倍の範囲で変化します。
-以下は GitLab のカデンス一覧です：
+会社のあらゆる事象は一定のケイデンスで起こります。
+各ケイデンスの期間はそれぞれ異なります。
+期間と期間の時間スケールはおおむね 4 倍であり、3 倍から 5 倍の範囲で変動します。
+以下は、GitLab における各ケイデンスです。
 
-1. [30年](#30-years)（10年の3倍）
-1. [10年](#10-years)（3年の3.3倍）
-1. [3年](#3-years)（1年の3倍）
-1. [年](#year)（四半期の4倍）
-1. [四半期](#quarter)（月の3倍）
-1. [月](#month)（週の4.3倍）
+1. [30 年](#30-years)（10 年の 3 倍）
+1. [10 年](#10-years)（3 年の 3.3 倍）
+1. [3 年](#3-years)（年の 3 倍）
+1. [年](#year)（四半期の 4 倍）
+1. [四半期](#quarter)（月の 3 倍）
+1. [月](#month)（週の 4.3 倍）
 1. [週](#week)
 
-このページの項目は、項目が更新されるタイミングではなく、その項目が関連する基本的な期間に基づいてカデンスにグループ化されています。例えば、私たちの戦略は3年先を見据えていますが、[E-Group によって年次でレビューされ](/handbook/company/offsite/#offsite-topic-calendar)、必要に応じてより頻繁に更新されることがあります。
+このページの項目は、その項目が更新されるタイミングではなく、その項目が関係する基礎的な時間期間に基づいてケイデンスへとグループ化されています。たとえば、私たちの戦略は 3 年先を見据えていますが、[E-Group によって年次でレビュー](/handbook/company/offsite/#offsite-topic-calendar)され、必要が生じればより頻繁に更新される場合もあります。
 
-FY25の主要な会社日程の概要は[こちら](https://docs.google.com/spreadsheets/d/11n44QyIVLD2rZwOnjLHlN1CvfmsVfFdyDfCK8qCLGM4/edit?usp=sharing)でご確認いただけます。
+FY25 の主な会社の日程の概要は[こちら](https://docs.google.com/spreadsheets/d/11n44QyIVLD2rZwOnjLHlN1CvfmsVfFdyDfCK8qCLGM4/edit?usp=sharing)で確認できます。
 
-### カデンスの例
+### ケイデンスの例
 
-カデンスの要素が時間とともにどのように組み合わさるか：
+ケイデンスの要素が時系列でどのように組み合わさるか:
 
-1. [私たちのミッション](/handbook/company/mission)は、製品を使うことで、製品に貢献することで、そして会社に貢献することで、**誰もが貢献できるようにする**ことです。
-1. [私たちのビジョン](/handbook/company/vision)は、製品が今後10年間でどのように進化するかです。**AllOps** — DevSecOps、ModelOps、サービスデスクのための単一アプリケーション。
-1. 私たちの戦略は、ビジョンに向けて進むために今後3年間で注力することです。私たちの戦略は、3つの戦略的柱（顧客の成果、プラットフォームの成熟、キャリアの成長）に集中することで、主要な **DevSecOps プラットフォーム**となることです。
+1. [私たちのミッション](/handbook/company/mission)は、私たちのプロダクトを使い、私たちのプロダクトに、そして私たちの会社に対して、**すべての人が貢献できる**ようにすることです。
+1. [私たちのビジョン](/handbook/company/vision)は、今後 10 年で私たちのプロダクトを発展させたい姿、つまり **AllOps**（DevSecOps、ModelOps、サービスデスクのための単一アプリケーション）です。
+1. 私たちの戦略は、ビジョンの達成に向けて今後 3 年間で何に注力するかを示すものです。私たちの戦略は、3 つの戦略の柱（Customer Results、プラットフォームの成熟、キャリアの成長）に注力することで、業界をリードする **DevSecOps プラットフォーム**になることです。
 
-カデンスに関連する他の要素：
+ケイデンスに関連するその他の要素:
 
-1. トップクロスファンクショナルイニシアチブは通常1年間続き、年次目標と密接に連携している必要があります。
-1. [主要業績評価指標（KPI）](/handbook/company/kpis/)は、私たちが会社として常に行っている重要なことのパフォーマンス指標です。ある四半期に KPI を変更したい場合、それは通常 OKR になります。
-1. [私たちの価値観](/handbook/values/)は、このカデンスページの項目を追求する際に従う原則ですが、いかなるカデンスの一部でもありません。
+1. クロスファンクショナルな最重要イニシアチブは通常 1 年続き、年次目標と密接に連携している必要があります。
+1. [Key Performance Indicators（KPI）](/handbook/company/kpis/)は、会社として常時行う重要な事柄に関するパフォーマンス指標です。ある四半期で KPI を変えたい場合、それは通常 OKR となります。
+1. [私たちのバリュー](/handbook/values/)は、このケイデンスページの項目を追求するうえで従う原則ですが、いずれのケイデンスにも属しません。
 
-### カデンスの流れ {#cadence-flow}
+### ケイデンスの流れ
 
-以下は、[カデンスの流れ](#cadence-flow)のカデンス項目がどのように組み合わさるかの例で、短期的な目標を達成することで長期的な目標をどのように実現するかを示しています。
+以下は、[ケイデンスの流れ](#cadence-flow)の各項目がどのように組み合わさるかを示す一例で、短期的な目標を着実に達成することによって、より長期的な目標がどのように達成されるかを表しています。
 
-1. 私たちの[ミッション](/handbook/company/mission)の一部は、誰もが[GitLab というアプリケーションに貢献できる](/handbook/company/mission/#contribute-to-gitlab-application)ことです。イノベーションをよりアクセスしやすくすることで、**製品へのユーザー貢献**が増え、より多くのユーザーが恩恵を受け、より多くのユーザーが製品に貢献できるようになります。この好循環が製品の高い革新速度を生み出し、より多くの人がイノベーションと貢献をできるようにします。
-1. [AllOps ビジョン](/handbook/company/vision/)を実現するために必要な1つのコンポーネントは、[GitLab ServiceDesk](https://docs.gitlab.com/ee/user/project/service_desk/) の改善です。これは外部の関係者をソフトウェア開発プロセスとつなぎ、より多くの人が貢献できるようにします。ServiceDesk は完全な**バリューストリームデリバリーの概要**を提供するために必要であり、これにより[アイデアから顧客まで](https://about.gitlab.com/solutions/value-stream-management/#:~:text=new%20innovation%20from-,idea%20to%20customers,-)のイノベーションのフローを管理するより多くの人々を支援し、GitLab を AllOps ソリューションとして依存するチームや企業を増やすことができます。
-1. [3年戦略](https://internal.gitlab.com/handbook/company/three-year-strategy/)の柱の一つは[顧客の成果](/handbook/values/#results)であり、これには[バリューストリーム分析](https://about.gitlab.com/solutions/value-stream-management/)などのアイテムによる**価値の実証**が含まれます。これにより、[マネージャーやエグゼクティブのような](https://about.gitlab.com/direction/plan/value_stream_management/#who-are-we-focusing-on)より広いユーザー層が価値とイノベーションを提供できるようになります。より広いユーザー層に価値を実証することで、完全なバリューストリームデリバリーの概要の提供に近づき、AllOps ビジョンへの進展が生まれます。
+1. イノベーションをより身近なものにすることで、**プロダクトへのユーザーの貢献**が増え、より多くのオーディエンスに成果がもたらされ、それによってさらに多くのユーザーが私たちのプロダクトに貢献できるようになります。この好循環がプロダクトのイノベーション速度を高め、より多くの人々がイノベーションを起こし、貢献できるようにします。
+1. [AllOps ビジョン](/handbook/company/vision/)を実現するために必要な要素の 1 つが、[GitLab ServiceDesk](https://docs.gitlab.com/ee/user/project/service_desk/) の改善です。これは外部関係者をソフトウェア開発プロセスにつなぎ、より多くの人が貢献できるようにします。ServiceDesk は完全な**バリューストリームデリバリーの全体像**を提供するために必要で、これによってより多くの人が[アイデアから顧客へ](https://about.gitlab.com/solutions/value-stream-management/#:~:text=new%20innovation%20from-,idea%20to%20customers,-.)のイノベーションの流れを管理できるようになり、より多くのチームや企業が AllOps ソリューションとして GitLab に依存するようになるはずです。
+1. [3 年戦略](https://internal.gitlab.com/handbook/company/three-year-strategy/)の柱の 1 つは [Customer Results](/handbook/values/#results) であり、これには [Value Stream Analytics](https://about.gitlab.com/solutions/value-stream-management/) のような項目を通じて [マネージャーや経営陣など](https://about.gitlab.com/direction/plan/value_stream_management/#who-are-we-focusing-on)のより幅広いユーザー層に価値とイノベーションを届ける支援を行う **Proving Value** が含まれます。より幅広いユーザー層に価値を証明することは、完全なバリューストリームデリバリーの全体像を提供することに近づき、AllOps ビジョンへの前進を生み出します。
 
-KR のベータ版バリューストリームを達成することは、年間バリューストリームダッシュボードの目標、より多くのユーザーにバリューストリーム管理を拡大するという戦略目標、AllOps ソリューションのビジョン、そして誰もが貢献するというミッションに対して進展があることを意味します。KR は一つのビルディングブロックですが、四半期内での達成が長期的な目標に対する進展につながります。
+ベータ版バリューストリームという KR の達成に成功することは、年次のバリューストリームダッシュボード目標、バリューストリーム管理をより多くのユーザーに広げるという戦略的目標、AllOps ソリューションというビジョン、そしてすべての人が貢献できるというミッションに対する前進を意味します。KR はあくまで 1 つのビルディングブロックに過ぎませんが、四半期内での着実な完了が、より長期的な目標に向けた前進につながります。
 
-## 更新カデンス
+## 更新のケイデンス
 
-私たちは要素をレビューするためのカデンスを持っています。具体的には、各要素は1つ下のレベルの要素のカデンスでレビューされます。例えば、3年戦略は毎年見直します。これは年次の Yearly 作業を行うタイミングに対応します。そして Yearly は毎四半期見直します。これは OKR を作成する時間枠です。
+私たちは要素のレビューにもケイデンスを設けています。具体的には、各要素は、その 1 つ下の階層にある要素のケイデンスでレビューされます。たとえば、3 年戦略は毎年見直され、これは年次目標を策定するタイミングと対応します。そして年次目標は四半期ごとに見直され、これが OKR を作成するタイムフレームと一致します。
 
-これらのレビューにより、要素が現在の優先事項を反映し、陳腐化しないことを確保します。設定されたレビュー時期がありますが、決定した変更を反映するために更新サイクルを待つ必要はありません。
+これらのレビューにより、各要素が現在の優先事項を反映し、陳腐化しないようになっています。あらかじめ決まったレビューのタイミングはありますが、決定した変更を反映するためにレビューサイクルを待つ必要はありません。
 
-1. [30年ミッション](/handbook/company/mission)：10年ごとにレビュー
-1. [10年ビジョン](/handbook/company/vision)：3年ごとにレビュー
-1. 3年戦略：毎年レビュー
+1. [30 年のミッション](/handbook/company/mission): 10 年ごとにレビュー
+1. [10 年のビジョン](/handbook/company/vision): 3 年ごとにレビュー
+1. 3 年戦略: 毎年レビュー
 
-## 30年 {#30-years}
+## 30 年
 
 - [私たちのミッション](/handbook/company/mission/)
 - [私たちのパーパス](/handbook/company/purpose/)
-- [平均的な企業の寿命](https://www.bbc.com/news/business-16611040)：S&P500 に入るまで10年、その後15年在籍し、5年の衰退期で合計30年
-- [アマゾンの寿命](https://www.forbes.com/sites/richardkestenbaum/2018/11/16/amazon-is-not-too-big-to-fail-bezos/#65fba0621626)「アマゾンは大きすぎて失敗しないわけではありません…実際、私はいつかアマゾンが失敗すると予測しています。アマゾンは倒産するでしょう。大企業を見ると、その寿命は100年以上ではなく、30年以上になる傾向があります。」
-- [世代も30年](https://pubmed.ncbi.nlm.nih.gov/10677323/)
+- [企業の平均寿命](https://www.bbc.com/news/business-16611040)。S&P500 入りまでに 10 年、その後 15 年、そして 5 年の衰退期で計 30 年
+- [Amazon の寿命](https://www.forbes.com/sites/richardkestenbaum/2018/11/16/amazon-is-not-too-big-to-fail-bezos/#65fba0621626) 「Amazon は失敗しないほど大きいわけではない……実際、私はいつか Amazon は失敗すると予測している。Amazon は倒産するだろう。大企業を見れば、その寿命は 100 年超ではなく 30 年超である傾向にある。」
+- [世代もまた 30 年である](https://pubmed.ncbi.nlm.nih.gov/10677323/)
 
-## 10年 {#10-years}
+## 10 年
 
 - [ビジョン](/handbook/company/vision/)
 - [プロダクトビジョン](https://about.gitlab.com/direction/#vision)
 - [DZ のコミットメント](https://about.gitlab.com/blog/2021/11/10/a-special-farewell-from-gitlab-dmitriy-zaporozhets/)
 - [カテゴリ創出に必要な時間](https://about.gitlab.com/blog/2023/08/30/origin-of-devsecops-platform-category/)
 
-## 3年 {#3-years}
+## 3 年
 
 1. 戦略
-1. [3年プロダクト方向戦略](https://about.gitlab.com/direction/#3-year-strategy)
+1. [3 年のプロダクト方向性戦略](https://about.gitlab.com/direction/#3-year-strategy)
 1. [長期見通し](/handbook/finance/financial-planning-and-analysis/#long-range-outlook-lro)
-1. [制限付き株式ユニットの付与](/handbook/total-rewards/stock-options/#rsu-vesting--grant-cadence)（6ヶ月のクリフ経過後）
-1. チームメンバーの平均在籍期間は約3年
+1. [制限付株式ユニットのベスティング](/handbook/total-rewards/stock-options/#rsu-vesting--grant-cadence)（6 か月のクリフを超えた後）
+1. チームメンバーの平均在職期間は約 3 年
 
-## 年 {#year}
+## 年
 
 1. [年次計画](/handbook/finance/financial-planning-and-analysis/#annual-operating-plan-aop)
-1. [4四半期ローリング予測](/handbook/finance/financial-planning-and-analysis/#quarterly--monthly-cycle-incl-close-variance-forecast-guidance)
-1. [方向性](https://about.gitlab.com/direction/)の大部分
+1. [4 四半期ローリングフォーキャスト](/handbook/finance/financial-planning-and-analysis/#quarterly--monthly-cycle-incl-close-variance-forecast-guidance)
+1. [Direction](https://about.gitlab.com/direction/) の大部分
 1. [会計年度プロダクト投資テーマ](https://about.gitlab.com/direction/#fiscal-year-product-investment-themes)
 
-## 四半期 {#quarter}
+## 四半期
 
-1. [取締役会議](/handbook/board-meetings/#board-meeting-process)
-1. 営業目標（[Clari](/handbook/business-technology/tech-stack/#clari) で管理）
+1. [取締役会](/handbook/board-meetings/#board-meeting-process)
+1. セールス目標（[Clari](/handbook/business-technology/tech-stack/#clari) 内）
 1. [E-group オフサイト](/handbook/company/offsite/)
 1. [GitLab Assembly](/handbook/company/gitlab-all-company-meetings/)
-1. [決算活動](/handbook/finance/investor-relations/)
+1. [決算関連活動](/handbook/finance/investor-relations/)
 
-## 月 {#month}
+## 月
 
 1. [リリース](https://about.gitlab.com/releases/)
-1. [レトロスペクティブ](/handbook/communication/#kickoffs)
+1. [振り返り](/handbook/communication/#kickoffs)
 1. [ほとんどの KPI](/handbook/company/kpis/)
 
-## 週 {#week}
+## 週
 
-1. [直属レポートとの 1:1 カデンス](/handbook/leadership/1-1/)
-1. [E-Group 週次ミーティング](/handbook/company/e-group-weekly/)
+1. [部下との 1-1 のケイデンス](/handbook/leadership/1-1/)
+1. [E-Group Weekly](/handbook/company/e-group-weekly/)
 
 ## ガントチャート
 
-以下は私たちのカデンスの視覚的な例であり、会社やチームのスケジュールに基づいて変更される場合があります。日付は概算です。
+以下は、私たちのケイデンスを示すビジュアル例であり、会社やチームのスケジュールによって変更される可能性があります。日付は概算です。
 
 ```mermaid
 gantt
@@ -225,6 +225,4 @@ gantt
     Christmas and New Year Celebrations          :12-23, 9d
 ```
 
-
-<!-- include omitted: includes/take-gitlab-for-a-spin.md (no localized version under content/ja/) -->
-
+{{% include "includes/take-gitlab-for-a-spin.md" %}}
