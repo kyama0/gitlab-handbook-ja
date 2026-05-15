@@ -2,10 +2,11 @@
 title: ツールとリソース
 description: "ソリューションアーキテクトが利用するツール、プラットフォーム、リソースのリファレンスインデックス"
 upstream_path: /handbook/solutions-architects/tools-and-resources/
-upstream_sha: 5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8
-translated_at: "2026-05-08T17:29:46Z"
+upstream_sha: eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81
+translated_at: "2026-05-15T00:00:00+00:00"
 translator: claude
 stale: false
+model: claude-opus-4-7
 ---
 
 ## ツールとリソース
@@ -18,7 +19,7 @@ GitLab ソリューションアーキテクトは、GitLab の見込み客や顧
 
 ### カスタマーエンゲージメントとレコーディング
 
-プリセールスサイクル中（例: POV エクササイズや既存顧客との新規取引追求時など）にサポートが必要な場合、ソリューションアーキテクトは「Allows Solution Architects to request assistance from Support Team」という名称の[Support Super Form](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/)を使用してください。
+プリセールスサイクル中（例: POV エクササイズや潜在的な新規取引を追求中の顧客対応時など）にサポートが必要な場合、ソリューションアーキテクトはまず Zendesk にログインしてください。次に、[Zendesk Internal Request Form](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783651259548) を使用し、「What is this request concerning?」の下で「Request assistance from support」を選択してください。
 
 既存顧客に関するその他すべての状況においては、ソリューションアーキテクトは顧客自身がサポートチケットを開くようにアドバイスしてください。
 

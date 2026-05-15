@@ -2,10 +2,11 @@
 title: "Decap CMS"
 description: "Decap を使ったコンテンツの編集と作成"
 upstream_path: /handbook/marketing/digital-experience/decap-cms/
-upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
-translated_at: "2026-05-01T10:36:34Z"
+upstream_sha: eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81
+translated_at: "2026-05-15T00:00:00+00:00"
 translator: claude
 stale: false
+model: claude-opus-4-7
 ---
 
 ## ブログ (about.gitlab.com/blog/)
@@ -327,3 +328,61 @@ flowchart TD
 7. MR をマージすると、約 15 分後にサイトに変更が反映されます。
 
 動画チュートリアル: https://youtu.be/TvUVW4X1Aco
+
+## What's New
+
+What's New ページを編集するには、Decap [about.gitlab.com/admin](https://about.gitlab.com/admin) にアクセスし、GitLab の認証情報でログインしてください。
+
+### 新しいリリースバージョンページを作成する (18.10 以降)
+
+1. メインダッシュボード 🏠 で、左サイドバーから `What's New - Version Content` を選択します。既存のリリースページが一覧表示されます。
+2. ページ上部の `New What's New - Version Content` ボタンをクリックします。
+3. フィールドを入力します:
+   - **Release version**: `X.Y` 形式のバージョン番号（例: `18.11`）。これがファイルスラグになります。必須。
+   - **Release Date**: `/whats-new/` でどのリリースを最新として表示するかを決定するために使用されます。
+   - **SEO**: Title と Description はページのメタデータです。各フィールドの下に文字数制限が記載されています。
+   - **Releases Container**: Header と Description がページ上のリリースサマリーの上に表示されます。
+   - **Latest Release**: Version、Title、Description、表示用 Release Date（例: `April 16, 2026`）、Improvements Count を入力します。Hero Artwork 画像（最大 500 KB）をアップロードします。
+   - **Video** *(任意)*: 展開して Vimeo の埋め込み URL（例: `https://player.vimeo.com/video/ID`）、サムネイル、alt テキスト、再生ボタンラベルを追加します。
+   - **Headline Features**: 各カードについて `Add Headline Features` をクリックします。Type（Blog、Video、Demo、または Contributor）を選択し、Title、Description、サムネイル、リンク先 URL を追加します。
+   - **Explore The Release**: 各カードについて `Add Explore Cards` をクリックします。1 つ以上の Badge（例: `ai`、`code`）を選択し、Title、Description、ボタンのリンクを追加します。
+   - **Release Notes CTA** *(任意)*: 読者を完全なリリース投稿へ案内するリンク。
+4. 上部の `Save` をクリックして変更を保存します。これは公開ではなく、レビュー用のマージリクエストを作成するだけです。
+5. [マージリクエスト一覧](https://gitlab.com/gitlab-com/marketing/digital-experience/about-gitlab-com/-/merge_requests/?label_name%5B%5D=decap-cms%2Fdraft) から、自分のリリースバージョンの MR を見つけます。
+6. MR でパイプラインが実行されたら、レビューアプリで変更内容に問題がないか確認します。
+7. 編集が必要な場合は Decap ファイルに戻って変更し、再度保存します。変更は既存のマージリクエストに反映されます。
+8. MR をマージすると、約 15 分後にサイトに変更が反映されます。
+
+### What's New ランディングページを編集する
+
+1. メインダッシュボード 🏠 で、左サイドバーから `What's New - Landing Page` を選択します。
+2. 単一ファイルエントリーをクリックして開きます。
+3. 関連セクションを編集します:
+   - **Hero**: Heading（Markdown 対応）、本文テキスト、CTA ボタンのラベルと URL。カウントダウンがアクティブな場合は Timer のターゲット日時を更新します。
+   - **What's Coming**: Title、Description、Accordion 項目。各アコーディオン項目にはタイトル、説明、アイコン、および任意のラベル（例: `ai`、`plan`）とリンクを持つ機能のリストがあります。このセクション内の CTA Bar には heading、tags、ボタンリンクがあります。
+   - **What's Happening**: Blogs、News、Resources（各 3 項目）、Customer Stories（2 項目）を含みます。これらのリストには固定の最小/最大の制限があり — 超過または不足すると Decap がバリデーションエラーを表示します。
+   - **Sign Up**: Heading、本文、FAQ アコーディオン、Form > Config 配下の Marketo フォーム設定（Form ID、Form Name など）。
+4. 上部の `Save` をクリックして変更を保存します。これは公開ではなく、レビュー用のマージリクエストを作成するだけです。
+5. [マージリクエスト一覧](https://gitlab.com/gitlab-com/marketing/digital-experience/about-gitlab-com/-/merge_requests/?label_name%5B%5D=decap-cms%2Fdraft) から、自分の変更が入った MR を見つけます。
+6. MR でパイプラインが実行されたら、レビューアプリで変更内容に問題がないか確認します。
+7. 編集が必要な場合は Decap ファイルに戻って変更し、再度保存します。変更は既存のマージリクエストに反映されます。
+8. MR をマージすると、約 15 分後にサイトに変更が反映されます。
+
+### 新しいレガシーリリースバージョンを作成する (18.10 以前)
+
+1. メインダッシュボード 🏠 で、左サイドバーから `Legacy What's New (Pre-18.10)` を選択します。
+2. ページ上部の `New Legacy What's New` ボタンをクリックします。
+3. フィールドを入力します:
+   - **Release version**: `X.Y` 形式である必要があります（例: `18.4`）。必須。
+   - **Release Date**: 必須。
+   - **SEO**: Title と Description はページのメタデータです。
+   - **Components**: リストは 1 つの Hero Section と 1 つの Feature List ブロックで始まります — 各 1 つ以上を保持してください。必要に応じて Feature List ブロックを追加できます。
+   - **Hero Section**: Title（デフォルトは "What's new in GitLab"）と Description（最大 200 文字、必須）を入力します。Video を展開して Vimeo 埋め込み URL、任意のサムネイル、heading、description、ボタンリンクを追加します。
+   - **Feature List**: 各機能について `Add Features` をクリックします。各機能には Feature Title、Description、少なくとも 1 つの Label（例: `ai`、`deploy`）が必要で、任意のリンク URL も追加できます。機能の下にサブ箇条書きを追加するには **Bulleted List Items** を使用し、それぞれにテキストと任意のリンクを設定します。デモ動画カードを追加するには **Video Highlight Cards** を使用し、それぞれに Vimeo URL、任意のサムネイル、title、description を設定します。
+4. 上部の `Save` をクリックして変更を保存します。これは公開ではなく、レビュー用のマージリクエストを作成するだけです。
+5. [マージリクエスト一覧](https://gitlab.com/gitlab-com/marketing/digital-experience/about-gitlab-com/-/merge_requests/?label_name%5B%5D=decap-cms%2Fdraft) から、自分のリリースバージョンの MR を見つけます。
+6. MR でパイプラインが実行されたら、レビューアプリで変更内容に問題がないか確認します。
+7. 編集が必要な場合は Decap ファイルに戻って変更し、再度保存します。変更は既存のマージリクエストに反映されます。
+8. MR をマージすると、約 15 分後にサイトに変更が反映されます。
+
+動画チュートリアル: https://youtu.be/1VZWo_MCGxU
