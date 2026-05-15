@@ -8098,10 +8098,10 @@
     },
     "content/handbook/engineering/data-engineering/database-excellence/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81",
+      "translated_at": "2026-05-15T00:00:00+00:00",
       "model": "claude-opus-4-7",
-      "input_hash": "09e85c39a54b677995add1ec7b484319116b858a6908acd3df1bcea1d98b963e"
+      "input_hash": "deeb188fd20feee9a19479a3a78b16308fd15e2a2de5c3bcc2b227e70a2ce51c"
     },
     "content/handbook/engineering/data-engineering/database-excellence/database-architecture/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/database-architecture/_index.md",
@@ -8112,10 +8112,10 @@
     },
     "content/handbook/engineering/data-engineering/database-excellence/database-automation/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/database-automation/_index.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-27T10:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f9470f1e96028dfae2bcf31bcb77641be1eb1c21fdea511e252a9d5a02701b6b"
+      "upstream_sha": "eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81",
+      "translated_at": "2026-05-15T00:00:00+00:00",
+      "model": "claude-opus-4-7",
+      "input_hash": "843b60579f5b2e3998d3cb741b3377874756d85be84c9ad90bfd2dc3232a0e42"
     },
     "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/database-frameworks/_index.md",
@@ -15392,10 +15392,10 @@
     },
     "content/handbook/marketing/digital-experience/decap-cms/_index.md": {
       "path": "content/handbook/marketing/digital-experience/decap-cms/_index.md",
-      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
-      "translated_at": "2026-05-01T10:36:34Z",
+      "upstream_sha": "eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81",
+      "translated_at": "2026-05-15T00:00:00+00:00",
       "model": "claude-opus-4-7",
-      "input_hash": "1a45f31c2d6a6eaa296be7ef08d50bb62ebde553582b4084eaae1eed022d8609"
+      "input_hash": "96a27ed6bf73e42a4d6c58c98cd933d17f095bfc1cde2ecbaf948460cf402fb7"
     },
     "content/handbook/marketing/digital-experience/digital-definitions.md": {
       "path": "content/handbook/marketing/digital-experience/digital-definitions.md",
@@ -15552,10 +15552,10 @@
       "input_hash": "45f89fe2faee99877146c6b773875e29a39f8bdcbb1896fa1acccecbee6619bb"
     },
     "content/handbook/marketing/field-marketing/_index.md": {
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T12:00:00Z",
+      "upstream_sha": "eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81",
+      "translated_at": "2026-05-15T00:00:00+00:00",
       "model": "claude-opus-4-7",
-      "input_hash": "ad72da34f882e8c316f7da88dbd312575bc02333c8ec918495b00ad4ae70d0ab"
+      "input_hash": "d12b4b6decae06b86247aef951336fc14ed057a0e8a048c869ab712148e9d035"
     },
     "content/handbook/marketing/field-marketing/field-marketing-epics.md": {
       "path": "content/handbook/marketing/field-marketing/field-marketing-epics.md",
@@ -16688,10 +16688,10 @@
     },
     "content/handbook/support/_index.md": {
       "path": "content/handbook/support/_index.md",
-      "upstream_sha": "c5d40e13183c5a0aeeafefbee88ab3fac48ced5a",
-      "translated_at": "2026-05-08T17:40:50Z",
+      "upstream_sha": "eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81",
+      "translated_at": "2026-05-15T00:00:00+00:00",
       "model": "claude-opus-4-7",
-      "input_hash": "3e833f59dee9568af40db3eedf22f1643cded591d5fa9b7715d3cedc7964ae95"
+      "input_hash": "60e5746ec79147d4e40daf8540c90429c72b8522504771b779e3030717b7c7f6"
     },
     "content/handbook/support/amer.md": {
       "path": "content/handbook/support/amer.md",
@@ -18879,17 +18879,17 @@
     },
     "content/handbook/solutions-architects/tools-and-resources/_index.md": {
       "path": "content/handbook/solutions-architects/tools-and-resources/_index.md",
-      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
-      "translated_at": "2026-05-08T17:29:46Z",
+      "upstream_sha": "eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81",
+      "translated_at": "2026-05-15T00:00:00+00:00",
       "model": "claude-opus-4-7",
-      "input_hash": "fb06c2a8cb9acd5900db22184c39757cf0fe5c115073dfd34676f412f0c7cb05"
+      "input_hash": "ae0302c161590ef1cbf3f7d1c87c2a8ffa493691de2d823416a0e9ae197baf9d"
     },
     "content/handbook/solutions-architects/tools-and-resources/dap-issue-reporting.md": {
       "path": "content/handbook/solutions-architects/tools-and-resources/dap-issue-reporting.md",
-      "upstream_sha": "5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8",
-      "translated_at": "2026-05-08T17:29:46Z",
+      "upstream_sha": "eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81",
+      "translated_at": "2026-05-15T00:00:00+00:00",
       "model": "claude-opus-4-7",
-      "input_hash": "99ace5083d8b471c1cc9ff636aeba82bac978dc0450f8f62715c9a624c668104"
+      "input_hash": "0d2fe952a94ff5743d010b60a0b1ab3b6a4847d1da66757e6f595a045611199a"
     },
     "content/handbook/solutions-architects/tools-and-resources/trial-guidelines.md": {
       "path": "content/handbook/solutions-architects/tools-and-resources/trial-guidelines.md",
