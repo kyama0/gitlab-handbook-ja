@@ -5,15 +5,16 @@
 # mergeStateStatus / 失敗 CI チェック数のスナップショットを取る。前回値から
 # 変化したときだけ 1 行 stdout に emit する (Monitor ツールが各行を通知に変換)。
 #
-# 終了条件（いずれかに該当した時点で exit 0）:
-#   - state == MERGED または CLOSED
-#   - reviewDecision == APPROVED かつ mergeable == MERGEABLE （マージ可能）
-#   - reviewDecision == CHANGES_REQUESTED （CR 対応が必要）
-#   - mergeable == CONFLICTING （コンフリクト解消が必要）
-#   - 失敗 CI チェックあり （Hugo build 失敗等）
+# 終了条件:
+#   - state == MERGED または CLOSED                                       → exit 0
+#   - reviewDecision == APPROVED かつ mergeable == MERGEABLE かつ
+#     mergeStateStatus != BLOCKED かつ ci_pending == 0 （マージ可能）       → exit 0
+#   - reviewDecision == CHANGES_REQUESTED （CR 対応が必要）                  → exit 0
+#   - mergeable == CONFLICTING （コンフリクト解消が必要）                    → exit 0
+#   - 失敗 CI チェックあり (ci_failed > 0、Hugo build 失敗等)                 → exit 0
 #   - PENDING のまま PENDING_TIMEOUT 秒経過 （既定 900 = 15 分）→ stdout に
-#     "PENDING_TIMEOUT" を emit して exit 1 で抜ける（呼び出し側が
-#     "@coderabbitai review" 等の追い込み判断をする）
+#     "PENDING_TIMEOUT" を emit して抜ける（呼び出し側が "@coderabbitai
+#     review" 等の追い込み判断をする）                                       → exit 1
 #
 # 使い方:
 #   watch-pr.sh <owner/repo> <pr_number>
@@ -28,11 +29,17 @@ PR="${2:?usage: watch-pr.sh <owner/repo> <pr_number>}"
 POLL_INTERVAL="${POLL_INTERVAL:-60}"
 PENDING_TIMEOUT="${PENDING_TIMEOUT:-900}"
 
+command -v gh >/dev/null 2>&1 || { echo "error: gh CLI is required" >&2; exit 2; }
+command -v jq >/dev/null 2>&1 || { echo "error: jq is required" >&2; exit 2; }
+[[ "$POLL_INTERVAL" =~ ^[1-9][0-9]*$ ]] \
+  || { echo "error: POLL_INTERVAL must be a positive integer (got: $POLL_INTERVAL)" >&2; exit 2; }
+[[ "$PENDING_TIMEOUT" =~ ^[1-9][0-9]*$ ]] \
+  || { echo "error: PENDING_TIMEOUT must be a positive integer (got: $PENDING_TIMEOUT)" >&2; exit 2; }
+
 now_iso() { date -u +%Y-%m-%dT%H:%M:%SZ; }
 emit() { printf '[%s] %s\n' "$(now_iso)" "$*"; }
 
 prev=""
-start_ts=$(date +%s)
 pending_since=""
 
 emit "watch start: $REPO#$PR (poll=${POLL_INTERVAL}s, pending_timeout=${PENDING_TIMEOUT}s)"
