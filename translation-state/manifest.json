@@ -12228,10 +12228,10 @@
     },
     "content/handbook/finance/expenses.md": {
       "path": "content/handbook/finance/expenses.md",
-      "upstream_sha": "8aa1a9efd98433fb2296996366f1023b5675ea70",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "dc997bfa84f2c1311a40d983eba2e031f886de3364bf36d509d1b2f728a903ff"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9a221577ee5d0928a37537da79a86f3d835de4e96848f05cc851c30502cc7ff0"
     },
     "content/handbook/finance/finance-team-performance-indicators.md": {
       "path": "content/handbook/finance/finance-team-performance-indicators.md",
@@ -15920,9 +15920,9 @@
     "content/handbook/marketing/marketing-operations/campaigns-and-programs.md": {
       "path": "content/handbook/marketing/marketing-operations/campaigns-and-programs.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T12:00:00Z",
+      "translated_at": "2026-05-14T23:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7a6dfdaa65ecd9bb5f43070f1bb1ec7dce94acffd2e360033706004ddf2708c2"
+      "input_hash": "9498314233d30187aceb19cba065cd79a40a31f109e43f5a175fc5ed19357090"
     },
     "content/handbook/marketing/marketing-operations/cognism.md": {
       "path": "content/handbook/marketing/marketing-operations/cognism.md",
@@ -27407,9 +27407,9 @@
     "content/handbook/enterprise-data/ai/agent-setup.md": {
       "path": "content/handbook/enterprise-data/ai/agent-setup.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "translated_at": "2026-05-15T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7fe4f7a99eb2f0f4b2da4c5ef7f29cfdd87f3a43c08233025b63cfd25c0bd0d8"
+      "input_hash": "84f8bc429565a55354ed1356bbe0b8f48401d79b396d35deaec8a9fb48f7ae22"
     },
     "content/handbook/enterprise-data/ai/agent-usage-guide.md": {
       "path": "content/handbook/enterprise-data/ai/agent-usage-guide.md",
@@ -27466,6 +27466,27 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "2f35d94bfbea0a5659f026b0e9c7f885420cb66b4efb776c95bf972bc1565f87"
+    },
+    "content/handbook/customer-success/product-usage-data/usage-statistics.html.md": {
+      "path": "content/handbook/customer-success/product-usage-data/usage-statistics.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-26T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "39ce21d8346b2951397c32ef22afda4043def14191a28434f92fed7b4c579cf0"
+    },
+    "content/handbook/company/working-groups/isolation/fault_tolerance.html.md": {
+      "path": "content/handbook/company/working-groups/isolation/fault_tolerance.md",
+      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
+      "translated_at": "2026-04-25T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a3097f48848e30846b6597dde8576a127ec6e19c0f02c039980f0195e25b7144"
+    },
+    "content/handbook/company/culture/songbook.md": {
+      "path": "content/handbook/company/culture/songbook.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T03:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d690d3f414f9d99cf29c72a8ffe16a7b8e3dba21d63855911d58953524d5556f"
     }
   }
 }
