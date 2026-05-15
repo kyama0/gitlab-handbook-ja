@@ -1,0 +1,49 @@
+translation:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "content/handbook/**"
+          - "translation-state/**"
+
+infra:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "infra/**"
+
+ci:
+  - changed-files:
+      - any-glob-to-any-file:
+          - ".github/workflows/**"
+          - ".github/labeler.yml"
+          - ".github/dependabot.yml"
+
+hugo:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "config/**"
+          - "layouts/**"
+          - "data/**"
+          - "assets/**"
+          - "static/**"
+          - "go.mod"
+          - "go.sum"
+
+scripts:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "scripts/**"
+          - "package.json"
+          - "package-lock.json"
+          - "tsconfig.json"
+
+docs:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "*.md"
+          - "CLAUDE.md"
+          - ".claude/**"
+
+upstream:
+  - changed-files:
+      - any-glob-to-any-file:
+          - "upstream"
+          - ".gitmodules"
