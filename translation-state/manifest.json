@@ -10408,10 +10408,10 @@
     },
     "content/handbook/engineering/infrastructure-platforms/production/architecture/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production/architecture/_index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T02:44:36Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "62a5925c07c445c40cab5980855daefe9d3cd8da9c26b9290638476431474111"
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0949a6d7dbd625c530590fba4a3ef81821e3413c5d4211124301cd4f1e70be6e"
     },
     "content/handbook/engineering/infrastructure-platforms/production/architecture/ci-architecture.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production/architecture/ci-architecture.md",

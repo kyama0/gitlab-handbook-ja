@@ -5,13 +5,13 @@ tags:
   - security_policy
   - security_policy_caplscsi
 upstream_path: "/handbook/engineering/infrastructure-platforms/production/architecture/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T02:44:36Z"
+upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
+translated_at: "2026-05-15T00:00:00Z"
 translator: claude
 stale: false
 ---
 
-<span class="inline-block rounded px-2 py-0.5 text-xs font-medium" style="background-color:#E24329;color:#ffffff">Visibility: Audit</span>
+{{< label name="Visibility: Audit" color="#E24329" >}}
 
 GitLab.com のコアインフラは主に Google Cloud Platform（GCP）の `us-east1` リージョンにホストされています（[リージョンとゾーン](https://cloud.google.com/compute/docs/regions-zones/)を参照）。
 
@@ -69,17 +69,16 @@ GitLab.com は本番用に 4 つの Kubernetes クラスターを使用してお
 - ワークロードの分離
 - クラスターのメンテナンス変更とアップグレードの分離
 
-複数のゾーンクラスターにトラフィックを分割することを選択した理由の詳細については、[単一のリージョナルクラスターに対する代替案を検討したこのIssue](https://gitlab.com/gitlab-com/gl-infra/delivery/-/issues/1150)を参照してください。
+複数のゾーンクラスターにトラフィックを分割することを選択した理由の詳細については、[単一のリージョナルクラスターに対する代替案を検討したこの Issue](https://gitlab.com/gitlab-com/gl-infra/delivery/-/issues/1150)を参照してください。
 単一のリージョナルクラスターは Sidekiq や Kas のような高帯域幅要件のないサービスやリージョナルデプロイがより適したサービスにも使用されています。
 
 GitLab の透明性の価値に従い、GitLab.com のすべての Kubernetes クラスター設定はインフラと設定を含めて公開されています。
 
 インストールの管理には以下のプロジェクトが使用されています。
 
-- [k8s-workloads/gitlab-com](https://gitlab.com/gitlab-com/gl-infra/k8s-workloads/gitlab-com): [GitLab Helm チャート](https://gitlab.com/gitlab-org/charts/gitlab)の GitLab.com 設定を含みます。
-- [k8s-workloads/gitlab-helmfiles](https://gitlab.com/gitlab-com/gl-infra/k8s-workloads/gitlab-helmfiles/): クラスターのロギング、モニタリング、インテグレーションの設定を含みます。
-- [argocd/apps](https://gitlab.com/gitlab-com/gl-infra/argocd/apps): ArgoCD のすべてのサービスのアプリケーションを含みます。
-- [argocd/config](https://gitlab.com/gitlab-com/gl-infra/argocd/config): ArgoCD のトップレベルアプリケーション、AppProjects、リポジトリ、クラスターインベントリ、RBAC 設定を含みます。
+- [k8s-workloads/gitlab-com](https://gitlab.com/gitlab-com/gl-infra/k8s-workloads/gitlab-com): GitLab.com の Kubernetes ワークロード設定を含み、コアの GitLab.com アプリケーションをデプロイする [GitLab Helm チャート](https://gitlab.com/gitlab-org/charts/gitlab)の設定もここに含まれます。
+- [argocd/apps](https://gitlab.com/gitlab-com/gl-infra/argocd/apps): ArgoCD で管理される Kubernetes サービスワークロード用の ArgoCD Applications を含みます。ArgoCD は、コアの gitlab-com アプリケーション以外の GitLab.com インフラワークロードに対する標準の GitOps デプロイツールです。
+- [argocd/config](https://gitlab.com/gitlab-com/gl-infra/argocd/config): ArgoCD のトップレベル Applications、AppProjects、リポジトリ、クラスターインベントリ、RBAC 設定を含みます。
 - [config-mgmt](https://gitlab.com/gitlab-com/gl-infra/config-mgmt): クラスターの Terraform 設定で、クラスター、ノードプール、サービスアカウント、IP アドレス予約など、クラスターを実行するために必要なすべてのリソースが設定されています。
 - [charts](https://gitlab.com/gitlab-com/gl-infra/charts): インフラ部門が、コミュニティチャートのないサービスをデプロイするために作成したチャートです。
 
@@ -97,16 +96,16 @@ Prometheus は `monitoring` ネームスペースの [kube-prometheus-stack Helm
 
 クラスターのアラートは、プラットフォームの[全体的な SLA](/handbook/engineering/monitoring/) に集約される生成済みの[ルール](https://gitlab.com/gitlab-com/runbooks/-/tree/master/mimir-rules)を使用します。
 
-ロギングは[fluentd-elasticsearch](https://gitlab.com/gitlab-com/gl-infra/argocd/apps/-/blob/main/services/fluentd-elasticsearch/README.md)を使用して設定されており、すべてのポッドのログが一意の Elasticsearch インデックスに転送されます。fluentd-elasticsearch は `logging` ネームスペースにデプロイされています。
+ロギングは [fluentd-elasticsearch](https://gitlab.com/gitlab-com/gl-infra/argocd/apps/-/blob/main/services/fluentd-elasticsearch/README.md) を使用して設定されており、すべてのポッドのログが一意の Elasticsearch インデックスに転送されます。fluentd-elasticsearch は `logging` ネームスペースにデプロイされています。
 
 ##### クラスター設定の更新
 
 GitLab アプリケーションのみに使用される単一のネームスペース `gitlab` があります。
-チャート設定の更新は [gitlab-com k8s-workloads プロジェクト](https://gitlab.com/gitlab-com/gl-infra/k8s-workloads/gitlab-com)で設定され、環境ごとのオーバーライドがある GitLab.com 環境のデフォルト設定として [YAML 設定ファイル](https://gitlab.com/gitlab-com/gl-infra/k8s-workloads/gitlab-com/-/tree/master/releases/gitlab/values)が使用されています。
+チャート設定の更新は [`k8s-workloads/gitlab-com` プロジェクト](https://gitlab.com/gitlab-com/gl-infra/k8s-workloads/gitlab-com)で設定され、環境ごとのオーバーライドがある GitLab.com 環境のデフォルト設定として [YAML 設定ファイル](https://gitlab.com/gitlab-com/gl-infra/k8s-workloads/gitlab-com/-/tree/master/releases/gitlab/values)が使用されています。
 これらの設定の変更は、MR レビューワークフローを使用してレビューした後、SRE と Delivery チームによって適用されます。
 GitLab.com で変更が承認されると、設定の更新が本番環境の可用性に依存しないよう、変更を適用するパイプラインは別の運用環境で実行されます。
 
-ロギング、モニタリングなどの他のサービスのクラスター内ネームスペースについては、[gitlab-helmfiles](https://gitlab.com/gitlab-com/gl-infra/k8s-workloads/gitlab-helmfiles)を使用して同様の GitOps ワークフローが踏まれます。
+ロギング、モニタリング、インテグレーションなどの他のサービス向けのクラスター内ネームスペースについては、ArgoCD を使用した別の GitOps ワークフローが踏まれ、サービス定義は [`argocd/apps`](https://gitlab.com/gitlab-com/gl-infra/argocd/apps) に、共通の ArgoCD 設定は [`argocd/config`](https://gitlab.com/gitlab-com/gl-infra/argocd/config) に配置されています。
 
 GitLab.com は Kubernetes クラスターで使用されるイメージのプルに自分自身に依存しません。
 代わりに、[CNG イメージ](https://gitlab.com/gitlab-org/build/CNG/)には [dev.gitlab.org](https://dev.gitlab.org) コンテナレジストリを使用します。
