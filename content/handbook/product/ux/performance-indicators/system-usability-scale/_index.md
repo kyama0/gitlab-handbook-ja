@@ -1,5 +1,5 @@
 ---
-title: "System Usability Scale"
+title: "System Usability Scale (SUS)"
 description: "System Usability Scale（SUS）は、プロダクトの長期的なユーザビリティを測定するために使用するパフォーマンス指標です。"
 upstream_path: /handbook/product/ux/performance-indicators/system-usability-scale/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141

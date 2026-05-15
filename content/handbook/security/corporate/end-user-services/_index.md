@@ -1,6 +1,6 @@
 ---
 title: CorpSec エンドユーザーサービス (EUS)
-description: EUS チームは、組織全体に対する社内 IT サポートの提供に注力しています。私たちは、アクセス管理、ハードウェアの調達とサポートに加え、最も頻繁に使用されるアプリケーション（例: Zoom、Google Workspace、Slack など）のアプリケーションサポートといった分野を担当しています。
+description: "EUS チームは、組織全体に対する社内 IT サポートの提供に注力しています。私たちは、アクセス管理、ハードウェアの調達とサポートに加え、最も頻繁に使用されるアプリケーション（例: Zoom、Google Workspace、Slack など）のアプリケーションサポートといった分野を担当しています。"
 upstream_path: /handbook/security/corporate/end-user-services/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"

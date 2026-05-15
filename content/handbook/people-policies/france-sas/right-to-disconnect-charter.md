@@ -3,7 +3,7 @@ title: "GitLab France S.A.S. つながらない権利憲章"
 description: GitLab France S.A.S. つながらない権利憲章 - フランス語と英語のバージョン。
 upstream_path: /handbook/people-policies/france-sas/right-to-disconnect-charter/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
 ---

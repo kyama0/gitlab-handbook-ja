@@ -1,5 +1,5 @@
 ---
-title: "Manav Khurana - Chief Product and Marketing Officer - README"
+title: "Manav Khurana (Chief Product and Marketing Officer) の README"
 description: "GitLab の CPMO である Manav Khurana との働き方について詳しく知る。"
 job: "Chief Product and Marketing Officer"
 upstream_path: /handbook/product/readmes/manav-readme/

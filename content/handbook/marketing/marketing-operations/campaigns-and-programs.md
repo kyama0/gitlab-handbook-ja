@@ -3,7 +3,7 @@ title: "キャンペーンとプログラム"
 description: "Marketing Operations のキャンペーンと Marketo プログラムの設定・管理"
 upstream_path: /handbook/marketing/marketing-operations/campaigns-and-programs/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-15T18:01:53Z"
+translated_at: "2026-05-14T23:00:00Z"
 translator: claude
 stale: true
 ---

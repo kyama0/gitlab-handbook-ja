@@ -3,7 +3,7 @@ title: "Field Update Tickers"
 description: "Field Update Tickers は、フィールド向けの関連アップデートを週次でまとめた要約です。"
 upstream_path: /handbook/sales/field-communications/field-update-tickers/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+translated_at: "2026-05-12T00:00:00Z"
 translator: claude
 stale: false
 ---

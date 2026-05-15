@@ -24,7 +24,7 @@ GitLab で働く女性たちをぜひ知ってください！
 | ----- | ----- | ----- |
 | 認識と教育 | GitLab における TMRG メンバーの経験への認識を高め、アライを教育する。 | |
 | プロフェッショナル開発 | TMRG メンバーのキャリアとプロフェッショナル成長の機会へのアクセスを増やす | [Women at GitLab メンターシッププログラム](mentorship-program/) |
-| 採用と定着 | GitLab における女性の採用と定着を成功させる | [候補者 TMRG コール](/handbook/hiring) に [#candidate_tmrg-call Slack チャネル](https://app.slack.com/client/T02592416/C03JEQPSN3V/thread/C012GP5CGCR-1655385119.184549) に参加して参加する |
+| 採用と定着 | GitLab における女性の採用と定着を成功させる | [#candidate_tmrg-call Slack チャネル](https://app.slack.com/client/T02592416/C03JEQPSN3V/thread/C012GP5CGCR-1655385119.184549) に参加して [候補者 TMRG コール](/handbook/hiring) に参加する |
 | ビジネスへの影響 | GitLab ビジネスに影響を与える議論を開始し貢献する。 | バーンアウトデータを People Leadership に提示 |
 
 ## リード
