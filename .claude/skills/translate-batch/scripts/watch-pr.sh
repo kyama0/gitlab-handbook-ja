@@ -58,7 +58,7 @@ while true; do
     )] | length' <<<"$payload")
   ci_pending=$(jq -r '[.statusCheckRollup[]? | select(
       (.conclusion // .state // "") | ascii_upcase
-        | IN("","PENDING","IN_PROGRESS","QUEUED","WAITING")
+        | IN("","PENDING","IN_PROGRESS","QUEUED","WAITING","EXPECTED")
     )] | length' <<<"$payload")
 
   snap="state=$pr_state decision=$decision mergeable=$mergeable merge_status=$merge_status ci_failed=$ci_failed ci_pending=$ci_pending"
@@ -95,7 +95,7 @@ while true; do
   fi
 
   # Terminal: ready to merge
-  if [[ "$decision" == "APPROVED" && "$mergeable" == "MERGEABLE" && "$ci_pending" -eq 0 ]]; then
+  if [[ "$decision" == "APPROVED" && "$mergeable" == "MERGEABLE" && "$merge_status" != "BLOCKED" && "$ci_pending" -eq 0 ]]; then
     emit "terminal: APPROVED + MERGEABLE + CI clean — ready to merge"
     exit 0
   fi

@@ -159,6 +159,9 @@ gh pr create --base main --title "translation: batch ${NEXT_DATE}-${NEXT_N} (...
 - [x] フロントマター追跡フィールド付与確認
 
 🤖 Generated with [Claude Code](https://claude.com/claude-code)"
+
+# 作成した PR 番号を取得 (以後の手順で ${PR_NUM} を参照)
+PR_NUM="$(gh pr view --repo kyama0/gitlab-handbook-ja --json number --jq .number)"
 ```
 
 **PR を作成したら必ず watcher を起動する** (ステップ 6-1 で再掲):
