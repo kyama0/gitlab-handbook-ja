@@ -159,7 +159,18 @@ gh pr create --base main --title "translation: batch ${NEXT_DATE}-${NEXT_N} (...
 - [x] フロントマター追跡フィールド付与確認
 
 🤖 Generated with [Claude Code](https://claude.com/claude-code)"
+
+# 作成した PR 番号を取得 (以後の手順で ${PR_NUM} を参照)
+PR_NUM="$(gh pr view --repo kyama0/gitlab-handbook-ja --json number --jq .number)"
 ```
+
+**PR を作成したら必ず watcher を起動する** (ステップ 6-1 で再掲):
+
+```bash
+.claude/skills/translate-batch/scripts/watch-pr.sh kyama0/gitlab-handbook-ja ${PR_NUM}
+```
+
+このスクリプトを **Monitor ツール** で background 起動すると、PR の `reviewDecision` / `mergeable` / `state` / CI 結果が変化したタイミングだけ通知が飛ぶ。webhook 取りこぼし対策の保険として必須化する。
 
 ## ヘルパースクリプト
 
@@ -181,21 +192,38 @@ upstream に `*.html.md` があるが翻訳が `.md` で存在する場合、man
 
 PR を作成したら、そのまま CodeRabbit のレビューを待ち、自分で対応してマージするところまで一気通貫で行う。翻訳バッチ PR は **base=main** なので、CR APPROVED + CI CLEAN を確認したら自分でマージする — 先生に通知してマージを待つ必要はない。
 
-### 6-1: レビュー待ちループ
+### 6-1: レビュー待ち — Monitor で watcher を貼り付ける
+
+PR の `reviewDecision` / `mergeable` / CI 結果は **webhook では取りこぼすことがある** (status 系イベントは届かないことがある)。subscribe だけに頼らず、必ず Monitor で polling watcher を起動して状態遷移を確実に拾う。
 
 ```bash
-# 1〜2 分ごとに状態確認 (CodeRabbit は初回レビューに 5〜15 分かかることが多い)
-PR_NUM=<作成した PR 番号>
-gh pr view ${PR_NUM} --json reviewDecision,statusCheckRollup,mergeable -q \
-  '"decision:\(.reviewDecision) mergeable:\(.mergeable)\n" + (.statusCheckRollup[] | "\(.name // .context): \(.conclusion // .state // .status)")'
+# Monitor ツールで以下を起動 (description は "PR #${PR_NUM} watcher" など):
+.claude/skills/translate-batch/scripts/watch-pr.sh kyama0/gitlab-handbook-ja ${PR_NUM}
 ```
 
-状態判定 (PR 監視ワークフローと同じ):
+`watch-pr.sh` は 1 分ごとに `gh pr view` で状態スナップショットを取り、前回と差分があった時だけ 1 行 stdout に emit する (Monitor が各行を通知に変換)。以下の terminal state に到達したら exit して通知を打つ:
 
-- **APPROVED + CI CLEAN**: `gh pr merge ${PR_NUM} --merge` で自分でマージして終了
-- **CHANGES_REQUESTED**: 6-2 に進む
-- **PENDING のまま 15 分以上**: `gh pr comment ${PR_NUM} --body "@coderabbitai review"` でレビュー再依頼
-- **CONFLICTING**: 6-3 に進む (main を取り込んでコンフリクト解消)
+- `APPROVED + MERGEABLE + CI clean` → 6-1A に進む（マージ）
+- `CHANGES_REQUESTED` → 6-2 に進む（CR 対応）
+- `CONFLICTING` → 6-3 に進む（コンフリクト解消）
+- `CI failed` → CI ログを調査して fix
+- `MERGED` / `CLOSED` → 完了 / 諦め
+- `PENDING_TIMEOUT` (既定 15 分) → `gh pr comment ${PR_NUM} --body "@coderabbitai review"` で再依頼してから watcher を再起動
+
+`watch-pr.sh` は `gh pr view` で PR 全体の最新状態を毎ポーリング取り直すので、re-push しても新しい HEAD を自動で追跡できる。**watcher の再起動が必要なのは以下のケースだけ**:
+
+- 前回のラウンドで terminal state (`CHANGES_REQUESTED` / `CI failed` / `CONFLICTING` など) に到達して watcher が既に exit している → 修正 push 後、新しい watcher を起動
+- watcher プロセスがクラッシュした、Monitor がタイムアウトした
+- 別の PR 番号を watch したくなった
+
+#### 6-1A: マージ実行
+
+```bash
+# Merge commit 方式 (履歴を保つ)
+gh pr merge ${PR_NUM} --merge
+# または squash したい場合
+# gh pr merge ${PR_NUM} --squash
+```
 
 ### 6-2: CR 指摘への対応
 
