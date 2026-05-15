@@ -9,6 +9,7 @@ content path フィールド (`path`) は `.md` のままにする。
 """
 import json
 import hashlib
+import os
 
 MAPPINGS = [
     # ('content/handbook/<...>.html.md',
@@ -27,6 +28,9 @@ def main():
         if content_key not in e:
             print(f"skip: {content_key} not in manifest")
             continue
+        if not os.path.exists(upstream_path):
+            print(f"skip: upstream file not found: {upstream_path}")
+            continue
         h = hashlib.sha256()
         with open(upstream_path, "rb") as f:
             for chunk in iter(lambda: f.read(8192), b""):
@@ -40,8 +44,9 @@ def main():
             "input_hash": h.hexdigest(),
         }
         added += 1
+    m["entries"] = e
     with open("translation-state/manifest.json", "w") as f:
-        json.dump({"entries": e}, f, indent=2, ensure_ascii=False)
+        json.dump(m, f, indent=2, ensure_ascii=False)
         f.write("\n")
     print(f"added: {added}")
 

@@ -248,7 +248,7 @@ git push origin <PR の head branch>
 
 - マージ成功を確認したら終了。
 - **main 統合 PR (base=main) をマージしたときは Slack 通知を送る** — `mcp__claude_ai_Slack__slack_send_message` で channel `C0B3K9LTYHW` (#gitlab-handbook-ja) に投稿。`<@U0A6FDDNTME>` 宛にメンションし、PR 番号・URL・CR 対応の概要・マージ済みである旨を簡潔に伝える。
-  ```
+  ```text
   <@U0A6FDDNTME> 先生、PR #<NUM> (main 統合) のマージが完了しました！:sparkles:
 
   https://github.com/kyama0/gitlab-handbook-ja/pull/<NUM>

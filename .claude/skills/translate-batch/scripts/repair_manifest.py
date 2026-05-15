@@ -50,16 +50,24 @@ def main():
         rel = cp.relative_to(ROOT).as_posix()
         if rel in e:
             continue
-        rel_h = cp.relative_to(CONTENT_ROOT).as_posix()
-        up = UPSTREAM_ROOT / rel_h
-        if not up.exists():
-            alt = up.with_suffix(".html.md")
-            if alt.exists():
-                up = alt
-            else:
-                continue
         fm = read_fm(cp)
         if not fm.get("upstream_sha") or not fm.get("translated_at"):
+            continue
+        # 1) フロントマターの upstream_path があれば優先（移動/改名済みページ対応）
+        up = None
+        if fm.get("upstream_path"):
+            candidate = ROOT / "upstream" / fm["upstream_path"].lstrip("/")
+            if candidate.exists():
+                up = candidate
+        # 2) コンテンツの相対パスから推測
+        if up is None:
+            rel_h = cp.relative_to(CONTENT_ROOT).as_posix()
+            cand = UPSTREAM_ROOT / rel_h
+            if cand.exists():
+                up = cand
+            elif cand.with_suffix(".html.md").exists():
+                up = cand.with_suffix(".html.md")
+        if up is None:
             continue
         e[rel] = {
             "path": rel,
@@ -69,7 +77,11 @@ def main():
             "input_hash": sha256_file(up),
         }
         added += 1
-    out = {"entries": e} if wrap else e
+    if wrap:
+        m["entries"] = e
+        out = m
+    else:
+        out = e
     MANIFEST.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
     print(f"added: {added}, total: {len(e)}")
 
