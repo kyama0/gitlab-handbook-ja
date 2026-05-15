@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 # watch-pr.sh — translate-batch スキル用 PR 状態ポーラー。
 #
-# 30 秒ごとに gh CLI で PR を読み、reviewDecision / mergeable / state /
+# 60 秒ごとに gh CLI で PR を読み、reviewDecision / mergeable / state /
 # mergeStateStatus / 失敗 CI チェック数のスナップショットを取る。前回値から
 # 変化したときだけ 1 行 stdout に emit する (Monitor ツールが各行を通知に変換)。
 #
@@ -17,7 +17,7 @@
 #
 # 使い方:
 #   watch-pr.sh <owner/repo> <pr_number>
-#   POLL_INTERVAL=30 PENDING_TIMEOUT=900 watch-pr.sh kyama0/gitlab-handbook-ja 321
+#   POLL_INTERVAL=60 PENDING_TIMEOUT=900 watch-pr.sh kyama0/gitlab-handbook-ja 321
 #
 # 依存: gh CLI, jq.
 
@@ -25,7 +25,7 @@ set -uo pipefail
 
 REPO="${1:?usage: watch-pr.sh <owner/repo> <pr_number>}"
 PR="${2:?usage: watch-pr.sh <owner/repo> <pr_number>}"
-POLL_INTERVAL="${POLL_INTERVAL:-30}"
+POLL_INTERVAL="${POLL_INTERVAL:-60}"
 PENDING_TIMEOUT="${PENDING_TIMEOUT:-900}"
 
 now_iso() { date -u +%Y-%m-%dT%H:%M:%SZ; }
