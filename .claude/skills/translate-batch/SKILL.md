@@ -41,7 +41,7 @@ npm run sync:upstream 2>/dev/null | grep -E '\[(new|modified)\]'
 1. `[modified]` (既訳の上流追従)
 2. `[new]` (新規翻訳)
 
-件数の上限はないが、translator サブエージェントには 1 回の呼び出しでまとめて渡しすぎると content filter / token 上限に引っかかりやすいので、目安として 10〜30 ファイルずつ複数回に分けて呼び出すのが安全。
+件数の上限はないが、translator サブエージェントには 1 回の呼び出しでまとめて渡しすぎると content filter / token 上限に引っかかりやすい。**目安として 5〜10 ファイル / 呼び出し**に抑え、長文の `_index.md` を複数含む場合は 3〜5 件まで減らす。必要なら複数バッチに分けて逐次起動する (並列起動は manifest 衝突するので避ける)。
 
 **重要な落とし穴**:
 
@@ -63,18 +63,77 @@ npm run sync:upstream 2>/dev/null | grep -E '\[(new|modified)\]'
 - 期待値: 「manifest entries N → N+X」
 - ショートコード `{{< ... >}}` `{{% ... %}}` は原文のまま保持
 - **manifest の既存キー順序は絶対にソートしない**
+- 「途中で停止しないこと」「失敗した場合はどのファイルが未処理か明示すること」を必ず指示する
+
+#### 重要: token 上限超過リスクと停滞検出
+
+translator サブエージェントは出力 **32K token** の上限があり、長文ファイル (`_index.md` など) を複数渡すと途中で打ち切られる。打ち切られると completion 通知で
+`API Error: Claude's response exceeded the 32000 output token maximum` が返り、
+それまでにエージェントが Write/Edit したファイルだけが残る (manifest は未更新のまま終わることが多い)。
+
+**停滞・打ち切りの検出**:
+
+1. translator を launch した後、`Stop hook feedback: uncommitted changes` が連続して
+   届くようになったら、agent が部分的に書き出しているサイン。`git status --short` で
+   進捗を確認しながら、中間状態をこまめに commit & push する (commit 時点で agent
+   が再書き込みすればまた status に上がるので、こまめでも問題ない)。
+2. agent transcript の更新時刻を確認する。**5 分以上更新がなければ停滞している
+   可能性が高い**:
+   ```bash
+   # agentId は Agent ツール launch 時の戻り値に含まれる
+   stat -c "%y %n" /root/.claude/projects/*/subagents/agent-<agentId>.jsonl
+   # ローカル環境では ~/.claude/projects/...
+   ```
+3. 翻訳対象の各ファイルが期待 `upstream_sha` に更新されているか確認:
+   ```bash
+   for f in <翻訳対象ファイル群>; do
+     printf "%-90s " "$f"
+     grep '^upstream_sha:' "$f" | head -1
+   done
+   ```
+4. 5 分以上止まっていて、かつ未処理ファイルが残っているなら、**未処理ファイル
+   だけを対象に新しい translator を起動する**。元の agent は最終的に completion
+   通知 (token 上限エラー) を返してくるので、それは待つだけでよい。新エージェント
+   には「途中で停止しないこと」「重要: N ファイルすべてを必ず処理してください」
+   と強めに念押しする。
 
 ### ステップ 4: 検証
 
+translator が完了したら、commit する前に **必ず以下を全件確認**:
+
 ```bash
+# 1. 全 modified ファイルが期待 upstream_sha とタイムスタンプになっているか
+for f in <翻訳対象ファイル群>; do
+  printf "%-90s " "$f"
+  grep '^upstream_sha:' "$f" | head -1
+done
+
+# 2. manifest が全ファイル更新されているか (停滞 agent は manifest を更新せず終わることがある)
+python3 -c "
+import json
+m = json.load(open('translation-state/manifest.json'))
+entries = m.get('entries', m)
+for k in [<翻訳対象キー>]:
+    e = entries.get(k, 'MISSING')
+    print(k, '->', e if e == 'MISSING' else e.get('upstream_sha', '?'))
+"
+```
+
+期待値と違うファイル・entry があれば手動で書き戻す。
+
+```bash
+# 3. entries とコンテンツ件数の整合
 python3 -c "import json; m=json.load(open('translation-state/manifest.json')); print(len(m.get('entries', m)))"
 find content/handbook -name '*.md' | wc -l
 # 両者が一致すればOK。差があれば scripts/repair_manifest.py を実行。
+# (HEAD 時点でもともと差があるなら .html.md エイリアス分なので無視してよい)
 
+# 4. Hugo ビルド (環境に hugo があるとき)
 rm -rf resources/_gen public .hugo_build.lock
 hugo --renderToMemory --quiet
 echo "exit=$?"
 # exit=0 を確認。エラーが出たらショートコード/HTML タグの欠落を疑う。
+# Hugo が環境にない場合は CI の app_ci.yml ビルドジョブに検証を委譲する。
 ```
 
 ### ステップ 5: コミット・プッシュ・PR
@@ -272,6 +331,6 @@ git push origin <PR の head branch>
 - manifest entries の差分
 - CR 対応の概要 (何件対応 / 何件 upstream バグでスキップ)
 - 最終的にマージしたかどうか
-- 特記事項 (content filter ブロック、修復が走った件、コンフリクト解消の有無、など)
+- 特記事項 (content filter ブロック、修復が走った件、コンフリクト解消の有無、token 上限超過で translator を再起動した件、など)
 
 それ以上の詳細は不要。
