@@ -15316,9 +15316,9 @@
     "content/handbook/marketing/developer-relations/workflows-tools/forum.md": {
       "path": "content/handbook/marketing/developer-relations/workflows-tools/forum.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T12:00:00Z",
+      "translated_at": "2026-05-15T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "f6b2a6d656bed961363a36bf8d0ceb1630f7776da6ed39818bd983aaddf437c6"
+      "input_hash": "26efc0e7d50228a8d11c6aa31d0313f6860cc4fe2c3ded2675128a8dd2b2e8bd"
     },
     "content/handbook/marketing/developer-relations/workflows-tools/reddit.md": {
       "path": "content/handbook/marketing/developer-relations/workflows-tools/reddit.md",
