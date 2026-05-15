@@ -39,6 +39,7 @@ docs:
   - changed-files:
       - any-glob-to-any-file:
           - "*.md"
+          - "**/README.md"
           - "CLAUDE.md"
           - ".claude/**"
 
