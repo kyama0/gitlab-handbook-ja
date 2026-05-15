@@ -8085,9 +8085,9 @@
     "content/handbook/engineering/data-engineering/analytics/optimize.md": {
       "path": "content/handbook/engineering/data-engineering/analytics/optimize.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "translated_at": "2026-05-15T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "3138bb914f4656bee9bda3d56221cb0d2cf8c49cf7f9db8a332c9dc03a1c7450"
+      "input_hash": "b1e95aa89a10aa2a763c2d285cc2d890ca7de64c5b54c96052bf24cfd3716fbe"
     },
     "content/handbook/engineering/data-engineering/analytics/platform-insights.md": {
       "path": "content/handbook/engineering/data-engineering/analytics/platform-insights.md",
