@@ -27486,6 +27486,13 @@
       "translated_at": "2026-05-15T03:30:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "d690d3f414f9d99cf29c72a8ffe16a7b8e3dba21d63855911d58953524d5556f"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T04:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "77df2162c2adb5cd62479255fd6a985f2c82d18178f4b6f47fc4dee80b8e2be1"
     }
   }
 }
