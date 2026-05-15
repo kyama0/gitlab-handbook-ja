@@ -2,10 +2,11 @@
 title: DAP Rapid — フィールド Issue 報告
 description: ソリューションアーキテクトが顧客のブロッカーとなる DAP Issue をエンジニアリングへ報告する方法
 upstream_path: /handbook/solutions-architects/tools-and-resources/dap-issue-reporting/
-upstream_sha: 5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8
-translated_at: "2026-05-08T17:29:46Z"
+upstream_sha: eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81
+translated_at: "2026-05-15T00:00:00+00:00"
 translator: claude
 stale: false
+model: claude-opus-4-7
 ---
 
 ## 概要
@@ -113,7 +114,7 @@ Issue 報告に `#building-on-duo-agent-platform`、`#usage-billing-help`、`#da
 
 ## 関連リソース
 
-- [Support Super Form](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/) — プリセールス中のサポートアシスタンス依頼
+- [Zendesk Internal Request Form](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783651259548) — Customer Support Internal Requests
 - [RFH プロセス](https://gitlab.com/gitlab-com/request-for-help/) — エンジニアリングへの Request for Help
 - [AI POV のスコープと受け入れ](/handbook/solutions-architects/playbooks/pov/ai/) — DAP 顧客トライアルの実施
 - [GitLab サポート SLA](https://support.gitlab.com/hc/en-us/articles/11626483177756-GitLab-Support) — 公式の顧客向け SLA

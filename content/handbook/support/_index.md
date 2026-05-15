@@ -2,10 +2,11 @@
 title: サポートチーム ハンドブック
 description: GitLab サポートチームのハンドブックは、私たちがなぜ・どのようにこの方法で働いているのかを示す中心的なリポジトリです。
 upstream_path: /handbook/support/
-upstream_sha: c5d40e13183c5a0aeeafefbee88ab3fac48ced5a
-translated_at: "2026-05-08T17:40:50Z"
+upstream_sha: eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81
+translated_at: "2026-05-15T00:00:00+00:00"
 translator: claude
 stale: false
+model: claude-opus-4-7
 ---
 
 ## GitLab サポートチーム ハンドブックへようこそ
