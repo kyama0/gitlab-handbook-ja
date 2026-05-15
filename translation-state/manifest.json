@@ -20441,9 +20441,16 @@
     "content/handbook/security/product-security/security-platforms-architecture/_index.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
+      "translated_at": "2026-05-15T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "cc659fb38d796777e4eb5784aa284e3190997be60e7be345f8911e87dad1c91f"
+      "input_hash": "8f508e81c1a314e6b3ea4c9f2fc12120343729def334b5c8a1721348c1ec1a64"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/guiding-principles.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/guiding-principles.md",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4f2a0220153f7f4b51a8d7d5a93821141060f9618d186c0da760bede7e33005c"
     },
     "content/handbook/security/product-security/security-platforms-architecture/security-research/_index.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/security-research/_index.md",

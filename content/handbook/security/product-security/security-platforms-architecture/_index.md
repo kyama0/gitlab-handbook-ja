@@ -3,7 +3,7 @@ title: "Security Platforms & Architecture"
 description: "Security Platforms & Architecture チームチャーター"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:00:00Z"
+translated_at: "2026-05-15T12:00:00Z"
 translator: claude
 stale: false
 ---
@@ -13,6 +13,10 @@ stale: false
 ## ミッションステートメント
 
 Security Platforms and Architecture (SPA) サブ部門は、製品ライフサイクル全体を通してセキュリティリスクを特定、優先順位付け、軽減することにより、GitLab のプラットフォームと製品を保護します。[Security Architecture](/handbook/security/product-security/security-platforms-architecture/security-architecture/)、[Application Security](/handbook/security/product-security/security-platforms-architecture/application-security/)、[Security Research](/handbook/security/product-security/security-platforms-architecture/security-research/) で構成され、戦略的なセキュリティアーキテクチャと運用上のアプリケーションセキュリティを組み合わせて、GitLab が市場で最もセキュアなソフトウェアファクトリープラットフォームとなることを可能にします。私たちは GitLab のエンジニアと製品チームと協力し、設計と開発の段階で脆弱性を予測し防止するとともに、GitLab の顧客が信頼できる高品質なソフトウェアの提供を保証します。私たちは体系的な製品セキュリティリスクと運用上のアプリケーションセキュリティに焦点を当て、エンジニアリングの開発速度を維持しながら、それらを軽減するためにクロスファンクショナルに作業します。
+
+## SPA チームのガイディングプリンシプル
+
+SPA のすべてのメンバーは、私たちの [ガイディングプリンシプル](/handbook/security/product-security/security-platforms-architecture/guiding-principles/) に従って活動することが期待されます。これらの原則は、私たちがどのように意思決定し、業務をオーナーシップを持って進め、コミュニケーションを取り、互いを支え、改善していくかをカバーしています。
 
 ## バリュープロポジション
 
