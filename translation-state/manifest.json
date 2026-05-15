@@ -17850,10 +17850,10 @@
     },
     "content/handbook/support/workflows/how-to-wir-podcast.md": {
       "path": "content/handbook/support/workflows/how-to-wir-podcast.md",
-      "upstream_sha": "47fdb6582389288bed0f04a23aa5d972c3ce1ff5",
-      "translated_at": "2026-05-08T00:00:00Z",
+      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "translated_at": "2026-05-15T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "6f852117bd20dcaea884628d08423630654ce23dbce0c194aa657237e1973ee5"
+      "input_hash": "b2ba1a62b485c8d9d9d878b7592de4d8c455a9389d001b53fd4d09cfbc81e665"
     },
     "content/handbook/support/workflows/improving-documentation.md": {
       "path": "content/handbook/support/workflows/improving-documentation.md",
