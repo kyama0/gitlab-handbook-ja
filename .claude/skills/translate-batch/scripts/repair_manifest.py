@@ -53,19 +53,19 @@ def main():
         fm = read_fm(cp)
         if not fm.get("upstream_sha") or not fm.get("translated_at"):
             continue
-        # 1) フロントマターの upstream_path があれば優先（移動/改名済みページ対応）
+        # 1) フロントマターの upstream_path があれば優先 (移動/改名済みページ対応)
         up = None
         if fm.get("upstream_path"):
             candidate = ROOT / "upstream" / fm["upstream_path"].lstrip("/")
-            if candidate.exists():
+            if candidate.is_file():
                 up = candidate
         # 2) コンテンツの相対パスから推測
         if up is None:
             rel_h = cp.relative_to(CONTENT_ROOT).as_posix()
             cand = UPSTREAM_ROOT / rel_h
-            if cand.exists():
+            if cand.is_file():
                 up = cand
-            elif cand.with_suffix(".html.md").exists():
+            elif cand.with_suffix(".html.md").is_file():
                 up = cand.with_suffix(".html.md")
         if up is None:
             continue
