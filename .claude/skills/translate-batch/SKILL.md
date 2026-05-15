@@ -1,6 +1,6 @@
 ---
 name: translate-batch
-description: GitLab Handbook (handbook.gitlab.com) の英語原文を日本語に翻訳して `gitlab-handbook-ja` リポジトリに新しい batch PR を作成し、CodeRabbit レビュー対応とマージまでを自己完結で行う。upstream submodule で pending になっているファイルを translator サブエージェント経由で翻訳し、manifest を更新し、stacked PR (`translation/batch-YYYY-MM-DD-N`) として push する。先生から「翻訳バッチを回して」「次の翻訳バッチを作って」「pending を消化して」「翻訳して PR 作って」など、新しい翻訳バッチ作業の指示が来たときに使う。
+description: GitLab Handbook (handbook.gitlab.com) の英語原文を日本語に翻訳して `gitlab-handbook-ja` リポジトリに新しい batch PR を作成し、CodeRabbit レビュー対応とマージまでを自己完結で行う。upstream submodule で pending になっているファイルを translator サブエージェント経由で翻訳し、manifest を更新し、`translation/batch-YYYY-MM-DD-N` ブランチから `main` への PR として push する（base は常に `main`）。先生から「翻訳バッチを回して」「次の翻訳バッチを作って」「pending を消化して」「翻訳して PR 作って」など、新しい翻訳バッチ作業の指示が来たときに使う。
 ---
 
 # GitLab Handbook 日本語翻訳バッチ
@@ -81,8 +81,10 @@ translator サブエージェントは出力 **32K token** の上限があり、
    可能性が高い**:
    ```bash
    # agentId は Agent ツール launch 時の戻り値に含まれる
+   # Linux (リモート環境): /root/.claude/projects/... / ローカル Linux: ~/.claude/projects/...
    stat -c "%y %n" /root/.claude/projects/*/subagents/agent-<agentId>.jsonl
-   # ローカル環境では ~/.claude/projects/...
+   # macOS の場合 (BSD stat):
+   #   stat -f "%Sm %N" -t "%Y-%m-%d %H:%M:%S" ~/.claude/projects/*/subagents/agent-<agentId>.jsonl
    ```
 3. 翻訳対象の各ファイルが期待 `upstream_sha` に更新されているか確認:
    ```bash
@@ -292,9 +294,10 @@ git push origin <PR の head branch>
 cd /tmp/pr${PR_NUM}
 git checkout <PR の head branch>
 git merge origin/main --no-edit
-# 競合した場合、原則として origin/main 側 (翻訳側 = ours / 翻訳の最新 = theirs に注意して
-# どちらを残すか判断する) を選ぶ。`translated_at` の競合は新しい日時を残す。
-git checkout --theirs <競合ファイル>  # または --ours
+# head ブランチで実行するので: ours = 現在のバッチ翻訳 / theirs = origin/main (最新翻訳)。
+# 原則として origin/main (最新翻訳) を採用する = `--theirs`。
+# `translated_at` の競合は新しい日時を残す。
+git checkout --theirs <競合ファイル>  # または --ours で現在のバッチを優先
 # ファイル内の特定行だけ手動マージしたい場合は Read + Edit で
 git add <競合ファイル>
 git commit --no-edit
