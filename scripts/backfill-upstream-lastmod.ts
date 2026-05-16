@@ -15,7 +15,7 @@
  *   npx tsx scripts/backfill-upstream-lastmod.ts            # apply
  *   npx tsx scripts/backfill-upstream-lastmod.ts --dry-run  # preview only
  */
-import { readFile, writeFile } from 'node:fs/promises';
+import { readFile, writeFile, stat } from 'node:fs/promises';
 import path from 'node:path';
 import {
   getUpstreamCommittedAt,
@@ -46,12 +46,29 @@ function upsertTopLevelKey(fm: string, key: string, value: string): string {
 }
 
 /**
- * Map a manifest key (which mirrors the upstream path) to the local
- * translation file path. Mostly identical, except upstream's `.html.md`
- * files are renamed to `.md` locally (see scripts/normalize-content-names.ts).
+ * Locate the local translation file corresponding to a manifest key.
+ *
+ * Project policy oscillates on `.html.md`:
+ *   - Translator agent guidance renames `*.html.md` → `*.md` locally and
+ *     records the legacy URL in `aliases` (see scripts/normalize-content-names.ts).
+ *   - Issue #74 / commit f0486c9 enforces strict 1:1 with upstream, so the
+ *     `.html.md` extension is preserved.
+ * Try the key as-is first; fall back to the `.md` form if the file is not
+ * found. Returns `null` when neither path resolves.
  */
-function manifestKeyToLocalPath(key: string): string {
-  return key.replace(/\.html\.md$/, '.md');
+async function resolveLocalPath(key: string): Promise<string | null> {
+  const candidates = [key];
+  if (key.endsWith('.html.md')) candidates.push(key.replace(/\.html\.md$/, '.md'));
+  for (const c of candidates) {
+    const abs = path.resolve(c);
+    try {
+      await stat(abs);
+      return abs;
+    } catch {
+      // try next
+    }
+  }
+  return null;
 }
 
 interface Stats {
@@ -85,18 +102,13 @@ async function main(): Promise<void> {
       stats.manifestUpdated++;
     }
 
-    const localPath = path.resolve(manifestKeyToLocalPath(key));
-    let raw: string;
-    try {
-      raw = await readFile(localPath, 'utf8');
-    } catch (err) {
-      if ((err as NodeJS.ErrnoException).code === 'ENOENT') {
-        stats.skippedNoFile++;
-        console.warn(`[missing translation] ${key}`);
-        continue;
-      }
-      throw err;
+    const localPath = await resolveLocalPath(key);
+    if (!localPath) {
+      stats.skippedNoFile++;
+      console.warn(`[missing translation] ${key}`);
+      continue;
     }
+    const raw = await readFile(localPath, 'utf8');
 
     const split = splitFrontmatter(raw);
     if (!split) {

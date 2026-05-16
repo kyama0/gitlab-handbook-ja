@@ -1,8 +1,6 @@
 ---
 title: "GitLab 利用統計"
 description: "このページでは、当社の利用統計と SFDC のインスタンス情報について概説します。"
-aliases:
-  - /handbook/customer-success/product-usage-data/usage-statistics.html/
 upstream_path: /handbook/customer-success/product-usage-data/usage-statistics.html/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
