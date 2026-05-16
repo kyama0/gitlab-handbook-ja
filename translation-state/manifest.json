@@ -19195,7 +19195,7 @@
     "content/handbook/marketing/field-marketing/_index.md": {
       "path": "content/handbook/marketing/field-marketing/_index.md",
       "upstream_sha": "eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81",
-      "translated_at": "2026-05-15T00:00:00+00:00",
+      "translated_at": "2026-05-16T00:31:30Z",
       "model": "claude-opus-4-7",
       "input_hash": "d12b4b6decae06b86247aef951336fc14ed057a0e8a048c869ab712148e9d035",
       "upstream_committed_at": "2026-05-15T17:45:31+00:00"
@@ -19210,8 +19210,8 @@
     },
     "content/handbook/marketing/field-marketing/field-marketing-owned-virtual-events.md": {
       "path": "content/handbook/marketing/field-marketing/field-marketing-owned-virtual-events.md",
-      "upstream_sha": "edd8c6568dbcc09416a52d0c74b1d275e419c48b",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81",
+      "translated_at": "2026-05-16T00:31:35Z",
       "model": "claude-opus-4-7",
       "input_hash": "dda6aace043dabf1be1a5f670271381ce3bbba6b9b739cf7783a14188efa3089",
       "upstream_committed_at": "2026-04-09T20:14:47+00:00"
