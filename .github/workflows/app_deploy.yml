@@ -60,6 +60,11 @@ jobs:
         run: hugo --minify
         env:
           HUGO_BASEURL: ${{ vars.SITE_URL }}
+          # /images/* リダイレクト先と Markdown image render hook が前置する
+          # ベース URL を R2 公開エンドポイントに上書きする。未設定だと
+          # config.yaml の default (handbook.gitlab.com) が使われ、本家への
+          # ホットリンクになってしまう。
+          HUGO_PARAMS_image_base_url: ${{ vars.PUBLIC_R2_BASE }}
 
       - name: Pagefind index (CJK-aware static site search)
         run: npx pagefind --site public
