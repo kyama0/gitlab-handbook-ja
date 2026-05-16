@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-24T13:12:58-07:00"
 ---
 
 メンターシップは、個人の経験、背景、視点から学ぶ機会です。メンターシップは信頼を築き、間違いを許容する安全な場所を提供し、メンターとメンティーの両方の成長を促進します。質問やフィードバックは [#mentoring Slack チャンネル](https://app.slack.com/client/T02592416/C01QKNDJ76J) までお寄せください。

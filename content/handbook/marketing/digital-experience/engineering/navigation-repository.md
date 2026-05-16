@@ -5,6 +5,7 @@ upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-01T15:53:53-04:00"
 ---
 
 [Navigation リポジトリ](https://gitlab.com/gitlab-com/marketing/digital-experience/navigation)（`be-navigation` とも呼ばれます）は、マーケティング Web サイトの他の部分とは独立して更新・保守される別パッケージです。これにより、1 か所で変更を加えれば、消費するリポジトリが単一のソース・オブ・トゥルースから取り込めるようになります。Navigation は現在、[Digital Experience チーム](/handbook/marketing/digital-experience/)が保守しています。

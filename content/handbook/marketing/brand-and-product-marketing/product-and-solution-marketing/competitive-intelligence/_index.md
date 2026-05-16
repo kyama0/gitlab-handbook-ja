@@ -5,6 +5,7 @@ upstream_sha: 9bcc3fa641f3c78cb94b2ff71f5a8170ff5b412b
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-14T07:59:50-06:00"
 ---
 
 ## GitLab における競合インテリジェンス

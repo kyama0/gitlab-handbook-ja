@@ -5,6 +5,7 @@ upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
 translated_at: "2026-04-29T18:40:41Z"
 translator: claude
 stale: false
+lastmod: "2026-04-16T13:51:37+00:00"
 ---
 
 更新：Finance メンターシッププログラムは現在活動していません。状況が変わった場合は、このページを更新します。GitLab のメンターシッププログラムについては、こちらの[ページ](/handbook/people-group/learning-and-development/mentor)をご参照ください。

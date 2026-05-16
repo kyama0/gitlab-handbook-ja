@@ -5,6 +5,7 @@ upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-29T05:50:35Z"
 translator: claude
 stale: false
+lastmod: "2026-02-27T11:46:45+01:00"
 ---
 
 ## デュアルフライホイール

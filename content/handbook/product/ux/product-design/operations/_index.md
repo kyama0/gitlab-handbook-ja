@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-13T14:13:34-06:00"
 ---
 
 プロダクトデザインは、GitLabのフルスタックエクスペリエンス組織である[Upstream Studios](/handbook/upstream-studios/)の一部です。上流に位置する戦略的パートナーとして、私たちは最初から計画に関与し、これらの運用プラクティスを使用して、プロダクト開発プロセス全体を通じてデザインが統合されることを確保します。

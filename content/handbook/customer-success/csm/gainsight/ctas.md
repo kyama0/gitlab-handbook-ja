@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T01:01:39Z"
 translator: claude
 stale: false
+lastmod: "2025-01-04T01:51:25+00:00"
 ---
 
 [CTA](https://support.gainsight.com/gainsight_nxt/04Cockpit_and_Playbooks/Cockpit_Version_-_Archived/About/Archived_CTAs%2C_Tasks%2C_and_Playbooks_Overview)（コールトゥアクション）は、顧客に紐付いたアクションで、CSMのコックピットおよびアカウントコックピットに表示されます。CTAはいつでも手動で作成できますが、特定のイベントやデータに基づいて自動的に作成されるものもあります。

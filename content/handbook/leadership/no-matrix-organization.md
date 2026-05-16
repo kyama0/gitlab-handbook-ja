@@ -5,6 +5,7 @@ upstream_sha: 5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-03-17T12:30:19-07:00"
 ---
 
 ## ノーマトリクス組織のはじめに

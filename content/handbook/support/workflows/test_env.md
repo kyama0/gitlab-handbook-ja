@@ -7,6 +7,7 @@ upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
 translated_at: "2026-05-08T03:10:58Z"
 translator: claude
 stale: false
+lastmod: "2026-02-11T09:03:18+01:00"
 ---
 
 ## 適切なテスト環境の選択

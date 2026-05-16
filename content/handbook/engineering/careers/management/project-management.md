@@ -6,6 +6,7 @@ upstream_sha: "3480299851f7e2243d4f08b75dac452f89929636"
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T19:48:12+00:00"
 ---
 
 [プロダクト](/handbook/product/)はプロダクトの方向性を導く責任があり、[テクニカルリーダー](./#how-engineering-management-works-at-gitlab)はそれらの要件を満たすための技術アーキテクチャを導く責任があります。Engineering Manager は[これらの両方の会話に参加すべきです](/handbook/product-development/how-we-work/product-development-flow/#build-phase-1-plan)。これらの会話と連携して、Engineering Manager の主な責任はプロジェクトマネジメントにあります: チームが両方の目標をできるだけ効果的かつ効率的に達成できるよう最善のポジションに置くことです。

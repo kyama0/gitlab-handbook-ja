@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-13T14:59:18+00:00"
 ---
 
 このページでは、**ユーザーエクスペリエンス（UX）活動に AI をどう使うか**を示します。

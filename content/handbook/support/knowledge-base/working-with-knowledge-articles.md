@@ -6,6 +6,7 @@ upstream_sha: 597f4cdde51f70d22792d64c8bf63dff58c6fda8
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-11-26T13:47:34-05:00"
 ---
 
 ### 社内ナレッジ記事

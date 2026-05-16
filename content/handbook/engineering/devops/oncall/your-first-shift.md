@@ -5,6 +5,7 @@ upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
 translated_at: "2026-04-28T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-09T20:42:10+00:00"
 ---
 
 最初のオンコールローテーションに向けて準備していますか？以下が必要な手順です。

@@ -6,6 +6,7 @@ upstream_sha: "3480299851f7e2243d4f08b75dac452f89929636"
 translated_at: "2026-04-28T05:15:25Z"
 translator: claude
 stale: false
+lastmod: "2025-11-25T21:39:25+00:00"
 ---
 
 ## 大規模イニシアチブのエンジニアリング DRI

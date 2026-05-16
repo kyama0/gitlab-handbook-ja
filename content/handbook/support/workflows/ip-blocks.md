@@ -8,6 +8,7 @@ upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-12-18T17:49:08+00:00"
 ---
 
 GitLab.com のユーザーは、レート制限により自身の IP アドレスがブロックされていることに気付くことがあります。現在、GitLab.com のレート制限パラメータは [GitLab.com 設定ドキュメントページ](https://docs.gitlab.com/user/gitlab_com/#account-and-limit-settings) で最も適切に説明されています。GitLab.com のレート制限の単一の信頼できる情報源は、[インフラストラクチャのレート制限ドキュメント](/handbook/engineering/infrastructure-platforms/rate-limiting/) にあります。このページは、サポートエンジニアがレート制限と IP ブロックに関連する Issue をトラブルシューティングする際の助けになることを目的としています。

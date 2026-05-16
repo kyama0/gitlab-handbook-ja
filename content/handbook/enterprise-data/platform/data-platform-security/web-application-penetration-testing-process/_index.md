@@ -7,6 +7,7 @@ upstream_sha: d638a3d5418a620365f135648ea547e0992abbf1
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-03-25T16:25:13+00:00"
 ---
 
 ## 1. イントロダクション

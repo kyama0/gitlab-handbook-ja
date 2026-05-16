@@ -5,6 +5,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-28T08:31:27Z"
 translator: claude
 stale: false
+lastmod: "2025-11-10T23:24:54+07:00"
 ---
 
 Software Supply Chain Security（SSCS）Tier 2 オンコールプログラムへようこそ！このドキュメントでは、セキュリティプラットフォームのオンコールに必要なすべての情報をご案内します。

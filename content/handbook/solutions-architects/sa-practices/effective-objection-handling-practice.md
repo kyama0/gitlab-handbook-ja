@@ -5,6 +5,7 @@ upstream_sha: 5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8
 translated_at: "2026-05-08T18:13:56Z"
 translator: claude
 stale: false
+lastmod: "2025-01-11T23:51:39+00:00"
 ---
 
 効果的な異論対応スキルは、私たちの営業/カスタマーサクセスにおける役割で信頼できるアドバイザーになるために重要です。異論対応とは、顧客の考えを変えたり、懸念を和らげるような形で顧客に応えることを意味します。異論は通常、これらの[カテゴリー](https://changingminds.org/disciplines/sales/objection/objection_types.htm)に分類されます。

@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-24T11:39:49-07:00"
 ---
 
 ## <i class="fas fa-rocket" id="biz-tech-icons"></i> セキュリティのビジョンとミッション

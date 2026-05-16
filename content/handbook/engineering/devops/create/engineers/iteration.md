@@ -6,6 +6,7 @@ upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
 translated_at: "2026-04-28T10:48:33Z"
 translator: claude
 stale: false
+lastmod: "2025-12-05T19:47:34+00:00"
 ---
 
 ## どのようにイテレーションを行いますか？

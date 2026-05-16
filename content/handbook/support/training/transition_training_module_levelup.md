@@ -6,6 +6,7 @@ upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-07-28T17:25:07+02:00"
 ---
 
 このドキュメントでは、既存の [GitLab サポートのトレーニングモジュール](https://gitlab.com/gitlab-com/support/support-training/) を [LevelUp](https://levelup.edcast.com/home) に移行するためのプロセスについて説明します。

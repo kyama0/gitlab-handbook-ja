@@ -5,6 +5,7 @@ upstream_sha: 45c75393c11589128fb6c8af61ce5be83a8031dd
 translated_at: "2026-05-01T14:48:17Z"
 translator: claude
 stale: false
+lastmod: "2026-05-01T10:44:51-04:00"
 ---
 
 Developer Relations チームは、ツールやプラットフォーム間のワークフローを自動化するために [Workato](/handbook/marketing/marketing-operations/workato/) を使用しています。

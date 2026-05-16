@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-12-05T19:47:34+00:00"
 ---
 
 GitLab では、誰もが貢献できると信じています。その精神に基づき、UX 部門のメンバーは、春学期に [Tufts 大学 Human Factors Engineering／工学心理学 (BS)](https://engineering.tufts.edu/me/current-students/undergraduate-program/bachelor-science-human-factors-engineering-bs) のシニアレベルの学生が取り組むプロジェクトをスポンサーすることを志願できます。

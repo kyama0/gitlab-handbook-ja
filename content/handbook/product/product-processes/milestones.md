@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-20T08:52:12-07:00"
 ---
 
 計画を立てる際、プロダクトマネージャーは GitLab マイルストーンに向けて計画を立てます。ここでは、マイルストーンを作成・維持するプロセスを説明します。

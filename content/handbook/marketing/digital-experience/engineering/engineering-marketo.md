@@ -6,6 +6,7 @@ upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
 translated_at: "2026-05-01T10:36:34Z"
 translator: claude
 stale: false
+lastmod: "2024-09-19T20:29:33+00:00"
 ---
 
 より詳細な手順については、Marketing Operations のハンドブックページの [スニペット](/handbook/marketing/marketing-operations/marketo/#snippets) と[フォーム](/handbook/marketing/marketing-operations/marketo/#forms) のセクションを参照してください。

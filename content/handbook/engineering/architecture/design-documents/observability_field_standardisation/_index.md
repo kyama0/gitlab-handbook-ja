@@ -13,6 +13,7 @@ upstream_sha: "856dbb5acbecaff51b3ea0c961ad3adb3d37a953"
 translated_at: "2026-04-27T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-01T23:01:23+13:00"
 ---
 
 <!-- This renders the design document header on the detail page, so don't remove it-->

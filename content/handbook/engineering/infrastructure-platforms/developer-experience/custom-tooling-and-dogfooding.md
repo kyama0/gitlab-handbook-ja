@@ -6,6 +6,7 @@ upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
 translated_at: "2026-04-28T16:51:32Z"
 translator: claude
 stale: false
+lastmod: "2026-01-06T18:01:54+00:00"
 ---
 
 GitLab は[ドッグフーディング](/handbook/values/#dogfooding)を広範に実践しています。Developer Experience ステージは GitLab の機能ギャップを埋えるためにカスタムツールを構築し、内部ニーズと製品開発の間に貴重なフィードバックループを生み出しています。

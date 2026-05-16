@@ -7,6 +7,7 @@ upstream_sha: 6c73093986242c762a8f4a2769fbfba69b31fcf9
 translated_at: "2026-05-08T12:45:20Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T22:14:31+00:00"
 ---
 
 顧客がライセンスのある GitLab Self-Managed インスタンス向けに追加シートを購入する際、次のエラーメッセージに遭遇したと報告することがあります:

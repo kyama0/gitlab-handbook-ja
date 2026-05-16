@@ -6,6 +6,7 @@ upstream_sha: 597f4cdde51f70d22792d64c8bf63dff58c6fda8
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-11-10T10:36:51-05:00"
 ---
 
 ナレッジベース（KB）は、よく遭遇する問題に対する解決策のリポジトリで、サポートエンジニア（SE）によって作成・維持されています。

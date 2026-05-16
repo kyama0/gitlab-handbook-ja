@@ -5,6 +5,7 @@ upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
 translated_at: "2026-04-29T19:06:37Z"
 translator: claude
 stale: false
+lastmod: "2025-12-11T13:59:38-05:00"
 ---
 <!-- markdownlint-disable MD051 -->
 ## 調達とは何か？

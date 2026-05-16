@@ -6,6 +6,7 @@ upstream_sha: 8e5460327d5f02f1967a05539db73f8e5cfebbb3
 translated_at: "2026-04-28T09:42:29Z"
 translator: claude
 stale: false
+lastmod: "2025-12-05T19:47:34+00:00"
 ---
 
 このページには Create:Code Review バックエンドチームのエンジニアリングリソースが含まれています。チームの日常業務については、[Create:Code Review BE ハンドブックページ](/handbook/engineering/devops/create/code-review/backend/)をご確認ください。

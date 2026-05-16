@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T12:40:09Z"
 translator: claude
 stale: false
+lastmod: "2025-08-15T11:00:10-07:00"
 ---
 
 [プロダクトセキュリティエンジニアリングのトークン管理に関する内部ハンドブックページ](https://internal.gitlab.com/handbook/security/product_security/product_security_engineering/token-management/) を参照してください。

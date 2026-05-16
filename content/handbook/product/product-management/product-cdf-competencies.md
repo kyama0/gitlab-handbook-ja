@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T09:43:34-05:00"
 ---
 
 このページでは、GitLab におけるプロダクトマネージャーのパフォーマンスを評価するための概要と、それに役立つリソースへのリンクを掲載しています。GitLab におけるプロダクトマネージャーの責務をより深く理解するには、[GitLab のプロダクトマネージャーの役割](/handbook/product/product-management/product-manager-role/) を参照してください。

@@ -10,6 +10,7 @@ upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-03T13:36:56-05:00"
 ---
 
 ## GitLab で効果的なミーティングを運営する方法

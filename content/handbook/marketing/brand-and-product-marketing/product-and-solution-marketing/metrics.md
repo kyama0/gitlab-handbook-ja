@@ -5,6 +5,7 @@ upstream_sha: 214b98c98d2eb739dbe3a358027667a7f128ec69
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-27T10:12:54-08:00"
 ---
 
 ## 北極星指標（北極星指標に関する CEO の依頼）

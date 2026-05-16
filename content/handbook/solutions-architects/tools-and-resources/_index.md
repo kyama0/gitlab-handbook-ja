@@ -7,6 +7,7 @@ translated_at: "2026-05-15T00:00:00+00:00"
 translator: claude
 stale: false
 model: claude-opus-4-7
+lastmod: "2026-05-15T12:34:34-04:00"
 ---
 
 ## ツールとリソース

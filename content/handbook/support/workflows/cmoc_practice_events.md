@@ -7,6 +7,7 @@ upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
 translated_at: "2026-05-08T20:14:55Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T15:48:52+08:00"
 ---
 
 ## CMOC練習イベント

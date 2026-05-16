@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-14T17:59:32+00:00"
 ---
 
 このページは、Slack と Email の両方を使ってフィールドとコミュニケーションし、フィールド内でコミュニケーションするためのガイドとして機能することを意図しています。CRO 組織のすべての Google グループ、Slack グループ、Slack チャネルの概要を見つけるには、以下を読んでください。

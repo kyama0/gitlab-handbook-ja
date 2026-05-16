@@ -6,6 +6,7 @@ upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T05:49:40Z"
 translator: "claude"
 stale: false
+lastmod: "2025-01-06T17:31:07+00:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />

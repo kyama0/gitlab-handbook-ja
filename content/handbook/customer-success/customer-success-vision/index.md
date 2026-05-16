@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T01:56:09Z"
 translator: claude
 stale: false
+lastmod: "2025-01-08T16:54:09+00:00"
 ---
 
 *「カスタマーサクセスとは、顧客が適切な体験を通じて貴社との関わりの中で望む成果を達成することです。」* - Lincoln Murphy

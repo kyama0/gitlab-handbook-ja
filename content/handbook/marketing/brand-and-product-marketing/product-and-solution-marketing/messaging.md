@@ -5,6 +5,7 @@ upstream_sha: 214b98c98d2eb739dbe3a358027667a7f128ec69
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-03-05T11:52:36+00:00"
 ---
 
 ## 主要な顧客の問題は何か？

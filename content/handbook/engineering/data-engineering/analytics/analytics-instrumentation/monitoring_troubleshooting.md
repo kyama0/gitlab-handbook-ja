@@ -6,6 +6,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-28T02:53:44Z"
 translator: claude
 stale: false
+lastmod: "2025-08-18T10:18:01-07:00"
 ---
 
 このページは、[Analytics Instrumentation グループ](/handbook/engineering/data-engineering/analytics/analytics-instrumentation)が提供する内部アナリティクスインフラストラクチャのモニタリングとトラブルシューティングに役立つ情報とリンクを掲載することを目的としています。

@@ -6,6 +6,7 @@ upstream_sha: "eb9c7122b4259a2111ed65628e5384768922a597"
 translated_at: "2026-05-06T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-04-28T10:53:04-07:00"
 ---
 
 設計ドキュメントは、私たちが前進していく中で、さまざまな Developer Experience ツールの実装を導く技術的なビジョンと一連の原則を記述したものです。チームの足並みを揃えるためのガードレールとして機能します。

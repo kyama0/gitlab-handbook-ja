@@ -6,6 +6,7 @@ upstream_sha: 9e852ac812142230dfe1e1db31be2862cd857cfd
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-08-23T13:02:20+00:00"
 ---
 
 各プロジェクトは、イベントへのサブスクリプションを定義するための独自の設定ファイルを持つことができます。例えば `.gitlab-ci-event.yml` です。このファイルでは、以下の形式でイベントを定義できます。

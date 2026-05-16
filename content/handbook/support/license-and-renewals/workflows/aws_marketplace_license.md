@@ -7,6 +7,7 @@ upstream_sha: 9da08370100b76603b2eb82901592f9d21c9766c
 translated_at: "2026-05-08T09:50:12Z"
 translator: claude
 stale: false
+lastmod: "2025-06-10T15:27:47+00:00"
 ---
 
 ## AWS Marketplace ライセンスの概要

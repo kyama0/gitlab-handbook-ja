@@ -6,6 +6,7 @@ upstream_sha: "27d1e9b21984fe11eff53db49a85c2ba08ef901c"
 translated_at: "2026-04-28T15:26:32Z"
 translator: claude
 stale: false
+lastmod: "2026-04-16T15:41:14-04:00"
 ---
 
 私たちは AI ツールを使用して作業を支援しています。これらの原則は、その支援が誰かの負担にならず、代わりに全員のレベルを引き上げることを確保するために存在します。

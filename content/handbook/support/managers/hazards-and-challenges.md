@@ -6,6 +6,7 @@ upstream_sha: f8c9cee360fe4a9a7e4b6354bb9330c4602c0fe1
 translated_at: "2026-05-08T18:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-10-29T23:31:43+00:00"
 ---
 
 ## ハザードと課題

@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-07-09T00:48:53+00:00"
 ---
 
 ## 包括的な環境を成功させるために不可欠なこと

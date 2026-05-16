@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-23T15:35:45-08:00"
 ---
 
 このプレイブックは、すべての GitLab チームメンバーが JTBD リサーチを実施できるようにするものです。ジョブキャンバスの各側面の詳細については、[JTBD キャンバスの構造](/handbook/product/ux/jobs-to-be-done/jtbd-canvas-anatomy) をレビューしてください。質問がある場合は、UX リサーチャーまたは JTBD 専門家に連絡してください。

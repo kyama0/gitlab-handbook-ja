@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-05T09:54:34-04:00"
 ---
 
 GitLab Revenue Academy の卒業は、新入社員が自身の役割で **フィールドレディ（現場対応可能）** であることを示すように設計されています:

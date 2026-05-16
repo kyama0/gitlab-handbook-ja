@@ -7,6 +7,7 @@ upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
 translated_at: "2026-05-08T20:14:55Z"
 translator: claude
 stale: false
+lastmod: "2025-07-23T12:35:43+02:00"
 ---
 
 **注意**: お客様への通話を提案する際は、必ず [シングルユース Calendly リンク](#generating-a-single-use-calendly-link) を使用してください。

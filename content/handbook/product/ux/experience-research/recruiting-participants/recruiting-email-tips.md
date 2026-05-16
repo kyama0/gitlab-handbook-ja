@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 私たちは UX リサーチ募集のアウトリーチのほぼすべてを、CRM システムである RallyUXR から送信しています。RallyUXR から送信する際に使用するメールドメインと送信者アドレスは research@rally.gitlab.com です。

@@ -5,6 +5,7 @@ upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
 translated_at: "2026-05-06T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-10T16:58:29-05:00"
 ---
 
 Application Security Testing エンジニアリングサブ部門は、プロダクトの [Application Security Testing ステージ](/handbook/product/categories/#sec-section)を担当しています。

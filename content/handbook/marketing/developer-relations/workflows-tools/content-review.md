@@ -5,6 +5,7 @@ upstream_sha: 6b2970dac4d9078a5a79c285a6ee08817ecbd954
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-03-08T16:32:26+00:00"
 ---
 
 Developer Relations チームは、Product Marketing、Brand、各 Sales チームなど、コンテンツを制作するさまざまなステークホルダーに対して継続的なサポートを提供しています。GitLab 全体で制作されるコンテンツの技術的正確性を確保するため、GitLab の主要な公開コンテンツチャネル、特に [about.gitlab.com](https://about.gitlab.com) と [Highspot](/handbook/sales/field-communications/gitlab-highspot) における、よく閲覧されているコンテンツの定期レビューを実施しています。

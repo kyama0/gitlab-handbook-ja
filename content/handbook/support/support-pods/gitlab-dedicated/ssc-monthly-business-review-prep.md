@@ -6,6 +6,7 @@ upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-08-26T17:29:16+01:00"
 ---
 
 毎月、Support Stable Counterpart（SSC）は GitLab サポートの月次ビジネスレビュー（MBR）で利用する情報を準備します。このハンドブックページでは、GitLab Dedicated SSC が任意の MBR 向けに GitLab Dedicated に関するメモを準備するためにどのような手順を踏むべきかをドキュメント化しています。GitLab Dedicated SSC であれば誰でも MBR の調整を主導できます。

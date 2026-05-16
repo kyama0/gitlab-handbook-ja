@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-21T12:28:59-06:00"
 ---
 
 <sup>[gitlab-com/support/support-ops/support-ops-project#1890](https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/1890) を経て導入</sup>

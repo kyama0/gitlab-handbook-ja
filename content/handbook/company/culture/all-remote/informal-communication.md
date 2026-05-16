@@ -10,6 +10,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T22:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-08T19:01:27+10:00"
 ---
 
 このページでは、GitLab でインフォーマルコミュニケーションがどのように行われるか、それが [対面でのやり取り](/handbook/company/culture/all-remote/) をどのように補完するか、そしてなぜそれがオールリモート [カルチャー](/handbook/company/culture/#culture-at-gitlab) で重要なのかを詳しく説明します。以下に 20 以上のインフォーマルコミュニケーションを育む方法があり、私たちは常に新しい方法を発見し追加しています。

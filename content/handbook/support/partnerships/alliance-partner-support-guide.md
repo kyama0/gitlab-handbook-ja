@@ -6,6 +6,7 @@ upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-11-12T16:35:10+08:00"
 ---
 
 ## GitLab の連絡先 {#gitlab-contacts}

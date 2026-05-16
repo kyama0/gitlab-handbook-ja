@@ -6,6 +6,7 @@ upstream_sha: 9bd896709582cfb6bccdb0d721755db917231bc6
 translated_at: "2026-05-07T13:21:11Z"
 translator: claude
 stale: false
+lastmod: "2025-10-31T11:48:55-07:00"
 ---
 
 ## ファイナンシャルウェルネス: あなたをしっかりカバーします

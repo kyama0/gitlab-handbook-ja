@@ -6,6 +6,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-28T08:04:29Z"
 translator: claude
 stale: false
+lastmod: "2024-12-19T03:20:11+00:00"
 ---
 
 ## 脆弱性の説明と解決のセットアップガイド

@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-15T13:18:33-07:00"
 ---
 
 Bienvenidos, bem-vinda、そして Gente スペースへようこそ！私たちは 2021 年初めに発足した TMRG です。[Slack チャンネル](https://gitlab.slack.com/archives/C01JL1MGGV9) `#gente` に参加して今後のコールの通知を受け取り、これまでの活動を以下でご確認ください。

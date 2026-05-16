@@ -6,6 +6,7 @@ upstream_sha: 99a722ddc313408ef3d54d179c211cd76390f2bd
 translated_at: "2026-04-28T14:37:32Z"
 translator: claude
 stale: false
+lastmod: "2025-12-05T19:47:34+00:00"
 ---
 
 ## CI データパーティショニング - 週次プロジェクト計画

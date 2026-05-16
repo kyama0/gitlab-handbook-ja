@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-08T10:38:10-06:00"
 ---
 
 プロダクトデザイナーは[マネージャーオブワン](/handbook/values/#managers-of-one)として働き、ステージグループの作業、プラットフォームイニシアチブ、より広範な UX 責任にわたって自身のキャパシティを管理します。このページでは、作業の優先順位付けとキャパシティ計画に関するガイダンスを提供します。

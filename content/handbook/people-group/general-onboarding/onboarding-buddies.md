@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-12-01T16:21:31-05:00"
 ---
 
 オンボーディングバディは、新しい GitLab チームメンバーにとってオンボーディング体験をポジティブなものにするために不可欠です。[新しい仕事への不安](https://www.classycareergirl.com/new-job-anxiety-conquer/) は多くの人にとって現実のものであり、特に私たちの [オールリモート](/handbook/company/culture/all-remote/) 文化に慣れていない新しい GitLab チームメンバーにとって、GitLab への適応は特に困難となる可能性があります。だからこそ、すべての新しい GitLab チームメンバーに、オンボーディングプロセスをサポートする準備ができていて、その意思があり、楽しみにしているバディを割り当てることが重要なのです。

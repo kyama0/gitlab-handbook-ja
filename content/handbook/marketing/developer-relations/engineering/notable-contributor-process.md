@@ -6,6 +6,7 @@ upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-30T23:39:38+00:00"
 ---
 
 ## GitLab 著名貢献者 (Notable Contributor)

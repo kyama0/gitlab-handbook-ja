@@ -6,6 +6,7 @@ upstream_sha: 6c73093986242c762a8f4a2769fbfba69b31fcf9
 translated_at: "2026-05-08T13:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-10T13:46:46-05:00"
 ---
 
 このセクションは、ドキュメントとナレッジ記事についてより詳しい情報を提供するために用意されています。

@@ -5,6 +5,7 @@ upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
 translated_at: "2026-04-28T11:23:44Z"
 translator: claude
 stale: false
+lastmod: "2026-03-18T15:39:47+00:00"
 ---
 
 DevOps Tier 2 オンコールプログラムへようこそ！このドキュメントでは、私たちのプラットフォームのオンコール担当として必要なすべてのことをご案内します。

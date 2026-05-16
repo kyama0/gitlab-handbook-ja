@@ -6,6 +6,7 @@ upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
 translated_at: "2026-04-29T07:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-13T08:32:55-06:00"
 ---
 
 {{% details summary="法執行機関リクエスト - これはGitLabが受領した政府リクエストの詳細を示す最新の法執行機関レポートです" %}}

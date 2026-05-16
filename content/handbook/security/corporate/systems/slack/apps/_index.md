@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-01-21T21:34:03+00:00"
 ---
 
 GitLab はアプリのインストール権限を制限することを選択しており、ワークスペースに対して特定のアプリを承認または制限するプロセスを設けています。Google、Slack、Zoom など、当社の[テックスタック](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)内の既存アプリケーションと新しいアプリを連携するには、[Third Party Risk Management Issue](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-risk-team/third-party-vendor-security-management/-/issues/new) を作成する必要があります。

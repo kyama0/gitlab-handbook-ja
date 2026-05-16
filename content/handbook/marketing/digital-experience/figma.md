@@ -6,6 +6,7 @@ upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T22:14:31+00:00"
 ---
 
 このページの目的は、GitLab マーケティングチーム向けに Figma プロセスのガイドラインを提示することです。このページは、Figma でデザインを作成する人、Figma でデザインをレビューする人、Figma ファイルを受け取るエンジニアを対象としています。このページは Figma 入門ではありません。

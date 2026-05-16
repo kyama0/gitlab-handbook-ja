@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-15T09:46:14-04:00"
 ---
 
 社内でタレントを育成することは GitLab の成功の重要な要素であり、私たちの昇進と異動のプロセスは、私たちの[価値観](/handbook/values/)に沿った育成をサポートするために構築されています。チームメンバーは GitLab で キャリアアップを追求する 2 つの主な道があります: 1) 周期的な[昇進キャリブレーションプロセス](/handbook/people-group/promotions-transfers/#calibration)を通じて、2) 募集中のポジションに応募して面接を受ける。

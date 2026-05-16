@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T22:00:00Z"
 translator: "claude"
 stale: false
+lastmod: "2026-04-09T14:57:57-07:00"
 ---
 
 私たちは[オールリモート](/handbook/company/culture/all-remote/)の会社であり、[世界中のほぼどこからでも](/handbook/people-group/employment-solutions/#country-hiring-guidelines)働ける環境を提供しています。どこに住んでいても優秀な人材を採用していますが、GitLab のチームメンバーは[60 か国以上](/handbook/company/team/)に在籍しているため、つながりを保ち、より効率的に働けるよう、明確なコミュニケーション方法を実践することが重要です。

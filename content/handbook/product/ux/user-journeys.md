@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-07-30T16:39:52+10:00"
 ---
 
 GitLab におけるユーザージャーニーマッピングは、顧客と GitLab ユーザーが私たちの DevSecOps プラットフォームを発見、評価、採用、統合するときの完全なジャーニーをチームが理解するための戦略的フレームワークを提供します。これらの体験を体系的にマッピングすることで:

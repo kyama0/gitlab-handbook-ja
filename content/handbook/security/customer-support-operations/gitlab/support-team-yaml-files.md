@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-18T12:50:14-06:00"
 ---
 
 このガイドでは、Support チーム YAML ファイルについて説明します。これは、さまざまな Customer Support Operations の自動化や統合で使用される、チームメンバー情報を含む集中型のデータソースです。これらのファイルは、システム間で一貫したエージェントデータを実現し、チーム構造、スキル、スケジュール、アサインの情報源として機能します。

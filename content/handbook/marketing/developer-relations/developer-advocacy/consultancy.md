@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-08T14:07:20+02:00"
 ---
 
 チームや部門は、[デベロッパーアドボケイトが分野別専門家（SME）](/handbook/marketing/developer-relations/developer-advocacy/#i-classfa-fa-users-aria-hiddentruei-team-members-and-focus-areas) である分野で、または彼らの経験やコネクションネットワークで支援できる場合に、コンサルティングをリクエストできます。

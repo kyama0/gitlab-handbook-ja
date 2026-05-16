@@ -6,6 +6,7 @@ upstream_sha: cf317047d2c9678524c0db59ab7ed8c050713245
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-03-10T12:51:46-05:00"
 ---
 
 ## デモシステム概要と特定の環境

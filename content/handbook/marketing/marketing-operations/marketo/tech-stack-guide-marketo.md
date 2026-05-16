@@ -6,6 +6,7 @@ upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-05-30T08:11:40+00:00"
 ---
 
 > **注:** アプリを参照するには **[Tech Stack Index](/handbook/business-technology/tech-stack/)** を、アプリを管理するには **[Tech Stack Applications](/handbook/business-technology/tech-stack-applications/)** を参照してください。

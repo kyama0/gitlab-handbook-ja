@@ -7,6 +7,7 @@ upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
 translated_at: "2026-05-01T10:36:34Z"
 translator: claude
 stale: false
+lastmod: "2025-10-01T15:53:53-04:00"
 ---
 
 ## about.gitlab.com 上のアクセシビリティ問題を表面化する

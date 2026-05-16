@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-08T14:07:20+02:00"
 ---
 
 このページの目的は、SA が新しい Dedicated 顧客をオンボーディングするときに、オンボーディング / ディスカバリーフェーズでの考慮事項と準備資料を支援することです。既存の GitLab Dedicated 顧客との過去のやり取りに基づき、また顧客のオンボーディングが通常長期にわたる性質を持つことから、すべてのステークホルダーが認識・関与し続けられるように [コラボレーションプロジェクト](/handbook/solutions-architects/processes/collaboration-project/) を作成することを推奨します。

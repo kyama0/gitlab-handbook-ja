@@ -5,6 +5,7 @@ upstream_sha: d0a19ab78fc5e0d322868c8f35ab8f81e761bd21
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-03-28T11:26:28-04:00"
 ---
 
 **GitLab の継続的インテグレーション（CI）ケイパビリティに関するお客様向けの概要をお探しですか？ [CI Solution](https://about.gitlab.com/solutions/continuous-integration/) を参照してください**

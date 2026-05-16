@@ -6,6 +6,7 @@ upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-22T07:58:38+02:00"
 ---
 
 このページでは、サポートエンジニアにとって関連性の高い、GitLab の外部トレーニングパートナーが提供する具体的なコース、ラーニングパス、認定資格を推奨します。まず内部の [サポートトレーニングモジュール](/handbook/support/training/) と [特化ドメイントラック](/handbook/support/training/specialised_domain_tracks/) を完了し、その後に下記のリソースを使って知識を補強したり、特定の領域で中級・上級レベルへステップアップしたりすることを推奨します。

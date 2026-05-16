@@ -5,6 +5,7 @@ upstream_sha: 5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-13T14:17:22-07:00"
 ---
 
 ## 報酬レビューに関する会話

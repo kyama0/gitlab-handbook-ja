@@ -7,6 +7,7 @@ translated_at: "2026-05-15T00:00:00+00:00"
 translator: claude
 stale: false
 model: claude-opus-4-7
+lastmod: "2026-05-15T14:43:34-04:00"
 ---
 
 ## ブログ (about.gitlab.com/blog/)

@@ -5,6 +5,7 @@ upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
 translated_at: "2026-05-05T12:56:33Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T19:48:12+00:00"
 ---
 
 ## マージリクエストコーチへの応募

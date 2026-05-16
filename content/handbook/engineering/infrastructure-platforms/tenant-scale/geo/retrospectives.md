@@ -6,6 +6,7 @@ upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-28T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-11-26T12:28:09-05:00"
 ---
 
 ふりかえりはアジャイル方法論の[重要なコンポーネント](https://www.retrium.com/blog/i-was-wrong-retrospectives-are-not-the-most-critical-part-of-agile-but-they-are-close)です。ただし、ふりかえりを行うことは、アジャイルの ToDo リストにチェックを入れることについてであってはなりません。ふりかえりの目的は学ぶことであり、より良い場所に向かうアクションを起こすことです。私たちは過去のアクションと結果から学び、その知識を使って将来の実行を改善します。

@@ -7,6 +7,7 @@ upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
 translated_at: "2026-05-01T10:36:34Z"
 translator: claude
 stale: false
+lastmod: "2026-01-08T16:59:33-05:00"
 ---
 
 ## デジタル定義集

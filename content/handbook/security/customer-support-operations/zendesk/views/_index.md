@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T21:03:24Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T20:47:52+00:00"
 ---
 
 このガイドは、GitLab で Zendesk ビューを作成、編集、管理する方法について説明します。既存のビューを変更したいサポートエージェントは、[ビューで使用されるフィールド、グルーピング、ソートの変更](#changing-the-fields-grouping-or-sorting-used-in-a-view)を参照してください。管理者は[管理者タスク](#administrator-tasks)セクションを確認してください。

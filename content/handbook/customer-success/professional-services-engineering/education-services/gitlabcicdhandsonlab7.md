@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T04:07:10Z"
 translator: claude
 stale: false
+lastmod: "2024-06-10T13:15:40-07:00"
 ---
 
 > 所要時間の目安: 20〜25分

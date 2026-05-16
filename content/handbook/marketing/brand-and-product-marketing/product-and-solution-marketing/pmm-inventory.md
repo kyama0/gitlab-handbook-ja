@@ -8,6 +8,7 @@ upstream_sha: 214b98c98d2eb739dbe3a358027667a7f128ec69
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-22T08:07:11+00:00"
 ---
 
 <div class="wrapper">

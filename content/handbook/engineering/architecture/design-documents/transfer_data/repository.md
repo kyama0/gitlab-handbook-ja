@@ -13,6 +13,7 @@ upstream_sha: d5f4aa38819ae2b572eb32e0d967394d0361a975
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-08-23T13:02:20+00:00"
 ---
 
 ユーザーは Git のすべての fetch 操作でリポジトリエグレスイベントを生成します。これには `git clone`、`git fetch`、`git pull` などのコマンドが含まれます。これらはすべて、エンドユーザーに配信する必要があるデータを Gitaly からリクエストするためです。

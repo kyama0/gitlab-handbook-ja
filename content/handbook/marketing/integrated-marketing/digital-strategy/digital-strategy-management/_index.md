@@ -5,6 +5,7 @@ upstream_sha: 2aee792005d83a7f758d3cf1573626202b05037c
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-27T10:12:54-08:00"
 ---
 
 ## デジタル戦略チーム {#digital-marketing-management}

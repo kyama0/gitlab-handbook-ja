@@ -6,6 +6,7 @@ upstream_sha: d0d8657a733d2233820b2b00aaad27ebf5de9755
 translated_at: "2026-05-07T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-31T11:49:58-07:00"
 ---
 
 ## メンタルウェルネスサポート

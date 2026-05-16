@@ -6,6 +6,7 @@ upstream_sha: "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256"
 translated_at: "2026-04-25T00:00:00Z"
 translator: "claude"
 stale: false
+lastmod: "2025-07-17T16:59:31+00:00"
 ---
 
 ## 公開会社としての GitLab

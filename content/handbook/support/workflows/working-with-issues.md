@@ -8,6 +8,7 @@ upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
 translated_at: "2026-05-08T05:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-23T15:08:44-08:00"
 ---
 
 GitLab Issue を正しく作成、更新、エスカレーションすることは、迅速かつ正確な顧客サポートを提供する上で重要な要素です。サポートチームは、GitLab Issue を扱う際に本ページに記載のプロセスとエスカレーションポイントを使用します。

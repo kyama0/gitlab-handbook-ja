@@ -6,6 +6,7 @@ upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
 translated_at: "2026-04-29T05:26:36Z"
 translator: claude
 stale: false
+lastmod: "2026-02-25T07:10:33-08:00"
 ---
 
 このページは[オンコールのプロセスとポリシー](/handbook/engineering/infrastructure-platforms/incident-management/on-call/)に移動しました。

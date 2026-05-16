@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-23T15:19:35+00:00"
 ---
 
 ![チームワークショップを紹介するバナー](/images/handbook/people-group/team-workshops.png)

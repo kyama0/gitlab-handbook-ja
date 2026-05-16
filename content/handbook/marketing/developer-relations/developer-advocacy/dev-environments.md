@@ -5,6 +5,7 @@ upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-12-01T22:11:31+01:00"
 ---
 
 デベロッパーアドボケイトは、GitLab Duo Agent Platform を使用した AI ネイティブワークフローを含む、さまざまなタイプのプラットフォーム、エディタ、IDE で作業します。このページでは、デベロッパーアドボカシー関連のセットアップを最適化するためのベストプラクティスと役立つヒントをまとめます。

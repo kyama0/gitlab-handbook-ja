@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-13T10:12:58-04:00"
 ---
 
 Elevate は GitLab のマネージャー向けのライブ仮想リーダーシップ開発プログラムで、リーダーシップコンピテンシーの理解、感情知性の構築、優れたフィードバックの授受、コーチング、無意識のバイアスの認識に焦点を当てています。

@@ -7,6 +7,7 @@ translated_at: "2026-05-15T00:00:00+00:00"
 translator: claude
 stale: false
 model: claude-opus-4-7
+lastmod: "2026-05-15T15:15:37+00:00"
 ---
 
 Database Automation チームは、[Database Operations チーム](/handbook/engineering/data-engineering/database-excellence/database-operations/)と [Database Frameworks チーム](/handbook/engineering/data-engineering/database-excellence/database-frameworks/)の再編によって誕生しました。

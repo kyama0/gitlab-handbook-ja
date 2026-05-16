@@ -5,6 +5,7 @@ upstream_sha: "86cfa2bd7d73df5a673fe5ebd33b028d0f540434"
 translated_at: "2026-04-27T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-27T09:26:13-07:00"
 ---
 
 この ADR は、[ルールベースのカバレッジ](https://docs.gitlab.com/user/application_security/secret_detection/detected_secrets/)の範囲外にある、非構造化シークレットおよび機密性の高い認証情報の種類を検出するためのアプローチを概説します。

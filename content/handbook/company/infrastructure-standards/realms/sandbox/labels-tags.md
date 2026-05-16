@@ -6,6 +6,7 @@ upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T15:43:48Z"
 translator: "claude"
 stale: false
+lastmod: "2024-10-29T23:31:43+00:00"
 ---
 
 ## クイックリンク

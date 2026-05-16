@@ -6,6 +6,7 @@ upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
 translated_at: "2026-04-29T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-21T08:34:43+02:00"
 ---
 
 このページでは、フレーキーおよび壊れたテストを管理するための GitLab の検疫プロセスについて説明します。技術的な実装の構文（RSpec と Jest）については、[テストの検疫（開発者ドキュメント）](https://docs.gitlab.com/development/testing_guide/quarantining_tests/)を参照してください。フレーキーテストのデバッグについては、[不健全なテスト（開発者ドキュメント）](https://docs.gitlab.com/development/testing_guide/unhealthy_tests/)を参照してください。

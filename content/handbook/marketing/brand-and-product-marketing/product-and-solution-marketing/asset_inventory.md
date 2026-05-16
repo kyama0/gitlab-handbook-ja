@@ -5,6 +5,7 @@ upstream_sha: 9bcc3fa641f3c78cb94b2ff71f5a8170ff5b412b
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-27T16:37:34+01:00"
 ---
 このページは、[プロダクトおよびソリューションマーケティング](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/) チームが作成および維持するアセットのインベントリを提供するために使用されました。それ以来、すべてのアセットを含むようにインベントリを更新し、現在は[マーケティング分析](/handbook/enterprise-data/marketing-analytics/) 内にあります。
 

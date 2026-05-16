@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T12:40:09Z"
 translator: claude
 stale: false
+lastmod: "2026-04-09T20:14:47+00:00"
 ---
 
 ProdSecEng は、計画ケイデンス、優先度ラベル、サイジング/重み、計画外作業の追跡について、共有の[セキュリティケイパビリティエンジニアリング (SecCapEng) の働き方](/handbook/security/product-security/security-capabilities-engineering/)に従います。このページでは ProdSecEng 固有のワークフローを取り扱います。

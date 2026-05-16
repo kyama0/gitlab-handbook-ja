@@ -6,6 +6,7 @@ upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2023-08-08T19:15:16+01:00"
 ---
 
 GitLab Partner Program では、さまざまな種類のパートナーが利用可能です。各タイプのパートナーの説明については、それぞれのページをご参照ください:

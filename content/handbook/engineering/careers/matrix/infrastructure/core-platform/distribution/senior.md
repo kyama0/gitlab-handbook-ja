@@ -5,6 +5,7 @@ upstream_sha: "eb9c7122b4259a2111ed65628e5384768922a597"
 translated_at: "2026-05-05T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T15:57:54+00:00"
 ---
 
 ## Core Platform シニア Distribution エンジニア

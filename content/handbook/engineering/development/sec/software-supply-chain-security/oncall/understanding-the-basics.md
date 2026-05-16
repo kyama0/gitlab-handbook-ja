@@ -5,6 +5,7 @@ upstream_sha: 8e5460327d5f02f1967a05539db73f8e5cfebbb3
 translated_at: "2026-04-28T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-12-15T11:32:24-06:00"
 ---
 
 ## Tier 2 オンコールとは何か？

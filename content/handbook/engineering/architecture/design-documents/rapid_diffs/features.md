@@ -13,6 +13,7 @@ upstream_sha: 4c7d94ca4f485376c886b7c2b9575091c8b7d3cf
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-08-23T13:02:20+00:00"
 ---
 
 これは[再利用可能なラピッド Diffs ドキュメント](index.md)の付録です。

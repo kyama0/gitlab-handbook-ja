@@ -9,6 +9,7 @@
     "sync:upstream": "tsx scripts/sync-upstream.ts",
     "upload:images": "tsx --env-file-if-exists=.env scripts/upload-images-r2.ts",
     "check:staleness": "tsx scripts/check-staleness.ts",
+    "backfill:lastmod": "tsx scripts/backfill-upstream-lastmod.ts",
     "restore:shortcodes": "tsx scripts/restore-shortcodes.ts",
     "normalize:content": "tsx scripts/normalize-content-names.ts",
     "build": "hugo --minify && npx pagefind --site public",

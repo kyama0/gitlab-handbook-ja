@@ -5,6 +5,7 @@ upstream_sha: 23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0
 translated_at: "2026-05-07T22:45:00Z"
 translator: claude
 stale: false
+lastmod: "2023-05-15T18:24:52+01:00"
 ---
 
 `git` が何かはご存じの通りです。 😄

@@ -8,6 +8,7 @@ upstream_sha: 7fadd0122802b16e64b0e88962c637a09d27bd53
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-18T16:41:45+13:00"
 ---
 
 私たちは、すべてのエントリポイントで現在のOrganization IDが定義されるようにします。これらのエントリポイントには、Webリクエスト、バックグラウンドジョブ、スケジュールされたタスクが含まれます。

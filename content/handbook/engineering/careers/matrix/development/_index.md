@@ -5,6 +5,7 @@ upstream_sha: "3480299851f7e2243d4f08b75dac452f89929636"
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-12T10:48:57-04:00"
 ---
 
 ## 開発部門キャリアフレームワーク

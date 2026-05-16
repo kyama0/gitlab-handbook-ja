@@ -7,6 +7,7 @@ upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-29T06:46:39Z"
 translator: claude
 stale: false
+lastmod: "2026-04-09T20:14:47+00:00"
 ---
 
 ### 私の仕事

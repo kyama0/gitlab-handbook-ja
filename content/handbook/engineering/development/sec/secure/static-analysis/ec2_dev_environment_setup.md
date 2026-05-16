@@ -5,6 +5,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-28T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-13T12:21:45+10:00"
 ---
 
 ## Static Analysis グループ EC2 開発マシンセットアップガイド

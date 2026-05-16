@@ -5,6 +5,7 @@ upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T19:48:12+00:00"
 ---
 
 これらのオペレーショナルガイドラインは、Developer Relations Programs チームの運営、コラボレーション、業務遂行の方法を定義します。これらは、Education、Open Source、Contributors の各エコシステム向けに一貫した高品質のプログラムを提供することを可能にする構造的基盤と共有プロセスを提供します。私たちは、計画・コラボレーション・実行の管理に GitLab を使用することで、自社製品への深い理解を培っています。

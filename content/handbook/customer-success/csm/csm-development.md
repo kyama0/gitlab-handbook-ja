@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-04T12:15:15-08:00"
 ---
 
 GitLab の Customer Success Manager として、[成長のための 70-20-10 ルール](/handbook/people-group/learning-and-development/career-development/#70-20-10-rule-for-development)を活かし、自己投資やキャリアへの投資に時間をかけることが推奨されています。

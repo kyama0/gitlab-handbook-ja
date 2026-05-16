@@ -5,6 +5,7 @@ upstream_sha: 5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-24T11:37:25-04:00"
 ---
 
 このポリシーは、私たちのサービスの許容できない使用を特定するために役立ち、Free、Premium、Ultimate GitLabティアのユーザーを含む、すべてのGitLabサービスのすべてのユーザーに適用されます。全体を通じて「私たちのサービス」という表現を使用しています。これは、GitLabが所有または運営するすべてのサービス（関連するウェブサイトを含む）を意味します。

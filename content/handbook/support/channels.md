@@ -6,6 +6,7 @@ upstream_sha: c5d40e13183c5a0aeeafefbee88ab3fac48ced5a
 translated_at: "2026-05-08T17:40:50Z"
 translator: claude
 stale: false
+lastmod: "2026-03-04T12:15:15-08:00"
 ---
 
 私たちの [サポートエンジニア](/job-description-library/engineering/support-engineer) は、以下に挙げるチャンネルを担当しています。優先順位順 (最も厳しい SLA が上) に並んでおり、その結果、このリストの下のほうに表示されるチャンネルでは応答までの遅延が長くなる可能性があります。私たちは、チームを強化しコミュニティへのサポートを提供するため、さらに多くのサポートエンジニアを積極的に [採用](https://about.gitlab.com/jobs/) しています。

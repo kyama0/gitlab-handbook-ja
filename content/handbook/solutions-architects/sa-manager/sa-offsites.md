@@ -6,6 +6,7 @@ upstream_sha: fb150f3a4f831172cf23c7f0d75b0d6310a68972
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T22:14:31+00:00"
 ---
 
 ## SA オフサイト（対面）

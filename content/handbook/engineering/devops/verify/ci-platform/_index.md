@@ -6,6 +6,7 @@ upstream_sha: "1065c86ab1ba75adefbb07560d726608885e6d4e"
 translated_at: "2026-04-28T14:02:31Z"
 translator: claude
 stale: false
+lastmod: "2026-01-14T21:41:15+00:00"
 ---
 
 ## ビジョン

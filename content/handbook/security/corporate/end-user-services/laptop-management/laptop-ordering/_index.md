@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-18T15:39:47+00:00"
 ---
 
 CorpSec ヘルプデスクチームがすべてのラップトップ発注プロセスを担当します。自己調達は、ラップトップを配送できない地域にいる場合のみ利用可能です。

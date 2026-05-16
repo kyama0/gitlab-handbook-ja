@@ -6,6 +6,7 @@ upstream_sha: e0d8017702cf1eae5871d425237e50751324adc6
 translated_at: "2026-04-30T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-14T17:59:32+00:00"
 ---
 
 Brand Strategy チームは、GitLab ブランドへの認知、信頼、共感を生み出すことで、GitLab の市場参入の加速を担っています。

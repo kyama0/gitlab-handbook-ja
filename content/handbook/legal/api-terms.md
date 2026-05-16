@@ -6,6 +6,7 @@ upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-09T11:46:48-05:00"
 ---
 
 A. これらの API 利用規約（「**API 規約**」）は、あなたと GitLab との間の拘束力のある契約を形成し、GitLab の公開されているアプリケーションプログラミングインターフェース（「**GitLab API**」）を使用する際のあなたの権利と義務を説明します。

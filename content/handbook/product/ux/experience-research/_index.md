@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-17T10:12:37-07:00"
 ---
 GitLab の Experience Research チームは、私たち自身の [Research Operations (ReOps)](/handbook/product/ux/research-operations/) スペシャリストのサポートのもと、ユーザーエクスペリエンス（UX）リサーチ、ブランドおよびマーケティングリサーチ、[サービスデザイン](/handbook/product/ux/experience-research/service-design/)を実施する責任を持ちます。
 

@@ -6,6 +6,7 @@ upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T22:14:31+00:00"
 ---
 
 Select パートナーは招待制であり、GitLab に関する専門性により多くの投資を行い、GitLab を中心とするサービスプラクティスを発展させ、GitLab 製品のリカーリングレベニュー (継続的売上) のさらなる拡大が期待されるパートナーに限定されます。

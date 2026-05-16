@@ -6,6 +6,7 @@ upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
 translated_at: "2026-04-30T07:00:13Z"
 translator: claude
 stale: false
+lastmod: "2025-04-28T10:53:04-07:00"
 ---
 
 毎月、プロダクトマネージャーが[リリース投稿の著者作業をリード](/handbook/marketing/blog#release-post-manager)し、プロダクトマーケティングマネージャーが[メッセージをリード](/handbook/marketing/blog#pmm-lead)します。他のメンバーは構造チェック、コピー編集、ソーシャルメディア投稿を担当します。各月次リリースには、リリース活動をサポートするテクニカルな[リリースマネージャー](https://about.gitlab.com/community/release-managers/)もいます。

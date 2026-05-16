@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-08T14:07:20+02:00"
 ---
 
 カスタマーエクスペリエンス部門は [GitLab セールス](/handbook/sales/)機能の一部であり、お客様の GitLab とのジャーニーを通じて、価値とポジティブなビジネス成果を提供するためにお客様と協働します。

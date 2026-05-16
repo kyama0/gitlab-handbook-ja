@@ -6,6 +6,7 @@ upstream_sha: c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-04-04T15:43:07-10:00"
 ---
 
 ## 概要と目的

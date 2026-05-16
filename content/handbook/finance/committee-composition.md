@@ -5,6 +5,7 @@ upstream_sha: 8aa1a9efd98433fb2296996366f1023b5675ea70
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-11-23T17:21:24+00:00"
 ---
 
 ## 開示委員会の構成

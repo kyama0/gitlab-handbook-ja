@@ -7,6 +7,7 @@ upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T00:00:00Z"
 translator: "claude"
 stale: false
+lastmod: "2025-04-15T17:03:36-07:00"
 ---
 
 このページは、私がどのような人物で、私と働くことがどのようなものかについての情報を提供することを目的としています。

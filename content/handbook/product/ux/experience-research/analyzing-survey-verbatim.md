@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 [自由記述（verbatim）は自由形式の質問に提出されたコメント](https://goascribe.com/blog/verbatim-coding/)（例: 「GitLab の使いやすさについて何か共有したいことはありますか？」）で、通常はサーベイで尋ねられ、回答者が自由形式で回答を入力できる項目です。自由記述分析は、それらの回答全体にわたるテーマを探すことで、ユーザーエクスペリエンスのような様々な現象を理解するのに役立ちます。

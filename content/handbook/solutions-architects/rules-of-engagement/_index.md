@@ -6,6 +6,7 @@ upstream_sha: fb150f3a4f831172cf23c7f0d75b0d6310a68972
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-11-18T16:30:07-05:00"
 ---
 
 ## Solutions Architecture エンゲージメントのルール (FY27)

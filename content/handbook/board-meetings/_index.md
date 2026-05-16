@@ -5,6 +5,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T08:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-04T12:15:15-08:00"
 ---
 
 **このページは GitLab の取締役会の慣行を記録することを目的としていますが、これらは時間とともに進化しており、すべての変更が反映されていない場合があります。取締役会の詳細の情報源は GitLab の[投資家向け関係サイト](https://ir.gitlab.com/governance/governance-documents/default.aspx)です。**

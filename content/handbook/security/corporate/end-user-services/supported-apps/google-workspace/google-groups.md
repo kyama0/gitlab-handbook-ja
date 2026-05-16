@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-14T17:59:32+00:00"
 ---
 
 Google groups は、メンバーに特定のリソースへのアクセス権を付与したり、メーリングリストとして使用されます。Google Groups はそれ自体がアプリではないため、Okta 経由では利用できませんが、[Google Groups ページ](https://groups.google.com/) に移動することで、所属しているすべてのグループを表示し、グループ設定を管理することができます。

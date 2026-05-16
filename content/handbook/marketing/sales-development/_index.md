@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-01T08:58:51+01:00"
 ---
 
 GitLab のセールス開発組織へようこそ！私たちは、インバウンドとアウトバウンドの両方の戦略を通じて[顧客のための結果](/handbook/values/#results)を促進するために設計されたチームです。私たちの構造は、アウトリーチ活動における効率性、応答性、創造性を最大化するように設計されています。

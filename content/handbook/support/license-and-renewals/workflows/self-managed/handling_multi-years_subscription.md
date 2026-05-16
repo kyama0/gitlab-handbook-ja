@@ -7,6 +7,7 @@ upstream_sha: 460f0fe6722bfe52b151b6a8641368ea38885df5
 translated_at: "2026-05-08T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-02-04T16:44:03+00:00"
 ---
 
 時折、顧客が複数年サブスクリプションを持っているケースに遭遇します。これは Sales 経由で購入されたサブスクリプションでのみ可能で、[CustomersDot](https://customers.gitlab.com) から複数年サブスクリプションを作成する手段はありません。

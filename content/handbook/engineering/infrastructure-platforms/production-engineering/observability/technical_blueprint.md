@@ -5,6 +5,7 @@ upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-29T02:14:34Z"
 translator: claude
 stale: false
+lastmod: "2025-10-14T17:59:32+00:00"
 ---
 
 このドキュメントの目的は、Observability チームの目標とガイドラインを詳細に説明することです。焦点は私たちの原則と今後5年間の目標です。

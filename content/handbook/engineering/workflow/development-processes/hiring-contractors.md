@@ -6,6 +6,7 @@ upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-09T13:22:51+00:00"
 ---
 
 GitLabは通常、法人とPEO（Professional Employer Organization）を通じて開発チームに正規雇用のフルタイムエンジニアを採用することを優先しています。しかし、チームが業務遂行を支援する一時的なコンティンジェントワーカーを採用する必要が生じる場合があります。

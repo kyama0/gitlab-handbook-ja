@@ -5,6 +5,7 @@ upstream_sha: c26b483f365d397f86ef45e60a892d0783588ac1
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-12-01T16:21:31-05:00"
 ---
 
 *これは [2019 DevOps Dozen Awards](https://devopsdozen.com/) のために提出された 2 つのページのうちの 1 つで、最優秀 DevOps ソリューションプロバイダーエグゼクティブとして Sid Sijbrandij を、最優秀 DevOps ソリューションプロバイダーとして GitLab を支援するものです。MediaOps と [DevOps.com](https://devops.com/) のご検討と DevOps コミュニティへの貢献に感謝いたします。*

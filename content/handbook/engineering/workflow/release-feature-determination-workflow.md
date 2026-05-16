@@ -5,6 +5,7 @@ upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-09-22T11:39:43-05:00"
 ---
 
 このドキュメントでは、リリースブログ投稿への掲載を目的として、機能がマイルストーンリリースに含まれるかどうかを決定するためのワークフローを説明します。

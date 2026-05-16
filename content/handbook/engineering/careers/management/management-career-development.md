@@ -6,6 +6,7 @@ upstream_sha: "3480299851f7e2243d4f08b75dac452f89929636"
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T19:48:12+00:00"
 ---
 
 [採用](/handbook/engineering/careers/management/hiring/)以外で、チームの強みを向上させる最善の方法は、開発者とキャリア開発コーチングを実践することです。すべてのチームメンバーが Staff 開発者やマネージャーになりたいわけではありません。代わりに、個人のキャリア目標を把握し、それらの目標に向けて積極的に取り組むことが、チームメンバーが成長し自分のキャリアを主体的に持てるよう支援する最も効果的な方法です。[キャリアマッピングと開発](/handbook/people-group/learning-and-development/career-development/#career-mapping-and-development)に関する会社全体のメモに加えて、エンジニアリングチームにとって重要な考慮事項を以下に示します:

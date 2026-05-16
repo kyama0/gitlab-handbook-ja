@@ -5,6 +5,7 @@ upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-08T16:59:33-05:00"
 ---
 
 ## なぜ OneTrust なのか?

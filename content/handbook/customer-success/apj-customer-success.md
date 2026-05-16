@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-30T16:57:54+00:00"
 ---
 APJ カスタマーサクセス部門は [GitLab セールス](/handbook/sales/)機能の一部であり、WW カスタマーサクセス組織の下で、コード開発ライフサイクルにおける GitLab 採用全体を通じて価値を提供するために、大規模・ミッドマーケット・戦略的顧客と協働しています。
 

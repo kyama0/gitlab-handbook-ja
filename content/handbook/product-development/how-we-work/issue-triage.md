@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-06T09:57:12-06:00"
 ---
 
 GitLab は [Open Development](https://about.gitlab.com/blog/2015/12/16/improving-open-development-for-everyone/) を信じており、[GitLab.com](https://gitlab.com/groups/gitlab-org) 上のプロジェクトに対してコミュニティが Issue を立て、マージリクエストを開くことを推奨しています。彼らのコントリビューションは貴重であり、私たちはできるだけ効果的に対応すべきです。その中心にあるのがトリアージ、すなわちタイプと深刻度に応じた分類のプロセスです。

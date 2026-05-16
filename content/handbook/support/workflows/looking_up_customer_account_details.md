@@ -8,6 +8,7 @@ upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-21T12:28:59-06:00"
 ---
 
 ## 顧客アカウント詳細の検索

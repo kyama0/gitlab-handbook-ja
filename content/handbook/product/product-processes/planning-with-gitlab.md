@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-06T19:27:57-05:00"
 ---
 
 私たちは GitLab を使って製品戦略をドキュメント化し、バックログを管理しています。このプロセスのカギとなるコンセプトは次のとおりです:

@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T20:47:52+00:00"
 ---
 
 このページでは、Zendesk チケットが Salesforce ケースとどのように同期されるかを、自動化ワークフロー、管理者の手順、トラブルシューティングのガイダンスを含めて説明します。

@@ -7,6 +7,7 @@ upstream_sha: d0d8657a733d2233820b2b00aaad27ebf5de9755
 translated_at: "2026-05-07T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-09T20:14:47+00:00"
 ---
 
 ## トータルリワードへの連絡

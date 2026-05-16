@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T14:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-23T14:09:02+11:00"
 ---
 
 新しい Security Labs ブログカテゴリの目標は、セキュリティチームの技術的なセキュリティ専門知識と GitLab のソートリーダーシップを、より広いセキュリティコミュニティに紹介することです。

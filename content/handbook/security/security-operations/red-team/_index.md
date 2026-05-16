@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T17:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-09T16:05:51+10:00"
 ---
 
 ## お探しの情報は何ですか？

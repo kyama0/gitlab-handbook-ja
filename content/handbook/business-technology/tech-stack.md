@@ -6,6 +6,7 @@ upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T12:00:00Z"
 translator: "claude"
 stale: false
+lastmod: "2026-01-23T12:25:37-06:00"
 ---
 
 これは GitLab で使用しているアプリケーションの一覧です。GitLab.com を提供するために使用している技術については、[本番環境アーキテクチャのページ](/handbook/engineering/infrastructure-platforms/production/architecture/)をご覧ください。

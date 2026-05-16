@@ -6,6 +6,7 @@ upstream_sha: 1065c86ab1ba75adefbb07560d726608885e6d4e
 translated_at: "2026-04-28T13:32:34Z"
 translator: claude
 stale: false
+lastmod: "2026-03-02T07:33:04-05:00"
 ---
 
 ## 現在のエンドツーエンドテスト

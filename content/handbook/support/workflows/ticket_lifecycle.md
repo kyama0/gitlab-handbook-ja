@@ -7,6 +7,7 @@ upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
 translated_at: "2026-05-08T03:10:58Z"
 translator: claude
 stale: false
+lastmod: "2026-04-16T16:29:42+10:00"
 ---
 
 **Support Ticket Lifecycle** は、顧客が連絡してきた瞬間からループを閉じるまで、私たちがサポートチケットで行う作業を語るための共通言語です。

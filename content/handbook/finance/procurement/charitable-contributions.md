@@ -5,6 +5,7 @@ upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
 translated_at: "2026-04-29T19:06:37Z"
 translator: claude
 stale: false
+lastmod: "2025-02-07T14:27:49+00:00"
 ---
 
 GitLab の資金を慈善目的に寄付するリクエストがある場合は、支援対象、支援方法、除外事項、委任/承認について詳しく説明している[フィランソロピーポリシー](/handbook/legal/philanthropy-policy/#gitlab-inc-philanthropy-policy)をご参照ください。

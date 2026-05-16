@@ -7,6 +7,7 @@ upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T17:15:45+00:00"
 ---
 
 高優先度全リージョン（`HPAR`）チケット対応プロセスは廃止されました。チケットに対する 24 時間体制での協調的な対応が実際に必要となるケースはまれであり、例外として処理できる程度です。

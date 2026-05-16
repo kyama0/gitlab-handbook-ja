@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T03:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-19T12:57:37-05:00"
 ---
 
 Accelerator は、[Customer Success Architect (CSA)](/handbook/customer-success/csm/segment/csa/) が提供する 12 週間の構造化されたイネーブルメントプログラムで、相互のサクセスプランと戦略的目標に整列しています。これらは GitLab の **Advanced**（年 2 回）および **Signature**（年 4 回）[Success Tier](/handbook/customer-success/success-services/) に含まれます。

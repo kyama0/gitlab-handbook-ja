@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-07T19:11:22+02:00"
 ---
 
 デベロッパーアドボカシーチームは、キャンペーン、フィールドイネーブルメント、製品ローンチサポート、ユースケース採用、顧客向けデモ、一般的な学習・オンボーディングに使用できるコンテンツを作成しています。チームが参加するすべてのコンテンツとアクティビティは、[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/) に従って Issue で追跡されます。

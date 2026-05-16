@@ -10,6 +10,7 @@ upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T06:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-12-01T16:21:31-05:00"
 ---
 
 チームが共同作業環境からリモート環境への[移行](/handbook/company/culture/all-remote/)と格闘するとき、[適応力](remote-work-emergency-plan/)のレベルがそれぞれ異なることはよくあることです。[リモートファーストのインフラ](/handbook/company/culture/all-remote/)がすでに確立されていたため、移行が比較的スムーズな場合もあります。一方で、移行が大きな混乱をもたらす場合もあります。

@@ -5,6 +5,7 @@ upstream_sha: c5d40e13183c5a0aeeafefbee88ab3fac48ced5a
 translated_at: "2026-05-08T17:40:50Z"
 translator: claude
 stale: false
+lastmod: "2026-02-06T19:27:57-05:00"
 ---
 
 [セキュリティ部門](/handbook/security/) が [Claude](/handbook/tools-and-tips/ai/claude/) や [GitLab Duo](/handbook/tools-and-tips/ai/gitlab-duo/) などの AI プラットフォームを活用して、ワークフローの最適化、生産性の向上、手作業の自動化をどのように実現しているかをご紹介します。

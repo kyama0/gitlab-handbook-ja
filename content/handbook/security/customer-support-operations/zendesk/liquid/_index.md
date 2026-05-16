@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T23:27:10Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T20:47:52+00:00"
 ---
 
 このガイドでは、Zendesk で Liquid テンプレート言語を使用するためのリファレンスを提供します。Liquid はトリガー、オートメーション、テーマでの動的なコンテンツを可能にします。本ページでは一般的な変数、関数、実用的な例について説明します。

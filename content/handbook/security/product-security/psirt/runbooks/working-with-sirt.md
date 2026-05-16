@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-10T12:42:46-06:00"
 ---
 
 このランブックは、HackerOne 報告、発見された脆弱性、その他のセキュリティインシデントへの対応のために SIRT を巻き込んで作業する必要のある PSIRT エンジニア向けです。

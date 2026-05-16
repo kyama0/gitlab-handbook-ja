@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T03:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-11T12:35:49-04:00"
 ---
 
 GitLab には、プリセールスからポストセールスのジャーニーにわたって連携するいくつかの顧客対応ロールがあります。このページでは、各ロールがフォーカス、エンゲージメントモデル、技術的な深さでどのように異なるかを明確にするためのサイドバイサイド比較を提供します。カバーされるロールには、Customer Success Manager (CSM)、Customer Success Engineer (CSE)、Customer Success Architect (CSA)、Professional Services Engineer (PSE)、Renewals Manager (RM)、Solutions Architect (SA)、Assigned Support Engineer (ASE) が含まれます。

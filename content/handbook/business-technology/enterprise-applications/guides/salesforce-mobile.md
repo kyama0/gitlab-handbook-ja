@@ -6,6 +6,7 @@ upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T06:02:44Z"
 translator: "claude"
 stale: false
+lastmod: "2025-08-27T21:51:43+02:00"
 ---
 
 ## Salesforce モバイルアプリへのログイン方法

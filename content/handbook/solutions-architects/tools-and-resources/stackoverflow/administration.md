@@ -6,6 +6,7 @@ upstream_sha: 5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8
 translated_at: "2026-05-08T17:29:46Z"
 translator: claude
 stale: false
+lastmod: "2025-06-05T17:12:11+02:00"
 ---
 
 ここでは、コミュニティ管理、モデレーターになる方法、タグメンテナンス、Slack や Okta などとの連携について説明します。

@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-09-02T17:27:26+00:00"
 ---
 
 マネージャーにカバレッジがあれば、業務時間の一定割合を別のチームで（「インターンシップ」を通じて）働くことに使うことができます。

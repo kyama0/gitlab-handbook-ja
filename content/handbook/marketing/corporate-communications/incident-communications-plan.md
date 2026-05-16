@@ -6,6 +6,7 @@ upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-23T15:08:44-08:00"
 ---
 
 **コーポレートコミュニケーションチームから潜在的なインシデントに関するレビューを受けたい場合は、Issue 内に情報を集めるか、Slack ディスカッションへのリンクを #corpcomms Slack チャンネルでチームへメッセージしてください。私たちは [セキュリティコミュニケーションマネージャーオンコール](/handbook/security/security-operations/sirt/security-incident-communication-plan/#roles-and-responsibilities-in-a-security-incident) と協力して次のステップを決定します。**

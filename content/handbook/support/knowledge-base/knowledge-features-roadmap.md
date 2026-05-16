@@ -6,6 +6,7 @@ upstream_sha: 597f4cdde51f70d22792d64c8bf63dff58c6fda8
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-04T13:35:11-05:00"
 ---
 
 ### この表では、現在 **進行中（IN PROGRESS）** の取り組みの概要を提供します

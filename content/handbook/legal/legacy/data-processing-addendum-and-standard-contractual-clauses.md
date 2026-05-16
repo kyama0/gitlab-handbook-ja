@@ -5,6 +5,7 @@ upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
 translated_at: "2026-04-29T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-29T17:57:28-04:00"
 ---
 <!-- vale off -->
 ## LEGACY: データ処理補遺および標準契約条項（有効期間：2024年5月20日〜2026年4月30日）

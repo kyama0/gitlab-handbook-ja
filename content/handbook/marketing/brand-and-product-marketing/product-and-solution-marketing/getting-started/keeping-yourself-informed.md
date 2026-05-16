@@ -5,6 +5,7 @@ upstream_sha: ce0ccdac3443c7d547631da8cba8f3148892a0c3
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-04-29T11:15:59-04:00"
 ---
 
 ## Product and Solution Marketing 内のコミュニケーション

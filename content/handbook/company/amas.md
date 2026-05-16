@@ -6,6 +6,7 @@ upstream_sha: "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256"
 translated_at: "2026-04-25T00:00:00Z"
 translator: "claude"
 stale: false
+lastmod: "2025-06-02T12:24:11-07:00"
 ---
 
 AMA（Ask Me Anything）とは、チームメンバーが特定の個人またはグループに対して、一般的なテーマや特定のトピックについて質問するためのセッションです。

@@ -6,6 +6,7 @@ upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
 translated_at: "2026-05-01T10:36:34Z"
 translator: claude
 stale: false
+lastmod: "2026-01-08T16:59:33-05:00"
 ---
 
 Core Web Vitals（CWV）は、ウェブ上のユーザー体験の重要な側面を測定するために Google が導入した一連のパフォーマンス指標です。これらの指標は、読み込み速度、インタラクティビティ、視覚的安定性に焦点を当て、よりスムーズでユーザーフレンドリーな体験を保証します。Core Web Vitals を理解し最適化することは、検索順位の改善とユーザー満足度の向上にとって極めて重要です。

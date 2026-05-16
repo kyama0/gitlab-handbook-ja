@@ -5,6 +5,7 @@ upstream_sha: "fe88192cad67a795a237396e552566cb08c118b9"
 translated_at: "2026-04-29T06:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-12T10:48:57-04:00"
 ---
 
 このページはリーダーシップのポインターを掲載しています。

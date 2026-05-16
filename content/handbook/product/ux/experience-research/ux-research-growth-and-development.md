@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-04T12:15:15-08:00"
 ---
 
 UX リサーチチームメンバーに対する過去の Pulse Survey の結果に基づき、私たちは（既存の [GitLab キャリア開発プロセス](/handbook/people-group/learning-and-development/career-development/) に）2 つのコンポーネントを追加しました。それぞれの焦点は次の通りです。(1) 個人の現在のレベルでの成長について議論すること、(2) Individual Development Plan（IDP）に組み込むためのターゲットを絞ったガイダンスを提供すること。目標は、個人の成長機会を特定し、マネージャーと協力してそれらの成長領域に沿ったプロジェクトを特定できるようにすることです。

@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 UX Research Operations Coordinator の役割を担う場面があります。このページでは、リクルートを最初から最後まで成功させるために必要な「舞台裏」のすべての手順を詳述します。UX Research Operations Coordinator とどう連携するかに興味がありますか？ その情報は[こちら](/handbook/product/ux/experience-research/recruiting-participants/) で見つけられます。

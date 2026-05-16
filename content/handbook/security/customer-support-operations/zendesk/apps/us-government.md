@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-08T11:38:57-05:00"
 ---
 
 このガイドでは、US Government Zendesk インスタンスで現在使用されている Zendesk アプリについて説明します。

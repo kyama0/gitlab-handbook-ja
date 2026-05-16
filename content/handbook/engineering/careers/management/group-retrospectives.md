@@ -5,6 +5,7 @@ upstream_sha: "3480299851f7e2243d4f08b75dac452f89929636"
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T19:48:12+00:00"
 ---
 
 私たちの[レトロスペクティブプロセス](/handbook/engineering/careers/management/group-retrospectives/)の一環として、各リリースの終わりに各[プロダクトグループ](/handbook/company/structure/#product-groups)が独自のグループレトロスペクティブを開催すべきです。レトロスペクティブの目的は、うまくいったこと、うまくいかなかったこと、改善できることを話し合うことです。UX や Quality などの一部のエンジニアリングサブ部門も、メインの R&D レトロスペクティブにフィードバックするための独自のレトロスペクティブを実施しており、ここで概説した同じプロセスに一般的に従うべきです。

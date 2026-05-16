@@ -5,6 +5,7 @@ upstream_sha: 6f672d050777a6a6cb33fc5f31ccf71ebdd5b812
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-06-12T19:34:05-07:00"
 ---
 
 [Claude.ai](https://claude.ai/) を使って AI をワークフロー、ツール、プロセスに取り入れ、効率を高める方法を学びましょう。Claude を使うと、コンテンツの執筆、アウトラインやドキュメントの作成、コンテンツの要約、データベースマイグレーションや SQL ステートメントの生成、リファクタリングの推奨など、さまざまな作業ができます。

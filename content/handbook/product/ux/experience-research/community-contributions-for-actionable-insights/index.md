@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 UXリサーチは、洞察に基づいて行動が起こされ、実装につながる結果が出るときに最も価値があります。UXリサーチの成果物の一環として、[Actionable Insight Issue](/handbook/product/ux/experience-research/research-insights/#actionable-insights) が作成され、プロダクトチームがUXリサーチで明らかになったIssueを取り上げて修正できます。GitLabの素晴らしいところは、[誰もが貢献できる](/handbook/company/mission/) ことで、私たちの内部プロダクトチームに限らないことです。より広範なGitLabコミュニティを巻き込み、その支援を求めることで、Actionable Insightsへの対処をより早く行い、GitLabの使用体験を改善する助けになるかもしれません。これらの洞察を表面化させる一つの方法は、ブログ投稿を書くことです。

@@ -6,6 +6,7 @@ upstream_sha: "fe88192cad67a795a237396e552566cb08c118b9"
 translated_at: "2026-04-29T08:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-12T10:48:57-04:00"
 ---
 
 CESチームは、[GitLab Service Desk](https://docs.gitlab.com/ee/user/project/service_desk/) と ModernLoop を活用して、CESチームへのすべての受信リクエストを追跡します。GitLab チームメンバーで Candidate Experience チームへのリクエストや質問がある場合は、`ces@gitlab.com` にメールを送ると、CES Service Desk 内に自動的に Issue が作成されます。どの CES チームメンバーがあなたのリクエストを担当するかについては、[アライメントページ](/handbook/hiring/)をご覧ください。私たちのチームはインタビューのスケジューリングに ModernLoop を活用しており、既存のカレンダーや ATS とシームレスに連携しています。

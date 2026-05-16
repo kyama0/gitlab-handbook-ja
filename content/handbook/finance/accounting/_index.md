@@ -5,6 +5,7 @@ upstream_sha: "8aa1a9efd98433fb2296996366f1023b5675ea70"
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-18T15:39:47+00:00"
 ---
 
 このページには GitLab の会計・報告ポリシーが含まれており、公開可能なものです。内部プロセスについては、[会計と報告](https://internal.gitlab.com/handbook/finance/accounting/)の内部ハンドブックセクションをご覧ください。

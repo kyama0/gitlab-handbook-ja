@@ -5,6 +5,7 @@ upstream_sha: 6d57cb48e5122af4d9d6d86f68303aef0a09a7d8
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-08-16T13:10:36+00:00"
 ---
 
 ## ポジションレベル

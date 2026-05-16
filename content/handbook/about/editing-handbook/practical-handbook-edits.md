@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T04:45:05Z"
 translator: claude
 stale: false
+lastmod: "2025-11-10T09:58:25+01:00"
 ---
 
 このページには、技術職以外のチームメンバーがハンドブックファーストで働くための手順、ヒント、過去の録画が含まれています。

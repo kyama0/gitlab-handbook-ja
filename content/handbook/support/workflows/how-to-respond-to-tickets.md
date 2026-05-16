@@ -7,6 +7,7 @@ upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-16T13:23:31-04:00"
 ---
 
 ## チケットへの応答方法

@@ -5,6 +5,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-06-27T13:28:31-04:00"
 ---
 
 **重要な注意事項:** このベストプラクティスのガバナンスと施行は現在も進行中です。

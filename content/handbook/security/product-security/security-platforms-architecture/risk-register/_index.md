@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T12:40:09Z"
 translator: claude
 stale: false
+lastmod: "2026-04-09T20:14:47+00:00"
 ---
 
 プロダクトセキュリティリスクレジスター (PSRR) は、GitLab の製品におけるシステミックなセキュリティリスクを特定、評価、優先順位付け、緩和、監視するための一元化されたフレームワークです。PSRR は、[セキュリティリスクチーム](/handbook/security/security-assurance/security-risk/) による [STORM プロセス](/handbook/security/security-assurance/security-risk/storm-program/) と [統合セキュリティリスク管理 (USRM)](/handbook/security/security-observations-risk-management/) 方法論を基に駆動され、それらに従っています。

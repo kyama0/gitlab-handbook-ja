@@ -6,6 +6,7 @@ upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
 translated_at: "2026-04-29T04:54:37Z"
 translator: claude
 stale: false
+lastmod: "2025-12-12T14:35:58+00:00"
 ---
 
 ハンドブックが[説明している](/handbook/people-group/directly-responsible-individuals/)ように、特定のエピックの DRI ステータスとは、担当領域について「目標を明確に述べ、進捗を確認し、フィードバックを与え受け取る」ことができることを意味します。

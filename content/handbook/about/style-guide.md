@@ -5,6 +5,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T04:59:08Z"
 translator: claude
 stale: false
+lastmod: "2025-04-01T09:22:28+00:00"
 ---
 
 GitLab の一般的なコミュニケーション実践については [GitLab Communication](/handbook/communication/) に詳しく記載されていますが、それ以外にもチャンネル固有のガイダンスがあります。

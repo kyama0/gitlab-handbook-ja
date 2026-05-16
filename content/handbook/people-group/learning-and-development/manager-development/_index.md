@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-12-01T16:21:31-05:00"
 ---
 
 GitLab でのマネージャーとしての最初の数か月はワクワクするものです。一方で、特に成功のために何が重要かを素早く特定する必要がある場合、挑戦的でもあります。

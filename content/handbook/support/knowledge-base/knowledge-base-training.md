@@ -6,6 +6,7 @@ upstream_sha: 597f4cdde51f70d22792d64c8bf63dff58c6fda8
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-09T20:42:10+00:00"
 ---
 
 以下のリソースが利用可能です。

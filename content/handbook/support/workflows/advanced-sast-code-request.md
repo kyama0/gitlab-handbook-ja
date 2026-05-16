@@ -8,6 +8,7 @@ upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
 translated_at: "2026-05-08T19:23:50Z"
 translator: claude
 stale: false
+lastmod: "2025-04-22T14:45:09-10:00"
 ---
 
 GitLab Advanced SAST における LGPL ライセンスコンポーネントのソースコードに関するリクエストには、Zendesk の **Advanced SAST App** を使用してください。アプリはプロセスを自動化し、法的な Issue が作成されるまでガイドします。

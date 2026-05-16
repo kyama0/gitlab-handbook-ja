@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 [Rapid Iterative Testing and Evaluation (RITE)](https://uploads-ssl.webflow.com/5d7142044df04fbb477795a2/5ef34f1709bc2ec95a6d3089_ef8a91900840263a4036b0433a389b7097b2.pdf)は、ユーザビリティの問題に対するソリューションを、迅速かつイテレーション的な方法で複数回評価する[ユーザビリティテスト手法](/handbook/product/ux/experience-research/usability-testing/)です。目的は、ユーザビリティの問題を特定するだけでなく、特定された問題に迅速に対応し、それらに対応する新しいソリューションをテストすることです。RITE 調査の最終結果は、完全にユーザビリティテストされた体験（ユーザビリティの問題のソリューションを含む）です。これは、提案されたソリューションが使えるかどうかについての不確実性を取り除くのに役立ち、（ユーザビリティの文脈で）出荷について**高い確信**を持つことができる体験につながります。

@@ -6,6 +6,7 @@ upstream_sha: "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256"
 translated_at: "2026-04-19T00:00:00Z"
 translator: "claude"
 stale: false
+lastmod: "2025-03-07T10:45:14-08:00"
 ---
 
 ## ハンドブックの歴史

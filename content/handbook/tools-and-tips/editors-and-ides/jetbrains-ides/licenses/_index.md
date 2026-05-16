@@ -6,6 +6,7 @@ upstream_sha: 6f672d050777a6a6cb33fc5f31ccf71ebdd5b812
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-11-26T00:36:40+00:00"
 ---
 
 ## ライセンス

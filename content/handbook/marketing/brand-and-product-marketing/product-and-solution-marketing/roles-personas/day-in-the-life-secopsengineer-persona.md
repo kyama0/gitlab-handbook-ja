@@ -5,6 +5,7 @@ upstream_sha: d0a19ab78fc5e0d322868c8f35ab8f81e761bd21
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-08-16T13:10:36+00:00"
 ---
 
 ## セキュリティオペレーションエンジニア ― 1 日の流れ

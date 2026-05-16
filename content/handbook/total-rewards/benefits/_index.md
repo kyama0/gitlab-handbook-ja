@@ -6,6 +6,7 @@ upstream_sha: d0d8657a733d2233820b2b00aaad27ebf5de9755
 translated_at: "2026-05-07T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-09T20:42:10+00:00"
 ---
 
 ## 関連する福利厚生ページ

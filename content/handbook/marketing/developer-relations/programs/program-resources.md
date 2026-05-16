@@ -5,6 +5,7 @@ upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-09T17:22:26+00:00"
 ---
 
 このページには、プログラムの認知拡大、エンゲージメント、リテンション、アドボカシーを推進するために使用するツールとワークフローが含まれています。

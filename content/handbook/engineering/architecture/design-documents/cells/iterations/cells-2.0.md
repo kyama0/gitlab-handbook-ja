@@ -8,6 +8,7 @@ upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
 translated_at: "2026-04-26T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-08-21T08:26:37+02:00"
 ---
 
 **注記:** Cells 1.0、1.5、2.0 というフェーズ名は Protocells に置き換えられています。ただし、このコンテンツは参考資料として引き続き有用かもしれません。

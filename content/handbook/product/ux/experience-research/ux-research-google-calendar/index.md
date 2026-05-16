@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 私たちは、これから実施する問題検証とソリューション検証のリサーチを告知するために、共有の[UXリサーチGoogleカレンダー](https://calendar.google.com/calendar/b/2?cid=Z2l0bGFiLmNvbV9raWVxdjk2ajM1bXB0OGJka2Nicml1MnFiZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)（リンクはGitLab従業員のみが利用できます）を使用しています。UXリサーチャー、プロダクトデザイナー、プロダクトマネージャーはこのカレンダーにイベントを追加できます。これらの招待はGitLab従業員のみが閲覧できます。参加者は元のCalendly招待を表示・使用します。

@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T17:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-07-01T16:03:21+10:00"
 ---
 
 機会主義的攻撃は、[ステルスオペレーション](../stealth-operations.md)よりも自発的なイニシアチブです。事前の承認や通知なしに、いつでも、任意のソース IP アドレスから、GitLab が管理する任意のアセットに対して実施できます。
