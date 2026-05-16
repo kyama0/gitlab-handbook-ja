@@ -53,9 +53,16 @@ params:
   copyright: "GitLab (handbook content) / kyama0 (translation)"
   # ルート絶対パスの画像 URL (/images/...) に前置するベース URL。
   # dev: handbook.gitlab.com にホットリンクして画像表示
-  # prod: CI で HUGO_PARAMS_image_base_url=https://pub-xxxx.r2.dev に上書き
+  # prod: CI で HUGO_PARAMS_imageBaseUrl=https://pub-xxxx.r2.dev に上書き
   # (R2 へは scripts/upload-images-r2.ts で同期済み)
-  image_base_url: "https://handbook.gitlab.com"
+  #
+  # 注: Hugo の env var override は `HUGO` の直後 1 文字を区切り文字として
+  # 推論するので、`HUGO_PARAMS_xxx` 形式で snake_case の param 名
+  # (`image_base_url` 等) を上書きしようとすると `params.image.base.url`
+  # に解釈されてしまい効かない。camelCase の `imageBaseUrl` にしておく
+  # ことで `HUGO_PARAMS_imageBaseUrl` が素直に効く。
+  # https://gohugo.io/configuration/introduction/
+  imageBaseUrl: "https://handbook.gitlab.com"
   links:
     user: []
     developer: []
