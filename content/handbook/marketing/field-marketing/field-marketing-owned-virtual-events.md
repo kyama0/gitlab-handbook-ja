@@ -1,6 +1,6 @@
 ---
-title: "リージョナルマーケティング主催のバーチャルイベント"
-description: "リージョナルマーケターが各種主催バーチャルイベントをセットアップする方法のステップバイステップガイド。"
+title: "Regional Marketing 主催のバーチャルイベント"
+description: "Regional Marketing マネージャーが各種主催バーチャルイベントをセットアップする方法のステップバイステップガイド。"
 upstream_path: /handbook/marketing/field-marketing/field-marketing-owned-virtual-events/
 upstream_sha: eb0cd26eaccd9a7f0de79c77d9a7773a9913ad81
 translated_at: "2026-05-16T00:31:35Z"
@@ -34,7 +34,7 @@ Virtual Lunch and Learn セッションは、チームメンバーの Personal Z
 1. FMM が[イベント](/handbook/marketing/events/#event-execution)をセットアップし、チームメンバーの Personal Zoom アカウント上でホストします。
 1. Lunch and Learn セッションの前に、参加者は地域の利用可能性に応じて e-voucher（例：25 ドル相当）、Uber Eats のギフトカード、Just Eat または類似のものを受け取ります。FMC が事前購入を調整します。
 
-## リージョナルマーケティング Zoom ライセンスでホストする Webcast およびワークショップ
+## Regional Marketing Zoom ライセンスでホストする Webcast およびワークショップ
 
 ### Virtual Workshop
 
