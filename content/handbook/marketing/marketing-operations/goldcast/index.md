@@ -1,236 +1,236 @@
 ---
 title: "Goldcast"
-description: "ウェビナーおよびバーチャルイベントプラットフォーム Goldcast の利用ガイド"
+description: "Goldcast は B2B マーケター向けのデジタルイベントプラットフォームで、イベント、ウェビナー、動画キャンペーンの作成・配信を支援します。AI を活用して魅力的なコンテンツを作成し、動画を複数のフォーマットに転用できます。"
 upstream_path: /handbook/marketing/marketing-operations/goldcast/
 upstream_sha: 0b5a5f39bf48045cf2d6f198c5637420369674de
-translated_at: "2026-05-01T00:00:00Z"
+translated_at: "2026-05-16T00:00:00Z"
 translator: claude
-stale: true
+stale: false
 lastmod: "2026-04-28T12:45:18-06:00"
 ---
 
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
-## About Goldcast
+## Goldcast について
 
-[Goldcast](https://www.goldcast.io/) is one of the official hosts of GitLab's ongoing webcast series. See upcoming and on-demand webcasts [here](https://webcasts.gitlab.com/).
+[Goldcast](https://www.goldcast.io/) は、GitLab が継続的に開催するウェブキャストシリーズの公式ホストの 1 つです。今後開催予定およびオンデマンドのウェブキャストは [こちら](https://webcasts.gitlab.com/) でご覧いただけます。
 
-For questions about Goldcast, reach out to mktgops via our Slack channel
+Goldcast に関する質問は、Slack チャンネルから mktgops までお問い合わせください。
 
-## Link to the original implementation training with Goldcast
+## Goldcast による初期導入トレーニングへのリンク
 
-All GitLab team members can find all 4 implementation training videos performed by Goldcast staff in [this folder](https://drive.google.com/drive/folders/0AHjp9Psp-iDuUk9PVA)
+GitLab のすべてのチームメンバーは、Goldcast スタッフが実施した 4 本の初期導入トレーニング動画を [こちらのフォルダ](https://drive.google.com/drive/folders/0AHjp9Psp-iDuUk9PVA) で確認できます。
 
-## Goldcast Cheat Sheets
+## Goldcast チートシート
 
-- [Goldcast Staff Cheat Sheet](https://docs.google.com/document/d/19hIWrexoTS00Vzt_hzi8fwps9jtT5tKPS24m7R_O4oU/edit?usp=sharing)
-- [Goldcast Speaker Cheat Sheet](https://docs.google.com/document/d/1QRJcJ5bmxUSg5HL8RrisH8v4Ue4AxEwACqOhMJP23Gc/edit?tab=t.0#heading=h.3qwoh6fsuka9)
+- [Goldcast スタッフ向けチートシート](https://docs.google.com/document/d/19hIWrexoTS00Vzt_hzi8fwps9jtT5tKPS24m7R_O4oU/edit?usp=sharing)
+- [Goldcast スピーカー向けチートシート](https://docs.google.com/document/d/1QRJcJ5bmxUSg5HL8RrisH8v4Ue4AxEwACqOhMJP23Gc/edit?tab=t.0#heading=h.3qwoh6fsuka9)
 
-## Goldcast Video Tutorials
+## Goldcast 動画チュートリアル
 
-Please consider the lessons below as additional resources. As a starting point, please refer to the implementation training videos performed by Goldcast staff for the GitLab team.
+以下のレッスンは追加リソースとしてご参照ください。出発点としては、Goldcast スタッフが GitLab チーム向けに実施した初期導入トレーニング動画を参照してください。
 
-- Lesson 1: [What Is Goldcast Studio & How to Use It](https://help.goldcast.io/en_US/enterprise/what-is-goldcast-studio-how-to-use-it)
-- Lesson 2: [Create a Smart Webinar](https://help.goldcast.io/en_US/enterprise/create-a-smart-webinar)
-- Lesson 3: [Customize Webinar Details & Engagement Tools](https://help.goldcast.io/en_US/enterprise/customize-webinar-details-engagement-tools)
-- Lesson 4: [Review Your Webinar Dashboard](https://help.goldcast.io/en_US/enterprise/review-your-smart-webinar-dashboard)
-- Lesson 5: [Webinar Registration & Emails](https://help.goldcast.io/en_US/enterprise/registration-email)
-- Lesson 6: [Webinar Analytics & Integrations](https://help.goldcast.io/en_US/enterprise/analytics-integrations)
-- Lesson 7: [Create an Event](https://help.goldcast.io/en_US/enterprise/create-an-event-single-or-multi-session)
-- Lesson 8: [Review the Dashboard & Event Details](https://help.goldcast.io/en_US/enterprise/review-the-dashboard-event-details)
-- Lesson 9: [Build Your Event Agenda & Add Speakers](https://help.goldcast.io/en_US/enterprise/build-your-event-agenda-add-speakers)
-- Lesson 10: [Create Rooms & Booths](https://help.goldcast.io/en_US/enterprise/create-rooms-booths)
-- Lesson 11: [Set Up Event Registration](https://help.goldcast.io/en_US/enterprise/set-up-event-registration)
-- Lesson 12: [Event Look & Feel](https://help.goldcast.io/en_US/enterprise/event-look-feel)
-- Lesson 13: [Event Emails & Schedule](https://help.goldcast.io/en_US/enterprise/event-emails-schedule)
-- Lesson 14: [Event Recordings, Integrations & Analytics](https://help.goldcast.io/en_US/enterprise/recordings-integrations-analytics)
-- Lesson 15: [Create an Event Template](https://help.goldcast.io/en_US/enterprise/create-an-event-template)
-- Lesson 16: [Create a Series](https://help.goldcast.io/en_US/enterprise/create-a-series)
-- Lesson 17: [Create Hub Pages](https://help.goldcast.io/en_US/enterprise/create-hub-pages)
-- Lesson 18: [Producing a Goldcast Event](https://help.goldcast.io/en_US/enterprise/producing-a-goldcast-event)
-- Lesson 19: [Speaking at a Goldcast Event](https://help.goldcast.io/en_US/enterprise/step-by-step-guide-for-speaking-at-a-goldcast-event)
+- レッスン 1: [Goldcast Studio とは何か、その使い方](https://help.goldcast.io/en_US/enterprise/what-is-goldcast-studio-how-to-use-it)
+- レッスン 2: [Smart Webinar を作成する](https://help.goldcast.io/en_US/enterprise/create-a-smart-webinar)
+- レッスン 3: [ウェビナーの詳細とエンゲージメントツールをカスタマイズする](https://help.goldcast.io/en_US/enterprise/customize-webinar-details-engagement-tools)
+- レッスン 4: [ウェビナーダッシュボードを確認する](https://help.goldcast.io/en_US/enterprise/review-your-smart-webinar-dashboard)
+- レッスン 5: [ウェビナーの登録とメール](https://help.goldcast.io/en_US/enterprise/registration-email)
+- レッスン 6: [ウェビナーの分析と連携](https://help.goldcast.io/en_US/enterprise/analytics-integrations)
+- レッスン 7: [イベントを作成する](https://help.goldcast.io/en_US/enterprise/create-an-event-single-or-multi-session)
+- レッスン 8: [ダッシュボードとイベント詳細を確認する](https://help.goldcast.io/en_US/enterprise/review-the-dashboard-event-details)
+- レッスン 9: [イベントアジェンダを構築し、スピーカーを追加する](https://help.goldcast.io/en_US/enterprise/build-your-event-agenda-add-speakers)
+- レッスン 10: [ルームとブースを作成する](https://help.goldcast.io/en_US/enterprise/create-rooms-booths)
+- レッスン 11: [イベント登録を設定する](https://help.goldcast.io/en_US/enterprise/set-up-event-registration)
+- レッスン 12: [イベントの Look & Feel](https://help.goldcast.io/en_US/enterprise/event-look-feel)
+- レッスン 13: [イベントメールとスケジュール](https://help.goldcast.io/en_US/enterprise/event-emails-schedule)
+- レッスン 14: [イベントの録画、連携、分析](https://help.goldcast.io/en_US/enterprise/recordings-integrations-analytics)
+- レッスン 15: [イベントテンプレートを作成する](https://help.goldcast.io/en_US/enterprise/create-an-event-template)
+- レッスン 16: [シリーズを作成する](https://help.goldcast.io/en_US/enterprise/create-a-series)
+- レッスン 17: [ハブページを作成する](https://help.goldcast.io/en_US/enterprise/create-hub-pages)
+- レッスン 18: [Goldcast イベントをプロデュースする](https://help.goldcast.io/en_US/enterprise/producing-a-goldcast-event)
+- レッスン 19: [Goldcast イベントでスピーカーとして登壇する](https://help.goldcast.io/en_US/enterprise/step-by-step-guide-for-speaking-at-a-goldcast-event)
 
-## Official Goldcast Resources
+## Goldcast の公式リソース
 
-- The [Goldcast Knowledge Base](https://help.goldcast.io/) houses a plethora of step-by-step guides that walk through all aspects of the platform
-- The [Goldcast Hall-of-Fame](https://www.goldcast.io/customer-stories/) shares multiple customer stories and their use cases of the Goldcast platform
-- The [Goldcast Blog](https://www.goldcast.io/blog/) shares additional ways to leverage the platform and other relevant updates from Goldcast
+- [Goldcast ナレッジベース](https://help.goldcast.io/) には、プラットフォームのあらゆる側面を段階的に解説する豊富なガイドが掲載されています
+- [Goldcast Hall-of-Fame](https://www.goldcast.io/customer-stories/) では、複数のお客様の事例と Goldcast プラットフォームの活用例を紹介しています
+- [Goldcast ブログ](https://www.goldcast.io/blog/) では、プラットフォームを活用するその他の方法や Goldcast からの関連情報を共有しています
 
-### Official Goldcast Recommended Resources
+### Goldcast 推奨リソース
 
-- [Permissions breakdown for Team vs Org admins](https://goldcastlearn.helpjuice.com/teams/22128904258715-organization-admin-vs-team-admin-who-can-do-what/)
-- [User Roles and Permissions](https://goldcastlearn.helpjuice.com/about-goldcast/roles-permissions-in-goldcast-studio?from_search=162470793&swifty_search_highlight=team+admin/)
-- [Design and Branding](https://help.goldcast.io/en_US/design/)
-- [Registration Page and Forms](https://help.goldcast.io/en_US/registration-page-form/)
-- [Email Customization](https://help.goldcast.io/en_US/emails/)
-- [Event Settings](https://help.goldcast.io/en_US/event-settings/)
-- [Event Types](https://help.goldcast.io/en_US/QA-event-setup/which-event-type-to-use/)
-- [Event Setup](https://help.goldcast.io/en_US/event-setup/)
-- [Webinars Powered by Smart Technology](https://help.goldcast.io/en_US/webinars-powered-by-smart-event-technology/)
-- [Webinars vs Events](https://help.goldcast.io/en_US/QA-event-setup/webinars-vs-events/)
-- [Running an Event](https://help.goldcast.io/en_US/running-an-event/)
-- [Enhanced Stage Controls](https://help.goldcast.io/en_US/enhanced-stage-controls/)
-- [Captions and Subtitles](https://help.goldcast.io/en_US/event-settings/16696845638683-captions-and-translated-subtitles/)
-- [How to Create Booths](https://help.goldcast.io/rooms-booths/16633523675419-how-to-create-booths/)
+- [Team 管理者と Org 管理者の権限の違い](https://goldcastlearn.helpjuice.com/teams/22128904258715-organization-admin-vs-team-admin-who-can-do-what/)
+- [ユーザーロールと権限](https://goldcastlearn.helpjuice.com/about-goldcast/roles-permissions-in-goldcast-studio?from_search=162470793&swifty_search_highlight=team+admin/)
+- [デザインとブランディング](https://help.goldcast.io/en_US/design/)
+- [登録ページとフォーム](https://help.goldcast.io/en_US/registration-page-form/)
+- [メールのカスタマイズ](https://help.goldcast.io/en_US/emails/)
+- [イベント設定](https://help.goldcast.io/en_US/event-settings/)
+- [イベントタイプ](https://help.goldcast.io/en_US/QA-event-setup/which-event-type-to-use/)
+- [イベントセットアップ](https://help.goldcast.io/en_US/event-setup/)
+- [Smart Technology によるウェビナー](https://help.goldcast.io/en_US/webinars-powered-by-smart-event-technology/)
+- [Webinar と Event の比較](https://help.goldcast.io/en_US/QA-event-setup/webinars-vs-events/)
+- [イベントを運営する](https://help.goldcast.io/en_US/running-an-event/)
+- [拡張ステージコントロール](https://help.goldcast.io/en_US/enhanced-stage-controls/)
+- [字幕と翻訳字幕](https://help.goldcast.io/en_US/event-settings/16696845638683-captions-and-translated-subtitles/)
+- [ブースの作成方法](https://help.goldcast.io/rooms-booths/16633523675419-how-to-create-booths/)
 - [Content Lab](https://help.goldcast.io/en_US/content-lab-home/)
 
-## Important Notes
+## 重要な注意事項
 
-### Registration Requirements
+### 登録要件
 
-#### Registration Policy
+#### 登録ポリシー
 
-- Registrations must ONLY occur via Marketo forms/landing pages
-- **Do NOT use Goldcast landing pages/forms for registration**
-- This restriction is in effect until further notice
+- 登録は Marketo のフォーム／ランディングページ経由でのみ行う必要があります
+- **Goldcast のランディングページ／フォームを登録に使用しないでください**
+- この制限は別途通知があるまで有効です
 
-#### Technical Access Requirements
+#### 技術的なアクセス要件
 
-- Users must grant microphone and camera permissions to browser/Goldcast
-- Failure to grant permissions may prevent event access
+- ユーザーはブラウザ／Goldcast に対してマイクとカメラの権限を許可する必要があります
+- 権限を許可しない場合、イベントへのアクセスが妨げられる可能性があります
 
 ![Goldcast Permissions](/images/marketing/marketing-operations/goldcast/goldcast_permissions.png)
 
-### Event Type Selection Guide
+### イベントタイプ選択ガイド
 
-#### Live vs Pre-recorded
+#### ライブ vs 事前録画
 
-- Live: Required when speakers appear live on camera
-- Pre-recorded: Suitable when no live speakers on camera (Staff can only interact via text with audience)
-- When you are setting up your webcast or workshop, please double check the broadcast type in your settings to ensure it has the correct type (prerecorded, live or RTMP)
-  - **Important timing restriction**: We cannot change the broadcast type in less than 1 hour from the start of the event
-  - **If you need help**: If you accidentally created a live event but it should be prerecorded or vice versa, and it is less than 1 hour left before the start of the event, please reach out to MOPs team
+- ライブ: スピーカーがカメラに映ってライブ出演する場合に必要
+- 事前録画: カメラにライブのスピーカーが映らない場合に適しています（スタッフはテキストでのみ参加者とやり取り可能）
+- ウェブキャストやワークショップを設定する際は、設定の配信タイプが正しいタイプ（事前録画、ライブ、または RTMP）になっているか必ず確認してください
+  - **重要な時間制限**: イベント開始の 1 時間前を切ると配信タイプを変更できません
+  - **サポートが必要な場合**: ライブイベントを誤って作成したが事前録画にすべき場合、またはその逆で、イベント開始まで 1 時間を切っている場合は、MOPs チームに連絡してください
 
-### New Event vs New Webinar for Mixed Content
+### 混在コンテンツ向け New Event vs New Webinar
 
-#### New Event (Recommended for Mixed Content)
+#### New Event（混在コンテンツに推奨）
 
-- New Event will give more flexibility for presenters due to the multi-session functionality, which allows for a pre-recorded session and then a live session - but relies on the Session Redirection Strategy setting to determine how to change the sessions over.
+- New Event は複数セッション機能により、プレゼンターにより高い柔軟性を提供します。事前録画セッションの後にライブセッションを行うことが可能ですが、セッション間の切り替え方法を決定するために Session Redirection Strategy 設定に依存します。
 
-#### New Webinar (Simpler Setup)
+#### New Webinar（シンプルなセットアップ）
 
-- New Webinar offers a simpler setup, less flexibility and automotive content creation via Content Lab - but will require Backstage or Speakers to manually control video and other displayed content during live presentations.
+- New Webinar はよりシンプルなセットアップを提供し、Content Lab を介した自動的なコンテンツ作成が可能ですが、柔軟性は低く、ライブプレゼンテーション中にバックステージまたはスピーカーが手動で動画やその他の表示コンテンツを制御する必要があります。
 
-Reference: To learn more, please read the Goldcast documentation on [which event type to use](https://help.goldcast.io/en_US/QA-event-setup/which-event-type-to-use/) and [webinars vs events](https://help.goldcast.io/en_US/QA-event-setup/webinars-vs-events/).
+参考: 詳細については、[どのイベントタイプを使うか](https://help.goldcast.io/en_US/QA-event-setup/which-event-type-to-use/) と [Webinar と Event の比較](https://help.goldcast.io/en_US/QA-event-setup/webinars-vs-events/) に関する Goldcast のドキュメントをお読みください。
 
-### Session Management & Timing
+### セッション管理とタイミング
 
-#### Session Redirection Strategy
+#### Session Redirection Strategy（セッションリダイレクト戦略）
 
-- Automatic: Allows registrants in at event start, but doesn't force presenters on-stage immediately
-- Manual: Requires staff input to move attendees between sessions
+- 自動: 登録者をイベント開始時に入場させますが、プレゼンターが即座にステージに上がることは強制しません
+- 手動: 参加者をセッション間で移動させるためにスタッフの入力が必要です
 
-More about Session Redirection Strategy [here](https://help.goldcast.io/program-agenda/18803068306459?from_search=181942475&swifty_search_highlight=redirectio/).
+Session Redirection Strategy の詳細は [こちら](https://help.goldcast.io/program-agenda/18803068306459?from_search=181942475&swifty_search_highlight=redirectio/) を参照してください。
 
-The GitLab team has found the Automatic session redirection feature on multi-session Events can be slow, so it is best to familiarize how the feature works and if it would be better to use the manual setting at least an hour before the event starts (when this setting becomes locked).
+GitLab チームは、複数セッションの Event における自動セッションリダイレクト機能が遅くなることがあることを確認しています。そのため、機能の動作に慣れ親しんでおき、手動設定の方が良いかどうかをイベント開始の少なくとも 1 時間前（この設定がロックされる時刻）までに判断するのが最善です。
 
-#### Timing Information
+#### タイミング情報
 
-- Settings Lock: Run on the assumption that settings cannot be changed within an hour of your event start time
-- On-Demand Conversion: Occurs ~35 minutes after event ends
-- Pre-recorded Events: Should be 2+ minutes longer than video asset length
+- 設定のロック: イベント開始時刻の 1 時間以内は設定を変更できないという前提で動いてください
+- オンデマンド変換: イベント終了から約 35 分後に発生します
+- 事前録画イベント: 動画アセットの長さよりも 2 分以上長くする必要があります
 
-### Content & Media Guidelines
+### コンテンツとメディアのガイドライン
 
-#### Video Specifications & Upload
+#### 動画仕様とアップロード
 
-- File Size Limit: 5GB for standard events (tag Marketing Ops team if the size is larger)
-- Processing Time: Up to 4x the video length
-- 4K Broadcasts: Any 4K broadcasts require the GitLab team contact Goldcast support as these are deemed “special” events
-- [Creative Asset Specs](https://help.goldcast.io/en_US/design/4406894301979-goldcast-design-specifications/)
+- ファイルサイズ制限: 標準イベントでは 5GB（サイズがこれを超える場合は Marketing Ops チームをタグ付けしてください）
+- 処理時間: 動画の長さの最大 4 倍
+- 4K 配信: 4K 配信は GitLab チームから Goldcast サポートへ連絡が必要です。これらは「特別な」イベントとして扱われます
+- [クリエイティブアセット仕様](https://help.goldcast.io/en_US/design/4406894301979-goldcast-design-specifications/)
 
-#### Captions & Language Settings
+#### 字幕と言語設定
 
-- Default Language: English (unless template specifies otherwise)
-- Default Settings: Captions and subtitles enabled by default (only works correctly if presenters speak in set primary language)
-- Custom Subtitles
+- デフォルト言語: 英語（テンプレートで別途指定されない限り）
+- デフォルト設定: 字幕および翻訳字幕はデフォルトで有効（設定された主要言語でプレゼンターが話す場合にのみ正しく動作します）
+- カスタム字幕
 
-Uploading our own subtitle/caption files [requires reaching out to Support](https://goldcast.zendesk.com/hc/en-us/articles/26677786827291-Upload-Custom-VTT-Caption-Files-to-Pre-recorded-Sessions/) with the event name/ID and pre-recorded session name. Pre-loaded subtitles are only available for pre-recorded events. The file emailed to Support must be in VTT format and the Support team requests up to 48 hours to implement. Within any event using customized VTT files, **only languages included within the submitted files will be supported** and live captions will be disabled. e.g., if a VTT file includes English, Korean and German, those will be the only available subtitles/captions and Japanese will not be selectable.
+独自の字幕／キャプションファイルをアップロードするには、[サポートに連絡する必要があります](https://goldcast.zendesk.com/hc/en-us/articles/26677786827291-Upload-Custom-VTT-Caption-Files-to-Pre-recorded-Sessions/)。連絡時にはイベント名／ID と事前録画セッション名を伝えてください。プリロード字幕は事前録画イベントでのみ利用可能です。サポートにメールするファイルは VTT 形式である必要があり、サポートチームは実装に最大 48 時間を要します。カスタマイズ済み VTT ファイルを使用するイベント内では、**送信されたファイルに含まれる言語のみがサポートされ**、ライブ字幕は無効化されます。例えば、VTT ファイルに英語、韓国語、ドイツ語が含まれている場合、それらのみが利用可能な字幕／キャプションとなり、日本語は選択できなくなります。
 
-### Data & Integration Management
+### データと連携の管理
 
-- Field Creation: Custom fields allowed in Goldcast, but Marketo sync controlled by Marketing Ops. **Do not add any fields into the Goldcast -> Marketo sync without consulting Marketing Ops**.
+- フィールド作成: Goldcast でカスタムフィールドの作成は許可されていますが、Marketo 同期は Marketing Ops が管理します。**Marketing Ops に相談せずに Goldcast → Marketo 同期にフィールドを追加しないでください**。
 
-#### Form Management for On-Demand
+#### オンデマンド向けフォーム管理
 
-- To cut down on complexity and strain on Marketo, the Attended On Demand Marketo program flows for Goldcast, On-demand form fills and for Pathfactory are shared. Have Pathfactory keywords in mind or reserved before the webcast air date so this flow can be turned on quickly after the event ends. Once the event is over, either take down the landing page or replace the FORM 1592: Webcast form for the FORM 2076: On-demand Webcast form if the intention is to leave the landing page up for on-demand.
+- 複雑さと Marketo への負荷を削減するため、Goldcast 向けの Attended On Demand Marketo プログラムフロー、On-demand フォームフィル、および Pathfactory のフローは共有されています。Pathfactory のキーワードはウェブキャスト配信日より前に念頭に置くか予約しておき、イベント終了後にこのフローをすぐに有効化できるようにしてください。イベントが終了したら、ランディングページを取り下げるか、ページをオンデマンド用に残す意図がある場合は、FORM 1592: Webcast フォームを FORM 2076: On-demand Webcast フォームに置き換えてください。
 
-### Event Features & Limitations
+### イベントの機能と制限
 
-#### Test Event Constraints
+#### テストイベントの制約
 
-- Test event becomes non-test event at **10 registrants**. [More info](https://help.goldcast.io/en_US/event-settings/what-is-a-test-event-how-to-create-one/).
+- テストイベントは **登録者 10 人** で非テストイベントになります。[詳細](https://help.goldcast.io/en_US/event-settings/what-is-a-test-event-how-to-create-one/)。
 
-#### Landing Page Management
+#### ランディングページの管理
 
-- **Enter Event Button**: the Enter Event button on the registration landing page is recommended to be disabled, if it is not already. If enabled, registrants can enter the event earlier than 1 hour prior to event start. Instructions on disabling the button [here](https://help.goldcast.io/en_US/event-settings/4583663517211-disabling-the-enter-event-button#how-to-turn-off-the-enter-event-button-1/).
-- **Goldcast LPs**: Activated by default, cannot be deactivated. We continue using Marketo form and landing pages until further notice.
-- **Auto-deactivation**: Goldcast LPs deactivate shortly after event ends.
+- **Enter Event ボタン**: 登録ランディングページの Enter Event ボタンは、まだ無効になっていない場合、無効化することを推奨します。有効になっていると、登録者はイベント開始の 1 時間以上前にイベントに入場できてしまいます。ボタンを無効化する手順は [こちら](https://help.goldcast.io/en_US/event-settings/4583663517211-disabling-the-enter-event-button#how-to-turn-off-the-enter-event-button-1/)。
+- **Goldcast LP**: デフォルトで有効化されており、無効化できません。引き続き、別途通知があるまで Marketo のフォームとランディングページを使用します。
+- **自動無効化**: Goldcast LP はイベント終了後まもなく無効化されます。
 
-#### Platform Limitations
+#### プラットフォームの制限
 
-- Event Deactivation: No full deactivation feature available (as of April 2025)
-- The removal of Goldcast branding, such as surveys and rate us button, are part of the white listing feature and behind a paywall.
+- イベント無効化: 完全な無効化機能はありません（2025 年 4 月時点）
+- アンケートや評価ボタンといった Goldcast ブランドの削除は、ホワイトリスト機能の一部であり、有料プラン限定です。
 
-### Support & Performance
+### サポートとパフォーマンス
 
-#### Performance Optimization
+#### パフォーマンス最適化
 
-- Connection Testing: Guests prompted for connection test before joining (default)
-- Lite Mode: May improve performance for users with video/audio issues (see Q4 FAQ for [Lite Mode](https://help.goldcast.io/en_US/for-attendees/9152654198427-goldcast-attendee-faqs/) details)
+- 接続テスト: 参加者は参加前に接続テストの実行を求められます（デフォルト）
+- Lite Mode: 動画／音声に問題があるユーザーのパフォーマンスを改善できる可能性があります（[Lite Mode](https://help.goldcast.io/en_US/for-attendees/9152654198427-goldcast-attendee-faqs/) の詳細については Q4 FAQ を参照）
 
-#### Live Support Access
+#### ライブサポートへのアクセス
 
-- To request text-based Live Chat Support during an event and from the Studio dashboard, [click the “?” icon in the top right corner](https://help.goldcast.io/en_US/about-goldcast/16577714397851-how-do-i-contact-goldcast-support-/). Support can share an event checkup to 48 hours prior to the event, if requested, which includes a review of settings.
+- イベント中および Studio ダッシュボードからテキストベースのライブチャットサポートをリクエストするには、[右上の「?」アイコンをクリック](https://help.goldcast.io/en_US/about-goldcast/16577714397851-how-do-i-contact-goldcast-support-/) してください。サポートはリクエストに応じてイベント開始の最大 48 時間前にイベントチェックアップを共有でき、これには設定のレビューが含まれます。
 
 ![Goldcast Live Chat](/images/marketing/marketing-operations/goldcast/goldcast_livechat.png)
 
-## Fields syncing between Marketo and Goldcast
+## Marketo と Goldcast 間の同期フィールド
 
-List of sync fields in draft currently. Let MOps know of any more fields to consider.
+現在、同期フィールドのリストはドラフトです。考慮すべきフィールドがあれば MOps に知らせてください。
 
-The definition of a `Standard` field vs a `Custom` field is based on what fields are out of the box within Goldcast. Fields labeled as `Standard` have been synced at the instance level, but `Custom` fields are synced on the form object. This means any new forms created that exist outside of the form library will need to have their `Custom` fields synced to Marketo by MOps.
+`Standard` フィールドと `Custom` フィールドの定義は、Goldcast 内で標準で用意されているフィールドかどうかに基づきます。`Standard` とラベル付けされたフィールドはインスタンスレベルで同期されていますが、`Custom` フィールドはフォームオブジェクト上で同期されます。これは、フォームライブラリの外に新規作成されるフォームは、`Custom` フィールドを MOps が Marketo へ同期する必要があることを意味します。
 
-Forms within Goldcast's "form library" are all designed to support UTM parameters and Google Analytics IDs.
+Goldcast の「フォームライブラリ」内のフォームはすべて、UTM パラメータと Google Analytics ID をサポートするように設計されています。
 
-| Goldcast Field Name | Marketo Field Name | Update Cadence | Custom or standard field?|
+| Goldcast フィールド名 | Marketo フィールド名 | 更新頻度 | カスタムフィールドか標準フィールドか |
 | ------ | ------ | ------ | ------ |
-|   First Name     |   First Name     | Always update | Standard |
-|   Last Name     |  Last Name     | Always uodate | Standard |
-| Email| email | Lookup Field | Standard |
-|Job Title | Job Title| Only update if target is empty | Standard |
-| Company | Company Name| Only update if target is empty|Standard |
-|City | City| Only update if target is empty|Standard |
-| Country | Country|Only update if target is empty|Standard |
-| State |State |Only update if target is empty|Standard |
-|Province|Canadian Province|Don't update if source is empty| Custom |
-|Australian State/Territory|Australian State/Territory|Only update if target is empty| Custom |
-| UTM Campaign |original UTM campaign|Only update if target is empty|Standard |
-| UTM Campaign | last UTM campaign| Always update|Standard |
-| UTM Medium |original UTM medium|Only update if target is empty |Standard |
-| UTM Medium |last UTM medium|Always update |Standard |
-| UTM Source |original UTM source|Only update if target is empty |Standard |
-| UTM Source |last UTM source|Always update |Standard |
-| UTM Content |original UTM content|Only update if target is empty|Standard |
-| UTM Content |last UTM content|Always update|Standard |
-| UTM Partner ID|lastCRMPartnerID|Always update|Standard |
-| GACLIENTID__c| GACLIENTID__c| Only update if target is empty |Custom |
+|   First Name     |   First Name     | 常に更新 | Standard |
+|   Last Name     |  Last Name     | 常に更新 | Standard |
+| Email| email | ルックアップフィールド | Standard |
+|Job Title | Job Title| ターゲットが空の場合のみ更新 | Standard |
+| Company | Company Name| ターゲットが空の場合のみ更新|Standard |
+|City | City| ターゲットが空の場合のみ更新|Standard |
+| Country | Country|ターゲットが空の場合のみ更新|Standard |
+| State |State |ターゲットが空の場合のみ更新|Standard |
+|Province|Canadian Province|ソースが空の場合は更新しない| Custom |
+|Australian State/Territory|Australian State/Territory|ターゲットが空の場合のみ更新| Custom |
+| UTM Campaign |original UTM campaign|ターゲットが空の場合のみ更新|Standard |
+| UTM Campaign | last UTM campaign| 常に更新|Standard |
+| UTM Medium |original UTM medium|ターゲットが空の場合のみ更新 |Standard |
+| UTM Medium |last UTM medium|常に更新 |Standard |
+| UTM Source |original UTM source|ターゲットが空の場合のみ更新 |Standard |
+| UTM Source |last UTM source|常に更新 |Standard |
+| UTM Content |original UTM content|ターゲットが空の場合のみ更新|Standard |
+| UTM Content |last UTM content|常に更新|Standard |
+| UTM Partner ID|lastCRMPartnerID|常に更新|Standard |
+| GACLIENTID__c| GACLIENTID__c| ターゲットが空の場合のみ更新 |Custom |
 
-## Event Tags
+## イベントタグ
 
-Tags can be used to quickly filter webcasts and events by the tagged topic. If you add more tags in the Goldcast platform, please be sure to update this handbook list.
+タグはタグ付けされたトピックでウェブキャストやイベントをすばやくフィルタリングするのに使えます。Goldcast プラットフォームでタグを追加する場合は、必ずこのハンドブックのリストも更新してください。
 
-### Key Technical Details
+### 主な技術的詳細
 
-1. You can add as many event tags as you want but should be mindful about not duplicating or creating overly granular tags for events.
-2. You can add event tags while creating your event in Goldcast, or after creating the event in Goldcast.
-3. Goldcast event tags are NOT synced to CRMs/MAPs.
-4. The event tags library is visible to all users within the GitLab Inc team in Goldcast.
+1. イベントタグは好きなだけ追加できますが、重複や過度に細かいタグを作成しないように注意してください。
+2. イベント作成時、または Goldcast でイベント作成後にイベントタグを追加できます。
+3. Goldcast のイベントタグは CRM／MAP に同期されません。
+4. イベントタグライブラリは、Goldcast の GitLab Inc チーム内のすべてのユーザーから閲覧できます。
 
-### GitLab Event Tag Library
+### GitLab イベントタグライブラリ
 
-#### Content and Product Tags
+#### コンテンツおよびプロダクトタグ
 
 - DevOps Platform
 - DevSecOps
@@ -240,7 +240,7 @@ Tags can be used to quickly filter webcasts and events by the tagged topic. If y
 - CD
 - Duo
 
-#### Language Tags
+#### 言語タグ
 
 - Language: Japanese
 - Language: Korean
@@ -250,16 +250,16 @@ Tags can be used to quickly filter webcasts and events by the tagged topic. If y
 - Language: Spanish
 - Language: English w/ interpreter
 
-#### Event Type Tags
+#### イベントタイプタグ
 
-- Type: Workshop (Used for Field Marketing Hands-on workshops)
-- Type: Executive Roundtable (Used for the Executive Roundtable event type)
-- Type: Webcast (only used when another type is not used)
-- Type: ABM Webcast (Used for events designed for a single or small subset of specific accounts)
-- Type: GTM Webcast (A webcast aligned with a GTM, produced by the GTM team)
-- Type: Technical Demo Series (Used for the weekly Technical Demo Series)
+- Type: Workshop（Field Marketing のハンズオンワークショップに使用）
+- Type: Executive Roundtable（Executive Roundtable イベントタイプに使用）
+- Type: Webcast（他のタイプが使われていない場合のみ使用）
+- Type: ABM Webcast（特定の単一または小規模なアカウント群向けに設計されたイベントに使用）
+- Type: GTM Webcast（GTM に沿った、GTM チームが制作するウェブキャスト）
+- Type: Technical Demo Series（毎週の Technical Demo Series に使用）
 
-#### Audience Tags
+#### オーディエンスタグ
 
 - Audience: Partners
 - Audience: Customers - Practitioners
@@ -268,17 +268,17 @@ Tags can be used to quickly filter webcasts and events by the tagged topic. If y
 - Audience: Prospects - Practitioners
 - Audience: Prospects - Managers
 - Audience: Prospects - Execs
-- Audience: Channel (Directly targeting the channel partner, any member of the partner organization)
-- Audience: Channel Marketing (Any activity directly targeting the marketing people within the channel/partner organization)
+- Audience: Channel（チャネルパートナー、パートナー組織のメンバーを直接ターゲットにする場合）
+- Audience: Channel Marketing（チャネル／パートナー組織内のマーケティング担当者を直接ターゲットにする活動）
 
-#### Geographic Tags
+#### 地域タグ
 
 - Global
 - APAC
 - AMER
 - EMEA
 
-#### Segment Tags
+#### セグメントタグ
 
 - US Public Sector
 - All Segments
@@ -286,22 +286,22 @@ Tags can be used to quickly filter webcasts and events by the tagged topic. If y
 - MM
 - ENT
 
-#### Content Format Tags
+#### コンテンツフォーマットタグ
 
-- Case Study (Used on any webcast that presents a customer story)
-- Partner Involved (Used on any webcast that is co-branded or has a partner speaking on the webcast)
+- Case Study（顧客事例を紹介するウェブキャストで使用）
+- Partner Involved（コブランドまたはパートナーがウェブキャストで講演するウェブキャストで使用）
 
-## Marketo Program Cloning and Tokens
+## Marketo プログラムのクローンとトークン
 
-There are twmultiple Marketo program templates to use between event types to accommodate for attribution:
+属性管理を考慮し、イベントタイプ間で使用する Marketo プログラムテンプレートが複数あります:
 
-- For webcasts, the template is named `YYYYMMDD_EventName_Webcast_Goldcast_template`
-- For workshops it is `YYYYMMDD_EventName_Workshop_Goldcast_template`
-- For executive roundtables it is `YYYYMMDD_EventName_Roundtable_Goldcast_template`
+- ウェブキャストの場合、テンプレート名は `YYYYMMDD_EventName_Webcast_Goldcast_template`
+- ワークショップの場合は `YYYYMMDD_EventName_Workshop_Goldcast_template`
+- エグゼクティブラウンドテーブルの場合は `YYYYMMDD_EventName_Roundtable_Goldcast_template`
 
-All are found in the [Templates - Goldcast Webcasts folder](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/classic/ME21842A1/). Goldcast can auto-clone Marketo programs based on a template, as long as the Goldcast template is synced to a Marketo program. The Marketo program created will have the same name as the Goldcast event, ending with a time stamp. The new program will appear in the same folder as the original Marketo program.
+これらはすべて [Templates - Goldcast Webcasts フォルダ](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/classic/ME21842A1/) にあります。Goldcast テンプレートが Marketo プログラムと同期されている限り、Goldcast はテンプレートに基づいて Marketo プログラムを自動クローンできます。作成された Marketo プログラムは Goldcast イベントと同じ名前を持ち、末尾にタイムスタンプが付きます。新規プログラムは元の Marketo プログラムと同じフォルダに表示されます。
 
-When working correctly, the Marketo program's tokens will auto-populate - either on program creation (via Goldcast's program cloning feature) or when manually connected to a Goldcast event. The relevant tokens for this process are:
+正しく動作している場合、Marketo プログラムのトークンはプログラム作成時（Goldcast のプログラムクローン機能経由）または Goldcast イベントに手動で接続したときに自動で値が入力されます。このプロセスに関係するトークンは以下のとおりです:
 
 - {{my.goldcast_eventEndDate}}
 - {{my.goldcast_eventEndTime}}
@@ -314,9 +314,9 @@ When working correctly, the Marketo program's tokens will auto-populate - either
 - {{my.goldcast_eventTitle}}
 - {{my.goldcast_formId}}
 
-Additionally, there are tokens within the program that are _not_ updated by Goldcast but are still relevant for various aspects of the program, like the Marketo landing page or Marketo-sent follow up emails. These tokens but are not limited to:
+加えて、プログラム内には Goldcast によって更新されない _ものの_、Marketo ランディングページや Marketo から送信されるフォローアップメールなど、プログラムのさまざまな側面に関連するトークンがあります。これらのトークンには以下が含まれます（これらに限りません）:
 
-Marketo email tokens
+Marketo メールトークン
 
 - {{my.utm}}
 - {{my.ondemandUrl}}
@@ -325,7 +325,7 @@ Marketo email tokens
 - {{my.pfslidelink}}
 - {{my.event owner}}
 
-Follow up Emails
+フォローアップメール
 
 - {{my.zzfollow up slides or recording link}}
 - {{my.zzFollow up CTA link}}
@@ -335,7 +335,7 @@ Follow up Emails
 - {{my.zzfollow up slides or recording link}}
 - {{my.zzFollowup - trial bullets}}
 
-Marketo landing page tokens
+Marketo ランディングページトークン
 
 - {{my.webcastSubtitle}}
 - {{my.introParagraph}}
@@ -350,211 +350,211 @@ Marketo landing page tokens
 - {{my.speaker2JobTitle}}
 - {{my.speaker2Company}}
 
-## Event Types
+## イベントタイプ
 
-When creating a new event, you have 3 different choices: New Webinar, New Event and New Series.  Each of these offers slight variation on event attributes and features, with [Webinar and Event seeing the most important differences](https://help.goldcast.io/en_US/QA-event-setup/webinars-vs-events/).
+新しいイベントを作成するとき、選択肢は 3 つあります: New Webinar、New Event、New Series。各オプションはイベントの属性と機能にわずかな違いがあり、[Webinar と Event には最も重要な違いがあります](https://help.goldcast.io/en_US/QA-event-setup/webinars-vs-events/)。
 
 ### New Webinar
 
-Best For: Simple, single-format events
+最適な用途: シンプルで単一形式のイベント
 
-- Available broadcast types: Pre-recorded or Live
-- Pre-recorded: Staff can only interact via text-based interface with attendees
-- Live: Staff/speakers must manually manage all video on stage
+- 利用可能な配信タイプ: 事前録画またはライブ
+- 事前録画: スタッフは参加者とテキストベースのインターフェースでのみやり取り可能
+- ライブ: スタッフ／スピーカーがステージ上のすべての動画を手動で管理する必要があります
 
 ### New Event
 
-Best For: Complex, multi-format events
+最適な用途: 複雑で複数形式のイベント
 
-- Supports multi-session events across multiple rooms, times, and days
-- Allows mixing of pre-recorded video with live speakers
-- Good option for events with live Q&A following pre-recorded content
+- 複数のルーム、時間、日にわたる複数セッションイベントをサポート
+- 事前録画動画とライブスピーカーの混在を許可
+- 事前録画コンテンツの後にライブ Q&A を行うイベントに適した選択肢
 
 ### New Series
 
-- Functions like a folder to group multiple events/webinars under one label
-- See "Working with a Series" section for more details
+- 複数のイベント／ウェビナーを 1 つのラベルでグルーピングするフォルダのように機能
+- 詳細については「シリーズの利用」セクションを参照してください
 
-## Event Creation Options
+## イベント作成オプション
 
-Users can start event creation in either Goldcast or Marketo. Choose based on your workflow preference and setup requirements.
+ユーザーは Goldcast または Marketo のいずれかからイベント作成を開始できます。ワークフローの好みやセットアップ要件に基づいて選択してください。
 
-### Event Creation in Goldcast (Preferred method)
+### Goldcast でのイベント作成（推奨される方法）
 
-#### Step 1: Initial Setup
+#### ステップ 1: 初期セットアップ
 
-1. Click the + icon in the top right of Goldcast
-2. Select your event type from primary options (all options are available here > lined to the second above)
-3. For Auto-Marketo Program Creation: Choose the appropriate template for the event type
+1. Goldcast の右上の + アイコンをクリック
+2. 主要なオプションからイベントタイプを選択（すべてのオプションがここから利用可能 > 上記のリストへのリンク）
+3. Marketo プログラム自動作成の場合: イベントタイプに適切なテンプレートを選択
 
-Note: All localized templates automatically create Marketo programs
+注意: すべてのローカライズされたテンプレートは Marketo プログラムを自動作成します
 
-#### Step 2: Basic Information
+#### ステップ 2: 基本情報
 
-Fill in the following fields (most auto-populate into Marketo program tokens):
+以下のフィールドに入力してください（ほとんどが Marketo プログラムトークンに自動入力されます）:
 
-- Title
-- Date
-- Start Time
-- End Time
-- Timezone
-- Type: Live or Pre-recorded
+- タイトル
+- 日付
+- 開始時刻
+- 終了時刻
+- タイムゾーン
+- タイプ: ライブまたは事前録画
 
-#### Step 3: Template and Configuration
+#### ステップ 3: テンプレートと設定
 
-1. **Select Template**: Covers registration page, emails, stage design, and form format
-2. **Add Tags**: Region, topic, team, etc. for better reporting
-3. **Workspace**: Use GitLab Inc Team Workspace for standard events
-4. **Repeating Events**: Available but not fully tested with Marketo integration
+1. **テンプレートを選択**: 登録ページ、メール、ステージデザイン、フォーム形式をカバー
+2. **タグを追加**: より良いレポートのために地域、トピック、チームなど
+3. **ワークスペース**: 標準イベントには GitLab Inc Team Workspace を使用
+4. **繰り返しイベント**: 利用可能ですが、Marketo 連携については完全にはテストされていません
 
-#### Step 4: Event-Specific Options (New Event Only)
+#### ステップ 4: イベント固有のオプション（New Event のみ）
 
-Access additional customization in the Program menu:
+Program メニューから追加のカスタマイズにアクセスできます:
 
-- Agenda: Customize sessions for multi-session events + where you add your events assets (polls, surveys, docs, video, slides etc.)
-- [Rooms](https://help.goldcast.io/rooms-booths/16634717473179-how-to-create-rooms): Rooms are spaces attendees can have smaller group conversations and networking opportunities
-- [Booths](https://help.goldcast.io/rooms-booths/16633523675419-how-to-create-booths): Booths are an opportunity for your attendees to directly engage with event sponsors, or consume content about your company, products, and more. Your event may include a maximum of two Booth tabs.
+- アジェンダ: 複数セッションイベントのセッションをカスタマイズ + イベントのアセット（投票、アンケート、ドキュメント、動画、スライドなど）を追加する場所
+- [ルーム](https://help.goldcast.io/rooms-booths/16634717473179-how-to-create-rooms): ルームは参加者が少人数の会話やネットワーキングの機会を持てるスペース
+- [ブース](https://help.goldcast.io/rooms-booths/16633523675419-how-to-create-booths): ブースは参加者がイベントスポンサーと直接やり取りしたり、当社や製品などに関するコンテンツを消費したりする機会です。イベントには最大 2 つのブースタブを含めることができます。
 
-Note: Session names and times appear on external landing pages unless disabled.
+注意: セッション名と時刻は、無効にしない限り外部のランディングページに表示されます。
 
-#### Step 5: Test Event Toggle
+#### ステップ 5: テストイベント切替
 
-- Toggle “Test event” should be ON if you have a test event, if it’s a live event, please ensure the toggle is OFF.
-- Test Event Limitations:
-  - Maximum 10 registrants
-  - No recording capability
-  - Cannot convert to on-demand viewing
+- テストイベントを使用する場合は「Test event」トグルを ON にしてください。ライブイベントの場合は、トグルが OFF になっていることを確認してください。
+- テストイベントの制限:
+  - 登録者数最大 10 人
+  - 録画機能なし
+  - オンデマンド視聴に変換不可
 
-More about it [here](https://help.goldcast.io/en_US/virtual-events/16616311404315-getting-started-with-goldcast-setting-up-running-an-event#test-event-12/).
+詳細は [こちら](https://help.goldcast.io/en_US/virtual-events/16616311404315-getting-started-with-goldcast-setting-up-running-an-event#test-event-12/) を参照してください。
 
-#### Step 6: Marketo Program Management
+#### ステップ 6: Marketo プログラムの管理
 
-If the Marketo program cloning feature worked correctly, Goldcast will have created a new Marketo program based on your Goldcast event within the `Templates - Goldcast Webcasts` folder or within whichever folder the program template lives in Marketo.
+Marketo プログラムのクローン機能が正しく動作した場合、Goldcast は `Templates - Goldcast Webcasts` フォルダ内（または Marketo でプログラムテンプレートが存在するフォルダ内）に、Goldcast イベントに基づいた新しい Marketo プログラムを作成しているはずです。
 
-The name given to the new Marketo program will match the Goldcast event, plus a timestamp.
+新しい Marketo プログラムに付けられた名前は、Goldcast イベントの名前にタイムスタンプを加えたものになります。
 
-Rename the Marketo program to fit the regular naming convention (e.g., `YYYYMMDD_EventName_Webcast_Goldcast_template`) and move the program to the appropriate folder for the FY/quarter within Marketo.
+Marketo プログラムの名前を通常の命名規則（例: `YYYYMMDD_EventName_Webcast_Goldcast_template`）に合うように変更し、Marketo 内の該当する FY／四半期の適切なフォルダにプログラムを移動してください。
 
-_Note: Renaming doesn't affect sync or Goldcast event_
+_注意: 名前変更は同期や Goldcast イベントには影響しません_
 
-### Event Creation in Marketo
+### Marketo でのイベント作成
 
-#### Step 1: Program Setup
+#### ステップ 1: プログラムのセットアップ
 
-1. Duplicate the template labeled for the event type
-2. Move to appropriate quarter folder
-3. Follow standard naming convention
+1. イベントタイプ用にラベル付けされたテンプレートを複製
+2. 適切な四半期フォルダに移動
+3. 標準的な命名規則に従う
 
-#### Step 2: Get Program ID
+#### ステップ 2: プログラム ID を取得
 
-1. Navigate to your program in Marketo
-2. Find Program ID in URL: classic/ME**00000**A1
-3. Copy the number between the letters (e.g., 24014)
+1. Marketo でプログラムに移動
+2. URL からプログラム ID を見つける: classic/ME**00000**A1
+3. 文字の間の数字をコピー（例: 24014）
 
-#### Step 3: Goldcast Event Creation
+#### ステップ 3: Goldcast イベントの作成
 
-1. Create event in Goldcast
-2. Template Selection: Choose `GitLab Primary Template (w/o Marketo program creation)`
+1. Goldcast でイベントを作成
+2. テンプレート選択: `GitLab Primary Template (w/o Marketo program creation)` を選択
 
- _Note: This option not available for localized templates_
- With a Marketo program created before the Goldcast event, there is no need to have Goldcast create a new Marketo program.
+ _注意: このオプションはローカライズされたテンプレートでは利用できません_
+ Goldcast イベントの前に Marketo プログラムが作成されているため、Goldcast に新しい Marketo プログラムを作成させる必要はありません。
 
-#### Step 4: Connect Programs
+#### ステップ 4: プログラムを接続
 
-1. In Goldcast, navigate to your event
-2. Go to: **Integrations** → **Marketo** → **Settings**
-3. Enter Program ID in `Connected Program ID field`
-4. Click **Connect**
+1. Goldcast でイベントに移動
+2. **Integrations** → **Marketo** → **Settings** に移動
+3. `Connected Program ID` フィールドにプログラム ID を入力
+4. **Connect** をクリック
 
-#### Step 5: Confirmation
+#### ステップ 5: 確認
 
-Once connected, Marketo program tokens will automatically populate, confirming successful integration.
+接続が完了すると、Marketo プログラムトークンが自動的に値が入り、連携が成功したことを示します。
 
-### Different scenarios
+### さまざまなシナリオ
 
-| Scenario | Recommended Method | Template Choice |
+| シナリオ | 推奨される方法 | テンプレートの選択 |
 | ------ | ------ | ------ |
-|   Simple workflow, want auto-creation    |   Goldcast First    | GitLab Primary Template (auto-Marketo), GitLab Roundtable Template (auto-Marketo) or GitLab Workshop Template - (auto-Marketo program creation)  |
-|   Need custom Marketo setup first |  Marketo First  | GitLab Primary Template (w/o Marketo) |
-| Localized event | Goldcast First | Localized Template |
-| Dry runs/Testing | Goldcast First | GitLab Primary Template (auto-Marketo), GitLab Roundtable Template (auto-Marketo) or GitLab Workshop Template - (auto-Marketo program creation) |
+|   シンプルなワークフロー、自動作成を望む    |   Goldcast First    | GitLab Primary Template (auto-Marketo)、GitLab Roundtable Template (auto-Marketo)、または GitLab Workshop Template - (auto-Marketo program creation)  |
+|   まずカスタム Marketo セットアップが必要 |  Marketo First  | GitLab Primary Template (w/o Marketo) |
+| ローカライズされたイベント | Goldcast First | ローカライズ済みテンプレート |
+| ドライラン／テスト | Goldcast First | GitLab Primary Template (auto-Marketo)、GitLab Roundtable Template (auto-Marketo)、または GitLab Workshop Template - (auto-Marketo program creation) |
 
-### Important Notes
+### 重要な注意事項
 
-- Program ID Changes: Renaming Marketo programs doesn't affect the Goldcast sync
-- Token Population: Occurs automatically once programs are connected
-- RTMP Feature: The RTMP type is a feature that allows embedding to or from external tools and there are currently no plans to use this feature. Please ping MktgOps if there is a request to try it
-- [Guide: Create your first single-session event](https://help.goldcast.io/en_US/virtual-events/24837157009947-guide-create-customize-your-first-single-session-event/)
-- [Guide: Create a multi-session virtual event](https://help.goldcast.io/en_US/virtual-events/25591292005915-guide-creating-a-multi-session-virtual-event/)
-- [Guide: Creating a repeating event](https://help.goldcast.io/en_US/virtual-events/24993708044187-create-a-repeating-event/)
+- プログラム ID の変更: Marketo プログラム名の変更は Goldcast 同期に影響しません
+- トークンの入力: プログラムが接続されると自動的に行われます
+- RTMP 機能: RTMP タイプは外部ツールとの埋め込みを可能にする機能で、現時点でこの機能を使用する予定はありません。試したいリクエストがある場合は MktgOps に連絡してください
+- [ガイド: 初めての単一セッションイベントを作成する](https://help.goldcast.io/en_US/virtual-events/24837157009947-guide-create-customize-your-first-single-session-event/)
+- [ガイド: 複数セッションの仮想イベントを作成する](https://help.goldcast.io/en_US/virtual-events/25591292005915-guide-creating-a-multi-session-virtual-event/)
+- [ガイド: 繰り返しイベントを作成する](https://help.goldcast.io/en_US/virtual-events/24993708044187-create-a-repeating-event/)
 
-## Program Member Status Processing
+## プログラムメンバーステータスの処理
 
-When the Goldcast event and Marketo program are connected, Goldcast will automatically change the program status for all members without the need for a smart campaign. However, processing smart campaigns are still needed for other data appending requirements:
+Goldcast イベントと Marketo プログラムが接続されると、Goldcast はスマートキャンペーンを使わずにすべてのメンバーのプログラムステータスを自動的に変更します。ただし、他のデータ付加要件のために処理スマートキャンペーンが必要です:
 
-### Smart campaigns for Marketo landing page based registration
+### Marketo ランディングページベースの登録向けスマートキャンペーン
 
-- `01a Marketo Form Registration`: This smart campaign **must** be active for Marketo LP registrations. Without this smart campaign, registrants will not be added to the Goldcast event and will not receive a registration confirmation email. Once the event is over, turn this smart campaign off
-- `01c Marketo Form Fill Waitlist`: If registration has maxed out for the event, deactivate the `Registration` smart campaign and turn this one on to add regsitrants to the waitlist
-- `01e Waitlist to Registered`: If you plan to change registrants who are currently listed as `Waitlisted` to `Registered`, turn this smart campaign on first. It refreshes the `Interesting Moment` and calls the Goldcast webhook
+- `01a Marketo Form Registration`: Marketo LP の登録のためには、このスマートキャンペーンが **必ず** アクティブである必要があります。このスマートキャンペーンがないと、登録者は Goldcast イベントに追加されず、登録確認メールも受け取れません。イベントが終了したら、このスマートキャンペーンをオフにしてください
+- `01c Marketo Form Fill Waitlist`: イベントの登録が満員になった場合、`Registration` スマートキャンペーンを無効化し、このキャンペーンをオンにして登録者をウェイティングリストに追加します
+- `01e Waitlist to Registered`: 現在 `Waitlisted` としてリストされている登録者を `Registered` に変更する予定がある場合、まずこのスマートキャンペーンをオンにしてください。`Interesting Moment` を更新し、Goldcast の Webhook を呼び出します
 
-### Additional smart campaigns
+### 追加のスマートキャンペーン
 
-- `02 Goldcast Form Registration and Live`: Goldcast automatically changes program statuses when events and Marketo programs are connected. This smart campaign watches for program status changes for `Attended`, `No Show`, `Canceled`, `Rejected`, `Waitlisted` and `Registered`. If the event's registration is started on a Goldcast landing page, this smart campaign needs to be turned on immediately and before invite emails are sent out to invitees. This smart campaign needs to be active before the event, regardless of registration landing page location. The flow can safely be set to automatically expire 24 hours after the event ends
-- `03 Goldcast Processing - On Demand - Goldcast/Pathfactory`: This smart campaign is designed to process `on-demand` attendees based on either Goldcast post-event viewing, On-demand form fills or Pathfactory viewing. The flow needs to be turned on within 30 minutes of the webcast ending to work correctly for Goldcast on-demand attendees but is not required to be on prior to the event's end and likely should not be activated until then. Have Pathfactory keywords in-mind or ready so those filters can be added to the trigger and the flow can be activated before the 35 minute mark post-event. For the flow to work on landing pages for on-demand form fills, the Marketo landing page form needs to be switched to `FORM 2076: On-demand Webcast`
-- `04 Goldcast Processing - Follow Up Requested`: If an attendee clicks the CTA button -which by default is labeled as `Talk to an Expert`- in either an Event or in a Booth, this flow marks those leads as the `Follow Up Requested` program status. In order for this flow to work, it must be active and needs to have the event ID place in the trigger filter. Otherwise the CTA button will not MQL the lead for follow up. CTA click numbers are also available to reference in the Goldcast event analytics dashboard. Note that the CTA button simply links to the "talk to sales" page during `on demand` events and on the registration landing page - and this flow does not need to be activated for `on demand`. It is up to the discretion of the team member to turn off this functionality within the Goldcast event by hiding all `CTA` buttons. The Marketo smart campaign can safely be set to automatically expire 24 hours after the event ends
+- `02 Goldcast Form Registration and Live`: Goldcast はイベントと Marketo プログラムが接続されているときにプログラムステータスを自動的に変更します。このスマートキャンペーンは `Attended`、`No Show`、`Canceled`、`Rejected`、`Waitlisted`、`Registered` のプログラムステータス変更を監視します。イベントの登録が Goldcast のランディングページで開始される場合、このスマートキャンペーンはすぐに、招待メールが招待者に送信される前にオンにする必要があります。このスマートキャンペーンは登録ランディングページの場所に関係なく、イベント前にアクティブである必要があります。フローはイベント終了後 24 時間後に自動的に期限切れになるように安全に設定できます
+- `03 Goldcast Processing - On Demand - Goldcast/Pathfactory`: このスマートキャンペーンは、Goldcast のイベント後の視聴、On-demand フォームフィル、または Pathfactory の視聴に基づいて `on-demand` 参加者を処理するように設計されています。Goldcast オンデマンド参加者向けに正しく機能させるには、ウェブキャスト終了後 30 分以内にフローをオンにする必要がありますが、イベント終了前にオンにする必要はなく、おそらくその時点までアクティブ化すべきではありません。Pathfactory のキーワードを念頭に置くか、準備しておくことで、それらのフィルターをトリガーに追加し、イベント後 35 分の段階の前にフローをアクティブ化できます。フローが On-demand フォームフィル向けのランディングページで動作するためには、Marketo のランディングページフォームを `FORM 2076: On-demand Webcast` に切り替える必要があります
+- `04 Goldcast Processing - Follow Up Requested`: 参加者がイベントまたはブースの CTA ボタン（デフォルトで `Talk to an Expert` とラベル付け）をクリックすると、このフローはそれらのリードを `Follow Up Requested` プログラムステータスとしてマークします。このフローが動作するためには、アクティブである必要があり、トリガーフィルターにイベント ID を配置する必要があります。そうしない場合、CTA ボタンはフォローアップのためにリードを MQL しません。CTA クリック数は Goldcast イベント分析ダッシュボードでも参照できます。CTA ボタンは `on demand` イベント中および登録ランディングページでは単に「talk to sales」ページにリンクするだけであり、このフローは `on demand` のためにアクティブ化する必要はありません。Goldcast イベント内でこの機能をオフにするかどうかは、すべての `CTA` ボタンを非表示にすることでチームメンバーの裁量に委ねられます。Marketo のスマートキャンペーンはイベント終了後 24 時間後に自動的に期限切れになるように安全に設定できます
 
-## Navigating Inside a Goldcast Webinar and Event, pre-live
+## Goldcast ウェビナーとイベントのナビゲーション（ライブ前）
 
 ### Webinar
 
-#### Webinar Navigation Tabs
+#### Webinar のナビゲーションタブ
 
-- **Event** - Core event management and settings
-- **Registration** - Registrant management (custom Magic links)
-- **Email** - Coordination of your email communications (Schedule, Templates)
- _The `Email` tab will only be utilized when you need to send reschedule-related emails, as described further down this page, or cancellation emails._
-- **Analytics** - Data collection and performance metrics of your event (for analytics outside of your event, please use “Reports” tab on the left side and or the [Share Engagement Analytics](https://help.goldcast.io/en_US/reporting-analytics/16604032249371-engagement-analytics-dashboard#:~:text=Engagement%20Analytics%20dashboard.-,Share%20Engagement%20Analytics,steps%20to%20generate%20a%20link:) feature)
-- **Integrations** - Marketo integration settings (typically pre-configured)
-- **Edit Event** - Event configuration and asset management (Details, Subtitles, Captions,  Assets including polls, surveys, videos and slides and Settings like Q&A, Audience count, Chat settings)
+- **Event** - コアイベントの管理と設定
+- **Registration** - 登録者管理（カスタムマジックリンク）
+- **Email** - メールコミュニケーションの調整（スケジュール、テンプレート）
+ _`Email` タブは、このページで後述する再スケジュール関連メールやキャンセルメールを送信する必要がある場合にのみ使用されます。_
+- **Analytics** - イベントのデータ収集とパフォーマンス指標（イベント外の分析については、左側の「Reports」タブや [Share Engagement Analytics](https://help.goldcast.io/en_US/reporting-analytics/16604032249371-engagement-analytics-dashboard#:~:text=Engagement%20Analytics%20dashboard.-,Share%20Engagement%20Analytics,steps%20to%20generate%20a%20link:) 機能を使用してください）
+- **Integrations** - Marketo 連携設定（通常は事前設定済み）
+- **Edit Event** - イベント設定とアセット管理（詳細、字幕、キャプション、投票・アンケート・動画・スライドを含むアセット、および Q&A、参加者数、チャット設定などの設定）
 
 ![Webinar Tabs](/images/marketing/marketing-operations/goldcast/goldcast_webinartabs.png)
 
-#### Webinar Primary Menu
+#### Webinar のプライマリメニュー
 
-_Speaker and Staff Management_
+_スピーカーとスタッフの管理_
 
-- Invitations: Automatically sends invite emails when adding speakers/staff (with custom Magic links)
- Note: If the speaker has been added to Goldcast before, once you add an email address all other information will be autopopulated.
-- Profile Setup: Upload name, title, and photo
+- 招待: スピーカー／スタッフを追加すると、招待メール（カスタムマジックリンク付き）を自動的に送信
+ 注意: スピーカーが以前に Goldcast に追加されている場合、メールアドレスを追加すると他のすべての情報が自動入力されます。
+- プロフィール設定: 名前、肩書き、写真をアップロード
 
 ![Goldcast speaker creation](/images/marketing/marketing-operations/goldcast/goldcast_speakeremails.png)
 
-- Customization: Rename speakers tab and add descriptions
+- カスタマイズ: スピーカータブの名前を変更し、説明を追加
 
-_Design and Branding_
+_デザインとブランディング_
 
-- Registration Page: Hover and select "Design" to customize using block system
+- 登録ページ: ホバーして「Design」を選択し、ブロックシステムでカスタマイズ
 
 ![Design Reg page](/images/marketing/marketing-operations/goldcast/goldcast_design_regpage.png)
 
-- Event Stage: Hover and select "Design" to customize the live event interface (recommended for producers to preview)
-- Templates: Use included templates as starting points for customization
- Note: Speaker information automatically populates on landing pages once loaded into the event.
+- イベントステージ: ホバーして「Design」を選択し、ライブイベントインターフェースをカスタマイズ（プロデューサーはプレビューを推奨）
+- テンプレート: 同梱されたテンプレートをカスタマイズの出発点として使用
+ 注意: スピーカー情報はイベントにロードされるとランディングページに自動的に反映されます。
 
-_Call to Action (CTA)_
+_Call to Action（CTA）_
 
-- By default, we have added a CTA button “Talk to an Expert” to all our templates that are synced to Marketo. The button is available on the stage. Once attendees click on the button, they will see a pop-up message confirming their click. We have a custom trigger in place to notify relevant team members about CTA button clicks. More about CTA button [here](https://help.goldcast.io/en_US/engagement-tools/how-to-customize-the-call-to-action-cta-button).
+- デフォルトでは、Marketo に同期されたすべてのテンプレートに CTA ボタン「Talk to an Expert」を追加しています。ボタンはステージで利用できます。参加者がボタンをクリックすると、クリックを確認するポップアップメッセージが表示されます。CTA ボタンのクリックを関連するチームメンバーに通知するためのカスタムトリガーを設定しています。CTA ボタンの詳細は [こちら](https://help.goldcast.io/en_US/engagement-tools/how-to-customize-the-call-to-action-cta-button) を参照してください。
 
 ![CTA Button](/images/marketing/marketing-operations/goldcast/goldcast_ctabutton.png)
 
-_Content Viewing_
+_コンテンツの閲覧_
 
-- AI Content: Generated content appears after event conclusion and recording processing (Content Lab)
+- AI コンテンツ: 生成されたコンテンツはイベント終了後、録画処理が完了した後に表示されます（Content Lab）
 
-#### Regional Marketing team [Event settings]
+#### 地域マーケティングチーム [イベント設定]
 
-| Settings | Status |
+| 設定 | ステータス |
 | ------ | ------ |
 |  Video Q&A | OFF |
 |  Text Q&A  |  ON |
@@ -570,767 +570,767 @@ _Content Viewing_
 
 ### Event
 
-Within a Goldcast event, the menu arrangement differs in placement but carries much of the same information and options. Key differences are placement of the menu options and access to menus for `Agenda`, `Rooms` and `Booths` management differ. See below for more detail
+Goldcast の Event 内では、メニューの配置は異なりますが、同じ情報とオプションの多くを含んでいます。主な違いは、メニューオプションの配置と、`Agenda`、`Rooms`、`Booths` 管理用メニューへのアクセス方法です。詳細は以下を参照してください。
 
-#### Event Navigation Tabs
+#### Event のナビゲーションタブ
 
-- **Event Dashboard** - Contains the look and feel information along with features enabled on the event, such as captions, on demand or whether the event is in test mode
-- **Registration** - Registrant management (custom Magic links)
-- **Program** - Program management (Agenda, Speakers, Staff, Rooms, Booths)
-- **Look & Feel** - UI of the event
-- **Email** - Coordination of your email communications
-- **Recording** - An event recording will appear in this tab after the event
-- **Integrations** - Marketo integration settings (typically pre-configured)
-- **Analytics** - Data collection and performance metrics of your event (for analytics outside of your event, please use “Reports” tab on the left side and or the [Share Engagement Analytics](https://help.goldcast.io/en_US/reporting-analytics/16604032249371-engagement-analytics-dashboard#:~:text=Engagement%20Analytics%20dashboard.-,Share%20Engagement%20Analytics,steps%20to%20generate%20a%20link:) feature))
-- **Edit Event** - Event configuration
+- **Event Dashboard** - イベントで有効になっている機能（字幕、オンデマンド、テストモードかどうかなど）と Look & Feel 情報を含みます
+- **Registration** - 登録者管理（カスタムマジックリンク）
+- **Program** - プログラム管理（アジェンダ、スピーカー、スタッフ、ルーム、ブース）
+- **Look & Feel** - イベントの UI
+- **Email** - メールコミュニケーションの調整
+- **Recording** - イベント終了後、このタブにイベント録画が表示されます
+- **Integrations** - Marketo 連携設定（通常は事前設定済み）
+- **Analytics** - イベントのデータ収集とパフォーマンス指標（イベント外の分析については、左側の「Reports」タブや [Share Engagement Analytics](https://help.goldcast.io/en_US/reporting-analytics/16604032249371-engagement-analytics-dashboard#:~:text=Engagement%20Analytics%20dashboard.-,Share%20Engagement%20Analytics,steps%20to%20generate%20a%20link:) 機能を使用してください）
+- **Edit Event** - イベント設定
 
 ![Goldcast Event Tabs](/images/marketing/marketing-operations/goldcast/goldcast_integration_formid.png)
 
-More about Goldcast Event Tabs [here](https://help.goldcast.io/en_US/virtual-events/16616311404315-getting-started-with-goldcast-setting-up-running-an-event).
+Goldcast Event タブの詳細は [こちら](https://help.goldcast.io/en_US/virtual-events/16616311404315-getting-started-with-goldcast-setting-up-running-an-event) を参照してください。
 
-_Edit Event Menu (Event Dashboard)_
+_Edit Event メニュー（Event Dashboard）_
 
-- Team Workspace, Event Title, Description, Tags, Date and Time
-- Event type: Virtual (online), Field (in-person), or Hybrid (both)
-- Waitlist, registration limits, calendar invite, timezone
-- Primary language, captions, subtitles
-- Test event and on-demand conversion toggles
+- Team Workspace、イベントタイトル、説明、タグ、日付と時刻
+- イベントタイプ: Virtual（オンライン）、Field（対面）、Hybrid（両方）
+- ウェイティングリスト、登録上限、カレンダー招待、タイムゾーン
+- 主要言語、字幕、翻訳字幕
+- テストイベントとオンデマンド変換のトグル
 
-**Asset Management are done in Program > Agenda > Edit Session Details**
+**アセット管理は Program > Agenda > Edit Session Details で行います**
 
-- Upload [slides](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda#slides-8), [polls](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda#polls-11), [videos](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda#video-9) and surveys
-- Manage [downloadable content](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda#resources-12) and [Q&A](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda#qa-13) tab
-- Buffer video configuration
+- [スライド](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda#slides-8)、[投票](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda#polls-11)、[動画](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda#video-9)、アンケートをアップロード
+- [ダウンロード可能なコンテンツ](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda#resources-12) と [Q&A](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda#qa-13) タブを管理
+- バッファ動画の設定
 
 ![Goldcast Edit Event1](/images/marketing/marketing-operations/goldcast/goldcast_edit_event1.png)
 
 ![Goldcast Edit Event2](/images/marketing/marketing-operations/goldcast/goldcast_edit_event2.png)
 
-#### Program Menu for Events
+#### Event 用 Program メニュー
 
-**Agenda Management**
+**アジェンダ管理**
 
-Under the Program menu, the `Agenda` controls the event's session times. When adding or removing sessions, the times and dates must adhere to the original window given during event creation. If the window needs to be changed, that can be done in the `Edit Event` menu. For events that require a `pre-recorded` video to be played followed by a `live` broadcast, such as a Q&A, it's recommended to include 2 sessions for each broadcast, appropriately labeled for the broadcast type. Notice the `Settings` button on the right: Keep `Session Redirection Strategy` set to `Automatic` for the easiest transitions between sessions.
+Program メニューの下で、`Agenda` はイベントのセッション時間を制御します。セッションの追加や削除を行う場合、時刻と日付はイベント作成時に指定された元のウィンドウに従う必要があります。ウィンドウを変更する必要がある場合は、`Edit Event` メニューで行えます。Q&A など、`事前録画` 動画の後に `ライブ` 配信が必要なイベントでは、配信ごとに 2 つのセッションを含め、配信タイプに応じて適切にラベル付けすることを推奨します。右側の `Settings` ボタンに注意してください: セッション間の遷移を最も簡単にするには、`Session Redirection Strategy` を `Automatic` に設定してください。
 
-More about setting up Agenda [here](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda).
+アジェンダのセットアップに関する詳細は [こちら](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda) を参照してください。
 
-_Breaks_
+_休憩_
 
-It's also possible to add [breaks](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda#breaks-18) between sessions. During the breaks between session times or when nothing is playing on the stage, the audience will see the asset loaded in as the buffer video. Note the template comes pre-made with a 3 second buffer video but this can be swapped out.
+セッション間に [休憩](https://help.goldcast.io/en_US/program-agenda/16629312472987-setting-up-your-event-agenda#breaks-18) を追加することも可能です。セッション時間の間の休憩中やステージで何も再生されていない時には、参加者はバッファ動画としてロードされたアセットを目にすることになります。テンプレートには 3 秒のバッファ動画が事前設定されていますが、これは差し替えることができます。
 
-**Speakers**
+**スピーカー**
 
-To add a new speaker, click on `New Speaker` button on the right side and paste an email address.
+新しいスピーカーを追加するには、右側の `New Speaker` ボタンをクリックしてメールアドレスを貼り付けます。
 
-**Staff (Producers and Coordinators)**
+**スタッフ（プロデューサーとコーディネーター）**
 
-To add a new staff member, click on `New Staff` button on the right side and paste an email address.
+新しいスタッフメンバーを追加するには、右側の `New Staff` ボタンをクリックしてメールアドレスを貼り付けます。
 
-**Rooms**
+**ルーム**
 
-Enable `Rooms` to allow the audience to socialize across rooms during the event. Enable appropriate settings for your audience Rooms.
+`Rooms` を有効にすると、イベント中に参加者がルーム間で交流できるようになります。オーディエンス用のルームに適切な設定を有効化してください。
 
-More about Rooms [here](https://help.goldcast.io/en_US/rooms-booths).
+ルームの詳細は [こちら](https://help.goldcast.io/en_US/rooms-booths) を参照してください。
 
-**Booths**
+**ブース**
 
-Enable `Booths` to let the audience explore themed GitLab content or sponsored content.
+`Booths` を有効にすると、参加者がテーマ別の GitLab コンテンツやスポンサーコンテンツを探索できるようになります。
 
-More about Booths [here](https://help.goldcast.io/en_US/rooms-booths).
+ブースの詳細は [こちら](https://help.goldcast.io/en_US/rooms-booths) を参照してください。
 
-#### Registration Menu
+#### Registration メニュー
 
-**Registrants**
+**登録者**
 
-[Available Statuses](https://help.goldcast.io/en_US/general-integrations/4404985089691-goldcast-event-engagement-activities#:~:text=team%20for%20assistance.-,Supporting%20Waitlisted/Rejected%20/Canceled%20Activities,Webhooks) (syncs automatically with Marketo)
+[利用可能なステータス](https://help.goldcast.io/en_US/general-integrations/4404985089691-goldcast-event-engagement-activities#:~:text=team%20for%20assistance.-,Supporting%20Waitlisted/Rejected%20/Canceled%20Activities,Webhooks)（Marketo と自動同期）
 
-- Registered: Standard attendee status
-- Canceled: Disables event access
-- Rejected: Blocks access (stronger than canceled)
-- [Waitlisted](https://help.goldcast.io/en_US/waitlist/22757974169115-faqs-troubleshooting): Auto-assigned based on event settings
+- Registered: 標準の参加者ステータス
+- Canceled: イベントアクセスを無効化
+- Rejected: アクセスをブロック（キャンセルよりも強い）
+- [Waitlisted](https://help.goldcast.io/en_US/waitlist/22757974169115-faqs-troubleshooting): イベント設定に基づいて自動的に割り当て
 
-_Heads up: Manually changing registrants to "Waitlisted" may cause Marketo errors._
+_注意: 登録者を手動で「Waitlisted」に変更すると Marketo エラーが発生する可能性があります。_
 
-More about managing registrants [here](https://help.goldcast.io/en_US/managing-registrants).
+登録者管理の詳細は [こちら](https://help.goldcast.io/en_US/managing-registrants) を参照してください。
 
-**Tracking Pixels and Tags**
+**トラッキングピクセルとタグ**
 
-- Tracking [Pixels and Tags](https://help.goldcast.io/registration-page-form/21919602121755?from_search=198551411&swifty_search_highlight=pixels) applied via template (do not modify without Marketing Ops approval)
+- トラッキング [ピクセルとタグ](https://help.goldcast.io/registration-page-form/21919602121755?from_search=198551411&swifty_search_highlight=pixels) はテンプレート経由で適用されます（Marketing Ops の承認なしに変更しないでください）
 
-**Form**
+**フォーム**
 
-- [Field Management](https://help.goldcast.io/en_US/registration-page-form/16630571612443-creating-and-editing-registration-forms): Add/remove registration fields
-- [Custom Fields](https://help.goldcast.io/general-integrations/26870942552603-custom-field-mapping?from_search=198551432&swifty_search_highlight=custom+fields): Consult Marketing Ops before adding Marketo custom fields
+- [フィールド管理](https://help.goldcast.io/en_US/registration-page-form/16630571612443-creating-and-editing-registration-forms): 登録フィールドの追加／削除
+- [カスタムフィールド](https://help.goldcast.io/general-integrations/26870942552603-custom-field-mapping?from_search=198551432&swifty_search_highlight=custom+fields): Marketo カスタムフィールドを追加する前に Marketing Ops に相談してください
 
 ![Goldcast Registrants, Pixels, Form](/images/marketing/marketing-operations/goldcast/goldcast_registration_management.png)
 
 #### Analytics
 
-_Available Data_
+_利用可能なデータ_
 
-- Email Metrics: : Send rates and delivery statistics
-- Engagement: Poll/survey results and participation stats
-- CTA Performance: Track successful CTA clicks
-- Attendance: Registration and show-up rates
- _Note: you can share your event dashboard from Goldcast via email or link sharing._
-- More about Analytics and Reporting in Goldcast [here](https://help.goldcast.io/en_US/reporting-analytics).
-- Information on how to share reports via magic links can be found [here](https://help.goldcast.io/en_US/reporting-analytics/16604032249371-engagement-analytics-dashboard#:~:text=Engagement%20Analytics%20dashboard.-,Share%20Engagement%20Analytics,steps%20to%20generate%20a%20link:)
+- メールメトリクス: 送信率と配信統計
+- エンゲージメント: 投票／アンケート結果と参加統計
+- CTA パフォーマンス: CTA クリックの成功を追跡
+- 参加状況: 登録および出席率
+ _注意: イベントダッシュボードを Goldcast からメールまたはリンク共有で共有できます。_
+- Goldcast の Analytics とレポートに関する詳細は [こちら](https://help.goldcast.io/en_US/reporting-analytics) を参照してください。
+- マジックリンク経由でレポートを共有する方法については [こちら](https://help.goldcast.io/en_US/reporting-analytics/16604032249371-engagement-analytics-dashboard#:~:text=Engagement%20Analytics%20dashboard.-,Share%20Engagement%20Analytics,steps%20to%20generate%20a%20link:) を参照してください
 
-_Magic Links_
+_マジックリンク_
 
-- Purpose: Direct access links emailed to registrants
-- Troubleshooting: Use Analytics tab to find individual attendee access links and share their custom link with them
-- Access: Available in Analytics
+- 目的: 登録者にメール送信される直接アクセスリンク
+- トラブルシューティング: Analytics タブを使って個別の参加者アクセスリンクを見つけ、カスタムリンクを共有
+- アクセス: Analytics で利用可能
 
- _Note: Not all Goldcast data syncs to Marketo at launch. Export capabilities for additional data planned for future releases._
+ _注意: 起動時にすべての Goldcast データが Marketo に同期されるわけではありません。追加データのエクスポート機能は今後のリリースで予定されています。_
 
-More about Magic Links [here](https://www.goldcast.io/blog-post/attendee-experience-event-login).
+マジックリンクの詳細は [こちら](https://www.goldcast.io/blog-post/attendee-experience-event-login) を参照してください。
 
-#### Troubleshooting
+#### トラブルシューティング
 
-**Marketo Integration**
+**Marketo 連携**
 
-- If token sync fails, find FORM ID and EVENT ID in Integrations menu
+- トークン同期に失敗した場合は、Integrations メニューで FORM ID と EVENT ID を見つけてください
 
 ![Goldcast Marketo Integration Tab](/images/marketing/marketing-operations/goldcast/goldcast_integration_formid.png)
 
-**Access Issues**
+**アクセスの問題**
 
-- If user has an issue with accessing the event, provide their Magic Link that you can find in the Analytics section of your event
-- Each attendee has a unique Magic link in calendar invite (registration confirmation email) and reminder emails from Goldcast that allows them to access the event
+- ユーザーがイベントへのアクセスに問題がある場合、イベントの Analytics セクションにあるマジックリンクを提供してください
+- 各参加者は、カレンダー招待（登録確認メール）や Goldcast からのリマインダーメールに固有のマジックリンクを持っており、それでイベントにアクセスできます
 
-**Technical Issues**
+**技術的な問題**
 
-- Goldcast shows pop-up warning if speakers are speaking on mute
-- Use "Stop Sharing" button to remove shared media (only click if you're controlling the presentation)
-- Ensure Session Redirection Strategy set to Automatic
+- スピーカーがミュートで話している場合、Goldcast はポップアップ警告を表示します
+- 共有メディアを削除するには「Stop Sharing」ボタンを使用してください（プレゼンテーションを制御している場合のみクリック）
+- Session Redirection Strategy が Automatic に設定されていることを確認してください
 
-More troubleshooting cases and solutions are available [here](https://help.goldcast.io/en_US/troubleshooting).
+その他のトラブルシューティング事例と解決策は [こちら](https://help.goldcast.io/en_US/troubleshooting) で利用できます。
 
-#### Tech Check Process
+#### テックチェックのプロセス
 
-Goldcast performs a quick tech check to ensure microphone, camera, and speaker are connected and working properly. In addition to that you can add a virtual background and test screen sharing.
+Goldcast はマイク、カメラ、スピーカーが接続され正しく動作していることを確認するためのクイックテックチェックを実行します。さらに、仮想背景の追加と画面共有のテストが可能です。
 
-More about System Check for Speakers [here](https://help.goldcast.io/troubleshooting/9188871212699-speaker-system-check-troubleshooting?from_search=198916356&swifty_search_highlight=system+check).
-More about System Check for Attendees [here](https://help.goldcast.io/troubleshooting/9913409604891-attendee-system-check-troubleshooting?from_search=198916356&swifty_search_highlight=system+check).
+スピーカー向けシステムチェックの詳細は [こちら](https://help.goldcast.io/troubleshooting/9188871212699-speaker-system-check-troubleshooting?from_search=198916356&swifty_search_highlight=system+check) を参照してください。
+参加者向けシステムチェックの詳細は [こちら](https://help.goldcast.io/troubleshooting/9913409604891-attendee-system-check-troubleshooting?from_search=198916356&swifty_search_highlight=system+check) を参照してください。
 
-## Inside an Event
+## イベント中の操作
 
-From the Producer view during an event, you'll find key controls organized into several functional areas:
+イベント中のプロデューサービューからは、いくつかの機能エリアに整理された主要な操作にアクセスできます:
 
-### Content Controls
+### コンテンツ操作
 
-**A. Slides**
+**A. スライド**
 
-- Producers and Speakers can control slides from this panel
-- `Speaker Mode` (shown below slides) displays speaker notes for presenters
-- Compatible with PowerPoint and Google Slides presentations
+- プロデューサーとスピーカーはこのパネルからスライドを制御できます
+- `Speaker Mode`（スライドの下に表示）はプレゼンター向けにスピーカーノートを表示します
+- PowerPoint および Google Slides のプレゼンテーションに対応
 
-**B. Videos**
+**B. 動画**
 
-- Play pre-loaded videos from this menu
-- Video takes up full stage view for audience with timer display
-- Video audio takes priority over Speaker audio
-- Can be used during live and pre-recorded events
-- Recordings automatically capture up to 30 minutes of content after session end time if speakers or content remain on stage
+- このメニューから事前にロードされた動画を再生
+- 動画はオーディエンス向けにタイマー表示付きでステージ全画面表示
+- 動画の音声はスピーカーの音声より優先されます
+- ライブイベントと事前録画イベントの両方で使用可能
+- スピーカーやコンテンツがステージに残っている場合、録画はセッション終了時刻後最大 30 分間自動的にコンテンツをキャプチャします
 
-**C. Screen Sharing**
+**C. 画面共有**
 
-- Available to Speakers, Producers, and Coordinators
-- Stop Sharing button appears in bottom right corner when content is being shared
+- スピーカー、プロデューサー、コーディネーターが利用可能
+- コンテンツが共有されている間、右下に Stop Sharing ボタンが表示されます
 
-### Audience Interaction
+### 参加者とのインタラクション
 
-**D. Polls**
+**D. 投票**
 
-- Activate pre-loaded polls using open/close buttons
-- Use share button to display results to audience
-- Only one poll can be live at a time - close previous poll before opening next one
-- Attendees receive pop-up notifications when polls open
-- When shared on stage, attendees can click responses directly on the stage to vote
-- Results show as percentages to audience, but organizers/speakers see actual vote counts
-- Attendees can change their responses multiple times while poll remains open
+- 開く／閉じるボタンで事前にロードされた投票を起動
+- 共有ボタンを使って結果を参加者に表示
+- 一度に 1 つの投票しかライブにできません - 次の投票を開く前に前の投票を閉じてください
+- 投票が開くと参加者にポップアップ通知が表示されます
+- ステージで共有されている場合、参加者はステージ上の回答を直接クリックして投票できます
+- 結果は参加者にはパーセンテージとして表示されますが、主催者／スピーカーは実際の投票数を見ます
+- 投票が開いている間、参加者は何度でも回答を変更できます
 
 **E. Q&A**
 
-- If moderation is enabled, Backstage must approve questions before audience sees them
-- Backstage can ask anonymous questions when "Hide Names" is selected
-- Supports live video Q&A where attendees can be brought on-stage to ask questions directly
-- Questions can be assigned to specific speakers
+- モデレーションが有効な場合、参加者が質問を見る前にバックステージが承認する必要があります
+- 「Hide Names」が選択されている場合、バックステージは匿名で質問できます
+- 参加者をステージに上げて直接質問できるライブ動画 Q&A をサポート
+- 質問は特定のスピーカーに割り当てることができます
 
-**F. Overlay**
+**F. オーバーレイ**
 
-- Take control of screen with written messages
-- Useful for announcements or emergency communications
-- When overlay is active, attendees can still hear stage audio - mute speakers if no audio desired
-- Remove overlay using Stop Sharing button or Stop Banner checkbox
+- 書面メッセージで画面を制御
+- アナウンスや緊急通信に便利
+- オーバーレイがアクティブな間、参加者は引き続きステージの音声を聞くことができます - 音声を望まない場合はスピーカーをミュートしてください
+- Stop Sharing ボタンまたは Stop Banner チェックボックスでオーバーレイを削除
 
-**G. Ticker**
+**G. ティッカー**
 
-- Display message banners at bottom of screen
-- Note: Tickers do not appear in event recordings
-- Only organizers can publish tickers, not speakers
-- Useful for sharing event-wide announcements or upcoming sessions
+- 画面下部にメッセージバナーを表示
+- 注意: ティッカーはイベント録画には表示されません
+- ティッカーを公開できるのは主催者のみで、スピーカーは公開できません
+- イベント全体のアナウンスや今後のセッションの共有に便利
 
-### Stage Management
+### ステージ管理
 
-**H. Layout**
+**H. レイアウト**
 
-- Change stage layout (available to Speakers, Producers, and Coordinators)
+- ステージレイアウトを変更（スピーカー、プロデューサー、コーディネーターが利用可能）
 
-**R. Stage Entry/Exit**
+**R. ステージ入退場**
 
-- Speakers use this to enter `Go on Stage`  and leave the Stage `Leave Stage`
-- Also visible to Producers; not available to Coordinators
-- Attendees will NOT see speakers until the session goes live and speakers join the stage
-- Important: When speakers are on stage, attendees can see and hear them even after the session ends - **always click Leave Stage when finished**
+- スピーカーはこれを使って `Go on Stage` でステージに上がり、`Leave Stage` でステージを離れます
+- プロデューサーにも表示されますが、コーディネーターには利用できません
+- 参加者は、セッションがライブになってスピーカーがステージに参加するまでスピーカーを見ることができません
+- 重要: スピーカーがステージにいる間、セッション終了後も参加者には見え、声が聞こえます - **終了時には必ず Leave Stage をクリックしてください**
 
-### Audio/Visual Controls
+### 音声／映像コントロール
 
-**J. Microphone Controls**
+**J. マイクコントロール**
 
-- Click chevron icon next to mic control to change preferred microphone device
-- Goldcast displays pop-up warnings if speakers are speaking while muted
+- マイクコントロールの横のシェブロンアイコンをクリックして、お好みのマイクデバイスを変更
+- スピーカーがミュートで話している場合、Goldcast はポップアップ警告を表示します
 
-**K. Webcam & Virtual Backgrounds**
+**K. ウェブカメラと仮想背景**
 
-- Control camera and background settings
-- Click chevron icon next to camera control to change camera device
+- カメラと背景設定を制御
+- カメラコントロールの横のシェブロンアイコンをクリックしてカメラデバイスを変更
 
-**L. Stage Volume (Personal)**
+**L. ステージ音量（個人用）**
 
-- Personal volume control for Stage audio
-- Does not affect audience or presenter volume
-- Click speaker icon for instant muting
-- Goldcast automatically mutes backstage volume when speakers join the stage
+- ステージ音声の個人用音量コントロール
+- オーディエンスやプレゼンターの音量には影響しません
+- スピーカーアイコンをクリックして瞬時にミュート
+- スピーカーがステージに参加すると、Goldcast は自動的にバックステージの音量をミュートします
 
-**M. Backstage Volume (Personal)**
+**M. バックステージ音量（個人用）**
 
-- Personal volume control for Backstage audio
-- Click speaker icon for instant muting
-- Note: Attendees never hear the backstage feed - this is private communication only
+- バックステージ音声の個人用音量コントロール
+- スピーカーアイコンをクリックして瞬時にミュート
+- 注意: 参加者はバックステージのフィードを聞くことができません - これはプライベートな通信専用です
 
-### Interface & Communication
+### インターフェースとコミュニケーション
 
-**I. Backstage Toggle**
+**I. バックステージトグル**
 
-- Use this toggle to increase the size of the audience view presented on your screen and minimize the Backstage information
+- このトグルを使って、画面に表示されるオーディエンスビューを大きくし、バックステージ情報を最小化
 
-**O. Backstage Chat**
+**O. バックステージチャット**
 
-- Text-based chat for Backstage staff to send alerts to Speakers. It’s a private chat, and attendees cannot see backstage chat.
+- バックステージスタッフがスピーカーにアラートを送信するためのテキストベースチャット。プライベートチャットであり、参加者はバックステージチャットを見ることができません。
 
-**P. Staff List**
+**P. スタッフリスト**
 
-- View all staff in the event with green dot indicating who's online
-- Producers can manually move Speakers to Stage or mute them
-- Shows whether each staff member is currently on stage or backstage
+- イベント内のすべてのスタッフを表示し、緑色の点でオンラインの人を示します
+- プロデューサーはスピーカーを手動でステージに移動したり、ミュートしたりできます
+- 各スタッフメンバーが現在ステージにいるかバックステージにいるかを表示
 
-**Q. Audience Interaction Controls**
+**Q. オーディエンスインタラクションコントロール**
 
-- Tools for engaging with attendees: chat, messages, react with emojis and share GIFs (if enabled), you can share chats on stage directly
+- 参加者とのエンゲージメントツール: チャット、メッセージ、絵文字でのリアクション、GIF の共有（有効な場合）。チャットを直接ステージで共有できます
 
-**S. Night Mode**
+**S. ナイトモード**
 
-- Toggle dark mode for Backstage interface, located at bottom left of backstage area (sun/moon icon)
+- バックステージインターフェース用のダークモードトグル。バックステージエリアの左下にあります（太陽／月のアイコン）
 
-### Information & Settings
+### 情報と設定
 
-**N. Event Information Banner**
+**N. イベント情報バナー**
 
-- Shows live status, attendee count (if enabled), and wifi signal
-- Located prominently for quick reference
-- Status displays "Live", when the event is live
-- **Important**: In automatic redirection, the LIVE tag stays visible for 30 minutes after session ends - content shared during this time will be visible to audience and captured in recording
-- 15-minute countdown timer appears before session ends to help with timing
+- ライブステータス、参加者数（有効な場合）、Wi-Fi シグナルを表示
+- すばやい参照のために目立つ場所に配置
+- イベントがライブのとき、ステータスは「Live」と表示
+- **重要**: 自動リダイレクションでは、LIVE タグはセッション終了後 30 分間表示されたままになります - この時間中に共有されたコンテンツはオーディエンスに見え、録画にキャプチャされます
+- タイミングを助けるために、セッション終了の 15 分前にカウントダウンタイマーが表示されます
 
 ![Goldcast console](/images/marketing/marketing-operations/goldcast/goldcast_console.png)
 
-Note: Access more controls and settings by clicking your profile icon (or initials) in the top right corner of the Stage. This includes:
+注意: ステージ右上のプロフィールアイコン（またはイニシャル）をクリックすると、より多くのコントロールと設定にアクセスできます。これには以下が含まれます:
 
-- Role assignments and permissions
-- Detailed attendee numbers (available to Producers but not Speakers)
-- Additional backstage controls and settings
+- ロールの割り当てと権限
+- 詳細な参加者数（プロデューサーが利用可能、スピーカーは利用不可）
+- 追加のバックステージコントロールと設定
 
-### Best Practices & Recommendations
+### ベストプラクティスと推奨事項
 
-_Dry Run Tips_
+_ドライランのコツ_
 
-- Each speaker needs different magic link for a dry run event (please do not use real event magic links)
-- Meet in Zoom first, then enter your Goldcast DRY RUN event, but shut down Zoom once in Goldcast
-- Practice going on/off stage, muting/unmuting, screen sharing
-- Test slide sharing, video sharing, polls, surveys
-- Practice stage layout changes, chat messages, Q&A tabs
+- ドライランイベントには各スピーカーごとに異なるマジックリンクが必要です（実イベントのマジックリンクは使わないでください）
+- 最初に Zoom でミーティングを行い、その後 Goldcast の DRY RUN イベントに入りますが、Goldcast に入ったら Zoom をシャットダウンしてください
+- ステージへの出入り、ミュート／ミュート解除、画面共有を練習
+- スライド共有、動画共有、投票、アンケートをテスト
+- ステージレイアウト変更、チャットメッセージ、Q&A タブを練習
 
-_Pre-Event Preparation (Real Event)_
+_イベント前の準備（本番イベント）_
 
-- Be backstage at least 10 minutes before session start time to confirm last minute things with your team
-- Test microphone, camera, speaker, virtual backgrounds, and screen sharing during tech check
-- Set up polls, surveys, and Q&A moderation settings should be already done
+- セッション開始時刻の少なくとも 10 分前にはバックステージにいて、チームと最後の確認を行ってください
+- テックチェック中にマイク、カメラ、スピーカー、仮想背景、画面共有をテスト
+- 投票、アンケート、Q&A モデレーション設定はすでに完了しているはずです
 
-_During the Event_
+_イベント中_
 
-- Join from a noise-free environment with a good headset for audio clarity
-- Ensure stable, fast internet connection
-- Remember that speakers must join the live stage - audiences won't see them automatically
-- Always click `Leave Stage` when finished - attendees can see speakers even after session ends
-- Keep an eye on Backstage Chat messages for internal updates/questions
+- 音声の明瞭さのために、騒音のない環境から良いヘッドセットで参加してください
+- 安定した高速インターネット接続を確保
+- スピーカーはライブステージに参加する必要があることを覚えておいてください - オーディエンスは自動的にはスピーカーを見ません
+- 終了時には必ず `Leave Stage` をクリックしてください - セッション終了後も参加者にスピーカーが見えます
+- 内部の更新や質問のためにバックステージチャットメッセージに目を配り続けてください
 
-## How to quickly set up a [DRY RUN] Goldcast event
+## [DRY RUN] Goldcast イベントを素早くセットアップする方法
 
-Instead of building dry run events from scratch using templates, you can efficiently create dry run events by duplicating your fully configured real event.
+テンプレートからドライランイベントを一から構築する代わりに、完全に設定済みの実イベントを複製することで効率的にドライランイベントを作成できます。
 
-_Note:_ This process is only applicable if your actual Goldcast event is already complete (assets, speakers, event title, description, and all needed settings are added).
+_注意:_ このプロセスは、実際の Goldcast イベントがすでに完成している（アセット、スピーカー、イベントタイトル、説明、すべての必要な設定が追加されている）場合にのみ適用されます。
 
-### Step-by-Step Process
+### 段階的なプロセス
 
-Step 1: Complete your real event set up
+ステップ 1: 実イベントのセットアップを完成させる
 
-- Finish all event configuration (speakers, assets, slides, settings)
-- Verify all uploads and integrations are working
-- Ensure event is ready for production
+- すべてのイベント設定（スピーカー、アセット、スライド、設定）を完了
+- すべてのアップロードと連携が動作することを確認
+- イベントが本番用に準備できていることを確認
 
-Step 2: Duplicate your Event
+ステップ 2: イベントを複製する
 
 _Event_
 
-In the Events list, click the event you’d like to duplicate. This brings you to the Event dashboard > `Edit Event` > Scroll down and click the `Duplicate Event` button.
+イベントリストで複製したいイベントをクリックします。これにより Event Dashboard に移動します > `Edit Event` > 下にスクロールして `Duplicate Event` ボタンをクリックします。
 
 ![Goldcast Duplicate Button](/images/marketing/marketing-operations/goldcast/goldcast_duplicate_event.png)
 
 _Webinar_
 
-In the Events list, click the webinar you’d like to duplicate. This brings you to the Webinar Dashboard > Edit Event` > Scroll down and click the `Duplicate Event` button.
+イベントリストで複製したいウェビナーをクリックします。これにより Webinar Dashboard に移動します > Edit Event` > 下にスクロールして `Duplicate Event` ボタンをクリックします。
 
-Step 3: Modify for Dry Run
+ステップ 3: ドライラン用に変更する
 
-- Choose Workspace, enter your Event Title, Select the start time, date, and timezone of the event.
+- ワークスペースを選択し、イベントタイトルを入力し、イベントの開始時刻、日付、タイムゾーンを選択します。
 
 ![Goldcast Edit Duplicated Event](/images/marketing/marketing-operations/goldcast/goldcas_duplicateevent_edit.png)
 
-_Heads up:_ use the checkboxes to select if you want to copy speakers, send invites etc.
+_注意:_ スピーカーをコピーするか、招待を送るかなどを選択するにはチェックボックスを使ってください。
 
 ![Goldcast Checkboxes](/images/marketing/marketing-operations/goldcast/goldcast_checkboxes.png)
 
-**Note: To differentiate your DRY RUN from real events in Goldcast, please add a [DRY RUN] prefix to the event title.**
+**注意: Goldcast でドライランを実イベントから区別するために、イベントタイトルに [DRY RUN] というプレフィックスを追加してください。**
 
-- Date/Time: Update to your dry run date and time
-- Event Type: Toggle "Test event" ON
-- Registration Limit: Test event becomes non-test event at **10 registrants**. [More info](https://help.goldcast.io/en_US/event-settings/what-is-a-test-event-how-to-create-one/).
+- 日付／時刻: ドライランの日付と時刻に更新
+- イベントタイプ: 「Test event」を ON に切り替え
+- 登録上限: テストイベントは **登録者 10 人** で非テストイベントになります。[詳細](https://help.goldcast.io/en_US/event-settings/what-is-a-test-event-how-to-create-one/)。
 
-Step 4: Verification Checklist
+ステップ 4: 検証チェックリスト
 
-- All assets and slides copied properly
-- Magic links generated for dry run event
-- You do not have more than 9 users in your DRY RUN event
+- すべてのアセットとスライドが正しくコピーされている
+- ドライランイベント用にマジックリンクが生成されている
+- DRY RUN イベントに 9 人を超えるユーザーがいない
 
-More about duplicating events or webinars [here](https://help.goldcast.io/en_US/event-settings/16634914050203-duplicating-events).
+イベントやウェビナーの複製に関する詳細は [こちら](https://help.goldcast.io/en_US/event-settings/16634914050203-duplicating-events) を参照してください。
 
-#### Important notes
+#### 重要な注意事項
 
-Please note that when you duplicate your event, some information is NOT duplicated
+イベントを複製すると、一部の情報はコピーされないことに注意してください
 
-- Date, Time, and Timezone (You set the date, time, and time zone when duplicating an event)
-- List of Registrants (When duplicating an event, people who registered for the original event are not automatically registered for your duplicated event. You can duplicate your event and create a dry run even if you already have registrants for your real event.)
-- By default, the session redirection strategy is set to Automatic for all duplicated events
-- Settings and Activities (like Marketo integration - meaning when you create a duplicated event, it will not create a Marketo program automatically)
+- 日付、時刻、タイムゾーン（イベントを複製する際に日付、時刻、タイムゾーンを設定します）
+- 登録者リスト（イベントを複製する際、元のイベントに登録した人々は自動的に複製イベントに登録されません。実イベントにすでに登録者がいても、イベントを複製してドライランを作成できます。）
+- デフォルトでは、複製されたすべてのイベントの Session Redirection Strategy は Automatic に設定されます
+- 設定とアクティビティ（Marketo 連携など - つまり複製イベントを作成しても、Marketo プログラムは自動的に作成されません）
 
-What will be duplicated?
+何が複製されますか?
 
-- Agenda
-- Speakers (Please note that you can choose not to copy speakers over by disabling the Copy Speakers checkbox in the Duplicate Event pop up message.)
-- Assets (slides, videos, polls, surveys, resources)
-- Engagement settings (Q&A settings, etc.)
-- Event branding, including look & feel settings
-- Email settings
-- Rooms and booths
+- アジェンダ
+- スピーカー（Duplicate Event ポップアップメッセージで Copy Speakers チェックボックスを無効化することで、スピーカーをコピーしないことを選択できます。）
+- アセット（スライド、動画、投票、アンケート、リソース）
+- エンゲージメント設定（Q&A 設定など）
+- イベントのブランディング（Look & Feel 設定を含む）
+- メール設定
+- ルームとブース
 
-## On-Demand Settings
+## オンデマンド設定
 
-An on-demand Stage template is pre-made and included on all webcast events. Check over the settings on all events before the event airs and know the standard URL for on-demand access normally reads: `webcasts.gitlab.com/on-demand{event-id}`. The primary toggle to check is related to `Downloadable Resources`, which is off by default
+オンデマンドステージテンプレートは事前に作成され、すべてのウェブキャストイベントに含まれています。イベント配信前にすべてのイベントの設定を確認してください。オンデマンドアクセスの標準 URL は通常 `webcasts.gitlab.com/on-demand{event-id}` の形式です。チェックすべき主なトグルは `Downloadable Resources` に関するもので、デフォルトではオフです。
 
-## Webcasts Subdomain
+## ウェブキャストサブドメイン
 
-Goldcast hosts a list of its hosted webcasts under the subdomain https://webcasts.gitlab.com/. Future iterations will add to this functionality
+Goldcast はホストしたウェブキャストのリストをサブドメイン https://webcasts.gitlab.com/ の下でホストしています。今後のイテレーションでこの機能が拡張される予定です。
 
-## Rescheduling and Canceling Events
+## イベントの再スケジュールとキャンセル
 
-### Rescheduling Process
+### 再スケジュールプロセス
 
-#### Step 1: Update Event Date/Time in Goldcast
+#### ステップ 1: Goldcast でイベントの日付／時刻を更新
 
-- Select the `Edit Event` menu
+- `Edit Event` メニューを選択
 
 ![Goldcast Edit Event Button](/images/marketing/marketing-operations/goldcast/goldcast_editevent.png)
 
-- Change the date and time to the new desired time
+- 日付と時刻を新しい希望の時刻に変更
 
 ![Goldcast Date and Time](/images/marketing/marketing-operations/goldcast/goldcast_dateandtime.png)
 
-- When prompted about sending an email to registrants, exit the alert **WITHOUT sending** the email (the automatic email is unbranded and only includes a calendar invite)
+- 登録者へのメール送信のプロンプトが表示されたら、メールを **送信せずに** アラートを閉じてください（自動メールはブランドなしで、カレンダー招待のみを含みます）
 
-#### Step 2: Send Custom Rescheduling Email
+#### ステップ 2: カスタム再スケジュールメールを送信
 
-- In the main event menu, select `Email` menu
-- Select Send `Custom Email`
-- Fill in the `Email Subject` with appropriate title
-- Select the pre-made template: `[Reschedule] Default GitLab Template`
-- Complete the email send by clicking `Send to Registrants`
+- メインのイベントメニューで `Email` メニューを選択
+- `Custom Email` 送信を選択
+- 適切なタイトルで `Email Subject` を入力
+- 事前作成テンプレート: `[Reschedule] Default GitLab Template` を選択
+- `Send to Registrants` をクリックしてメール送信を完了
 
 ![Goldcast Reschedule Email](/images/marketing/marketing-operations/goldcast/goldcast_rescheduleemail.png)
 
-#### Step 3: Update Marketo Program
+#### ステップ 3: Marketo プログラムを更新
 
-- Change the Marketo program name to match the new date
+- 新しい日付に合わせて Marketo プログラム名を変更
 
-### Cancellation Process
+### キャンセルプロセス
 
-#### Step 1: Send Cancellation Email FIRST
+#### ステップ 1: 先にキャンセルメールを送信
 
-1. In the main event menu, select Email menu
-2. Select Send Custom Email
-3. Fill in the Email Subject with appropriate title
-4. Select the pre-made template: [Cancellation] Default GitLab Template
-5. Complete the email send by clicking Send to Registrants
+1. メインのイベントメニューで Email メニューを選択
+2. Send Custom Email を選択
+3. 適切なタイトルで Email Subject を入力
+4. 事前作成テンプレート: [Cancellation] Default GitLab Template を選択
+5. Send to Registrants をクリックしてメール送信を完了
 
-#### Step 2: Delete Event in Goldcast
+#### ステップ 2: Goldcast でイベントを削除
 
-- Once the email has been deployed, the Delete Event button can be found at the bottom of the Edit Event menu
+- メールが送信されたら、Edit Event メニューの下部に Delete Event ボタンがあります
 
 ![Goldcast Delete Event](/images/marketing/marketing-operations/goldcast/goldcast_deleteevent.png)
 
-#### Step 3: Handle Marketo Program
+#### ステップ 3: Marketo プログラムの処理
 
-- Ping in the #mktgops slack channel to have the Marketo program deleted, or delete the program yourself if you have the permissions
+- #mktgops Slack チャンネルで Marketo プログラムを削除してもらうか、権限があれば自分でプログラムを削除してください
 
-### Important Notes
+### 重要な注意事項
 
-- **Never use** the automatic Goldcast rescheduling email - it's unbranded and unprofessional
-- **Always send** the custom GitLab-branded email templates instead
-- For cancellations, send the email **BEFORE** deleting the event to ensure registrants are notified
+- 自動 Goldcast 再スケジュールメールは **絶対に使用しないでください** - ブランド非対応で非プロフェッショナルです
+- 代わりに **必ず** カスタム GitLab ブランドのメールテンプレートを送信してください
+- キャンセルの場合、登録者に通知が届くようにイベントを削除する **前に** メールを送信してください
 
-## Localized Event Templates
+## ローカライズされたイベントテンプレート
 
-To simplify the process of creating new events, we have created 9 branded templates that are available to everyone with Goldcast Teams access. 8 of the 9 templates will auto-create a Marketo program, while 1 template "GitLab Primary Template (w/o Marketo program creation)" will not create a Marketo program and must be used for tests or dry runs only.
+新規イベント作成プロセスを簡素化するために、Goldcast Teams アクセス権を持つすべての人が利用できる 9 つのブランド付きテンプレートを作成しました。9 つのテンプレートのうち 8 つは Marketo プログラムを自動作成しますが、1 つのテンプレート「GitLab Primary Template (w/o Marketo program creation)」は Marketo プログラムを作成しないため、テストやドライラン専用で使用する必要があります。
 
-### How to access templates in Goldcast
+### Goldcast でテンプレートにアクセスする方法
 
-1. Open Goldcast page: https://admin.goldcast.io/home
-2. Click on the Templates tab on the left side
+1. Goldcast のページを開く: https://admin.goldcast.io/home
+2. 左側の Templates タブをクリック
 
-### Available Languages
+### 利用可能な言語
 
-By default, English is set as the primary language in the primary event template unless labeled otherwise. Captions and subtitles are also toggled on by default, but will only work correctly if the presenters are speaking in the set primary language.
+別途ラベル付けされていない限り、プライマリイベントテンプレートのデフォルトの主要言語は英語です。字幕および翻訳字幕もデフォルトで有効になっていますが、プレゼンターが設定された主要言語で話す場合にのみ正しく動作します。
 
-Goldcast has been outfitted with localized and branded event templates for 7 additional languages:
+Goldcast には 7 つの追加言語のローカライズされたブランド付きイベントテンプレートが装備されています:
 
-- Spanish (Spain)
-- French
-- German
-- Portuguese (Brazilian and European)
-- Italian
-- Japanese
-- Korean
+- スペイン語（スペイン）
+- フランス語
+- ドイツ語
+- ポルトガル語（ブラジルおよびヨーロッパ）
+- イタリア語
+- 日本語
+- 韓国語
 
-Note that each of these localized templates will auto-create a Marketo program, bringing the total number of templates available in Goldcast to 9.
+これらのローカライズされたテンプレートのそれぞれが Marketo プログラムを自動作成するため、Goldcast で利用可能なテンプレートの合計数は 9 つとなります。
 
-### Template Configuration
+### テンプレート設定
 
-Each template has the **Primary Language** set to the listed language, meaning email assets, UI, and features are set to this language. _In order for some features (subtitles, captions) to work correctly, the speakers must be speaking in that language._ Event information must also be input by staff to match the language for a completely localized experience.
+各テンプレートでは、**主要言語** がリストアップされた言語に設定されており、メールアセット、UI、機能がこの言語に設定されていることを意味します。_一部の機能（翻訳字幕、字幕）が正しく動作するためには、スピーカーがその言語で話している必要があります。_ 完全にローカライズされた体験のために、イベント情報もスタッフが言語に合わせて入力する必要があります。
 
-The primary language for your event is shown in the Features section on the dashboard.
+イベントの主要言語はダッシュボードの Features セクションに表示されます。
 
 ![Goldcast Features Section](/images/marketing/marketing-operations/goldcast/goldcast_featureddashboard.png)
 
-### Attendee Language Experience
+### 参加者の言語体験
 
-Event attendees can view the Goldcast UI in any of the previously mentioned languages by changing it in their profile dropdown. When an attendee selects another language:
+イベント参加者はプロフィールのドロップダウンで変更することにより、前述の言語のいずれかで Goldcast UI を表示できます。参加者が他の言語を選択した場合:
 
-- Event content you customize (session names, booth/room names, resources, polls) will remain in the primary language of your event
-- Navigation bar, buttons, and prompts will appear in the attendee's preferred language
+- カスタマイズしたイベントコンテンツ（セッション名、ブース／ルーム名、リソース、投票）はイベントの主要言語のまま残ります
+- ナビゲーションバー、ボタン、プロンプトは参加者の希望言語で表示されます
 
-### Email Coordination
+### メールの調整
 
-#### Speaker Emails
+#### スピーカーメール
 
-When adding speakers to an event, the Speaker Invite/Instructions email will be set to the Primary Language initially but can beswitched to a standard English template in the Email Schedule section of the event.
+スピーカーをイベントに追加すると、Speaker Invite/Instructions メールは最初は主要言語に設定されますが、イベントの Email Schedule セクションで標準英語テンプレートに切り替えることができます。
 
-If you would like to send a Primary Language email to one speaker and the standard English email to a different speaker, switch the Speaker Invite/Instructions email before adding one speaker or the other.
+あるスピーカーには主要言語メールを送り、別のスピーカーには標準英語メールを送りたい場合は、片方のスピーカーを追加する前に Speaker Invite/Instructions メールを切り替えてください。
 
-Important notes:
+重要な注意事項:
 
-- Goldcast cannot send two different language emails simultaneously
-- For the 1 hour reminder email, only one of the two emails can be sent due to those reminders being sent simultaneously
-- Staff emails are only available in English
+- Goldcast は 2 つの異なる言語のメールを同時に送信できません
+- 1 時間前のリマインダーメールについては、リマインダーが同時に送信されるため、2 つのメールのうち 1 つしか送信できません
+- スタッフメールは英語のみ利用可能です
 
-#### Japanese Templates
+#### 日本語テンプレート
 
-All Japanese event templates have been updated with email templates that include the greeting {{last name}}-sama, whether the email is in Japanese or English.
+すべての日本語イベントテンプレートは、メールが日本語であろうと英語であろうと、{{last name}}-sama という挨拶を含むメールテンプレートで更新されています。
 
-### Reschedule and Cancellation Emails
+### 再スケジュールメールとキャンセルメール
 
-To send a reschedule or cancellation email, follow a similar protocol as explained above. Select the templates titled:
+再スケジュールまたはキャンセルメールを送信するには、上で説明したものと同様のプロトコルに従ってください。以下のタイトルのテンプレートを選択してください:
 
 - `[Reschedule] Default GitLab Template - {{Primary Language}}`
 - `[Cancellation] Default GitLab Template - {{Primary Language}}`
 
-Depending on the email type, fill in the subject line with one of these translations:
+メールタイプに応じて、件名にこれらの翻訳のいずれかを入力してください:
 
-**English templates**:
+**英語テンプレート**:
 
 - a. "Your event has been rescheduled!"
 - b. "Due to unforeseen circumstances, the event has been canceled."
 
-**Translations by language**:
+**言語別の翻訳**:
 
-_Spanish_
+_スペイン語_
 
 - a. “Su evento se reprogramó.”
 - b. “Debido a circunstancias imprevistas, el evento se canceló.”
 
-_French_
+_フランス語_
 
 - a. “Votre événement a été reprogrammé!”
 - b. “En raison de circonstances imprévues, l’événement a été annulé.”
 
-_German_
+_ドイツ語_
 
 - a. “Dein Event wurde verschoben.”
 - b. “Aufgrund unvorhergesehener Umstände wurde das Event abgesagt.”
 
-_Portuguese_
+_ポルトガル語_
 
 - a. “Seu evento foi reagendado!”
 - b. “evido a imprevistos, o evento foi cancelado."
 
-_Italian_
+_イタリア語_
 
 - a. “Il tuo evento è stato riprogrammato.”
 - b. “A causa di circostanze impreviste, l’evento è stato annullato.”
 
-_Japanese_
+_日本語_
 
 - a. “イベントのスケジュールが変更されました！”
 - b. “予期せぬ事情により、イベントは中止となりました。”
 
-_Korean_
+_韓国語_
 
 - a. “이벤트 일정이 변경되었습니다!”
 - b. “예기치 못한 상황으로 인해 이벤트가 취소되었습니다. 불편을 끼쳐드려 죄송합니다.”
 
-## Working with a Series
+## シリーズの利用
 
-A Series in Goldcast acts as a method of grouping multiple events and webinars with differing dates and times under a single label (no restrictions on number or type of events). A Series allows attendees to register for multiple related events using a single form, rather than filling out separate registration forms for each event.
+Goldcast における Series は、異なる日時の複数のイベントとウェビナーを単一のラベルでグルーピングする方法として機能します（イベントの数やタイプに制限はありません）。Series を使うことで、参加者は各イベントごとに別々の登録フォームに記入する代わりに、単一のフォームで複数の関連イベントに登録できます。
 
-### Series Creation Process
+### Series 作成プロセス
 
-#### How to Create a Series
+#### Series の作成方法
 
-- In  Goldcast Studio, click the `+` icon in the top right
-- Select `New Series`
+- Goldcast Studio で右上の `+` アイコンをクリック
+- `New Series` を選択
 
 ![Goldcast New Series](/images/marketing/marketing-operations/goldcast/goldcast_newseries.png)
 
-- Name your Series and provide description
-- Click `Create`
-- Assign to GitLab Inc Team Workspace
+- Series に名前と説明を付ける
+- `Create` をクリック
+- GitLab Inc Team Workspace に割り当てる
 
-#### Adding Events to a Series
+#### Series へのイベントの追加
 
-- From Series dashboard, click `+Add Event` or `+Add Webinar`
+- Series ダッシュボードから `+Add Event` または `+Add Webinar` をクリック
 
 ![Goldcast Add Events](/images/marketing/marketing-operations/goldcast/goldcast_add_events_webinars.png)
 
-- Create the event/webinar as usual with standard event setup
-- Any event/webinar added to a series inherits the registration form from the series
-- Each unique event/webinar created within the Series will create **its own** Marketo program
+- 標準的なイベントセットアップで通常通りイベント／ウェビナーを作成
+- シリーズに追加されたイベント／ウェビナーは、シリーズから登録フォームを継承します
+- Series 内で作成された一意の各イベント／ウェビナーは、**それぞれ独自の** Marketo プログラムを作成します
 
-#### Series Templates and Limitations
+#### Series テンプレートと制限
 
-- The only Series template created is currently in English: `Series Landing Page Template`
-- To recreate this template, use the "duplicate" feature in Edit Series menu
-**Note**: The form for the landing page is not set up at this time
-- Series templates are **NOT** available - only individual event/webinar templates are supported
+- 作成されている Series テンプレートは現在英語のみ: `Series Landing Page Template`
+- このテンプレートを再現するには、Edit Series メニューの「duplicate」機能を使用してください
+**注意**: 現時点ではランディングページのフォームはセットアップされていません
+- Series テンプレートは **利用できません** - 個別のイベント／ウェビナーテンプレートのみがサポートされています
 
-_Series Limitations_
+_Series の制限_
 
-- Cannot add previously created events/webinars to a series - only newly created or duplicated events
-- Series **CANNOT** have a Primary Language set (function exists at Event/Webinar level)
-- Different events within your Series can be set to different Primary Languages
+- 以前に作成されたイベント／ウェビナーをシリーズに追加することはできません - 新規作成または複製されたイベントのみ
+- Series には主要言語を設定 **できません**（機能はイベント／ウェビナーレベルで存在）
+- Series 内の異なるイベントは異なる主要言語に設定できます
 
-#### Registration and Landing Page Strategy
+#### 登録およびランディングページ戦略
 
-- Series can have their own Goldcast landing page for date/time selection. Use of these landing pages is currently limited while team investigates Bizible touchpoints integration
-- Recommended approach: Continue using Marketo or About.GitLab marketing landing pages until Goldcast and Bizible are correctly connected
-- Contact MktgOps to set up single form registration within Marketo for series
+- Series は日時選択用に独自の Goldcast ランディングページを持つことができます。これらのランディングページの使用は、チームが Bizible タッチポイント連携を調査している間は現在制限されています
+- 推奨アプローチ: Goldcast と Bizible が正しく接続されるまで、引き続き Marketo または About.GitLab マーケティングランディングページを使用してください
+- シリーズに対する Marketo 内の単一フォーム登録のセットアップについては MktgOps に連絡してください
 
-#### Emails
+#### メール
 
-- Registration confirmation and reminder emails come from individual events/webinars
-- It is possible for Series to send Registration confirmation and Waitlist emails
-- Staff emails are English only regardless of event Primary Language settings
+- 登録確認とリマインダーメールは個別のイベント／ウェビナーから送信されます
+- Series が登録確認メールやウェイトリストメールを送信することは可能です
+- スタッフメールは、イベントの主要言語設定に関わらず英語のみです
 
-#### Marketo Integration for Series
+#### Series 向け Marketo 連携
 
-- Each event/webinar within a Series creates separate Marketo program
-- Series-level Marketo integration still under investigation
-- Follow standard Marketo integration process for each individual event
+- Series 内の各イベント／ウェビナーは別々の Marketo プログラムを作成します
+- Series レベルの Marketo 連携はまだ調査中です
+- 各個別イベントに対して標準的な Marketo 連携プロセスに従ってください
 
-#### Integration and Analytics Considerations
+#### 連携と分析に関する考慮事項
 
-_Current Status_
+_現在のステータス_
 
-- Series integrations with Marketo should be set up BEFORE adding events
-- Cross-series analytics and reporting capabilities available in Goldcast
-- Bizible Integration: More information to be added after Bizible touchpoints are successfully integrated with Goldcast
+- Marketo との Series 連携は、イベントを追加する前にセットアップする必要があります
+- クロスシリーズの分析とレポート機能は Goldcast で利用可能です
+- Bizible 連携: Bizible タッチポイントが Goldcast と正常に連携された後に詳細情報が追加されます
 
-_Best Practice_
+_ベストプラクティス_
 
-- Set up series integrations before adding new events to the series
-- Monitor individual event performance within series
-- Coordinate with MktgOps for complex series registration workflow
+- 新しいイベントをシリーズに追加する前にシリーズ連携をセットアップ
+- シリーズ内の個別イベントのパフォーマンスを監視
+- 複雑なシリーズの登録ワークフローについては MktgOps と調整
 
-## Analytics and Reporting
+## 分析とレポート
 
-### Overview
+### 概要
 
-Engagement data from Goldcast events (survey responses and questions asked) is shared in Salesforce through Goldcast report URLs. This approach allows us to efficiently provide detailed engagement information without overloading lead profiles with excessive character data.
+Goldcast イベントからのエンゲージメントデータ（アンケートの回答と寄せられた質問）は、Goldcast レポート URL を介して Salesforce で共有されます。このアプローチにより、過剰な文字データでリードプロファイルを過負荷にすることなく、詳細なエンゲージメント情報を効率的に提供できます。
 
-### How It Works
+### 動作原理
 
-Goldcast report URLs are added to the `Last Event Notes` field in Salesforce, which automatically carries historical data into the Ongoing Qualifications field on all leads. This ensures engagement data is both immediately accessible and preserved in the lead's historical record.
+Goldcast レポート URL は Salesforce の `Last Event Notes` フィールドに追加され、すべてのリードの Ongoing Qualifications フィールドに自動的に履歴データが引き継がれます。これにより、エンゲージメントデータがすぐにアクセスできるとともに、リードの履歴記録に保存されるようにします。
 
-### How to create Goldcast Report URL
+### Goldcast レポート URL の作成方法
 
-#### Step-by-Step Instructions
+#### 段階的な手順
 
-- Access Your Event in Goldcast
-- Navigate to your completed event in the Goldcast dashboard
-- Generate the Engagement Report
+- Goldcast でイベントにアクセス
+- Goldcast ダッシュボードで完了したイベントに移動
+- エンゲージメントレポートを生成
 
-1. Go to the event's Analytics tab
-2. Choose the dashboard you want to share (summary, engagement, clips, pre event, session or emails)
-3. On the left side click on "Share" button > Share to web > Set up your password > Set > Copy your Report URL
+1. イベントの Analytics タブに移動
+2. 共有したいダッシュボードを選択（サマリー、エンゲージメント、クリップ、イベント前、セッション、メール）
+3. 左側で「Share」ボタンをクリック > Share to web > パスワードを設定 > Set > レポート URL をコピー
 
-### How to add this info to your spreadsheet and upload to Marketo
+### この情報をスプレッドシートに追加し Marketo にアップロードする方法
 
-#### Format the Report Information
+#### レポート情報のフォーマット
 
-Using a duplicated spreadsheet from the [List upload cleaning template](https://docs.google.com/spreadsheets/d/143REaMQLyIy7to-CFktL45TTTLZxBQRJUDIOMCA3CVo/edit?gid=1146262549#gid=1146262549), input the list of attendee emails and add the report URL as described below utilizing the `Event Notes Only Upload` tab in the speadsheet. The list can then be uploaded to Marketo using the [Self-Service List Import Bot](/handbook/marketing/marketing-operations/automated-list-import/) instructions
+[List upload cleaning template](https://docs.google.com/spreadsheets/d/143REaMQLyIy7to-CFktL45TTTLZxBQRJUDIOMCA3CVo/edit?gid=1146262549#gid=1146262549) から複製したスプレッドシートを使用して、参加者のメールリストを入力し、以下の説明に従ってスプレッドシートの `Event Notes Only Upload` タブを利用してレポート URL を追加します。リストは [Self-Service List Import Bot](/handbook/marketing/marketing-operations/automated-list-import/) の手順に従って Marketo にアップロードできます。
 
-- Event Name (formatted consistently)
-- Goldcast Report URL (same for all attendees)
-- Password for accessing the report
+- イベント名（一貫したフォーマットで）
+- Goldcast レポート URL（すべての参加者で同じ）
+- レポートにアクセスするためのパスワード
 
-_Example_
+_例_
 
-| Marketo program | Email | Last Event Notes |
+| Marketo プログラム | Email | Last Event Notes |
 | ------ | ------ | ------ |
 | 20251118_DORA_AI_Amplifier | testest@gitlab.com | 20251118_DORA_AI_Amplifier https://reports.admin.goldcast.io/share/000-00000-0000-000000?requirePassword=true PW:123 |
 
-Once the spreadsheet is ready for uploading, please upload your spreadsheet to [Import Data Here](https://drive.google.com/drive/folders/1SvDR2KW8_vtPZjJ7WWihA1iOgSJn0_fv) folder in the List Import Automation folder.
+スプレッドシートのアップロード準備ができたら、List Import Automation フォルダ内の [Import Data Here](https://drive.google.com/drive/folders/1SvDR2KW8_vtPZjJ7WWihA1iOgSJn0_fv) フォルダにスプレッドシートをアップロードしてください。
 
-### Troubleshooting
+### トラブルシューティング
 
-_Notes Not Uploading_
+_ノートがアップロードされない_
 
-- Verify email addresses match SFDC records exactly
-- Check that spreadsheet columns are correctly labeled
-- Ensure no extra spaces or formatting in the notes field
+- メールアドレスが SFDC レコードと完全に一致していることを確認
+- スプレッドシートの列が正しくラベル付けされていることを確認
+- ノートフィールドに余分なスペースやフォーマットがないことを確認
 
-_Report URLs Not Working_
+_レポート URL が機能しない_
 
-- Confirm password is correct
-- Verify URL was copied completely
+- パスワードが正しいことを確認
+- URL が完全にコピーされたことを確認
 
 ## Content Lab
 
-Content Lab is an AI-powered feature that allows users to generate creative assets based on the content from either our webcasts broadcast within Goldcast or videos loaded into the platform. Once a video is processed, Content Lab automatically generates short video clips, social posts, blog posts, follow-up emails, key takeaways.
+Content Lab は AI 駆動の機能で、ユーザーが Goldcast 内で配信されたウェブキャストやプラットフォームにロードされた動画のコンテンツに基づいてクリエイティブアセットを生成できます。動画が処理されると、Content Lab は短い動画クリップ、ソーシャル投稿、ブログ投稿、フォローアップメール、重要なポイントを自動的に生成します。
 
-_Since Goldcast's UI evolves frequently, this section covers the high-level concepts and links directly to Goldcast's official documentation for step-by-step instructions. If you have any issues, please reach out to Marketing Operations team (Slack: #mrktgops)_
+_Goldcast の UI は頻繁に進化するため、このセクションでは高レベルの概念を取り扱い、段階的な手順については Goldcast の公式ドキュメントへ直接リンクします。問題がある場合は Marketing Operations チーム（Slack: #mrktgops）に連絡してください_
 
-### Content Lab Pilot
+### Content Lab パイロット
 
-Before expanding Content Lab access across teams, GitLab is running a pilot program with a designated group of content creators. The pilot has three main goals:
+Content Lab のアクセスをチーム全体に拡大する前に、GitLab は指定されたコンテンツクリエーターのグループでパイロットプログラムを実施しています。パイロットには 3 つの主な目標があります:
 
-- Evaluate the tool's value — determine whether Content Lab is worth scaling to other teams based on real usage and outcomes
-- Build internal expertise — develop a solid understanding of how to use Content Lab effectively and how it can be incorporated into different team workflows
-- Unlock more content independently — find ways to repurpose existing content, re-engage audiences after events are over, and generate assets without relying on external stakeholders or third-party production resources
+- ツールの価値を評価する — 実際の使用状況と結果に基づいて、Content Lab を他のチームに拡大する価値があるかどうかを判断する
+- 社内の専門知識を構築する — Content Lab を効果的に使用する方法、および異なるチームのワークフローにどのように組み込むことができるかについての確実な理解を発展させる
+- より多くのコンテンツを独立して引き出す — 既存のコンテンツを再利用し、イベント終了後にオーディエンスを再エンゲージし、外部のステークホルダーやサードパーティの制作リソースに頼ることなくアセットを生成する方法を見つける
 
-Pilot members will have dedicated Content Lab seats and will be responsible for testing use cases. The Marketing Operations team will document learnings and share recommendations on broader adoption.
+パイロットメンバーには専用の Content Lab シートが提供され、ユースケースのテストを担当します。Marketing Operations チームは学びを記録し、より広範な採用に関する推奨事項を共有します。
 
-If you are interested in learning more about it, please reach out to #mktgops Slack channel.
+詳細について知りたい場合は、#mktgops Slack チャンネルに連絡してください。
 
-### Accessing Content Lab
+### Content Lab へのアクセス
 
-Content Lab is included in GitLab's Goldcast plan. If you are an existing Goldcast user, you can access it by clicking Content Lab in the left sidebar of Goldcast dasboard.
+Content Lab は GitLab の Goldcast プランに含まれています。既存の Goldcast ユーザーであれば、Goldcast ダッシュボードの左サイドバーで Content Lab をクリックしてアクセスできます。
 
-For detailed setup instructions, refer to Goldcast's official guides:
+詳細なセットアップ手順については、Goldcast の公式ガイドを参照してください:
 
-- [Content Lab Quick Start Guide – For Existing Goldcast Users](https://help.goldcast.io/content-lab-home/18803296965787-quick-start-guide-for-existing-goldcast-users)
-- [Content Lab Quick Start Guide – For New Users](https://help.goldcast.io/content-lab-home/23453390448667-quick-start-guide-for-new-users)
+- [Content Lab クイックスタートガイド – 既存の Goldcast ユーザー向け](https://help.goldcast.io/content-lab-home/18803296965787-quick-start-guide-for-existing-goldcast-users)
+- [Content Lab クイックスタートガイド – 新規ユーザー向け](https://help.goldcast.io/content-lab-home/23453390448667-quick-start-guide-for-new-users)
 
-If you need access and don't currently have it, request Goldcast access via Lumos.
+アクセスが必要だがまだ持っていない場合は、Lumos 経由で Goldcast アクセスをリクエストしてください。
 
-_Please note: We have a limited number of Content Lab seats. Access is granted based on your use case and work goals, so please describe these clearly in your access request._
+_注意: Content Lab シート数には限りがあります。アクセスはユースケースと業務目標に基づいて付与されるため、アクセスリクエストでこれらを明確に記述してください。_
 
-- [Video Clips](https://help.goldcast.io/en_US/repurpose-videos/23454045266331-how-to-convert-long-form-video-into-short-clips)
-- [Social Media Posts](https://help.goldcast.io/en_US/repurpose-videos/25819827162139-content-lab-create-social-posts-from-your-video)
-- [Blog Posts](https://help.goldcast.io/en_US/repurpose-videos/23455350664731-Content-Lab-Create-Blogs-From-Your-Video)
-- [Emails](https://help.goldcast.io/en_US/repurpose-videos/25819815879067-content-lab-create-emails-from-your-video)
-- [Bullet-pointed "Takeaways"](https://help.goldcast.io/en_US/repurpose-videos/25884269906459-Content-Lab-Create-Takeaway-Posts-From-Your-Video)
-- [Custom text posts](https://help.goldcast.io/en_US/repurpose-videos/25884485175579-Content-Lab-Create-Custom-Text-Posts-From-Your-Video)
+- [動画クリップ](https://help.goldcast.io/en_US/repurpose-videos/23454045266331-how-to-convert-long-form-video-into-short-clips)
+- [ソーシャルメディア投稿](https://help.goldcast.io/en_US/repurpose-videos/25819827162139-content-lab-create-social-posts-from-your-video)
+- [ブログ投稿](https://help.goldcast.io/en_US/repurpose-videos/23455350664731-Content-Lab-Create-Blogs-From-Your-Video)
+- [メール](https://help.goldcast.io/en_US/repurpose-videos/25819815879067-content-lab-create-emails-from-your-video)
+- [箇条書きの「Takeaways」](https://help.goldcast.io/en_US/repurpose-videos/25884269906459-Content-Lab-Create-Takeaway-Posts-From-Your-Video)
+- [カスタムテキスト投稿](https://help.goldcast.io/en_US/repurpose-videos/25884485175579-Content-Lab-Create-Custom-Text-Posts-From-Your-Video)
 
-### Importing Videos (external recordings)
+### 動画のインポート（外部録画）
 
-You can bring video into Content Lab in two ways: by pasting a video link or by uploading a local file. Once processing is complete, Content Lab automatically generates an initial set of assets for you to work with.
+Content Lab に動画を取り込むには 2 つの方法があります: 動画リンクを貼り付ける、またはローカルファイルをアップロードする。処理が完了すると、Content Lab は作業用の最初のアセットセットを自動的に生成します。
 
-See Goldcast's guide: [How to Upload Videos](https://help.goldcast.io/content-lab-home/22150143391131-how-to-upload-videos)
+Goldcast のガイドを参照してください: [動画をアップロードする方法](https://help.goldcast.io/content-lab-home/22150143391131-how-to-upload-videos)
 
-### What Content Lab Can Generate
+### Content Lab が生成できるもの
 
-After a video is imported or you select one of the recordings already available in Goldcast, you can create the following asset types from the left panel in Content Lab:
+動画がインポートされるか、Goldcast ですでに利用可能な録画のいずれかを選択すると、Content Lab の左パネルから以下のアセットタイプを作成できます:
 
-- [Short video clips](https://help.goldcast.io/repurpose-videos/23454045266331-how-to-convert-long-form-video-into-short-clips) — AI-detected highlights from the recording, or manually generated by highlighting a specific part of the transcript
-- [Social posts](https://help.goldcast.io/repurpose-videos/25819827162139-content-lab-create-social-posts-from-your-video) — social media posts with hashtags and short video
-- [Blog posts](https://help.goldcast.io/repurpose-videos/23455350664731-Content-Lab-Create-Blogs-From-Your-Video) — long-form content combining text and video
-- [Emails](https://help.goldcast.io/repurpose-videos/25819815879067-content-lab-create-emails-from-your-video) — follow-up or nurture email copy
-- [Takeaways](https://help.goldcast.io/repurpose-videos/25884269906459-Content-Lab-Create-Takeaway-Posts-From-Your-Video) — key points and summaries from the video
-- [Custom text posts](https://help.goldcast.io/repurpose-videos/25884485175579-Content-Lab-Create-Custom-Text-Posts-From-Your-Video) — flexible text output for other use cases (e.g. presentation intro)
+- [短い動画クリップ](https://help.goldcast.io/repurpose-videos/23454045266331-how-to-convert-long-form-video-into-short-clips) — 録画から AI が検出したハイライト、またはトランスクリプトの特定の部分を強調することによって手動で生成
+- [ソーシャル投稿](https://help.goldcast.io/repurpose-videos/25819827162139-content-lab-create-social-posts-from-your-video) — ハッシュタグと短い動画を含むソーシャルメディア投稿
+- [ブログ投稿](https://help.goldcast.io/repurpose-videos/23455350664731-Content-Lab-Create-Blogs-From-Your-Video) — テキストと動画を組み合わせた長文コンテンツ
+- [メール](https://help.goldcast.io/repurpose-videos/25819815879067-content-lab-create-emails-from-your-video) — フォローアップやナーチャリングメールのコピー
+- [Takeaways](https://help.goldcast.io/repurpose-videos/25884269906459-Content-Lab-Create-Takeaway-Posts-From-Your-Video) — 動画からの重要なポイントと要約
+- [カスタムテキスト投稿](https://help.goldcast.io/repurpose-videos/25884485175579-Content-Lab-Create-Custom-Text-Posts-From-Your-Video) — 他のユースケース（プレゼンテーションのイントロなど）向けの柔軟なテキスト出力
 
 ### Brand Kit
 
-Content Lab supports a brand kit so that all generated assets are consistent with GitLab's visual identity. The brand kit can include a voice profile, brand colors, fonts, template backgrounds, and intro/outro clips.
+Content Lab は、生成されるすべてのアセットが GitLab のビジュアルアイデンティティと一致するように、ブランドキットをサポートしています。ブランドキットには、ボイスプロファイル、ブランドカラー、フォント、テンプレート背景、イントロ／アウトロクリップを含めることができます。
 
-For reference, see Goldcast's brand kit documentation linked from: [Content Lab 101 – Set up your brand kit](https://help.goldcast.io/content-lab-101#set-up-your-brand-kit-5)
+参考として、Goldcast のブランドキットドキュメントは [Content Lab 101 – Set up your brand kit](https://help.goldcast.io/content-lab-101#set-up-your-brand-kit-5) からリンクされています。
 
-- [**Voice Profile**](https://help.goldcast.io/en_US/brand-kit-settings/add-voice-profile): An AI narrator, which can be set to have a specific style of speech. We can either add Brand Guidelines (including a description of our voice and tone, a PDF with a maximum size limit of 30 MB) or we can paste sample copy that represents our voice and tone (maximum permitted character limit: 10,000 characters).
-- **Color**: The GitLab shades of purple (`#7759c2`) and orange (`#fc6d26`) have been pre-selected.
-- **Font**: GitLab's branded font has been pre-loaded.
-- **Template background**: Clips will feature one of the images loaded here. To start, 3 have been pre-loaded, and if more are desired, please open an issue with the Branding team.
-- **Intro/Outro Video**: Short branded intro/outro videos to use at the beginning and end of our clips. We do not have any pre-loaded options there.
+- [**ボイスプロファイル**](https://help.goldcast.io/en_US/brand-kit-settings/add-voice-profile): 特定の話し方のスタイルに設定できる AI ナレーター。ブランドガイドライン（ボイスとトーンの説明、最大 30 MB の PDF を含む）を追加することも、ボイスとトーンを代表するサンプルコピーを貼り付けることもできます（許可される最大文字数: 10,000 文字）。
+- **カラー**: GitLab のパープル（`#7759c2`）とオレンジ（`#fc6d26`）の色合いが事前選択されています。
+- **フォント**: GitLab のブランドフォントが事前にロードされています。
+- **テンプレート背景**: クリップにはここでロードされた画像のいずれかが使用されます。最初の段階では 3 つが事前ロードされており、さらに必要な場合は Branding チームに Issue を開いてください。
+- **イントロ／アウトロ動画**: クリップの最初と最後に使用する短いブランド付きイントロ／アウトロ動画。事前ロード済みのオプションはありません。
 
-GitLab's brand voice | colours | font | style guidles can be found [here](https://design.gitlab.com/brand-messaging/brand-voice/).
+GitLab のブランドボイス、カラー、フォント、スタイルガイドラインは [こちら](https://design.gitlab.com/brand-messaging/brand-voice/) で見つけられます。
 
-### AI Search
+### AI 検索
 
-Content Lab includes an AI-powered search that scans your entire video library by topic or theme and surfaces relevant clips and social posts.
+Content Lab には、トピックやテーマで動画ライブラリ全体をスキャンし、関連するクリップやソーシャル投稿を表示する AI 駆動の検索が含まれています。
 
-Learn more: [How to use AI Search](https://help.goldcast.io/beta-features/cl-ai-search)
+詳細: [AI 検索の使い方](https://help.goldcast.io/beta-features/cl-ai-search)
 
-### Editing and Exporting Assets
+### アセットの編集とエクスポート
 
-Content Lab includes a built-in video editor that lets you adjust clips within Goldcast. Common edits include trimming, adding captions (changing them, translating them), changing aspect ratios, and adding intros/outros.
+Content Lab には、Goldcast 内でクリップを調整できる組み込みの動画エディタが含まれています。一般的な編集には、トリミング、字幕の追加（変更、翻訳）、アスペクト比の変更、イントロ／アウトロの追加などがあります。
 
-Once an asset is ready, it can be shared via a link or downloaded directly.
+アセットの準備ができたら、リンク経由で共有したり直接ダウンロードしたりできます。
 
-[How to Edit Video Clips](https://help.goldcast.io/content-lab-home/content-lab-how-to-edit-clips)
-[How to Share Video Clips](https://help.goldcast.io/content-lab-home/24872742775067-content-lab-how-to-share-video-clips)
-[How to Download Video Clips](https://help.goldcast.io/content-lab-home/23453566215323-how-to-download-video-clips)
+[動画クリップを編集する方法](https://help.goldcast.io/content-lab-home/content-lab-how-to-edit-clips)
+[動画クリップを共有する方法](https://help.goldcast.io/content-lab-home/24872742775067-content-lab-how-to-share-video-clips)
+[動画クリップをダウンロードする方法](https://help.goldcast.io/content-lab-home/23453566215323-how-to-download-video-clips)
 
-## Requesting new creative assets
+## 新しいクリエイティブアセットのリクエスト
 
-Goldcast supplies guidelines for creative assets on two different pages:
+Goldcast は 2 つの異なるページでクリエイティブアセットのガイドラインを提供しています:
 
-- [Image and Video Specifications for Goldcast Events](https://help.goldcast.io/design/4406894301979-goldcast-design-specifications)
-- [Event Look & Feel: Branding your event](https://help.goldcast.io/design/16695909382427-event-look-feel-branding-your-event-#list-of-specs-and-assets-30)
+- [Goldcast イベント用画像と動画の仕様](https://help.goldcast.io/design/4406894301979-goldcast-design-specifications)
+- [Event Look & Feel: イベントのブランディング](https://help.goldcast.io/design/16695909382427-event-look-feel-branding-your-event-#list-of-specs-and-assets-30)

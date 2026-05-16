@@ -19651,7 +19651,7 @@
     "content/handbook/marketing/marketing-operations/goldcast/index.md": {
       "path": "content/handbook/marketing/marketing-operations/goldcast/index.md",
       "upstream_sha": "0b5a5f39bf48045cf2d6f198c5637420369674de",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "translated_at": "2026-05-16T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "6935819c66c72806c0fe35c837a4b264a22922e9112750cb30013604eb2807e9",
       "upstream_committed_at": "2026-04-28T12:45:18-06:00"
