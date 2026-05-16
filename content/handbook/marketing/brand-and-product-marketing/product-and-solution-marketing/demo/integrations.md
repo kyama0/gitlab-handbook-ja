@@ -5,6 +5,7 @@ upstream_sha: c26b483f365d397f86ef45e60a892d0783588ac1
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T22:14:31+00:00"
 ---
 
 場合によっては、GitLab を既存システムと共に使用しなければならないことがあります。最も一般的に求められるシステムには、Issue 管理用の Atlassian Jira、パイプライン実行用の Jenkins、ソースコード管理用の GitHub があります。Jira から GitLab へのワークフロー、GitHub から GitLab への CI/CD 連携、または GitLab から Jenkins への接続は、GitLab で利用可能な統合機能を使ってプロジェクト単位で素早く構成できます。

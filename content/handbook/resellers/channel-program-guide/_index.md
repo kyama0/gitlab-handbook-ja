@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-25T10:33:27-08:00"
 ---
 
 **GitLab Channel Partner になることに関心のある組織を、[今すぐ申し込み](https://partners.gitlab.com/partner/registration) にご招待します。**

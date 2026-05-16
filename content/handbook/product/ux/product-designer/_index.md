@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-24T13:46:48-04:00"
 ---
 
 プロダクトデザイナーは、[Upstream Studios](/handbook/upstream-studios/) の一部である [Product Design](/handbook/product/ux/product-design/) 内で働きます。私たちは戦略的パートナーとして上流に位置し、プロダクト開発プロセス全体を通じてプロダクトマネジメントとエンジニアリングとのトリオで協力します。

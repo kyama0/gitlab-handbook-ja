@@ -5,6 +5,7 @@ upstream_sha: 6f672d050777a6a6cb33fc5f31ccf71ebdd5b812
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-07-07T23:50:04+00:00"
 ---
 
 AI 駆動の GitLab Duo Chat、Code Suggestions などを使って DevSecOps ワークフローを高速化する方法を学びましょう。

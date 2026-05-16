@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-08T14:13:21-07:00"
 ---
 
 **注:** [エディター拡張機能: マルチプラットフォーム](/handbook/engineering/ai/editor-extensions-multi-platform/) チームと共に、私たちは [DevOps ライフサイクル](/handbook/product/categories/#devops-stages) の [AI-Powered ステージ](/handbook/product/categories/#ai-powered-stage) における [エディター拡張機能グループ](/handbook/product/categories/#editor-extensions-group) に属する製品カテゴリーのあらゆる側面を担当しています。

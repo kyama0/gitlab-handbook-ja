@@ -6,6 +6,7 @@ upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
 translated_at: "2026-04-28T11:23:44Z"
 translator: claude
 stale: false
+lastmod: "2025-12-05T19:47:34+00:00"
 ---
 
 Create:Source Code BE チームは GitLab の Source Code Management（SCM）ツールに焦点を当て、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [Create ステージ](/handbook/product/categories/#create-stage)における [Source Code グループ](/handbook/product/categories/#source-code-group)のプロダクトカテゴリのすべてのバックエンド側面を担当します。プロダクトの方向性については、[カテゴリ方向 - Source Code Management](https://about.gitlab.com/direction/create/source_code_management/) ページをご覧ください。

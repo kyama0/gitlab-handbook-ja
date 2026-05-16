@@ -6,6 +6,7 @@ upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
 translated_at: "2026-05-06T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-12-05T19:47:34+00:00"
 ---
 
 Create:Code Review グループは、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [Create ステージ](/handbook/product/categories/#create-stage)の [Code Review グループ](/handbook/product/categories/#code-review-group)に属するプロダクトカテゴリのすべての側面を担当しています。

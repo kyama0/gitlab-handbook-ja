@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 GitLab では、必要な回答や設計プロセスのどの段階にいるかに応じて、問題検証リサーチと [ソリューション検証](/handbook/product/ux/experience-research/solution-validation-and-methods/) リサーチの両方を実践しています。これらの手法の最終結果は高い信頼度であり、結果としてより優れた全体的なユーザー体験につながります。ソリューションを生み出し、プロダクト体験を開発し、市場に投入する作業は、顧客の問題を深く理解することから始めると、はるかに効果的になります。私たちは [機会キャンバス](/handbook/product/product-processes/#opportunity-canvas) を活用して、問題に関する学びが進化する中で、信頼度、仮説、学んだ教訓の素早いイテレーションを追跡しています。

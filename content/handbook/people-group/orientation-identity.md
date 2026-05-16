@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-09-30T12:30:49-04:00"
 ---
 
 このページのコンテンツは、用語集と FAQ を持つ[他のサイト](#additional-resources)に着想を得ています。多くの LGBTQ+ 用語には完全な統一はなく、コミュニティによって異なる意味やニュアンスを持つ場合があることに留意してください。これは広く受け入れられている定義を持つ用語集です。

@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-29T17:09:57-05:00"
 ---
 
 > FY25-Q1 において、IT は最新世代の YubiKey 5 FIPS キーをエンジニアリング、プロダクト、セキュリティ各部門のすべてのチームメンバーに大規模配布しました。これらの部門は、FY25-Q2 に IT がシステム構成変更管理を完了した後、2FA に YubiKey の使用が必須となります。

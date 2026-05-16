@@ -7,6 +7,7 @@ upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-29T06:46:39Z"
 translator: claude
 stale: false
+lastmod: "2024-11-29T18:52:46+01:00"
 ---
 
 ## Max Woolf の README

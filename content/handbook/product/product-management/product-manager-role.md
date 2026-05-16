@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T09:43:34-05:00"
 ---
 
 このページでは、GitLab でプロダクトマネージャーとして働くための概要と、それに役立つリソースへのリンクを掲載しています。GitLab でプロダクトマネージャーの仕事をどのように評価するかをよりよく理解するには、[プロダクトマネジメントの CDF とコンピテンシー](/handbook/product/product-management/product-cdf-competencies/) をご覧ください。

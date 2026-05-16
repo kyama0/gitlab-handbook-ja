@@ -6,6 +6,7 @@ upstream_sha: 5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8
 translated_at: "2026-05-08T18:13:56Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T22:14:31+00:00"
 ---
 
 オフィスアワーは、AE/CSM/SA がコマーシャルソリューションアーキテクチャチームに学び、質問できる共同作業の場です。

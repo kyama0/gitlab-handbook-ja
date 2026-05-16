@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-07-07T23:50:04+00:00"
 ---
 
 Technical Skills Exchange（旧称 Customer Success Skills Exchange）は、テクニカルなフィールドチームメンバー向けトピックに焦点を当てた隔週ウェビナーです。このシリーズは主に Customer Success と SA 組織を念頭に企画されていますが、フィールドチームメンバーであれば誰でも参加歓迎です。

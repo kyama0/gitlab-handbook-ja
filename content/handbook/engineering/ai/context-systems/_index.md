@@ -6,6 +6,7 @@ upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
 translated_at: "2026-05-06T13:30:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-03T10:10:23+01:00"
 ---
 
 ## チーム概要

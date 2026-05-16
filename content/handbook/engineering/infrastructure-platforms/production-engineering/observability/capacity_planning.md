@@ -5,6 +5,7 @@ upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-29T02:14:34Z"
 translator: claude
 stale: false
+lastmod: "2025-07-02T12:32:50-05:00"
 ---
 
 私たちは [インフラストラクチャハンドブック](/handbook/engineering/infrastructure-platforms/capacity-planning/) に記載されているキャパシティプランニングプロセスを維持・改善しています。これは SOC 2 の対象となる管理された活動です。詳細については [こちらの Issue](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance-commercial-and-dedicated/sec-compliance/observation-management/-/issues/604) を参照してください。

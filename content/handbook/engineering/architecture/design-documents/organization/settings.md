@@ -8,6 +8,7 @@ upstream_sha: 171236827c9a366363160b625ff53ec19c521940
 translated_at: "2026-04-27T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-04-05T09:42:48+13:00"
 ---
 
 2025 年 3 月時点で、このドキュメントは見直し中です。Organization 設定の設計の現在の状態を示しますが、今後数ヶ月で変更される可能性があります。

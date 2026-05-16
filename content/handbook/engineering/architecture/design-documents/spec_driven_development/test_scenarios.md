@@ -12,6 +12,7 @@ upstream_sha: d5f4aa38819ae2b572eb32e0d967394d0361a975
 translated_at: "2026-04-27T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-22T10:27:46-04:00"
 ---
 
 SDD の詳細については [Spec-Driven Development](index.md) をご覧ください。

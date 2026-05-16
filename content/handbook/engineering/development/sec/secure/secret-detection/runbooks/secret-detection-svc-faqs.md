@@ -5,6 +5,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-28T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-10-28T21:03:14+00:00"
 ---
 
 このページには Secret Detection サービスに関する一般的な質問への回答が含まれています。このランブックは、サービスの技術的な側面を理解したいすべての人が使用できます。

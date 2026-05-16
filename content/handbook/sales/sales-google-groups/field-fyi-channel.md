@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T22:14:31+00:00"
 ---
 
 #field-fyi チャネルは、公式のフィールドアナウンスチャネルです。これは、Field と Company Leadership および Field Operations に権限レベルを制限した read-only チャネルです。このチャネルの目的は、ニュースとアナウンスを #sales (そこでは簡単に埋もれてしまう可能性がある) から引き出し、効率化されたチャネルに統合することです。誰でもこのチャネルの投稿に反応してコメントすることができ、フィールドチームメンバーは最新の情報を得るためにこのチャネルにスターをつけることが推奨されます。一般的なフィールドチャネルについては、#sales と #customer-success をご覧ください。

@@ -6,6 +6,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-28T02:21:43Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T19:48:12+00:00"
 ---
 
 ## IC からマネージャーへの移行トレーニングビデオ

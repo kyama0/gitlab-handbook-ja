@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T01:01:39Z"
 translator: claude
 stale: false
+lastmod: "2024-08-09T19:17:59+00:00"
 ---
 
 顧客優先付けフレームワークは現在MVCであり、初期パイロットフェーズにあります。進行中の作業は[WG:Prioritization Framework Issueボード](https://gitlab.com/groups/gitlab-com/-/boards/2086332?label_name[]=wg%3Aprioritization%20framework)で確認できます。質問や協力については、DRI `@gweaver` に連絡するか、[継続中の隔週同期](https://docs.google.com/document/d/1oBWNxBSOJKrh3ubHwN5pI8243vBjJ-Y_Cax17A5abII/)に参加してください。

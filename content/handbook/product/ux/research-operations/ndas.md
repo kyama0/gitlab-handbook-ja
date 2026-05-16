@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-08T12:10:25+01:00"
 ---
 
 [GitLab Code of Business Conduct and Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx) に記載されているとおり、リサーチ内で機密情報を共有する場合、参加者に秘密保持契約（NDA）への署名をお願いすることがあります。これはまだ一般公開されていない機能をテストする際に最もよくあります。ただしほとんどの場合、NDA は必要ありません。

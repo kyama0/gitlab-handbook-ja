@@ -6,6 +6,7 @@ upstream_sha: 33ef35e4327874fd4153c5606125f5de47ff7924
 translated_at: "2026-04-27T05:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-09-24T20:13:28+00:00"
 ---
 
 ## コンテキスト

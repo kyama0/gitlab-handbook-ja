@@ -10,6 +10,7 @@ upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-12-03T14:52:15-08:00"
 ---
 
 ![GitLab collaboration](/images/all-remote/gitlab-collaboration.jpg)

@@ -5,6 +5,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-28T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-01-04T01:51:25+00:00"
 ---
 
 このページでは、[Secure ステージ](/handbook/product/categories/#sec-section)が開発・管理するプロダクトのさまざまなメトリクスを示します。

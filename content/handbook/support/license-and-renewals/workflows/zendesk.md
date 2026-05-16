@@ -7,6 +7,7 @@ upstream_sha: 9da08370100b76603b2eb82901592f9d21c9766c
 translated_at: "2026-05-08T11:18:50Z"
 translator: claude
 stale: false
+lastmod: "2025-04-01T09:22:28+00:00"
 ---
 
 このページでは、Zendesk の `L&R` フォームを使用する人を対象としたワークフローを説明します。

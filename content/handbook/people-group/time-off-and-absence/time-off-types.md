@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T18:43:26Z"
 translator: claude
 stale: false
+lastmod: "2026-04-16T13:38:02-05:00"
 ---
 
 ご自身の場所に特化した情報については、[このページ](/handbook/total-rewards/benefits/general-and-entity-benefits/) を確認してください。

@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T01:01:39Z"
 translator: claude
 stale: false
+lastmod: "2026-03-03T23:43:54+00:00"
 ---
 
 CSM関連のハンドブックページについては、[CSMハンドブックホームページ](/handbook/customer-success/csm/)を参照してください。

@@ -6,6 +6,7 @@ upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-14T17:59:32+00:00"
 ---
 
 GitLab は、Channel および Alliance パートナー向けの主要な Partner Relationship Management（PRM）プラットフォーム、パートナーポータル、マーケティングセンターとして Impartner を使用しています。

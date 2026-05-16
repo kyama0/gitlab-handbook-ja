@@ -9,6 +9,7 @@ upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-02-04T16:44:03+00:00"
 ---
 
 ## フィールドノート

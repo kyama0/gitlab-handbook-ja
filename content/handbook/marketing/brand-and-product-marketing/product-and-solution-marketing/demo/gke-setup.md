@@ -6,6 +6,7 @@ upstream_sha: c26b483f365d397f86ef45e60a892d0783588ac1
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-04-01T09:22:28+00:00"
 ---
 
 ## 動画

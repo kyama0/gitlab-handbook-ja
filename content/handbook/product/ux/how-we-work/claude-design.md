@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-07T14:05:54-05:00"
 ---
 
 このページは、GitLab の UX 業務における **Claude Design の活用ベストプラクティスとガイドライン**について説明します。

@@ -11,6 +11,7 @@ upstream_sha: c5d40e13183c5a0aeeafefbee88ab3fac48ced5a
 translated_at: "2026-05-08T17:40:50Z"
 translator: claude
 stale: false
+lastmod: "2025-12-01T16:21:31-05:00"
 ---
 
 組織には、人々とチーム、そしてその創造性、視点、人間性が必要です。AI が自動化可能なルールベースのナレッジワークを置き換えていく中で、より大きな課題を解決する未来へと向かうにつれて、その必要性はますます高まっていくでしょう。

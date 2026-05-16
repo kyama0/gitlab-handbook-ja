@@ -15,6 +15,7 @@ upstream_sha: 0ee1352c26e468fa8032143d735391a793de7086
 translated_at: "2026-04-27T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-11-19T13:56:02-06:00"
 ---
 
 <!-- vale gitlab.FutureTense = NO -->

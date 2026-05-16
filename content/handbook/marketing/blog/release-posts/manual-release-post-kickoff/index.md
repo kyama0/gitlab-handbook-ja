@@ -6,6 +6,7 @@ upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
 translated_at: "2026-04-30T07:00:13Z"
 translator: claude
 stale: false
+lastmod: "2026-03-24T10:31:17+11:00"
 ---
 
 ## リリース投稿ブランチと必要なディレクトリ / ファイルを手動で作成する

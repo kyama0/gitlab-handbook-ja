@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 このページでは、定量データの定義、UX リサーチで定量データを使用する主なメリットとデメリット、ベストプラクティスを説明し、定量分析の例を示します。

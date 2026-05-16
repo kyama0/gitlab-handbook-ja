@@ -5,6 +5,7 @@ upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-18T15:39:47+00:00"
 ---
 
 ポリシーの内容やホームオフィス費用の申請方法（Navan で使用するカテゴリを含む）については、[グローバル出張・経費ハンドブックページの「機器」セクション](https://internal.gitlab.com/handbook/finance/expenses/#equipment)を参照してください。

@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-08-14T01:37:01+00:00"
 ---
 
 GitLab はオーガニックに成長してきた中で、いくつかの部門・職能グループは、自分たち固有のテックスタックアプリケーションの日常的な管理を担う独自のシステム管理者（「Tech Stack App/System Owners」）を持っています。これは、組織全体のコンプライアンス、インフラ、セキュリティのベストプラクティスという枠組みの中で運用されています。GitLab における各[テックスタックアプリケーション](/handbook/business-technology/tech-stack-applications/)には、その実装と、（部門または職能グループ内で）アプリケーションを利用するチームメンバーへの日常的な運用サポートを担う DRI としてのシステムオーナーが存在します。これは、従来型の IT 部門がボトルネックになるのを防ぎ、GitLab の[適切なグループにとっての効率性](/handbook/values/#efficiency-for-the-right-group)というサブバリューの一環として、各部門がセルフサービスを行えるようにするという副次的なメリットもあります。

@@ -7,6 +7,7 @@ upstream_sha: 86cfa2bd7d73df5a673fe5ebd33b028d0f540434
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-10-22T17:49:23+00:00"
 ---
 
 Tanukey のデータベース設計における主要な問題のひとつは、2 つの異なるサービス間でデータの同期が必要となり、共通のトランザクションが使用できないことです。OpenBao を使用した外部ストレージ操作は不可能であるため、次善の設計として OpenBao を唯一の信頼できる情報源（single source of truth）として使用し、必要な拡張機能を特定することにしました。

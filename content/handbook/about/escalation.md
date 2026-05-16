@@ -5,6 +5,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T04:59:08Z"
 translator: claude
 stale: false
+lastmod: "2025-12-15T11:32:24-06:00"
 ---
 
 チームメンバーの役割と責任については、[コンテンツウェブサイトのページ](maintenance.md)をご覧ください。

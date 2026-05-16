@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T14:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-30T18:06:17-05:00"
 ---
 
 Security 部門 Shadow プログラムは、Individual Contributor（IC）チームメンバーに、選択したセキュリティ部門をシャドウする機会を提供します。このプログラムは、セキュリティのさまざまな機能領域での実践的な経験を提供し、チーム間のコラボレーションを促進し、セキュリティ部門についてのより深い理解を発展させるように設計されています。

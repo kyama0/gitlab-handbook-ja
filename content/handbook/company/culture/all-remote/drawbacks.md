@@ -10,6 +10,7 @@ upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T00:00:00Z"
 translator: "claude"
 stale: false
+lastmod: "2025-12-01T16:21:31-05:00"
 ---
 
 [多くのメリット](remote-benefits/)があるにもかかわらず、オール・リモートワークは誰にでも向いているわけではありません。ライフスタイルや仕事の好みによって、潜在的な従業員や組織に不利な点があることがあります。[透明性](/handbook/values/#transparency)の精神に則り、これらの課題に対する反論と解決策も強調します。

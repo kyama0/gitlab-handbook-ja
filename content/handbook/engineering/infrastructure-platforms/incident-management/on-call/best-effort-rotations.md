@@ -5,6 +5,7 @@ upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-07T17:41:36+00:00"
 ---
 
 一部のシステムでは、オンコールシステムではなく、ベストエフォートローテーションを使用しています。例えば、Release Manager のローテーションは、一度に 1 週間、2 名のエンジニアのペアが担当するベストエフォート方式です。

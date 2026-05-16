@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-04T17:48:08-05:00"
 ---
 
 ## 私が GitLab にいる理由

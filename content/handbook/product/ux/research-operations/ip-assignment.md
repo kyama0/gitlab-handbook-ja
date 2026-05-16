@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 知的財産（IP）Assignment は、UX リサーチ活動に参加する人が、自身の提供するフィードバック・提案・アイデアに関する IP 権が (i) GitLab に帰属する、また (ii) まだ GitLab に帰属していない部分については GitLab に譲渡されることを確認する、短い同意文です。

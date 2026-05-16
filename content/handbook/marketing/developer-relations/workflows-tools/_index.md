@@ -5,6 +5,7 @@ upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
 translated_at: "2026-05-05T12:56:31Z"
 translator: claude
 stale: false
+lastmod: "2026-05-01T10:44:51-04:00"
 ---
 
 ## ワークフロー

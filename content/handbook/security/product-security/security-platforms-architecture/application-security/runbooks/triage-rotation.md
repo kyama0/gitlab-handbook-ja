@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-14T10:54:24+02:00"
 ---
 
 Application Security チームのメンバーは、Application Security チームへの受信リクエストの責任者 (DRI) としてアルファベット順に割り当てられます。通常は週次または隔週の期間です。

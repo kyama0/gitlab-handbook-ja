@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-04T15:31:56+03:00"
 ---
 
 Software Supply Chain Security (SSCS) Tier 2 オンコールプログラムのローテーションリーダー役へようこそ。このローテーションの初期のローテーションリーダーは @adil.farrukh、@jpr0c、@mmishaev です。ローテーションリーダーとして、あなたはチームのオンコールローテーションの健全性、公平性、効果性に責任を持ちます。このガイドはコアの責任とその実行方法を概説しています。

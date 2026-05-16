@@ -5,6 +5,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-28T02:21:43Z"
 translator: claude
 stale: false
+lastmod: "2026-03-02T07:33:04-05:00"
 ---
 
 CTO リーダーシップチームは、CTO の直属レポートと CTO オフィス（OCTO）で構成されています。エンジニアリングリーダーシップチーム（ELT）には、組織の重点領域を担当するリードが含まれています: AI・カスタマーサポート・データエンジニアリング・DevOps・プラットフォーム＆インフラ・R&D PMO・Sec です。

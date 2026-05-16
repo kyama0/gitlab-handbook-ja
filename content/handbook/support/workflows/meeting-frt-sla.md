@@ -6,6 +6,7 @@ upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-08-07T22:35:27+00:00"
 ---
 
 このページの以前の内容は、Support ハンドブック内の以下のような他のページに

@@ -6,6 +6,7 @@ upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
 translated_at: "2026-04-30T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-20T16:41:12-07:00"
 ---
 
 <!-- Please treat Bizible terms as proper nouns and capitalize them. Touchpoint instead of touchpoint. -->

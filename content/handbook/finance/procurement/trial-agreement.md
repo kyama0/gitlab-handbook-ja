@@ -5,6 +5,7 @@ upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-01-09T01:20:19+00:00"
 ---
 
 トライアル/デモ契約、エンゲージメントレターなど、コストに関係しないベンダーからの書類がある場合は、ZIP の[リクエスト](https://gitlab.ziphq.com/create-workflow-request)を開いて「デモ/トライアルのリクエスト（$0 契約）」ワークフローを選択し、フォームの入力を進めてください。

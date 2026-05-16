@@ -5,6 +5,7 @@ upstream_sha: 9bcc3fa641f3c78cb94b2ff71f5a8170ff5b412b
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-11-26T00:36:40+00:00"
 ---
 
 GitLab は、エンタープライズが GitLab を使用することによって実現できる潜在的な投資収益率 (ROI) を調査する Total Economic Impact™ (TEI) スタディを実施するために、Forrester Consulting に委託しました。

@@ -6,6 +6,7 @@ upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T15:43:48Z"
 translator: "claude"
 stale: false
+lastmod: "2026-03-04T12:15:15-08:00"
 ---
 
 E-Group オフサイトは四半期ごとに開催されます。通常、[取締役会の会議](/handbook/board-meetings/#board-meeting-schedule)の後、4日間にわたって行われます。

@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T03:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-08-16T13:10:36+00:00"
 ---
 
 SOW、または特定のマイルストーンが正常に完了・納品された後、顧客はプロジェクトサインオフ書類に署名する必要があります。これは Project Manager から送付してください。プロジェクトサインオフ書類を送付するには、次の手順に従います。

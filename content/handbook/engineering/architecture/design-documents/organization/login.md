@@ -12,6 +12,7 @@ upstream_sha: 171236827c9a366363160b625ff53ec19c521940
 translated_at: "2026-04-27T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-08-11T22:27:14+12:00"
 ---
 
 この設計では、Organization 固有のログインページをサポートする多段階アプローチを導入するために、

@@ -11,6 +11,7 @@ upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
 translated_at: "2026-04-26T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-10-21T11:48:05+00:00"
 ---
 
 GitLab CI の CI ビルドスピードのパフォーマンスを把握するため、CI ビルドスピードベンチマークフレームワークを構築する予定です。

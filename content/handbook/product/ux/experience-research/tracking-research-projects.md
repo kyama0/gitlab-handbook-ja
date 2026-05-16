@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 [UX リサーチ優先順位付け](/handbook/product/ux/experience-research/research-prioritization/)プロセスの一環として、各 UX リサーチプロジェクト Issue には以下のいずれかのラベルが付けられます:

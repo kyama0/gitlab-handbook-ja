@@ -6,6 +6,7 @@ upstream_sha: "3480299851f7e2243d4f08b75dac452f89929636"
 translated_at: "2026-04-27T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T22:14:31+00:00"
 ---
 
 ## Quality 部門コンピテンシー: Associate

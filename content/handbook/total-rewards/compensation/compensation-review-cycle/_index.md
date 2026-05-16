@@ -6,6 +6,7 @@ upstream_sha: d0d8657a733d2233820b2b00aaad27ebf5de9755
 translated_at: "2026-05-07T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-13T14:17:22-07:00"
 ---
 
 <span style="color:red">_**以下の情報は、年次報酬レビュー（Annual Compensation Review、ACR）に関する一般的な情報です。最新情報については Loop をご参照ください。**_</span>

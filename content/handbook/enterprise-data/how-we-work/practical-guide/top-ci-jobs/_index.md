@@ -6,6 +6,7 @@ upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-07-22T13:11:34-04:00"
 ---
 
 ## CI ジョブとは何か（そしてなぜ重要なのか）？

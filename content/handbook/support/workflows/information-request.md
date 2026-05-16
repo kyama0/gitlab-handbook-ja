@@ -8,6 +8,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-08T13:51:34+00:00"
 ---
 
 Legal チームからの判断が必要と思われるリクエストが届くことがあります。このワークフローでは、所定のワークフローに当てはまらないようなリクエストの取り扱い方法を説明します。

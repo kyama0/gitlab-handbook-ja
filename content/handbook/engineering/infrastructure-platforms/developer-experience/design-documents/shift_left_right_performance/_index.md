@@ -13,6 +13,7 @@ upstream_sha: 6a459a3ca969603754a3b5133342edb804d3012c
 translated_at: "2026-04-28T17:23:43Z"
 translator: claude
 stale: false
+lastmod: "2025-06-06T16:21:57-07:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->

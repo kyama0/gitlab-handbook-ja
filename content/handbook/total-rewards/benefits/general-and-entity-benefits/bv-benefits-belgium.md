@@ -6,6 +6,7 @@ upstream_sha: 9bd896709582cfb6bccdb0d721755db917231bc6
 translated_at: "2026-05-07T13:21:11Z"
 translator: claude
 stale: false
+lastmod: "2026-04-21T09:32:03+01:00"
 ---
 
 ## あなたをしっかりカバーします

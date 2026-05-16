@@ -8,6 +8,7 @@ upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-21T12:28:59-06:00"
 ---
 
 [サポート満足度](/handbook/support/performance-indicators/#support-satisfaction-ssat) に貢献する要因を理解するため、サポートチケットに対して受領したフィードバックをレビューします。受領したすべてのサポート満足度フィードバックに対して、Issue が [フィードバック Issue トラッカー](https://gitlab.com/gitlab-com/support/feedback/-/issues)（社内のみ）に自動的に作成され、チケットに割り当てた人物のマネージャーに割り当てられます。

@@ -6,6 +6,7 @@ upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
 translated_at: "2026-04-29T05:26:36Z"
 translator: claude
 stale: false
+lastmod: "2025-11-25T13:09:27+00:00"
 ---
 
 [ステージング環境](../infrastructure-platforms/environments/#staging)は[本番環境と同じサービスレベルモニタリングルール](../)を採用しています:

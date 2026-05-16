@@ -5,6 +5,7 @@ upstream_sha: c26b483f365d397f86ef45e60a892d0783588ac1
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-11-14T23:18:47+00:00"
 ---
 
 ## クリックスルーデモをオフラインで実行する

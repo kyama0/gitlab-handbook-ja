@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-17T10:12:37-07:00"
 ---
 
 GitLab Research Library は、チームメンバーが GitLab のプロダクト領域全体で UX リサーチのインサイトを発見し、整理し、活用するのを支援するインテリジェントなリサーチリポジトリです。

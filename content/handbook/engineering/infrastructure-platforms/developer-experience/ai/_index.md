@@ -6,6 +6,7 @@ upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
 translated_at: "2026-04-28T16:51:32Z"
 translator: claude
 stale: false
+lastmod: "2026-03-16T10:18:38+00:00"
 ---
 
 Developer Experience チームは、自分たちの作業を加速させ、開発者の視点から GitLab の AI 機能を検証し、効果的な AI 支援エンジニアリングワークフローに関する組織的な知識を構築するために、AI を積極的に活用しています。このページでは、私たちのツール、ガイドライン、プラクティスを記載しています。

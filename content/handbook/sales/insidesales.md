@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-27T11:50:06+01:00"
 ---
 
 エンタープライズインサイドセールスチームへの連絡は [Slack チャンネル](https://gitlab.slack.com/archives/C01P39947ND) （社内のみ）から可能です。

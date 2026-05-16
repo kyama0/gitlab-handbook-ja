@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-02T07:33:04-05:00"
 ---
 
 [エンタープライズグレードのプラットフォームとしてGitLab SaaSを強化する](https://about.gitlab.com/direction/core_platform/dotcom/)という[3年戦略](https://about.gitlab.com/direction/#3-year-strategy)の一環として、GitLab.comには特定の[可用性](/handbook/engineering/infrastructure/performance-indicators/#gitlabcom-availability)と[パフォーマンス](/handbook/engineering/infrastructure/performance-indicators/#gitlabcom-performance)の目標があります。

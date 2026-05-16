@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-06T19:27:57-05:00"
 ---
 
 このランブックでは、Application Security チームのメンバーが、祝日、Friends and Family Day、その他多くのチームメンバーがオフィス外にいることが想定されるイベント中に対応可能な場合のプロセスについて説明します。

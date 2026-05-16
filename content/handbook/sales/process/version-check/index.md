@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-01-23T11:43:11+00:00"
 ---
 
 [Version check に関するブログ記事](https://about.gitlab.com/blog/2015/05/07/version-check/)

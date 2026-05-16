@@ -5,6 +5,7 @@ upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
 translated_at: "2026-04-29T18:40:41Z"
 translator: claude
 stale: false
+lastmod: "2026-03-24T13:12:58-07:00"
 ---
 
 GitLab における FinBT メンターシップ

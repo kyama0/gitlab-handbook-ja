@@ -43,6 +43,7 @@ model: inherit
 - 追跡用フィールドを **常に** 付与（既存があれば値を更新）:
   - `upstream_path`: handbook.gitlab.com 上の URL（例: `/handbook/company/mission/`）。ファイルパスではない。`_index.md` は末尾スラッシュ、通常ファイルは `.md` を取って末尾スラッシュ付きの URL に変換。
   - `upstream_sha`: 翻訳の根拠とした upstream コミット SHA。`git -C upstream rev-parse HEAD` で取得。
+  - `lastmod`: その `upstream_sha` 時点で原文を最後に変更した upstream コミットの ISO 8601 タイムスタンプ。`git -C upstream log -1 --format=%cI <upstream_sha> -- <upstream-relative path>` で取得。docsy のページメタ（最終更新日）はフロントマターの `lastmod` を優先するので、翻訳コミット日ではなく原文の更新日が表示される。同じ値を manifest の `upstream_committed_at` にも入れる（下記）。
   - `translated_at`: ISO 8601 の現在時刻。**必ずダブルクォートで囲むこと**（例: `translated_at: "2026-04-25T12:00:00Z"`）。
   - `translator`: `claude`（人手レビューが入った場合は `claude+human`）。
   - `stale`: `false`。
@@ -60,7 +61,7 @@ model: inherit
 
 1. `translation-state/manifest.json` の対応するエントリを更新（または新規追加）:
    - キー: 原文の相対パス（例: `content/handbook/company/mission.md`）
-   - 値: `{ path, upstream_sha, translated_at, model, input_hash }`。`model` は実行時に使用した Claude モデル名（`model: inherit` で起動した場合は親エージェントから継承された実モデル名）を記録する。`input_hash` は原文ファイルの SHA-256（`sha256sum upstream/content/handbook/...md` の結果）。
+   - 値: `{ path, upstream_sha, upstream_committed_at, translated_at, model, input_hash }`。`model` は実行時に使用した Claude モデル名（`model: inherit` で起動した場合は親エージェントから継承された実モデル名）を記録する。`input_hash` は原文ファイルの SHA-256（`sha256sum upstream/content/handbook/...md` の結果）。`upstream_committed_at` はフロントマターの `lastmod` と同じ値（`git -C upstream log -1 --format=%cI <upstream_sha> -- <key>` で取得）。
 2. ローカル動作確認: `hugo --renderToMemory --quiet` を走らせて該当ページにエラーが出ないことを確認する（任意。エラーが出たらショートコード／HTML の取り扱いを見直す）。
 3. レビュー前提なら `translation-reviewer` サブエージェントに渡して観点 (1) 正確性 (2) 自然さ をチェックさせる。
 

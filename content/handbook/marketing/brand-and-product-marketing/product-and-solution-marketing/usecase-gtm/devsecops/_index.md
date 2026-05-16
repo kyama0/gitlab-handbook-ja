@@ -6,6 +6,7 @@ upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
 translated_at: "2026-04-30T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-01-07T16:47:36-08:00"
 ---
 
 **GitLab の DevSecOps 機能の顧客向け概要をお探しですか？ [DevSecOps Solution](https://about.gitlab.com/solutions/security-compliance/) をご覧ください**

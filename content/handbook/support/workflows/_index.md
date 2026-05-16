@@ -6,6 +6,7 @@ upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
 translated_at: "2026-05-08T19:23:50Z"
 translator: claude
 stale: false
+lastmod: "2025-09-18T14:48:19-07:00"
 ---
 
 *なお、`Licensing & Renewals` のすべてのワークフローは

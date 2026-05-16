@@ -8,6 +8,7 @@ upstream_sha: "856dbb5acbecaff51b3ea0c961ad3adb3d37a953"
 translated_at: "2026-04-27T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-06-27T18:21:31+02:00"
 ---
 
 ## データベース構造の提案

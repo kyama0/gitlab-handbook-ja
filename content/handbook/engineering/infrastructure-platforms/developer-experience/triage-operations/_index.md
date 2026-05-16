@@ -6,6 +6,7 @@ upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
 translated_at: "2026-04-28T21:28:32Z"
 translator: claude
 stale: false
+lastmod: "2026-03-06T09:57:12-06:00"
 ---
 
 GitLab のすべてのチームメンバーは Issue をトリアージできます。[トリアージされていない Issue](/handbook/product-development/how-we-work/issue-triage/#triaging-issues) の数を少なく保つことはメンテナビリティにとって不可欠であり、私たちの共同責任です。

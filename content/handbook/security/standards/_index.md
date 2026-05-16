@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T03:09:44Z"
 translator: claude
 stale: false
+lastmod: "2025-10-03T14:17:43-06:00"
 ---
 
 このページは [包括的なセキュリティおよびポリシー基準のToCページ](/handbook/security/policies_and_standards/) に置き換えられました。

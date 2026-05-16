@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-21T18:59:52+00:00"
 ---
 
 フィードバックを与えること、そして受け取ることは、強い関係と高パフォーマンスのチームを構築する重要な部分です。フィードバックは以下の方法で GitLab のバリューと整合します:

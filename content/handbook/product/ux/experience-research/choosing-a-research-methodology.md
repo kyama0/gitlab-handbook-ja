@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 リサーチ質問に対して適切な手法（[問題検証](/handbook/product/ux/experience-research/problem-validation-and-methods/) と [解決策検証](/handbook/product/ux/experience-research/solution-validation-and-methods/) の手法に関するハンドブックページを参照）を選ぶときには、考慮すべき要因が複数あります。

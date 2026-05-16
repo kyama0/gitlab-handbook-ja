@@ -5,6 +5,7 @@ upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-11-25T13:09:27+00:00"
 ---
 
 GitLab は、あらかじめ定められた期間、特定のタスクに取り組むために外部コンサルタントの専門知識を活用することがあります。業務の性質や担当するタスクによっては、上記の外部コンサルタントが Slack、顧客データ、および[インフラ環境](/handbook/engineering/infrastructure-platforms/environments/)などを含む GitLab の特定のシステムや情報へのアクセスを必要とする場合があります。

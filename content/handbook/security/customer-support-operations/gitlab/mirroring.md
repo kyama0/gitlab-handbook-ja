@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T20:47:52+00:00"
 ---
 
 このガイドでは、Customer Support Operations のプロジェクトに対する GitLab リポジトリミラーリングのセットアップ方法を説明します。ミラーリングはソースリポジトリからターゲットリポジトリへ変更を自動的に同期し、自動バックアップやマルチリポジトリのワークフローを実現します。

@@ -12,6 +12,7 @@ upstream_sha: d5f4aa38819ae2b572eb32e0d967394d0361a975
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-11-19T13:56:02-06:00"
 ---
 
 ## ビジネス目標

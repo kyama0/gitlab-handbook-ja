@@ -8,6 +8,7 @@ upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
 translated_at: "2026-04-26T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-03T10:32:11+05:30"
 ---
 
 このドキュメントでは、Cells が使用するルーティング可能なトークン（Routable Tokens）の設計目標とアーキテクチャを説明します。このドキュメントは特に [Phase 4](https://gitlab.com/groups/gitlab-org/-/epics/14510) の目標に焦点を当てています。

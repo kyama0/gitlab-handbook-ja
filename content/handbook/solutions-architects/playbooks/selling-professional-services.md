@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-08T14:07:20+02:00"
 ---
 
 これは、ソリューションアーキテクト (SA) が販売サイクル中に顧客に対してプロフェッショナルサービスをポジショニングし、必要に応じてカスタムスコーピングのために Professional Services Engagement Management チームに渡す適切な情報を収集するための実務ガイドです。プロフェッショナルサービスを販売する全体的なワークフローは、[Professional Services ハンドブック - Selling Professional Services ページ](/handbook/customer-success/professional-services-engineering/selling/)で定義されています。

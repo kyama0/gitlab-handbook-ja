@@ -5,6 +5,7 @@ upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T19:48:12+00:00"
 ---
 
 計画外のアップグレード停止は、ロールバックと追加のメンテナンス作業を必要とするため、お客様にとって大きな支障をきたします。計画外の停止はインシデントとして扱うべきです。以下のプロセスは、インシデント解決プロセスのさまざまな段階と、対応するチームおよびDRI（Directly Responsible Individuals）が取るべき手順を概説しています。

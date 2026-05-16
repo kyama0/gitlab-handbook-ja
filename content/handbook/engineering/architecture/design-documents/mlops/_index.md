@@ -13,6 +13,7 @@ upstream_sha: 5fcdd102793f56146077c82f37a89171dea6d0ba
 translated_at: "2026-04-27T13:25:33Z"
 translator: claude
 stale: false
+lastmod: "2025-11-03T17:49:46+01:00"
 ---
 
 

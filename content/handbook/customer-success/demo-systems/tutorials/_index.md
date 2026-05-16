@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T02:17:48Z"
 translator: claude
 stale: false
+lastmod: "2024-08-08T22:55:54+00:00"
 ---
 
 問題が発生した場合は、Slack の `#demo-systems` チャンネルにサポートを依頼してください。

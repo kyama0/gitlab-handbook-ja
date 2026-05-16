@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-04T15:31:56+03:00"
 ---
 
 Software Supply Chain Security サブ部門のチームは、製品の [Software Supply Chain Security ステージ](https://about.gitlab.com/direction/software_supply_chain_security/) のエンジニアリングチームです。

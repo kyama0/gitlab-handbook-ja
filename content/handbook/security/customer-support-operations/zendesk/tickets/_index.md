@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-17T10:57:10-05:00"
 ---
 
 このガイドでは、チケットステータス、システム設定、サポートオペレーションの一般的なワークフローを含む、Zendesk のチケット管理について説明します。

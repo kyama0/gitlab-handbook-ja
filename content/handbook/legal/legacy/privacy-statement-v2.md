@@ -6,6 +6,7 @@ upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-01T11:50:47-04:00"
 ---
 <!-- vale off -->
 ## 旧バージョン: プライバシーステートメント（有効期間 2024年3月19日 - 2026年4月22日）

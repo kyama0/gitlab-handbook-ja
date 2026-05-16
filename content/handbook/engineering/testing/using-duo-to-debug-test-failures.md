@@ -6,6 +6,7 @@ upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-29T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-02T14:35:03+10:00"
 ---
 
 GitLab Duo は、2つの主要なシナリオでテスト失敗を素早く診断・解決するのに役立ちます:

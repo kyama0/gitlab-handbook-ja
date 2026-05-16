@@ -7,6 +7,7 @@ upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
 translated_at: "2026-05-08T20:14:55Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T22:14:31+00:00"
 ---
 
 ## コミュニティフォーラムでのテクニカルサポート

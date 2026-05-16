@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-30T16:57:54+00:00"
 ---
 
 <!-- This template will help you build out your very own GitLab README, a great tool for transparently letting others know what it's like to work with you, and how you prefer to be communicated with. Each section is optional. You can remove those you aren't comfortable filling out, and add sections that are germane to you. -->

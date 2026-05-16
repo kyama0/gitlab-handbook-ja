@@ -5,6 +5,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-28T07:31:38Z"
 translator: claude
 stale: false
+lastmod: "2024-11-12T16:39:00+00:00"
 ---
 
 ## レトロスペクティブ

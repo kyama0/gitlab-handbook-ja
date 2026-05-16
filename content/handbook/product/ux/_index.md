@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-10T14:13:57-05:00"
 ---
 
 **GitLab における UX は、Product Design、UX Research、Technical Writing、Design System の 4 つの専門領域を包含しています。** これら 4 つの領域が緊密に協働し、GitLab プロダクト体験を形作っています。Brand と並んで、私たちは GitLab のフルスタック体験組織である [Upstream Studios](/handbook/upstream-studios/) を構成しています。

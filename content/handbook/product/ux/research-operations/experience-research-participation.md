@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-17T16:39:46+00:00"
 ---
 
 ようこそ！ このページは、GitLab の Experience Research チームによるリサーチへの参加を招待された方や、参加に興味をお持ちの方のためのページです。

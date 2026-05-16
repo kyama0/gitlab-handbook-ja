@@ -6,6 +6,7 @@ upstream_sha: cf317047d2c9678524c0db59ab7ed8c050713245
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-18T11:19:27-07:00"
 ---
 
 GitLab サポートは、さまざまな機能と専門性を持つ複数の AI ツールへのアクセスを提供しています。このガイドは、特定のタスク要件に基づいて適切なツールを選択するのに役立ちます。

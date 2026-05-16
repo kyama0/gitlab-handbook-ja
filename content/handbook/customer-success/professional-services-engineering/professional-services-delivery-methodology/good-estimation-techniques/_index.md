@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T03:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-01-24T20:06:34+00:00"
 ---
 
 見積もり手法とアプローチは、Waterfall や V-Model のような従来のプロセスフレームワークと Agile を分かつ重要な領域の 1 つです。

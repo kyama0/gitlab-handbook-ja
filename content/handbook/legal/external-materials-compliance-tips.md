@@ -6,6 +6,7 @@ upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
 translated_at: "2026-04-29T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-17T17:59:54+00:00"
 ---
 
 外部使用のための資料を作成する際は、[SAFE フレームワーク](/handbook/legal/safe-framework/)および[外部資料におけるサードパーティ IP の使用に関するガイドライン](/handbook/legal/ip-public-materials-guidelines/)（「**IP ガイドライン**」）に従ってください。ご質問がある場合は、[#safe Slack チャンネル](https://app.slack.com/client/T02592416/C01UZQ63WFQ)を通じて法務・企業部門チームにお問い合わせください。

@@ -5,6 +5,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-28T05:48:28Z"
 translator: claude
 stale: false
+lastmod: "2026-02-02T14:36:15+10:00"
 ---
 
 オブザーバビリティメトリクスは、CI ベースのセキュリティアナライザーが本番環境でどのように動作するかを把握するのに役立ちます。

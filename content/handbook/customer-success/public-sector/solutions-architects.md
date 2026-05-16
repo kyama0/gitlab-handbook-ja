@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T03:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-06-05T10:47:42-04:00"
 ---
 
 [公共部門](/handbook/sales/public-sector/) を担当する Solutions Architect（SA）は、米国内の公共部門の顧客に対して、販売プロセス全体を通じて専門領域の知見と業界経験を提供します。

@@ -5,6 +5,7 @@ upstream_sha: 5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8
 translated_at: "2026-05-08T18:13:56Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T22:14:31+00:00"
 ---
 
 「練習は完璧をもたらす」と言われます。スキルを磨くために練習が重要であることは確かですが、実際にどのように練習するかが重要なのです。[計画的練習（Deliberate Practice）](https://jamesclear.com/beginners-guide-deliberate-practice)は、粘り強く、強度の高い、特定の練習方法です。計画的に練習する人は、通常の快適圏を超えてストレッチし、パフォーマンス向上という具体的な目標を持って、ルーチンやデモの特定の部分に焦点を当てて取り組みます。

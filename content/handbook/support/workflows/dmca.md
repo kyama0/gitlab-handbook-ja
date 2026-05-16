@@ -8,6 +8,7 @@ upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
 translated_at: "2026-05-08T21:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-01-06T16:14:44+00:00"
 ---
 [Digital Millennium Copyright Act (DMCA)](https://www.copyright.gov/dmca/) は 1998 年の米国連邦法で、著作権者がオンライン上での無許可の使用および配布から自分のデジタル作品を保護するための法的メカニズムを提供します。
 

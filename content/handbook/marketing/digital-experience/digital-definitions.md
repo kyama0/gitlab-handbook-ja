@@ -6,6 +6,7 @@ upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
 translated_at: "2026-05-01T10:36:34Z"
 translator: claude
 stale: false
+lastmod: "2024-05-30T08:11:40+00:00"
 ---
 
 このページの目的は、技術用語の定義と関連技術の説明を提示することです。想定される読者は、開発ツール・手法に詳しくない方や、[about.gitlab.com](https://about.gitlab.com/) のような項目に取り組む際の私たち独自の要件に詳しくない方です。

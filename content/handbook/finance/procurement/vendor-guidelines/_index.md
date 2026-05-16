@@ -5,6 +5,7 @@ upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-08-08T15:28:46-04:00"
 ---
 
 GitLab は商品・サービスを調達する際に、ベンダーと契約を締結します。この契約は、(i) 当事者の権利と義務を定める交渉済み契約、または (ii) GitLab 標準ベンダー利用規約の参照のいずれかの形をとります。

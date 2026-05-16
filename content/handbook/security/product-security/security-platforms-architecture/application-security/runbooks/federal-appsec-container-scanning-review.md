@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-06T19:27:57-05:00"
 ---
 
 特定の顧客は、GitLab が提供するコンテナを既知の脆弱性やその他のセキュリティ上の懸念についてスキャンします。GitLab Federal Application Security チームは、これらの結果をレビューする責任があります。多くの場合、これらの検出事項は脆弱性に対処するために更新する必要がある依存関係に関連しています。

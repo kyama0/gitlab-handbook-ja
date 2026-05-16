@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-09-19T20:36:02+00:00"
 ---
 
 GitLab は[サービス Ping](https://docs.gitlab.com/ee/development/internal_analytics/service_ping/#service-ping-guide) を通じてセルフマネージドの顧客から製品利用指標を収集します。GitLab の各ユースケースについて、サービス Ping でレポートされる使用指標が少なくとも 1 つあります。これらの指標は Gainsight で製品利用プレイブックをトリガーするために使用され、CSM が顧客に対してコンサルティングの文脈でアプローチし、顧客がユースケースのソリューションとして GitLab 機能を採用し、GitLab への投資対効果を最大化できるよう支援します。以下は、現在の製品利用プレイブックをトリガーするために使用される指標の一覧です。さらに、各プレイブックのトリガーを定義する情報と、CSM が顧客とのコンサルテーションプロセスをガイドするために使用できるディスカバリー質問も含まれています。

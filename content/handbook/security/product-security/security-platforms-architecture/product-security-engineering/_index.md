@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T12:40:09Z"
 translator: claude
 stale: false
+lastmod: "2026-05-04T07:51:29-04:00"
 ---
 
 プロダクトセキュリティエンジニアリング (ProdSecEng) は、脆弱性管理および PSIRT の各チームと並んで、[セキュリティケイパビリティエンジニアリング](/handbook/security/product-security/security-capabilities-engineering/) (SecCapEng) の一部です。

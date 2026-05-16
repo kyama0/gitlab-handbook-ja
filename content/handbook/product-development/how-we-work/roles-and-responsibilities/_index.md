@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-14T17:59:32+00:00"
 ---
 
 プロダクト開発を成功させるためには、チームメンバー全員が共有のアウトカムにコミットすることが必要不可欠です。チーム全体で、GitLab のバリューである [Results for Customers](/handbook/values/#results) と一致した形で、ユーザーへのポジティブなインパクトを届ける責任を共有しなければなりません。

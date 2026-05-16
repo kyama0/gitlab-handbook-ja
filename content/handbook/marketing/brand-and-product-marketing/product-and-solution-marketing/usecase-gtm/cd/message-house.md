@@ -5,6 +5,7 @@ upstream_sha: d0a19ab78fc5e0d322868c8f35ab8f81e761bd21
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-07-09T00:48:53+00:00"
 ---
 
 ### メッセージングとポジショニング

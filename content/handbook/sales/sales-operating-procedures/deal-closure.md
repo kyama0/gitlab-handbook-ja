@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-11-27T12:08:55+00:00"
 ---
 
 エコノミックバイヤーから口頭でのコミットを得たので、商談をクロージングし契約のサインを獲得する時です。このフェーズを通じて **[MEDDPPICC](/handbook/sales/meddppicc/)** を再適用し、以下のタスクを達成してディールをクローズする必要があります。

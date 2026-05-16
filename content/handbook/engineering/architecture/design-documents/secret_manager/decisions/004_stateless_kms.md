@@ -7,6 +7,7 @@ upstream_sha: 86cfa2bd7d73df5a673fe5ebd33b028d0f540434
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-10-28T03:27:39+00:00"
 ---
 
 [ADR-002](../002_gcp_kms) において、私たちは秘密の暗号化鍵を保存するために Google の Cloud Key Management Service を使用することを決定しました。これにより、さまざまなコンプライアンス要件をより容易に満たせるようになります。

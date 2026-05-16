@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 [比較的・定性的なユーザビリティテスト](https://www.uxmatters.com/mt/archives/2017/03/conducting-qualitative-comparative-usability-testing.php) を使うと、**デザインプロセスの初期段階** で 2〜3 のデザインに対するフィードバックを得て、異なるデザインの方向性の長所と短所を評価できます。これはベンチマークやデザインの測定に焦点を当てた定量的な比較スタディとは異なります。

@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T03:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-02-10T07:09:07+00:00"
 ---
 
 このウェルカムメールは、Manager, Professional Services が顧客に対して、私たちの Professional Services Engineering チームと GitLab 実装の概念を紹介するために送付されます。

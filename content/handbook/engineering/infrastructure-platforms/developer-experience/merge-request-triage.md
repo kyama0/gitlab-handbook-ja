@@ -6,6 +6,7 @@ upstream_sha: 6a459a3ca969603754a3b5133342edb804d3012c
 translated_at: "2026-04-28T17:23:43Z"
 translator: claude
 stale: false
+lastmod: "2026-03-06T09:57:12-06:00"
 ---
 
 GitLab では、私たちのミッションは[すべての人が貢献できる](/handbook/company/mission/#mission)よう、あらゆる創造的な作業を読み取り専用から読み書き可能に変えることです。GitLab はコミュニティの貢献を高く評価しており、コミュニティのコード貢献を引き続き成長させたいと考えています。GitLab はコミュニティが [`gitlab-org` グループ](https://gitlab.com/gitlab-org)配下のプロジェクトおよび [`gitlab-com/www-gitlab-com` プロジェクト](https://gitlab.com/gitlab-com/www-gitlab-com)に対して Issue を提出し、マージリクエストを開くことを奨励しています。これらの貢献は価値あるものであり、できる限り効果的に処理する必要があります。その中心となるのがトリアージ — タイプと製品グループによる分類プロセスです。

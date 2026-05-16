@@ -5,6 +5,7 @@ upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
 translated_at: "2026-04-29T19:06:37Z"
 translator: claude
 stale: false
+lastmod: "2025-11-20T17:06:05-08:00"
 ---
 
 ## データベース変更に関する JiHu ガイドライン

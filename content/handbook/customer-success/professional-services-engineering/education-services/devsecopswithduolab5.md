@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T03:19:14Z"
 translator: claude
 stale: false
+lastmod: "2025-09-30T14:25:39-04:00"
 ---
 
 > 推定所要時間: 15 分

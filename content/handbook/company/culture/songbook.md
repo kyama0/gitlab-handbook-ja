@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-15T03:30:00Z"
 translator: claude
 stale: false
+lastmod: "2025-02-10T07:09:07+00:00"
 ---
 
 GitLab ソングブックには、GitLab のチームメンバーが既存の楽曲をアレンジして作詞した歌が収録されています。GitLab の歌の多くは私たちの [バリュー](/handbook/values/) を参照しており、その浸透を後押しします。

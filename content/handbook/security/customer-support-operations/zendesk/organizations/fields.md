@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T23:27:10Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T20:47:52+00:00"
 ---
 
 このガイドでは、GitLab における Zendesk 組織フィールドの作成・編集・管理方法について説明します。管理者は [管理者タスク](#administrator-tasks) のセクションを確認してください。

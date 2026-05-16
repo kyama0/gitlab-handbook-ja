@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-30T16:57:54+00:00"
 ---
 
 コーポレートセキュリティ部門は、チームメンバーと一時的なサービスプロバイダー (契約社員、ベンダーなど) 向けのテックサポート [ヘルプデスクサービス](/handbook/security/corporate/services/helpdesk) と、私たちが管理する社内システムの構成管理 [エンジニアリング](/handbook/security/corporate/services/infrastructure/) を提供します。

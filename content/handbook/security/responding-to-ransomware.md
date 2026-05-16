@@ -5,6 +5,7 @@ upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-08-27T18:17:37+00:00"
 ---
 
 ランサムウェアは GitLab を含む多くの組織にとって持続的な脅威です。GitLab 資産が関与するランサムウェア攻撃が発生した場合、既存の対応手順を把握しておくことが重要です。このような攻撃の標的は変動するため、既存の状況に適応し、身代金の支払いを避けるための災害復旧プロセスが整備されていることを理解することが重要です。GitLab のレッドチームは、影響を受ける可能性が最も高いターゲットを特定するために [広範な調査](https://gitlab.com/gitlab-com/gl-security/security-operations/gl-redteam/red-team-operations/-/issues/118) を実施しました。その結果、組織を保護するために効率的な対応をブートストラップするのに役立つ以下のガイドラインが用意されています。

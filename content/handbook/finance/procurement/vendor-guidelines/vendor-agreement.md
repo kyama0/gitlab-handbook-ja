@@ -6,6 +6,7 @@ upstream_sha: "a1349675d55d5e861385a14a4b2d2b617d2381b1"
 translated_at: "2026-04-29T20:09:36Z"
 translator: claude
 stale: false
+lastmod: "2024-12-10T02:42:00+00:00"
 ---
 
 ## 標準ベンダー利用規約

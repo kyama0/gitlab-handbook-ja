@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T06:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T20:47:52+00:00"
 ---
 
 <div class="row my-4" style="max-width: 80%; margin-left: auto; margin-right: auto;">

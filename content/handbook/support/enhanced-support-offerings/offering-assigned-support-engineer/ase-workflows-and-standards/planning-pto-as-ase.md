@@ -6,6 +6,7 @@ upstream_sha: c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-03T15:38:56-08:00"
 ---
 
 ## ASE PTO 計画

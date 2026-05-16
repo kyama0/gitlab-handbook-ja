@@ -6,6 +6,7 @@ upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
 translated_at: "2026-05-01T12:25:17Z"
 translator: claude
 stale: false
+lastmod: "2025-09-16T22:43:31+00:00"
 ---
 
 `注意: このページは現在非推奨であり、マーケティングがプロジェクト管理を Asana に移行したため、現在は使用されていません。`

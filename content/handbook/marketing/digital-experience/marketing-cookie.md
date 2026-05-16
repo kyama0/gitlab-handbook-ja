@@ -6,6 +6,7 @@ upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-09T20:42:10+00:00"
 ---
 
 Digital Experience チームは、`gitlab_tier` Cookie を `about.gitlab.com` ドメインのコンテンツをカスタマイズするためのツールとして使用しています。この Cookie は、ユーザーが GitLab.com にログインしたときに設定されます。この Cookie は、セッション終了時（ログアウト時）または 2 週間後（いずれか早い方）に有効期限を迎えます。

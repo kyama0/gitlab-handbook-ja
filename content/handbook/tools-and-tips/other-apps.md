@@ -6,6 +6,7 @@ upstream_sha: 68af60af15ea4dcb51c3d985f7473b212e4f2cb4
 translated_at: "2026-05-07T15:33:18Z"
 translator: claude
 stale: false
+lastmod: "2026-03-17T12:53:03-04:00"
 ---
 
 ### 一般的なセキュリティのヒント

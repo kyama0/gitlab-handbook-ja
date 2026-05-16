@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
  UX リサーチへの参加に対する小さな感謝の印として、リサーチ参加者にギフトを送ります。リクルート Issue がまだ開かれていない場合は、[UX リサーチプロジェクト](https://gitlab.com/gitlab-org/ux-research/blob/master/.gitlab/issue_templates/Incentives%20request.md) で Issue を開いてリクエストできます。

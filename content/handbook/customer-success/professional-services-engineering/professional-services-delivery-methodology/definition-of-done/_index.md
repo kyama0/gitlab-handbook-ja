@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T03:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T15:48:52+08:00"
 ---
 
 Definition of Done と Definition of Ready は密接に関連しています。あるいはその逆と言えるかもしれません。鶏と卵のような関係です。

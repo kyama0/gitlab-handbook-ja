@@ -5,6 +5,7 @@ upstream_sha: c26b483f365d397f86ef45e60a892d0783588ac1
 translated_at: "2026-04-30T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-07-29T14:59:05-05:00"
 ---
 
 ## CI と CD

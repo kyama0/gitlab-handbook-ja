@@ -7,6 +7,7 @@ upstream_sha: 460f0fe6722bfe52b151b6a8641368ea38885df5
 translated_at: "2026-05-08T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-07-09T00:48:53+00:00"
 ---
 
 [Provision tracking system](https://gitlab.com/groups/gitlab-org/-/epics/8300) は、Slack チャンネル `#provision_failures` の障害アラートシステムを通じてプロビジョニング失敗を監視する手段を提供します。これにより、障害が発生した際に Fulfillment Product チームと L&R Support チームが迅速に把握し、対応できるようになります。

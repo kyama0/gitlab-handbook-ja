@@ -5,6 +5,7 @@ upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
 translated_at: "2026-04-28T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-21T10:51:46-04:00"
 ---
 
 Tier 1 ローテーションとは、自動化されたシステムからのページに対応するオンコールローテーションを指します。

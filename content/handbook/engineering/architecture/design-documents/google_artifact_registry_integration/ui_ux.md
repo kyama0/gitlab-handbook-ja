@@ -8,6 +8,7 @@ upstream_sha: 33ef35e4327874fd4153c5606125f5de47ff7924
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-08-23T13:02:20+00:00"
 ---
 
 ## 構造と整理

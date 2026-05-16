@@ -5,6 +5,7 @@ upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-29T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T19:48:12+00:00"
 ---
 
 クロスファンクショナルな段階的な整合性を確保するために、定期的なペースでデモを設定することが有用な場合があります。

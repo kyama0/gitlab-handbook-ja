@@ -10,6 +10,7 @@ upstream_sha: "27d1e9b21984fe11eff53db49a85c2ba08ef901c"
 translated_at: "2026-04-28T15:26:32Z"
 translator: claude
 stale: false
+lastmod: "2025-11-20T14:25:44+01:00"
 ---
 
 <span class="inline-block rounded px-2 py-0.5 text-xs font-medium" style="background-color:#E24329;color:#ffffff">Visibility: Audit</span>

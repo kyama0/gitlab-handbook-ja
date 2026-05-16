@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T04:51:58Z"
 translator: claude
 stale: false
+lastmod: "2026-04-16T17:13:51-04:00"
 ---
 
 > 完了目安時間: 30 分

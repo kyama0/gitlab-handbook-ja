@@ -6,6 +6,7 @@ upstream_sha: "b751749fb746d2e0131db68b13218fc2e08cf6b2"
 translated_at: "2026-04-29T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-14T17:59:32+00:00"
 ---
 
 これは Tableau 埋め込みデモページです。Tableau のビジュアライゼーションを内部ハンドブックに埋め込む方法を示すために使用されます。均一なエクスペリエンスとプレゼンテーションを実現するために、Tableau チャートとダッシュボードを埋め込む[ショートコード](http://handbook.gitlab.com/docs/shortcodes/#tableau-embeds)を使用します。

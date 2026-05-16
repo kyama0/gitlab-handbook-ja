@@ -5,6 +5,7 @@ upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-29T02:14:34Z"
 translator: claude
 stale: false
+lastmod: "2025-03-24T14:24:00+00:00"
 ---
 
 私たちは [エンジニアリングハンドブック](/handbook/engineering/error-budgets/) に記載されているエラーバジェットプロセスを維持しています。

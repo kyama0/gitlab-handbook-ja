@@ -6,6 +6,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-27T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-23T14:23:47-07:00"
 ---
 
 データベースアーキテクチャチームは、[データベースフレームワークチーム](/handbook/engineering/data-engineering/database-excellence/database-frameworks/)の分割によって誕生しました。

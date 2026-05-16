@@ -6,6 +6,7 @@ upstream_sha: 5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-03-17T12:30:19-07:00"
 ---
 
 チームメンバーとの同期・非同期のやり取りはどれもクルーシャルカンバセーション（重要な会話）になる可能性があります。GitLab では、非同期・同期の会話のトーンを読み取り、チームメンバーの潜在的な課題、リスク、ブロッカーなどを明らかにするスキルを開発できます。チームメンバーのために[心理的安全性](/handbook/leadership/emotional-intelligence/psychological-safety/#introduction)を生み出す方法を見つける必要があります。1on1 を活用することで、チームメンバーが直面している状況のコンテキストを把握し、重要な会話を行うための優れた方法となります。

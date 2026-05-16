@@ -6,6 +6,7 @@ upstream_sha: bb4e4d0fc1a355c00a1d82b1528ff729c83af189
 translated_at: "2026-04-28T13:03:31Z"
 translator: claude
 stale: false
+lastmod: "2026-02-06T19:27:57-05:00"
 ---
 
 ## Secrets Manager - 週次プロジェクト計画

@@ -7,6 +7,7 @@ translated_at: "2026-05-15T00:00:00+00:00"
 translator: claude
 stale: true
 model: claude-opus-4-7
+lastmod: "2026-05-15T17:45:31+00:00"
 ---
 
 > **翻訳について**: このページは原文が非常に大規模 (1257 行) のため、完全な翻訳は今後のイテレーションで対応予定です。フル翻訳は [Issue #77](https://github.com/kyama0/gitlab-handbook-ja/issues/77) で追跡しています。現時点では正確性のため [英語の原文](https://handbook.gitlab.com/handbook/marketing/field-marketing/) を参照してください。

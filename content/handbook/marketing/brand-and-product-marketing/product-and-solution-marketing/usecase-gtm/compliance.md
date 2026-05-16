@@ -6,6 +6,7 @@ upstream_sha: d0a19ab78fc5e0d322868c8f35ab8f81e761bd21
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-01-07T16:47:36-08:00"
 ---
 
 **GitLab のソフトウェアコンプライアンスケイパビリティに関するお客様向けの概要をお探しですか？ [Compliance Solution](https://about.gitlab.com/solutions/compliance/) を参照してください**

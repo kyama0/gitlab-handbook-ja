@@ -11,6 +11,7 @@ upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
 translated_at: "2026-05-06T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-11-05T09:20:53+00:00"
 ---
 
 ## 共通リンク

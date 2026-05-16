@@ -8,6 +8,7 @@ upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
 translated_at: "2026-05-08T21:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-21T12:28:59-06:00"
 ---
 
 ## Dev Pulse とは?

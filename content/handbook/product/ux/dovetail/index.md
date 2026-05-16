@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 UXリサーチチームは、GitLabのUXリサーチプログラムを通じて発見されたすべてのリサーチインサイトを文書化するために [Dovetail](https://dovetailapp.com/) を使用しています。リサーチインサイトは、ユーザー[インタビュー](/handbook/product/ux/experience-research/facilitating-user-interviews/)、[ユーザビリティテスト](/handbook/product/ux/experience-research/usability-testing/)、サーベイ、カードソート、ツリーテスト、顧客との会話などの手法を通じて収集できます。

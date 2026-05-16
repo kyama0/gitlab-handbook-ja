@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-10-29T23:31:43+00:00"
 ---
 
 ## FY24-Q2 以降 - 個別成長計画

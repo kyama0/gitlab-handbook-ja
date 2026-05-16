@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-03-05T11:52:36+00:00"
 ---
 
 注: sales play はレシピだと考えてください。レシピに従えば、より予測可能で一貫した結果を達成できます。最適に機能する（または失敗する）アセットやアプローチを見つけたら、レシピを微調整して継続的に改善できます。**改善案があれば、[この MR](https://gitlab.com/gitlab-com/marketing/strategic-marketing/product-marketing/-/issues/5095) にコメントで提案し、他の人の提案にアップボートしてください。

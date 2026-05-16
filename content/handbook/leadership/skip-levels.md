@@ -5,6 +5,7 @@ upstream_sha: 5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-12-05T19:47:34+00:00"
 ---
 
 ## スキップレベルの目的とメリット

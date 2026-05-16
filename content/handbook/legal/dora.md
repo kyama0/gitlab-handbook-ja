@@ -5,6 +5,7 @@ upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
 translated_at: "2026-04-30T00:55:37Z"
 translator: claude
 stale: false
+lastmod: "2025-12-15T11:32:24-06:00"
 ---
 
 ### GitLab がデジタル運用レジリエンス法の主要な契約要件に対応する方法

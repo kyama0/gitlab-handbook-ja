@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-23T12:25:37-06:00"
 ---
 
 GitLab は [単一のデータストア](/handbook/product/categories/gitlab-the-product/single-application/#single-data-store) に依存する [シングルアプリケーション](/handbook/product/categories/gitlab-the-product/single-application/) です（厳格な耐久性要件の文脈で使用する用語で、たとえば Redis に対する PostgreSQL のことを指します）。

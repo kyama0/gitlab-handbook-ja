@@ -7,6 +7,7 @@ upstream_sha: 6c73093986242c762a8f4a2769fbfba69b31fcf9
 translated_at: "2026-05-08T13:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-08T15:49:17+00:00"
 ---
 
 ## 概要

@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-06T19:27:57-05:00"
 ---
 
 [Merge Monitor ツール](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/tooling/release-certification-tools#merge-request-monitor)は、JiHu がコントリビュートする公開 GitLab リポジトリを調査し、以下の条件を満たすマージリクエストを探します:

@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-01-06T20:13:53+00:00"
 ---
 
 ![JTBD キャンバス](/images/product/ux/jobs-to-be-done/JTBD_Canvas.png)

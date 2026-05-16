@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-28T11:19:46-04:00"
 ---
 
 アカウントを獲得したら、AE/SAE/CSM/PSE が協力して[カスタマーサクセス](/handbook/customer-success/)を確実なものにする時です。これには、すべての関係者による[アカウントエンゲージメント](/handbook/customer-success/csm/engagement/)が必要です。これの構成要素は次のとおりです。

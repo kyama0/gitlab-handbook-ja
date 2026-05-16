@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T22:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-18T15:39:47+00:00"
 ---
 
 ![activate your agile career プログラムを発表するテキスト画像。](/images/company/culture/inclusion/tmrg-gitlab-women/program-header.png)

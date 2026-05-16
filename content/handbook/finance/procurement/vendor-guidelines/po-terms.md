@@ -5,6 +5,7 @@ upstream_sha: "a1349675d55d5e861385a14a4b2d2b617d2381b1"
 translated_at: "2026-04-29T20:09:36Z"
 translator: claude
 stale: false
+lastmod: "2025-07-23T14:12:01-04:00"
 ---
 
 ## 1. 合意および承諾

@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-26T11:11:11-04:00"
 ---
 
 > **注:** Sales Quick Start (SQS) は **GitLab Revenue Academy** に置き換えられました。このページは過去の参照のために維持されています。現在のプログラム情報については、[Revenue Academy ハンドブックページ](/handbook/sales/onboarding/) をご覧ください。

@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-05-30T08:32:56+00:00"
 ---
 
 このドキュメントは、2020 年 2 月に承認された [GitLab セールスプロセス](https://docs.google.com/spreadsheets/d/1ISe3kb5bIbUKxo8lSYQlU-OddgfRgZgl9D0Y5CJ1iew/edit#gid=901742865)ドキュメントに基づいています。

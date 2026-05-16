@@ -6,6 +6,7 @@ upstream_sha: 5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8
 translated_at: "2026-05-08T18:13:56Z"
 translator: claude
 stale: false
+lastmod: "2024-11-26T00:36:40+00:00"
 ---
 
 認知バイアスとは:

@@ -6,6 +6,7 @@ upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-08T15:54:56-04:00"
 ---
 
 GitLab はデフォルトで、AI 搭載 DevSecOps プラットフォーム全体を無料で試すことができます。これにより、[Ultimate ティア](https://about.gitlab.com/pricing/ultimate/) と [GitLab Duo](https://about.gitlab.com/gitlab-duo/#features) のほぼすべての機能にフルアクセスできます。

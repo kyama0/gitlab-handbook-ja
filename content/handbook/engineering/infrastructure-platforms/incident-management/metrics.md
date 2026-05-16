@@ -6,6 +6,7 @@ upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-28T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-27T10:26:00-06:00"
 ---
 
 このページでは GitLab.com および Dedicated のインシデントパフォーマンスメトリクスを定義します。各メトリクスの意味とスコープのハンドブックレベルのリファレンスです。基盤となるデータパイプラインと SQL レベルの定義については、[技術ドキュメント](https://gitlab.com/gitlab-com/gl-infra/data/sqlmesh-catalog/-/blob/main/docs/design-docs/incident-metrics.md)をご覧ください。

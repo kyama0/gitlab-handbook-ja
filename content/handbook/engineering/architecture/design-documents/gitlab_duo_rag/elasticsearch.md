@@ -13,6 +13,7 @@ upstream_sha: 9e852ac812142230dfe1e1db31be2862cd857cfd
 translated_at: "2026-04-27T10:36:33Z"
 translator: claude
 stale: false
+lastmod: "2024-08-23T13:02:20+00:00"
 ---
 
 Elasticsearch と RAG 全般の詳細については、[RAG at GitLab](../gitlab_rag/index.md) 内の [Elasticsearch の記事](../gitlab_rag/elasticsearch.md) を参照してください。

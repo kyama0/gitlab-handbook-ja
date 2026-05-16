@@ -7,6 +7,7 @@ upstream_sha: fb150f3a4f831172cf23c7f0d75b0d6310a68972
 translated_at: "2026-05-08T18:59:21Z"
 translator: claude
 stale: false
+lastmod: "2025-03-05T01:56:16-05:00"
 ---
 
 ## **顧客フィードバックループ**

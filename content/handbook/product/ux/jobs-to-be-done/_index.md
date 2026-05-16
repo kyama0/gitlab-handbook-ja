@@ -7,6 +7,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-01-06T20:13:53+00:00"
 ---
 
 このページおよび関連ページ（[Playbook](/handbook/product/ux/jobs-to-be-done/jtbd-playbook/)、[Beyond the Playbook](/handbook/product/ux/jobs-to-be-done/jtbd-beyond-the-playbook/)）の素材は、[Jim Kalbach](https://www.jtbdtoolkit.com/) と彼の著書「[The Jobs to be Done Playbook](https://www.amazon.com/Jobs-Be-Done-Playbook-Organization/dp/1933820683)」から引用しています。

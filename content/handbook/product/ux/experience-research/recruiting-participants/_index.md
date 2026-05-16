@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 GitLab では、UX Research Operations Coordinator が調査をリクエストする人々と密接に協力し、フィードバックを集める対象者が適切であることを確認します。UX Research Operations Coordinator の代理を務める場合は、[このページ](/handbook/product/ux/research-operations/research-specialist-fill-in/)を参考にしてください。

@@ -6,6 +6,7 @@ upstream_sha: 6a459a3ca969603754a3b5133342edb804d3012c
 translated_at: "2026-04-28T17:23:43Z"
 translator: claude
 stale: false
+lastmod: "2026-03-06T09:57:12-06:00"
 ---
 
 ここに記載されている手順は、People Ops がチームメンバーの初日に割り当てるオンボーディング Issue に加えて行うものです。

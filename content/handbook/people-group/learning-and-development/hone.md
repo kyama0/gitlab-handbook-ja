@@ -5,6 +5,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-04-08T11:25:47+00:00"
 ---
 
 GitLab は [Hone](https://honehq.com/) と提携し、ライブのコーチ主導型学習体験を通じて拡張された専門能力開発の機会を提供しています。現在の [Elevate](/handbook/people-group/learning-and-development/elevate-programs/elevate/) リーダーシップ開発体験もこのパートナーシップを通じて実施されており、Hone は専門のファシリテーターが主導する科学的根拠に基づくインタラクティブな仮想学習セッションを得意としています。

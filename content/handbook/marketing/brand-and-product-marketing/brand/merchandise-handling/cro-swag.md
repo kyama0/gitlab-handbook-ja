@@ -5,6 +5,7 @@ upstream_sha: e0d8017702cf1eae5871d425237e50751324adc6
 translated_at: "2026-04-30T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-07T09:43:45+02:00"
 ---
 
 CRO 組織のための GitLab スワッグ注文の完全ガイドへようこそ。お客様にギフトを送る場合でも、オフサイト用のグッズを注文する場合でも、このハンドブックには知っておくべきすべてが含まれています。

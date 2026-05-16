@@ -6,6 +6,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-28T02:21:43Z"
 translator: claude
 stale: false
+lastmod: "2026-03-13T14:59:43-07:00"
 ---
 
 ## ミッション

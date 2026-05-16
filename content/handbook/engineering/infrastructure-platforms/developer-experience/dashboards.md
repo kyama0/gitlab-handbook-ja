@@ -6,6 +6,7 @@ upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
 translated_at: "2026-04-28T16:51:32Z"
 translator: claude
 stale: false
+lastmod: "2026-04-09T11:51:33+01:00"
 ---
 
 > 耐障害性があり効率的で堅牢なプラットフォームを追求するにあたり、私たちのテストプラットフォームサブ部門は

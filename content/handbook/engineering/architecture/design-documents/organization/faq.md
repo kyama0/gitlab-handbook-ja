@@ -8,6 +8,7 @@ upstream_sha: 171236827c9a366363160b625ff53ec19c521940
 translated_at: "2026-04-27T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-23T10:25:38+13:00"
 ---
 
 ## 大規模な SaaS 顧客は Organization レベルでライセンスを取得することが想定されますか？

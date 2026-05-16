@@ -5,6 +5,7 @@ upstream_sha: 5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-09-04T00:36:58+00:00"
 ---
 <!-- vale off -->
 *2024年8月29日に廃止*

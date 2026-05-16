@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T22:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-16T13:34:44+00:00"
 ---
 
 Growth and Development (G&D) ファンドは、GitLab チームメンバーが GitLab で承認された成長経験と機会の払い戻しを受け取るために使用できます。チームメンバーは、すべての対象資格要件を満たしている場合、承認された成長経験につき暦年あたり最大 $10,000 まで払い戻しを受けられます。

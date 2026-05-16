@@ -5,6 +5,7 @@ upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
 translated_at: "2026-04-29T09:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-05T23:38:57+11:00"
 ---
 
 **バージョン：** GLSA_01.12.26 v8 WEB

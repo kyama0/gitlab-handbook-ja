@@ -6,6 +6,7 @@ upstream_sha: fe88192cad67a795a237396e552566cb08c118b9
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-23T16:07:31-04:00"
 ---
 
 - 職務記述書は [`content-sites/handbook` リポジトリのディレクトリで機能別に整理されています](https://gitlab.com/gitlab-com/content-sites/handbook/-/tree/main/content/job-description-library/)。

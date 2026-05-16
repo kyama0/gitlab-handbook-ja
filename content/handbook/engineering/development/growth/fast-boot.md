@@ -6,6 +6,7 @@ upstream_sha: "3480299851f7e2243d4f08b75dac452f89929636"
 translated_at: "2026-04-28T05:15:25Z"
 translator: claude
 stale: false
+lastmod: "2026-03-02T07:33:04-05:00"
 ---
 
 Acquisition、Expansion、Conversion、Retention の各グループが2019年9月に[Fast Boot](/handbook/engineering/workflow/fast-boot/)に参加しました。[計画 Issue](https://gitlab.com/gitlab-org/growth/product/issues/1)には Fast Boot の提案が含まれており、このページではディスカッションと成果を文書化しています。

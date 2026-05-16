@@ -5,6 +5,7 @@ upstream_sha: 6b2970dac4d9078a5a79c285a6ee08817ecbd954
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-27T10:00:00+01:00"
 ---
 
 [Common Room](https://www.commonroom.io/docs/get-started/) は、異なるプラットフォーム間のデータを統合し、メンバーを特定し、トレンドや感情を可視化することで、デジタルコミュニティの管理・エンゲージメント・成長を支援するコミュニティグロースプラットフォームです。

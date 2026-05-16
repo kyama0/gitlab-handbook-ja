@@ -5,6 +5,7 @@ upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-01T15:53:53-04:00"
 ---
 
 今後、マーケティングサイト（`about.gitlab.com`）に対するすべての変更は、Web サイトに変更をマージする前に承認プロセスに従う必要があります。

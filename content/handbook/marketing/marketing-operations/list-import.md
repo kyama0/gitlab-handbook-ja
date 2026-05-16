@@ -6,6 +6,7 @@ upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-14T17:59:32+00:00"
 ---
 
 **イベントやその他のリードジェネレーションキャンペーンのリストアップロードについては、[セルフサービスアップロード](/handbook/marketing/marketing-operations/automated-list-import/)の手順を使用してください**。

@@ -7,6 +7,7 @@ upstream_sha: c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-04-01T09:22:28+00:00"
 ---
 
 ## ASE のアカウントからの緊急事態

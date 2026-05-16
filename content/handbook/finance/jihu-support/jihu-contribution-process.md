@@ -5,6 +5,7 @@ upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
 translated_at: "2026-04-29T19:06:37Z"
 translator: claude
 stale: false
+lastmod: "2026-03-06T09:57:12-06:00"
 ---
 
 JiHu チームからのコントリビューションは、JiHu 独自の変更があるかどうかに応じて2つの方法で行われます。

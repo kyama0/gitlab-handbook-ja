@@ -6,6 +6,7 @@ upstream_sha: "d638a3d5418a620365f135648ea547e0992abbf1"
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-12-22T08:10:40+00:00"
 ---
 
 Snowflake は[クラスタリング](https://docs.snowflake.com/en/user-guide/tables-clustering-micropartitions)をサポートしています。これは、ユーザーがマイクロパーティション内のデータを整理することでクエリパフォーマンスを最適化できる強力な機能です。クラスタリングにより、特に頻繁にアクセスされる列を持つ大きなテーブルのデータ取得効率が大幅に向上します。

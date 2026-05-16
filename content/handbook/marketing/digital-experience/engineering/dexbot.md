@@ -6,6 +6,7 @@ upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
 translated_at: "2026-05-01T10:36:34Z"
 translator: claude
 stale: false
+lastmod: "2025-01-07T16:47:36-08:00"
 ---
 
 Digital Experience チームは、チームへの重要なメッセージとアラートを自動化するための Slack アプリケーションを作成しました。アプリの設定は[こちら](https://api.slack.com/apps/A06K6EK7VHP/general)で確認できます。

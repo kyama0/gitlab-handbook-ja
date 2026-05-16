@@ -6,6 +6,7 @@ upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
 translated_at: "2026-04-28T11:23:44Z"
 translator: claude
 stale: false
+lastmod: "2026-03-02T19:44:15+00:00"
 ---
 
 ## テックリードとは

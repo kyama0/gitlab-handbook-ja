@@ -5,6 +5,7 @@ upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
 translated_at: "2026-04-28T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-10-19T11:32:59-04:00"
 ---
 
 オンコールシフトの終了は、始まりと同様に重要です。良い引き継ぎによって、次のエンジニアが成功できる環境を整えます。

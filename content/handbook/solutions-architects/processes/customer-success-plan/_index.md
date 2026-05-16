@@ -7,7 +7,7 @@ upstream_sha: 1fce460c6f8e6db987516c8a24367667792e8ff9
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
-
+lastmod: "2026-05-08T14:07:20+02:00"
 ---
 
 ## 相互カスタマーサクセスプランとは

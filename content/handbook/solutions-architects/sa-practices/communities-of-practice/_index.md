@@ -6,6 +6,7 @@ upstream_sha: fb150f3a4f831172cf23c7f0d75b0d6310a68972
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-19T15:48:52+08:00"
 ---
 
 これは、ソフトウェア開発ライフサイクル (SDLC) の各ステージにおいて、顧客との作業を通じて収集されたベストプラクティスのコレクションです。

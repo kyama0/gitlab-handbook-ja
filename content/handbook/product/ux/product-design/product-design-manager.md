@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-31T15:43:22+02:00"
 ---
 
 プロダクトデザインマネージャーは、[Upstream Studios](/handbook/upstream-studios/)の一部である[プロダクトデザイン](/handbook/product/ux/product-design/)の中で戦略的パートナーとして働くデザイナーを率います。このページでは、デザイナーが上流で考え行動できるようにし、デザインの卓越性とプラットフォーム全体の思考を通じてプロダクトの方向性を駆動するための戦略的ワークフローを概説します。

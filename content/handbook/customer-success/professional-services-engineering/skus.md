@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T03:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-04-28T10:53:04-07:00"
 ---
 
 カスタマイズされていないエデュケーションサービスコース、Health Check、CI/CD および DevSecOps Workshop、Implementation/Migration QuickStart SKU、その他の out-of-the-box パッケージなど、一部のプロフェッショナルサービス提供物は標準 SKU として販売できます。プロフェッショナルサービス SKU は Zuora 内で簡単に注文に追加でき、カスタム SOW の作成は不要です。

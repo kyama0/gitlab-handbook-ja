@@ -5,6 +5,7 @@ upstream_sha: 5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8
 translated_at: "2026-05-08T18:13:56Z"
 translator: claude
 stale: false
+lastmod: "2025-03-19T09:01:06+01:00"
 ---
 
 ビジネスバリューサービスは、GitLab のディールチーム（AE と SA、および拡張チーム）が以下を実現するためのプラクティスとアプローチです。

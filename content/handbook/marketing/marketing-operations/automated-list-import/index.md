@@ -6,6 +6,7 @@ upstream_sha: 556213935f9d4b2d786892c3568ad51be8ee2f6a
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: true
+lastmod: "2025-12-24T12:08:15-08:00"
 ---
 
 > **翻訳について**: このページは原文が大規模 (580 行) のため、完全な翻訳は今後のイテレーションで対応予定です。現時点では正確性のため [英語の原文](https://handbook.gitlab.com/handbook/marketing/marketing-operations/automated-list-import/) を参照してください。

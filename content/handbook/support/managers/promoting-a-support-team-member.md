@@ -6,6 +6,7 @@ upstream_sha: 9da08370100b76603b2eb82901592f9d21c9766c
 translated_at: "2026-05-08T09:50:12Z"
 translator: claude
 stale: false
+lastmod: "2025-11-27T20:17:50+00:00"
 ---
 
 ### サポートマネージャー向け サポートエンジニア昇進プロセス - クイックガイド

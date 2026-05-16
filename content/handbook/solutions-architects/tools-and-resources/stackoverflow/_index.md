@@ -6,6 +6,7 @@ upstream_sha: 5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8
 translated_at: "2026-05-08T17:29:46Z"
 translator: claude
 stale: false
+lastmod: "2025-12-01T16:21:31-05:00"
 ---
 
 ## Stack Overflow

@@ -5,6 +5,7 @@ upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
 translated_at: "2026-04-28T21:28:32Z"
 translator: claude
 stale: false
+lastmod: "2026-03-06T09:57:12-06:00"
 ---
 
 Engineering Productivity チームは、GitLab の内部ワークフロー自動化のためのツールとプロセスを所有しています。[Triage-ops](https://gitlab.com/gitlab-org/quality/triage-ops) は EP チームが管理する主要なプロジェクトの一つであり、GitLab チームメンバーが Issue、MR、epic を自動的にトリアージできるようにします。

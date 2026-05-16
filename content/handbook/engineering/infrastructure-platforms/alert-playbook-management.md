@@ -5,6 +5,7 @@ upstream_sha: "27d1e9b21984fe11eff53db49a85c2ba08ef901c"
 translated_at: "2026-04-28T15:26:32Z"
 translator: claude
 stale: false
+lastmod: "2025-09-09T19:33:15-06:00"
 ---
 
 ## 目的

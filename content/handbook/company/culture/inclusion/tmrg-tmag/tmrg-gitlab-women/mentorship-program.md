@@ -6,6 +6,7 @@ upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-11-14T10:08:55+00:00"
 ---
 
 Women TMRG が主催する GitLab メンターシッププログラムは、参加者が組織全体で信頼を築き、内部での成長・発展への道を開き、チーム間のコラボレーションを促進するための 5 か月間のキャリア開発の機会です。本プログラムは Women TMRG が主催しています。

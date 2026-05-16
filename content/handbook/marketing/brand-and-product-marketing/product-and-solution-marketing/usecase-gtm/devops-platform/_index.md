@@ -5,6 +5,7 @@ upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
 translated_at: "2026-04-30T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-01-14T07:59:50-06:00"
 ---
 
 **GitLab の DevOps プラットフォームの顧客向け概要をお探しですか？ [DevOps Platform Solution](https://about.gitlab.com/solutions/devops-platform/) をご覧ください**

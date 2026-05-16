@@ -5,6 +5,7 @@ upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
 translated_at: "2026-04-28T08:31:27Z"
 translator: claude
 stale: false
+lastmod: "2026-02-27T11:49:23+01:00"
 ---
 
 ## プランニングの進め方

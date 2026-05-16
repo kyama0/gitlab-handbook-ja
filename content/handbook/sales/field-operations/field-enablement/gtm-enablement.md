@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-12T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-02T19:44:15+00:00"
 ---
 
 このページでは、GTM Enablement モーションを定義し、GitLab での現在のプロセスとどのように整合するかを示します。GTM Enablement 機能は、新製品、SKU、オファーがフィールドチームへ展開され、最終的に市場に投入される際に、効果的かつ効率的にサポートされるようにすることを目的としています。このフレームワークは、GTM イネーブルメントローンチを成功させるために必要なプロセスと標準を概説し、新製品導入（NPI）プロセスおよび Field Enablement チームと緊密に整合・統合します。

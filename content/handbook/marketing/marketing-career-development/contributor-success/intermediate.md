@@ -6,6 +6,7 @@ upstream_sha: 6d57cb48e5122af4d9d6d86f68303aef0a09a7d8
 translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-04T12:15:15-08:00"
 ---
 
 ## Intermediate Fullstack Engineer, Contributor Success

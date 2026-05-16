@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-26T01:01:39Z"
 translator: claude
 stale: false
+lastmod: "2025-07-11T14:07:27-04:00"
 ---
 
 *Gainsightの概要およびログイン方法については、[Gainsight概要ページ](/handbook/sales/gainsight/)を参照してください。*

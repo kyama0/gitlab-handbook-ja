@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 [継続的インタビュー](https://medium.com/@ttorres/continuous-interviewing-the-key-to-successful-product-teams-6bf63bfc1936) は、プロダクトマネージャー (PM) がユーザーから継続的に学び、プロダクトディスカバリーに活用できるインサイトを発見できるプロセスです。これらのインタビューは、特定の仮説やリサーチ要求を中心に組み立てられていないため、ほとんどの場合同じスクリプトに従います。ただし、PM は必要に応じてインタビューの潜在的な焦点をシフトし、特定のトピックをより深く掘り下げることができます。

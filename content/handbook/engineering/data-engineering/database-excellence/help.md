@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-05-07T17:41:36+00:00"
 ---
 
 このガイドは、データベース関連の問題に対して適切なヘルプを見つけるための手順を示します。Step 1 から始め、ご自身の状況に合うパスをたどってください。

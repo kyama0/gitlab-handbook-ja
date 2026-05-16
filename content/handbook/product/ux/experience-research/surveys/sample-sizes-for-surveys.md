@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
 完璧な世界では、[母集団](https://statsandr.com/blog/what-is-the-difference-between-population-and-sample/)内の全ユーザーをサンプリングすることになります。しかし、それはできません。なぜでしょうか? 非効率的で、費用がかかり、時間がかかり、そしておそらく実現不可能だからです。代わりに私たちは、フォーカスしたい母集団から*母集団を代表するサンプル*を取得しようとします。これを行うために、その母集団のうちの一部、「サンプル」と呼ばれるものを取り出します。

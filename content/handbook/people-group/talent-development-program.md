@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T18:43:26Z"
 translator: claude
 stale: false
+lastmod: "2025-09-08T15:10:18-04:00"
 ---
 
 ## なぜタレント開発プログラムが GitLab にとって不可欠なのか

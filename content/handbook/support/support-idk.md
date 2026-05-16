@@ -6,6 +6,7 @@ upstream_sha: 18c3e90de89449f1cbbf92c21776a3ea7899476c
 translated_at: "2026-05-08T18:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-04-28T10:53:04-07:00"
 ---
 
 ## サポート用語集

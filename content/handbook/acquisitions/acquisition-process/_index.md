@@ -5,6 +5,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T04:59:08Z"
 translator: claude
 stale: false
+lastmod: "2025-11-21T09:48:00-08:00"
 ---
 
 これは私たちの買収プロセスの詳細なビューです。買収アプローチについての詳細は[買収ハンドブック](/handbook/acquisitions/)をご覧ください。

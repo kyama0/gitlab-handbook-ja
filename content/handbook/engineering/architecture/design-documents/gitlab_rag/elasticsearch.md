@@ -13,6 +13,7 @@ upstream_sha: 9e852ac812142230dfe1e1db31be2862cd857cfd
 translated_at: "2026-04-27T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-01-09T01:20:19+00:00"
 ---
 
 Elasticsearch は検索エンジンおよびデータストアであり、ベクトルの生成・保存・クエリ、またキーワード検索とセマンティック検索を大規模に実行できます。

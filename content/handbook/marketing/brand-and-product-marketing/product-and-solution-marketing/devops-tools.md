@@ -6,6 +6,7 @@ upstream_sha: c26b483f365d397f86ef45e60a892d0783588ac1
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2025-01-04T01:51:25+00:00"
 ---
 
 以下の DevOps ツールは、自前で構築する DevOps ツールチェーンによく見られるものです。これらの多くは、DevOps ライフサイクル全体のための GitLab の単一プラットフォームに置き換えることができます。

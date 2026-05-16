@@ -7,6 +7,7 @@ upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
 translated_at: "2026-05-08T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-11-14T23:18:47+00:00"
 ---
 
 ## このワークフローは現在レビュー中であり、現状では使用できません。https://gitlab.com/gitlab-org/omnibus-gitlab/-/issues/8594 を参照してください

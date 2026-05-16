@@ -6,6 +6,7 @@ upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-09T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-30T16:01:30-07:00"
 ---
 
 GitLab は、顧客の成功を支援することにコミットしています。GitLab.com の顧客が GitLab の実装または利用の結果としてセキュリティインシデントの支援を求めて連絡してきた場合、当社は可能な限りイベントに関する追加情報を提供することで調査を支援します。

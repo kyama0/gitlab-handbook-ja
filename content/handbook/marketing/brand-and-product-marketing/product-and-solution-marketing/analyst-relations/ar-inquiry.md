@@ -5,6 +5,7 @@ upstream_sha: 9bcc3fa641f3c78cb94b2ff71f5a8170ff5b412b
 translated_at: "2026-04-30T12:00:00Z"
 translator: claude
 stale: false
+lastmod: "2024-06-27T22:14:31+00:00"
 ---
 
 ## 業界アナリストインクワイアリの実施方法

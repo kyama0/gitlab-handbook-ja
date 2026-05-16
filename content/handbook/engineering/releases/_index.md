@@ -5,6 +5,7 @@ upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
 translated_at: "2026-04-29T00:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-04-09T11:59:40-06:00"
 ---
 
 製品リリース情報をお探しですか？[リリースポスト](https://about.gitlab.com/releases/categories/releases/)、[リリースページ](https://gitlab.com/gitlab-org/gitlab/-/releases)、[新機能](https://docs.gitlab.com/ee/administration/whats-new.html)、[変更履歴](https://gitlab.com/gitlab-org/gitlab/blob/master/CHANGELOG.md)、または[機能と非推奨の概要](https://gitlab-com.gitlab.io/cs-tools/gitlab-cs-tools/what-is-new-since/)をご覧ください。

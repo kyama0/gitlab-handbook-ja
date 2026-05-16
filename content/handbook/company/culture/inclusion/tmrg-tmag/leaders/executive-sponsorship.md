@@ -6,6 +6,7 @@ upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T10:00:00Z"
 translator: claude
 stale: false
+lastmod: "2026-03-24T13:12:58-07:00"
 ---
 
 GitLab が認定するすべての TMxG には、戦略的なサポート、アドボカシー、可視性を提供する E-Group メンバー、Functional Leader、または VP である**エグゼクティブスポンサー**が存在します。

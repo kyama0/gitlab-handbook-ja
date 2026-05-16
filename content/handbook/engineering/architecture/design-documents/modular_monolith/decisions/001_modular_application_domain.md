@@ -8,6 +8,7 @@ upstream_sha: 5fcdd102793f56146077c82f37a89171dea6d0ba
 translated_at: "2026-04-27T13:25:33Z"
 translator: claude
 stale: false
+lastmod: "2024-08-23T13:02:20+00:00"
 ---
 
 ## コンテキスト
