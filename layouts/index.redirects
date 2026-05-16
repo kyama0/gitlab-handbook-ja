@@ -6,11 +6,11 @@
 # See: https://developers.cloudflare.com/pages/configuration/redirects/
 
 # Image proxy: 翻訳済みコンテンツの /images/... (Markdown と raw HTML
-# 双方) を外部ホスト (params.image_base_url、dev は handbook.gitlab.com、
+# 双方) を外部ホスト (params.imageBaseUrl、dev は handbook.gitlab.com、
 # prod は CI で R2 公開 URL に上書き) へ 301 リダイレクト。
 # Markdown 画像は render hook が build 時に絶対 URL に書き換えるが、
 # 生 HTML <img src="/images/..."> は素通しなのでこのルールで救済。
-{{- $imageBase := strings.TrimSuffix "/" (site.Params.image_base_url | default "https://handbook.gitlab.com") }}
+{{- $imageBase := strings.TrimSuffix "/" (site.Params.imageBaseUrl | default "https://handbook.gitlab.com") }}
 /images/* {{ $imageBase }}/images/:splat 301
 
 # Please add in chronological order by removal date following https://handbook.gitlab.com/docs/development/#redirects.

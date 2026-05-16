@@ -64,7 +64,12 @@ jobs:
           # ベース URL を R2 公開エンドポイントに上書きする。未設定だと
           # config.yaml の default (handbook.gitlab.com) が使われ、本家への
           # ホットリンクになってしまう。
-          HUGO_PARAMS_image_base_url: ${{ vars.PUBLIC_R2_BASE }}
+          # 注: param 名は camelCase (imageBaseUrl)。`HUGO` の直後 1 文字が
+          # delimiter として推論される Hugo の仕様上、snake_case 名を
+          # `HUGO_PARAMS_xxx` で渡すと `params.xxx.yyy.zzz` にネスト解釈
+          # されて効かないため。
+          # https://gohugo.io/configuration/introduction/
+          HUGO_PARAMS_imageBaseUrl: ${{ vars.PUBLIC_R2_BASE }}
 
       - name: Pagefind index (CJK-aware static site search)
         run: npx pagefind --site public
