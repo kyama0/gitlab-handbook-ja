@@ -13,8 +13,8 @@ lastmod: "2024-06-06T07:14:15+00:00"
 
 | プロパティ | 値 |
 |----------|-------|
-| 作成日       | 2020年9月17日 |
-| 終了日   | 2020年10月30日 |
+| 作成日       | 2020 年 9 月 17 日 |
+| 終了日   | 2020 年 10 月 30 日 |
 | Slack        | [#wg_experimentation](https://gitlab.slack.com/archives/C01BJUKUEDN)（GitLab 内部）- アーカイブ済み |
 | Google Doc   | [実験 ワーキンググループ アジェンダ](https://drive.google.com/drive/search?q=title:%22Experimentation%20Working%20Group%22)（GitLab 内部） |
 

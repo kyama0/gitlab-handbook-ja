@@ -16,11 +16,11 @@ lastmod: "2025-12-01T16:21:31-05:00"
 
 GitLab は、DevOps Platform カテゴリを創出するという最初の 10 年ビジョンを達成しました。Gartner® が初めて「Gartner® Magic Quadrant™ for DevOps Platforms」カテゴリを導入したことで、これが公式なものとなりました。GitLab は[リーダー](https://about.gitlab.com/blog/2023/06/07/gitlab-leader-gartner-magic-quadrant-devops-platforms/)として認定され、実行能力の軸で最上位に位置付けられました。Gartner が GitLab を DevOps Platforms の Magic Quadrant のリーダーと名指ししたことは、包括的なソフトウェア開発・デリバリープラットフォームを構築することと、DevOps Platform カテゴリを成熟させる上での私たちの役割において成功を収めたことの認定であると考えています。
 
-会計年度 2024 年第 3 四半期に、GitLab は初めて非 GAAP 営業利益を達成しました。GitLab の最高財務責任者である Brian Robins は[こう述べています](https://ir.gitlab.com/news-releases/news-release-details/gitlab-reports-third-quarter-fiscal-year-2024-financial-results)。「セキュリティ・コンプライアンス・AI・エンタープライズアジャイルプランニングを含む主要な製品分野への投資を継続しながら、初の四半期における非 GAAP 営業利益を共有できることを嬉しく思います。」
+会計年度 2024 年第 3 四半期に、GitLab は初めて非 GAAP 営業利益を達成しました。GitLab の最高財務責任者である Brian Robins は[こう述べています](https://ir.gitlab.com/news-releases/news-release-details/gitlab-reports-third-quarter-fiscal-year-2024-financial-results)。「セキュリティ・コンプライアンス・ AI ・エンタープライズアジャイルプランニングを含む主要な製品分野への投資を継続しながら、初の四半期における非 GAAP 営業利益を共有できることを嬉しく思います。」
 
 ### *2021 年: GitLab 10 周年*
 
-今年、最初の[コミット](https://gitlab.com/gitlab-org/gitlab-foss/-/commit/9ba1224867665844b117fa037e1465bb706b3685)から 10 年という節目を迎え、GitLab の 10 周年を祝いました。コミュニティへの貢献への注力は引き続き強く、2,500 人以上のより広いコミュニティのコントリビューターから月平均 650 件以上のコードコントリビューションがありました。DevOps Platform のおかげで、2021 年 8 月時点で 100 万人以上のアクティブライセンスユーザーと推定 3,000 万人以上の登録ユーザーへと成長しました。GitLab という会社は、世界 65 か国・地域で 1,400 人以上のチームメンバーへと成長しました。パンデミック開始以来、企業・VC・大学との 60 回以上のコラボレーティブなリモートワーク議論をリードすることで、リモートワークの利点についてビジネスを支援・教育し続けました。
+今年、最初の[コミット](https://gitlab.com/gitlab-org/gitlab-foss/-/commit/9ba1224867665844b117fa037e1465bb706b3685)から 10 年という節目を迎え、GitLab の 10 周年を祝いました。コミュニティへの貢献への注力は引き続き強く、2,500 人以上のより広いコミュニティのコントリビューターから月平均 650 件以上のコードコントリビューションがありました。DevOps Platform のおかげで、2021 年 8 月時点で 100 万人以上のアクティブライセンスユーザーと推定 3,000 万人以上の登録ユーザーへと成長しました。GitLab という会社は、世界 65 か国・地域で 1,400 人以上のチームメンバーへと成長しました。パンデミック開始以来、企業・ VC ・大学との 60 回以上のコラボレーティブなリモートワーク議論をリードすることで、リモートワークの利点についてビジネスを支援・教育し続けました。
 
 2021 年 10 月 14 日、GitLab Inc. は Nasdaq Global Market（NASDAQ: GTLB）に[上場企業となりました](https://about.gitlab.com/blog/2021/10/14/gitlab-inc-takes-the-devops-platform-public/)。
 
@@ -40,7 +40,7 @@ Haydn Mackay が、ニューオーリンズで開催された GitLab Contribute 
 
 ### *2017 年: GitLab ストーリータイム*
 
-GitLab のチームメンバーが最初の 5 人のチームメンバーにインタビューし、創業初期のエピソードを聞きました。[ストーリータイム Part 1](https://www.youtube.com/watch?v=DSmqOQ6eLB4) では、最初のチームメンバーの採用・イテレーションを学ぶこと・事業停止の考え・Y Combinator・バリューの作り方について話しています。[ストーリータイム Part 2](https://www.youtube.com/watch?v=4pe6_d9ZTC4) では、サプライズ独身パーティー・競合他社からの話し合いの申し出・白衣と安全眼鏡を使ったプレゼンテーション・最初の GitLab サミット・マウンテンビューの家での体験などの愉快なエピソードを聞くことができます。
+GitLab のチームメンバーが最初の 5 人のチームメンバーにインタビューし、創業初期のエピソードを聞きました。[ストーリータイム Part 1](https://www.youtube.com/watch?v=DSmqOQ6eLB4) では、最初のチームメンバーの採用・イテレーションを学ぶこと・事業停止の考え・ Y Combinator ・バリューの作り方について話しています。[ストーリータイム Part 2](https://www.youtube.com/watch?v=4pe6_d9ZTC4) では、サプライズ独身パーティー・競合他社からの話し合いの申し出・白衣と安全眼鏡を使ったプレゼンテーション・最初の GitLab サミット・マウンテンビューの家での体験などの愉快なエピソードを聞くことができます。
 
 ### *2016 年: 成長*
 
@@ -117,7 +117,7 @@ Harvard Business School のケーススタディ[インタビュー](https://you
 >
 > サンフランシスコにオフィスを構えました。15 人を収容できました。最初に来たのは、しばらくの間会社にいた営業担当者でした。数日後には来なくなり、同じパターンが続きました。人々は数日来て、来なくなりました。
 >
-> 私たちはシステムを正しく使うことに慣れていて、リモートワークのスタイルを使っていたからです。Slack・ビデオ通話・Google Docs・GitLab の Issue・GitLab のマージリクエストを使っていて、[その働き方](/handbook/company/culture/all-remote/)に慣れていただけです。
+> 私たちはシステムを正しく使うことに慣れていて、リモートワークのスタイルを使っていたからです。Slack ・ビデオ通話・ Google Docs ・ GitLab の Issue ・ GitLab のマージリクエストを使っていて、[その働き方](/handbook/company/culture/all-remote/)に慣れていただけです。
 >
 > 何度か対立することがありました。主にエグゼクティブ採用での話です。採用した後に他のエグゼクティブと話すと、「これが私の最初のリモート会社でもあるが、以前の職場より人々に連絡を取りやすい。ここの人々はメッセージへの返信と情報の読み取りがとても上手だ」と言うのを聞きました。
 >

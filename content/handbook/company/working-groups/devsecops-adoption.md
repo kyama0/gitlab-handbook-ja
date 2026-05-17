@@ -1,6 +1,6 @@
 ---
 title: "DevSecOps 採用"
-description: "購入後 3 ヶ月以内に Ultimate 顧客が DevSecOps を正常に採用できるようにするという Top 12 クロスファンクショナルイニシアティブに焦点を当てたワーキンググループ"
+description: "購入後 3 ヶ月以内に Ultimate プランの顧客が DevSecOps を正常に採用できるようにするという Top 12 クロスファンクショナルイニシアティブに焦点を当てたワーキンググループ"
 upstream_path: /handbook/company/working-groups/devsecops-adoption/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T00:00:00Z"
@@ -13,7 +13,7 @@ lastmod: "2024-05-14T21:58:35+00:00"
 
 | プロパティ      | 値             |
 |-----------------|----------------|
-| 作成日          | 2022年10月19日   |
+| 作成日          | 2022 年 10 月 19 日   |
 | 終了日          | TBD |
 | Slack           | #wg_devsecops_adoption（社内からのみアクセス可） |
 | エピック         | [DevSecOps Adoption Working Group](https://gitlab.com/groups/gitlab-com/sales-team/-/epics/59)（社内からのみアクセス可） |

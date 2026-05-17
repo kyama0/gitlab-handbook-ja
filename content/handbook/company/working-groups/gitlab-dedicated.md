@@ -118,15 +118,15 @@ GitLab Dedicated イニシアティブ ワーキンググループは、Dedicate
 
 | ワーキンググループの機能（アルファベット順）  | チームメンバー        | 肩書き  |
 |-----------------------------------------|--------------------|--------------------------------------------------|
-| 機能リード: チャネルパートナー       | Honora Duncan      | Senior Channel Services Manager                  |
-| 機能リード: Comms & PMM            | Saumya Upadhyaya   | Principal Product Marketing Manager              |
-| 機能リード: Enablement             | Kelley Shirazi     | Manager, Sales Enablement                        |
-| 機能リード: エンジニアリング            | Marin Jankovski    | Director, Infrastructure Platforms               |
-| 機能リード: FP&A                   | Shuang Shackleford | Director, FP&A                                   |
-| 機能リード: ポストセールス（CS/PS）     | Brian Will         | Senior Manager, Professional Services            |
-| 機能リード: 価格設定・フルフィルメント  | Justin Farris      | Senior Director, Product Monetization            |
-| 機能リード: プロダクト                | Andrew Thomas      | Principal Product Manager                        |
-| 機能リード: セールス                  | Aileen Lu          | Director, Sales Strategy                         |
+| ファンクショナルリード: チャネルパートナー       | Honora Duncan      | Senior Channel Services Manager                  |
+| ファンクショナルリード: Comms & PMM            | Saumya Upadhyaya   | Principal Product Marketing Manager              |
+| ファンクショナルリード: Enablement             | Kelley Shirazi     | Manager, Sales Enablement                        |
+| ファンクショナルリード: エンジニアリング            | Marin Jankovski    | Director, Infrastructure Platforms               |
+| ファンクショナルリード: FP&A                   | Shuang Shackleford | Director, FP&A                                   |
+| ファンクショナルリード: ポストセールス（CS/PS）     | Brian Will         | Senior Manager, Professional Services            |
+| ファンクショナルリード: 価格設定・フルフィルメント  | Justin Farris      | Senior Director, Product Monetization            |
+| ファンクショナルリード: プロダクト                | Andrew Thomas      | Principal Product Manager                        |
+| ファンクショナルリード: セールス                  | Aileen Lu          | Director, Sales Strategy                         |
 | メンバー                                  | Josh Lambert       | Director of Product, Enablement                  |
 | メンバー                                  | Jake Bielecki      | VP, Sales Strategy & Analytics                   |
 
@@ -134,7 +134,7 @@ GitLab Dedicated イニシアティブ ワーキンググループは、Dedicate
 
 ### 機能 DRI の責任
 
-[ワーキンググループページの機能リード](/handbook/company/working-groups#required-roles)を参照してください。
+[ワーキンググループページのファンクショナルリード](/handbook/company/working-groups#required-roles)を参照してください。
 
 機能 DRI は、[Epic オーナーの責任](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#epic-owner-responsibilities)と[Epic 構造](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/#epic-structure)に記載されているプロセスに従って、各機能の Epic を維持する責任があります。
 

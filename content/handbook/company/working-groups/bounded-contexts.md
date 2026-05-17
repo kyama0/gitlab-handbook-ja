@@ -64,7 +64,7 @@ lastmod: "2024-07-13T01:07:30+00:00"
 
 ### 詳細
 
-ワーキンググループは、Ruby コードベース、特に `app/` と `lib/` フォルダのドメインコードをマッピングし、バウンデッドコンテキストのリストを作成します。[六角形アーキテクチャ](https://docs.gitlab.com/ee/architecture/blueprints/modular_monolith/hexagonal_monolith/index.html)のドメインレイヤー（コア）を主な対象としたいため、最初は `app/controllers` と `app/views` を除外する場合があります。
+ワーキンググループは、Ruby コードベース、特に `app/` と `lib/` フォルダのドメインコードをマッピングし、バウンデッドコンテキストのリストを作成します。[ヘキサゴナルアーキテクチャ](https://docs.gitlab.com/ee/architecture/blueprints/modular_monolith/hexagonal_monolith/index.html)のドメインレイヤー（コア）を主な対象としたいため、最初は `app/controllers` と `app/views` を除外する場合があります。
 
 コードベースのマッピングプロセスでは以下を実施します：
 

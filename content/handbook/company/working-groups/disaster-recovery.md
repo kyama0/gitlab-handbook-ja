@@ -14,9 +14,9 @@ lastmod: "2025-12-19T10:03:11+00:00"
 
 | プロパティ       | 値                                                           |
 | -------------- | ------------------------------------------------------------ |
-| 再開日          | 2022年8月1日                                                 |
-| 作成日          | 2020年11月11日                                               |
-| 終了日          | 2025年1月6日 |
+| 再開日          | 2022 年 8 月 1 日                                                 |
+| 作成日          | 2020 年 11 月 11 日                                               |
+| 終了日          | 2025 年 1 月 6 日 |
 | Slack          | [#wg_disaster-recovery](https://gitlab.slack.com/archives/C01D6Q0DHAL)（社内からのみアクセス可） |
 | Google Doc     | [ワーキンググループ アジェンダ](https://docs.google.com/document/d/1dLgmLlvET5WyWF0CpX5JUxiyQKyDzctocs7unwLueY8)（社内からのみアクセス可） |
 | 概要 & ステータス | [内部ハンドブック](https://internal.gitlab.com/handbook/engineering/disaster-recovery/) |

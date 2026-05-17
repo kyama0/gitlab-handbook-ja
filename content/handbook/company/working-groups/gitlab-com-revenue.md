@@ -13,8 +13,8 @@ lastmod: "2023-09-01T13:37:05+01:00"
 
 | プロパティ     | 値 |
 |--------------|-------|
-| 作成日 | 2019年3月27日 |
-| 終了日   | 2019年6月27日 |
+| 作成日 | 2019 年 3 月 27 日 |
+| 終了日   | 2019 年 6 月 27 日 |
 | Slack        | [#wg_dot-com-revenue](https://gitlab.slack.com/messages/CHACKQLQG)（社内からのみアクセス可能） |
 | Google Doc   | [GitLab.com 収益ワーキンググループアジェンダ](https://docs.google.com/document/d/1kur419WeY_tIVX4EqtNSiXWOuLR-VYv8-8WsNdyyVoM/edit#)（社内からのみアクセス可能） |
 

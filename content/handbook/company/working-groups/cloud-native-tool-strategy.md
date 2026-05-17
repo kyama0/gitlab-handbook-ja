@@ -1,6 +1,6 @@
 ---
 title: "クラウドネイティブツール戦略 ワーキンググループ"
-description: "GitLab がフィーチャーベロシティを加速し、クラウドネイティブ技術の可用性メリットを活用するための新技術を採用する方法について説明します！"
+description: "GitLab が機能ベロシティを加速し、クラウドネイティブ技術の可用性メリットを活用するための新技術を採用する方法について説明します！"
 upstream_path: /handbook/company/working-groups/cloud-native-tool-strategy/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T00:00:00Z"
@@ -13,8 +13,8 @@ lastmod: "2024-05-14T21:58:35+00:00"
 
 | プロパティ        | 値           |
 |-----------------|-----------------|
-| 作成日           | 2021年5月7日 |
-| 目標終了日        | 2022年1月1日 |
+| 作成日           | 2021 年 5 月 7 日 |
+| 目標終了日        | 2022 年 1 月 1 日 |
 | Slack           | #wg_cloud-native-tools（GitLab チームメンバーのみアクセス可能）|
 | Google Doc      | ワーキンググループ アジェンダ（GitLab チームメンバーのみアクセス可能）|
 | ドキュメント      | TBD |
@@ -50,11 +50,11 @@ lastmod: "2024-05-14T21:58:35+00:00"
 | コントリビューター      | Jackie Porter | Group Manager, Products|
 | コントリビューター      | Kenny Johnston  |  Senior Director of Product, Ops  |
 | コントリビューター      | Sam Goldstein  |  Director of Engineering, Ops  |
-| 機能リード             |   |   |
-| 機能リード             |   |   |
-| 機能リード             |   |   |
-| 機能リード             |   |   |
-| 機能リード             |   |   |
+| ファンクショナルリード             |   |   |
+| ファンクショナルリード             |   |   |
+| ファンクショナルリード             |   |   |
+| ファンクショナルリード             |   |   |
+| ファンクショナルリード             |   |   |
 
 ## ワーキンググループ
 

@@ -49,19 +49,19 @@ lastmod: "2023-12-18T14:49:14+00:00"
 
 ## 役割と責任
 
-機能リードの責任：
+ファンクショナルリードの責任：
 
 - 各部門/サブ部門の個々のステークホルダーのニーズを代表すること
 - 各部門/サブ部門から特定の提案に対するフィードバックを収集・統合すること
 - ワーキンググループの成果（あれば）を伝達し、各部門/サブ部門からの質問に回答すること
 
-機能リードは理想的には、策定されるポリシーの影響を受ける可能性のある IC（個人貢献者）であることが望ましいですが、上記の方法で部門やサブ部門を代表できる人であれば誰でも歓迎します。
+ファンクショナルリードは理想的には、策定されるポリシーの影響を受ける可能性のある IC（個人貢献者）であることが望ましいですが、上記の方法で部門やサブ部門を代表できる人であれば誰でも歓迎します。
 
 | ワーキンググループの役割 | 人物 | ステークホルダー部門 | 役職 |
 |-|-|-|-|
 | エグゼクティブスポンサー | Tim Zallmann | Development | Senior Director |
 | ファシリテーター | Sam Beckham | Manage:Foundations | Engineering Manager |
-| 機能リード | Miguel Rincon | Verify::Runner | Senior Frontend Engineer |
+| ファンクショナルリード | Miguel Rincon | Verify::Runner | Senior Frontend Engineer |
 | メンバー | Sheldon Led | Fulfillment | Senior Frontend Engineer |
 | メンバー | Adeline Yeung | Infrastructure | Site Reliability Engineer |
 | メンバー | Savas Vedova | Govern | Senior Frontend Engineer |

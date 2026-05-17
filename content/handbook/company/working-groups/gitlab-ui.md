@@ -13,8 +13,8 @@ lastmod: "2025-02-10T07:09:07+00:00"
 
 | プロパティ     | 値 |
 |--------------|-------|
-| 作成日 | 2019年3月26日 |
-| 終了日   | 2020年7月24日 |
+| 作成日 | 2019 年 3 月 26 日 |
+| 終了日   | 2020 年 7 月 24 日 |
 | Slack        | [#wg_gitlab-ui](https://gitlab.slack.com/archives/CH9QG9TAQ/p1553587707000300)（社内からのみアクセス可能） |
 | Google Doc   | [gitlab-ui ワーキンググループアジェンダ](https://docs.google.com/document/d/1CBg2XXH6l8h5sTKXSwQXEUD46HzEJVU8nsqYwZbW6O8/edit)（社内からのみアクセス可能） |
 | Epic         | [gitlab-ui コードベース](https://gitlab.com/groups/gitlab-org/-/epics/950) |

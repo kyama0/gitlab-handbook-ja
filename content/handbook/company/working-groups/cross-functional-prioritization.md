@@ -41,8 +41,8 @@ lastmod: "2026-03-02T07:33:04-05:00"
 - [ ] Type:Undefined MR を 0% まで削減する [Issue](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/13759)
 - [ ] サブタイプラベルを定義して実装する [Issue](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/13650)
 - [ ] サブタイプのない Issue とマージリクエストをトレンドで追跡・特定するダッシュボードを追加する [Issue](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/13781)
-- [ ] Undefined MR と Undefined Issue を 0% にし、9月 PI レビューで単一のクロスファンクショナルステージ（Create）に MR サブタイプを適用する。
-- [ ] 9月の PI レビューから Create のフィードバックを取り込んでイテレーションを実施し、10月に全ステージへロールアウトする。
+- [ ] Undefined MR と Undefined Issue を 0% にし、9 月 PI レビューで単一のクロスファンクショナルステージ（Create）に MR サブタイプを適用する。
+- [ ] 9 月の PI レビューから Create のフィードバックを取り込んでイテレーションを実施し、10 月に全ステージへロールアウトする。
 - [x] 全グループがダッシュボードをレビューし、ステークホルダーが意思決定に影響を与えられる方法で定期的（月次）に議論している。[Issue](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/13304)
 - [x] Development エンジニアリングマネージャーが PM にメンテナンスの優先順位を提供している [Issue](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/13304)
 - [x] Quality リードが PM にバグの優先順位を提供している [Issue](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/13304)
@@ -60,7 +60,7 @@ lastmod: "2026-03-02T07:33:04-05:00"
 
 残りの終了条件をフェーズ別にロールアウトします。このアプローチにより、変更の対象を単一のステージに限定し、迅速なイテレーションを可能にし、R&D 全体の変更による混乱を軽減します。
 
-**フェーズ 1: Create が 9月の Create PI レビューまでに全終了条件を完了する**
+**フェーズ 1: Create が 9 月の Create PI レビューまでに全終了条件を完了する**
 
 1. Undefined MR をゼロにすることを含む
 1. Undefined Issue をゼロにすることを含む
@@ -69,11 +69,11 @@ lastmod: "2026-03-02T07:33:04-05:00"
 
 フェーズ 1 の一環として、Create からの意見とフィードバックを積極的にレビューします。主に Darva Satcher（Dir of Eng）、Sarah Waldner（Create GPM）、Marcel van Remmerden（UX Manager）、Ramya Authappan（QEM）からの意見を取り込み、フェーズ 2 に移行する前にイテレーションを行います。
 
-**フェーズ 2: 10月の PI レビューまでに全ステージ/セクションへロールアウトする**
+**フェーズ 2: 10 月の PI レビューまでに全ステージ/セクションへロールアウトする**
 
 基本的にフェーズ 1 の内容全て（全ステージ/セクション向けの任意のイテレーションを含む）。
 
-注意: Create 以外のステージが 10月以前に終了条件を完了することを妨げるものではありません。多くのチームが自主的に取り組んでいます。例えば、Wayne は Secure を活性化し、David は PLT 全体に PI レビューでこれを採用し始めるよう要求しています。ワーキンググループのエネルギーはフェーズ 1 で Create に集中させます。
+注意: Create 以外のステージが 10 月以前に終了条件を完了することを妨げるものではありません。多くのチームが自主的に取り組んでいます。例えば、Wayne は Secure を活性化し、David は PLT 全体に PI レビューでこれを採用し始めるよう要求しています。ワーキンググループのエネルギーはフェーズ 1 で Create に集中させます。
 
 ### ロールと責任
 
@@ -81,15 +81,15 @@ lastmod: "2026-03-02T07:33:04-05:00"
 |-----------------------|------------------------------------------------------|------------------------------------------------------------|
 | エグゼクティブスポンサー | Ashley Kramer                                        | Acting CTO                                                 |
 | ファシリテーター        | Justin Farris                                        | Senior Director of Product Management |
-| 機能リード             | Wayne Haber                                          | Director of Engineering |
-| 機能リード             | Christopher Lefelhocz                                | VP of Development                                          |
-| 機能リード             | Valerie Karnes                                       | Director of Product Design |
-| 機能リード             | Christie Lenneville                                  | VP of UX |
-| 機能リード             | Mek Stittri                                          | VP of Quality |
-| 機能リード             | David DeSanto                                        | VP of Product Management |
-| 機能リード             | Farnoosh Seifoddini                                  | Head of Product Operations |
-| 機能リード             | Lily Mai                                             | Staff Engineering Analyst |
-| 機能リード             | Tanya Pazitny                                        | Director of Quality Engineering |
+| ファンクショナルリード             | Wayne Haber                                          | Director of Engineering |
+| ファンクショナルリード             | Christopher Lefelhocz                                | VP of Development                                          |
+| ファンクショナルリード             | Valerie Karnes                                       | Director of Product Design |
+| ファンクショナルリード             | Christie Lenneville                                  | VP of UX |
+| ファンクショナルリード             | Mek Stittri                                          | VP of Quality |
+| ファンクショナルリード             | David DeSanto                                        | VP of Product Management |
+| ファンクショナルリード             | Farnoosh Seifoddini                                  | Head of Product Operations |
+| ファンクショナルリード             | Lily Mai                                             | Staff Engineering Analyst |
+| ファンクショナルリード             | Tanya Pazitny                                        | Director of Quality Engineering |
 | メンバー               | Jennifer Li                                         | Engineering Manager, Engineering Productivity |
 | メンバー               | John Hope                                            | Engineering Manager, Plan:Product Planning & Certify |
 | メンバー               | Matt Wilson                                          | Senior Product Manager, Secure |
@@ -103,7 +103,7 @@ lastmod: "2026-03-02T07:33:04-05:00"
 
 ## マルチモーダルコミュニケーション {#multi-modal-communication}
 
-- フィードバックを求めるために、プロダクトに影響を与える全てのマージリクエストで（最低でも）関心のあるワーキンググループの機能リードと `gl-product-leadership` にタグを付けます。
+- フィードバックを求めるために、プロダクトに影響を与える全てのマージリクエストで（最低でも）関心のあるワーキンググループのファンクショナルリードと `gl-product-leadership` にタグを付けます。
 - マージリクエストをコードオーナーのレビューおよびマージのために提出する前に、フィードバックを収集・対応するために 2 営業日待ちます。
 - ワーキンググループの Slack チャンネルおよび/またはワーキンググループのスタンドアップミーティングで全マージリクエストをアナウンスして認知を高めます。
 - 大きな変更と状況の更新は、`#product` `#vp-development` `#ux_leadership` `#quality-managers` `#eng-managers` `#development` の Slack チャンネルと、週次エンジニアリング作業レビュードキュメントでアナウンスします。
