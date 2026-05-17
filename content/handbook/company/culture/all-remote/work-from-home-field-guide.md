@@ -14,7 +14,7 @@ lastmod: "2025-04-10T15:50:45-07:00"
 <div class="container">
 <div class="row align-items-center">
     <div class="col">
-        <p class="lead">多様なチームに対して公平かつ包括的な体験を生み出したいリーダーと雇用主は、どこで行われるとしても仕事をサポートする必要があります。今日、それはホームオフィス、コワーキングスペース、あるいは外出先かもしれません。リモートワークへのシフトは何年にもわたって成熟してきましたが、COVID-19パンデミックがその普及を急速に加速させました。リモートワークが定着した今、ビジネスリーダーはどのようにして組織を導くことができるでしょうか？</p>
+        <p class="lead">多様なチームに対して公平かつ包括的な体験を生み出したいリーダーと雇用主は、どこで行われるとしても仕事をサポートする必要があります。今日、それはホームオフィス、コワーキングスペース、あるいは外出先かもしれません。リモートワークへのシフトは何年にもわたって成熟してきましたが、COVID-19 パンデミックがその普及を急速に加速させました。リモートワークが定着した今、ビジネスリーダーはどのようにして組織を導くことができるでしょうか？</p>
         <p class="lead">このフィールドガイドがそのブループリントです。</p>
         <p class="lead">リモートワークについて<a href="">もっと詳しく</a>、または <a href="https://about.gitlab.com/resources/downloads/remote-work-report-2021.pdf" class="btn btn-primary">完全レポートをダウンロード</a>
     </div>
@@ -28,7 +28,7 @@ lastmod: "2025-04-10T15:50:45-07:00"
 <div class="row align-items-center">
     <div class="col">
         <h2 class="h1 my-4">プロジェクトの背景</h2>
-        <p class="h3">GitLabは、<a href="guide/">リモートチームに関するGitLabの専門知識</a>とベストプラクティスと、Herman Millerのワークスペースとデザインに関する深い理解を組み合わせて、このフィールドガイドをHerman Millerと共同制作できることを嬉しく思います。</a>
+        <p class="h3">GitLab は、<a href="guide/">リモートチームに関する GitLab の専門知識</a>とベストプラクティスと、Herman Miller のワークスペースとデザインに関する深い理解を組み合わせて、このフィールドガイドを Herman Miller と共同制作できることを嬉しく思います。</a>
     </div>
     <div class="col text-center">
         <img src="https://about.gitlab.com/images/work-from-home-field-guide/herman-miller-image.jpeg" alt="">
@@ -58,7 +58,7 @@ lastmod: "2025-04-10T15:50:45-07:00"
     </div>
     <div class="col">
         <h3 class="h2 my-4">一つのサイズですべてに対応することはできない</h3>
-        <p class="lead">チームの各メンバーは、仕事を行う上で異なる機器のニーズ、スペースの制限、ロケーションの好みを持っています。重要なのは、これらの決断を自分でできるよう自律性とエージェンシーを提供し、フィードバックにオープンであり、イテレーションの文化を作ることです。</p>
+        <p class="lead">チームの各メンバーは、仕事を行う上で異なる機器のニーズ、スペースの制限、ロケーションの好みを持っています。重要なのは、これらの決断を自分でできるよう自律性と主体性を与え、フィードバックにオープンであり、イテレーションの文化を作ることです。</p>
     </div>
 
 </div>
@@ -75,5 +75,5 @@ lastmod: "2025-04-10T15:50:45-07:00"
 
 </div>
 
-<!-- include omitted: includes/take-gitlab-for-a-spin.md (no localized version under content/ja/) -->
+{{% include "includes/take-gitlab-for-a-spin.md" %}}
 

@@ -1,6 +1,6 @@
 ---
 title: "TMAG - 世代間理解"
-description: "私たちは2020年夏に設立された世代間理解リソースグループ（TMAG）です。詳細をご覧ください！"
+description: "私たちは 2020 年夏に設立された世代間理解リソースグループ（TMAG）です。詳細をご覧ください！"
 upstream_path: /handbook/company/culture/inclusion/tmrg-tmag/tmag-gitlab-generational-understanding/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T10:00:00Z"

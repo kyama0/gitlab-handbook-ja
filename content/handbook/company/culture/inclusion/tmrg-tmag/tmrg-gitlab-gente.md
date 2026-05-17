@@ -99,8 +99,8 @@ Gente コミュニティについてもっと学ぶ
 - [TMRG 改名 Issue](https://gitlab.com/gitlab-com/latinx-tmrg/-/issues/40)
 - [Latinx とは？](https://www.merriam-webster.com/wordplay/word-history-latinx)
 - [LTX Fest オンデマンド](https://my.ltxconnect.org/ltx-fest-on-demand/) – テクノロジー、アドボカシー、起業家精神における Latinx 最大の集まり。
-- GitLab に[GitLab の翻訳](https://translate.gitlab.com/)に参加してインクルーシビティを促進します。
-- [LinkedIn ラーニング - テックにおけるリーダーシップ](https://www.linkedin.com/learning/leadership-in-tech) – Erica Lockheimer が LinkedIn の VP エンジニアリングまで成功裏に昇進した経験をもとに、テックの活気ある挑戦的な世界で長いキャリアを築くために何が必要かについて、自身の職業旅路に刺激を与えた他のリーダーたちにインタビューします。
+- [GitLab 製品の翻訳](https://translate.gitlab.com/)に参加して、インクルーシビティの推進に貢献しましょう。
+- [LinkedIn ラーニング - テックにおけるリーダーシップ](https://www.linkedin.com/learning/leadership-in-tech) – Erica Lockheimer が LinkedIn の VP エンジニアリングまで成功裏に昇進した経験をもとに、テックの活気ある挑戦的な世界で長いキャリアを築くために何が必要かについて、自身のキャリアに刺激を与えた他のリーダーたちにインタビューします。
 
 ## ラーニング & デベロップメントリソース
 

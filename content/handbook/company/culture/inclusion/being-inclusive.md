@@ -40,7 +40,7 @@ lastmod: "2024-07-09T00:48:53+00:00"
 
 ## 包括性トレーニング
 
-2019年12月に、包括性トレーニングを3セッション開催しました。以下から[スライドデッキ](https://docs.google.com/presentation/d/1WujXXxNDorIXB3NJeEnneC0dnOoqdFtcL6OhM-zWt4s/edit?usp=sharing)と[アジェンダ](https://docs.google.com/document/d/1za96EEONFnOp-cI1kflIstE-MIAKSlsYZbivjnhr6ys/edit?usp=sharing)に沿った録画セッションをご覧いただけます。
+2019 年 12 月に、包括性トレーニングを 3 セッション開催しました。以下から[スライドデッキ](https://docs.google.com/presentation/d/1WujXXxNDorIXB3NJeEnneC0dnOoqdFtcL6OhM-zWt4s/edit?usp=sharing)と[アジェンダ](https://docs.google.com/document/d/1za96EEONFnOp-cI1kflIstE-MIAKSlsYZbivjnhr6ys/edit?usp=sharing)に沿った録画セッションをご覧いただけます。
 
 
 {{< youtube "gsQ2OsmgqVM" >}}
@@ -48,4 +48,4 @@ lastmod: "2024-07-09T00:48:53+00:00"
 
 ## 包括性ナレッジ評価
 
-どなたでも GitLab の包括性認定を取得できます。認定を取得するには、**[包括性ナレッジ評価クイズ](https://docs.google.com/forms/d/e/1FAIpQLSet0MW_GSOJUQkD3EMBLrSm3POKU6Y4opk_zFq31rFLCcWzwQ/viewform)**を完了し、80%以上を獲得する必要があります。クイズに合格すると、個人のLinkedInやTwitterページで共有できる認定書がメールで届きます。ご質問は、L&Dチーム（`learning@gitlab.com`）までお問い合わせください。
+どなたでも GitLab の包括性認定を取得できます。認定を取得するには、**[包括性ナレッジ評価クイズ](https://docs.google.com/forms/d/e/1FAIpQLSet0MW_GSOJUQkD3EMBLrSm3POKU6Y4opk_zFq31rFLCcWzwQ/viewform)**を完了し、80%以上を獲得する必要があります。クイズに合格すると、個人の LinkedIn や Twitter ページで共有できる認定書がメールで届きます。ご質問は、L&D チーム（`learning@gitlab.com`）までお問い合わせください。
