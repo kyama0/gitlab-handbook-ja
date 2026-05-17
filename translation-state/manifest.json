@@ -13858,11 +13858,11 @@
     },
     "content/handbook/engineering/readmes/jane-gianoutsos.md": {
       "path": "content/handbook/engineering/readmes/jane-gianoutsos.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-28T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "b8039608bab7f10700fd860e15b0e7a3a467db3ab5e3d8d08d642d165cce5044",
-      "upstream_committed_at": "2024-12-13T17:52:40+00:00"
+      "upstream_sha": "a1ee4981c0c27b59a6f77f9cebe7d7c5db970900",
+      "translated_at": "2026-05-17T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "97f524d4086f019956949dfd25364306a6ca3ce889b332554206fbedaef2834e",
+      "upstream_committed_at": "2026-05-17T15:46:22+12:00"
     },
     "content/handbook/engineering/readmes/juan-silva.md": {
       "path": "content/handbook/engineering/readmes/juan-silva.md",
