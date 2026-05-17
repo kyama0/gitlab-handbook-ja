@@ -105,19 +105,29 @@ async function collectReferences(): Promise<Set<string>> {
 /**
  * Upload every image under the repo's own `static/` directory to R2 with
  * the same relative key. These are JA-specific assets (the OGP cover image
- * etc.) that don't live upstream. Runs first so it wins over upstream on
- * key conflicts via the HEAD-then-skip path in the upstream pass.
+ * etc.) that don't live upstream.
  *
- * No-op if the `static/` directory doesn't exist.
+ * Always upserts (no HEAD-then-skip): when the same key already exists in
+ * R2 — typically because a prior upstream pass uploaded the upstream
+ * version of the same path — we want the JA version to overwrite it.
+ * Skipping on existence would silently strand the upstream copy in R2 and
+ * defeat the "repo-local wins on conflict" contract this pass exists for.
+ * The number of repo-local assets is small (handful of OGP covers etc.),
+ * so the extra PUTs per deploy are negligible.
+ *
+ * No-op if the `static/` directory doesn't exist; non-ENOENT errors from
+ * the existence probe are re-thrown so permission issues stay visible.
  */
-async function uploadRepoStatic(): Promise<{ uploaded: number; skipped: number }> {
+async function uploadRepoStatic(): Promise<{ uploaded: number }> {
   let uploaded = 0;
-  let skipped = 0;
 
   try {
     await stat(REPO_STATIC);
-  } catch {
-    return { uploaded, skipped };
+  } catch (err: unknown) {
+    if ((err as NodeJS.ErrnoException).code === 'ENOENT') {
+      return { uploaded };
+    }
+    throw err;
   }
 
   for await (const rel of glob('**/*', { cwd: REPO_STATIC })) {
@@ -126,11 +136,6 @@ async function uploadRepoStatic(): Promise<{ uploaded: number; skipped: number }
 
     const key = rel.split(path.sep).join('/');
     const localPath = path.join(REPO_STATIC, rel);
-
-    if (await existsInR2(key)) {
-      skipped += 1;
-      continue;
-    }
 
     const body = await readFile(localPath);
     await s3.send(new PutObjectCommand({
@@ -144,12 +149,12 @@ async function uploadRepoStatic(): Promise<{ uploaded: number; skipped: number }
     uploaded += 1;
   }
 
-  return { uploaded, skipped };
+  return { uploaded };
 }
 
 async function main() {
   const repoStats = await uploadRepoStatic();
-  console.log(`repo-local static: ${repoStats.uploaded} uploaded, ${repoStats.skipped} already in R2.`);
+  console.log(`repo-local static: ${repoStats.uploaded} uploaded (upserted, no skip).`);
 
   const refs = await collectReferences();
   if (refs.size === 0) {
