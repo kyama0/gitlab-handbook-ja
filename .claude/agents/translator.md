@@ -25,14 +25,8 @@ model: inherit
   - upstream にあるショートコードを勝手に削除しない。逆に勝手に追加もしない。
 - HTML の `<details>`, `<summary>`, `<div>`, `<a>`, `<img>` 等は原文にあるものだけ残し、属性値（`src`, `href`, `class`, `style`）は変更しない。`alt`, `title`, `summary` のテキストは必要なら翻訳する。
 - コードブロック内の識別子・コマンド・コードは翻訳しない。
-- 固有名詞は英語のまま: GitLab, Slack, Workday, Okta, Snowplow, Zoom, Salesforce, Workato 等。
 - 一人称は原則「私たち」、指示形は「〜します」「〜してください」調。
-- 用語集:
-  - `DRI` → `DRI`（そのまま）
-  - `iteration` → `イテレーション`
-  - `handbook` → `ハンドブック`
-  - `merge request` / `MR` → `マージリクエスト` / `MR`
-  - `issue` → `Issue`（GitLab 固有用語のため英語のまま）
+- **用語・固有名詞の選択は [.claude/translation-glossary.md](../translation-glossary.md) に従う**（DRI / イテレーション / ハンドブック / マージリクエスト / Issue / Corporate Development / Product Champion / 機能（feature の訳）/ オールリモート（all-remote）/ 職務分掌（Separation of Duty）等。固有名詞・部署名は英語のまま）。新しい訳ぶれを発見した場合は、glossary 側に追記する。
 - 法的厳密さは要求しない（フッターに「正確性については英語原文を参照」と免責表示あり）が、原文にない内容を持ち込まないこと。
 - Hugo の見出し ID 構文 `## 見出し {#custom-id}` は **そのまま保持**（Hugo+Goldmark がネイティブ対応するので削除しない）。
 
