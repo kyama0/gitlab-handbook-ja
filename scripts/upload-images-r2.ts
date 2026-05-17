@@ -1,16 +1,23 @@
 /**
- * Sync images referenced by translated Markdown into the R2 bucket.
+ * Sync images referenced by translated Markdown — plus any JA-only assets
+ * sitting under the repo's own `static/` — into the R2 bucket.
  *
  * Strategy:
+ * - Repo-local `static/**` (e.g. `static/images/gitlab-cover.png`) is
+ *   uploaded *first*. These are JA-specific assets (OGP cover image etc.)
+ *   that don't exist upstream. Idempotent: skipped if already in R2.
  * - Walk `content/handbook` and collect every root-absolute asset URL
  *   (e.g. `/images/foo.svg`, both `<img src>` and `![](...)`).
  * - For each unique reference, look it up under `upstream/static/<path>`
  *   and upload to R2 with key `<path>` (no leading slash). That way the
  *   public bucket URL `<base>/<path>` matches the absolute path that
  *   lives in the Markdown source — the Hugo image render hook
- *   (layouts/_markup/render-image.html) prefixes `params.image_base_url`
+ *   (layouts/_markup/render-image.html) prefixes `params.imageBaseUrl`
  *   and the URL resolves.
  * - Idempotent: HEAD-checks each key and skips uploads that already exist.
+ * - Order matters: repo-local runs before upstream-derived, so when the
+ *   same key exists in both, the JA version wins (the upstream pass
+ *   then HEAD-checks and skips).
  *
  * Env vars (infra workflow と統一されている命名):
  *   AWS_ACCESS_KEY_ID       — R2 の access key (AWS SDK が自動で読む標準名)
@@ -51,6 +58,7 @@ const s3 = new S3Client({
 
 const TRANSLATED_ROOT = path.resolve('content/handbook');
 const UPSTREAM_STATIC = path.resolve('upstream/static');
+const REPO_STATIC = path.resolve('static');
 const IMAGE_EXT = new Set(['.png', '.jpg', '.jpeg', '.gif', '.svg', '.webp', '.avif', '.ico']);
 
 // Match `src="/..."`, `src='/...'`, `poster="/..."`, and `![alt](/...)`.
@@ -94,10 +102,58 @@ async function collectReferences(): Promise<Set<string>> {
   return refs;
 }
 
+/**
+ * Upload every image under the repo's own `static/` directory to R2 with
+ * the same relative key. These are JA-specific assets (the OGP cover image
+ * etc.) that don't live upstream. Runs first so it wins over upstream on
+ * key conflicts via the HEAD-then-skip path in the upstream pass.
+ *
+ * No-op if the `static/` directory doesn't exist.
+ */
+async function uploadRepoStatic(): Promise<{ uploaded: number; skipped: number }> {
+  let uploaded = 0;
+  let skipped = 0;
+
+  try {
+    await stat(REPO_STATIC);
+  } catch {
+    return { uploaded, skipped };
+  }
+
+  for await (const rel of glob('**/*', { cwd: REPO_STATIC })) {
+    const ext = path.extname(rel).toLowerCase();
+    if (!IMAGE_EXT.has(ext)) continue;
+
+    const key = rel.split(path.sep).join('/');
+    const localPath = path.join(REPO_STATIC, rel);
+
+    if (await existsInR2(key)) {
+      skipped += 1;
+      continue;
+    }
+
+    const body = await readFile(localPath);
+    await s3.send(new PutObjectCommand({
+      Bucket: R2_BUCKET,
+      Key: key,
+      Body: body,
+      ContentType: contentTypeFor(ext),
+      CacheControl: 'public, max-age=31536000, immutable',
+    }));
+    console.log(`uploaded (repo-local): ${key}`);
+    uploaded += 1;
+  }
+
+  return { uploaded, skipped };
+}
+
 async function main() {
+  const repoStats = await uploadRepoStatic();
+  console.log(`repo-local static: ${repoStats.uploaded} uploaded, ${repoStats.skipped} already in R2.`);
+
   const refs = await collectReferences();
   if (refs.size === 0) {
-    console.log('No image references found in translated Markdown — nothing to upload.');
+    console.log('No image references found in translated Markdown — nothing more to upload.');
     return;
   }
 
@@ -133,7 +189,7 @@ async function main() {
     uploaded += 1;
   }
 
-  console.log(`\n${uploaded} uploaded, ${skipped} already in R2, ${missing.length} missing in upstream/static.`);
+  console.log(`\nupstream refs: ${uploaded} uploaded, ${skipped} already in R2, ${missing.length} missing in upstream/static.`);
   if (missing.length > 0) {
     // upstream のマークダウン中に書かれていても upstream/static に実体が無い参照
     // （= upstream 側で元々リンク切れ。handbook.gitlab.com でも 403 で表示できない）
