@@ -8,7 +8,7 @@ stale: false
 lastmod: "2024-11-01T18:42:22+00:00"
 ---
 
-コミュニケーションは私たちの[買収プロセス](/handbook/acquisitions/acquisition-process/)の一部です。Corporate Development Championが専用の Slack チャンネル（形式: `#p-project_name-communications`）を設置します。
+コミュニケーションは私たちの[買収プロセス](/handbook/acquisitions/acquisition-process/)の一部です。Corporate Development Champion が専用の Slack チャンネル（形式: `#p-project_name-communications`）を設置します。
 
 1. 買収のクロージング前に検討すべき重要事項
     1. プレスリリースによる正式なアナウンスを行うかどうか
