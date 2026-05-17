@@ -40,7 +40,7 @@ IT コンプライアンス（SOX、GRC）
 - ITGC
 - 外部・内部監査サポート
 - ユーザーアクセスレビュー
-- 職務分離
+- 職務分掌
 
 ## <i class="fas fa-users" id="biz-tech-icons"></i> 業務の進め方
 

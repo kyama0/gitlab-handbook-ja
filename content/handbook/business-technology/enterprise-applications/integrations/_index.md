@@ -8,15 +8,17 @@ stale: false
 lastmod: "2024-10-04T11:37:24+00:00"
 ---
 
-## 私たちについて
+<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
+
+## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちについて
 
 私たちは、Enterprise Applications エコシステムに存在する複雑なインテグレーションと自動化のエコシステムを設計、構築、維持するチームです。ハイブリッドインテグレーションプラットフォームを使用してこれを実現しています。また、すべての Enterprise Application システムとインテグレーションに[標準とコンベンション](/handbook/business-technology/enterprise-applications/integrations/)を適用することで、システムインテグレーションとリアルタイムデータフローに関してガバナンスの役割も担っています。
 
-## 私たちのチーム（組織図）
+## <i class="fas fa-users" id="biz-tech-icons"></i>私たちのチーム（組織図）
 
 [私たちのチーム（組織図）](https://internal.gitlab.com/handbook/it-enterprise-applications/about-us/enterprise-applications-integrations/)
 
-## 私たちのサービス
+## <i class="fas fa-users" id="biz-tech-icons"></i> 私たちのサービス
 
 - システムインテグレーションと API
   - システム A とシステム B の接続
