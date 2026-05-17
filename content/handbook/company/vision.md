@@ -60,5 +60,5 @@ lastmod: "2025-07-17T16:59:31+00:00"
 目標達成への懸念を認識しています。これらは[懸念軽減ページ](https://internal.gitlab.com/handbook/leadership/mitigating-concerns/)に文書化しています。
 
 
-{{% include "includes/take-gitlab-for-a-spin.md" %}}
+<!-- include omitted: includes/take-gitlab-for-a-spin.md (no localized version under content/ja/) -->
 
