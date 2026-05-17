@@ -72,9 +72,9 @@ GitLabの[リモートチームソリューションページ](/handbook/company
 ![GitLab all-remote laptop illustration](/images/all-remote/gitlab-all-remote-laptop-map-illustration.jpg)
 {style="max-width: 50%"}
 
-人間は本質的に変化に抵抗します。特に、不確実性や危機の時期に強制される変化に対しては。リーダーはこの現実に正面から向き合わなければなりません。新しい現実を認識するためのオールハンズのアプローチが推奨されており、リモートモデルの成功に全員が貢献できるよう力を与えるために不可欠です。
+人間は本質的に変化に抵抗します。特に、不確実性や危機の時期に強制される変化に対しては。リーダーはこの現実に正面から向き合わなければなりません。新しい現実を認識するための全員参加型のアプローチが推奨されており、リモートモデルの成功に全員が貢献できるよう力を与えるために不可欠です。
 
-特に強い「オフィス内経験」を持つ企業にとって、リモートへの移行は*プロセス*であり、切り替えるバイナリなスイッチではないとリーダーシップが認識することが不可欠です。リーダーはイテレーションを受け入れ、うまくいっていることとそうでないことについてオープンであり、これをすべての従業員にメッセージすることに責任があります。
+特に強い「オフィス内経験」を持つ企業にとって、リモートへの移行は*プロセス*であり、切り替えるバイナリなスイッチではないとリーダーシップが認識することが不可欠です。リーダーはイテレーションを受け入れ、うまくいっていることとそうでないことについてオープンであり、これをすべての従業員に伝える責任があります。
 
 リモート企業の管理は、あらゆる企業の管理によく似ています。それは**信頼、コミュニケーション、共有された目標への会社全体のサポート**に帰着します。
 
@@ -85,7 +85,7 @@ GitLabの[リモートチームソリューションページ](/handbook/company
 *上記の[動画](https://youtu.be/IU2nTj6NSlQ)では、GitLabのHead of Remoteが[Lattice](https://lattice.com)のCEO、[Jack Altman](https://twitter.com/jaltma)と共に、在宅勤務を強いられた従業員と雇用主向けのトップヒントを共有しています。GitLabの[Remote Workプレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7QUX-Ux5fOunQotqJbECc)で詳しく見てください。*
 
 
-<!-- include omitted: includes/coursera_gitlab_remote_course.md (no localized version under content/ja/) -->
+{{% include "includes/coursera_gitlab_remote_course.md" %}}
 
 
 ## 追加リソース
@@ -102,7 +102,7 @@ GitLabの[リモートチームソリューションページ](/handbook/company
 - [Preparing Your Team for Remote Work Webinar](https://www.youtube.com/embed/9tYEKAFgQQw?start=5)
 
 
-<!-- include omitted: includes/is_this_advice_any_good_remote.md (no localized version under content/ja/) -->
+{{% include "includes/is_this_advice_any_good_remote.md" %}}
 
 
 ## 学んだことを共有する

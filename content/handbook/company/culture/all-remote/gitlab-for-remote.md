@@ -18,13 +18,13 @@ lastmod: "2025-04-28T10:53:04-07:00"
 <div class="row my-5 align-items-start">
     <div class="col-8 d-flex align-items-center">
         <div>
-            <p class="h3 mb-4">GitLab を使えば、組織内のすべてのチームが1つのプラットフォームで協力でき、完全な透明性、一貫性、追跡可能性でより速くビジネス成果を実現できます。</p>
+            <p class="h3 mb-4">GitLab を使えば、組織内のすべてのチームが 1 つのプラットフォームで協力でき、完全な透明性、一貫性、追跡可能性でより速くビジネス成果を実現できます。</p>
             <p class="h4">DevOps プラットフォームがここに</p>
             <p>GitLab は、セキュリティとコンプライアンスを強化しながら、組織が効率的かつ非同期でコラボレーションできるよう力を与えます。</p>
-            <p>インストールとメンテナンスのシステムは1つ。1つのプロバイダーによるエンドツーエンドのライフサイクルサポート。外部システムとの統合ポイントは1つ。ライフサイクル全体のユーザーインターフェイスは1つ。</p>
+            <p>インストールとメンテナンスのシステムは 1 つ。1 つのプロバイダーによるエンドツーエンドのライフサイクルサポート。外部システムとの統合ポイントは 1 つ。ライフサイクル全体のユーザーインターフェイスは 1 つ。</p>
             <p class="h4">より良い製品をより速く提供する</p>
             <p>ビジネス目標を達成するためにソフトウェアデリバリープロセスを加速させます。</p>
-            <p>1つのシステムでコラボレーションし、コンテキストスイッチングと待ち時間を最小化し、生産性の障害を特定して排除し、より生産的で集中力のある開発者でより多くの価値をより速く提供します。</p>
+            <p>1 つのシステムでコラボレーションし、コンテキストスイッチングと待ち時間を最小化し、生産性の障害を特定して排除し、より生産的で集中力のある開発者でより多くの価値をより速く提供します。</p>
             <p class="h4">セキュリティとコンプライアンスリスクを削減する</p>
             <p>速度を損なうことなく、内部プロセス、コントロール、業界規制に準拠するためのプロセスを簡素化します。</p>
             <p>カスタム統合を排除することで、成長しながら信頼性とパフォーマンスを向上させます。</p>
@@ -52,7 +52,7 @@ lastmod: "2025-04-28T10:53:04-07:00"
               <input name="company" type="company" required class="form-control">
               </div>
               <div class="mb-3">
-              
+              {{< all-remote/country-select >}}
               </div>
               <div class="mb-3">
                 <input class="form-check-input" type="checkbox" value="sendEmails" id="sendEmails">
@@ -145,7 +145,7 @@ lastmod: "2025-04-28T10:53:04-07:00"
         <iframe style="width: 1000px; height: 562px; margin-left: auto; margin-right: auto;" id="gitlabForRemoteVideo" src="" title="YouTube video player" frameborder="0" allowfullscreen></iframe>
       </div>
       <div class="modal-footer">
-        <a href="https://www.youtube.com/embed/qCDAioq3eis" class="btn btn-lg btn-secondary" target="_blank"><i class="fa-brands fa-youtube"></i> Watch on YouTube <sup><small>↗</small></sup></a>
+        <a href="https://www.youtube.com/embed/qCDAioq3eis" class="btn btn-lg btn-secondary" target="_blank"><i class="fa-brands fa-youtube"></i> Watch on YouTube {{< external >}}</a>
         <button type="button" class="btn btn-lg btn-primary" data-bs-dismiss="modal"><i class="fa-solid fa-circle-check"></i> Done</button>
       </div>
     </div>
