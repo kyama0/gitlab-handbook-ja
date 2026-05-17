@@ -14,7 +14,7 @@ lastmod: "2025-09-24T11:45:16+01:00"
 
 | プロパティ      | 値         |
 |---------------|---------------|
-| 作成日  | 2025年6月12日 |
+| 作成日  | 2025 年 6 月 12 日 |
 | 終了日      | 未定           |
 | Slack         | [#wg_ai_security](https://gitlab.enterprise.slack.com/archives/C0912QSD38D)（社内） |
 | Google ドキュメント    | [ワーキンググループアジェンダ](https://docs.google.com/document/d/1sShQ7VH0fsUzA29qsRClbiIel7u-Q1R0-ZOziX1_eAg/edit?usp=sharing)（社内） |

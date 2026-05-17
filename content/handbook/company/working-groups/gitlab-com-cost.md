@@ -13,8 +13,8 @@ lastmod: "2023-09-01T13:37:05+01:00"
 
 | プロパティ     | 値         |
 |--------------|---------------|
-| 作成日 | 2019年3月5日 |
-| 終了日   | 2019年5月22日  |
+| 作成日 | 2019 年 3 月 5 日 |
+| 終了日   | 2019 年 5 月 22 日  |
 | Slack        | [#wg_dot-com-cost](https://gitlab.slack.com/messages/CGQHT13RB)（アーカイブ済み） |
 | Google Doc   | [GitLab.com コストワーキンググループアジェンダ](https://docs.google.com/document/d/1BmqoTrzWhNW_ytbc_H7I3BH9YgusT9AikfO7aHlNPdA/edit)（社内からのみアクセス可能） |
 

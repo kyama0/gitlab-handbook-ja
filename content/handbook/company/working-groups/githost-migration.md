@@ -13,9 +13,9 @@ lastmod: "2023-09-01T13:37:05+01:00"
 
 | プロパティ        | 値           |
 |-----------------|-----------------|
-| 作成日    | 2020年1月30日 |
-| 目標終了日 | 2020年4月24日|
-| 実際の終了日 | 2020年5月12日 |
+| 作成日    | 2020 年 1 月 30 日 |
+| 目標終了日 | 2020 年 4 月 24 日|
+| 実際の終了日 | 2020 年 5 月 12 日 |
 | Slack           | [#wg_githost_migration](https://gitlab.slack.com/archives/CRKL886F2)（社内からのみアクセス可能） |
 | Google Doc      | [GitHost 移行ワーキンググループアジェンダ](https://docs.google.com/document/d/1O8cF5ylQHJDAXVB3KUoW5FhPRH-RIOpHAOuuuPz0VL0/edit)（社内からのみアクセス可能） |
 
@@ -29,7 +29,7 @@ lastmod: "2023-09-01T13:37:05+01:00"
 1. [この Epic](https://gitlab.com/groups/gitlab-org/-/epics/2584) で移行作業をブロックしている Issue を特定して解決します。 => **完了**。
 1. エンドツーエンドのテスト計画を完成させ、移行のドライランを実施します。 => **完了**。
 1. 移行プロセスの一部として既知のリスクを文書化します。 => **完了** リスクは[ここ](https://gitlab.com/gitlab-org/manage/-/issues/16366)に記載されています。ワーキンググループは各リスクに対して承認を追加します。
-1. 顧客向けの移行を実行します。 => **完了** 開始日：4月13日、終了日：5月13日。
+1. 顧客向けの移行を実行します。 => **完了** 開始日：4 月 13 日、終了日：5 月 13 日。
 
 ## 役割と責任
 
@@ -37,10 +37,10 @@ lastmod: "2023-09-01T13:37:05+01:00"
 |-----------------------|-----------------------|--------------------------------------------|
 | エグゼクティブステークホルダー | Christopher Lefelhocz | Senior Director of Development             |
 | ファシリテーター           | Allison Walker        | Professional Services Project Manager      |
-| 機能リード       | Liam McAndrew         | Backend Engineering Manager, Manage:Import |
-| 機能リード       | Jeremy Watson         | Group Product Manager, Manage              |
-| 機能リード       | Michael Lutz          | Senior Director of Professional Services   |
-| 機能リード       | Paul Harrison         | Security Manager, Security Operations      |
+| ファンクショナルリード       | Liam McAndrew         | Backend Engineering Manager, Manage:Import |
+| ファンクショナルリード       | Jeremy Watson         | Group Product Manager, Manage              |
+| ファンクショナルリード       | Michael Lutz          | Senior Director of Professional Services   |
+| ファンクショナルリード       | Paul Harrison         | Security Manager, Security Operations      |
 | メンバー                | Haris Delalić         | Product Manager, Manage:Import             |
 | メンバー                | George Koltsov        | Backend Engineer, Manage:Import            |
 | メンバー                | Désirée Chevalier     | Software Engineer in Test, Manage          |

@@ -1,6 +1,6 @@
 ---
 title: "中国サービス ワーキンググループ"
-description: "このワーキンググループの目標は、2021年4月30日までに中国へのサービス提供に向けた新しい計画を実行可能な状態にすることです。"
+description: "このワーキンググループの目標は、2021 年 4 月 30 日までに中国へのサービス提供に向けた新しい計画を実行可能な状態にすることです。"
 upstream_path: /handbook/company/working-groups/china-service/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
 translated_at: "2026-04-25T00:00:00Z"
@@ -13,15 +13,15 @@ lastmod: "2025-02-06T22:33:28+00:00"
 
 | プロパティ        | 値           |
 |-----------------|-----------------|
-| 作成日           | 2020年12月17日 |
-| 終了日           | 2021年4月30日 |
+| 作成日           | 2020 年 12 月 17 日 |
+| 終了日           | 2021 年 4 月 30 日 |
 | Slack           | [#jihu-working-group](https://app.slack.com/client/T02592416/C01S1CP1NTY/thread/D01FWA5DL4F-1617905508.009400)（社内からのみアクセス可能）|
 | Google Doc      | [ワーキンググループ アジェンダ](https://docs.google.com/document/d/1E5u8IXwEHAKLVyEDQrUgVFzj8GAdB2Ef-neoxkkz0Ls/edit#)（社内からのみアクセス可能）|
 | Issue ボード     | https://gitlab.com/gitlab-jh/gitlab-jh-enablement/-/issues             |
 
 ### 終了条件
 
-このワーキンググループの目標は、2021年4月30日までに中国へのサービス提供に向けた新しい計画を実行可能な状態にすることです。継続的なエンゲージメント計画を明確に特定し、合意を得て文書化する必要があります。
+このワーキンググループの目標は、2021 年 4 月 30 日までに中国へのサービス提供に向けた新しい計画を実行可能な状態にすることです。継続的なエンゲージメント計画を明確に特定し、合意を得て文書化する必要があります。
 
 - JiHu FAQ: https://about.gitlab.com/pricing/faq-jihu/
 - JiHu に関する GitLab ブログ: https://about.gitlab.com/blog/2021/03/18/gitlab-licensed-technology-to-new-independent-chinese-company/

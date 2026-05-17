@@ -21,7 +21,7 @@ lastmod: "2025-11-25T13:09:27+00:00"
 このレルムは、エンジニアリングセキュリティチームが共有およびチーム固有のインフラリソースをデプロイするためのものです。
 
 
-{{% panel header="**エンジニアリングインフラハンドブックページとの将来のイテレーション**" header-bg="info" %}}
+{{% panel header="**Future Iteration with Engineering Infrastructure Handbook Pages**" header-bg="info" %}}
 [エンジニアリングインフラ環境ハンドブックページ](/handbook/engineering/infrastructure-platforms/environments/)が現在の環境に関する SSOT です。会社全体のインフラ標準を反復する WIP イニシアチブが進化するにつれて、エンジニアリングインフラページは、標準が文書化・実装され、環境への変更が行われるにつれて段階的にリファクタリングされます。
 {{% /panel %}}
 

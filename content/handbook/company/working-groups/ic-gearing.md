@@ -13,8 +13,8 @@ lastmod: "2024-08-08T22:55:54+00:00"
 
 | プロパティ        | 値           |
 |-----------------|-----------------|
-| 作成日    | 2020年8月28日 |
-| 終了日 | 2021年4月22日 |
+| 作成日    | 2020 年 8 月 28 日 |
+| 終了日 | 2021 年 4 月 22 日 |
 | Slack           | [#wg_ic-gearing](https://gitlab.slack.com/archives/C01AED9GUAC)（社内からのみアクセス可能） |
 | Google Doc      | [ワーキンググループアジェンダ](https://docs.google.com/document/d/1WJg306wfKhpdwAqMBDj7R_QuBUwGCmz11mvuxOXUHU8/edit#)（社内からのみアクセス可能） |
 
@@ -55,26 +55,26 @@ lastmod: "2024-08-08T22:55:54+00:00"
 
 ## 役割と責任
 
-機能リード（部門あたり 1 名、開発部門は 4 名）の責任：
+ファンクショナルリード（部門あたり 1 名、開発部門は 4 名）の責任：
 
 - 部門・サブ部門内の潜在的に影響を受ける人々のニーズを代表する
 - 部門・サブ部門から特定の提案に関するフィードバックを収集・統合する
 - ワーキンググループからの結果（あれば）を伝達し、部門・サブ部門からの質問に回答する
 
-理想的には機能リードはポリシーの影響を受ける可能性のある IC ですが、前述のような形で部門やサブ部門を代表できる人であれば誰でも歓迎します。
+理想的にはファンクショナルリードはポリシーの影響を受ける可能性のある IC ですが、前述のような形で部門やサブ部門を代表できる人であれば誰でも歓迎します。
 
 | ワーキンググループの役割                         | 担当者                | 肩書き                                |
 |--------------------------------------------|-----------------------|--------------------------------------|
 | ファシリテーター                                | Steve Loyd            | Infrastructure VP                    |
-| Development:Dev&Ops&CICD 機能リード   | Nick Thomas           | Staff Backend Engineer               |
-| Development:Dev&Ops&CICD 機能リード   | Natalia Tepluhina     | Staff Frontend Engineer               |
-| Development:Secure&Govern 機能リード  | James Johnson         | Staff Security Engineer              |
-| Development:Enablement&Growth 機能リード | DJ Mountney           | Staff Engineer                      |
-| Infrastructure 機能リード             | Alessio Caiazza       | Staff Backend Engineer               |
-| Quality 機能リード                    | Zeff Morgan           | Senior Software Engineer in Test     |
-| Security 機能リード                   | Paul Harrison         | Staff Security Engineer              |
-| Support 機能リード                    | Will Chandler         | Staff Support Engineer               |
-| UX 機能リード                         | Lorie Whitaker        | Staff UX Researcher                   |
+| Development:Dev&Ops&CICD ファンクショナルリード   | Nick Thomas           | Staff Backend Engineer               |
+| Development:Dev&Ops&CICD ファンクショナルリード   | Natalia Tepluhina     | Staff Frontend Engineer               |
+| Development:Secure&Govern ファンクショナルリード  | James Johnson         | Staff Security Engineer              |
+| Development:Enablement&Growth ファンクショナルリード | DJ Mountney           | Staff Engineer                      |
+| Infrastructure ファンクショナルリード             | Alessio Caiazza       | Staff Backend Engineer               |
+| Quality ファンクショナルリード                    | Zeff Morgan           | Senior Software Engineer in Test     |
+| Security ファンクショナルリード                   | Paul Harrison         | Staff Security Engineer              |
+| Support ファンクショナルリード                    | Will Chandler         | Staff Support Engineer               |
+| UX ファンクショナルリード                         | Lorie Whitaker        | Staff UX Researcher                   |
 | メンバー                                     | Christopher Lefelhocz | Development VP                       |
 | メンバー                                     | Roos Takken           | People Business Partner, Engineering |
 | メンバー                                     | Darva Satcher         | Senior Manager, Development          |

@@ -13,8 +13,8 @@ lastmod: "2026-03-06T09:57:12-06:00"
 
 | プロパティ   | 値 |
 |----------|-------|
-| 作成日       | 2019年2月26日 |
-| 終了日       | 2019年8月22日 |
+| 作成日       | 2019 年 2 月 26 日 |
+| 終了日       | 2019 年 8 月 22 日 |
 | Slack        | [#wg_dev-metrics](https://gitlab.slack.com/messages/CGQ4R90F5)（社内からのみアクセス可） |
 | Google Doc   | [Development Metrics Working Group Agenda](https://docs.google.com/document/d/1Y50uhpRW0zSGWI-TzPxHnwEHyOl7uWiyCzXtpRJd1_E/edit)（社内からのみアクセス可） |
 

@@ -13,8 +13,8 @@ lastmod: "2025-12-05T19:47:34+00:00"
 
 | プロパティ        | 値           |
 |-----------------|-----------------|
-| 作成日    | 2021年3月3日 |
-| 目標終了日 | 2021年7月7日  |
+| 作成日    | 2021 年 3 月 3 日 |
+| 目標終了日 | 2021 年 7 月 7 日  |
 | Slack           | [#wg_improve-ops-quality](https://join.slack.com/share/zt-mvpz7iqd-JHTWucxR3YiCayWM~A25Vg)（社内からのみアクセス可能） |
 | Google Doc      | [ワーキンググループアジェンダ](https://docs.google.com/document/d/11iNJ9-KslGfDr6NtVeimLNSa1kWK_2k4uc2wxS4Baw4/edit)（社内からのみアクセス可能） |
 | タスクボード      | [Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/2448760) |
@@ -62,9 +62,9 @@ lastmod: "2025-12-05T19:47:34+00:00"
 |-----------------------|-----------------------|--------------------------------|
 | エグゼクティブスポンサー     | Mek Stittri           | VP of Quality            |
 | ファシリテーター           | Joanna Shih           | Quality Engineering Manager, Ops |
-| 機能リード       | Sofia Vistas          | Sr. Software Engineer in Test, Package:Package |
-| 機能リード       | Tiffany Rea           | Software Engineer in Test, Verify:Pipeline Authoring |
-| 機能リード       | Zeff Morgan           | Sr. Software Engineer in Test, Verify:Runner |
+| ファンクショナルリード       | Sofia Vistas          | Sr. Software Engineer in Test, Package:Package |
+| ファンクショナルリード       | Tiffany Rea           | Software Engineer in Test, Verify:Pipeline Authoring |
+| ファンクショナルリード       | Zeff Morgan           | Sr. Software Engineer in Test, Verify:Runner |
 | ステークホルダー           | Christopher Lefelhocz | VP of Development              |
 | ステークホルダー           | Brent Newton          | Director of Infrastructure, Reliability |
 | メンバー                | Kenny Johnston        | Sr. Director of Product Management, Ops |

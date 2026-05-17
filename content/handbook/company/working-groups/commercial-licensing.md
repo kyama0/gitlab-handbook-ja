@@ -13,8 +13,8 @@ lastmod: "2023-09-01T13:37:05+01:00"
 
 | プロパティ        | 値          |
 |-----------------|----------------|
-| 作成日           | 2020年9月1日   |
-| 終了日           | 2020年10月30日   |
+| 作成日           | 2020 年 9 月 1 日   |
+| 終了日           | 2020 年 10 月 30 日   |
 | Slack           | [#commercial_steerco](https://gitlab.slack.com/archives/C019UNKBH7B)（社内からのみアクセス可能）|
 | Google Doc      | [Commercial & Licensing Working Group](https://docs.google.com/document/d/1MWC3oT4DqCrJ6bFQFsW9C_PsWMIyDB_ygsMwcGyDS6s/edit)（社内からのみアクセス可能）|
 
