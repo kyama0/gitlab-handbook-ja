@@ -101,7 +101,7 @@ lastmod: "2026-03-12T10:48:57-04:00"
 これは[包括的でない](/handbook/company/culture/inclusion/)採用プロセスを作り、より多様でない候補者セットに到達するだけでなく、組織が主に[給与](https://www.lhh.com/us/en/insights/2024-salary-guide/)の観点で競争することを強いります。
 
 1. [どこに住んでいても](/handbook/people-group/employment-solutions#country-hiring-guidelines)優れた人材を採用できます。
-   - GitLabは[65カ国以上](/handbook/company/team)にチームメンバーを持つ真にグローバルな足跡を持っています。
+   - GitLabは[65カ国以上](/handbook/company/team)にチームメンバーを持つ真にグローバルに展開しています。
 1. リーダーシップが繁栄のための必要なツール、構造、カルチャーを備えたチームをサポートする限り、従業員は[気晴らしが少なくより生産的](https://about.gitlab.com/blog/2018/05/11/day-in-life-of-remote-sdr/)です。
    - たとえば、GitLabには[サポートスタッフ1人あたり月65件のチケットクローズ](/handbook/support/performance-indicators#average-daily-tickets-closed-per-support-team-member)というKPIがあります。
 1. [オフィスコスト](https://globalworkplaceanalytics.com/wp-content/The%20Remote%20Work%20ROI%20Calculator%20V0.97/The%20Remote%20Work%20ROI%20Calculator%20V0.97.htm)と[報酬](https://about.gitlab.com/blog/2019/02/28/why-we-pay-local-rates/)の[節約増加](https://about.gitlab.com/blog/2019/02/28/why-we-pay-local-rates/)（低コスト地域での採用による）。
@@ -153,7 +153,7 @@ lastmod: "2026-03-12T10:48:57-04:00"
 
 これは[包括的でない](/handbook/company/culture/inclusion/)採用プロセスを作り、より多様でない候補者セットに到達するだけでなく、組織が主に[給与](https://www.lhh.com/us/en/insights/2024-salary-guide/)の観点で競争することを強いります。
 
-リモート組織はどこに住んでいても優れた人材を採用できます。たとえば、GitLabは[65カ国以上](/handbook/company/team)にチームメンバーを持つ真にグローバルな足跡を持っています。
+リモート組織はどこに住んでいても優れた人材を採用できます。たとえば、GitLabは[65カ国以上](/handbook/company/team)にチームメンバーを持つ真にグローバルに展開しています。
 
 ### 柔軟な勤務時間と可用性
 

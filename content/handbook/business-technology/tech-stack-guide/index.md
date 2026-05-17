@@ -28,7 +28,7 @@ lastmod: "2025-04-01T09:22:28+00:00"
 また、内部ハンドブックに置かれるセキュリティアプリケーション用の Security Stack YAML という 2 番目の YAML ファイルを作成する予定です。これらのアプリケーションにも同じテンプレートアプローチを使用します。
 
 
-{{% alert %}}
+{{% alert color="warning" %}}
 テックスタックガイドテンプレート
 {{% /alert %}}
 
@@ -85,7 +85,7 @@ lastmod: "2025-04-01T09:22:28+00:00"
 テックスタックの唯一の情報源は [テックスタック YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) であり、このアプリの詳細情報が含まれています。
 
 
-<p class="my-2 text-sm text-gray-600"><strong>Zuora Billing</strong> — 詳細は <a href="https://handbook.gitlab.com/handbook/business-technology/tech-stack/" rel="external noopener">テックスタック (英語)</a> を参照してください。</p>
+{{% tech-stack "Zuora Billing" %}}
 
 
 ### 実装

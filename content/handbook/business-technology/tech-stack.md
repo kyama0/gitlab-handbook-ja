@@ -24,5 +24,5 @@ lastmod: "2026-01-23T12:25:37-06:00"
 ## テックスタックアプリケーション
 
 
-<p class="my-3 text-sm text-gray-600 italic">テックスタック一覧は <a href="https://handbook.gitlab.com/handbook/business-technology/tech-stack/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{% all-tech-stack %}}
 
