@@ -26,7 +26,7 @@ lastmod: "2025-02-13T22:57:18+00:00"
 
 ### 🚀 GitLab でのストーリー
 
-2025年1月以降、Enterprise Applications 内の PMO チームで Business Systems Analyst として働いています。私のミッションは：
+2025 年 1 月以降、Enterprise Applications 内の PMO チームで Business Systems Analyst として働いています。私のミッションは：
 
 - NetSuite とその連携アプリケーションの最適化
 - 手動プロセスの特定と排除

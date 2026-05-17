@@ -21,7 +21,7 @@ lastmod: "2026-02-10T15:03:48+00:00"
 
 ## エンタープライズテクノロジー & AI システムガイド
 
-- [NetSuite でカスタムフィールドを作成する方法](/handbook/business-technology/enterprise-applications/guides/finance-guides/nscustomfields/)
+- [NetSuite でカスタムフィールドを作成する方法](ns-custom-field/)
 - [Coupa エンドユーザーガイド](coupa-guide/)
 - [Zip エンドユーザーガイド](zip-guide/)
 - [製品カタログガイド](product-catalog/)
