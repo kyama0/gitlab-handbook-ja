@@ -12,7 +12,7 @@ lastmod: "2025-11-10T09:58:25+01:00"
 このページには、技術職以外のチームメンバーがハンドブックファーストで働くための手順、ヒント、過去の録画が含まれています。
 
 このページの内容は、[ハンドブック編集ページ](_index.md)を補完する追加のヒントとして提供されています。
-ヘルプを得る方法を含む、ハンドブックの基本的な編集方法は、[ハンドブック編集ページ](_index.md)に保管しておいてください。
+ヘルプを得る方法を含む、ハンドブック編集の基本は[ハンドブック編集ページ](_index.md)にまとめられています。
 
 > **ヒント** AI を活用してハンドブックをより速く編集しましょう。[Anthropic Claude](/handbook/tools-and-tips/ai/claude/) と [GitLab Duo](/handbook/tools-and-tips/ai/gitlab-duo/) について学んでください。
 
@@ -104,7 +104,7 @@ gsed -i 's,<searchtext>,<replacementtext>,g' file.md
 ## コンテンツの検索と置換の方法
 
 
-{{< youtube "lWBkNqxPxw8" >}}
+{{< youtube id="lWBkNqxPxw8" title="How to Find and Replace Content in the Handbook using Terminal and a Code Editor" >}}
 
 
 単語、フレーズ、またはリンクのすべてのインスタンスを見つける必要があり、ハンドブックのオンライン検索フィールドで検索するのが面倒で正確な結果を返さないことがあります。コードエディタとターミナルを使用すると、コンテンツを簡単かつ素早く検索および置換できます。
@@ -246,5 +246,4 @@ find content/handbook -type f -name '*.md' -exec sh -c "sed -i 's/[ \t]*$//' "$1
 1. `Add comment now` をクリックし、提案を適用します
 
 
-{{< youtube "Kfdf2VAk9sM" >}}
-
+{{< youtube Kfdf2VAk9sM >}}

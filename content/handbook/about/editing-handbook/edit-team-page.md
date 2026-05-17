@@ -15,7 +15,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
 
 ## チームページに自分を追加する
 
-[当社のウェブサイト](https://about.gitlab.com/company/team/)および[ハンドブック内](/handbook/company/team/)にあるチームページにあなたを加えられて、私たちはとても嬉しく思います！[同期処理](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854)により、GitLab に入社して 3 日目にあなたの基本エントリが追加されます。このエントリをパーソナライズし、より多くの情報を追加することをお勧めします。更新が正しく反映されない場合は、Workday の設定が正しいか確認してください。両方のチームページで同じファイルが参照されていますが、表示されるフィールドの一部は異なります。利用可能なすべてのフィールドは、[チームメンバーデータスキーマ](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/team_members/person/README.md)に文書化されています。
+[当社のウェブサイト](https://about.gitlab.com/company/team/)および[ハンドブック内](/handbook/company/team/)にあるチームページにあなたを掲載できることを、私たちはとても嬉しく思います！[同期処理](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854)により、GitLab に入社して 3 日目にあなたの基本エントリが追加されます。このエントリをパーソナライズし、より多くの情報を追加することをお勧めします。更新が正しく反映されない場合は、Workday の設定が正しいか確認してください。両方のチームページで同じファイルが参照されていますが、表示されるフィールドの一部は異なります。利用可能なすべてのフィールドは、[チームメンバーデータスキーマ](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/team_members/person/README.md)に文書化されています。
 
 チームページのエントリ用に Workday の設定を更新する方法のヘルプについては、[こちらのドキュメント](https://docs.google.com/document/d/16_G0jQEjV3f08rGZ65g6RHTCSX5IfFalo9ZUdLEqH1s/edit?tab=t.0)を確認してください。
 
@@ -43,8 +43,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
 - あなたの役割への相対リンク。リンクが `https://handbook.gitlab.com/job-description-library/engineering/support-engineer/` であれば、`/job-description-library/engineering/support-engineer/` を使用してください。他のエントリを参考にしてください。
 
 
-{{% alert %}}
-**Note**
+{{% alert title="Note" color="primary" %}}
 以下に記載されている `Export Name/Location to Team Page?` のオプトイン設定の詳細については、[「How to: Set Team Page Export Preferences」 Google ドキュメント](https://drive.google.com/drive/search?q=how+to+Set+Team+Page+Export+Preferences)（社内）を検索してください。
 {{% /alert %}}
 

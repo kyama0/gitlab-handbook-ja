@@ -10,8 +10,7 @@ lastmod: "2024-12-10T23:51:58+00:00"
 ---
 
 
-{{% alert %}}
-**Note**
+{{% alert title="Note" color="primary" %}}
 GitLab にコントリビュートする際の *Developer Certificate of Origin + License* については、[リポジトリのコントリビューションファイル](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/CONTRIBUTING.md)を参照してください。
 {{% /alert %}}
 
