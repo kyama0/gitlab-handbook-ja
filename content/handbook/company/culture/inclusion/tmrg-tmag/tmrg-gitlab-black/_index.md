@@ -15,9 +15,9 @@ lastmod: "2026-04-30T16:57:54+00:00"
 ## 参加方法
 
 - [Black@GitLab Google Group](https://groups.google.com/a/gitlab.com/g/black-tmrg) に参加して、今後の TMRG イベントに追加されるようにしてください。
-  - **注: カレンダーイベントがあなたのカレンダーに表示されるまでに最大 24 時間かかる場合があります。Google Group に参加してから 24 時間以内にイベントがある場合は、#black-at-gitlab Slack チャネルに投稿して手動で追加してもらってください。**
-- [#black-at-gitlab](https://gitlab.slack.com/archives/C03KFLT0UJV) Slack チャネルに参加して、会話、アナウンス、他の TMRG メンバーとのつながりを持ってください。参加したらチャネルで自己紹介をお願いします！
-- [#donut-black-at-gitlab](https://gitlab.enterprise.slack.com/archives/C07URUHM15H) Slack チャネルに参加して、他の TMRG メンバーとの定期的なコーヒーチャット招待を受け取ってください。
+  - **注: カレンダーイベントがあなたのカレンダーに表示されるまでに最大 24 時間かかる場合があります。Google Group に参加してから 24 時間以内にイベントがある場合は、#black-at-gitlab Slack チャンネルに投稿して手動で追加してもらってください。**
+- [#black-at-gitlab](https://gitlab.slack.com/archives/C03KFLT0UJV) Slack チャンネルに参加して、会話、アナウンス、他の TMRG メンバーとのつながりを持ってください。参加したらチャンネルで自己紹介をお願いします！
+- [#donut-black-at-gitlab](https://gitlab.enterprise.slack.com/archives/C07URUHM15H) Slack チャンネルに参加して、他の TMRG メンバーとの定期的なコーヒーチャット招待を受け取ってください。
 - The Loop 上の [Black@GitLab サイト](https://theloop.gitlab.com/site/73e1805d-a169-4dfc-8084-5ed432260757/dashboard) をフォローまたはメンバーになってください。
 
 ## ミッション
@@ -45,9 +45,9 @@ lastmod: "2026-04-30T16:57:54+00:00"
 
 ## メンバー参加
 
-このセクションは、Black@GitLab TMRG のチームメンバーが四半期ごとの主要なイニシアチブにどのように貢献できるかをまとめたものです。ミーティングへの参加からイニシアチブのリーディング、そしてその間のあらゆる方法まで、チームメンバーが快適でキャパシティのある方法で貢献することを奨励します！
+このセクションは、Black@GitLab TMRG のチームメンバーが四半期ごとの主要なイニシアティブにどのように貢献できるかをまとめたものです。ミーティングへの参加からイニシアティブのリーディング、そしてその間のあらゆる方法まで、チームメンバーが快適でキャパシティのある方法で貢献することを奨励します！
 
-### TMRG の主要なイニシアチブに貢献する
+### TMRG の主要なイニシアティブに貢献する
 
 私たちは [GitLab Issue ボード](https://gitlab.com/gitlab-com/black-tmrg/-/boards) を使用して、四半期ごとにプロジェクトを調整・優先順位付けしています。次の方法で Issue ボードに貢献してください。
 

@@ -1,6 +1,6 @@
 ---
 title: "TMRG - Global Voices"
-description: "GitLabのGlobal Voices TMRG"
+description: "GitLab の Global Voices TMRG"
 upstream_path: "/handbook/company/culture/inclusion/tmrg-tmag/tmrg-global-voices/"
 upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T00:00:00Z"
@@ -48,7 +48,7 @@ TBC
 ## 参加方法
 
 1. [Google グループ](https://groups.google.com/a/gitlab.com/g/globalvoices/)に参加する
-1. 会話・お知らせ・TMRG メンバーとのつながりのために [#global-voices-tmrg](https://gitlab.slack.com/archives/C03UHGX4F1P) Slack チャンネルに参加する。チャンネルに参加したら、自己紹介とあなたが拠点とする場所を教えてください！
+1. 会話・お知らせ・ TMRG メンバーとのつながりのために [#global-voices-tmrg](https://gitlab.slack.com/archives/C03UHGX4F1P) Slack チャンネルに参加する。チャンネルに参加したら、自己紹介とあなたが拠点とする場所を教えてください！
 1. GitLab プロジェクト [gitlab-com/global-voices-tmrg](https://gitlab.com/gitlab-com/global-voices-tmrg) に Issue を作成し、[TMRG リード](#leads)にタグを付ける
 
 ## プロセス

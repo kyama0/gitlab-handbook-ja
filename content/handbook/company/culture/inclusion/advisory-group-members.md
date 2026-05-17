@@ -10,5 +10,5 @@ lastmod: "2025-10-22T08:07:11+00:00"
 ---
 
 
-<p class="my-3 text-sm text-gray-600 italic">専門領域別メンバー一覧は <a href="https://handbook.gitlab.com/handbook/company/culture/inclusion/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{< group-by-expertise "Diversity, Inclusion & Belonging Advisory Group" >}}
 
