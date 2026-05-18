@@ -1,5 +1,5 @@
 ---
-title: "GitLab Duo の原則 - ハンズオンラボ: セキュリティ脆弱性に対処する"
+title: "GitLab Duo Principles - ハンズオンラボ: セキュリティ脆弱性に対処する"
 description: "このハンズオンガイドでは、GitLab Duo を使ってセキュリティ脆弱性を説明する手順を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab5/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89

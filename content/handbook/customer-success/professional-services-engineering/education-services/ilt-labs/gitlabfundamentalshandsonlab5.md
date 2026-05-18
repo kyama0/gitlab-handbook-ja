@@ -1,5 +1,5 @@
 ---
-title: "GitLab 基礎 - ハンズオンラボ: 継続的インテグレーションと継続的デリバリー"
+title: "GitLab Fundamentals - ハンズオンラボ: 継続的インテグレーションと開発"
 description: "このハンズオンガイドでは、プロジェクトにCI/CDを追加するプロセスを学習します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab5/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
