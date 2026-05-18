@@ -42,11 +42,11 @@ TeamOps は収益を生み出す必要があり、関連する計画をもう 1 
 
 | ワーキンググループの役割 | ユーザー名 | 担当者 | 職位 |
 | :---------------------- | :-------------- | ------------------------------------------------------------------------ | :-------------------------------------------------------------- |
-| エグゼクティブステークホルダー | @streas | Stella Treas | CEO チーフオブスタッフ |
-| ファシリテーター | @lfarrer | Laurel Farrer | プリンシパル ストラテジー・アンド・オペレーションズ、Workplace |
-| メンバー | @cynthia | Cynthia "Arty" Ng | スタッフ ストラテジー・アンド・オペレーションズ、インターン |
-| メンバー | @lboughner | Lisa Boughner | VP、コーポレートコミュニケーション |
-| メンバー | @dsteer | Dave Steer | VP、プロダクトマーケティング |
-| メンバー | @swalters1 | Stephen Walters | プリンシパルソリューションアーキテクト |
-| メンバー | @esalvadorp | Emilio Salvador | VP、デベロッパーリレーションズ・コミュニティ |
-| メンバー | @nshah19 | Niyati Shah | シニアディレクター、教育サービス |
+| エグゼクティブステークホルダー | @streas | Stella Treas | Chief of Staff to CEO |
+| ファシリテーター | @lfarrer | Laurel Farrer | Principal Strategy and Operations, Workplace |
+| メンバー | @cynthia | Cynthia "Arty" Ng | Staff Strategy and Operations, Intern |
+| メンバー | @lboughner | Lisa Boughner | VP, Corporate Communications |
+| メンバー | @dsteer | Dave Steer | VP, Product Marketing |
+| メンバー | @swalters1 | Stephen Walters | Principal Solutions Architect |
+| メンバー | @esalvadorp | Emilio Salvador | VP, Dev Relations and Community |
+| メンバー | @nshah19 | Niyati Shah | Senior Director, Education Services |

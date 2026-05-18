@@ -13,8 +13,8 @@ lastmod: "2023-09-01T14:08:42+01:00"
 
 | プロパティ | 値 |
 |-----------------|-----------------|
-| 作成日 | 2020年10月29日 |
-| 終了日 | 2021年2月2日 |
+| 作成日 | 2020 年 10 月 29 日 |
+| 終了日 | 2021 年 2 月 2 日 |
 | Slack | #wg_tierin（社内からのみアクセス可能） |
 | Google Doc | [ティアリング ワーキンググループ アジェンダ](https://docs.google.com/document/d/1fYIvcYpAkcreWZOfz01Wxp5QkD_NG8P1NOlQpq2TXxc/edit#heading=h.qtqrv8ra975g)（社内からのみアクセス可能） |
 
@@ -26,16 +26,16 @@ lastmod: "2023-09-01T14:08:42+01:00"
 
 | ワーキンググループの役割 | 担当者 | 職位 |
 |---------------------------------|-----------------------|--------------------------------------------------------------|
-| ファシリテーター | Justin Farris | グループマネージャー、プロダクト - Fulfillment |
+| ファシリテーター | Justin Farris | Group Manager, Product - Fulfillment |
 | エグゼクティブステークホルダー | Sid Sijbrandij | CEO |
 | エグゼクティブステークホルダー | Michael McBride | CRO |
-| メンバー | Xiaohe Li | プリンシパルプライシングマネージャー |
-| メンバー | Bartek Marnane | エンジニアリングディレクター、Growth |
-| メンバー | Jack Brennan | ディレクター、セールスシステム |
-| メンバー | Amanda Rueda | プロダクトマネージャー、Fulfillment |
-| メンバー | Dale Brown | プリンシパルアカウンティングオフィサー |
+| メンバー | Xiaohe Li | Principal Pricing Manager |
+| メンバー | Bartek Marnane | Director of Engineering, Growth |
+| メンバー | Jack Brennan | Director, Sales Systems |
+| メンバー | Amanda Rueda | Product Manager, Fulfillment |
+| メンバー | Dale Brown | Principal Accounting Officer |
 | メンバー | Christopher Lefelhocz | VP of Development |
-| メンバー | Scott Williamson | チーフプロダクトオフィサー |
+| メンバー | Scott Williamson | Chief Product Officer |
 
 ## 終了基準 {#exit-criteria}
 

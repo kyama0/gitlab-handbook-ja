@@ -14,7 +14,7 @@ lastmod: "2025-06-03T23:53:00+00:00"
 
 | プロパティ        | 値                                                           |
 | -------------- | ------------------------------------------------------------ |
-| 作成日          | 2024年7月8日                                                  |
+| 作成日          | 2024 年 7 月 8 日                                                  |
 | 終了日          | TBD                                                          |
 | Slack          | [#wg_keep-around-refs](https://gitlab.slack.com/archives/C076Z1ADEQP)（社内からのみアクセス可能） |
 | Google Doc     | [ワーキンググループ アジェンダ](https://docs.google.com/document/d/1ePsKix5IescNQHh2EPhiwlioX1h8HD0JhBp72ATVMB0/edit#heading=h.i8vgmxvelcff) |

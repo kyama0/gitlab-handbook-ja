@@ -51,4 +51,4 @@ Vue Router の非互換性によって現在失敗しているすべてのテス
 
 | タスクグループの役割 | 担当者 | 職位 |
 | --------------- | ------ | ----- |
-| DRI | Marina Mosti | シニアフロントエンドエンジニア、Switchboard |
+| DRI | Marina Mosti | Sr. Frontend Engineer, Switchboard |

@@ -13,7 +13,7 @@ lastmod: "2023-09-01T13:37:05+01:00"
 
 | プロパティ   | 値 |
 |--------------|-------|
-| 作成日       | 2019年3月29日 |
+| 作成日       | 2019 年 3 月 29 日 |
 | 終了日       | TBD |
 | Slack        | [#wg_lic-transactions](https://gitlab.slack.com/messages/CHFB3AU1K)（社内からのみアクセス可能） |
 | Google Doc   | [ライセンスとトランザクション改善ワーキンググループ アジェンダ](https://docs.google.com/document/d/1PA4LbP9LwJ_v4n4VI9BNQeqdyAyltxISjKzB28mBbDs/edit)（社内からのみアクセス可能） |

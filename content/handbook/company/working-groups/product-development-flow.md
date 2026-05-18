@@ -13,8 +13,8 @@ lastmod: "2024-06-27T22:14:31+00:00"
 
 | プロパティ      | 値              |
 |-----------------|-----------------|
-| 作成日          | 2020年8月31日 |
-| 目標終了日      | 2021年1月30日 |
+| 作成日          | 2020 年 8 月 31 日 |
+| 目標終了日      | 2021 年 1 月 30 日 |
 | Slack           | [#wg_product_development_flow](https://gitlab.slack.com/archives/C019KM43H4K)（GitLab チームメンバーのみアクセス可能） |
 | Google Doc      | [ワーキンググループ アジェンダ](https://docs.google.com/document/d/10pCsqXVXakRKYVKPmouX7C5g7T_1kBsufLRcN6nGZQI/edit#)（GitLab チームメンバーのみアクセス可能） |
 | ドキュメント    | TBD |

@@ -1,5 +1,5 @@
 ---
-title: "採用 SSOT ワーキンググループ"
+title: "Talent Acquisition SSOT"
 description: "GitLab 採用 SSOT は財務部門の予測と採用チームの採用活動に使用されます。詳細はこちら！"
 status: active
 upstream_path: "/handbook/company/working-groups/recruiting-ssot/"
@@ -14,14 +14,14 @@ lastmod: "2025-01-30T16:32:21+00:00"
 
 | プロパティ   | 値             |
 |-------------|----------------|
-| 作成日       | 2019年12月30日 |
+| 作成日       | 2019 年 12 月 30 日 |
 | 終了日       | 未定 |
 | Slack        | [#wg_recruiting-ssot](https://gitlab.slack.com/archives/CS4T040MS)（社内からのみアクセス可能） |
 | Google Doc   | [採用 SSOT WG アジェンダ](https://docs.google.com/document/d/14kg9B7DqPoqJEja_hDAwdVEKMi4DyounDaRwjo2whKo/edit)（社内からのみアクセス可能） |
 
 ## ビジネス目標
 
-採用 SSOT と、採用 SSOT と共に使用する調整プロセスを作成します。採用 SSOT は財務部門が予測に、採用チームが採用活動に使用します。財務部門と GitLab [E グループ](/handbook/company/structure/#e-group)が合意した、会計年度の全ての採用予測が含まれます。
+採用 SSOT と、採用 SSOT と共に使用する調整プロセスを作成します。採用 SSOT は財務部門が予測に、採用チームが採用活動に使用します。財務部門と GitLab [E-Group](/handbook/company/structure/#e-group)が合意した、会計年度の全ての採用予測が含まれます。
 
 ## 完了基準
 
@@ -35,7 +35,7 @@ lastmod: "2025-01-30T16:32:21+00:00"
 | ワーキンググループの役割 | 担当者                | 職位                                     |
 |----------------------|---------------------|------------------------------------------|
 | ファシリテーター        | Christine Machado   | Finance Business Partner                 |
-| 機能リード             | Dave Gilbert        | VP, Talent Acquisition                   |
+| ファンクショナルリード             | Dave Gilbert        | VP, Talent Acquisition                   |
 | メンバー               | Erich Wegscheider   | Talent Acquisition Program Analyst       |
 | メンバー               | Chase Wright        | Manager, Financial Planning & Analysis   |
 | メンバー               | Kelly Murdock       | Manager, Talent Acquisition              |

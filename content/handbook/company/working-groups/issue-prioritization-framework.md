@@ -14,8 +14,8 @@ lastmod: "2024-08-08T22:55:54+00:00"
 
 | プロパティ      | 値              |
 |-----------------|-----------------|
-| 作成日          | 2020年8月6日    |
-| 目標終了日      | 2022年12月30日  |
+| 作成日          | 2020 年 8 月 6 日    |
+| 目標終了日      | 2022 年 12 月 30 日  |
 | Slack           | [#wg_issue-prioritization](https://join.slack.com/share/zt-etotbmm9-FzhcHH0BGbw3~D4Xe5rAyg)（社内からのみアクセス可能） |
 | Google Doc      | [ワーキンググループ アジェンダ](https://docs.google.com/document/d/1oBWNxBSOJKrh3ubHwN5pI8243vBjJ-Y_Cax17A5abII/edit)（社内からのみアクセス可能） |
 | ドキュメント    | [ハンドブックページ](/handbook/product/product-processes/customer-issues-prioritization-framework) |
@@ -108,7 +108,7 @@ lastmod: "2024-08-08T22:55:54+00:00"
 
 ## ミーティング
 
-このワーキンググループは隔週（2週間ごと）で開催されます。
+このワーキンググループは隔週（2 週間ごと）で開催されます。
 
 ミーティングは録画され、[Working Group - Issue Prioritization Framework](https://www.youtube.com/playlist?list=PL05JrBw4t0KrKoeXjf5Bdtapu9Cl3T7gI) プレイリストとして YouTube で公開されています。
 このワーキンググループの性質上、すべての同期ミーティングで機密顧客情報が議論される可能性が高いため、プレイリストは非公開で GitLab チームメンバーのみがアクセスできます。

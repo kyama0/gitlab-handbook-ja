@@ -19,7 +19,7 @@ lastmod: "2026-02-19T08:01:16-05:00"
 
 ## サクセスティアのコンテキスト
 
-CSM の役割は GitLab の**エッセンシャル**[サクセスティア](/handbook/customer-success/success-services/)の一部です。エッセンシャルティアの顧客は、サクセスプラン、ケイデンスコール、更新戦略を担当する専任の CSM を担当として受け取ります。
+CSM の役割は GitLab の**エッセンシャル**[サクセスティア](/handbook/customer-success/success-services/)の一部です。エッセンシャルティアの顧客は、サクセスプラン、ケイデンスコール、更新戦略を担当するサクセスプラン、ケイデンスコール、更新戦略を担当する専任の CSM がアサインされます。
 
 より深い技術的イネーブルメントと構造化されたアクセラレータープログラムを求める顧客には、GitLab の**アドバンスド**および**シグネチャー**ティアで専任の[カスタマーサクセスアーキテクト（CSA）](/handbook/customer-success/csm/segment/csa/)が提供されます。すべてのティアの概要と比較については、[サクセスティアページ](/handbook/customer-success/success-services/)をご覧ください。
 

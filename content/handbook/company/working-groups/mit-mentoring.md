@@ -1,6 +1,6 @@
 ---
 title: "Minorities in Tech - パイロットメンタリングプログラム ワーキンググループ"
-description: "MIT TMRG メンターシップイニシアチブに沿ったMinorities in Tech（MIT）メンタリングプログラムを提供します。詳細をご覧ください！"
+description: "MIT TMRG メンターシップイニシアティブに沿った Minorities in Tech（MIT）メンタリングプログラムを提供します。詳細をご覧ください！"
 upstream_path: "/handbook/company/working-groups/mit-mentoring/"
 upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
 translated_at: "2026-04-25T12:00:00Z"
@@ -13,15 +13,15 @@ lastmod: "2024-05-14T21:58:35+00:00"
 
 | プロパティ        | 値           |
 |-----------------|-----------------|
-| 作成日    | 2020年5月11日   |
-| 目標終了日 | 2020年9月1日  |
+| 作成日    | 2020 年 5 月 11 日   |
+| 目標終了日 | 2020 年 9 月 1 日  |
 | Slack           | #wg_mit_mentoring（社内からのみアクセス可能） |
 | Google Doc      | [Minorities in Tech (MIT) Mentoring Working Group Agenda](https://docs.google.com/document/d/1ILEd_ziRS9zbb2luQRr-C2eouc_TKsckTUP3pnkrZ5Y/edit)（社内からのみアクセス可能） |
 | Issue ボード     | [Minorities in Tech Issue Board](https://gitlab.com/gitlab-com/diversity-and-inclusion/-/boards/1634805?label_name[]=ERG)|
 
 ## ビジネス目標
 
-MIT TMRG メンターシップイニシアチブに沿った Minorities in Tech（MIT）メンタリングプログラムを提供します。
+MIT TMRG メンターシップイニシアティブに沿った Minorities in Tech（MIT）メンタリングプログラムを提供します。
 
 ## 役割と責任
 

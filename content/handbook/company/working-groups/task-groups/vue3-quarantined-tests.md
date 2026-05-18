@@ -45,5 +45,5 @@ lastmod: "2025-12-04T07:13:05+01:00"
 
 | タスクグループの役割 | 担当者 | 職位 |
 | --------------- | ------ | ----- |
-| DRI | Artur Fedorov | シニアフロントエンドエンジニア、Security Policies |
-| メンバー | Alexander Turinske | スタッフフロントエンドエンジニア、Security Policies |
+| DRI | Artur Fedorov | Sr. Frontend Engineer, Security Policies |
+| メンバー | Alexander Turinske | Staff Frontend Engineer, Security Policies |

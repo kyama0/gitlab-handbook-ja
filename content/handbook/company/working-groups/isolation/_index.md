@@ -13,8 +13,8 @@ lastmod: "2024-06-19T18:08:14+00:00"
 
 | プロパティ      | 値               |
 |-----------------|------------------|
-| 作成日          | 2019年10月7日    |
-| 終了日          | 2020年2月28日    |
+| 作成日          | 2019 年 10 月 7 日    |
+| 終了日          | 2020 年 2 月 28 日    |
 | Slack           | [#wg_isolation](https://gitlab.slack.com/messages/CNTFF3RB5)（社内からのみアクセス可能） |
 | Google Doc      | [分離ワーキンググループ アジェンダ](https://docs.google.com/document/d/12PjNkkklBM3dIDXcDqlR6kXBanBbqbXu9LRmcjvuJgc/edit#)（社内からのみアクセス可能） |
 

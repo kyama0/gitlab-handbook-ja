@@ -13,9 +13,9 @@ lastmod: "2025-12-05T19:47:34+00:00"
 
 | プロパティ        | 値           |
 |-----------------|-----------------|
-| 作成日    | 2021年8月1日 |
-| 目標終了日 | 2022年1月31日 |
-| 実際の終了日 | 2022年8月18日 |
+| 作成日    | 2021 年 8 月 1 日 |
+| 目標終了日 | 2022 年 1 月 31 日 |
+| 実際の終了日 | 2022 年 8 月 18 日 |
 | Slack           | [#wg_merge-request-report-widgets](https://gitlab.slack.com/archives/CV2M96LJG)（社内からのみアクセス可能） |
 | Google Doc      | [Merge Request Report Widgets Working Group Agenda](https://docs.google.com/document/d/1bcch8UUkwmgEHFolTWDrQFJtUiiXlv_yQFAGwSSDSUE/edit?usp=sharing)（社内からのみアクセス可能） |
 | 実装ディスカッション | [gitlab#333975](https://gitlab.com/gitlab-org/gitlab/-/issues/333975) |
@@ -52,7 +52,7 @@ lastmod: "2025-12-05T19:47:34+00:00"
 
 ## 終了基準 {#exit-criteria}
 
-- 新しい共有 MR ウィジェット拡張コンポーネントを完全に使用するようにポートされる [10件の拡張機能（完全なリスト）](https://gitlab.com/groups/gitlab-org/-/epics/6548)の実装とリデザインを主導します。
+- 新しい共有 MR ウィジェット拡張コンポーネントを完全に使用するようにポートされる [10 件の拡張機能（完全なリスト）](https://gitlab.com/groups/gitlab-org/-/epics/6548)の実装とリデザインを主導します。
 - 共有コンポーネントは、Pajamas デザインシステムで定義された[レポートリージョンデザインガイドライン](https://design.gitlab.com/patterns/merge-request-reports/)に従います。
 - ドキュメントが共有コンポーネントの機能を反映しています。
 - コンポーネントの拡張に関する明確なドキュメントが記述されていることを確認します。

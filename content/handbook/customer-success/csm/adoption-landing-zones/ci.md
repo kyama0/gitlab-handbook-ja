@@ -1,5 +1,5 @@
 ---
-title: "CI 導入ランディングゾーン"
+title: "CI 採用ランディングゾーン"
 description: "CSM チームとお客様向けの CI に関する有用なリソースへのリンクをまとめたページです。"
 upstream_path: /handbook/customer-success/csm/adoption-landing-zones/ci/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
@@ -9,7 +9,7 @@ stale: false
 lastmod: "2025-03-08T16:32:26+00:00"
 ---
 
-![CI 導入ジャーニーマップ](/csm/adoption-landing-zones/images/ci-adoption-journey-map.png)
+![CI 採用ジャーニーマップ](/csm/adoption-landing-zones/images/ci-adoption-journey-map.png)
 
 <table>
 <thead>
@@ -77,7 +77,7 @@ Jenkins から GitLab へ
 1. Jenkins インテグレーションデモ（CS 主導）: [CSM デモ: Jenkins インテグレーション](https://gitlab.com/gitlab-learn-labs/webinars/cicd/jenkins-integration-demo)
 1. Jenkins ディスカバリー質問: [技術的な顧客ディープダイブ](https://docs.google.com/document/d/1g0ftF3kSQ0_OUpvuM4WUseFUjd_iSsPXQoIqKR7Ledg/edit)
 
-## 導入イネーブルメント
+## 採用イネーブルメント
 
 1. CI/CD 入門（CSM 主導）:
    - 顧客向け: [公開デッキ](https://content.gitlab.com/viewer/64cadaf3b956a3a8474c08c1)
