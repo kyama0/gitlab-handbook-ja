@@ -102,7 +102,7 @@ lastmod: "2026-03-25T17:26:37+00:00"
         - deploy
       ```
 
-1. `deploy_review` ジョブに `ubuntu:latest` の `image` を追加します。
+1. これで、変更をレビューアプリにデプロイできます。`deploy_review` ジョブに `ubuntu:latest` の `image` を追加します。
 
       ```yml
       deploy_review:

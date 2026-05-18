@@ -1,5 +1,5 @@
 ---
-title: "GitLab Duo の原則 - ハンズオンラボ: GitLab Duo Agent Platform"
+title: "GitLab Duo Principles - ハンズオンラボ: GitLab Duo Agent Platform"
 description: "このハンズオンガイドでは、GitLab Duo Agent Platform を使って複雑なトピックを処理する手順を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab6/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
@@ -76,7 +76,7 @@ lastmod: "2026-04-06T16:04:29-04:00"
 
 1. Duo Chat が実行しようとするアクションの `Approve`（承認）を求められた場合は、承認してください。
 
-    > Duo Chat が Issue とマージリクエストを既存のブランチに作成するので、作業できるプロジェクトのセットアップが整います。約 9 回の承認が必要になります。あなたは HITL（Human in the Loop：ループ内の人間）です。最終的には `Completion Report`（完了レポート）が表示されます。
+    > Duo Chat が Issue を作成し、既存のブランチに対してマージリクエストを作成してくれるので、作業できるプロジェクトのセットアップが整います。約 9 回の承認が必要になります。あなたは HITL（Human in the Loop：ループ内の人間）です。最終的には `Completion Report`（完了レポート）が表示されます。
 
 1. フローが完了したら、Issue とマージリクエストを確認して、タスクが完了していることを確認します。
 

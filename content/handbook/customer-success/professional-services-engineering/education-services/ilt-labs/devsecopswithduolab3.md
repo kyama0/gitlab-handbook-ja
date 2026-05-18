@@ -1,5 +1,5 @@
 ---
-title: "GitLab Duo の原則 - ハンズオンラボ: Issue とマージリクエストを活用する"
+title: "GitLab Duo Principles - ハンズオンラボ: Issue とマージリクエストを活用する"
 description: "このハンズオンガイドでは、GitLab Duo を使って Issue とマージリクエストを作成する手順を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab3/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
