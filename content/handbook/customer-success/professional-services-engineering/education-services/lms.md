@@ -13,9 +13,7 @@ lastmod: "2024-06-27T22:14:31+00:00"
 
 テックスタックの唯一の情報源は [Tech Stack YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) であり、このアプリに関する詳細情報が含まれています。
 
-
-<p class="my-2 text-sm text-gray-600"><strong>Thought Industries LMS</strong> — 詳細は <a href="https://handbook.gitlab.com/handbook/business-technology/tech-stack/" rel="external noopener">テックスタック (英語)</a> を参照してください。</p>
-
+{{% tech-stack "Thought Industries LMS" %}}
 
 ### 実装
 

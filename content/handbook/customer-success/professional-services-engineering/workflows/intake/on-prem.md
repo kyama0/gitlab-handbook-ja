@@ -9,4 +9,4 @@ stale: false
 lastmod: "2023-11-29T15:32:25+00:00"
 ---
 
-オンプレミスで GitLab を運用している顧客の技術インテークには、[このフォームテンプレート](https://docs.google.com/spreadsheets/d/1rnpvwsmW78TNnYJA4bueyPaX1TIAagzSGGZOvpcQK74/edit#gid=0)を使用してください。
+AWS を利用している顧客の技術インテークには、[このフォームテンプレート](https://docs.google.com/spreadsheets/d/1rnpvwsmW78TNnYJA4bueyPaX1TIAagzSGGZOvpcQK74/edit#gid=0)を使用してください。

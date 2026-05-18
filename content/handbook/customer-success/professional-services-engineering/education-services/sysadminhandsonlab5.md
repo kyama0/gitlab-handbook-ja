@@ -28,7 +28,7 @@ lastmod: "2025-06-03T11:53:00+10:00"
 
 1. **Email confirmation settings** で、**Hard** の隣のラジオボタンをクリックします。
 
-1. 次に、サインアップが自社ドメインからのみ許可されることを確認します。**Allowed domains for sign-ups** に自社のドメイン名を入力し、<kbd>Enter<kbd> を押します。
+1. 次に、サインアップを自社ドメインからのみ許可するように設定します。**Allowed domains for sign-ups** に自社のドメイン名を入力し、<kbd>Enter<kbd> を押します。
 
 1. セクションの末尾までスクロールして、**Save Changes** をクリックします。
 

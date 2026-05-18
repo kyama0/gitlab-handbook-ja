@@ -30,7 +30,7 @@ PMO 組織として、私たちは GitLab 内部および外部の GitLab パー
 
 #### なぜ作業合意なのか？
 
-作業合意はオーナーシップとエージェンシーを醸成し、次に貢献します。
+作業合意はオーナーシップと当事者意識を育み、以下の効果につながります。
 
 * より強いチームの結束とコラボレーション。
 * 生産性の向上。
@@ -60,7 +60,7 @@ EM>PS デリバリー移管から始まり、Stakeholder Planning Meeting と Cu
 
 1. プロジェクトバックログ（ユーザーストーリーと受け入れ基準 - 2 イテレーション）を洗練し優先順位付けする。
 2. 初期リリース計画（初期計画と設計）に Issue を割り当てる。
-3. [Definition of Done (DoD)](../definition-of-done/index.md) を定義し、必要であれば [Definition of Ready (DoR)](../definition-of-ready/index.md) も定義する。
+3. [Definition of Done (DoD)](../definition-of-done/_index.md) を定義し、必要であれば [Definition of Ready (DoR)](../definition-of-ready/_index.md) も定義する。
 4. 自分のチーム固有の制約、阻害要因、リスクを理解する。
 
 ![Team-Norms.png](/images/customer-success/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/align-team-norms.png)

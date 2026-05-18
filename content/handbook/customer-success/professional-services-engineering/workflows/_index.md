@@ -14,7 +14,7 @@ lastmod: "2025-10-22T08:07:11+00:00"
 1. プロフェッショナルサービスマネージャー: [ウェルカムメール](/handbook/customer-success/professional-services-engineering/workflows/project-execution/welcome-email)を送信します。
 1. プロフェッショナルサービスエンジニア: ここで定義されているプロセスに沿ってプロジェクトを開始します。
     - [キックオフ](/handbook/customer-success/professional-services-engineering/workflows/project-execution/kick-off)
-    - [AWS](/handbook/customer-success/professional-services-engineering/workflows/intake/aws) または [オンプレミス](/handbook/customer-success/professional-services-engineering/workflows/intake/on-prem) のインテーク
+    - [AWS](/handbook/customer-success/professional-services-engineering/workflows/intake/on-prem) または [オンプレミス](/handbook/customer-success/professional-services-engineering/workflows/intake/on-prem) のインテーク
     - [継続的なプロジェクトコール（外部）](/handbook/customer-success/professional-services-engineering/workflows/project-execution/calls)
     - [継続的な内部プロジェクトアップデート](/handbook/customer-success/professional-services-engineering/workflows/internal/15minute-standup)
     - [スコープ変更が必要となった場合の変更依頼](https://docs.google.com/document/d/1aBKeyui9qCt9YoVtZg-Z7XRkNpomTa-H3KRPBLnt6TQ/)
