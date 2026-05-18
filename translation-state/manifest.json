@@ -5946,11 +5946,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "2dd9d315aff1d685e3f27ab47a69d8faa01d31fa",
+      "translated_at": "2026-05-18T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "3fb6b9c4cbd9c8b0bbf5e8ec3962e4c2df31847411f1708adae316c8666af045",
-      "upstream_committed_at": "2026-05-06T13:46:25+02:00"
+      "input_hash": "bddcf5ab98d2df386182325b391043416b5619f7731d5fe29adffe695f65a4e4",
+      "upstream_committed_at": "2026-05-18T13:31:14+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth.md",
@@ -6063,6 +6063,14 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "08fade5cc8a37b8b418e8dc62c1164f9e7001445645ea397b76f999e7037ca68",
       "upstream_committed_at": "2026-04-02T17:53:21+13:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection.md",
+      "upstream_sha": "2dd9d315aff1d685e3f27ab47a69d8faa01d31fa",
+      "translated_at": "2026-05-18T18:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8fb44d7e6eb79d98cc5ebc634e7968ac885a4059be8e5705c83625deaff45249",
+      "upstream_committed_at": "2026-05-18T13:31:14+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md",
@@ -10370,11 +10378,11 @@
     },
     "content/handbook/engineering/data-engineering/analytics/optimize.md": {
       "path": "content/handbook/engineering/data-engineering/analytics/optimize.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T00:00:00Z",
+      "upstream_sha": "2dd9d315aff1d685e3f27ab47a69d8faa01d31fa",
+      "translated_at": "2026-05-18T18:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "b1e95aa89a10aa2a763c2d285cc2d890ca7de64c5b54c96052bf24cfd3716fbe",
-      "upstream_committed_at": "2026-05-08T15:55:05+02:00"
+      "input_hash": "b18ebb63a44655320f7e10391c7460f7191699f857be75709d6cc7e27d9833ac",
+      "upstream_committed_at": "2026-05-18T14:43:45+02:00"
     },
     "content/handbook/engineering/data-engineering/analytics/platform-insights.md": {
       "path": "content/handbook/engineering/data-engineering/analytics/platform-insights.md",
@@ -14906,11 +14914,11 @@
     },
     "content/handbook/enterprise-data/platform/ci-jobs/index.md": {
       "path": "content/handbook/enterprise-data/platform/ci-jobs/index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T08:00:00Z",
+      "upstream_sha": "2dd9d315aff1d685e3f27ab47a69d8faa01d31fa",
+      "translated_at": "2026-05-18T18:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "2fe0d250db4c8df78d8e83f06f66b6c7c16fa325f3d29ce0d8b41d03d61baf2f",
-      "upstream_committed_at": "2026-04-23T14:07:17-07:00"
+      "input_hash": "ba14f2237e68ec1fd6e31dd9bdcb43dff9bd417a0beb3902896d22837e47532a",
+      "upstream_committed_at": "2026-05-18T13:28:41+02:00"
     },
     "content/handbook/enterprise-data/platform/data-enablement.md": {
       "path": "content/handbook/enterprise-data/platform/data-enablement.md",
@@ -17218,11 +17226,11 @@
     },
     "content/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/_index.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/_index.md",
-      "upstream_sha": "e0d8017702cf1eae5871d425237e50751324adc6",
-      "translated_at": "2026-04-30T00:00:00Z",
+      "upstream_sha": "2dd9d315aff1d685e3f27ab47a69d8faa01d31fa",
+      "translated_at": "2026-05-18T18:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "2b6b11ceb33e495f7aa134b05bdb43ad76502b68d499a2196db422b38b16ce74",
-      "upstream_committed_at": "2026-02-18T17:18:03+00:00"
+      "input_hash": "02bb872844b8dd1fb07e675f9445cbd71c204344f1922e472ea0920f5a07da6c",
+      "upstream_committed_at": "2026-05-18T15:11:44+01:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/cro-swag.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/cro-swag.md",
@@ -22226,11 +22234,11 @@
     },
     "content/handbook/support/workflows/ticket-transfers.md": {
       "path": "content/handbook/support/workflows/ticket-transfers.md",
-      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
-      "translated_at": "2026-05-08T03:10:58Z",
+      "upstream_sha": "2dd9d315aff1d685e3f27ab47a69d8faa01d31fa",
+      "translated_at": "2026-05-18T18:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "fec579dfc5ebff0adca9d76b7a105a1a62a7518de05132d3a11a97735bbaced0",
-      "upstream_committed_at": "2026-05-07T12:03:48-04:00"
+      "input_hash": "1c93ea035d1520321addaec062ec3609f96c0a40b79b3d809912d79d5583d2e7",
+      "upstream_committed_at": "2026-05-18T10:52:59-05:00"
     },
     "content/handbook/support/workflows/ticket_lifecycle.md": {
       "path": "content/handbook/support/workflows/ticket_lifecycle.md",
