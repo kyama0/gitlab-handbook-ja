@@ -14,7 +14,7 @@ lastmod: "2024-12-05T14:14:06+00:00"
 | ラボ名 | ラボリンク |
 |-----------|------------|
 | GitLab Duo を始めよう | [ラボガイド](/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab1) |
-| GitLab Duo Chat によるコード生成 | [ラボガイド](/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab2) |
+| GitLab Duo によるコード生成 | [ラボガイド](/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab2) |
 | Issue とマージリクエストの操作 | [ラボガイド](/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab3) |
 | GitLab Duo を使った新しいコードの作成 | [ラボガイド](/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab4) |
 | セキュリティ脆弱性への対応 | [ラボガイド](/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduolab5) |
