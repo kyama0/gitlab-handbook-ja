@@ -247,7 +247,7 @@ CSMがアカウントを[レッド](/handbook/customer-success/csm/health-score-
 
 - アカウントチーム（つまり、アカウントエグゼクティブとソリューションアーキテクト）
 - 地域CSMマネージャー
-- CSMディレクター（Public Sector以外のすべての顧客）またはPublic SectorカスタマーサクセスのディレクターDirector of Customer Success Public Sector（Public Sector顧客向け）
+- CSM ディレクター（Public Sector 以外のすべての顧客）または Director of Customer Success Public Sector（Public Sector 顧客向け）
 
 ### レッドヘルス評価
 

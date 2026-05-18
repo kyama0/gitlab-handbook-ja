@@ -149,7 +149,7 @@ CSE コンテンツチームの主な目標は次のとおりです:
 | [GitLab 管理（SaaS）](https://drive.google.com/file/d/1JQYVed7StwOBGEnzmsT7yiDmDfNSkx_a/view?usp=drive_link) | Core Platform | 2023-10-23 | https://youtu.be/lXtBV9o7q68 |
 | [GitLab ランナー](https://drive.google.com/file/d/1nxglK5j8D5XsbZTaylN-HbbVJ0gKojJd/view?usp=drive_link) | Verify | 2024-01-17 | https://youtu.be/Xq0kNaGxcaM |
 | [脆弱性管理戦略](https://drive.google.com/file/d/1DRhHsgeqRPGpu2NR5726QSGqg6bh7aJS/view?usp=drive_link) | Software Supply Chain Security | 2024-05-07 | https://youtu.be/CS_GlJGtnpM |
-| [職務分離](https://drive.google.com/file/d/16YcUdYDNPP0x0vXzG01OsCODVnYhYe4O/view?usp=drive_link) | Software Supply Chain Security | 2024-06-18 | https://youtu.be/vFbgzta5cyA |
+| [職務分掌](https://drive.google.com/file/d/16YcUdYDNPP0x0vXzG01OsCODVnYhYe4O/view?usp=drive_link) | Software Supply Chain Security | 2024-06-18 | https://youtu.be/vFbgzta5cyA |
 | [最新情報！GitLab 17.0](https://drive.google.com/file/d/11EhjSsgMepd9iZYY9vNz8LFoQPLGVNuS/view?usp=drive_link) | All | 2024-06-04 | https://youtu.be/3gROieX0-9Q |
 | [CI/CD コンポーネント](https://drive.google.com/file/d/1mSj3YhvTu5llgRzqRMZ0Lk08KlFLlhp4/view?usp=drive_link) | Create | 2024-07-11 | https://youtu.be/2MosExpnxsw |
 | [DAST API とセキュリティテスト](https://drive.google.com/file/d/1G8XeiaQDpGQAyd1gwLsYmaf-tp3N4p91/view?usp=drive_link) | Secure | 2024-07-12 | https://youtu.be/R6nO_0u2UqA |

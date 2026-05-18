@@ -78,7 +78,7 @@ lastmod: "2026-05-08T14:07:20+02:00"
 | DevSecOps Enablement Stage Adoption（DevSecOps イネーブルメントステージ導入） | 手動 | 目標 | [DevSecOps/Security](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/) |
 | DevSecOps Expansion Stage Adoption（DevSecOps 拡大ステージ導入） | 手動 | 目標 | |
 | Geo Implementation（Geo 実装） | 手動 | 目標 | [情報シート](https://docs.google.com/document/d/1Gn93NUWq4RxPvfxJRodEyvb-6-dLqUV6euPV8k9yIvw/edit)<br> [ディスカバリー質問](https://docs.google.com/document/d/1KgSHHsYFHPB__xA9rlUEbLBRYDlPl6FyKzn1V8I2Wfk/edit)<br>[実装のヒントとコツ](https://docs.google.com/document/d/1EhXT-_Wf0GrmDSh2vthca0sl6bWb-1hQruv2lHd4aFs/edit?ts=60356ba2) |
-| Improve Cycle Time（サイクルタイムの改善） | 手動 | 目標 | |
+| Improve Cycle Time (Lead Time for Changes)（サイクルタイムの改善 / 変更のリードタイム） | 手動 | 目標 | |
 | Increase Deployment Frequency（デプロイ頻度の向上） | 手動 | 目標 | |
 | Manage Enablement Stage Adoption（Manage イネーブルメントステージ導入） | 手動 | 目標 | |
 | Manage Expansion Stage Adoption（Manage 拡大ステージ導入） | 手動 | 目標 | |

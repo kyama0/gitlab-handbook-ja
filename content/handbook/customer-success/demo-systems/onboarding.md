@@ -29,12 +29,12 @@ lastmod: "2025-10-14T17:59:32+00:00"
 
 ### GitLab.com SaaS グループ
 
-GitLab.com には、各 SaaS ライセンスティアの機能を披露できる 2 つの専用グループがあります。
+GitLab.com 上に、各 SaaS ライセンスティアの機能を披露するための、あなた専用のグループが 2 つ用意されます。
 
 - `https://gitlab.com/gl-demo-ultimate-{handle}`
 - `https://gitlab.com/gl-demo-premium-{handle}`
 
-デモプロジェクトをすべてこのグループに保存することをお勧めします。個人の名前空間にデモを保管しようとする場合の制限（[Epic](https://docs.gitlab.com/ee/user/group/epics/#epics)・[セキュリティダッシュボード](https://docs.gitlab.com/ee/user/application_security/security_dashboard/#gitlab-security-dashboards-and-security-center)・その他の[グループ機能](https://docs.gitlab.com/ee/user/group/#groups)等）に縛られません。
+デモプロジェクトはすべてこのグループに保存してください。個人の名前空間にデモを置こうとすると制限がかかる機能（[Epic](https://docs.gitlab.com/ee/user/group/epics/#epics)・[セキュリティダッシュボード](https://docs.gitlab.com/ee/user/application_security/security_dashboard/#gitlab-security-dashboards-and-security-center)・その他の[グループ機能](https://docs.gitlab.com/ee/user/group/#groups)など）にも縛られなくなります。
 
 - [ ] **アクション:** 自分でこれらのグループを作成しようとしないでください。[GitlabCom_Licensed_Demo_Group_Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=GitlabCom_Licensed_Demo_Group_Request) テンプレートを使用してアクセスリクエストをオープンしてください。
 

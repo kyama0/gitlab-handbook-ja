@@ -11,9 +11,7 @@ lastmod: "2024-08-16T13:10:36+00:00"
 
 テックスタックの唯一の情報源は [Tech Stack YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) であり、このアプリについての詳細情報が含まれています。
 
-
-<p class="my-2 text-sm text-gray-600"><strong>Instruqt</strong> — 詳細は <a href="https://handbook.gitlab.com/handbook/business-technology/tech-stack/" rel="external noopener">テックスタック (英語)</a> を参照してください。</p>
-
+{{% tech-stack "Instruqt" %}}
 
 ### 実装
 
