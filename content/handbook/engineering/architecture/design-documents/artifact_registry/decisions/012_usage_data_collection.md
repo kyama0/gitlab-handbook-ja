@@ -40,7 +40,7 @@ Go サテライトサービス向けには、[LabKit v2](https://gitlab.com/gitl
 
 これは他のサテライトサービス（AI Gateway、GitLab Language Server）が使用するのと同じメカニズムであり、Go サービスにとって組織的に推奨される経路です。
 
-### 未解決の問題: カスタムイベントのコンテキストスキーマ
+### 未解決の問題: カスタムイベントのコンテキストスキーマ {#open-question-context-schema-for-custom-events}
 
 LabKit v2 の `TrackEvent` API は現在、カスタムイベントにコンテキストを添付しません。`custom_event` スキーマを持つ自己記述型イベントペイロード (`ue_px`) のみを送信し、`cx` (contexts) フィールドは設定されません。カスタムコンテキストはアナリストに、型付きでスキーマ検証された第一級ウェアハウスカラムをクエリのために提供します — これがないと、AR イベントは同じウェアハウスモデルを使用して他の GitLab イベントと一緒に分析できません。`TrackBillingEvent` は `cx` を設定しますが、`billable_usage` コンテキストのみが対象です。
 
