@@ -12,8 +12,8 @@ lastmod: "2024-06-27T22:14:31+00:00"
 
 | プロパティ   | 値 |
 |--------------|-------|
-| 作成日       | 2019年5月21日 |
-| 終了日       | 2019年7月11日 |
+| 作成日       | 2019 年 5 月 21 日 |
+| 終了日       | 2019 年 7 月 11 日 |
 | Slack        | [#wg_data-poc](https://gitlab.slack.com/messages/CJYKZL0BG)（社内からのみアクセス可） |
 | Google Doc   | [Data POC Agenda](https://docs.google.com/document/d/1IzK3E2xzhLkWURdfKxmY3SxwPawX9nI_9pB4bz3DhUc/edit)（社内からのみアクセス可） |
 

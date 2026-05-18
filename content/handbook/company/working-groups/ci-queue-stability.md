@@ -13,8 +13,8 @@ lastmod: "2023-12-18T14:49:14+00:00"
 
 | プロパティ     | 値 |
 |--------------|-------|
-| 作成日         | 2019年11月1日 |
-| 終了日         | 2019年1月22日 |
+| 作成日         | 2019 年 11 月 1 日 |
+| 終了日         | 2019 年 1 月 22 日 |
 | Slack        | [#wg_ci_queue_stability](https://gitlab.slack.com/archives/CPNJU64N9/p1572646264000100)（社内からのみアクセス可能）|
 | Google Doc   | [CI Queue Stability Working Group](https://docs.google.com/document/d/1wgdb0Uv1YBOYX4vEtHoGOYxuBAxSP3A_1SPQ1mc5NXM/edit?usp=sharing)（社内からのみアクセス可能）|
 | Issue ラベル  | wg_CIQueueStability（gitlab-com/-org）|

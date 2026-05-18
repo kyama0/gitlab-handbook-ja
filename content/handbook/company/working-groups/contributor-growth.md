@@ -13,8 +13,8 @@ lastmod: "2026-02-27T11:50:24+01:00"
 
 | プロパティ        | 値           |
 |-----------------|-----------------|
-| 作成日           | 2021年10月28日|
-| 終了日           | 2022年8月12日 |
+| 作成日           | 2021 年 10 月 28 日|
+| 終了日           | 2022 年 8 月 12 日 |
 | Slack           | [#i_user_engagement_contributor_growth](https://gitlab.slack.com/archives/C0223D98HHC)（社内からのみアクセス可能）- 旧称: #wg_contributor-growth |
 | Google Doc      | [ワーキンググループ アジェンダ](https://docs.google.com/document/d/1AOgqaslnq-WI1ICSZ1NzSnALf1Va4D5qAD191icAoSI/edit#)（社内からのみアクセス可能）|
 | タスクボード      | [Issue ボード](https://gitlab.com/groups/gitlab-com/-/boards/3014703?label_name%5B%5D=Contribution%20Efficiency)（カットライン以上の項目）|
@@ -47,9 +47,9 @@ lastmod: "2026-02-27T11:50:24+01:00"
 | ワーキンググループの役割 | 担当者                                               | 役職                                                      |
 |-----------------------|------------------------------------------------------|------------------------------------------------------------|
 | エグゼクティブスポンサー | [Mek Stittri](https://gitlab.com/meks)               | VP of Quality                                              |
-| 機能リード             | [Nick Veenhof](https://gitlab.com/nick_vh)          | Director of Contributor Success                            |
-| 機能リード             | [John Coghlan](https://gitlab.com/johncoghlan)       | Director, Developer Advocacy                               |
-| 機能リード             | [Christos Bacharakis](https://gitlab.com/cbacharakis)| Senior Code Contributor Program Manager                    |
+| ファンクショナルリード             | [Nick Veenhof](https://gitlab.com/nick_vh)          | Director of Contributor Success                            |
+| ファンクショナルリード             | [John Coghlan](https://gitlab.com/johncoghlan)       | Director, Developer Advocacy                               |
+| ファンクショナルリード             | [Christos Bacharakis](https://gitlab.com/cbacharakis)| Senior Code Contributor Program Manager                    |
 | メンバー               | [Rémy Coutable](https://gitlab.com/rymai)            | Staff Backend Engineer, Engineering Productivity           |
 | メンバー               | [Tanya Pazitny](https://gitlab.com/tpazitny)         | Director of Quality Engineering                            |
 | メンバー               | [Marshall Cottrell](https://gitlab.com/marshall007)  | Principal, Strategy and Operations (Technical)             |

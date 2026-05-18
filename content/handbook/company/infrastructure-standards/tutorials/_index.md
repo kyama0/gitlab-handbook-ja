@@ -13,11 +13,11 @@ lastmod: "2024-10-29T23:31:43+00:00"
 
 利用可能なチュートリアルの一覧です。
 
-チュートリアルが利用できない場合は、Slack または GitLab の Issue でレームオーナーにお問い合わせください。
+チュートリアルが利用できない場合は、Slack または GitLab の Issue でレルムオーナーにお問い合わせください。
 
-### レーム
+### レルム
 
-- [レームの作成](/handbook/company/infrastructure-standards/tutorials/realms/create-realm)
+- [レルムの作成](/handbook/company/infrastructure-standards/tutorials/realms/create-realm)
 
 ### グループ
 

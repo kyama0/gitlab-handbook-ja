@@ -13,8 +13,8 @@ lastmod: "2024-05-14T21:58:35+00:00"
 
 | プロパティ        | 値           |
 |-----------------|-----------------|
-| 作成日          | 2022年5月20日 |
-| 目標終了日       | 2022年7月28日 |
+| 作成日          | 2022 年 5 月 20 日 |
+| 目標終了日       | 2022 年 7 月 28 日 |
 | Slack           | [#wg_ent-mkt-leadership](https://join.slack.com/share/enQtMzY4NzMwMzE1MTk1My0xZDAxY2FlMzk1MmU5ZGU4NjQ1MzBlMGE4MTE2OTg3MjA0ZTc3M2U5ZmZhMWY0YTU5ODU4Njc0ZTEyNDUzYTI1)（GitLab チームメンバーのみアクセス可） |
 | Google Doc      | [ワーキンググループ アジェンダ](https://docs.google.com/document/d/1nXo8r11TxFyNPMdEpGzS8f95Gm0CtUoeElCCjY93isU/edit?usp=sharing)（GitLab チームメンバーのみアクセス可） |
 | ドキュメント            | TBD |

@@ -41,6 +41,6 @@ lastmod: "2024-06-27T22:14:31+00:00"
 | ワーキンググループの役割 | 担当者                |
 |-----------------------|-----------------------|
 | ファシリテーター        | Christine Lee         |
-| 機能リード             | Craig Mestel |
+| ファンクショナルリード             | Craig Mestel |
 | メンバー               | Harsh Jawharkar, Melissa Smolensky, Stella Treas, Mike Pyle, Monica Galleto |
 | エグゼクティブステークホルダー | Sid Sijbrandij |

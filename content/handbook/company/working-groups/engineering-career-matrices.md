@@ -13,8 +13,8 @@ lastmod: "2023-09-01T14:08:42+01:00"
 
 | プロパティ        | 値           |
 |-----------------|-----------------|
-| 作成日          | 2020年3月6日   |
-| 目標終了日       | 2020年8月20日  |
+| 作成日          | 2020 年 3 月 6 日   |
+| 目標終了日       | 2020 年 8 月 20 日  |
 | Slack           | #wg_career_matrices（社内からのみアクセス可） |
 | Google Doc      | [キャリアマトリクス ワーキンググループ アジェンダ](https://docs.google.com/document/d/1gTAXEdNXNiFGcXuKS5seGrz2GLbeftv56fT9NvIEZmg/edit?usp=sharing)（社内からのみアクセス可） |
 | Issue ボード     | [Plato コーチングパイロット Issue ボード](https://gitlab.com/gitlab-com/www-gitlab-com/-/boards/1623791)|

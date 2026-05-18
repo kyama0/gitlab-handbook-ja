@@ -13,8 +13,8 @@ lastmod: "2025-12-15T11:32:24-06:00"
 
 | プロパティ     | 値 |
 |--------------|-------|
-| 作成日 | 2022年2月1日 |
-| 目標終了日   | 2022年4月30日 |
+| 作成日 | 2022 年 2 月 1 日 |
+| 目標終了日   | 2022 年 4 月 30 日 |
 | Slack        | [wg-incident-respose-management-framework](https://gitlab.slack.com/archives/C02UMD8S8NM) |
 | Google Doc   | [インシデントレスポンス管理 ワーキンググループ](https://docs.google.com/document/d/1SwbD-Vbt813DUtS5VaXWI7p80yE5rqyNBwJFwmVT_Ko/edit#)（社内） |
 | Issue ラベル | WG-IRM（gitlab-com/-org） |
@@ -72,7 +72,7 @@ lastmod: "2025-12-15T11:32:24-06:00"
 | ファシリテーター         | [Anna Liisa Moter](https://gitlab.com/amoter)| Manager Reliability|
 | エグゼクティブスポンサー        | [Steve Loyd](https://gitlab.com/sloyd)      | VP Infrastructure                          |
 | メンバー              | [Anthony Fappiano](https://gitlab.com/afappiano)          | Manager Reliability                   |
-| Development 機能リード | [Dan Croft](https://gitlab.com/dcroft) | Senior Engineering Manager, Ops |
+| Development ファンクショナルリード | [Dan Croft](https://gitlab.com/dcroft) | Senior Engineering Manager, Ops |
 | メンバー              | [Sam Goldstein](https://gitlab.com/sgoldstein) | Director of Engineering, Ops |
 | メンバー（CMOC）       | [Kenneth Chu](https://gitlab.com/kenneth) | Support team  |
 | メンバー              | [Kevin Chu](https://gitlab.com/kbychu)    | Group Manager of Product, Monitor |

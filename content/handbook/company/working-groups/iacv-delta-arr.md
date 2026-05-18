@@ -13,8 +13,8 @@ lastmod: "2023-09-01T13:37:05+01:00"
 
 | プロパティ     | 値 |
 |--------------|-------|
-| 作成日 | 2019年12月23日 |
-| 推定終了日   | 2019年2月12日 |
+| 作成日 | 2019 年 12 月 23 日 |
+| 推定終了日   | 2019 年 2 月 12 日 |
 | Slack        | [#wg_iacv_delta_arr](https://slack.com/share/IS0AQJPBJ/73gJVemqN75KgjyND7TkFYSX/enQtODg0MzY0NjM1MzkyLWY0ZWQ2ZTcxMDdlMjZkZWYzNzNlNGIwODJlZjk3NTJkYTdhZGNiZGY1MjA1ZjEyODgxNzlmOTA4MGVjZTkyMjU)（社内からのみアクセス可能） |
 | Google Doc   | [iacv-delta-arr ワーキンググループアジェンダ](https://docs.google.com/document/d/14HzbogBmLXMSiTC6XAC7HgtMhXH80N0rAdauqyrkSGU/edit#)（社内からのみアクセス可能） |
 
@@ -31,6 +31,6 @@ Epic を追加...
 | ワーキンググループの役割    | 担当者                |
 |-----------------------|-----------------------|
 | ファシリテーター           | Chase Wright          |
-| 機能リード    | Craig Mestel          |
+| ファンクショナルリード    | Craig Mestel          |
 | メンバー                | Israel Weeks、Jack Brennan、James Harrison、Jamie Cary、Kat Tam、Matt Benzaquen |
 | エグゼクティブステークホルダー | Michael McBride、Paul Machle |

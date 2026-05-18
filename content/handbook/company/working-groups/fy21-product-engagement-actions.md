@@ -13,8 +13,8 @@ lastmod: "2025-04-30T18:11:10+00:00"
 
 | プロパティ        | 値             |
 |-----------------|-------------------|
-| 作成日    | 2021年2月23日 |
-| 目標終了日 | 2021年5月30日    |
+| 作成日    | 2021 年 2 月 23 日 |
+| 目標終了日 | 2021 年 5 月 30 日    |
 | Slack           | [#wg_fy21_product_engagement_actions](https://gitlab.slack.com/archives/C01P9FJRDHS)（GitLab チームメンバーのみアクセス可能） |
 | Google Doc      | [ワーキンググループアジェンダ](https://docs.google.com/document/d/1_5Rf3z1uH0ieIvUJIK0CDVeG9H-EG__1B-OLxARZOxA/edit#)（GitLab チームメンバーのみアクセス可能） |
 | Epics/Issues    | [エンゲージメントサーベイ Issue](https://gitlab.com/gitlab-com/Product/-/issues/1986) / [Issue ボード](https://gitlab.com/groups/gitlab-com/-/boards/1453895?scope=all&utf8=%E2%9C%93&label_name[]=Product%20Operations&label_name[]=wg-fy21-engagement-actions) / エンゲージメントアクションアイテム Epic: [1386](https://gitlab.com/groups/gitlab-com/-/epics/1386)  [1387](https://gitlab.com/groups/gitlab-com/-/epics/1387)  [1388](https://gitlab.com/groups/gitlab-com/-/epics/1388) |
@@ -38,7 +38,7 @@ lastmod: "2025-04-30T18:11:10+00:00"
 
 **作業の進め方**
 
-集中力を維持して迅速にアクションを実行するために、*リーン*を保つ必要があります。そのため、ワーキンググループは9名の機能リード、1名のファシリテーター、1名のエグゼクティブスポンサーに限定します。9名の機能リードは、上記の[解決すべき問題](#problems-to-solve)のうち1つをそれぞれ担当する3名のコラボレーターからなる3つのグループに分かれます。
+集中力を維持して迅速にアクションを実行するために、*リーン*を保つ必要があります。そのため、ワーキンググループは 9 名のファンクショナルリード、1 名のファシリテーター、1 名のエグゼクティブスポンサーに限定します。9 名のファンクショナルリードは、上記の[解決すべき問題](#problems-to-solve)のうち 1 つをそれぞれ担当する 3 名のコラボレーターからなる 3 つのグループに分かれます。
 
 **ワーキンググループボード向けの Epic、Issue、MR の作成**
 
@@ -56,7 +56,7 @@ lastmod: "2025-04-30T18:11:10+00:00"
 - MR の必須レビュアーを `reviewer` として割り当てることで追加してください。
 - フィードバックが完了したら `reviewer` の割り当てを外してください。
 
-**全員へのお知らせ：To-Do リストに注意してください！非議論的な MR に対して24時間以上は待ちません。**
+**全員へのお知らせ：To-Do リストに注意してください！非議論的な MR に対して 24 時間以上は待ちません。**
 
 ## ミーティング
 
@@ -66,8 +66,8 @@ lastmod: "2025-04-30T18:11:10+00:00"
 
 [プロダクト FY'21 エンゲージメントサーベイの結果](https://gitlab.com/gitlab-com/Product/-/issues/1986)で要求されている事項：
 
-1. マネージャーが効果的な1〜2年のキャリア開発会話を行うためのコンピテンシーを定義します。プロダクトハンドブックにガイダンスを追加し、部門全体で一貫したアプローチを持てるようにテンプレートを作成します。各チームメンバーがそのドキュメントに記入し、マネージャーとの議論のための時間をスケジュールできるようにします。各人に合ったサイクルで定期的なキャリア会話を行うことを強く望んでいます。
-1. 少なくとも3つの主要なコンピテンシーについて、プロダクトチームメンバー向けのより充実した学習・開発カリキュラムに投資します。LinkedIn、ProductTalk、および社内作成のコンテンツを活用します。コンテンツをコンピテンシー開発ハンドブックの説明、キャリア開発フレームワーク、およびオンボーディング手順にリンクします。
+1. マネージャーが効果的な 1〜2 年のキャリア開発会話を行うためのコンピテンシーを定義します。プロダクトハンドブックにガイダンスを追加し、部門全体で一貫したアプローチを持てるようにテンプレートを作成します。各チームメンバーがそのドキュメントに記入し、マネージャーとの議論のための時間をスケジュールできるようにします。各人に合ったサイクルで定期的なキャリア会話を行うことを強く望んでいます。
+1. 少なくとも 3 つの主要なコンピテンシーについて、プロダクトチームメンバー向けのより充実した学習・開発カリキュラムに投資します。LinkedIn、ProductTalk、および社内作成のコンテンツを活用します。コンテンツをコンピテンシー開発ハンドブックの説明、キャリア開発フレームワーク、およびオンボーディング手順にリンクします。
 1. PM の毎月のリリースタスクの概要を説明するプロダクトハンドブックページを作成します。何が必須で、何がオプションであるか、またはベストプラクティスのガイダンスとして存在するかを明確にします。PM の毎月のリリースタスクリストを削減して、顧客・市場・競合調査などの高価値な活動により多くの時間を割けるよう努めます。
 
 Product Operations で要求されている事項：
@@ -92,10 +92,10 @@ Product Operations で要求されている事項：
 |-----------------------|-----------------------|--------------------------------|
 | エグゼクティブスポンサー     | Scott Williamson (Product) | Chief Product Officer |
 | ファシリテーター           | Farnoosh Seifoddini (Product) | Product Operations |
-| 機能リード     | Kevin Chu (Product) | Group Manager |
-| 機能リード       | Mike Karampalas (Product - Growth) | Principal Product Manager |
-| 機能リード       | Mark Wood (Product - Create / Plan) | Senior Product Manager |
-| 機能リード       | Josh Zimmerman (People)) | Learning & Development Manager |
-| 機能リード       | Viktor Nagy (Product - Configure) | Senior Product Manager |
-| 機能リード       | Derek Ferguson (Product - Secure) | Senior Product Manager |
-| 機能リード       | Jacki Bauer (UX) | Product Design Manager |
+| ファンクショナルリード     | Kevin Chu (Product) | Group Manager |
+| ファンクショナルリード       | Mike Karampalas (Product - Growth) | Principal Product Manager |
+| ファンクショナルリード       | Mark Wood (Product - Create / Plan) | Senior Product Manager |
+| ファンクショナルリード       | Josh Zimmerman (People)) | Learning & Development Manager |
+| ファンクショナルリード       | Viktor Nagy (Product - Configure) | Senior Product Manager |
+| ファンクショナルリード       | Derek Ferguson (Product - Secure) | Senior Product Manager |
+| ファンクショナルリード       | Jacki Bauer (UX) | Product Design Manager |

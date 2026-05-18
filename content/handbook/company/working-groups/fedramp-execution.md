@@ -14,7 +14,7 @@ lastmod: "2025-04-01T09:22:28+00:00"
 
 | プロパティ        | 値             |
 |-----------------|-------------------|
-| 作成日    | 2021年11月25日 |
+| 作成日    | 2021 年 11 月 25 日 |
 | 終了日        | 未定               |
 | Slack           | [#wg_fedramp](https://gitlab.slack.com/archives/C0110E0NMT9)（社内からのみアクセス可能） |
 | Google Doc      | [ワーキンググループアジェンダ](https://docs.google.com/document/d/1WcpsW_XwS_te-yGXHaRyKH827e_jXHamlbJm5CEx0E4/edit?usp=sharing)（社内からのみアクセス可能） |

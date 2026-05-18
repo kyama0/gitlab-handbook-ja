@@ -13,8 +13,8 @@ lastmod: "2024-06-27T22:14:31+00:00"
 
 | プロパティ     | 値            |
 |--------------|------------------|
-| 作成日       | 2020年8月1日   |
-| 終了日       | 2020年12月15日|
+| 作成日       | 2020 年 8 月 1 日   |
+| 終了日       | 2020 年 12 月 15 日|
 | Slack        | [#wg_dogfood_plan](https://gitlab.slack.com/archives/C0188LMC2LQ)（社内のみ） |
 | Google Doc   | [ドッグフード計画 ワーキンググループ アジェンダ](https://docs.google.com/document/d/1x7WZd_ilH9N4TvbUwdFKw2hcdlQ80SaN2CmHdNwnEzI/edit)（社内のみ） |
 
