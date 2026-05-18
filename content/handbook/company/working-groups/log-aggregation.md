@@ -13,8 +13,8 @@ lastmod: "2024-09-09T21:38:19+00:00"
 
 | プロパティ   | 値 |
 |--------------|-------|
-| 作成日       | 2019年3月6日 |
-| 終了日       | 2019年7月 |
+| 作成日       | 2019 年 3 月 6 日 |
+| 終了日       | 2019 年 7 月 |
 | Slack        | [#wg_log-aggregation](https://gitlab.slack.com/messages/CGR0T1C6P)（社内からのみアクセス可能） |
 | Google Doc   | [ログ集約ワーキンググループ](https://docs.google.com/document/d/192B68tEuw5KoJEKwlzDlVbXS8PaxOT57M2MAcjCbHVo/edit)（社内からのみアクセス可能） |
 | Issue ラベル | WG-LogAgg (gitlab-com/-org) |

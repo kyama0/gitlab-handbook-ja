@@ -1,6 +1,6 @@
 ---
 title: "リアルタイム ワーキンググループ"
-description: "GitLab リアルタイム ワーキンググループは、セルフマネージドのお客様にリアルタイム機能を1つ提供することを目的としています。詳細はこちら！"
+description: "GitLab リアルタイム ワーキンググループは、セルフマネージドのお客様にリアルタイム機能を 1 つ提供することを目的としています。詳細はこちら！"
 no_list: true
 upstream_path: "/handbook/company/working-groups/real-time/"
 upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
@@ -14,8 +14,8 @@ lastmod: "2024-08-16T09:29:41+00:00"
 
 | プロパティ       | 値              |
 |-----------------|-----------------|
-| 作成日          | 2020年3月12日 |
-| クローズ日       | 2021年11月1日 |
+| 作成日          | 2020 年 3 月 12 日 |
+| クローズ日       | 2021 年 11 月 1 日 |
 | Slack           | [#wg_real-time](https://app.slack.com/client/T02592416/CUX9Z2N66)（社内からのみアクセス可能） |
 | Google Doc      | [リアルタイム ワーキンググループ アジェンダ](https://docs.google.com/document/d/1eqwiGKifpnE4XTog0dB4Lgb-Bx0cc8g8OejmWDoZabs/edit#)（社内からのみアクセス可能） |
 | Epic & 設計書    | [リアルタイム機能に ActionCable を使用](https://gitlab.com/groups/gitlab-org/-/epics/3056) |
@@ -24,13 +24,13 @@ lastmod: "2024-08-16T09:29:41+00:00"
 
 ## ビジネス目標
 
-セルフマネージドのお客様にリアルタイム機能を1つ提供します。
+セルフマネージドのお客様にリアルタイム機能を 1 つ提供します。
 
-## 完了基準 - フェーズ1
+## 完了基準 - フェーズ 1
 
 （✅ 完了、✏️ 進行中）
 
-### リアルタイム機能1つ、シングルインスタンス / 小規模クラスターのセルフホスティングのお客様が利用可能 `=> 100%`
+### リアルタイム機能 1 つ、シングルインスタンス / 小規模クラスターのセルフホスティングのお客様が利用可能 `=> 100%`
 
 [Issue](https://gitlab.com/gitlab-org/gitlab/issues/17589)
 
@@ -45,11 +45,11 @@ lastmod: "2024-08-16T09:29:41+00:00"
 - [小規模デプロイメントでの機能利用方法をお客様に案内するドキュメントを整備](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/40500) ✅
 - [Action Cable が有効な場合に条件付きで機能を利用可能](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/38204) ✅
 
-## 完了基準 - フェーズ2
+## 完了基準 - フェーズ 2
 
 （✅ 完了、✏️ 進行中）
 
-### リアルタイム機能1つ、大規模デプロイメントで利用可能 `=> 100%`
+### リアルタイム機能 1 つ、大規模デプロイメントで利用可能 `=> 100%`
 
 [Issue](https://gitlab.com/gitlab-org/gitlab/issues/17589)
 
@@ -77,7 +77,7 @@ lastmod: "2024-08-16T09:29:41+00:00"
 
 ## 設計書
 
-技術的な決定とその根拠は[この設計書](design_document)に記録されています。
+技術的な決定とその根拠は[この設計書]({{< ref "design_document" >}})に記録されています。
 
 ## 役割と責任
 
@@ -85,9 +85,9 @@ lastmod: "2024-08-16T09:29:41+00:00"
 |-----------------------|-----------------------|--------------------------------|
 | エグゼクティブスポンサー | Christopher Lefelhocz | VP of Development |
 | ファシリテーター        | John Hope             | Engineering Manager, Plan      |
-| 機能リード             | Heinrich Lee Yu       | Senior Backend Engineer, Plan  |
-| 機能リード             | Gabe Weaver           | Senior Product Manager, Plan   |
-| 機能リード             | Sean McGivern         | Staff Backend Engineer, Scalability |
+| ファンクショナルリード             | Heinrich Lee Yu       | Senior Backend Engineer, Plan  |
+| ファンクショナルリード             | Gabe Weaver           | Senior Product Manager, Plan   |
+| ファンクショナルリード             | Sean McGivern         | Staff Backend Engineer, Scalability |
 | メンバー               | Scott Stern           | Frontend Engineer, Plan        |
 | メンバー               | Ben Kochie            | Site Reliability Engineer      |
 | メンバー               | Natalia Tepluhina     | Staff Frontend Engineer, Plan |

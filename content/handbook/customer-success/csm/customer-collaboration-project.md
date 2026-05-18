@@ -42,7 +42,7 @@ lastmod: "2026-02-23T20:55:06-06:00"
 - デモや POV などを追跡する SA（ソリューションアーキテクト）の活動。
 - アーキテクチャダイアグラムと履歴（git 履歴）。
 - ガバナンスのための完全な履歴（git 履歴）を持つ、[Zendesk サポート](https://about.gitlab.com/support/managing-support-contacts/#managing-contacts)の[共有組織](https://about.gitlab.com/support/managing-support-contacts/#shared-organizations)の顧客によって管理されたメンバーのリスト。
-- [TAM Issue トラッカー](https://gitlab.com/gitlab-com/cs-tools/gitlab-cs-tools/tam-issue-tracking) 製品フィーチャーリクエストの追跡。
+- [TAM Issue トラッカー](https://gitlab.com/gitlab-com/cs-tools/gitlab-cs-tools/tam-issue-tracking) 製品機能リクエストの追跡。
 - 製品チームとのインタラクションと[顧客 Issue の優先順位付け](/handbook/product/product-processes/customer-issues-prioritization-framework/)。
 - Issue 作成のための[パブリックページ](https://gitlab.com/gitlab-com/account-management/templates/customer-collaboration-project-template/-/tree/master/public)。
 - 顧客コラボレーションプロジェクトでロールを持たない顧客の他のユーザーが Issue を作成できるようにするための [ServiceDesk 機能](https://docs.gitlab.com/ee/user/project/service_desk/)。CSM は顧客に、コラボレーションプロジェクトは製品サポートとトラブルシューティングの問い合わせには使用されていないことを通知する必要があります。
@@ -88,7 +88,7 @@ lastmod: "2026-02-23T20:55:06-06:00"
 10. 顧客のチームを「Developer」ロールで顧客コラボレーションプロジェクトの直接メンバーとして招待する
 11. 顧客のチームメンバーの一部が「Maintainer」ロールを持つべきかどうかを顧客と話し合い、ユーザーを自分たちで管理できるようにする。
 12. プロジェクトと適用可能なすべてのラベルの新しい Issue を購読する。
-13. コラボレーションプロジェクト内のフィーチャーリクエストとアジェンダの Issue テンプレートを調整する。その他の [Issue テンプレートはグループレベルにある](https://gitlab.com/gitlab-com/account-management/sub-group-issue-templates/-/tree/master/.gitlab/issue_templates)。
+13. コラボレーションプロジェクト内の機能リクエストとアジェンダの Issue テンプレートを調整する。その他の [Issue テンプレートはグループレベルにある](https://gitlab.com/gitlab-com/account-management/sub-group-issue-templates/-/tree/master/.gitlab/issue_templates)。
 14. 顧客にコラボレーションプロジェクトを紹介する。
 
 #### 別の CSM から顧客を受け取った場合の手順

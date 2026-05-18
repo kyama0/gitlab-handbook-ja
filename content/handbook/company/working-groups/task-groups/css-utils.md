@@ -31,9 +31,9 @@ lastmod: "2024-09-24T16:04:37+00:00"
 
 ### 終了基準 {#exit-criteria}
 
-#### 2024年9月の終了基準更新
+#### 2024 年 9 月の終了基準更新
 
-2024年9月に、タスクグループの終了基準を再評価しました。この時点で、Tailwind CSS へのマイグレーションはほぼ完了しており、いくつかのクリーンアップタスクが残っているだけでした。目標を見直したところ、残りのスコープがタスクグループのような構造には大きすぎる可能性があることに気づきました。タスクグループは短期間で、明確に定義されたタスクを適切なタイミングで完了することに集中することを目的としています。記録のために、以下が元の終了基準です:
+2024 年 9 月に、タスクグループの終了基準を再評価しました。この時点で、Tailwind CSS へのマイグレーションはほぼ完了しており、いくつかのクリーンアップタスクが残っているだけでした。目標を見直したところ、残りのスコープがタスクグループのような構造には大きすぎる可能性があることに気づきました。タスクグループは短期間で、明確に定義されたタスクを適切なタイミングで完了することに集中することを目的としています。記録のために、以下が元の終了基準です:
 
 > 1. CSS ユーティリティが Tailwind で生成される: <https://docs.gitlab.com/ee/architecture/blueprints/tailwindcss/>。
 >     1. デザイントークンの使用を通じて Pajamas 仕様を厳格に適用する。
@@ -47,26 +47,26 @@ lastmod: "2024-09-24T16:04:37+00:00"
 再評価の結果として、以下を認識しています:
 
 - CSS ユーティリティから Tailwind CSS へのマイグレーションは完了しました。
-- 「ページ固有の CSS バンドル」と「CSS ルールから CSS ユーティリティへ」のイニシアチブは互いに矛盾しています。どちらか一方を他方のために断念する必要があります。
-- タスクグループとして、前述のイニシアチブに取り組む手段がありません。これらはフロントエンド部門が所有するか、これらに専念する新しいタスクグループを立ち上げる必要があります。
+- 「ページ固有の CSS バンドル」と「CSS ルールから CSS ユーティリティへ」のイニシアティブは互いに矛盾しています。どちらか一方を他方のために断念する必要があります。
+- タスクグループとして、前述のイニシアティブに取り組む手段がありません。これらはフロントエンド部門が所有するか、これらに専念する新しいタスクグループを立ち上げる必要があります。
 - ただし、前進するうえで最善のアプローチについてのガイダンスを提供することはできます。これはドキュメントの更新を通じて行われました。
-- カラー宣言の統合に関しては、Tailwind CSS がメインプロジェクトで利用可能になったことで、この目標を達成するためのより良い立場に立てています。ただし、これも再びこのタスクグループのスコープ外です。スタイルをデザイントークンに移行するプロセスがまだ進行中であるため、このイニシアチブは今後デザインシステムグループが所有できます。
+- カラー宣言の統合に関しては、Tailwind CSS がメインプロジェクトで利用可能になったことで、この目標を達成するためのより良い立場に立てています。ただし、これも再びこのタスクグループのスコープ外です。スタイルをデザイントークンに移行するプロセスがまだ進行中であるため、このイニシアティブは今後デザインシステムグループが所有できます。
 
 以上のすべてを踏まえ、更新された終了基準は次のとおりです:
 
 1. GitLab UI を使用するすべてのアクティブな GitLab プロジェクトで CSS ユーティリティが Tailwind で生成されている。
 1. 今後スタイルをどのように記述するかについてのガイダンスがドキュメント化されている。
 
-2024年9月24日現在、これらの目標が達成されたため、タスクグループを解散します。
+2024 年 9 月 24 日現在、これらの目標が達成されたため、タスクグループを解散します。
 
 ### 役割と責任
 
 | タスクグループの役割 | 担当者 | 職位 |
 | --------------- | ------------------------ | ------------------------------------------------------------ |
-| DRI | Paul Gascou-Vaillancourt | シニアフロントエンドエンジニア、Foundations::Personal Productivity |
-| メンバー | Florie Guibert | シニアフロントエンドエンジニア、Plan::Product Planning |
-| メンバー | José Iván Vargas López | シニアフロントエンドエンジニア、Verify::Pipeline Execution |
-| メンバー | Peter Hegman | シニアフロントエンドエンジニア、Data Stores::Tenant Scale |
-| メンバー | Savas Vedova | スタッフフロントエンドエンジニア、Govern::Threat Insights |
-| メンバー | Vanessa Otto | シニアフロントエンドエンジニア、Foundations::Design System |
-| メンバー | Lukas Eipert | スタッフフロントエンドエンジニア、Foundations::Personal Productivity |
+| DRI | Paul Gascou-Vaillancourt | Senior Frontend Engineer, Foundations::Personal Productivity |
+| メンバー | Florie Guibert | Senior Frontend Engineer, Plan::Product Planning |
+| メンバー | José Iván Vargas López | Senior Frontend Engineer, Verify::Pipeline Execution |
+| メンバー | Peter Hegman | Senior Frontend Engineer, Data Stores::Tenant Scale |
+| メンバー | Savas Vedova | Staff Frontend Engineer, Govern::Threat Insights |
+| メンバー | Vanessa Otto | Senior Frontend Engineer, Foundations::Design System |
+| メンバー | Lukas Eipert | Staff Frontend Engineer, Foundations::Personal Productivity |

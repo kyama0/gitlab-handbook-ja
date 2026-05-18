@@ -45,6 +45,6 @@ GitLab UI ライブラリはさまざまなプロジェクト（GitLab、Switchb
 
 | タスクグループの役割 | 担当者 | 職位 |
 | --------------- | ------------- | ----------------------------------------------------|
-| DRI | Mark Florian | スタッフフロントエンドエンジニア、Foundations::Design System |
-| メンバー | Marina Mosti | シニアフロントエンドエンジニア、Switchboard |
-| メンバー | Miguel Rincon | スタッフフロントエンドエンジニア、Verify:Runner |
+| DRI | Mark Florian | Staff Frontend Engineer, Foundations::Design System |
+| メンバー | Marina Mosti | Sr. Frontend Engineer, Switchboard |
+| メンバー | Miguel Rincon | Staff Frontend Engineer, Verify:Runner |

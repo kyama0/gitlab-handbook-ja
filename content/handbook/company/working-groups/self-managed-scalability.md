@@ -13,8 +13,8 @@ lastmod: "2024-05-11T00:54:28+00:00"
 
 | プロパティ      | 値             |
 |----------------|---------------|
-| 作成日          | 2019年5月21日 |
-| 目標終了日      | 2020年6月23日 |
+| 作成日          | 2019 年 5 月 21 日 |
+| 目標終了日      | 2020 年 6 月 23 日 |
 | Slack           | [#wg_sm-scalability](https://gitlab.slack.com/messages/CJBEAQ589)（社内からのみアクセス可能） |
 | Google Doc      | [セルフマネージド スケーラビリティ ワーキンググループ アジェンダ](https://docs.google.com/document/d/1H9ENjGO5vNI1e0j3lm2e6zeK8F8o8H-69M3V7m3uYt8/edit)（社内からのみアクセス可能） |
 | Issue ボード    | [gitlab-org boards 1131633](https://gitlab.com/groups/gitlab-org/-/boards/1131633) |
@@ -28,11 +28,11 @@ lastmod: "2024-05-11T00:54:28+00:00"
 - [GitLab セルフマネージド パフォーマンスメトリクスの完成](https://gitlab.com/groups/gitlab-org/-/epics/1352) => `100%`
 - [すべての大規模顧客に対してデフォルトで有効化されたモニタリング（Prometheus、Grafana、およびすべてのエクスポーター）](https://gitlab.com/groups/gitlab-org/-/epics/1339) => `100%`
 - [環境スコアを持つセルフマネージド顧客のインベントリ](https://gitlab.com/groups/gitlab-org/-/epics/1338) => `100%` スコアリングシステムが定義されました。
-- [1つの顧客をリファレンスアーキテクチャに移行](https://gitlab.com/gitlab-org/quality/performance/-/issues/65) => `100%`
+- [1 つの顧客をリファレンスアーキテクチャに移行](https://gitlab.com/gitlab-org/quality/performance/-/issues/65) => `100%`
 - [追加のリファレンスアーキテクチャのリスト](https://gitlab.com/gitlab-org/quality/performance/issues/15) => `100%` 10K、25K、50K と次の即時ニーズを特定しました。
-- [10,000ユーザー リファレンスアーキテクチャ](https://gitlab.com/groups/gitlab-org/-/epics/1336) => `100%`
-- [25,000ユーザー リファレンスアーキテクチャ](https://gitlab.com/gitlab-org/quality/performance/issues/57) => `100%`
-- [50,000ユーザー リファレンスアーキテクチャ](https://gitlab.com/gitlab-org/quality/performance/issues/66) => `100%`
+- [10,000 ユーザー リファレンスアーキテクチャ](https://gitlab.com/groups/gitlab-org/-/epics/1336) => `100%`
+- [25,000 ユーザー リファレンスアーキテクチャ](https://gitlab.com/gitlab-org/quality/performance/issues/57) => `100%`
+- [50,000 ユーザー リファレンスアーキテクチャ](https://gitlab.com/gitlab-org/quality/performance/issues/66) => `100%`
 - [Kubernetes Omnibus 混合アーキテクチャの初回イテレーション](https://gitlab.com/gitlab-org/quality/performance/issues/145) => `100%`
 
 ## ビジネス成果

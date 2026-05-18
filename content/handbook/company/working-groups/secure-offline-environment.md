@@ -13,8 +13,8 @@ lastmod: "2024-05-11T00:54:28+00:00"
 
 | プロパティ      | 値             |
 |----------------|---------------|
-| 作成日          | 2020年3月17日 |
-| 目標終了日      | 2020年4月22日 |
+| 作成日          | 2020 年 3 月 17 日 |
+| 目標終了日      | 2020 年 4 月 22 日 |
 | Slack           | [#wg_secure-offline-environment](https://gitlab.slack.com/archives/CV9K1JEF5)（社内からのみアクセス可能） |
 | Google Doc      | [セキュアオフラインデプロイメント ワーキンググループ アジェンダ](https://docs.google.com/document/d/13eDkeyMH1rp7Dhzy0t-nIlwVfCqbSEp_WUftJGqFHzQ/edit?usp=sharing)（社内からのみアクセス可能） |
 | トラッキング Epic | [gitlab-org Epic](https://gitlab.com/groups/gitlab-org/-/epics/1359) |
@@ -25,7 +25,7 @@ lastmod: "2024-05-11T00:54:28+00:00"
 
 ## 完了基準
 
-- 2020年4月22日までにリリースされたコードを使用して[デモスコアカード](https://docs.google.com/spreadsheets/d/1plXG0IHLTz8l1P7bec_-QBEqoferWGw4BtaNK314Rmo/edit?ts=5e6a5425#gid=0)で5.0を達成する
+- 2020 年 4 月 22 日までにリリースされたコードを使用して[デモスコアカード](https://docs.google.com/spreadsheets/d/1plXG0IHLTz8l1P7bec_-QBEqoferWGw4BtaNK314Rmo/edit?ts=5e6a5425#gid=0)で 5.0 を達成する
 
 ## 役割と責任
 

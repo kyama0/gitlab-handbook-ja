@@ -13,8 +13,8 @@ lastmod: "2026-03-19T09:43:34-05:00"
 
 | プロパティ      | 値              |
 |-----------------|-----------------|
-| 作成日          | 2021年4月21日 |
-| 目標終了日      | 2023年1月31日 |
+| 作成日          | 2021 年 4 月 21 日 |
+| 目標終了日      | 2023 年 1 月 31 日 |
 | Slack           | [#wg_product-cdf](https://join.slack.com/share/zt-pg3dw504-aLrkdftFZ9xrqHEGqgqQMw)（GitLab チームメンバーのみアクセス可能） |
 | Google Doc      | [ワーキンググループ アジェンダ](https://docs.google.com/document/d/1a0baXkNsfDuDwcJ5IxNlLekCmFzElMGnmTmVAfQYV8o/edit?usp=sharing)（GitLab チームメンバーのみアクセス可能） |
 | ドキュメント    | [フレームワーク ハンドブックページ](/handbook/product/product-management/product-cdf-competencies/) |

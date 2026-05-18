@@ -13,13 +13,13 @@ lastmod: "2024-09-23T12:35:33-07:00"
 
 | プロパティ      | 値              |
 |----------------|-----------------|
-| 作成日          | 2020年5月22日 |
-| 終了日          | 2020年10月30日 |
+| 作成日          | 2020 年 5 月 22 日 |
+| 終了日          | 2020 年 10 月 30 日 |
 | Slack           | [#wg_simplify-groups-and-projects](https://gitlab.slack.com/archives/C014ZJZP0JC)（社内からのみアクセス可能） |
 | Google Doc      | [ワーキンググループ アジェンダ](https://docs.google.com/document/d/1NR9qlJ19n7u99I-usU0Vi2Z1OOlvz_MX00QCk1RCikQ/edit)（社内からのみアクセス可能） |
 | ドキュメント / Epic | [Epic](https://gitlab.com/groups/gitlab-org/-/epics/2885)、[機会キャンバス](https://docs.google.com/document/d/1a2xuEMAsWzPK-cb_wnS9DWh9YHXZLs34Lp7jdetODR4/edit#heading=h.4mt5fmtn0ax4) |
 | 機能 Issue       | 未定 |
-| 関連 OKR        | [90日未満のアカウントの Active Namespace ごとのステージ数を >1.7 に増加](https://gitlab.com/gitlab-com/Product/-/issues/1103) |
+| 関連 OKR        | [90 日未満のアカウントの Active Namespace ごとのステージ数を >1.7 に増加](https://gitlab.com/gitlab-com/Product/-/issues/1103) |
 
 ## 解決すべき問題
 
@@ -52,15 +52,15 @@ lastmod: "2024-09-23T12:35:33-07:00"
 
 ## 役割と責任
 
-この問題を解決する広範囲にわたる影響と、製品全体にまたがるため、セクションごとに少なくとも1名のメンバー、理想的にはステージごとに1名のメンバーを配置したいと考えています。
+この問題を解決する広範囲にわたる影響と、製品全体にまたがるため、セクションごとに少なくとも 1 名のメンバー、理想的にはステージごとに 1 名のメンバーを配置したいと考えています。
 
 | ワーキンググループの役割 | 担当者                   | 職位                          |
 |-----------------------|-----------------------|-------------------------------|
 | エグゼクティブスポンサー  | Anoop Dawar           | VP Product Management          |
 | ファシリテーター         | Justin Farris         | Group Product Manager, Plan    |
-| 機能リード              | Liam McAndrew         | Engineering Manager, Manage:Authentication and Authorization |
-| 機能リード              | Gabe Weaver           | Senior Product Manager, Plan   |
-| 機能リード              | UX Mike Long          | Product Design Manager, Dev:Plan & Dev:Manage |
+| ファンクショナルリード              | Liam McAndrew         | Engineering Manager, Manage:Authentication and Authorization |
+| ファンクショナルリード              | Gabe Weaver           | Senior Product Manager, Plan   |
+| ファンクショナルリード              | UX Mike Long          | Product Design Manager, Dev:Plan & Dev:Manage |
 | メンバー                | Melissa Ushakov（Manage）  | Senior Product Manager, Authentication and Authorization |
 | メンバー                | Alex Pooley（Manage）      | Senior Backend Engineer, Authentication and Authorization |
 | メンバー                | Christen Dybenko（Create） | Senior Product Manager, Knowledge |

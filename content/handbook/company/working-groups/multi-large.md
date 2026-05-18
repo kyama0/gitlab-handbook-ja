@@ -13,15 +13,15 @@ lastmod: "2025-12-22T16:51:53+00:00"
 
 | プロパティ        | 値           |
 |-----------------|-----------------|
-| 作成日    | 2020年6月22日 |
-| 終了日        | 2022年12月12日 |
+| 作成日    | 2020 年 6 月 22 日 |
+| 終了日        | 2022 年 12 月 12 日 |
 | Slack           | [#wg_k8s-migration](https://gitlab.slack.com/archives/C016JU3CZKJ)（社内からのみアクセス可能） |
 | Google Doc      | [Working Group Agenda](https://docs.google.com/document/d/1dbJZNAiTVvwJ9ICu10FpxP9AaAVDXDVkATmpzSONztE/edit#)（社内からのみアクセス可能） |
 | 概要とステータス | [GitLab.com on Kubernetes Epic](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/112) |
 
 ### チャーター
 
-このワーキンググループのチャーターは、GitLab.com の Kubernetes プラットフォームへの移行をサポートするために、部門横断的な取り組みを同期させることです。この移行は、大きな人員負担なしに複数の大規模で独立した GitLab サイトを実行する必要がある他のイニシアチブの基盤となるため、不可欠です。
+このワーキンググループのチャーターは、GitLab.com の Kubernetes プラットフォームへの移行をサポートするために、部門横断的な取り組みを同期させることです。この移行は、大きな人員負担なしに複数の大規模で独立した GitLab サイトを実行する必要がある他のイニシアティブの基盤となるため、不可欠です。
 
 ### スコープと定義
 

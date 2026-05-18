@@ -13,8 +13,8 @@ lastmod: "2024-10-04T15:57:24-07:00"
 
 | プロパティ        | 値           |
 |-----------------|-----------------|
-| 作成日    | 2019年10月2日 |
-| 目標終了日 | 2020年1月31日 |
+| 作成日    | 2019 年 10 月 2 日 |
+| 目標終了日 | 2020 年 1 月 31 日 |
 | Slack           | [#wg_internship-pilot](https://gitlab.slack.com/archives/CNLLV1NEN/)（社内からのみアクセス可能） |
 | Google Doc      | [インターンシップ ワーキンググループアジェンダ](https://docs.google.com/document/d/1KsdRtkRcF4EOpL2s0JDC-th8SB7nHstw8cfceLrzG-o/edit#)（社内からのみアクセス可能） |
 | Issue ボード     | [Issue ボード](https://gitlab.com/groups/gitlab-com/-/boards/1360344?&label_name[]=wg-internship-pilot)             |
@@ -29,11 +29,11 @@ lastmod: "2024-10-04T15:57:24-07:00"
 1. 期間を限定する（終了基準を参照）
 1. テクノロジー業界でキャリアを始める人なら誰でも参加可能（学生に限らない）
 1. タイムライン：
-    1. 10月：設計
-    1. 11月：採用
-    1. 12月：内定
-    1. 2020年6月：インターンシップ開始
-1. どなたからの応募も歓迎します。タレントアクティビジョン部門が行うアクティブソーシングの 100% は、テクノロジー業界でアンダーリプレゼンテッドなグループの人々を対象とします。これは候補者プールを社会全体をより反映したものにするためです。内定は純粋に実力のみに基づいて行います。
+    1. 10 月：設計
+    1. 11 月：採用
+    1. 12 月：内定
+    1. 2020 年 6 月：インターンシップ開始
+1. どなたからの応募も歓迎します。Talent Acquisition 部門が行うアクティブソーシングの 100% は、テクノロジー業界でアンダーリプレゼンテッドなグループの人々を対象とします。これは候補者プールを社会全体をより反映したものにするためです。内定は純粋に実力のみに基づいて行います。
 
 ## フェーズ 1 - プログラムの設計
 
@@ -45,8 +45,8 @@ lastmod: "2024-10-04T15:57:24-07:00"
 |-----------------------|-----------------------|--------------------------------|
 | エグゼクティブスポンサー     | Eric Johnson          | VP of Engineering              |
 | ファシリテーター           | Jean du Plessis       | Engineering Manager, Static Site Editor   |
-| 機能リード       | Roos Takken           | People Business Partner, Engineering |
-| 機能リード       | Nick Nguyen           | Engineering Manager, Ecosystem |
+| ファンクショナルリード       | Roos Takken           | People Business Partner, Engineering |
+| ファンクショナルリード       | Nick Nguyen           | Engineering Manager, Ecosystem |
 | メンバー                | Tanya Pazitny         | Quality Engineering Manager    |
 | メンバー                | Phil Calder           | Growth Engineering Manager     |
 | メンバー                | Liam McNally          | Interim Talent Acquisition Manager      |
@@ -65,7 +65,7 @@ lastmod: "2024-10-04T15:57:24-07:00"
         1. 大学、Meetup グループ、プログラミングブートキャンプへの連携
         1. LinkedIn、Instagram、Facebook 広告
         1. ソーシング
-        1. GitLab チームメンバーが自分の大学・Meetup グループ・プログラミングクラブに連絡する
+        1. GitLab チームメンバーが自分の大学・ Meetup グループ・プログラミングクラブに連絡する
     1. コミュニケーションのマイルストーンを定義する ✅
         1. 2019-11-05：プログラムの社内発表 + ハンドブック更新
         1. 2019-11-15：求人の公開（Glassdoor、LinkedIn、Stack Overflow など）
@@ -99,7 +99,7 @@ lastmod: "2024-10-04T15:57:24-07:00"
     1. インターンシップの期間を決定する ✅
         - 16 週間
     1. プログラムの時期を決定する ✅
-        - 2020年6月15日（月）〜2020年10月2日（金）
+        - 2020 年 6 月 15 日（月）〜2020 年 10 月 2 日（金）
     1. オールリモート、タイムゾーン調整、または共同作業コホートを決定する ✅
         - 第 1 週：アムステルダムでの共同作業
         - 第 2〜15 週：オールリモート
@@ -165,7 +165,7 @@ lastmod: "2024-10-04T15:57:24-07:00"
 |-----------------------|-----------------------|--------------------------------|
 | エグゼクティブスポンサー     | Eric Johnson          | VP of Engineering              |
 | ファシリテーター           | Roos Takken           | People Business Partner, Engineering |
-| 機能リード       | Jean du Plessis       | Engineering Manager, Static Site Editor   |
+| ファンクショナルリード       | Jean du Plessis       | Engineering Manager, Static Site Editor   |
 | メンバー                | Nick Nguyen           | Engineering Manager, Ecosystem |
 | メンバー                | Liam McNally          | Diversity, Inclusion and Belonging Partner     |
 | メンバー                | John Hope             | Engineering Manager, Plan      |

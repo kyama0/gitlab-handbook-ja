@@ -13,7 +13,7 @@ lastmod: "2024-09-23T12:35:33-07:00"
 
 | プロパティ     | 値 |
 |--------------|-------|
-| 作成日        | 2019年5月17日 |
+| 作成日        | 2019 年 5 月 17 日 |
 | 終了日        | TBD |
 | Slack        | [#wg_telemetry](https://gitlab.slack.com/messages/CJS56FNFP)（社内からのみアクセス可能） |
 | Google Doc   | [プロダクトアナリティクス ワーキンググループ アジェンダ](https://docs.google.com/document/d/1JK_jluomJqZklHL28zSx2Hm5aC0FCGR33ovD1LrN6gM/edit)（社内からのみアクセス可能） |

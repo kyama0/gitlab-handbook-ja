@@ -13,8 +13,8 @@ lastmod: "2025-07-02T12:41:38-07:00"
 
 | プロパティ   | 値                                                                                                                                              |
 |-------------|------------------------------------------------------------------------------------------------------------------------------------------------|
-| 作成日      | 2020年11月16日                                                                                                                                   |
-| 終了日      | 2021年2月23日                                                                                                                                    |
+| 作成日      | 2020 年 11 月 16 日                                                                                                                                   |
+| 終了日      | 2021 年 2 月 23 日                                                                                                                                    |
 | Slack       | [#wg_transient-bugs](https://gitlab.slack.com/archives/C01EUKUM5DK)（社内のみアクセス可能）                                                     |
 | Google Doc  | [ワーキンググループ議事録](https://docs.google.com/document/d/14rB6o7udwgWitV9lB7S3fzjHBaaqrG_23WVz89mHqGo/edit#heading=h.gp5w1bjoz2ug)（社内のみアクセス可能）|
 | タスクボード| [Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/2190215)                                                                           |
