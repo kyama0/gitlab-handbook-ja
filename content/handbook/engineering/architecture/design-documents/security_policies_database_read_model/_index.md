@@ -17,34 +17,7 @@ lastmod: "2025-12-08T10:53:25+01:00"
 ---
 
 
-<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
-このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
-</div>
-
-<div class="overflow-x-auto my-4">
-<table class="w-full text-sm border-collapse">
-<thead>
-<tr class="bg-gray-100 text-left">
-<th class="px-3 py-2 border border-gray-300">Status</th>
-<th class="px-3 py-2 border border-gray-300">Authors</th>
-<th class="px-3 py-2 border border-gray-300">Coach</th>
-<th class="px-3 py-2 border border-gray-300">DRIs</th>
-<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
-<th class="px-3 py-2 border border-gray-300">Created</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">implemented</span></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/mcavoj" class="text-blue-600 hover:underline">@mcavoj</a>, <a href="https://gitlab.com/sashi_kumar" class="text-blue-600 hover:underline">@sashi_kumar</a></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/theoretick" class="text-blue-600 hover:underline">@theoretick</a></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/g.hickman" class="text-blue-600 hover:underline">@g.hickman</a>, <a href="https://gitlab.com/alan" class="text-blue-600 hover:underline">@alan</a></td>
-<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::security risk management</span></td>
-<td class="px-3 py-2 border border-gray-300">2023-12-07</td>
-</tr>
-</tbody>
-</table>
-</div>
+{{< engineering/design-document-header >}}
 
 
 このドキュメントは作業中であり、最適化されたポリシー更新と伝播を可能にする新しいセキュリティポリシーアーキテクチャの提案を表しています。

@@ -16,34 +16,7 @@ lastmod: "2026-02-18T15:43:02-05:00"
 ---
 
 
-<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
-このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
-</div>
-
-<div class="overflow-x-auto my-4">
-<table class="w-full text-sm border-collapse">
-<thead>
-<tr class="bg-gray-100 text-left">
-<th class="px-3 py-2 border border-gray-300">Status</th>
-<th class="px-3 py-2 border border-gray-300">Authors</th>
-<th class="px-3 py-2 border border-gray-300">Coach</th>
-<th class="px-3 py-2 border border-gray-300">DRIs</th>
-<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
-<th class="px-3 py-2 border border-gray-300">Created</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">ongoing</span></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/michaelangeloio" class="text-blue-600 hover:underline">@michaelangeloio</a>, <a href="https://gitlab.com/michaelusa" class="text-blue-600 hover:underline">@michaelusa</a>, <a href="https://gitlab.com/jgdoyon1" class="text-blue-600 hover:underline">@jgdoyon1</a>, <a href="https://gitlab.com/bohdanpk" class="text-blue-600 hover:underline">@bohdanpk</a></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/ahegyi" class="text-blue-600 hover:underline">@ahegyi</a>, <a href="https://gitlab.com/shekharpatnaik" class="text-blue-600 hover:underline">@shekharpatnaik</a>, <a href="https://gitlab.com/andrewn" class="text-blue-600 hover:underline">@andrewn</a>, <a href="https://gitlab.com/dgruzd" class="text-blue-600 hover:underline">@dgruzd</a></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/michaelangeloio" class="text-blue-600 hover:underline">@michaelangeloio</a></td>
-<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::analytics</span></td>
-<td class="px-3 py-2 border border-gray-300">2025-10-12</td>
-</tr>
-</tbody>
-</table>
-</div>
+{{< engineering/design-document-header >}}
 
 
 ## 概要
