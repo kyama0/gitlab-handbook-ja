@@ -16,34 +16,7 @@ lastmod: "2025-08-04T09:37:20+02:00"
 ---
 
 
-<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
-このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
-</div>
-
-<div class="overflow-x-auto my-4">
-<table class="w-full text-sm border-collapse">
-<thead>
-<tr class="bg-gray-100 text-left">
-<th class="px-3 py-2 border border-gray-300">Status</th>
-<th class="px-3 py-2 border border-gray-300">Authors</th>
-<th class="px-3 py-2 border border-gray-300">Coach</th>
-<th class="px-3 py-2 border border-gray-300">DRIs</th>
-<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
-<th class="px-3 py-2 border border-gray-300">Created</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="px-3 py-2 border border-gray-300"></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/a_richter" class="text-blue-600 hover:underline">@a_richter</a></td>
-<td class="px-3 py-2 border border-gray-300"></td>
-<td class="px-3 py-2 border border-gray-300"></td>
-<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::tenant-scale</span></td>
-<td class="px-3 py-2 border border-gray-300">2025-05-08</td>
-</tr>
-</tbody>
-</table>
-</div>
+{{< engineering/design-document-header >}}
 
 
 Cells アーキテクチャの Topology Service には、強力な整合性保証を持つ高可用性データベースが必要です。Cloud Spanner は[リージョナル](https://cloud.google.com/spanner/docs/instance-configurations#regional-configurations)構成と[マルチリージョナル](https://cloud.google.com/spanner/docs/instance-configurations#multi-region-configurations)構成の両方を提供します。

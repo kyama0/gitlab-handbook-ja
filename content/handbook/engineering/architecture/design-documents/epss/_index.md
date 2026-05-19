@@ -17,34 +17,7 @@ lastmod: "2025-04-28T10:53:04-07:00"
 ---
 
 
-<div class="my-3 border-l-4 border-blue-500 bg-blue-50 px-4 py-3 rounded-r text-sm text-blue-800">
-このページには今後予定されている製品・機能・機能性に関する情報が含まれています。ここに示す情報は参考目的のみです。購入・計画の決定にこの情報を使用しないでください。製品・機能・機能性の開発、リリース、タイミングは変更または延期される可能性があり、GitLab Inc. の独自の判断に委ねられています。
-</div>
-
-<div class="overflow-x-auto my-4">
-<table class="w-full text-sm border-collapse">
-<thead>
-<tr class="bg-gray-100 text-left">
-<th class="px-3 py-2 border border-gray-300">Status</th>
-<th class="px-3 py-2 border border-gray-300">Authors</th>
-<th class="px-3 py-2 border border-gray-300">Coach</th>
-<th class="px-3 py-2 border border-gray-300">DRIs</th>
-<th class="px-3 py-2 border border-gray-300">Owning Stage</th>
-<th class="px-3 py-2 border border-gray-300">Created</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">implemented</span></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/YashaRise" class="text-blue-600 hover:underline">@YashaRise</a></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/theoretick" class="text-blue-600 hover:underline">@theoretick</a></td>
-<td class="px-3 py-2 border border-gray-300"><a href="https://gitlab.com/johncrowley" class="text-blue-600 hover:underline">@johncrowley</a>, <a href="https://gitlab.com/tkopel" class="text-blue-600 hover:underline">@tkopel</a>, <a href="https://gitlab.com/nilieskou" class="text-blue-600 hover:underline">@nilieskou</a></td>
-<td class="px-3 py-2 border border-gray-300"><span class="inline-block rounded px-2 py-0.5 text-xs font-medium bg-gray-100 text-gray-700">~devops::secure</span></td>
-<td class="px-3 py-2 border border-gray-300">2024-06-19</td>
-</tr>
-</tbody>
-</table>
-</div>
+{{< engineering/design-document-header >}}
 
 
 重要な用語については[用語集](#用語集)を参照してください。
