@@ -9,7 +9,7 @@ lastmod: "2026-02-19T17:27:34-05:00"
 ---
 
 
-{{% alert title="注" %}}
+{{% alert title="注" color="primary" %}}
 本番環境レディネスレビューは本番環境レディネス有効化プロセス - PREP に統合されています。
 機能を本番環境に移行するには、新しい [PREP 評価](https://gitlab.com/gitlab-org/architecture/readiness)を作成してください。
 {{% /alert %}}

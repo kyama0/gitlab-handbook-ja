@@ -44,7 +44,7 @@ lastmod: "2026-04-09T17:22:26+00:00"
 Developer Relations Program Manager は、プログラムメンバーへのメールアウトリーチキャンペーンを担当します。
 
 
-{{% alert title="Note" %}}
+{{% alert title="Note" color="warning" %}}
 このプロセスは見直し中です
 {{% /alert %}}
 

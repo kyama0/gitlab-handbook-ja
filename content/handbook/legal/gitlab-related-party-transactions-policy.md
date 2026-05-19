@@ -9,7 +9,7 @@ stale: false
 lastmod: "2025-02-04T16:44:03+00:00"
 ---
 
-{{% alert title="これは管理対象文書です" %}}
+{{% alert title="これは管理対象文書です" color="danger" %}}
 GitLab の規制上の義務に沿って、[管理対象文書](/handbook/security/controlled-document-procedure/)への変更はコードオーナーによる承認またはマージが必要です。すべての貢献を歓迎し、奨励します。
 {{% /alert %}}
 

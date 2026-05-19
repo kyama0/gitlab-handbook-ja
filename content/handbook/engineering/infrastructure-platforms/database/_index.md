@@ -9,7 +9,7 @@ stale: false
 lastmod: "2026-04-22T12:58:30+10:00"
 ---
 
-<span class="inline-block rounded px-2 py-0.5 text-xs font-medium" style="background-color:#E24329;color:#ffffff">Visibility: Audit</span>
+{{< label name="Visibility: Audit" color="#E24329" >}}
 
 ## GitLab におけるデータベース信頼性
 

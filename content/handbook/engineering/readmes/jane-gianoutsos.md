@@ -12,4 +12,4 @@ lastmod: "2026-05-17T15:46:22+12:00"
 
 私の readme はハンドブックページから [GitLab プロフィール](https://gitlab.com/jgianoutsos)へ移動しました！
 
-{{% include-readme username="jgianoutsos" %}}
+<p class="my-3 text-sm text-gray-600 italic">README は <a href="https://gitlab.com/jgianoutsos" rel="external noopener">GitLab プロフィール (jgianoutsos)</a> を参照してください。</p>

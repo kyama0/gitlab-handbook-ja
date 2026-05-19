@@ -360,7 +360,7 @@ Iteration 0 を計画する際に以下のガイドを使用してください:
 <!--
 ##### What Kind of Engagements is PSDM Suited For?
 
-PSDM is intended to be used on the large, complex, customers ([see archetype definition](professional-services-delivery-methodology/archetype-definition/index.md)) that are falling into one of two use case scenarios:
+PSDM is intended to be used on the large, complex, customers ([see archetype definition](professional-services-delivery-methodology/archetype-definition/_index.md)) that are falling into one of two use case scenarios:
 
 1. **_Large Scale Tool Adoption -_** scaling usage of GitLab across the organization (tool adoption use case), or are
 2. **_DevSecOps Transformation -_** assisting customers with transformational activities (transformational use case)
@@ -389,7 +389,7 @@ The difference between the _tool adoption use case_ and the _transformational us
 5. Security tool consolidation
 6. [Training and Education](https://university.gitlab.com/)
 
-**Transformational** activities frequently involve cross departmental analysis of cycle times, processes, technical architectures and _tying specific technical activities to desired business outcomes_ (see a simple definition for Digital Transformation [here](professional-services-delivery-methodology/digital-transformation/index.md)). Transformations frequently _address business goals **and** technology adoption **and** adopting new ways of working in order to achieve step change improvements in **business performance**_. This necessitates transformational activities to be focused on:
+**Transformational** activities frequently involve cross departmental analysis of cycle times, processes, technical architectures and _tying specific technical activities to desired business outcomes_ (see a simple definition for Digital Transformation [here](professional-services-delivery-methodology/digital-transformation/_index.md)). Transformations frequently _address business goals **and** technology adoption **and** adopting new ways of working in order to achieve step change improvements in **business performance**_. This necessitates transformational activities to be focused on:
 
 1. People
 2. Process
@@ -403,7 +403,7 @@ The difference between the _tool adoption use case_ and the _transformational us
 
 Just like GitLab in general, Professional Services follows a light-weight, iterative, process. The goal is to be efficient and effective while minimizing administrative burden.
 
-Most agile, iterative, process methodologies (such as Scrum, SAFe, or PMI-DA), define a set of terms and conventions. So does GitLab, and there is a [simple mapping of agile to GitLab terminology](professional-services-delivery-methodology/agile-to-gitlab-terminology/index.md) that documents the differences while acknowledging that essentially their meaning is the same.
+Most agile, iterative, process methodologies (such as Scrum, SAFe, or PMI-DA), define a set of terms and conventions. So does GitLab, and there is a [simple mapping of agile to GitLab terminology](professional-services-delivery-methodology/agile-to-gitlab-terminology/_index.md) that documents the differences while acknowledging that essentially their meaning is the same.
 
 Because industry parlance and GitLab terminology only differ slightly (for example, the common industry standard term for a time-boxed development cycle is "sprint" or "iteration", whereas GitLab uses the term "milestone") PSDM uses some of the terminology interchangeably.
 
@@ -413,12 +413,12 @@ There are eight (8) key principles to make any GitLab engagement successful. The
 
 The key principles are:
 
-1. [Optimize communication](professional-services-delivery-methodology/optimize-communication/index.md) – especially focused on executive, buyer, and stakeholder alignment and addressing progress towards business outcomes
-2. We iterate and work in Small Batches - with [work conducted according to a cadence and organized in backlogs and iterations / sprints](professional-services-delivery-methodology/cadence-backlog-sprints/index.md)
+1. [Optimize communication](professional-services-delivery-methodology/optimize-communication/_index.md) – especially focused on executive, buyer, and stakeholder alignment and addressing progress towards business outcomes
+2. We iterate and work in Small Batches - with [work conducted according to a cadence and organized in backlogs and iterations / sprints](professional-services-delivery-methodology/cadence-backlog-sprints/_index.md)
 3. Enable ownership and personal accountability
-4. [Small Teams](professional-services-delivery-methodology/small-teams/index.md) equal better and faster communication
+4. [Small Teams](professional-services-delivery-methodology/small-teams/_index.md) equal better and faster communication
 5. Localized decision making – not in terms of geography but team organization
-6. Allow for [continuous improvement / continuous learning](professional-services-delivery-methodology/retrospectives/index.md)
+6. Allow for [continuous improvement / continuous learning](professional-services-delivery-methodology/retrospectives/_index.md)
 7. Understand the customers' products, value streams and associated lead (wait) times - critical to optimizing cycle times and achieving business goals
 8. Embrace a new way of thinking, planning, and budgeting - instead of waterfall upfront scheduling and budgeting, work through iterative, prioritized deliverables, against a fixed project budget
 
@@ -430,32 +430,32 @@ It is important to point out that GitLab’s PSDM is agnostic to popular impleme
 
  1. Identify, document, and conduct an engagement strategy based on the specific customer situation
  2. Build awareness and excitement at all levels - regularly communicate status to all relevant parties: executives, buyers, stakeholders
- 3. Identify MVP pilot project(s) - [we always utilize one or more MVPs to prove out our engagement strategy](professional-services-delivery-methodology/mvp/index.md)
+ 3. Identify MVP pilot project(s) - [we always utilize one or more MVPs to prove out our engagement strategy](professional-services-delivery-methodology/mvp/_index.md)
  4. Train the customer development team(s)
- 5. [Develop product backlog and estimates for the engagement](professional-services-delivery-methodology/cadence-backlog-sprints/index.md)
- 6. [Run iterations / sprints producing incremental value](professional-services-delivery-methodology/good-user-stories/index.md)
+ 5. [Develop product backlog and estimates for the engagement](professional-services-delivery-methodology/cadence-backlog-sprints/_index.md)
+ 6. [Run iterations / sprints producing incremental value](professional-services-delivery-methodology/good-user-stories/_index.md)
  7. [Identify metrics - make data centric decisions](https://about.gitlab.com/solutions/value-stream-management/dora/)
- 8. [Gather feedback and improve](professional-services-delivery-methodology/retrospectives/index.md) – adjust the process
+ 8. [Gather feedback and improve](professional-services-delivery-methodology/retrospectives/_index.md) – adjust the process
  9. Mature
 10. Scale across other teams, programs, portfolios - scale in waves
 11. Regularly Assess and Refine
 
-It is recommended to encourage the customer to follow [GitLab Best Practices](professional-services-delivery-methodology/gitlab-best-practices/index.md).
+It is recommended to encourage the customer to follow [GitLab Best Practices](professional-services-delivery-methodology/gitlab-best-practices/_index.md).
 
 ##### Iterative Basics
 
 ##### 1. Harden Implementation Success in MVP Pilot(s)
 
-Each engagement will successfully deliver one or several [MVP pilot(s)](professional-services-delivery-methodology/mvp/index.md) - depending on the size and complexity of the engagement.
+Each engagement will successfully deliver one or several [MVP pilot(s)](professional-services-delivery-methodology/mvp/_index.md) - depending on the size and complexity of the engagement.
 
 MVP Pilot Phases of an engagement consist of:
 
-1. [Discovery](professional-services-delivery-methodology/discovery/index.md) - The initial phase to assess capabilities  and validate assumptions to ensure we’re **building the right thing and meeting customer needs**
-2. [Team Readiness](professional-services-delivery-methodology/team-readiness/index.md) - The process to define people, process and structures to **prepare teams operating in an iterative way**
-3. [Sprint 0](professional-services-delivery-methodology/sprint0/index.md) - The initial sprint where the **team aligns on norms and objectives, and key technology choices**
-4. [Sprinting](professional-services-delivery-methodology/cadence-backlog-sprints/index.md) - The execution and delivery process for teams to **deliver the GitLab engagement**
+1. [Discovery](professional-services-delivery-methodology/discovery/_index.md) - The initial phase to assess capabilities  and validate assumptions to ensure we’re **building the right thing and meeting customer needs**
+2. [Team Readiness](professional-services-delivery-methodology/team-readiness/_index.md) - The process to define people, process and structures to **prepare teams operating in an iterative way**
+3. [Sprint 0](professional-services-delivery-methodology/sprint0/_index.md) - The initial sprint where the **team aligns on norms and objectives, and key technology choices**
+4. [Sprinting](professional-services-delivery-methodology/cadence-backlog-sprints/_index.md) - The execution and delivery process for teams to **deliver the GitLab engagement**
 
-[Scaling](professional-services-delivery-methodology/scaling/index.md) up across the organization is achieved by breaking down the overall implementation effort into waves that will be delivered successively - after successful delivery of one or several MVP pilot(s).
+[Scaling](professional-services-delivery-methodology/scaling/_index.md) up across the organization is achieved by breaking down the overall implementation effort into waves that will be delivered successively - after successful delivery of one or several MVP pilot(s).
 
 ##### 2. Integrate Business and IT
 

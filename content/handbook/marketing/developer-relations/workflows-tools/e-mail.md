@@ -15,7 +15,7 @@ lastmod: "2024-07-29T18:50:00+00:00"
 `community@`、`education@`、`merch@`、`opensource@`、`startups@` 宛てに送られたメールに返信します。非推奨のメールエイリアス: `movingtogitlab@`、`swag@shop.gitlab.com`。これらのアドレス宛てに引き続きメールを受信することがあります。受信した場合は、Zendesk 内から該当する有効なメールアドレスで返信してください。
 
 
-{{% alert %}}
+{{% alert color="warning" %}}
 <i class="fas fa-hand-point-right" aria-hidden="true" style="color: rgb(138, 109, 59)
 ;"></i> すべてのメールトラフィックが Zendesk 内で行われるようにしてください。これにより、チームメンバーがチケットで協働でき、会話の可視性が高まり、応答時間メトリクスもより正確になります。
 {{% /alert %}}
