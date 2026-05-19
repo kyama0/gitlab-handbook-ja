@@ -10,9 +10,9 @@ lastmod: "2026-04-24T10:57:36-05:00"
 ---
 
 
-{{% panel header="**これはセキュアなドキュメントです**" header-bg="info" %}}
+{{< panel header="**これはセキュアなドキュメントです**" header-bg="blue" >}}
 [役割と責任](/handbook/entity/gmbh-germany/#roles--responsibilities)に記載のとおり、このページへの変更はコードオーナーによる承認またはマージが必要です。すべての貢献を歓迎し、奨励します。
-{{% /panel %}}
+{{< /panel >}}
 
 
 ### 対象範囲

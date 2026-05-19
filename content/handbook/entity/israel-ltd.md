@@ -10,7 +10,7 @@ lastmod: "2026-03-18T15:39:47+00:00"
 ---
 
 
-{{% panel header="**これはセキュアなドキュメントです**" header-bg="info" %}}
+{{% panel header="**これはセキュアなドキュメントです**" header-bg="orange" %}}
 [役割と責任](/handbook/entity/israel-ltd/#roles--responsibilities)に記載のとおり、このページへの変更はコードオーナーによる承認またはマージが必要です。すべての貢献を歓迎し、奨励します。
 {{% /panel %}}
 
