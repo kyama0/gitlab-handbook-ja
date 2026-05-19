@@ -64,7 +64,7 @@ People Operations チームは、オンボーディングおよび GitLab での
 
 #### コミュニケーションツール
 
-- 私たちは [非同期コミュニケーション](/handbook/company/culture/all-remote/asynchronous/) を取り入れた完全リモート企業です
+- 私たちは [非同期コミュニケーション](/handbook/company/culture/all-remote/asynchronous/) を取り入れたオールリモート企業です
 - [Slack](/handbook/tools-and-tips/slack/) は私たちの主要なコミュニケーションツールです — 他のチームメンバーや興味のあるグループとつながるために使用してください
 - 標準的なオフィスソフトウェアではなく、Google Workspace（[Gmail](https://workspace.google.com/intl/en/products/gmail/)、[Drive](https://workspace.google.com/intl/en/products/drive/)、Docs/Sheets）を使用します
 - チームメンバーは、特定のクエリに関するサポートや支援が必要な場合、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) を通じて該当チームに連絡できます

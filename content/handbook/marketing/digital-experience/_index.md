@@ -444,5 +444,3 @@ BE ファイルの削除は、同じ WWW delete ジョブで [BE リポジトリ
       <li>Search チームによる SEO とキーワード分析の <a href="https://gitlab.com/gitlab-com/marketing/inbound-marketing/growth/issues/new?issuable_template=keyword-research-request">Issue Templates</a> の利用が推奨されます。</li>
     </ul>
 </details>
-</content>
-</invoke>

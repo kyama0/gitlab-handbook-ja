@@ -152,7 +152,8 @@ https://gitlab.lookbookhq.com/authoring/content-library/content
 
 ### :books: Issues - Content Owner to Create
 
-{{% details summary="Expand below for quick links to optional activation issues to be created and linked to the epic." %}}
+<details>
+<summary>Expand below for quick links to optional activation issues to be created and linked to the epic.</summary>
 [Use the workback timeline calculator to assign correct due dates based off of launch date](https://docs.google.com/spreadsheets/d/1RvYLEUJvh9QZJZX1uXiKJPcOOSGd7dEeNneqyA2bt3A/edit#gid=969067029)
 
 **Required Issues:**
@@ -175,7 +176,7 @@ https://gitlab.lookbookhq.com/authoring/content-library/content
 - [ ] [Organic Social Issue](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/issues/new?issuable_template=social-gtm-organic) - Social
 - [ ] [Blog](/handbook/marketing/blog/) - Editorial
 - [ ] [PR Announcement Issue](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/issues/new?issuable_template=announcement) - PR
-{{% /details %}}
+</details>
 
 /label ~"Content Marketing" ~"Gated Content" ~"mktg-demandgen" ~"dg-campaigns" ~"mktg-status::wip"
 ```

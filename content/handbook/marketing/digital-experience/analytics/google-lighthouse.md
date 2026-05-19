@@ -45,5 +45,3 @@ lastmod: "2024-07-17T16:43:47+00:00"
 ### このプロジェクトの Heroku アカウントは誰が保有していますか？
 
 * この Heroku アカウントは `jgarcia@gitlab.com` に紐付いています。
-</content>
-</invoke>

@@ -76,7 +76,7 @@ R、A、C、I の意味は何ですか?
 技術的な実装プロセスの詳細については、[ドキュメント](https://docs.gitlab.com/development/work_items/#creating-a-new-work-item-type-in-the-database) を参照してください。OKR の導入における実装例を以下で確認できます:
 
 - [Objective および Key Result ワークアイテムタイプを追加するバックエンドの作業](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/101324)
-- [フィーチャーフラグの後ろで Objective の作成をサポートするためのバックエンド作業](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/103355)
+- [機能フラグの後ろで Objective の作成をサポートするためのバックエンド作業](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/103355)
 - [Objective の作成をサポートし、Issue 一覧に含めるためのフロントエンド作業](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/102721)
 
 ## Work Items フレームワークへの貢献
