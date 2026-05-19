@@ -10,7 +10,7 @@ lastmod: "2025-11-19T17:21:50-05:00"
 ---
 
 
-{{% alert title="注意" %}}
+{{% alert title="注意" color="danger" %}}
 エスカレーションには [incident.io](https://app.incident.io/gitlab/on-call/schedules/01JXJ7MN4T14008GQKWYYNT6E8) を使用しています。
 {{% /alert %}}
 

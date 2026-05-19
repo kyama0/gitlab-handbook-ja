@@ -115,5 +115,5 @@ For long pages, consider creating a table of contents.
 - [セキュリティスキャン結果を Dependency Scanning CI ジョブに戻すエピック](https://gitlab.com/groups/gitlab-org/-/work_items/17150)
 - [依存関係解決エピック](https://gitlab.com/groups/gitlab-org/-/work_items/20461)
 - [マニフェストスキャンエピック](https://gitlab.com/groups/gitlab-org/-/work_items/20457)
-- [Dependency Scanning エンジン](../dependency_scanning_engine/index.md)
+- [Dependency Scanning エンジン](../dependency_scanning_engine/_index.md)
 - [Dependency Scanning Engine ADR003: CI パイプライン向け SBOM ベーススキャン](../dependency_scanning_engine/decisions/003_sbom_based_scans_for_ci_pipelines.md)

@@ -126,7 +126,7 @@ end
 ### 決定事項
 
 - [001: モノリス内でのRuby Push Checkアプローチの使用](decisions/001_use_ruby_push_check_approach_within_monolith)
-- [002: シークレット検出GemをリポジトリJasonに保存する](decisions/002_store_the_secret_detection_gem_in_the_same_repository)
+- [002: シークレット検出 Gem を同じリポジトリに保存する](decisions/002_store_the_secret_detection_gem_in_the_same_repository)
 - [003: サブプロセス内でスキャンを実行する](decisions/003_run_scan_within_subprocess)
 - [004: スタンドアロンシークレット検出サービス](decisions/004_secret_detection_scanner_service)
 - [005: サービスデプロイにRunwayを使用する](decisions/005_use_runway_for_deployment)
@@ -154,7 +154,7 @@ end
 
 検出機能は、モノリスに直接実装された実験的コンポーネントから、テキストブロブを汎用的にスキャンできるスタンドアロンサービスへの多段階ロールアウトに依存しています。
 
-シークレットスキャンサービスの実装は、GitLab.comと[リファレンスアーキテクチャ](https://docs.gitlab.com/ee/administration/reference_architectures/index.html)の両方に対するベンチマーキングと容量計画の結果に大きく依存しています。スキャン機能はSaaSと自己管理インスタンスの両方でデフォルトで有効なコンポーネントである必要があるため、[各イテレーション](#iterations)のデプロイ特性によって、サービスがスタンドアロンコンポーネントとして動作するか、Railsアーキテクチャのサブプロセスとして実行されるか（ElasticsearchインデックスサービスのJasonの実装と同様）が決まります。
+シークレットスキャンサービスの実装は、GitLab.comと[リファレンスアーキテクチャ](https://docs.gitlab.com/ee/administration/reference_architectures/index.html)の両方に対するベンチマーキングと容量計画の結果に大きく依存しています。スキャン機能はSaaSと自己管理インスタンスの両方でデフォルトで有効なコンポーネントである必要があるため、[各イテレーション](#iterations)のデプロイ特性によって、サービスがスタンドアロンコンポーネントとして動作するか、Railsアーキテクチャのサブプロセスとして実行されるか（Elasticsearch インデックスサービスの実装と同様）が決まります。
 
 詳細な背景については[技術的調査](https://gitlab.com/gitlab-org/gitlab/-/issues/376716)を参照してください。
 

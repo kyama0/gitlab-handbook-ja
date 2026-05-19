@@ -29,7 +29,7 @@ Explore 機能は、ユーザーがグループとプロジェクトを発見す
 
 ## 3. 提案
 
-Explore 機能の問題は、Cell 間通信の解決という広い課題の下に含まれます。[このトピックはより深い調査が必要です](../index.md#can-different-cells-communicate-with-each-other)。
+Explore 機能の問題は、Cell 間通信の解決という広い課題の下に含まれます。[このトピックはより深い調査が必要です](../_index.md#can-different-cells-communicate-with-each-other)。
 
 以下はさらなる調査のための可能な方向性です。
 

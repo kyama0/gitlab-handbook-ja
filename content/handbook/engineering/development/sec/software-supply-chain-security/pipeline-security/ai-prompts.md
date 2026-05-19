@@ -40,7 +40,7 @@ Please be objective and constructive in your analysis, focusing on actionable in
 
 ### 使用コンテキスト
 
-このプロンプトは、チームメンバーがマイルストームのパフォーマンスを振り返るために月を通じてコメントを追加する[非同期月次振り返り](/handbook/engineering/development/sec/software-supply-chain-security/pipeline-security/#async-monthly-retrospectives)プロセス中に特に役立ちます。
+このプロンプトは、チームメンバーがマイルストーンのパフォーマンスを振り返るために月を通じてコメントを追加する[非同期月次振り返り](/handbook/engineering/development/sec/software-supply-chain-security/pipeline-security/#async-monthly-retrospectives)プロセス中に特に役立ちます。
 
 ## Issue リファインメント
 

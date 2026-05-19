@@ -13,9 +13,9 @@ lastmod: "2025-09-11T14:55:05+01:00"
 Cloud Connector は元々、同名のチームによって作成・所有されていましたが、そのチームは現在新しいグループに分割されています：
 
 - SSCS:Authentication [チーム](../../../../engineering/development/sec/software-supply-chain-security/authentication.md)
-- Fulfillment [チーム](../../../../engineering/development/fulfillment/index.md)
+- Fulfillment [チーム](../../../../engineering/development/fulfillment/_index.md)
 
 各領域の ADR を追跡するには、専用のディレクトリを参照してください：
 
-- SCSS Authentication [ディレクトリ](authentication/index.md): Cloud Connector の認証（トークンの発行とクリア、OIDC ディスカバリ）をカバー。
-- Fulfillment [ディレクトリ](fulfillment/index.md): ユニットプリミティブカタログとその同期方法、関連する権限チェックおよびインターフェースをカバー。
+- SCSS Authentication [ディレクトリ](authentication/_index.md): Cloud Connector の認証（トークンの発行とクリア、OIDC ディスカバリ）をカバー。
+- Fulfillment [ディレクトリ](fulfillment/_index.md): ユニットプリミティブカタログとその同期方法、関連する権限チェックおよびインターフェースをカバー。

@@ -43,7 +43,7 @@ Artifact Registry は GitLab.com 規模をターゲットとします: 定常状
 
 | クォータ | デフォルト | 注 |
 | ----- | ------- | ----- |
-| Organization あたり最大ストレージ | プラン依存（SKU ベース） | Artifact Registry は新しい premium SKU です（[概要](../index.md) を参照）。ストレージクォータは購入したアドオンによって定義されます |
+| Organization あたり最大ストレージ | プラン依存（SKU ベース） | Artifact Registry は新しい premium SKU です（[概要](../_index.md) を参照）。ストレージクォータは購入したアドオンによって定義されます |
 | リポジトリあたり最大ストレージ | デフォルトでは厳格な制限なし | Organization レベルで構成可能なオプショナルな警告閾値。超過時に Organization に通知されますが、アップロードはブロックされません |
 
 Organization は警告閾値（例: クォータの 80%）を構成できます。利用がこの閾値を超えると、Organization に通知されますが、クォータに完全に達するまでアップロードはブロックされません。

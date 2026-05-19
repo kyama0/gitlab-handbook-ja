@@ -54,7 +54,7 @@ GDK は 2014 年にサイドプロジェクトとして作成され、GitLab 開
 
 この問題に対処するため、FY26 Q2 に安定性を反応的に改善しましたが、これは開発環境の将来の不安定性を防止または軽減するものではありません。そのため、GDK でクラウドネイティブ標準を採用する方向にイテレーションする大きな機会がまだあると考えています。これにより、サービスの所有権、安定性、リソース共有の競合などの重要な問題が解決され、最終的に開発がより効率的でスケーラブルになります。
 
-この提案は、すでに[クラウドネイティブ GitLab](https://gitlab.com/gitlab-org/build/CNG) を使用している本番環境や、[コンポーネントオーナーシップモデル](../../../infrastructure-platforms/production/component-ownership-model.md)、[セルフマネージドセグメンテーション](../selfmanaged_segmentation/index.md)、[セルフマネージド Runway](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/413) などの他のイニシアチブとも開発環境をより良く整合させます。
+この提案は、すでに[クラウドネイティブ GitLab](https://gitlab.com/gitlab-org/build/CNG) を使用している本番環境や、[コンポーネントオーナーシップモデル](../../../infrastructure-platforms/production/component-ownership-model.md)、[セルフマネージドセグメンテーション](../selfmanaged_segmentation/_index.md)、[セルフマネージド Runway](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/413) などの他のイニシアチブとも開発環境をより良く整合させます。
 
 ## 動機
 
