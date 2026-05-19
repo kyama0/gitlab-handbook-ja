@@ -80,7 +80,7 @@ sequenceDiagram
 
 手順:
 
-1. **100 TLG を 100 Organization に変換（1:1 マッピング）** - Organization 変換プロセスの詳細については、[../organization/index.md](../organization/_index.md) を参照してください。
+1. **100 TLG を 100 Organization に変換（1:1 マッピング）** - Organization 変換プロセスの詳細については、[../organization/_index.md](../organization/_index.md) を参照してください。
 
 ### 準備ステップ 2: Protocell のプロビジョニングと設定（移行の十分前）
 
