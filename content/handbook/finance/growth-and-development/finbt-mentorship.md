@@ -79,7 +79,7 @@ TBD
 
 ### メンターとメンティーのトレーニング
 
-LinkedIn Learning のトレーニング [How to be a Good Mentor and Mentee](https://www.linkedin.com/learning/how-to-be-a-good-mentee-and-mentor/the-power-of-mentoring) を受講してください。メンターを見つける戦略、明確な期待値の設定、メンターシップを通じた目標達成のカバーされています。このトレーニングの内容は、自分のペースで資料を読むことを好む学習者向けに、以下の [Google スライドプレゼンテーション](https://docs.google.com/presentation/d/1QPx9ZGa051Jhwwfb78cKW1LD0uVTUdKxRdElBk4Ku9I/edit?usp=sharing) に適応されています。
+LinkedIn Learning のトレーニング [How to be a Good Mentor and Mentee](https://www.linkedin.com/learning/how-to-be-a-good-mentee-and-mentor/the-power-of-mentoring) を受講してください。メンターを見つける戦略、明確な期待値の設定、メンターシップを通じた目標達成がカバーされています。このトレーニングの内容は、自分のペースで資料を読むことを好む学習者向けに、以下の [Google スライドプレゼンテーション](https://docs.google.com/presentation/d/1QPx9ZGa051Jhwwfb78cKW1LD0uVTUdKxRdElBk4Ku9I/edit?usp=sharing) に適応されています。
 
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vS3cZJcCIv_s44OfN9QLjje2wRqS7EwnrK3HCS_ZeT-ZGwk58hPq17L-c_DvCdvu0jxjR3r6yY8xY79/embed?start=false&loop=false&delayms=60000" frameborder="0" width="960" height="569" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
 

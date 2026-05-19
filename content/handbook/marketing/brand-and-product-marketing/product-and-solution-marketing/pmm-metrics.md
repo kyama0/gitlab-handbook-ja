@@ -16,7 +16,20 @@ GitLab では、MVC を出荷し、素早くイテレーションして価値を
 
 主要な PMM の活動・成果物を捕捉して、ベロシティを追跡・可視化・測定するために GitLab を使用します。次のハイレベルな PMM 活動に関連する Issue を明確にタグ付けするために、ラベルを使用します:
 
-MVC として、まずは [プロダクトマーケティングプロジェクト](https://gitlab.com/gitlab-com/marketing/product-marketing) で、いくつかの排他的なトップレベルプロジェクトラベルから始めます。PMM ラベルの定義は [Product and Solution Marketing プロジェクトマネジメント概要](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/sm-project-management/#metrics-and-kpis-gitlab-insights) のラベル一覧に集約しています。
+MVC として、まずは [プロダクトマーケティングプロジェクト](https://gitlab.com/gitlab-com/marketing/product-marketing) で、いくつかの排他的なトップレベルプロジェクトラベルから始めます。
+
+| トピック | 詳細 | ラベル |
+|----|---|---|
+| Analyst Relations | ブリーフィング、レポート、問い合わせ | pmm::AR |
+| Customer Relations | ケーススタディ | pmm::Cust |
+| Collateral | ホワイトペーパー、データシート、ROI モデル | pmm::Collateral |
+| Enablement | セールス、XDR、パートナーなど | pmm::Enable |
+| Events | 物理および仮想イベント: 講演、ブース、アブストラクト執筆など | pmm::Event |
+| Research | 市場調査、研究のドラフト、文書化 | pmm::Research |
+| Presentation | デッキの作成と更新（ピッチデッキ、製品デッキなど） | pmm::Deck |
+| PR | ブリーフィング、プレスリリースなど | pmm::PR |
+| Sales Support | セールスサポート固有のミーティング、スライドなど | pmm::Sales |
+| Web updates | Web コンテンツ（ハンドブック、製品ページ、ソリューションページ、ブログなど） | pmm::Web |
 
 ### レポーティングと追跡
 

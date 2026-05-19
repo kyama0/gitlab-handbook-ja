@@ -100,7 +100,7 @@ ESG戦略を開発する中で、私たちは取り組みを [国連持続可能
 
 GitLabの [ミッション](/handbook/company/mission/#mission)、誰もが貢献できるようにすることは、会社全体でインパクトを与える権限を与えられているチームメンバーにも及びます。ミッションがGitLabを駆動する一方で、私たちは [価値観](/handbook/values/) と仕事の [文化](/handbook/company/culture/) が私たちを成功させるものであると信じています。チームメンバーが自分のグループや機能の内外の多様なピアやリーダーからフィードバックを求めるとき、それはより良い意思決定とより大きな帰属感をもたらすと考えています。私たちは、誰もが歓迎されていると感じるようにし、私たちのコミュニティと会社で過小評価グループの参加を増やすために活動しています。
 
-私たちの全労働力はリモートであり、あらゆる背景と能力の人々がチームに参加することを可能にしています。GitLabが成長するにつれて、完全にリモートのチームを構築および管理するために何が必要かについて多くを学んできました。学んだことと実践を [Guide to All Remote](/handbook/company/culture/all-remote/guide/) で共有しています。さらに、GitLabは [TeamOps](https://about.gitlab.com/teamops/) という組織運営モデルを立ち上げました。これは、意思決定、情報、タスクをより効率的に管理することで、チームが生産性、柔軟性、自律性を最大化するのを助けます。
+私たちの全労働力はリモートであり、あらゆる背景と能力の人々がチームに参加することを可能にしています。GitLabが成長するにつれて、オールリモートのチームを構築および管理するために何が必要かについて多くを学んできました。学んだことと実践を [Guide to All Remote](/handbook/company/culture/all-remote/guide/) で共有しています。さらに、GitLabは [TeamOps](https://about.gitlab.com/teamops/) という組織運営モデルを立ち上げました。これは、意思決定、情報、タスクをより効率的に管理することで、チームが生産性、柔軟性、自律性を最大化するのを助けます。
 
 私たちの [チームメンバーリレーション哲学](/handbook/people-group/team-member-relations/#team-member-relations-philosophy) には4つの柱があり、各柱は私たちの価値観と整合しています。これらの柱は以下です:
 
@@ -233,15 +233,15 @@ FoundationはGitLabとそのCEOであるSytse 'Sid' Sijbrandijによって資金
 
 (UN SDG #13)
 
-責任あるビジネスを行うことの一部は、環境的フットプリントを最小限に抑えることを意味します。2023年5月、私たちは [Watershed](https://watershed.com/) と提携して、FY23の初の温室効果ガス（"GHG"）インベントリを完了しました。私たちは、インベントリの結果を使用して、排出の主要な源をよりよく理解し、FY23をベースラインとして削減目標を設定し、削減計画を開発し、自宅でGHG排出を理解および削減する方法について完全にリモートのチームを教育します。
+責任あるビジネスを行うことの一部は、環境的フットプリントを最小限に抑えることを意味します。2023年5月、私たちは [Watershed](https://watershed.com/) と提携して、FY23の初の温室効果ガス（"GHG"）インベントリを完了しました。私たちは、インベントリの結果を使用して、排出の主要な源をよりよく理解し、FY23をベースラインとして削減目標を設定し、削減計画を開発し、自宅でGHG排出を理解および削減する方法についてオールリモートのチームを教育します。
 
-GitLabは、会社所有施設からの直接排出または直接エネルギー消費がない完全リモート企業です。したがって、私たちのGHGインベントリはScope 3排出のみを測定し、特にリモートワーク、購入された商品とサービス、クラウドサービス、ビジネス出張に関連する排出を測定します。Finance、Procurement、People Analytics、Engineering、Infrastructureを含むGitLab全体のチームが、ESGチームと協力してインベントリのデータを収集しました。
+GitLabは、会社所有施設からの直接排出または直接エネルギー消費がないオールリモート企業です。したがって、私たちのGHGインベントリはScope 3排出のみを測定し、特にリモートワーク、購入された商品とサービス、クラウドサービス、ビジネス出張に関連する排出を測定します。Finance、Procurement、People Analytics、Engineering、Infrastructureを含むGitLab全体のチームが、ESGチームと協力してインベントリのデータを収集しました。
 
 ![GHG_Inventory](/images/legal/esg/ghg_inventory.png)
 
 最初のGHGインベントリの結果は、[Performance Data Table](https://about.gitlab.com/documents/PERFORMANCE_DATA_TABLE.pdf) でも利用可能であり、サードパーティの保証レターは [こちら](https://about.gitlab.com/documents/GitLab_FY2023_Verification_Opinion.pdf) で利用可能です。
 
-*"完全リモート企業として、所有および運営する施設がないため、GitLabにはScope 1または2排出はありません。とはいえ、Scope 3フットプリントを削減し、気候変動とどのように自分の生活でアクションを取るかについてチームメンバーを教育する機会がまだあることを知っています。"*
+*"オールリモート企業として、所有および運営する施設がないため、GitLabにはScope 1または2排出はありません。とはいえ、Scope 3フットプリントを削減し、気候変動とどのように自分の生活でアクションを取るかについてチームメンバーを教育する機会がまだあることを知っています。"*
 -Stacy Cline, GitLab ESG担当シニアディレクター
 
 イテレーションへのコミットメントの一部として、GitLabは初のGHGインベントリを実施する前の2020年に、認定カーボンオフセットの購入を開始しました。購入は、ペルー、コロンビア、米国などのさまざまな国で、計画外の森林伐採の回避、森林管理の改善、植林、再植林、植生回復に貢献するプロジェクトをサポートしました。これまでに、私たちは24,100メトリックトンのCO2をオフセットしました。これは、13,621本の木を植えるか、5,239台の乗用車を1年間道路から取り除くのと同等です。
@@ -265,7 +265,7 @@ Boardの責任には以下が含まれます:
 - 外部でGitLabを擁護する
 - [Boardミーティング](/handbook/board-meetings/) に参加する
 - [Board委員会](/handbook/board-meetings/#board-and-committee-composition) に参加する
-- 特定のエグゼクティブhireのプロセスに参加する
+- 特定のエグゼクティブ採用プロセスに参加する
 
 私たちのBoardには、Audit Committee、Compensation and Leadership Development Committee、Nominating and Corporate Governance Committeeがあります。各委員会の構成と責任は、[当社のプロキシ](https://www.sec.gov/ix?doc=/Archives/edgar/data/0001653482/000162828023018206/gtlb-20230515.htm) と [Investor RelationsページのBoardセクション](https://ir.gitlab.com/corporate-governance/board-of-directors-grid) で説明されています。
 

@@ -1,5 +1,5 @@
 ---
-title: "ブランド & プロダクトマーケティング"
+title: "ブランドおよびプロダクトマーケティング"
 description: "GitLab ブランド & プロダクトマーケティング ハンドブック"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/brand-and-product-marketing/

@@ -26,12 +26,12 @@ People Operations は、Workday の一時支払いで正しい金額が支給さ
 現在の[リファレル提出プロセス](/handbook/hiring/referral-process/#how-to-submit-a-referral-in-greenhouse)によれば、チームメンバーは求人が外部に掲載されている場合は Greenhouse を通じてリファレルを提出し、求人が**内部のみ**に公開されている場合は Issue を通じて提出します。新しい Issue が表示されたら、以下を行ってください：
 
 1. Issue を自分に割り当てる（右上角）。
-    - *採用オペレーション & インサイト* が適切な *ソーサー* を割り当てる責任があります。
+    - *Reruiting Operations & Insights* が適切な *ソーサー* を割り当てる責任があります。
         - 適切な *ソーサー* は求人の **Hiring Team** ページを参照して決定されます。
 1. Issue が `Confidential`（機密）としてマークされていることを確認する。
-    - *採用オペレーション & インサイト* がこの設定が有効になっていることを確認します。
+    - *Reruiting Operations & Insights* がこの設定が有効になっていることを確認します。
 1. 求人が外部の[ジョブボード](https://job-boards.greenhouse.io/gitlab)に掲載されているかどうかを確認し、掲載されている場合は、*Referrer* に**タグ付け**し、[これらの手順](/handbook/hiring/referral-process/#how-to-submit-a-referral-in-greenhouse)に従って Greenhouse で直接リファレルを提出する必要があることを**コメント**し、Issue を**クローズ**する。
-    - *採用オペレーション & インサイト* は求人が内部のみに掲載されていることを確認します。
+    - *Reruiting Operations & Insights* は求人が内部のみに掲載されていることを確認します。
 1. 求人が**内部のみ**に公開されている場合は、Greenhouse ダッシュボードに移動して `+` > `Add a Referral` をクリックする。
 1. 以下のフィールドに入力する内容を Issue で参照する：
     - **Job**

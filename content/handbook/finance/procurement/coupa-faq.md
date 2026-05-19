@@ -108,7 +108,7 @@ lastmod: "2025-01-09T01:20:19+00:00"
   - [https://supplier.coupa.com/help/remit-to-improvements](https://supplier.coupa.com/help/remit-to-improvements)
 
 
-{{% panel header="**重要なご注意**" header-bg="info" %}}
+{{% panel header="**重要なご注意**" header-bg="warning" %}}
 - Remit-To アドレスを入力する際は特殊文字を使用しないでください。
 - 銀行口座の通貨は請求書の通貨と一致している必要があります。
 {{% /panel %}}

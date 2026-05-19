@@ -10,4 +10,4 @@ lastmod: "2025-11-20T17:06:05-08:00"
 ---
 
 
-<p class="my-3 text-sm text-gray-600 italic">README は <a href="https://gitlab.com/yyugitlab" rel="external noopener">GitLab プロフィール (yyugitlab)</a> を参照してください。</p>
+{{% include-readme username="yyugitlab" trim=6 %}}
