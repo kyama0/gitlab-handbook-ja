@@ -9,6 +9,6 @@ stale: false
 lastmod: "2025-11-19T12:25:32-08:00"
 ---
 
-<span class="inline-block rounded px-2 py-0.5 text-xs font-medium" style="background-color:#E24329;color:#ffffff">Visibility: Audit</span>
+{{< label name="Visibility: Audit" color="#E24329" >}}
 
 [GitLab バックアップのディザスタリカバリポリシー](/handbook/engineering/gitlab-com/policies/disaster-recovery/)に移動しました。

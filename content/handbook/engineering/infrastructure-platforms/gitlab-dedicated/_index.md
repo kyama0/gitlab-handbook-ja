@@ -200,7 +200,7 @@ GitLab Dedicated はテナント環境に対する厳格な[アクセス制御](
 ### GitLab Dedicated への製品修正の迅速な取り込み
 
 
-{{% alert title="Note" %}}
+{{% alert title="Note" color="info" %}}
 このセクションは、GitLab Dedicated インシデント管理プロセスページが利用可能になった際にそこへ移動される予定です。
 {{% /alert %}}
 

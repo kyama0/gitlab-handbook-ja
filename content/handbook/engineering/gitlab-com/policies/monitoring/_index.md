@@ -13,7 +13,7 @@ stale: false
 lastmod: "2025-11-20T14:25:44+01:00"
 ---
 
-<span class="inline-block rounded px-2 py-0.5 text-xs font-medium" style="background-color:#E24329;color:#ffffff">Visibility: Audit</span>
+{{< label name="Visibility: Audit" color="#E24329" >}}
 
 ## 目的
 
