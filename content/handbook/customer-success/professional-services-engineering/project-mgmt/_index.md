@@ -61,7 +61,7 @@ _Billable と NonBillable の情報_ については、[Team Metrics](/handbook/
 
 ### プロフェッショナルサービス デリバリー方法論 {#professional-services-delivery-methodology}
 
-私たちはすべてのプロフェッショナルサービス契約に対して [PSDM (Professional Services Delivery Methodology)](../professional-services-delivery-methodology/index.md) に従います。PSDM は以下を含む包括的なフレームワークです:
+私たちはすべてのプロフェッショナルサービス契約に対して [PSDM (Professional Services Delivery Methodology)](../professional-services-delivery-methodology/_index.md) に従います。PSDM は以下を含む包括的なフレームワークです:
 
 - GitLab を Single Source of Truth としてプロジェクトを管理する
 - SOW 形式（Agile、Time and Materials、Fixed Price）に従ってプロジェクトを管理する

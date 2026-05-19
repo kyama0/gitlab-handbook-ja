@@ -33,7 +33,7 @@ PSQuote 見積もりには 1 から多数の見積もり行が含まれます。
 
 [CPR_GitOps](https://gitlab.com/gitlab-com/customer-success/professional-services-group/professional-services-delivery/cpr_gitops) というプロジェクトがあり、カスタマープロジェクトごとにグループ、プロジェクト、エピックなどの基盤を自動的に作成するプロセスを処理します。この自動化は、PSQuote を介した Quilt API によってトリガーされます。現在、CPR_GitOps が提供するためにプロジェクトを適切にスキャフォルドするために必要なすべての詳細を提供するためのステージングエリアとして、マージリクエストを使用しています。
 
-GitLab 内でプロジェクトをセットアップするには、この [README](https://gitlab.com/gitlab-com/customer-success/professional-services-group/professional-services-delivery/cpr_gitops/-/blob/main/README.md?ref_type=heads) に従ってください。このステップをより自動化する作業を継続している間、または #ps-practice Slack チャンネルにメッセージを送信して、CP プロジェクトの作成を依頼してください。
+このステップのさらなる自動化を進めている間、GitLab 内でプロジェクトをセットアップするには、この [README](https://gitlab.com/gitlab-com/customer-success/professional-services-group/professional-services-delivery/cpr_gitops/-/blob/main/README.md?ref_type=heads) に従うか、または #ps-practice Slack チャンネルに CP プロジェクト作成依頼のメッセージを送ってください。
 
 [CP プロジェクト例-Delta](https://gitlab.com/gitlab-com/customer-success/professional-services-group/professional-services-delivery/gitlab-professional-services/Delta/SOW-3697)（移行）
 [CP プロジェクト例-Ripple](https://gitlab.com/gitlab-com/customer-success/professional-services-group/professional-services-delivery/gitlab-professional-services/Ripple-Labs/SOW-3378)（移行）

@@ -1,5 +1,5 @@
 ---
-title: 公共部門 Solutions Architect
+title: Public Sector Solutions Architects
 description: "公共部門（Public Sector）を担当する Solutions Architect（SA）は、米国内の公共部門の顧客に対して、販売プロセス全体を通じて専門領域の知見と業界経験を提供します。"
 upstream_path: /handbook/customer-success/public-sector/solutions-architects/
 upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
