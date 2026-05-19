@@ -12,7 +12,7 @@ lastmod: "2024-05-30T08:11:40+00:00"
 > **注:** アプリを参照するには **[Tech Stack Index](/handbook/business-technology/tech-stack/)** を、アプリを管理するには **[Tech Stack Applications](/handbook/business-technology/tech-stack-applications/)** を参照してください。
 
 
-<p class="my-2 text-sm text-gray-600"><strong>Marketo</strong> — 詳細は <a href="https://handbook.gitlab.com/handbook/business-technology/tech-stack/" rel="external noopener">テックスタック (英語)</a> を参照してください。</p>
+{{% tech-stack "Marketo" %}}
 
 
 ### インテグレーション

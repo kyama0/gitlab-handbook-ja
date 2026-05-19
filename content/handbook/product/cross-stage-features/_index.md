@@ -172,7 +172,7 @@ lastmod: "2026-02-05T20:15:31+00:00"
 - [DORA メトリクスを通じた DevOps の成功の測定](https://docs.gitlab.com/api/dora/metrics/)
 - [Issue タイプとしてのインシデントの作成](https://docs.gitlab.com/operations/incident_management/manage_incidents/#from-the-issues-list)
 - [CI/CD トンネル経由でクラスタに接続](https://docs.gitlab.com/user/clusters/agent/ci_cd_workflow/)
-- [Issue とフィーチャーフラグの関連付け](https://docs.gitlab.com/operations/feature_flags/#feature-flag-related-issues)
+- [Issue と機能フラグの関連付け](https://docs.gitlab.com/operations/feature_flags/#feature-flag-related-issues)
 - [マルチプロジェクトパイプラインでの複数パイプラインの実行とプロジェクト依存関係](https://docs.gitlab.com/ci/pipelines/downstream_pipelines/#multi-project-pipelines)
 - [Resource Groups でデプロイ中の同時実行制御を有効化](https://docs.gitlab.com/ci/resource_groups/)
 - [ジョブアーティファクトまたは汎用パッケージをリリースに関連付ける](https://docs.gitlab.com/user/project/releases/)

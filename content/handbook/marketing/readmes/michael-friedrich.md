@@ -33,7 +33,7 @@ lastmod: "2026-03-25T21:10:14+01:00"
 
 私は **オーストリアの Linz** で育ち、コンピュータの仕組みに魅了されてきました。その好奇心が **ハードウェア／ソフトウェアシステム工学** へと私を導き、**Vienna 大学** でのネットワークや DNS の仕事、そして **11 年間のオープンソース監視プロジェクトのメンテナンス** へとつながりました。その過程で、ソフトウェアが本番環境でどう動くか、CVE が本当は何を意味するのか、そして健全なコミュニティと正直なフィードバックがいかに重要かを学びました。
 
-オープンソースへの情熱は 2012 年に私を **ドイツのニュルンベルク** へ導き、今もそこの郊外に住んでいます。**2020 年 3 月**、私は **GitLab** に入社し、オール・リモートの冒険を始めました。
+オープンソースへの情熱は 2012 年に私を **ドイツのニュルンベルク** へ導き、今もそこの郊外に住んでいます。**2020 年 3 月**、私は **GitLab** に入社し、オールリモートの冒険を始めました。
 
 現在、私は **GitLab の Principal Developer Advocate** として、以下を専門にしています。
 
@@ -186,7 +186,7 @@ lastmod: "2026-03-25T21:10:14+01:00"
 - **GitLab ブログ記事:** https://about.gitlab.com/blog/authors/dnsmichi/
 - **個人ブログ（年次の振り返りと実験）:** https://dnsmichi.com
 
-オール・リモートの振り返り:
+オールリモートの振り返り:
 
 1. ブログ: [One year worth for ten: My 6th year at GitLab](https://dnsmichi.com/2026/03/02/one-year-worth-for-ten-my-6th-year-at-gitlab/)
 1. ブログ: [My 5th Year at GitLab: Developer Advocate Journey, AI Adventures, and Finding Balance](https://dnsmichi.at/2025/03/02/my-5th-year-at-gitlab-developer-advocate-journey-ai-adventures-and-finding-balance/)
@@ -199,4 +199,4 @@ lastmod: "2026-03-25T21:10:14+01:00"
 
 ## 読んでくれてありがとう
 
-この README を読む時間を取ってくれてありがとうございます。もっと知りたい場合や、背景にあるイースターエッグを見つけたい場合は、[私のオール・リモート ワークスペース](https://dnsmichi.com/all-remote-workspace/) を見て、お気軽にコーヒーチャットをスケジュールしてください。
+この README を読む時間を取ってくれてありがとうございます。もっと知りたい場合や、背景にあるイースターエッグを見つけたい場合は、[私のオールリモート ワークスペース](https://dnsmichi.com/all-remote-workspace/) を見て、お気軽にコーヒーチャットをスケジュールしてください。
