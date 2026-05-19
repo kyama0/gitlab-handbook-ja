@@ -36,7 +36,7 @@ For long pages, consider creating a table of contents.
 -->
 
 > [!note]
-> これは [クラウドネイティブ開発](../index.md) のサブブループリントです。
+> これは [クラウドネイティブ開発](../_index.md) のサブブループリントです。
 
 ## 概要
 

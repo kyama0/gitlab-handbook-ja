@@ -28,9 +28,9 @@ lastmod: "2025-10-14T17:59:32+00:00"
 
 2. SDのRuby Gemをベンダーとしてを組み込むことによるSPP機能のアクティブな開発があり、移行によってSPP機能のリリースがさらに遅れることになっていました。厳格なリリースタイムラインがあったため、それは許容できませんでした。非破壊的なアプローチが必要でした。
 
-3. RunwayはJason（現在もまだ）自己管理とDedicated環境へのデプロイをサポートしていませんでした。Cloud Connectorは労力のかかる選択肢でした。Runwayはそれをサポートする[計画がありました](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/236)ため、進行中の作業（ベンダーとして組み込まれたGem）を再利用する一時的なアプローチがより理にかなっていました。
+3. Runway は（現在もまだ）自己管理とDedicated環境へのデプロイをサポートしていませんでした。Cloud Connectorは労力のかかる選択肢でした。Runwayはそれをサポートする[計画がありました](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/236)ため、進行中の作業（ベンダーとして組み込まれたGem）を再利用する一時的なアプローチがより理にかなっていました。
 
-4. RE2の正規表現パフォーマンスは[レイテンシ](https://gitlab.com/gitlab-org/gitlab/-/issues/423832)と[メモリ消費](https://gitlab.com/gitlab-org/gitlab/-/issues/422574#note_1582015771)の面でJasonのGoの組み込み正規表現よりも_十分に_優れていました。Goの代替正規表現エンジンは探っていませんでした。
+4. RE2の正規表現パフォーマンスは[レイテンシ](https://gitlab.com/gitlab-org/gitlab/-/issues/423832)と[メモリ消費](https://gitlab.com/gitlab-org/gitlab/-/issues/422574#note_1582015771)の面で Go の組み込み正規表現よりも_十分に_優れていました。Goの代替正規表現エンジンは探っていませんでした。
 
 #### Rubyを選択することによるいくつかの癖
 
@@ -44,7 +44,7 @@ lastmod: "2025-10-14T17:59:32+00:00"
 
 2. RubyにはGRPCの第一級サポートが欠けているため、内部では[CベースのGRPC](https://github.com/grpc/grpc)ライブラリを使用しています。C-Rubyバインディングは追加のオーバーヘッドをもたらし、[Go](https://grpc.io/blog/grpc-go-perf-improvements/)向けに持っているような言語固有の最適化も欠如しています。
 
-3. SDSをさまざまなスキャン対象タイプにわたってスキャンを実行する唯一のプラットフォームとする計画を考慮すると、高スループットと低レイテンシは必須要件になります。[GRPCサーバーのメトリクス](https://nexthink.com/blog/comparing-grpc-performance)を見ると、RubyはリストJasonの中で最もパフォーマンスが低い部類に入ります。
+3. SDSをさまざまなスキャン対象タイプにわたってスキャンを実行する唯一のプラットフォームとする計画を考慮すると、高スループットと低レイテンシは必須要件になります。[GRPCサーバーのメトリクス](https://nexthink.com/blog/comparing-grpc-performance)を見ると、Ruby はそのリストの中で最もパフォーマンスが低い部類に入ります。
 
 4. 効率的なバイナリ実行ファイルを生成するための第一級サポートがないため、シークレット検出スイートのすべての機能にわたってシークレットスキャンエンジンを統一することが困難になります。
 
@@ -56,7 +56,7 @@ lastmod: "2025-10-14T17:59:32+00:00"
 
 1. RE2ポートを使用した[Ruby](https://gitlab.com/vbhat161/regex-performance/-/tree/main/ruby)
 
-2. VectorscanポートJasonを使用した[Go](https://gitlab.com/vbhat161/regex-performance/-/tree/main/golang)
+2. Vectorscan ポートを使用した[Go](https://gitlab.com/vbhat161/regex-performance/-/tree/main/golang)
 
 3. RE2（ネイティブ）とVectorscan（ネイティブ）を使用した[C++](https://gitlab.com/vbhat161/regex-performance/-/tree/main/cpp)
 

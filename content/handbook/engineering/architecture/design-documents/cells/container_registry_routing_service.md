@@ -557,7 +557,7 @@ graph TB
 
 ## 関連ドキュメント
 
-- [GitLab Cells Infrastructure Architecture](infrastructure/index.md)
+- [GitLab Cells Infrastructure Architecture](infrastructure/_index.md)
 - [HTTP Router Configuration](https://gitlab.com/gitlab-org/cells/http-router/-/blob/main/docs/config.md)
 - [HTTP Router Rulesets](https://gitlab.com/gitlab-org/cells/http-router/-/tree/main/config/ruleset)
 - [Topology Service Implementation](https://gitlab.com/gitlab-org/cells/topology-service)

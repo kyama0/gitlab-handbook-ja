@@ -87,7 +87,7 @@ GitLab コンテナレジストリは Cells アーキテクチャ内で動作す
 ## 関連ドキュメント
 
 - [コンテナレジストリルーティングサービス設計ドキュメント](../container_registry_routing_service.md)
-- [GitLab Cells インフラストラクチャアーキテクチャ](../infrastructure/index.md)
+- [GitLab Cells インフラストラクチャアーキテクチャ](../infrastructure/_index.md)
 - [HTTP Router 設定](https://gitlab.com/gitlab-org/cells/http-router/-/blob/main/docs/config.md)
 - [HTTP Router ルールセット](https://gitlab.com/gitlab-org/cells/http-router/-/tree/main/config/ruleset)
 - [Topology Service 実装](https://gitlab.com/gitlab-org/cells/topology-service)

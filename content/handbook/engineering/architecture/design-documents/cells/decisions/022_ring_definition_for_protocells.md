@@ -21,7 +21,7 @@ lastmod: "2026-01-08T17:24:30+01:00"
 1. 変更は `gprd-cny` へのデプロイの前に Ring 0 にデプロイされます
 1. 変更は `gprd` と並行して Ring 1 にデプロイされます
 1. Ring 0 での QA ジョブの成功が、Ring 1 へのパッケージデプロイの前提条件となります
-1. [リリースマネージャー](../../../../deployments-and-releases/index.md#release-managers)は、[自動デプロイプロセス](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/deploy/auto-deploy.md)の一環として、GitLab および関連コードベースの変更を Ring 0 と Ring 1 に継続的にデプロイする責任を負います。具体的には、テナントモデルフィールドの `prerelease_version` と `gitlab_custom_helm_chart.version` の変更が含まれます
+1. [リリースマネージャー](../../../../deployments-and-releases/_index.md#release-managers)は、[自動デプロイプロセス](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/deploy/auto-deploy.md)の一環として、GitLab および関連コードベースの変更を Ring 0 と Ring 1 に継続的にデプロイする責任を負います。具体的には、テナントモデルフィールドの `prerelease_version` と `gitlab_custom_helm_chart.version` の変更が含まれます
 1. Ring 内でのデプロイや QA の失敗は、レガシー Cell 内のどのステージへのデプロイもブロックしません
 1. Ring 1 のいずれかのリングでデプロイや QA が失敗した場合、Ring 1 はレガシー Cell より数バージョン遅れる可能性があります。この場合、リリースマネージャーは Ring 1 が追いつくまでレガシー Cell へのデプロイを一時停止することを選択できます
 

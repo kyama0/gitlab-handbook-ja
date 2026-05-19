@@ -43,15 +43,15 @@ GitLab でエンタープライズアジャイル計画の未来を構築し、[
 
 ## 関連ドキュメント
 
-- [ワークアイテムデザインドキュメント](../work_items/index.md) - 現在の実装とアーキテクチャ
-- [設定可能なワークアイテムタイプ](../configurable_work_item_types/index.md) - タイプに対する設定ベースのアプローチ
-- [ワークアイテムカスタムステータス](../work_items_custom_status/index.md) - FixedItemsModel パターンとシステム定義エンティティ
-- [ワークアイテム REST API デザインドキュメント](../work_item_rest_api/index.md)
+- [ワークアイテムデザインドキュメント](../work_items/_index.md) - 現在の実装とアーキテクチャ
+- [設定可能なワークアイテムタイプ](../configurable_work_item_types/_index.md) - タイプに対する設定ベースのアプローチ
+- [ワークアイテムカスタムステータス](../work_items_custom_status/_index.md) - FixedItemsModel パターンとシステム定義エンティティ
+- [ワークアイテム REST API デザインドキュメント](../work_item_rest_api/_index.md)
 - [フィールドとウィジェットの調査](https://gitlab.com/gitlab-org/gitlab/-/issues/582173)
 - [Plan: 戦略的 UX ビジョン（内部リンク）](https://gitlab.com/gitlab-org/plan-stage/product-design/-/wikis/Plan-Strategic-UX-Vision/)
 - [Plan UX ビジョンコンセプト（内部リンク）](https://www.figma.com/slides/RszQADhSrckltNpEZQp9w5/Plan-UX-Vision-Concepts?node-id=369-214114&t=aFCRoKAmf18tFY91-0)
-- [ワークアイテムカスタムフィールドデザインドキュメント](../work_items_custom_fields/index.md)
-- [エピックからワークアイテム移行デザインドキュメント](../epic_to_work_item_migration/index.md)
+- [ワークアイテムカスタムフィールドデザインドキュメント](../work_items_custom_fields/_index.md)
+- [エピックからワークアイテム移行デザインドキュメント](../epic_to_work_item_migration/_index.md)
 
 ## コアな原則
 
@@ -113,7 +113,7 @@ type.configuration(:required_widgets)
 
 **フロントエンド設定プロバイダーパターン:**
 
-この要件を実装するために、フロントエンドは名前空間ごとにワークアイテムタイプ設定を取得し、Apollo でキャッシュする設定プロバイダーパターンを使用します。このアプローチは、現在の状態（タイプが異なる動作を持つ）とビジョン（すべてのタイプが同じように動作する）の間の一時的な橋渡しです。プロバイダーは、ユーザーが異なる名前空間のアイテム間を移動するときに設定が常に利用可能で最新であることを確保します。実装の詳細については、[設定可能なワークアイテムタイプ](../configurable_work_item_types/index.md)ドキュメントとその[フロントエンドメタデータプロバイダーパターン](../configurable_work_item_types/index.md#frontend-metadata-provider-pattern)セクションを参照してください。
+この要件を実装するために、フロントエンドは名前空間ごとにワークアイテムタイプ設定を取得し、Apollo でキャッシュする設定プロバイダーパターンを使用します。このアプローチは、現在の状態（タイプが異なる動作を持つ）とビジョン（すべてのタイプが同じように動作する）の間の一時的な橋渡しです。プロバイダーは、ユーザーが異なる名前空間のアイテム間を移動するときに設定が常に利用可能で最新であることを確保します。実装の詳細については、[設定可能なワークアイテムタイプ](../configurable_work_item_types/_index.md)ドキュメントとその[フロントエンドメタデータプロバイダーパターン](../configurable_work_item_types/_index.md#frontend-metadata-provider-pattern)セクションを参照してください。
 
 利用可能なデータに基づいて動作を推測することを**強く避けて**、API 設定によって提供される機能と機能を直接マッチさせてください。
 
@@ -211,7 +211,7 @@ type.configuration(:required_widgets)
 
 GraphQL は現在フロントエンドがその上に構築されているため、主要な API です。ただし、サードパーティの統合、自動化、REST 規約を好む顧客をサポートするためにファーストクラスの REST API に積極的に投資しています。
 
-具体的な実装エピックについては[ワークアイテム REST API の実装](https://gitlab.com/groups/gitlab-org/-/work_items/20907)を、詳細な技術アプローチについては[ワークアイテム REST API デザインドキュメント](../work_item_rest_api/index.md)を参照してください。
+具体的な実装エピックについては[ワークアイテム REST API の実装](https://gitlab.com/groups/gitlab-org/-/work_items/20907)を、詳細な技術アプローチについては[ワークアイテム REST API デザインドキュメント](../work_item_rest_api/_index.md)を参照してください。
 
 **長期的な戦略:**
 
@@ -219,7 +219,7 @@ GraphQL は現在フロントエンドがその上に構築されているため
 
 **関連リソース:**
 
-- [ワークアイテム REST API デザインドキュメント](../work_item_rest_api/index.md)
+- [ワークアイテム REST API デザインドキュメント](../work_item_rest_api/_index.md)
 
 **関連エピック:**
 
@@ -384,7 +384,7 @@ WorkItems::TypesFramework::Provider.new(namespace).incident_type
 
 **関連作業:**
 
-- [設定可能なワークアイテムタイプ](../configurable_work_item_types/index.md)はこのアプローチを定義しています
+- [設定可能なワークアイテムタイプ](../configurable_work_item_types/_index.md)はこのアプローチを定義しています
 
 ## ライセンスとダウングレード戦略
 
@@ -411,7 +411,7 @@ WorkItems::TypesFramework::Provider.new(namespace).incident_type
 **関連作業:**
 
 - [設定可能なワークアイテムタイプのライセンスダウングレード](https://gitlab.com/gitlab-org/gitlab/-/issues/579231) - 設定可能なワークアイテムタイプの詳細なダウングレード戦略
-- [ワークアイテムカスタムステータス](../work_items_custom_status/index.md) - ステータスダウングレードの既存パターン
+- [ワークアイテムカスタムステータス](../work_items_custom_status/_index.md) - ステータスダウングレードの既存パターン
 
 ## 意思決定フレームワーク
 

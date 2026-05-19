@@ -80,7 +80,7 @@ GitLab ユーザーに以下の方法を提供します。
 - [ADR-008: Rails データベーステーブルなしでシークレットマネージャーを再設計する](decisions/008_no_database.md)
 - [ADR-009: リクエストフローとアーキテクチャ図](decisions/009_request_flows.md)
 - [ADR-010: シークレットローテーションメタデータに Rails ActiveRecord を使用する](decisions/010_secret_rotation_metadata_storage.md)
-- [ADR-011: 顧客監査インgressにストリーミング監査イベントを使用する](decisions/011_http_audit.md)
+- [ADR-011: 顧客監査入力にストリーミング監査イベントを使用する](decisions/011_http_audit.md)
 - [ADR-012: 別個の JWT ドメイン](decisions/012_jwt_separation.md)
 - [ADR-013: OpenBao 別個の論理データベース](decisions/013_openbao_separate_database.md)
 

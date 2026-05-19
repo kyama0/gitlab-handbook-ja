@@ -1,5 +1,5 @@
 ---
-title: 'GitLab Secrets Manager ADR 011: 顧客監査インデックスへのストリーミング監査イベントの使用'
+title: 'GitLab Secrets Manager ADR 011: 顧客監査入力へのストリーミング監査イベントの使用'
 owning-stage: "~sec::software supply chain security"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/secret_manager/decisions/011_http_audit/

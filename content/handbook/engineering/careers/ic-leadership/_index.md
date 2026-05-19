@@ -10,7 +10,7 @@ lastmod: "2026-03-19T19:48:12+00:00"
 
 ## GitLab におけるエンジニアリング IC リーダーシップ: Senior レベルを超えて
 
-GitLab では、すべての人が [one の管理者](/handbook/leadership/#managers-of-one) であることが期待されています。Individual Contributor（IC）にとっては、Staff Engineer のロールから新たなタイプの挑戦が始まります。エンジニアリング IC リーダーシップは、エンジニアリングマネジメントとは別の[キャリアパス](/handbook/engineering/careers/#roles)です。
+GitLab では、すべての人が [Manager of One](/handbook/leadership/#managers-of-one) であることが期待されています。Individual Contributor（IC）にとっては、Staff Engineer のロールから新たなタイプの挑戦が始まります。エンジニアリング IC リーダーシップは、エンジニアリングマネジメントとは別の[キャリアパス](/handbook/engineering/careers/#roles)です。
 
 マネジメントへの移行と同様に、Senior から Staff への移行も日々の業務と IC に求められる期待を変えます。
 

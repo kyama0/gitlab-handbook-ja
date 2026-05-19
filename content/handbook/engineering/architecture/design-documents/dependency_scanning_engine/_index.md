@@ -307,6 +307,6 @@ flowchart TD
 
 ## 参考資料
 
-- [Dependency Scanning Analyzer](../dependency_scanning_analyzer/index.md)
+- [Dependency Scanning Analyzer](../dependency_scanning_analyzer/_index.md)
 - [SBOM を使用した依存関係スキャン](https://docs.gitlab.com/user/application_security/dependency_scanning/dependency_scanning_sbom/)
 - [継続的脆弱性スキャン](https://docs.gitlab.com/user/application_security/continuous_vulnerability_scanning/)
