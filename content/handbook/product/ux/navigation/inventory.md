@@ -17,7 +17,7 @@ lastmod: "2025-04-28T10:53:04-07:00"
 
 | | |
 | --- | --- |
-| {{< label name="ff" >}} | フィーチャーフラグの背後 |
+| {{< label name="ff" >}} | 機能フラグの背後 |
 | {{< label name="sm" >}} | Self-managed インストールのみ |
 | {{< label name="dotcom" >}} | SaaS インスタンスのみ |
 
