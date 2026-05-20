@@ -146,7 +146,7 @@ GitLab フィールド組織のすべてのピープルマネージャー
 
 <br>
 
-## Core Team
+## コアチーム
 
 - [Carolyn Bednarz](https://gitlab.com/cbednarz)（People Business Partner, Sales）
 - [Josh Zimmerman](https://gitlab.com/josh_zimmerman)（Learning & Development Manager）

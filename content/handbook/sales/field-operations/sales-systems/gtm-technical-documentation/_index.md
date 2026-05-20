@@ -158,7 +158,7 @@ LAM 計算は 4 つの部分で実行されます。
 
 **サポートするビジネスプロセス:** これは、私たちの [contact ownership rules](/handbook/sales/field-operations/gtm-resources/) をサポートしています。
 
-**概要:** Contact Ownership コードの目標は、connacts が salesforce 内の適切なユーザーによって自動化された方法で所有されるようにし、チームメンバーによる作業を必要とせずに contact ownership を維持することです。
+**概要:** Contact Ownership コードの目標は、コンタクトが Salesforce 内の適切なユーザーによって自動的に所有されるようにし、チームメンバーが手作業をすることなくコンタクトの所有関係を維持することです。
 
 **ロジックの場所:** [ContactJob](https://gitlab.com/gitlab-com/sales-team/field-operations/salesforce-src/blob/master/force-app/main/default/classes/ContactJob.cls)
 コードユニット:

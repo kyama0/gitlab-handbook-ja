@@ -33,13 +33,13 @@ UX スコアカードは 1-2 日で完了できます。一部のワークフロ
 
 [ヒューリスティック](https://www.nngroup.com/articles/ten-usability-heuristics/)評価を行うことで、現在の体験をレビューします。これは半日でできるので、以前に採点されたタスクのスコアカードに取り組んでいる場合は特に高速なアプローチです。
 
-評価中は、ジョブに関連するペルソナの帽子をかぶり、彼らがあたかも新規ユーザーであるかのように UI を彼らの視点から見るように努めます。評価を進める中でこれを忘れがちなので、モニターに貼り付ける付箋に「あなたは新規ユーザーです！」と書くなど、視界のどこかにリマインダーを置くことを推奨します。
+評価中は、ジョブに関連するペルソナの帽子をかぶり、あたかも新規ユーザーであるかのように UI をペルソナの視点から見るように努めます。評価を進める中でこれを忘れがちなので、モニターに貼り付ける付箋に「あなたは新規ユーザーです！」と書くなど、視界のどこかにリマインダーを置くことを推奨します。
 
 ヒューリスティック評価は、エキスパート評価、ディスカウントユーザビリティ手法と見なされていることを念頭に置いてください。ここでの「エキスパート」は、ユーザーエキスパートではなく UX エキスパートです。したがって、これは潜在的な問題を見つけるための出発点であり、必ずしもエンドポイントではないと考えることができます。改善の領域が見つかった場合は、次のステップとして、以下に概説されているオプション B の UX スコアカードを、実際のユーザーで物事を検証する方法として行いたいかもしれません。
 
 #### オプション B: 形成的評価を実施する
 
-内部または外部のユーザーにジョブを達成しようとさせることで、[形成的評価](https://www.nngroup.com/articles/formative-vs-summative-evaluations/)を行うことができます。ゴールは、参加者にコンテキスト（シナリオ）を提供し、彼らがどのようにジョブを完了しようとするかを聞き、観察することです。学ぶことは、参加者によって異なる場合があります。
+内部または外部のユーザーにジョブを達成しようとさせることで、[形成的評価](https://www.nngroup.com/articles/formative-vs-summative-evaluations/)を行うことができます。ゴールは、参加者にコンテキスト（シナリオ）を提供し、参加者がどのようにジョブを完了しようとするかを聞き、観察することです。学ぶことは、参加者によって異なる場合があります。
 
 形成的評価を実施するとき、3-5 名の内部または外部ユーザーを観察する「軽い」ユーザビリティテストを行います。これは貴重なインサイトを提供し、主観性を取り除きます。これは、評価しているシナリオがテストプロジェクトでセットアップしやすい場合、約 1 日で行えます。シナリオが非常に技術的で複雑なカスタマイズが必要な場合は、評価のための環境をセットアップするだけで数日かかることがあるので、前もって計画してください。私たちが好むセットアップはアンモデレートスタディですが、より良い評価につながるならモデレートも可能です。
 
@@ -110,7 +110,7 @@ GitLab Design プロジェクトで [UX スコアカードテンプレート](ht
 | ------ | ------ | ------ |
 | [![Badge level A High Quality/Exceeds](https://about.gitlab.com/images/grade/grade_a.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 高品質 / 期待を超える | 体験は期待を超え、ユーザーは体験を喜ばしいと感じる。<br>- 容易さ: *非常に簡単*<br>- 満足度: *非常に良い*<br>- 有用性: *強く同意* |
 | [![Badge level B Meets Expectations](https://about.gitlab.com/images/grade/grade_b.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 期待を満たす | 期待を満たすが、ユーザーのニーズを超えない。ユーザーはゴールに到達し、ジョブを完了できる。<br>- 容易さ: *簡単*<br>- 満足度: *良い*<br>- 有用性: *同意* |
-| [![Badge level C Average](https://about.gitlab.com/images/grade/grade_c.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 平均 | ユーザーはジョブを完了できるが、彼らのニーズを超えず、不必要なステップを必要とする。<br>- 容易さ: *簡単でも難しくもない*<br>- 満足度: *良くも悪くもない*<br>- 有用性: *同意も不同意もしない* |
+| [![Badge level C Average](https://about.gitlab.com/images/grade/grade_c.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 平均 | ユーザーはジョブを完了できるが、ユーザーのニーズを超えず、不必要なステップを必要とする。<br>- 容易さ: *簡単でも難しくもない*<br>- 満足度: *良くも悪くもない*<br>- 有用性: *同意も不同意もしない* |
 | [![Badge level D Poor](https://about.gitlab.com/images/grade/grade_d.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 低い | 体験は悪い体験と見なされ、完了するのが難しい。<br>- 容易さ: *難しい*<br>- 満足度: *悪い*<br>- 有用性: *不同意* |
 | [![Badge level F Terrible](https://about.gitlab.com/images/grade/grade_f.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | ひどい | あまりにも多くのユーザーがジョブを完了できない。体験は非常に悪く、完了するのが非常に難しいと見なされる。<br>- 容易さ: *非常に難しい*<br>- 満足度: *非常に悪い*<br>- 有用性: *強く不同意* |
 | [![Badge level 0 Unknown](https://about.gitlab.com/images/grade/grade_-.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 不明 | このジョブはまだ採点されていない。<br>- 容易さ: *不明*<br>- 満足度: *不明*<br>- 有用性: *不明* |

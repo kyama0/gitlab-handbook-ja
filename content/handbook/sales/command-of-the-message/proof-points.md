@@ -60,7 +60,7 @@ _[オリジナルかつ GitLab 内部の proof points Google Doc はこちらで
 <big>[Cook County Assessor's Office](https://about.gitlab.com/customers/cook-county/)</big><br>
 **問題:** Cook County は安全で正確な不動産評価のためのデータ管理プラットフォームが必要だった<br>
 **ソリューション:** GitLab Premium<br>
-**結果:** 推定市場価値 $2,700 億ドルの 180 万件以上の不動産が評価された。1,400 以上のコミットを持つ 31 のリポジトリがある<br>
+**結果:** 推定市場価値 2,700 億ドルの 180 万件以上の不動産が評価された。1,400 以上のコミットを持つ 31 のリポジトリがある<br>
 **バリュードライバー:** 効率<br>
 **差別化要因:** 単一アプリ、SCM<br>
 **ユースケース:** SCM <br>

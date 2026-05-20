@@ -1,6 +1,6 @@
 ---
-title: "調査インサイト"
-description: "調査インサイトは、調査研究から得られる集合的な発見と学びです。"
+title: "リサーチインサイト"
+description: "リサーチインサイトは、調査研究から得られる集合的な発見と学びです。"
 upstream_path: /handbook/product/ux/experience-research/research-insights/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-13T12:00:00Z"
@@ -69,8 +69,8 @@ Dovetail は、説明が少なくスコープが小さいインサイト（例: 
 
 - **ステップ 1:** Dovetail にインサイトとしてすでに文書化されている場合、実行可能なインサイトのタイトルの前に「ACTIONABLE:」を付け、取る必要のある次のアクションを明確に説明します。プロジェクトで Dovetail の代わりに調査レポートにインサイトを入れている場合は、このステップをスキップしてください。
 - **ステップ 2:** [GitLab.com/GitLab-org/gitlab](https://gitlab.com/gitlab-org/gitlab/-/issues/new)で、適切な*実行可能インサイト*の Issue テンプレートを使用して固有の Issue を作成します:
-  - **Actionable Insight - Exploration needed** - これは UX 調査研究から派生した実行可能な調査インサイトです。このインサイトに対処するには、さらなる探索が必要です。それは、フォローアップ調査、デザイン探索などの形式で行われる場合があります。この Issue テンプレートには `~"Actionable Insight::Exploration needed"` スコープラベルが含まれています。
-  - **Actionable Insight - Product change** - これは UX 調査研究から派生した実行可能な調査インサイトです。このインサイトに対処するには、製品体験への変更が必要です。この Issue テンプレートには `~"Actionable Insight::Product change"` スコープラベルが含まれています。*製品の変更を必要とする実行可能なインサイトには、`~"SUS::Impacting"` ラベルと[重大度ラベル](/handbook/product-development/how-we-work/issue-triage/#severity)の両方が必要であることに注意してください。*
+  - **Actionable Insight - Exploration needed** - これは UX 調査研究から派生した実行可能なリサーチインサイトです。このインサイトに対処するには、さらなる探索が必要です。それは、フォローアップ調査、デザイン探索などの形式で行われる場合があります。この Issue テンプレートには `~"Actionable Insight::Exploration needed"` スコープラベルが含まれています。
+  - **Actionable Insight - Product change** - これは UX 調査研究から派生した実行可能なリサーチインサイトです。このインサイトに対処するには、製品体験への変更が必要です。この Issue テンプレートには `~"Actionable Insight::Product change"` スコープラベルが含まれています。*製品の変更を必要とする実行可能なインサイトには、`~"SUS::Impacting"` ラベルと[重大度ラベル](/handbook/product-development/how-we-work/issue-triage/#severity)の両方が必要であることに注意してください。*
 
     ![Issue テンプレート付きの新しい Issue のスクリーンショット](/images/product/ux/ux-research/research-insights/actionable_insight_template_location.png)
 

@@ -1,6 +1,6 @@
 ---
 title: "GitLabのHigh Velocity Sales & FO's Product GTM"
-description: "HVS-FO Product GTMは、製品とフィールドチームの間の接着剤です。私たちは製品チームに対するセールスの利益を代表する一貫した声です。製品チームとパートナリングして、顧客体験を改善する機能を提供し、その結果としてFO、nARR、影響を認識した情報通のフィールドチームを実現します。"
+description: "HVS-FO Product GTMは、製品チームとフィールドチームをつなぐ橋渡し役です。私たちは製品チームに対するセールスの利益を代表する一貫した声です。製品チームとパートナリングして、顧客体験を改善する機能を提供し、その結果としてFO、nARR、影響を認識した情報通のフィールドチームを実現します。"
 upstream_path: /handbook/sales/high-velocity-sales-fo-team/hvs_product_gtm/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-11T00:00:00Z"
@@ -14,7 +14,7 @@ lastmod: "2025-10-14T17:59:32+00:00"
 ## HVS-FO Product GTMチームハンドブックへようこそ
 
 {{% alert color="success" %}}
-HVS-FO Product GTMは、製品とフィールドチームの間の接着剤です。私たちは製品チームに対するセールスの利益を代表する一貫した声です。製品チームとパートナリングして、顧客体験を改善する機能を提供し、その結果としてFO、nARR、影響を認識した情報通のフィールドチームを実現します。
+HVS-FO Product GTMは、製品チームとフィールドチームをつなぐ橋渡し役です。私たちは製品チームに対するセールスの利益を代表する一貫した声です。製品チームとパートナリングして、顧客体験を改善する機能を提供し、その結果としてFO、nARR、影響を認識した情報通のフィールドチームを実現します。
 {{% /alert %}}
 
 ## チーム
