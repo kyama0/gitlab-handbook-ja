@@ -49,7 +49,7 @@ Update Ticker の使い方:
    - Nice to Know: ビジネスにとって重要ではないが、ロールに関連する情報やアップデート（例: 今後のイベント、販売に関連しない新しいクロスファンクショナルプロセスなど）
    - Key Field Dates & Resources: 認識すべき今後の日付と、フィールド組織に特に該当するリソース（エバーグリーン Highspot ページ、タイムリーなリソース、Field Enablement セッションの録画など）
 
-## プロセス
+## プロセス {#how-to-use}
 
 1. [Field Communications のトリアージプロセス](/handbook/sales/field-communications/#how-to-use)中、各 Field Announcement Request はアップデートを関連する Update Ticker に含めるべきかどうかを判断するために評価されます。
 
