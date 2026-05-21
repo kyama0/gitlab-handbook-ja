@@ -44,7 +44,6 @@ GitLab Handbook 日本語訳の **唯一の用語集**。`.claude/agents/transla
 | team member | チームメンバー | カタカナ |
 | all-remote | オールリモート | 「完全リモート」「リモートオンリー」は不可 |
 | feature | 機能 | 「フィーチャー」は不可（FX/SaaS 文脈の慣用は除く） |
-| feature flag | フィーチャーフラグ | `feature → 機能` の例外。業界標準訳語で handbook 全体で既に定着 |
 | Separation of Duty | 職務分掌 | 「職務分離」は不可（会計監査用語） |
 | material effect | 大きな影響 / 重要な影響 | 「物質的な影響」は不可（法務・財務文脈） |
 | force multiplier | フォース・マルチプライヤー（成果を何倍にも増幅させる存在） | 初出時に補足、以降は単に「フォース・マルチプライヤー」可 |
