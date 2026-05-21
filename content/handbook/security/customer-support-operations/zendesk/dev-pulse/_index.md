@@ -73,7 +73,7 @@ Zendesk チケットで Dev Pulse を活用するには:
 
 #### チケットの分析 {#analyzing-a-ticket}
 
-これは、エージェントが[チケットで Dev Pulse を使用する](#how-do-i-use-dev-pulse)ときにトリガーされます。彼らが実行するアクションが Zendesk トリガーを実行させ、それが（Zendesk Webhook 経由で）プロジェクトにペイロードを送信します。
+これは、エージェントが[チケットで Dev Pulse を使用する](#how-do-i-use-dev-pulse)ときにトリガーされます。エージェントが実行するアクションが Zendesk トリガーを実行させ、それが（Zendesk Webhook 経由で）プロジェクトにペイロードを送信します。
 
 ペイロードには次のものが含まれます:
 

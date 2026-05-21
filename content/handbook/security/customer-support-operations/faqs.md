@@ -16,7 +16,7 @@ lastmod: "2026-01-21T12:28:59-06:00"
 
 セキュリティの[アクセス管理基準](https://internal.gitlab.com/handbook/security/policies_and_standards/access-management-standard/)に従い、私たちは[最小権限の原則](https://csrc.nist.gov/glossary/term/least_privilege)を採用しています。そのため、リクエストごとにケースバイケースで審査を行います。
 
-プロセスを開始するには、[Individual Bulk Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Individual_Bulk_Access_Request) Issue を起票してください。マネージャーの承認後、`@jcolyer` および `@dtragjasi` にアサインしてください。彼らが状況を確認し、最適な進め方を判断します。
+プロセスを開始するには、[Individual Bulk Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Individual_Bulk_Access_Request) Issue を起票してください。マネージャーの承認後、`@jcolyer` および `@dtragjasi` にアサインしてください。両名が状況を確認し、最適な進め方を判断します。
 
 ## チームに関する質問 {#team-related}
 

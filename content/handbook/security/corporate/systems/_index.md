@@ -1,5 +1,5 @@
 ---
-title: CorpSec システムとテックスタック
+title: CorpSec システムとTech Stack
 description: コーポレートセキュリティ部門は、当社が管理する全社規模のシステムについて、チームメンバーと一時的なサービスプロバイダー (契約社員、ベンダーなど) 向けに構成管理エンジニアリングとテックサポートヘルプデスクサービスを提供しています。システムディレクトリには、当社のすべてのシステムの一覧と、管理ランブック、エンドユーザードキュメント、Issue テンプレート、メンション可能なグループ、GitLab の Epic・Issue・マージリクエストで使用されるタグへのクイックリファレンスリンクが記載されています。
 upstream_path: /handbook/security/corporate/systems/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
@@ -11,7 +11,7 @@ lastmod: "2026-04-16T08:58:41+02:00"
 
 ## 部門横断的なシステムオーナー
 
-GitLab がオーガニックに成長するにつれて、いくつかの部門と機能グループは、組織全体のコンプライアンス、インフラストラクチャ、セキュリティのベストプラクティスのフレームワーク内で、その部門または機能グループに固有のテックスタックアプリケーションの日常管理を担当する独自のシステム管理者 (「システムオーナー」) を擁するようになりました。GitLab の各 [テックスタックアプリケーション](/handbook/business-technology/tech-stack-applications/) には、(その部門または機能グループで) そのアプリケーションを利用するチームメンバーの実装と日常運用サポートを担当する DRI であるシステムオーナーがいます。これには、従来の IT 部門がボトルネックになることを防ぎ、各部門が GitLab の [適切なグループのための効率性](/handbook/values/#efficiency-for-the-right-group) サブバリューの一環としてセルフサービスできるという利点もあります。
+GitLab がオーガニックに成長するにつれて、いくつかの部門と機能グループは、組織全体のコンプライアンス、インフラストラクチャ、セキュリティのベストプラクティスのフレームワーク内で、その部門または機能グループに固有のTech Stackアプリケーションの日常管理を担当する独自のシステム管理者 (「システムオーナー」) を擁するようになりました。GitLab の各 [Tech Stackアプリケーション](/handbook/business-technology/tech-stack-applications/) には、(その部門または機能グループで) そのアプリケーションを利用するチームメンバーの実装と日常運用サポートを担当する DRI であるシステムオーナーがいます。これには、従来の IT 部門がボトルネックになることを防ぎ、各部門が GitLab の [適切なグループのための効率性](/handbook/values/#efficiency-for-the-right-group) サブバリューの一環としてセルフサービスできるという利点もあります。
 
 - [Customer Success Operations](/handbook/sales/field-operations/customer-success-operations/)
 - [(Business Intelligence) Data Team](/handbook/enterprise-data/)

@@ -35,7 +35,7 @@ lastmod: "2026-04-30T16:57:54+00:00"
 
 **サポートは `#it_help` Slack チャンネルでご依頼ください。**
 
-コーポレートセキュリティが管理していないシステムについては、[テックスタック](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)で所有者を確認できます。どこに尋ねればよいか分からない場合は、`#it_help` でお尋ねください。適切な人または場所にリダイレクトします。
+コーポレートセキュリティが管理していないシステムについては、[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)で所有者を確認できます。どこに尋ねればよいか分からない場合は、`#it_help` でお尋ねください。適切な人または場所にリダイレクトします。
 
 ## サポート時間
 

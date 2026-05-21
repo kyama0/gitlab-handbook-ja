@@ -13,9 +13,9 @@ lastmod: "2025-08-27T18:17:37+00:00"
 ### 関連ページ
 
 - [Google Apps](/handbook/security/corporate/systems/google/apps)
-- [Google カレンダー](/handbook/security/corporate/systems/google/calendar)
+- [Google Calendar](/handbook/security/corporate/systems/google/calendar)
 - [Google Cloud](/handbook/security/corporate/systems/google/cloud)
-- [Google Docs と Drive](/handbook/security/corporate/systems/google/drive)
+- [Google Docs and Drive](/handbook/security/corporate/systems/google/drive)
 - [Google Groups](/handbook/security/corporate/systems/google/groups)
 - [Google Mail](/handbook/security/corporate/systems/google/mail)
 - [Google Users](/handbook/security/corporate/systems/google/user/)
