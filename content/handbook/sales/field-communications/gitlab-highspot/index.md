@@ -136,7 +136,7 @@ Highspot ユーザーガバナンスの詳細は、[Highspot Governance Playbook
 
 ワークフローを強化する重要な機能と、アカウントをセットアップするためのより基本的な機能について、Highspot User Guide & Reporting Spot の [Getting Started](https://gitlab.highspot.com/spots/66edb5aea861487809d7733a?lfrm=isd.8&list=all&overview=true) セクションで詳しく学んでください。
 
-## Highspot FAQ
+## Highspot に関する FAQ
 
 **誰が Highspot にアクセスできますか？**
 

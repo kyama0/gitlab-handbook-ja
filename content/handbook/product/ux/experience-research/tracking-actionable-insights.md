@@ -16,7 +16,7 @@ GitLab では、UX リサーチから得られた[実行可能なインサイト
 - `Actionable insight::Exploration needed`
 - `Actionable insight::Product change`
 
-これらのラベルは [このダッシュボード（社内のみ）](https://app.periscopedata.com/app/gitlab/1043584/Public-Actionable-Insights)の生成に使われ、次の情報を提供します:
+これらのラベルを使って [このダッシュボード（社内のみ）](https://app.periscopedata.com/app/gitlab/1043584/Public-Actionable-Insights)を生成し、次の情報を提供しています:
 
 - 今月クローズされた Issue の数とオープンされた Issue の数（ベロシティ）
 - 四半期ごとの、新規作成された実行可能なインサイトの量

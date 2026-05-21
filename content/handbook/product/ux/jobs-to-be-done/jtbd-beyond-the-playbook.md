@@ -20,7 +20,7 @@ JTBD は、調査からユーザビリティベンチマーキングまで、多
 
 例: 脆弱性レポートページを使用しているセキュリティ専門家が必要な研究があるとしましょう。
 
-   [GitLab のユーザーペルソナリスト](/handbook/product/personas/#list-of-user-personas) を使用して、Security Analyst、Security Operation Engineer、Security Consultant、Application Security Engineer など、10 以上の職種のリストを生成するセキュリティペルソナで使用される職種のリストを作成できます。このリストは回答者にとって回答するのが非常に煩雑であり、理想的な候補者の日々の役割を正確に反映していない可能性があります。
+   [GitLab のユーザーペルソナリスト](/handbook/product/personas/#list-of-user-personas) のセキュリティペルソナで使用される職種を見ると、Security Analyst、Security Operation Engineer、Security Consultant、Application Security Engineer など 10 以上の職種に及ぶリストになります。このリストは回答者にとって回答するのが非常に煩雑であり、理想的な候補者の日々の役割を正確に反映していない可能性があります。
 
    [Secure および Software Supply Chain Security ステージ向けの JTBD](/handbook/product/ux/product-design/ux-roadmaps/) を使用して、研究に理想的な 2、3 のジョブ／ジョブパフォーマーを特定できます。これらのジョブステートメントを例に見てみましょう: 「組織の資産のリスクを特定する」と「検出されたビジネス上重要な脆弱性に対処する」。さらに、不適合な候補者を除外する無効なオプションを含めたい場合、Secure セクションの他のワークフローからのジョブを含めることができます。このスクリーナー質問は、参加者が選択できる少数のオプションになり、結果として理想的な候補者を正確に反映する参加者を得ます。
 

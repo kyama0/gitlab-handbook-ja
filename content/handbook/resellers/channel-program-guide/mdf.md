@@ -161,7 +161,7 @@ To better track the POP we have created a [MDF Operations Board](https://gitlab.
 - すべてのドキュメントが POP issue にアップロードされ、MDF Program Owner がレビューおよび承認するためのラベルが付けられます。
 - MDF Program Owner はすべての POP issue をチェックし、リードリスト、請求書、サポートする画像/PDF を見て、それを承認するか、懸念がある場合は Channel Marketing Manager にタグ付けします。
 - 承認されると、Teri はリードリストを Lead Upload Issue にアップロードします。
-- 彼女は AP に請求書をメールで送信します。
+- Teri は AP に請求書をメールで送信します。
 - Zip/Coupa に「MDF 払い戻し支払いはクリア」と記載します。
 - 請求書が Accounts Payable に提出されてから支払いには最大 45 日かかる場合があります。
 

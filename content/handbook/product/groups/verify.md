@@ -113,7 +113,7 @@ GitLab では、責任を割り当てるために [DACI](/handbook/people-group/
 
 #### カスタマーサクセス & リニューアルエンゲージメント
 
-私たちは、Customer Success（SA/CSM）とプロダクトマネージャーが見込み客と顧客からのプロダクトフィードバックについてシンクするための CS <> Product フィードバックループを持っています。月次のケイデンスで、[cs-product-feedback](https://gitlab.com/gitlab-com/cs-product-feedback) プロジェクトで作成された Issue で捕捉され、この [Issue ボード](https://gitlab.com/gitlab-com/cs-product-feedback/-/boards) に統合された解決すべき問題について議論するために会います。
+私たちは、Customer Success（SA/CSM）とプロダクトマネージャーが見込み客と顧客からのプロダクトフィードバックについてすり合わせるための CS <> Product フィードバックループを持っています。月次のケイデンスで、[cs-product-feedback](https://gitlab.com/gitlab-com/cs-product-feedback) プロジェクトで作成された Issue で捕捉され、この [Issue ボード](https://gitlab.com/gitlab-com/cs-product-feedback/-/boards) に統合された解決すべき問題について議論するために会います。
 
 #### Alliances エンゲージメント
 

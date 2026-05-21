@@ -11,7 +11,7 @@ lastmod: "2026-01-08T10:38:10-06:00"
 
 プロダクトデザイナーは[マネージャーオブワン](/handbook/values/#managers-of-one)として働き、ステージグループの作業、プラットフォームイニシアチブ、より広範な UX 責任にわたって自身のキャパシティを管理します。このページでは、作業の優先順位付けとキャパシティ計画に関するガイダンスを提供します。
 
-[アップストリームスタジオ](/handbook/upstream-studios/)の一部である [プロダクトデザイン](/handbook/product/ux/product-design/)で働くプロダクトデザイナー向けです。
+[Upstream Studios](/handbook/upstream-studios/)の一部である [プロダクトデザイン](/handbook/product/ux/product-design/)で働くプロダクトデザイナー向けです。
 
 ## キャパシティの計画と管理
 

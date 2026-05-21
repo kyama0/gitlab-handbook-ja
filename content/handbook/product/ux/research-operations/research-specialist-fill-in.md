@@ -21,9 +21,9 @@ UX Research Operations Coordinator の役割を担う場面があります。こ
 - UX Research Operations Coordinator は、Open Recruitment Projects シートも共有し、サポートが必要なプロジェクトであなたをタグ付けします。
 - 今後 X 日間および／または週間のリクルート問い合わせ先として、`#product` と `#ux` Slack チャネルで自己紹介します。
   - Slack でリクルートリクエストを上げようとする人がいたら、[リクルートリクエスト Issue を作成](/handbook/product/ux/experience-research/recruiting-participants/#opening-a-recruitment-request) し、追跡と可視性のためにあなたにアサインするよう促します。
-  - コメントで引き継ぎを確認したら、Issue があなたに引き継がれたことを彼らに伝えます。
+  - コメントで引き継ぎを確認したら、Issue があなたに引き継がれたことを依頼者に伝えます。
 - UX Research Operations Coordinator の代理が複数人いる場合は、調整を容易にするため `#uxr_reops` Slack チャネルに必ず参加してください。
-- UX Research Operations Coordinator が連続 7 営業日以上不在になる場合、彼らは Research Recruiting & Incentive Request Issue Template に対する MR を開き、代理を務める人物が新規 Issue に自動アサインされるようにします。
+- UX Research Operations Coordinator が連続 7 営業日以上不在になる場合、UX Research Operations Coordinator は Research Recruiting & Incentive Request Issue Template に対する MR を開き、代理を務める人物が新規 Issue に自動アサインされるようにします。
 
 ### ステップ 2 - 新規リクルートリクエストへの対応
 
@@ -41,8 +41,8 @@ UX Research Operations Coordinator の役割を担う場面があります。こ
     - 大企業（500 人以上）
     - GitLab または非 GitLab ユーザー
 - Qualtrics スクリーナーをレビューします
-  - 現在の質問が必要なスクリーニング条件を提供するかを判断します。そうでない場合は、リクルート Issue でフィードバックを提供し、スクリーナーが彼らの述べた条件に直接マッピングされるよう編集を提案します。
-  - UX リサーチャーに支援を求めることも忘れないでください。彼らは PM および／またはプロダクトデザイナーが Qualtrics でスクリーナーをまとめるのを手伝います。
+  - 現在の質問が必要なスクリーニング条件を提供するかを判断します。そうでない場合は、リクルート Issue でフィードバックを提供し、スクリーナーが依頼者の述べた条件に直接マッピングされるよう編集を提案します。
+  - UX リサーチャーに支援を求めることも忘れないでください。UX リサーチャーは PM および／またはプロダクトデザイナーが Qualtrics でスクリーナーをまとめるのを手伝います。
   - リサーチを依頼する人物が Qualtrics でスクリーナーを作成し、あなたをコントリビューターとして追加する責任があります。
 
 ### ステップ 3 - 以下のオプションから最適なリクルートチャネルを選ぶ
@@ -101,8 +101,8 @@ UX Research Operations Coordinator の役割を担う場面があります。こ
 
 - お疲れさまでした！ UX Research Operations Coordinator が復帰し、引き継ぐ準備ができました。
 - まだ開いているリクルート Issue を UX Research Operations Coordinator にアサインします。
-- コメントで彼らを @ し、Issue の状況と残作業の更新を提供します。
-- 全員が同じタイムゾーンにいるわけではないため、UX Research Operations Coordinator が復帰する前日にカバレッジ Issue を更新します（彼らがあなたより早く業務を開始する場合があります）。
+- コメントで UX Research Operations Coordinator を @ し、Issue の状況と残作業の更新を提供します。
+- 全員が同じタイムゾーンにいるわけではないため、UX Research Operations Coordinator が復帰する前日にカバレッジ Issue を更新します（コーディネーターのほうがあなたより早く業務を開始する場合があります）。
 - 必要に応じて、UX Research Operations Coordinator は、UX リサーチャーが新しいリサーチリクルートリクエストに自動的にアサインされないようにする新しい MR を開きます。
 
 ## リソース

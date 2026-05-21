@@ -31,7 +31,7 @@ lastmod: "2026-04-30T16:57:54+00:00"
 
 <!-- Add 5-10 bullet points on what others can do to make your life easier when working with you. Strive to include elements that are nonobvious, or that people would not typically think to ask or consult you about. This enables others to be more efficient in helping you in a way that feels like help. -->
 
-Solutions Architect の役割では、私たちのチームが価値の伝達に集中し、深く技術的なトラブルシューティングの会話から離れる機会を多く持てれば持てるほど、チームはあなたが目標売上を達成するのを助けられます。チームはビジネスプランをレビューし貢献することを歓迎しているので、私たちは同期を保てます。
+Solutions Architect の役割では、私たちのチームが価値の伝達に集中し、非常に技術的な議論やトラブルシューティング的な会話から離れる機会を多く持てれば持てるほど、チームはあなたが目標売上を達成するのを助けられます。チームはビジネスプランをレビューし貢献することを歓迎しているので、私たちは同期を保てます。
 
 チームは見込み顧客と顧客に対してサービスを推奨・提案することを歓迎しています。カスタムなステートメント・オブ・ワークについては、チームが初期スコープ・オブ・ワーク（SOW）のスコーピングを開始し、[Professional Services](https://about.gitlab.com/services/) チームから承認を取得できます。
 

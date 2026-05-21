@@ -356,7 +356,7 @@ _[オリジナルかつ GitLab 内部の proof points Google Doc はこちらで
 
 ---
 
-### 業界アワード
+### 業界アワード {#industry-awards}
 
 _[オリジナルかつ GitLab 内部の proof points Google Doc はこちらでオンラインです](https://docs.google.com/document/d/1Tuhg6LO0e6R-KP7Vfwb8cggHDiBzkC26pBl0lyLS7UY/edit)。このハンドブックページの一部は公開承認中です。*
 
@@ -422,7 +422,7 @@ _[オリジナルかつ GitLab 内部の proof points Google Doc はこちらで
 
 ---
 
-### アナリストレポートおよびスタディ
+### アナリストレポートおよびスタディ {#analyst-reports-and-studies}
 
 _[オリジナルかつ GitLab 内部の proof points Google Doc はこちらでオンラインです](https://docs.google.com/document/d/1Tuhg6LO0e6R-KP7Vfwb8cggHDiBzkC26pBl0lyLS7UY/edit)。このハンドブックページの一部は公開承認中です。*
 
@@ -513,7 +513,7 @@ _[オリジナルかつ GitLab 内部の proof points Google Doc はこちらで
 
 ---
 
-### 2017 ピアレビュー
+### 2017 ピアレビュー {#peer-reviews}
 
 _[オリジナルかつ GitLab 内部の proof points Google Doc はこちらでオンラインです](https://docs.google.com/document/d/1Tuhg6LO0e6R-KP7Vfwb8cggHDiBzkC26pBl0lyLS7UY/edit)。このハンドブックページの一部は公開承認中です。*
 
@@ -539,7 +539,7 @@ _[オリジナルかつ GitLab 内部の proof points Google Doc はこちらで
 **バリュードライバー:** 効率<br>
 **ユースケース:** VC&C
 
-### GitLab レポートおよびスタディ
+### GitLab レポートおよびスタディ {#gitlab-reports-and-studies}
 
 <big>[2020 Global Developer Report: DevSecOps](https://about.gitlab.com/developer-survey/)</big><br>
 **含まれる発見:** 開発者回答者の大多数 66% が、自社の組織は彼らがハッキングを避けることを可能にすると述べた。
