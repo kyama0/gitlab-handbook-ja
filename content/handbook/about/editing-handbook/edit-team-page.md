@@ -44,7 +44,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
 
 
 {{% alert title="Note" color="primary" %}}
-以下に記載されている `Export Name/Location to Team Page?` のオプトイン設定の詳細については、[「How to: Set Team Page Export Preferences」 Google ドキュメント](https://drive.google.com/drive/search?q=how+to+Set+Team+Page+Export+Preferences)（社内）を検索してください。
+以下に記載されている `Export Name/Location to Team Page?` のオプトイン設定の詳細については、[「How to: Set Team Page Export Preferences」 Google Docs](https://drive.google.com/drive/search?q=how+to+Set+Team+Page+Export+Preferences)（社内）を検索してください。
 {{% /alert %}}
 
 
@@ -109,7 +109,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
 1. 下にスクロールして、`Create merge request` をクリックします。
 1. 説明内の Author Checklist を確認し、該当するすべてのタスクをチェックしてください。
 1. People Operations オンボーディングチームメンバーとマネージャーを Reviewer として追加してください。右側にレビュアー用のセクションがあり、リストを編集して名前またはユーザー名で検索することで追加できます。
-1. レビューが完了し変更要求がない場合、彼らは MR を承認しマージするはずです。
+1. レビューが完了し変更要求がない場合、レビュアーが MR を承認しマージするはずです。
 
 ### 方法 2：「Web インターフェース」を使って GitLab.com で情報を追加する
 
@@ -181,4 +181,4 @@ MR を作成し、パイプラインが通過したら：
 1. ペットの情報は `data/pets.yml` ファイルの末尾に追加してください。
 1. コミットメッセージは `Adding my dog Gary to the Team Pets Page` のようなものになります。
 1. マネージャーをレビュアーとしてアサインしてください。
-   - マネージャーを追加した後、彼らのアバターに警告の黄色い三角形のシンボルがある場合、彼らは承認できますがマージはできません。マネージャーが承認した後、`#mr-buddies` Slack チャンネルに投稿してマージしてもらうようリクエストしてください。
+   - マネージャーを追加した後、そのアバターに警告の黄色い三角形のシンボルがある場合、承認はできますがマージはできません。マネージャーが承認した後、`#mr-buddies` Slack チャンネルに投稿してマージしてもらうようリクエストしてください。

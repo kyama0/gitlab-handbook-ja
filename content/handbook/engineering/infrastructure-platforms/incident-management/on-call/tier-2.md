@@ -39,7 +39,7 @@ Tier 2 チームをページするには:
 ### Gitaly
 
 - ローテーションリーダー: John Cai
-- カバレッジ: 24x5 一部 (2 時間のギャップ)
+- カバレッジ: 24x5（一部、2 時間のギャップあり）
 - スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01JJWAE08T9WDE8T6D4VZPBNXE)
 - エスカレーション履歴リンク: [escalations](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01JJWB07RXAG02RXYR4QR47J9E)
 - [詳細情報](/handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/#on-call-rotation)

@@ -96,7 +96,7 @@ Slack で[E-グループ](/handbook/company/team/?departmentOrDivision=Executive
 
 外部チャンネルを使用する際は、GitLab の外部コミュニケーションガイドライン（情報を [SAFE](/handbook/legal/safe-framework/) に保つことを含む）に従ってください。1 年間アクティビティがない外部チャンネルは CorpSec によって削除されます。
 
-#### フィーチャーチャンネル（f_）
+#### 機能チャンネル（f_）
 
 これらのチャンネルは、GitLab に存在する、または現在構築中の特定の機能に興味があるチームと GitLab チームメンバー向けです。
 

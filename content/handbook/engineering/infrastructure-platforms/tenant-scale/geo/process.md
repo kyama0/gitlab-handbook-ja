@@ -296,7 +296,7 @@ Duo が生成し私がレビューした引き継ぎコメント:
 
 ##### スケジュール
 
-スケジュールは[Google スプレッドシート（内部リンク）](https://docs.google.com/spreadsheets/d/1-kvptYZfhCSV9WTVEs4epfUSVvxIMSf5wHxnT6BmjSw/edit?gid=1214041762#gid=1214041762)で管理されています。
+スケジュールは[Google Sheets（内部リンク）](https://docs.google.com/spreadsheets/d/1-kvptYZfhCSV9WTVEs4epfUSVvxIMSf5wHxnT6BmjSw/edit?gid=1214041762#gid=1214041762)で管理されています。
 
 ## ふりかえり
 

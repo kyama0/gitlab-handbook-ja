@@ -19,10 +19,10 @@ lastmod: "2026-01-23T15:08:44-08:00"
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/geo/#the-geo-team" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
-### 安定したカウンターパート
+### Stable Counterparts
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/geo/#the-geo-team" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/geo/#stable-counterparts" rel="external noopener">原文 (英語)</a> を参照してください。</p>
 
 
 ## 目標と優先事項

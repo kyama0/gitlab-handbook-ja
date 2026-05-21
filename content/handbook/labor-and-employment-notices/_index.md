@@ -10,7 +10,7 @@ lastmod: "2025-04-22T16:48:11+00:00"
 
 ## はじめに
 
-GitLabは[オールリモート](/handbook/company/culture/all-remote/)の会社であるため、重要な労働・雇用に関する通知を掲示する物理的な職場や休憩室がありません。このページはその代替となるものです。
+GitLab は[オールリモート](/handbook/company/culture/all-remote/)の会社であるため、重要な労働・雇用に関する通知を掲示する物理的な職場や休憩室がありません。このページはその代替となるものです。
 
 
 {{% details summary="GitLab, Inc. & GitLab Federal LLC" %}}
@@ -568,7 +568,7 @@ GitLabは[オールリモート](/handbook/company/culture/all-remote/)の会社
 - [Parental and Family Leave](https://labor.vermont.gov/sites/labor/files/doc_library/Parental%20and%20Family%20Leave%20Poster.pdf)
 - [Sexual Harassment Poster](https://drive.google.com/file/d/1cuwlVBW8CbAkt-HIf2XpEneHVHG7sWEk/view?usp=sharing)
 - [Workers Compensation Reinstatement Rights](https://labor.vermont.gov/sites/labor/files/doc_library/Notice%20to%20Employers%20Employers%20Liability%20and%20WC%20Poster%20%5BEnglish%5D.pdf)
-  - GitLabはThe Hartfordを通じて労働者補償保険に加入することで、バーモント州法律第21編§687の規定を遵守しています。
+  - GitLab はThe Hartfordを通じて労働者補償保険に加入することで、バーモント州法律第21編§687の規定を遵守しています。
 - [Employment Protections for Victims of Crime](https://labor.vermont.gov/sites/labor/files/doc_library/Crime%20Victim%20Poster_2022.pdf)
 
 ### バージニア州
@@ -649,7 +649,7 @@ GitLabは[オールリモート](/handbook/company/culture/all-remote/)の会社
 
 - [Employee Rights on Government Contracts (SCA, PCA, CWHSSA, Walsh- Healey)](https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/govc.pdf)
 
-### NLRAに基づく従業員の権利
+### NLRA に基づく従業員の権利
 
 - [Employee Rights Under the National Labor Relations Act (1ページポスター)](https://www.dol.gov/sites/dolgov/files/olms/regs/compliance/eo_posters/employeerightsposter11x17_2019final.pdf)
 - [Employee Rights Under the National Labor Relations Act (2ページポスター)](https://www.dol.gov/sites/dolgov/files/olms/regs/compliance/eo_posters/employeerightsposter2page_19final.pdf)

@@ -155,7 +155,7 @@ Environment Automation チームと連携するには：
 - 戦略的優先事項が実行キャパシティにマッピングされる
 - 依存関係とリスクが明確に特定される
 - 完全な精緻化情報を持つすべての対象エピックが「Ready」ステータスになる
-- バランスの取れた配分: フィーチャー開発 40-60%、KTLO 20-30%、オンコール 15-25%、エンジニアリング 10-15%
+- バランスの取れた配分: 機能開発 40-60%、KTLO 20-30%、オンコール 15-25%、エンジニアリング 10-15%
 
 #### リスクとベストプラクティス
 
@@ -176,7 +176,7 @@ Environment Automation チームと連携するには：
 
 #### レビュアールーレット
 
-レビュアールーレットは、ランダムにメンテナー + レビュアーを選ぶ GitLab.com プロジェクト向けの内部ツールです。Environment Automation はMRレビューの作業負荷を分散させるためにこれを使用しています。使用するには：
+レビュアールーレットは、ランダムにメンテナー + レビュアーを選ぶ GitLab.com プロジェクト向けの内部ツールです。Environment Automation は MR レビューの作業負荷を分散させるためにこれを使用しています。使用するには：
 
 1. [レビュアールーレット](https://gitlab-org.gitlab.io/gitlab-roulette/?currentProject=environment-automation&sortKey=stats.avg30&mode=show&order=-1) ページに移動する。
 1. `Spin the wheel` をクリックする。

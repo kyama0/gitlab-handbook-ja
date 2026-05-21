@@ -297,7 +297,7 @@ IMOC として、インシデントを迅速に解決するためのいくつか
 | Dedicated テクニカルヘルプ   | Dedicated テクニカルエスカレーション | PagerDuty エスカレーション                    |
 | AWS インフラ                 | AWS エンタープライズサポート     | AWS サポートシート                               |
 | GitLab アプリバグ            | Tier 2 / Dev エスカレーション   | インシデント Slack チャンネルで [`/inc escalate`](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/runbooks/on-call.html#escalating-internally-gitlab-teams) → tier2: [チーム] |
-| セキュリティ脆弱性           | SIRT                             | 彼らがコンタクトしてくる                         |
+| セキュリティ脆弱性           | SIRT                             | SIRT 側から連絡が来る                         |
 | マネジメントサポート         | Dedicated マネジメント           | @fviegas、@o-lluch、@denhams、@nitinduttsharma   |
 
 ## リードすることとこなすことの違い

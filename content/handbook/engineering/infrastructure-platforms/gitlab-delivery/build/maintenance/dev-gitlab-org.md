@@ -1,6 +1,6 @@
 ---
-title: "Distributionチームのインフラとメンテナンスーーdev.gitlab.org"
-description: "dev.gitlab.orgのメンテナンスガイドライン。手動によるパッケージのアップグレード/ダウングレード、GitLab設定変更を含みます。"
+title: "Distribution チームのインフラとメンテナンス - dev.gitlab.org"
+description: "dev.gitlab.orgのメンテナンスガイドライン。手動によるパッケージのアップグレード/ダウングレード、GitLab 設定変更を含みます。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/gitlab-delivery/build/maintenance/dev-gitlab-org/"
 upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-28T23:09:27Z"
@@ -11,14 +11,14 @@ lastmod: "2026-03-04T12:15:15-08:00"
 
 ## 共通リンク
 
-* [DistributionチームのHandbook](/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/)
-* [DistributionチームのインフラとメンテナンスHandbook](/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/maintenance/)
+* [Distribution チームのHandbook](/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/)
+* [Distribution チームのインフラとメンテナンスHandbook](/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/maintenance/)
 
 ## dev.gitlab.org
 
-これはGitLab CEを実行している内部GitLabインスタンスです。このサーバー上のomnibus-gitlab
+これは GitLab CEを実行している内部 GitLab インスタンスです。このサーバー上の omnibus-gitlab
 パッケージは、運用を維持するために必要な設定が施されたストックパッケージです。
-このノードでは通常のomnibus-gitlabコマンドを使用できます。
+このノードでは通常の omnibus-gitlab コマンドを使用できます。
 
 ### 自動化タスク
 
@@ -27,12 +27,12 @@ lastmod: "2026-03-04T12:15:15-08:00"
 
 1. デプロイ: 毎日UTC 7:20に、ナイトリーCEパッケージがdev.gitlab.orgに自動的にデプロイされます。
    インストールプロセス中のエラーは[Sentry](https://sentry.gitlab.net/gitlab/devgitlaborg/)に記録されます。
-   Slack通知は#dev-gitlabに届きます。cronタスクは現在
+   Slack 通知は#dev-gitlabに届きます。cronタスクは現在
    [roleファイル](https://gitlab.com/gitlab-com/gl-infra/chef-repo/-/blob/master/roles/dev-gitlab-org.json#L304-319)で定義されています。
 
 ### メンテナンスタスク
 
-このサーバーのGitLabインスタンスを運用状態に保つのはDistributionチームの責任です。
+このサーバーの GitLab インスタンスを運用状態に保つのは Distribution チームの責任です。
 
 **前提条件：**
 
@@ -41,7 +41,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
 * タスクが`/etc/gitlab/gitlab.rb`への永続的な変更を必要とする場合は、
   [Chef repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo/)へのアクセス権。
   このリポジトリへのアクセス権がない場合は、
-  [InfrastructureのIssueトラッカーでIssueを作成](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=)し、
+  [Infrastructure の Issue トラッカーで Issue を作成](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues/new?issue%5Bassignee_id%5D=&issue%5Bmilestone_id%5D=)し、
   `access request`ラベルを付けてください。
 
 #### パッケージの手動アップグレード/ダウングレード
@@ -50,10 +50,10 @@ lastmod: "2026-03-04T12:15:15-08:00"
 戻し、デプロイをロックする必要があります。これはdev.gitlab.orgを利用する他のユーザーのために
 安定性を確保するために行われます。
 
-1. まず、ダウングレードするインストールバージョンの詳細と関連するIssueへのリンクを記載した
-   team-tasksの[issue-tracker]にIssueを作成してください。Issueを自分にアサインしてください。
+1. まず、ダウングレードするインストールバージョンの詳細と関連する Issue へのリンクを記載した
+   team-tasksの[issue-tracker]に Issue を作成してください。Issue を自分にアサインしてください。
 
-1. 次に、パッケージをダウングレードする前に`#announcements` Slackチャンネルでアナウンスしてください：
+1. 次に、パッケージをダウングレードする前に`#announcements` Slack チャンネルでアナウンスしてください：
 
     ```text
     I will be manually downgrading package on dev.gitlab.org to <version> as latest nightly is not working as expected. <link to issue>
@@ -106,7 +106,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
     Downgrade completed. The package has also been put on hold to prevent automatic upgrades. <link to issue>
     ```
 
-**Issueが解決したら、パッケージのホールドを解除して最新バージョンにアップグレードします。**
+**Issue が解決したら、パッケージのホールドを解除して最新バージョンにアップグレードします。**
 
 1. まず`#announcements`チャンネルでアナウンスします。
 
@@ -136,7 +136,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
     Upgrade completed. dev.gitlab.org now runs <version>.
     ```
 
-#### GitLab設定の変更
+#### GitLab 設定の変更
 
 何らかの理由で`/etc/gitlab/gitlab.rb`に変更を適用する必要がある場合、
 その変更は[dev-gitlab-org role](https://dev.gitlab.org/cookbooks/chef-repo/blob/fa6131d9d06299940a72c51cf60ea62c54fe3461/job-description-library/dev-gitlab-org.json)に導入する必要があります。
@@ -153,10 +153,10 @@ lastmod: "2026-03-04T12:15:15-08:00"
 1. インスタンスを再稼働させるために必要な変更を行います。gitlab.rbファイルの変更が必要な場合は、
    手動で変更してreconfigureを実行します。
 
-1. Productionチームに連絡して、`gitlab.rb`の設定変更をChefサーバーにコミットするサポートを
+1. Productionチームに連絡して、`gitlab.rb`の設定変更を Chef サーバーにコミットするサポートを
    依頼します。
 
 1. これが適用されたら、ノードでchef-clientを起動します：`sudo service chef-client start`
 
-1. 行ったすべての変更をIssueにメモしてください！パッケージに修正が入ったら、
+1. 行ったすべての変更を Issue にメモしてください！パッケージに修正が入ったら、
    このノードへの変更を元に戻す責任はあなたにあります。

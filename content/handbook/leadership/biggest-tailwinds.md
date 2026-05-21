@@ -49,11 +49,11 @@ lastmod: "2026-02-05T22:44:00+00:00"
 
 [オールリモート](/handbook/company/culture/all-remote/)
 
-GitLabのオールリモートな働き方は、他の組織設計の形態と比べて格段に進化・洗練されています。[ハンドブックファースト](/handbook/company/culture/all-remote/handbook-first/)で業務を行い、[透明性](/handbook/values/#transparency)を持って運営し、[GitLabを活用](/handbook/company/culture/all-remote/)して成果を出すことが、組織の追い風となっています。
+GitLab のオールリモートな働き方は、他の組織設計の形態と比べて格段に進化・洗練されています。[ハンドブックファースト](/handbook/company/culture/all-remote/handbook-first/)で業務を行い、[透明性](/handbook/values/#transparency)を持って運営し、[GitLab を活用](/handbook/company/culture/all-remote/)して成果を出すことが、組織の追い風となっています。
 
-GitLabのオールリモートへの取り組みは、[ハイブリッドリモート企業でBチームに置かれていると感じる人](/handbook/company/culture/all-remote/)や、完全な現地勤務の柔軟性のなさに限界を感じている人にとって、魅力的な就業先となっています。
+GitLab のオールリモートへの取り組みは、[ハイブリッドリモート企業でBチームに置かれていると感じる人](/handbook/company/culture/all-remote/)や、完全な現地勤務の柔軟性のなさに限界を感じている人にとって、魅力的な就業先となっています。
 
-[GitLabオールリモートガイド](/handbook/company/culture/all-remote/guide/)
+[GitLab オールリモートガイド](/handbook/company/culture/all-remote/guide/)
 
 [いつでも、どこでも働く](https://link.springer.com/article/10.1186/s41469-020-00087-8)
 

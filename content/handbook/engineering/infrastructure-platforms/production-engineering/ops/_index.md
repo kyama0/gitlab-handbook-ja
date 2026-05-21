@@ -1,5 +1,5 @@
 ---
-title: "プロダクションエンジニアリング Ops チーム"
+title: "Production Engineering Ops チーム"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/ops/"
 upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-29T02:14:34Z"
