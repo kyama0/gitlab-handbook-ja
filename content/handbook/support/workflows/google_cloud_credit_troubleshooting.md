@@ -26,10 +26,10 @@ lastmod: "2024-06-27T22:14:31+00:00"
     1. フルネーム
     1. メールアドレス
 1. ユーザーの代わりに [このフォーム](https://docs.google.com/forms/d/e/1FAIpQLScKgwz-P8wcBpQ-SprEEQDzxHoVyoBlaYqStlP9LsVUvHTTQQ/viewform) を送信します
-    1ページ目:
+    1 ページ目:
     1. メールアドレス: 自分（サポートエンジニア）のメールアドレス
     1. 役割は何ですか？: Partner
-    2ページ目:
+    2 ページ目:
     1. 名前: ユーザーの名前
     1. メールアドレス: ユーザーのメール
     1. 会社名: GitLab

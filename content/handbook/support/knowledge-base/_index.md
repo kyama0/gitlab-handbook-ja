@@ -193,7 +193,7 @@ Sync repo でナレッジ記事を作成する方法を見たいですか？ [Le
 
 ## 社内ナレッジ記事を閲覧するには
 
-社内ナレッジ記事を閲覧するには、Zendesk Global ライトエージェントアカウントが必要です。現在持っていない場合は、リクエスト方法について [ZenDesk「ライトエージェント」アカウントのリクエスト](/handbook/support/internal-support/#requesting-a-zendesk-light-agent-account) を参照してください。
+社内ナレッジ記事を閲覧するには、Zendesk Global Light エージェントアカウントが必要です。現在持っていない場合は、リクエスト方法について [ZenDesk「Light エージェント」アカウントのリクエスト](/handbook/support/internal-support/#requesting-a-zendesk-light-agent-account) を参照してください。
 
 Zendesk Global エージェントアカウントを取得したら、ログインして https://support.gitlab.com/hc/en-us/categories/360002276159-Knowledge-Articles に移動します。
 

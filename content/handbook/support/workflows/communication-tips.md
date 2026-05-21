@@ -20,17 +20,17 @@ lastmod: "2024-06-27T22:14:31+00:00"
 
  1. *Support Engineerは、Slack、Zoom、メールを介して他のSupport Engineerと
     どうすれば効率的に話せるか?*
- 1. *Support Engineerは、サポートのSlackチャンネルで投稿する
+ 1. *Support Engineerは、サポートのSlack チャンネルで投稿する
     チームメンバーとのやり取りからどうすれば最大限の効果を得られるか?*
 
 ---
 
-## Slackリアクション
+## Slack リアクション
 
-[GitLabにおけるコミュニケーションの一般ガイドライン](/handbook/communication/#general-guidelines)
-や [Slackワークフロー](/handbook/support/#slack-emoji-reaction-workflows) で
+[GitLab におけるコミュニケーションの一般ガイドライン](/handbook/communication/#general-guidelines)
+や [Slack ワークフロー](/handbook/support/#slack-emoji-reaction-workflows) で
 言及されている `:white_check_mark:` 絵文字に加えて、
-SupportのSlackチャンネル内では以下の絵文字も活用することを検討してください。
+SupportのSlack チャンネル内では以下の絵文字も活用することを検討してください。
 
 1. `:idontknow:` - 別のSupport Engineerが質問しているが、その答えを
    あなたが知らないとき

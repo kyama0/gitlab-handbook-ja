@@ -102,10 +102,10 @@ lastmod: "2026-04-06T21:06:06+00:00"
 |DotCom| GitLab.com では、Rails コンソールへは[内部リクエスト](/handbook/support/workflows/internal_requests/#gitlabcom-console-escalation)を作成することでアクセスできます。|
 |Dedicated| Dedicated では Rails コンソールは利用できません。緊急の事案については、[Dedicated チームへの Request for Help](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/issues/new) を作成してください。|
 
-### 機能フラグ
+### フィーチャーフラグ
 
 |      |       |
 |:----:| ----- |
-|セルフマネージド| インスタンス管理者は [Rails コンソール経由で機能フラグを有効化](https://docs.gitlab.com/administration/feature_flags/)できます。|
-|DotCom| GitLab.com 上では、一部の機能フラグは [chatops を経由して有効化](/handbook/support/workflows/saas_feature_flags/)できます。|
-|Dedicated| GitLab Dedicated では、機能フラグがデフォルトで有効化されるまで利用できません。[GitLab Dedicated のお客様からの機能フラグリクエストの取り扱い](/handbook/support/workflows/dedicated/#feature-flags-are-not-supported)についての詳細をご確認ください。|
+|セルフマネージド| インスタンス管理者は [Rails コンソール経由でフィーチャーフラグを有効化](https://docs.gitlab.com/administration/feature_flags/)できます。|
+|DotCom| GitLab.com 上では、一部のフィーチャーフラグは [chatops を経由して有効化](/handbook/support/workflows/saas_feature_flags/)できます。|
+|Dedicated| GitLab Dedicated では、フィーチャーフラグがデフォルトで有効化されるまで利用できません。[GitLab Dedicated のお客様からのフィーチャーフラグリクエストの取り扱い](/handbook/support/workflows/dedicated/#feature-flags-are-not-supported)についての詳細をご確認ください。|

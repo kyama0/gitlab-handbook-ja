@@ -12,7 +12,7 @@ lastmod: "2024-06-10T13:15:40-07:00"
 
 ## 概要
 
-[インフラストラクチャチーム](/handbook/engineering/infrastructure/) は GitLab.com の進化を推進する責務を負っています。彼らは私たちの最大の GitLab インスタンスを管理および監視しています。
+[インフラストラクチャチーム](/handbook/engineering/infrastructure/) は GitLab.com の進化を推進する責務を負っています。同チームは私たちの最大の GitLab インスタンスを管理および監視しています。
 
 GitLab.com には固有のカスタマイズが施されています。これらのカスタマイズは [chef-repo](https://gitlab.com/gitlab-com/gl-infra/chef-repo)（社内）で管理されています。
 

@@ -50,4 +50,4 @@ Mailgun > [Support](https://app.mailgun.com/app/support) に移動し、"Create 
 
 ### フォローアップ
 
-カスタマーへの連絡を忘れず、Mailgun を通じてサポートをリクエストしたことを伝えてください。彼らは 24 時間以内に応答を返してくるはずです。特定のアカウントが原因でブロックリスト入りしている場合は、#production の Site Reliability Engineers にも確認してください。
+カスタマーへの連絡を忘れず、Mailgun を通じてサポートをリクエストしたことを伝えてください。先方は 24 時間以内に応答を返してくるはずです。特定のアカウントが原因でブロックリスト入りしている場合は、#production の Site Reliability Engineers にも確認してください。

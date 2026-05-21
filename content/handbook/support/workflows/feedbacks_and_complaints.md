@@ -39,7 +39,7 @@ lastmod: "2025-02-04T16:44:03+00:00"
 
 お客様にはサポート体験について [カスタマーフィードバックフォーム](https://gitlab-com.gitlab.io/support/customer-feedback/) からフィードバックを提出する選択肢が常にあります。このフォームへのリンクは、サポートエンジニアから Zendesk で送信されるすべての返信の署名に含まれています。
 
-お客様は、チケットを通じて直接フィードバックを提供する場合や、CSM や営業の連絡先にフィードバックを提供する場合があります。このフィードバックを確実に捕捉するために、[Indirect Feedback テンプレート](https://gitlab.com/gitlab-com/support/feedback/-/issues/new?issuable_template=Indirect%20Feedback) を使ってカスタマーフィードバックプロジェクトに Issue を作成し、フィードバックを新しい Issue にコピーしてください。Issue は担当者のマネージャーに割り当て、彼らがフィードバックをレビューして適切な行動を取ります。
+お客様は、チケットを通じて直接フィードバックを提供する場合や、CSM や営業の連絡先にフィードバックを提供する場合があります。このフィードバックを確実に捕捉するために、[Indirect Feedback テンプレート](https://gitlab.com/gitlab-com/support/feedback/-/issues/new?issuable_template=Indirect%20Feedback) を使ってカスタマーフィードバックプロジェクトに Issue を作成し、フィードバックを新しい Issue にコピーしてください。Issue は担当者のマネージャーに割り当て、マネージャーがフィードバックをレビューして適切な行動を取ります。
 
 その間も、お客様の問い合わせを支援し続け、適切であればフィードバックに対応してください。進め方が分からない場合は、[#support_leadership](https://gitlab.slack.com/archives/C01F9S37AKT) Slack チャンネルで助けを求めてください。
 

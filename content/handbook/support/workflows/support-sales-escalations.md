@@ -12,7 +12,7 @@ lastmod: "2025-07-22T02:37:39+00:00"
 
 ## 目的
 
-サポートが営業／カスタマーサクセスにチケットをエスカレーションしたり、彼らの注意を喚起したりする必要があるケースがあります。このページでは、よくあるシナリオとワークフローをいくつか挙げます。
+サポートが営業／カスタマーサクセスにチケットをエスカレーションしたり、先方の注意を喚起したりする必要があるケースがあります。このページでは、よくあるシナリオとワークフローをいくつか挙げます。
 
 > 注: 営業／CS の方で、Support Management にチケットをエスカレーションしたい場合は、代わりに [`I want to escalate a ticket`](/handbook/support/internal-support/#i-want-to-escalate-a-ticket) ワークフローを使用してください。
 
@@ -32,7 +32,7 @@ lastmod: "2025-07-22T02:37:39+00:00"
 
 ### **役割: カスタマーサクセスマネージャー (CSM)**
 
-カスタマーサクセスマネージャー（旧称 Technical Account Manager または TAM）は、通常、顧客との GitLab の関係を管理します。彼らが提供するサービスの包括的な一覧は [こちら](/handbook/customer-success/csm/services/#responsibilities-and-services) に記載されています。
+カスタマーサクセスマネージャー（旧称 Technical Account Manager または TAM）は、通常、顧客との GitLab の関係を管理します。CSM が提供するサービスの包括的な一覧は [こちら](/handbook/customer-success/csm/services/#responsibilities-and-services) に記載されています。
 
 CSM は [特定の基準](/handbook/customer-success/csm/services/#csm-alignment) に基づいて割り当てられているため、すべての顧客に CSM が割り当てられているとは限りません。CSM が割り当てられている顧客については、SFDC で上記と同じプロセスに従いますが、`Customer Success Manager` フィールドを参照します。
 

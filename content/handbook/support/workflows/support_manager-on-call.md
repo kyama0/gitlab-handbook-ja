@@ -80,7 +80,7 @@ STAR ([Support Ticket Attention Requests](/handbook/support/internal-support/sup
 
 スター付きチケットの非常に高い割合がライセンスと更新に関わるものです。これらの処理に関するガイダンスは [Plan/License Ticket Attention Requests のワークフロー](/handbook/support/license-and-renewals/workflows/managers_working_with_extensions) を参照してください。
 
-**注:** GitLab チームメンバーは、通常のサポート Slack チャンネル（`#support_self-managed`、`#support_gitlab-com`、`#support_leadership`）でチケットへの注意を引こうとすることがあります。チームメンバーには、彼らの投稿に **`:escalate:` 絵文字のみで** 返信することでリダイレクトしてください。これにより、正しいプロセスを説明する自動かつ匿名の返信が送信されます。
+**注:** GitLab チームメンバーは、通常のサポート Slack チャンネル（`#support_self-managed`、`#support_gitlab-com`、`#support_leadership`）でチケットへの注意を引こうとすることがあります。チームメンバーには、その投稿に **`:escalate:` 絵文字のみで** 返信することでリダイレクトしてください。これにより、正しいプロセスを説明する自動かつ匿名の返信が送信されます。
 
 **注:** このページでは扱っていない別の状況が2つあります。
 

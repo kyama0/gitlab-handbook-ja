@@ -1,7 +1,7 @@
 ---
 title: 通知の送信
 category: GitLab.com
-description: GitLab.com のユーザーやお客様に対し、彼らが管理するネームスペースに対するさまざまなアクションを通知する方法
+description: GitLab.com のユーザーやお客様に対し、ユーザーやお客様自身が管理するネームスペースに対するさまざまなアクションを通知する方法
 upstream_path: /handbook/support/workflows/sending_notices/
 upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
 translated_at: "2026-05-08T02:00:00Z"
@@ -12,7 +12,7 @@ lastmod: "2025-10-03T14:17:43-06:00"
 
 ## プロセスの概要
 
-[サポートチームは、GitLab SaaS のユーザーやお客様に対して、彼らが管理しているネームスペースまたはプロジェクトに対して私たちが行った（あるいは今後行う）アクションを通知する依頼を受けることがあります](/handbook/support/internal-support/#contacting-users-about-gitlab-incidents-or-changes)。
+[サポートチームは、GitLab SaaS のユーザーやお客様に対して、ユーザーやお客様自身が管理しているネームスペースまたはプロジェクトに対して私たちが行った（あるいは今後行う）アクションを通知する依頼を受けることがあります](/handbook/support/internal-support/#contacting-users-about-gitlab-incidents-or-changes)。
 
 このワークフローでは、さまざまな種類の連絡依頼への対応方法と、その過程で利用できる便利なツールについて説明します。
 
