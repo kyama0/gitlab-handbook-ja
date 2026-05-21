@@ -4114,11 +4114,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab1.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab1.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "9bf0f067dc5ed989b7efd2de0735b9596b5d207c4903e14e277f678c39a23404",
-      "upstream_committed_at": "2025-12-01T18:31:34+00:00"
+      "upstream_sha": "6329e70e21b29c3cf88be90bd4abee6489b39003",
+      "translated_at": "2026-05-21T11:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6a14f4c085c8f6e848cec774b15f6c725107f0962e62bda74bdb253209ef1711",
+      "upstream_committed_at": "2026-05-20T13:54:32+01:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab2.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab2.md",
@@ -5506,11 +5506,11 @@
     },
     "content/handbook/engineering/ai/ai-coding/ai_assisted_service.md": {
       "path": "content/handbook/engineering/ai/ai-coding/ai_assisted_service.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "0d21c95e75d785075c5c5167421b997eb72aff04818fac3102712a467f4669ea",
-      "upstream_committed_at": "2025-12-15T16:03:12-06:00"
+      "upstream_sha": "6329e70e21b29c3cf88be90bd4abee6489b39003",
+      "translated_at": "2026-05-21T11:40:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fc126b8984716251a20ba15322dbc650604a9281edfcbbb61adce13508d51de9",
+      "upstream_committed_at": "2026-05-20T07:10:03-05:00"
     },
     "content/handbook/engineering/ai/ai-coding/code_suggestions/_index.md": {
       "path": "content/handbook/engineering/ai/ai-coding/code_suggestions/_index.md",
@@ -5578,11 +5578,11 @@
     },
     "content/handbook/engineering/ai/ai-coding/duo_code_review.md": {
       "path": "content/handbook/engineering/ai/ai-coding/duo_code_review.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "408bde88ee166ad5d87125575652946132289d15d0a8321e2ef9f5607cf5208e",
-      "upstream_committed_at": "2025-12-15T16:03:12-06:00"
+      "upstream_sha": "6329e70e21b29c3cf88be90bd4abee6489b39003",
+      "translated_at": "2026-05-21T11:40:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3a303c0e20cb3ab8d9130c373515663af6cf9aea892695c7912041696f7e83c3",
+      "upstream_committed_at": "2026-05-20T12:35:40-05:00"
     },
     "content/handbook/engineering/ai/ai-coding/duo_context_exclusion.md": {
       "path": "content/handbook/engineering/ai/ai-coding/duo_context_exclusion.md",
@@ -5642,11 +5642,11 @@
     },
     "content/handbook/engineering/ai/ai-coding/slash_commands.md": {
       "path": "content/handbook/engineering/ai/ai-coding/slash_commands.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "395519652147f7da600d4ad26fbe6fa4337b6148131588a71131a9d5c44a753d",
-      "upstream_committed_at": "2025-12-15T16:03:12-06:00"
+      "upstream_sha": "6329e70e21b29c3cf88be90bd4abee6489b39003",
+      "translated_at": "2026-05-21T11:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e3a2a149af0527b9d524ba5f65a9c819b73c1417303853532afc7d669167ca40",
+      "upstream_committed_at": "2026-05-20T07:13:42-05:00"
     },
     "content/handbook/engineering/ai/ai-framework/_index.md": {
       "path": "content/handbook/engineering/ai/ai-framework/_index.md",
@@ -13370,11 +13370,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/production/readiness.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production/readiness.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T03:12:43Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "732e98fb1f03e477f20e17464b5afd8366e793a4e3d53d22e5f5a3f09f6e266e",
-      "upstream_committed_at": "2026-02-19T17:27:34-05:00"
+      "upstream_sha": "6329e70e21b29c3cf88be90bd4abee6489b39003",
+      "translated_at": "2026-05-21T11:40:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9eaae570645d54ebee43912b43232ae090c60ab9eb2c3643648794bb93c6e825",
+      "upstream_committed_at": "2026-05-18T17:43:16-04:00"
     },
     "content/handbook/engineering/infrastructure-platforms/project-management/index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/project-management/index.md",
@@ -14442,11 +14442,11 @@
     },
     "content/handbook/engineering/workflow/release-feature-determination-workflow.md": {
       "path": "content/handbook/engineering/workflow/release-feature-determination-workflow.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "c3eff9be36d6113f1edb4bd7301b8785a8746c1d081df0db18399e9330bda2e2",
-      "upstream_committed_at": "2025-09-22T11:39:43-05:00"
+      "upstream_sha": "6329e70e21b29c3cf88be90bd4abee6489b39003",
+      "translated_at": "2026-05-21T11:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "22cd5b26e5dd3d1b5ca10f2499caece19d191b6d83e7d915145f368bf200e1eb",
+      "upstream_committed_at": "2026-05-20T09:32:02-07:00"
     },
     "content/handbook/engineering/workflow/reviewer-values.md": {
       "path": "content/handbook/engineering/workflow/reviewer-values.md",
@@ -23986,11 +23986,11 @@
     },
     "content/handbook/security/security-operations/sirt/engaging-security-on-call.md": {
       "path": "content/handbook/security/security-operations/sirt/engaging-security-on-call.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
+      "upstream_sha": "6329e70e21b29c3cf88be90bd4abee6489b39003",
+      "translated_at": "2026-05-21T11:45:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "6693ba927e83cd86dbcfc0f8e7547f46933f238707a666c3038dad4df44d7985",
-      "upstream_committed_at": "2026-02-25T07:10:33-08:00"
+      "input_hash": "be05e0763aab483a649dcd3ea0ba25ba6c1329b662277d05aac1f44a32233b95",
+      "upstream_committed_at": "2026-05-19T05:17:11+00:00"
     },
     "content/handbook/security/security-operations/sirt/sec-incident-response.md": {
       "path": "content/handbook/security/security-operations/sirt/sec-incident-response.md",
@@ -29698,11 +29698,11 @@
     },
     "content/handbook/sales/field-communications/monthly-release-sales-email.md": {
       "path": "content/handbook/sales/field-communications/monthly-release-sales-email.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
+      "upstream_sha": "6329e70e21b29c3cf88be90bd4abee6489b39003",
+      "translated_at": "2026-05-21T11:45:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "adadd13a3be4bc4b5307fa9b49ccd33e0dff3941af30e487644ab795d3c80573",
-      "upstream_committed_at": "2025-03-08T16:32:26+00:00"
+      "input_hash": "6db28bf8e6c19e528a1e69cbe58416ff898275f3b82849ecaa8c94ba44233be0",
+      "upstream_committed_at": "2026-05-20T09:32:02-07:00"
     },
     "content/handbook/sales/field-communications/gitlab-highspot/index.md": {
       "path": "content/handbook/sales/field-communications/gitlab-highspot/index.md",
@@ -32847,6 +32847,22 @@
       "model": "claude-opus-4-7",
       "input_hash": "77df2162c2adb5cd62479255fd6a985f2c82d18178f4b6f47fc4dee80b8e2be1",
       "upstream_committed_at": "2026-05-15T14:59:04+12:00"
+    },
+    "content/handbook/business-technology/readmes/rick-pollak.md": {
+      "path": "content/handbook/business-technology/readmes/rick-pollak.md",
+      "upstream_sha": "6329e70e21b29c3cf88be90bd4abee6489b39003",
+      "translated_at": "2026-05-21T11:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e7b7b196576284f8c8406e1b0b12ae475041d2c0dad12c2e20753a9d77ef1a26",
+      "upstream_committed_at": "2026-05-19T12:55:30-04:00"
+    },
+    "content/handbook/company/working-groups/task-groups/sentry-signal-loop.md": {
+      "path": "content/handbook/company/working-groups/task-groups/sentry-signal-loop.md",
+      "upstream_sha": "6329e70e21b29c3cf88be90bd4abee6489b39003",
+      "translated_at": "2026-05-21T11:45:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0d880bbc477eb589890ad9c2d47e1d502347bd9bccce975ee8a45ac55d0c471b",
+      "upstream_committed_at": "2026-05-20T13:21:20+01:00"
     }
   }
 }

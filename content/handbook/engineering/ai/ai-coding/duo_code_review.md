@@ -2,11 +2,11 @@
 title: "Duo Code Review"
 description: "AI を活用したコードレビューの支援とインサイト"
 upstream_path: /handbook/engineering/ai/ai-coding/duo_code_review/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: 6329e70e21b29c3cf88be90bd4abee6489b39003
+translated_at: "2026-05-20T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2025-12-15T16:03:12-06:00"
+lastmod: "2026-05-20T12:35:40-05:00"
 ---
 
 ## 概要
@@ -22,8 +22,10 @@ Duo Code Review は、コードレビュープロセス中に AI を活用した
 
 ## ダッシュボードと監視
 
-- [Duo Code Review 監視ダッシュボード](https://log.gprd.gitlab.net/app/r/s/xVFdB) - レビューサマリ、マージリクエストサマリ、Duo Code Review（DCR）のレイテンシ、エラー率、DCR コメントや DCR カスタム指示などのメトリクス（Kibana）
-- [Duo Code Review 利用ダッシュボード](https://app.snowflake.com/ys68254/gitlab/#/francoisrose-duo-code-review-dNsR9ByyW) - プロジェクトごとの利用データと統計（Snowflake）
+- [Duo Code Review 監視ダッシュボード](https://log.gprd.gitlab.net/app/r/s/xVFdB) - レビューサマリ、マージリクエストサマリ、Duo Code Review (DCR) のレイテンシ、エラー率、DCR コメントや DCR カスタム指示などのメトリクス (Kibana)
+- [Duo Code Review 利用ダッシュボード](https://app.snowflake.com/ys68254/gitlab/#/francoisrose-duo-code-review-dNsR9ByyW) - プロジェクトごとの利用データと統計 (Snowflake)
+- [DAP 採用ダッシュボード](https://10az.online.tableau.com/t/gitlab/views/AgenticAIProductAdoption/Overview/c8ccd819-38b8-491f-859b-407e1f5f7490/8725ee67-495d-4947-a489-dcf6dcb2fb9a) - フローごとにフィルタリング可能なユーザー数、セッション数、利用時間、エラー数 (Tableau)
+- [AI フィードバックダッシュボード](https://10az.online.tableau.com/t/gitlab/views/AiFeedbackDashboard/AiFeedbackDashboard2/7be4a96b-ed04-41f3-85c1-2fe4e0ea0516/c6a77c31-d4f2-4aa1-b5da-ab9a0a868f44) - Code Review に対するポジティブ／ネガティブのフィードバック率 (Tableau)
 
 ## ドキュメント
 

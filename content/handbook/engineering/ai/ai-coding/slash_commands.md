@@ -2,16 +2,18 @@
 title: "コード関連のスラッシュコマンド"
 description: "/explain、/refactor、/tests、/fix を含む対話型 AI コマンド"
 upstream_path: /handbook/engineering/ai/ai-coding/slash_commands/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: 6329e70e21b29c3cf88be90bd4abee6489b39003
+translated_at: "2026-05-21T11:45:00Z"
 translator: claude
 stale: false
-lastmod: "2025-12-15T16:03:12-06:00"
+lastmod: "2026-05-20T07:13:42-05:00"
 ---
 
 ## 概要
 
 コード関連のスラッシュコマンドは、よくある開発タスクに対する対話型 AI 支援を提供します。これらのコマンドは GitLab Duo Chat と統合されており、開発者がコードを理解・改善・テストするのを助けます。
+
+**注:** これらは Duo Chat の非エージェント（クラシック）バージョンでのみ利用可能です。
 
 利用可能なコマンド
 
@@ -50,14 +52,14 @@ sequenceDiagram
 
 ## 評価
 
-一部のチャットコマンドには評価用のデータセットがあります。以下から参照できます。
+一部のチャットコマンドには評価用のデータセットがあります。以下から参照できます:
 
 - [/fix データセット](https://gitlab.com/gitlab-org/code-creation/fix-dataset)
 - [/tests データセット](https://gitlab.com/gitlab-org/code-creation/tests-dataset)
 
 ## ドキュメント
 
-これらのコマンドの利用に関する詳細は以下を参照してください。
+これらのコマンドの利用に関する詳細は以下を参照してください:
 
 - [Duo Chat の利用例](https://docs.gitlab.com/ee/user/gitlab_duo_chat/examples.html)
 - [IDE 内のコードタスク](https://docs.gitlab.com/ee/user/gitlab_duo_chat/examples.html#refactor-code-in-the-ide)
