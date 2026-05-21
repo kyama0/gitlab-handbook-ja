@@ -223,4 +223,4 @@ GitLab は機能の可用性とパフォーマンスを測定するために[エ
 
 ### ローテーションスケジュール
 
-スケジュールは[Google スプレッドシート（社内リンク）](https://docs.google.com/spreadsheets/d/1Y0DI8rNG9hMC21fsVTAQlKfu1F883zUn2SsjFLvckYM/edit?usp=sharing)で追跡されています。変更前にお知らせください。
+スケジュールは[Google Sheets（社内リンク）](https://docs.google.com/spreadsheets/d/1Y0DI8rNG9hMC21fsVTAQlKfu1F883zUn2SsjFLvckYM/edit?usp=sharing)で追跡されています。変更前にお知らせください。

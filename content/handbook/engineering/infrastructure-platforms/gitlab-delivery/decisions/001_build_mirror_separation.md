@@ -12,7 +12,7 @@ lastmod: "2026-04-22T13:35:43+00:00"
 
 ## 背景
 
-GitLab はhistorically、専用の独立した GitLab インスタンス（[dev.gitlab.org](https://dev.gitlab.org)）からリリースアーティファクトをビルドして公開してきました。これにより GitLab.com とは区別されたコントロールプレーン境界が確保され、GitLab.com の障害時にはフォールバックとして機能していました。
+GitLab はかつて、専用の独立した GitLab インスタンス（[dev.gitlab.org](https://dev.gitlab.org)）からリリースアーティファクトをビルドして公開してきました。これにより GitLab.com とは区別されたコントロールプレーン境界が確保され、GitLab.com の障害時にはフォールバックとして機能していました。
 
 GitLab がよりモジュール化されたリリースアーキテクチャへと移行するにあたり、新しいサービスがこの独立したインスタンスを引き続き使用しなければならないのか、あるいは GitLab.com 上のセキュリティミラーを代わりに使用できるのかという問いが生じました。議論の全容は [gitlab-com/gl-infra/delivery#21976](https://gitlab.com/gitlab-com/gl-infra/delivery/-/work_items/21976) に記録されています。
 

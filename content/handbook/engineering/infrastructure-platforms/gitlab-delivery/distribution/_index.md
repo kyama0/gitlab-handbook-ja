@@ -52,7 +52,7 @@ Omnibus パッケージ・Helm Charts・Operator は、Distribution が現在サ
 
 責務：
 
-- セルフマネージドインストールと GitLab.com のための初期インストールと構成可能性
+- Self-Managed インストールと GitLab.com のための初期インストールと構成可能性
 - アップグレード / ダウングレード
 - デプロイのスケーリング
 - プラットフォームまたはプロバイダー間の移行
@@ -161,7 +161,7 @@ Build と Deploy の[個別の責任](#概要)に加えて、Distribution チー
 
 ## 主要プロジェクト
 
-[omnibus-gitlab](https://gitlab.com/gitlab-org/omnibus-gitlab) - このプロジェクトは、クラウド環境やオンプレミスホスティングのセルフマネージド利用向けに、プラットフォーム固有の自己完結型 GitLab パッケージとイメージを作成します。
+[omnibus-gitlab](https://gitlab.com/gitlab-org/omnibus-gitlab) - このプロジェクトは、クラウド環境やオンプレミスホスティングの Self-Managed 利用向けに、プラットフォーム固有の自己完結型 GitLab パッケージとイメージを作成します。
 
 [Cloud Native GitLab](https://gitlab.com/gitlab-org/build/CNG) は GitLab をデプロイするためのクラウドネイティブコンテナを提供します。これらのコンテナは、Kubernetes・OpenShift・Kubernetes 互換コンテナプラットフォーム上で [GitLab Charts](https://gitlab.com/gitlab-org/charts/gitlab) または [GitLab Operator](https://gitlab.com/gitlab-org/cloud-native/gitlab-operator) を使用して Helm によってデプロイ・管理できます。
 

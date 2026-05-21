@@ -97,7 +97,7 @@ Grand Reviews で使用される週次のエピックステータス自動化を
 
 ## DevEx Grand Review
 
-毎週木曜日、DevEx シニア EM と DevEx EM の 1 名 (または彼らのデリゲート) が、進行中のプロジェクトを通して説明する DevEx Grand Review を録画します。目標はセクション全体でのプロジェクトの可視性を向上させることです。これらのプロジェクトを特定するために [トップレベルエピック](https://gitlab.com/groups/gitlab-org/quality/-/epics/113) が使われます。
+毎週木曜日、DevEx シニア EM と DevEx EM の 1 名 (またはその代理を務めるメンバー) が、進行中のプロジェクトを通して説明する DevEx Grand Review を録画します。目標はセクション全体でのプロジェクトの可視性を向上させることです。これらのプロジェクトを特定するために [トップレベルエピック](https://gitlab.com/groups/gitlab-org/quality/-/epics/113) が使われます。
 
 木曜日の 17:00 UTC までに、DevEx EM はエピックステータス更新を使って [金曜日の Platforms Grand Review 用ドラフト更新 - 社内リンク](https://docs.google.com/document/d/1gnoXNSpMXPfDqOyKRfIUHfNHUmSu88x8vjIeDOv73dE/edit?usp=sharing) を作成します。DevEx の更新は [金曜日の Grand Review 録画前の社内 Issue](https://gitlab.com/groups/gitlab-com/-/epics/2115) で確定されます。
 

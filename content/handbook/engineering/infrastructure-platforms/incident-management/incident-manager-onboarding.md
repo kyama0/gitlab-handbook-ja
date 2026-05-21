@@ -200,15 +200,15 @@ Workday で OOO イベントを作成し、**On-Call Time in Lieu** を選択し
 
 マネージャー自身もインシデントマネージャーとして活動している場合は、同様の行動をモデリングすることが部下をサポートすることと同様に重要です。
 
-### Google カレンダーから incident.io スケジュールを確認するには？
+### Google Calendar から incident.io スケジュールを確認するには？
 
 1. incident.io の [Incident Manager - GitLab.com SaaS](https://app.incident.io/gitlab/on-call/schedules/01K77XZFD7X7E3W8T6GDVMKAFF) スケジュールの *webcal フィード*を見つけます。右上の `...` メニューで確認できます。また、「Sync calendar」ボタンで[オンコールスケジュールページ](https://app.incident.io/gitlab/on-call/schedules)から自分の incident.io シフトにリンクすることもできます。
-2. Google カレンダーで **Other Calendars** ドロップダウンからカレンダーを追加し、`from url` を選択して `webcal://...` URL をコピーしてください。webcal リンクを貼り付けます。
+2. Google Calendar で **Other Calendars** ドロップダウンからカレンダーを追加し、`from url` を選択して `webcal://...` URL をコピーしてください。webcal リンクを貼り付けます。
 3. 各インシデントマネージャーオンコールシフトがこの読み取り専用カレンダービューでイベントとして表示されます。カレンダーをわかりやすい名前（`webcal://...` ではなく）に変更してください（例：IMOC Shifts、My On-Call Shifts など）。
 
-incident.io の IMOC スケジュールを Google カレンダーに追加する利点：
+incident.io の IMOC スケジュールを Google Calendar に追加する利点：
 
-- Google カレンダーで自分や他の人のシフトを検索できます。
+- Google Calendar で自分や他の人のシフトを検索できます。
 - このカレンダーからイベントを自分のカレンダーに複製して時間をブロックし、それに応じてリマインダーを設定できます。
 
 ### オンコールにスケジュールされたときの通知方法は？

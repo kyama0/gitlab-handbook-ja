@@ -1,6 +1,6 @@
 ---
 title: "バイパスポリシー"
-description: "このポリシーは GitLab.com のレート制限に関するものです。セルフマネージドおよび Dedicated については管理者にお問い合わせください。"
+description: "このポリシーは GitLab.com のレート制限に関するものです。Self-Managed および Dedicated については管理者にお問い合わせください。"
 upstream_path: /handbook/engineering/infrastructure-platforms/rate-limiting/bypass-policy/
 upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
 translated_at: "2026-04-29T03:12:43Z"

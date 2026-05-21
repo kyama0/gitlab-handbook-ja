@@ -152,7 +152,7 @@ RFH を開くには、[ヘルプの入手方法](/handbook/support/workflows/how
 
 ## 主要プロジェクト
 
-[omnibus-gitlab](https://gitlab.com/gitlab-org/omnibus-gitlab) - このプロジェクトはクラウド環境とオンプレミスホスティングでのセルフマネージド消費のために、プラットフォーム固有の自己完結型 GitLab パッケージとイメージを作成します。
+[omnibus-gitlab](https://gitlab.com/gitlab-org/omnibus-gitlab) - このプロジェクトはクラウド環境とオンプレミスホスティングでの Self-Managed 消費のために、プラットフォーム固有の自己完結型 GitLab パッケージとイメージを作成します。
 
 [Cloud Native GitLab](https://gitlab.com/gitlab-org/build/CNG) は GitLab をデプロイするためのクラウドネイティブコンテナを提供します。これらのコンテナは Kubernetes、OpenShift、および Kubernetes 互換のコンテナプラットフォーム上で [GitLab Charts](https://gitlab.com/gitlab-org/charts/gitlab) または [GitLab Operator](https://gitlab.com/gitlab-org/cloud-native/gitlab-operator) を使用して Helm でデプロイ・管理できます。
 
