@@ -2402,11 +2402,11 @@
     },
     "content/handbook/company/working-groups/next-architecture-workflow.md": {
       "path": "content/handbook/company/working-groups/next-architecture-workflow.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "a54b69f8292908345d687eca5d3fbf107d7b44a1a23839c1bd13cbf7cd7d4ad8",
-      "upstream_committed_at": "2026-02-06T19:27:57-05:00"
+      "upstream_sha": "440fbdbea018814f9317e3b1520eff5dda4ecb20",
+      "translated_at": "2026-05-21T21:07:52Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0bf6c33a554c5b619192543513dc4016dd8eaca3eec1d3cfee87779ec7dde88a",
+      "upstream_committed_at": "2026-05-20T09:32:02-07:00"
     },
     "content/handbook/company/working-groups/object-storage.md": {
       "path": "content/handbook/company/working-groups/object-storage.md",
@@ -4130,11 +4130,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab3.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab3.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T04:33:12Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "8d75eb6b39c107c4c2e30a477e6d1f867d3ae4098f83fb477ad380401679af4c",
-      "upstream_committed_at": "2026-04-06T16:04:29-04:00"
+      "upstream_sha": "440fbdbea018814f9317e3b1520eff5dda4ecb20",
+      "translated_at": "2026-05-21T21:07:52Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bf776f839339d1a81e3bd409182ec1a52e0a9aa4c1b0afff8810a76e4d630eea",
+      "upstream_committed_at": "2026-05-20T13:54:32+01:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab4.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab4.md",
@@ -6010,11 +6010,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md",
-      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
-      "translated_at": "2026-04-30T00:00:00Z",
+      "upstream_sha": "440fbdbea018814f9317e3b1520eff5dda4ecb20",
+      "translated_at": "2026-05-21T21:07:52Z",
       "model": "claude-opus-4-7",
-      "input_hash": "817212a9f9c75abc82eb4b146f70716910b4bf925780a4113a6995cfac60696a",
-      "upstream_committed_at": "2026-05-01T10:47:15+02:00"
+      "input_hash": "db985b6e54c59a0da38a1a4dc6228071f143fce0bdd2a32b1e8374fbfeecc756",
+      "upstream_committed_at": "2026-05-19T11:55:14+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/006_technology_stack.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/006_technology_stack.md",
@@ -32863,6 +32863,46 @@
       "model": "claude-opus-4-7",
       "input_hash": "0d880bbc477eb589890ad9c2d47e1d502347bd9bccce975ee8a45ac55d0c471b",
       "upstream_committed_at": "2026-05-20T13:21:20+01:00"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/classification.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/classification.md",
+      "upstream_sha": "440fbdbea018814f9317e3b1520eff5dda4ecb20",
+      "translated_at": "2026-05-21T21:07:52Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "17e47772292c62416324985ede095c94f1787bca2318913c385b0dfd22464aa9",
+      "upstream_committed_at": "2026-05-21T17:29:09+02:00"
+    },
+    "content/handbook/legal/testing-agreement-v5.md": {
+      "path": "content/handbook/legal/testing-agreement-v5.md",
+      "upstream_sha": "440fbdbea018814f9317e3b1520eff5dda4ecb20",
+      "translated_at": "2026-05-21T21:07:52Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "06f17d323714b609d20d4f97670e77c480d5d0b83af02a6c3fa87932d86f8f8e",
+      "upstream_committed_at": "2026-05-20T15:15:43-04:00"
+    },
+    "content/handbook/support/workflows/escalations-support_engineer.md": {
+      "path": "content/handbook/support/workflows/escalations-support_engineer.md",
+      "upstream_sha": "440fbdbea018814f9317e3b1520eff5dda4ecb20",
+      "translated_at": "2026-05-21T21:07:52Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "365a5b710f4d263930a8bb0fcb7eef91836f0a178f8b063317616a55136f7e0d",
+      "upstream_committed_at": "2026-05-20T16:17:05-03:00"
+    },
+    "content/handbook/legal/technology-partner-agreement-v1.md": {
+      "path": "content/handbook/legal/technology-partner-agreement-v1.md",
+      "upstream_sha": "440fbdbea018814f9317e3b1520eff5dda4ecb20",
+      "translated_at": "2026-05-21T21:07:52Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5fbd331d0bd118d1c7913d6e917c937c8f7e7c7c42951fb6d8b6ed4adb28d5db",
+      "upstream_committed_at": "2026-05-21T14:03:07-04:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/013_storage_backend_interaction.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/013_storage_backend_interaction.md",
+      "upstream_sha": "440fbdbea018814f9317e3b1520eff5dda4ecb20",
+      "translated_at": "2026-05-21T21:07:52Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "79e2a46468003fce22f9133f5b76d933ea8ec1f7975f01cc7f073a8e499ca7e8",
+      "upstream_committed_at": "2026-05-21T10:11:14+01:00"
     }
   }
 }

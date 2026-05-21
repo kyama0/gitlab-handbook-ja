@@ -3,7 +3,7 @@ title: "GitLab セキュリティプロジェクト分類"
 description: "GitLab がセキュリティワークフロー用にプロジェクトを分類するためにセキュリティ属性をどのように使用するか"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/application-security/classification/
 upstream_sha: 440fbdbea018814f9317e3b1520eff5dda4ecb20
-lastmod: 2026-05-21T17:29:09+02:00
+lastmod: "2026-05-21T17:29:09+02:00"
 translated_at: "2026-05-21T21:07:52Z"
 translator: claude
 stale: false
