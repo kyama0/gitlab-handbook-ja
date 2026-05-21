@@ -20,7 +20,7 @@ https://clients.amazonworkspaces.com/
 
 ## メンテナンスポリシー
 
-Workspaces は時々 unhealthy ステータスになることがあります。再起動することで解決する場合があります。それでも解決しない場合は、VDI を再構築します。
+Workspaces は時々「unhealthy」ステータス（異常状態）になることがあります。再起動することで解決する場合があります。それでも解決しない場合は、VDI を再構築します。
 
 ## AWS ドキュメント
 

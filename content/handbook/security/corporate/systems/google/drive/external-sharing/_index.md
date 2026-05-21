@@ -1,5 +1,5 @@
 ---
-title: Google ドキュメントとドライブの外部共有ガイド
+title: Google Docs and Drive の外部共有ガイド
 upstream_path: /handbook/security/corporate/systems/google/drive/external-sharing/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
 translated_at: "2026-05-10T00:00:00Z"

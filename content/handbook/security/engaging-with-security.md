@@ -116,7 +116,7 @@ https://handbook.gitlab.com/handbook/security/
   - Issue が顧客レポートの結果である場合は `~customer`
   - Issue が GitLab 運用に影響を与える場合は、チームメンバーが `~internal customer` を追加するべきです。
   - Issue が GitLab が必要とする依存関係の新バージョンへの更新に関連する場合は `~dependency update`
-  - Issue が機能フラグの背後にある機能のものである場合は `~featureflag::` スコープ付きラベル
+  - Issue がフィーチャーフラグの背後にある機能のものである場合は `~featureflag::` スコープ付きラベル
 - 一部の Issue には `~keep confidential` を割り当てるべきです。これらの Issue には次のものが含まれます。
   - プライベートリポジトリのコンテンツのような顧客固有データを含む Issue は `~keep confidential` を割り当てるべきです。可能であれば、GitLab チームメンバーのみがアクセスできるリソース（たとえば元の ZenDesk チケット）にリンクすることでこれを回避してください。リンクには明確化のため `(GitLab internal)` というラベルを付けてください。
   - より広範な取り組みに関連する情報や、より大きな問題を解決する情報を含むが、まだ開示できない Issue

@@ -22,7 +22,7 @@ lastmod: "2026-03-17T10:57:10-05:00"
 
 {{% alert title="注意" color="primary" %}}
 
-- このオプションはカスタマーサポートオペレーションまたはサポートチームに所属する人のみ利用できます
+- このオプションは Customer Support Operations またはサポートチームに所属する人のみ利用できます
 
 {{% /alert %}}
 
@@ -36,7 +36,7 @@ lastmod: "2026-03-17T10:57:10-05:00"
 {{% alert title="注意" color="primary" %}}
 
 - このオプションは以下に該当する人のみ利用できます:
-  - カスタマーサポートオペレーションチームに所属
+  - Customer Support Operations チームに所属
   - サポートチームに所属し、エージェントロール `Support Staff - CMOC` を持つ（Zendesk Global のみ）
 
 {{% /alert %}}
@@ -303,13 +303,13 @@ Zendesk にはクローズチケット内のいくつかの値を更新する機
 1. 変更したい設定を修正
 1. ページの右下にある `Save tab` をクリック
 
-## カスタマーサポートオペレーションのワークフロー
+## Customer Support Operations のワークフロー
 
 ### チケットの対応
 
 {{% alert title="注意" color="primary" %}}
 
-- これはカスタマーサポートオペレーションチームと、彼らがチケットをどう対応するかにのみ関わるものです。他のチームがチケットをどう対応するかを反映するものではありません。
+- これは Customer Support Operations チームと、同チームのチケット対応方法のみに関わるものです。他のチームがチケットをどう対応するかを反映するものではありません。
 
 {{% /alert %}}
 
@@ -400,7 +400,7 @@ Zendesk にはクローズチケット内のいくつかの値を更新する機
 
 徹底的な調査の結果、悪意があると判断された場合は、[ユーザーを BAN します](/handbook/security/customer-support-operations/zendesk/users/end-users#banning-an-end-user)。
 
-疑わしい場合は、自分のマネージャー、カスタマーサポートオペレーションフルスタックエンジニア、および/または GitLab セキュリティチームに問題をエスカレーションしてください。
+疑わしい場合は、自分のマネージャー、Customer Support Operations Fullstack Engineer、および/または GitLab セキュリティチームに問題をエスカレーションしてください。
 
 ## よくある問題とトラブルシューティング
 

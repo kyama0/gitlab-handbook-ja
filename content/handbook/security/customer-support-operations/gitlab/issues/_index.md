@@ -1,5 +1,5 @@
 ---
-title: 'Issue'
+title: 'Issues'
 description: 'Issue に関するドキュメント'
 date: 2026-01-13
 upstream_path: /handbook/security/customer-support-operations/gitlab/issues/
