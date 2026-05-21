@@ -26,7 +26,7 @@ lastmod: "2026-05-20T09:32:02-07:00"
 1. Product Marketing は[毎月の](/handbook/engineering/releases/)リリース日にピッチテンプレートを作成し、Highspot の `Company Pitch (Email) Templates Spot` にテンプレートを格納します。
 1. Product Marketing は最新のリリースブログ記事を Highspot の `Customer Outreach` スポットにアップロードし、その後そのコンテンツを[リリースページ](https://gitlab.highspot.com/items/64be9d6dc960ff31cd9041c6)とともにピッチテンプレートに追加します。
 1. Product Marketing はピッチテンプレートと最新のリリースブログ記事を、[GitLab Releases Overview ページ](https://gitlab.highspot.com/items/624626054e2472aa8611b5bf)の該当セクションに追加します。
-1. Product Marketing は、上記ステップが完了した時点で、リリース記事ハイライト issue でピッチテンプレートへのリンクを Field Communications に通知します。
+1. Product Marketing は、上記ステップが完了した時点で、リリース記事ハイライト Issue でピッチテンプレートへのリンクを Field Communications に通知します。
 1. Field Communications は #sales でピッチテンプレートを共有し、[Field Update Tickers](/handbook/sales/field-communications/field-update-tickers/) および [Field Flash](/handbook/sales/field-communications/field-flash-newsletter/) に追加します。
 
 ### 役立つリソース

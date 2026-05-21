@@ -39,17 +39,17 @@ Duo に試せるデモ質問の例:
 
 ## タスク B. GitLab Duo Agentic Chat を使う
 
-GitLab Duo Agentic chat は、issue の移動や、プロジェクト間でのマージリクエストの移動など、タスクを代行できます。試してみましょう。
+GitLab Duo Agentic chat は、Issue の移動や、プロジェクト間でのマージリクエストの移動など、タスクを代行できます。試してみましょう。
 
 1. Duo Chat が現在開いていない場合は、右上の **GitLab Duo Chat** ボタンをクリックします。
 
 1. 右下の **Agentic Chat** オプションをオンに切り替えて、Agentic chat を使用するようにします。
 
-1. issue を作成してみましょう。次のように入力します: `Create an issue in this project that describes in detail how a team can implement a new security feature to improve their systems.`
+1. Issue を作成してみましょう。次のように入力します: `Create an issue in this project that describes in detail how a team can implement a new security feature to improve their systems.`
 
 1. GitLab Agentic chat がワークフロー項目の承認を求めてきます。**Approve** をクリックしてアクションを続行します。
 
-1. アクションが完了すると、プロジェクトに issue が作成されたことが確認できます。Issues ページをリフレッシュして新しい issue を確認してください。
+1. アクションが完了すると、プロジェクトに Issue が作成されたことが確認できます。Issues ページをリフレッシュして新しい Issue を確認してください。
 
 1. Duo Chat ペインで、**Agentic Chat** オプションを再度オフに切り替えます。GitLab Duo のエージェント機能については、コースの後半で再度取り上げます。
 
