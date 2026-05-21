@@ -69,10 +69,10 @@ lastmod: "2025-07-07T23:50:04+00:00"
 1. [Support](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/boards/1319053)
 {{% /panel %}}
 
-## 技術スタックの変更
+## Tech Stack の変更
 
-技術スタックの新しい項目について、アクセスリクエストプロセスを開始する必要がある場合：
+Tech Stackの新しい項目について、アクセスリクエストプロセスを開始する必要がある場合：
 
-1. ツールが[技術スタック](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に追加されていることを確認します
+1. ツールが[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に追加されていることを確認します
 1. チームメンバーが `provisioner` `deprovisioner` として含まれていることを確認します
 1. 関連するハンドブックページにアクセスリクエストを送信する要件を文書化します
