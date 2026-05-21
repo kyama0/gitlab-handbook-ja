@@ -33,7 +33,7 @@ lastmod: "2024-08-06T06:02:18+00:00"
 | Keelan Lang        | Julie Martin   |
 | Sam Bernal-Damasco | Eric Rosenberg |
 
-メソッドについて質問がある場合は、元の参加者の誰にでも連絡して彼らの考えを聞いてください！
+メソッドについて質問がある場合は、元の参加者の誰にでも連絡してその方の考えを聞いてください！
 
 ## 責務 {#responsibilities}
 

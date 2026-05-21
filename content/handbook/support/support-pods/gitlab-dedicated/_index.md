@@ -16,7 +16,7 @@ lastmod: "2025-05-16T16:49:11-07:00"
 ## 現在の目標
 
 - チーム内の知識のギャップを発見し、トレーニング、リソース、プロセスを改善する
-- 他のメンバーがより速くトラブルシューティングを行えるよう、迅速な回答を可能にする
+- 他のメンバーがより速くトラブルシューティングを行えるよう、迅速に回答できるようにする
 - より多くのサポートエンジニアに Dedicated チケットへの関心を持ってもらう
 
 ## サポートポッドメンバー
@@ -67,7 +67,7 @@ GitLab Dedicated に関するあらゆる事柄に焦点を当てたこれらの
 [Support Week in Review](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review) と GitLab Dedicated サポートポッドの同期セッションは、最新情報を入手するのに最適な手段です。これらのサポート向けリソースに加えて、**GitLab Dedicated** に関する状況を把握するために、以下の情報源も検討してください:
 
 - [GitLab Dedicated Issue Tracker](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/issues/?sort=created_date&state=opened&first_page_size=100)
-- [GitLab Dedicated team sync](https://docs.google.com/document/d/1rxbSQAiUsTjJrCc6HwHPWK11lSMHMaDki9QGGyQoa4g/edit#heading=h.26hld95ocrkv) の Google ドキュメント
+- [GitLab Dedicated team sync](https://docs.google.com/document/d/1rxbSQAiUsTjJrCc6HwHPWK11lSMHMaDki9QGGyQoa4g/edit#heading=h.26hld95ocrkv) の Google Docs
 - Slack チャネル
   - [#g_dedicated-team](https://gitlab.slack.com/archives/C025LECQY0M)
   - [#g_dedicated-switchboard-team](https://gitlab.slack.com/archives/C04DG7DR1LG)

@@ -63,8 +63,8 @@ lastmod: "2026-03-06T16:34:01-08:00"
 以下のいずれかを行うこともできます:
 
 - あなたのチケットの分野をカバーする [サポート Pod](/handbook/support/workflows/working-with-pods/) があるかどうかを確認し、Pod のメンバーの 1 人にヘルプを求めます。
-- サポート内のエキスパートに尋ねます。スキルを持つ可能性のある人を確認するには、[Skills by Subject](https://gitlab-com.gitlab.io/support/team-pages/skills-by-subject.html) サポートページを確認するか、適切な製品分野の [サポート Stable Counterpart](/handbook/support/support-stable-counterparts/) に連絡します。スレッドおよびチケットでそれらの人をメンションして、彼らが助けになると考えていることを伝えます。
-- 簡単で具体的な質問で、すぐに答えられそうな場合は、開発チームの Slack チャンネルで直接連絡を取ります。専門知識が問題をより効率的に解決するのに役立つ可能性がある場合、開発チームに早期に関与してもらうことをためらわないでください。彼らの時間を尊重しましょう - あなたの質問により詳細な情報や調査が必要な場合、開発チームから正式な [ヘルプリクエスト Issue](#how-to-formally-request-help-from-the-gitlab-development-team) を起票するように案内されることがあります。
+- サポート内のエキスパートに尋ねます。スキルを持つ可能性のある人を確認するには、[Skills by Subject](https://gitlab-com.gitlab.io/support/team-pages/skills-by-subject.html) サポートページを確認するか、適切な製品分野の [サポート Stable Counterpart](/handbook/support/support-stable-counterparts/) に連絡します。スレッドおよびチケットでそれらの人をメンションして、その方が助けになると考えていることを伝えます。
+- 簡単で具体的な質問で、すぐに答えられそうな場合は、開発チームの Slack チャンネルで直接連絡を取ります。専門知識が問題をより効率的に解決するのに役立つ可能性がある場合、開発チームに早期に関与してもらうことをためらわないでください。相手の時間を尊重しましょう - あなたの質問により詳細な情報や調査が必要な場合、開発チームから正式な [ヘルプリクエスト Issue](#how-to-formally-request-help-from-the-gitlab-development-team) を起票するように案内されることがあります。
 - [関連する GitLab 開発チームにヘルプをリクエスト](#how-to-formally-request-help-from-the-gitlab-development-team)します。
   手元にある情報を集め、Issue で開発チームのためにできるだけ多くの詳細を記入します。注目を集めるために、関連するグループの Slack チャンネルにメッセージと Issue へのリンクを投稿することができます。
   SLO 内に応答が得られない場合は、プロジェクト readme に記載されているエンジニアリングマネージャーに連絡してください。
@@ -75,7 +75,7 @@ lastmod: "2026-03-06T16:34:01-08:00"
 
 特に、チケットで行き詰まりを感じ、次のステップを特定するための支援が必要な場合:
 
-1. いつでも、利用可能なマネージャー（あなたのマネージャー、または `#support_leadership` チャンネルの[オンコール中のサポートマネージャー](/handbook/support/workflows/support_manager-on-call) など）に気軽に連絡してください。彼らは次のステップを決定するのを助けてくれます。
+1. いつでも、利用可能なマネージャー（あなたのマネージャー、または `#support_leadership` チャンネルの[オンコール中のサポートマネージャー](/handbook/support/workflows/support_manager-on-call) など）に気軽に連絡してください。マネージャーは次のステップを決定するのを助けてくれます。
    - `#support_leadership` で対応の DRI が特定されていないメッセージは見逃されたり、傍観者効果の犠牲になったりする可能性があるため、避けてください。
 1. 以下のような状況で緊急かつ重要な場合は、[STAR を起票](/handbook/support/internal-support/support-ticket-attention-requests#submitting-a-support-ticket-attention-request-star--starring-a-ticket)します:
    - 顧客がチケットを通じて、私たちが提供しているサービスへの不満を表明した

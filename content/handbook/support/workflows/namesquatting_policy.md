@@ -37,7 +37,7 @@ lastmod: "2026-02-05T23:38:57+11:00"
 1. [`Support::SaaS::Gitlab.com::Name Squatting Policy::Contact Namespace Owner`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Namesquatting%20Policy/Contact%20Namespace%20Owner.md) マクロを適用し、チケットを **On-hold** とマークします。
 1. **ネームスペース要求者のチケット**へのリンクを内部コメントとして残します。
 
-グループに複数のオーナーが含まれている場合、1つのチケットにつき 1人のオーナーに連絡してください。複数いる場合は 3人までに制限してください（`https://gitlab.com/groups/<group_name>/-/group_members` ページで *Last activity* が最も新しいオーナーや、namesquatting リクエスト時にまだオーナーである場合に *Source* として記載されているオーナーを選ぶことができます）。
+グループに複数のオーナーが含まれている場合、1 つのチケットにつき 1 人のオーナーに連絡してください。複数いる場合は 3 人までに制限してください（`https://gitlab.com/groups/<group_name>/-/group_members` ページで *Last activity* が最も新しいオーナーや、namesquatting リクエスト時にまだオーナーである場合に *Source* として記載されているオーナーを選ぶことができます）。
 
 要求者のチケット:
 
@@ -64,9 +64,9 @@ lastmod: "2026-02-05T23:38:57+11:00"
 
 #### ネームスペースのオーナーが応答しない場合
 
-1週間後に応答がない場合は、[`Support::SaaS::Gitlab.com::Name Squatting Policy::Contact Namespace Owner`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Namesquatting%20Policy/Contact%20Namespace%20Owner.md) マクロを 2回目に適用し（マクロ内の `within 2 weeks` を期日に置き換える。例: `**before the 25th of March**`）、チケットを **On-hold** とマークします。
+1 週間後に応答がない場合は、[`Support::SaaS::Gitlab.com::Name Squatting Policy::Contact Namespace Owner`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Namesquatting%20Policy/Contact%20Namespace%20Owner.md) マクロを 2 回目に適用し（マクロ内の `within 2 weeks` を期日に置き換える。例: `**before the 25th of March**`）、チケットを **On-hold** とマークします。
 
-2週間後、チケットは**自動的に open とマークされ、担当エンジニアにメールが送信されます**。
+2 週間後、チケットは**自動的に open とマークされ、担当エンジニアにメールが送信されます**。
 
 ネームスペースのオーナーが応答しなかった場合は、[リクエスト成功](#request-successful)の手順に従います。
 
@@ -103,7 +103,7 @@ Zendesk で:
 
 1. **アカウント内のデータとは何を指すか?**
 
-   グループ、プロジェクトなどはデータを意味します。ただし、プロジェクトまたはグループが空であるか、2年以上アクティビティがない場合を除きます。
+   グループ、プロジェクトなどはデータを意味します。ただし、プロジェクトまたはグループが空であるか、2 年以上アクティビティがない場合を除きます。
 
 1. **ネームスペースのスクワッティングは許可されているか?**
 

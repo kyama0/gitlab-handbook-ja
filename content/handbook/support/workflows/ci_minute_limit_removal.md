@@ -12,9 +12,9 @@ lastmod: "2025-11-04T16:37:33+01:00"
 
 ## 概要
 
-GitLabが所有するグループやGitLabの従業員のグループでは、運用上の理由やその他の理由で、CIパイプライン分単位制限を解除する必要が生じる場合があります。
+GitLab が所有するグループやGitLab の従業員のグループでは、運用上の理由やその他の理由で、CIパイプライン分単位制限を解除する必要が生じる場合があります。
 リクエストが緊急である場合は、Issueリンクとともに [#support_team-chat](https://gitlab.enterprise.slack.com/archives/CCBJYEWAW) のメンバーに通知し、
-かつ現在のオンコールマネージャー（Slackで `@support-manager-oncall`）にメンションすることもできます。
+かつ現在のオンコールマネージャー（Slack で `@support-manager-oncall`）にメンションすることもできます。
 
 ### 制限解除のリクエスト
 

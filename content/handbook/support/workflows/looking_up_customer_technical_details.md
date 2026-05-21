@@ -62,11 +62,11 @@ Architecture Diagrams アプリは、顧客が Salesforce に [Customer Collabor
 
 ### GitLab.com 内 {#within-gitlabcom}
 
-顧客の技術詳細を確認できるもう 1つの場所は、GitLab.com 上の
+顧客の技術詳細を確認できるもう 1 つの場所は、GitLab.com 上の
 [Account Management グループ](https://gitlab.com/gitlab-com/account-management)です。
 顧客名で親グループ内を検索すれば、[Customer Collaboration Project](/handbook/customer-success/csm/customer-collaboration-project/)を
 見つけられるはずです。すべてではありませんが、ほとんどの Premium および Ultimate 顧客には
-1つ存在しているはずです。
+1 つ存在しているはずです。
 
 これらのプロジェクトはおそらくエンドカスタマーとも共有されているため、これらのプロジェクトでの
 更新は、上記で言及した Zendesk 内の[組織ノート](#internal-comment-with-organization-notes)とは異なり、

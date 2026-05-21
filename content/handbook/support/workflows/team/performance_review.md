@@ -32,7 +32,7 @@ lastmod: "2024-07-09T00:48:53+00:00"
 
 ## パフォーマンス要素の説明
 
-このセクションを変更する際は、対応する Google スプレッドシートの「performance factor worksheet」タブ内の対応するエントリも変更するようにしてください。
+このセクションを変更する際は、対応する Google Sheets の「performance factor worksheet」タブ内の対応するエントリも変更するようにしてください。
 
 ### Support Engineering Manager
 

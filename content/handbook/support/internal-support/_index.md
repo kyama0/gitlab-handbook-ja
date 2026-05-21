@@ -372,16 +372,16 @@ Hacker One レポーター用のライセンス生成をリクエストするた
 
 ### チケットをエスカレートしたい {#i-want-to-escalate-a-ticket}
 
-「*エスカレーション*」という用語を [MECEFU](/handbook/communication/#mecefu-terms) に保つため、サポートは「**サポートチケット注意リクエスト**」（STAR）という用語を使用して、[アカウントエスカレーション](/handbook/customer-success/csm/escalations/) と区別します。「Escalation」は「Emergency」または「Incident」と混同される可能性もあります。
+「*エスカレーション*」という用語を [MECEFU](/handbook/communication/#mecefu-terms) に保つため、サポートは「**サポートチケット注目リクエスト**」（STAR）という用語を使用して、[アカウントエスカレーション](/handbook/customer-success/csm/escalations/) と区別します。「Escalation」は「Emergency」または「Incident」と混同される可能性もあります。
 
-[GitLab グローバルサポート時間](https://about.gitlab.com/support/#definitions-of-gitlab-global-support-hours) 中にのみ、以下のいずれかが該当する場合は **サポートチケット注意リクエスト** を開いてください。
+[GitLab グローバルサポート時間](https://about.gitlab.com/support/#definitions-of-gitlab-global-support-hours) 中にのみ、以下のいずれかが該当する場合は **サポートチケット注目リクエスト** を開いてください。
 
 - チケットの進捗が停滞しており、より多くのサポートエンジニアリングの労力が必要
 - チケットの優先度が変更された（Low -> High）
 - 顧客の高いレベルの不満に対処するため、チケットに即時の介入が必要
 - 状況に構造と焦点をもたらすためにサポートマネジメントの監督が必要
 
-[サポートチケット注意リクエストの詳細](/handbook/support/internal-support/support-ticket-attention-requests)
+[サポートチケット注目リクエストの詳細](/handbook/support/internal-support/support-ticket-attention-requests)
 
 以下の場合は **[アカウントエスカレーション](/handbook/customer-success/csm/escalations/)** を開いてください。
 

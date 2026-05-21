@@ -83,7 +83,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
 
 #### 採用計画
 
-採用計画の DRI は VP of Customer Support です。彼らは人員数がリージョンに割り当てられ、おおよその採用日が決まることを保証します。
+採用計画の DRI は VP of Customer Support です。VP of Customer Support は人員数がリージョンに割り当てられ、おおよその採用日が決まることを保証します。
 
 #### 空席
 

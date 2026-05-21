@@ -64,7 +64,7 @@ FY23-Q1 に、私たちは[GitLab P2M スタイルのデモの録画の保守の
 デモによく使用される、Google Drive に保存されているいくつかのスライドデッキがあります。自分のニーズに合わせてカスタマイズするためにこれらのコピーを自由に作成してください。
 
 - [All the Things](https://docs.google.com/presentation/d/1AG6eDm8USqU7TG12Sp4UEc9B3P03pniQnVHZAGzyDAg/edit?usp=sharing) - すべての GitLab 機能と価値提案に関する包括的なスライドセットを含みます
-- [General Demo.pptx](https://drive.google.com/file/d/17SoRPxPCswT_FublXCsi3rm3TBnHAYI-/view?usp=sharing) - Cherry Han が作成・保守する製品ウォークスルーデッキ。ヒント: デッキのコピーを作成し、Google スライドで開いて自分の目的に合わせて編集できます。
+- [General Demo.pptx](https://drive.google.com/file/d/17SoRPxPCswT_FublXCsi3rm3TBnHAYI-/view?usp=sharing) - Cherry Han が作成・保守する製品ウォークスルーデッキ。ヒント: デッキのコピーを作成し、Google Slides で開いて自分の目的に合わせて編集できます。
 - Demo Prep
 
 <details><summary>こちらは、デモ提供前に Demo2Win 戦略を活用するために実施／検討すべきステップの詳細を示す Demo Preparation Roadmap です。</summary>

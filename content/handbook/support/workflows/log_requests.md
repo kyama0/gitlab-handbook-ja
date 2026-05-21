@@ -14,7 +14,7 @@ lastmod: "2026-03-30T11:16:15+00:00"
 ## GitLab.com のログリクエスト
 
 > 📝 **注:**
-> 2026年4月時点で、Security ログリクエストプロセスが変更されました。Customer Support は[このプロセス](https://internal.gitlab.com/handbook/support/workflows/security-logs-runbook/)を使用してログリクエストに直接対応できるようになりました。
+> 2026 年4 月時点で、Security ログリクエストプロセスが変更されました。Customer Support は[このプロセス](https://internal.gitlab.com/handbook/support/workflows/security-logs-runbook/)を使用してログリクエストに直接対応できるようになりました。
 
 ユーザーは多くの場合、[IP ブロック](/handbook/support/workflows/ip-blocks)、セキュリティ問題の可能性、または社内監査の目的で、GitLab.com のログへのアクセスを求めてきます。
 
@@ -24,7 +24,7 @@ ZenDesk には標準応答が[`Support::SaaS::Gitlab.com::Audit logs access requ
 
 必要であれば、[エスカレーションプロセス](/handbook/support/internal-support/support-ticket-attention-requests)に従ってチケット/Issue をエスカレーションできます。
 
-直近30日以内のリクエストのログを取得するヒントについては、[Kibana ワークフロー](/handbook/support/workflows/kibana/)ページの利用を検討してください。サマリーを超えるログリクエスト（以下の例のようなもの）や、Kibana ですぐに取得できないログについては、[顧客側のセキュリティインシデント中に GitLab.com 顧客への支援を提供する](/handbook/security/customer-requests/)ためのハンドブックページに記載されたプロセスに従って処理してください。GitLab の Security Incident Response Team は、複雑で広範なリクエストを、顧客対応オペレーションのための社内[ランブック](https://internal.gitlab.com/handbook/security/cross_functional_runbooks/customer_security_incidents/)に従って処理します。
+直近30 日以内のリクエストのログを取得するヒントについては、[Kibana ワークフロー](/handbook/support/workflows/kibana/)ページの利用を検討してください。サマリーを超えるログリクエスト（以下の例のようなもの）や、Kibana ですぐに取得できないログについては、[顧客側のセキュリティインシデント中に GitLab.com 顧客への支援を提供する](/handbook/security/customer-requests/)ためのハンドブックページに記載されたプロセスに従って処理してください。GitLab の Security Incident Response Team は、複雑で広範なリクエストを、顧客対応オペレーションのための社内[ランブック](https://internal.gitlab.com/handbook/security/cross_functional_runbooks/customer_security_incidents/)に従って処理します。
 
 顧客がセキュリティインシデントに関連してログの緊急リクエストを行った場合、まず、追加の意図しないアクセスを防ぐため、影響を受ける可能性のあるトークンとパスワードを顧客が失効または変更したことを確認してください。ほとんどのケースでは、緊急チケットは高優先度に格下げされ、[顧客側のセキュリティインシデント中に GitLab.com 顧客への支援を提供する](/handbook/security/customer-requests/)プロセスで対応されるべきです。顧客がより緊急の対応を要求する場合は、[オンコール中の Support Manager](/handbook/support/on-call/#engaging-the-on-call-manager) と確認してください。
 
@@ -88,14 +88,14 @@ Slack の #support_leadership にエスカレーションし、`@support-manager
 
 [ログリクエスト](/handbook/security/customer-requests/)などのために Security Incident Response Team (SIRT) が引き出した[個人データ](/handbook/support/workflows/personal_data_access_account_deletion/)情報は、以下のガイドラインに沿って圧縮しパスワード保護した状態でリクエスト者に届ける必要があります。
 
-- パスワードは、数字、小文字、大文字を含む 10文字以上のランダムな文字列にする必要があります。
+- パスワードは、数字、小文字、大文字を含む 10 文字以上のランダムな文字列にする必要があります。
 - パスワード保護されたファイルは ZenDesk チケットに添付してください。
   - `zip -er [TicketNumber].zip filename` コマンドまたは他の暗号化ツールを使用してファイルを暗号化します。
   - 1Password を使用して暗号化用のランダムなセキュアパスワードを生成します。
   - パスワードは 1Password に `[ticket number].zip` として保存します。
   - [1Password の Share Items 機能](https://support.1password.com/share-items/)を使用して、顧客にパスワードを共有します。共有するパスワードアイテムに顧客のメールアドレスを追加します。
-  - 共有期間を 7日間に設定します。
-  - 共有されたパスワードは 7日間で期限切れになるため、今後アクセスが必要な場合はローカルに記録する必要があることを顧客に伝えます。
+  - 共有期間を 7 日間に設定します。
+  - 共有されたパスワードは 7 日間で期限切れになるため、今後アクセスが必要な場合はローカルに記録する必要があることを顧客に伝えます。
   - 共有パスワードアイテムへのリンクは、自分のメールアカウントから直接、顧客のメールアドレスに別途送信します。
 - 顧客がファイルを正常に受信し開封したら、引き出したデータをコンピュータから、パスワードを 1Password から削除する必要があります。
 ログファイルが大きすぎて ZenDesk のチケットに添付できない場合は、[GitLab サポートに大きなファイルを提供する](https://about.gitlab.com/support/providing-large-files/)ページを参照してください。
@@ -110,7 +110,7 @@ Slack の #support_leadership にエスカレーションし、`@support-manager
 
 プロジェクトの可視性設定を誤って設定してしまった顧客が、社外の誰かが自社のプロジェクトにアクセスしたかどうかを知りたいと考えました。応答の修正された抜粋は以下のとおりです。
 
-> 会社のメールドメインを持つユーザーを除いて、2人のユーザーが 2019-08-15 の 20:06 から 20:10 UTC の間にメインプロジェクトページを合計 4回閲覧しました。ただし、4回すべてのインスタンスが、貴社のオフィスとして提供された IP アドレスのいずれかから発信されたことを確認できます。
+> 会社のメールドメインを持つユーザーを除いて、2 人のユーザーが 2019-08-15 の 20:06 から 20:10 UTC の間にメインプロジェクトページを合計 4 回閲覧しました。ただし、4 回すべてのインスタンスが、貴社のオフィスとして提供された IP アドレスのいずれかから発信されたことを確認できます。
 
 チケット: [129594](https://gitlab.zendesk.com/agent/tickets/129594)
 
@@ -128,7 +128,7 @@ Slack の #support_leadership にエスカレーションし、`@support-manager
 
 GitLab は、本番チームが懸念を抱いていたプロジェクトのオーナーに連絡し、Support に連絡を取るよう依頼しました。ユーザーはリクエストがどこから発信されているかを知りたがっていました。
 
-> ログには 3つの異なる IP が表示されており、そのうち 2つは CountryA、1つは CountryB を拠点としています（これらの位置情報は地理位置 Web 検索のみに基づいているため、正確でない場合があります）。また、すべて同じ User Agent を持っています。
+> ログには 3 つの異なる IP が表示されており、そのうち 2 つは CountryA、1 つは CountryB を拠点としています（これらの位置情報は地理位置 Web 検索のみに基づいているため、正確でない場合があります）。また、すべて同じ User Agent を持っています。
 
 例チケット: [130153](https://gitlab.zendesk.com/agent/tickets/130153)
 

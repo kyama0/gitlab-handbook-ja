@@ -20,7 +20,7 @@ lastmod: "2026-01-21T12:28:59-06:00"
 
 ## 米国市民にのみ許可されたアクセス {#access-limited-to-us-citizens}
 
-[US Government Zendesk Instance](/handbook/security/customer-support-operations/zendesk/#zendesk-us-government) には米国市民権を持つサポートエンジニアのみがアクセスできます。米国市民であってアクセスして貢献したい場合は、[Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) を起票し、[ライトエージェント](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) または [フルエージェント](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)（Support / Security チームメンバーに限定）のいずれかを申請できます。
+[US Government Zendesk Instance](/handbook/security/customer-support-operations/zendesk/#zendesk-us-government) には米国市民権を持つサポートエンジニアのみがアクセスできます。米国市民であってアクセスして貢献したい場合は、[Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) を起票し、[Light エージェント](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) または [フルエージェント](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)（Support / Security チームメンバーに限定）のいずれかを申請できます。
 
 ## コミュニケーションガイドライン {#communication-guidelines}
 
@@ -104,7 +104,7 @@ Salesforce や Zendesk のようなアクセス制御されたシステム内の
 
 ## アクセスの確認
 
-GitLab 内の他のメンバーとケースや Issue について議論する際、その人がチャット、画面共有、または通話を介して機密情報や慎重情報を受け取ることが許可されている [アクセス要件](#access-limited-to-us-citizens) を満たしているかを確認するのは難しい場合があります。唯一の信頼できる情報源は、その人が米国政府向け Zendesk アカウント（フルエージェントまたはライトエージェント）を持っているかどうかです。アクセス権を持つメンバーは、people-ops によってこの情報へのアクセスが許可されていることが確認されています。Support-Ops チームは、ある人が米国政府向け Zendesk へのアクセス権を持っているかをチームメンバーが確認できる便利なツールを構築しました。このツールは GitLab チームメンバーから [このリンク](https://gitlab-com.gitlab.io/support/support-ops/zendesk-us-federal-project/) 経由でアクセスできます。データは毎週日曜 00:00 UTC に更新されることに注意してください。それより最近追加されたメンバーの確認が必要な場合は、米国政府向けサポートマネージャーまたは Support-Ops マネージャーに検証を依頼できます。このツールでその人の名前が見つからない場合、そのユーザーはインスタンスへのアクセス資格がないと判断し、対応の手順については [コミュニケーションガイドライン](#communication-guidelines) を参照してください。
+GitLab 内の他のメンバーとケースや Issue について議論する際、その人がチャット、画面共有、または通話を介して機密情報や慎重情報を受け取ることが許可されている [アクセス要件](#access-limited-to-us-citizens) を満たしているかを確認するのは難しい場合があります。唯一の信頼できる情報源は、その人が米国政府向け Zendesk アカウント（フルエージェントまたはLight エージェント）を持っているかどうかです。アクセス権を持つメンバーは、people-ops によってこの情報へのアクセスが許可されていることが確認されています。Support-Ops チームは、ある人が米国政府向け Zendesk へのアクセス権を持っているかをチームメンバーが確認できる便利なツールを構築しました。このツールは GitLab チームメンバーから [このリンク](https://gitlab-com.gitlab.io/support/support-ops/zendesk-us-federal-project/) 経由でアクセスできます。データは毎週日曜 00:00 UTC に更新されることに注意してください。それより最近追加されたメンバーの確認が必要な場合は、米国政府向けサポートマネージャーまたは Support-Ops マネージャーに検証を依頼できます。このツールでその人の名前が見つからない場合、そのユーザーはインスタンスへのアクセス資格がないと判断し、対応の手順については [コミュニケーションガイドライン](#communication-guidelines) を参照してください。
 
 ## 米国政府向けサポート ディスカバリーコール
 

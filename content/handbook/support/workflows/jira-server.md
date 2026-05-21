@@ -303,7 +303,7 @@ NOTE:
 
 1. ドキュメントに記載されている一般的な既知のエラーをご確認ください: [Jira - Troubleshooting](https://docs.gitlab.com/integration/jira/troubleshooting/) と [Troubleshooting your DVCS connection](https://docs.gitlab.com/integration/jira/dvcs/troubleshooting/)
 1. お客様がどの連携について言及しているかを明確にしてください。GitLab Jira Integration と Jira Development Panel integration があります。
-1. 彼らの Jira バージョンを取得することも役立ちます。特に: Cloud か Server か？Server ならどのバージョン？（Note: 8.14 以降は [リンク方法が異なります](https://confluence.atlassian.com/adminjiraserver/linking-gitlab-accounts-1027142272.html)）
+1. お客様の Jira バージョンを取得することも役立ちます。特に: Cloud か Server か？Server ならどのバージョン？（Note: 8.14 以降は [リンク方法が異なります](https://confluence.atlassian.com/adminjiraserver/linking-gitlab-accounts-1027142272.html)）
 1. 設定を確認し、手順を確認します。
    **NOTE**:
    一部のお客様は 2 つの連携の設定を混同しており、例えば GitLab Jira Integration で作成された `jira` ユーザーを Jira Development Panel 用の DVCS アカウントのセットアップ用 Term/Account として使用している場合があります。これは通常 0 リポジトリしか持たない `jira` ユーザーの個人 Namespace のリポジトリをロードします。

@@ -104,11 +104,11 @@ Grafana の取り扱いは [移動されました](/handbook/support/workflows/d
 
 Switchboard アプリを使用してください。詳細は [Switchboard ワークフロー](/handbook/support/workflows/dedicated_switchboard/) で確認できます。
 
-#### 機能フラグはサポートされていません
+#### フィーチャーフラグはサポートされていません
 
-GitLab Dedicated では、[機能フラグ](https://docs.gitlab.com/subscriptions/gitlab_dedicated/#available-features) はサポートされていません。つまり、Dedicated インスタンスでは機能フラグを有効化／無効化することはできません。顧客が GitLab Rails コンソールでの機能フラグの変更を要求した場合、GitLab サポートチームは以下を行う必要があります:
+GitLab Dedicated では、[フィーチャーフラグ](https://docs.gitlab.com/subscriptions/gitlab_dedicated/#available-features) はサポートされていません。つまり、Dedicated インスタンスではフィーチャーフラグを有効化／無効化することはできません。顧客が GitLab Rails コンソールでのフィーチャーフラグの変更を要求した場合、GitLab サポートチームは以下を行う必要があります:
 
-- 機能を一般的に利用可能にする (機能フラグなしで) ことについて、適切な Issue トラッカーで Issue を作成または見つける。
+- 機能を一般的に利用可能にする (フィーチャーフラグなしで) ことについて、適切な Issue トラッカーで Issue を作成または見つける。
 - [フィードバックテンプレート](/handbook/product/product-management/#feedback-template) に従ったコメントで、Issue で [適切なプロダクトマネージャー](/handbook/product/categories/) に通知する。
 - 根本的な問題が解決していない場合でも、[私たちはチケットをオープンのままにしません](https://about.gitlab.com/support/general-policies/#we-dont-keep-tickets-open-even-if-the-underlying-issue-isnt-resolved) ことを顧客に通知する。
 - 顧客が次のステップに関して質問がないか確認する。

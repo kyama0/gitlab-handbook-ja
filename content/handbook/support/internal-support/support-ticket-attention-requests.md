@@ -67,7 +67,7 @@ lastmod: "2025-12-15T11:32:24-06:00"
       - サポートエンジニアがチケット内で尋ねた未回答の質問。
       - [サポート資格の証明](https://about.gitlab.com/support/managing-support-contacts/#proving-support-entitlement)
 
-**注:** Zendesk アカウントなしには内部リクエストフォームを使用できません。Zendesk へのアクセスがない場合は、[ライトエージェントアカウントをリクエスト](/handbook/support/internal-support/#requesting-a-zendesk-light-agent-account) して取得してください。
+**注:** Zendesk アカウントなしには内部リクエストフォームを使用できません。Zendesk へのアクセスがない場合は、[Light エージェントアカウントをリクエスト](/handbook/support/internal-support/#requesting-a-zendesk-light-agent-account) して取得してください。
 
 ### スコープ外 / STAR 対応の対象外
 

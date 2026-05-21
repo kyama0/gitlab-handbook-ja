@@ -20,7 +20,7 @@ SME プログラムのゴールは以下のとおりです：
 - SA が答えなければならない質問の数を減らすことで、顧客サポートの品質を向上させる。  
 - 質問に迅速かつ正確に答えられるエキスパートへのアクセスを提供することで、顧客満足度を向上させる。
 
-上記のゴールを達成するために、[SME プログラムは適切に構造化され、役割と責任が定義されます。](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-program.md)。
+上記のゴールを達成するために、[SME プログラムは適切に構造化され、役割と責任が定義されます](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-program.md)。
 
 SME プログラムのその他の領域には以下が含まれます：
 
@@ -28,7 +28,7 @@ SME プログラムのその他の領域には以下が含まれます：
 2. [SME のノミネーションとオンボーディング \- SME になるためのプロセス](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-program/#sme-selection)  
 3. [SME リクエストプロセス](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-request/) - 機会で技術的なガイダンスと専門知識を提供するために SME をリクエストする方法  
 4. [コラテラル、記事、ベストプラクティスの作成および収集をリクエストする](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-collateral/)  
-5. 定期的な SME ケイデンスを開催する](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-cadences/)
+5. [定期的な SME ケイデンスを開催する](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-cadences/)
 6. [顧客からフィードバックを集めてプロダクトマネジメントに伝えるプロセス](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-customer-feedback/)  
 7. [プロダクトマネジメントとどのように関わり、エスカレーションするか](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-engage-pm/)
 

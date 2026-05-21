@@ -30,7 +30,7 @@ Assigned Support Engineer (ASE) 契約に定められているとおり、私た
 
 ### PTO からの復帰時
 
-復帰したら、バックアップと会って、彼らがあなたの代わりに行った業務をレビューします。そして、顧客とアカウントチームに復帰を通知してください。
+復帰したら、バックアップと会って、バックアップ ASEがあなたの代わりに行った業務をレビューします。そして、顧客とアカウントチームに復帰を通知してください。
 
 このプロセスから学んだ教訓を、[Assigned Support Engineer プロジェクト](https://gitlab.com/gitlab-com/support/assigned-support-engineers/-/issues)で作成した Issue に追加し、その後 Issue をクローズします。このハンドブックページの改善も検討してください。
 

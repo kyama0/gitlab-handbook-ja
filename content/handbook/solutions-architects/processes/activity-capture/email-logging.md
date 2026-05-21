@@ -20,7 +20,7 @@ lastmod: "2025-01-20T13:13:04+00:00"
 2. 画面右上のイニシャルまたはプロフィール画像をクリックします
 3. ドロップダウンメニューから「My Settings」を選択します
 4. 「Emails」セクションを見つけます
-5. 以下の2つの権限の隣に緑のチェックマークがあるか確認します:
+5. 以下の2 つの権限の隣に緑のチェックマークがあるか確認します:
    - 「All emails you send to or receive from your CRM contacts are imported」
    - 「Email write-permission is turned on for composing emails in Gong」
 6. 不足しているチェックマークがある場合:

@@ -14,7 +14,7 @@ lastmod: "2025-12-04T15:06:42+02:00"
 
 GitLab の [HackerOne プログラムポリシー](https://gitlab.com/gitlab-com/gl-security/hackerone/configuration/-/blob/master/program-policy.md#L31-33)の一環として、3 件以上の有効な報告をプログラムに提出したリポーターは、最大 5 ユーザーに対応する 1 年間のセルフホスト Ultimate ライセンスを受け取る資格があります。リクエストは [Awarding Ultimate Licenses](/handbook/security/product-security/psirt/runbooks/hackerone-process#awarding-ultimate-licenses) ランブックに従って発生します。
 
-HackerOne には企業レベルでトリアージチームがあり、GitLab はバグバウンティのトリアージと検証のためにそのチームを利用しています。彼らの作業を支援するため、年単位で 2 つの Ultimate ライセンスを発行しています。これらのライセンスは [HackerOne Triage Team GitLab licenses](/handbook/security/product-security/psirt/runbooks/hackerone-process/#hackerone-triage-team-gitlab-licenses) ランブックの一部として生成され、`analysts@managed.hackerone.com` および `analysts+1@managed.hackerone.com` に送信されます。ライセンス内容は年次で変わらないため、ワークフロー上、既存ライセンスを複製して使用できます。いずれかのライセンスを複製する際は、日付を翌年用に調整し、ノートをライセンスがリクエストされたチケットへのリンクに置き換えてください。手動で生成される他のレガシーライセンスと同様に、コンプライアンスと監査の目的で各ライセンスは独立したチケットでリクエストされる必要があります。
+HackerOne には企業レベルでトリアージチームがあり、GitLab はバグバウンティのトリアージと検証のためにそのチームを利用しています。HackerOne triage チームの作業を支援するため、年単位で 2 つの Ultimate ライセンスを発行しています。これらのライセンスは [HackerOne Triage Team GitLab licenses](/handbook/security/product-security/psirt/runbooks/hackerone-process/#hackerone-triage-team-gitlab-licenses) ランブックの一部として生成され、`analysts@managed.hackerone.com` および `analysts+1@managed.hackerone.com` に送信されます。ライセンス内容は年次で変わらないため、ワークフロー上、既存ライセンスを複製して使用できます。いずれかのライセンスを複製する際は、日付を翌年用に調整し、ノートをライセンスがリクエストされたチケットへのリンクに置き換えてください。手動で生成される他のレガシーライセンスと同様に、コンプライアンスと監査の目的で各ライセンスは独立したチケットでリクエストされる必要があります。
 
 ### リクエストへの対応
 
