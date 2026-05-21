@@ -22,7 +22,7 @@ lastmod: "2026-03-17T10:57:10-05:00"
 
 {{% alert title="注意" color="primary" %}}
 
-- このオプションはCustomer Support Operations またはサポートチームに所属する人のみ利用できます
+- このオプションは Customer Support Operations またはサポートチームに所属する人のみ利用できます
 
 {{% /alert %}}
 

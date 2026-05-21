@@ -71,7 +71,7 @@ lastmod: "2025-07-07T23:50:04+00:00"
 
 ## Tech Stack の変更
 
-Tech Stackの新しい項目について、アクセスリクエストプロセスを開始する必要がある場合：
+Tech Stack の新しい項目について、アクセスリクエストプロセスを開始する必要がある場合：
 
 1. ツールが[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に追加されていることを確認します
 1. チームメンバーが `provisioner` `deprovisioner` として含まれていることを確認します

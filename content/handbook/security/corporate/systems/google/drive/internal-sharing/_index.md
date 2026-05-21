@@ -10,25 +10,25 @@ lastmod: "2025-07-30T05:08:47-07:00"
 
 ## 概要
 
-私たちの透明性 (transparency) の価値観の一環として、ほとんどの Google Docsはすべてのチームメンバーに対して透明であるべきです。Google Docsが会社全体で閲覧できるよう共有することを忘れないようにするには、全員の意識的な努力が必要です。
+私たちの透明性 (transparency) の価値観の一環として、ほとんどの Google Docs はすべてのチームメンバーに対して透明であるべきです。Google Docs が会社全体で閲覧できるよう共有することを忘れないようにするには、全員の意識的な努力が必要です。
 
 > **効率化のヒント:** `My Drive` ではなく、チームの共有ドライブを使用し、すでに会社と共有されているフォルダ内にドキュメントを作成しましょう。これにより、各ドキュメントを共有することを忘れる必要がなくなり、ワークフローがシンプルになります。
 
 - [会社のポリシー - 機密性レベル](/handbook/communication/confidentiality-levels/)
 - [ベンダードキュメント - 権限レベル](https://support.google.com/drive/answer/2494822?hl=en&co=GENIE.Platform%3DDesktop#zippy=%2Cchoose-if-people-can-view-comment-or-edit)
-- [ベンダードキュメント - Google Driveの共有](https://support.google.com/drive/answer/2494822?hl=en&ref_topic=7000947)
-- [ベンダードキュメント - Google Driveのファイル](https://support.google.com/drive/answer/2494822?hl=en&ref_topic=7000947)
-- [ベンダードキュメント - Google Driveのフォルダ](https://support.google.com/drive/answer/7166529?hl=en&co=GENIE.Platform%3DDesktop)
+- [ベンダードキュメント - Google Drive の共有](https://support.google.com/drive/answer/2494822?hl=en&ref_topic=7000947)
+- [ベンダードキュメント - Google Drive のファイル](https://support.google.com/drive/answer/2494822?hl=en&ref_topic=7000947)
+- [ベンダードキュメント - Google Drive のフォルダ](https://support.google.com/drive/answer/7166529?hl=en&co=GENIE.Platform%3DDesktop)
 
-## Google Driveの権限レベル {#google-drive-permission-levels}
+## Google Drive の権限レベル {#google-drive-permission-levels}
 
 - `Viewer` (閲覧者) - 閲覧はできますが、ファイルを変更したり他者と共有したりすることはできません
 - `Commenter` (コメント可) - コメントや提案はできますが、ファイルを変更したり他者と共有したりすることはできません
 - `Editor` (編集者) - 変更を加える、提案を承認・拒否する、ファイルを他者と共有することができます
 
-## Google Driveのファイルを共有する
+## Google Drive のファイルを共有する
 
-> **リマインダー:** Google Driveのファイルやフォルダを共有する方法は複数あります。
+> **リマインダー:** Google Drive のファイルやフォルダを共有する方法は複数あります。
 
 1. GitLab のメールアドレスで [https://drive.google.com](https://drive.google.com) にサインインします。
 
@@ -64,7 +64,7 @@ lastmod: "2025-07-30T05:08:47-07:00"
 
 ## 共有ドライブのファイルにアクセスする
 
-> **リマインダー:** Google Driveのファイルやフォルダを共有する方法は複数あります。
+> **リマインダー:** Google Drive のファイルやフォルダを共有する方法は複数あります。
 
 1. GitLab のメールアドレスで [https://drive.google.com](https://drive.google.com) にサインインします。
 
