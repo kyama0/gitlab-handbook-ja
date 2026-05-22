@@ -1,21 +1,21 @@
 ---
 title: "Software Engineer in Test キャリアフレームワーク"
 description: "GitLab における Software Engineer in Test のチームメンバーに期待されるコンピテンシー。"
-upstream_path: "/handbook/engineering/careers/matrix/quality/software-engineer-in-test/"
-upstream_sha: "3480299851f7e2243d4f08b75dac452f89929636"
-translated_at: "2026-04-27T12:00:00Z"
+upstream_path: /handbook/engineering/careers/matrix/quality/software-engineer-in-test/
+upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
+lastmod: "2026-05-22T14:47:44+02:00"
+translated_at: "2026-05-22T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2023-12-19T20:10:43+00:00"
 ---
+
+> ℹ️ 注意: このページは非推奨です。Software Engineer in Test ロールは Backend Engineer に移行しました。最新の情報については [Backend Engineer キャリアマトリクス](/handbook/engineering/careers/matrix/infrastructure/)を参照してください。
 
 ## Software Engineer in Test キャリアフレームワーク
 
+{{% include "includes/engineering-careers/quality-career-nav.md" %}}
 
-<!-- include omitted: includes/engineering-careers/quality-career-nav.md (no localized version under content/ja/) -->
-
-
-GitLab における Software Engineer in Test のチームメンバーに期待されるコンピテンシーです。
+これらは GitLab における Software Engineer in Test のチームメンバーに期待されるコンピテンシーです。
 
 ### Associate
 

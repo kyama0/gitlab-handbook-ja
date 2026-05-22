@@ -9818,11 +9818,11 @@
     },
     "content/handbook/engineering/careers/matrix/_index.md": {
       "path": "content/handbook/engineering/careers/matrix/_index.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-27T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "e877aba895c6c4bdd48f8f5ae6d0d2e59d3591626b7e8984dfcbbe9e80646fe6",
-      "upstream_committed_at": "2025-04-28T11:53:59+10:00"
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "df0039ed1bbc4972f7d1f58d0779c30fbf4e21c1d2931ad6dc3f53033ed14f42",
+      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
     },
     "content/handbook/engineering/careers/matrix/associate.md": {
       "path": "content/handbook/engineering/careers/matrix/associate.md",
@@ -10122,43 +10122,43 @@
     },
     "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/_index.md": {
       "path": "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/_index.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-27T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "17f16cba122377d72d1aaa830cdbf7748723b7e4b3d943b486705cb350fd9b32",
-      "upstream_committed_at": "2023-12-19T20:10:43+00:00"
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a5a536c438624006beb39ad04ab3b578c89a0d343dc0334a86db4fa6c0509836",
+      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
     },
     "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/associate.md": {
       "path": "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/associate.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-27T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "d229f58332a40401b236e0af82c751031831eb5d82ddb25e84fa4dc87a1d72c4",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "28b7dc0d65967633b519d3c2f27b8294f3d8ad715dffd4c7e60e582ccd9288ed",
+      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
     },
     "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/intermediate.md": {
       "path": "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/intermediate.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-27T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f812f2d0e7503f36614d03acb3c295da4c6bdffffdbf1c50acd4eb6d45b40c75",
-      "upstream_committed_at": "2023-12-19T20:10:43+00:00"
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eb2db97ec822e7f7ad344e881ed77ba5ca91511533a9d9286698da003f3977a6",
+      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
     },
     "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/principal.md": {
       "path": "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/principal.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-27T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "d6cfc16d71f851117088717da05cbdd05dfd1b9d8ba9d07e649c9dfc9173ed4d",
-      "upstream_committed_at": "2023-12-19T20:10:43+00:00"
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9d147484883d5df9d43556835d82d174b3d211f8cd3586eaf34c399f6ff392cb",
+      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
     },
     "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/senior.md": {
       "path": "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/senior.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-27T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "c355cb764a9ff2dc46561f243dfdf0006e802efeac24f5d3ebebf41ff9fe45c8",
-      "upstream_committed_at": "2023-12-19T20:10:43+00:00"
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e8b69cfc65fa8a3159be0d356242c0e9c7edb39700ca10a5ff14b0b1cf6a9052",
+      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
     },
     "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/staff.md": {
       "path": "content/handbook/engineering/careers/matrix/quality/software-engineer-in-test/staff.md",
@@ -27210,11 +27210,11 @@
     },
     "content/handbook/security/product-security/security-platforms-architecture/application-security/application-security-automation-monitoring.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/application-security-automation-monitoring.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T00:00:00Z",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "50700234f8f4e8c33b9005251f435a80239f1d8554c276246faba9e2e7e8cda1",
-      "upstream_committed_at": "2026-04-10T08:37:31-04:00"
+      "input_hash": "dcf45c20c41cd67771b99ab1139444cddaae4009d203a402407e8fcf2803ddc0",
+      "upstream_committed_at": "2026-05-22T09:57:56-04:00"
     },
     "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-async.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/appsec-async.md",
@@ -30178,11 +30178,11 @@
     },
     "content/handbook/product-development/how-we-work/product-development-flow/product-development-budgeting.md": {
       "path": "content/handbook/product-development/how-we-work/product-development-flow/product-development-budgeting.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "648f19d8c56b1c04ffed53e4668e767c9a866df3b1939872bc078c9f5745da49",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
+      "input_hash": "e7a8080ac24158bc62ddafadc507ae411a19a78d008a2e4d99097581e1d9334a",
+      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
     },
     "content/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/_index.md": {
       "path": "content/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/_index.md",

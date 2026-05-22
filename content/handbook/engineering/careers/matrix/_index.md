@@ -1,32 +1,29 @@
 ---
-title: "エンジニアリングキャリアフレームワーク"
-description: "GitLab のエンジニアリングチームメンバーに職種別で期待されるコンピテンシー。"
-upstream_path: "/handbook/engineering/careers/matrix/"
-upstream_sha: "3480299851f7e2243d4f08b75dac452f89929636"
-translated_at: "2026-04-27T00:00:00Z"
+title: "Engineering キャリアフレームワーク"
+description: "GitLab における Engineering チームメンバーに職種別で期待されるコンピテンシー。"
+upstream_path: /handbook/engineering/careers/matrix/
+upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
+lastmod: "2026-05-22T14:47:44+02:00"
+translated_at: "2026-05-22T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2025-04-28T11:53:59+10:00"
 ---
 
-
-<!-- include omitted: includes/engineering-careers/career-matrix-nav.md (no localized version under content/ja/) -->
-
+{{% include "includes/engineering-careers/career-matrix-nav.md" %}}
 
 これらは GitLab における職種別でチームメンバーに期待されるコンピテンシーです。
 
-1. [インターン](/handbook/engineering/careers/matrix/intern/)
-1. [アソシエイト](/handbook/engineering/careers/matrix/associate/)
-1. [インターミディエイト](/handbook/engineering/careers/matrix/intermediate/)
-1. [シニア](/handbook/engineering/careers/matrix/senior/)
-1. [スタッフ](/handbook/engineering/careers/matrix/staff/)
-1. [プリンシパル](/handbook/engineering/careers/matrix/principal/)
+1. [Intern](/handbook/engineering/careers/matrix/intern/)
+1. [Associate](/handbook/engineering/careers/matrix/associate/)
+1. [Intermediate](/handbook/engineering/careers/matrix/intermediate/)
+1. [Senior](/handbook/engineering/careers/matrix/senior/)
+1. [Staff](/handbook/engineering/careers/matrix/staff/)
+1. [Principal](/handbook/engineering/careers/matrix/principal/)
 
-## エンジニアリング部門
+## Engineering 部門
 
-|   | サブ部門のキャリアフレームワーク |
+|   | サブ部門のキャリアフレームワーク                                                                                                                                                                                                              |
 | ---- |------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
-| **[開発](/handbook/engineering/careers/matrix/development/)** | [Dev](/handbook/engineering/careers/matrix/development/dev/)、Growth、Ops、Package & Release、Secure & Govern、Verify |
-| **[インフラ](/handbook/engineering/careers/matrix/infrastructure/)** | Infrastructure、Delivery & Scalability、Reliability |
-| **[Quality](/handbook/engineering/careers/matrix/quality/)** | Dev、Ops、Secure、Engineering Productivity、Growth、Fulfillment、Software Supply Chain Security |
-| **[サポート](/handbook/engineering/careers/matrix/support/)** | [サポート](/handbook/engineering/careers/matrix/support/) |
+| **[Development](/handbook/engineering/careers/matrix/development/)** | [Dev](/handbook/engineering/careers/matrix/development/dev/)、Growth、Ops、Package & Release、Secure & Govern、Verify |
+| **[Infrastructure](/handbook/engineering/careers/matrix/infrastructure/)** | Infrastructure、Delivery & Scalability、Reliability                                                                                                                                                                                            |
+| **[Support](/handbook/engineering/careers/matrix/support/)** | [Support](/handbook/engineering/careers/matrix/support/)  |
