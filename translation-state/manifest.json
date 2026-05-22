@@ -32863,6 +32863,54 @@
       "model": "claude-opus-4-7",
       "input_hash": "0d880bbc477eb589890ad9c2d47e1d502347bd9bccce975ee8a45ac55d0c471b",
       "upstream_committed_at": "2026-05-20T13:21:20+01:00"
+    },
+    "content/handbook/support/workflows/escalations-support_engineer.md": {
+      "path": "content/handbook/support/workflows/escalations-support_engineer.md",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "upstream_committed_at": "2026-05-20T16:17:05-03:00",
+      "translated_at": "2026-05-22T21:16:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "365a5b710f4d263930a8bb0fcb7eef91836f0a178f8b063317616a55136f7e0d"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/classification.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/classification.md",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "upstream_committed_at": "2026-05-21T17:29:09+02:00",
+      "translated_at": "2026-05-22T21:16:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "17e47772292c62416324985ede095c94f1787bca2318913c385b0dfd22464aa9"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/secure-code-review/_index.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/secure-code-review/_index.md",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "upstream_committed_at": "2026-05-22T09:57:56-04:00",
+      "translated_at": "2026-05-22T21:16:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8ba512523d1dcec36c1b8ea5c1853922efef8a9c855c2737f7b82ed6bdf41e95"
+    },
+    "content/handbook/customer-success/csm/csm-mentorship/_index.md": {
+      "path": "content/handbook/customer-success/csm/csm-mentorship/_index.md",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "upstream_committed_at": "2026-05-22T13:25:37-04:00",
+      "translated_at": "2026-05-22T21:16:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f44bda0998805d8acdc7a055c9c0fe28d06cb01280f777e2a8848bb0a099e878"
+    },
+    "content/handbook/customer-success/professional-services-engineering/gitlab-certified-training-partner-award.md": {
+      "path": "content/handbook/customer-success/professional-services-engineering/gitlab-certified-training-partner-award.md",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "upstream_committed_at": "2026-05-22T13:16:45-06:00",
+      "translated_at": "2026-05-22T21:16:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a982fb467db1612757049eb3b02c5c8217820c7423a533f600fe52f6d4eadb5d"
+    },
+    "content/handbook/legal/testing-agreement-v5.md": {
+      "path": "content/handbook/legal/testing-agreement-v5.md",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "upstream_committed_at": "2026-05-20T15:15:43-04:00",
+      "translated_at": "2026-05-22T21:16:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "06f17d323714b609d20d4f97670e77c480d5d0b83af02a6c3fa87932d86f8f8e"
     }
   }
 }
