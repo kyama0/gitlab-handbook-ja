@@ -32911,6 +32911,46 @@
       "translated_at": "2026-05-22T21:16:58Z",
       "model": "claude-opus-4-7",
       "input_hash": "06f17d323714b609d20d4f97670e77c480d5d0b83af02a6c3fa87932d86f8f8e"
+    },
+    "content/handbook/support/workflows/support-leader-on-the-hook.md": {
+      "path": "content/handbook/support/workflows/support-leader-on-the-hook.md",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "upstream_committed_at": "2026-05-22T11:27:49+08:00",
+      "translated_at": "2026-05-22T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9bbfd7885238fa701ed69783bcc3dd1b9118ab86b6625da7b8cb17030782bcc8"
+    },
+    "content/handbook/security/product-security/security-platforms-architecture/application-security/secure-code-review/automated-mr-reviewer.md": {
+      "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/secure-code-review/automated-mr-reviewer.md",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "upstream_committed_at": "2026-05-22T09:57:56-04:00",
+      "translated_at": "2026-05-22T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ab9a4751c896e27f3cc930f2e790dccfe9928ff3f6b517b37fd00867ff52d326"
+    },
+    "content/handbook/legal/technology-partner-agreement-v1.md": {
+      "path": "content/handbook/legal/technology-partner-agreement-v1.md",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "upstream_committed_at": "2026-05-21T14:03:07-04:00",
+      "translated_at": "2026-05-22T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "5fbd331d0bd118d1c7913d6e917c937c8f7e7c7c42951fb6d8b6ed4adb28d5db"
+    },
+    "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/013_storage_backend_interaction.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/013_storage_backend_interaction.md",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "upstream_committed_at": "2026-05-21T10:11:14+01:00",
+      "translated_at": "2026-05-22T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "79e2a46468003fce22f9133f5b76d933ea8ec1f7975f01cc7f073a8e499ca7e8"
+    },
+    "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migration.md": {
+      "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migration.md",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "upstream_committed_at": "2026-05-22T10:54:17+00:00",
+      "translated_at": "2026-05-22T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "efda947c825c275772c5f8c763acd80c3ed357cd6e3fc42bc2d147a27d4cedd3"
     }
   }
 }
