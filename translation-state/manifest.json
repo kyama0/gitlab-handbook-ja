@@ -1402,11 +1402,11 @@
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/agile-career.md": {
       "path": "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/agile-career.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T12:00:00Z",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "3dad90096bdf4f1378933d25eafa374d8b223ec466e7ff968463a0ad49f1bd1b",
-      "upstream_committed_at": "2026-03-18T15:39:47+00:00"
+      "input_hash": "a54fe07895174a84335d5f422e0d6ce878237d0515212ec8ee16eb256e7b23ee",
+      "upstream_committed_at": "2026-05-21T14:25:32+00:00"
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/mentorship-program.md": {
       "path": "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/mentorship-program.md",
@@ -12322,11 +12322,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/bug-prioritization.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/bug-prioritization.md",
-      "upstream_sha": "6a459a3ca969603754a3b5133342edb804d3012c",
-      "translated_at": "2026-04-28T16:51:32Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "0861cc097f58f86f5eeb4a2cfb82166e3fa320c39bcd260a2dd0cc5003f783f9",
-      "upstream_committed_at": "2025-07-04T11:34:00-07:00"
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ba92101883d6fc3ac1133fda6e7c6210431d9f22b19e5511b5b7ee467d1c3e7",
+      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/custom-tooling-and-dogfooding.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/custom-tooling-and-dogfooding.md",
@@ -16226,11 +16226,11 @@
     },
     "content/handbook/legal/_index.md": {
       "path": "content/handbook/legal/_index.md",
-      "upstream_sha": "5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "d3e3ca3233d263504082956dd4d910a2768135fe5ab21b09eda9016794f9b13f",
-      "upstream_committed_at": "2026-01-23T14:43:21-07:00"
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a20b4baecdf4a34e2d0cda3369040d3f5321728c7fb171ba7651c4c88c8b50bd",
+      "upstream_committed_at": "2026-05-21T12:17:18-04:00"
     },
     "content/handbook/legal/acceptable-use-policy.md": {
       "path": "content/handbook/legal/acceptable-use-policy.md",
@@ -16850,11 +16850,11 @@
     },
     "content/handbook/legal/procurement-guide-collaborating-with-gitlab-legal.md": {
       "path": "content/handbook/legal/procurement-guide-collaborating-with-gitlab-legal.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-29T07:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "a9e0eff39088d32842ba3dbd589029945e924f6b2e799e232049797269493cac",
-      "upstream_committed_at": "2025-09-02T03:31:38+00:00"
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1856371b7792c6048769da22893f2dc62c52869a4d66734d21f02cb16a233003",
+      "upstream_committed_at": "2026-05-21T12:17:18-04:00"
     },
     "content/handbook/legal/product.md": {
       "path": "content/handbook/legal/product.md",
@@ -18450,11 +18450,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1115888fd1313145b3cf2f85f6e2ed292eaf75ef61e8bf830607731f5d32bb65",
-      "upstream_committed_at": "2026-05-01T10:44:51-04:00"
+      "input_hash": "ca4747c65516cef5840f8203ea46078002e49b1669311782e9c791f629123eec",
+      "upstream_committed_at": "2026-05-20T09:32:02-07:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/learn-developer-advocacy.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/learn-developer-advocacy.md",
@@ -32458,11 +32458,11 @@
     },
     "content/handbook/people-group/general-onboarding/onboarding-buddies.md": {
       "path": "content/handbook/people-group/general-onboarding/onboarding-buddies.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "4d19bbcab83cedfbeef9f3329970235ccb57a8e1eedaf2206ef9e33dfca7f661",
-      "upstream_committed_at": "2025-12-01T16:21:31-05:00"
+      "input_hash": "2fd99a6379cc92982d9b203ab3397f25d3be92a467e3261691b71e547a691cb6",
+      "upstream_committed_at": "2026-05-19T12:12:02+01:00"
     },
     "content/handbook/people-group/general-onboarding/tanewki-tips.md": {
       "path": "content/handbook/people-group/general-onboarding/tanewki-tips.md",
