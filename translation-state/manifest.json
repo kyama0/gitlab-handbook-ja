@@ -11394,11 +11394,11 @@
     },
     "content/handbook/engineering/devops/create/code-review/frontend.md": {
       "path": "content/handbook/engineering/devops/create/code-review/frontend.md",
-      "upstream_sha": "81a617744130f76604f641d4483828edd0d60d2f",
-      "translated_at": "2026-04-28T10:21:26Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "cc0c58026dc77247af0b48c4181bdd1fdda3ed1f2ef02ec16d6f5c54b593d883",
-      "upstream_committed_at": "2025-12-05T19:47:34+00:00"
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T21:55:06Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e3c5a98ea72c5ed2f4ba0132d652970f5739ac1d9a1ac0996ff45033c8e46deb",
+      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
     },
     "content/handbook/engineering/devops/create/code-review/report-widgets-dri-list.md": {
       "path": "content/handbook/engineering/devops/create/code-review/report-widgets-dri-list.md",
@@ -15186,11 +15186,11 @@
     },
     "content/handbook/enterprise-data/platform/tableau/tableau-project-leaders-guide/_index.md": {
       "path": "content/handbook/enterprise-data/platform/tableau/tableau-project-leaders-guide/_index.md",
-      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
-      "translated_at": "2026-04-29T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "9e6ddf26d6f4af7efdec980f1e1fd99d9364d08b7f48f38053d4c6c6eede83ae",
-      "upstream_committed_at": "2025-05-19T12:41:07-04:00"
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T21:55:06Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "7330cdd03a79cf9a49c8bb94eb52f37c9d41025c012d059910e391d5cc29ced3",
+      "upstream_committed_at": "2026-05-20T16:29:58-04:00"
     },
     "content/handbook/entity/_index.md": {
       "path": "content/handbook/entity/_index.md",
@@ -17050,11 +17050,11 @@
     },
     "content/handbook/legal/testing-agreement.md": {
       "path": "content/handbook/legal/testing-agreement.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f6119803a15791587e40bfe171524ed6ee3eb18a9e3a96a56874186aee92c7ae",
-      "upstream_committed_at": "2026-02-19T08:35:54-05:00"
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T21:55:06Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "59cfe1281ff3076504bbb5fcd2bbe1fe1b739519f7ab7cd9d10d5bf005261c9a",
+      "upstream_committed_at": "2026-05-20T15:15:43-04:00"
     },
     "content/handbook/legal/trade-compliance.md": {
       "path": "content/handbook/legal/trade-compliance.md",
@@ -21098,11 +21098,11 @@
     },
     "content/handbook/support/support-innovation-group.md": {
       "path": "content/handbook/support/support-innovation-group.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T21:55:06Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ab9fd2b6d8294c9fd020d6dac384a04ba38791678ee3a931f310db0a0fa10b0b",
-      "upstream_committed_at": "2026-04-22T12:26:46-04:00"
+      "input_hash": "630a1a3c4bb36a7501655275fb937874bf904e7ed5536fcd59c7fed75da1bd1e",
+      "upstream_committed_at": "2026-05-20T05:01:53-04:00"
     },
     "content/handbook/support/support-stable-counterparts.md": {
       "path": "content/handbook/support/support-stable-counterparts.md",
@@ -24946,11 +24946,11 @@
     },
     "content/handbook/customer-success/csm/calendly/index.md": {
       "path": "content/handbook/customer-success/csm/calendly/index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T00:00:00Z",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T21:55:06Z",
       "model": "claude-opus-4-7",
-      "input_hash": "107dba8652170a2ca3faa3207093f3fa24da388b5e96faf8dffec8335f8f9c50",
-      "upstream_committed_at": "2025-07-28T09:37:14+01:00"
+      "input_hash": "1eb4ac435effe5a92a328ea0bf21e5d1dc1d45d948455a593547bd9e680b5f10",
+      "upstream_committed_at": "2026-05-22T18:37:20+00:00"
     },
     "content/handbook/customer-success/csm/digital-journey/index.md": {
       "path": "content/handbook/customer-success/csm/digital-journey/index.md",
@@ -31546,11 +31546,11 @@
     },
     "content/handbook/product/product-management/product-manager-buddy-tasks.md": {
       "path": "content/handbook/product/product-management/product-manager-buddy-tasks.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T21:55:06Z",
       "model": "claude-opus-4-7",
-      "input_hash": "2d032b5c85b8ac81f6a76caf1c817dc3aaa97cf367897a1fb118e8f473fb5e0a",
-      "upstream_committed_at": "2026-03-06T09:57:12-06:00"
+      "input_hash": "435258ecaa878392b871079ae3db1189fc9bb357ae177cd19041fc7029adb3dc",
+      "upstream_committed_at": "2026-05-20T09:32:02-07:00"
     },
     "content/handbook/product/product-management/product-manager-role.md": {
       "path": "content/handbook/product/product-management/product-manager-role.md",
@@ -32250,11 +32250,11 @@
     },
     "content/handbook/people-group/people-operations/_index.md": {
       "path": "content/handbook/people-group/people-operations/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T21:55:06Z",
       "model": "claude-opus-4-7",
-      "input_hash": "da377e64d569b590c8fbad4d93d5f54aec28052232a5300e3264fcde2d4fc62a",
-      "upstream_committed_at": "2025-08-01T12:23:03+01:00"
+      "input_hash": "abecfc4372838f0322c67de6889db853da5e350301d9289ca8c8c0ca5896894e",
+      "upstream_committed_at": "2026-05-19T12:12:02+01:00"
     },
     "content/handbook/people-group/people-compliance/_index.md": {
       "path": "content/handbook/people-group/people-compliance/_index.md",
@@ -32322,11 +32322,11 @@
     },
     "content/handbook/people-group/learning-and-development/self-paced-learning.md": {
       "path": "content/handbook/people-group/learning-and-development/self-paced-learning.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
+      "translated_at": "2026-05-22T21:55:06Z",
       "model": "claude-opus-4-7",
-      "input_hash": "0921fc40864e169d1b8c253e47d4ace4b9e8ca0bd7e42b4076cd1dcaff61cfe9",
-      "upstream_committed_at": "2026-02-05T11:00:17+00:00"
+      "input_hash": "62bc4908b7cf9e11e9c07fb0f0f97083b05ec3b1bd8f84eac39a4bda988fe3c4",
+      "upstream_committed_at": "2026-05-21T14:25:32+00:00"
     },
     "content/handbook/people-group/learning-and-development/team-workshops/_index.md": {
       "path": "content/handbook/people-group/learning-and-development/team-workshops/_index.md",
