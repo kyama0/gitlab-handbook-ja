@@ -1,30 +1,30 @@
 ---
-title: "GitLab セキュリティプロジェクト分類"
-description: "GitLab がセキュリティワークフロー用にプロジェクトを分類するためにセキュリティ属性をどのように使用するか"
+title: "GitLab Security Project Classification"
+description: "GitLab がセキュリティ属性を使用してセキュリティワークフロー向けにプロジェクトを分類する方法"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/application-security/classification/
-upstream_sha: 440fbdbea018814f9317e3b1520eff5dda4ecb20
-lastmod: "2026-05-21T17:29:09+02:00"
-translated_at: "2026-05-21T21:07:52Z"
+upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
+lastmod: 2026-05-21T17:29:09+02:00
+translated_at: "2026-05-22T21:16:58Z"
 translator: claude
 stale: false
 ---
 
 ## 分類の仕組み
 
-GitLab のプロジェクトは [セキュリティ属性](https://docs.gitlab.com/user/application_security/attributes/) を使用して分類されます。これにより、セキュリティチームは製品に関連するプロジェクトを識別し、セキュリティ業務の優先順位を付け、プロジェクト分類に依存するセキュリティワークフローをサポートできます。
+GitLab のプロジェクトは [security attributes](https://docs.gitlab.com/user/application_security/attributes/) を使用して分類されます。これにより Security はプロダクト関連のプロジェクトを特定し、セキュリティ業務に優先順位を付け、プロジェクト分類に依存するセキュリティワークフローをサポートできます。
 
-中央集約パイプラインが、セキュリティ属性を [Data チームの製品インベントリ](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/seeds/seed_engineering/projects_part_of_product.csv) と整合させ続けます。実装の詳細については、[関連プロジェクト](https://gitlab.com/gitlab-private/gl-security/engineering-and-research/security-research/sec-attributes/security-attribute-automation) を参照してください。
+集中管理されたパイプラインが [Data team の product inventory](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/seeds/seed_engineering/projects_part_of_product.csv) とセキュリティ属性を整合させ続けます。実装の詳細は [関連プロジェクト](https://gitlab.com/gitlab-private/gl-security/engineering-and-research/security-research/sec-attributes/security-attribute-automation) を参照してください。
 
 ## セキュリティ属性スキーマ
 
-現在のスキーマは製品分類をカバーしています。今後のユースケースへの拡張が計画されています。
+現在のスキーマはプロダクト分類をカバーしています。将来のユースケース向けに拡張が計画されています。
 
-| カテゴリ       | 属性     | 説明                                                                       |
-|----------------|----------|----------------------------------------------------------------------------|
-| Classification | Product  | プロジェクトに、お客様に提供するコード、またはそのコードのビルドおよびデリバリーの一部として使われるコードが含まれている |
+| カテゴリー       | 属性 | 説明                          |
+|----------------|-----------|--------------------------------------|
+| Classification | Product   | プロジェクトには、お客様に提供するコード、または当該コードのビルドと提供の一部となるものが含まれている |
 
-## 変更を行う
+## 変更を加える
 
-1. **新規プロジェクト**: [新規プロジェクトの作成](/handbook/engineering/workflow/gitlab-repositories/#creating-a-new-project) ガイドラインに従ってください。プロジェクトが製品インベントリに登録され次第、分類が自動的に適用されます。
-1. **誤った分類または不足している分類**: [Data チームの製品インベントリ](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/seeds/seed_engineering/projects_part_of_product.csv) にエントリを追加または訂正する MR を提出してください。同期パイプラインが 24 時間以内に属性変更を適用します。
-1. **スキーマ変更の提案**: 変更を行う前に、[product-security-meta](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-meta) で Issue を起票し、プロダクトセキュリティチームと議論してください。
+1. **新規プロジェクト**: [新しいプロジェクトの作成](/handbook/engineering/workflow/gitlab-repositories/#creating-a-new-project) ガイドラインに従ってください。プロジェクトが product inventory に登場すると、分類が自動的に適用されます。
+1. **不正確または欠落している分類**: [Data team の product inventory](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/seeds/seed_engineering/projects_part_of_product.csv) にエントリを追加または修正するための MR を提出してください。同期パイプラインが 24 時間以内に属性の変更を適用します。
+1. **スキーマ変更の提案**: 変更を行う前に Product Security team と議論するため、[product-security-meta](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-meta) で Issue を作成してください。

@@ -1,80 +1,80 @@
 ---
 title: "CSM として Calendly を活用する"
-description: "Customer Success Manager が Calendly を使用して顧客からのミーティングリクエストを管理するためのベストプラクティスとセットアップガイドです。"
+description: "Customer Success Manager が Calendly を使って顧客からのミーティングリクエストを管理するためのベストプラクティスとセットアップガイド。"
 upstream_path: /handbook/customer-success/csm/calendly/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
+translated_at: "2026-05-22T21:55:06Z"
 translator: claude
 stale: false
-lastmod: "2025-07-28T09:37:14+01:00"
+lastmod: "2026-05-22T18:37:20+00:00"
 ---
 
-追加の CSM 関連ハンドブックページについては、[CSM ハンドブックホームページ](/handbook/customer-success/csm/)をご覧ください。
+CSM 関連のほかのハンドブックページについては、[CSM ハンドブックホームページ](/handbook/customer-success/csm/)を参照してください。
 
 ---
 
-*ミーティングの録音に使用するツール Chorus の概要については、[Gainsight 概要ページ](/handbook/sales/field-operations/sales-operations/go-to-market/chorus/)をご参照ください。*
+*ミーティングの録画に使うツール Chorus の概要は、[Gainsight 概要ページ](/handbook/sales/field-operations/sales-operations/go-to-market/chorus/)を参照してください。*
 
-## Customer Success Manager/Engineer 向け Calendly のセットアップ
+## Customer Success Manager 向け Calendly のセットアップ
 
-CSM と CSE は Calendly を使用して、顧客からのアドホックなミーティング予約リクエストを効率的に管理します。
+CSM は、アドホックなミーティング予約に関する顧客からのリクエストを効率的にさばくために Calendly を利用しています。
 
-### スタティックリンクのための Chorus 初期セットアップ
+### 静的リンクのための Chorus 初期セットアップ
 
-Calendly が GDPR および類似のプライバシー法に準拠して設定されていることを確認するため、Chorus でレコーダーライセンスを持つすべてのチームメンバーは、Calendly を通じてスケジュールされた顧客とのミーティングを整理する際に Chorus Scheduler という機能を使用する必要があります。Calendly 経由で予約されたイベントに Chorus Scheduler を使用するために必要な手順は以下のとおりです。
+Calendly が GDPR やそれに類するプライバシー法に準拠するように、Chorus の Recorder ライセンスを持つすべてのチームメンバーは、顧客とのミーティングを設定する際に Chorus Scheduler という機能を使う必要があります。Calendly 経由で予約されるイベントで Chorus Scheduler を使うために必要な手順は以下のとおりです。
 
-- Chorus Scheduler からスタティックリンクを作成する方法については、[Chorus.ai の使い方を学ぶ](/handbook/sales/field-operations/sales-operations/go-to-market/chorus/#chorus-scheduler)をご覧ください。
-- スタティックリンクを作成/確認するには:
-  - Chorus Scheduler の設定で [Zoom PMI](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066271) をリンクする（一度だけ）
-  - 次に、Google カレンダーでテストイベントを作成し、「ビデオ会議を追加」をクリックし、「Chorus ミーティング」を選択します。その後、Chorus Go のスタティックリンク（ドメイン: go.chorus.ai）を確認できます。
+- 静的リンクを Chorus Scheduler から作成する方法については、[Chorus.ai の使い方](/handbook/sales/field-operations/sales-operations/go-to-market/chorus/#chorus-scheduler)を参照してください。
+- 静的リンクの作成・確認手順
+  - [Zoom PMI](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0066271)を Chorus Scheduler 設定でリンクします（1 回のみ）
+  - 次に、Google カレンダーでテストイベントを作成し、「ビデオ会議を追加」をクリックして Chorus Meeting を選択します。これで Chorus Go の静的リンク（ドメイン: go.chorus.ai）を確認できます。
   - ![static-chorus-go-link](/images/customer-success/csm/calendly/grab-static-chorus-go-link.png)
 
 ### Calendly イベントタイプの作成
 
-顧客がミーティングの適切な時間の長さや特定のトピック/焦点領域を選択できるよう、Calendly に複数のイベントタイプを作成することをお勧めします。以下は、異なるイベントタイプを持つ CSE の Calendly ホームページの例です。
+顧客がミーティングに適した時間の長さやトピック・フォーカス領域を選べるよう、Calendly には複数のイベントタイプを作成することを推奨します。以下は、複数のイベントタイプを持つ CSE の Calendly ホームページの例です。
 
 ![calendly-home-example](/images/customer-success/csm/calendly/calendly-home-example.png)
 
 #### Calendly イベントの作成手順
 
-- Calendly にログインし、すべてのイベントタイプをここで確認します: https://calendly.com/event_types/user/me
-  - [新しいイベントタイプ作成ボタン](https://calendly.com/event_types/new)をクリックし、「1 対 1」を選択する
-  - *イベント名*: 時間の長さや特定のトピック/フォーカスに基づいてイベントに名前を付ける（例: 新規顧客: オンボーディングコール）
-  - *場所*: カスタム（Zoom PMI から生成された Chorus Scheduler のスタティックリンクを使用）
-    - 次に、Calendly のイベント設定の「場所」フィールドに go.chorus.ai リンクを追加します。
-      - *重要な注意事項*: Calendly 経由で予約した場合、ミーティングごとに自動生成される固有のミーティング ID の代わりに、予約者は全員同じ場所リンクを使用します。Zoom 個人ミーティングが GitLab の[プライバシーとセキュリティ](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-security)のベストプラクティスに従っていることを確認してください。
+- Calendly にログインし、すべてのイベントタイプを確認します: https://calendly.com/event_types/user/me
+  - [Create New Event Type ボタン](https://calendly.com/event_types/new)をクリックし、One-on-One を選択します
+  - *イベント名*: 時間の長さや特定のトピック・フォーカスに基づいて名前を付けます（例: New Customer: Onboarding Call）
+  - *場所*: Custom（Zoom PMI から生成した Chorus Scheduler の静的リンクを使用）
+    - 次に、Calendly イベント設定の Location フィールドに go.chorus.ai のリンクを追加します。
+      - *重要*: Calendly 経由で予約する人は、ミーティングごとに自動生成されるユニークなミーティング ID ではなく、同じ場所のリンクを使ってイベントを予約することになります。Zoom Personal Meeting が GitLab の [プライバシー・セキュリティ](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-security) ベストプラクティスに従っていることを必ず確認してください。
 
-      - 確認後にのみ場所を表示するを選択してください。
+      - 確認後にのみ場所を表示するオプションを必ず選択してください
       - ![calendly-location](/images/customer-success/csm/calendly/calendly-location-chorus-go.jpeg)
 
-- *説明/インストラクション*（以下の推奨テキストを追加）
+- *説明・指示*（以下の推奨テキストを追加してください）
 
-  > **このオンラインミーティングは録画される場合があります。このミーティング招待にアクセスするにはブラウザが必要です。ブラウザにアクセスできない場合は、ミーティング主催者にご連絡ください。**
+  > **このフェイス・トゥ・フェイスのミーティングは録画される場合があります。このミーティング招待にアクセスするにはブラウザが必要です。ブラウザにアクセスできない場合は、ミーティング主催者にご連絡ください。
   >
-  > Chorus.ai 経由で Zoom ミーティングに参加します。
+  > Chorus.ai 経由で Zoom ミーティングに参加します
   >
   > `_______________________________`
   >
-  > 録音に関する免責事項: このミーティングは [Chorus.ai](https://www.chorus.ai) で録音されます。このミーティング招待を承諾するか、ミーティングルームに参加することで、録音に同意したものとみなされます。
+  > 録画に関する免責事項: このミーティングは [Chorus.ai](https://www.chorus.ai)によって録画されます。このミーティング招待を承諾するか、ミーティングルームに参加することで、録画に同意したものとみなされます。
 
-- *このイベントをいつ予約できますか？*
+- *このイベントはいつ予約できますか?*
   - 日付範囲: 60
-    - *ベストプラクティス*: PTO、祝日、ビジーブロックを含めてカレンダーが常に最新の状態に保たれ、個人の時間/集中時間が確保されていることを確認してください。
-  - 時間: イベントタイプに希望する会議時間の長さ
-    - ベストプラクティスのメモ: [スピーディーなミーティングを推奨する](/handbook/communication/#scheduling-meetings)ため、例えば 15、25、50 分を会議時間の長さとして使用してください。
-  - このイベントタイプの利用可能時間をどのように提供しますか？
-    - 既存のスケジュールを使用する
-    - このイベントタイプにはどのスケジュールを使用しますか？
-      - [就業時間](https://help.calendly.com/hc/en-us/articles/360055073694-How-to-set-up-and-edit-your-available-hours-)
-- イベントの前後に時間を追加しますか？
+    - *ベストプラクティス*: 自分の個人的な時間や集中時間を守るため、PTO、休日、ビジータイムでカレンダーを常に最新にしておいてください。
+  - 所要時間: 各イベントタイプで希望するミーティングの長さ
+    - ベストプラクティス: [スピーディなミーティングを推奨](/handbook/communication/#scheduling-meetings) しているので、例えば 15 分、25 分、50 分を使ってください。
+  - このイベントタイプの予約可能枠をどのように提供しますか?
+    - 既存のスケジュールを使用
+    - このイベントタイプにどのスケジュールを使用しますか?
+      - [Working hours](https://help.calendly.com/hc/en-us/articles/360055073694-How-to-set-up-and-edit-your-available-hours-)
+- イベントの前後に時間を追加しますか?
   - イベント前: 15 分
-- （追加の利用可能時間ルールのセクション/リンクを展開）
-  - 開始時間の増分: 30 分（顧客が予約できるオプションをより多くする）
-  - スケジュール条件
-    - 招待者はイベント開始時間の 2 日以内に予約できない:
-      - ベストプラクティスのメモ: ロールに新しい/オンボーディングから出てきた場合、2 日間は顧客を調査し、サポートチケットや GitLab の Issue を確認し、必要に応じてアカウントチームと同期するのに十分な時間があります。また、顧客が週末に時間を予約しても月曜日の朝一番からコールが入らないようにするためのバッファー時間にもなります。
-      - 変更メモ: ロールに慣れ、十分な経験を積んだら、より多くの顧客予約を促進するために条件を 2 日から 1 日に短縮することを検討してください。
-  - このタイプのイベントの 1 日あたりの最大許容イベント数: 2
-    - ベストプラクティスのメモ: メモ/録音を確認してフォローアップ対応の調査を開始する時間とスペースを確保できるほか、CSM/CSE としての他の職務（ウェビナー Q&A のサポート、専門的開発、内部ミーティング、集中時間など）も処理できます。
-  - タイムゾーンの表示: 自動検出
-  - シークレットイベント: チェックなし/無効
+- (Additional rules for your availability セクション・リンクを展開)
+  - 開始時刻の刻み: 30 分（顧客に予約オプションを多く提供できます）
+  - スケジューリング条件
+    - 招待者がイベント開始時刻の 2 日以内には予約できないように設定
+      - ベストプラクティス: 新入社員やオンボーディングを終えたばかりの場合、2 日あれば顧客のリサーチ、サポートチケットや GitLab Issue のレビュー、必要に応じたアカウントチームとのすり合わせに十分な時間が取れます。また、顧客が週末に時間を予約しても、例えば月曜日の朝一番にコールが入らないようバッファを確保できます。
+      - 変更時のメモ: ロールに慣れて十分な経験を積んだら、予約をより多く促すために、2 日を 1 日に短縮することを検討してください。
+  - このイベントタイプで 1 日に許可するイベント数の上限: 2
+    - ベストプラクティス: メモや録画のレビュー、フォローアップのリサーチ開始、そして CSM としてのほかの業務（ウェビナーの Q&A 支援、専門的な成長、社内ミーティング、集中時間など）に必要な時間と余裕を確保できます。
+  - タイムゾーン表示: 自動検出
+  - シークレットイベント: 無効

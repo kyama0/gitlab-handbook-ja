@@ -1,11 +1,11 @@
 ---
 title: "フェーズテンプレート"
 upstream_path: /handbook/product-development/how-we-work/product-development-flow/phase-template/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
+lastmod: "2026-05-22T14:47:44+02:00"
+translated_at: "2026-05-22T21:47:45Z"
 translator: claude
 stale: false
-lastmod: "2025-07-02T12:41:38-07:00"
 ---
 
 ### Track Phase X: Phase Name
@@ -23,7 +23,7 @@ Label: `~label`
 
 #### 説明
 
-フェーズの説明...
+フェーズの説明…
 <!-- The description should capture the intent of the phase. Why does it exist and what are the basic motions involved with the phase? Be clear and write with brevity. 
 
 example from build > launch:
@@ -36,7 +36,7 @@ example from build > launch:
 example: 
 outcomes / outputs = What must be accomplished during the phase
 activities = opportunities and suggestions to satisfy the outcomes / outputs
-DRI = who is responsible for ensuring this outcome is completed (Product Manager, Engineering, Product Designer, SET, etc...)
+DRI = who is responsible for ensuring this outcome is completed (Product Manager, Engineering, Product Designer, etc...)
 -->
 | 🔎アウトカム | アクティビティ | DRI |
 |---|---|---|
@@ -46,4 +46,4 @@ DRI = who is responsible for ensuring this outcome is completed (Product Manager
 #### 必須アウトカム
 
 <kbd class="required">必須 🔎</kbd>
-**アウトカム #** - 必須アウトカムの説明。そのアウトカムや必要なアウトプットについて、より深く理解できるように記述します。
+**アウトカム #** - 必須アウトカムの説明。そのアウトカムの内容や必要なアウトプットをより深く理解できるように記述します。
