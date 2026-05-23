@@ -55,13 +55,14 @@ jobs:
         # data/public/* を参照するページが多数あるため、upstream と同じ方式で
         # ビルド前に動的に取得する（git に入れない方針）。
         #
-        # Workaround: release_post_managers.yml was removed from
-        # www-gitlab-com (404) but is still listed in upstream/scripts/sync-data.sh.
-        # `set -eu` aborts the script on first download failure, so we strip the
-        # entry from the list and provide an empty stub for the
-        # release-post-scheduling shortcode (which ranges
-        # site.Data.public.release_post_managers.releases).
-        # Remove once upstream drops the reference.
+        # ワークアラウンド: release_post_managers.yml は www-gitlab-com から
+        # 削除されて 404 を返すようになったが、upstream/scripts/sync-data.sh の
+        # data_files にはまだ残っている。スクリプトは `set -eu` で走るため
+        # 最初の 404 で sync 全体が落ち、Hugo ビルドに到達できない。
+        # そこで対象エントリを sed で除外し、release-post-scheduling
+        # shortcode（site.Data.public.release_post_managers.releases を range
+        # する）が壊れないように空スタブを事前生成する。
+        # upstream が参照を消したら本ステップは元に戻すこと。
         run: |
           sed -i '/release_post_managers\.yml/d' upstream/scripts/sync-data.sh
           mkdir -p data/public
