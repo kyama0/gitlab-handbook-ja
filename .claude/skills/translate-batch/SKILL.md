@@ -188,41 +188,48 @@ upstream に `*.html.md` があるが翻訳が `.md` で存在する場合、man
 
 PR を作成したら、そのまま Codex のレビューを待ち、自分で対応してマージするところまで一気通貫で行う。翻訳バッチ PR は **base=main** なので、Codex が承認サイン (PR 本文への 👍 リアクション) を出して CI が CLEAN になったら自分でマージする — 先生に通知してマージを待つ必要はない。
 
-**承認の判定基準**: Codex は明示的な `APPROVED` レビューを返さない。**PR の説明 (body) に Codex がサムズアップ (👍 / `+1`) リアクションを付けた時点 = 指摘事項なしの承認サイン** とみなす。これが付くまで「指摘対応 → `@codex review` で再依頼 → ポーリング」を繰り返す。
+**承認の判定基準**: Codex は明示的な `APPROVED` レビューを返さない。**PR 本文 (body) に Codex (`chatgpt-codex-connector`) がサムズアップ (👍 / `+1`) リアクションを付けており、かつ全レビュースレッドが resolved になっている時点 = 承認サイン** とみなす。`+1` リアクションは必ず `user.login == "chatgpt-codex-connector"` でフィルタする — 人間や他 bot の 👍 でマージしてしまわないこと。これが揃うまで「指摘対応 → `@codex review` で再依頼 → ポーリング」を繰り返す。
+
+> **stale 👍 リスク対策**: 過去ラウンドで付いた Codex の 👍 はそのまま残るため、新ラウンドで未解決スレッドが追加されたケースでも 👍 だけでマージしてしまう恐れがある。判定では **未解決スレッドゼロ** を明示的な AND 条件にすること（後述 6-1 の判定フロー参照）。
 
 ### 6-1: レビュー待ち — 3 分間隔のポーリング
 
 Codex のレビュー完了では GitHub のイベント (webhook / subscribe) が発火しないことが多い。`ScheduleWakeup` で **180 秒間隔**のポーリングループに入り、毎回以下を確認して状態遷移を判定する。
 
 ```bash
-# (a) PR 本文への 👍 リアクション数 (Codex が承認したかの判定)
-gh api repos/kyama0/gitlab-handbook-ja/issues/${PR_NUM}/reactions \
-  --jq '[.[] | select(.content=="+1")] | {count: length, users: [.[].user.login]}'
+# (a) PR 本文への Codex 👍 リアクション件数 (chatgpt-codex-connector 限定、全ページ走査)
+gh api --paginate repos/kyama0/gitlab-handbook-ja/issues/${PR_NUM}/reactions \
+  --jq '.[] | select(.content=="+1" and .user.login=="chatgpt-codex-connector") | .id' \
+  | wc -l
+# 1 以上なら Codex 承認サインあり。0 ならまだ。
 
-# (b) 未解決レビュースレッド数
-gh api graphql -f query='
-{
+# (b) 未解決レビュースレッド数 (gh が pageInfo を見て自動 paginate)
+gh api graphql --paginate -f query='
+query($endCursor: String) {
   repository(owner: "kyama0", name: "gitlab-handbook-ja") {
     pullRequest(number: '${PR_NUM}') {
-      reviewThreads(first: 50) {
+      reviewThreads(first: 100, after: $endCursor) {
         nodes { isResolved }
+        pageInfo { hasNextPage endCursor }
       }
     }
   }
-}' --jq '[.data.repository.pullRequest.reviewThreads.nodes[] | select(.isResolved==false)] | length'
+}' --jq '.data.repository.pullRequest.reviewThreads.nodes[] | select(.isResolved==false) | .isResolved' \
+  | wc -l
+# 0 なら未解決ゼロ。
 
 # (c) マージ可能性・CI 状況
 gh pr view ${PR_NUM} --repo kyama0/gitlab-handbook-ja \
   --json mergeable,mergeStateStatus,statusCheckRollup \
-  --jq '{mergeable, mergeStateStatus, ci: [.statusCheckRollup[] | {name: .name, conclusion: .conclusion, status: .status}]}'
+  --jq '{mergeable, mergeStateStatus, ci: [.statusCheckRollup[]? | {name: .name, conclusion: .conclusion, status: .status}]}'
 ```
 
-判定フロー (上から優先):
+判定フロー (上から順に評価し、最初に当たったブランチに進む):
 
-- **PR body に Codex の 👍 リアクションあり** & CI CLEAN & MERGEABLE → 6-1A に進む（マージ）
 - **CONFLICTING** → 6-3 に進む（コンフリクト解消）
 - **CI failed** → CI ログを調査して fix し push、その後 6-1 に戻る
-- **未解決スレッドあり** (Codex が指摘を投稿した) → 6-2 に進む（指摘対応）
+- **未解決スレッドあり** (Codex が指摘を投稿した) → 6-2 に進む（指摘対応）。stale 👍 が残っていてもこの分岐が先に走るため誤マージしない
+- **未解決スレッドゼロ AND Codex (`chatgpt-codex-connector`) からの 👍 リアクションが 1 件以上 AND CI CLEAN AND MERGEABLE** → 6-1A に進む（マージ）。**4 条件すべての AND を必ず確認すること**
 - **どれでもない** (まだレビュー進行中) → `ScheduleWakeup delaySeconds=180` で次のポーリングを予約
 
 **ポーリングのタイムアウト目安**: 累計 30 分以上 👍 もスレッドも CI 変化も無いまま動かない場合、`gh pr comment ${PR_NUM} --body "@codex review"` でレビューを再依頼してから再度ポーリング。
