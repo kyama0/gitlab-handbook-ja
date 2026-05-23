@@ -3,11 +3,11 @@ title: GitLab Dedicated CMOC 業務の遂行方法
 category: On-call
 description: "サポートエンジニアリングにおける GitLab Dedicated CMOC ローテーションの役割と責任の説明"
 upstream_path: /handbook/support/workflows/dedicated_cmoc/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-08T09:25:56+00:00"
+lastmod: "2026-05-22T11:27:49+08:00"
 ---
 
 ## はじめに
@@ -201,7 +201,7 @@ Zendesk チケットをクローズする前に、以下を行ってください
 
 ## 同時インシデントでページされる場合
 
-サポートエンジニアは、複数のインシデントを管理することは期待されていません。同時の GitLab.com インシデントまたは GitLab Dedicated コンタクトリクエストが入ってきた場合、新しいインシデントのカバレッジを見つけるために、[サポートマネージャーオンコール](/handbook/support/workflows/support_manager-on-call/) と関わってください。
+サポートエンジニアは、複数のインシデントを管理することは期待されていません。同時の GitLab.com インシデントまたは GitLab Dedicated コンタクトリクエストが入ってきた場合、新しいインシデントのカバレッジを見つけるために、[Support Leader on the Hook (SLOTH)](/handbook/support/workflows/support-leader-on-the-hook/) と関わってください。
 
 Slack で `@support-manager-oncall` を使ってサポートマネージャーオンコールに ping できます。
 

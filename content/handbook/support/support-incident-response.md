@@ -2,11 +2,11 @@
 title: サポートインシデント対応フレームワーク
 description: コラボレーション、イテレーション、透明性を通じて重要な瞬間に顧客に成果を届け、インシデントを信頼の機会へと変えます。
 upstream_path: /handbook/support/support-incident-response/
-upstream_sha: 18c3e90de89449f1cbbf92c21776a3ea7899476c
-translated_at: "2026-05-08T18:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2025-06-03T19:20:56+10:00"
+lastmod: "2026-05-22T11:27:49+08:00"
 ---
 
 ## サポートインシデント対応フレームワーク
@@ -123,7 +123,7 @@ Resolution->>Detection: Incident Closure
 
 **主な焦点:** エスカレーション管理とサポートチームリソース調整
 
-**ハンドブック:** [Support Manager On-Call](/handbook/support/workflows/support_manager-on-call/)
+**ハンドブック:** [Support Leader on the Hook (SLOTH)](/handbook/support/workflows/support-leader-on-the-hook/)
 
 - インシデント中に Support Ticket Attention Requests を処理
 - 緊急事態の認定について最終的な判断を下す

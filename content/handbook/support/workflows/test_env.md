@@ -3,11 +3,11 @@ title: テスト環境
 category: Infrastructure for troubleshooting
 description: "サポートエンジニアのテスト環境のセットアップ選択肢とガイドライン"
 upstream_path: /handbook/support/workflows/test_env/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T03:10:58Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-11T09:03:18+01:00"
+lastmod: "2026-05-21T21:56:48+01:00"
 ---
 
 ## 適切なテスト環境の選択
@@ -33,7 +33,7 @@ lastmod: "2026-02-11T09:03:18+01:00"
 
 テスト用にライセンスが必要な場合:
 
-- **self-managed インスタンス** については、[チームメンバー向け GitLab プランまたはライセンス](/handbook/support/internal-support/#gitlab-plan-or-license-for-team-members) を参照してください。
+- **self-managed インスタンス** については、[チームメンバー向け self-managed / GDK での Premium/Ultimate 機能のアンロック](/handbook/support/internal-support/#unlock-premiumultimate-features-on-self-managed--gdk-for-team-members) を参照してください。
 - **GitLab.com** については、ライセンスが事前に適用された個別のテスト namespace が、オンボーディングの一環としてプロビジョニングされています。
 
 *顧客向けのライセンスは生成できません*。自分自身のテスト目的にのみ使用してください。

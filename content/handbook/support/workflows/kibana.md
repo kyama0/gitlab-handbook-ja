@@ -3,11 +3,11 @@ title: Kibana の使い方
 description: "Kibana とは何か、検索方法、結果の解釈方法、そこから特定の情報を取得するためのヒントとコツについての情報。"
 category: Infrastructure for troubleshooting
 upstream_path: /handbook/support/workflows/kibana/
-upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-06T18:13:37-08:00"
+lastmod: "2026-05-23T09:09:11+10:00"
 ---
 
 ## 概要

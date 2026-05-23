@@ -2,11 +2,11 @@
 title: "Marketo"
 description: "Marketo は、メールマーケティング、リード管理、プログラム管理に使用される私たちのマーケティングオートメーションプラットフォームです。"
 upstream_path: /handbook/marketing/marketing-operations/marketo/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-04-17T16:13:00-07:00"
+lastmod: "2026-05-22T14:48:30-06:00"
 ---
 
 ## Marketo について
@@ -219,7 +219,7 @@ dataLayer.push(
 
 ## MQL とリードスコアリング
 
-マーケティング適格リード（Marketing Qualified Lead）とは、デモグラフィック/ファーモグラフィックおよび/または行動情報に基づいて `100` ポイントの閾値に達したリードのことです。[MQL スコアリング](/handbook/marketing/marketing-operations/marketo/#scoring-model)は以下に詳述されており、ポジティブまたはネガティブなポイント値で重み付けされたさまざまなアクションおよび/またはプロフィールデータで構成されています。
+マーケティング適格リード（Marketing Qualified Lead）とは、デモグラフィック/ファーモグラフィックおよび/または行動情報に基づいて `100` ポイントの閾値に達したリードのことです。[MQL スコアリング](/handbook/marketing/marketing-operations/marketo/#scoring-models)は以下に詳述されており、ポジティブまたはネガティブなポイント値で重み付けされたさまざまなアクションおよび/またはプロフィールデータで構成されています。
 
 ビジュアルな概要については、この[スライド](https://docs.google.com/presentation/d/1KMyzQm_-7V7jeSJZuiedmIINti_uEWiW0NBYiX5viSA)を使用してください。
 
@@ -296,7 +296,6 @@ FY25 開始時に行われたリードスコアリングへのデータ駆動型
 | Web Chat - <br>Qualified  |ウェブチャットインタラクションまたはミーティング予約 | +100 | 1日1回 |
 |* Inbound - Med|インバウンドフォーム、上記以外で Startup 申請者を除く |    +100|1日1回|
 |MM+ Valuable Trials | MM+ および EDU 除外の Valuable Trials（SaaS および Self-Managed）  |+100 |6ヶ月に1回|
-|Trials that are Setup for team/company Use|チーム/会社用にセットアップされたトライアル|+100|6ヶ月に1回|
 
 #### ビヘイビアスコアリング
 
@@ -367,9 +366,27 @@ FY25 開始時に行われたリードスコアリングへのデータ駆動型
 |Email: Unsubscribed|Email から購読解除|    デモグラフィックスコアに基づくスコアリセット    |1ヶ月に1回|
 
 | **デモグラフィック減衰** |**キャンペーン説明**|**削除ポイント**|**スケジュール/フロー制限**|
+|------|------|------|------|
 |ジェネリックドメイン|[ジェネリックメールドメインを含む](https://docs.google.com/spreadsheets/d/1IO7DAIvhAhvIydkvLjwP-X_g97Zharf8JpkSVIsmiSs/edit?usp=sharing)|    -10    |1回|
 |シニアリティ - ネガティブ|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    -10    |    1回|
 |ファンクション - ネガティブ|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    -20    |  1回|
+
+#### トライアル閾値スコアリング
+
+標準のリードスコアリングモデルに加えて、GitLab は GitLab トライアル専用のセカンダリスコアリングモデルを活用し、特定の特性を示すトライアルユーザーを `MQL` させることを意図しています。トライアル閾値スコアリングシステムは、元のリードスコアリングワークフローと連携して機能します。スコアリングメカニズムは、AMER、APAC、EMEA リージョン内で、各リージョンの最も早いタイムゾーンに基づき、1 日 2 回、08:00 と 14:00 に発火します。トライアルユーザーは `25` ポイントに達すると `MQL` し、その後さらなるスコアリングから除外されます。スコアリングメカニズムは、プログラムメンバーシップと [Days Since Trial Counter](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC72010C3ZN19) でフィルタリングされ、これはトライアル開始の `40 日` 後に終了します。
+
+| **トライアルスコアリング特性**| **スコアリングの説明** | **割り当てポイント** | 
+| ------ | ------ | ------| ------ |
+|   6sense Grade     |   A-D のうち 6sense が割り当てるランキング     | `A` = +15<br>`B` = +7<br>`C` = +0<br>`D` = +3 |
+|   6sense Profile     |  6sense が割り当てる `Weak`、`Moderate`、または `Strong` のランキング      | `Strong` = +12<br>`Moderate` = +5<br>`Weak` = +0|
+|非公開メールドメイン|メールアドレスが一般公開されているドメインとして識別されていない|+10 |
+|利用された Duo 機能の数|トライアル期間中に採用された Duo 機能の数に応じてスコアを割り当て| `0` = +0<br>`1` = +5<br>`2` = +10<br>`3+` = +15 |
+|ユーザーの役職が管理職か？| Customer Database から引き継がれたブール値で判定| +10|
+|ユーザーに一致するアカウントがあるか？|コンタクトとアカウントの関係、または Traction がリードをアカウントに一致させようとすることで判定された一致アカウント|+5 |
+|ユーザーに対象となる役職があるか？|Customer Database が `Upper Management` または `Platform / Ops / Infrastructure Engineering` に関連する役職を共有している場合にスコアリング| `Upper Management` = +8 <br>`Platform / Ops / Infrastructure Engineering` = +0 |
+|PTP Score| PTP グループが 3-5 の場合にスコアリング| `3` = +2 <br> `4` = +7<br> `5` = +10|
+|LATAM 以外のリージョンか？|LATAM を除くすべてのリージョンでスコアが加算される| `+3` |
+|有効化された GitLab 製品ステージの数| 製品が一定レベルの製品ステージ採用を記録した場合にスコアを受け取る| `1 stage` = +2 <br> `2 stages` = +7 <br> `3+ stages` = +12 |
 
 ### リードスコア分類
 
@@ -727,7 +744,7 @@ MSI には主要なコンポーネントがいくつかあります:
 
 ### Score
 
-最近のスコア変更を確認するには、このタブを使用します。これは、人物が現在のスコアを達成するために取ったさまざまなアクティビティをすべて確認するのに役立ちます。スコアリングを引き起こしたキャンペーンは、上記の[スコアリングルーブリック](/handbook/marketing/marketing-operations/marketo/#scoring-model)とクロスリファレンスできます。
+最近のスコア変更を確認するには、このタブを使用します。これは、人物が現在のスコアを達成するために取ったさまざまなアクティビティをすべて確認するのに役立ちます。スコアリングを引き起こしたキャンペーンは、上記の[スコアリングルーブリック](/handbook/marketing/marketing-operations/marketo/#scoring-models)とクロスリファレンスできます。
 
 ### Email
 
