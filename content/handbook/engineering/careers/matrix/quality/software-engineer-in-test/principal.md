@@ -13,7 +13,7 @@ stale: false
 
 ## Quality 部門コンピテンシー: Principal
 
-{{% include "includes/engineering-careers/quality-career-nav.md" %}}
+<!-- include omitted: includes/engineering-careers/quality-career-nav.md (no localized version under content/ja/) -->
 
 **GitLab の Principal は以下のコンピテンシーを発揮することが期待されます:**
 
@@ -23,17 +23,17 @@ stale: false
 
 ---
 
-### Principal リーダーシップコンピテンシー
+### Principal リーダーシップコンピテンシー {#principal-leadership-competencies}
 
-{{% include "includes/engineering-careers/principal-leadership-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/principal-leadership-competency.md (no localized version under content/ja/) -->
   
-### Principal テクニカルコンピテンシー
+### Principal テクニカルコンピテンシー {#principal-technical-competencies}
 
-{{% include "includes/engineering-careers/quality-principal-technical-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/quality-principal-technical-competency.md (no localized version under content/ja/) -->
 
-### Principal バリュー整合性
+### Principal バリュー整合性 {#principal-values-alignment}
 
-{{% include "includes/engineering-careers/values-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->
 
 ### Principal キャリアマトリクスワークシート
 

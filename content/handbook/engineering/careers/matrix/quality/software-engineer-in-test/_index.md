@@ -13,7 +13,7 @@ stale: false
 
 ## Software Engineer in Test キャリアフレームワーク
 
-{{% include "includes/engineering-careers/quality-career-nav.md" %}}
+<!-- include omitted: includes/engineering-careers/quality-career-nav.md (no localized version under content/ja/) -->
 
 これらは GitLab における Software Engineer in Test のチームメンバーに期待されるコンピテンシーです。
 

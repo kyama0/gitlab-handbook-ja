@@ -13,7 +13,7 @@ stale: false
 
 ## Quality 部門のコンピテンシー: Staff
 
-{{% include "includes/engineering-careers/quality-career-nav.md" %}}
+<!-- include omitted: includes/engineering-careers/quality-career-nav.md (no localized version under content/ja/) -->
 
 **GitLab の Staff には、以下のコンピテンシーを発揮することが期待されます:**
 
@@ -23,17 +23,17 @@ stale: false
 
 ---
 
-### Staff リーダーシップコンピテンシー
+### Staff リーダーシップコンピテンシー {#staff-leadership-competencies}
 
-{{% include "includes/engineering-careers/staff-leadership-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/staff-leadership-competency.md (no localized version under content/ja/) -->
   
-### Staff テクニカルコンピテンシー
+### Staff テクニカルコンピテンシー {#staff-technical-competencies}
 
-{{% include "includes/engineering-careers/quality-staff-technical-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/quality-staff-technical-competency.md (no localized version under content/ja/) -->
 
-### Staff バリューアライメント
+### Staff バリューアライメント {#staff-values-alignment}
 
-{{% include "includes/engineering-careers/values-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->
 
 ### Staff キャリアマトリクスワークシート
 

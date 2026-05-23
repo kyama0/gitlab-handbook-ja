@@ -13,7 +13,7 @@ stale: false
 
 ## Quality 部門コンピテンシー: Senior
 
-{{% include "includes/engineering-careers/quality-career-nav.md" %}}
+<!-- include omitted: includes/engineering-careers/quality-career-nav.md (no localized version under content/ja/) -->
 
 **GitLab の Senior は以下のコンピテンシーを発揮することが期待されます:**
 
@@ -23,17 +23,17 @@ stale: false
 
 ---
 
-### Senior リーダーシップコンピテンシー
+### Senior リーダーシップコンピテンシー {#senior-leadership-competencies}
 
-{{% include "includes/engineering-careers/senior-leadership-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/senior-leadership-competency.md (no localized version under content/ja/) -->
   
-### Senior テクニカルコンピテンシー
+### Senior テクニカルコンピテンシー {#senior-technical-competencies}
 
-{{% include "includes/engineering-careers/quality-senior-technical-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/quality-senior-technical-competency.md (no localized version under content/ja/) -->
 
-### Senior バリュー整合性
+### Senior バリュー整合性 {#senior-values-alignment}
 
-{{% include "includes/engineering-careers/values-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->
 
 ### Senior キャリアマトリクスワークシート
 

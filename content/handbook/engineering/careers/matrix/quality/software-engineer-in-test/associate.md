@@ -13,7 +13,7 @@ stale: false
 
 ## Quality 部門コンピテンシー: Associate
 
-{{% include "includes/engineering-careers/quality-career-nav.md" %}}
+<!-- include omitted: includes/engineering-careers/quality-career-nav.md (no localized version under content/ja/) -->
 
 **GitLab の Associate は以下のコンピテンシーを発揮することが期待されます:**
 
@@ -23,14 +23,14 @@ stale: false
 
 ---
 
-### Associate リーダーシップコンピテンシー
+### Associate リーダーシップコンピテンシー {#associate-leadership-competencies}
 
-{{% include "includes/engineering-careers/associate-leadership-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/associate-leadership-competency.md (no localized version under content/ja/) -->
 
-### Associate テクニカルコンピテンシー
+### Associate テクニカルコンピテンシー {#associate-technical-competencies}
 
-{{% include "includes/engineering-careers/quality-associate-technical-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/quality-associate-technical-competency.md (no localized version under content/ja/) -->
 
-### Associate バリュー整合性
+### Associate バリュー整合性 {#associate-values-alignment}
 
-{{% include "includes/engineering-careers/values-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->

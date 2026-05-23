@@ -9,7 +9,7 @@ translator: claude
 stale: false
 ---
 
-{{% include "includes/engineering-careers/career-matrix-nav.md" %}}
+<!-- include omitted: includes/engineering-careers/career-matrix-nav.md (no localized version under content/ja/) -->
 
 これらは GitLab における職種別でチームメンバーに期待されるコンピテンシーです。
 

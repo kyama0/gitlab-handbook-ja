@@ -13,7 +13,7 @@ stale: false
 
 ## Quality 部門コンピテンシー: Intermediate
 
-{{% include "includes/engineering-careers/quality-career-nav.md" %}}
+<!-- include omitted: includes/engineering-careers/quality-career-nav.md (no localized version under content/ja/) -->
 
 **GitLab の Intermediate は以下のコンピテンシーを発揮することが期待されます:**
 
@@ -23,17 +23,17 @@ stale: false
 
 ---
 
-### Intermediate リーダーシップコンピテンシー
+### Intermediate リーダーシップコンピテンシー {#intermediate-leadership-competencies}
 
-{{% include "includes/engineering-careers/intermediate-leadership-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/intermediate-leadership-competency.md (no localized version under content/ja/) -->
   
-### Intermediate テクニカルコンピテンシー
+### Intermediate テクニカルコンピテンシー {#intermediate-technical-competencies}
 
-{{% include "includes/engineering-careers/quality-intermediate-technical-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/quality-intermediate-technical-competency.md (no localized version under content/ja/) -->
 
-### Intermediate バリュー整合性
+### Intermediate バリュー整合性 {#intermediate-values-alignment}
 
-{{% include "includes/engineering-careers/values-competency.md" %}}
+<!-- include omitted: includes/engineering-careers/values-competency.md (no localized version under content/ja/) -->
 
 ### Intermediate キャリアマトリクスワークシート
 

@@ -30,7 +30,7 @@ SLOTH は一般的に以下に責任を持ちます。
 
 **注:** あなた（または CMOC/CEOC）は、別の GitLab チーム（SIRT チームなど）の代わりに GitLab ユーザーへ連絡するよう求められる場合があります。これらのリクエストに対応するには [Sending Notices workflow](/handbook/support/workflows/sending_notices) に従ってください。
 
-## お客様の緊急事態およびインシデントの取り扱い
+## お客様の緊急事態およびインシデントの取り扱い {#handling-customer-emergencies-and-incidents}
 
 [Support Engineer on-call](/handbook/support/on-call/) はお客様の緊急事態に対する一次対応者です。SLOTH はこの作業を以下のようにサポートします。
 
@@ -112,7 +112,7 @@ STAR 処理の一部のステップはボットおよび自動応答機によっ
 
 STAR が追加注目のしきい値を満たさない場合があります。詳細は [main STAR page](/handbook/support/internal-support/support-ticket-attention-requests) を参照してください。そのような状況では `#support_ticket-attention-requests` のスレッドに戻り、起票者に通知してください。
 
-### STAR の解決
+### STAR の解決 {#resolving-a-star}
 
 STAR は、正しい次のステップが特定され進行中である場合に解決済みとみなされます。Zendesk チケットが Solved または Closed になる必要はありません。
 
@@ -124,7 +124,7 @@ STAR が解決されたら：
     - `~Escalation::License-Issue`：中心となる問題がライセンス／サブスクリプション関連であることを示す
     - `~Escalation::Response-Time`：リクエストの目的が、問題やケースへの応答を迅速化することにある場合に有用
 
-## Account Escalation の Support Manager DRI を見つける
+## Account Escalation の Support Manager DRI を見つける {#finding-a-support-manager-dri-for-an-account-escalation}
 
 サポートの関与が必要な Account Escalation が開かれた場合、Support Manager DRI を見つけるのは SLOTH の責任です。これが ASE アカウントの場合（org notes で確認できます）、Lissa Roberts（AMER）、Ilia Kosenko（EMEA）または Wei Meng Lee（APAC）に連絡してください。
 
@@ -154,7 +154,7 @@ STAR が解決されたら：
 1. フィードバックが Product または他チーム宛てのものであれば、適切なチャンネルで共有する。
 1. お客様とのやり取りから追加のアクションが生じた場合、Feedback Issue に戻ってそれらを記録する。
 
-## セキュリティインシデントの通知ポイントとして機能する
+## セキュリティインシデントの通知ポイントとして機能する {#act-as-a-notification-point-for-security-incidents}
 
 GitLab が[セキュリティインシデント](/handbook/security/security-operations/sirt/security-incident-communication-plan#extended-team-roles-responsibilities-and-points-of-contact)を経験した際、SLOTH はそのインシデントから生じるお客様コミュニケーションのトリアージと対応に責任を持ちます。これには [CMOC](/handbook/support/workflows/cmoc_workflows) の関与が含まれる場合があります。
 
