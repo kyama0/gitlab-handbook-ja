@@ -49,7 +49,7 @@ lastmod: "2025-11-19T13:56:02-06:00"
 
 緊急事態が gitlab.com または Dedicated 顧客の継続的なインシデントに関連する場合は、[DBRE エスカレーションプロセス](/handbook/engineering/data-engineering/database-excellence/database-operations/dbre-escalation-process/) に従ってください。
 
-緊急事態がセルフマネージドの顧客に関連する場合は、[#g_distribution](https://gitlab.enterprise.slack.com/archives/C1FCTU4BE) の [Distribution チーム](/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/)（内部）に連絡し、セルフマネージドの設定を管理してもらいます。
+緊急事態が Self-Managed の顧客に関連する場合は、[#g_distribution](https://gitlab.enterprise.slack.com/archives/C1FCTU4BE) の [Distribution チーム](/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/)（内部）に連絡し、Self-Managed の設定を管理してもらいます。
 
 ### 3. アプリケーションエラー {#3-application-errors}
 

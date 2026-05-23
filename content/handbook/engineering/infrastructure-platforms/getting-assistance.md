@@ -13,7 +13,7 @@ lastmod: "2026-05-01T07:28:41-06:00"
 
 インシデントを報告する必要がある場合は、[インシデント報告ページ](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident) の手順に従ってください。
 
-支援が必要で、どのサービスについて助けを求めたいかわかっている場合は、[テックスタック](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) でオーナーを探してください。以下にリストされている場合は、Request For Help Issue を作成してください。リストにない場合は、テックスタックファイルにある Slack チャンネルからオーナーに連絡してください。
+支援が必要で、どのサービスについて助けを求めたいかわかっている場合は、[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) でオーナーを探してください。以下にリストされている場合は、Request For Help Issue を作成してください。リストにない場合は、Tech Stack ファイルにある Slack チャンネルからオーナーに連絡してください。
 
 助けが必要ですが、誰に聞けばいいかわからない場合は、以下のチームを見て、あなたの質問に最適なチームを探してください。
 

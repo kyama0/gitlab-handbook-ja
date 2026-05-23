@@ -21,7 +21,7 @@ Dedicated Migration チームは[GitLab の有給休暇ポリシー](/handbook/p
 1. [**Dedicated Migrations Team カレンダー**](https://calendar.google.com/calendar/embed?src=c_fb53e24f590edfb8f313253126123e48d57254dd73266fae6547a2a4890b0c82%40group.calendar.google.com&ctz=America%2FVancouver)へのアクセス権を持っていることを確認してください。
    1. アクセス権がない場合は、Dedicated Migrations Team（`dedicated-migrations-team@`）のメンバーであるかどうかを確認してください。メンバーでない場合は、アクセスリクエストを通じて追加を依頼してください。
 
-1. Time Off by Deel と Google カレンダーのインテグレーションを設定し、個人カレンダーと「Dedicated Migrations Team」カレンダーを手動で更新する必要がないようにします。
+1. Time Off by Deel と Google Calendar のインテグレーションを設定し、個人カレンダーと「Dedicated Migrations Team」カレンダーを手動で更新する必要がないようにします。
    1. Slack で、左サイドバー下部の「Apps」の横にある `+` をクリックします
    1. 「Time Off by Deel」を検索して「View」をクリックします
    1. 「Home」の下で「Your Events」をクリックしてドロップダウンを表示します

@@ -67,7 +67,19 @@ jobs:
         run: npm ci
 
       - name: Sync upstream public data (team.yml, tech_stack.yml, ...)
-        run: bash upstream/scripts/sync-data.sh
+        # ワークアラウンド: release_post_managers.yml は www-gitlab-com から
+        # 削除されて 404 を返すようになったが、upstream/scripts/sync-data.sh の
+        # data_files にはまだ残っている。スクリプトは `set -eu` で走るため
+        # 最初の 404 で sync 全体が落ち、Hugo ビルドに到達できない。
+        # そこで対象エントリを sed で除外し、release-post-scheduling
+        # shortcode（site.Data.public.release_post_managers.releases を range
+        # する）が壊れないように空スタブを事前生成する。
+        # upstream が参照を消したら本ステップは元に戻すこと。
+        run: |
+          sed -i '/release_post_managers\.yml/d' upstream/scripts/sync-data.sh
+          mkdir -p data/public
+          printf 'releases: []\n' > data/public/release_post_managers.yml
+          bash upstream/scripts/sync-data.sh
 
       - name: Hugo build
         run: hugo --logLevel error

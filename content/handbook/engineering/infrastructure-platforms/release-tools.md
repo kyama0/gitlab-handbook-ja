@@ -34,7 +34,7 @@ Release Tools がリリースを実行する際、大まかに以下の手順を
 
 ## Release Tools の使用
 
-Release Tools は、現在アクティブなリリースマネージャーと、新機能のテストなど（テスト目的での）Delivery チームのメンバーのみが使用できます。Release Tools の使用は主に chatops と Slack を通じて行われます。例えば、セルフマネージドのリリースにタグを付けるには次を実行します。
+Release Tools は、現在アクティブなリリースマネージャーと、新機能のテストなど（テスト目的での）Delivery チームのメンバーのみが使用できます。Release Tools の使用は主に chatops と Slack を通じて行われます。例えば、Self-Managed のリリースにタグを付けるには次を実行します。
 
 ```text
 /chatops run release tag 42.0.0

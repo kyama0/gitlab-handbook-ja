@@ -218,7 +218,7 @@ _Claude Desktop:_ `~/Library/Application Support/Claude/claude_desktop_config.js
 
 **glab mcp（代替手段）**
 
-GitLab CLI は `glab mcp serve` を通じて実験的な MCP サーバーを提供しており、stdio トランスポートを介して同様の GitLab 機能を公開します。これは、ローカルでサーバーを実行したい場合や、セルフマネージドインスタンスに接続する必要がある場合に役立ちます。この機能は実験的とマークされており、変更される可能性があります。
+GitLab CLI は `glab mcp serve` を通じて実験的な MCP サーバーを提供しており、stdio トランスポートを介して同様の GitLab 機能を公開します。これは、ローカルでサーバーを実行したい場合や、Self-Managed インスタンスに接続する必要がある場合に役立ちます。この機能は実験的とマークされており、変更される可能性があります。
 
 ## 実験とドッグフーディング
 

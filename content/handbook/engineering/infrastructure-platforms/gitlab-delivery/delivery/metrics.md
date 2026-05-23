@@ -1,6 +1,6 @@
 ---
 title: "Delivery チームメトリクス"
-description: "Delivery チームは GitLab Engineering が GitLab.com とセルフマネージドのお客様に対して、安全でスケーラブルかつ効率的な方法で機能を届けられるよう支援します。"
+description: "Delivery チームは GitLab Engineering が GitLab.com と Self-Managed のお客様に対して、安全でスケーラブルかつ効率的な方法で機能を届けられるよう支援します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/metrics/"
 upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
 translated_at: "2026-04-28T00:00:00Z"

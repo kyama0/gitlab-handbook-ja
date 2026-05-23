@@ -84,18 +84,18 @@ Elasticsearch で環境のログを表示する際、`json.stage.keyword` が `c
 
 環境の [dashboards.gitlab.net](https://dashboards.gitlab.net) でメトリクスダッシュボードを表示する際、上部の `stage` ドロップダウンから `cny` を選択してください。
 
-### カナリアステージの機能フラグを変更するには
+### カナリアステージのフィーチャーフラグを変更するには
 
-機能フラグはデータベース（機能フラグが保存される場所）がメインとカナリアステージで共有されているため、環境に対して通常の [chatops プロセス](/handbook/support/workflows/chatops/#feature-flags)) に従って機能フラグを有効にすると、環境のメインとカナリアの両方のステージで変更されます。
+フィーチャーフラグはデータベース（フィーチャーフラグが保存される場所）がメインとカナリアステージで共有されているため、環境に対して通常の [chatops プロセス](/handbook/support/workflows/chatops/#feature-flags)) に従ってフィーチャーフラグを有効にすると、環境のメインとカナリアの両方のステージで変更されます。
 
 最もよく使用される環境の例は以下のとおりです
 
-ステージングと staging-canary の機能フラグ:
+ステージングと staging-canary のフィーチャーフラグ:
 
 * 有効化: `/chatops run feature set feature_flag_name true --staging`
 * 無効化: `/chatops run feature set feature_flag_name false --staging`
 
-本番と production-canary の機能フラグ:
+本番と production-canary のフィーチャーフラグ:
 
 * 有効化: `/chatops run feature set feature_flag_name true`
 * 無効化: `/chatops run feature set feature_flag_name false`

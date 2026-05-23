@@ -9,10 +9,10 @@ stale: false
 lastmod: "2025-10-23T22:12:50+00:00"
 ---
 
-## 私たちはCorpSecチームの一員になりました
+## 私たちは CorpSec チームの一員になりました
 
-ITエンドユーザーサービス（EUS）チームはCorpSecの一部となりました。この移管により、GitLabのセキュリティ目標との整合性を高め、すべてのGitLabメンバーへのより迅速でより良いサポートを提供できるようになります。
+ITエンドユーザーサービス（EUS）チームは CorpSec の一部となりました。この移管により、GitLab のセキュリティ目標との整合性を高め、すべての GitLab メンバーへのより迅速でより良いサポートを提供できるようになります。
 
 更新されたページは[こちら](/handbook/security/corporate/end-user-services/)をご覧ください。
 
-もちろん、#it_helpのSlackチャンネルやメールアドレス it-help@gitlab.com でも引き続きお問い合わせいただけます。
+もちろん、#it_helpの Slack チャンネルやメールアドレス it-help@gitlab.com でも引き続きお問い合わせいただけます。
