@@ -2,18 +2,18 @@
 title: 外部コミュニティからのマージリクエストトリアージ
 description: "GitLab.com プロジェクトで広いコミュニティから開かれた新しいマージリクエストをトリアージするためのガイドライン"
 upstream_path: /handbook/engineering/infrastructure-platforms/developer-experience/merge-request-triage/
-upstream_sha: 6a459a3ca969603754a3b5133342edb804d3012c
-translated_at: "2026-04-28T17:23:43Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-06T09:57:12-06:00"
+lastmod: "2026-05-22T14:47:44+02:00"
 ---
 
 GitLab では、私たちのミッションは[すべての人が貢献できる](/handbook/company/mission/#mission)よう、あらゆる創造的な作業を読み取り専用から読み書き可能に変えることです。GitLab はコミュニティの貢献を高く評価しており、コミュニティのコード貢献を引き続き成長させたいと考えています。GitLab はコミュニティが [`gitlab-org` グループ](https://gitlab.com/gitlab-org)配下のプロジェクトおよび [`gitlab-com/www-gitlab-com` プロジェクト](https://gitlab.com/gitlab-com/www-gitlab-com)に対して Issue を提出し、マージリクエストを開くことを奨励しています。これらの貢献は価値あるものであり、できる限り効果的に処理する必要があります。その中心となるのがトリアージ — タイプと製品グループによる分類プロセスです。
 
 GitLab チームメンバーであれば誰でもマージリクエストをトリアージできます。未トリアージのマージリクエスト数を少なく保つことはメンテナビリティに不可欠であり、私たち全員の共同責任です。他の業務と並行していくつかのマージリクエストをトリアージしたり、定期的に時間をスケジュールすることを検討してください。
 
-新たに受け取るコミュニティからのマージリクエストのトリアージはいくつかの部門に分かれています。Quality 部門はトリアージの自動化を維持し、[マージリクエストコーチ](/handbook/marketing/developer-relations/engineering/merge-request-coach-lifecycle)が部分的なマージリクエストトリアージを担い、最終的にトリアージの自動化がトリアージプロセスを完了させます。さらに、[Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/)がコミュニティコラボレーションの取り組みを推進し、GitLab への貢献に対してサポートと認識を受けられるようコミュニティと連携します。
+新たに受け取るコミュニティからのマージリクエストのトリアージはいくつかの部門に分かれています。[Developer Experience](/handbook/engineering/infrastructure-platforms/developer-experience/)はトリアージの自動化を維持し、[マージリクエストコーチ](/handbook/marketing/developer-relations/engineering/merge-request-coach-lifecycle)が部分的なマージリクエストトリアージを担い、最終的にトリアージの自動化がトリアージプロセスを完了させます。さらに、[Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/)がコミュニティコラボレーションの取り組みを推進し、GitLab への貢献に対してサポートと認識を受けられるようコミュニティと連携します。
 
 ## `gitlab-org` グループのマージリクエストトリアージ
 

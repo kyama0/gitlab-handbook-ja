@@ -1,11 +1,11 @@
 ---
 title: GitLab リポジトリ
 upstream_path: /handbook/engineering/workflow/gitlab-repositories/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-19T19:48:12+00:00"
+lastmod: "2026-05-21T17:29:09+02:00"
 ---
 
 GitLab は多くのサブプロジェクトで構成されています。GitLab プロジェクトの厳選されたリストは [GitLab エンジニアリングプロジェクト](/handbook/engineering/projects/)ページで確認できます。
@@ -44,8 +44,7 @@ GitLab は多くのサブプロジェクトで構成されています。GitLab 
 1. プロジェクトには、[MR 承認ルールと保護ブランチ設定の最小ベースライン設定](/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements/)が必要です。
 1. プロジェクトには[`ユーザーがアクセスをリクエストできる`設定を無効化](https://docs.gitlab.com/ee/user/project/members/index.html#prevent-users-from-requesting-access-to-a-project)して、意図しない外部アクセスの付与を防ぎます。
 1. 必要に応じて、[デフォルトの CI/CD 設定をセットアップ](#cicd-configuration)してください。
-1. プロジェクトが顧客に出荷される作業の一部である場合、そのファイルへの MR を開くか[エンジニアリングプロダクティビティの定めるプロセス](/handbook/product/groups/product-analysis/engineering/dashboards)に従って [projects_part_of_product.csv](https://gitlab.com/gitlab-data/analytics/blob/master/transform%2Fsnowflake-dbt%2Fdata%2Fprojects_part_of_product.csv) に追加してください。
-1. [AppSec](/handbook/security/product-security/security-platforms-architecture/application-security/) が[新しいプロジェクトを分類](/handbook/security/product-security/security-platforms-architecture/application-security/inventory.md#how-to-categorize-projects)できるよう協力してください。
+1. プロジェクトが顧客に出荷される作業の一部である場合、[エンジニアリングプロダクティビティメトリクス](/handbook/product/groups/product-analysis/engineering/metrics/#productivity-engineering-metrics)に従ってそのファイルへの MR を開き、[projects_part_of_product.csv](https://gitlab.com/gitlab-data/analytics/blob/master/transform%2Fsnowflake-dbt%2Fdata%2Fprojects_part_of_product.csv) に追加してください。このデータは、[セキュリティ属性](https://docs.gitlab.com/user/application_security/attributes/)を使用してセキュリティ目的でプロジェクトを分類するために使用されます。詳細については、[GitLab セキュリティプロジェクト分類](/handbook/security/product-security/security-platforms-architecture/application-security/classification.md)を参照してください。
 1. 適切な[セキュリティスキャナー](https://docs.gitlab.com/ee/user/application_security/)を有効にしてください。
 1. Renovate へのオンボーディング（<https://gitlab.com/gitlab-org/frontend/renovate-gitlab-bot>）と、定期的に発見事項をトリアージして依存関係を更新するプロセスのセットアップをしてください。
 1. リポジトリが公開の場合は、[セキュリティミラー](https://gitlab.com/gitlab-org/release/docs/blob/master/general/security/mirrors.md)を設定してください。

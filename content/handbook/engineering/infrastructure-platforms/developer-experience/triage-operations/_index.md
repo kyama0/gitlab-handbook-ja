@@ -2,11 +2,11 @@
 title: "Triage Operations"
 description: "GitLab でトリアージされていない Issue を処理するための自動化とツール"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/"
-upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
-translated_at: "2026-04-28T21:28:32Z"
+upstream_sha: "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1"
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-06T09:57:12-06:00"
+lastmod: "2026-05-22T14:47:44+02:00"
 ---
 
 GitLab のすべてのチームメンバーは Issue をトリアージできます。[トリアージされていない Issue](/handbook/product-development/how-we-work/issue-triage/#triaging-issues) の数を少なく保つことはメンテナビリティにとって不可欠であり、私たちの共同責任です。
@@ -19,14 +19,14 @@ Triage Operations・トリアージレポート・優先度と重大度ラベル
 
 ## 説明責任
 
-Quality Engineering 部門は、すべてのプロダクトおよびエンジニアリンググループが定められた SLA を守る責任を持つことを確保します。
+[Developer Experience](/handbook/engineering/infrastructure-platforms/developer-experience/) チームは、すべてのプロダクトおよびエンジニアリンググループが定められた SLA を守る責任を持つことを確保します。
 
 私たちの欠陥 SLA は以下で確認できます:
 
 * [優先度ラベル](/handbook/product-development/how-we-work/issue-triage/#priority)
 * [重大度ラベル](/handbook/product-development/how-we-work/issue-triage/#severity)
 
-Quality Engineering 部門は、この目標を達成するために手動介入に加えて多くのツールと自動化を採用しています。
+Developer Experience チームは、この目標を達成するために手動介入に加えて多くのツールと自動化を採用しています。
 この分野の作業は、Triage と Measure のトラックの作業として部門ロードマップで確認できます。
 
 ## ラベルの名前変更

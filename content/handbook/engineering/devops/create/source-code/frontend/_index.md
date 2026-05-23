@@ -2,11 +2,11 @@
 title: "Create:Source Code FE チーム"
 description: Create:Source Code FE チームは、Create ステージの Source Code グループに属するプロダクトカテゴリのすべてのフロントエンド側面を担当します。
 upstream_path: /handbook/engineering/devops/create/source-code/frontend/
-upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
-translated_at: "2026-04-28T11:23:44Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-09T10:28:57+01:00"
+lastmod: "2026-05-22T14:47:44+02:00"
 ---
 
 ## 共通リンク

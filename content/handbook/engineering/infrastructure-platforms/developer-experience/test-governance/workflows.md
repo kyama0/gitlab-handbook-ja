@@ -2,11 +2,11 @@
 title: "Test Governance グループのワークフロー"
 description: "このページには Test Governance グループの公式ワークフローが記載されています"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/test-governance/workflows/"
-upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
-translated_at: "2026-04-28T21:28:32Z"
+upstream_sha: "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1"
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-24T12:53:30-05:00"
+lastmod: "2026-05-22T14:47:44+02:00"
 ---
 
 ## Test Governance ワークフロー
@@ -165,8 +165,8 @@ lastmod: "2026-02-24T12:53:30-05:00"
 
 #### パイプライン DRI
 
-- **理由:** インシデントやさまざまな Issue を迅速に解決し、重大な財務的または評判的損害を防ぐために高可用性を確保する SET のオンコール形式。
-- **タイミング:** タイムゾーンに応じて SET の週次ローテーション
+- **理由:** インシデントやさまざまな Issue を迅速に解決し、重大な財務的または評判的損害を防ぐために高可用性を確保するオンコール形式。
+- **タイミング:** タイムゾーンに応じてバックエンドエンジニアの週次ローテーション
 - **誰が:** パイプライン DRI 当番の Test Governance チームメンバー
 - **対象:** 複数の環境で実行されるスケジュールパイプライン
 - **方法:** [パイプライン DRI の責任](/handbook/engineering/testing/oncall-rotation/#responsibility) を参照してください。
