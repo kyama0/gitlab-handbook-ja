@@ -27,4 +27,4 @@ GitLab のプロジェクトは [セキュリティ属性](https://docs.gitlab.c
 
 1. **新規プロジェクト**: [新規プロジェクトの作成](/handbook/engineering/workflow/gitlab-repositories/#creating-a-new-project) ガイドラインに従ってください。プロジェクトが製品インベントリに登録され次第、分類が自動的に適用されます。
 1. **誤った分類または不足している分類**: [Data チームの製品インベントリ](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/seeds/seed_engineering/projects_part_of_product.csv) にエントリを追加または訂正する MR を提出してください。同期パイプラインが 24 時間以内に属性変更を適用します。
-1. **スキーマ変更の提案**: 変更を行う前に、[product-security-meta](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-meta) で issue を起票し、プロダクトセキュリティチームと議論してください。
+1. **スキーマ変更の提案**: 変更を行う前に、[product-security-meta](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-meta) で Issue を起票し、プロダクトセキュリティチームと議論してください。

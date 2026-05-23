@@ -63,7 +63,7 @@ Testing Features を有効化することを選択する個人は、Customer を
 ## 3. FEEDBACK
 
 
-Customer による該当する Testing Feature の使用、テスト、および評価の一環として、Customer は Testing Feature の使用に関する提案、アイデア、機能拡張要求、その他の推奨事項（「Feedback」）を提供することができ、ここに当該 Feedback に関するすべての権利を GitLab に取り消し不能な形で譲渡します。両当事者は、パブリックな GitLab issue の使用を含め、Testing Period 中に Feedback を交換するための適切な頻度、プロセス、および方法について相互に合意します（電子メールで十分です）。GitLab は、Customer に対する義務を負わず、制限なくいかなる Feedback も使用することができます。
+Customer による該当する Testing Feature の使用、テスト、および評価の一環として、Customer は Testing Feature の使用に関する提案、アイデア、機能拡張要求、その他の推奨事項（「Feedback」）を提供することができ、ここに当該 Feedback に関するすべての権利を GitLab に取り消し不能な形で譲渡します。両当事者は、パブリックな GitLab Issue の使用を含め、Testing Period 中に Feedback を交換するための適切な頻度、プロセス、および方法について相互に合意します（電子メールで十分です）。GitLab は、Customer に対する義務を負わず、制限なくいかなる Feedback も使用することができます。
 
 
 ## 4. CONFIDENTIALITY
