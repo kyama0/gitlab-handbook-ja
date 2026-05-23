@@ -67,7 +67,18 @@ jobs:
         run: npm ci
 
       - name: Sync upstream public data (team.yml, tech_stack.yml, ...)
-        run: bash upstream/scripts/sync-data.sh
+        # Workaround: release_post_managers.yml was removed from
+        # www-gitlab-com (404) but is still listed in upstream/scripts/sync-data.sh.
+        # `set -eu` aborts the script on first download failure, so we strip the
+        # entry from the list and provide an empty stub for the
+        # release-post-scheduling shortcode (which ranges
+        # site.Data.public.release_post_managers.releases).
+        # Remove once upstream drops the reference.
+        run: |
+          sed -i '/release_post_managers\.yml/d' upstream/scripts/sync-data.sh
+          mkdir -p data/public
+          printf 'releases: []\n' > data/public/release_post_managers.yml
+          bash upstream/scripts/sync-data.sh
 
       - name: Hugo build
         run: hugo --logLevel error
