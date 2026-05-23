@@ -2,72 +2,72 @@
 title: バディタスク
 draft: true
 upstream_path: /handbook/product/product-management/product-manager-buddy-tasks/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
+translated_at: "2026-05-22T21:55:06Z"
 translator: claude
 stale: false
-lastmod: "2026-03-06T09:57:12-06:00"
+lastmod: "2026-05-20T09:32:02-07:00"
 ---
 
-1. [ ] - 初日に新しいプロダクトマネージャーとの 1:1 を設定する
-1. [ ] - オンボーディング Issue をチェックインするリマインダーをスケジュールする。最初の 6 週間、彼らがどうしているか、どう手伝えるかなどを繰り返し確認する。
-1. [ ] - 役立つハンドブックページを提案する
-    - オンボーディングバディハンドブックページのページ
-    - Product 固有のページ
+1. [ ] - 新しいプロダクトマネージャーと Day 1 の 1:1 を設定する
+1. [ ] - 最初の 6 週間にわたって、相手のオンボーディング Issue の進捗、状況、こちらが手伝えることなどを定期的に確認するリマインダーを繰り返しでセットする
+1. [ ] - 役立ちそうなハンドブックページを提案する
+    - オンボーディングバディのハンドブックページにあるページ
+    - プロダクト固有のページ
         - [Validation Track](/handbook/product-development/how-we-work/product-development-flow/#validation-track)
         - [Product Development Timeline](/handbook/engineering/workflow/#product-development-timeline)
-        - [PM としてのデータへのアクセス取得](/handbook/enterprise-data/organization/programs/data-for-product-managers/)
-        - [製品方向の管理](/handbook/product/product-processes/#managing-your-product-direction)
-        - [PM として働く方法](/handbook/product/product-processes/#how-to-work-as-a-pm)
-    - 価格 / ティア関連
+        - [Getting Access to Data as a PM](/handbook/enterprise-data/organization/programs/data-for-product-managers/)
+        - [Managing your Product Direction](/handbook/product/product-processes/#managing-your-product-direction)
+        - [How to work as a PM](/handbook/product/product-processes/#how-to-work-as-a-pm)
+    - 価格・ティア関連
         - <https://handbook.gitlab.com/handbook/company/pricing/#three-tiers>
         - [Buyer Personas](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)
-    - カテゴリーの DRI を見つけるために [Product Categories ページ](/handbook/product/categories/)
-    - [ティアとグループ別の機能](/handbook/product/categories/features/)
+    - カテゴリの DRI を確認するための [Product Categories ページ](/handbook/product/categories/)
+    - [ティアとグループごとの機能一覧](/handbook/product/categories/features/)
     - [Analytics Direction Page](https://about.gitlab.com/direction/monitor/)
-    - 調査に役立つ
-        - [調査プロジェクトの開始方法 / タイミング](/handbook/product/ux/experience-research/)
-        - [UX プロジェクトの参加者を募集する方法](/handbook/product/ux/experience-research/recruiting-participants/)
+    - リサーチに役立つもの
+        - [リサーチプロジェクトの始め方・タイミング](/handbook/product/ux/experience-research/)
+        - [UX プロジェクトのリクルート方法](/handbook/product/ux/experience-research/recruiting-participants/)
         - Dovetail
             - [Dovetail へのアクセス取得](/handbook/security/corporate/end-user-services/access-requests/access-requests/)
             - [GitLab Dovetail プロジェクト](https://gitlab.dovetailapp.com/projects)
-            - [Dovetail でのインサイトの文書化](/handbook/product/ux/dovetail/)
+            - [Dovetail でのインサイト記録](/handbook/product/ux/dovetail/)
 1. [ ] - 自己紹介を促す
-    - #new_team_members で
-    - #product で
-        - 次の Product ミーティングで紹介され、GL の前にどこで働いていたか、なぜ加入したか、どこに住んでいるか、仕事外で何を楽しんでいるかを尋ねられます。
-            - 自己紹介の方法を共有できます。
-1. [ ] - 他の新入社員とのグループコールを企画することを推奨する
+    - #new_team_members
+    - #product
+        - 次のプロダクトミーティングで自己紹介の機会があり、GL に入る前にどこで働いていたか、なぜ参加したか、どこに住んでいるか、仕事以外の楽しみは何かを聞かれます。
+            - 自分がどう自己紹介したかを共有してもよいでしょう。
+1. [ ] - ほかの新入社員とのグループコールを設定するよう促す
 1. [ ] - Slack の紹介
     - 知っておくべきチャンネル
-        - Product 関連 - #product, #uxresearch, #competition, #analyst-relations, #analytics, #analytics-social など
-        - 楽しい - #random, #allcaps, #loc チャンネルやその他、楽しくて興味深いものを検索してみてください。
-    - ヒント / コツ
-        - 特に勤務時間と場所について、Slack のプロフィールを更新する
-        - 最も重要なチャンネルをスターチャンネルとして使う。
-        - 製品エリア、競合などについて通知を受けるためのキーワードを追加する
-1. [ ] - 最初の 6 週間、毎週今週答えられなかったことや、解決方法を尋ねるリマインダーを追加する。
-1. [ ] - 数日後にチームページの MR がマージされたかどうかを尋ねる。
-1. [ ] - Sensing mechanism のためのヒント / コツ
-    - [ハンドブック](/handbook/product/product-processes/sensing-mechanisms/) に sensing mechanism の良い内訳があります。役立つと感じたその他のことは:
-    - 顧客 / ユーザーがいる他の場所、たとえば [GitLab フォーラム](https://forum.gitlab.com/)、Discord、[Reddit](https://www.reddit.com/r/gitlab/)、[HackerNews](https://news.ycombinator.com/news) などに行くのは良いことです。
-    - Issue - 毎週のトリアージ Issue で見逃される可能性のある、グループに割り当てられた新しい Issue をレビューすることは良い実践です。Issue 作成から 1〜2 日以内にユーザーと問題 / 望ましい結果について議論する良い会話ができます。
-    - Slack - カテゴリ名、競合名などの [Slack アラート](https://slack.com/help/articles/4412437167251-Get-notified-about-topics-you-care-about) にキーワードを追加することは、参加しているチャンネルで浮上している Issue、潜在的な顧客などを把握する良い方法です。
-    - アナリストレポート - #analyst-relations チャンネルでアナリストのレポートへのアクセスを問い合わせることができます。
+        - プロダクト関連 - #product, #uxresearch, #competition, #analyst-relations, #analytics, #analytics-social など
+        - 楽しみ系 - #random, #allcaps, #loc 系のチャンネルなど。興味を持ちそうなものを検索してみるとよいです。
+    - Tips・コツ
+        - Slack のプロフィールを更新する。特に勤務時間と所在地。
+        - スター付きチャンネルを活用する。自分にとって最も重要なものを。
+        - 自分のプロダクト領域や競合などのキーワードを設定して、通知を受けられるようにする。
+1. [ ] - 最初の 6 週間は、週に 1 回「今週答えを得られなかったこと」「行き詰まりを解消する方法」を確認するリマインダーを追加する
+1. [ ] - 数日経ったら、チームページの MR がマージされたかを確認する
+1. [ ] - センシングメカニズムの Tips・コツ
+    - センシングメカニズムについては、[ハンドブック](/handbook/product/product-processes/sensing-mechanisms/) に良い解説があります。私が役に立つと感じたほかのものを挙げます。
+    - 顧客・ユーザーがいるほかの場所、例えば [GitLab フォーラム](https://forum.gitlab.com/) や Discord、[Reddit](https://www.reddit.com/r/gitlab/)、[HackerNews](https://news.ycombinator.com/news) などをチェックする。
+    - Issue - 週次トリアージで見落とされる可能性のある、自分のグループにアサインされた新しい Issue をレビューする習慣を持つとよいです。Issue 作成から 1〜2 日以内に、問題や望ましい結果についてユーザーと議論することで、良い会話が生まれることがあります。
+    - Slack - 自分のカテゴリ名や競合名などを [Slack アラート](https://slack.com/help/articles/4412437167251-Get-notified-about-topics-you-care-about) のキーワードに追加することは、参加しているチャンネルで浮上してくる Issue や潜在顧客などを把握するのに有効です。
+    - アナリストレポート - アナリストからのレポートへのアクセスについては、#analyst-relations チャンネルで問い合わせできます。
 1. [ ] - マイルストーンの流れ
     - [流れの大まかなタイムライン](/handbook/engineering/workflow/#product-development-timeline)
-    - [計画](/handbook/product/product-processes/#planning-issue-for-milestone)
-        - 各マイルストーンには、PM に割り当てられるキックオフ Issue が作成されます。計画 Issue をリンクし、キックオフコールが録画されたらそれもリンクします。
+    - [プランニング](/handbook/product/product-processes/#planning-issue-for-milestone)
+        - 各マイルストーンで PM 向けにキックオフ Issue が作成・アサインされます。そこに自分のプランニング Issue をリンクし、キックオフコールを録画したら記録してください。
     - キックオフコール
-        - そのマイルストーンでチームが取り組む Issue について、`~direction` かつ `~Deliverable` の Issue を優先してデザイナーと話すコールを開催します。
-    - マイルストーン中
-        - 開発チームからの ping / 質問や顧客 / ユーザーからの Issue の進捗に関する問い合わせを TODO で確認し、進捗を維持します。
-    - [リリース投稿](/handbook/marketing/blog/release-posts/#pm-contributors)
-        - 重要な期限は、リリースの 2 週間前までに Technical Writing と PMM のレビューを受け、リリースの 7 日前までにマージすることです。
-    - マイルストーンで完了しなかった Issue の移動
-        - マイルストーンで完了しなかった Issue を移動するための [https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#milestone-reschedule] がありますが、confidential Issue は移動しないので、マイルストーンでクローズされなかった Issue をレビューするのは良いことです。
+        - デザイナーと一緒に、そのマイルストーンでチームが取り組む Issue について話し合うコールを実施します。`~direction` AND `~Deliverable` の Issue を優先します。
+    - マイルストーン期間中
+        - 開発チームからの質問・ping や、Issue の進捗を尋ねる顧客・ユーザーからの問い合わせを進めるために、TODO を使っている場合はそれに注意を払います。
+    - [リリースポスト](https://docs.gitlab.com/development/documentation/release_notes/)
+        - 重要な締切として、Technical Writing と PMM のレビューはリリース 2 週間前まで、マージはリリース 7 日前までです。
+    - マイルストーン内で完了しなかった Issue の移動
+        - マイルストーン内で完了しなかった Issue を移動するための [https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/#milestone-reschedule] がありますが、コンフィデンシャル Issue は移動されないため、マイルストーン内でクローズされなかった Issue をレビューするとよいです。
     - レトロスペクティブ
-    - [方向の更新](/handbook/product/product-processes/#managing-your-product-direction)
-        - 何かが変わったときに方向ページを更新する間違ったタイミングはありません。リリースのケイデンスは、定期的に行われていることを確認するためにスケジュールするのに最適なタイミングです。
-    - [Performance Indicators](https://internal.gitlab.com/handbook/company/performance-indicators/product/) / [OKRs](/handbook/company/okrs/)
-        - マイルストーンの終了後は、四半期の Performance Indicators と OKR を定期的にチェックインする良いタイミングです。
+    - [Direction の更新](/handbook/product/product-processes/#managing-your-product-direction)
+        - 何かが変化したときに Direction ページを更新するのに「悪いタイミング」はありません。とはいえ、定期的に行われるようにスケジュールするには、リリースのケイデンスは良いタイミングです。
+    - [Performance Indicators](https://internal.gitlab.com/handbook/company/performance-indicators/product/) / [OKR](/handbook/company/okrs/)
+        - マイルストーンが終わった後は、四半期の Performance Indicators と OKR を定期的に確認するのに良いタイミングです。
