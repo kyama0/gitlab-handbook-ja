@@ -2,11 +2,11 @@
 title: Fulfillment Utilization チーム
 description: "GitLab の Fulfillment サブ部門の Utilization チーム"
 upstream_path: /handbook/engineering/development/fulfillment/utilization/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-28T04:38:02Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2025-09-25T09:40:49-04:00"
+lastmod: "2026-05-22T14:47:44+02:00"
 ---
 
 ## 概要
@@ -148,8 +148,7 @@ cc/ @alex_martin @csouthard
 #### 責任
 
 - プロダクトマネージャーが `type::feature` Issue の優先順位を付けます
-- エンジニアリングマネージャーが `type::maintenance` Issue の優先順位を付けます
-- Software Engineer in Test が `type::bug` Issue の優先順位を付けます
+- エンジニアリングマネージャーが `type::maintenance` および `type::bug` Issue の優先順位を付けます
 - プロダクトデザイナーが `bug::ux` Issue の優先順位を付けます（[System Usability Scale (SUS)](/handbook/product-development/how-we-work/issue-triage/#ux-bugs)）
 
 #### メカニクス
@@ -170,7 +169,9 @@ cc/ @alex_martin @csouthard
 
 エンジニアは、割り当てられた Issue を評価、精査、重み付けするために各マイルストーンで約 4 時間を割り当てることが期待されます。Issue の精査は、問題文が明確であり、概算の工数見積もりを提供するためにデザインが利用可能（該当する場合）であることを確認することです。精査中のソリューション検証は意図していません。
 
-Issue に追加の `~frontend`、`~backend`、`~Quality`、`~UX`、または `~documentation` レビューが必要な場合は、Issue の仮定を検証し、見積もりを提供するために必要な不足している詳細を提供するために、それぞれの個人に割り当てられてコラボレーションします。
+Issue に追加の `~frontend`、`~backend`、`~UX`、または `~documentation` レビューが必要な場合は、Issue の仮定を検証し、見積もりを提供するために必要な不足している詳細を提供するために、それぞれの個人に割り当てられてコラボレーションします。
+
+開発者ツールやテスト戦略のさまざまな種類に関する入力が Issue で必要な場合は、[RFH](/handbook/engineering/infrastructure-platforms/developer-experience/#request-for-help-process) を作成して [Developer Experience](/handbook/engineering/infrastructure-platforms/developer-experience/) チームを関与させてください。
 
 <span id="checklist-for-refining-issues"></span>
 

@@ -2,11 +2,11 @@
 title: Analytics Instrumentation グループ
 description: "Analytics Instrumentation グループは、GitLab プロジェクト全体でプライバシーを重視したプロダクトアナリティクスの機能強化と実装に取り組んでいます"
 upstream_path: /handbook/engineering/data-engineering/analytics/analytics-instrumentation/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-06T13:30:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2025-10-23T15:19:35+00:00"
+lastmod: "2026-05-20T09:32:02-07:00"
 ---
 
 ## ビジョン
@@ -78,7 +78,7 @@ Analytics Instrumentation ツールによって収集されたビリングイベ
 
 ## プロジェクト管理プロセス
 
-私たちのチームはプロジェクト管理にスクラムのハイブリッドを使用しています。このプロセスは GitLab の[月次マイルストーンリリースサイクル](/handbook/marketing/blog/release-posts/#schedule)に従います。
+私たちのチームはプロジェクト管理にスクラムのハイブリッドを使用しています。このプロセスは GitLab の[月次マイルストーンリリースサイクル](/handbook/engineering/releases/monthly-releases/)に従います。
 
 - Issue ボードのみから業務を行い、それが唯一の信頼できる情報源となっています。
 - Issue を継続的に次のワークフローステージに進めます。

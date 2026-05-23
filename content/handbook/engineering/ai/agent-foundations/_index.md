@@ -1,134 +1,134 @@
 ---
 title: Agent Foundations グループ
-description: "Agent Foundations グループは、開発ワークフローでタスクを自動化し生産性向上を支援する AI システム、GitLab Duo Workflow の開発に注力しています。"
+description: "Agent Foundations グループは、開発ワークフローのタスク自動化と生産性向上を支援する AI システム、GitLab Duo Workflow の開発に注力しています。"
 upstream_path: /handbook/engineering/ai/agent-foundations/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-06T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+lastmod: "2026-05-22T14:47:44+02:00"
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-04-30T15:16:52+02:00"
 ---
 
 ## ビジョン
 
-Agent Foundations グループは、開発ワークフローのタスクを自動化し生産性向上を支援する AI システムである、GitLab における Agents と Flows の基盤の開発に注力しています。
+Agent Foundations グループは、開発ワークフローのタスク自動化と生産性向上を支援する AI システムである、Agents and Flows の基盤の開発に注力しています。
 
 ### チームメンバー
 
-**Engineering Manager と Engineer**
+**Engineering Manager & Engineers**
 
 {{< team-by-manager-slug "bastirehm" >}}
 
-**Product、Design & Quality**
+**Product, Design & Quality**
 
-{{% engineering/stable-counterparts role="(Product Manager|Technical Writer|Software Engineer in Test|Security Engineer).*(Agent Foundations)" %}}
+{{% engineering/stable-counterparts role="(Product Manager|Technical Writer|Security Engineer).*(Agent Foundations)" %}}
 
-### ☎️ 連絡方法
+### ☎️ 私たちへの連絡方法
 
-文脈に応じて、Agent Foundations グループへの最も適切な連絡方法は以下のとおりです。
+状況に応じて、Agent Foundations グループへ連絡するもっとも適切な方法は次のとおりです:
 
 * Slack チャンネル: `#g_agent_foundations`
 * Slack グループ: `@duo-workflow`（チーム全体）と `@duo-workflow-engs`（エンジニアのみ）
 
 ### 技術コンポーネント 🛠️
 
-メインの GitLab リポジトリ以外に、私たちが扱う主要な技術コンポーネントは以下のとおりです。
+メインの GitLab リポジトリ以外で、私たちが扱う主要な技術コンポーネントは次のとおりです:
 
 1. [AI Gateway 内の Duo Workflow Service](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/tree/main/duo_workflow_service) 🐍
 1. IDE 統合 🧩
    1. [GitLab LSP](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp)
-   1. [GitLab VS Code Extension](https://gitlab.com/gitlab-org/gitlab-vscode-extension) と特定の IDE 向けのその他拡張機能
+   1. [GitLab VS Code Extension](https://gitlab.com/gitlab-org/gitlab-vscode-extension) + 特定の IDE 向けのその他の拡張機能
 
-主に保守しているその他のプロジェクト:
+私たちが主に保守しているその他のプロジェクト:
 
 1. [Duo Workflow Tests](https://gitlab.com/gitlab-org/duo-workflow/testing/duo-workflow-tests)
 2. [Default Docker Image](https://gitlab.com/gitlab-org/duo-workflow/default-docker-image)
 
-これらのコンポーネントがどのように連携するかを理解するには、[アーキテクチャ](/handbook/engineering/architecture/design-documents/duo_workflow/) を参照してください。
+これらのコンポーネントがどのように連携するかについては、[アーキテクチャ](/handbook/engineering/architecture/design-documents/duo_workflow/)を参照してください。
 
 ## 📦 チームプロセス
 
 ### Goalkeeper ローテーション
 
-Agent Foundations チームは、入ってくる Request-for-Help、質問、Issue がトリアージされ適切な人やチームに振り分けられることを保証するため、Goalkeeper ローテーションを使用しています。Goalkeeper はチーム自身からの第一線のサポートとして機能し、作業をスムーズに流し、ボトルネックを防ぎます。受け取ったすべての Issue を Goalkeeper 一人で対応・解決することは想定していません。適切なカバレッジを確保するため、毎週 1 名のエンジニアが割り当てられます。
+Agent Foundations チームは Goalkeeper ローテーションを使い、寄せられる Request-for-Help、質問、Issue がトリアージされ、適切な人やチームに振り分けられるようにしています。Goalkeeper はチーム自身による第一線のサポートとして機能し、作業がスムーズに流れるよう保ち、ボトルネックを防ぎます。寄せられるすべての Issue を Goalkeeper が自分一人で対応したり解決したりすることは想定されていません。適切なカバレッジを確保するため、毎週 1 名のエンジニアがこれに割り当てられます。
 
-責任とその後のプロセスは [Goalkeeper Issue テンプレート](https://gitlab.com/gitlab-org/ai-engineering/agent-foundations/tasks/-/blob/main/.gitlab/issue_templates/goalkeeper.md) にあります。
+責任範囲とそれ以降のプロセスは、[Goalkeeper Issue テンプレート](https://gitlab.com/gitlab-org/ai-engineering/agent-foundations/tasks/-/blob/main/.gitlab/issue_templates/goalkeeper.md)に記載されています。
 
 ### レトロスペクティブ
 
-良い成果を提供するためには、働き方を継続的に進化させ改善することが不可欠だと考えています。従来、レトロスペクティブはこの改善を促進するために使用されてきました。
-私たちは地理的に分散しているため、全員を含む典型的な同期レトロスペクティブを開催することができません。
-完全に非同期のレトロスペクティブは限定的な参加と議論しか得られないこともわかっています。
+私たちは、働き方を継続的に進化・改善することが、良い成果を生み出すうえで不可欠だと考えています。伝統的に、レトロスペクティブはこの改善を促すために使われます。
+私たちは地理的に分散しているため、全員が参加する典型的な同期型レトロスペクティブを実施できません。
+また、完全に非同期のレトロスペクティブでは参加とディスカッションが限定的になることもわかっています。
 
-現在、チームメンバーがペアでレトロ Issue を記入する混合レトロスペクティブ形式を試行しています。プロセスは次のとおりです。
+私たちは現在、チームメンバーがレトロ Issue の記入をペアで行う、混合型レトロスペクティブの形式を試行しています。プロセスは次のとおりです:
 
-1. マイルストーンごとに [async-retrospective プロジェクト](https://gitlab.com/gitlab-org/async-retrospectives) が、レトロの質問のリストを含む Issue を [agent-foundations retro プロジェクト](https://gitlab.com/gl-retrospectives/data-science/ai-powered/agent-foundations/-/work_items) に自動的に作成します。
-1. 4 週間ごとに [donut Slackbot](https://www.donut.com/) がすべてのチームメンバーをランダムに 2 人のグループにペアリングします。
-1. 各 2 人組はその週内に、現在のイテレーションのレトロ Issue を一緒に記入する必要があります。
-   1. これは理想的には同期ミーティング、もしくは Slack を介して行うのがよいでしょう。
-   1. 前回のペアリング以降の直近 2 週間に起こったことに焦点を当ててください。
-   1. ペアリングでは、質問について考え、ペアと答えについて話し合い、特定された問題に基づいてアクションアイテムを考え出すための時間を取る必要があります。
-   1. 隔週のペアリングには 30 分から 1 時間の全体的な時間コミットメントを見込んでください。
-1. 2 週間ごとに 30 分のタイムブロッカーイベントがあり、これは全員がレトロのディスカッションに答えるための時間を取ることを意図しています。
+1. マイルストーンごとに、[async-retrospective プロジェクト](https://gitlab.com/gitlab-org/async-retrospectives)が、レトロの質問リストを含む Issue を [agent-foundations レトロプロジェクト](https://gitlab.com/gl-retrospectives/data-science/ai-powered/agent-foundations/-/work_items)に自動的に作成します。
+1. 4 週ごとに、[donut Slackbot](https://www.donut.com/) が全チームメンバーをランダムに 2 人組のグループにペアリングします。
+1. 各 2 人組は、その週のうちに現在のイテレーションのレトロ Issue の記入を一緒にペアで行います:
+   1. 理想的には同期ミーティングを通じて、あるいは Slack 経由で行います。
+   1. 前回のペアリング以降、直近の 2 週間に起きたことに焦点を当てます。
+   1. ペアリングでは、質問についてじっくり考え、回答についてペアと話し合い、特定された問題に基づくアクションアイテムを考え出す時間をとります。
+   1. 隔週のペアリングには、全体で 30 分から 1 時間程度の時間を見込んでください。
+1. 隔週で 30 分のタイムブロッカーイベントを設けており、全員がレトロのディスカッションに回答する時間をとるためのものです。
 
 ### 📆 定例チームミーティング
 
-**❗️重要**: 各ミーティングでは、[Agent Foundations チームのミーティングドキュメント](https://docs.google.com/document/d/15N9G3UWoB_u8KOErdk_aGk5IdBoxEFBWMSgg9FvwVXo/edit?tab=t.0#heading=h.j3rcm4sf2nc9) を使用し、ミーティングノートと、最近行われた他の同期ミーティングのアジェンダ／ノート／録画への参照を記入してください。これにより、ミーティングノートが見つけやすくなります。
+**❗️重要**: すべてのミーティングで、[Agent Foundations チームのミーティングドキュメント](https://docs.google.com/document/d/15N9G3UWoB_u8KOErdk_aGk5IdBoxEFBWMSgg9FvwVXo/edit?tab=t.0#heading=h.j3rcm4sf2nc9)を使用し、ミーティングのメモや、最近行われた他の同期ミーティングのアジェンダ／メモ／録画への参照を記入してください。これにより、人々がミーティングのメモを見つけやすくなります。
 
 #### チームミーティング
 
 1. **Agent Foundations Meeting**
-   * **いつ:** 毎週月曜日 15:00 UTC、毎週水曜日 10:00 UTC
-   * **何:** このミーティングは、現在の Issue やブロッカーを取り上げる一般的な同期ミーティングとして機能します。現在の進捗と優先事項を明確にするため、両ミーティングを交互に使い、少なくとも週 1 回はボードを歩きます。
+   * **いつ:** 毎週月曜日 15:00 UTC、および毎週水曜日 10:00 UTC
+   * **内容:** このミーティングは、現在の課題やブロッカーを取り上げるための一般的な同期ミーティングとして機能します。現在の進捗と優先順位を明確にするため、ミーティング間で交互に少なくとも週 1 回はボードをウォークします。
 
 ### 共有カレンダー
 
 * AI-Powered Stage Calendar（カレンダー ID: `c_n5pdr2i2i5bjhs8aopahcjtn84@group.calendar.google.com`）
 
-### 📚 Agent Foundations ボード概要
+### 📚 Agent Foundations ボードの概要
 
-Agent Foundations チームはマイルストーンプロセスに従っています。現在優先順位付けされているすべての Issue は、[マイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/7828018?milestone_title=Started&label_name[]=group%3A%3Aagent%20foundations) で可視化されています。過去のマイルストーンと現在のマイルストーンの目標と注力点を概説する Overview Issue は、[包括的なエピック](https://gitlab.com/groups/gitlab-org/-/work_items/18293) で見つけることができます。
+Agent Foundations チームはマイルストーンプロセスに従っています。現在優先されているすべての Issue は、[マイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/7828018?milestone_title=Started&label_name[]=group%3A%3Aagent%20foundations)で可視化されています。過去および現在のマイルストーンの目標とフォーカスポイントを概説する概要 Issue は、[統括エピック](https://gitlab.com/groups/gitlab-org/-/work_items/18293)にあります。
 
-私たちは現在のマイルストーンに対し野心的だが達成可能な計画を目指しており、現在のマイルストーンの Issue のみが能動的な作業対象です。これ以上利用可能な Issue がない場合は、明確化のためにチームの EM／PM に連絡してください。
+私たちは、現在のマイルストーンについて野心的でありながら達成可能な計画を目指しており、現在のマイルストーンにある Issue のみを積極的に作業すべきです。利用できる Issue がもうない場合は、チームの EM／PM に確認を取ってください。
 
-私たちは Issue について次のステータスで作業します。
+私たちは Issue について次のステータスで作業します:
 
-1. **New**: まだ分類されていない Issue で、使用しているワークフローラベル、またはイテレーション概要などのメタ Issue のいずれかに更新する必要があります。
-1. **Refinement**: このステージの Issue は重要な作業として特定されていますが、まだ開発の準備ができていません。デザインがない／完了していない、または明確化が必要なアーキテクチャ上の質問など、さまざまな理由が考えられます。
-1. **Ready for development**: 実装の準備ができている Issue はこのリストに移動されます。
-1. **In dev**: 開発者が Issue の作業を開始するときは、それをこのリストに移動する必要があります。
-1. **Blocked**: このステージの Issue は、他の作業が先に行われることに依存しているため、現在さらに進めることができません。
-1. **In review**: 開発が完了し、レビューのために提出された後、Issue はこのリストに移動する必要があります。
-1. **Verification**: コードと UX のレビューが成功した後、Issue はこのリストに移動し、「verification」ラベルを適用する必要があります。
-1. **Closed**: Issue が検証され、適切に動作することが確認されたら、このリストに移動し、「complete」ラベルを適用し、Issue をクローズする必要があります。
+1. **New**: まだ分類されていない Issue で、使用されるワークフローラベルや、イテレーション概要などのメタ Issue のいずれかに更新する必要があります。
+1. **Refinement**: この段階の Issue は、作業すべき重要なものとして特定されているものの、まだ開発の準備ができていません。これは、デザインが不足または未完成である、明確化が必要なアーキテクチャ上の疑問があるなど、さまざまな理由によります。
+1. **Ready for development**: 実装の準備ができた Issue はこのリストに移動されます。
+1. **In dev**: 開発者が Issue の作業を開始したら、このリストに移動すべきです。
+1. **Blocked**: この段階の Issue は、他の作業が先に完了することに依存しているため、現時点ではこれ以上進められません。
+1. **In review**: 開発が完了しレビューに提出されたら、Issue はこのリストに移動すべきです。
+1. **Verification**: コードと UX のレビューが成功したら、Issue はこのリストに移動し、「verification」ラベルを適用すべきです。
+1. **Closed**: Issue が検証され、正しく動作することが確認されたら、このリストに移動し、「complete」ラベルを適用し、Issue をクローズすべきです。
 
-私たちは、Issue が作業されるべき順序の理解を助けるためにラベルを使用します。
+私たちはラベルを使って、Issue を作業すべき順序を理解しやすくしています:
 
-1. **Deliverable**: これらのアイテムはイテレーションの主要な成果物であり、最初に取り上げられるべきです。
-1. **Stretch**: これらのアイテムのほとんどを提供することを目指していますが、野心的な計画の一環として、それらの一部は遅れる可能性があります。
+1. **Deliverable**: これらの項目はイテレーションの主要な成果物であり、したがって最初に着手すべきです。
+1. **Stretch**: これらの項目のほとんどを提供することを目指しますが、野心的に計画する一環として、一部はスリップする可能性があります。
 
 ## 👏 コミュニケーション
 
-Agent Foundations チームは、以下のガイドラインに基づいてコミュニケーションを行います。
+Agent Foundations チームは、次のガイドラインに基づいてコミュニケーションを行います:
 
-1. 同期ミーティングよりも常に非同期コミュニケーションを優先します。
-1. 非同期が非効率になっている場合は、[同期コール](#-ad-hoc-sync-calls) の手配を躊躇しないでください。ただし、チームメンバーと共有するために常に録画してください。
-1. デフォルトで公開でコミュニケーションを取ります。
-1. Slack でのすべての作業関連のコミュニケーションは `#g_agent_foundations` チャンネルで行います。
+1. 同期ミーティングよりも、常に非同期コミュニケーションを優先します。
+1. 非同期が非効率だと判明した場合は、[同期コール](#-ad-hoc-sync-calls)の調整をためらわないでください。ただし、チームメンバーと共有するため常に録画してください。
+1. デフォルトでは、オープンにコミュニケーションします。
+1. Slack 上での仕事関連のコミュニケーションはすべて `#g_agent_foundations` チャンネルで行います。
 
-### 📋 週次の非同期更新
+### 📋 週次の非同期アップデート
 
-私たちは、明確なコミュニケーションを確保し、進捗を効果的に追跡し、チーム全体で透明性を維持するため、週次の非同期ステータス更新の実践を維持しています。このプロセスは、構造化されたコミュニケーションを通じてコラボレーションを促進し、結果を推進し、効率を高めるという、私たちのコアバリューと整合します。
+私たちは、明確なコミュニケーションを確保し、進捗を効果的に追跡し、チーム全体の透明性を保つため、週次の非同期ステータスアップデートの慣行を維持しています。このプロセスは、構造化されたコミュニケーションを通じてコラボレーションを促進し、成果を推進し、効率性を高めることで、私たちのコアバリューに沿っています。
 
 #### タイミングと頻度
 
-* チームメンバーは毎週水曜日に更新を投稿します
-* 少なくとも **In Dev** の状態にある、割り当てられたすべての Issue に対して更新が必要です。その他の割り当てられた Issue については、更新が必要かどうかは担当者が判断します。
-* 複数の Issue で作業している場合、複数の更新が必要になる場合があります
+* チームメンバーは毎週水曜日にアップデートを投稿します
+* アップデートは、少なくとも **In Dev** にあるすべての割り当て済み Issue について必須です。その他の割り当て済み Issue については、アップデートが必要かどうかは担当者の判断に委ねられます。
+* 複数の Issue に取り組んでいる場合は、複数のアップデートが必要になることがあります
 
 #### テンプレート
 
-更新に使用するテンプレートはこちらです。
+アップデートに使用するテンプレートはこちらです
 
 ```markdown
 ## Async Status Update yyyy-mm-dd
@@ -146,33 +146,34 @@ _Remember to update the status!_
 /cc @bastirehm @frwang1
 ```
 
-エンジニアリングマネージャー、プロダクトマネージャー、および協力しているチームメンバーをタグ付けすることを忘れないでください。
+エンジニアリングマネージャー、プロダクトマネージャー、そして協働しているチームメンバーを必ずタグ付けしてください。
 
 #### ベストプラクティス
 
-* 更新は具体的かつ簡潔にする
-* 暫定的でも、常に次のステップを含める
-* ブロッカーは早期にフラグを立てる — 重大になるまで待たない
-* 容易にスキャンできるように、テンプレートを一貫して使用する
-* 適切な場合は、関連する Issue やドキュメントへのリンクを含める
+* アップデートは具体的かつ簡潔に
+* 暫定的であっても、常に次のステップを含める
+* ブロッカーは早めにフラグを立てる - 深刻になるまで待たない
+* スキャンしやすいよう、テンプレートを一貫して使用する
+* 適切な場合は、関連する Issue やドキュメントにリンクする
 
 ### ⏲ 休暇
 
-チームメンバーは、[休暇取得](/handbook/engineering/#taking-time-off) ポリシーに従って、[計画された休暇](/handbook/people-group/time-off-and-absence/time-off-types/) を「Workday」Slack アプリに追加し、[PTO coverage Issue](https://gitlab.com/gitlab-com/engineering-division/pto-coverage/-/issues/new) の作成も行ってください。
+チームメンバーは、[休暇取得](/handbook/engineering/#taking-time-off)ポリシーに従って、[予定された休暇](/handbook/people-group/time-off-and-absence/time-off-types/)を「Workday」Slack アプリに追加し、[PTO カバレッジ Issue](https://gitlab.com/gitlab-com/engineering-division/pto-coverage/-/issues/new) の作成を含めて行うべきです。
 
 ### 🤙 アドホックな同期コール
 
-私たちはデフォルトで非同期コミュニケーションで運営しています。同期ディスカッションが有益な場合もあるため、必要に応じてチームメンバーが必要な相手と同期コールをスケジュールすることを推奨しています。
+私たちはデフォルトで非同期コミュニケーションを使って運用しています。同期ディスカッションが有益な場合もあるので、チームメンバーが必要に応じて必要なチームメンバーと同期コールをスケジュールすることを推奨します。
 
-## 🔗 有用なリンク
+## 🔗 便利なリンク
 
-* [月次レトロ](https://gitlab.com/gl-retrospectives/data-science/ai-powered/agent-foundations/-/work_items)
+* [Monthly Retros](https://gitlab.com/gl-retrospectives/data-science/ai-powered/agent-foundations/-/work_items)
 * [LangGraph Workshop](https://gitlab.com/gitlab-org/duo-workflow/langgraph-workshop)
 
-### 📝 ダッシュボード（内部のみ）
+### 📝 ダッシュボード（内部限定）
 
-* [Tableau での使用状況メトリクス追跡](https://10az.online.tableau.com/#/site/gitlab/views/DuoWorkflowMetricsTracking/DuoWorkflowMetricsTracking?:iid=1)
+* [Tableau での使用状況メトリクスのトラッキング](https://10az.online.tableau.com/#/site/gitlab/views/DuoWorkflowMetricsTracking/DuoWorkflowMetricsTracking?:iid=1)
 
 ### 📹 GitLab Unfiltered プレイリスト
 
-Agent Foundations グループは、グループとそのチームメンバーに関連するビデオ録画の一部を、[GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A) YouTube チャンネルの [プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KoByUnA4Oq-AAins6hDFwyC) にまとめています。
+Agent Foundations グループは、グループとそのチームメンバーに関連するいくつかの動画録画を、[GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A) YouTube チャンネルの[プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KoByUnA4Oq-AAins6hDFwyC)にまとめています。
+</content>
