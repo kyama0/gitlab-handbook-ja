@@ -71,6 +71,20 @@ h3 > a > sup {
 //     = slate-800) に合わせて上書き。
 // =====================================================================
 
+// navbar 側のトリガーボタンは lg 以上でのみ表示。lg 未満は sidebar 側の
+// 検索バーがすでに表示されているため二重に出さない。
+// (dialog 本体は navbar partial の中で render されるが、ラッパー
+//  .td-navbar__search は常に visible に保つ — display:none の親の中に
+//  dialog があると showModal() しても見えないため)
+.td-navbar .header-search-trigger {
+  display: none;
+}
+@media (min-width: 992px) {
+  .td-navbar .header-search-trigger {
+    display: inline-flex;
+  }
+}
+
 // ピル型のトリガーボタン (navbar 側 = dark bg、sidebar 側 = ライト bg
 // にも違和感ないよう半透明 currentColor を使う)
 .header-search-trigger {
