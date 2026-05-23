@@ -2,20 +2,20 @@
 title: "GitLab のオンボーディング"
 description: "GitLab のオンボーディングと、オンボーディング Issue テンプレート"
 upstream_path: /handbook/people-group/general-onboarding/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-02T07:33:04-05:00"
+lastmod: "2026-05-19T12:12:02+01:00"
 ---
 
 GitLab では、オンボーディングは [非常に重要](/handbook/company/culture/all-remote/onboarding/) なものです。私たちは初日からすぐに業務をフル稼働で進めることを期待していません。
 
 オンボーディングには少なくとも 2 週間を確保し、チーム固有のオンボーディングとトレーニングは 3 週目から始めることを強く推奨します。最初の 2 週間でチームの業務に参加することは自由ですが、大きく貢献しなければならないと感じる必要はありません。
 
-すべてのオンボーディングステップは [オンボーディング Issue テンプレート](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) に集約されており、これは People Operations チームが所有しています。新しいチームメンバーのオンボーディングプロセスは、[セルフドリブンかつセルフラーニング](/handbook/values/#self-service-and-self-learning) であり、GitLab でのリモートライフに慣れる過程で可能な限り [非同期](/handbook/values/#bias-towards-asynchronous-communication) を保ちます。
+すべてのオンボーディングステップは [オンボーディング Issue テンプレート](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) に集約されており、これは People Operations チームが所有しています。新しいチームメンバーのオンボーディングプロセスは、[セルフドリブンかつセルフラーニング](/handbook/values/#self-service-and-self-learning) であり、GitLab でのリモートライフに慣れる過程で可能な限り [非同期](/handbook/communication/) を保ちます。
 
-GitLab では、自社製品を [ドッグフーディング](/handbook/values/#dogfooding) することを誇りに思っています。それゆえ、すべてのオンボーディングタスクは GitLab の Issue で完了させます。そもそも Issue とは何か、それについては [こちら](https://docs.gitlab.com/ee/user/project/issues/) で詳しく学べます。
+GitLab では、自社製品を使うことに大きな誇りを持っています。それゆえ、すべてのオンボーディングタスクは GitLab の Issue で完了させます。そもそも Issue とは何か、それについては [こちら](https://docs.gitlab.com/ee/user/project/issues/) で詳しく学べます。
 
 そのチームメンバー固有のオンボーディングを担当する People Operations Specialist が、入社日の少なくとも 4 日前に [オンボーディング Issue を開きます](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/onboarding_process/#onboarding-issue-creation)。
 

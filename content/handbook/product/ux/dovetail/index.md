@@ -2,11 +2,11 @@
 title: "Dovetailでリサーチインサイトを文書化する"
 description: "GitLab UXリサーチチームのDovetailでのインサイト文書化ガイド"
 upstream_path: /handbook/product/ux/dovetail/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T13:14:13+00:00"
+lastmod: "2026-05-22T14:47:44+02:00"
 ---
 
 UXリサーチチームは、GitLabのUXリサーチプログラムを通じて発見されたすべてのリサーチインサイトを文書化するために [Dovetail](https://dovetailapp.com/) を使用しています。リサーチインサイトは、ユーザー[インタビュー](/handbook/product/ux/experience-research/facilitating-user-interviews/)、[ユーザビリティテスト](/handbook/product/ux/experience-research/usability-testing/)、サーベイ、カードソート、ツリーテスト、顧客との会話などの手法を通じて収集できます。
@@ -199,7 +199,7 @@ GitLab Global Tagsは6つのカテゴリーに整理されています。
 | Devon, DevOps Engineer | 参加者の役割やタスクが [Devon](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/devon/) と一致する。 |
 | Sidney, Systems Administrator | 参加者の役割やタスクが [Sidney](/handbook/product/personas/#sidney-systems-administrator) と一致する。 |
 | Rachel, Release Manager | 参加者の役割やタスクが [Rachel](/handbook/product/personas/#rachel-release-manager) と一致する。 |
-| Simone, Software Engineer in Test | 参加者の役割やタスクが [Simone](/handbook/product/personas/#simone-software-engineer-in-test) と一致する。 |
+| Simone, Backend Engineer | 参加者の役割やタスクが [Simone](/handbook/product/personas/#simone-backend-engineer) と一致する。 |
 | Allison, Application Ops | 参加者の役割やタスクが [Allison](/handbook/product/personas/#allison-application-ops) と一致する。 |
 | Ingrid, Infrastructure Operator | 参加者の役割やタスクが [Ingrid](/handbook/product/personas/#ingrid-infrastructure-operator) と一致する。 |
 | Dakota, Application Development Director | 参加者の役割やタスクが [Dakota](/handbook/product/personas/#dakota-application-development-director) と一致する。 |

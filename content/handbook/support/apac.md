@@ -2,11 +2,11 @@
 title: サポートチーム APAC
 description: サポートチーム APAC のホームページ
 upstream_path: /handbook/support/apac/
-upstream_sha: c5d40e13183c5a0aeeafefbee88ab3fac48ced5a
-translated_at: "2026-05-08T17:40:50Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2025-12-09T17:08:09+13:00"
+lastmod: "2026-05-22T13:28:43+10:00"
 ---
 
 ## サポートチーム APAC のハンドブックページへようこそ
@@ -147,7 +147,8 @@ lastmod: "2025-12-09T17:08:09+13:00"
 
 | **四半期** | **崖の数値** | **通知 Issue**  |
 |-------------| ---------------- | ------------------------|
-| FY26-Q4 (現行) | 6 | [STM#7281](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/7281) |
+| FY27-Q1 (現行) | 7 | [STM#7455](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/7455) |
+| FY26-Q4 | 6 | [STM#7281](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/7281) |
 | FY26-Q3 | 9 | Q4 まで計算しないため未通知 |
 | FY26-Q2 | 9 | Q4 まで計算しないため未通知 |
 | FY26-Q1 | 8 | [STM#6651](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6651) |
@@ -203,10 +204,11 @@ lastmod: "2025-12-09T17:08:09+13:00"
        - `jane_gianoutsos`
        - `ket_slaats`
        - `wei-meng_lee`
-    - Updater name - Excluded:
+     - Updater name - Excluded:
+       - `Anton Smith`
        - `Jane Gianoutsos`
        - `Ket Slaats`
-       - `Anton Smith`
+       - `Wei-Meng Lee`
      - Comment type - Selected:
        - Internal
        - Public
@@ -269,7 +271,7 @@ lastmod: "2025-12-09T17:08:09+13:00"
      - D_COUNT(Tickets updated) > Advanced:
 
        ```zendesk
-       IF (D_COUNT(Tickets updated) >= 7) THEN
+       IF (D_COUNT(Tickets updated) >= <cliff_number_here>) THEN
        {
            "backgroundColor": "",
            "precision": 0,
