@@ -131,7 +131,7 @@ STAR が解決されたら：
 ## 営業時間中にマネージャー連絡を要求するチケット中フィードバックの処理
 
 チケット中フィードバックリンク -- GitLab Support Engineer または Manager からの各 Public Comment には、チケットがオープン中にお客様がフィードバックを提供したり、マネージャーからの連絡を要求できるフォームへのリンクがあります（Issue [2913](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/2913) で導入）。
-このフィードバックフォームは、件名フォーマット **Positive/Negative/Neutral feedback for ticket nnnnnn** で customer feedback プロジェクトに issue を作成し、チケットに割り当てられたエンジニアのマネージャー、または担当者がいない場合は Support Director の Val Parsons に自動的にアサインされます。issue に加えて、#support_ticket-attention-requests チャンネルに Slack 通知も送信されます。
+このフィードバックフォームは、件名フォーマット **Positive/Negative/Neutral feedback for ticket nnnnnn** で customer feedback プロジェクトに Issue を作成し、チケットに割り当てられたエンジニアのマネージャー、または担当者がいない場合は Support Director の Val Parsons に自動的にアサインされます。Issue に加えて、#support_ticket-attention-requests チャンネルに Slack 通知も送信されます。
 以下の対応は、Support Manager On-call が速やかに行うべきです。
 
 フィードバックが既存のチケットに関連している場合：
@@ -148,7 +148,7 @@ STAR が解決されたら：
 
 チケットリンクがなく一般的なサポートフィードバックの場合：
 
-1. issue は自動的に Val Parsons に割り当てられます - DRI として自分自身に再アサインしてください。
+1. Issue は自動的に Val Parsons に割り当てられます - DRI として自分自身に再アサインしてください。
 1. フィードバックをレビューし、次のベストアクションを検討する。
 1. お客様が通話を希望する場合、ビデオ通話をスケジュールするための Calendly リンクを提供する。
 1. フィードバックが Product または他チーム宛てのものであれば、適切なチャンネルで共有する。

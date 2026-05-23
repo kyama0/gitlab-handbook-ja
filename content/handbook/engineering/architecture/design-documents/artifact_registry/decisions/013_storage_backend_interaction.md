@@ -14,7 +14,7 @@ stale: false
 <!-- Design Documents often contain forward-looking statements -->
 <!-- vale gitlab.FutureTense = NO -->
 
-## Context
+## 背景
 
 クライアントがアーティファクトをダウンロードする際、アプリケーションはコンテンツを配信するためにストレージバックエンドと相互作用する必要があります。デプロイメントとクライアントのネットワーク状況に応じて、アプリケーションはクライアントを事前署名付き URL を通じてストレージバックエンドにリダイレクトするか、コンテンツを直接ストリーミングします（配信モードの判断については [ADR-005](005_artifact_delivery_mode.md) を参照）。各パターンは、CDN キャッシング、URL 署名、コスト最適化、課金属性付けにそれぞれ異なる影響を持ちます。
 
@@ -22,9 +22,9 @@ Container Registry は、85% を超える CDN キャッシュヒット率（[出
 
 この ADR は、ストレージバックエンドとの相互作用を Artifact Registry 用のスタンドアロンのリファレンスとして形式化し、Container Registry の実装から独立した設計の単一の情報源を持つようにします。
 
-## Decision
+## 決定
 
-### Supported pairings
+### サポートされるペアリング
 
 ストレージバックエンドと CDN は密結合です。CDN は同じプロバイダーの blob ストレージをフロントすることで、同一ネットワーク内のキャッシュフィル、ネイティブな署名付き URL 検証、運用上の整合性の恩恵を受けます。サポートされるペアリングは以下を満たす必要があります。
 
@@ -39,11 +39,11 @@ Container Registry は、85% を超える CDN キャッシュヒット率（[出
 
 自己管理型の顧客は、各自のインフラストラクチャに一致するペアリングを構成します。サポートされるペアリング間の切り替えは設定変更です。
 
-### Interaction patterns
+### 相互作用パターン
 
 アプリケーションとストレージバックエンドの間には 3 つの相互作用パターンが存在します。使用されるパターンは、配信モード（[ADR-005](005_artifact_delivery_mode.md)）とクライアントのネットワークオリジンに依存します。
 
-#### Redirect, external client → CDN
+#### リダイレクト: 外部クライアント → CDN
 
 アプリケーションは認証、検証を行い、署名付き URL を通じてクライアントを CDN にリダイレクトします。CDN は署名を検証し、ヒット時はキャッシュから配信し、ミス時は blob ストレージから取得します。
 
@@ -70,7 +70,7 @@ sequenceDiagram
     end
 ```
 
-#### Redirect, provider-network client → blob storage directly
+#### リダイレクト: プロバイダーネットワーク内クライアント → blob ストレージへ直接
 
 クライアントが同じクラウドプロバイダーのネットワーク内から発信されている場合、アプリケーションは CDN をバイパスして blob ストレージへ直接リダイレクトできます。これはコスト最適化です：blob ストレージからプロバイダーネットワーク内クライアントへの同一ネットワーク egress は、CDN 経由でルーティングするよりも安価です。この最適化が価値あるかはペアリングに依存します。CDN と blob ストレージ直接配信の差が無視できる場合、ルーティングは利益なしに複雑さを増やすだけです。
 
@@ -90,7 +90,7 @@ sequenceDiagram
     BS-->>C: 200 (blob)
 ```
 
-#### Proxy (CDN bypassed)
+#### プロキシ (CDN バイパス)
 
 プロキシモード（[ADR-005](005_artifact_delivery_mode.md)）では、アプリケーションは blob ストレージから直接 blob をストリーミングします。CDN、署名付き URL、下記のメタデータ伝播はすべてバイパスされます。アプリケーションが転送全体を観測します。
 
@@ -108,13 +108,13 @@ sequenceDiagram
     App-->>C: 200 (streamed blob)
 ```
 
-### Signed URL generation
+### 署名付き URL の生成
 
 アプリケーションは署名付き URL をサーバーサイドで生成します。ローカルの秘密鍵が利用可能な場合、署名はプロセス内で完結します。ローカル鍵を持たない GCS（たとえば Workload Identity）の場合、署名には外部の IAM 呼び出しが必要です。S3 の事前署名は、クレデンシャルソースにかかわらず常にプロセス内で行われます。各ペアリングは、CDN URL には CDN プロバイダーのネイティブ署名メカニズムを、直接 URL には blob ストレージプロバイダーのネイティブ署名メカニズムを使用します。CDN はコンテンツを配信する前にエッジで署名を検証し、キャッシュヒット時にもプライベート blob がプライベートのまま保たれることを保証します。
 
 署名付き URL の有効期限は設定可能です。署名付き URL は（たとえば Redis で）キャッシュされ、高リクエストレートでの署名オーバーヘッドを削減します。キャッシュキーは blob のストレージパスとリクエストオプションから派生し、有効期限（リクエストごとに一意）は除外されます。キャッシュエントリの TTL は URL の残りの有効性からセーフティマージンを差し引いた値です。
 
-### Download metadata propagation
+### ダウンロードメタデータの伝播
 
 307 リダイレクト後、アプリケーションはダウンロードを観測できません。クライアントが転送を完了したか、何バイトが配信されたか、リクエストが失敗したかを知ることはできません。
 
@@ -133,23 +133,23 @@ Container Registry は今日、GCS + Google Cloud CDN の署名付き URL にこ
 
 ストレージバックエンドと CDN のペアリングを変更すると、伝播チェイン全体が影響を受けます。すべての CDN がアクセスログにカスタムクエリパラメータを保持したり、リアルタイム抽出のためのエッジインターセプトをサポートしているわけではありません。新しいペアリングごとにこの能力の検証が必要です。
 
-## Consequences
+## 結果
 
-### Positive
+### プラス面
 
 1. **Proven architecture**: Container Registry をミラーしており、GitLab.com でスケール環境において実戦投入済みです。
 1. **All pairing requirements satisfied**: サポートされる両方のペアリングが、上記で定義したネイティブな署名付き URL 検証、キャッシュキー互換性、最大ファイルサイズの要件を満たします。
 1. **Billing attribution across the redirect boundary**: URL 内メタデータが、SaaS（GCS + Google Cloud CDN）のリダイレクトモードに内在する可視性ギャップを橋渡しします。
 1. **Configuration-driven pairings**: サポートされるペアリング間の切り替えにアプリケーションの変更は不要です。
 
-### Negative
+### マイナス面
 
-1. **Coupled pairing**: CDN は blob ストレージプロバイダーに紐づけられます。実際には、デプロイメントは通常 all-GCP または all-AWS のため、これが制限になることはほぼありません。必要であればクロスプロバイダー CDN も可能です（[Alternative 1](#alternative-1-cross-provider-cdn-for-example-cloudflare) 参照）。
+1. **Coupled pairing**: CDN は blob ストレージプロバイダーに紐づけられます。実際には、デプロイメントは通常 all-GCP または all-AWS のため、これが制限になることはほぼありません。必要であればクロスプロバイダー CDN も可能です（[代替案 1](#alternative-1-cross-provider-cdn-for-example-cloudflare) 参照）。
 1. **CDN delivery cost at scale**: プロバイダーネイティブの CDN は、GiB あたりの配信料金を（階層的に）課金します。トラフィック量が大きくなると、これは大きなコスト項目になり得ます。参考として [コスト分析](https://docs.google.com/spreadsheets/d/1mvHXxzRNQ2gVUGHtjluV1FyfXeoGA2KwihHdxbUKI-c/edit) が利用可能です。
 
-## Alternatives
+## 代替案
 
-### Alternative 1: Cross-provider CDN (for example, Cloudflare)
+### 代替案 1: クロスプロバイダー CDN (例: Cloudflare) {#alternative-1-cross-provider-cdn-for-example-cloudflare}
 
 すべての blob ストレージプロバイダーに対し単一の CDN を用い、構成の発散を削減します。Container Registry スケールでの [コスト分析](https://docs.google.com/spreadsheets/d/1mvHXxzRNQ2gVUGHtjluV1FyfXeoGA2KwihHdxbUKI-c/edit) では、Cloudflare の従量課金されない配信により、潜在的に大きなコスト削減が示されました。
 
@@ -157,11 +157,11 @@ Container Registry は今日、GCS + Google Cloud CDN の署名付き URL にこ
 
 この代替案は閉ざされたわけではありません。将来、新しいペアリングとしてクロスプロバイダー CDN を追加できます。
 
-### Alternative 2: No CDN
+### 代替案 2: CDN なし
 
 CDN レイヤーなしで、ダウンロードを直接 blob ストレージにリダイレクトする方法。非自明なトラフィック量では、CDN が blob ストレージの egress を削減し、エッジキャッシングを通じてダウンロード遅延を改善し、可用性を高めるため、却下されました。
 
-## References
+## 参考文献
 
 - [ADR-005: Artifact Delivery Mode](005_artifact_delivery_mode.md)
 - [ADR-008: Content-Addressable Storage](008_content_addressable_storage.md)

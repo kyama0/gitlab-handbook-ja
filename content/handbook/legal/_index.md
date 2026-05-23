@@ -14,9 +14,9 @@ stale: false
 
 **要約: LACA — 困ったときに最初に電話をかける相手は私たちです。**
 
-## Legal & Corporate Affairs の機能グループ
+## 法務・企業法務の機能グループ
 
-### Commercial
+### コマーシャル
 
 GitLab Legal の [Commercial](/handbook/legal/commercial/) チームは、GitLab における契約に関するあらゆる事項（調達、レベニュー、チャネル、テクニカル、アライアンスを含む）を担当し、セールス、テクニカル、ビジネスのステークホルダーと連携して、GitLab の契約基準への準拠と効率的な実行タイムラインを確保します。チームは GitLab の go-to-market および調達機能を支援し、会社のバリューに沿って顧客中心の成果を実現するために、契約および規制に関する事項について知識と創造性を持って助言します。
 
@@ -26,7 +26,7 @@ GitLab Legal の [Commercial](/handbook/legal/commercial/) チームは、GitLab
 - [Commercial Legal Internal Handbook](https://internal.gitlab.com/handbook/legal-and-corporate-affairs/legal-commercial/index.html/)
 - [Highspot - GitLab Legal Hub](https://gitlab.highspot.com/items/64d69e83c17499125edb7063?lfrm=srp.0)
 
-### Corporate & Compliance
+### コーポレート＆コンプライアンス
 
 [Corporate & Compliance](/handbook/legal/publiccompanyresources/) グループは、原則に基づくコーポレートガバナンスの風土と会社のコンプライアンス文化を支えるクロスファンクショナルな関係を通じて、GitLab に戦略的な成果をもたらします。
 
@@ -34,27 +34,27 @@ GitLab Legal の [Commercial](/handbook/legal/commercial/) チームは、GitLab
 
 [Corporate Development](/handbook/acquisitions/) グループは、製品ロードマップを加速させ、市場における会社の競争力を高めるため、潜在的な買収先を戦略的に特定・評価・実行するための入念で徹底した分析を行います。
 
-### Employment
+### 雇用
 
 Legal の [Employment](/handbook/legal/employment-law/) チームは、チームメンバーのライフサイクル全体を通じて専門的なガイダンスと能動的な法的ソリューションを提供する、組織横断の戦略的パートナーです。
 
-### Privacy, Product, and Intellectual Property
+### プライバシー、製品、知的財産
 
 [Privacy](/handbook/legal/privacy/) および [Product and Intellectual Property](/handbook/legal/product/) グループは、適用される規制の範囲内で迅速な製品開発を可能にし、顧客がそれらの製品で安心して共創できるプライバシーソリューションを提供し、会社の IP を強力に保護します。
 
-### Public Policy
+### パブリックポリシー
 
 [Public Policy](/handbook/legal/public-policy/) 機能は、GitLab が可能な限り自由に競争・イノベーションを行えるようにしつつ、顧客と広範なテクノロジーコミュニティに利益をもたらす健全なガバナンスを推進します。
 
-### Risk Management and Dispute Resolution
+### リスク管理・紛争解決
 
 [Risk Management and Dispute Resolution](/handbook/legal/risk-management-dispute-resolution/) グループは、紛争が発生した場合にそれを解決しつつ会社の利益を守るための、GitLab の統一された透明かつ倫理的なアプローチを統括します。
 
-### Strategy and Legal Operations
+### 戦略・法務オペレーション
 
 [Strategy and Legal Operations](/handbook/legal/legalops/) グループは、LACA が効率的かつ効果的にパフォーマンスを発揮できるよう、最適なツールやテクノロジーの調達を含む継続的なプロセス改善を推進します。
 
-### Sustainability
+### サステナビリティ
 
 [Sustainability](/handbook/legal/esg/) チームは、顧客を成功させるという GitLab の包括的なミッションの一環として、GitLab の責任あるビジネス慣行と、環境・社会・ガバナンス（ESG）に関する規制コンプライアンスを推進・統合します。
 
@@ -76,7 +76,7 @@ Legal の [Employment](/handbook/legal/employment-law/) チームは、チーム
 
 ポリシー、コンプライアンス基準、ガイドライン、その他のリソースの一覧は [GitLab の Ethics and Compliance Program](/handbook/legal/ethics-compliance-program/#compliance-standards-guidelines--other-resources) を参照してください。
 
-## Authorization Matrix
+## 承認マトリクス
 
 [Authorization Matrix](https://internal.gitlab.com/handbook/company/authorization-matrix/) は、法的文書に署名する権限を持つ者を指定します。GitLab を代表して契約を締結できるのは、署名権限を持つ GitLab チームメンバーのみです。
 
