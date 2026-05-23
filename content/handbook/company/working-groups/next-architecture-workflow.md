@@ -3,11 +3,11 @@ title: "次世代アーキテクチャワークフロー"
 description: "このワーキンググループのチャーターは、アーキテクチャエボリューションワークフローの次のイテレーションを定義・実装することです。"
 status: active
 upstream_path: "/handbook/company/working-groups/next-architecture-workflow/"
-upstream_sha: "440fbdbea018814f9317e3b1520eff5dda4ecb20"
-translated_at: "2026-05-21T21:07:52Z"
+upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
+translated_at: "2026-04-25T12:00:00Z"
 translator: "claude"
 stale: false
-lastmod: "2026-05-20T09:32:02-07:00"
+lastmod: "2026-02-06T19:27:57-05:00"
 ---
 
 ## 属性
@@ -35,7 +35,7 @@ lastmod: "2026-05-20T09:32:02-07:00"
 - 現在および過去の[エンジニアリングアロケーション](/handbook/product/product-processes/#prioritization-framework)イニシアティブの棚卸しを行い、そのようなイニシアティブが[ブループリント](https://gitlab.com/gitlab-org/gitlab/-/tree/master/doc/architecture/blueprints)として定義でき[アーキテクチャエボリューションワークフロー](/handbook/engineering/architecture/workflow/)に従う範囲を評価します。
 - ブループリントでの提案作成のエントリーバリアを下げます。
 - ブループリントをいつ使用すべきかの基準を確立します。
-- クロスファンクショナルなタッチポイントを特定し、[本番環境対応レビュー](/handbook/engineering/infrastructure-platforms/production/readiness/)、[AppSec レビュー](/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/review-process)、[リリースポストの作成](https://docs.gitlab.com/development/documentation/release_notes/)などのアップストリームプロセスを統合します。
+- クロスファンクショナルなタッチポイントを特定し、[本番環境対応レビュー](/handbook/engineering/infrastructure-platforms/production/readiness/)、[AppSec レビュー](/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/review-process)、[リリースポストの作成](/handbook/marketing/blog/release-posts/)などのアップストリームプロセスを統合します。
 - [クロスファンクショナル優先順位付け](/handbook/product/product-processes/cross-functional-prioritization/)フレームワークを通じて、このプロセスとエンジニアリングロードマップをプロダクト計画と優先順位付けに組み込む戦略を開発します。
 
 ### コンテキスト

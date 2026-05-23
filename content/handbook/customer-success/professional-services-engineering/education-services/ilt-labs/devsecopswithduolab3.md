@@ -2,11 +2,11 @@
 title: "GitLab Duo Principles - ハンズオンラボ: Issue とマージリクエストを活用する"
 description: "このハンズオンガイドでは、GitLab Duo を使って Issue とマージリクエストを作成する手順を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab3/
-upstream_sha: 440fbdbea018814f9317e3b1520eff5dda4ecb20
-translated_at: "2026-05-21T21:07:52Z"
+upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
+translated_at: 2026-04-26T04:33:12Z
 translator: claude
 stale: false
-lastmod: "2026-05-20T13:54:32+01:00"
+lastmod: "2026-04-06T16:04:29-04:00"
 ---
 
 > 完了までの推定時間: 25 分
@@ -93,8 +93,6 @@ GitLab Duo はコード生成だけにとどまりません。GitLab Duo は Dev
 1. 任意のコミットメッセージを入力して **Commit** ボタンを選択し、コード変更をコミットします。
 
 1. **Go to MR** を選択してマージリクエストに戻ります。
-
-   > ここでパイプラインが失敗することにお気付きかもしれません。これは想定どおりです! 少し後にトラブルシューティングを行います。
 
 ## タスク D. コード変更を要約する
 
