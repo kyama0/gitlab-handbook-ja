@@ -2,11 +2,11 @@
 title: コードレビューガイドライン
 description: "コードレビューはすべてのマージリクエストで必須です。コードレビューガイドラインに慣れ、それに従ってください。"
 upstream_path: "/handbook/engineering/workflow/code-review/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T12:00:00Z"
+upstream_sha: "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1"
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-04-21T22:49:18+12:00"
+lastmod: "2026-05-15T14:47:04-06:00"
 ---
 
 ## 概要

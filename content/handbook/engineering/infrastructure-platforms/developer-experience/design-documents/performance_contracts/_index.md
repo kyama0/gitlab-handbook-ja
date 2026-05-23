@@ -11,11 +11,11 @@ owning-stage: "~stage::developer-experience"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/infrastructure-platforms/developer-experience/design-documents/performance_contracts/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-01T11:14:36-07:00"
+lastmod: "2026-05-21T12:43:31-07:00"
 ---
 
 
@@ -117,6 +117,44 @@ flowchart TD
   DUO -- assists analysis --> AI_ANALYSIS
 ```
 
+### フロントエンド: SiteSpeed 構造ビュー
+
+ハンドブックにはタイプごとの詳細なフローが含まれています。以下の図はフロントエンドのフローを反映したもので、バジェットと URL スイートがどこに存在し、それらがどのように MR レベルの実行とオプションの中央集約に供給されるかを読者が確認できます。
+
+```mermaid
+flowchart LR
+  subgraph APP[App Repo]
+    CONTRACT[performance.yml]
+  end
+
+  subgraph SUBMODULE[sitespeed-measurement-setup]
+    URLS[URL suites]
+    BUDGETS[budget JSONs]
+  end
+
+  subgraph RUNNER[CI Runner - Browser Performance Job]
+    VALIDATE[Schema validation]
+    MERGE[merge_budgets.py]
+    SITESPEED[SiteSpeed run\n--budget.configPath merged.json]
+  end
+
+  subgraph REPORTING[Reporting / Analysis]
+    ARTIFACTS[Artifacts]
+    AI[AI analysis / MR comment]
+    MR[Merge Request feedback]
+  end
+
+  CONTRACT --> VALIDATE
+  CONTRACT --> MERGE
+  BUDGETS --> MERGE
+  URLS --> SITESPEED
+  MERGE --> SITESPEED
+  SITESPEED --> ARTIFACTS
+  ARTIFACTS --> AI
+  AI --> MR
+  SITESPEED --> AI
+```
+
 ## スキーマ設計の決定事項
 
 ### 決定: エンドポイントカテゴリーは自由形式のラベル
@@ -180,6 +218,18 @@ flowchart TD
 **根拠**: スキーマの場所はツール選択と密結合です。ツール決定の前に場所をコミットすることは、破壊的な移行のリスクとなります。
 
 **ステータス**: [#4407](https://gitlab.com/gitlab-org/quality/quality-engineering/team-tasks/-/work_items/4407) 待ち
+
+---
+
+### 決定: `performance.yml` 内でフロントエンド設定を `frontend` 配下に名前空間化する
+
+**コンテキスト**: フロントエンドコントラクトは複数の関連する設定フィールド（budgets、teams、default）を必要とし、将来のオプションに対して拡張可能でなければなりません。
+
+**決定**: フロントエンド関連のすべての設定を `performance.yml` 内の `frontend` オブジェクト配下に名前空間化します。このオブジェクトの存在はフロントエンドコントラクトが設定されていることを意味します。明示的にオプトアウトするために、オプションの `enabled` ブール値を使用できます。
+
+**根拠**: 名前空間化は関連する設定をグループ化し、スキーマの進化を簡素化し、無関係なキーをトップレベルでフラット化することを避けます。
+
+**ステータス**: 採択
 
 ## 環境とツールの決定事項
 
@@ -256,3 +306,34 @@ flowchart TD
 - **POC ウォークスルー**: [動画ウォークスルー](https://drive.google.com/file/d/1bz2IwUE80H0MspLT0-TiFj3poWaEa9Cc/view?usp=drive_link)
 - **関連設計ドキュメント**: [Component Performance Testing](../component_performance_testing/)
 - **関連設計ドキュメント**: [Shift Left/Right Performance Testing](../shift_left_right_performance/)
+
+### 注記: コントラクトタイプと SiteSpeed フロントエンドバジェット
+
+この設計ドキュメントはコントラクトモデルとアーキテクチャの決定事項（CPT 中心）を記述しています。具体的な使用パターンと例については、ハンドブックページ [Performance Testing for Modular Features](/handbook/engineering/testing/performance-contracts/) に、専用のフロントエンド: SiteSpeed サブセクションを含む「Contract Types」セクションが追加されました。
+
+フロントエンドパイロットの概要（ハイレベル）:
+
+- SiteSpeed を使用してフロントエンドのパフォーマンスバジェットのための開発者中心のワークフローをパイロットしています。バジェットと URL リストは `sitespeed-measurement-setup` リポジトリの `performance/` 配下にコロケートされており、開発者が単一の PR でそれらをまとめて更新できます。
+- バジェットファイルは環境デフォルト（`performance/budgets/environments/*.json`）とオプションのチームごとのオーバーライド（`performance/budgets/teams/*.json`）として整理されています。CI 実行時に、環境バジェットはチームオーバーライドとマージされ、衝突時（`(url,metric)` をキーとする）にはチームエントリが環境エントリを上書きします。
+- MR レベルの実行はアドバイザリーであり、レビューアプリの URL に対して `--budget.configPath` で SiteSpeed をローカルに実行します。初期パイロットでは、制御できないデータ増加を防ぐために MR 実行を中央の sitespeed-runway サーバーに送信することを避けています。スケジュール実行や保護ブランチ実行は後で昇格できます。
+- `sitespeed-measurement-setup` POC（ブランチ `add-performance-contracts`）には、例・JSON スキーマ・ヘルパースクリプト（`validate_budget.py`、`merge_budgets.py`）が含まれています。
+
+`performance.yml` フロントエンド設定の例（名前空間化）:
+
+```yaml
+frontend:
+  enabled: true            # optional: presence implies enabled; set false to opt-out
+  budgets:
+    production: testrunner/sitespeed-measurement-setup/performance/budgets/environments/production.json
+    staging:   testrunner/sitespeed-measurement-setup/performance/budgets/environments/staging.json
+    mr:        testrunner/sitespeed-measurement-setup/performance/budgets/environments/mr.json
+  teams:
+    rapid-diffs:
+      url_dir: testrunner/sitespeed-measurement-setup/gitlab/desktop/urls
+      budget:  testrunner/sitespeed-measurement-setup/performance/budgets/teams/rapid-diffs.json
+  default_budget: mr
+```
+
+マージセマンティクスに関する注記: 環境バジェットとオプションのチームバジェットは実行時にマージされます。エントリは `(url,metric)` をキーとし、衝突時にはチームエントリが環境エントリを上書きします。
+
+SiteSpeed の例と CI スニペットについてはハンドブックページを参照してください。この設計ドキュメントはアーキテクチャの決定事項と CPT ロードマップに焦点を当てています。
