@@ -1,6 +1,6 @@
 ---
 name: translate-batch
-description: GitLab Handbook (handbook.gitlab.com) の英語原文を日本語に翻訳して `gitlab-handbook-ja` リポジトリに新しい batch PR を作成し、CodeRabbit レビュー対応とマージまでを自己完結で行う。upstream submodule で pending になっているファイルを translator サブエージェント経由で翻訳し、manifest を更新し、`translation/batch-YYYY-MM-DD-N` ブランチから `main` への PR として push する（base は常に `main`）。先生から「翻訳バッチを回して」「次の翻訳バッチを作って」「pending を消化して」「翻訳して PR 作って」など、新しい翻訳バッチ作業の指示が来たときに使う。
+description: GitLab Handbook (handbook.gitlab.com) の英語原文を日本語に翻訳して `gitlab-handbook-ja` リポジトリに新しい batch PR を作成し、Codex レビュー対応とマージまでを自己完結で行う。upstream submodule で pending になっているファイルを translator サブエージェント経由で翻訳し、manifest を更新し、`translation/batch-YYYY-MM-DD-N` ブランチから `main` への PR として push する（base は常に `main`）。先生から「翻訳バッチを回して」「次の翻訳バッチを作って」「pending を消化して」「翻訳して PR 作って」など、新しい翻訳バッチ作業の指示が来たときに使う。
 ---
 
 # GitLab Handbook 日本語翻訳バッチ
@@ -164,13 +164,9 @@ gh pr create --base main --title "translation: batch ${NEXT_DATE}-${NEXT_N} (...
 PR_NUM="$(gh pr view --repo kyama0/gitlab-handbook-ja --json number --jq .number)"
 ```
 
-**PR を作成したら必ず watcher を起動する** (ステップ 6-1 で再掲):
+**PR を作成したら必ずレビュー状況の polling を始める** (ステップ 6-1 で詳述)。
 
-```bash
-.claude/skills/translate-batch/scripts/watch-pr.sh kyama0/gitlab-handbook-ja ${PR_NUM}
-```
-
-このスクリプトを **Monitor ツール** で background 起動すると、PR の `reviewDecision` / `mergeable` / `state` / CI 結果が変化したタイミングだけ通知が飛ぶ。webhook 取りこぼし対策の保険として必須化する。
+Codex は PR 作成後に自動でレビューを実施するが、レビュー完了で GitHub イベントが発生しないことが多い。webhook / watcher には頼らず、`ScheduleWakeup` で **180 秒 (3 分) 間隔**のポーリングループに入り、PR 本文の 👍 リアクション・未解決スレッド・CI 結果を毎回確認する。
 
 ## ヘルパースクリプト
 
@@ -188,33 +184,48 @@ upstream に `*.html.md` があるが翻訳が `.md` で存在する場合、man
 
 `scripts/add_html_md_aliases.py` の冒頭 `MAPPINGS` リストを編集して対象を列挙してから実行する。
 
-## ステップ 6: CodeRabbit レビュー対応とマージ (自己完結)
+## ステップ 6: Codex レビュー対応とマージ (自己完結)
 
-PR を作成したら、そのまま CodeRabbit のレビューを待ち、自分で対応してマージするところまで一気通貫で行う。翻訳バッチ PR は **base=main** なので、CR APPROVED + CI CLEAN を確認したら自分でマージする — 先生に通知してマージを待つ必要はない。
+PR を作成したら、そのまま Codex のレビューを待ち、自分で対応してマージするところまで一気通貫で行う。翻訳バッチ PR は **base=main** なので、Codex が承認サイン (PR 本文への 👍 リアクション) を出して CI が CLEAN になったら自分でマージする — 先生に通知してマージを待つ必要はない。
 
-### 6-1: レビュー待ち — Monitor で watcher を貼り付ける
+**承認の判定基準**: Codex は明示的な `APPROVED` レビューを返さない。**PR の説明 (body) に Codex がサムズアップ (👍 / `+1`) リアクションを付けた時点 = 指摘事項なしの承認サイン** とみなす。これが付くまで「指摘対応 → `@codex review` で再依頼 → ポーリング」を繰り返す。
 
-PR の `reviewDecision` / `mergeable` / CI 結果は **webhook では取りこぼすことがある** (status 系イベントは届かないことがある)。subscribe だけに頼らず、必ず Monitor で polling watcher を起動して状態遷移を確実に拾う。
+### 6-1: レビュー待ち — 3 分間隔のポーリング
+
+Codex のレビュー完了では GitHub のイベント (webhook / subscribe) が発火しないことが多い。`ScheduleWakeup` で **180 秒間隔**のポーリングループに入り、毎回以下を確認して状態遷移を判定する。
 
 ```bash
-# Monitor ツールで以下を起動 (description は "PR #${PR_NUM} watcher" など):
-.claude/skills/translate-batch/scripts/watch-pr.sh kyama0/gitlab-handbook-ja ${PR_NUM}
+# (a) PR 本文への 👍 リアクション数 (Codex が承認したかの判定)
+gh api repos/kyama0/gitlab-handbook-ja/issues/${PR_NUM}/reactions \
+  --jq '[.[] | select(.content=="+1")] | {count: length, users: [.[].user.login]}'
+
+# (b) 未解決レビュースレッド数
+gh api graphql -f query='
+{
+  repository(owner: "kyama0", name: "gitlab-handbook-ja") {
+    pullRequest(number: '${PR_NUM}') {
+      reviewThreads(first: 50) {
+        nodes { isResolved }
+      }
+    }
+  }
+}' --jq '[.data.repository.pullRequest.reviewThreads.nodes[] | select(.isResolved==false)] | length'
+
+# (c) マージ可能性・CI 状況
+gh pr view ${PR_NUM} --repo kyama0/gitlab-handbook-ja \
+  --json mergeable,mergeStateStatus,statusCheckRollup \
+  --jq '{mergeable, mergeStateStatus, ci: [.statusCheckRollup[] | {name: .name, conclusion: .conclusion, status: .status}]}'
 ```
 
-`watch-pr.sh` は 1 分ごとに `gh pr view` で状態スナップショットを取り、前回と差分があった時だけ 1 行 stdout に emit する (Monitor が各行を通知に変換)。以下の terminal state に到達したら exit して通知を打つ:
+判定フロー (上から優先):
 
-- `APPROVED + MERGEABLE + CI clean` → 6-1A に進む（マージ）
-- `CHANGES_REQUESTED` → 6-2 に進む（CR 対応）
-- `CONFLICTING` → 6-3 に進む（コンフリクト解消）
-- `CI failed` → CI ログを調査して fix
-- `MERGED` / `CLOSED` → 完了 / 諦め
-- `PENDING_TIMEOUT` (既定 15 分) → `gh pr comment ${PR_NUM} --body "@coderabbitai review"` で再依頼してから watcher を再起動
+- **PR body に Codex の 👍 リアクションあり** & CI CLEAN & MERGEABLE → 6-1A に進む（マージ）
+- **CONFLICTING** → 6-3 に進む（コンフリクト解消）
+- **CI failed** → CI ログを調査して fix し push、その後 6-1 に戻る
+- **未解決スレッドあり** (Codex が指摘を投稿した) → 6-2 に進む（指摘対応）
+- **どれでもない** (まだレビュー進行中) → `ScheduleWakeup delaySeconds=180` で次のポーリングを予約
 
-`watch-pr.sh` は `gh pr view` で PR 全体の最新状態を毎ポーリング取り直すので、re-push しても新しい HEAD を自動で追跡できる。**watcher の再起動が必要なのは以下のケースだけ**:
-
-- 前回のラウンドで terminal state (`CHANGES_REQUESTED` / `CI failed` / `CONFLICTING` など) に到達して watcher が既に exit している → 修正 push 後、新しい watcher を起動
-- watcher プロセスがクラッシュした、Monitor がタイムアウトした
-- 別の PR 番号を watch したくなった
+**ポーリングのタイムアウト目安**: 累計 30 分以上 👍 もスレッドも CI 変化も無いまま動かない場合、`gh pr comment ${PR_NUM} --body "@codex review"` でレビューを再依頼してから再度ポーリング。
 
 #### 6-1A: マージ実行
 
@@ -225,7 +236,7 @@ gh pr merge ${PR_NUM} --merge
 # gh pr merge ${PR_NUM} --squash
 ```
 
-### 6-2: CR 指摘への対応
+### 6-2: Codex 指摘への対応
 
 **メインディレクトリで作業しない。** 必ず `/tmp/pr<NUM>` などにクローンして作業すること。
 
@@ -248,7 +259,7 @@ gh api graphql -f query='
 }' --jq '.data.repository.pullRequest.reviewThreads.nodes[] | select(.isResolved==false) | "ID:\(.id)\n\(.path):\(.line)\n\(.comments.nodes[0].body[0:600])\n==="'
 ```
 
-各指摘について、まず upstream にも同じ問題があるか確認する:
+各指摘について、まず **対応の要否を判断する**。判断材料として、まず upstream にも同じ問題があるか確認する:
 
 ```bash
 # 翻訳側の問題箇所
@@ -257,10 +268,10 @@ grep -n "<問題箇所>" content/handbook/<path>.md
 grep -n "<英語の対応表現>" /home/yamazaki/projects/gitlab-handbook-ja/upstream/content/handbook/<path>.md
 ```
 
-**判定基準:**
+**対応要否の判定基準:**
 
-- **upstream に同じ問題が存在** (例: 連続カンマ、未閉じ `**`、broken markdown link、二重ハッシュ、孤立した英単語、誤訳的な表現) → **翻訳側は修正しない**。スレッドに upstream バグの旨を返信して resolve する。
-- **翻訳側の問題のみ** (見出し ID 抜け、未来日付 translated_at、`merge request` → `マージリクエスト` 用語ズレ、HTML/Markdown 構造崩れ、誤訳など) → 修正してコミット・プッシュ・スレッド resolve。
+- **対応不要** (例: upstream にも同じ問題が存在する連続カンマ・未閉じ `**`・broken markdown link・二重ハッシュ・孤立した英単語など、翻訳側で原文に無い修正を入れたくないもの、または指摘自体が誤検出と判断できるもの) → **修正はしない**。スレッドに「対応不要と判断した理由」をコメントして resolve する。
+- **対応必要** (見出し ID 抜け、未来日付 translated_at、`merge request` → `マージリクエスト` 用語ズレ、HTML/Markdown 構造崩れ、誤訳など、翻訳側で直すべきもの) → 修正してコミット・プッシュ。スレッドに「対応内容」をコメントして resolve する。
 
 #### よくある修正パターン
 
@@ -280,7 +291,7 @@ grep -n "<英語の対応表現>" /home/yamazaki/projects/gitlab-handbook-ja/ups
    # manifest.json の該当エントリも同様に修正
    ```
 
-3. **upstream バグ返信テンプレ**
+3. **対応不要時の返信テンプレ** (upstream バグや誤検出など)
    ```bash
    gh api graphql -f query='
    mutation($threadId: ID!, $body: String!) {
@@ -291,7 +302,18 @@ grep -n "<英語の対応表現>" /home/yamazaki/projects/gitlab-handbook-ja/ups
      -f body="upstream 原文 line <N> にも同じ <現象> が存在します。翻訳側で原文に無い修正を加えないため、本 PR ではスキップします。"
    ```
 
-4. **スレッド resolve**
+4. **対応完了時の返信テンプレ** (修正済みであることを記録)
+   ```bash
+   gh api graphql -f query='
+   mutation($threadId: ID!, $body: String!) {
+     addPullRequestReviewThreadReply(input: {pullRequestReviewThreadId: $threadId, body: $body}) {
+       comment { id }
+     }
+   }' -f threadId="<thread_id>" \
+     -f body="<対応内容の要約> を <commit-sha> で修正しました。"
+   ```
+
+5. **スレッド resolve**
    ```bash
    gh api graphql -f query='
    mutation($threadId: ID!) {
@@ -303,7 +325,7 @@ grep -n "<英語の対応表現>" /home/yamazaki/projects/gitlab-handbook-ja/ups
 
 ```bash
 git add -A
-git commit -m "fix: address CodeRabbit review for PR #${PR_NUM}
+git commit -m "fix: address Codex review for PR #${PR_NUM}
 
 - <変更点 1>
 - <変更点 2>
@@ -312,7 +334,15 @@ Co-Authored-By: Claude Opus 4.7 (1M context) <noreply@anthropic.com>"
 git push origin <PR の head branch>
 ```
 
-その後 6-1 に戻り、再レビュー結果を確認する。
+#### Codex 再レビュー依頼
+
+未解決スレッドをすべて処理し終えたら（対応不要分はコメント+resolve、対応必要分は修正+コメント+resolve）、Codex に再レビューを依頼してから 6-1 のポーリングに戻る。
+
+```bash
+gh pr comment ${PR_NUM} --body "@codex review"
+```
+
+`@codex review` を投稿しないと Codex は再レビューしないので忘れずに。再レビュー後、PR body に Codex の 👍 リアクションが付くまで「6-1 ポーリング → 6-2 対応 → `@codex review`」を繰り返す。
 
 ### 6-3: コンフリクト解消 (CONFLICTING のとき)
 
@@ -337,14 +367,14 @@ git push origin <PR の head branch>
 ### 6-4: マージ後の後始末
 
 - マージ成功を確認したら終了。
-- **マージ成功時は Slack 通知を送る** — `mcp__claude_ai_Slack__slack_send_message` で channel `C0B3K9LTYHW` (#gitlab-handbook-ja) に投稿。`<@U0A6FDDNTME>` 宛にメンションし、PR 番号・URL・CR 対応の概要・マージ済みである旨を簡潔に伝える。
+- **マージ成功時は Slack 通知を送る** — `mcp__claude_ai_Slack__slack_send_message` で channel `C0B3K9LTYHW` (#gitlab-handbook-ja) に投稿。`<@U0A6FDDNTME>` 宛にメンションし、PR 番号・URL・Codex 対応の概要・マージ済みである旨を簡潔に伝える。
   ```text
   <@U0A6FDDNTME> 先生、PR #<NUM> のマージが完了しました！:sparkles:
 
   https://github.com/kyama0/gitlab-handbook-ja/pull/<NUM>
 
   • N ファイル翻訳/更新
-  • CR 指摘 M 件を対応 → CodeRabbit が APPROVED
+  • Codex 指摘 M 件を対応 (対応 X 件 / 対応不要 Y 件) → PR body に 👍 (承認サイン) 取得
     ◦ <変更点の要約>
   • 全 thread resolve 済み
   • CI: CLEAN
@@ -360,7 +390,7 @@ git push origin <PR の head branch>
 
 - 作成した PR 番号と URL (作らなかった場合は no-op の旨)
 - manifest entries の差分
-- CR 対応の概要 (何件対応 / 何件 upstream バグでスキップ)
+- Codex 対応の概要 (何件対応 / 何件 upstream バグ等で対応不要としてスキップ)
 - 最終的にマージしたかどうか
 - 特記事項 (content filter ブロック、修復が走った件、コンフリクト解消の有無、token 上限超過で translator を再起動した件、など)
 
