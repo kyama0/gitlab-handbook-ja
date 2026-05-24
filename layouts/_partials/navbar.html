@@ -81,7 +81,16 @@
       {{ end -}}
     </ul>
   </div>
-  <div class="d-none d-lg-block">
+  {{/*
+     検索 partial は `<dialog id="search-dialog">` 本体を初回呼び出し位置で
+     render する。以前はこの partial を `d-none d-lg-block` で囲っていたが、
+     その場合 lg 未満 (= スマホ・タブレット) では親要素が display: none となり、
+     sidebar 側のトリガーから window.__openSearchDialog() を呼んでも dialog 自体が
+     不可視親の中にあるため何も表示されない、という事象が発生した。
+     ここではラッパーから d-none を外し、navbar 側のトリガーボタンだけを CSS で
+     (.td-navbar .header-search-trigger) lg 未満では非表示にする。
+  */}}
+  <div class="td-navbar__search">
     {{ partial "search-input.html" . }}
   </div>
 </div>

@@ -87,10 +87,12 @@ jobs:
       - name: Pagefind index (CJK-aware static site search)
         run: npx pagefind --site public
 
-      - uses: cloudflare/pages-action@f0a1cd58cd66095dee69bfa18fa5efd1dde93bca # v1.5.0
+      # cloudflare/pages-action は deprecated で、内部の wrangler@2 が
+      # 日本語を含むコミット本文を Cloudflare API に投げる際に
+      # "Invalid commit message, it must be a valid UTF-8 string" で 8000111
+      # を返してデプロイ全体を落とす不具合があるため wrangler-action に移行。
+      - uses: cloudflare/wrangler-action@ebbaa1584979971c8614a24965b4405ff95890e0 # v4.0.0
         with:
           apiToken: ${{ secrets.CLOUDFLARE_API_TOKEN }}
           accountId: ${{ secrets.CLOUDFLARE_ACCOUNT_ID }}
-          projectName: gitlab-handbook-ja
-          directory: public
-          branch: main
+          command: pages deploy public --project-name=gitlab-handbook-ja --branch=main --commit-dirty=true
