@@ -9,11 +9,11 @@ owning-stage: "~devops::package"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/
-upstream_sha: 2dd9d315aff1d685e3f27ab47a69d8faa01d31fa
-translated_at: "2026-05-18T12:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-18T13:31:14+02:00"
+lastmod: "2026-05-21T10:11:14+01:00"
 ---
 
 <!--
@@ -265,6 +265,7 @@ Artifact Registry は別個のサービスとして実装されます。
 - **データベース**: 共有 Blob ストレージを伴うフォーマット固有テーブル（[ADR-007](decisions/007_database_schema.md) を参照）
 - **API**: 管理 API（REST）とフォーマット固有のクライアント API（OCI、Maven、npm）（[ADR-009](decisions/009_api_design.md) を参照）
 - **配信**: namespace ごとに構成可能な、リダイレクト、プロキシ、ハイブリッドのダウンロードモード（[ADR-005](decisions/005_artifact_delivery_mode.md) を参照）
+- **ストレージバックエンドとの連携**: CDN + Blob ストレージの組み合わせ、署名付き URL の生成、IP ベースのルーティング、ダウンロードメタデータの伝播（[ADR-013](decisions/013_storage_backend_interaction.md) を参照）
 
 ### スケーラビリティ要件
 
@@ -449,6 +450,7 @@ each alternative solution/path.
 1. [ADR-010: Data Retention](decisions/010_data_retention.md) - アーティファクト、監査ログ、キャッシュコンテンツの保持ポリシー
 1. [ADR-011: Data Reconciliation Feature Timing](decisions/011_data_reconciliation.md) - データレコンサイル機能のタイミングと要件
 1. [ADR-012: Usage Data Collection](decisions/012_usage_data_collection.md) - Artifact Registry の利用データ収集メカニズムとしての Snowplow
+1. [ADR-013: Storage Backend Interaction](decisions/013_storage_backend_interaction.md) - ストレージバックエンド + CDN の組み合わせ、署名付き URL の生成、リダイレクト先のルーティング、ダウンロードメタデータの伝播
 1. [ADR-020: Authentication Flow](decisions/020_authentication_flow.md) - Artifact Registry の認証設計
 1. [ADR-022: Namespace Decoupling](decisions/022_namespace_decoupling.md) - 不変スラグを持つ内部 namespace エンティティ
 1. [ADR-023: Code Structure and Enforcement](decisions/023_code_structure_and_enforcement.md) - パッケージごとの機能構成を伴う Go の `cmd/` + `internal/` レイアウト

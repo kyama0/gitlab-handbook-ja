@@ -2,11 +2,11 @@
 title: "CSM マネージャーハンドブック"
 description: "標準的・定期的なプラクティスに関する CSM マネージャー向けフィールドガイド。"
 upstream_path: /handbook/customer-success/csm/csm-manager/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-04-30T16:57:54+00:00"
+lastmod: "2026-05-22T13:25:26-04:00"
 ---
 
 追加の CSM 関連ハンドブックページについては、[CSM ハンドブックホームページ](/handbook/customer-success/csm/)をご覧ください。
@@ -184,7 +184,7 @@ CSM マネージャーはチームと連携して、CSM が顧客への価値向
 - リスクを解決するために達成すべきことを決定する
 - 次のステップとそのアクションのオーナーシップについて合意する
 
-CSM マネージャーはチームメンバーと合意されたアクション項目または顧客の更新について調整し、それらの詳細は CSM が[At-Risk Update](/handbook/customer-success/csm/health-score-triage/#at-risk-timeline-entries) にキャプチャします。CSM は定義された次のステップを管理・調整します。
+CSM マネージャーはチームメンバーと合意されたアクション項目または顧客の更新について調整し、それらの詳細は CSM が[At-Risk Update](/handbook/customer-success/csm/health-score-triage/#health-update-template) にキャプチャします。CSM は定義された次のステップを管理・調整します。
 
 #### 地域レビューアジェンダ {#regional-review-agenda}
 

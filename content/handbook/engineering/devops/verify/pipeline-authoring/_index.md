@@ -2,11 +2,11 @@
 title: "Verify:Pipeline Authoring グループ"
 description: "Pipeline Authoring グループの GitLab チームページ"
 upstream_path: "/handbook/engineering/devops/verify/pipeline-authoring/"
-upstream_sha: "1065c86ab1ba75adefbb07560d726608885e6d4e"
-translated_at: "2026-04-28T14:02:31Z"
+upstream_sha: "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1"
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-05-22T16:24:48+02:00"
 ---
 
 ## 有用なリンク
@@ -290,6 +290,17 @@ UX カウンターパートは SSOT デザインの DRI であり、MR でのエ
 エンジニアリング DRI は `workflow:in dev` フェーズを通じてプロダクトデザイナーと協力し、最初に合意したものとは異なる予期しない動作を示す可能性があるソリューションの問題を早期に発見します。最初の Issue で合意していなかった変更が追加される場合は、フォローアップ Issue を作成し、エンジニアリング DRI はプロダクトマネージャーと協力して次のイテレーションにその Issue をスケジュールするべきです。これにより、[承認よりクリーンアップ](/handbook/values/#cleanup-over-sign-off)に注力し、[低い恥の水準で](/handbook/values/#low-level-of-shame-when-dogfooding)迅速にイテレーションし、合意したことを達成できるようにします。これらのフォローアップ Issue の完了を遅らせないよう注意すべきです。多量の Deferred UX Issue を積み上げないためです。
 
 ソリューションが一貫して合意したデザインと一致しないことが判明した場合、DRI、デザイナー、プロダクトマネージャーでレトロスペクティブを開き、コミュニケーションのギャップがどこにあるかを議論して改善します。特定の Issue の MR に UX 承認を必要とし始める必要があるかもしれません。エンジニアリング DRI が要件を満たすのを支援するためです。
+
+#### フィーチャーフラグのロールアウトを伴う Issue のクローズ
+
+[公式ガイダンス](/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/#flowchart)では柔軟性が認められていますが、私たちのチームのデフォルトは**フラグの削除が完了するまで機能 Issue をオープンにしておく**ことです。
+
+このアプローチは:
+
+1. 機能/修正の利用可能性をユーザーが理解しやすくします
+1. 残りの作業（ロールアウトの監視、FF の削除）を計画のために可視化したままにします
+
+これは厳格なルールではありません。たとえば、ロールアウト完了が間近な低優先度の Issue は、あなたの裁量でより早くクローズしても構いません。しかし、判断を下す必要を避ける簡単なデフォルトは、削除が完了するまで Issue をオープンにしておくことです。
 
 #### Duo エージェンティックチャットプロンプト
 

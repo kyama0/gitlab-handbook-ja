@@ -1,11 +1,11 @@
 ---
 title: 製品セクション、ステージ、グループ、カテゴリ
 upstream_path: /handbook/product/categories/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+lastmod: "2026-05-22T14:47:44+02:00"
+translated_at: "2026-05-23T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-06T09:57:12-06:00"
 ---
 
 {{% include "includes/product/product-handbook-links.md" %}}
@@ -427,7 +427,7 @@ facilitated 領域に該当する Issue に遭遇した場合:
 
 ただし、これは単一のグループがこれらすべての活動を必ずしも単独で担当すべきだという意味ではありません。複数のグループが実行で協業することもあり得ます。ただしこの調整には、単一の [DRI](/handbook/people-group/directly-responsible-individuals/) がこれらの活動を調整する Issue トラッカーにおける、共有責任 Issue の注意深いトリアージが必要です。
 
-詳細については [Quality 部門ハンドブックのこのセクション](/handbook/product-development/how-we-work/issue-triage/#shared-responsibility-issues) をレビューして、これらのタイプの Issue をトリアージする分散型アプローチについて学んでください。
+詳細については [ハンドブックのこのセクション](/handbook/product-development/how-we-work/issue-triage/#shared-responsibility-issues)をレビューして、これらのタイプの Issue をトリアージする分散型アプローチについて学んでください。
 
 ### カテゴリ A-Z
 

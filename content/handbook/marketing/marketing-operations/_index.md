@@ -2,11 +2,11 @@
 title: "Marketing Operations"
 description: "Marketing Operations (MktgOps) は、マーケティングチーム全体をサポートし、プロセスを合理化し関連ツールを管理します。これらのツールにより、GitLab の他のチームもしばしばサポートします。"
 upstream_path: /handbook/marketing/marketing-operations/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-01T10:44:51-04:00"
+lastmod: "2026-05-21T16:35:14-06:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />

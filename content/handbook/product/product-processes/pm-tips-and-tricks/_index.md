@@ -1,11 +1,11 @@
 ---
 title: プロダクトマネジメントのコツとテクニック
 upstream_path: /handbook/product/product-processes/pm-tips-and-tricks/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-05T20:15:31+00:00"
+lastmod: "2026-05-20T09:32:02-07:00"
 ---
 
 ## 概要
@@ -57,7 +57,7 @@ PM として、[アクションへのバイアス](/handbook/values/#operate-wit
 
 PM として、私たちは出荷する機能とアップグレードについて、ブログ投稿で、何かを宣伝するために社内で、顧客に送るメールで、常に書く必要があります。機能について書くときに考慮すべきガイドラインがいくつかあります。最も重要なのは、ユーザーのために解決している問題を明確に伝えることです。
 
-機能について書くときは、明確な社内および社外メッセージングを生成するのに役立つ [これらのメッセージングガイドライン](/handbook/marketing/blog/release-posts/#messaging-review) をカバーするようにしてください。また、他者が認識しない可能性のある略語（例: Minimal Valuable Change を表す「MVC」）の使用を避けるべきです。さらなるガイダンスについては、[ライティングスタイルガイドライン](/handbook/communication/#writing-style-guidelines) を訪問してください。
+機能について書くときは、明確な社内および社外メッセージングを生成するのに役立つ [これらのメッセージングガイドライン](https://docs.gitlab.com/development/documentation/release_notes/) をカバーするようにしてください。また、他者が認識しない可能性のある略語（例: Minimal Valuable Change を表す「MVC」）の使用を避けるべきです。さらなるガイダンスについては、[ライティングスタイルガイドライン](/handbook/communication/#writing-style-guidelines) を訪問してください。
 
 上記のメッセージングガイドラインを具体的な例で強調しましょう。リポジトリでのシークレットの防止です。これは [8.12 で出荷](https://about.gitlab.com/releases/2016/09/22/gitlab-8-12-released/#preventing-secrets-in-your-repositories-ee) しました。
 

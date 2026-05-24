@@ -1,11 +1,11 @@
 ---
 title: "エンジニアリングキャリア開発"
 upstream_path: /handbook/engineering/careers/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-27T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-05-22T14:47:44+02:00"
 ---
 
 ## キャリア開発の3つの要素
@@ -270,7 +270,9 @@ GitLab での[エンジニアリング IC リーダーシップ](/handbook/engin
 </div>
 </div>
 
-### Quality 部門
+### Infrastructure
+
+> ℹ️ 注: Software Engineer in Test（SET）ロールは Backend Engineer に移行しました。以前の Senior SET は、技術パスを通じて Staff Backend Engineer に進むか、マネジメントパスを通じて Engineering Manager, Infrastructure に進むことができます。最新の情報については [Backend Engineer キャリアマトリックス](/handbook/engineering/careers/matrix/infrastructure/) を参照してください。
 
 <div style="overflow-x: auto">
 <div style="width: 1800px;">
@@ -278,35 +280,14 @@ GitLab での[エンジニアリング IC リーダーシップ](/handbook/engin
 ```mermaid
   graph LR;
   subgraph Merit Based
-    qual:inbeep(Intern, Backend Engineer, Engineering Productivity)-->qual:ibeep(Intermediate Backend Engineer, Engineering Productivity)
-    qual:jset(Intern Software Engineer in Test)-->qual:iset(Intermediate Software Engineer in Test);
-    qual:iset(Intermediate Software Engineer in Test)-->qual:sset(Senior Software Engineer in Test);
-    qual:ibeep(Intermediate Backend Engineer, Engineering Productivity)-->qual:sbeep(Senior Backend Engineer, Engineering Productivity);
     qual:ifsecs(Intermediate Fullstack Engineer, Contributor Success)-->qual:sfsecs(Senior Fullstack Engineer, Contributor Success);
   end
 
   subgraph Based on Merit & Company Need
-    qual:sset(Senior Software Engineer in Test)-->qual:stset(Staff Software Engineer in Test);
-    qual:sset(Senior Software Engineer in Test)-->qual:qem(Quality Engineering Manager);
-
-    qual:sbeep(Senior Backend Engineer, Engineering Productivity)-->qual:stbeep(Staff Backend Engineer, Engineering Productivity);
-    qual:sbeep(Senior Backend Engineer, Engineering Productivity)-->qual:bemep(Backend Engineering Manager, Engineering Productivity);
-
-    qual:sfsecs(Senior Fullstack Engineer, Contributor Success)-->qual:stfsecs(Staff Fullstack Engineer, Contributor Success)
-
-    qual:bemep(Backend Engineering Manager, Engineering Productivity)-->qual:dqe(Director of Quality Engineering);
-    qual:qem(Quality Engineering Manager)-->qual:dqe(Director of Quality Engineering);
-    qual:dqe(Director of Quality Engineering)-->qual:vpq(VP of Quality);
+    qual:sfsecs(Senior Fullstack Engineer, Contributor Success)-->qual:stfsecs(Staff Fullstack Engineer, Contributor Success);
   end
 
-  click qual:jset "/job-description-library/engineering/software-engineer-in-test#intern-software-engineer-in-test";
-  click qual:iset "/job-description-library/engineering/software-engineer-in-test#intermediate-software-engineer-in-test";
-  click qual:sset "/job-description-library/engineering/software-engineer-in-test#senior-software-engineer-in-test";
-  click qual:stset "/job-description-library/engineering/software-engineer-in-test#staff-software-engineer-in-test";
   click qual:bemep "/job-description-library/engineering/backend-engineer/#backend-engineering-manager";
-  click qual:qem "/job-description-library/engineering/engineering-management-quality/#quality-engineering-manager";
-  click qual:dqe "/job-description-library/engineering/engineering-management-quality/#director-of-quality-engineering";
-  click qual:vpq "/job-description-library/engineering/engineering-management-quality/#vp-of-quality";
 ```
 
 </div>

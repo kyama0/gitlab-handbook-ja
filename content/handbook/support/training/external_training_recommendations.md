@@ -2,11 +2,11 @@
 title: 外部トレーニングのおすすめ
 description: サポートエンジニア向けに、GitLab の外部トレーニングパートナーから推奨するコース、ラーニングパス、認定資格
 upstream_path: /handbook/support/training/external_training_recommendations/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-04-22T07:58:38+02:00"
+lastmod: "2026-05-21T14:25:32+00:00"
 ---
 
 このページでは、サポートエンジニアにとって関連性の高い、GitLab の外部トレーニングパートナーが提供する具体的なコース、ラーニングパス、認定資格を推奨します。まず内部の [サポートトレーニングモジュール](/handbook/support/training/) と [特化ドメイントラック](/handbook/support/training/specialised_domain_tracks/) を完了し、その後に下記のリソースを使って知識を補強したり、特定の領域で中級・上級レベルへステップアップしたりすることを推奨します。
@@ -26,7 +26,6 @@ lastmod: "2026-04-22T07:58:38+02:00"
 | [Hone](/handbook/people-group/learning-and-development/hone/) | 個人のチームメンバーはリクエスト／承認が必要 | ライブクラス。リーダーシップとソフトスキルが中心 |
 | [O'Reilly Learning](/handbook/people-group/learning-and-development/self-paced-learning/#oreilly-learning) | エンジニアリング: リクエスト／非エンジニアリング: 経費精算 | 書籍、動画、対話型サンドボックス、ライブイベント |
 | [Google Cloud Skills Boost](/handbook/people-group/learning-and-development/self-paced-learning/#google-cloud-skills-boost-learning) | リクエストが必要 | GCP のラボ、コース、認定パス |
-| [Linux Foundation](/handbook/people-group/learning-and-development/self-paced-learning/#linux-foundation-courses) | コースアクセス: リクエスト／承認 | セルフペースのコース |
 | Codecademy | 無料プランあり | コードベースの対話型学習。Ruby、Go、SQL、Python、Bash |
 
 ## Part 1: 一般的な技術スキル

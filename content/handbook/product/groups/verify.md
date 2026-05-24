@@ -2,11 +2,11 @@
 title: "Verify プロダクトグループ"
 description: "Verify Product Group は、共有、発見可能性、非同期コミュニケーションへのバイアスを高めることを目指しています。"
 upstream_path: /handbook/product/groups/verify/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+lastmod: "2026-05-20T09:32:02-07:00"
+translated_at: "2026-05-23T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-23T15:35:45-08:00"
 ---
 
 ### Verify
@@ -15,9 +15,9 @@ lastmod: "2026-02-23T15:35:45-08:00"
   <iframe src="https://www.youtube.com/embed/9iF9zWAxdH0" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
-### このページの意図
+### このページの目的
 
-Verify Product Group は、[共有](/handbook/values/#share)、[発見可能性](/handbook/values/#findability) を高め、[非同期コミュニケーションへのバイアス](/handbook/values/#bias-towards-asynchronous-communication) を奨励したいと考えています。私たちは、チームプロセスを紹介すると同時に、レトロスペクティブのためのチームメンバー間でのプロセスに関する開かれた議論を奨励する機会を提供するフォーラムとして、このハンドブックページを使用します。
+Verify Product Group は、[共有](/handbook/values/#share)、[発見可能性](/handbook/values/#findability)を高め、[非同期コミュニケーションへのバイアス](/handbook/values/#bias-towards-asynchronous-communication)を促進することを目指しています。私たちはこのハンドブックページを、チームのプロセスを紹介する場として活用するとともに、レトロスペクティブのためにチームメンバー間でプロセスについてオープンに議論する機会を提供する場としても活用します。
 
 ### どこで連絡が取れますか?
 
@@ -34,96 +34,96 @@ Verify チーム:
 
 ### あなたたちは何をしているのですか?
 
-このプロダクトグループの目的は、[Verify ステージの方向性](https://about.gitlab.com/direction/ops/#verify) に記載されています。これには、パイプライン体験、`.gitlab-ci.yml` ファイルの作成または編集、パイプライン内でのジョブの実行、CI/CD のさまざまなテスト機能が含まれますが、これらに限定されません。
+このプロダクトグループの目的は、[Verify ステージのディレクション](https://about.gitlab.com/direction/ops/#verify)に記載されています。これには、パイプラインの体験、.gitlab-ci.yml ファイルの作成やオーサリング、パイプライン内でのジョブの実行、CI/CD におけるさまざまなテスト機能などが含まれますが、これらに限定されません。
 
-![Verify Banner](/images/product/groups/verify_groups_banner.jpg)
+![Verify バナー](/images/product/groups/verify_groups_banner.jpg)
 
-#### 継続的インテグレーションとランナーの境界（オーナーシップ/DRI）
+#### Continuous Integration と Runner の境界（オーナーシップ／DRI）
 
-一般的に、継続的インテグレーションとランナーの機能は相互依存している（ランナーは CI ジョブを実行するビルドエージェントです）ものの、Verify カテゴリとして見ると、それらは異なる機能領域を表しています。しかし、高レベルのカテゴリにきれいに収まらない機能や能力について、どのチームまたはプロダクトマネージャーが DRI であるかを見分けるのが難しい場合があります。このセクションは、それらの境界を明確化することを目的としています。
+一般に Continuous Integration と Runner の機能は相互に依存していますが（Runner は CI ジョブを実行するビルドエージェントです）、Verify のカテゴリーとしては別個の機能領域を表しています。しかし、高レベルのカテゴリーにきれいに収まらないように見える機能やケイパビリティについて、どのチームやプロダクトマネージャーが DRI であるかを見極めるのが難しい場合があります。このセクションは、そうした境界を明確にすることを目的としています。
 
-GitLab では、責任を割り当てるために [DACI](/handbook/people-group/directly-responsible-individuals/#dri-accountable-consulted-informed-daci) を使用することは、全員が Consulted と Informed であることを意味しますが、相談が必要な重要なチームメンバーを強調するため、以下の表に明示的に誰かを指定します。
+GitLab では、責任を割り当てるために [DACI](/handbook/people-group/directly-responsible-individuals/#dri-accountable-consulted-informed-daci) を使用しており、これは全員が Consulted（相談を受ける）および Informed（情報を共有される）となることを意味しますが、相談しなければならない重要なチームメンバーを明示するために、下記の表で誰に相談すべきかを明確に指定しています。
 
-指定された DRI は依然として意思決定を所有し、重要なチームメンバーへの通知/相談の責任を負いますが、「Must be Consulted」指定者(複数可)は、これらのチームメンバーが DRI プロダクトマネージャーに整合したコアエンジニアリングチームの一員でない場合、誰を関与させるべきかの推測作業を不要にします。
+記載された DRI は引き続き意思決定のオーナーであり、重要なチームメンバーへの通知・相談に責任を負いますが、'Must be Consulted'（相談必須）に指定された人を明示することで、これらのチームメンバーが DRI のプロダクトマネージャーと連携するコアエンジニアリングチームに属していない場合に、誰を巻き込むべきかを推測する手間を省きます。
 
-| カテゴリ | コードベース | 説明 | PM DRI | EM DRI | 相談必須 |
+| カテゴリー| コードベース|説明|PM DRI|EM DRI|相談必須|
 | ------ | ------ |------ |------ |------ |------ |
-| Runner Core |runner|セルフマネージドの顧客がさまざまなコンピュートプラットフォームとアーキテクチャ（runner バイナリ、docker イメージ）で使用するためのコアランナーコードベースの機能開発|Runner PM - Darren Eastman|Runner EM - Nicole Williams|N/A|
-| Runners Fleet |RAILS|GitLab UI でのランナーの設定、使用、管理のための機能開発。|Runner PM - Darren Eastman|Runner EM - Nicole Williams|tbd|
-| Runner SaaS |autoscaler|SaaS ランナー（Linux、Windows、macOS）と社内 GitLab ランナーフリート|Runner PM - Gabriel Engel|Runner EM - Nicole Williams| Infrastructure Mgr. - David Smith|
-|SaaS ランナー向けコンピュート分管理|RAILS|SaaS ランナーの範囲内で、GitLab SaaS の顧客向けコンピュート分設定の変更。|SaaS runners PM Gabriel Engel|Runner EM - Nicole Williams|N/A|
-|CI パイプライン実行とパフォーマンス|RAILS|GitLab UI でのパイプラインの実行またはトリガーのための機能と能力。|CI PM |CI EM - Cheryl Li|N/A|
-|CI/CD キューイング GitLab SaaS およびセルフマネージド|RAILS|CI ジョブのキューイングアーキテクチャ。| Pipeline Execution PM |リードエンジニア: Kamil Trzciński、Grzegorz Bizon、Stan Hu| |
-|CI/CD Fair Scheduling GitLab SaaS |RAILS|CI ジョブの公平なスケジューリングアーキテクチャと設定。|Pipeline Execution PM |リードエンジニア: Kamil Trzciński、Grzegorz Bizon、Stan Hu| |
+| Runner Core |runner|さまざまなコンピュートプラットフォームおよびアーキテクチャ上で self-managed の顧客が使用するためのコア Runner コードベースの機能開発（Runner バイナリ、Docker イメージ）|Runner PM - Darren Eastman|Runner EM - Nicole Williams|N/A|
+| Runners Fleet |RAILS|GitLab UI における Runner の構成、使用、管理のための機能開発。|Runner PM - Darren Eastman|Runner EM - Nicole Williams|tbd|
+| Runner SaaS |autoscaler|SaaS Runner（Linux、Windows、macOS）および GitLab 内部の Runner フリート|Runner PM - Gabriel Engel|Runner EM - Nicole Williams| Infrastructure Mgr. - David Smith|
+|SaaS Runner のコンピュート時間管理|RAILS|SaaS Runner のスコープにおける GitLab SaaS の顧客向けのコンピュート時間構成の変更。|SaaS runners PM Gabriel Engel|Runner EM - Nicole Williams|N/A|
+|CI パイプラインの実行とパフォーマンス|RAILS|GitLab UI でパイプラインを実行またはトリガーするための機能とケイパビリティ。|CI PM |CI EM - Cheryl Li|N/A|
+|CI/CD のキューイング GitLab SaaS および Self-Managed|RAILS|CI ジョブのキューイングアーキテクチャ。| Pipeline Execution PM |リードエンジニア: Kamil Trzciński , Grzegorz Bizon, Stan Hu| |
+|CI/CD フェアスケジューリング GitLab SaaS |RAILS|CI ジョブのフェアスケジューリングのアーキテクチャと構成。|Pipeline Execution PM |リードエンジニア: Kamil Trzciński , Grzegorz Bizon, Stan Hu| |
 
 ### ワークフロー
 
-私たちは、マイルストーンと [GitLab の Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/) に整合したカンバンスタイルで作業します。
+私たちは、マイルストーンおよび [GitLab のプロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)に沿って、Kanban スタイルで作業しています。
 
-### クロスファンクショナルなパートナーシップ
+### 部門横断的なパートナーシップ
 
-私たちは他のチームを横断してよく仕事をしており、他者とのエンゲージメントをより良くするよう努めています。この対話の一員になることに興味がある場合は、#s_verify slack グループに連絡してください!
+私たちは他のチームと頻繁に協働しており、他者との関わり方をより良くしようと努めています。この対話の一員になることに興味がある方は、#s_verify Slack グループにご連絡ください!
 
-#### Product Marketing エンゲージメント
+#### Product Marketing との関わり
 
-私たちは [Product Marketing Management](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/core-product-marketing/) と非常に密接にパートナーシップを組んでいます。Verify Stage では、[PMM チーム構造](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/core-product-marketing/) に定義されている安定したカウンターパートがアサインされており、これは [CI ユースケース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/) に整合しています。
+私たちは [Product Marketing Management](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/core-product-marketing/) と非常に密接に連携しています。Verify ステージには、[PMM チーム構成](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/core-product-marketing/)で定義されている安定したカウンターパートが割り当てられており、これは [CI ユースケース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/)に沿っています。
 
-私たちには4つの主要プロセスがあります。
+主なプロセスは 4 つあります:
 
-1. 半期ごとのステージ全体の GTM & 戦略ポジショニング
-1. 四半期ごとの Sales Enablement
-1. プロダクトグループ向け四半期ロードマップアライメント
-1. プロダクトグループ向け月次リリースポストおよびマーケットポジショニング
+1. 半期ごとのステージ全体の GTM および戦略ポジショニング
+1. 四半期ごとのセールスイネーブルメント
+1. プロダクトグループ向けの四半期ごとのロードマップアラインメント
+1. プロダクトグループ向けの月次リリース投稿と市場ポジショニング
 
-##### ステージ全体の GTM & 戦略ポジショニング
+##### ステージ全体の GTM および戦略ポジショニング
 
-- **頻度**: 年2回
-- **オーディエンス**: 社内
-- **作成される成果物**: デッキ、録画、Issue ボード
-- **ゴール**: ステージの半期プロダクト戦略を GTM セールスモーションと競合状況に整合させる30分の録画を提供する。セールスチームのピッチや、見込み客とのコールで初期セールスを行うプロダクトマネージャーにとって有用な成果物を含める。
+- **頻度**: 年 2 回
+- **対象**: 社内
+- **作成する成果物**: デッキ、録画、Issue ボード
+- **目標**: ステージの半期プロダクト戦略を、GTM のセールスモーションおよび競合状況と整合させる 30 分間の録画を提供します。セールスチームがピッチを行う際や、プロダクトマネージャーが見込み顧客とのコールで早期セリングを行う際に役立つ成果物を含めます。
 
-最近、F[Y22 1H](https://youtu.be/B03ke3WlnaE) で、[デッキ](https://docs.google.com/presentation/d/1K0QXBtW48UbG7uQMaTa83X99RIbDXuY0tFYynSyuSGo/edit) とともに、初めての共同ステージ全体の PMM および Product Positioning を実施しました。
+私たちは先日、[FY22 1H](https://youtu.be/B03ke3WlnaE) 向けに、[デッキ](https://docs.google.com/presentation/d/1K0QXBtW48UbG7uQMaTa83X99RIbDXuY0tFYynSyuSGo/edit)とともに、初のステージ全体での PMM とプロダクトポジショニングの合同セッションを実施しました。
 
-##### Sales Enablement
-
-- **頻度**: 四半期ごと
-- **オーディエンス**: 社内
-- **作成される成果物**: デッキ、録画
-- **ゴール**: フィールドイネーブルメントで使用するため、さまざまなプロダクトトピックに関する10〜30分の録画を提供する。
-
-最近、[cs-skill#116](https://gitlab.com/gitlab-com/sales-team/cs-skills-exchange/-/issues/116) を通じて、技術的なトピックのベンチ構築の議論に参加しました。これらの種類のセッションは、PMM とのパートナーシップで、フィールドのための魅力的なストーリーの構築を支援するために使用されます。
-
-##### プロダクトグループ向けロードマップアライメント
+##### セールスイネーブルメント
 
 - **頻度**: 四半期ごと
-- **オーディエンス**: 外部
-- **作成される成果物**: 録画
-- **ゴール**: ウェビナー、パートナーコール、ホワイトペーパーで使用するため、さまざまなプロダクトトピックに関する10〜30分の録画を提供する。
+- **対象**: 社内
+- **作成する成果物**: デッキと録画
+- **目標**: フィールドイネーブルメントで使用するための、さまざまなプロダクトトピックに関する 10 〜 30 分の録画を提供します。
 
-これらは、テーマを導き、市場でストーリーを構築する機会を提示するためのものであり、コミットメントではありません。そうでなければ、これらはマイルストーンにスケジュールされます。
+私たちは先日、[cs-skill#116](https://gitlab.com/gitlab-com/sales-team/cs-skills-exchange/-/issues/116) を通じて、技術トピックのベンチ構築に関する議論に参加しました。このようなセッションは、PMM と連携してフィールド向けの説得力のあるストーリーを構築するために活用されます。
 
-##### 機能のリリースポスト & マーケットポジショニング
+##### プロダクトグループ向けロードマップアラインメント
+
+- **頻度**: 四半期ごと
+- **対象**: 社外
+- **作成する成果物**: 録画
+- **目標**: ウェビナー、パートナーコール、ホワイトペーパーで使用するための、さまざまなプロダクトトピックに関する 10 〜 30 分の録画を提供します。
+
+これらはテーマを導き、市場でストーリーを構築する機会を提示することを目的としたものであり、コミットメントではありません。コミットメントであれば、マイルストーンにスケジュールされることになります。
+
+##### 機能向けのリリース投稿と市場ポジショニング
 
 - **頻度**: 月次
-- **オーディエンス**: 外部
-- **作成される成果物**: コピー/テキスト
-- **ゴール**: プロダクトマネージャーとともに、リリースポストアイテムまたはブログ投稿でマージリクエストでの書面コミュニケーションを提供する。
+- **対象**: 社外
+- **作成する成果物**: コピー／テキスト
+- **目標**: リリース投稿アイテムまたはブログ投稿において、プロダクトマネージャーとともにマージリクエストでの文章によるコミュニケーションを提供します。
 
-[Moving CI to Lovable...again](https://about.gitlab.com/blog/2021/02/22/continuously-improving-ci-lovability/) や [the Pipeline Editor](https://about.gitlab.com/blog/2021/02/22/pipeline-editor-overview/) に関する説明など、機能固有のブログ投稿を時々出荷します。これらは、[Release Post レビューとポジショニング](/handbook/marketing/blog/release-posts/#pmm-reviewers) と並んで PMM を含める素晴らしい機会です。
+私たちは、[Moving CI to Lovable...again](https://about.gitlab.com/blog/2021/02/22/continuously-improving-ci-lovability/) や、[Pipeline Editor](https://about.gitlab.com/blog/2021/02/22/pipeline-editor-overview/) に関するこの解説のような、機能固有のブログ投稿を出すことがあります。これらは、[リリース投稿のレビューとポジショニング](https://docs.gitlab.com/development/documentation/release_notes/)とともに PMM を巻き込む絶好の機会です。
 
-#### カスタマーサクセス & リニューアルエンゲージメント
+#### Customer Success と更新の関わり
 
-私たちは、Customer Success（SA/CSM）とプロダクトマネージャーが見込み客と顧客からのプロダクトフィードバックについてすり合わせるための CS <> Product フィードバックループを持っています。月次のケイデンスで、[cs-product-feedback](https://gitlab.com/gitlab-com/cs-product-feedback) プロジェクトで作成された Issue で捕捉され、この [Issue ボード](https://gitlab.com/gitlab-com/cs-product-feedback/-/boards) に統合された解決すべき問題について議論するために会います。
+私たちは、Customer Success（SA／CSM）とプロダクトマネージャーが見込み顧客や顧客からのプロダクトフィードバックについて同期するための、CS <> Product フィードバックループを設けています。月次のリズムで集まり、[cs-product-feedback](https://gitlab.com/gitlab-com/cs-product-feedback) プロジェクトで作成された Issue として記録され、この [Issue ボード](https://gitlab.com/gitlab-com/cs-product-feedback/-/boards)に集約された、解決すべき問題について議論します。
 
-#### Alliances エンゲージメント
+#### Alliances との関わり
 
-詳細は今後
+詳細は今後追加予定です
 
 ### コミュニティ貢献
 
-私たちは可能な限り、オープンソースコミュニティを奨励しサポートしたいと考えています。私たちには2つの成功指標があります。
+私たちは、オープンソースコミュニティをできる限り奨励し、サポートしたいと考えています。成功の指標は 2 つあります:
 
-1. [Verify Stage のコミュニティからのマージ済み MR](https://gitlab.com/groups/gitlab-org/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&label_name[]=devops%3A%3Averify&label_name[]=Community%20contribution)
+1. [Verify ステージ](https://gitlab.com/groups/gitlab-org/-/merge_requests?scope=all&utf8=%E2%9C%93&state=merged&label_name[]=devops%3A%3Averify&label_name[]=Community%20contribution)におけるコミュニティからのマージ済み MR
 1. [MRARR](/handbook/marketing/developer-relations/performance-indicators/#mrarr)
 
-コミュニティからのマージリクエストを可能にするプロセスは、Verify チームページで確認できます。
+コミュニティからのマージリクエストを可能にするための私たちのプロセスは、Verify チームページに記載されています。

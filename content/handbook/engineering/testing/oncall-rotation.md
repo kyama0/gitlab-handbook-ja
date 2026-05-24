@@ -3,17 +3,19 @@ title: パイプライン DRI オンコールローテーション
 description: >-
   Developer Experience サブ部門には 2 つのオンコールローテーションがあります：パイプライントリアージ（SET 主導）とインシデント管理（EM 主導）。
 upstream_path: /handbook/engineering/testing/oncall-rotation/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T10:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-02T07:33:04-05:00"
+lastmod: "2026-05-22T14:47:44+02:00"
 ---
+
+> ⚠️ 注意：このプロセスは現在更新中です。Software Engineer in Test（SET）の役割は Backend Engineer へ移行中であり、パイプライン DRI プロセスは廃止される予定です。決定が確定次第、このページは新しいプロセスを反映するように改訂されます。
 
 ## Developer Experience サブ部門のパイプライントリアージオンコールローテーション
 
 これは、複数の環境で実行されるさまざまなスケジュールパイプラインの失敗をデバッグ / 分析する責任を共有するためのスケジュールです。
-Developer Experience サブ部門のオンコールは、GitLab の通常の業務時間外の作業を含みません。週末と[Family and Friends Days](/handbook/company/family-and-friends-day/)も除外されます。SET はオンコール週中に 1:1 ミーティングや部門ミーティングへの出席を非同期に変更する完全な自律性を持ちますが、マネージャーへの適切な連絡をお願いします。
+Developer Experience サブ部門のオンコールは、GitLab の通常の業務時間外の作業を含みません。週末と[Family and Friends Days](/handbook/company/family-and-friends-day/)も除外されます。チームメンバーは、オンコール週中に 1:1 ミーティングや部門ミーティングへの出席を非同期に変更する完全な自律性を持ちますが、その場合はマネージャーへの適切な連絡をお願いします。
 
 現在のイテレーションでは、タイムゾーンベースのローテーションがあり、トリアージ活動は各チームメンバーの勤務時間中に行われます。
 

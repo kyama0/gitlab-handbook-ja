@@ -2,145 +2,147 @@
 title: GitLab におけるプロダクトマネージャーの役割
 description: "このページでは、GitLab でプロダクトマネージャーとして働くための概要と、それに役立つリソースへのリンクを掲載しています。"
 upstream_path: /handbook/product/product-management/product-manager-role/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+lastmod: "2026-05-22T14:47:44+02:00"
+translated_at: "2026-05-23T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-19T09:43:34-05:00"
 ---
 
-このページでは、GitLab でプロダクトマネージャーとして働くための概要と、それに役立つリソースへのリンクを掲載しています。GitLab でプロダクトマネージャーの仕事をどのように評価するかをよりよく理解するには、[プロダクトマネジメントの CDF とコンピテンシー](/handbook/product/product-management/product-cdf-competencies/) をご覧ください。
+このページでは、GitLab でプロダクトマネージャーとして働くための概要と、それに役立つリソースへのリンクを掲載しています。GitLab でプロダクトマネージャーの仕事をどのように評価するかをよりよく理解するには、[プロダクトマネジメントの CDF とコンピテンシー](/handbook/product/product-management/product-cdf-competencies/)をご覧ください。
 
 {{% include "includes/product/product-handbook-links.md" %}}
 
 ## プロダクトの組織構造
 
-GitLab Product チームには、[プロダクトマネジメントの職位](/job-description-library/product/product-manager/) および [プロダクトマネジメント - リーダーシップの職位](/job-description-library/product/product-management-leadership/) のさまざまなレベルのチームメンバーが含まれています。彼らは [組織レベル](/handbook/company/structure/#layers) にマッピングされ、以下の表に概説された [製品階層](/handbook/product/categories/#hierarchy) のさまざまなポイントでスコープを持ちます。
+GitLab の Product チームには、さまざまなレベルの[プロダクトマネジメントの職位](/job-description-library/product/product-manager/)および[プロダクトマネジメント - リーダーシップの職位](/job-description-library/product/product-management-leadership/)のチームメンバーが含まれます。彼らは私たちの[組織レベル](/handbook/company/structure/#layers)にマッピングされ、下記の表に概説されている[プロダクト階層](/handbook/product/categories/#hierarchy)のさまざまなポイントでスコープを持ちます。
 
-* Product 組織は [GitLab のレイヤー構造](/handbook/company/structure/#layers) に従います。レイヤー間のピアが同じタイトルを持たない場合があります。
+* プロダクト組織は [GitLab のレイヤー構造](/handbook/company/structure/#layers)に従います。場合によっては、レイヤーをまたいだピアが同じ職位を持たないケースもあります。
 
-| レベル | 職位 | 階層のスコープ |
+| レベル | 職位| 階層スコープ |
 | ----- | ------------ | ---------------- |
-| IC | [Product Manager](/job-description-library/product/product-manager/#product-manager)、[Senior PM](/job-description-library/product/product-manager/#senior-product-manager)、[Principal PM](/job-description-library/product/product-manager/#principal-product-manager) | Group、Stage |
-| Manager | [Group Manager Product](/job-description-library/product/product-management-leadership/#group-product-manager-gpm)、[Director of Product](/job-description-library/product/product-management-leadership/#director-of-product-management) | グループの集合、Stage、Section |
-| Director | [Director of Product](/job-description-library/product/product-management-leadership/#director-of-product-management)、[Senior Director of Product](/job-description-library/product/product-management-leadership/#senior-director-of-product-management) | Section、Section の集合 |
-| Senior Leader | [VP](/job-description-library/product/product-leadership/#vp-of-product-management) | すべての Section (スコープとビジネスニーズに応じて、より少ない範囲をカバーすることもあります) |
-| Executive | Chief Product Officer | 機能全体 |
+| IC | [Product Manager](/job-description-library/product/product-manager/#product-manager), [Senior PM](/job-description-library/product/product-manager/#senior-product-manager), [Principal PM](/job-description-library/product/product-manager/#principal-product-manager) | Group, Stage |
+| Manager | [Group Manager Product](/job-description-library/product/product-management-leadership/#group-product-manager-gpm), [Director of Product](/job-description-library/product/product-management-leadership/#director-of-product-management) | Collection of Groups, Stage, Section |
+| Director | [Director of Product](/job-description-library/product/product-management-leadership/#director-of-product-management), [Senior Director of Product](/job-description-library/product/product-management-leadership/#senior-director-of-product-management) | Section, Collection of Sections |
+| Senior Leader | [VP](/job-description-library/product/product-leadership/#vp-of-product-management) | All Sections（ただしスコープやビジネスニーズによっては、それより少ない範囲をカバーすることもあります） |
+| Executive | Chief Product Officer | ファンクション全体 |
 
 ---
 
 ## GitLab で PM として働く
 
-### 責務
+### 責任
 
-PM としての仕事は、[Product Manager の責務](/handbook/product/product-management/product-cdf-competencies/) に概説されています。
+PM としてのあなたの仕事は、[プロダクトマネージャーの責任](/handbook/product/product-management/product-cdf-competencies/)に概説されています。
 
-### GitLab で PM として始める
+### GitLab で PM として始めるにあたって
 
-最初に行うことは、以下のハンドブックページに慣れることです。
+最初にすべきことは、以下のハンドブックページに慣れ親しむことです
 
 * [Product Principles](/handbook/product/product-principles/)
 * [Product Processes](/handbook/product/product-processes/)
-* [Product Manager の責務](/handbook/product/product-management/product-cdf-competencies/)
-* [Product Manager のキャリア開発フレームワーク](/handbook/product/product-management/product-cdf-competencies/)
+* [Product Manager Responsibilities](/handbook/product/product-management/product-cdf-competencies/)
+* [Product Manager Career Development Framework](/handbook/product/product-management/product-cdf-competencies/)
 * [Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/)
 * [Product Development Timeline](/handbook/engineering/workflow/#product-development-timeline)
-* [プロダクトマネジメントの学習と能力開発](/handbook/product/product-management/learning-and-development/)
-* [GitLab の価値観](/handbook/values/)
+* [Product Management Learning & Development](/handbook/product/product-management/learning-and-development/)
+* [GitLab Values](/handbook/values/)
 
-GitLab のプロダクトマネージャーとして、製品スコープは膨大です! 最初は気が遠くなるかもしれませんが、GitLab はあなたが成功できるように、プロセスと組織を継続的にイテレートしています。すべてはドラフトなので、ぜひ [提案を行って](/handbook/values/#make-a-proposal) 物事を改善してください。
+GitLab のプロダクトマネージャーとして、あなたのプロダクトスコープは膨大です! 最初は気が遠くなるかもしれませんが、GitLab はあなたが成功できるように、プロセスと組織を絶えずイテレーションしています。すべてはドラフトなので、物事を改善するために[プロポーザルを作成](/handbook/values/#make-a-proposal)してください。
 
-PM として、人々から要求されるすべてのことを行おうとすると、極めて忙しくなる可能性があります。これは役割への期待ではありません。
-私たちは、あなたが優先順位を専門的に決定し、[manager of one](/handbook/values/#managers-of-one) になることを期待しています。そして、あなたの [中核的な責務](/job-description-library/product/product-manager/#what-pms-own) を忘れないでください! TODO に溺れてしまっている自分に気付いたら、一歩下がって、優先順位を付け、押し戻し、最も重要なことにエネルギーを集中させてください。PM が所有することの詳細については、[Product Manager のジョブファミリー](/job-description-library/product/product-manager/#what-pms-own) を参照してください。
+PM として、人々から頼まれるすべてのことをやろうとすると、極端に忙しくなる可能性があります。これはこの役割に対する私たちの期待ではありません。
+私たちは、あなたが巧みに優先順位をつけ、[マネージャー・オブ・ワン](/handbook/values/#managers-of-one)であることを期待しています。そして、あなたの[コアの責任](/job-description-library/product/product-manager/#what-pms-own)が何であるかを覚えておいてください! もし To-Do に溺れていることに気づいたら、一歩下がって優先順位をつけ、押し返し、最も重要なことにエネルギーを集中させてください。PM が何を所有するかの詳細については、[Product Manager の職種ファミリー](/job-description-library/product/product-manager/#what-pms-own)を参照してください。
 
-役立つリマインダー:
+役立つリマインダーをいくつか:
 
-* PM として、新しい取り組みをキックオフする必要があるのはあなたです。納期に間に合わせる責任はありませんが、行動を起こし、方向を設定する責任が _あります_。あらゆる場所で能動的に動き、過剰にコミュニケーションを取り、重要だと思うことをチームやコミュニティに売り込んでください。
-* PM として、エンジニアリングに対するバーを設定する必要があります。つまり、エンジニアリングと残りの会社を押し進めるということです。あなたは、プロダクトが設定するペースについてエンジニアリングが不満を述べるくらいになりたいと思うでしょう。私たちのデフォルトの本能は減速することですが、それに屈してはなりません。
-* PM として、製品を所有していません。他の人にフィードバックを求め、チームメンバーやコミュニティに、直接的な介入なしに提案や創造をするスペースを与えてください。決定が行われ、計画される確認をする仕事ではありますが、すべてのアイデアや変更を思いつくことではありません。
+* PM として、あなたは新しいイニシアチブを立ち上げる人です。あなたは何かを期限内に出荷する責任を負っているわけではありませんが、行動を起こし、ディレクションを設定する責任は _あります_。あらゆる場所で活発に動き、過剰に伝え、自分が重要だと思うことをチームやコミュニティの残りのメンバーに売り込んでください。
+* PM として、あなたはエンジニアリングのバーを設定する必要があります。つまり、エンジニアリングや会社の他の部分を後押しするということです。プロダクトが設定するペースについて、エンジニアリングがほとんど不満を漏らすくらいが望ましいのです。私たちのデフォルトの本能はペースを落とすことですが、それに屈してはいけません。
+* PM として、あなたはプロダクトを所有しているわけではありません。他の人にフィードバックを求め、あなたの直接的な介入なしにチームメンバーやコミュニティが提案したり物事を作り出したりできる余地を与えてください。物事が決定され、計画されることを確実にするのがあなたの仕事であり、あらゆるアイデアや変更を考え出すことではありません。
 
-### 助けが必要なときはどこを見るべきか
+### 助けが必要なときはどこを見ればよいですか?
 
-* 最初に行うべきことは、このページとここからリンクされているページを注意深く読むことです。
-* ほとんどの答えは [handbook](/handbook/) でも見つけることができます。答えが見つからない場合は、提案を追加してください!
-* Product 関連の質問は `#product` Slack チャンネルで尋ねることができます。
-* 一般的な質問は `#questions` で尋ねてください。
-* Git 固有の質問は `#git-help` で尋ねてください。
+* 最初にすべきことは、このページとこのページからリンクされているページを注意深く読むことです。
+* ほとんどの答えは[ハンドブック](/handbook/)にも記載されています。答えが見つからない場合は、ぜひプロポーザルを追加してください!
+* プロダクトに関連する質問は `#product` Slack チャンネルで尋ねることができます。
+* 一般的な質問は `#questions` で尋ねるべきです。
+* Git 固有の質問は `#git-help` で尋ねるべきです。
 * MR に問題がある場合は、`#mr-buddies` で尋ねてください。
-* HR の質問は HelpLab で尋ねてください。
-* リリース投稿関連のものは、[Release Post ハンドブック](/handbook/marketing/blog/release-posts/#pm-contributors) と `#release-post` で見つけることができます。
+* HR の質問は HelpLab で尋ねるべきです。
+* リリース投稿関連のことはすべて、[リリース投稿ハンドブック](https://docs.gitlab.com/development/documentation/release_notes/)および `#release-post` で見つけることができます。
 
-### 仕事の要件
+### 職務要件
 
-[Product Manager、Sr. Product Manager、および Principal Product Manager](/job-description-library/product/product-manager/)、[Group Manager, Product Management](/job-description-library/product/product-management-leadership/#group-product-manager-gpm)、[Director of Product](/job-description-library/product/product-management-leadership/#director-of-product-management)、[VP of Product](/job-description-library/product/product-leadership/#vp-of-product-management) の仕事の要件と期待値は、ジョブファミリーページに概説されています。
+[Product Manager、Sr. Product Manager、Principal Product Manager](/job-description-library/product/product-manager/)、[Group Manager, Product Management](/job-description-library/product/product-management-leadership/#group-product-manager-gpm)、
+[Director of Product](/job-description-library/product/product-management-leadership/#director-of-product-management)、
+[VP of Product](/job-description-library/product/product-leadership/#vp-of-product-management)の職務要件と期待は、私たちの職種ファミリーページに概説されています。
 
-プロダクトマネージャーが製品キャリアを進めるにつれて、新しい製品エリアに移ることで新しい課題を引き受けることを推奨します。あるいは、IC PM はマネジメントトラックの役割に応募することが推奨され、その逆も同様です。
+プロダクトマネージャーがプロダクトのキャリアで前進するにつれて、私たちはプロダクトマネージャーが新しいプロダクト領域に移ることで新しい挑戦に取り組むことを奨励しています。あるいは、IC の PM がマネジメントトラックの役割に応募することも、その逆も奨励しています。
 
-製品の役割における、戦術的、運用的、戦略的な責務の割り当ての進化は、以下のチャートでよく示されています。
+プロダクトの役割における戦術的、運用的、戦略的な責任配分の進行は、このチャートでよく示されています。
 
-![GitLab PM 責務割り当てチャート](/images/product/pm-allocation.png)
+![GitLab PM 責任配分チャート](/images/product/pm-allocation.png)
 
-_[ソースファイル](https://docs.google.com/spreadsheets/d/19gAgPJVdXfBpXiFOlT1WqZLJB_eFU7W7slmAzodEuDM/edit#gid=1012729771)。注 - インスピレーションを与えてくれた [Melissa Perri](https://twitter.com/lissijean/) に感謝_
+_[ソースファイル](https://docs.google.com/spreadsheets/d/19gAgPJVdXfBpXiFOlT1WqZLJB_eFU7W7slmAzodEuDM/edit#gid=1012729771)。注 - インスピレーションをくれた [Melissa Perri](https://twitter.com/lissijean/) に感謝します_
 
-### PM が念頭に置くべき重要な日付
+### PM が念頭に置いておくべき重要な日付
 
-**月の 4 日:**
+**毎月 4 日:**
 
-[次のリリース](/handbook/engineering/releases/) に含まれる Issue のドラフト。
-エンジニアリング / UX とのキャパシティと技術的な議論を開始。
+[次のリリース](/handbook/engineering/releases/)に含まれる Issue のドラフト。
+エンジニアリング／UX とのキャパシティおよび技術的な議論を開始します。
 
-**月の 12 日:**
+**毎月 12 日:**
 
-リリーススコープが確定。スコープ内の Issue にマイルストーンをマーク
-含めるべき関連項目でキックオフドキュメントが更新される。
+リリーススコープが確定されます。スコープ内の Issue にマイルストーンを付けます。
+キックオフドキュメントが、含めるべき関連項目で更新されます。
 
-**月の 15 日:**
+**毎月 15 日:**
 
-その日の終わりまでにグループキックオフコールが録画・アップロードされる。
+グループのキックオフコールが、その日の終わりまでに録画されアップロードされます。
 
-[Product Development Timeline](/handbook/engineering/workflow/#product-development-timeline) も参照してください。
+[Product Development Timeline](/handbook/engineering/workflow/#product-development-timeline)も参照してください。
 
-### 責務の範囲
+### 責任の範囲
 
-Product チームは、GitLab のほとんどの製品とプロジェクトのイテレーションに責任を持ちます。
+プロダクトチームは、GitLab のほとんどのプロダクトおよびプロジェクトのイテレーションに責任を負います:
 
-* GitLab CE と EE
+* GitLab CE および EE
 * GitLab.com
 * about.gitlab.com
 * customers.gitlab.com
 * version.gitlab.com
 
-これには、全スタックとそのすべての側面が含まれます。Product チームは、バグ、機能、リグレッション、パフォーマンスだけでなく、アーキテクチャの変更や GitLab の卓越性を確保するために必要な他の側面についても比較考慮し、優先順位付けを行う必要があります。プロダクトマネージャーは全体的な作業の優先順位付けについて [DRI](/handbook/people-group/directly-responsible-individuals/) ですが、各 [作業タイプ](/handbook/product/groups/product-analysis/engineering/metrics/#work-type-classification) の正しい優先順位が考慮されるよう、EM、UX、QEM の stable counterpart と協力して作業します ([それぞれに異なる DRI があるため](/handbook/product-development/how-we-work/roles-and-responsibilities/))。
+これにはスタック全体とそのすべての側面が含まれます。プロダクトチームは、バグ、機能、リグレッション、パフォーマンスだけでなく、GitLab の卓越性を確保するために必要なアーキテクチャの変更やその他の側面も比較検討し、優先順位をつける必要があります。プロダクトマネージャーは、全体的な作業の優先順位付けの [DRI](/handbook/people-group/directly-responsible-individuals/) ですが、各[作業タイプ](/handbook/product/groups/product-analysis/engineering/metrics/#work-type-classification)から正しい優先順位が考慮されることを確実にするために、EM および UX の安定したカウンターパートと協力して作業します（[それぞれ異なる DRI がいる](/handbook/product-development/how-we-work/roles-and-responsibilities/)ため）。
 
-## プロダクトマネジメントの学習と能力開発
+## プロダクトマネジメントのための学習と開発
 
-GitLab および長期的なキャリア目標を達成するために、プロダクトマネージャーが GitLab で仕事を行ううえでの成長と成功をサポートする最良のリソースを収集し強調する専用のライブラリがあります。プロダクトマネージャーは、マネージャーと協力して改善エリアを特定し、それに応じて [プロダクトマネジメントの学習と能力開発](/handbook/company/culture/all-remote/) のリソースを活用することを推奨します。
+私たちは、GitLab での仕事において、またそれを超えて長期的なキャリア目標を達成するために、プロダクトマネージャーの成長と成功をサポートする最高のリソースを収集しハイライトすることに特化したライブラリを用意しています。私たちは、プロダクトマネージャーがマネージャーと協力して改善すべき領域を特定し、それに応じて[プロダクトマネジメントのための学習と開発](/handbook/company/culture/all-remote/)のリソースを活用することを奨励しています。
 
 ## プロダクトマネージャーのオンボーディング
 
-プロダクトマネージャーのオンボーディングは、関連する 2 つの Issue テンプレートで構成されています。
+プロダクトマネージャーのオンボーディングは、2 つの関連する Issue テンプレートで構成されています。
 
-[GitLab People Operations Onboarding Issue](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) は、新入社員の開始日の約 4〜10 営業日前に People Operations によって生成されます。詳細は [GitLab Onboarding Processes](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/onboarding_process/) にあります。Issue は採用マネージャーに割り当てられ、自身のタスクを実行した後、新しいプロダクトマネージャーの入社者に割り当てられます。この Issue には、チームとの導入コールのスケジュール設定など、最初の 4 週間以内に完了する必要がある事務的な製品タスクを含む製品固有のセクションがあります。採用マネージャーは Issue で割り当てられた People Operations チームメンバーに ping を打つか、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=2a7cb781478c069067429ee0026d43c2) でヘルプを求めることができます。プロダクトマネージャーはこの一般的なオンボーディングに 4 週間以上費やすべきではなく、時間的コミットメントを管理するために必要に応じてテンプレート内の項目を優先順位付けするようマネージャーと相談する必要があります。
+[GitLab People Operations オンボーディング Issue](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) は、新入社員の入社日のおよそ 4 〜 10 営業日前に People Operations によって生成されます。詳細は [GitLab オンボーディングプロセス](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/onboarding_process/)で確認できます。この Issue は採用マネージャーに割り当てられ、採用マネージャーは自身のタスクを実行した後、新しいプロダクトマネージャーの採用者に割り当てます。この Issue にはプロダクト固有のセクションがあり、最初の 4 週間以内に完了する必要があるクラリカルなプロダクトタスク（例: チームとの紹介コールのスケジュール設定）が含まれています。採用マネージャーは、Issue 内で割り当てられた People Operations チームメンバーにメンションするか、[HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=2a7cb781478c069067429ee0026d43c2) で助けを求めることができます。プロダクトマネージャーはこの一般的なオンボーディングに 4 週間以上を費やすべきではなく、必要に応じてテンプレート内の項目に優先順位をつけて時間的なコミットメントを管理するためにマネージャーと相談すべきです。
 
-さらに、Product チームには [First 100 days テンプレート](https://gitlab.com/gitlab-com/Product/-/blob/main/.gitlab/issue_templates/PM-onboarding-first-100-days.md) があります。
+さらに、プロダクトチームには[最初の 100 日テンプレート](https://gitlab.com/gitlab-com/Product/-/blob/main/.gitlab/issue_templates/PM-onboarding-first-100-days.md)があります。
 
-採用マネージャーは **First 100 days テンプレート** を準備 / カスタマイズします。私たちの価値観に従って、これらの Issue はデフォルトで公開することを推奨しますが、機密情報や個人情報がある場合は、マネージャーの裁量で `confidential` としてマークされる場合があります。**First 100 days issue** は、新しいプロダクトマネージャーの開始日に開かれるべきです。彼らがこの Issue を開始することは期待されていませんが、これから何が来るかの一般的なアイデアを与えることを意図しています。一般的に、**First 100 days issue** は、プロダクトマネージャーの開始日から約 2〜4 週間後の新しいマイルストーンの開始頃にキックオフされます。このタイミングは、新しいプロダクトマネージャーが「オフィス」での最初の 100 日がより戦略的にどのように見えるかを理解し始める前に、戦術的 / 一般的なオンボーディングのための十分な時間を確保するのに役立つことを意図しています。ただし、First 100 days のタイミングと内容は、最終的にプロダクトマネージャーとそのマネージャーの間で同意することになります。
+採用マネージャーは **最初の 100 日テンプレート** を準備／パーソナライズします。私たちはバリューに従ってこれらの Issue をデフォルトで公開することを奨励していますが、機密情報や個人データがある場合は、マネージャーの裁量で `confidential` とマークされることがあります。**最初の 100 日 Issue** は、新しいプロダクトマネージャーの入社日にオープンになっているべきです。彼らがこの Issue に取り掛かることは期待されていませんが、これから来ることの一般的なイメージを与えることを意図しています。一般に、**最初の 100 日 Issue** は、プロダクトマネージャーの入社日からおよそ 2 〜 4 週間後の、新しいマイルストーンの開始頃に立ち上がります。このタイミングは、新しいプロダクトマネージャーが「職場」での最初の 100 日がより戦略的にどのようなものになるかを把握し始める前に、戦術的／一般的なオンボーディングのための十分な時間を確保できるようにすることを意図しています。ただし、最初の 100 日のタイミングや内容は、最終的にはプロダクトマネージャーとそのマネージャーの間で合意することになります。
 
-新入社員は、**First 100 days テンプレート** の目標の定義と追加にも参加する必要があります。マネージャーがこのゴール指向のオンボーディング Issue を新しいプロダクトマネージャーの最初の [CDF レビュー](/handbook/product/product-management/product-cdf-competencies/#product-management-career-development-framework) に活用し、PM が GitLab での役割に落ち着く際にチームメイトと効果的に整合できるようサポートすることを推奨します。例として、これらの最初の 100 日のオンボーディング Issue を見てください: [3291](https://gitlab.com/gitlab-com/Product/-/issues/3291) と [2809](https://gitlab.com/gitlab-com/Product/-/issues/2809)。
+新入社員も、**最初の 100 日テンプレート** の目標を定義し追加することに参加すべきです。マネージャーは、この目標志向のオンボーディング Issue を、新しいプロダクトマネージャーの最初の [CDF レビュー](/handbook/product/product-management/product-cdf-competencies/#product-management-career-development-framework)に活用し、PM が GitLab での役割に落ち着くのを支援する形でチームメイトを効果的に整合させることが推奨されます。これらの最初の 100 日オンボーディング Issue を例として見てみてください: [3291](https://gitlab.com/gitlab-com/Product/-/issues/3291) と [2809](https://gitlab.com/gitlab-com/Product/-/issues/2809)。
 
-2 つのテンプレートを使用するのは、プロダクトマネージャーが最初の月により緊急かつ戦術的なタスクで GitLab のオンボーディングに集中できるようにするためです。新しいプロダクトマネージャーが GitLab に慣れるにつれて、GitLab での最初の 3 ヶ月で、より戦略的で時間制約が少ないオンボーディングタスクに移行することができます。
+私たちは 2 つのテンプレートを使用しているため、プロダクトマネージャーは最初の 1 か月間、より緊急で戦術的なタスクを伴う GitLab のオンボーディングに集中できます。新しいプロダクトマネージャーが GitLab により慣れてくると、GitLab での最初の 3 か月で、より戦略的で時間的制約の少ないオンボーディングタスクに移行できます。
 
-オンボーディング Issue は [Product Onboarding Issue Board](https://gitlab.com/gitlab-com/Product/-/boards/1283554?&label_name%5B%5D=onboarding) で追跡できます。
+オンボーディング Issue は、[Product Onboarding Issue ボード](https://gitlab.com/gitlab-com/Product/-/boards/1283554?&label_name%5B%5D=onboarding)で追跡できます。
 
 ### プロダクトマネージャーのオンボーディングバディ
 
-オンボーディングの一環として、新入社員には [オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies/) が割り当てられます。プロダクトマネージャーのオンボーディングバディとして、新入社員と共有する多くのプロセスとリソースがあります。プロダクトマネージャー固有のタスクとリソースのリストは [こちら](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/content/handbook/product/product-management/product-manager-role/product-manager-buddy-tasks.md) で確認できます。
+オンボーディングの一環として、新入社員には[オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies/)が割り当てられます。プロダクトマネージャーのオンボーディングバディとして、新入社員と共有すべき多くのプロセスとリソースがあります。プロダクトマネージャー固有のタスクとリソースのリストは[こちら](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/content/handbook/product/product-management/product-manager-role/product-manager-buddy-tasks.md)で見つけることができます。
 
 ## プロダクトマネジメント候補者の面接
 
-プロダクトマネジメントの候補者の面接プロセスにおける独特で重要なステップは、Deep Dive Interview です。この面接の目標は、候補者の長期的なビジョンと短期的な MVC を、面接自体での口頭、および 2 つのフォローアップ Issue を介した書面の両方で伝達する能力を理解することです。Issue が読める状態になったら、フィードバックを提供し、候補者がそのフィードバックにどのように対応するかを確認する機会です。
+プロダクトマネジメント候補者の面接プロセスにおける独特で重要なステップが、私たちの Deep Dive 面接です。この面接の目標は、候補者が長期的なビジョンと短期的な MVC の両方を、面接そのものの中で口頭で、また 2 つのフォローアップ Issue を通じて文章で伝える能力を理解することです。Issue を読む準備ができたら、フィードバックを提供し、候補者がそのフィードバックにどう反応するかを見る機会となります。
 
-Deep Dive 面接の詳細情報と指示は [こちら](https://gitlab.com/gitlab-com/people-group/hiring-processes/blob/master/Product/DeepDive.md) (社内限定) で見つけることができます。採用プロセスの情報については、[hiring handbook ページ](/handbook/hiring/) をご覧ください。 |
+Deep Dive 面接に関する詳細と手順は[こちら](https://gitlab.com/gitlab-com/people-group/hiring-processes/blob/master/Product/DeepDive.md)（社内のみ）で見つけることができます。私たちの採用プロセスに関する情報は、[採用ハンドブックページ](/handbook/hiring/)をご覧ください。 |
 
 ## 休暇を取る
 
@@ -148,35 +150,35 @@ Deep Dive 面接の詳細情報と指示は [こちら](https://gitlab.com/gitla
   <iframe src="https://www.youtube.com/embed/AkNcYjWrvDU" frameborder="0" allowfullscreen="true"> </iframe>
 </figure>
 
-チームメンバーは [年に 2 週間の連続した休暇を取ることが強く推奨されています](/handbook/people-group/time-off-and-absence/time-off-types/)。[no ask, must tell GitLab paid time off](/handbook/people-group/time-off-and-absence/time-off-types/) よりも長い延長休暇は、特に [parental leave](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave) で一般的です。長期間離れるのは気が遠くなるかもしれませんが、`rest ethic` (休息倫理) が `work ethic` (労働倫理) と一致することを確保することと、会社内に単一障害点がないことを確保することが重要です。プロダクトマネージャーがこの時間を計画するのに役立つ提案をいくつか紹介します。
+チームメンバーは、[年に 2 週間連続の休暇を取ることを強く推奨されています](/handbook/people-group/time-off-and-absence/time-off-types/)。[`no ask, must tell`（聞かなくてよい、ただし伝えること）の GitLab 有給休暇](/handbook/people-group/time-off-and-absence/time-off-types/)より長い長期休暇は、特に[育児休暇](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave)では一般的です。長期間離れることは気が引けるかもしれませんが、あなたの `rest ethic`（休む倫理）が `work ethic`（働く倫理）と釣り合っていることを確保し、また会社に単一障害点がないことを確保するために、これは非常に重要です。プロダクトマネージャーがこの期間を計画するのに役立ついくつかの提案を以下に示します。
 
-ハイレベルでは、行うべき最も重要な 2 つのことは次のとおりです。
+高レベルでは、これらが最も重要な 2 つのことです:
 
 1. [休暇を伝える](/handbook/people-group/time-off-and-absence/time-off-types/)
-1. [PM カバレッジ Issue を作成](https://gitlab.com/gitlab-com/Product/-/issues/new?issuable_template=PM-Coverage) (詳細は以下)
+1. [PM カバレッジ Issue を作成する](https://gitlab.com/gitlab-com/Product/-/issues/new?issuable_template=PM-Coverage)（詳細は下記）
 
 ### PM カバレッジ Issue の作成
 
-[この Issue テンプレート](https://gitlab.com/gitlab-com/Product/-/issues/new?issuable_template=PM-Coverage) を使用して、引き継ぎの責務を定義できます。
-延長休暇では、あなたが不在の間に製品決定を下せる 1 つ以上の Directly Responsible Individual (DRI) を見つけることが重要です。
-これは、あなたのマネージャー、別の PM、またはチームのエンジニアリングマネージャーかもしれません。カバレッジ Issue には、不在中の DRI が良い決定をするために必要なすべての情報を含める必要があるので、必要な詳細をすべて含めるようにしてください。
+[この Issue テンプレート](https://gitlab.com/gitlab-com/Product/-/issues/new?issuable_template=PM-Coverage)を使用して、ハンドシェイクの責任を定義できます。
+長期休暇の場合、あなたが不在の間にプロダクトの意思決定を行える 1 名以上の Directly Responsible Individual（DRI）を見つけることが重要です。
+これは、あなたのマネージャー、別の PM、あるいはあなたのチームのエンジニアリングマネージャーかもしれません。カバレッジ Issue には、DRI があなたの不在中に適切な決定を下すために必要なすべての情報を含めるべきなので、必要なだけ詳細を含めるようにしてください。
 
-Issue を作成することに加えて、出発する前に皆が同じページにいることを確認するための特定の引き継ぎミーティングを持つことが役立つ場合があります。
+Issue を作成することに加えて、あなたが離れる前に全員が同じ認識を持っていることを確実にするために、専用の引き継ぎミーティングを持つことが役立つ場合があります。
 
-カバレッジタスクの割り当てを考えるとき、クロスファンクショナルなチームメイトのキャパシティについて、マネージャーとクワッドのメンバーと相談することをお勧めします。たとえば、PM、EM、PD は顧客やユーザーを含む製品エリアの共有知識から、互いをカバーするのに最適ですが、UX チームメイトには PM 固有の責務をカバーする帯域幅や専門知識がない場合があります。あるいは、PM のマネージャーまたは同じステージの別の PM がカバレッジを支援するのが良いかもしれません。チームとマネージャー全体で必要な会話を計画してください。
+カバレッジタスクの割り当てのために部門横断的なチームメイトのキャパシティを検討する際は、マネージャーや Quad のメンバーと協力することが推奨されます。たとえば、PM、EM、PD は、顧客やユーザーを含む自分たちのプロダクト領域に関する共有知識を持っているため、互いをカバーし合うのが最適ですが、UX のチームメイトは PM 固有の責任をカバーする帯域幅や専門知識を持っているとは限りません。あるいは、PM のマネージャーや同じステージの別の PM がカバレッジを支援する方が良い場合もあります。チームやマネージャーをまたいで必要な会話を持つよう計画してください。
 
 ### 休暇からの復帰
 
-休暇からの復帰は圧倒的で気が遠くなることがあります。あなたの不在中に何が変わり、現在の優先事項は何かを理解するために、DRI と協力する必要があります。また、追いつくために返信時間が遅くなる可能性があることを透明にコミュニケーションしてください。休暇後の仕事への戻り方についてのいくつかの追加のヒント [こちら](/handbook/people-group/time-off-and-absence/time-off-types/) もあります。
+休暇からの復帰は、圧倒されたり気が引けたりすることがあります。あなたは DRI と協力して、不在中に何が変わったか、現在の優先事項が何かを理解すべきです。また、あなたが追いつこうとしているために返信が遅くなる可能性があることを透明性をもって伝えてください。[休暇後の職場復帰の方法](/handbook/people-group/time-off-and-absence/time-off-types/)に関する追加のヒントもいくつかあります。
 
-## エンジニアリングとの Product Shadowing
+## エンジニアリングとのプロダクトシャドーイング
 
-Product Shadowing プログラムは、[CEO Shadow](/handbook/ceo/shadow/) プログラムに大まかに基づいており、ステージ内のプロダクトマネージャーとエンジニアの相互理解を促進することを目的としています。このプログラムは Plan ステージで成功裏に試行されました。
+Product Shadowing プログラムは、[CEO Shadow](/handbook/ceo/shadow/) プログラムを大まかに基にしており、ステージ内のプロダクトマネージャーとエンジニアの間のより深い理解を促進するように設計されています。このプログラムは Plan ステージで試験的に実施され、成功を収めました。
 
-プロダクトマネージャーは、ステージ内のエンジニアを 2 営業日、または役割の異なる機能で経験を最大化するために複数の日に分割した同等の時間、シャドウイングのためにホストできます。
+プロダクトマネージャーは、自分のステージ内のエンジニアをホストして、2 営業日にわたって、または役割のさまざまなファンクションでの経験を最大化するために複数日に分割した同等の時間にわたって、シャドーイングしてもらうことができます。
 
-シャドウを提案するには、他のシャドウイング Issue を例として使用してステージ Issue トラッカーに Issue を作成してください ([例](https://gitlab.com/gitlab-org/plan/-/issues/118))
+シャドーイングを提案するには、他のシャドーイング Issue を例として使用し、ステージの Issue トラッカーに Issue を作成してください（[例](https://gitlab.com/gitlab-org/plan/-/issues/118)）。
 
 ## プロダクトリーダーシップ
 
-別のページ [プロダクトリーダーシップ](/handbook/product/product-leaders/product-leadership/) で、プロダクトマネジメント組織で効果的なリーダーになる方法をカバーしています。
+別のページ [Product Leadership](/handbook/product/product-leaders/product-leadership/) では、プロダクトマネジメント組織で効果的なリーダーになる方法を扱っています。

@@ -3,11 +3,11 @@ title: ヘルプの求め方
 category: Handling tickets
 description: チケットに取り組む際に、サポートエンジニアがヘルプを求める方法のワークフロー。
 upstream_path: /handbook/support/workflows/how-to-get-help/
-upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-06T16:34:01-08:00"
+lastmod: "2026-05-22T11:27:49+08:00"
 ---
 
 ## チケットに対するヘルプを求める
@@ -75,7 +75,7 @@ lastmod: "2026-03-06T16:34:01-08:00"
 
 特に、チケットで行き詰まりを感じ、次のステップを特定するための支援が必要な場合:
 
-1. いつでも、利用可能なマネージャー（あなたのマネージャー、または `#support_leadership` チャンネルの[オンコール中のサポートマネージャー](/handbook/support/workflows/support_manager-on-call) など）に気軽に連絡してください。マネージャーは次のステップを決定するのを助けてくれます。
+1. いつでも、利用可能なマネージャー（あなたのマネージャー、または `#support_leadership` チャンネルの [Support Leader on the Hook (SLOTH)](/handbook/support/workflows/support-leader-on-the-hook) など）に気軽に連絡してください。マネージャーは次のステップを決定するのを助けてくれます。
    - `#support_leadership` で対応の DRI が特定されていないメッセージは見逃されたり、傍観者効果の犠牲になったりする可能性があるため、避けてください。
 1. 以下のような状況で緊急かつ重要な場合は、[STAR を起票](/handbook/support/internal-support/support-ticket-attention-requests#submitting-a-support-ticket-attention-request-star--starring-a-ticket)します:
    - 顧客がチケットを通じて、私たちが提供しているサービスへの不満を表明した

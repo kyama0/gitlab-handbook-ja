@@ -1,12 +1,14 @@
 ---
 title: テスト
 upstream_path: /handbook/engineering/testing/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-06T09:57:12-06:00"
+lastmod: "2026-05-22T14:47:44+02:00"
 ---
+
+> ⚠️ 注意：このセクションは現在更新中です。Software Engineer in Test（SET）の役割は Backend Engineer へ移行中であり、パイプライン DRI プロセスは廃止される予定です。決定が確定次第、このセクションのページは新しいプロセスを反映するように改訂されます。
 
 テストガイドへようこそ。このセクションのページでは、私たちの開発ワークフローで使用されるテストの実践、方法論、およびツールに関する情報を提供しています。
 効果的なテストは、コード品質の維持、リグレッションの防止、そしてソフトウェアが要件を満たしていることを確認するために不可欠です。

@@ -1,190 +1,183 @@
 ---
-title: "Gitaly チーム"
-upstream_path: "/handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-28T00:00:00Z"
+title: "Gitaly Team"
+upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-05-20T09:32:02-07:00"
 ---
 
-## Gitaly とは何か？
+## Gitaly とは?
 
-Gitaly チームは、GitLab インスタンスの Git データストレージ層、_特に GitLab.com_ が、信頼性が高く、安全で高速であることを確保するためのシステムを構築・保守する責任があります。Gitaly の詳細については、[リポジトリの README](https://gitlab.com/gitlab-org/gitaly/-/blob/master/README.md) と以下の[ロードマップ](#roadmap)を参照してください。
+Gitaly チームは、GitLab インスタンス、_特に GitLab.com_ の Git データストレージ層が、信頼性が高く、安全で、高速であることを保証するシステムの構築と維持に責任を持ちます。Gitaly の詳細については、[リポジトリの README](https://gitlab.com/gitlab-org/gitaly/-/blob/master/README.md) と以下の [ロードマップ](#roadmap) を参照してください。
 
-チームには、お客様に信頼性が高く、スケーラブルで高速なデータストレージを提供するために協力している[バックエンドエンジニア](/job-description-library/engineering/development/backend/#gitaly)と [SRE](/job-description-library/engineering/infrastructure/site-reliability-engineer/#gitaly) が含まれています。
+チームには [Backend Engineer](/job-description-library/engineering/development/backend/#gitaly) と [SRE](/job-description-library/engineering/infrastructure/site-reliability-engineer/#gitaly) が含まれ、信頼性が高くスケーラブルで高速なデータストレージを顧客に提供するために協働しています。
 
-### 機能的な境界
+### 機能の境界
 
-GitLab は Gitaly プロジェクトの主なコンシューマーですが、Gitaly は GitLab 外部でも使用できるスタンドアロンの製品です。そのため、Gitaly の周りに機能的な境界を達成しようとしています。目的は、Gitaly プロジェクトが Git データを管理するためのインターフェースを作成するが、データをどのように管理するかについてビジネス上の決定を行わないことを確保することです。
+GitLab は Gitaly プロジェクトの主要な利用者ですが、Gitaly は GitLab の外部でも使用できるスタンドアロンの製品です。そのため、私たちは Gitaly の周りに機能の境界を確立することを目指しています。この目的は、Gitaly プロジェクトが Git データを管理するためのインターフェースを作成する一方で、データの管理方法に関するビジネス上の判断を下さないようにすることです。
 
-例えば、Gitaly はストレージソリューション間で Git リポジトリを移動するための堅牢で効率的な API セットを提供できますが、そのような移動がいつ発生すべきかを決定するのは呼び出し側のアプリケーションの役割となります。
+たとえば、Gitaly はストレージソリューション間で Git リポジトリを移動するための堅牢で効率的な API のセットを提供できますが、そのような移動をいつ行うべきかを決定するのは呼び出し元のアプリケーションに委ねられます。
 
-ビジネスの入力とは完全に独立したプロセス（リポジトリのメンテナンスなど）は、Gitaly プロジェクトを使用するすべての人に実質的な価値を提供するため、Gitaly 内に完全に含まれるべきです。
+ビジネス上の入力から完全に独立したプロセス（リポジトリメンテナンスなど）は、Gitaly プロジェクトを使用するすべての人に多大な価値を提供するため、Gitaly 内に完全に含まれるべきです。
 
 ### ロードマップ {#roadmap}
 
-公開されている [Gitaly の製品方向性](https://about.gitlab.com/direction/gitaly/)をご覧ください。
+公開されている [Gitaly のプロダクトディレクション](https://about.gitlab.com/direction/gitaly/) を参照してください。
 
-ロードマップを駆動する[ビジョンと原則](https://internal.gitlab.com/handbook/engineering/infrastructure/core-platform/systems/gitaly/roadmap/)は、内部ハンドブックにあります。
+ロードマップを駆動する [ビジョンと原則](https://internal.gitlab.com/handbook/engineering/infrastructure/core-platform/systems/gitaly/roadmap/) は内部ハンドブックにあります。
 
-現在のロードマップは[この Epic ボード](https://gitlab.com/groups/gitlab-org/-/epic_boards/1058926?label_name[]=Roadmap&label_name[]=group%3A%3Agitaly)です。管理方法については以下の[ロードマッププランニング](#roadmap-planning)を参照してください。
+現在のロードマップは [このエピックボード](https://gitlab.com/groups/gitlab-org/-/epic_boards/1058926?label_name[]=Roadmap&label_name[]=group%3A%3Agitaly) です。これがどのように管理されているかについては、以下の [ロードマップ計画](#roadmap-planning) を参照してください。
 
-#### 注目すべき今後の大規模アーキテクチャ変更
+#### 今後の主要なアーキテクチャ変更の注目点
 
-- [オブジェクトプールの設計のイテレーション](https://docs.gitlab.com/ee/architecture/blueprints/object_pools/)
-- [リポジトリバックアップの改善](https://docs.gitlab.com/ee/architecture/blueprints/repository_backups/)
-- [Gitaly 適応並行制限](https://docs.gitlab.com/ee/architecture/blueprints/gitaly_adaptive_concurrency_limit/)
-- [純粋な HTTP/2 サーバーでの upload-pack トラフィックの処理](https://docs.gitlab.com/ee/architecture/blueprints/gitaly_handle_upload_pack_in_http2_server/)
-- [Gitaly でのトランザクション管理](https://docs.gitlab.com/ee/architecture/blueprints/gitaly_transaction_management/)
+- [オブジェクトプールの設計を反復する](https://docs.gitlab.com/ee/architecture/blueprints/object_pools/)
+- [リポジトリバックアップの再設計](https://docs.gitlab.com/ee/architecture/blueprints/repository_backups/)
+- [Gitaly Adaptive Concurrency Limit](https://docs.gitlab.com/ee/architecture/blueprints/gitaly_adaptive_concurrency_limit/)
+- [純粋な HTTP/2 サーバーで upload-pack トラフィックを処理する](https://docs.gitlab.com/ee/architecture/blueprints/gitaly_handle_upload_pack_in_http2_server/)
+- [Gitaly のトランザクション管理](https://docs.gitlab.com/ee/architecture/blueprints/gitaly_transaction_management/)
 
-## 安定したカウンターパート
+## ステーブルカウンターパート {#stable-counterparts}
 
-以下の他の機能チームのメンバーが私たちの安定したカウンターパートです:
+他の機能チームの次のメンバーが、私たちの stable counterpart です:
 
+{{< engineering/stable-counterparts role="[&,] Systems:Gitaly( API)?" manager-role="Backend Engineering Manager, Gitaly" >}}
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+## チームへの連絡方法
 
+### 緊急の問題と障害
 
-## チームへのお問い合わせ方法
+Support 組織の一員でない場合は、まず彼らに助けを求めることを検討してください。Support の方が対応可能性が高く、ほとんどの一般的なケースで助けられます。
 
-### 緊急 Issue と停止
-
-サポート組織の一員でない場合は、まずサポートに助けを求めることを検討してください。サポートはより良いアベイラビリティを持ち、ほとんどの一般的なケースで対応できます。
-
-それでも助けが必要な場合は、[こちら](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-Gitaly)で Issue を提起してください。即座の可視性のために [#g_gitaly](https://gitlab.slack.com/archives/g_gitaly) に投稿し、EM と PM、および一緒に作業しているサポート担当者、そして Gitaly のオンコールチームメンバーに通知するために `@tier2-oncall-gitaly` にタグ付けしてください。
+それでも助けが必要な場合は、[こちら](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-Gitaly) に Issue を登録してください。より即座な可視性を得るために [#g_gitaly](https://gitlab.slack.com/archives/g_gitaly) に投稿し、EM と PM、一緒に作業している Support の担当者、そしてオンコール中の Gitaly チームメンバーに通知するために `@tier2-oncall-gitaly` をタグ付けしてください。
 
 #### オンコールローテーション
 
-Gitaly のオンコールは、以下の人々からのみ連絡を受けるべきです:
+Gitaly のオンコールがページされるのは、次の人々によるものに限定すべきです:
 
-- **本番インシデント時のみ** SRE オンコールまたは IMOC。
-- **お客様の緊急事態時のみ** サポートエンジニアまたはサポートマネージャー。
+- **本番インシデント時のみ** の SRE オンコールまたは IMOC。
+- **顧客の緊急事態時** の Support Engineer または Support Manager。
 
-これらのケースには Slack で `/incident escalate` を使用し、「On-call teams」の下の Gitaly EOC を選択してください。
-その他のすべてのケースは [カスタマー Issue](#customer-issues) の下で Issue を提起してください。
+これらのケースでは Slack で `/incident escalate` を使用し、On-call teams の下で Gitaly EOC を選択してください。
+それ以外のすべてのケースでは、[顧客の問題](#customer-issues) の下に Issue を登録してください。
 
-これらのケース以外ではオンコールに連絡しないでください。お客様の緊急事態を取り組んでいるがサポートの一員でない場合は、代わりにサポートに連絡してください！
+これらのケース以外ではオンコールをページしないでください。顧客の緊急事態に取り組んでいるが Support の一員でない場合は、代わりに Support に連絡してください!
 
 ##### ローテーション
 
-[incident.io スケジュール](https://app.incident.io/gitlab/on-call/schedules/01JJWAE08T9WDE8T6D4VZPBNXE?startTime=2025-03-03T00%3A00%3A00.000%2B00%3A00&timePeriodOption=two_weeks&calendarToggle=timeline)がオンコールの担当者の情報源です。
+[incident.io スケジュール](https://app.incident.io/gitlab/on-call/schedules/01JJWAE08T9WDE8T6D4VZPBNXE?startTime=2025-03-03T00%3A00%3A00.000%2B00%3A00&timePeriodOption=two_weeks&calendarToggle=timeline) が、誰がオンコール中かの信頼できる情報源です。
 
-ローテーションはチームメンバーの業務時間中にスタッフされます（週末なし）。チームメンバーの分布を考慮すると、保証なしで平日の 24 時間をカバーします。
+ローテーションはチームメンバーの勤務時間中に配置されます（週末はなし）。これでもチームメンバーの分布を考慮すると平日 24 時間をカバーしますが、保証はありません。
 
-- 週末は明示的に対象外（スタッフなし）であり、エスカレーションは現在の EOC ローテーションにフォールバックする必要があります。
-- 業務時間中のみの責任であるため、明示的に指定されない限り追加の報酬はありません。
-- シフト後に Workday で `the On-Call Time in Lieu` オプションを選択することで代替休暇を取得できます。
+- 週末は明示的にスコープ外（配置なし）であり、エスカレーションは現在の EOC ローテーションにフォールバックする必要があります。
+- 責務は勤務時間中のみであるため、明示的に別途指定されない限り、追加の報酬はありません。
+- Workday 経由で代休を取ることを選択でき、シフト後に `the On-Call Time in Lieu` オプションを選択します。
 
-##### オンコールシフト中の期待事項
+##### オンコールシフト中の期待
 
-- 合理化されたオンボーディングプロセスについては[レスポンダークイックスタートガイド](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/incident-io-onboard/oncall.md?ref_type=heads#responder-quick-start-guide)を参照してください。
-**注意: Gitaly チームへのすべてのエスカレーションは incident.io を通じて行われます**
-- オンコール中の incident.io からの連絡に対して 15 分の応答時間。これは `@tier2-oncall-gitaly` Slack ハンドルへの ping には適用されません。これは Gitaly のオンコール担当者に関連する出来事を通知するために使用すべきですが、緊急事態には使用すべきではありません。
-  - オンコールは_利用可能で連絡可能_であることが期待されます（必ずしも積極的に作業している必要はありませんが、この SLO 内に調査を開始できる状態であること）。
-  - シフト終了の 15 分未満前に連絡を受けた場合でも、応答してインシデントを明示的に引き継ぐ必要があります。
-- `#g_gitaly` チャンネルでの質問と新しいサポートリクエスト Issue の連絡先として機能する。
-  - `#g_gitaly` チャンネルでのお問い合わせにベストエフォートベースで対応する。
-  - 新しいサポートリクエスト Issue のトリアージ: 緊急度を確立し、EM/PM と協力してマイルストーンを割り当てる。
-- 継続的な本番インシデントとお客様エスカレーションは、退任するオンコールから Slack のインシデントチャンネルを使用して次の Gitaly のオンコール担当者に明示的に引き継がれます。
-- チームメンバーは PTO と祝日のカバレッジを見つける責任があります。[`incident.io` モバイルアプリケーション](https://play.google.com/store/apps/details?id=com.incidentio.incidentio&hl=en_IN)をインストールし、`Schedules` に移動して人アイコン（矢印付き）をクリックしてカバーをリクエストしてください。
-- サポートによって連絡を受けた長時間のお客様緊急コール中に、Issue が Gitaly から外れ、あなたの専門知識が積極的に必要でなくなった場合は、サポートエンジニアに積極的に離席できるか確認してください。受動的に監視を続けることができ、Gitaly の関与が再び必要になった場合は再度参加できます。
+- 効率的なオンボーディングプロセスについては、[Responder Quick Start Guide](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/incident-io-onboard/oncall.md?ref_type=heads#responder-quick-start-guide) を参照してください。
+**注: Gitaly チームへのすべてのエスカレーションは incident.io 経由で行われます**
+- オンコール中の incident.io ページに対する 15 分の応答時間。これは `@tier2-oncall-gitaly` Slack ハンドルへの ping には適用されません。これは Gitaly オンコールに関連する出来事を知らせるために使用すべきもので、緊急事態には使用すべきではありません。
+  - オンコールは _対応可能で連絡が取れる_ 状態であることが期待されます（ただし、この SLO 内に調査を開始できる限り、必ずしも能動的に作業している必要はありません）。
+  - シフト終了の 15 分未満前にページされた場合でも、応答し、インシデントを明示的に引き継がなければなりません。
+- `#g_gitaly` チャンネルでの質問、および新しい Request For Help Issue の連絡窓口として機能します。
+  - ベストエフォートで `#g_gitaly` チャンネルの問い合わせに応答します。
+  - 新しい Request for Help Issue をトリアージします: 緊急度を確立し、EM/PM と協力してマイルストーンをアサインします。
+- 進行中の本番インシデントと顧客エスカレーションは、Slack のインシデントチャンネルを使用して、退任するオンコールから次の Gitaly オンコールへ明示的に引き継がれます。
+- チームメンバーは PTO や休日のカバーを見つける責任があります。[`incident.io` モバイルアプリケーション](https://play.google.com/store/apps/details?id=com.incidentio.incidentio&hl=en_IN) をインストールし、`Schedules` に移動して、矢印付きの人物アイコンをクリックしてカバーを依頼してください
+- Support によってページされた長時間の顧客緊急事態の通話中に、問題が Gitaly から離れ、あなたの専門知識がもはや能動的に必要とされない場合は、能動的な参加から退いてよいか Support Engineer に尋ねるイニシアチブを取ってください。受動的に監視を続けることができ、Gitaly の関与が再び必要になればいつでも再参加できます。
 
-### カスタマー Issue {#customer-issues}
+### 顧客の問題 {#customer-issues}
 
-[こちら](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-Gitaly)で Issue を提起してください。即座の可視性のために [#g_gitaly](https://gitlab.slack.com/archives/g_gitaly) に投稿してください。
+[こちら](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-Gitaly) に Issue を登録してください。より即座な可視性を得るために [#g_gitaly](https://gitlab.slack.com/archives/g_gitaly) に投稿してください。
 
-**お客様エスカレーションと関与に関する注記**
+**顧客エスカレーションとエンゲージメントに関する注記**
 
-お客様が必要とするときは喜んでお手伝いします！ただし、私たちは主に_開発_チームであり、「フィールドエンジニアリング」に対応できるわけではありません。
+顧客が必要とするときに喜んで助けます! ただし、私たちは主に _開発_ チームであり、「フィールドエンジニアリング」のための装備がないことを念頭に置いてください。
 
-私たちの_エンジニア_は、できれば[非同期](/handbook/company/culture/all-remote/asynchronous/)で次のことをお手伝いできます:
+私たちの _エンジニア_ は、できれば [非同期](/handbook/company/culture/all-remote/asynchronous/) で、次のことを支援できます:
 
-- サポートおよび CSM との緊密なパートナーシップの中で、_データ_に基づいた深い技術調査と優れた技術的なコラボレーション
-- 製品レベルの修正または改善の提供、EM と PM の[指揮の下](#working-with-product)で通常どおりスケジュールされて結果がリリースされる作業
-- 何かが不明な場合のドキュメントの改善
+- _データ_ に基づく深い技術的調査と、Support および CSM との緊密なパートナーシップによる適切な技術的協働
+- プロダクトレベルの修正や改善の提供。作業はスケジュールされ、結果は通常どおりリリースされます（[EM と PM の指示](#working-with-product) の下）
+- 何かが不明確な場合のドキュメントの改善
 
-_エンジニアリングマネージャー_（`@jcaigitlab`）と_プロダクトマネージャー_（`@mjwood`）は、ロードマップ、製品機能とタイムラインの明確化が必要な場合や、正しい優先順位付けを確保するためにお客様と関わることも喜んでいます。
+_Engineering Manager_ (`@jcaigitlab`) と _Product Manager_ (`@mjwood`) も、ロードマップ、製品機能、タイムラインの明確化、または正しい優先順位付けの確保について支援が必要な場合に、喜んで顧客と関わります。
 
-ただし、以下の場合は適切ではありません:
+ただし、次のことが必要な場合、私たちは適していません:
 
-- セルフホスト環境での GitLab インスタンスの設定またはアーキテクチャに関するアドバイス（[リファレンスアーキテクチャ](https://docs.gitlab.com/ee/administration/reference_architectures/)とプロフェッショナルサービスが対応できます）
-- 明確な終了基準のない関与（まず明確にしてください。「話し合うために電話しましょう」は通常このカテゴリに該当します）
-- 長期的な「アドバイスをください」シナリオ（サポートとドキュメントを参照するか、プロフェッショナルサービスをご利用ください）
+- セルフホストシナリオでの GitLab インスタンスの設定やアーキテクチャに関する助言（[リファレンスアーキテクチャ](https://docs.gitlab.com/ee/administration/reference_architectures/) と Professional Services が役立ちます）
+- 明確な終了基準のないエンゲージメント（まず明確にしてください。「電話で相談しましょう」は通常このカテゴリです）
+- 長期的な「アドバイスしてください」シナリオ（Support とドキュメントを参照するか、Professional Services を利用してください）
 
-この[Epic](https://gitlab.com/groups/gitlab-org/-/epics/11576) では、この関与モデルの開発の可能性について議論しています。
+この [エピック](https://gitlab.com/groups/gitlab-org/-/epics/11576) では、このエンゲージメントモデルの開発の可能性について議論しています。
 
 ### 通常優先度のリクエスト
 
-Gitaly チームに何かを取り組んでもらうには、[Gitaly Issue トラッカー](https://gitlab.com/gitlab-org/gitaly/issues)で Issue を作成し、`group::gitaly` と `workflow::problem validation` ラベル、およびその他の適切なラベルを追加するのが最善です。その後、上記にリストされている関連するプロダクトマネージャーおよび/またはエンジニアリングマネージャーをタグ付けしてください。
+Gitaly チームに何かに取り組んでもらうには、[Gitaly Issue トラッカー](https://gitlab.com/gitlab-org/gitaly/issues) に Issue を作成し、`group::gitaly` と `workflow::problem validation` ラベル、その他の適切なラベルを追加するのが最善です。その後、上記の関連する Product Manager および／または Engineering Manager を自由にタグ付けしてください。
 
-情報リクエストやその他の簡単な一回限りのことについては、Issue に注意を向けるために Slack の [#g_gitaly](https://gitlab.slack.com/archives/g_gitaly) を気軽にご利用ください。
+情報リクエストやその他のすばやい一回限りの対応については、Issue に注目を集めるために Slack の [#g_gitaly](https://gitlab.slack.com/archives/g_gitaly) を自由に使用してください。
 
-### `Infradev` ラベルが付いた Issue
+### `Infradev` ラベル付きの Issue
 
-これらは通常、厳格な SLO 追跡を持つ[是正措置またはその他のフォローアップ項目](/handbook/engineering/workflow/#infradev)です。EM および/または PM が[これらのダッシュボード](#useful-links)をポーリングすることで、上記いずれかのパスを通じてスケジュールされます。
+これらは通常、厳密な SLO 追跡を持つ [是正措置やその他のフォローアップ項目](/handbook/engineering/workflow/#infradev) です。EM および／または PM が [これらのダッシュボード](#useful-links) をポーリングすることで、上記いずれかのパスを通じてスケジュールされます。
 
 #### トレーニング資料
 
 - https://handbook.gitlab.com/handbook/engineering/on-call/#expectations-for-on-call
 - [Gitaly のデバッグ](debug/)
-- [本番トレーニング](https://gitlab.com/gitlab-org/gitaly/-/issues/new?issuable_template=Production%20Training) Issue
+- [Production Training](https://gitlab.com/gitlab-org/gitaly/-/issues/new?issuable_template=Production%20Training) Issue
 
-#### ローター管理
+#### ロスター管理
 
-メカニクス（オンコールの交換、ローテーションへの新しいチームメンバーの追加）については https://handbook.gitlab.com/handbook/engineering/on-call/#pagerduty を参照してください。
+メカニズム（オンコールの交代、ローテーションへの新しいチームメンバーの追加）については、https://handbook.gitlab.com/handbook/engineering/on-call/#pagerduty を参照してください。
 
 ## チームメンバー
 
+{{< team-by-departments "Gitaly Team" >}}
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+## プロダクトと協働する {#working-with-product}
 
+### Gitaly におけるアジャイルワークフロー
 
-## プロダクトとの連携 {#working-with-product}
+私たちは一般に、作業のスケジュールと追跡に [Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/#workflow-summary) に従います。
 
-### Gitaly のアジャイルワークフロー
+作業は小さなチャンク（2〜3 日の作業）で実行され、それぞれが Issue として追跡されます。これにより、安全なコンテキストスイッチのための自然な「チェックポイント」が可能になります。
+トリアージとスケジューリングは、現在の作業の実行とは分離されています。すべての受信作業は追跡され、私たちは新しい作業を引き受けることについて意図的です。
 
-一般的に、[製品開発フロー](/handbook/product-development/how-we-work/product-development-flow/#workflow-summary)に従って作業をスケジュールおよび追跡します。
+あらゆる種類の受信作業（プロジェクトとアドホックな割り込みの両方）は、トリアージのために EM と PM を経由します。ここで実現可能性や製品の戦略ロードマップとの適合性などについて、エンジニアリングのコンサルテーションがある場合があります。一部はスケジュールされ、一部はバックログに移ります。その取り組みが必要ないと判断されるか、ロードマップと整合しないと考えられる場合は、将来の参照のために、なぜそれを追求しないのかについてのコメントを付けて Issue をクローズします。
 
-作業は小さなチャンク（2〜3 日の作業）で実行され、それぞれが Issue として追跡されます。これにより、安全なコンテキスト切り替えのための自然な「チェックポイント」が可能になります。
-トリアージとスケジューリングは、現在の作業の実行とは別です。すべての受信作業が追跡され、新しい作業を選ぶことについて意図的です。
+私たちは、野心的だが圧倒されない程度のタスクリストになるようにマイルストーンのスコープを決めることを目指しています。受信インシデントのために、意図的にいくらかのキャパシティを残します。
+健全なワークライフバランスを促進するため、終わりのない作業の山という感覚を避けたいと考えています。
+また、マイルストーンはあくまで推奨であり、ベストエフォートベースで作業することを強調することも重要です。
 
-すべての種類の受信作業（プロジェクトと臨時の割り込みの両方）は、EM と PM のトリアージを通過します。実現可能性、製品の戦略的ロードマップとの適合性などについてエンジニアリングの相談がある場合があります。一部はスケジュールされ、一部はバックログに移ります。その取り組みが必要でないか、ロードマップと整合していないと判断された場合は、将来の参考のためにクローズされる理由のコメント付きで Issue をクローズします。
+厳密な SLO を持つ Issue については、[以下](#handling-issues-with-strict-slo) で定義されたプロセスに従います。
 
-マイルストーンのスコープを、意欲的だが圧倒的でないタスクリストになるように設定することを目指しています。受信インシデントのためにある程度の余裕を意図的に残します。
-作業の終わりなき山という感覚を避けるために、健全なワーク/ライフバランスを促進します。
-マイルストーンはあくまで推奨であり、ベストエフォートベースで作業することを強調することも重要です。
+Issue には次のワークフローラベルを使用します:
 
-厳格な SLO を持つ Issue については、[以下](#handling-issues-with-strict-slo)で定義されたプロセスに従います
+1. `workflow::problem validation` — 追求したい／したくないかもしれない機能を置くのに適した場所です。ここで Product は、追求したい機会かどうかを判断するために、ユーザーインタビュー、コスト分析、市場適合性などを行えます。
+1. `workflow::solution validation` — Engineering が今後の解決策を調査／提案する必要がある、またはそれを小さな Issue に分割する必要がある機能／Issue にこのラベルを使用します。
+1. `workflow::planning breakdown` — 今後数マイルストーンでスケジュールできる準備が整った Issue（ブロックされていない、またはまもなくブロックが解除され、解決策が判明しているもの）。長期間（事前承認済み）プロジェクトのリーダーは、これを PM とのコミュニケーションに使用します。
+1. `workflow::ready for development` — マイルストーン（現在のもの、または将来のもの）にスケジュールされた作業。
+1. `workflow::in dev` — Engineering チームによって能動的に作業中
+1. `workflow::in review` — レビュー中の作業
+1. `workflow::verification` — コードが本番にあり、DRI エンジニアによる検証待ち
+1. `workflow::complete` — 変更が検証され、Issue をクローズできる
 
-Issue では次のワークフローラベルを使用します:
-
-1. `workflow::problem validation` - 追求するかもしれない/しないかもしれない機能を置くのに良い場所。これはプロダクトがユーザーインタビュー、コスト分析、市場適合性などを行い、追求する機会であるかどうかを決定できる場所です。
-1. `workflow::solution validation` - エンジニアリングが将来のソリューションを調査/提案する必要がある機能/Issue、またはより小さな Issue に分解する必要がある機能/Issue にこのラベルを使用します。
-1. `workflow::planning breakdown` - 次のいくつかのマイルストーン（ブロックされていないか間もなくブロック解除される予定で、既知のソリューションがある）でスケジュールする準備ができている Issue。長期実行（事前承認済み）プロジェクトのリーダーはこれを使用して PM とコミュニケーションを取ります。
-1. `workflow::ready for development` - マイルストーン（現在または将来）にスケジュールされた作業。
-1. `workflow::in dev` - エンジニアリングチームが積極的に作業中
-1. `workflow::in review` - レビュー中の作業
-1. `workflow::verification` - コードが本番環境にあり、DRI エンジニアによる検証待ち
-1. `workflow::complete` - 変更が検証されており、Issue をクローズできる
-
-確実にリリースに向けて優先したい Issue には `Deliverable` ラベルが付けられ、リストの上部に移動されます。
-これらの `Deliverable` Issue は、これらの Issue に取り組むことに関して GitLab とお客様へのコミットメントを示す手助けになります。
+私たちが確実にリリースに優先順位付けしたい Issue には `Deliverable` ラベルが付けられ、リストの最上部に移動されます。
+これらの `Deliverable` Issue は、これらの Issue への取り組みに関する GitLab と顧客への私たちのコミットメントを示すのに役立ちます。
 
 #### ワークフロー
 
-##### プロジェクト作業 {#project-work}
+##### プロジェクトワーク {#project-work}
 
-[Gitaly の最上位 Epic](https://gitlab.com/groups/gitlab-org/data-access/gitaly/-/epics/1)
-にはチームが取り組んでいるプロジェクトを表すリンクされた Epic が含まれています。チームメンバーは
-Epic の[主要オーナー](#dri--supporting-contributors)または
-[サポート貢献者](#dri--supporting-contributors)のいずれかになります。これにより、チーム全体で知識が共有されます。
+トップレベルの [Gitaly エピック](https://gitlab.com/groups/gitlab-org/data-access/gitaly/-/epics/1) には、チームが取り組んでいるプロジェクトを表すリンクされたエピックが含まれています。チームメンバーは、エピックの [主要オーナー](#dri--supporting-contributors) になるか、[サポート貢献者](#dri--supporting-contributors) になります。このようにして知識がチーム全体で共有されます。
 
 ###### DRI とサポート貢献者 {#dri--supporting-contributors}
 
-Epic の [DRI](/handbook/people-group/directly-responsible-individuals/) は、プロジェクトの技術的方向性に関する[決定を行う](/handbook/leadership/making-decisions/#making-decisions)責任を負います。決定を行うことには、提案を作成し、同僚およびエンジニアリングマネージャーからのフィードバックを集めることが含まれます。また、該当する場合にはチーム外のステークホルダーと連絡を取り協力することも含まれます。
+エピックの [DRI](/handbook/people-group/directly-responsible-individuals/) は、プロジェクトの技術的方向性に関する [意思決定](/handbook/leadership/making-decisions/#making-decisions) に責任を持ちます。意思決定には、提案の作成と、同僚および Engineering Manager からのフィードバックの収集が含まれます。また、該当する場合はチーム外のステークホルダーへの働きかけと協働も含まれます。
 
-DRI はまた、プロジェクトマネジメントの責任も負います。これは Epic を関連する Issue で最新の状態に保ち、もはや関連のない Issue を削除し、次の形式で Epic の自動生成コメントに週次更新を書くことを意味します:
+DRI はプロジェクト管理にも責任を持ちます。つまり、関連する Issue でエピックを最新の状態に保ち、もはや関連のない Issue を削除し、エピックの自動生成されたコメントに次の形式で週次アップデートを書きます:
 
 ```markdown
 HIGH_LEVEL_SUMMARY
@@ -199,84 +192,83 @@ HIGH_LEVEL_SUMMARY
 -
 ```
 
-Epic のサポート貢献者は、Issue への取り組み、MR のレビュー、技術的なディスカッションへの参加において DRI をサポートする責任があります。セカンダリオーナーは DRI が不在の場合（バンド幅に応じて）主要オーナーとして代理を務めることもできます。
+エピックのサポート貢献者は、Issue への取り組み、MR のレビュー、技術的議論への参加において DRI を支援する責任を持ちます。セカンダリオーナーは、DRI が OOO のときに、その帯域幅に応じて、プライマリオーナーとして行動することもできます。
 
-サポート貢献者は強く推奨されますがオプションです。プロジェクトに複数のセカンダリオーナーがいることもあります。
+サポート貢献者は強く推奨されますが、任意です。プロジェクトには複数のセカンダリオーナーがいることもあります。
 
-全員が DRI である必要はありませんが、全員が少なくとも 1 つのプロジェクトのサポート貢献者であるべきです。
+全員が DRI である必要はありませんが、全員が少なくとも 1 つのプロジェクトでサポート貢献者であるべきです。
 
-DRI とサポート貢献者の両方を持つ構造は、レビューと承認はチームの誰でも行えるため、MR を前進させるための厳格な要件を導入しません。
+DRI とサポート貢献者の両方を持つこの構造は、レビューと承認はチームの誰でも行えるため、MR を進めるための厳しい要件を導入するものではありません。
 
-##### テクニカルロードマップ、カスタマー Issue、クロスファンクショナル Issue
+##### 技術的ロードマップ、顧客の Issue、クロスファンクショナルな Issue
 
-[Gitaly テクニカルロードマップ & カスタマー Issue](https://gitlab.com/groups/gitlab-org/-/boards/8913037?label_name[]=workflow%3A%3Aready%20for%20development&milestone_title=Upcoming)
-ボードには、プロジェクトの一部ではないが、対処することが重要な一回限りの Issue が含まれています。これには[テクニカルロードマップ](/handbook/engineering/#technical-roadmaps)Issue、カスタマー Issue、および他のチームが依存する Gitaly のクロスファンクショナル作業が含まれます。これらの Issue は優先度でソートされます。チームメンバーはプロジェクト Epic の一部として取り組んでいる Issue に加えて、このボードから作業を選ぶことができます。
+[Gitaly Technical Roadmap & Customer Issues](https://gitlab.com/groups/gitlab-org/-/boards/8913037?label_name[]=workflow%3A%3Aready%20for%20development&milestone_title=Upcoming) ボードには、どのプロジェクトの一部でもないが、対処すべき重要な一回限りの Issue が含まれています。これらには [技術的ロードマップ](/handbook/engineering/#technical-roadmaps) の Issue、顧客の Issue、他のチームが依存している Gitaly のクロスファンクショナルな作業が含まれます。これらの Issue は優先度でソートされます。チームメンバーは、プロジェクトエピックの一部として取り組んでいる Issue に加えて、このボードから作業を引き受けられます。
 
-経験則として、[プロジェクト](#project-work)作業とテクニカルロードマップ、カスタマー Issue の比率はおよそ 70/30 であるべきです。
+経験則として、[プロジェクト](#project-work) 作業と技術的ロードマップ、顧客の Issue の比率はおおよそ 70/30 であるべきです。
 
-##### 緊急と高優先度の Issue
+##### 緊急かつ高優先度の Issue
 
-P1/S1 の Issue は緊急に対処すべきです。そのような Issue がまだスケジュールされていない場合は、[行動バイアス](/handbook/values/#operate-with-a-bias-for-action)が奨励されます。
-現在のマイルストーンに引き込んでいきますが、EM と PM に通知してください。
+P1/S1 の Issue は緊急に扱うべきです。そのような Issue がスケジュールされていない場合は、[bias for action](/handbook/values/#operate-with-a-bias-for-action) が推奨されます。
+現在のマイルストーンに引き込んでもかまいませんが、EM と PM に通知してください。
 
 ##### ブロックされた Issue
 
-作業がブロックされている場合は、`workflow::blocked` を使用し、明確にするためにブロッキング Issue を設定してください。その後、他のものを選ぶ前に助けを求め、および/または他のチームメンバーのブロックされた作業のブロック解除を手伝うことを検討してください。
+作業がブロックされている場合は、`workflow::blocked` を使用し、明確化のためにブロックしている Issue を設定してください。それから、別のことを引き受ける前に、助けを求める、および／または他のチームメンバーのブロックされた作業のブロック解除を手伝うことを検討してください。
 
-長時間ブロックされた Issue は、マイルストーンを削除して割り当てを解除することでこのプロセスから削除する必要があります。
+長期間ブロックされている Issue は、マイルストーンを削除しアサインを外すことで、このプロセスから除外すべきです。
 
-#### チームへの作業追加
+#### チームの作業を追加する
 
-誰でも、より多くの作業が発見された際に新しい Issue を提起し、このプロセスに取り込むことができます。そのためには、Issue を提起し、EM と PM にタグ付けし、マイルストーンなしで `workflow::planning breakdown` を割り当ててください。実行する必要がある_内容_と_理由_（つまり、影響と緊急性）の両方を説明し、作業を選ぶ準備ができているかどうかを明確にしてください。（これは、プロジェクト DRI がプロジェクトの次のステップをワークフローに追加する方法でもあります。）
+より多くの作業が発見されたら、誰でも新しい Issue を登録し、このプロセスに流し込めます。そのためには、Issue を登録し、EM と PM をタグ付けし、マイルストーンなしで `workflow::planning breakdown` をアサインします。何をする必要があるかと、なぜ（つまり影響と緊急度）の両方を説明し、作業が引き受けられる準備が整っているかどうかを明確にしてください。（これは、プロジェクト DRI が自分のプロジェクトの次のステップをワークフローに追加する方法でもあります。）
 
-#### メタ
+#### Meta
 
-プロダクトマネージャーとエンジニアリングマネージャー（Gitaly と Git チームの両方）の間で週次の通話が行われます。誰でも参加歓迎であり、これらの通話はグループに影響を与えるブロッカー、懸念事項、状況更新、成果物、またはその他の考えを議論するために使用されます。
+プロダクトマネージャーとエンジニアリングマネージャー（Gitaly と Git チームの両方）の間で週次の通話が行われます。誰でも参加でき、これらの通話はグループに影響を与える障害、懸念、ステータスアップデート、成果物、その他の考えを議論するために使用されます。
 
-### ロードマッププランニング {#roadmap-planning}
+### ロードマップ計画 {#roadmap-planning}
 
-現在のロードマップは[この Epic ボード](https://gitlab.com/groups/gitlab-org/-/epic_boards/1058926?label_name[]=Roadmap&label_name[]=group%3A%3Agitaly)です。四半期以上継続するテーマ/プロジェクト（場合によってははるかに長い）で構成されています。後者の場合、サブプロジェクトをロードマップに直接追加することは許容されます。
+現在のロードマップは [このエピックボード](https://gitlab.com/groups/gitlab-org/-/epic_boards/1058926?label_name[]=Roadmap&label_name[]=group%3A%3Agitaly) です。四半期以上（場合によってはもっと長く）実行されるテーマ／プロジェクトで構成されます。後者の場合、サブプロジェクトをロードマップに直接追加してかまいません。
 
-- 誰でもプロジェクトを提案できます: Epic を提起してチーム（および EM+PM）とディスカッションしてください。`group::gitaly` ラベルをお忘れなく。
+- 誰でもプロジェクトを提案できます: エピックを登録し、チーム（および EM+PM）と議論します。`group::gitaly` ラベルを忘れないでください。
 - 承認されたら、`Roadmap` ラベルを追加します。
-- 継続中のロードマップ項目は `roadmap::now` を取得し、`roadmap::next` と `roadmap::later` は現在のところトリアージされて将来に押し出されたものを示します。
-- 四半期ごとのプランニングでは:
-  - ロードマップ項目をレビューします（[ビジョンと原則](https://internal.gitlab.com/handbook/engineering/infrastructure/core-platform/systems/gitaly/roadmap/)からの議論、現在のビジネス優先事項などを使用）
-  - そして、それらの目標を前進させる OKR を採用します。
+- 進行中のロードマップ項目には `roadmap::now` を付け、一方 `roadmap::next` と `roadmap::later` は、トリアージされ今のところ将来に押し出されたものを示します。
+- 各四半期計画で:
+  - ロードマップ項目をレビューします（[ビジョンと原則](https://internal.gitlab.com/handbook/engineering/infrastructure/core-platform/systems/gitaly/roadmap/) からの論拠、現在のビジネス優先順位などを使用）
+  - そして、それらの目標を前進させる OKR を引き受けます。
 
-### 四半期プランニング
+### 四半期計画
 
-四半期プランニングは、全員のインプットを得ながら次の 3 マイルストーンについて毎四半期の前に行われます。その時点では、実行する必要がある作業についての良いアイデアがすでに必要です。
+四半期計画は、毎四半期の前に、全員からの入力を得て、次の 3 マイルストーンについて行われます。その時点で、行う必要がある作業について良いアイデアをすでに持っていなければなりません。
 
 プロセスは次のとおりです:
 
-1. EM+PM（エンジニアとステークホルダーのインプットを受けて）: 部門レベルの OKR と整合した作業スコープを決定します。
+1. EM+PM（エンジニアとステークホルダーからの入力あり）: 取り組むスコープを決定します。これは部門レベルの OKR と整合します。
 
-1. EM+PM+エンジニア: ロードマップ項目に基づき、3 マイルストーン（つまり 1 四半期）で完了できるより小さな Epic/Issue を必要に応じて提起します。全体的なプロジェクト Epic に紐づけます。これは実際の作業を追跡する場所です。
+1. EM+PM+エンジニア: ロードマップ項目に基づいて、必要であれば 3 マイルストーン（つまり 1 四半期）で完了できる小さなエピック／Issue を登録します。それらを全体のプロジェクトエピックに結び付けます。ここで実際の作業を追跡します。
 
-1. EM: [Gitaly 最上位 Epic](https://gitlab.com/groups/gl-gitaly/-/epics/1)を変更して作業を反映させます。
+1. EM: 作業を反映するように [トップレベルの Gitaly エピック](https://gitlab.com/groups/gl-gitaly/-/epics/1) を変更します。
 
-1. PM: 四半期のスコープが明確になったら、Issue のリストを取得し、3 つのマイルストーンのうち 1 つを割り当て、分解が必要な大きな Issue については `workflow::planning breakdown`（または `workflow::ready for development`）を割り当てます。
+1. PM: 四半期のスコープが明確になったら、Issue のリストを取り、3 つのマイルストーンの 1 つを、`workflow::planning breakdown`（分割が必要な大きな Issue 向け）または `workflow::ready for development` とともにアサインします。
 
-1. エンジニア: `workflow::planning breakdown` 項目を分解し、必要に応じてより小さな Issue を提起して、合理的な範囲で同じ 3 マイルストーンに追加します。必要に応じて例外を提起します。
+1. エンジニア: `workflow::planning breakdown` 項目の分割を手伝い、必要であれば小さな Issue を登録し、合理的な範囲で同じ 3 つのマイルストーンに追加します。必要に応じて例外を提起します。
 
-### 厳格な SLO を持つ Issue の処理 {#handling-issues-with-strict-slo}
+### 厳密な SLO を持つ Issue の扱い {#handling-issues-with-strict-slo}
 
-`Infradev` ラベルが付いた Issue は通常、厳格な SLO 追跡を持つ[是正措置またはその他のフォローアップ項目](/handbook/engineering/workflow/#infradev)です。これらは上記いずれかのパスまたは EM によってスケジュールされます。
+`Infradev` ラベル付きの Issue は通常、厳密な SLO 追跡を持つ [是正措置やその他のフォローアップ項目](/handbook/engineering/workflow/#infradev) です。これらは上記いずれかのパスまたは EM を通じてスケジュールされます。
 
-1. EM+PM: 少なくとも週次でダッシュボードをポーリングします。SLO を満たせるようにこれらの Issue をトリアージしてスケジュールします。必要に応じて、Issue を Gitaly トラッカーに移動するか、作業ボードに表示されるようにプロキシ Issue を提起して、ブロッキングとしてマークします。`workflow::ready for development` 列の上部に Issue をドラッグします。
+1. EM+PM: 少なくとも週次でダッシュボードをポーリングします。SLO を満たせるように、これらの Issue をトリアージしスケジュールします。必要であれば、Issue を Gitaly トラッカーに移動するか、作業ボードに表示されるようにそこにプロキシ Issue を登録し、ブロッキングとしてマークします。Issue を `workflow::ready for development` 列の最上部にドラッグします。
 
-1. EM+PM: Issue がブロックされているか進行中の作業に依存している場合は、SLO と保留中の作業に合ったマイルストーンを追加します（忘れないように）。ブロッキング作業が先にスケジュールされることを確保します。
+1. EM+PM: Issue がブロックされている、または進行中の作業に依存している場合は、SLO と保留中の作業に合うマイルストーンを追加します（忘れないように）。ブロッキング作業が先にスケジュールされることを確実にします。
 
-1. エンジニア: この作業を優先的に選んでください。元の Issue に頻繁（最大週次、変更がなくても）の更新を投稿してください。ブロッキング Issue はそのようにマークしてください。
+1. エンジニア: この作業を引き受けることを優先し、元の Issue に頻繁な（変更がなくても最大週次の）アップデートを投稿してください。ブロッキング Issue をそのようにマークしてください。
 
-## Gitaly のコンシューマー
+## Gitaly の利用者
 
-計画された変更、更新、破壊的な変更の可能性についての常時コミュニケーションフローを確保するために、[#g_gitaly](https://gitlab.slack.com/archives/g_gitaly) Slack チャンネルがあります。チャンネルでは、サービスを使用するすべてのチームに更新を提供しますが、計画された変更または改善についてのフィードバックと洞察を提供するための支援も求めます。
+計画された変更、アップデート、場合によっては破壊的変更について常にコミュニケーションの流れを保つため、[#g_gitaly](https://gitlab.slack.com/archives/g_gitaly) Slack チャンネルがあります。このチャンネルでは、サービスを使用するすべてのチームにアップデートを提供し、計画された変更や改善についてのフィードバックと洞察を提供するための支援も求めます。
 
-このプロアクティブなコミュニケーションをさらに支援するために、コードベースの調査と Gitaly を使用するすべてのチームとの調整を支援するためのコンシューマー側の個別のカウンターパートもあります。コンシューマー側の DRI は Igor Drozdov です。
+このプロアクティブなコミュニケーションをサポートするため、加えて、コードベースの調査と Gitaly を利用するすべてのチームとの調整を手伝う、利用者側の個別のカウンターパートもいます。利用者側の DRI は Igor Drozdov です。
 
-Gitaly のコンシューマーは:
+Gitaly の利用者は次のとおりです:
 
 - [GitLab Rails](https://gitlab.com/gitlab-org/gitlab)
 - [GitLab Shell](https://gitlab.com/gitlab-org/gitlab-shell)
@@ -285,31 +277,31 @@ Gitaly のコンシューマーは:
 
 ## Gitaly の非推奨
 
-Gitaly は多くのお客様向け機能を提供しています。そのため、お客様向け機能のすべての非推奨は、標準の [GitLab 機能非推奨ガイダンス](/handbook/marketing/blog/release-posts/#deprecations-removals-and-breaking-changes)に従い、[非推奨ドキュメントページ](https://docs.gitlab.com/ee/update/deprecations.html)内で告知されます。
+Gitaly は多くの顧客向け機能を提供しています。そのため、顧客向け機能のすべての非推奨は、標準の [GitLab 機能非推奨ガイダンス](https://docs.gitlab.com/update/deprecations/) に従い、[非推奨ドキュメントページ](https://docs.gitlab.com/ee/update/deprecations.html) 内でアナウンスされます。
 
-Gitaly はまた、GitLab や Gitaly と直接インターフェースする他のお客様が使用する、多くの非お客様向け機能も提供しています。これらの Gitaly レベルの非推奨は、GitLab エンドユーザーが直接インターフェースするように設計されていないため、上記の方法を使用して告知されません。これらの非お客様向け機能の例として、GitLab ユーザーが呼び出すべきでないストレージレベル API があります。
+Gitaly はまた、GitLab や Gitaly と直接インターフェースする他の顧客が使用する、多くの非顧客向け機能も提供しています。これらの Gitaly レベルの非推奨は、GitLab エンドユーザーが直接インターフェースするように設計されていないため、上記の方法ではアナウンスされません。これらの非顧客向け機能の例には、GitLab ユーザーが決して呼び出すべきでないストレージレベルの API があります。
 
 ## メトリクス
 
-### gitlab.com 上での
+### gitlab.com 上
 
-- [インシデント](https://gitlab.com/gitlab-com/gl-infra/production/-/issues/?sort=created_date&state=all&label_name%5B%5D=Service%3A%3AGitaly&label_name%5B%5D=incident&first_page_size=100)（すべての連絡がインシデントではありません）
-- [連絡](https://nonprod-log.gitlab.net/goto/2e1a9f00-f006-11ed-bb50-33eb1f5eb489)
+- [インシデント](https://gitlab.com/gitlab-com/gl-infra/production/-/issues/?sort=created_date&state=all&label_name%5B%5D=Service%3A%3AGitaly&label_name%5B%5D=incident&first_page_size=100)（すべてのページがインシデントというわけではありません）
+- [ページ](https://nonprod-log.gitlab.net/goto/2e1a9f00-f006-11ed-bb50-33eb1f5eb489)
 - [グローバル Apdex](https://dashboards.gitlab.net/d/gitaly-main/gitaly-overview?orgId=1&viewPanel=3357097446)
-- [アラート](https://log.gprd.gitlab.net/goto/17c536b0-efd0-11ed-8afc-c9851e4645c0)（S1/S2 はページング、S3/S4 はページングなし）
+- [アラート](https://log.gprd.gitlab.net/goto/17c536b0-efd0-11ed-8afc-c9851e4645c0)（S1/S2 はページング、S3/S4 はページングしない）
 
-### 便利なリンク {#useful-links}
+### 有用なリンク {#useful-links}
 
 - [Gitaly のデバッグ](debug/)
 - [エラーバジェット](https://dashboards.gitlab.net/d/stage-groups-detail-gitaly/stage-groups-gitaly-group-error-budget-detail?orgId=1&from=now-28d%2Fm&to=now)
-- [MR レビューワークロード](https://gitlab-org.gitlab.io/gitlab-roulette/?currentProject=gitaly)
+- [MR レビューの作業負荷](https://gitlab-org.gitlab.io/gitlab-roulette/?currentProject=gitaly)
 
 ## チーム開発
 
 ### オンボーディング
 
-チーム固有のオンボーディングを完了するには、[こちら](https://gitlab.com/gitlab-org/gitaly/-/issues/new?issuable_template=Team%20Member%20Onboarding)で Issue を提起してください。
+チーム固有のオンボーディングを完了するには、[こちら](https://gitlab.com/gitlab-org/gitaly/-/issues/new?issuable_template=Team%20Member%20Onboarding) に Issue を登録してください。
 
 ### オフボーディング
 
-メインテナー権限が取り消され、承認済み承認者リストから開発者を削除するには、`gl-gitaly` GitLab.com グループから削除してください。
+Maintainer 権限が取り消され、承認者リストから開発者を削除するために、`gl-gitaly` GitLab.com グループから削除します。

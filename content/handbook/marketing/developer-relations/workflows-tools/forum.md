@@ -1,11 +1,11 @@
 ---
 title: "フォーラムのワークフロー"
 upstream_path: /handbook/marketing/developer-relations/workflows-tools/forum/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-15T12:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-01T10:44:51-04:00"
+lastmod: "2026-05-18T17:29:39-04:00"
 ---
 
 GitLab コミュニティフォーラム（forum.gitlab.com）は、ユーザーが登録し、質問し、協力し合うためのプラットフォームであり、GitLab の透明性とコミュニティへの貢献という価値観を体現しています。トラスト（信頼）レベルに基づくシステム、モデレーションのワークフロー、ディスカッションを整理するためのカテゴリーやタグなど、さまざまなツールが備わっています。フォーラムは、より広いコミュニティと GitLab チームメンバー双方からの参加を促し、行動規範と明確な管理プロセスを維持しながら、知識共有の環境を構築することを目指しています。
@@ -33,6 +33,8 @@ Discourse はユーザー向けに一般的な [FAQ](https://forum.gitlab.com/fa
 
 - 関連トピックをフォーラムで検索する — 似たことを既に解決したコミュニティメンバーが見つかるかもしれません。会話に呼び込んだり、参考になりそうなスレッドを案内したりできます。
 - [GitLab のドキュメント](https://docs.gitlab.com)を検索し、トラブルシューティングに役立つ情報を探す。
+- [GitLab Duo Agent Platform](https://docs.gitlab.com/user/duo_agent_platform/)、[Claude](/handbook/tools-and-tips/ai/claude/)、または [Glean](/handbook/business-technology/enterprise-applications/guides/glean-guide/) を使って質問を調査する。
+  - 公の場に投稿する前に、必ず[AI 生成された出力をレビュー](/handbook/communication/#communicating-when-using-generative-ai-tools)し、正確性と [SAFE 要件](/handbook/legal/safe-framework/)を確認してください。
 
 ### より広いコミュニティと協働する
 

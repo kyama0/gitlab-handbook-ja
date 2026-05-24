@@ -1,11 +1,11 @@
 ---
 title: "テクニカルライティング"
 upstream_path: /handbook/product/ux/technical-writing/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-06T10:27:14-06:00"
+lastmod: "2026-05-20T09:32:02-07:00"
 ---
 
 GitLab のテクニカルライティングチームは、開発者、プロダクトマネージャー、コミュニティと協力してプロダクトドキュメントを作成しています。
@@ -90,7 +90,7 @@ GitLab ドキュメントは、ユーザー、管理者、意思決定者が Git
 - ドキュメント計画のレビューと共同作業、ドキュメントのマージリクエストや最近マージされたドキュメントのレビュー、コンテンツがスタイルと言語の標準を満たしていることの確認。
 - 完全性とスムーズなユーザーエクスペリエンスを確保するためにドキュメントを再編成、刷新、執筆する。
 - マイクロコピー、UI からドキュメントへのリンク、エラーメッセージ、UI 要素のラベルなど、UI テキストに関してプロダクトデザイナーと協力する。
-- 毎月の[リリース投稿](../../../marketing/blog/release-posts/)のテクニカルライティングリードとして活動する。
+- 毎月の[リリース投稿](https://docs.gitlab.com/development/documentation/release_notes/)のテクニカルライティングリードとして活動する。
 
 ### 優先順位付け {#prioritization}
 
@@ -348,7 +348,7 @@ PTO を取るとき、テクニカルライターは:
 
 テクニカルライターの通常アサインされた作業と並んで、定期的に完了する必要のある繰り返しタスクがあります:
 
-- **リリース投稿構造チェック:** テクニカルライティングリードは、各マイルストーンの終わりに公開されるリリース投稿の [コンテンツをレビュー](/handbook/marketing/blog/release-posts/#tw-lead) します。アサインメントについては、[Release Post Scheduling](/handbook/marketing/blog/release-posts/managers/) ページを参照してください。
+- **リリース投稿構造チェック:** テクニカルライティングリードは、各マイルストーンの終わりに公開されるリリース投稿の [コンテンツをレビュー](https://docs.gitlab.com/development/documentation/release_notes/) します。アサインメントについては、[Release Post Scheduling](/handbook/product/ux/technical-writing/#schedule) ページを参照してください。
 - **月次ドキュメントリリース:** 各マイルストーンの終わりに、テクニカルライターが [docs サイトの月次リリースを作成](https://gitlab.com/gitlab-org/technical-writing/docs-gitlab-com/-/blob/main/doc/releases.md) します。このタスクにアサインされるテクニカルライターは、前のマイルストーンのリリース投稿構造チェックを完了したライターです。
 - **Docs プロジェクトのメンテナンスタスク:** 毎月、1 人のテクニカルライターがドキュメントサイトとそのコンテンツのメンテナンスタスクを完了するようアサインされます。これには、メンテナンス作業を追跡するため、`technical-writing` プロジェクトで [`tw-monthly-tasks` テンプレートを使った新しい Issue の作成](https://gitlab.com/gitlab-org/technical-writing/team-tasks/-/issues/new?issue[title]=Docs%20project%20maintenance%20tasks%2C%20Month%20YYYY&issuable_template=tw-monthly-tasks) が含まれます。メンテナンス Issue で説明されている以上の作業が必要な場合は、テクニカルライターは必要に応じてマージリクエストと追加 Issue を作成します。
 

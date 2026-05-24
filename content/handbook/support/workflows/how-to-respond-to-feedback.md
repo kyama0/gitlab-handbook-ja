@@ -4,11 +4,11 @@ category: Handling tickets
 subcategory: Writing responses and handling feedback
 description: サポートチームの顧客満足度（Customer Effort Score または CES）レビュープロセス、および顧客フィードバックに対応するためにマネージャーが行うアクションについて説明します
 upstream_path: /handbook/support/workflows/how-to-respond-to-feedback/
-upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-01-21T12:28:59-06:00"
+lastmod: "2026-05-22T11:27:49+08:00"
 ---
 
 [サポート満足度](/handbook/support/performance-indicators/#support-satisfaction-ssat) に貢献する要因を理解するため、サポートチケットに対して受領したフィードバックをレビューします。受領したすべてのサポート満足度フィードバックに対して、Issue が [フィードバック Issue トラッカー](https://gitlab.com/gitlab-com/support/feedback/-/issues)（社内のみ）に自動的に作成され、チケットに割り当てた人物のマネージャーに割り当てられます。
@@ -67,7 +67,7 @@ lastmod: "2026-01-21T12:28:59-06:00"
 
 ### チケット途中のフィードバック
 
-[オンコール中のサポートマネージャー](/handbook/support/workflows/support_manager-on-call) は、シフト中に受け取ったチケット途中のフィードバックの初回トリアージを担当します。通知は `#support_ticket-attention-requests` チャンネルに投稿されます。
+[Support Leaders on the Hook (SLOTH)](/handbook/support/workflows/support-leader-on-the-hook) は、シフト中に受け取ったチケット途中のフィードバックの初回トリアージを担当します。通知は `#support_ticket-attention-requests` チャンネルに投稿されます。
 
 ### フィードバックのソース
 
@@ -76,7 +76,7 @@ lastmod: "2026-01-21T12:28:59-06:00"
 1. 自動メールアンケート -- チケットが解決されたときに顧客に送信されます。
 1. チケット途中のフィードバックリンク -- GitLab のサポートエンジニアまたはマネージャーからの各 Public コメントには、チケットがオープン中に顧客がフィードバックを提供したり、マネージャーからの連絡を要求したりできるフォームへのリンクが含まれます（Issue [2913](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/2913) で導入されました）。
    1. このフィードバックフォームは、**Positive/Negative/Neutral feedback for ticket nnnnnn** という件名形式で顧客フィードバックプロジェクトに Issue を作成し、自動的に **オンコール中のサポートマネージャー** およびチケットに割り当てられたサポートエンジニアのマネージャーに割り当てられます。
-   1. フィードバックがネガティブな場合は、マネージャーからの連絡を要求するオプションがあります（月曜から金曜の 48 時間以内）。このオプションが選択されると、Slack 通知が #support_ticket-attention-requests チャンネルに送信されます。[**オンコール中のマネージャー**](/handbook/support/workflows/support_manager-on-call#expectations-for-support-manager-on-call) は、[営業時間中にマネージャーからの連絡を要求するチケット途中のフィードバックの処理](/handbook/support/workflows/support_manager-on-call#handling-mid-ticket-feedback-requesting-manager-contact-during-business-hours) のガイダンスに迅速に従うべきです。
+   1. フィードバックがネガティブな場合は、マネージャーからの連絡を要求するオプションがあります（月曜から金曜の 48 時間以内）。このオプションが選択されると、Slack 通知が #support_ticket-attention-requests チャンネルに送信されます。[**SLOTH**](/handbook/support/workflows/support-leader-on-the-hook#expectations-for-the-sloth-role) は、[営業時間中にマネージャーからの連絡を要求するチケット途中のフィードバックの処理](/handbook/support/workflows/support-leader-on-the-hook#handling-mid-ticket-feedback-requesting-manager-contact-during-business-hours) のガイダンスに迅速に従うべきです。
 1. GitLab チームメンバー（CSM や営業チームなど）は、顧客から受け取った詳細を含む [間接フィードバック](https://gitlab.com/gitlab-com/support/feedback/-/issues/new?issuable_template=Indirect+Feedback) Issue を起票できます。
 1. 連絡を必要とする Issue は、`SSAT::Contact` ラベルを適用することでも特定できます。説明またはコメントで、マネージャーへの連絡が要求されたことを指定します。
 
@@ -224,7 +224,7 @@ Support Week in Review でポジティブフィードバックを共有するた
 
 顧客がチケット途中のフィードバックリクエストを通じて連絡を要求した場合:
 
-1. [オンコール中のマネージャー](/handbook/support/workflows/support_manager-on-call) がフォローアップを担当します。
+1. [SLOTH](/handbook/support/workflows/support-leader-on-the-hook) がフォローアップを担当します。
 
 クローズされたチケットのアンケート完了後に顧客に連絡すべきと考える場合:
 

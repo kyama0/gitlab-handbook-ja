@@ -1,48 +1,48 @@
 ---
-title: Salesforce で社内サポートを依頼する
+title: Requesting Internal Support in Salesforce
 upstream_path: /handbook/sales/field-operations/requesting-internal-support/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2025-07-22T02:37:39+00:00"
+lastmod: "2026-05-21T12:17:18-04:00"
 ---
 
 ## サポートを得る方法
 
-Salesforce で商談やアカウントに取り組む際にサポートを得るための、GitLab 社内ユーザー向けのワークフローです。
+Salesforce で商談やアカウントに取り組む際にヘルプを得る方法に関する、GitLab 社内ユーザー向けのワークフローです。
 
-### このページの目次
+### このページの内容
 
 - 概要
 - 影響を受けるチーム
 - ワークフロー
 - ケースのナビゲーション
-- バグや修正リクエストの方法
+- バグの報告や修正の依頼方法
 - レポートとダッシュボード
 
 #### 概要
 
-**背景**: GitLab では従来、Chatter を使って Salesforce での社内リクエストを処理していました。ユーザーはサポートを得るために、ユーザーグループ（例: @sales-support、@billing、@renewalops、@partneroperations）に Chatter メッセージを送信できました。このプロセスにより、各四半期に何千ものケースが作成されていましたが、システムには非効率な点がありました。
+**背景**: 従来、GitLab は Salesforce での社内リクエストを処理するために Chatter を使用していました。ユーザーはサポートのために、ユーザーグループ（@sales-support、@billing、@renewalops、@partneroperations など）に Chatter メッセージを送信できました。このプロセスにより、四半期ごとに数千件のケースが作成されていましたが、システムには非効率性がありました。
 
-**課題**: 従来の Chatter ベースのワークフローには、いくつかの課題がありました。
+**課題**: 以前の Chatter ベースのワークフローには、いくつかの課題がありました。
 
-- リクエストのステータスに対する**可視性の欠如**。
-- 複数のチームが同じ Chatter ハンドルを使用しており、混乱を招いていた。
-- **重複ケース**がしばしば作成されていた。
-- リクエストの優先順位付けがされておらず、一部のリクエストが見失われたり遅延したりしていた。
-- 提出時の**情報が不十分**で、やり取りが必要になっていた。
+- リクエストのステータスに対する **可視性の欠如**。
+- **複数のチーム** が同じ Chatter ハンドルを使用しており、混乱を招いていた。
+- **重複したケース** がしばしば作成されていた。
+- リクエストが優先順位付けされておらず、一部のリクエストが失われたり遅延したりしていた。
+- 送信時に提供される **情報が不十分** で、やり取りが必要だった。
 
 **新しいワークフローが提供するもの**:
 
-- **可視性**: リクエスト元は、詳細、メールアップデート、Salesforce 通知を通じてケースのステータスを確認できます。
-- **ガイド付きワークフロー**: リクエスト元が適切なチームに正しい情報とともにリクエストを送るのに役立つ、定義済みのチームとリクエストタイプのリスト。
-- **差別化された優先順位付け**: 緊急のリクエストは、より迅速な対応のためにフラグが付けられます。
-- **完全な情報**: リクエスト元はすべての必須詳細を入力する必要があり、フォローアップの必要性が減ります。
+- **可視性**: リクエスト者は、詳細、メール更新、Salesforce 通知を通じて自分のケースのステータスを確認できます。
+- **ガイド付きワークフロー**: リクエスト者が正しい情報とともに適切なチームにリクエストを振り向けるのを助ける、定義済みのチームとリクエストタイプのリスト。
+- **差別化された優先順位付け**: 緊急のリクエストは、より迅速な対応のためにフラグが立てられます。
+- **完全な情報**: リクエスト者は必要な詳細をすべて入力する必要があり、フォローアップの必要性が減ります。
 
-#### 社内サポートを依頼する
+#### 社内サポートの依頼
 
-社内サポートリクエストを処理できるのは、以下のチームです。
+以下のチームが社内サポートリクエストの処理に対応しています。
 
 - Billing
 - Deal Desk
@@ -51,95 +51,95 @@ Salesforce で商談やアカウントに取り組む際にサポートを得る
 - Sales Operations
 - Sales Development & Marketing
 
-**誰がサポートを依頼できますか？** アカウントまたは商談への編集アクセス権を持つすべての Salesforce ユーザーが、社内サポートのリクエストを提出できます。
+**誰がサポートを依頼できるのか？** アカウントまたは商談への編集アクセス権を持つ Salesforce ユーザーは誰でも、社内サポートのリクエストを送信できます。
 
-**他部門への社内サポート依頼** - 以下のチームは別のワークフローでリクエストを管理しているため、各部門の指示に従ってください。
+**他の部門への社内サポートの依頼** - 以下のチームは、別のワークフローでリクエストを管理していることにご注意ください。各部門について、以下の手順に従ってください。
 
 - [Sales Commissions](https://internal.gitlab.com/handbook/sales/sales-commission/#who-to-contact-for-commission-questions)
-  - Salesforce Chatter から: @sales-comp
-  - メールから: sales-comp@gitlab.com
-- [Legal](/handbook/legal/customer-negotiations/#how-to-reach-the-legal-commercial-team)
-  - Legal ケースは、Salesforce のオポチュニティからページ上部の「Legal Request」ボタンを選択して作成できます。
-  - 貿易コンプライアンス管理によりロックされたアカウントのレビュー用には @Legal
+  - Salesforce Chatter 経由: @sales-comp
+  - メール経由: sales-comp@gitlab.com
+- [Legal](/handbook/legal/customer-negotiations/#how-to-reach-commercial-legal)
+  - Legal ケースは、Salesforce の商談からページ上部の「Legal Request」ボタンを選択して作成できます。
+  - 貿易コンプライアンス管理のためにロックされたアカウントのレビューには @Legal
 - [CS サポートの依頼](/handbook/customer-success/csm/segment/cse/cse-operating-rhythm/)
-  - オポチュニティのドロップダウンメニューから「CS Support」を選択し、以下のいずれかをリクエストしてください。
-    - CSE Help（エスカレーションではないもの）
-    - At-Risk Account Help（CSM の赤アカウント、CSM/CSE エスカレーション）
-- [GitLab カスタマーサポート](/handbook/support/internal-support/)
+  - 商談で、ドロップダウンメニューに移動して「CS Support」を選択し、以下のいずれかを依頼します。
+    - CSE Help（エスカレーションではない）
+    - At-Risk Account Help（CSM の赤アカウントと CSM/CSE エスカレーション）
+- [GitLab Customer Support](/handbook/support/internal-support/)
 - Enterprise Applications
   - [Enterprise Applications - CRM Team](/handbook/business-technology/enterprise-applications/entapps-crm/#i-classfas-fa-users-idbiz-tech-iconsi-how-we-operate)
   - [Enterprise Applications - PMO](/handbook/business-technology/enterprise-applications/pmo)
 - [Revenue](https://internal.gitlab.com/handbook/finance/accounting/finance-ops/revenue-accounting/#communicating-with-revenue-accounting)
   - Chatter @revenue
-- [HelpLab](https://helplab.gitlab.systems/esc)（Okta からアクセス）
+- [HelpLab](https://helplab.gitlab.systems/esc)（あなたの Okta 内）
 
-#### Salesforce ワークフロー
+#### Salesforce のワークフロー
 
-社内サポートのリクエストを提出する手順は以下のとおりです。
+社内サポートのリクエストを送信する方法は以下のとおりです。
 
-1. サポートが必要な**アカウントまたは商談に移動**します。
+1. 支援が必要な **アカウントまたは商談に移動** します。
 2. 「**Request Support**」ボタンをクリックします。
-3. サポートを依頼したい**チームをドロップダウンリストから選択**し、Next を選択します。
-4. 利用可能なオプションから**リクエストタイプを選択**し、必須情報（赤いアスタリスクのあるフィールド）に入力します。該当する場合は関連ドキュメントをアップロードします。
+3. サポートを依頼する **チームをドロップダウンリストから選択** し、Next を選択します。
+4. 利用可能なオプションから **Request Type** を選択し、必要な情報（赤いアスタリスクが付いたフィールド）を入力します。該当する場合は、関連するドキュメントをアップロードします。
 5. フォームに入力したら、「**Submit**」をクリックしてケースを作成します。
-6. 送信後、ケースが作成されたことを確認する通知と、ケース番号へのリンクを受け取ります。
+6. 送信後、ケースが作成されたことを確認する通知が、ケース番号へのリンクとともに届きます。
 
-**注意**: 送信前に、ワークフロー内の「**Previous**」ボタンをクリックして戻り、選択内容を変更できます。
+**注**: 送信前に、ワークフロー内の **「Previous」** ボタンをクリックして戻り、選択を変更できます。
 
-#### 社内ケースをナビゲートする
+#### 社内ケースのナビゲーション
 
-リクエストを送信したら、Salesforce でケースをナビゲートする方法は以下のとおりです。
+リクエストを送信したら、Salesforce でケースに移動する方法は以下のとおりです。
 
 **送信したケースを見つける:**
 
 1. ツールバーの Case タブに移動します。
-2. デフォルトのリストは「Recently Viewed」ケースで、送信したケースをすべて表示するわけではありません。
-3. ギアアイコンを使用して NEW を選択し、新しいリストを作成します。
+2. デフォルトのリストは「Recently Viewed」ケースで、送信したすべてのケースが表示されるわけではありません。
+3. ギアアイコンを使い、NEW を選択して新しいリストを作成します。
 4. リストに名前を付け、「Only I can see this view」を選択します。
 5. フィルターを更新します。
-   - Owner でフィルタ = All Cases
-   - Created by = （あなたのエイリアス）
-   - エイリアスは SFDC プロフィールで確認できます。
-6. 「Choose what fields to display」を選択して、作成したすべてのケースを 1 か所で表示できます。
+   - Owner = All Cases でフィルター
+   - Created by =（あなたのエイリアス）
+   - あなたのエイリアスは SFDC プロフィールで確認できます。
+6. 「Choose what fields to display」を選択して、作成したすべてのケースを 1 か所で表示できるようになります。
 
-**ケースページのレイアウト:**
+**ケースのページレイアウト:**
 
-- レイアウトは Salesforce の標準オブジェクト形式を使って構成されています。
-  - **Details**（左側） – ケースに関する重要な情報。
-  - **Feed and Related Lists**（右側） – 追加のコンテキストとアップデート。
-  - **Buttons and Actions**（右上） – ケースのアップデートやクローズなどの重要なアクション。
-    - レイアウトによっては、ボタンの一部がドロップダウンメニューにある場合があります。
+- レイアウトは Salesforce の標準オブジェクト形式を使用して構成されています。
+  - **Details**（左側）– ケースに関する重要な情報。
+  - **Feed and Related Lists**（右側）– 追加の文脈と更新。
+  - **Buttons and Actions**（右上隅）– ケースの更新やクローズなどの重要なアクション。
+    - レイアウトによっては、一部のボタンがドロップダウンメニューにある場合があります。
 
 **ケースの注目すべきフィールド:**
 
 - **Owner**:
-  - 当初、このフィールドはケースキューのオーナーを反映しています。
-  - 割り当てられると、ケースを担当する人物の名前が表示されます。
+  - 当初、このフィールドはケースキューのオーナーを反映します。
+  - 割り当てられると、ケースを処理する人の名前が表示されます。
 - **Status**:
-  - New: ケースは作成されたがまだレビューされていない。
-  - Pending Response: 詳細情報またはアクションを待っている。
-  - Work in Progress: チームメンバーが所有権を取り、ケースをレビュー中。
-  - On Hold: 進行する前に詳細情報が必要。
-  - Closed: ケースは解決またはアクションされた。
+  - New: ケースは作成されたが、まだレビューされていない。
+  - Pending Response: より多くの情報またはアクションを待っている。
+  - Work in Progress: チームメンバーがオーナーシップを引き受け、ケースをレビューしている。
+  - On Hold: 進行する前により多くの情報が必要。
+  - Closed: ケースが解決された、または対処された。
 - **Request Type**:
   - ユーザーが送信したリクエストのタイプを表示します（例: Legal support、Billing inquiry など）。
 - **Description**:
-  - リクエストや問題に関する詳細な説明。
+  - リクエストまたは問題の詳細な説明。
 - **Feed**:
-  - ケースに関する追加情報やアップデートを提供できる場所です。
-  - **注意**: Chatter フィードを通じてメッセージを送信できるのは個別のユーザーに対してのみで、グループ全体に対してはできません。
+  - ケースに関する追加情報や更新を提供できる場所です。
+  - **注**: Chatter フィードを通じてメッセージを送信できるのは個々のユーザーに対してのみで、グループ全体には送信できません。
 
-#### バグや修正リクエストの方法
+#### バグの報告や修正の依頼方法
 
-社内サポートチーム向けのケース作成やフォームに問題が発生した場合は、OKTA タイルからアクセスできる [HelpLab アプリケーション](/handbook/business-technology/enterprise-applications/guides/helplab-guide/#create-a-ticket--request) を使用してリクエストを送信してください。
+社内サポートチーム向けのケース作成やフォームで問題が発生した場合は、OKTA タイルからアクセスできる [HelpLab アプリケーション](/handbook/business-technology/enterprise-applications/guides/helplab-guide/#create-a-ticket--request)を使用してリクエストを送信してください。
 
 1. HelpLab で **IT** を選択します。
 2. **Break/Fix Request** タイプをクリックします。
-3. インテークフォームが開くので、以下のフィールドに入力します。
-   - **どのアプリケーション**にヘルプが必要か: Salesforce
+3. 受付フォームが開き、以下のフィールドを入力する必要があります。
+   - ヘルプが必要な **アプリケーション**: Salesforce
    - **Short description**: 問題の詳細を追加します。
-   - **Urgency**: 緊急性を選択します。
-   - **describe your issue**: 関連する追加情報を追加してください。
+   - **Urgency**: 緊急度を選択します。
+   - **問題を説明** してください: 関連する追加情報を追加します。
    - **Attachment**: エラーメッセージのスクリーンショットを送信します。
    - **オプション**: チームメンバーを「Watcher」としてチケットに追加できます。
 4. フォーム右側の「Submit」ボタンをクリックしてリクエストを送信します。
@@ -148,15 +148,15 @@ Salesforce で商談やアカウントに取り組む際にサポートを得る
 
 **追加予定:**
 
-- ケースやサポートリクエストに関連するレポートとダッシュボードの生成と使用方法の詳細はここに含まれます。今後のアップデートをお待ちください！
+- ケースやサポートリクエストに関連するレポートとダッシュボードの生成・使用方法の詳細は、ここに含まれる予定です。今後の更新にご注目ください！
 
-この新しいワークフローは、サポートリクエストプロセスを合理化し、チーム間の効率とコミュニケーションを改善することを目的としています。質問がある場合や追加のサポートが必要な場合は、社内リソースを参照するか、適切なチームに連絡してください。
+この新しいワークフローは、サポートリクエストプロセスを合理化し、チーム間の効率とコミュニケーションを向上させることを目指しています。ご質問がある場合やさらなる支援が必要な場合は、社内リソースを参照するか、適切なチームに連絡してください。
 
 #### リクエストのルーティング
 
-- リクエストに基づいて連絡する相手は以下のとおりです。
+- リクエストに応じて連絡すべき相手は以下のとおりです。
 
-Object: OPPORTUNITY
+オブジェクト: OPPORTUNITY
 
 | TEAM:                               | REQUEST TYPE:                  | SUB REQUEST:                       |
 |-------------------------------------|--------------------------------|------------------------------------|
@@ -216,14 +216,14 @@ Object: OPPORTUNITY
 |                                     | CPPO | |
 |                                     | Link a deal reg to this closed opportunity | |
 
-Object: CONTACT
+オブジェクト: CONTACT
 
 | TEAM:                               | REQUEST:                                                                                   |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
 | SalesDev & Marketing                | Why was this contact assigned to me?                                                       |
 |                                     | How do I update the matched account?                                                       |
 
-Object: LEAD
+オブジェクト: LEAD
 
 | TEAM:                               | REQUEST:                                                                                   |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
@@ -240,7 +240,7 @@ Object: LEAD
 |                                     | Why was this Lead assigned to me?                                                          |
 |                                     | Why did this Lead move to a queue?                                                         |
 
-Object: CUSTOMER ACCOUNT
+オブジェクト: CUSTOMER ACCOUNT
 
 | TEAM:                               | REQUEST:                                                                                   |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
@@ -255,7 +255,7 @@ Object: CUSTOMER ACCOUNT
 |                                     | System Error |
 |                                     | Other |
 
-Object: PARTNER ACCOUNT
+オブジェクト: PARTNER ACCOUNT
 
 | TEAM:                               | REQUEST:                                                                                   |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
@@ -267,7 +267,7 @@ Object: PARTNER ACCOUNT
 |                                     | Partner Account Merges, Name Changes, and Aquisitions |
 | Billing Team                        | Request Reseller Account Creation in Zuora |
 
-Object: DEAL REGISTRATION
+オブジェクト: DEAL REGISTRATION
 
 | TEAM:                               | REQUEST:                                                                                   |
 |-------------------------------------|--------------------------------------------------------------------------------------------|
@@ -279,7 +279,7 @@ Object: DEAL REGISTRATION
 |                                     | Extension Request > 30 Days |
 |                                     | Link Reg to a Different Open Opportunity |
 
-Objects: Labra Leads, Labra Referral, Influence Object
+オブジェクト: Labra Leads、Labra Referral、Influence Object
 
 | TEAM:                               | REQUEST:                                                                                   |
 |-------------------------------------|--------------------------------------------------------------------------------------------|

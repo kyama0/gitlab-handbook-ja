@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリのデータテーブル構成"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema/
-upstream_sha: 2dd9d315aff1d685e3f27ab47a69d8faa01d31fa
-translated_at: "2026-05-18T12:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+translated_at: "2026-05-23T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-18T16:39:56+02:00"
+lastmod: "2026-05-21T14:16:24+02:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -53,18 +53,25 @@ erDiagram
     namespaces {
         uuid id PK "UUIDv7, globally unique across Artifact Registry deployments"
         text slug "NOT NULL, UNIQUE, immutable, limit 255"
-        text platform "NOT NULL, DEFAULT 'gitlab', limit 255"
-        text entity_type "NOT NULL, DEFAULT 'organization', limit 255"
+        text platform "NOT NULL, limit 255"
+        text entity_type "NOT NULL, limit 255"
         text entity_id "NOT NULL, opaque string, limit 255"
+        text billing_entity_type "NOT NULL, limit 255"
+        text billing_entity_id "NOT NULL, opaque string, limit 255"
+        smallint delivery_mode_override "NULLABLE, 0=redirect, 1=proxy; per-namespace override of the instance default"
         timestamptz created_at "NOT NULL, DEFAULT NOW()"
     }
 ```
 
-- **namespaces**: 他のすべてのテーブルが `namespace_id` を介して参照するルートエンティティ。各 namespace は、URL とクライアント設定で使用される不変でグローバルに一意な `slug` を持ちます（スラグ設計とグローバル一意性の強制については [ADR-022](022_namespace_decoupling.md) を参照）。`(platform, entity_type, entity_id)` タプルは、namespace を外部エンティティ（デフォルトでは Organizations）にリンクし、そのセマンティクスを解釈しません。`entity_id` は、基礎となる値が数値であっても、anchor タイプ間でスキーマを統一するため `TEXT` として保存されます。Organizations v1 では、すべての行が `('gitlab', 'organization', '<rails_org_id>')` を持ちます。
+- **namespaces**: 他のすべてのテーブルが `namespace_id` を介して参照するルートエンティティ。各 namespace は、URL とクライアント設定で使用される不変でグローバルに一意な `slug` を持ちます（スラグ設計とグローバル一意性の強制については [ADR-022](022_namespace_decoupling.md) を参照）。`(platform, entity_type, entity_id)` タプルは、namespace を外部エンティティ（デフォルトでは Organizations）にリンクし、そのセマンティクスを解釈しません。`entity_id` は、基礎となる値が数値であっても、anchor タイプ間でスキーマを統一するため `TEXT` として保存されます。Organizations v1 では、すべての行が `('gitlab', 'organization', '<rails_org_id>')` を持ちます。`billing_entity_type` と `billing_entity_id` は使用状況イベントの課金アンカーを識別します。外部から提供されるカラム（`platform`、`entity_type`、`entity_id`、`billing_entity_type`、`billing_entity_id`）はいずれもスキーマレベルのデフォルトを持ちません。根拠については [ADR-022](022_namespace_decoupling.md) を参照してください。`delivery_mode_override` カラムは [ADR-005](005_artifact_delivery_mode.md) で定義された namespace 単位のアーティファクト配信の上書きを保持します: `NULL` はインスタンスのデフォルト（`StorageConfig.delivery_mode`）を継承し、`0`（`redirect`）はこの namespace でリダイレクトを強制し、`1`（`proxy`）はプロキシを強制します。ダウンロードリクエストの実効配信パターンは `namespace.delivery_mode_override ?? instance.delivery_mode` です。このカラムは、リクエストハンドラが認可とルーティングのために実行する既存の namespace ルックアップの一部として読み取られるため、別個のクエリやインデックスは不要です。カラム型は `SMALLINT` で、整数からラベルへのマッピングは Go アプリケーションで定義されており（`0 = redirect`、`1 = proxy`）、enum スタイルのカラムに関する [Artifact Registry のデータベース規約](https://gitlab.com/gitlab-org/ops/artifact-registry/-/blob/main/docs/dev/database.md#enums)に従っています（PostgreSQL の `ENUM` 型は安全に変更するのが難しいため避けています）。アーティファクト配信の選択を保存する将来のカラム（例えば、S17 が導入することがあればリポジトリ単位の上書きなど）は、同じ整数マッピングを再利用します。
+
+#### スラグの不変性
+
+PostgreSQL にはネイティブの不変カラムサポートがありません。スラグの不変性（[ADR-022](022_namespace_decoupling.md)）は、値が変更されると例外を発生させる `BEFORE UPDATE OF slug` トリガーによってデータベースレベルで強制されます。これは、アプリケーション層をバイパスするあらゆるコードパス（直接データベースアクセス、管理ツール、マイグレーション）を捕捉します。トリガーは、スラグ変更を要する緊急操作のために無効化できます（例: `ALTER TABLE namespaces DISABLE TRIGGER trg_namespaces_immutable_slug`）。
 
 #### インデックス
 
-- **`namespaces`**: `(slug)` のユニークインデックス — スラグで namespace を検索。`(platform, entity_type, entity_id)` のユニーク制約 — 重複アンカーを防ぐ。
+- **`namespaces`**: `(slug)` のユニークインデックス — スラグで namespace を検索。`(platform, entity_type, entity_id)` のユニーク制約 — 重複アンカーを防ぐ。`delivery_mode_override` にはインデックスなし: このカラムは `id` をキーとする既存の namespace ルックアップの一部としてのみ読み取られます（ハンドラは認可とルーティングのためにすでに namespace 行を結合しています）。
 
 ### Repository collections
 
@@ -75,8 +82,8 @@ erDiagram
     namespaces ||--o{ repository_collections : "has many"
 
     repository_collections {
-        bigint id PK "DEFAULT nextval('repository_collections_id_seq')"
-        uuid namespace_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('repository_collections_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         text name "NOT NULL, limit 255"
         boolean is_default "NOT NULL, DEFAULT false"
         timestamptz created_at "NOT NULL, DEFAULT NOW()"
@@ -135,8 +142,8 @@ erDiagram
     repository_collections }o--o{ repositories : "linked via repository_collection_repositories"
 
     repositories {
-        bigint id PK "DEFAULT nextval('repositories_id_seq')"
-        uuid namespace_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('repositories_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         text name "NOT NULL, limit 255"
         text description "nullable, limit 1024"
         smallint format "NOT NULL, 0=container, 1=maven, 2=npm"
@@ -146,18 +153,18 @@ erDiagram
         bigint downloads_count "NOT NULL, DEFAULT 0, buffered counter"
         bigint size_bytes "NOT NULL, DEFAULT 0, buffered counter"
         timestamptz last_updated_at "nullable"
-        text last_updated_by_user_id "nullable, opaque string, limit 255"
+        text gitlab_last_updated_by_user_id "nullable, opaque string, limit 255"
         timestamptz soft_deleted_at "nullable"
         timestamptz created_at "NOT NULL, DEFAULT NOW()"
-        text created_by_user_id "nullable, opaque string, limit 255"
+        text gitlab_created_by_user_id "nullable, opaque string, limit 255"
     }
 ```
 
-- **repositories**: すべてのリポジトリの親エンティティ。`format` はアーティファクトフォーマット（container、Maven、npm）を識別。`kind` はリポジトリタイプ（local、virtual、remote）を識別。リポジトリは [`repository_collection_repositories`](#repository-collection-repositories) 結合テーブルを介して Repository collection にリンクされ、リポジトリが namespace 内の 1 つ以上の Repository collection に所属できるようにします。MVP 中は、すべてのリポジトリが namespace のデフォルト Repository collection にリンクされます。`name` は namespace 内で一意でなければならず、すべての競合と一致します。カウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）は、ホット行の競合を回避するため [バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`last_updated_at` はコンテンツ変更（アーティファクトの公開／変更／削除、キャッシュイベント）を追跡し、ダウンロードは追跡しません。`created_by_user_id` と `last_updated_by_user_id` は、リポジトリを作成・最終変更した GitLab ユーザーを記録します。両方とも外部キーを持たず、アプリケーション側の検証もない nullable な不透明参照です。ユーザーレコードはモノリスに存在するため、ユーザーハンドルとアバターのレンダリングはコンシューマーの責任で、AR スキーマは ID のみを保存します。`namespaces.entity_id` と同じ理由で `TEXT` として保存されます: アップストリームのユーザー ID 形式が将来変更されても（例えば UUID に）スキーマ移行は不要です。`description` は、UI が仮想だけでなくすべてのリポジトリタイプの説明を表示するため、親にあります。`soft_deleted_at` タイムスタンプは、リポジトリがソフト削除された時を記録し、必要に応じて復元を可能にします。ソフト削除は、すべてのリポジトリタイプ（local、virtual、remote）がフォーマット固有の処理なしに同じ削除セマンティクスを共有できるよう、親テーブルにあります。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **repositories**: すべてのリポジトリの親エンティティ。`format` はアーティファクトフォーマット（container、Maven、npm）を識別。`kind` はリポジトリタイプ（local、virtual、remote）を識別。リポジトリは [`repository_collection_repositories`](#repository-collection-repositories) 結合テーブルを介して Repository collection にリンクされ、リポジトリが namespace 内の 1 つ以上の Repository collection に所属できるようにします。MVP 中は、すべてのリポジトリが namespace のデフォルト Repository collection にリンクされます。`name` は namespace 内で一意でなければならず、すべての競合と一致します。カウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）は、ホット行の競合を回避するため [バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`last_updated_at` はコンテンツ変更（アーティファクトの公開／変更／削除、キャッシュイベント）を追跡し、ダウンロードは追跡しません。`gitlab_created_by_user_id` と `gitlab_last_updated_by_user_id` は、リポジトリを作成・最終変更した GitLab ユーザーを記録します。両方とも外部キーを持たず、アプリケーション側の検証もない nullable な不透明参照です。ユーザーレコードはモノリスに存在するため、ユーザーハンドルとアバターのレンダリングはコンシューマーの責任で、AR スキーマは ID のみを保存します。`namespaces.entity_id` と同じ理由で `TEXT` として保存されます: アップストリームのユーザー ID 形式が将来変更されても（例えば UUID に）スキーマ移行は不要です。`description` は、UI が仮想だけでなくすべてのリポジトリタイプの説明を表示するため、親にあります。`soft_deleted_at` タイムスタンプは、リポジトリがソフト削除された時を記録し、必要に応じて復元を可能にします。ソフト削除は、すべてのリポジトリタイプ（local、virtual、remote）がフォーマット固有の処理なしに同じ削除セマンティクスを共有できるよう、親テーブルにあります。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 
 #### インデックス
 
-- **`repositories`**: `(namespace_id, name) WHERE soft_deleted_at IS NULL` のユニークインデックス — namespace 内で名前によりリポジトリを検索。部分条件は、ソフト削除後に同じ名前でリポジトリを再作成できるようにする。`(namespace_id, format) WHERE soft_deleted_at IS NULL` のインデックス — フォーマットでリポジトリをフィルタ。`(namespace_id, kind) WHERE soft_deleted_at IS NULL` のインデックス — 種別でリポジトリをフィルタ。ランディングページのソート可能カラムごとに 1 つのインデックス、すべて `WHERE soft_deleted_at IS NULL` 付き: `(namespace_id, artifacts_count DESC)`、`(namespace_id, downloads_count DESC)`、`(namespace_id, size_bytes DESC)`、`(namespace_id, last_updated_at DESC NULLS LAST)`。
+- **`repositories`**: `(namespace_id, name)` のユニークインデックス — アクティブおよびソフト削除済みの両方のリポジトリにわたって名前の一意性を強制し、名前の競合によって復元が失敗することがないようにする。名前の再利用にはまずハード削除が必要。`(namespace_id, name) WHERE soft_deleted_at IS NULL` のインデックス — アクティブリポジトリの検索と名前順リスト向けに最適化されたスキャンパス。`(namespace_id, format) WHERE soft_deleted_at IS NULL` のインデックス — フォーマットでアクティブリポジトリをフィルタ。`(namespace_id, kind) WHERE soft_deleted_at IS NULL` のインデックス — 種別でアクティブリポジトリをフィルタ。`(namespace_id, visibility) WHERE soft_deleted_at IS NULL` のインデックス — 可視性レベルでリポジトリをフィルタ（可視性監査クエリ「この namespace で今 public なリポジトリはどれか？」を支える）。ランディングページのソート可能カラムごとに 1 つのインデックス、すべて `WHERE soft_deleted_at IS NULL` 付き: `(namespace_id, artifacts_count DESC)`、`(namespace_id, downloads_count DESC)`、`(namespace_id, size_bytes DESC)`、`(namespace_id, last_updated_at DESC NULLS LAST)`。
 
 MVP 中、すべてのリポジトリは単一のデフォルト Repository collection にリンクされるため、`(namespace_id, ...)` のソートインデックスは namespace 全体および Repository collection フィルタリングされたクエリの両方に対応します。MVP 後、namespace が複数の Repository collection を持つようになると、Repository collection フィルタリングされたクエリは `repository_collection_repositories` を介して結合します。Repository collection が表面化されたときに追加のサポートインデックスが評価されます。
 
@@ -209,6 +216,15 @@ MVP 中、すべてのリポジトリは単一のデフォルト Repository coll
   WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND name = 'my-repo' AND soft_deleted_at IS NULL;
   ```
 
+- 可視性監査: namespace 内のすべての public リポジトリをリスト（`(namespace_id, visibility) WHERE soft_deleted_at IS NULL` の部分インデックスを使用）:
+
+  ```sql
+  SELECT id, name, format, kind
+  FROM repositories
+  WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND visibility = 0 AND soft_deleted_at IS NULL
+  ORDER BY name;
+  ```
+
 ### Repository collection repositories {#repository-collection-repositories}
 
 `repository_collection_repositories` 結合テーブルは、リポジトリを所属する Repository collection にマッピングします。リポジトリは namespace 内の 1 つ以上の Repository collection のメンバーになることができ、複数のチームの Repository collection を通じて共通のユーティリティリポジトリを表面化するなどの共有アクセスシナリオを可能にします。
@@ -219,9 +235,9 @@ erDiagram
     repositories ||--o{ repository_collection_repositories : "has many"
 
     repository_collection_repositories {
-        uuid namespace_id FK "NOT NULL"
-        bigint repository_collection_id FK "NOT NULL, (repository_collection_id, namespace_id) references repository_collections(id, namespace_id)"
-        bigint repository_id FK "NOT NULL, (repository_id, namespace_id) references repositories(id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id), part of composite PK (namespace_id, repository_collection_id, repository_id)"
+        bigint repository_collection_id PK,FK "NOT NULL, (repository_collection_id, namespace_id) references repository_collections(id, namespace_id)"
+        bigint repository_id PK,FK "NOT NULL, (repository_id, namespace_id) references repositories(id, namespace_id)"
         timestamptz created_at "NOT NULL, DEFAULT NOW()"
     }
 ```
@@ -257,20 +273,22 @@ erDiagram
     lifecycle_policy_settings ||--o{ lifecycle_rules : "has many"
 
     lifecycle_policy_settings {
-        uuid namespace_id FK "NOT NULL, UNIQUE"
+        bigint id PK "DEFAULT nextval('lifecycle_policy_settings_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, UNIQUE, references namespaces(id)"
         boolean enabled "NOT NULL"
     }
 
     lifecycle_rules {
-        uuid namespace_id FK "NOT NULL"
-        bigint lifecycle_policy_settings_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('lifecycle_rules_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint lifecycle_policy_settings_id FK "NOT NULL, (lifecycle_policy_settings_id, namespace_id) references lifecycle_policy_settings(id, namespace_id)"
         smallint rule_type "NOT NULL, 0=keep_last_downloaded_at, 1=keep_last_n, 2=keep_regex"
         jsonb rule_configuration "NOT NULL"
     }
 ```
 
-- **lifecycle_policy_settings**: Namespace レベルでライフサイクル管理構成を定義し、すべてのリポジトリのデフォルトポリシーとして機能。有効化されると、関連するライフサイクルルールが namespace 全体に適用されます。これらのポリシーはリポジトリレベルポリシーで [オーバーライド](#repository-level-overrides) できます。
-- **lifecycle_rules**: Namespace レベルで特定のアーティファクトライフサイクル動作を管理する個別の保持・クリーンアップルールを指定。これらのルールは、リポジトリレベルで [オーバーライド](#repository-level-overrides) されない限り、すべてのリポジトリに適用されます。ルール評価中のパフォーマンス劣化を防ぐため、ポリシーレコードあたりのライフサイクルルール数は制限されます。例えば、ユーザーは特定のアーティファクトをどれくらいの期間保持するか（例: Maven snapshot ファイルは 1 ヶ月だけ保持）を指定するために使用します。
+- **lifecycle_policy_settings**: Namespace レベルでライフサイクル管理構成を定義し、すべてのリポジトリのデフォルトポリシーとして機能。有効化されると、関連するライフサイクルルールが namespace 全体に適用されます。これらのポリシーはリポジトリレベルポリシーで [オーバーライド](#repository-level-overrides) できます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **lifecycle_rules**: Namespace レベルで特定のアーティファクトライフサイクル動作を管理する個別の保持・クリーンアップルールを指定。これらのルールは、リポジトリレベルで [オーバーライド](#repository-level-overrides) されない限り、すべてのリポジトリに適用されます。ルール評価中のパフォーマンス劣化を防ぐため、ポリシーレコードあたりのライフサイクルルール数は制限されます。例えば、ユーザーは特定のアーティファクトをどれくらいの期間保持するか（例: Maven snapshot ファイルは 1 ヶ月だけ保持）を指定するために使用します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 
 #### インデックス
 
@@ -332,14 +350,16 @@ erDiagram
     artifact_type_repository ||--o{ artifact_type_repository_lifecycle_rules : "has many"
 
     artifact_type_repository_lifecycle_policy_settings {
-        uuid namespace_id FK "NOT NULL"
-        bigint repository_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('artifact_type_repository_lifecycle_policy_settings_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, (repository_id, namespace_id) references repositories(id, namespace_id)"
         boolean enabled "NOT NULL"
     }
 
     artifact_type_repository_lifecycle_rules {
-        uuid namespace_id FK "NOT NULL"
-        bigint artifact_type_repository_lifecycle_policy_settings_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('artifact_type_repository_lifecycle_rules_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint artifact_type_repository_lifecycle_policy_settings_id FK "NOT NULL, (artifact_type_repository_lifecycle_policy_settings_id, namespace_id) references artifact_type_repository_lifecycle_policy_settings(id, namespace_id)"
         smallint rule_type "NOT NULL, 0=keep_last_downloaded_at, 1=keep_last_n, 2=keep_regex"
         jsonb rule_configuration "NOT NULL"
     }
@@ -347,7 +367,7 @@ erDiagram
 
 （各アーティファクトフォーマットにオーバーライドテーブルがあるため、`artifact_type` は `container`、`maven`、`npm` に置き換える必要があります。これらのオーバーライドはローカル、仮想、リモートリポジトリにも同じく適用されます — `repository_id` FK は親 `repositories` テーブルを参照し、フォーマット固有のテーブルはリポジトリの `format` カラムによって決定されます。）
 
-これらのテーブルは、いわば [カスケード設定](https://docs.gitlab.com/development/cascading_settings/) として機能します。それらの説明は [namespace レベル](#lifecycle-policies) で同様に名付けられたテーブルとまったく同じです。現在の 2 ティア優先システム（namespace → repository）は、MVP 後に Repository collection が表面化されると 3 ティア（namespace → repository_collection → repository）に拡張可能です。これには同じパターンに従って Repository collection レベルのオーバーライドテーブルを追加する必要があり、既存の namespace レベルやリポジトリレベルのテーブルへの変更は不要です。
+これらのテーブルは、いわば [カスケード設定](https://docs.gitlab.com/development/cascading_settings/) として機能します。それらの説明は [namespace レベル](#lifecycle-policies) で同様に名付けられたテーブルとまったく同じで、パーティショニングも含みます: すべてのオーバーライドテーブルは `HASH(namespace_id)` で 64 パーティションにパーティショニングされます。現在の 2 ティア優先システム（namespace → repository）は、MVP 後に Repository collection が表面化されると 3 ティア（namespace → repository_collection → repository）に拡張可能です。これには同じパターンに従って Repository collection レベルのオーバーライドテーブルを追加する必要があり、既存の namespace レベルやリポジトリレベルのテーブルへの変更は不要です。
 
 ### Container Repositories {#container-repositories}
 
@@ -371,21 +391,24 @@ erDiagram
     container_manifest_relationships ||--|| container_manifests : "has one (child_id)"
 
     container_repositories {
-        uuid namespace_id FK "NOT NULL"
-        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), references repositories(id, namespace_id)"
+        bigint id PK "DEFAULT nextval('container_repositories_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
     }
 
     container_images {
-        uuid namespace_id FK "NOT NULL"
-        bigint container_repository_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('container_images_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint container_repository_id FK "NOT NULL, (container_repository_id, namespace_id) references container_repositories(id, namespace_id)"
         text name "NOT NULL, limit 255"
         timestamptz last_downloaded_at "nullable, buffered"
         timestamptz soft_deleted_at "nullable"
     }
 
     container_blobs {
-        uuid namespace_id FK "NOT NULL"
-        bigint container_image_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('container_blobs_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint container_image_id FK "NOT NULL, (container_image_id, namespace_id) references container_images(id, namespace_id)"
         bytea digest "NOT NULL"
         text media_type "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
@@ -394,37 +417,43 @@ erDiagram
     }
 
     container_manifests {
-        uuid namespace_id FK "NOT NULL"
-        bigint container_image_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('container_manifests_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint container_image_id FK "NOT NULL, (container_image_id, namespace_id) references container_images(id, namespace_id)"
         bytea digest "NOT NULL"
         text media_type "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
         bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
         bigint size "NOT NULL, precomputed at push time"
+        text gitlab_user_id "nullable, opaque string, limit 255"
+        text gitlab_project_id "nullable, opaque string, limit 255"
+        bytea gitlab_git_commit_sha "nullable"
         timestamptz soft_deleted_at "nullable"
     }
 
     container_manifest_relationships {
-        uuid namespace_id FK "NOT NULL"
-        bigint container_image_id FK "NOT NULL"
-        bigint parent_container_manifest_id FK "NOT NULL"
-        bigint child_container_manifest_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('container_manifest_relationships_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint container_image_id FK "NOT NULL, (container_image_id, namespace_id) references container_images(id, namespace_id)"
+        bigint parent_container_manifest_id FK "NOT NULL, (parent_container_manifest_id, namespace_id) references container_manifests(id, namespace_id)"
+        bigint child_container_manifest_id FK "NOT NULL, (child_container_manifest_id, namespace_id) references container_manifests(id, namespace_id)"
     }
 
     container_tags {
-        uuid namespace_id FK "NOT NULL"
-        bigint container_image_id FK "NOT NULL"
-        bigint container_manifest_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('container_tags_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint container_image_id FK "NOT NULL, (container_image_id, namespace_id) references container_images(id, namespace_id)"
+        bigint container_manifest_id FK "NOT NULL, (container_manifest_id, namespace_id) references container_manifests(id, namespace_id)"
         text name "NOT NULL, limit 255"
     }
 ```
 
-- **container_repositories**: 複数のイメージのコンテナ。各リポジトリは独立したバージョニングを持つ複数のイメージをホストできます。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。
-- **container_images**: リポジトリ内の名前付きコンテナイメージ（例: `myapp`、`backend`）を表します。`last_downloaded_at` はイメージが最後にプルされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールでダウンロードベースの保持を評価するために使用されます（[ADR-010](010_data_retention.md)）。`soft_deleted_at` タイムスタンプは、イメージがソフト削除された時を記録し、必要に応じて復元を可能にします。
-- **container_blobs**: コンテナイメージを構成する個々のコンテンツアドレス可能なレイヤーと構成オブジェクトを格納します。マニフェストとそれを構成するレイヤー（blob）の関係は暗黙的であり、ランタイムでマニフェストコンテンツをパースして決定されるため、データベース外部キーとしてモデル化されません。`soft_deleted_at` タイムスタンプは、blob がソフト削除された時を記録し、必要に応じて復元を可能にします。
-- **container_manifests**: 特定のイメージバージョンの構成とレイヤーを記述するイメージマニフェストを表します。`size` カラムは、このマニフェストをルートとするマニフェストツリーの合計バイトサイズを保持します: このマニフェスト自体のペイロードと、ここから推移的に到達可能なすべての blob（マニフェストリストや OCI インデックスの子マニフェストを含む）。`soft_deleted_at` タイムスタンプは、マニフェストがソフト削除された時を記録し、必要に応じて復元を可能にします。
-- **container_manifest_relationships**: 親マニフェストが複数の他のマニフェストを参照できる Docker マニフェストリストと OCI インデックス（マルチアーキテクチャイメージなど）を扱います。
-- **container_tags**: 特定のマニフェストを指す人間可読の名前（例: `latest`、`v1.2.3`）を提供します。
+- **container_repositories**: 複数のイメージのコンテナ。各リポジトリは独立したバージョニングを持つ複数のイメージをホストできます。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_images**: リポジトリ内の名前付きコンテナイメージ（例: `myapp`、`backend`）を表します。`last_downloaded_at` はイメージが最後にプルされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールでダウンロードベースの保持を評価するために使用されます（[ADR-010](010_data_retention.md)）。`soft_deleted_at` タイムスタンプは、イメージがソフト削除された時を記録し、必要に応じて復元を可能にします。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_blobs**: コンテナイメージを構成する個々のコンテンツアドレス可能なレイヤーと構成オブジェクトを格納します。マニフェストとそれを構成するレイヤー（blob）の関係は暗黙的であり、ランタイムでマニフェストコンテンツをパースして決定されるため、データベース外部キーとしてモデル化されません。`soft_deleted_at` タイムスタンプは、blob がソフト削除された時を記録し、必要に応じて復元を可能にします。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_manifests**: 特定のイメージバージョンの構成とレイヤーを記述するイメージマニフェストを表します。`size` カラムは、このマニフェストをルートとするマニフェストツリーの合計バイトサイズを保持します: このマニフェスト自体のペイロードと、ここから推移的に到達可能なすべての blob（マニフェストリストや OCI インデックスの子マニフェストを含む）。`gitlab_user_id` は、このマニフェストをプッシュした GitLab ユーザーを記録します。外部キーを持たない nullable な不透明テキスト参照で、[repositories](#repositories) の同等カラムと同じ根拠です — ユーザーレコードはモノリスに存在し、ユーザーハンドルとアバターのレンダリングはコンシューマーの責任で、AR スキーマは ID のみを保存し、`TEXT` はアップストリームのユーザー ID 形式の将来の変更からスキーマを隔離します。`gitlab_project_id` と `gitlab_git_commit_sha` は、その帰属を公開コンテキストの残りで拡張します: `gitlab_project_id` はプッシュ元の GitLab プロジェクト（例: `CI_PROJECT_ID`）で、`gitlab_user_id` と同じモノリス参照の理由から nullable な不透明テキストとして保存されます。`gitlab_git_commit_sha` は公開時の Git コミット（例: `CI_COMMIT_SHA`）で、ハッシュカラムのスキーマ規約に従い nullable な `bytea` として保存されます — 可変長で、SHA-1（20 バイト）と SHA-256（32 バイト）の両方に収まります。これはモノリス参照ではなく公開時の事実なので、外部キーは不要です。CI コンテキストなしでプッシュが届いた場合（例: 開発者のワークステーションからの手動プッシュ）は両方とも NULL になります。`soft_deleted_at` タイムスタンプは、マニフェストがソフト削除された時を記録し、必要に応じて復元を可能にします。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_manifest_relationships**: 親マニフェストが複数の他のマニフェストを参照できる Docker マニフェストリストと OCI インデックス（マルチアーキテクチャイメージなど）を扱います。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_tags**: 特定のマニフェストを指す人間可読の名前（例: `latest`、`v1.2.3`）を提供します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **blob_storage_attachments**: 詳細は [Blob storage](#blob-storage) セクションを参照してください。
 
 `container_blobs` テーブルは、他のコンテナレジストリアーキテクチャが行うようにコンテナレジストリの物理 blob を直接保存しません。違いは、blob ストレージが [blob storage](#blob-storage) テーブルで処理されること（重複排除とガベージコレクションを含む）です。したがって、`container_*` レベルでは、単純に `blob_storage_attachments` レコードへの参照を保存するだけで済みます。
@@ -492,8 +521,9 @@ erDiagram
     container_remote_manifest_relationships ||--|| container_remote_manifests : "has one (child_id)"
 
     container_remote_repositories {
-        uuid namespace_id FK "NOT NULL"
-        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), references repositories(id, namespace_id)"
+        bigint id PK "DEFAULT nextval('container_remote_repositories_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
         text url "NOT NULL, limit 1024"
         text auth_url "nullable, limit 1024"
         bytea encrypted_username
@@ -504,16 +534,18 @@ erDiagram
     }
 
     container_remote_images {
-        uuid namespace_id FK "NOT NULL"
-        bigint container_remote_repository_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('container_remote_images_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint container_remote_repository_id FK "NOT NULL, (container_remote_repository_id, namespace_id) references container_remote_repositories(id, namespace_id)"
         text name "NOT NULL, limit 255"
         timestamptz last_downloaded_at "nullable, buffered"
         timestamptz soft_deleted_at "nullable"
     }
 
     container_remote_blobs {
-        uuid namespace_id FK "NOT NULL"
-        bigint container_remote_image_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('container_remote_blobs_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint container_remote_image_id FK "NOT NULL, (container_remote_image_id, namespace_id) references container_remote_images(id, namespace_id)"
         bytea digest "NOT NULL"
         text media_type "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
@@ -522,8 +554,9 @@ erDiagram
     }
 
     container_remote_manifests {
-        uuid namespace_id FK "NOT NULL"
-        bigint container_remote_image_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('container_remote_manifests_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint container_remote_image_id FK "NOT NULL, (container_remote_image_id, namespace_id) references container_remote_images(id, namespace_id)"
         bytea digest "NOT NULL"
         text media_type "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
@@ -533,16 +566,18 @@ erDiagram
     }
 
     container_remote_manifest_relationships {
-        uuid namespace_id FK "NOT NULL"
-        bigint container_remote_image_id FK "NOT NULL"
-        bigint parent_container_remote_manifest_id FK "NOT NULL"
-        bigint child_container_remote_manifest_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('container_remote_manifest_relationships_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint container_remote_image_id FK "NOT NULL, (container_remote_image_id, namespace_id) references container_remote_images(id, namespace_id)"
+        bigint parent_container_remote_manifest_id FK "NOT NULL, (parent_container_remote_manifest_id, namespace_id) references container_remote_manifests(id, namespace_id)"
+        bigint child_container_remote_manifest_id FK "NOT NULL, (child_container_remote_manifest_id, namespace_id) references container_remote_manifests(id, namespace_id)"
     }
 
     container_remote_tags {
-        uuid namespace_id FK "NOT NULL"
-        bigint container_remote_image_id FK "NOT NULL"
-        bigint container_remote_manifest_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('container_remote_tags_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint container_remote_image_id FK "NOT NULL, (container_remote_image_id, namespace_id) references container_remote_images(id, namespace_id)"
+        bigint container_remote_manifest_id FK "NOT NULL, (container_remote_manifest_id, namespace_id) references container_remote_manifests(id, namespace_id)"
         text name "NOT NULL, limit 255"
         timestamptz upstream_checked_at "NOT NULL, DEFAULT NOW()"
         text upstream_etag "nullable, limit 255"
@@ -550,11 +585,11 @@ erDiagram
 ```
 
 - **container_remote_repositories**: 外部コンテナレジストリを表します。URL、オプションの認証 URL（`auth_url`）、認証情報、キャッシュ TTL（`cache_validity_hours`）を含みます。ヘルスチェックステータスはモニタリングのために追跡されます。`repository_id` を介して親 `repositories` テーブルを参照します。リモートリポジトリはスタンドアロンであるため、同じリモートを使う 2 つの仮想リポジトリは 1 つのキャッシュを共有します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
-- **container_remote_images**: リモートリポジトリ内のキャッシュされたコンテナイメージ。`container_images` をミラーリングします。`last_downloaded_at` はキャッシュされたイメージが最後にプルされた時を記録します。ホット行の競合を回避するため、バッファ／非同期書き込み（`repositories.downloads_count` と同じパターン）で維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます（[ADR-010](010_data_retention.md)）。
-- **container_remote_blobs**: キャッシュされたレイヤーまたは構成 blob。
-- **container_remote_manifests**: キャッシュされたイメージマニフェスト。`size` カラムは、このキャッシュが知っているサブツリーのバイトフットプリントを保持します: キャッシュ時のマニフェスト自体のペイロードに加えて、子が到着するたびに各子の `size` を加算します。イメージマニフェストの場合、値はキャッシュ時に完全になります。マニフェストリストと OCI インデックスの場合、子が取得されるにつれて完全なツリーのフットプリントに段階的に収束し、一部の子が決してプルされない場合は部分的なままになる可能性があります。この段階的なセマンティクスは遅延リモートキャッシングを反映しています — `size` を完全に保つためだけに積極的に子を取得することは遅延設計を損ないます。
-- **container_remote_manifest_relationships**: キャッシュされたマルチアーキテクチャマニフェストリストの関係。ローカルと同じ構造。
-- **container_remote_tags**: キャッシュされたタグからマニフェストへのマッピング。タグは可変ポインタです — キャッシュ再検証時に、タグは新しいマニフェストに再ポイントされる可能性があります。`upstream_checked_at` はタグがアップストリームレジストリに対して最後に検証された時を記録します。`cache_validity_hours` と比較して再検証が必要かどうかを判断します。`upstream_etag` はアップストリームから返された ETag を保存し、条件付きリクエスト（`If-None-Match`）を可能にすることで、タグが同じマニフェストを指している場合に完全なマニフェスト解決を回避します。マニフェストと blob は暗号ハッシュによってコンテンツアドレス指定されるため、鮮度追跡は不要です — 保存されているバイトがダイジェストと一致すれば、コンテンツは正しいことが保証されます。
+- **container_remote_images**: リモートリポジトリ内のキャッシュされたコンテナイメージ。`container_images` をミラーリングします。`last_downloaded_at` はキャッシュされたイメージが最後にプルされた時を記録します。ホット行の競合を回避するため、バッファ／非同期書き込み（`repositories.downloads_count` と同じパターン）で維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます（[ADR-010](010_data_retention.md)）。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_remote_blobs**: キャッシュされたレイヤーまたは構成 blob。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_remote_manifests**: キャッシュされたイメージマニフェスト。`size` カラムは、このキャッシュが知っているサブツリーのバイトフットプリントを保持します: キャッシュ時のマニフェスト自体のペイロードに加えて、子が到着するたびに各子の `size` を加算します。イメージマニフェストの場合、値はキャッシュ時に完全になります。マニフェストリストと OCI インデックスの場合、子が取得されるにつれて完全なツリーのフットプリントに段階的に収束し、一部の子が決してプルされない場合は部分的なままになる可能性があります。この段階的なセマンティクスは遅延リモートキャッシングを反映しています — `size` を完全に保つためだけに積極的に子を取得することは遅延設計を損ないます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_remote_manifest_relationships**: キャッシュされたマルチアーキテクチャマニフェストリストの関係。ローカルと同じ構造。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_remote_tags**: キャッシュされたタグからマニフェストへのマッピング。タグは可変ポインタです — キャッシュ再検証時に、タグは新しいマニフェストに再ポイントされる可能性があります。`upstream_checked_at` はタグがアップストリームレジストリに対して最後に検証された時を記録します。`cache_validity_hours` と比較して再検証が必要かどうかを判断します。`upstream_etag` はアップストリームから返された ETag を保存し、条件付きリクエスト（`If-None-Match`）を可能にすることで、タグが同じマニフェストを指している場合に完全なマニフェスト解決を回避します。マニフェストと blob は暗号ハッシュによってコンテンツアドレス指定されるため、鮮度追跡は不要です — 保存されているバイトがダイジェストと一致すれば、コンテンツは正しいことが保証されます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **blob_storage_attachments**: 詳細は [Blob storage](#blob-storage) セクションを参照してください。
 
 #### インデックス
@@ -624,29 +659,32 @@ erDiagram
     container_virtual_repository_upstreams ||--o{ container_virtual_upstream_rules : "has many"
 
     container_virtual_repositories {
-        uuid namespace_id FK "NOT NULL"
-        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), references repositories(id, namespace_id)"
+        bigint id PK "DEFAULT nextval('container_virtual_repositories_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
     }
 
     container_virtual_repository_upstreams {
-        uuid namespace_id FK "NOT NULL"
-        bigint container_virtual_repository_id FK "NOT NULL"
-        bigint upstream_repository_id FK "NOT NULL, (namespace_id, upstream_repository_id) references repositories(namespace_id, id)"
+        bigint id PK "DEFAULT nextval('container_virtual_repository_upstreams_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint container_virtual_repository_id FK "NOT NULL, (container_virtual_repository_id, namespace_id) references container_virtual_repositories(id, namespace_id)"
+        bigint upstream_repository_id FK "NOT NULL, (upstream_repository_id, namespace_id) references repositories(id, namespace_id)"
         int position "NOT NULL"
     }
 
     container_virtual_upstream_rules {
-        uuid namespace_id FK "NOT NULL"
-        bigint container_virtual_repository_upstream_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('container_virtual_upstream_rules_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint container_virtual_repository_upstream_id FK "NOT NULL, (container_virtual_repository_upstream_id, namespace_id) references container_virtual_repository_upstreams(id, namespace_id)"
         smallint rule_type "NOT NULL, 0=allow, 1=deny"
         text pattern "NOT NULL, limit 255"
         smallint target_field "NOT NULL, 0=image, 1=tag"
     }
 ```
 
-- **container_virtual_repositories**: コンテナイメージの仮想リポジトリ。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。
-- **container_virtual_repository_upstreams**: 仮想リポジトリとそのアップストリームを結合するテーブル。各仮想リポジトリは順序付きのアップストリームリストを持ちます。各エントリは `upstream_repository_id` を介してアップストリームリポジトリを参照し、`repositories(namespace_id, id)` を指します。複合 FK `(namespace_id, upstream_repository_id)` は、アップストリームが同じ namespace 内にあることを強制します — レジストリが namespace にスコープされていることと一貫しています（[ADR-001](001_organizations_as_anchor_point.md)）。
-- **container_virtual_upstream_rules**: アップストリームの allow/deny フィルタルールを定義します。各ルールは、このアップストリームを介して解決されるときに含めるか除外するアーティファクトを制御するためのワイルドカードパターンとターゲットフィールドを指定します。MVP ではパターンはワイルドカードのみで、正規表現サポートは顧客のフィードバックが正当化するまで延期されます（[議論](https://gitlab.com/gitlab-org/gitlab/-/work_items/597754#note_3291871207)）。ルールはアップストリーム参照ごと（リモートリポジトリごとではない）に保持され、JFrog モデル（include/exclude パターンが仮想-アップストリーム関連付けごとに設定される）と一致します。
+- **container_virtual_repositories**: コンテナイメージの仮想リポジトリ。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_virtual_repository_upstreams**: 仮想リポジトリとそのアップストリームを結合するテーブル。各仮想リポジトリは順序付きのアップストリームリストを持ちます。各エントリは `upstream_repository_id` を介してアップストリームリポジトリを参照し、`repositories(namespace_id, id)` を指します。複合 FK `(namespace_id, upstream_repository_id)` は、アップストリームが同じ namespace 内にあることを強制します — レジストリが namespace にスコープされていることと一貫しています（[ADR-001](001_organizations_as_anchor_point.md)）。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_virtual_upstream_rules**: アップストリームの allow/deny フィルタルールを定義します。各ルールは、このアップストリームを介して解決されるときに含めるか除外するアーティファクトを制御するためのワイルドカードパターンとターゲットフィールドを指定します。MVP ではパターンはワイルドカードのみで、正規表現サポートは顧客のフィードバックが正当化するまで延期されます（[議論](https://gitlab.com/gitlab-org/gitlab/-/work_items/597754#note_3291871207)）。ルールはアップストリーム参照ごと（リモートリポジトリごとではない）に保持され、JFrog モデル（include/exclude パターンが仮想-アップストリーム関連付けごとに設定される）と一致します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 
 #### インデックス
 
@@ -692,13 +730,15 @@ erDiagram
     maven_files ||--|| blob_storage_attachments : "has one"
 
     maven_repositories {
-        uuid namespace_id FK "NOT NULL"
-        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), references repositories(id, namespace_id)"
+        bigint id PK "DEFAULT nextval('maven_repositories_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
     }
 
     maven_packages {
-        uuid namespace_id FK "NOT NULL"
-        bigint maven_repository_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('maven_packages_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint maven_repository_id FK "NOT NULL, (maven_repository_id, namespace_id) references maven_repositories(id, namespace_id)"
         text group_id "NOT NULL, limit 255"
         text artifact_id "NOT NULL, limit 255"
         timestamptz last_downloaded_at "nullable, buffered"
@@ -706,17 +746,22 @@ erDiagram
     }
 
     maven_versions {
-        uuid namespace_id FK "NOT NULL"
-        bigint maven_package_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('maven_versions_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint maven_package_id FK "NOT NULL, (maven_package_id, namespace_id) references maven_packages(id, namespace_id)"
         text version "NOT NULL, limit 255"
         timestamptz last_downloaded_at "nullable, buffered"
+        text gitlab_user_id "nullable, opaque string, limit 255"
+        text gitlab_project_id "nullable, opaque string, limit 255"
+        bytea gitlab_git_commit_sha "nullable"
         timestamptz soft_deleted_at "nullable"
     }
 
     maven_files {
-        uuid namespace_id FK "NOT NULL"
-        bigint maven_package_id FK "NOT NULL"
-        bigint maven_version_id FK "nullable"
+        bigint id PK "DEFAULT nextval('maven_files_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint maven_package_id FK "NOT NULL, (maven_package_id, namespace_id) references maven_packages(id, namespace_id)"
+        bigint maven_version_id FK "nullable, (maven_version_id, namespace_id) references maven_versions(id, namespace_id)"
         text file_name "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
         bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
@@ -727,10 +772,10 @@ erDiagram
     }
 ```
 
-- **maven_repositories**: 複数のパッケージのコンテナ。各リポジトリは group ID と artifact ID で識別される複数のパッケージをホストできます。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。
-- **maven_packages**: [group ID と artifact ID](https://maven.apache.org/pom.html#Maven_Coordinates) で識別される Maven パッケージを表します（例: `com.example:myapp`）。`last_downloaded_at` はパッケージのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`NULL` はパッケージが一度もダウンロードされていないことを意味し、`keep_last_downloaded_at` ライフサイクルルール評価では最古のダウンロード時間として扱われます（つまり、ダウンロードベースの保持で削除対象となります）。`keep_last_downloaded_at` ライフサイクルルールでダウンロードベースの保持を評価するために使用されます（[ADR-010](010_data_retention.md)）。
-- **maven_versions**: Maven パッケージの個々の [バージョン](https://maven.apache.org/pom.html#Maven_Coordinates) を格納します（例: `1.0.0`、`2.1.3-SNAPSHOT`）。`last_downloaded_at` はバージョンのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。
-- **maven_files**: Maven パッケージに関連付けられた個々のファイルを表します。ファイルは、`maven_version_id` が設定されたバージョン固有のもの（JAR、POM、ソース、Javadoc、チェックサム）か、`maven_version_id` が NULL のパッケージレベルのもの（`maven-metadata.xml` とそのチェックサムなど）のいずれかです。`maven_package_id` は常に設定され、パッケージからそのすべてのファイルへの直接パスを提供します。レジストリがパフォーマンスのボトルネックを改善するために使用する補助ファイルでもありえます。`sha1` と `md5` カラムは、整合性検証のために [Maven プロトコルが要求するチェックサム](https://maven.apache.org/resolver/about-checksums.html) を格納します。Maven クライアントはすべてのアーティファクトに `.sha1` と `.md5` のサイドカーファイルが存在することを期待します。これらのカラムが `blob_storage_blobs` ではなく `maven_files` にあるのは、それらが Maven プロトコル固有の関心事であり、普遍的な blob プロパティではないためです — 他のフォーマット（OCI コンテナ）は SHA256 のみを使用します。ここに保持することで、`blob_storage_blobs` をフォーマット固有のカラムやインデックスのないフォーマット非依存のテーブルとして保ちます。Maven プロトコルが要求するため `sha1` は `NOT NULL` です。Maven 3.9+ で [MD5 チェックサムは非推奨](https://maven.apache.org/resolver/about-checksums.html) になったため `md5` は nullable です。`sha512` は `NOT NULL` です。Maven プロトコルはレジストリが提供できなければならない `.sha512` サイドカーを公開しており、永続化前にバイトがハンドラを流れる際にアップロード中に値を常に計算できるためです。
+- **maven_repositories**: 複数のパッケージのコンテナ。各リポジトリは group ID と artifact ID で識別される複数のパッケージをホストできます。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **maven_packages**: [group ID と artifact ID](https://maven.apache.org/pom.html#Maven_Coordinates) で識別される Maven パッケージを表します（例: `com.example:myapp`）。`last_downloaded_at` はパッケージのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`NULL` はパッケージが一度もダウンロードされていないことを意味し、`keep_last_downloaded_at` ライフサイクルルール評価では最古のダウンロード時間として扱われます（つまり、ダウンロードベースの保持で削除対象となります）。`keep_last_downloaded_at` ライフサイクルルールでダウンロードベースの保持を評価するために使用されます（[ADR-010](010_data_retention.md)）。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **maven_versions**: Maven パッケージの個々の [バージョン](https://maven.apache.org/pom.html#Maven_Coordinates) を格納します（例: `1.0.0`、`2.1.3-SNAPSHOT`）。`last_downloaded_at` はバージョンのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。`gitlab_user_id`、`gitlab_project_id`、`gitlab_git_commit_sha` は、このバージョンを公開した GitLab ユーザーと公開の背後にある CI コンテキスト（プロジェクト、コミット）を記録します。[`container_manifests`](#container-repositories) の同等カラムと同じ形と根拠です。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **maven_files**: Maven パッケージに関連付けられた個々のファイルを表します。ファイルは、`maven_version_id` が設定されたバージョン固有のもの（JAR、POM、ソース、Javadoc、チェックサム）か、`maven_version_id` が NULL のパッケージレベルのもの（`maven-metadata.xml` とそのチェックサムなど）のいずれかです。`maven_package_id` は常に設定され、パッケージからそのすべてのファイルへの直接パスを提供します。レジストリがパフォーマンスのボトルネックを改善するために使用する補助ファイルでもありえます。`sha1` と `md5` カラムは、整合性検証のために [Maven プロトコルが要求するチェックサム](https://maven.apache.org/resolver/about-checksums.html) を格納します。Maven クライアントはすべてのアーティファクトに `.sha1` と `.md5` のサイドカーファイルが存在することを期待します。これらのカラムが `blob_storage_blobs` ではなく `maven_files` にあるのは、それらが Maven プロトコル固有の関心事であり、普遍的な blob プロパティではないためです — 他のフォーマット（OCI コンテナ）は SHA256 のみを使用します。ここに保持することで、`blob_storage_blobs` をフォーマット固有のカラムやインデックスのないフォーマット非依存のテーブルとして保ちます。Maven プロトコルが要求するため `sha1` は `NOT NULL` です。Maven 3.9+ で [MD5 チェックサムは非推奨](https://maven.apache.org/resolver/about-checksums.html) になったため `md5` は nullable です。`sha512` は `NOT NULL` です。Maven プロトコルはレジストリが提供できなければならない `.sha512` サイドカーを公開しており、永続化前にバイトがハンドラを流れる際にアップロード中に値を常に計算できるためです。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **blob_storage_attachments**: 詳細は [Blob storage](#blob-storage) セクションを参照してください。
 
 パッケージ名（この場合 group ID と artifact ID）とバージョンは同じテーブルに保存しません。理由は、UI がパッケージ名でデータにアクセスするためです。パッケージ名がフォルダで、それを開くとバージョンごとにサブフォルダがあるツリー型 UI を想像してください。最初のリクエストではフォルダ（パッケージ名）をリスト化する必要があります。フォルダを開くと、すべてのサブフォルダ（パッケージバージョン）をリスト化するリクエストがトリガーされます。したがって、このアクセスパターンを容易にするため、2 つの専用テーブル（`maven_packages` と `maven_versions`）を持ちます。
@@ -786,8 +831,9 @@ erDiagram
     maven_remote_files ||--|| blob_storage_attachments : "has one"
 
     maven_remote_repositories {
-        uuid namespace_id FK "NOT NULL"
-        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), references repositories(id, namespace_id)"
+        bigint id PK "DEFAULT nextval('maven_remote_repositories_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
         text url "NOT NULL, limit 1024"
         bytea encrypted_username
         bytea encrypted_password
@@ -798,8 +844,9 @@ erDiagram
     }
 
     maven_remote_packages {
-        uuid namespace_id FK "NOT NULL"
-        bigint maven_remote_repository_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('maven_remote_packages_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint maven_remote_repository_id FK "NOT NULL, (maven_remote_repository_id, namespace_id) references maven_remote_repositories(id, namespace_id)"
         text group_id "NOT NULL, limit 255"
         text artifact_id "NOT NULL, limit 255"
         timestamptz last_downloaded_at "nullable, buffered"
@@ -807,17 +854,19 @@ erDiagram
     }
 
     maven_remote_versions {
-        uuid namespace_id FK "NOT NULL"
-        bigint maven_remote_package_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('maven_remote_versions_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint maven_remote_package_id FK "NOT NULL, (maven_remote_package_id, namespace_id) references maven_remote_packages(id, namespace_id)"
         text version "NOT NULL, limit 255"
         timestamptz last_downloaded_at "nullable, buffered"
         timestamptz soft_deleted_at "nullable"
     }
 
     maven_remote_files {
-        uuid namespace_id FK "NOT NULL"
-        bigint maven_remote_package_id FK "NOT NULL"
-        bigint maven_remote_version_id FK "nullable"
+        bigint id PK "DEFAULT nextval('maven_remote_files_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint maven_remote_package_id FK "NOT NULL, (maven_remote_package_id, namespace_id) references maven_remote_packages(id, namespace_id)"
+        bigint maven_remote_version_id FK "nullable, (maven_remote_version_id, namespace_id) references maven_remote_versions(id, namespace_id)"
         text file_name "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
         bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
@@ -831,9 +880,9 @@ erDiagram
 ```
 
 - **maven_remote_repositories**: 外部 Maven リポジトリを表します。URL、認証情報、アーティファクトキャッシュ TTL（`cache_validity_hours`）、`maven-metadata.xml` のようなメタデータレスポンス用の別の TTL（`metadata_cache_validity_hours`）を含みます。ヘルスチェックステータスはモニタリングのために追跡されます。`repository_id` を介して親 `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
-- **maven_remote_packages**: group ID と artifact ID で識別されるキャッシュされた Maven パッケージ。`maven_packages` をミラーリングします。`last_downloaded_at` はパッケージのキャッシュされたファイルのいずれかが最後にダウンロードされた時を記録し、ホット行の競合を回避するためバッファ／非同期書き込みで維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます。
-- **maven_remote_versions**: Maven パッケージのキャッシュされたバージョン。`maven_versions` をミラーリングします。`last_downloaded_at` はバージョンのキャッシュされたファイルのいずれかが最後にダウンロードされた時を記録し、ホット行の競合を回避するためバッファ／非同期書き込みで維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます。
-- **maven_remote_files**: キャッシュされたファイル（JAR、POM、チェックサム、`maven-metadata.xml`）。nullable な `maven_remote_version_id` はローカルと同じパターンを保持します: バージョン固有のファイルとパッケージレベルのファイル（`maven-metadata.xml` など）。コンテンツがローカルかキャッシュかに関係なく、Maven プロトコルはこれらのチェックサムの提供を要求するため、`sha1` と `md5` は保持されます。`sha512` はパリティのために追加され、ローカル `maven_files` カラム形状をミラーリングします。これにより、Maven Virtual 仕様（S14）が単一のクエリパスでどちらかのバックエンドから `.sha512` サイドカーを提供できるようになります。値は他のチェックサムと一緒にプロキシ書き込みステップ中にキャッシュされたバイトから計算されるため、初日から `NOT NULL` が実現可能です。`upstream_checked_at` はファイルがアップストリームリポジトリに対して最後に検証された時を記録します。アーティファクトファイルでは `cache_validity_hours` と、メタデータファイル（例: `maven-metadata.xml`）では `metadata_cache_validity_hours` と比較して、再検証が必要かどうかを判断します。`upstream_etag` はアップストリームから返された ETag を保存し、条件付きリクエスト（`If-None-Match`）を可能にすることで、変更されていないファイルの再ダウンロードを回避します。
+- **maven_remote_packages**: group ID と artifact ID で識別されるキャッシュされた Maven パッケージ。`maven_packages` をミラーリングします。`last_downloaded_at` はパッケージのキャッシュされたファイルのいずれかが最後にダウンロードされた時を記録し、ホット行の競合を回避するためバッファ／非同期書き込みで維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **maven_remote_versions**: Maven パッケージのキャッシュされたバージョン。`maven_versions` をミラーリングします。`last_downloaded_at` はバージョンのキャッシュされたファイルのいずれかが最後にダウンロードされた時を記録し、ホット行の競合を回避するためバッファ／非同期書き込みで維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **maven_remote_files**: キャッシュされたファイル（JAR、POM、チェックサム、`maven-metadata.xml`）。nullable な `maven_remote_version_id` はローカルと同じパターンを保持します: バージョン固有のファイルとパッケージレベルのファイル（`maven-metadata.xml` など）。コンテンツがローカルかキャッシュかに関係なく、Maven プロトコルはこれらのチェックサムの提供を要求するため、`sha1` と `md5` は保持されます。`sha512` はパリティのために追加され、ローカル `maven_files` カラム形状をミラーリングします。これにより、Maven Virtual 仕様（S14）が単一のクエリパスでどちらかのバックエンドから `.sha512` サイドカーを提供できるようになります。値は他のチェックサムと一緒にプロキシ書き込みステップ中にキャッシュされたバイトから計算されるため、初日から `NOT NULL` が実現可能です。`upstream_checked_at` はファイルがアップストリームリポジトリに対して最後に検証された時を記録します。アーティファクトファイルでは `cache_validity_hours` と、メタデータファイル（例: `maven-metadata.xml`）では `metadata_cache_validity_hours` と比較して、再検証が必要かどうかを判断します。`upstream_etag` はアップストリームから返された ETag を保存し、条件付きリクエスト（`If-None-Match`）を可能にすることで、変更されていないファイルの再ダウンロードを回避します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **blob_storage_attachments**: 詳細は [Blob storage](#blob-storage) セクションを参照してください。
 
 #### インデックス
@@ -906,29 +955,32 @@ erDiagram
     maven_virtual_repository_upstreams ||--o{ maven_virtual_upstream_rules : "has many"
 
     maven_virtual_repositories {
-        uuid namespace_id FK "NOT NULL"
-        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), references repositories(id, namespace_id)"
+        bigint id PK "DEFAULT nextval('maven_virtual_repositories_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
     }
 
     maven_virtual_repository_upstreams {
-        uuid namespace_id FK "NOT NULL"
-        bigint maven_virtual_repository_id FK "NOT NULL"
-        bigint upstream_repository_id FK "NOT NULL, (namespace_id, upstream_repository_id) references repositories(namespace_id, id)"
+        bigint id PK "DEFAULT nextval('maven_virtual_repository_upstreams_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint maven_virtual_repository_id FK "NOT NULL, (maven_virtual_repository_id, namespace_id) references maven_virtual_repositories(id, namespace_id)"
+        bigint upstream_repository_id FK "NOT NULL, (upstream_repository_id, namespace_id) references repositories(id, namespace_id)"
         int position "NOT NULL"
     }
 
     maven_virtual_upstream_rules {
-        uuid namespace_id FK "NOT NULL"
-        bigint maven_virtual_repository_upstream_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('maven_virtual_upstream_rules_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint maven_virtual_repository_upstream_id FK "NOT NULL, (maven_virtual_repository_upstream_id, namespace_id) references maven_virtual_repository_upstreams(id, namespace_id)"
         smallint rule_type "NOT NULL, 0=allow, 1=deny"
         text pattern "NOT NULL, limit 255"
         smallint target_field "NOT NULL, 0=group_id, 1=artifact_id, 2=version"
     }
 ```
 
-- **maven_virtual_repositories**: Maven パッケージの仮想リポジトリ。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。
-- **maven_virtual_repository_upstreams**: 仮想リポジトリとそのアップストリームを結合するテーブル。各仮想リポジトリは順序付きのアップストリームリストを持ちます。各エントリは `upstream_repository_id` を介してアップストリームリポジトリを参照し、`repositories(namespace_id, id)` を指します。複合 FK `(namespace_id, upstream_repository_id)` は、アップストリームが同じ namespace 内にあることを強制します — レジストリが namespace にスコープされていることと一貫しています（[ADR-001](001_organizations_as_anchor_point.md)）。
-- **maven_virtual_upstream_rules**: アップストリームの allow/deny フィルタルールを定義します。各ルールは、このアップストリームを介して解決されるときに含めるか除外するアーティファクトを制御するためのワイルドカードパターンとターゲットフィールドを指定します。MVP ではパターンはワイルドカードのみで、正規表現サポートは顧客のフィードバックが正当化するまで延期されます（[議論](https://gitlab.com/gitlab-org/gitlab/-/work_items/597754#note_3291871207)）。
+- **maven_virtual_repositories**: Maven パッケージの仮想リポジトリ。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **maven_virtual_repository_upstreams**: 仮想リポジトリとそのアップストリームを結合するテーブル。各仮想リポジトリは順序付きのアップストリームリストを持ちます。各エントリは `upstream_repository_id` を介してアップストリームリポジトリを参照し、`repositories(namespace_id, id)` を指します。複合 FK `(namespace_id, upstream_repository_id)` は、アップストリームが同じ namespace 内にあることを強制します — レジストリが namespace にスコープされていることと一貫しています（[ADR-001](001_organizations_as_anchor_point.md)）。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **maven_virtual_upstream_rules**: アップストリームの allow/deny フィルタルールを定義します。各ルールは、このアップストリームを介して解決されるときに含めるか除外するアーティファクトを制御するためのワイルドカードパターンとターゲットフィールドを指定します。MVP ではパターンはワイルドカードのみで、正規表現サポートは顧客のフィードバックが正当化するまで延期されます（[議論](https://gitlab.com/gitlab-org/gitlab/-/work_items/597754#note_3291871207)）。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 
 #### インデックス
 
@@ -977,13 +1029,15 @@ erDiagram
     npm_metadata_files ||--|| blob_storage_attachments : "has one"
 
     npm_repositories {
-        uuid namespace_id FK "NOT NULL"
-        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), references repositories(id, namespace_id)"
+        bigint id PK "DEFAULT nextval('npm_repositories_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
     }
 
     npm_packages {
-        uuid namespace_id FK "NOT NULL"
-        bigint npm_repository_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('npm_packages_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_repository_id FK "NOT NULL, (npm_repository_id, namespace_id) references npm_repositories(id, namespace_id)"
         text name "NOT NULL, limit 255"
         text scope "nullable, limit 255"
         timestamptz last_downloaded_at "nullable, buffered"
@@ -991,24 +1045,30 @@ erDiagram
     }
 
     npm_versions {
-        uuid namespace_id FK "NOT NULL"
-        bigint npm_package_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('npm_versions_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_package_id FK "NOT NULL, (npm_package_id, namespace_id) references npm_packages(id, namespace_id)"
         text version "NOT NULL, limit 255"
         jsonb package_json "NOT NULL"
         timestamptz last_downloaded_at "nullable, buffered"
+        text gitlab_user_id "nullable, opaque string, limit 255"
+        text gitlab_project_id "nullable, opaque string, limit 255"
+        bytea gitlab_git_commit_sha "nullable"
         timestamptz soft_deleted_at "nullable"
     }
 
     npm_tags {
-        uuid namespace_id FK "NOT NULL"
-        bigint npm_package_id FK "NOT NULL"
-        bigint npm_version_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('npm_tags_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_package_id FK "NOT NULL, (npm_package_id, namespace_id) references npm_packages(id, namespace_id)"
+        bigint npm_version_id FK "NOT NULL, (npm_version_id, namespace_id) references npm_versions(id, namespace_id)"
         text name "NOT NULL, limit 255"
     }
 
     npm_files {
-        uuid namespace_id FK "NOT NULL"
-        bigint npm_version_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('npm_files_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_version_id FK "NOT NULL, (npm_version_id, namespace_id) references npm_versions(id, namespace_id)"
         text file_name "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
         bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
@@ -1016,20 +1076,21 @@ erDiagram
     }
 
     npm_metadata_files {
-        uuid namespace_id FK "NOT NULL"
-        bigint npm_package_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('npm_metadata_files_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_package_id FK "NOT NULL, (npm_package_id, namespace_id) references npm_packages(id, namespace_id)"
         smallint kind "NOT NULL, 0=full, 1=dist_tags"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
         bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
     }
 ```
 
-- **npm_repositories**: 複数のパッケージのコンテナ。各リポジトリはオプションのスコープを持つ複数のパッケージをホストできます。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。
-- **npm_packages**: npm パッケージを表します。`name` カラムはスコープを含む完全なパッケージ名を保存します（例: `@myorg/mypackage` または `lodash`）。`last_downloaded_at` はパッケージのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。
-- **npm_versions**: 埋め込まれた package.json メタデータを持つ npm パッケージの個々のバージョンを格納します。`last_downloaded_at` はバージョンのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。
-- **npm_tags**: 特定のパッケージバージョンを指す [NPM distribution tag](https://docs.npmjs.com/cli/v11/commands/npm-dist-tag)（例: `latest`、`next`、`beta`）を提供します。
-- **npm_files**: npm パッケージバージョンのファイルを表します。これらは主に tarball アーカイブです。レジストリがパフォーマンスのボトルネックを改善するために使用する補助ファイルでもありえます。
-- **npm_metadata_files**: npm パッケージの事前計算されたメタデータファイルを、`kind` あたり 1 つずつ保存します。`kind` カラムはメタデータバリアントを区別します: `full`（0）はすべてのバージョンを含む完全な packument を含み、`dist_tags`（1）は distribution tag マッピングのみを含みます。適切なファイルがクライアントリクエストに基づいて npm メタデータエンドポイントで提供されます。メタデータはパッケージのすべてのバージョンにまたがるため、`npm_versions` ではなく `npm_packages` にリンクされます。メタデータファイルは、バージョンが公開または非公開になった後に非同期に生成されます。
+- **npm_repositories**: 複数のパッケージのコンテナ。各リポジトリはオプションのスコープを持つ複数のパッケージをホストできます。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **npm_packages**: npm パッケージを表します。`name` カラムはスコープを含む完全なパッケージ名を保存します（例: `@myorg/mypackage` または `lodash`）。`last_downloaded_at` はパッケージのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **npm_versions**: 埋め込まれた package.json メタデータを持つ npm パッケージの個々のバージョンを格納します。`last_downloaded_at` はバージョンのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。`gitlab_user_id`、`gitlab_project_id`、`gitlab_git_commit_sha` は、このバージョンを公開した GitLab ユーザーと公開の背後にある CI コンテキスト（プロジェクト、コミット）を記録します。[`container_manifests`](#container-repositories) の同等カラムと同じ形と根拠です。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **npm_tags**: 特定のパッケージバージョンを指す [NPM distribution tag](https://docs.npmjs.com/cli/v11/commands/npm-dist-tag)（例: `latest`、`next`、`beta`）を提供します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **npm_files**: npm パッケージバージョンのファイルを表します。これらは主に tarball アーカイブです。レジストリがパフォーマンスのボトルネックを改善するために使用する補助ファイルでもありえます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **npm_metadata_files**: npm パッケージの事前計算されたメタデータファイルを、`kind` あたり 1 つずつ保存します。`kind` カラムはメタデータバリアントを区別します: `full`（0）はすべてのバージョンを含む完全な packument を含み、`dist_tags`（1）は distribution tag マッピングのみを含みます。適切なファイルがクライアントリクエストに基づいて npm メタデータエンドポイントで提供されます。メタデータはパッケージのすべてのバージョンにまたがるため、`npm_versions` ではなく `npm_packages` にリンクされます。メタデータファイルは、バージョンが公開または非公開になった後に非同期に生成されます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **blob_storage_attachments**: 詳細は [Blob storage](#blob-storage) セクションを参照してください。
 
 [Maven](#maven-repositories) と同様に、まったく同じ理由でパッケージ名とバージョンは 2 つの異なるテーブルに保存されます。
@@ -1118,8 +1179,9 @@ erDiagram
     npm_remote_files ||--|| blob_storage_attachments : "has one"
 
     npm_remote_repositories {
-        uuid namespace_id FK "NOT NULL"
-        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), references repositories(id, namespace_id)"
+        bigint id PK "DEFAULT nextval('npm_remote_repositories_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
         text url "NOT NULL, limit 1024"
         bytea encrypted_auth_token
         smallint cache_validity_hours "NOT NULL, DEFAULT 24"
@@ -1129,8 +1191,9 @@ erDiagram
     }
 
     npm_remote_packages {
-        uuid namespace_id FK "NOT NULL"
-        bigint npm_remote_repository_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('npm_remote_packages_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_remote_repository_id FK "NOT NULL, (npm_remote_repository_id, namespace_id) references npm_remote_repositories(id, namespace_id)"
         text name "NOT NULL, limit 255"
         text scope "nullable, limit 255"
         timestamptz last_downloaded_at "nullable, buffered"
@@ -1138,8 +1201,9 @@ erDiagram
     }
 
     npm_remote_versions {
-        uuid namespace_id FK "NOT NULL"
-        bigint npm_remote_package_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('npm_remote_versions_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_remote_package_id FK "NOT NULL, (npm_remote_package_id, namespace_id) references npm_remote_packages(id, namespace_id)"
         text version "NOT NULL, limit 255"
         jsonb package_json "NOT NULL"
         timestamptz last_downloaded_at "nullable, buffered"
@@ -1147,16 +1211,18 @@ erDiagram
     }
 
     npm_remote_tags {
-        uuid namespace_id FK "NOT NULL"
-        bigint npm_remote_package_id FK "NOT NULL"
-        bigint npm_remote_version_id FK "NOT NULL"
-        bigint npm_remote_metadata_file_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('npm_remote_tags_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_remote_package_id FK "NOT NULL, (npm_remote_package_id, namespace_id) references npm_remote_packages(id, namespace_id)"
+        bigint npm_remote_version_id FK "NOT NULL, (npm_remote_version_id, namespace_id) references npm_remote_versions(id, namespace_id)"
+        bigint npm_remote_metadata_file_id FK "NOT NULL, (npm_remote_metadata_file_id, namespace_id) references npm_remote_metadata_files(id, namespace_id)"
         text name "NOT NULL, limit 255"
     }
 
     npm_remote_metadata_files {
-        uuid namespace_id FK "NOT NULL"
-        bigint npm_remote_package_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('npm_remote_metadata_files_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_remote_package_id FK "NOT NULL, (npm_remote_package_id, namespace_id) references npm_remote_packages(id, namespace_id)"
         smallint kind "NOT NULL, 0=full, 1=dist_tags"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
         bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
@@ -1165,8 +1231,9 @@ erDiagram
     }
 
     npm_remote_files {
-        uuid namespace_id FK "NOT NULL"
-        bigint npm_remote_version_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('npm_remote_files_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_remote_version_id FK "NOT NULL, (npm_remote_version_id, namespace_id) references npm_remote_versions(id, namespace_id)"
         text file_name "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
         bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
@@ -1246,29 +1313,32 @@ erDiagram
     npm_virtual_repository_upstreams ||--o{ npm_virtual_upstream_rules : "has many"
 
     npm_virtual_repositories {
-        uuid namespace_id FK "NOT NULL"
-        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), references repositories(id, namespace_id)"
+        bigint id PK "DEFAULT nextval('npm_virtual_repositories_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
     }
 
     npm_virtual_repository_upstreams {
-        uuid namespace_id FK "NOT NULL"
-        bigint npm_virtual_repository_id FK "NOT NULL"
-        bigint upstream_repository_id FK "NOT NULL, (namespace_id, upstream_repository_id) references repositories(namespace_id, id)"
+        bigint id PK "DEFAULT nextval('npm_virtual_repository_upstreams_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_virtual_repository_id FK "NOT NULL, (npm_virtual_repository_id, namespace_id) references npm_virtual_repositories(id, namespace_id)"
+        bigint upstream_repository_id FK "NOT NULL, (upstream_repository_id, namespace_id) references repositories(id, namespace_id)"
         int position "NOT NULL"
     }
 
     npm_virtual_upstream_rules {
-        uuid namespace_id FK "NOT NULL"
-        bigint npm_virtual_repository_upstream_id FK "NOT NULL"
+        bigint id PK "DEFAULT nextval('npm_virtual_upstream_rules_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_virtual_repository_upstream_id FK "NOT NULL, (npm_virtual_repository_upstream_id, namespace_id) references npm_virtual_repository_upstreams(id, namespace_id)"
         smallint rule_type "NOT NULL, 0=allow, 1=deny"
         text pattern "NOT NULL, limit 255"
         smallint target_field "NOT NULL, 0=full_package_name, 1=scope, 2=version"
     }
 ```
 
-- **npm_virtual_repositories**: npm パッケージの仮想リポジトリ。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。
-- **npm_virtual_repository_upstreams**: 仮想リポジトリとそのアップストリームを結合するテーブル。各仮想リポジトリは順序付きのアップストリームリストを持ちます。各エントリは `upstream_repository_id` を介してアップストリームリポジトリを参照し、`repositories(namespace_id, id)` を指します。複合 FK `(namespace_id, upstream_repository_id)` は、アップストリームが同じ namespace 内にあることを強制します — レジストリが namespace にスコープされていることと一貫しています（[ADR-001](001_organizations_as_anchor_point.md)）。
-- **npm_virtual_upstream_rules**: アップストリームの allow/deny フィルタルールを定義します。各ルールは、このアップストリームを介して解決されるときに含めるか除外するアーティファクトを制御するためのワイルドカードパターンとターゲットフィールドを指定します。MVP ではパターンはワイルドカードのみで、正規表現サポートは顧客のフィードバックが正当化するまで延期されます（[議論](https://gitlab.com/gitlab-org/gitlab/-/work_items/597754#note_3291871207)）。
+- **npm_virtual_repositories**: npm パッケージの仮想リポジトリ。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **npm_virtual_repository_upstreams**: 仮想リポジトリとそのアップストリームを結合するテーブル。各仮想リポジトリは順序付きのアップストリームリストを持ちます。各エントリは `upstream_repository_id` を介してアップストリームリポジトリを参照し、`repositories(namespace_id, id)` を指します。複合 FK `(namespace_id, upstream_repository_id)` は、アップストリームが同じ namespace 内にあることを強制します — レジストリが namespace にスコープされていることと一貫しています（[ADR-001](001_organizations_as_anchor_point.md)）。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **npm_virtual_upstream_rules**: アップストリームの allow/deny フィルタルールを定義します。各ルールは、このアップストリームを介して解決されるときに含めるか除外するアーティファクトを制御するためのワイルドカードパターンとターゲットフィールドを指定します。MVP ではパターンはワイルドカードのみで、正規表現サポートは顧客のフィードバックが正当化するまで延期されます（[議論](https://gitlab.com/gitlab-org/gitlab/-/work_items/597754#note_3291871207)）。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 
 #### インデックス
 
@@ -1327,11 +1397,12 @@ erDiagram
         text object_storage_key "NOT NULL, limit 1024"
         text content_type "NOT NULL, limit 255"
         bigint size "NOT NULL"
+        bytea metadata_sha1 "nullable, CHECK octet_length = 20"
     }
 ```
 
 - **blob_storage_attachments**: 指定された blob の使用を追跡します。各クライアント（Container、NPM、Maven リポジトリテーブル）は、blob レコードを使用（作成または再利用）したいときに、ここにレコードを作成する必要があります。各使用は、ここに 1 つのレコードを _必ず_ 持つ必要があります。クライアントは、参照しているアーティファクトレコード（ファイル、blob、キャッシュエントリ）を削除するときに、アタッチメントレコードを削除する責任があります。両方の削除は、孤立アタッチメントが blob クリーンアップをブロックすることを防ぐため、同じトランザクション内で行われる必要があります。クライアントテーブルから `blob_storage_attachments` への外部キーは参照整合性を強制します（ダングリング参照を防ぐ）が、`ON DELETE CASCADE` は使用しません — クリーンアップはアプリケーション管理です。例えば、まったく同じファイルを持つ 2 つの Maven パッケージは、それぞれが異なるアタッチメントレコードを参照する必要があり、それらは同じ blob レコードを参照します。`namespace_id` カラムは Cells シャーディングに必要です。`sha256` カラムは、パーティションプルーニングされた結合（[パーティショニング戦略](#blob-storage-partitioning-strategy) を参照）を可能にするため、参照される `blob_storage_blobs` レコードから伝播されます。プライマリキーは従来の `(id)` ではなく `(id, namespace_id, sha256)` です: `sha256` はハッシュパーティショニングされたテーブルのすべてのユニーク制約の一部にパーティションキーを含めることを PostgreSQL が強制するため必要で、`namespace_id` はデプロイメント横断で PK をグローバルに一意に保つため必要です。ローカルな `bigint id` は単一の Artifact Registry データベース内でのみ一意（[Namespace ID type](#namespace-id-type) を参照）なため、デプロイメント横断 namespace 移行（[ADR-022](022_namespace_decoupling.md)）では、同じ `(id, sha256)` ペアがターゲットデータベースにすでに存在する可能性があります。UUIDv7 `namespace_id` を PK に追加することで、構造的にこの衝突を排除します。クライアントテーブルは `(namespace_id, blob_storage_attachment_id, blob_sha256)` を介してこの複合 PK を参照します。
-- **blob_storage_blobs**: このテーブルは、オブジェクトストレージに存在するすべてのファイルコンテンツ（blob として）をリストします。オブジェクトストレージキーは完全に専用のカラムに保存され、blob が使用されるたびに計算されることはありません。`sha256` は基本的なコンテンツアドレス可能な識別子で、常に存在します（`NOT NULL`）。`namespace_id` カラムは重複排除を Organization にスコープします。フォーマット固有のチェックサム（例: Maven の SHA1 と MD5）は、このテーブルではなくフォーマット固有のファイルテーブルに保存され、このテーブルをフォーマット非依存に保ちます。プライマリキーは上記の `blob_storage_attachments` と同じ理由で `(id, namespace_id, sha256)` です: `sha256` は PostgreSQL のパーティションキー包含ルールを満たし、UUIDv7 `namespace_id` はデプロイメント横断で PK をグローバルに一意に保ち、サロゲート `bigint id` はスキーマ内の他のすべてのテーブルと一貫した行識別子の形を保ちます。Organization ごとの重複排除は別の `UNIQUE (namespace_id, sha256)` 制約によって強制され、これはコンテンツハッシュによる検索インデックスとしても機能し、このテーブルへのすべての外部キーのターゲットとなります。FK は PK を直接参照しません: `(namespace_id, sha256)` はすでに行を一意に識別し、UUIDv7 `namespace_id` を介してそれ自体でグローバルに一意であるため、呼び出し元はサロゲート `id` を持たずに自然キーを介して結合します。
+- **blob_storage_blobs**: このテーブルは、オブジェクトストレージに存在するすべてのファイルコンテンツ（blob として）をリストします。オブジェクトストレージキーは完全に専用のカラムに保存され、blob が使用されるたびに計算されることはありません。`sha256` は基本的なコンテンツアドレス可能な識別子で、常に存在します（`NOT NULL`）。`namespace_id` カラムは重複排除を Organization にスコープします。フォーマット固有のチェックサム（例: Maven の SHA1 と MD5）は、このテーブルではなくフォーマット固有のファイルテーブルに保存され、このテーブルをフォーマット非依存に保ちます。`metadata_sha1` カラムは、そのフォーマット非依存ルールに対する意図的でスコープされた例外です: コミット時に blob にアタッチされる MVP のユーザーメタデータ許可リストの SHA-1 をミラーリングし、SHA-1 が提供されなかった場合は `NULL` です。これが（フォーマット固有のテーブルではなく）`blob_storage_blobs` にあるのは、ストレージ層の blob-info ルックアップが、プッシュとプルのホットパスで契約上 1 回の DB ラウンドトリップであるためです。DB ミラーなしでユーザーメタデータを表面化すると、ダイジェストごとのオブジェクトストレージ HEAD ファンアウトか部分的な API 表面化を強いることになります。同じ値はコミット時にバックエンドネイティブな `x-amz-meta-checksum-sha1` / `x-goog-meta-checksum-sha1` ヘッダーとしてストレージオブジェクトにアタッチされ、行は不変なので、DB とストレージオブジェクトのコピーがずれることはありません。将来の許可リスト追加は、改訂によってそれぞれの nullable カラムを追加します。完全な根拠については [Artifact Registry S06 ストレージ層仕様](https://gitlab.com/gitlab-org/ops/artifact-registry/-/blob/main/docs/specs/S06-storage-layer.md) を参照してください。プライマリキーは上記の `blob_storage_attachments` と同じ理由で `(id, namespace_id, sha256)` です: `sha256` は PostgreSQL のパーティションキー包含ルールを満たし、UUIDv7 `namespace_id` はデプロイメント横断で PK をグローバルに一意に保ち、サロゲート `bigint id` はスキーマ内の他のすべてのテーブルと一貫した行識別子の形を保ちます。Organization ごとの重複排除は別の `UNIQUE (namespace_id, sha256)` 制約によって強制され、これはコンテンツハッシュによる検索インデックスとしても機能し、このテーブルへのすべての外部キーのターゲットとなります。FK は PK を直接参照しません: `(namespace_id, sha256)` はすでに行を一意に識別し、UUIDv7 `namespace_id` を介してそれ自体でグローバルに一意であるため、呼び出し元はサロゲート `id` を持たずに自然キーを介して結合します。
 
 Blob ストレージテーブルは、Artifact Registry の外でも再利用可能になるよう設計されています。これにより、他の機能が同じ重複排除とストレージインフラを活用できます。
 
@@ -1347,9 +1418,9 @@ erDiagram
     repositories ||--o{ upload_sessions : "has many"
 
     upload_sessions {
-        bigint id "DEFAULT nextval('upload_sessions_id_seq'), composite PK with namespace_id"
-        uuid namespace_id FK "NOT NULL"
-        bigint repository_id FK "NOT NULL, (namespace_id, repository_id) references repositories(namespace_id, id)"
+        bigint id PK "DEFAULT nextval('upload_sessions_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, (repository_id, namespace_id) references repositories(id, namespace_id)"
         uuid upload_id "NOT NULL"
         bytea sha256 "nullable, set after blob move to CAS, matches blob_storage_blobs.sha256"
         bigint size_bytes "NOT NULL, DEFAULT 0, bytes uploaded so far"
@@ -1408,6 +1479,30 @@ erDiagram
   DELETE FROM upload_sessions
   WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND id = 789;
   ```
+
+### パーティショニング不変条件 {#partitioning-invariant}
+
+**`namespace_id` を含むすべてのテーブルはパーティショニングされます。** デフォルトのパーティションキーは `HASH(namespace_id)` で 64 パーティションです。文書化された理由がある場合、特定のテーブルは異なるキーを使うことがあります（`HASH(sha256)` の例外については [Blob ストレージのパーティショニング戦略](#blob-storage-partitioning-strategy) を参照）。`namespace_id` を含まないテーブルはパーティショニングされません。
+
+このルールは、テーブルごとの判断ではなく、行のプロパティとして述べられます: `namespace_id` がスキーマの一部であれば、そのテーブルはパーティショニングされます。「このテーブルは小さい」「このテーブルは親と 1:1」「後でパーティショニングを追加できる」といった例外はありません。小さなテーブルも大きなテーブルと同じようにパーティショニングされます。均一性が肝心なのです。低ボリュームのテーブルをパーティショニングするコストは無視できます — ほぼ空の子が 64 個、測定可能なランタイムオーバーヘッドなし — 一方で、後からパーティショニングを _追加する_ コストは、本番データが配置された後のテーブル書き換え、プライマリキーの再形成、カスケードする外部キー変更が支配的になります。
+
+#### 機械的な帰結
+
+PostgreSQL は、パーティショニングされたテーブルのすべてのユニーク制約の一部にパーティションキーを含めることを要求します。これがスキーマ全体のプライマリキーと外部キーを形作ります:
+
+- **プライマリキー。** すべてのパーティショニングされたテーブルのプライマリキーは `namespace_id` を吸収します: `(id)` は `(id, namespace_id)` になります。パーティショニングされたテーブルのユニークインデックスは、先頭カラムとして `namespace_id` を含みます。
+- **パーティショニングされたテーブル間の外部キー。** `namespace_id` で複合になります。子は `(<parent>_id, namespace_id)` を介して親の `(id, namespace_id)` を参照します。このパターンは `repositories`、`workspaces`、フォーマット固有のリポジトリテーブル、ミッドティアテーブル、ファイルテーブル、リモートキャッシュテーブルで統一されています。
+- **`namespaces` への外部キー。** 単一カラム。`namespace_id` は `namespaces(id)` を参照します。`namespaces` はプライマリキーが `(id)` のままである唯一のテーブルです — パーティショニングされておらず、自身の `namespace_id` を持ちません（それを _定義_ します）。そのため、子テーブルは複合 PK の小細工なしにそれを参照します。
+
+複合外部キーの形は、namespace 境界をスキーマレベルでエンコードします: パーティショニングされたテーブルの行は、異なる namespace に属する別のパーティショニングされたテーブルの行を参照できません。外部キーがそれを禁じるためです。これは Cells シャーディングキー（`namespace_id`）がアプリケーションレベルで引く境界と同じもので、データベース自体で冗長化されています。
+
+#### 例外
+
+テーブルがパーティショニングされないのは、`namespace_id` を欠く場合のみです。今日の主な例は `namespaces` 自体です: `namespace_id` がわかる前に `slug` から解決されるルーティングルートで、それを定義するため `namespace_id` カラムを持ちません。`namespace_id` を持たない将来のテーブル — 例えば、インスタンス全体の設定、グローバルな cron 状態、デプロイメントスコープのライフサイクルメタデータ — は、このデフォルトを自動的に継承し、パーティショニングされません。
+
+例外の述語は構造的です: 行に `namespace_id` が存在するか否か。これは行数、書き込み頻度、現在のアクセスパターンに依存せず、それらはすべてシステムの進化とともに変化しうるものです。
+
+シングルテナントデプロイメント（Dedicated、Self-Managed、シングル Organization Cells）も例外ではありません: それらは 64 個すべてのパーティションを保持し、1 つが埋まり 63 個が空になります。空のパーティションはこの規模では無視できます（それぞれ数 KB のカタログとインデックスのオーバーヘッド）。パーティションプルーニングは影響を受けず、デプロイメント間のスキーマの均一性はシングルテナントのバリアントを切り出すよりも価値があります。「1 つのパーティションがすべてを保持する」という病的なケースは、完全なマルチテナント規模での `blob_storage_blobs` / `blob_storage_attachments` にのみ当てはまり、そのためこれら 2 つのテーブルは代わりに `HASH(sha256)` を使います — [Blob ストレージのパーティショニング戦略](#blob-storage-partitioning-strategy) を参照してください。
 
 ### Blob ストレージのパーティショニング戦略 {#blob-storage-partitioning-strategy}
 
@@ -1535,23 +1630,15 @@ Cells レベルのシャーディング（`namespace_id`）と標準のインデ
 
 `namespace_id` のみで `sha256` なしのクエリ（Organization レベルのストレージアカウンティングなど）はパーティションをプルーニングできず、64 個すべてをスキャンします。これは、遅延インクリメントで更新される専用のロールアップテーブル（GitLab で既に確立されたパターン、例: プロジェクト統計）によって緩和されます。
 
-### キャッシュエントリのパーティショニング戦略
+### フォーマット固有テーブルのパーティショニング戦略
 
-すべてのリモートキャッシュコンテンツテーブル（`container_remote_images`、`container_remote_blobs`、`container_remote_manifests`、`container_remote_manifest_relationships`、`container_remote_tags`、`maven_remote_packages`、`maven_remote_versions`、`maven_remote_files`、`npm_remote_packages`、`npm_remote_versions`、`npm_remote_tags`、`npm_remote_files`、`npm_remote_metadata_files`）は 64 パーティションで `PARTITION BY HASH (namespace_id)` を使用してパーティショニングされます。
+フォーマット固有のテーブル — ローカルコンテンツテーブルとそのリモート対応物 — は、[パーティショニング不変条件](#partitioning-invariant) で確立された `HASH(namespace_id)` のデフォルトに従います。各テーブルの項目がそれを明示的に記録します。ローカルとリモートは同じアクセス形状を共有するため、1 つの戦略を共有します: すべての主要アクセスパターンは `namespace_id` スコープです。テーブルごとの違い（キャッシュ TTL、アップストリームメタデータ）はパーティショニングと直交し、テーブルごとの説明に存在します。
 
-これらのテーブルの主なアクセスパターンはすべて `namespace_id` スコープ（リモートリポジトリとアーティファクト座標による検索、アップストリームのエントリのリスト化）であるため、パーティションキーとして `namespace_id` はすべての操作で単一パーティションプルーニングを保証します。既存のユニーク制約はすでに `namespace_id` を含むため、変更なしに互換性があります。
+このグループに固有の根拠:
 
-各リモートキャッシュコンテンツテーブルのプライマリキーは従来の `(id)` ではなく `(id, namespace_id)` です — PostgreSQL はハッシュパーティショニングされたテーブルのすべてのユニーク制約の一部にパーティションキーを含めることを要求します。行を参照するクライアントテーブルは `(<table>_id, namespace_id)` を介してそれを行います。
-
-`blob_storage_blobs` とは異なり、シングルテナント集中の問題はここでは懸念ではありません — リモートキャッシュコンテンツは（プルされたアップストリームアーティファクトのキャッシュであり、すべてのフォーマットにわたるすべての blob コンテンツではないため）はるかに低いボリュームです。キャッシュテーブルから `blob_storage_blobs` への `(namespace_id, blob_sha256)` を介した結合は、クロスパーティションスキャンなしで動作します: プランナーはキャッシュテーブルパーティションを `namespace_id` を介して、blob パーティションを `sha256` を介して独立にプルーニングします。
-
-### アーティファクトファイルテーブルのパーティショニング戦略
-
-すべてのフォーマット固有のファイルテーブル（`maven_files`、`npm_files`、`container_blobs`、`container_manifests`）は 64 パーティションで `PARTITION BY HASH (namespace_id)` を使用してパーティショニングされます。
-
-ファイルテーブルの主なアクセスパターンはすべて `namespace_id` スコープ（バージョンとファイル名による検索、パッケージまたはイメージのファイルのリスト化）であるため、パーティションキーとして `namespace_id` はすべての操作で単一パーティションプルーニングを保証します。既存のインデックスとユニーク制約はすでに `namespace_id` を含むため、変更なしに互換性があります。特に、読み取りパスショートカット（`*_files` → `blob_storage_blobs` を `(namespace_id, sha256)` 経由で、`blob_storage_attachments` をスキップ） — システムで最もホットなクエリ — はこのパーティショニングから直接恩恵を受けます。
-
-キャッシュエントリと同様に、シングルテナント集中の問題はここでは懸念ではありません — ファイルテーブルは `blob_storage_blobs` のようにすべてのフォーマットにわたって集計されるのではなく、個々のアーティファクトフォーマットにスコープされます。ファイルテーブルから `blob_storage_blobs` への `(namespace_id, blob_sha256)` を介した結合は、クロスパーティションスキャンなしで動作します: プランナーはファイルテーブルパーティションを `namespace_id` を介して、blob パーティションを `sha256` を介して独立にプルーニングします。
+- すべての主要アクセスパターンは `namespace_id` スコープ — リポジトリとアーティファクト座標による検索、パッケージまたはイメージのファイルのリスト化、アップストリームのキャッシュされたエントリのリスト化 — であるため、`HASH(namespace_id)` はすべての操作で単一パーティションプルーニングを与えます。読み取りパスショートカット（`*_files` → `blob_storage_blobs` を `(namespace_id, sha256)` 経由で、`blob_storage_attachments` をスキップ） — システムで最もホットなクエリ — はこのパーティショニングから直接恩恵を受けます。
+- `blob_storage_blobs` を `HASH(sha256)` に駆動するシングルテナント集中の懸念は当てはまりません: 各フォーマット固有のテーブルは 1 つのフォーマット（リモートの場合は 1 つのアップストリーム）にスコープされるため、その namespace ごとのフットプリントは、`blob_storage_blobs` が保持するフォーマット横断の集計の構造的にごく一部です。
+- `(namespace_id, blob_sha256)` を介した `blob_storage_blobs` への結合はクロスパーティションスキャンしません: プランナーはフォーマットテーブルパーティションを `namespace_id` を介して、blob パーティションを `sha256` を介して独立にプルーニングします。
 
 ### パーティション数の根拠
 
@@ -1566,7 +1653,7 @@ Cells レベルのシャーディング（`namespace_id`）と標準のインデ
 - **パーティションワイズ結合**: PostgreSQL は、同じパーティショニングスキーマ（同じキー、同じメソッド、同じ数）を共有するテーブル間の JOIN を、一致するパーティションを直接結合することで最適化できます。すべての `HASH(namespace_id)` テーブルが 64 パーティションを使用するため、この最適化が利用可能です。実際には、クエリにはすでに `namespace_id = ?` が含まれているためプランナーは両側で 1 つのパーティションにプルーニングしますが、パーティションワイズ結合は無料の最適化として残ります。
 - **運用の一貫性**: すべての `namespace_id` パーティショニングされたテーブルで単一のパーティション数を使用することで、指定された `namespace_id` のすべてのテーブルが同じパーティション番号にハッシュされ、メンテナンススクリプト、モニタリング、バルク操作が簡素化されます。
 
-**明示的なパーティショニングがないテーブル**: この初期スキーマでは次のテーブルはパーティショニングされません: `namespaces`、`namespace_statistics`、すべてのライフサイクルテーブル、フォーマット固有のリポジトリテーブル（パーティショニングされた `repositories` 親と 1:1）、ミッドティアテーブル（`container_images`、`container_tags`、`container_manifest_relationships`、`maven_packages`、`maven_versions`、`npm_packages`、`npm_versions`、`npm_tags`、`npm_metadata_files`）。1:1 リポジトリテーブルと namespace レベルの構成テーブルでは、行数は有界でありパーティショニングは不要です。ミッドティアテーブルでは、すべての子テーブル（ファイル、キャッシュエントリ）がすでに `namespace_id` でパーティショニングされ、すべてのインデックスがすでに `namespace_id` を先頭カラムとして含むため、依存テーブルへのスキーマ変更なしに `HASH(namespace_id)` で 64 パーティションのパーティショニングを後で追加できます。本番メトリクスが利用可能になったらこの決定を再検討します。`repository_collections` は、よりシンプルなアクセスパターンと低い書き込み頻度にもかかわらずパーティショニングされます: MVP 後の成長（すべてのフォーマットにわたる namespace あたり複数の Repository collection）はテーブルを数百万行への道に置き、スキーマ調整は最小限（PK が `(id, namespace_id)` になり、既存のユニークインデックスを吸収する）で、他のすべての `namespace_id` パーティショニングされたテーブルとの一貫性がメンテナンスを簡素化し、`repositories` とのパーティションワイズ結合の適格性を保ちます。
+どのテーブルがパーティショニングされるかは、ここで列挙するのではなく、[パーティショニング不変条件](#partitioning-invariant) によって解決されます。
 
 ### バッファされた非同期書き込み {#buffered-and-asynchronous-writes}
 
@@ -1624,7 +1711,7 @@ Cells レベルのシャーディング（`namespace_id`）と標準のインデ
 
 ##### オプション B: 調整された範囲割り当てを伴う Bigint
 
-`namespaces.id` は `bigint GENERATED ALWAYS AS IDENTITY` のままです。各 Artifact Registry デプロイメントには、Topology サービスによって重複しない bigint 範囲（例: デプロイメント X: 1 〜 10^12、デプロイメント Y: 10^12+1 〜 2×10^12）が割り当てられます。Topology サービスは、Artifact Registry がスラグクレームのためにすでに依存しています（[ADR-022](022_namespace_decoupling.md#cells-routing) を参照）。
+`namespaces.id` は `bigint DEFAULT nextval('namespaces_id_seq')` のままです。各 Artifact Registry デプロイメントには、Topology サービスによって重複しない bigint 範囲（例: デプロイメント X: 1 〜 10^12、デプロイメント Y: 10^12+1 〜 2×10^12）が割り当てられます。Topology サービスは、Artifact Registry がスラグクレームのためにすでに依存しています（[ADR-022](022_namespace_decoupling.md#cells-routing) を参照）。
 
 **ポジティブ**:
 

@@ -2,11 +2,11 @@
 title: プロダクトとしての GitLab
 description: "プロダクトとしての GitLab について"
 upstream_path: /handbook/product/categories/gitlab-the-product/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
+lastmod: "2026-05-20T09:32:02-07:00"
+translated_at: "2026-05-23T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-01-23T15:08:44-08:00"
 ---
 
 {{% include "includes/product/product-handbook-links.md" %}}
@@ -147,7 +147,7 @@ GitLab 17.0 から、GitLab.com への破壊的変更がロールアウトされ
 
 ### What's New を使用したユーザーへのアップデートの伝達
 
-What's New は、GitLab.com とセルフマネージド GitLab の機能で、各リリースのハイライトを伝達するために使用されます。各メジャーリリース後、リリースから 3〜10 個のハイライトと、それらの使用を開始するための関連ドキュメントへのリンクを含む [yaml ファイルが公開されます](/handbook/marketing/blog/release-posts/#creating-an-mr-for-whats-new-entries)。
+What's New は、GitLab.com とセルフマネージド GitLab の機能で、各リリースのハイライトを伝達するために使用されます。各メジャーリリース後、リリースから 3〜10 個のハイライトと、それらの使用を開始するための関連ドキュメントへのリンクを含む yaml ファイルが公開されます。
 
 「?」アイコンの上に小さな通知ドットが表示され、ユーザーがメニューの「What's new」をクリックすると、アップデートを含むドロワーがスライドして表示されます。
 
