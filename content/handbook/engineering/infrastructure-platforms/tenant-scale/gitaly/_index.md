@@ -38,7 +38,7 @@ GitLab は Gitaly プロジェクトの主要な利用者ですが、Gitaly は 
 - [純粋な HTTP/2 サーバーで upload-pack トラフィックを処理する](https://docs.gitlab.com/ee/architecture/blueprints/gitaly_handle_upload_pack_in_http2_server/)
 - [Gitaly のトランザクション管理](https://docs.gitlab.com/ee/architecture/blueprints/gitaly_transaction_management/)
 
-## Stable Counterparts
+## ステーブルカウンターパート {#stable-counterparts}
 
 他の機能チームの次のメンバーが、私たちの stable counterpart です:
 

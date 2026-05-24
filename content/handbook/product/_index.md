@@ -55,7 +55,7 @@ lastmod: "2026-05-22T14:47:44+02:00"
 - マージリクエストのリンクを簡単な説明とともに、Slack の `#product`、`#product-leadership`、`#eng-managers`、`#ux-managers` などの関連チャンネルで共有・クロスポストしてください。
 - コミュニケーションに関するさらなるガイダンスについては、[GitLab Communication tips and best practices](/handbook/communication/#top-tips-and-best-practices) を参照してください。
 
-## Product Management
+## プロダクトマネジメント {#product-management}
 
 プロダクトマネジメントとコラボレーションしたい場合は、[How to Engage](/handbook/product/product-management/#how-to-engage-product-managers) ガイドを参照してください。
 
