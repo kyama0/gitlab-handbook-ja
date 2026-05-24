@@ -300,7 +300,7 @@ T シャツサイジングのスケール:
 
 ### リンクとリソース {#links}
 
-{{% include "includes/engineering/software_supply_chain_security-shared-links.md" %}}
+<!-- include omitted: includes/engineering/software_supply_chain_security-shared-links.md (no localized version under content/ja/) -->
 
 - [Milestone retrospectives](https://gitlab.com/gl-retrospectives/sscs/authentication/-/issues/53)
 - 私たちの Slack チャンネル

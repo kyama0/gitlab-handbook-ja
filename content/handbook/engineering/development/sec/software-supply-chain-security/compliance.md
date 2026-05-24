@@ -427,4 +427,4 @@ Compliance EM はまた、[Software Supply Chain Security stage weekly updates](
   - [Product](https://www.youtube.com/playlist?list=PL05JrBw4t0KqWds1BN41IJxLd1AvpZxGu)
   - [Meetings](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7_yBKIYHi8qvCWeU0Q3yH)
 
-{{% include "includes/engineering/software_supply_chain_security-shared-links.md" %}}
+<!-- include omitted: includes/engineering/software_supply_chain_security-shared-links.md (no localized version under content/ja/) -->

@@ -44,7 +44,7 @@ lastmod: "2026-05-22T11:27:49+08:00"
 1. **SaaS インシデント** である場合 -> [GitLab Status Page を確認する](https://status.gitlab.com/)、または[インシデントを報告する](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)
 1. チケットに取り組んでいるエンジニアに追加情報を伝えたい場合 --> Zendesk のチケットに内部ノートを残すか、`#support_gitlab-com` や `#support_self-managed` のような Slack チャンネルでチケットに取り組んでいる Support Engineer に連絡する。
 
-### チケットを STAR する前に
+### チケットを STAR する前に {#before-you-star-a-ticket}
 
 >**重要:** STAR リクエストを送信した後は、Support Manager からの質問に備えて Slack で対応できるようにしてください。
 

@@ -105,7 +105,7 @@ Database Excellence 内の各チームは、バックエンドエンジニアと
 
 ステーブルカウンターパートやレビュアーなどの長期的なリクエストは、ステージレベルで処理されます。これらのリクエストは、[カウンターパートリクエスト](https://gitlab.com/gitlab-org/database-team/team-tasks/-/work_items/new?description_template=counterpart_request)として送信する必要があります。
 
-### トリアージローテーション
+### トリアージローテーション {#triage-rotations}
 
 Database Excellence には[週次のトリアージ issue](https://gitlab.com/gitlab-org/database-team/team-tasks/-/work_items?state=opened&label_name[]=database::triage) があり、この issue は毎週[自動化](https://gitlab.com/gitlab-org/database-team/update_status/-/blob/main/team_triage_issue.rb)によって自動的に作成されます。この自動化は、Database Excellence の入力と継続的なモニタリングを必要とするさまざまなセクション (例: DB の飽和、テーブルサイズのモニタリングなど) を構築します。
 
