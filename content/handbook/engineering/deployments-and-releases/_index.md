@@ -1,11 +1,11 @@
 ---
 title: "デプロイメントとリリース"
 upstream_path: /handbook/engineering/deployments-and-releases/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-28T04:23:44Z"
+upstream_sha: 7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc
+translated_at: "2026-05-25T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-01-12T20:02:52-07:00"
+lastmod: "2026-05-25T12:15:55-06:00"
 ---
 
 ## 概要と用語
@@ -70,7 +70,7 @@ lastmod: "2026-01-12T20:02:52-07:00"
 1. [自動デプロイパッケージダッシュボード](https://dashboards.gitlab.net/d/delivery-auto_deploy_packages/delivery-auto-deploy-packages-information?orgId=1)のウォークスルー
 1. [DORA メトリクス分析ダッシュボード](https://gitlab.com/gitlab-org/gitlab/-/analytics/dashboards/dora_metrics?date_range_option=30d)の `Deployment frequency over time` および `Lead time for changes over time` パネルの月次ビューのウォークスルー — パターンや異常を確認します
 1. [デプロイメント SLO ダッシュボード](https://dashboards.gitlab.net/d/delivery-deployment_slo/delivery3a-deployment-slo)のウォークスルー — デプロイメント SLO とパッケージャーパイプライン期間
-1. [デプロイメントブロッカーダッシュボード](https://dashboards.gitlab.net/d/delivery-deployment_blockers/delivery3a-deployment-blockers?orgId=1&from=now-6d&to=now&timezone=utc&var-PROMETHEUS_DS=mimir-gitlab-ops&var-root_cause=$__all)および先週の[デプロイメントブロッカー](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1496)のウォークスルー
+1. [デプロイメントブロッカーダッシュボード](https://dashboards.gitlab.net/d/delivery-deployment_blockers/delivery3a-deployment-blockers?orgId=1&from=now-6d&to=now&timezone=utc&var-PROMETHEUS_DS=mimir-gitlab-ops&var-root_cause=$__all)および先週の[デプロイメントブロッカー](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/1822)のウォークスルー
 1. 先週の MTTP に基づいてアクションが必要かどうかの確認
 
 ### デプロイメントターゲット
