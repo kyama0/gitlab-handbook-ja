@@ -10570,11 +10570,11 @@
     },
     "content/handbook/engineering/deployments-and-releases/_index.md": {
       "path": "content/handbook/engineering/deployments-and-releases/_index.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-28T04:23:44Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "fda19e1fbe99d060baa7993b36f31bd68307e9fa9a84dc5610320bf8334dbeda",
-      "upstream_committed_at": "2026-01-12T20:02:52-07:00"
+      "upstream_sha": "7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc",
+      "translated_at": "2026-05-25T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "66bcf28c31ce7a3aa82741f8be50d681402f99b6159d1c626588366173b08a54",
+      "upstream_committed_at": "2026-05-25T12:15:55-06:00"
     },
     "content/handbook/engineering/development/_index.md": {
       "path": "content/handbook/engineering/development/_index.md",
@@ -32650,11 +32650,11 @@
     },
     "content/handbook/marketing/sales-development/_index.md": {
       "path": "content/handbook/marketing/sales-development/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc",
+      "translated_at": "2026-05-25T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "4375046fd80a8c8f266ccb79d1af7b13aa4fdc672506c895af6696f56e8961a1",
-      "upstream_committed_at": "2026-05-22T15:06:37+00:00"
+      "input_hash": "02a78783a636538e2d1f2e195ce72e4aff4e2fa37843703874087bcafc875ac6",
+      "upstream_committed_at": "2026-05-25T15:25:51+00:00"
     },
     "content/handbook/marketing/sales-development/tanuki-tech.md": {
       "path": "content/handbook/marketing/sales-development/tanuki-tech.md",

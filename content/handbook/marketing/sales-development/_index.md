@@ -2,11 +2,11 @@
 title: セールス開発
 description: "このページの目的は、セールス開発組織のハンドブック上のホームページとして機能することです。"
 upstream_path: /handbook/marketing/sales-development/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: 7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc
+translated_at: "2026-05-25T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-22T15:06:37+00:00"
+lastmod: "2026-05-25T15:25:51+00:00"
 ---
 
 GitLab のセールス開発組織へようこそ！私たちは、インバウンドとアウトバウンドの両方の戦略を通じて[顧客のための結果](/handbook/values/#results)を促進するために設計されたチームです。私たちの構造は、アウトリーチ活動における効率性、応答性、創造性を最大化するように設計されています。
@@ -915,13 +915,33 @@ Outreach は、Sales および Sales Dev 向けのアウトバウンドエンゲ
 
 追加の Outreach 駆動の自動化（トリガー、ルールセット、シーケンス、レポート）については、メインの [Marketing Operations Outreach ページ](/handbook/marketing/marketing-operations/outreach/)を参照してください。
 
-### Claude
+### Claude Sales Dev BDR/SDR ユーザーガイド
 
-Claude は Anthropic の AI アシスタントです。調査、分析、コンテンツライティング、データ整理を支援できます。Claude は常に正しいわけではないことに注意してください — 間違っているときでも自信ありげに聞こえるので、使用する前に必ず出力を検証してください。
+[Claude Sales Dev BDR/SDR ガイダンススライド](https://docs.google.com/presentation/d/1ZwemeDll2Zz4nwhtIFD64edcQCJ6nFYHv6fOPPqV2Hs/edit)と [Claude Sales Dev 動画ウォークスルー](https://drive.google.com/file/d/1Gn6BjD6TfRNJ1eDGf3rAUJfA4g7LmCnd/view?usp=sharing)を参照してください。
 
-主要なリソース、プロジェクト、プロンプトライブラリへのリンクは、上記の [Claude Sales Dev BDR/SDR User Guide](/handbook/marketing/sales-development/#claude-sales-dev-bdrsdr-user-guide) セクションを参照してください。
+1. [プロンプトライブラリ](https://gitlab.com/gitlab-com/marketing/sales-development/-/issues/1231)
+1. [Business Development Prospecting Project](https://claude.ai/project/92974b9b-f70e-4d74-9288-20c443617e9c)
+1. [Sales Development Personalisation Project](https://claude.ai/project/019a15a5-c78c-71dc-8ce8-f68048ec8e63)
+1. [AMER Calling Analysis Project](https://claude.ai/project/0196022b-a414-7215-9cf0-22ec8e19f9aa)
+1. [EMEA Calling Analysis Project](https://claude.ai/project/01961368-cd7e-7652-a1e3-3d2427367998)
+
+成果やプロンプトは Slack の `#sales_dev_claude_insights` で共有してください。
 
 **制限事項:** Claude は GitLab システムや CRM データに直接アクセスできません。会話間で記憶を保持しません。[オレンジレベルまでのデータの共有が承認されています。](https://internal.gitlab.com/handbook/company/ai-at-gitlab/#5-what-type-of-data-is-okay-to-be-shared-with-claude)
+
+### RelevanceAI
+
+RelevanceAI は私たちの AI ワークフォースプラットフォームで、SDR および BDR チーム向けにリードのリサーチ、優先順位付け、重複排除を自動化するために使用されます。現在、2 つのエージェントが稼働しています。
+
+**Mona** は MQL リサーチアシスタントです。Salesforce でリードが MQL ステータスに到達すると、Mona は企業リサーチ、本人確認、購買シグナルのコンテキストを自動的にまとめ、傾向スコアと推奨される次のアクションをリードレコードに直接書き込みます。
+
+**Doope** は重複排除アシスタントです。一致するリードレコードとコンタクトレコードをチェックし、リサーチフィールドで競合をフラグ付けするとともに、重複レコードへのリンクを提示するため、担当者はシーケンス化の前にそれらを解消できます。
+
+#### RelevanceAI エージェントの使用
+
+**Relevance Priority** および **Relevance Next Action** フィールドは SDR の Z-lead ビューに表示され、個々のレコードを開かずにトリアージして対応できます。リードをクリックすると、本人確認の信頼度、企業コンテキスト、採用シグナル、評価の根拠を含む完全な **Relevance Research** フィールドを確認できます。**Relevance Summary** フィールドは、主要なフラグをコンパクトにまとめたものを提供し、すばやく参照できます。
+
+Mona の出力は担当者の判断の代わりにはなりません — 出発点として扱ってください。リサーチが不完全に見える場合や評価が適切でないと思われる場合は、**Relevance Last Updated** タイムスタンプを確認し、パターンがあれば Slack の `#sales-development-relevance-ai` で提起してください。
 
 ### ZoomInfo
 
