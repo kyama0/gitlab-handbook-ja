@@ -1,7 +1,6 @@
 ---
 title: 'トリガー'
 description: 'Zendesk のトリガーに関するドキュメント'
-date: 2025-12-26
 upstream_path: /handbook/security/customer-support-operations/zendesk/triggers/
 upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
 lastmod: "2026-05-26T12:05:00-05:00"
