@@ -1,13 +1,12 @@
 ---
 title: 'エージェント'
 description: 'Zendesk エージェントに関するドキュメント'
-date: 2026-03-31
 upstream_path: /handbook/security/customer-support-operations/zendesk/users/agents/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
 translated_at: "2026-05-09T21:03:24Z"
 translator: claude
 stale: false
-lastmod: "2026-03-31T14:34:18-05:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドは、自動エージェント同期プロセスや手動エージェント管理を含む、GitLab における Zendesk エージェント管理について説明します。エージェント同期は GitLab のチームデータからエージェントメタデータを自動的に維持し、手動プロセスはプロビジョニングや特殊ケースに使用されます。

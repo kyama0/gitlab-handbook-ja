@@ -1,13 +1,12 @@
 ---
 title: 'サードパーティへの連絡'
 description: 'サードパーティへの連絡に関するドキュメント'
-date: 2026-01-07
 upstream_path: /handbook/security/customer-support-operations/contacting-third-parties/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 私たちが管理するシステムのいくつかはサードパーティが作成したものです。時には、これらのサードパーティアプリケーション固有の問題に遭遇し、社内では完全に解決できないことがあります。そのようなシナリオでは、カスタマーサポートオペレーションチームがアプリケーションのサポートシステムに連絡する必要があります。

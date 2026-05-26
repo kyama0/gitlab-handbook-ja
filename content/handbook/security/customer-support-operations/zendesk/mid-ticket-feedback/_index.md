@@ -1,13 +1,12 @@
 ---
 title: 'チケット途中フィードバック'
 description: 'Zendesk のチケット途中フィードバックに関するドキュメント'
-date: 2026-02-09
 upstream_path: /handbook/security/customer-support-operations/zendesk/mid-ticket-feedback/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
 translated_at: "2026-05-09T23:27:10Z"
 translator: claude
 stale: false
-lastmod: "2026-02-09T11:33:43-06:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、GitLab におけるチケット途中フィードバック (顧客の送信フローと処理ワークフローを含む) について説明します。

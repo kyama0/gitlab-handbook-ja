@@ -1,13 +1,12 @@
 ---
 title: 'サンドボックス'
 description: 'Zendesk サンドボックスに関するドキュメント'
-date: 2025-12-26
 upstream_path: /handbook/security/customer-support-operations/zendesk/sandbox/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
 translated_at: "2026-05-09T22:41:14Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 {{% alert title="技術詳細" color="primary" %}}

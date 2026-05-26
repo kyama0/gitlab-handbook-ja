@@ -1,13 +1,12 @@
 ---
 title: 'Agent Workspace'
 description: 'Zendesk Agent Workspace に関するドキュメント'
-date: 2026-03-16
 upstream_path: /handbook/security/customer-support-operations/zendesk/agent-workspace/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-04-26T18:09:15-05:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 Zendesk Agent Workspace は、エージェントがチケットを受信、管理、応答するために使用する主要なインターフェースです。このページでは、ワークスペース内で利用可能な主要機能とコンポーネントについて説明し、該当する箇所では関連する GitLab または Zendesk のドキュメントを参照します。

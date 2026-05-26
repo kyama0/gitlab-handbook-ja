@@ -1,11 +1,10 @@
 ---
 title: 'システムチェッカー'
 description: 'システムチェッカーに関するドキュメント'
-date: 2026-01-06
 upstream_path: /handbook/security/customer-support-operations/system-checkers/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---

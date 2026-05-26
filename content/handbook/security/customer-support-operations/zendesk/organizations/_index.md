@@ -1,13 +1,12 @@
 ---
 title: '組織'
 description: 'Zendesk 組織に関するドキュメント'
-date: 2025-12-30
 upstream_path: /handbook/security/customer-support-operations/zendesk/organizations/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
 translated_at: "2026-05-09T22:41:14Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、GitLab における Zendesk 組織の管理方法について説明します。管理者は [管理者向けタスク](#administrator-tasks) セクションを確認してください。
