@@ -944,3 +944,260 @@ erDiagram
     AND mrf.file_name = 'maven-metadata.xml'
     AND mrp.soft_deleted_at IS NULL AND mrf.soft_deleted_at IS NULL;
   ```
+
+### Maven Virtual Repositories
+
+```mermaid
+erDiagram
+    repositories ||--|| maven_virtual_repositories : "has one"
+    maven_virtual_repositories ||--o{ maven_virtual_repository_upstreams : "has many"
+    maven_virtual_repository_upstreams ||--|| repositories : "references upstream"
+    maven_virtual_repository_upstreams ||--o{ maven_virtual_upstream_rules : "has many"
+
+    maven_virtual_repositories {
+        bigint id PK "DEFAULT nextval('maven_virtual_repositories_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
+    }
+
+    maven_virtual_repository_upstreams {
+        bigint id PK "DEFAULT nextval('maven_virtual_repository_upstreams_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint maven_virtual_repository_id FK "NOT NULL, (maven_virtual_repository_id, namespace_id) references maven_virtual_repositories(id, namespace_id)"
+        bigint upstream_repository_id FK "NOT NULL, (upstream_repository_id, namespace_id) references repositories(id, namespace_id)"
+        int position "NOT NULL"
+    }
+
+    maven_virtual_upstream_rules {
+        bigint id PK "DEFAULT nextval('maven_virtual_upstream_rules_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint maven_virtual_repository_upstream_id FK "NOT NULL, (maven_virtual_repository_upstream_id, namespace_id) references maven_virtual_repository_upstreams(id, namespace_id)"
+        smallint rule_type "NOT NULL, 0=allow, 1=deny"
+        text pattern "NOT NULL, limit 255"
+        smallint target_field "NOT NULL, 0=group_id, 1=artifact_id, 2=version"
+    }
+```
+
+- **maven_virtual_repositories**: Maven パッケージ用の仮想リポジトリです。名前、可視性、フォーマット横断クエリのために、`repository_id` を介して親の `repositories` テーブルを参照します。`HASH(namespace_id)` で64パーティションにパーティショニングされます。
+- **maven_virtual_repository_upstreams**: 仮想リポジトリとその upstream を結合するテーブルです。各仮想リポジトリは、順序付けられた upstream のリストを持ちます。各エントリは `upstream_repository_id` を介して upstream リポジトリを参照し、これは `repositories(namespace_id, id)` を指します。複合 FK `(namespace_id, upstream_repository_id)` は、upstream が同じ名前空間内にあることを強制します。これは、レジストリが名前空間にスコープされること（[ADR-001](001_organizations_as_anchor_point.md)）と一貫しています。`HASH(namespace_id)` で64パーティションにパーティショニングされます。
+- **maven_virtual_upstream_rules**: upstream に対する許可／拒否のフィルタルールを定義します。各ルールは、この upstream を通じて解決する際にどのアーティファクトを含めるか除外するかを制御するために、ワイルドカードパターンと対象フィールドを指定します。MVP ではパターンはワイルドカードのみで、正規表現のサポートは顧客からのフィードバックが正当化するまで延期されます（[議論](https://gitlab.com/gitlab-org/gitlab/-/work_items/597754#note_3291871207)）。`HASH(namespace_id)` で64パーティションにパーティショニングされます。
+
+#### Indexes
+
+- **`maven_virtual_repositories`**: `(namespace_id, repository_id)` に対する一意インデックス — 親参照によって仮想リポジトリをルックアップします。
+- **`maven_virtual_repository_upstreams`**: `(namespace_id, maven_virtual_repository_id, position) DEFERRABLE INITIALLY DEFERRED` に対する一意インデックス — 仮想リポジトリの順序付けられた upstream を取得します。トランザクション内での並べ替えを可能にするために遅延可能です。`(namespace_id, maven_virtual_repository_id, upstream_repository_id)` に対する一意インデックス — 同じ upstream が仮想リポジトリに2回追加されるのを防ぎます。
+- **`maven_virtual_upstream_rules`**: `(namespace_id, maven_virtual_repository_upstream_id)` に対するインデックス — 指定した upstream のすべてのルールを取得します。
+
+#### Query examples
+
+- 仮想リポジトリを作成する
+
+  ```sql
+  -- First create the parent repository
+  INSERT INTO repositories (namespace_id, name, format, kind, visibility)
+  VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', 'my-virtual-repo', 1, 1, 1)
+  RETURNING id;
+  -- Link the repository to a repository collection
+  INSERT INTO repository_collection_repositories (namespace_id, repository_collection_id, repository_id)
+  VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', 456, <returned_id>);
+  -- Then create the format-specific record
+  INSERT INTO maven_virtual_repositories (namespace_id, repository_id)
+  VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', <returned_id>);
+  ```
+
+- 仮想リポジトリを upstream に関連付ける
+
+  ```sql
+  INSERT INTO maven_virtual_repository_upstreams (namespace_id, maven_virtual_repository_id, upstream_repository_id, position)
+  VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', 123, 789, 1);
+  ```
+
+### NPM Repositories
+
+Node のパッケージは基本的に `.tar.gz` ファイルであり、各バージョンが単一のアーカイブです。ただし、node クライアントはより豊富な機能セットを持ち、例えば私たちが扱う必要のある distribution タグの使用などがあります。
+
+```mermaid
+erDiagram
+    repositories ||--|| npm_repositories : "has one"
+    npm_repositories ||--o{ npm_packages : "has many"
+    npm_packages ||--o{ npm_versions : "has many"
+    npm_packages ||--o{ npm_tags : "has many"
+    npm_versions ||--o{ npm_files : "has many"
+    npm_tags ||--|| npm_versions : "has one"
+    npm_packages ||--o{ npm_metadata_files : "has many"
+    npm_files ||--|| blob_storage_attachments : "has one"
+    npm_metadata_files ||--|| blob_storage_attachments : "has one"
+
+    npm_repositories {
+        bigint id PK "DEFAULT nextval('npm_repositories_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
+    }
+
+    npm_packages {
+        bigint id PK "DEFAULT nextval('npm_packages_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_repository_id FK "NOT NULL, (npm_repository_id, namespace_id) references npm_repositories(id, namespace_id)"
+        text name "NOT NULL, limit 255"
+        text scope "nullable, limit 255"
+        integer versions_count "NOT NULL, DEFAULT 0, buffered counter"
+        integer tags_count "NOT NULL, DEFAULT 0, buffered counter"
+        timestamptz last_downloaded_at "nullable, buffered"
+        timestamptz soft_deleted_at "nullable"
+    }
+
+    npm_versions {
+        bigint id PK "DEFAULT nextval('npm_versions_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_package_id FK "NOT NULL, (npm_package_id, namespace_id) references npm_packages(id, namespace_id)"
+        text version "NOT NULL, limit 255"
+        jsonb package_json "NOT NULL"
+        timestamptz last_downloaded_at "nullable, buffered"
+        text gitlab_user_id "nullable, opaque string, limit 255"
+        text gitlab_project_id "nullable, opaque string, limit 255"
+        bytea gitlab_git_commit_sha "nullable"
+        timestamptz soft_deleted_at "nullable"
+    }
+
+    npm_tags {
+        bigint id PK "DEFAULT nextval('npm_tags_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_package_id FK "NOT NULL, (npm_package_id, namespace_id) references npm_packages(id, namespace_id)"
+        bigint npm_version_id FK "NOT NULL, (npm_version_id, namespace_id) references npm_versions(id, namespace_id)"
+        text name "NOT NULL, limit 255"
+    }
+
+    npm_files {
+        bigint id PK "DEFAULT nextval('npm_files_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_version_id FK "NOT NULL, (npm_version_id, namespace_id) references npm_versions(id, namespace_id)"
+        text file_name "NOT NULL, limit 255"
+        bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
+        bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
+        timestamptz soft_deleted_at "nullable"
+    }
+
+    npm_metadata_files {
+        bigint id PK "DEFAULT nextval('npm_metadata_files_id_seq'), part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        bigint npm_package_id FK "NOT NULL, (npm_package_id, namespace_id) references npm_packages(id, namespace_id)"
+        smallint kind "NOT NULL, 0=full, 1=dist_tags, 2=abbreviated"
+        bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
+        bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
+        timestamptz expires_at "NOT NULL"
+    }
+```
+
+- **npm_repositories**: 複数のパッケージのコンテナです。各リポジトリは、オプションのスコープを持つ複数のパッケージをホストできます。名前、可視性、フォーマット横断クエリのために、`repository_id` を介して親の `repositories` テーブルを参照します。`HASH(namespace_id)` で64パーティションにパーティショニングされます。
+- **npm_packages**: npm パッケージを表します。`name` カラムは、スコープを含む完全なパッケージ名（例: `@myorg/mypackage` または `lodash`）を保存します。`versions_count` は、ソフト削除済みのものを含むパッケージの `npm_versions` 行を数え、ガベージコレクションが行をハード削除したときにのみデクリメントします。`tags_count` はその `npm_tags` 行を数えます（`npm_tags` にはソフト削除カラムがないため、この問題は生じません）。どちらも [ADR-004](004_data_and_application_limits.md#entity-count-limits) のパッケージごとのエンティティ数制限（25,000 バージョン、1,000 タグ）を強制するバッファカウンターであり、[バッファ書き込み／非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。ソフト削除済みのバージョンを含めることは、`namespace_statistics.deduplicated_size_bytes` の扱いをミラーし、不正利用の経路を塞ぎます。すなわち、ソフト削除済みの行を上限から除外できる顧客が、繰り返しソフト削除して再公開することで、すべてのソフト削除済み行が依然としてストレージを占有し復元可能であるにもかかわらず、25,000 バージョンの制限を無期限に下回り続けられてしまうのを防ぎます。両方の上限が 32 ビットの上限を十分に下回るため、（`bigint` ではなく）`integer` 型です。他の場所の無制限のカウンター（`downloads_count`、`size_bytes`）は無制限に増加するため `bigint` が必要です。`last_downloaded_at` はパッケージのいずれかのファイルが最後にダウンロードされた時刻を記録し、[バッファ書き込み／非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。`HASH(namespace_id)` で64パーティションにパーティショニングされます。
+- **npm_versions**: package.json メタデータを埋め込んだ npm パッケージの個々のバージョンを保存します。`last_downloaded_at` はバージョンのいずれかのファイルが最後にダウンロードされた時刻を記録し、[バッファ書き込み／非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。`gitlab_user_id`、`gitlab_project_id`、`gitlab_git_commit_sha` は、どの GitLab ユーザーがこのバージョンを公開したか、および公開の背後にある CI コンテキスト（プロジェクト、コミット）を記録し、[`container_manifests`](#container-repositories) の同等のカラムと同じ形状・根拠を持ちます。`HASH(namespace_id)` で64パーティションにパーティショニングされます。
+- **npm_tags**: 特定のパッケージバージョンを指す [NPM distribution タグ](https://docs.npmjs.com/cli/v11/commands/npm-dist-tag)（例: `latest`、`next`、`beta`）を提供します。`HASH(namespace_id)` で64パーティションにパーティショニングされます。
+- **npm_files**: npm パッケージバージョンのファイルを表します。これらは主に tarball アーカイブです。レジストリがパフォーマンスのボトルネックを改善するために使用する補助ファイルである場合もあります。`HASH(namespace_id)` で64パーティションにパーティショニングされます。
+- **npm_metadata_files**: npm パッケージの事前計算されたメタデータファイルを `kind` ごとに1つ保存します。`kind` カラムはメタデータのバリアントを区別します。`full`（0）はすべてのバージョンを含む完全な packument を含み、`dist_tags`（1）は distribution タグのマッピングのみを含み、`abbreviated`（2）はリクエストが `Accept: application/vnd.npm.install-v1+json` を伴う場合に提供されるインストール専用の射影です。クライアントのリクエストに基づいて、npm メタデータエンドポイントで適切なファイルが提供されます。メタデータはパッケージのすべてのバージョンにまたがるため、（`npm_versions` ではなく）`npm_packages` にリンクされています。メタデータファイルは、バージョンが公開または公開解除された後に非同期で生成されます。`expires_at` カラムはキャッシュの鮮度を駆動します。書き込み側（公開、非推奨化、公開解除、dist-tag の変更）は、データ書き込みと同じトランザクションで、対象のパッケージのすべての行に対して `expires_at = NOW()` を設定することでキャッシュを強制的に期限切れにします。再構築ジョブは、新しく生成された blob を持つ行をアップサートする際に `expires_at = NOW() + npm.packument_cache_ttl` を設定します。読み取り側は `expires_at > NOW()` でフィルタし、ミスの場合はインラインビルドパスにフォールスルーするため、期限切れの行がクライアントに提供されることはありません。このカラムはハード削除の期限ではなく、キャッシュの鮮度シグナルです。強制的な期限切れは blob とアタッチメントをそのまま残すため、すでにそれらに対して解決中のレスポンスは、再構築ジョブがアタッチメントを入れ替えるまで正常に完了します。`HASH(namespace_id)` で64パーティションにパーティショニングされます。
+- **blob_storage_attachments**: 詳細は [blob ストレージ](#blob-storage) セクションを参照してください。
+
+[Maven](#maven-repositories) と同様に、まったく同じ理由でパッケージ名とバージョンは2つの異なるテーブルに保存されます。
+
+#### Indexes
+
+- **`npm_repositories`**: `(namespace_id, repository_id)` に対する一意インデックス — 親リポジトリ参照によって NPM リポジトリをルックアップします。
+- **`npm_packages`**: `(namespace_id, npm_repository_id, name) WHERE soft_deleted_at IS NULL` に対する一意インデックス — リポジトリ内で名前によってパッケージをルックアップします。部分条件により、ソフト削除後に同じ名前のパッケージを再作成できます。`(namespace_id, npm_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。リポジトリ内のすべてのパッケージをスキャンして行ごとにフィルタするのではなく、範囲スキャンで期限切れのパッケージのみを返します。`NULLS FIRST` は、一度もダウンロードされていないパッケージを最も古い行とグループ化するため、両方が同じ範囲スキャンで返されます。
+- **`npm_versions`**: `(namespace_id, npm_package_id, version) WHERE soft_deleted_at IS NULL` に対する一意インデックス — パッケージ内で特定のバージョンをルックアップします。部分条件により、ソフト削除後に同じ識別子のバージョンを再作成できます。`(namespace_id, npm_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルールの評価をサポートし、`npm_packages` と同じ範囲スキャン戦略を使用します。
+- **`npm_tags`**: `(namespace_id, npm_package_id, name)` に対する一意インデックス — パッケージ内で名前によって distribution タグをルックアップします。`(namespace_id, npm_version_id)` に対するインデックス — 指定したバージョンを指すすべてのタグを見つけます。
+- **`npm_files`**: `(namespace_id, npm_version_id, file_name) WHERE soft_deleted_at IS NULL` に対する一意インデックス — ファイル名はバージョン内で一意でなければなりません。部分条件により、ソフト削除後に同じ名前のファイルを再作成できます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルをルックアップします。
+- **`npm_metadata_files`**: `(namespace_id, npm_package_id, kind)` に対する一意インデックス — パッケージごと・kind ごとに1つのメタデータファイルです。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってメタデータファイルをルックアップします。
+
+#### Query examples
+
+- 指定したリポジトリ ID とパッケージ名のすべてのバージョンを取得する
+
+  ```sql
+  SELECT nv.*
+  FROM npm_versions nv
+  JOIN npm_packages np
+    ON nv.npm_package_id = np.id AND nv.namespace_id = np.namespace_id
+  WHERE np.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND np.npm_repository_id = 123 AND np.name = '@myorg/mypackage'
+    AND np.soft_deleted_at IS NULL AND nv.soft_deleted_at IS NULL;
+  ```
+
+- 公開パスの制限事前チェックのために、パッケージごとのエンティティ数カウンターを読み取る（参考値。`npm_versions` と `npm_tags` の部分一意インデックスが、競合のない権威あるガードです）。
+
+  ```sql
+  SELECT versions_count, tags_count
+  FROM npm_packages
+  WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND id = 456 AND soft_deleted_at IS NULL;
+  ```
+
+- 指定したバージョン ID とファイル名のファイルを取得する
+
+  ```sql
+  SELECT nf.*
+  FROM npm_files nf
+  WHERE nf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND nf.npm_version_id = 456 AND nf.file_name = 'mypackage-1.0.0.tgz'
+    AND nf.soft_deleted_at IS NULL;
+  ```
+
+- パッケージの事前計算された完全なメタデータファイルを取得する（npm メタデータエンドポイントで提供）
+
+  ```sql
+  SELECT bsb.object_storage_key, bsb.size, bsb.content_type
+  FROM npm_metadata_files nmf
+  JOIN blob_storage_blobs bsb ON bsb.namespace_id = nmf.namespace_id AND bsb.sha256 = nmf.blob_sha256
+  WHERE nmf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND nmf.npm_package_id = 456 AND nmf.kind = 0
+    AND nmf.expires_at > NOW();
+  ```
+
+  読み取りは `expires_at > NOW()` でフィルタします。ミス（行がない、または書き込み側が
+  強制的に期限切れにしたか TTL が経過したために `expires_at <= NOW()`）はインラインビルドパスに
+  フォールスルーします。後述のキャッシュ再構築ジョブが新鮮な行を復元します。
+
+- 書き込み時に packument キャッシュを強制的に期限切れにする
+
+  公開、非推奨化、公開解除、dist-tag の変更は、データ書き込みと同じトランザクションで、対象のパッケージの
+  すべての kind に対して `expires_at` を `NOW()` に切り替えることでキャッシュを無効化します。blob と
+  アタッチメントはそのまま残されるため、すでに処理中のレスポンスは、再構築ジョブがアタッチメントを
+  入れ替えるまで既存の blob に対して解決し続けます。
+
+  ```sql
+  UPDATE npm_metadata_files
+  SET expires_at = NOW()
+  WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND npm_package_id = 456;
+  ```
+
+  初回公開の場合はまだ行が存在しないため、`UPDATE` は0行に影響します。再構築
+  ジョブが初回実行時にキャッシュ行を挿入します。
+
+- バージョンの公開または公開解除の後にメタデータファイルをアップサートする
+
+  キャッシュ再構築ジョブは、パッケージの kind ごとに1回これを実行します。孤立したアタッチメントが
+  blob のガベージコレクションをブロックするのを防ぐため、古いアタッチメントは同じトランザクションで
+  削除しなければなりません（[クリーンアップタスク](#cleanup-tasks) を参照）。
+
+  ```sql
+  -- The new blob and attachment (id=789) are created earlier in the same transaction.
+  -- The interval below mirrors the configured `npm.packument_cache_ttl` (default 7 days).
+  WITH old AS (
+    SELECT blob_storage_attachment_id, blob_sha256
+    FROM npm_metadata_files
+    WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND npm_package_id = 456 AND kind = 0
+  ),
+  upsert AS (
+    INSERT INTO npm_metadata_files (namespace_id, npm_package_id, kind, blob_storage_attachment_id, blob_sha256, expires_at)
+    VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', 456, 0, 789, 'abcd1234...'::bytea, NOW() + interval '7 days')
+    ON CONFLICT (namespace_id, npm_package_id, kind)
+    DO UPDATE SET blob_storage_attachment_id = EXCLUDED.blob_storage_attachment_id,
+                  blob_sha256 = EXCLUDED.blob_sha256,
+                  expires_at = EXCLUDED.expires_at
+  )
+  DELETE FROM blob_storage_attachments bsa
+  USING old
+  WHERE bsa.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+    AND bsa.id = old.blob_storage_attachment_id
+    AND bsa.sha256 = old.blob_sha256;
+  ```
+
+  初回挿入では `old` CTE が行を返さないため、アタッチメントは削除されません。
+  競合（更新）の場合、前のアタッチメントが削除されます。古い blob は、他のアタッチメントが
+  それを参照していなければガベージコレクションされます（重複排除に安全です。
+  各クライアントは自身のアタッチメントを保持するため、1つを削除しても同じ blob を
+  共有する他のものには影響しません）。
