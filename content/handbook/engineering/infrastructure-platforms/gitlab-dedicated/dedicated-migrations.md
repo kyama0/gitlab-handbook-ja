@@ -1,5 +1,5 @@
 ---
-title: Dedicated Migration Team
+title: Dedicated マイグレーションチーム
 description: Geo から Dedicated へのマイグレーションの道のりをスムーズにすることに注力するチーム。ツール、プロセス、エンジニアリングを担当します
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations/
 upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
