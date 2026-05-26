@@ -3,17 +3,17 @@ title: 'セクション'
 description: 'Zendesk セクションに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/zendesk/knowledge-center/sections/
 upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
-lastmod: "2026-05-26T12:05:00-05:00"
-translated_at: "2026-05-26T18:30:00Z"
+translated_at: "2026-05-26T22:38:46Z"
 translator: claude
 stale: false
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
-このガイドでは、GitLab における Zendesk セクションの作成・編集・管理方法を説明します。管理者は [管理者タスク](#administrator-tasks) のセクションを確認してください。
+このガイドでは、GitLab における Zendesk セクションの作成、編集、管理方法について説明します。管理者は[管理者タスク](#administrator-tasks)セクションを確認してください。
 
-{{% alert title="Technical Details" color="primary" %}}
+{{% alert title="技術的な詳細" color="primary" %}}
 
-- デプロイタイプ: `Standard`
+- デプロイメントタイプ: `Standard`
 - 同期リポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/sections)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/sections)
@@ -21,34 +21,34 @@ stale: false
 
 {{% /alert %}}
 
-## Understanding sections
+## セクションを理解する
 
-### What are sections
+### セクションとは
 
 [Zendesk](https://support.zendesk.com/hc/en-us/articles/4408845897370-Organizing-knowledge-base-content-in-categories-and-sections#topic_ysj_wtt_zz) によると:
 
 > セクションには関連する記事が含まれます。
 
-本質的には、カテゴリーを関連するグループに細分化するために使用される項目です。
+要するに、カテゴリを関連するグループに細分化するために使用される項目です。
 
-ナレッジセンターは 3 階層の構造を使用します:
+ナレッジセンターは 3 階層構造を使用します:
 
-- **Categories**（最上位）- 主要なトピック領域を整理します。[categories ページ](/handbook/security/customer-support-operations/zendesk/knowledge-center/categories) に記載
-- **Sections**（中間レベル）- カテゴリーを関連するグループに細分化します。このページに記載
-- **Articles**（コンテンツレベル）- 個々のヘルプ記事。[articles ページ](/handbook/security/customer-support-operations/zendesk/knowledge-center/articles) に記載
+- **カテゴリ**（最上位レベル） - 主要なトピック領域を整理。[カテゴリページ](/handbook/security/customer-support-operations/zendesk/knowledge-center/categories)に文書化
+- **セクション**（中間レベル） - カテゴリを関連するグループに細分化。本ページに文書化
+- **記事**（コンテンツレベル） - 個別のヘルプ記事。[記事ページ](/handbook/security/customer-support-operations/zendesk/knowledge-center/articles)に文書化
 
-### How we manage sections
+### 私たちのセクションの管理方法
 
-現在、すべてのセクションを Zendesk 自体の中で管理しています。
+現在、すべてのセクションは Zendesk 内で管理しています。
 
-**注:** （カテゴリーと同様の）同期リポジトリ経由でのセクション管理は、FY27 での将来的な実装が予定されています。
+**注:** 同期リポジトリ経由でのセクション管理（カテゴリと同様）は、FY27 での将来の実装が計画されています。
 
-## Current sections in use
+## 現在使用中のセクション
 
 - Zendesk Global
-  - [About GitLab Support](https://support.gitlab.com/hc/en-us/categories/19831379587100-About-GitLab-Support) カテゴリー配下:
+  - [About GitLab Support](https://support.gitlab.com/hc/en-us/categories/19831379587100-About-GitLab-Support) カテゴリの下:
     - [Support Pages](https://support.gitlab.com/hc/en-us/sections/360004459140)
-  - [Knowledge articles](https://support.gitlab.com/hc/en-us/categories/360002276159-Knowledge-Articles) カテゴリー配下:
+  - [Knowledge articles](https://support.gitlab.com/hc/en-us/categories/360002276159-Knowledge-Articles) カテゴリの下:
     - [Administrative](https://support.gitlab.com/hc/en-us/sections/19926471791772-Administrative)
     - [Agile Planning](https://support.gitlab.com/hc/en-us/sections/25409845632540-Agile-Planning)
     - [AI](https://support.gitlab.com/hc/en-us/sections/25409833616540-AI)
@@ -70,9 +70,9 @@ stale: false
     - [Other Articles](https://support.gitlab.com/hc/en-us/sections/15215649512604-Other-Articles)
     - [Templates](https://support.gitlab.com/hc/en-us/sections/20197250020508-Templates)
 - Zendesk US Government
-  - [About GitLab Support](https://federal-support.gitlab.com/hc/en-us/categories/37060125978004-About-GitLab-Support) 配下
+  - [About GitLab Support](https://federal-support.gitlab.com/hc/en-us/categories/37060125978004-About-GitLab-Support) の下
     - [Support Pages](https://federal-support.gitlab.com/hc/en-us/sections/10593044624020)
-  - [Knowledge articles](https://support.gitlab.com/hc/en-us/categories/360002276159-Knowledge-Articles) 配下
+  - [Knowledge articles](https://support.gitlab.com/hc/en-us/categories/360002276159-Knowledge-Articles) の下
     - [Administrative](https://federal-support.gitlab.com/hc/en-us/sections/37233537790740-Administrative)
     - [Agile Planning](https://federal-support.gitlab.com/hc/en-us/sections/46141240478612-Agile-Planning)
     - [AI](https://federal-support.gitlab.com/hc/en-us/sections/46141244316564-AI)
@@ -94,31 +94,31 @@ stale: false
     - [Other Articles](https://federal-support.gitlab.com/hc/en-us/sections/29015014994068-Other-Articles)
     - [Templates](https://federal-support.gitlab.com/hc/en-us/sections/37233549693332-Templates)
 
-## Creating a section as a non-admin
+## 管理者以外の立場でセクションを作成する
 
-セクションの作成については、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要となるため）。
+セクションの作成については、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要なため）。
 
-## Editing a section as a non-admin
+## 管理者以外の立場でセクションを編集する
 
-セクションの変更については、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要となるため）。
+セクションの変更については、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要なため）。
 
-## Deleting a section as a non-admin
+## 管理者以外の立場でセクションを削除する
 
-セクションの無効化をリクエストするには、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要となるため）。
+セクションの非アクティブ化を依頼するには、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要なため）。
 
-## Administrator tasks
+## 管理者タスク {#administrator-tasks}
 
-{{% alert title="Note" color="primary" %}}
+{{% alert title="注意" color="primary" %}}
 
-- このセクションのすべての項目には、Zendesk への `Administrator` レベルのアクセス権が必要です。
+- このセクションのすべての項目には、Zendesk への `Administrator` レベルのアクセスが必要です。
 
 {{% /alert %}}
 
-### Viewing sections in Zendesk
+### Zendesk のセクションを表示する {#viewing-sections-in-zendesk}
 
 Zendesk で現在のセクションを表示するには:
 
-1. 該当する Zendesk インスタンスのナレッジセンターダッシュボードに移動します
+1. Zendesk インスタンスのナレッジセンターダッシュボードに移動します
    - プライマリブランドの場合:
      - [Zendesk Global (production)](https://gitlab.zendesk.com/knowledge/lists/default/1/1?brand_id=3252896)
      - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/knowledge/lists/default/1/1?brand_id=12510498177436)
@@ -140,19 +140,19 @@ Zendesk で現在のセクションを表示するには:
      - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/knowledge/lists/arrange/?brand_id=22687153149724)
      - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/knowledge/lists/arrange/?brand_id=41824350085780)
      - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/knowledge/lists/arrange/?brand_id=41389709130900)
-1. セクションが含まれているカテゴリーの名前をクリックします
+1. セクションが含まれるカテゴリの名前をクリックします
 
-### Creating a section
+### セクションを作成する
 
-{{% alert title="Warning" color="warning" %}}
+{{% alert title="警告" color="warning" %}}
 
-- これは、対応するリクエスト issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し、作業前に標準プロセスを通してください。
-- **SEO への影響:** セクションは URL 構造、検索インデックス、記事の発見可能性に影響します。セクション名や構造を変更すると、既存のリンクが壊れたり、検索エンジンのランキングに影響したりする可能性があります。
+- これは、対応する Issue（Feature Request、Administrative、Bug 等）がある場合にのみ実施してください。存在しない場合は、まず Issue を作成し（標準プロセスに従って処理されるのを待ってから）作業してください。
+- **SEO への影響:** セクションは URL 構造、検索インデックス、記事の発見可能性に影響します。セクション名や構造を変更すると、既存のリンクが壊れたり、検索エンジンのランキングに影響を与える可能性があります。
 - セクションに変更を加える場合は注意してください。
 
 {{% /alert %}}
 
-セクションを作成するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容はリクエスト自体によって異なります。使用できる開始テンプレートは次のとおりです:
+セクションを作成するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容は、依頼自体に依存します。利用可能な開始テンプレートは以下のとおりです:
 
 ```yaml
 ---
@@ -164,70 +164,70 @@ locale: 'en-us' # This should always be used
 position: 0 # Integer representing section display order
 ```
 
-ピアレビューで承認された後、MR をマージできます。次のデプロイが発生したときに、Zendesk へ同期されます。
+ピアによるレビューと承認の後、MR をマージできます。次のデプロイメントが行われる際に、Zendesk に同期されます。
 
-### Editing a section
+### セクションを編集する
 
-{{% alert title="Warning" color="warning" %}}
+{{% alert title="警告" color="warning" %}}
 
-- これは、対応するリクエスト issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し、作業前に標準プロセスを通してください。
-- **SEO への影響:** セクションは URL 構造、検索インデックス、記事の発見可能性に影響します。セクション名や構造を変更すると、既存のリンクが壊れたり、検索エンジンのランキングに影響したりする可能性があります。
+- これは、対応する Issue（Feature Request、Administrative、Bug 等）がある場合にのみ実施してください。存在しない場合は、まず Issue を作成し（標準プロセスに従って処理されるのを待ってから）作業してください。
+- **SEO への影響:** セクションは URL 構造、検索インデックス、記事の発見可能性に影響します。セクション名や構造を変更すると、既存のリンクが壊れたり、検索エンジンのランキングに影響を与える可能性があります。
 - セクションに変更を加える場合は注意してください。
 
 {{% /alert %}}
 
-セクションを編集するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容はリクエスト自体によって異なります。
+セクションを編集するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容は、依頼自体に依存します。
 
-ピアレビューで承認された後、MR をマージできます。次のデプロイが発生したときに、Zendesk へ同期されます。
+ピアによるレビューと承認の後、MR をマージできます。次のデプロイメントが行われる際に、Zendesk に同期されます。
 
-#### Changing the name of a section
+#### セクションの名前を変更する
 
-セクションの名前を変更する必要がある場合は、現在の値を `previous_name` 属性にコピーしてから `name` 属性を変更します。これにより、同期処理が更新対象のセクションを引き続き特定できるようになります。
+セクションの名前を変更する必要がある場合は、現在の値を `previous_name` 属性にコピーしてから `name` 属性を変更します。これにより、同期処理が対象のセクションを引き続き特定して更新できます。
 
-### Moving sections to a new location
+### セクションを新しい場所に移動する
 
-{{% alert title="Warning" color="warning" %}}
+{{% alert title="警告" color="warning" %}}
 
-- これは、対応するリクエスト issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し、作業前に標準プロセスを通してください。
-- **SEO への影響:** セクションは URL 構造、検索インデックス、記事の発見可能性に影響します。セクションの場所や構造を変更すると、既存のリンクが壊れたり、検索エンジンのランキングに影響したりする可能性があります。
+- これは、対応する Issue（Feature Request、Administrative、Bug 等）がある場合にのみ実施してください。存在しない場合は、まず Issue を作成し（標準プロセスに従って処理されるのを待ってから）作業してください。
+- **SEO への影響:** セクションは URL 構造、検索インデックス、記事の発見可能性に影響します。セクションの場所や構造を変更すると、既存のリンクが壊れたり、検索エンジンのランキングに影響を与える可能性があります。
 - セクションに変更を加える場合は注意してください。
 
 {{% /alert %}}
 
-セクションを新しいカテゴリーに移動するには、同期リポジトリで MR を作成する必要があります。変更は単に、ファイルを現在のフォルダー（つまり現在のカテゴリー）から新しいフォルダー（つまり新しいカテゴリー）へ移動するだけです。
+セクションを新しいカテゴリに移動するには、同期リポジトリで MR を作成する必要があります。変更は単純に、ファイルを現在のフォルダ（つまり現在のカテゴリ）から新しいフォルダ（つまり新しいカテゴリ）に移動するだけです。
 
-ピアレビューで承認された後、MR をマージできます。次のデプロイが発生したときに、Zendesk へ同期されます。
+ピアによるレビューと承認の後、MR をマージできます。次のデプロイメントが行われる際に、Zendesk に同期されます。
 
-### Deleting a section
+### セクションを削除する
 
-{{% alert title="Danger" color="danger" %}}
+{{% alert title="危険" color="danger" %}}
 
-- これは、対応するリクエスト issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し、作業前に標準プロセスを通してください。
-- セクションを削除すると、そのセクションに含まれるすべての記事（翻訳を含む）がアーカイブされます。
-- 実施する際は細心の注意を払ってください。
+- これは、対応する Issue（Feature Request、Administrative、Bug 等）がある場合にのみ実施してください。存在しない場合は、まず Issue を作成し（標準プロセスに従って処理されるのを待ってから）作業してください。
+- セクションを削除すると、そのセクションに含まれるすべての記事（任意の翻訳を含む）がアーカイブされます。
+- これを行う際には細心の注意を払ってください。
 
 {{% /alert %}}
 
-同期リポジトリは削除を実行しないため、セクションを削除するには 2 つのアクションを行う必要があります。
+同期リポジトリは削除を実行しないため、セクションを削除するには 2 つのアクションを実行する必要があります。
 
-まず、同期リポジトリから対応するファイルを削除する必要があります。ピアレビューで承認された後、MR をマージできます。
+まず、同期リポジトリから対応するファイルを削除する必要があります。ピアによるレビューと承認の後、MR をマージできます。
 
-それが完了したら、次に Zendesk 自体からそれを削除する必要があります。
+それが完了したら、次に Zendesk 自体から削除する必要があります。
 
 Zendesk からセクションを削除するには:
 
-1. [セクションビューに移動します](#viewing-sections-in-zendesk)
-1. 該当するセクションの右側にある縦に並んだ 3 つの点をクリックします
+1. [セクションビューに移動](#viewing-sections-in-zendesk)します
+1. 対象のセクションの右側にある縦に並んだ 3 つの点をクリックします
 1. `Edit section` をクリックします
 1. ページ左側の `Delete section` をクリックします
-1. `OK` をクリックして変更を確定します
+1. `OK` をクリックして変更を確認します
 
-### Performing an exception deployment
+### 例外デプロイメントを実行する
 
-セクションの例外デプロイを実行するには、該当するセクションの同期プロジェクトに移動し、スケジュールされたパイプラインのページに移動して、同期項目の再生ボタンをクリックします。これにより、セクションの同期ジョブがトリガーされます。
+セクションの例外デプロイメントを実行するには、対象のセクション同期プロジェクトに移動し、スケジュールパイプラインのページに移動して、同期項目の再生ボタンをクリックします。これにより、セクションの同期ジョブがトリガーされます。
 
-## Common issues and troubleshooting
+## よくある問題とトラブルシューティング
 
-### Not seeing section changes after a merge
+### マージ後にセクションの変更が反映されない
 
-セクションは `Standard` デプロイタイプに従うため、通常のデプロイサイクル中（または例外デプロイが実行されたとき）にのみデプロイされます。
+セクションは `Standard` デプロイメントタイプに従うため、通常のデプロイメントサイクル（または例外デプロイメントが行われたとき）にのみデプロイされます。

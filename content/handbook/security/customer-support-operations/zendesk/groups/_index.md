@@ -3,17 +3,17 @@ title: 'グループ'
 description: 'Zendesk グループに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/zendesk/groups/
 upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
-lastmod: "2026-05-26T12:05:00-05:00"
-translated_at: "2026-05-26T18:30:00Z"
+translated_at: "2026-05-26T22:38:46Z"
 translator: claude
 stale: false
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
-このガイドでは、GitLab における Zendesk グループの作成・編集・管理方法を説明します。管理者は [管理者タスク](#administrator-tasks) のセクションを確認してください。
+このガイドでは、GitLab における Zendesk グループの作成、編集、管理方法について説明します。管理者は[管理者タスク](#administrator-tasks)セクションを確認してください。
 
-{{% alert title="Technical Details" color="primary" %}}
+{{% alert title="技術的な詳細" color="primary" %}}
 
-- デプロイタイプ: `Standard`
+- デプロイメントタイプ: `Standard`
 - 同期リポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/groups)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/groups)
@@ -21,45 +21,45 @@ stale: false
 
 {{% /alert %}}
 
-## Understanding groups
+## グループを理解する
 
-### What are Zendesk groups
+### Zendesk グループとは
 
 [Zendesk](https://support.zendesk.com/hc/en-us/articles/4408886146842-About-organizations-and-groups#topic_iny_3jg_sz) によると:
 
-> グループは、チームメンバーが共通して持つ基準に基づいてチームメンバーをまとめます。グループにはチームメンバーのみを含めることができ、エンドユーザーを含めることはできません。すべてのエージェントは少なくとも 1 つのグループに割り当てられる必要がありますが、複数のグループのメンバーになることもできます。グループは組織をサポートするために使用できます。1 つのグループをアカウントのデフォルトグループに指定でき、各チームメンバーにデフォルトグループを指定することもできます。新しく作成したすべてのチームメンバーは、デフォルトグループに追加されます。
+> グループは、チームメンバーが共通して持つ基準に基づいてチームメンバーをまとめます。グループにはチームメンバーのみを含めることができます。エンドユーザーを含めることはできません。すべてのエージェントは少なくとも 1 つのグループに割り当てる必要がありますが、複数のグループのメンバーになることもできます。グループは組織をサポートするために使用できます。アカウントのデフォルトグループとして 1 つのグループを指定することができ、各チームメンバーのデフォルトグループも指定できます。作成するすべての新しいチームメンバーはデフォルトグループに追加されます。
 
-### How we manage groups
+### 私たちのグループの管理方法
 
-Zendesk は UI 経由でグループを完全に管理する方法を提供していますが、私たちはよりバージョン管理されたメソドロジーを採用しています。これにより、設定されたレビュープロセスや、必要に応じたロールバックの実行などが可能になります。
+Zendesk は UI を通じてグループを完全に管理する方法を提供していますが、私たちはよりバージョン管理されたメソドロジーを採用しています。これにより、定められたレビュープロセス、必要に応じたロールバック実行などが可能になります。
 
-そのため、私たちは同期リポジトリを活用しています。
+そのため、私たちは同期リポジトリを利用しています。
 
-### How we manage group membership
+### 私たちのグループメンバーシップの管理方法
 
-#### For the Support team
+#### Support チームの場合
 
-Support チーム内のメンバーのグループメンバーシップは、[Agent sync](/handbook/security/customer-support-operations/zendesk/users/agents) 経由で管理しています。そのため、グループメンバーシップを変更する必要がある場合は、ご自身の YAML ファイルを更新してください。
+Support チーム内のメンバーのグループメンバーシップは、[Agent sync](/handbook/security/customer-support-operations/zendesk/users/agents) を介して管理しています。そのため、グループメンバーシップを変更する必要がある場合は、自分の YAML ファイルを更新してください。
 
-#### For everyone else
+#### それ以外の人の場合
 
-これらの変更はテックスタックプロビジョナーが手動で実行する必要があるため、[Access Request issue](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new) を提出してください。
+これらは技術スタックのプロビジョナーが手動で変更を実行する必要があるため、[Access Request issue](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new) を提出してください。
 
-## Creating a group as a non-admin
+## 管理者以外の立場でグループを作成する
 
-グループの作成については、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要となるため）。
+グループの作成については、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要なため）。
 
-## Editing a group as a non-admin
+## 管理者以外の立場でグループを編集する
 
-グループの変更については、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要となるため）。
+グループの変更については、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要なため）。
 
-## Deactivating a group as a non-admin
+## 管理者以外の立場でグループを非アクティブ化する
 
-グループの無効化をリクエストするには、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要となるため）。
+グループの非アクティブ化を依頼するには、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要なため）。
 
-## Current groups
+## 現在のグループ
 
-### Zendesk Global groups
+### Zendesk Global グループ
 
 - `Accounts Receivable`
 - `Billing`
@@ -75,7 +75,7 @@ Support チーム内のメンバーのグループメンバーシップは、[Ag
 - `Support Managers`
 - `Support Ops`
 
-### Zendesk US Government groups
+### Zendesk US Government グループ
 
 - `General`
 - `Security`
@@ -86,19 +86,19 @@ Support チーム内のメンバーのグループメンバーシップは、[Ag
 - `Support Operations`
 - `Support`
 
-## Administrator tasks
+## 管理者タスク {#administrator-tasks}
 
-{{% alert title="Note" color="primary" %}}
+{{% alert title="注意" color="primary" %}}
 
-- このセクションのすべての項目には、Zendesk への `Administrator` レベルのアクセス権が必要です。
+- このセクションのすべての項目には、Zendesk への `Administrator` レベルのアクセスが必要です。
 
 {{% /alert %}}
 
-### Viewing groups
+### グループを表示する
 
-Zendesk でグループを表示するには:
+Zendesk のグループを表示するには:
 
-1. 該当する Zendesk インスタンスの管理ダッシュボードに移動します
+1. Zendesk インスタンスの管理ダッシュボードに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
@@ -109,18 +109,18 @@ Zendesk でグループを表示するには:
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/people/team/groups)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/people/team/groups)
 
-グループのメンバーシップを確認する必要がある場合は、グループの名前をクリックできます。
+グループのメンバーシップを確認する必要がある場合は、グループ名をクリックできます。
 
-### Creating a group
+### グループを作成する
 
-{{% alert title="Warning" color="warning" %}}
+{{% alert title="警告" color="warning" %}}
 
-- これは、対応するリクエスト issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し、作業前に標準プロセスを通してください。
-- Agent sync も編集する必要があるかもしれないことに留意してください
+- これは、対応する Issue（Feature Request、Administrative、Bug 等）がある場合にのみ実施してください。存在しない場合は、まず Issue を作成し（標準プロセスに従って処理されるのを待ってから）作業してください。
+- Agent sync も編集する必要がある可能性があることに留意してください
 
 {{% /alert %}}
 
-グループを作成するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容はリクエスト自体によって異なります。使用できる開始テンプレートは次のとおりです:
+グループを作成するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容は、依頼自体に依存します。利用可能な開始テンプレートは以下のとおりです:
 
 ```yaml
 ---
@@ -132,43 +132,43 @@ deleted: false # Deleted groups get marked as such
 is_public: true # If true, the group is public. If false, the group is private. You can't change a private group to a public group
 ```
 
-ピアレビューで承認された後、MR をマージできます。次のデプロイが発生したときに、Zendesk へ同期されます。
+ピアによるレビューと承認の後、MR をマージできます。次のデプロイメントが行われる際に、Zendesk に同期されます。
 
-### Editing a group
+### グループを編集する
 
-{{% alert title="Warning" color="warning" %}}
+{{% alert title="警告" color="warning" %}}
 
-- これは、対応するリクエスト issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し、作業前に標準プロセスを通してください。
-- Agent sync も編集する必要があるかもしれないことに留意してください
-
-{{% /alert %}}
-
-グループを編集する（つまり、その名前や説明を変更する）には、同期リポジトリで MR を作成する必要があります。具体的な変更内容はリクエスト自体によって異なります。
-
-ピアレビューで承認された後、MR をマージできます。次のデプロイが発生したときに、Zendesk へ同期されます。
-
-#### Changing the name of a group
-
-グループのタイトルを変更する必要がある場合は、現在の値を `previous_name` 属性にコピーしてから `name` 属性を変更します。これにより、同期処理が更新対象のグループを引き続き特定できるようになります。
-
-### Deleting a group
-
-{{% alert title="Warning" color="warning" %}}
-
-- これは、対応するリクエスト issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し、作業前に標準プロセスを通してください。
-- Agent sync も編集する必要があるかもしれないことに留意してください
+- これは、対応する Issue（Feature Request、Administrative、Bug 等）がある場合にのみ実施してください。存在しない場合は、まず Issue を作成し（標準プロセスに従って処理されるのを待ってから）作業してください。
+- Agent sync も編集する必要がある可能性があることに留意してください
 
 {{% /alert %}}
 
-同期リポジトリは削除を実行しないため、グループを削除するには 2 つのアクションを行う必要があります。
+グループを編集する（つまり、その名前や説明を変更する）には、同期リポジトリで MR を作成する必要があります。具体的な変更内容は、依頼自体に依存します。
 
-まず、同期リポジトリから対応するファイルを削除する必要があります。ピアレビューで承認された後、MR をマージできます。
+ピアによるレビューと承認の後、MR をマージできます。次のデプロイメントが行われる際に、Zendesk に同期されます。
 
-それが完了したら、次に Zendesk 自体からそれを削除する必要があります。
+#### グループの名前を変更する
+
+グループのタイトルを変更する必要がある場合は、現在の値を `previous_name` 属性にコピーしてから `name` 属性を変更します。これにより、同期処理が対象のグループを引き続き特定して更新できます。
+
+### グループを削除する
+
+{{% alert title="警告" color="warning" %}}
+
+- これは、対応する Issue（Feature Request、Administrative、Bug 等）がある場合にのみ実施してください。存在しない場合は、まず Issue を作成し（標準プロセスに従って処理されるのを待ってから）作業してください。
+- Agent sync も編集する必要がある可能性があることに留意してください
+
+{{% /alert %}}
+
+同期リポジトリは削除を実行しないため、グループを削除するには 2 つのアクションを実行する必要があります。
+
+まず、同期リポジトリから対応するファイルを削除する必要があります。ピアによるレビューと承認の後、MR をマージできます。
+
+それが完了したら、次に Zendesk 自体から削除する必要があります。
 
 Zendesk からグループを削除するには:
 
-1. 該当する Zendesk インスタンスの管理ダッシュボードに移動します
+1. Zendesk インスタンスの管理ダッシュボードに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
@@ -181,13 +181,13 @@ Zendesk からグループを削除するには:
 1. メンバーを削除したいグループの名前をクリックします
 1. ページ上部の `Actions` ボタンをクリックします
 1. `Delete group` をクリックします
-1. `Delete` をクリックして変更を確定します
+1. `Delete` をクリックして変更を確認します
 
-### Adding a non-support person to a group
+### サポート以外の人をグループに追加する
 
-Agent sync で管理されていない人物をグループに追加するには:
+Agent sync で管理されていない人をグループに追加するには:
 
-1. 該当する Zendesk インスタンスの管理ダッシュボードに移動します
+1. Zendesk インスタンスの管理ダッシュボードに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
@@ -197,16 +197,16 @@ Agent sync で管理されていない人物をグループに追加するには
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/people/team/groups)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/people/team/groups)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/people/team/groups)
-1. 人物を追加したいグループの名前をクリックします
-1. 右端の検索を使用して人物を探します（メールアドレスで検索するのが最適です）
-1. 人物の情報の右側にある `+` アイコンをクリックします
-1. ページ右下の `Save` アイコンをクリックします。
+1. 人を追加したいグループの名前をクリックします
+1. 右端の検索を使ってその人を見つけます（メールアドレスでの検索が最適です）
+1. 人の情報の右側にある `+` アイコンをクリックします
+1. ページの右下にある `Save` アイコンをクリックします。
 
-### Removing a non-support person from a group
+### サポート以外の人をグループから削除する
 
-Agent sync で管理されていない人物をグループから削除するには:
+Agent sync で管理されていない人をグループから削除するには:
 
-1. 該当する Zendesk インスタンスの管理ダッシュボードに移動します
+1. Zendesk インスタンスの管理ダッシュボードに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
@@ -216,17 +216,17 @@ Agent sync で管理されていない人物をグループから削除するに
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/people/team/groups)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/people/team/groups)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/people/team/groups)
-1. 人物を削除したいグループの名前をクリックします
-1. `Group members` セクションの下にある検索を使用して人物を探します（メールアドレスで検索するのが最適です）
-1. 人物の情報の右側にあるゴミ箱アイコンをクリックします
-1. ページ右下の `Save` アイコンをクリックします。
+1. 人を削除したいグループの名前をクリックします
+1. `Group members` セクションの下の検索を使ってその人を見つけます（メールアドレスでの検索が最適です）
+1. 人の情報の右側にあるゴミ箱アイコンをクリックします
+1. ページの右下にある `Save` アイコンをクリックします。
 
-### Performing an exception deployment
+### 例外デプロイメントを実行する
 
-グループの例外デプロイを実行するには、該当するグループの同期プロジェクトに移動し、スケジュールされたパイプラインのページに移動して、同期項目の再生ボタンをクリックします。これにより、グループの同期ジョブがトリガーされます。
+グループの例外デプロイメントを実行するには、対象のグループ同期プロジェクトに移動し、スケジュールパイプラインのページに移動して、同期項目の再生ボタンをクリックします。これにより、グループの同期ジョブがトリガーされます。
 
-## Common issues and troubleshooting
+## よくある問題とトラブルシューティング
 
-### Not seeing group changes after a merge
+### マージ後にグループの変更が反映されない
 
-グループは `Standard` デプロイタイプに従うため、通常のデプロイサイクル中（または例外デプロイが実行されたとき）にのみデプロイされます。
+グループは `Standard` デプロイメントタイプに従うため、通常のデプロイメントサイクル（または例外デプロイメントが行われたとき）にのみデプロイされます。

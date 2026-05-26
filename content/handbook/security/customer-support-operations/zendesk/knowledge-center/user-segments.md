@@ -3,7 +3,7 @@ title: 'ユーザーセグメント'
 description: 'Zendesk ユーザーセグメントに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/zendesk/knowledge-center/user-segments/
 upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
-translated_at: "2026-05-26T00:00:00Z"
+translated_at: "2026-05-26T22:38:46Z"
 translator: claude
 stale: false
 lastmod: "2026-05-26T12:05:00-05:00"
@@ -17,7 +17,7 @@ lastmod: "2026-05-26T12:05:00-05:00"
 - 同期リポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/help-center-user-segments)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/help-center-user-segments)
-- `CustSuppOps Zendesk Test Suite Generator` を有効化
+- `CustSuppOps Zendesk Test Suite Generator` 有効
 
 {{% /alert %}}
 

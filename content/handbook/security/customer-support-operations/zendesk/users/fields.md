@@ -3,15 +3,15 @@ title: 'ユーザーフィールド'
 description: 'Zendesk のユーザーフィールドに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/zendesk/users/fields/
 upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
-lastmod: "2026-05-26T12:05:00-05:00"
-translated_at: "2026-05-26T18:30:00Z"
+translated_at: "2026-05-26T22:38:46Z"
 translator: claude
 stale: false
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
-このガイドでは、GitLab における Zendesk ユーザーフィールドの作成・編集・管理方法を説明します。管理者は [管理者タスク](#administrator-tasks) のセクションを確認してください。
+このガイドでは、GitLab における Zendesk のユーザーフィールドの作成、編集、管理方法について説明します。管理者は[管理者タスク](#administrator-tasks)セクションを確認してください。
 
-{{% alert title="Technical Details" color="primary" %}}
+{{% alert title="技術的な詳細" color="primary" %}}
 
 - デプロイタイプ: `Standard`
 - 同期リポジトリ
@@ -21,72 +21,72 @@ stale: false
 
 {{% /alert %}}
 
-## Understanding user fields
+## ユーザーフィールドを理解する
 
-### What are user fields
+### ユーザーフィールドとは
 
-ユーザーフィールドは、Zendesk のユーザープロファイルに付随するカスタムフィールドです。（チケットに表示される）チケットフィールドとは異なり、ユーザーフィールドはユーザー自身に関する情報を保存します。
+ユーザーフィールドは、Zendesk のユーザープロファイルに関連付けられたカスタムフィールドです。チケットフィールド（チケット上に表示される）とは異なり、ユーザーフィールドはユーザー自身に関する情報を保存します。
 
-### How we manage user fields
+### ユーザーフィールドの管理方法
 
-Zendesk は UI 経由でユーザーフィールドを完全に管理する方法を提供していますが、私たちはよりバージョン管理されたメソドロジーを採用しています。これにより、設定されたレビュープロセスや、必要に応じたロールバックの実行などが可能になります。
+Zendesk は UI を通じてユーザーフィールドを完全に管理する方法を提供していますが、私たちはよりバージョン管理されたメソドロジーを採用しています。これにより、定められたレビュープロセスや、必要に応じてロールバックを行う能力などが得られます。
 
-そのため、私たちは同期リポジトリを活用しています。
+そのため、同期リポジトリを利用しています。
 
-### Types of user fields
+### ユーザーフィールドのタイプ
 
-GitLab で私たちが最も一般的に使用するタイプは以下のとおりです:
+GitLab で最もよく使うタイプは以下のとおりです。
 
-| 名前 | API タイプ値 | 目的 | 使用例 |
+| 名前 | API type 値 | 用途 | 使用例 |
 |------|----------------|---------|------------------|
 | Checkbox | `checkbox` | 単一の true/false オプション | "User on PTO" |
 | Date | `date` | 日付選択用 | "Expiration date" |
-| Decimal | `decimal` | 小数を使用する数値用 | "ARR associated" |
+| Decimal | `decimal` | 小数を含む数値用 | "ARR associated" |
 | Drop-down | `dropdown` | 1 つの選択を許可するドロップダウン用 | "Highest plan level" |
-| Multi-line | `textarea` | 複数行を必要とする自由形式のフィールド用 | "Account manager notes" |
+| Multi-line | `textarea` | 複数行が必要なフリースタイルフィールド用 | "Account manager notes" |
 | Multi-select | `multiselect` | 複数の選択を許可するドロップダウン用 | "Subscription levels purchased" |
-| Numeric | `integer` | 小数を使用しない数値用 | "GitLab.com user ID" |
-| Regex | `regexp` | Regex 検証が必要なテキスト形式のフィールド用 | "Salesforce contact ID" |
-| Text | `text` | 自由形式のフィールド用 | "Preferred nickname" |
+| Numeric | `integer` | 小数を含まない数値用 | "GitLab.com user ID" |
+| Regex | `regexp` | 正規表現の検証が必要なテキストスタイルフィールド用 | "Salesforce contact ID" |
+| Text | `text` | フリースタイルフィールド用 | "Preferred nickname" |
 
-完全な一覧については、[Zendesk のドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types) を参照してください。
+完全なリストについては、[Zendesk のドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types)を参照してください。
 
-## Administrator tasks
+## 管理者タスク {#administrator-tasks}
 
-{{% alert title="Note" color="primary" %}}
+{{% alert title="注意" color="primary" %}}
 
-- このセクションのすべての項目には、Zendesk への `Administrator` レベルのアクセス権が必要です。
+- このセクションのすべての項目は、Zendesk への `Administrator` レベルのアクセスが必要です。
 
 {{% /alert %}}
 
-### Viewing user fields
+### ユーザーフィールドを表示する
 
 Zendesk でユーザーフィールドを表示するには:
 
-1. 該当する Zendesk インスタンスの管理ダッシュボードに移動します
+1. Zendesk インスタンスの管理ダッシュボードに移動
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/home)
-1. `People > Configuration > User fields` に移動します
+1. `People > Configuration > User fields` に移動
    - [Zendesk Global](https://gitlab.zendesk.com/admin/people/configuration/user_fields)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/people/configuration/user_fields)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/people/configuration/user_fields)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/people/configuration/user_fields)
 
-注: 非アクティブなユーザーフィールドを表示したい場合は、`Filter` ボタンをクリックしてアクティブフィルターを変更する必要があるかもしれません。
+注意: 非アクティブのユーザーフィールドを表示したい場合は、`Filter` ボタンをクリックしてアクティブフィルターを変更する必要がある場合があります。
 
-### Creating a user field
+### ユーザーフィールドを作成する
 
-{{% alert title="Warning" color="warning" %}}
+{{% alert title="警告" color="warning" %}}
 
-- これは、対応するリクエスト issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し、作業前に標準プロセスを通してください。
+- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください。存在しない場合は、まず作成して標準プロセスを通してから対応してください。
 
 {{% /alert %}}
 
-ユーザーフィールドを作成するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容はリクエスト自体によって異なります。具体的な内容は、ユーザーフィールドのタイプによって異なります。
+ユーザーフィールドを作成するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容は依頼自体によって異なります。具体的な内容はユーザーフィールドのタイプによって異なる場合があります。
 
-**注:** 一般的なフィールドタイプのテンプレートを示しています。その他のタイプ（date、decimal、textarea、multiselect、regexp）については、`type` 属性を適宜変更し、タイプ固有の要件については [Zendesk のフィールドドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types) を参照してください。
+**注意:** 一般的なフィールドタイプ向けのテンプレートを示します。その他のタイプ（date、decimal、textarea、multiselect、regexp）については、`type` 属性をそれに応じて変更し、タイプ固有の要件については [Zendesk フィールドのドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types)を参照してください。
 
 **ヒント:** 以下の各フィールドタイプをクリックすると、そのテンプレートが表示されます。
 
@@ -160,73 +160,73 @@ custom_field_options:
 
 </details>
 
-ピアレビューで承認された後、MR をマージできます。次のデプロイが発生したときに、Zendesk へ同期されます。
+ピアによるレビューと承認後、MR をマージできます。次のデプロイ時に、Zendesk に同期されます。
 
-### Editing a user field
+### ユーザーフィールドを編集する
 
-{{% alert title="Warning" color="warning" %}}
+{{% alert title="警告" color="warning" %}}
 
-- これは、対応するリクエスト issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し、作業前に標準プロセスを通してください。
-
-{{% /alert %}}
-
-ユーザーフィールドを編集するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容はリクエスト自体によって異なります。
-
-ピアレビューで承認された後、MR をマージできます。次のデプロイが発生したときに、Zendesk へ同期されます。
-
-#### Changing the title of a user field
-
-ユーザーフィールドのタイトルを変更する必要がある場合は、現在の値を `previous_title` 属性にコピーしてから `title` 属性を変更します。これにより、同期処理が更新対象のユーザーフィールドを引き続き特定できるようになります。
-
-### Deactivating a user field
-
-{{% alert title="Warning" color="warning" %}}
-
-- これは、対応するリクエスト issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し、作業前に標準プロセスを通してください。
+- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください。存在しない場合は、まず作成して標準プロセスを通してから対応してください。
 
 {{% /alert %}}
 
-ユーザーフィールドを無効化するには、同期リポジトリで MR を作成する必要があります。この MR で、対応するアクションに対して以下を行う必要があります:
+ユーザーフィールドを編集するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容は依頼自体によって異なります。
 
-1. ファイルを `active` フォルダーから `inactive` フォルダーへ移動します
-1. `active` 属性の値を `false` に変更します
+ピアによるレビューと承認後、MR をマージできます。次のデプロイ時に、Zendesk に同期されます。
 
-ピアレビューで承認された後、MR をマージできます。次のデプロイが発生したときに、Zendesk へ同期されます。
+#### ユーザーフィールドのタイトルを変更する
 
-### Deleting a user field
+ユーザーフィールドのタイトルを変更する必要がある場合、現在の値を `previous_title` 属性にコピーしてから `title` 属性を変更します。これにより、同期は更新対象のユーザーフィールドを引き続き特定できます。
 
-{{% alert title="Warning" color="warning" %}}
+### ユーザーフィールドを非アクティブ化する
 
-- これは、対応するリクエスト issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し、作業前に標準プロセスを通してください。
+{{% alert title="警告" color="warning" %}}
+
+- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください。存在しない場合は、まず作成して標準プロセスを通してから対応してください。
 
 {{% /alert %}}
 
-同期リポジトリは削除を実行しないため、これは Zendesk 自体で行う必要があります。
+ユーザーフィールドを非アクティブ化するには、同期リポジトリで MR を作成する必要があります。この MR では、対応するアクションに対して以下を行います。
+
+1. ファイルを `active` フォルダから `inactive` フォルダに移動
+1. `active` 属性の値を `false` に変更
+
+ピアによるレビューと承認後、MR をマージできます。次のデプロイ時に、Zendesk に同期されます。
+
+### ユーザーフィールドを削除する
+
+{{% alert title="警告" color="warning" %}}
+
+- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください。存在しない場合は、まず作成して標準プロセスを通してから対応してください。
+
+{{% /alert %}}
+
+同期リポジトリは削除を実行しないため、これは Zendesk 自体経由で行う必要があります。
 
 ユーザーフィールドを削除するには:
 
-1. 該当する Zendesk インスタンスの管理ダッシュボードに移動します
+1. Zendesk インスタンスの管理ダッシュボードに移動
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/home)
-1. `People > Configuration > User fields` に移動します
+1. `People > Configuration > User fields` に移動
    - [Zendesk Global](https://gitlab.zendesk.com/admin/people/configuration/user_fields)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/people/configuration/user_fields)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/people/configuration/user_fields)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/people/configuration/user_fields)
-1. 削除したいユーザーフィールドを見つけて、その名前をクリックします
-   - `Filter` ボタンをクリックしてアクティブフィルターを変更する必要があるかもしれません
-1. ページ右上の `Actions` をクリックします
-1. `Delete` をクリックします
-1. ポップアップで `Delete` をクリックして変更を送信します
+1. 削除したいユーザーフィールドを見つけて名前をクリック
+   - `Filter` ボタンをクリックしてアクティブフィルターを変更する必要がある場合があります
+1. ページ右上の `Actions` をクリック
+1. `Delete` をクリック
+1. ポップアップの `Delete` をクリックして変更を送信
 
-### Performing an exception deployment
+### 例外デプロイを実施する
 
-ユーザーフィールドの例外デプロイを実行するには、該当するユーザーフィールドの同期プロジェクトに移動し、スケジュールされたパイプラインのページに移動して、同期項目の再生ボタンをクリックします。これにより、ユーザーフィールドの同期ジョブがトリガーされます。
+ユーザーフィールドの例外デプロイを実施するには、対象のユーザーフィールド同期プロジェクトに移動し、スケジュールパイプラインのページに移動して、同期項目の再生ボタンをクリックします。これによりユーザーフィールドの同期ジョブがトリガーされます。
 
-## Common issues and troubleshooting
+## よくある問題とトラブルシューティング
 
-### Not seeing user field changes after a merge
+### マージ後にユーザーフィールドの変更が見えない
 
-ユーザーフィールドは `Standard` デプロイタイプに従うため、通常のデプロイサイクル中（または例外デプロイが実行されたとき）にのみデプロイされます。
+ユーザーフィールドは `Standard` デプロイタイプに従うため、通常のデプロイサイクル中（または例外デプロイが実施された場合）にのみデプロイされます。
