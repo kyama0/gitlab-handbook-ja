@@ -67,7 +67,7 @@ GitLab ドキュメントの更新や作成に興味がある場合は、[GitLab
 
 提案やフィードバックについては、[フィードバック Issue](https://gitlab.com/gitlab-org/technical-writing/team-tasks/-/issues/445) を参照してください。
 
-## Documentation
+## ドキュメント
 
 GitLab ドキュメントは、ユーザー、管理者、意思決定者が GitLab の機能について学び、自分たちの [DevOps ニーズ](https://about.gitlab.com/stages-devops-lifecycle/)を満たすために GitLab を最適に実装・利用できるよう支援するために作成されています。
 
@@ -132,7 +132,7 @@ GitLab における翻訳と国際化について詳しくは、[internationaliz
 [docs.gitlab.com](https://docs.gitlab.com/) サイトは英語と日本語で利用できます。
 ローカライゼーションプロセスについて詳しくは、[product documentation localization](/handbook/marketing/localization/tech_docs_localization/) を参照してください。
 
-## Assignments
+## 担当割り当て
 
 テクニカルライター（TW）は、[アサインされたグループ](#assignments-to-devops-stages-and-groups)とコラボレーションします。TW は[その他の作業](#assignments-to-other-projects-and-subjects)にアサインされることもあります。
 
@@ -403,7 +403,7 @@ PTO を取得するとき、テクニカルライターは次を行います。
 - コンテンツがより大きなドキュメントセットにうまく適合していることを確認する。
 - UI テキストについては、コンテンツが [Pajamas Design System](https://design.gitlab.com/) と[テクニカルライターワードリスト](https://docs.gitlab.com/development/documentation/styleguide/word_list/)で定義された標準を満たしていることを確認する。
 
-#### How the writers apply the levels of edit
+#### ライターが編集レベルを適用する方法
 
 品質、スピード、リソースの制約のバランスを取るため、テクニカルライターは異なるドキュメントに異なる編集レベルを適用します。
 
@@ -438,7 +438,7 @@ PTO を取得するとき、テクニカルライターは次を行います。
 いずれの場合も、テクニカルライターは、権威ある情報源がドキュメントの技術的正確性を確認したことを確認します。
 テクニカルライターは、必要な知識を持っている場合、または必要な検証を効率的に実施できる場合、その権威ある情報源として機能できます。
 
-### Review workflow
+### レビューワークフロー
 
 [ベロシティ](/handbook/engineering/development/principles/#velocity)と品質のバランスを取るため、テクニカルライターはこのワークフローを使用します。
 
@@ -466,7 +466,7 @@ PTO を取得するとき、テクニカルライターは次を行います。
 
 レビューのターンアラウンドタイムについて詳しくは、[Review-response SLO](../../../engineering/workflow/code-review/#review-response-slo) を参照してください。
 
-#### Triaging automated group mentions
+#### 自動グループメンションのトリアージ
 
 ボットまたはコミュニティコントリビューターが、CODEOWNERS に基づいて `@gl-docsteam` または複数のテクニカルライターにメンションしたとき、TW は次のことに名乗りを上げるべきです。
 
@@ -476,7 +476,7 @@ PTO を取得するとき、テクニカルライターは次を行います。
    - レビューの準備ができていないように見える場合、準備ができたら選ばれた TW にメンションするようコントリビューターに求めるコメントを残す。
 1. ボットのコメントを編集し、チームメンションをコードとしてフォーマットする。たとえば: ``Hi `@gl-docsteam`! Please review this documentation merge request.`` これにより、他の TW が MR の参加者リストから外れ、それに関する通知を受け取らなくなります。To-do 通知はバッククォート付きのユーザー名を表示するよう更新されるため、To-do リストから作業しているチームメンバーは、MR が対応済みであることを視覚的なヒントとして得られます。
 
-### Selecting a reviewer
+### レビュアーの選定
 
 ほとんどの場合、テクニカルライターは [GitLab Review Workload Dashboard](https://gitlab-org.gitlab.io/gitlab-roulette/?sortKey=stats.avg7&order=-1&hourFormat24=true&visible=maintainer%7Cdocs) を使って、テクニカルライティングレビューの担当者を特定すべきです。ページのフィルタがテクニカルライターのみを表示するように設定され、**Assign events last 7 days** でソートされていることを確認してください。
 
@@ -484,7 +484,7 @@ PTO を取得するとき、テクニカルライターは次を行います。
 
 特定の担当者を必要とするコンテンツがある場合、または DRI がいるページ（ドキュメントスタイルガイドなど）のマージリクエストがある場合、そのような場合はその人物にレビューを特別にアサインできます。
 
-### Determining Technical Writer availability
+### テクニカルライターの稼働状況の判断
 
 テクニカルライターが一般的なチームのマージリクエストレビューに忙しすぎて、自分のグループや他の優先事項に集中する必要がある場合があります。そのような場合、テクニカルライターは **Busy** チェックボックスを選択し、🔴 `:red_circle:` を追加することで GitLab ステータスを更新でき、これによりリビュアールーレットに自分の名前が表示されなくなります。
 
@@ -492,7 +492,7 @@ PTO を取得するとき、テクニカルライターは次を行います。
 
 それ以外のすべてのケースでは、テクニカルライターは自分のプロフィールに busy インジケーターを追加（および削除）できますが、busy インジケーターは一度に 2 日を超えて設定せず、2 週間に 1 回を超えて使用しないようお願いします。（リリース中の busy インジケーターの使用はこれに影響しないことに注意してください。）レビュールーレットに参加しない時間がさらに必要な場合は、マネージャーに相談して支援を受けられるようにしてください（これには busy インジケーターの追加使用が含まれる場合があります）。
 
-## Merge rights
+## マージ権限
 
 テクニカルライティングチームは、そのロールの一環として、GitLab プロジェクトへのマージ権限（[Maintainer アクセス](/handbook/engineering/workflow/code-review/#how-to-become-a-project-maintainer)を通じて）を与えられています。すべての開発者が Maintainer アクセスを得られるわけではないため、テクニカルライターはこの権限を責任を持って使用しなければなりません。
 
@@ -511,13 +511,13 @@ Maintainer として、テクニカルライターはマージするものを次
 - マージ前に、適切なラベルとマイルストーンを付けて、MR が完成していることを確認する。
 - DRI が MR をレビューおよび承認したことを確認する。
 
-## Onboarding Technical Writers
+## テクニカルライターのオンボーディング
 
 テクニカルライターはオンボーディング中、シャドーグループにアサインされ、その後トレーニーとして貢献を開始します。ベテランのテクニカルライターがそのプロセスを通じてコーチングします。
 
 オンボーディングのフェーズとタスクについて詳しくは、[テクニカルライターオンボーディングテンプレート](https://gitlab.com/gitlab-org/technical-writing/team-tasks/-/blob/main/.gitlab/issue_templates/tw_onboarding.md)を参照してください。
 
-## Standups
+## スタンドアップ
 
 私たちは、週 2 回のスタンドアップ（火曜と木曜の現地時間午前 10:00）と週次のランダムな質問（水曜の午後 12:00 に実施）のために [Geekbot](https://app.geekbot.com/dashboard/home) を設定しています。
 
@@ -542,7 +542,7 @@ Weekly Wednesday Question スタンドアップに新しいメンバーを追加
 1. 一番下までスクロールし、**Add question** を選択する。
 1. **Save questions** を選択する。
 
-## Community contribution opportunities
+## コミュニティ貢献の機会
 
 私たちは、[コンテンツの改善](https://docs.gitlab.com/development/contributing/)、および https://docs.gitlab.com にあるドキュメントウェブサイトの開発の両方を歓迎します。
 
@@ -551,17 +551,17 @@ Weekly Wednesday Question スタンドアップに新しいメンバーを追加
 - [List of available issues](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&label_name%5B%5D=documentation&label_name%5B%5D=docs-only&label_name%5B%5D=Seeking%20community%20contributions)
 - [GitLab Docs repository](https://gitlab.com/gitlab-org/technical-writing/docs-gitlab-com)
 
-## Make an urgent content update on docs.gitlab.com
+## docs.gitlab.com で緊急のコンテンツ更新を行う
 
 ドキュメントウェブサイトは 1 時間ごとに更新されます。まれに、ドキュメント更新をもう少し速く公開しなければならないことがあります。緊急の更新が必要な場合は、[ドキュメントサイトを手動でデプロイする](https://docs.gitlab.com/development/documentation/site_architecture/deployment_process/#manually-deploy-to-production)手順に従ってください。
 
-## Report a docs website problem or infrastructure issue
+## Docs ウェブサイトの問題やインフラの問題を報告する
 
 ウェブサイトのバグや機能リクエストは、[GitLab Docs プロジェクトの Issue リスト](https://gitlab.com/gitlab-org/technical-writing/docs-gitlab-com/-/issues)で報告してください。
 
 障害やウェブサイトの可用性の問題については、[Docs site infrastructure](https://gitlab.com/gitlab-org/technical-writing/docs-gitlab-com/-/blob/main/doc/infrastructure.md) を参照してください。
 
-## Related topics
+## 関連トピック
 
 - [Documentation workflow](https://docs.gitlab.com/development/documentation/workflow/)
 - [Set up your local environment](https://docs.gitlab.com/development/documentation/authoring_environment.html)
