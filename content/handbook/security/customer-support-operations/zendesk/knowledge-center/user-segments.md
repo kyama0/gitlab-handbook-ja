@@ -1,7 +1,6 @@
 ---
 title: 'ユーザーセグメント'
 description: 'Zendesk ユーザーセグメントに関するドキュメント'
-date: 2025-12-23
 upstream_path: /handbook/security/customer-support-operations/zendesk/knowledge-center/user-segments/
 upstream_sha: 7405b4b85e7e4a5d61d4eff68e49976463e3dada
 translated_at: "2026-05-26T00:00:00Z"
