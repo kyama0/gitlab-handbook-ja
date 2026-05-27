@@ -3,7 +3,7 @@ title: 'Cohort A: 非アクティブな Free ユーザーのサブセット'
 owning-stage: "~devops::tenant scale"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_a/
-upstream_sha: "7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc"
+upstream_sha: "154fb2bd6436508aa2d90583cc235d5fe28b1705"
 lastmod: "2026-05-27T17:43:35+12:00"
 translated_at: "2026-05-27T00:00:00Z"
 translator: claude

@@ -1,11 +1,11 @@
 ---
 title: 'リソース'
-description: 'Customer Support Operations リソースに関するドキュメント'
+description: 'Customer Support Operations のリソースに関するドキュメント'
 date: 2026-01-07
 upstream_path: /handbook/security/customer-support-operations/resources/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: "154fb2bd6436508aa2d90583cc235d5fe28b1705"
+translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-01-21T12:28:59-06:00"
+lastmod: 2026-05-26T12:05:00-05:00
 ---

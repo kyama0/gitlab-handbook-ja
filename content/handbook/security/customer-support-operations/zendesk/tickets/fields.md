@@ -3,11 +3,11 @@ title: 'チケットフィールド'
 description: 'Zendesk のチケットフィールドに関するドキュメント'
 date: 2025-12-26
 upstream_path: /handbook/security/customer-support-operations/zendesk/tickets/fields/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 154fb2bd6436508aa2d90583cc235d5fe28b1705
+translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、GitLab における Zendesk のチケットフィールドの作成、編集、管理方法について説明します。管理者は[管理者タスク](#administrator-tasks)セクションを確認してください。
@@ -18,6 +18,7 @@ lastmod: "2026-02-12T20:47:52+00:00"
 - 同期リポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/tickets/forms-and-fields)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/tickets/forms-and-fields)
+- `CustSuppOps Zendesk Test Suite Generator` が有効
 
 {{% /alert %}}
 {{% alert title="警告" color="warning" %}}
@@ -31,24 +32,24 @@ lastmod: "2026-02-12T20:47:52+00:00"
 
 ### チケットフィールドとは
 
-チケットフィールドは、チケットフォームを構成する個別のコンポーネントです。特定の情報を求めたり、チケットメタデータの生成を支援したりするためにカスタマイズできます。
+チケットフィールドは、チケットフォームを構成する個々のコンポーネントです。特定の情報を尋ねるようにカスタマイズでき、チケットのメタデータの生成に役立ちます。
 
 [Zendesk](https://support.zendesk.com/hc/en-us/articles/4408886739098-About-ticket-fields) によると、チケットフィールドには 2 種類あります。
 
-> - 標準チケットフィールド - エージェントがチケットで見る事前定義されたフィールド。チケット共有など追加の Zendesk Support 機能を有効にすると、追加の標準フィールドがチケットページに追加されます。一部の標準フィールドは非アクティブ化および再アクティブ化できます（すべてではない）。
-[標準チケットフィールドの完全なリスト](https://support.zendesk.com/hc/en-us/articles/4408886739098-About-ticket-fields#topic_drw_ft1_3nb)を参照してください。
-> - カスタムチケットフィールド - サポートを依頼している人から追加情報を集めるために、標準チケットフィールドに加えて作成されます。例えば、製品名やモデル番号を選択するように求めるカスタムフィールドを追加できます。
-[カスタムチケットフィールドタイプの完全なリスト](https://support.zendesk.com/hc/en-us/articles/4408838961562)を参照してください。
+> - 標準チケットフィールド - エージェントがチケット内で目にする、あらかじめ定義されたフィールド。チケット共有などの追加の Zendesk Support 機能を有効化すると、追加の標準フィールドがチケットページに追加されます。一部の（すべてではない）標準フィールドは無効化および再有効化できます。
+> [標準チケットフィールドの完全な一覧](https://support.zendesk.com/hc/en-us/articles/4408886739098-About-ticket-fields#topic_drw_ft1_3nb) を参照してください。
+> - カスタムチケットフィールド - サポートをリクエストしている人から追加の情報を集めるために、標準チケットフィールドに加えて作成されるフィールド。たとえば、製品名やモデル番号を選択するよう促すカスタムフィールドを追加できます。
+> [カスタムチケットフィールドタイプの完全な一覧](https://support.zendesk.com/hc/en-us/articles/4408838961562) を参照してください。
 
 ### チケットフィールドの管理方法
 
-Zendesk は UI を通じてチケットフィールドを完全に管理する方法を提供していますが、私たちはよりバージョン管理されたメソドロジーを採用しています。これにより、定められたレビュープロセスや、必要に応じてロールバックを行う能力などが得られます。
+Zendesk は UI を介してチケットフィールドを管理する完全な方法を提供していますが、私たちはよりバージョン管理されたメソドロジーを採用しています。これにより、一定のレビュープロセスや、必要に応じたロールバックの実行などが可能になります。
 
-そのため、同期リポジトリを利用しています。
+そのため、私たちは同期リポジトリを利用しています。
 
 ### 同期リポジトリの仕組み
 
-同期リポジトリのワークフローは以下のプロセスに従います。
+同期リポジトリのワークフローは次のプロセスに従います。
 
 ```mermaid
 graph TD;
@@ -63,43 +64,43 @@ graph TD;
 
 ### チケットフィールドのタイプ
 
-GitLab で最もよく使うタイプは以下のとおりです。
+GitLab で最もよく使うタイプは次のとおりです。
 
-| 名前 | API type 値 | 用途 | 使用例 |
+| 名前 | API タイプ値 | 用途 | 使用例 |
 |------|----------------|---------|------------------|
 | Checkbox | `checkbox` | 単一の true/false オプション | "BPO Ticket" |
-| Date | `date` | 日付選択用 | "Due date" |
-| Decimal | `decimal` | 小数を含む数値用 | "ARR associated" |
+| Date | `date` | 日付の選択用 | "Due date" |
+| Decimal | `decimal` | 小数を使う数値用 | "ARR associated" |
 | Drop-down | `tagger` | 1 つの選択を許可するドロップダウン用 | "Product Category" |
-| Multi-line | `textarea` | 複数行が必要なフリースタイルフィールド用 | "Troubleshooting notes" |
+| Multi-line | `textarea` | 複数行が必要な自由記述フィールド用 | "Troubleshooting notes" |
 | Multi-select | `multiselect` | 複数の選択を許可するドロップダウン用 | "Areas impacted" |
-| Numeric | `integer` | 小数を含まない数値用 | "GitLab.com user ID" |
-| Regex | `regexp` | 正規表現の検証が必要なテキストスタイルフィールド用 | "Salesforce account ID" |
-| Text | `text` | フリースタイルフィールド用 | "GitLab issue link" |
+| Numeric | `integer` | 小数を使わない数値用 | "GitLab.com user ID" |
+| Regex | `regexp` | 正規表現による検証が必要なテキスト形式のフィールド用 | "Salesforce account ID" |
+| Text | `text` | 自由記述フィールド用 | "GitLab issue link" |
 
-完全なリストについては、[Zendesk のドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types)を参照してください。
+完全な一覧については、[Zendesk のドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types) を参照してください
 
-#### チケットフィールドオプションに関する注意
+#### チケットフィールドのオプションに関する注意
 
 `Drop-down` および `Multi-select` フィールドタイプには、フィールド上にカスタムオプションが存在します。
 
-カスタムオプションのあるチケットフィールドでは、`::` を区切り文字として使用することで「グループ化」または「スコープ化」できます。
+カスタムオプションを持つチケットフィールドでは、`::` をセパレータとして使うことで、それらをまとめて「グループ化」または「スコープ化」できます。
 
-例えば、以下のオプションがあるとします。
+例として、次のオプションがあったとします。
 
 - Red
 - Blue
 - Mars
 - Venus
 
-そして同類のアイテム（Colors と Planets）をグループ化したい場合、以下のようにします。
+そして、似た項目（Colors と Planets）をグループ化したい場合は、次のようにします。
 
 - `Colors::Red`
 - `Colors::Blue`
 - `Planets::Mars`
 - `Planets::Venus`
 
-その結果、ドロップダウンには最初に 2 つのオプション（`Colors` と `Planets`）が表示されます。いずれかのオプションがクリックされると、そのグループのオプションが表示され、選択可能になります。
+これにより、最初は 2 つのオプション（`Colors` と `Planets`）を表示するドロップダウンになります。いずれかのオプションをクリックすると、そのグループのオプションが表示され、選択可能になります。
 
 **グループ化前:**
 
@@ -117,54 +118,54 @@ GitLab で最もよく使うタイプは以下のとおりです。
   - Mars
   - Venus
 
-## 管理者ではない者がチケットフィールドを作成する
+## 管理者以外がチケットフィールドを作成する
 
-チケットフィールドの作成については、[Feature Request の Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（カスタマーサポートオペレーションチームによる手動対応が必要となるため）。
+チケットフィールドの作成については、[Feature Request の Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動での対応が必要になるためです）。
 
-## 管理者ではない者がチケットフィールドを編集する
+## 管理者以外がチケットフィールドを編集する
 
-チケットフィールドの変更については、[Feature Request の Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（カスタマーサポートオペレーションチームによる手動対応が必要となるため）。
+チケットフィールドの変更については、[Feature Request の Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動での対応が必要になるためです）。
 
-## 管理者ではない者がチケットフィールドを非アクティブ化する
+## 管理者以外がチケットフィールドを無効化する
 
-チケットフィールドの非アクティブ化を依頼するには、[Feature Request の Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（カスタマーサポートオペレーションチームによる手動対応が必要となるため）。
+チケットフィールドの無効化をリクエストするには、[Feature Request の Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動での対応が必要になるためです）。
 
-## 管理者タスク {#administrator-tasks}
+## 管理者タスク
 
-{{% alert title="注意" color="primary" %}}
+{{% alert title="Note" color="primary" %}}
 
-- このセクションのすべての項目は、Zendesk への `Administrator` レベルのアクセスが必要です。
+- このセクションのすべての項目には、Zendesk への `Administrator` レベルのアクセス権が必要です。
 
 {{% /alert %}}
 
-### チケットフィールドを表示する
+### チケットフィールドの表示
 
 Zendesk でチケットフィールドを表示するには:
 
-1. Zendesk インスタンスの管理パネルに移動
+1. Zendesk インスタンスの管理パネルに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/home)
-1. `Objects and rules > Tickets > Fields` に移動
+1. `Objects and rules > Tickets > Fields` に移動します
    - [Zendesk Global](https://gitlab.zendesk.com/admin/objects-rules/tickets/ticket-fields)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/objects-rules/tickets/ticket-fields)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/objects-rules/tickets/ticket-fields)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/objects-rules/tickets/ticket-fields)
 
-注意: 非アクティブのユーザーフィールドを表示したい場合は、`Filter` ボタンをクリックしてアクティブフィルターを変更する必要がある場合があります。
+注: アクティブでないユーザーフィールドを表示したい場合は、`Filter` ボタンをクリックしてアクティブフィルターを変更する必要があるかもしれません
 
-### チケットフィールドを作成する
+### チケットフィールドの作成
 
 {{% alert title="警告" color="warning" %}}
 
-- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください。存在しない場合は、まず作成して標準プロセスを通してから対応してください。
+- これは、対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し（そして対応に着手する前に標準プロセスを通してから）行ってください。
 
 {{% /alert %}}
 
-チケットフィールドを作成するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容は依頼自体によって異なります。具体的な内容はチケットフィールドのタイプによって異なる場合があります。
+チケットフィールドの作成には、同期リポジトリで MR を作成する必要があります。具体的にどのような変更を加えるかは、リクエスト自体によって決まります。具体的な内容は、チケットフィールドのタイプによって異なる場合があります。
 
-**注意:** 一般的なフィールドタイプ向けのテンプレートを示します。その他のタイプ（date、decimal、textarea、multiselect、regexp）については、`type` 属性をそれに応じて変更し、タイプ固有の要件については [Zendesk フィールドのドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types)を参照してください。
+**注:** よく使われるフィールドタイプのテンプレートを示します。その他のタイプ（date、decimal、textarea、multiselect、regexp）については、`type` 属性をそれに応じて変更し、タイプ固有の要件については [Zendesk のフィールドドキュメント](https://support.zendesk.com/hc/en-us/articles/4408838961562-About-custom-fields-and-custom-field-types) を参照してください。
 
 **ヒント:** 以下の各フィールドタイプをクリックすると、そのテンプレートが表示されます。
 
@@ -285,92 +286,92 @@ custom_field_options: # Always null unless "dropdown" or "multiselect"
 
 </details>
 
-ピアによるレビューと承認後、MR をマージできます。次のデプロイ時に、Zendesk に同期されます。
+ピアが MR をレビューして承認したら、MR をマージできます。次回のデプロイが行われると、Zendesk に同期されます。
 
 #### チケットフォームに関する注意
 
 {{% alert title="重要" color="info" %}}
 
-**鶏と卵の問題:** チケットフォームの MR が、まだ存在しないフィールドを参照している場合、検証は失敗します。この場合、以下の手順を使用して、まず Zendesk でフィールドを手動作成してから、フォーム MR を進めてください。
+**鶏が先か卵が先かの問題:** チケットフォームの MR がまだ存在しないフィールドを参照している場合、検証は失敗します。この場合、以下の手順を使ってまず Zendesk でフィールドを手動作成し、その後でフォームの MR を進めてください。
 
 {{% /alert %}}
 
-1. Zendesk インスタンスの管理パネルに移動
+1. Zendesk インスタンスの管理パネルに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/home)
-1. `Objects and rules > Tickets > Fields` に移動
+1. `Objects and rules > Tickets > Fields` に移動します
    - [Zendesk Global](https://gitlab.zendesk.com/admin/objects-rules/tickets/ticket-fields)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/objects-rules/tickets/ticket-fields)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/objects-rules/tickets/ticket-fields)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/objects-rules/tickets/ticket-fields)
-1. `Add field` ボタン（右上）をクリック
-1. 作成するフィールドタイプを選択
-1. フィールド情報を記入（タイプによって異なる）
-1. `Save` ボタン（右下）をクリック
+1. `Add field` ボタン（右上）をクリックします
+1. 作成するフィールドタイプを選択します
+1. フィールド情報を入力します（タイプによって異なります）
+1. `Save` ボタン（右下）をクリックします
 
-### チケットフィールドを編集する
-
-{{% alert title="警告" color="warning" %}}
-
-- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください。存在しない場合は、まず作成して標準プロセスを通してから対応してください。
-
-{{% /alert %}}
-
-チケットフィールドを編集するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容は依頼自体によって異なります。
-
-ピアによるレビューと承認後、MR をマージできます。次のデプロイ時に、Zendesk に同期されます。
-
-#### チケットフィールドのタイトルを変更する
-
-チケットフィールドのタイトルを変更する必要がある場合、現在の値を `previous_title` 属性にコピーしてから `title` 属性を変更します。これにより、同期は更新対象のチケットフィールドを引き続き特定できます。
-
-### チケットフィールドを非アクティブ化する
+### チケットフィールドの編集
 
 {{% alert title="警告" color="warning" %}}
 
-- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください。存在しない場合は、まず作成して標準プロセスを通してから対応してください。
+- これは、対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し（そして対応に着手する前に標準プロセスを通してから）行ってください。
 
 {{% /alert %}}
 
-チケットフィールドを非アクティブ化するには、同期リポジトリで MR を作成する必要があります。この MR では、対応するアクションに対して以下を行います。
+チケットフィールドを編集するには、同期リポジトリで MR を作成する必要があります。具体的にどのような変更を加えるかは、リクエスト自体によって決まります。
 
-1. ファイルを `active` フォルダから `inactive` フォルダに移動
-1. `active` 属性の値を `false` に変更
+ピアが MR をレビューして承認したら、MR をマージできます。次回のデプロイが行われると、Zendesk に同期されます。
 
-ピアによるレビューと承認後、MR をマージできます。次のデプロイ時に、Zendesk に同期されます。
+#### チケットフィールドのタイトルの変更
 
-### チケットフィールドを削除する
+チケットフィールドのタイトルを変更する必要がある場合は、現在の値を `previous_title` 属性にコピーしてから、`title` 属性を変更します。これにより、同期処理が更新対象のチケットフィールドを引き続き特定できるようになります。
+
+### チケットフィールドの無効化
 
 {{% alert title="警告" color="warning" %}}
 
-- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください。存在しない場合は、まず作成して標準プロセスを通してから対応してください。
-- フォーム、トリガー、オートメーションなどで使用されていないフィールドのみ削除できます。
+- これは、対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し（そして対応に着手する前に標準プロセスを通してから）行ってください。
 
 {{% /alert %}}
 
-同期リポジトリは削除を実行しないため、これは Zendesk 自体経由で行う必要があります。
+チケットフィールドを無効化するには、同期リポジトリで MR を作成する必要があります。この MR では、対応するアクションに対して次のことを行う必要があります。
+
+1. ファイルを `active` フォルダから `inactive` フォルダへ移動します
+1. `active` 属性の値を `false` に変更します
+
+ピアが MR をレビューして承認したら、MR をマージできます。次回のデプロイが行われると、Zendesk に同期されます。
+
+### チケットフィールドの削除
+
+{{% alert title="警告" color="warning" %}}
+
+- これは、対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し（そして対応に着手する前に標準プロセスを通してから）行ってください。
+- フォーム、トリガー、自動化などで使用されていないフィールドのみを削除できます。
+
+{{% /alert %}}
+
+同期リポジトリは削除を実行しないため、これは Zendesk 自体で行う必要があります。
 
 チケットフィールドを削除するには:
 
-1. Zendesk インスタンスの管理ダッシュボードに移動
+1. Zendesk インスタンスの管理ダッシュボードに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/home)
-1. `Objects and rules > Tickets > Fields` に移動
+1. `Objects and rules > Tickets > Fields` に移動します
    - [Zendesk Global](https://gitlab.zendesk.com/admin/objects-rules/tickets/ticket-fields)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/objects-rules/tickets/ticket-fields)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/objects-rules/tickets/ticket-fields)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/objects-rules/tickets/ticket-fields)
-1. 削除するチケットフィールドを見つけて名前をクリック
-   - `Filter` ボタンをクリックしてアクティブフィルターを変更する必要がある場合があります
-1. ページ右上の `Actions` をクリック
-1. `Delete` をクリック
-1. ポップアップの `Delete` をクリックして変更を送信
+1. 削除したいチケットフィールドを見つけ、その名前をクリックします
+   - `Filter` ボタンをクリックしてアクティブフィルターを変更する必要があるかもしれません
+1. ページ右上の `Actions` をクリックします
+1. `Delete` をクリックします
+1. ポップアップで `Delete` をクリックして変更を送信します
 
-### 例外デプロイを実施する
+### 例外デプロイの実行
 
 {{% alert title="警告" color="warning" %}}
 
@@ -378,10 +379,10 @@ custom_field_options: # Always null unless "dropdown" or "multiselect"
 
 {{% /alert %}}
 
-チケットフィールドの例外デプロイを実施するには、対象のチケットフィールド同期プロジェクトに移動し、スケジュールパイプラインのページに移動して、同期項目の再生ボタンをクリックします。これによりチケットフィールドの同期ジョブがトリガーされます。
+チケットフィールドの例外デプロイを実行するには、該当するチケットフィールド同期プロジェクトに移動し、スケジュール済みパイプラインのページに行き、その同期項目の再生ボタンをクリックします。これにより、チケットフィールドの同期ジョブがトリガーされます。
 
 ## よくある問題とトラブルシューティング
 
-### マージ後にチケットフィールドの変更が見えない
+### マージ後にチケットフィールドの変更が反映されない
 
-チケットフィールドは `Standard` デプロイタイプに従うため、通常のデプロイサイクル中（または例外デプロイが実施された場合）にのみデプロイされます。
+チケットフィールドは `Standard` デプロイタイプに従うため、通常のデプロイサイクル中（または例外デプロイが行われたとき）にのみデプロイされます

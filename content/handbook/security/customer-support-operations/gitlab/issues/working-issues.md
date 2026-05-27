@@ -1,9 +1,9 @@
 ---
-title: 'Issue の対応'
+title: 'Working issues'
 description: 'Issue 対応に関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/gitlab/issues/working-issues/
-upstream_sha: "7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc"
-lastmod: 2026-04-11T00:15:40-05:00
+upstream_sha: "154fb2bd6436508aa2d90583cc235d5fe28b1705"
+lastmod: 2026-05-26T12:05:00-05:00
 translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false

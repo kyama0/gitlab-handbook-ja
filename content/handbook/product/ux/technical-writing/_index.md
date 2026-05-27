@@ -1,8 +1,8 @@
 ---
 title: "テクニカルライティング"
 upstream_path: /handbook/product/ux/technical-writing/
-upstream_sha: "7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc"
-lastmod: 2026-05-20T09:32:02-07:00
+upstream_sha: "154fb2bd6436508aa2d90583cc235d5fe28b1705"
+lastmod: 2026-05-26T16:33:15+01:00
 translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
