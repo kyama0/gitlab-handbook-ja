@@ -1,481 +1,456 @@
 ---
 owning-stage: "~devops::tenant scale"
-title: 'Organizations ADR 010: Organization Read-Only Mode（Organization 読み取り専用モード）'
-description: 'Cell をまたぐ移行や分離有効化の際に使用される Organization 単位の読み取り専用状態を導入し、ソース Cell での書き込みをブロックしつつ読み取りは許可します。コントローラ、REST API、GraphQL、GitAccess、コンテナレジストリ、LFS、Sidekiq の各レイヤで強制されます。'
+title: 'Organizations ADR 010: Organization Read-Only Mode'
+description: 'Cell をまたぐ移行や分離の有効化の際に使用される Organization 単位の読み取り専用状態を導入します。ソース Cell での書き込みをブロックしつつ読み取りは許可し、コントローラ、REST API、GraphQL、GitAccess、コンテナレジストリ、LFS、Sidekiq の各レイヤで強制します。'
 creation-date: "2026-04-28"
 authors: [ "@abdwddd" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode/
-upstream_sha: "7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc"
-lastmod: "2026-05-15T14:59:04+12:00"
+upstream_sha: "154fb2bd6436508aa2d90583cc235d5fe28b1705"
+lastmod: "2026-05-27T17:43:35+12:00"
 translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
 ---
 
-## コンテキスト
+## Context
 
-ある Organization を 1 つの Cell から別の Cell へ移行する際
-（[Organization Data Migration blueprint](../../organization-data-migration/_index.md) を参照）、
-ソース Cell から宛先 Cell へデータがコピーされる期間が存在します。データの一貫性
-を保証するため、カットオーバーが開始されたらソース側の Organization は書き込みの
-受け付けを停止しなければなりません。一方で、ユーザーが締め出されないように、また
-進行中の読み取りトラフィック（クローン、プル、ページビュー、GraphQL クエリ）が
-動き続けるように、読み取りは引き続き許可する必要があります。
+Organization をある Cell から別の Cell へ移行する際
+（[Organization Data Migration blueprint](../../organization-data-migration/_index.md)を参照）、
+ソース Cell から宛先 Cell へデータがコピーされる期間があります。データの整合性を
+保証するため、カットオーバーが開始されたらソースの Organization は書き込みの受け付けを
+停止しなければなりません。一方で、ユーザーが締め出されず、進行中の読み取りトラフィック
+（クローン、プル、ページビュー、GraphQL クエリ）が機能し続けるよう、読み取りは
+引き続き許可する必要があります。
 
-Cohort B の条件
+Cohort B の基準
 （[Cohort B criteria](../../organization-data-migration/cohorts/criteria_cohort_b.md)）
-では、顧客が「移行中の短い読み取り専用ウィンドウ」を受け入れることが明示的に
-要求されています。今日の GitLab には **インスタンス全体** のメンテナンスモード
+では、顧客が「移行中の短い読み取り専用ウィンドウ」を受け入れることを明示的に
+求めています。今日、GitLab には **インスタンス全体** の Maintenance Mode
 （[Maintenance Mode administration guide](https://gitlab.com/help/administration/maintenance_mode/_index)）
-しかなく、これは粒度が粗すぎます。ソース Cell 全体を読み取り専用にすると、その
-Cell を共有する他のすべての Organization までブロックしてしまいます。
+しかありませんが、これは粒度が粗すぎます。ソース Cell 全体を読み取り専用にすると、
+その Cell を共有する他のすべての Organization がブロックされてしまいます。
 
-私たちには、**単一の Organization** にスコープされた、次のようなメカニズムが必要です。
+私たちには **単一の Organization** にスコープされた、次のようなメカニズムが必要です。
 
-- 該当する Organization に対してのみ、ソース Cell での書き込みをブロックする。
+- 影響を受ける Organization に対してのみ、ソース Cell での書き込みをブロックする。
 - 同じ Cell 上の他のすべての Organization は完全に書き込み可能なままにする。
-- 状態を変更しうるあらゆるレイヤ（コントローラ、REST API、GraphQL ミューテーション、
-  Git プッシュ、Container Registry プッシュ、LFS アップロード、Sidekiq ジョブ、
-  内部サービス）で一貫して強制される。
-- 観測可能で、監査可能で、元に戻せる。
+- 状態を変更しうるすべてのレイヤ（コントローラ、REST API、GraphQL ミューテーション、
+  Git プッシュ、Container Registry プッシュ、LFS アップロード、Sidekiq ジョブ、内部サービス）
+  にわたって一貫して強制される。
+- 観測可能で、監査可能で、復帰可能である。
 
-### 関連作業
+### Related work
 
-この ADR は、反復的な POC から生まれた設計を正式に文書化したものです。これは
-以前の TLG スコープのアプローチおよび Rack ミドルウェアのアプローチを置き換えます。
+この ADR は、反復的な POC から生まれた設計を形式化したものです。これは、以前の
+TLG スコープのアプローチや Rack ミドルウェアのアプローチに取って代わるものです。
 
 - 親 epic: [Organization buildout](https://gitlab.com/groups/gitlab-org/-/epics/20404)。
-- 推進 issue: [POC: Organization-scoped read-only mode (controller-layer enforcement)](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327)。
+- ドライビング issue: [POC: Organization-scoped read-only mode (controller-layer enforcement)](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327)。
 - 置き換えられた TLG スコープの POC: [#590009](https://gitlab.com/gitlab-org/gitlab/-/issues/590009)
   とその Step 2 実装 [!226983](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/226983)。
-  これらは Rack ミドルウェアとパスプレフィックスのマッチングを使用していました。いずれも
-  `Current.organization` をキーとするコントローラレイヤでの強制を採用するために
-  クローズされました。
-- 現行の Organization スコープの POC: [!228743](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/228743)
-  は Step 1（Organization のステートマシン）と、実装計画の Step 2、3、5 の最初の版を
+  Rack ミドルウェアとパスプレフィックスのマッチングを使用していました。両方とも、
+  `Current.organization` をキーとしたコントローラレイヤでの強制を優先してクローズされました。
+- 現在の Organization スコープの POC: [!228743](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/228743)
+  は、Step 1（Organization ステートマシン）と、実装計画の Step 2、3、5 の最初の試作版を
   提供します。
 
-## 決定
+## Decision
 
-私たちは **Organization Read-Only Mode** を導入します。これは Organization 単位の
-状態であり、`Organizations::Organization` 上のファーストクラスの遷移としてモデル化され、
-アプリケーション内のあらゆる書き込み面で一貫して強制されます。状態が `read_only` に
-設定されている間、読み取りは引き続き機能し、その Organization が所有するリソースへの
-書き込みは拒否されます。
+私たちは **Organization Read-Only Mode** を導入します。これは Organization 単位の状態であり、
+`Organizations::Organization` 上のファーストクラスの遷移としてモデル化され、アプリケーション内の
+あらゆる書き込み面にわたって一貫して強制されます。状態が `read_only` に設定されている間、
+読み取りは引き続き機能し、その Organization が所有するリソースに対する書き込みは拒否されます。
 
-この状態は、監査と観測可能性のために記録される `reason`（migration、isolation、incident、
-billing、legal）を保持します。reason はバナーやエラーレスポンスでエンドユーザーに
-公開されることはありません。ユーザーに見える文言は汎用的なものです（*ユーザーに見える挙動*
-を参照）。
+この状態には、監査と観測可能性のために記録される `reason`（migration、isolation、incident、
+billing、legal）が伴います。reason はバナーやエラーレスポンスでエンドユーザーに表示されることは
+ありません。ユーザーに見えるコピーは汎用的なものです（*User-visible behavior* を参照）。
 
-このフリーズは **org が所有するデータ** に適用されます。すなわち、トップレベルグループ、
-ネームスペース、プロジェクト、およびそれらが含むリソースです。
+このフリーズは **Organization が所有するデータ**（トップレベルグループ、namespace、プロジェクト、
+およびそれらが含むリソース）に適用されます。
 
-### 状態モデル
+### State model
 
-読み取り専用は、すでに Organization のライフサイクル（`unconfirmed`、`confirmed`、
-`active`、`deletion_scheduled`、`deletion_in_progress`）を駆動している既存の
-`Organizations::Stateful` concern 上の新しい状態として追加されます。遷移は
-`active ↔ read_only` に制限されており、任意の `deletion_*` 状態から、または確認前の
-状態から `read_only` に入ることは許可されません。`read_only` への各エントリと
-そこからのイグジットは、既存の遷移フックを通じて監査されます。
+read-only は、既存の `Organizations::Stateful` concern に新しい状態として追加されます。この concern は
+すでに Organization のライフサイクル（`unconfirmed`、`confirmed`、`active`、`deletion_scheduled`、
+`deletion_in_progress`）を駆動しています。遷移は `active ↔ read_only` に制限されており、いずれかの
+`deletion_*` 状態や確認前の状態から `read_only` に入ることは許可されません。`read_only` への
+すべての出入りは、既存の遷移フックを介して監査されます。
 
-具体的な enum 値、イベント名、ヘルパーのシグネチャは実装上の詳細であり、
+具体的な enum 値、イベント名、ヘルパーのシグネチャは実装の詳細であり、
 [#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327)
-および [!228743](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/228743)
-に存在します。
+と [!228743](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/228743) にあります。
 
-### 制御面
+### Control surfaces
 
 状態遷移は次によって駆動されます。
 
-- カットオーバー開始時のソース Cell 上の **移行ツール**（`reason: migration`）。
-  そして Organization が完全に移行され、Topology Service でルーティングが切り替えられた
-  後に、宛先 Cell でクリアされます。
-- **分離有効化ツール**（`reason: isolation`）。
-- インシデント、billing、legal ホールドのための **管理者 / SRE による制御**。
-  Rails コンソールに加えて、インスタンスの Admin エリアおよび Rake タスクを通じて
-  提供されます。
-- **Rails コンソール**。移行、分離、またはインシデント対応の際にオペレーターが
-  起動する遷移のために使用します。
+- カットオーバー開始時のソース Cell 上での **移行ツール**（`reason: migration`）。
+  Organization が完全に移行され、Topology Service でルーティングが切り替えられたら、
+  宛先 Cell 上でクリアされます。
+- **分離の有効化ツール**（`reason: isolation`）。
+- インシデント、billing、legal ホールド向けの **Admin / SRE のコントロール**。
+  Rails コンソールに加えて、インスタンスの Admin エリアと Rake タスクを通じて公開されます。
+- 移行、分離、またはインシデント対応中のオペレータ起点の遷移向けの **Rails コンソール**。
 
-**デフォルト Organization は読み取り専用モードから除外** されます。デフォルト
-Organization はインスタンスレベルのリソースおよび Self-Managed/Dedicated の
-デプロイメントをホストしており（[ADR 007](007_self_managed_dedicated_single_organization.md)
-を参照）、これをフリーズすることはインスタンス全体をオフラインにすることと等価に
-なります。Admin エリアはこれに対して読み取り専用のトグルを公開せず、根底にある遷移
-ガードがその操作を拒否します。SM/Dedicated → dotCom の移行ケースについては、
-Organization 単位の読み取り専用ではなく、インスタンス全体のメンテナンスモードが
-適切なツールです。
+**デフォルトの Organization は read-only モードから除外されます**。デフォルトの Organization は
+インスタンスレベルのリソースと Self-Managed/Dedicated のデプロイ
+（[ADR 007](007_self_managed_dedicated_single_organization.md)を参照）をホストしており、
+これをフリーズすることはインスタンス全体をオフラインにすることと同等になります。Admin エリアでは
+これに対する読み取り専用トグルを公開せず、基盤となる遷移ガードがこの操作を拒否します。
+SM/Dedicated → dotCom の移行ケースでは、Organization 単位の read-only ではなく、
+インスタンス全体の Maintenance Mode が適切なツールです。
 
-### カットオーバーの準備状態
+### Cutover readiness
 
-Cell 間の Organization 移行では、データのカットオーバーの前の *ドレイン* フェーズとして
-Organization Read-Only Mode を使用します。Redis は Cell ごとに分かれており、宛先 Cell
-には **コピーされない** ため、カットオーバー時にソース Cell の Redis に残っている
-Sidekiq ジョブはすべて失われます。したがって読み取り専用は、カットオーバーが進む前に、
-その Organization についてソース Cell をチェック可能な「処理中ゼロ」の状態へと
-導かなければなりません。
+Cell 間の Organization 移行は、データのカットオーバー前の *ドレイン* フェーズとして
+Organization Read-Only Mode を使用します。Redis は Cell ごとであり、宛先 Cell には
+**コピーされない** ため、カットオーバー時にソース Cell の Redis に残っている Sidekiq ジョブは
+すべて失われます。したがって read-only は、カットオーバーが進む前に、その Organization について
+ソース Cell をチェック可能で実行中ジョブがゼロの状態に駆動しなければなりません。
 
-準備状態の契約は次のとおりです。カットオーバーは、ソース Cell 上の Organization に
-ついて **以下のすべて** が真である場合にのみ進行します。
+readiness の契約は次のとおりです。カットオーバーは、ソース Cell 上のその Organization について、
+**以下のすべて** が満たされた場合にのみ進行します。
 
 1. いずれの Sidekiq キューにも、その Organization を対象とする保留中のジョブがない。
-2. その Organization を対象とする、スケジュール済みまたはリトライ中のジョブがない。
-3. その Organization を対象とする処理中（in flight）のジョブがない。
+2. その Organization を対象とするスケジュール済みまたはリトライ中のジョブがない。
+3. その Organization を対象とする実行中のジョブがない。
 4. その Organization を対象とする Organization 単位の cron エントリがない（Cell 全体の
-   cron エントリはカウントしない。それらのイテレーションはフィルタされる。*Sidekiq ジョブ*
-   を参照）。
-5. ソース Cell 上で進行中のスキーママイグレーションおよびポストデプロイマイグレーション
-   が完了しており、宛先 Cell がスキーマ的に一貫したスナップショットを受け取れる。
-6. org が所有するデータに触れるバッチ化バックグラウンドマイグレーションが、`read_only`
-   への移行の一環としてソース Cell 上で **一時停止** され、カットオーバー後に宛先 Cell
-   で **再開** される。これは、マイグレーションの進捗状態がデータとともに移動し、作業
-   自体が org スコープであるためです。
+   cron エントリはカウントされません。その反復処理はフィルタされます。*Sidekiq jobs* を参照）。
+5. ソース Cell 上で進行中のスキーマ移行とポストデプロイ移行が完了している。これにより、
+   宛先 Cell はスキーマ的に整合性のあるスナップショットを受け取ります。
+6. Organization が所有するデータに触れるバッチバックグラウンド移行が、`read_only` に入る一環として
+   ソース Cell 上で **一時停止** され、カットオーバー後に宛先 Cell 上で **再開** されます。これは、
+   移行の進捗状態がデータとともに移動し、作業自体が Organization スコープであるためです。
 
 このチェックの使い方には 3 つのルールが適用されます。
 
-- **操作の順序。** `read_only` への移行は、準備状態チェックが開始する前に、すべての
-  エンキューパス（コントローラ、REST、GraphQL、Git アクセス）にわたって有効になっていなければ
-  なりません。さもないと、チェックがカウントしている最中に新しいジョブが入ってきてしまいます。
-- **ドレイン確認ウィンドウ。** チェックは短い間隔を空けて少なくとも 2 回実行され、
-  両方の実行でゼロが読み取られなければなりません。単発のゼロは、ワーカーに今まさに
-  ピックアップされようとしていたジョブと競合する可能性があります。
-- **有限の待機、その後エスカレート。** 設定されたウィンドウ内で準備状態が収束しない場合、
-  カットオーバーツールは依然としてその Organization を保持しているワーカーを表面化させ、
-  オペレーターが待機、強制終了、中止のいずれかを判断できるようにします。移行カットオーバー
-  は人間が監督する協調的なステップであり、暗黙のタイムアウトは許容されません。
+- **操作の順序。** `read_only` への移行は、readiness チェックが開始される前に、すべての
+  エンキューパス（コントローラ、REST、GraphQL、Git アクセス）にわたって有効になっていなければなりません。
+  そうでないと、チェックがカウントしている最中に新しいジョブが入ってきてしまいます。
+- **ドレイン確認ウィンドウ。** チェックは短い間隔を空けて少なくとも 2 回実行され、両方の実行で
+  ゼロを読み取る必要があります。単発のゼロは、ワーカーにまさに拾われようとしていたジョブと競合する
+  可能性があります。
+- **有界の待機、その後エスカレーション。** readiness が設定されたウィンドウ内に収束しない場合、
+  カットオーバーツールはその Organization をまだ保持しているワーカーを表面化させ、待つか、kill するか、
+  中止するかをオペレータが判断できるようにします。移行のカットオーバーは、人間が監督する協調的な
+  ステップです。サイレントなタイムアウトは許容されません。
 
-この準備状態チェックは、
-[Organization Data Migration blueprint](../../organization-data-migration/_index.md)
-におけるデータコピー / ルーティング切り替えのステップの前提条件（ゲート）となります。
-これは管理者向けエンドポイントとして公開され、ホットパスではありません。これを計算する
-ために使用される具体的な Sidekiq API やリゾルバのシグネチャは実装上の詳細であり、
-[#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327) に存在します。
+readiness チェックは、
+[Organization Data Migration blueprint](../../organization-data-migration/_index.md) における
+データコピー / ルーティング切り替えのステップのゲーティング前提条件です。これは admin
+エンドポイントとして公開されており、ホットパスではありません。それを計算するために使用される
+具体的な Sidekiq API やリゾルバのシグネチャは実装の詳細であり、
+[#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327) にあります。
 
-### どこで強制されるか
+### Where it is enforced
 
 強制は、既存の
 [`CurrentOrganization` コントローラ concern](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/controllers/concerns/current_organization.rb)
-によってリクエストから解決される **現在の Organization** によってパラメータ化されます。
-この concern はリクエストごとに 1 回 `Current.organization` を設定します。以下のすべての
-強制レイヤは、Organization 自体を再解決するのではなく、その値を読み取ります。
+を介してリクエストから解決される **現在の Organization** によってパラメータ化されます。この concern は、
+リクエストごとに 1 回 `Current.organization` を設定します。以下のすべての強制レイヤは、Organization 自体を
+再解決するのではなく、その値を読み取ります。
 
-私たちはこの目的のために Rack ミドルウェアを **意図的に導入しません**。パスおよび動詞
-ベースのミドルウェアによる強制は脆弱です（ルートは進化しますし、書き込み/読み取りの
-分割が必ずしも HTTP メソッドに反映されるわけではなく、多くのエンドポイントは
-コントローラのロジックが実行された後でなければ自分がどの Organization に属するかを
-知りません）。コントローラ / Grape / GraphQL / GitAccess の各レイヤは、解決済みの
-Organization をすでに持っているか、安価に取得でき、強制の正規の面となります
-（*代替案* を参照）。
+私たちはこのために Rack ミドルウェアを **意図的に導入しません**。パスおよび動詞ベースの
+ミドルウェア強制は脆弱です（ルートは進化し、書き込み/読み取りの区別が常に HTTP メソッドに
+反映されるとは限らず、多くのエンドポイントはコントローラロジックが実行された後でなければ
+どの Organization に属するかが分からない）。コントローラ / Grape / GraphQL / GitAccess レイヤは、
+解決済みの Organization をすでに持っているか、安価に取得でき、正規の強制面です（*Alternatives* を参照）。
 
 面ごとのルールは次のとおりです。
 
 - **コントローラ。** 読み取り（`GET`、`HEAD`、`OPTIONS`）は許可。許可リストにない
-  アクションへの書き込みは拒否。HTTP メソッドは「書き込みなし」の完全なプロキシではありません。
+  アクションに対する書き込みは拒否されます。HTTP メソッドは「書き込みなし」の完全な代理ではありません。
   一部の `GET` は
   [DB 書き込みをトリガーしたり Sidekiq ジョブをエンキューしたり](https://gitlab.com/gitlab-org/gitlab/-/issues/586370)
-  します（ログイン時の監査イベント、遅延バックフィルなど）。そして Geo は歴史的に、これらを
-  `Gitlab::Geo.secondary?` / `read_only?` ガードや `SkipSecondary` スタイルのワーカー
-  concern でケースバイケースにパッチしてきました。新たな発生は想定されており、それらの
-  ガードはこのチェックと統一されるべきです。そして Sidekiq のドレイン（*Sidekiq ジョブ*
-  を参照）は、何かがすり抜けたときのバックストップとなります。
-- **REST API（Grape）。** 読み取りは許可。現在の Organization が読み取り専用のとき、
+  します（ログイン時の監査イベント、遅延バックフィル）。Geo は歴史的にこれらを
+  `Gitlab::Geo.secondary?` / `read_only?` ガードや `SkipSecondary` スタイルのワーカー concern で
+  ケースバイケースにパッチしてきました。新たな発生が予想されます。これらのガードはこのチェックと
+  統合されるべきであり、すり抜けたものに対しては Sidekiq のドレイン（*Sidekiq jobs* を参照）が
+  バックストップとなります。
+- **REST API（Grape）。** 読み取りは許可。現在の Organization が読み取り専用の場合、
   `GET`/`HEAD` 以外のリクエストはショートサーキットされます。
-- **GraphQL。** クエリは許可。ミューテーションは拒否。チェックはリゾルバの実行前に
-  走るため、バッチ化されたミューテーションで部分的な状態が書き込まれることはありません。
+- **GraphQL。** クエリは許可。ミューテーションは拒否されます。チェックはリゾルバの実行前に
+  実行されるため、バッチミューテーションについて部分的な状態が書き込まれることはありません。
 - **Git アクセス（`Gitlab::GitAccess`）。** プルとクローン（`git-upload-pack`）は許可。
-  プッシュ（`git-receive-pack`）は拒否。HTTP と SSH の両方がカバーされます。どちらも
-  `GitAccess` を通るためです。Wiki、スニペット、デザインリポジトリも同じルールに従います。
-- **Container Registry。** `pull` は許可。`push`、`delete`、`*` は拒否。
-- **Git LFS。** ダウンロードは許可。アップロード、ロック、アンロック、verify は拒否。
-- **Sidekiq。** org スコープのワーカーはドレインし、cron ワーカーは読み取り専用の
-  Organization をスキップします。その根拠については以下の *Sidekiq ジョブ* を参照してください。
-  これはアーキテクチャ的に他の面とは別物です。
-- **トークン、自動化、インテグレーション、Webhook。** パーソナルアクセストークン、
-  グループ/プロジェクトアクセストークン、デプロイトークン、CI ジョブトークン、受信 Webhook
-  はすべてコントローラ / Grape スタックを通り、上記のルールでカバーされます。「信頼された
-  インテグレーション」のための特別なバイパスはありません。書き込みによってトリガーされる
-  送信 Webhook は、その元となる書き込みがブロックされるため、読み取り専用中は関係ありません。
+  プッシュ（`git-receive-pack`）は拒否されます。HTTP と SSH の両方がともに `GitAccess` を
+  通るため、両方をカバーします。Wiki、スニペット、デザインリポジトリも同じルールに従います。
+- **Container Registry。** `pull` は許可。`push`、`delete`、`*` は拒否されます。
+- **Git LFS。** ダウンロードは許可。アップロード、ロック、アンロック、verify は拒否されます。
+- **Sidekiq。** Organization スコープのワーカーはドレインし、cron ワーカーは読み取り専用の
+  Organization をスキップします。その根拠については下記の *Sidekiq jobs* を参照してください。
+  これは他の面とはアーキテクチャ的に異なります。
+- **トークン、自動化、インテグレーション、webhook。** パーソナルアクセストークン、
+  グループ/プロジェクトアクセストークン、デプロイトークン、CI ジョブトークン、インバウンドの
+  webhook は、すべてコントローラ / Grape スタックを通り、上記のルールでカバーされます。
+  「信頼されたインテグレーション」のための特別なバイパスはありません。書き込みによってトリガーされる
+  アウトバウンドの webhook は、その起点となる書き込みがブロックされるため、read-only 中には
+  関係ありません。
 
-具体的なクラス名、ファイルパス、エラーレスポンスの形、HTTP ステータスコード（`503` か
-`403` か）は実装上の詳細であり、
-[#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327)
-および POC から生成された API ドキュメントに存在します。
+具体的なクラス名、ファイルパス、エラーレスポンスの形状、HTTP ステータスコード（`503` か `403` か）は
+実装の詳細であり、[#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327) と POC から
+生成された API ドキュメントにあります。
 
-### Sidekiq ジョブ
+### Sidekiq jobs
 
-バックグラウンドジョブは最もリスクの高い書き込み面です。なぜなら HTTP サイクルの外側で
-実行されるからです。そして Cell 間移行では、追加の制約があります。Redis は Cell ごとに
-分かれていて **移行されない** ため、カットオーバー時にソース Cell の Redis に残された
-ジョブはすべて失われます。ポリシーはジョブのソースによって分かれており、以下の *ポリシー*
-で詳述します。
+バックグラウンドジョブは、HTTP サイクルの外で実行されるため、最もリスクの高い書き込み面です。
+そして Cell 間の移行では、追加の制約があります。Redis は Cell ごとであり、**移行されない** ため、
+カットオーバー時にソース Cell の Redis に残されたジョブはすべて失われます。ポリシーはジョブの
+ソースによって分かれており、下記の *Policy* で詳述します。
 
-#### org スコープのルール
+#### Org-scoping rule
 
-ワーカーは、その引数のいずれかが Organization に解決される場合に *org スコープ* です。
-明示的な `organization_id` を取る場合だけではありません。（直接的または推移的に）
-`organization_id` を持つモデルを表す引数はどれも該当し、必要に応じて関連をたどり、
-[ADR 008](008_non_isolated_organizations_gitlab_com.md) の 1:1 トップレベルグループ →
-Organization の不変条件に従います。引数の型ごとの完全な分類はリゾルバの実装とともに
-存在します。
+ワーカーは、明示的な `organization_id` を取る場合だけでなく、その引数のいずれかが Organization に
+解決される場合に *org-scoped* です。（直接的または推移的に）`organization_id` を持つモデルの引数は
+いずれも該当し、必要に応じて関連を辿り、
+[ADR 008](008_non_isolated_organizations_gitlab_com.md) の 1:1 のトップレベルグループ → Organization の
+不変条件に従います。引数タイプごとの完全な分類はリゾルバの実装にあります。
 
-ワーカーが *cross-org* であるのは、その引数のいずれも Organization に解決されない場合、
-または複数の Organization にまたがるコレクションをイテレートする場合（たとえば
-`Project.find_each` をイテレートする Cell 全体の cron ワーカー）に限られます。
-イテレートするワーカーは、ワーカーレベルでは cross-org ですが、行ごとには org スコープに
-なり、イテレーション中に読み取り専用の Organization をフィルタしなければなりません
-（以下の *ポリシー* を参照）。
+ワーカーは、その引数のいずれも Organization に解決されない場合、または複数の Organization にまたがる
+コレクションを反復処理する場合（例: `Project.find_each` を反復処理する Cell 全体の cron ワーカー）に
+のみ *cross-org* です。反復処理するワーカーは、ワーカーレベルでは cross-org ですが、行ごとには
+org-scoped になり、反復処理中に読み取り専用の Organization をフィルタしなければなりません
+（下記の *Policy* を参照）。
 
 単一のリゾルバが、与えられた `(worker_class, args)` のペアに対して
-`Organization | :cross_org | :unresolved` を返します。これは
-`Gitlab::ApplicationContext` がすでにジョブのペイロードから `project` / `namespace` /
-`user` を抽出する方法をミラーしたものであり、このロジックが存在する唯一の場所です。
+`Organization | :cross_org | :unresolved` を返します。これは、`Gitlab::ApplicationContext` が
+すでにジョブのペイロードから `project` / `namespace` / `user` を抽出する方法を踏襲しており、
+このロジックが存在する唯一の場所です。
 
-#### ポリシー
+#### Policy
 
-ジョブがどのようにそこに来たかをキーとする、2 つのルールです。
+ジョブがどのようにそこに入ったかをキーとした 2 つのルールです。
 
-- **org スコープのワーカーはドレインする。** Organization が `read_only` に入ったときに
-  すでにキューにあるか処理中であるジョブは、フリーズ前にそのフロントドアのリクエストが
-  受け付けられた作業を表します。これらはソース Cell 上で完了まで実行されなければなりません。
-  Sidekiq のサーバーミドルウェアはこれらを **スキップしません**。新規のエンキューは
-  コントローラ、REST、GraphQL、Git アクセスの各レイヤで防がれるため、いったんフリーズが
-  有効になれば、それ以上 org スコープのジョブがキューに入ることはありません。カットオーバー
-  は上記の準備状態契約でゲートされ、これはその Organization のキュー済み、スケジュール済み、
-  リトライ中、処理中のすべてのジョブが終了したときにのみ真を返します。これは本物のドレインで
-  あって、暗黙のスキップではありません。
-- **cron ワーカーは読み取り専用の Organization とそのプロジェクトおよびネームスペースを
-  スキップする。** Sidekiq のサーバーミドルウェアは、解決された Organization が読み取り専用
-  である cron ジョブの実行を、構造化ログとともにショートサーキットします。org が所有する
-  データ（Projects、Namespaces、その他 Organization に解決される行）をイテレートする Cell
-  全体の cron ワーカーは、イテレーションの内側でアクティブな Organization にフィルタしなければ
-  なりません。これは行ごとの述語ではなく結合（またはアクティブな Organization に対する
-  サブセレクト）として表現され、フィルタのコストが有限に抑えられるようにします。
+- **Organization スコープのワーカーはドレインする。** Organization が `read_only` に入ったときに
+  すでにキューに入っているか実行中のジョブは、フリーズの前にそのフロントドアのリクエストが
+  受け付けられた作業を表します。それらはソース Cell 上で完了まで実行されなければなりません。
+  Sidekiq サーバーミドルウェアはそれらを **スキップしません**。新しいエンキューは、コントローラ、
+  REST、GraphQL、Git アクセスのレイヤで防止されるため、フリーズが有効になれば、それ以上の
+  Organization スコープのジョブがキューに入ることはありません。カットオーバーは上記の readiness の
+  契約でゲートされ、その契約はその Organization についてキューに入っているジョブ、スケジュール済みの
+  ジョブ、リトライ中のジョブ、実行中のジョブのすべてが完了したときにのみ true を返します。
+  これはサイレントなスキップではなく、真のドレインです。
+- **cron ワーカーは読み取り専用の Organization とそのプロジェクトおよび namespace をスキップする。**
+  Sidekiq サーバーミドルウェアが、解決された Organization が読み取り専用である cron ジョブの実行を、
+  構造化ログとともにショートサーキットします。Organization が所有するデータ（プロジェクト、
+  namespace、その他 Organization に解決される行）を反復処理する Cell 全体の cron ワーカーは、
+  反復処理の内部でアクティブな Organization にフィルタしなければなりません。これは、行ごとの述語では
+  なく、結合（またはアクティブな Organization に対するサブセレクト）として表現され、フィルタの
+  コストが有界になるようにします。
 
-このフィルタは、参加するすべてのモデル上の単一の共有スコープとして実装されます。org が
-所有するデータをイテレートするすべての cron ワーカーは、`active` でない Organization に
-属する行が yield されないことを表明するテストを持たなければなりません。
+フィルタは、参加するすべてのモデル上の単一の共有スコープとして実装されます。Organization が所有する
+データを反復処理するすべての cron ワーカーは、`active` でない Organization に属する行が yield されない
+ことをアサートするテストを持たなければなりません。
 
-#### 観測可能性
+#### Observability
 
-すべてのスキップ、キャンセル、フィルタのイベントは、`organization_id`、`worker`（クラス）、
-`jid` を含む構造化ログを出力します。同じデータは *カットオーバーの準備状態* エンドポイントが
-読み取るものでもあり、カットオーバーの判断と定常状態の観測可能性は 1 つのシグナルを共有します。
+すべてのスキップ、キャンセル、フィルタのイベントは、`organization_id`、`worker`（クラス）、`jid` を
+伴う構造化ログを発行します。同じデータが *Cutover readiness* エンドポイントの読み取り元であり、
+カットオーバーの判断と定常状態の観測可能性は 1 つのシグナルを共有します。
 
-この Sidekiq ポリシーは、すべてのバックグラウンドジョブを実行させ続けるインスタンス全体の
-メンテナンスモードよりも、意図的に厳格になっています。
+この Sidekiq ポリシーは、すべてのバックグラウンドジョブを実行し続けさせるインスタンス全体の
+Maintenance Mode よりも、意図的に厳格になっています。
 
-### CI/CD の挙動
+### CI/CD behavior
 
-- 読み取り専用の Organization 配下のプロジェクトに対して、新しいパイプラインを作成すること
-  （UI、API、スケジュールトリガー、手動トリガー）はブロックされます。
-- パイプラインとジョブの状態、ログ、アーティファクトの読み取りは引き続き許可されます。
-- **Organization が読み取り専用に入る前に開始されたジョブはキャンセルされます。** これらは
-  長時間実行される可能性があり、そうでなければカットオーバーを無期限に妨げるためです。
-  キャンセルは、Organization がフリーズされたら進行すべきでない破壊的な操作（アーティファクト
-  の削除、レジストリへのプッシュ、保護された環境へのデプロイ）もカバーします。
-- 読み取り専用の Organization から発生する新しいデプロイ、環境の変更、フィーチャーフラグの
-  変更はブロックされます。過去のデプロイ状態や環境の詳細の読み取りは引き続き許可されます。
+- 読み取り専用の Organization 配下のプロジェクトに対する新しいパイプライン（UI、API、
+  スケジュールトリガー、手動トリガー）の作成はブロックされます。
+- パイプラインやジョブの状態、ログ、アーティファクトの読み取りは引き続き許可されます。
+- **Organization が読み取り専用に入る前に開始されたジョブはキャンセルされます**。長時間実行される
+  可能性があり、そうでなければカットオーバーを無期限に保留させてしまうためです。キャンセルは、
+  Organization がフリーズされたら進行すべきでない破壊的な操作（アーティファクトの削除、レジストリへの
+  プッシュ、保護された環境へのデプロイ）もカバーします。
+- 読み取り専用の Organization を起点とする新しいデプロイ、環境の変更、フィーチャーフラグの変更は
+  ブロックされます。過去のデプロイ状態や環境の詳細の読み取りは引き続き許可されます。
 
-### 許可リストの原則
+### Allowlist principles
 
-Organization Read-Only Mode 中に、次のいずれかが真である場合、リクエストは **許可** されます。
+リクエストは、次の少なくとも 1 つが true の場合に、Organization Read-Only Mode 中に
+**許可** されます。
 
-- 読み取りである（`GET`、`HEAD`、`OPTIONS`）。
-- 認証リクエストである（サインイン、サインアウト、OAuth トークン、JWT 認証）。
-- Git の読み取りである（`git-upload-pack`）。
-- プラットフォームを稼働させ続けるために必要な内部 API 呼び出しである。
-- 移行または分離の制御プレーンの一部である（DMS、Topology Service、Organization の移行 /
-  分離エンドポイント）。
+- それが読み取り（`GET`、`HEAD`、`OPTIONS`）である。
+- それが認証リクエスト（サインイン、サインアウト、OAuth トークン、JWT 認証）である。
+- それが Git の読み取り（`git-upload-pack`）である。
+- それがプラットフォームを稼働させ続けるために必要な内部 API 呼び出しである。
+- それが移行または分離のコントロールプレーン（DMS、Topology Service、Organization の移行 / 分離の
+  エンドポイント）の一部である。
 
 それ以外はすべてデフォルトで拒否されます。許可リストに含まれるコントローラ、アクション、
 エンドポイントの具体的なリストは
-[#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327) に存在します。
+[#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327) にあります。
 
-### ユーザーに見える挙動
+### User-visible behavior
 
-- その Organization のためにレンダリングされるすべてのページ（それが所有するグループや
-  プロジェクトのページを含む）に、永続的なバナーが表示されます。文言は汎用的であり、
-  内部的な理由やインフラの詳細（Cell、移行）を明かしません。たとえば次のようなものです。
-  *「この Organization は現在、重要なメンテナンスの実施中のため読み取り専用モードです。
-  読み取りは引き続き動作します。書き込み操作は、しばらくしてから再試行してください。」*
-- バナーは、既存のインスタンス全体のメンテナンスモードバナーと同じ面および Vue コンポーネント
-  のパターンを再利用し、インスタンス全体のフラグではなく Organization の `read_only?` 状態を
-  キーとします。これにより、メカニズムが 1 つ、スタイルを当てる場所が 1 か所、
-  アクセシビリティと国際化を追加する場所が 1 か所に保たれます。
-- API レスポンスは、構造化エラーと適切な HTTP ステータス（時間に制限のある理由については
-  `Retry-After` 付きの `503 Service Unavailable`、時間に制限のない理由については
-  `403 Forbidden`）で読み取り専用を通知します。正確なレスポンスボディとステータスのマトリクス
-  は実装上の詳細です（[#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327)
-  を参照）。
-- Git プッシュは同等の汎用メッセージを返します。*「この Organization は現在読み取り専用
-  モードのため、Git プッシュは許可されていません。」*
+- その Organization 向けにレンダリングされるすべてのページ（それが所有するグループおよび
+  プロジェクトのページを含む）に、永続的なバナーが表示されます。コピーは汎用的なもので、
+  内部的な reason やインフラの詳細（Cell、移行）を明らかにしません。例:
+  *"This Organization is currently in read-only mode while essential maintenance is performed.
+  Reads will continue to work; please retry write operations shortly."*
+- このバナーは、既存のインスタンス全体の Maintenance Mode バナーと同じ面と Vue コンポーネントの
+  パターンを再利用し、インスタンス全体のフラグではなく Organization の `read_only?` 状態をキーとします。
+  これにより、メカニズムは 1 つ、スタイルを当てる場所は 1 つ、アクセシビリティと国際化を追加する場所も
+  1 つに保たれます。
+- API レスポンスは、構造化されたエラーと適切な HTTP ステータス（時間制限のある reason の場合は
+  `Retry-After` を伴う `503 Service Unavailable`、時間制限のない reason の場合は `403 Forbidden`）で
+  読み取り専用を通知します。正確なレスポンスボディとステータスのマトリクスは実装の詳細です
+  （[#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327) を参照）。
+- Git プッシュは同等の汎用的なメッセージを返します: *"Git push is not allowed because this
+  Organization is currently in read-only mode."*
 
-### 監査可能性と観測可能性
+### Auditability and observability
 
-`Organizations::Stateful` 上の既存の遷移ログおよびバリデーションの mixin が再利用されます。
-新しい監査パイプラインは導入されません。`read_only` への各エントリとそこからのイグジットは、
-organization id、アクター（システム、ユーザー、自動化）、タイムスタンプ、reason を記録する
-Organization レベルの監査イベントを出力します。
+`Organizations::Stateful` 上の既存の遷移ログと検証ミックスインが再利用され、新しい監査パイプラインは
+導入されません。`read_only` への各出入りは、organization id、アクター（システム、ユーザー、自動化）、
+タイムスタンプ、reason を記録する Organization レベルの監査イベントを発行します。
 
-### パフォーマンスとキャッシュ
+### Performance and caching
 
-`Current.organization` はリクエストごとに 1 回解決されます。状態の変更は、既存の
-`after_transition` フックを通じてあらゆるキャッシュを無効化します。
+`Current.organization` はリクエストごとに 1 回解決されます。状態の変更は、既存の `after_transition`
+フックを介して任意のキャッシュを無効化します。
 
-### ロールアウトとフィーチャーフラグ
+### Rollout and feature flags
 
-- このメカニズムは、環境スコープと Organization スコープの両方のフィーチャーフラグで
-  ゲートされており、ロールアウトを cohort ごとに進められます。
-- GitLab.com では、まず内部/テスト用の Organization で有効化し、その後、既存の Organizations
-  のロールアウト cohort に沿って拡大します。
-- Self-Managed と Dedicated では、デフォルトオフで出荷します（*結果* を参照）。
+- このメカニズムは、環境スコープと Organization スコープの両方のフィーチャーフラグでゲートされるため、
+  ロールアウトをコホート単位で進められます。
+- GitLab.com では、まず内部/テスト用の Organization に対して有効にし、その後、既存の Organization
+  ロールアウトコホートに合わせて拡大します。
+- Self-Managed と Dedicated では、デフォルトオフで提供します（*Consequences* を参照）。
 
-## 結果
+## Consequences
 
-- Organization の移行に際して、Cell 全体（したがって無関係な Organization）を
-  メンテナンスモードにする必要がなくなります。
-- 同じメカニズムが、分離の有効化、インシデントのスコープ設定、billing/legal ホールドを
-  カバーし、その場限りのトグルが乱立するのを避けられます。
-- 強制は多くのレイヤ（コントローラ、Grape、GraphQL、GitAccess、Sidekiq）にわたって
-  重複しています。これは意図的なものです（多層防御）が、同期を保たなければならない面積を
-  増やすことにもなります。新しい書き込みエントリポイントはそれぞれ、Organization の
-  読み取り専用を尊重するかどうかを明示的に宣言しなければなりません。
-- Cell 全体の cron ワーカーは、org が所有するデータをイテレートする際にアクティブな
-  Organization のフィルタを採用しなければならず、読み取り専用の Organization が除外される
-  ことを表明するテストを持たなければなりません。これがないと、ロールアウト後に追加された
-  新しい cron ワーカーが、まさに移動されようとしているデータを暗黙のうちに変更してしまいます。
-- 上記の強制レイヤをバイパスするコードパス（たとえば、マイグレーション内の生 SQL `UPDATE` や、
-  コントローラ、Grape、GraphQL、`Gitlab::GitAccess` を通らない直接の ActiveRecord 書き込み）は、
-  このイテレーションでは **カバーされません**。将来のイテレーションでは、多層防御として
-  サービスレイヤまたはモデルレイヤのガードを追加するかもしれません。
-- インスタンス全体のメンテナンスモード（`Gitlab.maintenance_mode?`）は引き続き利用可能で、
-  直交しています。両方がアクティブな場合は、より制約の厳しい状態が優先されます。そして
-  Organization の読み取り専用は、インスタンスのメンテナンスチェックをバイパスするコードパスを
-  導入してはなりません。
-- Self-Managed と Dedicated のインスタンス（インスタンスごとに単一の Organization。
+- Organization の移行において、Cell 全体（したがって無関係な Organization）を Maintenance Mode に
+  する必要がなくなります。
+- 同じメカニズムが分離の有効化、インシデントのスコープ設定、billing/legal ホールドをカバーし、
+  1 回限りのトグルの乱立を回避します。
+- 強制は多くのレイヤ（コントローラ、Grape、GraphQL、GitAccess、Sidekiq）にわたって重複します。
+  これは意図的なもの（多層防御）ですが、同期を保ち続けなければならない面積を増やします。新しい
+  書き込みエントリポイントはそれぞれ、Organization の読み取り専用を尊重するかどうかを明示的に
+  宣言しなければなりません。
+- Cell 全体の cron ワーカーは、Organization が所有するデータを反復処理する際にアクティブな
+  Organization フィルタを採用しなければならず、読み取り専用の Organization がフィルタされることを
+  アサートするテストを持たなければなりません。これがないと、ロールアウト後に追加された新しい cron
+  ワーカーが、まさに移動されようとしているデータをサイレントに変更してしまいます。
+- 上記の強制レイヤをバイパスするコードパス（例: 移行内の生 SQL の `UPDATE` や、コントローラ、Grape、
+  GraphQL、`Gitlab::GitAccess` を通らない直接的な ActiveRecord 書き込み）は、このイテレーションでは
+  **カバーされません**。将来のイテレーションでは、多層防御としてサービスレイヤまたはモデルレイヤの
+  ガードを追加する可能性があります。
+- インスタンス全体の Maintenance Mode（`Gitlab.maintenance_mode?`）は引き続き利用可能であり、
+  直交しています。両方がアクティブな場合は、より制限的な状態が優先され、Organization の読み取り専用は
+  インスタンスのメンテナンスチェックをバイパスするコードパスを導入してはなりません。
+- Self-Managed と Dedicated のインスタンス（インスタンスごとに単一の Organization、
   [ADR 007](007_self_managed_dedicated_single_organization.md) を参照）は、このメカニズムを
-  無償で継承しますが、実際には引き続きインスタンス全体のメンテナンスモードを使用すべきです。
-  Organization 単位の分離による恩恵がないためです。これらのトポロジでは、フラグはデフォルト
-  オフで出荷されます。
-- 読み取りは動作するのに書き込みが突然失敗すると、ユーザーが混乱するかもしれません。UX 文言
-  と「所有するすべてのページにバナーを表示する」という要件は、これを緩和するために存在します。
+  無償で継承しますが、実際には Organization 単位の分離による利点がないため、引き続きインスタンス全体の
+  Maintenance Mode を使用すべきです。これらのトポロジーでは、フラグはデフォルトオフで提供されます。
+- 読み取りは機能するのに書き込みが突然失敗すると、ユーザーが混乱する可能性があります。UX コピーと、
+  所有するすべてのページにバナーを表示する要件は、これを緩和するために存在します。
 
-## 検討した代替案
+## Alternatives Considered
 
-### 1. ソース Cell でインスタンス全体のメンテナンスモードを再利用する
+### 1. Reuse instance-wide Maintenance Mode on the source Cell
 
-ソース Cell で `Gitlab.maintenance_mode?` をトグルすれば書き込みをブロックできますが、
-それはその Cell 上の **すべての** Organization に対してブロックしてしまいます。Cell が
-複数の Organization をホストするようになると、これは受け入れられません。
+ソース Cell 上で `Gitlab.maintenance_mode?` をトグルすると書き込みはブロックされますが、その Cell 上の
+**すべての** Organization に対してそれらをブロックします。Cell が複数の Organization をホストするように
+なると、これは受け入れられません。
 
-### 2. `project.repository_read_only` のみに頼る
+### 2. Rely solely on `project.repository_read_only`
 
-このフラグは今日存在しており、リポジトリストレージの移動の際に使用されます。これは単一
-プロジェクトの Git レベルのプッシュのみをカバーします。REST、GraphQL、Sidekiq、Container
-Registry、パッケージ、リポジトリ以外の状態はカバーしません。これを唯一のメカニズムとして
-使用すると、移行中にほとんどの書き込みを暗黙のうちに許可してしまいます。
+このフラグは今日存在し、リポジトリストレージの移動中に使用されます。これは単一プロジェクトの
+Git レベルのプッシュのみをカバーし、REST、GraphQL、Sidekiq、コンテナレジストリ、パッケージ、
+リポジトリ以外の状態をカバーしません。これを唯一のメカニズムとして使用すると、移行中にほとんどの
+書き込みをサイレントに許可してしまいます。
 
-### 3. データベースレイヤの単一のチョークポイント
+### 3. Single chokepoint at the database layer
 
-シャーディングキーをキーとする `BEFORE UPDATE` トリガーは、あらゆる書き込みを捕捉できます。
-シャーディングキー（`organization_id`、`project_id`、`namespace_id`）は、まだすべての
-データテーブルに普遍的に存在するわけではありませんが、コードベースはその方向に動いています。
-カバレッジが完了すれば、トリガーはあらゆる書き込みで所有する Organization を解決できるように
-なるでしょう。それでもなお、次の問題があります。
+シャーディングキーをキーとした `BEFORE UPDATE` トリガーは、すべての書き込みを捕捉します。
+シャーディングキー（`organization_id`、`project_id`、または `namespace_id`）はまだすべてのデータ
+テーブルに普遍的に存在しているわけではありませんが、コードベースはその方向に進んでいます。
+カバレッジが完了すれば、トリガーはすべての書き込みで所有する Organization を解決できます。
+それでもなお:
 
-- トリガーベースのエラーは、スタックの深い場所で不透明な `PG::Error` として表面化し、
-  劣悪なユーザー体験を生むことになります。
+- トリガーベースのエラーは、スタックの深いところで不透明な `PG::Error` として表面化し、貧弱な
+  ユーザー体験を生み出します。
 - これは Sidekiq ジョブのエンキューや外部システムからのリクエストの発行を止めないため、
   アプリケーションレイヤのフィードバックは依然として必要です。
 
-シャーディングキーのカバレッジが普遍的になったら、これを **最終防衛線** のセーフティネット
-として再検討するかもしれませんが、単独では不十分です。
+シャーディングキーのカバレッジが普遍的になったら、これを **最終ライン** のセーフティネットとして
+再検討するかもしれませんが、これ単独では十分ではありません。
 
-### 4. Topology Service / ルーターでブロックする
+### 4. Block at the Topology Service / router
 
-カットオーバー中にその Organization の書き込みをソース Cell から逸らすルーティングは
-移行設計の一部ですが、それを唯一の強制とすることはできません。処理中のリクエスト、ソース
-Cell にすでにエンキューされた Sidekiq ジョブ、直接の管理者アクセスは、依然として
-アプリケーションレイヤで止める必要があります。GraphQL もこの方法では簡単にブロックできません。
-スコープ内の Organization を判断するためにリクエストボディを調べなければならないためです。
+カットオーバー中にその Organization の書き込みルーティングをソース Cell から逸らすことは移行設計の
+一部ですが、唯一の強制にはなり得ません。実行中のリクエスト、すでにソース Cell 上でエンキューされた
+Sidekiq ジョブ、直接の admin アクセスは、依然としてアプリケーションレイヤで止める必要があります。
+また、GraphQL はこの方法では簡単にはブロックできません。スコープ内の Organization を判定するために
+リクエストボディを調べなければならないためです。
 
-### 5. Rack / パスベースのミドルウェアでの強制
+### 5. Rack / path-based middleware enforcement
 
-URL を検査し、パスパターンに基づいて変更を伴う可能性のあるエンドポイントをブロックする Rack
-またはイングレスミドルウェアとして読み取り専用を実装するのは脆弱です。GraphQL だけでも
-パス/動詞のマッチングを不十分にします（1 つのエンドポイントがクエリとミューテーションの両方を
-処理し、スコープ内の Organization は、バッチ化される可能性のあるリクエストボディをパースした
-後でなければわかりません）。代わりに使用するコントローラ / Grape / GraphQL / GitAccess
-のアプローチについては *どこで強制されるか* を参照してください。
+URL を検査し、パスパターンに基づいて変更を伴う可能性のあるエンドポイントをブロックする Rack または
+ingress ミドルウェアとして read-only を実装することは脆弱です。GraphQL だけでも、パス/動詞のマッチングは
+不十分になります（1 つのエンドポイントがクエリとミューテーションの両方を提供し、スコープ内の
+Organization は、バッチ化される可能性のあるリクエストボディをパースした後でのみ分かる）。
+代わりに使用されるコントローラ / Grape / GraphQL / GitAccess のアプローチについては、
+*Where it is enforced* を参照してください。
 
-### 6. Organization の状態なしのトップレベルグループ読み取り専用
+### 6. Top-level group read-only without an Organization state
 
-Organization ではなくトップレベルグループ / ネームスペースのレベルで読み取り専用を定義すること
-は、Organization をロードマップ上の正規のテナントとする Organizations ロードマップと
-ずれています。このアプローチでは Organization 自体は書き込み可能なままで、トップレベルグループ
-だけがフリーズされるため、Organization スコープのリソース（設定、監査イベント、その他 org が
-所有する状態）が移行中に変更可能なまま残り、フリーズの目的を損ないます。また、ルーティングと
-データ移動のためにすでに Organization の抽象化を前提としている Cell および分離の作業を複雑に
-します。
+Organization ではなくトップレベルグループ / namespace のレベルで read-only を定義することは、
+Organization が正規のテナントである Organizations のロードマップと整合しません。このアプローチでは
+Organization 自体は書き込み可能なままで、トップレベルグループのみがフリーズされるため、移行中に
+Organization スコープのリソース（設定、監査イベント、その他 Organization が所有する状態）が変更可能なまま
+となり、フリーズの目的を損ないます。また、ルーティングとデータ移動のためにすでに Organization の抽象化を
+前提としている Cell と分離の作業も複雑にします。
 
-### 7. Organization カラムの代わりにルートネームスペースから読み取り専用状態を導出する
+### 7. Derive read-only state from root namespaces instead of an Organization column
 
-`Organizations::Organization` に `state` カラムを追加する代わりに、Organization のルート
-ネームスペースの `effective_state` から読み取り専用を導出するという代替案があります。これは
-短期的にはより単純（スキーマ変更なし、新しいステートマシンなし）で、
-[#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327) の Open Question 1
-として提起されました。
+`Organizations::Organization` に `state` カラムを追加する代替案として、Organization のルート namespace の
+`effective_state` から read-only を導出する方法があります。これは短期的にはよりシンプルで（スキーマ変更も
+新しいステートマシンも不要）、[#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327) の
+Open Question 1 として提起されました。
 
 これは次の理由で却下されます。
 
-- Organization レベルの読み取り専用を、独自のライフサイクル（削除、転送、アーカイブ）を持つ
-  ネームスペースの状態に結合してしまい、曖昧な複合状態を生み出します。
-- 将来のマルチ TLG の Organization は、ネームスペースの状態を集約しなければならず、その集約
-  ルール（any か all か）自体が、Organization レベルで一度だけ表現する方がよいポリシー上の
-  判断です。
-- 監査、観測可能性、そしてカットオーバー準備状態の契約はいずれも、「この Organization は今
-  読み取り専用か?」という単一の権威あるシグナルを求めます。導出された状態は、そのシグナルを
-  N 個の行にまたがって分散させます。
-- この状態は、Organization が *なぜ* 読み取り専用なのか（migration、isolation、incident、
-  billing、legal）も表現する必要があります。そのメタデータは、各ネームスペースではなく
-  Organization に属します。
+- Organization レベルの read-only を namespace の状態に結合することになります。namespace は独自の
+  ライフサイクル（削除、移管、アーカイブ）を持ち、曖昧な複合状態を生み出すことになります。
+- 将来のマルチ TLG Organization では namespace の状態を集約しなければならなくなり、集約ルール
+  （any か all か）自体が、Organization レベルで一度だけ表現したほうがよいポリシー判断です。
+- 監査、観測可能性、カットオーバー readiness の契約はいずれも、「この Organization は今、読み取り専用か?」
+  という単一の権威あるシグナルを求めています。導出された状態は、そのシグナルを N 個の行に分散させて
+  しまいます。
+- この状態は、Organization が読み取り専用である *理由*（migration、isolation、incident、billing、
+  legal）も表現する必要があります。そのメタデータは、各 namespace ではなく Organization に属します。
 
-POC [!228743](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/228743) で出荷されるのは、
-Organization レベルの state カラムです。
+Organization レベルの状態カラムは、POC [!228743](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/228743)
+で提供されているものです。
 
-## 粒度
+## Granularity
 
-Organization 単位の読み取り専用で十分です。
-[ADR 008](008_non_isolated_organizations_gitlab_com.md) のとおり、GitLab.com 上の
-トップレベルグループは Organization に転送されつつあり（デフォルトで 1:1）、「影響を受ける
-単位」は常に Organization です。したがって、より細かい粒度のトップレベルグループ単位または
-プロジェクト単位の読み取り専用モードは必要ありません。
+Organization 単位の read-only で十分です。[ADR 008](008_non_isolated_organizations_gitlab_com.md) の
+とおり、GitLab.com 上のトップレベルグループは Organization に（デフォルトで 1:1 で）移管されているため、
+「影響を受ける単位」は常に Organization です。したがって、より細かい粒度のトップレベルグループ単位や
+プロジェクト単位の read-only モードは不要です。
 
-### Cell 間移行のスコープ
+### Cell-to-Cell migration scope
 
-Cell 間の Organization 移行（主要なユースケース）では、カットオーバーの間、**Organization 全体**
-がソース Cell 上で読み取り専用に置かれます。これには、すべてのトップレベルグループ、
-ネームスペース、プロジェクト、その他 org が所有するリソースが含まれます。部分的な読み取り専用
-（一部の TLG はフリーズし、他は書き込み可能）は、次の理由で明示的に **サポートされません**。
+Cell 間の Organization 移行（主要なユースケース）では、カットオーバーの期間中、ソース Cell 上で
+**Organization 全体** が読み取り専用に設定されます。これには、すべてのトップレベルグループ、namespace、
+プロジェクト、その他 Organization が所有するリソースが含まれます。部分的な read-only（一部の TLG は
+フリーズし、他は書き込み可能）は明示的に **サポートされません**。理由は次のとおりです。
 
-- 移行は Organization が所有するすべてのデータをアトミックに移動します。いずれかのサブセットを
-  書き込み可能なまま残すと、宛先 Cell が調整できない行間の不整合が生じます。
-- 上記のカットオーバー準備状態の契約は Organization レベルで動作します（Sidekiq キューは
+- 移行は Organization が所有するすべてのデータをアトミックに移動します。一部のサブセットを書き込み可能の
+  ままにすると、宛先 Cell が調整できない行間の不整合が生まれます。
+- 上記のカットオーバー readiness の契約は Organization レベルで動作します（Sidekiq キューは
   `organization_id` でフィルタされます）。
-- ADR 008 の 1:1 TLG-to-Organization 不変条件は、今日の GitLab.com では Organization ごとに
-  通常 TLG が 1 つしかないことを意味するため、部分的なフリーズには実用上のユースケースが
-  まだありません。
+- ADR 008 の 1:1 の TLG 対 Organization の不変条件は、今日の GitLab.com 上では Organization あたり
+  通常 1 つの TLG しかないことを意味するため、部分的なフリーズには実用的なユースケースがまだありません。
 
-## 未解決の問題
+## Open Questions
 
-- 読み取り専用状態を GitLab-CLI およびエディタ拡張機能にどう表面化するか（別途
-  `X-GitLab-Organization-Read-Only` レスポンスヘッダー?）。
+- 読み取り専用の状態を GitLab-CLI とエディタ拡張機能にどのように表面化するか
+  （個別の `X-GitLab-Organization-Read-Only` レスポンスヘッダー?）。
 - 状態変更の直前に開始された長時間実行の書き込み操作（大規模なインポート、エクスポート、
-  バルクリベース）の挙動: キャンセルか、ドレインか、失敗か? 上記の CI ポリシーはパイプラインを
+  bulk-rebase）の挙動: キャンセル、ドレイン、それとも失敗? 上記の CI ポリシーはパイプラインを
   カバーしますが、これらはカバーしません。
 - アプリケーションレイヤの強制に加えて、データベースレベルのバックストップとして、移行中に
-  ある Organization へのすべての書き込みをブロックするために Postgres の Row-Level Security
-  （RLS）を使用すべきか?
+  Organization へのすべての書き込みをブロックするために Postgres Row-Level Security（RLS）を
+  使用すべきか?

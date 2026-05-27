@@ -1,276 +1,275 @@
 ---
-title: 'エンドユーザー'
+title: 'End-users'
 description: 'Zendesk のエンドユーザーに関するドキュメント'
-date: 2025-12-26
 upstream_path: /handbook/security/customer-support-operations/zendesk/users/end-users/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: "154fb2bd6436508aa2d90583cc235d5fe28b1705"
+lastmod: 2026-05-26T12:05:00-05:00
+translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
 ---
 
-このガイドでは、GitLab における Zendesk のエンドユーザーの作成、編集、管理方法について説明します。また、Zendesk のエンドユーザー設定についても扱います。管理者は[管理者タスク](#administrator-tasks)セクションを確認してください。
+このガイドでは、GitLab における Zendesk のエンドユーザーの作成、編集、管理方法を説明します。また、Zendesk のエンドユーザー設定についても説明します。管理者は [管理者向けタスク](#administrator-tasks)のセクションを確認してください。
 
-{{% alert title="技術的な詳細" color="primary" %}}
+{{% alert title="Technical Details" color="primary" %}}
 
 - デプロイタイプ: `Ad-hoc`
 
 {{% /alert %}}
 
-## エンドユーザーを理解する
+## Understanding end-users
 
-### エンドユーザーとは
+### What are end-users
 
-エンドユーザーは、エージェントよりも下位の Zendesk ユーザー区分です。一般公開されているサポートポータルへのアクセスやチケットの提出などができます。エージェント側または Zendesk のバックエンドにはアクセスできません。
+エンドユーザーは、エージェントの下位に位置する Zendesk ユーザーの分類です。一般に公開されているサポートポータルにアクセスしたり、チケットを送信したりできます。Zendesk のエージェント機能やバックエンドにはアクセスできません。
 
-### エンドユーザーの管理方法
+### How we manage end-users
 
-- Zendesk Global: エンドユーザーは Zendesk 内で手動管理されます
-- Zendesk US Government: エンドユーザーは [Zendesk-Salesforce 同期](/handbook/security/customer-support-operations/zendesk-salesforce-sync/)経由で自動的に同期されます
+- Zendesk Global: エンドユーザーは Zendesk で手動管理されます  
+- Zendesk US Government: エンドユーザーは [Zendesk-Salesforce Sync](/handbook/security/customer-support-operations/zendesk-salesforce-sync/) を介して自動的に同期されます
 
-### ユーザーノート
+### User notes
 
-ユーザーノートと詳細は、ユーザープロファイル上にあるカスタム情報を保存する 2 つの個別のテキストフィールドです。
+ユーザーノートと詳細（details）は、カスタム情報を保存するユーザープロファイル上の 2 つの別々のテキストフィールドです:
 
 - Notes: エージェントのみが閲覧できる内部情報
-- Details: ユーザーに関する追加コンテキスト
+- Details: ユーザーに関する追加のコンテキスト
 
-両方のフィールドは [Zendesk のトリガー](/handbook/security/customer-support-operations/zendesk/triggers/)を介して、新規チケットに内部ノートとして自動的に投稿されます。
+どちらのフィールドも、[Zendesk のトリガー](/handbook/security/customer-support-operations/zendesk/triggers/)を介して、新しいチケットの内部ノートとして自動的に投稿されます。
 
-#### 管理者ではない者がユーザーノートの更新を依頼する
+#### Requesting a user note update as a non-admin
 
-ユーザーノートの追加、変更、または削除が必要な場合は、[Feature Request の Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（カスタマーサポートオペレーションチームによる手動対応が必要となるため）。
+ユーザーノートの追加、変更、削除が必要な場合は、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動の対応が必要なためです）。
 
-#### 管理者ではない者がエンドユーザーの BAN を依頼する
+#### Requesting the ban of an end-user as a non-admin
 
-エンドユーザーを BAN する必要がある場合は、#support_operations Slack チャンネルにユーザーを BAN する必要がある旨を投稿してください。カスタマーサポートオペレーションチームのメンバーから（ダイレクトメッセージで）連絡が入り、対応について協力します。
+エンドユーザーの BAN が必要な場合は、#support_operations Slack チャンネルにユーザーの BAN が必要であることを投稿してください。Customer Support Operations チームのメンバーが（ダイレクトメッセージで）連絡を取り、この件について一緒に対応します。
 
-### 現在のシステムエンドユーザー設定 {#current-system-end-user-settings}
+### Current system end-user settings
 
-以下の設定は、エンドユーザーがどのように登録、認証、サポートポータルとやり取りできるかを制御します。これらの設定はリファレンスとしてここに記載されており、変更されることはまれです。
+以下の設定は、エンドユーザーがどのように登録、認証、サポートポータルとのやり取りを行えるかを制御します。これらの設定は参考用にここに記載されており、変更されることはほとんどありません。
 
 <details>
 <summary>Zendesk Global の場合</summary>
 
-- 誰でもチケットを提出可能
-  - [x] 有効
-    - [x] リクエストおよびアップロード API への認証を必須にする
-    - [ ] ユーザーに登録を求める
-    - ユーザー登録メッセージ
+- Anybody can submit tickets
+  - [x] Enabled
+    - [x] Require authentication for request and uploads APIs.
+    - [ ] Ask users to register
+    - User registration message
       > Please fill out this form, and we'll send you a welcome email to verify your email address and log you in.
-  - 許可リスト
+  - Allowlist
     > gitlab@gitlab.com google.com
-  - ブロックリスト: Zendesk 管理パネルで直接確認 - 機密データを含む
-- アカウントメール
-  - [ ]  アカウントメールに有効な Help Center のリストを含める
-  - ユーザーウェルカムメール本文:
+  - Blocklist: Zendesk 管理パネルで直接確認 - 機密データを含みます
+- Account emails
+  - [ ]  Include a list of active Help Centers in account emails
+  - User welcome email text:
     > Welcome to GitLab Support. Please click the link below to create a password and login.
-  - [ ] エージェントまたは管理者によって新規ユーザーが作成された場合にもウェルカムメールを送信する
-  - メール検証メール本文
+  - [ ] Also send a welcome email when a new user is created by an agent or administrator.
+  - Email verification email text
     > We need to verify that you are the owner of this email address. Please follow the link below to verify.
-- ユーザーが自分のプロファイルデータを閲覧および編集できるようにする
-  - [x] 有効
-- ユーザーがパスワードを変更できるようにする
-  - [x] 有効
-- ユーザーの電話番号を検証する
-  - [ ] 有効
-- ユーザーおよび組織のタグ
-  - [x] 有効
-- ユーザーが複数の組織に所属できるようにする
-  - [ ] 有効
+- Allow users to view and edit their profile data
+  - [x] Enabled
+- Allow users to change their password
+  - [x] Enabled
+- Validate user phone numbers
+  - [ ] Enabled
+- Tags on users and organizations
+  - [x] Enabled
+- Allow users to belong to multiple organizations
+  - [ ] Enabled
 
 </details>
 <details>
 <summary>Zendesk US Government の場合</summary>
 
-- 誰でもチケットを提出可能
-  - [x] 有効
-    - [x] リクエストおよびアップロード API への認証を必須にする
-    - [ ] ユーザーに登録を求める
-    - ユーザー登録メッセージ
+- Anybody can submit tickets
+  - [x] Enabled
+    - [x] Require authentication for request and uploads APIs.
+    - [ ] Ask users to register
+    - User registration message
       > Please fill out this form, and we'll send you a welcome email so you can verify your email address and sign in.
-  - 許可リスト
+  - Allowlist
     > gitlab@gitlab.com google.com
-  - ブロックリスト: Zendesk 管理パネルで直接確認 - 機密データを含む
-- アカウントメール
-  - [ ]  アカウントメールに有効な Help Center のリストを含める
-  - ユーザーウェルカムメール本文:
+  - Blocklist: Zendesk 管理パネルで直接確認 - 機密データを含みます
+- Account emails
+  - [ ]  Include a list of active Help Centers in account emails
+  - User welcome email text:
     > Welcome to GitLab Federal Support. Please click the link below to create a password and sign-in.
-  - [ ] エージェントまたは管理者によって新規ユーザーが作成された場合にもウェルカムメールを送信する
-  - メール検証メール本文
+  - [ ] Also send a welcome email when a new user is created by an agent or administrator.
+  - Email verification email text
     > We need to verify that you are the owner of this email address. Please follow the link below to verify.
-- ユーザーが自分のプロファイルデータを閲覧および編集できるようにする
-  - [x] 有効
-- ユーザーがパスワードを変更できるようにする
-  - [x] 有効
-- ユーザーの電話番号を検証する
-  - [ ] 有効
-- ユーザーおよび組織のタグ
-  - [x] 有効
-- ユーザーが複数の組織に所属できるようにする
-  - [ ] 有効
+- Allow users to view and edit their profile data
+  - [x] Enabled
+- Allow users to change their password
+  - [x] Enabled
+- Validate user phone numbers
+  - [ ] Enabled
+- Tags on users and organizations
+  - [x] Enabled
+- Allow users to belong to multiple organizations
+  - [ ] Enabled
 
 </details>
 
-## 管理者タスク {#administrator-tasks}
+## Administrator tasks
 
-{{% alert title="注意" color="primary" %}}
+{{% alert title="Note" color="primary" %}}
 
-- このセクションのすべての項目は、Zendesk への `Administrator` レベルのアクセスが必要です。
+- このセクション内のすべての項目には、Zendesk への `Administrator` レベルのアクセス権が必要です。
 
 {{% /alert %}}
 
-### エンドユーザーを作成する
+### Creating an end-user
 
-{{% alert title="警告" color="warning" %}}
+{{% alert title="Warning" color="warning" %}}
 
-- これを手動で行う必要があるケースは極めてまれです。実施する理由を慎重に検討し、すべてのドキュメントを確認した上で代替プロセスを使用すべきかどうかを判断してください。
-- エンドユーザーの `Access` 設定（自分のチケット以外を閲覧する権限）は変更しません。エンドユーザーが組織のチケットを閲覧したい場合は、[Shared Organization セットアップ](/handbook/security/customer-support-operations/zendesk/organizations/shared-orgs)を使用する必要があります。
+- これを手動で行う必要があることは極めてまれです。これを行う理由を慎重に検討し、すべてのドキュメントを確認して、代替プロセスを使用すべきかどうかを判断してください。
+- 私たちはエンドユーザーの `Access` 設定（つまり、自分自身のチケット以外を閲覧する権限）を変更しません。エンドユーザーが組織のチケットを閲覧したい場合は、[Shared Organization の設定](/handbook/security/customer-support-operations/zendesk/organizations/shared-orgs)を使用する必要があります。
 
 {{% /alert %}}
 
 Zendesk でエンドユーザーを作成するには:
 
-1. ページの左上にある `+ Add` にカーソルを合わせる（管理パネル上にいないとき）
-1. `User` をクリック
-1. `Name` を入力
-1. `Email` を入力
-1. `User type` が `End user` になっていることを確認
-1. `Add` をクリック
+1. （管理パネルにいないときに）ページ左上の `+ Add` にカーソルを合わせます
+1. `User` をクリックします
+1. `Name` を入力します
+1. `Email` を入力します
+1. `User type` が `End user` になっていることを確認します
+1. `Add` をクリックします
 
-### エンドユーザーを編集する
+### Editing an end-user
 
-{{% alert title="警告" color="warning" %}}
+{{% alert title="Warning" color="warning" %}}
 
-- 組織との関連付けについては、[組織関連付けドキュメント](/handbook/security/customer-support-operations/zendesk/organizations/association)を参照してください。
+- 組織関連付けに関する情報については、[組織関連付けのドキュメント](/handbook/security/customer-support-operations/zendesk/organizations/association)を参照してください。
 
 {{% /alert %}}
 
-デフォルトでは、エンドユーザーの編集は行いません。代わりに、サポートポータル自体を使って自身で行うよう推奨します。
+デフォルトでは、私たちはエンドユーザーを編集しません。代わりに、サポートポータル自体を使って自分で編集することを推奨しています:
 
 - [Zendesk Global のエンドユーザー向け](https://support.gitlab.com/hc/en-us/articles/11626501035292-Support-Portal-User-Guide#account-management)
 - [Zendesk US Government のエンドユーザー向け](https://federal-support.gitlab.com/hc/en-us/articles/22616053222292-Support-Portal-User-Guide#account-management)
 
-ただし、エンドユーザーを編集する非常に特殊な状況もあります。
+ただし、私たちがエンドユーザーを編集する非常に特定の状況もあります。
 
-#### 確認メールの再送信
+#### Resending confirmation email
 
-{{% alert title="警告" color="warning" %}}
+{{% alert title="Warning" color="warning" %}}
 
-- これは未確認のメールアドレスに対してのみ実行できます。一度確認されると、そのアドレスに確認メールを再送信することはできません。
+- これは未確認のメールアドレスに対してのみ実行できます。一度確認されると、そのアドレスに確認メールを再送することはできません。
 
 {{% /alert %}}
 
-ユーザーが未確認のエンドユーザーアカウントで確認メールの再送信を必要としている場合（つまりアカウント上のメールアドレスをまだ確認していない場合）、以下の手順で再送できます。
+ユーザーが未確認のエンドユーザーアカウント（つまりアカウントのメールアドレスをまだ確認していない）で確認メールの再送を必要とする場合、次の手順で再送できます:
 
-1. Zendesk でエンドユーザーのページに移動
-1. 確認メールを再送信したいメールアドレスの横にあるドロップダウンキャレットをクリック
-1. `Resend verification email` をクリック
+1. Zendesk のエンドユーザーのページに移動します
+1. 確認メールを再送する必要のあるメールアドレスの横にあるドロップダウンキャレットをクリックします
+1. `Resend verification email` をクリックします
 
-#### パスワードリセットメールを送信する
+#### Sending a password reset email
 
 エンドユーザーにパスワードリセットメールを送信するには:
 
-1. Zendesk でエンドユーザーのページに移動
-1. `Security settings` タブをクリック
-1. `Reset` リンクをクリック
-1. 使用するブランドを選択
+1. Zendesk のエンドユーザーのページに移動します
+1. `Security settings` タブをクリックします
+1. `Reset` リンクをクリックします
+1. 使用するブランドを選択します
    - Zendesk Global の場合: `GitLab Support`
    - Zendesk US Government の場合: `GitLab`
-1. `Reset password` をクリック
+1. `Reset password` をクリックします
 
-#### セカンダリメールの追加または削除
+#### Adding or removing a secondary email
 
-{{% alert title="警告" color="warning" %}}
+{{% alert title="Warning" color="warning" %}}
 
-- 別のアカウントで使用中のメールアドレスの場合は実行できません
+- そのメールアドレスが別のアカウントで使用されている場合は実行できません
 
 {{% /alert %}}
 
 エンドユーザーにセカンダリメールを追加するには:
 
-1. Zendesk でエンドユーザーのページに移動
-1. ページ左側（`Primary email` 属性の下）の `+ add contact` をクリック
-1. `Email` をクリック
-1. セカンダリメールアドレスを入力（Enter/Return キーを押す）
+1. Zendesk のエンドユーザーのページに移動します
+1. ページ左側（`Primary email` 属性の下）の `+ add contact` をクリックします
+1. `Email` をクリックします
+1. セカンダリメールアドレスを入力します（そして Enter/Return を押します）
 
-#### セカンダリメールをプライマリに設定する
+#### Setting a secondary email as the primary
 
 Zendesk でセカンダリメールアドレスをプライマリメールに設定するには:
 
-1. Zendesk でエンドユーザーのページに移動
-1. プライマリにしたいメールアドレスの横にあるドロップダウンキャレットをクリック
-1. `Make primary contact` をクリック
+1. Zendesk のエンドユーザーのページに移動します
+1. プライマリにしたいメールアドレスの横にあるドロップダウンキャレットをクリックします
+1. `Make primary contact` をクリックします
 
-#### ユーザーノートを管理する {#managing-the-user-note}
+#### Managing the user note
 
 エンドユーザーのユーザーノート（または詳細）を変更するには:
 
-1. Zendesk でエンドユーザーのページに移動
-1. 変更したいテキストエリア（`Notes` または `Details`）をクリック
-1. 必要に応じてテキストを変更
-1. テキストエリア外の任意の場所をクリック
+1. Zendesk のエンドユーザーのページに移動します
+1. 変更したいテキストエリア（`Notes` または `Details`）をクリックします
+1. 必要に応じてテキストを変更します
+1. テキストエリアの外側のどこかをクリックします
 
-### エンドユーザーをサスペンドする {#suspending-an-end-user}
+### Suspending an end-user
 
-ユーザーをサスペンドするには:
+ユーザーを停止するには:
 
-1. Zendesk でエンドユーザーのページに移動
-1. ユーザーページの `+ New ticket` の右にあるドロップダウンキャレットをクリック
-1. `Suspend` をクリック
-1. 理由が `Other reason` であることを確認
-1. `Additional comment` が空欄であることを確認
-1. `Suspend user` をクリック
+1. Zendesk のエンドユーザーのページに移動します
+1. ユーザーのページの `+ New ticket` の右にあるドロップダウンキャレットをクリックします
+1. `Suspend` をクリックします
+1. 理由が `Other reason` になっていることを確認します
+1. `Additional comment` が空欄になっていることを確認します
+1. `Suspend user` をクリックします
 
-### エンドユーザーを削除する
+### Deleting an end-user
 
 エンドユーザーの削除は、主に 3 つの異なるソースから発生します。
 
-#### エンドユーザーからの依頼による
+#### By end-user request
 
-これは、エンドユーザーがサポートポータルアカウントの削除を求めるチケットを提出した場合に発生します。プロセスは次のとおりです。
+これは、エンドユーザーがサポートポータルアカウントの削除を求めるチケットを私たちに起票したときに発生します。これに対するプロセスは次のとおりです:
 
-1. チケット内でマクロ `Support::Support-Ops::Confirm Deletion` をエンドユーザーに送信
-1. エンドユーザーが削除を確認する返信をした場合、チケット内でマクロ `Support::Support-Ops::Deletion Forthcoming` をエンドユーザーに送信
-1. Zendesk でエンドユーザーのページに移動
-1. ユーザーページの `+ New ticket` の右にあるドロップダウンキャレットをクリック
-1. `Delete` をクリック
-1. ポップアップ表示された `Confirm` をクリック
+1. チケット内でエンドユーザーにマクロ `Support::Support-Ops::Confirm Deletion` を送信します
+1. エンドユーザーが削除を確認する返信をした場合、チケット内でエンドユーザーにマクロ `Support::Support-Ops::Deletion Forthcoming` を送信します
+1. Zendesk のエンドユーザーのページに移動します
+1. ユーザーのページの `+ New ticket` の右にあるドロップダウンキャレットをクリックします
+1. `Delete` をクリックします
+1. 表示されるポップアップで `Confirm` をクリックします
 
-#### データプライバシー要求による
+#### By data-privacy request
 
-これは、ユーザーがデータプライバシー削除を要求したときに（Transcend を経由して）発生します。システムからその旨の通知が届くはずです。まずユーザーが Zendesk に存在するかを確認します。存在する場合は、以下の手順でエンドユーザーを削除します。
+これは（Transcend を介して）ユーザーがデータプライバシーの削除を要求したときに発生します。実行するようシステムから ping が届くはずです。まず Zendesk にユーザーが存在するかどうかを確認します。存在する場合は、次の手順でエンドユーザーを削除すべきです:
 
-1. Zendesk でエンドユーザーのページに移動
-1. ユーザーページの `+ New ticket` の右にあるドロップダウンキャレットをクリック
-1. `Delete` をクリック
-1. ポップアップ表示された `Confirm` をクリック
+1. Zendesk のエンドユーザーのページに移動します
+1. ユーザーのページの `+ New ticket` の右にあるドロップダウンキャレットをクリックします
+1. `Delete` をクリックします
+1. 表示されるポップアップで `Confirm` をクリックします
 
-#### スケジュールされた削除による
+#### By scheduled deletion
 
-ユーザー削除の詳細については、[自動ユーザー削除](/handbook/security/customer-support-operations/zendesk/users/automated-user-deletion)に関するドキュメントを参照してください。
+ユーザー削除の詳細については、[自動ユーザー削除](/handbook/security/customer-support-operations/zendesk/users/automated-user-deletion)のドキュメントを参照してください。
 
-### コンプライアンスレベルの削除
+### Compliance level deletion
 
-コンプライアンスレベルの削除の詳細については、[自動ユーザー削除](/handbook/security/customer-support-operations/zendesk/users/automated-user-deletion)に関するドキュメントを参照してください。
+コンプライアンスレベルの削除の詳細については、[自動ユーザー削除](/handbook/security/customer-support-operations/zendesk/users/automated-user-deletion)のドキュメントを参照してください。
 
-### エンドユーザーを BAN する {#banning-an-end-user}
+### Banning an end-user
 
-{{% alert title="危険" color="danger" %}}
+{{% alert title="Danger" color="danger" %}}
 
-- これは複数のチームの関与を必要とする深刻な問題であることが多いです。サポートポータル以上の範囲でユーザーを BAN する必要があるかを確認し、必要に応じて関連チーム（セキュリティ、法務、フルフィルメント、課金など）と協力してください。
+- これは多くの場合、複数のチームを巻き込む必要のある深刻な事柄です。ユーザーをサポートポータル以外からも BAN する必要があるかどうかを確認し、必要に応じて関連チーム（security、legal、fulfillment、billing など）と連携してください。
 
 {{% /alert %}}
 
-エンドユーザーを BAN する必要がある場合（さまざまな理由がありますが、特に不正行為によるもの）、誰かが #support_operations チャンネルにその件について投稿します。
+エンドユーザーを BAN する必要がある場合（さまざまな理由がありますが、特に不正行為による場合）、誰かがこの件について #support_operations チャンネルに投稿します。
 
-その投稿に対して反応し、詳細を確認するためにダイレクトメッセージを送ります。
+投稿に応答し、その人にダイレクトメッセージを送って詳細を入手します。
 
-すべての詳細を確認したら、以下を行います。
+すべての詳細を入手したら、次のことを行います:
 
-1. クローズされていないチケットをすべてクローズ（必要な場合）
-   - Zendesk Global の場合（`TICKET_ID` をチケットの ID に、`API_TOKEN` を自身の API トークンに置き換える）:
+1. クローズされていないチケットをすべてクローズします（必要な場合）
+   - Zendesk Global の場合（`TICKET_ID` をチケットの ID に、`API_TOKEN` をあなたの API トークンに置き換えます）:
 
    ```bash
    curl -ss -X PUT https://gitlab.zendesk.com/api/v2/tickets/TICKET_ID \
@@ -279,7 +278,7 @@ Zendesk でセカンダリメールアドレスをプライマリメールに設
      -u support-ops@gitlab.com/token:API_TOKEN
    ```
 
-   - Zendesk US Government の場合（`TICKET_ID` をチケットの ID に、`API_TOKEN` を自身の API トークンに置き換える）:
+   - Zendesk US Government の場合（`TICKET_ID` をチケットの ID に、`API_TOKEN` をあなたの API トークンに置き換えます）:
 
    ```bash
    curl -ss -X PUT https://gitlab-federal-support.zendesk.com/api/v2/tickets/TICKET_ID \
@@ -288,52 +287,52 @@ Zendesk でセカンダリメールアドレスをプライマリメールに設
      -u supportops@gitlab.com/token:API_TOKEN
    ```
 
-1. [エンドユーザーのノートを変更](#managing-the-user-note)し、BAN に関する情報（BAN されたという表明、理由、詳細を確認したい場合の連絡先）を追加します。次のような内容が適しています。
+1. [エンドユーザーのノートを変更](#managing-the-user-note)して、BAN に関する情報（BAN される旨の記述、理由、詳細が必要な場合の連絡先）を追加します。次のような内容がうまく機能します:
    > This user has been banned from the support portal as of YYYY-MM-DD by request of TEAM_NAME team.
    >
    > This was due to REASON.
    >
    > If more details are needed, please reach out to the Customer Support Operations team via the #support_operations Slack channel.
-   - 置き換え:
-     - `YYYY-MM-DD` を現在の日付（ISO フォーマット）に
-     - `TEAM_NAME` を BAN を要求しているチームの名前（例: Support、Security、Legal など）に
-     - `REASON` を理由に（関連チケットが理由の一部である場合は、メッセージに必ず含めてください）
-1. [ユーザーをサスペンドする](#suspending-an-end-user)
-1. [システムエンドユーザー設定を変更する](#modifying-system-end-user-settings)。具体的には `Blocklist` 設定に `reject:EMAIL_ADDRESS` を追加します（`EMAIL_ADDRESS` をエンドユーザーのメールアドレスに置き換える）。
+   - 置き換える内容:
+     - `YYYY-MM-DD` を現在の日付（ISO 形式）に
+     - `TEAM_NAME` を BAN を要求したチームの名前に（例: Support、Security、Legal など）
+     - `REASON` を理由に（関連するチケットが理由の一部である場合は、メッセージにそれが含まれていることを確認してください）
+1. [ユーザーを停止します](#suspending-an-end-user)
+1. [システムのエンドユーザー設定を変更](#modifying-system-end-user-settings)します。具体的には、`Blocklist` 設定に `reject:EMAIL_ADDRESS` を追加します（`EMAIL_ADDRESS` をエンドユーザーのメールアドレスに置き換えます）。
 
-すべて完了したら、元の依頼投稿でエンドユーザーが BAN されたことを確認します。
+すべて完了したら、元のリクエスト投稿でエンドユーザーが BAN されたことを確認します。
 
-### エンドユーザーの BAN を解除する
+### Unbanning an end-user
 
-これは発生することが非常にまれで、おそらく非常にカスタマイズされたプロセスを要します。フルスタックエンジニアに状況を引き継いで対応してもらってください。
+これが発生することは非常にまれであり、おそらく非常にカスタムなプロセスが必要になります。この状況は Fullstack Engineer に照会して調査してもらってください。
 
-### システムエンドユーザー設定を変更する {#modifying-system-end-user-settings}
+### Modifying system end-user settings
 
-{{% alert title="危険" color="danger" %}}
+{{% alert title="Danger" color="danger" %}}
 
-- サポートポータルの使い勝手に大きな影響を与える可能性があるため、極めて慎重に実行してください。
-- これは以下の 2 つのシナリオでのみ実行する必要があります:
-  - [エンドユーザーを BAN する](#banning-an-end-user)
-  - 対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する
-- システムエンドユーザー設定を変更した場合は、必ずこのページの[現在のシステムエンドユーザー設定](#current-system-end-user-settings)を更新してください
+- これはサポートポータルの使いやすさに大きく影響する可能性があるため、実行時には細心の注意を払ってください。
+- これは次の 2 つのシナリオでのみ行うべきです:
+  - [エンドユーザーの BAN](#banning-an-end-user)
+  - 対応するリクエスト issue（Feature Request、Administrative、Bug など）がある
+- システムのエンドユーザー設定を変更した場合は、必ずこのページの [Current system end-user settings](#current-system-end-user-settings) を更新してください
 
 {{% /alert %}}
 
-システムエンドユーザー設定を変更するには:
+システムのエンドユーザー設定を変更するには:
 
-1. Zendesk インスタンスの管理ダッシュボードに移動
+1. 対象の Zendesk インスタンスの管理ダッシュボードに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/home)
-1. `People > Configuration > End users` に移動
+1. `People > Configuration > End users` に移動します
    - [Zendesk Global](https://gitlab.zendesk.com/admin/people/configuration/settings)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/people/configuration/settings)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/people/configuration/settings)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/people/configuration/settings)
-1. 変更したい設定を修正
-1. ページの右下にある `Save tab` をクリック
+1. 変更したい設定に変更を加えます
+1. ページ右下の `Save tab` をクリックします
 
-## よくある問題とトラブルシューティング
+## Common issues and troubleshooting
 
-これは必要に応じて項目が追加されていく、生きたセクションです。
+これは、必要に応じて項目が追加されていく生きたセクションです。
