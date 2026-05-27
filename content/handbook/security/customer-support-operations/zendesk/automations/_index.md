@@ -1,28 +1,29 @@
 ---
 title: 'オートメーション'
-description: 'Zendesk オートメーションに関するドキュメント'
+description: 'Zendesk のオートメーションに関するドキュメント'
 date: 2025-12-23
 upstream_path: /handbook/security/customer-support-operations/zendesk/automations/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: "154fb2bd6436508aa2d90583cc235d5fe28b1705"
+translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-13T10:15:31-06:00"
+lastmod: 2026-05-26T12:05:00-05:00
 ---
 
-このガイドでは、GitLab における Zendesk オートメーションの作成、編集、管理方法について説明します。管理者は[管理者タスク](#administrator-tasks)セクションを確認してください。
+このガイドでは、GitLab で Zendesk のオートメーションを作成、編集、管理する方法を説明します。管理者は [管理者タスク](#administrator-tasks) のセクションを確認してください。
 
-エージェントが手動で適用する[マクロ](../macros/)や、チケットイベントで即座に発火するトリガーとは異なり、オートメーションは時間ベースのスケジュールで実行されます。
+エージェントが手動で適用する [マクロ](../macros/) や、チケットのイベント時に即座に発火するトリガーとは異なり、オートメーションは時間ベースのスケジュールで実行されます。
 
-{{% alert title="技術的な詳細" color="primary" %}}
+{{% alert title="Technical Details" color="primary" %}}
 
-- デプロイメントタイプ: `Standard`
-- 同期リポジトリ
+- デプロイタイプ: `Standard`
+- Sync repos
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/automations)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/automations)
-- 管理コンテンツリポジトリ
+- Managed content repos
   - [Zendesk Global](https://gitlab.com/gitlab-com/support/zendesk-global/automations)
   - [Zendesk US Government](https://gitlab.com/gitlab-com/support/zendesk-us-government/automations)
+- `CustSuppOps Zendesk Test Suite Generator` が有効
 
 {{% /alert %}}
 
@@ -32,31 +33,31 @@ lastmod: "2026-02-13T10:15:31-06:00"
 
 [Zendesk](https://support.zendesk.com/hc/en-us/articles/4408832701850-About-automations-and-how-they-work) によると:
 
-> オートメーションはトリガーに似ています。両者ともチケットのプロパティを変更し、オプションで顧客やエージェントにメール通知を送信する条件とアクションを定義するためです。両者の違いは、オートメーションはチケットが作成または更新された直後ではなく、チケットのプロパティが設定または更新された後に時間イベントが発生したときに実行されることです。
+> オートメーションは、いずれもチケットのプロパティを変更し、オプションで顧客やエージェントにメール通知を送信する条件とアクションを定義するという点で、トリガーに似ています。両者が異なる点は、オートメーションがチケットの作成・更新の直後ではなく、チケットのプロパティが設定または更新された後に時間イベントが発生したときに実行されることです。
 
-簡単に言えば、オートメーションは即座に実行されないトリガーです。イベントベースではなく時間ベースです。
+よりシンプルに言えば、オートメーションは即座には実行されないトリガーです。イベントベースではなく時間ベースです。
 
 ### Zendesk でオートメーションが実行されるタイミング
 
-公式には、Zendesk のオートメーションは 1 時間に 1 回実行されます。正確なタイミングは確定的ではありませんが、私たちの Zendesk の使用経験では、これはインスタンスのタイムゾーンで毎時の開始時（5 分程度以内）に発生することが示されています。
+公式には、Zendesk のオートメーションは 1 時間に 1 回実行されます。正確なタイミングは確定したものではありませんが、私たちの Zendesk の利用では、インスタンスのタイムゾーンで毎時の最初（おおむね 5 分以内）にこれが発生することが確認されています。
 
 ### オートメーションは条件ロジックを使用する
 
 オートメーションは条件ロジックを使用します:
 
-- `all`: 配列内のすべての条件が true である必要があります（AND ロジック）
-- `any`: 少なくとも 1 つの条件が true である必要があります（OR ロジック）
-- 1 つのセットだけ、または両方のセットを使用できます（ただし少なくとも 1 つのセットを使用する必要があります）
+- `all`: 配列内の **すべて** の条件が真でなければならない（AND ロジック）
+- `any`: 配列内の **少なくとも 1 つ** の条件が真でなければならない（OR ロジック）
+- どちらか一方のセットのみ、または両方のセットを使用できます（ただし少なくとも 1 つのセットは使用しなければなりません）
 
-### 私たちのオートメーションの管理方法
+### オートメーションの管理方法
 
-Zendesk は UI を通じてオートメーションを完全に管理する方法を提供していますが、私たちはよりバージョン管理されたメソドロジーを採用しています。これにより、定められたレビュープロセス、必要に応じたロールバック実行などが可能になります。
+Zendesk は UI 経由でオートメーションを管理する完全な手段を提供していますが、私たちはよりバージョン管理された方法論を採用しています。これにより、定められたレビュープロセスや、必要に応じたロールバックの実行などが可能になります。
 
-そのため、私たちは同期リポジトリと管理コンテンツリポジトリを利用しています。
+そのため、私たちは sync repos と managed content repos を活用しています。
 
-### 同期リポジトリの仕組み
+### sync repo の仕組み
 
-同期リポジトリのワークフローは以下のプロセスに従います:
+sync repo のワークフローは次のプロセスに従います:
 
 ```mermaid
 graph TD;
@@ -69,41 +70,41 @@ graph TD;
   D(Changes synced to Zendesk)
 ```
 
-#### 人間が読みやすい置換
+#### 人間が読める形式の置換
 
-{{% alert title="注意" color="primary" %}}
+{{% alert title="Note" color="primary" %}}
 
-- YAML ファイル経由でオートメーションを作成/編集する `administrators` にのみ適用されます
+- YAML ファイル経由でオートメーションを作成・編集する `administrators` にのみ適用されます
 
 {{% /alert %}}
 
-現在、同期リポジトリは、人間が読みやすい項目から「Zendesk」相当の項目への、さまざまな項目の置換を実行できます。これには次のものが含まれます:
+現在、sync repo はさまざまな項目を、人間が読める形式の項目から「Zendesk」の同等項目へ置換できます。これには以下が含まれます:
 
-| 人間が読みやすい項目 | Zendesk フィールド項目 | 条件/アクションの場所 | 注 |
+| 人間が読める項目 | Zendesk フィールド項目 | 条件/アクションの場所 | 備考 |
 |---------------------|--------------------|-----------------|-------|
-| `'Brand: XXX'` | `brand_id` | `value` | `XXX` をブランドの `name` に置き換えます |
-| `'Field: XXX'` | `custom_fields_xxx` | `field` | `XXX` をチケットフィールドの `title` に置き換えます |
-| `'Group: XXX'` | `group_id` | `value` | `XXX` をグループの `name` に置き換えます |
-| `'XXX'` | `role` | `value` | `XXX` をロールタイプの `name` または依頼者のメールアドレスに置き換えます |
-| `'Form: XXX'` | `ticket_form_id` | `value` | `XXX` をチケットフォームの `name` に置き換えます |
-| `'Schedule: XXX'` | `set_schedule` | `value` | `XXX` をスケジュールの `name` に置き換えます |
-| `'Schedule: XXX'` | `schedule_id` | `value` | `XXX` をスケジュールの `name` に置き換えます |
-| `'XXX'` | `organization_id` | `value` | `XXX` を組織の `salesforce_id` 属性に置き換えます |
-| `'XXX'` | `assignee_id` | `value` | `XXX` をエージェントのメールアドレスに置き換えます |
-| `'XXX'` | `satisfaction_reason_code` | `value` | `XXX` を満足度理由の `name` に置き換えます |
-| `'XXX'` | `via_id` | `value` | `XXX` を via タイプの `name` に置き換えます |
-| `'XXX'` | `requester_role` | `value` | `XXX` を依頼者ロールタイプの `name` に置き換えます |
-| `'Target: XXX'` | `notification_target` | `value` | `XXX` をターゲットの `name` に置き換えます |
-| `'Webhook: XXX'` | `notification_webhook` | `value` | `XXX` を Webhook の `name` に置き換えます |
+| `'Brand: XXX'` | `brand_id` | `value` | `XXX` をブランドの `name` に置き換える |
+| `'Field: XXX'` | `custom_fields_xxx` | `field` | `XXX` をチケットフィールドの `title` に置き換える |
+| `'Group: XXX'` | `group_id` | `value` | `XXX` をグループの `name` に置き換える |
+| `'XXX'` | `role` | `value` | `XXX` をロールタイプの `name` または依頼者のメールアドレスに置き換える |
+| `'Form: XXX'` | `ticket_form_id` | `value` | `XXX` をチケットフォームの `name` に置き換える |
+| `'Schedule: XXX'` | `set_schedule` | `value` | `XXX` をスケジュールの `name` に置き換える |
+| `'Schedule: XXX'` | `schedule_id` | `value` | `XXX` をスケジュールの `name` に置き換える |
+| `'XXX'` | `organization_id` | `value` | `XXX` を組織の `salesforce_id` 属性に置き換える |
+| `'XXX'` | `assignee_id` | `value` | `XXX` をエージェントのメールアドレスに置き換える |
+| `'XXX'` | `satisfaction_reason_code` | `value` | `XXX` を満足度理由の `name` に置き換える |
+| `'XXX'` | `via_id` | `value` | `XXX` を via タイプの `name` に置き換える |
+| `'XXX'` | `requester_role` | `value` | `XXX` を依頼者ロールタイプの `name` に置き換える |
+| `'Target: XXX'` | `notification_target` | `value` | `XXX` をターゲットの `name` に置き換える |
+| `'Webhook: XXX'` | `notification_webhook` | `value` | `XXX` を webhook の `name` に置き換える |
 
-例として、`Preferred Region for Support` フィールドの値を `AMER` に変更するオートメーションを作成したい場合は、置換を使用して次のようにします:
+例として、オートメーションで `Preferred Region for Support` フィールドの値を `AMER` に変更したい場合は、置換を使用するために次のように記述します:
 
 ```yaml
 - field: 'Field: Preferred Region for Support'
   value: 'AMER'
 ```
 
-別の例として、チケットのフォームが `SaaS` フォームではないかをチェックする条件が必要な場合は、次のようにします:
+別の例として、チケットのフォームが `SaaS` フォームではないことをチェックする条件が必要な場合は、次のように記述します:
 
 ```yaml
 - field: 'ticket_form_id'
@@ -111,96 +112,96 @@ graph TD;
   value: 'Form: SaaS'
 ```
 
-#### 同期リポジトリで MR を作成する場合 {#when-creating-mrs-in-the-sync-repo}
+#### sync repo で MR を作成するとき
 
-同期リポジトリで MR が作成されると、（`bin/compare` スクリプト経由で）比較アクションが実行されます。これは次のことを行います:
+sync repo で MR が作成されると、（`bin/compare` スクリプト経由で）compare アクションが実行され、次の処理が行われます:
 
-1. 管理コンテンツリポジトリのクローンを実行します
-1. Zendesk インスタンスからすべてのオートメーション、ブランド、グループ、満足度理由、スケジュール、ターゲット、チケットフィールド、チケットフォーム、Webhook を取得します
-1. 同期リポジトリ内のすべての YAML ファイルをレビューして、オートメーションオブジェクトを生成します
-   - 同期リポジトリのファイルに次の問題がいずれも存在しないことを確認するためにもチェックします:
-     - タイトルが欠けている
-     - `active` 属性が `false` のファイルが `active` フォルダにない
-     - `active` 属性が `true` のファイルが `inactive` フォルダにない
-     - `title` 属性の重複した使用がある
-     - `contains_managed_content` 属性が `true` のファイルが、対応する管理コンテンツファイルを持っている
-     - `contains_managed_webhook` 属性が `true` のファイルが、対応する管理コンテンツファイルを持っている
-1. すべての YAML ファイルからのオートメーションオブジェクトを、対応する Zendesk アイテム（属性 `title` および `previous_title` の値をチェックして判定）と比較します
-   - 存在しない場合、後で使用するために変数に作成オブジェクトを格納します
-   - 存在するが属性値が異なる場合、後で使用するために変数に更新オブジェクトを格納します
-1. 比較レポートを出力します
+1. managed content repo のクローンを実行する
+1. Zendesk インスタンスからすべてのオートメーション、ブランド、グループ、満足度理由、スケジュール、ターゲット、チケットフィールド、チケットフォーム、webhook を取得する
+1. sync repo 内のすべての YAML ファイルをレビューしてオートメーションオブジェクトを生成する
+   - また、sync repo のファイルに以下の問題が存在しないことを確認する:
+     - title が欠落している
+     - `active` 属性が `false` のファイルが `active` フォルダーにない
+     - `active` 属性が `true` のファイルが `inactive` フォルダーにない
+     - `title` 属性の重複した使用がない
+     - `contains_managed_content` 属性が `true` のファイルに対応する managed content ファイルがある
+     - `contains_managed_webhook` 属性が `true` のファイルに対応する managed content ファイルがある
+1. YAML ファイルのすべてのオートメーションオブジェクトを、マッチする Zendesk 項目と比較する（`title` および `previous_title` 属性の値をチェックして判定する）
+   - 存在しない場合は、後で使用するために create オブジェクトを変数に格納する
+   - 存在するが属性値が異なる場合は、後で使用するために update オブジェクトを変数に格納する
+1. 比較レポートを出力する
 
 #### Zendesk への同期
 
-同期リポジトリは、プロジェクトのスケジュールパイプラインが実行される（正しいタイミングまたは手動で実行される）と同期タスクを実行します。
+sync repo は、プロジェクトのスケジュールされたパイプラインが実行されたとき（正しいタイミングまたは手動実行のいずれか）に同期タスクを実行します。
 
-いずれかのアクションが発生すると、同期は[比較アクション](#when-creating-mrs-in-the-sync-repo)を実行し、生成されたオブジェクトを使用して、必要な Zendesk エンドポイントにヒットするループを介して、必要な作成と更新を実行します:
+いずれかのアクションが発生すると、同期は [compare アクション](#when-creating-mrs-in-the-sync-repo) を実行し、その後生成されたオブジェクトを使用して、必要な Zendesk エンドポイントにアクセスするループ経由で必要な作成・更新を実行します:
 
 - [Creates](https://developer.zendesk.com/api-reference/ticketing/business-rules/automations/#create-automation)
 - [Updates](https://developer.zendesk.com/api-reference/ticketing/business-rules/automations/#update-automation)
 
-#### 孤立した管理コンテンツファイルのレポート
+#### 孤立した managed content ファイルの報告
 
-2 月、5 月、8 月、11 月の 1 日に、[スケジュールパイプライン](https://docs.gitlab.com/ci/pipelines/schedules/)により、同期リポジトリは Support リーダーシップチームがすべての孤立した管理コンテンツファイルをレビューするための Issue を作成します。
+2 月、5 月、8 月、11 月の 1 日に、[スケジュールされたパイプライン](https://docs.gitlab.com/ci/pipelines/schedules/) が、サポートリーダーシップチームがすべての孤立した managed content ファイルをレビューするための Issue を sync repo に作成させます。
 
-これは同期リポジトリの `bin/find_orphaned_files` スクリプト経由で行われ、次のことを行います:
+これは sync repo の `bin/find_orphaned_files` スクリプト経由で行われ、次の処理を実行します:
 
-1. 管理コンテンツリポジトリのクローンを実行します
-1. 管理コンテンツリポジトリの `active` および `inactive` フォルダ内のすべてのファイルをレビューして、`state`（つまり `active` または `inactive`）、`path`、`title` を判定します
-1. 同期リポジトリ自体の `active` および `inactive` フォルダ内のすべてのファイルをレビューして、次のことを判定します:
-   - ファイルが管理コンテンツファイルを使用しているか
-   - 管理コンテンツファイルがあるか
-1. 同期リポジトリのファイルなしで管理コンテンツファイルが見つかった場合、それを Customer Support リーダーシップにレポートする Issue を作成します
+1. managed content repo のクローンを実行する
+1. managed content repo の `active` および `inactive` フォルダー内のすべてのファイルをレビューして、`state`（つまり `active` または `inactive`）、`path`、`title` を判定する
+1. sync repo 自体の `active` および `inactive` フォルダー内のすべてのファイルをレビューして、以下を判定する:
+   - そのファイルが managed content ファイルを使用しているか
+   - managed content ファイルが存在するか
+1. sync repo ファイルのない managed content ファイルを見つけた場合は、それを Customer Support リーダーシップに報告する Issue を作成する
 
-## 管理者以外の立場でオートメーションを作成する
+## 管理者以外がオートメーションを作成する
 
-オートメーションの作成については、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要なため）。
+オートメーションの作成については、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要となるため）。
 
-## 管理者以外の立場でオートメーションを編集する
+## 管理者以外がオートメーションを編集する
 
-### オートメーションで使用するコメントの文言を変更する
+### オートメーションで使用されているコメント文言の変更
 
-オートメーション内のコメントの文言を編集するには、管理コンテンツリポジトリの対応するファイルを変更します。`master` ブランチにマージされると、次のデプロイメントサイクルで取り込まれて Zendesk にデプロイされます。
+オートメーション内のコメント文言を編集するには、managed content repo の対応するファイルを修正します。`master` ブランチにマージされた後、次のデプロイサイクルで取り込まれ、Zendesk にデプロイされます。
 
-### オートメーションで使用するペイロードを変更する
+### オートメーションで使用されているペイロードの変更
 
-オートメーション内のペイロード（管理 Webhook を使用しているもの）を編集するには、管理コンテンツリポジトリの対応するファイルを変更します。`master` ブランチにマージされると、次のデプロイメントサイクルで取り込まれて Zendesk にデプロイされます。
+オートメーション内のペイロード（managed webhook を使用しているもの）を編集するには、managed content repo の対応するファイルを修正します。`master` ブランチにマージされた後、次のデプロイサイクルで取り込まれ、Zendesk にデプロイされます。
 
-### タイトル、コメント以外の文言アクションなどを変更する
+### title、コメント以外の文言アクションなどの変更
 
-オートメーションの他の項目を変更するには、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要なため）。
+オートメーション内のその他のものを変更するには、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要となるため）。
 
-## 管理者以外の立場でオートメーションを非アクティブ化する
+## 管理者以外がオートメーションを無効化する
 
-オートメーションの非アクティブ化を依頼するには、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要なため）。
+オートメーションの無効化を依頼するには、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Operations チームによる手動対応が必要となるため）。
 
-## 管理者タスク {#administrator-tasks}
+## 管理者タスク
 
-{{% alert title="注意" color="primary" %}}
+{{% alert title="Note" color="primary" %}}
 
 - このセクションのすべての項目には、Zendesk への `Administrator` レベルのアクセスが必要です。
 
 {{% /alert %}}
 
-### オートメーションの使用情報を確認する
+### オートメーションの使用状況情報を確認する
 
-オートメーションの使用情報を確認するには:
+オートメーションの使用状況情報を確認するには:
 
-1. Zendesk インスタンスの管理パネルに移動します
-1. `Objects and rules > Business rules > Automations` に移動します
-1. 「Add automation」ボタンの左側のアイコンをクリックします（AZ が入った円のように見えます）
-1. 表示したい使用列をクリックします
+1. Zendesk インスタンスの管理パネルに移動する
+1. `Objects and rules > Business rules > Automations` に移動する
+1. 「Add automation」ボタンの左にあるアイコン（AZ が入った円のように見える）をクリックする
+1. 表示したい使用状況の列をクリックする
 
 ### オートメーションを作成する
 
-{{% alert title="警告" color="warning" %}}
+{{% alert title="Warning" color="warning" %}}
 
-- これは、対応する Issue（Feature Request、Administrative、Bug 等）がある場合にのみ実施してください。存在しない場合は、まず Issue を作成し（標準プロセスに従って処理されるのを待ってから）作業してください。
-- 管理コンテンツファイルを使用するオートメーションを作成する場合は、先に当該管理コンテンツファイルを作成する必要があります。
+- これは対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ実施してください。存在しない場合は、まず作成し、対応する前に標準プロセスを通してください。
+- managed content ファイルを使用するオートメーションを作成する場合は、先にその managed content ファイルを作成しなければなりません。
 
 {{% /alert %}}
 
-オートメーションを作成するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容は、依頼自体に依存します。利用可能な開始テンプレートは以下のとおりです:
+オートメーションを作成するには、sync repo で MR を作成する必要があります。実際に行う変更はリクエスト自体によって異なります。利用できる開始用テンプレートは次のとおりです:
 
 ```yaml
 ---
@@ -226,40 +227,40 @@ contains_managed_email: false
 contains_managed_webhook: false
 ```
 
-ピアによるレビューと承認の後、MR をマージできます。次のデプロイメントが行われる際に、Zendesk に同期されます。
+ピアがあなたの MR をレビューして承認した後、MR をマージできます。次のデプロイが発生したときに、Zendesk に同期されます。
 
 ### オートメーションを編集する
 
-{{% alert title="警告" color="warning" %}}
+{{% alert title="Warning" color="warning" %}}
 
-- これは、対応する Issue（Feature Request、Administrative、Bug 等）がある場合にのみ実施してください。存在しない場合は、まず Issue を作成し（標準プロセスに従って処理されるのを待ってから）作業してください。
-- オートメーションの `contains_managed_content` または `contains_managed_webhook` 属性を `false` から `true` に変更する場合は、先に当該管理コンテンツファイルを作成する必要があります。
-- オートメーションの `contains_managed_content` または `contains_managed_webhook` 属性を `true` から `false` に変更する場合は、対応する管理コンテンツファイルを削除するためのフォローアップ MR を作成してください。
-
-{{% /alert %}}
-
-オートメーションを編集するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容は、依頼自体に依存します。
-
-ピアによるレビューと承認の後、MR をマージできます。次のデプロイメントが行われる際に、Zendesk に同期されます。
-
-#### オートメーションのタイトルを変更する
-
-オートメーションのタイトルを変更する必要がある場合は、現在の値を `previous_title` 属性にコピーしてから `title` 属性を変更します。これにより、同期処理が対象のオートメーションを引き続き特定して更新できます。
-
-### オートメーションを非アクティブ化する
-
-{{% alert title="警告" color="warning" %}}
-
-- これは、対応する Issue（Feature Request、Administrative、Bug 等）がある場合にのみ実施してください。存在しない場合は、まず Issue を作成し（標準プロセスに従って処理されるのを待ってから）作業してください。
-- オートメーションが管理コンテンツファイルを使用していた場合（つまり、YAML ファイルの `contains_managed_content` または `contains_managed_webhook` 属性が以前 `true` に設定されていた場合）、おそらく管理コンテンツリポジトリ内の対応するファイルも `active` から `inactive` の場所に移動する必要があります。
+- これは対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ実施してください。存在しない場合は、まず作成し、対応する前に標準プロセスを通してください。
+- オートメーションの `contains_managed_content` または `contains_managed_webhook` 属性を `false` から `true` に変更する場合は、先にその managed content ファイルを作成しなければなりません。
+- オートメーションの `contains_managed_content` または `contains_managed_webhook` 属性を `true` から `false` に変更する場合は、対応する managed content ファイルを削除するためのフォローアップ MR を作成してください。
 
 {{% /alert %}}
 
-オートメーションを非アクティブ化するには、同期リポジトリで MR を作成する必要があります。この MR では、対応するオートメーションの YAML ファイルに対して次の操作を行うべきです:
+オートメーションを編集するには、sync repo で MR を作成する必要があります。実際に行う変更はリクエスト自体によって異なります。
 
-1. ファイルを `active` から `inactive` パスに移動します
-1. `active` 属性の値を `false` に変更します
-1. `actions` の値を次のように変更します:
+ピアがあなたの MR をレビューして承認した後、MR をマージできます。次のデプロイが発生したときに、Zendesk に同期されます。
+
+#### オートメーションの title を変更する
+
+オートメーションの title を変更する必要がある場合は、現在の値を `previous_title` 属性にコピーしてから `title` 属性を変更します。これにより、同期が対象のオートメーションを引き続き見つけて更新できます。
+
+### オートメーションを無効化する
+
+{{% alert title="Warning" color="warning" %}}
+
+- これは対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ実施してください。存在しない場合は、まず作成し、対応する前に標準プロセスを通してください。
+- オートメーションが managed content ファイルを使用していた場合（つまり YAML ファイルの `contains_managed_content` または `contains_managed_webhook` 属性が以前 `true` に設定されていた場合）、managed content repo で対応するファイルを `active` から `inactive` の場所に移動する必要が生じる可能性が高いです。
+
+{{% /alert %}}
+
+オートメーションを無効化するには、sync repo で MR を作成する必要があります。この MR では、対応するオートメーションの YAML ファイルに対して次の処理を行ってください:
+
+1. ファイルを `active` から `inactive` のパスに移動する
+1. `active` 属性の値を `false` に変更する
+1. `actions` の値を次のように変更する:
    - Zendesk Global の場合:
 
      ```yaml
@@ -274,7 +275,7 @@ contains_managed_webhook: false
        value: 'missing_brand'
      ```
 
-1. `conditions` の値を次のように変更します:
+1. `conditions` の値を次のように変更する:
    - Zendesk Global の場合:
 
      ```yaml
@@ -313,47 +314,47 @@ contains_managed_webhook: false
        any: []
      ```
 
-1. `contains_managed_content` 属性の値を `false` に変更します
-1. `contains_managed_webhook` 属性の値を `false` に変更します
+1. `contains_managed_content` 属性の値を `false` に変更する
+1. `contains_managed_webhook` 属性の値を `false` に変更する
 
-ピアによるレビューと承認の後、MR をマージできます。次のデプロイメントが行われる際に、Zendesk に同期されます。
+ピアがあなたの MR をレビューして承認した後、MR をマージできます。次のデプロイが発生したときに、Zendesk に同期されます。
 
 ### オートメーションを削除する
 
-{{% alert title="警告" color="warning" %}}
+{{% alert title="Warning" color="warning" %}}
 
-- オートメーションが非アクティブ化されている場合のみ削除できます。
-- これは、対応する Issue（Feature Request、Administrative、Bug 等）がある場合にのみ実施してください。存在しない場合は、まず Issue を作成し（標準プロセスに従って処理されるのを待ってから）作業してください。
-- オートメーションを削除する場合は、おそらく同期リポジトリと管理コンテンツリポジトリからもファイルを削除する必要があります。
+- オートメーションは無効化されている場合のみ削除できます。
+- これは対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ実施してください。存在しない場合は、まず作成し、対応する前に標準プロセスを通してください。
+- オートメーションを削除する場合、sync repo と managed content repo の両方からファイルを削除する必要が生じる可能性が高いです。
 
 {{% /alert %}}
 
-同期リポジトリは削除を実行しないため、これは Zendesk 自体で行う必要があります。
+sync repo は削除を実行しないため、これは Zendesk 自体で行う必要があります。
 
 オートメーションを削除するには:
 
-1. Zendesk インスタンスの管理ダッシュボードに移動します
+1. Zendesk インスタンスの管理ダッシュボードに移動する
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/home)
-1. `Objects and rules > Business rules > Automations` に移動します
+1. `Objects and rules > Business rules > Automations` に移動する
    - [Zendesk Global](https://gitlab.zendesk.com/admin/objects-rules/rules/automations)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/objects-rules/rules/automations)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/objects-rules/rules/automations)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/objects-rules/rules/automations)
-1. 削除したいオートメーションを見つけ、（`Inactive` タブで）名前をクリックします
-1. ページの下部までスクロールします
-1. `Submit` ボタンの隣のドロップダウンをクリックします
-1. `Delete` をクリックします
-1. `Submit` をクリックして変更を送信します
+1. 削除したいオートメーションを見つけ、その名前をクリックする（`Inactive` タブ内）
+1. ページの一番下までスクロールする
+1. `Submit` ボタンの隣のドロップダウンをクリックする
+1. `Delete` をクリックする
+1. `Submit` をクリックして変更を送信する
 
-### 例外デプロイメントを実行する
+### 例外デプロイを実行する
 
-オートメーションの例外デプロイメントを実行するには、対象のオートメーション同期プロジェクトに移動し、スケジュールパイプラインのページに移動して、同期項目の再生ボタンをクリックします。これにより、オートメーションの同期ジョブがトリガーされます。
+オートメーションの例外デプロイを実行するには、対象のオートメーション sync プロジェクトに移動し、スケジュールされたパイプラインのページに移動して、sync 項目の再生ボタンをクリックします。これにより、オートメーションの同期ジョブがトリガーされます。
 
 ## よくある問題とトラブルシューティング
 
 ### マージ後にオートメーションの変更が反映されない
 
-オートメーションは `Standard` デプロイメントタイプに従うため、通常のデプロイメントサイクル（または例外デプロイメントが行われたとき）にのみデプロイされます。
+オートメーションは `Standard` のデプロイタイプに従うため、通常のデプロイサイクル中（または例外デプロイが実施されたとき）にのみデプロイされます。

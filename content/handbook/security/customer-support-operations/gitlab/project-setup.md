@@ -1,74 +1,73 @@
 ---
 title: 'プロジェクトのセットアップ'
 description: 'プロジェクトのセットアップに関するドキュメント'
-date: 2026-01-13
 upstream_path: /handbook/security/customer-support-operations/gitlab/project-setup/
-upstream_sha: "7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc"
+upstream_sha: "154fb2bd6436508aa2d90583cc235d5fe28b1705"
 translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
-lastmod: 2026-02-12T20:47:52+00:00
+lastmod: 2026-05-26T12:05:00-05:00
 ---
 
-このページでは、Customer Support Operations 向けに新しい GitLab プロジェクトを作成・構成する一連のプロセスをガイドします。
+このページでは、Customer Support Operations 向けに新しい GitLab プロジェクトを作成して構成する一連のプロセスを案内します。
 
 {{% alert title="Warning" color="warning" %}}
 
-- 新しいプロジェクトを作成する Customer Support Operations のチームメンバーは全員、プロジェクトがセキュアかつメンテナンス可能な形で正しくセットアップされるよう、このプロセスに従う必要があります。
-- これは対応するリクエスト Issue（機能リクエスト、管理業務、バグなど）がある場合にのみ実施してください。存在しない場合は、まず Issue を作成し、標準のプロセスを通してから作業を進めてください。
+- 新しいプロジェクトを作成する Customer Support Operations チームメンバーは全員、私たちのプロジェクトがセキュアで保守しやすい形で適切にセットアップされるよう、このプロセスに従う必要があります。
+- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず Issue を作成してください（そして作業に着手する前に標準のプロセスを通してください）。
 
 {{% /alert %}}
 
 ## プロセス
 
-このプロセスは 7 つのステップで構成されます。
+このプロセスは 7 つのステップで構成されています。
 
-1. プロジェクトの作成
-1. プロジェクト設定の調整
-1. 適切なグループの招待
-1. 初期ファイルの追加
-1. CI/CD 変数のセットアップ
-1. 追加要件の構成（必要な場合）
-1. プロジェクトのドキュメント化
+1. プロジェクトを作成する
+1. プロジェクトの設定を調整する
+1. 正しいグループを招待する
+1. 初期ファイルを追加する
+1. CI/CD 変数をセットアップする
+1. （必要に応じて）追加要件を構成する
+1. プロジェクトをドキュメント化する
 
 ### ステップ 1 - プロジェクトを作成する
 
-まずはプロジェクト本体を作成するところから始めます。その際、次の点を考慮する必要があります。
+プロジェクトそのものを作成する出発点です。その際は、次の点を考慮する必要があります。
 
 - プロジェクトの場所
 - プロジェクトの名前
-- プロジェクトのスラグ
+- プロジェクトのスラッグ
 
-#### プロジェクトの場所 {#location-of-the-project}
+#### プロジェクトの場所
 
-プロジェクトを作成するには、プロジェクトを _どこに_ 配置するかを決める必要があります。可能な限り、類似のプロジェクトはまとめて配置します。これに従えば、配置先となる既存のサブグループが見つかることが多いはずです。
+プロジェクトを作成するには、そのプロジェクトが_どこ_に置かれるのかを知る必要があります。可能な場合は、類似のプロジェクトをまとめてグループ化します。これを利用すると、プロジェクトを置くための既存のサブグループが見つかることがよくあります。
 
-例えば Zendesk Global の同期リポジトリを作成する場合、サブグループ `gitlab-support-readiness/zendesk-global` 内に配置されます。理由は次のとおりです。
+例として、Zendesk Global 用の同期リポジトリを作成する場合、それはサブグループ `gitlab-support-readiness/zendesk-global` の中に置かれます。理由は次のとおりです。
 
-- Customer Support Operations の非公開プロジェクトであるため（私たちのプライベート名前空間 `gitlab-support-readiness` 内）
-- Zendesk Global に関連するため（サブグループ `zendesk-global` 内）
+- これは Customer Support Operations の非公開プロジェクトである（したがって私たちのプライベートな名前空間 `gitlab-support-readiness` の中）
+- Zendesk Global に関連する（したがってサブグループ `zendesk-global` の中）
 
-作成する同期リポジトリがチケットの属性やメタデータ（チケットフォーム、チケットフィールドなど）に関するものであれば、`gitlab-support-readiness/zendesk-global/tickets` サブグループに作成します。
+作成する同期リポジトリがチケットの属性やメタデータ（チケットフォーム、チケットフィールドなど）に関連するものであれば、`gitlab-support-readiness/zendesk-global/tickets` サブグループに作成することになります。
 
-プロジェクトを配置する既存のサブグループが見当たらない場合は、最適な作成場所を決めるためにチームに相談してください。
+プロジェクトを置くべき既存のサブグループが見当たらない場合は、これについてチームに相談し、プロジェクトを作成するのに最適な場所を判断してください。
 
-#### プロジェクトの名前 {#name-of-the-project}
+#### プロジェクトの名前
 
-プロジェクトを作成する際は、簡潔で自己説明的な命名を心がけるべきです。これは [場所](#location-of-the-project) を活かすことで実現できます。
+プロジェクトを作成する際は、簡潔で自己説明的な命名を心がけるべきです。これには [場所](#location-of-the-project) を活用するとよいでしょう。
 
-例えば Zendesk US Government のチケット処理を扱うプロジェクトを作成する場合、[場所](#location-of-the-project) の決定からそれが `gitlab-support-readiness/zendesk-us-government/tickets` サブグループ内になることが分かります。これを踏まえると、場所のパスがすでに Zendesk US Government のチケットに関するものであることを示しているため、プロジェクト名はシンプルに `Processor` とできます。
+たとえば、Zendesk US Government のチケット処理を扱うプロジェクトを作成する場合、[場所](#location-of-the-project) の判断から、それがサブグループ `gitlab-support-readiness/zendesk-us-government/tickets` の中に置かれることが分かります。それが分かれば、場所のパスがすでに Zendesk US Government のチケットに関連していることを示しているので、プロジェクト名は単に `Processor` とすればよいのです。
 
-プロジェクトの名前に迷ったときは、最適な名前を決めるためにチームに相談してください。
+プロジェクトに何という名前を付ければよいか分からないときは、これについてチームに相談し、使用するのに最適な名前を判断してください。
 
-#### プロジェクトのスラグ
+#### プロジェクトのスラッグ
 
-[名前](#name-of-the-project) を決めるときと同じく、スラグもパスと合わせて簡潔で自己説明的であるべきです。多くの場合、GitLab が生成するスラグでこの目的に十分です。
+[名前](#name-of-the-project) を決めるときと同様に、スラッグもパスと合わせて、簡潔で自己説明的であるべきです。多くの場合、GitLab が生成するスラッグでこの目的を果たせます。
 
-プロジェクトのスラグに迷ったときは、最適なスラグを決めるためにチームに相談してください。
+プロジェクトのスラッグをどうすればよいか分からないときは、これについてチームに相談し、使用するのに最適なスラッグを判断してください。
 
 ### ステップ 2 - 設定を調整する
 
-プロジェクトを作成したら、設定を以下のとおり手動で調整する必要があります。
+プロジェクトを作成したら、設定を手動で次のとおり調整する必要があります。
 
 <details>
 <summary>General</summary>
@@ -182,14 +181,14 @@ lastmod: 2026-02-12T20:47:52+00:00
   - Merge method: Merge commit
   - Merge options
     - [ ] Enable merged results pipelines
-      - NOTE: まれな状況でこれを有効にする場合がありますが、デフォルトで有効にすることはありません
+      - NOTE: まれにこれが有効化されることがありますが、デフォルトで有効にすることは決してありません
     - [ ] Automatically resolve merge request diff threads when they become outdated
     - [x] Show link to create or view a merge request when pushing from the command line
     - [x] Enable "Delete source branch" option by default
   - Squash commits when merging: Require
   - Merge checks
     - [x] Pipelines must succeed
-      - NOTE: これはプロジェクトテンプレートのタイプによって変わります。
+      - NOTE: これはプロジェクトのテンプレートタイプによって異なります。
     - [x] All threads must be resolved
     - [ ] Status checks must succeed
   - Status checks
@@ -241,7 +240,7 @@ lastmod: 2026-02-12T20:47:52+00:00
   - Git strategy: git fetch
   - Git shallow clone: 20
   - Timeout: 15m
-    - **NOTE**: プロジェクトの内容によってはこれを調整する必要があるかもしれません
+    - **NOTE**: プロジェクトが具体的に何を行うかによって、これを調整する必要があるかもしれません
   - Automatic pipeline cleanup: 5d
 - Auto DevOps
   - [ ] Default to Auto DevOps pipeline
@@ -256,10 +255,10 @@ lastmod: 2026-02-12T20:47:52+00:00
 - Job token permissions
   - Authorized groups and projects: Only this project and any groups and projects in the allowlist
   - CI/CD job token allowlist
-    - 一覧にはプロジェクト自身のみが存在するべきです
+    - リストにはプロジェクト自身のみが含まれているべきです
   - Limit access from this project (Deprecated): disabled
   - Add an existing project to the scope
-    - 一覧にはプロジェクト自身のみが存在するべきです
+    - リストにはプロジェクト自身のみが含まれているべきです
 - Secure files
   - None
 - Pipeline subscriptions
@@ -290,33 +289,33 @@ lastmod: 2026-02-12T20:47:52+00:00
 
 </details>
 
-### ステップ 3 - 適切なグループを招待する {#step-3---invite-the-correct-groups}
+### ステップ 3 - 正しいグループを招待する
 
-新しいプロジェクトの設定を調整したら、メンバーとして適切なグループを招待する必要があります。継承の仕組みにより、プロジェクトへの _アクセス_ はグループメンバーシップを通じて自動的に処理されます。そのためここでの本質は、（マージリクエスト承認のために）[CODEOWNERS ファイル](https://docs.gitlab.com/user/project/codeowners/) が何を使うかという点です。
+新しいプロジェクトの設定を調整したら、正しいグループをメンバーとして招待する必要があります。私たちの継承の仕組みにより、プロジェクトへの_アクセス_はグループメンバーシップを通じて自動的に処理されます。したがってこのステップは、実際には [CODEOWNERS ファイル](https://docs.gitlab.com/user/project/codeowners/) が（マージリクエストの承認のために）何を使うかに関するものです。
 
-- Customer Support Operations のリーダーシップを必要とするテーマに関するプロジェクトでは、[gitlab-support-readiness/cust_support_ops_critical_access](https://gitlab.com/gitlab-support-readiness/cust_support_ops_critical_access) を招待します
-- 米国市民権を _必要とする_ プロジェクトでは、[gitlab-support-readiness/cust_support_ops_team_us_citizens](https://gitlab.com/gitlab-support-readiness/cust_support_ops_team_us_citizens) を招待します
-  - **NOTE** プロジェクトが特定の市民権を必要としないように努めるべきです。プロジェクトがそれを必要としている場合、それはプロジェクト内の何らかの出力（コード、CI/CD など）に市民権で保護されたデータが関わっていることを示します。これは常に避けられるわけではありませんが、_常に_ gitlab.com 内に市民権で保護されたデータを置かないように目指してください。
+- Customer Support Operations のリーダーシップを必要とする題材に関するプロジェクトの場合は、[gitlab-support-readiness/cust_support_ops_critical_access](https://gitlab.com/gitlab-support-readiness/cust_support_ops_critical_access) を招待します
+- 米国市民権を_必要とする_プロジェクトの場合は、[gitlab-support-readiness/cust_support_ops_team_us_citizens](https://gitlab.com/gitlab-support-readiness/cust_support_ops_team_us_citizens) を招待します
+  - **NOTE** 私たちは、プロジェクトが特定の市民権を必要としないように努めるべきです。プロジェクトがそれを必要とする場合、それはプロジェクト内の何らかの成果物（コード、CI/CD など）が市民権で保護されるデータに関わっていることを示しています。これは常に避けられるわけではありませんが、gitlab.com 内に市民権で保護されるデータを置かないことを_常に_目指すべきです。
 - それ以外のものについては、[gitlab-support-readiness/cust_support_ops_team](https://gitlab.com/gitlab-support-readiness/cust_support_ops_team) を招待します
 
-招待すべきグループに迷ったときは、チームに相談して支援を求めてください。
+どのグループを招待すればよいか分からないときは、チームに相談して助けを求めてください。
 
 ### ステップ 4 - ファイルを追加する
 
-このステージでは、ファイルを追加するための初回コミットをプロジェクトに対して行います。追加すべきファイルは、プロジェクトの目的（と挙動）によって異なります。各種ファイルについては以下のガイドラインを確認し、私たちのプロジェクトのセットアップ方法と整合させてください。
+この段階では、プロジェクトに最初のコミットを行ってファイルを追加します。追加が必要となる正確なファイルは、プロジェクトの目的（およびその動作）によって異なります。私たちのプロジェクトのセットアップ方法に沿うよう、さまざまなファイルについて以下のガイドラインを確認してください。
 
 - `.gitlab/CODEOWNERS`
-  - このファイルの正確な内容は使用するコードによって異なりますが、開始点は常に次のようにしてください。
+  - この正確な内容は使用するコードによって異なりますが、その出発点は常に次のものであるべきです。
 
   ```plaintext
   [Customer Support Operations]
   * @GROUP_TO_INVITE
   ```
 
-  - `GROUP_TO_INVITE` の値については [ステップ 3](#step-3---invite-the-correct-groups) を参照してください
+  - `GROUP_TO_INVITE` の値についての詳細は [ステップ 3](#step-3---invite-the-correct-groups) を参照してください
 - `bin/post_in_slack.sh`
-  - このファイルには常に実行可能パーミッションを付与する必要があります
-  - このファイルの内容は常に次のようにしてください。
+  - このファイルには常に実行権限を付与する必要があります
+  - このファイルの内容は常に次のものであるべきです。
 
   ```bash
   curl -ss $SLACK_URL_PIPELINE_FAIL \
@@ -326,10 +325,10 @@ lastmod: 2026-02-12T20:47:52+00:00
   ```
 
 - `.gitlab-ci.yml`
-  - このファイルの正確な内容は使用するコードによって異なりますが、よくあるプロジェクトタイプ向けに以下の出発点となるテンプレートを使用できます。
+  - この正確な内容は使用するコードによって異なりますが、一般的なプロジェクトタイプには次のスタートテンプレートを使用できます。
 
     <details>
-    <summary>同期リポジトリ</summary>
+    <summary>Sync repos</summary>
 
     ```yaml
     image: "registry.gitlab.com/gitlab-support-readiness/images/ruby:3.2.2"
@@ -379,7 +378,7 @@ lastmod: 2026-02-12T20:47:52+00:00
 
     </details>
     <details>
-    <summary>Zendesk アプリ</summary>
+    <summary>Zendesk apps</summary>
 
     ```yaml
     image: "registry.gitlab.com/gitlab-support-readiness/images/ruby:3.2.2"
@@ -456,9 +455,9 @@ lastmod: 2026-02-12T20:47:52+00:00
 
     </details>
 
-  - 何を入れるべきか分からない場合は、チームの他のメンバーに連絡して支援を求めてください
+  - ここに何を書けばよいか分からない場合は、チームの他のメンバーに連絡して助けを求めてください
 - `.rubocop.yml`
-  - このファイルの内容は常に、私たちが扱っている現在の Ruby バージョンに揃えてください。つまり、次のようになります。
+  - このファイルの内容は、私たちが現在扱っている ruby のバージョンに常に合わせる必要があります。つまり、次のようになるべきです。
 
   ```yaml
   AllCops:
@@ -467,15 +466,15 @@ lastmod: 2026-02-12T20:47:52+00:00
   ```
 
 - `.ruby-version`
-  - このファイルの内容は常に、私たちが扱っている現在の Ruby バージョンにしてください。つまり、次のようになります。
+  - このファイルの内容は、私たちが現在扱っている ruby のバージョンに常に合わせる必要があります。つまり、次のようになるべきです。
 
   ```plaintext
   3.2.2
   ```
 
 - `Gemfile`
-  - gem の一覧はアルファベット順に並べてください
-  - 必要になる gem は使用するコードによって異なりますが、開始点は常に次のようにしてください。
+  - gem のリストはアルファベット順であるべきです
+  - 必要となる正確な gem は使用するコードによって異なりますが、その出発点は常に次のものであるべきです。
 
   ```ruby
   # frozen_string_literal: true
@@ -484,60 +483,60 @@ lastmod: 2026-02-12T20:47:52+00:00
   ```
 
 - `README.md`
-  - 正確な内容は内容によって異なりますが、README.md ファイルには以下を文書化してください。
+  - この正確な内容は異なりますが、README.md ファイルには次の項目をドキュメント化しておくべきです。
     - プロジェクト名
     - 簡単な説明
     - ファイルツリーのレイアウト
     - 要件
-    - CI/CD パイプライン情報
-  - 何を入れるべきか分からない場合は、チームの他のメンバーに連絡して支援を求めてください
+    - CI/CD パイプラインの情報
+  - ここに何を書けばよいか分からない場合は、チームの他のメンバーに連絡して助けを求めてください
 
 ### ステップ 5 - CI/CD 変数をセットアップする
 
-プロジェクトに必要な CI/CD 変数を構成します。多くの変数は親の名前空間から継承されるので、プロジェクト固有の値に注力してください。
+プロジェクトに必要な CI/CD 変数を構成します。多くの変数は親の名前空間から継承されるので、プロジェクト固有の値に焦点を当ててください。
 
 **追加する一般的な変数:**
 
 - API トークンの値（例: `ZD_TOKEN`、`GL_TOKEN`、`CALENDLY_API_TOKEN` など）
-- Slack の Webhook（継承される `SLACK_URL_PIPELINE_FAIL` を除く）
+- Slack webhook（継承される `SLACK_URL_PIPELINE_FAIL` を除く）
 
-**継承された変数の確認方法:**
+**継承される変数を確認するには:**
 
-1. プロジェクトの Settings > CI/CD > Variables に移動する
-1. 「Inherited from group」セクションを確認して、すでに利用可能なものを把握する
-1. 親の名前空間で提供されていない変数のみを追加する
+1. プロジェクトの Settings > CI/CD > Variables に移動します
+1. 「Inherited from group」セクションを確認して、すでに利用可能なものを把握します
+1. 親の名前空間からまだ提供されていない変数のみを追加します
 
 **変数の保護:**
 
-- 機密性の高いトークンは「Masked」としてマークする
+- 機密性の高いトークンは「Masked」としてマークします
 
-### ステップ 6 - 追加の構成（必要な場合）
+### ステップ 6 - 追加の構成（必要に応じて）
 
-ほとんどのプロジェクトでは、ステップ 1〜5 で十分です。ただし、プロジェクトによっては次のような追加構成が必要になる場合があります。
+ほとんどのプロジェクトでは、ステップ 1〜5 で十分です。ただし、一部のプロジェクトでは次のような追加の構成が必要になる場合があります。
 
-- 外部統合のための Webhook をセットアップする
+- 外部統合のための webhook のセットアップ
 - [コードを別のプロジェクトにミラーリングする](/handbook/security/customer-support-operations/gitlab/mirroring)
-- 外部サービス連携を構成する
-- スケジュール実行のパイプラインをセットアップする
+- 外部サービス統合の構成
+- スケジュールされたパイプラインのセットアップ
 
-追加構成が必要かどうか分からない場合は、チームに相談してください。
+追加の構成が必要かどうか分からない場合は、チームに相談してください。
 
 ### ステップ 7 - ドキュメント化する
 
-プロジェクト作成の最後のステップは、ハンドブックページにこのプロジェクトの情報を反映することです。次の内容を含めてください。
+プロジェクト作成の最後のステップは、プロジェクトに関する情報でハンドブックのページを更新することです。これには次の内容を含めるべきです。
 
-- それは何か
-- 何をするか
-- どう動くか
-- 使用するデプロイ戦略のタイプ
-- 変更方法
-- トラブルシューティング情報
+- それが何であるか
+- それが何をするか
+- それがどのように動作するか
+- 使用しているデプロイ戦略のタイプ
+- 変更の加え方
+- トラブルシューティングの情報
 
 ## プロジェクト作成後
 
-プロジェクトを作成しドキュメント化したら、次のことが行われます。
+プロジェクトを作成してドキュメント化したら、次のようになります。
 
-- グループメンバーシップに基づき、適切なチームメンバーがプロジェクトにアクセスできるようになります
-- CI/CD パイプラインは構成されたルールに従って実行されます
-- 変更には CODEOWNERS の承認が必要なマージリクエストが必要です
-- すべてが正しく構成されているかを確認するため、プロジェクトの初回パイプラインを監視してください
+- プロジェクトは、グループメンバーシップに基づいて適切なチームメンバーがアクセスできるようになります
+- CI/CD パイプラインは、構成されたルールに従って実行されます
+- 変更には、CODEOWNERS の承認を伴うマージリクエストが必要になります
+- すべてが正しく構成されていることを確認するため、プロジェクトの最初のパイプラインを監視します
