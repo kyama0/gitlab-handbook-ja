@@ -3,59 +3,59 @@ title: 'Incident.io'
 description: 'Incident.io に関するドキュメント'
 date: 2026-02-13
 upstream_path: /handbook/security/customer-support-operations/incident-io/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: "154fb2bd6436508aa2d90583cc235d5fe28b1705"
+lastmod: 2026-05-26T12:05:00-05:00
+translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-13T09:27:50-06:00"
 ---
 
-{{% alert title="技術詳細" color="primary" %}}
+{{% alert title="Technical Details" color="primary" %}}
 
-- デプロイ種別: `Ad-hoc`
+- デプロイタイプ: `Ad-hoc`
 
 {{% /alert %}}
 
-## Incident.io について
+## Incident.io を理解する
 
 ### Incident.io とは
 
-Incident.io の [ホームページ](https://incident.io/) の説明によると:
+Incident.io の[ホームページ](https://incident.io/)の説明より:
 
-> incident.io は、オンコールスケジュール、リアルタイムなインシデント対応、統合ステータスページを統一する一体型インシデント管理プラットフォームです。チームが問題をより迅速に解決し、ダウンタイムを削減するのを支援します。
+> incident.io は、オンコールスケジューリング、リアルタイムのインシデント対応、統合されたステータスページを 1 つにまとめたオールインワンのインシデント管理プラットフォームです。チームが問題をより速く解決し、ダウンタイムを削減するのに役立ちます。
 
-### Incident.io 内のアイテムの管理方法
+### Incident.io 内の項目を管理する方法
 
-私たちは現在、Incident.io 内のすべてのアイテムを Incident.io 自体で管理しています。
+私たちは現在、すべての Incident.io 項目を Incident.io 内で管理しています。
 
-### Customer Support Operations のステータスページにアクセスする
+### Customer Support Operations のステータスページへのアクセス
 
 ステータスページにアクセスするには:
 
-1. https://statuspage.incident.io/cust-support-ops/main のステータスページに移動します
-1. 業務メールを入力します
-   - 認証には gitlab.com のメールアドレスが必要であることに注意してください
-1. メール受信箱を確認します
-   - 件名は `Log in to Customer Support Operations` のはずです
+1. ステータスページ https://statuspage.incident.io/cust-support-ops/main に移動します
+1. 業務用メールアドレスを入力します
+   - 認証には gitlab.com のメールアドレスを使用する必要があることに注意してください
+1. メールの受信箱を確認します
+   - 件名は `Log in to Customer Support Operations` になっているはずです
 1. `Log in to Customer Support Operations status page` ボタンをクリックします
 
 ## Customer Support Operations のセットアップ
 
-### コンポーネントカタログ {#components-catalog}
+### コンポーネントカタログ
 
 <sup>ソース: [Customer Support Operations components](https://app.incident.io/gitlab/catalog/01JXZ8QTFEYF84RP0V80MG1VAP)</sup>
 
-これらは、インシデントやメンテナンスの対象となりうるアイテムを反映しています。ステータスページ自体に含まれるアイテムだと考えてください。
+これらは、インシデントやメンテナンスを発生させることができる項目を反映しています。ステータスページ自体に含まれる項目だと考えてください。
 
-数が多いため、上記のソースリンクを参照してください。
+これに含まれる項目は膨大なリストになるため、上記のソースリンクを参照してください。
 
-### グループカタログ {#groups-catalog}
+### グループカタログ
 
 <sup>ソース: [Customer Support Operations groups](https://app.incident.io/gitlab/catalog/01JXZ8X7HVN23T3773PGXB5NNR)</sup>
 
-これらは、コンポーネントをグループ化するアイテムです。
+これらは、コンポーネントをまとめてグループ化する項目です。
 
-私たちは現在、1 つのグループだけを利用しています。
+私たちは現在、1 つのグループのみを使用しています:
 
 - `Main`
 
@@ -63,198 +63,198 @@ Incident.io の [ホームページ](https://incident.io/) の説明によると
 
 <sup>ソース: [Customer Support Operations Status](https://app.incident.io/gitlab/status-pages/01JXZ9CT4V8HHVJYJDP7XY7B4T/overview/now)</sup>
 
-これは私たちの実際のステータスページです。[グループ](#groups-catalog) (およびそのグループ内の [コンポーネント](#components-catalog)) を使用します。
+これが私たちの実際のステータスページです。[グループ](#groups-catalog)（およびそのグループ内の[コンポーネント](#components-catalog)）を使用しています。
 
-- 基本設定
-  - 基本設定
-    - ページタイトル: `Customer Support Operations`
-    - ベース URL: https://statuspage.incident.io/cust-support-ops
-  - カスタマイズ
-    - サポート URL: なし
-    - Google Analytics タグ: なし
-    - プライバシーポリシー: なし
-    - 利用規約: なし
-- カスタマーページ
-  - カスタマーページ
+- Basic settings
+  - Basic settings
+    - Page title: `Customer Support Operations`
+    - Base URL: https://statuspage.incident.io/cust-support-ops
+  - Customization
+    - Support URL: none
+    - Google Analytics tag: none
+    - Privacy policy: none
+    - Terms of service: none
+- Customer pages
+  - Customer pages
     - [Customer Support Operations for Main](https://statuspage.incident.io/cust-support-ops/main)
-  - 無効化されたサブページ: なし
-- ページセットアップ
-  - テーマ
-    - ダークモード
-    - 日付ビュー: カレンダー
-- コンポーネント
-  - コンポーネントの稼働率: 色付きバーと稼働率パーセント
-- カスタムドメイン
-  - カスタムドメイン: なし
+  - Disabled sub-pages: none
+- Page setup
+  - Theming
+    - Dark mode
+    - Date view: Calendar
+- Components
+  - Component uptimes: Coloured bars and uptime percentage
+- Custom domain
+  - Custom domain: none
 
 ## 管理者タスク
 
-{{% alert title="警告" color="warning" %}}
+{{% alert title="Warning" color="warning" %}}
 
-- すべてのタスクは、対応するリクエスト Issue (機能リクエスト、管理タスク、バグなど) がある場合にのみ実施してください。存在しない場合は、まず Issue を作成してください (そして標準プロセスに沿って進めてから着手してください)。
-- すべてのタスクは Customer Support Operations チームに特化したものであり、他のチームが管理者タスクをどのように行うかを反映するものではありません
+- すべてのタスクは、対応するリクエスト Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください。存在しない場合は、まず作成してください（そして作業を始める前に標準プロセスを通してください）。
+- すべてのタスクは Customer Support Operations チーム向けに特化したものであり、他のチームがどのように管理者タスクを実行するかを反映するものではありません
 
 {{% /alert %}}
 
-### コンポーネントカタログを管理する
+### コンポーネントカタログの管理
 
-#### コンポーネントカタログを作成する {#creating-a-component-catalog}
+#### コンポーネントカタログの作成
 
-私たちは Incident.io 内のすべてのアイテムを Incident.io 自体で管理しているため、システム自体でコンポーネントカタログを作成する必要があります。コンポーネントカタログを作成するには:
+すべての Incident.io 項目を Incident.io 内で管理しているため、システム自体でコンポーネントカタログを作成する必要があります。コンポーネントカタログを作成するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Catalog](https://app.incident.io/gitlab/catalog) に移動します
 1. [Add a custom type](https://app.incident.io/gitlab/catalog/create) をクリックします
 1. `Name` を入力します
 1. `Description` を入力します
 1. `Categories` の下で `+ Services` をクリックします
-1. `Are entries of this type ranked?` チェックボックスがチェックされていることを確認します
-1. `Reference entries by name` チェックボックスがチェックされていることを確認します
+1. `Are entries of this type ranked?` のチェックボックスがオンになっていることを確認します
+1. `Reference entries by name` のチェックボックスがオンになっていることを確認します
 1. 右下の `Save` をクリックします
 
-#### コンポーネントカタログを編集する {#editing-a-component-catalog}
+#### コンポーネントカタログの編集
 
-私たちは Incident.io 内のすべてのアイテムを Incident.io 自体で管理しているため、システム自体でコンポーネントカタログを編集する必要があります。コンポーネントカタログを編集するには:
+すべての Incident.io 項目を Incident.io 内で管理しているため、システム自体でコンポーネントカタログを編集する必要があります。コンポーネントカタログを編集するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Catalog](https://app.incident.io/gitlab/catalog) に移動します
-1. 編集対象のコンポーネントカタログをクリックします
+1. 編集するコンポーネントカタログをクリックします
 1. ページ右上の `Edit type` をクリックします
-1. 必要な変更を加えます
+1. 必要な変更を行います
 1. 右下の `Save` をクリックします
 
-#### コンポーネントカタログにコンポーネントを追加する {#adding-a-component-to-a-component-catalog}
+#### コンポーネントカタログへのコンポーネントの追加
 
-私たちは Incident.io 内のすべてのアイテムを Incident.io 自体で管理しているため、システム自体でコンポーネントカタログにコンポーネントを追加する必要があります。コンポーネントカタログにコンポーネントを追加するには:
+すべての Incident.io 項目を Incident.io 内で管理しているため、システム自体でコンポーネントカタログにコンポーネントを追加する必要があります。コンポーネントカタログにコンポーネントを追加するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Catalog](https://app.incident.io/gitlab/catalog) に移動します
-1. コンポーネントを追加する対象のコンポーネントカタログをクリックします
+1. コンポーネントを追加するコンポーネントカタログをクリックします
 1. ページ右上の `Create entry` をクリックします
 1. 新しいコンポーネントの `Name` を入力します
 1. 右下の `Create` をクリックします
 
-#### コンポーネントカタログを削除する {#deleting-a-component-catalog}
+#### コンポーネントカタログの削除
 
-私たちは Incident.io 内のすべてのアイテムを Incident.io 自体で管理しているため、システム自体でコンポーネントカタログを削除する必要があります。コンポーネントカタログを削除するには:
+すべての Incident.io 項目を Incident.io 内で管理しているため、システム自体でコンポーネントカタログを削除する必要があります。コンポーネントカタログを削除するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Catalog](https://app.incident.io/gitlab/catalog) に移動します
 1. [Add a custom type](https://app.incident.io/gitlab/catalog/create) をクリックします
 1. 削除するコンポーネントカタログをクリックします
 1. ページ右上の `Delete type` をクリックします
-1. ポップアップモーダルのテキストボックスに削除するコンポーネントカタログの名前を入力します
+1. ポップアップモーダルのテキストボックスに、削除するコンポーネントカタログの名前を入力します
 1. ポップアップモーダル右下の `Continue` をクリックします
 
-### グループカタログを管理する
+### グループカタログの管理
 
-#### グループカタログを作成する
+#### グループカタログの作成
 
-これは [コンポーネントカタログを作成する](#creating-a-component-catalog) と同じプロセスです。
+これは[コンポーネントカタログの作成](#creating-a-component-catalog)と同じプロセスです。
 
-#### グループカタログを編集する
+#### グループカタログの編集
 
-これは [コンポーネントカタログを編集する](#editing-a-component-catalog) と同じプロセスです。
+これは[コンポーネントカタログの編集](#editing-a-component-catalog)と同じプロセスです。
 
-#### グループカタログにグループを追加する {#adding-a-group-to-a-group-catalog}
+#### グループカタログへのグループの追加
 
-私たちは Incident.io 内のすべてのアイテムを Incident.io 自体で管理しているため、システム自体でグループカタログにグループを追加する必要があります。グループカタログにグループを追加するには:
+すべての Incident.io 項目を Incident.io 内で管理しているため、システム自体でグループカタログにグループを追加する必要があります。グループカタログにグループを追加するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Catalog](https://app.incident.io/gitlab/catalog) に移動します
-1. グループを追加する対象のコンポーネントカタログをクリックします
+1. グループを追加するコンポーネントカタログをクリックします
 1. ページ右上の `Create entry` をクリックします
 1. 新しいコンポーネントの `Name` を入力します
-1. `Components` エリアにグループのコンポーネントの一覧を入力します
+1. `Components` エリアにグループのコンポーネントのリストを入力します
 1. `Email domain` に `gitlab.com` を入力します
 1. 右下の `Create` をクリックします
 
-#### グループカタログにコンポーネントを追加する {#adding-a-component-to-a-group-catalog}
+#### グループカタログへのコンポーネントの追加
 
-これは [グループの編集](#editing-a-group) で行います。
+これは[グループの編集](#editing-a-group)で行います。
 
-#### グループカタログを削除する
+#### グループカタログの削除
 
-これは [コンポーネントカタログを削除する](#deleting-a-component-catalog) と同じプロセスです。
+これは[コンポーネントカタログの削除](#deleting-a-component-catalog)と同じプロセスです。
 
-### グループを管理する
+### グループの管理
 
-#### グループを作成する
+#### グループの作成
 
-これは [グループカタログにグループを追加する](#adding-a-group-to-a-group-catalog) で行います。
+これは[グループカタログへのグループの追加](#adding-a-group-to-a-group-catalog)で行います。
 
-#### グループを編集する {#editing-a-group}
+#### グループの編集
 
-私たちは Incident.io 内のすべてのアイテムを Incident.io 自体で管理しているため、システム自体でグループを編集する必要があります。グループを編集するには:
+すべての Incident.io 項目を Incident.io 内で管理しているため、システム自体でグループを編集する必要があります。グループを編集するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Catalog](https://app.incident.io/gitlab/catalog) に移動します
-1. グループが含まれるカタログをクリックします
+1. グループが含まれているカタログをクリックします
 1. 編集対象のグループを見つけてクリックします
-1. 右側サイドバー右上の鉛筆アイコンをクリックします
-1. 変更を加えます
-1. 右側サイドバー右下の `Save` をクリックします
+1. 右側サイドバーの右上にある鉛筆アイコンをクリックします
+1. 変更を行います
+1. 右側サイドバーの右下にある `Save` をクリックします
 
-#### グループを削除する
+#### グループの削除
 
-私たちは Incident.io 内のすべてのアイテムを Incident.io 自体で管理しているため、システム自体でグループを削除する必要があります。グループを削除するには:
+すべての Incident.io 項目を Incident.io 内で管理しているため、システム自体でグループを削除する必要があります。グループを削除するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Catalog](https://app.incident.io/gitlab/catalog) に移動します
-1. グループが含まれるカタログをクリックします
+1. グループが含まれているカタログをクリックします
 1. 編集対象のグループを見つけてクリックします
-1. 右側サイドバー右上のゴミ箱アイコンをクリックします
+1. 右側サイドバーの右上にあるゴミ箱アイコンをクリックします
 1. `Confirm` ボタンをクリックして削除を確定します
 
-### コンポーネントを管理する
+### コンポーネントの管理
 
-{{% alert title="警告" color="warning" %}}
+{{% alert title="Warning" color="warning" %}}
 
-- 私たちが使用するすべてのコンポーネントは、[Customer Support Operations System Criticality](/handbook/security/customer-support-operations/criticalities/#customer-support-operations-system-criticality) のアイテムと整合している必要があります。
+- 私たちが使用するすべてのコンポーネントは、[Customer Support Operations System Criticality](/handbook/security/customer-support-operations/criticalities/#customer-support-operations-system-criticality) の項目と一致している必要があります。
 
 {{% /alert %}}
 
-#### コンポーネントを作成する
+#### コンポーネントの作成
 
-これは [コンポーネントカタログにコンポーネントを追加する](#adding-a-component-to-a-component-catalog) で行います。
+これは[コンポーネントカタログへのコンポーネントの追加](#adding-a-component-to-a-component-catalog)で行います。
 
-#### コンポーネントを編集する
+#### コンポーネントの編集
 
-私たちは Incident.io 内のすべてのアイテムを Incident.io 自体で管理しているため、システム自体でコンポーネントを編集する必要があります。コンポーネントを編集するには:
+すべての Incident.io 項目を Incident.io 内で管理しているため、システム自体でコンポーネントを編集する必要があります。コンポーネントを編集するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Catalog](https://app.incident.io/gitlab/catalog) に移動します
-1. コンポーネントが含まれるカタログをクリックします
+1. コンポーネントが含まれているカタログをクリックします
 1. 編集対象のコンポーネントを見つけてクリックします
-1. 右側サイドバー右上の鉛筆アイコンをクリックします
-1. 変更を加えます
-1. 右側サイドバー右下の `Save` をクリックします
+1. 右側サイドバーの右上にある鉛筆アイコンをクリックします
+1. 変更を行います
+1. 右側サイドバーの右下にある `Save` をクリックします
 
-#### コンポーネントを削除する
+#### コンポーネントの削除
 
-私たちは Incident.io 内のすべてのアイテムを Incident.io 自体で管理しているため、システム自体でコンポーネントを削除する必要があります。コンポーネントを削除するには:
+すべての Incident.io 項目を Incident.io 内で管理しているため、システム自体でコンポーネントを削除する必要があります。コンポーネントを削除するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Catalog](https://app.incident.io/gitlab/catalog) に移動します
-1. コンポーネントが含まれるカタログをクリックします
+1. コンポーネントが含まれているカタログをクリックします
 1. 編集対象のコンポーネントを見つけてクリックします
-1. 右側サイドバー右上のゴミ箱アイコンをクリックします
+1. 右側サイドバーの右上にあるゴミ箱アイコンをクリックします
 1. `Confirm` ボタンをクリックして削除を確定します
 
-### ステータスページを管理する
+### ステータスページの管理
 
-#### ステータスページを作成する
+#### ステータスページの作成
 
-私たちは Incident.io 内のすべてのアイテムを Incident.io 自体で管理しているため、システム自体でステータスページを作成する必要があります。ステータスページを作成するには:
+すべての Incident.io 項目を Incident.io 内で管理しているため、システム自体でステータスページを作成する必要があります。ステータスページを作成するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Status pages](https://app.incident.io/gitlab/status-pages) に移動します
 1. [Create customer page](https://app.incident.io/gitlab/status-pages/customer/create) をクリックします
 1. `Page title` を入力します
-1. (自動生成のものを変更したい場合は) `Status page URL` を入力します
+1. `Status page URL` を入力します（自動生成されたものを変更したい場合）
 1. `Customer pages` の下で
    - `Use an existing catalog type` をクリックします
-   - `Which catalog type defines the customers you'd like to create?` を使用するグループカタログに設定します
+   - `Which catalog type defines the customers you'd like to create?` を、使用したいグループカタログに設定します
    - `Which catalog attribute represents your components?` を `Components` に設定します
    - `Which catalog attribute represents allowed email domains?` を `Email domains` に設定します
 1. `Pages` の下で
@@ -262,116 +262,116 @@ Incident.io の [ホームページ](https://incident.io/) の説明によると
    - `URL` を設定します
 1. `Page setup` の下で
    - `Theming` を `Dark mode` に設定します
-   - (希望する場合) `Company logo` を選択します
-   - (希望する場合) `Favicon` を選択します
+   - `Company logo` を選択します（必要な場合）
+   - `Favicon` を選択します（必要な場合）
 1. ページ右下の `Create status page` をクリックします
 
-#### ステータスページを編集する
+#### ステータスページの編集
 
-私たちは Incident.io 内のすべてのアイテムを Incident.io 自体で管理しているため、システム自体でステータスページを編集する必要があります。ステータスページを編集するには:
+すべての Incident.io 項目を Incident.io 内で管理しているため、システム自体でステータスページを編集する必要があります。ステータスページを編集するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Status pages](https://app.incident.io/gitlab/status-pages) に移動します
-1. 編集対象のステータスページの名前をクリックします
+1. 編集するステータスページの名前をクリックします
 1. `Settings` タブをクリックします
-1. 変更が必要なセクションに対して必要な変更を加えます (`Save` をクリックして変更を反映します)
+1. 変更が必要なセクションに対して必要な変更を行います（そして変更を反映するために `Save` をクリックします）
 
-#### ステータスページにコンポーネントを追加する
+#### ステータスページへのコンポーネントの追加
 
-これは [グループカタログにコンポーネントを追加する](#adding-a-component-to-a-group-catalog) で行います。
+これは[グループカタログへのコンポーネントの追加](#adding-a-component-to-a-group-catalog)で行います。
 
-#### ステータスページを削除する
+#### ステータスページの削除
 
-私たちは Incident.io 内のすべてのアイテムを Incident.io 自体で管理しているため、システム自体でステータスページを削除する必要があります。ステータスページを削除するには:
+すべての Incident.io 項目を Incident.io 内で管理しているため、システム自体でステータスページを削除する必要があります。ステータスページを削除するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Status pages](https://app.incident.io/gitlab/status-pages) に移動します
-1. 編集対象のステータスページの名前をクリックします
+1. 編集するステータスページの名前をクリックします
 1. `Settings` タブをクリックします
 1. ページの一番下までスクロールして `Delete status page` をクリックします
-1. 削除するステータスページの名前を入力します
+1. ステータスページの名前を入力します
 1. `Delete status page` をクリックします
 
-### インシデントを管理する
+### インシデントの管理
 
-#### インシデントを作成する
+#### インシデントの作成
 
 インシデントを作成するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Status pages](https://app.incident.io/gitlab/status-pages) に移動します
-1. インシデントを作成したいステータスページをクリックします
+1. インシデントを発生させたいステータスページをクリックします
 1. 右上の `Publish incident` をクリックします
-1. 意味のある `Name` を入力します
+1. わかりやすい `Name` を記入します
 1. インシデントの `Status` を設定します
-   - Investigating: インシデントを報告
-     - 通常はこれを開始点として使います
+   - Investigating: インシデントを報告する
+     - これは通常、最初の出発点として使用するものです
    - Identified: 問題が特定され、修正が行われている
    - Monitoring: 修正が実装され、状況を監視している
-   - Resolved: すべて解決
-1. インシデントの意味のある `Message` を設定します
-   - ここにはインシデント Issue へのリンクを含めるべきです
-1. `Affected components` への影響レベルを設定します (必要な値はインシデントの影響度によります)
-   - No impact: インシデントはこのコンポーネントに影響しない
-   - Degraded performance: コンポーネントは動作しているが標準的なパフォーマンス水準より低い
+   - Resolved: すべて問題ない
+1. インシデントにわかりやすい `Message` を設定します
+   - ここにインシデント Issue へのリンクを含めるべきです
+1. `Affected components`（影響を受けるコンポーネント）に対する影響レベルを設定します（必要な値はインシデントの影響によって異なります）
+   - No impact: インシデントはこのコンポーネントに影響を与えない
+   - Degraded performance: コンポーネントは動作しているが、標準より低いパフォーマンスレベルである
    - Partial outage: コンポーネントの大部分が動作していない
-   - Full outage: コンポーネントが完全停止
+   - Full outage: コンポーネントが完全にダウンしている
 1. `Review incident` をクリックします
-1. すべての情報の正確性を確認します
+1. すべての情報が正確かどうか確認します
 1. `Publish incident` をクリックします
 
-#### インシデントを更新する
+#### インシデントの更新
 
 インシデントを更新するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Status pages](https://app.incident.io/gitlab/status-pages) に移動します
-1. インシデントが掲載されているステータスページをクリックします
-1. 対象のインシデントをクリックします
-1. 右上のステータスバー (現在のステータスを表示) をクリックします
+1. インシデントがあるステータスページをクリックします
+1. 該当するインシデントをクリックします
+1. 右上のステータスバー（現在のステータスが表示されている）をクリックします
 1. 新しい `Status` を選択します
    - Identified: 問題が特定され、修正が行われている
    - Monitoring: 修正が実装され、状況を監視している
-   - Resolved: すべて解決
-1. 意味のあるメッセージを入力します
+   - Resolved: すべて問題ない
+1. わかりやすいメッセージを入力します
 1. `Review update` をクリックします
-1. すべての情報の正確性を確認します
+1. すべての情報が正確かどうか確認します
 1. `Publish update` をクリックします
 
-### メンテナンスを管理する
+### メンテナンスの管理
 
-#### メンテナンスイベントを作成する
+#### メンテナンスイベントの作成
 
 メンテナンスイベントを作成するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Status pages](https://app.incident.io/gitlab/status-pages) に移動します
-1. インシデントを作成したいステータスページをクリックします
+1. インシデントを発生させたいステータスページをクリックします
 1. `Maintenance` をクリックします
 1. ページ右上の `Schedule maintenance` をクリックします
-1. 意味のある `Name` を入力します
-1. `Automatically update status` がチェックされていることを確認します
-1. `Impact window` を設定します (ローカルタイムが使用される点に注意してください)
-1. 意味のある `Message` を設定します
-1. `Affected components` への影響レベルを設定します
-   - No impact: メンテナンスはこのコンポーネントに影響しない
-   - Under maintenance: メンテナンスはこのコンポーネントに影響する
+1. わかりやすい `Name` を記入します
+1. `Automatically update status` がオンになっていることを確認します
+1. `Impact window` を設定します（ローカルタイムを使用していることに注意してください）
+1. わかりやすい `Message` を設定します
+1. `Affected components`（影響を受けるコンポーネント）に対する影響レベルを設定します
+   - No impact: メンテナンスはこのコンポーネントに影響を与えない
+   - Under maintenance: メンテナンスはこのコンポーネントに影響を与える
 1. `Review` をクリックします
-1. すべての情報の正確性を確認します
+1. すべての情報が正確かどうか確認します
 1. `Publish maintenance` をクリックします
 
-#### メンテナンスイベントを更新する
+#### メンテナンスイベントの更新
 
 メンテナンスイベントを更新するには:
 
-1. (Okta 経由で) Incident.io にログインします
+1. （Okta 経由で）Incident.io にログインします
 1. [Status pages](https://app.incident.io/gitlab/status-pages) に移動します
-1. インシデントを作成したいステータスページをクリックします
+1. インシデントを発生させたいステータスページをクリックします
 1. `Maintenance` をクリックします
-1. 対象のメンテナンスをクリックします
-1. 右上のステータスバー (現在のステータスを表示) をクリックします
+1. 該当するメンテナンスをクリックします
+1. 右上のステータスバー（現在のステータスが表示されている）をクリックします
 1. 新しい `Status` を選択します
-1. 意味のあるメッセージを入力します
+1. わかりやすいメッセージを入力します
 1. `Review update` をクリックします
-1. すべての情報の正確性を確認します
+1. すべての情報が正確かどうか確認します
 1. `Publish update` をクリックします
