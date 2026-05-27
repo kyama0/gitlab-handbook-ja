@@ -2,11 +2,11 @@
 title: "Marketo"
 description: "Marketo は、メールマーケティング、リード管理、プログラム管理に使用される私たちのマーケティングオートメーションプラットフォームです。"
 upstream_path: /handbook/marketing/marketing-operations/marketo/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T12:00:00Z"
+upstream_sha: "7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc"
+translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-22T14:48:30-06:00"
+lastmod: 2026-05-22T14:48:30-06:00
 ---
 
 ## Marketo について
@@ -385,7 +385,7 @@ FY25 開始時に行われたリードスコアリングへのデータ駆動型
 |ユーザーに一致するアカウントがあるか？|コンタクトとアカウントの関係、または Traction がリードをアカウントに一致させようとすることで判定された一致アカウント|+5 |
 |ユーザーに対象となる役職があるか？|Customer Database が `Upper Management` または `Platform / Ops / Infrastructure Engineering` に関連する役職を共有している場合にスコアリング| `Upper Management` = +8 <br>`Platform / Ops / Infrastructure Engineering` = +0 |
 |PTP Score| PTP グループが 3-5 の場合にスコアリング| `3` = +2 <br> `4` = +7<br> `5` = +10|
-|LATAM 以外のリージョンか？|LATAM を除くすべてのリージョンでスコアが加算される| `+3` |
+|LATAM 以外のリージョン + SMB 以外のセールスセグメント|LATAM リージョンと SMB セールスセグメントはこのスコアを受け取らず、それ以外のすべてのリージョンとセールスセグメントがこのスコアを受け取る| `+3` |
 |有効化された GitLab 製品ステージの数| 製品が一定レベルの製品ステージ採用を記録した場合にスコアを受け取る| `1 stage` = +2 <br> `2 stages` = +7 <br> `3+ stages` = +12 |
 
 ### リードスコア分類

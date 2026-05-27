@@ -2,8 +2,8 @@
 title: "Regional Marketing"
 description: "GitLab における Regional Marketing の役割は、対面およびバーチャルのインタラクションを通じて、地域レベルでのマーケティングメッセージとパイプライン構築を支援するために、セールスと密接に連携することです。"
 upstream_path: /handbook/marketing/field-marketing/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T12:00:00Z"
+upstream_sha: "7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc"
+translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
 model: claude-opus-4-7

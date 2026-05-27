@@ -3,11 +3,11 @@ title: 'プロジェクトのセットアップ'
 description: 'プロジェクトのセットアップに関するドキュメント'
 date: 2026-01-13
 upstream_path: /handbook/security/customer-support-operations/gitlab/project-setup/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: "7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc"
+translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: 2026-02-12T20:47:52+00:00
 ---
 
 このページでは、Customer Support Operations 向けに新しい GitLab プロジェクトを作成・構成する一連のプロセスをガイドします。
