@@ -3,11 +3,11 @@ title: 'トークン管理'
 description: 'トークン管理に関するドキュメント'
 date: 2026-01-08
 upstream_path: /handbook/security/customer-support-operations/token-management/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T21:03:24Z"
+upstream_sha: "154fb2bd6436508aa2d90583cc235d5fe28b1705"
+translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドは、トークンローテーション手順や自動トークン期限切れ監視を含む、Customer Support Operations のトークン管理プラクティスについて説明します。
@@ -18,28 +18,28 @@ lastmod: "2026-02-12T20:47:52+00:00"
 
 ### Zendesk API トークンのローテーション {#rotating-a-zendesk-api-token}
 
-Zendesk でトークンをローテーションするには:
+Zendesk でトークンをローテーションするには、次のようにします。
 
-1. 対象の Zendesk インスタンスの管理パネルに移動します:
+1. 対象の Zendesk インスタンスの管理パネルに移動します。
    - [Zendesk Global](https://gitlab.zendesk.com/admin)
    - [Zendesk Global Sandbox](https://gitlab1707170878.zendesk.com/admin)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin)
    - [Zendesk US Government Sandbox](https://gitlabfederalsupport1585318082.zendesk.com/admin)
-1. `Apps and integrations > APIs > API tokens` に移動します:
+1. `Apps and integrations > APIs > API tokens` に移動します。
    - [Zendesk Global](https://gitlab.zendesk.com/admin/apps-integrations/apis/api-tokens)
    - [Zendesk Global Sandbox](https://gitlab1707170878.zendesk.com/admin/apps-integrations/apis/api-tokens)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/apps-integrations/apis/api-tokens)
    - [Zendesk US Government Sandbox](https://gitlabfederalsupport1585318082.zendesk.com/admin/apps-integrations/apis/api-tokens)
-1. 既存トークンを無効化します（無効化しないと削除できないため）
-   1. 既存のトークンエントリを見つけ、その右側にある縦三点リーダーをクリックします
+1. 既存のトークンを無効化します（無効化するまでトークンを削除できないため）
+   1. トークンの既存のエントリを見つけ、その右側にある縦 3 点ドットをクリックします
    1. `Deactivate` をクリックします
-   1. 確認のため、ポップアップボックスで `Deactivate` をクリックします
-1. 既存トークンを削除します
-   1. 既存のトークンエントリを見つけ、その右側にある縦三点リーダーをクリックします
+   1. ポップアップボックスで `Deactivate` をクリックして確定します
+1. 既存のトークンを削除します
+   1. トークンの既存のエントリを見つけ、その右側にある縦 3 点ドットをクリックします
    1. `Delete` をクリックします
-   1. 確認のため、ポップアップボックスで `Delete` をクリックします
+   1. ポップアップボックスで `Delete` をクリックして確定します
 1. 新しいトークンを作成します
-   1. ページ右上の `Add API token` をクリックします
+   1. ページの右上にある `Add API token` をクリックします
    1. 説明を入力します
    1. `Save` をクリックします
    1. `Token` フィールドのトークンをコピーします
@@ -47,12 +47,12 @@ Zendesk でトークンをローテーションするには:
 
 ### GitLab パーソナルアクセストークンのローテーション {#rotating-a-gitlab-personal-access-token}
 
-GitLab パーソナルアクセストークンをローテーションするには、curl コマンドを使用する必要があり、以下の情報が必要です。
+GitLab パーソナルアクセストークンをローテーションするには、curl コマンドを使用する必要があり、次の情報が必要です。
 
 - ローテーション対象のパーソナルアクセストークンを所有するユーザーの有効なパーソナルアクセストークン
-- ローテーションするパーソナルアクセストークンの ID
+- ローテーション対象のパーソナルアクセストークンの ID
 
-そして、以下の curl リクエストを実行します。
+次の curl リクエストを実行します。
 
 ```bash
 curl -ss -X POST "https://gitlab.com/api/v4/personal_access_tokens/TOKEN_ID/rotate?expires_at=$(DATE_COMMAND)" \
@@ -60,15 +60,15 @@ curl -ss -X POST "https://gitlab.com/api/v4/personal_access_tokens/TOKEN_ID/rota
   --header "PRIVATE-TOKEN: VALID_TOKEN"
 ```
 
-置き換える項目:
+次を置き換えます。
 
-- `TOKEN_ID`: ローテーションするパーソナルアクセストークンの ID
-- `VALID_TOKEN`: ローテーション対象のパーソナルアクセストークンを所有するユーザーの有効なパーソナルアクセストークン
-- `DATE_COMMAND`: 以下のいずれか（OS による）:
+- `TOKEN_ID` をローテーション対象のパーソナルアクセストークンの ID に
+- `VALID_TOKEN` をローテーション対象のパーソナルアクセストークンを所有するユーザーの有効なパーソナルアクセストークンに
+- `DATE_COMMAND` を次の値に（お使いの OS に応じて）:
   - Linux: `date -I -d'+1 year'`
   - Mac: `date -v+1y +%Y-%m-%d`
 
-これにより該当のトークンがローテーションされ、新しいトークンが出力されます。新しいトークンの値だけを出力できるよう、コマンドを `jq '.token'` にパイプすることをよくおすすめします。例:
+これにより対象のトークンがローテーションされ、新しいトークンが出力されます。新しいトークンの値だけを出力するように、このコマンドを `jq '.token'` にパイプすることがよく推奨されます。その例は次のとおりです。
 
 ```bash
 curl -ss -X POST "https://gitlab.com/api/v4/personal_access_tokens/123456/rotate?expires_at=$(date -I -d'+1 year')" \
@@ -79,13 +79,13 @@ curl -ss -X POST "https://gitlab.com/api/v4/personal_access_tokens/123456/rotate
 
 ### GitLab プロジェクトアクセストークンのローテーション {#rotating-a-gitlab-project-access-token}
 
-GitLab プロジェクトアクセストークンをローテーションするには、curl コマンドを使用する必要があり、以下の情報が必要です。
+GitLab プロジェクトアクセストークンをローテーションするには、curl コマンドを使用する必要があり、次の情報が必要です。
 
-- プロジェクトに `Maintainer` 権限を持つユーザーの有効なパーソナルアクセストークン
+- そのプロジェクトに対して `Maintainer` 権限を持つユーザーの有効なパーソナルアクセストークン
 - プロジェクトアクセストークンを含むプロジェクトの ID
-- ローテーションするプロジェクトアクセストークンの ID
+- ローテーション対象のプロジェクトアクセストークンの ID
 
-そして、以下の curl リクエストを実行します。
+次の curl リクエストを実行します。
 
 ```bash
 curl -ss -X POST "https://gitlab.com/api/v4/projects/PROJECT_ID/access_tokens/TOKEN_ID/rotate?expires_at=$(DATE_COMMAND)" \
@@ -93,16 +93,16 @@ curl -ss -X POST "https://gitlab.com/api/v4/projects/PROJECT_ID/access_tokens/TO
   --header "PRIVATE-TOKEN: VALID_TOKEN"
 ```
 
-置き換える項目:
+次を置き換えます。
 
-- `PROJECT_ID`: プロジェクトアクセストークンを含むプロジェクトの ID
-- `TOKEN_ID`: ローテーションするパーソナルアクセストークンの ID
-- `VALID_TOKEN`: プロジェクトに `Maintainer` 権限を持つユーザーの有効なパーソナルアクセストークン
-- `DATE_COMMAND`: 以下のいずれか（OS による）:
+- `PROJECT_ID` をプロジェクトアクセストークンを含むプロジェクトの ID に
+- `TOKEN_ID` をローテーション対象のパーソナルアクセストークンの ID に
+- `VALID_TOKEN` をそのプロジェクトに対して `Maintainer` 権限を持つユーザーの有効なパーソナルアクセストークンに
+- `DATE_COMMAND` を次の値に（お使いの OS に応じて）:
   - Linux: `date -I -d'+1 year'`
   - Mac: `date -v+1y +%Y-%m-%d`
 
-これにより該当のトークンがローテーションされ、新しいトークンが出力されます。新しいトークンの値だけを出力できるよう、コマンドを `jq '.token'` にパイプすることをよくおすすめします。例:
+これにより対象のトークンがローテーションされ、新しいトークンが出力されます。新しいトークンの値だけを出力するように、このコマンドを `jq '.token'` にパイプすることがよく推奨されます。その例は次のとおりです。
 
 ```bash
 curl -ss -X POST "https://gitlab.com/api/v4/projects/1234/access_tokens/5678/rotate?expires_at=$(date -I -d'+1 year')" \
@@ -113,33 +113,33 @@ curl -ss -X POST "https://gitlab.com/api/v4/projects/1234/access_tokens/5678/rot
 
 ### GitLab パイプライントリガートークンのローテーション {#rotating-a-gitlab-pipeline-trigger-token}
 
-#### ユーザーとして {#as-a-user}
+#### ユーザーとして
 
-ユーザーとして GitLab パイプライントリガートークンをローテーションするには:
+ユーザーとして GitLab パイプライントリガートークンをローテーションするには、次のようにします。
 
-1. トークンを作成する gitlab.com ユーザーにログインします
+1. トークンを作成する gitlab.com ユーザーでログインします
 1. プロジェクト自体に移動します
-1. `CI/CD` ページ（Settings 配下）に移動します
+1. （Settings の下の）`CI/CD` ページに進みます
 1. `Pipeline trigger tokens` セクションを展開します
-1. 既存のトークンリストを確認し、ローテーションが必要なものを特定します
-1. 既存トークンを削除します
-1. セクション右上の `Add new token` ボタンをクリックします
-1. 適切な名前を入力します:
-   - Zendesk webhook の場合は webhook 自体へのリンクを入力
-   - Zendesk アプリの場合は `INSTANCE - NAME_OF_APP` の形式で
-     - `INSTANCE` は Zendesk インスタンス自体（例: Zendesk Global、Zendesk US Government）
-     - `NAME_OF_APP` は Zendesk が表示するアプリ名
-   - 同じプロジェクト内の CI/CD ジョブの場合はジョブ名
-   - 別のプロジェクトの場合はプロジェクトへのリンク
+1. 既存のトークンのリストを調べて、ローテーションが必要なものを見つけます
+1. 既存のトークンを削除します
+1. セクションの右上にある `Add new token` ボタンをクリックします
+1. 適切な名前を入力します。
+   - Zendesk webhook の場合は、webhook 自体へのリンクを入れます
+   - Zendesk アプリの場合は、`INSTANCE - NAME_OF_APP` の形式を使用します
+     - `INSTANCE` は Zendesk インスタンス自体です（例: Zendesk Global、Zendesk US Government）
+     - `NAME_OF_APP` は Zendesk が表示するアプリの名前です
+   - 同じプロジェクト内の CI/CD ジョブ用の場合は、ジョブの名前を入れます
+   - 別のプロジェクト用の場合は、そのプロジェクトへのリンクを入れます
 1. 生成された API トークンをコピーします
-1. 必要な場所にトークンを設定します
+1. 必要な場所にトークンを設置します
 
-#### サービスボットとして {#as-a-service-bot}
+#### サービスボットとして
 
-サービスボットとして GitLab パイプライントリガートークンをローテーションするには:
+サービスボットとして GitLab パイプライントリガートークンをローテーションするには、次のようにします。
 
-1. 該当プロジェクトのプロジェクトアクセストークンを作成します
-1. プロジェクトの ID 番号を控えます
+1. 対象のプロジェクト用のプロジェクトアクセストークンを作成します
+1. そのプロジェクトの ID 番号を控えておきます
 1. その API トークンを使用して、gitlab.com API 経由でパイプライントリガートークンを作成します
 
    ```bash
@@ -149,25 +149,25 @@ curl -ss -X POST "https://gitlab.com/api/v4/projects/1234/access_tokens/5678/rot
      "https://gitlab.com/api/v4/projects/PROJECT_ID/triggers"
    ```
 
-   - `TOKEN_YOUR_COPIED` はコピーしたプロジェクトアクセストークン
-   - `APPROPRIATE_DESCRIPTION_HERE` は適切な説明:
-     - Zendesk webhook の場合は webhook 自体へのリンク
-     - Zendesk アプリの場合は `INSTANCE - NAME_OF_APP` の形式で
-       - `INSTANCE` は Zendesk インスタンス自体（例: Zendesk Global、Zendesk
+   - `TOKEN_YOUR_COPIED` はコピーしたプロジェクトアクセストークンです
+   - `APPROPRIATE_DESCRIPTION_HERE` は適切な説明です。
+     - Zendesk webhook の場合は、webhook 自体へのリンクを入れます
+     - Zendesk アプリの場合は、`INSTANCE - NAME_OF_APP` の形式を使用します
+       - `INSTANCE` は Zendesk インスタンス自体です（例: Zendesk Global、Zendesk
          US Government）
-       - `NAME_OF_APP` は Zendesk が表示するアプリ名
-     - 同じプロジェクト内の CI/CD ジョブの場合はジョブ名
-     - 別のプロジェクトの場合はプロジェクトへのリンク
+       - `NAME_OF_APP` は Zendesk が表示するアプリの名前です
+     - 同じプロジェクト内の CI/CD ジョブ用の場合は、ジョブの名前を入れます
+     - 別のプロジェクト用の場合は、そのプロジェクトへのリンクを入れます
 1. 生成された API トークンをコピーします
-1. 必要な場所にトークンを設定します
+1. 必要な場所にトークンを設置します
 
-## トークンの適用 {#applying-tokens}
+## トークンの適用
 
-### Zendesk アプリへの適用 {#for-zendesk-apps}
+### Zendesk アプリの場合
 
-Zendesk アプリにトークンを適用するには:
+Zendesk アプリにトークンを適用するには、次のようにします。
 
-1. 対象の Zendesk インスタンスの管理パネルに移動します:
+1. 対象の Zendesk インスタンスの管理パネルに移動します。
    - [Zendesk Global](https://gitlab.zendesk.com/admin)
    - [Zendesk Global Sandbox](https://gitlab1707170878.zendesk.com/admin)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin)
@@ -177,17 +177,17 @@ Zendesk アプリにトークンを適用するには:
    - [Zendesk Global Sandbox](https://gitlab1707170878.zendesk.com/admin/apps-integrations/apps/support-apps)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/apps-integrations/apps/support-apps)
    - [Zendesk US Government Sandbox](https://gitlabfederalsupport1585318082.zendesk.com/admin/apps-integrations/apps/support-apps)
-1. 該当アプリを見つけてクリックします
-1. 該当 API トークンが必要なフィールドを見つけます
+1. 対象のアプリを見つけてクリックします
+1. 対象の API トークンを必要とするフィールドを見つけます
 1. そのフィールドにトークンを入力します
-   - **注意** 他のフィールドを設定または編集しないでください
+   - **NOTE** 他のフィールドには入力したり編集したりしないでください
 1. ページ下部の青い `Update` ボタンをクリックします
 
-### Zendesk webhook への適用 {#for-zendesk-webhooks}
+### Zendesk webhook の場合
 
-Zendesk webhook にトークンを適用するには:
+Zendesk webhook にトークンを適用するには、次のようにします。
 
-1. 対象の Zendesk インスタンスの管理パネルに移動します:
+1. 対象の Zendesk インスタンスの管理パネルに移動します。
    - [Zendesk Global](https://gitlab.zendesk.com/admin)
    - [Zendesk Global Sandbox](https://gitlab1707170878.zendesk.com/admin)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin)
@@ -197,48 +197,48 @@ Zendesk webhook にトークンを適用するには:
    - [Zendesk Global Sandbox](https://gitlab1707170878.zendesk.com/admin/apps-integrations/webhooks/webhooks)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/apps-integrations/webhooks/webhooks)
    - [Zendesk US Government Sandbox](https://gitlabfederalsupport1585318082.zendesk.com/admin/apps-integrations/webhooks/webhooks)
-1. 該当 webhook を見つけます
-1. 該当 webhook の右端にある縦三点リーダーをクリックします
+1. 対象の webhook を見つけます
+1. 対象の webhook の一番右にある縦 3 点ドットをクリックします
 1. `Edit` オプションをクリックします
-1. 必要な箇所で古いトークンを新しいトークンに置き換えます
+1. 必要な場所で古いトークンを新しいトークンに置き換えます
 1. ページ右下の青い `Update` ボタンをクリックします
 
-### GitLab webhook への適用 {#for-gitlab-webhooks}
+### GitLab webhook の場合
 
-webhook 内のマスクされたセクションの値は編集できないため、トークンをローテーションするには「削除して作成」する必要があります。
-
-1. プロジェクト自体に移動します
-1. `Webhooks` ページ（Settings 配下）に移動します
-1. 該当 webhook を見つけ、関連するすべての情報（URL、トリガー条件など）をコピーします
-1. 該当 webhook を削除します
-1. 関連情報と新しいトークンを使って webhook を再作成します
-
-### GitLab CI/CD 変数への適用 {#for-gitlab-cicd-variables}
-
-GitLab CI/CD 変数にトークンを適用するには:
+webhook 内のマスクされたセクションの値を編集できないため、トークンをローテーションするには「削除して作成」する必要があります。
 
 1. プロジェクト自体に移動します
-1. `CI/CD` ページ（Settings 配下）に移動します
+1. （Settings の下の）`Webhooks` ページに進みます
+1. 対象の webhook を見つけ、関連するすべての情報（URL、何によってトリガーされるかなど）をコピーします
+1. 対象の webhook を削除します
+1. 関連する情報と新しいトークンを使用して webhook を再作成します
+
+### GitLab CI/CD 変数の場合
+
+GitLab CI/CD 変数にトークンを適用するには、次のようにします。
+
+1. プロジェクト自体に移動します
+1. （Settings の下の）`CI/CD` ページに進みます
 1. `Variables` セクションを展開します
-1. 既存変数のリストを確認し、置き換える必要のあるものを特定します
-1. 変数の右端にある鉛筆アイコン（マウスオーバーすると `Edit` と表示）をクリックします
+1. 既存の変数のリストを調べて、置き換える必要があるものを見つけます
+1. 変数の一番右にある鉛筆アイコン（マウスを乗せると `Edit` と表示されます）をクリックします
 1. `Value` フィールドに新しいトークンを入力します
 1. 青い `Save changes` ボタンをクリックします
 
-## OAuth 統合 {#oauth-integrations}
+## OAuth インテグレーション
 
-### 新しい OAuth アプリケーションを Zendesk に統合する {#integrating-a-new-oauth-application-into-zendesk}
+### 新しい OAuth アプリケーションを Zendesk に統合する
 
-{{% alert title="注意" color="primary" %}}
+{{% alert title="Note" color="primary" %}}
 
-- OAuth 統合の追加には Zendesk への `Owner` アクセスが必要です。
+- OAuth インテグレーションの追加には、Zendesk への `Owner` アクセスが必要です。
 
 {{% /alert %}}
 
-新しい OAuth アプリケーションを Zendesk に統合するには:
+新しい OAuth アプリケーションを Zendesk に統合するには、次のようにします。
 
 1. SSO の管理者バイパスを有効化します
-   1. 対象の Zendesk インスタンスの管理パネルに移動します:
+   1. 対象の Zendesk インスタンスの管理パネルに移動します。
       - [Zendesk Global](https://gitlab.zendesk.com/admin)
       - [Zendesk Global Sandbox](https://gitlab1707170878.zendesk.com/admin)
       - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin)
@@ -250,13 +250,13 @@ GitLab CI/CD 変数にトークンを適用するには:
       - [Zendesk US Government Sandbox](https://gitlabfederalsupport1585318082.zendesk.com/admin/account/security/advanced/authentication)
    1. `SSO bypass` の下で `Admins` をクリックします
    1. ページ右下の `Save` ボタンをクリックします
-1. 新しいブラウザを開いて `https://gitlab.zendesk.com/access/sso_bypass` に移動します
-1. 統合ユーザーとしてログインします
+1. 新しいブラウザを開き、`https://gitlab.zendesk.com/access/sso_bypass` に移動します
+1. インテグレーションユーザーとしてログインします
 1. アプリケーションの指示に従って OAuth フローを実行します。
-   - 要求されたスコープがアクセスリクエストでドキュメント化・承認されているかを確認します。されていない場合は中止してください。
-1. 統合ユーザーをログアウトします
-1. SSO の管理者バイパスを無効化します:
-   1. 対象の Zendesk インスタンスの管理パネルに移動します:
+   - 要求されたスコープがアクセスリクエストで文書化され承認されていることを確認します。そうでない場合は、STOP してください。
+1. インテグレーションユーザーからログアウトします
+1. SSO の管理者バイパスを無効化します。
+   1. 対象の Zendesk インスタンスの管理パネルに移動します。
       - [Zendesk Global](https://gitlab.zendesk.com/admin)
       - [Zendesk Global Sandbox](https://gitlab1707170878.zendesk.com/admin)
       - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin)
@@ -269,57 +269,57 @@ GitLab CI/CD 変数にトークンを適用するには:
    1. `SSO bypass` の下で `Account owner` をクリックします
    1. ページ右下の `Save` ボタンをクリックします
 
-## Token Checker {#token-checker}
+## Token Checker
 
-{{% alert title="技術的な詳細" color="primary" %}}
+{{% alert title="Technical Details" color="primary" %}}
 
-- デプロイメントタイプ: `Ad-hoc`
+- デプロイタイプ: `Ad-hoc`
 - プロジェクトリポジトリ: [Token Checker](https://gitlab.com/gitlab-support-readiness/token-checker)
 
 {{% /alert %}}
 
-### Token Checker の理解 {#understanding-token-checker}
+### Token Checker を理解する
 
-#### Token Checker とは {#what-is-token-checker}
+#### Token Checker とは
 
-Token Checker は、GitLab の[スケジュールパイプライン](https://docs.gitlab.com/ci/pipelines/schedules/)を使って、今後 3 週間以内に期限切れになるトークンをチェックするためのセットアップです。チェックされるトークンの種類は以下の通りです。
+Token Checker は、GitLab の[スケジュールパイプライン](https://docs.gitlab.com/ci/pipelines/schedules/)を使用して、今後 3 週間以内に期限切れになるトークンをチェックするために私たちが作成した仕組みです。チェックされるトークンの種類は次のとおりです。
 
 - パーソナルアクセストークン
 - プロジェクトアクセストークン
 
-#### Token Checker の動作 {#how-token-checker-works}
+#### Token Checker の仕組み
 
-毎週月曜日 1400 UTC（`0 14 * * 1`）に、GitLab [スケジュールパイプライン](https://docs.gitlab.com/ci/pipelines/schedules/)が `bin/run` スクリプトを実行し、以下を行います。
+毎週月曜日の 1400 UTC（`0 14 * * 1`）に、GitLab の[スケジュールパイプライン](https://docs.gitlab.com/ci/pipelines/schedules/)が `bin/run` スクリプトを実行し、次の処理を行います。
 
-- Customer Support Operations チームが管理する gitlab.com ユーザーの有効なパーソナルアクセストークン（今後 3 週間以内に期限切れになるもの）をすべて取得し、情報を配列に格納
-- Customer Support Operations が管理する gitlab.com グループ内のすべてのプロジェクトを取得し、それらをループして:
-  - プロジェクトの取り消されていないプロジェクトアクセストークン（今後 3 週間以内に期限切れになるもの）をすべて取得し、情報を配列に格納
-- 期限切れが近いトークンを報告する Issue を作成（配列に格納された場合）
+- Customer Support Operations チームが管理する gitlab.com ユーザーについて、（今後 3 週間以内に期限切れになる）有効なパーソナルアクセストークンをすべて取得し、その情報を配列に格納します
+- Customer Support Operations が管理する gitlab.com グループ内のすべてのプロジェクトを取得し、それらをループして次を行います。
+  - そのプロジェクトの（今後 3 週間以内に期限切れになる）失効していないプロジェクトアクセストークンをすべて取得し、その情報を配列に格納します
+- まもなく期限切れになるトークンを報告する Issue を作成します（配列に何か格納されていた場合）
 
-### Token Checker が作成した Issue の対応 {#working-issues-created-by-token-checker}
+### Token Checker によって作成された Issue を作業する
 
-{{% alert title="注意" color="primary" %}}
+{{% alert title="Note" color="primary" %}}
 
 - これには、Customer Support Operations が管理するすべての gitlab.com ユーザー、グループ、プロジェクトへのアクセスが必要です。
 
 {{% /alert %}}
 
-Token Checker が生成した Issue に対応するには、リスト内の項目を順に確認し、列挙されたトークンを取り消すかローテーションします。
+Token Checker が生成した Issue を作業するには、項目のリストを確認して、掲載されているトークンを失効またはローテーションします。
 
-- 該当トークンが使用されていない場合は、取り消します。取り消し後、リスト上の該当項目のチェックボックスをオンにし、トークンが取り消されたことを示すコメントを追加します。
-- 該当トークンが現在使用中の場合は、ローテーションします。完了後、リスト上の該当項目のチェックボックスをオンにします。
+- 対象のトークンがもう使用されていない場合は、失効させます。失効後、リスト上のそのトークンの横のボックスにチェックを入れ、トークンが失効されたことを示すコメントを追加します。
+- 対象のトークンがまだ使用されている場合は、ローテーションします。ローテーション後、リスト上のそのトークンの横のボックスにチェックを入れます。
 
-リストのすべての項目を対応したら、必要なタスクがすべて完了したことを示すコメントを追加し、Issue をクローズします。
+リストのすべての項目を作業し終えたら、必要なタスクがすべて完了したことを示すコメントを追加し、Issue をクローズします。
 
-### Token Checker への変更 {#making-changes-to-token-checker}
+### Token Checker に変更を加える
 
-{{% alert title="注意" color="primary" %}}
+{{% alert title="Note" color="primary" %}}
 
 - これには、[Token Checker](https://gitlab.com/gitlab-support-readiness/token-checker) プロジェクトへの少なくとも `Developer` アクセスが必要です。
-- これは対応するリクエスト Issue（機能リクエスト、管理、バグなど）がある場合のみ実施してください。存在しない場合は、まず作成し（標準プロセスを通してから対応）してください。
+- これは、対応するリクエスト Issue（機能リクエスト、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成してください（そして作業する前に標準プロセスを通してください）。
 
 {{% /alert %}}
 
-Token Checker に変更を加えるには、プロジェクトリポジトリで MR を作成する必要があります。実際の変更内容はリクエスト自体によります。
+Token Checker に変更を加えるには、プロジェクトリポジトリで MR を作成する必要があります。実際に行う変更はリクエスト自体に依存します。
 
-ピアレビューと承認の後、MR をマージできます（次回のスケジュール実行時に適用されます）。
+ピアが MR をレビューして承認した後、MR をマージできます（これにより、次回のスケジュール実行時に適用されます）。
