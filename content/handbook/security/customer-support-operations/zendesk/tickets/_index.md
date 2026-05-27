@@ -1,115 +1,114 @@
 ---
 title: 'チケット'
 description: 'Zendesk のチケットに関するドキュメント'
-date: 2025-12-26
 upstream_path: /handbook/security/customer-support-operations/zendesk/tickets/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: "154fb2bd6436508aa2d90583cc235d5fe28b1705"
+lastmod: 2026-05-26T12:05:00-05:00
+translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-03-17T10:57:10-05:00"
 ---
 
-このガイドでは、チケットステータス、システム設定、サポートオペレーションの一般的なワークフローを含む、Zendesk のチケット管理について説明します。
+このガイドでは、チケットのステータス、システム設定、よくある Support Operations のワークフローなど、Zendesk でのチケット管理について説明します。
 
 ## チケットを理解する
 
-### チケットを作成する
+### チケットの作成
 
-伝統的に、私たちはエンドユーザー自身でチケットを作成してもらいたいと考えています。それが理想的でない状況では、利用可能な定められたオプションがあります。
+従来から、私たちはエンドユーザー自身にチケットを作成してもらうことを望んでいます。それが理想的でない場面では、利用できるオプションがいくつか用意されています。
 
 #### Zendesk Super App 経由
 
-{{% alert title="注意" color="primary" %}}
+{{% alert title="Note" color="primary" %}}
 
-- このオプションは Customer Support Operations またはサポートチームに所属する人のみ利用できます
+- このオプションは Customer Support Operations チームまたは Support チームのメンバーのみが利用できます
 
 {{% /alert %}}
 
-これは既存ユーザーから新規チケットを作成する必要がある場合に使用すべきです。これには、対応するアプリを使用します。
+既存のユーザーから新しいチケットを作成する必要がある場合に使用します。これには、対応するアプリを使用します。
 
 - Zendesk Global の場合: [Zendesk Super App](/handbook/security/customer-support-operations/zendesk/apps/global#zendesk-super-app)
 - Zendesk US Government の場合: [Zendesk Super App](/handbook/security/customer-support-operations/zendesk/apps/us-government#zendesk-super-app)
 
-#### 送信通信用
+#### アウトバウンドコミュニケーション用
 
-{{% alert title="注意" color="primary" %}}
+{{% alert title="Note" color="primary" %}}
 
-- このオプションは以下に該当する人のみ利用できます:
-  - Customer Support Operations チームに所属
-  - サポートチームに所属し、エージェントロール `Support Staff - CMOC` を持つ（Zendesk Global のみ）
+- このオプションは次の人のみが利用できます。
+  - Customer Support Operations チームのメンバー
+  - Support チームのメンバーであり、かつ `Support Staff - CMOC` のエージェントロールを持つ人（Zendesk Global のみ）
 
 {{% /alert %}}
 
-詳細はサポートチームの[通知の送信ドキュメント](/handbook/support/workflows/sending_notices)を参照してください。
+詳細は、Support チームの [Sending Notices documentation](/handbook/support/workflows/sending_notices) を参照してください。
 
-### チケットを表示する
+### チケットの閲覧
 
-チケットの表示については以下を参照してください。
+チケットの閲覧については、以下を参照してください。
 
-- [ビュー](/handbook/security/customer-support-operations/zendesk/views/)
-- [検索](/handbook/security/customer-support-operations/zendesk/searching/)
+- [Views](/handbook/security/customer-support-operations/zendesk/views/)
+- [Searching](/handbook/security/customer-support-operations/zendesk/searching/)
 
 ### ステータス
 
-[Zendesk](https://support.zendesk.com/hc/en-us/articles/4408832151834-Updating-and-solving-tickets#topic_i3y_np1_vt) によると、各種ステータスは以下のように定義されています。
+[Zendesk](https://support.zendesk.com/hc/en-us/articles/4408832151834-Updating-and-solving-tickets#topic_i3y_np1_vt) によると、各ステータスは次のように定義されています。
 
 - New
-  - チケットに対してアクションが取られていないことを示します。一度 New チケットのステータスが変更されると、二度と New に戻すことはできません。
+  - チケットに対してまだ何のアクションも取られていないことを示します。New チケットのステータスが一度変更されると、二度と New に戻すことはできません。
 - Open
   - チケットがエージェントによるアクションを待っていることを示します。
 - Pending
-  - エージェントが依頼者からの追加情報を待っていることを示します。依頼者が応答して新しいコメントが追加されると、チケットステータスは自動的に Open にリセットされます。
+  - エージェントがリクエスターからの追加情報を待っていることを示します。リクエスターが応答して新しいコメントが追加されると、チケットのステータスは自動的に Open にリセットされます。
 - On-hold
-  - エージェントが依頼者以外の誰かからの情報またはアクションを待っていることを示します。Pending ステータスと似ていますが、エージェントとして他の誰かからの情報を受け取るまでチケットを解決することはできません。ただし、On-hold は内部ステータスで、チケット依頼者には見えません。チケットが On-hold に設定されている間、依頼者にはステータスが Open として表示されます。
+  - エージェントがリクエスター以外の誰かからの情報やアクションを待っていることを示します。Pending ステータスと同様に、エージェントである you は他の誰かから追加情報を受け取るまでチケットの解決を進められません。ただし、On-hold はチケットのリクエスターには決して見えない内部ステータスです。チケットが On-hold に設定されている間、リクエスターにはステータスが Open として表示されます。
 - Solved
-  - エージェントが解決策を提示した、またはエンドユーザーがその旨マークしたことを示します。Solved チケットはまだ編集または再度開くことができます。
+  - エージェントが解決策を提出した、またはエンドユーザーが解決済みとしてマークしたことを示します。Solved チケットは引き続き編集や再オープンが可能です。
 - Closed
-  - チケットが更新を受け付けない状態にあることを示します。クローズされたチケットへの返信はフォローアップチケットを開き、これには以前のすべてのタグと前のチケットへのリンクが含まれます。
+  - チケットがもう更新を受け付けられない状態にあることを示します。Closed チケットに返信するとフォローアップチケットが開かれ、それには以前のタグがすべて含まれ、以前のチケットへのリンクが付きます。
 
-GitLab では、これらを少し異なる形で定義します。
+GitLab では、これらを少し異なる形で定義しています。
 
 - New
-  - これは新規チケットです。これは、まだ GitLab で対応していないことを意味します。
+  - 新しいチケットです。GitLab がまだ対応していないことを意味します。
 - Open
   - チケットが私たちの返信を待っていることを意味します。
 - Pending
-  - エンドユーザーからの返信を待っていることを意味します。これは特に、ユーザーがチケットに返信する（または自動解決する）場合にのみ使用すべきです。長期間「pending のような」状態にチケットを保持する必要がある場合は On-hold を使用してください。
+  - エンドユーザーの返信を待っていることを意味します。これは、ユーザーがチケットに返信してくる（またはチケットが自動的に解決される）場合に限って使うべきです。長期間にわたってチケットを「pending」のような状態に保つ必要がある場合は、On-hold を使ってください。
 - On-hold
-  - エンドユーザーが私たちを待っているが、私たちは返信を妨げる何かを待っていることを意味します。私たちは、別の部署、時間の経過（例として namesquatting リクエスト）、または同じコンセプトに沿ったその他の基準などの何かを待っている状況でのみこれを使用すべきです。
+  - エンドユーザーが私たちを待っているが、私たちは返信を妨げている何かを待っていることを意味します。これは、別の部門や、時間の経過（namesquatting リクエストなど）、あるいは同様の概念に当てはまる何らかの条件など、何かを待っている場面でのみ使うべきです。
 - Solved
-  - チケットが解決されたが、エンドユーザーが私たちに戻ってくる可能性があることを意味します。
+  - チケットは解決されたが、エンドユーザーが私たちのところに戻ってくる可能性があることを意味します。
 - Closed
-  - Zendesk が定義するとおりに使用します。
+  - Zendesk が定義しているとおりに使用します。
 
-### 現在のシステムチケット設定 {#current-system-ticket-settings}
+### 現在のシステムチケット設定
 
-これらの設定はリファレンスとしてここに記載されており、変更されることはまれです。
+これらの設定は参照用にここに記載しており、めったに変更すべきではありません。
 
 <details>
 <summary>Zendesk Global の場合</summary>
 
-- コメント
-  - [x] 絵文字テキスト置換を有効にする
-  - [x] カラーテキストを有効にする
-  - [x] 作成済みをデフォルトでパブリックチャンネルに設定
-  - [x] メール経由のエージェントコメントはデフォルトでパブリック
-  - [ ] チケットの最初のコメントを非公開にすることを許可
-  - URI をハイパーリンクとしてレンダリング: `["[]"]`
-  - [ ] CC されたエンドユーザーからのメールコメントをパブリックにする（推奨されません）
-- 添付ファイル
-  - [x] 顧客がファイルを添付できるようにする
-  - [x] セキュアダウンロードを有効にする
-- タグ
-  - [x] チケット上のタグを有効にする
-    - [ ] 自動チケットタグ付けを有効にする
-- CC
-  - [x] チケット上の CC を有効にする
-    - [ ] エージェントのみが CC を追加できるようにする
-    - [x] Help Center のエンドユーザーに対して CC を有効にする
-    - CC ブラックリスト: `noreply@google.com`
-    - CC メール件名: `[{{ticket.account}}] Update: {{ticket.title}}`
-    - CC メール本文:
+- Comments
+  - [x] Turn on emoji text replacement
+  - [x] Turn on color text
+  - [x] Set composed to public channel by default
+  - [x] Agent comments via email are public by default
+  - [ ] Allow first comment on tickets to be private
+  - Render URIs are hyperlinks: `["[]"]`
+  - [ ] Make email comments from CCed end users public (not recommended)
+- Attachments
+  - [x] Customers can attach files
+  - [x] Enable secure downloads
+- Tags
+  - [x] Enable tags on tickets
+    - [ ] Enable automatic ticket tagging
+- CCs
+  - [x] Enable CCs on tickets
+    - [ ] Only agents can add CCs
+    - [x] Enable CCs for end users on Help Center
+    - CC blacklist: `noreply@google.com`
+    - CC email subject: `[{{ticket.account}}] Update: {{ticket.title}}`
+    - CC email text:
 
       ```plaintext
       You are registered as a CC on this support request ({{ticket.link}}). Reply to this email to add a comment to the request.
@@ -118,57 +117,57 @@ GitLab では、これらを少し異なる形で定義します。
 
       ```
 
-- 割り当て
-  - [x] 解決時にチケットを自動割り当て
-  - [x] 一般グループへの再割り当てを許可
-- フォローアップ
-  - [ ] 元の担当者とグループをフォローアップチケットにコピー
-- サスペンドチケット通知
-  - `Never` 新しいサスペンドチケットに関するメールを受信する頻度
-  - メールリスト:
-- チケット ID
-  - チケット ID カウンタを設定
-    - この値はチケット量に基づいて変化します。触れないでください
-- クローズチケットの変更
-  - [ ] オン
-- メールアーカイブ
-  - アーカイブメールアドレス:
-- トランスクリプトの可視性
-  - 会話トランスクリプトをチケットに段階的に追加する方法: `As public reply`
-- 継続的な会話
-  - [ ] メッセージング会話をメールに切り替える
-- 翻訳
-  - [x] エージェントは会話を翻訳できる
-- Solved チケットの再割り当て
-  - [ ]  Solved チケットの再割り当てをオンにする
-    - [ ] Solved チケットの再割り当てを表示
-    - 新規作成されたグループ向けの Solved チケット再割り当てオプションのアカウントレベルのデフォルトを設定: `To an admin or longest active team member`
-    - [ ] すべてのグループにアカウントレベルのデフォルトを今すぐ強制適用
-- メッセージングのエージェントコラボレーション
-  - [x]  複数のエージェントがメッセージング会話で協力できる
+- Assignment
+  - [x] Auto-assign tickets upon solve
+  - [x] Allow re-assignment back to the general group
+- Follow-Ups
+  - [ ] Copy original assignee and group to follow-up ticket
+- Suspended Ticket Notifications
+  - `Never` How often you want to receive email about new suspended tickets.
+  - Email list:
+- Ticket IDs
+  - Set the ticket ID counter
+    - This value is going to change based on ticket volume. Do not touch it
+- Modify closed ticket
+  - [ ] Turn on
+- Email Archiving
+  - Archive email address:
+- Transcript visibility
+  - How conversation transcript is incrementally appended to the ticket: `As public reply`
+- Continuous conversations
+  - [ ] Switch messaging conversations to email
+- Translations
+  - [x] Agents can translate conversations
+- Solved Ticket Reassignment
+  - [ ]  Turn on solved ticket reassignment
+    - [ ] Show solved ticket reassignment
+    - Set an account level default for solved ticket reassignment option for newly created groups: `To an admin or longest active team member`
+    - [ ] Force all the groups to assume the account level default now
+- Agent collaboration for messaging
+  - [x]  Multiple agents can collaborate in messaging conversations
 
 </details>
 <details>
 <summary>Zendesk US Government の場合</summary>
 
-- コメント
-  - [x] 絵文字テキスト置換を有効にする
-  - [x] カラーテキストを有効にする
-  - [x] 作成済みをデフォルトでパブリックチャンネルに設定
-  - [x] メール経由のエージェントコメントはデフォルトでパブリック
-  - [ ] チケットの最初のコメントを非公開にすることを許可
-  - URI をハイパーリンクとしてレンダリング: `["[]"]`
-  - [ ] CC されたエンドユーザーからのメールコメントをパブリックにする（推奨されません）
-- 添付ファイル
-  - [x] 顧客がファイルを添付できるようにする
-  - [x] セキュアダウンロードを有効にする
-- タグ
-  - [x] チケット上のタグを有効にする
-    - [ ] 自動チケットタグ付けを有効にする
-- CC
-  - [x] フォロワーを有効にする
-    - フォロワーメール件名: `{{ticket.title}}`
-    - フォロワーメールテンプレート:
+- Comments
+  - [x] Turn on emoji text replacement
+  - [x] Turn on color text
+  - [x] Set composed to public channel by default
+  - [x] Agent comments via email are public by default
+  - [ ] Allow first comment on tickets to be private
+  - Render URIs are hyperlinks: `["[]"]`
+  - [ ] Make email comments from CCed end users public (not recommended)
+- Attachments
+  - [x] Customers can attach files
+  - [x] Enable secure downloads
+- Tags
+  - [x] Enable tags on tickets
+    - [ ] Enable automatic ticket tagging
+- CCs
+  - [x] Enable followers
+    - Follower email subject: `{{ticket.title}}`
+    - Follower email template:
 
       ```plaintext
       You are a follower on this request ({{ticket.link}}). {{ticket.follower_reply_type_message}}
@@ -176,232 +175,232 @@ GitLab では、これらを少し異なる形で定義します。
       {{ticket.comments_formatted}}
       ```
 
-  - [ ] CC を有効にする
-  - [ ] エージェント CC を自動的にフォロワーにする
-- 依頼者
-  - [ ] エージェントが依頼者を変更できる
-- 割り当て
-  - [x] 解決時にチケットを自動割り当て
-  - [x] 一般グループへの再割り当てを許可
-- フォローアップ
-  - [ ] 元の担当者とグループをフォローアップチケットにコピー
-- サスペンドチケット通知
-  - `Never` 新しいサスペンドチケットに関するメールを受信する頻度
-  - メールリスト:
-- チケット ID
-  - チケット ID カウンタを設定
-    - この値はチケット量に基づいて変化します。触れないでください
-- クローズチケットの変更
-  - [ ] オン
-- メールアーカイブ
-  - アーカイブメールアドレス:
-- トランスクリプトの可視性
-  - 会話トランスクリプトをチケットに段階的に追加する方法: `As public reply`
-- 継続的な会話
-  - [ ] メッセージング会話をメールに切り替える
-- 翻訳
-  - [x] エージェントは会話を翻訳できる
-- Solved チケットの再割り当て
-  - [ ]  Solved チケットの再割り当てをオンにする
-    - [ ] Solved チケットの再割り当てを表示
-    - 新規作成されたグループ向けの Solved チケット再割り当てオプションのアカウントレベルのデフォルトを設定: `To an admin or longest active team member`
-    - [ ] すべてのグループにアカウントレベルのデフォルトを今すぐ強制適用
-- メッセージングのエージェントコラボレーション
-  - [x]  複数のエージェントがメッセージング会話で協力できる
+  - [ ] Enable CCs
+  - [ ] Automatically make an agent CC a follower
+- Requester
+  - [ ] Agents can change requester
+- Assignment
+  - [x] Auto-assign tickets upon solve
+  - [x] Allow re-assignment back to the general group
+- Follow-Ups
+  - [ ] Copy original assignee and group to follow-up ticket
+- Suspended Ticket Notifications
+  - `Never` How often you want to receive email about new suspended tickets.
+  - Email list:
+- Ticket IDs
+  - Set the ticket ID counter
+    - This value is going to change based on ticket volume. Do not touch it
+- Modify closed ticket
+  - [ ] Turn on
+- Email Archiving
+  - Archive email address:
+- Transcript visibility
+  - How conversation transcript is incrementally appended to the ticket: `As public reply`
+- Continuous conversations
+  - [ ] Switch messaging conversations to email
+- Translations
+  - [x] Agents can translate conversations
+- Solved Ticket Reassignment
+  - [ ]  Turn on solved ticket reassignment
+    - [ ] Show solved ticket reassignment
+    - Set an account level default for solved ticket reassignment option for newly created groups: `To an admin or longest active team member`
+    - [ ] Force all the groups to assume the account level default now
+- Agent collaboration for messaging
+  - [x]  Multiple agents can collaborate in messaging conversations
 
 </details>
 
-### 現在のチケット共有設定 {#current-ticket-sharing-settings}
+### 現在のチケット共有設定
 
-これらの設定はリファレンスとしてここに記載されており、変更されることはまれです。
+これらの設定は参照用にここに記載しており、めったに変更すべきではありません。
 
 <details>
 <summary>Zendesk Global の場合</summary>
 
-- 送信合意: 0
-- 受信合意
+- Sending agreements: 0
+- Receiving agreements
   - `Pivotal @ Zendesk` `Public comments allowed. Sync status and share tags` `Accepted`
-- 共有のオプトアウト
-  - [ ] すべての共有合意の招待を拒否
+- Opt out of sharing
+  - [ ] Decline all sharing agreement invites
 
 </details>
 <details>
 <summary>Zendesk US Government の場合</summary>
 
-- 送信合意: 0
-- 受信合意: 0
-- 共有のオプトアウト
-  - [ ] すべての共有合意の招待を拒否
+- Sending agreements: 0
+- Receiving agreements: 0
+- Opt out of sharing
+  - [ ] Decline all sharing agreement invites
 
 </details>
 
 ## 管理者タスク
 
-{{% alert title="注意" color="primary" %}}
+{{% alert title="Note" color="primary" %}}
 
-- このセクションのすべての項目は、Zendesk への `Administrator` レベルのアクセスが必要です。
-
-{{% /alert %}}
-
-### クローズチケットを変更する
-
-Zendesk にはクローズチケット内のいくつかの値を更新する機能がありますが、これは私たちが実施するアクションではありません。Zendesk のデータを利用するいくつかのチームとの議論、およびクローズチケットの変更が顧客に与える影響をレビューした結果、以下の理由に基づいて判断しています。
-
-- クローズチケットの更新は顧客に悪影響を与えます（実用的な回避策がない）
-- クローズチケットの更新は Zendesk Explore のレポート/ダッシュボードに重大な影響を与え、完全な再構成を要します
-- クローズチケットの更新はデータウェアハウス内のレポートに重大な影響を与え、完全な再構成を要します
-- クローズチケットの更新は、データウェアハウス内のデータの完全な再インデックスを要します（大量のリソースを消費し、5 日以上を要します）
-- データウェアハウス内でカスタムビュー、カスタムテーブル、AI を使用して実行可能な実用的な回避策があり、クローズチケットの更新を実施することの認識される利点を打ち消します
-
-### システムチケット設定を変更する
-
-{{% alert title="危険" color="danger" %}}
-
-- サポートポータルの使い勝手に大きな影響を与える可能性があるため、極めて慎重に実行してください。
-- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください
-- システムチケット設定を変更した場合は、必ずこのページの[現在のシステムチケット設定](#current-system-ticket-settings)を更新してください
+- このセクションのすべての項目には、Zendesk への `Administrator` レベルのアクセス権が必要です。
 
 {{% /alert %}}
 
-システムチケット設定を変更するには:
+### Closed チケットの変更
 
-1. Zendesk インスタンスの管理ダッシュボードに移動
+Zendesk には Closed チケット内の一部の値を更新する機能がありますが、これは私たちが実行するアクションではありません。Zendesk のデータを利用している複数のチームと議論し、Closed チケットの変更が顧客に与える影響をレビューした結果、次の理由に基づいてこの判断を下しました。
+
+- Closed チケットの更新は顧客に悪影響を及ぼす（実行可能な回避策がない）
+- Closed チケットの更新は Zendesk Explore のレポート/ダッシュボードに深刻な影響を与え、全面的な再設定が必要になる
+- Closed チケットの更新は私たちのデータウェアハウス内のレポートに深刻な影響を与え、全面的な再設定が必要になる
+- Closed チケットの更新は私たちのデータウェアハウス内のデータの全面的な再インデックスを必要とする（膨大なリソースを消費し、5 日以上かかる）
+- 私たちにはカスタムビュー、カスタムテーブル、AI を使ってデータウェアハウス内で実行できる実行可能な回避策があり、Closed チケットへの更新を行うことで得られると思われるメリットを打ち消している
+
+### システムチケット設定の変更
+
+{{% alert title="Danger" color="danger" %}}
+
+- これを行う際は細心の注意を払ってください。サポートポータルの使い勝手に大きな影響を与える可能性があります。
+- これは対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ行うべきです。
+- システムチケット設定を変更した場合は、必ずこのページの [現在のシステムチケット設定](#current-system-ticket-settings) を更新してください。
+
+{{% /alert %}}
+
+システムチケット設定を変更するには、次の手順を実行します。
+
+1. Zendesk インスタンスの管理ダッシュボードに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/home)
-1. `Objects and rules > Tickets > Settings` に移動
+1. `Objects and rules > Tickets > Settings` に移動します
    - [Zendesk Global](https://gitlab.zendesk.com/admin/objects-rules/tickets/ticket-settings)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/objects-rules/tickets/ticket-settings)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/objects-rules/tickets/ticket-settings)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/objects-rules/tickets/ticket-settings)
-1. 変更したい設定を修正
-1. ページの右下にある `Save` をクリック
+1. 変更したい設定に修正を加えます
+1. ページ右下の `Save` をクリックします
 
-### チケット共有設定を変更する
+### チケット共有設定の変更
 
-{{% alert title="危険" color="danger" %}}
+{{% alert title="Danger" color="danger" %}}
 
-- サポートポータルの使い勝手に大きな影響を与える可能性があるため、極めて慎重に実行してください。
-- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください
-- チケット共有設定を変更した場合は、必ずこのページの[現在のチケット共有設定](#current-ticket-sharing-settings)を更新してください
+- これを行う際は細心の注意を払ってください。サポートポータルの使い勝手に大きな影響を与える可能性があります。
+- これは対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ行うべきです。
+- チケット共有設定を変更した場合は、必ずこのページの [現在のチケット共有設定](#current-ticket-sharing-settings) を更新してください。
 
 {{% /alert %}}
 
-チケット共有設定を変更するには:
+チケット共有設定を変更するには、次の手順を実行します。
 
-1. Zendesk インスタンスの管理ダッシュボードに移動
+1. Zendesk インスタンスの管理ダッシュボードに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/home)
    - [Zendesk US Government (production)](https://gitlab-federal-support.zendesk.com/admin/home)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/home)
-1. `Objects and rules > Tickets > Sharing` に移動
+1. `Objects and rules > Tickets > Sharing` に移動します
    - [Zendesk Global](https://gitlab.zendesk.com/admin/objects-rules/tickets/ticket-sharing)
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/objects-rules/tickets/ticket-sharing)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/objects-rules/tickets/ticket-sharing)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/objects-rules/tickets/ticket-sharing)
-1. 変更したい設定を修正
-1. ページの右下にある `Save tab` をクリック
+1. 変更したい設定に修正を加えます
+1. ページ右下の `Save tab` をクリックします
 
 ## Customer Support Operations のワークフロー
 
 ### チケットの対応
 
-{{% alert title="注意" color="primary" %}}
+{{% alert title="Note" color="primary" %}}
 
-- これは Customer Support Operations チームと、同チームのチケット対応方法のみに関わるものです。他のチームがチケットをどう対応するかを反映するものではありません。
+- これは Customer Support Operations チームと、彼らがどのようにチケットに対応するかにのみ関係します。他のチームがチケットにどう対応するかを反映するものではありません。
 
 {{% /alert %}}
 
-#### サポート連絡先の管理
+#### サポートコンタクトの管理
 
-連絡先管理に関する Zendesk Global チケットについては、[組織関連付けドキュメント](/handbook/security/customer-support-operations/zendesk/organizations/association)を参照してください。
+コンタクト管理に関する Zendesk Global のチケットについては、私たちの [Organization association documentation](/handbook/security/customer-support-operations/zendesk/organizations/association) を参照してください。
 
-連絡先管理に関する Zendesk US Government チケットについては、Salesforce アカウントとの同期によって、すべてのサポート連絡先関連付けが行われます。そのため、ここで対応はできません。依頼者には、新しいメールでアカウントマネージャーに連絡するように指示する必要があります。アカウントマネージャーのメールを必ず提供してください。
+コンタクト管理に関する Zendesk US Government のチケットについては、すべてのサポートコンタクトの関連付けは Salesforce アカウントとの同期によって行われます。そのため、ここで私たちが支援することはできません。リクエスターに対して、新しいメールでアカウントマネージャーに連絡するよう指示する必要があります。その際、必ずアカウントマネージャーのメールアドレスを提供してください。
 
-#### 共有組織リクエスト
+#### 共有 Organization のリクエスト
 
-[Shared Organization セットアップドキュメント](/handbook/security/customer-support-operations/zendesk/organizations/shared-orgs)を参照してください。
+私たちの [Shared Organization setup documentation](/handbook/security/customer-support-operations/zendesk/organizations/shared-orgs) を参照してください。
 
 #### ポータルの問題
 
-これらはサポートポータル内の問題のレポートです。各 Issue は固有のチャレンジを呈する可能性がありますが、ユーザー向けの一般的なトラブルシューティングガイドは以下にあります。
+これらはサポートポータル内の問題の報告です。それぞれの問題には固有の課題が生じる可能性がありますが、ユーザー向けの共通のトラブルシューティングガイドは次の場所にあります。
 
 - [Zendesk Global](https://support.gitlab.com/hc/en-us/articles/11626501035292-Support-Portal-User-Guide#support-portal-troubleshooting)
 - [Zendesk US Government](https://federal-support.gitlab.com/hc/en-us/articles/22616053222292-Support-Portal-User-Guide#support-portal-troubleshooting)
 
-チケットを受け取った時点で、ユーザーがそれらすべてを実施しているかどうかは不明な場合があります。実施していない場合は、まずすべて試すように案内してください。
+チケットを受け取った時点で、ユーザーはそれらすべてを実行済みかもしれませんし、そうでないかもしれません。実行していない場合は、まずそれらすべてを試すよう案内してください。
 
-実施している場合は、送信された詳細を分析して次のステップを決定する必要があります。
+実行済みの場合は、送られてきた詳細を分析して次のステップを判断する必要があります。
 
 #### セカンダリメールの追加リクエスト
 
-時々、顧客がサポートポータルアカウントにセカンダリメールを追加したいという問題を提起します。セカンダリメールは、提出されたチケットを特定のアカウントに紐付けるために使用されますが、サブミッターとして使用されるのはプライマリメールアドレスのみです（つまり通知を受け取るのはこちら）。
+ときどき、顧客がサポートポータルアカウントにセカンダリメールを追加したいという問題を提起することがあります。セカンダリメールは、提出されたチケットを特定のアカウントに紐づけるために使われますが、送信者として使われ（したがって通知を受け取る）のはプライマリメールアドレスのみです。
 
 - GitLab.com ユーザーの場合:
-  - 依頼者のメールアドレスに関連付けられた GitLab.com アカウントには、セカンダリメールが verified としてリストされている必要があります。これは User Lookup アプリで確認できます。GitLab.com アカウントにセカンダリメールを追加するには、[このドキュメント](https://docs.gitlab.com/user/profile/#add-emails-to-your-user-profile)に従ってください
-- セルフマネージドおよび GitLab Dedicated ユーザーの場合:
-  - チケットは、既存のプロファイルに追加したいメールアドレスから提出される必要があります
-  - 顧客はこのセカンダリメールアドレス経由でサポートエンタイトルメントの証明を再度提供する必要があります
-  - 顧客はサポートポータルアカウントのプライマリメールアドレスを CC し、そのメールでチケットに返信し、セカンダリメールアドレスをサポートポータルアカウントに追加する依頼を確認する必要があります
+  - リクエスターのメールアドレスに関連付けられた GitLab.com アカウントで、セカンダリメールが検証済みとして掲載されている必要があります。これは User Lookup app で確認できます。GitLab.com アカウントにセカンダリメールを追加するには、[このドキュメント](https://docs.gitlab.com/user/profile/#add-emails-to-your-user-profile) に従ってもらえます。
+- Self Managed および GitLab Dedicated ユーザーの場合:
+  - チケットは、既存のプロファイルに追加したいメールアドレスから提出する必要があります
+  - 顧客は、このセカンダリメールアドレスを通じて再度サポート資格の証明を提供する必要があります
+  - 顧客は、サポートポータルアカウントのプライマリメールアドレスを CC に入れ、そのメールからチケットに返信して、セカンダリメールアドレスをサポートポータルアカウントに追加するリクエストを確認する必要があります。
 - パートナーの場合:
-  - セルフマネージドおよび GitLab Dedicated ユーザーと同じ手順を使用
+  - Self Managed および GitLab Dedicated ユーザーと同じ手順を使用します
 
-#### 不正なフォームのチケット
+#### 誤ったフォームのチケット
 
-チケットが不正なフォームを使用している場合、エージェントは `General::Forms::Incorrect form used` マクロを使用します。これによりフォームが Support Ops に変更され、チケットがタグ付けされ、内部ノートが残されます。そこから、私たちはチケットをレビューして次のステップを決定することが期待されます。
+チケットが誤ったフォームを使っている場合、エージェントは `General::Forms::Incorrect form used` マクロを使用します。これにより、フォームが Support Ops に変更され、チケットにタグが付き、内部ノートが残されます。そこから、私たちはチケットをレビューして次のステップを判断することが求められます。
 
-ここでの最終目標は、正しいフォームに移動することです。そのパスは多くの要因によって異なりますが、一般的には:
+ここでの最終的な目標は、正しいフォームに移動することです。そこに至る道は数多くの要因に左右されますが、一般的には次のとおりです。
 
-- 「有償のみ」のフォームに移動し、ユーザーが未関連付けの場合:
-  - 組織関連付けのプロセスに従ってユーザーを関連付け
-    - 関連付けできない場合、チケットは移動できない
-  - チケットの `Assignee` の値を `Support Ops`（グループ）に設定
-    - これによりチケットの割り当てが解除されます。送信時に追加された内部ノートで別途指示されない限り、常にこれを行う必要があります
-  - チケットの `Form` の値を新しいフォームに変更
-  - 新しいフォームの可能なすべてのチケットメタデータを記入
-    - チケット上に存在する場合、`Ticket Stage` フィールドを `FRT` に設定
-  - 以下のタグを削除:
+- 「有料のみ」のフォームに移動し、ユーザーが関連付けられていない場合:
+  - Organization association のプロセスに従ってユーザーを関連付けます
+    - 関連付けができない場合、チケットを移動できません
+  - チケットの `Assignee` の値を `Support Ops`（グループ）に設定します
+    - これによりチケットの割り当てが解除されます。私たちに送られてきた際に追加された内部ノートで別途指示がない限り、常にこれを行うべきです
+  - チケットの `Form` の値を新しいフォームに変更します
+  - 新しいフォームについて、可能なすべてのチケットメタデータを記入します
+    - チケットに `Ticket Stage` フィールドがある場合は、`FRT` に設定します
+  - 次のタグを削除します。
     - `base_weight_set`
-  - チケットを送信時と _同じ状態_ で送信することを確認
-- 「有償のみ」のフォームに移動し、ユーザーが関連付け済みの場合:
-  - チケットの `Assignee` の値を `Support Ops`（グループ）に設定
-    - これによりチケットの割り当てが解除されます。送信時に追加された内部ノートで別途指示されない限り、常にこれを行う必要があります
-  - チケットの `Form` の値を新しいフォームに変更
-  - 新しいフォームの可能なすべてのチケットメタデータを記入
-    - チケット上に存在する場合、`Ticket Stage` フィールドを `FRT` に設定
-  - チケットを送信時と _同じ状態_ で送信することを確認
-- 誰でも利用可能なフォームに移動する場合:
-  - チケットの `Assignee` の値を `Support Ops`（グループ）に設定
-    - これによりチケットの割り当てが解除されます。送信時に追加された内部ノートで別途指示されない限り、常にこれを行う必要があります
-  - チケットの `Form` の値を新しいフォームに変更
-  - 新しいフォームの可能なすべてのチケットメタデータを記入
-    - チケット上に存在する場合、`Ticket Stage` フィールドを `FRT` に設定
-  - チケットを送信時と _同じ状態_ で送信することを確認
+  - チケットを、私たちに送られてきたときと _同じ状態_ で送信するようにしてください
+- 「有料のみ」のフォームに移動し、ユーザーが関連付けられている場合:
+  - チケットの `Assignee` の値を `Support Ops`（グループ）に設定します
+    - これによりチケットの割り当てが解除されます。私たちに送られてきた際に追加された内部ノートで別途指示がない限り、常にこれを行うべきです
+  - チケットの `Form` の値を新しいフォームに変更します
+  - 新しいフォームについて、可能なすべてのチケットメタデータを記入します
+    - チケットに `Ticket Stage` フィールドがある場合は、`FRT` に設定します
+  - チケットを、私たちに送られてきたときと _同じ状態_ で送信するようにしてください
+- 誰でも利用できるフォームに移動する場合:
+  - チケットの `Assignee` の値を `Support Ops`（グループ）に設定します
+    - これによりチケットの割り当てが解除されます。私たちに送られてきた際に追加された内部ノートで別途指示がない限り、常にこれを行うべきです
+  - チケットの `Form` の値を新しいフォームに変更します
+  - 新しいフォームについて、可能なすべてのチケットメタデータを記入します
+    - チケットに `Ticket Stage` フィールドがある場合は、`FRT` に設定します
+  - チケットを、私たちに送られてきたときと _同じ状態_ で送信するようにしてください
 
-##### 特殊フォームの注意事項
+##### フォームに関する特別な注意
 
 - チケットを `2FA Removal` フォームに移動する場合
-  - 削除リクエストが依頼者と異なるユーザーのものである場合、依頼者は対象ユーザーのメールアドレスを **必ず** 提供する必要があります。提供していない場合、依頼者がその情報を提供する必要がある旨の内部ノートを残してください。その後、代わりにチケットを `SaaS Accounts` フォームに移動します。
+  - 削除リクエストがリクエスターとは異なるユーザーに対するものである場合、リクエスターは対象ユーザーのメールアドレスを **必ず** 提供する必要があります。提供していない場合は、リクエスターがその情報を提供する必要がある旨の内部ノートを残してください。その後、チケットを代わりに `SaaS Accounts` フォームに移動します。
 - チケットを `L&R` フォームに移動する場合
-  - L&R フォームにチケットを移動する際、最初から正しいサブチームに振り分けられるようにする必要があります。これを行うには、`BPO Ticket` チェックボックス（チケットメタデータの最下部）がチェックされていることを確認します。これを行わないと、チケットルーティングで問題が発生する可能性があります。
+  - チケットを L&R フォームに移動する際は、最初に正しいサブチームにルーティングされるようにする必要があります。これを行うには、（チケットメタデータの一番下にある）`BPO Ticket` チェックボックスがチェックされていることを確認します。これを怠ると、チケットのルーティングで問題が発生する可能性があります。
 - チケットを `Billing` フォームに移動する場合
-  - チケットの `Billing/AR Team` 属性が入力されていることを確認する必要があります。使用する値が不明な場合は、`Billing` に設定してください
+  - チケットの `Billing/AR Team` 属性が入力されていることを確認する必要があります。どの値を使うか不明な場合は、`Billing` に設定します
 
-#### 悪意のあるユーザーへの対処
+#### 悪意のあるユーザーへの対応
 
-{{% alert title="危険" color="danger" %}}
+{{% alert title="Danger" color="danger" %}}
 
-- 悪意のあるユーザーへの対処には極めて慎重に実行してください。疑わしい場合はセキュリティチームに助けを求めることをためらわないでください。妥協を引き起こすよりも、助けを求める方が **常に** 良いです。
+- 悪意のあるユーザーへの対応には細心の注意を払ってください。疑わしい場合は、ためらわずに私たちのセキュリティチームに助けを求めてください。侵害を引き起こすよりも、助けを求めるほうが **常に** 良いです。
 
 {{% /alert %}}
 
-潜在的に悪意のあるアクション（ハッキング、フィッシング、不正使用など）を含むチケットが発生した場合、常に真剣に扱う必要があります。
+潜在的な悪意のある行為（ハッキング、フィッシング、不正利用など）を含むチケットが発生した場合、私たちは常にそれを真剣に受け止める必要があります。
 
 徹底的な調査の結果、悪意があると判断された場合は、[ユーザーを BAN します](/handbook/security/customer-support-operations/zendesk/users/end-users#banning-an-end-user)。
 
-疑わしい場合は、自分のマネージャー、Customer Support Operations Fullstack Engineer、および/または GitLab セキュリティチームに問題をエスカレーションしてください。
+疑わしい場合は、その件をマネージャー、Customer Support Operations Fullstack Engineer、および／または GitLab Security チームにエスカレーションしてください。
 
 ## よくある問題とトラブルシューティング
 
-これは必要に応じて項目が追加されていく、生きたセクションです。
+これは生きたセクションであり、必要に応じて項目が追加されます。

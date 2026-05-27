@@ -3,11 +3,11 @@ title: 'チケットプロセッサ'
 description: 'Zendesk のチケットプロセッサに関するドキュメント'
 date: 2025-12-26
 upstream_path: /handbook/security/customer-support-operations/zendesk/tickets/processor/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 154fb2bd6436508aa2d90583cc235d5fe28b1705
+translated_at: "2026-05-27T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-04-01T00:16:11-05:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、Zendesk のチケットプロセッサ（特定のトリガーに基づいてチケットに対するカスタムアクションを実行する自動化システム）について説明します。利用可能なプロセッサタイプ、およびプロセッサ項目の作成、変更、削除方法をドキュメント化します。
@@ -25,299 +25,299 @@ lastmod: "2026-04-01T00:16:11-05:00"
 
 ### チケットプロセッサとは
 
-チケットプロセッサは、CI/CD パイプライントリガーを介してアクティブ化される、gitlab.com に保存しているスクリプトのグループです。チケット上で各種カスタムアクションを実行できます。
+チケットプロセッサは、CI/CD パイプラインのトリガーを介して起動される、私たちが gitlab.com に保存しているスクリプト群です。チケットに対してさまざまなカスタムアクションを実行できます。
 
-### Zendesk Global プロセッサ項目
+### Zendesk Global のプロセッサ項目
 
-#### 2FA Removal
+#### 2FA の削除
 
 <sup>[gitlab-com/support/support-team-meta#6663](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6663) で導入</sup>
 
-これはリクエスト自体をチェックして適格性ステータスを決定します。決定結果に応じて、チケットにタグを追加します（対応する Zendesk トリガーが発火します）。
+これはリクエスト自体をチェックして適格性のステータスを判定します。判定結果に応じて、チケットにタグを追加します（対応する Zendesk トリガーが発火します）。
 
-- リクエストが依頼者の 2FA を削除するものである場合:
-  - ユーザーがリクエストに対するサポートエンタイトルメントを持っている場合、タグ `2fa_challenge_questions` が追加されます（プロセス終了）
-  - ユーザーがリクエストに対するサポートエンタイトルメントを持たない場合、タグ `2fa_user_not_entitled` が追加されます（プロセス終了）
-- リクエストが他のユーザーの 2FA を削除するものである場合:
-  - 以下の基準をチェック
-    - 依頼者はリクエストに対するサポートエンタイトルメントを持っているか?
-    - 依頼者のメールのドメインが対象者のメールのドメインと完全に一致するか?
-    - 依頼者は gitlab.com アカウントを持っているか?
-    - 対象者は gitlab.com アカウントを持っているか?
-    - 依頼者はトップレベルの有償ネームスペースの `Owner` か?
-    - 対象者はトップレベルの有償ネームスペース下のメンバーか?
-  - すべてのチェックを通過した場合、タグ `2fa_snippet_verification` が追加されます（プロセス終了）
-  - いずれかのチェックに失敗した場合、タグ `2fa_owner_not_entitled` が追加されます（プロセス終了）
+- リクエスト元自身の 2FA を削除するリクエストの場合:
+  - ユーザーがそのリクエストのサポート利用資格を持っている場合、タグ `2fa_challenge_questions` が追加されます（そしてプロセスは終了します）
+  - ユーザーがそのリクエストのサポート利用資格を持っていない場合、タグ `2fa_user_not_entitled` が追加されます（そしてプロセスは終了します）
+- 別のユーザーの 2FA を削除するリクエストの場合:
+  - 以下の条件をチェックします
+    - リクエスト元はそのリクエストのサポート利用資格を持っているか?
+    - リクエスト元のメールアドレスのドメインが、対象ユーザーのメールアドレスのドメインと完全に一致しているか?
+    - リクエスト元は gitlab.com アカウントを持っているか?
+    - 対象ユーザーは gitlab.com アカウントを持っているか?
+    - リクエスト元はトップレベルの有料 namespace の `Owner` であるか?
+    - 対象ユーザーはそのトップレベルの有料 namespace 配下のメンバーであるか?
+  - すべてのチェックに合格した場合、タグ `2fa_snippet_verification` が追加されます（そしてプロセスは終了します）
+  - いずれかのチェックに失敗した場合、タグ `2fa_owner_not_entitled` が追加されます（そしてプロセスは終了します）
 
-#### Account blocked
+#### アカウントのブロック
 
 <sup>[gitlab-com/support/support-ops/zendesk-global/trigger!264](https://gitlab.com/gitlab-com/support/support-ops/zendesk-global/triggers/-/merge_requests/264) で導入</sup>
 
-これは gitlab.com ユーザーのアカウントステータスをチェックします。ステータスに応じて、異なるアクションが発生する可能性があります。
+これは gitlab.com ユーザーのアカウントステータスをチェックします。ステータスに応じて、異なるアクションが発生します。
 
 - ユーザーが存在しない場合...
-  - ユーザーにアカウントが存在しない旨のパブリック返信が送信されます
+  - アカウントが存在しないことを伝える公開返信がユーザーに送信されます
   - `Ticket Stage` の値が `FRT` に設定されます
   - チケットのステータスが `Pending` に設定されます
 - ユーザーがブロックされていない場合...
-  - ユーザーに実際にはアカウントがブロックされていない旨のパブリック返信が送信されます
+  - アカウントが実際にはブロックされていないことを伝える公開返信がユーザーに送信されます
   - `Ticket Stage` の値が `FRT` に設定されます
   - チケットのステータスが `Pending` に設定されます
-- ユーザーが embargo ポリシーによりブロックされている場合...
-  - ユーザーに embargo ポリシーによりブロックされた旨のパブリック返信が送信されます。それを解決するための次のステップも知らされます。
+- ユーザーが禁輸ポリシーによりブロックされている場合...
+  - 禁輸ポリシーによりブロックされたことを伝える公開返信がユーザーに送信されます。あわせて、それを解決するための次のステップも伝えます。
   - `Ticket Stage` の値が `FRT` に設定されます
   - チケットのステータスが `Solved` に設定されます
-- ユーザーがブロックされている（ただし embargo ポリシーによるものではない）場合...
-  - [T&S アカウント復活プロジェクト](https://gitlab.com/gitlab-com/gl-security/security-operations/trust-and-safety/TS_Operations/account-reinstatements)内で Issue が作成されます
-  - 内部返信がチケットに作成され、SE に従うべき次のステップを示します
+- ユーザーがブロックされている（ただし禁輸ポリシーによるものではない）場合...
+  - [T&S アカウント復帰プロジェクト](https://gitlab.com/gitlab-com/gl-security/security-operations/trust-and-safety/TS_Operations/account-reinstatements) 内に Issue が作成されます
+  - 次に従うべきステップを SE に示す内部返信がチケットに追加されます
 
-#### ASE update {#ase-update}
-
-<sup>[gitlab-com/gl-security/corp/cust-support-ops/issue-tracker#623](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/623) で導入</sup>
-
-これは組織への Assigned Support Engineer（ASE）の追加または削除を処理します（`bin/ase_update` スクリプトを使用）。
-
-スクリプトは以下のように動作します。
-
-- 組織が存在する場合:
-  - ASE 追加/変更で、ユーザー ID が有効な場合:
-    - 組織の `assigned_se` 属性をユーザーの ID を使用するように変更
-    - チケットにタスク完了のコメント（チケットをクローズ）
-  - ASE 削除の場合:
-    - 組織の `assigned_se` 属性を空の値に変更
-    - チケットにタスク完了のコメント（チケットをクローズ）
-  - ASE 追加で、提供されたユーザー ID が無効な場合、その旨を依頼者に伝えるコメントをチケットに追加（チケットをクローズ）
-- 組織が存在しない場合、その旨を依頼者に伝えるコメントをチケットに追加（チケットをクローズ）
-
-#### Collaboration IDs {#collaboration-ids}
+#### ASE の更新
 
 <sup>[gitlab-com/gl-security/corp/cust-support-ops/issue-tracker#623](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/623) で導入</sup>
 
-これは組織へのコラボレーションプロジェクト ID の追加または削除を処理します（`bin/collab_ids` スクリプトを使用）。
+これは（`bin/ase_update` スクリプトを使用して）組織への Assigned Support Engineer (ASE) の追加または削除を処理します。
 
-スクリプトは以下のように動作します。
+このスクリプトは次のように動作します。
 
 - 組織が存在する場合:
-  - コラボレーションプロジェクト追加/変更の場合:
-    - 組織の `am_project_id` 属性をプロジェクトの ID を使用するように変更
-    - チケットにタスク完了のコメント（チケットをクローズ）
-  - コラボレーションプロジェクト削除の場合:
-    - 組織の `am_project_id` 属性を空の値に変更
-    - チケットにタスク完了のコメント（チケットをクローズ）
-- 組織が存在しない場合、その旨を依頼者に伝えるコメントをチケットに追加（チケットをクローズ）
+  - ASE の追加／変更で、ユーザー ID が有効な場合:
+    - 組織の `assigned_se` 属性をそのユーザーの ID を使うように変更します
+    - タスクが完了したことを伝えるコメントをチケットに追加します（そしてチケットをクローズします）
+  - ASE の削除の場合:
+    - 組織の `assigned_se` 属性を空の値に変更します
+    - タスクが完了したことを伝えるコメントをチケットに追加します（そしてチケットをクローズします）
+  - ASE の追加で、指定されたユーザー ID が無効な場合、その旨をリクエスト元に伝えるコメントをチケットに追加します（そしてチケットをクローズします）
+- 組織が存在しない場合、その旨をリクエスト元に伝えるコメントをチケットに追加します（そしてチケットをクローズします）
 
-#### Create macro {#create-macro}
+#### Collaboration ID
+
+<sup>[gitlab-com/gl-security/corp/cust-support-ops/issue-tracker#623](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/623) で導入</sup>
+
+これは（`bin/collab_ids` スクリプトを使用して）組織へのコラボレーションプロジェクト ID の追加または削除を処理します。
+
+このスクリプトは次のように動作します。
+
+- 組織が存在する場合:
+  - コラボレーションプロジェクトの追加／変更の場合:
+    - 組織の `am_project_id` 属性をそのプロジェクトの ID を使うように変更します
+    - タスクが完了したことを伝えるコメントをチケットに追加します（そしてチケットをクローズします）
+  - コラボレーションプロジェクトの削除の場合:
+    - 組織の `am_project_id` 属性を空の値に変更します
+    - タスクが完了したことを伝えるコメントをチケットに追加します（そしてチケットをクローズします）
+- 組織が存在しない場合、その旨をリクエスト元に伝えるコメントをチケットに追加します（そしてチケットをクローズします）
+
+#### マクロの作成
 
 <sup>[gitlab-com/gl-security/corp/cust-support-ops/issue-tracker#705](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/705) で導入</sup>
 
-これは Zendesk インスタンス向けの[シンプルマクロ](../macros/#simple-vs-advanced-macros)の追加を処理します（`bin/create_macro` スクリプトを使用）。
+これは（`bin/create_macro` スクリプトを使用して）Zendesk インスタンスへの [シンプルなマクロ](../macros/#simple-vs-advanced-macros) の追加を処理します。
 
-スクリプトは以下のように動作します。
+このスクリプトは次のように動作します。
 
-- マクロがコメントを作成するものである場合、既存のマネージドコンテンツファイルが存在するかチェックします（存在しない場合はマネージドコンテンツファイルを作成）
-- マクロリポジトリに YAML ファイルを作成（これにより Zendesk 同期がトリガーされ、マクロが作成されます）
-- チケットにタスク完了の確認コメントを追加（チケットをクローズ）
+- マクロがコメントを作成するものである場合、既存の管理対象コンテンツファイルが存在するかをチェックします（存在しない場合は管理対象コンテンツファイルを作成します）
+- マクロ用リポジトリに YAML ファイルを作成します（これにより Zendesk の同期がトリガーされ、マクロが作成されます）
+- タスクが完了したことを確認するコメントをチケットに追加します（そしてチケットをクローズします）。
 
-#### Create on behalf of
+#### 代理でのチケット作成
 
 <sup>[gitlab-com/gl-security/corp/cust-support-ops/issue-tracker#706](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/706) で導入</sup>
 
-これは顧客、見込み顧客などの代わりにチケットを作成するリクエストを処理します（`bin/create_on_behalf` スクリプトを使用）。
+これは（`bin/create_on_behalf` スクリプトを使用して）顧客や見込み顧客などの代理でチケットを作成するリクエストを処理します。
 
-スクリプトは以下のように動作します。
+このスクリプトは次のように動作します。
 
-- リクエストの情報を読み取り、ユーザーの代わりに新しいチケットを作成します（フォーム `Support Internal Request` を使用）
-- チケットにタスク完了の確認コメントを追加（チケットをクローズ）
+- リクエストの情報を読み取り、（`Support Internal Request` フォームを使用して）ユーザーの代理で新しいチケットを作成します
+- 元の内部リクエストチケットを、新しく作成されたエンドユーザーチケットへ（内部コメントとして）マージし、内部リクエストチケットの添付ファイルが新しく作成されたエンドユーザーチケットに添付されるようにします
 
-#### Email Suppressions
+#### メール送信抑制 (Email Suppressions)
 
 <sup>[gitlab-com/support/support-ops/zendesk-global/trigger!264](https://gitlab.com/gitlab-com/support/support-ops/zendesk-global/triggers/-/merge_requests/264) で導入</sup>
 
-これは Mailgun 内でメール抑制が存在するかをチェックします。チェック結果に応じて、異なるアクションが発生する可能性があります。
+これは Mailgun 内にメール送信抑制が存在するかをチェックします。チェック結果に応じて、異なるアクションが発生します。
 
-- 抑制が存在する場合...
-  - Mailgun で見つかった抑制が削除されます
-  - 内部返信がチケットに作成され、抑制が見つかって削除された旨と、その抑制のコード、エラー、タイムスタンプを含めます
-  - ユーザーに抑制が見つかって削除された旨と、ユーザーが取るべき次のステップを伝えるパブリック返信が送信されます
+- 送信抑制が存在する場合...
+  - Mailgun 内で見つかった送信抑制が削除されます
+  - 送信抑制が見つかり削除されたことを伝える内部返信がチケットに追加されます。これには当該送信抑制のコード、エラー、タイムスタンプが含まれます
+  - 送信抑制が見つかって削除されたこと、およびユーザーが取るべき次のステップを伝える公開返信がユーザーに送信されます。
   - チケットのステータスが `Solved` に設定されます
-- 抑制が存在しない場合...
-  - ユーザーに抑制が見つからなかった旨と、取れる次のステップを伝えるパブリック返信が送信されます。それを解決するための次のステップも知らされます。
+- 送信抑制が存在しない場合...
+  - 送信抑制が見つからなかったこと、および取れる次のステップを伝える公開返信がユーザーに送信されます。あわせて、それを解決するための次のステップも伝えます。
   - `Ticket Stage` の値が `FRT` に設定されます
   - チケットのステータスが `Pending` に設定されます
 
-#### Link Tagger {#link-tagger}
+#### Link Tagger
 
-<sup>Zendesk Global へは [gitlab-com/support/support-ops/support-ops-project#998](https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/998) で、Zendesk US Government へは [gitlab-com/gl-security/corp/cust-support-ops/issue-tracker#841](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/work_items/841) で導入</sup>
+<sup>Zendesk Global へは [gitlab-com/support/support-ops/support-ops-project#998](https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/998)、Zendesk US Government へは [gitlab-com/gl-security/corp/cust-support-ops/issue-tracker#841](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/work_items/841) で導入</sup>
 
-これは渡されたコメント（パブリックでエージェントによって作成されたもの）を、チケット上にタグ付けしたい各種項目についてチェックします。現在の項目の種類（およびそれに基づいて追加されるタグ）は以下のとおりです。
+これは渡されたコメント（公開かつエージェントが作成したもの）について、チケットにタグ付けしたいさまざまな種類の項目をチェックします。現在の項目の種類（とそれに基づいて追加されるタグ）は次のとおりです。
 
-- gitlab.com Issue リンクを含む
-  - `gitlab_issue_link` タグが追加
-  - `CUSTOMPATH_issues_IID` タグが追加（Global のみ）
-    - `CUSTOMPATH` はプロジェクトのスラッグ、`IID` は Issue ID
-    - 例: プロジェクト jcolyer/most_amazing_project_ever の Issue 5 へのリンクの場合: `jcolyer_most_amazing_project_ever_issues_5`
+- gitlab.com の Issue リンクを含む
+  - `gitlab_issue_link` タグが追加されます
+  - `CUSTOMPATH_issues_IID` タグが追加されます（Global のみ）
+    - `CUSTOMPATH` はプロジェクトのスラッグ、`IID` は Issue ID です
+    - 例: プロジェクト jcolyer/most_amazing_project_ever の Issue 5 へのリンクは次のようになります: `jcolyer_most_amazing_project_ever_issues_5`
   - `issue~CUSTOMPATH_IID`
-    - `CUSTOMPATH` はプロジェクトのスラッグ、`IID` は Issue ID
-    - 例: プロジェクト jcolyer/most_amazing_project_ever の Issue 5 へのリンクの場合: `issue~jcolyer_most_amazing_project_ever_issues_5`
+    - `CUSTOMPATH` はプロジェクトのスラッグ、`IID` は Issue ID です
+    - 例: プロジェクト jcolyer/most_amazing_project_ever の Issue 5 へのリンクは次のようになります: `issue~jcolyer_most_amazing_project_ever_issues_5`
   - `issue_PROJECTID_IID`（Global のみ）
-    - `PROJECTID` はプロジェクトの ID、`IID` は Issue ID
-    - 例: プロジェクト jcolyer/most_amazing_project_ever（プロジェクト ID 123）の Issue 5 へのリンクの場合: `issue_123_5`
-- gitlab.com マージリクエストリンクを含む
-  - `gitlab_merge_request_link` タグが追加
-  - `CUSTOM_PATH_merge_requests_IID` タグが追加（Global のみ）
-    - `CUSTOMPATH` はプロジェクトのスラッグ、`IID` はマージリクエスト ID
-    - 例: プロジェクト jcolyer/most_amazing_project_ever のマージリクエスト 27 へのリンクの場合: `jcolyer_most_amazing_project_ever_merge_requests_27`
+    - `PROJECTID` はプロジェクトの ID、`IID` は Issue ID です
+    - 例: プロジェクト jcolyer/most_amazing_project_ever（プロジェクト ID 123）の Issue 5 へのリンクは次のようになります: `issue_123_5`
+- gitlab.com のマージリクエストリンクを含む
+  - `gitlab_merge_request_link` タグが追加されます
+  - `CUSTOM_PATH_merge_requests_IID` タグが追加されます（Global のみ）
+    - `CUSTOMPATH` はプロジェクトのスラッグ、`IID` はマージリクエスト ID です
+    - 例: プロジェクト jcolyer/most_amazing_project_ever のマージリクエスト 27 へのリンクは次のようになります: `jcolyer_most_amazing_project_ever_merge_requests_27`
   - `mergerequest~CUSTOMPATH_IID`
-    - `CUSTOMPATH` はプロジェクトのスラッグ、`IID` は Issue ID
-    - 例: プロジェクト jcolyer/most_amazing_project_ever のマージリクエスト 27 へのリンクの場合: `mergerequest~jcolyer_most_amazing_project_ever_27`
+    - `CUSTOMPATH` はプロジェクトのスラッグ、`IID` は Issue ID です
+    - 例: プロジェクト jcolyer/most_amazing_project_ever のマージリクエスト 27 へのリンクは次のようになります: `mergerequest~jcolyer_most_amazing_project_ever_27`
   - `mergerequest_PROJECTID_IID`（Global のみ）
-    - `PROJECTID` はプロジェクトの ID、`IID` はマージリクエスト ID
-    - 例: プロジェクト jcolyer/most_amazing_project_ever（プロジェクト ID 123）のマージリクエスト 27 へのリンクの場合: `mergerequest_123_27`
-- gitlab.com epic リンクを含む
-  - `gitlab_epic_link` タグが追加
-  - `CUSTOMPATH_epic_IID` タグが追加（Global のみ）
-    - `CUSTOMPATH` はプロジェクトのスラッグ、`IID` は epic ID
-    - 例: プロジェクト jcolyer/most_amazing_project_ever の epic 10 へのリンクの場合: `jcolyer_most_amazing_project_ever_epic_10`
+    - `PROJECTID` はプロジェクトの ID、`IID` はマージリクエスト ID です
+    - 例: プロジェクト jcolyer/most_amazing_project_ever（プロジェクト ID 123）のマージリクエスト 27 へのリンクは次のようになります: `mergerequest_123_27`
+- gitlab.com のエピックリンクを含む
+  - `gitlab_epic_link` タグが追加されます
+  - `CUSTOMPATH_epic_IID` タグが追加されます（Global のみ）
+    - `CUSTOMPATH` はプロジェクトのスラッグ、`IID` はエピック ID です
+    - 例: プロジェクト jcolyer/most_amazing_project_ever のエピック 10 へのリンクは次のようになります: `jcolyer_most_amazing_project_ever_epic_10`
   - `epic~CUSTOMPATH_IID`
-    - `CUSTOMPATH` はプロジェクトのスラッグ、`IID` は epic ID
-    - 例: プロジェクト jcolyer/most_amazing_project_ever の epic 10 へのリンクの場合: `epic~jcolyer_most_amazing_project_ever_10`
+    - `CUSTOMPATH` はプロジェクトのスラッグ、`IID` はエピック ID です
+    - 例: プロジェクト jcolyer/most_amazing_project_ever のエピック 10 へのリンクは次のようになります: `epic~jcolyer_most_amazing_project_ever_10`
   - `epic_PROJECTID_IID`（Global のみ）
-    - `PROJECTID` はプロジェクトの ID、`IID` は epic ID
-    - 例: プロジェクト jcolyer/most_amazing_project_ever（プロジェクト ID 123）の epic 10 へのリンクの場合: `epic_123_10`
-- docs.gitlab.com リンクを含む
-  - `docs_link` タグが追加
-- handbook.gitlab.com リンクを含む
-  - `hb_link` タグが追加
-- KB 記事リンクを含む
-  - `kb_link` タグが追加
+    - `PROJECTID` はプロジェクトの ID、`IID` はエピック ID です
+    - 例: プロジェクト jcolyer/most_amazing_project_ever（プロジェクト ID 123）のエピック 10 へのリンクは次のようになります: `epic_123_10`
+- docs.gitlab.com のリンクを含む
+  - `docs_link` タグが追加されます
+- handbook.gitlab.com のリンクを含む
+  - `hb_link` タグが追加されます
+- KB 記事のリンクを含む
+  - `kb_link` タグが追加されます
 - エージェントが通話を提案したことを示すテキストを含む
-  - `agent_offered_call` タグが追加
-  - 使用される検索ターム:
+  - `agent_offered_call` タグが追加されます
+  - 使用される検索語:
     - `calendly.com`
     - `gitlab.zoom.us`
     - `gitlabmtgs.webex.com`
     - `teams.microsoft.com`
 
-#### Namespace availability
+#### Namespace の利用可能性
 
 <sup>[gitlab-com/gl-security/corp/cust-support-ops/issue-tracker#578](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/578) で導入</sup>
 
-これはネームスペースが利用可能かどうかをチェックします（`bin/namespace_availability` スクリプト経由）。本質的には、[Namesquatting](#namesquatting) プロセスのより簡略化された（顧客には見えない）バージョンです。
+これは（`bin/namespace_availability` スクリプトを介して）namespace が利用可能かどうかのチェックを処理します。本質的には、これは [Namesquatting](#namesquatting) プロセスの、より簡易な（かつ顧客には見えない）バージョンです。
 
-スクリプトは以下のように動作します。
+このスクリプトは次のように動作します。
 
-- ネームスペースが存在するかチェック
-  - 存在しない場合、その旨をコメントに追加（チケットをクローズ）し、プロセスを停止
-- ネームスペースが有償プランを使用しているかチェック
-  - 使用している場合、ネームスペースが利用不可能な旨をコメントに追加（チケットをクローズ）し、プロセスを停止
-- ネームスペースのタイプをチェック
-  - `user` ネームスペースの場合:
-    - ユーザーが confirmed で 90 日未満前に作成されているかチェック
-      - そうである場合、_利用可能かもしれない_ 旨をコメントに追加（チケットをクローズ）し、プロセスを停止
-    - 最後のサインインが 2 年以内かチェック
-      - そうである場合、ネームスペースが利用不可能な旨をコメントに追加（チケットをクローズ）し、プロセスを停止
-    - その他のすべての場合、_利用可能かもしれない_ 旨をコメントに追加（チケットをクローズ）し、プロセスを停止
-  - `group` ネームスペースの場合:
-    - グループに 2 年以内に更新されたプロジェクトがあるかチェック
-      - そうである場合、_利用可能かもしれない_ 旨をコメントに追加（チケットをクローズ）し、プロセスを停止
-    - その他のすべての場合、_利用可能かもしれない_ 旨をコメントに追加（チケットをクローズ）し、プロセスを停止
+- namespace が存在するかをチェックします
+  - 存在しない場合、その旨を伝えるコメントをチケットに追加し（そしてチケットをクローズし）、プロセスを停止します
+- namespace が有料プランを使用しているかをチェックします
+  - 使用している場合、namespace は利用できない旨を伝えるコメントをチケットに追加し（そしてチケットをクローズし）、プロセスを停止します
+- namespace の種類をチェックします
+  - `user` namespace の場合:
+    - ユーザーが確認済みで、作成されてから 90 日未満かどうかをチェックします
+      - そうである場合、利用可能 _かもしれない_ 旨を伝えるコメントをチケットに追加し（そしてチケットをクローズし）、プロセスを停止します
+    - 最後のサインインが過去 2 年以内かどうかをチェックします
+      - そうである場合、namespace は利用できない旨を伝えるコメントをチケットに追加し（そしてチケットをクローズし）、プロセスを停止します
+    - それ以外のすべての場合、利用可能 _かもしれない_ 旨を伝えるコメントをチケットに追加し（そしてチケットをクローズし）、プロセスを停止します
+  - `group` namespace の場合:
+    - そのグループ配下に過去 2 年以内に更新されたプロジェクトがあるかをチェックします
+      - ある場合、利用可能 _かもしれない_ 旨を伝えるコメントをチケットに追加し（そしてチケットをクローズし）、プロセスを停止します
+    - それ以外のすべての場合、利用可能 _かもしれない_ 旨を伝えるコメントをチケットに追加し（そしてチケットをクローズし）、プロセスを停止します
 
-#### Namesquatting {#namesquatting}
+#### Namesquatting
 
 <sup>[gitlab-com/support/support-ops/zendesk-global/trigger!264](https://gitlab.com/gitlab-com/support/support-ops/zendesk-global/triggers/-/merge_requests/264) で導入</sup>
 
-これは指定されたネームスペースが、私たちの各種基準に基づいて解放適格かどうかをチェックします。チェック結果が、どのアクションが発生するかを決定します。
+これは、与えられた namespace が私たちのさまざまな基準に基づいて解放対象として適格かどうかをチェックします。チェック結果によって、発生するアクションが決まります。
 
-- 依頼者がフリーユーザーの場合...
-  - これらのリクエストは有償顧客のみが対象である旨のパブリック返信がユーザーに送信されます
+- リクエスト元が無料ユーザーの場合...
+  - これらのリクエストは有料の顧客のみが対象である旨を伝える公開返信がユーザーに送信されます。
   - `Ticket Stage` の値が `FRT` に設定されます
-- ネームスペースが無効な場合...
-  - 該当のネームスペースを特定できなかった旨のパブリック返信がユーザーに送信されます
+- namespace が無効な場合...
+  - 該当する namespace が見つからなかった旨を伝える公開返信がユーザーに送信されます。
   - `Ticket Stage` の値が `FRT` に設定されます
-- ネームスペースが解放適格でない場合...
-  - 現時点でネームスペースが解放適格でない旨のパブリック返信がユーザーに送信されます
+- namespace が適格でない場合...
+  - その namespace は現時点では解放の対象ではない旨を伝える公開返信がユーザーに送信されます。
   - `Ticket Stage` の値が `FRT` に設定されます
-- ネームスペースが _適格かもしれない_ 場合...
-  - ネームスペースの現在のオーナーに連絡を取った後にのみ解放できる旨の内部返信がチケットに作成されます。見つかったオーナーのメールアドレスがリストされます。
+- namespace が適格 _かもしれない_ 場合...
+  - その namespace は現在の所有者に連絡した後でなければ解放できない旨を伝える内部返信がチケットに追加されます。見つかった所有者のメールアドレスが列挙されます。
   - `Ticket Stage` の値が `FRT` に設定されます
-- ネームスペースが **適格** な場合...
-  - ネームスペースが即時解放適格である旨の内部返信がチケットに作成されます
+- namespace が適格 **である** 場合...
+  - その namespace は即時の解放対象として適格である旨を伝える内部返信がチケットに追加されます。
   - `Ticket Stage` の値が `FRT` に設定されます
 
 #### Organization Notes
 
 <sup>[gitlab-com/support/support-ops/zendesk-global/trigger!264](https://gitlab.com/gitlab-com/support/support-ops/zendesk-global/triggers/-/merge_requests/264) で導入</sup>
 
-これは、チケットの依頼者がメンバーである組織から導出される情報に基づいて、チケットに内部ノートを追加します。これは 3 つの異なる内部ノートを作成する可能性があります。
+これは、チケットのリクエスト元が所属する組織から導き出した情報に基づいて、チケットに内部メモを追加します。これは最大 3 種類の異なる内部メモを作成する可能性があります。
 
-- 組織ノートから導出されるもので、以下を含むことができます...
-  - 組織がエスカレーション状態にあるというメッセージ
-  - パートナートラブルシューティング情報
-  - 一般的な組織情報
-  - 組織下で提出された最近の緊急チケット
+- 組織のメモから導かれるもので、以下を含むことがあります...
+  - 組織がエスカレーション状態にあることについてのメッセージ
+  - パートナーのトラブルシューティング情報
+  - 組織の一般的な情報
+  - その組織で最近起票された緊急チケット
   - 組織がコラボレーションプロジェクトを持っているか
   - 組織が連絡先管理プロジェクトを使用しているか
-  - サポートオペレーションノート（Zendesk の組織自体の Notes/Details フィールドから導出）
-  - サポートノート（[Zendesk Global Organizations プロジェクト](https://gitlab.com/gitlab-com/support/zendesk-global/organizations)から導出）
-- 組織のサポートエンタイトルメント情報を詳述するもの
-  - 組織が期限切れまたは優先見込み顧客の場合のみ
-- 組織が GitLab Dedicated であるもの
+  - Support Operations のメモ（Zendesk 内の組織そのものにある Notes/Details フィールドから導出）
+  - Support のメモ（[Zendesk Global Organizations プロジェクト](https://gitlab.com/gitlab-com/support/zendesk-global/organizations) から導出）
+- 組織のサポート利用資格情報を詳しく示すもの
+  - 組織が期限切れ、または優先見込み顧客の場合のみ
+- 組織が GitLab Dedicated であることについてのもの
 
-サポートノートファイルが存在しない場合、これは組織用に 1 つも作成します。
+Support のメモファイルが存在しない場合、これはその組織用のメモファイルも作成します。
 
 #### STAR
 
 <sup>[gitlab-com/support/support-ops/support-ops-project#957](https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/957) で導入</sup>
 
-これは、チケット上にチケットタグ `star_submitted` を追加します。
+これはチケットタグ `star_submitted` をチケットに追加します。
 
-### Zendesk US Government プロセッサ項目
+### Zendesk US Government のプロセッサ項目
 
-以下の項目は Zendesk Global と同じように動作します。
+以下の項目は Zendesk Global と同一に動作します。
 
-- [ASE update](#ase-update)
-- [Collaboration IDs](#collaboration-ids)
-- [Create macro](#create-macro)
+- [ASE の更新](#ase-update)
+- [Collaboration ID](#collaboration-ids)
+- [マクロの作成](#create-macro)
 - [Link tagger](#link-tagger)
 
 #### Organization Notes
 
 <sup>[gitlab-support-readiness/zendesk-us-government/triggers@c573f55c](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/triggers/-/commit/c573f55c1f4bc241c49567e56f409e7d593692cd) で導入</sup>
 
-これは、チケットの依頼者がメンバーである組織から導出される情報に基づいて、チケットに内部ノートを追加します。これは 3 つの異なる内部ノートを作成する可能性があります。
+これは、チケットのリクエスト元が所属する組織から導き出した情報に基づいて、チケットに内部メモを追加します。これは最大 3 種類の異なる内部メモを作成する可能性があります。
 
-- 組織ノートから導出されるもので、以下を含むことができます...
-  - 一般的な組織情報
-  - 組織下で提出された最近の緊急チケット
+- 組織のメモから導かれるもので、以下を含むことがあります...
+  - 組織の一般的な情報
+  - その組織で最近起票された緊急チケット
   - 組織がコラボレーションプロジェクトを持っているか
-  - サポートオペレーションノート（Zendesk の組織自体の Notes/Details フィールドから導出）
-- 組織のサポートエンタイトルメントおよび猶予期間情報を詳述するもの
+  - Support Operations のメモ（Zendesk 内の組織そのものにある Notes/Details フィールドから導出）
+- 組織のサポート利用資格情報と猶予期間情報を詳しく示すもの
   - 組織が期限切れの場合のみ
-- 組織が GitLab Dedicated であるもの
+- 組織が GitLab Dedicated であることについてのもの
 
 ## 管理者タスク
 
-### 新しいプロセッサ項目を作成する
+### 新しいプロセッサ項目の作成
 
 {{% alert title="警告" color="warning" %}}
 
-- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください。存在しない場合は、まず作成して標準プロセスを通してから対応してください。
+- これは、対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し（そして対応に着手する前に標準プロセスを通してから）行ってください。
 
 {{% /alert %}}
 
-チケットプロセッサに項目を追加するには、複数ステップのプロセスを実行する必要があります。
+チケットプロセッサに項目を追加するには、複数のステップからなるプロセスを実行する必要があります。
 
-1. チケットプロセッサリポジトリへ MR を作成し、以下を行います:
-   - 項目に関連するスクリプトを作成
-   - `.gitlab-ci.yml` ファイルから項目のエントリを追加
-   - `README.md` ファイルから項目のエントリを追加
-   - `README.md` ファイルに表示されているファイルツリーを更新
-1. 項目用のパイプライントリガートークンを作成（ウェブフックで使用）
-1. 対応する Zendesk インスタンスに、項目用の[ウェブフックを作成](/handbook/security/customer-support-operations/zendesk/webhooks/#creating-a-webhook)
-1. 対応する Zendesk インスタンスのトリガーリポジトリへ MR を作成し、以下を行います:
-   - プロセッサ項目に関連するトリガーを作成
+1. チケットプロセッサのリポジトリへ MR を作成します。この MR では:
+   - その項目に紐づくスクリプトを作成します
+   - その項目のエントリを `.gitlab-ci.yml` ファイルに追加します
+   - その項目のエントリを `README.md` ファイルに追加します
+   - `README.md` ファイルに示されているファイルツリーを更新します
+1. その項目用のパイプライントリガートークンを作成します（webhook で使用します）
+1. 対応する Zendesk インスタンスで、その項目用の [webhook を作成します](/handbook/security/customer-support-operations/zendesk/webhooks/#creating-a-webhook)
+1. 対応する Zendesk インスタンスのトリガーリポジトリへ MR を作成します。この MR では:
+   - そのプロセッサ項目に紐づくトリガーを作成します
 
-そのため、全体的な流れは以下のようになります。
+そのため、全体のフローは次のようになります。
 
 ```mermaid
 graph TD;
@@ -337,43 +337,43 @@ graph TD;
   G(Triggers are updated in Zendesk)
 ```
 
-#### サンドボックスを考慮する
+#### サンドボックスに関する考慮事項
 
-Zendesk のサンドボックスでテストを行う必要があるため、ステップ 4 に取り組む前にステップ 1〜3 を完了する必要があります。
+Zendesk のサンドボックスでテストを行う必要があるため、ステップ 4 に着手する前にステップ 1 〜 3 を完了しておく必要があります。
 
-### チケットプロセッサを変更する
-
-{{% alert title="警告" color="warning" %}}
-
-- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください。存在しない場合は、まず作成して標準プロセスを通してから対応してください。
-
-{{% /alert %}}
-
-プロセッサ項目を編集するには、同期リポジトリで MR を作成する必要があります。具体的な変更内容は依頼自体によって異なります。
-
-ピアによるレビューと承認後、MR をマージできます。次のデプロイ時に、Zendesk に同期されます。
-
-### プロセッサ項目を削除する
+### チケットプロセッサの変更
 
 {{% alert title="警告" color="warning" %}}
 
-- これは対応する依頼 Issue（Feature Request、Administrative、Bug など）が存在する場合にのみ実行してください。存在しない場合は、まず作成して標準プロセスを通してから対応してください。
+- これは、対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し（そして対応に着手する前に標準プロセスを通してから）行ってください。
 
 {{% /alert %}}
 
-チケットプロセッサから項目を削除するには、複数ステップのプロセスを実行する必要があります。
+プロセッサ項目を編集するには、同期リポジトリで MR を作成する必要があります。具体的にどのような変更を加えるかは、リクエスト自体によって決まります。
 
-1. チケットプロセッサリポジトリへ MR を作成し、以下を行います:
-   - 項目に関連するスクリプトを削除
-   - `.gitlab-ci.yml` ファイルから項目のエントリを削除
-   - `README.md` ファイルから項目のエントリを削除
-   - `README.md` ファイルに表示されているファイルツリーを更新
-1. 対応する Zendesk インスタンスのトリガーリポジトリへ MR を作成し、以下を行います:
-   - プロセッサ項目に関連するトリガーを非アクティブ化
-1. 対応する Zendesk インスタンスから、項目に関連する[ウェブフックを非アクティブ化](/handbook/security/customer-support-operations/zendesk/webhooks/#deactivating-a-webhook)
-1. 項目に関連するパイプライントリガートークンを失効（ウェブフックで使用）
+ピアが MR をレビューして承認したら、MR をマージできます。次回のデプロイが行われると、Zendesk に同期されます。
 
-プロセッサは `Ad-hoc` デプロイであるため、MR スケジューリングを使用する必要があります。そのため、全体的な流れは以下のようになります。
+### プロセッサ項目の削除
+
+{{% alert title="警告" color="warning" %}}
+
+- これは、対応するリクエスト Issue（Feature Request、Administrative、Bug など）がある場合にのみ行ってください。存在しない場合は、まず作成し（そして対応に着手する前に標準プロセスを通してから）行ってください。
+
+{{% /alert %}}
+
+チケットプロセッサから項目を削除するには、複数のステップからなるプロセスを実行する必要があります。
+
+1. チケットプロセッサのリポジトリへ MR を作成します。この MR では:
+   - その項目に紐づくスクリプトを削除します
+   - その項目のエントリを `.gitlab-ci.yml` ファイルから削除します
+   - その項目のエントリを `README.md` ファイルから削除します
+   - `README.md` ファイルに示されているファイルツリーを更新します
+1. 対応する Zendesk インスタンスのトリガーリポジトリへ MR を作成します。この MR では:
+   - そのプロセッサ項目に紐づくトリガーを無効化します
+1. 対応する Zendesk インスタンスから、その項目に紐づく [webhook を無効化します](/handbook/security/customer-support-operations/zendesk/webhooks/#deactivating-a-webhook)
+1. その項目に紐づくパイプライントリガートークン（webhook で使用しているもの）を無効化します
+
+プロセッサは `Ad-hoc` デプロイであるため、MR スケジューリングを使用する必要があります。そのため、全体のフローは次のようになります。
 
 ```mermaid
 graph TD;
@@ -401,4 +401,4 @@ graph TD;
 
 ## よくある問題とトラブルシューティング
 
-これは必要に応じて項目が追加されていく、生きたセクションです。
+これは生きたセクションであり、必要に応じて項目が追加されていきます。
