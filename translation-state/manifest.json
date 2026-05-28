@@ -5466,11 +5466,11 @@
     },
     "content/handbook/engineering/_index.md": {
       "path": "content/handbook/engineering/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "804083ef783ecd119785d0b5e8a5c0d24b1a62b19f74a2f9b2fe5c75c9013a76",
-      "upstream_committed_at": "2026-03-12T10:48:57-04:00"
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "59789b62e8cf864147c77fc9d4f0f2ca91d7ab311f9ef87df63cea6092314581",
+      "upstream_committed_at": "2026-05-26T15:49:36-06:00"
     },
     "content/handbook/engineering/ai/_index.md": {
       "path": "content/handbook/engineering/ai/_index.md",
@@ -14002,11 +14002,11 @@
     },
     "content/handbook/engineering/readmes/simon-street.md": {
       "path": "content/handbook/engineering/readmes/simon-street.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "9c0c36d1b5f9d8d75db0563ff43944d71ce9c6abc2388c232b9280385786f105",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
+      "input_hash": "a7c4038f549eb27e5511d8790d2f0a43d2b8beeefa0f67d6a407d86b8efe388e",
+      "upstream_committed_at": "2026-05-26T14:42:31+01:00"
     },
     "content/handbook/engineering/readmes/thong-kuah.md": {
       "path": "content/handbook/engineering/readmes/thong-kuah.md",
@@ -19202,11 +19202,11 @@
     },
     "content/handbook/marketing/field-marketing/_index.md": {
       "path": "content/handbook/marketing/field-marketing/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T12:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "20ac5593012af62f66b2858611d5ca69a13febbe38734c8e1babff4065dc4160",
-      "upstream_committed_at": "2026-05-22T18:48:36+00:00"
+      "input_hash": "16308aa93d88ea3818277b6891ec0efbcf09ae7784a5a5a99b86b13040c38806",
+      "upstream_committed_at": "2026-05-26T23:46:59+00:00"
     },
     "content/handbook/marketing/field-marketing/field-marketing-epics.md": {
       "path": "content/handbook/marketing/field-marketing/field-marketing-epics.md",
@@ -19754,11 +19754,11 @@
     },
     "content/handbook/marketing/marketing-operations/marketo/_index.md": {
       "path": "content/handbook/marketing/marketing-operations/marketo/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T12:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "bed303124e3017f0e6583a504e934a51500cd15adf0f3639081efaf09ac6e401",
-      "upstream_committed_at": "2026-05-22T14:48:30-06:00"
+      "input_hash": "e05611aa119f074548cb56789c49ba3db1db25f4870ae2fcc7165f3954831f31",
+      "upstream_committed_at": "2026-05-26T16:05:01-06:00"
     },
     "content/handbook/marketing/marketing-operations/marketo/interesting-moments.md": {
       "path": "content/handbook/marketing/marketing-operations/marketo/interesting-moments.md",
@@ -20394,11 +20394,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md",
-      "upstream_sha": "9bd896709582cfb6bccdb0d721755db917231bc6",
-      "translated_at": "2026-05-07T13:21:11Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "b40813e0220d03848af8efc7137507dc530044849e838a5d28e78d4dad21af92",
-      "upstream_committed_at": "2026-04-09T20:14:47+00:00"
+      "input_hash": "311430f486fbcfbc1e7ed2cc889ebf0c917592a7eaa22cf6b6a5eeb8c9626938",
+      "upstream_committed_at": "2026-05-27T18:15:53-05:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md",
@@ -20418,11 +20418,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md",
-      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
-      "translated_at": "2026-05-07T22:45:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a3faf6b3b3b46763c7e6fcd2082675e79408d9db484f7b1020c5ab882cf176c0",
-      "upstream_committed_at": "2026-03-06T10:39:11-06:00"
+      "input_hash": "a8f5586172ec42b9f9f270f2a832fd7d5d0b93facc4e9490535f117f4e6f70eb",
+      "upstream_committed_at": "2026-05-28T01:13:19-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md",
@@ -22490,11 +22490,11 @@
     },
     "content/handbook/total-rewards/stock-options.md": {
       "path": "content/handbook/total-rewards/stock-options.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ce62cd564e06a522d5f64eb11e534f4d378ff62f36b6c724ea7f084be1b6d606",
-      "upstream_committed_at": "2026-04-09T20:14:47+00:00"
+      "input_hash": "242316c2bb2ae58ab9aaa28f0b4ff6d05efe9b47181e6c04828a4a38ac37b3da",
+      "upstream_committed_at": "2026-05-26T09:52:37-07:00"
     },
     "content/handbook/upstream-studios/_index.md": {
       "path": "content/handbook/upstream-studios/_index.md",
@@ -26594,11 +26594,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/tickets/processor.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/tickets/processor.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "fa1d22938c4120484e17f65187ba1cada93572f2f5fc57e3ee9f17ad3dd75396",
-      "upstream_committed_at": "2026-04-01T00:16:11-05:00"
+      "input_hash": "f942b43cfc5bb81ba355a538c87ac39035a4df4ce14931eb1545689473fe3041",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/tickets/round-robin.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/tickets/round-robin.md",
@@ -30346,11 +30346,11 @@
     },
     "content/handbook/product/ux/technical-writing/_index.md": {
       "path": "content/handbook/product/ux/technical-writing/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T12:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "610af769326907d3f7f8a6068dc09658a242d436c4f77f6d632c3378652672e4",
-      "upstream_committed_at": "2026-05-20T09:32:02-07:00"
+      "input_hash": "a8582e9f0087c9b0fac0403451bc4af71566ef0fa4330940af8e099b3bd520d8",
+      "upstream_committed_at": "2026-05-26T16:33:15+01:00"
     },
     "content/handbook/product/ux/technical-writing/feature-prioritization.md": {
       "path": "content/handbook/product/ux/technical-writing/feature-prioritization.md",
@@ -32650,11 +32650,11 @@
     },
     "content/handbook/marketing/sales-development/_index.md": {
       "path": "content/handbook/marketing/sales-development/_index.md",
-      "upstream_sha": "7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc",
-      "translated_at": "2026-05-25T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "02a78783a636538e2d1f2e195ce72e4aff4e2fa37843703874087bcafc875ac6",
-      "upstream_committed_at": "2026-05-25T15:25:51+00:00"
+      "input_hash": "8a858a3cbe8de831bda4452ffa2c33aebb3df3436d95fcf3422bfca56e88886a",
+      "upstream_committed_at": "2026-05-26T10:53:38+01:00"
     },
     "content/handbook/marketing/sales-development/tanuki-tech.md": {
       "path": "content/handbook/marketing/sales-development/tanuki-tech.md",
@@ -32802,11 +32802,11 @@
     },
     "content/handbook/engineering/data-engineering/database-excellence/help.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/help.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "72ee2d745a3023aaeb91f161281eb1ec21c40f6a02b82dfbdf3ed30e099d325d",
-      "upstream_committed_at": "2026-05-07T17:41:36+00:00"
+      "input_hash": "32908935a767bebd33c1283d338e83817a75e9a976124d9d2065f182c28e6fba",
+      "upstream_committed_at": "2026-05-26T09:14:20-05:00"
     },
     "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/communication.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/communication.md",

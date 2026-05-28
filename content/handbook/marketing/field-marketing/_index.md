@@ -2,12 +2,12 @@
 title: "Regional Marketing"
 description: "GitLab における Regional Marketing の役割は、対面およびバーチャルのインタラクションを通じて、地域レベルでのマーケティングメッセージとパイプライン構築を支援するために、セールスと密接に連携することです。"
 upstream_path: /handbook/marketing/field-marketing/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T12:00:00Z"
+upstream_sha: 78b430bc8e2a925f210024d512218ce1d8d42106
+translated_at: "2026-05-28T00:00:00Z"
 translator: claude
 stale: false
 model: claude-opus-4-7
-lastmod: "2026-05-22T18:48:36+00:00"
+lastmod: "2026-05-26T23:46:59+00:00"
 ---
 
 ## Regional Marketing のビジョン
@@ -226,7 +226,7 @@ Author ロールアクセスをリクエストする AR を提出する前に、
 以下の SLA に基づいてタイムラインを計画してください。これらの SLA には、祝祭日のための追加時間も含める必要があることに留意してください。
 
 - **Contract Requests:** FMC が ZIP に登録するまでに 3 営業日
-- **Plan to WIP** - FMM が GitLab イベント Issue の `Operational Checklist` を完了した後、FMC が完了するまでに 3 営業日
+- **Plan to WIP** - GitLab イベント Issue で `Operations Checklist` が完了し、FMC にメンションが届いてから 3 営業日
 - **Marketing Operations Requests** - [7 営業日](/handbook/marketing/marketing-operations/campaign-operations/#slas)
 
 ### 重要な GitLab アクセス手順
@@ -284,8 +284,9 @@ Author ロールアクセスをリクエストする AR を提出する前に、
 - 次に FMC は [Duo Event Prompt](https://docs.google.com/document/d/1VOXauJXxpROQhN-NFkjKZyQZRGwSshqWj82sozBFuTs/edit?tab=t.0#heading=h.w6ft9elusetn) の指示に従う
   - 注: 各作成パーツでは、Duo が作業を開始するために、FMC が Duo のサマリーをレビューして `approve` をクリックする必要があります。
 - Duo によってすべての関連するエピックと Issue が作成されたら:
-  - FMC は各 Issue／エピックをレビューし、適切な担当者と期日を追加する（手順は各 Issue テンプレートに記載）
+  - FMC は各 Issue をレビューし、適切な担当者と期日を追加する（手順は各 Issue テンプレートに記載）
   - FMC はイベントタイプに必要のないエピックテンプレートの詳細を削除する。例 - イベントが `owned` の場合、FMC はテンプレート内の `conference` キャンペーンタイプに関するセクションを削除できます。
+  - FMC はプログラムトラッキングとコピー作成の Issue を完了する
 - 次に FMC は GitLab Issue で `mktg-status::plan` ラベルを `mktg-status::wip` に変更し、イベントが WIP に移行されたことを FMM にメンションする
 
 #### GitLab Issue のクローズ
