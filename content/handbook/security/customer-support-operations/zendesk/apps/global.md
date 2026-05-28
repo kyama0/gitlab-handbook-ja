@@ -1,13 +1,12 @@
 ---
 title: 'グローバルアプリ'
 description: 'Zendesk グローバルアプリに関するドキュメント'
-date: 2026-04-03
 upstream_path: /handbook/security/customer-support-operations/zendesk/apps/global/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 78b430bc8e2a925f210024d512218ce1d8d42106
+translated_at: "2026-05-28T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-04-26T18:09:15-05:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、グローバル Zendesk インスタンスで現在使用されている Zendesk アプリについて説明します。
@@ -122,24 +121,6 @@ Glean を通じて次が可能です:
   - Support APAC
   - Support EMEA
 - このアプリは Glean によって開発され、[Zendesk Marketplace](https://www.zendesk.com/marketplace/apps/support/922191/glean/) で利用可能です。
-
-{{% /alert %}}
-
-## Mechanizer
-
-<sup>*[support-team-meta#4208](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/4208) で導入*</sup>
-
-このアプリは Mechanizer を Zendesk に統合します。
-
-{{% alert title="Technical Details" color="primary" %}}
-
-- 場所: チケットサイドバー
-- グループによる制限:
-  - BPO
-  - Support AMER
-  - Support APAC
-  - Support EMEA
-- このアプリは社内で開発されており、[Mechanizer プロジェクト](https://gitlab.com/gitlab-support-readiness/zendesk-global/apps/mechanizer) で見られます。
 
 {{% /alert %}}
 

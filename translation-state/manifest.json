@@ -3746,11 +3746,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/_index.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/_index.md",
-      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
-      "translated_at": "2026-05-22T21:47:45Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "27fde9d3a0b41134c74f92b7dba09ab05ab80cb06a4917a6aaf50abe1d6b596c",
-      "upstream_committed_at": "2026-05-22T13:16:45-06:00"
+      "input_hash": "b20c25ae24ca61ef4dd5fb322f673b5225d93bcf349c75382062337d438782a0",
+      "upstream_committed_at": "2026-05-26T12:05:59-06:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduo.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/devsecopswithduo.md",
@@ -8554,11 +8554,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/organization-data-migration/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ff204eeb6c004fe21e8cdd6eaba09ec63b16840150dd41020b2f0ee60540932a",
-      "upstream_committed_at": "2026-05-01T16:14:47-04:00"
+      "input_hash": "aa2fb04e9dda49f9f5e41e335b007c3ff0438a562c41deec309c11d49b510826",
+      "upstream_committed_at": "2026-05-27T17:43:35+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/organization-data-migration/cohort0.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/cohort0.md",
@@ -12402,11 +12402,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/_index.md",
-      "upstream_sha": "6a459a3ca969603754a3b5133342edb804d3012c",
-      "translated_at": "2026-04-28T17:23:43Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "5a168028ee04e7403c8cab75455283bc0021f1b0d76409a3817136d225a537a9",
-      "upstream_committed_at": "2026-04-08T16:23:20+01:00"
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4e37952c1a4c0de706d2c4693b99337b32dbce43935b99496d36d89a7897fbf9",
+      "upstream_committed_at": "2026-05-01T16:52:35+01:00"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/development-tooling/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/development-tooling/_index.md",
@@ -18514,11 +18514,11 @@
     },
     "content/handbook/marketing/developer-relations/engineering/community-contributors-workflows.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/community-contributors-workflows.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T12:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "5bd154eb0178b174b5444f6b436c7549b5487a70bd05adbe85d5f06853a8f62a",
-      "upstream_committed_at": "2026-05-06T15:09:05+01:00"
+      "input_hash": "fe3ad3306d7a0a71081986776bb7e43241b06213124b0fa6a3aab04f1c6e59cc",
+      "upstream_committed_at": "2026-05-28T11:59:30+01:00"
     },
     "content/handbook/marketing/developer-relations/engineering/community-hackathons.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/community-hackathons.md",
@@ -26330,11 +26330,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/apps/global.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/apps/global.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "4d7b088a369ee5a86c852e2009db8fc106af8a20e6388e41e73792a568ef6fd2",
-      "upstream_committed_at": "2026-04-26T18:09:15-05:00"
+      "input_hash": "065f9e64fab76127b9d0c806b7146e100460c2559dd6c5609b777126e2daa05c",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/apps/us-government.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/apps/us-government.md",
@@ -29650,11 +29650,11 @@
     },
     "content/handbook/sales/field-operations/channel-operations/_index.md": {
       "path": "content/handbook/sales/field-operations/channel-operations/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-12T12:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "51c276bae4e057b1fe16dd51b92e9250ec8affc7d0cad1f53d1ad0af20498788",
-      "upstream_committed_at": "2026-05-06T08:50:17-07:00"
+      "input_hash": "b22f2d040e5d0ae7e68649c50c04f6a8daa5d3ebcb6d45c1cf802f099c4ab72c",
+      "upstream_committed_at": "2026-05-27T18:55:51-07:00"
     },
     "content/handbook/sales/field-operations/channel-operations/partner-faq.md": {
       "path": "content/handbook/sales/field-operations/channel-operations/partner-faq.md",
@@ -32274,11 +32274,11 @@
     },
     "content/handbook/people-group/offboarding/_index.md": {
       "path": "content/handbook/people-group/offboarding/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "3684819dc5994b1020ef7052f924444ab182f75c4c5584a75c89ef0c5a6a391a",
-      "upstream_committed_at": "2026-04-08T21:39:38+02:00"
+      "input_hash": "42bbe7bec4bf3265220170a8248fc34301a0235ccb569faa6d99b5a4b956a2e2",
+      "upstream_committed_at": "2026-05-26T09:28:42-04:00"
     },
     "content/handbook/people-group/offboarding/faq.md": {
       "path": "content/handbook/people-group/offboarding/faq.md",
