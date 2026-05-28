@@ -1,13 +1,12 @@
 ---
 title: '満足度'
 description: 'Zendesk の満足度に関するドキュメント'
-date: 2025-12-23
 upstream_path: /handbook/security/customer-support-operations/zendesk/satisfaction/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T22:41:14Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-03-09T15:41:25-05:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、GitLab における満足度トラッキングについて説明します。Zendesk 組み込みの満足度調査から、私たちのカスタム CES (Customer Effort Score) 実装への移行についても含みます。

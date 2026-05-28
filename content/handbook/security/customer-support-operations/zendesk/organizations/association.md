@@ -1,13 +1,12 @@
 ---
 title: '組織関連付け'
 description: 'Zendesk 組織関連付けに関するドキュメント'
-date: 2025-12-30
 upstream_path: /handbook/security/customer-support-operations/zendesk/organizations/association/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T22:41:14Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、GitLab における組織関連付けの実施方法について説明します。

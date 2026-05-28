@@ -1,13 +1,12 @@
 ---
 title: 'チケット'
 description: 'Zendesk のチケットに関するドキュメント'
-date: 2025-12-26
 upstream_path: /handbook/security/customer-support-operations/zendesk/tickets/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-03-17T10:57:10-05:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、チケットステータス、システム設定、サポートオペレーションの一般的なワークフローを含む、Zendesk のチケット管理について説明します。

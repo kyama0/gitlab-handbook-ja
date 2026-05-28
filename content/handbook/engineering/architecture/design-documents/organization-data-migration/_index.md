@@ -10,11 +10,11 @@ owning-stage: "~devops::tenant scale"
 participating-stages: ["~devops::data stores", "~devops::systems"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization-data-migration/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-05-01T16:14:47-04:00"
+lastmod: "2026-05-27T17:43:35+12:00"
 ---
 
 {{< engineering/design-document-header >}}
@@ -66,13 +66,13 @@ Cells は、GitLab.com を水平方向にスケールするという主要な目
 
 コホートの命名規約: 本番コホートに進む前に正常に完了する必要があるため、テストコホートに対しては 0 を使用します。後続のコホート (A、B、C など) は、順次的な依存関係なく並列に実行できることを示すために文字を使用します。
 
-| コホート ID | コホート名 | コホートサイズの目安 | 目的 | 簡略化された適格性基準 | 終了条件への影響 | 詳細 |
-|-----------|-------------|------------------------|---------|--------------------------------|------------------------|----|
-| Cohort 0 | テストコホート | 最大 100 組織 | テスト名前空間を使用して、転送および移行プロセスをエンドツーエンドでテスト | | なし | [Migration Plan](cohort0.md) |
-| Cohort A | 非アクティブな Free ユーザーのサブセット | 最大 5,000 組織 | Protocells を実際の本番利用の一部として確立し、移行プロセスを洗練させる。 | - 非アクティブなルート名前空間<br/><br/>- Free プラン<br/><br/>- プライベートのみ | データベースサイズへのわずかな影響 | |
-| Cohort B | アクティブなオプトイン Beta | 最大 1000 組織 | 実際の日次アクティブユーザーで経験を積む。 | - オプトイン / ガイド付き<br/><br/>- アクティブなルート名前空間<br/><br/>- Free または有料<br/><br/>- プライベートのみ | WAL、LWLock、データベースサイズへのわずかな影響 | [ADR-001: Criteria](decisions/001_cohort_b_criteria.md) |
-| Cohort C | 上位 1000 のオプトイン | 最大 300 組織 | レガシーセルを軽減する | - オプトイン / ガイド付き<br/><br/>- データベース時間別の上位 1000 ルート名前空間<br/><br/>- プライベートのみ<br/><br/>- 前提条件: 機能パリティ | WAL 飽和度およびデータベースサイズの少なくとも 20% `[1]` の減少 | |
-| Cohort D | アクティブなロングテールのオプトイン | 約 10,000 組織 | レガシーセルを軽減する | - オプトイン / セルフサービス<br/><br/>- アクティブなルート名前空間<br/><br/>- プライベートのみ<br/><br/>- 前提条件: 機能パリティ<br/><br/>- Free または有料 | WAL 飽和度およびデータベースサイズの少なくとも 10% `[2]` の減少 | |
+| コホート ID | コホート名 | コホートサイズの目安 | 目的 | 終了条件への影響 | 詳細 |
+|-----------|-------------|------------------------|---------|------------------------|----|
+| Cohort 0 | テストコホート | 最大 100 組織 | テスト名前空間を使用して、転送および移行プロセスをエンドツーエンドでテスト | なし | [Migration Plan](cohort0.md) |
+| Cohort A | 非アクティブな Free ユーザーのサブセット | 最大 5,000 組織 | Protocells を実際の本番利用の一部として確立し、移行プロセスを洗練させる。 | データベースサイズへのわずかな影響 | [Criteria](cohorts/criteria_cohort_a.md) |
+| Cohort B | アクティブなオプトイン Beta | 最大 1000 組織 | 実際の日次アクティブユーザーで経験を積む。 | WAL、LWLock、データベースサイズへのわずかな影響 | [Criteria](cohorts/criteria_cohort_b.md) |
+| Cohort C | 上位 1000 のオプトイン | 最大 300 組織 | レガシーセルを軽減する | WAL 飽和度およびデータベースサイズの少なくとも 20% `[1]` の減少 | [Criteria](cohorts/criteria_cohort_c.md) |
+| Cohort D | アクティブなロングテールのオプトイン | 約 10,000 組織 | レガシーセルを軽減する | WAL 飽和度およびデータベースサイズの少なくとも 10% `[2]` の減少 | [Criteria](cohorts/criteria_cohort_d.md) |
 
 - `[1]`: 20% という目標は、上位 1000 の名前空間が消費する [データベース時間](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/1616#note_2990334245) 67% の 1/3 から導かれています。
 - `[2]`: 10% という目標は、ロングテールのデータベース時間 33% の 1/3 を移動する可能性から来ています。
@@ -90,5 +90,4 @@ Cells は、GitLab.com を水平方向にスケールするという主要な目
 
 ## 意思決定
 
-1. [ADR-001: Cohort B Criteria](decisions/001_cohort_b_criteria.md) - アクティブなオプトイン Beta コホートの適格性および登録基準
 1. [ADR-002 Rollback strategy for organization data migrations to Protocells](decisions/002_rollback_strategy.md) - 組織データ移行のための切り戻しおよび fix-forward アプローチ

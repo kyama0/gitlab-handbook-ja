@@ -1,13 +1,12 @@
 ---
 title: 'チケットプロセッサ'
 description: 'Zendesk のチケットプロセッサに関するドキュメント'
-date: 2025-12-26
 upstream_path: /handbook/security/customer-support-operations/zendesk/tickets/processor/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-04-01T00:16:11-05:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、Zendesk のチケットプロセッサ（特定のトリガーに基づいてチケットに対するカスタムアクションを実行する自動化システム）について説明します。利用可能なプロセッサタイプ、およびプロセッサ項目の作成、変更、削除方法をドキュメント化します。
@@ -127,7 +126,7 @@ lastmod: "2026-04-01T00:16:11-05:00"
 スクリプトは以下のように動作します。
 
 - リクエストの情報を読み取り、ユーザーの代わりに新しいチケットを作成します（フォーム `Support Internal Request` を使用）
-- チケットにタスク完了の確認コメントを追加（チケットをクローズ）
+- 元の内部リクエストチケットを新しく作成されたエンドユーザーチケットに（内部コメントとして）マージし、内部リクエストチケットの添付ファイルが新しく作成されたエンドユーザーチケットに添付されるようにします
 
 #### Email Suppressions
 

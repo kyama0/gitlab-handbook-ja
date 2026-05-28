@@ -2,11 +2,11 @@
 title: "キャンペーンとプログラム"
 description: "Marketing Operations のキャンペーンと Marketo プログラムの設定・管理"
 upstream_path: /handbook/marketing/marketing-operations/campaigns-and-programs/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T23:00:00Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
-stale: true
-lastmod: "2026-04-27T16:37:34+01:00"
+stale: false
+lastmod: "2026-05-26T13:36:07-06:00"
 ---
 
 > **翻訳について**: このページは原文が大規模 (1603 行) のため、完全な翻訳は今後のイテレーションで対応予定です。現時点では正確性のため [英語の原文](https://handbook.gitlab.com/handbook/marketing/marketing-operations/campaigns-and-programs/) を参照してください。

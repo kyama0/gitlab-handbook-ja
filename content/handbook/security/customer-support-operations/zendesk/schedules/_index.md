@@ -1,13 +1,12 @@
 ---
 title: 'スケジュール'
 description: 'Zendesk スケジュールに関するドキュメント'
-date: 2025-12-26
 upstream_path: /handbook/security/customer-support-operations/zendesk/schedules/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T22:41:14Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-03-01T12:14:46-06:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、GitLab における Zendesk スケジュールの作成、編集、管理方法について説明します。管理者は [管理者向けタスク](#administrator-tasks) セクションを確認してください。
@@ -18,6 +17,7 @@ lastmod: "2026-03-01T12:14:46-06:00"
 - Sync リポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/schedules)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/schedules)
+- `CustSuppOps Zendesk Test Suite Generator` を有効化
 
 {{% /alert %}}
 

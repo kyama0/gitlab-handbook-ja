@@ -6,18 +6,18 @@ creation-date: "2026-04-28"
 authors: [ "@abdwddd" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-15T04:00:00Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-05-15T14:59:04+12:00"
+lastmod: "2026-05-27T17:43:35+12:00"
 ---
 
 ## コンテキスト
 
 Organization をある Cell から別の Cell に移行する際（[Organization データ移行ブループリント](../../organization-data-migration/_index.md)を参照）、ソース Cell から宛先 Cell へデータがコピーされる期間が存在します。データの一貫性を保証するため、ソース Organization はカットオーバーの開始時点で書き込みの受け入れを停止しなければなりません。一方、ユーザーがロックアウトされず、進行中の読み取りトラフィック（clone、pull、ページ閲覧、GraphQL クエリ）が動作し続けるよう、読み取りは引き続き許可する必要があります。
 
-Cohort B の基準（[Organization データ移行 ADR 001](../../organization-data-migration/decisions/001_cohort_b_criteria.md)）では、お客様が「移行中の短時間の読み取り専用ウィンドウ」を許容することを明示的に求めています。現在 GitLab には**インスタンス全体**のメンテナンスモード（[メンテナンスモード管理ガイド](https://gitlab.com/help/administration/maintenance_mode/_index)）しかなく、これは粒度が粗すぎます。ソース Cell 全体を読み取り専用にすると、その Cell を共有している他のすべての Organization もブロックされてしまいます。
+Cohort B の基準（[Cohort B の基準](../../organization-data-migration/cohorts/criteria_cohort_b.md)）では、お客様が「移行中の短時間の読み取り専用ウィンドウ」を許容することを明示的に求めています。現在 GitLab には**インスタンス全体**のメンテナンスモード（[メンテナンスモード管理ガイド](https://gitlab.com/help/administration/maintenance_mode/_index)）しかなく、これは粒度が粗すぎます。ソース Cell 全体を読み取り専用にすると、その Cell を共有している他のすべての Organization もブロックされてしまいます。
 
 私たちが必要とするのは、**単一の Organization** にスコープされた仕組みであり、以下を満たすものです:
 
