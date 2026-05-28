@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリのデータテーブル構成"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-05-21T14:16:24+02:00"
+lastmod: "2026-05-28T10:57:33+01:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -429,6 +429,7 @@ erDiagram
         text gitlab_project_id "nullable, opaque string, limit 255"
         bytea gitlab_git_commit_sha "nullable"
         timestamptz soft_deleted_at "nullable"
+        timestamptz created_at "NOT NULL, DEFAULT NOW()"
     }
 
     container_manifest_relationships {
@@ -451,7 +452,7 @@ erDiagram
 - **container_repositories**: 複数のイメージのコンテナ。各リポジトリは独立したバージョニングを持つ複数のイメージをホストできます。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **container_images**: リポジトリ内の名前付きコンテナイメージ（例: `myapp`、`backend`）を表します。`last_downloaded_at` はイメージが最後にプルされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールでダウンロードベースの保持を評価するために使用されます（[ADR-010](010_data_retention.md)）。`soft_deleted_at` タイムスタンプは、イメージがソフト削除された時を記録し、必要に応じて復元を可能にします。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **container_blobs**: コンテナイメージを構成する個々のコンテンツアドレス可能なレイヤーと構成オブジェクトを格納します。マニフェストとそれを構成するレイヤー（blob）の関係は暗黙的であり、ランタイムでマニフェストコンテンツをパースして決定されるため、データベース外部キーとしてモデル化されません。`soft_deleted_at` タイムスタンプは、blob がソフト削除された時を記録し、必要に応じて復元を可能にします。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
-- **container_manifests**: 特定のイメージバージョンの構成とレイヤーを記述するイメージマニフェストを表します。`size` カラムは、このマニフェストをルートとするマニフェストツリーの合計バイトサイズを保持します: このマニフェスト自体のペイロードと、ここから推移的に到達可能なすべての blob（マニフェストリストや OCI インデックスの子マニフェストを含む）。`gitlab_user_id` は、このマニフェストをプッシュした GitLab ユーザーを記録します。外部キーを持たない nullable な不透明テキスト参照で、[repositories](#repositories) の同等カラムと同じ根拠です — ユーザーレコードはモノリスに存在し、ユーザーハンドルとアバターのレンダリングはコンシューマーの責任で、AR スキーマは ID のみを保存し、`TEXT` はアップストリームのユーザー ID 形式の将来の変更からスキーマを隔離します。`gitlab_project_id` と `gitlab_git_commit_sha` は、その帰属を公開コンテキストの残りで拡張します: `gitlab_project_id` はプッシュ元の GitLab プロジェクト（例: `CI_PROJECT_ID`）で、`gitlab_user_id` と同じモノリス参照の理由から nullable な不透明テキストとして保存されます。`gitlab_git_commit_sha` は公開時の Git コミット（例: `CI_COMMIT_SHA`）で、ハッシュカラムのスキーマ規約に従い nullable な `bytea` として保存されます — 可変長で、SHA-1（20 バイト）と SHA-256（32 バイト）の両方に収まります。これはモノリス参照ではなく公開時の事実なので、外部キーは不要です。CI コンテキストなしでプッシュが届いた場合（例: 開発者のワークステーションからの手動プッシュ）は両方とも NULL になります。`soft_deleted_at` タイムスタンプは、マニフェストがソフト削除された時を記録し、必要に応じて復元を可能にします。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_manifests**: 特定のイメージバージョンの構成とレイヤーを記述するイメージマニフェストを表します。`size` カラムは、このマニフェストをルートとするマニフェストツリーの合計バイトサイズを保持します: このマニフェスト自体のペイロードと、ここから推移的に到達可能なすべての blob（マニフェストリストや OCI インデックスの子マニフェストを含む）。`gitlab_user_id` は、このマニフェストをプッシュした GitLab ユーザーを記録します。外部キーを持たない nullable な不透明テキスト参照で、[repositories](#repositories) の同等カラムと同じ根拠です — ユーザーレコードはモノリスに存在し、ユーザーハンドルとアバターのレンダリングはコンシューマーの責任で、AR スキーマは ID のみを保存し、`TEXT` はアップストリームのユーザー ID 形式の将来の変更からスキーマを隔離します。`gitlab_project_id` と `gitlab_git_commit_sha` は、その帰属を公開コンテキストの残りで拡張します: `gitlab_project_id` はプッシュ元の GitLab プロジェクト（例: `CI_PROJECT_ID`）で、`gitlab_user_id` と同じモノリス参照の理由から nullable な不透明テキストとして保存されます。`gitlab_git_commit_sha` は公開時の Git コミット（例: `CI_COMMIT_SHA`）で、ハッシュカラムのスキーマ規約に従い nullable な `bytea` として保存されます — 可変長で、SHA-1（20 バイト）と SHA-256（32 バイト）の両方に収まります。これはモノリス参照ではなく公開時の事実なので、外部キーは不要です。CI コンテキストなしでプッシュが届いた場合（例: 開発者のワークステーションからの手動プッシュ）は両方とも NULL になります。`soft_deleted_at` タイムスタンプは、マニフェストがソフト削除された時を記録し、必要に応じて復元を可能にします。`created_at` はマニフェストが最初にプッシュされた時を記録します。namespace ごとの時系列順インデックスと組み合わせることで、公開履歴や時間範囲のアーティファクトプロベナンスクエリ（例: 「この namespace に午前 2 時から午前 8 時の間にプッシュされたものは何か？」）を実現します。公開イベント自体は削除によって消去されないため、ソフト削除された行も公開履歴に引き続き表示されます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **container_manifest_relationships**: 親マニフェストが複数の他のマニフェストを参照できる Docker マニフェストリストと OCI インデックス（マルチアーキテクチャイメージなど）を扱います。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **container_tags**: 特定のマニフェストを指す人間可読の名前（例: `latest`、`v1.2.3`）を提供します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **blob_storage_attachments**: 詳細は [Blob storage](#blob-storage) セクションを参照してください。
@@ -463,7 +464,7 @@ erDiagram
 - **`container_repositories`**: `(namespace_id, repository_id)` のユニークインデックス — 親リポジトリ参照で container リポジトリを検索。
 - **`container_images`**: `(namespace_id, container_repository_id, name) WHERE soft_deleted_at IS NULL` のユニークインデックス — イメージ名はリポジトリ内で一意なイメージを識別。重複があると OCI 名ベースの検索が壊れます。部分条件はソフト削除後に同じ名前でイメージを再作成できるようにします。`(namespace_id, container_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `keep_last_downloaded_at` ライフサイクルルール評価をサポート。リポジトリ内のすべてのイメージをスキャンして 1 行ずつフィルタリングするのではなく、有界な範囲スキャンで期限切れのイメージのみを返します。`NULLS FIRST` は、ダウンロードされていないイメージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。
 - **`container_blobs`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — blob ダイジェストはコンテンツアドレス指定。同じイメージ内の同じダイジェストは定義上同じ blob です。部分条件はソフト削除後に同じダイジェストを再プッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントで blob を検索。
-- **`container_manifests`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — マニフェストダイジェストはコンテンツアドレス指定。同じイメージ内の同じダイジェストは定義上同じマニフェストです。部分条件はソフト削除後に同じダイジェストを再プッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでマニフェストを検索。
+- **`container_manifests`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — マニフェストダイジェストはコンテンツアドレス指定。同じイメージ内の同じダイジェストは定義上同じマニフェストです。部分条件はソフト削除後に同じダイジェストを再プッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでマニフェストを検索。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクトプロベナンスクエリを実現します。後でソフト削除された公開イベントも監査証跡に表示されるよう、無条件です（`soft_deleted_at` 述語なし）。
 - **`container_manifest_relationships`**: `(namespace_id, parent_container_manifest_id, child_container_manifest_id)` のユニークインデックス — 重複する親子関係を防ぎ、指定された親マニフェストのすべての子を見つける。`(namespace_id, child_container_manifest_id)` のインデックス — 指定された子マニフェストのすべての親を見つける。`(namespace_id, container_image_id)` のインデックス — 指定されたイメージのすべてのマニフェスト関係を見つける。
 - **`container_tags`**: `(namespace_id, container_image_id, name)` のユニークインデックス — イメージ内で名前によりタグを検索。`(namespace_id, container_manifest_id)` のインデックス — 指定されたマニフェストを指すすべてのタグを見つける。
 
@@ -563,6 +564,7 @@ erDiagram
         bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
         bigint size "NOT NULL, updated as children are cached"
         timestamptz soft_deleted_at "nullable"
+        timestamptz created_at "NOT NULL, DEFAULT NOW()"
     }
 
     container_remote_manifest_relationships {
@@ -587,7 +589,7 @@ erDiagram
 - **container_remote_repositories**: 外部コンテナレジストリを表します。URL、オプションの認証 URL（`auth_url`）、認証情報、キャッシュ TTL（`cache_validity_hours`）を含みます。ヘルスチェックステータスはモニタリングのために追跡されます。`repository_id` を介して親 `repositories` テーブルを参照します。リモートリポジトリはスタンドアロンであるため、同じリモートを使う 2 つの仮想リポジトリは 1 つのキャッシュを共有します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **container_remote_images**: リモートリポジトリ内のキャッシュされたコンテナイメージ。`container_images` をミラーリングします。`last_downloaded_at` はキャッシュされたイメージが最後にプルされた時を記録します。ホット行の競合を回避するため、バッファ／非同期書き込み（`repositories.downloads_count` と同じパターン）で維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます（[ADR-010](010_data_retention.md)）。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **container_remote_blobs**: キャッシュされたレイヤーまたは構成 blob。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
-- **container_remote_manifests**: キャッシュされたイメージマニフェスト。`size` カラムは、このキャッシュが知っているサブツリーのバイトフットプリントを保持します: キャッシュ時のマニフェスト自体のペイロードに加えて、子が到着するたびに各子の `size` を加算します。イメージマニフェストの場合、値はキャッシュ時に完全になります。マニフェストリストと OCI インデックスの場合、子が取得されるにつれて完全なツリーのフットプリントに段階的に収束し、一部の子が決してプルされない場合は部分的なままになる可能性があります。この段階的なセマンティクスは遅延リモートキャッシングを反映しています — `size` を完全に保つためだけに積極的に子を取得することは遅延設計を損ないます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **container_remote_manifests**: キャッシュされたイメージマニフェスト。`size` カラムは、このキャッシュが知っているサブツリーのバイトフットプリントを保持します: キャッシュ時のマニフェスト自体のペイロードに加えて、子が到着するたびに各子の `size` を加算します。イメージマニフェストの場合、値はキャッシュ時に完全になります。マニフェストリストと OCI インデックスの場合、子が取得されるにつれて完全なツリーのフットプリントに段階的に収束し、一部の子が決してプルされない場合は部分的なままになる可能性があります。この段階的なセマンティクスは遅延リモートキャッシングを反映しています — `size` を完全に保つためだけに積極的に子を取得することは遅延設計を損ないます。`created_at` はマニフェストが最初にキャッシュされた時を記録し、ローカルの同等物（[`container_manifests`](#container-repositories)）と同じ公開履歴および時間範囲プロベナンススキャンを実現します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **container_remote_manifest_relationships**: キャッシュされたマルチアーキテクチャマニフェストリストの関係。ローカルと同じ構造。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **container_remote_tags**: キャッシュされたタグからマニフェストへのマッピング。タグは可変ポインタです — キャッシュ再検証時に、タグは新しいマニフェストに再ポイントされる可能性があります。`upstream_checked_at` はタグがアップストリームレジストリに対して最後に検証された時を記録します。`cache_validity_hours` と比較して再検証が必要かどうかを判断します。`upstream_etag` はアップストリームから返された ETag を保存し、条件付きリクエスト（`If-None-Match`）を可能にすることで、タグが同じマニフェストを指している場合に完全なマニフェスト解決を回避します。マニフェストと blob は暗号ハッシュによってコンテンツアドレス指定されるため、鮮度追跡は不要です — 保存されているバイトがダイジェストと一致すれば、コンテンツは正しいことが保証されます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **blob_storage_attachments**: 詳細は [Blob storage](#blob-storage) セクションを参照してください。
@@ -597,7 +599,7 @@ erDiagram
 - **`container_remote_repositories`**: `(namespace_id, repository_id)` のユニークインデックス — 親参照でリモートリポジトリを検索。
 - **`container_remote_images`**: `(namespace_id, container_remote_repository_id, name) WHERE soft_deleted_at IS NULL` のユニークインデックス — 名前でキャッシュされたイメージを検索。部分条件はソフト削除後に同じ名前でイメージを再作成できるようにします。
 - **`container_remote_blobs`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — イメージ内でダイジェストによりキャッシュされた blob を検索。部分条件はソフト削除後に同じダイジェストを再キャッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントで blob を検索。
-- **`container_remote_manifests`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — イメージ内でダイジェストによりキャッシュされたマニフェストを検索。部分条件はソフト削除後に同じダイジェストを再キャッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでマニフェストを検索。
+- **`container_remote_manifests`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — イメージ内でダイジェストによりキャッシュされたマニフェストを検索。部分条件はソフト削除後に同じダイジェストを再キャッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでマニフェストを検索。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、ローカルの [`container_manifests`](#container-repositories) インデックスをミラーリングし、キャッシュ側の公開履歴とプロベナンスをカバーします。ローカルインデックスと同じ監査証跡の理由から無条件です（`soft_deleted_at` 述語なし）。
 - **`container_remote_manifest_relationships`**: `(namespace_id, parent_container_remote_manifest_id, child_container_remote_manifest_id)` のユニークインデックス — 重複する親子関係を防ぐ。`(namespace_id, child_container_remote_manifest_id)` のインデックス — 指定された子マニフェストのすべての親を見つける。`(namespace_id, container_remote_image_id)` のインデックス — 指定されたイメージのすべてのマニフェスト関係を見つける。
 - **`container_remote_tags`**: `(namespace_id, container_remote_image_id, name)` のユニークインデックス — イメージ内で名前によりタグを検索。`(namespace_id, container_remote_manifest_id)` のインデックス — 指定されたマニフェストを指すすべてのタグを見つける。
 
@@ -755,6 +757,7 @@ erDiagram
         text gitlab_project_id "nullable, opaque string, limit 255"
         bytea gitlab_git_commit_sha "nullable"
         timestamptz soft_deleted_at "nullable"
+        timestamptz created_at "NOT NULL, DEFAULT NOW()"
     }
 
     maven_files {
@@ -774,7 +777,7 @@ erDiagram
 
 - **maven_repositories**: 複数のパッケージのコンテナ。各リポジトリは group ID と artifact ID で識別される複数のパッケージをホストできます。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **maven_packages**: [group ID と artifact ID](https://maven.apache.org/pom.html#Maven_Coordinates) で識別される Maven パッケージを表します（例: `com.example:myapp`）。`last_downloaded_at` はパッケージのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`NULL` はパッケージが一度もダウンロードされていないことを意味し、`keep_last_downloaded_at` ライフサイクルルール評価では最古のダウンロード時間として扱われます（つまり、ダウンロードベースの保持で削除対象となります）。`keep_last_downloaded_at` ライフサイクルルールでダウンロードベースの保持を評価するために使用されます（[ADR-010](010_data_retention.md)）。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
-- **maven_versions**: Maven パッケージの個々の [バージョン](https://maven.apache.org/pom.html#Maven_Coordinates) を格納します（例: `1.0.0`、`2.1.3-SNAPSHOT`）。`last_downloaded_at` はバージョンのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。`gitlab_user_id`、`gitlab_project_id`、`gitlab_git_commit_sha` は、このバージョンを公開した GitLab ユーザーと公開の背後にある CI コンテキスト（プロジェクト、コミット）を記録します。[`container_manifests`](#container-repositories) の同等カラムと同じ形と根拠です。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **maven_versions**: Maven パッケージの個々の [バージョン](https://maven.apache.org/pom.html#Maven_Coordinates) を格納します（例: `1.0.0`、`2.1.3-SNAPSHOT`）。`last_downloaded_at` はバージョンのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。`gitlab_user_id`、`gitlab_project_id`、`gitlab_git_commit_sha` は、このバージョンを公開した GitLab ユーザーと公開の背後にある CI コンテキスト（プロジェクト、コミット）を記録します。[`container_manifests`](#container-repositories) の同等カラムと同じ形と根拠です。`created_at` はバージョンが最初に公開された時を記録し、[`container_manifests`](#container-repositories) と同じ公開履歴および時間範囲プロベナンススキャンを実現します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **maven_files**: Maven パッケージに関連付けられた個々のファイルを表します。ファイルは、`maven_version_id` が設定されたバージョン固有のもの（JAR、POM、ソース、Javadoc、チェックサム）か、`maven_version_id` が NULL のパッケージレベルのもの（`maven-metadata.xml` とそのチェックサムなど）のいずれかです。`maven_package_id` は常に設定され、パッケージからそのすべてのファイルへの直接パスを提供します。レジストリがパフォーマンスのボトルネックを改善するために使用する補助ファイルでもありえます。`sha1` と `md5` カラムは、整合性検証のために [Maven プロトコルが要求するチェックサム](https://maven.apache.org/resolver/about-checksums.html) を格納します。Maven クライアントはすべてのアーティファクトに `.sha1` と `.md5` のサイドカーファイルが存在することを期待します。これらのカラムが `blob_storage_blobs` ではなく `maven_files` にあるのは、それらが Maven プロトコル固有の関心事であり、普遍的な blob プロパティではないためです — 他のフォーマット（OCI コンテナ）は SHA256 のみを使用します。ここに保持することで、`blob_storage_blobs` をフォーマット固有のカラムやインデックスのないフォーマット非依存のテーブルとして保ちます。Maven プロトコルが要求するため `sha1` は `NOT NULL` です。Maven 3.9+ で [MD5 チェックサムは非推奨](https://maven.apache.org/resolver/about-checksums.html) になったため `md5` は nullable です。`sha512` は `NOT NULL` です。Maven プロトコルはレジストリが提供できなければならない `.sha512` サイドカーを公開しており、永続化前にバイトがハンドラを流れる際にアップロード中に値を常に計算できるためです。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **blob_storage_attachments**: 詳細は [Blob storage](#blob-storage) セクションを参照してください。
 
@@ -784,7 +787,7 @@ erDiagram
 
 - **`maven_repositories`**: `(namespace_id, repository_id)` のユニークインデックス — 親リポジトリ参照で Maven リポジトリを検索。
 - **`maven_packages`**: `(namespace_id, maven_repository_id, group_id, artifact_id) WHERE soft_deleted_at IS NULL` のユニークインデックス — リポジトリ内で Maven 座標によりパッケージを検索。部分条件はソフト削除後に同じ座標でパッケージを再作成できるようにします。`(namespace_id, maven_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `keep_last_downloaded_at` ライフサイクルルール評価をサポート。リポジトリ内のすべてのパッケージをスキャンして 1 行ずつフィルタリングするのではなく、有界な範囲スキャンで期限切れのパッケージのみを返します。`NULLS FIRST` は、ダウンロードされていないパッケージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。
-- **`maven_versions`**: `(namespace_id, maven_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内で特定のバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, maven_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `maven_packages` と同じ範囲スキャン戦略を使用して、パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルール評価をサポート。
+- **`maven_versions`**: `(namespace_id, maven_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内で特定のバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, maven_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `maven_packages` と同じ範囲スキャン戦略を使用して、パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルール評価をサポート。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクトプロベナンスクエリを実現します。ソフト削除された公開イベントも監査証跡に表示されるよう、無条件です。
 - **`maven_files`**: `(namespace_id, maven_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_version_id IS NOT NULL` のユニークインデックス — バージョン固有のファイル名はバージョン内で一意でなければなりません。部分条件はソフト削除済みの行とパッケージレベルのファイルを除外します。`(namespace_id, maven_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_version_id IS NULL` のユニークインデックス — パッケージレベルのファイル名（`maven-metadata.xml` など）はパッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでファイルを検索。
 
 #### クエリ例
@@ -860,6 +863,7 @@ erDiagram
         text version "NOT NULL, limit 255"
         timestamptz last_downloaded_at "nullable, buffered"
         timestamptz soft_deleted_at "nullable"
+        timestamptz created_at "NOT NULL, DEFAULT NOW()"
     }
 
     maven_remote_files {
@@ -881,7 +885,7 @@ erDiagram
 
 - **maven_remote_repositories**: 外部 Maven リポジトリを表します。URL、認証情報、アーティファクトキャッシュ TTL（`cache_validity_hours`）、`maven-metadata.xml` のようなメタデータレスポンス用の別の TTL（`metadata_cache_validity_hours`）を含みます。ヘルスチェックステータスはモニタリングのために追跡されます。`repository_id` を介して親 `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **maven_remote_packages**: group ID と artifact ID で識別されるキャッシュされた Maven パッケージ。`maven_packages` をミラーリングします。`last_downloaded_at` はパッケージのキャッシュされたファイルのいずれかが最後にダウンロードされた時を記録し、ホット行の競合を回避するためバッファ／非同期書き込みで維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
-- **maven_remote_versions**: Maven パッケージのキャッシュされたバージョン。`maven_versions` をミラーリングします。`last_downloaded_at` はバージョンのキャッシュされたファイルのいずれかが最後にダウンロードされた時を記録し、ホット行の競合を回避するためバッファ／非同期書き込みで維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **maven_remote_versions**: Maven パッケージのキャッシュされたバージョン。`maven_versions` をミラーリングします。`last_downloaded_at` はバージョンのキャッシュされたファイルのいずれかが最後にダウンロードされた時を記録し、ホット行の競合を回避するためバッファ／非同期書き込みで維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます。`created_at` はバージョンが最初にキャッシュされた時を記録し、[`maven_versions`](#maven-repositories) をミラーリングして、キャッシュ側の公開履歴とプロベナンススキャンを実現します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **maven_remote_files**: キャッシュされたファイル（JAR、POM、チェックサム、`maven-metadata.xml`）。nullable な `maven_remote_version_id` はローカルと同じパターンを保持します: バージョン固有のファイルとパッケージレベルのファイル（`maven-metadata.xml` など）。コンテンツがローカルかキャッシュかに関係なく、Maven プロトコルはこれらのチェックサムの提供を要求するため、`sha1` と `md5` は保持されます。`sha512` はパリティのために追加され、ローカル `maven_files` カラム形状をミラーリングします。これにより、Maven Virtual 仕様（S14）が単一のクエリパスでどちらかのバックエンドから `.sha512` サイドカーを提供できるようになります。値は他のチェックサムと一緒にプロキシ書き込みステップ中にキャッシュされたバイトから計算されるため、初日から `NOT NULL` が実現可能です。`upstream_checked_at` はファイルがアップストリームリポジトリに対して最後に検証された時を記録します。アーティファクトファイルでは `cache_validity_hours` と、メタデータファイル（例: `maven-metadata.xml`）では `metadata_cache_validity_hours` と比較して、再検証が必要かどうかを判断します。`upstream_etag` はアップストリームから返された ETag を保存し、条件付きリクエスト（`If-None-Match`）を可能にすることで、変更されていないファイルの再ダウンロードを回避します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **blob_storage_attachments**: 詳細は [Blob storage](#blob-storage) セクションを参照してください。
 
@@ -889,7 +893,7 @@ erDiagram
 
 - **`maven_remote_repositories`**: `(namespace_id, repository_id)` のユニークインデックス — 親参照でリモートリポジトリを検索。
 - **`maven_remote_packages`**: `(namespace_id, maven_remote_repository_id, group_id, artifact_id) WHERE soft_deleted_at IS NULL` のユニークインデックス — Maven 座標でキャッシュされたパッケージを検索。部分条件はソフト削除後に同じ座標でパッケージを再作成できるようにします。
-- **`maven_remote_versions`**: `(namespace_id, maven_remote_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内でキャッシュされたバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。
+- **`maven_remote_versions`**: `(namespace_id, maven_remote_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内でキャッシュされたバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、ローカルの [`maven_versions`](#maven-repositories) インデックスをミラーリングし、キャッシュ側の公開履歴とプロベナンスをカバーします。ローカルインデックスと同じ監査証跡の理由から無条件です（`soft_deleted_at` 述語なし）。
 - **`maven_remote_files`**: `(namespace_id, maven_remote_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NOT NULL` のユニークインデックス — バージョン固有のファイル名はバージョン内で一意でなければなりません。`(namespace_id, maven_remote_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NULL` のユニークインデックス — パッケージレベルのファイル名はパッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでファイルを検索。
 
 #### クエリ例
@@ -1040,6 +1044,8 @@ erDiagram
         bigint npm_repository_id FK "NOT NULL, (npm_repository_id, namespace_id) references npm_repositories(id, namespace_id)"
         text name "NOT NULL, limit 255"
         text scope "nullable, limit 255"
+        integer versions_count "NOT NULL, DEFAULT 0, buffered counter"
+        integer tags_count "NOT NULL, DEFAULT 0, buffered counter"
         timestamptz last_downloaded_at "nullable, buffered"
         timestamptz soft_deleted_at "nullable"
     }
@@ -1055,6 +1061,7 @@ erDiagram
         text gitlab_project_id "nullable, opaque string, limit 255"
         bytea gitlab_git_commit_sha "nullable"
         timestamptz soft_deleted_at "nullable"
+        timestamptz created_at "NOT NULL, DEFAULT NOW()"
     }
 
     npm_tags {
@@ -1079,18 +1086,19 @@ erDiagram
         bigint id PK "DEFAULT nextval('npm_metadata_files_id_seq'), part of composite PK (id, namespace_id)"
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         bigint npm_package_id FK "NOT NULL, (npm_package_id, namespace_id) references npm_packages(id, namespace_id)"
-        smallint kind "NOT NULL, 0=full, 1=dist_tags"
+        smallint kind "NOT NULL, 0=full, 1=dist_tags, 2=abbreviated"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
         bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
+        timestamptz expires_at "NOT NULL"
     }
 ```
 
 - **npm_repositories**: 複数のパッケージのコンテナ。各リポジトリはオプションのスコープを持つ複数のパッケージをホストできます。名前、可視性、フォーマット横断クエリのため `repository_id` を介して親 `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
-- **npm_packages**: npm パッケージを表します。`name` カラムはスコープを含む完全なパッケージ名を保存します（例: `@myorg/mypackage` または `lodash`）。`last_downloaded_at` はパッケージのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
-- **npm_versions**: 埋め込まれた package.json メタデータを持つ npm パッケージの個々のバージョンを格納します。`last_downloaded_at` はバージョンのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。`gitlab_user_id`、`gitlab_project_id`、`gitlab_git_commit_sha` は、このバージョンを公開した GitLab ユーザーと公開の背後にある CI コンテキスト（プロジェクト、コミット）を記録します。[`container_manifests`](#container-repositories) の同等カラムと同じ形と根拠です。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **npm_packages**: npm パッケージを表します。`name` カラムはスコープを含む完全なパッケージ名を保存します（例: `@myorg/mypackage` または `lodash`）。`versions_count` はパッケージの `npm_versions` 行（ソフト削除されたものを含む）をカウントし、ガベージコレクションが行をハード削除したときにのみデクリメントされます。`tags_count` はその `npm_tags` 行をカウントします（`npm_tags` にはソフト削除カラムがないため、この問題は発生しません）。どちらも [ADR-004](004_data_and_application_limits.md#entity-count-limits) のパッケージごとのエンティティ数制限（25,000 バージョン、1,000 タグ）を強制するバッファカウンターで、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。ソフト削除されたバージョンを含めることは `namespace_statistics.deduplicated_size_bytes` の扱いをミラーリングし、ゲーミングのベクトルを塞ぎます: ソフト削除された行を上限から除外できる顧客は、ソフト削除と再公開を繰り返して無期限に 25,000 バージョン制限を下回り続けられてしまいます。実際にはソフト削除されたすべての行は依然としてストレージを占有し、復元可能なままです。両方の上限が 32 ビットの上限を十分に下回っているため、`integer` 型（`bigint` ではない）です。他の場所にある無制限のカウンター（`downloads_count`、`size_bytes`）は制限なく増加するため `bigint` が必要です。`last_downloaded_at` はパッケージのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **npm_versions**: 埋め込まれた package.json メタデータを持つ npm パッケージの個々のバージョンを格納します。`last_downloaded_at` はバージョンのいずれかのファイルが最後にダウンロードされた時を記録し、[バッファ／非同期書き込み](#buffered-and-asynchronous-writes) で維持されます。`keep_last_downloaded_at` ライフサイクルルールで使用されます。`gitlab_user_id`、`gitlab_project_id`、`gitlab_git_commit_sha` は、このバージョンを公開した GitLab ユーザーと公開の背後にある CI コンテキスト（プロジェクト、コミット）を記録します。[`container_manifests`](#container-repositories) の同等カラムと同じ形と根拠です。`created_at` はバージョンが最初に公開された時を記録し、[`container_manifests`](#container-repositories) と同じ公開履歴および時間範囲プロベナンススキャンを実現します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **npm_tags**: 特定のパッケージバージョンを指す [NPM distribution tag](https://docs.npmjs.com/cli/v11/commands/npm-dist-tag)（例: `latest`、`next`、`beta`）を提供します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **npm_files**: npm パッケージバージョンのファイルを表します。これらは主に tarball アーカイブです。レジストリがパフォーマンスのボトルネックを改善するために使用する補助ファイルでもありえます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
-- **npm_metadata_files**: npm パッケージの事前計算されたメタデータファイルを、`kind` あたり 1 つずつ保存します。`kind` カラムはメタデータバリアントを区別します: `full`（0）はすべてのバージョンを含む完全な packument を含み、`dist_tags`（1）は distribution tag マッピングのみを含みます。適切なファイルがクライアントリクエストに基づいて npm メタデータエンドポイントで提供されます。メタデータはパッケージのすべてのバージョンにまたがるため、`npm_versions` ではなく `npm_packages` にリンクされます。メタデータファイルは、バージョンが公開または非公開になった後に非同期に生成されます。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
+- **npm_metadata_files**: npm パッケージの事前計算されたメタデータファイルを、`kind` あたり 1 つずつ保存します。`kind` カラムはメタデータバリアントを区別します: `full`（0）はすべてのバージョンを含む完全な packument を含み、`dist_tags`（1）は distribution tag マッピングのみを含み、`abbreviated`（2）はリクエストが `Accept: application/vnd.npm.install-v1+json` を伴う場合に提供されるインストール専用の投影です。適切なファイルがクライアントリクエストに基づいて npm メタデータエンドポイントで提供されます。メタデータはパッケージのすべてのバージョンにまたがるため、`npm_versions` ではなく `npm_packages` にリンクされます。メタデータファイルは、バージョンが公開または非公開になった後に非同期に生成されます。`expires_at` カラムはキャッシュの鮮度を駆動します: ライター（公開、非推奨化、非公開、dist-tag の変更）は、データ書き込みと同じトランザクション内で対象パッケージのすべての行に `expires_at = NOW()` を設定してキャッシュを強制失効させます。リビルドジョブは、新しく生成された blob で行をアップサートするときに `expires_at = NOW() + npm.packument_cache_ttl` を設定します。リーダーは `expires_at > NOW()` でフィルタリングし、ミスの場合はインラインビルドパスにフォールスルーするため、失効した行がクライアントに提供されることはありません。このカラムはハード削除の期限ではなく、キャッシュの鮮度シグナルです。強制失効は blob と添付ファイルをそのまま残すため、それらに対して解決中のレスポンスは、リビルドジョブが添付ファイルをスワップするまで正常に完了します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **blob_storage_attachments**: 詳細は [Blob storage](#blob-storage) セクションを参照してください。
 
 [Maven](#maven-repositories) と同様に、まったく同じ理由でパッケージ名とバージョンは 2 つの異なるテーブルに保存されます。
@@ -1099,7 +1107,7 @@ erDiagram
 
 - **`npm_repositories`**: `(namespace_id, repository_id)` のユニークインデックス — 親リポジトリ参照で NPM リポジトリを検索。
 - **`npm_packages`**: `(namespace_id, npm_repository_id, name) WHERE soft_deleted_at IS NULL` のユニークインデックス — リポジトリ内で名前によりパッケージを検索。部分条件はソフト削除後に同じ名前でパッケージを再作成できるようにします。`(namespace_id, npm_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `keep_last_downloaded_at` ライフサイクルルール評価をサポート。リポジトリ内のすべてのパッケージをスキャンして 1 行ずつフィルタリングするのではなく、有界な範囲スキャンで期限切れのパッケージのみを返します。`NULLS FIRST` は、ダウンロードされていないパッケージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。
-- **`npm_versions`**: `(namespace_id, npm_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内で特定のバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, npm_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `npm_packages` と同じ範囲スキャン戦略を使用して、パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルール評価をサポート。
+- **`npm_versions`**: `(namespace_id, npm_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内で特定のバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, npm_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `npm_packages` と同じ範囲スキャン戦略を使用して、パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルール評価をサポート。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクトプロベナンスクエリを実現します。ソフト削除された公開イベントも監査証跡に表示されるよう、無条件です。
 - **`npm_tags`**: `(namespace_id, npm_package_id, name)` のユニークインデックス — パッケージ内で名前により distribution tag を検索。`(namespace_id, npm_version_id)` のインデックス — 指定されたバージョンを指すすべてのタグを見つける。
 - **`npm_files`**: `(namespace_id, npm_version_id, file_name) WHERE soft_deleted_at IS NULL` のユニークインデックス — ファイル名はバージョン内で一意でなければなりません。部分条件はソフト削除後に同じ名前でファイルを再作成できるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでファイルを検索。
 - **`npm_metadata_files`**: `(namespace_id, npm_package_id, kind)` のユニークインデックス — パッケージごとに kind ごとに 1 つのメタデータファイル。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでメタデータファイルを検索。
@@ -1117,6 +1125,14 @@ erDiagram
     AND np.soft_deleted_at IS NULL AND nv.soft_deleted_at IS NULL;
   ```
 
+- 公開パスの制限事前チェックのためにパッケージごとのエンティティ数カウンターを読み取る（参考情報。`npm_versions` と `npm_tags` の部分ユニークインデックスが信頼できる競合フリーのガードです）:
+
+  ```sql
+  SELECT versions_count, tags_count
+  FROM npm_packages
+  WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND id = 456 AND soft_deleted_at IS NULL;
+  ```
+
 - 指定されたバージョン ID とファイル名のファイルを取得
 
   ```sql
@@ -1132,26 +1148,51 @@ erDiagram
   SELECT bsb.object_storage_key, bsb.size, bsb.content_type
   FROM npm_metadata_files nmf
   JOIN blob_storage_blobs bsb ON bsb.namespace_id = nmf.namespace_id AND bsb.sha256 = nmf.blob_sha256
-  WHERE nmf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND nmf.npm_package_id = 456 AND nmf.kind = 0;
+  WHERE nmf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND nmf.npm_package_id = 456 AND nmf.kind = 0
+    AND nmf.expires_at > NOW();
   ```
+
+  読み取りは `expires_at > NOW()` でフィルタリングします。ミス（行がない、またはライターが
+  強制失効させたか TTL が経過したために `expires_at <= NOW()`）はインラインビルドパスにフォール
+  スルーします。以下のキャッシュリビルドジョブが新しい行を復元します。
+
+- 書き込み時に packument キャッシュを強制失効させる
+
+  公開、非推奨化、非公開、dist-tag の変更は、データ書き込みと同じトランザクション内で対象パッケージの
+  すべての kind に対して `expires_at` を `NOW()` に切り替えることでキャッシュを無効化します。blob と
+  アタッチメントはそのまま残されるため、すでに処理中のレスポンスは、リビルドジョブがアタッチメントを
+  スワップするまで既存の blob に対して解決し続けます。
+
+  ```sql
+  UPDATE npm_metadata_files
+  SET expires_at = NOW()
+  WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND npm_package_id = 456;
+  ```
+
+  初回公開ではまだ行が存在しないため、`UPDATE` は 0 行に影響します。リビルドジョブが最初の実行で
+  キャッシュ行を挿入します。
 
 - バージョンの公開または非公開後にメタデータファイルを upsert
 
-  古いアタッチメントは、孤立アタッチメントが blob のガベージコレクションをブロックするのを防ぐため、同じトランザクション内で削除する必要があります（[Cleanup tasks](#cleanup-tasks) を参照）。
+  キャッシュリビルドジョブは、パッケージの kind ごとにこれを 1 回実行します。古いアタッチメントは、
+  孤立アタッチメントが blob のガベージコレクションをブロックするのを防ぐため、同じトランザクション内で
+  削除する必要があります（[Cleanup tasks](#cleanup-tasks) を参照）。
 
   ```sql
   -- 新しい blob とアタッチメント（id=789）は同じトランザクション内の早い段階で作成されます。
+  -- 以下のインターバルは、設定された `npm.packument_cache_ttl`（デフォルト 7 日）をミラーリングします。
   WITH old AS (
     SELECT blob_storage_attachment_id, blob_sha256
     FROM npm_metadata_files
     WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND npm_package_id = 456 AND kind = 0
   ),
   upsert AS (
-    INSERT INTO npm_metadata_files (namespace_id, npm_package_id, kind, blob_storage_attachment_id, blob_sha256)
-    VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', 456, 0, 789, 'abcd1234...'::bytea)
+    INSERT INTO npm_metadata_files (namespace_id, npm_package_id, kind, blob_storage_attachment_id, blob_sha256, expires_at)
+    VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', 456, 0, 789, 'abcd1234...'::bytea, NOW() + interval '7 days')
     ON CONFLICT (namespace_id, npm_package_id, kind)
     DO UPDATE SET blob_storage_attachment_id = EXCLUDED.blob_storage_attachment_id,
-                  blob_sha256 = EXCLUDED.blob_sha256
+                  blob_sha256 = EXCLUDED.blob_sha256,
+                  expires_at = EXCLUDED.expires_at
   )
   DELETE FROM blob_storage_attachments bsa
   USING old
@@ -1208,6 +1249,7 @@ erDiagram
         jsonb package_json "NOT NULL"
         timestamptz last_downloaded_at "nullable, buffered"
         timestamptz soft_deleted_at "nullable"
+        timestamptz created_at "NOT NULL, DEFAULT NOW()"
     }
 
     npm_remote_tags {
@@ -1245,7 +1287,7 @@ erDiagram
 
 - **npm_remote_repositories**: 外部 npm レジストリを表します。URL、認証情報、アーティファクトキャッシュ TTL（`cache_validity_hours`）、パッケージメタデータレスポンス用の別の TTL（`metadata_cache_validity_hours`）を含みます。ヘルスチェックステータスはモニタリングのために追跡されます。`repository_id` を介して親 `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニング。
 - **npm_remote_packages**: キャッシュされた npm パッケージ。`last_downloaded_at` はパッケージのキャッシュされたファイルのいずれかが最後にダウンロードされた時を記録し、ホット行の競合を回避するためバッファ／非同期書き込みで維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます。
-- **npm_remote_versions**: `package_json` メタデータを持つキャッシュされたバージョン。packument が取得されたときに設定されます（すべてのバージョンメタデータを含むため）。`last_downloaded_at` はバージョンのキャッシュされたファイルのいずれかが最後にダウンロードされた時を記録し、ホット行の競合を回避するためバッファ／非同期書き込みで維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます。
+- **npm_remote_versions**: `package_json` メタデータを持つキャッシュされたバージョン。packument が取得されたときに設定されます（すべてのバージョンメタデータを含むため）。`last_downloaded_at` はバージョンのキャッシュされたファイルのいずれかが最後にダウンロードされた時を記録し、ホット行の競合を回避するためバッファ／非同期書き込みで維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持評価で使用されます。`created_at` はバージョンが最初にキャッシュされた時を記録し、[`npm_versions`](#npm-repositories) をミラーリングして、キャッシュ側の公開履歴とプロベナンススキャンを実現します。
 - **npm_remote_tags**: キャッシュされた dist-tag からバージョンへのマッピング（例: `latest`、`next`）。packument から設定されます。
 - **npm_remote_metadata_files**: アップストリームレジストリからキャッシュされた事前計算メタデータファイルを、パッケージごとに kind ごとに 1 つずつ保存します。`kind` はすべてのバージョンを含む完全な packument（`0`）と dist-tags のみのマッピング（`1`）を区別します。`upstream_checked_at` はメタデータがアップストリームレジストリに対して最後に検証された時を記録し、`metadata_cache_validity_hours` と比較して再検証が必要かどうかを判断します。`upstream_etag` はアップストリームから返された ETag を保存し、条件付きリクエスト（`If-None-Match`）を可能にすることで、変更されていないメタデータの再ダウンロードを回避します。
 - **npm_remote_files**: キャッシュされた tarball。`upstream_checked_at` はファイルがアップストリームレジストリに対して最後に検証された時を記録し、`cache_validity_hours` と比較して再検証が必要かどうかを判断します。`upstream_etag` はアップストリームから返された ETag を保存し、条件付きリクエスト（`If-None-Match`）を可能にすることで、変更されていない tarball の再ダウンロードを回避します。
@@ -1255,7 +1297,7 @@ erDiagram
 
 - **`npm_remote_repositories`**: `(namespace_id, repository_id)` のユニークインデックス — 親参照でリモートリポジトリを検索。
 - **`npm_remote_packages`**: `(namespace_id, npm_remote_repository_id, name) WHERE soft_deleted_at IS NULL` のユニークインデックス — 名前でキャッシュされたパッケージを検索。部分条件はソフト削除後に同じ名前でパッケージを再作成できるようにします。
-- **`npm_remote_versions`**: `(namespace_id, npm_remote_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内でキャッシュされたバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。
+- **`npm_remote_versions`**: `(namespace_id, npm_remote_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内でキャッシュされたバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、ローカルの [`npm_versions`](#npm-repositories) インデックスをミラーリングし、キャッシュ側の公開履歴とプロベナンスをカバーします。ローカルインデックスと同じ監査証跡の理由から無条件です（`soft_deleted_at` 述語なし）。
 - **`npm_remote_tags`**: `(namespace_id, npm_remote_package_id, name)` のユニークインデックス — 名前で distribution tag を検索。`(namespace_id, npm_remote_version_id)` のインデックス — 指定されたバージョンを指すすべてのタグを見つける。
 - **`npm_remote_metadata_files`**: `(namespace_id, npm_remote_package_id, kind)` のユニークインデックス — パッケージごとに kind ごとに 1 つのメタデータファイルを強制。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでメタデータファイルを検索。
 - **`npm_remote_files`**: `(namespace_id, npm_remote_version_id, file_name) WHERE soft_deleted_at IS NULL` のユニークインデックス — ファイル名はバージョン内で一意でなければなりません。部分条件はソフト削除後に同じ名前でファイルを再作成できるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでファイルを検索。
@@ -1657,7 +1699,7 @@ Cells レベルのシャーディング（`namespace_id`）と標準のインデ
 
 ### バッファされた非同期書き込み {#buffered-and-asynchronous-writes}
 
-いくつかのカラムは、すべてのダウンロードまたはアップロードリクエストで更新されます: `repositories` のカウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）と、`container_images`、`maven_packages`、`maven_versions`、`npm_packages`、`npm_versions` の `last_downloaded_at` タイムスタンプ。これらをリクエストパスで直接書き込むと、同じ行に対する並行リクエストがシリアライズされ（人気のあるパッケージでのホット行競合）、リクエストレイテンシがデータベース書き込みスループットに結合されます。
+いくつかのカラムは、すべてのダウンロードまたはアップロードリクエストで更新されます: `repositories` のカウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）、エンティティ数制限チェックに使用される `npm_packages` のパッケージごとのカウンター（`versions_count`、`tags_count`）、そして `container_images`、`maven_packages`、`maven_versions`、`npm_packages`、`npm_versions` の `last_downloaded_at` タイムスタンプ。これらをリクエストパスで直接書き込むと、同じ行に対する並行リクエストがシリアライズされ（人気のあるパッケージでのホット行競合）、リクエストレイテンシがデータベース書き込みスループットに結合されます。
 
 これを回避するため、これらのカラムはバッファ／非同期書き込みで維持されます: リクエストハンドラは更新を高速な中間ストア（例: Redis）に記録し、バックグラウンドプロセスがバッファされたエントリを定期的に行にマージし戻します。これは GitLab の `ProjectStatistics` と同じパターンを再利用します。
 
@@ -1667,7 +1709,7 @@ Cells レベルのシャーディング（`namespace_id`）と標準のインデ
 
 マージ戦略はカラムタイプに依存します:
 
-- **カウンター**（`artifacts_count`、`downloads_count`、`size_bytes`）: バッファされたデルタを既存の値に合計します。すべてのインクリメントを保持する必要があります — インクリメントを失うと永続的にカウントが少なくなります。
+- **カウンター**（`artifacts_count`、`downloads_count`、`size_bytes`、`versions_count`、`tags_count`）: バッファされたデルタを既存の値に合計します。すべてのインクリメントを保持する必要があります — インクリメントを失うと永続的にカウントが少なくなります。エンティティ数制限チェック（`versions_count`、`tags_count`）については、境界での小さな上限超過は許容されます: 制限は（データ整合性ルールではなく）プロダクトの上限であり、ドリフトはバッファウィンドウによって制限され、次のフラッシュで再同期されます。重複するバージョン名は、カウンターとは関係なく、`npm_versions` と `npm_tags` のユニークインデックスによって個別にブロックされます。
 - **タイムスタンプ**（`last_downloaded_at`）: バッファされた値と既存の値の最大値を取ります（最新が勝つ）。最も最近のダウンロード時間のみが重要です。中間値は破棄できます。
 
 両方の戦略は同じバッファリングインフラを共有し、書き込み前にバッファされたエントリがどのように削減されるかにのみ違いがあります。

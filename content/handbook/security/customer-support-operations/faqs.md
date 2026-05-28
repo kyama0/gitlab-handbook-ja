@@ -1,13 +1,12 @@
 ---
 title: FAQ
 description: Customer Support Operations に関するよくある質問
-date: 2026-01-05
 upstream_path: /handbook/security/customer-support-operations/faqs/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T21:03:24Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-01-21T12:28:59-06:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 ## アクセスに関する質問 {#access-related}

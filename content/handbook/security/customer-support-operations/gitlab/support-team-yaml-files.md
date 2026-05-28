@@ -1,13 +1,12 @@
 ---
 title: 'Support チーム YAML ファイル'
 description: 'Support チーム YAML ファイルに関するドキュメント'
-date: 2026-02-18
 upstream_path: /handbook/security/customer-support-operations/gitlab/support-team-yaml-files/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-02-18T12:50:14-06:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、Support チーム YAML ファイルについて説明します。これは、さまざまな Customer Support Operations の自動化や統合で使用される、チームメンバー情報を含む集中型のデータソースです。これらのファイルは、システム間で一貫したエージェントデータを実現し、チーム構造、スキル、スケジュール、アサインの情報源として機能します。

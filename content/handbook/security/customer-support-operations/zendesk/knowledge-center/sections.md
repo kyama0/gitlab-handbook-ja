@@ -1,13 +1,12 @@
 ---
 title: 'セクション'
 description: 'Zendesk セクションに関するドキュメント'
-date: 2025-12-23
 upstream_path: /handbook/security/customer-support-operations/zendesk/knowledge-center/sections/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、GitLab における Zendesk セクションの作成、編集、管理方法について説明します。管理者は[管理者タスク](#administrator-tasks)セクションを確認してください。
@@ -18,6 +17,7 @@ lastmod: "2026-02-12T20:47:52+00:00"
 - 同期リポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-support-readiness/zendesk-global/sections)
   - [Zendesk US Government](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/sections)
+- `CustSuppOps Zendesk Test Suite Generator` を有効化
 
 {{% /alert %}}
 

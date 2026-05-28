@@ -3,11 +3,11 @@ title: GitLab Dedicated 概要
 category: GitLab Dedicated
 description: "GitLab Dedicated サポート概要。"
 upstream_path: /handbook/support/workflows/dedicated/
-upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
-translated_at: "2026-05-08T20:30:00Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-04-06T21:06:06+00:00"
+lastmod: "2026-05-29T01:29:54+08:00"
 ---
 
 ### 概要
@@ -157,6 +157,12 @@ IP 許可リストを使用している顧客は、SCIM または OIDC エンド
 #### アプリケーションログリクエスト
 
 [顧客にアプリケーションログへのアクセスを許可する](/handbook/support/workflows/dedicated_logs/#granting-customers-access-to-application-logs) を参照してください。
+
+### 大量アクティビティの事前通知
+
+お客様が今後予定している大量アクティビティについて GitLab サポートに連絡してきた場合は、[Request for Help Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?issuable_template=SupportRequestTemplate-GitLabDedicated) を起票してアクティビティとそのタイミングを記録します。大量アクティビティには、大規模な移行、一括自動化、その他 GitLab Dedicated 環境への負荷を大幅に増加させる可能性のある操作が含まれます。
+
+GitLab Dedicated は、この種のアクティビティに対するライブモニタリングを提供していません。
 
 ### Issue の登録
 

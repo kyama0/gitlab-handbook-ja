@@ -2,11 +2,11 @@
 title: データベース関連の問題でヘルプを得る
 description: "データベース関連の問題で適切なヘルプを見つけるためのデシジョンツリー"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/help/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-05-07T17:41:36+00:00"
+lastmod: "2026-05-26T09:14:20-05:00"
 ---
 
 このガイドは、データベース関連の問題に対して適切なヘルプを見つけるための手順を示します。Step 1 から始め、ご自身の状況に合うパスをたどってください。
@@ -89,9 +89,10 @@ lastmod: "2026-05-07T17:41:36+00:00"
 2. 15 分以内に応答がない、またはリクエストが緊急の場合、元のメッセージのスレッドで `@db-team` と `@dbo-oncall` をタグ付け
 3. さらに 15 分待っても応答がなく、リクエストが緊急の場合、Slack で Database Excellence ステージリードの電話番号を見つけてテキストまたは電話する
 
-**インシデント以外のエスカレーションの場合:**
+**緊急の Self-Managed エスカレーションの場合:**
 
-1. 詳細と Issue へのリンクを添えて `#s_database_excellence` に投稿
+1. 詳細、Zendesk チケットへのリンク、RFH Issue を添えて `#s_database_excellence` に投稿
+2. スレッドで `@db-team` をタグ付け
 
 ### インシデントエスカレーションの詳細
 

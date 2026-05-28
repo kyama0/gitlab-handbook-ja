@@ -1,13 +1,12 @@
 ---
 title: 'マクロ'
 description: 'Zendesk のマクロに関するドキュメント'
-date: 2025-12-23
 upstream_path: /handbook/security/customer-support-operations/zendesk/macros/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T23:27:10Z"
+upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
+translated_at: "2026-05-28T21:12:16Z"
 translator: claude
 stale: false
-lastmod: "2026-04-15T08:23:00-05:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、GitLab における Zendesk マクロの作成・編集・管理方法について説明します。シンプルなマクロを作成しようとするサポートエージェントは、[非管理者としてマクロを作成する](#creating-a-macro-as-a-non-admin) を参照してください。管理者は [管理者タスク](#administrator-tasks) のセクションを確認してください。
