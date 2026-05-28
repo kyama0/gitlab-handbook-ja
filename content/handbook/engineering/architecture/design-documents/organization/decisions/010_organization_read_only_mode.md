@@ -1,6 +1,6 @@
 ---
 owning-stage: "~devops::tenant scale"
-title: 'Organizations ADR 010: Organization Read-Only Mode'
+title: 'Organizations ADR 010: Organization Read-Only Mode（Organization 読み取り専用モード）'
 description: 'Cell をまたぐ移行や分離の有効化の際に使用される Organization 単位の読み取り専用状態を導入し、ソース Cell での書き込みをブロックしつつ読み取りは許可します。コントローラ、REST API、GraphQL、GitAccess、コンテナレジストリ、LFS、Sidekiq の各レイヤで強制されます。'
 creation-date: "2026-04-28"
 authors: [ "@abdwddd" ]
