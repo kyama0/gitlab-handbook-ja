@@ -1,13 +1,12 @@
 ---
 title: 'Audit Events Analyzer'
 description: 'Audit Events Analyzer に関するドキュメント'
-date: 2026-02-09
 upstream_path: /handbook/security/customer-support-operations/zendesk/users/audit-events-analyzer/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 78b430bc8e2a925f210024d512218ce1d8d42106
 translated_at: "2026-05-09T21:03:24Z"
 translator: claude
 stale: false
-lastmod: "2026-02-09T11:41:45-06:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドは、Zendesk で使用するために私たちが作成したカスタムセットアップである Audit Events Analyzer について説明します。

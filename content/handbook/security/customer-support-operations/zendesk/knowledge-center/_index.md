@@ -1,13 +1,12 @@
 ---
 title: 'ナレッジセンター'
 description: 'Zendesk のナレッジセンターに関するドキュメント'
-date: 2025-12-23
 upstream_path: /handbook/security/customer-support-operations/zendesk/knowledge-center/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 78b430bc8e2a925f210024d512218ce1d8d42106
 translated_at: "2026-05-09T23:27:10Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 {{% alert title="技術詳細" color="primary" %}}

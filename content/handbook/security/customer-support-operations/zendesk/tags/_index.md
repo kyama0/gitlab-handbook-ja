@@ -1,13 +1,12 @@
 ---
 title: 'タグ'
 description: 'Zendesk タグに関するドキュメント'
-date: 2025-12-29
 upstream_path: /handbook/security/customer-support-operations/zendesk/tags/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 78b430bc8e2a925f210024d512218ce1d8d42106
 translated_at: "2026-05-09T22:41:14Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、GitLab における Zendesk タグの作成方法と使用方法について説明します。

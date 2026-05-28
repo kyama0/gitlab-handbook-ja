@@ -1,13 +1,12 @@
 ---
 title: 'マージリクエストの取り扱い'
 description: 'マージリクエストの取り扱いに関するドキュメント'
-date: 2026-01-13
 upstream_path: /handbook/security/customer-support-operations/gitlab/working-merge-requests/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 78b430bc8e2a925f210024d512218ce1d8d42106
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、Customer Support Operations のプロジェクトに対するマージリクエスト（MR）の作成・レビュー・マージ方法を説明します。これらのプラクティスに従うことで、コード品質を保ち、セキュリティ基準を維持し、チーム全体での協調的な開発を実現できます。

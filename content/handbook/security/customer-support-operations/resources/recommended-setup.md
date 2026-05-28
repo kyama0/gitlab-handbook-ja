@@ -1,13 +1,12 @@
 ---
 title: '推奨セットアップ'
 description: 'チームの推奨セットアップに関するドキュメント'
-date: 2026-01-07
 upstream_path: /handbook/security/customer-support-operations/resources/recommended-setup/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 78b430bc8e2a925f210024d512218ce1d8d42106
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-28T00:14:44-06:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 {{% alert title="注" color="primary" %}}

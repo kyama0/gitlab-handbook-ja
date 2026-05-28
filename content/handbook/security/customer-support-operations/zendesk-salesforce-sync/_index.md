@@ -1,13 +1,12 @@
 ---
 title: 'Zendesk-Salesforce 同期'
 description: 'Zendesk-Salesforce 同期に関するドキュメント'
-date: 2026-01-06
 upstream_path: /handbook/security/customer-support-operations/zendesk-salesforce-sync/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 78b430bc8e2a925f210024d512218ce1d8d42106
 translated_at: "2026-05-09T21:03:24Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドは、Salesforce（Single Source of Truth）から Zendesk へ顧客組織およびユーザーデータを毎時自動同期する Zendesk-Salesforce 同期について説明します。この同期により、正確なサポート権限、適切な SLA 適用、Zendesk における最新の顧客メタデータが保証されます。

@@ -1,13 +1,12 @@
 ---
 title: 'Pagerduty'
 description: 'Pagerduty のシステムチェッカーに関するドキュメント'
-date: 2026-01-06
 upstream_path: /handbook/security/customer-support-operations/system-checkers/pagerduty/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
+upstream_sha: 78b430bc8e2a925f210024d512218ce1d8d42106
 translated_at: "2026-05-10T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-01-21T12:28:59-06:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 <sup>[gitlab-com/support/support-ops/support-ops-project#1891](https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/1891) を経て導入</sup>

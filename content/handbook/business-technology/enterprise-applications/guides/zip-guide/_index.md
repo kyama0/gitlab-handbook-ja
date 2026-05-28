@@ -1,12 +1,12 @@
 ---
 title: "Zip エンドユーザーガイド"
 description: "Zip エンドユーザーガイド"
-upstream_path: "/handbook/business-technology/enterprise-applications/guides/zip-guide/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
+upstream_path: /handbook/business-technology/enterprise-applications/guides/zip-guide/
+upstream_sha: 78b430bc8e2a925f210024d512218ce1d8d42106
 translated_at: "2026-04-25T06:02:44Z"
 translator: "claude"
 stale: false
-lastmod: "2025-08-15T16:07:26+02:00"
+lastmod: "2026-05-27T15:58:38-04:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
