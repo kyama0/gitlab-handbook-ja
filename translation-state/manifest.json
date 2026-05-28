@@ -6026,11 +6026,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1841447f1cd13127872f9812753e1073fdd066490269e17be34a581097e378c1",
-      "upstream_committed_at": "2026-05-21T14:16:24+02:00"
+      "input_hash": "95911208a8a27f12a52e118aac01b1709b96910e3b9a174fd980d6939d70a73c",
+      "upstream_committed_at": "2026-05-28T10:57:33+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md",
@@ -26026,11 +26026,11 @@
     },
     "content/handbook/security/customer-support-operations/gitlab/issues/working-issues.md": {
       "path": "content/handbook/security/customer-support-operations/gitlab/issues/working-issues.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "b4a826d3a6443012cc0fdc4b9c5c5e3e9107becfa9784f4fffd4fb144661beae",
-      "upstream_committed_at": "2026-04-11T00:15:40-05:00"
+      "input_hash": "c83513b2fc324aa31669f5c4cd82c848c705a5998253eb4abf39557e10de8d28",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/gitlab/iterations.md": {
       "path": "content/handbook/security/customer-support-operations/gitlab/iterations.md",
