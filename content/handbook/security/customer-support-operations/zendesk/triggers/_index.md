@@ -1,13 +1,12 @@
 ---
 title: 'トリガー'
 description: 'Zendesk のトリガーに関するドキュメント'
-date: 2025-12-26
 upstream_path: /handbook/security/customer-support-operations/zendesk/triggers/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 78b430bc8e2a925f210024d512218ce1d8d42106
+translated_at: "2026-05-28T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 このガイドでは、GitLab における Zendesk のトリガーの作成、編集、管理方法について説明します。管理者は[管理者タスク](#administrator-tasks)セクションを確認してください。
@@ -23,6 +22,7 @@ lastmod: "2026-02-12T20:47:52+00:00"
 - マネージドコンテンツリポジトリ
   - [Zendesk Global](https://gitlab.com/gitlab-com/support/zendesk-global/triggers)
   - [Zendesk US Government](https://gitlab.com/gitlab-com/support/zendesk-us-government/triggers)
+- `CustSuppOps Zendesk Test Suite Generator` 有効
 
 {{% /alert %}}
 

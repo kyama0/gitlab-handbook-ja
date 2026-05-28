@@ -1,0 +1,98 @@
+---
+title: 'Cohort B: Active opt-in Beta'
+owning-stage: "~devops::tenant scale"
+toc_hide: true
+upstream_path: /handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_b/
+upstream_sha: 78b430bc8e2a925f210024d512218ce1d8d42106
+lastmod: "2026-05-27T17:43:35+12:00"
+translated_at: "2026-05-28T00:00:00Z"
+translator: claude
+stale: false
+---
+
+## Context
+
+Cohort B は、Protocell 上で実際の日次アクティブユーザーに関する経験を得る最初のコホートです。Cohort A（インフラストラクチャの検証に焦点を当てた非アクティブな Free ユーザー）とは異なり、Cohort B はアクティブなワークフロー、実際の顧客の期待、そして Security と Trust and Safety の準備態勢の必要性を導入します。目標は、Cohort C（上位 1,000）以降にスケールする前に、小規模で厳選された低リスクなアクティブ Organization の集合から学ぶことです。
+
+## Eligibility criteria
+
+Protocell への Organization データ移行に対する Cohort B の適格性は、アクティブでオプトインのベータ Organization に焦点を当てます。これは、より大きなコホートにスケールする前に移行のリスクを下げるために、登録、プロファイル、Trust and Safety の基準を定めるものです。
+
+| Attribute | Value |
+| --- | --- |
+| Cohort name | Active Opt-In Beta |
+| Target size | 最大 1,000 Organization（ハンドピックした約 10〜50 から始め、1,000 までスケール） |
+| Visibility | Private のみ |
+| Engagement model | オプトイン、ガイド付き（human-in-the-loop による審査） |
+| Prerequisite | Cohort A の移行が検証済み。ユーザーの現行の機能セットがサポートされた状態で TLG を Organization に移行できること |
+| Expected impact | Organization と Cells の実世界での採用に関するイテレーション。WAL、LWLock、データベースサイズへのわずかな影響 |
+
+### 1. Enrollment and engagement criteria
+
+#### 1.1 Opt-in with guided onboarding
+
+Organization は、厳選された登録プロセスを通じて明示的にオプトインしなければなりません。このコホートにはセルフサービスのサインアップはありません。
+
+Tenant Scale、Protocell Steering Committee、Security が、承認前に各候補をレビューします。
+
+顧客は、移行中の短い読み取り専用ウィンドウの可能性、移行が一方向であること、まだ採用していない特定の機能が利用できない可能性を含め、この体験がベータ版であることを了承しなければなりません。
+
+#### 1.2 Phased ramp
+
+- フェーズ 1（最初の波）: ハンドピックした 10〜50 の Organization。専任サポート付きで重点的にモニタリングします。
+- フェーズ 2（拡大ベータ）: フェーズ 1 の学びから確信が得られるにつれて、最大 1,000 の Organization までスケールします。
+
+### 2. Organization profile criteria
+
+#### 2.1 Visibility and namespace structure
+
+- Private 名前空間のみ。クロス名前空間の可視性および公開向けの機能サーフェスの複雑さを避けるため、Public 名前空間は除外します。
+- Organization ごとに単一のルート名前空間（単一の TLG から Organization への移行）。統合を要する複数の TLG を持つ Organization は後続のコホートに延期します。
+- クロス名前空間のやり取りなし。Organization のユーザーは主に単一のルート名前空間内で活動すべきです。Organization 外の他のルート名前空間に大きく貢献しているユーザーは除外します。
+
+#### 2.2 License tier
+
+- Free または有料（Premium または Ultimate）の Organization が、それぞれ異なる審査レベルで適格となります。
+- Free Organization: 含める際のハードルが低く、期待値が低く契約上の SLA を持たないアクティブユーザーで、Organizations の体験全体を検証するのに有用です。
+- 有料 Organization: より高いハードル。明示的な Customer Success の承認と、ベータプログラムについて文書化された理解が必要です。機能の利用互換性について審査済みの有料顧客のみを含めます（下記のセクション 3 を参照）。
+- トライアルのサブスクリプションは対象外。トライアル顧客は過渡的な状態にあり、一方向の移行には適しません。
+
+#### 2.3 User count and activity level
+
+- アクティブなルート名前空間: 直近 30 日間に少なくとも 1 人のアクティブユーザー（ログイン、Git、または API のアクティビティによる）がいること。
+- 小〜中規模のユーザー数: ブラスト半径と移行の複雑さを抑えるため、500 人以下のユーザーを持つ Organization を対象とします。大企業（1,000 人以上のユーザー）は Cohort C または D に延期します。
+- 中程度のアクティビティレベル: データベース時間で上位 1,000 の名前空間（Cohort C）を除外します。アクティブだがデータベース負荷が不釣り合いに重くないロングテールの Organization を対象とします。
+
+### 3. Trust and safety and security de-risking criteria
+
+Matt Coons および Ruby Nealon との Security and Protocells sync の議論に基づき、以下の基準により Cohort B のセキュリティと信頼の観点からのリスクを下げます。
+
+#### 3.1 Curated and vetted list
+
+- Cohort B は、移行前に Security Operations と Trust and Safety のリーダーシップによってレビューされた、厳選された Organization のリストでなければなりません。
+- Matt Coons は次のように述べています。「信頼できる Organization であれば、もっと自信を持てる」、そして「厳選されたリストであれば、リーダーシップの賛同を得やすいかもしれない。そうすればいくつかのカバレッジのギャップを受け入れられる」。
+- 各 Organization は、登録前に Trust and Safety の基準に照らして審査されるべきです。
+
+#### 3.2 Account standing and abuse history
+
+- Organization 内に BAN またはフラグ付けされたユーザーがいないこと。
+- 名前空間またはそのメンバーに対する不正利用の報告履歴がないこと（レガシーセル上の Omamori データで検証）。
+- Organization のメンバーに関連付けられた使い捨てメールドメインがないこと。
+- アカウント年齢の要件: 一時的またはボット駆動のアカウントを除外するため、Organization オーナーのアカウントは少なくとも 6 ヶ月経過していること。
+- 直近 90 日間に Trust and Safety による介入がないこと。
+
+#### 3.3 No new user sign-ups on the cell
+
+- Protocell 上では新規ユーザー登録を許可してはなりません。すべての新規サインアップは引き続きレガシーセルで行います。これにより、完全な Trust and Safety カバレッジのないセルに、未知または信頼できないユーザーが到達することを防ぎます。
+- 移行された Organization 内のユーザーは、既存の認証済みセッションを通じてセルにアクセスします。
+- Organization 管理者は、新規ユーザーを自分の Organization に明示的に招待または追加しなければなりません。
+
+## Consequences
+
+- Cohort B は、小規模で Private な低リスクの Organization の厳選された集合に限定されるため、ブラスト半径を抑える一方で、実世界での検証の幅も制限されます。
+- すべての候補 Organization は、登録前に Security Operations と Trust and Safety のリーダーシップによる手動審査を必要とし、運用上のオーバーヘッドが増えます。
+- セルフサービスのサインアップは利用できません。すべての登録はガイド付きであり、スケールを制限する一方で統制を高めます。
+- Public 名前空間とクロス名前空間のやり取りは除外され、複雑さは後続のコホートに延期されます。
+- 段階的なランプ（最初は 10〜50、その後最大 1,000）は段階的に確信を与えますが、Cohort B を完全に実行するにはより長い時間がかかることを意味します。
+- Protocell 上では新規ユーザー登録がブロックされます。つまり、Trust and Safety のツールカバレッジが十分になるまで、すべてのユーザー成長はレガシーセル上で続きます。
+- 有料顧客は明示的な Customer Success の承認を必要とし、調整の依存関係が増えます。

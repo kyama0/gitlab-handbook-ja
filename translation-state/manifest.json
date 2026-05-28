@@ -6218,11 +6218,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/cells/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "5532b5aa2cc1b9391a9600ce7b4bd99bee053b1628398ea33cb6068ba0c3b716",
-      "upstream_committed_at": "2026-02-20T16:22:14+13:00"
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b85b7a55af5647e07b5f05e328320fa0e333965d836c889f45080f1bf5759907",
+      "upstream_committed_at": "2026-05-28T15:55:17+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/container_registry_routing_service.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/container_registry_routing_service.md",
@@ -26346,11 +26346,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/automations/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/automations/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "c418f1591f54296a068a96bbc841c749a4d28872cb20fd4db55993d92951322a",
-      "upstream_committed_at": "2026-02-13T10:15:31-06:00"
+      "input_hash": "4b2c407159b40d5603b31b460dd40db62ad27a098d4b180dee706bc12764d99b",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/deletion-schedules/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/deletion-schedules/_index.md",
@@ -26378,11 +26378,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/groups/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/groups/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "601f8aedeecf47d5da7ce4e2596dddb1f0a042f56784608f2ee03fa5896731ed",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "input_hash": "1de14a83c860b033be3854834d46441fb58e5588d1bb68141749a1f2bcbaaff3",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/knowledge-center/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/knowledge-center/_index.md",
@@ -26402,27 +26402,27 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/knowledge-center/categories.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/knowledge-center/categories.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T23:27:10Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ecdf7586f7239b0f3dd318ac8463733ab4e9a1ecf50238d72ab4b01dd76d9cd4",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "input_hash": "9450ce5e59cf0e112f5bb5bb5309a022be9abfe44f3afbed6c93e046edb7d0c0",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/knowledge-center/management-permissions-groups.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/knowledge-center/management-permissions-groups.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "079e1afc9e4e17e563bb2fd4e6fc20d26ab9dc6fd5f237de23914d4aeb305d44",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "input_hash": "3dd378ff10060ad64b979f79fca1554da7f86623134bd09ed6e38b9f70435298",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/knowledge-center/sections.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/knowledge-center/sections.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1bdd5610f4e794d8f883f07ea7c4e76ed1552b296d150520c475d640b476f7be",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "input_hash": "7882d1665c8f425c72a21551ca312b9cfb63b59dabf48ecafc23754b85ec09d3",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/knowledge-center/theme.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/knowledge-center/theme.md",
@@ -26434,11 +26434,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/knowledge-center/user-segments.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/knowledge-center/user-segments.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1cc079213e64f88382c549dcbb2e39020ed3a7cf5221193efa64e9fe3142cbe9",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "input_hash": "de49c814d1232183cc7e52f034f5c3fc4eb56a6ecfac6d1c5891ef2726a505e2",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/liquid/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/liquid/_index.md",
@@ -26506,11 +26506,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/organizations/fields.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/organizations/fields.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T23:27:10Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a3f77c01f92665464e7b4ea42c596d56569cc7d50af3d02ed1e7b3ed1b842bb9",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "input_hash": "e3b86037c2003d8b85b0997b7fe09b03f193151f0cd503f49ed95cd61a742dcd",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/organizations/shared-orgs.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/organizations/shared-orgs.md",
@@ -26538,11 +26538,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/schedules/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/schedules/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T22:41:14Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "e514be3b34aee2b201de1560022e07dce12ff52ba46ecc20f6b3e01655dd4c8b",
-      "upstream_committed_at": "2026-03-01T12:14:46-06:00"
+      "input_hash": "5662c13435a6b5116787ee3d3e806cb57e1e4451dbb92b336ba17517e835815f",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/searching/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/searching/_index.md",
@@ -26554,11 +26554,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/sla-policies/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/sla-policies/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T22:41:14Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "c86849c1c73c932078c03f828147286ecd110fbc29a56f9ea16bd7acd9d18e30",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "input_hash": "0df1c17bf3c5561e239352c320eeddcdf96977866a27d10065faad2aae1abcb9",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/tags/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/tags/_index.md",
@@ -26578,19 +26578,19 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/tickets/fields.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/tickets/fields.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "d0e78cc5ecbaf608170ddf6dcbd11881c2364d3b508f937d19c4104d4c9edbf1",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "input_hash": "301a4e54af73189b6e8b0bb3b50e1a70258ab534013ad652591f10aaf8c55fde",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/tickets/forms.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/tickets/forms.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "857607f8f33b1b58b6bc86e10ad62f8de76b54b621504a0d958ba9d9b12d11f6",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "input_hash": "f5a4fd4d226bd881656ff6a5b32bb403dff4787b0b7035ec0a3c27a36c21cd21",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/tickets/processor.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/tickets/processor.md",
@@ -26610,11 +26610,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/triggers/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/triggers/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "d45b3f214d40b5a6ead4b3b568322c86992a6333c427e283b8054905409eaa8b",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "input_hash": "76f6e8d9c4ec915d66c6c88e4a4f96c3266c1ff74c46c2d9ae56066820ad3c90",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/triggers/categories.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/triggers/categories.md",
@@ -26666,11 +26666,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/users/fields.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/users/fields.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a5906e6f4f643f31f772e8ad05317d3a066532275a4730900379cc94a3972df3",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "input_hash": "1acac991bf2398f438919c64a28afd472ee735ddb1c8ac7de23a1a9dd21344d1",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/users/provisioning.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/users/provisioning.md",
@@ -26690,11 +26690,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/views/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/views/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T21:03:24Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "eb0ddd373d9557d16819c095ffd1d617cad54b6428cad3fa6060a09f2322f7e3",
-      "upstream_committed_at": "2026-02-12T20:47:52+00:00"
+      "input_hash": "12c9b3ccb298427772b8484d020a534d0f6da90fffab90472d5948620aa32614",
+      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/webhooks/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/webhooks/_index.md",
@@ -32842,11 +32842,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T04:00:00Z",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "77df2162c2adb5cd62479255fd6a985f2c82d18178f4b6f47fc4dee80b8e2be1",
-      "upstream_committed_at": "2026-05-15T14:59:04+12:00"
+      "input_hash": "531826a23dd501e278f27050bac88f4f4601a20d49a63034ef179f9feaa33956",
+      "upstream_committed_at": "2026-05-27T17:43:35+12:00"
     },
     "content/handbook/business-technology/readmes/rick-pollak.md": {
       "path": "content/handbook/business-technology/readmes/rick-pollak.md",
@@ -32951,6 +32951,54 @@
       "translated_at": "2026-05-22T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "efda947c825c275772c5f8c763acd80c3ed357cd6e3fc42bc2d147a27d4cedd3"
+    },
+    "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations.md": {
+      "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations.md",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "efda947c825c275772c5f8c763acd80c3ed357cd6e3fc42bc2d147a27d4cedd3",
+      "upstream_committed_at": "2026-05-26T08:36:55-07:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_a.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_a.md",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "61e46068b8b86f267750e00e1962e329398184020b15ce9940d7bcabb76f592b",
+      "upstream_committed_at": "2026-05-27T17:43:35+12:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_b.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_b.md",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "900f7b7dfe6e11232c44657eee3b31280401f893f7a30f6da93e3863999302aa",
+      "upstream_committed_at": "2026-05-27T17:43:35+12:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_c.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_c.md",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "58faeaca73e016b972e6ecdc3beec107ead75c865e211fb4734f7d82937e3a0d",
+      "upstream_committed_at": "2026-05-27T17:43:35+12:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_d.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_d.md",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b980561ea89ca4b63b05a2d98af2ba01f89ea5d88792a4846458f4fd10468ae1",
+      "upstream_committed_at": "2026-05-27T17:43:35+12:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/cells/impacted_features/term-agreements.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/cells/impacted_features/term-agreements.md",
+      "upstream_sha": "78b430bc8e2a925f210024d512218ce1d8d42106",
+      "translated_at": "2026-05-28T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ab2d7fd36f27db0d6eb48d66729b93fa6a5b196a4847c7bef4f01dcaed7d6cf1",
+      "upstream_committed_at": "2026-05-28T15:55:17+12:00"
     }
   }
 }
