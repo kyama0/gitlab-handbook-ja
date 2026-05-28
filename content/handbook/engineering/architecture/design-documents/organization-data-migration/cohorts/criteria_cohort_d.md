@@ -12,11 +12,11 @@ stale: false
 
 詳細な適格性基準が決まるまでのプレースホルダードキュメントです。
 
-| Attribute | Value |
+| 属性 | 値 |
 | --- | --- |
-| Cohort name | Active long tail opt-in |
-| Target size | 約 10,000 Organization |
-| Visibility | Private のみ |
-| Engagement model | オプトイン、セルフサービス |
-| Prerequisite | 機能パリティ |
-| Expected impact | WAL 飽和度とデータベースサイズの少なくとも 10% 削減 |
+| コホート名 | Active long tail opt-in |
+| 目標規模 | 約 10,000 Organization |
+| 可視性 | Private のみ |
+| エンゲージメントモデル | オプトイン、セルフサービス |
+| 前提条件 | 機能パリティ |
+| 想定される影響 | WAL 飽和度とデータベースサイズの少なくとも 10% 削減 |

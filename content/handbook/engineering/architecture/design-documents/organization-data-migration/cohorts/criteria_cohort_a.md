@@ -12,11 +12,11 @@ stale: false
 
 詳細な適格性基準が決まるまでのプレースホルダードキュメントです。
 
-| Attribute | Value |
+| 属性 | 値 |
 | --- | --- |
-| Cohort name | Subset of Inactive Free users |
-| Target size | 最大 5,000 Organization |
-| Visibility | Private のみ |
-| Engagement model | なし |
-| Prerequisite | Cohort 0 が、私たちが機能する移行プロセスを持っていることを検証済み。 |
-| Expected impact | データベースサイズへのわずかな影響 |
+| コホート名 | Subset of Inactive Free users |
+| 目標規模 | 最大 5,000 Organization |
+| 可視性 | Private のみ |
+| エンゲージメントモデル | なし |
+| 前提条件 | Cohort 0 が、私たちが機能する移行プロセスを持っていることを検証済み。 |
+| 想定される影響 | データベースサイズへのわずかな影響 |
