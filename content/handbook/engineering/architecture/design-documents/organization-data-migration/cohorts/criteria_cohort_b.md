@@ -1,5 +1,5 @@
 ---
-title: 'Cohort B: Active opt-in Beta'
+title: 'コホート B: アクティブなオプトイン Beta'
 owning-stage: "~devops::tenant scale"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_b/

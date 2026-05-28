@@ -1179,8 +1179,8 @@ erDiagram
   削除する必要があります（[Cleanup tasks](#cleanup-tasks) を参照）。
 
   ```sql
-  -- 新しい blob とアタッチメント（id=789）は同じトランザクション内の早い段階で作成されます。
-  -- 以下のインターバルは、設定された `npm.packument_cache_ttl`（デフォルト 7 日）をミラーリングします。
+  -- The new blob and attachment (id=789) are created earlier in the same transaction.
+  -- The interval below mirrors the configured `npm.packument_cache_ttl` (default 7 days).
   WITH old AS (
     SELECT blob_storage_attachment_id, blob_sha256
     FROM npm_metadata_files

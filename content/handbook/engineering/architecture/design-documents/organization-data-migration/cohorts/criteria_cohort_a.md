@@ -1,5 +1,5 @@
 ---
-title: 'Cohort A: Subset of Inactive Free Users'
+title: 'コホート A: 非アクティブな Free ユーザーのサブセット'
 owning-stage: "~devops::tenant scale"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_a/

@@ -1,5 +1,5 @@
 ---
-title: 'Cohort C: Top 1000 Opt-In'
+title: 'コホート C: 上位 1000 オプトイン'
 owning-stage: "~devops::tenant scale"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_c/
