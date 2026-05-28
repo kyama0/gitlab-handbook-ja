@@ -164,8 +164,7 @@ Dedicated Migration チームは [GitLab の有給休暇ポリシー](/handbook/
 
 ##### Dedicated Migration チームのカレンダー
 
-1. [**Dedicated Migrations Team Calendar**](https://calendar.google.com/calendar/embed?src=c_fb53e24f590edfb8f313253126123e48d57254dd73266fae6547a2a4890b0c82%40group.calendar.google.com&ctz=America%2FVancouver)
-チームカレンダーへのアクセス権があることを確認してください。
+1. [**Dedicated Migrations Team Calendar**](https://calendar.google.com/calendar/embed?src=c_fb53e24f590edfb8f313253126123e48d57254dd73266fae6547a2a4890b0c82%40group.calendar.google.com&ctz=America%2FVancouver) のチームカレンダーへのアクセス権があることを確認してください。
    1. アクセス権がない場合は、自分が Dedicated Migrations Team（`dedicated-migrations-team@`）の一員かどうかを確認してください。一員でない場合は、Access Request を通じて追加を依頼してください。
 
 1. Google カレンダーと Time Off by Deel の連携を設定し、自分の個人カレンダーと「Dedicated Migrations Team」カレンダーを手動で入力する必要がないようにします。
@@ -198,7 +197,7 @@ Dedicated Migration チームは [GitLab の有給休暇ポリシー](/handbook/
 
 #### PTO の後
 
-[returning from pto](/handbook/people-group/time-off-and-absence/time-away-philosophy/#transitioning-back-mindfully) を参照してください。
+[PTO から戻る](/handbook/people-group/time-off-and-absence/time-away-philosophy/#transitioning-back-mindfully) を参照してください。
 
 ## リソース
 
