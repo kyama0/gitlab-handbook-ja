@@ -1786,11 +1786,11 @@
     },
     "content/handbook/company/working-groups/_index.md": {
       "path": "content/handbook/company/working-groups/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T09:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f8376aab06b838d169b94890d58a35bafc43341740011bc7f0f911a2054820f3",
-      "upstream_committed_at": "2025-09-24T11:45:16+01:00"
+      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
+      "translated_at": "2026-05-29T21:13:52Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ec52a884d37be9981e46a80c657b60dd5329adb61be7816b9755545c3a6afc08",
+      "upstream_committed_at": "2026-05-29T14:14:34+02:00"
     },
     "content/handbook/company/working-groups/account-escalation-process.md": {
       "path": "content/handbook/company/working-groups/account-escalation-process.md",
@@ -2287,14 +2287,6 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "0615aad6784f32f7b91299883c5330e1dcd3c3ffebf331a4e4cc7b0f72a4ab00",
       "upstream_committed_at": "2025-06-03T23:53:00+00:00"
-    },
-    "content/handbook/company/working-groups/leading-organizations.md": {
-      "path": "content/handbook/company/working-groups/leading-organizations.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "d6e2552d88e09784a2b1d9655953340d5f4cd3a35fb333a5537d522e9ef4b9e7",
-      "upstream_committed_at": "2025-07-17T16:59:31+00:00"
     },
     "content/handbook/company/working-groups/learning-experience.md": {
       "path": "content/handbook/company/working-groups/learning-experience.md",
@@ -6506,11 +6498,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/cells/impacted_features/ci-cd-catalog.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/impacted_features/ci-cd-catalog.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T10:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "bb5d9456b0088b6694ba732e5c09ab2692e25cc297eaebb18abe99328cbdc288",
-      "upstream_committed_at": "2026-02-17T12:32:13+13:00"
+      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
+      "translated_at": "2026-05-29T21:19:23Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8146ed756467383b1be501a160711a0a69c2bd7c8c809e9c2f4d1e472bd35031",
+      "upstream_committed_at": "2026-05-29T10:36:09+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/impacted_features/ci-runners.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/impacted_features/ci-runners.md",
@@ -12490,11 +12482,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
+      "translated_at": "2026-05-29T21:13:52Z",
       "model": "claude-opus-4-7",
-      "input_hash": "46a1a0128942c546d167296fdb10fe4641a64437dc28493b027c0d7ffbefee50",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "input_hash": "8f7f79541c115baef1e349d3e546e66f891a907380f89581459598007bcfe08d",
+      "upstream_committed_at": "2026-05-29T14:14:34+02:00"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/onboarding.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/onboarding.md",
@@ -12730,11 +12722,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/build/merge_requests.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/build/merge_requests.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-28T23:09:27Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "6da54fb6921b3e62c3c4e3a5f7e09b6fec4385a4835007a4403f69b28edec1f1",
-      "upstream_committed_at": "2025-06-04T16:03:37+01:00"
+      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
+      "translated_at": "2026-05-29T21:13:52Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53d5d546f2ffca40ed309cb83b73ac2d9dd587f9a13e055f6152b49b0b1dd762",
+      "upstream_committed_at": "2026-05-29T14:14:34+02:00"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/build/training.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/build/training.md",
@@ -12882,11 +12874,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/merge_requests.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/merge_requests.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T00:11:38Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "6da54fb6921b3e62c3c4e3a5f7e09b6fec4385a4835007a4403f69b28edec1f1",
-      "upstream_committed_at": "2025-04-16T11:23:19-05:00"
+      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
+      "translated_at": "2026-05-29T21:13:52Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53d5d546f2ffca40ed309cb83b73ac2d9dd587f9a13e055f6152b49b0b1dd762",
+      "upstream_committed_at": "2026-05-29T14:14:34+02:00"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/training.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/training.md",
@@ -14266,11 +14258,11 @@
     },
     "content/handbook/engineering/workflow/code-review.md": {
       "path": "content/handbook/engineering/workflow/code-review.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
+      "translated_at": "2026-05-29T21:13:52Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ac545a8b395f861acdccbec51183b56738726d03734294997491a4992a92b953",
-      "upstream_committed_at": "2026-05-15T14:47:04-06:00"
+      "input_hash": "ae93d163389d2ee13f64e4e94b34b8aa920de0bb9f92335c06fdaa9d32c9966f",
+      "upstream_committed_at": "2026-05-29T14:14:34+02:00"
     },
     "content/handbook/engineering/workflow/cross-functional-prioritization.md": {
       "path": "content/handbook/engineering/workflow/cross-functional-prioritization.md",
@@ -18762,11 +18754,11 @@
     },
     "content/handbook/marketing/developer-relations/programs/strategic-plans/contributor-program-unification.md": {
       "path": "content/handbook/marketing/developer-relations/programs/strategic-plans/contributor-program-unification.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
+      "translated_at": "2026-05-29T21:13:52Z",
       "model": "claude-opus-4-7",
-      "input_hash": "b041b79e6fda46d0f074267b2825e84929ccdb9f843c2346a54001d02c8ca9c5",
-      "upstream_committed_at": "2026-03-20T07:59:46-04:00"
+      "input_hash": "08cfb4969580e11b86117b603e9de8a75807191532cffc44bfbd9846fb29d7e1",
+      "upstream_committed_at": "2026-05-29T14:01:46+02:00"
     },
     "content/handbook/marketing/developer-relations/technical-marketing/_index.md": {
       "path": "content/handbook/marketing/developer-relations/technical-marketing/_index.md",
@@ -20394,11 +20386,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
+      "translated_at": "2026-05-29T21:15:50Z",
       "model": "claude-opus-4-7",
-      "input_hash": "311430f486fbcfbc1e7ed2cc889ebf0c917592a7eaa22cf6b6a5eeb8c9626938",
-      "upstream_committed_at": "2026-05-27T18:15:53-05:00"
+      "input_hash": "5a7f30bd43b36cd0c5022c04bdb8de5564523969934b915dffcdbd293377cc5e",
+      "upstream_committed_at": "2026-05-28T09:55:19+00:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md",
@@ -22314,11 +22306,11 @@
     },
     "content/handbook/support/workflows/usgovernment_tickets.md": {
       "path": "content/handbook/support/workflows/usgovernment_tickets.md",
-      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
-      "translated_at": "2026-05-08T04:02:00Z",
+      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
+      "translated_at": "2026-05-29T21:19:23Z",
       "model": "claude-opus-4-7",
-      "input_hash": "55e8d54978ae632a9b01b97fa197d224ee12cf3bf23e49ca8b6ad6617f981425",
-      "upstream_committed_at": "2026-01-21T12:28:59-06:00"
+      "input_hash": "4677c1717bdc1401fe79a1636bf846883d3e5f4eb68446cfe8329a26eaa1f890",
+      "upstream_committed_at": "2026-05-28T19:25:37-07:00"
     },
     "content/handbook/support/workflows/verify_pages_domain.md": {
       "path": "content/handbook/support/workflows/verify_pages_domain.md",
@@ -29650,11 +29642,11 @@
     },
     "content/handbook/sales/field-operations/channel-operations/_index.md": {
       "path": "content/handbook/sales/field-operations/channel-operations/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
+      "translated_at": "2026-05-29T21:23:52Z",
       "model": "claude-opus-4-7",
-      "input_hash": "b22f2d040e5d0ae7e68649c50c04f6a8daa5d3ebcb6d45c1cf802f099c4ab72c",
-      "upstream_committed_at": "2026-05-27T18:55:51-07:00"
+      "input_hash": "837216693ae67a05fcf0e39a9c48dc8f54b354737ea032ff01a48612efc54a93",
+      "upstream_committed_at": "2026-05-28T15:04:41-07:00"
     },
     "content/handbook/sales/field-operations/channel-operations/partner-faq.md": {
       "path": "content/handbook/sales/field-operations/channel-operations/partner-faq.md",
@@ -32650,11 +32642,11 @@
     },
     "content/handbook/marketing/sales-development/_index.md": {
       "path": "content/handbook/marketing/sales-development/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
+      "translated_at": "2026-05-29T21:19:23Z",
       "model": "claude-opus-4-7",
-      "input_hash": "8a858a3cbe8de831bda4452ffa2c33aebb3df3436d95fcf3422bfca56e88886a",
-      "upstream_committed_at": "2026-05-26T10:53:38+01:00"
+      "input_hash": "5433f53cdcf5e58d7953d623d990e17dfb1d419870f2ad92e12216fa0019596d",
+      "upstream_committed_at": "2026-05-29T12:37:00+01:00"
     },
     "content/handbook/marketing/sales-development/tanuki-tech.md": {
       "path": "content/handbook/marketing/sales-development/tanuki-tech.md",

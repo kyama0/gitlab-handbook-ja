@@ -2,11 +2,11 @@
 title: "Triage Operations"
 description: "GitLab でトリアージされていない Issue を処理するための自動化とツール"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/"
-upstream_sha: "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1"
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc"
+translated_at: "2026-05-29T21:13:52Z"
 translator: claude
 stale: false
-lastmod: "2026-05-22T14:47:44+02:00"
+lastmod: "2026-05-29T14:14:34+02:00"
 ---
 
 GitLab のすべてのチームメンバーは Issue をトリアージできます。[トリアージされていない Issue](/handbook/product-development/how-we-work/issue-triage/#triaging-issues) の数を少なく保つことはメンテナビリティにとって不可欠であり、私たちの共同責任です。
@@ -441,16 +441,6 @@ graph LR
   * `#mr-feedback` Slack チャンネル（内部）にコントリビューターのフィードバックノートを投稿する
 * レート制限: リクエスター/MR ごとに 1 日に 1 回
 * プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/command_mr_feedback.rb>
-
-#### リーディングオーガナイゼーションラベラー
-
-* 自動化条件:
-  * MR がオープンまたは更新された
-  * MR に `Leading Organization` ラベルが設定されていない
-  * MR の著者が Sisense のデータに基づいて[リーディングオーガナイゼーション](/handbook/engineering/workflow/code-review/#leading-organizations)からである
-* 自動化アクション:
-  * `Leading Organization` ラベルを追加する
-* プロセッサ: <https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/community/label_leading_organization.rb>
 
 #### ハッカソンラベラー
 

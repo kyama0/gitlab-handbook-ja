@@ -2,11 +2,11 @@
 title: "DistributionチームのマージリクエストHandbook"
 description: "Distributionエンジニアが行うマージリクエストのワークフローと責任。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/gitlab-delivery/build/merge_requests/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-28T23:09:27Z"
+upstream_sha: "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc"
+translated_at: "2026-05-29T21:13:52Z"
 translator: claude
 stale: false
-lastmod: "2025-06-04T16:03:37+01:00"
+lastmod: "2026-05-29T14:14:34+02:00"
 ---
 
 ## はじめに
@@ -57,7 +57,6 @@ Distributionチームはコードレビュープロセスで[Reviewers機能](ht
 Distributionチームの負荷を考慮して、SLOは会社全体のものよりも長く設定されています：
 
 - GitLabチームメンバーから: Review-response SLO < 4営業日
-- [Leading Organizations](/handbook/engineering/workflow/code-review/#leading-organizations)の作者から: Review-response SLO < 6営業日
 
 チームは、チームの拡大と技術的負債の解消に応じて、会社全体のSLO基準に戻ることを目指しています。
 

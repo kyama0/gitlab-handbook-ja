@@ -2,11 +2,11 @@
 title: コードレビューガイドライン
 description: "コードレビューはすべてのマージリクエストで必須です。コードレビューガイドラインに慣れ、それに従ってください。"
 upstream_path: "/handbook/engineering/workflow/code-review/"
-upstream_sha: "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1"
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc"
+translated_at: "2026-05-29T21:13:52Z"
 translator: claude
 stale: false
-lastmod: "2026-05-15T14:47:04-06:00"
+lastmod: "2026-05-29T14:14:34+02:00"
 ---
 
 ## 概要
@@ -456,18 +456,6 @@ https://10az.online.tableau.com/#/site/gitlab/views/MaintainershipDemand/Maintai
 
 https://10az.online.tableau.com/#/site/gitlab/workbooks/2286852/views
 
-## リーディングオーガニゼーション
-
-すべての広いコミュニティメンバーとその組織は貢献できます。私たちは、オープンソース、特に GitLab への貢献が組織とそのメンバーにとって競争上の優位性であると強く信じており、貢献してくれる組織に報いたいと考えています。GitLab は、[頻繁でアトミックなイテレーション](/handbook/values/#iteration)での貢献を強く奨励、祝福、報奨します。所属のない組織または個人が、過去 3 か月で完了した期間内にマージされたマージリクエストを 20 件以上達成した場合、その組織または個人を ```Leading Organization``` と見なします。
-
-組織は、[プロフィール](https://gitlab.com/-/profile)の ```Organization``` フィールドに基づいてマッチングされます。GitLab は、Contributor Success チームが利用できる他のメタデータを使用して、個人を組織にマッチングすることもできます。あなたまたはあなたの組織が資格を持つはずだが、マージリクエストに ```Leading Organization``` ラベルが付いていないと考える場合は、[Contributor Success のキューに Issue を作成](https://gitlab.com/gitlab-com/quality/contributor-success/-/issues)してください。
-
-```Leading Organization``` は[レビュー応答 SLO](#review-response-slo) を受ける権利があります。この権利は毎月の初めに付与されます。組織が ```Leading Organization``` ステータスを得る時間内に作成されたマージリクエストには、```Leading Organization``` ラベルが付与されます。
-
-> Leading Organization = 過去 3 か月で完了した期間内にマージされたマージリクエスト 20 件以上。
-
-対象となるマージリクエストには、[GitLab プロダクト](/handbook/product/groups/product-analysis/engineering/dashboards/)とドキュメントへの貢献が含まれます。[www-gitlab-com](https://gitlab.com/gitlab-com/www-gitlab-com) リポジトリ（たとえば GitLab ハンドブック）への貢献は、現在含まれておらず、レビュー応答 SLO の対象にもなりません。
-
 ## ドメインエキスパート
 
 私たちの[コードレビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html)では、デフォルトでドメインの専門知識を持つチームメンバーにレビューを割り当てると述べています。
@@ -529,7 +517,7 @@ domain_expertise:
 ### レビュー応答 SLO
 
 レビュー準備が整ったコードに迅速なフィードバックを保証するため、私たちは `Review-response` サービスレベル目標 (SLO) を維持しています。
-SLO は GitLab チームメンバーと[リーディングオーガニゼーション](#leading-organizations)に適用されますが、他のより広いコミュニティ貢献者には適用されません。
+SLO は GitLab チームメンバーに適用されますが、他のより広いコミュニティ貢献者には適用されません。
 
 SLO は次のように定義されます:
 
@@ -538,7 +526,6 @@ SLO は次のように定義されます:
 SLO 値はマージリクエストの作成者によって異なります:
 
 - GitLab チームメンバーから: `Review-response` SLO < 2 営業日
-- [リーディングオーガニゼーション](#leading-organizations)の作成者から: `Review-response` SLO < 4 営業日
 
 `Review-response` SLO の時間枠内にマージリクエストをレビューできないと思う場合は、コメントでできるだけ早く（レビューリクエストを最初に受け取ってから 36 時間以内まで）作成者に知らせ、他のレビュアーまたはメンテナを探すのを手伝うようにしてください。これにより、作成者はブロックを解除して、自分の仕事を素早く進められます。レビュアーから自分を外してください。
 
