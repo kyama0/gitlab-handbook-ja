@@ -3,11 +3,11 @@ title: 米国政府向けサポートチケットへの対応
 category: Handling tickets
 description: "米国政府向けチケットへの対応方法を解説するサポートエンジニアリングのワークフロー"
 upstream_path: /handbook/support/workflows/usgovernment_tickets/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T04:02:00Z"
+upstream_sha: "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc"
+translated_at: "2026-05-29T21:19:23Z"
 translator: claude
 stale: false
-lastmod: "2026-01-21T12:28:59-06:00"
+lastmod: "2026-05-28T19:25:37-07:00"
 ---
 
 米国政府向けサポートでは、[重み付きラウンドロビンアルゴリズム](#ticket-assignment-via-round-robin) を用いてサポートエンジニアにチケットをアサインしています。
