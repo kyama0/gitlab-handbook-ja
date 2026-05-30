@@ -2,11 +2,11 @@
 title: 'チケット'
 description: 'Zendesk のチケットに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/zendesk/tickets/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 2df36dad62472045896e9f3de87f1d065fb52124
+translated_at: "2026-05-30T21:11:20Z"
 translator: claude
 stale: false
-lastmod: "2026-05-26T12:05:00-05:00"
+lastmod: "2026-05-29T19:15:43-05:00"
 ---
 
 このガイドでは、チケットステータス、システム設定、サポートオペレーションの一般的なワークフローを含む、Zendesk のチケット管理について説明します。
@@ -102,21 +102,23 @@ GitLab では、これらを少し異なる形で定義します。
 - タグ
   - [x] チケット上のタグを有効にする
     - [ ] 自動チケットタグ付けを有効にする
-- CC
-  - [x] チケット上の CC を有効にする
-    - [ ] エージェントのみが CC を追加できるようにする
-    - [x] Help Center のエンドユーザーに対して CC を有効にする
-    - CC ブラックリスト: `noreply@google.com`
-    - CC メール件名: `[{{ticket.account}}] Update: {{ticket.title}}`
-    - CC メール本文:
+- チケット上の CC とフォロワー
+  - [x] フォロワーを許可
+    - フォロワーメールをカスタマイズ: `{{ticket.title}}`
+    - メール本文を作成
 
       ```plaintext
-      You are registered as a CC on this support request ({{ticket.link}}). Reply to this email to add a comment to the request.
+      You are a follower on this request ({{ticket.id}}). {{ticket.follower_reply_type_message}}
 
       {{ticket.comments_formatted}}
-
       ```
 
+  - [x] CC を許可
+    - CC とフォロワーのブロックリスト: `noreply@google.com`
+    - [x] ライトエージェントをチケットに追加できるようにする
+    - [x] エンドユーザーがリクエストに CC を追加できるようにする
+  - [x] CC されたエージェントを自動的にフォロワーにする
+  - [ ] エージェントが依頼者を変更できるようにする
 - 割り当て
   - [x] 解決時にチケットを自動割り当て
   - [x] 一般グループへの再割り当てを許可
@@ -164,19 +166,20 @@ GitLab では、これらを少し異なる形で定義します。
 - タグ
   - [x] チケット上のタグを有効にする
     - [ ] 自動チケットタグ付けを有効にする
-- CC
-  - [x] フォロワーを有効にする
-    - フォロワーメール件名: `{{ticket.title}}`
-    - フォロワーメールテンプレート:
+- チケット上の CC とフォロワー
+  - [x] フォロワーを許可
+    - フォロワーメールをカスタマイズ: `{{ticket.title}}`
+    - メール本文を作成
 
       ```plaintext
-      You are a follower on this request ({{ticket.link}}). {{ticket.follower_reply_type_message}}
+      You are a follower on this request ({{ticket.id}}). {{ticket.follower_reply_type_message}}
 
       {{ticket.comments_formatted}}
       ```
 
-  - [ ] CC を有効にする
-  - [ ] エージェント CC を自動的にフォロワーにする
+  - [ ] CC を許可
+  - [~] CC されたエージェントを自動的にフォロワーにする
+  - [ ] エージェントが依頼者を変更できるようにする
 - 依頼者
   - [ ] エージェントが依頼者を変更できる
 - 割り当て

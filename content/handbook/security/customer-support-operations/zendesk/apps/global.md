@@ -2,11 +2,11 @@
 title: 'グローバルアプリ'
 description: 'Zendesk グローバルアプリに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/zendesk/apps/global/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 2df36dad62472045896e9f3de87f1d065fb52124
+translated_at: "2026-05-30T21:11:20Z"
 translator: claude
 stale: false
-lastmod: "2026-05-26T12:05:00-05:00"
+lastmod: "2026-05-29T19:15:43-05:00"
 ---
 
 このガイドでは、グローバル Zendesk インスタンスで現在使用されている Zendesk アプリについて説明します。
@@ -48,7 +48,7 @@ Reminders App はナビバーに表示され、エージェントが関与して
 - Closed 状態ではない、ペンディング/期限超過のタスクが付いた、自分にアサインされたチケット
 - 最近自分が閲覧したチケット
 - Closed 状態ではない、自分にアサインされたチケット
-- Closed 状態ではない、自分が CC されているチケット
+- Closed 状態ではない、自分がフォローしているチケット
 
 また、タスクのために残したメモ、いつ期限を迎えるか、タスクを完了済みとしてすばやくマーク (メモと期限日の削除) するボタンを見ることで、自分のタスクをすばやく管理できます。
 
@@ -169,7 +169,7 @@ Glean を通じて次が可能です:
   - 通知を受け取るチケットの種類をアプリに伝えます
   - 値:
     - Assigned tickets only
-    - CC'd tickets only
+    - Followed tickets only
     - All tickets
 - Notify me about
   - 通知を受け取るイベントの種類をアプリに伝えます
@@ -198,7 +198,7 @@ Glean を通じて次が可能です:
   - チケットがブリーチ間近 (2 時間以内) のときに、アプリ経由で通知を受けたいかを指定します
   - 値:
     - Assigned tickets only
-    - CC'd tickets only
+    - Followed tickets only
     - Tickets within my SGG only
     - All tickets
   - 注意: これは他のすべての設定と独立して機能します。
