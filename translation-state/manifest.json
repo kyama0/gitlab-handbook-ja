@@ -26322,11 +26322,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/apps/global.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/apps/global.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "2df36dad62472045896e9f3de87f1d065fb52124",
+      "translated_at": "2026-05-30T21:11:20Z",
       "model": "claude-opus-4-7",
-      "input_hash": "065f9e64fab76127b9d0c806b7146e100460c2559dd6c5609b777126e2daa05c",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "input_hash": "c9c9e6cc1530e136261bfb065e0a1479f25ac3e703a3e1efa180c293baaef3e6",
+      "upstream_committed_at": "2026-05-29T19:15:43-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/apps/us-government.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/apps/us-government.md",
@@ -26434,11 +26434,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/liquid/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/liquid/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "2df36dad62472045896e9f3de87f1d065fb52124",
+      "translated_at": "2026-05-30T21:11:20Z",
       "model": "claude-opus-4-7",
-      "input_hash": "31d804aeb73014252c1fa66a0138609837283702c5b3ddc053639a1c1afe865a",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "input_hash": "334ae7b60486d8bca25932d2a54e7b11b39beeaefab16e49203831cd3026f5a4",
+      "upstream_committed_at": "2026-05-29T19:15:43-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/macros/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/macros/_index.md",
@@ -26562,11 +26562,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/tickets/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/tickets/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "2df36dad62472045896e9f3de87f1d065fb52124",
+      "translated_at": "2026-05-30T21:11:20Z",
       "model": "claude-opus-4-7",
-      "input_hash": "8272fce9d3b99af6fce7e49dd4d24c50a9972adce1f4c82dafd9b756c498dfd1",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "input_hash": "c550974ac8d01d47a6c38f77a2ffe047c0d21ced7105386b50405cf078596150",
+      "upstream_committed_at": "2026-05-29T19:15:43-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/tickets/fields.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/tickets/fields.md",
