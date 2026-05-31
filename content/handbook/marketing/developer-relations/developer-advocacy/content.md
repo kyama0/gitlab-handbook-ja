@@ -2,11 +2,11 @@
 title: "デベロッパーアドボケイトのコンテンツライブラリとワークフロー"
 description: "デベロッパーアドボカシーチームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/content/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T12:00:00Z"
+upstream_sha: 15baf9cba6d48a5e5ac2f021a8e0d467baa862f1
+translated_at: "2026-05-31T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-07T19:11:22+02:00"
+lastmod: "2026-05-28T17:02:01+09:00"
 ---
 
 デベロッパーアドボカシーチームは、キャンペーン、フィールドイネーブルメント、製品ローンチサポート、ユースケース採用、顧客向けデモ、一般的な学習・オンボーディングに使用できるコンテンツを作成しています。チームが参加するすべてのコンテンツとアクティビティは、[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/) に従って Issue で追跡されます。
@@ -87,6 +87,7 @@ lastmod: "2026-05-07T19:11:22+02:00"
 
 | タイトル | 分野 | 最終更新 | DRI |
 |-------|------|--------------|-----|
+| [External agents - GitLab-managed - Japanese](https://gitlab.navattic.com/external-agents-managed-jp) | GitLab Duo Agent Platform | 2026-05-28 | @nakiyama-ext |
 | [GitLab Duo Agent Platform](https://dap-demo-hub-dac14a.gitlab.io/) | GitLab Duo Agent Platform | 2025-09-14 | @iganbaruch |
 | [GitLab MCP Server with Cursor - Japanese](https://gitlab.navattic.com/gitlab-mcp-server-jp) | GitLab Duo Agent Platform | 2025-12-10 | @nakiyama-ext |
 | [GitLab Duo Agent Platform - MCP - Japanese](https://gitlab.navattic.com/mcp-ja) | GitLab Duo Agent Platform | 2025-10-15 | @nakiyama-ext |
