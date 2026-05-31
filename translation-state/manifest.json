@@ -18426,11 +18426,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/content.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/content.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T12:00:00Z",
+      "upstream_sha": "15baf9cba6d48a5e5ac2f021a8e0d467baa862f1",
+      "translated_at": "2026-05-31T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "926a0ef4641877f7fd77780134ccf606a507b3140b2cf55d8ff26e9be6f15d46",
-      "upstream_committed_at": "2026-05-07T19:11:22+02:00"
+      "input_hash": "31892328b374a2c120fd1332443a6814cf9e26229388d69e19b5326a6605ce91",
+      "upstream_committed_at": "2026-05-28T17:02:01+09:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md",
