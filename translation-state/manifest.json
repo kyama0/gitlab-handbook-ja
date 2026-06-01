@@ -266,11 +266,11 @@
     },
     "content/handbook/business-technology/enterprise-applications/guides/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T05:49:40Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1fad7ff38e02115915e6ed1d2019beac0051d242da9d6381071d00fdd46c5b16",
-      "upstream_committed_at": "2026-02-10T15:03:48+00:00"
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:12:29Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2ace7df44ff2f08e3b695b35acc205e444d44994aef1739fa307c60dae505550",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
     },
     "content/handbook/business-technology/enterprise-applications/guides/coupa-guide/_index.md": {
       "path": "content/handbook/business-technology/enterprise-applications/guides/coupa-guide/_index.md",
@@ -10530,11 +10530,11 @@
     },
     "content/handbook/engineering/data-engineering/database-excellence/database-health/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/database-health/_index.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-28T04:23:44Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "85867b423294501c3fe464d952fcca3caaae3f92f262c5f88b0597e44d53bdbc",
-      "upstream_committed_at": "2026-03-26T11:40:30-05:00"
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:12:29Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0bc8247c80d02d60e933fe8da55c0229130d3938a651da6d5c67471781e49490",
+      "upstream_committed_at": "2026-06-01T13:57:16-05:00"
     },
     "content/handbook/engineering/data-engineering/database-excellence/database-operations/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/database-operations/_index.md",
@@ -15242,11 +15242,11 @@
     },
     "content/handbook/eta/ai/_index.md": {
       "path": "content/handbook/eta/ai/_index.md",
-      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
-      "translated_at": "2026-04-29T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "7d9c0b0e17ea25a6a8806de640cc33f0a017ff9969e1eeaa9c1634c56effa1f4",
-      "upstream_committed_at": "2026-02-12T17:03:36-05:00"
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:12:29Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d50b88f665a0254fb57610b96fefad83c34535f5acae4d0f1f8ac26bcd322996",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
     },
     "content/handbook/eta/arb/_index.md": {
       "path": "content/handbook/eta/arb/_index.md",
@@ -17882,11 +17882,11 @@
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/pricing-tiers.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/pricing-tiers.md",
-      "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
-      "translated_at": "2026-04-30T12:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:12:29Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7965ef0900753e3e3812fe3f55983e14b16a7ca5c0d8675373343146207f5d20",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
+      "input_hash": "dfb760a3bdf802b7ec286af98723b97f1c87672825d88e22a537f06e0294cd29",
+      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/public-sector-gtm.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/public-sector-gtm.md",
@@ -24418,11 +24418,11 @@
     },
     "content/handbook/security/security-assurance/field-security/field-security-rfp.md": {
       "path": "content/handbook/security/security-assurance/field-security/field-security-rfp.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:12:29Z",
       "model": "claude-opus-4-7",
-      "input_hash": "c19bdca7c84e3841c1293bdc51b1de0a14ddacbe66a99c5e59d935c32aa985f3",
-      "upstream_committed_at": "2026-03-30T16:18:36+00:00"
+      "input_hash": "e152922de8aac2b97b4bb97d0ce39ebfde516ef660e02d75589b4ce6fd97671c",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
     },
     "content/handbook/security/security-assurance/field-security/field-security-study.md": {
       "path": "content/handbook/security/security-assurance/field-security/field-security-study.md",
@@ -31466,11 +31466,11 @@
     },
     "content/handbook/product/product-processes/tiering-guidance-for-features.md": {
       "path": "content/handbook/product/product-processes/tiering-guidance-for-features.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:12:29Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1ef1273e9a5e3735e9ad8adcfbbd604c9275a5490a97714ea345831976b0330e",
-      "upstream_committed_at": "2026-01-23T15:08:44-08:00"
+      "input_hash": "f2003b973a9b584fb59511e36b0c812e7b6b06f1eed7f59ec07f568fe6db0f45",
+      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
     "content/handbook/product/product-processes/pm-tips-and-tricks/_index.md": {
       "path": "content/handbook/product/product-processes/pm-tips-and-tricks/_index.md",
@@ -31538,11 +31538,11 @@
     },
     "content/handbook/product/product-management/product-manager-buddy-tasks.md": {
       "path": "content/handbook/product/product-management/product-manager-buddy-tasks.md",
-      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
-      "translated_at": "2026-05-22T21:55:06Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:12:29Z",
       "model": "claude-opus-4-7",
-      "input_hash": "435258ecaa878392b871079ae3db1189fc9bb357ae177cd19041fc7029adb3dc",
-      "upstream_committed_at": "2026-05-20T09:32:02-07:00"
+      "input_hash": "837a5a9e8da079bb7ce7936e46b41acea82f66c43a6d59a8145e39ea025ad38d",
+      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
     "content/handbook/product/product-management/product-manager-role.md": {
       "path": "content/handbook/product/product-management/product-manager-role.md",
@@ -32991,6 +32991,46 @@
       "model": "claude-opus-4-7",
       "input_hash": "8b97a8c36c5d0cc615acfc8fe12183e06323574f8dd0c869646b066ecdc69bac",
       "upstream_committed_at": "2026-05-28T15:12:07-04:00"
+    },
+    "content/handbook/eta/ai/strategy/_index.md": {
+      "path": "content/handbook/eta/ai/strategy/_index.md",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:12:29Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e8e6c56f1b0be7f23be8405bea70ac5d031387b4c0446b74f568fa3cc0bce12c",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+    },
+    "content/handbook/eta/ai/tools/_index.md": {
+      "path": "content/handbook/eta/ai/tools/_index.md",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:12:29Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "932def56708fbe2f38a010b9e8edb4cce40d765d2fff8dc37f536fb9eb843bd1",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+    },
+    "content/handbook/eta/ai/tools/relevance-ai/_index.md": {
+      "path": "content/handbook/eta/ai/tools/relevance-ai/_index.md",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:12:29Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d865cfa9a4f780e4376ef366c1f670bad0057422fe0ab3d594a3a7096ef75b61",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+    },
+    "content/handbook/eta/ai/tools/claude/_index.md": {
+      "path": "content/handbook/eta/ai/tools/claude/_index.md",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:12:29Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6ffda797381e7de5e89cb46ffdbd8572713a198f7179cc1e42b59135da86144a",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+    },
+    "content/handbook/eta/ai/strategy/hub-and-spoke/_index.md": {
+      "path": "content/handbook/eta/ai/strategy/hub-and-spoke/_index.md",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:12:29Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0f7dc980ccd911705306323ce49945ed06f9002ebe19e16b4b5492b5572d87d1",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
     }
   }
 }

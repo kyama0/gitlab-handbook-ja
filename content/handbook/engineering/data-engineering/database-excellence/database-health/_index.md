@@ -2,11 +2,11 @@
 title: "データベースヘルスチーム"
 description: "データベースヘルスチームは、ヘルスモニタリング、オブザーバビリティ、シフトレフトによるサチュレーション検出、および GitLab.com とセルフマネージドデプロイメント向けのヘルスフレームワークを通じて、GitLab のデータベースの運用上の余裕を維持します。"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/database-health/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-28T04:23:44Z"
+upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
+translated_at: "2026-06-01T21:12:29Z"
 translator: claude
 stale: false
-lastmod: "2026-03-26T11:40:30-05:00"
+lastmod: "2026-06-01T13:57:16-05:00"
 ---
 
 データベースヘルスチームは、[データベースフレームワークチーム](/handbook/engineering/data-engineering/database-excellence/database-frameworks/)の分割によって誕生しました。
@@ -27,6 +27,5 @@ lastmod: "2026-03-26T11:40:30-05:00"
 
 チームは主にバックエンドエンジニアで構成され、インフラストラクチャおよび運用目標の達成を支援するリライアビリティエンジニアも在籍しています。役割にかかわらず、すべてのチームメンバーは他のデータベースエクセレンスチームと並んで、データベースレビュー、オンコールローテーション、および運用ニーズを含むステージレベルの責任を共有します。
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/data-engineering/database-excellence/database-health/" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{< group-by-slugs alexives krasimirangelov meiyang nbelokolodov rhenchen.gitlab stomlinson >}}
 
