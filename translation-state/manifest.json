@@ -29050,11 +29050,11 @@
     },
     "content/handbook/sales/onboarding/sales-learning-path/_index.md": {
       "path": "content/handbook/sales/onboarding/sales-learning-path/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-11T00:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T22:16:39Z",
       "model": "claude-opus-4-7",
-      "input_hash": "cd0bb5125bef2725d95ac208b0ce0f0a43a7c735f396466a87c9cf4a79851808",
-      "upstream_committed_at": "2026-05-08T14:07:20+02:00"
+      "input_hash": "c2f75e5c7dcd1799c0e8b8803bfbfeab83963baf99b7dbea125388fe9be2205f",
+      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
     "content/handbook/sales/onboarding/sales-learning-path/onboarding-process.md": {
       "path": "content/handbook/sales/onboarding/sales-learning-path/onboarding-process.md",
@@ -33078,6 +33078,14 @@
       "translated_at": "2026-06-01T22:09:08Z",
       "model": "claude-opus-4-7",
       "input_hash": "165d6b900a216c04e42baf8469cdcee0349df64b58cc8d3ed14aea11ffd1544c",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+    },
+    "content/handbook/eta/ai/tools/glean/_index.md": {
+      "path": "content/handbook/eta/ai/tools/glean/_index.md",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T22:16:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "31e28399733b6bc58574e31e7da970f798c129b936e9ab64b4abae623dd90070",
       "upstream_committed_at": "2026-06-01T17:35:18+01:00"
     }
   }

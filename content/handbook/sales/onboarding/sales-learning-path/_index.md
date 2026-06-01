@@ -2,11 +2,11 @@
 title: "セールス & カスタマーサクセス Quick Start 学習パス"
 description: "GitLab のセールス & カスタマーサクセスオンボーディングのコアカリキュラム"
 upstream_path: /handbook/sales/onboarding/sales-learning-path/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
+translated_at: "2026-06-01T22:16:39Z"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-06-01T12:55:15+02:00"
 ---
 
 ## セールス & カスタマーサクセス学習パス - コアカリキュラム
@@ -113,7 +113,7 @@ lastmod: "2026-05-08T14:07:20+02:00"
   - 以下は、後で確認したりブックマークしたいリソースです。
     - [GitLab 利用規約](https://about.gitlab.com/terms/)
     - [GitLab マーケティング資料リポジトリ](https://gitlab.com/gitlab-com/www-gitlab-com/tree/master/source/resources/downloads): GitLab.com マーケティング資料リポジトリをチェックして、私たちの最良かつ最も関連性の高いセールス資料をすべてご覧ください。これらのファイルを表示またはダウンロードするだけにし、ダウンロードしたコピーをクライアントに送って GitLab の価値を理解してもらえるよう自由に活用してください。
-    - [GitLab 価格モデル](/handbook/company/pricing/): 私たちの価格モデルを理解するためにチャートを確認してください。追加のコンテキストについては、[価格設定](https://about.gitlab.com/pricing/) のハンドブックページをご覧ください。
+    - [GitLab Pricing](https://about.gitlab.com/pricing/): 価格モデルを理解するために価格ページを確認してください。
 
 </details>
 
