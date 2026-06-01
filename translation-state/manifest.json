@@ -1746,11 +1746,11 @@
     },
     "content/handbook/company/stewardship.md": {
       "path": "content/handbook/company/stewardship.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "219bf204f02600b45a753a1f01e0332be93fa63579cf260b77eb7a49c0e0181b",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:39:56Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "c939308c6251d431ad3f802b13363022195359780ffd5851d880448e9dc732b6",
+      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
     "content/handbook/company/still-a-startup.md": {
       "path": "content/handbook/company/still-a-startup.md",
@@ -2762,11 +2762,11 @@
     },
     "content/handbook/customer-success/apj-customer-success.md": {
       "path": "content/handbook/customer-success/apj-customer-success.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:39:56Z",
       "model": "claude-opus-4-7",
-      "input_hash": "51aae5294aea0bfefbe4cb9522a0571cc4b8fee590fbde88bea9b490a25fec99",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
+      "input_hash": "353c95a0fd0d6d0491beb5553cf1240989ea7448cd9e1b0cd68a7385af59ae9c",
+      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
     "content/handbook/customer-success/comm-sales/_index.md": {
       "path": "content/handbook/customer-success/comm-sales/_index.md",
@@ -5442,11 +5442,11 @@
     },
     "content/handbook/eba/ceo-scheduling.md": {
       "path": "content/handbook/eba/ceo-scheduling.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "6946dbecf666ff5150fc8accb61175a87ea5a2e9ad3664c59ef34f78c35aad41",
-      "upstream_committed_at": "2025-12-01T16:21:31-05:00"
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:39:56Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ddc6883861699664ed394c66d144f40f52fa8242f8c0356fcdb662a88bd91d2d",
+      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
     "content/handbook/eba/e-group-scheduling.md": {
       "path": "content/handbook/eba/e-group-scheduling.md",
@@ -12282,11 +12282,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/_index.md",
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-05-06T12:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:39:56Z",
       "model": "claude-opus-4-7",
-      "input_hash": "739772e3791037e9c76fc490c9d7fd5e0ab172981595f1bb762b23d01c62923d",
-      "upstream_committed_at": "2026-03-05T11:15:18+00:00"
+      "input_hash": "804bd8101559f2329ced4778a6f71a6f8618e07f8b72643be48914269d878265",
+      "upstream_committed_at": "2026-06-01T15:57:46+02:00"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/ai/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/ai/_index.md",
@@ -26266,11 +26266,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/agent-workspace/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/agent-workspace/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:39:56Z",
       "model": "claude-opus-4-7",
-      "input_hash": "50e86f064658f576dd67d900f08a91bb611d4a0ec0255771e0bab49333ce191d",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "input_hash": "bb854536a91c0a9173627000402911a323781d6a51c3a3c24b078ae1caed3b67",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/analytics/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/analytics/_index.md",
