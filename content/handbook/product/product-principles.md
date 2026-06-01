@@ -2,11 +2,11 @@
 title: プロダクト原則
 description: "これらは、世界クラスのプロダクト組織が示すと私たちが信じる中核的な原則です。目標は、GitLab に合った方法でこれらの原則を育み、尊重する PM システムを構築することです。"
 upstream_path: /handbook/product/product-principles/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
+translated_at: "2026-06-01T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-05T20:15:31+00:00"
+lastmod: "2026-06-01T12:55:15+02:00"
 ---
 
 
@@ -496,7 +496,7 @@ GitLab のビジョンは、DevOps ツールチェーンのすべての部分に
   - そのような信じられないほどの幅を持つことで、GitLab には_GitLab と統合されていなければ持てなかった外部機能に価値を追加する機会_があります。たとえば、私たちの優れた **To Dos** 機能は、開発者の指先に実行可能な仕事を置きます。これは GitLab に多少独特の機能です。他の多くのツールは、即座のアクションが必要な仕事の特定を難しくするので、これらのツールを GitLab のこの部分と統合することで、**それらを単独よりもさらに強力にできます**。
 - **価格設定のために正しい buyer を考慮する**
   - 通常、_機能性を使用している_ 人を buyer の指標として考えますが、これは統合には適切ではないかもしれません。
-  - 統合が組織要件（会社のすべてのチームが Jira を使うなど）によって駆動される場合、[Buyer Based Tiering](/handbook/company/pricing/#buyer-based-tiering-clarification) は、その統合が_複数のチーム_（Premium）または_戦略的な組織_（Ultimate）使用のためのものであることを示す可能性が高いです。
+  - 統合が組織要件（会社のすべてのチームが Jira を使うなど）によって駆動される場合、Buyer Based Tiering は、その統合が_複数のチーム_（Premium）または_戦略的な組織_（Ultimate）使用のためのものであることを示す可能性が高いです。
   - 統合が_GitLab の capability を拡張する_ 場合、buyer はエンドユーザーである可能性が高く、他の GitLab 機能性の価格設定について考えるのと同様です。
 - **低い恥のレベルがここでも適用される**
   - 別のプロダクトとの統合を開始するとき、それは全く新しい作業カテゴリーを開くようなものです。これを念頭に、[low level of shame](/handbook/values/#low-level-of-shame-when-dogfooding) はどこでも適用されるのと同様に、ここでも適用されるという友好的なリマインダーです。統合は_今日_はあまり価値がないかもしれませんが、これは単なる出発地点であり、最初のイテレーションを使って次に属するものを検証すべきです。

@@ -30194,11 +30194,11 @@
     },
     "content/handbook/product/product-principles.md": {
       "path": "content/handbook/product/product-principles.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "5a9a9725f80163733b1de533e0638635d17b3f76a90ab0c758bacf753ed7316e",
-      "upstream_committed_at": "2026-02-05T20:15:31+00:00"
+      "input_hash": "561272faa859f4babbd58972d62d230ab4cb11efd508716bf4cf57d89bfcab98",
+      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
     "content/handbook/product/ux/_index.md": {
       "path": "content/handbook/product/ux/_index.md",
