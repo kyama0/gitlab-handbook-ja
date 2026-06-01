@@ -18922,11 +18922,11 @@
     },
     "content/handbook/marketing/developer-relations/workflows-tools/forum.md": {
       "path": "content/handbook/marketing/developer-relations/workflows-tools/forum.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T12:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "0bb939236a243567835abbc99856db5df4b8b798fde4265434b9ae62e0f8b1f3",
-      "upstream_committed_at": "2026-05-18T17:29:39-04:00"
+      "input_hash": "74b14ba4857a81c7e919cc0f51093b38d8d6ab8a16435f25c7d6f5cf35760e77",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
     },
     "content/handbook/marketing/developer-relations/workflows-tools/reddit.md": {
       "path": "content/handbook/marketing/developer-relations/workflows-tools/reddit.md",
@@ -25114,11 +25114,11 @@
     },
     "content/handbook/engineering/devops/create/source-code/backend/index.md": {
       "path": "content/handbook/engineering/devops/create/source-code/backend/index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "57de49997006bde639327bdbf7a87d06b6df617fb9489da45811f2595bb49041",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "input_hash": "c50db99926b04e6d56acc220e9f0e200b47b758d185da36c8bc803d342c395c9",
+      "upstream_committed_at": "2026-05-29T14:02:52-04:00"
     },
     "content/handbook/engineering/devops/create/talent-assessments/index.md": {
       "path": "content/handbook/engineering/devops/create/talent-assessments/index.md",

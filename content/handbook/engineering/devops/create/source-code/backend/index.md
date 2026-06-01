@@ -2,11 +2,11 @@
 title: "Create:Source Code BE チーム"
 description: Create:Source Code BE チームは、Create ステージの Source Code グループに属するプロダクトカテゴリのすべてのバックエンド側面を担当します。
 upstream_path: /handbook/engineering/devops/create/source-code/backend/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
+translated_at: "2026-06-01T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-22T14:47:44+02:00"
+lastmod: "2026-05-29T14:02:52-04:00"
 ---
 
 Create:Source Code BE チームは GitLab の Source Code Management（SCM）ツールに焦点を当て、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [Create ステージ](/handbook/product/categories/#create-stage)における [Source Code グループ](/handbook/product/categories/#source-code-group)のプロダクトカテゴリのすべてのバックエンド側面を担当します。プロダクトの方向性については、[カテゴリ方向 - Source Code Management](https://about.gitlab.com/direction/create/source_code_management/) ページをご覧ください。
@@ -46,8 +46,8 @@ Create:Source Code BE チームは GitLab の Source Code Management（SCM）ツ
 
 - GitLab チームハンドル: `@gitlab-com/create-team/source-code/backend`
 - Slack チャンネル: `#g_create_source-code-be`、`#g_create_source-code_stand-up`、`#g_create_source-code`、`#s_create`
-- [チームエラーバジェット - グループダッシュボード](https://dashboards.gitlab.net/goto/2YoyikIHR?orgId=1)
-- [チームエラーバジェット - 詳細ダッシュボード](https://dashboards.gitlab.net/goto/O6YJZodNR?orgId=1)
+- [チームエラーバジェット - グループダッシュボード](https://dashboards.gitlab.net/goto/ffnjqazeymlfkd?orgId=1)
+- [チームエラーバジェット - 詳細ダッシュボード](https://dashboards.gitlab.net/goto/efnjpeanxliwwe?orgId=1)
 
 ## AI プロンプト
 
