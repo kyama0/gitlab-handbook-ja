@@ -10386,11 +10386,11 @@
     },
     "content/handbook/engineering/data-engineering/database-excellence/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00+00:00",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:24:38Z",
       "model": "claude-opus-4-7",
-      "input_hash": "0c949984aacdec17c626402fcf184189d2b2bd5c4499442d65884400a4d8e4a6",
-      "upstream_committed_at": "2026-05-19T09:41:08+02:00"
+      "input_hash": "a048f114b40cf503845685188e9cf4107937ecab218a5079b2f98b6b57cb8d31",
+      "upstream_committed_at": "2026-06-01T13:57:16-05:00"
     },
     "content/handbook/engineering/data-engineering/database-excellence/database-architecture/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/database-architecture/_index.md",
@@ -28666,11 +28666,11 @@
     },
     "content/handbook/sales/training/_index.md": {
       "path": "content/handbook/sales/training/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-11T00:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:24:38Z",
       "model": "claude-opus-4-7",
-      "input_hash": "d5f841ac32ba050aff6958e4a13583aca5ba240aeca013f76b72177c28f17a84",
-      "upstream_committed_at": "2026-04-28T11:19:46-04:00"
+      "input_hash": "c8d1b48b4d0d42334bacad731fbc9c74020db0df2a434b45c44b54ffeeae6550",
+      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
     "content/handbook/sales/training/additional-resources.md": {
       "path": "content/handbook/sales/training/additional-resources.md",
@@ -29722,11 +29722,11 @@
     },
     "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-05-05.md": {
       "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-05-05.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:24:38Z",
       "model": "claude-opus-4-7",
-      "input_hash": "cdc7c647e827e8e88cb7ef9244dc584b6293add3d9ae5806282a79db24ba212e",
-      "upstream_committed_at": "2025-03-25T12:47:54+00:00"
+      "input_hash": "b2eb7dad05d3ee40f675c39c5a748eaee5a4d5ea0216451bf56734b587491634",
+      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
     "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-06-02.md": {
       "path": "content/handbook/sales/field-communications/field-flash-newsletter/edition-2020-06-02.md",
@@ -33031,6 +33031,22 @@
       "model": "claude-opus-4-7",
       "input_hash": "0f7dc980ccd911705306323ce49945ed06f9002ebe19e16b4b5492b5572d87d1",
       "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+    },
+    "content/handbook/eta/ai/strategy/hub-and-spoke/operating-rhythm/_index.md": {
+      "path": "content/handbook/eta/ai/strategy/hub-and-spoke/operating-rhythm/_index.md",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:24:38Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2c25701c5c4b394a8d4b8b789a76ec222b95f6fd9894f3728c78af9fdd21c3ab",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance_v2.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance_v2.md",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:24:38Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "86c6642dff935e1717e62b395671a6af0d5a8063e968fa621c20d212cc3a74b6",
+      "upstream_committed_at": "2026-06-01T13:26:03+12:00"
     }
   }
 }
