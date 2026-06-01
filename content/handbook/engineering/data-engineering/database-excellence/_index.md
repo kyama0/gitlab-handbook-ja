@@ -105,7 +105,7 @@ TBD
 
 Stable counterpart や reviewer などの長期的な依頼は、ステージレベルで対応します。これらの依頼は [カウンターパート依頼](https://gitlab.com/gitlab-org/database-team/team-tasks/-/work_items/new?description_template=counterpart_request) として提出してください。
 
-### トリアージローテーション
+### トリアージローテーション {#triage-rotations}
 
 Database Excellence には [週次トリアージ Issue](https://gitlab.com/gitlab-org/database-team/team-tasks/-/work_items?state=opened&label_name[]=database::triage) があります。
 この Issue は、Database excellence の入力と継続的なモニタリングが必要な、さまざまなセクション（例: DB の飽和、テーブルサイズのモニタリングなど）を構築する [自動化](https://gitlab.com/gitlab-org/database-team/update_status/-/blob/main/team_triage_issue.rb) によって、毎週自動的に作成されます。
