@@ -20274,11 +20274,11 @@
     },
     "content/handbook/tools-and-tips/searching/_index.md": {
       "path": "content/handbook/tools-and-tips/searching/_index.md",
-      "upstream_sha": "68af60af15ea4dcb51c3d985f7473b212e4f2cb4",
-      "translated_at": "2026-05-07T15:33:18Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:50:58Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1c3fff6915cb848344b4753418b1bc5c8ae26211d41b65de3267ad7c0c49bff5",
-      "upstream_committed_at": "2026-02-04T08:18:57+00:00"
+      "input_hash": "5c10dc6c087f7fa9072121992f2ba0cec3b47edfac3e81094f3457b121f9f8c0",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
     },
     "content/handbook/tools-and-tips/searching/gitlab-keyword-search-firefox-bookmarks.md": {
       "path": "content/handbook/tools-and-tips/searching/gitlab-keyword-search-firefox-bookmarks.md",
@@ -22930,11 +22930,11 @@
     },
     "content/handbook/support/ai/ai-tool-selection.md": {
       "path": "content/handbook/support/ai/ai-tool-selection.md",
-      "upstream_sha": "cf317047d2c9678524c0db59ab7ed8c050713245",
-      "translated_at": "2026-05-09T00:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:50:58Z",
       "model": "claude-opus-4-7",
-      "input_hash": "042063e52580c83060050f58647fc06cd8e416f5cf8f80e27115f4e0a4221172",
-      "upstream_committed_at": "2026-03-18T11:19:27-07:00"
+      "input_hash": "4e26f51f0e6947b67f90e44168d031e7a431011ac3ccfe9afd835a1b58f2186b",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
     },
     "content/handbook/support/ai/ai-usage-recommendations.md": {
       "path": "content/handbook/support/ai/ai-usage-recommendations.md",
@@ -33047,6 +33047,14 @@
       "model": "claude-opus-4-7",
       "input_hash": "86c6642dff935e1717e62b395671a6af0d5a8063e968fa621c20d212cc3a74b6",
       "upstream_committed_at": "2026-06-01T13:26:03+12:00"
+    },
+    "content/handbook/eta/ai/strategy/prompts-are-process/_index.md": {
+      "path": "content/handbook/eta/ai/strategy/prompts-are-process/_index.md",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T21:50:58Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0d56bb33755c36da7ae53e7ed6b6d2d874b73c0e7f0b7308c703c5f370b6eb10",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
     }
   }
 }
