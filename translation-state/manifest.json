@@ -17930,11 +17930,11 @@
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona.md",
-      "upstream_sha": "d0a19ab78fc5e0d322868c8f35ab8f81e761bd21",
-      "translated_at": "2026-04-30T12:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T13:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "5c5bfcb8890b27a1c753d5963018b58ea9602c2c623896ac8e39ce4e2fff5fd7",
-      "upstream_committed_at": "2025-08-15T08:09:30-05:00"
+      "input_hash": "5ad7f33285aca96c19233571b69595586d60db0275b1b629793147caede1c0a7",
+      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/day-in-the-life-secopsengineer-persona.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/day-in-the-life-secopsengineer-persona.md",
