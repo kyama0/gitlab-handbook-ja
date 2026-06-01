@@ -33055,6 +33055,22 @@
       "model": "claude-opus-4-7",
       "input_hash": "0d56bb33755c36da7ae53e7ed6b6d2d874b73c0e7f0b7308c703c5f370b6eb10",
       "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+    },
+    "content/handbook/eta/ai/strategy/guiding-principles/_index.md": {
+      "path": "content/handbook/eta/ai/strategy/guiding-principles/_index.md",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T22:00:36Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "53273ddc77e60a3bf603a275b5b3f42454f554bf4bf2db9322215bcdf7688ecd",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance.md",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T22:00:36Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "4eccd4a1224dbea642de12163a45453d47959ff0a744bcca9835914712df3679",
+      "upstream_committed_at": "2026-06-01T13:26:03+12:00"
     }
   }
 }
