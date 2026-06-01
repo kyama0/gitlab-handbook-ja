@@ -19194,11 +19194,11 @@
     },
     "content/handbook/marketing/field-marketing/_index.md": {
       "path": "content/handbook/marketing/field-marketing/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T22:29:37Z",
       "model": "claude-opus-4-7",
-      "input_hash": "90df95fb33b6ba4c454080b679d0126ffe4157e932cf09f506c5a662638169a9",
-      "upstream_committed_at": "2026-05-28T19:38:04+00:00"
+      "input_hash": "b303b6dcdbd29190aa5b861c73a708a7995e097bc44ed8a0df9554446493aeac",
+      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
     },
     "content/handbook/marketing/field-marketing/field-marketing-epics.md": {
       "path": "content/handbook/marketing/field-marketing/field-marketing-epics.md",
