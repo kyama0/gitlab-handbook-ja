@@ -28674,11 +28674,11 @@
     },
     "content/handbook/sales/training/additional-resources.md": {
       "path": "content/handbook/sales/training/additional-resources.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-11T00:00:00Z",
+      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
+      "translated_at": "2026-06-01T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a3e112706e90cc558d49f5f2faae88930eff3a4ff8d2ec9d49827b4251af4292",
-      "upstream_committed_at": "2024-11-26T00:36:40+00:00"
+      "input_hash": "f1b37c49b933c449d3ce2aaf15ea88bb6a80feed515f9047fd67c141141e0bb7",
+      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
     "content/handbook/sales/training/customer-success-skills-exchange.md": {
       "path": "content/handbook/sales/training/customer-success-skills-exchange.md",
