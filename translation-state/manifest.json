@@ -8810,11 +8810,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/protocells/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/protocells/_index.md",
-      "upstream_sha": "4c7d94ca4f485376c886b7c2b9575091c8b7d3cf",
-      "translated_at": "2026-04-27T06:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "531065f7b48ca88df46afda0e1940f7b111c2f69824a95f126dcfebaf7792aa7",
-      "upstream_committed_at": "2026-03-05T15:04:58+13:00"
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1ee48f90e97553e37a7d6416d2cd06b6f384db3b6d0e8e9b54b97619042d5379",
+      "upstream_committed_at": "2026-06-02T11:17:01+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/rails_upgrade/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/rails_upgrade/_index.md",
@@ -14026,11 +14026,11 @@
     },
     "content/handbook/engineering/releases/_index.md": {
       "path": "content/handbook/engineering/releases/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "41027afd9ab5e0d8bf6ccaac36304e08e750779af8399e53e077cce5061c9a5a",
-      "upstream_committed_at": "2026-05-22T16:34:25-06:00"
+      "input_hash": "03ac67c13a2f64864f794c6fa426a487236d1bab33ad1e6a61c7792448e2d0e1",
+      "upstream_committed_at": "2026-06-02T14:47:42-06:00"
     },
     "content/handbook/engineering/releases/backports.md": {
       "path": "content/handbook/engineering/releases/backports.md",
@@ -16770,11 +16770,11 @@
     },
     "content/handbook/legal/privacy/customer-product-usage-information.md": {
       "path": "content/handbook/legal/privacy/customer-product-usage-information.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-29T07:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "a024d21b2e51f8cdab17bd9c8cc17e8c18e7672e3f66aca70915dfe484e3b956",
-      "upstream_committed_at": "2026-04-22T18:45:16-07:00"
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8a2cb9a4e37e320319733a8ccb3dce061e6172bb91745a9bfafcee7455a2f083",
+      "upstream_committed_at": "2026-06-02T12:29:08-07:00"
     },
     "content/handbook/legal/privacy/dpia.md": {
       "path": "content/handbook/legal/privacy/dpia.md",
@@ -25090,11 +25090,11 @@
     },
     "content/handbook/engineering/deployments-and-releases/deployments/index.md": {
       "path": "content/handbook/engineering/deployments-and-releases/deployments/index.md",
-      "upstream_sha": "3480299851f7e2243d4f08b75dac452f89929636",
-      "translated_at": "2026-04-28T04:23:44Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "aaad2946ef28762450c4802310e5244817c6ceb30c61df3f541d589eba080692",
-      "upstream_committed_at": "2026-01-13T15:45:18-05:00"
+      "input_hash": "19a5b325355a128599ab72baaa04360a2b23225002fa83e8dede33a7fdb2863b",
+      "upstream_committed_at": "2026-06-02T14:47:42-06:00"
     },
     "content/handbook/engineering/development/fulfillment/utilization/index.md": {
       "path": "content/handbook/engineering/development/fulfillment/utilization/index.md",
@@ -26626,11 +26626,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/users/agents.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/users/agents.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "d8aa33ace053bc15a1af7bbf3937efd150d05835be34f0239fc32c6e783c61ed",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "input_hash": "bc32a9f12c427a809846a5b3b0685b8f3d9e59a91e553c40665fe3a162d1be68",
+      "upstream_committed_at": "2026-06-02T09:00:01-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/users/audit-events-analyzer.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/users/audit-events-analyzer.md",
@@ -27466,11 +27466,11 @@
     },
     "content/handbook/security/product-security/security-platforms-architecture/application-security/vulnerability-management.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/vulnerability-management.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "5334419feb5990045f7f7c3b2ee6b8d25e7037156886f2e4d1b8a23b382f7308",
-      "upstream_committed_at": "2026-05-05T17:44:58+02:00"
+      "input_hash": "e42bd7a0281762dfd6a635b0704bde8fa8873682f6d5ff15e27743c7ce4ee0cb",
+      "upstream_committed_at": "2026-06-02T14:47:42-06:00"
     },
     "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/_index.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/_index.md",
