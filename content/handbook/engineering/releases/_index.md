@@ -1,11 +1,11 @@
 ---
-title: "GitLab Releases"
+title: "GitLab リリース"
 upstream_path: /handbook/engineering/releases/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
+translated_at: "2026-06-02T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-22T16:34:25-06:00"
+lastmod: "2026-06-02T14:47:42-06:00"
 ---
 
 製品のリリース情報をお探しですか? [リリースポスト](https://about.gitlab.com/releases/categories/releases/)、[リリースページ](https://gitlab.com/gitlab-org/gitlab/-/releases)、[What's new](https://docs.gitlab.com/ee/administration/whats-new.html)、[changelog](https://gitlab.com/gitlab-org/gitlab/blob/master/CHANGELOG.md)、または [機能と非推奨の概要](https://gitlab-com.gitlab.io/cs-tools/gitlab-cs-tools/what-is-new-since/) を参照してください。
@@ -66,7 +66,7 @@ GitLab は [セマンティックバージョニング](https://semver.org/) に
 
 例外が必要だと考えられる場合:
 
-1. **依頼者** がビジネス上の正当性と顧客への影響評価を [文書化](https://gitlab.com/gitlab-org/release/tasks/-/work_items/new?issuable_template=Exception-request) します
+1. [**依頼者** がビジネス上の正当性と顧客への影響評価を文書化](https://gitlab.com/gitlab-org/release/tasks/-/work_items/new?issuable_template=Exception-request) します
 2. **依頼者** がスポンサーシップのために自分の Director/VP にエスカレーションします。承認するリーダーは、ポリシー違反の承認確認を書面で提供します
 3. **スポンサーである Director/VP** が、Delivery/Platforms 組織内の Engineering リーダーシップに例外を要請します:
    * **バックポート例外 (N-3+)**: Senior Engineering Manager 以上
@@ -114,7 +114,7 @@ GitLab は [セマンティックバージョニング](https://semver.org/) に
 * **[Backports](/handbook/engineering/releases/backports/)**: 最近のバージョンのバグまたはセキュリティ修正を、古いバージョンに適用したもの。
 * **[Stable branches](/handbook/engineering/releases/stable_branches/)**: 顧客に提供される GitLab リリースパッケージのソース。
 * **[Auto-deploy](/handbook/engineering/deployments-and-releases/deployments/)**: アプリケーションの変更を GitLab.com にデプロイする GitLab のプロセス。
-* **[Release managers](https://about.gitlab.com/community/release-managers/)**: GitLab リリースおよび GitLab.com へのデプロイの DRI。
+* **[Release managers](/handbook/engineering/releases/release-managers/)**: GitLab リリースおよび GitLab.com へのデプロイの DRI。
 
 ## リソース
 
@@ -137,5 +137,5 @@ GitLab は [セマンティックバージョニング](https://semver.org/) に
 
 ### リンク
 
-* [リリースマネージャーのスケジュール](https://about.gitlab.com/community/release-managers/)
+* [リリースマネージャーのスケジュール](/handbook/engineering/releases/release-managers/)
 * [Release and Deploy チームへの連絡方法](/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/#reaching-our-team)

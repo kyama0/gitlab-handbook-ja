@@ -1,0 +1,88 @@
+{{/* Data lives in gitlab-com/www-gitlab-com/-/blob/master/data/releases.yml */}}
+
+{{- if site.Data.public.releases -}}
+  {{- /* Sort releases by date descending (newest first) */ -}}
+  {{- $sortedReleases := sort site.Data.public.releases "date" "desc" -}}
+
+  {{- /* Filter to only releases that have at least one manager assigned */ -}}
+  {{- $managedReleases := slice -}}
+  {{- range $sortedReleases -}}
+    {{- if or .manager_americas .manager_apac_emea .psirt -}}
+      {{- $managedReleases = $managedReleases | append . -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if $managedReleases -}}
+<div style="overflow-x: auto;">
+  <table style="display: table; width: 100%;">
+    <thead>
+      <tr>
+        <th>Version</th>
+        <th>Release Date</th>
+        <th>Americas</th>
+        <th>APAC/EMEA</th>
+        <th>Security Release Manager</th>
+      </tr>
+    </thead>
+    <tbody>
+      {{- range $managedReleases -}}
+        {{- $releaseDate := .date -}}
+        {{- $parsedDate := time $releaseDate -}}
+        {{- $day := $parsedDate.Day -}}
+
+        {{- /* Calculate ordinal suffix */ -}}
+        {{- $ordinal := "th" -}}
+        {{- if or (eq $day 11) (eq $day 12) (eq $day 13) -}}
+          {{- $ordinal = "th" -}}
+        {{- else if eq (mod $day 10) 1 -}}
+          {{- $ordinal = "st" -}}
+        {{- else if eq (mod $day 10) 2 -}}
+          {{- $ordinal = "nd" -}}
+        {{- else if eq (mod $day 10) 3 -}}
+          {{- $ordinal = "rd" -}}
+        {{- end -}}
+
+        {{- $formattedDate := printf "%s %d%s, %d" ($parsedDate.Format "January") $day $ordinal ($parsedDate.Year) -}}
+
+        {{- /* Highlight upcoming releases (within 31 days) */ -}}
+        {{- $daysUntil := (div (sub (time $releaseDate).Unix (now.Unix)) 86400) -}}
+        {{- $isUpcoming := and (ge $daysUntil 0) (le $daysUntil 31) -}}
+
+        <tr{{ if $isUpcoming }} style="border-left: 4px solid #1f75cb;"{{ end }}>
+          <td>{{ if $isUpcoming }}<em>{{ .version }}</em>{{ else }}{{ .version }}{{ end }}</td>
+          <td>{{ if $isUpcoming }}<em>{{ $formattedDate }}</em>{{ else }}{{ $formattedDate }}{{ end }}</td>
+          <td>
+            {{- with .manager_americas -}}
+              {{- range $i, $name := . -}}
+                {{- if $i }}<br>{{ end -}}
+                {{- partial "member-by-name" $name -}}
+              {{- end -}}
+            {{- end -}}
+          </td>
+          <td>
+            {{- with .manager_apac_emea -}}
+              {{- range $i, $name := . -}}
+                {{- if $i }}<br>{{ end -}}
+                {{- partial "member-by-name" $name -}}
+              {{- end -}}
+            {{- end -}}
+          </td>
+          <td>
+            {{- with .psirt -}}
+              {{- range $i, $name := . -}}
+                {{- if $i }}<br>{{ end -}}
+                {{- partial "member-by-name" $name -}}
+              {{- end -}}
+            {{- end -}}
+          </td>
+        </tr>
+      {{- end -}}
+    </tbody>
+  </table>
+</div>
+  {{- else -}}
+    <p><em>No release manager assignments are currently available.</em></p>
+  {{- end -}}
+{{- else -}}
+  <p><em>Release schedule data is not available. Please ensure the releases.yml data file is properly configured.</em></p>
+{{- end -}}

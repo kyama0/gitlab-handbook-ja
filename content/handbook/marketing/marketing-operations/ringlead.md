@@ -2,11 +2,11 @@
 title: "Ringlead"
 description: "Ringlead プラットフォームは、重複の管理、データの正規化、セグメンテーション、エンリッチメントなどの Salesforce およびマーケティングオートメーションプロセスをオーケストレーションします。"
 upstream_path: /handbook/marketing/marketing-operations/ringlead/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
+translated_at: "2026-06-02T00:00:00Z"
+translator: "claude"
 stale: false
-lastmod: "2026-05-19T12:08:56-07:00"
+lastmod: "2026-06-01T16:41:36-07:00"
 ---
 
 ### Ringlead について
@@ -284,3 +284,40 @@ GitLab は RingLead Enrich Premium を使用して、ZoomInfo 経由で Salesfor
 - Do Not Call - Direct Phone OR Do Not Call - Mobile Phone ≠ Yes
 - [Admin] Exclude from Enrichment = False
 - Contact Status = Raw, Inquiry
+
+### Mass Enrich のガイドライン
+
+#### ピックリスト値の検証
+
+1. Country を標準化する - Country の値が SFDC と一致しない場合は、データが Salesforce に到達する前に RingLead 側で標準化します。
+    - Transform タブで:
+      - `[Active] Country Standardization` という名前のアクティブセグメントを追加
+        - ベンダー出力値を SFDC で受け入れられる Country の値にマップ
+    - 起動後に Salesforce のオートメーションや是正用 Mass Update ジョブを使うのではなく、これを使ってください。
+2. State/Province は個別に扱う - State/Province をすべての国にまたがるグローバルマッピングレイヤーとして扱わないでください。
+    - State/Province マッピングを適用するのは以下の場合のみ:
+      - United States
+      - Canada
+      - Australia
+    - サポートする国ごとに State エンリッチメントの個別のエンリッチメントジョブを作成し、各ジョブを正しいオーディエンスに限定してください。
+3. Country Code はマップしない - 返される形式は Salesforce が期待する形式と互換性がないため、このフィールドをマップすると、エンリッチメント品質を向上させる代わりにバリデーションエラーを引き起こす可能性があります。
+
+#### 国別ブロックリスト
+
+ブロック対象国フィルターは、起動後ではなくジョブ作成時に適用してください。これにより、不要なクレジット使用を防ぎ、当社がビジネスを行っていない国のレコードのエンリッチメントを回避できます。
+
+GitLab のブロック対象国リストには現在以下が含まれます:
+
+- キューバ
+- イラン
+- 北朝鮮
+- シリア
+- ロシア
+- ベラルーシ
+- ウクライナのクリミア、ドネツク、ルガンスク地域
+
+#### スケジューリングとモニタリング
+
+可能であれば、重い週次・月次ジョブを時間的にずらして実行してください。ジョブ実行を異なる時間帯に分散させることで、SFDC ↔ Marketo 同期への不要な負荷を減らし、起動および安定化期間中のモニタリングを容易にします。
+
+クレジット使用量も定期的にレビューする必要があります。RingLead はプラットフォーム内で Mass Enrich のクレジット消費を明確に確認する方法を提供していないため、使用状況レポートはベンダーから直接リクエストする必要があるかもしれません。

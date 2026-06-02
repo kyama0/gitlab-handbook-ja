@@ -1,11 +1,11 @@
 ---
 title: "デプロイメントとリリース"
 upstream_path: /handbook/engineering/deployments-and-releases/
-upstream_sha: 7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc
-translated_at: "2026-05-25T00:00:00Z"
-translator: claude
+upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
+translated_at: "2026-06-02T00:00:00Z"
+translator: "claude"
 stale: false
-lastmod: "2026-05-25T12:15:55-06:00"
+lastmod: "2026-06-02T14:47:42-06:00"
 ---
 
 ## 概要と用語
@@ -48,7 +48,7 @@ lastmod: "2026-05-25T12:15:55-06:00"
 
 デプロイメントとリリースプロセスの全体的な調整と運用は、リリースマネージャーの責任です。
 
-現在のリリースマネージャーについては、GitLab の[リリースマネージャースケジュール](https://about.gitlab.com/community/release-managers/)をご確認ください。
+現在のリリースマネージャーについては、GitLab の[リリースマネージャースケジュール](/handbook/engineering/releases/release-managers/)をご確認ください。
 
 ### リリースマネージャーへの連絡方法
 
@@ -274,7 +274,7 @@ lastmod: "2026-05-25T12:15:55-06:00"
 | リリースドキュメント | [リンク](https://gitlab.com/gitlab-org/release/docs) |
 | リリース関連タスクの Issue トラッカー | [リンク](https://gitlab.com/gitlab-org/release/tasks/) |
 | デリバリーチームの Issue トラッカー | [リンク](https://gitlab.com/gitlab-com/gl-infra/delivery/issues) |
-| リリースマネージャースケジュール | [リンク](https://about.gitlab.com/community/release-managers/) |
+| リリースマネージャースケジュール | [リンク](/handbook/engineering/releases/release-managers/) |
 | デプロイメントプロセス | [リンク](/handbook/engineering/deployments-and-releases/deployments/) |
 | リリースプロセス | [リンク](/handbook/engineering/releases/) |
 | メンテナンスポリシー | [リンク](https://docs.gitlab.com/ee/policy/maintenance.html) |

@@ -2,11 +2,11 @@
 title: "Marketing Operations"
 description: "Marketing Operations (MktgOps) は、マーケティングチーム全体をサポートし、プロセスを合理化し関連ツールを管理します。これらのツールにより、GitLab の他のチームもしばしばサポートします。"
 upstream_path: /handbook/marketing/marketing-operations/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
+translated_at: "2026-06-02T00:00:00Z"
+translator: "claude"
 stale: false
-lastmod: "2026-05-21T16:35:14-06:00"
+lastmod: "2026-06-01T16:41:36-07:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -97,11 +97,9 @@ Marketing Operations チームは、Salesforce の Lead オブジェクトの変
 
 ### Issue ボード
 
-1. [Asana チームボード](https://app.asana.com/0/1208702011967252/1208702155234648) - 一般およびアドホックリクエスト（近日廃止予定）
-2. [Asana チームポートフォリオ](https://app.asana.com/0/portfolio/1208916940053448/1208917081724360) - アドホックおよびプロジェクト（近日廃止予定）
-3. [MktgOps チーム（チームメンバーごとの Issue）](https://gitlab.com/groups/gitlab-com/-/boards/2629685)
-4. [MktgOps Open Milestone Issues](https://gitlab.com/groups/gitlab-com/-/boards/2629685?milestone_title=Started)
-5. [MktgOps Open Issues w/ Sales Systems](https://gitlab.com/groups/gitlab-com/-/boards/2626681)
+1. [MktgOps チーム（チームメンバーごとの Issue）](https://gitlab.com/groups/gitlab-com/-/boards/2629685)
+2. [MktgOps Open Milestone Issues](https://gitlab.com/groups/gitlab-com/-/boards/2629685?milestone_title=Started)
+3. [MktgOps Open Issues w/ Sales Systems](https://gitlab.com/groups/gitlab-com/-/boards/2626681)
 
 ### Issue
 
@@ -375,15 +373,14 @@ Tech Stack の補完として、ティア 1 およびティア 2 のツールを
 - [LinkedIn Sales Navigator](/handbook/sales/training/social-selling/)
 - [OneTrust](/handbook/marketing/digital-experience/onetrust/)
 - [RingLead](/handbook/marketing/marketing-operations/ringlead/)
-- Integrate DAP (Digital Strategy - Campaigns)
 - [Mutiny](/handbook/marketing/marketing-operations/mutiny)
 - [JiffleNow](/handbook/marketing/marketing-operations/jifflenow/)
+- [Google Analytics](/handbook/enterprise-data/marketing-analytics/google-analytics-4)
 
 #### マネジメントテクノロジー - ティア 3
 
 - [Litmus](/handbook/marketing/marketing-operations/litmus)
 - [Brilliant Gifts](/handbook/marketing/marketing-operations/brilliant/)
-- Google Analytics (Search Discovery/Further)
 - [OpenSense](/handbook/marketing/marketing-operations/opensense/)
 - [BeeFree](/handbook/marketing/marketing-operations/beefree/)
 
@@ -391,10 +388,7 @@ Tech Stack の補完として、ティア 1 およびティア 2 のツールを
 
 - [Bitergia](/handbook/marketing/developer-relations/workflows-tools/) (Developer Relations)
 - [Canva](/handbook/marketing/brand-and-product-marketing/design/#canva-best-practices) (Brand)
-- Cision
 - [Common Room](/handbook/marketing/developer-relations/workflows-tools/) (Devoper Relations)
-- ContentKing
-- Frame.io (Brand)
 - Figma (UX)
 - [Optimizely](/handbook/marketing/digital-experience/optimizely/)
 - [MeetUp](/handbook/marketing/developer-relations/workflows-tools/)
@@ -476,6 +470,8 @@ Marketing Operations の役割:
 1. ティア 3 ツールはケースバイケースで処理されます。ツールが広範な評価と Marketing Operations のサポートを必要とする場合、上記のプロセスが適用されます。
 1. ビジネスオーナーがティア 4 ツール評価と実装の DRI ですが、Marketing Operations を含める必要があります。
 
+Marketing Ops チーム - 新しいプロジェクト実装のために、Issue と Epic 作成を効率化するための DAP プロンプトを [こちら](https://docs.google.com/document/d/1z0JWKHOcfwWS0VmoOO577sxKguun4oQJj4tvf3jVpRk/edit?tab=t.0) で活用してください。
+
 評価 Epic が作成された後、以下の評価ステップに従う必要があります:
 
 1. Discovery - 私たちが解決しようとしているリクエスト/問題を理解する
@@ -508,6 +504,7 @@ Marketing Operations の役割:
 
 1. [要件収集テンプレート](https://docs.google.com/spreadsheets/d/1JsUcCnePqWnc8ownZQEsjsDtMea6pLPk2k-6TV3M_uI/edit#gid=0)
 1. [週次実装更新テンプレート](https://docs.google.com/document/d/10-C4ZP_GTmG164-1DwV_KPDlcxpIknfPrq0Qv1TccKQ/edit#)
+1. [Epic&Issue 作成プロンプト](https://docs.google.com/document/d/1z0JWKHOcfwWS0VmoOO577sxKguun4oQJj4tvf3jVpRk/edit?tab=t.0)
 
 ## リードスコアリング、リードライフサイクル、MQL 基準
 

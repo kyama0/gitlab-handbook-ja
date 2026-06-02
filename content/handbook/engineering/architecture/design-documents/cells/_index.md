@@ -10,11 +10,11 @@ participating-stages: []
 toc_hide: true
 no_list: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
-translator: claude
+upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
+translated_at: "2026-06-02T00:00:00Z"
+translator: "claude"
 stale: false
-lastmod: "2026-05-28T15:55:17+12:00"
+lastmod: "2026-06-02T15:52:44+12:00"
 ---
 
 
@@ -108,17 +108,17 @@ Cells アーキテクチャは、データ処理、ロケーション、スケ�
 
 - Cells Services:
   - [HTTP Routing Service](http_routing_service.md)
-  - [Container Registry Routing Service](container_registry_routing_service.md)
-  - [SSH Routing Service](ssh_routing_service.md)
   - [Topology Service](topology_service.md)
     - [Topology Service Transactional Behavior](topology_service_transactional_behavior.md)
+  - [Mutual authentication between Cell services](mutual_authentication_between_cell_services.md)
+  - [Routable Tokens](routable_tokens.md)
+  - [Container Registry Routing Service](container_registry_routing_service.md)
+  - [SSH Routing Service](ssh_routing_service.md)
   - 計画中: Indexing Service
-- [Mutual authentication between Cell services](mutual_authentication_between_cell_services.md)
 - [Cells: Infrastructure](./infrastructure/_index.md)
 - [Feature Flags](./infrastructure/feature_flags.md) - ([Previous iteration](feature_flags.md))
 - [Settings Synchronization](./proposal-admin_area_setting_sychronization_in_cells.md)
 - [Organization migration](../organization-data-migration/_index.md)
-- [Routable Tokens](routable_tokens.md)
 
 ## 影響を受ける機能
 
@@ -131,6 +131,7 @@ Cells アーキテクチャは多くの機能に影響を与え、その中に�
 - [Cells: CI/CD Catalog](impacted_features/ci-cd-catalog.md)
 - [Cells: CI Runners](impacted_features/ci-runners.md)
 - [Cells: Container Registry](impacted_features/container-registry.md)
+- [Cells: Dependency Proxy](impacted_features/dependency-proxy.md)
 - [Cells: Contributions: Forks](impacted_features/contributions-forks.md)
 - [Cells: Data Migration](impacted_features/data-migration.md)
 - [Cells: Explore](impacted_features/explore.md)

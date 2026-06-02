@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリのデータテーブル構成"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 7d467b8ae210e5b3bb843857cd3639cbc27af386
+translated_at: "2026-06-02T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-28T10:57:33+01:00"
+lastmod: "2026-06-02T19:33:01+02:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -164,7 +164,7 @@ erDiagram
 
 #### インデックス
 
-- **`repositories`**: `(namespace_id, name)` のユニークインデックス — アクティブおよびソフト削除済みの両方のリポジトリにわたって名前の一意性を強制し、名前の競合によって復元が失敗することがないようにする。名前の再利用にはまずハード削除が必要。`(namespace_id, name) WHERE soft_deleted_at IS NULL` のインデックス — アクティブリポジトリの検索と名前順リスト向けに最適化されたスキャンパス。`(namespace_id, format) WHERE soft_deleted_at IS NULL` のインデックス — フォーマットでアクティブリポジトリをフィルタ。`(namespace_id, kind) WHERE soft_deleted_at IS NULL` のインデックス — 種別でアクティブリポジトリをフィルタ。`(namespace_id, visibility) WHERE soft_deleted_at IS NULL` のインデックス — 可視性レベルでリポジトリをフィルタ（可視性監査クエリ「この namespace で今 public なリポジトリはどれか？」を支える）。ランディングページのソート可能カラムごとに 1 つのインデックス、すべて `WHERE soft_deleted_at IS NULL` 付き: `(namespace_id, artifacts_count DESC)`、`(namespace_id, downloads_count DESC)`、`(namespace_id, size_bytes DESC)`、`(namespace_id, last_updated_at DESC NULLS LAST)`。
+- **`repositories`**: `(namespace_id, name)` のユニークインデックス — アクティブおよびソフト削除済みの両方のリポジトリにわたって名前の一意性を強制し、名前の競合によって復元が失敗することがないようにする。名前の再利用にはまずハード削除が必要。`(namespace_id, name) WHERE soft_deleted_at IS NULL` のインデックス — アクティブリポジトリの検索と名前順リスト向けに最適化されたスキャンパス。`(namespace_id, format) WHERE soft_deleted_at IS NULL` のインデックス — フォーマットでアクティブリポジトリをフィルタ。`(namespace_id, kind) WHERE soft_deleted_at IS NULL` のインデックス — 種別でアクティブリポジトリをフィルタ。`(namespace_id, visibility) WHERE soft_deleted_at IS NULL` のインデックス — 可視性レベルでリポジトリをフィルタ（可視性監査クエリ「この namespace で今 public なリポジトリはどれか？」を支える）。ランディングページのソート可能カラムごとに 1 つのインデックス、すべて `WHERE soft_deleted_at IS NULL` 付き: `(namespace_id, artifacts_count DESC)`、`(namespace_id, downloads_count DESC)`、`(namespace_id, size_bytes DESC)`、`(namespace_id, last_updated_at DESC NULLS LAST)`。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` のインデックス — この namespace のソフト削除済みリポジトリを削除時刻順にリストする（ゴミ箱リスティングクエリ「ゴミ箱に何が入っていて、いつ削除されたか？」を支える）。逆方向の部分述語は、前述のアクティブ行向け部分インデックスを反転したもの: このテーブルの他の部分インデックスはすべてゴミ箱を除外しており、完全な `(namespace_id, name)` ユニークインデックスは `soft_deleted_at` をキーにしないため、ゴミ箱リスティングはさもなければフィルタとソートのために namespace 内のすべての行を訪問する必要があります。GC 適格性は [ADR-010](010_data_retention.md) に従い `soft_deleted_at + retention_window` から導出されるため、専用のカラムは不要。
 
 MVP 中、すべてのリポジトリは単一のデフォルト Repository collection にリンクされるため、`(namespace_id, ...)` のソートインデックスは namespace 全体および Repository collection フィルタリングされたクエリの両方に対応します。MVP 後、namespace が複数の Repository collection を持つようになると、Repository collection フィルタリングされたクエリは `repository_collection_repositories` を介して結合します。Repository collection が表面化されたときに追加のサポートインデックスが評価されます。
 
@@ -223,6 +223,16 @@ MVP 中、すべてのリポジトリは単一のデフォルト Repository coll
   FROM repositories
   WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND visibility = 0 AND soft_deleted_at IS NULL
   ORDER BY name;
+  ```
+
+- ゴミ箱リスティング: namespace 内のすべてのソフト削除済みリポジトリを最新削除順にリスト（`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` の部分インデックスを使用）。スコープは namespace 全体で、管理者が「今、復元可能なものは何か？」を 1 つのクエリで答えられるようにする。親別のゴミ箱ビューは別の UI 関心事であり、必要であれば後で親をキーにしたインデックスを追加することで対応可能。
+
+  ```sql
+  SELECT id, name, format, kind, soft_deleted_at
+  FROM repositories
+  WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND soft_deleted_at IS NOT NULL
+  ORDER BY soft_deleted_at DESC
+  LIMIT 50;
   ```
 
 ### Repository collection repositories {#repository-collection-repositories}
@@ -463,8 +473,8 @@ erDiagram
 
 - **`container_repositories`**: `(namespace_id, repository_id)` のユニークインデックス — 親リポジトリ参照で container リポジトリを検索。
 - **`container_images`**: `(namespace_id, container_repository_id, name) WHERE soft_deleted_at IS NULL` のユニークインデックス — イメージ名はリポジトリ内で一意なイメージを識別。重複があると OCI 名ベースの検索が壊れます。部分条件はソフト削除後に同じ名前でイメージを再作成できるようにします。`(namespace_id, container_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `keep_last_downloaded_at` ライフサイクルルール評価をサポート。リポジトリ内のすべてのイメージをスキャンして 1 行ずつフィルタリングするのではなく、有界な範囲スキャンで期限切れのイメージのみを返します。`NULLS FIRST` は、ダウンロードされていないイメージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。
-- **`container_blobs`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — blob ダイジェストはコンテンツアドレス指定。同じイメージ内の同じダイジェストは定義上同じ blob です。部分条件はソフト削除後に同じダイジェストを再プッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントで blob を検索。
-- **`container_manifests`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — マニフェストダイジェストはコンテンツアドレス指定。同じイメージ内の同じダイジェストは定義上同じマニフェストです。部分条件はソフト削除後に同じダイジェストを再プッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでマニフェストを検索。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクトプロベナンスクエリを実現します。後でソフト削除された公開イベントも監査証跡に表示されるよう、無条件です（`soft_deleted_at` 述語なし）。
+- **`container_blobs`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — blob ダイジェストはコンテンツアドレス指定。同じイメージ内の同じダイジェストは定義上同じ blob です。部分条件はソフト削除後に同じダイジェストを再プッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントで blob を検索。`(namespace_id, blob_sha256)` のインデックス — 保存された blob sha256 から、それを参照するすべての container blob への逆引き。クロスフォーマットなチェックサム検索と、脆弱性影響クエリ「この侵害されたダイジェストを参照しているイメージはどれか？」を支える。既存の `(namespace_id, container_image_id, digest)` インデックスはイメージをキーにしており、1 つのイメージ内しかスキャンできないため、このインデックスがなければクエリは namespace 単位のパーティションスキャンにフォールバックします。この MR で追加された他のすべての逆引きインデックスにも同じ形が適用されます: 一度参照されたダイジェストはソフト削除後も監査証跡に残るよう、無条件（`soft_deleted_at` 述語なし）。脆弱性影響クエリ（現在影響を受けているアーティファクトだけを欲しい）は、クエリ時に親テーブル（image／version／package）への結合に `soft_deleted_at IS NULL` を加える — 小さな中間集合に対する安価なポストフィルタです。
+- **`container_manifests`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — マニフェストダイジェストはコンテンツアドレス指定。同じイメージ内の同じダイジェストは定義上同じマニフェストです。部分条件はソフト削除後に同じダイジェストを再プッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでマニフェストを検索。`(namespace_id, blob_sha256)` のインデックス — マニフェストペイロードの保存された blob sha256 から、それを参照するすべてのマニフェストへの逆引き。クロスフォーマットなチェックサム検索を支える。[`container_blobs`](#container-repositories) のインデックスをミラーしており、1 回の sha256 検索でレイヤーとマニフェストの両方の参照が 1 回のウォークで返るようにする。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` のインデックス — ソフト削除済みマニフェストを削除時刻順にリストし、コンテナイメージのアーティファクト粒度のゴミ箱リスティングクエリを支える。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクトプロベナンスクエリを実現します。後でソフト削除された公開イベントも監査証跡に表示されるよう、無条件です（`soft_deleted_at` 述語なし）。
 - **`container_manifest_relationships`**: `(namespace_id, parent_container_manifest_id, child_container_manifest_id)` のユニークインデックス — 重複する親子関係を防ぎ、指定された親マニフェストのすべての子を見つける。`(namespace_id, child_container_manifest_id)` のインデックス — 指定された子マニフェストのすべての親を見つける。`(namespace_id, container_image_id)` のインデックス — 指定されたイメージのすべてのマニフェスト関係を見つける。
 - **`container_tags`**: `(namespace_id, container_image_id, name)` のユニークインデックス — イメージ内で名前によりタグを検索。`(namespace_id, container_manifest_id)` のインデックス — 指定されたマニフェストを指すすべてのタグを見つける。
 
@@ -502,6 +512,39 @@ erDiagram
     AND cm.digest = 'sha256:efgh5678...'::bytea
     AND ci.soft_deleted_at IS NULL AND cm.soft_deleted_at IS NULL;
   ```
+
+- チェックサム検索と脆弱性影響: 保存された blob `sha256` を与えて、それを参照する namespace 内のすべてのアーティファクトを見つける（各フォーマットテーブルの `(namespace_id, blob_sha256)` インデックスを使用）。`namespace_id` の等値はテーブルごとに 1 つのパーティションに刈り込み、その後インデックスはパーティションをスキャンする代わりにマッチする行を直接返します。チェックサム検索はすべての参照を返します。脆弱性影響（「現在この侵害されたダイジェストの影響を受けているアーティファクトはどれか？」）は結果をアクティブなアーティファクトに限定するために `soft_deleted_at IS NULL` を追加します。
+
+  ```sql
+  -- 単一フォーマット: ダイジェストを参照する container のレイヤー/コンフィグ blob
+  SELECT cb.id, cb.container_image_id, cb.digest
+  FROM container_blobs cb
+  WHERE cb.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+    AND cb.blob_sha256 = 'sha256:abcd1234...'::bytea;
+
+  -- クロスフォーマット: ダイジェストを参照するすべてのアーティファクト、アクティブ行のみ（脆弱性影響）
+  SELECT 'container_blob' AS artifact_kind, cb.id AS artifact_id, cb.container_image_id AS parent_id
+  FROM container_blobs cb
+  WHERE cb.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+    AND cb.blob_sha256 = 'sha256:abcd1234...'::bytea AND cb.soft_deleted_at IS NULL
+  UNION ALL
+  SELECT 'container_manifest', cm.id, cm.container_image_id
+  FROM container_manifests cm
+  WHERE cm.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+    AND cm.blob_sha256 = 'sha256:abcd1234...'::bytea AND cm.soft_deleted_at IS NULL
+  UNION ALL
+  SELECT 'maven_file', mf.id, mf.maven_version_id
+  FROM maven_files mf
+  WHERE mf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+    AND mf.blob_sha256 = 'sha256:abcd1234...'::bytea AND mf.soft_deleted_at IS NULL
+  UNION ALL
+  SELECT 'npm_file', nf.id, nf.npm_version_id
+  FROM npm_files nf
+  WHERE nf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+    AND nf.blob_sha256 = 'sha256:abcd1234...'::bytea AND nf.soft_deleted_at IS NULL;
+  ```
+
+  同じ `(namespace_id, blob_sha256)` アクセスパスは、キャッシュ側テーブル (`container_remote_blobs`、`container_remote_manifests`、`maven_remote_files`、`npm_remote_files`) および `npm_metadata_files` / `npm_remote_metadata_files` にも適用されます。キャッシュ側参照もカバーするには、それらのテーブルに `UNION ALL` を拡張してください。
 
 ### Container Remote Repositories {#container-remote-repositories}
 
@@ -598,8 +641,8 @@ erDiagram
 
 - **`container_remote_repositories`**: `(namespace_id, repository_id)` のユニークインデックス — 親参照でリモートリポジトリを検索。
 - **`container_remote_images`**: `(namespace_id, container_remote_repository_id, name) WHERE soft_deleted_at IS NULL` のユニークインデックス — 名前でキャッシュされたイメージを検索。部分条件はソフト削除後に同じ名前でイメージを再作成できるようにします。
-- **`container_remote_blobs`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — イメージ内でダイジェストによりキャッシュされた blob を検索。部分条件はソフト削除後に同じダイジェストを再キャッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントで blob を検索。
-- **`container_remote_manifests`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — イメージ内でダイジェストによりキャッシュされたマニフェストを検索。部分条件はソフト削除後に同じダイジェストを再キャッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでマニフェストを検索。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、ローカルの [`container_manifests`](#container-repositories) インデックスをミラーリングし、キャッシュ側の公開履歴とプロベナンスをカバーします。ローカルインデックスと同じ監査証跡の理由から無条件です（`soft_deleted_at` 述語なし）。
+- **`container_remote_blobs`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — イメージ内でダイジェストによりキャッシュされた blob を検索。部分条件はソフト削除後に同じダイジェストを再キャッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントで blob を検索。`(namespace_id, blob_sha256)` のインデックス — 保存された blob sha256 から、それを参照するすべてのキャッシュ blob への逆引き。ローカルの [`container_blobs`](#container-repositories) インデックスをミラーリングし、チェックサム検索と脆弱性影響がキャッシュ側参照もカバーするようにします。
+- **`container_remote_manifests`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` のユニークインデックス — イメージ内でダイジェストによりキャッシュされたマニフェストを検索。部分条件はソフト削除後に同じダイジェストを再キャッシュできるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでマニフェストを検索。`(namespace_id, blob_sha256)` のインデックス — マニフェストペイロードの保存された blob sha256 から、それを参照するすべてのキャッシュマニフェストへの逆引き。ローカルの [`container_manifests`](#container-repositories) インデックスをミラーリングする。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` のインデックス — ソフト削除済みキャッシュマニフェストを削除時刻順にリストし、キャッシュコンテナイメージのアーティファクト粒度のゴミ箱リスティングクエリを支える。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、ローカルの [`container_manifests`](#container-repositories) インデックスをミラーリングし、キャッシュ側の公開履歴とプロベナンスをカバーします。ローカルインデックスと同じ監査証跡の理由から無条件です（`soft_deleted_at` 述語なし）。
 - **`container_remote_manifest_relationships`**: `(namespace_id, parent_container_remote_manifest_id, child_container_remote_manifest_id)` のユニークインデックス — 重複する親子関係を防ぐ。`(namespace_id, child_container_remote_manifest_id)` のインデックス — 指定された子マニフェストのすべての親を見つける。`(namespace_id, container_remote_image_id)` のインデックス — 指定されたイメージのすべてのマニフェスト関係を見つける。
 - **`container_remote_tags`**: `(namespace_id, container_remote_image_id, name)` のユニークインデックス — イメージ内で名前によりタグを検索。`(namespace_id, container_remote_manifest_id)` のインデックス — 指定されたマニフェストを指すすべてのタグを見つける。
 
@@ -787,8 +830,8 @@ erDiagram
 
 - **`maven_repositories`**: `(namespace_id, repository_id)` のユニークインデックス — 親リポジトリ参照で Maven リポジトリを検索。
 - **`maven_packages`**: `(namespace_id, maven_repository_id, group_id, artifact_id) WHERE soft_deleted_at IS NULL` のユニークインデックス — リポジトリ内で Maven 座標によりパッケージを検索。部分条件はソフト削除後に同じ座標でパッケージを再作成できるようにします。`(namespace_id, maven_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `keep_last_downloaded_at` ライフサイクルルール評価をサポート。リポジトリ内のすべてのパッケージをスキャンして 1 行ずつフィルタリングするのではなく、有界な範囲スキャンで期限切れのパッケージのみを返します。`NULLS FIRST` は、ダウンロードされていないパッケージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。
-- **`maven_versions`**: `(namespace_id, maven_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内で特定のバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, maven_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `maven_packages` と同じ範囲スキャン戦略を使用して、パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルール評価をサポート。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクトプロベナンスクエリを実現します。ソフト削除された公開イベントも監査証跡に表示されるよう、無条件です。
-- **`maven_files`**: `(namespace_id, maven_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_version_id IS NOT NULL` のユニークインデックス — バージョン固有のファイル名はバージョン内で一意でなければなりません。部分条件はソフト削除済みの行とパッケージレベルのファイルを除外します。`(namespace_id, maven_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_version_id IS NULL` のユニークインデックス — パッケージレベルのファイル名（`maven-metadata.xml` など）はパッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでファイルを検索。
+- **`maven_versions`**: `(namespace_id, maven_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内で特定のバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, maven_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `maven_packages` と同じ範囲スキャン戦略を使用して、パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルール評価をサポート。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` のインデックス — ソフト削除済みバージョンを削除時刻順にリストし、Maven アーティファクトのアーティファクト粒度のゴミ箱リスティングクエリを支える。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクトプロベナンスクエリを実現します。ソフト削除された公開イベントも監査証跡に表示されるよう、無条件です。
+- **`maven_files`**: `(namespace_id, maven_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_version_id IS NOT NULL` のユニークインデックス — バージョン固有のファイル名はバージョン内で一意でなければなりません。部分条件はソフト削除済みの行とパッケージレベルのファイルを除外します。`(namespace_id, maven_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_version_id IS NULL` のユニークインデックス — パッケージレベルのファイル名（`maven-metadata.xml` など）はパッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでファイルを検索。`(namespace_id, blob_sha256)` のインデックス — 保存された blob sha256 から、それを参照するすべての Maven ファイルへの逆引き。クロスフォーマットなチェックサム検索を支える。既存の親キーインデックスはバージョンまたはパッケージをキーにしており、ダイジェストをキーとしたスキャンを直接満たすことができません。
 
 #### クエリ例
 
@@ -820,6 +863,16 @@ erDiagram
   FROM maven_files mf
   WHERE mf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND mf.maven_package_id = 123 AND mf.maven_version_id IS NULL
     AND mf.soft_deleted_at IS NULL;
+  ```
+
+- ゴミ箱リスティング: namespace 内のすべてのソフト削除済み Maven バージョンを最新削除順にリスト（`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` の部分インデックスを使用）。コンプライアンスのユースケースは namespace 全体（「今、ゴミ箱には何があるか？」）です。親スコープのビュー（「このパッケージのゴミ箱に入ったバージョン」）には、別途 `(namespace_id, maven_package_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` のインデックスが有効で、その UI を構築するときに後から追加できます。同じパターンは [`npm_versions`](#npm-repositories)、[`container_manifests`](#container-repositories) およびそれらのリモート相当に適用されます。
+
+  ```sql
+  SELECT mv.id, mv.maven_package_id, mv.version, mv.soft_deleted_at
+  FROM maven_versions mv
+  WHERE mv.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND mv.soft_deleted_at IS NOT NULL
+  ORDER BY mv.soft_deleted_at DESC
+  LIMIT 50;
   ```
 
 ### Maven Remote Repositories {#maven-remote-repositories}
@@ -893,8 +946,8 @@ erDiagram
 
 - **`maven_remote_repositories`**: `(namespace_id, repository_id)` のユニークインデックス — 親参照でリモートリポジトリを検索。
 - **`maven_remote_packages`**: `(namespace_id, maven_remote_repository_id, group_id, artifact_id) WHERE soft_deleted_at IS NULL` のユニークインデックス — Maven 座標でキャッシュされたパッケージを検索。部分条件はソフト削除後に同じ座標でパッケージを再作成できるようにします。
-- **`maven_remote_versions`**: `(namespace_id, maven_remote_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内でキャッシュされたバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、ローカルの [`maven_versions`](#maven-repositories) インデックスをミラーリングし、キャッシュ側の公開履歴とプロベナンスをカバーします。ローカルインデックスと同じ監査証跡の理由から無条件です（`soft_deleted_at` 述語なし）。
-- **`maven_remote_files`**: `(namespace_id, maven_remote_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NOT NULL` のユニークインデックス — バージョン固有のファイル名はバージョン内で一意でなければなりません。`(namespace_id, maven_remote_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NULL` のユニークインデックス — パッケージレベルのファイル名はパッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでファイルを検索。
+- **`maven_remote_versions`**: `(namespace_id, maven_remote_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内でキャッシュされたバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` のインデックス — ソフト削除済みキャッシュバージョンを削除時刻順にリストし、キャッシュ Maven アーティファクトのアーティファクト粒度のゴミ箱リスティングクエリを支える。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、ローカルの [`maven_versions`](#maven-repositories) インデックスをミラーリングし、キャッシュ側の公開履歴とプロベナンスをカバーします。ローカルインデックスと同じ監査証跡の理由から無条件です（`soft_deleted_at` 述語なし）。
+- **`maven_remote_files`**: `(namespace_id, maven_remote_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NOT NULL` のユニークインデックス — バージョン固有のファイル名はバージョン内で一意でなければなりません。`(namespace_id, maven_remote_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NULL` のユニークインデックス — パッケージレベルのファイル名はパッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでファイルを検索。`(namespace_id, blob_sha256)` のインデックス — 保存された blob sha256 から、それを参照するすべてのキャッシュ Maven ファイルへの逆引き。ローカルの [`maven_files`](#maven-repositories) インデックスをミラーリングし、チェックサム検索がキャッシュ側参照もカバーするようにします。
 
 #### クエリ例
 
@@ -1107,10 +1160,10 @@ erDiagram
 
 - **`npm_repositories`**: `(namespace_id, repository_id)` のユニークインデックス — 親リポジトリ参照で NPM リポジトリを検索。
 - **`npm_packages`**: `(namespace_id, npm_repository_id, name) WHERE soft_deleted_at IS NULL` のユニークインデックス — リポジトリ内で名前によりパッケージを検索。部分条件はソフト削除後に同じ名前でパッケージを再作成できるようにします。`(namespace_id, npm_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `keep_last_downloaded_at` ライフサイクルルール評価をサポート。リポジトリ内のすべてのパッケージをスキャンして 1 行ずつフィルタリングするのではなく、有界な範囲スキャンで期限切れのパッケージのみを返します。`NULLS FIRST` は、ダウンロードされていないパッケージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。
-- **`npm_versions`**: `(namespace_id, npm_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内で特定のバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, npm_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `npm_packages` と同じ範囲スキャン戦略を使用して、パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルール評価をサポート。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクトプロベナンスクエリを実現します。ソフト削除された公開イベントも監査証跡に表示されるよう、無条件です。
+- **`npm_versions`**: `(namespace_id, npm_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内で特定のバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, npm_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` のインデックス — `npm_packages` と同じ範囲スキャン戦略を使用して、パッケージのバージョンにスコープされた `keep_last_downloaded_at` ライフサイクルルール評価をサポート。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` のインデックス — ソフト削除済みバージョンを削除時刻順にリストし、npm アーティファクトのアーティファクト粒度のゴミ箱リスティングクエリを支える。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクトプロベナンスクエリを実現します。ソフト削除された公開イベントも監査証跡に表示されるよう、無条件です。
 - **`npm_tags`**: `(namespace_id, npm_package_id, name)` のユニークインデックス — パッケージ内で名前により distribution tag を検索。`(namespace_id, npm_version_id)` のインデックス — 指定されたバージョンを指すすべてのタグを見つける。
-- **`npm_files`**: `(namespace_id, npm_version_id, file_name) WHERE soft_deleted_at IS NULL` のユニークインデックス — ファイル名はバージョン内で一意でなければなりません。部分条件はソフト削除後に同じ名前でファイルを再作成できるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでファイルを検索。
-- **`npm_metadata_files`**: `(namespace_id, npm_package_id, kind)` のユニークインデックス — パッケージごとに kind ごとに 1 つのメタデータファイル。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでメタデータファイルを検索。
+- **`npm_files`**: `(namespace_id, npm_version_id, file_name) WHERE soft_deleted_at IS NULL` のユニークインデックス — ファイル名はバージョン内で一意でなければなりません。部分条件はソフト削除後に同じ名前でファイルを再作成できるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでファイルを検索。`(namespace_id, blob_sha256)` のインデックス — 保存された blob sha256 から、それを参照するすべての npm ファイルへの逆引き。クロスフォーマットなチェックサム検索を支える。既存のバージョンキーインデックスはダイジェストをキーとしたスキャンを直接満たすことができません。
+- **`npm_metadata_files`**: `(namespace_id, npm_package_id, kind)` のユニークインデックス — パッケージごとに kind ごとに 1 つのメタデータファイル。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでメタデータファイルを検索。`(namespace_id, blob_sha256)` のインデックス — 保存された blob sha256 から、それを参照するすべてのメタデータファイルへの逆引き。[`npm_files`](#npm-repositories) をミラーリングし、1 回の sha256 検索で tarball と packument スタイルのメタデータの両方をカバーするようにします。
 
 #### クエリ例
 
@@ -1297,10 +1350,10 @@ erDiagram
 
 - **`npm_remote_repositories`**: `(namespace_id, repository_id)` のユニークインデックス — 親参照でリモートリポジトリを検索。
 - **`npm_remote_packages`**: `(namespace_id, npm_remote_repository_id, name) WHERE soft_deleted_at IS NULL` のユニークインデックス — 名前でキャッシュされたパッケージを検索。部分条件はソフト削除後に同じ名前でパッケージを再作成できるようにします。
-- **`npm_remote_versions`**: `(namespace_id, npm_remote_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内でキャッシュされたバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、ローカルの [`npm_versions`](#npm-repositories) インデックスをミラーリングし、キャッシュ側の公開履歴とプロベナンスをカバーします。ローカルインデックスと同じ監査証跡の理由から無条件です（`soft_deleted_at` 述語なし）。
+- **`npm_remote_versions`**: `(namespace_id, npm_remote_package_id, version) WHERE soft_deleted_at IS NULL` のユニークインデックス — パッケージ内でキャッシュされたバージョンを検索。部分条件はソフト削除後に同じ識別子でバージョンを再作成できるようにします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` のインデックス — ソフト削除済みキャッシュバージョンを削除時刻順にリストし、キャッシュ npm アーティファクトのアーティファクト粒度のゴミ箱リスティングクエリを支える。`(namespace_id, created_at DESC)` のインデックス — namespace 全体の時系列スキャンで、ローカルの [`npm_versions`](#npm-repositories) インデックスをミラーリングし、キャッシュ側の公開履歴とプロベナンスをカバーします。ローカルインデックスと同じ監査証跡の理由から無条件です（`soft_deleted_at` 述語なし）。
 - **`npm_remote_tags`**: `(namespace_id, npm_remote_package_id, name)` のユニークインデックス — 名前で distribution tag を検索。`(namespace_id, npm_remote_version_id)` のインデックス — 指定されたバージョンを指すすべてのタグを見つける。
-- **`npm_remote_metadata_files`**: `(namespace_id, npm_remote_package_id, kind)` のユニークインデックス — パッケージごとに kind ごとに 1 つのメタデータファイルを強制。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでメタデータファイルを検索。
-- **`npm_remote_files`**: `(namespace_id, npm_remote_version_id, file_name) WHERE soft_deleted_at IS NULL` のユニークインデックス — ファイル名はバージョン内で一意でなければなりません。部分条件はソフト削除後に同じ名前でファイルを再作成できるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでファイルを検索。
+- **`npm_remote_metadata_files`**: `(namespace_id, npm_remote_package_id, kind)` のユニークインデックス — パッケージごとに kind ごとに 1 つのメタデータファイルを強制。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでメタデータファイルを検索。`(namespace_id, blob_sha256)` のインデックス — 保存された blob sha256 から、それを参照するすべてのキャッシュメタデータファイルへの逆引き。ローカルの [`npm_metadata_files`](#npm-repositories) インデックスをミラーリングする。
+- **`npm_remote_files`**: `(namespace_id, npm_remote_version_id, file_name) WHERE soft_deleted_at IS NULL` のユニークインデックス — ファイル名はバージョン内で一意でなければなりません。部分条件はソフト削除後に同じ名前でファイルを再作成できるようにします。`(namespace_id, blob_storage_attachment_id)` のインデックス — ストレージアタッチメントでファイルを検索。`(namespace_id, blob_sha256)` のインデックス — 保存された blob sha256 から、それを参照するすべてのキャッシュ npm ファイルへの逆引き。ローカルの [`npm_files`](#npm-repositories) インデックスをミラーリングし、チェックサム検索がキャッシュ側参照もカバーするようにします。
 
 #### クエリ例
 

@@ -2,11 +2,11 @@
 title: 'エージェント'
 description: 'Zendesk エージェントに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/zendesk/users/agents/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
+translated_at: "2026-06-02T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-26T12:05:00-05:00"
+lastmod: "2026-06-02T09:00:01-05:00"
 ---
 
 このガイドは、自動エージェント同期プロセスや手動エージェント管理を含む、GitLab における Zendesk エージェント管理について説明します。エージェント同期は GitLab のチームデータからエージェントメタデータを自動的に維持し、手動プロセスはプロビジョニングや特殊ケースに使用されます。
@@ -54,6 +54,7 @@ Zendesk エージェントは、エージェントワークスペースへのア
 - Manager タグ（カスタム[ユーザーフィールド](/handbook/security/customer-support-operations/zendesk/users/fields)）
 - 名前
 - Out of Office ステータス（カスタム[ユーザーフィールド](/handbook/security/customer-support-operations/zendesk/users/fields)）
+  - US Government のみ
 - 署名
 - 選択されたユーザータグ（詳細は[動作の仕組み](#how-does-it-work)を参照）
 - ユーザーリージョン（Zendesk Global のみのカスタム[ユーザーフィールド](/handbook/security/customer-support-operations/zendesk/users/fields)）
@@ -81,7 +82,6 @@ Zendesk 内で同期外でエージェントに対して行われた変更は、
 1. [Support team の YAML ファイル](https://gitlab.com/gitlab-support-readiness/support-team)の内容を読み込みます
    - 編集不可（Owner）または現在同期対象外であるなど、同期に含めるべきでない選択ユーザーをスキップします
 1. YAML ファイルにある各ユーザーのユーザー情報を Zendesk から取得します
-1. PTO 中のリスト（`Support - Time Off` カレンダーのエントリに従う）を取得します
 1. 各エージェントをループして比較します:
    - Zendesk のユーザーデータと YAML のユーザーデータ、具体的には:
      - 紐づく組織が `GitLab` であるか
@@ -100,12 +100,10 @@ Zendesk 内で同期外でエージェントに対して行われた変更は、
        1. リージョンに `EMEA` を含む者は `Support EMEA`
        1. 上記基準に当てはまらない者は `General`
    - ユーザーの現在の Zendesk グループメンバーシップと、所属すべきグループ（YAML データとデフォルトグループロジックに基づく）を比較します。Zendesk に欠けているグループは追加され、YAML に無い余分なグループは削除されます。
-   - PTO ステータスの変更（つまり復帰または出発）を記録します
 1. その後、以下の API エンドポイントを使用して更新を実行します:
    - [ユーザー変更](https://developer.zendesk.com/api-reference/ticketing/users/users/#update-user)
    - [グループメンバーシップの追加](https://developer.zendesk.com/api-reference/ticketing/groups/group_memberships/#create-membership)
    - [グループメンバーシップの削除](https://developer.zendesk.com/api-reference/ticketing/groups/group_memberships/#delete-membership)
-1. 同期はまた、PTO ステータスに変更があったチームメンバーのアサイン済み全チケットも更新します（`Assignee OOO` フィールドが変更を反映するため）
 
 #### Zendesk US Government {#zendesk-us-government}
 
