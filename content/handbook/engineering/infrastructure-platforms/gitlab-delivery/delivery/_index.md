@@ -2,11 +2,11 @@
 title: "Release & Deploy グループ"
 description: "Release & Deploy グループは、GitLab Engineering が GitLab.com、GitLab Dedicated、および Self-Managed のお客様に対して、安全でスケーラブルかつ効率的な方法で機能を届けられるよう支援します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
+translated_at: "2026-06-02T00:00:00Z"
+translator: "claude"
 stale: false
-lastmod: "2026-04-30T11:49:08-06:00"
+lastmod: "2026-06-02T14:47:42-06:00"
 ---
 
 ## 共通リンク
@@ -357,7 +357,7 @@ Release & Deploy グループは、[everything starting with a merge request](/h
   - GitLab チームはグローバルに分散しているので、誰かをレビューアとして割り当てる際はタイムゾーンを考慮してください。
   - プロジェクト - レビューアはプロジェクトに精通しているか、少なくとも親しんでいるべきです。例えば、release-tools のレビューは通常バックエンドエンジニアが処理し、k8s-workloads のレビューは SRE が処理します。
   - コンテキスト - ピアと密接に作業している場合、より短いレビューサイクルのためにそのチームメンバーに割り当てることが推奨されます。
-  - リリースマネージャー (またはキャパシティ) - チームメンバーが [リリースマネージャー](https://about.gitlab.com/community/release-managers/) であり、リリースタスクに取り組んでいる場合、レビューで邪魔されるべきではありません。
+  - リリースマネージャー (またはキャパシティ) - チームメンバーが [リリースマネージャー](/handbook/engineering/releases/release-managers/) であり、リリースタスクに取り組んでいる場合、レビューで邪魔されるべきではありません。
 - 通常の [code-review turnaround](/handbook/engineering/workflow/code-review/#review-response-slo) は 2 営業日です。
   - これはマージリクエストが ~Delivery::P1 項目に関連付けられている場合は適用されません。その場合、マージリクエストレビューは優先度と緊急性をもって扱う必要があります。
 - マージリクエストが必要なすべての承認を持っている場合、作成者がマージできます。
@@ -389,7 +389,7 @@ Delivery チームは [2018-10-23 に正式に発足](https://gitlab.com/gitlab-
 
 GitLab の存在中ずっと、Release Management は開発者によって毎月ローテーションする役割でした。背後にあるアイデアは、開発者が自分たちが作成するソフトウェアのライフサイクル全体に近接し続けることと、開発者自身が自分の作業を自動化することを確保することでした。これは、アプリケーションの変更数や開発者のタスクが二次的なタスクとして誰も処理できないほど大きくなるまで、うまく機能していました。変化の必要性を示す出来事は 2017 年の終わり頃のヒヤリ・ハット事象で、最初のリリース候補が 22 日のわずか 2 日前に GitLab.com にデプロイされました。その月全体はチャレンジに満ちており、リリースマネージャーは日々の開発タスクと RM タスクを提供するのに苦労し、GitLab.com への複数の失敗したデプロイメントに直面しました。最も重要なのは、これは会社が成長していること、以前にうまくいっていたプロセスが計画されているより大きな成長に対応するために変える必要があるかもしれないという最初の兆候でした。
 
-いくつかの内部議論の後、私たちは [プロセス改善に取り組む](https://gitlab.com/gitlab-org/release/tasks/-/issues/39) という試みで 2018 年に入りました。すべてを一度に変えるのではなく、月次ローテーションから 2 ヶ月の [リリースマネージャーローテーション](https://about.gitlab.com/community/release-managers/) に変更し、[費やした時間を記録](https://gitlab.com/gitlab-org/release/tasks/-/issues/1) し始めました。その後の数ヶ月にわたって、プロセスの全体的な安定化が見られましたが、Release Manager ローテーションに 4 人のエンジニアの時間を費やすことは GitLab.com のデプロイメントプロセスを改善することに近づくことはなく、私たちが採用する各開発者でタスクリストが大きくなっていることが明らかになりました。
+いくつかの内部議論の後、私たちは [プロセス改善に取り組む](https://gitlab.com/gitlab-org/release/tasks/-/issues/39) という試みで 2018 年に入りました。すべてを一度に変えるのではなく、月次ローテーションから 2 ヶ月の [リリースマネージャーローテーション](/handbook/engineering/releases/release-managers/) に変更し、[費やした時間を記録](https://gitlab.com/gitlab-org/release/tasks/-/issues/1) し始めました。その後の数ヶ月にわたって、プロセスの全体的な安定化が見られましたが、Release Manager ローテーションに 4 人のエンジニアの時間を費やすことは GitLab.com のデプロイメントプロセスを改善することに近づくことはなく、私たちが採用する各開発者でタスクリストが大きくなっていることが明らかになりました。
 
 GitLab.com で [継続的デリバリーを達成するために何が前に立ちはだかっているか](https://gitlab.com/gitlab-com/gl-infra/delivery/-/issues/1) の最初の議論は、この特定のタスクに焦点を当てたチームの明確な必要性を露呈しました。
 
