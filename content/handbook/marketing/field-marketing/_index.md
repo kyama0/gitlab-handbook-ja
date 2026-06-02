@@ -2,12 +2,12 @@
 title: "Regional Marketing"
 description: "GitLab における Regional Marketing の役割は、対面およびバーチャルのインタラクションを通じて、地域レベルでのマーケティングメッセージとパイプライン構築を支援するために、セールスと密接に連携することです。"
 upstream_path: /handbook/marketing/field-marketing/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
+translated_at: "2026-06-01T22:29:37Z"
 translator: claude
 stale: false
 model: claude-opus-4-7
-lastmod: "2026-05-28T19:38:04+00:00"
+lastmod: "2026-06-01T17:35:18+01:00"
 ---
 
 ## Regional Marketing のビジョン
@@ -120,7 +120,7 @@ GitLab の Issue と Epic で作業する際は、GitLab の [Transparency](/han
 - [AI at GitLab Tips](/handbook/tools-and-tips/ai/)
 - [Communicating When Using Generative AI Tools](/handbook/communication/#communicating-when-using-generative-ai-tools)
 - [Duo Agent Prompt Library](https://about.gitlab.com/gitlab-duo/prompt-library/)
-- [Glean Tips & Tutorials](/handbook/business-technology/enterprise-applications/guides/glean-tips/)
+- [Glean Tips & Tutorials](/handbook/eta/ai/tools/glean/tips/)
 - [How to Customize DAP](https://about.gitlab.com/blog/customizing-gitlab-duo-chat-rules-prompts-workflows/)
 - [Marketing Ops AI Org Chart](https://internal.gitlab.com/handbook/marketing/marketing-ops-and-analytics/marketing-operations/how-we-use-ai/#ai-org-chart)
 
@@ -130,7 +130,7 @@ GitLab の Issue と Epic で作業する際は、GitLab の [Transparency](/han
 
 [GitLab Duo Agent Platform (DAP)](https://about.gitlab.com/blog/gitlab-duo-agent-platform-complete-getting-started-guide/) は、複数のインテリジェントアシスタント（「エージェント」）を GitLab プラットフォーム全体に組み込む新しい AI 駆動ソリューションです。Regional Marketing は、新しい GitLab プロジェクト管理プロセスにおいて Duo エージェントに大きく依存します。
 
-Regional Marketing はまた、GitLab の AI ナレッジプラットフォームである [Glean](/handbook/business-technology/enterprise-applications/guides/glean-guide/) を使用して、Slack メッセージ、重要なドキュメント、役立つハンドブックページ、GitLab Issue など、多くのものを迅速かつ効率的に追跡しています。
+Regional Marketing はまた、GitLab の AI ナレッジプラットフォームである [Glean](/handbook/eta/ai/tools/glean/) を使用して、Slack メッセージ、重要なドキュメント、役立つハンドブックページ、GitLab Issue など、多くのものを迅速かつ効率的に追跡しています。
 
 ### イベントの計画とロジスティクス
 

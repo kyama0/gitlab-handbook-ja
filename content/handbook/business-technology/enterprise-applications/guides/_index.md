@@ -2,11 +2,11 @@
 title: "エンタープライズアプリケーションガイド"
 description: "財務システムに関する GitLab のエンタープライズアプリケーションガイド"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T05:49:40Z"
+upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
+translated_at: "2026-06-01T21:12:29Z"
 translator: "claude"
 stale: false
-lastmod: "2026-02-10T15:03:48+00:00"
+lastmod: "2026-06-01T17:35:18+01:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -26,5 +26,5 @@ lastmod: "2026-02-10T15:03:48+00:00"
 - [Zip エンドユーザーガイド](zip-guide/)
 - [製品カタログガイド](product-catalog/)
 - [Navan Expense エンドユーザーガイド](navan-expense-guide/)
-- [Glean エンドユーザーガイド](glean-guide/)
-- [Glean ヒント & チュートリアル](glean-tips/)
+- [Glean エンドユーザーガイド](/handbook/eta/ai/tools/glean/)
+- [Glean ヒント & チュートリアル](/handbook/eta/ai/tools/glean/tips/)

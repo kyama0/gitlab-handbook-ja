@@ -1,11 +1,11 @@
 ---
 title: "営業評価のための GitLab ティア"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/pricing-tiers/
-upstream_sha: 214b98c98d2eb739dbe3a358027667a7f128ec69
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
+translated_at: "2026-06-01T21:12:29Z"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-06-01T12:55:15+02:00"
 ---
 
 ## ティア
@@ -13,7 +13,7 @@ lastmod: "2024-06-27T22:14:31+00:00"
 ### ハイレベル概要
 
 - [デプロイメントオプション](https://about.gitlab.com/features/): セルフマネージドと SaaS
-- [価格設定の哲学](/handbook/company/pricing/#buyer-based-tiering-clarification): 買い手に基づいて、どの機能をどのティアに含めるかを決定します。
+- 価格設定の哲学: 買い手に基づいて、どの機能をどのティアに含めるかを決定します。
 
 |  | Free | Premium | Ultimate |
 | --- | --- | --- | --- |

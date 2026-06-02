@@ -1,11 +1,11 @@
 ---
 title: "Request for Information プロセス"
 upstream_path: /handbook/security/security-assurance/field-security/field-security-rfp/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T21:00:00Z"
+upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
+translated_at: "2026-06-01T21:12:29Z"
 translator: claude
 stale: false
-lastmod: "2026-03-30T16:18:36+00:00"
+lastmod: "2026-06-01T17:35:18+01:00"
 ---
 
 ## Request for Information / Details
@@ -21,7 +21,7 @@ Field Security チーム、Legal & Corporate Affairs、Field Ops、Sales は、F
 1. Sales のチームメンバーは、Security、Corporate、Privacy、Commercial Legal、ESG に関する質問について、GitLab の Trust Center [Knowledgebase](https://trust.gitlab.com) のコンテンツをレビューします。*注意:* すべてのチームメンバーにベースラインのエンタイトルメントがあります。
 1. Sales のチームメンバーは、価格設定や見積もりに関する質問について、標準プロセスに従って [Deal Desk](/handbook/sales/field-operations/sales-operations/deal-desk/#communicating-with-the-deal-desk-team) に関与してもらいます。
 1. Sales のチームメンバーは、製品機能に関する質問について、GitLab の[製品ドキュメント](https://docs.gitlab.com)のコンテンツをレビューする必要があります。その他の役立つリソースには[ブログ投稿](https://about.gitlab.com/blog/)や[リリース投稿](https://about.gitlab.com/releases/categories/releases/)があります。
-1. チームには、質問に答えるために [Glean](/handbook/business-technology/enterprise-applications/guides/glean-guide/) と [GitLab Duo](https://docs.gitlab.com/user/duo_agent_platform/) を活用することを推奨します。外部に配布する前に必ず回答をレビューし検証してください。
+1. チームには、質問に答えるために [Glean](/handbook/eta/ai/tools/glean/) と [GitLab Duo](https://docs.gitlab.com/user/duo_agent_platform/) を活用することを推奨します。外部に配布する前に必ず回答をレビューし検証してください。
 1. 上記の手順を踏んでも回答されなかった Product、Security、Corporate、Privacy、Commercial Legal、ESG に関する質問については、Sales のチームメンバーは[こちら](https://gitlab.com/gitlab-com/legal-and-compliance/-/issues/new?issuable_template=RFP_Intake%20Form)で Issue をオープンできます: **必ず RFP Intake Issue Template を選択してください**
 1. **RFP Intake Issue Template** に記入する際は、次のことを行ってください:
     - 該当するコンテンツ領域のチェックボックスを選択する。

@@ -2,11 +2,11 @@
 title: バディタスク
 draft: true
 upstream_path: /handbook/product/product-management/product-manager-buddy-tasks/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-translated_at: "2026-05-22T21:55:06Z"
+upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
+translated_at: "2026-06-01T21:12:29Z"
 translator: claude
 stale: false
-lastmod: "2026-05-20T09:32:02-07:00"
+lastmod: "2026-06-01T12:55:15+02:00"
 ---
 
 1. [ ] - 新しいプロダクトマネージャーと Day 1 の 1:1 を設定する
@@ -20,7 +20,7 @@ lastmod: "2026-05-20T09:32:02-07:00"
         - [Managing your Product Direction](/handbook/product/product-processes/#managing-your-product-direction)
         - [How to work as a PM](/handbook/product/product-processes/#how-to-work-as-a-pm)
     - 価格・ティア関連
-        - <https://handbook.gitlab.com/handbook/company/pricing/#three-tiers>
+        - [GitLab Tiers](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers/)
         - [Buyer Personas](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)
     - カテゴリの DRI を確認するための [Product Categories ページ](/handbook/product/categories/)
     - [ティアとグループごとの機能一覧](/handbook/product/categories/features/)
