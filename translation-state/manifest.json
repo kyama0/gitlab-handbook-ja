@@ -6682,11 +6682,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/cells/impacted_features/template.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/impacted_features/template.md",
-      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
-      "translated_at": "2026-04-26T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "3c5685513ef8022786fd158e25e5031a120f3e1c247cce0209c64ca6f3ded1d4",
-      "upstream_committed_at": "2024-08-23T13:02:20+00:00"
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fb0166ed356d7954875ca67151278edb3821fe629acba54850b8e05d33e66839",
+      "upstream_committed_at": "2026-06-02T15:18:59+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/impacted_features/uploads.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/impacted_features/uploads.md",
@@ -15618,11 +15618,11 @@
     },
     "content/handbook/finance/jihu-support/release-certification.md": {
       "path": "content/handbook/finance/jihu-support/release-certification.md",
-      "upstream_sha": "a1349675d55d5e861385a14a4b2d2b617d2381b1",
-      "translated_at": "2026-04-29T19:06:37Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "0319c997fba77088e3ae626cfb4a23343d8f855cdb582a98950fc2329b751e92",
-      "upstream_committed_at": "2026-02-06T19:27:57-05:00"
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "05ef4230764ef2952c17efdd15b83a72d0fed5a8164de7faa69ce33fec5bf6ce",
+      "upstream_committed_at": "2026-06-02T14:47:42-06:00"
     },
     "content/handbook/finance/payroll.md": {
       "path": "content/handbook/finance/payroll.md",
@@ -20306,11 +20306,11 @@
     },
     "content/handbook/total-rewards/_index.md": {
       "path": "content/handbook/total-rewards/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "5379feb4cd434b92f512618122a57d970f7ea77a86d772949f1357c4edede3cf",
-      "upstream_committed_at": "2026-03-12T10:48:57-04:00"
+      "input_hash": "e77ed680d0dddfcf0952e5efc5a21c7e7b013026e7ff0dde1fbfec5c2e207a6e",
+      "upstream_committed_at": "2026-06-02T15:05:24-07:00"
     },
     "content/handbook/total-rewards/benefits/_index.md": {
       "path": "content/handbook/total-rewards/benefits/_index.md",
@@ -21994,11 +21994,11 @@
     },
     "content/handbook/support/workflows/ooo-ticket-management.md": {
       "path": "content/handbook/support/workflows/ooo-ticket-management.md",
-      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
-      "translated_at": "2026-05-08T00:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "5f68e2b496bb4e749e4da6fb6a36cbd1675e39247b362afe3769e49486ef2a7e",
-      "upstream_committed_at": "2026-02-19T14:14:35+00:00"
+      "input_hash": "c1b7a529e526b5ce5c3bd32ee916e761f905dfde8622185950a8c15f85d356d9",
+      "upstream_committed_at": "2026-05-06T12:20:37+01:00"
     },
     "content/handbook/support/workflows/pairify.md": {
       "path": "content/handbook/support/workflows/pairify.md",
@@ -27418,11 +27418,11 @@
     },
     "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/scw-engagement-plan.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/scw-engagement-plan.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "bcbe67dcb6715014f3bf71e032308d6c64930f00d8ef7ddb63864933ba8c53fe",
-      "upstream_committed_at": "2026-02-06T19:27:57-05:00"
+      "input_hash": "6d161e46e734c3ea538694b499aaef3380585cc86290eb4f996c2f0117e4c5d1",
+      "upstream_committed_at": "2026-06-02T14:47:42-06:00"
     },
     "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/security-dashboard-review.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/security-dashboard-review.md",
@@ -33087,6 +33087,22 @@
       "model": "claude-opus-4-7",
       "input_hash": "31e28399733b6bc58574e31e7da970f798c129b936e9ab64b4abae623dd90070",
       "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+    },
+    "content/handbook/engineering/releases/release-managers.md": {
+      "path": "content/handbook/engineering/releases/release-managers.md",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1a91adbe4851dc97c171b3a9899e8ee5c1b7fd72a2ecc6f23fa9450ebba61e45",
+      "upstream_committed_at": "2026-06-02T14:47:42-06:00"
+    },
+    "content/handbook/marketing/marketing-operations/vendelux.md": {
+      "path": "content/handbook/marketing/marketing-operations/vendelux.md",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3087cdb72accba2afbb755ffce3b88c900128771559df5d6872c2f50a8939926",
+      "upstream_committed_at": "2026-06-01T16:41:36-07:00"
     }
   }
 }
