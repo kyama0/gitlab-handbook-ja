@@ -24,7 +24,7 @@ GitLab は AI ファーストの会社になりつつあります。Enterprise A
 
 ## どう運営するか
 
-私たちは Hub and Spoke and Hub モデルで働いています。Enterprise AI はプラットフォーム Hub です。各機能には、AI Transformation Owner (ATO) が率いるスポークがあり、プラットフォームのケイパビリティを機能内の優先事項に接続します。各機能の内側には、Champion による Hub があり、日々の業務にプラクティスとパターンを持ち込みます。完全なオペレーティングモデルについては [Hub and Spoke](/handbook/eta/ai/strategy/hub-and-spoke/) を参照してください。
+私たちは Hub and Spoke and Hub モデルで働いています。Enterprise AI はプラットフォーム Hub です。各ファンクション (組織機能) には、AI Transformation Owner (ATO) が率いるスポークがあり、プラットフォームのケイパビリティをそのファンクションの優先事項に接続します。各ファンクションの内側には、Champion による Hub があり、日々の業務にプラクティスとパターンを持ち込みます。完全なオペレーティングモデルについては [Hub and Spoke](/handbook/eta/ai/strategy/hub-and-spoke/) を参照してください。
 
 ## 私たちのツール
 

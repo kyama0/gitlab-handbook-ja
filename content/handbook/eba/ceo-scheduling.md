@@ -26,7 +26,7 @@ lastmod: "2026-06-01T12:55:15+02:00"
    1. CEO に代わってのミーティングのライブストリーミング。例: CEO AMA
    1. CEO からのアドホックなリクエスト
 1. **Sr. Executive Communications Manager, CEO**
-1. 社外でのスピーキング登壇に向けた CEO の精査・コンテンツ準備・ブリーフィング・サポート
+1. 社外スピーキング登壇の精査、CEO 向けコンテンツ準備・ブリーフィング・サポート
 
 ### CEO とのミーティングをリクエストするには? {#how-to-request-a-meeting-with-ceo}
 
