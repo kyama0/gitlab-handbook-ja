@@ -6210,11 +6210,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/cells/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "b85b7a55af5647e07b5f05e328320fa0e333965d836c889f45080f1bf5759907",
-      "upstream_committed_at": "2026-05-28T15:55:17+12:00"
+      "input_hash": "cb331ebc429eb01e153675c9bd15f6895f922ba13f895034a9e56d5b6a789557",
+      "upstream_committed_at": "2026-06-02T15:52:44+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/container_registry_routing_service.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/container_registry_routing_service.md",
@@ -10562,11 +10562,11 @@
     },
     "content/handbook/engineering/deployments-and-releases/_index.md": {
       "path": "content/handbook/engineering/deployments-and-releases/_index.md",
-      "upstream_sha": "7f50ef5c825dfb207a7a1e42224bbd3d77dc35cc",
-      "translated_at": "2026-05-25T00:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "66bcf28c31ce7a3aa82741f8be50d681402f99b6159d1c626588366173b08a54",
-      "upstream_committed_at": "2026-05-25T12:15:55-06:00"
+      "input_hash": "fd4d9388bf72e23eca2977d6293678cc0bd4684f0189139e5b5decbaf4400672",
+      "upstream_committed_at": "2026-06-02T14:47:42-06:00"
     },
     "content/handbook/engineering/development/_index.md": {
       "path": "content/handbook/engineering/development/_index.md",
@@ -13690,11 +13690,11 @@
     },
     "content/handbook/engineering/monitoring/_index.md": {
       "path": "content/handbook/engineering/monitoring/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "8bd0dc6f3d7430952cc22b033fa6507db26da5ca8cee33c166135b3c4b282e0b",
-      "upstream_committed_at": "2026-05-05T10:30:02-06:00"
+      "input_hash": "55742253655a8a2a31dd9ee5179dd9ab2e75ea14c8d223101b4babcba2ca140b",
+      "upstream_committed_at": "2026-06-01T20:39:37-07:00"
     },
     "content/handbook/engineering/monitoring/staging-monitoring.md": {
       "path": "content/handbook/engineering/monitoring/staging-monitoring.md",
@@ -14050,11 +14050,11 @@
     },
     "content/handbook/engineering/releases/monthly-releases/index.md": {
       "path": "content/handbook/engineering/releases/monthly-releases/index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "af196b47b434883f8c7527661e9742ea85d67bb7d6d23994d85de25bb14f3d3f",
-      "upstream_committed_at": "2026-02-10T12:05:01-06:00"
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "61825c5ebbeac4b0445f387fc291572aa9c8a9b8418eb624d83cfb921b73dbf1",
+      "upstream_committed_at": "2026-06-02T14:47:42-06:00"
     },
     "content/handbook/engineering/releases/patch-releases/index.md": {
       "path": "content/handbook/engineering/releases/patch-releases/index.md",
@@ -19842,11 +19842,11 @@
     },
     "content/handbook/marketing/marketing-operations/ringlead.md": {
       "path": "content/handbook/marketing/marketing-operations/ringlead.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "14cbd8e86879f97d0296e2fce25f059217b76450b844fddf7ac758392ac9b683",
-      "upstream_committed_at": "2026-05-19T12:08:56-07:00"
+      "input_hash": "a0b19e0feb8a7c2d887465108a0845730a83c8489bc1fb456b8d23adbd01785f",
+      "upstream_committed_at": "2026-06-01T16:41:36-07:00"
     },
     "content/handbook/marketing/marketing-operations/similarweb.md": {
       "path": "content/handbook/marketing/marketing-operations/similarweb.md",

@@ -1,9 +1,9 @@
 ---
 title: GitLab.com のモニタリング
 upstream_path: /handbook/engineering/monitoring/
-upstream_sha: 7d467b8ae210e5b3bb843857cd3639cbc27af386
+upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
 translated_at: "2026-06-02T00:00:00Z"
-translator: claude
+translator: "claude"
 stale: false
 lastmod: "2026-06-01T20:39:37-07:00"
 ---
