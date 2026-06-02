@@ -6018,11 +6018,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "95911208a8a27f12a52e118aac01b1709b96910e3b9a174fd980d6939d70a73c",
-      "upstream_committed_at": "2026-05-28T10:57:33+01:00"
+      "input_hash": "3d68f29c7566df17b38e301d95db6d590bd0f7e9b3deba27be82d78231005468",
+      "upstream_committed_at": "2026-06-02T19:33:01+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md",
@@ -19618,11 +19618,11 @@
     },
     "content/handbook/marketing/marketing-operations/campaigns-and-programs.md": {
       "path": "content/handbook/marketing/marketing-operations/campaigns-and-programs.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ec3aef0594ddb2d76222eead57aed55f3567bb6d9c5b2e35684b041232aed1a5",
-      "upstream_committed_at": "2026-05-26T13:36:07-06:00"
+      "input_hash": "043bedba64c85bc56525c3d99ca2847076c86d0ee2971c96297fba8365e1da9a",
+      "upstream_committed_at": "2026-06-01T16:41:36-07:00"
     },
     "content/handbook/marketing/marketing-operations/cognism.md": {
       "path": "content/handbook/marketing/marketing-operations/cognism.md",
@@ -31722,11 +31722,11 @@
     },
     "content/handbook/product/groups/fulfillment/_index.md": {
       "path": "content/handbook/product/groups/fulfillment/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1bc8b8488c76f358590f53156b14d75e2fc490cf1cdb8fc35adb9958c4ebcc4e",
-      "upstream_committed_at": "2026-04-02T22:15:45+00:00"
+      "input_hash": "0393a6b0842f522d77fe18a39a48f20bc33b7418f1c0d1b67b0f0f5688d2fc4e",
+      "upstream_committed_at": "2026-06-02T16:10:55-05:00"
     },
     "content/handbook/product/groups/fulfillment/direction/fulfillment_platform.md": {
       "path": "content/handbook/product/groups/fulfillment/direction/fulfillment_platform.md",
