@@ -12770,11 +12770,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "e4a2f7c80af85d6f96417000d9f9d3e2c9ca025bcb386d0fa8492aae26ae6be3",
-      "upstream_committed_at": "2026-04-30T11:49:08-06:00"
+      "input_hash": "3b66696024ce28ff1c2015daba4bf816f92fd115464977dbe7931025cbdd6133",
+      "upstream_committed_at": "2026-06-02T14:47:42-06:00"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/ai-use-cases.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/ai-use-cases.md",
@@ -19538,11 +19538,11 @@
     },
     "content/handbook/marketing/marketing-operations/_index.md": {
       "path": "content/handbook/marketing/marketing-operations/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "0a526393a48858f8a5e98a865cd30986dfcb75d2eaf97475ebf905172641007d",
-      "upstream_committed_at": "2026-05-21T16:35:14-06:00"
+      "input_hash": "827f83dba6f8d532b47e14dfff4a04589afd1384ffa008949c8073e12b34119d",
+      "upstream_committed_at": "2026-06-01T16:41:36-07:00"
     },
     "content/handbook/marketing/marketing-operations/accelevents.md": {
       "path": "content/handbook/marketing/marketing-operations/accelevents.md",
@@ -19802,11 +19802,11 @@
     },
     "content/handbook/marketing/marketing-operations/outreach/index.md": {
       "path": "content/handbook/marketing/marketing-operations/outreach/index.md",
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-04-30T12:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7715fe040af097b4fbaab2870c16f1067f3207e8b152c2d9a803f382a189a612",
-      "upstream_committed_at": "2026-04-09T20:14:47+00:00"
+      "input_hash": "2c99a6859376535e91fde3684a3488b10d878ef46e6b6763d582a14d6be982d5",
+      "upstream_committed_at": "2026-06-01T16:41:36-07:00"
     },
     "content/handbook/marketing/marketing-operations/pathfactory/_index.md": {
       "path": "content/handbook/marketing/marketing-operations/pathfactory/_index.md",
