@@ -2,11 +2,11 @@
 title: "エンジニアリングワークフロー"
 description: "このドキュメントは GitLab Inc. において Issue を扱うすべての人のワークフローを説明します。"
 upstream_path: "/handbook/engineering/workflow/"
-upstream_sha: "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1"
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
+translated_at: "2026-06-02T00:00:00Z"
+translator: "claude"
 stale: false
-lastmod: "2026-05-22T14:47:44+02:00"
+lastmod: "2026-06-02T14:47:42-06:00"
 ---
 
 このドキュメントは GitLab Inc. において Issue を扱うすべての人のワークフローを説明します。
@@ -332,7 +332,7 @@ Failure in <JOB_URL> happens in `master` and is being worked on in <INCIDENT_URL
 
 ### 破損 `master` ミラー
 
-[`#master-broken-mirrors`](https://gitlab.slack.com/archives/C01PK38VAN8) は、`#master-broken` チャンネルからの重複する通知を取り除くために作成され、[リリースマネージャー](https://about.gitlab.com/community/release-managers/) と[デベロッパーエクスペリエンスチーム](/handbook/engineering/infrastructure-platforms/developer-experience/) が以下のプロジェクトの障害を監視できるスペースを提供します:
+[`#master-broken-mirrors`](https://gitlab.slack.com/archives/C01PK38VAN8) は、`#master-broken` チャンネルからの重複する通知を取り除くために作成され、[リリースマネージャー](/handbook/engineering/releases/release-managers/) と[デベロッパーエクスペリエンスチーム](/handbook/engineering/infrastructure-platforms/developer-experience/) が以下のプロジェクトの障害を監視できるスペースを提供します:
 
 - <https://gitlab.com/gitlab-org/security/gitlab>
 - <https://dev.gitlab.org/gitlab/gitlab-ee>

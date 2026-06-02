@@ -14234,11 +14234,11 @@
     },
     "content/handbook/engineering/workflow/_index.md": {
       "path": "content/handbook/engineering/workflow/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "4757229bd18b94674eb70eb0ee100431b27f719f994ba8ba84c24a3c7d05583a",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "input_hash": "90d9aed08a95dfbabf4314f0e8df5fa94d32c96111b86f9530302b5495e2544e",
+      "upstream_committed_at": "2026-06-02T14:47:42-06:00"
     },
     "content/handbook/engineering/workflow/ai-assisted-development.md": {
       "path": "content/handbook/engineering/workflow/ai-assisted-development.md",
@@ -19746,11 +19746,11 @@
     },
     "content/handbook/marketing/marketing-operations/marketo/_index.md": {
       "path": "content/handbook/marketing/marketing-operations/marketo/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "e05611aa119f074548cb56789c49ba3db1db25f4870ae2fcc7165f3954831f31",
-      "upstream_committed_at": "2026-05-26T16:05:01-06:00"
+      "input_hash": "56c033e5df417ac660d5c33fcc3cf51af74072756f70d28a7939f90755781cdd",
+      "upstream_committed_at": "2026-06-01T16:41:36-07:00"
     },
     "content/handbook/marketing/marketing-operations/marketo/interesting-moments.md": {
       "path": "content/handbook/marketing/marketing-operations/marketo/interesting-moments.md",
@@ -32834,11 +32834,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
+      "translated_at": "2026-06-02T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "531826a23dd501e278f27050bac88f4f4601a20d49a63034ef179f9feaa33956",
-      "upstream_committed_at": "2026-05-27T17:43:35+12:00"
+      "input_hash": "5b2952292cf097c882ee951def05694f10052c59d56c03a446cc83913f3230e0",
+      "upstream_committed_at": "2026-06-02T21:58:26+00:00"
     },
     "content/handbook/business-technology/readmes/rick-pollak.md": {
       "path": "content/handbook/business-technology/readmes/rick-pollak.md",

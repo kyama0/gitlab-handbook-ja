@@ -79,7 +79,7 @@ Sales Systems は、[SFDC ステージング環境](/handbook/sales/field-operat
 
 新しいカスタムフォームの作成が必要な場合は、[フォーム作成 Issue](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new?issuable_template=form_request) を開いてください。フォーム作成と複雑な自動化の一般的なタイムラインは 2 週間です。
 
-Contentful の新しいページで既存のフォームを使用している場合は、フォームの背後にある自動化を構築できるよう、[リクエストを入力](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new?issuable_template=form_processing)してください。フォームに対する自動化が作成されていない場合、フォームを記入した人物は Marketo に登録されますが、キャンペーンに処理されたり、フォローアップに送信されたりしません。
+既存のフォームを新しいページで使用している場合は、フォームの背後にある自動化を構築できるよう、[リクエストを入力](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/new?issuable_template=form_processing)してください。フォームに対する自動化が作成されていない場合、フォームを記入した人物は Marketo に登録されますが、キャンペーンに処理されたり、フォローアップに送信されたりしません。
 
 フォームのドキュメントは[こちら](https://docs.google.com/spreadsheets/d/1cV_hI2wAzLxYYDI-NQYF5-FDDPXPXH0VV5qRBUJAQQk)で確認できます。これには、現在のすべてのフォーム、および標準化された国と州のピックリストが含まれています。
 
@@ -171,13 +171,13 @@ dataLayer.push(
 
 データおよびエンジニアリングチームは、製品内の顧客およびトライアル使用に関するデータを Marketo に取り込むためのインテグレーションを開発しました。
 
-1. [Marketing Contact Datamart & Pump](https://internal.gitlab.com/marketing-operations/product-data/#marketing-datamart-pump-and-pql-information-email-marketing-data-mart): フィールドは `[CDB]` で始まる
-1. [SaaS Trial & Handshakes](https://internal.gitlab.com/marketing-operations/product-data/#saas-trials--handraise): フィールドは `[PQL]` で始まる
+1. [Marketing Contact Datamart & Pump](https://internal.gitlab.com/marketing-operations/product-data/#marketing-datamart-pump-and-pql-information-email-marketing-data-mart): フィールドは `[CDB]` で始まる。このデータは Hightouch により毎晩投入される
+1. [SaaS Trial & Hand-Raises](https://internal.gitlab.com/marketing-operations/product-data/#saas-trials--handraise): フィールドは `[PQL]` で始まる
 1. [Propensity to Buy Models](/handbook/enterprise-data/organization/data-science/#conversion): フィールドは `[PTP]` で始まる - 現時点ではトライアルユーザーのみ
 
 ### キャンペーン制限
 
-特定のスマートまたはメールキャンペーンを通じて処理できるレコード数には 250,000 件の上限が設定されています。スマートキャンペーンのスマートリストが 250,000 レコードを超える更新またはメール送信を行うように設定されている場合、実行されず `aborted` になります。これは、誤った大量更新やメール送信を防ぐために設けられています。この上限を超えるキャンペーンを実行する必要がある場合は、MarOps に連絡してください。
+特定のスマートまたはメールキャンペーンを通じて処理できるレコード数には 250,000 件の上限が設定されています。スマートキャンペーンのスマートリストが 250,000 レコードを超える更新またはメール送信を行うように設定されている場合、実行されず `aborted` になります。これは、誤った大量更新やメール送信を防ぐために設けられています。この上限を超えるキャンペーンを実行する必要がある場合は、#mktgops に連絡してください。
 
 #### 国 &/または州値の標準化
 
@@ -189,7 +189,7 @@ dataLayer.push(
 
 - 州の値を受け付ける国は以下のみです: United States、Canada、Ireland、India、Brazil、Australia、China、Italy、Mexico
 - 米国の全 50 州とカナダのすべての州には、2 文字の省略形をフルスペルに設定する標準化キャンペーンがあります。
-- 以下の国には、共通のバリエーションを受容値に更新する仕組みがあります: United States、Bolivia、Canada、China、France、Germany、Hong Kong、India、Iran、Ireland、Macao、Myanmar、Netherlands、Russia、South Korea、Sweden、Switzerland、United Kingdom、Venezuela、Vietnam。
+- 以下の国には、共通のバリエーションを受容値に更新する仕組みがあります: United States、Bolivia、Canada、China、France、Germany、Hong Kong、India、Iran、Ireland、Macao、Myanmar、Netherlands、Russia、South Korea、Sweden、Switzerland、United Kingdom、Venezuela、Viet nam。
 
 ## MQL とリードスコアリング
 
