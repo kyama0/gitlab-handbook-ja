@@ -34,11 +34,11 @@
     },
     "content/handbook/about/editing-handbook/_index.md": {
       "path": "content/handbook/about/editing-handbook/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T04:45:05Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "36781aeda921da57ff697d7750f52989e1dde4bf9c2299158c62cec62dd03ac7",
-      "upstream_committed_at": "2025-09-02T17:27:26+00:00"
+      "upstream_sha": "b4d6f155a3f220e28a2c8c0191c96e9a9be2f4ef",
+      "translated_at": "2026-06-03T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3fe267d8a2d9dc689cc0a601b191c89e58ead082414aa8100b2d13ccf15b9c02",
+      "upstream_committed_at": "2026-06-03T15:16:43+02:00"
     },
     "content/handbook/about/editing-handbook/edit-team-page.md": {
       "path": "content/handbook/about/editing-handbook/edit-team-page.md",
@@ -32754,11 +32754,11 @@
     },
     "content/handbook/enterprise-data/ai/agentic-tool-development.md": {
       "path": "content/handbook/enterprise-data/ai/agentic-tool-development.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "b4d6f155a3f220e28a2c8c0191c96e9a9be2f4ef",
+      "translated_at": "2026-06-03T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "01c36f59bd6b49c78546840a9399b71282605d93202606bce79fa1ac15e0cb15",
-      "upstream_committed_at": "2026-05-08T14:33:54+00:00"
+      "input_hash": "5add2fe1767c45829db053b703e6abb7ba127768dae3abcbffe81b862402c8a8",
+      "upstream_committed_at": "2026-06-03T13:43:50+00:00"
     },
     "content/handbook/enterprise-data/ai/ai-vision-and-strategy.md": {
       "path": "content/handbook/enterprise-data/ai/ai-vision-and-strategy.md",
