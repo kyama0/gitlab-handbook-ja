@@ -22505,12 +22505,12 @@
       "upstream_committed_at": "2026-02-12T13:14:13+00:00"
     },
     "content/handbook/values/_index.md": {
-      "path": "content/handbook/values/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "upstream_committed_at": "2026-06-04T06:51:08-07:00",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "4cc995ac89293b07dfa4061d70ebcf334ecd989f0239cf0ca9acd0e6c742ca57",
-      "upstream_committed_at": "2026-04-15T09:46:14-04:00"
+      "input_hash": "2a1e91ec51a740559662fc6807194c8cd367d0a86145fff474782adbb77d3335",
+      "path": "content/handbook/values/_index.md"
     },
     "content/handbook/support/license-and-renewals/workflows/self-managed/sending_license_to_different_email.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/self-managed/sending_license_to_different_email.md",
@@ -26121,12 +26121,12 @@
       "upstream_committed_at": "2026-05-26T12:05:00-05:00"
     },
     "content/handbook/security/customer-support-operations/resources/coding-standards.md": {
-      "path": "content/handbook/security/customer-support-operations/resources/coding-standards.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "upstream_committed_at": "2026-06-04T12:53:57-05:00",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "df41965add52f817c460f22cc25e14e7f39e5414ad6f7f333fbb6c9ef70fbd37",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "input_hash": "d95f26e2cae7accb312dd13e5ab2227ec9e238d7f5ef4e86faa945e6773df9c6",
+      "path": "content/handbook/security/customer-support-operations/resources/coding-standards.md"
     },
     "content/handbook/security/customer-support-operations/resources/recommended-setup.md": {
       "path": "content/handbook/security/customer-support-operations/resources/recommended-setup.md",
