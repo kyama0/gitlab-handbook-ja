@@ -83,6 +83,18 @@ jobs:
           # されて効かないため。
           # https://gohugo.io/configuration/introduction/
           HUGO_PARAMS_imageBaseUrl: ${{ vars.PUBLIC_R2_BASE }}
+          # Google Analytics (GA4)。docsy の _partials/head.html が
+          # hugo.IsProduction のとき Hugo 組み込み partial "google_analytics.html"
+          # を呼び、それが services.googleAnalytics.id を読んで gtag を出力する。
+          # config.yaml には GA キーを置かず、本番ビルド時のみ env で注入する
+          # (ローカル hugo server は development 環境なので GA は出ない)。
+          # HUGO_SERVICES_GOOGLEANALYTICS_ID は `_` 区切りで
+          # services.googleanalytics.id に解決され、Hugo は config キーを
+          # 小文字化して照合するので camelCase の googleAnalytics と一致する。
+          # 測定 ID は client 側 HTML に露出する公開値 (infra/locals.tf の
+          # PUBLIC_GA4_ID と同値)。GitHub Actions Variable PUBLIC_GA4_ID が
+          # あればそれを使い、無ければリテラルにフォールバックする。
+          HUGO_SERVICES_GOOGLEANALYTICS_ID: ${{ vars.PUBLIC_GA4_ID || 'G-ED5RXHWDV6' }}
 
       - name: Pagefind index (CJK-aware static site search)
         run: npx pagefind --site public
