@@ -18433,12 +18433,12 @@
       "upstream_committed_at": "2026-05-28T17:02:01+09:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md": {
-      "path": "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "upstream_committed_at": "2026-06-04T09:06:21-04:00",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "87b169957639face6d41a6f4272532dadb6ed875109393f8520d0097faadaaa1",
-      "upstream_committed_at": "2025-12-01T22:11:31+01:00"
+      "input_hash": "b49f9fa7a7db7169220096f34f98e551cda57255349b9955e16b27ee5d0f460e",
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md",
