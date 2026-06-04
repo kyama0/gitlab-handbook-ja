@@ -705,12 +705,12 @@
       "upstream_committed_at": "2026-04-30T16:57:54+00:00"
     },
     "content/handbook/communication/_index.md": {
-      "path": "content/handbook/communication/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T12:00:00Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "upstream_committed_at": "2026-06-04T06:51:08-07:00",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "92e4bec3d80ac1d6127fb861bce9eee14d8f212bb30f9b3215302dc891485dae",
-      "upstream_committed_at": "2026-04-09T14:57:57-07:00"
+      "input_hash": "097130fe61b6a517d482382fba4e69af398659db7bb7d1261d7a01d03468203c",
+      "path": "content/handbook/communication/_index.md"
     },
     "content/handbook/communication/ask-me-anything.md": {
       "path": "content/handbook/communication/ask-me-anything.md",
