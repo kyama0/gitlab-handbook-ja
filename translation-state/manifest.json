@@ -19746,11 +19746,11 @@
     },
     "content/handbook/marketing/marketing-operations/marketo/_index.md": {
       "path": "content/handbook/marketing/marketing-operations/marketo/_index.md",
-      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
-      "translated_at": "2026-06-02T00:00:00Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "56c033e5df417ac660d5c33fcc3cf51af74072756f70d28a7939f90755781cdd",
-      "upstream_committed_at": "2026-06-01T16:41:36-07:00"
+      "input_hash": "2436caacccc9440866f962cf161df2c8cf34d51f6584db2f377ec1bafddae754",
+      "upstream_committed_at": "2026-06-03T16:50:03-06:00"
     },
     "content/handbook/marketing/marketing-operations/marketo/interesting-moments.md": {
       "path": "content/handbook/marketing/marketing-operations/marketo/interesting-moments.md",
@@ -20402,11 +20402,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
-      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
-      "translated_at": "2026-05-07T22:45:00Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1f76885869bb73d5429944e2c04b11153830e566d62b13b090c446519e1c47b6",
-      "upstream_committed_at": "2026-04-30T10:04:21-07:00"
+      "input_hash": "435bdd377332309e47834f35f141e93736aa36f45e42aad000172d58903c7c00",
+      "upstream_committed_at": "2026-06-02T22:00:31-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md",
@@ -30338,11 +30338,11 @@
     },
     "content/handbook/product/ux/technical-writing/_index.md": {
       "path": "content/handbook/product/ux/technical-writing/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a8582e9f0087c9b0fac0403451bc4af71566ef0fa4330940af8e099b3bd520d8",
-      "upstream_committed_at": "2026-05-26T16:33:15+01:00"
+      "input_hash": "934dd774b65bfe2be270d5bb55cdc8130337a717c6048497e3372efba2624923",
+      "upstream_committed_at": "2026-06-04T08:58:35-06:00"
     },
     "content/handbook/product/ux/technical-writing/feature-prioritization.md": {
       "path": "content/handbook/product/ux/technical-writing/feature-prioritization.md",
