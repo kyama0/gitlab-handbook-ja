@@ -3810,11 +3810,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab2.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab2.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:52:14Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "e544814c038aae9dad1a0013c1ca06667cfa07511605f091e09f8648d31e24d1",
-      "upstream_committed_at": "2026-02-17T00:27:51+01:00"
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "08dad9a9356d7cb94001230aa1ec45c1427485d9ee8614f1b69a03afca8f7a12",
+      "upstream_committed_at": "2026-06-05T16:14:13+01:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab3.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab3.md",
@@ -18426,19 +18426,19 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/content.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/content.md",
-      "upstream_sha": "15baf9cba6d48a5e5ac2f021a8e0d467baa862f1",
-      "translated_at": "2026-05-31T00:00:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "31892328b374a2c120fd1332443a6814cf9e26229388d69e19b5326a6605ce91",
-      "upstream_committed_at": "2026-05-28T17:02:01+09:00"
+      "input_hash": "6561d9dbc02cacda7e651d4bc048beb86010b4b9e754678266b6cd05fc0d64fd",
+      "upstream_committed_at": "2026-06-05T17:12:34+02:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "87b169957639face6d41a6f4272532dadb6ed875109393f8520d0097faadaaa1",
-      "upstream_committed_at": "2025-12-01T22:11:31+01:00"
+      "input_hash": "b49f9fa7a7db7169220096f34f98e551cda57255349b9955e16b27ee5d0f460e",
+      "upstream_committed_at": "2026-06-04T09:06:21-04:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md",
@@ -20386,11 +20386,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md",
-      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
-      "translated_at": "2026-05-29T21:15:50Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "5a7f30bd43b36cd0c5022c04bdb8de5564523969934b915dffcdbd293377cc5e",
-      "upstream_committed_at": "2026-05-28T09:55:19+00:00"
+      "input_hash": "6e1ef34f066da6d634c2d047f38b38ec6e3d3bcc053ab94ad0c54cd40072a010",
+      "upstream_committed_at": "2026-06-05T17:42:21+00:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md",
