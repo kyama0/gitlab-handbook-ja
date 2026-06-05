@@ -36,7 +36,7 @@ GitLab Duo は [VS Code マーケットプレースの GitLab Workflow 拡張機
 >
 > 初期セットアップ完了後、[Dev Environments の内部ガイド](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments/) を参照してください。
 
-![VS Code, light theme, with Duo Agentic Chat in the right panel. Editor shows diff view after agentic edits.](/images/handbook/marketing/developer-relations/developer-advocacy/dev-environments/vscode_light_theme_dap_agentic_chat_right_pane_diff_view.png)
+![VS Code（ライトテーマ）の右パネルに Duo Agentic Chat、エディタにはエージェント編集後の diff ビューが表示されている様子。](/images/handbook/marketing/developer-relations/developer-advocacy/dev-environments/vscode_light_theme_dap_agentic_chat_right_pane_diff_view.png)
 
 #### VS Code のヒントとベストプラクティス
 
@@ -156,7 +156,7 @@ GitLab Duo は [JetBrains マーケットプレースの GitLab Duo プラグイ
 >
 > 初期セットアップ完了後、[Dev Environments の内部ガイド](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments/) を参照してください。
 
-![JetBrains IntelliJ IDEA with Duo Agentic Chat, modernizing Java 8 to 21, editor shows diff view from agentic edits.](/images/handbook/marketing/developer-relations/developer-advocacy/dev-environments/jetbrains_intellij_idea_light_theme_dap_java_modernize_agentic_edits.png)
+![JetBrains IntelliJ IDEA で Duo Agentic Chat を用いて Java 8 を 21 に近代化しており、エディタにはエージェント編集による diff ビューが表示されている様子。](/images/handbook/marketing/developer-relations/developer-advocacy/dev-environments/jetbrains_intellij_idea_light_theme_dap_java_modernize_agentic_edits.png)
 
 #### JetBrains IDE のヒントとベストプラクティス
 

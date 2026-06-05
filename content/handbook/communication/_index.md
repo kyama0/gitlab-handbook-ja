@@ -1,6 +1,6 @@
 ---
 title: "GitLab コミュニケーション"
-description: "完全リモートの会社として、つながりを保ち、より効率的に働けるよう、明確なコミュニケーション方法を実践することが私たちにとって重要です。"
+description: "オールリモートの会社として、つながりを保ち、より効率的に働けるよう、明確なコミュニケーション方法を実践することが私たちにとって重要です。"
 upstream_path: "/handbook/communication/"
 upstream_sha: 228e83810bd79bddf58ab0b0b518b1d52bd74fb7
 translated_at: "2026-06-05T21:08:33Z"
