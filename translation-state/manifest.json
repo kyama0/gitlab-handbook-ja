@@ -66,11 +66,11 @@
     },
     "content/handbook/about/handbook-usage.md": {
       "path": "content/handbook/about/handbook-usage.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T12:00:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "8df105c0e8baf6173855c02a9c944e80949d99660a818f7b8c790964bd78c24d",
-      "upstream_committed_at": "2025-12-01T16:21:31-05:00"
+      "input_hash": "eb4c4caced91b453d73deb1a8abc71628d4ced25520338dbc040803b25f964ff",
+      "upstream_committed_at": "2026-06-04T06:51:08-07:00"
     },
     "content/handbook/about/maintenance.md": {
       "path": "content/handbook/about/maintenance.md",
@@ -12370,11 +12370,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/design-documents/performance_contracts/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/design-documents/performance_contracts/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "8b3c1efd3c8778b8ad04b2ced08318481a167bafe9337d3bb90e8256a6902c9e",
-      "upstream_committed_at": "2026-05-21T12:43:31-07:00"
+      "input_hash": "7334b394d8b63efb6e5a123d21d1f86c1bcae7a0a3d348084da75453d315f0d4",
+      "upstream_committed_at": "2026-06-05T10:08:12-07:00"
     },
     "content/handbook/engineering/infrastructure-platforms/developer-experience/design-documents/performance_datastore/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/developer-experience/design-documents/performance_datastore/_index.md",
@@ -14154,11 +14154,11 @@
     },
     "content/handbook/engineering/testing/performance-contracts.md": {
       "path": "content/handbook/engineering/testing/performance-contracts.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "3f47029a29c599a2ddaa01d6a47b5a16aed907d2518615c6641d0652330be44e",
-      "upstream_committed_at": "2026-05-21T12:43:31-07:00"
+      "input_hash": "b290ee4f92312a03dc42f6fa246a83b894ca43500b6a84aff16e212d0983f245",
+      "upstream_committed_at": "2026-06-05T10:08:12-07:00"
     },
     "content/handbook/engineering/testing/performance-tools.md": {
       "path": "content/handbook/engineering/testing/performance-tools.md",
@@ -18354,11 +18354,11 @@
     },
     "content/handbook/marketing/developer-relations/_index.md": {
       "path": "content/handbook/marketing/developer-relations/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T12:00:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "c8d69c3d881bf638ad88ca0b233373c413e81a58d6fb1f4f1876c67dcab09d8b",
-      "upstream_committed_at": "2026-05-01T10:44:51-04:00"
+      "input_hash": "b7ac204cde6527d1745c27c47984ee53e36547177ecd808dbe3cc642c41c9d27",
+      "upstream_committed_at": "2026-06-04T10:07:48-04:00"
     },
     "content/handbook/marketing/developer-relations/community-pathway.md": {
       "path": "content/handbook/marketing/developer-relations/community-pathway.md",
@@ -26298,11 +26298,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/api/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/api/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "8ab89ab8f517060ed00b6380c4e6cd50fa3ac6e4c19633d20fa0afdcf1e41031",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "input_hash": "332432da2bec9c64ceac50f46bdbded5465efb1d7f2c5fc02f4f6e99db3a924c",
+      "upstream_committed_at": "2026-06-04T12:53:57-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/apps/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/apps/_index.md",
