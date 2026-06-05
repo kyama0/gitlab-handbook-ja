@@ -2,11 +2,11 @@
 title: "GitLab with Git Fundamentals - ハンズオンラボ: Static Application Security Testing (SAST)"
 description: "このハンズオンガイドでは、コードのセキュリティ上の欠陥を追跡する SAST ジョブのセットアップ方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab6/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:52:14Z"
+upstream_sha: 228e83810bd79bddf58ab0b0b518b1d52bd74fb7
+translated_at: "2026-06-05T21:08:33Z"
 translator: claude
 stale: false
-lastmod: "2024-08-13T17:18:50+00:00"
+lastmod: "2026-06-05T16:14:13+01:00"
 ---
 
 > 完了までの推定時間: 30 分
@@ -103,7 +103,3 @@ lastmod: "2024-08-13T17:18:50+00:00"
 ## ラボガイド完了
 
 このラボ演習が完了しました。このコースの他の[ラボガイド](/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandson)を見ることができます。
-
-## ご提案は？
-
-ラボへの変更を提案したい場合は、マージリクエストを通じて送信してください。

@@ -1714,11 +1714,11 @@
     },
     "content/handbook/company/only-healthy-constraints.md": {
       "path": "content/handbook/company/only-healthy-constraints.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "fdadb8f6042cd929600ab44cb61585cceace4a00c0c67170fd3a7b268e4d6f6a",
-      "upstream_committed_at": "2025-04-07T15:31:17+00:00"
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a2e59204be2cb2168fc92ee499a953699522b94b63f2b08fab5f2975bf1ea8f8",
+      "upstream_committed_at": "2026-06-04T06:51:08-07:00"
     },
     "content/handbook/company/pricing.md": {
       "path": "content/handbook/company/pricing.md",
@@ -3794,11 +3794,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandson.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandson.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:19:14Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "be8d68bddd6e4da08da3fb278fb140449f4a2bedeb063a0d541d4931e3e13072",
-      "upstream_committed_at": "2025-01-04T01:51:25+00:00"
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "cfa3916de7178b92eec1b76b649e4dd8f64267c913ffd7b456fd43bc724e3f21",
+      "upstream_committed_at": "2026-06-05T16:14:13+01:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab1.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab1.md",
@@ -3826,11 +3826,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab4.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab4.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:52:14Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f9f80a5116d107a7979d0bbcb76980308634477014bbc8dbf9f5106130fb8e0c",
-      "upstream_committed_at": "2024-10-02T00:28:10+00:00"
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "43e0175ebd604f5254abea4b11b356138ef887615c4f173a123e031c8145f1fb",
+      "upstream_committed_at": "2026-06-05T16:14:13+01:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab5.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab5.md",
@@ -3842,11 +3842,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab6.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab6.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:52:14Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "d2c0a2fd1347d2270cb670515d94787d3682449e84b4c38aeb0d32323a0d1a3a",
-      "upstream_committed_at": "2024-08-13T17:18:50+00:00"
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "eaa4520bd986d73f04d2b7328d71db4f27dd6b529f761c3fe939d80f98513bb4",
+      "upstream_committed_at": "2026-06-05T16:14:13+01:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandson.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/gitlabcicdhandson.md",
@@ -22762,11 +22762,11 @@
     },
     "content/handbook/support/enhanced-support-offerings/_index.md": {
       "path": "content/handbook/support/enhanced-support-offerings/_index.md",
-      "upstream_sha": "c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba",
-      "translated_at": "2026-05-09T00:00:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "3dcbda2c70e769855215becb03c3f760638d672b17e125f5a802be55da6394c1",
-      "upstream_committed_at": "2024-12-13T19:15:15+00:00"
+      "input_hash": "10841880dea135234351aa4cea576033ba89bdd53b1495a29a31923993bbbb65",
+      "upstream_committed_at": "2026-05-15T13:13:32-04:00"
     },
     "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/_index.md": {
       "path": "content/handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/_index.md",
@@ -32746,11 +32746,11 @@
     },
     "content/handbook/enterprise-data/ai/agent-usage-guide.md": {
       "path": "content/handbook/enterprise-data/ai/agent-usage-guide.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "36d13c059ead5a7927a9c41d08cd7e15e5a5f4919d61fba8a54d9677d5547f44",
-      "upstream_committed_at": "2026-05-08T14:33:54+00:00"
+      "input_hash": "dfe9fb6698dbb5659b86d894e6d44a04699d3385414b8a590f67a561bc5422d5",
+      "upstream_committed_at": "2026-06-05T13:54:40+00:00"
     },
     "content/handbook/enterprise-data/ai/agentic-tool-development.md": {
       "path": "content/handbook/enterprise-data/ai/agentic-tool-development.md",
@@ -33026,11 +33026,11 @@
     },
     "content/handbook/eta/ai/strategy/hub-and-spoke/_index.md": {
       "path": "content/handbook/eta/ai/strategy/hub-and-spoke/_index.md",
-      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
-      "translated_at": "2026-06-01T21:12:29Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "0f7dc980ccd911705306323ce49945ed06f9002ebe19e16b4b5492b5572d87d1",
-      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+      "input_hash": "1aada6ea8d4a7cb58d3241ffac8bf170186b19ef7079ffc2e5d3b7a03e18862e",
+      "upstream_committed_at": "2026-06-04T15:39:28+01:00"
     },
     "content/handbook/eta/ai/strategy/hub-and-spoke/operating-rhythm/_index.md": {
       "path": "content/handbook/eta/ai/strategy/hub-and-spoke/operating-rhythm/_index.md",
@@ -33103,6 +33103,14 @@
       "model": "claude-opus-4-7",
       "input_hash": "3087cdb72accba2afbb755ffce3b88c900128771559df5d6872c2f50a8939926",
       "upstream_committed_at": "2026-06-01T16:41:36-07:00"
+    },
+    "content/handbook/eta/ai/strategy/hub-and-spoke/ato/_index.md": {
+      "path": "content/handbook/eta/ai/strategy/hub-and-spoke/ato/_index.md",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3b3fe3ace8c2c5e801bbaa66c10076ff56e32f93a4a640efa53ee9c2b082b242",
+      "upstream_committed_at": "2026-06-04T15:39:28+01:00"
     }
   }
 }

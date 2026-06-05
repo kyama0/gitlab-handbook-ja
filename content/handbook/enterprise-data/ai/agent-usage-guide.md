@@ -2,11 +2,11 @@
 title: "エージェント利用ガイド"
 description: "日常開発で AI エージェントと連携するためのベストプラクティス"
 upstream_path: /handbook/enterprise-data/ai/agent-usage-guide/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 228e83810bd79bddf58ab0b0b518b1d52bd74fb7
+translated_at: "2026-06-05T21:08:33Z"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:33:54+00:00"
+lastmod: "2026-06-05T13:54:40+00:00"
 ---
 
 [TOC]
@@ -46,8 +46,18 @@ OpenCode には 2 つの主要モードがあります。
 
 `plan` をデフォルトエージェントとして設定している場合（[セットアップガイド](agent-setup.md#step-6-set-plan-as-your-default-agent) で推奨）、デフォルトで Plan モードになります。実行する準備ができたら明示的に Build モードに切り替えてください。
 
-## 利用可能なスキルとエージェント
+## スキル
 
 スキルは、再利用可能なチーム固有の知識 - 規約、ワークフロー、ベストプラクティスをエンコードします。それらは本来、セッションごとに改めて説明する必要があるものです。ゼロからプロンプトを書く代わりに、スキルを呼び出すことで、エージェントに正しいコンテキストを即座に与えられます。
 
-データチームが開発した利用可能なスキル一覧については、Agentic Tool Development ガイドの [利用可能なスキル](agentic-tool-development.md#available-skills) セクションを参照してください。
+### スキルの使い方
+
+スキルは、プロンプトに記述されたタスクがスキルの frontmatter メタデータにマッチした場合に、OpenCode などの AI コーディングツールによって自動的に呼び出されます。よく書かれた frontmatter（特に `name` と `description` フィールド）が自動検出を可能にします。スキルが存在することを知っていれば、プロンプトの中で名前で明示的に言及することもできます。
+
+### 利用可能なスキル
+
+データチームが開発したスキル一覧については、Agentic Tool Development ガイドの [利用可能なスキル](agentic-tool-development.md#available-skills) セクションを参照してください。
+
+### セットアップ
+
+OpenCode 環境でスキルを有効にするには、Agent Setup ガイドの [スキルのセットアップ](agent-setup.md#skills-setup) 手順に従ってください。
