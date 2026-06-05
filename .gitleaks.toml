@@ -130,8 +130,11 @@ keywords = [
 ]
 
 [rules.allowlist]
-description = "Upstream mr-reviews docs sample placeholder asdfASDF1234-"
+description = "Upstream docs sample placeholders (mr-reviews, zendesk oauth-clients)"
 regexTarget = "line"
 regexes = [
   '''GITLAB_QA_ACCESS_TOKEN=asdfASDF1234-''',
+  # zendesk/oauth-clients/_index.md のサンプルコード:
+  # `bearer_token = 'abcdefg123456789'` (固定の placeholder 値)
+  '''bearer_token\s*=\s*['"]abcdefg123456789['"]''',
 ]
