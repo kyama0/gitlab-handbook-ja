@@ -2,11 +2,11 @@
 title: "デベロッパーアドボカシー"
 description: "デベロッパーアドボケイトは、コミュニティに関連するエンジニアリングトピックについて深く有意義な対話を通じて、GitLab の技術的なブランドを構築します。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T12:00:00Z"
+upstream_sha: f15ab5a3da7a00a0393f92b1eb69968e8abddf52
+translated_at: "2026-06-04T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-01T10:44:51-04:00"
+lastmod: "2026-06-04T10:07:48-04:00"
 ---
 
 ## <i class="fas fa-bullhorn fa-fw -text-purple"></i> デベロッパーアドボカシーハンドブックへようこそ
@@ -59,10 +59,11 @@ lastmod: "2026-05-01T10:44:51-04:00"
 
 ## <i class="fas fa-map-marked-alt"></i> 戦略
 
-デベロッパーリレーションズとデベロッパーアドボカシーは、進化し続ける複雑な分野です。
+デベロッパーアドボカシーは、進化し続ける複雑な分野です。
 
 私たちのチームは、会社の関心領域と整合する以下の領域に焦点を当てています:
 
+- AI: エージェント型 AI の採用で成功できるようチームを支援します。SDLC 全体でスピードとセキュリティを両立させることにより、チームのソフトウェアデリバリーを加速させる手助けをします。
 - DevSecOps: 私たちは、開発者だけでなく、コードを本番環境にリリースする DevSecOps ライフサイクルに関わるすべてのチームメンバー（プロダクトマネージャー、ソフトウェアエンジニア、システム管理者・DB 管理者、デザイナー、テストエンジニア、セキュリティエンジニア、運用エンジニア、プラットフォームエンジニア、SRE、開発マネージャーや経営幹部など）に届く仕事をしたいと考えています。
 - エンタープライズ: エンタープライズの開発者と DevSecOps プロフェッショナルには、特別な制約とニーズがあります。多くの場合、これらは「これまでのアーキテクチャを捨てて、この新しいピカピカの何かを使おう」という安易な提案で見過ごされがちですが、私たちはそうしません。現実世界の課題、レガシーコード、エンタープライズ特有の制約を認識し、人々がそれらの問題を解決できるように支援します。状況に応じて、コンサルティングやサポートの役割に切り替えます。
 
@@ -73,13 +74,6 @@ lastmod: "2026-05-01T10:44:51-04:00"
 - 月あたりの開発者エンゲージメント数（つまり、私たちの投稿に反応・投稿・返信したコミュニティメンバー数）対目標と前年比トレンド
 - 月あたりのポジティブな感情の割合 対目標と前年比トレンド
 
-### その他のメトリクス
-
-私たちの影響を測定するために使用するメトリクスは次のとおりです:
-
-- 自社・獲得チャンネル全体で公開されたコンテンツのビュー
-- デベロッパーリレーションズが影響を与えたパイプライン（DevRel のコンテンツを活用したキャンペーンが影響を与えたパイプライン）
-
 これらの KPI とメトリクスがチームの行う多様な作業のインパクトを完全に捉えていないことは認識していますが、GitLab 内で私たちのインパクトを効果的に伝えるためにはトレードオフが必要であることを理解しています。
 
 ### 私たちの戦略に合うこと
@@ -87,14 +81,14 @@ lastmod: "2026-05-01T10:44:51-04:00"
 サポートの機会やリクエストをレビューする際、作業を進めるためには次の各質問に「はい」と答えられる必要があります:
 
 1. この作業は GitLab の顧客やコミュニティメンバーをサポート、成長、エンゲージするものか？
-1. チームの KPI のいずれかに対して測定可能なインパクトがあるか？ GitLab の[グローバル最適化のサブバリュー](/handbook/values/#efficiency-for-the-right-group)により、会社の目標に影響を与えるリクエストも検討します。
+1. チームの KPI のいずれかに対して測定可能なインパクトがあるか？
 1. 作業を定義し、DRI を割り当てるために Issue が作成されているか？
 
 上記の質問のいずれかへの答えが「いいえ」の場合、リクエスト元に次のいずれかのアクションを取るよう依頼します:
 
 1. 作業を引き受けられるよう調整する。
-2. 作業を実施するのにより適した別のチームを見つける。
-3. 作業を実施すべきではないという合意に達する。
+1. 作業を実施するのにより適した別のチームを見つける。
+1. 作業を実施すべきではないという合意に達する。
 
 ## <i class="fa fa-users" aria-hidden="true"></i> チームメンバーと注力分野
 
@@ -109,12 +103,12 @@ lastmod: "2026-05-01T10:44:51-04:00"
 | [Fernando Diaz](https://gitlab.com/fjdiaz) <br/> Staff Developer Advocate | DevSecOps（セキュリティとコンプライアンスを中心に） | 英語、スペイン語 | [GitLab demos on YouTube](/handbook/marketing/developer-relations/developer-advocacy/content/#youtube-playlists)、Analyst relations demos、[event support](/handbook/marketing/developer-relations/developer-advocacy/#corporate-event-support)、[Security and Governance tutorials](https://gitlab.com/gitlab-da/tutorials/security-and-governance) | Security、Kubernetes、CI/CD、Python |  |
 | [Itzik Gan-Baruch](https://gitlab.com/iganbaruch) <br/> Staff Developer Advocate | DevSecOps（CI/CD、CI/CD カタログ、セキュリティを中心に） | 英語、ヘブライ語 | [Product tours](/handbook/marketing/developer-relations/developer-advocacy/content/#product-tours)、[Click-through demos](/handbook/marketing/developer-relations/developer-advocacy/content/#click-through-demos)、[CI/CD components](/handbook/marketing/developer-relations/developer-advocacy/projects/#cicd-components-catalog) |  Remote Development、CI/CD、Value Stream Management |  |
 | [John Coghlan](https://gitlab.com/john-coghlan) <br/> Director, Developer Advocacy | デベロッパーアドボカシーにおける戦略と計画 | 英語 | | | [Website](https://coghlan.me/) |
-| [Michael Friedrich](https://gitlab.com/dnsmichi) <br/> Principal Developer Advocate | DevSecOps（Agentic AI 採用、[Global AI SME](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-program/) を中心に）  | 英語、ドイツ語 | [maintained talks](/handbook/marketing/developer-relations/developer-advocacy/content/#maintained-talks)、[workshops](/handbook/marketing/developer-relations/developer-advocacy/content/#workshops)、[event strategy](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics?label_name%5B%5D=DevRel-Events)、[competitive research](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/competitive-research/) | DevSecOps、AI、Embedded、Python、C/C++、Rust | [README](/handbook/marketing/readmes/michael-friedrich/)、[Talks](https://dnsmichi.com/talks/)、[Portfolio](https://dnsmichi.com/portfolio/) |
+| [Michael Friedrich](https://gitlab.com/dnsmichi) <br/> Principal Developer Advocate | DevSecOps（エージェント型 AI の採用、[Global AI SME](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-program/) を中心に）  | 英語、ドイツ語 | [maintained talks](/handbook/marketing/developer-relations/developer-advocacy/content/#maintained-talks)、[workshops](/handbook/marketing/developer-relations/developer-advocacy/content/#workshops)、[event strategy](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics?label_name%5B%5D=DevRel-Events)、[competitive research](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/competitive-research/) | DevSecOps、AI、Embedded、Python、C/C++、Rust | [README](/handbook/marketing/readmes/michael-friedrich/)、[Talks](https://dnsmichi.com/talks/)、[Portfolio](https://dnsmichi.com/portfolio/) |
 | [William Arias](https://gitlab.com/waarias) <br/> Staff Developer Advocate | DevSecOps（AI/ML、Sec、Data を中心に） | 英語、スペイン語 | Support Ticket Sentiment Analysis、Competitive Research、Analyst relations demos、[End-to-end DevSecOps Platform](/handbook/marketing/developer-relations/developer-advocacy/projects/#organisation-structure) | CI/CD、AI/ML、Kubernetes、Security、Python、C |  |
 
 ## <i class="fa fa-tasks" aria-hidden="true"></i> 私たちの活動
 
-私たちのデベロッパーアドボケイトチームは、「3つの C」で要約できます:
+私たちのデベロッパーアドボケイトチームは、「3 つの C」で要約できます:
 
 1. **コンテンツ作成（Content creation）:** これは、デベロッパーリレーションズの伝統的な役割を考えるときに多くの人が思い浮かべるものです。ブログ記事の執筆、技術講演の実施、ポッドキャストやパネルへの参加、ソーシャルメディアでのアイデアや考えの共有などです。コンテンツ作成には、マーケティング内外の他の GitLab チームと共同で作成した資産も含まれます。
 1. **顧客とコミュニティのエンゲージメント（Customer and community engagement）:** 私たちのチームは、GitLab の顧客や広範な GitLab コミュニティから質問、懸念、フィードバックがあるとき、定期的に交流します。これは、対面およびバーチャルのイベント、ウェビナー、ミーティング、そしてオンラインで GitLab Issue、GitLab フォーラム、Hacker News、その他のソーシャルメディアサイトで行われます。
@@ -142,7 +136,7 @@ lastmod: "2026-05-01T10:44:51-04:00"
 
 ### コンサルティング
 
-デベロッパーアドボケイトは、その専門知識と経験を活用して、製品機能、新しい SKU、その他のトピックについてチームや顧客をサポートするコンサルタント兼分野別専門家（SME）として活動します。
+デベロッパーアドボケイトは、その専門知識と経験を活用して、プロダクト機能、新しい SKU、その他のトピックについてチームや顧客を支援するコンサルタント兼分野別専門家（SME）として活動します。
 
 コンサルティング依頼、意思決定マトリックス、GitLab Duo / AI 採用の例について詳しく学ぶには、[コンサルティング](/handbook/marketing/developer-relations/developer-advocacy/consultancy/) ハンドブックをお読みください。
 
@@ -180,19 +174,26 @@ lastmod: "2026-05-01T10:44:51-04:00"
 
 GitLab チームメンバーは、いつでも Slack の [#dev-advocacy-team](https://app.slack.com/client/T02592416/CMELFQS4B) チャンネルで私たちに連絡できます。ここで、お互いや広範なチームと更新情報、アイデア、考えを共有しています。
 
-[#developer-advocacy-updates](https://gitlab.slack.com/archives/C04R2RME4F7) は、メインチャンネルでノイズを発生させない方が良いコンテンツの共有やその他の更新に使用しています。多くの更新は [Workato ワークフロー](/handbook/marketing/developer-relations/workflows-tools/workato/) を使用して自動化されています
+定例の Geekbot スタンドアップやソーシャルな会話のために、専用チャンネル [#dev-advocacy-hangout](https://gitlab.enterprise.slack.com/archives/C01C018V7V3) を使用します。
 
-### チームミーティング
+[#developer-advocacy-updates](https://gitlab.slack.com/archives/C04R2RME4F7) は、メインチャンネルでノイズを発生させない方が良いコンテンツの共有やその他の更新に使用しています。多くの更新は [Workato ワークフロー](/handbook/marketing/developer-relations/workflows-tools/workato/) を使用して自動化されています。
 
-1. デベロッパーアドボカシーチームミーティング（隔週）- アジェンダ: GDrive で `Developer Advocacy Bi-Weekly` を検索してください。
-1. デベロッパーリレーションズ全体ミーティング（月次）- アジェンダ: GDrive で `Developer Relations & Strategy | All Hands Agenda` を検索してください。
+コミュニティのインサイトは、フォーラム、Reddit、Hacker News を含めて [#community-pulse](https://gitlab.enterprise.slack.com/archives/C0AJW90RYV7) で自動化されています。
+
+### チームのタッチポイント
+
+1. デベロッパーアドボカシーチームミーティング（毎週）- アジェンダ: GDrive で `Developer Advocacy Weekly` を検索してください。
 1. デベロッパーアドボカシーショーケース（月次）- アジェンダ: GDrive で `Developer Advocacy Showcase [monthly]` を検索してください。
+1. 各チームメンバーとそのマネージャー間の 1:1 ミーティング（毎週）
+1. Slack の Geekbot を介した各チームメンバーへの質問チェックイン。回答は `#dev-advocacy-hangout` Slack チャンネルで共有されます。
+    - 月曜日（週末のソーシャル、その週の計画）
+    - 木曜日（達成事項、考え、ブロッカーなどの共有のリマインダー）
 
 ### レポーティング
 
 私たちは、ドキュメント化された [チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/) を通じて作業を整理し、透明性と効率性を確保しています。結果のレポートのほとんどは、トリアージボットとメトリクス収集を通じて自動化されています。
 
-追加のレポートは、デベロッパーリレーションズの週次レポートで提供されます。GDrive で `Developer Relations - End of Week updates` を検索してください。
+私たちは主要メトリクスを Marketing Exec Scorecard でレポートし、Marketing Leadership Team (MLT) Metrics の週次ミーティングでそのメトリクスに影響を与えている要因について議論します。
 
 ## <i class="fa fa-calendar" aria-hidden="true"></i> カレンダー
 

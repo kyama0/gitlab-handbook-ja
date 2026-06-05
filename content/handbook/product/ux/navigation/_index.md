@@ -2,11 +2,11 @@
 title: "GitLab ナビゲーション"
 description: "ナビゲーションとは、ユーザーが GitLab 内を移動するのを助ける要素であり、整理および道案内の手がかりを含みます。"
 upstream_path: /handbook/product/ux/navigation/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: f15ab5a3da7a00a0393f92b1eb69968e8abddf52
+translated_at: "2026-06-04T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-23T15:35:45-08:00"
+lastmod: "2026-06-04T06:51:08-07:00"
 ---
 
 ## オーナーシップ
@@ -73,7 +73,7 @@ GitLab の UX はユーザーがプロダクト全体をさまざまな方法で
 
 このバランスを維持するために、左サイドナビゲーションへの変更を提案する際は、全員にこのプロセスを使用していただくようお願いします。
 
-- 第1、第2、第3レベルのナビゲーション追加
+- 第 1、第 2、第 3 レベルのナビゲーション追加
 - ナビゲーション項目の名前変更
 - ナビゲーション項目の削除
 - ナビゲーション項目のソート順変更
@@ -117,7 +117,7 @@ GitLab の UX はユーザーがプロダクト全体をさまざまな方法で
 
 ### ナビゲーション変更を提案する方法
 
-> 主な目的が機能の発見可能性を向上させることであれば、まず製品全体で[機能をハイライトする](https://design.gitlab.com/usability/feature-discovery/)他の機会を探してください。
+> 主な目的が機能の発見可能性を向上させることであれば、まずプロダクト全体で[機能をハイライトする](https://design.gitlab.com/usability/feature-discovery/)他の機会を探してください。
 
 1. Issue を開く前に、[Pajamas のナビゲーション要素とパターン](https://design.gitlab.com/usability/navigation-sidebar/)を確認してください。
 1. [ナビゲーション変更のリスト](/handbook/product/ux/navigation/#what-is-navigation)と、それらが何であるかを確認して、変更が該当することを確認してください。
@@ -149,7 +149,7 @@ GitLab の UX はユーザーがプロダクト全体をさまざまな方法で
 
 このパスは、少数のユーザーに影響するナビゲーション変更や、既存のデザインパターンに従う変更に適しています。限定検証を必要とする変更の例には以下が含まれます。
 
-- 機能フラグの背後で利用可能な実験的機能
+- フィーチャーフラグの背後で利用可能な実験的機能
 - 既存の統合のパターンに従う新しいサードパーティ統合
 - すでに不一致がある場所に一貫性をもたらす変更
 
@@ -165,7 +165,7 @@ GitLab の UX はユーザーがプロダクト全体をさまざまな方法で
 
 ### 調整プロセス
 
-ナビゲーション提案プロセスは、コアワークフローへのフォーカスと機能の可視性のバランスを取ろうとします。これは、提案作成者が時々 [Growth: Engagement](/handbook/product/categories/#engagement-group) チームの決定に同意しないことを意味します。バランスが間違っていると感じる場合、[マネージャーメンションスレッドプロセス](/handbook/communication/#scaling-merge-requests-through-manager-mention-mrs-formerly-consolidated-mrs) に従いましょう。提案にコメントを追加し、以下を行ってください。
+ナビゲーション提案プロセスは、コアワークフローへのフォーカスと機能の可視性のバランスを取ろうとします。これは、提案作成者が時々 [Growth: Engagement](/handbook/product/categories/#engagement-group) チームの決定に同意しないことを意味します。バランスが間違っていると感じる場合、提案にコメントを追加し、以下を行ってください。
 
 1. 提案が却下された理由と、なぜこの決定が誤っていると考えるかについてのあなたの視点を要約する
 1. マネージャーと [Growth: Engagement](/handbook/product/categories/#engagement-group) PM マネージャーをメンションする

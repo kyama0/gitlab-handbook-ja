@@ -1713,12 +1713,12 @@
       "upstream_committed_at": "2026-03-02T16:41:22+00:00"
     },
     "content/handbook/company/only-healthy-constraints.md": {
-      "path": "content/handbook/company/only-healthy-constraints.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "fdadb8f6042cd929600ab44cb61585cceace4a00c0c67170fd3a7b268e4d6f6a",
-      "upstream_committed_at": "2025-04-07T15:31:17+00:00"
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "upstream_committed_at": "2026-06-04T06:51:08-07:00",
+      "translated_at": "2026-06-04T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a2e59204be2cb2168fc92ee499a953699522b94b63f2b08fab5f2975bf1ea8f8",
+      "path": "content/handbook/company/only-healthy-constraints.md"
     },
     "content/handbook/company/pricing.md": {
       "path": "content/handbook/company/pricing.md",
@@ -18385,12 +18385,12 @@
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/_index.md": {
-      "path": "content/handbook/marketing/developer-relations/developer-advocacy/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T12:00:00Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "upstream_committed_at": "2026-06-04T10:07:48-04:00",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "cbe0c5011ed565603f95aeb9369cf5a11332ab9425af1736972cdb38e5924ccd",
-      "upstream_committed_at": "2026-05-01T10:44:51-04:00"
+      "input_hash": "0ae0a4ece65ec2402d977f6b939e57619918f79c353c8fa82f3b6e0c11df9418",
+      "path": "content/handbook/marketing/developer-relations/developer-advocacy/_index.md"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/calendar.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/calendar.md",
@@ -30617,12 +30617,12 @@
       "upstream_committed_at": "2026-02-12T13:14:13+00:00"
     },
     "content/handbook/product/ux/navigation/_index.md": {
-      "path": "content/handbook/product/ux/navigation/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "upstream_committed_at": "2026-06-04T06:51:08-07:00",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "67a10ae1e6d16c993832ecaeedb8155edc411ed9f4662087cfccc6cb52c037aa",
-      "upstream_committed_at": "2026-02-23T15:35:45-08:00"
+      "input_hash": "e6f63313817717700d978f7fb9716b0bb0ed1c2d0f46218371448045cc8dcdde",
+      "path": "content/handbook/product/ux/navigation/_index.md"
     },
     "content/handbook/product/ux/navigation/inventory.md": {
       "path": "content/handbook/product/ux/navigation/inventory.md",
@@ -33025,20 +33025,20 @@
       "upstream_committed_at": "2026-06-01T17:35:18+01:00"
     },
     "content/handbook/eta/ai/strategy/hub-and-spoke/_index.md": {
-      "path": "content/handbook/eta/ai/strategy/hub-and-spoke/_index.md",
-      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
-      "translated_at": "2026-06-01T21:12:29Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "upstream_committed_at": "2026-06-04T15:39:28+01:00",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "0f7dc980ccd911705306323ce49945ed06f9002ebe19e16b4b5492b5572d87d1",
-      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+      "input_hash": "1aada6ea8d4a7cb58d3241ffac8bf170186b19ef7079ffc2e5d3b7a03e18862e",
+      "path": "content/handbook/eta/ai/strategy/hub-and-spoke/_index.md"
     },
     "content/handbook/eta/ai/strategy/hub-and-spoke/operating-rhythm/_index.md": {
-      "path": "content/handbook/eta/ai/strategy/hub-and-spoke/operating-rhythm/_index.md",
-      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
-      "translated_at": "2026-06-01T21:24:38Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "upstream_committed_at": "2026-06-04T15:39:28+01:00",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "2c25701c5c4b394a8d4b8b789a76ec222b95f6fd9894f3728c78af9fdd21c3ab",
-      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+      "input_hash": "b524ccaeed7862a2834ecae2d7c559d5ef9fb56991f9d9dee511028f26ee9ccd",
+      "path": "content/handbook/eta/ai/strategy/hub-and-spoke/operating-rhythm/_index.md"
     },
     "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance_v2.md": {
       "path": "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance_v2.md",
@@ -33103,6 +33103,22 @@
       "model": "claude-opus-4-7",
       "input_hash": "3087cdb72accba2afbb755ffce3b88c900128771559df5d6872c2f50a8939926",
       "upstream_committed_at": "2026-06-01T16:41:36-07:00"
+    },
+    "content/handbook/security/customer-support-operations/zendesk/oauth-clients/_index.md": {
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "upstream_committed_at": "2026-06-04T12:53:57-05:00",
+      "translated_at": "2026-06-04T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "75b4a61424b3019ea347878414a35f41220a5ad1e1bc53abf6872422fe8ec809",
+      "path": "content/handbook/security/customer-support-operations/zendesk/oauth-clients/_index.md"
+    },
+    "content/handbook/eta/ai/strategy/hub-and-spoke/ato/_index.md": {
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "upstream_committed_at": "2026-06-04T15:39:28+01:00",
+      "translated_at": "2026-06-04T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3b3fe3ace8c2c5e801bbaa66c10076ff56e32f93a4a640efa53ee9c2b082b242",
+      "path": "content/handbook/eta/ai/strategy/hub-and-spoke/ato/_index.md"
     }
   }
 }
