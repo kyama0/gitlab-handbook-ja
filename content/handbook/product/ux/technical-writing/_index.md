@@ -249,7 +249,7 @@ Issue ボードを作成する責任があります。
 次を担当します:
 
 - CI/CD パイプラインとローカルマシンでのテストと linting を通じてコンテンツ品質を維持する。
-- [Docs Engineers](/job-description-library/product/ux-fullstack-engineer/) がエンジニアがオンラインでない場合や依頼があった場合に、運用タスクを支援する。たとえば、Pages 設定、デプロイ、スケジュールされたパイプライン、レビューアプリの支援。
+- 依頼があった場合や [Docs Engineers](/job-description-library/product/ux-fullstack-engineer/) がオンラインでない場合に、Docs Engineers の運用タスクを支援する。たとえば、Pages 設定、デプロイ、スケジュールされたパイプライン、レビューアプリの支援。
 - linting ツールの依存関係を更新し、それらの更新をアップストリームのドキュメントプロジェクトに展開する。
   DocOps グループはドキュメントウェブサイトのコード、インフラ、またはビルドスクリプトを担当しません。
   DocOps タスクは、機能作業や OKR 関連作業の下に [優先順位付け](#prioritization) されます。
@@ -530,7 +530,7 @@ Maintainer として、テクニカルライターはマージするものを次
   または [TW DocOps team](https://gitlab.com/groups/gitlab-org/technical-writing/tw-docops/-/group_members?with_inherited_permissions=exclude) のメンバーにコード変更を承認してもらうことができます:
   - ドキュメント MR 内の唯一のコード変更が、ドキュメントファイルやアンカー名への変更に合わせたリンク修正である、かつ
   - パイプラインが正常に完了している。
-- ドキュメント関連のツールと設定、linter、[`docs-gitlab-com`](https://gitlab.com/gitlab-org/technical-writing/docs-gitlab-com) プロジェクトへの変更など。エンジニアがコードレビューとマージを利用できます。
+- ドキュメント関連のツールと設定、linter、[`docs-gitlab-com`](https://gitlab.com/gitlab-org/technical-writing/docs-gitlab-com) プロジェクトへの変更など。エンジニアはコードレビューとマージに対応できます。
 
 さらに、テクニカルライターは次を行う必要があります:
 
