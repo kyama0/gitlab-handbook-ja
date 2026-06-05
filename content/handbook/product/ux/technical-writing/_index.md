@@ -1,11 +1,11 @@
 ---
 title: "テクニカルライティング"
 upstream_path: /handbook/product/ux/technical-writing/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 228e83810bd79bddf58ab0b0b518b1d52bd74fb7
+translated_at: "2026-06-05T21:08:33Z"
 translator: claude
 stale: false
-lastmod: "2026-05-26T16:33:15+01:00"
+lastmod: "2026-06-04T08:58:35-06:00"
 ---
 
 GitLab のテクニカルライティングチームは、開発者、プロダクトマネージャー、コミュニティと協力してプロダクトドキュメントを作成しています。
@@ -198,7 +198,7 @@ Reference: https://gitlab.com/gitlab-com/www-gitlab-com/merge_requests/24952
 | Verify           | {{< member-by-name "Lysanne Pinto" >}} |
 | Create           | {{< member-by-name "Brendan Lynch" >}} |
 | Plan             | TBD（保留中） |
-| Application Security Testing | {{< member-by-name "Russell Dickenson" >}} |
+| Application Security Testing | TBD（保留中） |
 
 ステージリードはステージ全体、またはステージ内のグループのサブセットを担当します。
 ステージリードはステージ内のグループにアサインされた他のテクニカルライターをサポートします。
@@ -257,12 +257,12 @@ DocOps グループは、この作業と他の[テクニカルライティング
 | 課題                                                                              | アサインされたテクニカルライター |
 |:--------------------------------------------------------------------------------     |:--------------------------|
 | ドキュメントサイト                                                               | {{< member-by-name "Sarah Watt" >}}、{{< member-by-name "Robert Landry" >}} |
-| ドキュメントサイトのバックエンド（コード、オートメーション）                                    | {{< member-by-name "Pearl Latteier" >}} |
-| ドキュメントの情報アーキテクチャ（コンテンツの再構造化と左ナビゲーションの主要な変更） | {{< member-by-name "Fiona Neill" >}} {{< member-by-name "Kati Paizee" >}} {{< member-by-name "Suzanne Selhorn" >}} |
-| [GitLab Design System ("Pajamas")](https://design.gitlab.com/) の [`content`](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/contents/content) 配下の情報 | {{< member-by-name "Fiona Neill" >}} {{< member-by-name "Kati Paizee" >}} |
-| [スタイルガイド](#style-guide)                                                          | {{< member-by-name "Fiona Neill" >}} {{< member-by-name "Kati Paizee" >}} |
-| [ドキュメントテスト](#documentation-testing)（DocOps/Vale/markdownlint）           | {{< member-by-name "Kati Paizee" >}} |
-| [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit) | {{< member-by-name "Ashraf Khamis" >}}、{{< member-by-name "Achilleas Pipinellis" >}}、{{< member-by-name "Evan Read" >}}、{{< member-by-name "Jon Glassman" >}}、{{< member-by-name "Lorena Ciutacu" >}}、{{< member-by-name "Marcel Amirault" >}}、{{< member-by-name "Phillip Wells" >}}、{{< member-by-name "Russell Dickenson" >}} |
+| ドキュメントサイトのバックエンド（コード、オートメーション）                                    | {{< member-by-name "Hiru Fernando" >}} |
+| ドキュメントの情報アーキテクチャ（コンテンツの再構造化と左ナビゲーションの主要な変更） | {{< member-by-name "Fiona Neill" >}} |
+| [GitLab Design System ("Pajamas")](https://design.gitlab.com/) の [`content`](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/tree/main/contents/content) 配下の情報 | {{< member-by-name "Fiona Neill" >}} |
+| [スタイルガイド](#style-guide)                                                          | {{< member-by-name "Fiona Neill" >}} |
+| [ドキュメントテスト](#documentation-testing)（DocOps/Vale/markdownlint）           | {{< member-by-name "Sarah Watt" >}} |
+| [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit) | {{< member-by-name "Ashraf Khamis" >}}、{{< member-by-name "Achilleas Pipinellis" >}}、{{< member-by-name "Evan Read" >}}、{{< member-by-name "Jon Glassman" >}}、{{< member-by-name "Lorena Ciutacu" >}}、{{< member-by-name "Marcel Amirault" >}} |
 
 ### TW がレビューしないコンテンツ {#content-not-reviewed-by-tws}
 
@@ -360,9 +360,9 @@ PTO を取るとき、テクニカルライターは:
 |---------|-------|------------------------------|---------------------|-------------------|
 | 19.7 | 2026 年 12 月 | TBD | TBD | {{< member-by-name "Isaac Durham" >}} |
 | 19.6 | 2026 年 11 月 | TBD | {{< member-by-name "Isaac Durham" >}} | {{< member-by-name "Lorena Ciutacu" >}} |
-| 19.5 | 2026 年 10 月 | {{< member-by-name "Isaac Durham" >}} | {{< member-by-name "Lorena Ciutacu" >}} | {{< member-by-name "Phillip Wells" >}} |
-| 19.4 | 2026 年 9 月 | {{< member-by-name "Lorena Ciutacu" >}} | {{< member-by-name "Phillip Wells" >}} | {{< member-by-name "Roshni Sarangadharan" >}} |
-| 19.3 | 2026 年 8 月 | {{< member-by-name "Phillip Wells" >}} | {{< member-by-name "Roshni Sarangadharan" >}} | {{< member-by-name "Fiona Neill" >}} |
+| 19.5 | 2026 年 10 月 | {{< member-by-name "Isaac Durham" >}} | {{< member-by-name "Lorena Ciutacu" >}} | {{< member-by-name "Zach Painter" >}} |
+| 19.4 | 2026 年 9 月 | {{< member-by-name "Lorena Ciutacu" >}} | {{< member-by-name "Zach Painter" >}} | {{< member-by-name "Roshni Sarangadharan" >}} |
+| 19.3 | 2026 年 8 月 | {{< member-by-name "Zach Painter" >}} | {{< member-by-name "Roshni Sarangadharan" >}} | {{< member-by-name "Fiona Neill" >}} |
 | 19.2 | 2026 年 7 月 | {{< member-by-name "Roshni Sarangadharan" >}} | {{< member-by-name "Fiona Neill" >}} | {{< member-by-name "Achilleas Pipinellis" >}} |
 | 19.1 | 2026 年 6 月 | {{< member-by-name "Lysanne Pinto" >}} | {{< member-by-name "Achilleas Pipinellis" >}} | {{< member-by-name "Jon Glassman" >}} |
 | 19.0 | 2026 年 5 月 | {{< member-by-name "Achilleas Pipinellis" >}} | {{< member-by-name "Brendan Lynch" >}} | {{< member-by-name "Uma Chandran" >}} |
@@ -503,7 +503,7 @@ Maintainer として、テクニカルライターはマージするものを次
 
 - ドキュメント、通常は Markdown 形式のファイル。
 - 適切なエンジニアの承認を得た、コードファイル内の UI テキスト、エラーメッセージ、リンク関連の更新。
-  次の場合、エンジニアの承認をスキップして、[TW リーダーシップチーム](https://gitlab.com/groups/gitlab-org/tw-leadership/-/group_members?with_inherited_permissions=exclude) のメンバーまたは `@marcel.amirault` にコード変更を承認してもらえます:
+  次の場合、エンジニアの承認をスキップして、[TW リーダーシップチーム](https://gitlab.com/groups/gitlab-org/tw-leadership/-/group_members?with_inherited_permissions=exclude) のメンバーまたは [TW DocOps チーム](https://gitlab.com/groups/gitlab-org/technical-writing/tw-docops/-/group_members?with_inherited_permissions=exclude) のメンバーにコード変更を承認してもらえます:
   - ドキュメント MR 内の唯一のコード変更が、ドキュメントファイルやアンカー名への変更に合わせたリンク修正である、かつ
   - パイプラインが正常に完了している。
 - linter などのドキュメント関連のツールと設定、および [`docs-gitlab-com`](https://gitlab.com/gitlab-org/technical-writing/docs-gitlab-com) プロジェクトへの変更。エンジニアがコードレビューとマージのために利用可能です。

@@ -15210,11 +15210,11 @@
     },
     "content/handbook/entity/iberia-srl-spain.md": {
       "path": "content/handbook/entity/iberia-srl-spain.md",
-      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
-      "translated_at": "2026-04-29T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "68f5cb8895e81804bc2ca645ad8128c3b4bf0600acba126ddc3f9ef0c9890fdc",
-      "upstream_committed_at": "2025-11-27T20:17:50+00:00"
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1f21a2fc00c9365e77729fece15adefde20befd4624082c03e2d31671ab01f89",
+      "upstream_committed_at": "2026-06-05T10:35:32-07:00"
     },
     "content/handbook/entity/india-pvt-ltd.md": {
       "path": "content/handbook/entity/india-pvt-ltd.md",
@@ -20402,11 +20402,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/_index.md",
-      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
-      "translated_at": "2026-05-07T22:45:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1f76885869bb73d5429944e2c04b11153830e566d62b13b090c446519e1c47b6",
-      "upstream_committed_at": "2026-04-30T10:04:21-07:00"
+      "input_hash": "435bdd377332309e47834f35f141e93736aa36f45e42aad000172d58903c7c00",
+      "upstream_committed_at": "2026-06-02T22:00:31-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/korea-ltd-benefits.md",
@@ -30338,11 +30338,11 @@
     },
     "content/handbook/product/ux/technical-writing/_index.md": {
       "path": "content/handbook/product/ux/technical-writing/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a8582e9f0087c9b0fac0403451bc4af71566ef0fa4330940af8e099b3bd520d8",
-      "upstream_committed_at": "2026-05-26T16:33:15+01:00"
+      "input_hash": "934dd774b65bfe2be270d5bb55cdc8130337a717c6048497e3372efba2624923",
+      "upstream_committed_at": "2026-06-04T08:58:35-06:00"
     },
     "content/handbook/product/ux/technical-writing/feature-prioritization.md": {
       "path": "content/handbook/product/ux/technical-writing/feature-prioritization.md",

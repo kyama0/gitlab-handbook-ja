@@ -2,11 +2,11 @@
 title: "GitLab Inc (US) Benefits"
 description: "米国を拠点とするチームメンバー向けの GitLab Inc (US) の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/
-upstream_sha: 23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0
-translated_at: "2026-05-07T22:45:00Z"
+upstream_sha: 228e83810bd79bddf58ab0b0b518b1d52bd74fb7
+translated_at: "2026-06-05T21:08:33Z"
 translator: claude
 stale: false
-lastmod: "2026-04-30T10:04:21-07:00"
+lastmod: "2026-06-02T22:00:31-07:00"
 ---
 
 ## 私たちがあなたをサポートします
@@ -192,6 +192,10 @@ RX プラン: [2025 Standard 3-Tier](https://drive.google.com/file/d/1mPLR54AnbO
 - **IdentityForce カバレッジ**: [Identity Protection Resources](https://drive.google.com/file/d/1kB1f6w-yCUvDb5j2c6nVd7GephDmwnZO/view?usp=sharing)
 - **トランスジェンダーカバレッジ:** [WPATH 準拠カバレッジポリシー](https://drive.google.com/file/d/1sdsiFcTFEWsIidOXwPBcNNOCqFVERSXg/view?usp=sharing)
 - **従業員アシスタンスプログラム:** Cigna メンバーに利用可能な追加の [EAP サービス](https://www.cigna.com/individuals-families/member-guide/employee-assistance-program)
+
+**Cigna 追加リソース:** Cigna は、Cigna Medical プランメンバー向けに、コアの医療カバレッジに加えて、いくつかの補助プログラムとリソースを提供しています。これらのプログラムは Cigna が直接提供・管理しています。
+
+利用可能なすべてのリソースは[こちら](https://drive.google.com/drive/folders/1H4bQnoCQkPGYwZlT0AuGEO3d-L9srNjB) を参照してください。
 
 </details>
 
