@@ -706,11 +706,11 @@
     },
     "content/handbook/communication/_index.md": {
       "path": "content/handbook/communication/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T12:00:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "92e4bec3d80ac1d6127fb861bce9eee14d8f212bb30f9b3215302dc891485dae",
-      "upstream_committed_at": "2026-04-09T14:57:57-07:00"
+      "input_hash": "097130fe61b6a517d482382fba4e69af398659db7bb7d1261d7a01d03468203c",
+      "upstream_committed_at": "2026-06-04T06:51:08-07:00"
     },
     "content/handbook/communication/ask-me-anything.md": {
       "path": "content/handbook/communication/ask-me-anything.md",
@@ -26122,11 +26122,11 @@
     },
     "content/handbook/security/customer-support-operations/resources/coding-standards.md": {
       "path": "content/handbook/security/customer-support-operations/resources/coding-standards.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "df41965add52f817c460f22cc25e14e7f39e5414ad6f7f333fbb6c9ef70fbd37",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "input_hash": "6cde79dc3c91b4562d3bb1f4437bfdd21a0c65a562bcc6501f24917aab2b2ef4",
+      "upstream_committed_at": "2026-06-05T08:51:52-05:00"
     },
     "content/handbook/security/customer-support-operations/resources/recommended-setup.md": {
       "path": "content/handbook/security/customer-support-operations/resources/recommended-setup.md",
