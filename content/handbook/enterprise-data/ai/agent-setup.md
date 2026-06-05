@@ -25,7 +25,7 @@ Data Team には AI 支援による開発の標準的なアプローチが存在
 
 ## OpenCode のセットアップ
 
-より包括的なガイドは [internal handbook](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/setup-guides/opencode-setup/) に用意されています。以下のステップは Data Team 向けに簡略化したバージョンです。
+より包括的なガイドは [社内ハンドブック](https://internal.gitlab.com/handbook/ai-security-at-gitlab/guides/setup-guides/opencode-setup/) に用意されています。以下のステップは Data Team 向けに簡略化したバージョンです。
 
 ### Step 1: OpenCode をインストールする
 
