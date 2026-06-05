@@ -2,11 +2,11 @@
 title: "健全な制約のみを受け入れる"
 description: "企業は成熟するにつれて減速することが多い。GitLab は健全な制約を目指します。"
 upstream_path: "/handbook/company/only-healthy-constraints/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
+upstream_sha: "228e83810bd79bddf58ab0b0b518b1d52bd74fb7"
+translated_at: "2026-06-05T21:08:33Z"
 translator: claude
 stale: false
-lastmod: "2025-04-07T15:31:17+00:00"
+lastmod: "2026-06-04T06:51:08-07:00"
 ---
 
 ## はじめに

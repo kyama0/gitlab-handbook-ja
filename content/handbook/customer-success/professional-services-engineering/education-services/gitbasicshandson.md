@@ -2,11 +2,11 @@
 title: "GitLab with Git Fundamentals - ハンズオンラボ概要"
 description: "このハンズオンガイドでは、GitLab with Git Fundamentals コースで使用するラボ演習について説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/gitbasicshandson/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:19:14Z"
+upstream_sha: 228e83810bd79bddf58ab0b0b518b1d52bd74fb7
+translated_at: "2026-06-05T21:08:33Z"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-06-05T16:14:13+01:00"
 ---
 
 ## GitLab with Git Fundamentals ラボガイド
@@ -19,12 +19,3 @@ lastmod: "2025-01-04T01:51:25+00:00"
 | `.gitlab-ci.yml` ファイルを作成する | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab4/) |
 | 事前定義されたプロジェクトテンプレートを使った Auto DevOps | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab5/) |
 | 静的アプリケーションセキュリティテスト (SAST) | [ラボリンク](/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab6/) |
-
-## クイックリンク
-
-* [GitLab with Git Fundamentals コース説明](https://university.gitlab.com/pages/gitlab-fundamentals-training)
-* [GitLab 認定アソシエイト認定詳細](https://university.gitlab.com/pages/certifications/)
-
-## ご提案
-
-*GitLab with Git Fundamentals ハンズオンガイド* への変更を提案したい場合は、マージリクエスト経由でご提出ください。
