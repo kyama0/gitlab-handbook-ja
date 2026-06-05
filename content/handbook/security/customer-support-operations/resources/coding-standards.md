@@ -2,11 +2,11 @@
 title: 'コーディング規約'
 description: 'チームのコーディング規約に関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/resources/coding-standards/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 228e83810bd79bddf58ab0b0b518b1d52bd74fb7
+translated_at: "2026-06-05T21:08:33Z"
 translator: claude
 stale: false
-lastmod: "2026-05-26T12:05:00-05:00"
+lastmod: "2026-06-05T08:51:52-05:00"
 ---
 
 
@@ -509,20 +509,40 @@ def base_url
   sandbox? ? 'https://gitlab1707170878.zendesk.com' : 'https://gitlab.zendesk.com'
 end
 
-def username
-  return ENV.fetch('SB_ZD_USERNAME') if sandbox?
+def zendesk_secret
+  return ENV.fetch('SB_ZD_SECRET') if sandbox?
 
-  ENV.fetch('ZD_USERNAME')
+  ENV.fetch('ZD_SECRET')
 end
 
-def token
-  return ENV.fetch('SB_ZD_TOKEN') if sandbox?
+def zendesk_client_name
+  return ENV.fetch('SB_ZD_CLIENT_NAME') if sandbox?
 
-  ENV.fetch('ZD_TOKEN')
+  ENV.fetch('ZD_CLIENT_NAME')
 end
 
-def auth_string
-  Base64.encode64("#{username}/token:#{token}").gsub("\n", '')
+def zendesk_bearer_token
+  @zendesk_bearer_token ||= generate_zendesk_bearer_token
+end
+
+def generate_zendesk_bearer_token
+  client = Faraday.new(base_url) do |f|
+    f.options.timeout = request_timeout
+    f.options.open_timeout = open_timeout
+    f.headers['Content-Type'] = 'application/json'
+  end
+  url = 'oauth/tokens'
+  response = request_with_retry(client, :post, url, zendesk_bearer_token_payload)
+  response['access_token']
+end
+
+def zendesk_bearer_token_payload
+  {
+    'client_id' => zendesk_client_name,
+    'client_secret' => zendesk_secret,
+    'grant_type' => 'client_credentials',
+    'scope' => 'read write'
+  }
 end
 
 def setup_zendesk_client
@@ -530,12 +550,34 @@ def setup_zendesk_client
     f.options.timeout = request_timeout
     f.options.open_timeout = open_timeout
     f.headers['Content-Type'] = 'application/json'
-    f.headers['Authorization'] = "Basic #{auth_string}"
+    f.headers['Authorization'] = "Bearer #{zendesk_bearer_token}"
   end
 end
 
 def zendesk_client
   @zendesk_client ||= setup_zendesk_client
+end
+
+def zendesk_oauth_client
+  oauth_clients = []
+  url = "api/v2/oauth/clients?page[size]=#{page_size}"
+  loop do
+    page_data = request_with_retry(zendesk_client, :get, url)
+    oauth_clients += page_data['clients']
+    break unless page_data['meta']['has_more']
+
+    url = extract_next_url(page_data.dig('links', 'next'))
+  end
+  oauth_clients.detect { |o| o['identifier'] == zendesk_client_name }
+end
+
+def revoke_token!
+  url = "api/v2/oauth/tokens?client_id=#{zendesk_oauth_client['id']}"
+  tokens = request_with_retry(zendesk_client, :get, url)
+  token = tokens['tokens'].detect { |t| t['token'] == "...#{zendesk_bearer_token[-10..]}" }
+  return if token.nil?
+
+  request_with_retry(zendesk_client, :delete, "api/v2/oauth/tokens/#{token['id']}")
 end
 
 def find_in_collection(collection, attribute, value, collection_name)
@@ -561,20 +603,40 @@ def base_url
   sandbox? ? 'https://gitlabfederalsupport1585318082.zendesk.com' : 'https://gitlab-federal-support.zendesk.com'
 end
 
-def username
-  return ENV.fetch('US_SB_ZD_USERNAME') if sandbox?
+def zendesk_secret
+  return ENV.fetch('US_SB_ZD_SECRET') if sandbox?
 
-  ENV.fetch('US_ZD_USERNAME')
+  ENV.fetch('US_ZD_SECRET')
 end
 
-def token
-  return ENV.fetch('US_SB_ZD_TOKEN') if sandbox?
+def zendesk_client_name
+  return ENV.fetch('US_SB_ZD_CLIENT_NAME') if sandbox?
 
-  ENV.fetch('US_ZD_TOKEN')
+  ENV.fetch('US_ZD_CLIENT_NAME')
 end
 
-def auth_string
-  Base64.encode64("#{username}/token:#{token}").gsub("\n", '')
+def zendesk_bearer_token
+  @zendesk_bearer_token ||= generate_zendesk_bearer_token
+end
+
+def generate_zendesk_bearer_token
+  client = Faraday.new(base_url) do |f|
+    f.options.timeout = request_timeout
+    f.options.open_timeout = open_timeout
+    f.headers['Content-Type'] = 'application/json'
+  end
+  url = 'oauth/tokens'
+  response = request_with_retry(client, :post, url, zendesk_bearer_token_payload)
+  response['access_token']
+end
+
+def zendesk_bearer_token_payload
+  {
+    'client_id' => zendesk_client_name,
+    'client_secret' => zendesk_secret,
+    'grant_type' => 'client_credentials',
+    'scope' => 'read write'
+  }
 end
 
 def setup_zendesk_client
@@ -582,12 +644,34 @@ def setup_zendesk_client
     f.options.timeout = request_timeout
     f.options.open_timeout = open_timeout
     f.headers['Content-Type'] = 'application/json'
-    f.headers['Authorization'] = "Basic #{auth_string}"
+    f.headers['Authorization'] = "Bearer #{zendesk_bearer_token}"
   end
 end
 
 def zendesk_client
   @zendesk_client ||= setup_zendesk_client
+end
+
+def zendesk_oauth_client
+  oauth_clients = []
+  url = "api/v2/oauth/clients?page[size]=#{page_size}"
+  loop do
+    page_data = request_with_retry(zendesk_client, :get, url)
+    oauth_clients += page_data['clients']
+    break unless page_data['meta']['has_more']
+
+    url = extract_next_url(page_data.dig('links', 'next'))
+  end
+  oauth_clients.detect { |o| o['identifier'] == zendesk_client_name }
+end
+
+def revoke_token!
+  url = "api/v2/oauth/tokens?client_id=#{zendesk_oauth_client['id']}"
+  tokens = request_with_retry(zendesk_client, :get, url)
+  token = tokens['tokens'].detect { |t| t['token'] == "...#{zendesk_bearer_token[-10..]}" }
+  return if token.nil?
+
+  request_with_retry(zendesk_client, :delete, "api/v2/oauth/tokens/#{token['id']}")
 end
 
 def find_in_collection(collection, attribute, value, collection_name)
@@ -605,6 +689,8 @@ end
 ```
 
 </details>
+
+スクリプトの最後（または API 接続が不要になった時点）で、必ず `revoke_token!` 関数を実行するようにしてください。
 
 ### Ruby から GitLab.com に接続する
 
