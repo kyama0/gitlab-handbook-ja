@@ -7,11 +7,11 @@ images:
 no_list: true
 weight: -20
 upstream_path: /handbook/values/
-upstream_sha: d0d8657a733d2233820b2b00aaad27ebf5de9755
-translated_at: "2026-05-07T00:00:00Z"
+upstream_sha: 228e83810bd79bddf58ab0b0b518b1d52bd74fb7
+translated_at: "2026-06-05T21:08:33Z"
 translator: claude
 stale: false
-lastmod: "2026-04-15T09:46:14-04:00"
+lastmod: "2026-06-04T06:51:08-07:00"
 ---
 
 ## CREDIT
@@ -24,7 +24,7 @@ GitLab の6 つのコア価値観は次のとおりです。
 [**🌐 Diversity, Inclusion & Belonging**](#diversity-inclusion)、
 [**👣 Iteration**](#iteration)、
 [**👁️ Transparency**](#transparency)、
-これらを合わせて、私たちが互いに与え合う **CREDIT** を綴り、好意的な意図を前提とします。私たちは [価値観の絵文字](/handbook/communication/#values-emoji) でこれらに反応し、以下で実行可能な形にしています。
+これらを合わせて、私たちが互いに与え合う **CREDIT** を綴り、好意的な意図を前提とします。
 
 ##### 私たちの価値観について
 
