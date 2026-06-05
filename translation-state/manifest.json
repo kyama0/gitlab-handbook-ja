@@ -66,11 +66,11 @@
     },
     "content/handbook/about/handbook-usage.md": {
       "path": "content/handbook/about/handbook-usage.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T12:00:00Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "8df105c0e8baf6173855c02a9c944e80949d99660a818f7b8c790964bd78c24d",
-      "upstream_committed_at": "2025-12-01T16:21:31-05:00"
+      "input_hash": "eb4c4caced91b453d73deb1a8abc71628d4ced25520338dbc040803b25f964ff",
+      "upstream_committed_at": "2026-06-04T06:51:08-07:00"
     },
     "content/handbook/about/maintenance.md": {
       "path": "content/handbook/about/maintenance.md",
@@ -18354,11 +18354,11 @@
     },
     "content/handbook/marketing/developer-relations/_index.md": {
       "path": "content/handbook/marketing/developer-relations/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T12:00:00Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "c8d69c3d881bf638ad88ca0b233373c413e81a58d6fb1f4f1876c67dcab09d8b",
-      "upstream_committed_at": "2026-05-01T10:44:51-04:00"
+      "input_hash": "b7ac204cde6527d1745c27c47984ee53e36547177ecd808dbe3cc642c41c9d27",
+      "upstream_committed_at": "2026-06-04T10:07:48-04:00"
     },
     "content/handbook/marketing/developer-relations/community-pathway.md": {
       "path": "content/handbook/marketing/developer-relations/community-pathway.md",
@@ -26298,11 +26298,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/api/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/api/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "8ab89ab8f517060ed00b6380c4e6cd50fa3ac6e4c19633d20fa0afdcf1e41031",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "input_hash": "332432da2bec9c64ceac50f46bdbded5465efb1d7f2c5fc02f4f6e99db3a924c",
+      "upstream_committed_at": "2026-06-04T12:53:57-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/apps/_index.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/apps/_index.md",
@@ -32482,11 +32482,11 @@
     },
     "content/handbook/people-group/employment-branding/people-communications.md": {
       "path": "content/handbook/people-group/employment-branding/people-communications.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "3cce08f5494e9303f13254d99a75b9739f6d9f7a3230ef73ea6d09bf13b1fb0c",
-      "upstream_committed_at": "2026-03-16T10:41:51-04:00"
+      "input_hash": "21ff8d1f85f7c8c28ae4ac9f92fde448dda582ebb9309e0f5ec7a81ff746d3df",
+      "upstream_committed_at": "2026-06-04T06:51:08-07:00"
     },
     "content/handbook/marketing/smb-marketing.md": {
       "path": "content/handbook/marketing/smb-marketing.md",
@@ -33058,11 +33058,11 @@
     },
     "content/handbook/eta/ai/strategy/guiding-principles/_index.md": {
       "path": "content/handbook/eta/ai/strategy/guiding-principles/_index.md",
-      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
-      "translated_at": "2026-06-01T22:00:36Z",
+      "upstream_sha": "f15ab5a3da7a00a0393f92b1eb69968e8abddf52",
+      "translated_at": "2026-06-04T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "53273ddc77e60a3bf603a275b5b3f42454f554bf4bf2db9322215bcdf7688ecd",
-      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+      "input_hash": "68438f16c56755dc00af6af19b39701b09c0d339e8b9e7030bb7b4ca3c1ed832",
+      "upstream_committed_at": "2026-06-04T15:39:28+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance.md": {
       "path": "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance.md",
