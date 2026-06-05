@@ -192,7 +192,7 @@ GitLab は、NFP Ireland が運用する Aviva を通じた確定拠出型年金
 - 基本給の 66% を保障  
 - 13 週間の据え置き期間  
 - 65 歳まで保障  
-- [請求書](https://drive.google.com/file/d/1pHwaBoc0raokcgVsInJeE6QqhVa22XtF/view?usp=sharing)  
+- [請求フォーム](https://drive.google.com/file/d/1pHwaBoc0raokcgVsInJeE6QqhVa22XtF/view?usp=sharing)  
 - [早期介入サービス](https://drive.google.com/file/d/1ESvfiqTa6Gw3OsvMvgXrykgUZA80QImn/view?usp=sharing)
 
 </details>  
