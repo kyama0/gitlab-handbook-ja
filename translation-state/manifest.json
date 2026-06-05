@@ -50,11 +50,11 @@
     },
     "content/handbook/about/editing-handbook/practical-handbook-edits.md": {
       "path": "content/handbook/about/editing-handbook/practical-handbook-edits.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T04:45:05Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "f21a1e2ea3a196324afe9f254c4b24246c5f9abe151b42d45ac4da66f3f11a51",
-      "upstream_committed_at": "2025-11-10T09:58:25+01:00"
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2923feb1742a296510c9842df07824cbecfa479c66d7b29f93bb9cb0c2a79e0b",
+      "upstream_committed_at": "2026-06-05T19:02:22+12:00"
     },
     "content/handbook/about/escalation.md": {
       "path": "content/handbook/about/escalation.md",
@@ -18386,11 +18386,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/_index.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T12:00:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "cbe0c5011ed565603f95aeb9369cf5a11332ab9425af1736972cdb38e5924ccd",
-      "upstream_committed_at": "2026-05-01T10:44:51-04:00"
+      "input_hash": "0ae0a4ece65ec2402d977f6b939e57619918f79c353c8fa82f3b6e0c11df9418",
+      "upstream_committed_at": "2026-06-04T10:07:48-04:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/calendar.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/calendar.md",
@@ -32482,11 +32482,11 @@
     },
     "content/handbook/people-group/employment-branding/people-communications.md": {
       "path": "content/handbook/people-group/employment-branding/people-communications.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "3cce08f5494e9303f13254d99a75b9739f6d9f7a3230ef73ea6d09bf13b1fb0c",
-      "upstream_committed_at": "2026-03-16T10:41:51-04:00"
+      "input_hash": "21ff8d1f85f7c8c28ae4ac9f92fde448dda582ebb9309e0f5ec7a81ff746d3df",
+      "upstream_committed_at": "2026-06-04T06:51:08-07:00"
     },
     "content/handbook/marketing/smb-marketing.md": {
       "path": "content/handbook/marketing/smb-marketing.md",
@@ -32738,11 +32738,11 @@
     },
     "content/handbook/enterprise-data/ai/agent-setup.md": {
       "path": "content/handbook/enterprise-data/ai/agent-setup.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T00:00:00Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "84f8bc429565a55354ed1356bbe0b8f48401d79b396d35deaec8a9fb48f7ae22",
-      "upstream_committed_at": "2026-05-08T14:33:54+00:00"
+      "input_hash": "3b85b823dc8abc8f86dd7b1222a130cdbae0c929793fb4040107e545f45ad7de",
+      "upstream_committed_at": "2026-06-05T13:54:40+00:00"
     },
     "content/handbook/enterprise-data/ai/agent-usage-guide.md": {
       "path": "content/handbook/enterprise-data/ai/agent-usage-guide.md",
@@ -33058,11 +33058,11 @@
     },
     "content/handbook/eta/ai/strategy/guiding-principles/_index.md": {
       "path": "content/handbook/eta/ai/strategy/guiding-principles/_index.md",
-      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
-      "translated_at": "2026-06-01T22:00:36Z",
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
       "model": "claude-opus-4-7",
-      "input_hash": "53273ddc77e60a3bf603a275b5b3f42454f554bf4bf2db9322215bcdf7688ecd",
-      "upstream_committed_at": "2026-06-01T17:35:18+01:00"
+      "input_hash": "68438f16c56755dc00af6af19b39701b09c0d339e8b9e7030bb7b4ca3c1ed832",
+      "upstream_committed_at": "2026-06-04T15:39:28+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance.md": {
       "path": "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/007_ai_governance.md",

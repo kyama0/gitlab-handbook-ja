@@ -2,9 +2,9 @@
 title: "指針となる原則"
 description: "GitLab の内部 AI イニシアチブすべてを導く 5 つの原則と、それらが噛み合ったときに仕事がどのようになるかを示すノーススター。"
 upstream_path: /handbook/eta/ai/strategy/guiding-principles/
-upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
-lastmod: 2026-06-01T17:35:18+01:00
-translated_at: "2026-06-01T22:00:36Z"
+upstream_sha: 228e83810bd79bddf58ab0b0b518b1d52bd74fb7
+lastmod: "2026-06-04T15:39:28+01:00"
+translated_at: "2026-06-05T21:08:33Z"
 translator: claude
 stale: false
 ---

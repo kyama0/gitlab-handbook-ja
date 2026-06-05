@@ -2,11 +2,11 @@
 title: "実用的なハンドブック編集のヒント"
 description: "ハンドブックファーストで働くための追加のヒントについて、チームメンバー向けの動画記録と書面によるヒント。"
 upstream_path: /handbook/about/editing-handbook/practical-handbook-edits/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T04:45:05Z"
+upstream_sha: 228e83810bd79bddf58ab0b0b518b1d52bd74fb7
+translated_at: "2026-06-05T21:08:33Z"
 translator: claude
 stale: false
-lastmod: "2025-11-10T09:58:25+01:00"
+lastmod: "2026-06-05T19:02:22+12:00"
 ---
 
 このページには、技術職以外のチームメンバーがハンドブックファーストで働くための手順、ヒント、過去の録画が含まれています。
@@ -123,7 +123,7 @@ gsed -i 's,<searchtext>,<replacementtext>,g' file.md
 1. 検索したい単語、フレーズ、またはリンクを入力します。
 1. 検索フィールドの下の置換フィールドに、置き換えたい単語、フレーズ、またはリンクを入力します。
 1. 置換フィールドの末尾にある Replace All シンボルを押します（または Option-Command-Enter）。
-1. `Replace X occurence(s) accross X files with X ?` の確認を求めるポップアップが表示されます。正しい場合、`Replace` を押します。
+1. `Replace X occurrence(s) across X files with X ?` の確認を求めるポップアップが表示されます。正しい場合、`Replace` を押します。
 *検索結果をクリックして個別の変更を確認したり、特定の検索結果の隣にある置換ボタンをクリックすることで、すべての出現の一部のみを置換できることに注意してください。*
 
     ![picture-of-vscode-replace](/images/about/vscode_employee.png)
