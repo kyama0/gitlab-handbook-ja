@@ -14954,11 +14954,11 @@
     },
     "content/handbook/enterprise-data/platform/dbt-guide.md": {
       "path": "content/handbook/enterprise-data/platform/dbt-guide.md",
-      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "9bcbad61318cd0aeb44c7d9af5dfe960b73af7c6b4c3a7ee13b55a213a479ccb",
-      "upstream_committed_at": "2026-04-28T12:08:25-06:00"
+      "upstream_sha": "228e83810bd79bddf58ab0b0b518b1d52bd74fb7",
+      "translated_at": "2026-06-05T21:08:33Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b7a663af8bf7a8d10ab61aaafbf130165bfb551c2a608301e2930e1317ccaf39",
+      "upstream_committed_at": "2026-06-05T08:41:51-06:00"
     },
     "content/handbook/enterprise-data/platform/edw/index.md": {
       "path": "content/handbook/enterprise-data/platform/edw/index.md",

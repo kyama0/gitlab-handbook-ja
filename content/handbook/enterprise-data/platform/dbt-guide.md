@@ -3,11 +3,11 @@ title: "dbtガイド"
 description: "data build tool (dbt) ガイド"
 math: true
 upstream_path: /handbook/enterprise-data/platform/dbt-guide/
-upstream_sha: d638a3d5418a620365f135648ea547e0992abbf1
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: 228e83810bd79bddf58ab0b0b518b1d52bd74fb7
+translated_at: "2026-06-05T21:08:33Z"
 translator: claude
 stale: false
-lastmod: "2026-04-28T12:08:25-06:00"
+lastmod: "2026-06-05T08:41:51-06:00"
 ---
 
 ## クイックリンク
@@ -326,6 +326,66 @@ FY21-Q4に`analytics`データベースを置き換えるために`prod`と`prep
 ##### ダイナミックマスキング
 
 機密データを一部のユーザーには公開し、他のユーザーには公開しない場合、ダイナミックマスキングを適用できます。
+
+##### 行レベルセキュリティ
+
+行レベルセキュリティは、ユーザーがテーブルやビューで参照できる行を制御します。個々のカラム値をマスクするのではなく、Snowflakeの[Row Access Policy](https://docs.snowflake.com/en/user-guide/security-row-intro)をリレーションにアタッチし、クエリ実行時に評価することで、現在のユーザーが参照権限を持たない行を完全にフィルタリングして除外します。
+
+これを管理するマクロは`macros/dbt_snowflake_row_access/`にあり、[ダイナミックマスキング](#dynamic-masking)と同じpost-hookパターンに従います。
+
+モデルで行レベルセキュリティを有効にするには、`schema.yml`内のモデルの`meta`設定に`rls_policy`を追加します。2つのモードがあります:
+
+**シンプル（ロールベース）:** `rls_policy`の値は有効なSnowflakeロール名と一致する必要があります。アクセスは、その名前に一致するロールをセッションで保持しているユーザーに付与されます。
+
+```yaml
+- name: my_model
+  config:
+    meta:
+      rls_policy: "my_snowflake_role_name"
+```
+
+**エンタイトルメントベース:** `rls_policy`の値は、作成されるSnowflake Row Access Policyオブジェクトに付けられる名前にすぎず、Snowflakeのロール名と一致する必要はありません。アクセスは、クエリ実行時にエンタイトルメントモデルをJoinすることで行単位に決定されます。エンタイトルメントモデルはプロジェクト内のdbtモデルで、Snowflakeユーザー名を識別するカラム（デフォルトは`snowflake_user_name`）と、セキュリティ保護対象テーブルのフィルターカラムと一致するJoinカラムを持つ必要があります。検索性のため、使用するエンタイトルメントモデルをモデルの説明で参照することをお勧めします。
+
+```yaml
+- name: my_model
+  config:
+    meta:
+      rls_policy: "my_policy_name"
+      rls_config:
+        entitlement_model: "ent_my_entitlement_model"
+        entitlement_column: "my_join_key_column"
+        filter_column: "my_join_key_column"
+        user_identifier_column: "snowflake_user_name"
+```
+
+`rls_config`のキーは以下のとおりです:
+
+- `entitlement_model`: 各ユーザーがアクセスできる行を定義するdbtモデルの名前
+- `entitlement_column`: セキュリティ保護対象テーブルとJoinするためのエンタイトルメントモデル内のカラム
+- `filter_column`: セキュリティ保護対象テーブル内のカラムで、その値がフィルタリングのためにポリシーに渡されます
+- `user_identifier_column`: Snowflakeユーザー名を保持するエンタイトルメントモデル内のカラム。省略した場合のデフォルトは`snowflake_user_name`です。
+
+行レベルセキュリティの適用が必要なモデルには、`secure_model`マクロを実行する`post-hook`を設定する必要があります。これは通常、`dbt_project.yml`のディレクトリレベルで設定します:
+
+```yaml
+my_schema_directory:
+  +post-hook:
+    - "{{ secure_model() }}"
+```
+
+このマクロは`config.meta`に`rls_policy`がないモデルに対してはno-opであるため、スキーマディレクトリ全体に幅広く適用しても安全です。
+
+`TRANSFORMER`ロールと`LOADER`ロールは、ポリシーモードに関係なく常にフルアクセス権を持ちます。
+
+このパターンを実装するマクロは以下のとおりです:
+
+| マクロ | 役割 |
+|---|---|
+| `secure_model` | Post-hookのエントリポイント — モデルの`config.meta`から`rls_policy`を読み取り、`apply_row_access_policy`に委譲します |
+| `get_tables_to_secure` | dbtグラフを走査して`rls_policy`が設定されたすべてのノードを収集し、完全修飾テーブル名、ポリシー名、およびオプションの`rls_config`を返します |
+| `apply_row_access_policy` | オーケストレーター — `information_schema`にテーブルタイプとフィルターカラムのデータ型をクエリし、`create_row_access_policy`と`set_row_access_policy`を呼び出します |
+| `create_row_access_policy` | シンプルモードまたはエンタイトルメントベースモードでSnowflake Row Access Policyを作成または変更します |
+| `set_row_access_policy` | 最下層のDDL: リレーションから既存の行アクセスポリシーをすべて削除した上で、指定されたポリシーを追加します |
 
 #### ステージング
 
