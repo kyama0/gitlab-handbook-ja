@@ -115,7 +115,7 @@ lastmod: "2026-06-04T12:53:57-05:00"
 
 ## セマンティックバージョニングを使用する
 
-{{% alert title="Note" color="primary" %}}
+{{% alert title="注意" color="primary" %}}
 
 - これは一般化された内容です。バージョニングの詳細については、取り組んでいる項目のドキュメントページを参照してください。
 
@@ -185,7 +185,7 @@ lastmod: "2026-06-04T12:53:57-05:00"
 
 ## 言語固有のガイドライン
 
-現在は主要言語である ruby に焦点を当てています。これは継続的に育てていくセクションであり、将来使用するかもしれない他の言語についても追加していくべきです。
+現在は主要言語である Ruby に焦点を当てています。これは継続的に育てていくセクションであり、将来使用するかもしれない他の言語についても追加していくべきです。
 
 ### Ruby
 
@@ -193,9 +193,9 @@ lastmod: "2026-06-04T12:53:57-05:00"
 
 ## はじめるための例
 
-### ruby スクリプトを書く {#writing-a-ruby-script}
+### Ruby スクリプトを書く {#writing-a-ruby-script}
 
-ruby スクリプトを書く際は、次のように開始することをお勧めします:
+Ruby スクリプトを書く際は、次のように開始することをお勧めします:
 
 <details>
 <summary>クリックして展開</summary>
@@ -497,7 +497,7 @@ puts 'done! ✅ Successfully fetched Zendesk automations!'
 
 </details>
 
-### ruby で Zendesk に接続する
+### Ruby で Zendesk に接続する
 
 Zendesk に接続する必要がある場合、[出発点](#writing-a-ruby-script) を使用してから、次のコードを追加してください:
 
@@ -678,7 +678,7 @@ end
 
 スクリプトの最後（または API 接続が不要になったとき）に `revoke_token!` 関数を必ず実行してください。
 
-### ruby で GitLab.com に接続する
+### Ruby で GitLab.com に接続する
 
 GitLab に接続する必要がある場合、[出発点](#writing-a-ruby-script) を使用してから、次のコードを追加してください:
 
@@ -706,7 +706,7 @@ end
 
 </details>
 
-### ruby で Slack に接続する
+### Ruby で Slack に接続する
 
 Slack に接続する必要がある場合、[出発点](#writing-a-ruby-script) を使用してから、次のコードを追加してください:
 
@@ -737,7 +737,7 @@ request_with_retry(slack_client, :post, '', payload)
 
 </details>
 
-### ruby で Salesforce に接続する
+### Ruby で Salesforce に接続する
 
 Salesforce に接続する必要がある場合、[出発点](#writing-a-ruby-script) を使用してから、次のコードを追加してください:
 
@@ -842,7 +842,7 @@ page_data = request_with_retry(salesforce_client, :post, url, payload)
 
 </details>
 
-### ruby で Mailgun に接続する
+### Ruby で Mailgun に接続する
 
 Mailgun に接続する必要がある場合、[出発点](#writing-a-ruby-script) を使用してから、次のコードを追加してください:
 
@@ -887,7 +887,7 @@ page_data = request_with_retry(mailgun_client, :post, url, payload)
 
 </details>
 
-### ruby で Google に接続する
+### Ruby で Google に接続する
 
 #### Google Sheets
 
