@@ -9,7 +9,7 @@ stale: false
 lastmod: 2026-06-05T16:14:13+01:00
 ---
 
-## GitLab with Git Fundamentals ラボガイド
+## GitLab with Git Fundamentals ラボガイド {#gitlab-with-git-fundamentals-lab-guides}
 
 | ラボ名 |  ラボリンク |
 |-----------|------------|

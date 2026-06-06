@@ -11,11 +11,11 @@ stale: false
 
 > 完了までの推定時間: 40 分
 
-## 目標
+## 目標 {#objectives}
 
 このラボでは、GitLab を使ってプロジェクト、Issue、マージリクエストを作成します。また、組み込みの GitLab Web IDE を使ってファイルを編集し、マージリクエストを検証します。GitLab は、Git 単体を使うよりもはるかに簡単にリポジトリを管理できる包括的な UI を提供します。GitLab には、マージリクエストへのインラインコメントなど、Git 言語そのものがサポートしていないさまざまな機能も含まれています。詳しくは [GitLab の機能ページ](https://about.gitlab.com/features/)で学べます。
 
-## タスク A. 新しいプロジェクトを作成する
+## タスク A. 新しいプロジェクトを作成する {#task-a-create-a-new-project}
 
 1. ページ上部のパンくずリストにある **My Test Group** をクリックして、そこに移動します。
 
@@ -33,7 +33,7 @@ stale: false
 
 1. **Create project** ボタンをクリックし、GitLab が新しいプロジェクトのメインページにリダイレクトするのを待ちます。
 
-## タスク B. 新しい Issue を作成する
+## タスク B. 新しい Issue を作成する {#task-b-create-a-new-issue}
 
 1. 左側のナビゲーションペインで、**Plan > Issues** をクリックします。
 
@@ -45,7 +45,7 @@ stale: false
 
 1. **Create issue** ボタンをクリックします。
 
-## タスク C. マージリクエストを作成する
+## タスク C. マージリクエストを作成する {#task-c-create-a-merge-request}
 
 > マージリクエストは、リポジトリ内のドキュメントを更新する提案ができるため、GitLab でのソース管理の中核となる機能です。マージリクエストの詳細は[ドキュメント](https://docs.gitlab.com/ee/user/project/merge_requests/)で学べます。
 
@@ -93,7 +93,7 @@ stale: false
 
 マージリクエストを作成したことで、あなたは今、行うべき 1 つの作業に関連する 3 つのリンクされた項目、すなわち Issue、ブランチ、マージリクエストを持つことになりました。Issue は行うべき作業を説明し、ブランチはその Issue に対処する変更を含み、マージリクエストはその変更を `main` のコードブランチに取り込む方法を提案します。
 
-## タスク D. GitLab の Web IDE を使ってブランチ上でファイルを編集する
+## タスク D. GitLab の Web IDE を使ってブランチ上でファイルを編集する {#task-d-edit-files-on-a-branch-using-gitlabs-web-ide}
 
 > Issue で要求された変更に対処するために、コードブランチ内のファイルを編集できます。ブランチ内でファイルを編集する方法はたくさんあります。前のラボでは、ファイルをローカルで編集する方法を学びました。このラボでは、Web IDE を通じてオンラインでファイルを編集します。Web IDE は、コミットのステージングを備えた高度なエディターです。Web IDE を使うと、GitLab の UI から直接複数のファイルに変更を加えられます。詳しくは[ドキュメント](https://docs.gitlab.com/ee/user/project/web_ide/)で確認できます。
 
@@ -115,7 +115,7 @@ stale: false
 
 1. プロジェクトのランディングページから、**Code > Merge requests** をクリックします。あなたのマージリクエストの名前をクリックします。
 
-## タスク E. マージリクエストの変更を検証する
+## タスク E. マージリクエストの変更を検証する {#task-e-verify-changes-in-a-merge-request}
 
 1. マージリクエストページで、右上隅にある **Assignee** セクションを見つけます（ペインを展開するために、画面の右上にある二重矢印をクリックする必要があるかもしれません）。マージリクエストが自分自身に割り当てられていることを確認します。そうでない場合は、**Assignees > Edit** をクリックし、表示されたリストから自分のユーザー名をクリックします。リストから離れた場所をクリックして変更を適用します。
 
@@ -143,7 +143,7 @@ stale: false
 
 1. 誰かがあなたのコメントを見て、それに対処するために別のコミットを追加したと仮定します。コメントが処理されたことを示すために、**Resolve thread** ボタンをクリックします。
 
-## タスク F. ブランチをマージし、マージリクエストをクローズする
+## タスク F. ブランチをマージし、マージリクエストをクローズする {#task-f-merge-the-branch-and-close-the-merge-request}
 
 1. MR タイトルの下の **Overview** タブをクリックします。
 
@@ -159,6 +159,6 @@ stale: false
 
 1. リポジトリのデフォルトビューは `README.md` ファイルの内容を表示するため、マージによって `Edit my README.md file` が `README.md` の内容に追加されたことを簡単に検証できます。
 
-## ラボガイド完了
+## ラボガイド完了 {#lab-guide-complete}
 
 このラボの演習を完了しました。[このコースの他のラボガイド](/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandson)を見ることができます。

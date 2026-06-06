@@ -11,11 +11,11 @@ stale: false
 
 > 完了までの推定時間: 30 分
 
-## 目的
+## 目的 {#objectives}
 
 このラボでは、CI/CD パイプラインのオプション機能である SAST を使って、コード内のセキュリティ脆弱性を特定します。GitLab の Vulnerability Report は、パイプライン実行ごとに見つかった古いまたは新しい脆弱性を表示します。詳しくは[ドキュメント](https://docs.gitlab.com/ee/user/application_security/sast/)で学べます。
 
-## タスク A. `CI Test` プロジェクトで SAST を有効にする
+## タスク A. `CI Test` プロジェクトで SAST を有効にする {#task-a-enable-sast-in-your-ci-test-project}
 
 1. **CI Test** プロジェクトに移動します。
 
@@ -60,7 +60,7 @@ stale: false
 
 1. **Commit changes** ボタンをクリックします。
 
-## タスク B. `run.py` を追加し、SAST スキャンの結果を確認する
+## タスク B. `run.py` を追加し、SAST スキャンの結果を確認する {#task-b-add-runpy-and-review-sast-scanning-results}
 
 このタスクでは、既知の脆弱性を含むファイルを追加し、SAST がそれを検出するか確認します。
 
@@ -100,6 +100,6 @@ stale: false
 
 1. 提起された問題を修正するために（`subprocess.run` コマンドを削除するなど）コードを自由に編集し、変更をコミットしてください。脆弱性レポートは、その問題がまだ存在すると示しますか。
 
-## ラボガイド完了
+## ラボガイド完了 {#lab-guide-complete}
 
 このラボの演習を完了しました。[このコースの他のラボガイド](/handbook/customer-success/professional-services-engineering/education-services/gitbasicshandson)を見ることができます。

@@ -9,15 +9,15 @@ stale: false
 lastmod: 2026-05-29T16:02:17-04:00
 ---
 
-## Solutions Architects 向け Field Accreditation プログラム
+## Solutions Architects 向け Field Accreditation プログラム {#field-accreditation-program-for-solutions-architects}
 
-## 概要
+## 概要 {#overview}
 
 GitLab の継続的な成長と成功を支援しスケールするため、Field Enablement チームは Solutions Architects 向けに、機能、ソフトスキル、技術トレーニングを含む認定プログラムを開発しています。
 
 認定バッジは、重要な顧客エンゲージメントだけでなく、各顧客との対話を成功裏に実行するために重要な知識、スキル、ロールベースの行動、プロセス、コンテンツ、ツールを扱う [field functional competencies](/handbook/sales/training/field-functional-competencies/) とも整合します。
 
-## Solutions Architects カリキュラム
+## Solutions Architects カリキュラム {#solutions-architects-curriculum}
 
 以下のスライドは、SA のための包括的な学習者ジャーニーを示し、学習プログラム全体に含まれる情報のコンテキストを提供します。
 
@@ -34,10 +34,10 @@ GitLab の継続的な成長と成功を支援しスケールするため、Fiel
   - 優れた POV の実行
 - CSM の紹介
 
-## 認定
+## 認定 {#recognition}
 
 各コースを完了し、筆記試験と実技アセスメントに合格すると、チームメンバーはバッジを受け取ります。
 
-## フィードバック
+## フィードバック {#feedback}
 
 ぜひご意見をお聞かせください！コース開発の進捗を [Field Enablement Team Board](https://gitlab.com/groups/gitlab-com/-/boards/2714682?label_name[]=Field%20Learning%20Programs) の issue で確認できます。
