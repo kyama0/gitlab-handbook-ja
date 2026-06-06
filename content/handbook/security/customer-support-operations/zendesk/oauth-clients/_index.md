@@ -12,13 +12,13 @@ lastmod: "2026-06-04T12:53:57-05:00"
 
 ## Zendesk OAuth クライアントを理解する
 
-### Grant type
+### グラントタイプ
 
 Grant type に関する情報は、[Zendesk のドキュメント](https://developer.zendesk.com/api-reference/ticketing/oauth/grant_type_tokens/)を参照してください。
 
 なお、私たちは [client_credentials](https://developer.zendesk.com/api-reference/ticketing/oauth/grant_type_tokens/#client-credentials-grant-type) grant type の使用を推奨します。
 
-### Scope
+### スコープ
 
 Scope に関する情報は、[Zendesk のドキュメント](https://developer.zendesk.com/api-reference/ticketing/oauth/grant_type_tokens/#scope)を参照してください。
 

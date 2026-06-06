@@ -95,7 +95,7 @@ lastmod: "2026-06-04T06:51:08-07:00"
 ### ハンドブックの検索
 
 すべての GitLab ハンドブックページの上部近くに、検索用の検索フィールドがあります。
-ハンドブックをより速く効率的に検索するためのヒントについては、[Searching GitLab like a pro](/handbook/tools-and-tips/searching/) ページを参照してください。
+ハンドブックをより速く効率的に検索するためのヒントについては、[GitLab をプロのように検索する](/handbook/tools-and-tips/searching/) ページを参照してください。
 
 ### プロセスを変更または定義する方法
 
