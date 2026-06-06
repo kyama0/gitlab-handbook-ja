@@ -330,91 +330,91 @@ AI ツールと IDE でのセットアップと設定については、[GitLab M
 
 これらのプロンプトを、IDE の [GitLab Duo Agentic Chat](https://docs.gitlab.com/user/gitlab_duo_chat/agentic_chat/) と [CLI](#gitlab-duo-cli) で使用してください:
 
-**Demo Environment Management**
+**デモ環境管理**
 
 - "Create a new demo project setup guide for `technology/feature`"
 - "Document the prerequisites for this demo environment"
 - "Generate a troubleshooting guide for common demo setup issues"
 - "Create a quick start script for setting up `demo environment`"
 
-**Demo Repository & Code**
+**デモリポジトリとコード**
 
 - "Create a sample application demonstrating `GitLab feature`"
 - "Add comprehensive README with setup instructions for this demo"
 - "Generate example CI/CD pipeline for `language/framework` demo"
 - "Create a demo showcasing `feature` integration with `technology`"
 
-**Content Creation Support**
+**コンテンツ作成サポート**
 
 - "Extract code snippets from this demo for a blog post"
 - "Generate speaker notes for demoing this feature"
 - "Create a step-by-step tutorial from this demo repository"
 - "Suggest improvements to make this demo more engaging"
 
-**Environment Documentation**
+**環境ドキュメント**
 
 - "Document the tools and versions used in this environment"
 - "Create a comparison table of different setup approaches"
 - "Generate installation instructions for `OS/platform`"
 - "Document environment variables and configuration needed"
 
-**Demo Maintenance**
+**デモのメンテナンス**
 
 - "Check if this demo uses deprecated GitLab features"
 - "Update this demo to use the latest `framework` version"
 - "Verify all demo links and references are still valid"
 - "Test if this demo still works with current GitLab version"
 
-**Workshop & Presentation Prep**
+**ワークショップとプレゼンテーションの準備**
 
 - "Create a workshop outline based on this demo"
 - "Generate talking points for presenting this feature"
 - "Build a hands-on exercise from this example"
 - "Create a cheat sheet for workshop participants"
 
-**Integration Examples**
+**統合の例**
 
 - "Show how to integrate `tool` with GitLab in this demo"
 - "Create examples for all `feature` configuration options"
 - "Generate sample webhook payloads for testing"
 - "Document API usage examples for this integration"
 
-**Documentation & Content Management**
+**ドキュメントとコンテンツ管理**
 
 - "Review this page for broken links and outdated information"
 - "Check if this documentation follows the handbook style guide"
 - "Find all pages that mention `topic` and summarize them"
 - "Suggest improvements to make this page more accessible"
 
-**Repository Navigation & Understanding**
+**リポジトリのナビゲーションと理解**
 
 - "Show me the most recently updated pages in `directory`"
 - "What are the main sections of this handbook?"
 - "Find documentation about [specific process or policy]"
 - "Who are the main contributors to `directory/file`?"
 
-**Maintenance & Quality**
+**メンテナンスと品質**
 
 - "Find pages that haven't been updated in over 6 months"
 - "Check for inconsistent formatting across similar pages"
 - "Identify duplicate or overlapping content"
 - "Review recent merge requests for this section"
 
-**Workflow Automation**
+**ワークフローの自動化**
 
 - "Create a new handbook page for `topic` following the template"
 - "Update all references to [old term] with [new term]"
 - "Generate a changelog for recent updates to `section`"
 - "Create an issue for outdated content in `directory`"
 
-**Collaboration**
+**コラボレーション**
 
 - "Summarize recent discussions on `topic` from issues and MRs"
 - "Who should I ask about [specific handbook section]?"
 - "Show me open merge requests that need review"
 - "Find related work items for this documentation update"
 
-**CI/CD Specific**
+**CI/CD 固有**
 
 - "Convert this YAML anchor to use extends instead"
 - "Add proper rules to this CI job"
