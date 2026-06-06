@@ -1,5 +1,5 @@
 ---
-title: UX Forum
+title: UX フォーラム
 description: >-
   UX フォーラムは、UX チームメンバーが自分の仕事を共有し議論する定期的なミーティングです。
 upstream_path: /handbook/product/ux/ux-forum/

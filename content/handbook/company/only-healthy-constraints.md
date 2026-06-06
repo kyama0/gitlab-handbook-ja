@@ -1,5 +1,5 @@
 ---
-title: "Only Healthy Constraints"
+title: "健全な制約のみを受け入れる"
 description: "企業は成熟するにつれて減速することが多い。GitLab は健全な制約を目指します。"
 upstream_path: "/handbook/company/only-healthy-constraints/"
 upstream_sha: "7b4218e2684ab0e2d919cef32fcfba84065bf46b"

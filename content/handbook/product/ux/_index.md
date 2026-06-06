@@ -1,5 +1,5 @@
 ---
-title: UX Department
+title: UX 部門
 description: >-
   Product Design、UX Research、Technical Writing、Design System が連携し、Upstream Studios の一部として GitLab プロダクト体験を作り上げています。
 upstream_path: /handbook/product/ux/

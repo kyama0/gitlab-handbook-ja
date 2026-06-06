@@ -479,7 +479,7 @@ dbt が最新でないという警告は無視してください。
 
 - その場合は dbt が使用するターゲットプロファイルを変更します。dbt-power-user 拡張機能の設定（Extensions > dbt-power-user > 歯車 > Extension settings）に移動し、`Dbt: Run Model Command Additional Params` という設定を編集します（build も同様）
 
-  {{% panel header="**Note**" header-bg="warning" %}}
+  {{% panel header="**注**" header-bg="warning" %}}
   VS code の UI からモデルを実行/ビルド/テストする際、ポップアップするターミナルウィンドウはログ出力にすぎません。Cmd+C はジョブを停止せず、VS code のゴミ箱アイコンをクリックしても停止しません。VScode から開始したジョブを停止したい場合は、Snowflake UI とジョブリストを通じて、そこからジョブを kill してください。
   {{% /panel %}}
 
@@ -515,7 +515,7 @@ MR のためにコードを提出する準備ができたら、[CLA に署名](h
 以下のセクションはすべて、dbt のデフォルトである `models` ディレクトリ配下のトップレベルディレクトリになります。
 この構造は、dbt Labs の[プロジェクト構造化方法](https://docs.getdbt.com/best-practices/how-we-structure/1-guide-overview)に着想を得ています。
 
-{{% panel header="**Legacy Structure**" header-bg="warning" %}}
+{{% panel header="**レガシー構造**" header-bg="warning" %}}
 Kimball ディメンショナルモデリングに注力する前は、私たちは ["Agile Data Warehouse Design" by Corr and Stagnitto](https://books.google.com/books/about/Agile_Data_Warehouse_Design.html?id=TRWFmnv8jP0C&source=kp_book_description) で紹介された BEAM\* アプローチに着想を得たモデリングを採用していました。
 既存のモデルの多くは、依然としてそのパターンに従っています。
 このセクションの情報は、ハンドブックの以前のイテレーションからのものです。
@@ -527,7 +527,7 @@ Kimball ディメンショナルモデリングに注力する前は、私たち
 どの新しい Kimball モデルがレガシーモデルを置き換えるかを判断するには、[Use This Not That](https://docs.google.com/spreadsheets/d/1yr-J4ztkyl9vmJ6Euj58gczDLTIss7xIher5SV-1VDY/edit?usp=sharing) のマッピングを参照してください。
 {{% /panel %}}
 
-{{% panel header="**FY21-Q4 Model Migration**" header-bg="success" %}}
+{{% panel header="**FY21-Q4 モデル移行**" header-bg="success" %}}
 FY21-Q4 に、`analytics` データベースを置き換えるために `prod` および `prep` データベースが導入されました。これら 2 つの新しいデータベースが `analytics` データベースを完全に置き換えます。
 
 ローカル開発も、カスタムスキーマからカスタムデータベースへ切り替えられました。
@@ -1210,7 +1210,7 @@ FROM dev_prod.common.dim_date__sample
 - [samples](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.samples)
 - [ref](https://dbt.gitlabdata.com/#!/macro/macro.gitlab_snowflake.ref)
 
-### Trusted Data Framework
+### 信頼できるデータフレームワーク
 
 Trusted Data Framework の背後にある哲学のより深い掘り下げについては、私たちの Platform ページの [Trusted Data Framework](/handbook/enterprise-data/how-we-work/data-development) セクションを参照してください。
 

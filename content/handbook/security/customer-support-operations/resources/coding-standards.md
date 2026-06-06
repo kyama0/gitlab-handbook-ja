@@ -14,7 +14,7 @@ stale: false
 
 このドキュメントは、GitLab Customer Support Operations チームが従うべきコーディング標準とベストプラクティスを定義します。これらのガイドラインを活用することで、私たちはチーム内の一貫性、保守性、シンプルさ、そしてより良いコラボレーションを確保します。私たちのプロジェクトへのすべてのコントリビューターは、特定の例外について合意がない限り、これらのガイドラインに従うことが期待されます。
 
-## General Principles
+## 一般原則
 
 私たちは [GitLab のコアバリュー](/handbook/values/) がすべてのコーディング上の意思決定を導くべきだと考えています。
 
@@ -35,7 +35,7 @@ stale: false
   - コードは柔軟で、リファクタリングしやすいものであるべきです。
   - 私たちは継続的な改善を目指しており、必要に応じてコードを更新または作り直すことを厭いません。
 
-## Naming Conventions
+## 命名規則
 
 - Variables
   - 変数の目的を明確に伝える説明的な名前を使用します。変数名が目的を明確に伝えていない場合は、それをよりよく説明するためにコードにコメントを追加します。
@@ -56,7 +56,7 @@ stale: false
   - すべてのファイル名は snake case を使用します。
     - 例: `process_account`, `compare_only`
 
-## Code Formatting
+## コードフォーマット
 
 - Indentation
   - 可能な限り、インデントレベルごとに 2 スペースを使用します。
@@ -76,22 +76,22 @@ stale: false
 - Spacing
   - 演算子（`+`、`<`、`=` など）の間には 1 つのスペースを使用します。
 
-## Comments and Documentation
+## コメントとドキュメント
 
 - Inline comments
   - インラインコメントは控えめに使用します。複雑または自明でないコードを明確にするためだけに使用します。大量のコメントが必要な場合、おそらくコードを必要以上に複雑にしています！
   - コメントは最新の状態に保ち、それが説明するコードと関連性のあるものにします。
 
-## Code Complexity
+## コードの複雑性
 
 - 深くネストされたコードは避けます。ネストが複雑になりすぎる場合は、ヘルパー関数や早期リターンを使うようにコードをリファクタリングします。
 - 関数のサイズを制限します。各関数は明確で単一の責務を持ち、比較的小さく（20 行未満）するべきです。
 
-## Testing
+## テスト
 
 常に高いテストカバレッジを目指しましょう！迷ったときは、コードを徹底的にテストしましょう！
 
-## Version control
+## バージョン管理
 
 - Commit messages
   - 行っている変更を詳細に記述します。
@@ -113,9 +113,9 @@ stale: false
     - 例:
       - `jcolyer` が Issue `https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/1963` の作業のために作成するブランチの場合、ブランチ名は `jcolyer-support-ops-project-1963` とするべきです。
 
-## Use semantic versioning
+## セマンティックバージョニングを使う
 
-{{% alert title="Note" color="primary" %}}
+{{% alert title="注" color="primary" %}}
 
 - これは一般論です。バージョン管理の詳細については、取り組んでいる項目のドキュメントページを参照してください。
 
@@ -144,7 +144,7 @@ stale: false
 | `2.99.0`         | `3.0.0`        | `2.100.0`      | `2.99.1`       |
 | `9.99.9`         | `10.0.0`       | `9.100.0`      | `9.99.10`      |
 
-### Using semantic versioning when only two numeric values are allowed
+### 数値が 2 つしか許されない場合のセマンティックバージョニングの使い方
 
 2 つの数値しか許可されていないもの（`1.01` や `9.8` など）を扱う場合は、代わりに 2 番目の値に `MINOR` と `PATCH` の定義を組み合わせます。これにより、必要な `xx.yy` の形式になり、セマンティックバージョニングに近い形を維持できます。
 
@@ -162,28 +162,28 @@ stale: false
 | `2.99`           | `3.0`          | `2.100`                |
 | `9.99`           | `10.0`         | `9.100`                |
 
-## Error Handling
+## エラーハンドリング
 
 可能な限り、コードがエラーを適切に処理するようにしてください。これが不可能な場合は、エラーが問題の内容を明確に説明するようにしてください（さらに、それについてどう対処すべきかを伝えてくれれば加点です）。
 
-## Performance Considerations
+## パフォーマンスに関する考慮事項
 
 - コードが機能的で保守しやすくなった後に初めてパフォーマンスに注力します。早すぎる最適化は避けます。
 - プロファイリングツールを使ってパフォーマンスへの影響を測定し、最適化する前にボトルネックを特定します。
 - 常識を働かせて、私たちのツール群への API 呼び出しを減らします。
   - 例: Zendesk からすべてのチケットを 1 件ずつ手動で取得することもできますが、Readiness Gem が `list` メソッドを使ってこれを効率的に行ってくれるのに、そうする論理的な理由はありません。
 
-## Security
+## セキュリティ
 
 - インジェクション攻撃（SQL インジェクション、XSS など）を防ぐために、すべての入力を検証します。
 - パスワードやトークンなどを平文で保存しないでください。CI/CD 変数を使用します。
 
-## Code Reviews
+## コードレビュー
 
 - すべてのコードはマージ前にピアレビューを受けなければなりません。レビューが徹底的で、品質、一貫性、セキュリティに対処していることを確認してください。
 - 建設的なフィードバックを受け入れ、協力してコードを改善します。
 
-## Language specific guidelines
+## 言語固有のガイドライン
 
 これは現在、私たちの主要言語である ruby に焦点を当てています。これは生きたセクションであり、将来使用するかもしれない他の言語についても、より多くの内容を追加するべきです。
 
@@ -191,9 +191,9 @@ stale: false
 
 - 可能な限り、[rubocop](https://rubygems.org/gems/rubocop) リンターを通して実行したときにコードが問題を提示しないようにしてください。
 
-## Examples to help you get started
+## 始めるのに役立つ例
 
-### Writing a ruby script
+### Ruby スクリプトを書く {#writing-a-ruby-script}
 
 ruby スクリプトを書くときは、次のように始めることをお勧めします。
 
@@ -423,7 +423,7 @@ end
 
 これにより、すぐ次の行からコーディングを始められ、作業を進めるための良い出発点を得られます。
 
-#### Making a request
+#### リクエストを行う
 
 [出発点となるコード](#writing-a-ruby-script)を使用して、次のように外部リクエストを行うことができます。
 
@@ -497,7 +497,7 @@ puts 'done! ✅ Successfully fetched Zendesk automations!'
 
 </details>
 
-### Connecting to Zendesk via ruby
+### Ruby から Zendesk に接続する
 
 Zendesk に接続する必要があるときは、[出発点](#writing-a-ruby-script)を使用し、次の内容を追加します。
 
@@ -692,7 +692,7 @@ end
 
 スクリプトの最後（または API 接続がもはや不要になったとき）に、必ず関数 `revoke_token!` を実行するようにしてください。
 
-### Connecting to GitLab.com via ruby
+### Ruby から GitLab.com に接続する
 
 GitLab に接続する必要があるときは、[出発点](#writing-a-ruby-script)を使用し、次の内容を追加します。
 
@@ -720,7 +720,7 @@ end
 
 </details>
 
-### Connecting to Slack via ruby
+### Ruby から Slack に接続する
 
 Slack に接続する必要があるときは、[出発点](#writing-a-ruby-script)を使用し、次の内容を追加します。
 
@@ -751,7 +751,7 @@ request_with_retry(slack_client, :post, '', payload)
 
 </details>
 
-### Connecting to Salesforce via ruby
+### Ruby から Salesforce に接続する
 
 Salesforce に接続する必要があるときは、[出発点](#writing-a-ruby-script)を使用し、次の内容を追加します。
 
@@ -856,7 +856,7 @@ page_data = request_with_retry(salesforce_client, :post, url, payload)
 
 </details>
 
-### Connecting to Mailgun via ruby
+### Ruby から Mailgun に接続する
 
 Mailgun に接続する必要があるときは、[出発点](#writing-a-ruby-script)を使用し、次の内容を追加します。
 
@@ -901,7 +901,7 @@ page_data = request_with_retry(mailgun_client, :post, url, payload)
 
 </details>
 
-### Connecting to Google via ruby
+### Ruby から Google に接続する
 
 #### Google Sheets
 

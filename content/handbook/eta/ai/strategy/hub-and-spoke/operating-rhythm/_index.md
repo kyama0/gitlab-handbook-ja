@@ -1,5 +1,5 @@
 ---
-title: "Operating Rhythm"
+title: "オペレーティングリズム"
 description: "Enterprise AI、ATO、Champion が連携する方法: チャネル、ケイデンス、意思決定権、エスカレーションパス。"
 upstream_path: /handbook/eta/ai/strategy/hub-and-spoke/operating-rhythm/
 upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b

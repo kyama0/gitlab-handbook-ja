@@ -1,5 +1,5 @@
 ---
-title: "Agent Usage Guide"
+title: "エージェント利用ガイド"
 description: "日常開発で AI エージェントと連携するためのベストプラクティス"
 upstream_path: /handbook/enterprise-data/ai/agent-usage-guide/
 upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b

@@ -1,6 +1,6 @@
 ---
-title: Enhanced Support Offerings
-description: Support の Enhanced Support Offerings に関するすべて
+title: 拡張サポートオファリング
+description: サポートの拡張サポートオファリングに関するすべて
 canonical_path: "/handbook/support/enhanced-support-offerings"
 no_list: true
 upstream_path: /handbook/support/enhanced-support-offerings/

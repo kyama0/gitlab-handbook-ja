@@ -1,5 +1,5 @@
 ---
-title: 'OAuth Clients'
+title: 'OAuth クライアント'
 description: 'OAuth クライアントに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/zendesk/oauth-clients/
 upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
@@ -31,7 +31,7 @@ OAuth クライアントを使う一般的な流れは次のとおりです。
 
 ### ベアラートークンを生成する
 
-{{% alert title="Note" color="primary" %}}
+{{% alert title="注意" color="primary" %}}
 
 - これらは API またはリダイレクト URL フローでのみ生成できます。リダイレクト URL フローはセットアップによって異なる場合があるため、ここでは API の使用に焦点を当てます。
 
@@ -107,7 +107,7 @@ request_with_retry(zendesk_client, :delete, url)
 
 ## 管理者のタスク
 
-{{% alert title="Danger" color="danger" %}}
+{{% alert title="危険" color="danger" %}}
 
 **セキュリティに関する考慮事項:**
 

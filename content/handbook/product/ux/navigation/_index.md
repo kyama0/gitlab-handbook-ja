@@ -1,5 +1,5 @@
 ---
-title: "GitLab Navigation"
+title: "GitLab ナビゲーション"
 description: "ナビゲーションとは、ユーザーが GitLab 内を移動する助けとなる要素を指し、構成や道案内の手がかりを含みます。"
 upstream_path: /handbook/product/ux/navigation/
 upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b

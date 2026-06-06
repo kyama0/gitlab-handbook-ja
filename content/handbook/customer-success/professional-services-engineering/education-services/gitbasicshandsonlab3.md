@@ -1,5 +1,5 @@
 ---
-title: "GitLab with Git Fundamentals - Hands-On Lab: Use GitLab To Merge Code"
+title: "GitLab with Git Fundamentals - ハンズオンラボ: GitLab を使ってコードをマージする"
 description: "このハンズオンガイドでは、プロジェクト・Issue・マージリクエストの作成方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab3/
 upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
