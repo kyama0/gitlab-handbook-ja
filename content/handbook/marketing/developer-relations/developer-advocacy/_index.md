@@ -114,13 +114,13 @@ stale: false
 1. **Customer and community engagement（顧客およびコミュニティとのエンゲージメント）:** 私たちのチームは、GitLab の顧客や広範な GitLab コミュニティが疑問・懸念・フィードバックを持ったとき、日常的に彼らと関わります。これは対面およびバーチャルのイベント、ウェビナー、ミーティングのほか、GitLab の issue、GitLab Forum、Hacker News、その他のソーシャルメディアサイトを通じてオンラインで行われます。
 1. **Consulting（コンサルティング）:** GitLab 内で、私たちのチームはコミュニティの声を代弁します。他のチームが顧客やコミュニティに影響を与える変更や決定に取り組んでいるとき、私たちはその顧客やコミュニティについて彼らに伝え、彼らの利益を代弁し、そうした変更を伝える際に潜在的な影響が明確に理解され対処されるよう努めます。また、私たちのチームは、業界トレンド、新興ツール、ソーシャルメディア戦略、その他のスキルに関する知識を共有し、GitLab の [Cross-functional Optimization](/handbook/values/#cross-functional-optimization) サブバリューに沿ってチームメイトが目標を達成できるよう支援します。
 
-### Content creation
+### コンテンツ作成
 
 私たちは、DevOps、GitLab、リモートワーク、そして私たちが専門知識を持つその他のトピックに関連するベストプラクティスについて開発者を啓発するためのコンテンツを制作します。コンテンツには、プレゼンテーション、デモ、ワークショップ、ブログ記事、メディアでの活動が含まれます。コンテンツ制作には、Marketing 内外の他の GitLab チームと共同制作するアセットも含まれます。
 
 コンテンツのワークフロー、ライブラリ、UTM トラッキングを用いた配信について詳しくは、[Content](/handbook/marketing/developer-relations/developer-advocacy/content) ハンドブックをお読みください。
 
-### Customer and Community Engagement
+### 顧客とコミュニティのエンゲージメント
 
 私たちのチームは、GitLab の顧客や広範な GitLab コミュニティと日常的に関わっています。
 デベロッパーアドボケイトチームは、以下のプラットフォームに関する質問と戦略の DRI です。
@@ -134,7 +134,7 @@ stale: false
 | Discord | [GitLab Community Discord](https://discord.gg/gitlab) は、コミュニティとつながり、ペアコーディングセッションやライブ配信に参加し、GitLab とコントリビューションに関するあらゆることを議論する場です。 | [Community Discord Workflows](/handbook/marketing/developer-relations/workflows-tools/discord/) |
 | Common Room | 私たちは [Common Room](https://www.commonroom.io) を使って、コミュニティとのエンゲージメントから得られるインサイトを集約・確認しています。 | [Common Room Workflows](/handbook/marketing/developer-relations/workflows-tools/common-room/) |
 
-### Consulting
+### コンサルティング
 
 デベロッパーアドボケイトは、コンサルタントおよび subject matter expert（SME）として、その専門知識と経験を活かし、プロダクト機能、新しい SKU、その他のトピックについてチームや顧客を支援します。
 
@@ -142,29 +142,29 @@ stale: false
 
 ### その他の活動
 
-#### Community Response
+#### コミュニティ対応（Community Response）
 
 デベロッパーアドボケイトチームはコミュニティを理解し、GitLab に関する幅広い知識を持っているため、コミュニティメンバーの緊急かつ重要な懸念に対処するために介入が必要な状況への対応に関与します。私たちは、[こうした状況にどう対処するか](/handbook/marketing/developer-relations/developer-advocacy/community-response/)について文書化されたプロセスを持っています。
 
-#### Event support
+#### イベントサポート
 
 デベロッパーアドボケイトチームは、イベントの支援において重要な役割を果たします。私たちは [Corporate Event Marketing](/handbook/marketing/integrated-marketing/corporate-events/) と緊密に連携し、コーポレートイベントとサードパーティ協賛イベントの両方に対して戦略的なコンテンツと支援を提供します。この協業により、さまざまな催しの成功とスムーズな実施が確保されます。詳しくは [Events ページ](/handbook/marketing/developer-relations/events/)をご覧ください。
 
 また、私たちはチームメンバーが地域のテックイベントやミートアップでの登壇機会に備えられるよう支援します。こうしたイベントの準備に手助けが必要な場合は、Slack の [#dev-advocacy-team](https://app.slack.com/client/T02592416/CMELFQS4B) チャンネルでお声がけいただくか、[Developer Advocate Request テンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?description_template=developer-advocate-request)を使って Issue を作成してください。
 
-#### Release Advocacy
+#### リリースアドボカシー
 
 Hacker News におけるリリース投稿のこれまでの実績を踏まえ、デベロッパーアドボケイトは常に[月次リリース](/handbook/marketing/developer-relations/developer-advocacy/social-media/#release-evangelism)を宣伝し、[リリース日のコミュニティ対応](/handbook/marketing/developer-relations/developer-advocacy/hacker-news/#release-days)に関与できるよう準備しておくべきです。
 
-#### Social media
+#### ソーシャルメディア
 
 私たちはソーシャルメディアでソートリーダーシップを築き、[コンテンツを配信](/handbook/marketing/developer-relations/developer-advocacy/content/#content-distribution)します。私たちの戦略について詳しく知り、あなた自身も GitLab advocate になるには、[Developer Advocacy on Social Media](/handbook/marketing/developer-relations/developer-advocacy/social-media/) をご覧ください。
 
-#### Spokespersons
+#### スポークスパーソン
 
 デベロッパーアドボケイトは、自身の注力領域における subject matter expert（SME）であり、[Corporate Communications team](/handbook/marketing/corporate-communications/) と協業して、インタビュー、ポッドキャスト、署名記事などの形でメディア露出を提供します。デベロッパーアドボケイトは [GitLab のスポークスパーソン](/handbook/marketing/corporate-communications/#spokesperson-criteria)であり、[Corporate Communications team](/handbook/marketing/corporate-communications/) が定める関連トレーニングを受講する必要があります。
 
-#### Projects
+#### プロジェクト
 
 私たちのチームは、コンテンツ制作（デモ、録画、ブログ記事、ワークショップ、講演など）のための GitLab ユースケースを提供したり、技術的なコンセプトやリサーチを顧客に紹介したり、チームのプロセスを自動化したりするために、プロジェクトを維持しています。私たちは[デフォルトで公開](/handbook/values/#public-by-default)の方針で働いており、誰もが学び、コントリビュートできるようにしています。これらすべてのプロジェクトの一覧は [Developer Advocate Projects](/handbook/marketing/developer-relations/developer-advocacy/projects/) をご覧ください。
 
