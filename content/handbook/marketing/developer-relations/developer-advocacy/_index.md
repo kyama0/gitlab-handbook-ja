@@ -19,37 +19,37 @@ stale: false
 
 #### Issue テンプレート {#issue-templates}
 
-- [<i class="far fa-edit"></i> New Content Issue](https://go.gitlab.com/new-content-issue)
-- [<i class="far fa-edit"></i> New Event Issue](https://go.gitlab.com/new-event-issue)
-- [<i class="far fa-edit"></i> New Activity Issue](https://go.gitlab.com/new-activity-ssue)
-- [<i class="far fa-edit"></i> CFP Issue Template](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=cfp)
+- [<i class="far fa-edit"></i> 新規コンテンツ Issue](https://go.gitlab.com/new-content-issue)
+- [<i class="far fa-edit"></i> 新規イベント Issue](https://go.gitlab.com/new-event-issue)
+- [<i class="far fa-edit"></i> 新規アクティビティ Issue](https://go.gitlab.com/new-activity-ssue)
+- [<i class="far fa-edit"></i> CFP Issue テンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=cfp)
 
 #### Issue ボード {#issue-boards}
 
-- [<i class="far fa-clipboard"></i> Team Workflow](/handbook/marketing/developer-relations/developer-advocacy/workflow/)
-- [<i class="far fa-clipboard"></i> Content by Assignee](https://gitlab.com/groups/gitlab-com/-/boards/7577841?label_name[]=DA-Type%3A%3AContent&label_name[]=developer-advocacy)
-- [<i class="far fa-clipboard"></i> Content by Quarter](https://gitlab.com/groups/gitlab-com/-/boards/7577857?label_name[]=DA-Type%3A%3AContent&label_name[]=developer-advocacy)
-- [<i class="far fa-clipboard"></i> Content by Types](https://gitlab.com/groups/gitlab-com/-/boards/7577822?label_name[]=DA-Type%3A%3AContent&label_name[]=developer-advocacy)
-- [<i class="far fa-clipboard"></i> Events](https://gitlab.com/groups/gitlab-com/-/boards/7577874?label_name[]=developer-advocacy&label_name[]=DA-Type%3A%3AEvents)
+- [<i class="far fa-clipboard"></i> チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/)
+- [<i class="far fa-clipboard"></i> 担当者別コンテンツ](https://gitlab.com/groups/gitlab-com/-/boards/7577841?label_name[]=DA-Type%3A%3AContent&label_name[]=developer-advocacy)
+- [<i class="far fa-clipboard"></i> 四半期別コンテンツ](https://gitlab.com/groups/gitlab-com/-/boards/7577857?label_name[]=DA-Type%3A%3AContent&label_name[]=developer-advocacy)
+- [<i class="far fa-clipboard"></i> タイプ別コンテンツ](https://gitlab.com/groups/gitlab-com/-/boards/7577822?label_name[]=DA-Type%3A%3AContent&label_name[]=developer-advocacy)
+- [<i class="far fa-clipboard"></i> イベント](https://gitlab.com/groups/gitlab-com/-/boards/7577874?label_name[]=developer-advocacy&label_name[]=DA-Type%3A%3AEvents)
 
 ### チームリソース {#team-resources}
 
-- [<i class="far fa-calendar-alt"></i> Team Calendar](/handbook/marketing/developer-relations/developer-advocacy/calendar)
-- [<i class="far fa-chart-line"></i> Content Library](/handbook/marketing/developer-relations/developer-advocacy/content/)
-- [<i class="far fa-chart-line"></i> Content Effectiveness](/handbook/marketing/developer-relations/content-effectiveness/)
-- [<i class="fas fa-project-diagram"></i> Team Projects](/handbook/marketing/developer-relations/developer-advocacy/projects)
-- [<i class="fas fa-project-diagram"></i> Team Development Environments](/handbook/marketing/developer-relations/developer-advocacy/dev-environments)
-- [<i class="fas fa-chalkboard-teacher"></i> Call for Papers and speaking resources](/handbook/marketing/developer-relations/developer-advocacy/cfps)
-- [<i class="far fa-edit"></i> Content creation](/handbook/marketing/developer-relations/developer-advocacy/#content-creation)
-- [<i class="far fa-folder-open"></i> Team Shared Drive](https://drive.google.com/drive/u/0/folders/0AEUOlCStMBC9Uk9PVA)
+- [<i class="far fa-calendar-alt"></i> チームカレンダー](/handbook/marketing/developer-relations/developer-advocacy/calendar)
+- [<i class="far fa-chart-line"></i> コンテンツライブラリ](/handbook/marketing/developer-relations/developer-advocacy/content/)
+- [<i class="far fa-chart-line"></i> コンテンツの効果測定](/handbook/marketing/developer-relations/content-effectiveness/)
+- [<i class="fas fa-project-diagram"></i> チームプロジェクト](/handbook/marketing/developer-relations/developer-advocacy/projects)
+- [<i class="fas fa-project-diagram"></i> チーム開発環境](/handbook/marketing/developer-relations/developer-advocacy/dev-environments)
+- [<i class="fas fa-chalkboard-teacher"></i> 講演者募集（CFP）と登壇リソース](/handbook/marketing/developer-relations/developer-advocacy/cfps)
+- [<i class="far fa-edit"></i> コンテンツ作成](/handbook/marketing/developer-relations/developer-advocacy/#content-creation)
+- [<i class="far fa-folder-open"></i> チーム共有ドライブ](https://drive.google.com/drive/u/0/folders/0AEUOlCStMBC9Uk9PVA)
 
 ### チームと協業したいですか? {#want-to-work-with-the-team}
 
-- [<i class="fas fa-chalkboard-teacher"></i> Learn about Developer Advocacy](/handbook/marketing/developer-relations/developer-advocacy/learn-developer-advocacy/)
+- [<i class="fas fa-chalkboard-teacher"></i> デベロッパーアドボカシーについて学ぶ](/handbook/marketing/developer-relations/developer-advocacy/learn-developer-advocacy/)
 
-- [<i class="far fa-edit"></i> Request a Developer Advocate Issue Template](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=developer-advocate-request)
-- [<i class="far fa-edit"></i>Request Community Response support](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=community-response-plan)
-- [<i class="far fa-edit"></i> Request Content](/handbook/marketing/developer-relations/content-request/#how-to-work-with-the-developer-advocate-team)
+- [<i class="far fa-edit"></i> デベロッパーアドボケイトの Issue テンプレートをリクエスト](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=developer-advocate-request)
+- [<i class="far fa-edit"></i>コミュニティレスポンスのサポートをリクエスト](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=community-response-plan)
+- [<i class="far fa-edit"></i> コンテンツをリクエスト](/handbook/marketing/developer-relations/content-request/#how-to-work-with-the-developer-advocate-team)
 
 ---
 
