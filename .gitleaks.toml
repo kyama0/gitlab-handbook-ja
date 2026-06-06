@@ -103,14 +103,17 @@ paths = [
   '''^content/ja/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1\.md$''',
 ]
 
-# mr-reviews/_index.md には upstream に由来する
-# `GITLAB_QA_ACCESS_TOKEN=asdfASDF1234-` という *リテラルなプレースホルダー* が
-# 含まれており、gitleaks の `generic-api-key` ルールが「本物の API キー」として
-# 誤検知する。upstream 原文に同じ文字列が存在し、実際の機密情報ではないため許可する。
+# `generic-api-key` ルールが、upstream 由来の *リテラルなプレースホルダー* を
+# 「本物の API キー」として誤検知するケースを許可する。いずれも upstream 原文に
+# 同じ固定文字列が存在し、実際の機密情報ではない。
+#   - mr-reviews/_index.md の `GITLAB_QA_ACCESS_TOKEN=asdfASDF1234-`
+#   - zendesk/oauth-clients/_index.md の `bearer_token = 'abcdefg123456789'`
+#     （OAuth クライアントのベアラートークン失効手順を説明するためのサンプル値）
 #
 # 設計判断:
-#   - `regexTarget = "line"` で行全体にマッチさせ、固定文字列
-#     `GITLAB_QA_ACCESS_TOKEN=asdfASDF1234-` を含む行のみを許可する。
+#   - `regexTarget = "line"` で行全体にマッチさせ、それぞれの固定文字列を含む行
+#     のみを許可する（`Bearer` の後に何でも来る形だと本物のトークンも通って
+#     しまうため、必ず具体的なサンプル値を含む行に限定する）。
 #   - グローバル `[allowlist]` だとルール固有のオーバーライドが上書きされる
 #     可能性があるため、ルール単位で allowlist を定義する。
 [[rules]]
@@ -130,8 +133,9 @@ keywords = [
 ]
 
 [rules.allowlist]
-description = "Upstream mr-reviews docs sample placeholder asdfASDF1234-"
+description = "Upstream docs sample placeholders (mr-reviews, zendesk oauth-clients)"
 regexTarget = "line"
 regexes = [
   '''GITLAB_QA_ACCESS_TOKEN=asdfASDF1234-''',
+  '''bearer_token\s*=\s*'abcdefg123456789'''',
 ]
