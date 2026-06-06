@@ -178,7 +178,7 @@ JetBrains IDE のデフォルトプロファイルはダークテーマを使用
 
 > 注: Windows と Visual Studio のライセンスへのアクセスが必要で、追加のセキュリティレビューが必要です。
 >
-> ステータス: 調査中。Todo は [この内部 issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/712) で追跡されています。
+> ステータス: 調査中。Todo は [この社内 Issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/712) で追跡されています。
 
 GitLab Duo は [Visual Studio マーケットプレースの GitLab 拡張機能](https://docs.gitlab.com/editor_extensions/visual_studio/) を使って統合できます。
 
@@ -310,7 +310,7 @@ codex login status
 
 IDE への MCP クライアントの統合方法については、[GitLab MCP Clients のドキュメント](https://docs.gitlab.com/user/gitlab_duo/model_context_protocol/mcp_clients/) を参照してください。
 
-内部調査 issue: [DAP MCP use case testing - DevRel](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/927)
+社内調査 Issue: [DAP MCP use case testing - DevRel](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/927)
 
 ### MCP サーバー
 
