@@ -3,11 +3,11 @@ title: "Developer Relations"
 description: "Developer Relations チームは、コミュニティと連携し、GitLab への貢献に対するサポートと評価を確実に提供することで、GitLab のミッションを支えています。"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/developer-relations/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T12:00:00Z"
+upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
+translated_at: "2026-06-06T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-01T10:44:51-04:00"
+lastmod: 2026-06-04T10:07:48-04:00
 ---
 
 <i class="fas fa-bullhorn fa-fw color-orange font-awesome"></i> GitLab Developer Relations ハンドブックへようこそ
@@ -40,9 +40,8 @@ Developer Relations では、私たちのミッションとビジョンを会社
 
 ### チャットで連絡する
 
-- Developer Relations のチームメンバーは 3 つの Slack チャンネルを利用しています:
+- Developer Relations のチームメンバーは 2 つの Slack チャンネルを利用しています:
   - [#developer-relations](https://gitlab.slack.com/archives/C0R04UMT9): すべての GitLab 関連のディスカッション用（例: Issue に関する質問、近日開催のイベントの告知）
-  - [#developer-relations-hangout](https://gitlab.slack.com/archives/C01C018V7V3): Community Catch ボット経由で共有されるすべてのソーシャルなディスカッションと更新用（例: 配管の問題、週末の予定）
   - [developer-relations-confidential](https://gitlab.slack.com/archives/C0566B6N2KC): （非公開）GitLab 外の人がいるチャンネルで共有できない機密トピックのディスカッション用（例: チーム内で #company-fyi-private で共有されたトピックの議論）
 - Slack アクセスを持つ GitLab チームメンバーやその他の人は、[`#developer-relations`](https://gitlab.slack.com/messages/developer-relations) Slack チャンネルにアクセスするか、`@devrel-team` グループハンドルにタグ付けすることで、私たちに連絡できます。
 - より広い GitLab コミュニティのメンバーは、[公開 Discord ルーム](https://discord.gg/gitlab) で私たちとつながることができます

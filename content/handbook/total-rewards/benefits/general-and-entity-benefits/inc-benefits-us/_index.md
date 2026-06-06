@@ -2,11 +2,11 @@
 title: "GitLab Inc (US) Benefits"
 description: "米国を拠点とするチームメンバー向けの GitLab Inc (US) の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/
-upstream_sha: 23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0
-translated_at: "2026-05-07T22:45:00Z"
+upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
+translated_at: "2026-06-06T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-04-30T10:04:21-07:00"
+lastmod: 2026-06-02T22:00:31-07:00
 ---
 
 ## 私たちがあなたをサポートします

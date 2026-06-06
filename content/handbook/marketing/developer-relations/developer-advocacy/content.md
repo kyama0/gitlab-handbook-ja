@@ -2,11 +2,11 @@
 title: "デベロッパーアドボケイトのコンテンツライブラリとワークフロー"
 description: "デベロッパーアドボカシーチームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/content/
-upstream_sha: 15baf9cba6d48a5e5ac2f021a8e0d467baa862f1
-translated_at: "2026-05-31T00:00:00Z"
+upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
+translated_at: "2026-06-06T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-28T17:02:01+09:00"
+lastmod: 2026-06-05T17:12:34+02:00
 ---
 
 デベロッパーアドボカシーチームは、キャンペーン、フィールドイネーブルメント、製品ローンチサポート、ユースケース採用、顧客向けデモ、一般的な学習・オンボーディングに使用できるコンテンツを作成しています。チームが参加するすべてのコンテンツとアクティビティは、[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/) に従って Issue で追跡されます。

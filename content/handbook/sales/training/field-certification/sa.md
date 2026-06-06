@@ -2,11 +2,11 @@
 title: "フィールド認定: Solutions Architects"
 description: "GitLab の継続的な成長と成功を支援しスケールするため、Field Enablement チームは Solutions Architects 向けに、機能、ソフトスキル、技術トレーニングを含む認定プログラムを開発しています"
 upstream_path: /handbook/sales/training/field-certification/sa/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
+translated_at: "2026-06-06T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: 2026-05-29T16:02:17-04:00
 ---
 
 ## Solutions Architects 向け Field Accreditation プログラム
