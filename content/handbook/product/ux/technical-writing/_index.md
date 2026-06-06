@@ -619,6 +619,6 @@ Weekly Wednesday Question スタンドアップに新しいメンバーを追加
 
 ## 関連トピック {#related-topics}
 
-- [Documentation workflow](https://docs.gitlab.com/development/documentation/workflow/)
-- [Set up your local environment](https://docs.gitlab.com/development/documentation/authoring_environment.html)
-- [Documentation site architecture](https://docs.gitlab.com/development/documentation/site_architecture/)
+- [ドキュメントワークフロー](https://docs.gitlab.com/development/documentation/workflow/)
+- [ローカル環境のセットアップ](https://docs.gitlab.com/development/documentation/authoring_environment.html)
+- [ドキュメントサイトアーキテクチャ](https://docs.gitlab.com/development/documentation/site_architecture/)

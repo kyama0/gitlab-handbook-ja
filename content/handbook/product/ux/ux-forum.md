@@ -52,7 +52,7 @@ stale: false
 
 {{% include "includes/product/ux-forum-schedule.md" %}}
 
-<a href="https://gitlab.com/-/ide/project/gitlab-com/content-sites/handbook/edit/main/-/assets/includes/product/ux-forum-schedule.md" class="btn btn-primary">Update schedule</a>
+<a href="https://gitlab.com/-/ide/project/gitlab-com/content-sites/handbook/edit/main/-/assets/includes/product/ux-forum-schedule.md" class="btn btn-primary">スケジュールを更新</a>
 
 ## 自分の仕事を共有する {#sharing-your-work}
 
@@ -82,10 +82,10 @@ stale: false
 
 最小限のフォーラムの例:
 
-- [Fulfillment: Improve provisioning and onboarding of new sales assisted GitLab com subscribers](https://youtu.be/JYl2_Pnh_-I )
-- [Secure: Validating and prioritizing your roadmap](https://youtu.be/FVhZ_XNiR6U)
-- [Secure: Group-level security scanner status widget](https://youtu.be/4W-cWcEae_o)
-- [Secure: Security Workflow Iterations](https://youtu.be/v3gv-rplcBI)
+- [Fulfillment: 新しいセールスアシスト付き GitLab.com サブスクライバーのプロビジョニングとオンボーディングの改善](https://youtu.be/JYl2_Pnh_-I )
+- [Secure: ロードマップの検証と優先順位付け](https://youtu.be/FVhZ_XNiR6U)
+- [Secure: グループレベルのセキュリティスキャナーステータスウィジェット](https://youtu.be/4W-cWcEae_o)
+- [Secure: セキュリティワークフローのイテレーション](https://youtu.be/v3gv-rplcBI)
 
 ### 準備 {#preparation}
 

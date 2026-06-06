@@ -883,7 +883,7 @@ MECEFU 用語の例は、私たちの[セールスセグメンテーション](/
 
 1 つの細かい難点は、SMB の Medium と Mid-Market の Mid が非常に似ていることです。
 
-### シンプルな言葉 {#simple-language}
+### シンプルな言葉
 
 <a id="simple-language">
 

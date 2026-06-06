@@ -114,7 +114,7 @@ gitlab-snowflake:
 
 ターミナルとコードエディタを開いて新しいブランチを作成し、dbt モデルに調整を加えて変更を保存します。変更をテストするためにローカルで dbt を実行する準備ができたので、次のコマンドを入力します。`dbt run --models @{model_name}`。dbt はモデルの構築を開始し、デフォルトでは `ANALYST_XS` ウェアハウスを使用して構築します。しばらくすると、タイムアウトエラーによりビルドが失敗します。どうやら、あなたが構築しているモデルツリーには大きなモデルや複雑なモデルがいくつか含まれているようです。クエリを完了させるには、より大きなウェアハウスを使用する必要があります。ビルドを再試行したいのですが、今回は dbt に `ANALYST_XS` ではなく `ANALYST_L` ウェアハウスを使わせたいとします。そこで `dbt run --models @{model_name} --target dev_l` と入力します。これは `profiles.yml` ファイルの `dev_l` ターゲットで指定したウェアハウスを使うよう dbt に伝えるものです。数分後、ビルドが完了し、あなたは作業内容の確認を始めます。
 
-#### Venv ワークフロー {#Venv-workflow}
+#### Venv ワークフロー {#venv-workflow}
 
 Mac システムを使っているすべての人に推奨されるワークフローです。
 
@@ -417,7 +417,7 @@ dbt 固有:
 
 ### VSCode 拡張機能: dbt Power User {#vscode-extension-dbt-power-user}
 
-[dbt Power User](https://marketplace.visualstudio.com/items?itemName=innoverio.vscode-dbt-power-user) は、VScode を dbt とシームレスに連携させます。以下のガイドでは、[Venv ワークフロー](/handbook/enterprise-data/platform/dbt-guide/#Venv-workflow)に従った場合に dbt Power User をインストールできます。
+[dbt Power User](https://marketplace.visualstudio.com/items?itemName=innoverio.vscode-dbt-power-user) は、VScode を dbt とシームレスに連携させます。以下のガイドでは、[Venv ワークフロー](/handbook/enterprise-data/platform/dbt-guide/#venv-workflow)に従った場合に dbt Power User をインストールできます。
 
 始める前に、VScode で調整すべき設定がいくつかあります。
 
