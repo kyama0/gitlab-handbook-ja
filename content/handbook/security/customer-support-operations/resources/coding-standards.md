@@ -1,65 +1,65 @@
 ---
-title: 'コーディング規約'
-description: 'チームのコーディング規約に関するドキュメント'
+title: 'コーディング標準'
+description: 'チームのコーディング標準に関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/resources/coding-standards/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
+lastmod: 2026-06-05T08:51:52-05:00
+translated_at: "2026-06-06T12:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-26T12:05:00-05:00"
 ---
 
 
-<sup>*[gitlab-com/support/support-ops/support-ops-project#1963](https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/1963) で導入*</sup>
+<sup>*[gitlab-com/support/support-ops/support-ops-project#1963](https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/1963) を通じて導入されました*</sup>
 
-このドキュメントでは、GitLab Customer Support Operations チームが従うコーディング規約とベストプラクティスを定義しています。これらのガイドラインを活用することで、一貫性、保守性、シンプルさ、そしてチーム内での協業性を確保します。私たちのプロジェクトに貢献するすべての方は、特別な例外について合意がない限り、これらのガイドラインに従うことが期待されます。
+このドキュメントは、GitLab Customer Support Operations チームが従うべきコーディング標準とベストプラクティスを定義します。これらのガイドラインを活用することで、私たちはチーム内の一貫性、保守性、シンプルさ、そしてより良いコラボレーションを確保します。私たちのプロジェクトへのすべてのコントリビューターは、特定の例外について合意がない限り、これらのガイドラインに従うことが期待されます。
 
-## 一般原則
+## 一般原則 {#general-principles}
 
-[GitLab のコアバリュー](/handbook/values/) は、すべてのコーディングの意思決定の指針となるべきだと私たちは考えています。
+私たちは [GitLab のコアバリュー](/handbook/values/) がすべてのコーディング上の意思決定を導くべきだと考えています。
 
 - コラボレーション
-  - チームメイトと協力し、互いのコードをレビューし、知識を共有しましょう。
-  - フィードバックには常に耳を傾け、それに基づいてコードを改善してください。
-  - チーム内の他の人にとっても可読性が高く理解しやすい貢献を心がけてください
+  - チームメイトと協力し、お互いのコードをレビューし、知識を共有します。
+  - 常にフィードバックを受け入れ、それに基づいてコードを改善します。
+  - あなたの貢献がチームの他のメンバーにとって読みやすく理解しやすいものであることを確認します。
 - 結果
-  - コードのインパクトと有効性に焦点を当てましょう。
-  - 完璧な解決策よりも動く解決策を優先してください (ただし、品質を損なう近道は避けるよう努めてください)
-- 効率
-  - 明確で保守しやすいコードを書いてください。
-  - 機能性を犠牲にせずシンプルさを追求してください。
+  - コードのインパクトと有効性に重点を置きます。
+  - 完璧なソリューションよりも動作するソリューションを優先します（ただし、品質を損なう近道は避けるようにします）。
+- 効率性
+  - 明確で保守しやすいコードを書きます。
+  - 機能を犠牲にすることなくシンプルさを追求します。
 - 透明性
-  - コードは誰にとっても理解しやすく、アクセス可能であるべきです。
-  - 必要に応じて、前提・選択・設計上の意思決定を明確にドキュメント化してください。
+  - コードは理解しやすく、すべての人がアクセスできるものであるべきです。
+  - 必要な場合には、前提、選択、設計上の決定を明確にドキュメント化します。
 - イテレーション
-  - コードは柔軟でリファクタリングしやすいものであるべきです。
-  - 私たちは継続的な改善を目指し、必要に応じてコードを更新したり作り直したりすることをためらいません。
+  - コードは柔軟で、リファクタリングしやすいものであるべきです。
+  - 私たちは継続的な改善を目指しており、必要に応じてコードを更新または作り直すことを厭いません。
 
-## 命名規則
+## 命名規則 {#naming-conventions}
 
 - 変数
-  - 変数の目的が明確に伝わる説明的な名前を使ってください。変数名で目的が明確に伝わらない場合は、コードにコメントを追加してより詳しく説明してください。
-  - すべての変数名はスネークケースを使用してください。
-    - 例: `sum_of_pairings`、`gitlab_user`
+  - 変数の目的を明確に伝える説明的な名前を使用します。変数名が目的を明確に伝えていない場合は、それをよりよく説明するためにコードにコメントを追加します。
+  - すべての変数名は snake case を使用します。
+    - 例: `sum_of_pairings`, `gitlab_user`
 - 定数
-  - 定数の目的が明確に伝わる説明的な名前を使ってください。定数名で目的が明確に伝わらない場合は、コードにコメントを追加してより詳しく説明してください。
-  - 定数は大文字スネークケースで記述してください。
-    - 例: `MAX_RETRIES`、`DEFAULT_TIMEOUT`
+  - 定数の目的を明確に伝える説明的な名前を使用します。定数名が目的を明確に伝えていない場合は、それをよりよく説明するためにコードにコメントを追加します。
+  - 定数は upper snake case で記述します。
+    - 例: `MAX_RETRIES`, `DEFAULT_TIMEOUT`
 - 関数とメソッド
-  - 関数・メソッド名は、それが行うアクションを表すべきです。関数・メソッド名で目的が明確に伝わらない場合は、コードにコメントを追加してより詳しく説明してください。
-  - 関数・メソッド名はスネークケースで記述してください
-    - 例: `my_new_function`、`check_gitlab_user`
+  - 関数名とメソッド名は、それらが実行するアクションを説明するものにします。関数／メソッド名が目的を明確に伝えていない場合は、それをよりよく説明するためにコードにコメントを追加します。
+  - 関数名とメソッド名は snake case で記述します。
+    - 例: `my_new_function`, `check_gitlab_user`
 - クラスとモジュール
-  - クラスとモジュールはパスカルケースで記述してください。
-    - 例: `AccountBlocked`、`SupportSuperFormProcessor`
+  - クラスとモジュールは PascalCase で記述します。
+    - 例: `AccountBlocked`, `SupportSuperFormProcessor`
 - ファイル名
-  - すべてのファイル名はスネークケースを使用してください。
-    - 例: `process_account`、`compare_only`
+  - すべてのファイル名は snake case を使用します。
+    - 例: `process_account`, `compare_only`
 
-## コードフォーマット
+## コードフォーマット {#code-formatting}
 
 - インデント
-  - 可能な限り、1 段階のインデントには 2 スペースを使用してください。
+  - 可能な限り、インデントレベルごとに 2 スペースを使用します。
     - 例:
 
       ```ruby
@@ -69,33 +69,33 @@ lastmod: "2026-05-26T12:05:00-05:00"
       ```
 
 - 行の長さ
-  - 1 行あたりのコード長を最大 80〜120 文字に保ってください (目標は 80、最大は 120)。これにより可読性が確保され、ほとんどの環境でコードが快適に収まります。
+  - コードの行は最大 80 〜 120 文字に保ちます（80 を目指し、最大は 120）。これにより読みやすさが確保され、ほとんどの環境にコードが快適に収まります。
 - 空行
-  - 関数、クラス、論理的に関連するコードブロックを区切るために空行を使用してください
-  - メソッド定義の間には空行を 1 行使用してください
+  - 空行を使って関数、クラス、論理的に関連するコードブロックを分けます。
+  - メソッド定義の間には 1 行の空行を使用します。
 - スペース
-  - 演算子 (`+`、`<`、`=` など) の間にはスペースを 1 つ入れてください
+  - 演算子（`+`、`<`、`=` など）の間には 1 つのスペースを使用します。
 
-## コメントとドキュメント
+## コメントとドキュメント {#comments-and-documentation}
 
 - インラインコメント
-  - インラインコメントは控えめに使ってください。複雑なコードや明白でないコードを明確化する場合にのみ使用してください。大量のコメントが必要なら、おそらくコードを複雑にしすぎています!
-  - コメントは説明対象のコードに対して最新かつ関連性のあるものに保ってください。
+  - インラインコメントは控えめに使用します。複雑または自明でないコードを明確にするためだけに使用します。大量のコメントが必要な場合、おそらくコードを必要以上に複雑にしています！
+  - コメントは最新の状態に保ち、それが説明するコードと関連性のあるものにします。
 
-## コードの複雑性
+## コードの複雑性 {#code-complexity}
 
-- 深くネストされたコードは避けてください。ネストが複雑になりすぎる場合は、ヘルパー関数や早期リターンを使うようにリファクタリングしてください。
-- 関数のサイズを制限してください。各関数は明確で単一の責任を持ち、比較的小さい (20 行未満) ものであるべきです。
+- 深くネストされたコードは避けます。ネストが複雑になりすぎる場合は、ヘルパー関数や早期リターンを使うようにコードをリファクタリングします。
+- 関数のサイズを制限します。各関数は明確で単一の責務を持ち、比較的小さく（20 行未満）するべきです。
 
-## テスト
+## テスト {#testing}
 
-常に高いテストカバレッジを目指してください! 迷ったら、コードを徹底的にテストしてください!
+常に高いテストカバレッジを目指しましょう！迷ったときは、コードを徹底的にテストしましょう！
 
-## バージョン管理
+## バージョン管理 {#version-control}
 
 - コミットメッセージ
-  - 行われた変更を詳しく記載してください
-  - 取り組んでいる Issue と関連付けるテキストを追加してください
+  - 行っている変更を詳細に記述します。
+  - 取り組んでいる Issue と関連付けるためのテキストを追加します。
   - 例:
 
     ```plaintext
@@ -105,97 +105,97 @@ lastmod: "2026-05-26T12:05:00-05:00"
     ```
 
 - ブランチ
-  - ブランチの形式は `USERNAME-PROJECT-IID` 形式に従うこと。
-    各要素は以下のとおりです:
+  - ブランチの形式は `USERNAME-PROJECT-IID` の形式に従うべきです。
+    ここで:
     - `USERNAME` はあなたの gitlab.com のユーザー名
     - `PROJECT` はプロジェクトのスラッグ
     - `IID` は Issue の IID
     - 例:
-      - `jcolyer` が Issue `https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/1963` の作業のために作成するブランチの名前は `jcolyer-support-ops-project-1963` となります
+      - `jcolyer` が Issue `https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/1963` の作業のために作成するブランチの場合、ブランチ名は `jcolyer-support-ops-project-1963` とするべきです。
 
-## セマンティックバージョニングを使う
+## セマンティックバージョニングを使う {#use-semantic-versioning}
 
 {{% alert title="注" color="primary" %}}
 
-- これは一般化された方針です。バージョニングについての具体的な内容は、取り組んでいる対象のドキュメントページを参照してください。
+- これは一般論です。バージョン管理の詳細については、取り組んでいる項目のドキュメントページを参照してください。
 
 {{% /alert %}}
 
-バージョン番号を使用する必要があるときはいつでも、`MAJOR.MINOR.PATCH` 形式のセマンティックバージョニングを使うように努めてください。
+バージョン番号を使用する必要があるときは常に、セマンティックバージョニングの使用を目指すべきです。これは `MAJOR.MINOR.PATCH` の形式です。
 
-バージョン番号を上げるときは、どの番号を上げるかを以下に従って判断してください。
+バージョン番号を上げる際には、どの数値を上げるかを判断するために以下を使用します。
 
-- 大規模なリファクタリングを行った場合は `MAJOR` を上げる
-- 機能を追加または削除した場合は `MINOR` を上げる
-- 小さな変更 (文言修正、バグ修正など) を行っている場合は `PATCH` を上げる
+- 大規模なリファクタリングを行う場合は `MAJOR` を上げます。
+- 機能を追加または削除する場合は `MINOR` を上げます。
+- 小さな変更（文言の変更、バグ修正など）を行う場合は `PATCH` を上げます。
 
-値を上げるときに覚えておくべきこと:
+値を上げる際には、次のことを覚えておいてください。
 
-- `MAJOR` を上げる場合、`MINOR` と `PATCH` の新しい値は 0 になります
-- `MINOR` を上げる場合、`PATCH` の新しい値は 0 (`MAJOR` は変わらず) になります
-- `PATCH` を上げる場合、`MAJOR` と `MINOR` の値は変わりません
+- `MAJOR` を上げる場合、`MINOR` と `PATCH` の新しい値は 0 になります。
+- `MINOR` を上げる場合、`PATCH` の新しい値は 0 になります（`MAJOR` は変更されません）。
+- `PATCH` を上げる場合、`MAJOR` と `MINOR` の値は変更されません。
 
-参考までに、いくつか例を挙げます。
+参考のために、いくつかの例を示します。
 
-| 元のバージョン | `MAJOR` 更新 | `MINOR` 更新 | `PATCH` 更新 |
+| 開始バージョン | `MAJOR` 更新 | `MINOR` 更新 | `PATCH` 更新 |
 |------------------|----------------|----------------|----------------|
 | `1.0.0`          | `2.0.0`        | `1.1.0`        | `1.0.1`        |
 | `1.9.127`        | `2.0.0`        | `1.10.0`       | `1.9.128`      |
 | `2.99.0`         | `3.0.0`        | `2.100.0`      | `2.99.1`       |
 | `9.99.9`         | `10.0.0`       | `9.100.0`      | `9.99.10`      |
 
-### 数値が 2 つしか許されない場合のセマンティックバージョニングの使い方
+### 数値が 2 つしか許されない場合のセマンティックバージョニングの使い方 {#using-semantic-versioning-when-only-two-numeric-values-are-allowed}
 
-(`1.01` や `9.8` のように) 数値が 2 つしか許されない対象を扱う場合は、代わりに `MINOR` と `PATCH` の定義を 2 つ目の値に統合します。これにより、必要な `xx.yy` 形式となり、セマンティックバージョニングに近い形を維持できます。
+2 つの数値しか許可されていないもの（`1.01` や `9.8` など）を扱う場合は、代わりに 2 番目の値に `MINOR` と `PATCH` の定義を組み合わせます。これにより、必要な `xx.yy` の形式になり、セマンティックバージョニングに近い形を維持できます。
 
-そのため、バージョン番号を上げるときは、どの番号を上げるかを以下に従って判断してください。
+したがって、バージョン番号を上げる際には、どの数値を上げるかを判断するために以下を使用します。
 
-- 大規模なリファクタリングを行った場合は `xx` を上げる
-- 機能を追加または削除した場合、または小さな変更 (文言修正、バグ修正など) を行っている場合は `yy` を上げる
+- 大規模なリファクタリングを行う場合は `xx` を上げます。
+- 機能を追加または削除する場合、または小さな変更（文言の変更、バグ修正など）を行う場合は `yy` を上げます。
 
-参考までに、いくつか例を挙げます。
+参考のために、いくつかの例を示します。
 
-| 元のバージョン | `MAJOR` 更新 | `MINOR`/`PATCH` 更新 |
+| 開始バージョン | `MAJOR` 更新 | `MINOR`/`PATCH` 更新 |
 |------------------|----------------|------------------------|
 | `1.0`            | `2.0`          | `1.1`                  |
 | `1.9`            | `2.0`          | `1.10`                 |
 | `2.99`           | `3.0`          | `2.100`                |
 | `9.99`           | `10.0`         | `9.100`                |
 
-## エラーハンドリング
+## エラーハンドリング {#error-handling}
 
-可能な限り、コードがエラーを優雅に処理するようにしてください。それが不可能な場合は、エラーが何が問題なのかを明確に説明するようにしてください (どう対処すべきかも書いてあるとなおよしです)。
+可能な限り、コードがエラーを適切に処理するようにしてください。これが不可能な場合は、エラーが問題の内容を明確に説明するようにしてください（さらに、それについてどう対処すべきかを伝えてくれれば加点です）。
 
-## パフォーマンスに関する考慮事項
+## パフォーマンスに関する考慮事項 {#performance-considerations}
 
-- パフォーマンスへのフォーカスは、コードが機能し保守性が確保された後に行ってください。早すぎる最適化は避けましょう。
-- プロファイリングツールを使ってパフォーマンスへの影響を計測し、最適化の前にボトルネックを特定してください。
-- 私たちのツールへの API コールを減らすため、常識を働かせてください。
-  - 例: Zendesk からチケットを 1 つずつ手動で取得することもできますが、Readiness Gem が `list` メソッドで効率的にこれを行ってくれるのに、わざわざそうする論理的な理由はありません。
+- コードが機能的で保守しやすくなった後に初めてパフォーマンスに注力します。早すぎる最適化は避けます。
+- プロファイリングツールを使ってパフォーマンスへの影響を測定し、最適化する前にボトルネックを特定します。
+- 常識を働かせて、私たちのツール群への API 呼び出しを減らします。
+  - 例: Zendesk からすべてのチケットを 1 件ずつ手動で取得することもできますが、Readiness Gem が `list` メソッドを使ってこれを効率的に行ってくれるのに、そうする論理的な理由はありません。
 
-## セキュリティ
+## セキュリティ {#security}
 
-- インジェクション攻撃 (SQL インジェクション、XSS など) を防ぐため、すべての入力を検証してください。
-- パスワード、トークンなどを平文で保存しないでください。CI/CD 変数を使用してください。
+- インジェクション攻撃（SQL インジェクション、XSS など）を防ぐために、すべての入力を検証します。
+- パスワードやトークンなどを平文で保存しないでください。CI/CD 変数を使用します。
 
-## コードレビュー
+## コードレビュー {#code-reviews}
 
-- すべてのコードはマージ前にピアレビューを受ける必要があります。レビューが品質、一貫性、セキュリティを丁寧に取り扱うようにしてください。
-- 建設的なフィードバックを受け入れ、協力的にコードを改善してください。
+- すべてのコードはマージ前にピアレビューを受けなければなりません。レビューが徹底的で、品質、一貫性、セキュリティに対処していることを確認してください。
+- 建設的なフィードバックを受け入れ、協力してコードを改善します。
 
-## 言語固有のガイドライン
+## 言語固有のガイドライン {#language-specific-guidelines}
 
-これは現在、私たちの主要言語である Ruby に焦点を当てています。これは生きているセクションで、将来使うかもしれない他の言語についても今後追加していく予定です。
+これは現在、私たちの主要言語である ruby に焦点を当てています。これは生きたセクションであり、将来使用するかもしれない他の言語についても、より多くの内容を追加するべきです。
 
 ### Ruby
 
-- 可能な限り、コードが [rubocop](https://rubygems.org/gems/rubocop) リンターで実行された際に問題が出ないようにしてください。
+- 可能な限り、[rubocop](https://rubygems.org/gems/rubocop) リンターを通して実行したときにコードが問題を提示しないようにしてください。
 
-## 始めるのに役立つ例
+## 始めるのに役立つ例 {#examples-to-help-you-get-started}
 
 ### Ruby スクリプトを書く {#writing-a-ruby-script}
 
-Ruby スクリプトを書くときは、以下から始めることをおすすめします。
+ruby スクリプトを書くときは、次のように始めることをお勧めします。
 
 <details>
 <summary>クリックして展開</summary>
@@ -421,11 +421,11 @@ end
 
 </details>
 
-これにより、すぐ次の行からコーディングを始められ、作業の良い出発点となります。
+これにより、すぐ次の行からコーディングを始められ、作業を進めるための良い出発点を得られます。
 
-#### リクエストを行う
+#### リクエストを行う {#making-a-request}
 
-[出発点となるコード](#writing-a-ruby-script) を使うと、外部リクエストを次のように行うことができます。
+[出発点となるコード](#writing-a-ruby-script)を使用して、次のように外部リクエストを行うことができます。
 
 <details>
 
@@ -437,7 +437,7 @@ page_data = request_with_retry(client_variable, :get, url_to_use)
 
 </details>
 <details>
-<summary>ペイロード付きリクエスト</summary>
+<summary>ペイロードを伴うリクエスト</summary>
 
 ```ruby
 payload = {
@@ -449,7 +449,7 @@ page_data = request_with_retry(client_variable, :post, url_to_use, payload)
 
 </details>
 <details>
-<summary>safe_update を使ったペイロード付きリクエスト</summary>
+<summary>safe_update を使ったペイロードを伴うリクエスト</summary>
 
 ```ruby
 def update_object
@@ -473,7 +473,7 @@ page_data = request_with_retry(client_variable, :get, url_to_use, allow404: true
 
 </details>
 
-より完全な例として、Zendesk インスタンスのすべての Automation を取得するコードを以下に示します。
+より完全な例として、ここでは Zendesk インスタンスのすべての automation を取得するコードを示します。
 
 <details>
 <summary>クリックして展開</summary>
@@ -497,9 +497,9 @@ puts 'done! ✅ Successfully fetched Zendesk automations!'
 
 </details>
 
-### Ruby から Zendesk に接続する
+### Ruby から Zendesk に接続する {#connecting-to-zendesk-via-ruby}
 
-Zendesk に接続する必要があるときは、[出発点](#writing-a-ruby-script) を使い、次を追加します。
+Zendesk に接続する必要があるときは、[出発点](#writing-a-ruby-script)を使用し、次の内容を追加します。
 
 <details>
 <summary>Zendesk Global の場合</summary>
@@ -509,20 +509,40 @@ def base_url
   sandbox? ? 'https://gitlab1707170878.zendesk.com' : 'https://gitlab.zendesk.com'
 end
 
-def username
-  return ENV.fetch('SB_ZD_USERNAME') if sandbox?
+def zendesk_secret
+  return ENV.fetch('SB_ZD_SECRET') if sandbox?
 
-  ENV.fetch('ZD_USERNAME')
+  ENV.fetch('ZD_SECRET')
 end
 
-def token
-  return ENV.fetch('SB_ZD_TOKEN') if sandbox?
+def zendesk_client_name
+  return ENV.fetch('SB_ZD_CLIENT_NAME') if sandbox?
 
-  ENV.fetch('ZD_TOKEN')
+  ENV.fetch('ZD_CLIENT_NAME')
 end
 
-def auth_string
-  Base64.encode64("#{username}/token:#{token}").gsub("\n", '')
+def zendesk_bearer_token
+  @zendesk_bearer_token ||= generate_zendesk_bearer_token
+end
+
+def generate_zendesk_bearer_token
+  client = Faraday.new(base_url) do |f|
+    f.options.timeout = request_timeout
+    f.options.open_timeout = open_timeout
+    f.headers['Content-Type'] = 'application/json'
+  end
+  url = 'oauth/tokens'
+  response = request_with_retry(client, :post, url, zendesk_bearer_token_payload)
+  response['access_token']
+end
+
+def zendesk_bearer_token_payload
+  {
+    'client_id' => zendesk_client_name,
+    'client_secret' => zendesk_secret,
+    'grant_type' => 'client_credentials',
+    'scope' => 'read write'
+  }
 end
 
 def setup_zendesk_client
@@ -530,12 +550,34 @@ def setup_zendesk_client
     f.options.timeout = request_timeout
     f.options.open_timeout = open_timeout
     f.headers['Content-Type'] = 'application/json'
-    f.headers['Authorization'] = "Basic #{auth_string}"
+    f.headers['Authorization'] = "Bearer #{zendesk_bearer_token}"
   end
 end
 
 def zendesk_client
   @zendesk_client ||= setup_zendesk_client
+end
+
+def zendesk_oauth_client
+  oauth_clients = []
+  url = "api/v2/oauth/clients?page[size]=#{page_size}"
+  loop do
+    page_data = request_with_retry(zendesk_client, :get, url)
+    oauth_clients += page_data['clients']
+    break unless page_data['meta']['has_more']
+
+    url = extract_next_url(page_data.dig('links', 'next'))
+  end
+  oauth_clients.detect { |o| o['identifier'] == zendesk_client_name }
+end
+
+def revoke_token!
+  url = "api/v2/oauth/tokens?client_id=#{zendesk_oauth_client['id']}"
+  tokens = request_with_retry(zendesk_client, :get, url)
+  token = tokens['tokens'].detect { |t| t['token'] == "...#{zendesk_bearer_token[-10..]}" }
+  return if token.nil?
+
+  request_with_retry(zendesk_client, :delete, "api/v2/oauth/tokens/#{token['id']}")
 end
 
 def find_in_collection(collection, attribute, value, collection_name)
@@ -561,20 +603,40 @@ def base_url
   sandbox? ? 'https://gitlabfederalsupport1585318082.zendesk.com' : 'https://gitlab-federal-support.zendesk.com'
 end
 
-def username
-  return ENV.fetch('US_SB_ZD_USERNAME') if sandbox?
+def zendesk_secret
+  return ENV.fetch('US_SB_ZD_SECRET') if sandbox?
 
-  ENV.fetch('US_ZD_USERNAME')
+  ENV.fetch('US_ZD_SECRET')
 end
 
-def token
-  return ENV.fetch('US_SB_ZD_TOKEN') if sandbox?
+def zendesk_client_name
+  return ENV.fetch('US_SB_ZD_CLIENT_NAME') if sandbox?
 
-  ENV.fetch('US_ZD_TOKEN')
+  ENV.fetch('US_ZD_CLIENT_NAME')
 end
 
-def auth_string
-  Base64.encode64("#{username}/token:#{token}").gsub("\n", '')
+def zendesk_bearer_token
+  @zendesk_bearer_token ||= generate_zendesk_bearer_token
+end
+
+def generate_zendesk_bearer_token
+  client = Faraday.new(base_url) do |f|
+    f.options.timeout = request_timeout
+    f.options.open_timeout = open_timeout
+    f.headers['Content-Type'] = 'application/json'
+  end
+  url = 'oauth/tokens'
+  response = request_with_retry(client, :post, url, zendesk_bearer_token_payload)
+  response['access_token']
+end
+
+def zendesk_bearer_token_payload
+  {
+    'client_id' => zendesk_client_name,
+    'client_secret' => zendesk_secret,
+    'grant_type' => 'client_credentials',
+    'scope' => 'read write'
+  }
 end
 
 def setup_zendesk_client
@@ -582,12 +644,34 @@ def setup_zendesk_client
     f.options.timeout = request_timeout
     f.options.open_timeout = open_timeout
     f.headers['Content-Type'] = 'application/json'
-    f.headers['Authorization'] = "Basic #{auth_string}"
+    f.headers['Authorization'] = "Bearer #{zendesk_bearer_token}"
   end
 end
 
 def zendesk_client
   @zendesk_client ||= setup_zendesk_client
+end
+
+def zendesk_oauth_client
+  oauth_clients = []
+  url = "api/v2/oauth/clients?page[size]=#{page_size}"
+  loop do
+    page_data = request_with_retry(zendesk_client, :get, url)
+    oauth_clients += page_data['clients']
+    break unless page_data['meta']['has_more']
+
+    url = extract_next_url(page_data.dig('links', 'next'))
+  end
+  oauth_clients.detect { |o| o['identifier'] == zendesk_client_name }
+end
+
+def revoke_token!
+  url = "api/v2/oauth/tokens?client_id=#{zendesk_oauth_client['id']}"
+  tokens = request_with_retry(zendesk_client, :get, url)
+  token = tokens['tokens'].detect { |t| t['token'] == "...#{zendesk_bearer_token[-10..]}" }
+  return if token.nil?
+
+  request_with_retry(zendesk_client, :delete, "api/v2/oauth/tokens/#{token['id']}")
 end
 
 def find_in_collection(collection, attribute, value, collection_name)
@@ -606,9 +690,11 @@ end
 
 </details>
 
-### Ruby から GitLab.com に接続する
+スクリプトの最後（または API 接続がもはや不要になったとき）に、必ず関数 `revoke_token!` を実行するようにしてください。
 
-GitLab に接続する必要があるときは、[出発点](#writing-a-ruby-script) を使い、次を追加します。
+### Ruby から GitLab.com に接続する {#connecting-to-gitlabcom-via-ruby}
+
+GitLab に接続する必要があるときは、[出発点](#writing-a-ruby-script)を使用し、次の内容を追加します。
 
 <details>
 <summary>クリックして展開</summary>
@@ -634,9 +720,9 @@ end
 
 </details>
 
-### Ruby から Slack に接続する
+### Ruby から Slack に接続する {#connecting-to-slack-via-ruby}
 
-Slack に接続する必要があるときは、[出発点](#writing-a-ruby-script) を使い、次を追加します。
+Slack に接続する必要があるときは、[出発点](#writing-a-ruby-script)を使用し、次の内容を追加します。
 
 <details>
 <summary>クリックして展開</summary>
@@ -653,10 +739,10 @@ end
 
 </details>
 
-これを使ってリクエストを行うことができます。例:
+そして、これを使ってリクエストを行うことができます。その一例:
 
 <details>
-<summary>受信 Webhook を使って Slack 投稿を行う</summary>
+<summary>incoming webhook を使って Slack へ投稿する</summary>
 
 ```ruby
 payload = { 'text' => 'I am a slack post!' }
@@ -665,9 +751,9 @@ request_with_retry(slack_client, :post, '', payload)
 
 </details>
 
-### Ruby から Salesforce に接続する
+### Ruby から Salesforce に接続する {#connecting-to-salesforce-via-ruby}
 
-Salesforce に接続する必要があるときは、[出発点](#writing-a-ruby-script) を使い、次を追加します。
+Salesforce に接続する必要があるときは、[出発点](#writing-a-ruby-script)を使用し、次の内容を追加します。
 
 <details>
 <summary>クリックして展開</summary>
@@ -740,10 +826,10 @@ end
 
 </details>
 
-これを使ってリクエストを行うことができます。例をいくつか示します。
+そして、これを使ってリクエストを行うことができます。いくつかの例:
 
 <details>
-<summary>SOQL クエリを行う</summary>
+<summary>SOQL クエリを実行する</summary>
 
 ```ruby
 encoded_query = URI.encode_www_form_component("SELECT Name FROM Account WHERE Id = 'ABC123'")
@@ -753,7 +839,7 @@ page_data = request_with_retry(salesforce_client, :get, url)
 
 </details>
 <details>
-<summary>Salesforce にケースを作成する</summary>
+<summary>Salesforce で Case を作成する</summary>
 
 ```ruby
 payload = {
@@ -770,9 +856,9 @@ page_data = request_with_retry(salesforce_client, :post, url, payload)
 
 </details>
 
-### Ruby から Mailgun に接続する
+### Ruby から Mailgun に接続する {#connecting-to-mailgun-via-ruby}
 
-Mailgun に接続する必要があるときは、[出発点](#writing-a-ruby-script) を使い、次を追加します。
+Mailgun に接続する必要があるときは、[出発点](#writing-a-ruby-script)を使用し、次の内容を追加します。
 
 <details>
 <summary>クリックして展開</summary>
@@ -798,7 +884,7 @@ end
 
 </details>
 
-これを使ってリクエストを行うことができます。例をいくつか示します。
+そして、これを使ってリクエストを行うことができます。いくつかの例:
 
 <details>
 <summary>メールを送信する</summary>
@@ -815,11 +901,11 @@ page_data = request_with_retry(mailgun_client, :post, url, payload)
 
 </details>
 
-### Ruby から Google に接続する
+### Ruby から Google に接続する {#connecting-to-google-via-ruby}
 
 #### Google Sheets
 
-Google Sheets に接続する必要があるときは、[出発点](#writing-a-ruby-script) を使い、次を追加します。
+Google Sheets に接続する必要があるときは、[出発点](#writing-a-ruby-script)を使用し、次の内容を追加します。
 
 <details>
 <summary>クリックして展開</summary>
@@ -883,10 +969,10 @@ end
 
 </details>
 
-これを使ってリクエストを行うことができます。例をいくつか示します。
+そして、これを使ってリクエストを行うことができます。いくつかの例:
 
 <details>
-<summary>Google スプレッドシートのエントリを一覧する</summary>
+<summary>Google Sheet のエントリを一覧表示する</summary>
 
 ```ruby
 spreadsheet_id = 'ID_TO_USE'
@@ -897,7 +983,7 @@ page_data = request_with_retry(google_client, :get, url)
 
 </details>
 <details>
-<summary>Google スプレッドシートにエントリを追加する</summary>
+<summary>Google Sheet にエントリを追加する</summary>
 
 ```ruby
 spreadsheet_id = 'ID_TO_USE'
@@ -913,7 +999,7 @@ request_with_retry(google_client, :put, url, data)
 
 </details>
 <details>
-<summary>Google スプレッドシートのエントリをクリアする</summary>
+<summary>Google Sheet のエントリをクリアする</summary>
 
 ```ruby
 spreadsheet_id = 'ID_TO_USE'
@@ -926,7 +1012,7 @@ request_with_retry(google_client, :post, url)
 
 #### Google Calendars
 
-Google Calendars に接続する必要があるときは、[出発点](#writing-a-ruby-script) を使い、次を追加します。
+Google Calendars に接続する必要があるときは、[出発点](#writing-a-ruby-script)を使用し、次の内容を追加します。
 
 <details>
 <summary>クリックして展開</summary>
@@ -990,10 +1076,10 @@ end
 
 </details>
 
-これを使ってリクエストを行うことができます。例をいくつか示します。
+そして、これを使ってリクエストを行うことができます。いくつかの例:
 
 <details>
-<summary>カレンダー上のイベントを一覧する</summary>
+<summary>カレンダー上のイベントを一覧表示する</summary>
 
 ```ruby
 Time.zone = TZInfo::Timezone.get('America/Los_Angeles')
