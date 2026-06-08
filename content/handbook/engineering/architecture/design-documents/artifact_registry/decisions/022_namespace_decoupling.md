@@ -16,7 +16,7 @@ stale: false
 
 ## ステータス {#status}
 
-**Proposed.**
+**提案中。**
 
 ## コンテキスト {#context}
 

@@ -448,46 +448,46 @@ KPI:
 
 GitLab 14 の高パフォーマンスな共有例:
 
-- 14.9: Notable Contributor on [LinkedIn](https://www.linkedin.com/posts/dnsmichi_terraform-everyonecancontribute-activity-6912476005810999296-ig8Q) (3,000+ views, 60+ reactions)
-- 14.8: Notable Contributor on [Twitter](https://twitter.com/dnsmichi/status/1496140144067465227) (8,000 impressions, 150 engagements) [LinkedIn](https://www.linkedin.com/posts/dnsmichi_everyonecancontribute-devops-activity-6901905241671835648-X4Vk) (2,500 views, 32 reactions)
-- 14.7: Notable Contributor on [Twitter](https://twitter.com/dnsmichi/status/1484898545849315333) (18,000 impressions, 600 engagements) [LinkedIn](https://www.linkedin.com/posts/dnsmichi_everyonecancontribute-community-devops-activity-6890664006277754880-OCJ5) (7,500 views, 150 reactions)
-- 14.6: Render markdown titles of issues on [LinkedIn](https://www.linkedin.com/posts/dnsmichi_yesssss-gitlab-146-allows-to-render-markdown-activity-6879493371191156736-RHCu) (3,000 views, 62 reactions)
-- 14.6: Notable Contributor on [LinkedIn](https://www.linkedin.com/posts/dnsmichi_everyonecancontribute-activity-6879464875018465280-skt5) (1,500 views, 30 reactions)
-- 14.5: IaC Security scanning on [LinkedIn](https://www.linkedin.com/posts/dnsmichi_security-infrastructureascode-kics-activity-6870082879037173761-kyaQ) (2,300 views, 28 reactions)
-- 14.5: Conditional includes with exists in CI/CD on [Twitter](https://twitter.com/dnsmichi/status/1464279272214958095) (12,000 impressions, 600 engagements)
-- 14.3: Conditional includes in CI/CD on [Twitter](https://twitter.com/dnsmichi/status/1440690461673340933) (21,000 impressions, 1,800 engagements)
-- 14.2: Stageless CI/CD Pipelines on [Twitter](https://twitter.com/dnsmichi/status/1429475480030351364) (55,000 impressions, 1,900 engagements) and [LinkedIn](https://www.linkedin.com/posts/dnsmichi_async-cicd-pipelines-with-needs-as-job-activity-6835241415748939776-I6kI) (9,000 views, 127 reactions)
-- 14.2: Open MR in Gitpod Notable Contributor on [Twitter](https://twitter.com/dnsmichi/status/1429469773058936841) (43,000 impressions, 300 engagements) [RT-quoted tweet](https://twitter.com/ludmann/status/1429735681513951235)
-- 14.2: Live Markdown Preview on [Twitter](https://twitter.com/dnsmichi/status/1429463680182276100) (7,000 impressions, 300 engagements) [LinkedIn](https://www.linkedin.com/posts/dnsmichi_wohooooooo-live-markdown-preview-while-typing-activity-6835229767072014336-sDCg) (5,000 views, 62 reactions)
-- 14.2: Parametrize CI/CD include statements on [Twitter](https://twitter.com/dnsmichi/status/1429473222098100233) (8,000 impressions, 400 engagements) [LinkedIn](https://www.linkedin.com/posts/dnsmichi_you-can-parametrize-cicd-include-statements-activity-6835239058843688960-Xc6v) (800 views, 13 reactions)
-- 14.2 Creating branches directly in @gitlab from a @Jira issue?!  Yes please on [Twitter](https://twitter.com/olearycrew/status/1429899257700618249) (15,000 impressions, 900 engagements)
-- 14.2 Oh hey check it out. Pronouns AND name pronunciation is now in GitLab profiles on [Twitter](https://twitter.com/olearycrew/status/1429459101294157829) (5,000 impressions, 150 engagements)
-- 14.1: External API for status checks in MRs on [Twitter](https://twitter.com/dnsmichi/status/1418271636722274307) (8,000 impressions, 500 engagements)
-- 14.1: Helm Charts repository on [LinkedIn](https://www.linkedin.com/posts/dnsmichi_cloudnative-helm-activity-6823949221377388544-9spE) (1,100 views, 17 reactions)
-- 14.1: Kubernetes cluster image scanning on [LinkedIn](https://www.linkedin.com/posts/dnsmichi_kubernetes-activity-6823916460750974976-FJEc) (2,500 views, 27 reactions)
-- 14.0: Pipeline Editor on [Twitter](https://twitter.com/dnsmichi/status/1407359717282828298) (38,000 impressions, 1,400 engagements)
-- 14.0: Container Scanning in GitLab to use Trivy from @AquaSecTeam on [Twitter](https://twitter.com/olearycrew/status/1407358974601707520) (7,000 impressions, 100 engagements)
-- 14.0: Introduction of Terraform Module Registry on [Twitter](https://twitter.com/sarki247/status/1407995667121901568) (4,200 impressions, 55 engagements)
-- 14.0: Cluster management project template using Helm 3 on [Twitter](https://twitter.com/sarki247/status/1408056830551601159) (2,000 impressions, 64 engagements)
+- 14.9: Notable Contributor を [LinkedIn](https://www.linkedin.com/posts/dnsmichi_terraform-everyonecancontribute-activity-6912476005810999296-ig8Q) で（3,000+ ビュー、60+ リアクション）
+- 14.8: Notable Contributor を [Twitter](https://twitter.com/dnsmichi/status/1496140144067465227) で（8,000 インプレッション、150 エンゲージメント）[LinkedIn](https://www.linkedin.com/posts/dnsmichi_everyonecancontribute-devops-activity-6901905241671835648-X4Vk)（2,500 ビュー、32 リアクション）
+- 14.7: Notable Contributor を [Twitter](https://twitter.com/dnsmichi/status/1484898545849315333) で（18,000 インプレッション、600 エンゲージメント）[LinkedIn](https://www.linkedin.com/posts/dnsmichi_everyonecancontribute-community-devops-activity-6890664006277754880-OCJ5)（7,500 ビュー、150 リアクション）
+- 14.6: Issue のタイトルの Markdown レンダリングを [LinkedIn](https://www.linkedin.com/posts/dnsmichi_yesssss-gitlab-146-allows-to-render-markdown-activity-6879493371191156736-RHCu) で（3,000 ビュー、62 リアクション）
+- 14.6: Notable Contributor を [LinkedIn](https://www.linkedin.com/posts/dnsmichi_everyonecancontribute-activity-6879464875018465280-skt5) で（1,500 ビュー、30 リアクション）
+- 14.5: IaC セキュリティスキャンを [LinkedIn](https://www.linkedin.com/posts/dnsmichi_security-infrastructureascode-kics-activity-6870082879037173761-kyaQ) で（2,300 ビュー、28 リアクション）
+- 14.5: CI/CD での exists を使った条件付き include を [Twitter](https://twitter.com/dnsmichi/status/1464279272214958095) で（12,000 インプレッション、600 エンゲージメント）
+- 14.3: CI/CD での条件付き include を [Twitter](https://twitter.com/dnsmichi/status/1440690461673340933) で（21,000 インプレッション、1,800 エンゲージメント）
+- 14.2: ステージレスな CI/CD パイプラインを [Twitter](https://twitter.com/dnsmichi/status/1429475480030351364) で（55,000 インプレッション、1,900 エンゲージメント）と [LinkedIn](https://www.linkedin.com/posts/dnsmichi_async-cicd-pipelines-with-needs-as-job-activity-6835241415748939776-I6kI)（9,000 ビュー、127 リアクション）
+- 14.2: Gitpod で MR を開く Notable Contributor を [Twitter](https://twitter.com/dnsmichi/status/1429469773058936841) で（43,000 インプレッション、300 エンゲージメント）[RT で引用されたツイート](https://twitter.com/ludmann/status/1429735681513951235)
+- 14.2: ライブ Markdown プレビューを [Twitter](https://twitter.com/dnsmichi/status/1429463680182276100) で（7,000 インプレッション、300 エンゲージメント）[LinkedIn](https://www.linkedin.com/posts/dnsmichi_wohooooooo-live-markdown-preview-while-typing-activity-6835229767072014336-sDCg)（5,000 ビュー、62 リアクション）
+- 14.2: CI/CD の include 文のパラメータ化を [Twitter](https://twitter.com/dnsmichi/status/1429473222098100233) で（8,000 インプレッション、400 エンゲージメント）[LinkedIn](https://www.linkedin.com/posts/dnsmichi_you-can-parametrize-cicd-include-statements-activity-6835239058843688960-Xc6v)（800 ビュー、13 リアクション）
+- 14.2 @Jira の Issue から @gitlab で直接ブランチを作成？！ ぜひお願いします、を [Twitter](https://twitter.com/olearycrew/status/1429899257700618249) で（15,000 インプレッション、900 エンゲージメント）
+- 14.2 おっと見てください。代名詞 AND 名前の発音が GitLab プロフィールに入りました、を [Twitter](https://twitter.com/olearycrew/status/1429459101294157829) で（5,000 インプレッション、150 エンゲージメント）
+- 14.1: MR でのステータスチェック向け外部 API を [Twitter](https://twitter.com/dnsmichi/status/1418271636722274307) で（8,000 インプレッション、500 エンゲージメント）
+- 14.1: Helm Charts リポジトリを [LinkedIn](https://www.linkedin.com/posts/dnsmichi_cloudnative-helm-activity-6823949221377388544-9spE) で（1,100 ビュー、17 リアクション）
+- 14.1: Kubernetes クラスターイメージスキャンを [LinkedIn](https://www.linkedin.com/posts/dnsmichi_kubernetes-activity-6823916460750974976-FJEc) で（2,500 ビュー、27 リアクション）
+- 14.0: Pipeline Editor を [Twitter](https://twitter.com/dnsmichi/status/1407359717282828298) で（38,000 インプレッション、1,400 エンゲージメント）
+- 14.0: GitLab のコンテナスキャンで @AquaSecTeam の Trivy を使う、を [Twitter](https://twitter.com/olearycrew/status/1407358974601707520) で（7,000 インプレッション、100 エンゲージメント）
+- 14.0: Terraform Module Registry の導入を [Twitter](https://twitter.com/sarki247/status/1407995667121901568) で（4,200 インプレッション、55 エンゲージメント）
+- 14.0: Helm 3 を使ったクラスター管理プロジェクトテンプレートを [Twitter](https://twitter.com/sarki247/status/1408056830551601159) で（2,000 インプレッション、64 エンゲージメント）
 
 過去の例:
 
-- [13.12: Dynamic CI/CD variables based on conditions on Twitter](https://twitter.com/dnsmichi/status/1396129739622998022) (23,000 impressions, 2,300 engagements)
-- [13.11: Tweetstorm to highlight 13.11 and tease 13.12](https://twitter.com/dnsmichi/status/1395686623132758017) (32,000 impressions)
-- [13.10: Nested CI/CD variables on Twitter](https://twitter.com/dnsmichi/status/1383014333500813322) (18,000 impressions, 1,100 engagements) [LinkedIn](https://www.linkedin.com/posts/dnsmichi_gitlab-1310-allows-to-nest-cicd-variables-activity-6787693633425424384-WelD) (2,300 views, 35 reactions)
-- [13.10: Parallel CI/CD job execution in child pipeline triggers on Twitter](https://twitter.com/dnsmichi/status/1382351735960797184) (13,000 impressions, 700 engagements) [LinkedIn](https://www.linkedin.com/posts/dnsmichi_parallel-cicd-job-execution-in-gitlab-improves-activity-6788117887266652160-hNIV) (1,100 views, 25 reactions)
-- [13.9: Expanded CI/CD configuration on Twitter](https://twitter.com/dnsmichi/status/1363879804785803268) (5,000 impressions, 400 engagements)
-- [13.9: SAST with .NET 5.0](https://www.linkedin.com/posts/dnsmichi_gitlab-dotnet-activity-6772576735876714496-noR_) (1,600 views, 43 reactions)
-- [13.8: CI pipeline editor on LinkedIn](https://www.linkedin.com/posts/dnsmichi_best-release-ever-gitlab-inc138-is-here-activity-6758427487870451712-TttR) (5,000 views, 10 comments, 316 reactions, 15 reshares)
-- [13.8: Download CI/CD job artifacts in the MR widget on LinkedIn](https://www.linkedin.com/posts/dnsmichi_gitlab-activity-6758714643964805120-9Yyd) (800 views, 14 reactions)
-- [13.7: Merge Request Reviewers on LinkedIn](https://www.linkedin.com/posts/dnsmichi_gitlab-devops-productivity-activity-6756907989321433088-TRW9) (500 views, 16 reactions)
-- [13.7: Rendered URLs in CI/CD job logs on LinkedIn](https://www.linkedin.com/posts/dnsmichi_everyonecancontribute-activity-6723982784492273664-cwg0) (4,800 views, 350 reactions, 12 comments)
-- [13.6: VS Code GitLab workflow on Twitter](https://twitter.com/dnsmichi/status/1336362663107063808) (16,000 impressions, 700 engagements)
-- [13.5: Group wikis on Twitter](https://twitter.com/dnsmichi/status/1319656105249820672) (18,000 impressions, 600 engagements)
-- [13.4: Pipeline Efficiency docs on LinkedIn](https://www.linkedin.com/posts/dnsmichi_on-a-personal-note-my-first-larger-contribution-activity-6714235003447853056-Kkv4) (2,100 views, 49 reactions)
-- [13.3: KubeCon Kubernetes teaser](https://twitter.com/dnsmichi/status/1296051268448915456) (18,000 impressions, 500 engagements)
-- [13.3: Matrix builds of parallel CI/CD job execution on LinkedIn](https://www.linkedin.com/posts/dnsmichi_gitlab-development-cicd-activity-6702933595721351168-c-nV) (2,400 views, 49 reactions)
-- [13.1: Individual CI/CD job artifcat reports on LinkedIn](https://www.linkedin.com/posts/dnsmichi_gitlab-cicd-development-activity-6683033972479451136-VNVL) (700 views, 16 reactions)
+- [13.12: 条件に基づく動的 CI/CD 変数を Twitter で](https://twitter.com/dnsmichi/status/1396129739622998022)（23,000 インプレッション、2,300 エンゲージメント）
+- [13.11: 13.11 を強調し 13.12 を予告するツイートストーム](https://twitter.com/dnsmichi/status/1395686623132758017)（32,000 インプレッション）
+- [13.10: ネストされた CI/CD 変数を Twitter で](https://twitter.com/dnsmichi/status/1383014333500813322)（18,000 インプレッション、1,100 エンゲージメント）[LinkedIn](https://www.linkedin.com/posts/dnsmichi_gitlab-1310-allows-to-nest-cicd-variables-activity-6787693633425424384-WelD)（2,300 ビュー、35 リアクション）
+- [13.10: 子パイプライントリガーでの並列 CI/CD ジョブ実行を Twitter で](https://twitter.com/dnsmichi/status/1382351735960797184)（13,000 インプレッション、700 エンゲージメント）[LinkedIn](https://www.linkedin.com/posts/dnsmichi_parallel-cicd-job-execution-in-gitlab-improves-activity-6788117887266652160-hNIV)（1,100 ビュー、25 リアクション）
+- [13.9: 拡張された CI/CD 設定を Twitter で](https://twitter.com/dnsmichi/status/1363879804785803268)（5,000 インプレッション、400 エンゲージメント）
+- [13.9: .NET 5.0 での SAST](https://www.linkedin.com/posts/dnsmichi_gitlab-dotnet-activity-6772576735876714496-noR_)（1,600 ビュー、43 リアクション）
+- [13.8: CI パイプラインエディターを LinkedIn で](https://www.linkedin.com/posts/dnsmichi_best-release-ever-gitlab-inc138-is-here-activity-6758427487870451712-TttR)（5,000 ビュー、10 コメント、316 リアクション、15 リシェア）
+- [13.8: MR ウィジェットでの CI/CD ジョブアーティファクトのダウンロードを LinkedIn で](https://www.linkedin.com/posts/dnsmichi_gitlab-activity-6758714643964805120-9Yyd)（800 ビュー、14 リアクション）
+- [13.7: Merge Request Reviewers を LinkedIn で](https://www.linkedin.com/posts/dnsmichi_gitlab-devops-productivity-activity-6756907989321433088-TRW9)（500 ビュー、16 リアクション）
+- [13.7: CI/CD ジョブログでのレンダリング済み URL を LinkedIn で](https://www.linkedin.com/posts/dnsmichi_everyonecancontribute-activity-6723982784492273664-cwg0)（4,800 ビュー、350 リアクション、12 コメント）
+- [13.6: VS Code GitLab workflow を Twitter で](https://twitter.com/dnsmichi/status/1336362663107063808)（16,000 インプレッション、700 エンゲージメント）
+- [13.5: グループ wiki を Twitter で](https://twitter.com/dnsmichi/status/1319656105249820672)（18,000 インプレッション、600 エンゲージメント）
+- [13.4: Pipeline Efficiency ドキュメントを LinkedIn で](https://www.linkedin.com/posts/dnsmichi_on-a-personal-note-my-first-larger-contribution-activity-6714235003447853056-Kkv4)（2,100 ビュー、49 リアクション）
+- [13.3: KubeCon Kubernetes ティザー](https://twitter.com/dnsmichi/status/1296051268448915456)（18,000 インプレッション、500 エンゲージメント）
+- [13.3: 並列 CI/CD ジョブ実行のマトリックスビルドを LinkedIn で](https://www.linkedin.com/posts/dnsmichi_gitlab-development-cicd-activity-6702933595721351168-c-nV)（2,400 ビュー、49 リアクション）
+- [13.1: 個別の CI/CD ジョブアーティファクトレポートを LinkedIn で](https://www.linkedin.com/posts/dnsmichi_gitlab-cicd-development-activity-6683033972479451136-VNVL)（700 ビュー、16 リアクション）
 
 #### より広いコミュニティの関与を奨励する
 
