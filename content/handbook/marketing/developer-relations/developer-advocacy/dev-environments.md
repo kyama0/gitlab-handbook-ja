@@ -198,7 +198,7 @@ GitLab Duo は、[neovim プラグイン](https://docs.gitlab.com/editor_extensi
 
 ## CLI {#cli}
 
-### GitLab Duo CLI
+### GitLab Duo CLI {#gitlab-duo-cli}
 
 GitLab Duo CLI は、ターミナル上で [GitLab Duo Agent Platform](https://docs.gitlab.com/user/duo_agent_platform/) へのアクセスを提供します。
 

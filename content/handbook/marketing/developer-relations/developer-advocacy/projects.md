@@ -197,7 +197,7 @@ Goal: DevSecOps の効率のために CI/CD コンポーネントで顧客を支
 
 Maintainers: [Michael Friedrich, @dnsmichi](https://about.gitlab.com/company/team/#dnsmichi), [Itzik Gan Baruch, @iganbaruch](https://about.gitlab.com/company/team/#iganbaruch)
 
-### Developer Relations Bot
+### Developer Relations Bot {#developer-relations-bot}
 
 Maintainer: TBD。それまでは [Michael Friedrich](https://gitlab.com/dnsmichi) に尋ねてください。
 
