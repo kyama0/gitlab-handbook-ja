@@ -2,11 +2,11 @@
 title: Zoom AI Companion
 description: セットアップと設定
 upstream_path: /handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-ai/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: 3f9509996a1f405d6126d2081aebad493e4a3d21
+translated_at: "2026-06-08T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2025-07-21T20:50:55+00:00"
+lastmod: 2026-06-08T13:31:46-07:00
 ---
 
 ## 目次
@@ -18,8 +18,10 @@ lastmod: "2025-07-21T20:50:55+00:00"
 ## AI Companion によるミーティングの要約 {#meeting-summary-with-ai-companion}
 
 1. Zoom デスクトップクライアントでミーティングを開始します。
-1. ミーティングコントロールツールバーの `AI Companion` をクリックして、自動「ミーティング要約」機能を有効にします
+1. ミーティングウィンドウの右上付近にある `AI Companion` アイコンをクリックします
+   ![ミーティングウィンドウの右上付近にある AI Companion アイコン](/images/security/corporate/end-user-services/supported-apps/zoom/ai-companion.png)
 1. `Meeting summary` オプションが選択されていることを確認します
+1. `Start AI Companion` をクリックします
 1. 参加者には、AI Companion がアクティブで、ミーティングを分析していることを示す通知が表示されます
 1. ミーティングが終了すると、要約はミーティングのホストおよび当社組織内のミーティング招待者にメールで送信されます
 
