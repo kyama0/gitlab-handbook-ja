@@ -9,22 +9,22 @@ translator: claude
 stale: false
 ---
 
-## <i class="fas fa-bullhorn fa-fw -text-purple"></i> Developer Advocacy ハンドブックへようこそ
+## <i class="fas fa-bullhorn fa-fw -text-purple"></i> Developer Advocacy ハンドブックへようこそ {#welcome-to-the-developer-advocacy-handbook}
 
 ---
 
-## <i class="fas fa-map-signs"></i> QuickLinks
+## <i class="fas fa-map-signs"></i> クイックリンク {#quicklinks}
 
-### Team Workflow
+### チームワークフロー {#team-workflow}
 
-#### Issue テンプレート
+#### Issue テンプレート {#issue-templates}
 
 - [<i class="far fa-edit"></i> New Content Issue](https://go.gitlab.com/new-content-issue)
 - [<i class="far fa-edit"></i> New Event Issue](https://go.gitlab.com/new-event-issue)
 - [<i class="far fa-edit"></i> New Activity Issue](https://go.gitlab.com/new-activity-ssue)
 - [<i class="far fa-edit"></i> CFP Issue Template](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=cfp)
 
-#### Issue ボード
+#### Issue ボード {#issue-boards}
 
 - [<i class="far fa-clipboard"></i> Team Workflow](/handbook/marketing/developer-relations/developer-advocacy/workflow/)
 - [<i class="far fa-clipboard"></i> Content by Assignee](https://gitlab.com/groups/gitlab-com/-/boards/7577841?label_name[]=DA-Type%3A%3AContent&label_name[]=developer-advocacy)
@@ -32,7 +32,7 @@ stale: false
 - [<i class="far fa-clipboard"></i> Content by Types](https://gitlab.com/groups/gitlab-com/-/boards/7577822?label_name[]=DA-Type%3A%3AContent&label_name[]=developer-advocacy)
 - [<i class="far fa-clipboard"></i> Events](https://gitlab.com/groups/gitlab-com/-/boards/7577874?label_name[]=developer-advocacy&label_name[]=DA-Type%3A%3AEvents)
 
-### Team Resources
+### チームリソース {#team-resources}
 
 - [<i class="far fa-calendar-alt"></i> Team Calendar](/handbook/marketing/developer-relations/developer-advocacy/calendar)
 - [<i class="far fa-chart-line"></i> Content Library](/handbook/marketing/developer-relations/developer-advocacy/content/)
@@ -43,7 +43,7 @@ stale: false
 - [<i class="far fa-edit"></i> Content creation](/handbook/marketing/developer-relations/developer-advocacy/#content-creation)
 - [<i class="far fa-folder-open"></i> Team Shared Drive](https://drive.google.com/drive/u/0/folders/0AEUOlCStMBC9Uk9PVA)
 
-### チームと一緒に働きませんか?
+### チームと一緒に働きませんか? {#want-to-work-with-the-team}
 
 - [<i class="fas fa-chalkboard-teacher"></i> Learn about Developer Advocacy](/handbook/marketing/developer-relations/developer-advocacy/learn-developer-advocacy/)
 
@@ -53,11 +53,11 @@ stale: false
 
 ---
 
-## <i class="fa fa-map-marker" aria-hidden="true"></i> ミッション
+## <i class="fa fa-map-marker" aria-hidden="true"></i> ミッション {#mission}
 
 すべての開発者が GitLab でより生産的になれるよう、刺激し、後押しすること。
 
-## <i class="fas fa-map-marked-alt"></i> 戦略
+## <i class="fas fa-map-marked-alt"></i> 戦略 {#strategy}
 
 Developer advocacy は、進化し続ける複雑な領域です。
 
@@ -67,7 +67,7 @@ Developer advocacy は、進化し続ける複雑な領域です。
 - DevSecOps: 私たちの仕事が、開発者だけでなく、動作するコードを本番環境に届けるために DevSecOps ライフサイクルに関わるすべてのチームメンバー（プロダクトマネージャー、ソフトウェアエンジニア、システム/DB 管理者、デザイナー、テストエンジニア、セキュリティエンジニア、運用エンジニア、プラットフォームエンジニア、SRE、開発マネージャーや経営層など）に響くことを目指します。
 - Enterprise: エンタープライズの開発者や DevSecOps プロフェッショナルには、特有の制約とニーズがあります。これらはしばしば「アーキテクチャを捨てて、この新しくてキラキラしたものを使えばいい」と安易に片付けられがちですが、私たちはそうしません。現実世界の課題、レガシーコード、エンタープライズの制約を認識した上で、人々がそうした問題も解決できるよう手助けします。必要に応じて、コンサルティングやサポートの役割に切り替えます。
 
-### KPI
+### KPI {#kpis}
 
 私たちのインパクトを測定するために用いる KPI 指標は以下のとおりです。
 
@@ -76,7 +76,7 @@ Developer advocacy は、進化し続ける複雑な領域です。
 
 これらの KPI や指標が、私たちのチームが行う多様な仕事のインパクトを捉えきれていないことは認識していますが、GitLab 内で私たちのインパクトを効果的に伝えるためには、トレードオフが必要になることもあると理解しています。
 
-### 私たちの戦略に合致するもの
+### 私たちの戦略に合致するもの {#what-fits-in-our-strategy}
 
 機会やサポートのリクエストを検討する際、その仕事を進めるには、次の各質問に「はい」と答えられなければなりません。
 
@@ -90,11 +90,11 @@ Developer advocacy は、進化し続ける複雑な領域です。
 1. その仕事を遂行するのにより適した別のチームを見つける。
 1. その仕事は行うべきではないという合意に至る。
 
-## <i class="fa fa-users" aria-hidden="true"></i> チームメンバーと注力分野
+## <i class="fa fa-users" aria-hidden="true"></i> チームメンバーと注力分野 {#team-members-and-focus-areas}
 
 私たちは [Developer Relations チーム](/handbook/marketing/developer-relations/)の一員です。
 
-| Team member |  Focus areas | Languages | Projects | Technologies | Resources |
+| チームメンバー |  注力分野 | 言語 | プロジェクト | テクノロジー | リソース |
 |-------------|--------------|-----------|----------|--------------|-----------|
 | [Cesar Saavedra](https://gitlab.com/csaavedra1) <br/> Staff Developer Advocate | DevSecOps with a focus on CD, GitOps, Kubernetes, GitLab Flow, Feature flags, GitLab Duo | English, Spanish | [GitLab demos on YouTube](/handbook/marketing/developer-relations/developer-advocacy/content/#youtube-playlists), Analyst relations demos, Competitive Research, CD Overview, Feature Flags, GitLab Flow |  Kubernetes, GitOps, CI/CD, Java, AI |  |
 | [Colleen Lavin](https://gitlab.com/clavin1) <br/> Developer Advocate | Embedded Systems, GitLab Duo, Community Engagement | English | Event Support, Sales Enablement, Demo Videos, Webinars | Javascript, C++, Embedded |  |
@@ -106,7 +106,7 @@ Developer advocacy は、進化し続ける複雑な領域です。
 | [Michael Friedrich](https://gitlab.com/dnsmichi) <br/> Principal Developer Advocate | DevSecOps with a focus on Agentic AI modernization, [AI SME](/handbook/solutions-architects/sa-practices/subject-matter-experts/sme-program/) | English, German | [maintained talks](/handbook/marketing/developer-relations/developer-advocacy/content/#maintained-talks), [event strategy](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics?label_name%5B%5D=DevRel-Events), [competitive research](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/competitive-research/) | DevSecOps, AI, Embedded, Python, C/C++, Rust | [README](/handbook/marketing/readmes/michael-friedrich/), [Talks](https://dnsmichi.com/talks/), [Portfolio](https://dnsmichi.com/portfolio/) |
 | [William Arias](https://gitlab.com/waarias) <br/> Staff Developer Advocate | DevSecOps with a focus on AI/ML, Sec and Data | English, Spanish | Support Ticket Sentiment Analysis, Competitive Research, Analyst relations demos, [End-to-end DevSecOps Platform](/handbook/marketing/developer-relations/developer-advocacy/projects/#organisation-structure) | CI/CD, AI/ML, Kubernetes, Security, Python, C |  |
 
-## <i class="fa fa-tasks" aria-hidden="true"></i> 私たちの活動
+## <i class="fa fa-tasks" aria-hidden="true"></i> 私たちの活動 {#what-we-do}
 
 私たちの Developer Advocate チームは「Three Cs（3 つの C）」で要約できます。
 
@@ -114,63 +114,63 @@ Developer advocacy は、進化し続ける複雑な領域です。
 1. **Customer and community engagement（顧客とコミュニティのエンゲージメント）:** 私たちのチームは、質問・懸念・フィードバックがあるときに、GitLab の顧客や広範な GitLab コミュニティと定期的に関わります。これは、対面・バーチャルのイベント、ウェビナー、ミーティング、そして GitLab Issue、GitLab Forum、Hacker News、その他のソーシャルメディアサイトを通じてオンラインで行われます。
 1. **Consulting（コンサルティング）:** GitLab 内で、私たちのチームはコミュニティの声を代表します。他のチームが顧客やコミュニティに影響を与える変更や意思決定に取り組んでいるとき、私たちは顧客やコミュニティについて彼らに伝え、その利益を擁護し、そうした変更を伝える際に潜在的な影響が明確に理解され対処されるよう努めます。私たちのチームはまた、業界トレンド、新興ツール、ソーシャルメディア戦略、その他のスキルに関する知識を共有し、GitLab の [Cross-functional Optimization](/handbook/values/#cross-functional-optimization) サブバリューに沿って、仲間が目標を達成できるよう支援します。
 
-### Content creation
+### コンテンツ制作 {#content-creation}
 
 私たちは、DevOps、GitLab、リモートワーク、その他私たちが専門知識を持つトピックに関するベストプラクティスについて、開発者を教育するためのコンテンツを構築します。コンテンツには、プレゼンテーション、デモ、ワークショップ、ブログ記事、メディアエンゲージメントが含まれます。コンテンツ制作には、マーケティング内外を問わず、他の GitLab チームと共同制作するアセットも含まれます。
 
 コンテンツのワークフロー、ライブラリ、UTM トラッキングによる配信について詳しくは、[Content](/handbook/marketing/developer-relations/developer-advocacy/content) ハンドブックをお読みください。
 
-### Customer and Community Engagement
+### 顧客とコミュニティのエンゲージメント {#customer-and-community-engagement}
 
 私たちのチームは、GitLab の顧客や広範な GitLab コミュニティと定期的に関わります。
 Developer Advocate チームは、以下のプラットフォームに関する質問と戦略の DRI です。
 
 <!-- This partially duplicates https://handbook.gitlab.com/handbook/marketing/developer-relations/workflows-tools/ - when making updates, ensure to keep it in sync. -->
 
-| Platform | Description | Workflows |
+| プラットフォーム | 説明 | ワークフロー |
 |-------------|-------------|-----------|
 | Discourse | [GitLab Forum](https://forum.gitlab.com) は、質問の投稿や回答、プロジェクトやコードスニペットの共有を行う場です。 | [Forum Workflows](/handbook/marketing/developer-relations/workflows-tools/forum/) |
 | Reddit | [GitLab Subreddit r/gitlab](https://www.reddit.com/r/gitlab) は、質問の投稿や、GitLab と関連するワークショップやツールの興味深いユースケースを共有する場です。 | [r/gitlab Workflows](/handbook/marketing/developer-relations/workflows-tools/reddit/) |
 | Discord | [GitLab Community Discord](https://discord.gg/gitlab) は、コミュニティとつながり、ペアコーディングセッションやライブ配信に参加し、GitLab とコントリビューションに関するあらゆることを議論する場です。 | [Community Discord Workflows](/handbook/marketing/developer-relations/workflows-tools/discord/) |
 | Common Room | コミュニティエンゲージメントから得られたインサイトを集約・レビューするために [Common Room](https://www.commonroom.io) を使用しています。 | [Common Room Workflows](/handbook/marketing/developer-relations/workflows-tools/common-room/) |
 
-### Consulting
+### コンサルティング {#consulting}
 
 Developer Advocate は、コンサルタントおよびサブジェクトマターエキスパート（SME）として、その専門知識と経験を活かし、プロダクト機能、新しい SKU、その他のトピックについてチームや顧客を支援します。
 
 コンサルティングのリクエスト、意思決定マトリクス、GitLab Duo / AI 導入の例について詳しくは、[Consultancy](/handbook/marketing/developer-relations/developer-advocacy/consultancy/) ハンドブックをお読みください。
 
-### その他の活動
+### その他の活動 {#other-activities}
 
-#### Community Response
+#### コミュニティレスポンス {#community-response}
 
 Developer Advocate チームのコミュニティへの理解と GitLab に関する幅広い知識を踏まえ、私たちはコミュニティメンバーの緊急かつ重要な懸念に対処するための介入が必要な状況への対応に関与します。私たちは、[こうした状況に対処する](/handbook/marketing/developer-relations/developer-advocacy/community-response/)方法について文書化されたプロセスを持っています。
 
-#### Event support
+#### イベントサポート {#event-support}
 
 Developer Advocate チームは、イベントの支援において重要な役割を果たします。私たちは [Corporate Event Marketing](/handbook/marketing/integrated-marketing/corporate-events/) と緊密に連携し、企業主催イベントとサードパーティスポンサーイベントの両方に対して、戦略的なコンテンツと支援を提供します。この協働により、さまざまな集まりの成功とスムーズな実施が確保されます。詳しくは、[Events ページ](/handbook/marketing/developer-relations/events/)を参照してください。
 
 私たちはまた、チームメンバーが地域のテックイベントやミートアップでの講演機会に備えるのを手助けします。そうしたイベントの準備に手助けが必要な場合は、[#dev-advocacy-team](https://app.slack.com/client/T02592416/CMELFQS4B) Slack チャンネルで連絡するか、[Developer Advocate Request テンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?description_template=developer-advocate-request)を使って Issue を作成してください。
 
-#### Release Advocacy
+#### リリースアドボカシー {#release-advocacy}
 
 Hacker News におけるリリース投稿のこれまでの実績を踏まえ、Developer Advocate は常に私たちの[月次リリース](/handbook/marketing/developer-relations/developer-advocacy/social-media/#release-evangelism)をプロモーションし、[リリース当日のコミュニティレスポンス](/handbook/marketing/developer-relations/developer-advocacy/hacker-news/#release-days)に関与する準備を整えておくべきです。
 
-#### Social media
+#### ソーシャルメディア {#social-media}
 
 私たちはソーシャルメディアでソートリーダーシップを構築し、[コンテンツを配信](/handbook/marketing/developer-relations/developer-advocacy/content/#content-distribution)します。私たちの戦略について、そしてあなた自身が GitLab のアドボケイトになる方法について詳しくは、[Developer Advocacy on Social Media](/handbook/marketing/developer-relations/developer-advocacy/social-media/) を参照してください。
 
-#### Spokespersons
+#### スポークスパーソン {#spokespersons}
 
 Developer Advocate は、それぞれの注力分野におけるサブジェクトマターエキスパート（SME）であり、[Corporate Communications チーム](/handbook/marketing/corporate-communications/)と協働して、インタビュー、ポッドキャスト、署名記事などの形でメディア露出を提供します。Developer Advocate は [GitLab のスポークスパーソン](/handbook/marketing/corporate-communications/#spokesperson-criteria)であり、[Corporate Communications チーム](/handbook/marketing/corporate-communications/)が定める関連トレーニングを受講する必要があります。
 
-#### Projects
+#### プロジェクト {#projects}
 
 私たちのチームは、コンテンツ制作（デモ、録画、ブログ記事、ワークショップ、講演など）のための GitLab のユースケースを提供し、技術的なコンセプトやリサーチを顧客に示すのを助け、チームのプロセスを自動化するために、プロジェクトを維持しています。私たちは[パブリック・バイ・デフォルト](/handbook/values/#public-by-default)で働いており、誰もが学び、コントリビュートできるようにしています。これらすべてのプロジェクトの一覧については、[Developer Advocate Projects](/handbook/marketing/developer-relations/developer-advocacy/projects/) を参照してください。
 
-## <i class="fa fa-code-branch" aria-hidden="true"></i> 私たちの働き方
+## <i class="fa fa-code-branch" aria-hidden="true"></i> 私たちの働き方 {#how-we-work}
 
-### Slack で私たちを見つける
+### Slack で私たちを見つける {#find-us-on-slack}
 
 GitLab のチームメンバーは、[#dev-advocacy-team](https://app.slack.com/client/T02592416/CMELFQS4B) Slack チャンネルでいつでも私たちに連絡できます。このチャンネルでは、お互いに、そして広範なチームと、アップデート、アイデア、考えを共有しています。
 
@@ -180,7 +180,7 @@ GitLab のチームメンバーは、[#dev-advocacy-team](https://app.slack.com/
 
 コミュニティのインサイトは、Forum、Reddit、Hacker News を含めて [#community-pulse](https://gitlab.enterprise.slack.com/archives/C0AJW90RYV7) で自動化されています。
 
-### チームのタッチポイント
+### チームのタッチポイント {#team-touchpoints}
 
 1. Dev Advocacy team meeting（毎週）- アジェンダ: GDrive で `Developer Advocacy Weekly` を検索してください。
 1. Dev Advocacy Showcase（毎月）- アジェンダ: GDrive で `Developer Advocacy Showcase [monthly]` を検索してください。
@@ -189,13 +189,13 @@ GitLab のチームメンバーは、[#dev-advocacy-team](https://app.slack.com/
     - 月曜日（週末の出来事、その週の予定）
     - 木曜日（成果、考え、ブロッカーなどを共有するリマインダー）
 
-### レポーティング
+### レポーティング {#reporting}
 
 私たちは、透明性と効率性を確保しながら、文書化された[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/)を通じて仕事を整理しています。私たちの成果レポーティングのほとんどは、トリアージボットとメトリクス収集によって自動化されています。
 
 私たちは、Marketing Exec Scorecard で主要指標についてレポートし、Marketing Leadership Team（MLT）Metrics の週次ミーティングで指標に影響を与えている要因について議論します。
 
-## <i class="fa fa-calendar" aria-hidden="true"></i> カレンダー
+## <i class="fa fa-calendar" aria-hidden="true"></i> カレンダー {#calendar}
 
 Developer Advocate カレンダーは、講演予定、重要なイベント、CFP のタイムライン、その他の日程に関するインサイトを提供します。詳しくは、私たちの [CFP ハンドブック](/handbook/marketing/developer-relations/developer-advocacy/cfps/)をご覧ください。
 

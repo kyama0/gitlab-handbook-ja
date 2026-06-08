@@ -18,7 +18,7 @@ stale: false
 
 すべてのプロジェクトは、トップレベルのサブグループに整理されています。トップレベルの名前空間 `gitlab.com/gitlab-da` には、プロジェクトを置くことは許可されていません。
 
-| Group        | DRI | Description  |
+| グループ        | DRI | 説明  |
 |--------------|-----|--------------|
 | [demo-environments](https://gitlab.com/gitlab-da) | all | チームが維持する長期デモ環境 |
 | [conferences](https://gitlab.com/gitlab-da/conferences) | all / @fjdiaz | [カンファレンス、イベント、ミートアップなど](/handbook/marketing/developer-relations/events/#event-booth-training)でチームメンバーが使うパブリックデモのためのグループ  |
