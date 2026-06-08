@@ -23,7 +23,7 @@ stale: false
 
 {{< engineering/design-document-header >}}
 
-## Summary
+## 概要 {#summary}
 
 このドキュメントは、GitLab のワークアイテムに対して[設定可能なワークアイテムタイプ](https://gitlab.com/groups/gitlab-org/-/epics/9365)を実装するための私たちのアプローチを概説します。
 
@@ -33,7 +33,7 @@ stale: false
 
 タイプごとのウィジェットカスタマイズは、後続のイテレーションで予定されています。初回リリースでは、カスタムタイプはシステム定義の `issue` タイプと同じウィジェットセットを使用します。
 
-## Glossary
+## 用語集 {#glossary}
 
 このドキュメント全体で使用される語彙のリファレンスです。最初に読むときは、[Customizing work item types](#customizing-work-item-types) まで読み飛ばしてください。用語は各セクションでの初出時にここへリンクされています。
 
