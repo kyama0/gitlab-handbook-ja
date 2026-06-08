@@ -75,10 +75,10 @@ AI Catalog は CI/CD Catalog とパターンや関心事を共有しますが、
 
 次の表は、各アイテムタイプがどのようにオーサリング、クエリ、ランタイムでの読み取りが行われるかをまとめています。
 
-| Item type | Definition source | Queryable metadata | Definition read from |
+| アイテムタイプ | 定義ソース | クエリ可能なメタデータ | 定義の読み取り元 |
 | --- | --- | --- | --- |
-| **Custom items**（ユーザー作成、プロジェクトが所有） | git リポジトリ内の YAML ファイル | PostgreSQL（変更なし） | Object Storage（変更なし） |
-| **Foundational items**（GitLab がメンテナンス、組織が所有） | フィクスチャ（変更なし） | PostgreSQL（変更なし） | In-memory フィクスチャ（一部変更なし） |
+| **カスタムアイテム**（ユーザー作成、プロジェクトが所有） | git リポジトリ内の YAML ファイル | PostgreSQL（変更なし） | Object Storage（変更なし） |
+| **基盤アイテム**（GitLab がメンテナンス、組織が所有） | フィクスチャ（変更なし） | PostgreSQL（変更なし） | In-memory フィクスチャ（一部変更なし） |
 
 ### リポジトリへ移動するもの {#what-moves-to-repositories}
 
@@ -497,7 +497,7 @@ sequenceDiagram
 
 公開時には、PostgreSQL レコードのデータがマッピングされます。
 
-| `ai_catalog_items` column | Source |
+| `ai_catalog_items` のカラム | ソース |
 | --- | --- |
 | `name` | YAML 定義ファイル |
 | `description` | YAML 定義ファイル |
@@ -508,7 +508,7 @@ sequenceDiagram
 | `internal_id` | YAML 定義ファイル（`id` プロパティ）。定義 YAML をレコードにマッピングするために使用される安定した識別子であり、アイテムとプロジェクトに一意にスコープされる。 |
 | `verification_level` | プロジェクトの namespace の検証ステータス |
 
-| `ai_catalog_item_versions` column | Source |
+| `ai_catalog_item_versions` のカラム | ソース |
 | --- | --- |
 | `version` | YAML 定義ファイル（オプション、現在のバージョンより大きい有効な semver である必要がある）。省略された場合は最新バージョンからのマイナーバンプがデフォルト。 |
 | `release_date` | lifecycle が `released` になったときの公開イベントのタイムスタンプ |
@@ -613,7 +613,7 @@ mcp_servers:
 
 リポジトリベースのアイテムをサポートするための新しいカラムを追加します。
 
-| Change | Detail |
+| 変更 | 詳細 |
 | --- | --- |
 | 新規カラム: `project_settings.ai_catalog_publishing_enabled` | Boolean、デフォルト `false`。AI Catalog への公開のための[プロジェクトレベルのオプトイン](#why-a-project-setting)。 |
 | 新規カラム: `ai_catalog_items.source` | Enum: `database`、`repository`、`fixture`。アイテムの定義がどこに由来し、どのようにオーサリングされるかを識別する。 |
