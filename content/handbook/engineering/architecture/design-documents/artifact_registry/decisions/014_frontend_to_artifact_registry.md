@@ -16,7 +16,7 @@ stale: false
 
 ## ステータス {#status}
 
-**Proposed.**
+**提案中。**
 
 ## コンテキスト {#context}
 
@@ -106,12 +106,12 @@ Rails 側の認証情報の取得は [auth 合意](../agreements/auth.md) に従
 
 Rails が `/-/artifact_registry/proxy/graphql` を公開し、生の GraphQL ボディを Artifact Registry に転送し、Rails 署名の JWT を付与します。CustomersDot は `ee/app/controllers/customers_dot/proxy_controller.rb` でこの形を使用しています。
 
-**Pros:**
+**メリット:**
 
 - Rails のコードが少なく、リゾルバーごとの作業がありません。
 - Artifact Registry のスキーマが直接流れます。新しいフィールドは Rails の変更なしにフロントエンドに表示されます。Artifact Registry の追加のみのコミットメントと、その速いリリースペースにより、スキーマのドリフトがブラウザに及ばないようにします。
 
-**Cons:**
+**デメリット:**
 
 - クロスサービスのジョインがフロントエンドに移ります。Artifact Registry は、基となるユーザー、プロジェクト、コミットのデータではなく GitLab の識別子を保存します。
 - ユーザーに帰属するビューごとに 2 つの逐次的なラウンドトリップが発生し、加えて多くの Vue コンポーネント間でマージユーティリティが重複します。
@@ -119,7 +119,7 @@ Rails が `/-/artifact_registry/proxy/graphql` を公開し、生の GraphQL ボ
 - フロントエンドに 2 つ目の GraphQL エンドポイントを導入します。
 - Artifact Registry が追加の API（GraphQL）を実装する必要があります。これは Artifact Registry 側で行う追加の作業です。
 
-**Why rejected:**
+**却下理由:**
 
 - クロスサービスのジョインが、クリーンな実装パスのないフロントエンドの問題になります。ユーザーに帰属するすべてのビューに、追加の Rails ラウンドトリップと FE 側のマージユーティリティのコストがかかります。
 - Vue コンポーネント間でのマージロジックの重複は、フロントエンドのサーフェス面積に対してスケールが悪くなります。
@@ -128,20 +128,20 @@ Rails が `/-/artifact_registry/proxy/graphql` を公開し、生の GraphQL ボ
 
 Rails はスキーマスティッチングゲートウェイを使用して、`GitlabSchema` と Artifact Registry の GraphQL スキーマを `/api/graphql` で統一されたスーパーグラフに合成します。スティッチング gem は Rails 内部で動作し、Artifact Registry 型へのリクエストは HTTP 経由で Go サービスにルーティングされ、その他のクエリは `GitlabSchema` のままになります。`graphql-stitching` gem を使用した POC 実装が [gitlab-org/gitlab!227224](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/227224) に存在します。
 
-**Pros:**
+**メリット:**
 
 - フロントエンドにとって 1 つの GraphQL エンドポイント（選択したパターンと同じ）です。
 - Artifact Registry のスキーマが直接利用されます。Rails は Artifact Registry のフィールドごとにリゾルバーを必要とせず、ゲートウェイがスキーマを再読み込みすれば、新しいフィールドは Rails の MR なしにフロントエンドに届きます。
 - クロスサービスのジョインが宣言的に表現されます。Artifact Registry の SDL がクロスサービス参照（たとえば `Repository.createdBy: User`）を宣言し、Rails は `id` で `User` を解決できると宣言し、スティッチング gem がクロスサービスのフェッチとバッチ化を自動的に計画します。
 
-**Cons:**
+**デメリット:**
 
 - Artifact Registry が追加の API（GraphQL）を実装する必要があります。これは Artifact Registry 側で行う追加の作業です。
 - モノリスに `graphql-stitching` gem とスキーマ合成パイプラインを追加します。
 - Rails は Artifact Registry の SDL をモノリスリポジトリに同期する（スキーマ変更のたびにクロスリポジトリの調整）か、起動時に Artifact Registry をイントロスペクトする（Rails の起動とその公開 GraphQL サーフェスが Artifact Registry のデプロイペースに結びつく）かのいずれかが必要です。
 - Artifact Registry が参照する Rails のエンティティ型ごとに、Rails 側のバウンダリリゾルバーと Artifact Registry 側の `@key` 宣言が必要です。
 
-**Why rejected:**
+**却下理由:**
 
 - リゾルバーパターンに対する明確な優位性なしにゲートウェイインフラを追加します。
 - Rails 側のスキーマ統合は、クロスリポジトリの SDL 同期か、Artifact Registry への起動時依存のいずれかを追加します。
@@ -150,18 +150,18 @@ Rails はスキーマスティッチングゲートウェイを使用して、`G
 
 フロントエンドが Artifact Registry とクロスオリジンでやり取りし、自身の認証情報を Artifact Registry に運びます。モノリスに存在する 2 つのバリアントが検討されました。アイデンティティトークンのベアラー認証情報（フロントエンドがアイデンティティトークンを取得し、メモリに保持し、`Authorization: Bearer` として直接 Artifact Registry に送信する）と、暗号化されたセッションクッキー（Rails が `app/controllers/concerns/kas_cookie.rb` の `KasCookie` と同様に、Artifact Registry のサブドメインにスコープされた暗号化クッキーを設定し、ブラウザがクロスオリジンリクエストで送信する）です。
 
-**Pros:**
+**メリット:**
 
 - Artifact Registry がフロントエンドを直接サーブし、リゾルバーごとの Rails 作業がありません。
 
-**Cons:**
+**デメリット:**
 
 - クロスサービスのジョインは依然としてフロントエンドに落ちます（Alternative 1 と同じ形）。
 - ブラウザがオリジンを越えて Artifact Registry にアクセスするため、Artifact Registry はモノリスのオリジンに対して CORS を提供する必要があります。アイデンティティトークンのバリアントは `Authorization` を伴うリクエストにプリフライトを必要とします。クッキーのバリアントは `Access-Control-Allow-Credentials: true`、明示的なオリジンの許可リスト（ワイルドカード不可）、`SameSite=None; Secure` クッキーを必要とします。
 - アイデンティティトークンのバリアント: 認証情報のライフサイクルが JavaScript に移ります（取得、メモリ内保存、有効期限の処理、401 時のリフレッシュ、SPA ナビゲーション）。また、キャッシュミス時のダブル交換フロー（FE → Artifact Registry → Rails → Artifact Registry）は、単一の FE → Rails → Artifact Registry 呼び出しよりも遅くなります。
 - クッキーのバリアント: KAS は、1 回のハンドシェイクが接続のライフタイム全体にわたって償却される長寿命の WebSocket のためにこのパターンを使用します。Artifact Registry の交換は多数の短命な REST 呼び出しであり、それぞれがクッキーの再検証を必要とします。Rails のクッキー暗号化とキーローテーションを Go で再現することは、[auth 合意](../agreements/auth.md) における JWT ベースの認証の方向性と衝突します。Artifact Registry の認可モデルは、ロール強制を伴うスコープ付き JWT を中心に構築されています。クッキー認証では、Artifact Registry 内に並行する認可パスが必要になります。クッキーのドメインは、`gitlab.com` と `artifact-registry.gitlab.com` の両方を含む親にスコープされる必要があり、場合によっては Self-Managed のインスタンスとも連携する必要があります。
 
-**Why rejected:**
+**却下理由:**
 
 - クロスサービスのジョインが未解決のままです。
 - 各バリアントは、ブラウザ側の認証情報サーフェス（JS が保持するアイデンティティトークン、または親スコープの暗号化クッキー）と、Artifact Registry 内の並行する認証パスを追加します。
@@ -170,17 +170,17 @@ Rails はスキーマスティッチングゲートウェイを使用して、`G
 
 Artifact Registry が iframe として UI をサーブし、`app/assets/javascripts/observability/utils/auth_manager.js` と同様に、ロード時に `postMessage` を通じて認証情報を渡します。
 
-**Pros:**
+**メリット:**
 
 - Artifact Registry サービスが自身の UI 全体を所有できます。
 - Rails のインスタンスバージョンを Artifact Registry のバージョンから切り離します。UI を伴う新しい Artifact Registry のバックエンド機能は、Rails のリリースを待つことなく、Artifact Registry が提供されるとすぐに SaaS、Dedicated、Self-Managed のセットアップに届きます。
 
-**Cons:**
+**デメリット:**
 
 - iframe は Artifact Registry のオリジンで動作し、Rails への直接的なパスを持ちません（CORS に加えてセッション共有なし）。クロスサービスのジョインは、ユーザー、プロジェクト、コミットのデータを得るために親への `postMessage` リクエストを通じて行うか、Artifact Registry に保存して Rails と同期し続けるかのいずれかが必要です。
 - iframe 通信は、GitLab モノリスがシェル内ビューに期待するディープリンク、ブラウザシェルのナビゲーション、アクセシビリティのパターンを壊します。
 
-**Why rejected:**
+**却下理由:**
 
 - クロスサービスのジョインと CORS。`postMessage` のパスは Alternative 3 と同じコストがかかります。保存と同期の代替案は、PII の重複、同期インフラ、GDPR の削除に関する複雑さを追加します。
 - iframe 固有の UX の制限が、すべてのシェル内ビューに適用されます。

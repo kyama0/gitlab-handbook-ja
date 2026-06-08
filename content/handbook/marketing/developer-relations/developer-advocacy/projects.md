@@ -1,5 +1,5 @@
 ---
-title: "Projects"
+title: "プロジェクト"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/projects/
 upstream_sha: 3f9509996a1f405d6126d2081aebad493e4a3d21
 lastmod: 2026-06-08T13:31:46-07:00

@@ -534,7 +534,7 @@ KPI:
 
 寄せられた質問への対応や、より多くの専門家の関与については、Developer Advocate が [#dev-advocacy-team](https://gitlab.slack.com/archives/CMELFQS4B) で Slack で支援できます。
 
-#### Release Management
+#### リリースマネジメント
 
 [GitLab 12.9](https://about.gitlab.com/releases/2020/03/22/gitlab-12-9-released/) のツイート例:
 
@@ -544,7 +544,7 @@ KPI:
 - ユーザー名の前に @ を付けて @gitlab にメンションします
 - ハッシュタグ `#gitlab #releasemanagement` を使います
 
-#### Package
+#### パッケージ
 
 [レジストリのオープンソース化](https://about.gitlab.com/blog/2020/03/30/new-features-to-core/)のツイート例:
 

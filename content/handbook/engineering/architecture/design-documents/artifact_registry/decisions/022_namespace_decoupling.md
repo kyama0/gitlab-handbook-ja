@@ -1,5 +1,5 @@
 ---
-title: "Artifact Registry ADR 022: Namespace Decoupling"
+title: "Artifact Registry ADR 022: ネームスペースデカップリング"
 owning-stage: "~devops::package"
 description: "不変なスラグと仮想アンカータプルを持つ内部 namespaces エンティティを導入し、Artifact Registry を Rails の内部識別子から切り離す提案"
 toc_hide: true
