@@ -123,4 +123,3 @@ Database Excellence には[週次トリアージ Issue](https://gitlab.com/gitla
 ## 計画プロセス {#planning-process}
 
 TBA
-</content>
