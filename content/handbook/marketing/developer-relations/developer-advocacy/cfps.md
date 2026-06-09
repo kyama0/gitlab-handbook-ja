@@ -1,11 +1,11 @@
 ---
 title: "デベロッパーアドボカシー CFP"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/cfps/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: c6f416c14ee9f53cb671d49ff11a9671c68d9326
+translated_at: "2026-06-09T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2025-09-05T15:04:46+02:00"
+lastmod: "2026-06-08T11:30:44+02:00"
 ---
 
 ## CFP リソース

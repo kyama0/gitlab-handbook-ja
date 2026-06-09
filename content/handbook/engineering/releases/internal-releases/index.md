@@ -1,21 +1,28 @@
 ---
 title: "内部リリース"
 upstream_path: /handbook/engineering/releases/internal-releases/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: c6f416c14ee9f53cb671d49ff11a9671c68d9326
+translated_at: "2026-06-09T00:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-04-06T08:51:22-06:00"
+lastmod: "2026-06-09T09:11:01-06:00"
 ---
 
 ## 内部リリースポリシー
+
+> [!IMPORTANT]
+> すべての内部リリースには、申告された[インシデント](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)
+> とリリース後の[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)が**必要です**。**これらは省略できません**。
+>
+> 重大なバグ修正に対応する内部リリースには、**さらに**影響を受ける領域のエンジニアリングチームが主導する
+> [Feature Change Lock (FCL)](/handbook/engineering/#feature-change-locks) が**必要です**。
 
 内部リリースは[パッチリリース](/handbook/engineering/releases/patch-releases/#patch-release-policy)と同じポリシー要件に従います。重大なバグ修正とセキュリティパッチのみに限定されています。
 内部リリースには、新機能、フィーチャーフラグの変更、未完成の作業は含まれず、テスト目的に使用することもできません。
 
 所有権、例外プロセス、エスカレーションパスを含む一般的なリリースポリシーのフレームワークについては、[リリースポリシー](/handbook/engineering/releases/#release-policy)セクションを参照してください。
 
-内部リリースがセキュリティインシデントの結果でない場合、[インシデントを申告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)する必要があります。インシデントには「計画的なアクティビティ」とマークし、アウトオブバンドパッチの必要性を考慮してS1またはS2の重大度を設定してください。GitLabプラットフォームの信頼性と可用性を維持するために、[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)と[FCL](/handbook/engineering/#feature-change-locks)の完了は必須です。
+内部リリースがセキュリティインシデントの結果でない場合、[インシデントを申告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)する必要があります。インシデントには「アウトオブバンド」とマークし、内部リリースの必要性を考慮してS1またはS2の重大度を設定してください。
 
 ## 内部リリースの概要
 
