@@ -6002,11 +6002,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-11T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "db985b6e54c59a0da38a1a4dc6228071f143fce0bdd2a32b1e8374fbfeecc756",
-      "upstream_committed_at": "2026-05-19T11:55:14+02:00"
+      "input_hash": "4bb3af8e6115b8c0c9dacaabb81603786e2261a8dbaeb222392cd1467022b86a",
+      "upstream_committed_at": "2026-06-08T16:47:20+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/006_technology_stack.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/006_technology_stack.md",
@@ -6026,11 +6026,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1e9be247e39162704fe2bb9b88071248897bf6d3e199810794234d9455081349",
-      "upstream_committed_at": "2026-04-22T13:22:18+01:00"
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-11T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "3ad6d436f86c9f3e9d332f6dff43bac23a349484f077f62595206a9577ad8973",
+      "upstream_committed_at": "2026-06-08T16:47:20+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design.md",
@@ -6042,11 +6042,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "cd5d8da62497bdd69905248d54c7e4748524146c1533542aaa0add70aa6a4640",
-      "upstream_committed_at": "2026-04-01T09:04:50+02:00"
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-11T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "e8fd7b9fd3380e2b01b2486d9d469f2e390ee62d01fe2cdc750ccafef5a31cde",
+      "upstream_committed_at": "2026-06-09T19:10:50+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/011_data_reconciliation.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/011_data_reconciliation.md",
@@ -6058,19 +6058,19 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection.md",
-      "upstream_sha": "2dd9d315aff1d685e3f27ab47a69d8faa01d31fa",
-      "translated_at": "2026-05-18T18:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-11T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "8fb44d7e6eb79d98cc5ebc634e7968ac885a4059be8e5705c83625deaff45249",
-      "upstream_committed_at": "2026-05-18T13:31:14+02:00"
+      "input_hash": "9c33870d31df6da9b41be721a31a299e5ba0568bc8d995da8cd6ed85f14924d6",
+      "upstream_committed_at": "2026-06-10T09:52:28+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "349ae9aebf42aabc4b7fe092da3a2905f8560d167427538bd1d7b480e9b0f1a8",
-      "upstream_committed_at": "2026-03-26T11:26:28+00:00"
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-11T12:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9ad011b8dea609feedadf96d58e64712e49f8dd8e85fa8bb8d5e2403c3ff447d",
+      "upstream_committed_at": "2026-06-11T10:43:33+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md",
