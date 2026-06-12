@@ -4114,11 +4114,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab1.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab1.md",
-      "upstream_sha": "6329e70e21b29c3cf88be90bd4abee6489b39003",
-      "translated_at": "2026-05-21T11:45:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T14:06:50Z",
       "model": "claude-opus-4-7",
-      "input_hash": "6a14f4c085c8f6e848cec774b15f6c725107f0962e62bda74bdb253209ef1711",
-      "upstream_committed_at": "2026-05-20T13:54:32+01:00"
+      "input_hash": "9d1411ea2d25a7655cc5f836b979a627930859ff89411883cbce4ae909953a50",
+      "upstream_committed_at": "2026-06-09T10:04:35-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab2.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab2.md",
@@ -4130,11 +4130,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab3.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab3.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T14:06:50Z",
       "model": "claude-opus-4-7",
-      "input_hash": "bf776f839339d1a81e3bd409182ec1a52e0a9aa4c1b0afff8810a76e4d630eea",
-      "upstream_committed_at": "2026-05-20T13:54:32+01:00"
+      "input_hash": "7d310b7874c1e76ed46485127bb125cbdede8d3a68a0b994d1dc5ae29a0a1fd5",
+      "upstream_committed_at": "2026-06-09T10:04:35-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab4.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab4.md",
@@ -4154,11 +4154,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab6.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab6.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T04:33:12Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "0f67fdc47d86d27ecdb67161495210fd3d48ac12527ba8cbbfa21f2a46db235e",
-      "upstream_committed_at": "2026-04-06T16:04:29-04:00"
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T14:06:50Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ba13aa09c7fafa28d2efdd9956b60c3beaffc579d14631cf2bdea8685a226f84",
+      "upstream_committed_at": "2026-06-09T10:04:35-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandson.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandson.md",
