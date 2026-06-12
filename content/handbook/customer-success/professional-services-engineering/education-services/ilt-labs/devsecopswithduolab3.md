@@ -1,6 +1,6 @@
 ---
-title: "GitLab Duo の原則 - ハンズオンラボ: イシューとマージリクエストを扱う"
-description: "このハンズオンガイドでは、GitLab Duo を使ってイシューとマージリクエストを作成する方法を順を追って説明します。"
+title: "GitLab Duo の原則 - ハンズオンラボ: Issue とマージリクエストを扱う"
+description: "このハンズオンガイドでは、GitLab Duo を使って Issue とマージリクエストを作成する方法を順を追って説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab3/
 upstream_sha: 5b642767a4478d09eeedd1689a94c1b164788f25
 lastmod: 2026-06-09T10:04:35-04:00
@@ -14,9 +14,9 @@ model: claude-opus-4-7
 
 ## 目的 {#objectives}
 
-GitLab Duo はコード生成にとどまりません。GitLab Duo は DevSecOps ライフサイクルのあらゆる段階であなたを支援できます。このラボでは、GitLab Duo がプロジェクト内のイシューとマージリクエストをどのように扱えるかを確認します。
+GitLab Duo はコード生成にとどまりません。GitLab Duo は DevSecOps ライフサイクルのあらゆる段階であなたを支援できます。このラボでは、GitLab Duo がプロジェクト内の Issue とマージリクエストをどのように扱えるかを確認します。
 
-## タスク A. GitLab Duo でイシューを作成する {#task-a-creating-an-issue-with-gitlab-duo}
+## タスク A. GitLab Duo で Issue を作成する {#task-a-creating-an-issue-with-gitlab-duo}
 
 1. *Duo Demo* プロジェクトに移動します。
 
@@ -28,9 +28,9 @@ GitLab Duo はコード生成にとどまりません。GitLab Duo は DevSecOps
 
 1. タイトルに `Update hello world visuals` と入力します。
 
-1. 説明は今のところ空白のままにして、**Create issue** を選択してイシューを作成します。
+1. 説明は今のところ空白のままにして、**Create issue** を選択して Issue を作成します。
 
-1. 説明文を Duo に手伝ってもらいましょう。Issue 一覧から作成したばかりのイシューを選択して開きます。チャットウィンドウで、次のプロンプトを入力します: `Please generate me a description for this issue. We want to make our "hello world" application more visually appealing for the end user. We want to incorporate the Go Figure module into our application to print out more exciting text.`
+1. 説明文を Duo に手伝ってもらいましょう。Issue 一覧から作成したばかりの Issue を選択して開きます。チャットウィンドウで、次のプロンプトを入力します: `Please generate me a description for this issue. We want to make our "hello world" application more visually appealing for the end user. We want to incorporate the Go Figure module into our application to print out more exciting text.`
 
 1. **Submit** を選択します。
 
@@ -44,13 +44,13 @@ GitLab Duo はコード生成にとどまりません。GitLab Duo は DevSecOps
    The Go Figure module allows printing text in different styles and formats. Integrating this module into our "hello world" code will let us customize how the message is displayed, such as changing fonts, colors, effects and more. This will make our application stand out more and be more enjoyable for end users to interact with.
    ```
 
-1. この応答をコピーし、**Edit** ボタンを選択して AI が生成した説明を Description フィールドに貼り付けることで、イシューの説明として追加します。
+1. この応答をコピーし、**Edit** ボタンを選択して AI が生成した説明を Description フィールドに貼り付けることで、Issue の説明として追加します。
 
-1. イシューを自分自身に割り当て、**Save changes** を選択します。
+1. Issue を自分自身に割り当て、**Save changes** を選択します。
 
 ## タスク B. マージリクエストを作成する {#task-b-creating-a-merge-request}
 
-1. 先ほど作成したイシューから、**Create merge request** を選択します。
+1. 先ほど作成した Issue から、**Create merge request** を選択します。
 
 1. ソースブランチ名はそのままにして、**Create merge request** を選択します。
 

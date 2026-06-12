@@ -1,5 +1,5 @@
 ---
-title: "Operating Principles"
+title: "オペレーティング原則"
 description: "GitLab の 3 つの運営原則—Speed with Quality、Ownership Mindset、Customer Outcomes—は、AI 時代における私たちの働き方を定義します。"
 status: active
 canonical_path: "/handbook/company/operating-principles/"
@@ -18,7 +18,7 @@ lastmod: "2026-06-10T11:10:58-04:00"
 
 ---
 
-## Speed with Quality {#speed-with-quality}
+## 品質を伴うスピード {#speed-with-quality}
 
 _素早く動き、もっと速く学ぶ。_
 
@@ -35,7 +35,7 @@ _素早く動き、もっと速く学ぶ。_
 
 ---
 
-## Ownership Mindset {#ownership-mindset}
+## オーナーシップマインドセット {#ownership-mindset}
 
 _自分のことだから行動する。_
 
@@ -51,7 +51,7 @@ _自分のことだから行動する。_
 
 ---
 
-## Customer Outcomes {#customer-outcomes}
+## 顧客の成果 {#customer-outcomes}
 
 _彼らが勝つとき、私たちは勝つ。_
 
@@ -67,7 +67,7 @@ _彼らが勝つとき、私たちは勝つ。_
 
 ---
 
-## Culture of Excellence {#culture-of-excellence}
+## 卓越性の文化 {#culture-of-excellence}
 
 3 つの原則はすべて、すべてのチームメンバーが守ることを期待する卓越の文化（culture of excellence）の上に築かれています。
 

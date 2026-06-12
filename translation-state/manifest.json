@@ -5859,7 +5859,7 @@
     "content/handbook/engineering/architecture/design-documents/ai_catalog_repository_authoring/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/ai_catalog_repository_authoring/_index.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-12T12:10:02Z",
+      "translated_at": "2026-06-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "05b1d82df0951fecc8d4ede681f20851c2517320bb17fca17c856bcd85a29368",
       "upstream_committed_at": "2026-06-08T13:25:23+12:00"
@@ -5955,7 +5955,7 @@
     "content/handbook/engineering/architecture/design-documents/artifact_registry/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/_index.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-11T00:00:00Z",
+      "translated_at": "2026-06-12T14:11:12Z",
       "model": "claude-opus-4-7",
       "input_hash": "06f7713d34b6d96872172b54ca85336197894a6ba543f49f7e85ad87545a9b89",
       "upstream_committed_at": "2026-06-09T19:10:50+01:00"
@@ -6019,7 +6019,7 @@
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-11T12:00:00Z",
+      "translated_at": "2026-06-12T14:11:12Z",
       "model": "claude-opus-4-7",
       "input_hash": "4bb3af8e6115b8c0c9dacaabb81603786e2261a8dbaeb222392cd1467022b86a",
       "upstream_committed_at": "2026-06-08T16:47:20+01:00"
@@ -6043,7 +6043,7 @@
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-11T12:00:00Z",
+      "translated_at": "2026-06-12T14:11:12Z",
       "model": "claude-opus-4-7",
       "input_hash": "3ad6d436f86c9f3e9d332f6dff43bac23a349484f077f62595206a9577ad8973",
       "upstream_committed_at": "2026-06-08T16:47:20+01:00"
