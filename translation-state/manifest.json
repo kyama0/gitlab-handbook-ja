@@ -6018,11 +6018,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md",
-      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
-      "translated_at": "2026-06-02T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-11T22:01:49Z",
       "model": "claude-opus-4-7",
-      "input_hash": "3d68f29c7566df17b38e301d95db6d590bd0f7e9b3deba27be82d78231005468",
-      "upstream_committed_at": "2026-06-02T19:33:01+02:00"
+      "input_hash": "eee0609da4610f44b101754f218b398ff3bed8f17e358973e373d99db9858ccb",
+      "upstream_committed_at": "2026-06-09T19:10:50+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md",
