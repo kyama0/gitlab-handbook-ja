@@ -6075,7 +6075,7 @@
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-11T12:00:00Z",
+      "translated_at": "2026-06-12T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "9c33870d31df6da9b41be721a31a299e5ba0568bc8d995da8cd6ed85f14924d6",
       "upstream_committed_at": "2026-06-10T09:52:28+02:00"
@@ -6083,7 +6083,7 @@
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-11T12:00:00Z",
+      "translated_at": "2026-06-12T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "9ad011b8dea609feedadf96d58e64712e49f8dd8e85fa8bb8d5e2403c3ff447d",
       "upstream_committed_at": "2026-06-11T10:43:33+01:00"
@@ -6091,7 +6091,7 @@
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-11T00:00:00Z",
+      "translated_at": "2026-06-12T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ac05e786d98c4db6ae653751ba872083caa2778ad6599a6f0db200dc02625e83",
       "upstream_committed_at": "2026-06-09T19:10:50+01:00"
@@ -7795,7 +7795,7 @@
     "content/handbook/engineering/architecture/design-documents/gitlab_cd/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/gitlab_cd/_index.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-12T00:00:00Z",
+      "translated_at": "2026-06-12T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ccf606f6cfa3c87963678d91b80e2e06a0ad1d35a22cb8f84bed188b5ae3fe46",
       "upstream_committed_at": "2026-06-11T13:14:37-07:00"
@@ -13651,7 +13651,7 @@
     "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/release-stages.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/release-stages.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-12T00:00:00Z",
+      "translated_at": "2026-06-12T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "0fb5dfa44404102ec2cae6407ade9d3d4b3c439614753279851ad1e4b4a563ff",
       "upstream_committed_at": "2026-06-11T10:03:08+08:00"
@@ -32972,7 +32972,7 @@
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/014_frontend_to_artifact_registry.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
       "upstream_committed_at": "2026-06-08T14:27:05+01:00",
-      "translated_at": "2026-06-11T00:00:00Z",
+      "translated_at": "2026-06-12T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "6e6f24a5c51cc993526b31b81cde36795040bd8226982791b473f9b7c72a11d1"
     },
