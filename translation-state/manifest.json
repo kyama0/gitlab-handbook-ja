@@ -18458,11 +18458,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:03:29Z",
       "model": "claude-opus-4-7",
-      "input_hash": "b49f9fa7a7db7169220096f34f98e551cda57255349b9955e16b27ee5d0f460e",
-      "upstream_committed_at": "2026-06-04T09:06:21-04:00"
+      "input_hash": "c2723767ec87792350bbc727d443d5b19cbcac373f1995194cb0f4d82b571d2c",
+      "upstream_committed_at": "2026-06-08T11:30:44+02:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md",
@@ -18498,11 +18498,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/projects.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/projects.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-04-30T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:03:29Z",
       "model": "claude-opus-4-7",
-      "input_hash": "0c1f94cb7e61181a29e57cc3acca04fcdafff4311392c0fb6297d5d17a5c062b",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
+      "input_hash": "7e42eab2b08ddb8a76b830b0b60a1441303dccc15d16b53237e225876fc8c534",
+      "upstream_committed_at": "2026-06-08T11:30:44+02:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/social-media.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/social-media.md",
