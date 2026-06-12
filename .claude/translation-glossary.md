@@ -46,7 +46,6 @@ GitLab Handbook 日本語訳の **唯一の用語集**。`.claude/agents/transla
 | feature | 機能 | 「フィーチャー」は不可（FX/SaaS 文脈の慣用は除く） |
 | feature flag | フィーチャーフラグ | `feature → 機能` の例外。業界標準訳語で handbook 全体で既に定着 |
 | Separation of Duty | 職務分掌 | 「職務分離」は不可（会計監査用語） |
-| hosted (リポジトリ種別) | ホスト型 | Artifact Registry のリポジトリ種別 hosted/virtual/remote の訳語統一。旧称 local も同じく「ホスト型」。種別以外の local（enforced locally など）は「ローカル」のまま |
 | material effect | 大きな影響 / 重要な影響 | 「物質的な影響」は不可（法務・財務文脈） |
 | force multiplier | フォース・マルチプライヤー（成果を何倍にも増幅させる存在） | 初出時に補足、以降は単に「フォース・マルチプライヤー」可 |
 | cost to serve | 提供コスト（cost to serve） | 初出時に英語併記推奨 |
