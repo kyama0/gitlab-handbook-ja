@@ -1688,6 +1688,14 @@
       "input_hash": "26d563b2130d4f918720d4fcb16dafe7af7df88700b3c7597c3efbed4d2fbf55",
       "upstream_committed_at": "2026-04-21T14:57:37+00:00"
     },
+    "content/handbook/company/operating-principles.md": {
+      "path": "content/handbook/company/operating-principles.md",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "693de35d71c08cfb18eba88d7182b288020bccd7c86302d4340a90e2324c512f",
+      "upstream_committed_at": "2026-06-10T11:10:58-04:00"
+    },
     "content/handbook/company/offsite/_index.md": {
       "path": "content/handbook/company/offsite/_index.md",
       "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
@@ -5434,11 +5442,11 @@
     },
     "content/handbook/eba/_index.md": {
       "path": "content/handbook/eba/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "e28144b5dadfebaf3cc1c1160acf0b970410c536cce8bd32b77dfe920f1b2b9d",
-      "upstream_committed_at": "2026-05-01T11:29:22-07:00"
+      "input_hash": "8834398be643559391baeedd230a17517dd9dac83b020494c78fbfdcbb2b8f29",
+      "upstream_committed_at": "2026-06-10T07:49:32-07:00"
     },
     "content/handbook/eba/ceo-scheduling.md": {
       "path": "content/handbook/eba/ceo-scheduling.md",
@@ -22514,19 +22522,19 @@
     },
     "content/handbook/upstream-studios/_index.md": {
       "path": "content/handbook/upstream-studios/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "87636fb092b79ca9122d7711a36a6ed4221537f11be8fb7fda8f5b8a7d62994d",
-      "upstream_committed_at": "2026-02-12T13:14:13+00:00"
+      "input_hash": "70dfb0b6341597ff6b739e86d544519558aa4d4a5076f691a51f74574cd2d85b",
+      "upstream_committed_at": "2026-06-09T10:07:01-07:00"
     },
     "content/handbook/upstream-studios/vision-strategy/_index.md": {
       "path": "content/handbook/upstream-studios/vision-strategy/_index.md",
-      "upstream_sha": "d0d8657a733d2233820b2b00aaad27ebf5de9755",
-      "translated_at": "2026-05-07T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "47855f5c06dbff45da994e914becacb9dba10e00f1c34198f5670b1924f9df73",
-      "upstream_committed_at": "2026-02-12T13:14:13+00:00"
+      "input_hash": "096eeea9b77db9d91df61f3fb77f77b6791f944b5ed9986037b9a01389da7980",
+      "upstream_committed_at": "2026-06-11T16:19:36+01:00"
     },
     "content/handbook/values/_index.md": {
       "path": "content/handbook/values/_index.md",
@@ -24786,11 +24794,11 @@
     },
     "content/handbook/security/product-security/vulnerability-management/runbooks/supply-chain-investigations.md": {
       "path": "content/handbook/security/product-security/vulnerability-management/runbooks/supply-chain-investigations.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "0abd8445120f982ba1794b2bb7b89faa6850e742fd1f304a81312c609c7d8339",
-      "upstream_committed_at": "2025-12-20T12:04:47-05:00"
+      "input_hash": "b6bfa45d5c0bf7cec5d8b09f9cfaa68b76e36e7431da7841684afef0d564b2fe",
+      "upstream_committed_at": "2026-06-08T08:48:57+09:00"
     },
     "content/handbook/security/product-security/vulnerability-management/runbooks/weekly-triage.md": {
       "path": "content/handbook/security/product-security/vulnerability-management/runbooks/weekly-triage.md",
@@ -28130,11 +28138,11 @@
     },
     "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-ai.md": {
       "path": "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-ai.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-11T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "9b77914ac4efc523bc7f301b5ddd6829359b95e5059c98920e297383faccb966",
-      "upstream_committed_at": "2025-07-21T20:50:55+00:00"
+      "input_hash": "2a9db7591a823faf68e0579120bd9fa1e396138a78d56898a36c7622ec8dcfd4",
+      "upstream_committed_at": "2026-06-08T16:14:03+09:00"
     },
     "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-meetings.md": {
       "path": "content/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-meetings.md",
@@ -30122,11 +30130,11 @@
     },
     "content/handbook/product-development/r-and-d-pmo/_index.md": {
       "path": "content/handbook/product-development/r-and-d-pmo/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7c2df2dad86e9ca62a11994afc37f5e696148d33bc88b9157ce780a85302ed72",
-      "upstream_committed_at": "2026-04-21T15:34:51+00:00"
+      "input_hash": "474ead175c0e4f18e3a76f135a1dd8ea27fae56d19bafae4dc675665a7535a90",
+      "upstream_committed_at": "2026-06-10T17:17:58+00:00"
     },
     "content/handbook/product-development/programs/_index.md": {
       "path": "content/handbook/product-development/programs/_index.md",
