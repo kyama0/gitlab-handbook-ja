@@ -333,7 +333,7 @@ Provider は、`nil` の名前空間（インポート、メトリクス、Issue
 
 ### 設定インターフェース {#configuration-interface}
 
-**Backend:**
+**バックエンド:**
 
 ```ruby
 # Checking configurations
@@ -345,7 +345,7 @@ type.configured_for?(:available_in_create_flow)  # => true/false
 type.configuration(:required_widgets)  # => [:title, :description]
 ```
 
-**Frontend:** 設定は GraphQL を通じて公開され、フロントエンドクライアントに渡されます。フロントエンドはタイプチェックを行うべきではなく、代わりに設定フラグをクエリして振る舞いを判断すべきです。
+**フロントエンド:** 設定は GraphQL を通じて公開され、フロントエンドクライアントに渡されます。フロントエンドはタイプチェックを行うべきではなく、代わりに設定フラグをクエリして振る舞いを判断すべきです。
 
 ### 特殊タイプの扱い {#special-type-handling}
 

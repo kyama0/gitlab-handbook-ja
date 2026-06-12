@@ -422,7 +422,7 @@ KPI:
 
 #### リリース記事の共有 {#release-post-share}
 
-[ソーシャルカードバリデーター](/handbook/marketing/developer-relations/developer-advocacy/social-media/#social-card-validators)を使って、リリースブログ記事のソーシャルプレビューを確認します。プレビューが正しくレンダリングされない、あるいは読者にもっと注目してもらう必要がある状況があるかもしれません。地味な解決策として、ブラウザのサイズを変更し、機能を列挙したサブタイトルを含むヘッダーから[スクリーンショットを撮り](/handbook/tools-and-tips/mac/#taking-screenshots-and-videos)、その画像をソーシャル共有に添付します。15.1 の例: [Twitter](https://twitter.com/dnsmichi/status/1539646159500853248), [LinkeDIn](https://www.linkedin.com/posts/dnsmichi_it-is-the-22nd-of-the-month-gitlab-activity-6945411563717574656-ZZdr?utm_source=linkedin_share&utm_medium=member_desktop_web)
+[ソーシャルカードバリデーター](/handbook/marketing/developer-relations/developer-advocacy/social-media/#social-card-validators)を使って、リリースブログ記事のソーシャルプレビューを確認します。プレビューが正しくレンダリングされない、あるいは読者にもっと注目してもらう必要がある状況があるかもしれません。地味な解決策として、ブラウザのサイズを変更し、機能を列挙したサブタイトルを含むヘッダーから[スクリーンショットを撮り](/handbook/tools-and-tips/mac/#taking-screenshots-and-videos)、その画像をソーシャル共有に添付します。15.1 の例: [Twitter](https://twitter.com/dnsmichi/status/1539646159500853248), [LinkedIn](https://www.linkedin.com/posts/dnsmichi_it-is-the-22nd-of-the-month-gitlab-activity-6945411563717574656-ZZdr?utm_source=linkedin_share&utm_medium=member_desktop_web)
 
 #### リリースエバンジェリズムの Notable Contributor {#release-evangelism-notable-contributor}
 
@@ -545,7 +545,7 @@ KPI:
 - ユーザー名の前に @ を付けて @gitlab にメンションします
 - ハッシュタグ `#gitlab #releasemanagement` を使います
 
-#### Package {#package}
+#### パッケージ {#package}
 
 [レジストリのオープンソース化](https://about.gitlab.com/blog/2020/03/30/new-features-to-core/)のツイート例:
 

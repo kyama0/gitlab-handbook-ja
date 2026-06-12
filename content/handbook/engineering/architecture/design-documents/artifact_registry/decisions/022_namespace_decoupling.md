@@ -17,7 +17,7 @@ model: claude-opus-4-7
 
 ## ステータス {#status}
 
-**Proposed.**
+**提案中。**
 
 ## コンテキスト {#context}
 
