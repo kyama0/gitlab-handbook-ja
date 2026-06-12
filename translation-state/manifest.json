@@ -30226,11 +30226,11 @@
     },
     "content/handbook/product/ux/_index.md": {
       "path": "content/handbook/product/ux/_index.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "15a381d71801eadeaf34e2d9b0483eea78145c04c08217a6cac51beb8ef69cec",
-      "upstream_committed_at": "2026-06-05T13:44:11-07:00"
+      "input_hash": "d5c928062cd691ffce5a6772af5f9ae5fbbab9245c789f1d362c66e9ea021213",
+      "upstream_committed_at": "2026-06-11T16:19:36+01:00"
     },
     "content/handbook/product/ux/collaborators-playbook.md": {
       "path": "content/handbook/product/ux/collaborators-playbook.md",
@@ -30314,11 +30314,11 @@
     },
     "content/handbook/product/ux/ux-resources/_index.md": {
       "path": "content/handbook/product/ux/ux-resources/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "96a93c285f31b2fd76cfdc866daba8ae3fc32d374756bdd32f8e39a027f94851",
-      "upstream_committed_at": "2026-02-12T13:14:13+00:00"
+      "input_hash": "bec60e03601f2c6770f7840fd24f04fba7a3f4c0141c4df53c986078a0380a78",
+      "upstream_committed_at": "2026-06-11T08:45:13-07:00"
     },
     "content/handbook/product/ux/ux-resources/dark-mode-rollout-playbook.md": {
       "path": "content/handbook/product/ux/ux-resources/dark-mode-rollout-playbook.md",
@@ -30506,11 +30506,11 @@
     },
     "content/handbook/product/ux/product-design/_index.md": {
       "path": "content/handbook/product/ux/product-design/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7d9e191ee688eef47995c229d6f1387a46572d7adb140125320abf3a2b7d0d39",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
+      "input_hash": "8faa0e26b75540df9d0324f537ed1db78ebf1e3f79dba9e547c3fe1a96259dab",
+      "upstream_committed_at": "2026-06-11T08:45:13-07:00"
     },
     "content/handbook/product/ux/product-design/design-pair-rotation.md": {
       "path": "content/handbook/product/ux/product-design/design-pair-rotation.md",
@@ -30554,11 +30554,11 @@
     },
     "content/handbook/product/ux/product-design/product-design-manager.md": {
       "path": "content/handbook/product/ux/product-design/product-design-manager.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7cef18032cfff31c1a9930377288d1dce310d9a645adf2cc17be2db13348aada",
-      "upstream_committed_at": "2026-03-31T15:43:22+02:00"
+      "input_hash": "8683701f77191ce4951268e9c67dff2e9792b97fa421ded490cd1e1fa5aef7b2",
+      "upstream_committed_at": "2026-06-11T08:45:13-07:00"
     },
     "content/handbook/product/ux/product-design/ux-roadmaps/_index.md": {
       "path": "content/handbook/product/ux/product-design/ux-roadmaps/_index.md",
@@ -30746,11 +30746,11 @@
     },
     "content/handbook/product/ux/how-we-work/cross-stage-design-collaboration/_index.md": {
       "path": "content/handbook/product/ux/how-we-work/cross-stage-design-collaboration/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "9490d02b7b54b19ff47103899280f971d12a39f973571f9a79ddeb3401efea9a",
-      "upstream_committed_at": "2025-12-20T08:17:03-06:00"
+      "input_hash": "24a1838e0759b2f669166271ea3aea7b6007a841be26f31320c8afc9ccbb8ee4",
+      "upstream_committed_at": "2026-06-11T08:45:13-07:00"
     },
     "content/handbook/product/ux/experience-research/_index.md": {
       "path": "content/handbook/product/ux/experience-research/_index.md",
@@ -31874,11 +31874,11 @@
     },
     "content/handbook/product/ai/_index.md": {
       "path": "content/handbook/product/ai/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "d622d7819935975732ff8392cc45f193f89934396810f0fdca95f89984b2490a",
-      "upstream_committed_at": "2026-03-31T20:57:45+00:00"
+      "input_hash": "d3db7866f4982fcb911c15559f65d79763169ff178b75b3651e01fbc0cd0853c",
+      "upstream_committed_at": "2026-06-09T14:49:21+05:00"
     },
     "content/handbook/product/ai/continuity-plan.md": {
       "path": "content/handbook/product/ai/continuity-plan.md",
