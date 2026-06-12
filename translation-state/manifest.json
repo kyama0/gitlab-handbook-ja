@@ -7354,11 +7354,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/configurable_work_item_types/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/configurable_work_item_types/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "d79f294be120a1b2134594d642133bde74ac6e31a9e2472cceae907861f8f569",
-      "upstream_committed_at": "2026-04-28T17:03:38+00:00"
+      "input_hash": "fca893d7ab6ac107c9d8baf3ab797201144f87ba9e7e093daa364c165ac68c25",
+      "upstream_committed_at": "2026-06-08T17:29:21+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/consolidating_groups_and_projects/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/consolidating_groups_and_projects/_index.md",
@@ -7786,11 +7786,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/gitlab_cd/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/gitlab_cd/_index.md",
-      "upstream_sha": "ec55f130cc95389b6faf798cebffd864abdbb4c5",
-      "translated_at": "2026-04-27T08:55:32Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "27f9fb866a1a723fb3f53ade3d31544806a1b45e5aa6209306f0105fb88e4d1b",
-      "upstream_committed_at": "2026-04-21T15:27:06-07:00"
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ccf606f6cfa3c87963678d91b80e2e06a0ad1d35a22cb8f84bed188b5ae3fe46",
+      "upstream_committed_at": "2026-06-11T13:14:37-07:00"
     },
     "content/handbook/engineering/architecture/design-documents/gitlab_cd/argo_rollouts_mvc.md": {
       "path": "content/handbook/engineering/architecture/design-documents/gitlab_cd/argo_rollouts_mvc.md",
@@ -13631,6 +13631,14 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "24057422abbf495742119133d5c30d8637dfaa6b87a555679140163f0aa41bfd",
       "upstream_committed_at": "2025-12-12T14:35:58+00:00"
+    },
+    "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/release-stages.md": {
+      "path": "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/release-stages.md",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0fb5dfa44404102ec2cae6407ade9d3d4b3c439614753279851ad1e4b4a563ff",
+      "upstream_committed_at": "2026-06-11T10:03:08+08:00"
     },
     "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process.md",
