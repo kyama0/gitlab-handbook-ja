@@ -18410,11 +18410,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/_index.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/_index.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T12:50:04Z",
       "model": "claude-opus-4-7",
-      "input_hash": "0ae0a4ece65ec2402d977f6b939e57619918f79c353c8fa82f3b6e0c11df9418",
-      "upstream_committed_at": "2026-06-04T10:07:48-04:00"
+      "input_hash": "fee55016419cbd2456c822d3744a36da790ad75cb04b80a38ef9431185de870d",
+      "upstream_committed_at": "2026-06-08T11:30:44+02:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/calendar.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/calendar.md",
@@ -18506,11 +18506,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/social-media.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/social-media.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T12:50:04Z",
       "model": "claude-opus-4-7",
-      "input_hash": "2d19f2373ab37d52911096496572d16317932af55f510ab9b9f4dd5dc3d4292b",
-      "upstream_committed_at": "2026-05-20T09:32:02-07:00"
+      "input_hash": "4baa413a08ac0c87ca91bf986dd55b5a55f3ce846f1d76b3aca2c33cd775d0e8",
+      "upstream_committed_at": "2026-06-08T11:30:44+02:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/workflow.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/workflow.md",
