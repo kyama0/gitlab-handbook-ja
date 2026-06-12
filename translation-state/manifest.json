@@ -29666,11 +29666,11 @@
     },
     "content/handbook/sales/field-operations/channel-operations/_index.md": {
       "path": "content/handbook/sales/field-operations/channel-operations/_index.md",
-      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
-      "translated_at": "2026-05-29T21:23:52Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T00:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "837216693ae67a05fcf0e39a9c48dc8f54b354737ea032ff01a48612efc54a93",
-      "upstream_committed_at": "2026-05-28T15:04:41-07:00"
+      "input_hash": "4c1700fd5a278d76a3a16133ec9c4cf98853b3a666a67e5d5f8703f8cdcc1cfe",
+      "upstream_committed_at": "2026-06-08T13:31:45-07:00"
     },
     "content/handbook/sales/field-operations/channel-operations/partner-faq.md": {
       "path": "content/handbook/sales/field-operations/channel-operations/partner-faq.md",
