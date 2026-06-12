@@ -7363,7 +7363,7 @@
     "content/handbook/engineering/architecture/design-documents/configurable_work_item_types/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/configurable_work_item_types/_index.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-12T00:00:00Z",
+      "translated_at": "2026-06-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "fca893d7ab6ac107c9d8baf3ab797201144f87ba9e7e093daa364c165ac68c25",
       "upstream_committed_at": "2026-06-08T17:29:21+02:00"
@@ -7803,7 +7803,7 @@
     "content/handbook/engineering/architecture/design-documents/gitlab_cd/cd_execution.md": {
       "path": "content/handbook/engineering/architecture/design-documents/gitlab_cd/cd_execution.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-12T12:27:35Z",
+      "translated_at": "2026-06-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "0a9ed117e8f0c483d89b7365a0ea5022943ce0b76336fc05b23737337dfd1ba4",
       "upstream_committed_at": "2026-06-11T13:14:37-07:00"
@@ -13627,7 +13627,7 @@
     "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/_index.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-12T12:27:35Z",
+      "translated_at": "2026-06-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "545e7129faef006d0174e16770ec4c42e209f8c3831e669ee2d5096b56050237",
       "upstream_committed_at": "2026-06-11T10:03:08+08:00"
@@ -13659,7 +13659,7 @@
     "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-12T12:27:35Z",
+      "translated_at": "2026-06-11T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ad102b24d3d45b994f1b69f2beae6471601f274f1070f3118f59e4e0e9fe5f3c",
       "upstream_committed_at": "2026-06-11T10:03:08+08:00"
