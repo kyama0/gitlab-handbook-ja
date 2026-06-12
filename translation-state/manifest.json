@@ -5466,11 +5466,11 @@
     },
     "content/handbook/engineering/ai/_index.md": {
       "path": "content/handbook/engineering/ai/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:26:18Z",
       "model": "claude-opus-4-7",
-      "input_hash": "39a360c474010fd269f45bd1b2d4583e785ef547988215d3ce299ccdff1bc0f5",
-      "upstream_committed_at": "2026-02-02T13:48:21-06:00"
+      "input_hash": "12db9ffb2c886d70ed31158d71cb812736bd96d67a39e614ddccaa4ed17d01ed",
+      "upstream_committed_at": "2026-06-09T14:06:17+02:00"
     },
     "content/handbook/engineering/ai/agent-foundations/_index.md": {
       "path": "content/handbook/engineering/ai/agent-foundations/_index.md",
@@ -5594,11 +5594,11 @@
     },
     "content/handbook/engineering/ai/ai-coding/how-we-work/_index.md": {
       "path": "content/handbook/engineering/ai/ai-coding/how-we-work/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "464091bed105215c0db8dabf24579cf5791c171f5f949aecc90711c916855fa5",
-      "upstream_committed_at": "2026-02-23T08:37:06-06:00"
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:26:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "aac571db043f6a9640d751e021861c642dde1d782cfaf9b2b396b7fdc2103b79",
+      "upstream_committed_at": "2026-06-10T09:23:04-05:00"
     },
     "content/handbook/engineering/ai/ai-coding/how-we-work/ai-prompts.md": {
       "path": "content/handbook/engineering/ai/ai-coding/how-we-work/ai-prompts.md",
@@ -10402,11 +10402,11 @@
     },
     "content/handbook/engineering/data-engineering/database-excellence/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/_index.md",
-      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
-      "translated_at": "2026-06-01T21:24:38Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:26:18Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a048f114b40cf503845685188e9cf4107937ecab218a5079b2f98b6b57cb8d31",
-      "upstream_committed_at": "2026-06-01T13:57:16-05:00"
+      "input_hash": "eda9edbb0d249ab097ea6154028f1173c017ab5effdce31d935fc2b90873377a",
+      "upstream_committed_at": "2026-06-08T10:04:59-05:00"
     },
     "content/handbook/engineering/data-engineering/database-excellence/database-architecture/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/database-architecture/_index.md",
@@ -12874,11 +12874,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/maintenance/dev-gitlab-org.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/maintenance/dev-gitlab-org.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T00:11:38Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "4f1435d75adfd0708c59062f64eca894b48806ccb0b1ae91c67d2e04b08c3d7d",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:26:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "917001c745a4734276e0bc12e00cd650119d8a5a51d0d4b991db53b175a029ad",
+      "upstream_committed_at": "2026-06-11T09:01:46-06:00"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/maintenance/renovate.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/maintenance/renovate.md",
@@ -14050,11 +14050,11 @@
     },
     "content/handbook/engineering/releases/_index.md": {
       "path": "content/handbook/engineering/releases/_index.md",
-      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
-      "translated_at": "2026-06-02T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:26:18Z",
       "model": "claude-opus-4-7",
-      "input_hash": "03ac67c13a2f64864f794c6fa426a487236d1bab33ad1e6a61c7792448e2d0e1",
-      "upstream_committed_at": "2026-06-02T14:47:42-06:00"
+      "input_hash": "59f822cb55f5d734cb7afb3b2be7e325a4e88f2661f5ab1df9967edb6ca381e4",
+      "upstream_committed_at": "2026-06-09T09:11:01-06:00"
     },
     "content/handbook/engineering/releases/backports.md": {
       "path": "content/handbook/engineering/releases/backports.md",
@@ -14066,11 +14066,11 @@
     },
     "content/handbook/engineering/releases/internal-releases/index.md": {
       "path": "content/handbook/engineering/releases/internal-releases/index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "b34c9a996007f18cdf1d6e0dcfd7eb2b9a9f81f6a7d81653ab0289dcb0727bb0",
-      "upstream_committed_at": "2026-04-06T08:51:22-06:00"
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:26:18Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2799f80c263c4dfd64ea005c6ea9b78b538dd992dd55147ca66bcbe281b9a4e4",
+      "upstream_committed_at": "2026-06-10T12:44:21-06:00"
     },
     "content/handbook/engineering/releases/monthly-releases/index.md": {
       "path": "content/handbook/engineering/releases/monthly-releases/index.md",
@@ -14082,11 +14082,11 @@
     },
     "content/handbook/engineering/releases/patch-releases/index.md": {
       "path": "content/handbook/engineering/releases/patch-releases/index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:26:18Z",
       "model": "claude-opus-4-7",
-      "input_hash": "136c04588d7fc8a17d3c6e1fde8b387d96cf944d3968dde2d4dc2b4d4aad6a67",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "input_hash": "591dd1b7ea82990753a4cb84bdc937290d7fcccf0bd571a89e75b8b7475709ab",
+      "upstream_committed_at": "2026-06-09T09:11:01-06:00"
     },
     "content/handbook/engineering/releases/stable_branches.md": {
       "path": "content/handbook/engineering/releases/stable_branches.md",
