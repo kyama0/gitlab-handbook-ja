@@ -1,11 +1,11 @@
 ---
-title: "Executive Business Administrators（EBA）"
+title: "Executive Business Administrators (EBAs)"
 upstream_path: /handbook/eba/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
+translated_at: "2026-06-12T13:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-01T11:29:22-07:00"
+lastmod: 2026-06-10T07:49:32-07:00
 ---
 
 ## はじめに
@@ -29,7 +29,7 @@ lastmod: "2026-05-01T11:29:22-07:00"
 | [Legal & Corporate Affairs](/handbook/legal/) | **Sharlene Seemungal**<br>Staff EBA  | Robin Schulman (CLO and Head of Corporate Affairs) |
 | [Legal & Corporate Affairs](/handbook/legal/) | **Victoria Hutson**<br> EBA | Craig Patrick (Chief of Staff, CLO & Head of Corporate Affairs) <br>Rashmi Chachra (VP of Legal - Corporate & Compliance)<br>Stacy Cline (Sr. Director of ESG)|
 | [Legal & Corporate Affairs](/handbook/legal/)  | **Amanda Wells**<br>EBA  | Eliran Mesika (VP of Corporate Development)<br>Emily Plotkin (Sr. Director of Legal, Employment)<br>Lynsey Sayers (VP of Legal, Privacy & IP)<br>Dan Hodes (Sr. Director of Legal, Risk Management and Dispute Resolution)<br> Sam Rizzo (Sr. Director of Public Policy) |
-| [Marketing](/handbook/marketing/)| **Linsea O'Shea**<br>Sr EBA |Laura Fagan (VP, Regional Marketing)<br>Özer Dondurmacioǧlu (VP, Product Marketing)<br>Andy Ramirez (VP, Growth Marketing) |
+| [Marketing](/handbook/marketing/)| **Linsea O'Shea**<br>Sr EBA | Andy Ramirez (VP, Growth Marketing)<br>Özer Dondurmacioǧlu (VP, Product Marketing) |
 | [People](/handbook/people-group/) | **Jenn Quinn**<br>Sr EBA | Rob Allen (CPO) <br> Marcy Tavano (VP of People Business Partners and Team Member Relations) |
 | [People](/handbook/people-group/) | **Monica Battle**<br> | Allia McCrank (VP of Total Rewards)<br> Sherida McMullan (VP of Diversity, Inclusion and Belonging)<br> Jessica Dallmer (VP of Talent Acquisition)<br> Devin Rogozinski (VP of People Strategy and Engagement) |
 | [Product](/handbook/product/) & [Marketing](/handbook/marketing/) |**Heather Hardowa**<br>Sr EBA | Manav Khurana (CPMO)|

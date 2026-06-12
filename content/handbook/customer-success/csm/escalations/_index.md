@@ -1,11 +1,11 @@
 ---
 title: カスタマーサクセスエスカレーションプロセス
 upstream_path: /handbook/customer-success/csm/escalations/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:47:38Z"
+upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
+translated_at: "2026-06-12T21:18:07Z"
 translator: claude
 stale: false
-lastmod: "2026-01-23T11:44:24+01:00"
+lastmod: 2026-06-12T09:40:35-04:00
 ---
 
 追加の CSM 関連ハンドブックページは [CSM ハンドブックホームページ](/handbook/customer-success/csm/)をご覧ください。
@@ -306,8 +306,15 @@ flowchart TD
 
 - エスカレーションに関連する問題が解決された場合、またはエスカレーション状態でなくなった場合:
 
-  - Gainsight CTA にエスカレーションクロージャータイムラインエントリを投稿し、ステータスと解決内容を記録します。アップデートで「Escalation Closure」タイムラインテンプレートを使用してください（タイムラインの「Notes」ボックスの右上隅から選択可能）。
-  - 「Post to Slack」フィールドのドロップダウンで「Closure」を選択します。これは `#escalated_customers` チャンネルに送信される自動通知をトリガーするために使用されます。この時間ごとのプロセスは PubSec 顧客を除くすべての顧客に適用されます。PubSec 顧客の場合はエスカレーションクロージャーアップデートを手動で投稿する必要があります。
+  - Gainsight でアカウントに移動し、次に `Cockpit` タブに移動します。エスカレーション用に作成された CTA を見つけて開きます。
+  
+  {{< figure src="/images/handbook/customer-success/csm/escalations/gainsight-cockpit-tab.png" alt="Cockpit タブを表示している Gainsight アカウントページ" >}}
+
+  - CTA 内で `Timeline` タブに移動します。`Add Activity` をクリックし、`Activity Type` に `Health Update` を選択します。次に `Apply Template` をクリックし、`Escalation Closure` タイムラインテンプレートを使用します。
+  
+  {{< figure src="/images/handbook/customer-success/csm/escalations/gainsight-cta-timeine-entry-escalation-closure.png" alt="Health Update が選択された Add Activity ダイアログと Apply Template オプションを表示している Gainsight CTA タイムラインタブ" >}}
+
+  - 「Post to Slack」フィールドのドロップダウンで `Closure` を選択します。これは `#escalated_ customers` チャンネルに送信される自動通知をトリガーするために使用されます。この時間ごとのプロセスは PubSec 顧客を除くすべての顧客に適用されます。PubSec 顧客の場合はエスカレーションクロージャーアップデートを手動で投稿する必要があります。
   - 一時的な Slack チャンネルをアーカイブする
   - 顧客の CSM センチメントを Gainsight でアカウントの新しい状態を反映するように更新する
 

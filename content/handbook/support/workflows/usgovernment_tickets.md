@@ -3,36 +3,42 @@ title: 米国政府向けサポートチケットへの対応
 category: Handling tickets
 description: "米国政府向けチケットへの対応方法を解説するサポートエンジニアリングのワークフロー"
 upstream_path: /handbook/support/workflows/usgovernment_tickets/
-upstream_sha: "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc"
-translated_at: "2026-05-29T21:19:23Z"
+upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
+translated_at: "2026-06-12T21:17:46Z"
 translator: claude
 stale: false
-lastmod: "2026-05-28T19:25:37-07:00"
+lastmod: 2026-06-09T22:44:13-07:00
 ---
 
-米国政府向けサポートでは、[重み付きラウンドロビンアルゴリズム](#ticket-assignment-via-round-robin) を用いてサポートエンジニアにチケットをアサインしています。
+US Government Support は、US Government Zendesk インスタンスにおける新規チケットの割り当てに、重み付きラウンドロビンワークフローを使用します。
 
-米国政府向けサポートには、[米国市民権が確認された](#access-limited-to-us-citizens) エンジニアが複数名おり、米国政府向けサポートポータルにおける新規および既存ケースの対応に 100% フォーカスしています。本インスタンスにフォーカスしているエージェントは、[Support view](https://gitlab-federal-support.zendesk.com/agent/filters/360196736831) から作業を分担し、新規ケースに着手します。新規ケースに返信する際、公開コメントを行うエージェントは併せてケースを自分にアサインしてください。米国政府向けへのフォーカスが 50% 未満ながら本インスタンスへのアクセス権を持つメンバーも、ペアリングセッションへの参加、お客様コールへの同席、知識ギャップを補う支援などを通じて積極的に貢献することが推奨されています。フルにフォーカスしていないグローバルエンジニアが新規ケースを自身にアサインすることは推奨されません。
+このページは、チケットの割り当て、フォローアップの期待事項、機密保持要件、緊急対応後のチケット処理を含む、US Government Support チケットの日常業務に関するハンドブックの信頼できる唯一の情報源です。
 
-ケースが `pending` 状態になってから 7 日経過すると、自動化が動作し、依頼者に応答を待っている旨を通知します。さらに `pending` 状態が 7 日続くと、自動化によりケースは `solved` 状態に移されます。
+オンコールのカバレッジ、ページングの流れ、緊急対応の期待事項については、[How to Perform US Government On-Call Duties](/handbook/support/workflows/usgovernment_oncall/) を参照してください。
 
-お客様は、Zendesk ケースに同僚を追加するよう依頼することがあります。米国政府向け ZenDesk インスタンスでは [CC が無効化されている](https://support.gitlab.com/hc/en-us/articles/11626578409756-Operational-Guidelines-for-U-S-Government-Support#ccs-are-disabled) ため、代わりに [Shared Organizations](https://support.gitlab.com/hc/en-us/articles/11626528150172-Managing-Support-Contacts#shared-organizations) を提供しています。
+## Access limited to US Citizens
 
-## 米国市民にのみ許可されたアクセス {#access-limited-to-us-citizens}
+[US Government Zendesk Instance](/handbook/security/customer-support-operations/zendesk/#zendesk-us-government) にアクセスできるのは、米国市民のサポートエンジニアのみです。
 
-[US Government Zendesk Instance](/handbook/security/customer-support-operations/zendesk/#zendesk-us-government) には米国市民権を持つサポートエンジニアのみがアクセスできます。米国市民であってアクセスして貢献したい場合は、[Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) を起票し、[Light エージェント](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) または [フルエージェント](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)（Support / Security チームメンバーに限定）のいずれかを申請できます。
+あなたが米国市民で、アクセスを取得して貢献したい場合は、[light agent](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) または [full agent](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) アカウントのいずれかについて [Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) を開くことができます（Support および Security チームメンバーに限定）。
 
-## コミュニケーションガイドライン {#communication-guidelines}
+## Communication Guidelines
 
-米国政府向け Zendesk インスタンスで受けたチケットに関する話題は、いくつかの重要な留意点付きで、米国政府向けインスタンス外でも議論することができます。システム名、組織名、お客様名、特定のインフラ詳細（IP アドレス、ホスト名など）、ログファイルといった個人を特定し得る情報は、社内チケット内に限定すべきです。技術的な問題の性質に関する具体的内容はチャットや Issue などの公開の場で議論しても構いませんが、ログスニペット、スクリーンショット、その他のデータをやり取りする際は、識別可能な情報が開示されないよう慎重に判断してください。判断に迷う場合は、マネージャーまたは該当顧客の CSM に、その情報を米国市民以外に伝えても問題ないかを確認してください。
+US Government Zendesk インスタンスで受け取ったチケットに関する問題は、いくつかの重要な注意点を守ったうえで、US Government インスタンスの外で議論できます。
 
-ログレビューやチケット内の機密情報に関する支援を求める際は、誤って開示してしまうことを防ぐため、Zendesk 内の内部コメントを使って米国政府向けインスタンスへのアクセス権を持つ他のエンジニアに直接連絡することを推奨します。
+システム名、組織名、顧客名、特定のインフラ詳細（IP アドレス、ホスト名、および類似の詳細）、ログファイルを含む識別情報は、内部チケットに限定する必要があります。技術的な問題の詳細は、一般的にチャット、Issue、その他の内部スペースで議論しても問題ありませんが、ログスニペット、スクリーンショット、その他のデータをやり取りする際は、識別情報が開示されないよう慎重に判断してください。
 
-政府向けチケットは、Issue やマージリクエスト内で公開リンクとして共有しても構いません。リンク自体は何の情報も明らかにしないためです。ただし、リンク名に識別可能な情報を含めないようにしてください。例: `[US Government Internal Ticket](<ticket_link>)`。
+判断に迷う場合は、その情報を非米国市民に伝えても問題ないかどうかを、マネージャーまたは顧客の CSM に確認してください。
 
-ビデオチャットでペア作業をする際は、必ず米国政府向けインスタンスへのアクセス権を持つエンジニアとのみペアリングし、米国政府向けサポートインスタンスのコンテンツ、ログ、その他機密保持が必要な情報の画面共有は避けてください。
+チケット内のログレビューや機密情報に関する支援については、偶発的な開示を避けるため、Zendesk 内で内部コメントを使って US Government インスタンスにアクセスできる他のエンジニアに直接連絡することが推奨されます。
 
-ドキュメントへのリンクを提供する際、組織のメールサーバーが受信者にチケット更新を配信する前に埋め込みリンクを除去する場合があります。お客様にドキュメントを提供し続けるために、返信本文に識別子を使い、チケット末尾に「脚注」を置くことを検討してください。例:
+Government チケットは、リンク自体が情報を明らかにしないため、Issue やマージリクエストなどで公開リンクとして使用できます。リンクに識別可能な情報を付けて名前を付けることは避けてください。例:
+
+`[US Government Internal Ticket](<ticket_link>)`
+
+ビデオチャットでペアリングする際は、US Government インスタンスにアクセスできるエンジニアとのみペアリングするようにしてください。US Government Support インスタンスのコンテンツ、ログ、または機密保持が必要なその他の情報の画面共有は避けてください。
+
+ドキュメントへのリンクを提供する際、組織のメールサーバーが、チケットの更新を受信者に配信する前に埋め込みリンクを除去する可能性があります。引き続き顧客にドキュメントを提供するには、返信本文に識別子を使用し、その後チケットの末尾に向けて「脚注」を記載することを検討してください。例:
 
 ```text
 This is the ticket reply body where we are talking docs Title of documentation Page(1). Here's some more documentation that's relevant, Title of documentation page (2).
@@ -44,159 +50,214 @@ This is the ticket reply body where we are talking docs Title of documentation P
 ---
 ```
 
-### フォローアップ
+### How to reference customer information securely in chat
 
-米国政府向けチームでは、ケースが `pending` 状態で 7 日経過した時点で、ケース送信者に確認を入れる自動フォローアップシステムを導入しています。送信者から返信のないまま pending 状態が 14 日連続で続くと、ケースは自動的に `solved` 状態に移動します。
-
-#### フォローアップ時間の延長
-
-7 日以上の時間がお客様の作業やフィードバック提供に必要となる状況もあります。お客様と将来の特定日に状況を更新する旨で合意済みの場合、エージェントは `Support::Block Automatic Reopen` マクロの利用を選択できます。このマクロは `blocked_by` タグを追加し、エージェントがなぜケースを pending 状態のままにすべきかの詳細を記載する内部コメントを作成します。`blocked_by` タグは合意した日付に達したときにエージェントが手動で削除する必要があり、削除後に標準の pending → フォローアップワークフローが再開されます。マクロを使う際のベストプラクティス例:
-
-- ユーザーから連絡が戻ってくるべき日付に [タスクリマインダー](/handbook/security/customer-support-operations/zendesk/apps/us-government#zendesk-super-app) を設定する。
-- 約束された日付までに確実にフォローアップを受けられるよう、定期的に pending ケースをレビューする。
-- 他のメンバーが認識し代理でフォローアップできるよう、blocked-by の理由欄に関連する Issue やケース番号を記載する。
-
-### チャット内でお客様情報を安全に参照する方法
-
-Salesforce や Zendesk のようなアクセス制御されたシステム内のレコードへのリンクを活用することで、安全に情報を提供できます。SFDC レコードに対する Slack のリンク展開を有効にしている場合は、コメント投稿後すぐにその展開を削除する必要がある点に注意してください。
+情報を安全に提供するために、Salesforce や Zendesk などのアクセス制御されたシステム内のレコードへのリンクを活用できます。Salesforce レコードの Slack リンク展開を有効にしている場合は、コメントを投稿した後すぐに展開を削除する必要がある点に注意してください。
 
 例:
 
-- "This user <https://gitlab-federal-support.zendesk.com/users/398443026291/> is struggling with Geo setup..."
-- "The person who submitted the case that got bounced back is a member of this organization: <https://gitlab.my.salesforce.com/0014M00001hHHKF>"
+- 「このユーザー [https://gitlab-federal-support.zendesk.com/users/398443026291/](https://gitlab-federal-support.zendesk.com/users/398443026291/) は Geo のセットアップで苦労しています...」
 
-`#spt_us-government` チャンネルでは、機密情報の開示を防ぐため、組織を表す略称（acronym）の使用は**許可されていません**。
+- 「跳ね返されたケースを送信した人物は、この組織のメンバーです: [https://gitlab.my.salesforce.com/0014M00001hHHKF](https://gitlab.my.salesforce.com/0014M00001hHHKF)」
 
-## ラウンドロビンによるチケットアサイン {#ticket-assignment-via-round-robin}
+機密情報の開示を防ぐため、`#spt_us-government` チャンネルで組織を議論する際に略語を使用することは許可されていません。
 
-コアビジネス時間中は、Support Ops が構築したラウンドロビンツールに基づき、チケットが作成されると同時にアサインされます。このツールは時刻管理用カレンダーで PTO 中の人を除いたうえで、シフトに入っている対応可能なサポートエンジニアのリストを作成します。次に各エンジニアの全体的なケース重み付けを確認し、最も低い全体重み付けのエンジニアに新規ケースをアサインします。
+### Checking for access
 
-### 同時期の組織チケットを集約してアサインする
+GitLab 内の他者とケースや問題を議論する際、その相手が、チャット、画面共有、または通話を通じて機密情報や機微情報を受け取るための[アクセス要件](#access-limited-to-us-citizens)を満たしているかどうかを確認するのが難しい場合があります。
 
-特定の依頼者または組織が短期間（1〜2 日）に複数のチケットを作成し、それらが複数のサポートエンジニアにラウンドロビンでアサインされる場合があります。この方法で作業を分担すると、複数のエンジニアが同様のファイルを依頼し、同じ環境や直近の変更に関する文脈を構築しようとして、作業が重複しがちです。これを避けるため、これらのチケットを単一の担当者にまとめる方法は次のとおりです:
+唯一の信頼できる情報源は、その人物が full agent または light agent として US Government Zendesk アカウントを持っているかどうかです。アクセス権を持つ個人は、People Operations によってこの情報へのアクセスが許可されていることが確認されています。
 
-1. お客様が 1〜2 日以内に複数のチケットを作成し、それらがラウンドロビンでアサインされる。
-1. このお客様からアサインされたサポートエンジニアたちは、Slack やクラッシュセッションで議論し、それらのチケットがおそらく同じ環境に関するものかを判断する。
-1. サポートエンジニアの 1 人が、この期間中に作成された当該お客様のすべてのチケット（それから少しあとに作成された新規チケットも含む可能性がある）のアサインを引き受けることに同意する。
-1. そのエンジニアは自分を overburdened とマークし、新規チケットを引き受ける準備ができたと判断するまでラウンドロビンから外れる。
-1. あるエンジニアが他のチケットの担当を引き受けたあと間もなく同じお客様から新規チケットが入ってきた場合、それらのチケットも同じ環境に該当するかを確認する。該当する場合、エンジニアはそれらの担当も引き受ける。これにより、エンジニアがラウンドロビンから外れる時間がさらに延びることになる。
+Support Ops チームは、ある人物が US Government Zendesk へのアクセス権を持っているかどうかをチームメンバーが確認できるツールを構築しました。このツールには、GitLab チームメンバーが[こちらのリンク](https://gitlab-com.gitlab.io/support/support-ops/zendesk-us-federal-project/)からアクセスできます。毎週日曜日の 00:00 UTC に更新されます。
 
-**誰もチケットを引き受けたくない場合はどうするか？** ラウンドロビンが最初にアサインしたメンバーにチケットを割り当てたままにします。
+より最近追加された人物の確認が必要な場合は、US Government Support Manager または Support Ops Manager に検証を依頼してください。このツールで人物の名前が見つからない場合、そのユーザーはインスタンスにアクセスする資格がないものとみなし、[Communication Guidelines](#communication-guidelines) に従う必要があります。
 
-## チケットに関するヘルプを得る
+## Working tickets in the US Government Zendesk instance
 
-機密に保つ必要がある情報があるため、米国政府向けチケットに関する支援を得るのは難しい場合があります。とはいえ、米国政府向けサポートケースを効率的に解決するうえで、米国政府向けではないエンジニアが必要な専門知識を持つことも多くあります。[コミュニケーションガイドライン](#communication-guidelines) に従っていれば、`#support_self-managed` などの Slack チャンネルで質問することは推奨されています。
+US Government Support には、米国市民であることが検証され、US Government Support Portal の新規ケースおよび既存ケースへの対応に 100% 集中している複数のエンジニアがいます。このインスタンスに集中するエージェントは、[Support view](https://gitlab-federal-support.zendesk.com/agent/filters/360196736831) から労力を分散して新規ケースに対応する必要があります。
 
-チケットに関してマネージャーの支援が必要な場合、米国政府向けインスタンスにアクセスできるのは米国市民のみであることを念頭に置いてください。つまり、一部のマネージャーはチケットの支援を行えないことになります。米国市民で米国政府向けの仕事に従事しており、自分のマネージャーがそうでない場合、機密情報の共有なしには問題に対処できないときには、別のマネージャーに相談しても構いません。
+新規ケースに返信する際、公開コメントを行うエージェントは、そのケースを自分自身に割り当てる必要もあります。
 
-### チケットからのディスカッション Issue
+US Government に 50% 以上集中していないものの、インスタンスへのアクセス権を持つエンジニアも、ペアリングセッション、顧客通話への参加、可能な範囲での知識ギャップの支援を通じて参加することが引き続き推奨されます。完全に集中していないグローバルエンジニアが新規ケースを自分自身に割り当てることは推奨されません。
 
-米国政府向けチケットシステム内のチケットに対して非同期コラボレーションを促進するため、米国政府向けサポートエンジニアがチケットに紐づく機密扱いの GitLab Issue の作成をトリガーできるマクロを用意しています。この Issue はチケットが続く間ずっとオープン状態にあり、米国政府向けサポートエンジニアが共同作業者に情報を伝える手段として利用できます。
+顧客は時折、Zendesk ケースに同僚を追加するよう要求します。US Government Zendesk インスタンスでは [CC が無効化](https://support.gitlab.com/hc/en-us/articles/11626578409756-Operational-Guidelines-for-U-S-Government-Support#ccs-are-disabled) されているため、代わりに [Shared Organizations](https://support.gitlab.com/hc/en-us/articles/11626528150172-Managing-Support-Contacts#shared-organizations) を提供します。
 
-**注意:
-これらの Issue は機密扱いであっても、米国政府向けチケットシステムへのアクセス権を持たない人にも見える状態にあります。したがって、これらの Issue にお客様固有の情報を一切含めないことが重要です。**
+### Following up
 
-これらの Issue の作成をトリガーするには、マクロメニューから `General::Create discussion issue` マクロを選択してチケットを送信します。すると Support Ops のボットが Issue を作成し、内部メモにそのリンクを記載します。最初の段階では、この Issue の内容は最低限です。タイトルにはチケット番号が含まれ、本文にはチケットへのリンクと、必要に応じて情報を記入できる空のセクション（見出し付き）が含まれます。これらのセクションはすべて任意です。
+US Government チームは、ケースが 7 日間 `pending` 状態にある場合に、ケースの送信者に確認を行う自動フォローアップシステムを実装しています。送信者からの返信がないまま `pending` 状態が連続 14 日間続くと、ケースは自動的に `solved` 状態に移行します。
 
-機密性要件に違反しない範囲で、可能な限り多くのチケット情報を Issue に記入し、コラボレーターに Issue へのリンクを共有するか、GitLab の To-Do システム経由で他のメンバーをメンションします。最後に、自分を assignee に設定します。
+#### Extending the follow-up time
 
-チケットが解決済みとマークされると、Support Ops のボットがその Issue を自動的にクローズします。
+タスクによっては、顧客が変更を加えてフィードバックを提供するまでに 7 日以上かかる状況があります。
 
-## アクセスの確認
+将来の特定の日に顧客が更新すると合意した場合、エージェントは `Support::Block Automatic Reopen` マクロの使用を選択できます。このマクロは `blocked_by` タグを追加し、ケースを pending のままにしておくべき理由を示す詳細をエージェントが記入する必要のある内部コメントを作成します。
 
-GitLab 内の他のメンバーとケースや Issue について議論する際、その人がチャット、画面共有、または通話を介して機密情報や慎重情報を受け取ることが許可されている [アクセス要件](#access-limited-to-us-citizens) を満たしているかを確認するのは難しい場合があります。唯一の信頼できる情報源は、その人が米国政府向け Zendesk アカウント（フルエージェントまたはLight エージェント）を持っているかどうかです。アクセス権を持つメンバーは、people-ops によってこの情報へのアクセスが許可されていることが確認されています。Support-Ops チームは、ある人が米国政府向け Zendesk へのアクセス権を持っているかをチームメンバーが確認できる便利なツールを構築しました。このツールは GitLab チームメンバーから [このリンク](https://gitlab-com.gitlab.io/support/support-ops/zendesk-us-federal-project/) 経由でアクセスできます。データは毎週日曜 00:00 UTC に更新されることに注意してください。それより最近追加されたメンバーの確認が必要な場合は、米国政府向けサポートマネージャーまたは Support-Ops マネージャーに検証を依頼できます。このツールでその人の名前が見つからない場合、そのユーザーはインスタンスへのアクセス資格がないと判断し、対応の手順については [コミュニケーションガイドライン](#communication-guidelines) を参照してください。
+標準的な pending から follow-up へのワークフローを再開するには、合意した日付に達した時点で、エージェントが手動で `blocked_by` タグを削除する必要があります。
 
-## 米国政府向けサポート ディスカバリーコール
+マクロを使用するためのベストプラクティスの提案を以下に示します。
 
-GitLab スタックのトラブルシューティングに必要なすべての情報を、お客様だけで取得・伝達するのが難しい場合があります。米国政府向けポータルで技術サポートケースを起票する際、お客様はケースのアサイニーとディスカバリーセッションを行い、問題のデモ、必要なログ／スクリーンショットなどの収集を行ったうえで、サポートケースで非同期作業に戻りたいと表明できます。
+- ユーザーからの返信が期待される日付に [タスクリマインダー](/handbook/security/customer-support-operations/zendesk/apps/us-government#zendesk-super-app) を設定します
 
-お客様がセッションを希望するチェックボックスを選択した場合、ケース履歴の冒頭に内部メモが付き、リクエストが行われたことが示されます。アサイニーは提供された情報をすべてレビューし、`General::Discovery call response` マクロを選択してセッションのスケジューリングを開始してください。アサイニーは使い切りの Calendly リンクを記入し、関連する追加情報をユーザーに依頼します。
+- 約束した日付までにフォローアップを受け取っていることを確認するため、pending のケースを定期的にレビューします
 
-Calendly に管理されたイベントテンプレートとして **GitLab US Federal Customer Discovery Call** があり、Calendly 管理者に依頼するとエージェントに割り当てられます。このイベントタイプは 30 分のセッションで、リードタイムは 1 日です。
+- 他のメンバーが認識して代わりにフォローアップできるよう、blocked-by の理由に関連する Issue またはケース番号を記載します
 
-ディスカバリーコールを待つ間も、ケースを非同期で進めることが推奨されます。
+### Ticket assignment via round-robin
 
-スケジュールされたセッションが行われたら、エージェントは「お客様に問題のデモをお願いし、その後一緒に成果物のセットを作成して、後ほどケースにアップロードする」という期待値を設定してください。
+コア業務時間中、チケットは Support Ops が構築したラウンドロビンツールに基づいて、作成されるたびに割り当てられます。このツールは、休暇カレンダーに従って PTO 中のエンジニアを除外し、シフト中の稼働可能なサポートエンジニアのリストを作成します。次に、各エンジニアの全体的なケース重み付けを確認し、全体的な重み付けが最も低いエンジニアに新規ケースを割り当てます。
 
-両者で次のステップに関する共通認識を確実にするため、コール後の短い要約として、収集した成果物の整理と、観測された内容の技術的な記述を行うことを推奨します。
+### Consolidating assignment for org tickets created at the same time
 
-## 米国政府向けシフトエンジニアのワークフロー
+場合によっては、1 人の依頼者または組織が短期間に複数のチケットを作成し、それらが複数のサポートエンジニアにラウンドロビンで割り当てられることがあります。このように作業を分割すると、複数のエンジニアが同様のファイルを求め、環境や最近の変更に関する同じコンテキストを構築しようとするため、作業の重複につながる可能性があります。
 
-米国政府向けシフトエンジニアは、米国政府向けサポートとグローバルサポートのハイブリッドな役割を担い、両方のサポートポータルで作業します。シフトエンジニアが従うべき優先順位の階層を以下に示します:
+これを避けるため、これらのチケットを単一の担当者の下にグループ化する方法は次のとおりです。
 
-1. 米国政府向け Emergencies（オンコール時）
-1. 24x7 適用対象の米国政府向け High priority ケース（[24x7 Entitled Customers view](https://gitlab-federal-support.zendesk.com/agent/filters/20166453511316)）
-1. Custom Personal view 内のグローバルサポートケース（[Create the view](#create-the-personal-view-in-global-support)）
-1. SLA 違反済みまたは違反目前の米国政府向けケース
+1. 顧客が 1 〜 2 日のうちに複数のチケットを作成し、それらのチケットがラウンドロビンで割り当てられます。
 
-### グローバルサポートでパーソナルビューを作成する {#create-the-personal-view-in-global-support}
+2. この顧客からチケットを割り当てられたサポートエンジニアが、Slack または crush セッションでチケットについて議論し、それらがおそらく同じ環境に関するものかどうかを判断します。
 
-以下では、米国政府向けシフトエンジニアが貢献できるグローバル側のケースをリスト化するパーソナルビューの作成方法を説明します。
+3. サポートエンジニアの 1 人が、この期間中に作成されたこの顧客のすべてのチケットの割り当てを引き受けることに同意し、その後すぐに新しく作成された関連チケットも引き受ける場合があります。
 
-1. GitLab のグローバルサポートポータルの [create new view](https://gitlab.zendesk.com/admin/workspaces/agent-workspace/views/new) セクションに移動します。
-1. 名前を `US Government Shift View` に設定します。
-1. **Tickets must meet all of these conditions to appear in the view** には次の条件を使用します:
-    - `Status` - `Less than` - `Solved`
-    - `Assignee` - `is` `-`
-    - `Preferred Region for Support` - `is` - `Americas, USA`
-1. **Tickets can meet any of these conditions to appear in the view** には次の条件を使用します:
-    - `Form` - `is` - `Self-Managed`
-    - `Form` - `is` - `SaaS`
-    - `Form` - `is` - `SaaS Account`
-    - `Form` - `is` - `GitLab Dedicated`
-1. **Formatting Options** には次の列を使用します:
-    - `ID`
-    - `SLA`
-    - `Subject`
-    - `Requester`
-    - `Assignee`
-    - `Organization`
-    - `Priority`
-    - `Request date`
-1. Group by: `Priority` - 降順
-1. Order by: `SLA` - 昇順
+4. そのエンジニアは、再び新規チケットを引き受ける準備ができたと判断するまでラウンドロビンから外れるため、自身を overburdened としてマークします。
+
+5. エンジニアが他のチケットの担当を引き受けた直後に同じ顧客から新しいチケットが届いた場合、それらの新しいチケットが同じ環境に該当するかどうかを判断するためにレビューする必要があります。該当する場合、エンジニアはそれらの担当も引き受ける必要があります。
+
+誰もチケットを引き受けたくない場合は、ラウンドロビンが最初に割り当てた人にチケットを割り当てたままにします。
+
+### Getting help with a ticket
+
+一部の情報を機密に保つ必要があるため、US Government チケットに関する支援を得るのは難しい場合があります。しかし、US Government Support ケースを効率的に解決するために、非 US Government エンジニアが必要な専門家である場合も多くあります。
+
+[Communication Guidelines](#communication-guidelines) に従う限り、`#support_self-managed` やその他の Slack チャンネルで質問することが推奨されます。
+
+チケットについてマネージャーの支援が必要な場合は、米国市民のみが US Government インスタンスにアクセスできることを念頭に置いてください。つまり、一部のマネージャーはチケットレベルの詳細について支援できません。あなたが US Government で働く米国市民で、あなたのマネージャーが米国市民でない場合、機密情報を共有せずに問題に対処できないときは、遠慮なく別のマネージャーに連絡してください。
+
+#### Discussion issues from tickets
+
+US Government チケットシステム内のチケットについて非同期コラボレーションをより促進するため、US Government サポートエンジニアがチケットに紐づく機密 GitLab Issue の作成をトリガーできるマクロがあります。この Issue はチケットの期間中開いたままになり、US Government サポートエンジニアがコラボレーターに情報を伝える手段を提供できます。
+
+これらの Issue 内に顧客固有の情報を決して含めないことが重要です。機密であっても、US Government チケットシステムにアクセスできない人々にはまだ表示されます。
+
+これらの Issue のいずれかの作成をトリガーするには、マクロメニューから `General::Create discussion issue` マクロを選択し、チケットを送信します。Support Ops ボットが Issue を作成し、内部メモにそれへのリンクを記載します。
+
+最初、この Issue にはごくわずかな情報しか含まれていません。タイトルにはチケット番号が含まれ、本文にはチケットへのリンクと、ヘッダーでマークされた空のセクションが含まれており、そこに情報が得られ次第記入できます。これらのセクションはすべて任意です。
+
+機密保持要件に違反しない範囲で、チケットに関するできるだけ多くの情報を含めるよう Issue を編集し、その後 Issue へのリンクをコラボレーターと共有するか、GitLab の To-Do システムを通じて他のメンバーをメンションして関与させます。最後に、自分自身を担当者として設定します。
+
+チケットが solved としてマークされると、Support Ops ボットが自動的に Issue をクローズします。
+
+### US Government Support discovery calls
+
+顧客が GitLab スタックのトラブルシューティングに必要なすべての情報を自分で把握して伝えることが難しい場合があります。US Government ポータルで技術サポートケースを提出する際、顧客は、問題を実演し、必要なログやスクリーンショットを収集し、その後サポートケースで非同期作業に戻るために、ケース担当者とディスカバリーセッションを開きたいと示すことができます。
+
+顧客がセッションを希望することを示すチェックボックスを選択すると、ケース履歴の冒頭に、リクエストを行った旨を示す内部メモが表示されます。担当者は、提供されたすべての情報をレビューし、`General::Discovery call response` マクロを選択してセッションのスケジュール調整を開始する必要があります。担当者は、一度限りの Calendly リンクを記入し、関連する可能性のある追加情報をユーザーに要求する必要があります。
+
+`GitLab US Federal Customer Discovery Call` という Calendly 管理のイベントテンプレートがあり、Calendly admin に依頼することでエージェントに割り当てることができます。このイベントタイプは、1 日のリードタイムを持つ 30 分のセッションです。
+
+ディスカバリーコールセッションを待つ間も、引き続き非同期でケースに対応することが推奨されます。
+
+予定されたセッションが行われる際、エージェントは、顧客に問題を実演してもらい、その後協力して、後でケースにアップロードするアーティファクトのコレクションを作成することを期待事項として設定する必要があります。
+
+両者が次のステップについて同じ理解を持つことを確実にするため、収集されたアーティファクトを顧客に再確認させ、観察された内容の技術的な説明を提供する短いコール後の要約が推奨されます。
+
+## Emergency ticket handling
+
+オンコールシフトのカバレッジ、ページングの動作、緊急受付の期待事項については、[How to Perform US Government On-Call Duties](/handbook/support/workflows/usgovernment_oncall/) を参照してください。
+
+Support が使用する一般的な緊急対応パターンについては、[How to Perform Customer Emergencies Duties](/handbook/support/workflows/customer_emergencies_workflows/) を参照してください。
+
+このセクションでは、緊急事態が受け入れられ対応された後に、US Government の緊急チケットを Zendesk でどのように処理すべきかを記載しています。
+
+### During an active emergency
+
+緊急チケットは、標準的なサポート業務とは異なるワークフローとして扱う必要があります。
+
+緊急事態が進行中の間:
+
+- 最初に対応したサポートエンジニアにチケットが自動的に割り当てられます
+
+- 緊急チケットは、緊急イベントのアクティブな調整記録として残しておく必要があります
+
+- 一時的な緊急の重み付けは、顧客が積極的に緊急状態にある期間に限って維持する必要があります
+
+### After an emergency is resolved
+
+緊急状態が解決されたら、チケットをアクティブな緊急事態として開いたままにすべきではありません。
+
+目標は、緊急ワークフローとその一時的なチケット重み付けを、アクティブな緊急事態の期間に限定することです。
+
+#### Standard resolution paths
+
+緊急事態が解決された後は、以下の標準的なパスのいずれかを使用します。
+
+1. 関連する非緊急チケットが既に存在する場合は、緊急チケットをそのチケットにマージし、そこで任意のフォローアップ作業を継続します。
+
+2. 関連する非緊急チケットが存在しない場合は、緊急チケットを solve または close します。
+
+緊急対応後のフォローアップ作業は、非緊急チケットで行う必要があります。
+
+必要に応じて、タイムラインを追いやすく保つため、緊急チケットとフォローアップチケットをリンクする内部メモを残します。
+
+#### Discouraged exception: continuing the same ticket as a non-emergency
+
+まれなケースでは、緊急事態が解決された後も同じチケットから作業を継続するのが理にかなう場合があります。
+
+その場合、サポートエンジニアは、ワークロードバランシングにおいてチケットがアクティブな緊急事態のように振る舞わないよう、手動で緊急の重み付けを削除する必要があります。ほとんどの場合、これはチケットの重みを `5` から `1` に下げることを意味し、残りのフォローアップ作業の量に基づいて判断します。
+
+このパスは推奨されず、フォローアップを別個の非緊急チケットに移すと顧客やチームに不必要な混乱を生じさせる場合にのみ使用すべきです。
+
+この例外パスを使用する場合は、チケットを開いたままにした理由と、重みが手動で調整されたことを説明する内部メモを残します。
+
+#### Why this matters
+
+緊急チケットは、ワークロードバランシングのためにチケットの重み `5` を持ちます。
+
+その引き上げられた重みは、エンジニアが積極的に緊急事態を管理している間、新規ケースの割り当てに対する一時的な保留として機能します。緊急事態が解決された後にチケットを close またはマージすることで、重み 5 のボーナスをアクティブな緊急事態の期間に限定し、US Government の割り当てシステムにおける長期的な不均衡を防ぎます。
 
 ## GitLab Dedicated for Government
 
-### 高レベルのメモ
+### High-level notes
 
-1. パニックにならない。
-1. **アプリケーションかインフラか**？ GitLab Dedicated のチケットでは、それが GitLab アプリケーションの問題なのかインフラの問題なのかを判別することが重要です。判断のためには [ログ](/handbook/support/workflows/dedicated_logs/) と [可観測性メトリクス](/handbook/support/workflows/dedicated_instance_health) を使ってください。
-1. ログとメトリクスは "in-boundary" にあり、VPN アクセスが必要です。質問や問題があれば `#g_dedicated-us-pubsec` で確認してください。セットアップ手順は [こちら](https://gitlab.com/gitlab-com/gl-infra/us-public-sector/documentation/-/blob/main/runbooks/remote-access-vpn.md?ref_type=heads) です。
+1. 慌てないでください。
 
-#### ヘルプを得る
+2. いかなる GitLab Dedicated チケットでも、問題が GitLab アプリケーションの問題なのか、インフラの問題なのかを判断します。[ログ](/handbook/support/workflows/dedicated_logs/)と[オブザーバビリティメトリクス](/handbook/support/workflows/dedicated_instance_health)を手がかりにしてください。
 
-| 何 | 用途 |
-| ------ | ------ |
-| [GitLab Dedicated Overview](/handbook/support/workflows/dedicated/) | 基本的な質問の出発点として最適 |
-| [Troubleshooting Tables](/handbook/support/workflows/saas_sm_cheatsheet/) | GitLab Dedicated で「何が異なるか」を理解するため |
-| `CompSecGov` で [RFH](/handbook/support/workflows/how-to-get-help/#how-to-formally-request-help-from-the-gitlab-development-team) を起票 | お客様に代わって [構成変更](/handbook/support/workflows/dedicated/#configuration-changes) を依頼する場合や、インシデントではない事項に関して SRE のヘルプを求める場合 |
-| Slack の [#support_gitlab-dedicated](https://gitlab.enterprise.slack.com/archives/C058LM1RL3V) | GitLab Dedicated（コマーシャルまたは政府向け）にフォーカスしているサポート関係者への一般的な質問 |
+3. ログとメトリクスは境界内にあり、VPN アクセスが必要です。質問や問題がある場合は、`#g_dedicated-us-pubsec` で尋ねてください。セットアップ手順は[こちら](https://gitlab.com/gitlab-com/gl-infra/us-public-sector/documentation/-/blob/main/runbooks/remote-access-vpn.md?ref_type=heads)です。
+
+#### Getting help
+
+|   |   |
+|---|---|
+|What|Useful for|
+|[GitLab Dedicated Overview](/handbook/support/workflows/dedicated/)|基本的な質問を始めるのに適した場所|
+|[Troubleshooting Tables](/handbook/support/workflows/saas_sm_cheatsheet/)|GitLab Dedicated の何が異なるかを理解する|
+|`CompSecGov` で [RFH](/handbook/support/workflows/how-to-get-help/#how-to-formally-request-help-from-the-gitlab-development-team) を開く|顧客に代わって[設定変更](/handbook/support/workflows/dedicated/#configuration-changes)をリクエストする、またはインシデント以外の事項について SRE から支援を得る|
+|Slack の [#support_gitlab-dedicated](https://gitlab.enterprise.slack.com/archives/C058LM1RL3V)|商用または政府を問わず、GitLab Dedicated に集中する Support メンバー向けの一般的な質問|
 
 ### Requests for Help
 
-Requests for Help は [CompSecGov](https://compsecgov.gitlab-dedicated.us/gitlab-dedicated-us-public-sector/customer-support) 上の "In-Boundary" に存在します。CompSecGov へのアクセスは [FedRAMP Okta](https://gitlabus.okta.com) 経由です。アクセスが必要なのにまだ持っていない場合は、Wade または Kasey に連絡してプロセスを開始してください。
+Requests for Help は、境界内の [CompSecGov](https://compsecgov.gitlab-dedicated.us/gitlab-dedicated-us-public-sector/customer-support) にあります。CompSecGov へのアクセスは [FedRAMP Okta](https://gitlabus.okta.com) を通じて行われます。アクセスが必要で持っていない場合は、Wade または Kasey に連絡してプロセスを開始してください。
 
-GitLab Dedicated のチケットでは、それが GitLab アプリケーションの問題なのかインフラの問題なのかを判別することが重要です。インフラ起因の RFH は CompSecGov の手順に従い、アプリケーション起因の RFH は [通常の手順](/handbook/support/workflows/how-to-get-help/#how-to-formally-request-help-from-the-gitlab-development-team) に従います。
+いかなる GitLab Dedicated チケットでも、問題が GitLab アプリケーションの問題なのか、インフラの問題なのかを判断します。インフラ問題の RFH は CompSecGov の手順に従い、アプリケーション問題の RFH は[通常の手順](/handbook/support/workflows/how-to-get-help/#how-to-formally-request-help-from-the-gitlab-development-team)に従います。
 
-CompSecGov 上で RFH を起票するには、`Customer Support` グループに移動し、RFH の Issue テンプレートを使って新規 Issue を起票します。
+CompSecGov で RFH を開くには、`Customer Support` グループに移動し、RFH の Issue テンプレートを使って新しい Issue を開きます。
 
-#### Emergency 対応
+#### Handling emergencies
 
-[GitLab Dedicated for Government](https://docs.gitlab.com/ee/subscriptions/gitlab_dedicated_for_government/) のお客様からの Emergency は、[US Government Emergency support](https://about.gitlab.com/support/us-government-support/#us-government-emergency-support) ローテーションを通じて入ってきます。
+[GitLab Dedicated for Government](https://docs.gitlab.com/ee/subscriptions/gitlab_dedicated_for_government/) の顧客からの緊急事態は、[US Government Emergency support](https://about.gitlab.com/support/us-government-support/#us-government-emergency-support) ローテーションを通じて届きます。
 
-[GitLab Dedicated emergency 対応](/handbook/support/workflows/dedicated/#handling-gitlab-dedicated-emergencies) のグローバルワークフローがあなたのガイドです。
+Global Support Team の [Handling GitLab Dedicated emergencies](/handbook/support/workflows/dedicated/#handling-gitlab-dedicated-emergencies) ワークフローがガイドになります。
 
-GitLab Dedicated にフォーカスしている GitLab Support チームメンバーへの追加支援を依頼するために、`@spt_focus-dedicated` Slack ハンドルでメンションすることも検討してください。
+追加の支援については、GitLab Dedicated に集中する GitLab Support チームのメンバーに ping を送るために `@spt_focus-dedicated` Slack ハンドルの使用を検討してください。
 
-[GitLab Dedicated US PubSec オンコールランブック](https://gitlab.com/gitlab-com/gl-infra/us-public-sector/documentation/-/blob/main/runbooks/on-call.md) が SSOT です。米国政府向けサポートチームはブックマークして参照してください。
+[GitLab Dedicated US PubSec On-call runbook](https://gitlab.com/gitlab-com/gl-infra/us-public-sector/documentation/-/blob/main/runbooks/on-call.md) は SSOT であり、US Government Support チームはこれをブックマークして参照する必要があります。
 
-### アクセスの取得
+### Getting access
 
-[FedRAMP Okta](https://gitlabus.okta.com/) または [CompSecGov](https://compsecgov.gitlab-dedicated.us/) へのアクセス権がない場合は、この [トレーニングモジュール](https://gitlab.com/gitlab-com/support/support-training/-/blob/main/.gitlab/issue_templates/GitLab%20Dedicated%20for%20Government.md) に従ってアクセス取得を進めてください。
+[FedRAMP Okta](https://gitlabus.okta.com/) または [CompSecGov](https://compsecgov.gitlab-dedicated.us/) へのアクセス権がない場合は、この [Training Module](https://gitlab.com/gitlab-com/support/support-training/-/blob/main/.gitlab/issue_templates/GitLab%20Dedicated%20for%20Government.md) に従ってアクセス取得を進めてください。
 
-### トラブルシューティング
+### Troubleshooting
 
-FedRAMP Okta インスタンスは、90 日間アクティビティがないとアカウントをロックします。アカウントのロックを解除するには、ロックアウトされた CompSecGov 上で [アクセスリクエスト](https://compsecgov.gitlab-dedicated.us/corporate-security/access-management/-/issues) を起票する必要があります。
+FedRAMP Okta インスタンスは、90 日間の非アクティブ状態の後にアカウントをロックします。アカウントのロックを解除するには、ロックアウトされた CompSecGov 上で [Access Request](https://compsecgov.gitlab-dedicated.us/corporate-security/access-management/-/issues) を開く必要があります。
 
-このプロセスについては、#g_dedicated-us-pubsec、Wade、Ian、Kasey、または Nick のいずれかにヘルプを依頼してください。
+このプロセスについては、`#g_dedicated-us-pubsec`、Wade、Ian、Kasey、または Nick のいずれかに支援を求めてください。

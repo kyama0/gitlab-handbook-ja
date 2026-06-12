@@ -1,262 +1,258 @@
 ---
 title: リーダーシップ
-upstream_path: "/handbook/leadership/"
-upstream_sha: "fe88192cad67a795a237396e552566cb08c118b9"
-translated_at: "2026-04-29T06:00:00Z"
+upstream_path: /handbook/leadership/
+upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
+translated_at: "2026-06-12T21:18:07Z"
 translator: claude
 stale: false
-lastmod: "2026-03-12T10:48:57-04:00"
+lastmod: 2026-06-12T15:50:01-05:00
 ---
 
 このページはリーダーシップのポインターを掲載しています。
-最初のいくつかのヘッダーは、[チーム構造ページ](/handbook/company/structure/)で定義されているグループ分けを使用して、どのグループに適用されるかを示しています。
+最初のいくつかの見出しは、[チーム構造ページ](/handbook/company/structure/)で定義されているグループ分けを使って、どのグループに適用されるかを示しています。
 
 ## Managers of One
 
-オールリモートの組織では、各チームメンバーが[Manager of One（manager of one）](https://signalvnoise.com/posts/1430-hire-managers-of-one)であることを望んでいます。[Manager of One](/handbook/values/#managers-of-one)は[効率性バリュー](/handbook/values/#efficiency)に関連する属性です。GitLab で成功するために、チームメンバーは目標を達成するための日々の優先事項を自ら設定する必要があります。Manager of Oneは自分の仕事のトーンを設定し、アイテムを割り当て、何をやり遂げる必要があるかを決定します。どのような役割であっても、自己リーダーシップはManager of Oneとして成功するために不可欠なスキルです。
+オールリモートの組織では、私たちは各チームメンバーが [manager of one](https://signalvnoise.com/posts/1430-hire-managers-of-one) であることを望みます。[manager of one](/handbook/values/#managers-of-one) は、私たちの [Efficiency バリュー](/handbook/values/#efficiency)に紐づく属性です。GitLab で成功するには、チームメンバーは目標を達成するための日々の優先事項を自ら立てる必要があります。manager of one は自分の仕事のトーンを定め、アイテムを割り当て、何をやり遂げる必要があるかを判断します。どんなロールであっても、self-leadership は manager of one として成功するために不可欠なスキルです。
 
-1. GitLab では、個人貢献者であるか、リーダーシップチームのメンバーであるかにかかわらず、すべての人にリーダーシップが求められます。
-1. リーダーとして、GitLab のチームメンバーはあなたの行動に従います。常に正しいことをしてください。努力によって模範を示してください。
-1. GitLab に参加するすべての人が、私たちの[バリュー](/handbook/values/)の大使であり、私たちの[文化](/handbook/company/culture/)の守護者であると考えるべきです。
-1. 行動は会社の内外で一貫している必要があります。会社の外でも正しいことをしています。
-1. GitLab はあなたが自分自身を最もよく知っているため、あなたにとって最善のことに関するあなたの判断を尊重します。他の場所により良い機会があるなら、会社への忠誠心から GitLab にとどまる必要はありません。
-1. 困難な時期には、お互いのためにやっているときに人々は最善の努力を発揮します。
-1. 私たちは[非同期](/handbook/company/culture/all-remote/)で作業します。模範を示し、[物事が起きた時点で Issue に書き留める必要がある](/handbook/company/culture/all-remote/)ことを人々が理解できるようにしてください。ドキュメンテーションでチームに説明責任を持たせましょう。
-1. 私たちは民主的またはコンセンサス主導の会社ではありません。人々はコメントや意見を出すことを奨励されていますが、最終的には[一人が](/handbook/people-group/directly-responsible-individuals/)すべてのフィードバックを聞いた後に決定を下します。
-1. 反論して建設的なディベートを行うことは奨励されていますが、[知的に議論する](https://www.themarginalian.org/2014/03/28/daniel-dennett-rapoport-rules-criticism/)ようにしてください。
-1. 私たちは結束よりも真実の追求を大切にします。
-1. タイムゾーンの違いから非同期の作業フローをサポートせず、実施が難しいため、可能な限り[会議](/handbook/company/culture/all-remote/meetings/)は避けます。
-1. 会議は時間どおりに開始し、自分が時間どおりにいること、全員いるか確認しないこと、時間どおりに来た人を待たせることや遅刻した人のために繰り返すことで罰しないことを心がけてください。会議がプロセスや決定のブロックを解除するとき、それを祝うのではなく、代わりに次の質問に取り組んでください：将来的に会議なしでどのようにブロックを解除できるか？
-1. 会議の準備と参加に意図的であること。非同期コミュニケーションは、人々が[カレンダーを確認して会議前に準備する](/handbook/company/culture/all-remote/meetings/#how-can-i-prepare-for-a-remote-meeting)ときに最も効果的です。
-1. [フィードバック](/handbook/company/culture/all-remote/)をたくさん提供します。改善に向けた提案を惜しまないでください。これにより成長できます。フィードバックを通じて他者を助けることに誇りを持ってください。
-1. [改善に集中する](/handbook/values/#focus-on-improvement)。外部の人と会うときは、常に改善すべき点を尋ねてください。
-1. [Paul Grahamのアドバイス](https://twitter.com/paulg/status/802102152319606784)に従って：組織をよりシンプルにするよう努めてください。
-1. 「ご存知のように」「知らなかったとすれば」「ご存知の通り」「ご存知かもしれませんが」のようなことを言うことは有害です。知っている人にはそれを言う必要がなく、知らない人は何かを見逃したような気がして、文脈を尋ねることを恐れてしまうかもしれません。
-1. [他人の名前を使ったり](https://twitter.com/emiliejayg/status/1198731054162432000?s=12)、自分の肩書を思い出させたり、物事を進めるために[「地位を利用する」](/handbook/values/#dont-pull-rank)ことをしないでください。
-1. 目標を設定し適切なタイムラインを設定する責任を取ることで、自分の役割のCEOとして行動してください。自分の貢献を優先し、[すべてを知ることは不可能](/handbook/values/#its-impossible-to-know-everything)であることを理解してください。
-1. 目標の状況についてチームとpeople leaderに明確に伝えてください。課題を提示する分野に素早く対処するか、割り当てられたタイムフレーム内に達成できない目標を再評価してください。
+1. GitLab では、個人コントリビューターであれリーダーシップチームのメンバーであれ、全員にリーダーシップが求められます。
+1. リーダーとして、GitLab のチームメンバーはあなたの行動に倣うので、常に正しいことをしてください。努力をもって率先垂範してください。
+1. GitLab に加わる全員が、自らを私たちの [バリュー](/handbook/values/)のアンバサダーであり、私たちの [文化](/handbook/company/culture/)の守り手であると考えるべきです。
+1. 行動は社内でも社外でも一貫しているべきです。私たちは社外でも正しいことをします。
+1. GitLab はあなた自身が何が最善かについての判断を尊重します。あなたが自分自身を最もよく知っているからです。どこか別の場所により良い機会があるなら、会社への忠誠心から GitLab に留まる必要はありません。
+1. 厳しい時期には、人はお互いのためにやっているときに最大限の努力を注ぎます。
+1. 私たちは [非同期](/handbook/company/culture/all-remote/)で働きます。率先垂範し、[起きたことはその都度 Issue に書き留める必要がある](/handbook/company/culture/all-remote/)ことを全員に理解してもらってください。ドキュメントによってチームに説明責任を持たせてください。
+1. 私たちは民主主義やコンセンサス駆動の会社ではありません。コメントや意見を述べることは奨励されますが、最終的にはすべてのフィードバックを聞いたうえで [1 人が決定](/handbook/people-group/directly-responsible-individuals/)します。
+1. 意見が異なることや建設的な議論をすることは奨励されますが、どうか [知的に議論](https://www.themarginalian.org/2014/03/28/daniel-dennett-rapoport-rules-criticism/)してください。
+1. 私たちは結束よりも真実の探求を重んじます。
+1. 私たちは可能な限り [ミーティング](/handbook/company/culture/all-remote/meetings/)を避けます。ミーティングは非同期のワークフローを支えず、タイムゾーンの違いから実施が難しいからです。
+1. ミーティングは時間どおりに始め、自分も時間どおりに参加し、全員が揃っているか尋ねず、時間どおりに来た人を、遅れて来る人を待ったり遅れて来た人のために繰り返したりして罰しないでください。ミーティングがプロセスや意思決定のブロックを解消したときは、それを祝うのではなく、次の問いに向き合ってください: 今後、ミーティングを必要とせずにブロックを解消するにはどうすればよいか？
+1. ミーティングの準備と参加の仕方には意図を持ってください。非同期コミュニケーションは、皆が [自分のカレンダーを確認し、ミーティングの前に準備する](/handbook/company/culture/all-remote/meetings/#how-can-i-prepare-for-a-remote-meeting)ときに最もうまく機能します。
+1. 私たちは [フィードバック](/handbook/company/culture/all-remote/)を、たくさん与えます。改善のための提案を惜しまないでください。それが私たちの成長を助けます。フィードバックを通じて他者を助けることに誇りを持ってください。
+1. [改善に注力](/handbook/values/#focus-on-improvement)してください。社外の人と会うときは、いつも私たちが何を改善すべきだと思うか尋ねてください。
+1. [Paul Graham のアドバイス](https://twitter.com/paulg/status/802102152319606784)に従い、組織をよりシンプルにするよう努めてください。
+1. 「お聞き及びかもしれませんが」「檻の中で暮らしていない限りご存じでしょうが」「誰もが知っているように」「ご存じかもしれませんが」といった趣旨の発言は有害です。知っている人にはそれを言う必要がありません。知らない人は何かを見逃したように感じ、その背景を尋ねるのを恐れるかもしれません。
+1. 物事を進めるために、[他人の名前を使ったり](https://twitter.com/emiliejayg/status/1198731054162432000?s=12)、自分の肩書きを持ち出したり、その他の方法で [「権威をかさにきたり」](/handbook/values/#dont-pull-rank)しないでください。
+1. 目標と適切なタイムラインを設定する責任を引き受けることで、自分自身と自分のロールの CEO として振る舞ってください。自分のコントリビューションに優先順位をつけ、[すべてを知ることは不可能](/handbook/values/#its-impossible-to-know-everything)であることを認識してください。
+1. 自分の目標の状況について、チームやピープルリーダーと明確にコミュニケーションしてください。課題となる領域に対処したり、割り当てられた期間内に達成できない目標を再評価したりするために、迅速に行動してください。
 
-### GitLab でのManager of Oneの行動例
+### GitLab における manager of one の行動例
 
-1. 同期的なブレインストーミングコールに出席するよう求められたとき、チームメンバーは Issue を作成して[チームのアイデアを非同期で要求する](/handbook/company/culture/all-remote/asynchronous/#how-to-decline-meetings-in-favor-of-async)。
-1. people leaderが[多様性、インクルージョン、ビロンギング](/handbook/values/#diversity-inclusion)の価値を推進し、[メンターになる](/handbook/values/#be-a-mentor)。
-1. チームメンバーが[自己サービスと自己学習](/handbook/values/#self-service-and-self-learning)の定期的な実践を実装するために、学習と開発のための専用時間をブロックする。
-1. 新しい役割のチームメンバーが、学習中のプロセスに非効率性を発見する。求められたり監督されたりすることなく、変更を提案するマージリクエスト（MR）を作成してレビューのためにマネージャーに割り当てる。
-1. 予定された会議のアジェンダが通話終了10分前に完了したとき、出席者が通話を早めに終了する。
-1. people leaderが[CREDIT バリュー](/handbook/values/)を示す新しいチームメンバーを採用する。
-1. トピックを議論するために他者の時間を求める前に、考えをまとめて[提案を作成する](/handbook/values#make-a-proposal)。
-1. Manager of Oneがフィットネス、食事、[有給休暇](/handbook/people-group/time-off-and-absence/time-off-types/)、個人的な予約のためにカレンダーをブロックすることでウェルビーイングを優先する。
-1. チームメンバーがマネージャーやチームがすでに認識していると仮定する代わりにブロッカーを表面化し、[公開作業](/handbook/values/#public-by-default)と[低いレベルの恥](/handbook/values/#low-level-of-shame-when-dogfooding)で他者のブロック解除に取り組む。
+1. 同期的なブレインストーミングのコールへの参加を求められたとき、チームメンバーは代わりに Issue を開き、[チームのアイデアを非同期で求める](/handbook/company/culture/all-remote/asynchronous/#how-to-decline-meetings-in-favor-of-async)。
+1. ピープルリーダーが、[メンターになる](/handbook/values/#be-a-mentor)ことで、私たちの [ダイバーシティ、インクルージョン、ビロンギング](/handbook/values/#diversity-inclusion)のバリューを推進する。
+1. チームメンバーが学習と能力開発のための専用時間を確保し、[セルフサービスとセルフラーニング](/handbook/values/#self-service-and-self-learning)を日常的に実践する。
+1. 新しいロールに就いたチームメンバーが、学習しているプロセスに非効率を見つける。求められたり監督されたりすることなく、変更を提案するマージリクエスト（MR）を開き、レビューのためにマネージャーにアサインする。
+1. 予定されていたミーティングのアジェンダがコール終了予定の 10 分前に完了したとき、参加者がコールを早めに終了する。
+1. ピープルリーダーが、私たちの [CREDIT バリュー](/handbook/values/)を体現する新しいチームメンバーを採用する。
+1. あるトピックについて議論するために他者の時間をもらう前に、自分の考えを整理する時間を確保し、[提案を作成する](/handbook/values#make-a-proposal)。
+1. manager of one が、フィットネス、食事、[有給休暇](/handbook/people-group/time-off-and-absence/time-off-types/)、個人の予定のためにカレンダーをブロックすることで、ウェルビーイングを優先する。
+1. チームメンバーが、マネージャーやチームがすでに把握していると思い込むのではなくブロッカーを表面化させ、同時に [パブリックに働く](/handbook/values/#public-by-default)ことと [低い羞恥心](/handbook/values/#low-level-of-shame-when-dogfooding)をもって他者のブロック解消にも取り組む。
 
-## Interim および Acting リーダーシップ
+## Interim と Acting のリーダーシップ
 
-場合によっては、[マネジメントグループ](/handbook/company/structure#management-group)、[ディレクターグループ](/handbook/company/structure/#director-group)、[シニアディレクターとVP](/handbook/company/structure/#senior-directors-and-vps)、あるいは[E-group](/handbook/company/structure/#e-group)の個人が「Interim」または「Acting」という肩書きを持つことがあります。
+場合によっては、[Management グループ](/handbook/company/structure#management-group)、[Director グループ](/handbook/company/structure/#director-group)、[Senior Directors and VPs](/handbook/company/structure/#senior-directors-and-vps)、さらには [E-group](/handbook/company/structure/#e-group)の個人が「Interim」または「Acting」の肩書きを持つことがあります。
 
-1. **Acting** とは、その人が一時的にこの役割を担っており、一定期間後または外部採用などの他の条件の後に元の役割に戻ることを意味します。
-1. **Interim** とは、その個人が役割への昇進に向けて取り組んでいることを意味します。
+1. **Acting** は、その人が一時的にそのロールを担っており、一定の時間が経過した後、または外部からの採用など他の条件が満たされた後に、元のロールに戻ることを意味します。
+1. **Interim** は、その個人がそのロールへの昇進に向けて取り組んでいることを意味します。
 
-どちらの場合も、役割の全責任を果たします。役割の将来について質問がある場合は、その人またはそのマネージャーに問い合わせてください。
+いずれの場合も、その人はそのロールのすべての責任を果たします。そのロールの今後について質問があれば、本人またはそのマネージャーに尋ねてください。
 
-個々の部門には、これらの役割を担う資格がある人について独自の基準があります。部門のキャリア開発ページを確認してください。
+各部門には、これらのロールを担う資格がある人についての独自の基準があるので、所属部門のキャリア開発ページを確認してください。
 
 ## 意思決定
 
-[意思決定](/handbook/leadership/making-decisions/)リーダーシップページをご覧ください。
+[意思決定](/handbook/leadership/making-decisions/)のリーダーシップページを参照してください。
 
-## コミュニケーションは直接的であり、階層的ではない
+## コミュニケーションは階層的ではなく直接的であるべき
 
-ほとんどの企業はコマンドチェーンを通じてトップダウンでコミュニケーションします。このコミュニケーションフローはマネージャーに権限を与えますが、チームメンバーが仕事を完了するためにコミュニケーションが必要な人と直接つながることができないため、非効率性も生じます。GitLab では、すべてのチームメンバーが問題を迅速に解決し、解決策を見つけ、その他の方法でサポートするために適切な人（または人々）に直接連絡することが奨励されています。直属のマネージャーへの礼儀として、リクエストにCCを入れてください。チームメンバーにマネージャーを通じてエスカレーションして応答を待つことを求める不必要な摩擦は奨励しません。重要なのは結果を出す効率性です。CEOに Slack し、VPに Slack し、同僚に Slack してください。GitLab を成功させるために必要なことをしてください。
+ほとんどの企業は、指揮命令系統を通じて上から下へとコミュニケーションを行います。このコミュニケーションの流れはしばしばマネージャーに権限を与えますが、同時に非効率も生み出します。チームメンバーが自分の仕事を進めるためにコミュニケーションを取る必要のある相手と直接つながれないからです。GitLab では、すべてのチームメンバーが、Issue を素早く解消したり、問題を解決したり、その他の方法で支援したりするために、誰であれ適切な人（または複数の人）に連絡を取ることが奨励されます。ただし、直属のマネージャーには配慮し、依頼の cc に入れてください。私たちは、チームメンバーにマネージャーを通じてエスカレーションさせ、返答が戻ってくるのを待たせるような不要な摩擦を奨励しません。重要なのは結果にたどり着く効率です。CEO に Slack を送る、VP に Slack を送る、同僚に Slack を送る。GitLab を成功させるために必要なことをしてください。
 
-マネージャーはコミュニケーションのボトルネックやサイロであるべきではありません。
-誰もが問題を解決するために最善の情報を持って他の誰にでも[快適に](/handbook/values/#short-toes)連絡できるように感じるべきです。
-これはより[効率的で](/handbook/values/#efficiency)、[透明性があり](/handbook/values/#transparency)、[協力的な](/handbook/values/#collaboration)作業方法です。
+マネージャーは、コミュニケーションのボトルネックやサイロになるべきではありません。
+誰もが、問題を解決するために持ちうる最善の情報をもって、誰にでも気兼ねなく連絡できると [感じられる](/handbook/values/#short-toes)べきです。
+これは、より [効率的](/handbook/values/#efficiency)で、[透明](/handbook/values/#transparency)で、[協働的](/handbook/values/#collaboration)な働き方です。
 
-## フィードバックの提供
+## フィードバックを与える
 
-マネージャーとチームメンバーの両方にとって、定期的な[フィードバック](/handbook/company/culture/all-remote/)の提供は非常に重要です。フィードバックはコーチングセッションの形を取ることができ、[1対1のミーティング](/handbook/leadership/1-1/)とは別に行われます。フィードバックの提供は準備も含まれており、状況に応じて別のアジェンダを作成し、以下のように構成してください：
+定期的に [フィードバック](/handbook/company/culture/all-remote/)を与えることは、マネージャーとチームメンバーの双方にとって極めて重要です。フィードバックは、[1-to-1 ミーティング](/handbook/leadership/1-1/)とは別の、コーチングセッションという形を取ることもできます。フィードバックを与えることは準備でもあり、状況に応じて、別個のアジェンダを作成し、次のように構成すべきです:
 
 1. [コンテキスト](/handbook/company/culture/all-remote/)を提供する。
-1. これは以下に該当するか自問する：
-    - 実行可能
-    - 具体的
-    - [親切](/handbook/values/#kindness)（フィードバックはその人の助けになるか？注意：親切であることは礼儀正しいこととは同じではない）
-    - 客観的（公平に近い）
-    - 職務役割とcompa ratioに関連している
+1. これは次の条件を満たすか自問する:
+    - アクションにつながるか
+    - 具体的か
+    - [親切か](/handbook/values/#kindness)（そのフィードバックはその人を助けるか？ 注: 親切（kind）であることは、感じが良い（nice）ことと同じではありません。）
+    - 客観的か（Fair に近い）
+    - 職務ロールやコンパレシオに関連しているか
 
-### 根本原因の特定
+### 根本原因を特定する
 
-パフォーマンスが低下した場合、最善の対処法は根本原因を特定しようとすることです。これは言うほど簡単ではありません。[CEB（現Gartner）](https://www.gartner.com/en)がこれを支援するための優れたツールを作成しました：[パフォーマンス Issue の根本原因診断](https://offices.depaul.edu/human-resources/employee-relations/Documents/Performance%20Issue%20Root%20Cause%20Diagnostic.pdf)。根本原因を特定することが常に可能または適切とは限らないため、[パフォーマンス不足プロセス](/handbook/leadership/underperformance/)に従うべきです。
+パフォーマンスが低下したとき、それに取り組む最善の方法は、根本原因を突き止めようとすることである場合があります。これは言うは易く行うは難しです。[CEB（現 Gartner）](https://www.gartner.com/en)が、これを助けるために作成した [performance issue root cause diagnostic](https://offices.depaul.edu/human-resources/employee-relations/Documents/Performance%20Issue%20Root%20Cause%20Diagnostic.pdf) という優れたツールがあります。根本原因を特定することが常に可能または適切とは限らないので、その場合は [underperformance プロセス](/handbook/leadership/underperformance/)に従うべきです。
 
 ## ネガティブなフィードバックへの対応
 
-リーダーとして、ネガティブな[フィードバック](/handbook/company/culture/all-remote/)への対応方法はチームに大きな影響を与えます。権威のある人に懸念を持ちかけることが難しい人もいることを覚えておき、感度と感謝の気持ちを持って対応してください。特に以下の点を心がけてください：
+リーダーとして、ネガティブな [フィードバック](/handbook/company/culture/all-remote/)への対応の仕方は、あなたのチームに大きな影響を与えます。権威ある立場の人に懸念を伝えるのは難しいことがあると心に留め、感受性と感謝をもって対応してください。特に、次のことを念頭に置くことをおすすめします:
 
-- 議論したり防御的になったりしないでください。フィードバックをそのままの意味で受け入れてください：あなたの仕事や専門的な関係を改善しようとする試みです。自分を説明しなければならない場合は、共感的であり続けるようにしてください。
-- 行動を延期することは問題ありません（むしろ望ましい）。ネガティブなフィードバックを受けたとき、自分の行動を正当化するか変化を約束しなければならないように感じることが多く、大きなチームを率いているときに変化が常に容易ではないため、正当化がデフォルトになりがちです。フィードバックを評価して進め方を決めるための時間が必要だと言うことは問題ありません。
-- [ネガティブなフィードバックへの正しい対応方法](https://hbr.org/2018/05/the-right-way-to-respond-to-negative-feedback)
-- 部門内または組織の別の部分のチームメンバーがあなたに来て、自分たちまたは自分たちの部下の貢献があなたの部下によって評価されていないと感じると言う場合、マネージャーはこれを解決しようとするべきです。研究によると、これは少数派グループに対してより起こりやすいことが示されています。[DRI はフィードバックを認識することなく無視できる](/handbook/people-group/directly-responsible-individuals/)こと、そして[貢献を評価することはそれに同意することと同じではない](/handbook/values/#collaboration-is-not-consensus)ことに注意してください。これは、帰属なしに他人のアイデアを流用したり、人身攻撃でアイデアを却下したりすることについてです。
+- 議論したり身構えたりしない。フィードバックをありのままに受け入れてください: それは、あなたの仕事やプロフェッショナルな関係を改善しようとする試みです。説明する必要がある場合でも、共感的であり続けるよう努めてください。
+- 行動を後回しにするのは問題ありません（むしろ望ましいことです）。ネガティブなフィードバックを受けると、私たちはしばしば自分の行動を正当化するか変化を約束しなければならないと感じます。そして、大きなチームに責任を負っているとき変化は必ずしも容易ではないため、正当化がデフォルトになります。フィードバックを評価してどう進めるかを決めるのに時間が必要だと言って構いません。
+- [ネガティブなフィードバックへの正しい対応の仕方](https://hbr.org/2018/05/the-right-way-to-respond-to-negative-feedback)
+- あなたの部門や組織の別の部分のチームメンバーがあなたのところに来て、自分自身やそのレポートのコントリビューションがあなたのレポートに評価されていないと感じると言った場合、マネージャーはこれを解決しようとすべきです。研究によれば、これはアンダーレプレゼンテッドなマイノリティにより起こりやすいとされています。なお、[DRI はフィードバックを認めずに無視する自由がある](/handbook/people-group/directly-responsible-individuals/)こと、そして [コントリビューションを評価することはそれに同意することと同じではない](/handbook/values/#collaboration-is-not-consensus)ことに留意してください。ここで問題にしているのは、他人のアイデアを出典を示さずに横取りすること、または ad-hominem（人身攻撃）な発言でアイデアを退けることです。
 
-## 1対1
+## 1-to-1
 
-[1-1](/handbook/leadership/1-1/)をご覧ください。
+[1-1](/handbook/leadership/1-1/)を参照してください。
 
-## スキップレベルのインタラクション
+## スキップレベルのやり取り
 
-[スキップレベル](/handbook/leadership/skip-levels/)をご覧ください。
+[skip-levels](/handbook/leadership/skip-levels/)を参照してください。
 
-## あなたの個人 README
+## あなた個人の README
 
-チームメンバーの README ページは、特にまだ一緒に働いたことのない人々にとって、そのチームメンバーと一緒に働くことがどのようなものかを理解するためのものです。また、意図的に脆弱性を示し、良好な仕事関係のアイデアを共有し、現在または将来チームに参加するかもしれない人々の不安を軽減することで、信頼を築くための誠実な努力でもあります。
+チームメンバーの README ページは、その人と一緒に働くのがどのようなものかを他者が理解するのを助けることを目的としています。特に、これまで一緒に働いたことのない人にとって有用です。それはまた、意図的に弱さを見せることで信頼を築き、良い働きの関係についての自分の考えを共有し、今あるいは将来あなたのチームにいるかもしれない人々の不安を減らそうとする、善意の試みでもあります。
 
-README は人がどのように働くかについての真実のレポートを提供し、バイアス/仮定を減らし、共通のフレームワークに基づいて人々が協力できるようにします。GitLab の[透明性](/handbook/values/#transparency)バリューの一環として、すべての GitLab チームメンバーが自分自身の README を作成することを検討するよう奨励しています。
+README は、その人がどのように働くかについての真摯なレポートを提供し、バイアスや思い込みを減らし、共通のフレームワークに基づいて人々が協働できるようにします。GitLab の [透明性](/handbook/values/#transparency)バリューの一環として、私たちは各 GitLab チームメンバーが自分自身の README を作成することを検討するよう奨励します。
 
-### 部門別 README
+### ディビジョン別 README
 
-GitLab の部門 README ページは、コンテキストのために以下にリンクされています。他の README を読むことは、自分の README に何を含めるかについてのアイデアを得るための重要な方法です。これらをガイドとインスピレーションとして活用してください。
+GitLab のディビジョン README ページを参考のために以下にリンクしています。他の README を読むことは、自分の README に何を含められるかについてのアイデアを得る重要な方法です。これらをガイドとインスピレーションとして活用してください。
 
-- [Engineering READMEs](/handbook/engineering/readmes/)
-- [Marketing Team READMEs](/handbook/marketing/readmes/)
-- [Product READMEs](/handbook/product/)
-  - [UX Department READMEs](/handbook/product/ux/#meet-some-of-our-team-members)
-- [Sales Team READMEs](/handbook/sales/readmes/)
-- [Finance Team READMEs](/handbook/finance/readmes/)
-- [Legal Team READMEs](/handbook/legal/readmes/)
+- [Engineering の README](/handbook/engineering/readmes/)
+- [Marketing チームの README](/handbook/marketing/readmes/)
+- [Sales チームの README](/handbook/sales/readmes/)
+- [Finance チームの README](/handbook/finance/readmes/)
+- [Legal チームの README](/handbook/legal/readmes/)
 
-### README の作成
+### あなたの README を作成する
 
-1. [README-template](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/.gitlab/issue_templates/README-template.md)をコピーして、お好みのMarkdownエディターに貼り付けてください。Markdownエディターがない場合は、[Typora](https://www.typora.io/)と[Bear](https://bear.app/)が推奨されています。
-1. 推奨セクションを入力します。各セクションは*任意*であることに注意してください。記入することに抵抗のあるセクションは削除でき、自分にとって興味深い、または重要なセクションを追加できます。
-    1. [部門](/handbook/company/structure/)に README をホストするページがすでにある場合（上記参照）、そのディレクトリ内に[新しいページを追加する](/handbook/marketing/digital-experience)ガイドラインに従ってください（例：マーケティングチームのメンバーである[Darren M.](https://gitlab.com/dmurph)は、`/handbook/marketing/readmes`内に新しいディレクトリとページを追加し、`/handbook/marketing/readmes/dmurph`を作成します）
-    1. [部門](/handbook/company/structure/)に README のホールディングページがまだない場合は、部門のハンドブックセクション内に*まず*`readmes`のガイドラインに従って[新しいページを追加](https://gitlab.com/gitlab-com/marketing/digital-experience/buyer-experience/-/issues/new#)し、次に`readmes`内にユーザー名ディレクトリを作成してください。
-1. [.gitlab/CODEOWNERS](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/.gitlab/CODEOWNERS)ファイルに README と自分自身をコードオーナーとして追加するとボーナスポイントになります。
+1. [README-template](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/.gitlab/issue_templates/README-template.md) をコピーして、お気に入りの Markdown エディターに貼り付けます。Markdown エディターを持っていない場合は、[Typora](https://www.typora.io/) や [Bear](https://bear.app/) がおすすめです。
+1. 推奨されるセクションを記入します。各セクションは *任意* であることに注意してください。記入するのが気が進まないものは削除でき、自分にとって興味深い、または重要なセクションを追加できます。
+    1. あなたの [ディビジョン](/handbook/company/structure/)に README をホストするページが *すでに* ある場合（上記参照）、そのディレクトリ内に [新しいページを追加する](/handbook/marketing/digital-experience)ガイドラインに従ってください（例えば、マーケティングチームのメンバーである [Darren M.](https://gitlab.com/dmurph) は、`/handbook/marketing/readmes` 内に新しいディレクトリとページを追加し、`/handbook/marketing/readmes/dmurph` を作成します）。
+    1. あなたの [ディビジョン](/handbook/company/structure/)に README のための受け皿ページがまだない場合、*まず* ディビジョンのハンドブックセクション内に [新しいページを追加する](https://gitlab.com/gitlab-com/marketing/digital-experience/buyer-experience/-/issues/new#)（`readmes`）ガイドラインに従い、その後 `readmes` 内に自分のユーザー名ディレクトリを作成してください。
+1. [.gitlab/CODEOWNERS](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/.gitlab/CODEOWNERS) ファイルに、自分の README と自分自身を codeowner として追加すればボーナスポイントです。
 
-あるいは、GitLab の README プロファイルカスタマイズ機能を[ドッグフーディング](/handbook/values/#dogfooding)して README を作成することもできます。GitLab プロファイルに README で詳細を追加する方法については[ドキュメント](https://docs.gitlab.com/ee/user/profile/#add-details-to-your-profile-with-a-readme)をご覧ください。プロファイルのリンクを部門のホールディングページに追加することを忘れないでください。
+あるいは、GitLab の README プロフィールカスタマイズ機能を [ドッグフーディング](/handbook/values/#dogfooding)して README を作成することもできます。GitLab プロフィールに README で詳細を追加する方法については、[ドキュメント](https://docs.gitlab.com/ee/user/profile/#add-details-to-your-profile-with-a-readme)に従ってください。あなたのプロフィールのリンクをディビジョンの受け皿ページに追加するのを忘れないでください。
 
-### README の宣伝
+### あなたの README を周知する
 
-README を作成したら、以下の場所からリンクを追加することを検討してください：
+README を作成したら、次の場所からそれへのリンクを追加することを検討してください:
 
-- Googleドキュメントのアジェンダやカレンダーの招待
-- GitLab.com プロフィール
-- Slack プロフィール
-- メールの署名
+- Google ドキュメントのアジェンダやカレンダーの招待
+- あなたの GitLab.com プロフィール
+- あなたの Slack プロフィール
+- あなたのメール署名
 
-これにより他者への最大の可視性が提供され、一緒に働く前にあなたの README を事前に読むことができます。これにより、あなたの作業スタイルとコミュニケーションの好みを考慮に入れることができ、理想的には全体的に表現される共感のレベルが向上します。
+これにより、他者があなたと働く前にあなたの README を読めるよう、最大限の可視性が得られます。これにより、相手はあなたの働き方やコミュニケーションの好みを考慮でき、理想的には表される共感の全体的なレベルが高まります。
 
-README は、私たちの[バリュー](/handbook/values/)に不慣れな GitLab*外部*の人と働くときに特に強力です。README は[透明性](/handbook/values/#transparency)の灯台であり、あらゆる仕事関係のトーンを設定するのに役立ちます。
+README は、私たちの [バリュー](/handbook/values/)に馴染みのない、GitLab の *外部* の人々と働くときに特に強力です。README は [透明性](/handbook/values/#transparency)のビーコンであり、あらゆる働きの関係のトーンを定めるのに役立ちます。
 
 ## コーチング
 
-### コーチングとは？
+### コーチングとは何か？
 
-[コーチング](/handbook/leadership/coaching/)は他者が自身を助けるのを支援することです。アドバイスを与えたり、指示したり、何をすべきかを伝えることではありません。**コーチングは将来に焦点を当て、コーチーが目指す場所と達成したいことを特定することについてです。** GitLab では、コーチングを人々が自分で考え、自分自身の答えを見つけ、自分で設計したアクションにコミットするのを助ける会話として定義しています。コーチとして、あなたの役割は現在の状態から将来への道筋を明確にすることです。コーチはより深い洞察に基づいたインフォームドな選択をコーチーが行えるようにすることでこれを実現します。
+[コーチング](/handbook/leadership/coaching/)とは、他者が自分自身を助けるのを助けることです。アドバイスを与えたり、指示したり、何をすべきか伝えたりすることではありません。**コーチングとは、未来に注目し、コーチを受ける人がどこにいたいか、何を達成したいかを特定することです。** GitLab では、コーチングを、人々が自分で考え、自分なりの答えを見つけ、自ら設計したアクションにコミットするのを助ける会話と定義しています。コーチとしてのあなたの役割は、現在の状態から未来への道筋を明確にすることです。コーチは、コーチを受ける人がより深いインサイトに基づいて十分な情報に基づく選択をできるようにすることで、これを行います。
 
-## マトリクス組織なし {#no-matrix-organization}
+## マトリックス組織なし
 
-[no-matrix-organization](/handbook/leadership/no-matrix-organization/)をご覧ください。
+[no-matrix-organization](/handbook/leadership/no-matrix-organization/)を参照してください。
 
 ## 安定したカウンターパート
 
-機能横断的なコラボレーションを有機的に促進するために、他の機能で一緒に働く必要がある人々に安定したカウンターパートを与えることを望んでいます。例えば、各Strategic Account Executive（SAE）は一人のSales Development Representative（SDR）と働きます。[カテゴリー](/handbook/product/categories/)では、すべてのバックエンド開発者チームが[Product Manager（PM）](/job-description-library/product/product-manager/)と[フロントエンドチーム](/handbook/engineering/)にマッピングされています。
+私たちは、人々が一緒に働く必要のある他の機能のための安定したカウンターパートを与えることで、自然発生的なクロスファンクショナルな協働を促進したいと考えています。例えば、各 Strategic Account Executive（SAE）は 1 人の Sales Development Representative（SDR）と働きます。私たちの [カテゴリー](/handbook/product/categories/)では、開発者の各バックエンドチームが [Product Manager（PM）](/job-description-library/product/product-manager/)と [フロントエンドチーム](/handbook/engineering/)にマッピングされます。
 
-人々に**安定したカウンターパート**を与えることで、より社会的信頼と親しみが生まれ、意思決定が加速し、コミュニケーションの問題を防ぎ、コンフリクトのリスクを減らします。このようにして、[マトリクス組織のデメリット](#no-matrix-organization)なしに機能横断的に効果的に作業できます。
+人々に **安定したカウンターパート** を与えることで、より社会的な信頼と親しみが生まれ、意思決定が速まり、コミュニケーションの問題が防がれ、対立のリスクが減ります。こうして私たちは、[マトリックス組織の欠点](#no-matrix-organization)なしに、効果的にクロスファンクショナルに働けます。
 
-## ファクトリー対スタジオ
+## ファクトリー vs. スタジオ
 
-私たちは[ファクトリーとスタジオの最良の組み合わせ](https://medium.com/@mcgd/factory-vs-studio-fb83b3fe9e14)を望んでいます。スタジオ要素は、ユーザーからCEOまで誰でも何についてでも発言できることを意味します。作業エリアの外に出て貢献することができます。ファクトリー要素は、全員が明確に割り当てられたタスクと権限を持っていることを意味します。
+私たちは [ファクトリーとスタジオ](https://medium.com/@mcgd/factory-vs-studio-fb83b3fe9e14)の最良の組み合わせを望んでいます。スタジオの要素とは、ユーザーから CEO まで、誰もが何についても口を挟めることを意味します。自分の作業領域の外に踏み出して貢献できます。ファクトリーの要素とは、全員が明確に割り当てられたタスクと権限を持つことを意味します。
 
 ## 効果的なエスカレーション
 
-チームメンバーは、予想外の課題を解決するためにサポートが必要なときに Issue をエスカレーションすることに慣れるべきです。効果的なエスカレーションは良いことです。なぜなら意思決定を加速させるからです。チームメンバーが Issue をエスカレーションするとき、他のチームメンバーが不一致したり、整合性やシリアスなトレードオフが必要であったりする際に、別の人物が意思決定者またはアドバイザーとして参加します。エスカレーションは明確さと前進への道を提供でき、いつ、どのように、何をエスカレーションするかを知っているとき、何を・いつ・どのようにエスカレーションすべきかを知っていれば、エスカレーションを起こす本人にとってシニアリティの表れにもなり得ます。
+チームメンバーは、予期しない課題を解決するために助けが必要なとき、Issue をエスカレーションすることに気兼ねを感じないようにすべきです。効果的なエスカレーションは良いものです。なぜなら、意思決定を速めるからです。チームメンバーが Issue をエスカレーションするとき、他のチームメンバーの意見が異なる、アライメントに助けが必要、あるいは重大なトレードオフが必要であるために、別の人が意思決定者やアドバイザーとして加わります。エスカレーションは明確さと前に進む道筋をもたらすことができ、何を、どのように、いつエスカレーションするかを知っている場合、エスカレーションを始める人にとってシニアリティの証となり得ます。
 
-この[medium記事](https://medium.com/capchase/escalation-manifesto-ac123d8941b)で述べられているように、明示的なエスカレーションはこれら4つの質問に答えるべきです：
+この [Medium の記事](https://medium.com/capchase/escalation-manifesto-ac123d8941b)で述べられているように、明示的なエスカレーションは次の 4 つの問いに答えるべきです:
 
-1. なぜこれがエスカレーション先の人/チームにとって重要なのか？
-1. 課題の関連する詳細は何か？
-1. 何を試みたか？
-1. 何が必要か？
+1. これは、私がエスカレーションしている相手の人／チームにとってなぜ重要か？
+1. その課題の関連する詳細は何か？
+1. あなたは何を試したか？
+1. あなたは何を必要としているか？
 
-エスカレーションしている人は、マネジメントチェーンの人々を驚かせることを避けるべきです。つまり、他の関連するチームメンバーがエスカレーションが起きていることを知っているべきです。例えば、E-groupでは、メンバーは最初に他の関連メンバーにこれが起きていることを通知せずにCEOにエスカレーションしないことに合意しています。
+Issue をエスカレーションする人は、マネジメントの系統にいる人々を驚かせるのを避けるべきです。これは、他の関連するチームメンバーがエスカレーションが起きていることを認識しているべきだということを意味します。例えば E-Group では、メンバーは、これが起きていることを他の関連するメンバーにまず知らせることなく、エスカレーションを CEO に持ち込まないことに同意しています。
 
-マネージャーや同僚に最初に通知することの例外がある場合があります。例えば、チームメンバーがマネージャーや同僚に対して懸念を[安全に](/handbook/leadership/emotional-intelligence/psychological-safety/)声に出せず、報復なしに標準的な通知で効果的にエスカレーションできないと感じる場合。例外は適切かもしれませんが、まれであるべきです。
+マネージャーやピアにまず知らせることには、いくつかの例外があるかもしれません。例えば、チームメンバーがマネージャーやピアに懸念を表明することに [安全を感じず](/handbook/leadership/emotional-intelligence/psychological-safety/)、報復なしに標準的な通知をもって効果的にエスカレーションできないと感じる場合です。例外が適切な場合もありますが、それはまれであるべきです。
 
-チームメンバーが Issue をエスカレーションした後、エスカレーション先の人物によって下された決定に[同意せずコミットし、擁護する](/handbook/values/#disagree-and-commit)ことは問題ありません。
+チームメンバーが Issue をエスカレーションした後、エスカレーション先の人が下した決定に [同意しないが、コミットして擁護する](/handbook/values/#disagree-and-commit)としても問題ありません。
 
-## プロセスは悪評がある
+## プロセスは悪い評判を得ている
 
-プロセスには悪評があります。GitLab で避けようとしていることに関してはその評判が当てはまります。必要でないプロセスがあると、官僚主義になります。良い例が承認プロセスです。人々に自分で決定する権限を与えることと、必要な場合には迅速で軽量な承認プロセスを持つことの両方によって、承認プロセスを最小限に保つべきです。
+プロセスは悪い評判を得ています。それは、私たちが GitLab で避けようとしている事柄についての評判です。必要のないプロセスを持つと、それは官僚主義に変わります。良い例が承認プロセスです。私たちは、人々に自分で意思決定する権限を与えることと、必要な場所では素早く軽量な承認プロセスを持つことの両方によって、承認プロセスを最小限に抑えるべきです。
 
-しかしプロセスには良い側面もあります。会社内でのコミュニケーション方法についての文書化されたプロセスを持つことは、オンボーディングに費やす時間を大幅に削減し、スピードを上げ、ミスを防ぎます。反直感的な効果として、プロセスの変更も容易になります。名前も場所もなく、人々の頭の中に異なるバージョンで存在するプロセスを変更することは非常に難しいです。書かれたプロセスを変更して[diff](https://en.wikipedia.org/wiki/Diff_utility#Usage)を配布することははるかに容易です。
+しかし、プロセスには良い側面もあります。社内でどうコミュニケーションするかについての文書化されたプロセスを持つことは、オンボーディングに費やす時間を大幅に減らし、スピードを高め、ミスを防ぎます。直感に反する効果として、それはプロセスを変えることも容易にします。名前も場所もなく、人々の頭の中に異なるバージョンで存在するプロセスを変えるのは本当に難しいことです。文書化されたプロセスを変更し、[diff](https://en.wikipedia.org/wiki/Diff_utility#Usage) を配布する方がはるかに簡単です。
 
-## 人材獲得と定着
+## タレントの獲得と維持
 
-マネージャーはチームメンバーの人材獲得と[定着](/handbook/people-group/people-success-performance-indicators/#team-member-retention)に対して非常に大きな責任を持っています。
+マネージャーは、チームメンバーのタレントの獲得と [維持](/handbook/people-group/people-success-performance-indicators/#team-member-retention)について多大な責任を負います。
 
-- 自発的な離職は少なくあるべきで、特に予期しないものは少なくあるべきです。退職の最も一般的な理由はマネージャーに起因することが多いです。
-- 候補者がオファーを断ることは少なくあるべきで、特に理由が報酬でない場合は少なくあるべきです。
-- 適切な候補者パイプラインの量と質が必要で、特に重要なポジションには必要です。
-- 提案されたオファーを受けた候補者はバーを満たしているべきで、特により上級なポジションではそうあるべきです。
-- *グローバルなチームを構築*してください。ビジネスケースなしに「ベイエリア以外で人材を見つけられない」は、私たちの[多様性、インクルージョン、ビロンギングのミッション](/handbook/company/culture/inclusion/#gitlabs-diversity-inclusion-and-belonging-mission)と[ロケーションファクター KPI](/handbook/people-group/people-success-performance-indicators/#average-location-factor)に反します。
+- 自発的な離職、特に予期しない離職は少なくあるべきです。退職の最も一般的な理由は、マネージャーに紐づけられることがあります。
+- 私たちは、候補者がオファーを辞退することが少ないことを望みます。特に理由が報酬でない場合はそうです。
+- 私たちは、十分な量と質の候補者パイプラインを必要とします。特に重要なポジションではそうです。
+- オファーが提案された候補者は、基準を満たすべきです。特により上位のポジションではそうです。
+- *グローバルなチーム* を築いてください。ビジネスケースで示されない限り、「ベイエリア以外でタレントが見つからない」というのは、私たちの [ダイバーシティ、インクルージョン、ビロンギングのミッション](/handbook/company/culture/inclusion/#gitlabs-diversity-inclusion-and-belonging-mission)と [Location Factor KPI](/handbook/people-group/people-success-performance-indicators/#average-location-factor)に反します。
 
-## 高出力マネジメント
+## High Output Management
 
-GitLab のリーダーシップとマネジメントのアプローチは、「[High Output Management](https://www.goodreads.com/book/show/324750.High_Output_Management)」という本に掲載されている原則を使って構築されました。詳細については[High Output Management](/handbook/leadership/high-output-management/)をご覧ください。
+GitLab のリーダーシップとマネジメントのアプローチは、書籍「[High Output Management](https://www.goodreads.com/book/show/324750.High_Output_Management)」で扱われている原則を用いて構築されました。詳しくは [High Output Management](/handbook/leadership/high-output-management/)を参照してください。
 
-## 高パフォーマンスチームの構築
+## ハイパフォーマンスなチームの構築
 
-[結果](/handbook/values/#results)を提供するチームを構築することは、[効率性](/handbook/values/#efficiency)と[イテレーション](/handbook/values/#iteration)の向上の非常に重要な側面です。高パフォーマンスチームは常に結果を出します。GitLab でリーダーとして、あなたの役割は高パフォーマンスチームを開発して望ましいパフォーマンスと生産性のレベルに到達することです。GitLab の高パフォーマンスチームが示す特定の特性があります：
+[結果](/handbook/values/#results)を出すためのチームを築くことは、[効率](/handbook/values/#efficiency)と [イテレーション](/handbook/values/#iteration)を改善するうえで非常に重要な側面です。ハイパフォーマンスなチームは常に結果を出します。GitLab のリーダーとしてのあなたの役割は、望ましいレベルのパフォーマンスと生産性に到達するハイパフォーマンスなチームを育てることです。GitLab のハイパフォーマンスなチームが示す特定の特性があります:
 
-- 目標とゴールの明確なビジョンを持っている
-- ゴール達成にコミットし続ける
-- コンフリクトを管理する
-- 互いに効果的なコミュニケーションと健全な関係を維持する
-- チームとして一致した決定を行う
+- 自分たちの目的と目標について明確なビジョンを持っている
+- 目標達成にコミットし続けている
+- 対立を管理している
+- お互いに効果的なコミュニケーションと健全な関係を保っている
+- チームとして全会一致の決定を下している
 
-[Jeb Hurley, Co-founder and Managing Partner Brainware Partners](https://www.brainware-partners.com/)との会話のリプレイを視聴し、以下について議論しました：
+[Jeb Hurley、Brainware Partners の共同創業者兼マネージングパートナー](https://www.brainware-partners.com/)との対話のリプレイをご覧ください。そこでは次のことについて議論しました:
 
-1. リモートチームの信頼、生産性、ウェルビーイングの管理
+1. リモートチームにおける信頼、生産性、ウェルビーイングの管理
 1. 信頼の行動、生化学、ダイナミクス
-1. 信頼構築の影響を測定・報告することの価値
-
+1. 信頼を築くことのインパクトを測定し報告することの価値
 
 {{< youtube "te3ZfJgFRxI" >}}
 
+**マネージャー向けの [ハイパフォーマンスなチームを構築するコンピテンシー](/handbook/people-group/competencies/#list)のスキルと行動**:
 
-**マネージャーのための[高パフォーマンスチームコンピテンシー構築](/handbook/people-group/competencies/#list)のスキルと行動**：
+- 協働、コミュニケーション、[信頼](/handbook/leadership/building-trust/)、共有された目標、相互の説明責任とサポートを育むことで、チームワークを体現し奨励する
+- 重要なトピックについて、複数のアサインメントのタイムマネジメントと [Direct Responsible Individuals（DRI）](/handbook/people-group/directly-responsible-individuals/)とともに、結果とのバランスが取れた環境を育む
+- チームメンバーが [Manager of One](/handbook/values/#managers-of-one) であることを後押しし、キャリアで専門的に成長するためのツールを与える
+- [信頼に基づく](/handbook/leadership/building-trust/)、委任、説明責任、教えやすさのインクルーシブな環境を作ることで、トップタレントを惹きつけ維持する
 
-- コラボレーション、コミュニケーション、[信頼](/handbook/leadership/building-trust/)、共有目標、相互説明責任、サポートを育成することでチームワークをモデル化し奨励する
-- 複数の割り当てと重要なトピックに対する[直接責任者（DRI）](/handbook/people-group/directly-responsible-individuals/)の時間管理とのバランスをとりながら結果を出せる環境を育成する
-- チームメンバーが[Manager of One](/handbook/values/#managers-of-one)になれるよう権限を与え、キャリアで専門的に成長するためのツールを提供する
-- [信頼に基づいた](/handbook/leadership/building-trust/)環境を作り、インクルーシブな環境で、委任、説明責任、教えることで優秀な人材を引き付けて定着させる
+### ハイパフォーマンスなチームを構築する戦略
 
-### 高パフォーマンスチームを構築するための戦略
+[Drexler-Sibbet Team Performance Model](https://www.kaizenko.com/drexler-sibbet-team-performance-model/) は、GitLab で [ハイパフォーマンスなチームを構築する](https://internal.gitlab.com/handbook/company/high-performing-teams/)のを助ける優れたツールです。このモデルは、チームのためのロードマップと共通の言語を提供します。それは、チームがどう協働するかを簡略化して記述したもので、ハイパフォーマンスに到達するためにチームが注力すべき最も重要な事柄を浮き彫りにします。GitLab では、これをハイパフォーマンスなチームを育てるための参照枠として使えます。これは、マネージャーが新しい、そして既存のチームメンバーに、次のことによってチームのミッションと方向性を確実に知ってもらうのに役立ちます:
 
-[Drexler-Sibbet Team Performance Model](https://www.kaizenko.com/drexler-sibbet-team-performance-model/)は、GitLab で[高パフォーマンスチームを構築する](https://internal.gitlab.com/handbook/company/high-performing-teams/)のに役立つ優れたツールです。このモデルはチームへのロードマップと共通言語を提供します。これは高パフォーマンスに達するためにチームが集中する必要がある最も重要なことを強調するチームの共同作業の簡略化された説明です。GitLab では、高パフォーマンスチームを開発するための参照フレームとして使用できます。マネージャーが新規および既存のチームメンバーにチームのミッションと方向性を知ってもらうのに役立てることができます：
+- チームを形成する
+- チームが何をするかを導く
+- チームがどれだけうまくいっているかをモニタリングする
+- チームがどこで苦戦しているかを診断する、またはチームの成功の鍵を特定する。
 
-- チームを形成するため
-- チームが何をするかをガイドするため
-- チームのパフォーマンスを監視するため
-- チームが苦労している可能性がある箇所を診断し、チームの成功の鍵を特定するため
+**ハイパフォーマンスなチームを育てる 7 つのステージ:**
 
-**高パフォーマンスチームを開発するための7つのステージ：**
+1. オリエンテーション - なぜ私たちはここにいるのか？ チームメンバーは、チームのアイデンティティの感覚と、個々のチームメンバーがどう収まるかを見る必要があります。
+1. [信頼の構築](/handbook/leadership/building-trust/) - あなたは誰か？ チームメンバーは互いへの相互の敬意を共有し、信頼に基づく関係にオープンで協力的です。
+1. 目標の明確化 - 私たちは何をしているのか？ 前提が明確にされ、個々の前提が、終わりの状態の明確なビジョンとともに知られるようになります。
+1. コミットメント - どうやってそれを行うか？ チームメンバーは、どう意思決定し、どう仕事をするかを理解します。
+1. 実装 - 誰が、何を、いつ、どこで行うか？ チームメンバーは明確さの感覚を持ち、共有された目標のアライメントによって効果的に活動できます。
+1. ハイパフォーマンス - すごい！ チームは期待以上のことを成し遂げています。チームは飛躍し、創造性が育まれ、目標が上回られます。
+1. リニューアル - なぜ続けるのか？ チームは認知を与えられ、価値ある仕事を生み出す個人の達成を祝います。学んだ教訓を振り返り、未来のために再評価します。
 
-1. オリエンテーション - なぜここにいるのか？チームメンバーはチームのアイデンティティの感覚と個々のチームメンバーがどのように当てはまるかを見る必要があります。
-1. [信頼構築](/handbook/leadership/building-trust/) - あなたは誰ですか？チームメンバーは互いに対して相互の評価を共有し、信頼に基づく関係のオープンでサポーティブです。
-1. ゴールの明確化 - 何をしているのか？仮定が明確になり、個々の仮定が終状態の明確なビジョンとともに明らかにされます。
-1. コミットメント - どのようにやるか？チームメンバーはどのように決定を下して作業を行うかを理解しています。
-1. 実装 - 誰が何を、いつ、どこで？チームメンバーは明確さの感覚を持ち、共有目標の整合によって効果的に運営できます。
-1. 高パフォーマンス - すごい！チームは期待以上のことを達成しています。チームは動き出し、創造性が育まれ、目標が超過達成されます。
-1. 刷新 - なぜ続けるのか？チームは価値ある作業を生み出す個人の実績を認識し、祝います。学んだ教訓を振り返り、将来に向けて再評価します。
+**マネージャーのリソース: バーンアウトの特定と対処**
 
-**マネージャーリソース：バーンアウトの特定と対処**
+ハイパフォーマンスを構築し維持することには、チームのウェルビーイングと潜在的なバーンアウトに気を配り続けることが含まれます。GitLab の結果駆動の文化、AI を中心としたプロダクトイノベーションの要求、ペースが速く絶えず進化するビジネス環境のなかで、私たちの組織は、野心的な目標の達成とチームメンバーのウェルビーイングの維持との間の重要なバランスを認識しています。誰もがこのハンドブックの [マネージャーがバーンアウトを特定し対処するために設計されたリソース](/handbook/leadership/managing-burnout/#manager-guide-identifying--addressing-burnout)にアクセスできます。これはチームのパフォーマンスに継続的な影響を与えます。
 
-高パフォーマンスの構築と維持には、チームのウェルビーイングと潜在的なバーンアウトへの注意が含まれます。GitLab の結果重視の文化、AI に関するプロダクトイノベーションの要求、急速に変化するビジネス環境の中で、私たちの組織は野心的な目標達成とチームメンバーのウェルビーイング維持の間の重要なバランスを認識しています。すべての人が[バーンアウトを特定して対処するためにマネージャー向けに設計されたハンドブックリソース](/handbook/leadership/managing-burnout/#manager-guide-identifying--addressing-burnout)にアクセスできます。これはチームパフォーマンスに継続的な影響を与えます。
+### マネージャー M-Team グループ
 
-### マネージャーM-チームグループ
+M-team は、メンバー間での同期ミーティングを可能にするタイムゾーンにいる 3 〜 6 名のマネージャーで構成される、マネジメントのサポートグループです。M-team は、メンバーが合意したケイデンスで、「今週は何が大変か？」をアジェンダとする定例ミーティングを設定すべきです。誰がファシリテートするかを決め、各人がミーティングで自分の課題を議論してもらう機会を得ます。自分の番になったら、自分が苦労していることについて少し話します。M-group は、グループメンバーが弱さを見せることを厭わないよう、ある程度の [守秘](https://3plusinternational.com/confidentiality-and-the-potential-loss-of-trust/)に同意します。弱さを見せることは信頼につながり、グループにとってより良い成果につながります。
 
-M-チームは、メンバー間の同期ミーティングを可能にするタイムゾーンにいる3〜6人のマネージャーで構成されるマネジメントサポートグループです。M-チームは「今週の課題は何か？」というアジェンダでメンバーが合意したケイデンスで定期的なミーティングを設定するべきです。誰がファシリテートするかを決め、各人がミーティングで自分の課題を議論する機会を持ちます。あなたの番が来たら、苦労していることについて少し話します。Mグループは、グループメンバーが脆弱性を持つ意欲があるような[守秘義務](https://3plusinternational.com/confidentiality-and-the-potential-loss-of-trust/)のレベルに合意します；脆弱性は信頼とグループにとってより良い結果につながります。
-
-M-チームミーティングの開始または参加に関心がある場合は、[#managers](https://gitlab.slack.com/archives/C5Z55R5J5) Slack チャンネルで他のマネージャーに連絡してください。
+M-team ミーティングを始めること、または参加することに興味があれば、[#managers](https://gitlab.slack.com/archives/C5Z55R5J5) Slack チャンネルで他のマネージャーに連絡してください。
 
 ## 記事
 
@@ -267,39 +263,39 @@ M-チームミーティングの開始または参加に関心がある場合は
 1. [Later Stage Advice for Startups](https://themacro.com/articles/2016/07/later-stage-advice-for-startups/)
 1. [Mental Models I Find Repeatedly Useful](https://medium.com/@yegg/mental-models-i-find-repeatedly-useful-936f1cc405d)
 1. [This Is The Most Difficult Skill For CEOs To Learn](https://www.businessinsider.com/whats-the-most-difficult-ceo-skill-managing-your-own-psychology-2011-4)
-1. [PIPs about how to think about PIPs](https://mfbt.ca/how-i-talk-to-leaders-about-firing-people-8149dfcb035b)というPIPについての考え方に関する素晴らしい記事（ただし私たちのタイムスケールはより短い）。
+1. PIP についてどう考えるかに関する優れた記事は [こちら](https://mfbt.ca/how-i-talk-to-leaders-about-firing-people-8149dfcb035b)ですが、私たちのタイムスケールはより短いです。
 1. [Impraise Blog: 1-on-1s for Engaged Employees](https://web.archive.org/web/20220704002203/https://www.impraise.com/blog/how-to-support-effective-remote-performance-management-with-11s)
 1. [Mind Tools: Giving Feedback: Keeping Team Member Performance High, and Well Integrated](https://www.mindtools.com/a18a0wu/giving-feedback)
 1. [Remote.Co: 5 Tips for Providing Feedback to Remote Workers](https://remote.co/5-tips-for-providing-feedback-to-remote-workers/)
-1. [Really interesting blog post from Hanno on remote team feedback](https://web.archive.org/web/20220810051106/https://hanno.co/journal/remote-team-feedback/)
+1. [リモートチームのフィードバックに関する Hanno の非常に興味深いブログ記事](https://web.archive.org/web/20220810051106/https://hanno.co/journal/remote-team-feedback/)
 1. [51 questions to ask in one-on-ones with a manager](https://getlighthouse.com/blog/74-questions-to-ask-your-manager/)
 1. [HBR: The rise of data driven decision making is real but uneven](https://hbr.org/2016/02/the-rise-of-data-driven-decision-making-is-real-but-uneven)
 1. [Forbes: 6 Tips for Making Better Decisions](https://www.forbes.com/sites/mikemyatt/2012/03/28/6-tips-for-making-better-decisions/#966eb3b34dca)
 
 ## 書籍
 
-このセクションの書籍は[経費申請できます](/handbook/finance/spending-company-money/)。
+このセクションの書籍は [経費精算できます](/handbook/finance/spending-company-money/)。
 
-[E-Group Offsite Book Selections](/handbook/company/offsite/#content-choice)からの注目の書籍が以下のリストに追加されることがあります。
+[E-Group オフサイトの書籍セレクション](/handbook/company/offsite/#content-choice)からの注目すべき書籍が、以下のリストに追加されることがあります。
 
-これらの書籍をグループとして読むための[ブッククラブ](/handbook/leadership/book-clubs/)を自己組織化することがあります。
+私たちは、これらの書籍をグループで読み進めるために、ときどき [読書会](/handbook/leadership/book-clubs/)を自主的に開催します。
 
 1. [High Output Management](https://www.goodreads.com/book/show/324750.High_Output_Management) - Andrew Grove
-    - [トップ10の引用](https://getlighthouse.com/blog/andy-grove-quotes-leadership-high-output-management/)
-    - [ブッククラブ](/handbook/leadership/book-clubs/#high-output-management)
+    - [トップ 10 の引用](https://getlighthouse.com/blog/andy-grove-quotes-leadership-high-output-management/)
+    - [読書会](/handbook/leadership/book-clubs/#high-output-management)
 1. [The Hard Thing About Hard Things: Building a Business When There Are No Easy Answers](https://www.goodreads.com/book/show/18176747-the-hard-thing-about-hard-things) - Ben Horowitz
-    - [Chase Wrightのノート](https://docs.google.com/document/d/1Uxva11x1YX4zci1FHmF45UTYjGLPMU5HmrbmflINoG4/)
+    - [Chase Wright のノート](https://docs.google.com/document/d/1Uxva11x1YX4zci1FHmF45UTYjGLPMU5HmrbmflINoG4/)
 1. [Crucial Conversations: Tools for Talking When Stakes Are High](https://www.goodreads.com/book/show/15014.Crucial_Conversations) - Kerry Patterson
-    - [E-group](/handbook/company/structure/#e-group)の読書会のノート：
-    - 仮想チームはコロケーションチームよりもCrucial Conversationsに失敗する可能性がはるかに高い
-    - 潜在的な問題を発見するために非同期会話のトーンを感知するスキルを開発する必要がある
-    - 公式チャンネルで人々の[心理的安全性](/handbook/leadership/emotional-intelligence/psychological-safety/)を生み出す方法を見つける必要がある
-    - 共感から始めることは、緊張した状況で必要なコンテキストを集める優れた方法です。これは非同期では難しいが、より重要です
-    - 後悔するかもしれないコメントを Issue に投稿する前に、1対1（Slack 経由）でコンテキストを取得することを検討する
-    - リーダーとして、私たちもコンテキストを提供する必要がある。良い質問は：「Xを優先させるためには何が変わる必要があるか...」
-    - 何かを文書化することは、難しい会話の*代替*ではない
-    - [ブッククラブ](/handbook/leadership/book-clubs/#crucial-conversations)
-    - [Crucial Conversationsハンドブックページ](/handbook/leadership/crucial-conversations/)
+    - [E-group](/handbook/company/structure/#e-group)の読書からのノート:
+    - バーチャルなチームは、同じ場所にいるチームよりも、crucial conversation で失敗する可能性がはるかに高い
+    - 私たちは、潜在的な問題を明らかにするために、非同期の会話のトーンを感じ取るスキルを身につける必要がある
+    - 私たちは、公式のチャンネルで人々に [心理的安全性](/handbook/leadership/emotional-intelligence/psychological-safety/)を作り出す方法を見つける必要がある
+    - 共感から始めることは、緊張した状況で必要なコンテキストを集める優れた方法である - これは非同期では難しいが、より重要である
+    - 後で後悔するかもしれないコメントを Issue に投稿する前に、（Slack で）1-on-1 でコンテキストを得ることを検討する
+    - リーダーとして、私たちもコンテキストを与える必要がある。良い問いは: 「X を優先順位付けしてもらうには、何が変わる必要があるか…」
+    - 何かをドキュメント化することは、難しい会話をすることの代わりには *ならない*
+    - [読書会](/handbook/leadership/book-clubs/#crucial-conversations)
+    - [Crucial Conversations のハンドブックページ](/handbook/leadership/crucial-conversations/)
 
 ## メーリングリスト
 
@@ -307,26 +303,26 @@ M-チームミーティングの開始または参加に関心がある場合は
 
 ## トレーニング
 
-リーダーシップトレーニングを行う際は、[プレゼンテーションを作成する代わりにハンドブックをスクリーンシェアしてください](/handbook/about/handbook-usage/#screenshot-the-handbook-instead-of-creating-a-presentation)。
+リーダーシップのトレーニングを行う際は、[プレゼンテーションを作成する代わりにハンドブックを画面共有してください](/handbook/about/handbook-usage/#screenshot-the-handbook-instead-of-creating-a-presentation)。
 
 ### リーダーシップ開発の機会
 
-1. マネージャーは[Elevateプログラム](/handbook/people-group/learning-and-development/elevate-programs/)に参加できます。このプログラムはオールリモートチームをリードするためのマネジメントスキルの開発に焦点を当てています。
-1. [成長・開発給付](/handbook/people-group/learning-and-development/growth-and-development/)によるリーダーシップ開発コーチング。GitLab の正式なコーチングプログラムの詳細は近々公開予定。
-1. リーダーシップを実践するためにメンターになるか、リーダーから学ぶためにペアリングされるために[女性の TMRG メンタープログラムに参加する](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/mentorship-program/)。
-1. [シャドープログラム](/handbook/people-group/learning-and-development/career-development/#job-shadow-programs)に参加する機会を探す。
-1. [GitLab Learn](https://gitlab.edcast.com/channel/coming-soon-transitioning-from-ic-to-manager)で IC からマネージャーへの移行に成功するために必要なスキルを探る。
-1. [LinkedIn Learning](https://www.linkedin.com/learning/topics/leadership-and-management)でリーダーシップとマネジメントのコースを探る
-1. [Learning and Development](/handbook/people-group/learning-and-development/)はFY23にいくつかのプログラムを開発中で、[Managing at GitLab Course](https://gitlab.com/groups/gitlab-com/people-group/learning-development/-/epics/78)、[New Manager Bootcamp](https://gitlab.com/gitlab-com/people-group/learning-development/training-curriculum/-/issues/33)、[LifeLabs Learning Pilot and Launch](https://gitlab.com/gitlab-com/people-group/learning-development/training-curriculum/-/issues/29)、[コーチングプログラム](https://gitlab.com/gitlab-com/people-group/learning-development/general/-/issues/342)などが含まれています！
+1. マネージャーは、オールリモートのチームを率いるためのマネジメントスキルの開発に焦点を当てた [Elevate プログラム](/handbook/people-group/learning-and-development/elevate-programs/)に参加できます。
+1. [成長と能力開発の福利厚生](/handbook/people-group/learning-and-development/growth-and-development/)を用いたリーダーシップ開発コーチング。正式な GitLab コーチングプログラムについての詳細は追って発表します。
+1. [女性 TMRG のメンターシップグループに参加](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/mentorship-program/)して、リーダーシップを実践するためのメンターになるか、リーダーと組んで学んでください。
+1. [Shadow プログラム](/handbook/people-group/learning-and-development/career-development/#job-shadow-programs)に参加する機会を探ってください。
+1. [GitLab Learn](https://gitlab.edcast.com/channel/coming-soon-transitioning-from-ic-to-manager)で、IC からマネージャーへの移行を成功させるために必要なスキルを探ってください。
+1. [LinkedIn Learning](https://www.linkedin.com/learning/topics/leadership-and-management)でリーダーシップとマネジメントのコースを探ってください。
+1. [Learning and Development](/handbook/people-group/learning-and-development/) は FY23 にいくつかのプログラムを開発しており、[Managing at GitLab Course](https://gitlab.com/groups/gitlab-com/people-group/learning-development/-/epics/78)、[New Manager Bootcamp](https://gitlab.com/gitlab-com/people-group/learning-development/training-curriculum/-/issues/33)、[LifeLabs Learning Pilot and Launch](https://gitlab.com/gitlab-com/people-group/learning-development/training-curriculum/-/issues/29)、[コーチングプログラム](https://gitlab.com/gitlab-com/people-group/learning-development/general/-/issues/342)などが含まれます！
 
 ## People Group
 
-リーダーシップ開発のトピックについてさらなるサポートを求めるため、[People Group](/handbook/people-group/)の誰にでも気軽にお問い合わせください。`People Group`ドロップダウンを使用して[チームページ](/handbook/company/team/)で確認できます。チームはHelpLabを通じてアクセスすることもできます。
+リーダーシップ開発のトピックについてさらなるサポートが必要な場合は、[People Group](/handbook/people-group/)の誰にでも気軽に連絡してください。[チームページ](/handbook/company/team/)で `People Group` のドロップダウンを使って私たちを見つけられます。チームには HelpLab 経由でも連絡できます。
 
-## 公開企業であること
+## 上場企業であること
 
-GitLab の[公開企業であることに関する見解](/handbook/company/being-a-public-company/)については詳細をご覧ください。
+GitLab の [上場企業であること](/handbook/company/being-a-public-company/)についての見解についてさらに詳しくご覧ください。
 
-## リスクの軽減
+## 懸念の緩和
 
-私たちの[リスク軽減](https://internal.gitlab.com/handbook/leadership/mitigating-concerns/)を文書化したページがあります。私たちの[バリュー](/handbook/values/)の多くはこれらのリスクを軽減するのに役立っています。
+私たちは [懸念の緩和](https://internal.gitlab.com/handbook/leadership/mitigating-concerns/)を文書化したページを持っています。私たちの [バリュー](/handbook/values/)の多くは、これらの懸念の一部を緩和するのに役立ちます。

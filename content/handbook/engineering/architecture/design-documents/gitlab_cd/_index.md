@@ -9,75 +9,73 @@ owning-stage: "~devops::deploy"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/gitlab_cd/
-upstream_sha: ec55f130cc95389b6faf798cebffd864abdbb4c5
-translated_at: "2026-04-27T08:55:32Z"
+upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
+lastmod: 2026-06-11T14:33:24-07:00
+translated_at: "2026-06-12T21:12:19Z"
 translator: claude
 stale: false
-lastmod: "2026-04-21T15:27:06-07:00"
 ---
-
 
 {{< engineering/design-document-header >}}
 
-
 ## 概要
 
-この設計は GitLab の継続的デプロイ（CD）プロダクトを説明しています。これはスタンドアロンプロダクトであり、GitLab SCM や CI を必要としませんが、両方が存在する場合はインテグレーションします。
+この設計は、GitLab の継続的デプロイメント（Continuous Deployment）製品について記述します。これはスタンドアロンの製品であり、GitLab SCM や CI を必要としません。ただし、どちらかが存在する場合はそれらと統合します。
 
-システムは **Auto Flow**（KAS で実行される耐久性のあるワークフローエンジン）の上に構築されています。Auto Flow はデプロイの決定をオーケストレーションします。**GitLab Functions** は Runner でデプロイアクションを実行します。**OPA** はどこで何が実行されるかを管理します。**GitOps リコンサイラー**（ArgoCD がゴールデンパス）はクラスターを望ましい状態に収束させます。KAS を通じて流れる **CloudEvents** がすべてを接続します。
+このシステムは、KAS 上で動作する耐久性のあるワークフローエンジン **Auto Flow** をベースに構築されています。Auto Flow はデプロイメントの判断をオーケストレーションします。**GitLab Functions** は Runner 上でデプロイメントアクションを実行します。**OPA** は何をどこで実行するかを統制します。**GitOps リコンサイラー**（ゴールデンパスは ArgoCD）はクラスターを望ましい状態へと収束させます。KAS を流れる **CloudEvents** がすべてを接続します。
 
-## 問題
+## 課題
 
-GitLab には CD プロダクトがありません。今日私たちが CD と呼ぶものは、`environment:` アノテーションを持つ CI ジョブです。私たち自身の Delivery チームは、gitlab.com のデプロイに私たちのツールよりも ArgoCD を選択しました。CI はオーケストレーションを処理し、ArgoCD はリコンシリエーションを処理し、ArgoCD の UI が運用サーフェスです。その分割は機能しますが、プロダクトではありません。
+GitLab には CD 製品がありません。今日 CD と呼んでいるものは、`environment:` アノテーションが付いた CI ジョブです。私たち自身の Delivery チームは、gitlab.com のデプロイに私たちのツールではなく ArgoCD を選びました。CI がオーケストレーションを担い、ArgoCD がリコンサイルを担い、ArgoCD の UI が運用上のサーフェスになっています。この分担は機能しますが、製品ではありません。
 
 3 つのものが欠けています。
 
-1. **デプロイエンジンがない。** CI はデプロイスクリプトを実行できますが、リコンシリエーション、ドリフト検出、ヘルスベースの完了、またはライブ状態の概念がありません。デプロイジョブはワークロードが正常なときではなく、スクリプトが 0 で終了したときに成功します。
+1. **デプロイメントエンジンがない。** CI はデプロイメントスクリプトを実行できますが、リコンサイル、ドリフト検出、ヘルスベースの完了判定、ライブ状態という概念を持ちません。デプロイメントジョブは、ワークロードが正常になったときではなく、スクリプトが 0 で終了したときに成功します。
 
-2. **耐久性のあるオーケストレーションがない。** CD ワークフローは待機します。ソーク期間、デプロイウィンドウ、人間の承認を待ち、最初からやり直さずに失敗を乗り越える必要があります。CI パイプラインはループに人間が入る仕組みがなく、SCM と深く結合しています。GitLab には人間規模の時間にわたるプロセスのための汎用ワークフローエンジンがありません。Auto Flow はこのエンジンになるよう設計されましたが、Temporal への依存や投資不足などにより停滞しました。
+2. **耐久性のあるオーケストレーションがない。** CD ワークフローは待機します。ソーク期間、デプロイメントウィンドウ、人による承認のために待ち、そして最初からやり直すことなく障害を生き延びる必要があります。CI パイプラインには human-in-the-loop の仕組みがなく、SCM と深く結合しています。GitLab には、人間のスケールの時間にまたがるプロセスのための汎用ワークフローエンジンがありません。Auto Flow はまさにこのエンジンとして設計されましたが、停滞しました。一部は Temporal への依存のため、一部は投資の不足のためです。
 
-3. **AI 駆動のデプロイのためのガバナンスがない。** AI エージェントはデプロイの決定を下す能力が増しています。彼らは現在、CD ワークフローに安全に参加する方法がありません。アイデンティティモデルなし、信頼蓄積なし、エージェントがどの環境で何ができるかを管理するポリシーフレームワークなし。
+3. **AI 駆動のデプロイメントに対する統制がない。** AI エージェントは、デプロイメントの判断を下す能力をますます高めています。これらは現在、CD ワークフローに安全に参加する手段を持っていません。アイデンティティモデルも、信頼の蓄積も、エージェントがどの環境で何をできるかを統制するポリシーフレームワークもありません。
 
 ## アーキテクチャ
 
 ### Auto Flow
 
-Auto Flow は KAS のモジュールとして実行される耐久性のあるワークフローエンジンです。ワークフローは任意の Git サーバーからフェッチされた Starlark スクリプトです。3 つのプリミティブ:
+Auto Flow は、KAS のモジュールとして動作する耐久性のあるワークフローエンジンです。ワークフローは、任意の Git サーバーから取得される Starlark スクリプトです。3 つのプリミティブがあります。
 
-- **`run`** — GitLab Function を呼び出す。作業を行う唯一のプリミティブ。すべての呼び出しで OPA ポリシーの対象となる。
-- **`sleep`** — ワークフローを一定時間中断する。
-- **`wait_for_event`** — 一致する CloudEvent が到着するまで中断する。
+- **`run`** — GitLab Function を呼び出します。実際の作業を行う唯一のプリミティブです。呼び出しのたびに OPA ポリシーの対象となります。
+- **`sleep`** — ワークフローを一定時間サスペンドします。
+- **`wait_for_event`** — 一致する CloudEvent が到着するまでサスペンドします。
 
-Auto Flow は可能な限りメモリ内で実行されます。goroutine は Starlark スクリプトを最初から最後まで実行します。組み込み Functions（`builtin://`）は KAS のインプロセスで実行されます。カタログと Agent Functions はジョブルーター経由で Runner にディスパッチされます。状態は実行されたアクティビティの累積結果であり、各アクティビティの完了は自動的に PostgreSQL に永続化されます。再開時、スクリプトは先頭からリプレイされます。完了したアクティビティは即座にキャッシュされた結果を返します。スクリプトは中断した場所まで早送りされます。
+Auto Flow は可能な限りインメモリで実行します。1 つの goroutine が Starlark スクリプトを最初から最後まで実行します。組み込み Functions（`builtin://`）は KAS 内のプロセス内で実行されます。Catalog Functions と Agent Functions は、Job Router 経由で Runner にディスパッチされます。状態とは、実行されたアクティビティの累積された結果です。各アクティビティの完了は自動的に PostgreSQL に永続化されます。再開時には、スクリプトは先頭から再生されます。完了したアクティビティはキャッシュされた結果を即座に返します。スクリプトは中断したところまで早送りされます。
 
-Auto Flow はトリガー登録を所有します。トリガーはCloudEvent タイプ（オプションのフィルター付き）をワークフロー定義（Git URL、パス、ref、認証情報）にバインドします。一致するイベントが KAS に到着すると、Auto Flow はスクリプトをフェッチし、ロードし、一致する `on_event` ハンドラーを実行します。トリガーは Auto Flow の API を通じて作成されます。Rails の CD UI はクライアントの 1 つですが、将来の Auto Flow コンシューマーも同じ API でトリガーを登録できます。
+Auto Flow はトリガーの登録を所有します。トリガーは、CloudEvent タイプ（オプションのフィルター付き）をワークフロー定義（Git URL、パス、ref、認証情報）にバインドします。一致するイベントが KAS に到着すると、Auto Flow はスクリプトを取得し、ロードし、一致する `on_event` ハンドラーを実行します。トリガーは Auto Flow の API を通じて作成されます。Rails の CD UI はそのクライアントの 1 つですが、将来の Auto Flow コンシューマーはどれも同じ API を通じてトリガーを登録できます。
 
-Auto Flow は CD 固有ではありません。それは汎用の耐久性のあるワークフローエンジンです。CD はその上に構築された最初のプロダクトです。
+Auto Flow は CD 専用ではありません。これは汎用の耐久性のあるワークフローエンジンです。CD はその上に構築される最初の製品です。
 
-Argo Rollouts を使用した MVC デプロイパスは [Kubernetes Deployment via Argo Rollouts](argo_rollouts_mvc.md) サブドキュメントで説明されています。
+デプロイメント実行レイヤー（Deploy Driver、パイプライン設定、Argo Rollouts Beta）は、サブドキュメント [GitLab CD: デプロイメント実行](cd_execution.md) で記述します。
 
 ### Functions
 
-ワークフロー内のすべての作業は `run` を介した Function の呼び出しです。Functions は既存の GitLab Functions テクノロジーで、バージョン管理されており、宣言された入力と出力を持ち、Step Runner によって Runner で実行されます。今日 CI ジョブが参照するのと同じ方法で Git URL とバージョンで参照されます。
+ワークフロー内のすべての作業は、`run` を介した Function の呼び出しです。Functions は既存の GitLab Functions テクノロジーであり、バージョン管理され、入力と出力が宣言され、Step Runner によって Runner 上で実行されます。これらは Git URL とバージョンによって参照されます。今日 CI ジョブが Functions を参照するのと同じ方法です。
 
-3 つの Functions ソース:
+Functions には 3 つのソースがあります。
 
-- **組み込み**（`builtin://`）— KAS が提供し、インプロセスで実行されます。イベントの送信などの軽量操作。
-- **コンポーネントカタログ** — 再利用のための公開済み Functions。リコンシリエーション、メトリクス、コンプライアンス用の CD 固有の Functions。また顧客が公開した Functions も含まれます。
-- **AI カタログ** — Agent Functions。同じディスパッチモデル、異なるカタログソース。信頼スコアと認証はここに存在します。
+- **組み込み**（`builtin://`）— KAS が提供し、プロセス内で実行されます。イベント送信のような軽量な操作です。
+- **Component Catalog** — 再利用のために公開された Functions。リコンサイル、メトリクス、コンプライアンスのための CD 固有の Functions。顧客が公開した Functions も含みます。
+- **AI Catalog** — Agent Functions。同じディスパッチモデルですが、カタログのソースが異なります。信頼スコアと認証はここに存在します。
 
-Functions はジョブルーター経由で Runner にディスパッチされます。CI と CD で同じパスです。Runner はソースを知りません。KAS 認証はプラグ可能です（CI の場合は GitLab Rails、スタンドアロン CD の場合は OIDC または静的トークン）。そのため、Runner は CI ランナー登録なしに CD システムにアタッチできます。
+Functions は Job Router を通じて Runner にディスパッチされます。CI と CD で同じ経路です。Runner はソースを知りません。KAS の認証はプラガブルなので（CI には GitLab Rails、スタンドアロン CD には OIDC または静的トークン）、Runner は CI runner の登録なしに CD システムにアタッチできます。
 
 ### ポリシー
 
-OPA はすべての `run` 呼び出しを評価します。ポリシー入力には以下が含まれます。
+OPA はすべての `run` 呼び出しを評価します。ポリシーの入力には次が含まれます。
 
 - **Function アイデンティティ** — `run` 呼び出しからの参照と入力
-- **信頼スコア** — Function がそこに登録されている場合、コンポーネントカタログまたは AI カタログから
-- **環境** — CD 設定から、呼び出しコンテキストによって解決される
-- **呼び出し元** — ワークフローアイデンティティ、トリガーソース、イニシエーター
+- **信頼スコア** — Function が登録されていれば、Component Catalog または AI Catalog から
+- **環境** — CD 設定から、呼び出しのコンテキストによって解決される
+- **呼び出し元** — ワークフローアイデンティティ、トリガーソース、開始者
 
-ポリシーは **execute**、**hold**、または **reject** を返します。
+ポリシーは **execute**、**hold**、**reject** のいずれかを返します。
 
 ```rego
 package gitlab.functions
@@ -96,66 +94,68 @@ decision := "reject" {
 }
 ```
 
-Execute は直接進みます。Reject は Starlark スクリプトにエラーを返します。Hold は `approval.requested` CloudEvent を発行し、ワークフローは `wait_for_event` に入ります（スクリプトに対して透過的です）。人間または信頼されたエージェントから承認が到着すると、Function がディスパッチされます。ワークフローの作者は、どのポリシーが適用されるかに関わらず同じコードを書きます。
+Execute は直接進行します。Reject は Starlark スクリプトにエラーを返します。Hold は `approval.requested` CloudEvent を発行し、ワークフローは `wait_for_event` に入ります。これはスクリプトからは透過的です。人間または信頼されたエージェントから承認が到着すると、Function がディスパッチされます。ワークフローの作成者は、どのポリシーが適用されるかにかかわらず、同じコードを書きます。
 
-OPA は GitLab 全体の Function 実行のためのポリシーエンジンです。CD はデプロイガバナンスポリシーを書きます。CI はパイプラインセキュリティポリシーを書けます。異なるルール、同じフレームワーク。
+OPA は、GitLab 全体にわたる Function 実行のためのポリシーエンジンです。CD はデプロイメント統制ポリシーを書きます。CI はパイプラインセキュリティポリシーを書けます。異なるルール、同じフレームワークです。
 
-ポリシールールはバージョン管理されてレビューされます。Git は 1 つのソースであり、バージョン管理されていて MR でレビューできます。OCI ポリシーバンドルは別のソースであり、署名をサポートしており、Git だけよりも強い整合性保証を提供し、GitLab レジストリはすでに OCI メディアタイプをサポートしています。環境設定（ティア、リスクレベル、ラベル）は CD API を通じて管理され、CD 独自のテーブルに保存されます。信頼スコアはカタログに存在します。これらすべてがデータとして OPA に供給されます。
+ポリシールールはバージョン管理されレビューされます。Git はソースの 1 つで、バージョン管理され MR でレビューできます。OCI ポリシーバンドルはもう 1 つのソースで、署名を標準でサポートし、Git 単独よりも強い整合性保証を提供します。また GitLab Registry はすでに OCI メディアタイプをサポートしています。環境設定（tier、リスクレベル、ラベル）は CD API を通じて管理され、CD 独自のテーブルに保存されます。信頼スコアはカタログに存在します。これらすべてがデータとして OPA に供給されます。
 
 ### 環境
 
-環境は名前付きポリシースコープです。ティア（production、staging、development）、リスクレベル、ラベル、および関連するデプロイターゲットを持ちます。環境は CD が所有するコアドメインオブジェクトです。
+環境とは、名前付きのポリシースコープです。tier（production、staging、development）、リスクレベル、ラベル、関連するデプロイメントターゲットを持ちます。環境は CD が所有する中核のドメインオブジェクトです。
 
-Function がデプロイワークフローのコンテキストで実行されると、環境はどのポリシーが適用されるかを決定します。「Production は信頼スコアが 0.8 未満の AI エージェントが呼び出した Functions の承認を必要とする」は、環境プロパティを参照するポリシールールです。
+Function がデプロイメントワークフローのコンテキストで実行されると、環境がどのポリシーを適用するかを決定します。「Production では、信頼が 0.8 未満の AI エージェントが呼び出す Function には承認が必要」— これは環境のプロパティを参照するポリシールールです。
 
-環境は Rails の CD API を通じて管理され、CD テーブルに保存されます。Auto Flow は環境が何かを知りません。OPA は環境プロパティをデータとして評価します。
+環境は Rails の CD API を通じて管理され、CD テーブルに保存されます。Auto Flow は環境が何であるかを知りません。OPA は環境のプロパティをデータとして評価します。
 
-### リコンシリエーション
+### リコンサイル
 
-GitOps リコンサイラーはクラスターを宣言的な望ましい状態に収束させます。Git、OCI、またはその他のサポートされたオリジンから取得されます。ArgoCD がゴールデンパスです。リコンサイラーは Auto Flow の一部ではなく、CD Functions が対話するデプロイターゲットです。
+GitOps リコンサイラーは、クラスターを宣言的な望ましい状態へと収束させます。状態のソースは Git、OCI、またはその他のサポートされる任意のオリジンです。ArgoCD はゴールデンパスです。リコンサイラーは Auto Flow の一部ではありません。これは CD Functions がやり取りするデプロイメントターゲットです。
 
-CD Functions はリコンサイラーをトリガーし、ヘルスを照会し、差分をプレビューし、ロールバックを開始します。これらの Functions はコンポーネントカタログで公開されています。リコンサイラーの API を呼び出します。リコンサイラーは KAS を通じて流れる CloudEvents でステータスをレポートします。異なるリコンサイラー（Flux またはカスタム）は異なる Function 実装を意味します。ワークフローは変わりません。
+CD Functions はリコンサイラーをトリガーし、ヘルスをクエリし、差分をプレビューし、ロールバックを開始します。これらの Functions は Component Catalog で公開されます。これらはリコンサイラーの API を呼び出します。リコンサイラーは KAS を流れる CloudEvents を通じてステータスを報告します。異なるリコンサイラー（Flux やカスタムのもの）は、異なる Function 実装を意味します。ワークフローは変わりません。
 
-ArgoCD は KAS の k8s プロキシを通じてリモートクラスターに接続し、agentk が透過的な Kubernetes API ブリッジを提供します。ArgoCD は KAS が存在することを知りません。
+ArgoCD は KAS の k8s-proxy を通じてリモートクラスターに接続します。そこでは agentk が透過的な Kubernetes API ブリッジを提供します。ArgoCD は KAS の存在を知りません。
 
 ### CloudEvents
 
-KAS がイベントバスです。イベントは Rails、ArgoCD、agentk、agentw、外部 Webhook（GitHub、Jenkins、任意の CI システム）から流れ込みます。イベントは Auto Flow（トリガーとウェイクアップ）と Rails（ダッシュボードの更新）に流れ出ます。
+KAS はイベントバスです。イベントは Rails、ArgoCD、agentk、agentw、外部 Webhook（GitHub、Jenkins、任意の CI システム）から流入します。イベントは Auto Flow（トリガーとウェイクアップ）と Rails（ダッシュボードの更新）へと流出します。
 
-CloudEvents は CI が CD とインテグレーションする方法です。CI パイプラインが完了すると → CloudEvent → Auto Flow トリガー → デプロイワークフローが実行されます。共有ワークフローエンジンは必要ありません。イベントがインテグレーションポイントです。
+CloudEvents は CI が CD と統合する方法です。CI パイプラインが完了する → CloudEvent → Auto Flow トリガー → デプロイメントワークフローが実行される。共有のワークフローエンジンは不要です。イベントが統合ポイントです。
 
-### Rails における CD
+### GitLab Rails 内の CD
 
-CD プロダクトサーフェスは Rails の Organization レベルの UI です。CD としてラベルされたワークフロー実行のために gRPC で Auto Flow を照会します。環境設定のために独自のテーブルを読みます。信頼スコアのためにカタログデータを読みます。これらのソースからビューを組み立てます。
+CD 製品のサーフェスは、Rails の組織レベルの UI です。CD としてラベル付けされたワークフロー実行を gRPC 経由で Auto Flow にクエリします。環境設定のために自身のテーブルを読み取ります。信頼スコアのためにカタログデータを読み取ります。これらのソースからビューを組み立てます。
 
-- **Environment ダッシュボード** — どこに何がデプロイされているか、ヘルス状態、ドリフトステータス。CloudEvents からのライブ更新。
-- **ワークフロー実行** — アクティブなデプロイ、その履歴、決定の証跡。Auto Flow から。
-- **承認** — コンテキスト付きの保留中の決定、承認/拒否。Auto Flow に書き戻す。
+- **環境ダッシュボード** — 何がどこにデプロイされているか、ヘルス状態、ドリフトステータス。CloudEvents からのライブ更新。
+- **ワークフロー実行** — アクティブなデプロイメント、その履歴、判断の経緯。Auto Flow から。
+- **承認** — コンテキスト付きの保留中の判断、承認/拒否。Auto Flow に書き戻されます。
 - **コンプライアンス** — フレームワーク、環境、期間別の監査証跡。ワークフロー履歴から。
-- **信頼** — エージェントのアクティビティ、信頼スコア、認証ステータス。AI カタログから。
+- **信頼** — エージェントのアクティビティ、信頼スコア、認証ステータス。AI Catalog から。
 
 CD 設定（環境、トリガー、ポリシー参照）は Rails を通じて管理され、CD テーブルに保存されます。トリガーの作成は Auto Flow の API を呼び出します。環境データはポリシーデータとして OPA にロードされます。
 
-## 例: カナリアから本番へ
+Rails のドメインモデル、API、永続化、ライフサイクルは、サブドキュメント [GitLab CD: Rails](rails.md) で記述します。
+
+## 例: カナリアから Production へ
 
 ```python
-# deploy.star — KAS が任意の Git サーバーからフェッチ
+# deploy.star — 任意の Git サーバーから KAS が取得する
 
 def canary_to_production(w, ev):
     service = ev["data"]["service"]
     version = ev["data"]["version"]
 
-    # カナリアをデプロイ。Runner にディスパッチ。
+    # Deploy canary. Dispatches to Runner.
     w.run(step="gitlab.com/cd/reconcile@v1", inputs={
         "app": "%s-canary" % service,
         "revision": version,
         "wait_healthy": True,
     })
 
-    # ソーク。
+    # Soak.
     w.sleep(minutes=30)
 
-    # カナリアのヘルスを確認。Runner にディスパッチ。
+    # Check canary health. Dispatches to Runner.
     metrics = w.run(step="gitlab.com/cd/metrics-query@v1", inputs={
         "query": "rate(http_errors_total{service='%s',canary='true'}[10m])" % service,
         "threshold": 0.01,
@@ -164,9 +164,9 @@ def canary_to_production(w, ev):
         w.run(step="gitlab.com/cd/rollback@v1", inputs={"app": "%s-canary" % service})
         return
 
-    # 本番にプロモート。Runner にディスパッチ。
-    # この環境でポリシーが "hold" と言う場合、ワークフローは
-    # 承認が到着するまで透過的に中断されます。
+    # Promote to production. Dispatches to Runner.
+    # If policy says "hold" for this environment, the workflow
+    # transparently suspends until approval arrives.
     w.run(step="gitlab.com/cd/reconcile@v1", inputs={
         "app": "%s-production" % service,
         "revision": version,
@@ -176,28 +176,28 @@ def canary_to_production(w, ev):
 on_event(type="com.gitlab.cd.deploy_requested", handler=canary_to_production)
 ```
 
-このワークフローには 4 つのアクティビティがあります。Runner にディスパッチする 2 つの `run` 呼び出し、1 つの `sleep`、および本番 `run` での潜在的なポリシーホールドです。各完了後に状態が永続化されます。ポリシーが自動承認する場合、2 番目のリコンシリエーションは即座にディスパッチされます。ポリシーが保留する場合、ワークフローは中断されます。スクリプトはそれを知らず、気にしません。`run` を呼び出し、最終的に結果を得ます。
+このワークフローには 4 つのアクティビティがあります。Runner にディスパッチする 2 つの `run` 呼び出し、1 つの `sleep`、そして production の `run` における潜在的なポリシー hold です。状態は各完了後に永続化されます。ポリシーが自動承認すれば、2 つ目の reconcile は即座にディスパッチされます。ポリシーが hold すれば、ワークフローはサスペンドされます。スクリプトはそれを知らず、気にもしません。`run` を呼び出し、やがて結果が返ってくるだけです。
 
 ## 構築が必要なもの
 
 | コンポーネント | ステータス |
 |---|---|
-| **Auto Flow リプレイエンジン** | 新規。Temporal を置き換える。PostgreSQL バックドのアクティビティ履歴、リプレイ/再開ライフサイクル、タイマーサービス。コアビルド。 |
+| **Auto Flow リプレイエンジン** | 新規。Temporal を置き換え。PostgreSQL ベースのアクティビティ履歴、リプレイ/再開ライフサイクル、タイマーサービス。中核の構築。 |
 | **Auto Flow トリガー登録** | 新規。CloudEvent タイプをワークフロー定義にバインドする API。 |
-| **Auto Flow スクリプトフェッチ** | 新規。KAS が HTTPS/SSH で任意の Git サーバーから Starlark をフェッチ。 |
-| **KAS の Starlark インタープリター** | 既存（AutoFlow PoC）。`run`、`sleep`、`wait_for_event` で拡張。 |
-| **KAS の CloudEvent ルーティング** | 部分的に存在（AutoFlow PoC、Rails → KAS パス）。ArgoCD、agentk、外部 Webhook で拡張。 |
-| **KAS の OPA インテグレーション** | 新規。組み込み OPA がすべての `run` でポリシーを評価。 |
-| **ジョブルーター** | 構築中（ジョブルーターブループリント）。Auto Flow からのディスパッチを受け入れるよう拡張。 |
-| **KAS プラグ可能認証** | 新規。OIDC、静的トークン、Vault 用の go-plugin インターフェース。 |
-| **K8s プロキシ強化** | 既存。ArgoCD 用のパスベースのルーティングとウォッチストリームの信頼性が必要。 |
-| **CD Functions** | 新規。`cd/reconcile`、`cd/metrics-query`、`cd/rollback`、`cd/compliance` など。コンポーネントカタログで公開。 |
-| **Rails の CD テーブル** | 新規。環境、ポリシー参照、デプロイターゲットマッピング。 |
-| **Rails の CD UI** | 新規。Organization レベルのダッシュボード、承認、コンプライアンス、信頼の視覚化。 |
-| **カタログの信頼スコア** | 新規。コンポーネントカタログと AI カタログの Function/エージェントごとのスコープ別スコア。 |
-| **Runner** | 既存。変更なし — 新しいジョブソースは透過的。 |
-| **ArgoCD** | 外部、変更なし。K8s プロキシと CloudEvents で接続。 |
-| **PostgreSQL** | 既存。Auto Flow 状態と CD 設定のための新しいテーブル。 |
+| **Auto Flow スクリプト取得** | 新規。KAS が HTTPS/SSH 経由で任意の Git サーバーから Starlark を取得。 |
+| **KAS 内の Starlark インタープリター** | 存在（AutoFlow PoC）。`run`、`sleep`、`wait_for_event` で拡張。 |
+| **KAS 内の CloudEvent ルーティング** | 部分的に存在（AutoFlow PoC、Rails → KAS 経路）。ArgoCD、agentk、外部 Webhook で拡張。 |
+| **KAS 内の OPA 統合** | 新規。埋め込み OPA がすべての `run` でポリシーを評価。 |
+| **Job Router** | 構築中（Job Router ブループリント）。Auto Flow からのディスパッチを受け付けるよう拡張。 |
+| **KAS プラガブル認証** | 新規。OIDC、静的トークン、Vault のための go-plugin インターフェース。 |
+| **K8s プロキシの拡張** | 存在。ArgoCD のためのパスベースのルーティングと watch ストリームの信頼性が必要。 |
+| **CD Functions** | 新規。`cd/reconcile`、`cd/metrics-query`、`cd/rollback`、`cd/compliance` など。Component Catalog で公開。 |
+| **Rails 内の CD テーブル** | 新規。環境、ポリシー参照、デプロイメントターゲットのマッピング。 |
+| **Rails 内の CD UI** | 新規。組織レベルのダッシュボード、承認、コンプライアンス、信頼の可視化。 |
+| **カタログ内の信頼スコア** | 新規。Component Catalog と AI Catalog における Function/エージェントごと・スコープごとのスコア。 |
+| **Runner** | 存在。変更なし。新しいジョブソースは透過的。 |
+| **ArgoCD** | 外部、変更なし。K8s プロキシと CloudEvents 経由で接続。 |
+| **PostgreSQL** | 存在。Auto Flow 状態と CD 設定のための新しいテーブル。 |
 
 ## シーケンス
 
@@ -215,58 +215,58 @@ sequenceDiagram
     participant K8s as K8s Cluster
     participant Rails as Rails<br/>(CD UI)
 
-    Note over GH,Rails: 1. イベントがワークフローをトリガー
+    Note over GH,Rails: 1. Event triggers workflow
 
     GH->>KAS: push webhook
     KAS->>AF: CloudEvent<br/>com.gitlab.cd.deploy_requested
-    AF->>AF: トリガーを一致 →<br/>GitHub から deploy.star をフェッチ
-    AF->>AF: Starlark ハンドラーを実行
+    AF->>AF: match trigger →<br/>fetch deploy.star from GitHub
+    AF->>AF: run Starlark handler
 
-    Note over GH,Rails: 2. ワークフローが cd/reconcile を呼び出す — ポリシーが評価される
+    Note over GH,Rails: 2. Workflow calls cd/reconcile — policy evaluated
 
     AF->>OPA: run(cd/reconcile, {app: prod})
     OPA-->>AF: hold (production, trust < 0.8)
     AF->>KAS: approval.requested CloudEvent
-    AF->>AF: wait_for_event (PG に永続化)
+    AF->>AF: wait_for_event (persist to PG)
 
-    KAS->>Rails: 保留中の承認を表示
-    Rails-->>KAS: 人間が承認
+    KAS->>Rails: show pending approval
+    Rails-->>KAS: human approves
     KAS->>AF: approval.resolved CloudEvent
-    AF->>AF: リプレイ、run まで早送り
+    AF->>AF: replay, fast-forward to run
 
     AF->>OPA: run(cd/reconcile, {app: prod})
-    OPA-->>AF: execute (承認済み)
-    AF->>JR: cd/reconcile Function をディスパッチ
-    JR->>R: コンテナスペック
+    OPA-->>AF: execute (approved)
+    AF->>JR: dispatch cd/reconcile Function
+    JR->>R: container spec
 
-    Note over GH,Rails: 3. Function が ArgoCD 同期をトリガー
+    Note over GH,Rails: 3. Function triggers ArgoCD sync
 
     R->>Argo: POST /api/v1/applications/prod/sync
 
-    Note over GH,Rails: 4. ArgoCD が KAS → agentk 経由でリコンシリエーション
+    Note over GH,Rails: 4. ArgoCD reconciles through KAS → agentk
 
-    Argo->>KP: マニフェストを適用<br/>(HTTPS to KAS k8s-proxy)
-    KP->>AK: リバース gRPC トンネル経由で転送
-    AK->>K8s: クラスター API に適用
-    K8s-->>AK: リソースが作成された
-    AK-->>KP: レスポンス
-    KP-->>Argo: 成功
+    Argo->>KP: apply manifests<br/>(HTTPS to KAS k8s-proxy)
+    KP->>AK: forward via<br/>reverse gRPC tunnel
+    AK->>K8s: apply to cluster API
+    K8s-->>AK: resources created
+    AK-->>KP: response
+    KP-->>Argo: success
 
-    Note over GH,Rails: 5. ヘルスステータスが CloudEvents として返される
+    Note over GH,Rails: 5. Health status flows back as CloudEvents
 
     Argo->>KAS: CloudEvent<br/>com.gitlab.cd.health.changed<br/>(Healthy)
-    KAS->>AF: ワークフローを起動
-    KAS->>Rails: Environment ダッシュボードを更新
-    AF->>AF: リプレイ、cd/reconcile が healthy を返す
-    AF->>AF: ワークフロー完了、最終履歴を永続化
+    KAS->>AF: wake workflow
+    KAS->>Rails: update environment dashboard
+    AF->>AF: replay, cd/reconcile returns healthy
+    AF->>AF: workflow complete, persist final history
 ```
 
-## オープンクエスチョン
+## 未解決の問い
 
-**ワークフローのシリアライゼーション。** GitLab Delivery は環境ごとに 1 つのアクティブなデプロイが必要です（CI の `resource_group` が解決するのと同じ問題）。Auto Flow には同等のものが必要です。環境またはカスタムキーでスコープされたワークフロー実行の並行制約。
+**ワークフローの直列化。** GitLab Delivery では、1 つの環境につき一度に 1 つのアクティブなデプロイメントが必要です（CI の `resource_group` が解決するのと同じ問題です）。Auto Flow にはそれに相当するもの、つまり環境またはカスタムキーでスコープされたワークフロー実行の並行性制約が必要です。
 
-**スタンドアロンデプロイトポロジー。** SCM なしで GitLab CD を購入する顧客のために: 正確に何をデプロイしますか？KAS、PostgreSQL、Runner、ArgoCD、Rails CD UI — ただし Gitaly なし、Sidekiq なし？最小フットプリントを指定する必要があります。
+**スタンドアロンのデプロイメントトポロジー。** SCM なしで GitLab CD を購入する顧客の場合、彼らは正確に何をデプロイするのでしょうか。KAS、PostgreSQL、Runner、ArgoCD、そして Rails の CD UI、しかし Gitaly はなく、Sidekiq もない? 最小フットプリントを規定する必要があります。
 
-**リプレイエンジンの正確性。** Starlark リプレイは決定論を必要とします。非決定論的なもの（クロックアクセス、RNG など）はすべて、結果が永続化されてリプレイされるアクティビティです。リプレイのセマンティクスは形式的な仕様と徹底的なテストが必要です。
+**リプレイエンジンの正しさ。** Starlark のリプレイには決定論性が必要です。非決定論的なもの（クロックへのアクセス、RNG など）はすべて、結果が永続化されリプレイされるアクティビティです。リプレイのセマンティクスには形式的な仕様と徹底的なテストが必要です。
 
-**ビジュアルデプロイキャンバス。** プロダクト要件はデプロイワークフローを生成するビジュアルエディターを説明しています。このキャンバスは Starlark を生成します。キャンバスの設計とリポジトリ分析から `deploy.star` を生成する Duo AI のインテグレーションは別の設計作業が必要です。
+**ビジュアルデプロイメントキャンバス。** 製品要件では、デプロイメントワークフローを生成するビジュアルエディターが記述されています。このキャンバスは Starlark を生成します。キャンバスの設計と、リポジトリ分析から `deploy.star` を生成するための Duo AI 統合は、別個の設計作業が必要です。

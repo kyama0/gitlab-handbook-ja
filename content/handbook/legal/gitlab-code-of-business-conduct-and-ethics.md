@@ -1,15 +1,15 @@
 ---
-title: "行動規範・倫理規範"
-description: "GitLab における行動規範・倫理規範の概要。"
+title: "Code of Business Conduct & Ethics"
+description: "GitLab における行動規範および倫理規定の概要。"
 controlled_document: true
-upstream_path: "/handbook/legal/gitlab-code-of-business-conduct-and-ethics/"
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-29T10:00:00Z"
+upstream_path: /handbook/legal/gitlab-code-of-business-conduct-and-ethics/
+upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
+lastmod: 2026-06-11T17:41:00+00:00
+translated_at: "2026-06-12T21:18:07Z"
 translator: claude
 stale: false
-lastmod: "2025-11-19T12:25:32-08:00"
 ---
 
-<span class="inline-block rounded px-2 py-0.5 text-xs font-medium" style="background-color:#E24329;color:#ffffff">Visibility: Audit</span>
+{{< label name="Visibility: Audit" color="#E24329" >}}
 
-[取締役、役員、従業員および請負業者向け行動規範・倫理規範](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf)をご参照ください。
+[取締役、執行役員、従業員、コントラクター向けの Code of Business Conduct and Ethics](https://drive.google.com/file/d/10mmfOcy9-0ygOLj92q5L4av-ah-qoHSy/view?usp=drive_link)を参照してください。

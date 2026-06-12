@@ -2,77 +2,80 @@
 title: "デベロッパーアドボケイトのコンサルティングワークフロー"
 description: "デベロッパーアドボカシーチームのコンサルティングワークフローとリクエストについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/consultancy/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T12:00:00Z"
+upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
+lastmod: 2026-06-08T11:30:44+02:00
+translated_at: "2026-06-12T21:17:35Z"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
 ---
 
-チームや部門は、[デベロッパーアドボケイトが分野別専門家（SME）](/handbook/marketing/developer-relations/developer-advocacy/#i-classfa-fa-users-aria-hiddentruei-team-members-and-focus-areas) である分野で、または彼らの経験やコネクションネットワークで支援できる場合に、コンサルティングをリクエストできます。
+各チームや各部門は、[デベロッパーアドボケイトがサブジェクトマターエキスパート (SME)](/handbook/marketing/developer-relations/developer-advocacy/#i-classfa-fa-users-aria-hiddentruei-team-members-and-focus-areas) である領域や、その経験やつながりのネットワークで支援できる領域について、コンサルティングをリクエストできます。
 
-## 体制
+## 構成
 
-コンサルティングリクエストは、[`DA-Consulting::` スコープ付きラベル](/handbook/marketing/developer-relations/developer-advocacy/workflow/#consulting-labels) を使用してラベル付けされ、[`DA-Type::Consulting` ラベル付きの事前フィルター済みリスト](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=DA-Type%3A%3AConsulting&first_page_size=20) で確認できます。
+コンサルティングのリクエストには [`DA-Consulting::` スコープ付きラベル](/handbook/marketing/developer-relations/developer-advocacy/workflow/#consulting-labels)が付けられ、[`DA-Type::Consulting` ラベルで事前フィルタリングされた一覧](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=DA-Type%3A%3AConsulting&first_page_size=20)で確認できます。Issue は[年間コンサルティングエピック](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/work_items?sort=created_date&state=opened&label_name%5B%5D=DA-Type%3A%3AConsulting&type%5B%5D=8&first_page_size=20)にグループ化されています。
 
 ### デベロッパーアドボケイトのコンサルティングをリクエストする
 
-> **重要**: コンサルティングをリクエストする前に、リクエストがデベロッパーアドボカシーチームの支援を必要とすることを確認してください。ほとんどの場合、Solution and Demo Architects チームが最初に支援を求めます。
+> **重要**: コンサルティングをリクエストする前に、そのリクエストがデベロッパーアドボカシーチームの支援を必要とするものであることを確認してください。ほとんどの場合、まず Solution チームや Demo Architects チームに支援を求めることになります。
 
-デベロッパーアドボケイトとリクエスト元は、[`consultancy-request` Issue テンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=consultancy-request) を使用できます。
+デベロッパーアドボケイトとリクエスト元は、[`consultancy-request` Issue テンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=consultancy-request)を使用できます。
 
-### 意思決定マトリックス
+### 意思決定マトリクス
 
-1. [ARR](https://internal.gitlab.com/handbook/sales/annual-recurring-revenue-arr/) （および [SKU](https://about.gitlab.com/pricing/) に対する影響を受けた ARR）
-1. [会社の方向性](https://about.gitlab.com/direction/) およびデベロッパーリレーションズ戦略との整合（たとえば、四半期の特定のバーティカル）。
-1. 専門知識とリソース。デベロッパーアドボケイトが特定のプログラミング言語・フレームワークを提供できない場合、またはコンサルティングを準備するためのリソースがない場合、リクエストを拒否し、SA・CSM・エンジニアリングチームの代替 DRI を提案します。
+1. [ARR](https://internal.gitlab.com/handbook/sales/annual-recurring-revenue-arr/)（および [SKU](https://about.gitlab.com/pricing/) の influenced ARR）
+1. [会社の方向性](https://about.gitlab.com/direction/)とデベロッパーリレーションズ戦略との整合性（たとえば、その四半期の特定のバーティカル）。
+1. 専門知識とリソース。特定のプログラミング言語/フレームワークでデベロッパーアドボケイトが対応できない場合、またはコンサルティングの準備をするリソースがない場合、私たちはそのリクエストを却下し、SA/CSM/Engineering チームの代替 DRI を提案します。
 
-## コンサルティング分野
+## コンサルティング領域
 
-リクエストできる分野やトピックは多岐にわたります。デベロッパーアドボケイトにとって、リクエストが彼らの専門知識とリソースに合致し、過度に広範ではなく、成功の出口基準があることが重要です。すべてのコンサルティングリクエストは、学習や作成されたリソースをより多くの[コンテンツ](/handbook/marketing/developer-relations/developer-advocacy/content/) に再利用する機会に変えるべきです。
+リクエストできる領域やトピックは多岐にわたります。デベロッパーアドボケイトにとって重要なのは、リクエストが彼らの専門知識とリソースに合致し、範囲が広すぎず、成功の終了基準があることです。すべてのコンサルティングのリクエストは、学んだことや作成したリソースをより多くの[コンテンツ](/handbook/marketing/developer-relations/developer-advocacy/content/)に再利用する機会へとつなげるべきです。
 
-一般的に、すべての製品分野、機能、技術がリクエストできます。以下のセクションでは、最近のリクエストとその結果のいくつかの例をドキュメント化しています。
+一般的に、すべての製品領域、機能、テクノロジーをリクエストできます。以下のセクションでは、最近のリクエストとその結果の例をいくつか紹介します。
 
-### GitLab Duo / AI 採用
+### GitLab Duo Agent Platform の導入
 
-目標: 顧客が GitLab Duo と AI を活用した DevSecOps ワークフローを採用するのを支援する。
+ゴール: 顧客が GitLab Duo Agent Platform を導入できるよう支援する。
 
-デベロッパーアドボケイトには、次のような支援が推奨されています:
+デベロッパーアドボケイトには、次のような支援が推奨されます。
 
-- （ライブ）プログラミングワークショップ。リクエストされた言語と GitLab Duo に流暢で自信がある場合。
-- 顧客のエンジニアリングチームが GitLab Duo をテストするためのコードチャレンジ。
-- GitLab UI と IDE のセットアップとトラブルシューティング。
+- （ライブの）プログラミングワークショップ（依頼された言語に堪能で自信がある場合）。
+- GitLab UI と IDE のセットアップおよびトラブルシューティング。
 - 最新の製品アップデートと改善。
-- ベストプラクティスのリソース、デモ、製品ツアー、ユースケース（[コンテンツライブラリ](/handbook/marketing/developer-relations/developer-advocacy/content/#content-library) を参照）
-- Slack でフィールドチームをサポート（[#ai-field-strategy](https://gitlab.enterprise.slack.com/archives/C051SLP8WNB)、[#ai-sme-request](https://gitlab.enterprise.slack.com/archives/C05CWJ93WM7)、[#ai-field-technical](https://gitlab.enterprise.slack.com/archives/C053WFAK56U)）。
+- ベストプラクティスのリソース、デモ、プロダクトツアー、ユースケース（[コンテンツライブラリ](/handbook/marketing/developer-relations/developer-advocacy/content/#content-library)を参照）
+- Slack [#sme-ai](https://gitlab.enterprise.slack.com/archives/C05GK6M7FBQ) でのフィールドチームのサポート
 
-顧客向けワークショップでのコラボレーションは重要です。[Solution Architect](/handbook/solutions-architects/) は、[GitLab Duo と AI のための Proof of Value（PoV）ワークショップ](/handbook/solutions-architects/playbooks/pov/ai/) をリードします。彼らは、ワークショップのアウトラインを構築するために [SA Demo Architects](/handbook/solutions-architects/center-of-excellence/demo-architecture/) と [Customer Success Management チーム](/handbook/customer-success/) からの支援を得ます。デベロッパーアドボケイトには、プログラミングワークショップ、IDE のセットアップとトラブルシューティング、そして一般的に開発者として顧客の（エンジニアリング）チームとベストプラクティスを共有することで支援することが推奨されます。
+顧客向けワークショップでは、部門横断的なコラボレーションが必要です。[Solution Architects](/handbook/solutions-architects/) が [GitLab Duo と AI の Proof of Value (PoV) ワークショップ](/handbook/solutions-architects/playbooks/pov/ai/)をリードします。彼らは [SA Demo Architects](/handbook/solutions-architects/center-of-excellence/demo-architecture/) と [Customer Success Management team](/handbook/customer-success/) から、ワークショップのアウトラインを作成する支援を受けます。デベロッパーアドボケイトには、プログラミングワークショップ、IDE のセットアップとトラブルシューティング、そして顧客の（エンジニアリング）チームとともに開発者としてベストプラクティスを広く共有することによる支援が推奨されます。
 
-顧客のフィードバックは、バグレポート、機能提案、ドキュメント更新、ブログチュートリアル、デモストーリーなどに刺激を与えます。顧客とのエンゲージメント中は、常に耳を傾けてメモを取るようにしてください。
+顧客からのフィードバックは、バグレポート、機能提案、ドキュメントの更新、ブログのチュートリアル、デモのストーリーなど、さまざまなものを生み出すきっかけになります。顧客とのエンゲージメント中は、必ず耳を傾け、メモを取るようにしてください。
 
-顧客採用エンゲージメントの例は、[FY25Q2 OKR KR](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/8073)、[GitLab Duo (AI) Adoption FY25 (DevRel) epic](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/475)、および [この事前フィルター済み Issue リスト](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/?sort=updated_desc&state=all&label_name%5B%5D=DA-Type%3A%3AConsulting&search=duo&first_page_size=20) で利用できます。
+最近の顧客ワークショップの例は、[事前フィルタリングされた Duo Agent Platform のコンサルティング Issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/?sort=updated_desc&state=all&label_name%5B%5D=DA-Type%3A%3AConsulting&search=dap&first_page_size=20)（内部）で確認できます。
 
-結果:
+{{% details summary="Duo Enterprise のアーカイブ済みの結果" %}}
 
-- GitLab Duo の顧客向けワークショップ（[コンテンツハンドブックの完全な維持リスト](/handbook/marketing/developer-relations/developer-advocacy/content/#workshops)）
+顧客の導入エンゲージメントの例は、[FY25Q2 OKR KR](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/8073)、[GitLab Duo (AI) Adoption FY25 (DevRel) エピック](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/475)、および[この事前フィルタリングされた Issue 一覧](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/?sort=updated_desc&state=all&label_name%5B%5D=DA-Type%3A%3AConsulting&search=duo&first_page_size=20)で確認できます。
+
+- GitLab Duo の顧客向けワークショップ（[コンテンツハンドブックの一覧](/handbook/marketing/developer-relations/developer-advocacy/content/#workshops)）
   - [GitLab Duo Use Case - Python workshop 2024-07-10](https://gitlab.com/gitlab-da/use-cases/ai/ai-workshops/gitlab-duo-use-case-python-2024-07-10)
   - [Build your own adventure with GitLab Duo - C++ observability tool with embedded hardware sensors](https://gitlab.com/gitlab-da/use-cases/ai/ai-workshops/gitlab-duo-workshop-build-your-own-adventure-cpp-2024-12-05)
-- ブログ: 顧客とフィールドチーム向けのベストプラクティスチュートリアル（[AI/ML ブログカテゴリ](https://about.gitlab.com/blog/categories/ai-ml/)/)
+- ブログ: 顧客とフィールドチーム向けのベストプラクティスのチュートリアル（[AI/ML ブログカテゴリー](https://about.gitlab.com/blog/categories/ai-ml/)/）
 - ドキュメント
-  - 著者および [GitLab Duo Use Case ドキュメント](https://docs.gitlab.com/ee/user/gitlab_duo/use_cases.html) とリンクされたリソースのメンテナー:
-    - [GitLab Duo Prompts ライブラリ](https://gitlab.com/gitlab-da/use-cases/ai/ai-workflows/gitlab-duo-prompts)
+  - [GitLab Duo Use Case ドキュメント](https://docs.gitlab.com/ee/user/gitlab_duo/use_cases.html)と関連リソースの作成と保守:
+    - [GitLab Duo Prompts library](https://gitlab.com/gitlab-da/use-cases/ai/ai-workflows/gitlab-duo-prompts)
     - [GitLab Duo Challenges](https://gitlab.com/gitlab-da/use-cases/ai/ai-workflows/gitlab-duo-challenges)
-  - [GitLab Duo オンボーディングの改善](https://gitlab.com/gitlab-org/gitlab/-/issues/467162)
+  - [Improve GitLab Duo Onboarding](https://gitlab.com/gitlab-org/gitlab/-/issues/467162)
 - 特定の顧客ワークフロー（リファクタリング、コード生成プロンプトなど）を支援する [GitLab Duo Coffee Chats](/handbook/marketing/developer-relations/developer-advocacy/projects/#gitlab-duo-coffee-chat) の継続。
-- 製品・エンジニアリング: 機能提案とバグレポート（[FY25 epic](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/475#feature-proposals) （社内））。
+- Product/Engineering: 機能提案とバグレポート（[FY25 エピック](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/475#feature-proposals)（内部））。
   - Duo Chat に `/fix` スラッシュコマンドを追加（[Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/443366)）。
+
+{{% /details %}}
 
 SME DRI: @dnsmichi
 
-### MLOps の採用
+### MLOps の導入
 
-目標: データサイエンティストと [MLOps](https://about.gitlab.com/direction/modelops/mlops/) エンジニアが DevSecOps プラクティスを採用し、自動化、再現可能なワークフロー、標準化、インフラストラクチャの自動プロビジョニングのメリットを享受できるようにする。
+ゴール: データサイエンティストと [MLOps](https://about.gitlab.com/direction/modelops/mlops/) エンジニアが DevSecOps プラクティスを採用し、自動化、再現可能なワークフロー、標準化、インフラの自動プロビジョニングといったメリットを享受できるようにする。
 
-最近の顧客向けワークショップの例は [この事前フィルター済み Issue リスト](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/?sort=updated_desc&state=all&label_name%5B%5D=DA-Type%3A%3AConsulting&search=mlops&first_page_size=20) （社内）で利用できます。
+最近の顧客ワークショップの例は、[この事前フィルタリングされた Issue 一覧](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/?sort=updated_desc&state=all&label_name%5B%5D=DA-Type%3A%3AConsulting&search=mlops&first_page_size=20)（内部）で確認できます。
 
 SME DRI: @waarias
