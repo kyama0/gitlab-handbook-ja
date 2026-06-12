@@ -2,11 +2,12 @@
 title: "デベロッパーアドボケイトのコンテンツライブラリとワークフロー"
 description: "デベロッパーアドボカシーチームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/content/
-upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
-translated_at: "2026-06-06T12:00:00Z"
+upstream_sha: 5b642767a4478d09eeedd1689a94c1b164788f25
+translated_at: "2026-06-12T12:43:06Z"
 translator: claude
 stale: false
-lastmod: 2026-06-05T17:12:34+02:00
+model: claude-opus-4-7
+lastmod: 2026-06-08T11:30:44+02:00
 ---
 
 デベロッパーアドボカシーチームは、キャンペーン、フィールドイネーブルメント、製品ローンチサポート、ユースケース採用、顧客向けデモ、一般的な学習・オンボーディングに使用できるコンテンツを作成しています。チームが参加するすべてのコンテンツとアクティビティは、[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/) に従って Issue で追跡されます。
@@ -153,10 +154,12 @@ GitLab Unfiltered YouTube チャンネル:
 - [Dev Advocacy: GitLab Duo Agent Platform use cases](https://www.youtube.com/playlist?list=PL05JrBw4t0Ko7aR6sM8e4uXGYtjs4-NqK)
 - AI カタログのパワーを示し、誰もが貢献するよう促すユーザーストーリーを紹介する [Contributor Success AI Catalog / Duo Agent Platform Demos](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq5vFCEQLrowmwGGi5YmCJK)
 
-アーカイブ:
+{{% details summary="アーカイブ" %}}
 
 - [GitLab Duo Coffee Chat](/handbook/marketing/developer-relations/developer-advocacy/projects/#gitlab-duo-coffee-chat)、GitLab Duo と AI に関する学習セッション。（ステータス: 非アクティブ）
 - [DevOps with GitLab Duo](https://www.youtube.com/playlist?list=PL05JrBw4t0Krzu4U6gO3tS738hlsQGFz5)、GitLab Duo、DevOps、AI に関する学習セッション。（ステータス: 非アクティブ）
+
+{{% /details %}}
 
 #### GitLab Unfiltered チャンネルへの動画アップロード {#upload-videos-to-gitlab-unfiltered-channel}
 
@@ -176,7 +179,7 @@ GitLab Unfiltered YouTube チャンネル:
 |-------|------|-------|-----------|---------|-----|
 | Efficient DevSecOps workflows with a little help from My AI Agents | Agentic AI、GitLab Duo Agent Platform | ユースケースと問題解決、ライブデモと AMA | GitLab DACH Roadshow 2025 [recording](https://www.youtube.com/watch?v=amJQkKhe5ys)、slides: [public](https://dnsmichi.click/efficient-devsecops-ai-agents-gitlab-dach-roadshow-2025), [internal](https://docs.google.com/presentation/d/1YMOQf-5hNzCyfUS2w6yvvDlfu_FqmYebkyxmeFWTyOU/edit)、Demo: [Tanuki IoT Platform](https://gitlab.com/gitlab-da/use-cases/ai/gitlab-duo-agent-platform/demo-environments/tanuki-iot-platform) | 2025-12-04 | @dnsmichi |
 
-アーカイブ:
+{{% details summary="アーカイブ" %}}
 
 | タイトル | 分野 | 焦点 | リソース | 更新 | DRI |
 |-------|------|-------|-----------|---------|-----|
@@ -185,19 +188,23 @@ GitLab Unfiltered YouTube チャンネル:
 | Learning AI 101: Practical Foundations for Developers | Agentic AI | LLM、RAG、Tools、Agents、MCP のユースケースと実用的なプロンプトなど | Open Source @ Siemens 2025 [recording](https://www.youtube.com/watch?v=6NxSJmpjxfo)、slides: [public](https://dnsmichi.click/learning-ai-101-os-siemens-2025), [internal](https://docs.google.com/presentation/d/1PUCUrVzKnzc25md8gbh1jYznz-dUFfQcENvbR9xUJ7k/edit) | 2025-06-03 | @dnsmichi |
 | Efficient DevSecOps workflows with a little help from AI | AI、GitLab Duo | Duo を使った製品ユースケース | DACH Roadshow 2024 slides: [public](https://go.gitlab.com/JRFMG4), [internal](https://docs.google.com/presentation/d/1Pm8yT46jpcc3kY0PLZqZlG2slIiFyZiQPKFEgyqqstw/edit)  | 2024-11-14 | @dnsmichi |
 
+{{% /details %}}
+
 ### ワークショップ {#workshops}
 
 デベロッパーアドボカシーチームは、さまざまな製品分野と注力分野でワークショップを維持しています。ワークショップにはさまざまな種類があります: ハンズオン形式（聴衆がライブで演習に参加するトレーニングコース）、または聴衆が質問でエンゲージするライブデモ・プログラミングセッションのショーケースなどです。ワークショップは、[Solution Architect](/handbook/solutions-architects/) および [Customer Success](/handbook/customer-success/) チームと協力して作成し、ビジネス目標と整合させる必要があります。
 
 > 注: 特定の顧客に焦点を当てたワークショップは、[顧客コンサルティングハンドブック](/handbook/marketing/developer-relations/developer-advocacy/consultancy/) に従ってリクエストできます。
 
-アーカイブ:
+{{% details summary="アーカイブ" %}}
 
 | タイトル | 分野 | タイプ | 焦点 | DRI | リソース |
 |-------|------|------|-------|-----|-----------|
 | Deep dive: Custom rules for GitLab Duo Agentic Chat | GitLab Duo Agent Platform | チャレンジ演習 | カスタムルール、スタイルガイド、オンボーディング、コードのモダナイゼーション | @dnsmichi | [GitLab グループ](https://gitlab.com/gitlab-da/use-cases/ai/gitlab-duo-agent-platform/custom-rules) |
 | GitLab Duo best practices - Build a Python shop app | GitLab Duo | ショーケース、聴衆が視聴・エンゲージ、Sales Proof-of-value ワークショップ（60分 + 非同期コンテンツ） | Python、ショップアプリ | @dnsmichi | [2024-05-07 livestream with Eddie Jaoude](https://gitlab.com/gitlab-da/use-cases/ai/ai-workshops/gitlab-duo-ai-eddie-jaoude/getting-started-exercises)、[2024-07-01](https://gitlab.com/gitlab-da/use-cases/ai/ai-workshops/gitlab-duo-use-case-python-2024-07-10)、[2024-08-21 Python app](https://gitlab.com/gitlab-da/use-cases/ai/ai-workshops/gitlab-duo-use-case-python-2024-08-21)、[2024-10-01 best practices](https://gitlab.com/gitlab-da/use-cases/ai/ai-workshops/gitlab-duo-workshop-best-practices-advanced-use-cases-2024-10-01) |
 | Build your own adventure with GitLab Duo - C++ observability tool and hardware sensors | GitLab Duo | ショーケース、聴衆が視聴・エンゲージ、Sales Proof-of-value ワークショップ（60分 + 非同期コンテンツ） | C++、オブザーバビリティ、Embedded、センサー、メトリクス | @dnsmichi | [2024-12-05 Build your own adventure - C++](https://gitlab.com/gitlab-da/use-cases/ai/ai-workshops/gitlab-duo-workshop-build-your-own-adventure-cpp-2024-12-05) |
+
+{{% /details %}}
 
 ### 維持されているドキュメント {#maintained-documentation}
 
@@ -228,11 +235,13 @@ GitLab Unfiltered YouTube チャンネル:
 - [Support Orbit / Knowledge Graph launch (demos, use cases, research) - FY27](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/work_items/1163)
 - [Support GitLab DAP launch: Status, feature tracker, enablement - DevRel FY27](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/work_items/878)
 
-アーカイブ:
+{{% details summary="アーカイブ" %}}
 
 - [FY26 GitLab Duo (AI/ML) Adoption strategy (DevRel)](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/work_items/520)
 - [FY25 GitLab Duo adoption - Developer Relations epic](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/475)（社内）。
 - [FY25 CI/CD adoption - Developer Relations epic](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/epics/466)（社内）
+
+{{% /details %}}
 
 ### プロジェクト {#projects}
 

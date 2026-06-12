@@ -18426,11 +18426,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/cfps.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/cfps.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "upstream_committed_at": "2026-06-08T11:30:44+02:00",
+      "translated_at": "2026-06-12T12:43:06Z",
       "model": "claude-opus-4-7",
-      "input_hash": "af872a3ca5c2fe1dd1e2a1dd93383124724ca0f87a751bf72d22e3c1ec08f213",
-      "upstream_committed_at": "2025-09-05T15:04:46+02:00"
+      "input_hash": "04115f348153c7a50547efd1e5a22f8623a45af1b601e406532a77af57100d96"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/community-response.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/community-response.md",
@@ -18442,19 +18442,19 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/consultancy.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/consultancy.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T12:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "upstream_committed_at": "2026-06-08T11:30:44+02:00",
+      "translated_at": "2026-06-12T12:43:06Z",
       "model": "claude-opus-4-7",
-      "input_hash": "6f43ba462c72745956b4fb9643970f53f53b4982b6e7c8ba115a77db8627d64e",
-      "upstream_committed_at": "2026-05-08T14:07:20+02:00"
+      "input_hash": "b5fa2ea37f6d3b335f390c98a0f39c942dbdad5b28cfe5c596acf8701beca3be"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/content.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/content.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "upstream_committed_at": "2026-06-08T11:30:44+02:00",
+      "translated_at": "2026-06-12T12:43:06Z",
       "model": "claude-opus-4-7",
-      "input_hash": "6561d9dbc02cacda7e651d4bc048beb86010b4b9e754678266b6cd05fc0d64fd",
-      "upstream_committed_at": "2026-06-05T17:12:34+02:00"
+      "input_hash": "6d476ffae08ad933b04bf5de6569f03c57ee69e84f1efc1b3325ded409e9a8ef"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md",
