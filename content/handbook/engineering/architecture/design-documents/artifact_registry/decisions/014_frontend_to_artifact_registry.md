@@ -1,5 +1,5 @@
 ---
-title: "Artifact Registry ADR 014: Frontend to Artifact Registry Interaction"
+title: "Artifact Registry ADR 014: フロントエンドと Artifact Registry の相互作用"
 owning-stage: "~devops::package"
 description: "GitLab Rails フロントエンドと Artifact Registry の間の相互作用モデル"
 toc_hide: true

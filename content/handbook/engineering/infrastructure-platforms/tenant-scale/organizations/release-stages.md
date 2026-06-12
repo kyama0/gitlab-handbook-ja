@@ -1,5 +1,5 @@
 ---
-title: "Release stages"
+title: "リリースステージ"
 description: "Organizations チームが、調整された一連のフィーチャーフラグステージを通じて作業をどのようにリリースするか"
 upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/organizations/release-stages/
 upstream_sha: 5b642767a4478d09eeedd1689a94c1b164788f25
