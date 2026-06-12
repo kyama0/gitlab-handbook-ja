@@ -7792,6 +7792,14 @@
       "input_hash": "ccf606f6cfa3c87963678d91b80e2e06a0ad1d35a22cb8f84bed188b5ae3fe46",
       "upstream_committed_at": "2026-06-11T13:14:37-07:00"
     },
+    "content/handbook/engineering/architecture/design-documents/gitlab_cd/cd_execution.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/gitlab_cd/cd_execution.md",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T12:27:35Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0a9ed117e8f0c483d89b7365a0ea5022943ce0b76336fc05b23737337dfd1ba4",
+      "upstream_committed_at": "2026-06-11T13:14:37-07:00"
+    },
     "content/handbook/engineering/architecture/design-documents/gitlab_cd/argo_rollouts_mvc.md": {
       "path": "content/handbook/engineering/architecture/design-documents/gitlab_cd/argo_rollouts_mvc.md",
       "upstream_sha": "ec55f130cc95389b6faf798cebffd864abdbb4c5",
@@ -13610,11 +13618,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/_index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T04:54:37Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "0d0e0ee074db7da1ffd97c1dfdff366515b2650ace399e75c67d10aced7cc77c",
-      "upstream_committed_at": "2026-04-15T10:25:15+02:00"
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T12:27:35Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "545e7129faef006d0174e16770ec4c42e209f8c3831e669ee2d5096b56050237",
+      "upstream_committed_at": "2026-06-11T10:03:08+08:00"
     },
     "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/ai-prompts.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/ai-prompts.md",
@@ -13642,11 +13650,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T04:54:37Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1f394dfbff8057959668e9435440092e3b0060cef331120959d580fef40727f0",
-      "upstream_committed_at": "2026-03-02T19:44:15+00:00"
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T12:27:35Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ad102b24d3d45b994f1b69f2beae6471601f274f1070f3118f59e4e0e9fe5f3c",
+      "upstream_committed_at": "2026-06-11T10:03:08+08:00"
     },
     "content/handbook/engineering/infrastructure-platforms/tenant-scale/request-for-help.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/tenant-scale/request-for-help.md",

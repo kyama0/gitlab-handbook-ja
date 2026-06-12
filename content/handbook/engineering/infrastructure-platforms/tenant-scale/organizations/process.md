@@ -1,59 +1,60 @@
 ---
-title: "チームプロセス"
+title: "Team processes"
 description: "Organizations チームの運営方法"
 upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T04:54:37Z"
+upstream_sha: 5b642767a4478d09eeedd1689a94c1b164788f25
+lastmod: 2026-06-11T10:03:08+08:00
+translated_at: "2026-06-12T12:27:35Z"
 translator: claude
 stale: false
-lastmod: "2026-03-02T19:44:15+00:00"
+model: claude-opus-4-7
 ---
 
-## 作業
+## Work
 
-プロダクトマネージャー（PM）がチーム、エンジニアリングマネージャー（EM）、その他のステークホルダーのインプットを受け、[製品優先順位付けプロセス](/handbook/product/product-processes/#prioritization)に従って Issue のリストをまとめます。
-イテレーションサイクルは月の第 2 金曜日まで続き、翌月曜日から新しく始まります。
-各マイルストーンはリリースされる GitLab のバージョンで識別されます。
+プロダクトマネージャー（PM）は、チーム、エンジニアリングマネージャー（EM）、その他のステークホルダーからの入力をもとに、[プロダクト優先順位付けプロセス](/handbook/product/product-processes/#prioritization) に従って Issue のリストをまとめます。
+イテレーションサイクルは月の第 2 金曜日まで続き、翌週の月曜日に新たに開始します。
+各マイルストーンは、リリース予定の GitLab バージョンによって識別されます。
 
-### マイルストーンプランニング
+### Milestone Planning
 
-マイルストーン開始前に、グループは[プランニング Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues/?label_name%5B%5D=Planning%20Issue)を使用して調整します。
-私たちは次のプロセスに従います:
+マイルストーンを開始する前に、グループは [計画 Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues/?label_name%5B%5D=Planning%20Issue) を使用して調整します。
+私たちは次のプロセスに従います。
 
-- PM がマイルストーンのゴールを定義します。
+- PM がマイルストーンの目標を定義します。
 - チームメンバーがマイルストーンに関連すると考える Issue についてコメントします。
-- PM と EM が連携して最終的な Issue リストを決定します。
-- チーム全体がマイルストーン開始前に予定されている項目をレビューします。
+- PM と EM が協力して、Issue の最終リストを決定します。
+- チーム全体が、マイルストーン開始前にラインアップされた項目をレビューします。
 
-### 何に取り組むか
+### What To Work On
 
-作業の主なソースは[プランニングボード](https://gitlab.com/groups/gitlab-org/-/boards/7487616?label_name[]=group%3A%3Aorganizations&milestone_title=Started)で、現在のサイクルで予定されているすべての Issue が一覧されています。
-Issue に自分自身をアサインすることで、作業中であることを示します。
+取り組むべきことの主要なソースは [計画ボード](https://gitlab.com/groups/gitlab-org/-/boards/7487616?label_name[]=group%3A%3Aorganizations&milestone_title=Started) であり、現在のサイクルに予定されているすべての Issue をリストします。
+Issue に自分自身をアサインすることで、それに取り組んでいることを示します。
 
-未回答の質問や不明確な要件など、Issue をすぐに始めることを妨げることがある場合は、Issue にあなたの調査結果と質問を記入する限り、スキップすることができます。
-これにより、次にその Issue を担当するエンジニアが役立てることができます。
+回答されていない質問や不明確な要件など、すぐに Issue に着手することを妨げるものがある場合は、調査結果と質問を Issue に記載する限り、その Issue をスキップできます。
+これは、その Issue を次に拾うエンジニアの助けになります。
 
-通常、Issue は直接誰かに割り当てられることはありません。ただし、ある Issue で最も知識やコンテキストを持つことが明らかな場合は除きます。
-ただし、会社に大きなインパクトを与えるために、エンジニアが特定のプロジェクトやエピックの ownership を持つことを奨励しています。
+通常、Issue は人に直接アサインされません。ただし、ある人がその Issue に取り組むための最も明確な知識やコンテキストを持っている場合は例外です。
+とはいえ、私たちはエンジニアが特定のプロジェクトやエピックにオーナーシップ感覚を持ち、会社により大きなインパクトを与えることを奨励しています。
 
-### 製品開発ワークフロー
+### Product Development Workflow
 
-私たちは GitLab の[製品開発ワークフロー](/handbook/product-development/how-we-work/product-development-flow/)ガイドラインに従っています。現在のマイルストーンにおけるすべての Issue のステータスの概要を把握するには、[開発ワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/2594854)を確認してください。
+私たちは GitLab の [プロダクト開発ワークフロー](/handbook/product-development/how-we-work/product-development-flow/) のガイドラインに従っています。現在のマイルストーンのすべての Issue のステータスの概要を把握するには、[開発ワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/2594854) を確認してください。
 
-プロセスは主に次のとおりです:
+プロセスは主に次のように進みます。
 
-- `workflow::ready for design` - Issue がデザイン作業を開始できる状態であることを示す
-- `workflow::design` - デザイナーが Issue に積極的に取り組んでいることを示す
-- `workflow::planning breakdown` - デザインが完了し、実装のためのサブ Issue に分解する準備ができていることを示す。デザインプロセス中のコンテキストと決定を保持するために、可能な限り、デザイン Issue をエピックに昇格させて再利用し、実装 Issue をそれに追加します。これにより、エピックをデザインの[SSOT](/teamops/shared-reality/#single-source-of-truth-ssot)として使用でき、すべての議論が一箇所にまとまり、元のデザイン Issue と対応する実装 Issue との間の不整合を防ぐことができます。
-- `workflow::refinement` - Issue がエンジニアリングによるリファインメントを必要としていることを示す。このステップでは、実装ガイドとウェイトを Issue に追加する必要があります。
-- `workflow::ready for development` - 項目がエンジニアリングによって作業できる状態であることを示す
+- `workflow::ready for design` は、Issue がデザイン作業を開始する準備ができていることを示します
+- `workflow::design` は、デザイナーが Issue に積極的に取り組んでいることを示します
+- `workflow::planning breakdown` は、デザインが完了し、実装のためのサブ Issue に分解する準備ができていることを示します。デザインプロセス中のコンテキストと決定を保持するため、可能な場合は、デザイン Issue をエピックにプロモートして再利用し、実装 Issue をそれに追加します。そうすることで、エピックをデザインの [SSOT](/teamops/shared-reality/#single-source-of-truth-ssot) として使用でき、すべての議論が一箇所に集まり、元のデザイン Issue と対応する実装 Issue との間に不整合が生じることがなくなります。
+- `workflow::refinement` は、Issue がエンジニアリングによるリファインメントを必要とすることを示します。このステップでは、実装ガイドと weight を Issue に追加すべきです。
+- `workflow::ready for development` は、項目がエンジニアリングによって取り組まれる準備ができていることを示します
 
-### 開発ワークフロー
+### Development Workflow
 
-私たちは GitLab の[エンジニアリングワークフロー](/handbook/engineering/workflow/)ガイドラインに従っています。現在のマイルストーンにおけるすべての Issue のステータスの概要を把握するには、[開発ワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/2594854)を確認してください。
+私たちは GitLab の [エンジニアリングワークフロー](/handbook/engineering/workflow/) のガイドラインに従っています。現在のマイルストーンのすべての Issue のステータスの概要を把握するには、[開発ワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/2594854) を確認してください。
 
-Issue の担当者として、エンジニアはワークフローラベルを最新の状態に保つことが期待されています。エンジニアが Issue の作業を開始するとき、起点として `workflow::in dev` ラベルをマークし、[開発全体を通じて Issue を更新し続けます](/handbook/engineering/workflow/#updating-workflow-labels-throughout-development)。
-Issue をクローズする前に、`workflow::complete` ラベルを追加することが重要です。これは、完了した項目が各月のリリースポストの改善点とバグの概要に表示されるための要件の一つだからです。プロセスは主に次の図に従います:
+自分にアサインされた Issue のオーナーとして、エンジニアは Issue 上のワークフローラベルを最新の状態に保つことが期待されます。エンジニアが Issue に取り組み始めるとき、開始点として `workflow::in dev` ラベルでマークし、[開発を通じて Issue を更新し続けます](/handbook/engineering/workflow/#updating-workflow-labels-throughout-development)。
+Issue をクローズする前に、`workflow::complete` ラベルを追加することが重要です。これは、完了した項目が毎月のリリース投稿の Improvements and Bugs の概要に表示されるための要件の 1 つだからです。プロセスは主に次の図に従います。
 
 ``` mermaid
 graph LR
@@ -74,153 +75,157 @@ graph LR
   E --> A
 ```
 
-### Issue ボード
+### Issue Boards
 
-以下の Issue ボードで作業を追跡しています:
+私たちは作業を次の Issue ボードで追跡しています。
 
-- [Group::Organizations マイルストーン優先順位](https://gitlab.com/groups/gitlab-org/-/boards/5548886?label_name[]=group%3A%3Aorganizations)
-- [Group::Organizations 部門横断優先順位](https://gitlab.com/groups/gitlab-org/-/boards/4424394?label_name[]=group%3A%3Aorganizations)
-- [Group::Organizations プランニング](https://gitlab.com/groups/gitlab-org/-/boards/7487616?label_name[]=group%3A%3Aorganizations)
-- [Group::Organizations バリデーション](https://gitlab.com/groups/gitlab-org/-/boards/7487708?not[label_name][]=workflow%3A%3Ain%20dev&not[label_name][]=workflow%3A%3Ain%20review&label_name[]=group%3A%3Aorganizations)
-- [Group::Organizations 開発ワークフロー](https://gitlab.com/groups/gitlab-org/-/boards/2594854?label_name[]=group%3A%3Aorganizations)
-- [Group::Organizations バグ](https://gitlab.com/groups/gitlab-org/-/boards/7487700?label_name[]=type%3A%3Abug&label_name[]=group%3A%3Aorganizations)
-- [Group::Organizations リリースポスト](https://gitlab.com/groups/gitlab-org/-/boards/7487687?label_name[]=group%3A%3Aorganizations&label_name[]=type%3A%3Afeature)
-- [Group::Organizations マイルストーン](https://gitlab.com/groups/gitlab-org/-/boards/5549104?label_name[]=group%3A%3Aorganizations)
-- [Group::Organizations チームメンバー](https://gitlab.com/groups/gitlab-org/-/boards/5549106?label_name[]=group%3A%3Aorganizations)
-- [Group::Organizations 重要](https://gitlab.com/groups/gitlab-org/-/boards/1438588?label_name[]=group%3A%3Aorganizations)
-- [Group::Organizations コミュニティコントリビューション](https://gitlab.com/groups/gitlab-org/-/boards/7487739?label_name[]=Community%20contribution&label_name[]=group%3A%3Aorganizations)
+- [Group::Organizations milestone prioritization](https://gitlab.com/groups/gitlab-org/-/boards/5548886?label_name[]=group%3A%3Aorganizations)
+- [Group::Organizations cross-functional prioritization](https://gitlab.com/groups/gitlab-org/-/boards/4424394?label_name[]=group%3A%3Aorganizations)
+- [Group::Organizations planning](https://gitlab.com/groups/gitlab-org/-/boards/7487616?label_name[]=group%3A%3Aorganizations)
+- [Group::Organizations validation](https://gitlab.com/groups/gitlab-org/-/boards/7487708?not[label_name][]=workflow%3A%3Ain%20dev&not[label_name][]=workflow%3A%3Ain%20review&label_name[]=group%3A%3Aorganizations)
+- [Group::Organizations development workflow](https://gitlab.com/groups/gitlab-org/-/boards/2594854?label_name[]=group%3A%3Aorganizations)
+- [Group::Organizations bugs](https://gitlab.com/groups/gitlab-org/-/boards/7487700?label_name[]=type%3A%3Abug&label_name[]=group%3A%3Aorganizations)
+- [Group::Organizations release posts](https://gitlab.com/groups/gitlab-org/-/boards/7487687?label_name[]=group%3A%3Aorganizations&label_name[]=type%3A%3Afeature)
+- [Group::Organizations milestones](https://gitlab.com/groups/gitlab-org/-/boards/5549104?label_name[]=group%3A%3Aorganizations)
+- [Group::Organizations team members](https://gitlab.com/groups/gitlab-org/-/boards/5549106?label_name[]=group%3A%3Aorganizations)
+- [Group::Organizations important](https://gitlab.com/groups/gitlab-org/-/boards/1438588?label_name[]=group%3A%3Aorganizations)
+- [Group::Organizations community contributions](https://gitlab.com/groups/gitlab-org/-/boards/7487739?label_name[]=Community%20contribution&label_name[]=group%3A%3Aorganizations)
 
-### トラッキングダッシュボード
+### Tracking Dashboards
 
-Issue ボードに加えて、次のような独自ダッシュボードで主要なイニシアチブの進捗も追跡しています:
+Issue ボードに加えて、私たちは次のような専用ダッシュボードでも主要な取り組みの進捗を追跡しています。
 
-- [スキーママイグレーション](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/schema_migration)
-- [シャーディングキーマイグレーション](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/sharding_keys)
+- [Schema migration](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/schema_migration)
+- [Sharding key migration](https://cells-progress-tracker-gitlab-org-tenant-scale-g-f4ad96bf01d25f.gitlab.io/sharding_keys)
 
-ダッシュボードは[Cells Progress Tracker](https://gitlab.com/gitlab-org/tenant-scale-group/cells-progress-tracker)プロジェクトの一部です。
-チームは、他のチームが独自のエピックベースのトラッキングダッシュボードを作成するために使用できるプロジェクトとして[Epic Dashboards](https://gitlab.com/gitlab-org/tenant-scale-group/epic-dashboard)もスピンオフしました。
+これらのダッシュボードは [Cells Progress Tracker](https://gitlab.com/gitlab-org/tenant-scale-group/cells-progress-tracker) プロジェクトの一部です。
+チームはまた、他のチームが独自のエピックベースの追跡ダッシュボードを作成するために使用できる [Epic Dashboards](https://gitlab.com/gitlab-org/tenant-scale-group/epic-dashboard) をプロジェクトとして切り出しました。
 
-### キャパシティプランニング
+### Capacity Planning
 
-各マイルストーンで管理可能な量の作業を確保するために、シンプルな Issue ウェイトシステムをキャパシティプランニングに使用しています。Time Off by Deel を使用して、チームのスループットと各エンジニアの今後の可用性の両方を、[Google Apps Script](https://script.google.com/home/projects/1cH4Hrv03Kf_dlqPyxPdoyxWcV_x2d2u2PKNnGP_YwNjGifjcD4c29GKJ/edit)で考慮します。
+私たちは、キャパシティプランニングのためにシンプルな Issue weighting システムを使用し、各マイルストーンで管理可能な量の作業を確保しています。私たちは、チームのスループットと、Time Off by Deel から得られる各エンジニアの近々の稼働可能状況の両方を、[Google Apps Script](https://script.google.com/home/projects/1cH4Hrv03Kf_dlqPyxPdoyxWcV_x2d2u2PKNnGP_YwNjGifjcD4c29GKJ/edit) を使用して考慮します。
 
-ウェイトは集計で使用することを意図しており、ある人が特定の時間でできることは、その Issue に関する知識レベルによって他の人とは異なる場合があります。正確さを目指しますが、これらは見積もりであることを理解してください。正確でない場合や Issue が当初の予想より困難になった場合はウェイトを変更してください。ウェイトを変更した理由を示すコメントを残し、EM と PM にタグを付けて、スコープをより深く理解し継続的に改善できるようにしてください。
+weight は集計で使用することを意図しており、ある人にとって一定の時間がかかるものが、Issue に関する知識のレベルに応じて別の人にとっては異なる場合があります。私たちは正確であるよう努めるべきですが、それらは見積もりであることを理解すべきです。weight が正確でない場合や、Issue が当初予想されたよりも難しくなった場合は、weight を変更してください。weight が変更された理由を示すコメントを残し、EM と PM をタグ付けして、私たちがスコープをよりよく理解し、改善を続けられるようにしてください。
 
-#### ウェイト
+#### Weights
 
-Issue のウェイトを評価する際は、次の重要な要素を考慮してください:
+Issue に weight を付けるには、次の重要な要因を考慮してください。
 
-- 作業量: コードベースへの変更の予想規模。
+- 作業量: コードベースへの変更の予想される規模。
 - 複雑さ:
-  - 問題の理解: どれだけ問題が理解されているか。
-  - 問題解決の難しさ: 遭遇すると予想される困難のレベル。
+  - 問題理解: 問題がどれだけよく理解されているか。
+  - 問題解決の難しさ: 私たちが遭遇すると予想する難易度のレベル。
 
-開発作業を見積もる際は、適切なウェイトを Issue に割り当ててください:
+開発作業を見積もる際は、Issue に適切な weight をアサインしてください。
 
-| ウェイト | 説明 | 例 |
+| Weight     | Description                                                                                                                                                                                                                                                                                      | Examples                                                                                                                                                                                                                                           |
 | ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------ | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1: 些細 | 最もシンプルな変更。副作用がないことが確信できます。複雑さはほぼゼロ。 | ドキュメントの更新、既に調査・議論されていて数行のコードで修正できるシンプルなリグレッションやバグ、または正確な対処方法は分かっているが時間がなかった技術的負債。 |
-| 2: 小 | シンプルな変更（コード変更が最小限）で、要件をすべて理解しています。いくつかの小さな不確実性はありますが、解決策に自信があります。 | 既存データを公開するための新しい API エンドポイントのようなシンプルな機能、またはすべての調査が既に完了している通常のバグやパフォーマンス問題。 |
-| 3: 中 | より大きなコードフットプリントを持つ変更（例: 多くの異なるファイルやテストが影響を受ける）。作業を進めながら解決する必要がある不確実性があります。 | バックエンドとフロントエンドのコンポーネントを持つ通常の機能、またはほとんどのバグやパフォーマンス問題。 |
-| 5: 大 | コードベースの複数の領域に影響するより複雑な変更。リファクタリングが含まれる場合もあります。要件が不十分に理解されており、複数の重要なギャップがあると感じています。マージリクエストを開始する前に、この Issue をより小さな部分に分割する必要があります。 | バックエンドとフロントエンドのコンポーネントを持つ大きな機能、または初期調査は行われているが再現や理解がまだできていないバグやパフォーマンス問題。 |
+| 1: Trivial | The simplest possible change. We are confident there will be no side effects. Negligible complexity.                                                                                                                                                                                             | Documentation updates, simple regressions, and other bugs that have already been investigated and discussed and can be fixed with a few lines of code, or technical debt that we know exactly how to address, but just haven't found time for yet. |
+| 2: Small   | A simple change (minimal code changes), where we understand all of the requirements. Some small uncertainties exist but we are confident of a solution.                                                                                                                                          | Simple features, like a new API endpoint to expose existing data, or regular bugs or performance issues where all investigation has already taken place.                                                                                           |
+| 3: Medium  | A change with a bigger code footprint (e.g. lots of different files, or tests affected). There are uncertainties that we will need to work through.                                                                                                                                              | Regular features, potentially with a backend and frontend component, or most bugs or performance issues.                                                                                                                                           |
+| 5: Large   | A more complex change that will impact multiple areas of the codebase. There may also be some refactoring involved. Requirements are poorly understood and you feel there are multiple important gaps. We will need to break this issue into smaller pieces before we can begin a merge request. | Large features with a backend and frontend component, or bugs or performance issues that have seen some initial investigation but have not yet been reproduced or understood.                                                                      |
 
-ウェイト 5 以上のものは可能な限り分解する必要があります。
+weight が 5 以上のものは、可能であれば分解すべきです。
 
-### バックログリファインメント
+### Backlog Refinement
 
-エンジニアリングチームは毎週、今後の Issue をレビューするためのバックログリファインメントプロセスを実施しています。この作業の目的は、すべての Issue にウェイトを設定することで、各マイルストーンをより正確に計画し、知識共有を改善することです。
+毎週、エンジニアリングチームは近々の Issue をレビューするためにバックログリファインメントプロセスを完了します。この取り組みのゴールは、すべての Issue に weight を持たせることで、各マイルストーンをより正確に計画でき、また知識共有も改善できるようにすることです。
 
-バックログリファインメントプロセスに加えて、エンジニアはこのバックログリファインメントプロセスに従わずに任意の Issue を見積もることができます。
+バックログリファインメントプロセスに加えて、エンジニアはこのバックログリファインメントプロセスに従わずに任意の Issue を見積もることもできます。
 
-#### ステップ 1: リファインメントが必要な Issue の特定
+#### Step 1: Identifying Issues for Refinement
 
-チームは `workflow::refinement` ラベルを使用して、リファインメントが必要な Issue を特定します。バックログリファインメントプロセスの良い候補（ウェイトなし、要件が不明確など）の Issue がある場合は、ラベルを使用してください。週に最大 5 件の Issue をリファインします。
+チームは、`workflow::refinement` ラベルを使用してリファインメントが必要な Issue を特定します。バックログリファインメントプロセスの良い候補となる Issue（weight がない、要件が不明確など）がある場合は、このラベルを使用してください。私たちは週あたり最大 5 件の Issue をリファインメントします。
 
-[リファインメント Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/blob/main/scripts/refinement)は毎週初めに自動生成されます。
-スクリプトは[ステージプロジェクト](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks)で調整できます。
+[リファインメント Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/blob/main/scripts/refinement) は、毎週の初めに自動生成されます。
+スクリプトは私たちの [stage プロジェクト](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks) で調整できます。
 
-#### ステップ 2: Issue のリファインメント
+#### Step 2: Refining Issues
 
-その週、チームの各エンジニアはバックログリファインメント用に選択された Issue のリストを確認します。[現在のバックログリファインメント Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues/?label_name%5B%5D=workflow%3A%3Arefinement)。
+その週を通じて、チームの各エンジニアはバックログリファインメントのために選択された Issue のリストを確認します。[現在のバックログリファインメント Issue](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues/?label_name%5B%5D=workflow%3A%3Arefinement)。
 
-各 Issue について、チームメンバーは次を確認して提供します:
+各 Issue について、チームメンバーは Issue をレビューし、以下を提供します。
 
-- 見積もりウェイト
+- 見積もり weight
 - 必要に応じた Issue の分解
 - 実装ガイド
 
-Issue をリファインする際は、次の点を考慮してください:
+Issue をリファインメントする際は、次の点を考慮してください。
 
-- コンテキストを保持するために会話を元の Issue に残すか、Issue 内の関連する議論へのリンクを提供する
-- 情報が集まるにつれて Issue の説明、実装計画、ラベルを更新する
-- 効率のために、完了としてマークされた既にリファインされた Issue のリファインメントをスキップできる
-- 修正が明確で簡単な場合は、自分自身に Issue をアサインし、ウェイト 1 を付け、修正をプッシュして Issue をクローズできる
+- 会話を元の Issue に留めるか、コンテキストを保持するために Issue 内の関連する議論へのリンクを提供する
+- より多くの情報が集まるにつれて、Issue の説明、実装計画、ラベルを更新する
+- 効率のため、完了とマークされたすでにリファインメント済みの Issue のリファインメントはスキップできる
+- 修正が明確で簡単な場合、エンジニアは Issue を自分自身にアサインし、weight 1 を付け、修正を push し、Issue をクローズできる
 
-#### ステップ 3: リファインメントの最終化
+#### Step 3: Finalizing Refinement
 
-エンジニアがインプットを提供する機会を持った後、EM または PM は次を行います:
+エンジニアが入力する機会を得た後、EM または PM は次を行います。
 
-- ウェイトを割り当てる
-- 懸念事項がある場合は安定したカウンターパートに通知する
+- weight をアサインする
+- 懸念があればステーブルカウンターパートに伝える
 - `workflow::refinement` ラベルを削除する
 - `workflow::ready for development` ラベルを追加する
 
-議論されてウェイトが付与されなかった Issue については、PM や UX から詳細情報が必要かどうかエンジニアと協力します。
+議論されず weight が付けられなかった Issue については、PM や UX からより多くの情報を得る必要があるかどうかを確認するためにエンジニアと協力します。
 
-### レトロスペクティブ
+### Retrospectives
 
-「マイルストーンごと」の定期的なレトロスペクティブを開催し、「プロジェクトごと」のアドホックなレトロスペクティブも開催できます。
+私たちはスケジュールされた「マイルストーンごと」のレトロスペクティブを開催し、アドホックな「プロジェクトごと」のレトロスペクティブを持つこともできます。
 
-#### マイルストーンごと
+#### Per Milestone
 
-[マイルストーンレトロスペクティブ Issue](https://gitlab.com/gl-retrospectives/enablement-section/tenant-scale/-/issues) があります。
-これには EM、PM、エンジニア、UX、そして全ての安定したカウンターパートが含まれます。
-すべてのマイルストーンへの参加を強く推奨しています。詳細については、毎月 26 日に現在実行中のマイルストーンに対して作成される[グループレトロスペクティブ](/handbook/engineering/careers/management/group-retrospectives/)を参照してください。
+私たちには [マイルストーンレトロスペクティブ Issue](https://gitlab.com/gl-retrospectives/enablement-section/tenant-scale/-/issues) があります。
+これらには EM、PM、エンジニア、UX、そしてすべてのステーブルカウンターパートが含まれます。
+すべてのマイルストーンへの参加が強く奨励されます。詳細については、毎月 26 日に現在進行中のマイルストーンのために作成される [グループレトロスペクティブ](/handbook/engineering/careers/management/group-retrospectives/) を参照してください。
 
-#### プロジェクトごと
+#### Per Project
 
-Issue、機能、またはその他のプロジェクトが特に有益な学習体験になった場合、それから学ぶために同期または非同期のレトロスペクティブを開催することがあります。取り組んでいることでレトロスペクティブが必要だと思う場合:
+Issue、機能、その他の種類のプロジェクトが特に有用な学びの経験になった場合、私たちはそこから学ぶために同期または非同期のレトロスペクティブを開催することがあります。あなたが取り組んでいる何かがレトロスペクティブに値すると思う場合は、次のようにします。
 
-1. [Issue を作成して](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues)、なぜレトロスペクティブを開催したいのか、同期か非同期かを説明します。
-1. EM と、PM やカウンターパートなど参加すべき全員を含めます。
-1. 該当する場合は同期ミーティングを調整します。レトロスペクティブのすべてのフィードバックを将来の参照のために Issue に追加します。
+1. なぜレトロスペクティブを開催したいかを説明する [Issue を作成](https://gitlab.com/gitlab-org/tenant-scale-group/group-tasks/-/issues) し、これが同期であるべきか非同期であるべきかを示します。
+1. あなたの EM と、関与すべきその他の人（PM やカウンターパートなど）を含めます。
+1. 該当する場合は同期ミーティングを調整します。将来の参照のため、レトロスペクティブからのすべてのフィードバックを Issue に追加します。
 
-## エラーバジェット
+## Release stages
 
-GitLab は機能の可用性とパフォーマンスを測定するために[エラーバジェット](/handbook/engineering/error-budgets/)を使用しています。各エンジニアリンググループには独自のバジェット消費があります。Tenant Scale グループの現在の 28 日間の消費は、この[Grafana ダッシュボード](https://dashboards.gitlab.net/d/product-tenant_scale_error_budget/product3a-error-budgets-tenant-scale?orgId=1&from=now-28d&to=now%2Fm&timezone=utc&var-PROMETHEUS_DS=mimir-gitlab-gprd&var-environment=gprd&var-stage=main)で確認できます。
+Organizations は単一の機能ではなくサーフェスエリアであるため、私たちはこれを、定義されたフィーチャーフラグのステージのセットを通じて、協調されたサーフェスとしてリリースします。すなわち、Experimental から Beta、Limited Availability、GA、Stable へと走るリリーストンネルです。これにより、誰もが（私たち自身、チーム、顧客が）あらゆる作業がどこにあるかについての共通の言語を持てます。
 
-グループが長期的なスケーラビリティ作業に集中できるよう、99.79% のエラーバジェット例外が[承認されました](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/16897)。
+各ステージの完全な定義、その対象者、ターゲットプラットフォーム、フィーチャーフラグについては [Release stages](release-stages.md) を参照してください。
 
-## エンジニアリングカスタマー/サポートローテーションプロセス
+## Error Budgets
 
+GitLab は、私たちの機能の可用性とパフォーマンスを測定するために [エラーバジェット](/handbook/engineering/error-budgets/) を使用しています。各エンジニアリンググループは独自のバジェットスペンドを持ちます。Tenant Scale グループの現在の 28 日間のスペンドは、この [Grafana ダッシュボード](https://dashboards.gitlab.net/d/product-tenant_scale_error_budget/product3a-error-budgets-tenant-scale?orgId=1&from=now-28d&to=now%2Fm&timezone=utc&var-PROMETHEUS_DS=mimir-gitlab-gprd&var-environment=gprd&var-stage=main) で確認できます。
 
-{{% alert %}}
-**注意**: このプロセスは現在、Organizations がまだ開発中であるため、チームの Groups & Projects 側に固有のものです。製品が一般リリースされたときに Organizations にも同様のものを展開する予定です。
-{{% /alert %}}
+グループが長期的なスケーラビリティ作業に集中できるよう、99.79% のエラーバジェット例外が [承認](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/16897) されました。
 
+## Engineering Customer/Support Rotation Process
 
-2 週間ごとに、Groups & Projects エンジニアがカスタマーサポートチケットの技術評価のための DRI として割り当てられ、サポート Issue や `master` パイプラインの失敗のための [#g_organizations](https://gitlab.slack.com/archives/g_organizations) チャンネルの監視、およびトリアージと優先順位付けが行われたバグやサポートリクエストへの対応を担当します。
+{{< alert type="note" >}}
+**Note**: このプロセスは現在、チームの Groups & Projects 側に固有のものであり、Organizations はまだ開発中です。プロダクトが一般リリースされた際には、Organizations 向けにも同様のものを展開する予定です。
+{{< /alert >}}
 
-### プロセスの概要
+2 週間ごとに、Groups & Projects のエンジニア 1 名が、顧客サポートチケットの技術的アセスメントの DRI としてアサインされます。これには、[#g_organizations](https://gitlab.slack.com/archives/g_organizations) チャンネルでサポート Issue や `master` パイプライン障害を監視すること、そしてトリアージおよび優先順位付けされたバグやサポートリクエストに対処することが含まれます。
 
-- 2 週間ごとに、[#g_organizations_standup](https://gitlab.enterprise.slack.com/archives/C054LN3G0CE) チャンネルでの Slack リマインダーがグループに、技術評価トリアージのための新しいサポートシフトが始まることを知らせます。
-- すべてのエンジニアは自分の今後のローテーション（以下のスケジュール参照）を把握し、Slack リマインダーに従ってアクションを取ることが期待されます。
-- 現在ローテーション中の DRI は、優先順位の高い順に次の作業に 2 週間を費やします:
-    1. [#g_organizations](https://gitlab.slack.com/archives/g_organizations) でトリガーされた壊れた `master` パイプラインの失敗の[アラート](https://gitlab.com/gitlab-org/gitlab/-/pipelines/1858249063)への対応
-    1. 現在のマイルストーンでスケジュールされたサポート Issue の作業
-    1. 現在のマイルストーンでスケジュールされたバグ Issue の作業
-    1. カスタマーサポート[バックログ](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=opened&label_name%5B%5D=Help%20group%3A%3AOrganizations&first_page_size=20)からの新しい Issue のトリアージおよび必要に応じてフォローアップ情報の要求
-- 上記の項目が一覧された最新の Issue はこちら: https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/2
-- 何らかの理由（PTO、病欠、他の責務が優先されるなど）でローテーションシフトを実行できない DRI は、別のチームメンバーとローテーションを交換するか、EM に連絡して調整してもらうことが期待されます。交換が決まったら、スケジュールを更新する必要があります。
-- DRI は次の参加者に引き渡す際に、2026 年のローテーションのためにこの[Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8)を更新する必要があります。
+### Process summary
 
-ローテーションの終わりに、各エンジニアは[チームサポート Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8)内に引き継ぎノートを提供する必要があります:
+- 2 週間ごとに、[#g_organizations_standup](https://gitlab.enterprise.slack.com/archives/C054LN3G0CE) チャンネルの Slack リマインダーが、技術的アセスメントのトリアージのための新しいサポートシフトが始まることをグループに知らせます。
+- すべてのエンジニアは、（下記のスケジュールに従って）自身の近々のローテーションを認識し、Slack リマインダーに従ってアクションを取ることが期待されます。
+- 現在ローテーション中の DRI は、その後その 2 週間を次の作業（優先順位順）に充てるべきです。
+    1. [#g_organizations](https://gitlab.slack.com/archives/g_organizations) でトリガーされた、壊れた `master` パイプライン障害についての [アラート](https://gitlab.com/gitlab-org/gitlab/-/pipelines/1858249063) に対応する
+    1. 現在のマイルストーンで予定されているサポート Issue に取り組む
+    1. 現在のマイルストーンで予定されているバグ Issue に取り組む
+    1. 顧客サポートの [バックログ](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=opened&label_name%5B%5D=Help%20group%3A%3AOrganizations&first_page_size=20) からの新しい Issue をトリアージし、必要に応じてフォローアップ情報を求める
+- 上記の項目をリストした、ライブ更新される Issue がここにあります: https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/2
+- DRI が何らかの理由（例: PTO、病欠、他の責任が優先される）で近々のトリアージローテーションシフトを実施できない場合、別のチームメンバーとローテーションを交換するか、EM に通知して調整してもらうことが期待されます。交換が特定されたら、スケジュールを更新すべきです。
+- DRI は、次の参加者への引き継ぎ時に、2026 年のローテーションについてこの [Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8) を更新する必要があります。
 
-- Issue の説明にある例のフォーマットを使用してローテーション中に取り組んだ内容を要約する
-- 新しい DRI への ping とともに Issue に直接投稿する。ルートコメント（スレッドではない）として
-- 必要であれば、新しい DRI はコメントへの返信または Slack で質問することができます。
-- 引き継ぎのより困難なコンテキストを伝えるために必要であれば、ミーティングを設定する
+ローテーションの終了時に、各エンジニアは [チームサポート Issue](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/organizations/groups-and-projects/discussions/-/work_items/8) 内に引き継ぎノートを提供すべきです。
 
-### ローテーションスケジュール
+- Issue の説明にある例のフォーマットを使用して、ローテーション中に取り組んだ内容を要約する
+- これを新しいルートコメント（スレッド上ではない）として、新しい DRI へのメンションとともに Issue に直接投稿する
+- 必要に応じて、新しい DRI はコメントへの返信または Slack で明確化のための質問をすべきです。
+- 必要であれば、引き継ぎのより難しいコンテキストを共有するためにミーティングを設定する
 
-スケジュールは[Google Sheets（社内リンク）](https://docs.google.com/spreadsheets/d/1Y0DI8rNG9hMC21fsVTAQlKfu1F883zUn2SsjFLvckYM/edit?usp=sharing)で追跡されています。変更前にお知らせください。
+### Rotation schedule
+
+スケジュールは [Google Sheet（社内リンク）](https://docs.google.com/spreadsheets/d/1Y0DI8rNG9hMC21fsVTAQlKfu1F883zUn2SsjFLvckYM/edit?usp=sharing) で追跡されています。変更前に確認してください。
