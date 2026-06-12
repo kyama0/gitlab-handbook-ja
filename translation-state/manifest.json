@@ -15242,11 +15242,11 @@
     },
     "content/handbook/entity/india-pvt-ltd.md": {
       "path": "content/handbook/entity/india-pvt-ltd.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:47:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "8acf1347c5d01cc77e8c1fe5cf7a6bb8291c7f043ee29978c5ed607b06149c3b",
-      "upstream_committed_at": "2026-05-19T13:35:17-07:00"
+      "input_hash": "28c63aa673cefdf5209c3c2de36ea3ab93b5841d30b0326841d56a6045802259",
+      "upstream_committed_at": "2026-06-08T14:27:33-07:00"
     },
     "content/handbook/entity/israel-ltd.md": {
       "path": "content/handbook/entity/israel-ltd.md",
@@ -16442,11 +16442,11 @@
     },
     "content/handbook/legal/esg/_index.md": {
       "path": "content/handbook/legal/esg/_index.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-30T00:55:37Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "25017c7cb39e5fee9ed9652c6a74b1aae297a33ecfda3fbc258e064c72dd2c41",
-      "upstream_committed_at": "2026-04-06T14:22:42-07:00"
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:47:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "15b8306eba16b373e610e9c2adf700681c235cc84589778e1893cf7d583640d7",
+      "upstream_committed_at": "2026-06-08T15:51:36-06:00"
     },
     "content/handbook/legal/esg/earth-month/_index.md": {
       "path": "content/handbook/legal/esg/earth-month/_index.md",
@@ -16538,11 +16538,11 @@
     },
     "content/handbook/legal/gitlab-code-of-business-conduct-and-ethics.md": {
       "path": "content/handbook/legal/gitlab-code-of-business-conduct-and-ethics.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-29T10:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "6f93663aa01c5da8de1cab0654490ebc3ff2af0f43cdb3e28e9bfebf7b6ecbfc",
-      "upstream_committed_at": "2025-11-19T12:25:32-08:00"
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:47:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9c375ae94f8168353909d3afda9a9a1eddcc5e8d33a9eeaf42db4aaeb7f63134",
+      "upstream_committed_at": "2026-06-11T17:41:00+00:00"
     },
     "content/handbook/legal/gitlab-related-party-transactions-policy.md": {
       "path": "content/handbook/legal/gitlab-related-party-transactions-policy.md",
