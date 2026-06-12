@@ -6051,7 +6051,7 @@
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-11T00:00:00Z",
+      "translated_at": "2026-06-12T14:13:12Z",
       "model": "claude-opus-4-7",
       "input_hash": "451e0da6c735b869c46e40c34dee6806b03024d9d567de5fcf8d5ef3531fd269",
       "upstream_committed_at": "2026-06-09T19:10:50+01:00"
@@ -6059,7 +6059,7 @@
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md",
       "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
-      "translated_at": "2026-06-11T12:00:00Z",
+      "translated_at": "2026-06-12T14:13:12Z",
       "model": "claude-opus-4-7",
       "input_hash": "e8fd7b9fd3380e2b01b2486d9d469f2e390ee62d01fe2cdc750ccafef5a31cde",
       "upstream_committed_at": "2026-06-09T19:10:50+01:00"
