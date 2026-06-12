@@ -22314,11 +22314,11 @@
     },
     "content/handbook/support/workflows/usgovernment_oncall.md": {
       "path": "content/handbook/support/workflows/usgovernment_oncall.md",
-      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
-      "translated_at": "2026-05-08T04:02:00Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:20:01Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a4fd722d4cbf1dbc9c50e48d5d89c1e8dfe4134b4bac95307dd83662669d4186",
-      "upstream_committed_at": "2026-04-10T00:03:29-07:00"
+      "input_hash": "7148515d24f8c8ce2e6481c3a55b11f90c365922f263e573a7ee49c2a2375a12",
+      "upstream_committed_at": "2026-06-09T22:44:13-07:00"
     },
     "content/handbook/support/workflows/usgovernment_oncall_checklist.md": {
       "path": "content/handbook/support/workflows/usgovernment_oncall_checklist.md",
@@ -22330,11 +22330,11 @@
     },
     "content/handbook/support/workflows/usgovernment_tickets.md": {
       "path": "content/handbook/support/workflows/usgovernment_tickets.md",
-      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
-      "translated_at": "2026-05-29T21:19:23Z",
+      "upstream_sha": "5b642767a4478d09eeedd1689a94c1b164788f25",
+      "translated_at": "2026-06-12T13:20:01Z",
       "model": "claude-opus-4-7",
-      "input_hash": "4677c1717bdc1401fe79a1636bf846883d3e5f4eb68446cfe8329a26eaa1f890",
-      "upstream_committed_at": "2026-05-28T19:25:37-07:00"
+      "input_hash": "a7917fb61fd48626065cf4855dfcf7bc6d3b46addf3788693c63b62f6f0653db",
+      "upstream_committed_at": "2026-06-09T22:44:13-07:00"
     },
     "content/handbook/support/workflows/verify_pages_domain.md": {
       "path": "content/handbook/support/workflows/verify_pages_domain.md",
