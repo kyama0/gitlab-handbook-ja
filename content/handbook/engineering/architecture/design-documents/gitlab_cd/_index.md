@@ -179,24 +179,24 @@ on_event(type="com.gitlab.cd.deploy_requested", handler=canary_to_production)
 
 ## 構築が必要なもの {#what-needs-to-be-built}
 
-| Component | Status |
+| コンポーネント | 状態 |
 |---|---|
-| **Auto Flow replay engine** | New. Replaces Temporal. PostgreSQL-backed activity history, replay/resume lifecycle, timer service. Core build. |
-| **Auto Flow trigger registration** | New. API for binding CloudEvent types to workflow definitions. |
-| **Auto Flow script fetching** | New. KAS fetches Starlark from any Git server via HTTPS/SSH. |
-| **Starlark interpreter in KAS** | Exists (AutoFlow PoC). Extend with `run`, `sleep`, `wait_for_event`. |
-| **CloudEvent routing in KAS** | Partially exists (AutoFlow PoC, Rails → KAS path). Extend with ArgoCD, agentk, external webhooks. |
-| **OPA integration in KAS** | New. Embedded OPA evaluates policy on every `run`. |
-| **Job Router** | Being built (Job Router blueprint). Extend to accept dispatches from Auto Flow. |
-| **KAS pluggable auth** | New. go-plugin interface for OIDC, static tokens, Vault. |
-| **K8s proxy enhancements** | Exists. Needs path-based routing and watch stream reliability for ArgoCD. |
-| **CD Functions** | New. `cd/reconcile`, `cd/metrics-query`, `cd/rollback`, `cd/compliance`, etc. Published in Component Catalog. |
-| **CD tables in Rails** | New. Environments, policy references, deployment target mappings. |
-| **CD UI in Rails** | New. Organization-level dashboard, approvals, compliance, trust visualization. |
-| **Trust scores in catalogs** | New. Per-function/agent per-scope scores in Component Catalog and AI Catalog. |
-| **Runner** | Exists. No changes — new job source is transparent. |
-| **ArgoCD** | External, unchanged. Connected via K8s proxy and CloudEvents. |
-| **PostgreSQL** | Exists. New tables for Auto Flow state and CD configuration. |
+| **Auto Flow replay engine** | 新規。Temporal を置き換えます。PostgreSQL ベースのアクティビティ履歴、replay/resume ライフサイクル、タイマーサービス。コア構築。 |
+| **Auto Flow trigger registration** | 新規。CloudEvent タイプをワークフロー定義にバインドするための API。 |
+| **Auto Flow script fetching** | 新規。KAS が HTTPS/SSH 経由で任意の Git サーバーから Starlark を取得します。 |
+| **Starlark interpreter in KAS** | 既存（AutoFlow PoC）。`run`、`sleep`、`wait_for_event` で拡張します。 |
+| **CloudEvent routing in KAS** | 部分的に既存（AutoFlow PoC、Rails → KAS パス）。ArgoCD、agentk、外部 webhook で拡張します。 |
+| **OPA integration in KAS** | 新規。組み込みの OPA がすべての `run` でポリシーを評価します。 |
+| **Job Router** | 構築中（Job Router ブループリント）。Auto Flow からのディスパッチを受け付けるよう拡張します。 |
+| **KAS pluggable auth** | 新規。OIDC、静的トークン、Vault のための go-plugin インターフェイス。 |
+| **K8s proxy enhancements** | 既存。ArgoCD のためにパスベースのルーティングと watch ストリームの信頼性が必要です。 |
+| **CD Functions** | 新規。`cd/reconcile`、`cd/metrics-query`、`cd/rollback`、`cd/compliance` など。Component Catalog で公開されます。 |
+| **CD tables in Rails** | 新規。Environments、ポリシー参照、デプロイメントターゲットのマッピング。 |
+| **CD UI in Rails** | 新規。組織レベルのダッシュボード、承認、コンプライアンス、信頼性の可視化。 |
+| **Trust scores in catalogs** | 新規。Component Catalog と AI Catalog における function/agent ごと・スコープごとのスコア。 |
+| **Runner** | 既存。変更なし — 新しいジョブソースは透過的です。 |
+| **ArgoCD** | 外部、変更なし。K8s proxy と CloudEvents 経由で接続されます。 |
+| **PostgreSQL** | 既存。Auto Flow の状態と CD 設定のための新しいテーブル。 |
 
 ## シーケンス {#sequence}
 

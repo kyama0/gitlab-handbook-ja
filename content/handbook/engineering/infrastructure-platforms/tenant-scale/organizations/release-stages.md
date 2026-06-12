@@ -41,13 +41,13 @@ flowchart TB
 
 各ステージのスナップショット — そのオーディエンス、フィーチャーフラグ、ターゲットプラットフォーム、ロールバック:
 
-| Stage         | Audience                               | Flag (`default_enabled`)              | Platforms                             | Handbrake                                              |
+| ステージ      | 対象者                                  | フラグ（`default_enabled`）            | プラットフォーム                       | ハンドブレーキ                                          |
 | ------------- | -------------------------------------- | ------------------------------------- | ------------------------------------- | ------------------------------------------------------ |
-| Experimental  | Organizations team and selected peers  | `org_stage_experimental` (`false`) | GitLab.com                            | Flag (GitLab-operated)                                 |
-| Beta          | GitLab team + opted-in customers       | `org_stage_beta` (`false`)         | GitLab.com                            | Flag (GitLab-operated)                                 |
-| LA 25→100     | Customers, 25 / 50 / 75 / 100%         | `org_stage_la_25…100` (`false`)    | GitLab.com                            | Flag (GitLab-operated)                                 |
-| GA            | Everyone                               | `org_stage_ga` (`true`)            | GitLab.com + Self-Managed + Dedicated | Retained — .com + Self-Managed; **inert on Dedicated** |
-| Stable        | Everyone                               | *(flag removed)*                      | All platforms                         | None — permanent product                               |
+| Experimental  | Organizations チームと選定されたピア    | `org_stage_experimental` (`false`) | GitLab.com                            | フラグ（GitLab 運用）                                  |
+| Beta          | GitLab チーム + オプトインした顧客       | `org_stage_beta` (`false`)         | GitLab.com                            | フラグ（GitLab 運用）                                  |
+| LA 25→100     | 顧客、25 / 50 / 75 / 100%               | `org_stage_la_25…100` (`false`)    | GitLab.com                            | フラグ（GitLab 運用）                                  |
+| GA            | 全員                                    | `org_stage_ga` (`true`)            | GitLab.com + Self-Managed + Dedicated | 維持 — .com + Self-Managed; **Dedicated では無効**     |
+| Stable        | 全員                                    | *(フラグ削除済み)*                     | すべてのプラットフォーム               | なし — 恒久的な製品                                     |
 
 ## ステージ {#stages}
 

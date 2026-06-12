@@ -498,23 +498,23 @@ sequenceDiagram
 
 公開時に、PostgreSQL レコードのデータがマッピングされます。
 
-| `ai_catalog_items` column | Source |
+| `ai_catalog_items` カラム | ソース |
 | --- | --- |
-| `name` | YAML definition file |
-| `description` | YAML definition file |
-| `item_type` | YAML definition file (`type` property) |
-| `public` | YAML definition file (`visibility` property) |
-| `project_id` | The repository's project |
-| `organization_id` | The project's organization |
-| `internal_id` | YAML definition file (`id` property). Stable identifier used to map the definition YAML to the record, uniquely scoped to item and project. |
-| `verification_level` | The project's namespace verified status |
+| `name` | YAML 定義ファイル |
+| `description` | YAML 定義ファイル |
+| `item_type` | YAML 定義ファイル（`type` プロパティ） |
+| `public` | YAML 定義ファイル（`visibility` プロパティ） |
+| `project_id` | リポジトリのプロジェクト |
+| `organization_id` | プロジェクトの organization |
+| `internal_id` | YAML 定義ファイル（`id` プロパティ）。定義 YAML とレコードを対応付ける安定した識別子で、アイテムとプロジェクトに一意にスコープされます。 |
+| `verification_level` | プロジェクトの名前空間の検証ステータス |
 
-| `ai_catalog_item_versions` column | Source |
+| `ai_catalog_item_versions` カラム | ソース |
 | --- | --- |
-| `version` | YAML definition file (optional, must be valid semver greater than current version). Defaults to a minor bump from the latest version if absent. |
-| `release_date` | Timestamp of the publish event when lifecycle becomes `released` |
-| `commit_sha` | The SHA of the commit read from during the publish (stored for auditability, but not used) |
-| `created_by_id` | The job token user |
+| `version` | YAML 定義ファイル（任意。現在のバージョンより大きい有効な semver である必要があります）。指定されない場合、最新バージョンからのマイナーバンプがデフォルトになります。 |
+| `release_date` | lifecycle が `released` になったときの公開イベントのタイムスタンプ |
+| `commit_sha` | 公開時に読み取られたコミットの SHA（監査可能性のために保存されますが、使用されません） |
+| `created_by_id` | ジョブトークンのユーザー |
 
 ### 基盤アイテム {#foundational-items}
 
@@ -614,14 +614,14 @@ mcp_servers:
 
 リポジトリベースのアイテムをサポートするために新しいカラムを追加します。
 
-| Change | Detail |
+| 変更 | 詳細 |
 | --- | --- |
-| New column: `project_settings.ai_catalog_publishing_enabled` | Boolean, default `false`. [Project-level opt-in](#why-a-project-setting) for publishing to the AI Catalog. |
-| New column: `ai_catalog_items.source` | Enum: `database`, `repository`, `fixture`. Identifies where the item's definition originates from and how it is authored. |
-| New column: `ai_catalog_items.internal_id` | Stable identifier from YAML `id` field, unique within project |
-| New column: `ai_catalog_items.foundational_item_ref` | Stable identifier mapping to fixture (generalizes `foundational_flow_reference`) |
-| New column: `ai_catalog_item_versions.commit_sha` | Repository SHA of item version at publish (stored for auditability, but not used) |
-| New column: `ai_catalog_mcp_servers.internal_id` | Immutable identifier for YAML references |
+| 新規カラム: `project_settings.ai_catalog_publishing_enabled` | Boolean、デフォルト `false`。AI カタログへの公開のための [プロジェクトレベルのオプトイン](#why-a-project-setting)。 |
+| 新規カラム: `ai_catalog_items.source` | Enum: `database`、`repository`、`fixture`。アイテムの定義がどこに由来し、どのようにオーサリングされるかを識別します。 |
+| 新規カラム: `ai_catalog_items.internal_id` | YAML `id` フィールド由来の安定した識別子で、プロジェクト内で一意 |
+| 新規カラム: `ai_catalog_items.foundational_item_ref` | フィクスチャにマッピングする安定した識別子（`foundational_flow_reference` を一般化したもの） |
+| 新規カラム: `ai_catalog_item_versions.commit_sha` | 公開時のアイテムバージョンのリポジトリ SHA（監査可能性のために保存されますが、使用されません） |
+| 新規カラム: `ai_catalog_mcp_servers.internal_id` | YAML 参照のための不変の識別子 |
 
 **2. agent YAML 定義スキーマ**
 
