@@ -264,7 +264,7 @@ Artifact Registry は、指定された Organization のスラッグのリスト
    不要。
 7. **データマイグレーションなしの Organization マージ**: Organization がマージする場合、アンカータプルが更新され、存続する
    Organization が複数のネームスペースを保持する。データ移動、URL の変更、クライアント設定の破損なし。詳細は
-   [Organization Merges](#organization-merges) を参照。
+   [組織のマージ](#organization-merges) を参照。
 8. **スタンドアロンプロダクトの可能性**（願望的）: Artifact Registry は独自のネームスペースのアイデンティティを所有し、アンカーを
    不透明として扱うため、アーキテクチャは GitLab Rails に構造的に依存しない。これにより、GitLab の代わりに
    サードパーティの認証・認可プロバイダーに依存する独立したプロダクトとして Artifact Registry を

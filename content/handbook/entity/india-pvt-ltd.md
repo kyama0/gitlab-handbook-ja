@@ -82,7 +82,7 @@ lastmod: 2026-06-08T14:27:33-07:00
 
 #### 年次健康診断
 
-GitLab は、すべての GitLab India チームメンバーに対し、Connect and Heal を通じて年次健康診断（プレミアムスキャン）を提供します。この包括的な診断は、予防的なケアによってあなたの健康管理に役立ちます。詳細は [Connect and Heal Handbook](https://drive.google.com/file/d/11cQaIjfByusKfPI2f0o6JhUF3Z4QgAzU/view?usp=sharing) を参照してください。
+GitLab は、すべての GitLab India チームメンバーに対し、Connect and Heal を通じて年次健康診断（プレミアムスキャン）を提供します。この包括的な検診は、予防的なケアによってあなたの健康管理に役立ちます。詳細は [Connect and Heal Handbook](https://drive.google.com/file/d/11cQaIjfByusKfPI2f0o6JhUF3Z4QgAzU/view?usp=sharing) を参照してください。
 
 <details markdown="1">
 
@@ -94,7 +94,7 @@ GitLab は、すべての GitLab India チームメンバーに対し、Connect 
 
 <details markdown="1">
 
-<summary>診断の予約方法</summary>
+<summary>検診の予約方法</summary>
 
 1. 入社日のすぐ後に、Connect and Heal からログイン情報のメールが届きます
 2. CNH アプリをダウンロードし、GitLab のメールアドレスと公式メールに届いた OTP でログインします

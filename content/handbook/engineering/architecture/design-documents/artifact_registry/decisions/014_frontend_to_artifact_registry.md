@@ -124,11 +124,11 @@ Container Registry のリゾルバーに合わせます。
 
 Rails 側の認証情報の取得は [auth agreement](../agreements/auth.md) に
 従います。具体的なサービスと交換プロトコルは未解決です
-（[Open Questions](#open-questions) を参照）。
+（[未解決の問い](#open-questions) を参照）。
 
 リゾルバーは、ロードされたリソース上のキャッシュされたヘルパーを通じて
 クライアントを取得します（`ContainerRepository#registry` と同じパターン）。
-親ごとにファンアウトする子フィールドは、[Cross-service data joining](#cross-service-data-joining)
+親ごとにファンアウトする子フィールドは、[サービス間のデータ結合](#cross-service-data-joining)
 で説明されているのと同じバッチ化されたルックアップパターンを使用し、
 N 個の親解決を子フィールドごとの 1 回の Artifact Registry 呼び出しに
 まとめます。
