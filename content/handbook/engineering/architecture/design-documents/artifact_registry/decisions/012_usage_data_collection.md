@@ -171,4 +171,3 @@ Snowplow に加えて、Rails モノリスが毎週の Service Ping 組み立て
 - [ADR-001: Organizations as Anchor Point](001_organizations_as_anchor_point.md) — Organization スコープのアーキテクチャ
 - [ADR-006: Technology Stack](006_technology_stack.md) — Go 言語と LabKit v2 の採用
 - [ADR-009: API Design](009_api_design.md) — Management API と Client API の構造
-</content>

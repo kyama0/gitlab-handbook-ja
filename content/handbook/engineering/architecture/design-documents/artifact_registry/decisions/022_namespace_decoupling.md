@@ -339,4 +339,3 @@ Artifact Registry は、指定された Organization のスラッグのリスト
 - [リポジトリ名の不変性](https://gitlab.com/gitlab-org/gitlab/-/work_items/592582)
 - [CTO レビュー: 仮想アンカーポイント](https://docs.google.com/document/d/1qkcOZYSHM_h9k9pYjHze2KHG5qZYMDeZ1UE4GZgD1jw/edit?tab=t.1dg0o6ns9uiw#bookmark=id.t5ky1ssp818r)
 - [部門横断ミーティング: 不変なスラッグのアイデア](https://docs.google.com/document/d/1n81b4NNtwddtS419TA8Of-Yoymj2MNNM89FRBo43e8E/edit?tab=t.0#bookmark=id.ps8037nih9pa)
-</content>

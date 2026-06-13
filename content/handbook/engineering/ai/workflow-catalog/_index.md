@@ -160,7 +160,7 @@ Workflow Catalog のほとんどの機能は Workflow Service 内で新しい機
 * `~Deliverable` の Issue がブロックされたり完了できなくなったりした場合は、`#g_workflow_catalog` または関連する Issue で早めに伝える
 * エンジニアリングマネージャーは、優先順位やキャパシティの変化に基づいて、マイルストーン中に `~Deliverable` ラベルを調整する場合があります
 
-### 私たちのテックスタック {#our-tech-stack}
+### 私たちの Tech Stack {#our-tech-stack}
 
 * GraphQL の[バックエンド](https://docs.gitlab.com/development/api_graphql_styleguide/)と
   [フロントエンド](https://docs.gitlab.com/development/fe_guide/graphql/)。すべての新しいスキーマアイテムは、

@@ -140,5 +140,5 @@ Analytics Section 内の異なるグループが Analytics Stack の異なる機
 
 ## 参考
 
-- [Product categories](/handbook/product/categories/#analytics-section)
+- [プロダクトカテゴリー](/handbook/product/categories/#analytics-section)
 - [Direction](https://about.gitlab.com/direction/monitor/)

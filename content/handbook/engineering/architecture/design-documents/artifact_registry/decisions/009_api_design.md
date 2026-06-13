@@ -372,11 +372,11 @@ docker pull artifact-registry.gitlab.com/acme-engineering/container/my-repo/my-a
 
 ## 参考文献
 
-- [ADR-001: Organizations as Anchor Point](001_organizations_as_anchor_point.md)
-- [ADR-022: Namespace Decoupling](022_namespace_decoupling.md)
-- [Cells Architecture](../../cells/)
+- [ADR-001: アンカーポイントとしての組織](001_organizations_as_anchor_point.md)
+- [ADR-022: ネームスペースデカップリング](022_namespace_decoupling.md)
+- [Cells アーキテクチャ](../../cells/)
 - [Container Registry Routing Service (Cells)](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/14825)
-- [GitLab REST API Authentication](https://docs.gitlab.com/api/rest/authentication/)
+- [GitLab REST API 認証](https://docs.gitlab.com/api/rest/authentication/)
 - [OCI Distribution Spec v1.1](https://github.com/opencontainers/distribution-spec/blob/main/spec.md)
 - [Docker Registry Bearer Token Authentication](https://docs.docker.com/reference/api/registry/auth/)
 - [Maven Repository Layout](https://maven.apache.org/repositories/layout.html)

@@ -13,7 +13,7 @@ lastmod: 2026-06-12T15:50:01-05:00
 
 ## Managers of One
 
-オールリモートの組織では、私たちは各チームメンバーが [manager of one](https://signalvnoise.com/posts/1430-hire-managers-of-one) であることを望みます。[manager of one](/handbook/values/#managers-of-one) は、私たちの [Efficiency バリュー](/handbook/values/#efficiency)に紐づく属性です。GitLab で成功するには、チームメンバーは目標を達成するための日々の優先事項を自ら立てる必要があります。manager of one は自分の仕事のトーンを定め、アイテムを割り当て、何をやり遂げる必要があるかを判断します。どんなロールであっても、セルフリーダーシップは manager of one として成功するために不可欠なスキルです。
+オールリモートの組織では、私たちは各チームメンバーが [Manager of One](https://signalvnoise.com/posts/1430-hire-managers-of-one) であることを望みます。[Manager of One](/handbook/values/#managers-of-one) は、私たちの [Efficiency バリュー](/handbook/values/#efficiency)に紐づく属性です。GitLab で成功するには、チームメンバーは目標を達成するための日々の優先事項を自ら立てる必要があります。Manager of One は自分の仕事のトーンを定め、アイテムを割り当て、何をやり遂げる必要があるかを判断します。どんなロールであっても、セルフリーダーシップは Manager of One として成功するために不可欠なスキルです。
 
 1. GitLab では、個人コントリビューターであれリーダーシップチームのメンバーであれ、全員にリーダーシップが求められます。
 1. リーダーとして、GitLab のチームメンバーはあなたの行動に倣うので、常に正しいことをしてください。努力をもって率先垂範してください。
@@ -36,7 +36,7 @@ lastmod: 2026-06-12T15:50:01-05:00
 1. 目標と適切なタイムラインを設定する責任を引き受けることで、自分自身と自分のロールの CEO として振る舞ってください。自分のコントリビューションに優先順位をつけ、[すべてを知ることは不可能](/handbook/values/#its-impossible-to-know-everything)であることを認識してください。
 1. 自分の目標の状況について、チームやピープルリーダーと明確にコミュニケーションしてください。課題となる領域に対処したり、割り当てられた期間内に達成できない目標を再評価したりするために、迅速に行動してください。
 
-### GitLab における manager of one の行動例
+### GitLab における Manager of One の行動例
 
 1. 同期的なブレインストーミングのコールへの参加を求められたとき、チームメンバーは代わりに Issue を開き、[チームのアイデアを非同期で求める](/handbook/company/culture/all-remote/asynchronous/#how-to-decline-meetings-in-favor-of-async)。
 1. ピープルリーダーが、[メンターになる](/handbook/values/#be-a-mentor)ことで、私たちの [ダイバーシティ、インクルージョン、ビロンギング](/handbook/values/#diversity-inclusion)のバリューを推進する。
@@ -45,7 +45,7 @@ lastmod: 2026-06-12T15:50:01-05:00
 1. 予定されていたミーティングのアジェンダがコール終了予定の 10 分前に完了したとき、参加者がコールを早めに終了する。
 1. ピープルリーダーが、私たちの [CREDIT バリュー](/handbook/values/)を体現する新しいチームメンバーを採用する。
 1. あるトピックについて議論するために他者の時間をもらう前に、自分の考えを整理する時間を確保し、[提案を作成する](/handbook/values#make-a-proposal)。
-1. manager of one が、フィットネス、食事、[有給休暇](/handbook/people-group/time-off-and-absence/time-off-types/)、個人の予定のためにカレンダーをブロックすることで、ウェルビーイングを優先する。
+1. Manager of One が、フィットネス、食事、[有給休暇](/handbook/people-group/time-off-and-absence/time-off-types/)、個人の予定のためにカレンダーをブロックすることで、ウェルビーイングを優先する。
 1. チームメンバーが、マネージャーやチームがすでに把握していると思い込むのではなくブロッカーを表面化させ、同時に [パブリックに働く](/handbook/values/#public-by-default)ことと [低い羞恥心](/handbook/values/#low-level-of-shame-when-dogfooding)をもって他者のブロック解消にも取り組む。
 
 ## Interim と Acting のリーダーシップ
