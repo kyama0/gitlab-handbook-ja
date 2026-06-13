@@ -212,7 +212,7 @@ provider.find_by_base_type(:incident)  # Returns the type designated for inciden
 
 タイプは利用可能だが無効である場合があります。例えば、`Task` は階層に存在するが特定の project では無効になっている、という具合です。無効なタイプも `find_by_id` で返されますが（既存のアイテムは正しくレンダリングされます）、作成フローはそれらを拒否します。
 
-最初のリリースでは、`enabled` はすべてのタイプでデフォルトで `true` です。[可視性コントロール](#visibility-controls)が実際の永続化からそれを populate します。
+最初のリリースでは、`enabled` はすべてのタイプでデフォルトで `true` です。[可視性コントロール](#visibility-controls)が実際の永続化状態に基づいてその値を設定します。
 
 ### nil namespace の処理
 

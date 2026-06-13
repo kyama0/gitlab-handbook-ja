@@ -143,6 +143,17 @@ def main():
         else:
             added += 1
         e[rel] = entry
+    # エラーが 1 件でもあれば manifest を一切書き込まずに終了する。
+    # 部分更新がコミットされると翻訳追跡状態が不整合になるため、all-or-nothing にする。
+    if errors:
+        for err in errors:
+            print("ERROR:", err, file=sys.stderr)
+        print(
+            f"aborted without writing manifest "
+            f"({len(errors)} error(s); {updated} update(s)/{added} addition(s) discarded)",
+            file=sys.stderr,
+        )
+        sys.exit(2)
     out = m
     if wrap:
         m["entries"] = e
@@ -150,10 +161,6 @@ def main():
         out = e
     MANIFEST.write_text(json.dumps(out, indent=2, ensure_ascii=False) + "\n")
     print(f"updated: {updated}, added: {added}, total: {len(e)}")
-    for err in errors:
-        print("ERROR:", err, file=sys.stderr)
-    if errors:
-        sys.exit(2)
 
 
 if __name__ == "__main__":

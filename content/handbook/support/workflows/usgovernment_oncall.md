@@ -24,9 +24,9 @@ US Government Emergencies ローテーションは、[GitLab Support On-call](/h
 
 US Gov サポートを購入したすべての顧客は「12x5 Emergency Support」を受けられます。顧客は「24x7 Emergency Support」アドオンを購入することもできます。
 
-「12x5」の顧客は、月曜日から金曜日の太平洋時間 0500 から 1700 の間、本番インスタンスの [severity one](https://about.gitlab.com/support) の問題についてページを送信できます。
+「12x5」の顧客は、月曜日から金曜日の太平洋時間 0500 から 1700 の間、本番インスタンスの [severity one](https://about.gitlab.com/support) の問題についてオンコールを呼び出せます。
 
-「24x7」の顧客は、いつでも本番インスタンスの severity one または severity two の問題についてページを送信できます。
+「24x7」の顧客は、いつでも本番インスタンスの severity one または severity two の問題についてオンコールを呼び出せます。
 
 現在のオンコールスケジュールは [PagerDuty](https://gitlab.pagerduty.com/schedules#P89ZYHZ)(Internal Link) で確認できます。スケジュールは現在、5a-5p / 5p-5a（太平洋時間）の 2 つの 12 時間シフトに分割されています。
 
