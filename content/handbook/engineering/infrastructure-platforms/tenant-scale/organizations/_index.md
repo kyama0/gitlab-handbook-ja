@@ -52,13 +52,13 @@ Experimental から Beta、Limited Availability、GA、Stable へとどのよう
 
 {{% team-by-manager-slug manager="mandrewsgl" team="Organizations" %}}
 
-### Stable Counterparts {#stable-counterparts}
+### 安定したカウンターパート {#stable-counterparts}
 
 他の機能チームの以下のメンバーは、私たちの stable counterparts です:
 
 {{% engineering/stable-counterparts manager="glopezfernandez" role="Tenant Scale|Principal Engineer, Data Stores|Senior Distinguished Engineer, Ops and Core Platform" %}}
 
-### Organization Rollout Counterparts {#organization-rollout-counterparts}
+### Organization ロールアウトカウンターパート {#organization-rollout-counterparts}
 
 以下の人々は、私たちの Organizations のロールアウトを支援しています。
 

@@ -40,6 +40,46 @@ def sha256_file(p):
     return h.hexdigest()
 
 
+def _exists_in_upstream(up_rel):
+    return (ROOT / "upstream" / up_rel).is_file()
+
+
+def resolve_upstream_rel(rel, fm):
+    """翻訳ファイルの content 相対パスと frontmatter から、対応する upstream の
+    相対パス（`content/handbook/...`）を返す。見つからなければ None。"""
+    # 1) 同じ相対パス
+    if _exists_in_upstream(rel):
+        return rel
+    # 2) .html.md 互換（翻訳側は .md にリネーム済み）
+    html_rel = rel[:-3] + ".html.md" if rel.endswith(".md") else rel + ".html.md"
+    if _exists_in_upstream(html_rel):
+        return html_rel
+    # 3) frontmatter の upstream_path（URL）から導出（移動/改名ページ対応）
+    up_path = (fm.get("upstream_path") or "").strip()
+    if up_path:
+        seg = up_path.strip("/")
+        seg = seg[len("handbook/"):] if seg.startswith("handbook/") else seg
+        base = "content/handbook/" + seg if seg else "content/handbook"
+        for cand in (f"{base}/_index.md", f"{base}.md",
+                     f"{base}/_index.html.md", f"{base}.html.md"):
+            if _exists_in_upstream(cand):
+                return cand
+    return None
+
+
+def input_hash_at_sha(sha, up_rel):
+    """記録された upstream_sha 時点のファイル内容の SHA-256 を返す。
+    その sha で取得できない場合は作業ツリーの内容にフォールバックする。"""
+    r = subprocess.run(
+        ["git", "-C", "upstream", "show", f"{sha}:{up_rel}"],
+        capture_output=True,
+    )
+    if r.returncode == 0:
+        return hashlib.sha256(r.stdout).hexdigest()
+    # フォールバック: 作業ツリー
+    return sha256_file(ROOT / "upstream" / up_rel)
+
+
 def upstream_committed_at(sha, rel):
     r = subprocess.run(
         ["git", "-C", "upstream", "log", "-1", "--format=%cI", sha, "--", rel],
@@ -71,24 +111,23 @@ def main():
         if not sha or not tat:
             errors.append(f"frontmatter incomplete: {rel}")
             continue
-        # upstream path: prefer upstream_path-derived file, else same relative path
-        up = ROOT / "upstream" / rel
-        up_rel = rel
-        if not up.is_file():
-            cand = up.with_suffix(".html.md")
-            if cand.is_file():
-                up = cand
-                up_rel = rel[:-3] + ".html.md"
-            else:
-                errors.append(f"upstream missing: {rel}")
-                continue
+        # upstream の相対パスを解決する。
+        # 1) 同じ相対パス（最も一般的） 2) .html.md 互換 3) frontmatter の
+        # upstream_path（移動/改名されたページ）から導出。
+        up_rel = resolve_upstream_rel(rel, fm)
+        if up_rel is None:
+            errors.append(f"upstream missing: {rel}")
+            continue
         committed = upstream_committed_at(sha, up_rel)
+        # input_hash は記録された upstream_sha 時点のファイル内容から計算する。
+        # （作業ツリーが sha より進んでいても staleness 判定が壊れないように）
+        ih = input_hash_at_sha(sha, up_rel)
         entry = {
             "path": rel,
             "upstream_sha": sha,
             "translated_at": tat,
             "model": "claude-opus-4-7",
-            "input_hash": sha256_file(up),
+            "input_hash": ih,
             "upstream_committed_at": committed,
         }
         if rel in e:

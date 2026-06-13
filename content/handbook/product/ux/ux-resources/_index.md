@@ -21,7 +21,7 @@ stale: false
 - [Technical Writing のワークフロー](/handbook/product/ux/technical-writing/)
 - [UX Operations](/handbook/product/ux/operations/) - ヘッドカウントプランニング、調達、ラベル、カレンダー
 
-### Design System
+### デザインシステム
 
 - [Pajamas Design System](https://design.gitlab.com) - GitLab のプロダクトデザインシステム
 - [Figma 上の Pajamas UI Kit](https://www.figma.com/community/file/781156790581391771)
@@ -42,7 +42,7 @@ stale: false
 
 セールスイネーブルメントや競合リサーチを含む Go-to-market 情報。SSO 経由で利用できます。必要に応じて[アクセスをリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)してください。詳細については [Highspot ハンドブックページ](/handbook/sales/field-communications/gitlab-highspot/)を参照してください。
 
-### UX Research Archive
+### UX リサーチアーカイブ
 
 [UX Research Archive](https://gitlab.com/gitlab-org/uxr_insights) には、GitLab の UX リサーチャーが実施したすべてのリサーチが含まれています。
 
@@ -52,11 +52,11 @@ stale: false
 
 ## コラボレーションと共有
 
-### UX Forum
+### UX フォーラム
 
 [UX Forum](/handbook/product/ux/ux-forum/) は、UX チームメンバーが自分の作業を共有し、議論するための定例ミーティングです。
 
-### UX Calendar
+### UX カレンダー
 
 [UX Department Google Calendar](/handbook/product/ux/operations/#ux-calendar) は、UX チームのミーティングとイベントの SSOT です。
 

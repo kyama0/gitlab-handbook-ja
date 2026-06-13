@@ -37,19 +37,19 @@ stale: false
 
 このドキュメント全体で使われる語彙のリファレンスです。最初に読む際は[ワークアイテムタイプのカスタマイズ](#customizing-work-item-types)まで飛ばしてください。各セクションで初出時に用語はここにリンクされています。
 
-### システム定義タイプ（System-defined type）
+### システム定義タイプ（System-defined type） {#system-defined-type}
 
 GitLab に同梱される組み込みのワークアイテムタイプ（`issue`、`incident`、`task`、`epic`、`ticket` など）。1〜9 の範囲の ID を持つ [`ActiveRecord::FixedItemsModel`](https://docs.gitlab.com/development/fixed_items_model/) オブジェクトとしてインメモリに保存され、すべての namespace で共有されます。システム定義タイプは削除できませんが、カスタマイズはできます。変換済みタイプを参照してください。
 
-### カスタムタイプ（Custom type）
+### カスタムタイプ（Custom type） {#custom-type}
 
 `work_item_custom_types` に保存されるユーザー作成のワークアイテムタイプ。カスタムタイプは完全に新規（例: 「Bug Report」「Feature Request」）でも、システム定義タイプをカスタマイズして作成したものでもかまいません。カスタムタイプの ID は、システム定義の ID と重ならないように 1001 から始まります。
 
-### 変換済みタイプ（Converted type）
+### 変換済みタイプ（Converted type） {#converted-type}
 
 システム定義タイプをカスタマイズして作成されたカスタムタイプ。例えば、「Issue」を「Feature」に改名すると変換済みタイプが作成されます。`converted_from_system_defined_type_identifier` カラムが、元のシステム定義タイプの識別子を保存します。変換済みタイプは、ソースタイプの特別な機能マッピング（Service Desk、incident management）を継承し、元のタイプの Global ID 形式を保持します。これらは、カスタマイズと後方互換性の間のアーキテクチャ上の橋渡しです。
 
-### 委譲ソース（Delegation source）
+### 委譲ソース（Delegation source） {#delegation-source}
 
 カスタムタイプが動作（ウィジェット、階層制限、ベースタイプの述語、設定フラグ）を継承するシステム定義タイプ。変換済みタイプの場合、これは `converted_from_system_defined_type_identifier` によって識別されるシステム定義タイプです。新規のカスタムタイプの場合、これはデフォルトで `issue` になります。カスタムタイプごとのウィジェットと階層のカスタマイズは後続のイテレーションで計画されており、それまでは委譲がデフォルトを提供します。
 

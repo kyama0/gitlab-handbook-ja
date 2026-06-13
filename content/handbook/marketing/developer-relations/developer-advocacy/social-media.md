@@ -248,7 +248,7 @@ _不足している機能、2024-11-11:_
 | William Arias | [@pywarias.bsky.social](https://bsky.app/profile/pywarias.bsky.social) |
 | GitLab brand social | [@gitlab.com](https://bsky.app/profile/gitlab.com) |
 
-#### Bluesky Starter Packs {#bluesky-starter-packs}
+#### Bluesky スターターパック {#bluesky-starter-packs}
 
 スターターパックは、フォローするユーザーのリストを提供し、フィードでフォローして読む可能性のあるユーザーをすばやく始めるのに役立ちます。
 
@@ -544,7 +544,7 @@ KPI:
 - ユーザー名の前に @ を付けて @gitlab をメンションします
 - ハッシュタグ `#gitlab #releasemanagement` を使います
 
-#### Package {#package}
+#### パッケージ {#package}
 
 [レジストリのオープンソース化](https://about.gitlab.com/blog/2020/03/30/new-features-to-core/) のツイート例:
 

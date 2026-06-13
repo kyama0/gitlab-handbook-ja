@@ -9,19 +9,19 @@ translator: claude
 stale: false
 ---
 
-### Vision、Mission、Values
+### ビジョン、ミッション、バリュー
 
-#### Vision
+#### ビジョン
 
 GitLab R&D PMO は、エンタープライズグレードのプログラムマネジメントを提供し、GitLab がソフトウェアを提供するあらゆる企業にとって第一の選択肢となる DevSecOps プラットフォームになることを可能にします。
 
-#### Mission
+#### ミッション
 
 R&D Program Management Organization は、確実なデリバリーを推進し、リスクを先回りして管理し、クロスファンクショナルな足並みの統一を確保することで、GitLab の戦略目標の達成を加速します。
 
 私たちは、顧客価値を実現し、20 億ドルの収益を持つ世代を代表する企業への GitLab の成長を後押しする、実績のあるプログラムマネジメントのアプローチを通じてこれを成し遂げます。
 
-#### Values
+#### バリュー
 
 [GitLab Values](/handbook/values) は、R&D PMO チームの運営方法の基盤となっています。以下の原則は、GitLab で管理するすべてのプログラムに対して PMO が取るアプローチを示すものです。
 

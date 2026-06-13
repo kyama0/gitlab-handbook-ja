@@ -142,7 +142,7 @@ stale: false
 
 ### その他の活動
 
-#### Community Response
+#### コミュニティ対応（Community Response） {#community-response}
 
 デベロッパーアドボケイトチームはコミュニティを理解し、GitLab に関する幅広い知識を持っているため、コミュニティメンバーの緊急かつ重要な懸念に対処するために介入が必要な状況の対応にあたります。私たちには、[こうした状況に対処する](/handbook/marketing/developer-relations/developer-advocacy/community-response/)方法を文書化したプロセスがあります。
 
@@ -152,7 +152,7 @@ stale: false
 
 私たちはまた、ローカルのテックイベントやミートアップでの講演の機会に向けて、チームメンバーが準備するのを支援します。そのようなイベントの準備に手助けが必要な場合は、Slack の [#dev-advocacy-team](https://app.slack.com/client/T02592416/CMELFQS4B) チャンネルでご連絡いただくか、[Developer Advocate Request テンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?description_template=developer-advocate-request)を使用して Issue を作成してください。
 
-#### Release Advocacy
+#### リリースアドボカシー {#release-advocacy}
 
 デベロッパーアドボケイトは、Hacker News におけるリリース投稿のこれまでのパフォーマンスを踏まえ、常に[月次リリース](/handbook/marketing/developer-relations/developer-advocacy/social-media/#release-evangelism)を宣伝し、[リリース日のコミュニティレスポンス](/handbook/marketing/developer-relations/developer-advocacy/hacker-news/#release-days)にエンゲージする準備をしておく必要があります。
 

@@ -10,7 +10,7 @@ stale: false
 lastmod: 2026-06-09T22:44:13-07:00
 ---
 
-## Introduction
+## はじめに
 
 US Government Emergencies ローテーションに参加するサポートエンジニアは、GitLab 顧客からの運用上の緊急事態を調整します。
 
@@ -18,9 +18,9 @@ US Government Emergencies ローテーションは、[GitLab Support On-call](/h
 
 このページは、US Government On-Call ローテーションに参加するためのさまざまなワークフローの概要を示しています。緊急コールへの対応などに関するより詳細なガイドは、[PATRIOT project](https://gitlab.com/gitlab-com/support/us-government/patriot) で確認できます。
 
-## Things to Know
+## 知っておくべきこと
 
-### US Government On-call
+### 米国政府向けオンコール
 
 US Gov サポートを購入したすべての顧客は「12x5 Emergency Support」を受けられます。顧客は「24x7 Emergency Support」アドオンを購入することもできます。
 
@@ -35,18 +35,18 @@ US Gov サポートを購入したすべての顧客は「12x5 Emergency Support
 
 顧客は、email または US Government サポートポータルの緊急フォームから緊急事態を送信できます。
 
-#### On-call Shift Coverage in US Government
+#### 米国政府向けオンコールシフトのカバー
 
 サポートエンジニアが予定されたオンコールシフトのカバーを必要とする場合は、`us-gov-oncall-coverage` テンプレートを使って Support Team Meta に Issue を開き、そのリンクを Slack でチームと共有します。
 
-#### Emergencies outside working hours
+#### 業務時間外の緊急依頼
 
 12x5 の顧客が [Government Support の営業時間](https://about.gitlab.com/support/us-government-support/#hours-of-operation) 外に緊急ケースを送信した場合、以下が発生します。
 
 - #spt_us-government チャンネルに slack 通知がトリガーされ、時間外の緊急事態をチームに知らせ、営業時間の開始時にフォローアップが必要であることを示します
 - `Off hours emergency request` トリガーが、チケット送信者に時間外であることを知らせ、Global support で緊急ケースを作成するか、次の営業時間の開始時に US Government support がフォローアップするのを待つかの選択肢を提示します。<!-- is this correct still?-->
 
-##### Responding to after hours emergencies
+##### 業務時間外の緊急対応への応答
 
 12x5 時間外に作業しているチームメンバーは、エンジニア自身の裁量で、本番の緊急事態に直面している顧客にサポートを提供することを選択できます。これに対応する際は、以下が顧客との間で明確になっていることを確認することが重要です。
 
@@ -59,7 +59,7 @@ US Gov サポートを購入したすべての顧客は「12x5 Emergency Support
 
 私たちは、GitLab 顧客が提起した緊急事態を追跡するために PagerDuty を使用します。顧客の緊急事態については、`#support_us-government` に通知が届きます。
 
-### PagerDuty Status
+### PagerDuty のステータス
 
 - **Triggered** - 「顧客がオンコールエンジニアの対応を要求しました」
 - **Acknowledged** - 「ページを確認し、チケットをレビュー中です」
@@ -67,7 +67,7 @@ US Gov サポートを購入したすべての顧客は「12x5 Emergency Support
 
 **Note:** PagerDuty における「Resolved」は、根本的な問題が解決されたことを意味するものではありません。
 
-## Getting Alerted of an Emergency Case
+## 緊急ケースのアラートを受け取る
 
 あなたの担当である*可能性のある*緊急事態について通知を受け取る方法は 2 つあります。
 
@@ -79,29 +79,29 @@ US Gov サポートを購入したすべての顧客は「12x5 Emergency Support
 
     これは平日の dayshift 時間中に届き、緊急ケースを知らせるために*稼働可能な*すべてのエンジニアに ping を送ります。
 
-### Examples of flow
+### フローの例
 
 これらの例では、顧客が緊急事態を提起してから、エンジニアがチケットで対応するまでの流れを扱います。ケースをトリアージして対応する方法については、別の場所で扱います。
 
-#### Day Shift, bot flow
+#### 日中シフト・ボットフロー
 
 平日の営業時間中に緊急事態が提起されると、[#spt_us-government](https://gitlab.enterprise.slack.com/archives/C03RTN3JEJ2) チャンネルに 2 つのメッセージが表示されます。最初に PagerDuty アラート、次に「Support Readiness Bot」からのメッセージで、稼働可能なすべてのエンジニアをタグ付けして緊急事態を知らせます。
 ping を受け取ったら、稼働可能なエンジニアはチケットをレビューし、PagerDuty アラートを `acknowledge` します。（acknowledge されていない PagerDuty アラートはエスカレーションします。）
 1 人または 2 人のエンジニアがチケットの対応に同意したら、チケットに返信して PagerDuty アラートを `resolve` します。
 
-#### Day Shift Engineer On-call flow
+#### 日中シフト オンコールエンジニアのフロー
 
 Dayshift エンジニアは通常、週末と、チームが決定した一部の祝日のみオンコールになります。あなたが On-Call Engineer である間に緊急事態が提起されると、あなたの[設定](#configuring-your-pagerduty)に従って PagerDuty 通知が届きます。通知を受け取ったら、エスカレーションを防ぐために、Slack または PagerDuty アプリのいずれかでページを `acknowledge` します。その後、チケットのレビューを開始します。顧客に対応したら、PagerDuty アラートを `resolve` します。
 
-#### Night Shift flow
+#### 夜間シフトのフロー
 
 Nightshift エンジニアは、1 週間単位のオンコールシフトのローテーションを行います。個々のローテーションでは、最初のシフトは**金曜日**の夜（太平洋時間午後 5:00）に始まり、**土曜日**の朝（太平洋時間午前 5:00）に終わります。残りのシフトも同じスケジュールに従い、ローテーションは**金曜日**の朝（太平洋時間午前 5:00）に終わります。あなたが On-Call Engineer である間に緊急事態が提起されると、あなたの[設定](#configuring-your-pagerduty)に従って PagerDuty 通知が届きます。通知を受け取ったら、エスカレーションを防ぐために、Slack または PagerDuty アプリのいずれかでページを `acknowledge` します。その後、チケットのレビューを開始します。顧客に対応したら、PagerDuty アラートを `resolve` します。
 
-### If no one Acknowledges an alert
+### 誰もアラートを Acknowledge しない場合
 
-## Configuring your PagerDuty
+## PagerDuty の設定 {#configuring-your-pagerduty}
 
-## Post-resolution ticket handling
+## 解決後のチケット処理
 
 解決後のチケット処理は、このオンコールページの範囲外です。緊急状態に対処した後は、[Working with US Government Support tickets](/handbook/support/workflows/usgovernment_tickets/#emergency-ticket-handling) の解決後チケットワークフローに従ってください。
 
