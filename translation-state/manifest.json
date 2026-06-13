@@ -30610,11 +30610,11 @@
     },
     "content/handbook/product/ux/operations/_index.md": {
       "path": "content/handbook/product/ux/operations/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
+      "upstream_sha": "ccb1e392292beca5aa187b61502738defd99d030",
+      "translated_at": "2026-06-13T21:07:03Z",
       "model": "claude-opus-4-7",
-      "input_hash": "9fa415ac9a90b455ae9f439f0f92ffc3f6b2105184e84e7471904231a9a29594",
-      "upstream_committed_at": "2026-02-12T13:14:13+00:00"
+      "input_hash": "f27f2905808f8e16ceb7cd8d879995deb002789e2acae7cf38ee1893f4bb3e7a",
+      "upstream_committed_at": "2026-06-12T14:42:54-07:00"
     },
     "content/handbook/product/ux/navigation/_index.md": {
       "path": "content/handbook/product/ux/navigation/_index.md",
