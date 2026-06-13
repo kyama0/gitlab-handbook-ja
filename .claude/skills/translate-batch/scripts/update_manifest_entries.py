@@ -40,30 +40,38 @@ def sha256_file(p):
     return h.hexdigest()
 
 
-def _exists_in_upstream(up_rel):
-    return (ROOT / "upstream" / up_rel).is_file()
+def _exists_at_sha(sha, up_rel):
+    """記録された sha 時点で up_rel が存在するかを確認する。"""
+    r = subprocess.run(
+        ["git", "-C", "upstream", "cat-file", "-e", f"{sha}:{up_rel}"],
+        capture_output=True,
+    )
+    return r.returncode == 0
 
 
-def resolve_upstream_rel(rel, fm):
+def resolve_upstream_rel(rel, fm, sha):
     """翻訳ファイルの content 相対パスと frontmatter から、対応する upstream の
-    相対パス（`content/handbook/...`）を返す。見つからなければ None。"""
-    # 1) 同じ相対パス
-    if _exists_in_upstream(rel):
-        return rel
-    # 2) .html.md 互換（翻訳側は .md にリネーム済み）
-    html_rel = rel[:-3] + ".html.md" if rel.endswith(".md") else rel + ".html.md"
-    if _exists_in_upstream(html_rel):
-        return html_rel
-    # 3) frontmatter の upstream_path（URL）から導出（移動/改名ページ対応）
+    相対パス（`content/handbook/...`）を返す。見つからなければ None。
+    候補の存在確認は作業ツリーではなく **記録された sha** に対して行う
+    （sha 以降に .html.md → .md などの改名があっても旧 SHA 側で正しく解決するため）。"""
+    candidates = [rel]
+    # .html.md 互換（翻訳側は .md にリネーム済み）
+    candidates.append(rel[:-3] + ".html.md" if rel.endswith(".md") else rel + ".html.md")
+    # frontmatter の upstream_path（URL）から導出（移動/改名ページ対応）
     up_path = (fm.get("upstream_path") or "").strip()
     if up_path:
         seg = up_path.strip("/")
         seg = seg[len("handbook/"):] if seg.startswith("handbook/") else seg
         base = "content/handbook/" + seg if seg else "content/handbook"
-        for cand in (f"{base}/_index.md", f"{base}.md",
-                     f"{base}/_index.html.md", f"{base}.html.md"):
-            if _exists_in_upstream(cand):
-                return cand
+        candidates += [f"{base}/_index.md", f"{base}.md",
+                       f"{base}/_index.html.md", f"{base}.html.md"]
+    seen = set()
+    for cand in candidates:
+        if cand in seen:
+            continue
+        seen.add(cand)
+        if _exists_at_sha(sha, cand):
+            return cand
     return None
 
 
@@ -89,7 +97,16 @@ def upstream_committed_at(sha, rel):
         ["git", "-C", "upstream", "log", "-1", "--format=%cI", sha, "--", rel],
         capture_output=True, text=True,
     )
-    return r.stdout.strip()
+    out = r.stdout.strip()
+    # shallow clone でその sha にファイルを最後に変更した祖先が含まれない場合、
+    # コマンドは成功しても空を返しうる。空の committed_at を manifest に書くと
+    # all-or-nothing 保証をすり抜けるため、エラーにして書き込みを中止させる。
+    if r.returncode != 0 or not out:
+        raise RuntimeError(
+            f"cannot resolve commit timestamp for {rel} at {sha} "
+            f"(empty git log; unshallow upstream で履歴取得が必要)"
+        )
+    return out
 
 
 def main():
@@ -118,14 +135,14 @@ def main():
         # upstream の相対パスを解決する。
         # 1) 同じ相対パス（最も一般的） 2) .html.md 互換 3) frontmatter の
         # upstream_path（移動/改名されたページ）から導出。
-        up_rel = resolve_upstream_rel(rel, fm)
+        up_rel = resolve_upstream_rel(rel, fm, sha)
         if up_rel is None:
             errors.append(f"upstream missing: {rel}")
             continue
-        committed = upstream_committed_at(sha, up_rel)
-        # input_hash は記録された upstream_sha 時点のファイル内容から計算する。
-        # （作業ツリーが sha より進んでいても staleness 判定が壊れないように）
+        # committed_at と input_hash はいずれも記録された upstream_sha 時点で解決する。
+        # どちらかが取得できなければ errors に積んでスキップ（manifest は最終的に書かない）。
         try:
+            committed = upstream_committed_at(sha, up_rel)
             ih = input_hash_at_sha(sha, up_rel)
         except RuntimeError as exc:
             errors.append(str(exc))
