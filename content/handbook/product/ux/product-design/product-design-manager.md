@@ -1,83 +1,83 @@
 ---
-title: "プロダクトデザインマネージャーのワークフロー"
-description: "プロダクト開発プロセスの上流に位置する戦略的パートナーとしてデザイナーを率いるプロダクトデザインマネージャーのための戦略的ワークフロー。"
+title: プロダクトデザインマネージャーのワークフロー
+description: "プロダクト開発プロセスの上流に位置する戦略的パートナーとしてデザイナーを率いる Product Design Manager のための戦略的ワークフロー。"
 upstream_path: /handbook/product/ux/product-design/product-design-manager/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
+lastmod: 2026-06-11T08:45:13-07:00
+translated_at: "2026-06-12T21:17:57Z"
 translator: claude
 stale: false
-lastmod: "2026-03-31T15:43:22+02:00"
 ---
 
-プロダクトデザインマネージャーは、[Upstream Studios](/handbook/upstream-studios/)の一部である[プロダクトデザイン](/handbook/product/ux/product-design/)の中で戦略的パートナーとして働くデザイナーを率います。このページでは、デザイナーが上流で考え行動できるようにし、デザインの卓越性とプラットフォーム全体の思考を通じてプロダクトの方向性を駆動するための戦略的ワークフローを概説します。
+Product Design Manager は、[Upstream Studios](/handbook/upstream-studios/) の一部である [Product Design](/handbook/product/ux/product-design/) において戦略的パートナーとして働くデザイナーを率います。このページでは、デザイナーが上流で考え、活動できるようにし、デザインの卓越性とプラットフォーム全体を見据えた思考を通じてプロダクトの方向性を推進するための、戦略的ワークフローを概説します。
 
-メンバー更新や管理プロセスなどの運用的なタスクについては、[プロダクトデザインオペレーション](/handbook/product/ux/product-design/operations/)を参照してください。
+チームメンバーの更新といった運用上のタスクや管理プロセスについては、[Product Design Operations](/handbook/product/ux/product-design/operations/) を参照してください。
 
 ## 戦略的パートナーシップの実現
 
-[Upstream Studios のビジョン](/handbook/upstream-studios/vision-strategy/)で強調されているように、戦略的パートナーは上流、つまり物事が始まる場所、方向性が決定される場所に位置します。プロダクトデザインマネージャーは、業務の構造化、デザイナーへのコーチング、そしてクロスファンクショナルなパートナーとのコラボレーションを通じて、このポジショニングを実現します。
+[Upstream Studios のビジョン](/handbook/upstream-studios/vision-strategy/)で強調されているとおり、戦略的パートナーは上流に位置します。物事が始まり、方向性が定まる場所です。Product Design Manager は、作業の組み立て方、デザイナーへのコーチング、クロスファンクショナルなパートナーとのコラボレーションを通じて、この位置取りを実現します。
 
-**主要な実践:**
+**主要なプラクティス:**
 
-- **ビジョン作業のための余裕を作る**: デザイナーが探索、実験、戦略的思考のための時間を確保し、単なる実行作業に終始しないようにします
-- **デザインジャッジメントの権限を支援する**: エンジニアリングが始まる前に、デザイナーが「No」や「このようには進めない」と言う必要があるときに、デザイナーを支援します
-- **早期関与を促進する**: PM リーダーシップと協力して、デザイナーが最初から Interlock 計画に参加していることを確認します
-- **デザイナー同士のつながりを構築する**: [Design Studios](/handbook/product/ux/product-design/design-studios/)、ステージ横断のコラボレーション、ピアフィードバックを通じて、デザイナー同士の関係を強化します
-- **データを用いて品質を擁護する**: デザイナーが成功基準を定義し、品質のラインを守るのを助けます
+- **ビジョンを描く作業のための余白を作る**: デザイナーが単なる実行だけでなく、探求、実験、戦略的思考のための時間を確保できるようにする
+- **デザイン判断の権限を支える**: エンジニアリングが始まる前にデザイナーが「ノー」や「このやり方ではない」と言う必要があるとき、彼らを後押しする
+- **早期からの関与を促す**: PM のリーダーシップと協力し、デザイナーが最初から Interlock の計画に参加できるようにする
+- **デザイナー同士のつながりを築く**: ステージ横断のコラボレーションとピアフィードバックを通じて、デザイナー同士の関係を強化する
+- **データで品質を擁護する**: デザイナーが成功基準を定義し、品質の一線を守れるよう支援する
 
-## チームスキルマトリクス
+## チームスキルマトリックス
 
-[Nielsen-Norman 推奨のプロセス](https://www.nngroup.com/articles/skill-mapping/)に基づいて、年に一度チームスキル分析を実施します。
+私たちは、[Nielsen-Norman が推奨するプロセス](https://www.nngroup.com/articles/skill-mapping/)に基づいて、年に 1 回チームのスキル分析を実施します。
 
-スキル分析の主な目的は、個々のチームメンバーの成長計画に情報を提供することです。副次的なメリットとして、チームとしての強みを把握できること、チームの大部分にとって有益なチームトレーニングを特定できること、新しいチームメンバーを採用する際に追加したい強みを特定できること、そしてメンターやデザインペアのマッチングのリソースとしても機能することが挙げられます。
+スキル分析の主な目的は、個々のチームメンバーの成長プランに役立てることです。副次的なメリットとして、チームとしての強みを把握でき、チームの大部分にとって有益なチームトレーニングを特定するのに役立ち、新しいチームメンバーを採用する際に加えたい強みを特定するのに役立ち、メンターやデザインペアをマッチングするためのリソースとしても機能します。
 
-### チーム評価の実施方法
+### チーム評価の進め方
 
-1. [GitLab Team Skills Matrix（GitLab 内部のみ）](https://docs.google.com/spreadsheets/d/1MZsalURuFy60mNCBlzkQ2hhPSWsuSXtjJ-NlFac7jCA/edit?usp=sharing)のコピーを作成します。
-1. テンプレートを確認し、自分のチームに適しているか確認します。変更を検討する場合は慎重に行い、他のマネージャーと話し合ってください。複数のデザインチーム間で一貫性を持って閲覧できるようにしたいと考えています。
+1. [GitLab Team Skills Matrix（GitLab 限定）](https://docs.google.com/spreadsheets/d/1MZsalURuFy60mNCBlzkQ2hhPSWsuSXtjJ-NlFac7jCA/edit?usp=sharing)のコピーを作成します。
+1. テンプレートを確認し、自分のチームに合っているか確かめます。変更は慎重に検討し、他のマネージャーと相談してください。複数のデザインチームをまたいで見られるよう、一貫性を保てるようにしたいからです。
 1. スプレッドシートにチームメンバーの名前を追加します。
-1. このページ、NN の記事、GitLab に特化したテンプレートを共有することで、このプロセスをチームに紹介します。
-1. チームメンバーに自己評価（現在の状態と将来の状態）を依頼します。
-1. チームメンバーと一緒に確認します。観察に基づいて調整を提案することはできますが、最終的にはこれは自己評価です。
+1. このページ、NN の記事、GitLab 向けのテンプレートを共有して、このプロセスをチームに紹介します。
+1. チームメンバーに自己評価（現在と将来の状態）を依頼します。
+1. チームメンバーと一緒にレビューします。観察に基づいて調整を提案してもよいですが、最終的にはこれは自己評価です。
 1. 結果を Issue で共有します -[Issue の例](https://gitlab.com/gitlab-org/gitlab-design/-/issues/1674)。
-1. 結果のフォローアップとして、チームメンバーとマネージャーは、チームメンバーが改善したいと述べたギャップを埋める機会を特定できます。
-1. 年次で Q1 に繰り返します。
+1. 結果のフォローアップとして、チームメンバーとそのマネージャーは、チームメンバーが向上したいと述べたギャップを埋める機会を特定できます。
+1. 毎年 Q1 に繰り返します。
 
-## キャリア開発の会話
+## キャリア育成の対話
 
-成長と開発に焦点を当てた定期的な 1:1 は、デザイナーのキャリア進歩を支援するために不可欠です。
+成長と育成に焦点を当てた定期的な 1:1 は、デザイナーのキャリアの進展を支えるうえで欠かせません。
 
-### 成長計画
+### 成長プラン
 
-デザイナーまたはマネージャーが[Individual Growth Plan](/handbook/people-group/learning-and-development/career-development/#individual-growth-plan)や、その他のキャリア開発のフォーマットを作成したいと考えた場合、以下のテンプレートを任意で使用できます。
+デザイナーまたはマネージャーが [Individual Growth Plan](/handbook/people-group/learning-and-development/career-development/#individual-growth-plan) や他の形式のキャリア育成をまとめたいと考えた場合、必要に応じて以下のテンプレートを使用できます。
 
 - ステップ 1: https://gitlab.com/gitlab-com/gitlab-ux/create-ux/growth-and-development/-/blob/main/.gitlab/issue_templates/Individual%20Growth%20Plan.md?ref_type=heads
 - ステップ 2: https://gitlab.com/gitlab-com/gitlab-ux/create-ux/growth-and-development/-/blob/main/.gitlab/issue_templates/Career%20Development%20Plan.md?ref_type=heads
 
-この作業にはどんなフォーマットでも使用できますが、[このような](https://gitlab.com/gitlab-org/ci-cd-ux/-/work_items/77)Work Item を使って、これらの計画を透明性をもって作成することを推奨します。成長計画は年間を通じていつでも作成できます。
+これにはどのような形式を使っても構いませんが、[このような](https://gitlab.com/gitlab-org/ci-cd-ux/-/work_items/77)ワークアイテムを使って、これらのプランを透明性をもって作成することをおすすめします。成長プランは 1 年のどの時期でも作成できます。
 
-### 追加リソース
+### 追加のリソース
 
-- [キャリア開発を文書化する](/handbook/people-group/learning-and-development/career-development/#document-your-career-development)
-- [パフォーマンスファクターワークシート](/handbook/product/ux/product-design/operations/#talent-assessment) - 人材評価と成長に関する会話を促進します
-- [Growth and Development Benefit](/handbook/people-group/learning-and-development/growth-and-development/) - チームメンバーの開発をサポートします
-- [プロダクトデザインのジョブファミリー](/job-description-library/product/product-designer/) - キャリアの進歩パスを理解します
+- [自分のキャリア育成をドキュメント化する](/handbook/people-group/learning-and-development/career-development/#document-your-career-development)
+- [パフォーマンスファクターのワークシート](/handbook/product/ux/product-design/operations/#talent-assessment) - タレントアセスメントと成長の対話を促進する
+- [Growth and Development Benefit](/handbook/people-group/learning-and-development/growth-and-development/) - チームメンバーの育成を支援する
+- [Product Design のジョブファミリー](/job-description-library/product/product-designer/) - キャリアの進展経路を理解する
 
-## プロダクトデザインリーダーシップとの協働
+## Product Design のリーダーシップと協働する
 
-プロダクトデザインマネージャーは、シニアプロダクトデザインマネージャーまたはディレクターオブプロダクトデザインのいずれかにレポートします。
+Product Design Manager は、Senior Product Design Manager または Director of Product Design のいずれかにレポートします。
 
-マネージャーとリーダーシップチームと以下について協働してください:
+以下について、自分のマネージャーやリーダーシップチームと協働しましょう。
 
-- 戦略的 UX 機会とプラットフォーム全体のイニシアチブ
-- リソース配分とキャパシティ計画
-- 組織全体のデザイン品質と一貫性
-- 戦略的な業務を可能にするプロセスの改善
-- チームメンバーのキャリア開発と成長
+- 戦略的な UX の機会とプラットフォーム全体の取り組み
+- リソースの配分とキャパシティプランニング
+- 組織全体でのデザインの品質と一貫性
+- 戦略的な作業を可能にするプロセス改善
+- チームメンバーのキャリア育成と成長
 
 ## リソース
 
-- [プロダクトデザインのランディングページ](/handbook/product/ux/product-design/) - 概要と戦略的ポジショニング
-- [プロダクトデザインオペレーション](/handbook/product/ux/product-design/operations/) - 管理タスクと手順
-- [プロダクトデザイナーの採用](/handbook/product/ux/product-design/hiring-product-designers/) - 採用プロセスとガイドライン
-- [ジョブファミリー: プロダクトデザインマネジメント](/job-description-library/product/product-design-management/) - 役割の要件と責任
+- [Product Design ランディングページ](/handbook/product/ux/product-design/) - 概要と戦略的な位置づけ
+- [Product Design operations](/handbook/product/ux/product-design/operations/) - 管理タスクと手順
+- [Product Designer の採用](/handbook/product/ux/product-design/hiring-product-designers/) - 採用プロセスとガイドライン
+- [ジョブファミリー: Product Design Management](/job-description-library/product/product-design-management/) - 役割の要件と責務

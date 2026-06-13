@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "Artifact Registry の認証設計"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
+lastmod: 2026-06-11T10:43:33+01:00
+translated_at: "2026-06-12T21:12:20Z"
 translator: claude
 stale: false
-lastmod: "2026-03-26T11:26:28+00:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -16,247 +16,146 @@ lastmod: "2026-03-26T11:26:28+00:00"
 
 ## ステータス
 
-**一時停止中。** この ADR は改訂中です。以下の内容は古くなっている可能性があり、依拠すべきではありません。
+**提案中。**
+
+この ADR は **認証** のみを扱います。つまり、呼び出し元のアイデンティティをどう確立するかです。**認可**（ロール、ポリシー評価、ロール割り当て）は、ADR-021: Authorization で別途扱われます。
+<!-- TODO: link to ADR-021 once merged — https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18717 -->
 
 ## コンテキスト
 
-Artifact Registry は GitLab Rails モノリスから分離されたサテライトサービスです。クライアントは GitLab Rails が発行するトークン（PAT、グループ/プロジェクトアクセストークン、CI ジョブトークン）で認証しますが、Artifact Registry はこれらのトークンを直接検証できません。クライアントの認証情報を Artifact Registry が信頼できる暗号学的に検証可能な JWT に変換するためのトークン交換メカニズムが必要です。
+クライアントは、専用の API エンドポイントを通じて自身の GitLab Rails インスタンスが発行する短命のトークンを使用して、Artifact Registry に認証します。Artifact Registry はこれらのトークンをローカルで検証し、その発行には関与しません。
 
-加えて、Artifact Registry アドオンを持つ GitLab インスタンスのみがサービスを使用できる必要があります。
-
-3 つのアーティファクトフォーマットは、認証情報を異なる方法で提示します:
-
-- **Docker**: HTTP Basic 認証と OCI トークン認証チャレンジ/レスポンス
-- **Maven**: HTTP Basic 認証またはカスタム HTTP ヘッダー
-- **npm**: Bearer トークン
-
-これらのプロトコルの違いにもかかわらず、すべてのクライアントは同じ認証パターンを使用します: Artifact Registry はクライアントと GitLab Rails のトークン交換エンドポイントとの間の唯一の仲介者として機能します。これは、Artifact Registry が GitLab Rails との JWT 交換のスコープを構成する前にリクエスト URL からネームスペースを解決する必要があるため必要です <!-- TODO: link to ADR-022 once merged -->
-（ADR-022: ネームスペースデカップリングを参照）。クライアントの認証情報は常に Artifact Registry を通じてプロキシされます。
-
-### 既存のインフラ
-
-GitLab Rails には、Container Registry と Dependency Proxy で使用されている JWT トークン交換エンドポイント（`GET /jwt/auth`）がすでに存在します。このエンドポイントは:
-
-- `Gitlab::Auth.find_for_git_client` を通じて認証情報を検証し、PAT、アクセストークン、CI ジョブトークンを統一的に処理します
-- `JwtController` 経由で `?service=` パラメーターに基づいてサービスクラスにディスパッチします
-- 検証用の公開鍵を JWKS エンドポイント（`/oauth/discovery/keys`）で公開します
+Auth Platform チームとの契約は [Artifact Registry and Auth Platform interface agreement](../agreements/auth.md) であり、これは Artifact Registry が必要とするものを 6 つの要件（R1〜R6）にわたって定義します。この ADR は、その認証要件、すなわち R1（トークン交換）、R2（トークン検証）、R3（トークンペイロード）を消費します。
 
 ## 決定
 
-**GitLab Rails の既存の JWT トークン交換エンドポイント（`GET /jwt/auth`）を再利用し、Artifact Registry を新しいサービスオーディエンスとして追加します。**
+**Artifact Registry は、専用のトークン交換 API エンドポイントを通じて GitLab Rails が発行する短命のトークンをローカルで検証することにより、クライアントを認証する。**
 
-すべてのクライアント認証は Artifact Registry を経由し、GitLab Rails とのトークン交換をプロキシします。
+### イテレーションのスコープ
 
-### トークン交換カテゴリ
+最初のイテレーションは、同一境界のトポロジー（`.com ↔ .com`、`SM ↔ SM`）を対象とします。ここでは単一のインスタンスが単一の信頼アンカーを持ちます。Rails が Cloud Connector v1 キーでトークンに署名し、`gitlab_instance_uid` はペイロードから省略されます。クロス境界のトポロジー（複数のセルフマネージドインスタンスが 1 つの SaaS Artifact Registry を共有する）は、フォローアップのイテレーションです。
 
-| カテゴリ | クライアント | 動作 |
-|----------|--------------|------|
-| **透過的 JWT 交換** | Docker (OCI)、npm、Maven | クライアントは認証情報を Artifact Registry に送信し、Artifact Registry はネームスペースを解決し、スコープを構成し、クライアントに代わって GitLab Rails との交換をプロキシします |
-| **アイデンティティトークン交換** | フロントエンド | フロントエンドは（同一ドメインの）セッションクッキーを使用して GitLab Rails からアイデンティティトークンを取得し、それを Artifact Registry に送信して透過的な交換を実行します |
+## アーキテクチャ上の制約
 
-### 認証フロー
+[interface agreement](../agreements/auth.md#no-callbacks-during-request-processing) からの 1 つの制約が、この決定を形作ります。
 
-#### 透過的 JWT 交換
+**リクエスト処理中のコールバックなし。** Artifact Registry は、**リクエストを処理している間**、GitLab インスタンス、Rails、その他のリモートサービスにコールバックすることは決してありません。1 つのリモート依存性は持っています。信頼された発行者の公開鍵を定期的に帯域外で同期することです（[トークン検証](#token-validation-r2) を参照）。しかしそれはリクエストごとではなく、リクエスト処理の外で発生します。これはクロス境界のセットアップで最も重要になります。SaaS Artifact Registry に接続するセルフマネージドインスタンスでは、そのインスタンスがネットワーク条件（ファイアウォール、エアギャップ環境）によって到達不能になる可能性があります。リクエストトークンを検証するために必要なものはすべて、トークン自体の中にあるか、すでにローカルにキャッシュされていなければなりません。これが、ローカルでステートレスな検証を最適化ではなく厳格な要件にしている理由です。
+
+## 認証フロー
+
+トークンは Rails が発行し（R1）、Artifact Registry が、定期的に同期してキャッシュする信頼された発行者の公開鍵に対してローカルで検証します（R2）。以下の図は最初のイテレーションのフローを示しています。認可ステップ（ロールルックアップ、ポリシー評価）はここではスコープ外です。ADR-021 を参照してください。
 
 ```mermaid
 sequenceDiagram
-    participant C as Client (Docker / npm / Maven)
+    participant Client
+    participant Rails as GitLab Instance<br/>(Rails)
     participant AR as Artifact Registry
-    participant GR as GitLab Rails /jwt/auth
 
-    Note over C,GR: Transparent JWT Exchange
+    Note over AR,Rails: Issuer key refresh (periodic, cached)
+    AR->>Rails: Sync trusted issuer's public keys (JWKS) · R2
+    Rails->>AR: Public keys (JWKS)
 
-    C->>AR: 1. Request with credentials (basic auth or bearer token)
-    AR->>AR: 2. Extract credentials, resolve namespace from URL
-    AR->>GR: 3. GET /jwt/auth?service=artifact_registry&scope=<resource_scope> (proxied credentials)
-    GR->>GR: 4. Validate credentials, check org membership, determine role
-    GR->>AR: 5. Signed JWT (role may be empty if checks fail)
-    AR->>AR: 6. Verify JWT signature via cached JWKS, validate audience, check role
-    AR->>AR: 7. Cache JWT keyed by hash(token) + scope
-    AR->>C: 8. Response (or 401/403 if access insufficient)
+    Note over Client,AR: Client request
+    Client->>Rails: 1. Authenticate (PAT, OAuth, CI job token, ...) · R1
+    Rails->>Client: 2. Short-lived JWT, signed with Cloud Connector keys · R1
+    Client->>AR: 3. Request with token
+    AR->>AR: 4. Validate JWT signature against cached JWKS · R2
+    Note over AR: Authorization handled separately (ADR-021)
+    AR->>Client: 5. Response
 ```
 
 **凡例:**
 
 | ステップ | 説明 |
-|---------|------|
-| **1-2** | クライアントは認証情報を Artifact Registry に送信します。Registry は認証情報を抽出し、リクエスト URL からネームスペースを解決します。Docker クライアントの場合、最初の認証されていないリクエストは `401 WWW-Authenticate` チャレンジをトリガーし、クライアントを Rails ではなく Artifact Registry 自身のトークンエンドポイントに誘導します（OCI トークン認証の互換性を保持）。 |
-| **3-5** | Artifact Registry はクライアントに代わって GitLab Rails とのトークン交換をプロキシします。Rails は認証情報を検証し、組織メンバーシップを確認し、ユーザー権限に応じて役割を決定します。交換は常に成功します。権限不足やエンタイトルメント欠如は、エラーではなく役割なしの JWT を返します。 |
-| **6-8** | Artifact Registry はキャッシュされた JWKS を介して JWT 署名を検証し、オーディエンスが `artifact_registry` であることを検証し（他のサービス向けに発行された JWT のリプレイを防ぐ）、リクエストされたアクションに対して役割が十分であることを確認し、JWT をキャッシュし、レスポンスを提供します。 |
+|------|-------------|
+| **発行者キーのリフレッシュ** | Artifact Registry は、事前設定された信頼された発行者の公開鍵（JWKS）を同期し、キャッシュする。これは唯一のリモート依存性であり、帯域外で発生する。リクエスト処理中に発生することは決してない。 |
+| **1-2** | クライアントは、（Artifact Registry を通じてではなく）自身の GitLab インスタンスから直接、短命の JWT を取得する。Artifact Registry はクライアントの長命な認証情報を決して見ない。 |
+| **3-5** | クライアントはトークンを Artifact Registry に提示し、Artifact Registry はキャッシュされた JWKS に対して署名を検証し、レスポンスを提供する。Rails へのコールバックは発生しない。 |
 
-#### アイデンティティトークン交換
+## トークン発行 (R1)
 
-フロントエンドは GitLab モノリスドメイン（例: `gitlab.com`）で動作します。Artifact Registry は別のドメイン（例: `artifact-registry.gitlab.com`）で動作します。セッションクッキーはモノリスドメインにバインドされ `HttpOnly` であるため、クロスドメインで送信したり JavaScript で読み取ったりすることはできません。フロントエンドは Artifact Registry で認証するためのポータブルな認証情報、つまりアイデンティティトークンを必要とします:
+Rails は、クライアントの認証情報を受け付け、Artifact Registry に対して使用可能な短命のトークンを返す、専用のトークン交換 API エンドポイントを公開します。
 
-```mermaid
-sequenceDiagram
-    participant FE as Frontend (gitlab.com)
-    participant AR as Artifact Registry (artifact-registry.gitlab.com)
-    participant GR as GitLab Rails (gitlab.com)
+1. **サポートされる認証情報の種類。** エンドポイントは、それぞれが `User` に解決される標準的な GitLab API の認証情報で呼び出し元を認証します。パーソナルアクセストークン（レガシーまたは粒度の細かいもの）、OAuth トークン、CI ジョブトークン、プロジェクト/グループアクセストークンです。**デプロイトークンは最初のイテレーションではサポートされません**。デプロイトークンは `User` ではなく、最初のイテレーションがトークンを発行する唯一のプリンシパル型ではありません。型付けされた `sub` クレーム（[トークンペイロード](#token-payload-r3) を参照）は、後から他のプリンシパル型を受け入れられるように設計されているため、[R1](../agreements/auth.md#r1--token-exchange-service) のターゲットとして挙げられているデプロイトークンは、フォローアップとして追跡されます。
+1. **クライアント側の交換。** トークン交換はクライアント側で行われます。クライアントは自身の GitLab インスタンスからトークンを取得し、それを Artifact Registry に提示します。Artifact Registry が交換を実行することは決してありません。エンドポイントは `curl`、`glab` CLI、または CI ジョブによって自動的に駆動できます。トークンは短命であるため、静的な認証情報を期待するネイティブなパッケージツール（例: Maven の `settings.xml` や npm の `.npmrc`）は、それを取得・リフレッシュするためのヘルパーツールを必要とします。Docker、Maven、npm にまたがるクライアントツールの設計は [client credential management work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150) で追跡されています。
+1. **トークンの有効期間。** トークンはデフォルトの有効期間が 5 分、最大が 12 時間です。クライアントはより短い有効期間を要求できます。クライアントが要求可能な TTL には AppSec のサインオフが必要です（[token-exchange TTL decision](https://gitlab.com/gitlab-org/gitlab/-/work_items/601469)）。この境界は、Maven/Gradle のビルドが処理の途中で期限切れにならない限りにおいて、[client credential management work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150) に文書化された委任認証レジストリの業界の前例に従います。
+1. **エンタイトルメントの強制。** トークン交換は、Artifact Registry アドオンのエンタイトルメントを持たない呼び出し元に対しては失敗すべきです（R1、SHOULD）。これは可用性のゲートにすぎず、リポジトリごとの認可は Artifact Registry に留まります。エンタイトルメントは、`:access_artifact_registry_service` の ability を介して Cloud Connector を通じて解決されます。多層防御として、Artifact Registry は自身の側でもエンタイトルメントと消費クォータを再チェックします。エンタイトルメントは、権限を評価するのではなくトークンの *発行* をゲートするため、ADR-021 ではなくここに記録されます。
 
-    Note over FE,GR: Step 1: Obtain identity token (once per session)
-    FE->>GR: GET /jwt/auth?service=artifact_registry&scope=o/<org_id>/token (session cookie)
-    GR->>FE: Identity token (user identity only, longer TTL)
+## トークン検証 (R2) {#token-validation-r2}
 
-    Note over FE,AR: Step 2: Management API request
-    FE->>AR: GET /v1/<namespace>/container/repositories/42 (Bearer <identity-token>)
-    Note over AR: Resolve namespace, determine scope from request URL
-    AR->>GR: GET /jwt/auth?service=artifact_registry&scope=<resource_scope> (Bearer <identity-token>)
-    GR->>GR: Verify identity token, extract user, determine role
-    GR->>AR: Scoped JWT with role
-    Note over AR: Cache scoped JWT keyed by hash(identity-token) + scope
-    AR->>FE: Response
+トークンは、GitLab インスタンスの既存の Cloud Connector キー（`CloudConnector::Keys`）で署名された JWT です。Artifact Registry は起動時に **信頼された発行者**（自身の GitLab インスタンス）が設定され、その発行者の公開鍵（JWKS）を帯域外で同期します。受信した各トークンの署名を、それらの事前取得されたキーに対して検証します。バリデーターは署名アルゴリズムも固定し、間違ったオーディエンスや過去の `exp` を持つトークンを拒否します。
 
-    Note over FE,AR: Subsequent request (same scope) — cached
-    FE->>AR: GET /v1/<namespace>/container/repositories/42/images (Bearer <identity-token>)
-    Note over AR: Cached scoped JWT found for this hash(identity-token) + scope
-    AR->>FE: Response
-```
+キーのキャッシュとリフレッシュは、既存の Cloud Connector のアプローチに従います（[R2](../agreements/auth.md#r2--token-validation) に従う）。キーはキャッシュされ、定期的にリフレッシュされ、リフレッシュが失敗した場合は古いキーが短時間保持されるため、キープロバイダーの一時的な不調が、その他の点で有効なトークンを拒否することはありません。
 
-**凡例:**
+Cloud Connector v1 の仕組みを再利用することで、最初のイテレーションはシンプルに保たれます。新しいキー配布インフラは不要です。ターゲット状態ではキー提供は GATE に移りますが、Artifact Registry 側のアクション、すなわちキャッシュされた信頼鍵に対して署名を検証することは変わりません。
 
-| ステップ | 説明 |
-|---------|------|
-| **ステップ 1** | フロントエンドは同一ドメインで `/jwt/auth` を呼び出します（セッションクッキーは自動送信）し、アイデンティティトークンスコープを指定します。Rails はアイデンティティトークン（ユーザーのアイデンティティを伝えるが認可情報は含まない JWT）を返します。より長い TTL（例: 1 時間）を持ちます。フロントエンドはこのトークンをメモリにキャッシュします。 |
-| **ステップ 2** | フロントエンドは API リクエストごとにアイデンティティトークンを Artifact Registry に送信します。AR はネームスペースを解決し、リクエスト URL からスコープを決定し、アイデンティティトークンを認証情報として Rails と透過的な交換を実行します。Rails は自身の署名を検証し、ユーザーアイデンティティを抽出し、役割付きのスコープ付き JWT を返します。AR は役割に基づいて認可を評価します。 |
-| **キャッシング** | AR は (hash(identity-token) + scope) をキーとしてスコープ付き JWT をキャッシュします。同じスコープへの後続のリクエストは 2 番目の交換をスキップします。キャッシュされたスコープ付き JWT が期限切れになると（15 分）、AR はアイデンティティトークンを使って新しい透過的交換を実行します - フロントエンドからは見えません。 |
+## トークンペイロード (R3) {#token-payload-r3}
 
-API クライアント（自動化スクリプト、CI/CD パイプライン）はアイデンティティトークンを必要としません。認証情報（PAT、アクセストークン、CI ジョブトークン）を直接 Artifact Registry に送信し、透過的な交換を通じて処理されます。
-
-### スコープの扱い
-
-すべてのクライアントが透過的な交換を使用するため、Artifact Registry はリクエスト URL からネームスペースを解決し、GitLab Rails にプロキシする際にスコープを構成します。2 つのスコープレベルが存在します:
-
-- `organization:<org_id>:<actions>` -- レジストリレベルのスコープで、レジストリ全体に適用される操作に使用
-- `repository:o/<org_id>/<repository_path>:<actions>` -- リポジトリレベルのスコープで、特定のリポジトリの操作に使用
-
-アイデンティティトークンは専用のスコープ形式を使用します:
-
-- `o/<org_id>/token` -- `/jwt/auth` からアイデンティティトークンを取得するために使用
-
-### トークンタイプ
-
-#### `/jwt/auth` で受け付ける（入力）
-
-JWT トークン交換エンドポイントは以下の認証情報タイプを受け付けます。すべては GitLab の既存のトークン検証レイヤを通じて検証されます:
-
-- **PAT と CI ジョブトークン** は `User` に解決します。組織メンバーシップはユーザーに対して確認されます。
-<!-- TODO: link to ADR-021 once merged -->
-- **グループ/プロジェクトアクセストークン** は、専用のグループまたはプロジェクトに対して特定のアクセスレベルを持つボット `User` に解決します。専用エンティティ上のトークンのアクセスレベルが直接 Artifact Registry の役割を決定します（ADR-021: 認可を参照）。これは、GitLab の既存の RBAC モデルと Artifact Registry の権限モデルの間の明確なマッピングを提供します。
-- **セッションクッキー** は、ブラウザによって `/jwt/auth` への同一ドメインリクエストで自動送信されます。アイデンティティトークンの取得にのみ使用されます。ドメインを越えることはできません。
-- **アイデンティティトークン** は、Rails が以前に発行したユーザーのアイデンティティを伝える JWT です。Artifact Registry は透過的な交換中に `/jwt/auth` に提示します。Rails は自身の署名を検証し、ユーザーアイデンティティを抽出します。
-
-#### `/jwt/auth` で発行する（出力）
-
-エンドポイントは、リクエストされたスコープに応じて 2 つの JWT タイプのいずれかを返します:
-
-- **スコープ付き JWT** — リソーススコープ（レジストリレベルまたはリポジトリレベル）に対して発行されます。リクエストされたリソースに対するユーザーの Artifact Registry の役割を伝えます。デフォルト TTL: 15 分。[スコープ付き JWT 構造](#scoped-jwt-structure) を参照。
-- **アイデンティティトークン** — `o/<org_id>/token` スコープに対して発行されます。フロントエンドが Artifact Registry で認証するためのポータブルな認証情報として使用します。[アイデンティティトークン](#identity-token) を参照。
-
-### 署名鍵
-
-組織ごとの専用 RSA 署名鍵で、`Organizations::OrganizationSetting` に暗号化されて保存され、OpenID Connect (OIDC) と CI JWT 署名鍵から独立しています。組織ごとに独立してローテーション可能です。公開鍵は組織スコープの JWKS エンドポイント（`/o/<org-path>/oauth/discovery/keys`）で公開されます。Artifact Registry はサービスを提供する各組織の JWKS を取得してキャッシュします。マルチテナントデプロイでは、これは複数の組織公開鍵をキャッシュし、それぞれを独立して更新することを意味し、単一インスタンス全体の鍵と比較してメモリ使用量と GitLab Rails への送信リクエスト数を増やします。
-
-### スコープ付き JWT 構造 {#scoped-jwt-structure}
-
-<!-- TODO: link to ADR-021 once merged -->
-スコープ付き JWT には標準クレームと Artifact Registry の役割が含まれます。役割は、シャドウのトップレベルグループまたはプロジェクトでのユーザーのアクセスレベルと、組織オーナーシップなどの他の条件から Rails によって導出されます（ADR-021: 認可を参照）:
+トークンは、コールバックなしでリクエストを認証するのに十分な情報を運びます。認証に関連するクレームは次のとおりです。
 
 ```json
 {
-  "iss": "gitlab.example.com",
-  "aud": "artifact_registry",
-  "sub": "username",
-  "user_id": 42,
-  "organization_id": 123,
-  "scope": "repository:o/123/container/local/repo-a:pull",
-  "role": "contributor"
+  "jti": "5d250d2f-0e6c-4f7d-987b-222973bfb6af",
+  "iss": "https://gitlab.example.com",
+  "aud": ["gitlab-artifact-registry"],
+  "sub": "gid://gitlab/User/42",
+  "iat": 1779870540,
+  "nbf": 1779870540,
+  "exp": 1779870840,
+  "gitlab_realm": "saas",
+  "gitlab_organization_id": 1
 }
 ```
 
-トークンの有効性は、新しい `artifact_registry_token_expire_delay` アプリケーション設定を通じて設定可能です。
+1. `sub` — プリンシパルのアイデンティティ（R3）。素の数値 ID ではなく、GitLab の GlobalID（例: `gid://gitlab/User/42`）として表現される。値にプリンシパルの *型* をエンコードすることで、曖昧さがなくなり、クレームがその意味を変えることなく非 `User` プリンシパル（例: デプロイトークン）に拡張できる。
+1. `iss` — 発行インスタンスの OIDC 発行者 URL。これは情報提供のみ（ログ記録される）であり、Artifact Registry はこれを検証鍵の選択に **使用しない**（[トークン検証](#token-validation-r2) を参照）。
+1. `aud` — `gitlab-artifact-registry`。トークンを Artifact Registry にスコープする。
+1. `gitlab_organization_id` — Organization のコンテキスト（R3 SHOULD）。`gitlab_realm` は `saas` または `self-managed`。
+1. `jti`、`iat`、`nbf`、`exp` — 標準的な JWT クレーム。`exp = iat + ttl`。
+1. `gitlab_instance_uid` は **現時点では省略される**。最初のイテレーションの同一境界トポロジーには単一の信頼アンカーがあるため、インスタンス識別子は不要である。それはクロス境界のフォローアップでのみ関連する。
+1. **ロールやその他の認可を運ぶクレームは、ここではなく ADR-021 で説明される。** Artifact Registry はこのトークンを使用して、呼び出し元が *誰* であるかを確立する。*何ができるか* は別途評価される。認可が *ソース認証情報の種類*（例: PAT 対 CI ジョブトークン）も考慮しなければならないかどうかは、同様に ADR-021 の関心事である。
+<!-- TODO: link to ADR-021 once merged — https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18717 -->
 
-### アイデンティティトークン {#identity-token}
+## 検討した代替案
 
-スコープが `o/<org_id>/token` の場合に発行される JWT。ユーザーのアイデンティティを伝えるが認可情報は含みません:
-
-```json
-{
-  "iss": "gitlab.example.com",
-  "aud": "artifact_registry",
-  "sub": "username",
-  "user_id": 42,
-  "organization_id": 123,
-  "scope": "o/123/token"
-}
-```
-
-- 付与されたアクションやアクセスレベルは含まない - 純粋にアイデンティティトークン
-- 認可情報を含まないため長い TTL（例: 1 時間）
-- ポータブルな認証情報として使用: フロントエンドは Artifact Registry に送信し、Artifact Registry は特定リソース用のスコープ付き JWT を取得するために透過的な交換を実行
-- Rails は自身の署名を検証し、ユーザーアイデンティティを抽出することでアイデンティティトークンを検証
-- アイデンティティトークンが期限切れになると、Artifact Registry は 401 を返し、フロントエンドはセッションクッキー経由で再取得
-
-### JWT キャッシング
-
-Artifact Registry はリクエストごとに `/jwt/auth` をヒットすることを避けるため、入力認証情報とスコープのハッシュをキーとしてスコープ付き JWT をキャッシュします。認証情報は決して平文で保存されません - そのハッシュのみがキャッシュキーとして使用されます。キャッシュはトークンの寿命と共に自動期限切れし、期限切れの認証情報が新しい交換をトリガーし、キャッシュ空間が無制限に増加しないようにします。
-
-例:
-
-- Maven クライアントが PAT で認証してリポジトリ A からダウンロードします。AR は PAT をスコープ付き JWT に交換し、`(hash(PAT), repository:o/1/maven/local/repo-a:pull)` の下にキャッシュします。リポジトリ A からの後続のダウンロードはキャッシュされた JWT を再利用します。リポジトリ B へのリクエストは新しい交換と別のキャッシュエントリをトリガーします。
-- フロントエンドはアイデンティティトークン（ステップ 1 で Rails から取得した JWT）を送信してコンテナリポジトリのイメージをリストします。AR はそれをスコープ付き JWT に交換し、`(hash(identity-token-JWT), repository:o/1/container/local/repo-c:pull)` の下にキャッシュします。同じリポジトリへのフォローアップリクエストはキャッシュされた JWT を再利用します。異なるリポジトリへのリクエストは新しい交換をトリガーします。
-- キャッシュされたスコープ付き JWT が期限切れになると（15 分）、同じ認証情報とスコープでの次のリクエストは新しい交換をトリガーします。
-
-### インスタンスレベルのエンタイトルメント
-
-| 強制ポイント | 場所 | メカニズム | 目的 |
-|---|---|---|---|
-| スコープ決定 | GitLab Rails | JWT スコープ解決中のアドオンチェック | Artifact Registry アドオンを持たないインスタンスは、役割なしの JWT を受信します |
-
-[Container Registry 認証サービス](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/services/auth/container_registry_authentication_service.rb) と同じパターンに従い、JWT 交換は常に成功し、署名されたトークンを返します。権限とメンバーシップの失敗は、認証エラーではなく役割なしのトークンを返します。Artifact Registry は JWT に存在する役割に基づいてアクセスを強制します。
-
-### 通信のセキュリティ
-
-Artifact Registry は GitLab Rails の `/jwt/auth` エンドポイントにクライアント認証情報をプロキシします。これらの認証情報の漏洩はサプライチェーンセキュリティリスクをもたらすため、この通信は認証情報の傍受を防ぐために保護される必要があります。Artifact Registry と GitLab Rails 間の相互 TLS (mTLS) が必要であり、双方が互いを認証します。実装の詳細（専用内部エンドポイント、インフラレベルの強制）は実装前にインフラチームと議論されます。
+この ADR は代替の認証アーキテクチャを比較検討しません。Artifact Registry 側の設計は、[Artifact Registry and Auth Platform interface agreement](../agreements/auth.md) から導かれます。Artifact Registry は R1〜R3 の要件を消費し、メカニズムはそれらをどう実装するかに関する Authentication チームの決定によって駆動されます。代替案はプラットフォーム側で評価されており（[モジュラーサービスモデルにおける認証および認可の方向性](https://gitlab.com/gitlab-org/gitlab/-/work_items/595148) を参照）、ここではスコープ外です。
 
 ## 帰結
 
 ### ポジティブ
 
-1. **実証済みインフラの再利用**: JWT トークン交換エンドポイント、トークン検証レイヤ、JWKS エンドポイントは Container Registry と Dependency Proxy によって本番テストされています
-1. **GitLab Rails への最小限の変更**: 既存のコントローラに新しいサービスオーディエンスを追加するだけで、新しい認証システムの構築ではありません
-1. **一貫した認証体験**: PAT、アクセストークン、CI ジョブトークンは他の GitLab サービスと同じように動作します
-1. **明確なアクセスレベルマッピング**: グループ/プロジェクトアクセストークンは専用エンティティ上で明示的なアクセスレベルを持ち、Artifact Registry の役割への直接的かつ監査可能なマッピングを提供します
-1. **単一の交換パターン**: すべてのクライアントが Artifact Registry を通じた透過的な交換を使用します。これによりアーキテクチャがシンプルになり、Artifact Registry がネームスペース解決、スコープ構成、キャッシングを統一的に処理できます
-1. **クロスドメインフロントエンドサポート**: アイデンティティトークンパターンは、セキュリティを損なうことなくクロスドメイン認証の課題を解決します（セッションクッキー共有なし、`HttpOnly` バイパスなし）
+1. **リクエスト処理中、Rails の可用性から独立している**: 検証がローカルでステートレスであるため、Artifact Registry は、発信元の GitLab インスタンスが到達不能なときでもリクエストを認証できる。
+1. **短命のトークンが影響範囲を限定する**: Artifact Registry はクライアントの長命な GitLab 認証情報を決して扱わず、短命のトークンのみを扱う。そのため、漏洩したトークンはすぐに期限切れになり、PAT のような長命な認証情報の漏洩よりもはるかに少ない情報しか露出しない。
+1. **プラットフォームの方向性に整合**: Artifact Registry は独自のフローを維持するのではなく、プラットフォームのトークン交換と検証のプリミティブを消費する（[モジュラーサービスモデルにおける認証および認可の方向性](https://gitlab.com/gitlab-org/gitlab/-/work_items/595148) に従う）。
 
 ### ネガティブ
 
-1. **認証における GitLab Rails への依存**: 新しいセッションごとに `/jwt/auth` への往復が必要です。GitLab Rails がダウンしている場合、新しい JWT は発行できません（既存のキャッシュされた JWT は期限切れまで動作し続けます）
-<!-- TODO: link to ADR-021 once merged -->
-1. **アクセストークン管理**: グループ/プロジェクトアクセストークンは、通常の GitLab プロジェクトではなく、Artifact Registry 認可モデル（ADR-021: 認可を参照）によって管理される専用のグループまたはプロジェクトで作成する必要があります。これらはシャドウエンティティ上の標準 GitLab アクセストークンであるため、管理は既存 API を通じて簡単です
+1. **暫定的には GitLab インスタンスへのコールバックが必要**: トークンを検証するために、Artifact Registry は GitLab インスタンスの OIDC エンドポイントから発行者キーを同期しなければならない（帯域外、リクエストごとではない）。最終状態の目標は、Artifact Registry が GitLab インスタンスへの接続性に一切依存しないことである。ターゲット状態は、GATE からキーを提供することでこれを達成する。
+1. **Cloud Connector v1 の仕組みを再利用する**: 暫定的には、ターゲットの GATE 発行キーではなく、既存の Cloud Connector v1 のキーと OIDC エンドポイントに依存する。
+1. **発行されたトークンは期限切れ前に失効できない**: 検証がローカルでコールバックもブロックリストもないため、発信元の認証情報が発行直後に失効されても（例: フィッシングされた PAT が 12 時間のトークンと交換される）、トークンは `exp` まで有効なままである。これは短い *デフォルト* TTL によって緩和され、ベータで受け入れられるトレードオフである。より強力な送信者バインディング（DPoP など）とキーローテーションは、将来の堅牢化として可能である。
 
 ### 緩和策
 
-- **JWT キャッシング**: トークンを完全な寿命キャッシュすることで `/jwt/auth` の負荷を削減します。これは、バーストで多くのリクエストをトリガーする Maven/npm 依存関係解決にとって重要です
-- **15 分のトークン寿命**: 露出ウィンドウを制限しつつ、交換頻度を削減します
-- **アイデンティティトークンキャッシング**: アイデンティティトークンの長い TTL（1 時間）と Artifact Registry 側でのスコープ付き JWT キャッシングにより、2 段階交換はスコープごとの最初のリクエストでのみ追加コストが発生します
+- Artifact Registry 側の検証ロジックは、暫定とターゲットの発行者で同一である。変わるのは発行者キーのソースだけであり、移行の影響範囲を限定する。
 
-## 将来の代替案
+## 将来の作業 / 未解決の議論
 
-### GitLab Adaptive Trust Environment (GATE)
+これらは未解決の認証に関する問いであり、最初のイテレーションではスコープ外ですが、失われないように記録しています。ほとんどはクロス境界のフォローアップとターゲット（GATE）状態の周辺に集まっています。
 
-認証アーキテクチャをリファクタリングして集中化する継続的な取り組みがあります（関連 [epic](https://gitlab.com/groups/gitlab-org/-/work_items/17711)）。サービス指向アーキテクチャと共に、これらの取り組みは Artifact Registry が使用できる認証と認可のプリミティブを提供します。
-
-Artifact Registry のタイムラインはこれらの取り組みのタイムラインと互換性がないため、別のアプローチを使用する必要があります。しかし、集中型認証プラットフォームが実現したら、Artifact Registry の認証はそれに移行すべきです。
+1. **GATE のデプロイトポロジー。** ターゲット状態では、発行者キーは発行インスタンス自身の OIDC/JWKS エンドポイントではなく GATE が提供する。GATE がどのようにデプロイされるかに応じて、Artifact Registry は対応する GATE コンポーネントから発行者キーを取得する。デプロイトポロジーはまだ確定していない。
+1. **クロス境界の発行者キーと `gitlab_instance_uid`。** 最初のイテレーションは単一の信頼アンカーがあるため `gitlab_instance_uid` を省略する。クロス境界のフォローアップでは、1 つの信頼アンカーの背後に多数のセルフマネージドインスタンスがあるため、トークンは発行インスタンスを識別しなければならない。`gitlab_instance_uid`（または同等のもの）の再導入と、それに伴う検証モデルの変更は未解決である。CI 固有のケース、すなわち SaaS Artifact Registry に接続するリモートランナーのための自動 `CI_JOB_TOKEN` 交換は、このフォローアップに含まれ、[CI_JOB_TOKEN exchange for remote runners work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/599087) で追跡されている。
 
 ## 参考文献
 
-- [認証調査](https://gitlab.com/gitlab-org/gitlab/-/issues/589257#note_3081520361)
-- [ADR-001: アンカーポイントとしての組織](001_organizations_as_anchor_point.md)
-<!-- TODO: link to ADR-021 once merged -->
-- ADR-021: 認可
-<!-- TODO: link to ADR-022 once merged -->
-- ADR-022: ネームスペースデカップリング
-- [Container Registry トークン認証](https://docs.docker.com/registry/spec/auth/token/)
-- [OCI Distribution Spec - 認証](https://github.com/opencontainers/distribution-spec/blob/main/spec.md#authentication)
+1. [ADR-001: Organizations as Anchor Point](001_organizations_as_anchor_point.md)
+1. ADR-021: Authorization — 認可のための対をなす ADR
+<!-- TODO: link to ADR-021 once merged — https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18717 -->
+1. [ADR-022: Namespace Decoupling](022_namespace_decoupling.md)
+1. [Artifact Registry and Auth Platform interface agreement](../agreements/auth.md) — ここで消費される R1〜R3（認証）の要件
+1. [Authentication and authorization direction work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/595148)
+1. [Client credential management for remote artifact clients](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150)
+1. [Token-exchange endpoint work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/601475)
+1. [GATE identity federation design doc (cross-boundary auth)](https://gitlab.com/gitlab-org/architecture/auth-architecture/design-doc/-/blob/main/decisions/019-gate-identity-federation.md)
+1. [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) — interface agreement で使用される要件レベルのキーワード
+1. [OCI Distribution Spec - Authentication](https://github.com/opencontainers/distribution-spec/blob/main/spec.md#authentication)
+1. [Container Registry Token Authentication](https://docs.docker.com/registry/spec/auth/token/)

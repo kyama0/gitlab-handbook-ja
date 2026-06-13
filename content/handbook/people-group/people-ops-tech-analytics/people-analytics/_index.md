@@ -2,72 +2,72 @@
 title: "People Analytics"
 description: "GitLab People Analytics チームハンドブックページ"
 upstream_path: /handbook/people-group/people-ops-tech-analytics/people-analytics/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T18:43:26Z"
+upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
+lastmod: 2026-06-12T09:20:53-04:00
+translated_at: "2026-06-12T21:15:15Z"
 translator: claude
 stale: false
-lastmod: "2026-04-30T16:57:54+00:00"
 ---
 
 ## 概要
 
-People Analytics は、データ駆動の洞察を使って GitLab のタレント意思決定と労働力プロセスを改善します。私たちは People Strategy チームの一部であり、レポート、データソリューション、統計分析を通じて、組織のすべてのレベルでピープルグループの意思決定を支援しています。
+People Analytics は、データに基づくインサイトを活用して、GitLab における人材の意思決定とワークフォースのプロセスを改善します。私たちは People Strategy チームの一員として、レポーティング、データソリューション、統計分析を通じて、あらゆる組織レベルでの People Group の意思決定に役立つ情報を提供します。
 
 ## People Analytics チームメンバー
 
-- [Shane McCormack](https://gitlab.com/mccormack514): [Staff Analyst, People Analytics](/job-description-library/people-group/people-systems-and-analytics/#staff-analyst-people-analytics)
+- [Shane McCormack](https://gitlab.com/mccormack514): [Manager, People Analytics](/job-description-library/people-group/people-systems-and-analytics/#manager-people-analytics)
 
-## 私たちが行うこと
+## 私たちの活動
 
-**私たちのミッション:** 組織、ピープル、タレントデータを収集・分析して、ビジネス成果を改善するために、GitLab 全体のピープル意思決定を情報提供するためのデータ洞察を提供します。
+**私たちのミッション:** 組織、人、人材に関するデータを収集・分析してビジネス成果を改善することで、GitLab 全体の People に関する意思決定に役立つデータインサイトを提供します。
 
-**主要な目的:**
+**主要な目標:**
 
-- **レポートソリューション** - ステークホルダーと協力して、関連するピープルメトリクスを効率的かつ正確に提供する自動レポートソリューションを開発する
-- **データソリューション** - [Data Team](/handbook/enterprise-data/) と協力して、レポートおよびアナリティクスをサポートするためのスケーラブルなデータモデルを構築する
-- **分析ソリューション** - 高度な統計手法（クラスタリング、回帰、生存分析）を適用して、ピープルグループおよび GitLab 全体のリーダーシップ向けに、実行可能な洞察とデータ情報に基づく意思決定を生成する
+- **レポーティングソリューション** - ステークホルダーと協力して、関連する People の指標を効率的かつ正確に提供する自動化されたレポーティングソリューションを開発します
+- **データソリューション** - [データチーム](/handbook/enterprise-data/)と協力して、レポーティングと分析を支えるスケーラブルなデータモデルを構築します
+- **分析ソリューション** - 高度な統計手法（クラスタリング、回帰、生存時間分析）を適用して、GitLab 全体の People Group とリーダーシップ向けに、実行可能なインサイトとデータに基づく意思決定を生み出します
 
-## ツール & リソース
+## ツールとリソース
 
-### 主要ツール
+### 主要なツール
 
-- **Tableau** - データ可視化、ダッシュボード、アドホック分析
-- **RStudio/R** - 統計モデリングとデータクリーニング。[Rstudio ハンドブックページ](/handbook/enterprise-data/platform/rstudio/) で詳細を学べます
+- **Tableau** - データの可視化、ダッシュボード、アドホック分析
+- **RStudio/R** - 統計モデリングとデータクレンジング。詳細は [Rstudio ハンドブックページ](/handbook/enterprise-data/platform/rstudio/) を参照してください
 - **Snowflake** - データウェアハウスと SQL 探索
-- **Culture Amp** - 従業員調査と評価
-- **Google Sheets** - 必要に応じてステークホルダー固有のソリューション
+- **Culture Amp** - 従業員サーベイとアセスメント
+- **Google Sheets** - 必要に応じたステークホルダー固有のソリューション
 
 ### People Analytics ハンドブックの内容
 
-- [People Analytics Data Guide](data-guide.md) - データモデルとメトリクス定義
-- [People Data Governance](/handbook/people-group/people-ops-tech-analytics/people-analytics/data-governance/) - データ品質とコンプライアンス
-- [People Analytics Tableau Dashboard Overview](/handbook/people-group/people-ops-tech-analytics/people-analytics/people-tableau/) - 一般的なダッシュボードと使用方法
-- [People Analytics Survey Support](/handbook/people-group/people-ops-tech-analytics/people-analytics/survey-support/) - Culture Amp 調査管理
-- [People Analytics Office Hours](/handbook/people-group/people-ops-tech-analytics/people-analytics/office-hours/) - コラボレーションと質問の方法
+- [People Analytics データガイド](data-guide.md) - データモデルと指標の定義
+- [People データガバナンス](/handbook/people-group/people-ops-tech-analytics/people-analytics/data-governance/) - データ品質とコンプライアンス
+- [People Analytics Tableau ダッシュボード概要](/handbook/people-group/people-ops-tech-analytics/people-analytics/people-tableau/) - 一般的なダッシュボードと使い方
+- [People Analytics サーベイサポート](/handbook/people-group/people-ops-tech-analytics/people-analytics/survey-support/) - Culture Amp サーベイの運用
+- [People Analytics オフィスアワー](/handbook/people-group/people-ops-tech-analytics/people-analytics/office-hours/) - 協力し、質問する方法
 
 ### 外部リソース
 
-- [Wharton People Analytics](https://wpa.wharton.upenn.edu/) - 年次カンファレンスと研究
-- [AIHR People Analytics](https://www.aihr.com/blog/people-analytics-resource-library/) - HR とアナリティクスのリソース
+- [Wharton People Analytics](https://wpa.wharton.upenn.edu/) - 年次カンファレンスとリサーチ
+- [AIHR People Analytics](https://www.aihr.com/blog/people-analytics-resource-library/) - HR と分析のリソース
 - [HR Predictive Analytics](https://www.koganpage.com/hr-learning-development/predictive-hr-analytics-9781398615656) - 実践的な例を含む教科書
 - [Google re:Work](https://rework.withgoogle.com/en/subjects/people-analytics) - 入門リソース
-- [Handbook of Regression Modeling in People Analytics](https://peopleanalytics-regression-book.org/index.html) - Keith McNulty による R と Python のサンプル付きオープンソース回帰モデリング書
-- [Handbook of Graphs and Networks in People Analytics](https://ona-book.org/index.html) - Keith McNulty による組織ネットワーク分析のオープンソース書
-- [The Fundamentals of People Analytics](https://link.springer.com/content/pdf/10.1007/978-3-031-28674-2.pdf?pdf=button) - Craig Starbuck による People Analytics チームが一般的に使用する統計分析の R サンプル付きオープンソース書
+- [Handbook of Regression Modeling in People Analytics](https://peopleanalytics-regression-book.org/index.html) - Keith McNulty によるオープンソースの回帰モデリングの書籍。R と Python の例を掲載
+- [Handbook of Graphs and Networks in People Analytics](https://ona-book.org/index.html) - Keith McNulty による組織ネットワーク分析（Organizational Network Analysis）のためのオープンソース書籍
+- [The Fundamentals of People Analytics](https://link.springer.com/content/pdf/10.1007/978-3-031-28674-2.pdf?pdf=button) - Craig Starbuck によるオープンソース書籍。People Analytics チームが一般的に用いる統計分析の例を R で掲載
 
-## データガバナンス & セキュリティ
+## データガバナンスとセキュリティ
 
-GitLab の透明性と効率へのコミットメントは、データガバナンスフレームワークに拡張されます。People Analytics チームは People および Legal チームと緊密に連携し、認可されたデータのみにアクセスすることを確保します。私たちのプロセスには、すべてのデータリクエストに対するアクセス検証とステークホルダーの承認が含まれ、適用される法律および規制への厳格な遵守を維持します。
+透明性と効率性に対する GitLab のコミットメントは、私たちのデータガバナンスのフレームワークにも及んでいます。People Analytics チームは、People チームおよび Legal チームと緊密に協力し、使用を許可されたデータのみにアクセスすることを確実にしています。私たちのプロセスには、すべてのデータリクエストに対するアクセスの検証とステークホルダーの承認が含まれており、適用される法令や規制への厳格なコンプライアンスを維持しています。
 
-**コアガバナンス原則:**
+**コアとなるガバナンス原則:**
 
-- **ソースシステム優先** - ピープルグループの日々のオペレーションは、データの整合性とワークフロー効率を維持するために、ソースシステムに留まります
-- **戦略的データウェアハウジング** - [dbt](/handbook/enterprise-data/platform/dbt-guide/) および [Snowflake](/handbook/enterprise-data/platform/snowflake/) などの技術上に構築された当社のデータウェアハウスは、「up and out」の組織レポートおよびアナリティクス専用です
-- **データ最小化** - レポートに必要なデータのみを取り込み、個人のプライバシーを保護するために、可能な限り情報を匿名化します
-- **包括的な追跡** - データライフサイクル全体でリスクを理解し軽減するために、ソースシステムから全ダウンストリームシステムへのデータを追跡します
+- **ソースシステム優先** - People Group の日々の業務は、データの整合性とワークフローの効率を保つため、引き続きソースシステム上で行います
+- **戦略的なデータウェアハウジング** - [dbt](/handbook/enterprise-data/platform/dbt-guide/) や [Snowflake](/handbook/enterprise-data/platform/snowflake/) などの技術上に構築された私たちのデータウェアハウスは、上位・対外向け（up and out）の組織レポーティングと分析のために確保されています
+- **データの最小化** - 私たちはレポーティングに必要なデータのみを取り込み、個人のプライバシーを保護するために可能な限り情報を匿名化します
+- **包括的なトラッキング** - 私たちはソースシステムから下流のすべてのシステムに至るまでデータを追跡し、データライフサイクル全体を通じてリスクを理解し、軽減します
 
-このガバナンスフレームワークにより、機密情報を保護しながら、データが一貫し、信頼でき、扱いやすい状態を保ちます。データガバナンスプロセスの詳細については、[Data Governance ハンドブックページ](data-governance.md) を参照してください。
+このガバナンスのフレームワークにより、機微な情報を保護しながら、データの一貫性と信頼性を保ち、扱いやすい状態に保ちます。データガバナンスのプロセスに関する詳細は、[データガバナンスのハンドブックページ](data-governance.md) を参照してください。
 
 ## 私たちと一緒に働く
 
-[People Analytics プロジェクト](https://gitlab.com/gitlab-com/people-group/people-analytics/general/) の Issue テンプレートを使用してリクエストとアイデアを提出してください。
+[People Analytics プロジェクト](https://gitlab.com/gitlab-com/people-group/people-analytics/general/) の Issue テンプレートを使って、リクエストやアイデアを送信してください。
