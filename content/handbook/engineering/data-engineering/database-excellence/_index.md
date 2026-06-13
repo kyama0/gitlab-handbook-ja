@@ -106,7 +106,7 @@ TBD
 
 ### 長期的な Stable Counterpart またはレビュアーの依頼 {#long-term-stable-counterpart-or-reviewer-requests}
 
-stable counterpart やレビュアーといった長期的な依頼は、ステージレベルで処理されます。これらの依頼は [counterpart request](https://gitlab.com/gitlab-org/database-team/team-tasks/-/work_items/new?description_template=counterpart_request) として提出してください。
+安定したカウンターパートやレビュアーといった長期的な依頼は、ステージレベルで処理されます。これらの依頼は [カウンターパート依頼](https://gitlab.com/gitlab-org/database-team/team-tasks/-/work_items/new?description_template=counterpart_request) として提出してください。
 
 ### トリアージローテーション {#triage-rotations}
 

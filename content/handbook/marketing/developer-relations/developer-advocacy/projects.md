@@ -203,7 +203,7 @@ Adobe Premiere Pro での動画編集:
 
 このボットは、次のようなチームのタスクを自動化することを目的としています。
 
-- チームメンバー向けに [release evangelism](/handbook/marketing/developer-relations/developer-advocacy/social-media/#release-evangelism) の Issue を作成する。
+- チームメンバー向けに [リリースエバンジェリズム](/handbook/marketing/developer-relations/developer-advocacy/social-media/#release-evangelism) の Issue を作成する。
 - [Developer Advocacy ワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/)に従って Issue をトリアージする。
 - 毎週月曜日に Issue レター（作成済み、クローズ済み、オープン中の CFP）を生成する。
 
