@@ -15,7 +15,7 @@ People Analytics は、データに基づくインサイトを活用して、Git
 
 ## People Analytics チームメンバー
 
-- [Shane McCormack](https://gitlab.com/mccormack514): [マネージャー, People Analytics](/job-description-library/people-group/people-systems-and-analytics/#manager-people-analytics)
+- [Shane McCormack](https://gitlab.com/mccormack514): [Manager, People Analytics](/job-description-library/people-group/people-systems-and-analytics/#manager-people-analytics)
 
 ## 私たちの活動
 

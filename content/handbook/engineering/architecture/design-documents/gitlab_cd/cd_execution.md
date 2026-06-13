@@ -551,7 +551,7 @@ Beta では、デプロイメントワークフローは `k8s.get` で約 30 秒
 
 デフォルトのロールバックポリシー: `Failed` 時には即座に新しいロールバック Rollout が作成され、`Degraded` 時には 30 分後に作成されます（Services は起動時に一時的に不安定なことがあります）。どちらも Application レベルで設定可能です。
 
-### Human-in-the-loop
+### 人間参加型（Human-in-the-loop） {#human-in-the-loop}
 
 HITL は 2 つのレベルで機能します。
 

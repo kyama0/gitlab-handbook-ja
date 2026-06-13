@@ -145,11 +145,11 @@ Incoming Request ビューに移動し、コア識別子を使って検索する
 
 Step 4.1 の条件に該当しない限り、4.2 のステップを実行して GitLab アカウントを削除します。
 
-4.1 - **Account Already Deleted**
+4.1 - **アカウントがすでに削除されている**
 
 ユーザーがリクエストを送信した後に GitLab アカウントを削除している可能性があります。その場合、それ以上のアカウント検証やリクエストの進行はできません。`Account Already Deleted` メッセージをデータ主体に送信し、`Support Engineer (GitLab Deletion)` タスクを completed としてマークします。
 
-4.2 - **GitLab Account Deletion**
+4.2 - **GitLab アカウントの削除**
 
 - 削除を妨げているグループ（ユーザーが唯一のオーナーであるグループなど）を削除します。GitLab.com では[グループ削除](https://docs.gitlab.com/user/gitlab_com/#delayed-group-deletion)に 30 日の遅延があるため、グループを削除した後は Advanced Settings に移動し、`Delete group immediately` を選択して削除を完了します。
 - `Delete user and contributions` でユーザー削除を開始します。これは、ユーザーが参加していてユーザーが唯一のオーナーではないプロジェクトは削除しない点に注意してください。ただし、ユーザーが作成した個人プロジェクトはすべて削除されます。
@@ -204,7 +204,7 @@ Step 2.1 の条件に該当しない限り、2.2 のステップを実行して 
 
 ユーザーがリクエストを送信した後にアカウントを削除している、またはエンタープライズ管理者がそれを削除できた可能性があります。その場合、それ以上のアカウント検証はできません。`Account Already Deleted` メッセージを送信し、`Support Engineer (GitLab Deletion)` タスクを complete としてマークします。
 
-2.2 - **GitLab Account Deletion**
+2.2 - **GitLab アカウントの削除**
 
 - 削除を妨げているグループ（ユーザーが唯一のオーナーであるグループなど）を削除します。GitLab.com では[グループ削除](https://docs.gitlab.com/user/gitlab_com/#delayed-group-deletion)に 30 日の遅延があるため、グループを削除した後は Advanced Settings に移動し、`Delete group immediately` を選択して削除を完了します。
 - `Delete user and contributions` でユーザー削除を開始します。これは、ユーザーが参加していてユーザーが唯一のオーナーではないプロジェクトは削除しない点に注意してください。ただし、ユーザーが作成した個人プロジェクトはすべて削除されます。
