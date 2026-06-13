@@ -158,7 +158,7 @@ OCI:         /v2/<slug>/repositories/my-repo/manifests/latest
 できません。リポジトリ名の再取得と同じセキュリティリスク（認可バイパス、キャッシュポイズニング）を避けるためです。これは、グローバルなスラッグの
 ネームスペースが時間とともに縮小することを意味します。最小長の要件が、利用可能なプールが大きく保たれるのを助けます。
 
-### 組織のマージ {#organization-merges}
+### Organization のマージ {#organization-merges}
 
 将来 GitLab が Organization のマージをサポートする場合、ネームスペースモデルはデータマイグレーションなしにこれを処理します。
 
@@ -264,7 +264,7 @@ Artifact Registry は、指定された Organization のスラッグのリスト
    不要。
 7. **データマイグレーションなしの Organization マージ**: Organization がマージする場合、アンカータプルが更新され、存続する
    Organization が複数のネームスペースを保持する。データ移動、URL の変更、クライアント設定の破損なし。詳細は
-   [組織のマージ](#organization-merges) を参照。
+   [Organization のマージ](#organization-merges) を参照。
 8. **スタンドアロンプロダクトの可能性**（願望的）: Artifact Registry は独自のネームスペースのアイデンティティを所有し、アンカーを
    不透明として扱うため、アーキテクチャは GitLab Rails に構造的に依存しない。これにより、GitLab の代わりに
    サードパーティの認証・認可プロバイダーに依存する独立したプロダクトとして Artifact Registry を

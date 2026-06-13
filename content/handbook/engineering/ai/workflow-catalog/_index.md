@@ -140,7 +140,7 @@ Workflow Catalog のほとんどの機能は Workflow Service 内で新しい機
 #### 誰がいつ適用するか {#who-applies-it-and-when}
 
 エンジニアリングマネージャーは、マイルストーンが始まる前の計画プロセス中に `~Deliverable` ラベルを適用します。
-この決定は、以下に基づいて Product Managerと協力して行われます。
+この決定は、以下に基づいて Product Manager と協力して行われます。
 
 * マイルストーンのチームのキャパシティ
 * Issue の見積もりと複雑さ

@@ -39,10 +39,10 @@ stale: false
 
 Analytics Section 内の [プロダクトグループ](/handbook/company/structure/#product-groups) は、[プロダクトカテゴリーページ](/handbook/product/categories/#analytics-section)に概説されています。
 
-Product 部門は、開発チームメンバーのヘッドカウントを プロダクトグループ に配分することで、セクション内の[投資](https://internal.gitlab.com/handbook/product/investment/)を決定します。その際、私たちは次の原則に従います。
+Product 部門は、開発チームメンバーのヘッドカウントをプロダクトグループに配分することで、セクション内の[投資](https://internal.gitlab.com/handbook/product/investment/)を決定します。その際、私たちは次の原則に従います。
 
-- すべての プロダクトグループ は、3 つの主要な DRI（Product Manager、Product Designer、Engineering Manager）の間で少なくとも 1:1:1 の比率を維持します。
-- 各 プロダクトグループ に少なくとも 6 名の開発者（FE + BE）を維持するよう努めます
+- すべてのプロダクトグループは、3 つの主要な DRI（Product Manager、Product Designer、Engineering Manager）の間で少なくとも 1:1:1 の比率を維持します。
+- 各プロダクトグループに少なくとも 6 名の開発者（FE + BE）を維持するよう努めます
 
 ### SaaS パフォーマンス指標
 
