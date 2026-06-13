@@ -16,7 +16,7 @@ stale: false
 
 ## ステータス
 
-**Proposed**
+**提案中。**
 
 この ADR は **認証** のみを扱います。つまり、呼び出し元のアイデンティティをどう確立するかです。**認可**（ロール、ポリシー評価、ロール割り当て）は、ADR-021: Authorization で別途扱われます。
 <!-- TODO: link to ADR-021 once merged — https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18717 -->

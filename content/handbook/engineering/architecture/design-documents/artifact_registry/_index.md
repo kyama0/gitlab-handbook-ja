@@ -290,7 +290,7 @@ Artifact Registry は独立したサービスとして実装されます。
 
 **リポジトリ管理:**
 
-- リポジトリタイプ（hosted/virtual/remote）
+- リポジトリタイプ（ホスト型／仮想／リモート）
 - フォーマットごとの型付きリポジトリ
 - 組織リポジトリ（リポジトリコレクションなし）
 - リポジトリ構成
@@ -308,7 +308,7 @@ Artifact Registry は独立したサービスとして実装されます。
 
 - 組織 RBAC
 - 認証方法（パーソナルアクセストークン、デプロイトークン、CI/CD ジョブトークン）
-- 可視性制御（public、internal、private）
+- 可視性制御（公開、internal、プライベート）
 
 **ライフサイクル管理:**
 
@@ -424,11 +424,11 @@ each alternative solution/path.
 
 ## リンク
 
-- **Direction**: [Package Stage Direction](https://about.gitlab.com/direction/package/)
-- **Top-level Epic**: [Artifact Registry](https://gitlab.com/groups/gitlab-org/-/epics/19844)
-- **Original Proposal**: [Internal Proposal Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/568349)
-- **Extended Blueprint**: [Detailed Specification](https://gitlab.com/gitlab-org/ci-cd/package-stage/unified-artifact-management/-/blob/main/blueprint.md) (internal)
-- **AI Vision**: [AI-Enhanced Artifact Management](https://unified-artifact-managment-965acd.gitlab.io)
+- **方向性**: [Package Stage Direction](https://about.gitlab.com/direction/package/)
+- **トップレベル Epic**: [Artifact Registry](https://gitlab.com/groups/gitlab-org/-/epics/19844)
+- **オリジナル提案**: [Internal Proposal Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/568349)
+- **拡張ブループリント**: [Detailed Specification](https://gitlab.com/gitlab-org/ci-cd/package-stage/unified-artifact-management/-/blob/main/blueprint.md)（社内）
+- **AI ビジョン**: [AI-Enhanced Artifact Management](https://unified-artifact-managment-965acd.gitlab.io)
 
 ## 意思決定
 

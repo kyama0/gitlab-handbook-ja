@@ -39,7 +39,7 @@ stale: false
 
 * GitLab Dedicated の可用性に影響する S1 または S2 の Issue（バグまたはセキュリティ脆弱性）に対処します。重大度の低い Issue
 は、パッチリリースを通じて対処すべきです。
-* current minus one（N-1）および current minus two（N-2）の GitLab バージョンを対象とします。
+* 現在のバージョンマイナス 1（N-1）および現在のバージョンマイナス 2（N-2）の GitLab バージョンを対象とします。
 * 公開開示の前に、プライベートチャンネルを通じて修正を提供します。
 
 Dedicated インスタンス上の高重大度の Issue を修正したい場合は、[内部リリースをリクエスト](https://gitlab.com/gitlab-org/release/tasks/-/work_items/new?description_template=Internal-Release-Request)し、[GitLab エンジニア向け内部リリース runbook](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/internal-releases/engineers.md)の手順に従ってください。
@@ -48,15 +48,15 @@ Dedicated インスタンス上の高重大度の Issue を修正したい場合
 
 内部リリースは[パッチリリース](/handbook/engineering/releases/patch-releases/)と同じプロセスに従いますが、異なる目的を果たします:
 
-* どちらも[マンスリーリリース](/handbook/engineering/releases/monthly-releases/)中に作成された stable ブランチを使用します
+* どちらも[マンスリーリリース](/handbook/engineering/releases/monthly-releases/)中に作成されたステーブルブランチを使用します
 * 内部リリースは、公開パッチリリースの *前に* GitLab Dedicated に修正を提供します
-* 内部リリースの後、同じ修正がすべての self-managed 顧客向けの次回スケジュールされたパッチリリースに含まれます
+* 内部リリースの後、同じ修正がすべてのセルフマネージド顧客向けの次回スケジュールされたパッチリリースに含まれます
 
 ### タイムライン {#timeline}
 
 内部リリースには、異なる時間的特性を持つ 2 つのフェーズがあります:
 
-| Phase | Duration | Notes |
+| フェーズ | 期間 | 備考 |
 |-------|----------|-------|
 | **リクエストと承認** | 可変 | Issue の重大度の検証、ステークホルダーの可用性、修正の準備状況に依存します |
 | **実行** | 約 8 時間 | 内部リリースリクエストが承認されると、リリースマネージャーはリリースプロセスを完了できます |
@@ -74,9 +74,9 @@ Dedicated インスタンス上の高重大度の Issue を修正したい場合
 
 内部リリースは、初期の特定からデプロイまで、6 つのフェーズを通って進みます。
 
-![internal release overview](/images/engineering/releases/internal-releases/internal-release-overview.jpg)
+![内部リリース概要](/images/engineering/releases/internal-releases/internal-release-overview.jpg)
 
-* [Diagram source - internal](https://docs.google.com/presentation/d/1rI47asPEzIaAGZ6t4rQASv88jnJJ17y55k3yD9IVkVI/edit?usp=sharing)
+* [ダイアグラムソース - 社内](https://docs.google.com/presentation/d/1rI47asPEzIaAGZ6t4rQASv88jnJJ17y55k3yD9IVkVI/edit?usp=sharing)
 
 1. **リクエスト**: 高重大度の Issue が特定され、[内部リリースリクエスト](https://gitlab.com/gitlab-org/release/tasks/-/work_items/new?description_template=Internal-Release-Request)
    が開かれます。トリガーは Issue のタイプによって異なります:
@@ -89,9 +89,9 @@ Dedicated インスタンス上の高重大度の Issue を修正したい場合
    セキュリティ脆弱性の場合:
    * リリースマネージャーのみが security リポジトリにマージできます。
    * [PSIRT チーム](/handbook/security/product-security/psirt)が、先に進む前に GitLab.com 上で修正を検証します。
-4. **バックポート**: 担当チームが N-1 および N-2 の stable ブランチを対象とするマージリクエストを準備します。
+4. **バックポート**: 担当チームが N-1 および N-2 のステーブルブランチを対象とするマージリクエストを準備します。
    * エンジニアは、バックポートがレビューされ、グリーンのパイプラインで承認されることを確認します
-   * エンジニアは、準備ができたらバックポートを stable ブランチにマージします。
+   * エンジニアは、準備ができたらバックポートをステーブルブランチにマージします。
    * セキュリティ脆弱性の場合、リリースマネージャーのみが security リポジトリにマージできます。
 5. **リリース**: 内部 CNG イメージと Omnibus パッケージがビルドされ、プレリリースチャンネルにアップロードされます。
 6. **最終ステップ**: 内部リリースパッケージを GitLab シングルテナント SaaS インスタンスにロールアウトします。

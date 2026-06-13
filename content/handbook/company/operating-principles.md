@@ -1,6 +1,6 @@
 ---
 title: 運営原則
-description: "GitLab の 3 つのオペレーティング原則 — Speed with Quality、Ownership Mindset、Customer Outcomes — は、AI 時代における私たちの働き方を定義します。"
+description: "GitLab の 3 つの運営原則 — Speed with Quality、Ownership Mindset、Customer Outcomes — は、AI 時代における私たちの働き方を定義します。"
 status: active
 canonical_path: "/handbook/company/operating-principles/"
 last_updated: "2026-05-15"
@@ -26,11 +26,11 @@ _速く動き、さらに速く学ぶ。_
 **具体的には次のようになります:**
 
 1. クロスファンクショナルなプロジェクトを、より大きな自律性を持つ小さなチームで編成・実行します
-1. 品質に高い基準を設けます — 私たちが作るものは、常にまず customer zero で実証します
+1. 品質に高い基準を設けます — 私たちが作るものは、常にまず自分たち自身（カスタマーゼロ）で実証します
 1. 速く作り、実験し、学び、速く失敗します — とりわけ二方向（後戻り可能）の意思決定では
 1. エージェントにできることは自動化し、私たちの判断やスキルが不可欠なものを見極めます
 1. 不要な官僚主義にはゼロトレランスで臨みます
-1. sync（速さのため）と async（スケールのため）の両方のパターンを使います
+1. 同期（速さのため）と非同期（スケールのため）の両方のパターンを使います
 
 ---
 
@@ -78,14 +78,14 @@ _顧客が勝つとき、私たちが勝つ。_
 
 ---
 
-## Acknowledging CREDIT
+## CREDIT への感謝
 
-CREDIT — Collaboration、Results、Efficiency、Diversity & Inclusion、Iteration、Transparency — は、GitLab を広く知られる存在にした時代にふさわしいフレームワークでした。これらのバリューは、最初の 10 年間を通じて繁栄する会社を形作り、DevSecOps において最も認知される名前の 1 つへと押し上げました。
+CREDIT — Collaboration（コラボレーション）、Results（成果）、Efficiency（効率）、Diversity & Inclusion（ダイバーシティ＆インクルージョン）、Iteration（イテレーション）、Transparency（透明性）— は、GitLab を広く知られる存在にした時代にふさわしいフレームワークでした。これらのバリューは、最初の 10 年間を通じて繁栄する会社を形作り、DevSecOps において最も認知される名前の 1 つへと押し上げました。
 
-私たちが CREDIT を引退させるのは、これらのバリューが間違っていたからではありません。異なるオペレーティングの姿勢を求める時代のために、別のものに焦点を当てることを選んだからです。CREDIT が表していたバリューは、今も私たちの一部です。それらは上記の原則の中に生き続け、GitLab のさまざまな場面で今も現れています。
+私たちが CREDIT を引退させるのは、これらのバリューが間違っていたからではありません。異なる運営の姿勢を求める時代のために、別のものに焦点を当てることを選んだからです。CREDIT が表していたバリューは、今も私たちの一部です。それらは上記の原則の中に生き続け、GitLab のさまざまな場面で今も現れています。
 
 ---
 
-+ [GitLab Act 2 Core Beliefs (internal)](https://docs.google.com/document/d/1FHz_tfwIQo8GPZ34AbR5re63RdFISdxk3QWYZKng5Kc)
++ [GitLab Act 2 Core Beliefs（社内限定）](https://docs.google.com/document/d/1FHz_tfwIQo8GPZ34AbR5re63RdFISdxk3QWYZKng5Kc)
 
 _これらの原則への変更を提案するには、MR を作成して Chief People Officer にアサインしてください。重要な変更は、マージ前に E-Group の合意が必要です。_

@@ -12,4 +12,4 @@ stale: false
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
 
-[取締役、執行役員、従業員、コントラクター向けの Code of Business Conduct and Ethics](https://drive.google.com/file/d/10mmfOcy9-0ygOLj92q5L4av-ah-qoHSy/view?usp=drive_link)を参照してください。
+[取締役、執行役員、従業員、コントラクター向けの行動規範・倫理規範](https://drive.google.com/file/d/10mmfOcy9-0ygOLj92q5L4av-ah-qoHSy/view?usp=drive_link)を参照してください。

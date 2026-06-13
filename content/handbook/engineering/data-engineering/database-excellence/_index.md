@@ -91,7 +91,7 @@ Database Excellence 内の各チームは、バックエンドエンジニアと
 
 * **範囲**: Incident Manager On Call、Engineer On Call、Security チームが提起した GitLab.com の S1 および S2 本番インシデント。GitLab Dedicated のサポートはコンサルティング的です。セルフマネージドのサポートは裁量的で、ケースバイケースで評価されます。
 * **エスカレーション**: インシデントの Slack チャンネルで `/inc escalate` を使用します。緊急でない問題については、[トリアージローテーション](#triage-rotations)を使用するか、`#s_database_excellence` に投稿します。
-* **対応**: ベストエフォート、現地タイムゾーン、平日のみのカバレッジ（24/5）。オンコールエンジニアは、コンサルティング的な立場でサブジェクトマターエキスパートとして参加します。
+* **対応**: ベストエフォート、現地タイムゾーン、平日のみのカバレッジ（24/5）。オンコールエンジニアは、コンサルティング的な立場で主題の専門家として参加します。
 * **プロセスの詳細**: 対応手順とシャドーイングの指示については、[完全なエスカレーションプロセス](/handbook/engineering/data-engineering/database-excellence/help/#step-4-escalate-to-database-excellence)を参照してください。
 
 ### リライアビリティ関連の依頼 {#reliability-requests}

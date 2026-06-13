@@ -83,7 +83,7 @@ VS Code のデフォルトプロファイルはダークテーマを使用しま
 
 Chat を右サイドバーに移動するには:
 
-1. 右上隅のアイコンで Secondary Side bar を開きます。
+1. 右上隅のアイコンでセカンダリサイドバーを開きます。
 1. Chat アイコン（例: Duo Chat）をドラッグして右サイドバーにドロップします。
 1. 複数の chat パネルを並行して使用できます。
 
@@ -178,7 +178,7 @@ JetBrains IDE のデフォルトプロファイルはダークテーマを使用
 
 > 注: Windows と Visual Studio ライセンスへのアクセスが必要で、追加のセキュリティレビューが必要です。
 >
-> ステータス: 調査中。Todo は[この内部 Issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/712) で追跡されています。
+> ステータス: 調査中。未対応のタスクは[この内部 Issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/712) で追跡されています。
 
 GitLab Duo は、[Visual Studio マーケットプレイスの GitLab 拡張機能](https://docs.gitlab.com/editor_extensions/visual_studio/)を使って統合できます。
 
@@ -478,13 +478,13 @@ AI ツールと IDE でのセットアップと設定については、[GitLab M
 - [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit)
 - [GitLab LSP](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp)（[IDE](#ides) と [CLI](#cli) に統合）
 
-## リモート開発 Workspaces {#remote-development-workspaces}
+## リモート開発ワークスペース {#remote-development-workspaces}
 
 [Workspaces](https://docs.gitlab.com/user/workspace/) は、[Developer Relations Cloud Resources](/handbook/marketing/developer-relations/workflows-tools/cloud-resources/) 上で動作するクラウド開発環境を提供します。
 
 > ステータス: 非アクティブ。現在、インフラストラクチャのメンテナーはいません。以下のドキュメントは、将来の歴史的参照用に存在しています。
 
-[remote-development サブグループ](https://gitlab.com/gitlab-da/use-cases/remote-development)には Kubernetes 用のエージェントがインストールされており、[agent-kubernetes-gke](https://gitlab.com/gitlab-da/use-cases/remote-development/agent-kubernetes-gke) プロジェクトに文書化されています。これには、エージェントが応答しなくなり workspace が作成されない場合のトラブルシューティングが含まれます。
+[remote-development サブグループ](https://gitlab.com/gitlab-da/use-cases/remote-development)には Kubernetes 用のエージェントがインストールされており、[agent-kubernetes-gke](https://gitlab.com/gitlab-da/use-cases/remote-development/agent-kubernetes-gke) プロジェクトに文書化されています。これには、エージェントが応答しなくなりワークスペースが作成されない場合のトラブルシューティングが含まれます。
 
 リソース:
 

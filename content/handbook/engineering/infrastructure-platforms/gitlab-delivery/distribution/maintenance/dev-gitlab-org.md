@@ -28,7 +28,7 @@ omnibus-gitlab コマンドを使用できます。
 
 1. デプロイ: 毎日 UTC 7:20 に、ナイトリー CE パッケージが
    dev.gitlab.org へ自動的にデプロイされます。インストールプロセス中のエラーは
-   [Sentry](https://new-sentry.gitlab.net/organizations/gitlab/discover/homepage/?environment=dev&field=title&field=event.type&field=project&field=user.display&field=timestamp&name=All+Events&query=&sort=-timestamp&statsPeriod=24h&yAxis=count%28%29) に記録されます。gitlabcom や gitaly のようなプロジェクトで dev environment フィルターを使用してください。
+   [Sentry](https://new-sentry.gitlab.net/organizations/gitlab/discover/homepage/?environment=dev&field=title&field=event.type&field=project&field=user.display&field=timestamp&name=All+Events&query=&sort=-timestamp&statsPeriod=24h&yAxis=count%28%29) に記録されます。gitlabcom や gitaly のようなプロジェクトで dev 環境フィルターを使用してください。
    Slack 通知は #dev-gitlab に表示されます。cron タスクは現在、
    [role ファイル](https://gitlab.com/gitlab-com/gl-infra/chef-repo/-/blob/master/roles/dev-gitlab-org.json#L304-319)で定義されています。
 

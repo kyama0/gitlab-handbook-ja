@@ -10,12 +10,12 @@ stale: false
 
 ## CFP リソース
 
-イベントの論文募集 (call for paper) の応募フォームはそれぞれ異なります。1000 文字のアブストラクトを要求するものもあれば、より短い経歴を好むもの、講演の学習目標の記入を求めるものもあります。デベロッパーアドボカシーチームは CFP のアブストラクトの管理に Google ドキュメントを使用しており、@dnsmichi は経歴と顔写真の URL の SSoT としてもドキュメントを使用しています。
+イベントの講演募集 (CFP) の応募フォームはそれぞれ異なります。1000 文字のアブストラクトを要求するものもあれば、より短い経歴を好むもの、講演の学習目標の記入を求めるものもあります。デベロッパーアドボカシーチームは CFP のアブストラクトの管理に Google ドキュメントを使用しており、@dnsmichi は経歴と顔写真の URL の SSoT としてもドキュメントを使用しています。
 
-- [CFP template Google doc](https://docs.google.com/document/d/1vF9i4ZaR1_u52r_vUcVls0uhQIi7gzG9WkQ6l369FU4/edit#).
-- [Biography template Google doc](https://docs.google.com/document/d/1e_Sk0OGpKjWbs8C3xrIk33cShvTgoqRO3r1aQApiB5M/edit)
+- [CFP テンプレートの Google ドキュメント](https://docs.google.com/document/d/1vF9i4ZaR1_u52r_vUcVls0uhQIi7gzG9WkQ6l369FU4/edit#)
+- [経歴テンプレートの Google ドキュメント](https://docs.google.com/document/d/1e_Sk0OGpKjWbs8C3xrIk33cShvTgoqRO3r1aQApiB5M/edit)
 
-## CFP (Call for Proposals) の管理方法
+## CFP (講演提案募集) の管理方法
 
 ### 私たちのイベント一覧
 
@@ -41,7 +41,7 @@ stale: false
 
 すべての応募、採択された講演、フィードバック、その他の結果の追跡は、CFP Issue で行われます。CFP ワークフローでは、[スコープ付きラベル](/handbook/marketing/developer-relations/developer-advocacy/workflow/#cfp-labels)を使用して、Issue をさまざまなステージに移行させます。[CFP ワークフローのハンドブック](/handbook/marketing/developer-relations/developer-advocacy/workflow/#cfp-workflow)に従って、必要なラベルを適切に適用してください。
 
-`CFP` ラベルが付いたすべての Issue は、専用の [CFP Issue ボード](https://gitlab.com/groups/gitlab-com/-/boards/9701731?label_name%5B%5D=developer-advocacy&label_name%5B%5D=CFP)に表示され、オープン、応募済み、採択済みの CFP の概要を提供します。
+`CFP` ラベルが付いたすべての Issue は、専用の [CFP Issue ボード](https://gitlab.com/groups/gitlab-com/-/boards/9701731?label_name%5B%5D=developer-advocacy&label_name%5B%5D=CFP)に表示され、オープン、応募済み、採択済みの CFP の概要を確認できます。
 
 ## CFP 応募のためのヒント
 
@@ -52,7 +52,7 @@ CFP を書く際に踏むべき手順をいくつか紹介します。
 1. **イベントを調査する**: イベントのウェブサイト、特に講演提案のページを詳しく読みます。読み進める中で、資料全体を通じて主要なトピックと繰り返し登場するテーマに注目してください。
 2. **提案されているトピックに慣れ親しむ**: イベントがテーマやトピックを提案している場合、講演提案をそれに合わせるのが最善策です。
 3. **カンファレンス委員会について知る**: オンラインの資料と同じくらい、人も重要です。委員会を調べ、彼ら自身が情熱を注いでいるトピックを見つけられるか確認してください。また、過去の講演者であったり、その他の形でカンファレンスに関わっている人々を調べ、彼らがどのようなトピックや講演者を本当に求めているのかを理解する助けにしましょう。
-4. **仮のタイトル、テーゼ、アウトラインを書き出す**: 仮のタイトルから始めると、白紙症候群を乗り越えるのに役立ちます。そこから、テーゼについてブレインストーミングします。あなたは何を教えようとしているのですか？ストーリーの SCQA (Situation, Complication, Question, Answer) を 1 行で説明するとしたら、それは何ですか。そして SCQA のアウトラインを埋めていきます。
+4. **仮のタイトル、テーゼ、アウトラインを書き出す**: 仮のタイトルから始めると、白紙症候群を乗り越えるのに役立ちます。そこから、テーゼについてブレインストーミングします。あなたは何を教えようとしているのですか？ストーリーの SCQA (状況、課題、問い、答え) を 1 行で説明するとしたら、それは何ですか。そして SCQA のアウトラインを埋めていきます。
 5. **助けを求める**: その題材に詳しい友人や同僚に提案をレビューしてもらいましょう。手直しし、繰り返し、応募しましょう！
 
 ### 役立つリンク

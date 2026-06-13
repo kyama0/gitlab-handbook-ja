@@ -56,9 +56,9 @@ lastmod: 2026-06-11T09:12:49-07:00
 
 リクエストの種類に基づき、以下の適切なワークフローを見つけてプライバシーリクエストを処理します。
 
-- [Deletion Requests](#deletion-requests)
-- [Data Access Requests](#data-access-requests)
-- [Data Portability Requests]*(coming soon)*
+- [削除リクエスト](#deletion-requests)
+- [データアクセスリクエスト](#data-access-requests)
+- [データポータビリティリクエスト]*(近日提供予定)*
 
 #### **削除リクエスト** {#deletion-requests}
 
@@ -110,15 +110,15 @@ Incoming Request ビューに移動し、コア識別子を使って検索する
 
 ###### **Step 2:** ブロックまたは禁止されたアカウント
 
-ユーザーアカウントが blocked または banned でない場合は、このセクションをスキップします。
+ユーザーアカウントがブロックまたは禁止されていない場合は、このセクションをスキップします。
 
-ユーザーが自身でアカウントを削除したことによって blocked になっている場合は、`Blocked Account Deletion Request` メッセージを送信し、`Support Engineer (GitLab Deletion)` タスクを Complete としてマークします。
+ユーザーが自身でアカウントを削除したことによってブロックされている場合は、`Blocked Account Deletion Request` メッセージを送信し、`Support Engineer (GitLab Deletion)` タスクを Complete としてマークします。
 
-アカウントが blocked または banned の場合は、Trust and Safety に [ブロックされたアカウントの復旧](/handbook/support/workflows/reinstating-blocked-accounts/#blocked-accounts) に関する Issue を開いて `Account Reinstatement` ワークフローを進めます。ただし、中国における無料ユーザーのブロックなど、規制上の理由による block または banned 状態の場合は、サポートエンジニアは #help-transcend で Privacy チームにレビューを依頼する必要もあります。判断が下されるまで `Support Engineer (GitLab Deletion)` タスクは開いたままにしておく必要があります。セキュリティレビューを依頼した旨を示すメモをタスクに追加してください。`Security Review Requested` メッセージをデータ主体に送信します。
+アカウントがブロックまたは禁止されている場合は、Trust and Safety に [ブロックされたアカウントの復旧](/handbook/support/workflows/reinstating-blocked-accounts/#blocked-accounts) に関する Issue を開いて `Account Reinstatement` ワークフローを進めます。ただし、中国における無料ユーザーのブロックなど、規制上の理由によるブロックまたは禁止状態の場合は、サポートエンジニアは #help-transcend で Privacy チームにレビューを依頼する必要もあります。判断が下されるまで `Support Engineer (GitLab Deletion)` タスクは開いたままにしておく必要があります。セキュリティレビューを依頼した旨を示すメモをタスクに追加してください。`Security Review Requested` メッセージをデータ主体に送信します。
 
-アカウントの block または ban が解除された場合は、`Security Review Complete` メッセージをデータ主体に送信し、残りのプロセスを通常どおり進めます。
+アカウントのブロックまたは禁止が解除された場合は、`Security Review Complete` メッセージをデータ主体に送信し、残りのプロセスを通常どおり進めます。
 
-アカウントが blocked または banned のままの場合は、`Security Review Denied` メッセージをデータ主体に送信し、`Support Engineer (GitLab Deletion)` タスクを Step 3 の下で Exception としてマークします。
+アカウントがブロックまたは禁止のままの場合は、`Security Review Denied` メッセージをデータ主体に送信し、`Support Engineer (GitLab Deletion)` タスクを Step 3 の下で Exception としてマークします。
 
 ###### **Step 3:** 非 Enterprise ユーザーの有償サブスクリプションステータスの確認
 
@@ -160,7 +160,7 @@ Step 4.1 の条件に該当しない限り、4.2 のステップを実行して 
 4.3 - `Support Engineer (GitLab Deletion)` タスクでの対応:
 
 - ユーザーアカウント削除のすべてのステップが完了したら `Complete` としてマークします。
-- ユーザーが追加の検証質問に失敗した場合、または削除のためにアカウントの block や ban を解除できない場合は `Exception` としてマークします。Exception としてマークした理由を示すメモをタスクに追加します。
+- ユーザーが追加の検証質問に失敗した場合、または削除のためにアカウントのブロックや禁止を解除できない場合は `Exception` としてマークします。Exception としてマークした理由を示すメモをタスクに追加します。
 
 ###### **Step 5:** Zendesk と Customers Portal でアカウントを確認する
 

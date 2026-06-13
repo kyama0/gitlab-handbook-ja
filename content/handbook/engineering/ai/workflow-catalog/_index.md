@@ -36,11 +36,11 @@ Workflow Catalog Group は、組織、グループ、プロジェクトをまた
 私たちはまだ始まったばかりで、新しいチームに馴染んでいきながら働き方を定義していきます。
 始めるためのいくつかのリンクを以下に示します。
 
-* [Root Epic](https://gitlab.com/groups/gitlab-org/-/epics/11111): すべての作業をグループ化し、ロードマップを設定するため
-* [Issue board](https://gitlab.com/groups/gitlab-org/-/boards/3871464): 進行中のすべての Issue 用
-* [Team tasks](https://gitlab.com/gitlab-org/ai-powered/workflow-catalog/team-tasks/-/issues): プロダクトに関連しないすべてのチーム Issue 用
-* [Async updates](https://gitlab.com/gitlab-org/ai-powered/workflow-catalog/team-tasks/-/issues/?label_name%5B%5D=async%20update)
-* [Team Wiki](https://gitlab.com/gitlab-org/ai-powered/workflow-catalog/team-tasks/-/wikis/home): プロダクトの意思決定と有用な情報のため
+* [ルートエピック](https://gitlab.com/groups/gitlab-org/-/epics/11111): すべての作業をグループ化し、ロードマップを設定するため
+* [Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/3871464): 進行中のすべての Issue 用
+* [チームタスク](https://gitlab.com/gitlab-org/ai-powered/workflow-catalog/team-tasks/-/issues): プロダクトに関連しないすべてのチーム Issue 用
+* [非同期アップデート](https://gitlab.com/gitlab-org/ai-powered/workflow-catalog/team-tasks/-/issues/?label_name%5B%5D=async%20update)
+* [チーム Wiki](https://gitlab.com/gitlab-org/ai-powered/workflow-catalog/team-tasks/-/wikis/home): プロダクトの意思決定と有用な情報のため
 
 ### DRI {#dris}
 

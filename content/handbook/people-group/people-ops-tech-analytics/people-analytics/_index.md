@@ -15,7 +15,7 @@ People Analytics は、データに基づくインサイトを活用して、Git
 
 ## People Analytics チームメンバー
 
-- [Shane McCormack](https://gitlab.com/mccormack514): [Manager, People Analytics](/job-description-library/people-group/people-systems-and-analytics/#manager-people-analytics)
+- [Shane McCormack](https://gitlab.com/mccormack514): [マネージャー, People Analytics](/job-description-library/people-group/people-systems-and-analytics/#manager-people-analytics)
 
 ## 私たちの活動
 
@@ -23,8 +23,8 @@ People Analytics は、データに基づくインサイトを活用して、Git
 
 **主要な目標:**
 
-- **レポーティングソリューション** - ステークホルダーと協力して、関連する People メトリクスを効率的かつ正確に提供する自動化されたレポーティングソリューションを開発します
-- **データソリューション** - [Data Team](/handbook/enterprise-data/) と協力して、レポーティングと分析を支えるスケーラブルなデータモデルを構築します
+- **レポーティングソリューション** - ステークホルダーと協力して、関連する People の指標を効率的かつ正確に提供する自動化されたレポーティングソリューションを開発します
+- **データソリューション** - [データチーム](/handbook/enterprise-data/)と協力して、レポーティングと分析を支えるスケーラブルなデータモデルを構築します
 - **分析ソリューション** - 高度な統計手法（クラスタリング、回帰、生存時間分析）を適用して、GitLab 全体の People Group とリーダーシップ向けに、実行可能なインサイトとデータに基づく意思決定を生み出します
 
 ## ツールとリソース
@@ -39,11 +39,11 @@ People Analytics は、データに基づくインサイトを活用して、Git
 
 ### People Analytics ハンドブックの内容
 
-- [People Analytics Data Guide](data-guide.md) - データモデルとメトリクスの定義
-- [People Data Governance](/handbook/people-group/people-ops-tech-analytics/people-analytics/data-governance/) - データ品質とコンプライアンス
-- [People Analytics Tableau Dashboard Overview](/handbook/people-group/people-ops-tech-analytics/people-analytics/people-tableau/) - 一般的なダッシュボードと使い方
-- [People Analytics Survey Support](/handbook/people-group/people-ops-tech-analytics/people-analytics/survey-support/) - Culture Amp サーベイの運用
-- [People Analytics Office Hours](/handbook/people-group/people-ops-tech-analytics/people-analytics/office-hours/) - 協力し、質問する方法
+- [People Analytics データガイド](data-guide.md) - データモデルと指標の定義
+- [People データガバナンス](/handbook/people-group/people-ops-tech-analytics/people-analytics/data-governance/) - データ品質とコンプライアンス
+- [People Analytics Tableau ダッシュボード概要](/handbook/people-group/people-ops-tech-analytics/people-analytics/people-tableau/) - 一般的なダッシュボードと使い方
+- [People Analytics サーベイサポート](/handbook/people-group/people-ops-tech-analytics/people-analytics/survey-support/) - Culture Amp サーベイの運用
+- [People Analytics オフィスアワー](/handbook/people-group/people-ops-tech-analytics/people-analytics/office-hours/) - 協力し、質問する方法
 
 ### 外部リソース
 
@@ -52,7 +52,7 @@ People Analytics は、データに基づくインサイトを活用して、Git
 - [HR Predictive Analytics](https://www.koganpage.com/hr-learning-development/predictive-hr-analytics-9781398615656) - 実践的な例を含む教科書
 - [Google re:Work](https://rework.withgoogle.com/en/subjects/people-analytics) - 入門リソース
 - [Handbook of Regression Modeling in People Analytics](https://peopleanalytics-regression-book.org/index.html) - Keith McNulty によるオープンソースの回帰モデリングの書籍。R と Python の例を掲載
-- [Handbook of Graphs and Networks in People Analytics](https://ona-book.org/index.html) - Keith McNulty による Organizational Network Analysis のためのオープンソース書籍
+- [Handbook of Graphs and Networks in People Analytics](https://ona-book.org/index.html) - Keith McNulty による組織ネットワーク分析（Organizational Network Analysis）のためのオープンソース書籍
 - [The Fundamentals of People Analytics](https://link.springer.com/content/pdf/10.1007/978-3-031-28674-2.pdf?pdf=button) - Craig Starbuck によるオープンソース書籍。People Analytics チームが一般的に用いる統計分析の例を R で掲載
 
 ## データガバナンスとセキュリティ
@@ -62,11 +62,11 @@ People Analytics は、データに基づくインサイトを活用して、Git
 **コアとなるガバナンス原則:**
 
 - **ソースシステム優先** - People Group の日々の業務は、データの整合性とワークフローの効率を保つため、引き続きソースシステム上で行います
-- **戦略的なデータウェアハウジング** - [dbt](/handbook/enterprise-data/platform/dbt-guide/) や [Snowflake](/handbook/enterprise-data/platform/snowflake/) などの技術上に構築された私たちのデータウェアハウスは、「up and out」の組織レポーティングと分析のために確保されています
+- **戦略的なデータウェアハウジング** - [dbt](/handbook/enterprise-data/platform/dbt-guide/) や [Snowflake](/handbook/enterprise-data/platform/snowflake/) などの技術上に構築された私たちのデータウェアハウスは、上位・対外向け（up and out）の組織レポーティングと分析のために確保されています
 - **データの最小化** - 私たちはレポーティングに必要なデータのみを取り込み、個人のプライバシーを保護するために可能な限り情報を匿名化します
 - **包括的なトラッキング** - 私たちはソースシステムから下流のすべてのシステムに至るまでデータを追跡し、データライフサイクル全体を通じてリスクを理解し、軽減します
 
-このガバナンスのフレームワークにより、機微な情報を保護しながら、データの一貫性と信頼性を保ち、扱いやすい状態に保ちます。データガバナンスのプロセスに関する詳細は、[Data Governance ハンドブックページ](data-governance.md) を参照してください。
+このガバナンスのフレームワークにより、機微な情報を保護しながら、データの一貫性と信頼性を保ち、扱いやすい状態に保ちます。データガバナンスのプロセスに関する詳細は、[データガバナンスのハンドブックページ](data-governance.md) を参照してください。
 
 ## 私たちと一緒に働く
 

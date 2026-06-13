@@ -25,13 +25,13 @@ stale: false
 
 * AI Framework チームは、AI 搭載機能の開発、テスト、評価のための[ガイダンス](https://docs.gitlab.com/development/ai_features/ai_feature_development_playbook/)を提供しています。
 * UX Research チームは、使いやすさを確保するための[ユーザビリティ評価とスコアリングのプロセス](/handbook/product/ux/experience-research/research-in-the-ai-space/#ai-user-experience-survey-pilot)を維持しています。
-* AI レスポンスの品質に関する迅速で定性的なフィードバックを得るとともに、ユーザーがどのようなプロンプトを書くかを把握するために、[UX Chat Bash](/handbook/product/ux/experience-research/ux-bash/) を実施できます。
+* AI の応答品質に関する迅速で定性的なフィードバックを得るとともに、ユーザーがどのようなプロンプトを書くかを把握するために、[UX Chat Bash](/handbook/product/ux/experience-research/ux-bash/) を実施できます。
 
 ## AI 機能に関する特別な考慮事項
 
 * [AI 倫理原則](/handbook/legal/ethics-compliance-program/ai-ethics-principles/#1-avoid-unfair-bias): GitLab に AI 機能を組み込み続けるなかで意思決定を導き、これらの機能が私たちのバリューを適切に体現していることを確かめるための原則。
 * [AI のデータ利用とプライバシー](https://docs.gitlab.com/user/gitlab_duo/data_usage/): データの利用方法と保護方法に関する公開ドキュメント。
-* [Model Vendor Selection Guidelines](/handbook/product/ai/model-vendor-selection-guidelines/): GitLab Duo を支えるモデルを開発・ホストするベンダーを評価・選定するために私たちが使用するフレームワーク。
+* [モデルベンダー選定ガイドライン](/handbook/product/ai/model-vendor-selection-guidelines/): GitLab Duo を支えるモデルを開発・ホストするベンダーを評価・選定するために私たちが使用するフレームワーク。
 
 ## AI 機能のエンジニアリング
 
@@ -41,7 +41,7 @@ stale: false
 
 ## AI 機能のサポートエンジニアリング
 
-* [Support AI workflow](/handbook/support/workflows/ai_features/): このページには AI 機能に関連するチケットを処理するための情報が掲載されています。
+* [サポートの AI ワークフロー](/handbook/support/workflows/ai_features/): このページには AI 機能に関連するチケットを処理するための情報が掲載されています。
 
 ## 現在の AI 機能とチーム
 

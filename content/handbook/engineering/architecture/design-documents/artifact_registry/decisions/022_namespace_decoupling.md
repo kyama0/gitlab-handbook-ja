@@ -16,7 +16,7 @@ stale: false
 
 ## ステータス
 
-**Proposed.**
+**提案中。**
 
 ## コンテキスト
 
@@ -293,22 +293,22 @@ Artifact Registry は、指定された Organization のスラッグのリスト
 
 承認された場合、この提案は現在レビューのために公開されている以下の ADR への変更を必要とします。
 
-- **[ADR-007: Database Schema](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18456)**: すべての
+- **[ADR-007: データベーススキーマ](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18456)**: すべての
   パーティション分割されたテーブルの `organization_id` 列が `namespace_id` にリネームされ、Rails の組織 ID の代わりに内部の
   ネームスペース ID を参照する。新しいパーティション分割されていない `namespaces` テーブルがスキーマに追加される。
   パーティショニング戦略、複合主キー、外部キーのパターンは変わらない。
-- **[ADR-009: API Design](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18458)**: URL の
+- **[ADR-009: API 設計](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18458)**: URL の
   `/o/<org_id>/` プレフィックスが `/<slug>/` に置き換えられる。スラッグは、すべてのプロトコル（management、Maven、npm、OCI）で API プレフィックスの後の最初のパスセグメント
   である。どの URL にも数値 ID は現れない。また、組織 ID に対するネームスペースを取得する新しい CRUD API も必要になる。
-- **[ADR-020: Authentication Flow](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18462)**: すべての
+- **[ADR-020: 認証フロー](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18462)**: すべての
   クライアントが Artifact Registry を通じて認証し、Artifact Registry がスラッグを組織 ID に解決してから
   Rails と交換する。JWT 内の `organization_id` クレームはもはや不要になる。
-- **[ADR-021: Authorization](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18717)**: スコープ
+- **[ADR-021: 認可](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18717)**: スコープ
   フォーマットが `o/<org_id>/repositories/<format>/<type>/<repo_id>` から
   `<slug>/repositories/<format>/<type>/<repo_name>` に変わる。認可モデル（専用グループ/プロジェクト、アクセスレベル、
   可視性の同期）は、それ以外は影響を受けない。
 
-- **[ADR-008: Content-Addressable Storage](008_content_addressable_storage.md)**:
+- **[ADR-008: コンテンツアドレッサブルストレージ](008_content_addressable_storage.md)**:
   オブジェクトストレージのキー階層は、トップレベルの分離のためにネームスペースの内部 UUIDv7 ID の SHA256 ハッシュを使用する。
   ハッシュ化されたパスは構造上不変である（変更する人間が読める値がない）。これは
   [GitLab のハッシュ化ストレージ標準](https://gitlab.com/groups/gitlab-org/-/work_items/2320) に整合する。ネームスペースのすべてのアーティファクトは
@@ -329,14 +329,14 @@ Artifact Registry は、指定された Organization のスラッグのリスト
 
 ## 参考資料
 
-- [ADR-001: Organizations as Anchor Point](001_organizations_as_anchor_point.md)
-- [ADR-002: Storage Deduplication Scope](002_storage_deduplication_scope.md)
-- [ADR-007: Database Schema](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18456)
-- [ADR-008: Content-Addressable Storage](008_content_addressable_storage.md)
-- [ADR-009: API Design](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18458)
-- [ADR-020: Authentication Flow](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18462)
-- [ADR-021: Authorization](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18717)
-- [Repository name immutability](https://gitlab.com/gitlab-org/gitlab/-/work_items/592582)
-- [CTO review: virtual anchor point](https://docs.google.com/document/d/1qkcOZYSHM_h9k9pYjHze2KHG5qZYMDeZ1UE4GZgD1jw/edit?tab=t.1dg0o6ns9uiw#bookmark=id.t5ky1ssp818r)
-- [Cross-team meeting: immutable slug idea](https://docs.google.com/document/d/1n81b4NNtwddtS419TA8Of-Yoymj2MNNM89FRBo43e8E/edit?tab=t.0#bookmark=id.ps8037nih9pa)
+- [ADR-001: アンカーポイントとしての Organization](001_organizations_as_anchor_point.md)
+- [ADR-002: ストレージ重複排除のスコープ](002_storage_deduplication_scope.md)
+- [ADR-007: データベーススキーマ](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18456)
+- [ADR-008: コンテンツアドレッサブルストレージ](008_content_addressable_storage.md)
+- [ADR-009: API 設計](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18458)
+- [ADR-020: 認証フロー](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18462)
+- [ADR-021: 認可](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18717)
+- [リポジトリ名の不変性](https://gitlab.com/gitlab-org/gitlab/-/work_items/592582)
+- [CTO レビュー: 仮想アンカーポイント](https://docs.google.com/document/d/1qkcOZYSHM_h9k9pYjHze2KHG5qZYMDeZ1UE4GZgD1jw/edit?tab=t.1dg0o6ns9uiw#bookmark=id.t5ky1ssp818r)
+- [部門横断ミーティング: 不変なスラッグのアイデア](https://docs.google.com/document/d/1n81b4NNtwddtS419TA8Of-Yoymj2MNNM89FRBo43e8E/edit?tab=t.0#bookmark=id.ps8037nih9pa)
 </content>

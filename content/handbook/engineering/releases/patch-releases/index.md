@@ -1,5 +1,5 @@
 ---
-title: "Patch Releases"
+title: "パッチリリース"
 upstream_path: /handbook/engineering/releases/patch-releases/
 upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
 lastmod: 2026-06-09T09:11:01-06:00
@@ -85,12 +85,12 @@ GitLab エンジニアで以下を行いたい場合:
 
 GitLab には、2 種類のパッチリリースプロセスがあります:
 
-1. **Scheduled（デフォルト）**: [GitLab メンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)に従って、利用可能なすべてのバグおよび脆弱性修正を公開する SLO 駆動のパッチ。
+1. **定期スケジュール（デフォルト）**: [GitLab メンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)に従って、利用可能なすべてのバグおよび脆弱性修正を公開する SLO 駆動のパッチ。
    [マンスリーリリース週](/handbook/engineering/releases/monthly-releases/#monthly-release-schedule)の前後の水曜日に月に 2 回スケジュールされ、計画されたパッチは
    [バグ SLO](/handbook/product-development/how-we-work/issue-triage/#severity-slos)と
    [セキュリティ是正 SLA](/handbook/security/product-security/vulnerability-management/sla/)に準拠します。
    [`critical` 脆弱性](/handbook/security/product-security/vulnerability-management/sla/)を含むパッチは、critical パッチとみなされます。
-2. **Out-of-band**: 通常の[パッチリリースのケイデンス](#patch-release-cadence)外のパッチで、
+2. **アウトオブバンド**: 通常の[パッチリリースのケイデンス](#patch-release-cadence)外のパッチで、
 高重大度のバグまたは critical 脆弱性の緩和に厳密に限定して予約されます。これらのアドホックなパッチは、
 宣言された[インシデント](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)からのみ発生し、
 逃した期限への対応や標準のリリースポリシーの回避に決して使用してはなりません。
@@ -119,9 +119,9 @@ GitLab には、2 種類のパッチリリースプロセスがあります:
 
 エンドツーエンドのパッチリリースプロセスは、以下のステージで構成されます:
 
-![patch release overview](/images/engineering/releases/patch-releases/patch-release-overview.jpg)
+![パッチリリースの概要](/images/engineering/releases/patch-releases/patch-release-overview.jpg)
 
-- [Diagram source - internal](https://docs.google.com/presentation/d/12JXlLnZ8lQp7ATdaSoL4x_oCUv04rmqzYp6dQb8AXHE/edit#slide=id.g2d0bc50ab08_0_5)
+- [図のソース - 内部](https://docs.google.com/presentation/d/12JXlLnZ8lQp7ATdaSoL4x_oCUv04rmqzYp6dQb8AXHE/edit#slide=id.g2d0bc50ab08_0_5)
 
 任意の時点で、GitLab エンジニアはそれぞれの[メンテナンス対象バージョン](https://docs.gitlab.com/policy/maintenance/#maintained-versions)に対して
 バグ修正と脆弱性修正を準備します:
