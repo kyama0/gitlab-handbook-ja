@@ -1,5 +1,5 @@
 ---
-title: Product Principles
+title: プロダクト原則
 description: "これらは、世界クラスのプロダクト組織が示すと私たちが信じる中核的な原則です。目標は、GitLab に合った方法でこれらの原則を育み、尊重する PM システムを構築することです。"
 upstream_path: /handbook/product/product-principles/
 upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe

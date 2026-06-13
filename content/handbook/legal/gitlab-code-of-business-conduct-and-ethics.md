@@ -1,5 +1,5 @@
 ---
-title: "Code of Business Conduct & Ethics"
+title: 行動規範・倫理規範
 description: "GitLab における行動規範および倫理規定の概要。"
 controlled_document: true
 upstream_path: /handbook/legal/gitlab-code-of-business-conduct-and-ethics/

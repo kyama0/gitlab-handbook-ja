@@ -1,5 +1,5 @@
 ---
-title: "GitLab Releases"
+title: GitLab リリース
 upstream_path: /handbook/engineering/releases/
 upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
 lastmod: 2026-06-09T09:11:01-06:00

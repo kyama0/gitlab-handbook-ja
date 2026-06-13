@@ -1,5 +1,5 @@
 ---
-title: "Artifact Registry ADR 005: Artifact Delivery Mode"
+title: "Artifact Registry ADR 005: アーティファクト配信モード"
 owning-stage: "~devops::package"
 description: "リダイレクトとプロキシによるアーティファクト配信を二軸モデルとしてサポートする決定。インスタンスレベルのデフォルトと、常に利用可能な namespace ごとのオーバーライド"
 toc_hide: true

@@ -1,5 +1,5 @@
 ---
-title: "UX Resources"
+title: UX リソース
 description: "Upstream Studios の一部である Product Design、UX Research、Technical Writing、Design System の各 UX チームメンバー向けのリソースとツール。"
 upstream_path: /handbook/product/ux/ux-resources/
 upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe

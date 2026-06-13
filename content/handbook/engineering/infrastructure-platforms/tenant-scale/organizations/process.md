@@ -1,5 +1,5 @@
 ---
-title: "Team processes"
+title: チームプロセス
 description: "Organizations チームの運営方法"
 upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/organizations/process/
 upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe

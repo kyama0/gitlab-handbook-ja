@@ -1,5 +1,5 @@
 ---
-title: AI-assisted features
+title: AI 支援機能
 description: "このページには GitLab における AI に関する情報が掲載されています。"
 upstream_path: /handbook/product/ai/
 upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe

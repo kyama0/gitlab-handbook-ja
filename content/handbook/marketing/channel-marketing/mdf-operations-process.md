@@ -1,5 +1,5 @@
 ---
-title: "Global Channel Marketing - MDF Operations Process"
+title: Global Channel Marketing - MDF オペレーションプロセス
 description: "このページでは、MDF プログラムの運用プロセスについて詳しく説明します。"
 upstream_path: /handbook/marketing/channel-marketing/mdf-operations-process/
 upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe

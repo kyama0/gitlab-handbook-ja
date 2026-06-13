@@ -1,5 +1,5 @@
 ---
-title: "Configurable Work Item Types"
+title: 設定可能なワークアイテムタイプ
 status: ongoing
 creation-date: "2025-10-28"
 authors: ["@engwan", "@msaleiko"]

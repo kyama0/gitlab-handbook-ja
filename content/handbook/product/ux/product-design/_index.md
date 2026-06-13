@@ -1,5 +1,5 @@
 ---
-title: "Product Design"
+title: プロダクトデザイン
 description: "Product Designer は、GitLab でコンセプトからデリバリーまでユーザーエクスペリエンスを形作る戦略的パートナーです。"
 upstream_path: /handbook/product/ux/product-design/
 upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe

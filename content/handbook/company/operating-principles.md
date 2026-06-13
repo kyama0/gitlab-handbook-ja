@@ -1,5 +1,5 @@
 ---
-title: "Operating Principles"
+title: 運営原則
 description: "GitLab の 3 つのオペレーティング原則 — Speed with Quality、Ownership Mindset、Customer Outcomes — は、AI 時代における私たちの働き方を定義します。"
 status: active
 canonical_path: "/handbook/company/operating-principles/"
@@ -80,7 +80,7 @@ _顧客が勝つとき、私たちが勝つ。_
 
 ## Acknowledging CREDIT
 
-CREDIT — Collaboration、Results、Efficiency、Diversity & Inclusion、Iteration、Transparency — は、GitLab をこの地図に載せた時代にふさわしいフレームワークでした。これらのバリューは、最初の 10 年間を通じて繁栄する会社を形作り、DevSecOps において最も認知される名前の 1 つへと押し上げました。
+CREDIT — Collaboration、Results、Efficiency、Diversity & Inclusion、Iteration、Transparency — は、GitLab を広く知られる存在にした時代にふさわしいフレームワークでした。これらのバリューは、最初の 10 年間を通じて繁栄する会社を形作り、DevSecOps において最も認知される名前の 1 つへと押し上げました。
 
 私たちが CREDIT を引退させるのは、これらのバリューが間違っていたからではありません。異なるオペレーティングの姿勢を求める時代のために、別のものに焦点を当てることを選んだからです。CREDIT が表していたバリューは、今も私たちの一部です。それらは上記の原則の中に生き続け、GitLab のさまざまな場面で今も現れています。
 

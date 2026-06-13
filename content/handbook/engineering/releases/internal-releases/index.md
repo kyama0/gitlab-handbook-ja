@@ -1,5 +1,5 @@
 ---
-title: "Internal Releases"
+title: 内部リリース
 upstream_path: /handbook/engineering/releases/internal-releases/
 upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
 lastmod: 2026-06-10T12:44:21-06:00

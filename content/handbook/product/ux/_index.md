@@ -1,5 +1,5 @@
 ---
-title: UX at GitLab
+title: GitLab の UX
 description: このページは Upstream Studios ハンドブックに移動しました。
 redirect_to: /handbook/upstream-studios/
 upstream_path: /handbook/product/ux/

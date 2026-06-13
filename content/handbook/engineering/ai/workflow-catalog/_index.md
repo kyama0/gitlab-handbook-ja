@@ -1,5 +1,5 @@
 ---
-title: Workflow Catalog Group
+title: Workflow Catalog グループ
 description: "Workflow Catalog Group は、組織、グループ、プロジェクトをまたいで作成、キュレーション、共有できるエージェント、ツール、フローのカタログである Workflow Catalog の開発に注力しています。"
 upstream_path: /handbook/engineering/ai/workflow-catalog/
 upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe

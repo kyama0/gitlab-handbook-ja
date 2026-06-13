@@ -1,5 +1,5 @@
 ---
-title: "Artifact Registry ADR 008: Content-Addressable Storage"
+title: "Artifact Registry ADR 008: コンテンツアドレッサブルストレージ"
 owning-stage: "~devops::package"
 description: "コンテンツアドレス指定ストレージを使用する決定"
 toc_hide: true

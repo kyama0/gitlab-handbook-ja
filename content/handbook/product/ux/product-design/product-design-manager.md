@@ -1,5 +1,5 @@
 ---
-title: "Product Design Manager Workflows"
+title: プロダクトデザインマネージャーのワークフロー
 description: "プロダクト開発プロセスの上流に位置する戦略的パートナーとしてデザイナーを率いる Product Design Manager のための戦略的ワークフロー。"
 upstream_path: /handbook/product/ux/product-design/product-design-manager/
 upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe

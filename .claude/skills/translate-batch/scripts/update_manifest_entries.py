@@ -76,8 +76,12 @@ def input_hash_at_sha(sha, up_rel):
     )
     if r.returncode == 0:
         return hashlib.sha256(r.stdout).hexdigest()
-    # フォールバック: 作業ツリー
-    return sha256_file(ROOT / "upstream" / up_rel)
+    # 記録された sha のオブジェクトが取得できない場合（shallow clone 等）は、
+    # 作業ツリーをハッシュすると古い翻訳に最新原文の input_hash を記録してしまい
+    # check-staleness が誤判定する。フォールバックせずエラーにして manifest を更新しない。
+    raise RuntimeError(
+        f"cannot read {up_rel} at {sha} (object missing; unshallow upstream で履歴取得が必要)"
+    )
 
 
 def upstream_committed_at(sha, rel):
@@ -121,7 +125,11 @@ def main():
         committed = upstream_committed_at(sha, up_rel)
         # input_hash は記録された upstream_sha 時点のファイル内容から計算する。
         # （作業ツリーが sha より進んでいても staleness 判定が壊れないように）
-        ih = input_hash_at_sha(sha, up_rel)
+        try:
+            ih = input_hash_at_sha(sha, up_rel)
+        except RuntimeError as exc:
+            errors.append(str(exc))
+            continue
         entry = {
             "path": rel,
             "upstream_sha": sha,
