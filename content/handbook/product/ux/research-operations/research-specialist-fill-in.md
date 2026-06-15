@@ -1,111 +1,111 @@
 ---
-title: "UX Research Operations Coordinator を代理で務める方法"
+title: "How to fill in for a UX Research Operations Coordinator"
 description: "リクルートを最初から最後まで成功させるために必要な手順を詳述します"
 upstream_path: /handbook/product/ux/research-operations/research-specialist-fill-in/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: d5d611a2a400e4ac2527f89559e7ae9a013a9b21
+lastmod: "2026-06-15T07:58:19-05:00"
+translated_at: "2026-06-15T14:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T13:14:13+00:00"
 ---
 
-UX Research Operations Coordinator の役割を担う場面があります。このページでは、リクルートを最初から最後まで成功させるために必要な「舞台裏」のすべての手順を詳述します。UX Research Operations Coordinator とどう連携するかに興味がありますか？ その情報は[こちら](/handbook/product/ux/experience-research/recruiting-participants/) で見つけられます。
+UX Research Operations Coordinator の役割を担う場面があります。このページでは、リクルートを最初から最後まで成功させるために必要な「舞台裏」のすべての手順を詳述します。UX Research Operations Coordinator とどう連携するかに興味がありますか？ その情報は[こちら](/handbook/product/ux/experience-research/recruiting-participants/)で見つけられます。
 
 ## プロセス
 
-### ステップ 1 - 自身が把握し、他者にも伝える
+### ステップ 1 - 自分が慣れて、他の人に伝える
 
-- UX Research Operations Coordinator は、プロジェクトの優先度、完了すべき作業、対応中に役立つリソースへのリンクを記載したカバレッジ Issue を UX Research プロジェクトに作成します。
-- UX Research Operations Coordinator は、引き継ぐ必要のある進行中のリクルート Issue であなたを @ メンションします。Issue の状況と完了すべき作業を明確に説明します。
-- UX Research Operations Coordinator は、これらの進行中の Issue にあなたをアサインするので、簡単に追跡できます。
-- UX Research Operations Coordinator は、Open Recruitment Projects シートも共有し、サポートが必要なプロジェクトであなたをタグ付けします。
-- 今後 X 日間および／または週間のリクルート問い合わせ先として、`#product` と `#ux` Slack チャネルで自己紹介します。
-  - Slack でリクルートリクエストを上げようとする人がいたら、[リクルートリクエスト Issue を作成](/handbook/product/ux/experience-research/recruiting-participants/#opening-a-recruitment-request) し、追跡と可視性のためにあなたにアサインするよう促します。
-  - コメントで引き継ぎを確認したら、Issue があなたに引き継がれたことを依頼者に伝えます。
-- UX Research Operations Coordinator の代理が複数人いる場合は、調整を容易にするため `#uxr_reops` Slack チャネルに必ず参加してください。
-- UX Research Operations Coordinator が連続 7 営業日以上不在になる場合、UX Research Operations Coordinator は Research Recruiting & Incentive Request Issue Template に対する MR を開き、代理を務める人物が新規 Issue に自動アサインされるようにします。
+- UX Research Operations Coordinator は、UX Research プロジェクトでカバレッジ Issue を作成し、プロジェクトの優先度、必要な作業、不在中に役立つリソースへのリンクをリストアップします。
+- UX Research Operations Coordinator は、あなたが引き継ぐ必要のある進行中のリクルート Issue であなたを @ メンションします。Issue の状況と完了させる必要があることを明確に説明してくれます。
+- UX Research Operations Coordinator は、これらの進行中の Issue にあなたを割り当てるので、簡単に追跡できます。
+- UX Research Operations Coordinator は、Open Recruitment Projects シートをあなたと共有し、支援が必要なプロジェクトであなたをタグ付けします。
+- 今後 X 日間および/または X 週間のリクルートの窓口として、`#product` と `#upstream-studios` の Slack チャネルで自己紹介してください。
+  - Slack でリクルートのリクエストを持ち込もうとする人がいたら、[リクルートリクエスト Issue を作成](/handbook/product/ux/experience-research/recruiting-participants/#opening-a-recruitment-request)し、追跡と可視性のためにあなたに割り当てるようリマインドしてください。
+  - コメントで引き継ぎを確認したら、Issue があなたに引き継がれたことを彼らにリマインドしてください。
+- UX Research Operations Coordinator の代理が複数いる場合は、調整しやすくするために必ず `#research_operations` Slack チャネルに参加してください。
+- UX Research Operations Coordinator が連続 7 営業日を超えて不在になる場合、代理を務める人が新しく作成された Issue に自動的に割り当てられるよう、Research Recruiting & Incentive Request Issue Template に MR を作成します。
 
-### ステップ 2 - 新規リクルートリクエストへの対応
+### ステップ 2 - 新しいリクルートリクエストへの対応
 
-***注: 行ったアクションとその結果を Issue で常に更新することを忘れないでください。***
+***注: 取ったすべてのアクションとその結果で Issue を更新することを忘れないでください。***
 
-- 希望のタイムラインを評価します。リクルートの SLA は条件によって最低 2 週間ですが、リクエストによってはもっと早く対応できる場合もあります。
-  - 留意事項:
-    - 「次の数日中にユーザーと話したい」と言われた場合、リクルートには最大 2 週間かかる可能性があることを伝えます。
-    - リクルート条件が具体的であるほど（資格要件が多い、または必要な応募者数が多いほど）リクルートは難しくなり、時間がかかります。
-      - 例: グローバル検索機能を使ったことのある 5 人のソフトウェア開発者を求めるリクエストは非常にシンプルで、素早くリクルートできるでしょう。最近 Ultimate にアップグレードした 100 人の Self-Managed 管理者を求めるリクエストは、より困難で時間がかかるでしょう。
-- リクルート条件を評価し、誰を対象にリサーチしたいかを完全に理解できているかを確認します。条件にあいまいな点はありませんか？
-  - 条件を以下のような数項目に絞り込めるまで質問します。例:
+- 希望するタイムラインを評価します。私たちのリクルートの SLA は基準次第で最低 2 週間ですが、リクエストによってはもっと早く満たされるものもあります。
+  - 留意点:
+    - 「次の数日以内に」ユーザーと話したいと言われた場合は、リクルートに最大 2 週間かかる可能性があることを伝えてください。
+    - リクルート基準が具体的であればあるほど（必要な資格が多い、または必要な回答者数が多いほど）、リクルートは難しくなり、時間がかかります。
+      - 例: グローバル検索機能を使ったことのあるソフトウェア開発者 5 名を求めるリクエストは、非常に単純で素早くリクルートできます。最近 Ultimate にアップグレードした self-managed の管理者 100 名を求めるリクエストは、より難しく時間がかかります。
+- リクルート基準を評価し、彼らが誰をリサーチしようとしているかを完全に理解していることを確認します。あなたにとって曖昧な基準はありますか？
+  - たとえば次のように、基準をいくつかの箇条書きに絞り込めるまで質問してください。
     - DevOps エンジニア
-    - チームの環境構成を担当
-    - 大企業（500 人以上）
-    - GitLab または非 GitLab ユーザー
-- Qualtrics スクリーナーをレビューします
-  - 現在の質問が必要なスクリーニング条件を提供するかを判断します。そうでない場合は、リクルート Issue でフィードバックを提供し、スクリーナーが依頼者の述べた条件に直接マッピングされるよう編集を提案します。
-  - UX リサーチャーに支援を求めることも忘れないでください。UX リサーチャーは PM および／またはプロダクトデザイナーが Qualtrics でスクリーナーをまとめるのを手伝います。
-  - リサーチを依頼する人物が Qualtrics でスクリーナーを作成し、あなたをコントリビューターとして追加する責任があります。
+    - 自チームの環境構成を担当している
+    - 大規模な組織（500 名以上）に所属
+    - GitLab ユーザーまたは非 GitLab ユーザー
+- Qualtrics のスクリーナーをレビューします
+  - 現在の質問が必要なスクリーニング基準を提供するかどうかを確認します。提供しない場合は、リクルート Issue でフィードバックを提供し、スクリーナーが彼らの述べた基準に直接対応するまで編集を提案します。
+  - 支援を求めるために UX リサーチャーに連絡することを忘れないでください。彼らは PM および/またはプロダクトデザイナーが Qualtrics でスクリーナーをまとめるのを手助けします。
+  - リサーチをリクエストする人が、Qualtrics でスクリーナーを作成し、あなたを contributor として追加する責任を負います。
 
-### ステップ 3 - 以下のオプションから最適なリクルートチャネルを選ぶ
+### ステップ 3 - これらの選択肢から最適なリクルートチャネルを選ぶ
 
-- **[Data warehouse の連絡先](/handbook/product/ux/experience-research/recruiting-participants/)**
-  - エディタアクセスと SQL の知識が必要
+- **[データウェアハウスのコンタクト](/handbook/product/ux/experience-research/recruiting-participants/)**
+  - editor アクセスと SQL の知識が必要
   - GitLab SaaS ユーザー情報を含む。
-  - アンケートの回答者を特定するために使用可能。
-  - GitLab SaaS ユーザーの連絡先を抽出し、Qualtrics で通常のプロセスに従います。
+  - サーベイの回答者を特定するために使用可能。
+  - GitLab SaaS ユーザーのコンタクトを取得し、その後 Qualtrics で通常のプロセスに従います。
 - **Respondent.io:**
-  - 迅速な対応が必要な場合や、参加者が必ずしも GitLab ユーザーである必要がない場合に最適。
-  - 使用方法:
-    - Respondent にログインし、リサーチを実施する人物のスクリーナーを使用してキャンペーンを構築・開始します。
-    - 条件を再確認し、参加者を「失格」にする質問を正しく設定するよう注意してください。たとえば関連する質問で「Jira」を「必須選択」にすることで、Jira ユーザーのみを希望するように指定できます。これにより、他の回答を選んだ人を自動的に失格にします。これによって精査すべきスクリーナー回答の量が減り、時間を節約できます。また、リサーチャー以外の人にも、誰が調査参加資格を持つかが容易にわかります。
+  - 短期間での対応や、参加者が必ずしも GitLab ユーザーである必要がない場合に最適。
+  - 使い方:
+    - Respondent にログインし、リサーチを実施する人のスクリーナーを使ってキャンペーンを構築・開始します。
+    - 基準を再確認し、参加者を「失格」にする正しい質問を設定するよう注意してください。たとえば、該当する質問で「Jira」を「必須選択」の回答に設定することで、Jira ユーザーだけを求めると指定できます。これにより、別の回答を選んだ人は自動的に失格になります。これにより、精査する必要のあるスクリーナー回答の量が減り、時間を節約できます。また、非リサーチャーがスタディに参加する資格のある人を簡単に把握できるようにもなります。
 - **[UserTesting.com](/handbook/product/ux/experience-research/unmoderated-testing/)**
-  - モデレーターなしユーザビリティテストに適する
-  - パネルを活用して技術系ユーザーをリクルートできます
-- **チームメンバーを活用してリクエストを社内共有:**
-  - 使用方法:
-    - #ux、#product、#whats_happening_at_gitlab などの Slack チャネルに投稿します。簡潔なコールトゥアクション、締切、投稿してほしいリンクを含めてください。
-- **LinkedIn での [直接アウトリーチ](https://www.youtube.com/watch?v=rc2IX1e2sQ8&feature=youtu.be):**
-  - 使用方法:
-    - 求める条件で検索し、InMail クレジットを使って招待できます。
-    - Recruiter ライセンスを持っていない場合、アクセスリクエストを開く必要があります。
-  - 始め方は [このビデオ](https://youtu.be/rc2IX1e2sQ8) を参照してください
+  - モデレーターなしのユーザビリティテストに適している
+  - 彼らのパネルを活用して技術的なユーザーをリクルートできる
+- **チームメンバーを使ってリクエストを周知する:**
+  - 使い方:
+    - #upstream-studios、#product、#whats_happening_at_gitlab などの Slack チャネルに投稿します。簡潔な行動喚起、締め切り、人々に投稿してほしいリンクを含めます。
+- **LinkedIn での[ダイレクトアウトリーチ](https://www.youtube.com/watch?v=rc2IX1e2sQ8&feature=youtu.be):**
+  - 使い方:
+    - 探している基準を検索し、inMail クレジットを使って彼らを招待できます。
+    - Recruiter License を持っていない場合は、アクセスリクエストを作成する必要があります。
+  - 始め方については、この[動画](https://youtu.be/rc2IX1e2sQ8)をご覧ください
 - **マーケティングニュースレター:**
-  - ***注: SUS のような重要なリサーチのために予約してください。***
+  - ***注: これは SUS のような重要なスタディのために確保してください。***
   - ニュースレターは毎月 10 日と 25 日に送信されます。
-  - 使用方法:
-    - アンケートをニュースレターに含めるリクエストを提出します。例 [Issue](https://gitlab.com/gitlab-com/marketing/digital-marketing-programs/-/issues/4087) を参照してください。
-    - Digital Marketing [プロジェクト](https://gitlab.com/gitlab-com/marketing/digital-marketing-programs/-/issues) で `newsletter 2020` を検索し、対象日の Issue を選びます。まだ Issue が開かれていない場合、最新の Issue を見つけ、次のニュースレターへのリクエストを尋ねるコメントをします。Issue を開いた人物を必ず @ メンションしてください。
-- **Docs サイトバナー:**
-  - [Docs サイト](https://docs.gitlab.com/) のバナーを使って、大規模なアンケートを宣伝することがあります。パネルや Data Warehouse でしか対応できなかったアンケートを素早く満たす軽量な方法です。
-  - この方法でサンプリングする場合、考慮すべきバイアスがあります（Docs サイトを使っている人は通常、潜在的な障害に関する情報を探しています）。
-  - Docs チームはリクエストを許可しないことを選択できます。通常、稼働まで 1 週間かかります。
+  - 使い方:
+    - サーベイをニュースレターに含めるリクエストを提出します。こちらが例の [Issue](https://gitlab.com/gitlab-com/marketing/digital-marketing-programs/-/issues/4087) です。
+    - Digital Marketing の[プロジェクト](https://gitlab.com/gitlab-com/marketing/digital-marketing-programs/-/issues)で `newsletter 2020` を検索し、目標日の Issue を選択します。Issue がまだオープンになっていない場合は、最新の Issue を見つけてコメントし、次のニュースレターへのリクエストについて尋ねます。その Issue を作成した人を必ず @ メンションしてください。
+- **Docs サイトのバナー:**
+  - 大規模なサーベイを宣伝するために、[Docs サイト](https://docs.gitlab.com/)のバナーを時折使用できます。これは、パネルやデータウェアハウスに限定されてしまうサーベイを素早く満たす軽量な方法です。
+  - この方法でサンプリングする際に考慮すべきバイアスがいくつかあります。（Docs サイトを使う人は通常、直面している潜在的な障害に関する情報を探しています。）
+  - Docs チームはあなたのリクエストを許可しないことを選べます。通常、これを稼働させるには 1 週間かかります
 
 ### ステップ 4 - 参加者への支払い
 
-- 参加者への支払いは、使用するリクルートチャネルによって異なります
+- 使用するリクルートチャネルによって、参加者への支払い方法は異なります
   - **Respondent.io**
     - Respondent プラットフォーム内でユーザーに支払います。
-    - プラットフォームには事前にクレジットがロードされているはずです。「approve」ボタンをクリックしてセッションに参加した人々に支払います。
-    - 参加者が「attended」とマークされていないセッションがある場合、インタビュアーに早急にマークするか、no-show だったことを確認するよう促してください。これは、私たちのプラットフォームプロファイルの良好な評価を維持するため、迅速に行う必要があります。
+    - プラットフォームにクレジットがロードされているはずです。「approve」ボタンをクリックして、セッションに参加した人々に支払います。
+    - 参加者が「attended」とマークされていないセッションがある場合は、できるだけ早くそうするよう、または no-show だったことを確認するよう、インタビュアーにリマインドしてください。これは、私たちのプラットフォームプロフィールが良好な状態を保てるよう、適時に行うべきです。
   - **Tremendous**
-    - この方法は現在、Respondent.io 経由でない全 UX リサーチ参加者への支払いに使用されています。
-    - プラットフォームへのアクセスは制限されており、代理の UX リサーチャー向けに AR を開く必要があるかもしれません。
+    - この方法は現在、Respondent.io を経由しないすべての UX Research 参加者への支払いに使用されています。
+    - プラットフォームへのアクセスは制限されており、代理を務める UX リサーチャーのために AR を作成する必要があるかもしれません。
     - Send Rewards を選択します。
-    - インセンティブを処理するキャンペーンに移動します。
-    - 参加者のメールアドレスと名、USD でのリワード値を入力します。Tremendous は参加者の所在地に基づき、関連するリワードを自動的に提供します。
-    - Add Recipient をクリックします。必要に応じてさらに追加することも、csv をアップロードすることもできます。
+    - インセンティブを処理したいキャンペーンに移動します。
+    - 参加者のメールアドレスと名、そして USD でのリワード額を入力します。Tremendous は、参加者の所在地に基づいて、該当するリワードを自動的に提供します。
+    - Add Recipient をクリックします。必要に応じて追加する選択肢があり、csv をアップロードすることもできます。
     - 支払い画面に進みます。
     - 支払い画面で Pay with Credit Balance を選択し、process をクリックします。
-    - 参加者は当日中にインセンティブを受け取れるはずですが、処理には最大 48 時間かかる場合があります。
+    - 参加者は当日にインセンティブを受け取るはずですが、処理に最大 48 時間かかる場合があります。
 
 ### UX Research Operations Coordinator への引き継ぎ
 
-- お疲れさまでした！ UX Research Operations Coordinator が復帰し、引き継ぐ準備ができました。
-- まだ開いているリクルート Issue を UX Research Operations Coordinator にアサインします。
-- コメントで UX Research Operations Coordinator を @ し、Issue の状況と残作業の更新を提供します。
-- 全員が同じタイムゾーンにいるわけではないため、UX Research Operations Coordinator が復帰する前日にカバレッジ Issue を更新します（コーディネーターのほうがあなたより早く業務を開始する場合があります）。
-- 必要に応じて、UX Research Operations Coordinator は、UX リサーチャーが新しいリサーチリクルートリクエストに自動的にアサインされないようにする新しい MR を開きます。
+- やり遂げました！ UX Research Operations Coordinator が復帰し、引き継ぐ準備ができました。
+- まだオープンになっているリクルート Issue を UX Research Operations Coordinator に割り当てます。
+- コメントで彼らを @ メンションし、Issue の状況とまだ必要な作業について更新を提供します。
+- 全員が同じタイムゾーンにいるわけではなく、彼らがあなたより早く業務を開始する可能性があるため、UX Research Operations Coordinator が戻る前日にカバレッジ Issue を更新します。
+- 必要に応じて、UX Research Operations Coordinator は、新しいリサーチリクルートリクエストに UX リサーチャーが自動的に割り当てられないようにするための新しい MR を作成します。
 
 ## リソース
 
-- [UX Research チームの運営方法](/handbook/product/ux/experience-research/how-uxr-team-operates/)
-- [リクルートケーススタディ](/handbook/product/ux/experience-research/recruiting-participants/#recruitment-case-study)
+- [UX リサーチチームの運営方法](/handbook/product/ux/experience-research/how-uxr-team-operates/)
+- [リクルートのケーススタディ](/handbook/product/ux/experience-research/recruiting-participants/#recruitment-case-study)

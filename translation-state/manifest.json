@@ -25922,11 +25922,11 @@
     },
     "content/handbook/security/customer-support-operations/_index.md": {
       "path": "content/handbook/security/customer-support-operations/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T14:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "5a516dc7d551729080797c12110f7063729476288041374e84511a37680fd950",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "input_hash": "fa7e04a2ec3a1a908ff8887e2c83037eba56e29f9b2cab238a7280c4900ae2ce",
+      "upstream_committed_at": "2026-06-15T10:20:42-05:00"
     },
     "content/handbook/security/customer-support-operations/audits/_index.md": {
       "path": "content/handbook/security/customer-support-operations/audits/_index.md",
@@ -30266,11 +30266,11 @@
     },
     "content/handbook/product/ux/ux-forum.md": {
       "path": "content/handbook/product/ux/ux-forum.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T14:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7715370c6b4d65280b03f92545514324d846472c15d691005916818c8c292e72",
-      "upstream_committed_at": "2026-06-05T16:58:59-05:00"
+      "input_hash": "eb7f865800d9b776ddc0b20d2538b2ea22533b01aee4bedf2fb9af4f89b26c97",
+      "upstream_committed_at": "2026-06-15T07:58:19-05:00"
     },
     "content/handbook/product/ux/ux-quality-metrics-framework.md": {
       "path": "content/handbook/product/ux/ux-quality-metrics-framework.md",
@@ -30410,19 +30410,19 @@
     },
     "content/handbook/product/ux/research-operations/research-specialist-fill-in.md": {
       "path": "content/handbook/product/ux/research-operations/research-specialist-fill-in.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T14:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "421f1b31426ede98af4d31e55d5666ab691b870d31d1e4618248a4572f415710",
-      "upstream_committed_at": "2026-02-12T13:14:13+00:00"
+      "input_hash": "832cda6513ecc8b538715f44b3b4233da99b09bb47dbc870b4c230f747230b5a",
+      "upstream_committed_at": "2026-06-15T07:58:19-05:00"
     },
     "content/handbook/product/ux/research-operations/shareouts/index.md": {
       "path": "content/handbook/product/ux/research-operations/shareouts/index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T14:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "2a450ccc7e9150381e5e0fcdccaf3f3e619772a8d05273141e8550a1effae97f",
-      "upstream_committed_at": "2026-02-12T13:14:13+00:00"
+      "input_hash": "8b01310c89b8b74b1c730fe4106500a0df67afd3ca1261ec58d29170c37321e2",
+      "upstream_committed_at": "2026-06-15T07:58:19-05:00"
     },
     "content/handbook/product/ux/research-operations/participation-gratuities/index.md": {
       "path": "content/handbook/product/ux/research-operations/participation-gratuities/index.md",
@@ -30578,11 +30578,11 @@
     },
     "content/handbook/product/ux/performance-indicators/system-usability-scale/_index.md": {
       "path": "content/handbook/product/ux/performance-indicators/system-usability-scale/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T14:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "9aa648cb739a32d4d540977fceacea76bb124b47a6b4dd28218e495c571313c1",
-      "upstream_committed_at": "2025-12-19T14:24:15-06:00"
+      "input_hash": "3684c1d289c0818d3e77ec6fe10332f7a58d3d4f1de4fcbdde377f192e783cf4",
+      "upstream_committed_at": "2026-06-15T07:58:19-05:00"
     },
     "content/handbook/product/ux/performance-indicators/system-usability-scale/sus-outreach.md": {
       "path": "content/handbook/product/ux/performance-indicators/system-usability-scale/sus-outreach.md",
@@ -31234,11 +31234,11 @@
     },
     "content/handbook/product/ux/experience-research/how-uxr-team-operates/index.md": {
       "path": "content/handbook/product/ux/experience-research/how-uxr-team-operates/index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T14:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "150a8c21490c01fd2b2cf644103e814b91cadea0b99f2e203cb2cc5386ea2f10",
-      "upstream_committed_at": "2026-02-24T11:52:02+00:00"
+      "input_hash": "9ac62d31bdcece6a7cea8d48afecc7ded9df84f3eaed68ce4fd7a9e4f23d1e21",
+      "upstream_committed_at": "2026-06-15T07:58:19-05:00"
     },
     "content/handbook/product/ux/experience-research/how-to-conduct-ux-research-workshops/index.md": {
       "path": "content/handbook/product/ux/experience-research/how-to-conduct-ux-research-workshops/index.md",
