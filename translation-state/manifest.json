@@ -10642,11 +10642,11 @@
     },
     "content/handbook/engineering/development/growth/_index.md": {
       "path": "content/handbook/engineering/development/growth/_index.md",
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-05-06T13:30:00Z",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T13:30:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "6a1e3f9a0351e373b5f69f3c6685c6249d7174d99a3c2ad59f208d0f962c569d",
-      "upstream_committed_at": "2026-04-07T12:29:09+05:30"
+      "input_hash": "f367b099ad87f4f98428e569e841a111a843dfb00fe34d73c216d482e490eda9",
+      "upstream_committed_at": "2026-06-15T18:08:34+05:30"
     },
     "content/handbook/engineering/development/growth/ai-prompts/epic-summary-prompt.md": {
       "path": "content/handbook/engineering/development/growth/ai-prompts/epic-summary-prompt.md",
@@ -14258,11 +14258,11 @@
     },
     "content/handbook/engineering/workflow/code-review.md": {
       "path": "content/handbook/engineering/workflow/code-review.md",
-      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
-      "translated_at": "2026-05-29T21:13:52Z",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T13:30:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ae93d163389d2ee13f64e4e94b34b8aa920de0bb9f92335c06fdaa9d32c9966f",
-      "upstream_committed_at": "2026-05-29T14:14:34+02:00"
+      "input_hash": "cb9e3404f556029bc56f2166fa88f3316692f2fa2f59a2d60cbb06b4fa976b22",
+      "upstream_committed_at": "2026-06-15T07:58:19-05:00"
     },
     "content/handbook/engineering/workflow/cross-functional-prioritization.md": {
       "path": "content/handbook/engineering/workflow/cross-functional-prioritization.md",
@@ -33167,6 +33167,14 @@
       "model": "claude-opus-4-7",
       "input_hash": "693de35d71c08cfb18eba88d7182b288020bccd7c86302d4340a90e2324c512f",
       "upstream_committed_at": "2026-06-10T11:10:58-04:00"
+    },
+    "content/handbook/engineering/development/growth/modular_code.md": {
+      "path": "content/handbook/engineering/development/growth/modular_code.md",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T13:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "810343da17c25749afe7968cd8e8fef0d4033d5ec6e1bf91cc399f38ff0b5541",
+      "upstream_committed_at": "2026-06-15T18:08:34+05:30"
     }
   }
 }
