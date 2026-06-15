@@ -2,34 +2,34 @@
 title: "GitLab Duo Agent Platform - ハンズオンラボ: カスタムフローを作成する"
 description: "このハンズオンガイドでは、カスタムフローの作成方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: d5d611a2a400e4ac2527f89559e7ae9a013a9b21
+translated_at: "2026-06-15T19:00:00Z"
 translator: claude
 stale: false
-lastmod: "2026-05-01T11:26:38-04:00"
+lastmod: "2026-06-15T14:13:50-04:00"
 ---
 
-> 完了までの推定時間: 30 分
+> 完了目安時間: 20 分
 
 ## 学習目標
 
-このラボが終了するまでに、以下のことができるようになります。
+このラボを完了すると、次のことができるようになります。
 
-- YAML を使ってカスタムフローを設定および作成する。
-- カスタムフローをグループおよびプロジェクトレベルで有効化する。
-- ライブ Issue でカスタムフローをトリガーし、出力をレビューする。
+- YAML を使用してカスタムフローを構成して作成する。
+- グループレベルおよびプロジェクトレベルでカスタムフローを有効化する。
+- ライブの Issue でカスタムフローをトリガーし、出力を確認する。
 
 ## 概要
 
-ラボ 3 では、プロンプトを通じてオンデマンドで呼び出すツールであるカスタムエージェントを構築しました。カスタムフローは異なります。これは YAML で定義された、イベント駆動型のワークフローで、一度トリガーされると人間のプロンプトなしで自動的に実行されます。
+ラボ 3 では、プロンプトを通じてオンデマンドで呼び出すツールであるカスタムエージェントを構築しました。カスタムフローはそれとは異なります。これは YAML で定義されたイベント駆動型のワークフローで、いったんトリガーされると、人間のプロンプトを必要とせずに自動的に実行されます。
 
-新しい Issue は、ラボ 2 で Planner Agent がフラグした同じギャップを持つものとして引き続き入ってきています。フィードバックは、誰かが手動でチェックを実行した後ではなく、何かがスプリントに到達する前に自動的に届く必要があります。
+ラボ 2 で Planner エージェントがフラグを付けたのと同じギャップを抱えた新しい Issue がすでに入ってきています。フィードバックは、誰かが手動でチェックを実行した後ではなく、何かがスプリントに到達する前に、自動的に届く必要があります。
 
-このラボでは、Swag Shop Issue Reviewer を構築します。これは、割り当てられるすべての Issue を評価し、構造化されたフィードバックを自動的に投稿するカスタムフローです。Issue の品質は、チームが覚えておく必要があるものではなく、システムが強制するものになります。
+このラボでは、Swag Shop Issue Reviewer を構築します。これは、割り当てられたすべての Issue を評価し、構造化されたフィードバックを自動的に投稿するカスタムフローです。Issue の品質は、チームが覚えておかなければならないものではなく、システムが強制するものになります。
 
 ## タスク A: カスタムフローを作成する
 
-### タスク A.1: フローを設定する
+### タスク A.1: フローを構成する
 
 1. **GitLab Swag Shop Flows** プロジェクトに移動します。
 
@@ -39,7 +39,7 @@ lastmod: "2026-05-01T11:26:38-04:00"
 
 1. **Display name** フィールドに `Swag Shop Issue Reviewer` と入力します。
 
-1. **Description** フィールドに以下を入力します。
+1. **Description** フィールドに次の内容を入力します。
 
    ```prompt
    This Issue Reviewer assists in checking your issues for completeness, and suggests improvements to ensure high-quality issues.
@@ -49,17 +49,17 @@ lastmod: "2026-05-01T11:26:38-04:00"
 
 ### タスク A.2: フロー構成を追加する
 
-フロー構成は YAML で定義されています。ここで、フローが使用するコンポーネント、それらがどのように接続されるか、出力として何を生成するかを指定します。以下の構成では、Issue を取得するステップと、Issue をレビューしてコメントを投稿するエージェントの 2 つのコンポーネントが定義されています。
+フロー構成は YAML で定義されます。ここで、フローが使用するコンポーネント、それらがどのように接続されるか、そして出力として何を生成するかを指定します。以下の構成では、Issue を取得するステップと、それをレビューしてコメントを投稿するエージェントの 2 つのコンポーネントを定義します。
 
-今、すべての行を理解する必要はありません。注目すべき重要な点は以下のとおりです。
+今すべての行を理解することを心配する必要はありません。注目すべき重要な点は次のとおりです。
 
-- `fetch_issue`: get_issue ツールを使って Issue データを取得する。
-- `issue_reviewer`: Issue データを読み取り、create_issue_note ツールを使って構造化されたコメントを投稿するエージェントコンポーネント。
-- `issue_review_prompt`: エージェントが Issue を評価しスコアリングする方法を定義するシステムプロンプト。
+- `fetch_issue`: get_issue ツールを使用して Issue データを取得します。
+- `issue_reviewer`: Issue データを読み取り、create_issue_note ツールを使用して構造化されたコメントを投稿するエージェントコンポーネントです。
+- `issue_review_prompt`: エージェントが Issue をどのように評価し、スコア付けするかを定義するシステムプロンプトです。
 
 1. **Configuration** で、**Clear editor** ボタンをクリックします。
 
-1. 以下の YAML をエディタに貼り付けます。
+1. 次の YAML をエディターに貼り付けます。
 
     ```yaml
     version: "v1"
@@ -158,26 +158,26 @@ lastmod: "2026-05-01T11:26:38-04:00"
 
 1. **Create flow** を選択して保存します。
 
-### フロー構成の理解
+### フロー構成を理解する
 
-フローが保存されたので、設定したものを少し時間をかけて理解しましょう。YAML は 3 つのことを定義しています: 作業を行うコンポーネント、エージェントを駆動するプロンプト、それらを接続する router です。
+フローが保存されたので、構成した内容を理解するために数分かけてみましょう。この YAML は 3 つのことを定義しています。作業を実行するコンポーネント、エージェントを駆動するプロンプト、そしてそれらを接続するルーターです。
 
-#### Version と Environment
+#### バージョンと環境
 
-各フローは version と environment の宣言から始まります。
+すべてのフローはバージョンと環境の宣言で始まります。
 
 ```yml
 version: "v1"
 environment: ambient
 ```
 
-version は使用しているフロー YAML 構成のバージョンを定義します。これは常に `v1` に設定します。`environment` には、`chat`、`chat-partial`、`ambient` の 3 つの可能な値があります。これらのフィールドの詳細は [YAML 仕様](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/main/docs/flow_registry/v1.md#environment) で確認できます。この例では `ambient` を選択しました。これは、エージェントがバックグラウンドで割り当てを完了する、手を動かさない体験のために設計されています。
+バージョンは、使用しているフロー YAML 構成のバージョンを定義します。これは常に `v1` に設定します。`environment` には、`chat`、`chat-partial`、`ambient` の 3 つの可能な値があります。これらのフィールドの詳細は [YAML 仕様](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/main/docs/flow_registry/v1.md#environment)にあります。この例では `ambient` を選択しました。これは、エージェントがバックグラウンドで割り当てを完了する、手放しの体験向けに設計されています。
 
 #### コンポーネント
 
-コンポーネントは、フロー内で特定のタスクを実行する再利用可能なビルディングブロックです。私たちは `fetch_issue` と `issue_reviewer` の 2 つのコンポーネントを定義しました。
+コンポーネントは、フロー内で特定のタスクを実行する再利用可能なビルディングブロックです。`fetch_issue` と `issue_reviewer` の 2 つのコンポーネントを定義しました。
 
-各コンポーネントには[コンポーネントタイプ](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/main/docs/flow_registry/v1.md#component-types)があり、コンポーネントがどのように振る舞うかを定義します。まず、`fetch_issue` コンポーネントを考えてみましょう。
+各コンポーネントには[コンポーネントタイプ](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/main/docs/flow_registry/v1.md#component-types)があり、これがコンポーネントの振る舞いを定義します。まず、`fetch_issue` コンポーネントを見てみましょう。
 
 ```yml
 components:
@@ -194,9 +194,9 @@ components:
       - "on_tool_execution_failed"
 ```
 
-`fetch_issue` コンポーネントは `DeterministicStepComponent` です。これはそれが事前に決められた引数で決定論的に単一のステップを実行することを意味します。`tool_name` フィールドはコンポーネントが使用するツールを定義します。このケースでは、コンポーネントは Issue の詳細を取得するために `get_issue` を使用します。`inputs` はコンポーネントがそのタスクを達成するために使用すべきデータを定義します。このケースでは、プロジェクト ID と Issue IID を取得します。`as` キーワードはエイリアスで、各入力に読みやすい名前を提供します。最後に、`ui_log_events` は UI でどのイベントがログされるべきかを決定します。このケースでは、実行成功と失敗がログされます。
+`fetch_issue` コンポーネントは `DeterministicStepComponent` です。これは、あらかじめ決められた引数を使って単一のステップを確定的に実行することを意味します。`tool_name` フィールドは、コンポーネントが使用するツールを定義します。この場合、コンポーネントは `get_issue` を使用して Issue の詳細を取得します。`inputs` は、コンポーネントがタスクを達成するために使用すべきデータを定義します。この場合、プロジェクト ID と Issue IID を取得します。`as` キーワードはエイリアスで、各入力に読みやすい名前を付けます。最後に、`ui_log_events` は、UI でどのイベントをログに記録すべきかを決定します。この場合、実行の成功と失敗がログに記録されます。
 
-次に、`issue_reviewer` コンポーネントを見てみましょう。
+次に、`issue_reviewer` コンポーネントを見ることができます。
 
 ```yml
   - name: "issue_reviewer"
@@ -217,17 +217,17 @@ components:
       - "on_agent_final_answer"
 ```
 
-`issue_reviewer` コンポーネントは `AgentComponent` です。`AgentComponent` は LLM を使って入力を処理しレスポンスを生成します。前のコンポーネントと同様に、使用する一連の入力を提供します。このケースでは、Issue のノートを作成する `create_issue_note` ツールセットが使用されます。ツールの成功、失敗、およびコンポーネントによって生成された最終回答をログします。このコンポーネントは LLM を使用するので、`prompt_id` フィールドによって定義された使用するプロンプトを提供します。この ID に関連付けられたプロンプトは、以下に定義されます。
+`issue_reviewer` コンポーネントは `AgentComponent` です。`AgentComponent` は LLM を使用して入力を処理し、応答を生成します。前のコンポーネントと同様に、使用する一連の入力を提供します。この場合、`create_issue_note` ツールセットが使用され、Issue ノートを作成します。ツールの成功、失敗、そしてコンポーネントが生成した最終回答をログに記録します。このコンポーネントは LLM を使用するため、`prompt_id` フィールドで定義された使用するプロンプトを提供します。この ID に関連付けられたプロンプトは以下で定義されています。
 
 #### プロンプト
 
-各プロンプトにはプロンプト ID が与えられます。私たちのプロンプトには、`issue_reviewer` コンポーネントに与えられたプロンプト ID と一致する `issue_review_prompt` の ID があります。
+各プロンプトにはプロンプト ID が付与されます。私たちのプロンプトには `issue_review_prompt` という ID があり、これは `issue_reviewer` コンポーネントに与えられたプロンプト ID と一致しています。
 
-次に、プロンプトを定義します。`system` フィールドはエージェントの振る舞いと個性を定義するプロンプトを定義します。`user` フィールドはユーザープロンプトが配置される場所と、それを解釈する方法を定義します。`placeholder` フィールドを `history` に設定すると、以前のチャット履歴をフロープロンプトに含めることができます。最後に、タイムアウトを 180 秒として提供します。
+次に、プロンプトを定義します。`system` フィールドは、エージェントの振る舞いと個性を定義するプロンプトを定義します。`user` フィールドは、ユーザープロンプトが配置される場所と、それをどのように解釈するかを定義します。`placeholder` フィールドを `history` に設定すると、以前のチャット履歴をフロープロンプトに含めることができます。最後に、タイムアウトを提供します。この場合は 180 秒です。
 
-#### Router
+#### ルーター
 
-`router` と `flow` フィールドは、データが開始から終了までどのように流れるかについての詳細を提供します。
+`router` と `flow` フィールドは、データが最初から最後までどのように流れるかについての詳細を提供します。
 
 ```yml
 routers:
@@ -240,60 +240,60 @@ flow:
   entry_point: "fetch_issue"
 ```
 
-`flow` はエントリポイントを定義します。この例では `fetch_issue` です。`router` はそこから取るアクションを定義します。フローは `fetch_issue` から始まり、`issue_reviewer` に渡され、その後 `end` に移動してフローを終了することがわかります。
+`flow` はエントリーポイントを定義します。この例では `fetch_issue` です。`router` は、そこからどのアクションを取るかを定義します。フローは `fetch_issue` から始まり、`issue_reviewer` に流れ込み、その後 `end` に移動してフローを終了することがわかります。
 
-カスタムフローは多くのカスタマイズを提供します。詳細については、[YAML 仕様とドキュメント](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/main/docs/flow_registry/v1.md#flow-registry-framework-v1-version-documentation)を参照してください。
+カスタムフローは大量のカスタマイズを提供します。詳細については、[YAML 仕様とドキュメント](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/main/docs/flow_registry/v1.md#flow-registry-framework-v1-version-documentation)を参照してください。
 
 ### タスク A.3: カスタムフローを有効化する
 
-グループレベルでフローを有効化すると、グループ内のすべてのプロジェクトで利用可能になります。これは、ラボ 3 でカスタムエージェントを有効化するために使用したのと同じプロセスです。
+グループレベルでフローを有効化すると、グループ内のすべてのプロジェクトでフローが利用可能になります。これは、ラボ 3 でカスタムエージェントを有効化したのと同じプロセスです。
 
-1. フローを作成したのと同じページから、右上隅の **Enable** をクリックします。
+1. フローを作成したのと同じページで、右上隅の **Enable** をクリックします。
 
-1. 次に、確認のため再度 **Enable** をクリックします。
+1. 続いて、もう一度 **Enable** をクリックして確認します。
 
-  >**注:** 2 段階の確認により、準備が整う前に誤ってフローを公開してしまうことが防がれます。最初のクリックで確認プロンプトが開き、2 回目のクリックで有効化が確定します。
+  > **注:** 2 段階の確認により、準備ができる前に誤ってフローを公開してしまうことを防ぎます。1 回目のクリックで確認プロンプトが開き、2 回目のクリックで有効化が確定します。
 
 ### 期待される出力: タスク A
 
-- **Swag Shop Issue Reviewer** という名前の新しいフローが **Automate > Flows** に存在する。
-- フロー構成が上記の YAML で保存され、可視性が Private に設定されている。
-- フローがグループレベルで有効化されている。
+- **Swag Shop Issue Reviewer** という名前の新しいフローが **Automate > Flows** 配下に存在します。
+- フロー構成が上記の YAML で保存され、可視性が Private に設定されています。
+- フローがグループレベルで有効化されています。
 
 ## タスク B: カスタムフローを使用する
 
-この時点で、設定され有効化されたフローがあります。このタスクでは、既存の Issue でそれをトリガーし、レビュープロセスをどのように自動化するかを観察します。
+この時点で、構成され有効化されたフローができました。このタスクでは、既存の Issue でそれをトリガーし、レビュープロセスをどのように自動化するかを観察します。
 
 1. **GitLab Swag Shop Flows** プロジェクトに移動します。
 
 1. 左サイドバーで **Plan > Work items** を選択します。
 
-1. 既存のオープン Issue を選択します。
+1. 既存のオープンな Issue を選択します。
 
-1. Issue の **Assignees** セクションで、**Swag Shop Issue Reviewer** フローを割り当てます。見つけるためにスクロールダウンが必要な場合があります。
+1. Issue の **Assignees** セクションで、**Swag Shop Issue Reviewer** フローを割り当てます。見つけるにはスクロールダウンが必要な場合があります。
 
-    > **なぜ Assignees フィールドでフローを割り当てるのか?** フローは GitLab のイベントによってトリガーされます。このフローでは、トリガーイベントが Issue に割り当てられることであり、これは人を割り当てるのと同じメカニズムです。Assignees フィールドでフローを選択すると、GitLab がトリガーイベントを発火し、フローの実行が自動的に始まります。
+    > **なぜ Assignees フィールドでフローを割り当てるのか?** フローは GitLab イベントによってトリガーされます。このフローの場合、トリガーイベントは Issue に割り当てられることであり、これは人を割り当てるのに使用するのと同じメカニズムです。Assignees フィールドでフローを選択すると、GitLab がトリガーイベントを発火し、フローが自動的に実行を開始します。
 
-1. 新しいフローセッションが開始されたことを確認するコメントが Issue に表示され、セッションの進捗へのリンクが含まれます。
+1. 新しいフローセッションが開始されたことを確認するコメントが Issue に表示され、セッションの進行状況へのリンクが含まれます。
 
-    >**注:** **Automate > Sessions** に移動し、Swag Shop Issue Reviewer のセッションを見つけて、開くこともできます。
+    > **注:** **Automate > Sessions** に移動し、Swag Shop Issue Reviewer のセッションを見つけて開くこともできます。
 
-1. Issue に戻り、フローによって投稿されたコメントをレビューします。
+1. Issue に戻り、フローが投稿したコメントを確認します。
 
-コメントには 6 点満点の completeness スコア、満たされている基準をリストする「Looks good」セクション、欠落している各基準に対する具体的な提案を含む「Needs attention」セクション、そしてオプションで「Suggested acceptance criteria」セクションが含まれます。スコアは選択した Issue によって異なります。
+コメントには、6 点満点の完全性スコア、満たされた基準を一覧表示する「Looks good」セクション、欠落している各基準に対する具体的な提案を含む「Needs attention」セクション、そしてオプションで「Suggested acceptance criteria」セクションが含まれます。スコアは選択した Issue によって異なります。
 
-  >**注:** フローの完了には数分かかる場合があります。セッションが Finished と表示された後でもコメントが表示されない場合は、Issue ページをリフレッシュしてください。
+  > **注:** フローの完了には数分かかる場合があります。セッションが Finished と表示された後もコメントが表示されない場合は、Issue ページを更新してください。
 
 ### 期待される出力: タスク B
 
-- Swag Shop Issue Reviewer フローが Issue の Assignees フィールドに割り当てられている。
-- **Automate > Sessions** でフローセッションが Finished のステータスで表示されている。
-- 構造化されたコメントが Issue に投稿されており、completeness スコア、Looks good セクション、欠落している基準それぞれに対する具体的な提案を含む Needs attention セクションが含まれている。
+- Swag Shop Issue Reviewer フローが Issue の Assignees フィールドに割り当てられています。
+- ステータスが Finished のフローセッションが **Automate > Sessions** 配下に表示されます。
+- 完全性スコア、Looks good セクション、具体的な提案を含む Needs attention セクションを含む構造化されたコメントが Issue に投稿されています。
 
 ## ラボガイド完了
 
-このラボの演習を完了しました。[このコースの他のラボガイド](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandson.md)を見ることができます。
+このラボ演習を完了しました。[このコースの他のラボガイド](/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandson.md)を確認できます。
 
-## 提案?
+## ご提案はありますか?
 
-ラボへの変更を加えたい場合は、マージリクエスト経由で変更を提出してください。
+ラボに変更を加えたい場合は、マージリクエストで変更を送信してください。

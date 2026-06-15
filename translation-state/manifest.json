@@ -4298,35 +4298,35 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab2.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab2.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T04:51:58Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "775fdf6450b989838e8861bad2d547ad46ccf7d6eeabc45bd0cad4a5bb24a392",
-      "upstream_committed_at": "2026-04-16T17:13:51-04:00"
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T19:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d135322ecfdf9304dac8954ae289bed168deb26675a4b6a9f9e2bab76c9463d0",
+      "upstream_committed_at": "2026-06-15T14:13:50-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab3.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab3.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T04:51:58Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "c0244e354d61efc2034660066328099caf0ac1469be95272b0e5ce3ebeb2c68d",
-      "upstream_committed_at": "2026-04-16T17:13:51-04:00"
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T19:00:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "518a93ef9343c983ea86d546c8d732f88974457abffad33f4498680f6f62ef09",
+      "upstream_committed_at": "2026-06-15T14:13:50-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T19:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1bb1ce3da822453011b449da02784948dbd8bc5eb90e0440e94e53fd72f29535",
-      "upstream_committed_at": "2026-05-01T11:26:38-04:00"
+      "input_hash": "0bc457a2c3c0533e4c84686ae38b8b42f633d11210753ff0e31c6359ae917380",
+      "upstream_committed_at": "2026-06-15T14:13:50-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab5.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab5.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T19:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "9277b7dc3c1fec93fb99b39868d7549c218daba401429ddad25aee6a96c8d1e8",
-      "upstream_committed_at": "2026-05-01T11:26:38-04:00"
+      "input_hash": "fc1f7472f9416df9334ca15674a3de52b0a8d0e6c46e61f0f992b7690baf9df3",
+      "upstream_committed_at": "2026-06-15T14:13:50-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandson.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandson.md",
