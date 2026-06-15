@@ -31506,11 +31506,11 @@
     },
     "content/handbook/product/product-management/_index.md": {
       "path": "content/handbook/product/product-management/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T12:00:00Z",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T13:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "be693af6fbfba37e8fdccd0dc443ff5a9490e8481581f32083216d7459f612fc",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "input_hash": "9b5763ea1f3a24c1c80b3144028603d7fbb70dfc158aad8c4b8654e83b781368",
+      "upstream_committed_at": "2026-06-15T07:58:19-05:00"
     },
     "content/handbook/product/product-management/internship.md": {
       "path": "content/handbook/product/product-management/internship.md",
@@ -33175,6 +33175,14 @@
       "model": "claude-opus-4-7",
       "input_hash": "810343da17c25749afe7968cd8e8fef0d4033d5ec6e1bf91cc399f38ff0b5541",
       "upstream_committed_at": "2026-06-15T18:08:34+05:30"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md",
+      "upstream_sha": "d5d611a2a400e4ac2527f89559e7ae9a013a9b21",
+      "translated_at": "2026-06-15T13:30:00Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "31aef36175046d599065267112dccbd70947188a148d51fcce2b4a6feec5e752",
+      "upstream_committed_at": "2026-06-15T15:39:51-04:00"
     }
   }
 }
