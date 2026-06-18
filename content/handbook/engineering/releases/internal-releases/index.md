@@ -1,9 +1,9 @@
 ---
 title: 内部リリース
 upstream_path: /handbook/engineering/releases/internal-releases/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-10T12:44:21-06:00
-translated_at: "2026-06-12T21:15:09Z"
+upstream_sha: aadd07ec986f77b5bd259fb54f0f41d1f3397544
+lastmod: 2026-06-17T16:22:24-06:00
+translated_at: "2026-06-18T05:33:51Z"
 translator: claude
 stale: false
 ---
@@ -70,6 +70,31 @@ Dedicated インスタンス上の高重大度の Issue を修正したい場合
 
 これらの前提条件が満たされて初めて、リリースマネージャーは約 8 時間の実行フェーズを開始できます。
 
+## リクエストプロセス {#request-process}
+
+> [!IMPORTANT]
+> **バグ修正**のために承認された内部リリースには、すべて [Feature Change Lock (FCL)](/handbook/engineering/#feature-change-locks) が必要です。
+> 承認された内部リリースには、すべてリリース後の[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)が必要です。**これらは任意ではありません。**
+
+内部リリースは、Dedicated の可用性に影響し、次回の予定されたパッチリリースまで待てない、高重大度のバグやセキュリティ脆弱性のために確保されています。
+
+**リリースマネージャーは、これらの基準を満たさないリクエストを却下する権限を持っています。** Customer Success、Sales、その他のチームからの圧力は、内部リリースの承認にはなりません。
+
+N-1 または N-2 以外のバージョンを対象とする場合、あるいは重大度が S3 以下の場合、**リクエストは自動的に却下されます**。
+
+内部リリースが必要な場合:
+
+1. **リクエスター**が[内部リリースリクエストの Issue を開き](https://gitlab.com/gitlab-org/release/tasks/-/work_items/new?description_template=Internal-Release-Request)、Dedicated への影響評価を文書化し、
+   必要なすべてのステップを完了します
+1. **リクエスター**が、影響を受ける領域の**エンジニアリングマネージャー**に連絡し、その人を Issue にアサインし、バグ修正のための [Feature Change Lock (FCL)](/handbook/engineering/#feature-change-locks)
+   プロセス（**必須**）を開始してもらうことを確実にします。
+1. **Dedicated Engineering Manager**（スポンサー）が Issue 上で書面による承認を行います。
+1. **Software Delivery Engineering Leadership**（Release & Deploy Manager、Senior Product Manager 以上）が書面による承認を行います。
+1. **リクエスター**が、上記の項目がすべて完了したら、最終レビューと実行のために[アクティブなリリースマネージャー](/handbook/engineering/releases/release-managers/)を Issue にアサインします。
+1. **リリース後:** これがリリース前に検知を逃れた経緯を調査するための[インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)（**必須**）。
+
+このプロセスの外で承認された内部リリースは、リリースの安定性と GitLab Dedicated の信頼性を損なう前例を作ります。
+
 ## 内部リリースのプロセス {#internal-release-process}
 
 内部リリースは、初期の特定からデプロイまで、6 つのフェーズを通って進みます。
@@ -78,8 +103,7 @@ Dedicated インスタンス上の高重大度の Issue を修正したい場合
 
 * [ダイアグラムソース - 社内](https://docs.google.com/presentation/d/1rI47asPEzIaAGZ6t4rQASv88jnJJ17y55k3yD9IVkVI/edit?usp=sharing)
 
-1. **リクエスト**: 高重大度の Issue が特定され、[内部リリースリクエスト](https://gitlab.com/gitlab-org/release/tasks/-/work_items/new?description_template=Internal-Release-Request)
-   が開かれます。トリガーは Issue のタイプによって異なります:
+1. **リクエスト**: 高重大度の Issue が特定され、[リクエストプロセス](#request-process)が始まります。トリガーは Issue のタイプによって異なります:
    * **セキュリティ脆弱性**: SIRT チームが調査し、その Issue が S1 または S2 であることを確認します。
    * **重大なバグ**: Dedicated チームが、可用性の低下を引き起こす高重大度の Issue を報告します。
 2. **準備**: リクエストが承認されると、初期実装ステップが始まり、
@@ -96,5 +120,4 @@ Dedicated インスタンス上の高重大度の Issue を修正したい場合
 5. **リリース**: 内部 CNG イメージと Omnibus パッケージがビルドされ、プレリリースチャンネルにアップロードされます。
 6. **最終ステップ**: 内部リリースパッケージを GitLab シングルテナント SaaS インスタンスにロールアウトします。
    * GitLab Dedicated Group に通知されます。
-   * [Dedicated の緊急メンテナンス](https://docs.gitlab.com/administration/dedicated/maintenance/#emergency-maintenance)プロセス
-     が始まります。
+   * [Dedicated の緊急メンテナンス](https://docs.gitlab.com/administration/dedicated/maintenance/#emergency-maintenance)プロセスが始まります。

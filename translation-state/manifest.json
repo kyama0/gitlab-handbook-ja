@@ -11970,11 +11970,11 @@
     },
     "content/handbook/engineering/devops/verify/pipeline-execution/_index.md": {
       "path": "content/handbook/engineering/devops/verify/pipeline-execution/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a1a0efcad8cedb26e8b9360de59f0b23a477db1de127e9ca36855ea284842db7",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "input_hash": "4c4ba830f1be584ac7b07c3f04d38906459b1041b5107c0621c54b832fa287e7",
+      "upstream_committed_at": "2026-06-16T17:33:30-04:00"
     },
     "content/handbook/engineering/devops/verify/pipeline-execution/jtbd.md": {
       "path": "content/handbook/engineering/devops/verify/pipeline-execution/jtbd.md",
@@ -14042,11 +14042,11 @@
     },
     "content/handbook/engineering/releases/internal-releases/index.md": {
       "path": "content/handbook/engineering/releases/internal-releases/index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:15:09Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "2799f80c263c4dfd64ea005c6ea9b78b538dd992dd55147ca66bcbe281b9a4e4",
-      "upstream_committed_at": "2026-06-10T12:44:21-06:00"
+      "input_hash": "264031722428589f8c90c51a0ac5eee5785e26b48f3e17ab6790e69d4a398c4d",
+      "upstream_committed_at": "2026-06-17T16:22:24-06:00"
     },
     "content/handbook/engineering/releases/monthly-releases/index.md": {
       "path": "content/handbook/engineering/releases/monthly-releases/index.md",
@@ -14258,11 +14258,11 @@
     },
     "content/handbook/engineering/workflow/code-review.md": {
       "path": "content/handbook/engineering/workflow/code-review.md",
-      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
-      "translated_at": "2026-05-29T21:13:52Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ae93d163389d2ee13f64e4e94b34b8aa920de0bb9f92335c06fdaa9d32c9966f",
-      "upstream_committed_at": "2026-05-29T14:14:34+02:00"
+      "input_hash": "cb9e3404f556029bc56f2166fa88f3316692f2fa2f59a2d60cbb06b4fa976b22",
+      "upstream_committed_at": "2026-06-15T07:58:19-05:00"
     },
     "content/handbook/engineering/workflow/cross-functional-prioritization.md": {
       "path": "content/handbook/engineering/workflow/cross-functional-prioritization.md",
@@ -15202,11 +15202,11 @@
     },
     "content/handbook/entity/gmbh-germany.md": {
       "path": "content/handbook/entity/gmbh-germany.md",
-      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
-      "translated_at": "2026-04-29T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "be0cccb76aaf129a74c5ff1871708301f3f70b874bc70e2336c4138949cfa9d0",
-      "upstream_committed_at": "2026-04-24T10:57:36-05:00"
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "f6efde088dc14fd0a3c1f8e84858f0968224ca2df04cbbd540f667b5996309e6",
+      "upstream_committed_at": "2026-06-17T09:57:08-07:00"
     },
     "content/handbook/entity/iberia-srl-spain.md": {
       "path": "content/handbook/entity/iberia-srl-spain.md",
@@ -16418,11 +16418,11 @@
     },
     "content/handbook/legal/esg/_index.md": {
       "path": "content/handbook/legal/esg/_index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:18:07Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "15b8306eba16b373e610e9c2adf700681c235cc84589778e1893cf7d583640d7",
-      "upstream_committed_at": "2026-06-08T15:51:36-06:00"
+      "input_hash": "77d608b93d11f2fc8ad62508e44b806a87ee40b3b15e440cd7d7ac4925d17195",
+      "upstream_committed_at": "2026-06-17T12:43:11-06:00"
     },
     "content/handbook/legal/esg/earth-month/_index.md": {
       "path": "content/handbook/legal/esg/earth-month/_index.md",
@@ -16442,11 +16442,11 @@
     },
     "content/handbook/legal/esg/fy23-esg-report.md": {
       "path": "content/handbook/legal/esg/fy23-esg-report.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "1a7e5773e422b1736abd9376fde47f05b6943c14418d2b7ec6085faf6f650a29",
-      "upstream_committed_at": "2026-03-12T10:48:57-04:00"
+      "input_hash": "fb864462996670e069b77c7d7899fde86a27a2828f67c9f2a1e2eb8ecf096039",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/legal/esg/team-member-sustainability-guide/_index.md": {
       "path": "content/handbook/legal/esg/team-member-sustainability-guide/_index.md",
@@ -16458,11 +16458,11 @@
     },
     "content/handbook/legal/ethics-compliance-program/_index.md": {
       "path": "content/handbook/legal/ethics-compliance-program/_index.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-29T10:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "3a9de285bed2675790b22474a83b75cdc50a007387d0c0e8e0ece0cdb1850d72",
-      "upstream_committed_at": "2026-04-13T15:41:58+00:00"
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "dc698cb431292774f43de9bd20c772222b616bf4bf6d774c341cba35544eb685",
+      "upstream_committed_at": "2026-06-17T19:30:54+00:00"
     },
     "content/handbook/legal/ethics-compliance-program/ai-ethics-principles.md": {
       "path": "content/handbook/legal/ethics-compliance-program/ai-ethics-principles.md",
