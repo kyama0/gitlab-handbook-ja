@@ -17090,11 +17090,11 @@
     },
     "content/handbook/marketing/_index.md": {
       "path": "content/handbook/marketing/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "acb0cfd4dbeedbe836cead5a7066dfb8858dc831a7999bb03af5059d3dc76475",
-      "upstream_committed_at": "2026-05-01T10:44:51-04:00"
+      "input_hash": "5318cac23e1c44b7959d88677c79240c4ad9b427bc50b68a69cd778db57240d9",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/account-based-marketing/_index.md": {
       "path": "content/handbook/marketing/account-based-marketing/_index.md",
@@ -17362,11 +17362,11 @@
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/_index.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/_index.md",
-      "upstream_sha": "c26b483f365d397f86ef45e60a892d0783588ac1",
-      "translated_at": "2026-04-30T00:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "32ccd44320a6a39abe9801881094f36a1ab5e835567a00f5d0c6a543dfb796b8",
-      "upstream_committed_at": "2026-02-27T10:12:54-08:00"
+      "input_hash": "1c64bcb4e661651fabe77945c3ea83d102ccb8394ddf8188000c1ccb1a5e4633",
+      "upstream_committed_at": "2026-06-16T20:37:26+00:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/_index.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/_index.md",
@@ -17450,11 +17450,11 @@
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/sim-demos.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/sim-demos.md",
-      "upstream_sha": "c26b483f365d397f86ef45e60a892d0783588ac1",
-      "translated_at": "2026-04-30T12:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "65853418e40bb2050a75e85748249c4a4dba337be516e75e91b0fddae5aed92e",
-      "upstream_committed_at": "2025-01-04T01:51:25+00:00"
+      "input_hash": "95428b12c3e40ffa0c37b87878058c953c212b64291ad4dd540c069c2cb87672",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/devops-metrics.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/devops-metrics.md",
@@ -18354,11 +18354,11 @@
     },
     "content/handbook/marketing/developer-relations/_index.md": {
       "path": "content/handbook/marketing/developer-relations/_index.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "b7ac204cde6527d1745c27c47984ee53e36547177ecd808dbe3cc642c41c9d27",
-      "upstream_committed_at": "2026-06-04T10:07:48-04:00"
+      "input_hash": "2c7001d5c48a3c6786dc1a1e8ad0114f716d6344c1753fed2751c59249093f75",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/developer-relations/community-pathway.md": {
       "path": "content/handbook/marketing/developer-relations/community-pathway.md",
@@ -18386,11 +18386,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/_index.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/_index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:17:35Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "fee55016419cbd2456c822d3744a36da790ad75cb04b80a38ef9431185de870d",
-      "upstream_committed_at": "2026-06-08T11:30:44+02:00"
+      "input_hash": "ccf7e7aec4800e086fd579aea43a4faece595512377f4487c3f0e30c762dde21",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/calendar.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/calendar.md",
@@ -18410,11 +18410,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/community-response.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/community-response.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a413438ecece8d919ea66b60581f12ef089a2581442f6fde2679bbe4cee7d0ee",
-      "upstream_committed_at": "2026-01-05T11:25:17+01:00"
+      "input_hash": "3016400e5e24d3e9e2d8ee93e932f3ca7d14c50a430c41939899a06e981c0882",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/consultancy.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/consultancy.md",
@@ -18426,11 +18426,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/content.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/content.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:15:21Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "6d476ffae08ad933b04bf5de6569f03c57ee69e84f1efc1b3325ded409e9a8ef",
-      "upstream_committed_at": "2026-06-08T11:30:44+02:00"
+      "input_hash": "2c7c78c2aaadca9dd5be5b704565357501627ad4ce3ad8e4a7552bc5a0513d4d",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md",
@@ -18442,11 +18442,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/hacker-news.md",
-      "upstream_sha": "eff3a749f8927544a08073e8f660283a5d80478b",
-      "translated_at": "2026-05-22T12:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "ca4747c65516cef5840f8203ea46078002e49b1669311782e9c791f629123eec",
-      "upstream_committed_at": "2026-05-20T09:32:02-07:00"
+      "input_hash": "a29a2881676fe3d17f8e8b7194ead43abd7ef843637fbee735a8451df513f06a",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/learn-developer-advocacy.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/learn-developer-advocacy.md",
@@ -18482,11 +18482,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/social-media.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/social-media.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:15:21Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "4baa413a08ac0c87ca91bf986dd55b5a55f3ce846f1d76b3aca2c33cd775d0e8",
-      "upstream_committed_at": "2026-06-08T11:30:44+02:00"
+      "input_hash": "bd912fa2b3065d4d86e11d04369e3113efab161d9b4f70125c6bc74c788177f4",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/workflow.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/workflow.md",
@@ -18530,11 +18530,11 @@
     },
     "content/handbook/marketing/developer-relations/engineering/core-team.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/core-team.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "b8cac93c6c1df2a30e82b9db625f3f1785770e87ab3d72fc869d797491aa4f74",
-      "upstream_committed_at": "2026-03-19T19:48:12+00:00"
+      "input_hash": "f7ebc3e228093c1b055cd108bb66952918621cfe00d0b559293318cdc351f053",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/developer-relations/engineering/innovation-pitch-competition.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/innovation-pitch-competition.md",
@@ -18762,11 +18762,11 @@
     },
     "content/handbook/marketing/developer-relations/technical-marketing/_index.md": {
       "path": "content/handbook/marketing/developer-relations/technical-marketing/_index.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "c5bafdbf247b21973e5de249de45c14db8439f3f63fa5385cafb36a284c6ec71",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
+      "input_hash": "c034805d494848b31c0c2ca8152dccc6e862566baf18d9193b3fab06a216ff59",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/developer-relations/technical-marketing/assets2stakeholders.md": {
       "path": "content/handbook/marketing/developer-relations/technical-marketing/assets2stakeholders.md",
@@ -19194,11 +19194,11 @@
     },
     "content/handbook/marketing/field-marketing/_index.md": {
       "path": "content/handbook/marketing/field-marketing/_index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:15:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "36e08035d00cf4b4f839193b8ee2943823988274724d3ab12ca36a38e954f95a",
-      "upstream_committed_at": "2026-06-12T14:31:42+00:00"
+      "input_hash": "f8d4ea7c02b12ecc83c903830ba271e2bfcdb1e7b6e67046501a56c8cf9fca6c",
+      "upstream_committed_at": "2026-06-17T22:56:17+00:00"
     },
     "content/handbook/marketing/field-marketing/field-marketing-epics.md": {
       "path": "content/handbook/marketing/field-marketing/field-marketing-epics.md",

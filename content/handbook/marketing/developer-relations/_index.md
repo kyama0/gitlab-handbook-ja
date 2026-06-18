@@ -3,11 +3,11 @@ title: "Developer Relations"
 description: "Developer Relations チームは、コミュニティと連携し、GitLab への貢献に対するサポートと評価を確実に提供することで、GitLab のミッションを支えています。"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/developer-relations/
-upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
-translated_at: "2026-06-06T12:00:00Z"
+upstream_sha: aadd07ec986f77b5bd259fb54f0f41d1f3397544
+translated_at: "2026-06-18T05:33:51Z"
 translator: claude
 stale: false
-lastmod: 2026-06-04T10:07:48-04:00
+lastmod: 2026-06-16T12:33:40-04:00
 ---
 
 <i class="fas fa-bullhorn fa-fw color-orange font-awesome"></i> GitLab Developer Relations ハンドブックへようこそ
@@ -48,7 +48,7 @@ Developer Relations では、私たちのミッションとビジョンを会社
 
 Developer Relations 内のチームには、以下の Slack チャンネルでアクセスできます:
 
-- [#dev-advocacy-team](https://gitlab.slack.com/archives/CMELFQS4B): [Developer Advocate](/handbook/marketing/developer-relations/developer-advocacy/) チームは、コンテンツの更新、ソートリーダーシップと製品アイデアを共有し、コミュニティ対応や CFP などをサポートします。
+- [#developer-advocacy](https://gitlab.slack.com/archives/CMELFQS4B): [Developer Advocate](/handbook/marketing/developer-relations/developer-advocacy/) チームは、コンテンツの更新、ソートリーダーシップと製品アイデアを共有し、コミュニティ対応や CFP などをサポートします。
 - [#developer-relations-programs](https://gitlab.slack.com/archives/C024ZBWK5KJ): [Developer Relations Programs](/handbook/marketing/developer-relations/programs/) に関するすべての問い合わせ用
   - [#developer-relations-engineering](https://gitlab.slack.com/archives/C02R0NE6P6C): [Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/) に関するすべての問い合わせ用
   - [#developer-relations-community-contributions](https://gitlab.slack.com/archives/C02R0NE6P6C): コミュニティ貢献に関するディスカッション用
@@ -132,7 +132,7 @@ Developer Relations チームのすべてのメンバーは、[`gitlab-com`](htt
 - チームミーティング（隔週）
   - チームミーティングは Zoom で録画され、録画はミーティングノートの対応する日付にリンクされます。
 - 各チームメンバーとそのマネージャー間の 1:1 ミーティング。
-- 各チームメンバーが Slack の Geekbot 経由でチェックインする質問。回答は [#developer-relations-hangout](https://gitlab.slack.com/archives/C01C018V7V3) Slack チャンネルで共有されます。
+- 各チームメンバーが Slack の Geekbot 経由でチェックインする質問。回答は [#developer-advocacy-hangout](https://gitlab.enterprise.slack.com/archives/C01C018V7V3) Slack チャンネルで共有されます。
   - 月曜日（週末のソーシャル、その週の予定）
   - 木曜日（達成、思考、ブロッカーなどを共有するためのリマインダー）
 - 週末更新: 結果と勝利。Google Drive で `Developer Relations - End of Week updates` を検索してください。

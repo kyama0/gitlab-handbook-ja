@@ -1,11 +1,11 @@
 ---
 title: "コアチーム"
 upstream_path: /handbook/marketing/developer-relations/engineering/core-team/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: aadd07ec986f77b5bd259fb54f0f41d1f3397544
+translated_at: "2026-06-18T05:33:51Z"
 translator: claude
 stale: false
-lastmod: "2026-03-19T19:48:12+00:00"
+lastmod: "2026-06-16T12:33:40-04:00"
 ---
 
 ## コアチームメンバーになる
@@ -82,7 +82,7 @@ details summary * {
 - community-programs
 - competition
 - core
-- dev-advocacy-team
+- developer-advocacy
 - developer-relations
 - developer-relations-community-contributions
 - developer-relations-eng-and-programs

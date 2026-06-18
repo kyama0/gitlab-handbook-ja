@@ -1,11 +1,11 @@
 ---
 title: "ソーシャルメディアでのデベロッパーアドボカシー"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/social-media/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-translated_at: "2026-06-12T21:15:21Z"
+upstream_sha: aadd07ec986f77b5bd259fb54f0f41d1f3397544
+translated_at: "2026-06-18T05:33:51Z"
 translator: claude
 stale: false
-lastmod: 2026-06-08T11:30:44+02:00
+lastmod: 2026-06-16T12:33:40-04:00
 ---
 
 ## はじめに {#introduction}
@@ -532,7 +532,7 @@ KPI:
 
 良いフィードバックでも、回答に追加の専門家が必要な場合でも、ソーシャル共有を製品チャンネルに移動します。GitLab チームメンバーをタグ付けし、会話から恩恵を受けられる場合は、ソーシャルメディアで応答/議論するよう促します。白熱した議論については、ソーシャルメディア DRI の小さなグループ内に留めます。
 
-質問が来た場合や、より多くの専門家を巻き込む場合、デベロッパーアドボケイトは Slack の [#dev-advocacy-team](https://gitlab.slack.com/archives/CMELFQS4B) で手助けできます。
+質問が来た場合や、より多くの専門家を巻き込む場合、デベロッパーアドボケイトは Slack の [#developer-advocacy](https://gitlab.slack.com/archives/CMELFQS4B) で手助けできます。
 
 #### リリース管理 {#release-management}
 

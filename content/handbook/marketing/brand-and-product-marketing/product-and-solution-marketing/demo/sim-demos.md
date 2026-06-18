@@ -1,11 +1,11 @@
 ---
 title: "シミュレーションデモ"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/sim-demos/
-upstream_sha: c26b483f365d397f86ef45e60a892d0783588ac1
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: aadd07ec986f77b5bd259fb54f0f41d1f3397544
+translated_at: "2026-06-18T05:33:51Z"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-06-16T12:33:40-04:00"
 ---
 
 ## サマリー
@@ -49,7 +49,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - デモ実行ファイルを開きます
 - macOS Catalina の場合 - 次のセクションの手順に従い、ここに戻って続行します
 - Present Demo をクリックします
-- sim デモのヘルプが必要な場合は、Slack チャンネル `#dev-advocacy-team` で TMM に連絡するか、[Product and Solution Marketing Request issue](https://gitlab.com/gitlab-com/marketing/product-marketing/issues/new?issuable_template=A-SM-Support-Request) を開いてください。
+- sim デモのヘルプが必要な場合は、Slack チャンネル `#developer-advocacy` で Developer Advocacy に連絡するか、[Product and Solution Marketing Request issue](https://gitlab.com/gitlab-com/marketing/product-marketing/issues/new?issuable_template=A-SM-Support-Request) を開いてください。
 
 #### MacOS Catalina
 
