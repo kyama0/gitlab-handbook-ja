@@ -1,8 +1,8 @@
 ---
 title: AI Engineering
 upstream_path: /handbook/engineering/ai/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-translated_at: "2026-06-12T13:00:00Z"
+upstream_sha: ccb1e392292beca5aa187b61502738defd99d030
+translated_at: "2026-06-18T21:09:08Z"
 translator: claude
 stale: false
 lastmod: 2026-06-09T14:06:17+02:00

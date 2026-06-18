@@ -10,8 +10,8 @@ owning-stage: "~devops::tenant scale"
 participating-stages: ["~devops::data stores", "~devops::systems"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization-data-migration/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: ccb1e392292beca5aa187b61502738defd99d030
+translated_at: "2026-06-18T21:09:08Z"
 translator: claude
 stale: false
 lastmod: "2026-05-27T17:43:35+12:00"
@@ -90,4 +90,5 @@ Cells は、GitLab.com を水平方向にスケールするという主要な目
 
 ## 意思決定
 
-1. [ADR-002 Rollback strategy for organization data migrations to Protocells](decisions/002_rollback_strategy.md) - 組織データ移行のための切り戻しおよび fix-forward アプローチ
+1. [ADR-002 Protocells への組織データ移行のロールバック戦略](decisions/002_rollback_strategy.md) - 組織データ移行のためのスイッチバックおよび fix-forward アプローチ
+2. [ADR-003 Org Mover コントロールプレーン](decisions/003_org_mover_architecture.md) - Org Mover に関するハイレベルなコントロールプレーンの決定

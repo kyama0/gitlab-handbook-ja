@@ -8,8 +8,8 @@ owning-stage: "~devops::tenant scale"
 participating-stages: ["~devops::tenant scale", "~group::geo"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization-data-migration/decisions/002_rollback_strategy/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T00:00:00Z"
+upstream_sha: ccb1e392292beca5aa187b61502738defd99d030
+translated_at: "2026-06-18T21:09:08Z"
 translator: claude
 stale: false
 lastmod: "2026-05-01T16:14:47-04:00"

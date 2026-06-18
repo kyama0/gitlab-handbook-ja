@@ -9,20 +9,20 @@ owning-stage: "~devops::platforms"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/rate_limiting_simplification/
-upstream_sha: 4c7d94ca4f485376c886b7c2b9575091c8b7d3cf
-translated_at: "2026-04-27T00:00:00Z"
+upstream_sha: ccb1e392292beca5aa187b61502738defd99d030
+translated_at: "2026-06-18T21:09:08Z"
 translator: claude
 stale: false
 lastmod: "2025-12-18T17:49:08+00:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
-<!-- vale gitlab.FutureTense = NO -->
+<!-- value gitlab.FutureTense = NO -->
 
 <!-- This renders the design document header on the detail page, so don't remove it-->
-
 {{< engineering/design-document-header >}}
 
+> **注:** フェーズ 2（アプリケーションレベルの統一）以降の技術設計は、[統一レート制限アーキテクチャ](../unified_rate_limiting/)の設計ドキュメントで詳述されています。このドキュメントは引き続き高レベルのロードマップとして機能します。
 
 ## 概要
 

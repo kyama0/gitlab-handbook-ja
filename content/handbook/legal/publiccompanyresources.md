@@ -2,8 +2,8 @@
 title: "コーポレート & コンプライアンス法務"
 description: "このページはコーポレート法務情報に関する単一の情報源を提供します。"
 upstream_path: "/handbook/legal/publiccompanyresources/"
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-29T10:00:00Z"
+upstream_sha: "ccb1e392292beca5aa187b61502738defd99d030"
+translated_at: "2026-06-18T21:09:08Z"
 translator: claude
 stale: false
 lastmod: "2025-09-02T03:31:38+00:00"
@@ -13,7 +13,7 @@ lastmod: "2025-09-02T03:31:38+00:00"
 
 ## 売買可能期間のステータス
 
-- GitLab チームメンバーは、[売買可能期間ステータス Issue](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/12780) で現在の売買可能期間のステータスを確認できます。
+- GitLab チームメンバーは、[売買可能期間ステータス Issue](https://gitlab.com/gitlab-com/legal-and-compliance/-/work_items/3150) で現在の売買可能期間のステータスを確認できます。
 
 ## コーポレート法務との連携
 
