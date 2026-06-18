@@ -20202,11 +20202,11 @@
     },
     "content/handbook/tools-and-tips/editors-and-ides/visual-studio-code.md": {
       "path": "content/handbook/tools-and-tips/editors-and-ides/visual-studio-code.md",
-      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
-      "translated_at": "2026-05-08T00:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "f2653e3f92b8867b9be18bed04fbf0b90cef2b2ecd57e67a0ac3343c49ae1416",
-      "upstream_committed_at": "2023-08-02T14:58:24+01:00"
+      "input_hash": "a36eaadc1fb38e54023b9469ecc1e2ac069391b28ec0da6e6894bc41a7f9bbc4",
+      "upstream_committed_at": "2026-03-04T12:58:14-05:00"
     },
     "content/handbook/tools-and-tips/git.md": {
       "path": "content/handbook/tools-and-tips/git.md",
@@ -20418,11 +20418,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md",
-      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
-      "translated_at": "2026-05-07T22:45:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a05601812c977e3dcb65ae83c800a0bde14362d70916b354315bed7be98ee629",
-      "upstream_committed_at": "2026-04-20T15:18:57-07:00"
+      "input_hash": "cf42dc3e363415e72307cb904207ee6459ee424f7575766c7e43491d0d9d14eb",
+      "upstream_committed_at": "2026-06-15T14:21:35-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md",
@@ -21906,11 +21906,11 @@
     },
     "content/handbook/support/workflows/kibana.md": {
       "path": "content/handbook/support/workflows/kibana.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "497b0698fe92d05035f202e7d9dfb40227b9403828a71a3e395f87847f8699e7",
-      "upstream_committed_at": "2026-05-23T09:09:11+10:00"
+      "input_hash": "7b8991adac773e320cd9e55ab42330e4fc94c4b401bd8fb9a94216d8aa0c5c25",
+      "upstream_committed_at": "2026-06-17T08:41:47+00:00"
     },
     "content/handbook/support/workflows/knowledge_areas.md": {
       "path": "content/handbook/support/workflows/knowledge_areas.md",
@@ -23970,11 +23970,11 @@
     },
     "content/handbook/security/security-operations/sirt/_index.md": {
       "path": "content/handbook/security/security-operations/sirt/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "a5f749224c07ff67381069baf9d4a341d72079da5b9c2f33e17ab94fe74b5392",
-      "upstream_committed_at": "2026-05-07T10:56:05+00:00"
+      "input_hash": "dc19ca669276665b6ea2d4482aaab456b4b80414e396410fb3495d67e3d7b10c",
+      "upstream_committed_at": "2026-06-17T15:12:47-05:00"
     },
     "content/handbook/security/security-operations/sirt/engaging-security-on-call.md": {
       "path": "content/handbook/security/security-operations/sirt/engaging-security-on-call.md",
@@ -25922,11 +25922,11 @@
     },
     "content/handbook/security/customer-support-operations/_index.md": {
       "path": "content/handbook/security/customer-support-operations/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "5a516dc7d551729080797c12110f7063729476288041374e84511a37680fd950",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "input_hash": "fa7e04a2ec3a1a908ff8887e2c83037eba56e29f9b2cab238a7280c4900ae2ce",
+      "upstream_committed_at": "2026-06-15T10:20:42-05:00"
     },
     "content/handbook/security/customer-support-operations/audits/_index.md": {
       "path": "content/handbook/security/customer-support-operations/audits/_index.md",
@@ -26586,11 +26586,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/tickets/processor.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/tickets/processor.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
       "model": "claude-opus-4-7",
-      "input_hash": "f942b43cfc5bb81ba355a538c87ac39035a4df4ce14931eb1545689473fe3041",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "input_hash": "a2223c752b0852df17da392a9164f19ebe6c26e10ba7f416eee8d5e867021cfd",
+      "upstream_committed_at": "2026-06-16T15:01:39-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/tickets/round-robin.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/tickets/round-robin.md",
@@ -33167,6 +33167,54 @@
       "model": "claude-opus-4-7",
       "input_hash": "693de35d71c08cfb18eba88d7182b288020bccd7c86302d4340a90e2324c512f",
       "upstream_committed_at": "2026-06-10T11:10:58-04:00"
+    },
+    "content/handbook/upstream-studios/how-we-work/_index.md": {
+      "path": "content/handbook/upstream-studios/how-we-work/_index.md",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "32f62dc8dede2e0dd0ee1febb6832d5a36b7b22f1ae9b41703db51100f6cf2b6",
+      "upstream_committed_at": "2026-06-16T09:26:31-04:00"
+    },
+    "content/handbook/upstream-studios/how-we-work/ai-usage.md": {
+      "path": "content/handbook/upstream-studios/how-we-work/ai-usage.md",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "0c70142055009ec461fd774c8a94c356d8914f9265ed51ee6db9c5d026f711c6",
+      "upstream_committed_at": "2026-06-16T09:26:31-04:00"
+    },
+    "content/handbook/upstream-studios/how-we-work/claude-design.md": {
+      "path": "content/handbook/upstream-studios/how-we-work/claude-design.md",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "6744b3a052342cbf69cfbbae6c9b70d719bc3e7a049b68d4c7a92e4ea40a12cb",
+      "upstream_committed_at": "2026-06-16T09:26:31-04:00"
+    },
+    "content/handbook/upstream-studios/how-we-work/cross-stage-design-collaboration.md": {
+      "path": "content/handbook/upstream-studios/how-we-work/cross-stage-design-collaboration.md",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "24a1838e0759b2f669166271ea3aea7b6007a841be26f31320c8afc9ccbb8ee4",
+      "upstream_committed_at": "2026-06-16T09:26:31-04:00"
+    },
+    "content/handbook/upstream-studios/how-we-work/figma-provisioning.md": {
+      "path": "content/handbook/upstream-studios/how-we-work/figma-provisioning.md",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "76cfdd0cb89912f98156693d967e42c941e2a6f0c7e4f8dcb8377b3dfbc075cf",
+      "upstream_committed_at": "2026-06-16T09:26:31-04:00"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/usgov-coverage.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/usgov-coverage.md",
+      "upstream_sha": "aadd07ec986f77b5bd259fb54f0f41d1f3397544",
+      "translated_at": "2026-06-18T05:33:51Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ab957c1ffe94856961d6b1bdcce5a44e31113b83c6e62b35fcf6ca04ce27c9b5",
+      "upstream_committed_at": "2026-06-16T10:27:02-05:00"
     }
   }
 }
