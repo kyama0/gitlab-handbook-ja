@@ -6,11 +6,11 @@ creation-date: "2026-04-28"
 authors: [ "@abdwddd" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode/
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
+upstream_sha: "18de125bd3131a62f0a7026bc69c7de124fc6c8a"
+translated_at: "2026-06-20T13:54:37Z"
 translator: "claude"
 stale: false
-lastmod: "2026-06-02T21:58:26+00:00"
+lastmod: "2026-06-15T11:20:57+02:00"
 ---
 
 ## コンテキスト
@@ -134,7 +134,7 @@ Cell 間の Organization 移行では、データのカットオーバー前の*
 
 ワーカーが*クロス Organization*であるのは、その引数のいずれも Organization に解決されない場合か、Organization をまたぐコレクションを反復する場合（例: `Project.find_each` を反復する Cell 全体の cron ワーカー）のみです。反復ワーカーはワーカーレベルではクロス Organization ですが、行ごとには Organization スコープになり、反復中に読み取り専用 Organization をフィルタリングする必要があります（下記の *ポリシー* を参照）。
 
-単一のリゾルバが、与えられた `(worker_class, args)` ペアに対して `Organization | :cross_org | :unresolved` を返します。これは `Gitlab::ApplicationContext` がジョブペイロードから `project` / `namespace` / `user` をすでに抽出する方法を反映しており、このロジックが存在する唯一の場所です。
+単一のリゾルバが、与えられた `(worker_class, args)` ペアに対して `Organization | :cross_org | :unresolved` を返し、このロジックが存在する唯一の場所になります。これは新しい機能であることに注意してください。`Gitlab::ApplicationContext` はコンテキストをジョブペイロードとログに *シリアライズ* するだけで（`to_lazy_hash`、例: `project ⇒ project_path`、`organization_id ⇒ organization&.id`）、ペイロードからモデルを再構築することはありません。既存の読み戻しパスは、すでにシリアライズされた文字列を `Labkit::Context` に再生するだけです。現在ジョブ引数からコンテキストを導出する唯一の仕組みは、ワーカーごとの opt-in `context_for_arguments`（`Gitlab::BatchWorkerContext`）です。したがって、リゾルバは構築する必要があります。実行時にジョブ引数から Organization を解決するよう `ApplicationContext` を拡張するか、ワーカーごとの `context_for_arguments` に標準化します。
 
 #### ポリシー
 
