@@ -2,39 +2,24 @@
 title: "契約、バックグラウンドスクリーニング、試用期間、PIAA"
 description: "GitLab の契約情報および関連する手順。"
 upstream_path: /handbook/people-group/contracts-probation-periods/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:37:44Z"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-06-19T17:23:25+01:00"
 ---
 
 ## 契約テンプレート
 
-GitLab のチームメンバー契約テンプレートは、GitLab 内のみで（参照用に）アクセス可能です[（こちら）](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/#employment-agreements)。すべての GitLab チームメンバー契約の DRI は People Operations チームです。契約への変更はすべて People Operations チームに依頼する必要があり、Senior Director of Legal, Employment による承認が必要です。
+GitLab のチームメンバー契約テンプレートは、GitLab 内のみで（参照用に）アクセス可能です[（こちら）](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/#employment-agreements)。すべての契約テンプレートの DRI は Legal, Employment チームです。契約は定期的に監査および更新されます。雇用テンプレートへの変更に関する提案や依頼は Legal, Employment チームに行う必要があり、VP of Legal, Employment による承認が必要です。Handbook で [Legal, Employment への連絡*方法*](/handbook/legal/employment-law/#connect)を確認できます。
 
-## 契約テンプレートの変更を提案するためのプロセス
+## チームメンバーの個別契約
 
-契約は定期的に監査および更新されます。提案されたすべての変更は、現在の [Global Employment Contract Audit Issue](https://gitlab.com/gitlab-com/people-group/people-operations/General/-/blob/master/.gitlab/issue_templates/global-employment-contract-audit.md) に追加する必要があります。契約テンプレートのいずれかに**即時**変更が必要な場合は、以下のプロセスに従ってください:
+個別のチームメンバー契約（チームメンバーが採用された後）の DRI は People Operations チームです。チームメンバーの契約に関する問い合わせは、HelpLab チケットで People Operations チームに送る必要があり、問い合わせは必要に応じて転送またはエスカレーションされます。
 
-1. Contract Update Issue を作成する - テンプレートは[こちら](https://gitlab.com/gitlab-com/people-group/people-operations/General/-/blob/master/.gitlab/issue_templates/Contract-Update-Add.md)で見つかります。
-1. 関連する契約テンプレートを開きます。元の編集可能な Google ドキュメントに自動的にリダイレクトされます。
-1. ドキュメントの編集権限がある場合、ドキュメントビューを「提案」モード（右上隅）に変更します。編集権限がない場合は、ドキュメントにコメントすることも、People Operations チームメンバーに連絡して、契約に提案を追加して承認を得る支援を依頼することもできます。
-1. 行われた編集は、契約への提案として行われます。
-1. 必要な変更を行ったら、関連する変更を確認および承認するため、Senior Manager, People Operations および Director of Legal, Employment にタグを付けてください。
-1. 変更が承認されたら、Greenhouse 内の契約を更新するため Candidate Experience Specialist チームに通知することが重要です。
+**契約テンプレートへの承認済みの変更または編集は CES チームに通知されます**
 
-**必要な承認なしに契約への変更や編集を行ってはなりません。**
-
-Senior Manager, Global Enablement は、すべての Greenhouse トークンが正しいかどうかをレビューします
-
-1. 現在のトークンセットは[こちら](https://drive.google.com/file/d/1rq4qTV5WYABDLMaAx76UqmjNwb008qVw/view?usp=sharing)を参照してください
-1. 該当する場合、契約のトークンを更新します
-1. Greenhouse ですべてのトークンが利用可能かどうかをレビューします（そのためには管理者アクセスが必要です）:
-    - Greenhouse にログイン > クリック: Settings (Gear Icon) > Offer Templates > クリック: Upload New > Template Name: Country Name (OTE or no OTE) > `All Offices`、`All Departments`、`All Employment Types` がすべて選択されていることを確認 > 契約テンプレートを .doc ファイルとしてのみアップロード > Save Template
-    - Test をクリック > すべてのトークンに青いチェックマークがあり、トークンが有効であることを確認します
-1. 既に使用されている契約を更新する場合（まったく新しい法人ではない）、Greenhouse から契約の古いバージョンを削除する必要があります。
-1. テストだけで最終的な法的承認がまだ必要な場合は、アップロードした契約を再度削除します
+Director, Talent Brand & Talent Acquisition Enablement は、テンプレートの更新版を Greenhouse に追加して使用できるようにする前に、すべての Greenhouse トークンが正しいことを確認するレビューをサポートします。
 
 ## 発行済み雇用契約のエラーの修正
 

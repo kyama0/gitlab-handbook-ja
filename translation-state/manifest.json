@@ -6074,11 +6074,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:12:20Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "ac05e786d98c4db6ae653751ba872083caa2778ad6599a6f0db200dc02625e83",
-      "upstream_committed_at": "2026-06-09T19:10:50+01:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:37:44Z",
+      "model": "codex",
+      "input_hash": "c394ef6e3174ce84805edec7677caf636b695183bb96151e7619bba1db19e6e0",
+      "upstream_committed_at": "2026-06-19T12:48:58+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/023_code_structure_and_enforcement.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/023_code_structure_and_enforcement.md",
@@ -8330,19 +8330,19 @@
     },
     "content/handbook/engineering/architecture/design-documents/modular_monolith/bounded_contexts.md": {
       "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/bounded_contexts.md",
-      "upstream_sha": "5fcdd102793f56146077c82f37a89171dea6d0ba",
-      "translated_at": "2026-04-27T13:25:33Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1d816c217a32123324960193a30d6da4d2335cc6912fdcbc2ae5590c3157219b",
-      "upstream_committed_at": "2024-09-24T17:16:26+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:37:44Z",
+      "model": "codex",
+      "input_hash": "0e8cf110c0895383ee758d8fbd735625943a1291fc90bbd3708246452c9575e2",
+      "upstream_committed_at": "2026-06-15T16:29:33+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/001_modular_application_domain.md": {
       "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/001_modular_application_domain.md",
-      "upstream_sha": "5fcdd102793f56146077c82f37a89171dea6d0ba",
-      "translated_at": "2026-04-27T13:25:33Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "a2ac5fa11b14c4b3dafc2205690251b659228e9b460210c803392acfd61527e9",
-      "upstream_committed_at": "2024-08-23T13:02:20+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:37:44Z",
+      "model": "codex",
+      "input_hash": "beda36d321b2caeb2161420d7acf8ebafb823cb1e400122194a0a097e06e32f7",
+      "upstream_committed_at": "2026-06-15T16:29:32+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/002_bounded_contexts_definition.md": {
       "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/002_bounded_contexts_definition.md",
@@ -11970,11 +11970,11 @@
     },
     "content/handbook/engineering/devops/verify/pipeline-execution/_index.md": {
       "path": "content/handbook/engineering/devops/verify/pipeline-execution/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a1a0efcad8cedb26e8b9360de59f0b23a477db1de127e9ca36855ea284842db7",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:37:44Z",
+      "model": "codex",
+      "input_hash": "4c4ba830f1be584ac7b07c3f04d38906459b1041b5107c0621c54b832fa287e7",
+      "upstream_committed_at": "2026-06-16T17:33:30-04:00"
     },
     "content/handbook/engineering/devops/verify/pipeline-execution/jtbd.md": {
       "path": "content/handbook/engineering/devops/verify/pipeline-execution/jtbd.md",
@@ -15202,11 +15202,11 @@
     },
     "content/handbook/entity/gmbh-germany.md": {
       "path": "content/handbook/entity/gmbh-germany.md",
-      "upstream_sha": "cd48478a4249801968533c5281c38a2b58b5e688",
-      "translated_at": "2026-04-29T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "be0cccb76aaf129a74c5ff1871708301f3f70b874bc70e2336c4138949cfa9d0",
-      "upstream_committed_at": "2026-04-24T10:57:36-05:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:37:44Z",
+      "model": "codex",
+      "input_hash": "f6efde088dc14fd0a3c1f8e84858f0968224ca2df04cbbd540f667b5996309e6",
+      "upstream_committed_at": "2026-06-17T09:57:08-07:00"
     },
     "content/handbook/entity/iberia-srl-spain.md": {
       "path": "content/handbook/entity/iberia-srl-spain.md",
@@ -20202,11 +20202,11 @@
     },
     "content/handbook/tools-and-tips/editors-and-ides/visual-studio-code.md": {
       "path": "content/handbook/tools-and-tips/editors-and-ides/visual-studio-code.md",
-      "upstream_sha": "6f672d050777a6a6cb33fc5f31ccf71ebdd5b812",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "f2653e3f92b8867b9be18bed04fbf0b90cef2b2ecd57e67a0ac3343c49ae1416",
-      "upstream_committed_at": "2023-08-02T14:58:24+01:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:37:44Z",
+      "model": "codex",
+      "input_hash": "a36eaadc1fb38e54023b9469ecc1e2ac069391b28ec0da6e6894bc41a7f9bbc4",
+      "upstream_committed_at": "2026-03-04T12:58:14-05:00"
     },
     "content/handbook/tools-and-tips/git.md": {
       "path": "content/handbook/tools-and-tips/git.md",
@@ -20418,11 +20418,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk.md",
-      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
-      "translated_at": "2026-05-07T22:45:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a05601812c977e3dcb65ae83c800a0bde14362d70916b354315bed7be98ee629",
-      "upstream_committed_at": "2026-04-20T15:18:57-07:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:37:44Z",
+      "model": "codex",
+      "input_hash": "cf42dc3e363415e72307cb904207ee6459ee424f7575766c7e43491d0d9d14eb",
+      "upstream_committed_at": "2026-06-15T14:21:35-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md",
@@ -22290,11 +22290,11 @@
     },
     "content/handbook/support/workflows/usgovernment_oncall.md": {
       "path": "content/handbook/support/workflows/usgovernment_oncall.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:17:46Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "7148515d24f8c8ce2e6481c3a55b11f90c365922f263e573a7ee49c2a2375a12",
-      "upstream_committed_at": "2026-06-09T22:44:13-07:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:37:44Z",
+      "model": "codex",
+      "input_hash": "9a48ce69947dee0aeda1183dff4aaf9314f387b878848a6a326d689d2dfbb677",
+      "upstream_committed_at": "2026-06-19T16:04:17-04:00"
     },
     "content/handbook/support/workflows/usgovernment_oncall_checklist.md": {
       "path": "content/handbook/support/workflows/usgovernment_oncall_checklist.md",
@@ -23818,11 +23818,11 @@
     },
     "content/handbook/security/security-observations-risk-management.md": {
       "path": "content/handbook/security/security-observations-risk-management.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "cb95eb0189309669c4dc7487858123668dbe60203dd5c0cfa28c0da8da71a773",
-      "upstream_committed_at": "2026-03-19T12:39:13-07:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:37:44Z",
+      "model": "codex",
+      "input_hash": "a789b3dae921e7f205aedcf0ad022a5cfe8e2a2f6edf3e580872b57320aacb3c",
+      "upstream_committed_at": "2026-06-18T14:15:02-05:00"
     },
     "content/handbook/security/security-shadow-sec-eng-res.md": {
       "path": "content/handbook/security/security-shadow-sec-eng-res.md",
@@ -32002,11 +32002,11 @@
     },
     "content/handbook/people-group/contracts-probation-periods.md": {
       "path": "content/handbook/people-group/contracts-probation-periods.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "c003a758d9bcd174622a4336b9e450e38358b45fed8c901383999d389f6a84d7",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:37:44Z",
+      "model": "codex",
+      "input_hash": "c44b262a2cb15bedf255e09e0b8f28420bf4dceb0ab65df9090d95b535ce12c9",
+      "upstream_committed_at": "2026-06-19T17:23:25+01:00"
     },
     "content/handbook/people-group/directly-responsible-individuals.md": {
       "path": "content/handbook/people-group/directly-responsible-individuals.md",
@@ -32114,11 +32114,11 @@
     },
     "content/handbook/people-group/relocation.md": {
       "path": "content/handbook/people-group/relocation.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "7f01f964e2a23a5c0ba91de331019be9b666291dc3b6d7b0a5aa4bdb7fae530a",
-      "upstream_committed_at": "2026-04-10T12:24:21-07:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:37:44Z",
+      "model": "codex",
+      "input_hash": "4237297b4214df4c6f89fe74ba30dfcd5c76f5dd6544379e76dc3c4054f49edd",
+      "upstream_committed_at": "2026-06-18T12:00:28-04:00"
     },
     "content/handbook/people-group/talent-assessment.md": {
       "path": "content/handbook/people-group/talent-assessment.md",
