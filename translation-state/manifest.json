@@ -5674,11 +5674,11 @@
     },
     "content/handbook/engineering/ai/duo-chat/_index.md": {
       "path": "content/handbook/engineering/ai/duo-chat/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "e2ee60974d7e908cdd1a056ee08c731fd64a408adb64d206b41f5ff31dcee47e",
-      "upstream_committed_at": "2025-12-15T11:32:24-06:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:54:37Z",
+      "model": "codex",
+      "input_hash": "0e34514879a5c82a8598168acdca99a5b1622c09ddb110ea35cd951d8db2de93",
+      "upstream_committed_at": "2026-06-18T09:07:10+02:00"
     },
     "content/handbook/engineering/ai/duo-chat/technical-strategy.md": {
       "path": "content/handbook/engineering/ai/duo-chat/technical-strategy.md",
@@ -8570,11 +8570,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/organization-data-migration/decisions/002_rollback_strategy.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/decisions/002_rollback_strategy.md",
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "3a06322453e2a698f230ea1015d48fb7ceaf5210d3463842af7ed956ebb6d235",
-      "upstream_committed_at": "2026-05-01T16:14:47-04:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:54:37Z",
+      "model": "codex",
+      "input_hash": "098160695c4b52d5d2b091c8c284481c0889cc69d5f57d0fb9fb3a701487a390",
+      "upstream_committed_at": "2026-06-16T23:14:06+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/organization-data-migration/dms-blueprint.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/dms-blueprint.md",
@@ -8594,11 +8594,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/organization/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b30200a21fe19351b02ddb699e0d5331e62fb3f11ac1a140f12536e95c13013a",
-      "upstream_committed_at": "2026-05-19T11:24:31+12:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:54:37Z",
+      "model": "codex",
+      "input_hash": "df085c6071f7000ce0f7febd3d02990a6ecc13e88d3d747e868fd81fa65bcffb",
+      "upstream_committed_at": "2026-06-17T22:18:43+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/organization/billing.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization/billing.md",
@@ -9498,11 +9498,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/work_item_rest_api/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/work_item_rest_api/_index.md",
-      "upstream_sha": "d5f4aa38819ae2b572eb32e0d967394d0361a975",
-      "translated_at": "2026-04-27T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "ee21b038bebdf57f9662001a5a6dda3c0f411364f45643162d44f400dcdc0dc2",
-      "upstream_committed_at": "2026-02-10T10:24:36+01:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:54:37Z",
+      "model": "codex",
+      "input_hash": "a59e6d7c7ed6d9d8439847f55d8d7ab890184fe724a477721b1671a6fae1f1d2",
+      "upstream_committed_at": "2026-06-17T15:08:13+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/work_items/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/work_items/_index.md",
@@ -14042,11 +14042,11 @@
     },
     "content/handbook/engineering/releases/internal-releases/index.md": {
       "path": "content/handbook/engineering/releases/internal-releases/index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:15:09Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "2799f80c263c4dfd64ea005c6ea9b78b538dd992dd55147ca66bcbe281b9a4e4",
-      "upstream_committed_at": "2026-06-10T12:44:21-06:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:54:37Z",
+      "model": "codex",
+      "input_hash": "264031722428589f8c90c51a0ac5eee5785e26b48f3e17ab6790e69d4a398c4d",
+      "upstream_committed_at": "2026-06-17T16:22:24-06:00"
     },
     "content/handbook/engineering/releases/monthly-releases/index.md": {
       "path": "content/handbook/engineering/releases/monthly-releases/index.md",
@@ -19194,11 +19194,11 @@
     },
     "content/handbook/marketing/field-marketing/_index.md": {
       "path": "content/handbook/marketing/field-marketing/_index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:15:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "36e08035d00cf4b4f839193b8ee2943823988274724d3ab12ca36a38e954f95a",
-      "upstream_committed_at": "2026-06-12T14:31:42+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:54:37Z",
+      "model": "codex",
+      "input_hash": "f8d4ea7c02b12ecc83c903830ba271e2bfcdb1e7b6e67046501a56c8cf9fca6c",
+      "upstream_committed_at": "2026-06-17T22:56:17+00:00"
     },
     "content/handbook/marketing/field-marketing/field-marketing-epics.md": {
       "path": "content/handbook/marketing/field-marketing/field-marketing-epics.md",
@@ -26586,11 +26586,11 @@
     },
     "content/handbook/security/customer-support-operations/zendesk/tickets/processor.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/tickets/processor.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "f942b43cfc5bb81ba355a538c87ac39035a4df4ce14931eb1545689473fe3041",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:54:37Z",
+      "model": "codex",
+      "input_hash": "a2223c752b0852df17da392a9164f19ebe6c26e10ba7f416eee8d5e867021cfd",
+      "upstream_committed_at": "2026-06-16T15:01:39-05:00"
     },
     "content/handbook/security/customer-support-operations/zendesk/tickets/round-robin.md": {
       "path": "content/handbook/security/customer-support-operations/zendesk/tickets/round-robin.md",
@@ -30730,11 +30730,11 @@
     },
     "content/handbook/product/ux/experience-research/_index.md": {
       "path": "content/handbook/product/ux/experience-research/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "6f36ffd401f1671e57881767379ef2fe405fb7f092282958685703b7951034c3",
-      "upstream_committed_at": "2026-04-17T10:12:37-07:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:54:37Z",
+      "model": "codex",
+      "input_hash": "a0d60f78fd9e93e53a8d7cdeaa8eea90a33379ee713e766d71db8ab9d5a92596",
+      "upstream_committed_at": "2026-06-18T15:20:01+01:00"
     },
     "content/handbook/product/ux/experience-research/analyzing-research-data.md": {
       "path": "content/handbook/product/ux/experience-research/analyzing-research-data.md",
@@ -32834,11 +32834,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode.md",
-      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
-      "translated_at": "2026-06-02T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5b2952292cf097c882ee951def05694f10052c59d56c03a446cc83913f3230e0",
-      "upstream_committed_at": "2026-06-02T21:58:26+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:54:37Z",
+      "model": "codex",
+      "input_hash": "0b476caec49e1d201c16a654573b747c9071fde5db28063f1045c8d05d76fe67",
+      "upstream_committed_at": "2026-06-15T11:20:57+02:00"
     },
     "content/handbook/business-technology/readmes/rick-pollak.md": {
       "path": "content/handbook/business-technology/readmes/rick-pollak.md",
@@ -33207,6 +33207,30 @@
       "model": "codex",
       "input_hash": "db092de5807b3a5335da5942d75eebd42a141684cd1a20526175c25790cc4fb4",
       "upstream_committed_at": "2026-06-19T14:14:46-07:00"
+    },
+    "content/handbook/security/customer-support-operations/gitlab/usgov-coverage.md": {
+      "path": "content/handbook/security/customer-support-operations/gitlab/usgov-coverage.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:54:37Z",
+      "model": "codex",
+      "input_hash": "ab957c1ffe94856961d6b1bdcce5a44e31113b83c6e62b35fcf6ca04ce27c9b5",
+      "upstream_committed_at": "2026-06-16T10:27:02-05:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization/decisions/012_organization_space.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/012_organization_space.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:54:37Z",
+      "model": "codex",
+      "input_hash": "8b289e2f23780da6c23777a81c505fd66f57fd47c97f1f46b2111f31f70363cf",
+      "upstream_committed_at": "2026-06-16T15:44:39-07:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization/decisions/013_warn_on_tlg_creation.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/013_warn_on_tlg_creation.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:54:37Z",
+      "model": "codex",
+      "input_hash": "d101a83682e8e5eeb2be5f9c4645032199f2f6567e8b72b5058c67daefa77161",
+      "upstream_committed_at": "2026-06-17T22:18:42+12:00"
     }
   }
 }

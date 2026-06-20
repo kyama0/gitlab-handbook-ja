@@ -1,18 +1,19 @@
 ---
 title: "ワークアイテム REST API"
-status: proposed
+description: "GitLab REST 規約に沿ったリソース指向インターフェースである Work Item REST API の設計ドキュメント。"
+status: ongoing
 creation-date: "2026-02-05"
 authors: ["@nicolasdular"]
 coaches: ["ntepluhina", "@engwan"]
-dris: ["@nicolasdular"]
+dris: []
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/work_item_rest_api/
-upstream_sha: d5f4aa38819ae2b572eb32e0d967394d0361a975
-translated_at: "2026-04-27T00:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:54:37Z"
 translator: claude
 stale: false
-lastmod: "2026-02-10T10:24:36+01:00"
+lastmod: "2026-06-17T15:08:13+02:00"
 ---
 
 
@@ -73,6 +74,8 @@ lastmod: "2026-02-10T10:24:36+01:00"
 4. 機能/ウィジェットには別の `features` パラメータを追加します。
 5. `features` 内のネストされたフィールドの選択は許可しません。
 
+レスポンスは、GitLab REST API の他の部分と一貫するように、フィールド名に `snake_case` を使用します。これはトップレベルフィールド、`features` キー、および各機能内のネストされたフィールドに適用されます。
+
 `features` は最近 GraphQL に追加したフラット化された表現です。すべてのコンシューマーが切り替えたら、パリティのために古い `widgets` 配列の廃止を計画しています。
 
 スパースフィールドをサポートする理由:
@@ -131,39 +134,40 @@ curl --request POST \
 
 ### ワークアイテムの更新
 
-ワークアイテムの更新は、より典型的な REST API スキーマに従うために異なるペイロード構造を使用する必要があります。各機能に対して別々のエンドポイントを提供するとともに、メインの更新エンドポイントでフラット化された `features` オブジェクトもサポートする予定です。ネストされたキーは変換を最小限に抑えるために引き続き GraphQL ウィジェット入力に合わせます。
+現在、更新は単一の `PATCH` エンドポイントを通じて行われます。これは GraphQL の更新ミューテーションが変更を扱う方法を反映しており、コアフィールドはトップレベルで設定され、機能の変更は GraphQL ウィジェット入力に合わせたネストキーを持つフラット化された `features` オブジェクトを通じて流れます。これにより、サービス層への変換を最小限に抑え、REST と GraphQL のコントラクトを互いに近く保てます。
 
 #### 更新リクエスト例
 
-- **コアフィールドの更新**
+```shell
+curl --request PATCH \
+  --header "PRIVATE-TOKEN: <your_access_token>" \
+  --header "Content-Type: application/json" \
+  --data '{
+    "title": "Work Item REST API rollout",
+    "state": "closed",
+    "features": {
+      "description": { "description": "Track the rollout milestones and metrics." },
+      "labels": { "add_label_ids": [81], "remove_label_ids": [23, 47] }
+    }
+  }' \
+  "https://gitlab.example.com/api/v4/namespaces/gitlab-org%2Fplan/-/work_items/42"
+```
 
-  ```shell
-  curl --request PUT \
-    --header "PRIVATE-TOKEN: <your_access_token>" \
-    --header "Content-Type: application/json" \
-    --data '{
-      "title": "Work Item REST API rollout",
-      "state": "closed",
-      "features": {
-        "description": { "description": "Track the rollout milestones and metrics." }
-      }
-    }' \
-    "https://gitlab.example.com/api/v4/namespaces/gitlab-org%2Fplan/-/work_items/42"
-  ```
+このコールはワークアイテム `42` のタイトルと状態を更新し、説明を更新し、フラット化された `features` オブジェクトを通じてラベルを調整します。
 
-  このコールはワークアイテム `42` のタイトルと状態を更新し、フラット化された `features` オブジェクトを通じて説明を更新します。
+#### 機能ごとのエンドポイント（将来の検討事項）
 
-- **専用の機能エンドポイントでラベルを更新**
+GA 前に、クライアントが `features` ペイロード全体を再構築せずに単一の機能を更新できるよう、機能ごとの専用エンドポイントを導入する可能性があります。これはより典型的な REST の形ですが、現時点では実装されておらず、コミットメントではなく未解決の選択肢です。想定している形の例:
 
-  ```shell
-  curl --request PATCH \
-    --header "PRIVATE-TOKEN: <your_access_token>" \
-    --header "Content-Type: application/json" \
-    --data '{ "add_label_ids": [81], "remove_label_ids": [23, 47] }' \
-    "https://gitlab.example.com/api/v4/groups/gitlab-org/-/work_items/42/labels"
-  ```
+```shell
+curl --request PATCH \
+  --header "PRIVATE-TOKEN: <your_access_token>" \
+  --header "Content-Type: application/json" \
+  --data '{ "add_label_ids": [81], "remove_label_ids": [23, 47] }' \
+  "https://gitlab.example.com/api/v4/groups/gitlab-org/-/work_items/42/labels"
+```
 
-  このエンドポイントはラベルの更新のみに焦点を当て、GraphQL 入力と同じフィールド名を再利用しながら、大きな多目的ペイロードを避ける方法を示しています。
+このような機能固有のルートは、GraphQL 入力と同じフィールド名を再利用しながら、大きな多目的ペイロードを避けます。導入される場合、それらはメインの更新エンドポイント上のフラット化された `features` オブジェクトを置き換えるのではなく、補完します。
 
 ### ワークアイテムの削除
 
@@ -177,11 +181,6 @@ curl --request DELETE \
   "https://gitlab.example.com/api/v4/projects/gitlab-org%2Fplan/-/work_items/42"
 ```
 
-## 懸念事項とオープンな質問
-
-1. **レスポンスのケーシング**: REST レスポンスが残りの GitLab REST API と同様に snake_case を使用するか、GraphQL フィールド名に合わせて camelCase を使用するかを決定する必要があります。両方を混在させると一貫性が損なわれるため、GA 前に明確なガイドラインが必要です。
-2. GraphQL API と同じペイロード構造を共有する単一の `PUT /work_items/:id` エンドポイントを公開することもできます。REST らしくはありませんが、多くの作業を省けます。
-
 ## ロールアウト計画
 
-API は `experimental` とマークされ、`:work_items_rest_api` フラグ（ユーザーをアクターとしてデフォルトはオフ）で制御されます。REST API を正確に実装することが重要であり、破壊的な変更を導入できないため、API が期待を満たすことを確認した後にのみ `experimental` タグを削除します。
+API は `experimental` とマークされ、`:work_item_rest_api` フラグ（ユーザーをアクターとしてデフォルトはオフ）で制御されます。REST API を正確に実装することが重要であり、破壊的な変更を導入できないため、API が期待を満たすことを確認した後にのみ `experimental` タグを削除します。
