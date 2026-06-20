@@ -116,7 +116,7 @@ lastmod: "2026-06-15T16:29:33+01:00"
 ### 決定
 
 1. [ADR-001: アプリケーションドメインのモジュール化](decisions/001_modular_application_domain/)? アプリケーションドメインとインフラストラクチャコードのモジュール化から始める。
-1. [ADR-002: フィーチャーカテゴリを中心にバウンデッドコンテキストを定義する](decisions/002_bounded_contexts_definition/)。コード内の SSoT として。
+1. [ADR-002: 機能カテゴリを中心にバウンデッドコンテキストを定義する](decisions/002_bounded_contexts_definition/)。コード内の SSoT として。
 1. [ADR-003: すべてのモジュールとライブラリにスチュワードを割り当てる](decisions/003_stewardship/)。
 1. [ADR-004: 横断的ライブラリを gem に抽出する](decisions/004_library_extraction/)。
 
@@ -146,7 +146,7 @@ lastmod: "2026-06-15T16:29:33+01:00"
 1. **支援インフラストラクチャを構築する**。シェルアプリケーション、モジュールレジストリ、Context provider API です。
 1. **"Frontend LabKit" を作成する**。共有ライブラリを標準化し、モジュール間で一貫したユーザー体験を確保します。
 
-詳細な設計については、[Frontend decomposition](frontend/_index.md) を参照してください。
+詳細な設計については、[フロントエンド分解](frontend/_index.md) を参照してください。
 
 ## 参考資料
 

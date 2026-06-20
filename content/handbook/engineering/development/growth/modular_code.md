@@ -88,6 +88,6 @@ Growth ではチームに [Fullstack Engineers](/handbook/engineering/developmen
 
 ## 関連
 
-1. [Technical Exploration ("Spike") Guidelines](technical_spikes) — 実装前にモジュラー設計の選択肢を探索することが多い場所。
-1. [Milestone Planning, Refinement and Estimation](initiative_refinement_estimation) — 適切な継ぎ目を構築するコストを見積もりに反映すべき場所。
-1. [Engineering DRI for Large-Scale Initiatives](engineering_dri) — より大規模で複数 Issue にまたがる取り組みでモジュラー境界を調整するためのもの。
+1. [技術的探求（「スパイク」）ガイドライン](technical_spikes) — 実装前にモジュラー設計の選択肢を探索することが多い場所。
+1. [Growth マイルストーン計画・リファインメント・見積もり](initiative_refinement_estimation) — 適切な継ぎ目を構築するコストを見積もりに反映すべき場所。
+1. [大規模イニシアチブのエンジニアリング DRI](engineering_dri) — より大規模で複数 Issue にまたがる取り組みでモジュラー境界を調整するためのもの。
