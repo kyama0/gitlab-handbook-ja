@@ -8,44 +8,44 @@ translator: claude
 stale: false
 ---
 
-## Core Team member になる
+## Core Team メンバーになる
 
-新しい member は、以下の steps を通じていつでも [Core Team](https://about.gitlab.com/community/core-team/) に追加できます:
+新しいメンバーは、以下のステップを通じていつでも [Core Team](https://about.gitlab.com/community/core-team/) に追加できます:
 
-1. Core Team member または GitLab Team member は、wider community から新しい member をいつでも nominate できます。possible negative feedback を可能な限り小さな setting に limit するため、[Core Team group](https://gitlab.com/groups/gitlab-org/gitlab-core-team/-/issues) の confidential issue を使用します。
-2. nominee は、4 週間以内にすべての current core team members の 3 分の 2（2/3）から positive votes を受け取り、nomination を accept した場合、Core Team に追加されます。
-3. 新しい member が追加されたら、下の [Core Team member orientation section](/handbook/marketing/developer-relations/engineering/core-team/#core-team-member-orientation) に outline された steps に従って onboarding process を開始します。
+1. Core Team メンバーまたは GitLab チームメンバーは、より広いコミュニティから新しいメンバーをいつでも推薦できます。否定的なフィードバックの可能性をできるだけ小さな場に限定するため、[Core Team グループ](https://gitlab.com/groups/gitlab-org/gitlab-core-team/-/issues) の Confidential Issue を使用します。
+2. 推薦された人は、4 週間以内に現在の Core Team メンバー全員の 3 分の 2（2/3）から賛成票を受け取り、推薦を受け入れた場合、Core Team に追加されます。
+3. 新しいメンバーが追加されたら、下の [Core Team メンバーオリエンテーションセクション](/handbook/marketing/developer-relations/engineering/core-team/#core-team-member-orientation) に概説されたステップに従ってオンボーディングプロセスを開始します。
 
-## Monthly Core Team meetings
+## 月次 Core Team ミーティング
 
-time differences と other commitments のため、Core Team は毎月第 3 火曜日に asynchronously に meeting します。
-meeting の call logistics/agenda/notes は [Core Team issue tracker](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues) で利用できます。
-すべての meeting recordings は [Core Team meeting Playlist](https://www.youtube.com/playlist?list=PLFGfElNsQthZ12EUkq3N9QlThvkf3WGnZ) で利用できます。
+時差やその他の都合があるため、Core Team は毎月第 3 火曜日に非同期でミーティングを行います。
+ミーティングの通話ロジスティクス、アジェンダ、メモは [Core Team Issue トラッカー](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues) で利用できます。
+すべてのミーティング録画は [Core Team ミーティングプレイリスト](https://www.youtube.com/playlist?list=PLFGfElNsQthZ12EUkq3N9QlThvkf3WGnZ) で利用できます。
 
-## Core Team members への連絡
+## Core Team メンバーへの連絡
 
-Core Team members には、issues または merge requests で `@gitlab-org/gitlab-core-team` を [mentioning](https://docs.gitlab.com/ee/user/group/subgroups/index#mentioning-subgroups) することで連絡できます。
+Core Team メンバーには、Issue または Merge Request で `@gitlab-org/gitlab-core-team` を[メンション](https://docs.gitlab.com/ee/user/group/subgroups/index#mentioning-subgroups)することで連絡できます。
 
-GitLab が primary means of contact ですが、Core Team には [#core](https://gitlab.slack.com/messages/core) Slack channel でも連絡できます。
+GitLab が主な連絡手段ですが、Core Team には [#core](https://gitlab.slack.com/messages/core) Slack チャンネルでも連絡できます。
 
-誰でも [Core Team issue tracker](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues) に issue を open できます。
+誰でも [Core Team Issue トラッカー](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues) で Issue を作成できます。
 
-## Offboarding and stepping down gracefully
+## オフボーディングと円滑な退任
 
-Core Team で serving することができなくなった、または興味がなくなった場合は、`#core` Slack channel で announcement してください。
-step down すると inactive [Core Team](https://about.gitlab.com/community/core-team/) member になります。
-Core Team member が step down すると、別の Core team member が [`offboarding` template](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues/new?issuable_template=offboarding) を使って issue を作成し、outline された steps に従います。
+Core Team で務め続けることができなくなった、または興味がなくなった場合は、`#core` Slack チャンネルで告知してください。
+退任すると、非アクティブな [Core Team](https://about.gitlab.com/community/core-team/) メンバーになります。
+Core Team メンバーが退任すると、別の Core Team メンバーが [`offboarding` テンプレート](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues/new?issuable_template=offboarding) を使って Issue を作成し、概説されたステップに従います。
 
-## Core Team Member Orientation
+## Core Team メンバーオリエンテーション {#core-team-member-orientation}
 
-1. orientation process を開始する前に、nominated member に email して興味があることを confirm します。
-1. [Core Team Project](https://gitlab.com/gitlab-org/gitlab-core-team/general) で [Core Team Member Onboarding Issue Template](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues/new?issuable_template=onboarding) を使って issue を作成し、outline された steps に従います。
+1. オリエンテーションプロセスを開始する前に、推薦されたメンバーにメールを送り、関心があることを確認します。
+1. [Core Team Project](https://gitlab.com/gitlab-org/gitlab-core-team/general) で [Core Team Member Onboarding Issue Template](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues/new?issuable_template=onboarding) を使って Issue を作成し、概説されたステップに従います。
 
-   - Core team members は access を付与される前に NDA に sign しなければなりません。
+   - Core Team メンバーはアクセスを付与される前に NDA に署名しなければなりません。
 
-## Core Team Group
+## Core Team グループ
 
-すべての Core Team members は、GitLab.com 上の [`gitlab-org/gitlab-core-team`](https://gitlab.com/gitlab-org/gitlab-core-team/) group の一部です。この group は specific automation purposes のために特定の structure を持っています:
+すべての Core Team メンバーは、GitLab.com 上の [`gitlab-org/gitlab-core-team`](https://gitlab.com/gitlab-org/gitlab-core-team/) グループの一部です。このグループは、特定の自動化目的のために固有の構造を持っています:
 
 ```mermaid
 graph TD
@@ -53,20 +53,20 @@ graph TD
     A --> C["general (project)"]
 ```
 
-[`community-members`](https://gitlab.com/gitlab-org/gitlab-core-team/community-members) group は次のために存在します:
+[`community-members`](https://gitlab.com/gitlab-org/gitlab-core-team/community-members) グループは次のために存在します:
 
-- [triaging を facilitate する](https://gitlab.com/gitlab-org/quality/triage-ops/-/merge_requests/65) こと、および;
-- [Core Team members が changelog で credited されることを ensure する](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/69076) こと
+- [トリアージを促進する](https://gitlab.com/gitlab-org/quality/triage-ops/-/merge_requests/65)こと、および;
+- [Core Team メンバーが changelog にクレジットされるようにする](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/69076)こと
 
-## Core Team member benefits
+## Core Team メンバーの特典
 
-Core Team に加わることが意味する trust、value、recognition の一環として、各 member には contributions を support するいくつかの benefits が付与されます。
+Core Team に加わることが意味する信頼、価値、認知の一環として、各メンバーには貢献を支援するいくつかの特典が付与されます。
 
-### Slack access
+### Slack アクセス
 
-Core Team members は [Core Team Member Orientation](#core-team-member-orientation) の一環として、[GitLab team の Slack instance への access](/handbook/tools-and-tips/slack/#channels-access) を付与されます。
+Core Team メンバーは [Core Team メンバーオリエンテーション](#core-team-member-orientation) の一環として、[GitLab チームの Slack インスタンスへのアクセス](/handbook/tools-and-tips/slack/#channels-access)を付与されます。
 
-Core が access すべき / access している up-to-date channels の list は、[Core Team and Slack](https://docs.google.com/spreadsheets/d/1kohQBbvk2JSl3DXrmF5TDsWVoAMi_yujFWzzAP6vq2M/edit#gid=0) Google Sheets と以下の list にあります:
+Core Team がアクセスすべき、またはアクセスしている最新のチャンネル一覧は、[Core Team and Slack](https://docs.google.com/spreadsheets/d/1kohQBbvk2JSl3DXrmF5TDsWVoAMi_yujFWzzAP6vq2M/edit#gid=0) Google Sheets と以下の一覧にあります:
 
 <style>
 details summary * {
@@ -78,7 +78,7 @@ details summary * {
 
 <summary>
 
-#### Core Team が access できる Slack channels
+#### Core Team がアクセスできる Slack チャンネル
 
 </summary>
 
@@ -156,7 +156,7 @@ details summary * {
 
 <summary>
 
-#### Core Team が access できない Slack channels
+#### Core Team がアクセスできない Slack チャンネル
 
 </summary>
 
@@ -175,62 +175,62 @@ details summary * {
 
 </details>
 
-#### Core Team access to Slack channels を request する
+#### Core Team の Slack チャンネルアクセスをリクエストする
 
-1. requested new channel(s) を含む [access request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) を submit してください。
-1. issue を [Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/#team-members) の member に assign してください。その member が next steps を完了します。
-1. Developer Relations Engineering は channel(s) owner を identify し、Core Team members をその channel(s) に入れることに agree するか comment を残して request を review するよう invite します。
-1. successful review の後、issue は Slack Admins に handed/assigned され、Core Team members を channels に invite し、上記 list が update されます。
+1. リクエストする新しいチャンネルを含む[アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)を送信してください。
+1. Issue を [Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/#team-members) のメンバーにアサインしてください。そのメンバーが次のステップを完了します。
+1. Developer Relations Engineering はチャンネルオーナーを特定し、Core Team メンバーをそのチャンネルに参加させることに同意するかどうかコメントを残してリクエストをレビューするよう依頼します。
+1. レビューが成功した後、Issue は Slack Admins に引き渡し／アサインされ、Core Team メンバーがチャンネルに招待され、上記の一覧が更新されます。
 
-Core Team members が access できるすべての channels は、channel に post するときに [SAFE guidelines](/handbook/legal/safe-framework/) に従うべきです。Core Team Members は NDA に sign していますが、GitLab team members とは見なされません。
+Core Team メンバーがアクセスできるすべてのチャンネルでは、チャンネルに投稿するときに [SAFE ガイドライン](/handbook/legal/safe-framework/)に従うべきです。Core Team メンバーは NDA に署名していますが、GitLab チームメンバーとは見なされません。
 
-### GitLab projects の Developer permissions
+### GitLab プロジェクトの Developer 権限
 
-development experience を改善するため、Core Team members には GitLab（product）の projects の大多数が存在する [`gitlab-org` group](https://gitlab.com/gitlab-org) で [`Developer` permissions](https://docs.gitlab.com/ee/user/permissions#group-members-permissions) が付与されます。その group 配下の任意の project では、他の abilities とともに次が可能になります:
+開発体験を改善するため、Core Team メンバーには GitLab（製品）のプロジェクトの大多数が存在する [`gitlab-org` グループ](https://gitlab.com/gitlab-org)で [`Developer` 権限](https://docs.gitlab.com/ee/user/permissions#group-members-permissions)が付与されます。そのグループ配下の任意のプロジェクトでは、他の機能とともに次が可能になります:
 
-- forks ではなく source project 上に branches を作成する
-- merge requests を assign する
-- issues を assign する
-- labels を manage and assign する
+- fork ではなくソースプロジェクト上にブランチを作成する
+- Merge Request をアサインする
+- Issue をアサインする
+- ラベルを管理しアサインする
 
-現時点では、Core Team members は GitLab company に関連する projects and processes に使われる [`gitlab-com` group](https://gitlab.com/gitlab-com) には追加されません。
+現時点では、Core Team メンバーは GitLab 社に関連するプロジェクトとプロセスに使われる [`gitlab-com` グループ](https://gitlab.com/gitlab-com)には追加されません。
 
-[Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/#team-members) は、new Core Team member の orientation issue の一環として、通常この permission を付与する action を取ります。
+[Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/#team-members) は、新しい Core Team メンバーのオリエンテーション Issue の一環として、通常この権限を付与する作業を行います。
 
-### Team page listing
+### チームページへの掲載
 
-GitLab team との affiliation and closeness を強調し、profile の visibility を高めるため、Core Team members は [GitLab team page に自分自身を追加](/handbook/about/editing-handbook/#add-yourself-to-the-team-page) し、[Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/#team-members) の任意の member に review を依頼できます。
+GitLab チームとの所属関係と近さを強調し、プロフィールの可視性を高めるため、Core Team メンバーは [GitLab チームページに自分自身を追加](/handbook/about/editing-handbook/#add-yourself-to-the-team-page)し、[Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/#team-members) の任意のメンバーにレビューを依頼できます。
 
-これにより、その profile は [Core Team page](https://about.gitlab.com/community/core-team/) にも掲載されます。
+これにより、そのプロフィールは [Core Team ページ](https://about.gitlab.com/community/core-team/)にも掲載されます。
 
-### GitLab top tier license
+### GitLab 最上位ティアライセンス
 
-contributions を可能にし、GitLab capabilities への insight を得るため、Core Team members は [development purposes 向けの free top tier license を request](/handbook/marketing/developer-relations/engineering/community-contributors-workflows#contributing-to-the-gitlab-enterprise-edition-ee) できます。
+貢献を可能にし、GitLab の機能への洞察を得るため、Core Team メンバーは[開発目的の無料最上位ティアライセンスをリクエスト](/handbook/marketing/developer-relations/engineering/community-contributors-workflows#contributing-to-the-gitlab-enterprise-edition-ee)できます。
 
-SaaS または self-managed instances の GitLab top tier licenses は Core Team members に 1 年間付与され、Core Team member term 中にさらに 1 年 renew できます。member が step down しても GitLab に時折 contribute したい場合は、引き続き GitLab license の eligible ですが、renewal period は他の GitLab community members に与えられる [standard 3 months](/handbook/marketing/developer-relations/engineering/community-contributors-workflows#contributing-to-the-gitlab-enterprise-edition-ee) になります。
+SaaS またはセルフマネージドインスタンスの GitLab 最上位ティアライセンスは Core Team メンバーに 1 年間付与され、Core Team メンバーの任期中にさらに 1 年更新できます。メンバーが退任しても GitLab に時折貢献したい場合は、引き続き GitLab ライセンスの対象になりますが、更新期間は他の GitLab コミュニティメンバーに与えられる[標準の 3 か月](/handbook/marketing/developer-relations/engineering/community-contributors-workflows#contributing-to-the-gitlab-enterprise-edition-ee)になります。
 
-Core Team members が request できる seats の数に specific limit はありません。私たちは Core Team members が development purposes に必要な users 数を自分の judgment で estimate し、for-profit purposes に license を使わないことを trust します。
+Core Team メンバーがリクエストできるシート数に具体的な上限はありません。私たちは、Core Team メンバーが開発目的に必要なユーザー数を自身の判断で見積もり、営利目的でライセンスを使わないことを信頼しています。
 
-### JetBrains license
+### JetBrains ライセンス
 
-GitLab への code contributions を support するため、Core Team members は [development purposes 向け JetBrains license を request](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/) できます。
+GitLab へのコード貢献を支援するため、Core Team メンバーは[開発目的の JetBrains ライセンスをリクエスト](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/)できます。
 
-> Disclaimer: applicable trade control law により、Cuba、Iran、North Korea、Syria、Ukraine、Russia、Belarus には reimbursement を提供できません。この list は予告なく変更される場合があります。
+> 免責事項: 適用される貿易管理法により、Cuba、Iran、North Korea、Syria、Ukraine、Russia、Belarus には払い戻しを提供できません。このリストは予告なく変更される場合があります。
 
-#### Process
+#### プロセス
 
-- `#core` team slack channel で request を raise する。
-- approve されたら、relevant license を purchase する。
-- `ap@gitlab.com` に email し、`nveenhof@gitlab.com` を cc に含める。次を含めます:
-  - receipt の copy。
-  - reimbursement のための international bank details。
-  - @nick_vh は approval を reply するべきです。
-  - AP が reimbursement process を進めます。
+- `#core` チーム Slack チャンネルでリクエストを上げる。
+- 承認されたら、該当するライセンスを購入する。
+- `ap@gitlab.com` にメールし、`nveenhof@gitlab.com` を cc に含める。次を含めます:
+  - 領収書のコピー。
+  - 払い戻しのための国際銀行口座情報。
+  - @nick_vh は承認を返信する必要があります。
+  - AP が払い戻しプロセスを進めます。
 
-### GitLab events への sponsored access
+### GitLab イベントへのスポンサー付きアクセス
 
-in-person または virtual events での contribution を support するため、Core Team members は GitLab events（例: GitLab Contribute、GitLab Commit）への sponsored access（subscription、accommodation、travel）の eligible になります。
+対面またはバーチャルイベントでの貢献を支援するため、Core Team メンバーは GitLab イベント（例: GitLab Contribute、GitLab Commit）へのスポンサー付きアクセス（サブスクリプション、宿泊、移動）の対象になります。
 
-### Personalized merchandise
+### パーソナライズされたグッズ
 
-時折、GitLab team は Core Team members 限定の personalized merchandise を提供し、style をもって contribute できるようにする場合があります。
+時折、GitLab チームは Core Team メンバー限定のパーソナライズされたグッズを提供し、スタイルをもって貢献できるようにする場合があります。
