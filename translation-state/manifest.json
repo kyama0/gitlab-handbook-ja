@@ -4298,11 +4298,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab2.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab2.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T04:51:58Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "775fdf6450b989838e8861bad2d547ad46ccf7d6eeabc45bd0cad4a5bb24a392",
-      "upstream_committed_at": "2026-04-16T17:13:51-04:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T12:49:33Z",
+      "model": "codex",
+      "input_hash": "d135322ecfdf9304dac8954ae289bed168deb26675a4b6a9f9e2bab76c9463d0",
+      "upstream_committed_at": "2026-06-15T14:13:50-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab3.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab3.md",
@@ -4314,19 +4314,19 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "1bb1ce3da822453011b449da02784948dbd8bc5eb90e0440e94e53fd72f29535",
-      "upstream_committed_at": "2026-05-01T11:26:38-04:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T12:49:33Z",
+      "model": "codex",
+      "input_hash": "0bc457a2c3c0533e4c84686ae38b8b42f633d11210753ff0e31c6359ae917380",
+      "upstream_committed_at": "2026-06-15T14:13:50-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab5.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab5.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9277b7dc3c1fec93fb99b39868d7549c218daba401429ddad25aee6a96c8d1e8",
-      "upstream_committed_at": "2026-05-01T11:26:38-04:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T12:49:33Z",
+      "model": "codex",
+      "input_hash": "fc1f7472f9416df9334ca15674a3de52b0a8d0e6c46e61f0f992b7690baf9df3",
+      "upstream_committed_at": "2026-06-15T14:13:50-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandson.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandson.md",
@@ -5466,11 +5466,11 @@
     },
     "content/handbook/engineering/ai/_index.md": {
       "path": "content/handbook/engineering/ai/_index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T13:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "12db9ffb2c886d70ed31158d71cb812736bd96d67a39e614ddccaa4ed17d01ed",
-      "upstream_committed_at": "2026-06-09T14:06:17+02:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T12:49:33Z",
+      "model": "codex",
+      "input_hash": "48cff0ccc212a919d0a5e79e4e38bbb905d63f4e3f5cf184170d40e162a92cb6",
+      "upstream_committed_at": "2026-06-16T17:58:42+02:00"
     },
     "content/handbook/engineering/ai/agent-foundations/_index.md": {
       "path": "content/handbook/engineering/ai/agent-foundations/_index.md",
@@ -5938,11 +5938,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/_index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "06f7713d34b6d96872172b54ca85336197894a6ba543f49f7e85ad87545a9b89",
-      "upstream_committed_at": "2026-06-09T19:10:50+01:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T12:49:33Z",
+      "model": "codex",
+      "input_hash": "f80728c04e6e339cc7ddd24f6293bd929fdd3a8da99501cbc67efc4e0bc88a99",
+      "upstream_committed_at": "2026-06-19T12:48:58+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth.md",
@@ -6042,11 +6042,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/010_data_retention.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:12:20Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "e8fd7b9fd3380e2b01b2486d9d469f2e390ee62d01fe2cdc750ccafef5a31cde",
-      "upstream_committed_at": "2026-06-09T19:10:50+01:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T12:49:33Z",
+      "model": "codex",
+      "input_hash": "cef7573b699013d0be31b78451320ede2415d1d9c48bf2b0599887bc7f39d0da",
+      "upstream_committed_at": "2026-06-19T12:48:58+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/011_data_reconciliation.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/011_data_reconciliation.md",
@@ -7978,11 +7978,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/gitlab_steps/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/gitlab_steps/_index.md",
-      "upstream_sha": "9e852ac812142230dfe1e1db31be2862cd857cfd",
-      "translated_at": "2026-04-27T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "64d7461cb9ec82abd80bd0a302759e142dedb8521fbe1fcc847aff539242d5aa",
-      "upstream_committed_at": "2025-04-28T10:53:04-07:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T12:49:33Z",
+      "model": "codex",
+      "input_hash": "fdde752eaa30138bed24f47f6ddc1d22d6f7081d6a07c3933f02d7538101273c",
+      "upstream_committed_at": "2026-06-18T16:29:19-07:00"
     },
     "content/handbook/engineering/architecture/design-documents/gitlab_steps/decisions/001_initial_support.md": {
       "path": "content/handbook/engineering/architecture/design-documents/gitlab_steps/decisions/001_initial_support.md",
@@ -8058,11 +8058,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/gitlab_translation_service/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/gitlab_translation_service/_index.md",
-      "upstream_sha": "94fe412d61c1d75e0a7a0fe4b90222476478db38",
-      "translated_at": "2026-04-27T11:51:33Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "e661dfb245947417c8f99234b93435719baa1e966d4f272c37f9aca15bac9998",
-      "upstream_committed_at": "2025-04-28T10:53:04-07:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T12:49:33Z",
+      "model": "codex",
+      "input_hash": "4e799ea9ceb76a6ce6f0a32a8573bd4b89a2a8b879e5f96fe5dabdfb20b84ff3",
+      "upstream_committed_at": "2026-06-16T08:26:37-04:00"
     },
     "content/handbook/engineering/architecture/design-documents/gitlab_workload_identity_federation/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/gitlab_workload_identity_federation/_index.md",
@@ -8546,11 +8546,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/organization-data-migration/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "aa2fb04e9dda49f9f5e41e335b007c3ff0438a562c41deec309c11d49b510826",
-      "upstream_committed_at": "2026-05-27T17:43:35+12:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T12:49:33Z",
+      "model": "codex",
+      "input_hash": "153d8ca9985ee102c5de5528b4bca7be5208ca091e964871ad120111f33f6cb9",
+      "upstream_committed_at": "2026-06-17T14:07:31+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/organization-data-migration/cohort0.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/cohort0.md",
@@ -9434,11 +9434,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/teams/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/teams/_index.md",
-      "upstream_sha": "d5f4aa38819ae2b572eb32e0d967394d0361a975",
-      "translated_at": "2026-04-27T10:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "d3443844bf85a2c27fc2f3884f5d6ddd2bb6bca4c48c9964e8ac9a434e6e14b8",
-      "upstream_committed_at": "2025-12-10T07:07:31+08:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T12:49:33Z",
+      "model": "codex",
+      "input_hash": "9d53192cf13b46e15cb05b418a21f9d004a834c8601354eb791c12c394976a2f",
+      "upstream_committed_at": "2026-06-18T11:31:48+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/token_consolidation/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/token_consolidation/_index.md",
@@ -10642,11 +10642,11 @@
     },
     "content/handbook/engineering/development/growth/_index.md": {
       "path": "content/handbook/engineering/development/growth/_index.md",
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-05-06T13:30:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "6a1e3f9a0351e373b5f69f3c6685c6249d7174d99a3c2ad59f208d0f962c569d",
-      "upstream_committed_at": "2026-04-07T12:29:09+05:30"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T12:49:33Z",
+      "model": "codex",
+      "input_hash": "f367b099ad87f4f98428e569e841a111a843dfb00fe34d73c216d482e490eda9",
+      "upstream_committed_at": "2026-06-15T18:08:34+05:30"
     },
     "content/handbook/engineering/development/growth/ai-prompts/epic-summary-prompt.md": {
       "path": "content/handbook/engineering/development/growth/ai-prompts/epic-summary-prompt.md",
@@ -14258,11 +14258,11 @@
     },
     "content/handbook/engineering/workflow/code-review.md": {
       "path": "content/handbook/engineering/workflow/code-review.md",
-      "upstream_sha": "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc",
-      "translated_at": "2026-05-29T21:13:52Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "ae93d163389d2ee13f64e4e94b34b8aa920de0bb9f92335c06fdaa9d32c9966f",
-      "upstream_committed_at": "2026-05-29T14:14:34+02:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T12:49:33Z",
+      "model": "codex",
+      "input_hash": "cb9e3404f556029bc56f2166fa88f3316692f2fa2f59a2d60cbb06b4fa976b22",
+      "upstream_committed_at": "2026-06-15T07:58:19-05:00"
     },
     "content/handbook/engineering/workflow/cross-functional-prioritization.md": {
       "path": "content/handbook/engineering/workflow/cross-functional-prioritization.md",
