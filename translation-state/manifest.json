@@ -33207,6 +33207,14 @@
       "model": "codex",
       "input_hash": "db092de5807b3a5335da5942d75eebd42a141684cd1a20526175c25790cc4fb4",
       "upstream_committed_at": "2026-06-19T14:14:46-07:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:47:29Z",
+      "model": "codex",
+      "input_hash": "31aef36175046d599065267112dccbd70947188a148d51fcce2b4a6feec5e752",
+      "upstream_committed_at": "2026-06-15T15:39:51-04:00"
     }
   }
 }
