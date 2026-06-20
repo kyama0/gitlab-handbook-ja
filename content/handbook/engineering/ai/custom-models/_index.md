@@ -1,6 +1,6 @@
 ---
 title: Custom Models グループ
-description: "Custom Models グループは、GitLab Duo の customer-facing model operations/intelligence layer を所有します。利用可能な models と選択方法、customer experience の health and connectivity、gateway service surface（prompts、internal events、AIGW billing）を扱います。"
+description: "Custom Models グループは、GitLab Duo の顧客向けモデル運用 / インテリジェンスレイヤー、利用可能なモデルとその選択方法、顧客体験の健全性と接続性、gateway service surface（prompts、internal events、AIGW billing）を所有します。"
 upstream_path: /handbook/engineering/ai/custom-models/
 upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
 lastmod: "2026-06-16T17:58:42+02:00"
@@ -15,7 +15,7 @@ Custom Models グループは、customers 固有の data と use-cases を支え
 
 ## ミッション、私たちが所有するもの
 
-Custom Models は、GitLab の **customer-facing model intelligence layer** の end-to-end owner です。どの models が利用可能か、どのように選択されるか、customer experience の health and connectivity、そして gateway service surface（prompts、internal events、AIGW billing）を所有します。Customer zero、SaaS、Self-Managed、Dedicated にまたがる 1 つの full stack team です。
+Custom Models は、GitLab の**顧客向けモデルインテリジェンスレイヤー**の end-to-end owner です。どのモデルが利用可能か、どのように選択されるか、顧客体験の健全性と接続性、そして gateway service surface（prompts、internal events、AIGW billing）を所有します。Customer zero、SaaS、Self-Managed、Dedicated にまたがる 1 つの full stack team です。
 
 私たちは、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [AI Powered stage](/handbook/product/categories/#ai-powered-stage) にある [Custom Models group](/handbook/product/categories/#custom-models-group) に属する product categories のすべての backend aspects に責任を持ちます。product direction は [Category Direction, Custom Models Management](https://about.gitlab.com/direction/ai-powered/custom_models/) ページにあり、私たちが扱う機能は [Features by Group page](/handbook/product/categories/features/#custom-models) に一覧化されています。
 
