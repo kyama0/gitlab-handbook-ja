@@ -33207,6 +33207,14 @@
       "model": "codex",
       "input_hash": "db092de5807b3a5335da5942d75eebd42a141684cd1a20526175c25790cc4fb4",
       "upstream_committed_at": "2026-06-19T14:14:46-07:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization-data-migration/decisions/003_org_mover_architecture.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/decisions/003_org_mover_architecture.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:41:51Z",
+      "model": "codex",
+      "input_hash": "b4c216d656bd7f209a3e879c142645136de063b52ce38ec91144e16927002ed6",
+      "upstream_committed_at": "2026-06-17T14:07:31+12:00"
     }
   }
 }
