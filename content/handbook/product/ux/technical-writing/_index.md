@@ -1,11 +1,11 @@
 ---
 title: "テクニカルライティング"
 upstream_path: /handbook/product/ux/technical-writing/
-upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
-translated_at: "2026-06-06T12:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:13:04Z"
 translator: claude
 stale: false
-lastmod: "2026-06-04T08:58:35-06:00"
+lastmod: 2026-06-16T18:31:40+01:00
 ---
 
 GitLab のテクニカルライティングチームは、開発者、プロダクトマネージャー、コミュニティと協力してプロダクトドキュメントを作成しています。
@@ -403,7 +403,7 @@ PTO を取得する際、テクニカルライターは次を行います。
 | 19.4 | 2026 年 9 月 | {{< member-by-name "Lorena Ciutacu" >}} | {{< member-by-name "Zach Painter" >}} | {{< member-by-name "Roshni Sarangadharan" >}} |
 | 19.3 | 2026 年 8 月 | {{< member-by-name "Zach Painter" >}} | {{< member-by-name "Roshni Sarangadharan" >}} | {{< member-by-name "Fiona Neill" >}} |
 | 19.2 | 2026 年 7 月 | {{< member-by-name "Roshni Sarangadharan" >}} | {{< member-by-name "Fiona Neill" >}} | {{< member-by-name "Achilleas Pipinellis" >}} |
-| 19.1 | 2026 年 6 月 | {{< member-by-name "Lysanne Pinto" >}} | {{< member-by-name "Achilleas Pipinellis" >}} | {{< member-by-name "Jon Glassman" >}} |
+| 19.1 | 2026 年 6 月 | {{< member-by-name "Isaac Durham" >}} | {{< member-by-name "Achilleas Pipinellis" >}} | {{< member-by-name "Jon Glassman" >}} |
 | 19.0 | 2026 年 5 月 | {{< member-by-name "Achilleas Pipinellis" >}} | {{< member-by-name "Brendan Lynch" >}} | {{< member-by-name "Uma Chandran" >}} |
 | 18.11| 2026 年 4 月 | {{< member-by-name "Jon Glassman" >}} | {{< member-by-name "Uma Chandran" >}} | {{< member-by-name "Ryan Lehmann" >}} |
 | 18.10| 2026 年 3 月 | {{< member-by-name "Uma Chandran" >}} | {{< member-by-name "Russell Dickenson" >}} | {{< member-by-name "Brendan Lynch" >}} |

@@ -2,11 +2,11 @@
 title: "コミュニティ貢献を扱うワークフロー"
 description: DevRel Engineering が扱うすべてのプロセス
 upstream_path: /handbook/marketing/developer-relations/engineering/community-contributors-workflows/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T12:58:25Z"
 translator: claude
 stale: false
-lastmod: "2026-05-28T11:59:30+01:00"
+lastmod: 2026-06-19T15:08:30+01:00
 ---
 
 ## ワークフロー
@@ -339,9 +339,6 @@ GitLab は広範コミュニティに、貢献したい場合は `quick win` ラ
 - Issue の説明には、貢献者が始めるのを助けるガイダンス付きの実装計画を、第二または第三レベルの見出しとして含める必要があります。
 たとえば、`## Implementation`、`### Implementation`、`## Implementation plan`、`### Implementation guide` はすべて受け入れられます。
 このセクションは非常に簡潔でも、Issue を解決するための可能なアクションを提供してもかまいません。
-- Issue には 0-3 のウェイトを割り当てる必要があります。
-Issue ウェイトは、複雑さと必要な努力を概算する必要があります。
-ウェイトを時間の見積もりに関連付けないでください。
 - 貢献者が質問したりメンタリングを受けたりできるよう、GitLab チームメンバーまたは経験豊富なコミュニティ貢献者を連絡先として含めることを検討してください。
 
 ### `quick win::first-time contributor` Issue の基準

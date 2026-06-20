@@ -2,14 +2,14 @@
 title: "GitLab Duo Agent Platform - ハンズオンラボ: Agentic Chat を使用して Issue を作成する"
 description: "このハンズオンガイドでは、GitLab Agent Platform の使用の基本を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab2/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T04:51:58Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T12:49:33Z"
 translator: claude
 stale: false
-lastmod: "2026-04-16T17:13:51-04:00"
+lastmod: 2026-06-15T14:13:50-04:00
 ---
 
-> 完了目安時間: 45 分
+> 完了目安時間: 30 分
 
 ## 学習目標
 

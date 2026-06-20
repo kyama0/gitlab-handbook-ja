@@ -1,6 +1,6 @@
 ---
 title: GitLab 翻訳サービス
-status: proposed
+status: rejected
 creation-date: "2024-11-08"
 authors: [ "@rasamhossain" ]
 coaches: [ "@username" ]
@@ -9,11 +9,11 @@ owning-stage: ""
 participating-stages: []
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/gitlab_translation_service/"
-upstream_sha: "94fe412d61c1d75e0a7a0fe4b90222476478db38"
-translated_at: "2026-04-27T11:51:33Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T12:49:33Z"
 translator: claude
 stale: false
-lastmod: "2025-04-28T10:53:04-07:00"
+lastmod: 2026-06-16T08:26:37-04:00
 ---
 
 
