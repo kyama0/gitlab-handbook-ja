@@ -1,11 +1,11 @@
 ---
 title: "デベロッパーアドボカシー コミュニティ対応プロセス"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/community-response/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T12:58:25Z"
 translator: claude
 stale: false
-lastmod: "2026-01-05T11:25:17+01:00"
+lastmod: 2026-06-16T12:33:40-04:00
 ---
 
 ## コミュニティ対応にデベロッパーアドボケイトを巻き込む方法
@@ -16,8 +16,8 @@ lastmod: "2026-01-05T11:25:17+01:00"
 
 ### 通知
 
-* **来たる発表:** デベロッパーアドボカシーチームに、コミュニティから反応を引き起こす可能性のある来たる発表、製品変更、その他のニュースイベントを通知するには、DRI は関連する Issue で `@johncoghlan` にコメントするか、[#dev-advocacy-team Slack チャンネル](https://gitlab.slack.com/archives/CMELFQS4B) でデベロッパーアドボカシーチームに通知してください。また、この発表に関連する Issue または epic に `~Community Interest` および `~Community response` ラベルを付けてください。
-* **進行中の状況:** デベロッパーアドボカシーチームに進行中の緊急の状況を通知するには、状況が議論されている Slack スレッドまたはチャンネル、または [#dev-advocacy-team Slack チャンネル](https://gitlab.slack.com/archives/CMELFQS4B) で `@dev-advocates` ユーザーグループにタグを付けてください。
+* **来たる発表:** デベロッパーアドボカシーチームに、コミュニティから反応を引き起こす可能性のある来たる発表、製品変更、その他のニュースイベントを通知するには、DRI は関連する Issue で `@johncoghlan` にコメントするか、[#developer-advocacy Slack チャンネル](https://gitlab.slack.com/archives/CMELFQS4B) でデベロッパーアドボカシーチームに通知してください。また、この発表に関連する Issue または epic に `~Community Interest` および `~Community response` ラベルを付けてください。
+* **進行中の状況:** デベロッパーアドボカシーチームに進行中の緊急の状況を通知するには、状況が議論されている Slack スレッドまたはチャンネル、または [#developer-advocacy Slack チャンネル](https://gitlab.slack.com/archives/CMELFQS4B) で `@dev-advocates` ユーザーグループにタグを付けてください。
 * 発表のメッセージングへの影響、コミュニティへの返信の準備、対応のスケジューリングを支援できるよう、デベロッパーアドボカシーチームにできるだけ早めに通知してください。詳細は以下の **スケジューリング** を参照してください。
 * 関連する Issue、epic、MR に `Community response` ラベルを追加してください。私たちのチームは、[gitlab-com](https://gitlab.com/groups/gitlab-com/-/labels?search=community+response) と [gitlab-org](https://gitlab.com/groups/gitlab-org/-/labels?search=community+response) グループのラベルを所有しています。次のクイックアクションを使用してラベルを適用できます: `/label ~"dev-evangelism" ~"Community response"`
 
@@ -78,7 +78,7 @@ lastmod: "2026-01-05T11:25:17+01:00"
 
 * **Hacker News**:
   * "GitLab" キーワードを含む新しい投稿とコメントは、[#hn-mentions](https://gitlab.slack.com/archives/CBL93C22D) Slack チャンネルで共有されます。
-  * フロントページに到達し、"GitLab" キーワードを含む投稿は、@dev-advocates と @sytses の追加タグ付きで [#dev-advocacy-team](https://gitlab.slack.com/archives/CMELFQS4B) Slack チャンネルで共有されます。
+  * フロントページに到達し、"GitLab" キーワードを含む投稿は、@dev-advocates と @sytses の追加タグ付きで [#developer-advocacy](https://gitlab.slack.com/archives/CMELFQS4B) Slack チャンネルで共有されます。
   * 注: これらの自動化はどちらも、対応が不要な多くの投稿やコメントを取得します。たとえば、GitLab でホストされているオープンソースプロジェクトへのリンクなどです。
 * **GitLab フォーラム**:
   * 対応チームの全員が特定のフォーラムスレッドのアラートに登録し、監視タスクを分散できます。
@@ -101,7 +101,7 @@ lastmod: "2026-01-05T11:25:17+01:00"
 これらの追加ステップをレビューしてください:
 
 * 必要に応じて、デベロッパーアドボケイトは GitLab フォーラム、Hacker News、その他のフォーラムで、コミュニティの質問や懸念に対応します。
-* GitLab に関する投稿が Hacker News のフロントページに到達した場合、Zoom ルームと Google ドキュメントを使用して、同期的に応答について協力する場合があります。状況が議論されている Slack スレッドまたはチャンネル、または [#dev-advocacy-team Slack チャンネル](https://gitlab.slack.com/archives/CMELFQS4B) で Zoom ルームと Google ドキュメントへのリンクを共有します。
+* GitLab に関する投稿が Hacker News のフロントページに到達した場合、Zoom ルームと Google ドキュメントを使用して、同期的に応答について協力する場合があります。状況が議論されている Slack スレッドまたはチャンネル、または [#developer-advocacy Slack チャンネル](https://gitlab.slack.com/archives/CMELFQS4B) で Zoom ルームと Google ドキュメントへのリンクを共有します。
 * デベロッパーアドボカシーチームは、これらの発表や速報の状況の間、Twitter やその他のソーシャルメディアチャンネルでの応答にはほとんど関与しません。これらの状況では、Twitter、Facebook、LinkedIn は主に [ソーシャルメディアチーム](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/) が所有します。
 * メッセージングが繊細な状況では、応答を作成するために [コーポレートコミュニケーションズチーム](/handbook/marketing/corporate-communications/) からの承認済みメッセージングに依存します。
 

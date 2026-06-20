@@ -2,14 +2,14 @@
 title: "GitLab Duo Agent Platform - ハンズオンラボ: カスタムフローを作成する"
 description: "このハンズオンガイドでは、カスタムフローの作成方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T12:49:33Z"
 translator: claude
 stale: false
-lastmod: "2026-05-01T11:26:38-04:00"
+lastmod: 2026-06-15T14:13:50-04:00
 ---
 
-> 完了までの推定時間: 30 分
+> 完了までの推定時間: 20 分
 
 ## 学習目標
 

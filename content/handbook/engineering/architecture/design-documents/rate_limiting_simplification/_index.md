@@ -9,11 +9,11 @@ owning-stage: "~devops::platforms"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/rate_limiting_simplification/
-upstream_sha: 4c7d94ca4f485376c886b7c2b9575091c8b7d3cf
-translated_at: "2026-04-27T00:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:23:21Z"
 translator: claude
 stale: false
-lastmod: "2025-12-18T17:49:08+00:00"
+lastmod: 2026-06-09T14:27:27+02:00
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -22,6 +22,8 @@ lastmod: "2025-12-18T17:49:08+00:00"
 <!-- This renders the design document header on the detail page, so don't remove it-->
 
 {{< engineering/design-document-header >}}
+
+> **注:** フェーズ 2（アプリケーションレベルの統合）以降の技術設計は、[Unified Rate Limiting Architecture](../unified_rate_limiting/) 設計ドキュメントに詳述されています。このドキュメントは高レベルのロードマップとして残します。
 
 
 ## 概要

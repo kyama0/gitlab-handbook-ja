@@ -90,7 +90,7 @@ project.pipelines       # pipelines queried via Ci::Project, not Project
 
 **おしゃべりなドメインを避ける。** 境界が強制されると、互いに依存しすぎているコンポーネントが見つかります。Rails は常にすべてを利用可能にするため、1 つのビジネストランザクションが多くのドメインを横断します。おしゃべりなドメイン間呼び出し（ドメインがサービスになると実際の問題になります）を避けるには、データの非正規化や複製、ローカル表現の保持、インターフェイス分離の適用が必要です。例えば、完全な `User` ではなく基本的なアイデンティティオブジェクトをラップする薄い `Ci::Internal::User` です。
 
-> すべてのドメインが必要とする共有の「足場」、つまり `Project`/`User` の lookup、権限チェックなどは、ドメインごとに注入されるのではなく、すべてのドメインが依存する粗い `gitlab-platform`/`gitlab-core` gem に置くほうがよいかもしれません。このトレードオフは、[ライブラリ抽出ページの未解決事項](library_extraction.md#open-questions)として追跡されています。
+> すべてのドメインが必要とする共有の「足場」、つまり `Project`/`User` の参照、権限チェックなどは、ドメインごとに注入されるのではなく、すべてのドメインが依存する粗い `gitlab-platform`/`gitlab-core` gem に置くほうがよいかもしれません。このトレードオフは、[ライブラリ抽出ページの未解決事項](library_extraction.md#open-questions)として追跡されています。
 
 ## 抽出前に解決すべきこと {#what-must-be-resolved-before-extraction}
 
