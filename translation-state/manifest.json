@@ -15418,11 +15418,11 @@
     },
     "content/handbook/finance/expenses.md": {
       "path": "content/handbook/finance/expenses.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9a221577ee5d0928a37537da79a86f3d835de4e96848f05cc851c30502cc7ff0",
-      "upstream_committed_at": "2026-03-18T15:39:47+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T15:21:24Z",
+      "model": "codex",
+      "input_hash": "b9bd7a03f2f0119c0d9f681ceb623ad8695c8599cd95966e957c00701359ad4d",
+      "upstream_committed_at": "2026-06-19T07:42:25-07:00"
     },
     "content/handbook/finance/finance-team-performance-indicators.md": {
       "path": "content/handbook/finance/finance-team-performance-indicators.md",
