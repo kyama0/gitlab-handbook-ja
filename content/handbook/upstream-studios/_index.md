@@ -3,11 +3,11 @@ title: Upstream Studios
 description: >-
   Upstream Studios は GitLab のフルスタックエクスペリエンス組織です。私たちが構想し、デザインし、ドキュメント化し、出荷します—プロダクト、エンジニアリング、マーケティングを横断して連携し、品質を継続的にデプロイメントとして届けます。
 upstream_path: /handbook/upstream-studios/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-translated_at: "2026-06-12T21:18:07Z"
-translator: claude
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T20:58:39+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-09T10:07:01-07:00
+lastmod: 2026-06-19T14:14:46-07:00
 ---
 
 私たちはリサーチ、デザイン、フロントエンドエンジニアリング、ドキュメント、ブランドを統合された配信パイプラインに組み込み、最初の印象から最終的なデプロイメントまで、お客様が GitLab を体験する方法を形作ります。
@@ -19,6 +19,8 @@ Upstream Studios は 5 つのコアディシプリンを結集しており、そ
 ### Design Strategy
 
 明日を設計するために生まれたチーム。Design Strategy チームは、コンセプトワーク、クラフトの基準、そして Upstream Studios 全体で優れたデザインを可能にする条件を通じて、GitLab の未来を形作ります。
+
+[Design Strategy についてさらに詳しく →](/handbook/upstream-studios/design-strategy/)
 
 ### Brand Experience
 

@@ -22490,11 +22490,11 @@
     },
     "content/handbook/upstream-studios/_index.md": {
       "path": "content/handbook/upstream-studios/_index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:18:07Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "70dfb0b6341597ff6b739e86d544519558aa4d4a5076f691a51f74574cd2d85b",
-      "upstream_committed_at": "2026-06-09T10:07:01-07:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T20:58:39+09:00",
+      "model": "codex",
+      "input_hash": "a18254e4fac9d41dba42e9130a32313aa601e84166aa872d205b97ee65688505",
+      "upstream_committed_at": "2026-06-19T14:14:46-07:00"
     },
     "content/handbook/upstream-studios/vision-strategy/_index.md": {
       "path": "content/handbook/upstream-studios/vision-strategy/_index.md",
@@ -33167,6 +33167,46 @@
       "model": "claude-opus-4-7",
       "input_hash": "693de35d71c08cfb18eba88d7182b288020bccd7c86302d4340a90e2324c512f",
       "upstream_committed_at": "2026-06-10T11:10:58-04:00"
+    },
+    "content/handbook/upstream-studios/how-we-work/_index.md": {
+      "path": "content/handbook/upstream-studios/how-we-work/_index.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T20:58:39+09:00",
+      "model": "codex",
+      "input_hash": "32f62dc8dede2e0dd0ee1febb6832d5a36b7b22f1ae9b41703db51100f6cf2b6",
+      "upstream_committed_at": "2026-06-16T09:26:31-04:00"
+    },
+    "content/handbook/upstream-studios/how-we-work/ai-usage.md": {
+      "path": "content/handbook/upstream-studios/how-we-work/ai-usage.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T20:58:39+09:00",
+      "model": "codex",
+      "input_hash": "ffaf0ad455015392da4167e567deeb65ce034cf71b0e4a0f8d0ce4f97c296a55",
+      "upstream_committed_at": "2026-06-18T10:24:03-05:00"
+    },
+    "content/handbook/upstream-studios/how-we-work/cross-stage-design-collaboration.md": {
+      "path": "content/handbook/upstream-studios/how-we-work/cross-stage-design-collaboration.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T20:58:39+09:00",
+      "model": "codex",
+      "input_hash": "24a1838e0759b2f669166271ea3aea7b6007a841be26f31320c8afc9ccbb8ee4",
+      "upstream_committed_at": "2026-06-16T09:26:31-04:00"
+    },
+    "content/handbook/upstream-studios/how-we-work/figma-provisioning.md": {
+      "path": "content/handbook/upstream-studios/how-we-work/figma-provisioning.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T20:58:39+09:00",
+      "model": "codex",
+      "input_hash": "76cfdd0cb89912f98156693d967e42c941e2a6f0c7e4f8dcb8377b3dfbc075cf",
+      "upstream_committed_at": "2026-06-16T09:26:31-04:00"
+    },
+    "content/handbook/upstream-studios/design-strategy/_index.md": {
+      "path": "content/handbook/upstream-studios/design-strategy/_index.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T20:58:39+09:00",
+      "model": "codex",
+      "input_hash": "db092de5807b3a5335da5942d75eebd42a141684cd1a20526175c25790cc4fb4",
+      "upstream_committed_at": "2026-06-19T14:14:46-07:00"
     }
   }
 }
