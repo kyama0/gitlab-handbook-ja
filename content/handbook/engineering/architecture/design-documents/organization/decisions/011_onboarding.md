@@ -1,7 +1,7 @@
 ---
 owning-stage: "~devops::tenant scale"
-title: 'Organizations ADR 011: Universal Onboarding Workflow'
-description: 'すべての deployment type で GitLab Organization を unconfirmed から confirmed、active へ進める 4 step の universal onboarding workflow を定義します。適用されない step は自動的に完了します。'
+title: 'Organizations ADR 011: ユニバーサルオンボーディングワークフロー'
+description: 'すべてのデプロイタイプで GitLab Organization を unconfirmed から confirmed、active へ進める 4 ステップのユニバーサルオンボーディングワークフローを定義します。適用されないステップは自動的に完了します。'
 creation-date: "2026-05-04"
 authors: [ "@jblack" ]
 upstream_path: /handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding/
@@ -17,7 +17,7 @@ GitLab は、product 全体で 3 つの役割を果たす基盤 primitive とし
 
 **正規の tenant boundary。** Organization は customer の top-level groups、projects、users を共有 data boundary の下にカプセル化します。これは downstream systems が authorization and entitlement に使用する boundary であり、GitLab infrastructure に Cells 間で移動できる portable で self-contained な unit を与えることで、Cells architecture を扱いやすくします。
 
-**統一された control plane と build/deploy の単位。** Organization は、customers が GitLab footprint 全体を管理する単一の surface であり、GitLab が build し deploy する正規の単位です。私たちは一度 build し、どこにでも deploy します。同じ data model、capabilities、application surface が、同じ概念の 3 つの異なる implementations ではなく、GitLab.com、Self-Managed、Dedicated に出荷されます。Org は customers が experience する統合 control plane でもあります。user lifecycle management、visibility controls、billing visibility、settings、feature enablement は、時間とともにすべて Org level に統合され、すべての deployment type に同じ governance surface を与えます。今日の SaaS では、governance は TLG ごとに管理されており、SM と Dedicated と比べて technical divergence と product fragmentation を生んでいます。共有 primitive として Org がなければ、GitLab は同じ product の 3 つの implementations に分岐し、その fragmentation は新しい feature が出荷されるたびに広がります。Org は、GitLab が build する単位であり、customers が govern する surface でもあることで、それを防ぎます。
+**統一されたコントロールプレーンと構築・デプロイの単位。** Organization は、顧客が GitLab footprint 全体を管理する単一の surface であり、GitLab が構築しデプロイする正規の単位です。私たちは一度構築し、どこにでもデプロイします。同じデータモデル、機能、アプリケーション surface が、同じ概念の 3 つの異なる実装ではなく、GitLab.com、Self-Managed、Dedicated に出荷されます。Org は顧客が体験する統合コントロールプレーンでもあります。ユーザーライフサイクル管理、visibility controls、billing visibility、settings、機能 enablement は、時間とともにすべて Org level に統合され、すべてのデプロイタイプに同じ governance surface を与えます。今日の SaaS では、governance は TLG ごとに管理されており、SM と Dedicated と比べて技術的な divergence と product fragmentation を生んでいます。共有 primitive として Org がなければ、GitLab は同じ product の 3 つの実装に分岐し、その fragmentation は新しい機能が出荷されるたびに広がります。Org は、GitLab が構築する単位であり、顧客が govern する surface でもあることで、それを防ぎます。
 
 **cross-platform migration の単位。** customer が deployment types 間、GitLab.com から Dedicated、Dedicated から Self-Managed、または Cells 間を移動するとき、移動するのは Organization です。これは customer の data、groups、entitlements の portable container です。customer は source platform 上に confirmed Org がなければ cross-platform migration を完了できません。これにより migration economics も扱いやすくなります。Org が self-contained で portable であれば、migrations は bespoke engineering engagements ではなく、tooled and automated なものになります。
 
