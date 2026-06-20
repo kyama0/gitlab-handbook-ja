@@ -5666,11 +5666,11 @@
     },
     "content/handbook/engineering/ai/custom-models/_index.md": {
       "path": "content/handbook/engineering/ai/custom-models/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "7b889dce30d48ec52be86d8bd8defc9249ecb8eef5c9ef5e090a4a544aecad0e",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T15:03:34Z",
+      "model": "codex",
+      "input_hash": "d9b14638ddee29e40e1171dfd9eca659f7ea756c559f4c5d224dbca7fb3c4198",
+      "upstream_committed_at": "2026-06-16T17:58:42+02:00"
     },
     "content/handbook/engineering/ai/duo-chat/_index.md": {
       "path": "content/handbook/engineering/ai/duo-chat/_index.md",
