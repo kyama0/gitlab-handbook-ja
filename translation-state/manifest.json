@@ -33207,6 +33207,14 @@
       "model": "codex",
       "input_hash": "db092de5807b3a5335da5942d75eebd42a141684cd1a20526175c25790cc4fb4",
       "upstream_committed_at": "2026-06-19T14:14:46-07:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/unified_rate_limiting/_index.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/unified_rate_limiting/_index.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T15:28:19Z",
+      "model": "codex",
+      "input_hash": "ac30a7ae3561e9d43948cf2d1a66f59aac84d3f60c0a294e165428ca489af282",
+      "upstream_committed_at": "2026-06-18T11:28:17+02:00"
     }
   }
 }
