@@ -2,11 +2,11 @@
 title: カスタマーサポートオペレーション
 description: GitLab カスタマーサポートオペレーション
 upstream_path: /handbook/security/customer-support-operations/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:23:21Z"
 translator: claude
 stale: false
-lastmod: "2026-05-26T12:05:00-05:00"
+lastmod: 2026-06-15T10:20:42-05:00
 ---
 
 ## 目的
@@ -21,11 +21,10 @@ lastmod: "2026-05-26T12:05:00-05:00"
 
 | 名前 | 役割 |
 |------|------|
-| [Carlo Curato](https://gitlab.com/ccurato) | Director, Business Technology Operations |
-| [Jason Colyer](https://gitlab.com/jcolyer) | Fullstack Engineer, Customer Support Operations |
-| [Dylan Tragjasi](https://gitlab.com/dtragjasi) | Senior Customer Support Operations Specialist |
-| [Alyssa Villa](https://gitlab.com/avilla4) | Customer Support Operations Specialist |
-| [Sarah Cole](https://gitlab.com/Secole) | Customer Support Operations Specialist |
+| [Namo Tiwari](https://gitlab.com/namotiwari) | VP - Business Systems |
+| [Jason Colyer](https://gitlab.com/jcolyer) | Fullstack Engineer, Customer Support Systems |
+| [Dylan Tragjasi](https://gitlab.com/dtragjasi) | Senior Customer Support Systems Specialist |
+| [Sarah Cole](https://gitlab.com/Secole) | Customer Support Systems Specialist |
 
 ## 私たちと仕事をする
 

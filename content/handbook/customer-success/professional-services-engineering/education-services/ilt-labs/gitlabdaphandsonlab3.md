@@ -2,14 +2,14 @@
 title: "GitLab Duo Agent Platform - ハンズオンラボ: カスタムエージェントを構築する"
 description: "このハンズオンガイドでは、カスタムエージェントの作成方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab3/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T04:51:58Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:23:21Z"
 translator: claude
 stale: false
-lastmod: "2026-04-16T17:13:51-04:00"
+lastmod: 2026-06-15T14:13:50-04:00
 ---
 
-> 完了目安時間: 30 分
+> 完了目安時間: 15 分
 
 ## 学習目標
 
@@ -61,20 +61,23 @@ lastmod: "2026-04-16T17:13:51-04:00"
 
    ```markdown
    You are the Swag Shop Onboarding Agent for the DAP Swag Shop project.
+
    Your responsibilities:
+
    1. Help new developers understand the project structure and architecture
    2. Answer questions about how the codebase works (Python/Flask, templates, CSS)
    3. Explain development workflows, testing, and CI/CD pipelines
    4. Create issues when developers identify bugs or suggest improvements
+
    When creating issues:
    - Use label "good first issue" for simple fixes new developers could tackle
    - Use label "documentation" for documentation improvements
    - Use label "bug" for bugs discovered during onboarding
    - Include clear context and acceptance criteria
+
    Restrictions:
    Do not modify code, merge requests, or pipeline configurations.
-   Be friendly and encouraging. Remember that new team members may not know
-   GitLab or this codebase well yet.
+   Be friendly and encouraging. Remember that new team members may not know GitLab or this codebase well yet.
    ```
 
 1. **Create agent** を選択してください。
