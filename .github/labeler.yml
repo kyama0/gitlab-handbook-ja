@@ -42,6 +42,8 @@ docs:
           - "**/README.md"
           - "CLAUDE.md"
           - ".claude/**"
+          - ".agents/**"
+          - ".codex/**"
 
 upstream:
   - changed-files:

@@ -1,6 +1,6 @@
 # 翻訳用語集 (Translation Glossary)
 
-GitLab Handbook 日本語訳の **唯一の用語集**。`.claude/agents/translator.md` および `.claude/agents/translation-reviewer.md` から参照され、翻訳・レビュー双方で同じ用語選択になることを保証する。
+GitLab Handbook 日本語訳の **唯一の用語集**。Codex の `.codex/agents/translator.toml` / `.codex/agents/translation-reviewer.toml` と、Claude Code の `.claude/agents/translator.md` / `.claude/agents/translation-reviewer.md` から参照され、翻訳・レビュー双方で同じ用語選択になることを保証する。
 
 このファイルは **生きたドキュメント** であり、翻訳・レビュー作業で新しい訳ぶれや判断が発生するたびに追記・更新する。更新方法は末尾の「メンテナンス」を参照。
 
@@ -98,7 +98,7 @@ GitLab Handbook 日本語訳の **唯一の用語集**。`.claude/agents/transla
 - `upstream_sha` — 翻訳時の upstream submodule HEAD のコミット SHA
 - `lastmod` — `upstream_sha` 時点で原文を最後に変更した upstream コミットの ISO 8601 タイムスタンプ
 - `translated_at` — 翻訳実施日時 (ISO 8601)
-- `translator` — 翻訳実施者識別子（通常 `claude`）
+- `translator` — 翻訳実施者識別子（Codex で生成した場合は `codex`、Claude Code で生成した場合は `claude`）
 - `stale` — `true` / `false`（manifest 判定に従う）
 
 原文 frontmatter にあった以下は **必ず保持**: `cascade`, `menu`, `weight`, `canonical_path`, `linkTitle`, `manualLinkRelref`, `no_list`, `aliases`, `job`（個人 README）。
@@ -133,4 +133,4 @@ GitLab Handbook 日本語訳の **唯一の用語集**。`.claude/agents/transla
 - 変更理由を簡潔にコミットメッセージに記す（例: `glossary: add "force multiplier" entry (from PR #334 review)`）。
 - 既存翻訳に影響する変更（既存訳語の置き換え）は、リポジトリ全体への影響を `rg` で確認し、必要なら追従 PR を作る。
 
-`.claude/agents/translator.md` と `.claude/agents/translation-reviewer.md` はこのファイルを参照するように設計されているので、エージェントの動作を変えたい場合もまずこのファイルを更新する。
+`.codex/agents/*.toml` と `.claude/agents/*.md` はこのファイルを参照するように設計されているので、エージェントの動作を変えたい場合もまずこのファイルを更新する。
