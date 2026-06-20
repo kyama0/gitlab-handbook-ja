@@ -2,11 +2,11 @@
 title: "AI 領域での UX 調査の実施"
 description: "調査ガイドラインを含む、人工知能（AI）領域での UX 調査の実施方法。"
 upstream_path: /handbook/product/ux/experience-research/research-in-the-ai-space/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:13:04Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T13:14:13+00:00"
+lastmod: 2026-06-16T09:26:31-04:00
 ---
 
 より多くのチームが人工知能（AI）領域内でイノベーションを起こすために迅速なプロトタイピング活動に参加するにつれて、立ち止まって自分自身に問いかけることは自然なことです: *これは何の問題を解決することを目指しているのか？*
@@ -17,7 +17,7 @@ lastmod: "2026-02-12T13:14:13+00:00"
 
 このページでは、AI ソリューションの設計と開発を通じてユーザーの視点を含めることで、**AI 領域での UX 調査を実施する**方法をガイドします。
 
-**UX 調査作業で AI を使用する方法**については、[UX での AI 使用](/handbook/product/ux/how-we-work/ai-usage/)を参照してください。
+**UX 調査作業で AI を使用する方法**については、[AI の使用](/handbook/upstream-studios/how-we-work/ai-usage/)を参照してください。
 
 ## UX Researcher サポート
 
@@ -170,4 +170,4 @@ Duo 機能の GA Scope と Definition of Done の完全な説明は[ここ](http
 - [User research for machine learning systems - a case study](https://dl.acm.org/doi/10.1145/3290607.3299061)
 - [Testing AI concepts in user research](https://uxdesign.cc/testing-ai-concepts-in-user-research-b742a9a92e55)
 - [Human centered machine learning](https://medium.com/google-design/human-centered-machine-learning-a770d10562cd)
-- [How to use AI in UX research at GitLab](/handbook/product/ux/how-we-work/ai-usage/)
+- [How to use AI in UX research at GitLab](/handbook/upstream-studios/how-we-work/ai-usage/)

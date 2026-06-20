@@ -2,11 +2,11 @@
 title: "GitLab LTD (UK) Benefits"
 description: "イギリスを拠点とするチームメンバー向けの GitLab LTD (UK) の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/ltd-benefits-uk/
-upstream_sha: 23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0
-translated_at: "2026-05-07T22:45:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:37:44Z"
 translator: claude
 stale: false
-lastmod: "2026-04-20T15:18:57-07:00"
+lastmod: "2026-06-15T14:21:35-07:00"
 ---
 
 ## 私たちがあなたをサポートします
@@ -162,7 +162,7 @@ Unum との生命保険給付を通じて、Employee Assistance および Wellbe
 <details markdown="1">
 <summary>適格性要件</summary>
 
-- 16 歳から State Pension Age までのすべてのチームメンバー
+- 16 歳から 75 歳までのすべてのチームメンバー
 - 入社時に自動加入
 
 </details>
@@ -170,7 +170,8 @@ Unum との生命保険給付を通じて、Employee Assistance および Wellbe
 <details markdown="1">
 <summary>カバレッジと主な特徴</summary>
 
-- あなたの年間基本給与の 4 倍のカバレッジ（自動的に最大 £375,000 まで）
+- Group Life Insurance ポリシーの自動保障上限は基本給与の 4 倍です。
+- 引受審査: 現在の非医療上限 £1,800,000 に基づき、医療引受審査が必要となる給与しきい値は £450,000 です（つまり、£1,800,000 ÷ 4）。
 - 非課税給付支払い
 - Reframe を通じた Cancer Assist サポートを含む
 - [Life Insurance Policy Guide](https://drive.google.com/file/d/1D7QXKKvVtafQFbBFD4mPuKqbi1mqBsLh/view?usp=sharing) を見る
@@ -189,7 +190,7 @@ Unum との生命保険給付を通じて、Employee Assistance および Wellbe
 <details markdown="1">
 <summary>医療引受審査</summary>
 
-- £375,000 を超える給与には追加カバレッジのために医療評価が必要
+- £450,000 を超える給与には追加カバレッジのために医療評価が必要
 - 自動上限を超えるカバレッジが必要な場合は、total-rewards@gitlab.com にお問い合わせください
 
 </details>
@@ -202,6 +203,7 @@ Unum との生命保険給付を通じて、Employee Assistance および Wellbe
 <summary>適格性要件</summary>
 
 - 16 歳から State Pension Age までのすべてのチームメンバー
+- State Pension Age 後は、チームメンバーは 70 歳まで Extended Cover Policy に加入します。
 - 入社時に自動加入
 
 </details>
@@ -228,7 +230,8 @@ Unum との生命保険給付を通じて、Employee Assistance および Wellbe
 <details markdown="1">
 <summary>医療引受審査</summary>
 
-- £226,000 までの給与に対する自動カバレッジ
+- Group Income Protection ポリシーの自動カバレッジしきい値は給与の 66.6% です。
+- 引受審査: 現在の非医療上限 £155,000 に基づき、医療引受審査が必要となる基本給与しきい値は £232,732 です（つまり、£155,000 ÷ 66.6%）。
 - 高い給与には追加カバレッジのために医療評価が必要
 
 </details>

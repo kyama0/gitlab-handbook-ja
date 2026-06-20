@@ -2,11 +2,11 @@
 title: "UX Research Operations Coordinator を代理で務める方法"
 description: "リクルートを最初から最後まで成功させるために必要な手順を詳述します"
 upstream_path: /handbook/product/ux/research-operations/research-specialist-fill-in/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:13:04Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T13:14:13+00:00"
+lastmod: 2026-06-15T07:58:19-05:00
 ---
 
 UX Research Operations Coordinator の役割を担う場面があります。このページでは、リクルートを最初から最後まで成功させるために必要な「舞台裏」のすべての手順を詳述します。UX Research Operations Coordinator とどう連携するかに興味がありますか？ その情報は[こちら](/handbook/product/ux/experience-research/recruiting-participants/) で見つけられます。
@@ -19,10 +19,10 @@ UX Research Operations Coordinator の役割を担う場面があります。こ
 - UX Research Operations Coordinator は、引き継ぐ必要のある進行中のリクルート Issue であなたを @ メンションします。Issue の状況と完了すべき作業を明確に説明します。
 - UX Research Operations Coordinator は、これらの進行中の Issue にあなたをアサインするので、簡単に追跡できます。
 - UX Research Operations Coordinator は、Open Recruitment Projects シートも共有し、サポートが必要なプロジェクトであなたをタグ付けします。
-- 今後 X 日間および／または週間のリクルート問い合わせ先として、`#product` と `#ux` Slack チャネルで自己紹介します。
+- 今後 X 日間および／または週間のリクルート問い合わせ先として、`#product` と `#upstream-studios` Slack チャネルで自己紹介します。
   - Slack でリクルートリクエストを上げようとする人がいたら、[リクルートリクエスト Issue を作成](/handbook/product/ux/experience-research/recruiting-participants/#opening-a-recruitment-request) し、追跡と可視性のためにあなたにアサインするよう促します。
   - コメントで引き継ぎを確認したら、Issue があなたに引き継がれたことを依頼者に伝えます。
-- UX Research Operations Coordinator の代理が複数人いる場合は、調整を容易にするため `#uxr_reops` Slack チャネルに必ず参加してください。
+- UX Research Operations Coordinator の代理が複数人いる場合は、調整を容易にするため `#research_operations` Slack チャネルに必ず参加してください。
 - UX Research Operations Coordinator が連続 7 営業日以上不在になる場合、UX Research Operations Coordinator は Research Recruiting & Incentive Request Issue Template に対する MR を開き、代理を務める人物が新規 Issue に自動アサインされるようにします。
 
 ### ステップ 2 - 新規リクルートリクエストへの対応
@@ -62,7 +62,7 @@ UX Research Operations Coordinator の役割を担う場面があります。こ
   - パネルを活用して技術系ユーザーをリクルートできます
 - **チームメンバーを活用してリクエストを社内共有:**
   - 使用方法:
-    - #ux、#product、#whats_happening_at_gitlab などの Slack チャネルに投稿します。簡潔なコールトゥアクション、締切、投稿してほしいリンクを含めてください。
+    - #upstream-studios、#product、#whats_happening_at_gitlab などの Slack チャネルに投稿します。簡潔なコールトゥアクション、締切、投稿してほしいリンクを含めてください。
 - **LinkedIn での [直接アウトリーチ](https://www.youtube.com/watch?v=rc2IX1e2sQ8&feature=youtu.be):**
   - 使用方法:
     - 求める条件で検索し、InMail クレジットを使って招待できます。
