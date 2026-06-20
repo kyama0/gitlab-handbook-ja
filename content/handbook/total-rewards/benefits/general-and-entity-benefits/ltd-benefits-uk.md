@@ -170,7 +170,7 @@ Unum との生命保険給付を通じて、Employee Assistance および Wellbe
 <details markdown="1">
 <summary>カバレッジと主な特徴</summary>
 
-- Group Life Insurance ポリシーの自動カバレッジしきい値は基本給与の 4 倍です。
+- Group Life Insurance ポリシーの自動保障上限は基本給与の 4 倍です。
 - 引受審査: 現在の非医療上限 £1,800,000 に基づき、医療引受審査が必要となる給与しきい値は £450,000 です（つまり、£1,800,000 ÷ 4）。
 - 非課税給付支払い
 - Reframe を通じた Cancer Assist サポートを含む

@@ -81,7 +81,7 @@ lastmod: 2026-06-19T16:04:17-04:00
 
 これは平日の日中シフト時間帯に届き、緊急ケースを知らせるために*稼働可能な*すべてのエンジニアに通知します。
 
-![US Gov Slack Bot Emergency Example](/images/support/usgov_pd_bot_alert.png)
+![US Gov Slack Bot の緊急ケース例](/images/support/usgov_pd_bot_alert.png)
 
 ### フローの例
 

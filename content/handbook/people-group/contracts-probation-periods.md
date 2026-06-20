@@ -11,7 +11,7 @@ lastmod: "2026-06-19T17:23:25+01:00"
 
 ## 契約テンプレート
 
-GitLab のチームメンバー契約テンプレートは、GitLab 内のみで（参照用に）アクセス可能です[（こちら）](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/#employment-agreements)。すべての契約テンプレートの DRI は Legal, Employment チームです。契約は定期的に監査および更新されます。雇用テンプレートへの変更に関する提案や依頼は Legal, Employment チームに行う必要があり、VP of Legal, Employment による承認が必要です。Handbook で [Legal, Employment への連絡*方法*](/handbook/legal/employment-law/#connect)を確認できます。
+GitLab のチームメンバー契約テンプレートは、GitLab 内のみで（参照用に）アクセス可能です[（こちら）](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/#employment-agreements)。すべての契約テンプレートの DRI は Legal, Employment チームです。契約は定期的に監査および更新されます。雇用テンプレートへの変更に関する提案や依頼は Legal, Employment チームに行う必要があり、VP of Legal, Employment による承認が必要です。ハンドブックで [Legal, Employment への連絡*方法*](/handbook/legal/employment-law/#connect)を確認できます。
 
 ## チームメンバーの個別契約
 
