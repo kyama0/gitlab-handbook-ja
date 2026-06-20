@@ -1,7 +1,5 @@
-{{- /* data/public/pets.yml（www-gitlab-com から同期）にある GitLab team pets の grid。
-       各 card は full story を表示する Bootstrap modal を開く。pattern は
-       layouts/_shortcodes/all-remote/stories.html に合わせている。Images は移動しない。
-       about.gitlab.com から CI-generated square "<base>-crop.jpg" variants として配信される。 */ -}}
+{{- /* 日本語化済みの team pets data がある場合だけ描画する。英語の data/public/pets.yml は公開しない。 */ -}}
+{{- with site.Data.public.pets_ja }}
 <style>
   /* Pet card photos are grayscale by default and fade to full color on hover. */
   .team-pets-grid .member-img { transition: filter 0.2s ease-in-out; }
@@ -11,7 +9,7 @@
   .team-pet-modal .modal-dialog { max-width: 410px; }
 </style>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-card team-pets-grid">
-  {{- range $i, $pet := site.Data.public.pets }}
+  {{- range $i, $pet := . }}
   {{- $anchor := printf "pet-%d-%s" $i (anchorize $pet.name) }}
   {{- $img := "" }}
   {{- with $pet.picture }}{{ $img = printf "https://about.gitlab.com/images/team/pets/%s-crop.jpg" (strings.TrimSuffix (path.Ext .) .) }}{{ end }}
@@ -55,3 +53,4 @@
     }
   });
 </script>
+{{- end }}
