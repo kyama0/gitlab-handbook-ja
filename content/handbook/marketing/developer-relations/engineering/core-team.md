@@ -1,51 +1,48 @@
 ---
 title: "コアチーム"
 upstream_path: /handbook/marketing/developer-relations/engineering/core-team/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: 9164688669f5bd36ff8345a38c17f82ffc321821
+translated_at: "2026-06-20T21:10:03Z"
 translator: claude
 stale: false
-lastmod: "2026-03-19T19:48:12+00:00"
+lastmod: "2026-06-16T12:33:40-04:00"
+model: claude-opus-4-7
 ---
 
 ## コアチームメンバーになる
 
-新しいメンバーは以下の手順を通じて、いつでも[コアチーム](https://about.gitlab.com/community/core-team/)に追加できます:
+新しいメンバーは、以下の手順を通じていつでも[コアチーム](https://about.gitlab.com/community/core-team/)に追加できます。
 
-1. コアチームメンバーまたは GitLab チームメンバーは、より広いコミュニティから新しいメンバーを、いつでも[コアチームグループ](https://gitlab.com/groups/gitlab-org/gitlab-core-team/-/issues)で機密 Issue を使用して指名できます。これは、起こり得るネガティブなフィードバックを最小限の場に留めるためです。
-2. 指名された人は、4 週間以内に現在のすべてのコアチームメンバーの 3 分の 2 (2/3) から賛成票を得て、指名を受諾した場合にコアチームに加わります。
-3. 新しいメンバーが追加されたら、以下の[コアチームメンバーオリエンテーションのセクション](/handbook/marketing/developer-relations/engineering/core-team/#core-team-member-orientation)に記載されている手順に従ってオンボーディングプロセスを開始します。
+1. コアチームメンバーまたは GitLab チームメンバーは、より広いコミュニティから新しいメンバーを、いつでも[コアチームグループ](https://gitlab.com/groups/gitlab-org/gitlab-core-team/-/issues)で機密 Issue を使用して指名できます。これは、起こり得るネガティブなフィードバックを可能な限り最小限の場に留めるためです。
+2. 指名された人物は、4 週間以内に現在の全コアチームメンバーの 3 分の 2 (2/3) から賛成票を得て、指名を受諾した場合に、コアチームに追加されます。
+3. 新しいメンバーが追加されたら、下記の[コアチームメンバーオリエンテーションセクション](/handbook/marketing/developer-relations/engineering/core-team/#core-team-member-orientation)に示された手順に従って、オンボーディングプロセスを開始します。
 
 ## 月次コアチームミーティング
 
-時差やその他のコミットメントのため、コアチームは毎月第 3 火曜日に非同期で開催されます。
-ミーティングのロジスティクス/アジェンダ/ノートは、[コアチーム Issue トラッカー](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues)で確認できます。
-すべてのミーティング録画は、[コアチームミーティングプレイリスト](https://www.youtube.com/playlist?list=PLFGfElNsQthZ12EUkq3N9QlThvkf3WGnZ)で視聴できます。
+時差やその他の予定のため、コアチームは毎月第 3 火曜日に非同期でミーティングを行います。ミーティングの進行・アジェンダ・メモは、[コアチーム Issue トラッカー](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues)で入手できます。すべてのミーティング録画は、[コアチームミーティングのプレイリスト](https://www.youtube.com/playlist?list=PLFGfElNsQthZ12EUkq3N9QlThvkf3WGnZ)で入手できます。
 
 ## コアチームメンバーへの連絡
 
 コアチームメンバーには、Issue やマージリクエストで `@gitlab-org/gitlab-core-team` を[メンション](https://docs.gitlab.com/ee/user/group/subgroups/index#mentioning-subgroups)することで連絡できます。
 
-GitLab が主な連絡手段ですが、コアチームには [#core](https://gitlab.slack.com/messages/core) Slack チャンネルでも連絡できます。
+GitLab が主要な連絡手段ですが、コアチームには [#core](https://gitlab.slack.com/messages/core) Slack チャンネルでも連絡できます。
 
-誰でも[コアチーム Issue トラッカー](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues)で Issue を作成できます。
+誰でも[コアチーム Issue トラッカー](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues)で Issue を開くことができます。
 
-## オフボーディングと円満な辞退
+## オフボーディングと円満な退任
 
-コアチームでの活動を続けることが難しくなった場合、または興味を失った場合は、`#core` Slack チャンネルでアナウンスする必要があります。
-辞退すると、非アクティブな[コアチーム](https://about.gitlab.com/community/core-team/)メンバーになります。
-コアチームメンバーが辞退したら、別のコアチームメンバーが [`offboarding` テンプレート](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues/new?issuable_template=offboarding)を使用して Issue を作成し、記載されている手順に従います。
+コアチームでの活動が続けられなくなった、または興味を失った場合は、`#core` Slack チャンネルでアナウンスすべきです。退任すると、非アクティブな[コアチーム](https://about.gitlab.com/community/core-team/)メンバーになります。コアチームメンバーが退任したら、別のコアチームメンバーが [`offboarding` テンプレート](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues/new?issuable_template=offboarding)を使って Issue を作成し、示された手順に従います。
 
 ## コアチームメンバーオリエンテーション
 
-1. 指名されたメンバーに、オリエンテーションプロセスを開始する前に興味があるかどうかを確認するメールを送ります。
-1. [Core Team Member Onboarding Issue Template](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues/new?issuable_template=onboarding) を使用して、[Core Team Project](https://gitlab.com/gitlab-org/gitlab-core-team/general) で Issue を作成し、記載されている手順に従います。
+1. オリエンテーションプロセスを開始する前に、指名されたメンバーに興味があることを確認するためメールを送ります。
+1. [Core Team Member Onboarding Issue Template](https://gitlab.com/gitlab-org/gitlab-core-team/general/-/issues/new?issuable_template=onboarding) を使って[コアチームプロジェクト](https://gitlab.com/gitlab-org/gitlab-core-team/general)に Issue を作成し、示された手順に従います。
 
-   - コアチームメンバーには、いかなるアクセスを付与する前に NDA への署名が必要です。
+   - コアチームメンバーには、アクセス権を付与する前に NDA に署名してもらう必要があります。
 
 ## コアチームグループ
 
-すべてのコアチームメンバーは、GitLab.com の [`gitlab-org/gitlab-core-team`](https://gitlab.com/gitlab-org/gitlab-core-team/) グループに所属しています。このグループは、特定の自動化目的のために特別な構造を持っています:
+すべてのコアチームメンバーは、GitLab.com 上の [`gitlab-org/gitlab-core-team`](https://gitlab.com/gitlab-org/gitlab-core-team/) グループに属しています。このグループは、特定のオートメーション目的のために独自の構造を持っています。
 
 ```mermaid
 graph TD
@@ -53,20 +50,20 @@ graph TD
     A --> C["general (project)"]
 ```
 
-[`community-members`](https://gitlab.com/gitlab-org/gitlab-core-team/community-members) グループは、以下の目的で存在します:
+[`community-members`](https://gitlab.com/gitlab-org/gitlab-core-team/community-members) グループは、以下のために存在します。
 
-- [トリアージを促進する](https://gitlab.com/gitlab-org/quality/triage-ops/-/merge_requests/65) ため、および
-- [コアチームメンバーが changelog にクレジットされることを保証する](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/69076) ため
+- [トリアージを促進する](https://gitlab.com/gitlab-org/quality/triage-ops/-/merge_requests/65)、そして
+- [コアチームメンバーが changelog でクレジットされるようにする](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/69076)
 
 ## コアチームメンバーの特典
 
-コアチームに加わることが意味する信頼、価値、認識の一環として、各メンバーには貢献をサポートするためのさまざまな特典が付与されます。
+コアチームに参加することが意味する信頼・価値・評価の一環として、各メンバーには、コントリビューションを支援するためのいくつかの特典が付与されます。
 
 ### Slack アクセス
 
 コアチームメンバーには、[コアチームメンバーオリエンテーション](#core-team-member-orientation)の一環として、[GitLab チームの Slack インスタンスへのアクセス](/handbook/tools-and-tips/slack/#channels-access)が付与されます。
 
-コアチームがアクセスできる/すべき最新のチャンネルリストは、[Core Team and Slack](https://docs.google.com/spreadsheets/d/1kohQBbvk2JSl3DXrmF5TDsWVoAMi_yujFWzzAP6vq2M/edit#gid=0) Google Sheets と以下のリストで確認できます:
+コアがアクセスすべき/しているチャンネルの最新リストは、[Core Team and Slack](https://docs.google.com/spreadsheets/d/1kohQBbvk2JSl3DXrmF5TDsWVoAMi_yujFWzzAP6vq2M/edit#gid=0) の Google Sheets と、以下のリストで確認できます。
 
 <style>
 details summary * {
@@ -74,7 +71,14 @@ details summary * {
 }
 </style>
 
-{{% details summary="#### コアチームがアクセスできる Slack チャンネル" %}}
+<details>
+
+<summary>
+
+#### コアチームがアクセスできる Slack チャンネル
+
+</summary>
+
 - backend
 - backend_maintainers
 - backend_pairs
@@ -82,7 +86,7 @@ details summary * {
 - community-programs
 - competition
 - core
-- dev-advocacy-team
+- developer-advocacy
 - developer-relations
 - developer-relations-community-contributions
 - developer-relations-eng-and-programs
@@ -142,9 +146,17 @@ details summary * {
 - ux_coworking
 - vim
 - website
-{{% /details %}}
 
-{{% details summary="#### コアチームがアクセスできない Slack チャンネル" %}}
+</details>
+
+<details>
+
+<summary>
+
+#### コアチームがアクセスできない Slack チャンネル
+
+</summary>
+
 - release-post
 - security
 - questions
@@ -157,64 +169,65 @@ details summary * {
 - company-fyi
 - contribute2021
 - ux
-{{% /details %}}
 
-#### Slack チャンネルへのコアチームアクセスのリクエスト
+</details>
 
-1. リクエストする新しいチャンネルを記載した[アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)を提出してください。
-1. Issue を [Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/#team-members) のメンバーにアサインします。彼らが次のステップを完了します。
-1. Developer Relations Engineering は、チャンネルのオーナーを特定し、コアチームメンバーをチャンネルに迎え入れることに同意するかどうかをコメントで確認するようリクエストをレビューしてもらいます。
-1. レビューが成功した後、Issue は Slack 管理者に引き継がれ/アサインされ、コアチームメンバーをチャンネルに招待し、上記のリストが更新されます。
+#### Slack チャンネルへのコアチームアクセスをリクエストする
 
-コアチームメンバーがアクセスできるすべてのチャンネルでは、投稿時に [SAFE ガイドライン](/handbook/legal/safe-framework/)に従う必要があります。コアチームメンバーは NDA に署名しているにも関わらず、GitLab チームメンバーとは見なされません。
+1. リクエストする新しいチャンネルを指定して、[アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)を送信してください。
+1. その Issue を、次のステップを完了する[デベロッパーリレーションズエンジニアリング](/handbook/marketing/developer-relations/engineering/#team-members)のメンバーに割り当てます。
+1. デベロッパーリレーションズエンジニアリングは次を行います。チャンネルのオーナーを特定し、自分のチャンネルにコアチームメンバーを入れることに同意するかどうかをコメントで残してもらうことで、リクエストをレビューするよう招待します。
+1. レビューが成功したら、Issue が Slack 管理者に引き渡され/割り当てられ、コアチームメンバーをチャンネルに招待し、上記のリストが更新されます。
+
+コアチームメンバーがアクセスできるすべてのチャンネルでは、チャンネルへの投稿時に [SAFE ガイドライン](/handbook/legal/safe-framework/)に従う必要があります。コアチームメンバーは NDA に署名していますが、GitLab チームメンバーとはみなされません。
 
 ### GitLab プロジェクトの Developer 権限
 
-開発体験を向上させるため、コアチームメンバーには、GitLab (製品) のプロジェクトの大半が存在する [`gitlab-org` グループ](https://gitlab.com/gitlab-org)で [`Developer` 権限](https://docs.gitlab.com/ee/user/permissions#group-members-permissions)が付与されます。このグループ配下のすべてのプロジェクトに対して、他の機能の中でも特に以下のことが可能になります:
+開発体験を向上させるため、コアチームメンバーには、GitLab（プロダクト）のプロジェクトの大部分が存在する [`gitlab-org` グループ](https://gitlab.com/gitlab-org)に対して [`Developer` 権限](https://docs.gitlab.com/ee/user/permissions#group-members-permissions)が付与されます。そのグループ配下のあらゆるプロジェクトについて、他の機能に加えて、これにより以下が可能になります。
 
-- フォークではなくソースプロジェクトでブランチを作成する
-- マージリクエストをアサインする
-- Issue をアサインする
-- ラベルを管理しアサインする
+- フォークではなくソースプロジェクト上でブランチを作成する
+- マージリクエストを割り当てる
+- Issue を割り当てる
+- ラベルを管理・割り当てる
 
-現時点では、コアチームメンバーは GitLab 社に関連するプロジェクトやプロセスに使用される [`gitlab-com` グループ](https://gitlab.com/gitlab-com)には追加されません。
+現時点では、コアチームメンバーは、GitLab という会社に関連するプロジェクトやプロセスに使用される [`gitlab-com` グループ](https://gitlab.com/gitlab-com)には追加されません。
 
-[Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/#team-members) は、新しいコアチームメンバーのオリエンテーション Issue の一環として、通常この権限を付与します。
+[デベロッパーリレーションズエンジニアリング](/handbook/marketing/developer-relations/engineering/#team-members)は通常、新しいコアチームメンバーのオリエンテーション Issue の一環として、この権限を付与する対応を行います。
 
 ### チームページへの掲載
 
-GitLab チームへの所属と親密さを強調し、プロフィールの可視性を高めるため、コアチームメンバーは [GitLab チームページに自分を追加](/handbook/about/editing-handbook/#add-yourself-to-the-team-page)し、[Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/#team-members) のメンバーにレビューを依頼できます。
+GitLab チームとの関わりや近さを強調し、自身のプロフィールの可視性を高めるため、コアチームメンバーは[自分自身を GitLab チームページに追加](/handbook/about/editing-handbook/#add-yourself-to-the-team-page)し、[デベロッパーリレーションズエンジニアリング](/handbook/marketing/developer-relations/engineering/#team-members)のいずれかのメンバーにレビューを依頼できます。
 
-これにより、彼らのプロフィールが[コアチームページ](https://about.gitlab.com/community/core-team/)にも掲載されます。
+これにより、[コアチームページ](https://about.gitlab.com/community/core-team/)にもそのプロフィールが掲載されます。
 
-### GitLab トップティアライセンス
+### GitLab の最上位ティアライセンス
 
-貢献を可能にし、GitLab の機能に関する洞察を得るため、コアチームメンバーは[開発目的で無料のトップティアライセンスをリクエスト](/handbook/marketing/developer-relations/engineering/community-contributors-workflows#contributing-to-the-gitlab-enterprise-edition-ee)できます。
+コントリビューションを可能にし、GitLab の機能に関する洞察を得るため、コアチームメンバーは[開発目的で無料の最上位ティアライセンスをリクエスト](/handbook/marketing/developer-relations/engineering/community-contributors-workflows#contributing-to-the-gitlab-enterprise-edition-ee)できます。
 
-SaaS またはセルフマネージドインスタンスにおける GitLab トップティアライセンスは、コアチームメンバーに 1 年間付与され、コアチームメンバーの任期中はもう 1 年間更新できます。メンバーが辞退することを決定したものの、引き続き GitLab に時々貢献したい場合でも、GitLab ライセンスの対象となりますが、更新期間は[他の GitLab コミュニティメンバーに与えられる標準の 3 か月](/handbook/marketing/developer-relations/engineering/community-contributors-workflows#contributing-to-the-gitlab-enterprise-edition-ee)になります。
+SaaS またはセルフマネージドインスタンスにおける GitLab の最上位ティアライセンスは、コアチームメンバーに 1 年間付与され、コアチームメンバーの任期中はさらに 1 年間更新できます。あるメンバーが退任を決めたものの、引き続き時々 GitLab にコントリビュートしたい場合でも、GitLab ライセンスの対象であり続けますが、更新期間は[他の GitLab コミュニティメンバーに与えられる標準の 3 ヶ月](/handbook/marketing/developer-relations/engineering/community-contributors-workflows#contributing-to-the-gitlab-enterprise-edition-ee)になります。
 
-コアチームメンバーがリクエストできるシート数に特定の制限はありません。コアチームメンバーが開発目的で必要なユーザー数を見積もる際に、自分自身の判断を使用すること、そしてライセンスを営利目的で使用しないことを信頼しています。
+コアチームメンバーがリクエストできるシート数に特定の制限はありません。私たちはコアチームメンバーを信頼しており、開発目的で必要なユーザー数を自身の判断で見積もり、ライセンスを営利目的で使用しないことを期待しています。
 
 ### JetBrains ライセンス
 
-GitLab へのコード貢献をサポートするため、コアチームメンバーは[開発目的で JetBrains ライセンスをリクエスト](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/)できます。
+GitLab へのコードコントリビューションを支援するため、コアチームメンバーは[開発目的で JetBrains ライセンスをリクエスト](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/)できます。
 
-> 免責事項: 適用される貿易管理法により、以下の国への払い戻しは行えません: キューバ、イラン、北朝鮮、シリア、ウクライナ、ロシア、ベラルーシ。このリストは予告なく変更される場合があります。
+> 免責事項: 適用される貿易管理法により、以下の国々には払い戻しを提供できません: キューバ、イラン、北朝鮮、シリア、ウクライナ、ロシア、ベラルーシ。このリストは予告なく変更されることがあります。
 
 #### プロセス
 
-- `#core` チームの slack チャンネルでリクエストを投稿します。
-- 承認されたら、関連するライセンスを購入します。
-- `ap@gitlab.com` に `nveenhof@gitlab.com` を CC して、以下を含めてメールします:
-  - 領収書のコピー
-  - 払い戻しのための国際銀行口座情報
-  - @nick_vh が承認の返信をします
-  - AP が払い戻しプロセスを進めます
+- `#core` チームの Slack チャンネルでリクエストを上げます。
+- 承認されたら、該当するライセンスを購入します。
+- `ap@gitlab.com` に、`nveenhof@gitlab.com` を cc して、以下を含めてメールします。
+  - レシートのコピー。
+  - 払い戻しのための国際銀行口座情報。
+  - @nick_vh が承認の返信をするはずです。
+  - AP が払い戻しプロセスを進めます。
 
-### GitLab イベントへのスポンサーアクセス
+### GitLab イベントへのスポンサードアクセス
 
-対面または仮想イベントでの貢献をサポートするため、コアチームメンバーは GitLab イベント (例: GitLab Contribute、GitLab Commit) へのスポンサーアクセス (購読、宿泊、旅行) の対象となります。
+対面またはバーチャルのイベントでのコントリビューションを支援するため、コアチームメンバーは、GitLab イベント（例: GitLab Contribute、GitLab Commit）へのスポンサードアクセス（参加費、宿泊、交通）の対象となります。
 
 ### パーソナライズされたグッズ
 
-GitLab チームは、コアチームメンバー専用のパーソナライズされたグッズを時折提供し、スタイリッシュに貢献できるようにすることがあります！
+時折、GitLab チームは、スタイリッシュにコントリビュートできるよう、コアチームメンバー限定のパーソナライズされたグッズを提供することがあります。

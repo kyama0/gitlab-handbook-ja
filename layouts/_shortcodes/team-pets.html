@@ -1,0 +1,57 @@
+{{- /* Grid of GitLab team pets from data/public/pets.yml (synced from www-gitlab-com).
+       Each card opens a Bootstrap modal with the full story; pattern mirrors
+       layouts/_shortcodes/all-remote/stories.html. Images are not moved — they are
+       served from about.gitlab.com as CI-generated square "<base>-crop.jpg" variants. */ -}}
+<style>
+  /* Pet card photos are grayscale by default and fade to full color on hover. */
+  .team-pets-grid .member-img { transition: filter 0.2s ease-in-out; }
+  .team-pets-grid a:hover .member-img,
+  .team-pets-grid .member-img:hover { filter: none; }
+  /* Keep the pet modal compact, matching the previous design. */
+  .team-pet-modal .modal-dialog { max-width: 410px; }
+</style>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-card team-pets-grid">
+  {{- range $i, $pet := site.Data.public.pets }}
+  {{- $anchor := printf "pet-%d-%s" $i (anchorize $pet.name) }}
+  {{- $img := "" }}
+  {{- with $pet.picture }}{{ $img = printf "https://about.gitlab.com/images/team/pets/%s-crop.jpg" (strings.TrimSuffix (path.Ext .) .) }}{{ end }}
+  <div class="col mb-4" id="{{ $anchor }}">
+    <div class="lead--card h-100 text-center">
+      {{- with $img }}
+      <a href="#{{ $anchor }}" data-bs-toggle="modal" data-bs-target="#{{ $anchor }}-modal" aria-label="Read more about {{ $pet.name }}">
+        <img src="{{ . }}" alt="{{ $pet.name }}" loading="lazy" width="200" height="200" class="member-img" />
+      </a>
+      {{- end }}
+      <h2 class="h4 mt-3">{{ $pet.name }}</h2>
+    </div>
+  </div>
+  <div class="modal team-pet-modal" id="{{ $anchor }}-modal" tabindex="-1" aria-labelledby="{{ $anchor }}-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title h5" id="{{ $anchor }}-modal-title">{{ $pet.name }}</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body text-center">
+          {{- with $img }}
+          <img src="{{ . }}" alt="{{ $pet.name }}" class="m-3 member-img-color" width="200" height="200" loading="lazy" />
+          {{- end }}
+          {{- with $pet.human }}<p><strong>{{ . }}</strong></p>{{- end }}
+          {{- with $pet.story }}<p class="text-start">{{ . }}</p>{{- end }}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{- end }}
+</div>
+<script>
+  // Open a pet's modal directly when the page is loaded with its anchor in the URL.
+  $(document).ready(function () {
+    if (location.hash) {
+      var modalEl = document.getElementById(location.hash.substring(1) + "-modal");
+      if (modalEl) {
+        new bootstrap.Modal(modalEl).show();
+      }
+    }
+  });
+</script>
