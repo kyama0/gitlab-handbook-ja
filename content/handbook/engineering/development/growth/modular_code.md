@@ -1,5 +1,5 @@
 ---
-title: Modular Code Guiding Principle
+title: モジュラーコードの指針
 description: "Growth Engineers が AI ネイティブなコラボレーションと長期的なメンテナンス性を最適化し、デフォルトでモジュラーコードを書く理由と方法"
 upstream_path: /handbook/engineering/development/growth/modular_code/
 upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
