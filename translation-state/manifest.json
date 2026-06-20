@@ -33207,6 +33207,30 @@
       "model": "codex",
       "input_hash": "db092de5807b3a5335da5942d75eebd42a141684cd1a20526175c25790cc4fb4",
       "upstream_committed_at": "2026-06-19T14:14:46-07:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/modular_monolith/domain_layer.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/domain_layer.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:25:50Z",
+      "model": "codex",
+      "input_hash": "5335ec7100ec6d4289d4a6e616a57c7b70885143a5fc7d2ab4caa23ae3d61a89",
+      "upstream_committed_at": "2026-06-15T16:29:33+01:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/modular_monolith/library_extraction.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/library_extraction.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:25:50Z",
+      "model": "codex",
+      "input_hash": "b7638069fba6e46c0491796056d11dc109294bec6b528d1e1465b50cc73b172e",
+      "upstream_committed_at": "2026-06-15T16:29:33+01:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/modular_monolith/transport_layer.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/transport_layer.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:25:50Z",
+      "model": "codex",
+      "input_hash": "c0c12e505fb0f6ef9fe43d5434cfa1b1d01457464de37653c03301691f93da53",
+      "upstream_committed_at": "2026-06-15T16:29:33+01:00"
     }
   }
 }
