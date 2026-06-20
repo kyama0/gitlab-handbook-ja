@@ -5,7 +5,7 @@ description: >-
 upstream_path: /handbook/upstream-studios/
 upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
 translated_at: "2026-06-20T20:58:39+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: 2026-06-19T14:14:46-07:00
 ---
