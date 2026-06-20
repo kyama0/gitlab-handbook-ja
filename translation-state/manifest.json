@@ -33207,6 +33207,14 @@
       "model": "codex",
       "input_hash": "db092de5807b3a5335da5942d75eebd42a141684cd1a20526175c25790cc4fb4",
       "upstream_committed_at": "2026-06-19T14:14:46-07:00"
+    },
+    "content/handbook/company/team-pets.md": {
+      "path": "content/handbook/company/team-pets.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:55:12Z",
+      "model": "codex",
+      "input_hash": "89858770a847c167895a53daadab493b7cd3e09a952300ba957ad2ec3f2e611b",
+      "upstream_committed_at": "2026-06-19T16:49:16-04:00"
     }
   }
 }
