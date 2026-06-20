@@ -33232,6 +33232,22 @@
       "input_hash": "db092de5807b3a5335da5942d75eebd42a141684cd1a20526175c25790cc4fb4",
       "upstream_committed_at": "2026-06-19T14:14:46-07:00"
     },
+    "content/handbook/engineering/architecture/design-documents/gitlab_steps/nix-package-manager.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/gitlab_steps/nix-package-manager.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:35:06Z",
+      "model": "codex",
+      "input_hash": "0bbecfa730a6d9f1da46f94617fc5863b9f6713d2ebcd63a9a22791565b824b5",
+      "upstream_committed_at": "2026-06-18T16:29:19-07:00"
+    },
+    "content/handbook/engineering/devops/create/.gitlab/issue_templates/initiative.md": {
+      "path": "content/handbook/engineering/devops/create/.gitlab/issue_templates/initiative.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:35:06Z",
+      "model": "codex",
+      "input_hash": "75d8a81716e6293e23377b3ac360069ef201d5b286dd0fa40c6a45b340318f94",
+      "upstream_committed_at": "2025-12-05T19:47:34+00:00"
+    },
     "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/004_library_extraction.md": {
       "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/004_library_extraction.md",
       "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
