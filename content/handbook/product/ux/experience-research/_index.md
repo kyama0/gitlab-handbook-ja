@@ -29,8 +29,8 @@ ExR チームは [Karen Li](https://gitlab.com/karenyli) がリードしてい�
 | AI Studio | [Nick Hertz](https://gitlab.com/NickHertz) | Product studio |
 | PLG/Monetisation/Platforms Studio | [Anne Lasch](https://gitlab.com/alasch) | Product studio |
 | Security Studio | [Nikki Shechtman](https://gitlab.com/nshechtmann) | Product studio |
-| Service Design | [Bindu Upadhyay](https://gitlab.com/binduupadhyay) | Cross-teams |
-| Research Operations | [Cait Faughnan](https://gitlab.com/cfaughnan), [Mariana Cardinali](https://gitlab.com/marianacardinali) | Cross-teams |
+| Service Design | [Bindu Upadhyay](https://gitlab.com/binduupadhyay) | クロスチーム |
+| Research Operations | [Cait Faughnan](https://gitlab.com/cfaughnan), [Mariana Cardinali](https://gitlab.com/marianacardinali) | クロスチーム |
 
 ## 私たちの働き方
 
