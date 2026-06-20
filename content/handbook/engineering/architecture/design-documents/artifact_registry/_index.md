@@ -9,11 +9,11 @@ owning-stage: "~devops::package"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-translated_at: "2026-06-12T00:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T12:49:33Z"
 translator: claude
 stale: false
-lastmod: 2026-06-09T19:10:50+01:00
+lastmod: 2026-06-19T12:48:58+02:00
 ---
 
 <!--
@@ -452,6 +452,7 @@ each alternative solution/path.
 1. [ADR-012: Usage Data Collection](decisions/012_usage_data_collection.md) - Artifact Registry の利用データ収集メカニズムとしての Snowplow
 1. [ADR-013: Storage Backend Interaction](decisions/013_storage_backend_interaction.md) - ストレージバックエンド + CDN のペアリング、署名付き URL の生成、リダイレクトターゲットのルーティング、ダウンロードメタデータの伝播
 1. [ADR-014: Frontend to Artifact Registry Interaction](decisions/014_frontend_to_artifact_registry.md) - ブラウザと Artifact Registry のインタラクションのための Rails GraphQL リゾルバーパターン
+1. [ADR-015: Slug Policy (internal)](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/) - namespace slug の検証、デフォルト導出、予約分類、ライフサイクル、運用上の制御（ブロック、再割り当て）
 1. [ADR-020: Authentication Flow](decisions/020_authentication_flow.md) - Artifact Registry の認証設計
 1. [ADR-022: Namespace Decoupling](decisions/022_namespace_decoupling.md) - 不変のスラッグを備えた内部 namespace エンティティ
 1. [ADR-023: Code Structure and Enforcement](decisions/023_code_structure_and_enforcement.md) - 機能ごとのパッケージ構成を備えた Go の `cmd/` + `internal/` レイアウト

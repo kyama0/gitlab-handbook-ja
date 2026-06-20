@@ -9,11 +9,11 @@ owning-stage: "~devops::verify"
 participating-stages: [ ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/gitlab_steps/
-upstream_sha: 9e852ac812142230dfe1e1db31be2862cd857cfd
-translated_at: "2026-04-27T00:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T12:49:33Z"
 translator: claude
 stale: false
-lastmod: "2025-04-28T10:53:04-07:00"
+lastmod: 2026-06-18T16:29:19-07:00
 ---
 
 
@@ -184,6 +184,7 @@ GitLab CI で表現されたステップはベースラインステップ定義�
 
 - [ステップ定義](step-definition.md)。
 - [構文糖衣拡張](steps-syntactic-sugar.md)。
+- [Nix Package Manager](nix-package-manager.md)。
 
 ### GitLab Steps の統合
 
