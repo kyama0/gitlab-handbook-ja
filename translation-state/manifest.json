@@ -8322,9 +8322,9 @@
     },
     "content/handbook/engineering/architecture/design-documents/modular_monolith/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/_index.md",
-      "upstream_sha": "9164688669f5bd36ff8345a38c17f82ffc321821",
-      "translated_at": "2026-06-20T21:10:03Z",
-      "model": "claude-opus-4-7",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:09:23Z",
+      "model": "codex",
       "input_hash": "56d04673203ca93d1b7de4f7d067530dc0994a3fcea1907fad8279b5d8e682a8",
       "upstream_committed_at": "2026-06-15T16:29:33+01:00"
     },
@@ -8334,6 +8334,22 @@
       "translated_at": "2026-06-20T13:37:44Z",
       "model": "codex",
       "input_hash": "0e8cf110c0895383ee758d8fbd735625943a1291fc90bbd3708246452c9575e2",
+      "upstream_committed_at": "2026-06-15T16:29:33+01:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/modular_monolith/domain_layer.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/domain_layer.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:25:50Z",
+      "model": "codex",
+      "input_hash": "5335ec7100ec6d4289d4a6e616a57c7b70885143a5fc7d2ab4caa23ae3d61a89",
+      "upstream_committed_at": "2026-06-15T16:29:33+01:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/modular_monolith/library_extraction.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/library_extraction.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:25:50Z",
+      "model": "codex",
+      "input_hash": "b7638069fba6e46c0491796056d11dc109294bec6b528d1e1465b50cc73b172e",
       "upstream_committed_at": "2026-06-15T16:29:33+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/001_modular_application_domain.md": {
@@ -8354,9 +8370,9 @@
     },
     "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/003_stewardship.md": {
       "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/003_stewardship.md",
-      "upstream_sha": "9164688669f5bd36ff8345a38c17f82ffc321821",
-      "translated_at": "2026-06-20T21:10:03Z",
-      "model": "claude-opus-4-7",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:09:23Z",
+      "model": "codex",
       "input_hash": "f56e4c7fdd8726a6a3e25963ae808eca794fe3c368fba00e04489e92dad4ea0d",
       "upstream_committed_at": "2026-06-15T16:29:32+01:00"
     },
@@ -8383,6 +8399,14 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "4f9baac27404b5f56e4aeed1693473fb2292ae161ebc8936481af4d20ad481f7",
       "upstream_committed_at": "2025-02-06T10:19:40+00:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/modular_monolith/transport_layer.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/transport_layer.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:25:50Z",
+      "model": "codex",
+      "input_hash": "c0c12e505fb0f6ef9fe43d5434cfa1b1d01457464de37653c03301691f93da53",
+      "upstream_committed_at": "2026-06-15T16:29:33+01:00"
     },
     "content/handbook/engineering/architecture/design-documents/multi_platform_gateway/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/multi_platform_gateway/_index.md",
@@ -25010,9 +25034,9 @@
     },
     "content/handbook/engineering/architecture/design-documents/modular_monolith/hexagonal_monolith/index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/hexagonal_monolith/index.md",
-      "upstream_sha": "9164688669f5bd36ff8345a38c17f82ffc321821",
-      "translated_at": "2026-06-20T21:10:03Z",
-      "model": "claude-opus-4-7",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:09:23Z",
+      "model": "codex",
       "input_hash": "0a33e774ef219df8755bcc57eceefbb2f47e3d1d54ec1d40d0a442a7880fe2e9",
       "upstream_committed_at": "2026-06-15T16:29:33+01:00"
     },
@@ -33207,6 +33231,30 @@
       "model": "codex",
       "input_hash": "db092de5807b3a5335da5942d75eebd42a141684cd1a20526175c25790cc4fb4",
       "upstream_committed_at": "2026-06-19T14:14:46-07:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/004_library_extraction.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/004_library_extraction.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:09:23Z",
+      "model": "codex",
+      "input_hash": "69d7d97006e6364398f2a3439b6d327320744786da26cb5565449aac082b9399",
+      "upstream_committed_at": "2026-06-15T16:29:32+01:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/modular_monolith/frontend/_index.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/frontend/_index.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:09:23Z",
+      "model": "codex",
+      "input_hash": "d4c9db8052a5d771dd8b69f6dbe6b76346d951ec81dde8bad66770771b366aa5",
+      "upstream_committed_at": "2026-06-16T13:36:05+02:00"
+    },
+    "content/handbook/engineering/development/growth/modular_code.md": {
+      "path": "content/handbook/engineering/development/growth/modular_code.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:09:23Z",
+      "model": "codex",
+      "input_hash": "810343da17c25749afe7968cd8e8fef0d4033d5ec6e1bf91cc399f38ff0b5541",
+      "upstream_committed_at": "2026-06-15T18:08:34+05:30"
     },
     "content/handbook/security/customer-support-operations/gitlab/usgov-coverage.md": {
       "path": "content/handbook/security/customer-support-operations/gitlab/usgov-coverage.md",

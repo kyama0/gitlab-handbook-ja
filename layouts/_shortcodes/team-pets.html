@@ -2,6 +2,7 @@
        Each card opens a Bootstrap modal with the full story; pattern mirrors
        layouts/_shortcodes/all-remote/stories.html. Images are not moved — they are
        served from about.gitlab.com as CI-generated square "<base>-crop.jpg" variants. */ -}}
+{{- with site.Data.public.pets }}
 <style>
   /* Pet card photos are grayscale by default and fade to full color on hover. */
   .team-pets-grid .member-img { transition: filter 0.2s ease-in-out; }
@@ -11,7 +12,7 @@
   .team-pet-modal .modal-dialog { max-width: 410px; }
 </style>
 <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-card team-pets-grid">
-  {{- range $i, $pet := site.Data.public.pets }}
+  {{- range $i, $pet := . }}
   {{- $anchor := printf "pet-%d-%s" $i (anchorize $pet.name) }}
   {{- $img := "" }}
   {{- with $pet.picture }}{{ $img = printf "https://about.gitlab.com/images/team/pets/%s-crop.jpg" (strings.TrimSuffix (path.Ext .) .) }}{{ end }}
@@ -55,3 +56,4 @@
     }
   });
 </script>
+{{- end }}

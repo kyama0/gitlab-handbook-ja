@@ -34,7 +34,7 @@ flowchart TD
 
 Growth のミッション、方向性、プロダクト戦略の詳細については、[Growth プロダクトハンドブック](/handbook/marketing/growth/) を参照してください。
 
-## 作業方法
+## 作業方法 {#how-we-work}
 
 [バリュー](/handbook/values/) に沿って、[イテレーション](/handbook/values/#iteration) と [コラボレーション](/handbook/values/#collaboration) に焦点を当て、開発部門のカウンターパートが管理するプロダクトの領域と協力して取り組んでいます。
 
