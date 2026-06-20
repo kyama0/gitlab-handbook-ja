@@ -12,12 +12,14 @@ participating-stages: []
 # Hides this page in the left sidebar. Recommended so we don't pollute it.
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/teams/
-upstream_sha: d5f4aa38819ae2b572eb32e0d967394d0361a975
-translated_at: "2026-04-27T10:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T12:49:33Z"
 translator: claude
 stale: false
-lastmod: "2025-12-10T07:07:31+08:00"
+lastmod: 2026-06-18T11:31:48+12:00
 ---
+
+{{< engineering/design-document-header >}}
 
 ## 概要
 

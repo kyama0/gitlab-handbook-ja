@@ -2,9 +2,9 @@
 title: "デベロッパーアドボカシー"
 description: "デベロッパーアドボケイトは、コミュニティに関連するエンジニアリングトピックについて深く有意義な対話を通じて、GitLab の技術的なブランドを構築します。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-08T11:30:44+02:00
-translated_at: "2026-06-12T21:17:35Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+lastmod: 2026-06-16T12:33:40-04:00
+translated_at: "2026-06-20T12:58:25Z"
 translator: claude
 stale: false
 ---
@@ -150,7 +150,7 @@ stale: false
 
 デベロッパーアドボケイトチームは、イベントのサポートにおいて重要な役割を果たします。私たちは [コーポレートイベントマーケティング](/handbook/marketing/integrated-marketing/corporate-events/) と緊密に連携し、コーポレートイベントとサードパーティ協賛イベントの両方に対して、戦略的なコンテンツと支援を提供します。このコラボレーションにより、さまざまな集まりの成功とスムーズな実施が保証されます。詳しくは [イベントページ](/handbook/marketing/developer-relations/events/)を参照してください。
 
-私たちはまた、ローカルのテックイベントやミートアップでの講演の機会に向けて、チームメンバーが準備するのを支援します。そのようなイベントの準備に手助けが必要な場合は、Slack の [#dev-advocacy-team](https://app.slack.com/client/T02592416/CMELFQS4B) チャンネルでご連絡いただくか、[デベロッパーアドボケイトリクエストのテンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?description_template=developer-advocate-request)を使用して Issue を作成してください。
+私たちはまた、ローカルのテックイベントやミートアップでの講演の機会に向けて、チームメンバーが準備するのを支援します。そのようなイベントの準備に手助けが必要な場合は、Slack の [#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B) チャンネルでご連絡いただくか、[デベロッパーアドボケイトリクエストのテンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?description_template=developer-advocate-request)を使用して Issue を作成してください。
 
 #### リリースアドボカシー {#release-advocacy}
 
@@ -172,7 +172,7 @@ stale: false
 
 ### Slack で私たちを見つける
 
-GitLab のチームメンバーは、Slack の [#dev-advocacy-team](https://app.slack.com/client/T02592416/CMELFQS4B) チャンネルでいつでも私たちに連絡できます。ここでは、私たち同士、そしてより広いチームと、アップデート、アイデア、考えを共有しています。
+GitLab のチームメンバーは、Slack の [#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B) チャンネルでいつでも私たちに連絡できます。ここでは、私たち同士、そしてより広いチームと、アップデート、アイデア、考えを共有しています。
 
 私たちは、定例の Geekbot スタンドアップやソーシャルな会話のために、専用チャンネル [#dev-advocacy-hangout](https://gitlab.enterprise.slack.com/archives/C01C018V7V3) を使用しています。
 

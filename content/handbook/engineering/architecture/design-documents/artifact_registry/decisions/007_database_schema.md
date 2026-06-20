@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリのデータテーブル構成"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-translated_at: "2026-06-12T21:12:08Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:23:21Z"
 translator: claude
 stale: false
-lastmod: 2026-06-09T19:10:50+01:00
+lastmod: 2026-06-19T12:48:58+02:00
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -59,11 +59,15 @@ erDiagram
         text billing_entity_type "NOT NULL, limit 255"
         text billing_entity_id "NOT NULL, opaque string, limit 255"
         smallint delivery_mode_override "NULLABLE, 0=redirect, 1=proxy; per-namespace override of the instance default"
+        timestamptz deleted_at "NULLABLE; set on soft-delete, reclaimable until purge (ADR-015)"
+        timestamptz purged_at "NULLABLE; set on hard-delete, slug retired, anchor preserved for audit (ADR-015)"
+        timestamptz blocked_at "NULLABLE; set on security-block, slug reserved but not serving (ADR-015)"
         timestamptz created_at "NOT NULL, DEFAULT NOW()"
     }
 ```
 
 - **namespaces**: 他のすべてのテーブルが `namespace_id` を介して参照するルートエンティティです。各ネームスペースは、URL やクライアント設定で使用される不変かつグローバルに一意な `slug` を持ちます（slug の設計とグローバルな一意性の強制については [ADR-022](022_namespace_decoupling.md) を参照）。`(platform, entity_type, entity_id)` タプルは、そのセマンティクスを解釈することなく、ネームスペースを外部エンティティ（デフォルトでは Organization）にリンクします。`entity_id` は、基となる値が数値であっても `TEXT` として保存され、アンカー型間でスキーマを統一して保ちます。Organizations v1 では、すべての行が `('gitlab', 'organization', '<rails_org_id>')` を持ちます。`billing_entity_type` と `billing_entity_id` は、使用量イベントのための課金アンカーを識別します。外部から提供されるカラム（`platform`、`entity_type`、`entity_id`、`billing_entity_type`、`billing_entity_id`）のいずれもスキーマレベルのデフォルトを持ちません。その根拠については [ADR-022](022_namespace_decoupling.md) を参照してください。`delivery_mode_override` カラムは、[ADR-005](005_artifact_delivery_mode.md) で定義されたネームスペースごとのアーティファクトデリバリーのオーバーライドを保持します。`NULL` はインスタンスのデフォルト（`StorageConfig.delivery_mode`）を継承し、`0`（`redirect`）はこのネームスペースに対してリダイレクトを強制し、`1`（`proxy`）はプロキシを強制します。ダウンロードリクエストの有効なデリバリーパターンは `namespace.delivery_mode_override ?? instance.delivery_mode` です。このカラムは、リクエストハンドラーが認可とルーティングのために実行する既存のネームスペース検索の一環として読み取られるため、別個のクエリやインデックスは必要ありません。カラム型は `SMALLINT` で、整数からラベルへのマッピングは Go アプリケーションで定義されます（`0 = redirect`、`1 = proxy`）。これは enum スタイルのカラムに関する [Artifact Registry のデータベース規約](https://gitlab.com/gitlab-org/ops/artifact-registry/-/blob/main/docs/dev/database.md#enums) に従っています（PostgreSQL の `ENUM` 型は安全に変更するのが難しいため避けています）。アーティファクトデリバリーの選択を保存する将来のカラム（例: S17 がリポジトリごとのオーバーライドを導入する場合）は、同じ整数マッピングを再利用します。
+- **ライフサイクルカラム**（`deleted_at`、`purged_at`、`blocked_at`）: [ADR-015（内部）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/#slug-lifecycle)で定義された slug ライフサイクルを実装します。`deleted_at` はソフト削除されたネームスペースを示し、[ADR-010](010_data_retention.md#subscription-expiration) のソフト削除期間内は回復可能です。`purged_at` はハード削除されたネームスペースを示し、slug は恒久的に廃止され、アンカーと課金カラムは監査とフォレンジックのため保持されます。`blocked_at` はセキュリティ上ブロックされたネームスペースを示します（slug は予約されますが、リクエストは処理されません）。これらのカラムは状態ではなくイベント記録です。一度設定されると設定されたままになります。purge 済みの行では `deleted_at` と `purged_at` の両方が設定されます。呼び出し元は関心に関連するサブセットでフィルタリングします。リクエストを処理する検索（ルーティング、認可、ダウンロード、push）は 3 つすべてを除外します（`WHERE deleted_at IS NULL AND purged_at IS NULL AND blocked_at IS NULL`）。サブスクリプションライフサイクルのクエリ（課金、保持、スケジュールジョブ）は、セキュリティ上ブロックされたネームスペースもサブスクライブ済みネームスペースのままであるため、`deleted_at` と `purged_at` のみを除外します。
 
 #### slug の不変性 {#slug-immutability}
 
@@ -71,7 +75,9 @@ PostgreSQL にはネイティブな不変カラムのサポートがありませ
 
 #### インデックス {#namespaces-indexes}
 
-- **`namespaces`**: `(slug)` に対するユニークインデックス — slug によってネームスペースを検索します。`(platform, entity_type, entity_id)` に対するユニーク制約 — アンカーの重複を防ぎます。`delivery_mode_override` にはインデックスを設けません。このカラムは `id` をキーとする既存のネームスペース検索の一環としてのみ読み取られます（ハンドラーは認可とルーティングのためにすでにネームスペース行を JOIN しています）。
+- **`namespaces`**: `(slug)` に対するユニークインデックス — slug によってネームスペースを検索します。`(platform, entity_type, entity_id) WHERE purged_at IS NULL` に対する部分ユニークインデックス — purge されていない行の間でアンカーの重複を防ぎます。アクティブな行とソフト削除済みの行は対象になりますが、purge 済みの行は対象外です。そのため、以前 purge された Organization は新しいネームスペース行で再オンボーディングでき、purge 済みの行は監査のためにアンカーデータを保持できます。`delivery_mode_override`、`deleted_at`、`purged_at`、`blocked_at` にはインデックスを設けません。これらのカラムは `id` または `slug` をキーとする既存のネームスペース検索の一環として読み取られ、ライフサイクル述語は取得された単一行に対してフィルタリングします。
+
+[ADR-015（内部）](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/#reservation-taxonomy)で定義された予約済み slug リストはデータベースには保存しません。
 
 ### リポジトリコレクション {#repository-collections}
 
