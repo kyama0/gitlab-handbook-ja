@@ -2354,11 +2354,11 @@
     },
     "content/handbook/company/working-groups/merge-request-report-widgets.md": {
       "path": "content/handbook/company/working-groups/merge-request-report-widgets.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "09d22ab0f227d68b57aac20cb7449e36728949ff42f6adeb2c740adbbe5590ed",
-      "upstream_committed_at": "2025-12-05T19:47:34+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:23:21Z",
+      "model": "codex",
+      "input_hash": "2632b0da1f571119b7e03e65d0091a8972f3720c9d793ec5ba41d41d72892d53",
+      "upstream_committed_at": "2026-06-19T17:21:25+01:00"
     },
     "content/handbook/company/working-groups/mit-mentoring.md": {
       "path": "content/handbook/company/working-groups/mit-mentoring.md",
@@ -4306,11 +4306,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab3.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab3.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T04:51:58Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "c0244e354d61efc2034660066328099caf0ac1469be95272b0e5ce3ebeb2c68d",
-      "upstream_committed_at": "2026-04-16T17:13:51-04:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:23:21Z",
+      "model": "codex",
+      "input_hash": "518a93ef9343c983ea86d546c8d732f88974457abffad33f4498680f6f62ef09",
+      "upstream_committed_at": "2026-06-15T14:13:50-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4.md",
@@ -6018,11 +6018,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:12:08Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "eee0609da4610f44b101754f218b398ff3bed8f17e358973e373d99db9858ccb",
-      "upstream_committed_at": "2026-06-09T19:10:50+01:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:23:21Z",
+      "model": "codex",
+      "input_hash": "6632df503d5b7d2c7e956804a6faef60add60f3ff49b65a2447b71ade3aee816",
+      "upstream_committed_at": "2026-06-19T12:48:58+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/008_content_addressable_storage.md",
@@ -8842,19 +8842,19 @@
     },
     "content/handbook/engineering/architecture/design-documents/rate_limiting/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/rate_limiting/_index.md",
-      "upstream_sha": "4c7d94ca4f485376c886b7c2b9575091c8b7d3cf",
-      "translated_at": "2026-04-27T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "6a39964f5a0db56958f68005da119722906a27c57bbc311f260faa64f5f3a7e1",
-      "upstream_committed_at": "2025-04-28T10:53:04-07:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:23:21Z",
+      "model": "codex",
+      "input_hash": "bf4d2a9aab4d247f7b344bc608d0369d7c5817a6a9d041e845e7d2fc0079d608",
+      "upstream_committed_at": "2026-06-09T14:27:27+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/rate_limiting_simplification/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/rate_limiting_simplification/_index.md",
-      "upstream_sha": "4c7d94ca4f485376c886b7c2b9575091c8b7d3cf",
-      "translated_at": "2026-04-27T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "943f7738590b1853c9ae75134965af63a69fe08e1b625317070351916f812670",
-      "upstream_committed_at": "2025-12-18T17:49:08+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:23:21Z",
+      "model": "codex",
+      "input_hash": "5f3efffd0776b514e563f913259ffdd0fa56d4b8c2393fa3fbf33385e7021e78",
+      "upstream_committed_at": "2026-06-09T14:27:27+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/rate_limiting_simplification/schema.md": {
       "path": "content/handbook/engineering/architecture/design-documents/rate_limiting_simplification/schema.md",
@@ -11346,11 +11346,11 @@
     },
     "content/handbook/engineering/devops/create/code-review/_index.md": {
       "path": "content/handbook/engineering/devops/create/code-review/_index.md",
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-05-06T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5db9914a675664443bc84290934ca81da5e34e3ead9ca9f8720e30198dd1ea99",
-      "upstream_committed_at": "2025-12-05T19:47:34+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:23:21Z",
+      "model": "codex",
+      "input_hash": "cfc0ab0c684e6e89df0d2b6e6f102cfcadbeb3779c6ac606ec6aa875f0735c37",
+      "upstream_committed_at": "2026-06-19T17:21:25+01:00"
     },
     "content/handbook/engineering/devops/create/code-review/ai-prompts.md": {
       "path": "content/handbook/engineering/devops/create/code-review/ai-prompts.md",
@@ -16418,11 +16418,11 @@
     },
     "content/handbook/legal/esg/_index.md": {
       "path": "content/handbook/legal/esg/_index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:18:07Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "15b8306eba16b373e610e9c2adf700681c235cc84589778e1893cf7d583640d7",
-      "upstream_committed_at": "2026-06-08T15:51:36-06:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:23:21Z",
+      "model": "codex",
+      "input_hash": "77d608b93d11f2fc8ad62508e44b806a87ee40b3b15e440cd7d7ac4925d17195",
+      "upstream_committed_at": "2026-06-17T12:43:11-06:00"
     },
     "content/handbook/legal/esg/earth-month/_index.md": {
       "path": "content/handbook/legal/esg/earth-month/_index.md",
@@ -16442,11 +16442,11 @@
     },
     "content/handbook/legal/esg/fy23-esg-report.md": {
       "path": "content/handbook/legal/esg/fy23-esg-report.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "1a7e5773e422b1736abd9376fde47f05b6943c14418d2b7ec6085faf6f650a29",
-      "upstream_committed_at": "2026-03-12T10:48:57-04:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:23:21Z",
+      "model": "codex",
+      "input_hash": "fb864462996670e069b77c7d7899fde86a27a2828f67c9f2a1e2eb8ecf096039",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/legal/esg/team-member-sustainability-guide/_index.md": {
       "path": "content/handbook/legal/esg/team-member-sustainability-guide/_index.md",
@@ -16458,11 +16458,11 @@
     },
     "content/handbook/legal/ethics-compliance-program/_index.md": {
       "path": "content/handbook/legal/ethics-compliance-program/_index.md",
-      "upstream_sha": "02cf85a2ba59858c59b2a31a0356f2371a2a8979",
-      "translated_at": "2026-04-29T10:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "3a9de285bed2675790b22474a83b75cdc50a007387d0c0e8e0ece0cdb1850d72",
-      "upstream_committed_at": "2026-04-13T15:41:58+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:23:21Z",
+      "model": "codex",
+      "input_hash": "dc698cb431292774f43de9bd20c772222b616bf4bf6d774c341cba35544eb685",
+      "upstream_committed_at": "2026-06-17T19:30:54+00:00"
     },
     "content/handbook/legal/ethics-compliance-program/ai-ethics-principles.md": {
       "path": "content/handbook/legal/ethics-compliance-program/ai-ethics-principles.md",
@@ -23970,11 +23970,11 @@
     },
     "content/handbook/security/security-operations/sirt/_index.md": {
       "path": "content/handbook/security/security-operations/sirt/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a5f749224c07ff67381069baf9d4a341d72079da5b9c2f33e17ab94fe74b5392",
-      "upstream_committed_at": "2026-05-07T10:56:05+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:23:21Z",
+      "model": "codex",
+      "input_hash": "dc19ca669276665b6ea2d4482aaab456b4b80414e396410fb3495d67e3d7b10c",
+      "upstream_committed_at": "2026-06-17T15:12:47-05:00"
     },
     "content/handbook/security/security-operations/sirt/engaging-security-on-call.md": {
       "path": "content/handbook/security/security-operations/sirt/engaging-security-on-call.md",
@@ -25922,11 +25922,11 @@
     },
     "content/handbook/security/customer-support-operations/_index.md": {
       "path": "content/handbook/security/customer-support-operations/_index.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5a516dc7d551729080797c12110f7063729476288041374e84511a37680fd950",
-      "upstream_committed_at": "2026-05-26T12:05:00-05:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T13:23:21Z",
+      "model": "codex",
+      "input_hash": "fa7e04a2ec3a1a908ff8887e2c83037eba56e29f9b2cab238a7280c4900ae2ce",
+      "upstream_committed_at": "2026-06-15T10:20:42-05:00"
     },
     "content/handbook/security/customer-support-operations/audits/_index.md": {
       "path": "content/handbook/security/customer-support-operations/audits/_index.md",
