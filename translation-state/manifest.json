@@ -18378,11 +18378,11 @@
     },
     "content/handbook/marketing/developer-relations/_index.md": {
       "path": "content/handbook/marketing/developer-relations/_index.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b7ac204cde6527d1745c27c47984ee53e36547177ecd808dbe3cc642c41c9d27",
-      "upstream_committed_at": "2026-06-04T10:07:48-04:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T15:10:46Z",
+      "model": "codex",
+      "input_hash": "2c7001d5c48a3c6786dc1a1e8ad0114f716d6344c1753fed2751c59249093f75",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/developer-relations/community-pathway.md": {
       "path": "content/handbook/marketing/developer-relations/community-pathway.md",
@@ -18554,11 +18554,11 @@
     },
     "content/handbook/marketing/developer-relations/engineering/core-team.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/core-team.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b8cac93c6c1df2a30e82b9db625f3f1785770e87ab3d72fc869d797491aa4f74",
-      "upstream_committed_at": "2026-03-19T19:48:12+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T15:10:46Z",
+      "model": "codex",
+      "input_hash": "f7ebc3e228093c1b055cd108bb66952918621cfe00d0b559293318cdc351f053",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/developer-relations/engineering/innovation-pitch-competition.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/innovation-pitch-competition.md",
