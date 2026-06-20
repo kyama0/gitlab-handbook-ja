@@ -9,12 +9,13 @@ import hashlib
 import json
 import os
 import re
+import subprocess
+import sys
 from pathlib import Path
 
 ROOT = Path.cwd()
 MANIFEST = ROOT / "translation-state" / "manifest.json"
 CONTENT_ROOT = ROOT / "content" / "handbook"
-UPSTREAM_ROOT = ROOT / "upstream" / "content" / "handbook"
 FM_RE = re.compile(rb"^---\n(.+?\n)---\n", re.DOTALL)
 MODEL = os.environ.get("CODEX_TRANSLATION_MODEL") or os.environ.get("TRANSLATION_MODEL") or "codex"
 
@@ -36,28 +37,66 @@ def read_fm(path):
     return out
 
 
-def sha256_file(path):
-    h = hashlib.sha256()
-    with open(path, "rb") as f:
-        for chunk in iter(lambda: f.read(8192), b""):
-            h.update(chunk)
-    return h.hexdigest()
+def exists_at_sha(sha, upstream_rel):
+    result = subprocess.run(
+        ["git", "-C", "upstream", "cat-file", "-e", f"{sha}:{upstream_rel}"],
+        capture_output=True,
+    )
+    return result.returncode == 0
 
 
-def resolve_upstream_file(content_path, fm):
-    if fm.get("upstream_path"):
-        candidate = ROOT / "upstream" / fm["upstream_path"].lstrip("/")
-        if candidate.is_file():
+def resolve_upstream_rel(rel, fm, sha):
+    candidates = [rel]
+    candidates.append(rel[:-3] + ".html.md" if rel.endswith(".md") else rel + ".html.md")
+
+    upstream_path = (fm.get("upstream_path") or "").strip()
+    if upstream_path:
+        segment = upstream_path.strip("/")
+        segment = segment[len("handbook/"):] if segment.startswith("handbook/") else segment
+        base = "content/handbook/" + segment if segment else "content/handbook"
+        candidates += [
+            f"{base}/_index.md",
+            f"{base}.md",
+            f"{base}/_index.html.md",
+            f"{base}.html.md",
+        ]
+
+    seen = set()
+    for candidate in candidates:
+        if candidate in seen:
+            continue
+        seen.add(candidate)
+        if exists_at_sha(sha, candidate):
             return candidate
-
-    rel_h = content_path.relative_to(CONTENT_ROOT).as_posix()
-    candidate = UPSTREAM_ROOT / rel_h
-    if candidate.is_file():
-        return candidate
-    html_candidate = candidate.with_suffix(".html.md")
-    if html_candidate.is_file():
-        return html_candidate
     return None
+
+
+def input_hash_at_sha(sha, upstream_rel):
+    result = subprocess.run(
+        ["git", "-C", "upstream", "show", f"{sha}:{upstream_rel}"],
+        capture_output=True,
+    )
+    if result.returncode == 0:
+        return hashlib.sha256(result.stdout).hexdigest()
+    raise RuntimeError(
+        f"cannot read {upstream_rel} at {sha} "
+        f"(object missing; unshallow upstream history is required)"
+    )
+
+
+def upstream_committed_at(sha, upstream_rel):
+    result = subprocess.run(
+        ["git", "-C", "upstream", "log", "-1", "--format=%cI", sha, "--", upstream_rel],
+        capture_output=True,
+        text=True,
+    )
+    output = result.stdout.strip()
+    if result.returncode != 0 or not output:
+        raise RuntimeError(
+            f"cannot resolve commit timestamp for {upstream_rel} at {sha} "
+            f"(empty git log; unshallow upstream history is required)"
+        )
+    return output
 
 
 def main():
@@ -65,6 +104,7 @@ def main():
     entries = manifest["entries"] if isinstance(manifest.get("entries"), dict) else manifest
     wrapped = isinstance(manifest.get("entries"), dict)
     added = 0
+    errors = []
     for content_path in sorted(CONTENT_ROOT.rglob("*.md")):
         rel = content_path.relative_to(ROOT).as_posix()
         if rel in entries:
@@ -72,20 +112,29 @@ def main():
         fm = read_fm(content_path)
         if not fm.get("upstream_sha") or not fm.get("translated_at"):
             continue
-        upstream_file = resolve_upstream_file(content_path, fm)
-        if upstream_file is None:
+        upstream_rel = resolve_upstream_rel(rel, fm, fm["upstream_sha"])
+        if upstream_rel is None:
+            continue
+        try:
+            input_hash = input_hash_at_sha(fm["upstream_sha"], upstream_rel)
+            committed = fm.get("lastmod") or upstream_committed_at(fm["upstream_sha"], upstream_rel)
+        except RuntimeError as exc:
+            errors.append(str(exc))
             continue
         entry = {
             "path": rel,
             "upstream_sha": fm["upstream_sha"],
             "translated_at": fm["translated_at"],
             "model": MODEL,
-            "input_hash": sha256_file(upstream_file),
+            "input_hash": input_hash,
+            "upstream_committed_at": committed,
         }
-        if fm.get("lastmod"):
-            entry["upstream_committed_at"] = fm["lastmod"]
         entries[rel] = entry
         added += 1
+    if errors:
+        for error in errors:
+            print("ERROR:", error, file=sys.stderr)
+        raise SystemExit(f"aborted without writing manifest ({len(errors)} error(s))")
     if wrapped:
         manifest["entries"] = entries
         output = manifest

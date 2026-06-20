@@ -13,8 +13,8 @@ Scope:
 
 Review procedure:
 1. Read the translated file and its frontmatter.
-2. Read the corresponding upstream file by filesystem path, not by `upstream_path`.
-3. Compare `upstream_sha` with `git -C upstream rev-parse HEAD`. If they differ, mention that upstream may have moved, but still review the translation against the visible source unless asked to check out the recorded SHA.
+2. Resolve the corresponding upstream path from the translated filesystem path. Try the same path first, then fall back from `content/.../foo.md` to `content/.../foo.html.md` for legacy normalized pages.
+3. Read the upstream source at the recorded `upstream_sha`, for example with `git -C upstream show <upstream_sha>:<upstream-relative-path>`. If the object is unavailable, report that upstream history is missing instead of comparing against the current worktree.
 4. Check accuracy, omissions, additions, mistranslations, untranslated English remnants, numbers, dates, glossary terms, and Markdown/Hugo structure.
 5. Check links, image paths, custom anchors, shortcode syntax, code fences, tables, and frontmatter tracking fields.
 6. Keep findings focused. Prioritize blocking/major issues over style preferences.
