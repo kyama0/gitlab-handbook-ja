@@ -1,21 +1,21 @@
 ---
 title: Custom Models グループ
-description: "Custom Models グループは、GitLab Duo の顧客向けモデル運用 / インテリジェンスレイヤー、利用可能なモデルとその選択方法、顧客体験の健全性と接続性、gateway service surface（prompts、internal events、AIGW billing）を所有します。"
+description: "Custom Models グループは、GitLab Duo の顧客向けモデル運用 / インテリジェンスレイヤー、利用可能なモデルとその選択方法、顧客体験の健全性と接続性、ゲートウェイサービス面（プロンプト、内部イベント、AIGW billing）を所有します。"
 upstream_path: /handbook/engineering/ai/custom-models/
 upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
 lastmod: "2026-06-16T17:58:42+02:00"
 translated_at: "2026-06-20T15:03:34Z"
-translator: claude
+translator: codex
 stale: false
 ---
 
 ## ビジョン
 
-Custom Models グループは、customers 固有の data と use-cases を支える GitLab Duo functionality を動かす、追加の custom models に注力します。
+Custom Models グループは、顧客固有のデータとユースケースを支える GitLab Duo の機能を動かす、追加のカスタムモデルに注力します。
 
 ## ミッション、私たちが所有するもの
 
-Custom Models は、GitLab の**顧客向けモデルインテリジェンスレイヤー**の end-to-end owner です。どのモデルが利用可能か、どのように選択されるか、顧客体験の健全性と接続性、そして gateway service surface（prompts、internal events、AIGW billing）を所有します。Customer zero、SaaS、Self-Managed、Dedicated にまたがる 1 つの full stack team です。
+Custom Models は、GitLab の**顧客向けモデルインテリジェンスレイヤー**のエンドツーエンドのオーナーです。どのモデルが利用可能か、どのように選択されるか、顧客体験の健全性と接続性、そしてゲートウェイサービス面（プロンプト、内部イベント、AIGW billing）を所有します。Customer zero、SaaS、Self-Managed、Dedicated にまたがる 1 つのフルスタックチームです。
 
 私たちは、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [AI Powered stage](/handbook/product/categories/#ai-powered-stage) にある [Custom Models group](/handbook/product/categories/#custom-models-group) に属する product categories のすべての backend aspects に責任を持ちます。product direction は [Category Direction, Custom Models Management](https://about.gitlab.com/direction/ai-powered/custom_models/) ページにあり、私たちが扱う機能は [Features by Group page](/handbook/product/categories/features/#custom-models) に一覧化されています。
 
@@ -122,7 +122,7 @@ Custom Models group が所有する Issues には、必要に応じて以下の 
 
 ### Directly Responsible Individuals (DRIs)
 
-team が active に取り組んでいるすべての issue、機能、bug fix、initiative には、1 人の named **DRI** がいます。DRI は必ずしもすべての work を行う人ではありません。前に進め、unblocked に保つ責任を持つ人です。
+team が active に取り組んでいるすべての Issue、機能、bug fix、initiative には、1 人の named **DRI** がいます。DRI は必ずしもすべての work を行う人ではありません。前に進め、unblocked に保つ責任を持つ人です。
 
 DRI であることは次を意味します:
 
@@ -157,15 +157,15 @@ Example:
 
 - Progress: ...
 - Blockers: ...
-- Confidence for current milestone: 🟡 Slightly confident
+- Confidence for current milestone: Slightly confident
 
 **issue-title (link)**
 
 - Progress: ...
 - Blockers: ...
-- Confidence for current milestone: 🟢 Very confident
+- Confidence for current milestone: Very confident
 
-**Confidence key:** 🔴 Not confident · 🟡 Slightly confident · 🟢 Very confident
+**Confidence key:** Not confident · Slightly confident · Very confident
 
 ---
 
@@ -206,13 +206,13 @@ team は、current priorities と align しない work や、quality を comprom
 | Triage of new RFHs / escalations | Ongoing | Triage DRI per functional team |
 | Retrospective on process health | Monthly | Team |
 
-## Epics と Tech Leads を使った作業の scope 設定
+## エピックと Tech Leads を使った作業のスコープ設定
 
-Epics は、single issue より大きい任意の work item、新機能、complex refactor、bug の primary definition of scope です。epic 内の issues が work item の entire scope を構成し、それらがすべて closed になると work は complete になり epic も closed になります。epic は clear improvement を加えるイテレーションを enclose すべきですが、必ずしも機能全体を表すわけではありません。機能には複数 epics が必要な場合があります。
+エピックは、single Issue より大きい任意の work item、新機能、complex refactor、bug の primary definition of scope です。エピック内の Issues が work item の entire scope を構成し、それらがすべて closed になると work は complete になりエピックも closed になります。エピックは clear improvement を加えるイテレーションを enclose すべきですが、必ずしも機能全体を表すわけではありません。機能には複数のエピックが必要な場合があります。
 
-epic によって定義された work の technical ownership は **Tech Lead** に委譲されます。Tech Lead は epic に assigned された engineer であり、scope が correct であることを保証します。Tech Lead は EM、PM、他の engineers と連携します。team の任意の engineer は、Tech Lead 自身を含め、Kanban process を使って self-assigned し、epic 内の issues に取り組めます。
+エピックによって定義された work の technical ownership は **Tech Lead** に委譲されます。Tech Lead はエピックに assigned された engineer であり、scope が correct であることを保証します。Tech Lead は EM、PM、他の engineers と連携します。team の任意の engineer は、Tech Lead 自身を含め、Kanban process を使って self-assigned し、エピック内の Issues に取り組めます。
 
-## Team Milestone Planning Process
+## チームのマイルストーン計画プロセス
 
 Custom Models は [Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/) と [Cross Functional Prioritization](/handbook/engineering/workflow/cross-functional-prioritization/) に従います。team は planning issue と boards を使って planning process を管理します。これを簡単にするための [Planning automation](https://gitlab.com/gitlab-org/ai-powered/custom-models/custom-models/-/blob/main/doc/planning/index.md) scripts が利用できます。
 
