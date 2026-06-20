@@ -2,11 +2,11 @@
 title: "マージリクエスト レポートウィジェット ワーキンググループ"
 description: "GitLab マージリクエスト レポートウィジェット ワーキンググループは、MR を拡張機能で拡張するために作成された UX フレームワークの実装を支援することを目的としています。詳細をご覧ください！"
 upstream_path: "/handbook/company/working-groups/merge-request-report-widgets/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
+upstream_sha: "18de125bd3131a62f0a7026bc69c7de124fc6c8a"
+translated_at: "2026-06-20T13:23:21Z"
 translator: "claude"
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-06-19T17:21:25+01:00"
 ---
 
 ## 属性
@@ -22,7 +22,7 @@ lastmod: "2025-12-05T19:47:34+00:00"
 | Pajamas ドキュメント | [Region: Merge request reports](https://design.gitlab.com/patterns/merge-request-reports/) |
 | デザイン仕様 | [Pajamas UI Kit](https://www.figma.com/file/qEddyqCrI7kPSBjGmwkZzQ/Component-library?node-id=38193%3A30482) |
 | 関連 OKR | [product#2872](https://gitlab.com/gitlab-com/Product/-/issues/2872) |
-| 各ウィジェットの DRI | [DRI リスト](/handbook/engineering/devops/create/code-review/report-widgets-dri-list/) |
+| 各ウィジェットの DRI | [DRI リスト（非推奨）](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/2f8dd296c0496a2020647fce035ba155a34cbbd7/content/handbook/engineering/devops/create/code-review/report-widgets-dri-list.md) — このページは保守されなくなったため削除されました |
 
 ## チャーター
 
@@ -61,7 +61,7 @@ lastmod: "2025-12-05T19:47:34+00:00"
 
 #### ドキュメントの成果
 
-- [DRI リスト（エンジニアリングおよび UX）](/handbook/engineering/devops/create/code-review/report-widgets-dri-list/)
+- [DRI リスト（エンジニアリングおよび UX）（非推奨）](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/2f8dd296c0496a2020647fce035ba155a34cbbd7/content/handbook/engineering/devops/create/code-review/report-widgets-dri-list.md) — このページは保守されなくなったため削除されました
 - [コンポーネントの技術ドキュメント](https://docs.gitlab.com/ee/development/fe_guide/merge_request_widgets.html)
 - [さらなる貢献と拡張](/handbook/product/cross-stage-features/merge-requests/)
 
