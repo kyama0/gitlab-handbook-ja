@@ -18,7 +18,7 @@ GitLab のロゴ、タヌキマスコット、ブランドカラーは GitLab In
 - [Hugo](https://gohugo.io/) (extended 0.151.0) — 静的サイト生成。upstream と同じテーマ ([docsy](https://www.docsy.dev/) v0.12.0 + [docsy-gitlab](https://gitlab.com/gitlab-com/content-sites/docsy-gitlab) v0.3.67) を Hugo Modules で参照
 - Cloudflare Pages — ホスティング (direct-upload)
 - Cloudflare R2 — 画像配信
-- [Anthropic Claude](https://docs.claude.com/) — 翻訳エンジン (Claude Code の `translator` サブエージェント経由)
+- AI 翻訳・レビュー補助 — Codex の repo skill / custom agent、または Claude Code の `translator` サブエージェントを使用
 
 ## ディレクトリ構成
 
@@ -41,6 +41,15 @@ scripts/
   upload-images-r2.ts     参照画像を R2 へ同期
   check-staleness.ts      原文更新に追随できていない翻訳を列挙
   restore-shortcodes.ts   旧 transform-shortcodes が HTML 化したショートコードを {{< … >}} に逆変換（移行用ユーティリティ）
+.agents/
+  skills/translate-batch/ Codex 用の翻訳バッチ workflow
+.codex/
+  config.toml             Codex の repo-scoped 設定
+  agents/                 Codex 用 custom agent（translator / translation-reviewer）
+.claude/
+  agents/                 Claude Code 用エージェント定義
+  skills/                 Claude Code 用 workflow
+  translation-glossary.md Codex / Claude Code 共通の翻訳用語集
 translation-state/
   manifest.json           {path, upstream_sha, translated_at, model, input_hash} の台帳
   phase2-retranslate.txt  再翻訳が必要なファイルの追跡キュー
@@ -76,8 +85,9 @@ hugo --minify
 # 1. 本家の最新を pull
 npm run sync:upstream
 
-# 2. 差分を翻訳 (Claude Code の translator サブエージェントを呼び出す)
-#    .claude/agents/translator.md がシステムプロンプト
+# 2. 差分を翻訳
+#    Codex: .agents/skills/translate-batch/SKILL.md と .codex/agents/translator.toml を使用
+#    Claude Code: .claude/agents/translator.md を使用
 
 # 3. 画像を R2 へ同期
 npm run upload:images
@@ -86,7 +96,7 @@ npm run upload:images
 npm run check:staleness
 ```
 
-翻訳エージェントの規約は [`.claude/agents/translator.md`](.claude/agents/translator.md)、レビュー観点は [`.claude/agents/translation-reviewer.md`](.claude/agents/translation-reviewer.md) を参照。
+翻訳規約は [`.claude/translation-glossary.md`](.claude/translation-glossary.md) を唯一の用語集として扱います。Codex では [`.agents/skills/translate-batch/SKILL.md`](.agents/skills/translate-batch/SKILL.md) と [`.codex/agents/translator.toml`](.codex/agents/translator.toml)、Claude Code では [`.claude/agents/translator.md`](.claude/agents/translator.md) を参照してください。レビュー観点は Codex の [`.codex/agents/translation-reviewer.toml`](.codex/agents/translation-reviewer.toml) と Claude Code の [`.claude/agents/translation-reviewer.md`](.claude/agents/translation-reviewer.md) にあります。
 
 ## デプロイ
 
