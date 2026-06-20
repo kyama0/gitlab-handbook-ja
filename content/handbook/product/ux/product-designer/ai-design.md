@@ -11,7 +11,7 @@ lastmod: 2026-06-16T09:26:31-04:00
 
 このガイドは、テクノロジーがユーザー体験を高め、戦略的目的を満たすことを確実にするため、**AI ソリューションを思慮深くデザインする** のに役立ちます。
 
-デザイン業務で **AI をどのように使うか** については、[AI usage](/handbook/upstream-studios/how-we-work/ai-usage/) を参照してください。
+デザイン業務で **AI をどのように使うか** については、[AI の使用](/handbook/upstream-studios/how-we-work/ai-usage/) を参照してください。
 
 ## AI デザインの課題を理解する
 

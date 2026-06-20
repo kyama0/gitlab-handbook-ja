@@ -17,7 +17,7 @@ lastmod: 2026-06-16T09:26:31-04:00
 
 このページでは、AI ソリューションの設計と開発を通じてユーザーの視点を含めることで、**AI 領域での UX 調査を実施する**方法をガイドします。
 
-**UX 調査作業で AI を使用する方法**については、[AI usage](/handbook/upstream-studios/how-we-work/ai-usage/)を参照してください。
+**UX 調査作業で AI を使用する方法**については、[AI の使用](/handbook/upstream-studios/how-we-work/ai-usage/)を参照してください。
 
 ## UX Researcher サポート
 
