@@ -2,16 +2,16 @@
 title: AI を活用したデザインのためのガイド
 description: "プロダクトデザイナーが AI プロジェクトをナビゲートするためのガイドラインです"
 upstream_path: /handbook/product/ux/product-designer/ai-design/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:13:04Z"
 translator: claude
 stale: false
-lastmod: "2026-02-12T13:14:13+00:00"
+lastmod: 2026-06-16T09:26:31-04:00
 ---
 
 このガイドは、テクノロジーがユーザー体験を高め、戦略的目的を満たすことを確実にするため、**AI ソリューションを思慮深くデザインする** のに役立ちます。
 
-デザイン業務で **AI をどのように使うか** については、[UX における AI 利用](/handbook/product/ux/how-we-work/ai-usage/) を参照してください。
+デザイン業務で **AI をどのように使うか** については、[AI の使用](/handbook/upstream-studios/how-we-work/ai-usage/) を参照してください。
 
 ## AI デザインの課題を理解する
 
