@@ -14,32 +14,32 @@ stale: false
 
 ## 問題提起
 
-CI/CD pipeline は、依存関係管理に関する重大な課題に直面しています:
+CI/CD パイプラインは、依存関係管理に関する重大な課題に直面しています:
 
-- **バージョン競合**: 異なる steps が互換性のない tool versions を必要とする
-- **セットアップのオーバーヘッド**: 各 step が依存関係のインストールに時間を浪費する
+- **バージョン競合**: 異なるステップが互換性のないツールバージョンを必要とする
+- **セットアップのオーバーヘッド**: 各ステップが依存関係のインストールに時間を浪費する
 - **再現性の失敗**: 「自分のマシンでは動く」問題が残る
-- **コンテナの肥大化**: Docker images がすべての依存関係を bundle して巨大になる
+- **コンテナの肥大化**: Docker イメージがすべての依存関係をバンドルして巨大になる
 
 ## 解決策: Nix Package Manager 統合
 
-GitLab Steps の compilation model を `nix:` keyword で拡張します。これは canonical setup steps へ compile され、containers なしで再現可能な依存関係の分離を提供します。
+GitLab Steps のコンパイルモデルを `nix:` キーワードで拡張します。これは標準セットアップステップへコンパイルされ、コンテナなしで再現可能な依存関係の分離を提供します。
 
 ## 仕組み
 
-`nix:` keyword は、2 つの連続した canonical steps へ compile される syntactic sugar を提供します:
+`nix:` キーワードは、2 つの連続した標準ステップへコンパイルされるシンタックスシュガーを提供します:
 
-1. **Setup step** が正確な package versions を持つ分離された environment を作成する
-2. **Execution step** がその environment 内で user command を実行する
-3. **Environment variables** が outputs を通じて steps 間で渡される
+1. **セットアップステップ** が正確なパッケージバージョンを持つ分離された環境を作成する
+2. **実行ステップ** がその環境内でユーザーコマンドを実行する
+3. **環境変数** が出力を通じてステップ間で渡される
 
-Docker containers とは異なり、Nix 統合は native filesystem access を持つ通常の processes として実行されます。これにより、volume mounting configuration なしで、steps 間の build directories の共有がシームレスになります。
+Docker コンテナとは異なり、Nix 統合はネイティブなファイルシステムアクセスを持つ通常のプロセスとして実行されます。これにより、ボリュームマウント設定なしで、ステップ間のビルドディレクトリの共有がシームレスになります。
 
-**重要なポイント**: "Isolation" は依存関係の分離（version conflicts の防止）を指し、filesystem isolation ではありません。Steps は shared directories、build artifacts、workspace files に自然にアクセスします。
+**重要なポイント**: 「分離」は依存関係の分離（バージョン競合の防止）を指し、ファイルシステム分離ではありません。Steps は共有ディレクトリ、ビルド成果物、ワークスペースファイルに自然にアクセスします。
 
-### Compilation Example
+### コンパイル例
 
-**User writes:**
+**ユーザーの記述:**
 
 ```yaml
 spec:
@@ -52,7 +52,7 @@ exec:
   command: ["python", "./analyze.py", "${{inputs.data_file}}"]
 ```
 
-**Compiles to:**
+**コンパイル結果:**
 
 ```yaml
 run:
@@ -70,7 +70,7 @@ run:
       PYTHONPATH: "${{steps.setup_nix_environment.outputs.PYTHONPATH}}"
 ```
 
-### Multi-Step Workflow Example
+### 複数ステップのワークフロー例
 
 ```yaml
 # Step 1: Build artifacts in shared directory
@@ -90,21 +90,21 @@ exec:
 
 ## Docker に対するメリット
 
-| 観点 | Nix Integration | Docker |
+| 観点 | Nix 統合 | Docker |
 |--------|-----------------|--------|
-| **Dependency Isolation** | Nix store paths による正確な package versions | full OS を含む container level |
-| **Filesystem Access** | Native（host filesystem を共有） | 明示的な volume mounts が必要 |
-| **Size** | 最小限（packages のみ） | 大きい（base image + layers） |
-| **Startup** | 高速（container runtime なし） | 遅い（container lifecycle） |
-| **Caching** | Store based、content addressable | Layer based |
-| **Reproducibility** | 完全（functional package manager） | 良好（base image に依存） |
-| **Multi-version** | 自然（異なる store paths） | 別 images が必要 |
+| **依存関係の分離** | Nix ストアパスによる正確なパッケージバージョン | OS 全体を含むコンテナレベル |
+| **ファイルシステムアクセス** | ネイティブ（ホストファイルシステムを共有） | 明示的なボリュームマウントが必要 |
+| **サイズ** | 最小限（パッケージのみ） | 大きい（ベースイメージ + レイヤー） |
+| **起動** | 高速（コンテナランタイムなし） | 遅い（コンテナライフサイクル） |
+| **キャッシュ** | ストアベース、コンテンツアドレス指定 | レイヤーベース |
+| **再現性** | 完全（関数型パッケージマネージャー） | 良好（ベースイメージに依存） |
+| **複数バージョン** | 自然（異なるストアパス） | 別イメージが必要 |
 
-## Distribution Strategies
+## 配布戦略
 
-canonical Nix step は、performance、size、network requirements のバランスを取るため、複数の distribution approaches をサポートします:
+標準 Nix ステップは、パフォーマンス、サイズ、ネットワーク要件のバランスを取るため、複数の配布アプローチをサポートします:
 
-### On-Demand Download (Default)
+### オンデマンドダウンロード（デフォルト）
 
 ```yaml
 nix:
@@ -112,10 +112,10 @@ nix:
   # Downloads from cache.nixos.org at runtime
 ```
 
-**Pros**: 小さい runner images、shared cache、常に最新
-**Cons**: network が必要、cold start が遅い
+**メリット**: 小さい Runner イメージ、共有キャッシュ、常に最新
+**デメリット**: ネットワークが必要、コールドスタートが遅い
 
-### Bundled in Runner Image
+### Runner イメージへの同梱
 
 ```yaml
 nix:
@@ -123,10 +123,10 @@ nix:
   packages: ["python311", "numpy"]
 ```
 
-**Pros**: offline で動作、startup が高速
-**Cons**: runner images が大きくなる、重複の可能性
+**メリット**: オフラインで動作、起動が高速
+**デメリット**: Runner イメージが大きくなる、重複の可能性
 
-### Hybrid Approach
+### ハイブリッドアプローチ
 
 ```yaml
 nix:
@@ -134,24 +134,24 @@ nix:
   bundled: ["python311"]  # Bundle common, fetch rare
 ```
 
-**Pros**: size / speed optimization のバランスがよい
-**Cons**: configuration complexity が高い
+**メリット**: サイズ / 速度最適化のバランスがよい
+**デメリット**: 設定の複雑さが高い
 
 ## 実装パス
 
-1. **Schema Extension**: step definitions に `NixConfig` struct を追加する
-2. **Compilation Logic**: step compiler に `compileNixStep()` を実装する
-3. **Canonical Step**: `gitlab.com/gitlab-org/runner-tools/nix@v1` を構築する
-   - cross-platform support に nix-portable を使用する
-   - environment variables（PATH、PYTHONPATH など）を出力する
-   - performance のために caching を実装する
-4. **Distribution Options**: bundled variants と dependency sharing を追加する
+1. **スキーマ拡張**: ステップ定義に `NixConfig` struct を追加する
+2. **コンパイルロジック**: ステップコンパイラーに `compileNixStep()` を実装する
+3. **標準ステップ**: `gitlab.com/gitlab-org/runner-tools/nix@v1` を構築する
+   - クロスプラットフォームサポートに nix-portable を使用する
+   - 環境変数（PATH、PYTHONPATH など）を出力する
+   - パフォーマンスのためにキャッシュを実装する
+4. **配布オプション**: 同梱バリアントと依存関係共有を追加する
 
 ## 主な特徴
 
-- **Cross-Language**: Python、Node.js、Go、Rust、system tools で動作する
-- **Modular Architecture**: core step runner は変更せず、complexity は canonical steps に置く
-- **No Root Required**: user-space installation and execution
-- **Cross-Platform**: Linux native、Windows through WSL、macOS supported
+- **クロスランゲージ**: Python、Node.js、Go、Rust、システムツールで動作する
+- **モジュラーアーキテクチャ**: コアステップランナーは変更せず、複雑さは標準ステップに置く
+- **Root 不要**: ユーザー空間でのインストールと実行
+- **クロスプラットフォーム**: Linux ネイティブ、WSL 経由の Windows、macOS をサポート
 
-このアプローチは、依存関係管理を configuration burden から、信頼性が高く再現可能な execution environments へ compile される declarative package specifications に変えます。
+このアプローチは、依存関係管理を設定負担から、信頼性が高く再現可能な実行環境へコンパイルされる宣言的なパッケージ仕様に変えます。

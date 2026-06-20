@@ -1,5 +1,5 @@
 ---
-title: "Initiative issue template"
+title: "イニシアチブ Issue テンプレート"
 toc_hide: true
 upstream_path: /handbook/engineering/devops/create/.gitlab/issue_templates/initiative/
 upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
@@ -13,99 +13,99 @@ stale: false
 
 ### 説明
 
-initiative が存在する理由（**purpose**）、何を達成しようとしているか（**goals**）、そしてそれがなぜ重要または価値があるのか（**importance**）を概説する簡潔な説明を提供してください。目標は、initiative の本質、目的、そして達成しようとしているより広い impact を伝えることです。
+イニシアチブが存在する理由（**目的**）、何を達成しようとしているか（**目標**）、そしてそれがなぜ重要または価値があるのか（**重要性**）を概説する簡潔な説明を提供してください。目標は、イニシアチブの本質、目的、そして達成しようとしているより広い影響を伝えることです。
 
-### Stakeholders
+### ステークホルダー
 
-Customer Success、Customer Support、Marketing Leads などの外部 entity である stakeholders は、input を提供し、より広い business needs を代表します。一方、Tech Lead、Engineers、Product Managers などの内部 members で構成される Team は、tasks の実行と initiative の goals 達成に積極的に関与します。この違いを認識することは、明確な communication、role overlap の回避、effective collaboration の促進に不可欠です。stakeholders は initiative の strategic direction を導き、Team は hands-on implementation に集中して initiative 全体の success に貢献します。
+Customer Success、Customer Support、Marketing Leads などの外部エンティティであるステークホルダーは、インプットを提供し、より広いビジネスニーズを代表します。一方、Tech Lead、Engineers、Product Managers などの内部メンバーで構成されるチームは、タスクの実行とイニシアチブの目標達成に積極的に関与します。この違いを認識することは、明確なコミュニケーション、ロール重複の回避、効果的なコラボレーションの促進に不可欠です。ステークホルダーはイニシアチブの戦略的方向性を導き、チームは実践的な実装に集中してイニシアチブ全体の成功に貢献します。
 
 ## 目標
 
-この initiative の objectives は、この initiative の goals をより広い organizational objectives と整合させることで、GitLab OKRs（Objectives and Key Results）に結び付きます。GitLab の OKR framework には通常、会社の strategic priorities と整合する high-level objectives が含まれます。一方、これらの objectives はより granular であり、より高いレベルの OKRs の達成に貢献するよう設計されています。各 Initiative には少なくとも 1 つの関連 OKR が必要です。
+このイニシアチブの目標は、このイニシアチブの目標をより広い組織目標と整合させることで、GitLab OKR（Objectives and Key Results）に結び付きます。GitLab の OKR フレームワークには通常、会社の戦略的優先事項と整合する上位目標が含まれます。一方、これらの目標はより粒度が細かく、より高いレベルの OKR の達成に貢献するよう設計されています。各イニシアチブには少なくとも 1 つの関連 OKR が必要です。
 
 ### OKRs (Objectives and Key Results)
 
 <!-- markdownlint-disable MD042 -->
-1. OKR title goes here ([link to current OKR for the quarter](#))
-2. OKR title goes here ([link to current OKR for the quarter](#))
-3. OKR title goes here ([link to current OKR for the quarter](#))
+1. OKR タイトルをここに記入（[当四半期の現在の OKR へのリンク](#)）
+2. OKR タイトルをここに記入（[当四半期の現在の OKR へのリンク](#)）
+3. OKR タイトルをここに記入（[当四半期の現在の OKR へのリンク](#)）
 
-## Team
+## チーム
 
-### Roles and Responsibilities
+### ロールと責任
 
-team members と、それぞれの具体的な roles and responsibilities をリストし、accountability と coordination を確立してください。
+チームメンバーと、それぞれの具体的なロールと責任をリストし、説明責任と調整を確立してください。
 
-| Team Member      | Role                 | Responsibilities                              |
+| チームメンバー      | ロール                 | 責任                              |
 |-------------------|----------------------|-----------------------------------------------|
-| Team Member 1    | Tech Lead            | technical vision、guidance、mentoring         |
-| Team Member 2    | Engineer            | code implementation、testing                  |
-| Team Member 3    | UX Designer          | user experience design、reviews               |
-| Team Member 4    | Product Manager      | milestone planning、coordination、reporting  |
-| Team Member 5    | SRE      | system の reliability と performance を確保する  |
+| チームメンバー 1    | Tech Lead            | 技術ビジョン、ガイダンス、メンタリング         |
+| チームメンバー 2    | Engineer            | コード実装、テスト                  |
+| チームメンバー 3    | UX Designer          | ユーザー体験設計、レビュー               |
+| チームメンバー 4    | Product Manager      | マイルストーン計画、調整、レポート  |
+| チームメンバー 5    | SRE      | システムの信頼性とパフォーマンスを確保する  |
 
-## Exit Criteria
+## 終了条件
 
-すべての exit criteria が満たされると、該当する initiative は完了し close out されます。
+すべての終了条件が満たされると、該当するイニシアチブは完了しクローズアウトされます。
 
-| Completed | Exit Criteria                | Start Date        | Completion Date   |
+| 完了 | 終了条件                | 開始日        | 完了日   |
 |-----------|------------------------------|-------------------|-------------------|
 | [ ]       | すべての機能が実装済み     | January 15, 2025  | February 20, 2025 |
-| [ ]       | code review completed        | February 25, 2025 | March 5, 2025     |
-| [ ]       | unit tests passed            | March 10, 2025    | March 15, 2025    |
-| [ ]       | system tests passed          | March 20, 2025    | March 25, 2025    |
-| [ ]       | documentation updated        | March 30, 2025    | April 5, 2025     |
-| [ ]       | user acceptance testing done | April 10, 2025    | April 15, 2025    |
-| [ ]       | performance benchmarks met   | April 20, 2025    | April 25, 2025    |
-| [ ]       | security review completed    | May 1, 2025       | May 5, 2025       |
-| [ ]       | stakeholder approval obtained | May 10, 2025      | May 15, 2025      |
+| [ ]       | コードレビューが完了        | February 25, 2025 | March 5, 2025     |
+| [ ]       | ユニットテストが合格            | March 10, 2025    | March 15, 2025    |
+| [ ]       | システムテストが合格          | March 20, 2025    | March 25, 2025    |
+| [ ]       | ドキュメントが更新済み        | March 30, 2025    | April 5, 2025     |
+| [ ]       | ユーザー受け入れテストが完了 | April 10, 2025    | April 15, 2025    |
+| [ ]       | パフォーマンスベンチマークを達成   | April 20, 2025    | April 25, 2025    |
+| [ ]       | セキュリティレビューが完了    | May 1, 2025       | May 5, 2025       |
+| [ ]       | ステークホルダー承認を取得 | May 10, 2025      | May 15, 2025      |
 
-## Timeline
+## タイムライン
 
-| Start Date         | Expected End Date  | Actual End Date    | Status  (Not Started, In Progress, Complete)    | Epic [Link to Epic]                | Issue [Link to Issue]                   | Assignee Mention                          |
+| 開始日         | 予定終了日  | 実際の終了日    | ステータス（未開始、進行中、完了）    | Epic [Epic へのリンク]                | Issue [Issue へのリンク]                   | Assignee メンション                          |
 |--------------------|-------------------|------------------|-------------|----------------------------------|----------------------------------------|------------------------------------------|
-| March 1, 2025      | -                 | -                | In Progress | -                                | [Define scope](#) | @[Assignee 1]                            |
-| March 15, 2025     | March 30, 2025     | -                | Not Started | [User Authentication](#) | [Design User Interface](#) | @[Assignee 2]                            |
-| March 30, 2025     | April 15, 2025     | -                | Not Started | [Security Audit](#)     | [Address Identified Vulnerabilities](#) | @[Assignee 3]                    |
-| April 15, 2025     | April 30, 2025     | -                | Not Started | [Database Queries Optimization](#) | [Test and Measure Performance](#) | @[Assignee 4]                   |
-| April 30, 2025     | May 10, 2025       | -                | Not Started | -                                | [User Acceptance Testing](#) | @[Assignee 5]                            |
-| May 10, 2025       | May 20, 2025       | -                | Not Started | -                                | [Ensure All Issues Resolved](#) | @[Assignee 6]                     |
+| March 1, 2025      | -                 | -                | 進行中 | -                                | [スコープを定義](#) | @[Assignee 1]                            |
+| March 15, 2025     | March 30, 2025     | -                | 未開始 | [ユーザー認証](#) | [ユーザーインターフェイスを設計](#) | @[Assignee 2]                            |
+| March 30, 2025     | April 15, 2025     | -                | 未開始 | [セキュリティ監査](#)     | [特定された脆弱性に対応](#) | @[Assignee 3]                    |
+| April 15, 2025     | April 30, 2025     | -                | 未開始 | [データベースクエリの最適化](#) | [パフォーマンスをテストして測定](#) | @[Assignee 4]                   |
+| April 30, 2025     | May 10, 2025       | -                | 未開始 | -                                | [ユーザー受け入れテスト](#) | @[Assignee 5]                            |
+| May 10, 2025       | May 20, 2025       | -                | 未開始 | -                                | [すべての Issue 解決を確認](#) | @[Assignee 6]                     |
 
-## Risk Management
+## リスク管理
 
-potential risks と mitigation strategies を特定し、予期しない challenges に備えてください。
+潜在的なリスクと緩和戦略を特定し、予期しない課題に備えてください。
 
-| Risk Description                          | Likelihood   | Impact       | Mitigation Plan                                       |
+| リスクの説明                          | 可能性   | 影響       | 緩和計画                                       |
 |-------------------------------------------|--------------|--------------|--------------------------------------------------------|
-| potential scope creep                     | Medium       | High         | stakeholders の expectations を管理するための regular scope reviews and communication。 |
-| key team member availability              | Low          | High         | critical roles の backup plans を持ち、knowledge sharing を確保するための team members の cross-training。 |
-| third-party tools への technical dependencies| High         | Medium       | third-party tools の continuous monitoring と alternative solutions の用意。 |
+| 潜在的なスコープクリープ                     | 中       | 高         | ステークホルダーの期待値を管理するための定期的なスコープレビューとコミュニケーション。 |
+| 主要チームメンバーの稼働状況              | 低          | 高         | 重要ロールのバックアップ計画を持ち、ナレッジ共有を確保するためにチームメンバーをクロストレーニングする。 |
+| サードパーティツールへの技術的依存| 高         | 中       | サードパーティツールの継続的な監視と代替ソリューションの用意。 |
 
-## Communication Plan
+## コミュニケーション計画
 
-## Effective Communication Channels
+## 効果的なコミュニケーションチャネル
 
-- **Team Meetings:**
-  - progress、challenges、upcoming tasks を議論する regularly scheduled meetings。
-  - **Frequency:** Weekly on Mondays at 10 AM UTC.
-  - **Agenda:** Link to Doc.
+- **チームミーティング:**
+  - 進捗、課題、今後のタスクを議論する定期ミーティング。
+  - **頻度:** 毎週月曜日 10 AM UTC。
+  - **アジェンダ:** ドキュメントへのリンク。
 
-- **Slack Channel:**
-  - ad hoc communication、quick questions、announcements のための dedicated Slack channel。
-  - Team members are encouraged to use `@mentions` for specific communication.
+- **Slack チャンネル:**
+  - アドホックなコミュニケーション、短い質問、お知らせのための専用 Slack チャンネル。
+  - チームメンバーには、特定のコミュニケーションに `@mentions` を使用することを推奨します。
 
-- **Status Report Issues:**
-  - status updates、achievements、challenges を報告するために project repository に issue を作成してください。特定の cadence で更新される 1 つの issue（[1](https://gitlab.com/gitlab-com/create-stage/ide/-/issues/85), [2](https://gitlab.com/gitlab-org/gitlab/-/issues/361755#note_975547547)）を作成しても、更新ごとに異なる issues（[1](https://gitlab.com/gitlab-com/create-stage/code-creation/announcements/-/issues/?sort=title_asc&state=all&first_page_size=20),2,3）を作成してもかまいません。Slack に status reports を投稿することを好む人もいますが、その場合は Slack 内で履歴が失われ、検索もしづらくなるという問題があります。
-    preference は、product を使い、product を dog food し、Slack から GitLab issue へリンクできるようにすることです。
-  - Link to Issue Board / Issue Lists
-  - Link to Issue Lists
-  - **Feedback Gathering Epic:**
-  - internal and external feedback を集めるための dedicated epic へのリンク。
-  - features、user experience、overall progress に関する feedback を定期的に確認してください。
+- **ステータスレポート Issue:**
+  - ステータス更新、達成事項、課題を報告するためにプロジェクトリポジトリに Issue を作成してください。特定の頻度で更新される 1 つの Issue（[1](https://gitlab.com/gitlab-com/create-stage/ide/-/issues/85), [2](https://gitlab.com/gitlab-org/gitlab/-/issues/361755#note_975547547)）を作成しても、更新ごとに異なる Issue（[1](https://gitlab.com/gitlab-com/create-stage/code-creation/announcements/-/issues/?sort=title_asc&state=all&first_page_size=20),2,3）を作成してもかまいません。Slack にステータスレポートを投稿することを好む人もいますが、その場合は Slack 内で履歴が失われ、検索もしづらくなるという問題があります。
+    推奨は、プロダクトを使い、プロダクトをドッグフードし、Slack から GitLab Issue へリンクできるようにすることです。
+  - Issue Board / Issue リストへのリンク
+  - Issue リストへのリンク
+  - **フィードバック収集 Epic:**
+  - 内部および外部のフィードバックを集めるための専用 Epic へのリンク。
+  - 機能、ユーザー体験、全体の進捗に関するフィードバックを定期的に確認してください。
 
-## Metrics/Dashboards/Charts
+## メトリクス / ダッシュボード / チャート
 
-### Metrics
+### メトリクス
 
 1. [Tableau Chart 1](#)
 1. [Tableau Chart 1](#)
@@ -116,45 +116,45 @@ potential risks と mitigation strategies を特定し、予期しない challen
 1. [Grafana Board 1](#)
 1. [Kibana Graph 1](#)
 
-## Labels
+## ラベル
 
-organization と tracking を改善するための labeling system を確立してください。
+整理と追跡を改善するためのラベル付けシステムを確立してください。
 
-| Label Name       | Description                              | When to Apply                            | Applied By        |
+| ラベル名       | 説明                              | 適用タイミング                            | 適用者        |
 |------------------|------------------------------------------|------------------------------------------|-------------------|
-| Enhancement      | feature improvements の tasks を示す     | feature development を開始する前   | Product Team      |
-| Critical         | critical issues or bugs を特定する       | critical issue が報告されたとき       | Developers        |
-| Review Pending   | review 待ちの code or work を示す  | task or feature の完了後      | Developers        |
-| Ready for Deploy | deployment 可能な tasks を示す     | successful testing and review 後    | DevOps Team       |
-| Documentation    | documentation が必要な tasks を示す      | development process 全体を通じて      | Developers        |
+| Enhancement      | 機能改善のタスクを示す     | 機能開発を開始する前   | Product Team      |
+| Critical         | 重大な Issue またはバグを特定する       | 重大な Issue が報告されたとき       | Developers        |
+| Review Pending   | レビュー待ちのコードまたは作業を示す  | タスクまたは機能の完了後      | Developers        |
+| Ready for Deploy | デプロイ可能なタスクを示す     | テストとレビューの成功後    | DevOps Team       |
+| Documentation    | ドキュメントが必要なタスクを示す      | 開発プロセス全体を通じて      | Developers        |
 
-具体的な labels とその usage は、initiative の workflow と requirements によって異なる場合があります。team の needs and processes に合わせて調整することが重要です。
+具体的なラベルとその用途は、イニシアチブのワークフローと要件によって異なる場合があります。チームのニーズとプロセスに合わせて調整することが重要です。
 
-## Quality, Security, SRE, Technical Writers
+## Quality、Security、SRE、Technical Writers
 
-Quality、Security、SRE、TW、または取り組みを完了するために必要なその他の対応チームについて、個別の Epics を作成し、各領域で focused collaboration を確保してください。
+Quality、Security、SRE、TW、または取り組みを完了するために必要なその他の対応チームについて、個別の Epic を作成し、各領域で集中したコラボレーションを確保してください。
 
-| Start Date         | Expected End Date  | Actual End Date    | Counterpart                  | Epic  Title                                         | Exit Criteria                                    |
+| 開始日         | 予定終了日  | 実際の終了日    | 対応チーム                  | Epic タイトル                                         | 終了条件                                    |
 |--------------------|-------------------|-------------------|-----------------------|---------------------------------------------------|--------------------------------------------------|
-| January 15, 2025   | February 20, 2025 | March 5, 2025     | Quality               | [rigorous testing and QA processes を通じて product 全体の quality を高め、確保する。](#) | desired test coverage を達成し、critical bugs がなく、code quality が改善された。 |
-| February 1, 2025   | March 15, 2025    | March 25, 2025    | Security              | [system の integrity and confidentiality を守るために security measures を実装し強化する。](#) | required security protocols を実装し、successful penetration tests を実施した。 |
-| March 1, 2025      | April 5, 2025     | April 15, 2025    | SRE                   | [system stability、performance、availability を高めるために Site Reliability Engineering (SRE) practices に集中する。](#) | agreed-upon system reliability metrics を達成し、incident response が改善された。 |
-| April 1, 2025      | May 5, 2025       | May 15, 2025      | Documentation         | [理解と collaboration を容易にするために包括的な documentation を改善し維持する。](#) | new features、clear guidelines、improved user manuals を含む documentation を更新した。 |
+| January 15, 2025   | February 20, 2025 | March 5, 2025     | Quality               | [厳格なテストと QA プロセスを通じてプロダクト全体の品質を高め、確保する。](#) | 目標テストカバレッジを達成し、重大なバグがなく、コード品質が改善された。 |
+| February 1, 2025   | March 15, 2025    | March 25, 2025    | Security              | [システムの完全性と機密性を守るためにセキュリティ対策を実装し強化する。](#) | 必要なセキュリティプロトコルを実装し、ペネトレーションテストに成功した。 |
+| March 1, 2025      | April 5, 2025     | April 15, 2025    | SRE                   | [システムの安定性、パフォーマンス、可用性を高めるために Site Reliability Engineering（SRE）のプラクティスに集中する。](#) | 合意済みのシステム信頼性メトリクスを達成し、インシデント対応が改善された。 |
+| April 1, 2025      | May 5, 2025       | May 15, 2025      | Documentation         | [理解とコラボレーションを容易にするために包括的なドキュメントを改善し維持する。](#) | 新機能、明確なガイドライン、改善されたユーザーマニュアルを含むドキュメントを更新した。 |
 <!-- markdownlint-enable MD042 -->
 
-## Feedback
+## フィードバック
 
-## Feedback Gathering
+## フィードバック収集
 
-internal and external feedback の両方に対応する Epic を設定し、continuous improvement を促進してください。
+内部および外部フィードバックの両方に対応する Epic を設定し、継続的改善を促進してください。
 
-## Project Team Meetings
+## プロジェクトチームミーティング
 
-## Regular Meetings
+## 定例ミーティング
 
-- Meeting Agenda
-- Meeting Recordings
+- ミーティングアジェンダ
+- ミーティング録画
 
-## Retrospective
+## レトロスペクティブ
 
-この initiative の retrospective issue へのリンクをここに追加してください。すべての initiatives には retrospective issue が必要です。
+このイニシアチブのレトロスペクティブ Issue へのリンクをここに追加してください。すべてのイニシアチブにはレトロスペクティブ Issue が必要です。
