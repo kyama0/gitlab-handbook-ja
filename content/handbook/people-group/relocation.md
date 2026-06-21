@@ -2,11 +2,11 @@
 title: "リロケーション"
 description: "チームメンバーのリロケーションに関する GitLab のポリシーとプロセス。"
 upstream_path: /handbook/people-group/relocation/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:37:44Z"
 translator: claude
 stale: false
-lastmod: "2026-04-10T12:24:21-07:00"
+lastmod: "2026-06-18T12:00:28-04:00"
 ---
 
 ## リロケーション / 住所変更
@@ -251,21 +251,36 @@ PEO 雇用の場所からリロケーションする場合、通知期間内に 
 
 ##### インド**へ**のリロケーション
 
-1. リロケーションが承認されたら、People Operations Specialist は HelpLab ケースでリロケーションするチームメンバーに尋ねます: 「あなたの [Provident Fund contribution](/handbook/entity/india-pvt-ltd/#provident-fund-and-national-pension-scheme) 選択を選択してください:
+1. リロケーションが承認されたら、People Operations Specialist は HelpLab ケースでリロケーションするチームメンバーに尋ねます:
+
+- 「Hi NAME,
+
+[Provident Fund contribution](/handbook/entity/india-pvt-ltd/#provident-fund-and-national-pension-scheme) の選択を選んでください:
 
 - 上限なしの割合ベース: 基本給与の月 12%
 または
-- 上限金額: 月 1800 INR」
+- 上限金額: 月 1800 INR
+
+[National Pension Scheme](/handbook/entity/india-pvt-ltd/#national-pension-scheme) への加入を希望する場合は、[このフォームから PRAN を送信してください](https://docs.google.com/forms/d/e/1FAIpQLSeW3X3yNMuGIdb-reaxzr7XuZ7kDrxNbwMaF2Xu7RYGtneIPg/viewform)。」
 
 1. provident fund 選択が確認されたら、People Operations Specialist は[この計算機](https://docs.google.com/spreadsheets/d/1XQP4egCO2nn9Pj0_ssnbhIPozwRcqOLTljdiBcJcC8o/edit?gid=0#gid=0)を使用してリロケーション契約の報酬内訳を決定します。
 
-1. リロケーションが Workday に入力されると、ワークスペース (カルナータカ州) と (該当する場合) provident fund 手当を更新する必要があります。
+1. リロケーションが Workday に入力されると、ワークスペース (カルナータカ州) と (該当する場合) provident fund 手当および NPS Contribution Rate を更新する必要があります。
 
 - 「Change Location」ビジネスプロセスを進める際、Allowance セクションまでスクロールして「Add」 > Compensation Plan > をクリックします
+
 - チームメンバーによって確認された該当する 'Compensation Plan' を選択します:
+
 "Provident Fund (INR)" 上限ありの場合 OR
 "Provident Fund (%)" 上限なしの場合
+
 - 注: さらなる Provident Fund フィールドは事前入力され、変更してはなりません
+
+1. Voluntary NPS Contribution rate（該当する場合）を追加するには、もう一度 'Add Plan Assignment' を選択 > 'Compensation Plan Type': Allowance を選択 > 'Voluntary NPS Contribution' を選択 > 完了したら OK をクリックします
+
+- チームメンバーの Workday の契約フォルダーにある、オファーレターに添付された National Pension Scheme (NPS) Enrollment Acknowledgement フォームをレビューします
+
+- Workday の 'Percent' フィールドを、チームメンバーが選択した 'Employee NPS Contribution Rate' で更新し、もう一度 OK をクリックして送信します
 
 #### ドイツ
 

@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "不変なスラッグと仮想アンカータプルを持つ内部ネームスペースエンティティを導入し、Artifact Registry を Rails の内部識別子から切り離す提案"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-09T19:10:50+01:00
-translated_at: "2026-06-12T21:12:20Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+lastmod: 2026-06-19T12:48:58+02:00
+translated_at: "2026-06-20T13:37:44Z"
 translator: claude
 stale: false
 ---
@@ -130,16 +130,14 @@ OCI:         /v2/<slug>/repositories/my-repo/manifests/latest
 
 ### スラッグ設計
 
-スラッグは、ネームスペースを作成するときに顧客が選択します。スラッグが組織名を追跡するという誤った期待を生まないように、
-組織名から自動入力されることは **ありません**。設計上のプロパティは次のとおりです。
+スラッグは、ネームスペースを作成するときに顧客が選択し、すべてのクライアントサーフェスに表示されます。顧客向けドキュメントと UX におけるユーザー向け名称は **registry handle** です（[gitlab-org/gitlab#593366](https://gitlab.com/gitlab-org/gitlab/-/work_items/593366) を参照）。設計上のプロパティは次のとおりです。
 
 - **不変**: 一度設定されると、決して変わらない。リポジトリ名の不変性、および業界の慣行と一貫している。
 - **顧客が選択**: クライアント設定、CI パイプライン、Kubernetes マニフェストに現れるため、人間が読めて
   タイプできる。
-- **グローバルに一意**: 2 つのネームスペースがスラッグを共有することはできない。予約名と高価値スラッグの
-  保護のためのポリシーが必要。
-- **検証ルール**: ハイフンを含む小文字の英数字、先頭または末尾のハイフンなし、最小長は未定。S3 バケットの
-  命名ルールに類似している。
+- **グローバルに一意**: 2 つのネームスペースがスラッグを共有することはできない。
+
+検証ルール、組織名からのデフォルト派生、予約ポリシー、およびライフサイクル制御（セキュリティブロックと移管）は、[ADR-015: Slug Policy (internal)](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/) で定義されています。
 
 ### ネームスペースのライフサイクル
 
@@ -155,8 +153,7 @@ OCI:         /v2/<slug>/repositories/my-repo/manifests/latest
 機能です。Organization v1 では、プロモーションイベントは存在しません。
 
 **削除:** Artifact Registry はネームスペースをソフト削除または無効化します。スラッグは予約され、別の顧客によって再取得
-できません。リポジトリ名の再取得と同じセキュリティリスク（認可バイパス、キャッシュポイズニング）を避けるためです。これは、グローバルなスラッグの
-ネームスペースが時間とともに縮小することを意味します。最小長の要件が、利用可能なプールが大きく保たれるのを助けます。
+できません。リポジトリ名の再取得と同じセキュリティリスク（認可バイパス、キャッシュポイズニング）を避けるためです。完全なライフサイクル（再取得を可能にするソフト削除期間、恒久的な廃止を伴うハード削除）と、セキュリティブロックおよび移管の制御については、[ADR-015 (internal)](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/#slug-lifecycle) を参照してください。
 
 ### Organization のマージ {#organization-merges}
 
@@ -321,11 +318,6 @@ Artifact Registry は、指定された Organization のスラッグのリスト
 - **[ADR-002](002_storage_deduplication_scope.md)**: 重複排除のスコープが Organization からネームスペースに移る。
   初回リリースではこれらは 1:1。ストレージはネームスペース境界内で重複排除される。同じネームスペース内の
   同一コンテンツは一度だけ保存される。
-
-## 未解決の問い
-
-1. **どのスラッグ検証ルールを適用すべきか。** 最小/最大長、文字セット、予約プレフィックス。https://gitlab.com/gitlab-org/gitlab/-/work_items/593368 (internal) を参照。
-1. **このエンティティのユーザー向けの名称は何か。** https://gitlab.com/gitlab-org/gitlab/-/work_items/593366 を参照。
 
 ## 参考資料
 

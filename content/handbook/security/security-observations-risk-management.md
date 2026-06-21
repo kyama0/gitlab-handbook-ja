@@ -1,11 +1,11 @@
 ---
 title: 統合セキュリティリスク管理（USRM）プログラム
 upstream_path: /handbook/security/security-observations-risk-management/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T14:00:00Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:37:44Z"
 translator: claude
 stale: false
-lastmod: "2026-03-19T12:39:13-07:00"
+lastmod: "2026-06-18T14:15:02-05:00"
 ---
 
 ## 目的
@@ -18,24 +18,23 @@ lastmod: "2026-03-19T12:39:13-07:00"
 
 カバレッジには特定されたソースが含まれます:
 
-| # | プロジェクト | チーム | USRM フェーズ | 発見コーディネーター | Issue テンプレート |
+| # | プロジェクト | チーム | 四半期 | 発見コーディネーター | Issue テンプレート |
 |:-:| :------ | :--: |-----------| :--: |----------------|
-| 1 | [Compliance Observations](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance-commercial-and-dedicated/observation-management/-/issues) | Sec Compliance | Phase 1 | Observation Manager | Existing or USRM |
-| 2 | [Security Policy Exceptions](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance-and-field-security/governance/security-governance/-/issues?sort=created_date&state=all&label_name%5B%5D=ExceptionRequest&first_page_size=100) | Security Governance | Phase 1 | @davoudtu | Existing |
-| 3 | [Product Risk Register](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-risk-team/storm-risk-register/-/issues/?sort=created_asc&state=opened&label_name%5B%5D=Department%3A%3AProduct%20Security&first_page_size=100) | ProdSec | Phase 1 | @jrinaudo | Existing or USRM |
-| 4 | [TPRM Security Notices](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-risk-team/third-party-vendor-security-management/-/issues/?sort=created_date&state=opened&label_name%5B%5D=TPRM%3ASecurity%20Notice&first_page_size=100) | Sec Risk | Phase 1 | Risk Manager |  Existing or USRM |
+| 1 | [Compliance Observations](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance-commercial-and-dedicated/observation-management/-/issues) | Sec Compliance | FY26-Q4 | Observation Manager | Existing or USRM |
+| 2 | [Security Policy Exceptions](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance-and-field-security/governance/security-governance/-/issues?sort=created_date&state=all&label_name%5B%5D=ExceptionRequest&first_page_size=100) | Security Governance | FY26-Q4 | @davoudtu | Existing |
+| 3 | [Product Risk Register](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-risk-team/storm-risk-register/-/issues/?sort=created_asc&state=opened&label_name%5B%5D=Department%3A%3AProduct%20Security&first_page_size=100) | ProdSec | FY26-Q4 | @jrinaudo | Existing or USRM |
+| 4 | [TPRM Security Notices](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-risk-team/third-party-vendor-security-management/-/issues/?sort=created_date&state=opened&label_name%5B%5D=TPRM%3ASecurity%20Notice&first_page_size=100) | Sec Risk | FY26-Q4 | Risk Manager |  Existing or USRM |
 | 5 | [Vulnerabilities](https://gitlab.com/groups/gitlab-com/gl-security/product-security/vulnerability-management/-/issues/?sort=created_asc&state=opened&label_name%5B%5D=bug%3A%3Avulnerability&first_page_size=100) | Vuln Mgmt. | TBD | TBD  |  TBD |
-| 6 | Incidents | SIRT | TBD |  TBD | TBD |
-| 7 | [Red Team Recommendations (~RTRec::)](https://gitlab.com/gitlab-com/gl-security/security-operations/leadership/-/wikis/OffSec-Recommendations-Dashboard) | Red Team | Phase 1 | @madlake | USRM |
-| 8 | [Inventory findings](https://gitlab.com/gitlab-com/gl-security/product-security/inventory/-/issues) | Sec Architecture | TBD | @kylesmith2 | TBD |
+| 6 | [SIRT Recommendations (~SIRTRec::)](https://gitlab.com/gitlab-com/gl-security/security-operations/leadership/-/wikis/SIRT-Recommendations-Dashboard) | SIRT | FY27-Q1 |  @kylesmith2 | USRM |
+| 7 | [Red Team Recommendations (~RTRec::)](https://gitlab.com/gitlab-com/gl-security/security-operations/leadership/-/wikis/OffSec-Recommendations-Dashboard) | Red Team | FY26-Q4 | @madlake | USRM |
+| 8 | [AppSec review findings](https://gitlab.com/gitlab-com/gl-security/product-security/appsec/appsec-reviews) | AppSec | TBD | @kylesmith2 | TBD |
 | 9 | [Wiz Findings](https://app.wiz.io/p/production) | InfraSec | TBD | TBD | TBD |
-| 10 | [Threat Intel Recommendations (~TIRec::)](https://gitlab.com/gitlab-com/gl-security/security-operations/leadership/-/wikis/OffSec-Recommendations-Dashboard) | Threat Intel | Phase 1 | @madlake | TBD |
+| 10 | [Threat Intel Recommendations (~TIRec::)](https://gitlab.com/gitlab-com/gl-security/security-operations/leadership/-/wikis/OffSec-Recommendations-Dashboard) | Threat Intel | FY26-Q4 | @madlake | TBD |
 | 11 | Signals Engineering (~SET::Signals-Improvement, SET::Detection-New, SET::Signal-Gap) | Signals Engineering | TBD | TBD |TBD |
 | 12 | [GitLab vulnerabilities](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&label_name%5B%5D=bug%3A%3Avulnerability&first_page_size=100) | AppSec/Multiple | TBD |  TBD | TBD |
-| 13 | Data Security Recommendations (~DataSec::consult) | DataSec | TBD |  TBD | TBD |
-| 14 | Corp Sec Recommendations (~corpsec-metric::consult and ~corpsys-gitlab-com) | CorpSec | TBD |   TBD | TBD |
-| 15 | Trust and Safety Contributions (~"Trust and Safety contribution") | T&S | TBD | TBD |  TBD |
-| 16 | [Security Reviews](https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/bau/-/issues/?sort=created_asc&state=all&search=Security+review&first_page_size=100&show=eyJpaWQiOiI0OTYiLCJmdWxsX3BhdGgiOiJnaXRsYWItY29tL2dsLXNlY3VyaXR5L3Byb2R1Y3Qtc2VjdXJpdHkvaW5mcmFzdHJ1Y3R1cmUtc2VjdXJpdHkvYmF1IiwiaWQiOjEzNjYzMDUzOH0%3D) | InfraSec | TBD  | TBD  | USRM |
+| 13 | Corp Sec Recommendations (~corpsec-metric::consult and ~corpsys-gitlab-com) | CorpSec | TBD |   TBD | TBD |
+| 14 | Trust and Safety Contributions (~"Trust and Safety contribution") | T&S | TBD | TBD |  TBD |
+| 15 | [InfraSec Security Reviews](https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/bau/-/issues/?sort=created_asc&state=all&search=Security+review&first_page_size=100&show=eyJpaWQiOiI0OTYiLCJmdWxsX3BhdGgiOiJnaXRsYWItY29tL2dsLXNlY3VyaXR5L3Byb2R1Y3Qtc2VjdXJpdHkvaW5mcmFzdHJ1Y3R1cmUtc2VjdXJpdHkvYmF1IiwiaWQiOjEzNjYzMDUzOH0%3D) | InfraSec | TBD  | TBD  | USRM |
 
 ## 役割と責任
 

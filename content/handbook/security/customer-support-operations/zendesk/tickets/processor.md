@@ -2,11 +2,11 @@
 title: 'チケットプロセッサ'
 description: 'Zendesk のチケットプロセッサに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/zendesk/tickets/processor/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T13:54:37Z"
 translator: claude
 stale: false
-lastmod: "2026-05-26T12:05:00-05:00"
+lastmod: "2026-06-16T15:01:39-05:00"
 ---
 
 このガイドでは、Zendesk のチケットプロセッサ（特定のトリガーに基づいてチケットに対するカスタムアクションを実行する自動化システム）について説明します。利用可能なプロセッサタイプ、およびプロセッサ項目の作成、変更、削除方法をドキュメント化します。
@@ -54,21 +54,45 @@ lastmod: "2026-05-26T12:05:00-05:00"
 
 これは gitlab.com ユーザーのアカウントステータスをチェックします。ステータスに応じて、異なるアクションが発生する可能性があります。
 
-- ユーザーが存在しない場合...
+- ユーザーが存在しない場合:
   - ユーザーにアカウントが存在しない旨のパブリック返信が送信されます
   - `Ticket Stage` の値が `FRT` に設定されます
   - チケットのステータスが `Pending` に設定されます
-- ユーザーがブロックされていない場合...
+- ユーザーが banned または blocked されていない場合:
   - ユーザーに実際にはアカウントがブロックされていない旨のパブリック返信が送信されます
   - `Ticket Stage` の値が `FRT` に設定されます
   - チケットのステータスが `Pending` に設定されます
-- ユーザーが embargo ポリシーによりブロックされている場合...
-  - ユーザーに embargo ポリシーによりブロックされた旨のパブリック返信が送信されます。それを解決するための次のステップも知らされます。
+- ユーザーが sanctions により banned または blocked されている場合:
+  - ユーザーに sanctions によりブロックされた旨のパブリック返信が送信されます。それを解決するための次のステップも知らされます。
   - `Ticket Stage` の値が `FRT` に設定されます
   - チケットのステータスが `Solved` に設定されます
-- ユーザーがブロックされている（ただし embargo ポリシーによるものではない）場合...
+- ユーザーが Professional Services の移行により banned または blocked されている場合:
+  - 依頼者の GitLab.com アカウントについて、トップレベルの有償ネームスペースに対する `Owner` レベルのメンバーシップが確認されます。
+  - 次のアクションは、前のアクションの結果によって異なります:
+    - 依頼者が GitLab.com アカウントを持っていない、またはトップレベルの有償ネームスペースの Owner でない場合:
+      - 続行できない旨のパブリック返信がユーザーに送信されます
+      - `Ticket Stage` の値が `FRT` に設定されます
+      - チケットのステータスが `Solved` に設定されます
+    - 依頼者がトップレベルの有償ネームスペースの Owner である場合:
+      - 影響を受けたユーザーのブロックが解除されます
+      - 影響を受けたユーザーのブロックが解除された旨のパブリック返信がユーザーに送信されます
+      - `Ticket Stage` の値が `FRT` に設定されます
+      - チケットのステータスが `Solved` に設定されます
+- ユーザーが T&S により banned または blocked されている場合（以下の注記を参照）:
   - [T&S アカウント復活プロジェクト](https://gitlab.com/gitlab-com/gl-security/security-operations/trust-and-safety/TS_Operations/account-reinstatements)内で Issue が作成されます
   - 内部返信がチケットに作成され、SE に従うべき次のステップを示します
+- その他の ban または block の場合:
+  - 内部返信がチケットに作成され、SE に従うべき次のステップを示します
+
+{{% alert title="注記" color="primary" %}}
+
+T&S による ban または block は、ユーザーのカスタム属性を確認して定義されます。以下の基準のいずれかを満たす場合、T&S によるものとして分類されます:
+
+- カスタム属性に `key` が `omamori_mitigation_plan` のオブジェクトが含まれている
+- カスタム属性に `key` が `omamori_mitigation_plan_executed_by` のオブジェクトが含まれている
+- カスタム属性に `key` が `auto_banned_by` かつ `value` が `banned_phone_number` のオブジェクトが含まれている
+
+{{% /alert %}}
 
 #### ASE update {#ase-update}
 
