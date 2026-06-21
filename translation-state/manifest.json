@@ -15418,11 +15418,11 @@
     },
     "content/handbook/finance/expenses.md": {
       "path": "content/handbook/finance/expenses.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9a221577ee5d0928a37537da79a86f3d835de4e96848f05cc851c30502cc7ff0",
-      "upstream_committed_at": "2026-03-18T15:39:47+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T15:21:24Z",
+      "model": "codex",
+      "input_hash": "b9bd7a03f2f0119c0d9f681ceb623ad8695c8599cd95966e957c00701359ad4d",
+      "upstream_committed_at": "2026-06-19T07:42:25-07:00"
     },
     "content/handbook/finance/finance-team-performance-indicators.md": {
       "path": "content/handbook/finance/finance-team-performance-indicators.md",
@@ -18378,11 +18378,11 @@
     },
     "content/handbook/marketing/developer-relations/_index.md": {
       "path": "content/handbook/marketing/developer-relations/_index.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b7ac204cde6527d1745c27c47984ee53e36547177ecd808dbe3cc642c41c9d27",
-      "upstream_committed_at": "2026-06-04T10:07:48-04:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T15:10:46Z",
+      "model": "codex",
+      "input_hash": "2c7001d5c48a3c6786dc1a1e8ad0114f716d6344c1753fed2751c59249093f75",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/developer-relations/community-pathway.md": {
       "path": "content/handbook/marketing/developer-relations/community-pathway.md",
@@ -18554,11 +18554,11 @@
     },
     "content/handbook/marketing/developer-relations/engineering/core-team.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/core-team.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b8cac93c6c1df2a30e82b9db625f3f1785770e87ab3d72fc869d797491aa4f74",
-      "upstream_committed_at": "2026-03-19T19:48:12+00:00"
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T15:10:46Z",
+      "model": "codex",
+      "input_hash": "f7ebc3e228093c1b055cd108bb66952918621cfe00d0b559293318cdc351f053",
+      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
     "content/handbook/marketing/developer-relations/engineering/innovation-pitch-competition.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/innovation-pitch-competition.md",
@@ -33232,13 +33232,21 @@
       "input_hash": "db092de5807b3a5335da5942d75eebd42a141684cd1a20526175c25790cc4fb4",
       "upstream_committed_at": "2026-06-19T14:14:46-07:00"
     },
-    "content/handbook/company/team-pets.md": {
-      "path": "content/handbook/company/team-pets.md",
+    "content/handbook/engineering/architecture/design-documents/gitlab_steps/nix-package-manager.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/gitlab_steps/nix-package-manager.md",
       "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T14:55:12Z",
+      "translated_at": "2026-06-20T14:35:06Z",
       "model": "codex",
-      "input_hash": "89858770a847c167895a53daadab493b7cd3e09a952300ba957ad2ec3f2e611b",
-      "upstream_committed_at": "2026-06-19T16:49:16-04:00"
+      "input_hash": "0bbecfa730a6d9f1da46f94617fc5863b9f6713d2ebcd63a9a22791565b824b5",
+      "upstream_committed_at": "2026-06-18T16:29:19-07:00"
+    },
+    "content/handbook/engineering/devops/create/.gitlab/issue_templates/initiative.md": {
+      "path": "content/handbook/engineering/devops/create/.gitlab/issue_templates/initiative.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:35:06Z",
+      "model": "codex",
+      "input_hash": "75d8a81716e6293e23377b3ac360069ef201d5b286dd0fa40c6a45b340318f94",
+      "upstream_committed_at": "2025-12-05T19:47:34+00:00"
     },
     "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/004_library_extraction.md": {
       "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/004_library_extraction.md",
@@ -33287,6 +33295,14 @@
       "model": "codex",
       "input_hash": "d101a83682e8e5eeb2be5f9c4645032199f2f6567e8b72b5058c67daefa77161",
       "upstream_committed_at": "2026-06-17T22:18:42+12:00"
+    },
+    "content/handbook/company/team-pets.md": {
+      "path": "content/handbook/company/team-pets.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:55:12Z",
+      "model": "codex",
+      "input_hash": "89858770a847c167895a53daadab493b7cd3e09a952300ba957ad2ec3f2e611b",
+      "upstream_committed_at": "2026-06-19T16:49:16-04:00"
     }
   }
 }
