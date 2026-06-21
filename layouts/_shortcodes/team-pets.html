@@ -19,7 +19,7 @@
   <div class="col mb-4" id="{{ $anchor }}">
     <div class="lead--card h-100 text-center">
       {{- with $img }}
-      <a href="#{{ $anchor }}" data-bs-toggle="modal" data-bs-target="#{{ $anchor }}-modal" aria-label="Read more about {{ $pet.name }}">
+      <a href="#{{ $anchor }}" data-bs-toggle="modal" data-bs-target="#{{ $anchor }}-modal" aria-label="{{ $pet.name }} について詳しく読む">
         <img src="{{ . }}" alt="{{ $pet.name }}" loading="lazy" width="200" height="200" class="member-img" />
       </a>
       {{- end }}
@@ -31,14 +31,14 @@
       <div class="modal-content">
         <div class="modal-header">
           <h3 class="modal-title h5" id="{{ $anchor }}-modal-title">{{ $pet.name }}</h3>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
         </div>
         <div class="modal-body text-center">
           {{- with $img }}
           <img src="{{ . }}" alt="{{ $pet.name }}" class="m-3 member-img-color" width="200" height="200" loading="lazy" />
           {{- end }}
           {{- with $pet.human }}<p><strong>{{ . }}</strong></p>{{- end }}
-          {{- with $pet.story }}<p class="text-start">{{ . }}</p>{{- end }}
+          {{- with $pet.story }}<div class="text-start">{{ . | markdownify }}</div>{{- end }}
         </div>
       </div>
     </div>
