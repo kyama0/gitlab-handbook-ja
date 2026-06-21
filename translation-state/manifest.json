@@ -15418,9 +15418,9 @@
     },
     "content/handbook/finance/expenses.md": {
       "path": "content/handbook/finance/expenses.md",
-      "upstream_sha": "9164688669f5bd36ff8345a38c17f82ffc321821",
-      "translated_at": "2026-06-20T21:07:23Z",
-      "model": "claude-opus-4-7",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T15:21:24Z",
+      "model": "codex",
       "input_hash": "b9bd7a03f2f0119c0d9f681ceb623ad8695c8599cd95966e957c00701359ad4d",
       "upstream_committed_at": "2026-06-19T07:42:25-07:00"
     },
@@ -18378,9 +18378,9 @@
     },
     "content/handbook/marketing/developer-relations/_index.md": {
       "path": "content/handbook/marketing/developer-relations/_index.md",
-      "upstream_sha": "9164688669f5bd36ff8345a38c17f82ffc321821",
-      "translated_at": "2026-06-20T21:10:03Z",
-      "model": "claude-opus-4-7",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T15:10:46Z",
+      "model": "codex",
       "input_hash": "2c7001d5c48a3c6786dc1a1e8ad0114f716d6344c1753fed2751c59249093f75",
       "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
@@ -18554,9 +18554,9 @@
     },
     "content/handbook/marketing/developer-relations/engineering/core-team.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/core-team.md",
-      "upstream_sha": "9164688669f5bd36ff8345a38c17f82ffc321821",
-      "translated_at": "2026-06-20T21:10:03Z",
-      "model": "claude-opus-4-7",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T15:10:46Z",
+      "model": "codex",
       "input_hash": "f7ebc3e228093c1b055cd108bb66952918621cfe00d0b559293318cdc351f053",
       "upstream_committed_at": "2026-06-16T12:33:40-04:00"
     },
@@ -33231,6 +33231,22 @@
       "model": "codex",
       "input_hash": "db092de5807b3a5335da5942d75eebd42a141684cd1a20526175c25790cc4fb4",
       "upstream_committed_at": "2026-06-19T14:14:46-07:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/gitlab_steps/nix-package-manager.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/gitlab_steps/nix-package-manager.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:35:06Z",
+      "model": "codex",
+      "input_hash": "0bbecfa730a6d9f1da46f94617fc5863b9f6713d2ebcd63a9a22791565b824b5",
+      "upstream_committed_at": "2026-06-18T16:29:19-07:00"
+    },
+    "content/handbook/engineering/devops/create/.gitlab/issue_templates/initiative.md": {
+      "path": "content/handbook/engineering/devops/create/.gitlab/issue_templates/initiative.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:35:06Z",
+      "model": "codex",
+      "input_hash": "75d8a81716e6293e23377b3ac360069ef201d5b286dd0fa40c6a45b340318f94",
+      "upstream_committed_at": "2025-12-05T19:47:34+00:00"
     },
     "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/004_library_extraction.md": {
       "path": "content/handbook/engineering/architecture/design-documents/modular_monolith/decisions/004_library_extraction.md",
