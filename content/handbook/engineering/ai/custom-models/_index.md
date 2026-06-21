@@ -2,12 +2,11 @@
 title: Custom Models グループ
 description: "Custom Models グループは、GitLab Duo の顧客向けモデルのオペレーション／インテリジェンスレイヤー、すなわちどのモデルが利用可能でどう選択されるか、顧客体験の健全性と接続性、そしてゲートウェイサービスのサーフェス（プロンプト、内部イベント、AIGW 課金）を所有します。"
 upstream_path: /handbook/engineering/ai/custom-models/
-upstream_sha: 9164688669f5bd36ff8345a38c17f82ffc321821
-lastmod: 2026-06-16T17:58:42+02:00
-translated_at: "2026-06-20T21:10:03Z"
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+lastmod: "2026-06-16T17:58:42+02:00"
+translated_at: "2026-06-20T15:03:34Z"
 translator: claude
 stale: false
-model: claude-opus-4-7
 ---
 
 ## ビジョン
