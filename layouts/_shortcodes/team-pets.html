@@ -1,5 +1,5 @@
-{{- /* 日本語化済みの team pets data がある場合だけ描画する。英語の data/public/pets.yml は公開しない。 */ -}}
-{{- with site.Data.public.pets_ja }}
+{{- /* scripts/sync-data.sh が同期する data/public/pets.yml を描画する。 */ -}}
+{{- with site.Data.public.pets }}
 <style>
   /* Pet card photos are grayscale by default and fade to full color on hover. */
   .team-pets-grid .member-img { transition: filter 0.2s ease-in-out; }
@@ -35,7 +35,7 @@
           <img src="{{ . }}" alt="{{ $pet.name }}" class="m-3 member-img-color" width="200" height="200" loading="lazy" />
           {{- end }}
           {{- with $pet.human }}<p><strong>{{ . }}</strong></p>{{- end }}
-          {{- with $pet.story }}<p class="text-start">{{ . }}</p>{{- end }}
+          {{- with $pet.story }}<div class="text-start">{{ . | markdownify }}</div>{{- end }}
         </div>
       </div>
     </div>
