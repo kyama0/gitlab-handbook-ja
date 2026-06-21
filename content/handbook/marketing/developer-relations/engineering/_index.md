@@ -69,7 +69,7 @@ FY26 では、引き続き以下の重要な取り組みに注力します。
 
 #### Co-Create
 
-GitLab の [Co-Create プログラム](https://about.gitlab.com/community/co-create/)は、Product や Engineer と連携して[デベロッパーリレーションズエンジニアリングチーム](/handbook/marketing/developer-relations/engineering/)が主導する、部門横断的な取り組みです。GitLab 固有のより詳しい手順は、私たちの [cocreate ハンドブックページ](/handbook/marketing/developer-relations/programs/cocreate/)に記載されています。
+GitLab の [Co-Create プログラム](https://about.gitlab.com/community/co-create/)は、Product と Engineering と連携して[デベロッパーリレーションズエンジニアリングチーム](/handbook/marketing/developer-relations/engineering/)が主導する、部門横断的な取り組みです。GitLab 固有のより詳しい手順は、私たちの [cocreate ハンドブックページ](/handbook/marketing/developer-relations/programs/cocreate/)に記載されています。
 
 ## チームの責務
 

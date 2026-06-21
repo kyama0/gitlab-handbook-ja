@@ -1,5 +1,6 @@
 {{- /* Grid of GitLab team pets from data/public/pets.yml (synced from www-gitlab-com).
-       Each card opens a Bootstrap modal with the full story; pattern mirrors
+       Each card opens a Bootstrap modal with the pet image; upstream English
+       story text is omitted until localized story data exists. Pattern mirrors
        layouts/_shortcodes/all-remote/stories.html. Images are not moved — they are
        served from about.gitlab.com as CI-generated square "<base>-crop.jpg" variants. */ -}}
 {{- with site.Data.public.pets }}
@@ -19,7 +20,7 @@
   <div class="col mb-4" id="{{ $anchor }}">
     <div class="lead--card h-100 text-center">
       {{- with $img }}
-      <a href="#{{ $anchor }}" data-bs-toggle="modal" data-bs-target="#{{ $anchor }}-modal" aria-label="{{ $pet.name }} について詳しく読む">
+      <a href="#{{ $anchor }}" data-bs-toggle="modal" data-bs-target="#{{ $anchor }}-modal" aria-label="{{ $pet.name }} の写真を開く">
         <img src="{{ . }}" alt="{{ $pet.name }}" loading="lazy" width="200" height="200" class="member-img" />
       </a>
       {{- end }}
@@ -38,7 +39,7 @@
           <img src="{{ . }}" alt="{{ $pet.name }}" class="m-3 member-img-color" width="200" height="200" loading="lazy" />
           {{- end }}
           {{- with $pet.human }}<p><strong>{{ . }}</strong></p>{{- end }}
-          {{- with $pet.story }}<div class="text-start">{{ . | markdownify }}</div>{{- end }}
+          {{- /* Omit upstream English pet stories until localized story data exists. */ -}}
         </div>
       </div>
     </div>
