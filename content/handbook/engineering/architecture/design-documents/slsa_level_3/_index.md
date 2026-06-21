@@ -10,11 +10,11 @@ participating-stages: ["~group::runner", "~devops::verify"]
 toc_hide: true
 no_list: true
 upstream_path: /handbook/engineering/architecture/design-documents/slsa_level_3/
-upstream_sha: 86cfa2bd7d73df5a673fe5ebd33b028d0f540434
-translated_at: "2026-04-27T08:00:00Z"
-translator: claude
+upstream_sha: 6421bb05e502917cfdfa263c81ae8fbbc41ed52b
+translated_at: "2026-06-22T07:04:45+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-10T07:02:10+13:00"
+lastmod: "2026-06-22T09:27:06+12:00"
 ---
 
 
@@ -77,7 +77,7 @@ lastmod: "2026-02-10T07:02:10+13:00"
 
 - `Build Environment` は GitLab Runner インフラであり、GitLab SaaS・Dedicated・セルフマネージドのいずれかです。
 - `Trusted Control Plane` は GitLab バックエンドで、Sidekiq・DB・オブジェクトストレージを含みます。
-- `Sigstore Infrastructure` は Fulcio や Rekor などの Sigstore サービスで、公共の良好なインスタンスまたはセルフホスト型です。
+- `Sigstore Infrastructure` は Fulcio や Rekor などの Sigstore サービスで、Public Good インスタンスまたはセルフホスト型です。
 - `Verification Environment` は検証を行う任意のシステムです。外部のビルドシステム・別の GitLab CI ジョブ・ユーザーの個人コンピューターのいずれかです。
 
 #### 全体アーキテクチャ
@@ -103,19 +103,19 @@ sequenceDiagram
     participant Rekor
   end
 
-  Runner ->> Rails Backend: ジョブペイロードをリクエスト
-  Rails Backend ->> Runner: ジョブペイロードを返す
-  Runner ->> Runner: CI ジョブを実行
-  Runner ->> Rails Backend: ジョブ成功を報告
-  Runner ->> Artifact Storage: ジョブアーティファクトをアップロード
-  Rails Backend ->> Sidekiq: Sidekiq ジョブをトリガー
-  Sidekiq ->> Sidekiq: 出所を生成
-  Sidekiq ->> Fulcio: 証明書をリクエスト
-  Fulcio ->> Sidekiq: 証明書を返す
-  Sidekiq ->> Sidekiq: 証明を生成 & 署名
-  Sidekiq ->> Rekor: 証明を公開
-  Sidekiq ->> Database: メタデータを永続化
-  Sidekiq ->> File Storage: 証明を永続化
+  Runner ->> Rails Backend: Request Job Payload
+  Rails Backend ->> Runner: Return Job Payload
+  Runner ->> Runner: Execute CI Job
+  Runner ->> Rails Backend: Report Job Success
+  Runner ->> Artifact Storage: Uploads Job Artifact
+  Rails Backend ->> Sidekiq: Trigger Sidekiq Job
+  Sidekiq ->> Sidekiq: Generate Provenance
+  Sidekiq ->> Fulcio: Request Certificate
+  Fulcio ->> Sidekiq: Return Certificate
+  Sidekiq ->> Sidekiq: Generate & Sign Attestation
+  Sidekiq ->> Rekor: Publish Attestation
+  Sidekiq ->> Database: Persist Metadata
+  Sidekiq ->> File Storage: Persist Attestation
 ```
 
 #### 検証ワークフロー
@@ -136,13 +136,13 @@ sequenceDiagram
     participant Rekor
   end
 
-  Verification System ->> Rails Backend: 証明をリクエスト
-  Rails Backend ->> Database : 証明をルックアップ
-  Rails Backend ->> File Storage: 証明を取得
-  Rails Backend ->> Verification System: 証明を返す
-  Verification System ->> Rekor: 署名エントリを検索
-  Rekor ->> Verification System: インクルージョンプルーフを返す
-  Verification System ->> Verification System: 証明を検証
+  Verification System ->> Rails Backend: Request Attesatation
+  Rails Backend ->> Database : Lookup Attestaion
+  Rails Backend ->> File Storage: Fetch Attestation
+  Rails Backend ->> Verification System: Return Attestation
+  Verification System ->> Rekor: Search for Signature Entry
+  Rekor ->> Verification System: Return Inclusion Proof
+  Verification System ->> Verification System: Verify Attestation
 ```
 
 #### フェーズ 1: Sigstore を使用したパイプライン内の出所生成と検証
@@ -179,6 +179,11 @@ sequenceDiagram
 - インテグレーターの使いやすさを確保するためのドキュメントを改善する。
 - 特にエラー報告とファイルサイズ制限に関して、前のフェーズからのバグとフィードバックに対処する。
 
+#### フェーズ 6: プライベートリポジトリ、GitLab self-managed、dedicated での証明を可能にする
+
+- PostgreSQL に保存された CA を通じて、プライベートリポジトリ、self-managed、dedicated とのインテグレーションを可能にする。
+- UX の改善を実装する。
+
 #### フォローアップ作業: 拡張データ収集
 
 - 詳細なビルドメタデータを収集するツールを統合する（Go の go mod graph、Java の Maven 依存関係ツリーなど）。
@@ -205,7 +210,9 @@ sequenceDiagram
 
 #### GitLab CI コンポーネント
 
-{{% details summary="出所署名コンポーネント" %}}
+<details>
+<summary>出所署名コンポーネント</summary>
+
 出所署名コンポーネントは、出所の生成と署名の複雑さを抽象化します。テンプレート YAML ファイルを使用した GitLab CI コンポーネントとして実装されます。
 
 **コンポーネントの概要**
@@ -224,9 +231,9 @@ sequenceDiagram
 component:
   inputs:
     variables:
-      TARGET_ARTIFACT: ""  # アーティファクトへのパス
-      BUNDLE_FILE: "provenance.json" # 出力バンドルファイル
-      RUNNER_METADATA_FILE: "artifacts-metadata.json" # アーティファクトに明示的に名前が付けられていない場合のデフォルトのファイル名
+      TARGET_ARTIFACT: ""  # Path to the artifact
+      BUNDLE_FILE: "provenance.json" # Output bundle file
+      RUNNER_METADATA_FILE: "artifacts-metadata.json" # This is the default filename when artifacts aren't explicitly named
 
   id_tokens:
     GITLAB_OIDC_TOKEN:
@@ -272,9 +279,11 @@ component:
       - ${BUNDLE_FILE}
     expire_in: 7d
 ```
-{{% /details %}}
+</details>
 
-{{% details summary="出所検証コンポーネント" %}}
+<details>
+<summary>出所検証コンポーネント</summary>
+
 出所検証コンポーネントは証明を検証し、VSA を生成します。テンプレート YAML ファイルを使用した GitLab CI コンポーネントとして実装されます。
 
 **コンポーネントの概要**
@@ -294,10 +303,10 @@ component:
 component:
   inputs:
     variables:
-      BUNDLE_FILE: "cosign-bundle.json" # バンドルファイルへのパス
-      VERIFICATION_SUMMARY_FILE: "verification_summary.json" # 出力検証サマリーファイル
-      RESOURCE_URL: "" # 公開されたアーティファクトへの完全な URL
-      POLICY_URL: "https://gitlab.com/slsa-vsa-policy/v1" # デフォルトポリシー URL
+      BUNDLE_FILE: "cosign-bundle.json" # Path to the bundle file
+      VERIFICATION_SUMMARY_FILE: "verification_summary.json" # Output verification summary file
+      RESOURCE_URL: "" # Full URL to the published artifact
+      POLICY_URL: "https://gitlab.com/slsa-vsa-policy/v1" # Default policy URL
 
   id_tokens:
     GITLAB_OIDC_TOKEN:
@@ -418,9 +427,11 @@ component:
 
   allow_failure: true
 ```
-{{% /details %}}
+</details>
 
-{{% details summary="例: パイプラインへのコンポーネントの追加" %}}
+<details>
+<summary>例: パイプラインへのコンポーネントの追加</summary>
+
 プロジェクトが再利用可能なコンポーネントを .gitlab-ci.yml パイプラインに統合する方法を示します。
 
 パイプライン YAML の例
@@ -434,7 +445,7 @@ stages:
 
 variables:
   RUNNER_GENERATE_ARTIFACTS_METADATA: "true"
-  RUNNER_METADATA_FILE: "artifacts-metadata.json" # アーティファクトに明示的に名前が付けられていない場合のデフォルトのファイル名
+  RUNNER_METADATA_FILE: "artifacts-metadata.json" # This is the default filename when artifacts aren't explicitly named
 
 build_artifact:
   stage: build
@@ -481,7 +492,7 @@ verify_provenance:
     RESOURCE_URL: "${ARTIFACT_URL}"
     POLICY_URL: "https://gitlab.com/my-policy"
 ```
-{{% /details %}}
+</details>
 
 #### パイプラインワークフローの説明
 
@@ -543,3 +554,4 @@ verify_provenance:
 - [004: 証明の生成場所を Sidekiq に変更](decisions/004_attestation_in_sidekiq.md) - cosign を GitLab Rails にバンドルし、GitLab Rails バックエンドで証明を実行する。
 - [005: PublishProvenanceService での SHA-256 計算の実行](decisions/005_perform_sha256_in_service.md) - PublishProvenanceService 内でアーティファクトの SHA-256 ハッシュ計算を実行する。
 - [006: OCI レジストリでの SBOM と出所を使った署名](decisions/006_signing_with_sbom_and_provenance_in_oci.md) - OCI イメージの出所証明と SBOM 署名。
+- [007: プライベートリポジトリ、dedicated、self-managed インスタンスの証明](decisions/007_attestations_private_dedicated_self_hosted.md) - パブリック Sigstore インフラストラクチャを使用できない状況でソフトウェア証明を実現できる仕組み。
