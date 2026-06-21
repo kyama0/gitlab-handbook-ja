@@ -33296,6 +33296,14 @@
       "input_hash": "d101a83682e8e5eeb2be5f9c4645032199f2f6567e8b72b5058c67daefa77161",
       "upstream_committed_at": "2026-06-17T22:18:42+12:00"
     },
+    "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:47:29Z",
+      "model": "codex",
+      "input_hash": "31aef36175046d599065267112dccbd70947188a148d51fcce2b4a6feec5e752",
+      "upstream_committed_at": "2026-06-15T15:39:51-04:00"
+    },
     "content/handbook/company/team-pets.md": {
       "path": "content/handbook/company/team-pets.md",
       "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
