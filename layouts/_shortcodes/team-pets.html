@@ -1,4 +1,5 @@
-{{- /* scripts/sync-data.sh が同期する data/public/pets.yml を描画する。 */ -}}
+{{- /* scripts/sync-data.sh が同期する data/public/pets.yml を描画する。
+       story はローカライズ済みデータが用意されるまで表示しない。 */ -}}
 {{- with site.Data.public.pets }}
 <style>
   /* Pet card photos are grayscale by default and fade to full color on hover. */
@@ -16,7 +17,7 @@
   <div class="col mb-4" id="{{ $anchor }}">
     <div class="lead--card h-100 text-center">
       {{- with $img }}
-      <a href="#{{ $anchor }}" data-bs-toggle="modal" data-bs-target="#{{ $anchor }}-modal" aria-label="{{ $pet.name }} について詳しく読む">
+      <a href="#{{ $anchor }}" data-bs-toggle="modal" data-bs-target="#{{ $anchor }}-modal" aria-label="{{ $pet.name }} の写真を開く">
         <img src="{{ . }}" alt="{{ $pet.name }}" loading="lazy" width="200" height="200" class="member-img" />
       </a>
       {{- end }}
@@ -35,7 +36,8 @@
           <img src="{{ . }}" alt="{{ $pet.name }}" class="m-3 member-img-color" width="200" height="200" loading="lazy" />
           {{- end }}
           {{- with $pet.human }}<p><strong>{{ . }}</strong></p>{{- end }}
-          {{- with $pet.story }}<div class="text-start">{{ . | markdownify }}</div>{{- end }}
+          {{- /* Omit upstream English pet stories until localized story data exists. */ -}}
+          {{- /* ローカライズ済み story が用意されるまで、upstream の英語 story は表示しない。 */ -}}
         </div>
       </div>
     </div>

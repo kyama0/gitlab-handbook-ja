@@ -5666,11 +5666,11 @@
     },
     "content/handbook/engineering/ai/custom-models/_index.md": {
       "path": "content/handbook/engineering/ai/custom-models/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
+      "upstream_sha": "9164688669f5bd36ff8345a38c17f82ffc321821",
+      "translated_at": "2026-06-20T21:10:03Z",
       "model": "claude-opus-4-7",
-      "input_hash": "7b889dce30d48ec52be86d8bd8defc9249ecb8eef5c9ef5e090a4a544aecad0e",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "input_hash": "d9b14638ddee29e40e1171dfd9eca659f7ea756c559f4c5d224dbca7fb3c4198",
+      "upstream_committed_at": "2026-06-16T17:58:42+02:00"
     },
     "content/handbook/engineering/ai/duo-chat/_index.md": {
       "path": "content/handbook/engineering/ai/duo-chat/_index.md",
@@ -18522,11 +18522,11 @@
     },
     "content/handbook/marketing/developer-relations/engineering/_index.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/_index.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-04-30T00:00:00Z",
+      "upstream_sha": "9164688669f5bd36ff8345a38c17f82ffc321821",
+      "translated_at": "2026-06-20T21:10:03Z",
       "model": "claude-opus-4-7",
-      "input_hash": "0567ca919eb9eda941aafa131529ac15be8d69e6d9f950f0207b377d557e5fa7",
-      "upstream_committed_at": "2026-03-19T19:48:12+00:00"
+      "input_hash": "b5c2f3e98d24f778e41e555ad46106538f094811cf67b94706ddc8c0154d3ce9",
+      "upstream_committed_at": "2026-06-20T18:16:40+01:00"
     },
     "content/handbook/marketing/developer-relations/engineering/community-contributors-workflows.md": {
       "path": "content/handbook/marketing/developer-relations/engineering/community-contributors-workflows.md",
@@ -33296,6 +33296,14 @@
       "input_hash": "d101a83682e8e5eeb2be5f9c4645032199f2f6567e8b72b5058c67daefa77161",
       "upstream_committed_at": "2026-06-17T22:18:42+12:00"
     },
+    "content/handbook/marketing/developer-relations/engineering/observability-alert-triage.md": {
+      "path": "content/handbook/marketing/developer-relations/engineering/observability-alert-triage.md",
+      "upstream_sha": "9164688669f5bd36ff8345a38c17f82ffc321821",
+      "translated_at": "2026-06-20T21:10:03Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "31c8f8c58328fb00e1b7248255608d1081a6d09b110bea78f4d97d4cd853cf10",
+      "upstream_committed_at": "2026-06-20T18:16:40+01:00"
+    },
     "content/handbook/engineering/architecture/design-documents/unified_rate_limiting/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/unified_rate_limiting/_index.md",
       "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
@@ -33303,14 +33311,6 @@
       "model": "codex",
       "input_hash": "ac30a7ae3561e9d43948cf2d1a66f59aac84d3f60c0a294e165428ca489af282",
       "upstream_committed_at": "2026-06-18T11:28:17+02:00"
-    },
-    "content/handbook/company/team-pets.md": {
-      "path": "content/handbook/company/team-pets.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T14:55:12Z",
-      "model": "codex",
-      "input_hash": "89858770a847c167895a53daadab493b7cd3e09a952300ba957ad2ec3f2e611b",
-      "upstream_committed_at": "2026-06-19T16:49:16-04:00"
     },
     "content/handbook/engineering/architecture/design-documents/organization-data-migration/decisions/003_org_mover_architecture.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/decisions/003_org_mover_architecture.md",
@@ -33322,11 +33322,19 @@
     },
     "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T14:47:29Z",
-      "model": "codex",
+      "upstream_sha": "9164688669f5bd36ff8345a38c17f82ffc321821",
+      "translated_at": "2026-06-20T21:10:03Z",
+      "model": "claude-opus-4-7",
       "input_hash": "31aef36175046d599065267112dccbd70947188a148d51fcce2b4a6feec5e752",
       "upstream_committed_at": "2026-06-15T15:39:51-04:00"
+    },
+    "content/handbook/company/team-pets.md": {
+      "path": "content/handbook/company/team-pets.md",
+      "upstream_sha": "9164688669f5bd36ff8345a38c17f82ffc321821",
+      "translated_at": "2026-06-20T21:10:03Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "89858770a847c167895a53daadab493b7cd3e09a952300ba957ad2ec3f2e611b",
+      "upstream_committed_at": "2026-06-19T16:49:16-04:00"
     }
   }
 }
