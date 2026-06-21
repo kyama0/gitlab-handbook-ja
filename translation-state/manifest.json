@@ -9306,11 +9306,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/slsa_level_3/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/slsa_level_3/_index.md",
-      "upstream_sha": "86cfa2bd7d73df5a673fe5ebd33b028d0f540434",
-      "translated_at": "2026-04-27T08:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "3c62576269aca945467390a20649cd4fcb8c66a24397d6eb4489c35ce7ab5d8f",
-      "upstream_committed_at": "2026-02-10T07:02:10+13:00"
+      "upstream_sha": "6421bb05e502917cfdfa263c81ae8fbbc41ed52b",
+      "translated_at": "2026-06-22T07:04:45+09:00",
+      "model": "codex",
+      "input_hash": "0f2ee09f4ffa0797f580defc13151971efd05ac5f38dcad1567404175e2115d3",
+      "upstream_committed_at": "2026-06-22T09:27:06+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/001_verification_component.md": {
       "path": "content/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/001_verification_component.md",
@@ -18450,11 +18450,11 @@
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/content.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/content.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T12:58:25Z",
+      "upstream_sha": "6421bb05e502917cfdfa263c81ae8fbbc41ed52b",
+      "translated_at": "2026-06-22T07:04:45+09:00",
       "model": "codex",
-      "input_hash": "2c7c78c2aaadca9dd5be5b704565357501627ad4ce3ad8e4a7552bc5a0513d4d",
-      "upstream_committed_at": "2026-06-16T12:33:40-04:00"
+      "input_hash": "21f3fe8fbbbaff3984d458206941ea8ed5ab34ee7cae8d5f5bf4edc47d9cb7c6",
+      "upstream_committed_at": "2026-06-21T11:54:38+00:00"
     },
     "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md": {
       "path": "content/handbook/marketing/developer-relations/developer-advocacy/dev-environments.md",
@@ -33335,6 +33335,14 @@
       "model": "claude-opus-4-7",
       "input_hash": "89858770a847c167895a53daadab493b7cd3e09a952300ba957ad2ec3f2e611b",
       "upstream_committed_at": "2026-06-19T16:49:16-04:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/007_attestations_private_dedicated_self_hosted.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/slsa_level_3/decisions/007_attestations_private_dedicated_self_hosted.md",
+      "upstream_sha": "6421bb05e502917cfdfa263c81ae8fbbc41ed52b",
+      "translated_at": "2026-06-22T07:04:45+09:00",
+      "model": "codex",
+      "input_hash": "349cba88573ecaa77fec04bc683cc1cddb6aa2ed87fea007c58522a230c377ae",
+      "upstream_committed_at": "2026-06-22T09:27:06+12:00"
     }
   }
 }
