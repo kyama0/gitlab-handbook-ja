@@ -17,11 +17,11 @@ Custom Models グループは、顧客固有のデータとユースケースを
 
 Custom Models は、GitLab の**顧客向けモデルインテリジェンスレイヤー**のエンドツーエンドのオーナーです。どのモデルが利用可能か、どのように選択されるか、顧客体験の健全性と接続性、そしてゲートウェイサービス面（プロンプト、内部イベント、AIGW billing）を所有します。Customer zero、SaaS、Self-Managed、Dedicated にまたがる 1 つのフルスタックチームです。
 
-私たちは、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [AI Powered stage](/handbook/product/categories/#ai-powered-stage) にある [Custom Models group](/handbook/product/categories/#custom-models-group) に属する product categories のすべての backend aspects に責任を持ちます。product direction は [Category Direction, Custom Models Management](https://about.gitlab.com/direction/ai-powered/custom_models/) ページにあり、私たちが扱う機能は [Features by Group page](/handbook/product/categories/features/#custom-models) に一覧化されています。
+私たちは、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [AI Powered stage](/handbook/product/categories/#ai-powered-stage) にある [Custom Models group](/handbook/product/categories/#custom-models-group) に属する製品カテゴリーのすべてのバックエンド面に責任を持ちます。製品の方向性は [Category Direction, Custom Models Management](https://about.gitlab.com/direction/ai-powered/custom_models/) ページにあり、私たちが扱う機能は [グループ別機能ページ](/handbook/product/categories/features/#custom-models) に一覧化されています。
 
 ## 組織
 
-このグループは 3 つの functional teams に編成されています。各 functional team は、自分の area にある Requests for Help (RFHs) と support escalations を含め、自分の scope を end-to-end で所有します（[Customer support](#customer-support--requests-for-help)を参照）。Staff Engineers は、必要に応じて複数の functional teams を support することが期待されます。
+このグループは 3 つの functional teams に編成されています。各 functional team は、自分の area にある Requests for Help (RFHs) と support escalations を含め、自分の scope を end-to-end で所有します（[顧客サポート](#customer-support--requests-for-help)を参照）。Staff Engineers は、必要に応じて複数の functional teams を support することが期待されます。
 
 ### Model Selection
 
@@ -106,7 +106,7 @@ org 内外の teams に対して boundaries を明確にするため、以下の
 
 ### 組織ラベル
 
-Custom Models group が所有する Issues には、必要に応じて以下の labels を付けるべきです:
+Custom Models group が所有する Issue には、必要に応じて以下の labels を付けるべきです:
 
 - `~"group::custom models"`
 - `~"devops::ai-powered"`
@@ -114,7 +114,7 @@ Custom Models group が所有する Issues には、必要に応じて以下の 
 - `~"Category:Model personalization"`
 - `~"Category:Self-Hosted models"`
 
-加えて、Issues には関連する `~type:` と subtype labels を含めるべきです。
+加えて、Issue には関連する `~type:` と subtype labels を含めるべきです。
 
 ## 働き方
 
@@ -208,9 +208,9 @@ team は、current priorities と align しない work や、quality を comprom
 
 ## エピックと Tech Leads を使った作業のスコープ設定
 
-エピックは、single Issue より大きい任意の work item、新機能、complex refactor、bug の primary definition of scope です。エピック内の Issues が work item の entire scope を構成し、それらがすべて closed になると work は complete になりエピックも closed になります。エピックは clear improvement を加えるイテレーションを enclose すべきですが、必ずしも機能全体を表すわけではありません。機能には複数のエピックが必要な場合があります。
+エピックは、single Issue より大きい任意の work item、新機能、complex refactor、bug の primary definition of scope です。エピック内の Issue が work item の entire scope を構成し、それらがすべて closed になると work は complete になりエピックも closed になります。エピックは clear improvement を加えるイテレーションを enclose すべきですが、必ずしも機能全体を表すわけではありません。機能には複数のエピックが必要な場合があります。
 
-エピックによって定義された work の technical ownership は **Tech Lead** に委譲されます。Tech Lead はエピックに assigned された engineer であり、scope が correct であることを保証します。Tech Lead は EM、PM、他の engineers と連携します。team の任意の engineer は、Tech Lead 自身を含め、Kanban process を使って self-assigned し、エピック内の Issues に取り組めます。
+エピックによって定義された work の technical ownership は **Tech Lead** に委譲されます。Tech Lead はエピックに assigned された engineer であり、scope が correct であることを保証します。Tech Lead は EM、PM、他の engineers と連携します。team の任意の engineer は、Tech Lead 自身を含め、Kanban process を使って self-assigned し、エピック内の Issue に取り組めます。
 
 ## チームのマイルストーン計画プロセス
 
@@ -248,14 +248,14 @@ EM は team capacity を計算し、priority に基づいて release へ work la
 
 ### Build Board
 
-EM は previous-milestone slippage、PM preference、weight、priority に基づき、[Planning Board](#planning-board) から issues を選びます。その後 EM は release 内の各 issue に `~Deliverable` label を apply し、engineer に assign します。Issues は release を通じて Build Board で tracking されます。
+EM は previous-milestone slippage、PM preference、weight、priority に基づき、[Planning Board](#planning-board) から issues を選びます。その後 EM は release 内の各 issue に `~Deliverable` label を apply し、engineer に assign します。Issue は release を通じて Build Board で tracking されます。
 
 ### Say / Do Ratio
 
-Say / Do ratio は `Completed Issues / Assigned Issues` を使って計算されます:
+Say / Do ratio は「完了した Issue / 割り当てられた Issue」を使って計算されます:
 
-- `~Deliverable` label とともに Build Board に追加された issues が Assigned Issues です。
-- milestone の終わりまでに closed された issues が Completed Issues です。
+- `~Deliverable` label とともに Build Board に追加された issues が割り当てられた Issue です。
+- milestone の終わりまでに closed された issues が完了した Issue です。
 
 ### Issue Weights
 
@@ -280,7 +280,7 @@ Say / Do ratio は `Completed Issues / Assigned Issues` を使って計算され
 
 [issue triage report](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/17099) は milestone assignment が必要な issues を highlight します。
 
-## Customer support & Requests for Help
+## 顧客サポートと Requests for Help {#customer-support--requests-for-help}
 
 customers（existing and prospective）との calls をよりよく support するため、Custom Models は customer support requests を prioritize する engineers を提供し、load and knowledge が team 全体で shared されるようにします。
 
@@ -336,6 +336,6 @@ last-minute で unplanned な PTO needs は常に起こりえます。必要な 
 
 Custom Models team members が書いた blog posts:
 
-- [Developing GitLab Duo: How we validate and test AI models at scale](https://about.gitlab.com/blog/2024/05/09/developing-gitlab-duo-how-we-validate-and-test-ai-models-at-scale/), [@susie.bee](https://gitlab.com/susie.bee)
-- [GitLab Duo Self-Hosted: Enterprise AI built for data privacy](https://about.gitlab.com/blog/2025/02/27/gitlab-duo-self-hosted-enterprise-ai-built-for-data-privacy/), [@susie.bee](https://gitlab.com/susie.bee)
-- [Speed meets governance: Model Selection comes to GitLab Duo](https://about.gitlab.com/blog/speed-meets-governance-model-selection-comes-to-gitlab-duo/), [@susie.bee](https://gitlab.com/susie.bee)
+- [Developing GitLab Duo: How we validate and test AI models at scale](https://about.gitlab.com/blog/2024/05/09/developing-gitlab-duo-how-we-validate-and-test-ai-models-at-scale/)、[@susie.bee](https://gitlab.com/susie.bee)
+- [GitLab Duo Self-Hosted: Enterprise AI built for data privacy](https://about.gitlab.com/blog/2025/02/27/gitlab-duo-self-hosted-enterprise-ai-built-for-data-privacy/)、[@susie.bee](https://gitlab.com/susie.bee)
+- [Speed meets governance: Model Selection comes to GitLab Duo](https://about.gitlab.com/blog/speed-meets-governance-model-selection-comes-to-gitlab-duo/)、[@susie.bee](https://gitlab.com/susie.bee)
