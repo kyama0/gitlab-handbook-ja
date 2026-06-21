@@ -1,0 +1,56 @@
+{{- /* scripts/sync-data.sh が同期する data/public/pets.yml を描画する。 */ -}}
+{{- with site.Data.public.pets }}
+<style>
+  /* Pet card photos are grayscale by default and fade to full color on hover. */
+  .team-pets-grid .member-img { transition: filter 0.2s ease-in-out; }
+  .team-pets-grid a:hover .member-img,
+  .team-pets-grid .member-img:hover { filter: none; }
+  /* Keep the pet modal compact, matching the previous design. */
+  .team-pet-modal .modal-dialog { max-width: 410px; }
+</style>
+<div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 row-card team-pets-grid">
+  {{- range $i, $pet := . }}
+  {{- $anchor := printf "pet-%d-%s" $i (anchorize $pet.name) }}
+  {{- $img := "" }}
+  {{- with $pet.picture }}{{ $img = printf "https://about.gitlab.com/images/team/pets/%s-crop.jpg" (strings.TrimSuffix (path.Ext .) .) }}{{ end }}
+  <div class="col mb-4" id="{{ $anchor }}">
+    <div class="lead--card h-100 text-center">
+      {{- with $img }}
+      <a href="#{{ $anchor }}" data-bs-toggle="modal" data-bs-target="#{{ $anchor }}-modal" aria-label="{{ $pet.name }} について詳しく読む">
+        <img src="{{ . }}" alt="{{ $pet.name }}" loading="lazy" width="200" height="200" class="member-img" />
+      </a>
+      {{- end }}
+      <h2 class="h4 mt-3">{{ $pet.name }}</h2>
+    </div>
+  </div>
+  <div class="modal team-pet-modal" id="{{ $anchor }}-modal" tabindex="-1" aria-labelledby="{{ $anchor }}-modal-title" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h3 class="modal-title h5" id="{{ $anchor }}-modal-title">{{ $pet.name }}</h3>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="閉じる"></button>
+        </div>
+        <div class="modal-body text-center">
+          {{- with $img }}
+          <img src="{{ . }}" alt="{{ $pet.name }}" class="m-3 member-img-color" width="200" height="200" loading="lazy" />
+          {{- end }}
+          {{- with $pet.human }}<p><strong>{{ . }}</strong></p>{{- end }}
+          {{- with $pet.story }}<div class="text-start">{{ . | markdownify }}</div>{{- end }}
+        </div>
+      </div>
+    </div>
+  </div>
+  {{- end }}
+</div>
+<script>
+  // URL に anchor がある状態で page が load されたとき、その pet の modal を直接開く。
+  $(document).ready(function () {
+    if (location.hash) {
+      var modalEl = document.getElementById(location.hash.substring(1) + "-modal");
+      if (modalEl) {
+        new bootstrap.Modal(modalEl).show();
+      }
+    }
+  });
+</script>
+{{- end }}

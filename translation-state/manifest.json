@@ -33296,6 +33296,14 @@
       "input_hash": "d101a83682e8e5eeb2be5f9c4645032199f2f6567e8b72b5058c67daefa77161",
       "upstream_committed_at": "2026-06-17T22:18:42+12:00"
     },
+    "content/handbook/company/team-pets.md": {
+      "path": "content/handbook/company/team-pets.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:55:12Z",
+      "model": "codex",
+      "input_hash": "89858770a847c167895a53daadab493b7cd3e09a952300ba957ad2ec3f2e611b",
+      "upstream_committed_at": "2026-06-19T16:49:16-04:00"
+    },
     "content/handbook/engineering/architecture/design-documents/organization-data-migration/decisions/003_org_mover_architecture.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/decisions/003_org_mover_architecture.md",
       "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
