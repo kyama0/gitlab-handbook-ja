@@ -1,6 +1,6 @@
 ---
-title: "統合レート制限アーキテクチャ"
-description: "labkit を通じてアプリケーションレベルのレート制限を 3 つのフェーズ（アプリケーションの統合、設定の外部化、動的な外部サービス）で統合するための技術設計。"
+title: "統一レート制限アーキテクチャ"
+description: "アプリケーションレベルのレート制限を labkit 経由で統一するための技術設計。アプリケーション統一、外部化された設定、動的な外部サービスの 3 フェーズで進めます。"
 status: ongoing
 creation-date: "2026-04-30"
 authors: [ "@reprazent" ]
@@ -10,43 +10,42 @@ owning-stage: "~devops::platforms"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/unified_rate_limiting/
-upstream_sha: 9164688669f5bd36ff8345a38c17f82ffc321821
-lastmod: 2026-06-18T11:28:17+02:00
-translated_at: "2026-06-20T21:10:03Z"
-translator: claude
+upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
+translated_at: "2026-06-20T15:28:19Z"
+translator: codex
 stale: false
-model: claude-opus-4-7
+lastmod: "2026-06-18T11:28:17+02:00"
 ---
 
 <!-- vale gitlab.FutureTense = NO -->
 
 {{< engineering/design-document-header >}}
 
-## 要約 {#summary}
+## 概要
 
-GitLab のアプリケーションレベルのレート制限には、すべての実装（RackAttack、ApplicationRateLimiter、および将来のサービス）にわたって機能する単一の設定モデルが必要です。このドキュメントでは、共有 SDK として [labkit](https://gitlab.com/gitlab-org/labkit) を使い、3 つのフェーズでそこに到達する方法を説明します。
+GitLab のアプリケーションレベルのレート制限には、すべての実装（RackAttack、ApplicationRateLimiter、将来のサービス）で機能する単一の設定モデルが必要です。このドキュメントでは、共有 SDK として [labkit](https://gitlab.com/gitlab-org/labkit) を使用し、3 つのフェーズでそこに到達する方法を説明します。
 
-1. 既存のレート制限（RackAttack、ApplicationRateLimiter）を破壊的変更なしに labkit 経由でルーティングします。設定は引き続きデータベースから取得するか、アプリケーションから渡します。
-2. labkit が読み込む設定ファイルを追加します。ファイル内のルールはアプリケーションのデフォルトを上書きします。フォーマットは [LabKit Configuration Management](../labkit_configuration/) の protobuf スキーマに従います。
-3. 識別子に基づき、リクエストごとにルールを返す外部サービスを追加します。これによって顧客ごと・ティアごとのカスタマイズが可能になります。
+1. 既存のレート制限（RackAttack、ApplicationRateLimiter）を、破壊的変更なしに labkit 経由にします。設定は引き続きデータベースから取得するか、アプリケーションから渡されます。
+2. labkit が読み込む設定ファイルを追加します。ファイル内のルールはアプリケーションのデフォルトを上書きします。フォーマットは [LabKit 設定管理](../labkit_configuration/) の protobuf スキーマに従います。
+3. identifier に基づいて、リクエストごとにルールを返す外部サービスを追加します。これにより、顧客ごと、Tier ごとのカスタマイズが可能になります。
 
-これは [Next Rate Limiting Architecture](../rate_limiting/) ブループリントと [Simplifying Rate Limiting Configuration](../rate_limiting_simplification/) 設計ドキュメントの上に構築されています。実装は [the Phase 2 epic](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/2021) で追跡されています。
+これは [次世代レート制限アーキテクチャ](../rate_limiting/)のブループリントと、[レート制限設定の簡素化](../rate_limiting_simplification/)デザインドキュメントを土台にしています。実装は [Phase 2 エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/2021) で追跡されています。
 
-## 動機 {#motivation}
+## モチベーション
 
-GitLab アプリケーションのレート制限は、RackAttack、ApplicationRateLimiter、およびいくつかの小さな実装に分散しています。それぞれが独自の設定メカニズム、独自のカウント方式、独自の可観測性のあり方を持っています。これは実際には、すべてのレート制限を同じ方法で設定できず、ドライランやバイパスの挙動がまちまちで、新しいエンドポイントが制限なしに出荷され、インシデント時に何が、なぜスロットリングされているのかを誰もすぐに把握できないことを意味します。
+GitLab アプリケーションのレート制限は、RackAttack、ApplicationRateLimiter、いくつかの小さな実装に分散しています。それぞれが独自の設定メカニズム、独自のカウント、独自の可観測性を持っています。実際には、すべてのレート制限を同じ方法で設定できないこと、ドライランやバイパスの挙動がばらつくこと、新しいエンドポイントが制限なしでリリースされること、インシデント時に何がなぜ制限されているのかを誰もすばやく判断できないことを意味します。
 
-[Simplifying Rate Limiting Configuration](../rate_limiting_simplification/) ドキュメントは、段階的なアプローチを説明しています。フェーズ 1（エッジネットワーク）は完了しています。このドキュメントは、フェーズ 2（アプリケーションレベルの統合）の技術設計を扱い、フェーズ 3（設定の外部化と動的サービス）の概要を示します。
+[レート制限設定の簡素化](../rate_limiting_simplification/)ドキュメントでは、フェーズ化されたアプローチを説明しています。Phase 1（エッジネットワーク）は完了しています。このドキュメントでは、Phase 2（アプリケーションレベルの統一）の技術設計を扱い、Phase 3（外部化された設定と動的サービス）の概要を示します。
 
-## フェーズ 1: アプリケーションレベルの統合 {#phase-1-application-level-unification}
+## Phase 1: アプリケーションレベルの統一
 
-すべてのアプリケーションレート制限は `labkit-ruby` の単一の API を経由します。呼び出し元（rack ミドルウェアまたはアプリケーションコード）は識別子を構築し、それをルールのセットとともに labkit に渡し、結果を受け取ります。既存の設定（ApplicationSettings、環境変数、ハードコードされたデフォルト）は引き続き機能します。呼び出し元は自身の設定を解決し、それを渡します。
+すべてのアプリケーションレート制限は、`labkit-ruby` の単一 API を通ります。呼び出し元（rack middleware またはアプリケーションコード）は identifier を構築し、一連のルールとともに labkit に渡し、結果を受け取ります。既存の設定（ApplicationSettings、環境変数、ハードコードされたデフォルト）はそのまま機能します。呼び出し元は自身の設定を解決し、それを渡します。
 
-*アンロックされること:* アプリケーション全体で制限を定義し観測する、一貫した単一の方法。ルールの追加や変更には依然としてコード変更とデプロイが必要ですが、すべての制限が同じように振る舞い、同じように計装されるようになります。古い制限は移行され、新しい制限は自動的に同じ恩恵を受けます。
+*可能になること:* アプリケーション全体で制限を定義し、観測する一貫した方法。ルールの追加や変更には引き続きコード変更とデプロイが必要ですが、すべての制限が同じ方法で動作し、同じ方法で計装されるようになります。古い制限は移行され、新しい制限は自動的に同じ利点を得ます。
 
-### 1.1 labkit レート制限 API {#11-the-labkit-rate-limiting-api}
+### 1.1 labkit レート制限 API
 
-`Labkit::RateLimit::Limiter` がメインのエントリポイントです。レート制限のチェックポイントごとに 1 つ構築し（リクエストごとではなく起動時に）、再利用します。内部の `Evaluator` はキャッシュされます。
+`Labkit::RateLimit::Limiter` がメインのエントリーポイントです。レート制限 checkpoint ごとに 1 つ（リクエストごとではなく起動時に）構築し、再利用します。内部の `Evaluator` はキャッシュされます。
 
 ```ruby
 limiter = Labkit::RateLimit::Limiter.new(
@@ -57,13 +56,13 @@ limiter = Labkit::RateLimit::Limiter.new(
 result = limiter.check(identifier)
 ```
 
-`name` はすべての Redis カウンターキーの先頭に付加されるため、サービス内の異なる limiter がカウンターを共有することは決してありません。limiter 名はアプリケーションごとの静的な設定であり、そのサービスの `available_limiters`（フェーズ 2）で宣言されるため、同じサービス内の 2 つの limiter が誤って衝突することはありません。
+`name` はすべての Redis counter key の先頭に付与されるため、1 つのサービス内の異なる limiter が counter を共有することはありません。Limiter 名はアプリケーションごとの静的設定で、そのサービスの `available_limiters`（Phase 2）で宣言されるため、同じサービス内の 2 つの limiter が誤って衝突することはありません。
 
-名前はサービスをまたいで重複してもかまいません。`rack_request` は複数のサービスに存在しうるものであり、それは無害です。各サービスは自身の Redis ストレージ（GitLab Rails の場合は専用のレート制限用 Redis）でカウントするため、名前の共有がカウンターの共有を意味することは決してありません。
+名前はサービスをまたいで繰り返せます。`rack_request` が複数のサービスに存在しても問題ありません。各サービスは自身の Redis storage（GitLab Rails の場合は専用のレート制限 Redis）でカウントするため、共有された名前が共有 counter を意味することはありません。
 
-### 1.2 言語 SDK {#12-language-sdks}
+### 1.2 言語 SDK
 
-SDK は Ruby 固有のものではありません。サポートされる各言語は、同じモデルを持つネイティブの SDK を備えます。limiter を一度構築し、リクエストごとに識別子を構築し、`check` を呼び出して、その結果に応じて動作します。このドキュメントの例は簡潔さのために Ruby を使っていますが、Go の API もそれを反映するべきです。どちらの SDK も同じ設定ファイル（フェーズ 2）を読み込み、同じ外部サービス（フェーズ 3）と通信するため、一度定義したルールは、どの言語が呼び出しても同じことを行います。
+SDK は Ruby 固有ではありません。サポート対象の各言語は、同じモデルのネイティブ SDK を持ちます。limiter を一度構築し、リクエストごとに identifier を構築し、`check` を呼び出し、結果に基づいて動作します。このドキュメントの例では簡潔さのために Ruby を使用しますが、Go API もそれに対応する必要があります。両方の SDK は同じ設定ファイル（Phase 2）を読み込み、同じ外部サービス（Phase 3）と通信するため、一度定義されたルールは、どの言語から呼び出されても同じことを行います。
 
 <table>
 <thead>
@@ -98,7 +97,7 @@ when :allow then # proceed
 end
 ```
 
-Ruby SDK は、アプリケーションのエッジにあるミドルウェアに `429` をレンダリングさせることを好む呼び出し箇所のために、例外を発生させる `check!` という便利メソッドも提供します。Rails の最初のイテレーションでは、呼び出し箇所で結果とレスポンスコードを自分たちで処理し（[1.6](#16-result-object) を参照）、呼び出し箇所が許す場合に `check!` を採用します。
+Ruby SDK には、アプリケーションの境界にある middleware に `429` のレンダリングを任せたい call site のために、例外を発生させる `check!` という便利メソッドもあります。最初の Rails イテレーションでは、call site 側で結果とレスポンスコードを処理し（[1.6](#16-result-object) を参照）、call site が許すところで `check!` を採用します。
 
 </td>
 <td>
@@ -135,13 +134,13 @@ case ratelimit.ActionAllow:
 </tbody>
 </table>
 
-設定を通じてではなくプログラム的にルールを定義することは、ルールではなく例外であるべきです。しかし、これに関する設定をデータベースに持っているかもしれないセルフマネージドの構成を壊さないために、これをサポートする必要があります。
+設定ではなくプログラムでルールを定義することは、原則ではなく例外であるべきです。ただし、このサポートは必要です。これがないと、この用途のためにデータベースに設定を持っている可能性がある self-managed 設定を壊してしまうためです。
 
-### 1.3 識別子 {#13-identifier}
+### 1.3 Identifier
 
-識別子は、呼び出し元がリクエストについて知っている情報を使って構築するキーと値のハッシュです。limiter が異なれば、その形も異なります。
+identifier は、呼び出し元がリクエストについて知っている情報で構築する key-value hash です。limiter ごとに異なる形を持ちます。
 
-**Rack ミドルウェア:**
+**Rack middleware:**
 
 ```ruby
 {
@@ -164,42 +163,42 @@ case ratelimit.ActionAllow:
 }
 ```
 
-`<anonymous>` は山括弧を使っているため、実在のユーザー名と衝突することはありません。未認証のルールは `user: "<anonymous>"` でマッチし、`[:ip]` でカウントします。認証済みのルールはその値にはマッチしないため、フォールバックとして機能し、`[:user]` でカウントします。
+`<anonymous>` は山括弧を使用するため、実際のユーザー名と衝突できません。未認証ルールは `user: "<anonymous>"` にマッチし、`[:ip]` でカウントします。認証済みルールはこの値にマッチしないため、fallback として動作し、`[:user]` でカウントします。
 
-### 1.4 ルールとマッチング {#14-rules-and-matching}
+### 1.4 ルールとマッチング
 
 各ルールは以下を持ちます。
 
-- **`name`** — Redis キー、ログ、メトリクスで使われる安定した識別子
-- **`match`** — ルールが適用されるために、識別子にすべて存在していなければならないキーと値のペア。`Matcher` オブジェクトを介して等価マッチングと正規表現マッチングをサポートします（[#28855](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28855)）。Matcher の設計は、言語をまたいだ YAML のラウンドトリップ可能性を保証するために、明示的な型マーカー（`{ regex: "..." }`）を使います。
-- **`characteristics`** — Redis カウンターキーを導出するために使われる識別子のキー。limiter 名は常に先頭に付加されます。
-- **`limit`** — しきい値。静的な整数にも、データベース由来の値のための callable（チェック時に解決される）にもできます。
-- **`period_s`** — 時間ウィンドウ（秒）。これも callable にできます。
-- **`action`** — ルールが行うこと。`limit`、`log`、または `skip`（1.4 を参照）。
+- **`name`** — Redis key、ログ、メトリクスで使用される安定した識別子
+- **`match`** — ルールを適用するために identifier にすべて存在している必要がある key-value pair。等価マッチングと、`Matcher` object を介した regex マッチングをサポートします（[#28855](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28855)）。Matcher 設計では、言語をまたいで YAML round-trip 可能であることを保証するために、明示的な type marker（`{ regex: "..." }`）を使用します。
+- **`characteristics`** — Redis counter key の導出に使用される identifier key。limiter 名は常に先頭に付与されます。
+- **`limit`** — 閾値。静的な整数、またはデータベース由来の値のための callable（check 時に解決）にできます。
+- **`period_s`** — 秒単位の時間 window。これも callable にできます。
+- **`action`** — ルールが何をするか。`limit`、`log`、`skip` のいずれかです（1.4 を参照）。
 
-### 1.5 アクションのセマンティクス {#15-action-semantics}
+### 1.5 action のセマンティクス
 
-各ルールには、それが何を行うかを表す `action` があります。呼び出し元に返される結果は、その結果（呼び出し元が何をすべきか）を表します。
+各ルールは、それが何をするかを説明する `action` を持ちます。呼び出し元に返される結果は、その outcome、つまり呼び出し元が何をすべきかを説明します。
 
-| ルールのアクション | 何をするか | 超過? | 結果アクション | 終端? |
+| ルール action | 何をするか | 超過? | 結果 action | 終端? |
 |---|---|---|---|---|
-| `limit` | 制限に対してカウントする | いいえ | `allow` | いいえ — 次のルールへ続行 |
+| `limit` | 制限に対してカウントする | いいえ | `allow` | いいえ — 次のルールへ継続 |
 | `limit` | 制限に対してカウントする | はい | `block` | はい — 評価を停止 |
-| `log` | 制限に対してカウントする（可観測性のみ） | いいえ | `allow` | いいえ — 続行 |
-| `log` | 制限に対してカウントする（可観測性のみ） | はい | `allow` | いいえ — 続行 |
-| `skip` | カウントしない（バイパス） | 該当なし | `allow` | はい — 評価を停止 |
+| `log` | 制限に対してカウントする（可観測性のみ） | いいえ | `allow` | いいえ — 継続 |
+| `log` | 制限に対してカウントする（可観測性のみ） | はい | `allow` | いいえ — 継続 |
+| `skip` | カウントしない（bypass） | N/A | `allow` | はい — 評価を停止 |
 
-終端アクションはルールの評価を停止します。非終端アクションは次にマッチするルールへ続行します。
+終端 action はルール評価を停止します。非終端 action は次にマッチするルールへ継続します。
 
-単一の limiter に複数の `:limit` ルールがある場合、リクエストが通過するにはそれらすべてが合格しなければなりません（例えば、組織ごとの制限とユーザーごとの制限）。`:log` ルールは、その後に続く `:limit` ルールに影響を与えることなく、より低いしきい値をシャドウテストできます。リストの先頭にある `:skip` ルールはバイパスを処理します。
+単一 limiter 内に複数の `:limit` ルールがある場合、リクエストを通すにはそれらすべてが成功する必要があります（例: org ごとの制限と user ごとの制限）。`:log` ルールは、その後の `:limit` ルールに影響を与えずに、低い閾値を shadow-test できます。リストの先頭にある `:skip` ルールは bypass を処理します。
 
-ルールは順番に評価されます。より具体的なルールを、より具体的でないルールの前に置きます。
+ルールは順序どおりに評価されます。より具体的なルールを、より一般的なルールより前に置いてください。
 
-> **実装上の注記:** 現在の labkit 実装は、より古い命名（`:block`、`:log`、`:allow`）を使っていますが、この設計モデルに合わせて改名される予定です。挙動上のセマンティクス（[#28890](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28890) による非終端の `:log`）はすでに実装されています。アクションモデル全体の洗練は [#29052](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29052) で追跡されています。
+> **実装メモ:** 現在の labkit 実装では以前の命名（`:block`、`:log`、`:allow`）を使用していますが、この設計モデルに合わせて名前変更されます。振る舞いのセマンティクス（[#28890](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28890) による非終端 `:log`）はすでに実装済みです。完全な action model の refinement は [#29052](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29052) で追跡されています。
 
 ### 1.6 結果オブジェクト {#16-result-object}
 
-結果は、結果（outcome）と解決された値を持ちます。
+結果には outcome と解決済みの値が含まれます。
 
 ```ruby
 result = limiter.check(identifier)
@@ -212,7 +211,7 @@ result.resolved_limit   # the resolved limit as Integer
 result.resolved_period_s  # the resolved period in seconds as Integer
 ```
 
-結果の処理は呼び出し元の責任です。例えば以下のようにします。
+呼び出し元は結果を処理する責任があります。例を示します。
 
 ```ruby
 result = limiter.check(identifier)
@@ -222,13 +221,13 @@ when :allow then # proceed
 end
 ```
 
-最終的には、labkit は一般的なケース向けのデフォルトハンドラーを出荷するべきです。`RateLimit-*` ヘッダー付きで 429 を返す rack ミドルウェア、gRPC インターセプター、Sidekiq ミドルウェアです。これらは、エンドポイントごとのチューニングなしに暴走する消費を防ぐ、汎用的なリソーススコープの制限（例えば、ユーザーごとの db_duration_s、ユーザーごとの gitaly スコア）にとっても自然な置き場所です。それまでは、呼び出し元が自分たちで結果を処理します。
+最終的には、labkit が一般的なケース向けのデフォルト handler を提供するべきです。`RateLimit-*` header を付けて 429 を返す rack middleware、gRPC interceptor、Sidekiq middleware などです。これらは、endpoint ごとの tuning なしに暴走する消費を防ぐ、汎用的な resource scoped limit（例: user ごとの db_duration_s、user ごとの gitaly score）を置く自然な場所でもあります。それまでは、呼び出し元が結果を自分で処理します。
 
 ### 1.7 設定のパススルー {#17-configuration-passthrough}
 
-私たちはセルフマネージドのインストールを壊すわけにはいきません。そのため、設定は呼び出し箇所で渡されます。呼び出し元は既存のソース（ApplicationSettings、環境変数、ハードコードされたデフォルト）から制限を解決し、それらをルールとして labkit に渡します。
+self-managed installation を壊すことはできません。そのため、設定は call site で渡されます。呼び出し元は既存の source（ApplicationSettings、環境変数、ハードコードされたデフォルト）から制限を解決し、ルールとして labkit に渡します。
 
-ルール上の `limit` と `period_s` は callable にできます。これにより、ルールオブジェクトを再構築することなく、データベース由来の設定をチェック時に解決できます。
+ルール上の `limit` と `period_s` は callable にできます。これにより、データベース由来の設定を、rule object を再構築せずに check 時に解決できます。
 
 ```ruby
 Rule.new(
@@ -240,79 +239,81 @@ Rule.new(
 )
 ```
 
-セルフマネージドと GitLab.com は引き続き機能します。callable は、これまでと同じ設定から読み取ります。誰かが明示的に再設定しない限り、どの制限も変わりません。
+self-managed と GitLab.com は引き続き機能します。callable はこれまでと同じ設定を読み取ります。誰かが明示的に再設定しない限り、制限は変わりません。
 
-計画では、`ApplicationRateLimiter` の現在の `rate_limits` ハッシュを、唯一の信頼できる情報源として静的な labkit の `Limiter` オブジェクトに置き換えます（[#29054](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29054)）。
+計画では、`ApplicationRateLimiter` の現在の `rate_limits` hash を、single source of truth としての静的な labkit `Limiter` object に置き換えます（[#29054](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29054)）。
 
-最終的な状態では、データベースをレート制限のホットパスから取り除きますが、管理者向け Web UI を取り除くわけではありません。クリックオペレーションを好む管理者はそれを維持できます。変わるのは UI の書き込み先です。limiter がリクエストごとに読み取る `ApplicationSettings` の行ではなく、UI は Redis にルールオブジェクトを書き込み、labkit がそれをルールソースとして読み取ります（[2.4](#24-redis-backed-rules-web-ui-configuration) を参照）。GitLab.com は設定ファイルと外部サービスに依存し、セルフマネージドは UI-over-Redis のパスを得ます。既存のデータベース値を Redis ストアに移行するマイグレーションも伴います。
+最終状態では、データベースはレート制限の hot path から外れますが、admin web-UI は取り上げません。click-ops を好む管理者はそれを維持できます。変わるのは UI の書き込み先です。limiter がすべてのリクエストで読む `ApplicationSettings` row ではなく、UI は Redis に rule object を書き込み、labkit はそれを rule source として読みます（[2.4](#24-redis-backed-rules-web-ui-configuration) を参照）。GitLab.com は設定ファイルと外部サービスに依存します。self-managed には Redis 経由 UI の path を提供し、既存のデータベース値を Redis store に移す migration を用意します。
 
-より広範な設定の進化は [#28853](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28853) で追跡されています。
+より広い設定の進化は [#28853](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28853) で追跡されています。
 
-### 1.8 移行: ApplicationRateLimiter（Stage 2a） {#18-migration-applicationratelimiter-stage-2a}
+### 1.8 移行: ApplicationRateLimiter（Stage 2a）
 
-フィーチャーフラグの背後で、`ApplicationRateLimiter.throttled?` は内部のカウント戦略の代わりに labkit の `Limiter` に委譲します。公開 API は変わりません。コントローラーとサービスは、これまでどおり `.throttled?` を呼び出し続けます。
+フィーチャーフラグの背後で、`ApplicationRateLimiter.throttled?` は内部のカウント戦略ではなく labkit `Limiter` に委譲します。public API は変わりません。Controller と service はこれまでどおり `.throttled?` を呼び出し続けます。
 
-私たちは 5 〜 10 個のレート制限キーのコホート単位で移行します。各キーは 2 つのフィーチャーフラグを得ます。`_use_labkit_<key>`（シャドウモード）と `_<key>_enforce`（実施）です。シャドウ検証では、実施に切り替える前に、24 時間で 0.5% 未満の判定の乖離が必要です。
+5 〜 10 個のレート制限 key の cohort ごとに移行します。各 key には 2 つのフィーチャーフラグを用意します。`_use_labkit_<key>`（shadow mode）と `_<key>_enforce`（enforcement）です。enforcement に切り替える前に、shadow validation は 24 時間で 0.5% 未満の decision divergence を満たす必要があります。
 
-- [#28808](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28808) — 反復可能なプロセスを伴う、移行全体を取りまとめる Issue
-- [#28803](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28803) — コホート 1（5 キー: `pipelines_create`、`notes_create`、`search_rate_limit`、`users_get_by_id`、`user_sign_in`）
-- [#28809](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28809) — コホート 2（残りの IncrementPerAction キー）
-- [#28810](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28810) — コホート 3（`.peek` の呼び出し元、labkit の `Limiter#peek` でブロックされている）
-- [#28811](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28811) — コホート 4（IncrementPerActionedResource、Set 戦略でブロックされている）
-- [#28812](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28812) — コホート 5（IncrementResourceUsagePerAction、float コスト戦略でブロックされている）
-- [#28876](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28876) — ロールアウト後のフィーチャーフラグのクリーンアップ
-- [#29054](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29054) — `rate_limits` ハッシュを静的な labkit Limiter オブジェクトに置き換える
+- [#28808](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28808) — 反復可能なプロセスを含む全体の migration Issue
+- [#28803](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28803) — Cohort 1（5 keys: `pipelines_create`、`notes_create`、`search_rate_limit`、`users_get_by_id`、`user_sign_in`）
+- [#28809](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28809) — Cohort 2（残りの IncrementPerAction key）
+- [#28810](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28810) — Cohort 3（`.peek` caller、labkit の `Limiter#peek` 待ち）
+- [#28811](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28811) — Cohort 4（IncrementPerActionedResource、Set strategy 待ち）
+- [#28812](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28812) — Cohort 5（IncrementResourceUsagePerAction、float-cost strategy 待ち）
+- [#28876](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28876) — ロールアウト後のフィーチャーフラグ cleanup
+- [#29054](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29054) — `rate_limits` hash を静的な labkit Limiter object に置き換える
 
-### 1.9 移行: RackAttack（Stage 2b） {#19-migration-rackattack-stage-2b}
+### 1.9 移行: RackAttack（Stage 2b）
 
-新しいミドルウェアが既存の RackAttack ミドルウェアと並んで動作します。RackAttack は引き続き実施を担います。新しいミドルウェアは、ログモードで開始して並行して動作します。
+新しい middleware は既存の RackAttack middleware と並行して実行されます。RackAttack は enforcement を継続します。新しい middleware は log mode から始めて、並行して実行されます。
 
-2 つの limiter があります。
+limiter は次の 2 つです。
 
-1. **`rack_request`** — 一般的なすべてのスロットル（API、web、git、packages）。認証済みと未認証は、`<anonymous>` センチネルと異なる characteristics（`[:ip]` と `[:user]`）を介して、ルール内で処理されます。
-2. **`rack_request_protected_paths`** — 保護されたパスのスロットルのみ。これらは一般的なスロットルと重複する（保護された API パスへの POST は両方を発火させる）ため、別の limiter を介して独立したカウンターが必要です。
+1. **`rack_request`** — すべての一般的なレート制限（API、web、git、packages）。認証済みと未認証の区別は、`<anonymous>` sentinel と異なる characteristics（`[:ip]` と `[:user]`）を使い、ルール内で処理されます。
+2. **`rack_request_protected_paths`** — protected-path レート制限のみ。
 
-4 つではなく 2 つの limiter にする理由:
+これらは一般的なレート制限と重なります（protected API path への POST は両方を発火します）ので、別の limiter による独立した counter が必要です。
 
-- 認証/未認証の区別は characteristic（何でカウントするか）であって、limiter の境界ではない
-- Git のスロットルは API/web のスロットルと相互排他的である
-- フィーチャーフラグが少ない（8 個ではなく 4 個）
-- 豊富な識別子を持つ汎用 limiter は、後で外部設定を注入しやすくする（[#28853](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28853)）
+4 つではなく 2 つの limiter にする理由は次のとおりです。
+
+- auth/unauth の区別は characteristic（何でカウントするか）であり、limiter boundary ではありません
+- Git レート制限は API/web レート制限と相互排他的です
+- フィーチャーフラグが少なくなります（8 ではなく 4）
+- 豊かな identifier を持つ汎用 limiter により、後で外部設定を注入しやすくなります（[#28853](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28853)）
 
 [#28852](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28852) で追跡されています。
 
-### 1.10 可観測性 {#110-observability}
+### 1.10 可観測性
 
-**Prometheus メトリクス** — カウンターメトリクスは、非終端のルールチェーンをカバーするために 2 つの粒度に分割されます。
+**Prometheus metrics** — counter metrics は、非終端ルールチェーンをカバーするために 2 つの粒度に分割されます。
 
-| メトリクス | 種類 | ラベル | 目的 |
+| メトリクス | 型 | ラベル | 目的 |
 |---|---|---|---|
-| `gitlab_labkit_rate_limiter_calls_total` | Counter | `rate_limiter`, `result` | `check` 呼び出しごとに 1 回インクリメント。低カーディナリティ。レート制限全体の健全性。 |
-| `gitlab_labkit_rate_limiter_rule_evaluations_total` | Counter | `rate_limiter`, `rule`, `action`, `result`, `exceeded` | 評価されたルールごとに 1 回インクリメント。非終端チェーン内のすべてのルールを捕捉。 |
-| `gitlab_labkit_rate_limiter_errors_total` | Counter | `rate_limiter` | Redis 障害のカウンター（フェイルオープンの可観測性）。 |
-| `gitlab_labkit_rate_limiter_limit` | Gauge (`:max`) | `rate_limiter`, `rule` | 設定されたしきい値。 |
-| `gitlab_labkit_rate_limiter_period_seconds` | Gauge (`:max`) | `rate_limiter`, `rule` | 設定された期間。 |
+| `gitlab_labkit_rate_limiter_calls_total` | Counter | `rate_limiter`, `result` | `check` call ごとに 1 回 increment。低 cardinality。レート制限全体の健全性。 |
+| `gitlab_labkit_rate_limiter_rule_evaluations_total` | Counter | `rate_limiter`, `rule`, `action`, `result`, `exceeded` | 評価されたルールごとに 1 回 increment。非終端 chain 内のすべてのルールを捕捉します。 |
+| `gitlab_labkit_rate_limiter_errors_total` | Counter | `rate_limiter` | Redis failure counter（fail-open observability）。 |
+| `gitlab_labkit_rate_limiter_limit` | Gauge (`:max`) | `rate_limiter`, `rule` | 設定された閾値。 |
+| `gitlab_labkit_rate_limiter_period_seconds` | Gauge (`:max`) | `rate_limiter`, `rule` | 設定された period。 |
 
-> **実装上の注記:** 現在の labkit 実装は `gitlab_labkit_rate_limiter_calls_total`（ラベル `rate_limiter`、`rule`、`action`）と、`errors_total` および 2 つの gauge（[#28798](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28798) で実装）のみを出力します。limiter ごととルール評価ごとのメトリクスへの分割は、アクションモデルの洗練（[#29052](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29052)）と一緒に、協調した破壊的変更として出荷されます。
+> **実装メモ:** 現在の labkit 実装は `gitlab_labkit_rate_limiter_calls_total`（label は `rate_limiter`、`rule`、`action`）と、`errors_total`、2 つの gauge（[#28798](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28798) で実装）だけを emit します。per-limiter と per-rule-evaluation metrics への分割は、action model refinement（[#29052](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29052)）とともに、調整された breaking change として提供されます。
 
 **追加の可観測性作業:**
 
-- [#28799](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28799) — 既存のリクエストごとのログメッセージにレート制限の状態を含める
-- [#28831](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28831) — Rate Limiting Overview ダッシュボードを更新する
-- [#28832](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28832) — デフォルトの SLI アラート向けにメトリクスカタログに登録する
-- [#28807](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28807) — 移行のための Redis クラスターのヘッドルーム調査
-- [#28827](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28827) — Redis 操作を単一の Lua EVAL 呼び出しに統合する
+- [#28799](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28799) — 既存のリクエストごとのログメッセージにレート制限状態を含める
+- [#28831](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28831) — Rate Limiting Overview dashboard を更新する
+- [#28832](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28832) — デフォルト SLI alert のために metrics catalog に登録する
+- [#28807](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28807) — migration のための Redis cluster headroom 調査
+- [#28827](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28827) — Redis operation を単一の Lua EVAL call に統合する
 
-### 1.11 コストを考慮したレート制限 {#111-cost-aware-rate-limiting}
+### 1.11 コストを考慮したレート制限
 
-`GET /api/v4/user` と複雑な GraphQL クエリは同じものではありませんが、単純なリクエストカウンターはそれらを同等に扱います。`check` の `cost:` パラメータを使うと、代わりに実際のリソース消費量でカウントできます。
+`GET /api/v4/user` と複雑な GraphQL query は同じものではありませんが、単純なリクエスト counter はそれらを同等に扱います。`check` の `cost:` parameter により、実際の resource consumption によってカウントできます:
 
 ```ruby
 result = limiter.check(identifier)                         # default cost: 1
 result = limiter.check(identifier, cost: db_duration_s)    # cost = actual DB time
 ```
 
-rack ミドルウェアはこれを使って、ルート名前空間ごとにデータベース時間を制限できます。各リクエストの完了後に、実際にかかったコストを計上します。
+rack middleware はこれを使って、root namespace ごとの database time を制限できます。各リクエストの完了後に、実際にかかったコストを加算します。
 
 ```ruby
 limiter = RESOURCE_LIMITERS[:db_utilization]
@@ -322,7 +323,7 @@ result = limiter.check(
 )
 ```
 
-次のようなルールとともに:
+以下のようなルールを使います。
 
 ```ruby
 Rule.new(
@@ -334,9 +335,9 @@ Rule.new(
 )
 ```
 
-characteristic はスコープ（ユーザーごと、プロジェクトごと、名前空間ごと）を選択します。コストは何を計測するかを選択します。同じパターンは、gitaly 呼び出しの時間、オブジェクトストレージのバイト数、sidekiq ジョブの重みにも適用されます。
+characteristic は scope（user ごと、project ごと、namespace ごと）を選びます。cost は何を測定するかを選びます。同じ pattern は、gitaly call duration、object storage bytes、sidekiq job weight にも適用できます。
 
-作業を行う前にコストがわからない場合は、まず `peek` します。
+作業を行う前に cost がわからない場合は、まず `peek` します。
 
 ```ruby
 result = limiter.peek(identifier)
@@ -349,34 +350,34 @@ cost = do_expensive_work
 limiter.check(identifier, cost: cost)
 ```
 
-これは、1 つ余分な操作を通過させてしまう可能性があります（peek は「OK」と言ったが、コストが予想より大きかった場合）。その次のリクエストはブロックされます。
+これにより、追加の operation が 1 つ通る可能性があります（peek は「ok」と言ったが、cost は想定より大きかった）。その後の次のリクエストはブロックされます。
 
-内部的には、`cost:` は Lua EVAL 内で `INCRBYFLOAT` を使います（[#28827](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28827)）。`1` を指定した `INCRBYFLOAT` は `INCR` と同じように振る舞うため、整数コストと浮動小数点コストで別々のカウント戦略はありません。
+内部的には、`cost:` は Lua EVAL 内で `INCRBYFLOAT` を使用します（[#28827](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28827)）。`1` を指定した `INCRBYFLOAT` は `INCR` と同じように振る舞うため、integer cost と float cost のために別々のカウント戦略はありません。
 
-## フェーズ 2: 外部化された設定 {#phase-2-externalized-configuration}
+## Phase 2: 外部化された設定
 
-labkit は、アプリケーションが提供するデフォルトを上書きする設定を読み込みます。フォーマットは [LabKit Configuration Management](../labkit_configuration/) 設計ドキュメントに従います。protobuf スキーマが構造を定義し、シリアライズ形式として YAML を使います。スキーマが共有されているため、同じファイルが `labkit-ruby`、`labkit-go`、およびそれらを消費するサービスで同じように読み込まれます。
+Labkit は、アプリケーションが提供するデフォルトを上書きする設定を読み込みます。フォーマットは [LabKit 設定管理](../labkit_configuration/)デザインドキュメントに従います。protobuf スキーマが構造を定義し、YAML がシリアライズ形式になります。スキーマが共有されるため、同じファイルは `labkit-ruby`、`labkit-go`、それを消費するサービスで同じように読み込まれます。
 
-*アンロックされること:* 設定を通じたルールの追加と変更。ルールの変更が、アプリケーションのフルビルドとデプロイなしにロールアウトされます。
+*可能になること:* 設定を通じたルールの追加と変更。ルール変更は、アプリケーション全体の build と deploy なしに展開されます。
 
 ### 2.1 2 種類の設定 {#21-two-kinds-of-configuration}
 
-設定ドキュメントは 2 種類あります。
+2 つの設定ドキュメントがあります。
 
-1. **利用可能な limiter** は契約であり、運用担当者（Production Engineering）が所有します。どのレート制限が存在するか、どの識別子のプロパティでマッチおよびカウントできるか、各 limiter が出荷するデフォルトルールを列挙します。アプリケーション開発者はこれに貢献します。自分たちのコードが公開する limiter を宣言し、デフォルトを提案しますが、契約は運用担当者側でレビューおよび所有されます。これはアプリケーションとともに出荷され、他のツールが読み取ることができます。
-2. **レート制限** は、デフォルトを上書きまたは追加するルールを保持します。アプリケーションのリリースなしに変更できます。
+1. **Available limiters** は operator（Production Engineering）が所有する contract です。どの rate limiter が存在するか、どの identifier property に match して count できるか、各 limiter がどの default rule を持って同梱されるかを一覧にします。アプリケーション開発者もこれに貢献します。自分たちのコードが公開する limiter を宣言し、default を提案しますが、contract は operator 側でレビューされ所有されます。これはアプリケーションとともに同梱され、他の tooling が読み取れます。
+2. **Rate limits** は、デフォルトを上書きまたは追加するルールを保持します。これはアプリケーション release なしに変更できます。
 
-labkit は rate-limits ドキュメントを available-limiters ドキュメントに照らして検証します。ルールは、アプリケーションが実際に公開するプロパティでのみマッチまたはカウントでき、存在する limiter のみを対象にできます。
+Labkit は rate-limits ドキュメントを available-limiters ドキュメントに対して検証します。ルールは、アプリケーションが実際に公開する property にのみ match または count でき、存在する limiter のみを target にできます。
 
-rate-limits ドキュメントは 2 つのレベルで記述されます。運用担当者はグローバルルールを設定します。すべてのリクエストに適用されるデフォルトと、プラットフォーム全体の保護です。これらのデフォルトルールは、アプリケーションをまたいで共有される limiter（Rack ミドルウェア、gRPC インターセプターなど）のために定義されます。
+rate-limits ドキュメントは 2 つのレベルで書かれます。operator は global rule を設定します。すべてのリクエストに適用される default と、platform-wide protection です。これらの default rule は、アプリケーション間で共有される limiter（Rack middleware、gRPC interceptor など）向けに定義されます。
 
-サービスオーナーは、自分がオンコールを担当するサービスの制限を引き上げまたは引き下げるために、limiter にスコープされたルールを追加します。チームは自分たちのサービスの制限を自由に管理できます。Infrastructure は、共有 Redis やダウンストリームサービスへの圧力の増加など、変更が横断的な影響を持つ場合に意見を提供します。
+Service owner は、自分たちが on-call で担当する service の limit を上げ下げするために、limiter に scoped された rule を追加します。チームは自身の service の limit を管理する自由を持ちます。Infrastructure は、共有 Redis や downstream service への圧力増加など、横断的な影響がある変更に意見を出します。
 
-チームが自由にできない 1 つのことは、limiter のバイパスです。フェーズ 1 では既存のバイパスを引き続き機能させなければならないため、フレームワークは `skip` ルールを許可しますが、バイパスはそれを追加するチーム以上のものに影響します。私たちは、誰が `skip` ルールを追加できるかをガードレールで制御し、無チェックで導入されないようにします。ガードレールがどのようなもの（レビュー、許可リスト、検証ステップ）になるかは、実装時の決定事項です。
+チームが自由にできないことの 1 つは limiter の bypass です。Phase 1 では既存の bypass を維持する必要があるため、framework は `skip` rule を許可しますが、bypass はそれを追加するチーム以外にも影響します。`skip` rule を追加できる人に guardrail を設け、無チェックで導入されないようにします。その guardrail がどういう形になるか（review、allowlist、validation step）は、実装時の判断です。
 
-### 2.2 利用可能な limiter {#22-available-limiters}
+### 2.2 Available limiters
 
-このドキュメントは、各 limiter が何を、いつ実施するか、そのデフォルトルールは何か、その値のいずれかがデータベースから来るかを宣言します。データベース由来の値は、characteristic（プランごとの制限）に結びつけることも、インスタンス全体のグローバルにすることもできます。
+このドキュメントは、各 limiter が何を、いつ enforce するか、default rule は何か、値のいずれかがデータベース由来かどうかを宣言します。データベース由来の値は、characteristic（plan ごとの limit）に結び付けることも、instance-wide global にすることもできます。
 
 ```yaml
 # available_limiters.yaml — shipped with the application
@@ -407,11 +408,11 @@ available_limiters:
       action: limit
 ```
 
-`default_rule` は、アプリケーションがデフォルトで実施する内容を文書化します。そのスキーマはレート制限ルール（後述）のフィールドのサブセットであり、その `match` は常に空（`{}`）です。なぜなら、デフォルトはその limiter が見るすべてのリクエストに適用されるからです。`has_database_configuration: true` は、デフォルトの `limit`/`period_s` がチェック時にデータベースから解決されること（[1.7](#17-configuration-passthrough) の callable）を示します。
+`default_rule` は、アプリケーションがデフォルトで enforce する内容を文書化します。その schema は、下記の rate-limit rule の field の subset で、`match` は常に空（`{}`）です。default は limiter が見るすべてのリクエストに適用されるためです。`has_database_configuration: true` は、default の `limit`/`period_s` が check 時にデータベースから解決される（[1.7](#17-configuration-passthrough) の callable）ことを示します。
 
-Labkit に汎用 limiter を実装する際、これらのデフォルト設定は copier テンプレート内に置くことができます。そのため、それらを変更すると、各消費サービスを次回の `copier update` 時に更新する [copier マイグレーション](https://copier.readthedocs.io) を出荷することになります。新しい共有 limiter（Rack ミドルウェアや gRPC インターセプター内のものなど）は、各サービスが独自に書くのではなくテンプレートからデフォルトを得て、それらのデフォルトに対する後の変更も同じようにロールアウトされます。`rate_limits` ファイルもテンプレートから生成されます。
+Labkit に汎用 limiter を実装する際、これらの default configuration は copier template に置けます。そのため変更時には、各 consuming service が次に `copier update` したときに更新する [copier migration](https://copier.readthedocs.io) を提供します。Rack middleware や gRPC interceptor 内のような新しい shared limiter は、各 service が個別に書くのではなく template から default を取得し、その default への後続変更も同じ方法で展開されます。`rate_limits` file も template から生成されます。
 
-対応する proto は以下のとおりです。検証ルールはスキーマ内に存在しますが、例を読みやすく保つためにここでは少しだけ追加しています。これらの `.proto` ファイルは [`labkit-spec`](https://gitlab.com/gitlab-org/quality/tooling/labkit-spec/) 内に置かれます。
+以下は対応する proto です。validation rule は schema にありますが、例を読みやすく保つため、ここでは 2 つだけ追加しています。これらの `.proto` file は [`labkit-spec`](https://gitlab.com/gitlab-org/quality/tooling/labkit-spec/) に置かれます。
 
 ```proto
 edition = "2026";
@@ -448,7 +449,7 @@ enum Action {
 
 ### 2.3 レート制限 {#23-rate-limits}
 
-ここで、運用担当者とサービスオーナーがルールを設定します。各ルールは、適用する limiter、それがカバーするリクエストを選択する `match`、および取るべきアクションを指定します。
+operator と service owner はここでルールを設定します。各ルールは、適用先の limiter、対象リクエストを選択する `match`、実行する action を指定します。
 
 ```yaml
 # rate_limits.yaml — global rules from operators, service-scoped rules from service owners
@@ -486,9 +487,9 @@ rate_limits:
       match: {}
 ```
 
-ファイル内のルールは、アプリケーションが提供するルールの **前** に評価されます。末尾の終端 `skip` ルール（`match: {}` を介してすべてにマッチする）と組み合わせることで、ファイルが limiter の唯一の信頼できる情報源になります。`skip` に到達したリクエストは、アプリケーションのデフォルトを完全にバイパスします。フェーズ 3 では、外部サービスが返すルールがファイルのルールの前に来ます。
+ファイル内のルールは、アプリケーションが提供するルールより**前**に評価されます。末尾の終端 `skip` rule（`match: {}` で everything に match）と組み合わせると、このファイルを limiter の single source of truth にできます。その `skip` に到達したリクエストは、アプリケーションの default を完全に bypass します。Phase 3 では、外部サービスから返されるルールがファイルのルールより前に来ます。
 
-どのフィールドが必須かは `action` に依存します。`limit`/`log` ルールには `limit` と `period_s` が必要であり、`skip` ルールにはどちらも不要です。proto 内の 1 つの CEL 制約がそれを強制します。
+必須 field は `action` によって異なります。`limit`/`log` rule には `limit` と `period_s` が必要で、`skip` rule にはどちらも必要ありません。proto の 1 つの CEL constraint がこれを enforce します。
 
 ```proto
 message RateLimits {
@@ -517,7 +518,7 @@ message Rule {
 }
 ```
 
-`match` の値は labkit の `Matcher` オブジェクトと同じ明示的な型マーカーを使うため、等価マッチングと正規表現マッチングが YAML と両方の SDK でラウンドトリップします。
+`match` value は labkit の `Matcher` object と同じ明示的な type marker を使用するため、等価マッチングと regex マッチングは YAML と両 SDK をまたいで round-trip できます:
 
 ```yaml
 match:
@@ -526,131 +527,131 @@ match:
     regex: "^/api/v\\d+/projects"            # regex
 ```
 
-上記の `rate_limits.yaml` が読み込まれると、プランごとの `pipelines_create` ルールがアプリケーションのデフォルトルールの前に評価されます。Free プランのプロジェクトは 100/10 分、Ultimate は 1000/10 分を得ます。末尾の `skip` は、ファイルが存在すればアプリケーションのデフォルトが決して適用されないことを保証します。
+上記の `rate_limits.yaml` が読み込まれると、plan ごとの `pipelines_create` rule はアプリケーションの default rule より前に評価されます。Free plan project は 100/10min、Ultimate は 1000/10min になります。末尾の `skip` により、ファイルが存在する場合はアプリケーション default が適用されないことが保証されます。
 
-### 2.4 Redis で裏打ちされたルール（Web UI 設定） {#24-redis-backed-rules-web-ui-configuration}
+### 2.4 Redis-backed rules（web-UI 設定） {#24-redis-backed-rules-web-ui-configuration}
 
-一部のセルフマネージド管理者は、ディスク上のファイルからではなく、引き続き管理者向け Web UI からレート制限を編集したいと考えています。私たちは、データベースをホットパスに戻すことなくそれをサポートできます。UI が管理するルールを、[2.3](#23-rate-limits) と同じルールスキーマを使って Redis に保存します。
+self-managed の一部の管理者は、disk 上のファイルではなく admin web-UI からレート制限を編集し続けたいと考えています。データベースを hot path に戻さずに、それをサポートできます。[2.3](#23-rate-limits) と同じ rule schema を使用して、UI 管理のルールを Redis に保存します。
 
-UI が書き込み、labkit が読み取ります。管理者がルールを保存すると、それは limiter ごとの Redis キー（labkit がカウンターに既に使っているのと同じ Redis インスタンス）にシリアライズされます。labkit は、limiter が初めてヒットしたときに Redis からその limiter のルールを読み込み、その後しばらくの間メモリにキャッシュします。リクエストごとに Redis を読むわけではなく、起動時にのみ読むわけでもありません。キャッシュが期限切れになると、その limiter を通る次のリクエストが Redis から再読み込みするため、管理者の変更はおおよそキャッシュ期間内に反映されます。正確な期間は、これを構築する際に決める実装の詳細です。
+UI が書き込み、labkit が読み取ります。管理者がルールを保存すると、limiter ごとの Redis key（labkit が counter にすでに使用している同じ Redis instance）にシリアライズされます。labkit は、その limiter が初めて hit されたときに Redis から limiter のルールを読み込み、その後短時間 memory に cache します。リクエストごとに Redis を読むわけではなく、boot 時にだけ読むわけでもありません。cache が expire すると、その limiter を通る次のリクエストが Redis から再読み込みするため、管理者の変更はおおむね cache duration 内に反映されます。正確な duration は、これを構築する際に決める実装 detail です。
 
-これらのルールは、アプリケーションのデフォルトの上に重ねるのではなく、それを置き換えます。Redis に limiter のルールがあれば labkit はそれを使い、なければアプリケーションの組み込みデフォルトが適用されます。すべての limiter はアプリから設定可能なまま保たれ、何も設定されていないときはデフォルトがフォールバックになります。
+これらのルールは、アプリケーション default の上に layer されるのではなく、それを置き換えます。Redis に limiter のルールがあれば labkit はそれを使用し、なければアプリケーションの built-in default が適用されます。すべての limiter はアプリから設定可能なままで、何も設定されていない場合は default が fallback になります。
 
-これはフェーズ 3 の外部サービスのローカル版です。「このリクエストのルールを返す」という同じ考え方を、リモートサービスの代わりに Redis キーで裏打ちしたものです。私たちはこれをセルフマネージドに提供したいと考えていますが、これはフェーズ 3 をブロックするものではなく、両者は独立して出荷できます。
+これは Phase 3 外部サービスのローカル版です。同じ「このリクエストのルールを返す」という考え方を、リモートサービスではなく Redis key をバックエンドとして実現します。self-managed に提供したいものですが、Phase 3 をブロックするものではなく、両者は独立してリリースできます。
 
-**データベースからの移行。** マイグレーションは既存の `ApplicationSettings` のスロットル値を読み取り、それぞれを `Rule` オブジェクトに変換し、limiter ごとにキー付けされた Redis ストアに書き込みます。limiter の値が Redis に存在するようになれば、`ApplicationSettings` を読み取る [1.7](#17-configuration-passthrough) の呼び出し箇所の callable は、その limiter について廃止できます。
+**データベースからの移行。** migration は既存の `ApplicationSettings` レート制限値を読み取り、それぞれを `Rule` object に変換し、limiter ごとに key 付けされた Redis store に書き込みます。limiter の値が Redis に存在するようになったら、その limiter について `ApplicationSettings` を読む [1.7](#17-configuration-passthrough) の call-site callable は廃止できます。
 
-### 2.5 優先順位モデル {#25-precedence-model}
+### 2.5 優先順位モデル
 
-複数の設定ソースが、順番に評価されます。
+複数の設定 source は、以下の順序で評価されます。
 
-1. **設定ファイルのルール** — labkit が YAML ファイルから読み込む
-2. **Redis 由来のルール** — 管理者向け Web UI が書き込む（セルフマネージド）
-3. **アプリケーションのデフォルト** — フォールバックとしてアプリケーションとともに出荷される
+1. **Config-file rules** — labkit が YAML file から読み込むルール
+2. **Redis-backed rules** — admin web-UI が書き込むルール（self-managed）
+3. **Application defaults** — fallback としてアプリケーションとともに同梱されるもの
 
 ```plaintext
 ┌─────────────────────────────────┐
-│ 設定ファイルのルール（最優先）  │  ← labkit が YAML から読み込み
+│ Config file rules (highest)     │  ← Loaded by labkit from YAML
 ├─────────────────────────────────┤
-│ Redis で裏打ちされたルール（Web UI） │  ← 管理者 UI が書き込み
+│ Redis-backed rules (web-UI)     │  ← Written by the admin UI
 ├─────────────────────────────────┤
-│ アプリケーションのデフォルト（フォールバック） │  ← アプリケーションとともに出荷
+│ Application defaults (fallback) │  ← Shipped with the application
 └─────────────────────────────────┘
 ```
 
-これは次のことを意味します。
+つまり、次のようになります。
 
-- GitLab.com は、アプリケーションのデフォルトを上書きする、プラットフォームレベルのルール（設定ファイルから）を持てる
-- セルフマネージドの管理者は Web UI からルールを管理できる。それらのルールは、カバーする limiter についてアプリケーションのデフォルトを置き換える
-- ファイルも Redis ルールも設定しないセルフマネージドのインストールは、アプリケーションのデフォルトにフォールバックするため、挙動は変わらない
-- リクエストにマッチするプラットフォームルールはデフォルトに勝ち、コード変更なしに顧客ごと・ティアごとの上書きを可能にする
-- より具体的なサービスオーナーのルールは、運用担当者のグローバルルールの前に並べられるため、チームはグローバルなデフォルトに触れることなく自分のサービスの制限をチューニングできる
-- `skip` ルールは、より上位のティアが下位のティアをバイパスできるようにする。これが、追加にガードレールが設けられている理由である（[2.1](#21-two-kinds-of-configuration) を参照）
+- GitLab.com は、アプリケーション default を上書きする platform-level rule（設定ファイル由来）を持てます
+- self-managed 管理者は web-UI からルールを管理できます。それらのルールは、対象 limiter についてアプリケーション default を置き換えます
+- file も Redis rule も設定しない self-managed installation は、アプリケーション default に fallback するため、挙動は変わりません
+- リクエストに match する platform rule は default より優先され、コード変更なしに顧客ごと、Tier ごとの override が可能になります
+- より具体的な service-owner rule は operator の global rule より前に並ぶため、チームは global default に触れずに自分たちの service の limit を tune できます
+- `skip` rule は上位の設定階層が下位の設定階層を bypass できるようにします。そのため、これを追加することは guardrail されます（[2.1](#21-two-kinds-of-configuration) を参照）
 
-### 2.6 デプロイ {#26-deployment}
+### 2.6 デプロイ
 
-- **セルフマネージド:** 設定ファイルは任意です。存在しない場合、既存の挙動は変わりません。管理者はカスタムレート制限のために設定ファイルを提供するか、Web UI からルールを管理できます（Redis に保存）。
-- **GitLab.com:** 設定ファイルは Helm チャートまたは ops 設定を介してデプロイされます。プラットフォームレベルのルールは Production Engineering が管理します。
-- **Dedicated:** 設定ファイルは Dedicated の運用担当者が管理します。テナントごとのカスタマイズはファイルを通じて技術的に可能ですが、推奨されません。
-- **Cells:** セルごとの設定は、別々の設定ファイルを通じて可能です。
+- **Self-managed:** 設定ファイルは任意です。存在しない場合、既存の挙動は変わりません。管理者は custom rate limit のために設定ファイルを提供するか、web-UI からルールを管理できます（Redis に保存）。
+- **GitLab.com:** 設定ファイルは Helm chart または ops configuration 経由でデプロイされます。platform-level rule は Production Engineering が管理します。
+- **Dedicated:** 設定ファイルは Dedicated operator が管理します。file 経由の tenant ごとのカスタマイズは技術的には可能ですが、推奨されません。
+- **Cells:** 個別の設定ファイルによる cell ごとの設定が可能です。
 
-## フェーズ 3: 動的な外部サービス {#phase-3-dynamic-external-service}
+## Phase 3: 動的外部サービス
 
-外部サービスが、リクエストの識別子に基づいて、レート制限ルールを動的に提供します。これが、各ケースの静的な設定ファイルを保守することなく、顧客ごと・ティアごと・名前空間ごとのカスタマイズを得る方法です。
+外部サービスは、リクエスト identifier に基づいてレート制限ルールを動的に提供します。これにより、それぞれのケースに静的な設定ファイルを維持せずに、顧客ごと、Tier ごと、namespace ごとのカスタマイズを実現できます。
 
-*アンロックされること:* 異なる顧客のための異なるルール、およびデプロイなしでの変更のほぼ即時のロールアウト。
+*可能になること:* 顧客ごとに異なるルールと、デプロイなしのほぼ即時の変更の展開。
 
-### 3.1 サービス設計 {#31-service-design}
+### 3.1 サービス設計
 
-このサービスは、フェーズ 1 の識別子を受け取り、そのリクエストのルールを返します。これらは設定ファイル、Redis 由来のルール、アプリケーションのデフォルトに優先します。
+サービスは Phase 1 の identifier を受け取り、そのリクエストのルールを返します。これらは設定ファイル、Redis-backed rule、アプリケーション default より優先されます。
 
 ```plaintext
 ┌─────────────────────────────────────┐
-│ 外部サービスのルール（最優先）     │  ← 動的、リクエストごと
+│ External service rules (highest)    │  ← Dynamic, per-request
 ├─────────────────────────────────────┤
-│ 設定ファイルのルール                │  ← 静的、起動時に読み込み
+│ Config file rules                   │  ← Static, loaded at startup
 ├─────────────────────────────────────┤
-│ Redis で裏打ちされたルール（Web UI）│  ← 管理者 UI が書き込み
+│ Redis-backed rules (web-UI)         │  ← Written by the admin UI
 ├─────────────────────────────────────┤
-│ アプリケーションのデフォルト（フォールバック） │  ← アプリケーションとともに出荷
+│ Application defaults (fallback)     │  ← Shipped with the application
 └─────────────────────────────────────┘
 ```
 
-このサービスは、レート limiter 名と識別子を受け取ります。これらを合わせると、サービスが判定を下すのに必要なすべて（レート制限のチェックポイント、リクエストタイプ、ユーザー、名前空間、プラン、エンドポイント）を運びます。
+サービスは rate limiter 名と identifier を受け取ります。この 2 つにより、サービスが判断に必要とするすべての情報、つまりレート制限 checkpoint、リクエスト type、user、namespace、plan、endpoint が渡されます。
 
-サービスは limiter 名をキーにするため、同じ名前が異なるサービスで異なるものを意味することを考慮しなければなりません。これは汎用 limiter（Rack ミドルウェア、gRPC インターセプター）で最も重要です。そこでは `rack_request` が意図的にあらゆる場所で再利用されます。サービスは limiter 名だけでなく呼び出し元のサービスでもルールをスコープするため、あるサービス向けの動的ルールが、たまたま名前を共有する別のサービスに漏れることはありません。
+サービスは limiter 名を key にするため、同じ名前が異なるサービスでは異なる意味を持つことを考慮する必要があります。これは、`rack_request` が意図的にあらゆる場所で再利用される汎用 limiter（Rack middleware、gRPC interceptor）で特に重要です。サービスは、呼び出し元 service と limiter 名の両方でルールを scope するため、ある service 向けの dynamic rule が、たまたま同じ名前を共有する別の service に漏れることはありません。
 
-### 3.2 ケイパビリティ {#32-capabilities}
+### 3.2 機能
 
-名前空間ごと・プランごとのしきい値は、設定ファイル（`namespace_plan` や `root_namespace` でマッチするルール）を通じて、フェーズ 2 で既に可能です。外部サービスは、静的な設定では提供できない機能を追加します。
+namespace ごと、plan ごとの閾値は、設定ファイル（`namespace_plan` や `root_namespace` に match する rule）を通じて Phase 2 ですでに可能です。外部サービスは、静的設定では提供できない機能を追加します。
 
-- 現在の負荷や不正利用パターンに基づく動的な調整
-- GitLab の外部で管理される契約やエンタイトルメントに結びついた顧客ごとの制限
-- 設定ファイルを再デプロイせずに変わるルール
-- terraform を通じて設定可能。アプリケーションのレート制限を Cloudflare やその他のエッジルールと同じリポジトリに保つ
+- 現在の負荷や abuse pattern に基づく動的な調整
+- GitLab 外で管理される契約や entitlement に結び付いた顧客ごとの limit
+- 設定ファイルを redeploy せずに変更される rule
+- terraform 経由で設定でき、アプリケーション rate limit を Cloudflare や他の edge rule と同じ repository に保持できること
 
-### 3.3 フェイルオープンとキャッシュ {#33-fail-open-and-caching}
+### 3.3 Fail-open と caching
 
-サービスに到達できない場合、labkit は同じ優先順位スタックを下にフォールバックします。設定ファイルのルール、次に Redis 由来のルール、次にアプリケーションのデフォルトです（フェイルオープン）。キャッシュ（識別子ごと、名前空間ごと、プランごと）が、リクエストごとのオーバーヘッドを削減します。
+サービスに到達できない場合、labkit は同じ優先順位 stack を下ります。設定ファイルの rule、Redis-backed rule、アプリケーション default の順です（fail-open）。caching（identifier ごと、namespace ごと、plan ごと）により、リクエストごとの overhead を減らします。
 
-ルールはメモリにキャッシュされるため、変更は行われた瞬間ではなくキャッシュ期間内に伝播します。その期間が、新しいルールがどれだけ速くロールアウトされるかの実質的な限界です。時間ではなく分の単位です。正確な値は、実装時のチューニングの決定事項です。
+ルールは memory に cache されるため、変更は実行された瞬間ではなく cache duration 内に伝播します。その duration が、新しい rule の展開速度の実質的な上限です。何時間ではなく、数分です。正確な値は実装時の tuning decision です。
 
-### 3.4 GATE との関係 {#34-relationship-to-gate}
+### 3.4 GATE との関係
 
-識別子は拡張可能です。[GATE](../new_auth_stack/) は `workload_identity` と `ambient_credential` という ID タイプを導入しますが、これらは識別子内の単なる新しいキーです。外部サービスは、labkit 自体を変更することなくそれらを使えます。
+identifier は拡張可能です。[GATE](../new_auth_stack/) は `workload_identity` と `ambient_credential` identity type を導入しますが、これらは identifier 内の新しい key にすぎません。外部サービスは labkit 自体を変更せずにそれらを使用できます。
 
-## 主な設計上の決定 {#key-design-decisions}
+## 主な設計判断
 
 | 決定 | 根拠 | 参照 |
 |---|---|---|
-| 非終端の `:log` を伴うルール評価 | 実施を妨げることなく新しいしきい値をシャドウテストする | [#28890](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28890) |
-| アクションモデル: `limit`/`log`/`skip` | 実施、可観測性、バイパスのセマンティクスをきれいに分離する | [#29052](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29052) |
-| 結果の `action` は結果（outcome）であり、呼び出し元がそれを処理する | labkit はフレームワークではなくライブラリである。どう応答するかは呼び出し元が決める | — |
-| 未認証リクエストのための `<anonymous>` センチネル | 山括弧のないセンチネルが実在のユーザー名と衝突するのを避ける。ルールレベルの認証/未認証の区別を可能にする | [#28852](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28852) |
-| TTL ベースの固定ウィンドウ（divmod のクロック整列に対して） | 決定保留中。TTL はよりシンプルで境界バーストを避ける。divmod は現在の ApplicationRateLimiter に一致する | [#28830](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28830) |
-| Redis プールの `.with` インターフェース | Puma のマルチスレッドワーカー下での適切なコネクションプールの使用 | — |
-| RackAttack には 4 つではなく 2 つの limiter | 認証/未認証は characteristic であって limiter の境界ではない。フラグが少ない。外部設定に対して将来性がある | [#28852](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28852) |
-| Redis 操作のための Lua EVAL | INCR + EXPIRE + TTL を 1 回のラウンドトリップで。アトミック。Ruby のオーバーヘッドが少ない | [#28827](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28827) |
-| パターンマッチングのための Matcher オブジェクト | YAML 互換（明示的な `{ regex: "..." }` 型マーカー）。言語横断的 | [#28855](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28855) |
-| `rate_limits` ハッシュを置き換える静的 Limiter オブジェクト | 唯一の信頼できる情報源。DB 由来の値のための callable。リクエストごとのアロケーションなし | [#29054](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29054) |
-| Prometheus gauge のマルチプロセスモード `:max` | Puma ワーカー下での N 個の重複コピーを避ける。すべてのワーカーが同じ設定値を設定する | [#28798](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28798) |
-| 設定の進化: callable → 設定ファイル → 外部サービス | 後方互換な移行パス。どのフェーズでもセルフマネージドへの破壊的変更がない | [#28853](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28853) |
-| Web UI のルールをデータベースではなく Redis に保存 | セルフマネージドのクリックオペレーションを維持しつつ、データベースをホットパスから外す。カウンターに既に使っている Redis インスタンスを再利用する。アプリのデフォルトを Redis フォールバックで置き換える | — |
-| 運用担当者が契約とグローバルルールを所有し、サービスオーナーが自分の limiter をチューニングする | チームは、オンコールを担当するサービスの制限を管理する自律性を得る。横断的な変更には Infrastructure が意見を出す。バイパスはガードレール下に保たれる | — |
+| 非終端 `:log` によるルール評価 | enforcement を妨げずに新しい閾値を shadow-test する | [#28890](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28890) |
+| Action model: `limit`/`log`/`skip` | enforcement、可観測性、bypass のセマンティクスを明確に分離する | [#29052](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29052) |
+| 結果の `action` が outcome であり、呼び出し元が処理する | Labkit は library であって framework ではありません — 呼び出し元が応答方法を決めます | — |
+| 未認証リクエストの `<anonymous>` sentinel | 山括弧を使う sentinel が実際のユーザー名と衝突することを避け、ルールレベルの auth/unauth 区別を可能にする | [#28852](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28852) |
+| TTL ベースの fixed window（divmod clock-aligned との比較） | 未決定 — TTL はより単純で boundary-burst を避けます。divmod は現在の ApplicationRateLimiter と一致します | [#28830](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28830) |
+| Redis pool `.with` interface | Puma multi-threaded worker で適切に connection pool を使用する | — |
+| RackAttack に 4 つではなく 2 つの limiter | auth/unauth は characteristic であって limiter boundary ではありません。flag が少なく、将来の外部設定に備えられます | [#28852](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28852) |
+| Redis operation の Lua EVAL | INCR + EXPIRE + TTL の single round-trip。atomic で Ruby overhead が少ない | [#28827](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28827) |
+| pattern matching の Matcher object | YAML 互換（明示的な `{ regex: "..." }` type marker）。cross-language | [#28855](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28855) |
+| `rate_limits` hash を置き換える静的 Limiter object | single source of truth。DB-backed value のための callable。リクエストごとの allocation なし | [#29054](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/29054) |
+| Prometheus gauge multiprocess mode `:max` | Puma worker 下で N 個の重複 copy を避けます。すべての worker が同じ設定値を set します | [#28798](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28798) |
+| 設定の進化: callable → 設定ファイル → 外部サービス | 後方互換な migration path。どの phase でも self-managed に破壊的変更なし | [#28853](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28853) |
+| Web-UI rule はデータベースではなく Redis に保存 | self-managed の click-ops を維持しながら、データベースを hot path から外します。counter にすでに使用している Redis instance を再利用し、app default を Redis fallback で置き換えます | — |
+| operator が contract と global rule を所有し、service owner が自身の limiter を tune する | チームは on-call で担当する service の limit を管理する autonomy を持ち、横断的な変更には infrastructure が意見を出します。bypass は guardrail されたままです | — |
 
-## 参考情報 {#references}
+## 参考文献
 
-### 設計ドキュメント {#design-documents}
+### デザインドキュメント
 
-- [Next Rate Limiting Architecture](../rate_limiting/) — 制限を定義し実施するフレームワークのための、2022 年の元のブループリント
-- [Simplifying Rate Limiting Configuration](../rate_limiting_simplification/) — 段階的なロードマップ（フェーズ 1: エッジネットワーク、フェーズ 2: アプリケーション、フェーズ 3: インターフェース）
-- [LabKit Configuration Management](../labkit_configuration/) — labkit サービスのための protobuf ファーストの設定スキーマ
+- [次世代レート制限アーキテクチャ](../rate_limiting/) — limit を定義し enforce する framework のための、元の 2022 年の blueprint
+- [レート制限設定の簡素化](../rate_limiting_simplification/) — フェーズ化された roadmap（Phase 1: edge network、Phase 2: application、Phase 3: interface）
+- [LabKit 設定管理](../labkit_configuration/) — labkit service のための protobuf-first 設定 schema
 
-### 外部参考情報 {#external-references}
+### 外部参考資料
 
-- [Cloudflare rate limiting rules — supported actions](https://developers.cloudflare.com/ruleset-engine/rules-language/actions/#supported-actions) — アクションセマンティクスモデルのインスピレーション
+- [Cloudflare rate limiting rules — supported actions](https://developers.cloudflare.com/ruleset-engine/rules-language/actions/#supported-actions) — action semantics model の着想元
 
-### 追跡情報 {#tracking}
+### 追跡
 
-- [Phase 2 epic](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/2021) — すべての実装作業の親エピック
-- [Configuration evolution](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28853) — callable、優先順位、静的設定に関する設計議論
+- [Phase 2 エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/2021) — すべての実装作業の親エピック
+- [Configuration evolution](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/work_items/28853) — callable、precedence、static config に関する design discussion
