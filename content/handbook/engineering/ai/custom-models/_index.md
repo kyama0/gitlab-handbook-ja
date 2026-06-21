@@ -5,7 +5,7 @@ upstream_path: /handbook/engineering/ai/custom-models/
 upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
 lastmod: "2026-06-16T17:58:42+02:00"
 translated_at: "2026-06-20T15:03:34Z"
-translator: codex
+translator: claude
 stale: false
 ---
 
