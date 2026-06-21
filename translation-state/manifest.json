@@ -33296,13 +33296,13 @@
       "input_hash": "d101a83682e8e5eeb2be5f9c4645032199f2f6567e8b72b5058c67daefa77161",
       "upstream_committed_at": "2026-06-17T22:18:42+12:00"
     },
-    "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md": {
-      "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md",
+    "content/handbook/engineering/architecture/design-documents/unified_rate_limiting/_index.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/unified_rate_limiting/_index.md",
       "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T14:47:29Z",
+      "translated_at": "2026-06-20T15:28:19Z",
       "model": "codex",
-      "input_hash": "31aef36175046d599065267112dccbd70947188a148d51fcce2b4a6feec5e752",
-      "upstream_committed_at": "2026-06-15T15:39:51-04:00"
+      "input_hash": "ac30a7ae3561e9d43948cf2d1a66f59aac84d3f60c0a294e165428ca489af282",
+      "upstream_committed_at": "2026-06-18T11:28:17+02:00"
     },
     "content/handbook/company/team-pets.md": {
       "path": "content/handbook/company/team-pets.md",
@@ -33319,6 +33319,14 @@
       "model": "codex",
       "input_hash": "b4c216d656bd7f209a3e879c142645136de063b52ce38ec91144e16927002ed6",
       "upstream_committed_at": "2026-06-17T14:07:31+12:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md",
+      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
+      "translated_at": "2026-06-20T14:47:29Z",
+      "model": "codex",
+      "input_hash": "31aef36175046d599065267112dccbd70947188a148d51fcce2b4a6feec5e752",
+      "upstream_committed_at": "2026-06-15T15:39:51-04:00"
     }
   }
 }
