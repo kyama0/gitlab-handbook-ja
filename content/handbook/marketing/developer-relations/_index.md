@@ -30,7 +30,7 @@ Developer Relations では、私たちのミッションとビジョンを会社
 - [Contributor Program Unification & Growth Plan](/handbook/marketing/developer-relations/programs/strategic-plans/contributor-program-unification/)
 - [Co-Creation Initiative](/handbook/marketing/developer-relations/cocreation/)
 
-## <i class="fas fa-users fa-fw color-orange font-awesome"></i> チーム紹介 {#meet-the-team}
+## <i class="fas fa-users fa-fw color-orange font-awesome"></i> チーム紹介 {#i-classfas-fa-users-fa-fw-color-orange-font-awesomei-meet-the-team}
 
 {{< team-by-departments "Developer Relations" >}}
 
