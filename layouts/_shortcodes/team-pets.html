@@ -1,8 +1,5 @@
-{{- /* Grid of GitLab team pets from data/public/pets.yml (synced from www-gitlab-com).
-       Each card opens a Bootstrap modal with the pet image; upstream English
-       story text is omitted until localized story data exists. Pattern mirrors
-       layouts/_shortcodes/all-remote/stories.html. Images are not moved — they are
-       served from about.gitlab.com as CI-generated square "<base>-crop.jpg" variants. */ -}}
+{{- /* scripts/sync-data.sh が同期する data/public/pets.yml を描画する。
+       story はローカライズ済みデータが用意されるまで表示しない。 */ -}}
 {{- with site.Data.public.pets }}
 <style>
   /* Pet card photos are grayscale by default and fade to full color on hover. */
@@ -40,6 +37,7 @@
           {{- end }}
           {{- with $pet.human }}<p><strong>{{ . }}</strong></p>{{- end }}
           {{- /* Omit upstream English pet stories until localized story data exists. */ -}}
+          {{- /* ローカライズ済み story が用意されるまで、upstream の英語 story は表示しない。 */ -}}
         </div>
       </div>
     </div>
@@ -47,7 +45,7 @@
   {{- end }}
 </div>
 <script>
-  // Open a pet's modal directly when the page is loaded with its anchor in the URL.
+  // URL に anchor がある状態で page が load されたとき、その pet の modal を直接開く。
   $(document).ready(function () {
     if (location.hash) {
       var modalEl = document.getElementById(location.hash.substring(1) + "-modal");
