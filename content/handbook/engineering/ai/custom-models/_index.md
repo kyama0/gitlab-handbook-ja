@@ -1,69 +1,69 @@
 ---
 title: Custom Models グループ
-description: "Custom Models グループは、GitLab Duo の顧客向けモデル運用 / インテリジェンスレイヤー、利用可能なモデルとその選択方法、顧客体験の健全性と接続性、ゲートウェイサービス面（プロンプト、内部イベント、AIGW billing）を所有します。"
+description: "Custom Models グループは、GitLab Duo の顧客向けモデルのオペレーション／インテリジェンスレイヤー、すなわちどのモデルが利用可能でどう選択されるか、顧客体験の健全性と接続性、そしてゲートウェイサービスのサーフェス（プロンプト、内部イベント、AIGW 課金）を所有します。"
 upstream_path: /handbook/engineering/ai/custom-models/
 upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
 lastmod: "2026-06-16T17:58:42+02:00"
 translated_at: "2026-06-20T15:03:34Z"
-translator: codex
+translator: claude
 stale: false
 ---
 
 ## ビジョン
 
-Custom Models グループは、顧客固有のデータとユースケースを支える GitLab Duo の機能を動かす、追加のカスタムモデルに注力します。
+Custom Models グループは、顧客固有のデータとユースケースをサポートする形で GitLab Duo の機能を支える、追加のカスタムモデルに注力します。
 
 ## ミッション、私たちが所有するもの
 
-Custom Models は、GitLab の**顧客向けモデルインテリジェンスレイヤー**のエンドツーエンドのオーナーです。どのモデルが利用可能か、どのように選択されるか、顧客体験の健全性と接続性、そしてゲートウェイサービス面（プロンプト、内部イベント、AIGW billing）を所有します。Customer zero、SaaS、Self-Managed、Dedicated にまたがる 1 つのフルスタックチームです。
+Custom Models は、GitLab の **顧客向けモデルインテリジェンスレイヤー** のエンドツーエンドのオーナーです。すなわち、どのモデルが利用可能か、どう選択されるか、顧客体験の健全性と接続性、そしてゲートウェイサービスのサーフェス（プロンプト、内部イベント、AIGW 課金）です。Customer zero、SaaS、Self-Managed、Dedicated にまたがる、1 つのチーム、フルスタックです。
 
-私たちは、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [AI Powered stage](/handbook/product/categories/#ai-powered-stage) にある [Custom Models group](/handbook/product/categories/#custom-models-group) に属する製品カテゴリーのすべてのバックエンド面に責任を持ちます。製品の方向性は [Category Direction, Custom Models Management](https://about.gitlab.com/direction/ai-powered/custom_models/) ページにあり、私たちが扱う機能は [グループ別機能ページ](/handbook/product/categories/features/#custom-models) に一覧化されています。
+私たちは、[DevOps ライフサイクル](/handbook/product/categories/#devops-stages)の [AI Powered ステージ](/handbook/product/categories/#ai-powered-stage)の [Custom Models グループ](/handbook/product/categories/#custom-models-group)に属する製品カテゴリーの、すべてのバックエンド面に責任を持ちます。製品の方向性は [Category Direction, Custom Models Management](https://about.gitlab.com/direction/ai-powered/custom_models/) のページにあり、私たちが扱う機能は [グループ別機能ページ](/handbook/product/categories/features/#custom-models)に列挙されています。
 
 ## 組織
 
-このグループは 3 つの functional teams に編成されています。各 functional team は、自分の area にある Requests for Help (RFHs) と support escalations を含め、自分の scope を end-to-end で所有します（[顧客サポート](#customer-support--requests-for-help)を参照）。Staff Engineers は、必要に応じて複数の functional teams を support することが期待されます。
+このグループは 3 つの機能チームに編成されています。各機能チームは、その領域における Requests for Help (RFH) やサポートエスカレーションを含め、自らのスコープをエンドツーエンドで所有します（[カスタマーサポート](#customer-support--requests-for-help)を参照）。Staff Engineer は、必要に応じて複数の機能チームをサポートすることが期待されます。
 
-### Model Selection
+### モデル選択 {#model-selection}
 
-`.com` と self-hosted 全体で、どの models が利用可能か、どのように選ばれるかを所有します。
+`.com` とセルフホストにまたがって、どのモデルが利用可能か、そしてそれらがどう選択されるかを所有します。
 
-| Scope | |
+| スコープ | |
 | --- | --- |
-| Model lifecycle | Customer Zero、`.com`、Self-Managed、Dedicated 全体の model additions/removals |
-| Selection Engine | Unit Primitives、large/small models、agents |
-| Selection UI | Customer zero、SaaS、Self-Managed、Dedicated |
-| Supporting | 新しく追加された models 向けの prompts、evals、docs |
+| モデルライフサイクル | Customer Zero、`.com`、Self-Managed、Dedicated にまたがるモデルの追加／削除 |
+| 選択エンジン | Unit Primitive、大型／小型モデル、エージェント |
+| 選択 UI | Customer zero、SaaS、Self-Managed、Dedicated |
+| サポート | 新たに追加されたモデルのプロンプト、評価（eval）、ドキュメント |
 
-Model Evaluation Infra の evaluation results は、2 つの groups 間の shared review cadence を通じて selection decisions に反映されます（[What falls outside our scope](#what-falls-outside-our-scope)を参照）。
+Model Evaluation Infra からの評価結果は、両グループ間の共有レビューのケイデンスを通じて選択の意思決定に反映されます（[私たちのスコープ外にあるもの](#what-falls-outside-our-scope)を参照）。
 
-### Health & Connectivity
+### 健全性と接続性 {#health--connectivity}
 
-diagnostic surface と、customer-facing setup and connectivity issues のより広い category を所有します。
+診断サーフェスと、より広い範囲の顧客向けセットアップおよび接続性の問題を所有します。
 
-| Scope | |
+| スコープ | |
 | --- | --- |
-| Diagnostics | Duo Health Check diagnostic surface |
-| Setup & config | Customer setup and configuration |
-| Connectivity | GitLab / AIGW / Models / DWS 全体の connectivity |
-| Operations | debugging、version drift、関連する support escalations |
-| LLMOps Expanding | monitoring、observability、LLM performance の tracking、errors の特定、将来的な model connectivity の最適化 |
+| 診断 | Duo Health Check の診断サーフェス |
+| セットアップと設定 | 顧客のセットアップと構成 |
+| 接続性 | GitLab／AIGW／Models／DWS にまたがる接続性 |
+| オペレーション | デバッグ、バージョンドリフト、関連するサポートエスカレーション |
+| LLMOps の拡張 | モニタリング、オブザーバビリティ、LLM パフォーマンスの追跡、エラーの特定、そして将来的なモデル接続性の最適化 |
 
-"Health" は意図的に広い言葉です。diagnostic surface *および* それら diagnostics が surface することを意図した failure modes を含みます。そのため、diagnostics を作る人々が同じ issues を field します。
+「Health」は意図的に広く取られています。診断サーフェス _および_ それらの診断が表面化させるべき障害モードの両方をカバーしており、診断を構築する人々が、その問題に対応する人々と同じであるようにしています。
 
-### Gateway Services
+### ゲートウェイサービス {#gateway-services}
 
-gateway の上にある event-driven surfaces、つまり入ってくる prompts、通過する telemetry、外へ出る billing/credit events を所有します。
+ゲートウェイの上に位置するイベント駆動のサーフェス、すなわち流れ込むプロンプト、流れ抜けるテレメトリ、そして流れ出る課金／クレジットイベントを所有します。
 
-| Scope | |
+| スコープ | |
 | --- | --- |
-| Prompt Registry | gateway 上の prompt management |
-| Telemetry | internal events and tracking |
-| AIGW billing | AIGW 側の billing、self-hosted billing、SaaS billing、on-demand credits、AWS Marketplace flows 向けの metering and billing events |
+| プロンプトレジストリ | ゲートウェイ上のプロンプト管理 |
+| テレメトリ | 内部イベントとトラッキング |
+| AIGW 課金 | 課金の AIGW 側、セルフホスト課金・SaaS 課金・オンデマンドクレジット・AWS Marketplace フローのためのメータリングと課金イベント |
 
-> **Billing boundary:** Gateway Services は billing の **AIGW side**（metering and billing events）を所有します。purchasing and subscription side、buying、plan management は **Fulfillment** team が所有します。
-> **Instrumentation boundary:** Analytics Instrumentation は tooling、internal events（Snowplow）、billing-events tooling、Service Ping collection を所有します。私たちは gateway/AIGW surface 向けの domain-specific events、billing events、metrics を所有し、その tooling を使って instrument します。
+> **課金の境界:** ゲートウェイサービスは課金の **AIGW 側**（メータリングと課金イベント）を所有します。購入とサブスクリプションの側、すなわち購買やプラン管理は、**Fulfillment** チームが所有します。
+> **インストルメンテーションの境界:** Analytics Instrumentation は、ツール、内部イベント（Snowplow）、課金イベントのツール、そして Service Ping の収集を所有します。私たちは、ゲートウェイ／AIGW サーフェスのためのドメイン固有のイベント、課金イベント、メトリクスを所有し、そのツールを使ってそれらをインストルメントします。
 
-### functional teams への編成方法
+### 機能チームへの編成方法
 
 **Acting Engineering Manager:** Mohamed Hamda
 
@@ -71,42 +71,42 @@ gateway の上にある event-driven surfaces、つまり入ってくる prompts
 
 {{< team-by-manager-slug "mhamda" >}}
 
-**Staff Engineer (cross-team):** Manoj M J。functional teams 全体に貢献し、最も必要な initiatives を引き受けます。
+**Staff Engineer（クロスチーム）:** Manoj M J は機能チームを横断して貢献し、最も必要とされる場所でイニシアチブを引き受けます。
 
-| Functional team | Members |
+| 機能チーム | メンバー |
 | --- | --- |
-| Model Selection | Julie Huang; Manoj M J (supporting) |
-| Health & Connectivity | Cindy Halim, Newick Lee; Manoj M J (main team) |
-| Gateway Services | Patrick Cyiza; Manoj M J (supporting) |
+| モデル選択 | Julie Huang; Manoj M J（サポート） |
+| 健全性と接続性 | Cindy Halim, Newick Lee; Manoj M J（メインチーム） |
+| ゲートウェイサービス | Patrick Cyiza; Manoj M J（サポート） |
 
-### Stable Counterparts
+### 固定カウンターパート {#stable-counterparts}
 
-他の functional teams の以下の members は、私たちの stable counterparts です:
+他の機能チームの以下のメンバーが、私たちの stable counterpart です。
 
-| **Name** | **Role** |
+| **名前** | **ロール** |
 | --- | --- |
 | Jordan Janes | [Principal Product Manager](/job-description-library/product/product-manager/) |
 
-## 私たちの scope 外にあるもの {#what-falls-outside-our-scope}
+## 私たちのスコープ外にあるもの {#what-falls-outside-our-scope}
 
-org 内外の teams に対して boundaries を明確にするため、以下の areas は counterpart teams が所有します。work がこれらの areas に触れる場合は、listed owner を巻き込んでください。
+組織内外のチームにとって境界を明確にするため、以下の領域はカウンターパートチームが所有します。作業がこれらの領域に触れる場合は、記載のオーナーを巻き込んでください。
 
-| Area | Owner | Relationship to Custom Models |
+| 領域 | オーナー | Custom Models との関係 |
 | --- | --- | --- |
-| Subscription purchase / buying flows, plan management | Fulfillment | Gateway Services の counterpart。私たちは AIGW-side billing/metering を所有し、Fulfillment は purchasing and subscriptions を所有します。 |
-| Product analytics tooling & instrumentation | [Analytics Instrumentation](/handbook/engineering/data-engineering/analytics/analytics-instrumentation/) | Gateway Services の counterpart。私たちは internal events and tracking に彼らの tooling を使います。 |
-| Raw gateway infrastructure, routing, streaming, self-hosted AIGW | AI Platform Engineering (Duo Service Infra) | 彼らは infrastructure として gateway を所有します。私たちはその上で動く customer-visible service surface を所有します。 |
-| Model evaluation infrastructure, CEF as a service, benchmark pipelines | AI Platform Engineering (Model Evaluation Infra) | 彼らは evaluation infra を run and maintain します。私たちはその results を consume して model selection を drive します。 |
+| サブスクリプションの購入／購買フロー、プラン管理 | Fulfillment | ゲートウェイサービスのカウンターパート。私たちは AIGW 側の課金／メータリングを所有し、彼らは購買とサブスクリプションを所有する。 |
+| プロダクトアナリティクスのツールとインストルメンテーション | [Analytics Instrumentation](/handbook/engineering/data-engineering/analytics/analytics-instrumentation/) | ゲートウェイサービスのカウンターパート。私たちは内部イベントとトラッキングに彼らのツールを使用する。 |
+| 生のゲートウェイインフラ、ルーティング、ストリーミング、セルフホスト AIGW | AI Platform Engineering (Duo Service Infra) | 彼らはインフラとしてのゲートウェイを所有し、私たちはその上で動作する顧客に見えるサービスサーフェスを所有する。 |
+| モデル評価インフラ、サービスとしての CEF、ベンチマークパイプライン | AI Platform Engineering (Model Evaluation Infra) | 彼らは評価インフラを運用・保守し、私たちはモデル選択を推進するためにその結果を利用する。 |
 
-## 連絡方法
+## 私たちへの連絡方法
 
-- Issue Tracker: [`~group::custom models`](https://gitlab.com/dashboard/issues?sort=title_asc&state=opened&label_name[]=group::custom+models)
-- Slack Channel: [#g_custom_models](https://gitlab.enterprise.slack.com/archives/C06DCB3N96F)
-- Label Subscription: [`~group::custom models`](https://gitlab.com/groups/gitlab-com/-/labels?subscribed=&search=group%3A%3Acustom+models)
+- Issue トラッカー: [`~group::custom models`](https://gitlab.com/dashboard/issues?sort=title_asc&state=opened&label_name[]=group::custom+models)
+- Slack チャンネル: [#g_custom_models](https://gitlab.enterprise.slack.com/archives/C06DCB3N96F)
+- ラベル購読: [`~group::custom models`](https://gitlab.com/groups/gitlab-com/-/labels?subscribed=&search=group%3A%3Acustom+models)
 
 ### 組織ラベル
 
-Custom Models group が所有する Issue には、必要に応じて以下の labels を付けるべきです:
+Custom Models グループが所有する Issue には、適切に応じて以下のラベルを付けるべきです。
 
 - `~"group::custom models"`
 - `~"devops::ai-powered"`
@@ -114,227 +114,227 @@ Custom Models group が所有する Issue には、必要に応じて以下の l
 - `~"Category:Model personalization"`
 - `~"Category:Self-Hosted models"`
 
-加えて、Issue には関連する `~type:` と subtype labels を含めるべきです。
+加えて、Issue には関連する `~type:` とサブタイプのラベルを含めるべきです。
 
-## 働き方
+## 私たちの働き方
 
-私たちの operating framework は、ownership を visible に保ち、progress について team を honest にし、priorities が意味をなさない場合に push back する余地を作ります。bureaucracy は増やしません。
+私たちのオペレーティングフレームワークは、オーナーシップを可視に保ち、進捗についてチームを誠実に保ち、優先順位が筋の通らないときに反論できる余地を作ります。それを官僚主義を加えることなく行います。
 
-### Directly Responsible Individuals (DRIs)
+### 直接責任者 (DRI) {#directly-responsible-individuals-dri}
 
-team が active に取り組んでいるすべての Issue、機能、bug fix、initiative には、1 人の named **DRI** がいます。DRI は必ずしもすべての work を行う人ではありません。前に進め、unblocked に保つ責任を持つ人です。
+チームが現在取り組んでいるすべての Issue、機能、バグ修正、イニシアチブには、名前の付いた単一の **DRI** がいます。DRI は必ずしもすべての作業を行う人ではなく、それを前進させ、ブロックされない状態に保つ責任を持つ人です。
 
-DRI であることは次を意味します:
+DRI であることは、次のことを意味します。
 
-- **outcome** を所有します。task だけではありません。stuck しているなら、聞かれるのを待たずに raise します。
-- planning issue に少なくとも週 1 回 status を update します。
-- work を delegate できますが、accountability はあなたに残ります。
-- scope、priority、timeline が意味をなさない場合は、明確な理由を添えて push back できます（そしてそうすべきです）。
+- あなたはタスクだけでなく **成果（outcome）** を所有します。行き詰まっているなら、尋ねられるのを待たずに自分から声を上げます。
+- 少なくとも週に 1 回、計画用 Issue にステータスを更新します。
+- 作業を委任できますが、説明責任はあなたに残ります。
+- スコープ、優先順位、タイムラインが筋が通らない場合は、なぜかを明確に説明したうえで反論できます（そしてそうすべきです）。
 
-DRI の assign 方法:
+DRI の割り当て方法:
 
-- **New issues:** weekly sync で議論され、誰かが volunteer するか proposed されます。誰も volunteer しない場合は、その理由を議論します。実際には priority ではない、または team が overloaded なのかもしれません。
-- **RFHs and escalations:** relevant functional team の triage DRI が ownership を取るか、context とともに明示的に hand off します。
-- DRI assignment は team の planning issue で tracking されます。誰が何を所有しているかの single source of truth です。
+- **新しい Issue:** 週次の同期で議論し、誰かが立候補するか提案されます。誰も立候補しない場合は、その理由を議論します。実は優先事項ではないのかもしれませんし、チームが過負荷なのかもしれません。
+- **RFH とエスカレーション:** 関連する機能チームのトリアージ DRI が、オーナーシップを引き受けるか、コンテキストとともに明示的に引き継ぎます。
+- DRI の割り当ては、誰が何を所有するかの唯一の信頼できる情報源であるチームの計画用 Issue で追跡されます。
 
-DRI の再 assign は normal で low-friction なことであり、political event ではありません。これは **explicitly**（drift ではなく）行われるべきであり、新しい DRI がゼロから始めなくてよいだけの context を hand over する必要があります。
+DRI の再割り当ては、政治的なイベントではなく、通常の摩擦の少ないことです。それは（自然な流れではなく）**明示的に** 行われるべきであり、新しい DRI がゼロから始めずに済むだけの十分なコンテキストを引き継いで行われるべきです。
 
-### Weekly status updates
+### 週次ステータス更新
 
-各 active DRI は team planning issue に短い async update を投稿します。数行でよく、novel ではありません:
+各アクティブな DRI は、チームの計画用 Issue に短い非同期の更新を投稿します。数行であり、長編小説ではありません。
 
-- 今週進んだこと
-- blocked していることと必要なもの
-- coming week の next
+- 今週何が前進したか
+- 何がブロックされていて、何が必要か
+- 来週は何が次に来るか
 
-Example:
-
----
-
-**Async Status Update YYYY-MM-DD**
-
-**issue-title (link)**
-
-- Progress: ...
-- Blockers: ...
-- Confidence for current milestone: Slightly confident
-
-**issue-title (link)**
-
-- Progress: ...
-- Blockers: ...
-- Confidence for current milestone: Very confident
-
-**Confidence key:** Not confident · Slightly confident · Very confident
+例:
 
 ---
 
-planning issue 上の async updates が default であり、すべての active work の state を見る single place です。既存の engineering sync は主に blockers について hand を raise するために使われます。attendance は optional であり、参加できなくても他は何も変わりません（例: timezones）。
+**非同期ステータス更新 YYYY-MM-DD**
+
+**issue-title (link)**
+
+- 進捗: ...
+- ブロッカー: ...
+- 現在のマイルストーンへの確信度: 🟡 やや確信あり
+
+**issue-title (link)**
+
+- 進捗: ...
+- ブロッカー: ...
+- 現在のマイルストーンへの確信度: 🟢 非常に確信あり
+
+**確信度のキー:** 🔴 確信なし · 🟡 やや確信あり · 🟢 非常に確信あり
+
+---
+
+計画用 Issue 上の非同期更新がデフォルトであり、すべてのアクティブな作業の状態を確認できる唯一の場所です。既存のエンジニアリング同期は、主にブロッカーについて手を挙げるために使われます。出席は任意であり、参加できなくても（たとえばタイムゾーンの都合で）他に何も変わりません。
 
 ### 早めに手を挙げる
 
-stuck している、overloaded である、または work が想定より大きいと気づいた場合は、手を挙げてください。これは healthy team の運営方法であり、failure の sign ではありません:
+行き詰まっている、過負荷である、あるいは作業が予想より大きいと気づいたら、手を挙げてください。これは健全なチームの運営方法であり、失敗の兆候ではありません。
 
-- weekly update で flag する。
-- Slack で team に明確な ask とともに ping する: "I need help with X" または "I need someone to take over Y because Z."
-- Blocked items は weekly sync で最初に議論されます。
+- 週次更新でフラグを立てます。
+- 明確な依頼とともに Slack でチームにメンションします。「X について手伝ってほしい」「Z なので Y を引き継いでくれる人が必要」のように。
+- ブロックされている項目は、週次同期で最初に議論されます。
 
-### Push back と quantity より quality
+### 反論すること、そして量より質
 
-team は、current priorities と align しない work や、quality を compromise する work に対して push back する権限を持ちます:
+チームは、現在の優先順位に沿わない作業や、品質を損なう作業に対して反論する権限を与えられています。
 
-- Push back には **reason** を添えます（"We can't take this on this milestone because we're committed to X and Y"）。
-- request した person ではなく、work に向けます。
-- decision の record が残るよう documented します（issue への comment で十分です）。
+- 反論には **理由** を添えます（「私たちは X と Y にコミットしているので、このマイルストーンではこれを引き受けられません」）。
+- それは依頼した人ではなく、作業に向けられます。
+- それは（Issue へのコメントで十分です）文書化され、意思決定の記録が残るようにします。
 
-既存のものが solid になるまで、新しい models や configurations を追加する pressure には抵抗します。New model onboarding は lightweight readiness check を通ります:
+私たちは、既存のモデルや構成が堅牢になるまで、新しいモデルや構成を追加するプレッシャーに抵抗します。新しいモデルのオンボーディングは、軽量なレディネスチェックを通ります。
 
-1. documentation は complete か？
+1. ドキュメントは完成しているか？
 
-1. known issues は resolved されているか？
+1. 既知の問題は解決されているか？
 
-1. support は tickets に対応できる状態か？
+1. サポートはチケットに対応できる体制になっているか？
 
-"We're not adding this yet; here's what we need to get right first" は valid で encouraged な答えです。
+「これはまだ追加しません。まず先に正しくすべきことはこれです」は、有効で奨励される回答です。
 
-### Cadence
+### ケイデンス
 
-| Activity | Frequency | Owner |
+| アクティビティ | 頻度 | オーナー |
 | --- | --- | --- |
-| Weekly sync (review blockers, assign DRIs) | Weekly | EM |
-| Status update on planning issue | Weekly (async) | Each active DRI |
-| Triage of new RFHs / escalations | Ongoing | Triage DRI per functional team |
-| Retrospective on process health | Monthly | Team |
+| 週次同期（ブロッカーのレビュー、DRI の割り当て） | 週次 | EM |
+| 計画用 Issue へのステータス更新 | 週次（非同期） | 各アクティブな DRI |
+| 新しい RFH／エスカレーションのトリアージ | 継続的 | 機能チームごとのトリアージ DRI |
+| プロセスの健全性に関するレトロスペクティブ | 月次 | チーム |
 
-## エピックと Tech Leads を使った作業のスコープ設定
+## エピックと Tech Lead を使った作業のスコーピング
 
-エピックは、single Issue より大きい任意の work item、新機能、complex refactor、bug の primary definition of scope です。エピック内の Issue が work item の entire scope を構成し、それらがすべて closed になると work は complete になりエピックも closed になります。エピックは clear improvement を加えるイテレーションを enclose すべきですが、必ずしも機能全体を表すわけではありません。機能には複数のエピックが必要な場合があります。
+エピックは、単一の Issue より大きいあらゆる作業項目、すなわち新機能、複雑なリファクタリング、バグに対する、スコープの主要な定義です。エピック内の Issue が作業項目の全スコープを構成します。それらがすべてクローズされると作業は完了し、エピックはクローズされます。エピックは明確な改善を加えるイテレーションを内包すべきですが、エピックが必ずしも機能全体を表すわけではありません。機能全体には複数のエピックが必要になることもあります。
 
-エピックによって定義された work の technical ownership は **Tech Lead** に委譲されます。Tech Lead はエピックに assigned された engineer であり、scope が correct であることを保証します。Tech Lead は EM、PM、他の engineers と連携します。team の任意の engineer は、Tech Lead 自身を含め、Kanban process を使って self-assigned し、エピック内の Issue に取り組めます。
+エピックによって定義された作業の技術的オーナーシップは、エピックにアサインされ、スコープが正しいことを保証するエンジニアである **Tech Lead** に委任されます。Tech Lead は EM、PM、他のエンジニアと協働します。チームのどのエンジニアも、Tech Lead 自身を含め、Kanban プロセスを使って自分自身をアサインし、エピック内の Issue に取り組めます。
 
 ## チームのマイルストーン計画プロセス
 
-Custom Models は [Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/) と [Cross Functional Prioritization](/handbook/engineering/workflow/cross-functional-prioritization/) に従います。team は planning issue と boards を使って planning process を管理します。これを簡単にするための [Planning automation](https://gitlab.com/gitlab-org/ai-powered/custom-models/custom-models/-/blob/main/doc/planning/index.md) scripts が利用できます。
+Custom Models は、[プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)と[クロスファンクショナルな優先順位付け](/handbook/engineering/workflow/cross-functional-prioritization/)に従います。チームは計画用 Issue とボードを使って計画プロセスを管理します。これを容易にするための[計画自動化](https://gitlab.com/gitlab-org/ai-powered/custom-models/custom-models/-/blob/main/doc/planning/index.md)スクリプトが利用可能です。
 
-各 milestone の [Planning issues](https://gitlab.com/groups/gitlab-org/-/epics/13440) は PM によって作成され、PM、EM、stable counterparts の間で upcoming work を coordinate するために使われます。
+各マイルストーンの[計画用 Issue](https://gitlab.com/groups/gitlab-org/-/epics/13440) は PM が作成し、PM、EM、stable counterpart の間で今後の作業を調整するために使われます。
 
-各 milestone 中に、次の milestone の planning が完了します:
+各マイルストーン中に、次のマイルストーンの計画が完了されます。
 
-1. planning issues and boards の作成（EM or PM）
-1. [automation](https://gitlab.com/gitlab-org/ai-powered/custom-models/custom-models/-/merge_requests/95) で refinement issues を毎週作成
-1. milestone の candidate issues を特定し Planning Board に追加（PM, EM）
-1. team member capacity planning（EM）
-1. weights を使った effort estimation（Engineers and EM）
-1. planning board を finalise する joint planning session（PM, EM）
-1. engineers への work assignment、`~Deliverable` label の追加、planning issue の update（EM）
+1. 計画用 Issue とボードの作成（EM または PM）
+1. [自動化](https://gitlab.com/gitlab-org/ai-powered/custom-models/custom-models/-/merge_requests/95)による毎週のリファインメント Issue の作成
+1. マイルストーンの候補 Issue の特定と計画ボードへの追加（PM、EM）
+1. チームメンバーのキャパシティプランニング（EM）
+1. ウェイトを使った工数の見積もり（エンジニアと EM）
+1. 計画ボードを確定するための合同計画セッション（PM、EM）
+1. エンジニアへの作業の割り当て、`~Deliverable` ラベルの追加、計画用 Issue の更新（EM）
 
-### Planning Issue
+### 計画用 Issue
 
-毎月、PM が automation と [Custom Models Planning template](https://gitlab.com/gitlab-org/ai-powered/custom-models/custom-models/-/blob/main/.gitlab/issue_templates/milestone-planning-template.md) を使って planning issue を作成します。これは specific milestone の planning team members（PM, EM）向け discussion area であり、Planning and Build Boards へ link します。
+毎月、PM が自動化と [Custom Models Planning テンプレート](https://gitlab.com/gitlab-org/ai-powered/custom-models/custom-models/-/blob/main/.gitlab/issue_templates/milestone-planning-template.md)を使って計画用 Issue を作成します。これは特定のマイルストーンについての計画チームメンバー（PM、EM）の議論の場であり、計画ボードとビルドボードにリンクします。
 
-### Planning Board
+### 計画ボード {#planning-board}
 
-[Planning Board](https://gitlab.com/groups/gitlab-org/-/boards/7762631?milestone_title=17.7&label_name[]=group%3A%3Acustom%20models) は各 milestone について PM が作成し、category 別に curated された issues の list です。issues を多めに載せることができ、excess は planning call 中に next milestone または Next 1-3 Milestones board へ移されます。
+[計画ボード](https://gitlab.com/groups/gitlab-org/-/boards/7762631?milestone_title=17.7&label_name[]=group%3A%3Acustom%20models) は各マイルストーンについて PM が作成し、カテゴリ別に厳選された Issue のリストです。Issue で過負荷になることがあり、超過分は計画コール中に次のマイルストーンまたは Next 1-3 Milestones ボードに移動されます。
 
-PM は issues に `~workflow::planning breakdown` を mark し、issue description が clear で development ready であることを engineers に review してもらうよう EM に signal します。その後 engineer は weight を assign し、`~workflow::ready for development` label を apply します。
+PM は `~workflow::planning breakdown` で Issue にマークを付け、EM に対してエンジニアに Issue の説明をレビューし、それが明確で開発の準備ができていることを確認するよう依頼するシグナルを送ります。エンジニアはその後ウェイトをアサインし、`~workflow::ready for development` ラベルを適用します。
 
-### Ready for Development Status
+### 開発準備完了ステータス {#ready-for-development-status}
 
-作業可能な issues は `workflow::ready for development` と label されます。この label が付いた issues だけを Deliverable として engineer に assign すべきです。research が必要な場合は `~spike` label が assign されます。spike の scope は明確に stated されるべきで、outcome は code または refined issue になる場合があります。
+作業の準備ができた Issue には `workflow::ready for development` のラベルが付けられます。このラベルが付いた Issue のみが、Deliverable としてエンジニアにアサインされるべきです。調査が必要な場合は `~spike` ラベルがアサインされます。スパイクのスコープは明確に述べられるべきであり、その成果はコードか、洗練された Issue になることがあります。
 
-### Capacity Planning
+### キャパシティプランニング
 
-EM は team capacity を計算し、priority に基づいて release へ work lanes を assign する方法を maintain します。EM は planning issue に team capacity and DRIs を post します。
+EM は、チームのキャパシティを計算し、優先順位に基づいてリリースに作業レーンを割り当てる方法を維持します。EM は計画用 Issue にチームのキャパシティと DRI を投稿します。
 
-### Build Board
+### ビルドボード {#build-board}
 
-EM は previous-milestone slippage、PM preference、weight、priority に基づき、[Planning Board](#planning-board) から issues を選びます。その後 EM は release 内の各 issue に `~Deliverable` label を apply し、engineer に assign します。Issue は release を通じて Build Board で tracking されます。
+EM は、前のマイルストーンの遅れ、PM の好み、ウェイト、優先順位に基づいて [計画ボード](#planning-board) から Issue を選びます。EM はその後リリース内の各 Issue に `~Deliverable` ラベルを適用し、それをエンジニアにアサインします。Issue はリリース全体を通じてビルドボードで追跡されます。
 
-### Say / Do Ratio
+### say-do ratio（言ったことを必ずやる比率） {#say--do-ratio}
 
-Say / Do ratio は「完了した Issue / 割り当てられた Issue」を使って計算されます:
+say-do ratio（言ったことを必ずやる比率）は `完了した Issue / アサインされた Issue` を使って計算されます。
 
-- `~Deliverable` label とともに Build Board に追加された issues が割り当てられた Issue です。
-- milestone の終わりまでに closed された issues が完了した Issue です。
+- `~Deliverable` ラベルとともにビルドボードに追加された Issue が、アサインされた Issue です。
+- マイルストーンの終わりまでにクローズされた Issue が、完了した Issue です。
 
-### Issue Weights
+### Issue ウェイト {#issue-weights}
 
-各 issue には、それを close する work の estimate として weight が assign されます。weight 1 はおよそ 2 working days の effort です。issues は通常 3 を超えて weighted されません。大きな weights は、その issue をさらに分解すべきことを示します。
+各 Issue には、それをクローズするための作業の見積もりとしてウェイトがアサインされます。ウェイト 1 はおおよそ作業日 2 日分の工数です。Issue は一般にウェイト 3 を超えてウェイト付けされません。より大きなウェイトは、その Issue をさらに分解すべきであることを示します。
 
-### Planning and Delivery Boards
+### 計画ボードとデリバリーボード {#planning-and-delivery-boards}
 
-[Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/) のすべての workflow statuses が valid です。[Next 1-3](https://gitlab.com/groups/gitlab-org/-/boards/7472817?milestone_title=Next%201-3%20releases&label_name[]=group%3A%3Acustom%20models) と [Next 4-6 milestones](https://gitlab.com/groups/gitlab-org/-/boards/7472821?milestone_title=Next%204-6%20releases&label_name[]=group%3A%3Acustom%20models) boards は、refinement が必要な、または作業可能な issues を収容します。
+[プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)のすべてのワークフローステータスが有効です。[Next 1-3](https://gitlab.com/groups/gitlab-org/-/boards/7472817?milestone_title=Next%201-3%20releases&label_name[]=group%3A%3Acustom%20models) と [Next 4-6 マイルストーン](https://gitlab.com/groups/gitlab-org/-/boards/7472821?milestone_title=Next%204-6%20releases&label_name[]=group%3A%3Acustom%20models)のボードは、リファインメントが必要な Issue や作業の準備ができた Issue を収容します。
 
-| Board | Filters | Columns |
+| ボード | フィルター | カラム |
 | --- | --- | --- |
-| Planning Board | Milestone, `~group::custom models` | `~type::bug`, `~type::maintenance`, `~type::feature` |
-| Build Board | Milestone, `~group::custom models`, `~Deliverable` | `~workflow::ready for development`, `~workflow::in dev`, `~workflow::in review`, `~workflow::awaiting security release`, `~workflow::blocked` |
-| Next 1-3 Milestones | `%Next 1-3 Milestones` | `~workflow::problem validation`, `~workflow::design`, `~workflow::solution validation`, `~workflow::planning breakdown`, `~workflow::ready for development` |
-| Next 4-6 Milestones | `%Next 4-6 Milestones` | Same as Next 1-3 Milestones |
+| 計画ボード | Milestone, `~group::custom models` | `~type::bug`, `~type::maintenance`, `~type::feature` |
+| ビルドボード | Milestone, `~group::custom models`, `~Deliverable` | `~workflow::ready for development`, `~workflow::in dev`, `~workflow::in review`, `~workflow::awaiting security release`, `~workflow::blocked` |
+| 次の 1〜3 マイルストーン | `%Next 1-3 Milestones` | `~workflow::problem validation`, `~workflow::design`, `~workflow::solution validation`, `~workflow::planning breakdown`, `~workflow::ready for development` |
+| 次の 4〜6 マイルストーン | `%Next 4-6 Milestones` | 次の 1〜3 マイルストーンと同じ |
 
-### Issue Milestones
+### Issue マイルストーン {#issue-milestones}
 
-- issues は planned されている、または現在作業中の場合、current or next milestone に assign されます。
-- 作業予定のない issues には `%Backlog` が assign されます。ただし community contribution で対応される場合があります。
-- `%Awaiting Customer Feedback` は customer interest に応じて作業される場合があります。
+- Issue は、取り組む予定であるか現在取り組まれている場合、現在または次のマイルストーンにアサインされます。
+- Issue が取り組まれることを意図していない場合は `%Backlog` がアサインされますが、コミュニティの貢献によって対応される可能性はあります。
+- `%Awaiting Customer Feedback` は、顧客の関心待ちで取り組まれる可能性があります。
 
-[issue triage report](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/17099) は milestone assignment が必要な issues を highlight します。
+[Issue トリアージレポート](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/17099)は、マイルストーンのアサインが必要な Issue を強調表示します。
 
-## 顧客サポートと Requests for Help {#customer-support--requests-for-help}
+## カスタマーサポートと Requests for Help {#customer-support--requests-for-help}
 
-customers（existing and prospective）との calls をよりよく support するため、Custom Models は customer support requests を prioritize する engineers を提供し、load and knowledge が team 全体で shared されるようにします。
+顧客（既存および見込み）とのコールをよりよくサポートするため、Custom Models はカスタマーサポートのリクエストを優先するエンジニアを提供し、負荷と知識がチーム全体で共有されるようにします。
 
-**RFHs は、その scope に該当する functional team が所有します**。Gateway Services は gateway RFHs を扱い、Health & Connectivity は setup/connectivity RFHs を扱う、という形です。各 functional team は **triage DRI** を assign し、その DRI が RFH を resolution まで drive するか、context とともに明示的に hand off します。Support requests は 24h 以内に acknowledged されるべきです。
+**RFH は、それが属するスコープの機能チームが所有します**。ゲートウェイサービスはゲートウェイの RFH を、健全性と接続性チームはセットアップ／接続性の RFH を、というように処理します。各機能チームは **トリアージ DRI** をアサインし、その DRI が RFH を解決まで推進するか、コンテキストとともに明示的に引き継ぎます。サポートリクエストは 24 時間以内に確認されるべきです。
 
-customer の help を request するには、[request for help issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?description_template=SupportTemplateRequest-SelfHostedModels) を作成し、[#g_custom_models](https://gitlab.enterprise.slack.com/archives/C06DCB3N96F) で共有してください。同じ channel で他の team members に help を求めることをためらわないでください。
+顧客のために助けを求めるには、[request for help issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/new?description_template=SupportTemplateRequest-SelfHostedModels) を作成し、[#g_custom_models](https://gitlab.enterprise.slack.com/archives/C06DCB3N96F) で共有してください。同じチャンネルで他のチームメンバーに助けを求めることをためらわないでください。
 
-### support における triage DRI の責任
+### サポートにおけるトリアージ DRI の責任
 
-- [Requests for Help](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=opened&label_name%5B%5D=group%3A%3Acustom%20models&first_page_size=20) を triage する。
-- [#g_custom_models](https://gitlab.enterprise.slack.com/archives/C06DCB3N96F) と [#custom_model_rfh](https://gitlab.enterprise.slack.com/archives/C0B4URWF2PN) に届く requests を monitor する。
-- request-for-help issues が作成されていることを確認する。
-- Slack で support questions に答え、可能な限り documentation へ redirect する。
-- 必要に応じて Solution Architects または Sales reps が lead する customer calls に参加し、resolved されるか support engineer に handed off されるまで customer との communication を own する。
-- outcomes に基づいて act する:
-  1. SAs and customers がより self-sufficient になるために documentation を追加できるか？
-  1. better tooling が役立つか？必要な changes を含む issue を作成する。
-  1. 見逃していた bug だったか？次回どう avoid するか？
-- 対応できない場合は EM に事前に notify する。
-- 次の support engineer に必要な context を hand over する。
+- [Requests for Help](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=opened&label_name%5B%5D=group%3A%3Acustom%20models&first_page_size=20) をトリアージする。
+- [#g_custom_models](https://gitlab.enterprise.slack.com/archives/C06DCB3N96F) と [#custom_model_rfh](https://gitlab.enterprise.slack.com/archives/C0B4URWF2PN) で受信するリクエストをモニタリングする。
+- request-for-help issue が作成されていることを確認する。
+- Slack でサポートの質問に回答し、可能な限りドキュメントへ誘導する。
+- 必要なときに Solution Architect や Sales 担当者が主導する顧客コールに参加し、解決されるかサポートエンジニアに引き継がれるまで顧客とのコミュニケーションを所有する。
+- 成果に基づいて行動する:
+  1. SA と顧客がより自立できるようドキュメントを追加できるか？
+  1. より良いツールが役立つか？ 必要な変更を伴う Issue を作成する。
+  1. 私たちが見逃したバグだったか？ 次回どう回避するか？
+- 不在になる場合は事前に EM に通知する。
+- 必要なコンテキストをサポートの次のエンジニアに引き継ぐ。
 
-support 中の engineers に期待されないこと:
+サポートのエンジニアに期待され **ない** ことは次のとおりです。
 
-- preferred working hours 外に available であること。ただし urgent な requests は翌 working day の最初に対応すべき場合があります。そのような状況では EM and PM に consult してください。
-- specific case で agreed されない限り、customer calls を lead すること。
-- specific case で agreed されない限り、demos を present すること。
+- 希望する勤務時間外に対応可能であること。ただし一部のリクエストは緊急であり、翌営業日の最優先で取り組むべきです。そうした状況では EM と PM に相談してください。
+- 特定のケースで合意された場合を除き、顧客コールを主導すること。
+- 特定のケースで合意された場合を除き、デモを行うこと。
 
-## Communication
+## コミュニケーション
 
-Custom Models は以下の guidelines に基づいて communication します:
+Custom Models は以下のガイドラインに基づいてコミュニケーションを行います。
 
-1. sync meetings より async communication を常に優先する。
-1. async が inefficient であることが分かった場合は、[sync call](#ad-hoc-sync-calls) を arrange することをためらわない。ただし team members と share できるよう record するよう努める。
-1. [Transparency by Default](/handbook/security/transparency-by-default/)。
-1. work-related communication の primary channel は [#g_custom_models](https://gitlab.enterprise.slack.com/archives/C06DCB3N96F) Slack channel です。
-1. Internal team issues and projects は [`gitlab-org/ai-powered/custom-models`](https://gitlab.com/gitlab-org/ai-powered/custom-models) の下に namespaced されています。
+1. 同期ミーティングよりも常に非同期コミュニケーションを優先する。
+1. 非同期が非効率だと判明したときに[同期コール](#ad-hoc-sync-calls)を設定することをためらわない。ただしチームメンバーと共有するために録画するようにする。
+1. [デフォルトで透明性](/handbook/security/transparency-by-default/)。
+1. 仕事関連のコミュニケーションの主要チャンネルは [#g_custom_models](https://gitlab.enterprise.slack.com/archives/C06DCB3N96F) Slack チャンネルです。
+1. 内部のチーム Issue とプロジェクトは [`gitlab-org/ai-powered/custom-models`](https://gitlab.com/gitlab-org/ai-powered/custom-models) の下に名前空間化されています。
 
-## Pings の確認
+## メンションの確認
 
-Slack または GitLab で名前を指定して ping された場合は、threaded comment または emoji のいずれかで acknowledge してください。
+Slack または GitLab で名前を指名してメンションされた場合は、スレッドへのコメントまたは絵文字で確認してください。
 
-## Time Off
+## 休暇
 
-team members は、capacity planning 中に EM が proper number of days off を使えるように、すべての [Paid Time Off](/handbook/people-group/time-off-and-absence/time-off-types/) を "Workday" Slack app に追加すべきです。可能であれば、full milestone 1 つ分前に time off を追加してください。
+チームメンバーは、[有給休暇（Paid Time Off）](/handbook/people-group/time-off-and-absence/time-off-types/)を「Workday」Slack アプリに追加し、EM がキャパシティプランニング中に正しい休暇日数を使えるようにすべきです。可能な場合は、マイルストーン 1 つ分前もって休暇を追加してください。
 
-last-minute で unplanned な PTO needs は常に起こりえます。必要な time は取得してください。ただし、Workday に入力し、できるだけ早く EM と communicate してください。
+直前の計画外の PTO のニーズは常にあり得ます。必要な休暇は取得してください。ただしそれを Workday に入力し、できるだけ早く EM とコミュニケーションを取ってください。
 
-## Ad-hoc sync calls
+## アドホックな同期コール {#ad-hoc-sync-calls}
 
-私たちは default で async communication を使って運営しています。sync discussion が有益な場合もあり、必要に応じて required people と sync calls を schedule することを team members に推奨します。
+私たちはデフォルトで非同期コミュニケーションを使って運用します。同期での議論が有益なときもあり、チームメンバーには必要に応じて必要な人々と同期コールをスケジュールすることを推奨します。
 
-## Blog Posts
+## ブログ記事
 
-Custom Models team members が書いた blog posts:
+Custom Models チームメンバーが執筆したブログ記事:
 
 - [Developing GitLab Duo: How we validate and test AI models at scale](https://about.gitlab.com/blog/2024/05/09/developing-gitlab-duo-how-we-validate-and-test-ai-models-at-scale/)、[@susie.bee](https://gitlab.com/susie.bee)
 - [GitLab Duo Self-Hosted: Enterprise AI built for data privacy](https://about.gitlab.com/blog/2025/02/27/gitlab-duo-self-hosted-enterprise-ai-built-for-data-privacy/)、[@susie.bee](https://gitlab.com/susie.bee)
