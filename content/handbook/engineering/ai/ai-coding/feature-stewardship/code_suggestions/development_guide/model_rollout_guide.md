@@ -11,7 +11,7 @@ stale: false
 
 このドキュメントは、Code Suggestions モデルをロールアウトするためのガイドとして機能します。
 
-## ロールアウト計画の作成
+## ロールアウト計画の作成 {#create-a-rollout-plan}
 
 [Rollout Plan Template](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Code%20Suggestions%20Model%20Rollout%20Plan) を使用して Issue を作成します。これは、新しいモデルの実装の前または実装中に行う必要があります。異なる[ロールアウトフェーズ](#rollout-phases)ごとに、特定のロールアウト計画を作成する必要がある場合があります。
 

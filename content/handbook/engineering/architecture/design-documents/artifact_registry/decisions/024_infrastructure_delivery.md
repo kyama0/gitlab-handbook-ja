@@ -69,7 +69,7 @@ Config-Mgmt に統合され、Runway の外部で管理されます。
 
 この分担は Artifact Registry チームと Runway チームの間で合意されました:
 
-| Infrastructure | How it is provided | Tracking |
+| インフラストラクチャ | 提供方法 | 追跡 |
 |---|---|---|
 | CloudSQL (database) | Runway がプロビジョニング | Runway [`team#933`](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/work_items/933) |
 | Memorystore Redis (cache) | Runway がプロビジョニング | Runway [`team#931`](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/work_items/931) |

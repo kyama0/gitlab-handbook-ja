@@ -23,12 +23,12 @@ stale: false
 
 | | |
 |---|---|
-| **Problem** | Organization をレガシー Cell からターゲット Cell へ移行する自動化が存在しない。 |
-| **Approach** | 任意のエンジニアが各移動を順序付けられたステップのシーケンスとして実行できる、Runway でデプロイされるコントロールプレーンとして Org Mover を構築する。Org Mover はデータを移動するシステムを調整するが、データ自体は移動しない。Org Mover は REST API を公開する。 |
-| **Status** | 提案中 |
-| **Scope** | GitLab.com SaaS のみ: レガシー Cell からターゲット Cell。詳しくは [Scope](#scope) と [Non-goals](#non-goals) を参照。 |
-| **Decision needed** | Tenant Scale、Geo、Siphon、Infrastructure のステークホルダーによるコントロールプレーンの形、スコープ、非目標の承認。 |
-| **See also** | [ADR-002 rollback](002_rollback_strategy.md) · [ADR-010 read-only mode](../../organization/decisions/010_organization_read_only_mode.md) · [Org data migration blueprint](../_index.md) |
+| **問題** | Organization をレガシー Cell からターゲット Cell へ移行する自動化が存在しない。 |
+| **アプローチ** | 任意のエンジニアが各移動を順序付けられたステップのシーケンスとして実行できる、Runway でデプロイされるコントロールプレーンとして Org Mover を構築する。Org Mover はデータを移動するシステムを調整するが、データ自体は移動しない。Org Mover は REST API を公開する。 |
+| **ステータス** | 提案中 |
+| **スコープ** | GitLab.com SaaS のみ: レガシー Cell からターゲット Cell。詳しくは [スコープ](#scope) と [非目標](#non-goals) を参照。 |
+| **必要な決定** | Tenant Scale、Geo、Siphon、Infrastructure のステークホルダーによるコントロールプレーンの形、スコープ、非目標の承認。 |
+| **関連** | [ADR-002 ロールバック](002_rollback_strategy.md) · [ADR-010 読み取り専用モード](../../organization/decisions/010_organization_read_only_mode.md) · [Organization データ移行ブループリント](../_index.md) |
 
 ### Organization を Cells 間で移動する必要がある理由 {#why-do-we-need-to-move-organizations-across-cells}
 
