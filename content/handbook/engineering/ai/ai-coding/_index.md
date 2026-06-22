@@ -2,69 +2,30 @@
 title: "AI Coding グループ"
 description: AI Coding グループは AI Engineering 組織の一部であり、ユーザー向けの AI 駆動コーディング機能に注力しています。
 upstream_path: /handbook/engineering/ai/ai-coding/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-06T00:00:00Z"
-translator: claude
+upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
+translated_at: "2026-06-23T06:53:07+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-01T11:55:38+01:00"
+lastmod: "2026-06-22T12:16:47-05:00"
 ---
 
-## チームの概要
+## 概要
 
-AI Coding グループは、開発者がコードを書き、理解し、改善するのを支援する AI 駆動の機能を開発しています。私たちは GitLab 全体で開発者体験を向上させるインテリジェントなツールの作成に注力しています。
+AI Coding グループは、開発者がコードを書き、理解し、改善するのを支援する AI 駆動の機能を開発しています。このグループは機能チームに分かれており、それぞれが特定の領域に注力しています。
 
-## 私たちのプロジェクト
+## 機能チーム
 
-AI Coding チームは、以下のプロジェクトを所有し、活発に作業しています。
+1. [Code Review](code-review/) - Code Review Workflow と Duo Code Review 機能にまたがるコードレビュー組織。
+1. [DAP Events](dap-events/) - Duo Flows を自動的に実行できるようにするイベントプラットフォームとトリガーシステム。
+1. [DAP Repository Flows](dap-repository-flows/) - リポジトリを健全かつ最新に保つ DAP オンボーディングとバックグラウンドエージェント。
 
-- [Code Suggestions](/handbook/engineering/ai/ai-coding/code_suggestions/) - IDE 内での AI 生成コード補完および生成。
-- [Duo Code Review](/handbook/engineering/ai/ai-coding/duo_code_review/) - AI 駆動のコードレビュー支援とインサイト。
-- [Duo Context Exclusion](/handbook/engineering/ai/ai-coding/duo_context_exclusion/) - 機密または無関係なコードコンテキストのフィルタリング。
-- [Codebase Semantic Indexing](/handbook/engineering/ai/ai-coding/codebase_semantic_indexing/) - 埋め込みを使用した高度なコード検索および発見機能。
-- [GitLab Events Platform](/handbook/engineering/ai/ai-coding/event_platform/) - GitLab Duo Flows を自動的に実行できるようにします。
-- [Code-related Slash Commands](/handbook/engineering/ai/ai-coding/slash_commands/) - `/explain`、`/refactor`、`/tests`、`/fix` などのインタラクティブな Duo Chat コマンド。
-- [Repository X-Ray](/handbook/engineering/ai/ai-coding/repository_xray/) - コードサジェスチョンのコンテキストを強化するためのリポジトリ分析とメタデータ抽出。
-- [AI Assisted Service](/handbook/engineering/ai/ai-coding/ai_assisted_service/) - 私たちの機能を支えるコア AI インフラストラクチャとサービス。
+## 機能のスチュワードシップ
 
-### 評価とテスト
-
-AI Coding は、すべての機能にわたる評価を担当しており、以下が含まれます。
-
-- LangSmith でのデータセットの作成と、[Datasets リポジトリ](https://gitlab.com/gitlab-org/modelops/ai-model-validation-and-research/ai-evaluation/datasets/-/blob/main/doc/guidelines/register_dataset.md#registration-process) への登録。[Code Creation Datasets](https://gitlab.com/gitlab-org/code-creation) もあります。
-- [Centralized Evaluation Framework](https://gitlab.com/gitlab-org/modelops/ai-model-validation-and-research/ai-evaluation/prompt-library) での評価器の作成
-- 評価の実行
-
-## お問い合わせ
-
-AI Coding グループとつながるには、以下の情報を使用してください。
-
-| カテゴリ           | 名前                                           |
-|--------------------|------------------------------------------------|
-| GitLab チームハンドル | @gitlab-org/ai-engineering/ai-coding/engineers |
-| Slack チャンネル      | #g_ai_coding                                   |
-
-## チームメンバー
-
-以下のメンバーが AI Coding チームの常任メンバーです。
-
-{{< team-by-manager-slug manager="mnohr" team="AI Coding">}}
-
-GitLab の Issue／MR で `@gitlab-org/ai-engineering/ai-coding/engineers` ハンドルを使用すると、チーム全体に連絡できます。
-
-## ステーブルカウンターパート
-
-他の機能チームの以下のメンバーが、私たちのステーブルカウンターパートです。
-
-| カテゴリ          | カウンターパート                                                                       |
-|-------------------|--------------------------------------------------------------------------------------|
-| Product Manager   | {{< member-by-name "Jordan Janes" >}}                                                |
-| Technical Writing | {{< member-by-name "Uma Chandran" >}}                                                |
-| UX                | TBD                                                                                  |
-| Support           | [TBD](/handbook/support/support-stable-counterparts/)                                |
+- [Feature Stewardship](feature-stewardship/) - Code Suggestions、AI Assisted Service、Duo Context Exclusion など、恒久的なオーナーシップが決まるまで AI Coding がスチュワードシップを担う機能。
 
 ## 私たちの働き方
 
-オンボーディング、休暇、Issue ボード、ミーティングなど、チームの働き方の詳細については、[How We Work](/handbook/engineering/ai/ai-coding/how-we-work/) ページを参照してください。
+オンボーディング、休暇、Issue ボード、ミーティングなど、チームの働き方の詳細については、[How We Work](how-we-work/) ページを参照してください。
 
 ## ダッシュボードとモニタリング
 

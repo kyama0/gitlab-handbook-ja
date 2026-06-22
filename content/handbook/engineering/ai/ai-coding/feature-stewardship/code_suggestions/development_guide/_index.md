@@ -1,19 +1,19 @@
 ---
 title: "開発ガイド"
 description: "Code Suggestions 機能に取り組むエンジニア向けの開発ガイドライン"
-upstream_path: /handbook/engineering/ai/ai-coding/code_suggestions/development_guide/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
-translator: claude
+upstream_path: /handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/
+upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
+lastmod: "2026-06-22T12:16:47-05:00"
+translated_at: "2026-06-23T07:24:31.0151723+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-16T11:38:55-06:00"
 ---
 
 ## はじめに
 
 このドキュメントには、エンジニア向けの Code Suggestions 開発ガイドラインが含まれています。
 
-Code Suggestions の概要については、[AI Engineering グループのエンジニアリングガイド](/handbook/engineering/ai/ai-coding/code_suggestions/engineering_overview/) を参照してください
+Code Suggestions の概要については、[AI Engineering グループのエンジニアリングガイド](/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/engineering_overview/) を参照してください
 
 ## 新しい AI モデルのサポート
 

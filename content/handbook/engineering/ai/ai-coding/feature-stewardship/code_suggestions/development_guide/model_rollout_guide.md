@@ -1,12 +1,12 @@
 ---
 title: "Code Suggestions モデルロールアウトガイド"
 description: "Code Suggestions 向けの新しい AI モデルをロールアウトするためのガイドライン"
-upstream_path: /handbook/engineering/ai/ai-coding/code_suggestions/development_guide/model_rollout_guide/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
-translator: claude
+upstream_path: /handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/model_rollout_guide/
+upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
+lastmod: "2026-06-22T12:16:47-05:00"
+translated_at: "2026-06-23T07:24:31.0151723+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-16T11:38:55-06:00"
 ---
 
 このドキュメントは、Code Suggestions モデルをロールアウトするためのガイドです。
@@ -15,11 +15,11 @@ lastmod: "2025-12-16T11:38:55-06:00"
 
 [ロールアウト計画テンプレート](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Code%20Suggestions%20Model%20Rollout%20Plan)を使って Issue を作成してください。
 これは新しいモデルの実装の前または実装中に行う必要があります。
-[ロールアウトフェーズ](#ロールアウトフェーズ)ごとに個別のロールアウト計画を作成する必要がある場合があります。
+[ロールアウトフェーズ](#rollout-phases)ごとに個別のロールアウト計画を作成する必要がある場合があります。
 
 ## ロールアウト方式
 
-新しいモデルのロールアウトは、[`beta` 機能フラグ](./implementation_guidelines.md#introduce-behind-a-feature-flag)を通じて行われます。
+新しいモデルのロールアウトは、[`beta` フィーチャーフラグ](./implementation_guidelines.md#introduce-behind-a-feature-flag)を通じて行われます。
 
 ## ロールアウト前のチェックリスト
 
@@ -56,7 +56,7 @@ lastmod: "2025-12-16T11:38:55-06:00"
 
 ### [オプション] 選択された顧客を新しいモデルからオプトアウトする
 
-ロールアウトのタイムライン内で新しいモデルに切り替えることができない顧客もいるかもしれません。[オプトアウト機能フラグ](./implementation_guidelines.md#allow-customers-to-opt-out)を実装することで、彼らをオプトアウトできます。
+ロールアウトのタイムライン内で新しいモデルに切り替えることができない顧客もいるかもしれません。[オプトアウトフィーチャーフラグ](./implementation_guidelines.md#allow-customers-to-opt-out)を実装することで、彼らをオプトアウトできます。
 
 理想的には、すべてのユーザーへのロールアウト _前_ に、関連する顧客に対してこのオプトアウトを有効にすべきです。
 

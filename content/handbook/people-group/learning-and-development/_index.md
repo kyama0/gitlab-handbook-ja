@@ -1,11 +1,11 @@
 ---
 title: タレント開発
 upstream_path: /handbook/people-group/learning-and-development/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
-translator: claude
+upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
+translated_at: "2026-06-23T06:53:07+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-30T16:57:54+00:00"
+lastmod: "2026-06-22T11:33:10+00:00"
 ---
 
 ## 概要
@@ -42,7 +42,6 @@ lastmod: "2026-04-30T16:57:54+00:00"
 - Senior Director, Talent Management and Development: Courtney Schneider
 - [Senior Learning and Development Program Manager](/job-description-library/people-group/learning-development#intermediate-learning--development-program-manager): [Jamie Allen](https://gitlab.com/jallen16)
 - [Senior Learning and Development Program Manager](/job-description-library/people-group/learning-development#intermediate-learning--development-program-manager): Lauren Cairns
-- [Senior Learning and Development Program Manager](/job-description-library/people-group/learning-development#intermediate-learning--development-program-manager): MQ Gillespie
 - Senior Manager, Talent Management: 空席
 
 ## チームメンバー向けリソース
