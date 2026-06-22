@@ -5490,11 +5490,11 @@
     },
     "content/handbook/engineering/ai/ai-coding/_index.md": {
       "path": "content/handbook/engineering/ai/ai-coding/_index.md",
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-05-06T00:00:00Z",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
       "model": "claude-opus-4-7",
-      "input_hash": "2d06b7a7b5c08a9ba311c8fb59805008e91a0cc217e2de975f6e3f486867ddf6",
-      "upstream_committed_at": "2026-04-01T11:55:38+01:00"
+      "input_hash": "8f52b6acc8502300aa1baedd26e0cfa3976cec71b64c32b7d0ceb1e379005ce9",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
     },
     "content/handbook/engineering/ai/ai-coding/ai_assisted_service.md": {
       "path": "content/handbook/engineering/ai/ai-coding/ai_assisted_service.md",
@@ -5938,11 +5938,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/_index.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T12:49:33Z",
-      "model": "codex",
-      "input_hash": "f80728c04e6e339cc7ddd24f6293bd929fdd3a8da99501cbc67efc4e0bc88a99",
-      "upstream_committed_at": "2026-06-19T12:48:58+02:00"
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fd2fe5f784275d012bbfc2bad10554f72fb65629e62e19ef4917f92d8176dcc9",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth.md",
@@ -5994,11 +5994,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/004_data_and_application_limits.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/004_data_and_application_limits.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "c7a0f93094833074ef7be6e0e44e8fdc3b3d78c78c5cac65fe6ca92793a63fc0",
-      "upstream_committed_at": "2026-03-19T11:46:16+01:00"
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "8bfa7e7cfaae8f12129b5092be89d498bd53afe6cfe8faffdb5894a6793f014c",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md",
@@ -22314,11 +22314,11 @@
     },
     "content/handbook/support/workflows/usgovernment_oncall.md": {
       "path": "content/handbook/support/workflows/usgovernment_oncall.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T13:37:44Z",
-      "model": "codex",
-      "input_hash": "9a48ce69947dee0aeda1183dff4aaf9314f387b878848a6a326d689d2dfbb677",
-      "upstream_committed_at": "2026-06-19T16:04:17-04:00"
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b7a12955087fea6dab1f9c07bb49033e30298a2e7e2ef0b6322805d53dcc4f51",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
     },
     "content/handbook/support/workflows/usgovernment_oncall_checklist.md": {
       "path": "content/handbook/support/workflows/usgovernment_oncall_checklist.md",
@@ -32314,11 +32314,11 @@
     },
     "content/handbook/people-group/learning-and-development/_index.md": {
       "path": "content/handbook/people-group/learning-and-development/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
       "model": "claude-opus-4-7",
-      "input_hash": "942e47342b95938481fdffa85c0407a49b3f7980c689d8dd5048a29b8b56fa67",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
+      "input_hash": "f8f1e83f03738df5af18da386e8e7d86fa5a1c1860b08f96357693bef84164c9",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
     },
     "content/handbook/people-group/learning-and-development/hone.md": {
       "path": "content/handbook/people-group/learning-and-development/hone.md",
@@ -33314,11 +33314,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/organization-data-migration/decisions/003_org_mover_architecture.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization-data-migration/decisions/003_org_mover_architecture.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T14:41:51Z",
-      "model": "codex",
-      "input_hash": "b4c216d656bd7f209a3e879c142645136de063b52ce38ec91144e16927002ed6",
-      "upstream_committed_at": "2026-06-17T14:07:31+12:00"
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "092513bcb6547f00918671df48463ae42f56269de91633fa74d157c0a355cdc5",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
     },
     "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md": {
       "path": "content/handbook/engineering/architecture/design-documents/organization/decisions/011_onboarding.md",
@@ -33343,6 +33343,134 @@
       "model": "codex",
       "input_hash": "349cba88573ecaa77fec04bc683cc1cddb6aa2ed87fea007c58522a230c377ae",
       "upstream_committed_at": "2026-06-22T09:27:06+12:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/024_infrastructure_delivery.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/024_infrastructure_delivery.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "2993ad4c9cc9cb8b9302d0b2606a0c362b814bb3a84a75eb98b09a489fbf2b46",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/engineering_overview.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/engineering_overview.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "d1a93eddc6dcbbe12797b2c16c09753c41b074494168e6b9f5c438bc42923531",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/implementation_guidelines.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/implementation_guidelines.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "ab4acf9cf88ba0f4cb35eabe43958d5196b4b27b3a2192a328a9a8d6d3c9aa24",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/feature-stewardship/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/_index.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "bc8b140450590719bf4c7101f78b4c971928e43533d8c1f59fc2bd88b1e9fb86",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/feature-stewardship/ai_assisted_service.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/ai_assisted_service.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fc126b8984716251a20ba15322dbc650604a9281edfcbbb61adce13508d51de9",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/feature-stewardship/duo_context_exclusion.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/duo_context_exclusion.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "54300ebe3d8dfdc10986c79e50eb04946a65c381a8472482493a97ae0ab13c78",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/_index.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "b6c143c55d4b50670948c2f9affff18e27c6af93403ee1e89efe459ff99be7ae",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/_index.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "14df90622dbe7009f69ea84c866630dac2d45a5dceb0ce3379cf90133cc2616c",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/model_evaluation_guide.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/model_evaluation_guide.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "1a850e9d1ef4f2e2b555814f7305779008f749a3d75695df1850c66d912b2f52",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/model_rollout_guide.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/model_rollout_guide.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "fdb66d8c93f9951c309372b4dde4dd8b0458c042b99cbff3c866e64abb381365",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/testing_guide.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/testing_guide.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "47972a5425c488e5b004ef6d5cfa0c9ee236491d58ae788f79c21adafd1440c7",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/dap-repository-flows/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/dap-repository-flows/_index.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "100f0cd978968fa4e0fe44694864efb33d948c6c46a8a38fdee78b8fb74de481",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/dap-events/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/dap-events/_index.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "29cea6d7bfc1d722b7954b59d61e85f5db41d3e098b9898bbd5654c1fc065dc6",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/code-review/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/code-review/_index.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "82d4cb3eb853d9894f1029b5dfc3b59f9acfe4178e2c410d91c6a6b900f35d61",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/code-review/workflow/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/code-review/workflow/_index.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "a414c41fcf2d6d17528f4079597e637bd61d292faf50aebd699be9504f647f20",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/code-review/dap/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/code-review/dap/_index.md",
+      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
+      "translated_at": "2026-06-22T21:07:39Z",
+      "model": "claude-opus-4-7",
+      "input_hash": "9318f9da00e3081990fa3f70e4600681849dac61eaeb08bc8d8483e44e0f5c1d",
+      "upstream_committed_at": "2026-06-22T16:36:51-04:00"
     }
   }
 }
