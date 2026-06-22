@@ -17,7 +17,7 @@ translator: claude
 stale: false
 ---
 
-## Summary
+## サマリー
 
 **Org Mover** は、GitLab.com の Organization を Cells 間で移動する処理をオーケストレーションする、[Runway](https://docs.runway.gitlab.com/)でデプロイされるコントロールプレーンサービスです。
 

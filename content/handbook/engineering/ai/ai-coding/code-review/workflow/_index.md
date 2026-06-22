@@ -9,13 +9,13 @@ translator: claude
 stale: false
 ---
 
-## Overview
+## 概要
 
 Code Review Workflow チームは AI Coding 組織の一部であり、Create:Code Review グループから移行してきました。このチームは、開発者がより速く、より高品質なコードレビューを得られるよう支援する、AI を活用した機能に注力しています。
 
 このページは作成中です。
 
-## Key Information
+## 主要情報
 
 | | |
 |---|---|
@@ -24,6 +24,6 @@ Code Review Workflow チームは AI Coding 組織の一部であり、Create:Co
 | **Group Label** | `group::code review` |
 | **Category Labels** | `Category:Code Review Workflow`, `Category:GitLab CLI` |
 
-## Documentation
+## ドキュメント
 
 - [Code Review documentation](https://docs.gitlab.com/ee/user/project/merge_requests/reviews/)

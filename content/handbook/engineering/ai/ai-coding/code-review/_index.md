@@ -9,7 +9,7 @@ translator: claude
 stale: false
 ---
 
-## Overview
+## 概要
 
 AI Coding 内の Code Review 組織は、AI を通じてコードレビューをより速く、より高品質にすることに注力しています。この組織は、コアとなるコードレビューのワークフローと、AI を活用した Code Review 機能の両方にまたがり、統一されたチーム構造に向けて取り組んでいます。
 
@@ -18,7 +18,7 @@ AI Coding 内の Code Review 組織は、AI を通じてコードレビューを
 1. [Code Review Workflow](workflow/) - コアとなるコードレビューのワークフロー機能。Create ステージから AI Coding へ移行中です。
 1. [DAP Code Review](dap/) - マージリクエスト向けの AI を活用した DAP Code Review 機能。
 
-## Key Information
+## 主要情報
 
 | | |
 |---|---|

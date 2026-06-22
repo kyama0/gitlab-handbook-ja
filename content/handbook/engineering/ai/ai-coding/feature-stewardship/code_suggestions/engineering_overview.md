@@ -17,7 +17,7 @@ Code Suggestions の中核は、IDE 拡張機能、Language Server、GitLab Work
 
 以下では、このエコシステムにおける各コンポーネントの役割を詳しく説明し、システム内のデータの流れを示し、迅速な候補提示と詳細なコード生成の両方を提供するために、さまざまな種類のコーディングインタラクションがどのように処理されるかを解説します。
 
-## Code Suggestions の技術概要
+## Code Suggestions の技術概要 {#code-suggestions-technical-overview}
 
 Code Suggestions は通常、次の図に示すシーケンスに従います。
 
@@ -74,7 +74,7 @@ Code Completion インタラクションは、IDE によってトリガーされ
 
 Language Server が準備したリクエストは、追加のコンテキストが付与されることなく、ほぼ変更されていない形でプロキシされます。この機能における GitLab Rails の役割は、主に、対象ユーザーが Code Suggestions 機能の使用を許可されていることを保証する認可エンティティに限定されます。
 
-### Code Completion Direct Connection Diagram
+### Code Completion ダイレクト接続ダイアグラム {#code-completion-direct-connection-diagram}
 
 ```mermaid
 sequenceDiagram
@@ -126,7 +126,7 @@ sequenceDiagram
 
 上の図では、一部のコンポーネント（GitLab Workhorse や Language Server など）は簡潔さのために省略されています。ただし、[技術概要](#code-suggestions-technical-overview) のセクションで示したリクエストの大まかな流れは変わりません。
 
-## API Reference
+## API リファレンス
 
 Rails モノリスと AI Gateway プロジェクトの両方で使用される Code Suggestion API エンドポイントの完全な概要については、以下を参照してください。
 
