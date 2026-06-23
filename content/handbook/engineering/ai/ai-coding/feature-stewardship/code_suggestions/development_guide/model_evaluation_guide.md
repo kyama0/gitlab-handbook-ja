@@ -11,7 +11,7 @@ stale: false
 
 このドキュメントは、新しい Code Suggestions モデルを評価するための技術的なハウツーガイドです。
 
-## 評価テンプレート
+## 評価テンプレート {#evaluation-template}
 
 モデル評価プロセスを開始する際は、
 [モデル評価テンプレート](https://gitlab.com/gitlab-org/code-creation/code-suggestions-model-evaluation-hub/-/blob/main/.gitlab/issue_templates/model_evaluation_template.md)を使って Issue を作成する必要があります。
@@ -44,7 +44,7 @@ Code Suggestions でモデルをサポートする前に、**正確性（correct
 
 ## 評価方法
 
-### ELI5 による評価
+### ELI5 による評価 {#evaluating-by-eli5}
 
 [ELI5（Eval like I'm 5）](https://gitlab.com/gitlab-org/modelops/ai-model-validation-and-research/ai-evaluation/prompt-library/-/tree/main/doc/eli5)は、[LangSmith](https://docs.smith.langchain.com/) を使って AI モデルを評価するための構造化された方法を提供します。
 ELI5 リポジトリには評価スクリプトが含まれており、サンプルデータセットと評価結果は [LangSmith プラットフォーム](https://smith.langchain.com/)に保存されます。

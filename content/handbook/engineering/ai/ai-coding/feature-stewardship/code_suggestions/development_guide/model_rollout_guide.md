@@ -26,7 +26,7 @@ stale: false
 - [新しいモデルを追加する際の考慮事項](implementation_guidelines.md#considerations-when-adding-a-new-model)を確認したことを確認してください。
 - モデルプロバイダーまたはホストが AI Gateway 上のリクエスト量を処理できることを確認してください。
 
-## ロールアウトフェーズ
+## ロールアウトフェーズ {#rollout-phases}
 
 新しいモデルのロールアウトは通常、3 つのフェーズで行われます。
 
