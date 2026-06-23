@@ -1,11 +1,11 @@
 ---
 title: オンコールプロセスとポリシー - Tier 2
 upstream_path: /handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c
+translated_at: "2026-06-24T07:02:38+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-06T16:44:06+01:00"
+lastmod: "2026-06-23T14:57:25-06:00"
 ---
 
 Tier 2 ローテーションは、サポートのためにチームメンバーをページするかを人間が判断するオンコールローテーションを指します。
@@ -249,29 +249,6 @@ Fleet Visibility、Design Management、Environments、Deployments、Release Mana
 
 - HTTP Router サービスに影響を与えるインシデント
 - Topology Service に影響を与えるインシデント
-
----
-
-### EOC Technical Escalation
-
-- ローテーションリーダー: TBD (暫定 Steve Abrams)
-- カバレッジ: ベストエフォート - 24x7
-- スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01KPRF9XG0HAHM307QS2ZBWC4P?startTime=2026-04-20T00%3A00%3A00&timePeriodOption=two_weeks&calendarToggle=timeline)
-- エスカレーション履歴リンク: [escalations](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01KPRFDZVMB4DCFS0HV9228D33)
-
-このローテーションはカバレッジが薄いベストエフォートで、特に APAC 時間中はページに応答できない場合があります。IMOC にエスカレーションするか、[#infrastructure_platforms](https://gitlab.enterprise.slack.com/archives/C02D1HQRTKQ) で連絡することで、追加の技術サポートを求めることもできます。
-
-**専門領域:**
-
-- GitLab プラットフォームのインフラストラクチャに関する深い技術的理解
-
-**エスカレーションのタイミング:**
-
-経験豊富な技術的判断が主に必要な場合にエスカレーションしてください。ヘルプを求めることを恐れるべきではありませんが、エスカレーションは経験とシニアリティが違いを生む状況に予約すべきです。例:
-
-- 標準的でない技術的修復が実行前に経験豊富な目を必要とする場合（管理の承認が別途必要かどうかにかかわらず）。一方通行の決定が特に注目に値する例です。
-- 分析が標準的な手法で進まず、オンコールピアと協力した後でも、問題をデバッグするためにもっとアイデアやもっと経験が必要です。
-- 大規模な S1、すべてが燃え、皆がパニックになり、冷静で経験豊富な技術的リーダーが必要です。
 
 ---
 
