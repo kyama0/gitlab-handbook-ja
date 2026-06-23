@@ -1,12 +1,12 @@
 ---
 title: "AI Assisted Service"
 description: "私たちの機能をサポートするコア AI インフラストラクチャとサービス"
-upstream_path: /handbook/engineering/ai/ai-coding/ai_assisted_service/
-upstream_sha: 6329e70e21b29c3cf88be90bd4abee6489b39003
-translated_at: "2026-05-20T12:00:00Z"
-translator: claude
+upstream_path: /handbook/engineering/ai/ai-coding/feature-stewardship/ai_assisted_service/
+upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
+lastmod: "2026-06-22T12:16:47-05:00"
+translated_at: "2026-06-23T07:24:31.0151723+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-20T07:10:03-05:00"
 ---
 
 ## 概要

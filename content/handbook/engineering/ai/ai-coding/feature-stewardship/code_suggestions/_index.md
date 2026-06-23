@@ -1,12 +1,12 @@
 ---
 title: "Code Suggestions"
 description: "IDE 内での AI 生成によるコード補完と生成"
-upstream_path: /handbook/engineering/ai/ai-coding/code_suggestions/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
-translator: claude
+upstream_path: /handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/
+upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
+lastmod: "2026-06-22T12:16:47-05:00"
+translated_at: "2026-06-23T07:24:31.0151723+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-09T08:12:45-06:00"
 ---
 
 ## 概要
@@ -52,7 +52,7 @@ stateDiagram
 
 ## 技術的実装
 
-アーキテクチャ図と API の詳細を含む Code Suggestions の動作に関する詳細な技術情報については、[Engineering Overview](/handbook/engineering/ai/ai-coding/code_suggestions/engineering_overview/) を参照してください。
+アーキテクチャ図と API の詳細を含む Code Suggestions の動作に関する詳細な技術情報については、[Engineering Overview](/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/engineering_overview/) を参照してください。
 
 ## ダッシュボードとモニタリング
 
@@ -64,10 +64,10 @@ stateDiagram
 
 ## ドキュメント
 
-- [Development Guide](/handbook/engineering/ai/ai-coding/code_suggestions/development_guide/) - エンジニア向けの開発ガイド
+- [Development Guide](/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/) - エンジニア向けの開発ガイド
 - [GitLab Duo](https://docs.gitlab.com/user/gitlab_duo/) - GitLab ドキュメント
 - [GitLab Documentation](https://docs.gitlab.com/ee/user/project/repository/code_suggestions/) - GitLab ドキュメント
 - [Direction](https://about.gitlab.com/direction/create/code_creation/code_suggestions/)
 - [Difference between Code Completion and Code Generation](https://youtu.be/9dsyqMt9yg4) - YouTube
-- [Engineering Overview](/handbook/engineering/ai/ai-coding/code_suggestions/engineering_overview/) - Code Suggestions の技術概要
+- [Engineering Overview](/handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/engineering_overview/) - Code Suggestions の技術概要
 - [Epic](https://gitlab.com/groups/gitlab-org/-/epics/18077)

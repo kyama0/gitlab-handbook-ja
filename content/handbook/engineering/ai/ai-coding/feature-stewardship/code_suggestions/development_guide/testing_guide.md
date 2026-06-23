@@ -1,12 +1,12 @@
 ---
 title: "Code Suggestions テストガイド"
 description: "Code Suggestions 機能をテストするためのガイドライン"
-upstream_path: /handbook/engineering/ai/ai-coding/code_suggestions/development_guide/testing_guide/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
-translator: claude
+upstream_path: /handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/testing_guide/
+upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
+lastmod: "2026-06-22T12:16:47-05:00"
+translated_at: "2026-06-23T07:24:31.0151723+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-15T16:03:12-06:00"
 ---
 
 このドキュメントは、Code Suggestions 機能をテストするための技術的なハウツーガイドです。

@@ -1,12 +1,12 @@
 ---
 title: "Code Suggestions 実装ガイドライン"
 description: "Code Suggestions に新しい AI モデルを実装するためのガイドライン"
-upstream_path: /handbook/engineering/ai/ai-coding/code_suggestions/development_guide/implementation_guidelines/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
-translator: claude
+upstream_path: /handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/implementation_guidelines/
+upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
+lastmod: "2026-06-22T12:16:47-05:00"
+translated_at: "2026-06-23T07:24:31.0151723+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-15T16:03:12-06:00"
 ---
 
 これらは、**[AI Gateway (AIGW)](#ai-gateway)** および/または **[GitLab Rails](#gitlab-rails)** で Code Suggestions のためのモデルをサポートするためのガイドラインです。
@@ -48,7 +48,7 @@ Code Completions と Code Generations のリクエストは、異なる Code Sug
 
 GitLab Rails は AI モデルにリクエストを直接送信 _しません_。AIGW にリクエストを送信し、AIGW が AI モデルにリクエストを送信します。
 
-GitLab Rails は、Code Completions または Code Generations にどのモデルを使用するかについての唯一の信頼できる情報源です。[機能フラグ](#introduce-behind-a-feature-flag) を介して現在のモデルを切り替えます。
+GitLab Rails は、Code Completions または Code Generations にどのモデルを使用するかについての唯一の信頼できる情報源です。[フィーチャーフラグ](#introduce-behind-a-feature-flag) を介して現在のモデルを切り替えます。
 
 AIGW への直接リクエストの場合、GitLab Rails は Direct Access エンドポイントを介してモデルの詳細を指定します。
 GitLab Rails 経由の間接リクエストの場合、GitLab Rails は AIGW へのリクエストのペイロードにモデルの詳細を含めます。
@@ -73,20 +73,20 @@ AIGW への直接リクエストの場合、このエンドポイントは AIGW 
 新しいモデルをデプロイする前に、ロールアウト計画を作成する必要があります。
 詳細については、[Rollout Guide](model_rollout_guide.md#create-a-rollout-plan) を参照してください。
 
-### 機能フラグの背後に導入する {#introduce-behind-a-feature-flag}
+### フィーチャーフラグの背後に導入する {#introduce-behind-a-feature-flag}
 
 AIGW への直接リクエストと GitLab Rails 経由の間接リクエストの両方について、どのモデルを使用するかの決定は最終的に GitLab Rails から来ます。新しいモデルを導入する際は、新しいモデルの有効化を切り替えるために
-[GitLab Rails で `beta` タイプの機能フラグを作成](https://docs.gitlab.com/ee/development/feature_flags/) する必要があります。この機能フラグには、対応する
+[GitLab Rails で `beta` タイプのフィーチャーフラグを作成](https://docs.gitlab.com/ee/development/feature_flags/) する必要があります。このフィーチャーフラグには、対応する
 [ロールアウト Issue](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Feature%20Flag%20Roll%20Out.md) が必要です。
 
 ### 顧客がオプトアウトできるようにする
 
 一部の顧客は、ロールアウトのタイムライン内で新しいモデルに切り替えることができない場合があります。
 新しいモデルに切り替える前に顧客により多くの時間を与えるために、オプトアウト機能を追加できます。
-これは `ops` 機能フラグを導入することで行うことができます。
+これは `ops` フィーチャーフラグを導入することで行うことができます。
 これは理想的には _opt-out_ フラグ (_opt-in_ ではなく) であるべきで、デフォルトで常に `false` であるべきです。
 
-機能フラグのアクターはケースバイケースで決定できますが、一般的には:
+フィーチャーフラグのアクターはケースバイケースで決定できますが、一般的には:
 
 - GitLab SaaS では、フラグはユーザーに [GitLab Duo Add-on](https://docs.gitlab.com/ee/subscriptions/subscription-add-ons.html) シートを提供している _トップレベルグループ_ に対してチェックされます。
 - Self-Managed の GitLab インスタンスでは、フラグはインスタンスレベルでチェックできます。

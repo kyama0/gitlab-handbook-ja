@@ -1,17 +1,17 @@
 ---
 title: "Code Suggestions モデル評価ガイド"
 description: "Code Suggestions 向けの新しい AI モデルを評価するためのガイドライン"
-upstream_path: /handbook/engineering/ai/ai-coding/code_suggestions/development_guide/model_evaluation_guide/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
-translator: claude
+upstream_path: /handbook/engineering/ai/ai-coding/feature-stewardship/code_suggestions/development_guide/model_evaluation_guide/
+upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
+lastmod: "2026-06-22T12:16:47-05:00"
+translated_at: "2026-06-23T07:24:31.0151723+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-15T16:03:12-06:00"
 ---
 
 このドキュメントは、新しい Code Suggestions モデルを評価するための技術的なハウツーガイドです。
 
-## 評価テンプレート
+## 評価テンプレート {#evaluation-template}
 
 モデル評価プロセスを開始する際は、
 [モデル評価テンプレート](https://gitlab.com/gitlab-org/code-creation/code-suggestions-model-evaluation-hub/-/blob/main/.gitlab/issue_templates/model_evaluation_template.md)を使って Issue を作成する必要があります。
@@ -19,16 +19,16 @@ lastmod: "2025-12-15T16:03:12-06:00"
 ## 評価基準
 
 Code Suggestions でモデルをサポートする前に、**正確性（correctness）** や**レイテンシ（latency）** など、いくつかの基準に対してそのモデルを評価する必要があります。
-考慮すべき基準のより詳細なリストについては、[評価テンプレート](#評価テンプレート)を参照してください。
+考慮すべき基準のより詳細なリストについては、[評価テンプレート](#evaluation-template)を参照してください。
 
 ### 正確性の評価
 
-モデルの正確性を評価するには、[ELI5](#eli5-による評価) を使用してください。
+モデルの正確性を評価するには、[ELI5](#evaluating-by-eli5) を使用してください。
 
 ### レイテンシの評価
 
-モデルのレイテンシを評価するには、[ELI5](#eli5-による評価)
-または [ai-model-latency-tester](#ai-model-latency-tester-による評価)のいずれかを使用してください。
+モデルのレイテンシを評価するには、[ELI5](#evaluating-by-eli5)
+または [ai-model-latency-tester](#evaluating-by-ai-model-latency-tester)のいずれかを使用してください。
 
 レイテンシで評価する際は、異なるリージョンから来るリクエストを確認することが推奨されます。
 テスト対象としてよくあるリージョンは、**北米**、**ヨーロッパ**、**APAC** です。
@@ -44,7 +44,7 @@ Code Suggestions でモデルをサポートする前に、**正確性（correct
 
 ## 評価方法
 
-### ELI5 による評価
+### ELI5 による評価 {#evaluating-by-eli5}
 
 [ELI5（Eval like I'm 5）](https://gitlab.com/gitlab-org/modelops/ai-model-validation-and-research/ai-evaluation/prompt-library/-/tree/main/doc/eli5)は、[LangSmith](https://docs.smith.langchain.com/) を使って AI モデルを評価するための構造化された方法を提供します。
 ELI5 リポジトリには評価スクリプトが含まれており、サンプルデータセットと評価結果は [LangSmith プラットフォーム](https://smith.langchain.com/)に保存されます。
