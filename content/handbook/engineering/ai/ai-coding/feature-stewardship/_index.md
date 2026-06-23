@@ -1,5 +1,5 @@
 ---
-title: "AI Coding:機能スチュワードシップ"
+title: "AI Coding：機能スチュワードシップ"
 description: "新しい恒久的なオーナーシップへの移行中にあり、AI Coding が構築してオーナーシップを持つ機能。"
 upstream_path: /handbook/engineering/ai/ai-coding/feature-stewardship/
 upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
