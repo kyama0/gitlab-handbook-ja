@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリのデータテーブル構成"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T13:23:21Z"
-translator: claude
+upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
+translated_at: "2026-06-25T07:39:40+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-19T12:48:58+02:00
+lastmod: "2026-06-24T14:51:09+02:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -170,7 +170,7 @@ erDiagram
 
 #### インデックス {#repositories-indexes}
 
-- **`repositories`**: `(namespace_id, name)` に対するユニークインデックス — アクティブなリポジトリとソフト削除されたリポジトリの両方にまたがって名前の一意性を強制し、名前の衝突によって復元が失敗することがないようにします。名前の再利用にはまずハード削除が必要です。`(namespace_id, name) WHERE soft_deleted_at IS NULL` に対するインデックス — アクティブなリポジトリの検索と名前順の一覧表示のために最適化されたスキャンパスです。`(namespace_id, format) WHERE soft_deleted_at IS NULL` に対するインデックス — アクティブなリポジトリをフォーマットでフィルターします。`(namespace_id, kind) WHERE soft_deleted_at IS NULL` に対するインデックス — アクティブなリポジトリを種類でフィルターします。`(namespace_id, visibility) WHERE soft_deleted_at IS NULL` に対するインデックス — リポジトリを可視性レベルでフィルターします（可視性監査クエリ「このネームスペースで現在公開されているリポジトリはどれか?」を支えます）。ランディングページのソート可能なカラムごとに 1 つずつ、すべて `WHERE soft_deleted_at IS NULL` 付きのインデックス: `(namespace_id, artifacts_count DESC)`、`(namespace_id, downloads_count DESC)`、`(namespace_id, size_bytes DESC)`、`(namespace_id, last_updated_at DESC NULLS LAST)`。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — このネームスペース内のソフト削除されたリポジトリを削除時刻順に一覧します（ゴミ箱一覧クエリ「ゴミ箱には何があり、いつ削除されたか?」を支えます）。この逆の部分述語は上記のアクティブ行の部分インデックスを反映したものです。このテーブルの他のすべての部分インデックスはゴミ箱を除外し、完全な `(namespace_id, name)` ユニークインデックスは `soft_deleted_at` をキーにしないため、ゴミ箱の一覧表示はそうでなければフィルターとソートのためにネームスペース内のすべての行を訪れなければならなくなります。GC の適格性は [ADR-010](010_data_retention.md) に従って `soft_deleted_at + retention_window` から導出されます。別個のカラムは不要です。
+- **`repositories`**: `(namespace_id, name)` に対するユニークインデックス — アクティブなリポジトリとソフト削除されたリポジトリの両方にまたがって名前の一意性を強制し、名前の衝突によって復元が失敗することがないようにします。名前の再利用にはまずハード削除が必要です。`(namespace_id, name) WHERE soft_deleted_at IS NULL` に対するインデックス — アクティブなリポジトリの検索と名前順の一覧表示のために最適化されたスキャンパスです。`(namespace_id, format) WHERE soft_deleted_at IS NULL` に対するインデックス — アクティブなリポジトリをフォーマットでフィルターします。`(namespace_id, kind) WHERE soft_deleted_at IS NULL` に対するインデックス — アクティブなリポジトリを種類でフィルターします。`(namespace_id, visibility) WHERE soft_deleted_at IS NULL` に対するインデックス — リポジトリを可視性レベルでフィルターします（可視性監査クエリ「このネームスペースで現在公開されているリポジトリはどれか?」を支えます）。ランディングページのソート可能なカラムごとに 1 つずつ、すべて `WHERE soft_deleted_at IS NULL` と末尾の `id DESC` keyset tiebreaker を持つインデックス: `(namespace_id, artifacts_count DESC, id DESC)`、`(namespace_id, downloads_count DESC, id DESC)`、`(namespace_id, size_bytes DESC, id DESC)`、`(namespace_id, last_updated_at DESC NULLS LAST, id DESC)`。`ROW(<col>, id)` keyset 境界の `id` 側はインデックス内に存在する必要があります。これら 4 つのカラムはカーディナリティが低い（カウンターはデフォルト `0`、新しいリポジトリでは `last_updated_at` が `NULL`）ため、インデックス内に `id` tiebreaker がないと、planner はそれをスキャン後のソート/フィルターとして適用し、深いページではネームスペースに対して O(offset) に劣化します。`name` ソートには tiebreaker は不要です。`(namespace_id, name)` ユニークインデックスがすでに決定的な keyset だからです。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — このネームスペース内のソフト削除されたリポジトリを削除時刻順に一覧します（ゴミ箱一覧クエリ「ゴミ箱には何があり、いつ削除されたか?」を支えます）。この逆の部分述語は上記のアクティブ行の部分インデックスを反映したものです。このテーブルの他のすべての部分インデックスはゴミ箱を除外し、完全な `(namespace_id, name)` ユニークインデックスは `soft_deleted_at` をキーにしないため、ゴミ箱の一覧表示はそうでなければフィルターとソートのためにネームスペース内のすべての行を訪れなければならなくなります。GC の適格性は [ADR-010](010_data_retention.md) に従って `soft_deleted_at + retention_window` から導出されます。別個のカラムは不要です。
 
 MVP の間、すべてのリポジトリは単一のデフォルトのリポジトリコレクションにリンクされるため、`(namespace_id, ...)` ソートインデックスはネームスペース全体のクエリとコレクションでフィルターされたクエリの両方に対応します。MVP 後、ネームスペースが複数のリポジトリコレクションを持つようになると、コレクションでフィルターされたクエリは `repository_collection_repositories` を介して JOIN します。追加のサポートインデックスは、リポジトリコレクションが公開される際に評価されます。
 

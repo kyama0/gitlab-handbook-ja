@@ -1,11 +1,11 @@
 ---
 title: リーダーシップ
 upstream_path: /handbook/leadership/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-translated_at: "2026-06-12T21:18:07Z"
-translator: claude
+upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
+translated_at: "2026-06-25T07:39:40+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-12T15:50:01-05:00
+lastmod: "2026-06-24T15:19:10-04:00"
 ---
 
 このページはリーダーシップのポインターを掲載しています。
@@ -38,7 +38,7 @@ lastmod: 2026-06-12T15:50:01-05:00
 
 ### GitLab における Manager of One の行動例
 
-1. 同期的なブレインストーミングのコールへの参加を求められたとき、チームメンバーは代わりに Issue を開き、[チームのアイデアを非同期で求める](/handbook/company/culture/all-remote/asynchronous/#how-to-decline-meetings-in-favor-of-async)。
+1. 同期的なブレインストーミングのコールへの参加を求められたとき、チームメンバーは代わりに Issue を開き、[チームのアイデアを非同期で求める](/handbook/company/culture/all-remote/asynchronous/#gitlab-experts-advise-on-when-to-use-sync-vs-async)。
 1. ピープルリーダーが、[メンターになる](/handbook/values/#be-a-mentor)ことで、私たちの [ダイバーシティ、インクルージョン、ビロンギング](/handbook/values/#diversity-inclusion)のバリューを推進する。
 1. チームメンバーが学習と能力開発のための専用時間を確保し、[セルフサービスとセルフラーニング](/handbook/values/#self-service-and-self-learning)を日常的に実践する。
 1. 新しいロールに就いたチームメンバーが、学習しているプロセスに非効率を見つける。求められたり監督されたりすることなく、変更を提案するマージリクエスト（MR）を開き、レビューのためにマネージャーにアサインする。
