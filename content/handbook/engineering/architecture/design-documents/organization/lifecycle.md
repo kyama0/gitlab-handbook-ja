@@ -62,7 +62,7 @@ stateDiagram-v2
 
 `deleted` 状態はありません — ハード削除が成功すると行が破棄されます。`unconfirmed` と `confirmed` から `soft_deleted` へのパスはありません: アクティベーションを完了していない Organization は削除できません。
 
-### 状態
+### 状態 {#states}
 
 | 状態 | 整数値 | 意味 |
 |-------|:-:|---------|

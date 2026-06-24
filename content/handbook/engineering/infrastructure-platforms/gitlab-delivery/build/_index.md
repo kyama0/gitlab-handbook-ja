@@ -2,11 +2,11 @@
 title: "GitLab Delivery:Build"
 description: "Build チームはカスタマーが GitLab をデプロイするために使用するアーティファクトに注力しています。これにはシステムパッケージ、コンテナイメージ、クラウドプロバイダーマーケットプレイス上のパッケージが含まれます。Build チームメンバーは開発チームとエンドユーザーの橋渡し役を担います。Build エンジニアはコンポーネントの効率的なビルドを可能にし、シンプルで安全かつ信頼性の高いインストール体験を提供するためのツールと専門知識を提供します。"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-delivery/build/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-28T22:31:40Z"
-translator: claude
+upstream_sha: ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c
+translated_at: "2026-06-24T07:28:04+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-27T11:48:37+01:00"
+lastmod: "2026-06-23T13:40:50+00:00"
 ---
 
 ## 概要
@@ -74,7 +74,7 @@ Build チームは GitLab コンポーネントがシームレスに統合され
 - 各チームメンバーがチームを強化し作業の質を高める候補者を特定するよう努める
 - チームがナレッジトランスファーを促進してセルフサービスを可能にするためのドキュメントを作成・改善する
 - GitLab の[リーダーシップ原則](/handbook/leadership/#managers-of-one)に基づいて、チームが常に独立して結論に達し、ほとんどの場合コンセンサスを形成できる
-- チームメンバーが頻繁に使用するテクノロジーとプラットフォームの[認定取得を支援される](/handbook/people-group/learning-and-development/growth-and-development/#professional-developmentcertificationscourses)など、継続的な専門能力開発が促進される
+- チームメンバーが頻繁に使用するテクノロジーとプラットフォームの[認定取得を支援される](/handbook/people-group/learning-and-development/growth-and-development/)など、継続的な専門能力開発が促進される
 - オンボーディングとオフボーディングが効率的
 - 明確なキャリア開発パス
 
@@ -98,7 +98,7 @@ Build チームは GitLab コンポーネントがシームレスに統合され
 
 ### 新しいチームメンバー向け
 
-- `Team-onboarding` テンプレートを使用して [Build チームの Issue トラッカー](https://gitlab.com/gitlab-org/distribution/team-tasks)で[チームオンボーディング Issue](https://gitlab.com/gitlab-org/distribution/team-tasks)を開く
+- `Team-onboarding` テンプレートを使用して[チームオンボーディング Issue](https://gitlab.com/gitlab-org/distribution/team-tasks)を完了する
 - [ワークフロードキュメント](workflow.html)を確認する
 - オンボーディング Issue に記載されているとおりにビルドインフラストラクチャへのアクセスをセットアップする
 
@@ -146,9 +146,7 @@ RFH を開くには、[ヘルプの入手方法](/handbook/support/workflows/how
 
 以下の人々が GitLab:Build チームのメンバーです:
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/build/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug manager="denisra" team="Build" >}}
 
 ## 主要プロジェクト
 
@@ -235,8 +233,8 @@ graph TD
 私たちは公開プロジェクトで以下を目指しています:
 
 1. [コミュニティ行動規範](https://about.gitlab.com/community/contribute/code-of-conduct/)を守る。
-1. [誰もがコントリビューションできるというGitLab のミッション](/handbook/company/mission/#mission)を実現する。
-1. [公開](/public-by-default)で作業を示す。
+1. [誰もがコントリビューションできるという GitLab のミッション](/handbook/company/mission/#mission)を実現する。
+1. [公開](#public-by-default)で作業を示す。
 1. コントリビューターの作業を[認識し感謝する](/handbook/marketing/developer-relations/engineering/community-contributors-workflows/#recognition-for-contributors)。
 1. コントリビューターが寄付してくれた時間を尊重し、[適切なレビューターンアラウンドタイム](/handbook/engineering/workflow/code-review/#review-turnaround-time)を提供する。
 
