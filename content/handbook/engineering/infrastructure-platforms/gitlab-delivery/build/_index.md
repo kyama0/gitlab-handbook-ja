@@ -249,7 +249,7 @@ graph TD
 1. [スチュワードシップの約束](/handbook/company/stewardship/#promises)に反する決定に対して異議を唱える。
 1. [行った変更をコントリビューションとして還元する](/handbook/engineering/open-source/#using-forks-in-your-code)機会を見つける。
 
-## デフォルトで公開
+## デフォルトで公開 {#public-by-default}
 
 Build チームが行うすべての作業は公開されています。いくつかの例外があります:
 

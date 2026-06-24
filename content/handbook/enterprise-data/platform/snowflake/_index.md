@@ -26,7 +26,7 @@ Snowflake には私たちのすべての分析データが含まれており、[
 - [Backups](/handbook/enterprise-data/platform/#backups)
 - [AI Function Guide](/handbook/enterprise-data/platform/snowflake/snowflake-ai-function/snowflake-ai-function.md)
 
-## 現在のアクセスモデル
+## 現在のアクセスモデル {#current-access-model}
 
 Snowflake アクセスは、アカウント履歴と必要なアクセスレベルに応じたハイブリッドモデルで運用されています。
 

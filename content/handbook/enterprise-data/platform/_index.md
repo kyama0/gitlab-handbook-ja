@@ -386,7 +386,7 @@ SAFE アクセスについては、必要な承認について [SAFE Guide](/han
 
 Snowflakeは、SQLコードを書くことで利用可能なデータの分析を実行するために使用できます。作成されたもの、分析の結果は、[ad-hoc analyses](/handbook/enterprise-data/how-we-work/data-development/#data-development-at-gitlab) と見なされます。作成されたもの（ワークシートとダッシュボード）はバージョン管理されておらず、中央データチームによってサポートまたは管理されていないことを知ることが重要です。つまり、チームメンバーがGitLabから離れたとき、ワークシートとダッシュボードはアクセスできなくなります。分析を永続化するために、チームメンバーはTableauワークブックを構築する、GitLabプロジェクトにコードスニペットを保存する、またはデータチームの [dbt project](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt) にコードをコミットできます。
 
-## 追加のアクセス
+## 追加のアクセス {#additional-access}
 
 ユーザーがSCIMのLumos & oktaを介して実装される前にSnowflakeで作成された場合、またはdbtプロジェクトに貢献するために必要なdevデータベースの作成を含む、デフォルトの `snowflake_analyst` および `snowflake_analyst_safe` を超えるアクセスが必要な場合、必要なアクセスレベルを文書化した [Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests) を使用してください。
 
