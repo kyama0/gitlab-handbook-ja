@@ -157,7 +157,7 @@ Commercial（Mid-Market と SMB）アカウントには、カスタマーとの 
 
 下記にないチャンネルがある場合は、MR でアルファベット順に追加してください。
 
-| Channel Name | Description |
+| チャンネル名 | 説明 |
 |---|---|
 | [`#loc_4corners`](https://app.slack.com/client/T02592416/C51L9MZEV) | Utah、Colorado、Arizona、New Mexico に住む人たちが集まるためのチャンネル |
 | [`#loc_adelaide`](https://app.slack.com/client/T02592416/C03855YCQMT) | South Australia の Adelaide で成長中のチームプレゼンス向けです！ |

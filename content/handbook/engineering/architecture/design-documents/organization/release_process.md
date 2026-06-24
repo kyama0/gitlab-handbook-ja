@@ -20,7 +20,7 @@ lastmod: "2026-06-23T09:42:20-07:00"
 
 ### Step 1 - Organizations UI を有効にする
 
-**Owned by:** ~group::organizations
+**担当:** ~group::organizations
 
 `org_stage_beta` フィーチャーフラグをグローバルに有効にします。
 
@@ -32,13 +32,13 @@ lastmod: "2026-06-23T09:42:20-07:00"
 
 ### Step 2 - design partner の top-level groups（TLGs）を特定する
 
-**Owned by:** ~devops::package
+**担当:** ~devops::package
 
 Organizations にオンボードする design partners を特定し、TLG full paths のリストを提供します。  
 
 ### Step 3 - TLGs を新しい Organization でバックフィルする
 
-**Owned by:** ~group::organizations
+**担当:** ~group::organizations
 
 `group` actor を使用して、TLGs に対して `root_group_organization_backfill` フィーチャーフラグを有効にします。 
 
@@ -53,7 +53,7 @@ Organizations にオンボードする design partners を特定し、TLG full p
 
 ### Step 4 - Organization を確認し、TLG members を同期する
 
-**Owned by:** ~group::organizations
+**担当:** ~group::organizations
 
 `group` actor を使用して、TLGs に対して `root_group_organization_confirm` フィーチャーフラグを有効にします。 
 
@@ -68,13 +68,13 @@ Organizations にオンボードする design partners を特定し、TLG full p
 
 ### Step 5 - design partners に通知する
 
-**Owned by:** ~devops::package
+**担当:** ~devops::package
 
 Artifact Registry を有効化して使い始める方法を説明するドキュメントへのリンクを design partners に通知します。
 
 ### Step 6 - Artifact Registry を有効にする
 
-**Owned by:** ~devops::package
+**担当:** ~devops::package
 
 お客様には `Your work` サイドバーに `Organizations` メニュー項目が表示されるようになります。お客様は Organization の `Artifacts` メニュー項目の下で有効化できます。有効化すると、Artifact Registry の使用を開始できます。
 
