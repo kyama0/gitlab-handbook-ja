@@ -28,7 +28,7 @@ lastmod: "2026-06-23T09:42:20-07:00"
 /chatops run feature set org_stage_beta true
 ```
 
-このフィーチャーフラグを有効にすると、Organization を持ち、その Organization が [state of `active`](lifecycle.md#states) であるユーザーに対して、`Your work` サイドバーに `Organizations` メニュー項目が表示されます。つまり、手順 3 と 4 の後まで、ユーザーには UI の変更は見えないはずです。
+このフィーチャーフラグを有効にすると、Organization を持ち、その Organization が [`active` 状態](lifecycle.md#states)であるユーザーに対して、`Your work` サイドバーに `Organizations` メニュー項目が表示されます。つまり、手順 3 と 4 の後まで、ユーザーには UI の変更は見えないはずです。
 
 ### Step 2 - design partner の top-level groups（TLGs）を特定する
 

@@ -218,7 +218,7 @@ VS Code から Snowflake を使用するには、Extensions pane から [Snowfla
 2. VS Code 左サイドバーの Snowflake アイコンをクリックし、次の内容でサインインします。
    - **Account Identifier:** `gitlab`
    - **Auth Method:** Single sign-on
-   - **Username:** your full GitLab email
+   - **Username:** GitLab の完全なメールアドレス
 3. **Sign in** をクリックします。Okta ウィンドウが開きます。SSO を完了し、VS Code に戻ります。
 
 接続したら、Snowflake パネルの dropdowns を使用して role と warehouse を設定します。

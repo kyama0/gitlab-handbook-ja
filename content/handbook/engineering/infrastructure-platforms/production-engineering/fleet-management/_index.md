@@ -35,9 +35,9 @@ Fleet Management チームは次に注力します。
 
 | | |
 |--------------------------------|---------------------------------------------------------------------------------------------------|
-| **Workflow**                   | [Infrastructure Platforms Project Management](/handbook/engineering/infrastructure-platforms/project-management/) |
+| **ワークフロー**               | [Infrastructure Platforms Project Management](/handbook/engineering/infrastructure-platforms/project-management/) |
 | **GitLab.com**                 | `@gitlab-org/production-engineering/fleet-management` |
-| **Team Slack Channels**        | `[#g_fleet_management](https://gitlab.enterprise.slack.com/archives/C0ACE4T2R6W)` - チームチャンネル |
+| **チーム Slack チャンネル**    | `[#g_fleet_management](https://gitlab.enterprise.slack.com/archives/C0ACE4T2R6W)` - チームチャンネル |
 
 ## チームメンバー
 
