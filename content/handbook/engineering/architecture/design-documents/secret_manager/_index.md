@@ -8,12 +8,12 @@ approvers: [ "@jocelynjane", "@shampton" ]
 owning-stage: "~sec::govern"
 participating-stages: []
 toc_hide: true
-upstream_path: "/handbook/engineering/architecture/design-documents/secret_manager/"
-upstream_sha: "86cfa2bd7d73df5a673fe5ebd33b028d0f540434"
-translated_at: "2026-04-27T10:00:00Z"
-translator: claude
+upstream_path: /handbook/engineering/architecture/design-documents/secret_manager/
+upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
+translated_at: "2026-06-25T07:39:40+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-13T12:34:40+01:00"
+lastmod: "2026-06-24T18:04:35+02:00"
 ---
 
 
@@ -83,6 +83,7 @@ GitLab ユーザーに以下の方法を提供します。
 - [ADR-011: 顧客監査入力にストリーミング監査イベントを使用する](decisions/011_http_audit.md)
 - [ADR-012: 別個の JWT ドメイン](decisions/012_jwt_separation.md)
 - [ADR-013: OpenBao 別個の論理データベース](decisions/013_openbao_separate_database.md)
+- [ADR-014: 非 CI/CD ワークロード向けの直接 API アクセス](decisions/014_non_ci_api_access.md)
 
 ### 廃止済み
 

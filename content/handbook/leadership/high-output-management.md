@@ -2,11 +2,11 @@
 title: ハイ・アウトプット・マネジメント
 description: "このページでは、『ハイ・アウトプット・マネジメント』で取り上げられている主要なトピックと、それがピープルリーダーにとって何を意味するかについて解説します。"
 upstream_path: /handbook/leadership/high-output-management/
-upstream_sha: 5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1
-translated_at: "2026-04-29T00:00:00Z"
-translator: claude
+upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
+translated_at: "2026-06-25T07:39:40+09:00"
+translator: codex
 stale: false
-lastmod: "2025-06-03T23:53:00+00:00"
+lastmod: "2026-06-24T15:19:10-04:00"
 ---
 
 ## はじめに
@@ -41,7 +41,7 @@ Sid と学習・開発チームが、CEO ハンドブック学習セッション
 例えば、GitLab のマネージャーは以下のことができます。
 
 1. [Issue ボード](https://docs.gitlab.com/ee/user/project/issue_board.html#:~:text=The%20GitLab%20Issue%20Board%20is,Kanban%20or%20a%20Scrum%20board.&text=Issue%20boards%20help%20you%20to,your%20entire%20process%20in%20GitLab)を通じてタスクを[委任する](/handbook/leadership/effective-delegation/)。Issue ボードはチームのワークフローを計画・整理・可視化するためのプロジェクト管理ツールとして機能します。
-1. [非同期を優先してミーティングを断る](/handbook/company/culture/all-remote/asynchronous/#how-to-decline-meetings-in-favor-of-async)。ミーティングは関係構築とプロジェクト推進に有用です。マネージャーは非同期コミュニケーションへの[バイアス](/handbook/values/#bias-towards-asynchronous-communication)のロールモデルとなることができます。また、[具体的な提案](/handbook/values#make-a-proposal)を検討したり、一連の非同期議論を前進させるために必要な場合にのみ[ミーティングを設定する](/handbook/communication/)ことでもロールモデルとなれます。
+1. [非同期を優先してミーティングを断る](/handbook/company/culture/all-remote/asynchronous/#gitlab-experts-advise-on-when-to-use-sync-vs-async)。ミーティングは関係構築とプロジェクト推進に有用です。マネージャーは非同期コミュニケーションへの[バイアス](/handbook/values/#bias-towards-asynchronous-communication)のロールモデルとなることができます。また、[具体的な提案](/handbook/values#make-a-proposal)を検討したり、一連の非同期議論を前進させるために必要な場合にのみ[ミーティングを設定する](/handbook/communication/)ことでもロールモデルとなれます。
 1. チームに最適な階層型とコンセンサスの組み合わせを適用して[意思決定する](/handbook/leadership/making-decisions/)。実際に作業をしている人、[Directly Responsible Individual](/handbook/people-group/directly-responsible-individuals/) が決断を下せるようにします。
 1. [モチベーションによってピークパフォーマンスを引き出す](https://internal.gitlab.com/handbook/company/high-performing-teams/)。マネージャーはモチベーション、[信頼の構築](/handbook/leadership/building-trust/)、そしてトレーニングを活用してチームのアウトプットを改善できます。
 

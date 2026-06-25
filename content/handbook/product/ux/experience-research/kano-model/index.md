@@ -2,11 +2,11 @@
 title: "機能の優先順位付けのための Kano サーベイ"
 description: "Kano モデルは、私たちが構築する予定の機能について考えるためのシンプルで強力な方法を提供します。"
 upstream_path: /handbook/product/ux/experience-research/kano-model/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
-translator: claude
+upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
+translated_at: "2026-06-25T07:39:40+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-12T13:14:13+00:00"
+lastmod: "2026-06-24T15:19:10-04:00"
 ---
 
 ## Kano モデル
@@ -96,7 +96,7 @@ Kano モデルは、特に機能の優先順位付けに情報を提供すると
 {{% /alert %}}
 
 {{% alert title="💡 **ヒント**" color="primary" %}}
-機能説明を非同期で作成するには多くの時間がかかります。チームの進みが十分に速くないと感じる場合は、[非同期から同期コミュニケーションに切り替えて](/handbook/company/culture/all-remote/asynchronous/#when-to-pivot-from-asynchronous-to-synchronous)ください。
+機能説明を非同期で作成するには多くの時間がかかります。チームの進みが十分に速くないと感じる場合は、[非同期から同期コミュニケーションに切り替えて](/handbook/company/culture/all-remote/asynchronous/#gitlab-experts-advise-on-when-to-use-sync-vs-async)ください。
 {{% /alert %}}
 
 ### サーベイ

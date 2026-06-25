@@ -3,11 +3,11 @@ title: プロダクトプロセス
 description: >-
   プロダクト組織として、私たちは顧客が愛し価値を見出す製品を開発するための、柔軟でありながら簡潔な製品開発フレームワークを作ることに取り組んでいます。
 upstream_path: /handbook/product/product-processes/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T12:00:00Z"
-translator: claude
+upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
+translated_at: "2026-06-25T07:39:40+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-22T14:47:44+02:00"
+lastmod: "2026-06-24T15:19:10-04:00"
 ---
 
 {{% include "includes/product/product-handbook-links.md" %}}
@@ -99,7 +99,7 @@ lastmod: "2026-05-22T14:47:44+02:00"
 
 - `#product`、`#s_`、`#g_`、`#f_` などのさまざまなプロダクトベースの Slack チャンネルでアップデートを共有する
 - 方向性やカテゴリの変更を #customer-success にクロスポストし、[ユースケース](/handbook/marketing/use-cases/) に影響する場合は `@cs-leadership` を認知のためにタグ付け
-- 方向性のアップデートについて議論する短いビデオを録画してカスタマーサクセスと共有する。効率的なコミュニケーションを促進するために [必要に応じて](/handbook/company/culture/all-remote/asynchronous/#when-to-start-synchronously) 同期ミーティングを使用する。
+- 方向性のアップデートについて議論する短いビデオを録画してカスタマーサクセスと共有する。効率的なコミュニケーションを促進するために [必要に応じて](/handbook/company/culture/all-remote/asynchronous/#gitlab-experts-advise-on-when-to-use-sync-vs-async) 同期ミーティングを使用する。
 - [Field Communications チームと協力して](/handbook/sales/field-communications/#field-communications-playbook)、Field (Sales、Customer Success、Channel & Alliances) チームに対してより大きな社内コミュニケーション計画／アプローチが必要かを判断する
 - 月次の方向性ページ更新のハイライトを集約し、組織全体のセクションレベルで共有する
 
