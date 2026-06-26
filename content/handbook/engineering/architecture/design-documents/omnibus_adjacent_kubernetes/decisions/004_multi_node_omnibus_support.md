@@ -3,11 +3,11 @@ title: "ADR-004: OAK でのマルチノード Omnibus サポート"
 owning-stage: "~devops::gitlab delivery"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/omnibus_adjacent_kubernetes/decisions/004_multi_node_omnibus_support/
-upstream_sha: a27a2f7fbaedbd4b422d73ed991c16ee9a112ca9
-translated_at: "2026-04-27T00:00:00Z"
-translator: claude
+upstream_sha: c9aef34f52e9f619472aeed4981f6aaec80de2b3
+translated_at: "2026-06-26T21:07:40+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-16T10:46:40-04:00"
+lastmod: "2026-06-25T17:30:06-03:00"
 ---
 
 ## 概要
@@ -41,7 +41,7 @@ PostgreSQL のデプロイ方法に応じて 3 つのケースがあります。
 
 外部 PostgreSQL（PaaS またはセルフマネージド）の場合は、標準的なネットワーク設定で十分です。
 
-Patroni を使用する Omnibus PostgreSQL クラスターの場合、お客様は高度なコンポーネント用に別の外部データベースをプロビジョニングする必要があります。Patroni クラスターは `gitlabhq_production` のサポートのためだけに存在します。フェイルオーバー後、PgBouncer はその接続プールのみを更新します。同じクラスター上の他の論理データベースは古いプライマリを指す古い接続を持ち、サイレントな障害を引き起こします。この制限は[ADR: gitlabhq_production を超えたデータベースの Omnibus HA サポートなし](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18927)に文書化されています。
+Patroni を使用する Omnibus PostgreSQL クラスターの場合、高度なコンポーネントは、メインの GitLab アプリケーションデータベースと並べて Omnibus クラスター内に独自のデータベースをプロビジョニングでき、コンポーネントのデータベース利用が PostgreSQL WAL ベースのレプリケーションをサポートするように設計されている限り、フェイルオーバーはそれらのデータベースにも自動的に伝播します。Registry メタデータデータベースは、アプリケーションロジックを通じて独自のデータベースレプリケーションを行うため、PostgreSQL WAL ベースのレプリケーションをサポートしないデータベースの例です。そのため、HA モードでの複数データベースに対する Omnibus サポートを活用したいコンポーネントは、PostgreSQL WAL レプリケーションに準拠している必要があります。単一ノードの Omnibus PostgreSQL と同じネットワークアクセスパターン、つまりファイアウォールルール、CIDR 許可リスト、および `postgresql['md5_auth_cidr_addresses']` が適用されます。
 
 **Gitaly**
 
@@ -99,4 +99,3 @@ Geo セットアップでは、Helm values はプライマリサイトの Rails 
 - [OAK デザインドキュメント](../_index.md)
 - [マルチノード Omnibus PoC — work item #9691](https://gitlab.com/gitlab-org/omnibus-gitlab/-/work_items/9691)
 - PoC: [デモ（内部リンク）](https://drive.google.com/file/d/1ZriEHz1Sjg-9rJLSi0EpUurmaHVscPTP/view) と [実装の詳細](https://gitlab.com/-/snippets/5974860)
-- [ADR: `gitlabhq_production` を超えたデータベースの Omnibus HA サポートなし](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18927)

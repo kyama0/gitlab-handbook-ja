@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリのデータテーブル構成"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema/
-upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
-translated_at: "2026-06-25T07:39:40+09:00"
+upstream_sha: c9aef34f52e9f619472aeed4981f6aaec80de2b3
+translated_at: "2026-06-26T21:07:40+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-24T14:51:09+02:00"
+lastmod: "2026-06-25T13:46:24+01:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -801,6 +801,7 @@ erDiagram
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         bigint maven_package_id FK "NOT NULL, (maven_package_id, namespace_id) references maven_packages(id, namespace_id)"
         text version "NOT NULL, limit 255"
+        bigint size_bytes "NOT NULL, DEFAULT 0, buffered counter"
         timestamptz last_downloaded_at "nullable, buffered"
         text gitlab_user_id "nullable, opaque string, limit 255"
         text gitlab_project_id "nullable, opaque string, limit 255"
@@ -836,7 +837,7 @@ erDiagram
 
 - **`maven_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親リポジトリ参照によって Maven リポジトリを検索します。
 - **`maven_packages`**: `(namespace_id, maven_repository_id, group_id, artifact_id) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — リポジトリ内で Maven 座標によってパッケージを検索します。部分条件により、ソフト削除後に同じ座標のパッケージを再作成できます。`(namespace_id, maven_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。リポジトリ内のすべてのパッケージをスキャンして行ごとにフィルターするのではなく、境界のある範囲スキャンによって期限切れになったパッケージのみを返します。`NULLS FIRST` は、一度もダウンロードされていないパッケージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。
-- **`maven_versions`**: `(namespace_id, maven_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内で特定のバージョンを検索します。部分条件により、ソフト削除後に同じ識別子のバージョンを再作成できます。`(namespace_id, maven_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `maven_packages` と同じ範囲スキャン戦略を用いて、パッケージのバージョンにスコープした `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたバージョンを削除時刻順に一覧し、Maven アーティファクトのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクト出所クエリを支えます。ソフト削除された公開イベントも監査証跡に表示されるよう無条件です。
+- **`maven_versions`**: `(namespace_id, maven_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内で特定のバージョンを検索します。部分条件により、ソフト削除後に同じ識別子のバージョンを再作成できます。`(namespace_id, maven_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `maven_packages` と同じ範囲スキャン戦略を用いて、パッケージのバージョンにスコープした `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。`(namespace_id, maven_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — ランディングページのリポジトリのソートを反映し、バージョン一覧表示のためにパッケージのバージョンをサイズ順にソートします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたバージョンを削除時刻順に一覧し、Maven アーティファクトのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクト出所クエリを支えます。ソフト削除された公開イベントも監査証跡に表示されるよう無条件です。
 - **`maven_files`**: `(namespace_id, maven_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_version_id IS NOT NULL` に対するユニークインデックス — バージョン固有のファイル名はバージョン内で一意でなければなりません。部分条件はソフト削除された行とパッケージレベルのファイルを除外します。`(namespace_id, maven_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_version_id IS NULL` に対するユニークインデックス — パッケージレベルのファイル名（`maven-metadata.xml` など）はパッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべての Maven ファイルへの逆引きで、クロスフォーマットのチェックサム検索を支えます。既存の親をキーとするインデックスはバージョンまたはパッケージをキーとするため、ダイジェストをキーとするスキャンを直接満たすことはできません。
 
 #### クエリ例 {#maven-repositories-query-examples}
@@ -920,6 +921,7 @@ erDiagram
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         bigint maven_remote_package_id FK "NOT NULL, (maven_remote_package_id, namespace_id) references maven_remote_packages(id, namespace_id)"
         text version "NOT NULL, limit 255"
+        bigint size_bytes "NOT NULL, DEFAULT 0, buffered counter"
         timestamptz last_downloaded_at "nullable, buffered"
         timestamptz soft_deleted_at "nullable"
         timestamptz created_at "NOT NULL, DEFAULT NOW()"
@@ -952,8 +954,8 @@ erDiagram
 
 - **`maven_remote_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によってリモートリポジトリを検索します。
 - **`maven_remote_packages`**: `(namespace_id, maven_remote_repository_id, group_id, artifact_id) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — Maven 座標によってキャッシュされたパッケージを検索します。部分条件により、ソフト削除後に同じ座標のパッケージを再作成できます。
-- **`maven_remote_versions`**: `(namespace_id, maven_remote_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内でキャッシュされたバージョンを検索します。部分条件により、ソフト削除後に同じ識別子のバージョンを再作成できます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みバージョンを削除時刻順に一覧し、キャッシュされた Maven アーティファクトのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、ホスト型の [`maven_versions`](#maven-repositories) インデックスを反映し、キャッシュ側の公開履歴と出所をカバーします。ホスト型のインデックスと同じ監査証跡の理由から無条件（`soft_deleted_at` 述語なし）です。
-- **`maven_remote_files`**: `(namespace_id, maven_remote_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NOT NULL` に対するユニークインデックス — バージョン固有のファイル名はバージョン内で一意でなければなりません。`(namespace_id, maven_remote_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NULL` に対するユニークインデックス — パッケージレベルのファイル名はパッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべてのキャッシュされた Maven ファイルへの逆引きで、ホスト型の [`maven_files`](#maven-repositories) インデックスを反映し、チェックサム検索がキャッシュ側の参照もカバーするようにします。
+- **`maven_remote_versions`**: `(namespace_id, maven_remote_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内でキャッシュされたバージョンを検索します。部分条件により、ソフト削除後に同じ識別子のバージョンを再作成できます。`(namespace_id, maven_remote_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — バージョン一覧表示のためにキャッシュされたパッケージのバージョンをサイズ順にソートします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みバージョンを削除時刻順に一覧し、キャッシュされた Maven アーティファクトのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、ローカルの [`maven_versions`](#maven-repositories) インデックスを反映し、キャッシュ側の公開履歴と出所をカバーします。ローカルのインデックスと同じ監査証跡の理由から無条件（`soft_deleted_at` 述語なし）です。
+- **`maven_remote_files`**: `(namespace_id, maven_remote_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NOT NULL` に対するユニークインデックス — バージョン固有のファイル名はバージョン内で一意でなければなりません。`(namespace_id, maven_remote_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NULL` に対するユニークインデックス — パッケージレベルのファイル名はパッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべてのキャッシュされた Maven ファイルへの逆引きで、ローカルの [`maven_files`](#maven-repositories) インデックスを反映し、チェックサム検索がキャッシュ側の参照もカバーするようにします。
 
 #### クエリ例 {#maven-remote-repositories-query-examples}
 
@@ -1115,6 +1117,7 @@ erDiagram
         bigint npm_package_id FK "NOT NULL, (npm_package_id, namespace_id) references npm_packages(id, namespace_id)"
         text version "NOT NULL, limit 255"
         jsonb package_json "NOT NULL"
+        bigint size_bytes "NOT NULL, DEFAULT 0, buffered counter"
         timestamptz last_downloaded_at "nullable, buffered"
         text gitlab_user_id "nullable, opaque string, limit 255"
         text gitlab_project_id "nullable, opaque string, limit 255"
@@ -1166,7 +1169,7 @@ erDiagram
 
 - **`npm_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親リポジトリ参照によって NPM リポジトリを検索します。
 - **`npm_packages`**: `(namespace_id, npm_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — リポジトリ内で名前によってパッケージを検索します。部分条件により、ソフト削除後に同じ名前のパッケージを再作成できます。`(namespace_id, npm_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。リポジトリ内のすべてのパッケージをスキャンして行ごとにフィルターするのではなく、境界のある範囲スキャンによって期限切れになったパッケージのみを返します。`NULLS FIRST` は、一度もダウンロードされていないパッケージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。
-- **`npm_versions`**: `(namespace_id, npm_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内で特定のバージョンを検索します。部分条件により、ソフト削除後に同じ識別子のバージョンを再作成できます。`(namespace_id, npm_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `npm_packages` と同じ範囲スキャン戦略を用いて、パッケージのバージョンにスコープした `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたバージョンを削除時刻順に一覧し、npm アーティファクトのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクト出所クエリを支えます。ソフト削除された公開イベントも監査証跡に表示されるよう無条件です。
+- **`npm_versions`**: `(namespace_id, npm_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内で特定のバージョンを検索します。部分条件により、ソフト削除後に同じ識別子のバージョンを再作成できます。`(namespace_id, npm_package_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `npm_packages` と同じ範囲スキャン戦略を用いて、パッケージのバージョンにスコープした `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。`(namespace_id, npm_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — ランディングページのリポジトリのソートを反映し、バージョン一覧表示のためにパッケージのバージョンをサイズ順にソートします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたバージョンを削除時刻順に一覧し、npm アーティファクトのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクト出所クエリを支えます。ソフト削除された公開イベントも監査証跡に表示されるよう無条件です。
 - **`npm_tags`**: `(namespace_id, npm_package_id, name)` に対するユニークインデックス — パッケージ内で名前によってディストリビューションタグを検索します。`(namespace_id, npm_version_id)` に対するインデックス — 特定のバージョンを指すすべてのタグを見つけます。
 - **`npm_files`**: `(namespace_id, npm_version_id, file_name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — ファイル名はバージョン内で一意でなければなりません。部分条件により、ソフト削除後に同じ名前のファイルを再作成できます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべての npm ファイルへの逆引きで、クロスフォーマットのチェックサム検索を支えます。既存のバージョンをキーとするインデックスは、ダイジェストをキーとするスキャンを直接満たすことはできません。
 - **`npm_metadata_files`**: `(namespace_id, npm_package_id, kind)` に対するユニークインデックス — パッケージごと・kind ごとに 1 つのメタデータファイル。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってメタデータファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべてのメタデータファイルへの逆引きで、[`npm_files`](#npm-repositories) を反映し、単一の sha256 検索で tarball と packument スタイルのメタデータの両方をカバーします。
@@ -1309,6 +1312,7 @@ erDiagram
         bigint npm_remote_package_id FK "NOT NULL, (npm_remote_package_id, namespace_id) references npm_remote_packages(id, namespace_id)"
         text version "NOT NULL, limit 255"
         jsonb package_json "NOT NULL"
+        bigint size_bytes "NOT NULL, DEFAULT 0, buffered counter"
         timestamptz last_downloaded_at "nullable, buffered"
         timestamptz soft_deleted_at "nullable"
         timestamptz created_at "NOT NULL, DEFAULT NOW()"
@@ -1359,7 +1363,7 @@ erDiagram
 
 - **`npm_remote_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によってリモートリポジトリを検索します。
 - **`npm_remote_packages`**: `(namespace_id, npm_remote_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — 名前によってキャッシュされたパッケージを検索します。部分条件により、ソフト削除後に同じ名前のパッケージを再作成できます。
-- **`npm_remote_versions`**: `(namespace_id, npm_remote_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内でキャッシュされたバージョンを検索します。部分条件により、ソフト削除後に同じ識別子のバージョンを再作成できます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みバージョンを削除時刻順に一覧し、キャッシュされた npm アーティファクトのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、ホスト型の [`npm_versions`](#npm-repositories) インデックスを反映し、キャッシュ側の公開履歴と出所をカバーします。ホスト型のインデックスと同じ監査証跡の理由から無条件（`soft_deleted_at` 述語なし）です。
+- **`npm_remote_versions`**: `(namespace_id, npm_remote_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内でキャッシュされたバージョンを検索します。部分条件により、ソフト削除後に同じ識別子のバージョンを再作成できます。`(namespace_id, npm_remote_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — バージョン一覧表示のためにキャッシュされたパッケージのバージョンをサイズ順にソートします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みバージョンを削除時刻順に一覧し、キャッシュされた npm アーティファクトのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、ローカルの [`npm_versions`](#npm-repositories) インデックスを反映し、キャッシュ側の公開履歴と出所をカバーします。ローカルのインデックスと同じ監査証跡の理由から無条件（`soft_deleted_at` 述語なし）です。
 - **`npm_remote_tags`**: `(namespace_id, npm_remote_package_id, name)` に対するユニークインデックス — 名前によってディストリビューションタグを検索します。`(namespace_id, npm_remote_version_id)` に対するインデックス — 特定のバージョンを指すすべてのタグを見つけます。
 - **`npm_remote_metadata_files`**: `(namespace_id, npm_remote_package_id, kind)` に対するユニークインデックス — パッケージごと・kind ごとに 1 つのメタデータファイルを強制します。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってメタデータファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべてのキャッシュされたメタデータファイルへの逆引きで、ホスト型の [`npm_metadata_files`](#npm-repositories) インデックスを反映します。
 - **`npm_remote_files`**: `(namespace_id, npm_remote_version_id, file_name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — ファイル名はバージョン内で一意でなければなりません。部分条件により、ソフト削除後に同じ名前のファイルを再作成できます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべてのキャッシュされた npm ファイルへの逆引きで、ホスト型の [`npm_files`](#npm-repositories) インデックスを反映し、チェックサム検索がキャッシュ側の参照もカバーするようにします。
@@ -1763,7 +1767,7 @@ Cells レベルのシャーディング（`namespace_id`）と標準的なイン
 
 ### バッファ書き込みと非同期書き込み {#buffered-and-asynchronous-writes}
 
-いくつかのカラムは、すべてのダウンロードまたはアップロードリクエストで更新されます。`repositories` のカウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）、エンティティ数制限チェックに使用される `npm_packages` のパッケージごとのカウンター（`versions_count`、`tags_count`）、`container_images`、`maven_packages`、`maven_versions`、`npm_packages`、`npm_versions` の `last_downloaded_at` タイムスタンプです。これらをリクエストパスで直接書き込むと、同じ行に対する同時リクエストがシリアライズされ（人気のパッケージでのホット行の競合）、リクエストレイテンシがデータベースの書き込みスループットに結合されます。
+いくつかのカラムは、すべてのダウンロードまたはアップロードリクエストで更新されます。`repositories` のカウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）、エンティティ数制限チェックに使用される `npm_packages` のパッケージごとのカウンター（`versions_count`、`tags_count`）、Maven と npm のバージョンテーブル（`maven_versions`、`maven_remote_versions`、`npm_versions`、`npm_remote_versions`）の `size_bytes` カウンター、`container_images`、`maven_packages`、`maven_versions`、`npm_packages`、`npm_versions` の `last_downloaded_at` タイムスタンプです。これらをリクエストパスで直接書き込むと、同じ行に対する同時リクエストがシリアライズされ（人気のパッケージでのホット行の競合）、リクエストレイテンシがデータベースの書き込みスループットに結合されます。
 
 これを避けるために、これらのカラムはバッファ書き込み/非同期書き込みを介して維持されます。リクエストハンドラーは高速な中間ストア（例: Redis）に更新を記録し、バックグラウンドプロセスが定期的にバッファされたエントリを行にマージし直します。これは GitLab の `ProjectStatistics` と同じパターンを再利用します。
 
@@ -1942,7 +1946,7 @@ blob を破棄のために扱う前に、バックエンドは（重複排除の
 
 ### ストレージ使用量の計算 {#storage-usage-calculation}
 
-blob ストレージスキーマは、Organization レベルのストレージ使用量の計算と帰属を正確かつ効率的にするように設計されています。
+ストレージ使用量は、ネームスペース、リポジトリ、アーティファクトの 3 つのスコープで追跡されます。各スコープには、サブミリ秒の読み取りで表示パスを提供する事前計算されたカウンターと、ドリフトが疑われる場合またはオンデマンド検証が必要な場合にソースデータから正確な値を計算する調整パスがあります。blob ストレージスキーマは、これらの計算と帰属を正確かつ効率的にするように設計されています。
 
 - blob とアタッチメントは Organization にスコープされ、重複排除は Organization _内_でのみ発生します（[ADR-002](002_storage_deduplication_scope.md) を参照）。
 - `blob_storage_blobs` は **Organization ごとに一意の保存済み blob ごとに 1 行**を持ちます。オブジェクトストレージ内の各物理オブジェクトは、Organization ごとに一度表現されます。
@@ -2027,6 +2031,56 @@ SELECT
 
 各サブクエリは単一のソーステーブルでの `namespace_id` によるカウントであり、`soft_deleted_at` 述語はありません。そのため、テーブルにまだある行（ライブ + [ソフト削除ウィンドウ](010_data_retention.md#soft-delete) 内のソフト削除されたもの）が `components_count` が追跡するものと一致します。4 つのパーティショニングされたソーステーブル（`container_manifests`、`container_remote_manifests`、`maven_remote_versions`、`npm_remote_versions`）は単一の `HASH(namespace_id)` パーティションにプルーニングされます。2 つの非パーティショニングの中間層テーブル（`maven_versions`、`npm_versions`）は、ネームスペースの行についてテーブル全体をスキャンします。既存の部分ユニークインデックス（`WHERE soft_deleted_at IS NULL`）はライブ行のみをカバーするため、カウントを直接満たすことはできません。ネームスペースごとのカーディナリティはデータモデルによって境界づけられ（バージョンごとに 1 行、ファイルや blob 参照ごとではない）、調整は頻繁ではない（オンデマンドまたはドリフト修正であり、ホットパスではない）ため、境界のあるスキャンは許容できます。追加の保険ポリシー（カバリングインデックスやシャドウテーブル）は導入されません。本番メトリクスがこれが遅すぎることを示した場合、各ソーステーブルの非部分的な `(namespace_id)` インデックスが、シャドウテーブルを検討する前の最も安価な次のステップです。
 
+#### リポジトリレベルのストレージ会計の調整 {#repository-level-storage-accounting-reconciliation}
+
+`repositories.size_bytes` カウンターは [バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持され、ランディングページのハイブリッドリストにサブミリ秒の読み取りを提供します。ネームスペースレベルのカウンターと同様に、2 つのシナリオではソースデータから正確な値を再計算する必要があります。
+
+1. **オンデマンドの検証**: ユーザーが「このリポジトリは実際にどれだけのストレージを使用しているか?」と尋ね、私たちはソース行から正確な値を導出する必要があります。
+2. **ドリフトの修正**: 失敗したフラッシュ、部分的なバッファ損失、またはバックグラウンドジョブのバグがカウンターを非同期化し、私たちはそれを再計算する必要があります。
+
+調整は `(repositories.format, repositories.kind)` で分岐します。各組み合わせが、異なるテーブルチェーンを通じて blob ストレージへ到達するためです。各フォーマットについて、クエリはリポジトリ内のアーティファクトから参照されるすべての blob `sha256` を収集し、リポジトリ内の重複排除のために `DISTINCT` を適用し、サイズを取得するために `blob_storage_blobs` へ JOIN します。クエリは中間層のテーブルを `*_repository_id` カラムでフィルターします。これらのカラムは `repositories.id` ではなく、フォーマット固有のスタブテーブル自身の `id` を参照します。以下のクエリ例では、小さな CTE を通じて `repositories.id` からスタブ `id` を解決するため、親識別子で呼び出せます。
+
+- **Container**: `container_images`（`container_repository_id` でフィルター）→ `container_blobs` と `container_manifests`。どちらのテーブルも `blob_sha256` を持ち、union によってレイヤー blob とマニフェストペイロードをカバーします。
+- **Maven**: `maven_packages`（`maven_repository_id` でフィルター）→ `maven_files`。単一のファイルテーブルが、パッケージのバージョン固有ファイルとパッケージレベルのファイルをカバーします。
+- **npm**: `npm_packages`（`npm_repository_id` でフィルター）→ `npm_versions` → `npm_files` に加え、`npm_metadata_files`（パッケージレベルでキー付けされ、バージョンレベルではない）との union。
+- **リモートバリアント**（`kind = remote`）は、キャッシュテーブル（`*_remote_*`）に対して同じ形に従います。キャッシュはリポジトリのフットプリントの一部です。
+
+`SUM(DISTINCT bsb.size)` は誤りです。異なる blob が同じ `size` 値を持つことがあるためです（同じ長さの小さなファイルがつぶれてしまいます）。調整では、まず `SELECT DISTINCT blob_sha256` を行い、その後で `blob_storage_blobs` に JOIN して合計する必要があります。
+
+ソフト削除された行は、再計算された値が `repositories.size_bytes` が追跡するものと一致するように含めます。カウンターはリポジトリ内で重複排除されます（調整で使用する `DISTINCT blob_sha256` と一致します）。`sha256` がリポジトリに初めてアタッチされたときにのみインクリメントされ、ガベージコレクションがその `sha256` の最後のアタッチメントをハード削除したときにデクリメントされます。ソフト削除と復元は no-op であり、上記のネームスペースレベルの動作と一致します。
+
+調整コストはネームスペースのサイズではなく、リポジトリのアーティファクト数に比例します。フォーマット固有のファイル、blob、マニフェストテーブル（コンテナでは `container_blobs` と `container_manifests`、Maven では `maven_files`、npm では `npm_files` と `npm_metadata_files`、およびそれぞれの `*_remote_*` キャッシュバリアント）は `HASH(namespace_id)` でパーティショニングされているため、走査の各側は単一パーティションにプルーニングされます。これらのテーブル上の既存のフォーマット固有インデックス（`(namespace_id, container_image_id, digest)`、`(namespace_id, maven_package_id, file_name)`、`(namespace_id, npm_version_id, file_name)`、およびそれぞれのリモート版）は部分インデックス（`WHERE soft_deleted_at IS NULL`）であり、ソフト削除を含む走査を直接満たせません。リポジトリごとのカーディナリティはデータモデルによって境界づけられ（アーティファクトごとにファイルまたは blob 参照 1 行、コンテナではマニフェストが小さな追加要因）、調整は頻繁ではない（オンデマンドまたはドリフト修正であり、ホットパスではない）ため、境界のあるパーティションスキャンは許容できます。[ネームスペースレベルの調整](#namespace-level-storage-accounting-reconciliation) からの最終的な `blob_storage_blobs_by_namespace` 検索は、単一パーティションのインデックスオンリースキャンです。
+
+リポジトリレベルの調整には追加の保険構造（カバリングインデックス、シャドウテーブル）は導入しません。本番メトリクスが非常に大きいリポジトリでこれが遅すぎることを示した場合、最も安価な次のステップは、これら各テーブルに非部分的な `(namespace_id, parent_id)` インデックスを追加することです。その先では、フォーマット固有テーブルの attach/detach 時に維持される、`(namespace_id, repository_id, sha256, size)` をマッピングするリポジトリパーティショニングされたシャドウテーブルが、より細かいスコープで [オプション B](#namespace-level-storage-accounting-reconciliation) の形を反映します。
+
+#### アーティファクトレベルのストレージ会計 {#artifact-level-storage-accounting}
+
+アーティファクトレベルのストレージ使用量は、単一のアーティファクトバージョン（コンテナマニフェスト、Maven バージョン、npm バージョン）のバイト単位のフットプリントです。これはアーティファクトごとの UI 表示（例: 「このイメージは 142 MB」、「このパッケージバージョンは 4 MB」）を支え、サイズでフィルターまたはソートする [ライフサイクルルール](010_data_retention.md) とレポートクエリで使用されます。
+
+基になるアーティファクトの形状が異なるため、会計モデルはフォーマットごとに異なります。
+
+- **コンテナマニフェスト**: `container_manifests.size` は push 時に事前計算され、不変です。マニフェストはコンテンツアドレス可能（[ADR-008](008_content_addressable_storage.md)）であるため、バイトが変更されると新しいダイジェストと新しい `size` を持つ新しいマニフェストが生成されます。このカラムが信頼できる情報源であるため、調整は不要です。リモートキャッシュでは `container_remote_manifests.size` がこれを反映し、子が遅延キャッシュされるマニフェストリストについては [progressive semantics](#container-remote-repositories) を持ちます。
+- **Maven と npm のバージョン**: 各バージョン行は、バージョンのフットプリントの信頼できる情報源である事前計算済みの `size_bytes` カラム（`maven_versions`、`maven_remote_versions`、`npm_versions`、`npm_remote_versions`）を持ちます。`container_manifests.size` と異なり、push 時に不変に設定することはできません。Maven と npm のバージョンはバージョンレベルでコンテンツアドレス可能ではなく、バージョンの存続期間中にファイルを追加または削除できるためです。したがって、これは `repositories.size_bytes` と同様に、[バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介したバッファカウンターとして維持されます。`blob_sha256` がバージョンに初めてアタッチされたときにインクリメントされ、ガベージコレクションがバージョン内のその `sha256` の最後のアタッチメントをハード削除したときにデクリメントされます（バージョン内で重複排除され、調整で使われる `DISTINCT blob_sha256` と一致します）。表示パスとバージョン一覧は、サイズによるソートやフィルター時も含め、インデックス付きカラムを直接読み取ります。
+
+ソフト削除されたファイルは、ガベージコレクションがハード削除するまでバージョンごとの `size_bytes` に寄与し続けます。ソフト削除と復元はカウンターに対して no-op であり、ネームスペースおよびリポジトリのセマンティクスと一致します。
+
+読み取り時に導出するのではなくカラムを事前計算することで、バージョン一覧をサイズでソートおよびフィルターできます。単一バージョンのサイズを導出することはどちらの方法でも安価です（境界のある少数ファイルの JOIN）。しかし、サイズがバージョン一覧でソートまたはフィルター可能なカラムになると、すべての行について導出する方法はスケールしません。Cloud SQL PostgreSQL 17 インスタンス（`large` プロファイル、最も深いネームスペースに約 2.6 万件の Maven バージョンと約 2.6 万件の npm バージョン）で検証しました。
+
+| サイズ上位 50 バージョン | Maven | npm |
+|---|---|---|
+| 読み取り時に導出（各バージョンの blob を合計） | 58 ms | 29 ms |
+| 事前計算済み `size_bytes` カラム + インデックス | 0.06 ms | 0.08 ms |
+
+これは 3〜4 桁の差であり、重複排除した読み取り時導出のバリアントはさらに遅く（Maven で約 190 ms）、バージョン数が増えるほど差は広がります。ランディングページはすでにリポジトリを `size_bytes` でソートしているため、同じ期待値がバージョン一覧にも適用されます。そのため、スコープ間の一貫性のためにこのカラムを事前計算します。
+
+#### アーティファクトレベルのストレージ会計の調整 {#artifact-level-storage-accounting-reconciliation}
+
+`container_manifests.size` は不変かつコンテンツアドレス可能なので、調整は不要です。Maven と npm の `size_bytes` カウンターは、リポジトリレベルおよびネームスペースレベルのカウンターと同様に、失敗したフラッシュ、部分的なバッファ損失、またはバックグラウンドジョブのバグによってドリフトし得るため、オンデマンド検証またはドリフト修正のためにソースデータから正確な値を再計算します。
+
+1 つのバージョンの調整では、フォーマット固有のファイルテーブルからそのバージョンの distinct な `blob_sha256` 値を選択し、blob ごとのサイズを取得するために `blob_storage_blobs` に JOIN します。これは [リポジトリレベル](#repository-level-storage-accounting-reconciliation) の調整と同じ走査を、単一の `maven_version_id` または `npm_version_id` にスコープしたものです。ソフト削除されたファイルも含めるため、再計算された値はカウンターが追跡するものと一致します。バージョンごとのカーディナリティはフォーマットプロトコルによって境界づけられる（通常 Maven は 4〜15 ファイル、npm は 1〜3 ファイル）ため、再計算はサブミリ秒の単一パーティションスキャン（検証では約 0.6 ms）です。クエリ例は [blob ストレージのクエリ例](#blob-storage-query-examples) にあります。
+
+カラム導入時のバックフィルは、バージョンごとにグループ化したセットベースの再計算です。現在のボリュームでは安価であり（最も深いネームスペースの約 2.6 万バージョンのバックフィルが約 284 ms、したがってこの規模ではテーブル全体でも数秒）、事前計算を先送りして本番ボリュームに対して後でバックフィルするよりもはるかに安価です。今行うことで、3 つのフォーマットすべてにわたり、データモデルと API の一貫性も保てます。
+
 ### インデックス {#indexes}
 
 - **`blob_storage_blobs`**: `(namespace_id, sha256)` に対するユニークインデックス — 重複排除を強制し、Organization 内で sha256 によって blob の存在を確認します。この制約はパーティションキー（`sha256`）を含むため、PostgreSQL はすべてのハッシュパーティションにわたって正しく強制します。`(namespace_id) INCLUDE (size)` のカバリングインデックス — ヒープフェッチなしで [ネームスペースレベルのストレージ会計の調整](#namespace-level-storage-accounting-reconciliation) のためのインデックスオンリースキャンを可能にします。
@@ -2097,6 +2151,161 @@ SELECT
   SELECT deduplicated_size_bytes, components_count
   FROM namespace_statistics
   WHERE namespace_id = 123;
+  ```
+
+- 表示パス: 事前計算されたリポジトリカウンターを読み取る（単一行検索、ランディングページのハイブリッドリストで使用）
+
+  ```sql
+  SELECT size_bytes
+  FROM repositories
+  WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND id = 456;
+  ```
+
+- [リポジトリレベルの調整](#repository-level-storage-accounting-reconciliation): フォーマットごとの単一リポジトリの正確なストレージ。各先頭 CTE は、`repositories.id` からフォーマット固有のスタブ `id`（`container_repositories`、`maven_repositories`、`npm_repositories`）を解決します。中間層の `*_repository_id` カラムは、`repositories.id` ではなく、スタブテーブル自身の `id` を参照します。
+
+  - **Container**: イメージをたどり、`container_blobs` と `container_manifests` から blob 参照を union し、`blob_sha256` で重複排除し、ネームスペースシャドウテーブルを介して合計します。
+
+    ```sql
+    WITH cr AS (
+      SELECT id
+      FROM container_repositories
+      WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND repository_id = 456
+    ),
+    uniq_blobs AS (
+      SELECT cb.blob_sha256
+      FROM container_blobs cb
+      JOIN container_images ci
+        ON ci.namespace_id = cb.namespace_id AND ci.id = cb.container_image_id
+      WHERE ci.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+        AND ci.container_repository_id = (SELECT id FROM cr)
+      UNION
+      SELECT cm.blob_sha256
+      FROM container_manifests cm
+      JOIN container_images ci
+        ON ci.namespace_id = cm.namespace_id AND ci.id = cm.container_image_id
+      WHERE ci.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+        AND ci.container_repository_id = (SELECT id FROM cr)
+    )
+    SELECT COALESCE(SUM(bsb.size), 0) AS total_size_bytes
+    FROM uniq_blobs u
+    JOIN blob_storage_blobs_by_namespace bsb
+      ON bsb.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND bsb.sha256 = u.blob_sha256;
+    ```
+
+  - **Maven**: 単一のファイルテーブルが、バージョン固有ファイルとパッケージレベルファイルをカバーします。
+
+    ```sql
+    WITH mr AS (
+      SELECT id
+      FROM maven_repositories
+      WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND repository_id = 456
+    ),
+    uniq_blobs AS (
+      SELECT DISTINCT mf.blob_sha256
+      FROM maven_files mf
+      JOIN maven_packages mp
+        ON mp.namespace_id = mf.namespace_id AND mp.id = mf.maven_package_id
+      WHERE mp.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+        AND mp.maven_repository_id = (SELECT id FROM mr)
+    )
+    SELECT COALESCE(SUM(bsb.size), 0) AS total_size_bytes
+    FROM uniq_blobs u
+    JOIN blob_storage_blobs_by_namespace bsb
+      ON bsb.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND bsb.sha256 = u.blob_sha256;
+    ```
+
+  - **npm**: パッケージ → バージョン → ファイルをたどり、パッケージレベルのメタデータファイルを union し、`blob_sha256` で重複排除します。
+
+    ```sql
+    WITH nr AS (
+      SELECT id
+      FROM npm_repositories
+      WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND repository_id = 456
+    ),
+    uniq_blobs AS (
+      SELECT nf.blob_sha256
+      FROM npm_files nf
+      JOIN npm_versions nv
+        ON nv.namespace_id = nf.namespace_id AND nv.id = nf.npm_version_id
+      JOIN npm_packages np
+        ON np.namespace_id = nv.namespace_id AND np.id = nv.npm_package_id
+      WHERE np.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+        AND np.npm_repository_id = (SELECT id FROM nr)
+      UNION
+      SELECT nmf.blob_sha256
+      FROM npm_metadata_files nmf
+      JOIN npm_packages np
+        ON np.namespace_id = nmf.namespace_id AND np.id = nmf.npm_package_id
+      WHERE np.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
+        AND np.npm_repository_id = (SELECT id FROM nr)
+    )
+    SELECT COALESCE(SUM(bsb.size), 0) AS total_size_bytes
+    FROM uniq_blobs u
+    JOIN blob_storage_blobs_by_namespace bsb
+      ON bsb.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND bsb.sha256 = u.blob_sha256;
+    ```
+
+- [アーティファクトレベル](#artifact-level-storage-accounting): 事前計算されたコンテナマニフェストサイズを読み取る（不変、単一行検索）
+
+  ```sql
+  SELECT size
+  FROM container_manifests
+  WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND id = 789;
+  ```
+
+- [アーティファクトレベル](#artifact-level-storage-accounting): 事前計算された Maven バージョンサイズを読み取る（信頼できる情報源、単一行検索）
+
+  ```sql
+  SELECT size_bytes
+  FROM maven_versions
+  WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND id = 456;
+  ```
+
+- [アーティファクトレベル](#artifact-level-storage-accounting): バージョン一覧表示のために Maven パッケージのバージョンをサイズ順に一覧する（`(namespace_id, maven_package_id, size_bytes DESC)` インデックスを使用。npm も同様）
+
+  ```sql
+  SELECT id, version, size_bytes
+  FROM maven_versions
+  WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND maven_package_id = 123
+    AND soft_deleted_at IS NULL
+  ORDER BY size_bytes DESC
+  LIMIT 50;
+  ```
+
+- [アーティファクトレベルの調整](#artifact-level-storage-accounting-reconciliation): カウンターを検証または修正するために、ソースデータから Maven バージョンの正確なサイズを再計算する（通常 4〜15 ファイル、境界のあるカーディナリティ）
+
+  ```sql
+  WITH uniq_blobs AS (
+    SELECT DISTINCT mf.blob_sha256
+    FROM maven_files mf
+    WHERE mf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND mf.maven_version_id = 456
+  )
+  SELECT COALESCE(SUM(bsb.size), 0) AS bytes
+  FROM uniq_blobs u
+  JOIN blob_storage_blobs_by_namespace bsb
+    ON bsb.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND bsb.sha256 = u.blob_sha256;
+  ```
+
+- [アーティファクトレベル](#artifact-level-storage-accounting): 事前計算された npm バージョンサイズを読み取る（信頼できる情報源、単一行検索）
+
+  ```sql
+  SELECT size_bytes
+  FROM npm_versions
+  WHERE namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND id = 456;
+  ```
+
+- [アーティファクトレベルの調整](#artifact-level-storage-accounting-reconciliation): ソースデータから npm バージョンの正確なサイズを再計算する（通常 1 バージョンあたり 1〜3 ファイル。`npm_metadata_files` はパッケージレベルでキー付けされ、単一バージョンのフットプリントには含まれません）
+
+  ```sql
+  WITH uniq_blobs AS (
+    SELECT DISTINCT nf.blob_sha256
+    FROM npm_files nf
+    WHERE nf.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND nf.npm_version_id = 456
+  )
+  SELECT COALESCE(SUM(bsb.size), 0) AS bytes
+  FROM uniq_blobs u
+  JOIN blob_storage_blobs_by_namespace bsb
+    ON bsb.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8' AND bsb.sha256 = u.blob_sha256;
   ```
 
 ## 帰結 {#consequences}

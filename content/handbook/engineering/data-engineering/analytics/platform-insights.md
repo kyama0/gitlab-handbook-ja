@@ -2,11 +2,11 @@
 title: "Analytics:Platform Insights グループ"
 description: "Analytics Platform Insights グループは、スケーラブルなアーキテクチャによって、顧客がアナリティクスをセルフサービスで利用できるようにする取り組みを行っています"
 upstream_path: /handbook/engineering/data-engineering/analytics/platform-insights/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: c9aef34f52e9f619472aeed4981f6aaec80de2b3
+translated_at: "2026-06-26T20:53:52+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-06-24T22:31:31-04:00"
 ---
 
 ## ビジョン
@@ -28,16 +28,27 @@ Platform Insights グループは Analytics セクションの一部です。私
 下記の図は、ソースから顧客までの典型的なデータフローを非常に高いレベルで示しています。
 
 ```mermaid
-graph LR
-    PG[(PostgreSQL)]
-    CH[(ClickHouse)]
-    S[Siphon]
-    DIP[Data Insights Platform]
-    RAILS[🦊 GitLab Rails Monolith]
-    GLQL(GitLab Query Language)
-    DAA[Data Analyst Agent]
-    DF[Dashboard Foundations]
-    USER([👤 Customer])
+graph TD
+    subgraph Sources
+        PG[(PostgreSQL)]
+    end
+
+    subgraph Data platform
+        S[Siphon]
+        CH[(ClickHouse)]
+        DIP[Data Insights Platform]
+    end
+
+    subgraph GitLab application
+        RAILS[🦊 GitLab Rails Monolith]
+        GLQL[GitLab Query Language]
+    end
+
+    subgraph Customer experiences
+        DAA[Data Analyst Agent]
+        DF[Dashboard Foundations]
+        USER([👤 Customer])
+    end
 
     PG --> S
     S --> CH
@@ -50,13 +61,15 @@ graph LR
     DF -->|Custom dashboard| USER
 ```
 
+アナリティクスプラットフォームに加えて、このグループには [search チーム](/handbook/engineering/ai/search/) も含まれ、[classic search](https://docs.gitlab.com/user/search/) 機能を担当しています。
+
 ## チーム
 
-{{< group-by-slugs arun.sori debpaine drosse jiaanlouw nogundu roberthunt vineeth-r snarayanan_gl >}}
+{{< group-by-slugs arun.sori drosse jiaanlouw john-mason rkumar555 roberthunt siddharthdungarwal vineeth-r snarayanan_gl >}}
 
 ### Stable counterparts
 
-{{< engineering/stable-counterparts manager-role="Engineering Manager(.*)Analytics:Platform Insights" role="Product(.*)Platform Insights|Principal(.*)Monitor|Security(.*)Monitor" >}}
+{{< group-by-slugs adam-hegyi ankitbhatnagar diegocapetown >}}
 
 ### 私たちの価値観と原則
 

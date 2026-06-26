@@ -4,16 +4,16 @@ status: ongoing
 creation-date: "2024-09-11"
 authors: [ "@dgruzd" ]
 coaches: [ "@shekharpatnaik" ]
-dris: []
-owning-stage: "~devops::foundations"
+dris: [ "@wortschi" ]
+owning-stage: "~devops::ai platform"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/ai_context_abstraction_layer/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
-translator: claude
+upstream_sha: c9aef34f52e9f619472aeed4981f6aaec80de2b3
+translated_at: "2026-06-26T21:07:40+09:00"
+translator: codex
 stale: false
-lastmod: "2025-04-28T10:53:04-07:00"
+lastmod: "2026-06-25T09:42:09+02:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
