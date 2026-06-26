@@ -3,11 +3,11 @@ title: Kibana の使い方
 description: "Kibana とは何か、検索方法、結果の解釈方法、そこから特定の情報を取得するためのヒントとコツについての情報。"
 category: Infrastructure for troubleshooting
 upstream_path: /handbook/support/workflows/kibana/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T12:58:25Z"
-translator: claude
+upstream_sha: c9aef34f52e9f619472aeed4981f6aaec80de2b3
+translated_at: "2026-06-26T20:39:13+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-17T08:41:47+00:00
+lastmod: "2026-06-25T15:51:50+08:00"
 ---
 
 ## 概要
@@ -16,7 +16,7 @@ lastmod: 2026-06-17T08:41:47+00:00
 
 ## Kibana の使い方
 
-[Kibana](https://log.gprd.gitlab.net/) は [Elasticsearch](https://en.wikipedia.org/wiki/Elasticsearch) 用の [オープンソースのデータ可視化プラグイン](https://www.elastic.co/kibana) です。Elasticsearch クラスタ上にインデックスされたコンテンツに対する可視化機能を提供します。Support Engineering は Kibana を使って、GitLab.com 上のエラーイベントの検索と、ユーザーによってその様々な側面に対して特定の変更がいつ行われたかの検出の両方を行っています。
+[Kibana](https://log.gprd.gitlab.net/) は [オープンソースのデータ可視化プラグイン](https://www.elastic.co/kibana) であり、[Elasticsearch](https://en.wikipedia.org/wiki/Elasticsearch) 向けに使われます。Elasticsearch クラスタ上にインデックスされたコンテンツに対する可視化機能を提供します。Support Engineering は Kibana を使って、GitLab.com 上のエラーイベントの検索と、ユーザーによってその様々な側面に対して特定の変更がいつ行われたかの検出の両方を行っています。
 
 ステージング (`gstg`) のような非本番環境では https://nonprod-log.gitlab.net/ を使用してください。
 
@@ -247,6 +247,56 @@ SAML ログインの問題を調査するには:
 1. [SAML グループのドキュメント](https://docs.gitlab.com/user/group/saml_sso/troubleshooting/#search-rails-logs-for-a-saml-sign-in) で推奨されている positive フィルタを追加します。
 
 SAML 応答をデコードし、選択したフィルタに対応する結果を観察すると、欠落または誤設定された属性があるかを確認できます。
+
+#### SAML 応答
+
+特定ユーザーの SAML 応答を取得するには:
+
+- 例のグループ: [gitlab-silver](https://gitlab.com/gitlab-silver/)
+- 例のユーザー: `user@domain.com`
+
+`pubsub-rails-inf-gprd-*` ログで:
+
+1. 結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
+1. グループのパスについて `json.saml_response.audiences` に positive フィルタを追加します。この例では `gitlab-silver` です。
+1. `json.payload_type` に `saml_response` の positive フィルタを追加します。
+1. 取得する `saml_response` の対象ユーザーのメールアドレスについて、`json.saml_response.attributes.email` に positive フィルタを追加します。この例では `user@domain.com` です
+1. `json.saml_response.attributes` の値を確認します
+
+例: 1
+
+```json
+"attributes": {
+  "email": [
+    "user@domain.com"
+  ],
+  "groups": [
+    "saml-group-1-developer",
+    "saml-group-2-maintainer"
+  ]
+},
+```
+
+例 2:
+
+```json
+"attributes": {
+    "email": [
+       "user@domain.com"
+     ],
+    "firstname": [
+      "John"
+    ],
+     "lastname": [
+       "Doe"
+    ],
+    "name": [
+       "John Doe"
+    ]
+   }
+```
+
+- [検索へのクイックリンク](https://log.gprd.gitlab.net/app/r/s/hdVqu)
 
 #### SCIM プロビジョニングとデプロビジョニング
 

@@ -2,11 +2,11 @@
 title: "Release & Deploy グループ"
 description: "Release & Deploy グループは、GitLab Engineering が GitLab.com、GitLab Dedicated、および Self-Managed のお客様に対して、安全でスケーラブルかつ効率的な方法で機能を届けられるよう支援します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/"
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
-translator: "claude"
+upstream_sha: "c9aef34f52e9f619472aeed4981f6aaec80de2b3"
+translated_at: "2026-06-26T20:53:52+09:00"
+translator: "codex"
 stale: false
-lastmod: "2026-06-02T14:47:42-06:00"
+lastmod: "2026-06-25T21:41:11-04:00"
 ---
 
 ## 共通リンク
@@ -110,7 +110,7 @@ GitLab Duo/AI を私たちのワークフローに組み込む方法のアイデ
 
 以下のメンバーが Delivery:Releases&Deploy チームに所属しています:
 
-{{< team-by-departments departments="GitLab Delivery:Release-and-Deploy BE,GitLab Delivery:Release-and-Deploy SRE" >}}
+{{< team-by-departments departments="GitLab Delivery:Release-and-Deploy Team" >}}
 
 ## パフォーマンス指標
 
