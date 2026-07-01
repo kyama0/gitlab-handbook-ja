@@ -2,11 +2,11 @@
 title: "プロダクトセキュリティエンジニアリング"
 description: "プロダクトセキュリティエンジニアリングチームのチャーター"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/product-security-engineering/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:40:09Z"
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+translated_at: "2026-07-02T07:50:09+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-04T07:51:29-04:00"
+lastmod: 2026-06-26T14:40:46+12:00
 ---
 
 プロダクトセキュリティエンジニアリング (ProdSecEng) は、脆弱性管理および PSIRT の各チームと並んで、[セキュリティケイパビリティエンジニアリング](/handbook/security/product-security/security-capabilities-engineering/) (SecCapEng) の一部です。
@@ -58,16 +58,55 @@ ProdSecEng は、いくつかの主要な領域から作業を調達し、私た
 | 脆弱性管理運用 | [脆弱性管理](/handbook/security/product-security/vulnerability-management/) |
 | 脆弱性開示とトリアージ | [PSIRT](/handbook/security/product-security/psirt/) |
 
+## チームバリュー
+
+ProdSecEng は、[GitLab 全社の運用原則](/handbook/company/operating-principles/)に従って運営します。加えて、チームは次を実践します。
+
+1. **透明性**: 私たちはオープンに作業します。意思決定、トレードオフ、進捗は、見に来る人なら誰でも確認できます。ブロッカーにぶつかったり方向転換したりしたときは、非公開で整理するのではなく、Issue やエピックでそのことを伝えます。
+1. **エンジニアリング標準**: 私たちは GitLab の[エンジニアリングワークフロー](/handbook/engineering/workflow/)に従い、他の Engineering チームと同じ品質基準で貢献します。コードレビュー、テスト、ドキュメント、パフォーマンス標準はすべて適用されます。
+1. **ドッグフーディング**: 私たちはユーザー体験を理解するため、可能な限り GitLab を使用します。これには、チームが私たちのインプットを必要とするタイミングを把握するためのメンションや TODO の使用、work item での議論と意思決定の記録、エンジニアリングワークフローでの GitLab 機能の使用、見つけたバグへのフィードバックや MR でのリードが含まれます。
+
 ## 運用モデル {#operating-model}
 
-<a id="planning-and-milestones"></a>
-<a id="priority"></a>
-<a id="sizing-and-estimates"></a>
-<a id="unplanned-work"></a>
+### 計画とマイルストーン {#planning-and-milestones}
 
-ProdSecEng は、計画立案、優先順位付け、サイジング、作業追跡について、共有の [SecCapEng の働き方](/handbook/security/product-security/security-capabilities-engineering/) に従います。
+ProdSecEng は、Product と Engineering のケイデンスに合わせるため、[Product Milestones](/handbook/product/product-processes/milestones/)を使用して作業を計画します。マイルストーンはおよそ 4 週間です。Engineering Manager は、PSRR の優先度、クロスチームの議論、チームキャパシティを踏まえてマイルストーン計画をリードします。
 
-バックログ管理、リファインメント、開発、引き渡しプロセスを含む、私たちのチーム固有のワークフローの詳細については、[詳細ワークフロー](detailed-workflow/)を参照してください。
+### 優先度 {#priority}
+
+私たちは GitLab 標準の[優先度スコープラベル](/handbook/product-development/how-we-work/issue-triage/#priority)を使用します。
+
+| 優先度 | 意図 | 目標解決期間 |
+|----------|-----------|-------------------|
+| `~"priority::1"` | キャパシティ制約に関係なく、できるだけ早く対応する | 30 日 |
+| `~"priority::2"` | 近いうちに対応する。次の数マイルストーンでキャパシティを割り当てる | 60〜90 日 |
+| `~"priority::3"` | 可能なときに対応する。より優先度の高い作業に置き換えられる可能性がある | 90〜120 日 |
+| `~"priority::4"` | 指定されたタイムラインなし | ベストエフォート |
+
+優先度は、リスク評価、全社的な優先事項、クロスチームのリクエスト、チームのニーズを踏まえ、マイルストーン計画中に EM が設定します。
+
+### サイジングと見積もり {#sizing-and-estimates}
+
+Issue の weight には、標準の[修正フィボナッチスケール](https://docs.gitlab.com/tutorials/scrum_events/standups_retrospectives_velocity/#deciding-the-value-of-story-points)を使用します。
+
+| Weight | 複雑さ | おおよその時間 |
+|--------|-----------|------------------|
+| 1 | 些細。副作用は想定されない | 1 日 |
+| 2 | 小さい。要件が明確で、テストも単純 | 1〜2 日 |
+| 3 | 中程度。コード範囲は広いが、要件は明確 | 2〜3 日 |
+| 5 | 複雑。要件は理解されているが、途中でギャップが出る可能性が高い | 3〜5 日 |
+| 8 | 非常に複雑。開始前に重要な調査とリサーチが必要 | 5〜10 日 |
+| 13+ | 分割が必要。より小さな Issue に分割する | N/A |
+
+これは通常、チームメンバー 1 人あたり 1 マイルストーンで約 20 weight の work item を意味し、休暇、祝日、成長と開発の時間に応じて減らします。キャパシティの 60〜80% を事前に計画し、残りは計画外のリアクティブな作業のために確保します。
+
+### 計画外作業 {#unplanned-work}
+
+計画後にマイルストーンへ追加された Issue と MR には `~Unplanned` ラベルを使用します。これにより、計画済みキャパシティと計画外キャパシティの分割が適切かどうかを追跡し、割り込みの反復的な発生源を特定できます。
+
+### 作業追跡
+
+私たちは、適切な作業を選び、正確にサイジングし、リスクを早期に提起し、進捗の可視性を提供できていることを確認するためにデータを追跡します。バックログ管理、リファインメント、開発、引き渡しプロセスを含むチーム固有のワークフローの詳細については、[詳細ワークフロー](detailed-workflow/)を参照してください。
 
 ## コミュニケーション
 
@@ -80,42 +119,49 @@ ProdSecEng は、計画立案、優先順位付け、サイジング、作業追
 
 ## 成功指標 {#success-metrics}
 
-ProdSecEng は、ラベル付けされたマージリクエストと Issue を通じて指標を追跡します。次の指標ラベルが追跡とレポートを推進します:
+ProdSecEng は、ラベル付けされたマージリクエストと Issue を通じて指標を追跡します。
 
-### 指標ラベルとカテゴリ
+### アクティブな指標ラベル
 
-| **カテゴリ** | **ラベル** | **説明** | **なぜ重要か** | **適用先** |
-| --- | --- | --- | --- | --- |
-| **プロダクトセキュリティ要件** | `~ProdSecEngMetric::ProdSecRequirement` | GitLab プロダクトセキュリティチームによって必要とされる製品内の機能 | プロダクトセキュリティチームが製品自体を使用して GitLab を保護できるようにする機能の提供における私たちの効果性を実証 | Issue とマージリクエスト、ときどきエピック |
-| **多層防御** | `~ProdSecEngMetric::Defense in Depth` | 「以前の」セキュリティ制御が失敗した場合により堅牢になるように既存の脆弱でない機能を変更すること | 主要な制御が侵害されてもリスクを軽減する多層的なセキュリティアプローチへのコミットメントを示す | Issue とマージリクエスト、ときどきエピック |
-| **舗装された道路** | `~ProdSecEngMetric::Paved Road` | GitLab の貢献者がより簡単に活動を安全に実行できる新しいツール、メソッド、またはチェック | スケーラブルで開発者にやさしいセキュリティソリューションを作成する成功度を測定 | Issue とマージリクエスト、ときどきエピック |
-| **ツール統合** | `~ProdSecEngMetric::Tooling Integration` | カスタムインハウスツールから GitLab 製品への機能の統合の一環として実施される作業 | 外部依存関係の削減とプロダクトセキュリティツールのプラットフォームへの統合の進捗を追跡 | Issue とマージリクエスト、ときどきエピック |
-| **カスタムツール** | `~ProdSecEngMetric::Custom Tooling` | プロダクトセキュリティ要件を満たすために必要な、製品外のカスタムツールを構築、保守、または拡張するために実施される作業 | プロダクトセキュリティ運用をサポートするツールへの必要な投資を反映 | Issue とマージリクエスト、ときどきエピック |
-| **廃止** | `~ProdSecEngMetric::Sunsetting` | カスタムツールを廃止するために必要な特定の機能や機能性を表す Issue | ツールを GitLab 製品に統合する進捗を実証 | [product-security-engineering-team リポジトリ](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engineering/product-security-engineering-team/-/issues) の Issue |
-| **保留中** | `~ProdSecEngMetric::Pending` | 作業タイプがまだ完全に明確ではないが、進捗をブロックしたくない | カテゴライズが必要だが勢いを遅らせない作業を追跡できる | Issue、マージリクエスト、エピック |
-| **内部** | `~ProdSecEngMetric::Internal` | チームタスク、たとえばプロセスや計画 | 内部チーム運用を外部向け作業から分離 | Issue とマージリクエスト、エピック |
+これらのラベルは、現在のプロダクト中心のミッションに適用されます。
 
-これらのラベルに基づくメトリクスデータについては、[私たちの Tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/ProductSecurityEngineering/ProdSecEngValueDeliveryMetrics?:iid=6) を参照してください。
+| **カテゴリ** | **ラベル** | **説明** |
+| --- | --- | --- |
+| **プロダクトセキュリティ要件** | `~ProdSecEngMetric::ProdSecRequirement` | GitLab Product Security チームが必要とする製品内の機能 |
+| **多層防御** | `~ProdSecEngMetric::Defense in Depth` | 「以前の」セキュリティ制御が失敗した場合により堅牢になるよう、既存の脆弱でない機能を変更する作業 |
+| **舗装された道路** | `~ProdSecEngMetric::Paved Road` | GitLab のコントリビューターが活動を安全に実行しやすくする新しいツール、方法、チェック |
+| **保留中** | `~ProdSecEngMetric::Pending` | 作業タイプがまだ明確ではないが、進捗をブロックしたくないもの |
+| **内部** | `~ProdSecEngMetric::Internal` | プロセスや計画などのチームタスク |
+
+### 終了予定の指標ラベル
+
+これらのラベルは、ProdSecEng の以前のカスタムツールミッション向けに設計されたものです。既存ツールの移行が完了したら廃止します。
+
+| **カテゴリ** | **ラベル** | **説明** |
+| --- | --- | --- |
+| **ツール統合** | `~ProdSecEngMetric::Tooling Integration` | カスタムインハウスツールの機能を GitLab 製品へ統合する一環として実施される作業 |
+| **カスタムツール** | `~ProdSecEngMetric::Custom Tooling` | Product Security 要件を満たすために必要なカスタムツールを構築、保守、拡張する作業 |
+| **廃止** | `~ProdSecEngMetric::Sunsetting` | カスタムツールの廃止に必要な特定の機能や機能性を表す Issue |
 
 ### 戦略的 KPI
 
 私たちが収集する指標に基づき、私たちのミッションでどのように進んでいるかを伝えるために追跡する戦略的 Key Performance Indicator (KPI) は以下のとおりです。
 
-| **指標** | **なぜ重要か** | **計算方法** | **測定頻度** | **レポートメカニズム** |
-| --- | --- | --- | --- | --- |
-| **配信されたプロダクトセキュリティチーム要件** | プロダクトセキュリティチームが私たちの製品を使用して GitLab を保護できるようにする機能の提供における私たちの効果性を実証 | `~ProdSecEngMetric::ProdSecRequirement` ラベル付きのマージされた MR の数 | TBD | TBD |
-| **配信されたセキュリティ強化と舗装された道路** | GitLab のセキュリティ態勢の改善と組織全体での安全な開発実践の有効化への私たちの貢献を実証 | `~ProdSecEngMetric::Defense in Depth` または `~ProdSecEngMetric::Paved Road` ラベル付きのマージされた MR の数 | TBD | TBD |
-| **製品に統合されたカスタムツールの価値** | 外部依存関係を削減し、プロダクトセキュリティツールを GitLab に統合する成功度を測定 | 現在のインハウスカスタムツールの個別の価値提案のうち、製品に貢献されたものの割合 (`~ProdSecEngMetric::Tooling Integration` および `~ProdSecEngMetric::Sunsetting` ラベルを使用して追跡) | TBD | TBD |
+| **指標** | **計算方法** | **ステータス** |
+| --- | --- | --- |
+| **配信された Product Security チーム要件** | `~ProdSecEngMetric::ProdSecRequirement` ラベル付きのマージされた MR の数 | アクティブ |
+| **配信されたセキュリティ強化と舗装された道路** | `~ProdSecEngMetric::Defense in Depth` または `~ProdSecEngMetric::Paved Road` ラベル付きのマージされた MR の数 | アクティブ |
+| **製品に統合されたカスタムツールの価値** | 製品に貢献されたカスタムツール内の個別価値提案の割合 | 終了予定 |
 
 ### 運用指標
 
 チームの効率性を追跡するため、以下の運用 KPI を追跡します。
 
-| **指標** | **なぜ重要か** | **計算方法** | **測定頻度** | **レポートメカニズム** |
-| --- | --- | --- | --- | --- |
-| **バックログのヘルスとリファインメント** | 開発のためのよくメンテナンスされ優先順位付けされた作業のバックログを確保 | リファインメントされた候補 Issue の数、`Ready for Development` ステータスの Issue、マイルストーン全体でのリファインメントへの参加 | 月次 | TBD |
-| **マイルストーンの予測可能性** | 計画されたマイルストーン内でコミットされた作業を完了する能力を追跡 | 各マイルストーンで計画された vs 実際に完了した作業（適用された重みと指標ラベルで測定） | 月次 | TBD |
-| **指標ラベルカバレッジ** | すべての作業が追跡とレポートのために適切にカテゴライズされていることを確保 | 適切な `~ProdSecEngMetric::*` ラベルが適用されたマージされた MR とクローズされた Issue の割合 | 月次 | TBD |
+| **指標** | **計算方法** | **ステータス** |
+| --- | --- | --- |
+| **バックログのヘルスとリファインメント** | リファインメントされた候補 Issue の数、`Ready for Development` ステータスの Issue、マイルストーン全体でのリファインメントへの参加 | アクティブ |
+| **マイルストーンの予測可能性** | 各マイルストーンで計画された作業と実際に完了した作業（weight と指標ラベルで測定） | アクティブ |
+| **指標ラベルカバレッジ** | 適切な `~ProdSecEngMetric::*` ラベルが付いたマージ済み MR とクローズ済み Issue の割合 | アクティブ |
 
 ## チーム構成
 

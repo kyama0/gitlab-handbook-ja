@@ -1,5 +1,5 @@
 ---
-title: Concept Release Discipline
+title: コンセプトリリース規律
 description: >-
   Design Strategy は、dark、internal debut、external という 3 つのリリースフェーズでコンセプトワークを管理します。各フェーズには、定義された対象者、明確な開始基準、指定されたチャネルがあります。このページでは、作業がフェーズ間をどのように移動するか、関係者全員に何が期待されるかを説明します。
 upstream_path: /handbook/upstream-studios/design-strategy/concept-architects/concept-release-discipline/

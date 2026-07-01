@@ -27378,11 +27378,11 @@
     },
     "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/_index.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:40:09Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "524dd8600832b74850746a33531ddd3949fbf68838093a63b539328c49356d8d",
-      "upstream_committed_at": "2026-05-04T07:51:29-04:00"
+      "upstream_sha": "4253b2ab72b0791916a54411ca71a25276e128bd",
+      "translated_at": "2026-07-02T07:50:09+09:00",
+      "model": "codex",
+      "input_hash": "22c4db83527d90c18c9751c0542eb02eb883d63498bfdc48ff54fdc2a1f08aed",
+      "upstream_committed_at": "2026-06-26T14:40:46+12:00"
     },
     "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/detailed-workflow.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/product-security-engineering/detailed-workflow.md",
