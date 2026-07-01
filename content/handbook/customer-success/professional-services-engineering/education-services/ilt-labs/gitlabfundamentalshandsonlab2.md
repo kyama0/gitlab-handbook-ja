@@ -1,12 +1,12 @@
 ---
-title: "GitLab Fundamentals - ハンズオンラボ: Issue とボードを使ったプロジェクト管理"
-description: "このハンズオンガイドでは、GitLab での Issue の操作プロセスを説明します。"
+title: "GitLab Fundamentals - ハンズオンラボ: エピックと Issue ボードを使ったプロジェクト管理"
+description: "このハンズオンガイドでは、GitLab でエピックと Issue ボードを操作するプロセスを説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab2/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T04:51:58Z"
-translator: claude
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+translated_at: "2026-07-02T06:06:16+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-06T16:04:29-04:00"
+lastmod: 2026-06-26T10:02:20-04:00
 ---
 
 > 完了目安時間: 15 分

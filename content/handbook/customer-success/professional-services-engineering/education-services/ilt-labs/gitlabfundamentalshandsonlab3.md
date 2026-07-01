@@ -2,11 +2,11 @@
 title: "GitLab Fundamentals - ハンズオンラボ: リポジトリ管理とブランチ"
 description: "このハンズオンガイドでは、GitLab でのコードリポジトリの管理方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab3/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T04:51:58Z"
-translator: claude
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+translated_at: "2026-07-02T06:06:16+09:00"
+translator: codex
 stale: false
-lastmod: "2025-10-23T12:38:59+01:00"
+lastmod: 2026-06-26T10:02:20-04:00
 ---
 
 > 完了目安時間: 15 分
@@ -37,7 +37,7 @@ lastmod: "2025-10-23T12:38:59+01:00"
 
 1. `main` のルールの隣にある **View details** を選択します。
 
-1. ここで利用可能な設定を探索します。デフォルトで `main` ブランチに対して `Allow force push` が無効になっています。また、`Maintainer` ロールを持つユーザーが `main` にプッシュおよびマージできることも確認できます。理想的には、誰も `main` に直接プッシュできないようにしたいです。
+1. ここで利用可能な設定を探索します。デフォルトで `main` ブランチに対して `Allow force push` が無効になっています。また、`Maintainer` ロールを持つユーザーが `main` にプッシュおよびマージできることも確認できます。これは、その個人がマージリクエストを使わずに main ブランチへコミットできることを意味します。理想的には、誰も `main` に直接プッシュできないようにしたいです。
 
 1. main へのプッシュを防ぐには、**Allowed to push and merge** セクションで **Edit** を選択します。
 

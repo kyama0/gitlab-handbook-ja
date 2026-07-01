@@ -2,11 +2,11 @@
 title: Tenant Scale グループ
 description: Tenant Scale グループに関する情報
 upstream_path: "/handbook/engineering/infrastructure-platforms/tenant-scale/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T03:49:37Z"
-translator: claude
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+lastmod: 2026-06-25T13:34:19+02:00
+translated_at: "2026-07-02T06:06:16+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-10T11:40:11+13:00"
 ---
 
 ## ミッション

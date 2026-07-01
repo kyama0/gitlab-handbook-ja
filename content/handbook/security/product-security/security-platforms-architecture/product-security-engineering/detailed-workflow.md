@@ -1,15 +1,15 @@
 ---
 title: "詳細運用ワークフロー"
 description: "ProdSecEng チーム固有の運用ワークフローとプロセス"
-upstream_path: /handbook/security/product-security/security-platforms-architecture/product-security-engineering/detailed-workflow/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:40:09Z"
-translator: claude
+upstream_path: "/handbook/security/product-security/security-platforms-architecture/product-security-engineering/detailed-workflow/"
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+lastmod: 2026-06-26T14:40:46+12:00
+translated_at: "2026-07-02T06:06:16+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-09T20:14:47+00:00"
 ---
 
-ProdSecEng は、計画ケイデンス、優先度ラベル、サイジング/重み、計画外作業の追跡について、共有の[セキュリティケイパビリティエンジニアリング (SecCapEng) の働き方](/handbook/security/product-security/security-capabilities-engineering/)に従います。このページでは ProdSecEng 固有のワークフローを取り扱います。
+ProdSecEng は、計画ケイデンス、優先度ラベル、サイジング/重み、計画外作業の追跡について、チームチャーターで定義された[運用モデル](/handbook/security/product-security/security-platforms-architecture/product-security-engineering/#operating-model)に従います。このページでは ProdSecEng 固有のワークフローを取り扱います。
 
 ## バックログ管理
 
@@ -26,7 +26,7 @@ Issue にコミットするとき、私たちは:
 2. `~"Product Security Engineering Team"` ラベルを追加します。
 3. 内部の自動化/ツールの Issue の場合: [インテーク自動化リクエスト基準](/handbook/security/product-security/security-platforms-architecture/security-interlock/prodsec-to-product-workflow/#intake-workflow)を満たしているか確認します。
 4. 製品の Issue の場合: `group::` ラベル（または最善の努力）を介して関連する PM/EM を特定し、ソリューションと優先度について整合し、リリース後にオーナーシップが移転することをフラグ付けします。
-5. 適切な `ProdSecEngMetric::` [指標ラベル](/handbook/security/product-security/security-platforms-architecture/product-security-engineering/#success-metrics)、[優先度](/handbook/security/product-security/security-capabilities-engineering/#priority)ラベル、[重み](/handbook/security/product-security/security-capabilities-engineering/#sizing-and-estimates)、判明している場合はマイルストーンを適用します。現在のマイルストーンに持ち込まれた場合は [`~Unplanned`](/handbook/security/product-security/security-capabilities-engineering/#unplanned-work-and-interruptions) ラベルを適用します。
+5. 適切な `ProdSecEngMetric::` [指標ラベル](/handbook/security/product-security/security-platforms-architecture/product-security-engineering/#success-metrics)、[優先度](/handbook/security/product-security/security-platforms-architecture/product-security-engineering/#priority)ラベル、[重み](/handbook/security/product-security/security-platforms-architecture/product-security-engineering/#sizing-and-estimates)、判明している場合はマイルストーンを適用します。現在のマイルストーンに持ち込まれた場合は [`~Unplanned`](/handbook/security/product-security/security-platforms-architecture/product-security-engineering/#unplanned-work) ラベルを適用します。
 
 ### バックログから作業を取り除く
 
@@ -75,7 +75,7 @@ Issue を引き受けないと決定した場合、私たちは:
 
 1. コンテキスト、提案、(該当する場合) 「なぜ?」「いつ?」「誰が関与する必要があるか?」に答える技術的な実装計画を含む説明を記述。
 2. 受け入れ基準をチェックボックスとして定義。
-3. [重み](/handbook/security/product-security/security-capabilities-engineering/#sizing-and-estimates)と[優先度ラベル](/handbook/security/product-security/security-capabilities-engineering/#priority)を割り当てまたは更新。
+3. [重み](/handbook/security/product-security/security-platforms-architecture/product-security-engineering/#sizing-and-estimates)と[優先度ラベル](/handbook/security/product-security/security-platforms-architecture/product-security-engineering/#priority)を割り当てまたは更新。
 4. まだ実施されていない場合、`~Product Security Engineering Team` と `~ProdSecEngMetrics::` [指標ラベル](/handbook/security/product-security/security-platforms-architecture/product-security-engineering/#success-metrics)を設定。
 5. `Ready for Development` の Issue ステータスが設定されている
 
@@ -90,7 +90,7 @@ Issue を引き受けないと決定した場合、私たちは:
 
 ## マイルストーン計画
 
-ProdSecEng は、共有の [SecCapEng 計画実践](/handbook/security/product-security/security-capabilities-engineering/#work-tracking)に従い、[GitLab 製品マイルストーン](/handbook/product/product-processes/milestones/)を中心に作業を計画します。
+ProdSecEng は、チームチャーターの[計画とマイルストーンのプロセス](/handbook/security/product-security/security-platforms-architecture/product-security-engineering/#planning-and-milestones)に従い、[GitLab 製品マイルストーン](/handbook/product/product-processes/milestones/)を中心に作業を計画します。
 
 各マイルストーンには、[テンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engineering/product-security-engineering-team/-/issues/new?issuable_template=milestone_planning) を使用して作成された単一の[マイルストーン計画 Issue](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engineering/product-security-engineering-team/-/issues/?label_name%5B%5D=Milestone+Planning)があります。この Issue は、そのマイルストーンに対するすべての計画の決定と議論の真実の情報源です。
 
@@ -176,7 +176,7 @@ ProdSecEng は、すべてのツール、それらのパスフォワードカテ
 
 ### 廃止 Issue
 
-カスタムツールを廃止するための高レベルの要件を、[廃止テンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engineering/product-security-engineering-team/-/issues/new?issuable_template=sunsetting) を使用して追跡します。Issue は要件が達成されるとクローズされます。より広範な移行と廃止プロセスについては、[移行と廃止ワークフロー](/handbook/security/product-security/security-platforms-architecture/security-interlock/prodsec-to-product-workflow/#transition-and-sunset-workflow)を参照してください。
+カスタムツールを廃止するための高レベルの要件を、[廃止テンプレート](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engineering/product-security-engineering-team/-/work_items/new?description_template=sunset_tooling) を使用して追跡します。Issue は要件が達成されるとクローズされます。より広範な移行と廃止プロセスについては、[移行と廃止ワークフロー](/handbook/security/product-security/security-platforms-architecture/security-interlock/prodsec-to-product-workflow/#transition-and-sunset-workflow)を参照してください。
 
 ### ステップバイステッププロセス
 

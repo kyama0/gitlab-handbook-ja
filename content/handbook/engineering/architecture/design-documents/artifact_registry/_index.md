@@ -9,11 +9,11 @@ owning-stage: "~devops::package"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/
-upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
-translated_at: "2026-06-23T06:53:07+09:00"
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+translated_at: "2026-07-02T06:06:16+09:00"
 translator: codex
 stale: false
-lastmod: 2026-06-22T12:34:55+02:00
+lastmod: 2026-06-26T14:20:13+01:00
 ---
 
 <!--
@@ -454,6 +454,7 @@ each altenative solution/path.
 1. [ADR-014: Frontend to Artifact Registry Interaction](decisions/014_frontend_to_artifact_registry.md) - ブラウザと Artifact Registry のインタラクションのための Rails GraphQL リゾルバーパターン
 1. [ADR-015: Slug Policy (internal)](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/) - namespace slug の検証、デフォルト導出、予約分類、ライフサイクル、運用上の制御（ブロック、再割り当て）
 1. [ADR-020: Authentication Flow](decisions/020_authentication_flow.md) - Artifact Registry の認証設計
+1. [ADR-021: Authorization](decisions/021_authorization.md) - プロダクト固有のロールとアクセスルールを使用する認可設計
 1. [ADR-022: Namespace Decoupling](decisions/022_namespace_decoupling.md) - 不変のスラッグを備えた内部 namespace エンティティ
 1. [ADR-023: Code Structure and Enforcement](decisions/023_code_structure_and_enforcement.md) - 機能ごとのパッケージ構成を備えた Go の `cmd/` + `internal/` レイアウト
 1. [ADR-024: Infrastructure for GitLab.com Beta Delivery](decisions/024_infrastructure_delivery.md) - Theseus に必要な最小限の実行可能なプラットフォームとして、Artifact Registry と Auth を用い、GKE v2 向け Runway 上で GitLab.com ベータを提供します。cellular ターゲットは後続フェーズへ延期します

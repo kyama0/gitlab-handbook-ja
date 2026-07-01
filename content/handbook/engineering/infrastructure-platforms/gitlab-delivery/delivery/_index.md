@@ -2,11 +2,11 @@
 title: "Release & Deploy グループ"
 description: "Release & Deploy グループは、GitLab Engineering が GitLab.com、GitLab Dedicated、および Self-Managed のお客様に対して、安全でスケーラブルかつ効率的な方法で機能を届けられるよう支援します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/"
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
-translator: "claude"
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+lastmod: 2026-06-26T10:28:17-06:00
+translated_at: "2026-07-02T06:06:16+09:00"
+translator: codex
 stale: false
-lastmod: "2026-06-02T14:47:42-06:00"
 ---
 
 ## 共通リンク
@@ -106,11 +106,20 @@ GitLab Duo/AI を私たちのワークフローに組み込む方法のアイデ
 1. GitLab 内で機能を構築または強化することによるカスタムツールの使用の最小化 (例: [Create a Changelog feature](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/351))。
 1. GitLab SaaS 上のソフトウェアデリバリーに関連する他チームのニーズのサポート (例: [New Container Registry deployment](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/412))。
 
+### Software Delivery Engineering リーダーシップ
+
+| 名前 | 役割 |
+|------|------|
+| Chris Sanders  | Director, Infrastructure - Delivery Enablement |
+| Michele Bursi  | Senior Engineering Manager, GitLab Delivery    |
+| Martin Brümmer | Senior Product Manager, GitLab Delivery        |
+| Dave Smith     | Engineering Manager - Release & Deploy         |
+
 ### チームメンバー
 
 以下のメンバーが Delivery:Releases&Deploy チームに所属しています:
 
-{{< team-by-departments departments="GitLab Delivery:Release-and-Deploy BE,GitLab Delivery:Release-and-Deploy SRE" >}}
+{{< team-by-departments departments="GitLab Delivery:Release-and-Deploy Team" >}}
 
 ## パフォーマンス指標
 
