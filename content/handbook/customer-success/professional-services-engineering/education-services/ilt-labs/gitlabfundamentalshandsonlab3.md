@@ -4,7 +4,7 @@ description: "このハンズオンガイドでは、GitLab でのコードリ�
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab3/
 upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
 translated_at: "2026-07-02T06:06:16+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: 2026-06-26T10:02:20-04:00
 ---

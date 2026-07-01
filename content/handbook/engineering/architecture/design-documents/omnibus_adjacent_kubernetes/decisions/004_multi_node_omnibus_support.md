@@ -5,7 +5,7 @@ toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/omnibus_adjacent_kubernetes/decisions/004_multi_node_omnibus_support/
 upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
 translated_at: "2026-07-02T06:06:16+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: 2026-06-25T17:30:06-03:00
 ---

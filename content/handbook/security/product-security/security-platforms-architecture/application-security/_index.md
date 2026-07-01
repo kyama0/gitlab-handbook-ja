@@ -5,7 +5,7 @@ upstream_path: "/handbook/security/product-security/security-platforms-architect
 upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
 lastmod: 2026-06-26T09:02:11+12:00
 translated_at: "2026-07-02T06:06:16+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 <!-- markdownlint-disable MD052 -->

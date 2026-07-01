@@ -11,7 +11,7 @@ toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/ai_context_abstraction_layer/
 upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
 translated_at: "2026-07-02T06:06:16+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: 2026-06-25T09:42:09+02:00
 ---

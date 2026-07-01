@@ -3,7 +3,7 @@ title: エンジニアリング
 upstream_path: /handbook/engineering/
 upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
 translated_at: "2026-07-02T06:06:16+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: 2026-06-25T07:50:17-06:00
 ---

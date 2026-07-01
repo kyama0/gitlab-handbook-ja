@@ -5,7 +5,7 @@ upstream_path: "/handbook/sales/field-operations/field-enablement/"
 upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
 lastmod: 2026-06-25T17:39:49+00:00
 translated_at: "2026-07-02T06:06:16+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 
