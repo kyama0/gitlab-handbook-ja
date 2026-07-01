@@ -58,7 +58,12 @@ ProdSecEng は、いくつかの主要な領域から作業を調達し、私た
 | 脆弱性管理運用 | [脆弱性管理](/handbook/security/product-security/vulnerability-management/) |
 | 脆弱性開示とトリアージ | [PSIRT](/handbook/security/product-security/psirt/) |
 
-## 運用モデル
+## 運用モデル {#operating-model}
+
+<a id="planning-and-milestones"></a>
+<a id="priority"></a>
+<a id="sizing-and-estimates"></a>
+<a id="unplanned-work"></a>
 
 ProdSecEng は、計画立案、優先順位付け、サイジング、作業追跡について、共有の [SecCapEng の働き方](/handbook/security/product-security/security-capabilities-engineering/) に従います。
 
@@ -73,7 +78,7 @@ ProdSecEng は、計画立案、優先順位付け、サイジング、作業追
 
 [Professional Services Engineer](/job-description-library/sales/professional-services-engineer/) と混同しないように、私たちは「ProdSecEng」を短縮名として使用しています。
 
-## 成功指標
+## 成功指標 {#success-metrics}
 
 ProdSecEng は、ラベル付けされたマージリクエストと Issue を通じて指標を追跡します。次の指標ラベルが追跡とレポートを推進します:
 
