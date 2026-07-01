@@ -2,133 +2,181 @@
 title: "プロダクトセキュリティエンジニアリング"
 description: "プロダクトセキュリティエンジニアリングチームのチャーター"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/product-security-engineering/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:40:09Z"
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+translated_at: "2026-07-02T07:50:09+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-04T07:51:29-04:00"
+lastmod: 2026-06-26T14:40:46+12:00
 ---
 
-プロダクトセキュリティエンジニアリング (ProdSecEng) は、脆弱性管理および PSIRT の各チームと並んで、[セキュリティケイパビリティエンジニアリング](/handbook/security/product-security/security-capabilities-engineering/) (SecCapEng) の一部です。
+Product Security Engineering (ProdSecEng) は、[Product Security](/handbook/security/product-security/) (ProdSec) 内のチームであり、VP of Product Security にレポートします。
 
-## ミッションステートメント (Why)
+## ミッションステートメント
 
-ProdSecEng は、組織とともにスケールし、製品セキュリティを向上させるプロアクティブで予防的な制御を作り出します。製品ファーストのコード貢献と自動化を通じて、エンジニアリングのベロシティを維持しながらセキュアなソフトウェア開発を可能にする[「舗装された道路」](https://netflixtechblog.com/scaling-appsec-at-netflix-part-2-c9e0f1488bc5)を構築します。
+ProdSecEng は、セキュリティリスクに対処する価値の高いセキュリティ機能を GitLab 製品に組み込み、出荷します。私たちは Product および Engineering と直接連携し、セキュリティ要件、リスクインサイト、社内の専門知識を、GitLab とお客様の双方に利益をもたらす製品改善と機能に変換します。
 
-## 価値提案 (What)
+私たちは GitLab の[エンジニアリングワークフロー](/handbook/engineering/workflow/)に従い、長期的にその機能を所有するチームと並んでコードに貢献します。
 
-私たちは、現場のエンジニアリングの専門知識、スケーラブルな自動化ソリューション、製品への貢献を提供することで、プロダクトセキュリティ (ProdSec) 部門が手作業ではなく価値の高いセキュリティイニシアチブに集中できるようにし、GitLab の製品チームが現実の顧客課題を解決するセキュリティ機能を迅速に提供できるようにします。
+## 価値提案
 
-## FY27 重点領域
+私たちは、実践的なセキュリティエンジニアリングを製品開発プロセスへ直接持ち込みます。ProdSec チームがリスクと要件を特定し、ProdSecEng がそれらを出荷済みの製品機能に変換します。これにより、セキュリティ機能をより早くお客様へ届けられ、Product と Engineering は専任のセキュリティエンジニアリングパートナーを得られ、ProdSec は自分たちのワークフローに対して GitLab 製品自体を検証できます。
 
-- 脆弱性管理の製品機能と自動化
-- ツールの積極的な保守、廃止、製品への統合
+## 重点領域
+
+私たちの作業は、価値の高いセキュリティリスクに対処し、Product と Engineering の方向性に沿ったエピックによって推進されます。具体的な重点領域は、マイルストーン計画中に設定され、[Product Security Risk Register (PSRR)](/handbook/security/product-security/security-platforms-architecture/risk-register/) とクロスチームの議論を踏まえて決まります。
 
 ## スコープと責任
 
 ### 私たちが所有するもの
 
-ProdSecEng は、以下の領域にわたるセキュリティエンジニアリング作業の管理と提供を所有します:
+ProdSecEng は、GitLab 製品に出荷されるセキュリティエンジニアリング作業の提供を所有します。
 
-1. **セキュリティ強化機能**: GitLab の製品リスクを軽減し、顧客のセキュリティ機能を強化するセキュリティ機能と改善。
-2. **セキュリティのための「舗装された道路」**: 開発チームがセキュリティのベストプラクティスに従いやすくする製品ファーストのソリューション。
-3. **ProdSec 自動化**: プロダクトセキュリティチームの手作業の負担を軽減する自動化。
-4. **セキュリティ要件の実装**: セキュリティ部門の要件とユースケースを製品機能に翻訳すること。
-5. **ProdSec ツール統合**: GitLab に統合するためのカスタム ProdSec ツールを特定し、実装、ロールアウト、引き渡しを管理。
-6. **概念実証と検証**: より広範な実装または引き渡しの前に、提案されたセキュリティソリューションを検証。
-7. **カスタムツールの保守**: セキュリティ部門に代わってプロジェクトとツールを保守。完全なインベントリ（パスフォワードのカテゴリと保守の詳細を含む）は[内部ハンドブック](https://internal.gitlab.com/handbook/security/product_security/product_security_engineering/) (GitLab チームメンバーのみアクセス可能) で利用可能です。
-8. **ドキュメントとナレッジ移転**: 私たちの貢献に関するドキュメント、Runbook、ガイドの作成と保守。
+1. **セキュリティ製品貢献の共創と提供**: 貢献には、GitLab の製品リスクを低減する改善や、お客様と開発チームがデフォルトでセキュリティプラクティスに従いやすくするソリューションが含まれます。私たちは [co-create workflow](/handbook/security/product-security/security-platforms-architecture/security-interlock/prodsec-to-product-workflow/#co-create-workflow)に従い、Engineering と Product のロードマップを補完する作業について両チームと連携します。
+1. **製品検証 (Customer Zero)**: ProdSec が Customer Zero として行動する [Security Interlock](/handbook/security/product-security/security-platforms-architecture/security-interlock/) イニシアチブを通じて、GitLab セキュリティ機能を検証します。
+1. **概念実証**: より広範な実装または引き渡しの前に、提案されたセキュリティソリューションを検証します。
+1. **ドキュメントとナレッジ移転**: 私たちの貢献に関するドキュメント、Runbook、ガイドを作成および保守します。
+
+> **移行: カスタムツール（2026 年 7 月 1 日発効）**
+>
+> 2026 年 7 月 1 日より前は、ProdSecEng は Security 部門に代わって、インテーク、保守、ツールの廃止を含むカスタム社内セキュリティツールの保守と管理も所有していました。この責任は、GitLab の Act 2 運用モデル変更の一環として終了に向かっています。
+>
+> チームの既存のカスタムツールに関するコミットメントは、所有チームへ移行中です。移行計画は最終化され、[社内ハンドブックのツールインベントリ](https://internal.gitlab.com/handbook/security/product_security/product_security_engineering/)（GitLab チームメンバーのみアクセス可能）に文書化されています。新しいカスタムツールのリクエストは受け付けていません。既存ツールについて質問があるチームは、Slack の [`#security_help`](https://gitlab.enterprise.slack.com/archives/C094L6F5D2A) で連絡してください。
 
 ### 仕事の入手元
 
-ProdSecEng は、いくつかの主要な領域から作業を調達し、私たちのバックログにインプットを提供するチームとインターフェースします:
+ProdSecEng は次の場所から作業を調達します。
 
-1. **ProdSec 自動化リクエスト**: ProdSec チームが自動化候補を特定し、私たちは[インテーク自動化リクエスト基準](/handbook/security/product-security/security-platforms-architecture/security-interlock/prodsec-to-product-workflow/)に対して評価します。
-2. **既存の GitLab セキュリティ強化 Issue**: GitLab プロジェクト全体のセキュリティ関連 Issue で、評価のために `~ProdSecEng Candidate` のラベル付けがされたもの。
-3. **クロスファンクショナルなセキュリティリクエスト**: 脆弱性管理、セキュリティコンプライアンス、セキュリティリスク、Trust & Safety、または SIRT からのリクエスト（`@gitlab-com/gl-security/product-security/product-security-engineering` を介して言及されるもの）。
-4. **プロダクトセキュリティリスクレジスター (PSRR)**: セキュリティプラットフォーム & アーキテクチャ (SPA) およびその他の ProdSec チームによって特定された、製品エンジニアリングソリューションが必要なシステミックリスク。
-5. **セキュリティインターロックと製品検証**: [Customer Zero](/handbook/security/product-security/security-platforms-architecture/security-interlock/) イニシアチブを通じた GitLab セキュリティ機能の検証。
+1. **Product Security Risk Register (PSRR)**: [Security Platforms & Architecture (SPA)](/handbook/security/product-security/security-platforms-architecture/) および他の ProdSec チームが特定した、製品エンジニアリングソリューションを必要とするシステミックリスク。
+1. **ProdSec とのクロスチーム議論**: 手作業プロセスを製品機能で置き換えたり、セキュリティギャップを埋めたりできる場所を特定するための、ProdSec チームとの直接的なコラボレーション。
+1. **Product と Engineering との整合**: 製品ロードマップに合うセキュリティ機能を形作るための、Product Managers および Engineering チームとの共同計画。
+1. **Security Interlock**: 適切な場合、[Customer Zero](/handbook/product/product-processes/customer-0/) イニシアチブを通じて GitLab セキュリティ機能を検証します。
 
 ### スコープ外
 
 | 領域 | DRI |
 |------|-----|
-| アプリケーションセキュリティの標準、レビュー、テスト | [AppSec](/handbook/security/product-security/security-platforms-architecture/application-security/) |
-| インフラストラクチャ、クラウド、データセキュリティのツールやアーキテクチャ | [InfraSec](/handbook/security/product-security/infrastructure-security/) |
-| 脆弱性管理運用 | [脆弱性管理](/handbook/security/product-security/vulnerability-management/) |
-| 脆弱性開示とトリアージ | [PSIRT](/handbook/security/product-security/psirt/) |
+| アプリケーションセキュリティ標準、レビュー、テスト | [AppSec](/handbook/security/product-security/security-platforms-architecture/application-security/) |
+| インフラストラクチャ、クラウド、データセキュリティのツールまたはアーキテクチャ | [InfraSec](/handbook/security/product-security/infrastructure-security/) |
+| 脆弱性管理、開示、トリアージ | [Vulnerability Operations](/handbook/security/product-security/vulnerability-management/) |
+| 新しいカスタム社内ツールの構築または受け入れ | 上記の「移行: カスタムツール」を参照 |
 
-## 運用モデル
+## チームバリュー
 
-ProdSecEng は、計画立案、優先順位付け、サイジング、作業追跡について、共有の [SecCapEng の働き方](/handbook/security/product-security/security-capabilities-engineering/) に従います。
+ProdSecEng は、[GitLab 全社の運用原則](/handbook/company/operating-principles/)に従って運営します。加えて、チームは次を実践します。
 
-バックログ管理、リファインメント、開発、引き渡しプロセスを含む、私たちのチーム固有のワークフローの詳細については、[詳細ワークフロー](detailed-workflow/)を参照してください。
+1. **透明性**: 私たちはオープンに作業します。意思決定、トレードオフ、進捗は、見に来る人なら誰でも確認できます。ブロッカーにぶつかったり方向転換したりしたときは、非公開で整理するのではなく、Issue やエピックでそのことを伝えます。
+1. **エンジニアリング標準**: 私たちは GitLab の[エンジニアリングワークフロー](/handbook/engineering/workflow/)に従い、他の Engineering チームと同じ品質基準で貢献します。コードレビュー、テスト、ドキュメント、パフォーマンス標準はすべて適用されます。
+1. **ドッグフーディング**: 私たちはユーザー体験を理解するため、可能な限り GitLab を使用します。これには、チームが私たちのインプットを必要とするタイミングを把握するためのメンションや TODO の使用、work item での議論と意思決定の記録、エンジニアリングワークフローでの GitLab 機能の使用、見つけたバグへのフィードバックや MR でのリードが含まれます。
 
-## コミュニケーション
+## 運用モデル {#operating-model}
 
-- **Slack**: Slack の [`#security_help`](https://gitlab.enterprise.slack.com/archives/C094L6F5D2A) または [`#security-capabilities-engineering`](https://gitlab.enterprise.slack.com/archives/C0AEU6LHQ7R) で質問し、`@product-security-engineering` ハンドルをメンションしてください
-- **GitLab**: `@gitlab-com/gl-security/product-security/product-security-engineering` をメンションしてください
-- **Issue**: [ProdSecEng チームリポジトリ](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engineering/product-security-engineering-team/-/issues/new) に提出してください
-- **緊急時**: 任意の Slack チャンネルで `/security` を使用してセキュリティインシデント対応チームをページングしてください
+### 計画とマイルストーン {#planning-and-milestones}
 
-[Professional Services Engineer](/job-description-library/sales/professional-services-engineer/) と混同しないように、私たちは「ProdSecEng」を短縮名として使用しています。
+ProdSecEng は、Product と Engineering のケイデンスに合わせるため、[Product Milestones](/handbook/product/product-processes/milestones/)を使用して作業を計画します。マイルストーンはおよそ 4 週間です。Engineering Manager は、PSRR の優先度、クロスチームの議論、チームキャパシティを踏まえてマイルストーン計画をリードします。
 
-## 成功指標
+### 優先度 {#priority}
 
-ProdSecEng は、ラベル付けされたマージリクエストと Issue を通じて指標を追跡します。次の指標ラベルが追跡とレポートを推進します:
+私たちは GitLab 標準の[優先度スコープラベル](/handbook/product-development/how-we-work/issue-triage/#priority)を使用します。
 
-### 指標ラベルとカテゴリ
+| 優先度 | 意図 | 目標解決期間 |
+|----------|-----------|-------------------|
+| `~"priority::1"` | キャパシティ制約に関係なく、できるだけ早く対応する | 30 日 |
+| `~"priority::2"` | 近いうちに対応する。次の数マイルストーンでキャパシティを割り当てる | 60〜90 日 |
+| `~"priority::3"` | 可能なときに対応する。より優先度の高い作業に置き換えられる可能性がある | 90〜120 日 |
+| `~"priority::4"` | 指定されたタイムラインなし | ベストエフォート |
 
-| **カテゴリ** | **ラベル** | **説明** | **なぜ重要か** | **適用先** |
-| --- | --- | --- | --- | --- |
-| **プロダクトセキュリティ要件** | `~ProdSecEngMetric::ProdSecRequirement` | GitLab プロダクトセキュリティチームによって必要とされる製品内の機能 | プロダクトセキュリティチームが製品自体を使用して GitLab を保護できるようにする機能の提供における私たちの効果性を実証 | Issue とマージリクエスト、ときどきエピック |
-| **多層防御** | `~ProdSecEngMetric::Defense in Depth` | 「以前の」セキュリティ制御が失敗した場合により堅牢になるように既存の脆弱でない機能を変更すること | 主要な制御が侵害されてもリスクを軽減する多層的なセキュリティアプローチへのコミットメントを示す | Issue とマージリクエスト、ときどきエピック |
-| **舗装された道路** | `~ProdSecEngMetric::Paved Road` | GitLab の貢献者がより簡単に活動を安全に実行できる新しいツール、メソッド、またはチェック | スケーラブルで開発者にやさしいセキュリティソリューションを作成する成功度を測定 | Issue とマージリクエスト、ときどきエピック |
-| **ツール統合** | `~ProdSecEngMetric::Tooling Integration` | カスタムインハウスツールから GitLab 製品への機能の統合の一環として実施される作業 | 外部依存関係の削減とプロダクトセキュリティツールのプラットフォームへの統合の進捗を追跡 | Issue とマージリクエスト、ときどきエピック |
-| **カスタムツール** | `~ProdSecEngMetric::Custom Tooling` | プロダクトセキュリティ要件を満たすために必要な、製品外のカスタムツールを構築、保守、または拡張するために実施される作業 | プロダクトセキュリティ運用をサポートするツールへの必要な投資を反映 | Issue とマージリクエスト、ときどきエピック |
-| **廃止** | `~ProdSecEngMetric::Sunsetting` | カスタムツールを廃止するために必要な特定の機能や機能性を表す Issue | ツールを GitLab 製品に統合する進捗を実証 | [product-security-engineering-team リポジトリ](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engineering/product-security-engineering-team/-/issues) の Issue |
-| **保留中** | `~ProdSecEngMetric::Pending` | 作業タイプがまだ完全に明確ではないが、進捗をブロックしたくない | カテゴライズが必要だが勢いを遅らせない作業を追跡できる | Issue、マージリクエスト、エピック |
-| **内部** | `~ProdSecEngMetric::Internal` | チームタスク、たとえばプロセスや計画 | 内部チーム運用を外部向け作業から分離 | Issue とマージリクエスト、エピック |
+優先度は、リスク評価、全社的な優先事項、クロスチームのリクエスト、チームのニーズを踏まえ、マイルストーン計画中に EM が設定します。
 
-これらのラベルに基づくメトリクスデータについては、[私たちの Tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/ProductSecurityEngineering/ProdSecEngValueDeliveryMetrics?:iid=6) を参照してください。
+### サイジングと見積もり {#sizing-and-estimates}
+
+Issue の weight には、標準の[修正フィボナッチスケール](https://docs.gitlab.com/tutorials/scrum_events/standups_retrospectives_velocity/#deciding-the-value-of-story-points)を使用します。
+
+| Weight | 複雑さ | おおよその時間 |
+|--------|-----------|------------------|
+| 1 | 些細。副作用は想定されない | 1 日 |
+| 2 | 小さい。要件が明確で、テストも単純 | 1〜2 日 |
+| 3 | 中程度。コード範囲は広いが、要件は明確 | 2〜3 日 |
+| 5 | 複雑。要件は理解されているが、途中でギャップが出る可能性が高い | 3〜5 日 |
+| 8 | 非常に複雑。開始前に重要な調査とリサーチが必要 | 5〜10 日 |
+| 13+ | 分割が必要。より小さな Issue に分割する | N/A |
+
+これは通常、チームメンバー 1 人あたり 1 マイルストーンで約 20 weight の work item を意味し、休暇、祝日、成長と開発の時間に応じて減らします。キャパシティの 60〜80% を事前に計画し、残りは計画外のリアクティブな作業のために確保します。
+
+### 計画外作業 {#unplanned-work}
+
+計画後にマイルストーンへ追加された Issue と MR には `~Unplanned` ラベルを使用します。これにより、計画済みキャパシティと計画外キャパシティの分割が適切かどうかを追跡し、割り込みの反復的な発生源を特定できます。
+
+### 作業追跡
+
+私たちは、適切な作業を選び、正確にサイジングし、リスクを早期に提起し、進捗の可視性を提供できていることを確認するためにデータを追跡します。バックログ管理、リファインメント、開発、引き渡しプロセスを含むチーム固有のワークフローの詳細については、[詳細ワークフロー](detailed-workflow/)を参照してください。
+
+## 成功指標 {#success-metrics}
+
+ProdSecEng は、ラベル付けされたマージリクエストと Issue を通じて指標を追跡します。
+
+### アクティブな指標ラベル
+
+これらのラベルは、現在のプロダクト中心のミッションに適用されます。
+
+| **カテゴリ** | **ラベル** | **説明** |
+| --- | --- | --- |
+| **Product Security 要件** | `~ProdSecEngMetric::ProdSecRequirement` | GitLab Product Security チームが必要とする製品内の機能 |
+| **多層防御** | `~ProdSecEngMetric::Defense in Depth` | 「以前の」セキュリティ制御が失敗した場合により堅牢になるよう、既存の脆弱でない機能を変更する作業 |
+| **舗装された道路** | `~ProdSecEngMetric::Paved Road` | GitLab のコントリビューターが活動を安全に実行しやすくする新しいツール、方法、チェック |
+| **保留中** | `~ProdSecEngMetric::Pending` | 作業タイプがまだ明確ではないが、進捗をブロックしたくないもの |
+| **内部** | `~ProdSecEngMetric::Internal` | プロセスや計画などのチームタスク |
+
+### 終了予定の指標ラベル
+
+これらのラベルは、ProdSecEng の以前のカスタムツールミッション向けに設計されたものです。既存ツールの移行が完了したら廃止します。
+
+| **カテゴリ** | **ラベル** | **説明** |
+| --- | --- | --- |
+| **ツール統合** | `~ProdSecEngMetric::Tooling Integration` | カスタムインハウスツールの機能を GitLab 製品へ統合する一環として実施される作業 |
+| **カスタムツール** | `~ProdSecEngMetric::Custom Tooling` | Product Security 要件を満たすために必要なカスタムツールを構築、保守、拡張する作業 |
+| **廃止** | `~ProdSecEngMetric::Sunsetting` | カスタムツールの廃止に必要な特定の機能や機能性を表す Issue |
 
 ### 戦略的 KPI
 
-私たちが収集する指標に基づき、私たちのミッションでどのように進んでいるかを伝えるために追跡する戦略的 Key Performance Indicator (KPI) は以下のとおりです。
+| **指標** | **計算方法** | **ステータス** |
+| --- | --- | --- |
+| **配信された Product Security チーム要件** | `~ProdSecEngMetric::ProdSecRequirement` ラベル付きのマージされた MR の数 | アクティブ |
+| **配信されたセキュリティ強化と舗装された道路** | `~ProdSecEngMetric::Defense in Depth` または `~ProdSecEngMetric::Paved Road` ラベル付きのマージされた MR の数 | アクティブ |
+| **製品に統合されたカスタムツールの価値** | 製品に貢献されたカスタムツール内の個別価値提案の割合 | 終了予定 |
 
-| **指標** | **なぜ重要か** | **計算方法** | **測定頻度** | **レポートメカニズム** |
-| --- | --- | --- | --- | --- |
-| **配信されたプロダクトセキュリティチーム要件** | プロダクトセキュリティチームが私たちの製品を使用して GitLab を保護できるようにする機能の提供における私たちの効果性を実証 | `~ProdSecEngMetric::ProdSecRequirement` ラベル付きのマージされた MR の数 | TBD | TBD |
-| **配信されたセキュリティ強化と舗装された道路** | GitLab のセキュリティ態勢の改善と組織全体での安全な開発実践の有効化への私たちの貢献を実証 | `~ProdSecEngMetric::Defense in Depth` または `~ProdSecEngMetric::Paved Road` ラベル付きのマージされた MR の数 | TBD | TBD |
-| **製品に統合されたカスタムツールの価値** | 外部依存関係を削減し、プロダクトセキュリティツールを GitLab に統合する成功度を測定 | 現在のインハウスカスタムツールの個別の価値提案のうち、製品に貢献されたものの割合 (`~ProdSecEngMetric::Tooling Integration` および `~ProdSecEngMetric::Sunsetting` ラベルを使用して追跡) | TBD | TBD |
+### 運用 KPI
 
-### 運用指標
+| **指標** | **計算方法** | **ステータス** |
+| --- | --- | --- |
+| **バックログのヘルスとリファインメント** | リファインメントされた候補 Issue の数、`Ready for Development` ステータスの Issue、マイルストーン全体でのリファインメントへの参加 | アクティブ |
+| **マイルストーンの予測可能性** | 各マイルストーンで計画された作業と実際に完了した作業（weight と指標ラベルで測定） | アクティブ |
+| **指標ラベルカバレッジ** | 適切な `~ProdSecEngMetric::*` ラベルが付いたマージ済み MR とクローズ済み Issue の割合 | アクティブ |
 
-チームの効率性を追跡するため、以下の運用 KPI を追跡します。
+## コミュニケーション
 
-| **指標** | **なぜ重要か** | **計算方法** | **測定頻度** | **レポートメカニズム** |
-| --- | --- | --- | --- | --- |
-| **バックログのヘルスとリファインメント** | 開発のためのよくメンテナンスされ優先順位付けされた作業のバックログを確保 | リファインメントされた候補 Issue の数、`Ready for Development` ステータスの Issue、マイルストーン全体でのリファインメントへの参加 | 月次 | TBD |
-| **マイルストーンの予測可能性** | 計画されたマイルストーン内でコミットされた作業を完了する能力を追跡 | 各マイルストーンで計画された vs 実際に完了した作業（適用された重みと指標ラベルで測定） | 月次 | TBD |
-| **指標ラベルカバレッジ** | すべての作業が追跡とレポートのために適切にカテゴライズされていることを確保 | 適切な `~ProdSecEngMetric::*` ラベルが適用されたマージされた MR とクローズされた Issue の割合 | 月次 | TBD |
+1. **Slack**: Slack の [`#security_help`](https://gitlab.enterprise.slack.com/archives/C094L6F5D2A) で質問し、`@product-security-engineering` ハンドルをメンションしてください
+1. **GitLab**: `@gitlab-com/gl-security/product-security/product-security-engineering` をメンションしてください
+1. **Issue**: [ProdSecEng チームリポジトリ](https://gitlab.com/gitlab-com/gl-security/product-security/product-security-engineering/product-security-engineering-team/-/issues/new) に提出してください
+1. **緊急時**: 任意の Slack チャンネルで `/security` を使用して Security Incident Response Team をページングしてください
+
+[Professional Services Engineer](/job-description-library/sales/professional-services-engineer/) と混同しないように、私たちは短縮名として「ProdSecEng」を使用しています。
 
 ## チーム構成
 
-ProdSecEng チームは以下で構成されます:
+ProdSecEng チームは以下で構成されます。
 
-- セキュリティエンジニアリングマネージャー: チームの優先順位付け、ロードマップ計画、マイルストーン計画をリード、クロスファンクショナルな関係を管理
-- プロダクトセキュリティエンジニア: セキュリティ機能、自動化ソリューション、ツール統合の設計、開発、検証
+- **Security Engineering Manager**: チームの優先順位付け、ロードマップ計画、マイルストーン計画をリードし、Product および Engineering とのクロスファンクショナルな関係を管理します
+- **Product Security Engineers**: セキュリティ機能、自動化ソリューション、製品貢献を設計、開発、検証します
 
 ### 開発目標
 
-私たちのチームはソフトウェアおよびセキュリティエンジニアの混合体です。チーム内部の成長と開発の計画は次のとおりです:
+私たちのチームはソフトウェアエンジニアとセキュリティエンジニアの混合体です。成長と開発の計画は次のとおりです。
 
-- スケーラブルなセキュリティアーキテクチャと設計パターンの専門知識を拡大
-- GitLab のコードベースと開発実践に関する実践的な経験を開発
-- AI セキュリティ統合と実装の能力を構築
-- セキュリティ要件をユーザー中心のソリューションに翻訳するためのプロダクトマネジメントスキルを強化
-- クロスチームコラボレーションとコミュニケーションスキルを強化
+1. GitLab のコードベース、アーキテクチャ、開発プラクティスに関する専門性を拡大する
+1. セキュリティ要件をユーザー中心の製品機能に変換するスキルを深める
+1. Product Managers および Engineering チームとのクロスチームコラボレーションを強化する
+1. AI 支援セキュリティツールと実装に関する実践的な経験を開発する
 
 ## レビューと更新
 
-このチャーターは四半期ごとにレビューされます。次回予定されているレビュー: 2026 年 8 月 1 日。
+このチャーターは四半期ごとにレビューされます。次回予定されているレビュー: 2026 年 10 月 1 日。

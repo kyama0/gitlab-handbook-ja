@@ -1,12 +1,12 @@
 ---
 title: "Field Enablement"
 description: "Field Enablement チームのミッションは、フィールドチームメンバーおよびパートナーに対して、GitLab の効率的・予測可能・スケーラブルな成長を推進するために必要な専門知識と自信を育てる効果的なイネーブルメントソリューションを設計・提供することです。"
-upstream_path: /handbook/sales/field-operations/field-enablement/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
+upstream_path: "/handbook/sales/field-operations/field-enablement/"
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+lastmod: 2026-06-25T17:39:49+00:00
+translated_at: "2026-07-02T06:06:16+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-14T15:51:28+00:00"
 ---
 
 ## 概要
@@ -37,11 +37,6 @@ lastmod: "2025-10-14T15:51:28+00:00"
 1. FY24 Enablement Framework をスライド 13 でご覧ください。
 1. セグメントと四半期別の成果物をスライド 14〜21 でご覧ください。
 1. Enablement、Comms、Content、Events のリズム（運用ケイデンス）をスライド 8〜10 でご覧ください。
-1. チームの組織図をスライド 23 でご覧ください。
-
-### 組織図
-
-![Enablement Org Chart](/images/sales/field-operations/enablement_team_org_chart.png)
 
 ### 成功の測定方法
 

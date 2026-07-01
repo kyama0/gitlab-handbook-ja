@@ -1,11 +1,11 @@
 ---
 title: "GitLab IT - モバイルデバイスオンボーディング"
-upstream_path: /handbook/security/corporate/end-user-services/onboarding101/onboarding-mobile-devices/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_path: "/handbook/security/corporate/end-user-services/onboarding101/onboarding-mobile-devices/"
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+lastmod: 2026-06-26T02:53:42-07:00
+translated_at: "2026-07-02T06:06:16+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-18T19:03:48+09:00"
 ---
 
 モバイルデバイス上で Okta の背後にあるアプリケーション（例: Slack、GMail、カレンダーなど）にアクセスできるようにするには、デバイスを Okta Verify に登録し、パスキーをデバイスに保存する必要があります。
@@ -62,7 +62,7 @@ lastmod: "2025-11-18T19:03:48+09:00"
   <li>App Store（Apple）/ Play Store（Android）から Okta Verify アプリをダウンロードします</li>
   <li>ノートパソコンで、画面上部のバッテリーインジケーター付近にある <br>Okta Verify</b> アイコンをクリックし、<b>Open Okta Verify</b> を選択します</li>
   <li>名前とメールアドレスで示されているご自身のアカウントをクリックします</li>
-  <li><b>Add Account to another device</b> をクリックします</li>
+  <li><b>Export account</b> をクリックします</li>
   <li>Touch ID で本人確認を行い、プロンプトが表示されたら Bluetooth を有効にします
     <ol type="a">
       <li>画面に QR コードが表示されるはずです</li>
@@ -76,7 +76,7 @@ lastmod: "2025-11-18T19:03:48+09:00"
     </ol>
   </li>
   <li><b>Choose account type</b> 画面で <b>Organization</b> を選択します</li>
-  <li><b>Add account from another device</b> を選択し、続けて <b>Scan QR code</b> を選択します</li>
+  <li><b>Import Account</b> を選択し、続けて <b>Scan QR code</b> を選択します</li>
   <li>ノートパソコンの画面の QR コードをスキャンします</li>
   <li>ノートパソコンで、携帯電話の画面に表示された 6 桁の PIN を入力します</li>
   <li>モバイルデバイスで、プロンプトが表示されたら生体認証を有効にします</li>
@@ -97,7 +97,7 @@ lastmod: "2025-11-18T19:03:48+09:00"
     </ol>
   </li>
   <li><b>Choose account type</b> 画面で <b>Organization</b> を選択し、続けて <b>Skip</b> を選択します</li>
-  <li><b>No, sign in instead</b> を選択します</li>
+  <li><b>No, Sign in Instead</b> を選択します</li>
   <li><b>Organization's sign-in URL</b> には <b>gitlab.okta.com</b> を入力します</li>
   <li><b>Okta ユーザー名</b>と<b>パスワード</b>を入力してサインインします</li>
   <li>画面の利用規約に同意し、Touch ID を有効にします</li>

@@ -1,11 +1,11 @@
 ---
 title: "チームメンバーのスキルアップ"
-upstream_path: /handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/team-member-upskilling/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T00:00:00Z"
+upstream_path: "/handbook/security/product-security/security-platforms-architecture/product-security-engineering/runbooks/team-member-upskilling/"
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+lastmod: 2026-06-26T14:40:46+12:00
+translated_at: "2026-07-02T06:06:16+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-04T15:07:28+02:00"
 ---
 
 ## チームメンバースキルアップRunbook
@@ -88,7 +88,7 @@ ProdSecEngは、他のProduct Securityチーム向けにツール、自動化、
 **必須:**
 
 - [ ] [Product Securityの概要](/handbook/security/product-security/)を読み、部門内のチームがどのように連携しているかを確認する
-- [ ] [Security Capabilities Engineering](/handbook/security/product-security/security-capabilities-engineering/)ページを読み、ProdSecEngの直近の親グループ(PSIRT、脆弱性管理、ProdSecEng)を理解する
+- [ ] [Product Security Engineering](/handbook/security/product-security/security-platforms-architecture/product-security-engineering/)チームチャーターを読み、ProdSecEngのミッション、スコープ、運用モデルを理解する
 - [ ] 以下の各チームページを流し読みし、どのような種類の作業を行っているかをメモする:
   - [ ] [Application Security (AppSec)](/handbook/security/product-security/security-platforms-architecture/application-security/) - コードレビュー、機能の脅威モデリング、HackerOne経由で報告された脆弱性のトリアージを行う
   - [ ] [PSIRT](/handbook/security/product-security/psirt/) - 脆弱性報告の処理、修正の調整、セキュリティリリースプロセスの実行を行う

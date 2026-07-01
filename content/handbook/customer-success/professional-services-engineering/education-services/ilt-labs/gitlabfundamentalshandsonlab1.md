@@ -2,11 +2,11 @@
 title: "GitLab Fundamentals - ハンズオンラボ: GitLab で作業を整理する"
 description: "このハンズオンガイドでは、GitLab で作業を整理・構造化する基本を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab1/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+translated_at: "2026-07-02T06:06:16+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-30T11:37:14-04:00"
+lastmod: 2026-06-26T10:02:20-04:00
 ---
 
 > 完了までの推定時間: 30 分
@@ -108,13 +108,25 @@ GitLab で Issue を作成する基本を学びましょう。
 
 右サイドバーには、Issue に関連するメタデータが表示されます。
 
-- **Assignee** は現在 Issue に取り組んでいる人々のセットです。Issue がエピック、マイルストーン、またはイテレーションに関連付けられている場合、これらの詳細がここに表示されます。
+- **Assignee** は現在 Issue に取り組んでいる人々のセットです。
 
 - **Labels** を Issue に追加して、Issue を類似のカテゴリやタイプに整理するのに役立てることができます。
 
+- **Parent** は、この Issue が属しているエピックを指します。現時点では、親として設定するエピックはありません。
+
 - **Weight** は Issue に関連付けられた作業量を定義します。Issue にいつまでに完了すべきかの期日を設定できます。
 
-- **Time tracking** は Issue を完了するのにかかった時間を追跡できます。Health status は Issue の進行状況のステータスを設定できます。
+- **Milestone** では、Issue を完了までのタイムラインに関連付けることができます。マイルストーンは、四半期などの長期的なタイムラインを対象としています。
+
+- **Iteration** では、Issue を完了までのタイムラインに関連付けることができます。イテレーションは、スプリントなどの短期的なタイムラインを対象としています。
+
+- **Dates** では、Issue の開始日と終了日を設定できます。
+
+- **Health Status** は、Issue にステータスを適用し、現在の状態（On Track、Needs Attention、At Risk）をすばやく簡単に確認できるように追跡します。
+
+- **Time tracking** は Issue を完了するのにかかった時間を追跡できます。
+
+- **Contacts** は、請求およびレポート目的で Issue を顧客に関連付けます。
 
 しばしば、私たちは Issue を、単一のイテレーションやスプリントで完了する可能性のある小さな単位の作業を表すために使用します。より大きな作業セットには、エピックの概念を使用しますが、これは後のラボで議論します。
 

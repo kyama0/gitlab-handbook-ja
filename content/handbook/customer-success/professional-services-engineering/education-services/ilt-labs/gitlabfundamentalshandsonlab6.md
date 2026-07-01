@@ -2,11 +2,11 @@
 title: "GitLab 基礎 - ハンズオンラボ: セキュリティスキャナーの実装"
 description: "このハンズオンガイドでは、CI/CDプロセスにセキュリティスキャナーを追加するプロセスを学習します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab6/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+translated_at: "2026-07-02T06:06:16+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-25T17:26:37+00:00"
+lastmod: 2026-06-26T10:02:20-04:00
 ---
 
 > 完了までの推定時間: 30分
@@ -44,7 +44,7 @@ include:
 
 1. **Build > Pipeline Editor** を選択してください。
 
-1. ファイルの先頭（imageの下）に、mainバージョンのSASTインポートを追加してください。
+1. ファイルの先頭（image の下）に、現在のバージョンの SAST インポートを追加してください。
 
     ```yaml
     include:

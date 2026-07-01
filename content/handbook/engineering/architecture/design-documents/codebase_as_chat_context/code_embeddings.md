@@ -1,18 +1,18 @@
 ---
 title: "コードエンベディング"
-status: ongoing
+status: implemented
 creation-date: "2025-04-02"
 authors: [ "@maddievn" ]
-coach: ["@dgruzd", "@DylanGriffith"]
-approvers: []
-owning-stage: "~devops::foundations"
+coaches: ["@dgruzd", "@DylanGriffith"]
+dris: [ "@wortschi" ]
+owning-stage: "~devops::ai platform"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/codebase_as_chat_context/code_embeddings/
-upstream_sha: 0ee1352c26e468fa8032143d735391a793de7086
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
+translated_at: "2026-07-02T06:06:16+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-15T11:47:35+02:00"
+lastmod: 2026-07-01T09:36:08+02:00
 ---
 
 ## コードエンベディング
