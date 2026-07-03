@@ -2,9 +2,9 @@
 title: "ステージ横断のデザインコラボレーション"
 description: "Product Designer がプラットフォーム全体のエクスペリエンスについてステージグループを横断して協働する方法"
 upstream_path: /handbook/upstream-studios/how-we-work/cross-stage-design-collaboration/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-lastmod: 2026-06-16T09:26:31-04:00
-translated_at: "2026-06-20T20:58:39+09:00"
+upstream_sha: 2ea342c4234f3820e0bad8565152836e52df6849
+lastmod: 2026-06-29T11:52:06+01:00
+translated_at: "2026-07-03T20:37:21+09:00"
 translator: codex
 stale: false
 ---
@@ -25,7 +25,7 @@ stale: false
 **つながることから始める:**
 
 - 影響を受けるステージグループのデザイナーに早めに連絡する
-- Slack、Issue、UX Forum で文脈を共有する
+- Slack、Issue、Upstream Forum で文脈を共有する
 - 関連するデザイナーをデザインレビューに招待する
 
 **戦略的に一緒に働く:**
@@ -39,11 +39,11 @@ stale: false
 
 - コミュニケーションを非同期かつ透明に保つ
 - 意思決定を Issue とエピックにドキュメント化する
-- UX Forum で進捗を共有する
+- Upstream Forum で進捗を共有する
 - 戦略的な整合性のために Product Design Manager を巻き込む
 
 ## リソース
 
-- [UX Forum](/handbook/product/ux/ux-forum/) - より広いチームと作業を共有し、協働する
+- [Upstream Forum](/handbook/product/ux/upstream-forum/) - より広いチームと作業を共有し、協働する
 
 戦略的パートナーは、硬直したプロセスではなく、有機的に協働します。いつ、どのように協働するかは、自分の判断を信頼してください。
