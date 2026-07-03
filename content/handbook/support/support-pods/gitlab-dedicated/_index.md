@@ -2,11 +2,11 @@
 title: GitLab Dedicated サポートポッド
 description: サポートチーム内の他のメンバーが GitLab Dedicated のチケットに対応できるようにします。
 upstream_path: /handbook/support/support-pods/gitlab-dedicated/
-upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
-translated_at: "2026-05-08T00:00:00Z"
-translator: claude
+upstream_sha: 2ea342c4234f3820e0bad8565152836e52df6849
+translated_at: "2026-07-03T20:37:21+09:00"
+translator: codex
 stale: false
-lastmod: "2025-05-16T16:49:11-07:00"
+lastmod: "2026-07-01T09:10:46+01:00"
 ---
 
 ## 目的
@@ -21,12 +21,12 @@ lastmod: "2025-05-16T16:49:11-07:00"
 
 ## サポートポッドメンバー
 
-- 全体/AMER リード: {{< member-by-name "Brie Carranza" >}} (`@bcarranza`)
+- 全体/AMER リード:
 - 共同リード: {{< member-by-name "Wei-Meng Lee" >}} (`@weimeng-gtlb`)
 - APAC リード: {{< member-by-name "Daphne Kua" >}} (`@dkua1`)
-- EMEA リード: {{< member-by-name "Armin Hergenhan" >}} (`@ahergenhan`)
+- EMEA リード: {{< member-by-name "Nilanka De Silva" >}} (`@ndesilva`)
 - US Gov リード: {{< member-by-name "Wade Jenkins" >}} (`@wwjenkins`)
-- {{< member-by-name "Matthew Badeau" >}} (`@mbadeau`)
+- {{< member-by-name "Armin Hergenhan" >}} (`@ahergenhan`)
 - {{< member-by-name "Cleveland Bledsoe Jr" >}} (`@cleveland`)
 - {{< member-by-name "Gerardo Gutierrez" >}} (`@gerardo`)
 - {{< member-by-name "Brenda Nyaringita" >}} (`@bnyaringita`)
@@ -48,9 +48,7 @@ lastmod: "2025-05-16T16:49:11-07:00"
 
 GitLab Dedicated に関するあらゆる事柄に焦点を当てたこれらの同期セッションには、誰でも参加できます:
 
-- 隔週月曜日 1530 UTC: Gerardo and Brie's Office Hours (偶数週の [ISO weeks](https://www.epochconverter.com/weeknumbers))
 - 毎週金曜日 1300 UTC: GitLab Dedicated Pod Pairing
-- 隔週火曜日 0400 UTC: Matthew's Office Hours
 
 イベントは GitLab Support Google Calendar で確認し、招待状に自身を追加してください。
 

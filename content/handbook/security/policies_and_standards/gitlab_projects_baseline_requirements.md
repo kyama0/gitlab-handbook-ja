@@ -6,11 +6,11 @@ tags:
   - security_standard
   - security_standard_cmma
 upstream_path: /handbook/security/policies_and_standards/gitlab_projects_baseline_requirements/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T17:22:11Z"
-translator: claude
+upstream_sha: 2ea342c4234f3820e0bad8565152836e52df6849
+translated_at: "2026-07-03T20:37:21+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-02T07:33:04-05:00"
+lastmod: "2026-06-29T08:59:00-04:00"
 ---
 
 ## 目的
@@ -36,7 +36,7 @@ GitLab の[ドッグフーディングへのコミットメント](/handbook/eng
 - コードを持たないプロジェクト
 - GitLab のコードベースに影響を与えないボットをビルドするプロジェクト (例: YAML ファイルを CSV に変換するスクリプト)
 
-プロジェクトの使用法は時間の経過とともに自然にシフトする可能性があり、継続的にプロジェクトの使用法を再評価することが重要です。プロジェクトはどちらのカテゴリーにも入ったり出たりする可能性があるため、毎日プロジェクトで作業する際にそれを念頭に置いてください。期待されるのは、プロジェクトにこれらのベースライン構成が設定されている場合でも、チームメンバーが作業で協力し合い、知識のサイロで作業することを避けることで、効率が低下しないことです。これは、個人が単一障害点になるリスクも増加させます。これらの価値観はまた、変更に複数のチームメンバーを関与させることで、私たちの[透明性の価値](/handbook/values/#transparency) を促進します。
+プロジェクトの使用法は時間の経過とともに自然にシフトする可能性があり、継続的にプロジェクトの使用法を再評価することが重要です。プロジェクトはどちらのカテゴリーにも入ったり出たりする可能性があるため、毎日プロジェクトで作業する際にそれを念頭に置いてください。期待されるのは、プロジェクトにこれらのベースライン構成が設定されている場合でも、チームメンバーが作業で協力し合い、個人が単一障害点になるリスクを高める知識のサイロでの作業を避けることで、効率が低下しないことです。これらの価値観はまた、変更に複数のチームメンバーを関与させることで、私たちの[透明性の価値](/handbook/values/#transparency) を促進します。
 
 ### 自分のプロジェクトがどこに当てはまるかわかりません
 
@@ -52,7 +52,7 @@ GitLab の[ドッグフーディングへのコミットメント](/handbook/eng
 
 ### MR を要求するように構成された保護されたブランチ設定の例 1
 
-![Example 1 of Protected Branch Settings configured to Require an MR](https://about.gitlab.com/images/protected_branch_settings_example.jpg "Example of Protected Branch Settings")
+![MR を要求するように構成された保護されたブランチ設定の例 1](/images/protected_branch_settings_example.jpg "保護されたブランチ設定の例")
 
 [Code Owners の使用に関する注意](/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements/#note-on-usage-of-code-owners) を参照
 
@@ -62,11 +62,11 @@ MR は GitLab の[コードレビューガイドライン](/handbook/engineering
 
 ### Code Owners なしで構成された MR 承認ルールの例 1
 
-![Example 1 of MR Approval Rules configured WITHOUT Code Owners](https://about.gitlab.com/images/MR_approvals_without_code_owners.jpg "Example 1 of MR Approval Rules configured WITHOUT Code Owners")
+![Code Owners なしで構成された MR 承認ルールの例 1](/images/mr-approvals-without-code-owners.jpg "Code Owners なしで構成された MR 承認ルールの例 1")
 
 ### Code Owners ありで構成された MR 承認ルールの例 2
 
-![Example 2 of MR Approval Rules configured WITH Code Owners](https://about.gitlab.com/images/MR_approvals_with_code_owners.png "Example 2 of MR Approval Rules configured WITH Code Owners")
+![Code Owners ありで構成された MR 承認ルールの例 2](/images/mr-approvals-with-code-owners.png "Code Owners ありで構成された MR 承認ルールの例 2")
 
 [Code Owners の使用に関する注意](/handbook/security/policies_and_standards/gitlab_projects_baseline_requirements/#note-on-usage-of-code-owners) を参照
 
