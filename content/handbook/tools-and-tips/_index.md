@@ -4,7 +4,7 @@ simple_list: true
 upstream_path: /handbook/tools-and-tips/
 upstream_sha: e829b207a53856c23a25197426cca945626ade8a
 translated_at: "2026-07-05T00:19:33+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-06-29T08:59:00-04:00"
 ---

@@ -2090,11 +2090,11 @@
     },
     "content/handbook/company/working-groups/expense-management.md": {
       "path": "content/handbook/company/working-groups/expense-management.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T02:38:00+09:00",
       "model": "claude-sonnet-4-6",
-      "input_hash": "b93c768556a39b684c76a102602f396bae379edf40091725f31919c10dfdcad7",
-      "upstream_committed_at": "2024-05-14T21:58:35+00:00"
+      "input_hash": "bfeaed3db3561a4f62361b7a55fb14514b2fa640b42afe50e9a5e908f939228d",
+      "upstream_committed_at": "2026-07-02T10:23:00-04:00"
     },
     "content/handbook/company/working-groups/experimentation.md": {
       "path": "content/handbook/company/working-groups/experimentation.md",
@@ -11308,7 +11308,7 @@
       "path": "content/handbook/engineering/devops/create/engineering-managers/_index.md",
       "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
       "translated_at": "2026-07-05T00:25:00+09:00",
-      "model": "codex",
+      "model": "claude-opus-4-7",
       "input_hash": "7a2549e787a983a19d34e321384f08161648614ca675e7b0bb64f9751636666b",
       "upstream_committed_at": "2026-06-29T08:59:00-04:00"
     },
@@ -19948,7 +19948,7 @@
       "path": "content/handbook/tools-and-tips/_index.md",
       "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
       "translated_at": "2026-07-05T00:19:33+09:00",
-      "model": "codex",
+      "model": "claude-opus-4-7",
       "input_hash": "66a4adfda64bd53c6ace1e5bfea0e159d2b509635b58c7d2e1d35d5bc3851375",
       "upstream_committed_at": "2026-06-29T08:59:00-04:00"
     },
@@ -20292,7 +20292,7 @@
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md",
       "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
       "translated_at": "2026-07-05T00:04:57+09:00",
-      "model": "codex",
+      "model": "claude-opus-4-7",
       "input_hash": "ce7cea0058383d1c799c2f861da6d191492a67c12c2a0952c60e447aaa6d939f",
       "upstream_committed_at": "2026-06-29T11:54:46-07:00"
     },
@@ -20332,7 +20332,7 @@
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md",
       "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
       "translated_at": "2026-07-05T00:04:57+09:00",
-      "model": "codex",
+      "model": "claude-opus-4-7",
       "input_hash": "ff947272b172309e5d2a36156723feda4c205d67fce13524c8eece3f3d215834",
       "upstream_committed_at": "2026-07-01T17:22:37-05:00"
     },
@@ -22412,7 +22412,7 @@
       "path": "content/handbook/values/_index.md",
       "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
       "translated_at": "2026-07-05T00:04:57+09:00",
-      "model": "codex",
+      "model": "claude-opus-4-7",
       "input_hash": "7023e655a15e1216584e6998a188cf1788caa0864fdd73edbfa73df253c1f64e",
       "upstream_committed_at": "2026-07-02T10:23:01-04:00"
     },
@@ -33519,6 +33519,30 @@
       "model": "codex",
       "input_hash": "658198f526c277200658fcfd1f959b8783432a583b11c8c1deccb112c4bd28fa",
       "upstream_committed_at": "2026-07-01T07:55:16-05:00"
+    },
+    "content/handbook/engineering/ai/ai-core-infra/duo-service-infra/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-core-infra/duo-service-infra/_index.md",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T01:37:53+09:00",
+      "model": "codex",
+      "input_hash": "650bfef10050860a3f3ed584d0b56053b9867b31509e58aa54953d91e3bae556",
+      "upstream_committed_at": "2026-07-01T10:27:42+02:00"
+    },
+    "content/handbook/engineering/ai/ai-core-infra/how-we-work/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-core-infra/how-we-work/_index.md",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T01:37:53+09:00",
+      "model": "codex",
+      "input_hash": "00f650aaaeaf55584b5ae7b8565f04d5ab549434eadcfbed7f7ed9eb192ceb6a",
+      "upstream_committed_at": "2026-07-01T10:27:42+02:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/semantic_code_search.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/semantic_code_search.md",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T01:37:53+09:00",
+      "model": "codex",
+      "input_hash": "f96484cb0eb9cd608ebd38eee09da52461157314e74146deffe166f7c9785303",
+      "upstream_committed_at": "2026-07-01T09:36:08+02:00"
     }
   }
 }

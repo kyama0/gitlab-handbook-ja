@@ -5,7 +5,7 @@ upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/gitl
 upstream_sha: e829b207a53856c23a25197426cca945626ade8a
 lastmod: "2026-06-29T11:54:46-07:00"
 translated_at: "2026-07-05T00:04:57+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 

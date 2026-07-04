@@ -4,7 +4,7 @@ description: "オーストラリアのチームメンバー向け GitLab PTY Aus
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia/
 upstream_sha: e829b207a53856c23a25197426cca945626ade8a
 translated_at: "2026-07-05T00:04:57+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-01T17:22:37-05:00"
 ---

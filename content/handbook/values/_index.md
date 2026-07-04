@@ -10,7 +10,7 @@ upstream_path: /handbook/values/
 upstream_sha: e829b207a53856c23a25197426cca945626ade8a
 lastmod: "2026-07-02T10:23:01-04:00"
 translated_at: "2026-07-05T00:04:57+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 
