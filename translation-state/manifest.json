@@ -21026,11 +21026,11 @@
     },
     "content/handbook/support/support-pods/_index.md": {
       "path": "content/handbook/support/support-pods/_index.md",
-      "upstream_sha": "c8fa138220d8c6d69f811b17242d6d2f08e4e409",
-      "translated_at": "2026-05-08T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "c0ff411b22b148adfaf7db487fe1217a341c26a56b1e6233ac4e165cca0e0876",
-      "upstream_committed_at": "2026-01-08T14:57:30+01:00"
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T07:22:17+09:00",
+      "model": "codex",
+      "input_hash": "e75575e5d2a7ee7cb7a22eb8a54195d4a9e2a24e94821955dbdfbad0c3127f71",
+      "upstream_committed_at": "2026-07-01T09:10:46+01:00"
     },
     "content/handbook/support/support-pods/advanced-search/_index.md": {
       "path": "content/handbook/support/support-pods/advanced-search/_index.md",
@@ -21314,11 +21314,11 @@
     },
     "content/handbook/support/workflows/account_deletion_access_request_workflows.md": {
       "path": "content/handbook/support/workflows/account_deletion_access_request_workflows.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:17:46Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "af6c662933076b679d387824d2875eef31815f1d9fc260fe048d711450167174",
-      "upstream_committed_at": "2026-06-11T09:12:49-07:00"
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T07:22:17+09:00",
+      "model": "codex",
+      "input_hash": "7c2b3b4f12c0ce6324c47be1b699a886fb976f4b5432c0945ea5d7f950411b03",
+      "upstream_committed_at": "2026-07-02T14:06:15+03:00"
     },
     "content/handbook/support/workflows/account_verification.md": {
       "path": "content/handbook/support/workflows/account_verification.md",
@@ -21482,11 +21482,11 @@
     },
     "content/handbook/support/workflows/dedicated.md": {
       "path": "content/handbook/support/workflows/dedicated.md",
-      "upstream_sha": "6f812a8fec541dba51e50314e85d7890b9e71d7d",
-      "translated_at": "2026-05-28T21:12:16Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "f2a3570f61c0016921a5ae951e4c7ce832590d60735b6f2b37a5f2f437d90ce4",
-      "upstream_committed_at": "2026-05-29T01:29:54+08:00"
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T07:22:17+09:00",
+      "model": "codex",
+      "input_hash": "1bb3825c462f69517516233c17705a0b3b285cb2cdd96033d1058c4cd3b866a0",
+      "upstream_committed_at": "2026-07-01T09:10:46+01:00"
     },
     "content/handbook/support/workflows/dedicated_cmoc.md": {
       "path": "content/handbook/support/workflows/dedicated_cmoc.md",
@@ -21730,11 +21730,11 @@
     },
     "content/handbook/support/workflows/how-to-wir-podcast.md": {
       "path": "content/handbook/support/workflows/how-to-wir-podcast.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b2ba1a62b485c8d9d9d878b7592de4d8c455a9389d001b53fd4d09cfbc81e665",
-      "upstream_committed_at": "2025-12-05T16:54:52+09:00"
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T07:22:17+09:00",
+      "model": "codex",
+      "input_hash": "88aa9b39f884920e6d021f509ef34d97dbb711d1cb2108528e538dfb4b9c9788",
+      "upstream_committed_at": "2026-07-03T12:47:45+08:00"
     },
     "content/handbook/support/workflows/improving-documentation.md": {
       "path": "content/handbook/support/workflows/improving-documentation.md",
@@ -21810,11 +21810,11 @@
     },
     "content/handbook/support/workflows/kibana.md": {
       "path": "content/handbook/support/workflows/kibana.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T12:58:25Z",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T07:22:17+09:00",
       "model": "codex",
-      "input_hash": "7b8991adac773e320cd9e55ab42330e4fc94c4b401bd8fb9a94216d8aa0c5c25",
-      "upstream_committed_at": "2026-06-17T08:41:47+00:00"
+      "input_hash": "a3b170fce711aebebe95e6f33f76ee901369d6004a5b12e9cccf04633417a9d1",
+      "upstream_committed_at": "2026-06-25T15:51:50+08:00"
     },
     "content/handbook/support/workflows/knowledge_areas.md": {
       "path": "content/handbook/support/workflows/knowledge_areas.md",

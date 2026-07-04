@@ -5,11 +5,11 @@ subcategory: Legal
 description: "アカウント削除およびデータアクセスのリクエスト処理を行う方法"
 controlled_document: true
 upstream_path: /handbook/support/workflows/account_deletion_access_request_workflows/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-translated_at: "2026-06-12T21:17:46Z"
-translator: claude
+upstream_sha: e829b207a53856c23a25197426cca945626ade8a
+translated_at: "2026-07-05T07:22:17+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-11T09:12:49-07:00
+lastmod: 2026-07-02T14:06:15+03:00
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -74,18 +74,24 @@ lastmod: 2026-06-11T09:12:49-07:00
 
 ##### **個人ユーザーの削除** {#individual-user-deletion}
 
-このワークフローは、データ主体が自身を個人ユーザーであると申告した削除リクエストに適用されます。以下のフォーム入力項目は、組み込みの自動チェックを使用して検証されます。
+このワークフローは、データ主体が自身を個人ユーザーであると申告した削除リクエストに適用されます。以下のフォーム入力項目を確認する必要があります。
 
 - メールアドレス（存在する必要があります）
 - ユーザー名（存在する必要があります）
 - ユーザー名とメールアドレスが同一アカウントで一致する必要があります
 - アカウントが [Enterprise User](https://docs.gitlab.com/user/enterprise_user/) でないこと。
+- アカウントに[有効なサブスクリプションがない](#step-3-check-non-enterprise-user-paid-subscription-status)こと
 
 送信後、GitLab アカウントが見つかった場合、自動チェックはリスクレーティングを返します。リスクレーティングは、ユーザーアカウントを削除するために追加の検証が必要かどうかを判断するために使用されます。サポートエンジニアは、リスクレーティングが計算される方法を [Support Workflow page](https://internal.gitlab.com/handbook/support/workflows/data-subject-requests/) *(internal only)* で確認できます。自動チェックでユーザーアカウントが見つからない場合、システムが生成するメールメッセージでユーザーに通知されます。
 
 ###### **Step 0:** 重複リクエストのチェック
 
-Incoming Request ビューに移動し、コア識別子を使って検索することで、ユーザーからの既存リクエストを確認します。同じ種類の既存リクエストが表示された場合は、そのリクエスト自体をクリックして Status タブを確認し、元のリクエストの進捗を判断します。既存のリクエストがまだ `compiling` または `deleting` ステージを進行中の場合は、`Duplicate Request` メッセージをユーザーに送信して、後続の重複リクエストをクローズします。
+Incoming Request ビューに移動し、コア識別子を使って検索することで、ユーザーからの既存リクエストを確認します。同じ種類の既存リクエストが表示された場合は、そのリクエスト自体をクリックして Status タブを確認し、元のリクエストの進捗を判断します。既存のリクエストがまだ `compiling` または `deleting` ステージを進行中の場合:
+
+1. `Duplicate Request` メッセージをユーザーに送信します。
+1. メッセージを送信した後、Transcend で `Cancel Request` をクリックして、重複リクエストを明示的にキャンセルします。Duplicate Request メッセージを送信しただけではリクエストは自動的にクローズされません。手動でキャンセルする必要があります。
+
+![Transcend の Cancel Request ボタン](static/images/support/workflows/assets/transcend-cancelrequest.png))
 
 注意: 削除リクエストに関してサポートエンジニアに割り当てられるタスクは 2 つあります。
 
@@ -106,7 +112,7 @@ Incoming Request ビューに移動し、コア識別子を使って検索する
 
 ###### 応答なし
 
-ユーザーが 7 暦日以内に回答しない場合は、タスクを `Exception` としてマークし、ユーザーが検証に回答しなかった旨のメモを追加します。
+ユーザーが 7 暦日以内に回答しない場合は、`Failed Verification` メッセージを送信し、ユーザーが検証に回答しなかった旨のメモを追加して、タスクを `Exception` としてマークします。
 
 ###### **Step 2:** ブロックまたは禁止されたアカウント
 
@@ -120,7 +126,7 @@ Incoming Request ビューに移動し、コア識別子を使って検索する
 
 アカウントがブロックまたは禁止のままの場合は、`Security Review Denied` メッセージをデータ主体に送信し、`Support Engineer (GitLab Deletion)` タスクを Step 3 の下で Exception としてマークします。
 
-###### **Step 3:** 非 Enterprise ユーザーの有償サブスクリプションステータスの確認
+###### **Step 3:** 非 Enterprise ユーザーの有償サブスクリプションステータスの確認 {#step-3-check-non-enterprise-user-paid-subscription-status}
 
 1. アカウントが Enterprise user で**ない**ことを確認します。Enterprise user である場合は、[Enterprise user deletion](#enterprise-user-deletion) のステップに従います。
 1. メールアドレスを使って Customers Portal を検索します。
@@ -129,7 +135,7 @@ Incoming Request ビューに移動し、コア識別子を使って検索する
     1. `Zuora Subscriptions` タブをクリックします。
     1. `End Date` と `Auto-renew` の値を記録します。Auto-renew が yes の場合、自動更新が有効になっています。それ以外の場合は無効です。
 1. **いずれかの**サブスクリプションの `End Date` が将来の日付である場合:
-    1. リクエストの `Details` タブに次の形式でメモを追加します: `Cdot account has active saas subscription (A-S000xxxx) which expires on 202x-xx-xx auto-renewal is <dis/en>abled - https://customers.gitlab.com/admin/customer/<ID>`
+    1. リクエストの `Details` タブに次の形式でメモを追加します: `Cdot account has active subscription (A-S000xxxx) which expires on 202x-xx-xx auto-renewal is <dis/en>abled - https://customers.gitlab.com/admin/customer/<ID>`
     1. `help-transcend` チャンネルで Bronwyn Barnett および/または Stephanie Ebbert をタグ付けして、リクエストに追加したメモを Privacy に通知します
     1. Gitlab.com アカウント、Zendesk アカウント、CDot アカウントの削除は一切行いません。Step 4 に進まないでください。
 1. **すべての**サブスクリプションの `End Date` が過去である場合、またはサブスクリプションが一覧に表示されていない場合は、Customers Portal アカウントへのリンクを付けたメモを追加します。Step 4 に進みます。

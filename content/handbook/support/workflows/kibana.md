@@ -3,11 +3,11 @@ title: Kibana の使い方
 description: "Kibana とは何か、検索方法、結果の解釈方法、そこから特定の情報を取得するためのヒントとコツについての情報。"
 category: Infrastructure for troubleshooting
 upstream_path: /handbook/support/workflows/kibana/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T12:58:25Z"
-translator: claude
+upstream_sha: e829b207a53856c23a25197426cca945626ade8a
+translated_at: "2026-07-05T07:22:17+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-17T08:41:47+00:00
+lastmod: 2026-06-25T15:51:50+08:00
 ---
 
 ## 概要
@@ -247,6 +247,56 @@ SAML ログインの問題を調査するには:
 1. [SAML グループのドキュメント](https://docs.gitlab.com/user/group/saml_sso/troubleshooting/#search-rails-logs-for-a-saml-sign-in) で推奨されている positive フィルタを追加します。
 
 SAML 応答をデコードし、選択したフィルタに対応する結果を観察すると、欠落または誤設定された属性があるかを確認できます。
+
+#### SAML 応答
+
+特定のユーザーの SAML 応答を取得するには:
+
+- 例のグループ: [gitlab-silver](https://gitlab.com/gitlab-silver/)
+- 例のユーザー: `user@domain.com`
+
+`pubsub-rails-inf-gprd-*` ログで:
+
+1. 結果が含まれると思われる値に日付範囲を設定します。不明な場合は `Last 7 days` に設定します。
+1. グループのパスについて `json.saml_response.audiences` に positive フィルタを追加します。この例では `gitlab-silver` です。
+1. `json.payload_type` に `saml_response` の positive フィルタを追加します。
+1. 取得する `saml_response` の対象ユーザーのメールアドレスについて、`json.saml_response.attributes.email` に positive フィルタを追加します。この例では `user@domain.com` です
+1. `json.saml_response.attributes` の値をレビューします
+
+例: 1
+
+```json
+"attributes": {
+  "email": [
+    "user@domain.com"
+  ],
+  "groups": [
+    "saml-group-1-developer",
+    "saml-group-2-maintainer"
+  ]
+},
+```
+
+例 2:
+
+```json
+"attributes": {
+    "email": [
+       "user@domain.com"
+     ],
+    "firstname": [
+      "John"
+    ],
+     "lastname": [
+       "Doe"
+    ],
+    "name": [
+       "John Doe"
+    ]
+   }
+```
+
+- [検索へのクイックリンク](https://log.gprd.gitlab.net/app/r/s/hdVqu)
 
 #### SCIM プロビジョニングとデプロビジョニング
 
