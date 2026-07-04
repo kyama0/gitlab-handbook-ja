@@ -49,7 +49,7 @@ Support Week-in-Review ポッドキャストを録音および公開する必要
   - SWIR L&R タブから: 上段の 4 つのグラフ、`Total average CES` から volume まで
   - SWIR L&R タブから: `L&R FRT SLA achievement - Last 4 Weeks` の下までスクロールして現在の週をキャプチャ
 - 作業項目の適切なセクションに主要メトリクスの値を入力します
-- USGov メトリクスについては、[米国政府サポートチームコールドキュメント](https://drive.google.com/drive/u/0/search?q=U.S.%20Government%20Support%20Team%20Call) を参照し、作業項目に追加します
+- USGov メトリクスについては、[米国政府サポートチームコール ドキュメント](https://drive.google.com/drive/u/0/search?q=U.S.%20Government%20Support%20Team%20Call) を参照し、作業項目に追加します
 - Metrics 作業項目を保存します
 
 #### 3. ダイジェスト作業項目を作成する {#3-create-the-digest-work-item}
