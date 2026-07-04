@@ -2,9 +2,9 @@
 title: "AI Coding：機能スチュワードシップ"
 description: "新しい恒久的なオーナーシップへの移行中にあり、AI Coding が構築してオーナーシップを持つ機能。"
 upstream_path: /handbook/engineering/ai/ai-coding/feature-stewardship/
-upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
-lastmod: "2026-06-22T12:16:47-05:00"
-translated_at: "2026-06-23T07:24:31.0151723+09:00"
+upstream_sha: e829b207a53856c23a25197426cca945626ade8a
+lastmod: "2026-07-01T07:55:16-05:00"
+translated_at: "2026-07-05T00:25:00+09:00"
 translator: codex
 stale: false
 ---
@@ -18,3 +18,4 @@ stale: false
 1. [Code Suggestions](code_suggestions/) - IDE 内での AI 生成によるコード補完と生成。
 1. [AI Assisted Service](ai_assisted_service/) - 私たちの機能を支える中核的な AI インフラストラクチャとサービス。
 1. [Duo Context Exclusion](duo_context_exclusion/) - センシティブまたは関連性の低いコードコンテキストのフィルタリング。
+1. [GitLab CLI](gitlab_cli/) - GitLab とやり取りするための `glab` コマンドラインインターフェイス。

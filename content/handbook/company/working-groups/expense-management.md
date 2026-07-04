@@ -3,11 +3,11 @@ title: "経費管理 ワーキンググループ"
 description: "GitLab 経費管理グループのビジネスゴールは、GitLab バリューに沿った効率的な経費管理を確保することです。"
 status: active
 upstream_path: /handbook/company/working-groups/expense-management/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T12:00:00Z"
+upstream_sha: e829b207a53856c23a25197426cca945626ade8a
+translated_at: "2026-07-05T02:38:00+09:00"
 translator: claude
 stale: false
-lastmod: "2024-05-14T21:58:35+00:00"
+lastmod: "2026-07-02T10:23:00-04:00"
 ---
 
 ## 属性
@@ -21,7 +21,7 @@ lastmod: "2024-05-14T21:58:35+00:00"
 
 ## ビジネスゴール
 
-GitLab の[会社のお金を自分のお金のように使うという行動規範](/handbook/values/#spend-company-money-like-its-your-own)を反映させながら、経理やその他のチームメンバーにとって高度に効率的な経費ポリシーを確保します。
+GitLab の[会社のお金を自分のお金のように使うという行動規範](/handbook/values/#spend-company-money-responsibly)を反映させながら、経理やその他のチームメンバーにとって高度に効率的な経費ポリシーを確保します。
 
 これには以下が含まれます:
 
@@ -33,7 +33,7 @@ GitLab の[会社のお金を自分のお金のように使うという行動規
 
 ## 終了基準 {#exit-criteria}
 
-GitLab の[会社のお金を自分のお金のように使うという行動規範](/handbook/values/#spend-company-money-like-its-your-own)に沿った更新済みの経費ポリシーとプロセスがハンドブックに明確にドキュメント化されること。
+GitLab の[会社のお金を自分のお金のように使うという行動規範](/handbook/values/#spend-company-money-responsibly)に沿った更新済みの経費ポリシーとプロセスがハンドブックに明確にドキュメント化されること。
 
 ## ロールと責任
 

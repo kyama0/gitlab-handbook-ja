@@ -2090,11 +2090,11 @@
     },
     "content/handbook/company/working-groups/expense-management.md": {
       "path": "content/handbook/company/working-groups/expense-management.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T12:00:00Z",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T02:38:00+09:00",
       "model": "claude-sonnet-4-6",
-      "input_hash": "b93c768556a39b684c76a102602f396bae379edf40091725f31919c10dfdcad7",
-      "upstream_committed_at": "2024-05-14T21:58:35+00:00"
+      "input_hash": "bfeaed3db3561a4f62361b7a55fb14514b2fa640b42afe50e9a5e908f939228d",
+      "upstream_committed_at": "2026-07-02T10:23:00-04:00"
     },
     "content/handbook/company/working-groups/experimentation.md": {
       "path": "content/handbook/company/working-groups/experimentation.md",
@@ -11306,11 +11306,11 @@
     },
     "content/handbook/engineering/devops/create/engineering-managers/_index.md": {
       "path": "content/handbook/engineering/devops/create/engineering-managers/_index.md",
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-05-06T13:30:00Z",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:25:00+09:00",
       "model": "claude-opus-4-7",
-      "input_hash": "d56d8cf3e4aa060af47a48bf85040ec673f05f8211cc3c9798669c24854eabe8",
-      "upstream_committed_at": "2026-01-22T10:29:29+11:00"
+      "input_hash": "7a2549e787a983a19d34e321384f08161648614ca675e7b0bb64f9751636666b",
+      "upstream_committed_at": "2026-06-29T08:59:00-04:00"
     },
     "content/handbook/engineering/devops/create/engineering-managers/books.md": {
       "path": "content/handbook/engineering/devops/create/engineering-managers/books.md",
@@ -19946,11 +19946,11 @@
     },
     "content/handbook/tools-and-tips/_index.md": {
       "path": "content/handbook/tools-and-tips/_index.md",
-      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
-      "translated_at": "2026-05-07T22:45:00Z",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:19:33+09:00",
       "model": "claude-opus-4-7",
-      "input_hash": "0c796c956f6b6c92f8f3d43a7638e77994447216488913bf8e0d1bab67ebdd1f",
-      "upstream_committed_at": "2026-04-27T16:37:34+01:00"
+      "input_hash": "66a4adfda64bd53c6ace1e5bfea0e159d2b509635b58c7d2e1d35d5bc3851375",
+      "upstream_committed_at": "2026-06-29T08:59:00-04:00"
     },
     "content/handbook/tools-and-tips/ai/_index.md": {
       "path": "content/handbook/tools-and-tips/ai/_index.md",
@@ -20258,11 +20258,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits.md",
-      "upstream_sha": "ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c",
-      "translated_at": "2026-06-24T07:28:04+09:00",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:04:57+09:00",
       "model": "codex",
-      "input_hash": "f7c8a95c25de1b4de780a5126c0042d316fcf709476013e781558bb5a9cf409c",
-      "upstream_committed_at": "2026-06-23T13:35:03-07:00"
+      "input_hash": "181a3546bc0064f9bd410bc37f546ec1ade461943e23e0f11c0fe64a892e1307",
+      "upstream_committed_at": "2026-07-01T16:03:46-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/financial-wellness.md",
@@ -20290,11 +20290,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:04:57+09:00",
       "model": "claude-opus-4-7",
-      "input_hash": "6e1ef34f066da6d634c2d047f38b38ec6e3d3bcc053ab94ad0c54cd40072a010",
-      "upstream_committed_at": "2026-06-05T17:42:21+00:00"
+      "input_hash": "ce7cea0058383d1c799c2f861da6d191492a67c12c2a0952c60e447aaa6d939f",
+      "upstream_committed_at": "2026-06-29T11:54:46-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/global-expansion.md",
@@ -20330,11 +20330,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia.md",
-      "upstream_sha": "23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0",
-      "translated_at": "2026-05-07T22:45:00Z",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:04:57+09:00",
       "model": "claude-opus-4-7",
-      "input_hash": "13fb38b939daeaf1b4c9bd2f1f92ddf6365e3cbf7facdaa4aa1e4cc4a4efdfbe",
-      "upstream_committed_at": "2026-02-25T10:26:43+00:00"
+      "input_hash": "ff947272b172309e5d2a36156723feda4c205d67fce13524c8eece3f3d215834",
+      "upstream_committed_at": "2026-07-01T17:22:37-05:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand.md",
@@ -22410,11 +22410,11 @@
     },
     "content/handbook/values/_index.md": {
       "path": "content/handbook/values/_index.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:04:57+09:00",
       "model": "claude-opus-4-7",
-      "input_hash": "2a1e91ec51a740559662fc6807194c8cd367d0a86145fff474782adbb77d3335",
-      "upstream_committed_at": "2026-06-04T06:51:08-07:00"
+      "input_hash": "7023e655a15e1216584e6998a188cf1788caa0864fdd73edbfa73df253c1f64e",
+      "upstream_committed_at": "2026-07-02T10:23:01-04:00"
     },
     "content/handbook/support/license-and-renewals/workflows/self-managed/sending_license_to_different_email.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/self-managed/sending_license_to_different_email.md",
@@ -33106,11 +33106,11 @@
     },
     "content/handbook/upstream-studios/design-strategy/_index.md": {
       "path": "content/handbook/upstream-studios/design-strategy/_index.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T20:58:39+09:00",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:04:57+09:00",
       "model": "codex",
-      "input_hash": "db092de5807b3a5335da5942d75eebd42a141684cd1a20526175c25790cc4fb4",
-      "upstream_committed_at": "2026-06-19T14:14:46-07:00"
+      "input_hash": "154e07a1f93dddee82274084f6a53b3d158b46505fcb2bc4db5b51df91621305",
+      "upstream_committed_at": "2026-06-30T10:43:30-07:00"
     },
     "content/handbook/engineering/architecture/design-documents/gitlab_steps/nix-package-manager.md": {
       "path": "content/handbook/engineering/architecture/design-documents/gitlab_steps/nix-package-manager.md",
@@ -33234,11 +33234,11 @@
     },
     "content/handbook/engineering/ai/ai-coding/feature-stewardship/_index.md": {
       "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/_index.md",
-      "upstream_sha": "e2aabe3bf4147150a0bc54fee61fc5f695a17d9f",
-      "upstream_committed_at": "2026-06-22T12:16:47-05:00",
-      "translated_at": "2026-06-23T07:24:31.0151723+09:00",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:25:00+09:00",
       "model": "codex",
-      "input_hash": "bc8b140450590719bf4c7101f78b4c971928e43533d8c1f59fc2bd88b1e9fb86"
+      "input_hash": "aa0e44e01eff29b80e5b04433de1a3645f190de5d434aee4912fafe71a43360b",
+      "upstream_committed_at": "2026-07-01T07:55:16-05:00"
     },
     "content/handbook/engineering/ai/ai-coding/feature-stewardship/ai_assisted_service.md": {
       "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/ai_assisted_service.md",
@@ -33471,6 +33471,78 @@
       "model": "codex",
       "input_hash": "d2cfe574d71667b301b99af5942e22b017ce0f715e155edb3bbcf544efdaf13a",
       "upstream_committed_at": "2026-06-25T09:42:09+02:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/decisions/001_semantic_code_search.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/decisions/001_semantic_code_search.md",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:25:00+09:00",
+      "model": "codex",
+      "input_hash": "9f44950a35b8c4dc7230201aee1153a13c917d82c2eaae3d74b85f6a88853abc",
+      "upstream_committed_at": "2026-07-01T09:36:08+02:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/decisions/003_expose_semantic_code_search_outside_mcp.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/decisions/003_expose_semantic_code_search_outside_mcp.md",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:25:00+09:00",
+      "model": "codex",
+      "input_hash": "77110c3b67be43a9e69df32a3df285c60f7fad93248de32e1544f8d9dbe10a89",
+      "upstream_committed_at": "2026-07-01T09:36:08+02:00"
+    },
+    "content/handbook/engineering/ai/ai-core-infra/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-core-infra/_index.md",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:25:00+09:00",
+      "model": "codex",
+      "input_hash": "6ea773929719dc7b6dc13b625e35c108b7cf548895f142f9af19be2554384680",
+      "upstream_committed_at": "2026-07-01T10:27:42+02:00"
+    },
+    "content/handbook/engineering/ai/ai-core-infra/semantic-code-search/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-core-infra/semantic-code-search/_index.md",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:25:00+09:00",
+      "model": "codex",
+      "input_hash": "8bd8c0240c07a334943010497c17b4bd5d0be2758d5b80093cea190ddfaa86f3",
+      "upstream_committed_at": "2026-07-01T10:27:42+02:00"
+    },
+    "content/handbook/engineering/ai/ai-core-infra/model-evaluation-infra/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-core-infra/model-evaluation-infra/_index.md",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:25:00+09:00",
+      "model": "codex",
+      "input_hash": "c3f7c40cb04a9076c0f8ba46f9a85c8a3af42cd46f0bdc8aed97dfaf9a684318",
+      "upstream_committed_at": "2026-07-01T10:27:42+02:00"
+    },
+    "content/handbook/engineering/ai/ai-coding/feature-stewardship/gitlab_cli.md": {
+      "path": "content/handbook/engineering/ai/ai-coding/feature-stewardship/gitlab_cli.md",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T00:25:00+09:00",
+      "model": "codex",
+      "input_hash": "658198f526c277200658fcfd1f959b8783432a583b11c8c1deccb112c4bd28fa",
+      "upstream_committed_at": "2026-07-01T07:55:16-05:00"
+    },
+    "content/handbook/engineering/ai/ai-core-infra/duo-service-infra/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-core-infra/duo-service-infra/_index.md",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T01:37:53+09:00",
+      "model": "codex",
+      "input_hash": "650bfef10050860a3f3ed584d0b56053b9867b31509e58aa54953d91e3bae556",
+      "upstream_committed_at": "2026-07-01T10:27:42+02:00"
+    },
+    "content/handbook/engineering/ai/ai-core-infra/how-we-work/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-core-infra/how-we-work/_index.md",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T01:37:53+09:00",
+      "model": "codex",
+      "input_hash": "00f650aaaeaf55584b5ae7b8565f04d5ab549434eadcfbed7f7ed9eb192ceb6a",
+      "upstream_committed_at": "2026-07-01T10:27:42+02:00"
+    },
+    "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/semantic_code_search.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/semantic_code_search.md",
+      "upstream_sha": "e829b207a53856c23a25197426cca945626ade8a",
+      "translated_at": "2026-07-05T01:37:53+09:00",
+      "model": "codex",
+      "input_hash": "f96484cb0eb9cd608ebd38eee09da52461157314e74146deffe166f7c9785303",
+      "upstream_committed_at": "2026-07-01T09:36:08+02:00"
     }
   }
 }
