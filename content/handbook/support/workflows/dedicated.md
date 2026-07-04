@@ -3,11 +3,11 @@ title: GitLab Dedicated 概要
 category: GitLab Dedicated
 description: "GitLab Dedicated サポート概要。"
 upstream_path: /handbook/support/workflows/dedicated/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
-translator: claude
+upstream_sha: e829b207a53856c23a25197426cca945626ade8a
+translated_at: "2026-07-05T07:22:17+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-29T01:29:54+08:00"
+lastmod: "2026-07-01T09:10:46+01:00"
 ---
 
 ### 概要
@@ -54,7 +54,7 @@ GitLab サポートは、テストと問題の再現目的のために GitLab De
 - Grafana: https://grafana.dedicatedtestsandbox.gitlab-private.org
 - Switchboard: https://console.gitlab-private.org/tenants/40
 
-GitLab Dedicated インスタンスへの招待を受け取るには、[#support_gitlab-dedicated](https://gitlab.enterprise.slack.com/archives/C058LM1RL3V) で Armin、Daphne、Wade、または Wei-Meng に依頼してください。
+GitLab Dedicated インスタンスへの招待を受け取るには、[#support_gitlab-dedicated](https://gitlab.enterprise.slack.com/archives/C058LM1RL3V) で Daphne、Nilanka、Wade、または Wei-Meng に依頼してください。
 
 GitLab Duo Enterprise の割り当てシートをリクエストすることもできます。
 

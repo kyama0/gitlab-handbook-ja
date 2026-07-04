@@ -3,11 +3,11 @@ title: WIR ポッドキャストの作成方法
 category: References
 description: Support Week-in-Review ポッドキャストを作成するための一般的なガイド
 upstream_path: /handbook/support/workflows/how-to-wir-podcast/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-15T00:00:00Z"
-translator: claude
+upstream_sha: e829b207a53856c23a25197426cca945626ade8a
+translated_at: "2026-07-05T07:22:17+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-05T16:54:52+09:00"
+lastmod: "2026-07-03T12:47:45+08:00"
 ---
 
 ## 概要
@@ -24,39 +24,38 @@ Support Week-in-Review ポッドキャストを録音および公開する必要
 
 ### 録音前
 
-1. チケットからの顧客フィードバック入力を準備する
+手順は 3 つあります。ドキュメント化された順序で進めてください。これにより、下書きの SWIR ダイジェスト Issue のメール通知に、週のフレーズ以外のすべてが含まれるようになります。
 
-   - フィードバックは [SWIR プロジェクト](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review/-/issues) の SSAT 作業項目に集められます
-   - 一部の入力は週中にマネージャーから提供されますが、ほとんどはパイプラインの `populate_ssat_v2` ジョブを使って取り込む必要があります
-   - `populate_ssat_v2` ジョブを実行する - これにより、オープン中のポジティブフィードバックが SSAT 作業項目に集められます
-   - コンテンツ（自動またはその他）をレビューし、修正を加え、実際にはポジティブでないものを削除します。
-   - チケットの中盤で受け取ったフィードバックには担当者名が入力されず、代わりに `checkticket` というプレースホルダーが入っていることに注意してください - これらのフィードバックについては、Kudos セクションで共有するのにふさわしい肯定的なフィードバックの内容であることを確認すること、そしてフィードバックを含める場合はプレースホルダーをチケット担当者の名前に置き換えることが、二重に重要です。
-   コンテンツが多い場合は、短くてパーソナライズされていない項目をいくつか削除して数を減らすことを検討してください - ここではあなたの判断を使用してください。「自動コンテンツ」に関する行を削除します。
+1. [顧客フィードバックを準備する](#1-prepare-customer-feedback-from-tickets-input)
+1. [メトリクスを準備する](#2-prepare-the-metrics)
+1. [ダイジェスト Issue を準備する](#3-create-the-digest-work-item)
 
-1. 前週に公開されたナレッジベース記事を準備する
+#### 1. チケットからの顧客フィードバック入力を準備する {#1-prepare-customer-feedback-from-tickets-input}
 
-   - `New KB Articles - <date>` 作業項目を編集します
-   - [この Zendesk レポート](https://gitlab.zendesk.com/explore#/pivot-table/connection/12063682/report/229844642) から両方の列をコピーします
-   - この [スプレッドシート](https://docs.google.com/spreadsheets/d/1GVsJO8OGDqsC6ifL79ubccotTekkVAvCay4Kp2axu0U/edit?gid=0#gid=0) に貼り付けてフォーマットできます。列 D からコピーし、作業項目に special-paste（command-shift-v）します。（special-paste を使用しない場合、それらが表に変換されます。）
-   - 作業項目を保存します
+- フィードバックは [SWIR プロジェクト](https://gitlab.com/gitlab-com/support/readiness/support-week-in-review/-/issues) の SSAT 作業項目に集められます
+- 一部の入力は週中にマネージャーから提供されますが、ほとんどはパイプラインの `populate_ssat_v2` ジョブを使って取り込む必要があります
+- `populate_ssat_v2` ジョブを実行します。これにより、オープン中のポジティブフィードバックが SSAT 作業項目に集められます
+- コンテンツ（自動またはその他）をレビューし、修正を加え、実際にはポジティブでないものを削除します。
+- チケットの中盤で受け取ったフィードバックには担当者名が入力されず、代わりに `checkticket` というプレースホルダーが入っていることに注意してください。これらのフィードバックについては、Kudos セクションで共有するのにふさわしい肯定的なフィードバックの内容であることを確認すること、そしてフィードバックを含める場合はプレースホルダーをチケット担当者の名前に置き換えることが、二重に重要です。
+  コンテンツが多い場合は、短くてパーソナライズされていない項目をいくつか削除して数を減らすことを検討してください。ここではあなたの判断を使用してください。「自動コンテンツ」に関する行を削除します。
 
-1. メトリクスを準備する
+#### 2. メトリクスを準備する {#2-prepare-the-metrics}
 
-   - `Metrics - <date>` 作業項目を編集します
-   - [オープン中のペアリング マイルストーン](https://gitlab.com/groups/gitlab-com/support/-/milestones?search_title=pairing&state=&sort=) の現在のペアリング数の合計を確認します。それを前週の SWIR と比較して、その後何件の新しいペアリングが作成されたかを判断します。これらの詳細を作業項目に追加します。
-   - [MM: Support KPIs](https://gitlab.zendesk.com/explore/studio#/dashboards/3DC60497A02C9E0EDB02ECE9C20153733D4AF220B656C550418FF2E42B7E2329) Zendesk ダッシュボードから主要メトリクスのスクリーンショットを撮り、作業項目の指示された場所に挿入します。以下の 4 項目を含める必要があります:
-      - SWIR タブから: 上段の 4 つのグラフ、`Total average CES` から volume まで
-      - SWIR タブから: `Total FRT SLA achievement - Last 4 Weeks` の下までスクロールして現在の週をキャプチャ
-      - SWIR L&R タブから: 上段の 4 つのグラフ、`Total average CES` から volume まで
-      - SWIR L&R タブから: `L&R FRT SLA achievement - Last 4 Weeks` の下までスクロールして現在の週をキャプチャ
-   - 作業項目の適切なセクションに主要メトリクスの値を入力します
-   - USGov メトリクスについては、[米国政府サポートチームコール ドキュメント](https://drive.google.com/drive/u/0/search?q=U.S.%20Government%20Support%20Team%20Call) を参照し、作業項目に追加します
-   - Metrics 作業項目を保存します
+- `Metrics - <date>` 作業項目を編集します
+- [オープン中のペアリングマイルストーン](https://gitlab.com/groups/gitlab-com/support/-/milestones?search_title=pairing&state=&sort=) の現在のペアリング総数を確認します。それを前週の SWIR と比較して、その後何件の新しいペアリングが作成されたかを判断します。これらの詳細を作業項目に追加します。
+- [MM: Support KPIs](https://gitlab.zendesk.com/explore/studio#/dashboards/3DC60497A02C9E0EDB02ECE9C20153733D4AF220B656C550418FF2E42B7E2329) Zendesk ダッシュボードから主要メトリクスのスクリーンショットを撮り、作業項目の指示された場所に挿入します。以下の 4 項目を含める必要があります:
+  - SWIR タブから: 上段の 4 つのグラフ、`Total average CES` から volume まで
+  - SWIR タブから: `Total FRT SLA achievement - Last 4 Weeks` の下までスクロールして現在の週をキャプチャ
+  - SWIR L&R タブから: 上段の 4 つのグラフ、`Total average CES` から volume まで
+  - SWIR L&R タブから: `L&R FRT SLA achievement - Last 4 Weeks` の下までスクロールして現在の週をキャプチャ
+- 作業項目の適切なセクションに主要メトリクスの値を入力します
+- USGov メトリクスについては、[米国政府サポートチームコール ドキュメント](https://drive.google.com/drive/u/0/search?q=U.S.%20Government%20Support%20Team%20Call) を参照し、作業項目に追加します
+- Metrics 作業項目を保存します
 
-1. ダイジェスト作業項目を作成する
+#### 3. ダイジェスト作業項目を作成する {#3-create-the-digest-work-item}
 
-   - `create_digest_issue` ジョブを実行します。これにより、すべてのチーム貢献、顧客フィードバック、KB 記事、メトリクスが新しいダイジェスト作業項目にまとめられます
-   - SWIR ダイジェスト作業項目を編集し、タイトルとして週のフレーズを追加します
+- `create_digest_issue` ジョブを実行します。これにより、すべてのチーム貢献、顧客フィードバック、KB 記事、メトリクスが新しいダイジェスト作業項目にまとめられます
+- SWIR ダイジェスト作業項目を編集し、タイトルとして週のフレーズを追加します
 
 ### 録音
 
