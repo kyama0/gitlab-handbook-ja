@@ -4,10 +4,10 @@ owning-stage: "~devops::package"
 description: "GitLab の Rails フロントエンドと Artifact Registry の連携モデル"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/014_frontend_to_artifact_registry/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-08T14:27:05+01:00
-translated_at: "2026-06-12T21:12:20Z"
-translator: claude
+upstream_sha: e369d698c905fc3eca22dd31f609afe16f2307bf
+lastmod: 2026-07-06T09:56:59+10:00
+translated_at: "2026-07-06T09:08:00+09:00"
+translator: codex
 stale: false
 ---
 
@@ -121,6 +121,14 @@ Container Registry のリゾルバーに合わせます。
 | HTTP クライアント | `lib/artifact_registry/client.rb` | `lib/container_registry/client.rb` |
 | GraphQL の型とリゾルバー | `app/graphql/types/artifact_registry/`、`app/graphql/resolvers/artifact_registry/` | `app/graphql/types/container_registry/`、`app/graphql/resolvers/container_repositories_resolver.rb` |
 | Vue エントリ | `app/assets/javascripts/packages_and_registries/artifact_registry/` | `app/assets/javascripts/packages_and_registries/container_registry/explorer/` |
+
+Rails は Organization から namespace へのマッピングを namespace
+UUID として永続化します。これは namespace 作成時に書き込まれます（[gitlab#603023](https://gitlab.com/gitlab-org/gitlab/-/work_items/603023)）。
+また Rails は Artifact Registry からスラッグと namespace ステータスを解決し、
+その両方をキャッシュします（[ADR-022](022_namespace_decoupling.md#slug-discovery)）。
+クライアントとナビゲーションのゲーティング（Organization に対してレジストリエントリを
+表示するかどうか）は、ページ読み込みごとに Artifact Registry を呼び出すのではなく、
+この永続化されたマッピングとキャッシュされたスラッグ／ステータスを読み取ります。
 
 Rails 側の認証情報の取得は [auth agreement](../agreements/auth.md) に
 従います。具体的なサービスと交換プロトコルは未解決です

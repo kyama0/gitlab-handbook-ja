@@ -1,11 +1,12 @@
 ---
 title: "パッチリリース"
 upstream_path: /handbook/engineering/releases/patch-releases/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-09T09:11:01-06:00
-translated_at: "2026-06-12T21:15:09Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+lastmod: 2026-07-02T17:44:09-06:00
+translated_at: "2026-07-06T07:58:23+09:00"
+translator: codex
 stale: false
+
 ---
 
 ## パッチリリースポリシー {#patch-release-policy}
@@ -74,14 +75,12 @@ GitLab エンジニアで以下を行いたい場合:
 
 ### SLO コミットメント {#slo-commitments}
 
-計画されたパッチリリースは、緊急リリースを必要とせずに目標リリース日を満たすようにスケジュールされます。
+定期スケジュールのパッチリリースは、緊急リリースを必要とせずに目標リリース日を満たせるよう設計されています。
 
 - 詳細なセキュリティ脆弱性是正 SLA については、[セキュリティ是正 SLA](/handbook/security/product-security/vulnerability-management/sla/)を参照してください。
 - 詳細なバグ脆弱性是正 SLA については、[バグ是正 SLA](/handbook/product-development/how-we-work/issue-triage/#severity-slos)を参照してください。
 
 ## パッチリリースのタイプ {#patch-release-types}
-
-パッチリリースには、バグおよび脆弱性修正を含むパッケージを準備、検証、公開するために、多くのチーム間の複数のタッチポイントがあります。
 
 GitLab には、2 種類のパッチリリースプロセスがあります:
 
@@ -90,32 +89,33 @@ GitLab には、2 種類のパッチリリースプロセスがあります:
    [バグ SLO](/handbook/product-development/how-we-work/issue-triage/#severity-slos)と
    [セキュリティ是正 SLA](/handbook/security/product-security/vulnerability-management/sla/)に準拠します。
    [`critical` 脆弱性](/handbook/security/product-security/vulnerability-management/sla/)を含むパッチは、critical パッチとみなされます。
-2. **アウトオブバンド**: 通常の[パッチリリースのケイデンス](#patch-release-cadence)外のパッチで、
-高重大度のバグまたは critical 脆弱性の緩和に厳密に限定して予約されます。これらのアドホックなパッチは、
-宣言された[インシデント](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)からのみ発生し、
-逃した期限への対応や標準のリリースポリシーの回避に決して使用してはなりません。
-パッチリリースのケイデンスに従い、アウトオブバンドパッチは水曜日に提供されます。
+1. **アウトオブバンド**: 通常の[パッチリリースのケイデンス](#patch-release-cadence)外のパッチで、
+   高重大度のバグまたは critical 脆弱性の緩和に厳密に限定されます。これらのアドホックな
+   パッチは、逃した期限への対応や標準のリリースポリシーの回避に決して使用してはなりません。
+   パッチリリースのケイデンスに従い、アウトオブバンドパッチは水曜日に提供されます。
 
-   - **Critical セキュリティ脆弱性** の場合 - [セキュリティ RCA](/handbook/security/root-cause-analysis/)
+   バグ修正かセキュリティ脆弱性かを問わず、すべてのアウトオブバンドパッチは以下を満たす必要があります:
+
+   - **例外プロセス**: [例外リクエスト](/handbook/engineering/releases#exception-process)
+     が**必須**であり、アウトオブバンドパッチを実行する前に従わなければなりません。リリースマネージャーは、
+     ビジネス上のプレッシャーに関係なく、このプロセスを完了していないリクエストを却下する権限を持ちます。
+   - **インシデント宣言**: 以下の属性を持つ
+     [インシデントを宣言](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)しなければなりません:
+     - "Out-of-Band Patch" としてマークされている
+     - 重大度 S1 または S2
+     - 寄与要因が「Inadequate testing or QA」または「Miscommunication or coordination gap」である
+   - **FCL とインシデントレビュー**: あらゆる GitLab プラットフォームの信頼性と可用性を維持するため、
+     [インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)と
+     [FCL](/handbook/engineering/#feature-change-locks)の完了が**必須**です。
+
+   さらに、**critical セキュリティ脆弱性** の場合、[セキュリティ RCA](/handbook/security/root-cause-analysis/)
    が**必須**であり、アウトオブバンドリリースを強いた脆弱性を導入した責任を負うチームによって完了されなければなりません。この説明責任に例外はありません。
-
-   - **バグ修正** の場合 - [例外プロセス](/handbook/engineering/releases#exception-process)
-   が**必須**であり、アウトオブバンドパッチを実行する前に従わなければなりません。リリースマネージャーは、
-   ビジネス上のプレッシャーに関係なく、このプロセスを完了していないリクエストを却下する権限を持ちます。以下の属性を持つ
-   [インシデントを宣言](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)しなければなりません:
-      - "Out-of-Band Patch" としてマークされている
-      - 重大度 S1 または S2
-      - 寄与要因が「Inadequate testing or QA」または「Miscommunication or coordination gap」である
-
-      あらゆる GitLab プラットフォームの信頼性と可用性を維持するためのバグ修正については、**
-      [インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)と
-      [FCL](/handbook/engineering/#feature-change-locks)の完了が必須です**。
 
 ## パッチリリースのプロセス {#patch-release-process}
 
-パッチリリースのプロセスは、1 つの重要な違いを除いてすべてのタイプで同じです: 計画されたパッチには
-パッチリリース準備時点で準備が整っているすべてのバグおよびセキュリティ修正が含まれますが、計画外のパッチには
-おそらく高重大度の脆弱性のセキュリティ修正のみが含まれます。
+パッチリリースのプロセスは、1 つの重要な違いを除いてすべてのタイプで同じです: 定期スケジュールのパッチには
+パッチリリース準備時点で準備が整っているすべてのバグおよびセキュリティ修正が含まれますが、アウトオブバンドパッチには
+おそらく高重大度のバグまたは critical 脆弱性の修正のみが含まれます。
 
 エンドツーエンドのパッチリリースプロセスは、以下のステージで構成されます:
 

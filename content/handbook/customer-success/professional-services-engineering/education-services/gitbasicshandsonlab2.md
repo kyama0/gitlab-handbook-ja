@@ -2,10 +2,10 @@
 title: "GitLab で学ぶ Git の基礎 - ハンズオンラボ: ローカルで Git を使う"
 description: "このハンズオンガイドでは、Git コマンドを使ってリモートリポジトリとローカルリポジトリの両方を操作する方法を順を追って説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/gitbasicshandsonlab2/
-upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
-lastmod: 2026-06-05T16:14:13+01:00
-translated_at: "2026-06-06T12:00:00Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+lastmod: 2026-06-29T08:59:00-04:00
+translated_at: "2026-07-06T08:30:42+09:00"
+translator: codex
 stale: false
 ---
 
@@ -22,7 +22,7 @@ stale: false
 
 いずれのラボでも、コピー＆ペーストするよう求められたコードについては、その内容を理解する時間を取ってください。不明なコードがあれば、インストラクターに説明を求めてください。
 
-> このラボで使用する Git コマンドの多くは、GitLab の便利な [git チートシート](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)にまとめられています。このラボでは、ローカルコンピューターからインターネットへの SSH アクセスができる必要があります。お使いのマシンに必要な権限があることを確認してください。
+> このラボで使用する Git コマンドの多くは、GitLab の便利な [git チートシート](/pdfs/press/git-cheat-sheet.pdf)にまとめられています。このラボでは、ローカルコンピューターからインターネットへの SSH アクセスができる必要があります。お使いのマシンに必要な権限があることを確認してください。
 
 ## タスク A. Git がローカルにインストールされていることを確認する {#task-a-verify-that-git-is-installed-locally}
 

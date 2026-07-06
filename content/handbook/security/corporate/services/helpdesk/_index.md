@@ -1,11 +1,11 @@
 ---
 title: CorpSec ヘルプデスク
 upstream_path: /handbook/security/corporate/services/helpdesk/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-06T07:27:36+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-30T16:57:54+00:00"
+lastmod: "2026-06-29T08:59:00-04:00"
 ---
 
 ## ヘルプが必要ですか？
@@ -64,55 +64,55 @@ lastmod: "2026-04-30T16:57:54+00:00"
 <tbody>
 <tr>
 <td>JAPAC</td>
-<td><a href="https://gitlab.com/sladgrove"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="https://about.gitlab.com/images/team/sladgrove-crop.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Steve Ladgrove"></div><div style="display: inline-block; vertical-align: top">Steve Ladgrove</a><br>
+<td><a href="https://gitlab.com/sladgrove"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/sladgrove.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Steve Ladgrove"></div><div style="display: inline-block; vertical-align: top">Steve Ladgrove</a><br>
 <small>オーストラリア東部 (UTC+10)</small></td>
 <td>22:00 to 06:00 UTC<br>3:00pm to 11:00pm PT</td>
 <td>22:00 to 06:00 UTC<br>3:00pm to 11:00pm PT</td>
 </tr>
 <tr>
 <td>JAPAC</td>
-<td><a href="https://gitlab.com/mhirata-gl"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="https://about.gitlab.com/images/team/maximilianhirata-crop.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Maximillian Hirata"></div><div style="display: inline-block; vertical-align: top">Maximillian Hirata</a><br>
+<td><a href="https://gitlab.com/mhirata-gl"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/maximilianhirata.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Maximillian Hirata"></div><div style="display: inline-block; vertical-align: top">Maximillian Hirata</a><br>
 <small>日本 (UTC+9)</small></td>
 <td>23:00 to 07:00 UTC<br>4:00pm to 12:00am PT</td>
 <td>23:00 to 07:00 UTC<br>4:00pm to 12:00am PT</td>
 </tr>
 <tr>
 <td>EMEA</td>
-<td><a href="https://gitlab.com/bferreira-ext"><div style="display: inline-block; vertical-align: top;"><img class="avatar" loading="lazy" src="https://about.gitlab.com/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Bruno Ferreira"></div><div style="display: inline-block; vertical-align: top">Bruno Ferreira</a><br><small>アイルランド (UTC+1)</small><br>
+<td><a href="https://gitlab.com/bferreira-ext"><div style="display: inline-block; vertical-align: top;"><img class="avatar" loading="lazy" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Bruno Ferreira"></div><div style="display: inline-block; vertical-align: top">Bruno Ferreira</a><br><small>アイルランド (UTC+1)</small><br>
 <td>07:00 to 11:00 UTC<br>11:00pm to 3:00am PT</td>
 <td>11:00 to 15:00 UTC<br>3:00am to 8:00am PT</td>
 </tr>
 <tr>
 <td>EMEA</td>
-<td><a href="https://gitlab.com/edunne-ext"><div style="display: inline-block; vertical-align: top;"><img class="avatar" loading="lazy" src="https://about.gitlab.com/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Eoghan Dunne"></div><div style="display: inline-block; vertical-align: top">Eoghan Dunne</a><br>
+<td><a href="https://gitlab.com/edunne-ext"><div style="display: inline-block; vertical-align: top;"><img class="avatar" loading="lazy" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Eoghan Dunne"></div><div style="display: inline-block; vertical-align: top">Eoghan Dunne</a><br>
 <small>アイルランド (UTC+1)</small></td>
 <td>11:00 to 16:00 UTC<br>3:00am to 9:00am PT</td>
 <td>08:00 to 11:00 UTC<br>12:00am to 3:00am PT</td>
 </tr>
 <tr>
 <td>AMER</td>
-<td><a href="https://gitlab.com/akrusiec"><div style="display: inline-block; vertical-align: top;"><img class="avatar" loading="lazy" src="https://about.gitlab.com/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Alex Krusiec"></div><div style="display: inline-block; vertical-align: top">Alex Krusiec</a><br>
+<td><a href="https://gitlab.com/akrusiec"><div style="display: inline-block; vertical-align: top;"><img class="avatar" loading="lazy" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Alex Krusiec"></div><div style="display: inline-block; vertical-align: top">Alex Krusiec</a><br>
 <small>AMER 太平洋／山岳 (UTC-7)</small></td>
 <td>15:00 to 19:00 UTC<br>8:00am to 12:00pm PT</td>
 <td>19:00 to 23:00 UTC<br>12:00pm to 4:00pm PT</td>
 </tr>
 <tr>
 <td>AMER</td>
-<td><a href="https://gitlab.com/mrohr-ext"><div style="display: inline-block; vertical-align: top;"><img class="avatar" loading="lazy" src="https://about.gitlab.com/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Mic Rohr"></div><div style="display: inline-block; vertical-align: top">Mic Rohr</a><br>
+<td><a href="https://gitlab.com/mrohr-ext"><div style="display: inline-block; vertical-align: top;"><img class="avatar" loading="lazy" src="/images/team/mic_rohr.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Mic Rohr"></div><div style="display: inline-block; vertical-align: top">Mic Rohr</a><br>
 <small>AMER 中部 (UTC-5)</small></td>
 <td>16:00 to 21:00 UTC<br>5:00am to 10:00am PT</td>
 <td>21:00 to 23:59 UTC<br>10:00am to 1:00pm PT</td>
 </tr>
 <tr>
 <td>AMER</td>
-<td><a href="https://gitlab.com/jwong6"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="https://about.gitlab.com/images/team/jennywong-crop.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Jenny Wong"></div><div style="display: inline-block; vertical-align: top">Jenny Wong</a><br>
+<td><a href="https://gitlab.com/jwong6"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/jennywong.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Jenny Wong"></div><div style="display: inline-block; vertical-align: top">Jenny Wong</a><br>
 <small>AMER 太平洋 (UTC-7)</small></td>
 <td>16:00 to 19:00 UTC<br>9:00am to 12:00pm PT</td>
 <td>19:00 to 23:59 UTC<br>12:00pm to 5:00pm PT</td>
 </tr>
 <tr>
 <td>AMER</td>
-<td><a href="https://gitlab.com/jeffford_"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="https://about.gitlab.com/images/team/jeffford-crop.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Jeff Ford"></div><div style="display: inline-block; vertical-align: top">Jeff Ford</a><br>
+<td><a href="https://gitlab.com/jeffford_"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/jeffford.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Jeff Ford"></div><div style="display: inline-block; vertical-align: top">Jeff Ford</a><br>
 <small>AMER 太平洋／山岳 (UTC-7)</small></td>
 <td>17:00 to 22:00 UTC<br>10:00am to 3:00pm PT</td>
 <td>22:00 to 01:00 UTC<br>3:00pm to 6:00pm PT</td>

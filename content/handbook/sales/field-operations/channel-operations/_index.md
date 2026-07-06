@@ -2,10 +2,10 @@
 title: "Ecosystem Operations"
 description: "このページは Ecosystem Operations チームのページとして、標準的なチャンネルレポートのリンクとパートナー機会の管理の詳細を提供します。"
 upstream_path: /handbook/sales/field-operations/channel-operations/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-08T13:31:45-07:00
-translated_at: "2026-06-12T21:15:15Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+lastmod: "2026-06-30T15:32:12-07:00"
+translated_at: "2026-07-05T22:36:11Z"
+translator: codex
 stale: false
 ---
 
@@ -135,6 +135,20 @@ Labra Referral
 ## 標準的なチャンネルプラクティス
 
 GitLab のチャンネルパートナープログラムに関する詳細情報は、[Channel Partner Handbook](/handbook/resellers/) を参照してください。パートナーは、GitLab の製品やサービスを取引するには、Authorized GitLab Partner であり _かつセールス認定を 1 つ取得済みである_ 必要があります。認可を得るには、パートナーは締結済みの契約を持ち、GitLab Partner Program の要件を満たす必要があります。GitLab partner program team によりケースバイケースで特別に承認された場合を除き、良好な状態にある GitLab パートナーのみが GitLab の製品とサービスを販売できます。パートナーは認可を得るために [サインアップ](https://partners.gitlab.com/) する必要があります。
+
+## エコシステムプログラム
+
+GitLab のエコシステムプログラムは、Salesforce の **Partner Engagement レコード**を通じて、Account と Opportunity レベルで追跡されます。これにより、フィールドチームとパートナーは、顧客ライフサイクル全体にわたるパートナー主導のエンゲージメントを記録、追跡、測定するための単一の場所を持てるようになり、スプレッドシートを減らし、オフラインでの調整をなくせます。
+
+新しいプログラムは、システム Issue を送信することで、毎回ゼロから作り直すことなく同じインフラストラクチャに追加できます。
+
+### CAPS: パートナーサービスによる顧客導入
+
+CAPS は、リスクがある、または導入率の低い更新アカウントを認定サービスパートナーにつなぎ、導入を加速し、チャーンリスクを減らし、パートナー主導の Deal Registration パイプラインを生み出す構造化されたアセスメントを提供します。
+
+詳細: [CAPS Program Guide](https://docs.google.com/document/d/1lLolFHXWI0-ppB_AJpJU14i3gVE1xHlI5y578ImACjs/edit)
+
+質問: [#global-ecosystem-programs-ops](https://gitlab.enterprise.slack.com/archives/CTM4T5BPF)
 
 ### ポリシーとプロセス
 
@@ -730,8 +744,6 @@ Ecosystem Operations は、`Status` = `New` のときに登録をレビューお
     - 機会が Closed Won ステータス
     - その他すべての [プログラム要件](/handbook/resellers/channel-working-with-gitlab/#how-service-attached-registrations-work) が満たされている
 
-### Clari での予測
-
 #### Closed Won
 
 Service Attached Registration は、以下のすべての基準が満たされたときに Closed Won に分類され、Clari の予測に組み込まれます:
@@ -935,6 +947,9 @@ Ecosystem Sales Manager は以下のことができます:
 
 - このセルフサービスの [スプレッドシート](https://docs.google.com/spreadsheets/d/1DfwnsWbKSUbY21KIzCh2hZH3cgJZltmjXSsCeObLT58/edit?usp=sharing) にアクセスして、自分の Partner Insights データを生成する。選択したパートナーのチャートとメトリクスを含む PDF を生成するには、スプレッドシートの最初のタブの手順に従ってください。
 - この [ステップバイステップガイド](https://docs.google.com/document/d/1XoyxxF8Ni8HpXqj17Tsoyd47zxpFpCCtnXJJ_WrO5aM/edit?usp=sharing) にアクセスして、Partner Insights PowerPoint を作成する。
+- チャットで `/Partner QBR` と入力して、データが入力された QBR テンプレートを生成する。Claude が利用可能なデータを使って事前入力します（AI 生成コンテンツにはエラーが含まれる可能性があるため、注意深くレビューしてください）。
+
+**セットアップ（初回のみ）:** [このスキルをダウンロード](https://drive.google.com/file/d/18ElvOUQh3xqbWMsyYmZZuQokbe2CmQSy/view?usp=drive_link)し、Claude → Customize から Skills フォルダーに追加してください。
 
 スプレッドシートまたは PowerPoint のステップバイステップガイドへのアクセスについてアシスタンスが必要な場合は、Slack の [#partner-program-ops](https://gitlab.slack.com/archives/CTM4T5BPF) で連絡してください。セルフサービスのスプレッドシートにないカスタマイズされたレポーティングリクエストがある場合は、[Ecosystem Operations ボードで Issue をオープンしてください](/handbook/sales/field-operations/channel-operations/#the-ecosystem-operations-issue-board)。
 

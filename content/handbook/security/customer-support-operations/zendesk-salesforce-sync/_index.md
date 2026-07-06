@@ -2,11 +2,11 @@
 title: 'Zendesk-Salesforce 同期'
 description: 'Zendesk-Salesforce 同期に関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/zendesk-salesforce-sync/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-06T07:27:36+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-26T12:05:00-05:00"
+lastmod: "2026-07-03T08:17:38-05:00"
 ---
 
 このガイドは、Salesforce（Single Source of Truth）から Zendesk へ顧客組織およびユーザーデータを毎時自動同期する Zendesk-Salesforce 同期について説明します。この同期により、正確なサポート権限、適切な SLA 適用、Zendesk における最新の顧客メタデータが保証されます。
@@ -295,7 +295,7 @@ graph LR
 - `data/global_creates.json` アーティファクトファイルからのオブジェクトリストを反復処理し、以下を行う:
   - Zendesk [Create Organization](https://developer.zendesk.com/api-reference/ticketing/organizations/organizations/#create-organization) API エンドポイントを使用して組織を作成
   - `sold_tos` 属性のユーザーを新しく作成された組織に関連付け
-    - 関連付けるユーザーがいない場合、[#support_operations Slack チャンネル](https://gitlab.enterprise.slack.com/archives/C018ZGZAMPD)に投稿し、Customer Support Operations チームに通知
+    - 関連付けるユーザーがいない場合、[#customer_support_systems Slack チャンネル](https://gitlab.enterprise.slack.com/archives/C018ZGZAMPD)に投稿し、Customer Support Operations チームに通知
 - `data/global_updates.json` アーティファクトファイルからのオブジェクトをバッチ（API 制限により最大 100）に分割し、以下を行う:
   - Zendesk [Update Many Organizations](https://developer.zendesk.com/api-reference/ticketing/organizations/organizations/#update-many-organizations) API エンドポイントを使用して更新ジョブを作成（以前判定された通りに更新するため）
 - `data/global_not_in_sync.json` アーティファクトファイルからのオブジェクトをバッチ（API 制限により最大 100）に分割し、以下を行う:

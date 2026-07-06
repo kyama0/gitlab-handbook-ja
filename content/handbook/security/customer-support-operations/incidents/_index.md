@@ -2,11 +2,11 @@
 title: 'インシデント'
 description: 'インシデントに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/incidents/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-06T07:27:36+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-26T12:05:00-05:00"
+lastmod: "2026-07-03T08:17:38-05:00"
 ---
 
 このガイドでは、Customer Support Operations がインシデント (10 分以内に解決できず、構造化された対応手順を要する問題) をどのように扱うかを説明します。
@@ -289,4 +289,4 @@ Issue にエスカレーションする旨 (およびエスカレーション先
 
 `Template` タブを複製し、すべて記入してください。何が必要かの例として、過去のドキュメントを参考にできます。
 
-すべて記入したら、[#support_operations チャンネル](https://gitlab.enterprise.slack.com/archives/C018ZGZAMPD) に Slack 投稿を行い、Customer Support Operations のリーダーシップを CC (@ メンション) するようにしてください。
+すべて記入したら、[#customer_support_systems チャンネル](https://gitlab.enterprise.slack.com/archives/C018ZGZAMPD) に Slack 投稿を行い、Customer Support Operations のリーダーシップを CC (@ メンション) するようにしてください。

@@ -1,9 +1,9 @@
 ---
 title: "GitLab コミュニケーションチャット"
 upstream_path: /handbook/communication/chat/
-upstream_sha: ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c
-lastmod: "2026-06-23T14:47:04+02:00"
-translated_at: "2026-06-24T07:28:04+09:00"
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+lastmod: "2026-07-01T11:59:31+01:00"
+translated_at: "2026-07-06T08:30:42+09:00"
 translator: codex
 stale: false
 ---
@@ -222,6 +222,7 @@ Commercial（Mid-Market と SMB）アカウントには、カスタマーとの 
 | [`#loc_melbourne`](https://app.slack.com/client/T02592416/CBE1S2HMH) |  |
 | [`#loc_mexico`](https://app.slack.com/client/T02592416/CEPQ1GBRC) | Mexico に住む人、訪問する人向け 🇲🇽  |
 | [`#loc_michigan`](https://app.slack.com/client/T02592416/CN2NUGTP0) | "Great Lakes State" に関するあらゆること |
+| [`#loc_midlands_uk`](https://gitlab.enterprise.slack.com/archives/C08RF4SJMU1) | Birmingham、Nottingham、Worcester、Stoke、Dudley。England のどこか _真ん中_ にある場所。 |
 | [`#loc-midwest-u-s`](https://app.slack.com/client/T02592416/CC0BVGJTT) | U.S. Midwest 地域の GitLab チームメンバーとつながるため |
 | [`#loc_minnesota`](https://app.slack.com/client/T02592416/C62D93RRU) |  |
 | [`#loc_montreal`](https://app.slack.com/client/T02592416/CT83NVCA3) |  |
