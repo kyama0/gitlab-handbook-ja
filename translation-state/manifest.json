@@ -5826,11 +5826,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "f808877a22022705b2fc1407081b20308d20df5c690163f7b32c956cc6e4a577",
-      "upstream_committed_at": "2026-05-04T18:00:25+01:00"
+      "upstream_sha": "05f1dda85e84923d830b0bf74ffd3f63fddbd830",
+      "translated_at": "2026-07-06T21:06:15Z",
+      "model": "codex",
+      "input_hash": "6368a1bec0cd353a84bcb51405fcc39403628ffe5e921c131c2922da9a2571f8",
+      "upstream_committed_at": "2026-07-06T17:28:28+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/infrastructure.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/agreements/infrastructure.md",
@@ -5946,11 +5946,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:12:20Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9ad011b8dea609feedadf96d58e64712e49f8dd8e85fa8bb8d5e2403c3ff447d",
-      "upstream_committed_at": "2026-06-11T10:43:33+01:00"
+      "upstream_sha": "05f1dda85e84923d830b0bf74ffd3f63fddbd830",
+      "translated_at": "2026-07-06T21:06:15Z",
+      "model": "codex",
+      "input_hash": "a930cb04f90d981e8f2c93a3c5b9bfb0fcd2327e8ca724e4ff000cb6de6988b2",
+      "upstream_committed_at": "2026-07-06T17:28:28+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md",
@@ -9402,11 +9402,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/work_item_rest_api/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/work_item_rest_api/_index.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T13:54:37Z",
+      "upstream_sha": "05f1dda85e84923d830b0bf74ffd3f63fddbd830",
+      "translated_at": "2026-07-06T21:06:15Z",
       "model": "codex",
-      "input_hash": "a59e6d7c7ed6d9d8439847f55d8d7ab890184fe724a477721b1671a6fae1f1d2",
-      "upstream_committed_at": "2026-06-17T15:08:13+02:00"
+      "input_hash": "58459d3f9e55ec741451e8cc9c70d131c6bf63f5b90fe69157597c493a955327",
+      "upstream_committed_at": "2026-07-02T15:50:17+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/work_items/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/work_items/_index.md",
@@ -21282,11 +21282,11 @@
     },
     "content/handbook/support/workflows/2fa-removal.md": {
       "path": "content/handbook/support/workflows/2fa-removal.md",
-      "upstream_sha": "0353e616a41b1d1664a95cc83c80b01f990a912f",
-      "translated_at": "2026-05-08T19:23:50Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "6e54544ee8a7796b052a90f02d0245aba807c36ae512ff53f339cac09e316168",
-      "upstream_committed_at": "2026-02-09T20:42:10+00:00"
+      "upstream_sha": "05f1dda85e84923d830b0bf74ffd3f63fddbd830",
+      "translated_at": "2026-07-06T21:06:15Z",
+      "model": "codex",
+      "input_hash": "dd01ffd89d7efeabcab366b4c63bfbda46db70cddacda73041a1f545e78a24b7",
+      "upstream_committed_at": "2026-07-06T18:13:03+00:00"
     },
     "content/handbook/support/workflows/500_errors.md": {
       "path": "content/handbook/support/workflows/500_errors.md",
@@ -21954,11 +21954,11 @@
     },
     "content/handbook/support/workflows/product_category_field.md": {
       "path": "content/handbook/support/workflows/product_category_field.md",
-      "upstream_sha": "5b8afe7d206f5c195e463506206021ee3c9a4491",
-      "translated_at": "2026-05-08T01:46:59Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "48a441b307284f79b3abda79d8c0c3a1c580ab0bf5deb518306fe08abaaf8175",
-      "upstream_committed_at": "2025-10-01T13:23:54+09:00"
+      "upstream_sha": "05f1dda85e84923d830b0bf74ffd3f63fddbd830",
+      "translated_at": "2026-07-06T21:06:15Z",
+      "model": "codex",
+      "input_hash": "d7c55f30b0e46acb3edf9aa5d98f835f07b471ba4f45fc2e835549fdca2cd3d6",
+      "upstream_committed_at": "2026-07-06T16:09:41+10:00"
     },
     "content/handbook/support/workflows/quick-reference.md": {
       "path": "content/handbook/support/workflows/quick-reference.md",
@@ -33543,6 +33543,14 @@
       "model": "codex",
       "input_hash": "f96484cb0eb9cd608ebd38eee09da52461157314e74146deffe166f7c9785303",
       "upstream_committed_at": "2026-07-01T09:36:08+02:00"
+    },
+    "content/handbook/product-development/how-we-work/ai-section-product-development-flow/index.md": {
+      "path": "content/handbook/product-development/how-we-work/ai-section-product-development-flow/index.md",
+      "upstream_sha": "05f1dda85e84923d830b0bf74ffd3f63fddbd830",
+      "translated_at": "2026-07-06T21:06:15Z",
+      "model": "codex",
+      "input_hash": "dbdcc8268c17508609bde5cc4d00cc872f1acf36e79c0ce0590b10bf6da09c12",
+      "upstream_committed_at": "2026-07-06T10:52:26-06:00"
     }
   }
 }

@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "Artifact Registry チームと Auth Platform チームのインターフェース合意書"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/agreements/auth/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: 05f1dda85e84923d830b0bf74ffd3f63fddbd830
+translated_at: "2026-07-06T21:06:15Z"
+translator: codex
 stale: false
-lastmod: "2026-05-04T18:00:25+01:00"
+lastmod: "2026-07-06T17:28:28+02:00"
 ---
 
 <!-- vale gitlab.FutureTense = NO -->
@@ -66,7 +66,7 @@ Artifact Registry はトークン発行に関与しません。Artifact Registry
 | トークン交換エンドポイント | MUST | Auth Platform | GitLab インスタンスはクライアント認証情報を受け入れ、Artifact Registry で使用可能な一時トークンを返すエンドポイントを公開しなければなりません。 |
 | サポートされる認証情報タイプ | MUST | Auth Platform | エンドポイントは PAT、OAuth トークン、CI ジョブトークン、デプロイトークン、プロジェクト/グループアクセストークンをサポートしなければなりません。 |
 | トークン期間 | MUST | Auth Platform | トークンはデフォルト期間を使用するか、上限付きのリクエスト期間を受け入れなければなりません。[クライアント認証情報管理 Work Item](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150) を参照してください。 |
-| 有料ライセンスの強制 | SHOULD | Auth Platform + Fulfillment | Artifact Registry アドオンを含む有料 GitLab サブスクリプションを持たないインスタンスに対しては、トークン交換が失敗するべきです。 |
+| 有効化の強制 | SHOULD | Auth Platform | Artifact Registry を有効化していない組織に対しては、トークン交換が失敗するべきです。アクセスは Unit Primitives やアドオンに依存しません。クレジットベースの課金モデルでは Artifact Registry アドオンは存在しません。 |
 | クロスバウンダリーサポート | MUST | Auth Platform | Artifact Registry と Rails が共存していても、リモート（セルフマネージド Rails → SaaS Artifact Registry）でも、エンドポイントが機能しなければなりません。 |
 
 ### R2 — トークン検証 {#r2--token-validation}
@@ -128,7 +128,7 @@ Auth Platform は、Artifact Registry リソースのロール割り当て（リ
 
 ### R6 — ブートストラッピング
 
-組織オーナーは、すべての Artifact Registry リソースに対してすべての権限を**持たなければなりません**。これにより、Artifact Registry アドオンが有効化され、明示的なロール割り当てが存在しない場合でも、組織オーナーがリポジトリを作成し、他のユーザーにロールを割り当てることができるようになります。
+組織オーナーは、すべての Artifact Registry リソースに対してすべての権限を**持たなければなりません**。これにより、組織で Artifact Registry が有効化され、明示的なロール割り当てが存在しない場合でも、組織オーナーがリポジトリを作成し、他のユーザーにロールを割り当てることができるようになります。
 
 | 要件 | レベル | オーナー | 詳細 |
 | --------------------------- | ------- | --------------------- | -------------------------------------------------------------- |

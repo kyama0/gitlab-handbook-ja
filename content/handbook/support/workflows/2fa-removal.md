@@ -4,11 +4,11 @@ category: GitLab.com
 subcategory: Accounts
 description: "2FA 解除リクエストを処理する方法を詳述するワークフロー"
 upstream_path: /handbook/support/workflows/2fa-removal/
-upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
-translated_at: "2026-05-08T19:23:50Z"
-translator: claude
+upstream_sha: 05f1dda85e84923d830b0bf74ffd3f63fddbd830
+translated_at: "2026-07-06T21:06:15Z"
+translator: codex
 stale: false
-lastmod: "2026-02-09T20:42:10+00:00"
+lastmod: "2026-07-06T18:13:03+00:00"
 ---
 
 ## 概要
@@ -245,6 +245,23 @@ Owner（非 Enterprise ユーザー）によって開始されたリクエスト
 注: このプロセスは [2025 年 4 月 30 日に廃止](https://gitlab.com/gitlab-com/content-sites/handbook/-/issues/462) されました。このプロセスを使用していたすべての顧客には通知済みです。
 {{< /alert >}}
 
+## アカウント管理プロジェクトのメンバーであるユーザーの 2FA 解除リクエスト
+
+Support は、アカウント管理プロジェクトのメンバーである GitLab.com ユーザーの 2FA をリセットするリクエストを受け取ることがあります（[GitLab.com ユーザーの条件](#conditions-for-gitlabcom-users) の項目 5 に記載されています）。
+
+このシナリオで 2FA リセットを進めるには、以下を確認してください:
+
+1. ユーザーは他の GitLab.com グループのメンバーまたはオーナーですか？
+   - 該当する場合、この方法では進めず、代わりに [通常の GitLab.com ユーザー向けの上記ワークフロー](#2fa-removal-within-gitlab) を参照してください。
+   - 該当しない場合は続行します。
+1. Zendesk で、そのユーザーの組織の CSM、AM、または ASE（存在するお客様の場合）を特定します。
+1. 特定した GitLab チームメンバーをチケットに CC し、内部ノートでメンションします。このノートには以下を含める必要があります:
+   - リクエストが有効であることを確認するため、お客様の組織の連絡先に連絡するよう依頼します。
+   - Support PIN を生成するよう依頼します。
+   - PIN と、リクエストが有効であることの確認の両方を、チケット上の別の内部ノートで提供する必要があります。
+   - 注: 上記に加えて、その GitLab チームメンバーに Slack で連絡してもかまいません。
+1. 上記の GitLab チームメンバーが保証したら、[Step 2a](#step-2a-user-successfully-proves-account-ownership) に従ってユーザーの 2FA をリセットします。
+
 ## フローチャート
 
 以下は、上記の [GitLab 内での 2FA 解除](#2fa-removal-within-gitlab) セクションで説明されている手順を可視化するのに役立つフローチャートです。
@@ -341,7 +358,7 @@ Email One-Time Passwords (Email OTP) 開発ガイドの
    - 単一ユーザーのパスワード認証付きの Git over HTTPs 操作の表示 - [リンク](https://log.gprd.gitlab.net/app/r/s/XPMwu)
       - `json.username` の値を確認したいユーザー名に置き換えます。
    - 単一ユーザーのすべてのパスワード認証イベントの表示 - [リンク](https://log.gprd.gitlab.net/app/r/s/ZKEYX)
-      - `json.username` の値を確認したいユーザー名に置き換えます。  
+      - `json.username` の値を確認したいユーザー名に置き換えます。
 1. 必要に応じて検索ウィンドウのルックバック期間を延ばします。
 
 <https://docs.gitlab.com/development/email_one_time_passwords/#password-api-authentication-failures> も参照してください。
