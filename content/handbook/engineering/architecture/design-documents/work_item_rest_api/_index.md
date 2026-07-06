@@ -3,17 +3,17 @@ title: "ワークアイテム REST API"
 description: "GitLab REST 規約に沿ったリソース指向インターフェースである Work Item REST API の設計ドキュメント。"
 status: ongoing
 creation-date: "2026-02-05"
-authors: ["@nicolasdular"]
+authors: ["@nicolasdular", "@mdangelo6", "@msaleiko"]
 coaches: ["ntepluhina", "@engwan"]
 dris: []
 owning-stage: "~devops::plan"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/work_item_rest_api/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T13:54:37Z"
-translator: claude
+upstream_sha: 05f1dda85e84923d830b0bf74ffd3f63fddbd830
+translated_at: "2026-07-06T21:06:15Z"
+translator: codex
 stale: false
-lastmod: "2026-06-17T15:08:13+02:00"
+lastmod: "2026-07-02T15:50:17+02:00"
 ---
 
 

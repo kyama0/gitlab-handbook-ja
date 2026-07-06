@@ -4,10 +4,10 @@ owning-stage: "~devops::package"
 description: "Artifact Registry の認証設計"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-11T10:43:33+01:00
-translated_at: "2026-06-12T21:12:20Z"
-translator: claude
+upstream_sha: 05f1dda85e84923d830b0bf74ffd3f63fddbd830
+lastmod: "2026-07-06T17:28:28+02:00"
+translated_at: "2026-07-06T21:06:15Z"
+translator: codex
 stale: false
 ---
 
@@ -76,10 +76,10 @@ sequenceDiagram
 
 Rails は、クライアントの認証情報を受け付け、Artifact Registry に対して使用可能な短命のトークンを返す、専用のトークン交換 API エンドポイントを公開します。
 
-1. **サポートされる認証情報の種類。** エンドポイントは、それぞれが `User` に解決される標準的な GitLab API の認証情報で呼び出し元を認証します。パーソナルアクセストークン（レガシーまたは粒度の細かいもの）、OAuth トークン、CI ジョブトークン、プロジェクト/グループアクセストークンです。**デプロイトークンは最初のイテレーションではサポートされません**。デプロイトークンは `User` ではなく、最初のイテレーションがトークンを発行する唯一のプリンシパル型ではありません。型付けされた `sub` クレーム（[トークンペイロード](#token-payload-r3) を参照）は、後から他のプリンシパル型を受け入れられるように設計されているため、[R1](../agreements/auth.md#r1--token-exchange-service) のターゲットとして挙げられているデプロイトークンは、フォローアップとして追跡されます。
+1. **サポートされる認証情報の種類。** エンドポイントは、それぞれが `User` に解決される標準的な GitLab API の認証情報で呼び出し元を認証します。パーソナルアクセストークン（レガシーまたは粒度の細かいもの）、OAuth トークン、CI ジョブトークン、プロジェクト/グループアクセストークンです。**デプロイトークンは最初のイテレーションではサポートされません**。デプロイトークンは `User` ではなく、最初のイテレーションでトークンを発行する唯一のプリンシパル型は `User` です。型付けされた `sub` クレーム（[トークンペイロード](#token-payload-r3) を参照）は、後から他のプリンシパル型を受け入れられるように設計されているため、[R1](../agreements/auth.md#r1--token-exchange-service) のターゲットとして挙げられているデプロイトークンは、フォローアップとして追跡されます。
 1. **クライアント側の交換。** トークン交換はクライアント側で行われます。クライアントは自身の GitLab インスタンスからトークンを取得し、それを Artifact Registry に提示します。Artifact Registry が交換を実行することは決してありません。エンドポイントは `curl`、`glab` CLI、または CI ジョブによって自動的に駆動できます。トークンは短命であるため、静的な認証情報を期待するネイティブなパッケージツール（例: Maven の `settings.xml` や npm の `.npmrc`）は、それを取得・リフレッシュするためのヘルパーツールを必要とします。Docker、Maven、npm にまたがるクライアントツールの設計は [client credential management work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150) で追跡されています。
 1. **トークンの有効期間。** トークンはデフォルトの有効期間が 5 分、最大が 12 時間です。クライアントはより短い有効期間を要求できます。クライアントが要求可能な TTL には AppSec のサインオフが必要です（[token-exchange TTL decision](https://gitlab.com/gitlab-org/gitlab/-/work_items/601469)）。この境界は、Maven/Gradle のビルドが処理の途中で期限切れにならない限りにおいて、[client credential management work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150) に文書化された委任認証レジストリの業界の前例に従います。
-1. **エンタイトルメントの強制。** トークン交換は、Artifact Registry アドオンのエンタイトルメントを持たない呼び出し元に対しては失敗すべきです（R1、SHOULD）。これは可用性のゲートにすぎず、リポジトリごとの認可は Artifact Registry に留まります。エンタイトルメントは、`:access_artifact_registry_service` の ability を介して Cloud Connector を通じて解決されます。多層防御として、Artifact Registry は自身の側でもエンタイトルメントと消費クォータを再チェックします。エンタイトルメントは、権限を評価するのではなくトークンの *発行* をゲートするため、ADR-021 ではなくここに記録されます。
+1. **有効化の強制。** トークン交換は、Artifact Registry を有効化していない組織に対しては失敗すべきです（R1、SHOULD）。これは可用性のゲートにすぎず、リポジトリごとの認可は Artifact Registry に留まります。このチェックは、組織レベルの有効化設定を所有する Rails 側で、トークン発行時に実行されます。アクセスは Unit Primitives やアドオンに依存しません。以前の版では、アドオン購入を根拠とする `:access_artifact_registry_service` ability によって発行をゲートしていましたが、クレジットベースの課金モデルでは Artifact Registry アドオンが存在しないため、[gitlab!243285](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/243285) で削除されました。Artifact Registry 側では、namespace レベルでアクセスを強制します。トークンの `gitlab_organization_id` クレームは、namespace の owner anchor（[ADR-001](001_organizations_as_anchor_point.md)）の `entity_id` と一致しなければなりません。これは組織の認識を必要としない不透明な比較であり、認可はデフォルトで閉じられています（ADR-021）。有効化は、権限を評価するのではなくトークンの *発行* をゲートするため、[ADR-021](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/76d98101c0f0a379cc121196052d7d2dd2c18e60/content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/021_authorization.md) ではなくここに記録されます。
 
 ## トークン検証 (R2) {#token-validation-r2}
 
