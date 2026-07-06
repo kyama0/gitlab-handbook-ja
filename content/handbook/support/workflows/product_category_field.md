@@ -1,6 +1,6 @@
 ---
 title: Product Category フィールド
-description: "Product Category フィールドと Glean agent を使ってサポートチケットを分類する方法"
+description: "Product Category フィールドと ZenDuo プロンプトを使ってサポートチケットを分類する方法"
 category: Closing tickets
 upstream_path: /handbook/support/workflows/product_category_field/
 upstream_sha: 05f1dda85e84923d830b0bf74ffd3f63fddbd830
