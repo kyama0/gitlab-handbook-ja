@@ -85,7 +85,7 @@ PM、デザイナー、エンジニアは最初に成果について認識を合
 | **仮説テスト:** 私たちの仮説は成り立つか？ | アイデアが証明されている、または反証されている。 | Trio |
 | **技術的実現可能性:** 妥当な作業スコープ内で構築できるか？ | Engineering が概算の工数見積もりとともに、実現可能性を確認または否定している。 | Engineering |
 
-プロトタイプ検証で「yes」となっても、そのコードが本番 ready であることを意味しません。コンセプトが検証された場合、チームは広くロールアウトする前に、それを実際の機能として再構築します。
+プロトタイプ検証で「yes」となっても、そのコードが本番対応であることを意味しません。コンセプトが検証された場合、チームは広くロールアウトする前に、それを実際の機能として再構築します。
 
 より大きなプロトタイプ（数日を超える作業量）は、テストが命名された時点で trio と調整されます。これにより、コミット済みのマイルストーンキャパシティを静かに消費しないようにします。
 
@@ -114,11 +114,11 @@ PM、デザイナー、エンジニアは最初に成果について認識を合
 
 ## 組織構造を GitLab ラベルへ変換する {#translating-org-structure-to-gitlab-labels}
 
-AI section の組織構造は[こちら](/handbook/engineering/ai/#organizational-structure)に文書化されています。このセクションでは、その構造の各レベルに対応するラベルについて説明します。これにより、Issue と MR が適切なチームの view に届きます。
+AI section の組織構造は[こちら](/handbook/engineering/ai/#organizational-structure)に文書化されています。このセクションでは、その構造の各レベルに対応するラベルについて説明します。これにより、Issue と MR が適切なチームのビューに届きます。
 
 | 組織レベル | ラベル規則 | 例 |
 |---|---|---|
 | Section | `~section::ai` | `~section::ai` |
-| Stage | `~devops::<slug>` | `~devops::agent foundations` |
-| Group | `~group::<slug>` | `~group::agent execution` |
-| Functional team | `~Category:<name>` | `~Category:Agent Tools` |
+| Stage | `~devops::` | `~devops::agent foundations` |
+| Group | `~group::` | `~group::agent execution` |
+| Functional team | `~Category:` | `~Category:Agent Tools` |
