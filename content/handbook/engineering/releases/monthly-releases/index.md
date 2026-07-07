@@ -1,11 +1,11 @@
 ---
 title: "マンスリーリリース"
 upstream_path: /handbook/engineering/releases/monthly-releases/
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
-translator: "claude"
+upstream_sha: ce056dce525567fbc30356982fd6468948838617
+translated_at: "2026-07-08T06:20:16+09:00"
+translator: codex
 stale: false
-lastmod: "2026-06-02T14:47:42-06:00"
+lastmod: "2026-07-07T16:51:00+02:00"
 ---
 
 ## マンスリーリリースポリシー
@@ -51,7 +51,7 @@ lastmod: "2026-06-02T14:47:42-06:00"
 1. **最初のステップ** - マンスリーリリースのセットアップを行う初期ステップ。リリーススケジュールとデプロイケイデンスの設定を含みます。
 1. **GitLab.com へのデプロイ** - マイルストーンの開始からリリース日の 1 週間前まで、GitLab.com は 1 日に複数回のデプロイを受けます。アプリケーションの変更がマンスリーリリースに含まれるためには、GitLab.com に正常にデプロイされる必要があります。
 1. **リリース候補** - テスト用 [リリース候補 (RC)](#what-is-a-release-candidate-and-when-are-they-created) が、対象とする [semver](https://semver.org) バージョンのステーブルブランチとともに作成されます。リリース候補パッケージがビルド、テストされ、[pre 環境](/handbook/engineering/infrastructure-platforms/environments/#pre) にデプロイされます。成功した結果は、このパッケージが最終バージョンとして使用できることを示します。この時点で [リリースマネージャー](/handbook/engineering/releases/release-managers/) がリリースに含まれる最終コミットをアナウンスします。
-1. **タグ** - リリースマネージャーがリリース候補に基づいて最終バージョンにタグを付けます。リリースがビルドされ、[リリース環境](/handbook/engineering/infrastructure-platforms/environments/#release) にデプロイされます。
+1. **タグ** - リリースマネージャーがリリース候補に基づいて最終バージョンにタグを付けます。
 1. **リリース** - リリース日に、リリースパッケージが公開されます。
 
 ### リリース手順
@@ -116,14 +116,14 @@ lastmod: "2026-06-02T14:47:42-06:00"
 
 リリース候補 (RC) に含まれたマージリクエストは、マンスリーリリースの一部になります。リリース候補の詳細については [「リリース候補とは何ですか？ いつ作成されますか？」](#what-is-a-release-candidate-and-when-are-they-created) を参照してください。マージリクエストは、RC への包含を示すために `released::candidate` ラベルを受け取ります。
 
-マージリクエストが `13.6.0` や `13.5.2` などの最終リリースに含まれ、[`release.gitlab.net`](/handbook/engineering/infrastructure-platforms/environments/#release) にデプロイされると、`released::candidate` ラベルを置き換える `released::published` ラベルを受け取ります。
+マージリクエストが `13.6.0` や `13.5.2` などの最終リリースに含まれると、`released::candidate` ラベルを置き換える `released::published` ラベルを受け取ります。
 
 ### マージリクエストウィジェット {#merge-request-widget}
 
 マージリクエストウィジェットは、すべてのマージリクエストの環境とデプロイ時間を表示します。
 これにより、マージリクエストがリリースプロセスのどこにあるかを理解するための情報が提供されます。
 
-* `release` はセルフマネージドユーザーに公開される最終バージョン用です。MR が [`release.gitlab.net`](/handbook/engineering/infrastructure-platforms/environments/#release) インスタンスにデプロイされると、次のマンスリーリリースに含まれることを示すために `released::published` ラベルが MR に適用されます。
+* `release` はセルフマネージドユーザーに公開される最終バージョン用です。MR が最終リリースに含まれると、次のマンスリーリリースに含まれることを示すために `released::published` ラベルが MR に適用されます。
 * `pre` はリリース候補、およびセルフマネージドユーザー向け最終リリースの準備として使用されるバージョン用です。MR がリリース候補に含まれると、次のマンスリーリリースに含まれることを示すために `released::candidate` ラベルが MR に適用されます。
 
 マージリクエストウィジェットは、デプロイプロセスのどこにあるかを参照するためにも使用できます。

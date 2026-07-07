@@ -1,5 +1,5 @@
 ---
-title: GitLab Knowledge Graph
+title: GitLab Orbit
 status: ongoing
 creation-date: "2025-10-12"
 authors: ["@michaelangeloio", "@michaelusa", "@jgdoyon1", "@bohdanpk"]
@@ -7,21 +7,19 @@ coaches: ["@ahegyi", "@shekharpatnaik", "@andrewn", "@dgruzd"]
 dris: ["@michaelangeloio"]
 owning-stage: "~devops::analytics"
 participating-stages: ["~devops::secure", "~devops::platforms", "~devops::ai-powered"]
-upstream_path: /handbook/engineering/architecture/design-documents/gitlab_knowledge_graph/
-upstream_sha: 9e852ac812142230dfe1e1db31be2862cd857cfd
-translated_at: "2026-04-27T10:36:33Z"
-translator: claude
+upstream_path: /handbook/engineering/architecture/design-documents/orbit/
+upstream_sha: ce056dce525567fbc30356982fd6468948838617
+translated_at: "2026-07-08T06:20:16+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-18T15:43:02-05:00"
+lastmod: "2026-07-07T15:33:26-04:00"
 ---
-
 
 {{< engineering/design-document-header >}}
 
-
 ## 概要
 
-GitLab Knowledge Graph（Orbit）は、GitLab インスタンスのデータ（SDLC メタデータおよびコード構造）からプロパティグラフを構築し、ClickHouse SQL にコンパイルされる JSON ベースの Cypher 風 DSL を通じて公開する Rust サービスです。AI システム（MCP 経由）および人間のユーザー向けの統一コンテキスト API を提供します。
+GitLab Orbit（旧 GitLab Knowledge Graph）は、GitLab インスタンスのデータ（SDLC メタデータおよびコード構造）からプロパティグラフを構築し、ClickHouse SQL にコンパイルされる JSON ベースの Cypher 風 DSL を通じて公開する Rust サービスです。AI システム（MCP 経由）および人間のユーザー向けの統一コンテキスト API を提供します。
 
 このサービスは 2 種類のデータをプロパティグラフ形式でインデックスします:
 
@@ -35,7 +33,7 @@ flowchart LR
     GitLab[GitLab Core] -- CDC replication --> DIP[Data Insights Platform]
     GKG -- Git RPC --> GitLab
     DIP -- datalake --> CH[(ClickHouse)]
-    CH <-- graph tables --> GKG[Knowledge Graph · Orbit]
+    CH <-- graph tables --> GKG[GitLab Orbit]
     GitLab -. gRPC / AuthZ .-> GKG
 
     style GitLab fill:#333,color:#fff,stroke:#333
@@ -46,7 +44,7 @@ flowchart LR
 
 ## 設計ドキュメント
 
-完全な設計ドキュメントは [knowledge-graph リポジトリ](https://gitlab.com/gitlab-org/orbit/knowledge-graph/-/tree/main/docs/design-documents) のコードと並べて配置されています:
+完全な設計ドキュメントは現在、[knowledge-graph リポジトリ](https://gitlab.com/gitlab-org/orbit/knowledge-graph/-/tree/main/docs/design-documents) のコードと並べて配置されています:
 
 - [概要とアーキテクチャ](https://gitlab.com/gitlab-org/orbit/knowledge-graph/-/blob/main/docs/design-documents/README.md)
 - [インデックス作成](https://gitlab.com/gitlab-org/orbit/knowledge-graph/-/tree/main/docs/design-documents/indexing)（SDLC およびコード）

@@ -2,11 +2,11 @@
 title: "ブログコントリビューター向け Git ガイド"
 description: "Git、ターミナル、www-gitlab-com リポジトリを使用するためのガイド"
 upstream_path: /handbook/marketing/blog/git-guide/
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-30T07:00:13Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-06T07:50:45+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-06-29T08:59:00-04:00"
 ---
 
 ## 一般的なヒント
@@ -101,4 +101,4 @@ Git で問題がある場合は、以下の Slack チャンネルで連絡して
 Git のための GitLab の既存リソースをいくつか紹介します。
 
 - [デベロッパーチートシート、エンジニアリング ハンドブック](/handbook/engineering/devops/create/remote-development/developer-cheatsheet/)
-- [プレス向け Git チートシート](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)
+- [プレス向け Git チートシート](/pdfs/press/git-cheat-sheet.pdf)

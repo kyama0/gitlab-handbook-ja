@@ -5,11 +5,12 @@ tags:
   - security_policy
   - security_policy_caplscsi
 upstream_path: "/handbook/engineering/infrastructure-platforms/production/architecture/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-15T00:00:00Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-06T07:58:23+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-23T12:25:37-06:00"
+lastmod: 2026-06-29T08:59:00-04:00
+
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -137,7 +138,7 @@ GitLab.com はキャッシュ、レート制限、Sidekiq キューイングな�
 
 #### ネットワークアーキテクチャ
 
-<img src="https://about.gitlab.com/images/handbook/engineering/infrastructure/production-architecture/network-arch.png" alt="">
+<img src="/images/handbook/engineering/infrastructure/production-architecture/network-arch.png" alt="">
 
 [ソース](https://drive.google.com/file/d/19-IMmcJHVUz_bWOXU7_1NoYOdQJEZ3lM/view?usp=sharing)、GitLab 社内使用のみ
 

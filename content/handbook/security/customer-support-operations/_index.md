@@ -1,12 +1,12 @@
 ---
-title: カスタマーサポートオペレーション
-description: GitLab カスタマーサポートオペレーション
+title: "カスタマーサポートオペレーション"
+description: "GitLab カスタマーサポートオペレーション"
 upstream_path: /handbook/security/customer-support-operations/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T13:23:21Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-06T07:07:53+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-15T10:20:42-05:00
+lastmod: "2026-07-03T08:17:38-05:00"
 ---
 
 ## 目的
@@ -45,7 +45,7 @@ lastmod: 2026-06-15T10:20:42-05:00
 
 💬 **その他?**
 
-Slack の [#support_operations](https://gitlab.enterprise.slack.com/archives/C018ZGZAMPD) で直接ご連絡ください。いつでも喜んでお話しします！
+Slack の [#customer_support_systems](https://gitlab.enterprise.slack.com/archives/C018ZGZAMPD) で直接ご連絡ください。いつでも喜んでお話しします！
 
 ## Issue フローチャート
 

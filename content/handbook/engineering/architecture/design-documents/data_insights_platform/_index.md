@@ -4,16 +4,16 @@ status: ongoing
 creation-date: "2025-04-10"
 authors: [ "@ankitbhatnagar" ]
 coach: [ "@ahegyi" ]
-approvers: [ "@dennis", "@nicholasklick", "@lfarina8" ]
-owning-stage: "~group::platform insights"
+approvers: [ "@ghosh-abhinaba" ]
+owning-stage: "~section::analytics"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/data_insights_platform/
-upstream_sha: 0ee1352c26e468fa8032143d735391a793de7086
-translated_at: "2026-04-27T10:00:00Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-06T08:13:20+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-10T11:40:11+13:00"
+lastmod: "2026-07-04T07:40:44+00:00"
 ---
 
 
@@ -165,7 +165,7 @@ lastmod: "2026-03-10T11:40:11+13:00"
 
 ### 共通標準のサポート
 
-- [統合イベントインストルメンテーションレイヤー](https://gitlab.com/groups/gitlab-org/architecture/gitlab-data-analytics/-/epics/13)経由の構造化/トラッキングイベント用の [Snowplow](https://docs.snowplow.io/docs/fundamentals/events/)。
+- [Snowplow](https://docs.snowplow.io/docs/fundamentals/events/) は、[統合イベントインストルメンテーションレイヤー](https://gitlab.com/groups/gitlab-org/architecture/gitlab-data-analytics/-/epics/13)経由の構造化/トラッキングイベント用です。
 - カスタム構造化イベント用の [CloudEvents](https://cloudevents.io/)。
 
 _今後は、[__サービス Ping__](https://docs.gitlab.com/development/internal_analytics/service_ping/)などの現在使用されている他のフォーマットを取り込むか、上記のサポートされている共通標準のいずれかで再モデリングできるようにする必要があります。_
