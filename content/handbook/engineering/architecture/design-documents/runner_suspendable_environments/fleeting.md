@@ -16,7 +16,7 @@ stale: false
 
 ## アーキテクチャ
 
-Suspend/Resume は opt-in capability であり、bottom-up に伝播します。cloud plugin が capabilities で support を宣言し、fleeting がそれを taskscaler に公開し、taskscaler が同じ情報を runner に公開します。chain のいずれかの layer が suspension を support しておらず、job がそれを要求した場合、runner は job を失敗させます。
+Suspend/Resume はオプトイン機能であり、下位から上位へ伝播します。cloud plugin が capabilities でサポートを宣言し、fleeting がそれを taskscaler に公開し、taskscaler が同じ情報を runner に公開します。連鎖内のいずれかのレイヤーがサスペンドをサポートしておらず、job がそれを要求した場合、runner は job を失敗させます。
 
 ### サスペンドフロー
 

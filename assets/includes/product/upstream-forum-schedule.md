@@ -1,7 +1,7 @@
 <!-- markdownlint-disable-next-line MD041 -->
-#### Upcoming Upstream Forums
+#### 今後の Upstream Forum
 
-| Date       | Host                                    | Speaker 1                              | Speaker 2                            | Speaker 3                          | Speaker 4\* |
+| 日付       | ホスト                                  | 発表者 1                               | 発表者 2                             | 発表者 3                           | 発表者 4\* |
 |------------|-----------------------------------------|----------------------------------------|--------------------------------------|------------------------------------|------------|
 | 2026-07-08 | Marissa Henri (@marissa.henri)          | Emily Bauman (@emilybauman)            | Michael Moyers (@michaelmoyers)      |                                    |            |
 | 2026-08-05 | Emily Sybrant (@esybrant)              | Andrew Cummins (@acummins9)            | Ilonah Pelaez (@ipelaez1)            |                                    |            |
@@ -15,6 +15,6 @@
 | 2026-12-02 | Ashley Smith (@ashleytbs7)            | Diego Adams (@diegocapetown)           | Jesse Hoek (@jhoek)                  | Jason Hung (@jason_istakinganap)   |            |
 | 2026-12-16 | Valerie Karnes (@vkarnes)              | Veethika Mishra (@veethika)            | Sayo Bittencourt (@sayobittencourt)  |                                    |            |
 
-_*A fourth speaker spot is available to allow for flexibility in scheduling, but ideally most Upstream Forums should only have three speakers._
+_*スケジュール調整の柔軟性を確保するため 4 人目の発表枠を用意していますが、理想的にはほとんどの Upstream Forum は発表者 3 人のみで行います。_
 
-Tip for Product Design Managers: When adding new rows, include GitLab handles in parentheses after each name — e.g., `Name (@handle)`. This allows the [DesignOps Upstream Forum automation](https://gitlab.com/gitlab-com/designops/-/tree/main/automations/upstream-forum) to create tracking issues with correct @-mentions automatically.
+Product Design Managers へのヒント: 新しい行を追加するときは、各名前の後ろに GitLab handle を括弧で含めてください（例: `Name (@handle)`）。これにより、[DesignOps Upstream Forum automation](https://gitlab.com/gitlab-com/designops/-/tree/main/automations/upstream-forum) が正しい @-mention 付きの tracking Issue を自動作成できます。
