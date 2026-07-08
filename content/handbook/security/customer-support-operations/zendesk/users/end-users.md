@@ -2,11 +2,11 @@
 title: 'エンドユーザー'
 description: 'Zendesk のエンドユーザーに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/zendesk/users/end-users/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-06T07:27:36+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-26T12:05:00-05:00"
+lastmod: "2026-07-03T08:17:38-05:00"
 ---
 
 このガイドでは、GitLab における Zendesk のエンドユーザーの作成、編集、管理方法について説明します。また、Zendesk のエンドユーザー設定についても扱います。管理者は[管理者タスク](#administrator-tasks)セクションを確認してください。
@@ -43,7 +43,7 @@ lastmod: "2026-05-26T12:05:00-05:00"
 
 #### 管理者ではない者がエンドユーザーの BAN を依頼する
 
-エンドユーザーを BAN する必要がある場合は、#support_operations Slack チャンネルにユーザーを BAN する必要がある旨を投稿してください。カスタマーサポートオペレーションチームのメンバーから（ダイレクトメッセージで）連絡が入り、対応について協力します。
+エンドユーザーを BAN する必要がある場合は、#customer_support_systems Slack チャンネルにユーザーを BAN する必要がある旨を投稿してください。カスタマーサポートオペレーションチームのメンバーから（ダイレクトメッセージで）連絡が入り、対応について協力します。
 
 ### 現在のシステムエンドユーザー設定 {#current-system-end-user-settings}
 
@@ -262,7 +262,7 @@ Zendesk でセカンダリメールアドレスをプライマリメールに設
 
 {{% /alert %}}
 
-エンドユーザーを BAN する必要がある場合（さまざまな理由がありますが、特に不正行為によるもの）、誰かが #support_operations チャンネルにその件について投稿します。
+エンドユーザーを BAN する必要がある場合（さまざまな理由がありますが、特に不正行為によるもの）、誰かが #customer_support_systems チャンネルにその件について投稿します。
 
 その投稿に対して反応し、詳細を確認するためにダイレクトメッセージを送ります。
 
@@ -292,7 +292,7 @@ Zendesk でセカンダリメールアドレスをプライマリメールに設
    >
    > This was due to REASON.
    >
-   > If more details are needed, please reach out to the Customer Support Operations team via the #support_operations Slack channel.
+   > If more details are needed, please reach out to the Customer Support Operations team via the #customer_support_systems Slack channel.
    - 置き換え:
      - `YYYY-MM-DD` を現在の日付（ISO フォーマット）に
      - `TEAM_NAME` を BAN を要求しているチームの名前（例: Support、Security、Legal など）に

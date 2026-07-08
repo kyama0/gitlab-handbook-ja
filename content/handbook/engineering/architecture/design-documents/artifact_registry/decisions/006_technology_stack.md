@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "システム要件とアーキテクチャ決定に基づく Artifact Registry サテライトサービスの技術選定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/006_technology_stack/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: ce056dce525567fbc30356982fd6468948838617
+translated_at: "2026-07-08T06:20:16+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-29T14:26:29+01:00"
+lastmod: "2026-07-07T15:33:26-04:00"
 ---
 
 ## 背景
@@ -224,7 +224,7 @@ MVP では、サービス間通信（主に Rails モノリスとの）は直接
 
 サテライトサービスを Rust で構築し、そのパフォーマンス特性と型システム保証を活用する。
 
-Rust は GitLab 内で勢いを増しています: [Knowledge Graph](https://gitlab.com/gitlab-org/rust/knowledge-graph)、GLQL、GLFM gem は Rust で構築されています。Rust 用の LabKit が開発中で、Auth Architecture チームはサービスに Rust を選択しました。
+Rust は GitLab 内で勢いを増しています: [Knowledge Graph](https://gitlab.com/gitlab-org/orbit/knowledge-graph)、GLQL、GLFM gem は Rust で構築されています。Rust 用の LabKit が開発中で、Auth Architecture チームはサービスに Rust を選択しました。
 
 **長所**:
 

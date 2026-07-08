@@ -2,11 +2,12 @@
 title: Growth ステージ
 description: "Growth ステージは、プロダクトの機能強化と実験を行う開発チームで構成されています"
 upstream_path: /handbook/engineering/development/growth/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T12:49:33Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-06T07:58:23+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-15T18:08:34+05:30
+lastmod: 2026-07-03T00:57:12+00:00
+
 ---
 
 ## ビジョン
@@ -118,4 +119,4 @@ Growth チームは GitLab [実験](/handbook/engineering/development/growth/exp
 
 ## CustomersDot トライアルコラボレーション
 
-CustomersDot トライアル作業における Fulfillment/Provision チームとのコラボレーションの詳細については、[CustomersDot トライアルコラボレーションフレームワーク](customersdot-collaboration.md) を参照してください。このフレームワークは、Growth が独立して貢献する場合と Provision チームを関与させる場合を定義し、優先度の競合に対するエスカレーションパスも定めています。
+トライアルのオーナーシップと、トライアル作業における Fulfillment/Monetization チームとのコラボレーションの詳細については、[トライアルのオーナーシップとコラボレーションフレームワーク](trials-ownership.md)を参照してください。このフレームワークは、概念的なオーナーシップモデル（Growth はトライアルの入口を所有し、Fulfillment/Monetization はより深いトライアルコードベースとすべての CustomersDot サポートを所有する）に加えて、意思決定フレームワークと優先度の競合に対するエスカレーションパスを定義しています。

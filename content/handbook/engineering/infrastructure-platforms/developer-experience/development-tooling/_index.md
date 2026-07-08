@@ -2,11 +2,12 @@
 title: "Development Tooling チーム"
 description: "Development Tooling チームは、GitLab の R&D とコントリビューターが GitLab に効率的かつ確実にコントリビュートできるようにします"
 upstream_path: /handbook/engineering/infrastructure-platforms/developer-experience/development-tooling/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-06T07:58:23+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-05T12:06:56-05:00"
+lastmod: 2026-07-01T17:57:50+02:00
+
 ---
 
 ## ミッション
@@ -26,6 +27,8 @@ flowchart LR
     DT[Development Tooling] --> DevEnv[Development Environments]
     DevEnv --> GDK[GitLab Development Kit]
     click GDK "https://gitlab.com/gitlab-org/gitlab-development-kit"
+    DevEnv --> Caproni[Caproni]
+    click Caproni "https://gitlab.com/gitlab-org/caproni"
 
     DT --> ObservabilityTooling[Observability Tooling]
     ObservabilityTooling --> labkit[LabKit]

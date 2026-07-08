@@ -2,11 +2,11 @@
 title: "Goldcast"
 description: "Goldcast は B2B マーケター向けのデジタルイベントプラットフォームで、イベント、ウェビナー、動画キャンペーンの作成・配信を支援します。AI を活用して魅力的なコンテンツを作成し、動画を複数のフォーマットに転用できます。"
 upstream_path: /handbook/marketing/marketing-operations/goldcast/
-upstream_sha: 0b5a5f39bf48045cf2d6f198c5637420369674de
-translated_at: "2026-05-16T00:00:00Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-06T07:50:45+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-28T12:45:18-06:00"
+lastmod: "2026-06-30T16:30:33-06:00"
 ---
 
 
@@ -301,6 +301,18 @@ Goldcast の「フォームライブラリ」内のフォームはすべて、UT
 
 これらはすべて [Templates - Goldcast Webcasts フォルダ](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/classic/ME21842A1/) にあります。Goldcast テンプレートが Marketo プログラムと同期されている限り、Goldcast はテンプレートに基づいて Marketo プログラムを自動クローンできます。作成された Marketo プログラムは Goldcast イベントと同じ名前を持ち、末尾にタイムスタンプが付きます。新規プログラムは元の Marketo プログラムと同じフォルダに表示されます。
 
+ワークショップの場合、Goldcast のテンプレート選択は対応する Marketo ワークショップテンプレートに合わせる必要があります。Goldcast が正しい Marketo プログラムを自動作成できるよう、イベントトピックに一致するワークショップテンプレートを選択してください。ワークショップが 7 つの専用ワークショップテンプレートカテゴリのいずれにも該当しない場合は、[デフォルトのワークショップテンプレート](https://admin.goldcast.io/templates/d1b01312-30b4-4cc9-a212-8faa2c1c1753)を使用してください。
+
+Goldcast テンプレート（以下のすべてのワークショップテンプレートは、Marketo プログラムの自動作成用に設定されています）:
+
+1. [CI Workshop template](https://admin.goldcast.io/templates/fa5b849a-18e1-4dc9-9642-84b36edb3bec)
+2. [DAP Workshop template](https://admin.goldcast.io/templates/066a3172-2911-49f4-88cb-bab98b061edd)
+3. [GitHub to GitLab Workshop template](https://admin.goldcast.io/templates/1cbc7cf6-f39a-4dc5-b15d-073b9b065281)
+4. [GitLab Basics Workshop template](https://admin.goldcast.io/templates/4b9c8abe-bea0-44b3-9180-79d0feea4aff)
+5. [Platform Engineering Workshop template](https://admin.goldcast.io/templates/c66e6b04-b5f4-4e24-aac1-61aa56d6d5d2)
+6. [Project Management Workshop template](https://admin.goldcast.io/templates/2f47e16e-4f67-4f90-a007-1facd323799b)
+7. [Security Workshop template](https://admin.goldcast.io/templates/acf3d40c-a4aa-4840-8629-bc90f4b88c25)
+
 正しく動作している場合、Marketo プログラムのトークンはプログラム作成時（Goldcast のプログラムクローン機能経由）または Goldcast イベントに手動で接続したときに自動で値が入力されます。このプロセスに関係するトークンは以下のとおりです:
 
 - {{my.goldcast_eventEndDate}}
@@ -389,6 +401,8 @@ Marketo ランディングページトークン
 
 注意: すべてのローカライズされたテンプレートは Marketo プログラムを自動作成します
 
+注意: ワークショップの場合は、イベントタイプに一致するワークショップテンプレートを選択してください。より具体的なワークショップテンプレートが利用できる場合、ワークショップは汎用のデフォルトワークショップテンプレートに依存しなくなりました。
+
 #### ステップ 2: 基本情報
 
 以下のフィールドに入力してください（ほとんどが Marketo プログラムトークンに自動入力されます）:
@@ -474,8 +488,8 @@ _注意: 名前変更は同期や Goldcast イベントには影響しません_
 
 | シナリオ | 推奨される方法 | テンプレートの選択 |
 | ------ | ------ | ------ |
-|   シンプルなワークフロー、自動作成を望む    |   Goldcast First    | GitLab Primary Template (auto-Marketo)、GitLab Roundtable Template (auto-Marketo)、または GitLab Workshop Template - (auto-Marketo program creation)  |
-|   まずカスタム Marketo セットアップが必要 |  Marketo First  | GitLab Primary Template (w/o Marketo) |
+| シンプルなワークフロー、自動作成を望む | Goldcast First | GitLab Primary Template (auto-Marketo)、GitLab Roundtable Template (auto-Marketo)、GitLab Workshop Template (auto-Marketo program creation)、または利用可能な 7 つのワークショップテンプレートのいずれか |
+| まずカスタム Marketo セットアップが必要 | Marketo First | GitLab Primary Template (w/o Marketo) |
 | ローカライズされたイベント | Goldcast First | ローカライズ済みテンプレート |
 | ドライラン／テスト | Goldcast First | GitLab Primary Template (auto-Marketo)、GitLab Roundtable Template (auto-Marketo)、または GitLab Workshop Template - (auto-Marketo program creation) |
 

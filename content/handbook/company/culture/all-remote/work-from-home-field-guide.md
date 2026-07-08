@@ -2,13 +2,13 @@
 title: "在宅勤務フィールドガイド"
 description: チームがより健康的に在宅勤務をするためのサポート方法
 summary: このフィールドガイドは、チームがより健康的に在宅勤務をするためのブループリントとして機能します。
-twitter_image: '/images/work-from-home-field-guide/PDF-Cover-Image.jpeg'
+twitter_image: '/images/work-from-home-field-guide/pdf-cover-image.jpeg'
 upstream_path: "/handbook/company/culture/all-remote/work-from-home-field-guide/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
-translator: "claude"
+upstream_sha: "e48b48a5e8c7635a5993b5836c0ca253812429d2"
+translated_at: "2026-07-06T08:30:42+09:00"
+translator: codex
 stale: false
-lastmod: "2025-04-10T15:50:45-07:00"
+lastmod: "2026-06-29T08:59:00-04:00"
 ---
 
 <div class="container">
@@ -19,7 +19,7 @@ lastmod: "2025-04-10T15:50:45-07:00"
         <p class="lead">リモートワークについて<a href="">もっと詳しく</a>、または <a href="https://about.gitlab.com/resources/downloads/remote-work-report-2021.pdf" class="btn btn-primary">完全レポートをダウンロード</a>
     </div>
     <div class="col text-center">
-        <img src="https://about.gitlab.com/images/work-from-home-field-guide/PDF-Cover-Image.jpeg" class="shadow cover-image" style="border: 1px solid rgba(0, 0, 0, 0.08); box-sizing: border-box; border-radius: 4px; padding-left: 0px; box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.08);" alt="">
+        <img src="/images/work-from-home-field-guide/pdf-cover-image.jpeg" class="shadow cover-image" style="border: 1px solid rgba(0, 0, 0, 0.08); box-sizing: border-box; border-radius: 4px; padding-left: 0px; box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.08);" alt="">
     </div>
 
 </div>
@@ -31,7 +31,7 @@ lastmod: "2025-04-10T15:50:45-07:00"
         <p class="h3">GitLab は、<a href="guide/">リモートチームに関する GitLab の専門知識</a>とベストプラクティスと、Herman Miller のワークスペースとデザインに関する深い理解を組み合わせて、このフィールドガイドを Herman Miller と共同制作できることを嬉しく思います。</a>
     </div>
     <div class="col text-center">
-        <img src="https://about.gitlab.com/images/work-from-home-field-guide/herman-miller-image.jpeg" alt="">
+        <img src="/images/work-from-home-field-guide/herman-miller-image.jpeg" alt="">
     </div>
 
 </div>
@@ -64,7 +64,7 @@ lastmod: "2025-04-10T15:50:45-07:00"
 </div>
 <hr>
 <div class="row text-center">
-    <p><img src="https://about.gitlab.com/images/pricing/particles-contact.svg" alt="" width="90" style="max-width: 90px"></p>
+    <p><img src="/images/pricing/particles-contact.svg" alt="" width="90" style="max-width: 90px"></p>
     <p class="h3 display-5 mb-4">あなたとあなたのチームのリモートワークを改善する</p>
     <p class="my-2">
         <a href="https://about.gitlab.com/resources/downloads/Work-from-Home%20Field%20Guide.pdf" class="btn btn-lg btn-primary me-4">在宅勤務フィールドガイドを入手する</a>
@@ -76,4 +76,3 @@ lastmod: "2025-04-10T15:50:45-07:00"
 </div>
 
 {{% include "includes/take-gitlab-for-a-spin.md" %}}
-

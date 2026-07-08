@@ -1,11 +1,11 @@
 ---
 title: "GitLab セールス FAQ - パートナーとの販売"
 upstream_path: /handbook/sales/field-operations/channel-operations/sales-faq/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-05T22:36:11Z"
+translator: codex
 stale: false
-lastmod: "2025-08-06T17:03:44+01:00"
+lastmod: "2026-06-30T11:28:44-07:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -301,6 +301,19 @@ GitLab の[チャネルニュートラルな報酬ポリシー](/handbook/sales/
 </details>
 
 ### 発注書（PO）
+
+<details>
+<summary markdown="span">
+GitLab は、パートナー経由で取引されたディールに自動更新を適用しますか？
+</summary>
+
+いいえ。GitLab はパートナー経由で取引されたディールに自動更新を適用しません。リセールパートナーを通じて注文が行われる場合、自動更新は無効化されます。パートナーおよびエンドカスタマーは、標準の 30 日前通知期間内にキャンセル通知が提出されなかったという理由だけで更新する義務を負いません。
+
+このポリシーが存在するのは、パートナーがエンドカスタマーとの商業上の関係を持っているためです。間接取引の更新判断は、GitLab が直接強制するのではなく、パートナーを通じて管理されるべきです。
+このポリシーが存在するのは、パートナーがエンドカスタマーとの商業上の関係を持っているためです。間接取引の更新判断は、GitLab が直接強制するのではなく、パートナーを通じて管理されるべきです。
+
+エンドカスタマーが更新しないことを選択した場合、パートナーはできるだけ早く GitLab チャンネルチームに通知する必要があります。GitLab は、パートナー経由のビジネスについて、キャンセル期限を過ぎたことを根拠に回収措置を取りません。
+</details>
 
 <details>
 <summary markdown="span">

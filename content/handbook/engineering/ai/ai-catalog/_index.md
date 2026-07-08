@@ -1,17 +1,17 @@
 ---
-title: Workflow Catalog グループ
-description: "Workflow Catalog Group は、組織、グループ、プロジェクトをまたいで作成、キュレーション、共有できるエージェント、ツール、フローのカタログである Workflow Catalog の開発に注力しています。"
-upstream_path: /handbook/engineering/ai/workflow-catalog/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-translated_at: "2026-06-12T13:00:00Z"
-translator: claude
+title: AI Catalog グループ
+description: "AI Catalog Group は、組織、グループ、プロジェクトをまたいで作成、キュレーション、共有できるエージェント、ツール、フローのカタログである AI Catalog の開発に注力しています。"
+upstream_path: /handbook/engineering/ai/ai-catalog/
+upstream_sha: ce056dce525567fbc30356982fd6468948838617
+translated_at: "2026-07-08T06:20:16+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-12T16:53:35+01:00
+lastmod: "2026-07-07T12:09:18+01:00"
 ---
 
 ## ビジョン {#vision}
 
-Workflow Catalog Group は、組織、グループ、プロジェクトをまたいで作成、キュレーション、共有できるエージェント、ツール、フローのカタログである Workflow Catalog の開発に注力しています。
+AI Catalog Group は、組織、グループ、プロジェクトをまたいで作成、キュレーション、共有できるエージェント、ツール、フローのカタログである AI Catalog の開発に注力しています。
 
 ## チームメンバー {#team-members}
 
@@ -21,15 +21,14 @@ Workflow Catalog Group は、組織、グループ、プロジェクトをまた
 
 ## 連絡方法 {#how-to-reach-us}
 
-状況に応じて、Workflow Catalog グループに連絡する最も適切な方法は以下のとおりです。
+状況に応じて、AI Catalog グループに連絡する最も適切な方法は以下のとおりです。
 
-* Slack チャンネル: `#g_workflow_catalog`
-* GitLab グループ `@gitlab-org/ai-powered/workflow-catalog/engineering`（エンジニアのみ）
+* Slack チャンネル: `#g_ai_catalog`
+* GitLab グループ `@gitlab-org/ai-powered/ai-catalog/engineering`（エンジニアのみ）
 
 ## 取り組んでいること {#what-were-working-on}
 
-現在、私たちは Workflow Catalog の最初のイテレーション（MVP）に取り組んでいます。
-この作業は [MVP エピック](https://gitlab.com/groups/gitlab-org/-/epics/17989)で追跡できます。
+TBD
 
 ## 私たちの働き方 {#how-we-work}
 
@@ -38,9 +37,9 @@ Workflow Catalog Group は、組織、グループ、プロジェクトをまた
 
 * [ルートエピック](https://gitlab.com/groups/gitlab-org/-/epics/11111): すべての作業をグループ化し、ロードマップを設定するため
 * [Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/3871464): 進行中のすべての Issue 用
-* [チームタスク](https://gitlab.com/gitlab-org/ai-powered/workflow-catalog/team-tasks/-/issues): プロダクトに関連しないすべてのチーム Issue 用
-* [非同期アップデート](https://gitlab.com/gitlab-org/ai-powered/workflow-catalog/team-tasks/-/issues/?label_name%5B%5D=async%20update)
-* [チーム Wiki](https://gitlab.com/gitlab-org/ai-powered/workflow-catalog/team-tasks/-/wikis/home): プロダクトの意思決定と有用な情報のため
+* [チームタスク](https://gitlab.com/gitlab-org/ai-powered/ai-catalog/team-tasks/-/issues): プロダクトに関連しないすべてのチーム Issue 用
+* [非同期アップデート](https://gitlab.com/gitlab-org/ai-powered/ai-catalog/team-tasks/-/issues/?label_name%5B%5D=async%20update)
+* [チーム Wiki](https://gitlab.com/gitlab-org/ai-powered/ai-catalog/team-tasks/-/wikis/home): プロダクトの意思決定と有用な情報のため
 
 ### DRI {#dris}
 
@@ -67,16 +66,16 @@ DRI の責任:
 
 各マイルストーンで、新しいゴールキーパーをアサインし、ゴールキーピングの Issue を作成します。
 
-詳細は[Issue テンプレート](https://gitlab.com/gitlab-org/ai-powered/workflow-catalog/team-tasks/-/blob/main/.gitlab/issue_templates/goalkeeper.md)で確認できます。
+詳細は[Issue テンプレート](https://gitlab.com/gitlab-org/ai-powered/ai-catalog/team-tasks/-/blob/main/.gitlab/issue_templates/goalkeeper.md)で確認できます。
 
 ### コミュニケーション {#communication}
 
-Workflow Catalog チームは、以下のガイドラインに基づいてコミュニケーションを行います。
+AI Catalog チームは、以下のガイドラインに基づいてコミュニケーションを行います。
 
 * 同期的なミーティングよりも、常に非同期コミュニケーションを優先します。
 * 非同期では非効率であることがわかった場合は、[同期通話](/handbook/communication/#video-calls)を設定することを躊躇しないでください。ただし、チームメンバーと共有できるように常に録画します。
 * デフォルトでオープンにコミュニケーションを行います。
-* 仕事関連の Slack メッセージでは、プライベートメッセージよりも公開チャンネル（`#g_workflow_catalog`）を優先します。
+* 仕事関連の Slack メッセージでは、プライベートメッセージよりも公開チャンネル（`#g_ai_catalog`）を優先します。
 
 ### フロントエンドとバックエンドの協業 {#frontend-backend-collaboration}
 
@@ -88,15 +87,15 @@ Workflow Catalog チームは、以下のガイドラインに基づいてコミ
   モックデータ、モックエンドポイント、または API スタブを使用して進めることができます。バックエンドは、
   データモデル、ビジネスロジック、実際の API スキーマの実装に集中できます。
 * **整合性の維持**: 私たちは優れたコミュニケーションを重視します。要件やスキーマを変更する必要がある場合は、
-  関連する GitLab Issue または [`#g_workflow_catalog`](https://gitlab.enterprise.slack.com/archives/C08T5J1KXKQ) で早めに伝え、
+  関連する GitLab Issue または [`#g_ai_catalog`](https://gitlab.enterprise.slack.com/archives/C08T5J1KXKQ) で早めに伝え、
   フロントエンドやバックエンドのカウンターパートがすべての変更を把握し、後の段階でブロッカーになるのを避けるために早めにフィードバックを提供できるようにします。
 
 ### AI ステージとの協業 {#ai-stage-collaboration}
 
-Workflow Catalog は、基盤となるバックエンドサービスとして
+AI Catalog は、基盤となるバックエンドサービスとして
 [Workflow Service](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/tree/main/duo_workflow_service?ref_type=heads)
 に依存しています。
-Workflow Catalog のほとんどの機能は Workflow Service 内で新しい機能を開発する必要があり、
+AI Catalog のほとんどの機能は Workflow Service 内で新しい機能を開発する必要があり、
 これは私たちのエンジニアが [Agent Foundations チーム](../agent-foundations/_index.md)と連携して、
 そのコードベースに直接貢献する必要があることを意味します。
 
@@ -157,7 +156,7 @@ Workflow Catalog のほとんどの機能は Workflow Service 内で新しい機
 
 **マイルストーン中:**
 
-* `~Deliverable` の Issue がブロックされたり完了できなくなったりした場合は、`#g_workflow_catalog` または関連する Issue で早めに伝える
+* `~Deliverable` の Issue がブロックされたり完了できなくなったりした場合は、`#g_ai_catalog` または関連する Issue で早めに伝える
 * エンジニアリングマネージャーは、優先順位やキャパシティの変化に基づいて、マイルストーン中に `~Deliverable` ラベルを調整する場合があります
 
 ### 私たちの Tech Stack {#our-tech-stack}
@@ -170,7 +169,7 @@ Workflow Catalog のほとんどの機能は Workflow Service 内で新しい機
 
 ## チームミーティング {#team-meetings}
 
-### Workflow Catalog: グループミーティング {#workflow-catalog-group-meeting}
+### AI Catalog: グループミーティング {#ai-catalog-group-meeting}
 
 * **時間**: 毎週火曜日、05:30 UTC と 15:00 UTC を週ごとに交互に。
 * **目的**: このミーティングは、現在の Issue やブロッカーを取り上げるための一般的な同期ミーティングとして機能します。

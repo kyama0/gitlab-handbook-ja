@@ -2,11 +2,11 @@
 title: "UX スコアカード"
 description: "UX スコアカードは、ヒューリスティック評価に似たプロセスで、ユーザビリティの問題を特定し、特定の体験を採点するのに役立ちます。"
 upstream_path: /handbook/product/ux/ux-scorecards/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
-translator: claude
+upstream_sha: e48b48a5e8c7635a5993b5836c0ca253812429d2
+translated_at: "2026-07-05T22:36:11Z"
+translator: codex
 stale: false
-lastmod: "2026-01-14T07:59:50-06:00"
+lastmod: "2026-06-29T08:59:00-04:00"
 ---
 
 ## はじめにとゴール
@@ -108,12 +108,12 @@ GitLab Design プロジェクトで [UX スコアカードテンプレート](ht
 
 | バッジ | 要約 | 説明 |
 | ------ | ------ | ------ |
-| [![Badge level A High Quality/Exceeds](https://about.gitlab.com/images/grade/grade_a.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 高品質 / 期待を超える | 体験は期待を超え、ユーザーは体験を喜ばしいと感じる。<br>- 容易さ: *非常に簡単*<br>- 満足度: *非常に良い*<br>- 有用性: *強く同意* |
-| [![Badge level B Meets Expectations](https://about.gitlab.com/images/grade/grade_b.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 期待を満たす | 期待を満たすが、ユーザーのニーズを超えない。ユーザーはゴールに到達し、ジョブを完了できる。<br>- 容易さ: *簡単*<br>- 満足度: *良い*<br>- 有用性: *同意* |
-| [![Badge level C Average](https://about.gitlab.com/images/grade/grade_c.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 平均 | ユーザーはジョブを完了できるが、ユーザーのニーズを超えず、不必要なステップを必要とする。<br>- 容易さ: *簡単でも難しくもない*<br>- 満足度: *良くも悪くもない*<br>- 有用性: *同意も不同意もしない* |
-| [![Badge level D Poor](https://about.gitlab.com/images/grade/grade_d.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 低い | 体験は悪い体験と見なされ、完了するのが難しい。<br>- 容易さ: *難しい*<br>- 満足度: *悪い*<br>- 有用性: *不同意* |
-| [![Badge level F Terrible](https://about.gitlab.com/images/grade/grade_f.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | ひどい | あまりにも多くのユーザーがジョブを完了できない。体験は非常に悪く、完了するのが非常に難しいと見なされる。<br>- 容易さ: *非常に難しい*<br>- 満足度: *非常に悪い*<br>- 有用性: *強く不同意* |
-| [![Badge level 0 Unknown](https://about.gitlab.com/images/grade/grade_-.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 不明 | このジョブはまだ採点されていない。<br>- 容易さ: *不明*<br>- 満足度: *不明*<br>- 有用性: *不明* |
+| [![Badge level A High Quality/Exceeds](/images/grade/grade_a.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 高品質 / 期待を超える | 体験は期待を超え、ユーザーは体験を喜ばしいと感じる。<br>- 容易さ: *非常に簡単*<br>- 満足度: *非常に良い*<br>- 有用性: *強く同意* |
+| [![Badge level B Meets Expectations](/images/grade/grade_b.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 期待を満たす | 期待を満たすが、ユーザーのニーズを超えない。ユーザーはゴールに到達し、ジョブを完了できる。<br>- 容易さ: *簡単*<br>- 満足度: *良い*<br>- 有用性: *同意* |
+| [![Badge level C Average](/images/grade/grade_c.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 平均 | ユーザーはジョブを完了できるが、ユーザーのニーズを超えず、不必要なステップを必要とする。<br>- 容易さ: *簡単でも難しくもない*<br>- 満足度: *良くも悪くもない*<br>- 有用性: *同意も不同意もしない* |
+| [![Badge level D Poor](/images/grade/grade_d.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 低い | 体験は悪い体験と見なされ、完了するのが難しい。<br>- 容易さ: *難しい*<br>- 満足度: *悪い*<br>- 有用性: *不同意* |
+| [![Badge level F Terrible](/images/grade/grade_f.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | ひどい | あまりにも多くのユーザーがジョブを完了できない。体験は非常に悪く、完了するのが非常に難しいと見なされる。<br>- 容易さ: *非常に難しい*<br>- 満足度: *非常に悪い*<br>- 有用性: *強く不同意* |
+| [![Badge level 0 Unknown](/images/grade/grade_-.svg)](/handbook/product/ux/ux-scorecards/#grading-rubric) | 不明 | このジョブはまだ採点されていない。<br>- 容易さ: *不明*<br>- 満足度: *不明*<br>- 有用性: *不明* |
 
 オンボーディングは多くの異なるシナリオを指す可能性があり、これが体験に影響を与える可能性があります:
 
