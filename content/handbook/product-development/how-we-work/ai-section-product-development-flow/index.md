@@ -116,12 +116,12 @@ PM、デザイナー、エンジニアは最初に成果について認識を合
 
 AI section の組織構造は[こちら](/handbook/engineering/ai/#organizational-structure)に文書化されています。このセクションでは、その構造の各レベルに対応するラベルについて説明し、Issue と MR が適切なチームのビューに届くようにします。
 
-| Org level | Label convention | Example |
+| 組織レベル | ラベル規則 | 例 |
 |---|---|---|
 | Section | `~section::ai` | `~section::ai` |
-| Stage | `~devops::<slug>` | `~devops::agent foundations` |
-| Group | `~group::<slug>` | `~group::agent execution` |
-| Functional team | `~Category:<name>` | `~Category:Agent Tools` |
+| Stage | `~devops::` | `~devops::agent foundations` |
+| Group | `~group::` | `~group::agent execution` |
+| Functional team | `~Category:` | `~Category:Agent Tools` |
 
 ## AI org status dashboard
 

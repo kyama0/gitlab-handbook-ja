@@ -382,14 +382,10 @@ GitLab は [CZ](https://www.cz.nl/zorgverzekering/collectieve-zorgverzekering?01
 
 </details>
 
-<details markdown="1"\>
-
-<summary>アクセス方法</summary>
+### アクセス方法
 
 1. 希望日を記載して [leaves@gitlab.com](mailto:leaves@gitlab.com) にメール
 1. 追加の 5 週間は少なくとも 4 週間前にリクエスト
-
-</details>
 
 ### 養子縁組とフォスターケア休職
 

@@ -21,7 +21,7 @@ lastmod: "2026-07-08T14:46:05-04:00"
     * [Apple App Store](https://apps.apple.com/us/app/salesforce/id404249815)
   * Okta Verify
     * [Google Play](https://play.google.com/store/apps/details?id=com.okta.android.auth)
-    * [Apple App Store](https://apps.apple.com/us/app/salesforce/id404249815)
+    * [Apple App Store](https://apps.apple.com/us/app/okta-verify/id490179405)
   * Android および/または iOS アクセスを可能にする Salesforce 権限
     * モバイルでの Salesforce へのアクセスは Sales 組織のユーザーのみに許可されています。
     * Sales 組織に属さないがアクセスを希望する場合は、[アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Individual_Bulk_Access_Request)を開いてビジネス上の正当な理由を記入してください。チームがリクエストの処理を支援します。
