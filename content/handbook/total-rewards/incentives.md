@@ -3,11 +3,11 @@ title: "GitLab におけるインセンティブ"
 description: "このページでは、GitLab チームメンバーが利用できるインセンティブに関する情報を扱っています。"
 date: 2026-03-06
 upstream_path: /handbook/total-rewards/incentives/
-upstream_sha: d0d8657a733d2233820b2b00aaad27ebf5de9755
-translated_at: "2026-05-07T00:00:00Z"
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T11:04:43+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-09T12:48:43-04:00"
+lastmod: "2026-07-08T11:09:01-04:00"
 ---
 
 お探しのものが見つかりませんか？ メインの [People Operations ページ](/handbook/people-group/) をお試しください。
@@ -459,7 +459,7 @@ GitLab プロファイルやアカウント情報ページから Ultimate プラ
 
 {{% /alert %}}
 
-このプロセスについて質問がある場合、または上記の手順を使用して確認した後で2時間後にこのアップグレードが見られない場合は、 [`#it_help` GitLab slack チャンネル](https://gitlab.slack.com/archives/CK4EQH50E) でご連絡ください。
+このプロセスについて質問がある場合、または上記の手順で確認したうえで 2 時間後にこのアップグレードが見られない場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して探します）または it-help@gitlab.com から IT にお問い合わせください。
 
 加えて、GitLab チームメンバーは、 [`GitlabCom_Licensed_Demo_Group_Request` issue テンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?type=ISSUE&description_template=GitlabCom_Licensed_Demo_Group_Request) を使用して、個人アカウント (上記の Ultimate tier リクエストに使用された同じアカウント) の単一グループ向けに、 [Duo Enterprise](https://about.gitlab.com/gitlab-duo/#addons) 付きのシングルシート Ultimate プラングループをリクエストできます。
 

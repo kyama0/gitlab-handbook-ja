@@ -2,20 +2,20 @@
 title: 'オンコール'
 description: 'Customer Support Operations のオンコールに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/pagerduty/oncall/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T11:05:06+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-26T12:05:00-05:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 Customer Support Operations チームは、Support Operations を担当するメンバーのオンコールローテーションを維持しています。このローテーションにより、サポートチームが常にサポートを提供できる状態を確保しています。
 
 {{% alert title="PagerDuty へのアクセス権がない場合" color="warning" %}}
 
-Customer Support Operations チーム (または Customer Support Operations チームの特定の人) をページングする必要があるが PagerDuty へのアクセス権がない場合は、ページを送ってもらえるよう同僚に相談してください! 誰に依頼すればよいか分からない場合、一般的におすすめなのは以下の Slack チャンネルです。
+Customer Support Operations チーム (または Customer Support Operations チームの特定の人) をページングする必要があるが PagerDuty へのアクセス権がない場合は、ページを送ってもらえるよう同僚に相談してください! 誰に依頼すればよいか分からない場合、一般的におすすめなのは以下です。
 
-- [#it_help](https://gitlab.enterprise.slack.com/archives/CK4EQH50E)
+- Slack の Compass app（上部検索バーに「Compass」と入力して探します）経由で IT に連絡するか、it-help@gitlab.com までメールしてください。
 - [#support_leadership](https://gitlab.enterprise.slack.com/archives/C01F9S37AKT)
 
 ロール上 PagerDuty へのアクセス権が必要な場合は、マネージャーに相談してアクセス権を取得してください。

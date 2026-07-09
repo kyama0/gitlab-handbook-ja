@@ -2,11 +2,11 @@
 title: "Yubikey セルフサービス購入ガイド"
 description: "中央管理された発注ポータルから YubiKey をセルフサービスで購入できます。GitLab が発送をサポートしていない国向けに IT による事前承認がない限り、YubiKey を個別に購入して経費精算することはできません。"
 upstream_path: /handbook/security/corporate/systems/yubikey/purchasing/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T11:05:06+09:00"
 translator: claude
 stale: false
-lastmod: "2026-01-29T17:09:57-05:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 > FY25-Q1 において、IT は最新世代の YubiKey 5 FIPS キーをエンジニアリング、プロダクト、セキュリティ各部門のすべてのチームメンバーに大規模配布しました。これらの部門は、FY25-Q2 に IT がシステム構成変更管理を完了した後、2FA に YubiKey の使用が必須となります。
@@ -19,7 +19,7 @@ lastmod: "2026-01-29T17:09:57-05:00"
 
 以下のプロセスでプライマリの YubiKey をセルフサービスで注文できます。バックアップキーの注文については、近い将来イテレーションを進めていく予定です。
 
-YubiKey の交換、または初めての YubiKey が必要な場合は、お住まいの国が[サポート対象国](#countries)のリストに含まれていることを確認してください。お住まいの国が[サポート対象外の国](#unsupported-countries)に含まれている場合や質問がある場合は、`#it_help` でガイダンスを求めてください。
+YubiKey の交換、または初めての YubiKey が必要な場合は、お住まいの国が[サポート対象国](#countries)のリストに含まれていることを確認してください。お住まいの国が[サポート対象外の国](#unsupported-countries)に含まれている場合や質問がある場合は、Slack の Compass app（上部検索バーに「Compass」と入力して探します）経由で IT に連絡するか、it-help@gitlab.com までメールしてください。
 
 1. Slack を開きます。
 2. 任意のメッセージまたはチャンネルで `/yubikey` と入力します。
@@ -56,7 +56,7 @@ Linux ラップトップを使用するチームメンバーは、すべての 2
 
 GitLab 支給の MacBook を持たず、1Password（GitLab がライセンス提供）をインストールできない一時的なサービスプロバイダーには、Okta および付与されたサービスへの認証用に YubiKey を発送できます。これは、Windows デバイスを使用するサードパーティのサービスプロバイダーでよくあるニーズです。
 
-`#it_help` で支援を求めてください。
+Slack の Compass app（上部検索バーに「Compass」と入力して探します）経由で IT に連絡するか、it-help@gitlab.com までメールしてください。
 
 ### YubiKey モデル
 

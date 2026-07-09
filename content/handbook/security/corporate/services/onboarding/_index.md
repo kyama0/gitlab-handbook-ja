@@ -1,16 +1,16 @@
 ---
 title: CorpSec オンボーディングサービス
 upstream_path: /handbook/security/corporate/services/onboarding/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T10:38:25+09:00"
 translator: claude
 stale: false
-lastmod: "2025-06-26T03:27:50+00:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 コーポレートセキュリティヘルプデスクは、新しいチームメンバー（従業員）、テンポラリーサービスプロバイダー（コントラクター）、および外部のコラボレーター（顧客、パートナー、ベンダー）に対するアカウント、ハードウェア、ソフトウェアのプロビジョニングと、日常的なサポートを提供します。
 
-ハンドブックに記載されていないオンボーディング関連の支援が必要な場合や、対応に困っている場合は、[#it_help](https://gitlab.enterprise.slack.com/archives/CK4EQH50E) Slack チャンネルでお気軽にお尋ねください。
+ハンドブックに記載されていないオンボーディング関連の支援が必要な場合や、対応に困っている場合は、Slack の Compass アプリ（上部検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com でお気軽にお尋ねください。
 
 ## 関連サービス
 

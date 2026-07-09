@@ -1,14 +1,14 @@
 ---
 title: "Okta FAQ"
 upstream_path: /handbook/security/corporate/end-user-services/okta/okta-enduser-faq/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T10:22:00+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-03T14:17:43-06:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
-以下は、Okta および GitLab における実装に関するよくある質問です。ここに記載されていない追加の質問がある場合は、#it_help でお尋ねください。
+以下は、Okta および GitLab における実装に関するよくある質問です。ここに記載されていない追加の質問がある場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com から IT にお問い合わせください。
 
 ## Okta を使用してアプリケーションにログインするにはどうすればよいですか？
 
@@ -16,7 +16,7 @@ lastmod: "2025-10-03T14:17:43-06:00"
 2. ログインしたいアプリケーションを検索し、クリックします。
 3. これにより新しいタブが開き、自動的にログインされるはずです。
 
-*Okta SSO でアプリケーションへのログインに問題が発生している場合は、Slack の `#it_help` チャンネルに投稿してください。表示されているエラーのスクリーンショットも含めてください。*
+*Okta SSO でアプリケーションへのログインに問題が発生している場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com から IT にお問い合わせください。表示されているエラーのスクリーンショットも必ず含めてください。*
 
 ## Okta はどのように GitLab のアカウント作成をサポートしますか？
 
@@ -122,7 +122,7 @@ SAML への変換が必要なアプリケーションがあります。更新を
 
 ## GitLab Okta のユーザー名とパスワードは何ですか？
 
-GitLab では、GitLab メールアドレスがユーザー名です。パスワードを忘れた場合は、#it_help までご連絡ください。
+GitLab では、GitLab メールアドレスがユーザー名です。パスワードを忘れた場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com から IT にお問い合わせください。
 
 ## 安全なパスワードを作成するにはどうすればよいですか？
 
@@ -204,7 +204,7 @@ Okta は「Always On」アーキテクチャで構築されています。ただ
 
 ## Okta の緊急事態の場合、誰に連絡すればよいですか？
 
-Slack の #it_help チャンネルにご連絡ください。
+Slack の Compass アプリ（上部の検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com から IT にお問い合わせください。
 
 ## 自動レポートはありますか？
 

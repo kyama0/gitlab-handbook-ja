@@ -1,190 +1,190 @@
 ---
 title: Zip リクエスト提出のヒント
-upstream_path: /handbook/finance/procurement/tips-for-submitting-a-zip-request/
-upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
-translated_at: "2026-04-29T00:00:00Z"
+upstream_path: "/handbook/finance/procurement/tips-for-submitting-a-zip-request/"
+upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
+lastmod: "2026-07-08T14:46:05-04:00"
+translated_at: "2026-07-09T09:03:55+09:00"
 translator: claude
 stale: false
-lastmod: "2025-12-11T13:59:38-05:00"
 ---
 
-個人業務用のホームオフィス機器やソフトウェアを5,000ドル未満で購入する場合は、[その他のサービス](/handbook/finance/procurement/#other-services)を参照してください。このような場合は Zip 購買リクエストは不要です。
+個人の業務利用のために Home Office Equipment および / または Software を購入し、その金額が <$5K USD の場合、これらのケースでは Zip Purchase Request は不要なため、[Other Services](/handbook/finance/procurement/#other-services)を参照してください。
 
-## Zip の使い始め方
+## Zip の始め方
 
-1. [Okta ホームページ](https://gitlab.okta.com/app/UserHome#)から Zip にログインします。
-1. Zip へのアクセスが必要な場合は、[こちらでアクセスリクエストを提出してください](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request&_gl=1*bsfkbc*_ga*MzkwMDUyMjg5LjE2MzU3NzYxMDA.*_ga_ENFH3X7M5Y*MTY3NzYyMDEwMi4xMzkuMS4xNjc3NjIwOTc3LjAuMC4w)。
-1. Zip のトレーニング資料を確認します：
-   - [Zip エンドユーザーガイド](/handbook/business-technology/enterprise-applications/guides/zip-guide/) - さまざまな種類のリクエストの提出方法、承認者グループとしてのリクエストのレビューと承認方法、リクエストのステータス確認方法などの段階的なガイド。
+1. [Okta home page](https://gitlab.okta.com/app/UserHome#)から Zip にログインします。
+1. Zip アクセスが必要な場合は、[こちらからアクセスリクエストを提出してください](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request&_gl=1*bsfkbc*_ga*MzkwMDUyMjg5LjE2MzU3NzYxMDA.*_ga_ENFH3X7M5Y*MTY3NzYyMDEwMi4xMzkuMS4xNjc3NjIwOTc3LjAuMC4w)。
+1. Zip トレーニング資料を確認します。
+   - [Zip End Users Guide](/handbook/business-technology/enterprise-applications/guides/zip-guide/) - さまざまなタイプのリクエストの提出方法、承認者グループ向けのリクエストのレビューおよび承認方法、リクエストステータスの確認方法などを段階的に説明しています。
 
 ## リクエストタイプのヒント
 
-リクエストのコモディティタイプに応じて、Zip リクエスト入力フォームに特定の条件付き質問が表示され、ワークフローに必要な承認グループが含まれ、リクエストのレビューに必要な情報が提供されます。[SLA](/handbook/finance/procurement/#review-steps-timeline-and-considerations) 内でリクエストが完了するよう、以下のヒントに従ってください。
+リクエストのコモディティタイプに応じて、Zip リクエスト受付フォームに特定の条件付き質問が表示され、必要な承認グループがワークフローに含まれ、レビューに必要な情報が提供されます。リクエストが [SLA](/handbook/finance/procurement/#review-steps-timeline-and-considerations)内で完了するよう、以下のヒントに従ってください。
 
 ### 説明とカテゴリ
 
-購入の簡単な説明を提供し、正しいカテゴリ、サブカテゴリ、購入タイプを必ず選択してください。
+購入内容の簡単な説明を入力し、正しいカテゴリ、サブカテゴリ、購入タイプを必ず選択してください。
 
-- **新規**購入は、全く新しい製品またはサービスです。
-- **更新**は、既存ベンダーとの更新または追加です。
+- **New** purchase は、まったく新しいプロダクトまたはサービスを指します。
+- **Renewal** は、既存ベンダーとの更新またはアドオンを指します。
 
-## コンティンジェントワーカーのリクエスト提出
+## Contingent Worker のリクエスト提出
 
-GitLab では2025年3月より[コンティンジェントワーカーポリシー](/handbook/finance/procurement/contingent-worker-policy/)が施行されています。このポリシーは、チームメンバーに対してコンティンジェントワーカーの種類と、それぞれをいつどのように利用すべきかについての概要とガイドラインを提供するために作成されました。確認後、採用を検討しているコンティンジェントワーカーの種類を特定する必要があります。GitLab には3種類のコンティンジェントワーカーがいます：
+GitLab では、2025 年 3 月から [Contingent Worker Policy](/handbook/finance/procurement/contingent-worker-policy/)を導入しています。このポリシーは、利用可能な各種 contingent worker の概要とガイドライン、およびそれぞれをどのように、いつ使用すべきかをチームメンバーに提供するために設計されています。確認後、採用したい contingent worker のタイプを特定する必要があります。GitLab には contingent worker のカテゴリが 3 つあります。
 
-- スタッフ増員ワーカー
-- コンサルタントサービス
-- 独立コントラクター
+- Staff Augmentation Workers
+- Consultancy Services
+- Independent Contractors
 
-### スタッフ増員ワーカー
+### Staff Augmentation Workers
 
-スキルギャップを埋めるか追加のプロジェクトリソースを提供するために一時的に使用される補完的な非チームメンバースタッフで構成されます。スタッフ増員ワーカーは常に派遣会社によって提供されます。スタッフ増員ワーカーが派遣会社を通じていない場合は、独立コントラクターとして資格を得る必要があります。スタッフ増員ワーカーは GitLab の採用マネージャーの一般的な指導のもとで GitLab 組織内で勤務します。GitLab は業務の成果物に責任を持ちます。ほとんどまたは全く責任がベンダーまたはそのスタッフに移転されません。知識は提供されたワーカーのみから提供されます。GitLab が業務の期間を管理します。「何を」提供し「いつ」提供するかに加えて、GitLab は以下についてもコントロールを維持します。
+スキルギャップを埋める、または追加のプロジェクトリソースを提供するために一時的に使用される、Team Member ではない補助スタッフで構成されます。Staff Augmentation Workers は常にエージェンシーから提供されます。Staff Augmentation Worker がエージェンシー経由でない場合、Independent Contractor として適格でなければなりません。Staff Augmentation Worker は、GitLab hiring manager の一般的な指示の下で GitLab organization 内で働きます。GitLab は作業成果物に対する責任を維持します。ベンダーまたはそのスタッフに移転される責任はほとんど、またはまったくありません。知識は提供された worker からのみ提供されます。GitLab がアサインメントの期間を管理します。提供される「what」と「when」に加えて、GitLab は以下を管理します。
 
-- サービスを提供する「誰が」
-- サービスが提供される「どこから」
-- サービスが提供される「どのように」
+- サービスを提供する「who」
+- サービスが提供される「where」
+- サービスが提供される「how」
 
-サービスはフルタイムまたはパートタイムで必要となる場合がありますが、常に恒久的ではなく一時的です。これらのスタッフ増員ワーカーの限られた詳細は、契約ワーカーが Okta とコア GitLab アプリケーションへのアクセスを必要とする場合に Workday に保存されます。
+サービスはフルタイムまたはパートタイムで必要になる場合がありますが、常に恒久的ではなく一時的なものです。これらの Staff Augmentation Worker の限定的な詳細は、contract worker が Okta と主要な GitLab アプリケーションへのアクセスを必要とする場合、Workday に保持されます。
 
-このワーカータイプの最大期間は24ヶ月です。業務終了日は発注書に定められたとおり事前に設定する必要があります。同じスタッフ増員ワーカーは3ヶ月間の空白なしに業務終了後 GitLab に復帰することはできません。
+この worker タイプの最長期間は 24 ヶ月です。アサインメント終了日は、Purchase Order に定められるとおり、事前に設定されている必要があります。同じ Staff Augmentation worker は、アサインメント終了後 3 ヶ月間 GitLab に戻ることはできません。
 
-### コンサルタントサービス
+### Consultancy Services
 
-コンサルタントサービスは、特定の知識領域における専門的なアドバイスを含むプロフェッショナルサービスを提供するために GitLab と契約するベンダーによって提供されます。GitLab は特定のサービスのために第三者と契約を結び、その契約は個々のワーカーではなく作業範囲、つまりサービスや製品のための契約であり、GitLab はそのお客様です。この契約は、専門会社に代わって実行を信頼するコア以外の業務のためのものであり、ビジネスのピーク時に補助労働力を必要とする状況のためではありません。第三者はワーカーに責任を持ち、誰が業務を遂行し、どのように業務を達成するかを決定します。ベンダーは業務委託書（Statement of Work）に記載されたサービス提供の一部またはすべての責任を引き受けます。スタッフの提供に加えて、ベンダーはサービス提供のために自社の知的財産へのアクセスを提供することが期待される場合があります。ベンダーはスタッフを管理します（例：離職）。GitLab は「何を」提供し「いつ」提供するかについての責任を維持しますが、ベンダーは以下についてコントロールを維持します。
+Consultancy Services は、特定の知識領域における専門的助言を含むプロフェッショナルサービスを提供するため、GitLab と契約するベンダーによって提供されます。GitLab は特定のサービスについて第三者と契約し、その契約は作業範囲、つまり個人 worker ではなくプロダクトまたはサービスの契約であり、GitLab が顧客です。この取り決めは、専門企業に GitLab の代理として実行してもらうことを信頼するノンコア作業のためのものであり、ビジネスのピークを支援する補助労働力が必要な状況のためのものではありません。第三者は worker(s) に責任を持ち、誰が作業を行い、どのように作業を達成するかを決定します。Vendor は Statement of Work に詳述されているとおり、サービス提供の一部または全部の責任を負います。スタッフの提供に加えて、Vendor はサービス提供のために自社の Intellectual Property へのアクセスを提供することが期待される場合があります。Vendor は自社スタッフを管理します（例: 離職）。GitLab は提供される「what」と「when」に対する責任を維持しますが、vendor は以下を管理します。
 
-- サービスを提供する「誰が」（スタッフィング）
-- サービスが提供される「どこから」
-- サービスが提供される「どのように」
+- サービスを提供する「who」（staffing）
+- サービスが提供される「where」
+- サービスが提供される「how」
 
-これらのコントラクター人員の限られた詳細は、契約ワーカーが Okta とコア GitLab アプリケーションへのアクセスを必要とする場合にのみ Workday に保存されます。
+これらの Contractor Personnel の限定的な詳細は、contract worker が Okta と主要な GitLab アプリケーションへのアクセスを必要とする場合にのみ、Workday に保持されます。
 
-契約期間に制限はなく、適用される契約と MSA によって決定されるスコープを完了するために必要な業務期間となります。GitLab は必要に応じて MSA をレビューおよび更新する権利を有します。
+契約期間に制限はなく、該当する契約と MSA によって決定される作業範囲を満たすために必要なアサインメント期間になります。GitLab は必要に応じて MSA をレビューおよび更新する権利を有します。
 
-### 独立コントラクター（推奨されないオプション、例外的にのみ使用）
+### Independent Contractor（推奨されないオプション、例外的にのみ使用）
 
-業務委託書（SOW）に組み込まれた成果物のプロジェクト成果物を提供するために自社（個人事業主）を所有する個人。その個人は真に独立して業務を行い、サービスの遂行の詳細、方法、手段について行動の自由が与えられている必要があります。独立コントラクターは通常、複数の企業にサービスを提供します。独立コントラクターは、成果または節目に基づくアレンジメントで業務を行う場合（事業者が達成された成果物に基づいてコントラクターに支払う）や、時間と材料ベースで支払われる場合があります。このコンティンジェントワーカータイプは特定の状況で使用される場合がありますが、その使用は例外的なものにとどまります。全ての独立コントラクターは[独立コントラクターサービス契約](https://docs.google.com/document/d/1KDkv6oWv6V-6k9v5GhjF7WPMoQJOV5iubCZzLGn7xfY/edit#heading=h.b9kk7pr94mid)（ICSA）を使用して契約する必要があります。
+Statement of Work（SOW）に組み込まれるプロジェクト成果物を提供する、自分が所有する会社（個人事業）で働く個人です。その個人は、サービスを実行する詳細、方法、手段について行動の自由を与えられ、真に独立して働かなければなりません。Independent contractors は通常、複数の会社にサービスを提供します。Independent contractors は、ビジネスが達成された成果物に基づいて contractor に支払う成果ベース / マイルストーン型の取り決めで働く場合も、時間と材料ベースで支払われる場合もあります。この contingent worker タイプは特定の状況で使用される場合がありますが、その使用は例外的な場合に限られます。すべての Independent Contractors は、[Independent Contractor Service Agreement](https://docs.google.com/document/d/1KDkv6oWv6V-6k9v5GhjF7WPMoQJOV5iubCZzLGn7xfY/edit#heading=h.b9kk7pr94mid)（ICSA）を使用して契約する必要があります。
 
-独立コントラクター（コンサルタント、フリーランサー、自営業者とも呼ばれる）：
+Independent contractors（consultants、freelancers、self-employed workers とも呼ばれます）:
 
-- 成果またはプロジェクトベースの専門知識のために使用される
-- GitLab は「何を」提供し、「誰が」サービスを提供し、「いつ」提供するかについての責任を維持しますが、独立コントラクターは以下についてコントロールを維持します：
-  - サービスが提供される「どこから」
-  - サービスが提供される「どのように」
+- 成果またはプロジェクトベースの専門知識に使用されます
+- GitLab は提供される「what」、「who」、および「when」に対する責任を維持しますが、Independent Contractor は以下を管理します。
+  - サービスが提供される「where」
+  - サービスが提供される「how」
 
-関係は GitLab と独立コントラクター間の契約に定義されます。
+関係は GitLab と independent contractor の間の契約で定義されます。
 
-これらのコントラクター人員の限られた詳細は、契約ワーカーが Okta とコア GitLab アプリケーションへのアクセスを必要とする場合に Workday に保存されます。
+これらの Contractor Personnel の限定的な詳細は、contract worker が Okta と主要な GitLab アプリケーションへのアクセスを必要とする場合、Workday に保持されます。
 
-このワーカーの最大期間は24ヶ月で、3ヶ月の休止が必要です。終了日は事前に設定する必要があります。
+この worker の最長期間は 24 ヶ月で、3 ヶ月の休止期間があります。終了日は事前に設定されている必要があります。
 
-### コントラクターの Zip リクエスト提出方法
+### Contractor の Zip Request を提出する方法
 
-1. コンティンジェントワーカーの Zip リクエストを提出する前に：
-   - FP&A と管理職からコンティンジェントワーカーを採用するための内部承認を得ていること、およびこの役割が (i) 現在 GitLab 従業員によって実行されていない、または (ii) この役割のオープンなヘッドカウントポジションがないことを確認してください。
-   - コンティンジェントワーカーが Okta および/またはコア GitLab アプリケーションへのアクセスを必要とする場合、GitLab ラップトップが発行され、その後 IT Ops がラップトップの発行を確認する Zip 承認を行う必要があります。
-   - コンティンジェントワーカーが GitLab 機器（オレンジまたはレッドデータへのアクセスが必要）を必要とする場合は、機器の注文と発送のための通常の承認[タイムライン](/handbook/finance/procurement/#review-steps-timeline-and-considerations)より10日前に Zip 購買要求を提出する必要があります。[特定の場所](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/127746#note_1497241068)では機器提供前に IT 承認が必要です。IC が GitLab 機器を必要とするかどうかわからない場合は、Slack の #it_help チャンネルにご連絡ください。[セキュリティレビュー](/handbook/finance/procurement/#4c-security-review-4-14-days)が必要です。
-      - リードタイムは購買要求が完全に承認されて PO がリリースされた時点から開始されます。この時間と [Zip 承認時間](/handbook/finance/procurement/#review-steps-timeline-and-considerations)を考慮して、IC の開始日のどのくらい前に Zip リクエストを提出する必要があるかを決定してください。
+1. Contingent Worker の Zip request を提出する前に:
+   - contingent worker を採用するために FP&A とマネジメントから内部承認を得ていること、またこのロールが (i) 現在 GitLab Employee によって実行されていない、または (ii) このロールに対する未充足の headcount ポジションが存在しないことを確認してください。
+   - Contingent Worker が Okta および / または主要な GitLab core applications へのアクセスを必要とする場合、GitLab laptop を発行し、その後 IT Ops による laptop 発行の検証として Zip 承認が必要です。
+   - Contingent Worker が GitLab equipment（例: Orange または Red data へのアクセス）を必要とし、それにより [Security Review](/handbook/finance/procurement/#4c-security-review-4-14-days)が必要になる場合、機器の注文と配送を考慮するため、通常の承認[タイムライン](/handbook/finance/procurement/#review-steps-timeline-and-considerations)の 10 日前に Zip purchase requisition を提出する必要があります。[特定の場所](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/127746#note_1497241068)では、機器提供前に IT Approval が必要です。IC に GitLab equipment が必要か不明な場合は、Slack の Compass app（上部の検索バーに "Compass" と入力して見つけてください）または it-help@gitlab.com から IT にお問い合わせください。
+      - Lead times は、purchase requisition が完全に承認され、PO がリリースされた時点から始まります。この時間と [Zip approval times](/handbook/finance/procurement/#review-steps-timeline-and-considerations)を考慮して、IC の開始日前にどれだけ早く Zip Request を提出する必要があるかを判断してください。
 
-1. Zip を開いてコンティンジェントワーカーのリクエストを提出するには、「新規リクエスト」を選択してから「購買リクエスト - コンティンジェントワーカーまたはコンサルタントサービス」を選択します。
+1. Zip を開き、"New Request" を選択してから "Request a Purchase - Contingent Worker or Consultancy Services" を選択し、contingent worker のリクエストを提出します。
 
-1. 「一般情報」セクションでは、以下の情報を入力する必要があります：
-   - リクエスターは誰ですか？*（ほとんどの場合、自分自身です）
-   - このリクエストのタイトルを提供してください *（ベストプラクティス：「ベンダー名 - FYXX サービス名/説明」）
-   - あなたの購入に最も合う詳細カテゴリを選択してください？*（スタッフ増員、コンサルタントサービス、または独立コントラクターを選択）
-   - この購入のタイプは何ですか？*（新規、更新、または延長を選択）
-   - このベンダーへの支払いにバーチャルカードを使用しますか？*
-   - ベンダーの名前は何ですか？（まず GitLab で以前に使用されたことがあるかどうかを確認してください。ない場合は新規ベンダーを作成する必要があります）
-   - コンティンジェントワーカーはどの国で働いていますか？*
-   - この業務に対して複数のコンティンジェントワーカーをオンボーディングしますか？*
-   - リクエストされたオンボーディング対象者の連絡先情報と個人メールアドレスを持っていますか？*（これはコンティンジェントワーカーを Workday で追跡するために必要です。注：この情報は後日提供できますが、全てが確定する前には必要です）
-   - コンティンジェントワーカーのマネージャーは誰ですか？*
-   - このコンティンジェントワーカーのビジネスタイトルは何ですか？*
-   - コンティンジェントワーカーの GitLab 以外のメールアドレスは何ですか？*
-   - コンティンジェントワーカーの法的な名前（ファーストネーム）は何ですか？*
-   - コンティンジェントワーカーの法的な名前（ラストネーム）は何ですか？*
-   - コンティンジェントワーカーの優先ファーストネームは何ですか？*
-   - コンティンジェントワーカーの優先ラストネームは何ですか？*
-   - コンティンジェントワーカーの住所は何ですか？*
+1. "General Information" セクションでは、以下の情報を入力する必要があります。
+   - リクエスト者は誰ですか？ *（多くの場合、これはあなた自身です）
+   - このリクエストのタイトルを入力してください *（ベストプラクティス: "Vendor Name - FYXX Services Name/Description"）
+   - あなたの購入を最もよく表す詳細カテゴリはどれですか？ *（Staff augmentation、Consultancy Services、または Independent Contractor のいずれかを選択）
+   - これはどの種類の購入ですか？ *（new、renewal、または extension を選択）
+   - この vendor への支払いに virtual card を使用しますか？ *
+   - vendor 名は何ですか？（その vendor が以前 GitLab で使用されたことがあるかを先に確認し、なければ新しい vendor を作成する必要があります）
+   - contingent worker はどの国から勤務しますか？ *
+   - この engagement で複数の contingent workers をオンボーディングしますか？ *
+   - リクエストされた onboardee の連絡先情報と個人用メールアドレスを持っていますか？ *（これは Workday で contingent workers を追跡するために必要です。注: この情報は後日でも構いませんが、すべてが確定する前でなければなりません）
+   - Contingent Worker の Manager は誰ですか？ *
+   - この Contingent Worker の Business Title は何ですか？ *
+   - Contingent Worker の GitLab 以外のメールアドレスは何ですか？ *
+   - Contingent Worker の法的な First Name は何ですか？ *
+   - Contingent Worker の法的な Last Name は何ですか？ *
+   - Contingent Worker の Preferred First Name は何ですか？ *
+   - Contingent Worker の Preferred Last Name は何ですか？ *
+   - Contingent Worker の住所は何ですか？ *
 
-1. 「支出情報」セクションでは、以下の情報を入力する必要があります：
+1. "Spend Information" セクションでは、以下の情報を入力する必要があります。
 
-   - この購入はどの子会社のためですか？*（FP&A がこの回答を助けることができます）
-   - この購入・契約の希望する開始日と終了日はいつですか？*（注：スタッフ増員の場合、開始・終了日は24ヶ月を超えてはなりません）
-   - この購入に必要な予算はいくらですか？*
-   - ライン種別（「金額」を選択）
-   - Coupa 子会社（通常は GitLab Inc のような法人）
-   - Coupa 部門（通常は所属する組織）
-   - Coupa GL アカウント（6017 コンサルティング費用を選択）
-   - 以下の支援書類はありますか？*（MSA、SOW など）
+   - この購入はどの subsidiary 向けですか？ *（FP&A が回答を支援できますか?）
+   - この購入 / 契約の希望開始日と終了日はいつですか？ *（注: Staff Augmentation の場合、Start/End date は 24 ヶ月を超えてはいけません）
+   - この購入にはどれくらいの予算が必要ですか？ *
+   - Line type（"amount" を選択）
+   - Coupa Subsidiary（通常は US の GitLab Inc のようなあなたの entity です）
+   - Coupa Department（通常はあなたが所属する org です）
+   - Coupa GL Account（6017 Consulting Fees を選択）
+   - 以下の補足資料のいずれかを持っていますか？ *（MSA、SOW など）
 
-1. 「IT、セキュリティ、プライバシー情報」セクションでは、以下の情報を入力する必要があります：
-   - ベンダーはデータや情報にどのような種類のアクセスを必要としますか？*
-   - 個人デバイスを通じた GitLab リソースへのアクセスは許可されていません。コンティンジェントワーカーにはベンダーが管理するラップトップが発行されていますか？*
-   - このリクエストには Web アプリケーション、Web ポータル、またはソフトウェアシステムの使用が含まれますか？*
+1. "IT, Security, and Privacy Information" セクションでは、以下の情報を入力する必要があります。
+   - vendor はデータや情報に対してどの種類のアクセスを必要としますか？ *
+   - 個人所有デバイスから GitLab resources へアクセスすることは許可されていません。contingent worker には vendor 管理の laptop が支給されていますか？ *
+   - このリクエストには web application、web portal、または software system の使用が含まれますか？ *
 
-1. Zip リクエストは該当するステークホルダーによってレビューされます
+1. Zip Request は該当するステークホルダーによってレビューされます。
 
-1. Zip リクエストが承認されたら、[個人コントリビューターオンボーディング Issue](https://gitlab.com/gitlab-com/temporary-service-providers/lifecycle/-/issues/new?issuable_template=orientation-issue) を開いて完了します。
+1. Zip Request が承認されたら、[Individual Contributor Onboarding Issue](https://gitlab.com/gitlab-com/temporary-service-providers/lifecycle/-/issues/new?issuable_template=orientation-issue)を開いて完了します。
 
-- IC の契約期間を延長する必要がある場合は、[Zip 変更リクエスト](/handbook/business-technology/enterprise-applications/guides/zip-guide/#how-to-do-a-request-change)を提出します。
+- IC の契約期間を延長する必要がある場合は、[Zip Change Request](/handbook/business-technology/enterprise-applications/guides/zip-guide/#how-to-do-a-request-change)を提出してください。
 
-- コントラクターの契約を指定された期間より前にキャンセル/終了する必要がある場合は、[キャンセルプロセス](/handbook/finance/procurement/#6-cancellation)を確認し、#procurement Slack チャンネルで購買チームに連絡してください。
+- Contractor の契約を指定期間より早くキャンセル / 終了する必要がある場合は、[Cancellation process](/handbook/finance/procurement/#6-cancellation)を確認し、#procurement Slack channel で Procurement Team に連絡してください。
 
-*オレンジおよびレッドデータへのアクセスが必要なコンティンジェントワーカーで、GitLab のシステム外で処理または保存されるものは「プロフェッショナルサービス」とみなされ、完全なセキュリティレビューの対象となります。詳細については、[セキュリティサードパーティリスク管理ハンドブック](/handbook/security/security-assurance/security-risk/third-party-risk-management/)をご覧ください。*
+*Orange and Red Data へのアクセスが必要で、GitLab のシステム外で処理または保存される Contingent Workers は "Professional Services" とみなされ、完全な security review の対象になります。詳細については、[Security Third Party Risk Management Handbook](/handbook/security/security-assurance/security-risk/third-party-risk-management/)を参照してください。*
 
-## 新規ソフトウェアリクエストの提出
+## New Software のリクエスト提出
 
-1. 新規ソフトウェア購入も[IT](/handbook/finance/procurement/#3b-it-review-2-days-if-purchasing-new-software-or-for-contractors)によるレビューが必要です。
-1. 新規ソフトウェアベンダーは[IT アンケートタブ](https://docs.google.com/spreadsheets/d/17-NdZF0SeOS_b59XE9lLg9cuCD9iKKlO/edit#gid=392482466)に記入する必要があります。
-   - IT はこの情報をアプリケーションを GitLab の技術要件に対して包括的に評価するために使用します。
-   - このタブのコピーを作成し（正式な RFP 中に記入されていない場合）、ベンダーに記入してもらい、IT レビューのために Zip リクエストの書類セクションに添付してください。
-1. IT アンケートに関するご質問は、#enterprise-apps Slack チャンネルでエンタープライズアプリケーションチームにお問い合わせください。
+1. すべての新規ソフトウェア購入は、[IT](/handbook/finance/procurement/#3b-it-review-2-days-if-purchasing-new-software-or-for-contractors)によるレビューも必要です。
+1. 新規ソフトウェアベンダーは、[IT Questionnaire tab](https://docs.google.com/spreadsheets/d/17-NdZF0SeOS_b59XE9lLg9cuCD9iKKlO/edit#gid=392482466)を完了する必要があります。
+   - IT は、GitLab の技術要件に照らしてアプリケーションを包括的に評価するため、この情報をリクエストします。
+   - このタブのコピーを作成し（正式な RFP 中に入力されていない場合）、ベンダーに記入してもらい、IT レビューのために Zip Request の documents セクションに添付してください。
+1. IT Questionnaire に関する質問がある場合は、#enterprise-apps Slack channel で Enterprise Applications team にお問い合わせください。
 
-## リクエスト提出のその他のヒント
+## リクエスト提出に関するその他のヒント
 
-1. このベンダーへの支払いにバーチャルカードを使用しますか？
-   - これは、サプライヤーがオンラインクレジットカード決済のみを受け付ける場合や、イベントなどの一回限りのベンダー使用に適用されます。許可される使用の詳細は[こちら](/handbook/business-technology/enterprise-applications/guides/coupa-virtual-cards/)
-   - バーチャルカードを使用したリクエストの提出方法については、[Zip エンドユーザーガイド](/handbook/business-technology/enterprise-applications/guides/zip-guide/)の詳細をご覧ください。
-1. ベンダー名と主要連絡先
-   - 既存のベンダーまたはわからない場合は、Zip でベンダー名を入力し始めてください。ベンダーが存在する場合、Zip がドロップダウンに表示します。既存の主要ベンダー連絡先を選択するか、「新規連絡先を追加」を選択して連絡先情報を入力できます。
-   - 新規ベンダーの場合：
-      - [ベンダー選定プロセス](/handbook/finance/procurement/#1-rfp-and-vendor-selection)と [RFP ガイドライン](https://internal.gitlab.com/handbook/finance/procurement/)を確認するか、ご質問やサポートが必要な場合は購買カテゴリマネージャーに連絡してください。
-      - このサプライヤーがシステムにまだ登録されていない場合は、サプライヤー名を入力した後に「新規追加」オプションをクリックする必要があります。購買チームが[新規ベンダーオンボーディング手順](/handbook/finance/procurement/#4-vendor-onboarding)を完了できるよう、全ての詳細を入力してください。現在は Zip を内部で使用していますが、Coupa は依然としてサプライヤーへの支払いに使用するツールです。
-1. 支出情報
-   - 必要な予算額、契約期間、および明細項目の詳細を含む全ての支出詳細を提供してください。
-   - 明細内訳は注文フォーム/契約書の明細項目と一致させ、複数年契約の場合は各年について個別に入力してください。
-   - 明細項目の合計は予算に入力された金額と一致する必要があります。
-   - 受け取った支援書類のチェックボックスにチェックを入れてください。これらはリクエストプロセスの最後に書類セクションでアップロードします。
-1. IT & セキュリティ情報：
-   - データ情報セクションを入力してください。選択内容に応じて、追加の必須質問が表示されます。
-   - データが共有される場合、ベンダーセキュリティレビューが実施されます。ベンダーはセキュリティプロトコルに関する情報を要求する GitLab のセキュリティリスクチームからのメール通知を受け取ります。
-   - 個人データが共有またはアクセスされる場合、プライバシーレビューが必要な場合があります。ベンダーはデータプライバシー慣行に関する情報を要求する Zip からの通知を受け取ります。
-   - ベンダーおよび/またはシステムがアクセスするデータの種類、およびそのデータをどのように受け取るかについての具体的な詳細をできるだけ明記してください。このセクションを正確に入力しないと、リクエストのレビューと承認が遅延します。
-   - 個人データが共有される場合、ベンダーは州および/または国の法的要件に従って DPA と SCC に署名する必要があります。
-   - **ヒント：** 承認速度を上げるには、サプライヤー連絡先に GitLab の [DPA/SCC](https://docs.google.com/document/d/1MXluQhBlLtRqD854SdsbjtLMnqVwCcqx/edit) を今すぐ送って確認を依頼してください。DPA については、スケジュール1とスケジュール3をサプライヤーが記入する必要があることをサプライヤー連絡先に知らせてください。また、セキュリティの完了のために GitLab のセキュリティリスクチームからの、プライバシーレビューの完了のために Zip からのリクエストに注意するよう伝えてください。これらなしではレビューと承認を開始できないことを伝えてください。
-1. 書類とアンケート：
-   - 使用量に基づくソフトウェアの更新/追加（例：ユーザー数）については、購買レビューのために使用量レポートが必要です。これはリクエストプロセスの最後の「追加参考ファイルを添付してください」の下にある書類セクションでアップロードできます。
-      - 使用量レポートに基づいて、購買は数量を増加、減少、または現状維持するためのリクエストをレビューします。
-   - 受け取った契約書および/または見積もりをアップロードしてください。
-      - ドラフト契約書でも可能です。まだ最終決定されていない条件および/または価格についてはメモを残してください。これはリクエストを提出した後のコメントセクションで行えます。
+1. このベンダーへの支払いに virtual card を使用しますか？
+   - これは、supplier がオンラインのクレジットカード決済のみを受け付ける場合、またはイベントなど 1 回限りの vendor 利用の場合に適用されます。許可される用途の詳細は[こちら](/handbook/business-technology/enterprise-applications/guides/coupa-virtual-cards/)です。
+   - virtual card を使用したリクエスト提出方法の詳細は、[Zip End Users Guide](/handbook/business-technology/enterprise-applications/guides/zip-guide/)にあります。
+1. Vendor Name と Primary Contact
+   - 既存 vendor、または不明な場合は、Zip で vendor 名の入力を開始してください。vendor が存在する場合、Zip がドロップダウンに表示します。その後、既存の Primary Vendor Contact を選択するか、'Add new contact' を選択して連絡先情報を入力できます。
+   - New Vendor の場合:
+      - [Vendor Selection Process](/handbook/finance/procurement/#1-rfp-and-vendor-selection)と [RFP guidelines](https://internal.gitlab.com/handbook/finance/procurement/)を確認するか、質問やサポートが必要な場合は Procurement Category Manager に連絡してください。
+      - この supplier がまだシステムにない場合、supplier 名を入力した後に "add new" オプションをクリックする必要があります。Procurement team が [New Vendor Onboarding step](/handbook/finance/procurement/#4-vendor-onboarding)を完了できるよう、すべての詳細を必ず入力してください。現在は社内で Zip を使用していますが、suppliers への支払いには引き続き Coupa が使用されます。
+1. Spend Information
+   - 必要な budget amount、contract term、line item details を含む、すべての spend details を提供してください。
+   - Line Item Breakdown は Order Form/Contract の line items と一致している必要があり、multi-year term の場合は契約の各年について個別に入力する必要があります。
+   - Line Items の合計は、budget に入力した金額と一致している必要があります。
+   - 受領済みの supporting documentation のボックスにチェックを入れてください。リクエストプロセスの最後に Documents セクションでこれらをアップロードします。
+1. IT & Security Information:
+   - Data Information セクションを完了してください。選択内容に応じて、追加の必須質問が表示されます。
+   - データが共有される場合、Vendor Security Review が完了されます。ベンダーは GitLab の Security Risk Team から、セキュリティプロトコルに関する情報を求めるメールを受け取ります。
+   - 個人データが共有またはアクセスされる場合、Privacy Review が必要になる場合があります。ベンダーはデータプライバシー慣行に関する情報を求める Zip からの連絡を受け取ります。
+   - ベンダーおよび / またはシステムがアクセスできるデータの種類と、そのデータをどのように受け取るかについて、できるだけ具体的に記載してください。このセクションを正確に完了しないと、リクエストのレビューと承認が遅れます。
+   - 個人データが共有される場合、ベンダーは州および / または国の法定要件に従って、GitLab の DPA および SCC's に署名する必要があります。
+   - **TIP:** 承認速度を上げるため、サプライヤー担当者に GitLab の [DPA/SCCs](https://docs.google.com/document/d/1MXluQhBlLtRqD854SdsbjtLMnqVwCcqx/edit)をすぐにレビューしてもらってください。DPA については、Schedule 1 と Schedule 3 をサプライヤーが記入する必要があることをサプライヤー担当者に伝えてください。また、GitLab の Security Risk Team からのセキュリティ完了確認と Zip からのプライバシーレビュー完了確認のリクエストについても知らせてください。これらがないとレビューと承認を開始できないことを伝えてください。
+1. Documents & Surveys:
+   - usage（例: user quantities）に基づく software renewal/add-on については、Procurement のレビュー用に usage report が必要です。これはリクエストプロセスの最後に Documents セクションの 'Please attach any additional files for reference' にアップロードできます。
+      - usage report に基づいて、Procurement は quantities を増やす、減らす、または横ばいに保つリクエストをレビューします。
+   - 受領した契約書および / または見積書をアップロードしてください。
+      - Draft contracts でも問題ありません。まだ確定していない terms および / または pricing がある場合は、リクエスト提出後に Comments セクションでメモしてください。
 
-## Zip 変更リクエスト
+## Zip Change Requests
 
-既存のサプライヤーとの PO があり、コストが増加、終了日が変更、および/または範囲や条件が変更になった場合は、[Zip 変更リクエスト](/handbook/business-technology/enterprise-applications/guides/zip-guide/#how-to-do-a-request-change)を提出することができます。
+既存 supplier の PO があり、コストが増加した、終了日が変更された、または scope や terms and conditions の修正が必要な場合は、[Zip Change Request](/handbook/business-technology/enterprise-applications/guides/zip-guide/#how-to-do-a-request-change)を提出できます。
 
-Zip 変更リクエストを提出することで、該当する承認者が Zip ワークフローに追加されてレビューを行い、購買チームがあなたに代わって Coupa の PO を修正します。なお、既存の PO への変更も新規購買リクエストと同様に Coupa で財務、機能、エグゼクティブ（該当する場合）チームメンバーによる承認が必要です。
+Zip Change Request を提出すると、該当する approvers がレビューのため Zip workflow に追加され、Procurement team があなたに代わって Coupa の PO を修正します。なお、既存 PO への変更も、新しい Purchase Request と同様に、Coupa 内で Finance、Functional、Executive（該当する場合）team members による承認が必要です。
 
-## 購買リクエストが承認されたら
+## Purchase Request が承認された後
 
-1. Zip と Coupa の購買リクエストが承認されると、PO が生成され、GitLab は正式に購入の注文を行ったことになります！これにより業務を開始し、製品・サービスを取得することができます。
-1. サプライヤーは売掛金用として提供したメールアドレスに PO の注文と番号のコピーを受け取ります。
-1. サプライヤーは Coupa から次の2つの方法のいずれかで支払いの仕方を知らせる通知を受け取ります：
-   - Coupa ポータルで直接
-   - PO 番号を請求書に記載して ap@gitlab.com に請求書を送付
-   - これらの指示に従わないと支払いが遅延します
-   - GitLab チームメンバーが Coupa にアップロードした請求書は支払いのためにルーティングされません。
-1. リクエストに新規ソフトウェアが含まれていた場合は、Zip リクエストが完全に承認されて契約が署名されたら、HelpLab の[テックスタック更新フォーム](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab)を通じてシステムの詳細を提出してください。
+1. Zip と Coupa の Purchase Request が承認されると、PO が生成され、GitLab はあなたの購入について正式に注文を行います。これで作業および / またはプロダクト / サービスの取得を開始できます。
+1. supplier は、Accounts Payable 用に提供したメールアドレスで PO order と number のコピーを受け取ります。
+1. supplier は、Coupa から以下 2 つの方法のいずれかで支払いを行う方法について連絡を受け取ります。
+   - Coupa portal で直接
+   - PO number を invoice に含めて ap@gitlab.com に invoice を送信
+   - これらの指示に従わないと支払いが遅れます
+   - GitLab team member によって Coupa にアップロードされた invoices は支払いにルーティングされません。
+1. リクエストが new software を含む場合、Zip Request が完全に承認され契約が署名されたら、HelpLab の [Tech Stack Update Form](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=7eee5c19ff25e6503691fe34fc4fd9ab)を通じて system details を提出してください。
 
-## 購買オフィスアワー
+## Procurement Office Hours
 
-ハンドブックに記載されていないご質問や懸念がある場合は、毎週水曜日の購買オフィスアワーにご参加ください。この専用の時間に、購買チームがご質問にお答えし、ご支援します。コールに参加できない場合は、[アジェンダ](https://docs.google.com/document/d/1jm_LMJn_y4aNEO1eREz5Va0I1btuk65FPaXVy8oJpfQ/edit)にご質問を提出いただければ、迅速に回答いたします。
+ハンドブックで扱われていない質問や懸念がある場合は、毎週水曜日の Procurement Office Hours への参加を歓迎します。この専用時間中、Procurement Team が支援し、質問に回答します。通話に参加できない場合は、[Agenda](https://docs.google.com/document/d/1jm_LMJn_y4aNEO1eREz5Va0I1btuk65FPaXVy8oJpfQ/edit)に質問を自由に提出してください。迅速に回答できるようにします。

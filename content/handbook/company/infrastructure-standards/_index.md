@@ -2,11 +2,11 @@
 title: "インフラストラクチャ標準"
 description: "このハンドブックセクションでは、GitLab の全部門・グループにわたる AWS および GCP のインフラストラクチャ標準の最新イテレーションを定義します。"
 upstream_path: "/handbook/company/infrastructure-standards/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
+translated_at: "2026-07-09T08:36:01+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-05-01T07:28:41-06:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 ## インフラストラクチャ標準の概要
@@ -58,7 +58,7 @@ lastmod: "2026-05-01T07:28:41-06:00"
 | Realm      | データ分類 | リソース管理者 | 使用ドキュメント | Slack チャンネル |
 |------------|---------------------|----------------------|---------------------|---------------|
 | `infra-shared-services`  | Red/Orange/Yellow/Green | `infra-realm-owners` | [Realm ドキュメント](/handbook/company/infrastructure-standards/realms/infra-shared-services) | `#infra-realm-owners` |
-| `it`       | Orange/Yellow/Green | [IT Engineering](/handbook/security/corporate/end-user-services/) | [Realm ドキュメント](/handbook/company/infrastructure-standards/realms/it) | `#it_help`（`@it-eng` をタグ） |
+| `it`       | Orange/Yellow/Green | [IT Engineering](/handbook/security/corporate/end-user-services/) | [Realm ドキュメント](/handbook/company/infrastructure-standards/realms/it) | `Compass`（`@it-eng` をタグ） |
 | `saas`     | Red/Orange/Yellow/Green | [Reliability Engineering](/handbook/engineering/infrastructure-platforms/) | [Realm ドキュメント](/handbook/company/infrastructure-standards/realms/saas) | `#infrastructure_platforms` |
 | `sandbox`  | Green | セルフサービス（チームメンバー） | [Sandbox Cloud](/handbook/company/infrastructure-standards/realms/sandbox) | `#sandbox-cloud-questions` |
 | `security` | Orange/Yellow/Green | [Infrastructure Security](/handbook/security/product-security/infrastructure-security/) | [Realm ドキュメント](/handbook/company/infrastructure-standards/realms/security) | `#security-infrasec` |
@@ -73,7 +73,7 @@ lastmod: "2026-05-01T07:28:41-06:00"
 
 GitLab のチームメンバーのおよそ 750 人が、開発、実験、テスト、または **非本番** 目的でクラウドインフラストラクチャを使用する部門に所属しています。これには Customer Success、Engineering ディビジョンの部門、Support などのチームメンバーが含まれます。**ドキュメント上はこれを *GitLab インフラストラクチャコミュニティ* と呼びます。**
 
-GitLab インフラストラクチャコミュニティに属さないグループ（例: Finance、Marketing、Sales など）の方は、インフラストラクチャのニーズに関する支援を `#it_help` までお寄せください。
+GitLab インフラストラクチャコミュニティに属さないグループ（例: Finance、Marketing、Sales など）の方は、インフラストラクチャに関するニーズについて、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com 経由で IT にお問い合わせください。
 
 私たちは、GitLab チームメンバーがプロビジョニングするエフェメラル（sandbox）インフラストラクチャの作成と管理方法を標準化しました。
 

@@ -2,11 +2,11 @@
 title: "Go to Market"
 description: "オペレーション、手順、ドキュメント"
 upstream_path: /handbook/sales/field-operations/gtm-resources/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T09:55:18+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-27T11:50:06+01:00"
+lastmod: "2026-07-08T11:09:01-04:00"
 ---
 
 ---
@@ -28,7 +28,7 @@ lastmod: "2026-02-27T11:50:06+01:00"
 - `#sdr_global`
 - `#smb`
 - `#mktgops`
-- `#it_help`
+- IT 関連のお問い合わせは、Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけてください）または it-help@gitlab.com からお問い合わせください。
 - `#marketing_programs`
 - `#marketing`
 - `#developer-relations-programs`

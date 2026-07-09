@@ -1,11 +1,11 @@
 ---
 title: "Okta"
 upstream_path: /handbook/security/corporate/end-user-services/okta/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T10:22:00+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 ## Okta とは
@@ -84,4 +84,4 @@ GitLab.com 用の 2FA は、Okta にログインするために使用する MFA 
 
 ## 質問がある場合はどこに行けばよいですか？
 
-- Okta のヘルプ、セットアップ、統合に関する質問: `#it_help` Slack チャンネル
+- Okta のヘルプ、セットアップ、統合に関する質問: Slack の Compass アプリ（上部の検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com から IT にお問い合わせください。

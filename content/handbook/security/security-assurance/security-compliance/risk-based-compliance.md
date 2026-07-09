@@ -1,11 +1,11 @@
 ---
 title: "GitLabにおけるリスクベースコンプライアンス"
 upstream_path: /handbook/security/security-assurance/security-compliance/risk-based-compliance/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:00:00Z"
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T11:04:27+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-03T14:17:43-06:00"
+lastmod: "2026-07-07T15:15:59-07:00"
 ---
 
 ## このページについて
@@ -100,7 +100,7 @@ flowchart LR
 - コントロールテスト結果がギャップや弱点を特定する
 - コンプライアンス上の発見事項は、[リスク対応計画](/handbook/security/security-assurance/security-risk/storm-program/#remediate-the-risk)を含むリスクレジスター項目にマッピングされる
 - テストカバレッジデータは[リスク対応の意思決定](/handbook/security/security-assurance/security-risk/storm-program/#risk-response)に役立てられる
-- コントロールの有効性メトリクスは、[四半期リスクレポート](/handbook/security/security-assurance/security-risk/storm-program/#storm-reporting-schedule)における主要リスク指標（KRI）として活用される
+- コントロールの有効性メトリクスは、[四半期リスクレポート](/handbook/security/security-assurance/security-risk/storm-program/#top-5-risks)における主要リスク指標（KRI）として活用される
 
 ### 統合のメリット
 

@@ -1,11 +1,11 @@
 ---
 title: Okta デバイスポスチャーチェック - Android
 upstream_path: /handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-android/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T11:05:06+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-31T14:58:28-07:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 GitLab は Okta デバイスポスチャーチェックを使用して、Android デバイスが GitLab リソースにアクセスする前に最低限のセキュリティ要件を満たしていることを保証します。デバイスがポスチャーチェックに失敗した場合、問題が解決されるまで GitLab へのアクセスがブロックされます。デバイスが失敗した特定のチェックについて、以下の手順に従ってください。
@@ -65,5 +65,5 @@ GitLab では、Okta アプリへのアクセスに使用する組織所有の A
 {{% /alert %}}
 
 {{% alert title="Note" color="info" %}}
-デバイスポスチャーチェックの解決にサポートが必要な場合は、Slack チャンネル `#it_help` で IT に連絡するか、`it-help@gitlab.com` までメールしてください。
+デバイスポスチャーチェックの解決にサポートが必要な場合は、Slack の Compass app（上部検索バーに「Compass」と入力して探します）経由で IT に連絡するか、it-help@gitlab.com までメールしてください。
 {{% /alert %}}
