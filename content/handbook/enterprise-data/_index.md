@@ -2,11 +2,11 @@
 title: "エンタープライズデータチーム"
 description: "GitLab エンタープライズデータチームは、すべての GitLab チームメンバーがデータプログラムに貢献し、データ資産からビジネス価値を生み出せるよう支援する責任を担っています。"
 upstream_path: /handbook/enterprise-data/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T00:00:00Z"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T08:36:01+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-27T16:37:34+01:00"
+lastmod: "2026-07-08T14:38:08+02:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -203,7 +203,6 @@ GitLab でデータチームをタグ付けするには以下を使用します:
 | [Data CI Jobs](/handbook/enterprise-data/platform/ci-jobs/) |  | [計画ドラムビート](/handbook/enterprise-data/how-we-work/planning/) |
 | [Rstudio ガイド](/handbook/enterprise-data/platform/rstudio/) | [トラスティッドデータ](/handbook/enterprise-data/how-we-work/data-development) | [データサイエンスチーム](/handbook/enterprise-data/organization/data-science) |
 | [Jupyter ガイド](/handbook/enterprise-data/platform/jupyter-guide/) | | [データ管理](/handbook/enterprise-data/data-governance/data-management/) |
-| [Meltano ガイド](https://internal.gitlab.com/handbook/enterprise-data/platform/Meltano-Gitlab/) | | |
 | [データオンボーディング](/handbook/enterprise-data/organization/programs) | | |
 | [学習ライブラリ](/handbook/enterprise-data/organization/learning-library/) | | |
 | [Tableau ガイド](/handbook/enterprise-data/platform/tableau/) | | |

@@ -2,11 +2,11 @@
 title: "Data Team の学習リソース"
 description: "GitLab Data Team ライブラリ"
 upstream_path: "/handbook/enterprise-data/organization/learning-library/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T12:40:32Z"
-translator: claude
+upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
+translated_at: "2026-07-09T08:36:01+09:00"
+translator: codex
 stale: false
-lastmod: "2025-03-25T16:25:13+00:00"
+lastmod: "2026-07-08T14:38:08+02:00"
 ---
 
 ---
@@ -113,7 +113,6 @@ lastmod: "2025-03-25T16:25:13+00:00"
 - [Great Expectations](https://greatexpectations.io/slack)
 - [Locally Optimistic](https://www.locallyoptimistic.com/community/)
 - [Measure](https://docs.google.com/forms/d/e/1FAIpQLSdyAxOcI8z1EEiJDW4sGln-1GK9eJV8Y86eljX-uSlole0Vtg/viewform?c=0&w=1)
-- [Meltano](https://join.slack.com/t/meltano/shared_invite/enQtNTM2NjEzNDY2MDgyLWI1N2EyZjA1N2FiNDBlNDE2OTg4YmI1N2I3OWVjOWI2MzIyYmJmMDQwMTY2MmUwZjNkMTBiYzhiZTI2M2IxMDc)
 - [Open Data Community](https://opendatacommunity.slack.com)
 - [Pachyderm](https://slack.pachyderm.io)
 - [Prefect](https://prefect-community.slack.com/join/shared_invite/enQtODQ3MTA2MjI4OTgyLTliYjEyYzljNTc2OThlMDE4YmViYzk3NDU4Y2EzMWZiODM0NmU3NjM0NjIyNWY0MGIxOGQzODMxNDMxYWYyOTE)

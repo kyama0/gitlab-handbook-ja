@@ -2,11 +2,11 @@
 title: ピープルグループ
 description: "GitLab のピープルグループは、チームメンバーのライフサイクル全体を通じてすべての GitLab チームメンバーを支援します。"
 upstream_path: /handbook/people-group/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T09:31:27+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-30T16:57:54+00:00"
+lastmod: "2026-07-08T11:09:01-04:00"
 ---
 
 ## ようこそ
@@ -30,9 +30,9 @@ lastmod: "2026-04-30T16:57:54+00:00"
   - [**Employment Issue Tracker**](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates): このサブプロジェクトには Onboarding、Offboarding、Transition の Issue Templates のみが保持されており、People Operations チームのみが作成します。Interview Training Issue は [Training project](https://gitlab.com/gitlab-com/people-group/Training) に保持され、Talent Acquisition チームによって作成されます。詳細は [interviewing page](/handbook/hiring/interviewing) を参照してください。
 - **People Operations**; issue tracker に適切でないと思われる質問がある場合、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/#how-do-i-use-helplab) 内で People Operations チームのケースを作成し、該当するテンプレート／カテゴリを選択してください。Google または Slack グループに関するアクセス要求については、こちらで issue を作成してください: https://gitlab.com/gitlab-com/team-member-epics/access-requests。Payroll、Expenses、または Equity に関する質問については、HelpLab 内のそれぞれのチームに質問を向けてください。リクルーティングチームへの質問（アクセスに関連する質問、または Greenhouse、紹介、面接、面接トレーニングに関するものを含む）については、`#talent-acquisition` チャンネルを使用してください。
 - 機密／プライベートな事項（チームをめぐる機微な事項を含む）について議論する必要がある場合は、Team Member Relations チームの [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=d865085147cc069067429ee0026d43eb&in_context=true) ケースを開くことができます。すべてのチームメンバーは、所在地にかかわらず、プライベートな機微な事項について議論するためにこのフォームを使用できます。
-- 技術的事項（たとえば 2FA）について助けが必要な場合は、`#it_help` で尋ねてください。チャンネルのトピックで issue の作成方法を説明しています。緊急の事項については `@it-ops-team` をメンションできます。
+- 技術的事項（たとえば 2FA）について助けが必要な場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com で IT に連絡してください。
 
-ピープルグループは、トップタレントを GitLab に呼び込み、チームメンバーが私たちの[価値観](/handbook/values/)に沿って意義ある貢献ができるようにすることで、GitLab の[ミッション](/handbook/company/mission/)を支援するためにここにいます。質問があるとき、またはサポートを求めるときは、[ご連絡](#how-to-reach-the-right-member-of-the-people-group)をためらわないでください！
+ピープルグループは、GitLab の[ミッション](/handbook/company/mission/)を支援するために存在しています。その方法は、トップタレントを GitLab に迎え入れ、その後、チームメンバーが私たちの[価値観](/handbook/values/)に沿って意義ある貢献をできるようにすることです。質問があるとき、またはサポートを求めるときは、[ご連絡](#how-to-reach-the-right-member-of-the-people-group)をためらわないでください！
 
 ## 助けが必要ですか？
 
@@ -91,7 +91,7 @@ EthicsPoint および Lighthouse に加えて、[Team Member Relations](/handboo
 
 ## マネージャーおよびチームメンバー向けのピープルグループ プログラムカレンダー
 
-[このページ](https://theloop.gitlab.com/home)で、People Manager Calendar と All Team Member Calendar を見つけることができます。これらのページの目標は、チームメンバーと People Manager が事前に計画を立て、今後のプログラムとタイムラインの概要を把握できるようにすることです。
+[このページ]https://theloop.gitlab.com/home で、People Manager Calendar と All Team Member Calendar を見つけることができます。これらのページの目標は、チームメンバーと People Manager が事前に計画を立て、今後のプログラムとタイムラインの概要を把握できるようにすることです。
 
 ## Legal, Employment チームがピープルグループに提供するサポート
 
@@ -174,7 +174,7 @@ GitLab は、GitLab チームメンバーであることに関する不正確な
 - チームメンバーがプロフィールを確認できない場合、チームメンバーは [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=57e1ad3997804e50a326158de053af3d) を介して、対象となる LinkedIn プロフィールと共に People Operations Team に連絡すべきです。
 - People Operations チームメンバーは、その人がチームメンバーでないこと／なかったことを Workday で確認します。
 - People Operations チームメンバーは、その人が面接を受けたこと、オファーを受けたこと、または辞退されたことがあるかを確認するため、talent acquisition に確認します。
-- People Operations チームメンバーは、`@devrel-team` タグを使用して [#developer-relations](https://gitlab.slack.com/archives/C0R04UMT9) Slack チャンネル経由で、より広いコミュニティのアクティブなメンバーかどうかを確認するため、[Developer Relations team](/handbook/marketing/developer-relations/) に連絡します。
+- People Operations チームメンバーは、より広いコミュニティのアクティブなメンバーかどうかを確認するため、[Developer Relations team](/handbook/marketing/developer-relations/) に、[#developer-relations](https://gitlab.slack.com/archives/C0R04UMT9) Slack チャンネルで `@devrel-team` タグを使用して連絡します。
 - より広いコミュニティの確認されたメンバーであるがチームメンバーでない場合、Developer Relations チームはプロフィールに連絡を取り、プロフィールを GitLab への関与に合わせるよう依頼します。
 - より広いコミュニティの現在のメンバーでなく、talent acquisition が Greenhouse にプロフィールがないことを確認した場合、talent acquisition は Do Not Hire プロフィールを作成します。
 - People Operations チームメンバーは、[Reporting Inaccurate Information on Another Member's Profile](https://www.linkedin.com/help/linkedin/answer/30200?src=or-search&veh=www.google.com%7Cor-search) を介して LinkedIn にアカウントを報告します。

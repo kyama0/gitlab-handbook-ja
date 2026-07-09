@@ -2,11 +2,11 @@
 title: "GitLab のオンボーディング"
 description: "GitLab のオンボーディングと、オンボーディング Issue テンプレート"
 upstream_path: /handbook/people-group/general-onboarding/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T09:31:27+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-19T12:12:02+01:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 GitLab では、オンボーディングは [非常に重要](/handbook/company/culture/all-remote/onboarding/) なものです。私たちは初日からすぐに業務をフル稼働で進めることを期待していません。
@@ -67,7 +67,7 @@ People Operations チームは、**プレオンボーディングコール** と
 
 - `#new_team_members` （挨拶して自己紹介してください）
 - `#diversity_inclusion_and_belonging` （他のチームメンバーとつながり、Diversity, Inclusion and Belonging で何を行っているかをもっと知る）
-- `#it_help` （ラップトップ、1Password、Okta、JAMF などに関する問題など、IT 関連のサポートが必要な場合）
+- `Compass` （ラップトップ、1Password、Okta、JAMF などに関する問題など、IT 関連のサポートが必要な場合）
 - `#questions` （ハンドブックで解決できないことがあれば何でも）
 - `#donut-be-strangers` （コーヒーチャットの設定に関するヘルプが必要な場合）
 - `#team-member-updates` （新しいチームメンバー、勤続記念日、別れ）

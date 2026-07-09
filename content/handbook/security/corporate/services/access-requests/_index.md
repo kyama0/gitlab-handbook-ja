@@ -1,16 +1,16 @@
 ---
 title: "アクセスリクエスト（AR）サービス"
 upstream_path: /handbook/security/corporate/services/access-requests/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T10:38:25+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-08T11:09:01-04:00"
 ---
 
 アクセスリクエストは、Corporate Security Helpdesk チームが所有しています。すべてのオンボーディング、オフボーディング、ロール変更（キャリアモビリティ）リクエストは、People Connect チームが所有しています。
 
-アクセスリクエストに関する質問がある場合は、Slack の `#it_help` またはツールのプロビジョナーにご連絡ください。
+アクセスリクエストに関する質問がある場合は、Slack の Compass アプリ（上部検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com から IT に連絡してください。
 
 - [FAQ](/handbook/security/corporate/services/ar/faq)
 - [ベースラインエンタイトルメント](https://internal.gitlab.com/handbook/security/corporate/end-user-services/access-request/baseline-entitlements/)
@@ -43,7 +43,7 @@ lastmod: "2025-07-07T23:50:04+00:00"
 ## ヘルプが必要ですか？
 
 - 特に SLA はありませんが、Issue 内で `@gitlab-com/business-technology/end-user-services` をメンションしてください。
-- リクエストが緊急の場合は、Slack の `#it_help` チャンネルにアクセスリクエストへのリンクを投稿し、緊急である理由をメモしてください。
+- リクエストが緊急の場合は、Slack の Compass アプリ（上部検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com でアクセスリクエストへのリンクを共有してください。
 
 ## アクセスリクエストの作業
 

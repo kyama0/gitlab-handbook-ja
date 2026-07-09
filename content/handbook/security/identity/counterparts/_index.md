@@ -2,11 +2,11 @@
 title: "Identity カウンターパート"
 description: "Identity and Access Management (IAM) およびロールベースアクセス制御 (RBAC) は、GitLab の複数のチームにまたがる共有責任です。このページには、私たちのすべての安定したカウンターパートのディレクトリがあります。"
 upstream_path: /handbook/security/identity/counterparts/
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
+translated_at: "2026-07-09T11:04:27+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-29T17:01:45-05:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 ## Identity v3 プログラム DRI
@@ -23,11 +23,11 @@ lastmod: "2026-04-29T17:01:45-05:00"
   team_name: 'IT End User Services (aka Analysts / Helpdesk)'
   responsibilities:
     - TODO
-  manager: mbeltran
+  manager: rpollak1
   counterparts:
     - jwong
   gitlab_saas_tag: '@gitlab-com/it/end-user-services'
-  slack_channel: '#it_help'
+  slack_channel: Please contact IT via the Compass app in Slack (type "Compass" in the top search bar to find it) or it-help@gitlab.com.
   handbook_page: 'https://handbook.gitlab.com/handbook/business-technology/end-user-services/'
   issue_tracker: null
 - it_compliance:
@@ -38,7 +38,7 @@ lastmod: "2026-04-29T17:01:45-05:00"
   counterparts:
     - disla
   gitlab_saas_tag: '@gitlab-com/it/compliance'
-  slack_channel: '#it_help'
+  slack_channel: Please contact IT via the Compass app in Slack (type "Compass" in the top search bar to find it) or it-help@gitlab.com.
   handbook_page: 'https://handbook.gitlab.com/handbook/business-technology/enterprise-applications/it-compliance/'
   issue_tracker: 'https://gitlab.com/gitlab-com/business-technology/change-management/-/issues'
 - it_ops_leader:
@@ -49,7 +49,7 @@ lastmod: "2026-04-29T17:01:45-05:00"
   counterparts:
     - rrea
   gitlab_saas_tag: '@rrea1'
-  slack_channel: '#it_help'
+  slack_channel: Please contact IT via the Compass app in Slack (type "Compass" in the top search bar to find it) or it-help@gitlab.com.
   handbook_page: null
   issue_tracker: null
 - it_seceng:

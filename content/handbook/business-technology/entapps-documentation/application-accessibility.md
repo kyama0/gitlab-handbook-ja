@@ -2,11 +2,11 @@
 title: "アプリケーションアクセシビリティ"
 description: "このページは、アクセシビリティを向上させ、作業体験を改善する機能を有効化、利用開始、またはリクエストする方法に関するエンドユーザーガイドを提供します。"
 upstream_path: /handbook/business-technology/entapps-documentation/application-accessibility/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T08:00:00Z"
-translator: claude
+upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
+translated_at: "2026-07-09T08:23:34+09:00"
+translator: codex
 stale: false
-lastmod: "2025-11-27T20:17:50+00:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
 
@@ -26,7 +26,7 @@ MacOS は以下をサポートする機能を備えています：
 
 3. [スピーチ](https://support.apple.com/guide/mac-help/speech-mchl6972f04a/15.0/mac/15.0) - ライブスピーチ、パーソナルボイス
 
-これらの機能を有効化するには、システム設定を開いてアクセシビリティを選択してください。サポートが必要な場合は、Slack の #it_help にお問い合わせください。
+これらの機能を有効化するには、システム設定を開いてアクセシビリティを選択してください。サポートが必要な場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して探してください）または it-help@gitlab.com から IT にお問い合わせください。
 
 ### WCAG 準拠アプリケーション
 

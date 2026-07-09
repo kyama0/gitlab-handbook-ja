@@ -1,18 +1,18 @@
 ---
 title: 私たちの働き方（CorpSec）
 upstream_path: /handbook/security/corporate/how-we-work/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T10:38:25+09:00"
+translator: codex
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 私たちには 4 つの働き方のアプローチがあります：
 
 1. **[サポートヘルプデスクサービス](/handbook/security/corporate/support)** - チームメンバーと一時的なサービスプロバイダー（コントラクター）に対して 24x5 のテクニカルサポートとアクセスリクエストを提供しています。アクセスリクエストの優先順位付けには、`corpsec-priority::ar-high`（同日／翌日）または `corpsec-priority::ar-low`（同週／翌週）ラベルでご協力ください。
 
-2. **構成オペレーション** - CorpSec が責任を持つ [SaaS システム](/handbook/security/corporate/systems) の設定に関する日常的な小さな構成および変更リクエスト（1 時間未満）に対応します。これにはヘルプデスクアナリストからのエスカレーションも含まれます。リクエストは [Issue トラッカー](#issue-tracker) に Issue を作成し、`corpsec-priority::ops-high`（同日／翌日）または `corpsec-priority::ops-low`（同週／翌週）ラベルを追加してください。事前のガイダンスは [#it_help](https://gitlab.slack.com/archives/CK4EQH50E) で求めることができ、オンコールチームメンバーが応答したり、適切なエンジニアにタグを付けたりします。
+2. **構成オペレーション** - CorpSec が責任を持つ [SaaS システム](/handbook/security/corporate/systems) の設定に関する日常的な小さな構成および変更リクエスト（1 時間未満）に対応します。これにはヘルプデスクアナリストからのエスカレーションも含まれます。リクエストは [Issue トラッカー](#issue-tracker) に Issue を作成し、`corpsec-priority::ops-high`（同日／翌日）または `corpsec-priority::ops-low`（同週／翌週）ラベルを追加してください。事前のガイダンスは Slack の Compass アプリ（上部検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com で求めることができ、オンコールチームメンバーが応答したり、適切なエンジニアにタグを付けたりします。
 
 3. **[エンジニアリングイテレーション](#iteration-cadences)** - 大きなリクエスト（1 時間以上）に対しては、チームのキャパシティと優先順位の競合に基づいてキューに入れられた、2 週間のアジャイルイテレーションスプリントサイクルがあります。これには他のチームのプロジェクトに関連する事前計画された実装作業も含まれます。Issue が作成されると、期日要件に基づいて優先順位を割り当て、バックログに追加するか、今後のイテレーション中にスケジュールします。Issue がイテレーションに追加されると、Issue 内で別途連絡されない限り、または担当エンジニアとの議論で別途連絡されない限り、2 週間サイクルの最終日までに完了することが期待できます。
 

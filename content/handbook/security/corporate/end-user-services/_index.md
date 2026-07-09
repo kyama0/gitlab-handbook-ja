@@ -1,31 +1,31 @@
 ---
 title: CorpSec エンドユーザーサービス (EUS)
-description: "EUS チームは、組織全体に対する社内 IT サポートの提供に注力しています。私たちは、アクセス管理、ハードウェアの調達とサポートに加え、最も頻繁に使用されるアプリケーション（例: Zoom、Google Workspace、Slack など）のアプリケーションサポートといった分野を担当しています。"
+description: "EUS チームは、組織全体に社内 IT サポートを提供することに注力しています。私たちは、アクセス管理、ハードウェア調達とサポート、そして最も一般的に使用されている多くのアプリケーション（例: Zoom、Google Workspace、Slack など）のアプリケーションサポートといった領域を担当しています。"
 upstream_path: /handbook/security/corporate/end-user-services/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T10:06:13+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-22T11:52:51+09:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 ## お問い合わせ方法
 
-以下のチャネルから私たちにご連絡いただけます。
+以下のチャネルから私たちに連絡できます。
 
 **メール:** it-help@gitlab.com
-**Slack:** #it_help / @it-help
+**Slack:** Slack の Compass app から IT にお問い合わせください（上部の検索バーに「Compass」と入力して見つけます）。
 
 ## 重要なリンク
 
 ### IT オンボーディングガイド
 
-[GitLab IT オンボーディング 101](/handbook/security/corporate/end-user-services/onboarding101) をご覧いただき、ご質問や懸念点がある場合は直接私たちにお問い合わせください。
+[GitLab IT オンボーディング 101](/handbook/security/corporate/end-user-services/onboarding101) を参照し、質問や懸念がある場合は私たちに直接お問い合わせください。
 
-### ノートパソコンの初期化
+### ノート PC のワイプ
 
-ハードウェアの更新やオフボーディングの一環として GitLab のノートパソコンを初期化する予約を取るには、[ノートパソコン初期化（ファクトリーリセット）プロセス](/handbook/security/corporate/end-user-services/laptop-management/laptop-wipe//) ページをご参照のうえ、ご質問や懸念点がある場合は直接私たちにお問い合わせください。
+ハードウェア更新またはオフボーディングの一環として GitLab ノート PC をワイプする予約を取るには、[ノート PC ワイプ（ファクトリーリセット）プロセス](/handbook/security/corporate/end-user-services/laptop-management/laptop-wipe//)ページを参照し、質問や懸念がある場合は私たちに直接お問い合わせください。
 
 ### CorpSec サポート
 
-最も頻繁に寄せられる質問の多くに関するガイドについては、[CorpSec サポート](/handbook/security/corporate/support/) をご覧ください。
+よくある質問の多くに関するガイドについては、[CorpSec サポート](/handbook/security/corporate/support/)を参照してください。

@@ -2,11 +2,11 @@
 title: "サンドボックスクラウドレルム"
 description: "このハンドブックセクションでは、GitLab の全部門・グループにおける AWS および GCP サンドボックスのインフラストラクチャ標準の最新イテレーションを定義します。"
 upstream_path: "/handbook/company/infrastructure-standards/realms/sandbox/"
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T22:00:00Z"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T08:36:01+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-14T09:42:08-07:00"
+lastmod: "2026-07-08T11:09:01-04:00"
 ---
 
 ### クイックリンク
@@ -104,11 +104,11 @@ Sandbox Cloud は [CorpSec Identity](/handbook/security/corporate/) チームに
 
 GitLab.com SaaS について [Production Architecture](/handbook/engineering/infrastructure-platforms/production/architecture/) ハンドブックページで詳しく学べます。
 
-[yellow または green](/handbook/security/policies_and_standards/data-classification-standard/#data-classification-levels) データを持つプロジェクトは通常、[インフラストラクチャ標準](/handbook/infrastructure-standards) ガイドラインを使用して [グループプロジェクト](#collaborative-aws-account-or-gcp-project-non-production) を使った自己管理に適しています。
+[yellow または green](/handbook/security/policies_and_standards/data-classification-standard/#data-classification-levels) データを持つプロジェクトは通常、[グループプロジェクト](#collaborative-aws-account-or-gcp-project-non-production) を使い、[インフラストラクチャ標準](/handbook/infrastructure-standards) ガイドラインに従って自己管理するのに適しています。
 
 ##### ビジネス関連
 
-ビジネスオペレーションと技術スタックに関連するインフラストラクチャサービスについては、次のステップのガイダンスについて `#it_help` で IT チームに連絡してください。私たちの [tech stack](/handbook/business-technology/tech-stack-applications/) のほとんどは SaaS ベースで、それぞれのベンダーがホストしています。
+ビジネスオペレーションと技術スタックに関連するインフラストラクチャサービスについては、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com 経由で IT にお問い合わせください。私たちの [tech stack](/handbook/business-technology/tech-stack-applications/) のほとんどは SaaS ベースで、それぞれのベンダーがホストしています。
 
 新しい SaaS アプリケーションは [調達プロセス](/handbook/finance/procurement/) を経由する必要があり、それぞれの部門の [system owners](/handbook/business-technology/#cross-department-system-owners) によって管理されます。
 
@@ -143,7 +143,7 @@ GitLab.com SaaS について [Production Architecture](/handbook/engineering/inf
 ### Terraform 環境の仕組み
 
 - すべてのチームメンバーが GitLab Sandbox Cloud で Cloud Account を作成したときに、GitLab Terraform（GitOps）プロジェクトを安全にホストする新しい GitLab Omnibus インスタンス。
-- Terraform スキャフォールディングと [使いやすい Terraform モジュール](https://gitlab.com/gitlab-com/infra-standards/terraform-modules) を備えた新しい [GitLab プロジェクトテンプレート](https://gitlab.com/gitlab-com/infra-standards/project-templates)。Google Cloud プロバイダーに対する組み込みサポートを備えた [Terraform.io Registry プロバイダーまたはモジュール](https://registry.terraform.io/) のいずれかを使用するための基盤を提供します。
+- Terraform スキャフォールディングを備えた新しい [GitLab プロジェクトテンプレート](https://gitlab.com/gitlab-com/infra-standards/project-templates) と [使いやすい Terraform モジュール](https://gitlab.com/gitlab-com/infra-standards/terraform-modules)。Google Cloud プロバイダーに対する組み込みサポートを備えた [Terraform.io Registry プロバイダーまたはモジュール](https://registry.terraform.io/) のいずれかを使用するための基盤を提供します。
 - すべての GitLab Sandbox Cloud GCP プロジェクトには、自動的に作成された GitLab グループと、GitLab CI を活用したプロビジョニング自動化を備えた [GitOps Terraform 設定スキャフォールディングを持つスタータ GitLab プロジェクト](https://gitlab.com/gitlab-com/infra-standards/project-templates/gcp-sandbox-environment-template) があります。これにより、Terraform セットアップを扱わずに、セキュリティのベストスタンダードに準拠しながら、わずか数分でチームメンバーが Terraform でリソースをデプロイし始めることができます。
 - 今後数か月で、わずか数回のクリックでプロビジョニングできる事前構成済み環境を提供する追加のプロジェクトテンプレートをリリースする予定です。これには [Omnibus/Runner/Cluster オールインワン環境](https://gitlab.com/gitlab-com/infra-standards/terraform-modules/gcp/gitlab-omnibus-sandbox-tf-module)、Kubernetes クラスター環境などが含まれます。[GitLab Environment Toolkit](https://gitlab.com/gitlab-org/gitlab-environment-toolkit) のサポート方法を探求できる基盤もあります。
 - 同じ Cloud Account 内の異なる環境や設定のために Sandbox Cloud UI で簡単に追加の Terraform プロジェクトを作成することもでき、実験中のユースケースに基づいてモジュール/リソース設定を分離できます。
@@ -162,7 +162,7 @@ GitLab.com SaaS について [Production Architecture](/handbook/engineering/inf
 
 ### Terraform 環境の使用方法
 
-1. [https://gitlabsandbox.cloud](https://gitlabsandbox.cloud) で生成された認証情報を使用して [https://gitops.gitlabsandbox.cloud](https://gitops.gitlabsandbox.cloud) にサインインします。これは `{firstInitial}{lastName}-{hash}` であり、通常の GitLab ユーザー名ではないことに注意してください。
+1. [https://gitops.gitlabsandbox.cloud](https://gitops.gitlabsandbox.cloud) に、[https://gitlabsandbox.cloud](https://gitlabsandbox.cloud) で生成された認証情報を使用してサインインします。これは `{firstInitial}{lastName}-{hash}` であり、通常の GitLab ユーザー名ではないことに注意してください。
 1. 作成したばかりの Terraform 環境のプロジェクトに移動します。[https://gitlabsandbox.cloud](https://gitlabsandbox.cloud) の Cloud Account ページのリンクからプロジェクトにすばやくアクセスできます。
 1. ローカルコンピュータで `~/.ssh` フォルダに移動し、SSH キーを生成します
 
@@ -223,7 +223,7 @@ GitLab.com SaaS について [Production Architecture](/handbook/engineering/inf
 
 ## 背景と歴史
 
-何年にもわたって、GitLab の非本番インフラストラクチャリソースは、アカウンタビリティ、コスト管理、または GCP と AWS にわたるセキュリティのベストプラクティスなしで有機的に成長しました。FY21-Q3 では、[ラベル、タグ、命名規則](/handbook/company/infrastructure-standards/labels-tags/) と、異なるユースケース用の個別のセキュリティ境界を作成する [レルム](/handbook/company/infrastructure-standards/#gitlab-infrastructure-realms) という概念で、全社的な [インフラストラクチャ標準](/handbook/company/infrastructure-standards/) が確立されました。
+何年にもわたって、GitLab の非本番インフラストラクチャリソースは、アカウンタビリティ、コスト管理、または GCP と AWS にわたるセキュリティのベストプラクティスなしで有機的に成長しました。FY21-Q3 では、全社的な [インフラストラクチャ標準](/handbook/company/infrastructure-standards/) が [ラベル、タグ、命名規則](/handbook/company/infrastructure-standards/labels-tags/) と、異なるユースケース用の個別のセキュリティ境界を作成する [レルム](/handbook/company/infrastructure-standards/#gitlab-infrastructure-realms) という概念とともに確立されました。
 
 Jeff Martin は、サンドボックスのプロビジョニングをエンドツーエンドで自動化するオープンソースプロジェクトとして [HackyStack](https://gitlab.com/hackystack/hackystack-portal) の最初のリリースを開発しました。コードベースは後にアクティブな開発のために CorpSec Identity チームの下で [HackyStack Enhanced](https://gitlab.com/gitlab-com/gl-security/identity/eng/hackystack-enhanced) にフォークされました。オーナーシップとメンテナンスは Jeff Martin から Vlad Stoianovici と CorpSec Identity チームに移管されました。
 

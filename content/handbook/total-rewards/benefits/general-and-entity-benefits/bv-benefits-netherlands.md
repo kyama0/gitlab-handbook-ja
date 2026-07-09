@@ -2,11 +2,11 @@
 title: "GitLab BV (オランダ) 福利厚生"
 description: "オランダ在住のチームメンバー向けの GitLab BV (オランダ) 福利厚生。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands/
-upstream_sha: 9bd896709582cfb6bccdb0d721755db917231bc6
-translated_at: "2026-05-07T13:21:11Z"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T11:04:43+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-24T03:40:09+01:00"
+lastmod: "2026-07-08T17:55:25-05:00"
 ---
 
 ## あなたをしっかりカバーします
@@ -376,9 +376,16 @@ GitLab は [CZ](https://www.cz.nl/zorgverzekering/collectieve-zorgverzekering?01
 
 <summary>休職権</summary>
 
-* 出産直後 5 日間の有給休職
-* 6 ヶ月以内の追加 5 週間の有給休職（最大日給の 70%）
+* 出産後 4 週間以内に取得する 5 日間の有給出産休職（給与 100%）
+* 6 ヶ月以内の 5 週間の有給追加出産休職（最大日給の 70%）
 * [会社のポリシー](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave)を確認 - より有利な場合、法定休職給付を上書きします
+
+<details markdown="1"\>
+
+<summary>アクセス方法</summary>
+
+1. 希望日を記載して [leaves@gitlab.com](mailto:leaves@gitlab.com) にメール
+1. 追加の 5 週間は少なくとも 4 週間前にリクエスト
 
 </details>
 

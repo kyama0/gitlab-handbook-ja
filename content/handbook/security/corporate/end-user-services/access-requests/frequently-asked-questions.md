@@ -1,17 +1,17 @@
 ---
 title: "アクセスリクエスト（AR）FAQ"
 upstream_path: /handbook/security/corporate/end-user-services/access-requests/frequently-asked-questions/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T10:14:49+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 ## ヘルプが必要ですか？
 
 - 特定の SLA はありませんが、Issue で `@gitlab-com/business-technology/end-user-services` をメンションしてください。
-- リクエストが緊急の場合、Slack の #it_help チャンネルで `it-help` をメンションし、緊急の理由を記載してください。
+- リクエストが緊急の場合は、Slack の Compass app（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com 経由で IT にお問い合わせください。
 
 ## アクセスが必要
 

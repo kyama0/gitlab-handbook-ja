@@ -2,11 +2,11 @@
 title: "GitLab オフボーディング FAQ"
 description: "オフボーディングプロセスに関するよくある質問"
 upstream_path: "/handbook/people-group/offboarding/faq/"
-upstream_sha: ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c
-translated_at: "2026-06-24T07:51:36+09:00"
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T09:31:27+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-23T13:40:50+00:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 ## タイミング
@@ -73,7 +73,7 @@ Alumni チャンネルの[対象](/handbook/people-group/offboarding#gitlab-alum
 
 最終日にラップトップをワイプする必要があります。最終日に IT Ops チームメンバーとの[予約を取ってください](/handbook/security/corporate/end-user-services/laptop-management/laptop-wipe//)。
 
-**いかなる状況でも** 自分でラップトップをワイプしてはいけません。ラップトップのワイプはログ取得のため、IT Ops チームメンバーが実施する必要があります。その他の質問がある場合は [#it_help](https://gitlab.slack.com/archives/CK4EQH50E) に連絡してください。
+**いかなる状況でも** 自分でラップトップをワイプしてはいけません。ラップトップのワイプはログ取得のため、IT Ops チームメンバーが実施する必要があります。Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com で IT に連絡してください。
 
 ### ラップトップを保持できますか？
 

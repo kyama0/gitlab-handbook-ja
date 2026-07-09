@@ -1,11 +1,11 @@
 ---
 title: Okta デバイスポスチャーチェック - Chrome Device Trust
 upstream_path: /handbook/security/corporate/systems/okta/policy/device-posture-checks/device-posture-chrome-device-trust/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T11:05:06+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-31T14:58:28-07:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 ## Chrome Device Trust とは何か
@@ -52,5 +52,5 @@ Chrome Device Trust の採用を支援し、さまざまなユーザーのワー
 {{% /alert %}}
 
 {{% alert title="Note" color="info" %}}
-デバイスポスチャーチェックの解決にサポートが必要な場合は、Slack チャンネル `#it_help` で IT に連絡するか、`it-help@gitlab.com` までメールしてください。
+デバイスポスチャーチェックの解決にサポートが必要な場合は、Slack の Compass app（上部検索バーに「Compass」と入力して探します）経由で IT に連絡するか、it-help@gitlab.com までメールしてください。
 {{% /alert %}}

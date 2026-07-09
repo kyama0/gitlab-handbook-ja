@@ -2,14 +2,14 @@
 title: Google Groups
 description: Google Groups の使用および設定ガイド
 upstream_path: /handbook/security/corporate/end-user-services/supported-apps/google-workspace/google-groups/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T10:30:13+09:00"
+translator: codex
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
-Google groups は、メンバーに特定のリソースへのアクセス権を付与したり、メーリングリストとして使用されます。Google Groups はそれ自体がアプリではないため、Okta 経由では利用できませんが、[Google Groups ページ](https://groups.google.com/) に移動することで、所属しているすべてのグループを表示し、グループ設定を管理することができます。
+Google Groups は、メンバーに特定のリソースへのアクセス権を付与したり、メーリングリストとして使用されます。Google Groups はそれ自体がアプリではないため、Okta 経由では利用できませんが、[Google Groups ページ](https://groups.google.com/) に移動することで、所属しているすべてのグループを表示し、グループ設定を管理することができます。
 
 このページは、これまでに受けた最もよくある質問のいくつかへの解決策を提供することを目的としています。より詳細なサポートについては、[公式 Google Groups サポートページ](https://support.google.com/groups/) をご覧ください。
 
@@ -34,7 +34,7 @@ Google groups は、メンバーに特定のリソースへのアクセス権を
 - Google Group を更新する
 - Google Group を削除する
 
-## グループ設定 {#group-settings}
+## グループ設定 {#group-configuration}
 
 EUS が新しいグループを作成したり、既存のグループを変更するには、進める前にいくつかの詳細を知っておく必要があります。
 
@@ -155,4 +155,4 @@ table, td {
 
 ## 追加サポート
 
-Google Groups に関連する追加サポートについては、[email](malto:it-help@gitlab.com) または Slack の #it_help から直接お問い合わせください。
+Google Groups に関連する追加サポートについては、[メール](malto:it-help@gitlab.com)で直接お問い合わせいただくか、Slack の Compass app（上部検索バーに「Compass」と入力して見つけます）経由で IT にお問い合わせください。

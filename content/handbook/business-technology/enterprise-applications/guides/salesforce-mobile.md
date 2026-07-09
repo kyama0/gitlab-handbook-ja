@@ -2,16 +2,16 @@
 title: "Salesforce モバイルアプリ ユーザーガイド"
 description: "Salesforce モバイルアプリのダウンロード先とログイン方法の説明。"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/salesforce-mobile/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T06:02:44Z"
-translator: "claude"
+upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
+translated_at: "2026-07-09T08:23:34+09:00"
+translator: codex
 stale: false
-lastmod: "2025-08-27T21:51:43+02:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 ## Salesforce モバイルアプリへのログイン方法
 
-以下に、Okta 経由で Salesforce モバイルアプリにログインする方法を説明します。ログイン試行中に問題が発生した場合は、Slack の #it_help チャンネルでお問い合わせください。
+以下に、Okta 経由で Salesforce モバイルアプリにログインする方法を説明します。ログイン試行中に問題が発生した場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して探してください）または it-help@gitlab.com から IT にお問い合わせください。
 
 ### 前提条件
 
@@ -21,7 +21,7 @@ lastmod: "2025-08-27T21:51:43+02:00"
     * [Apple App Store](https://apps.apple.com/us/app/salesforce/id404249815)
   * Okta Verify
     * [Google Play](https://play.google.com/store/apps/details?id=com.okta.android.auth)
-    * [Apple App Store](https://apps.apple.com/us/app/okta-verify/id490179405)
+    * [Apple App Store](https://apps.apple.com/us/app/salesforce/id404249815)
   * Android および/または iOS アクセスを可能にする Salesforce 権限
     * モバイルでの Salesforce へのアクセスは Sales 組織のユーザーのみに許可されています。
     * Sales 組織に属さないがアクセスを希望する場合は、[アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Individual_Bulk_Access_Request)を開いてビジネス上の正当な理由を記入してください。チームがリクエストの処理を支援します。

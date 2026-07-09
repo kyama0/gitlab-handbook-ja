@@ -2,9 +2,9 @@
 title: AI Core Infra：Duo Service Infra
 description: "AI Core Infra 内の Duo Service Infra ファンクショナルチーム。AI Gateway と Duo Workflow Service の信頼性改善と可観測性に重点を置いています。"
 upstream_path: /handbook/engineering/ai/ai-core-infra/duo-service-infra/
-upstream_sha: e829b207a53856c23a25197426cca945626ade8a
-lastmod: "2026-07-01T10:27:42+02:00"
-translated_at: "2026-07-05T01:37:53+09:00"
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+lastmod: "2026-07-08T16:26:04+02:00"
+translated_at: "2026-07-09T08:36:01+09:00"
 translator: codex
 stale: false
 ---
@@ -32,6 +32,7 @@ Duo Service Infra チームは AI Core Infra 組織の一部であり、AI Gatew
 
 ## ダッシュボード
 
+1. [Prometheus ベースのダッシュボード](https://dashboards.gitlab.net/d/duo-workflow-svc-main/duo-workflow-svc3a-overview?orgId=1&from=now-6h%2Fm&to=now%2Fm&timezone=utc&var-PROMETHEUS_DS=mimir-runway&var-environment=gprd)
 1. [DWS ログベースダッシュボード](https://dashboards.gitlab.net/goto/efqoxvuthbwu8a?orgId=1)
 1. [AI Gateway SLI](https://dashboards.gitlab.net/d/ai-gateway-main/ai-gateway-overview?orgId=1)
 1. [Duo Workflow Service SLI](https://dashboards.gitlab.net/d/duo-workflow-svc-main/duo-workflow-svc3a-overview?orgId=1)

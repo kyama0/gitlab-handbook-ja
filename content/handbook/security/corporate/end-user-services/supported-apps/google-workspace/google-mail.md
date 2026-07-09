@@ -2,11 +2,11 @@
 title: Google Mail (Gmail)
 description: Gmail の使用および設定ガイド
 upstream_path: /handbook/security/corporate/end-user-services/supported-apps/google-workspace/google-mail/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+translated_at: "2026-07-09T10:30:13+09:00"
+translator: codex
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-07-08T14:46:05-04:00"
 ---
 
 Gmail は私たちの主要なメールアプリケーションです。Okta ダッシュボードの `G Suite SSO Mail` タイル経由、または直接 [gmail ページ](https://mail.google.com/) にアクセスすることで、アプリにアクセスできます。
@@ -87,4 +87,4 @@ Gmail は私たちの主要なメールアプリケーションです。Okta ダ
 
 ## 追加サポート {#additional-support}
 
-追加サポートが必要な場合は、Slack の #it_help または [it-help@gitlab.com](mailto:it-help@gitlab.com) からお気軽にお問い合わせください。
+追加サポートが必要な場合は、Slack の Compass app（上部検索バーに「Compass」と入力して見つけます）または [it-help@gitlab.com](mailto:it-help@gitlab.com) から IT にお問い合わせください。

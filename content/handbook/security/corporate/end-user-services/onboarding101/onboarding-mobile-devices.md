@@ -1,10 +1,10 @@
 ---
 title: "GitLab IT - モバイルデバイスオンボーディング"
 upstream_path: "/handbook/security/corporate/end-user-services/onboarding101/onboarding-mobile-devices/"
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-lastmod: 2026-06-26T02:53:42-07:00
-translated_at: "2026-07-02T06:06:16+09:00"
-translator: claude
+upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
+lastmod: "2026-07-08T11:09:01-04:00"
+translated_at: "2026-07-09T10:30:13+09:00"
+translator: codex
 stale: false
 ---
 
@@ -105,4 +105,4 @@ stale: false
 
 ## ヘルプが必要な場合
 
-ノートパソコンのセットアップでさらなるサポートが必要な場合は、毎週火曜日に予定されているオンボーディングコールに参加するか（カレンダーをご確認ください！）、Slack の #it_help チャンネルもしくは it-help@gitlab.com からご連絡ください。
+ノートパソコンのセットアップでさらなるサポートが必要な場合は、毎週火曜日に予定されているオンボーディングコールに参加するか（カレンダーをご確認ください！）、Slack の Compass app（上部検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com からお問い合わせください。
