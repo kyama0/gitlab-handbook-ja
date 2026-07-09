@@ -91,7 +91,7 @@ EthicsPoint および Lighthouse に加えて、[Team Member Relations](/handboo
 
 ## マネージャーおよびチームメンバー向けのピープルグループ プログラムカレンダー
 
-[このページ]https://theloop.gitlab.com/home で、People Manager Calendar と All Team Member Calendar を見つけることができます。これらのページの目標は、チームメンバーと People Manager が事前に計画を立て、今後のプログラムとタイムラインの概要を把握できるようにすることです。
+[このページ](https://theloop.gitlab.com/home)で、People Manager Calendar と All Team Member Calendar を見つけることができます。これらのページの目標は、チームメンバーと People Manager が事前に計画を立て、今後のプログラムとタイムラインの概要を把握できるようにすることです。
 
 ## Legal, Employment チームがピープルグループに提供するサポート
 

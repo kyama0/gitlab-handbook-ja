@@ -239,14 +239,14 @@ python3 gitnventory.py [--dry-run] [--logging [print/logging]] [--report_folder 
 
 ## アップグレードのヒントとコツ
 
-✅ **Do`s**:
+✅ **やること**:
 
 - プラットフォームに影響を与える可能性のある[既知の Issue](https://www.cisa.gov/known-exploited-vulnerabilities-catalog)がある場合は、臨時のアップグレードを行う
 - 🐍 `Python` パッケージをメジャーバージョン変更へアップグレードする場合、イメージ内で有効な Python バージョンとの互換性を確認する。衝突が発生する可能性があります。
 - インストール / アップグレードしたい 🐍 `Python` パッケージが安全であり、悪意のあるコードを含んでいないか確認する
 - 他のパッケージとの後方互換性を常に確認する _（プロジェクト内の pipeline が、イメージビルド中にここを支援します）_。
 
-🛑 **Dont`s**:
+🛑 **やらないこと**:
 
 - ソフトウェアの `pre-release` バージョンにはアップグレードせず、常に[stable release](https://en.wikipedia.org/wiki/Software_release_life_cycle#Stable_release) バージョンを使用する
 - `non-trusted` ソースを使用しない。インストール元としては [PyPi](pypi.org) または [GitLab Data](https://gitlab.com/groups/gitlab-data) グループのパッケージを推奨します。

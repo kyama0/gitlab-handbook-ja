@@ -380,6 +380,8 @@ GitLab は [CZ](https://www.cz.nl/zorgverzekering/collectieve-zorgverzekering?01
 * 6 ヶ月以内の 5 週間の有給追加出産休職（最大日給の 70%）
 * [会社のポリシー](/handbook/total-rewards/benefits/general-and-entity-benefits/#parental-leave)を確認 - より有利な場合、法定休職給付を上書きします
 
+</details>
+
 <details markdown="1"\>
 
 <summary>アクセス方法</summary>
