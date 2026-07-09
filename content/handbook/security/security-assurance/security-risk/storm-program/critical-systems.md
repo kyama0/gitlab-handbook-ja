@@ -5,7 +5,7 @@ controlled_document: true
 upstream_path: /handbook/security/security-assurance/security-risk/storm-program/critical-systems/
 upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
 translated_at: "2026-07-09T11:04:27+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-08T15:34:33-07:00"
 ---

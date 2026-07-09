@@ -8,7 +8,7 @@ tags:
 upstream_path: /handbook/people-group/acceptable-use-policy/
 upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
 translated_at: "2026-07-09T09:31:27+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-08T10:20:19-04:00"
 ---

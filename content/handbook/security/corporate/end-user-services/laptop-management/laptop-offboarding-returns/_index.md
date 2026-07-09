@@ -3,7 +3,7 @@ title: "ラップトップのオフボーディングと返却"
 upstream_path: /handbook/security/corporate/end-user-services/laptop-management/laptop-offboarding-returns/
 upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
 translated_at: "2026-07-09T10:14:49+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-08T14:46:05-04:00"
 ---

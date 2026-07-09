@@ -4,7 +4,7 @@ description: "このページは、アクセシビリティを向上させ、作
 upstream_path: /handbook/business-technology/entapps-documentation/application-accessibility/
 upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
 translated_at: "2026-07-09T08:23:34+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-08T14:46:05-04:00"
 ---

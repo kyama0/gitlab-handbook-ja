@@ -3,7 +3,7 @@ title: 開発者の一日
 upstream_path: /handbook/solutions-architects/sa-practices/day-in-the-life/
 upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
 translated_at: "2026-07-09T11:04:43+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-08T14:46:05-04:00"
 ---

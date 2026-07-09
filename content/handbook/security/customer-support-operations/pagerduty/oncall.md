@@ -4,7 +4,7 @@ description: 'Customer Support Operations のオンコールに関するドキ�
 upstream_path: /handbook/security/customer-support-operations/pagerduty/oncall/
 upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
 translated_at: "2026-07-09T11:05:06+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-08T14:46:05-04:00"
 ---

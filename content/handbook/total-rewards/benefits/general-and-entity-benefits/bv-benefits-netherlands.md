@@ -4,7 +4,7 @@ description: "オランダ在住のチームメンバー向けの GitLab BV (オ
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-netherlands/
 upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
 translated_at: "2026-07-09T11:04:43+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-08T17:55:25-05:00"
 ---

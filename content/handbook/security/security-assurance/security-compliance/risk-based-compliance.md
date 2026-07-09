@@ -3,7 +3,7 @@ title: "GitLabにおけるリスクベースコンプライアンス"
 upstream_path: /handbook/security/security-assurance/security-compliance/risk-based-compliance/
 upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
 translated_at: "2026-07-09T11:04:27+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-07T15:15:59-07:00"
 ---

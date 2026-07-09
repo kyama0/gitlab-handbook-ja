@@ -3,7 +3,7 @@ title: Google Workspace のデプロビジョニング
 upstream_path: /handbook/security/corporate/automation/google-workspace/deprovisioning/
 upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
 translated_at: "2026-07-09T10:06:13+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-08T14:46:05-04:00"
 ---

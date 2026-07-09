@@ -4,7 +4,7 @@ description: "GitLab の ServiceNow 実装に関する FAQ と操作ガイドを
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/helplab-guide/"
 upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
 translated_at: "2026-07-09T08:23:34+09:00"
-translator: codex
+translator: "claude"
 stale: false
 lastmod: "2026-07-08T11:09:01-04:00"
 ---

@@ -3,7 +3,7 @@ title: コーポレートセキュリティ (CorpSec)
 upstream_path: /handbook/security/corporate/
 upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
 translated_at: "2026-07-09T09:49:06+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-08T11:09:01-04:00"
 ---
