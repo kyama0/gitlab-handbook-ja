@@ -211,7 +211,7 @@ python3 gitnventory.py [--dry-run] [--logging [print/logging]] [--report_folder 
 
 | ツール名         | DRI       |
 |------------------|-----------|
-| Python libraries | @rbacovic |
+| Python ライブラリ | @rbacovic |
 
 ### ライブラリ更新へのアプローチ
 
