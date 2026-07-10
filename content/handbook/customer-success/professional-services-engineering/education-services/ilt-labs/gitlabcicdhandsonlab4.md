@@ -4,7 +4,7 @@ description: "このハンズオンガイドでは、パイプラインに CI/CD
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T20:55:48+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-02T13:56:51+01:00"
 ---

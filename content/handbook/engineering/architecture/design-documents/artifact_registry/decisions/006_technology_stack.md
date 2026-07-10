@@ -6,7 +6,7 @@ toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/006_technology_stack/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T20:55:36+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-07T15:33:26-04:00"
 ---

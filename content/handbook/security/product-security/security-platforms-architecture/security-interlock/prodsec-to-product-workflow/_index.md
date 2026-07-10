@@ -4,7 +4,7 @@ description: "ProdSecEng が Product および Engineering と協力し、GitLab
 upstream_path: /handbook/security/product-security/security-platforms-architecture/security-interlock/prodsec-to-product-workflow/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T06:15:47+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-06-26T14:40:46+12:00"
 ---
@@ -21,7 +21,7 @@ Product Security Engineering（ProdSecEng）は、Product および Engineering 
 >
 > インテークおよびメンテナンスワークフローでは、新しい作業を受け付けていません。既存のカスタムツールに関するコミットメントは移行中です。移行計画は最終決定され、[社内ハンドブックのツールインベントリ](https://internal.gitlab.com/handbook/security/product_security/product_security_engineering/)（GitLab チームメンバーのみアクセス可能）に文書化されています。移行中に参照できるよう、従来のワークフロードキュメントは以下の[既存ツールのワークフロー](#existing-tooling-workflows)セクションに保持されています。
 
-## 共創ワークフロー
+## 共創ワークフロー {#co-create-workflow}
 
 ### 共創の開始方法
 

@@ -5,7 +5,7 @@ twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T07:06:29+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-07T07:44:54+00:00"
 ---

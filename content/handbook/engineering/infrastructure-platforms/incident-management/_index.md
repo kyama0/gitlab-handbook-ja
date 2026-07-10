@@ -3,7 +3,7 @@ title: インシデント管理
 upstream_path: "/handbook/engineering/infrastructure-platforms/incident-management/"
 upstream_sha: "6eef8dbb6a0d15167aa5378f476b04cd38b78675"
 translated_at: "2026-07-10T07:03:07+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-09T11:26:59-06:00"
 ---

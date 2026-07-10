@@ -5,7 +5,7 @@ twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/brand-and-product-marketing/design/
 upstream_sha: 2e7a8730e4bbae1125f2d28ea6f22b445742c723
 translated_at: "2026-07-10T21:27:59+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-09T16:02:11-06:00"
 ---

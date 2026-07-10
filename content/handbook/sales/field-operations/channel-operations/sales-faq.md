@@ -3,7 +3,7 @@ title: "GitLab セールス FAQ - パートナーとの販売"
 upstream_path: /handbook/sales/field-operations/channel-operations/sales-faq/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T06:32:43+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-06-30T11:28:44-07:00"
 ---

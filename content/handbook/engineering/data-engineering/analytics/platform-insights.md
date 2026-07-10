@@ -4,7 +4,7 @@ description: "Analytics Platform Insights グループは、スケーラブル�
 upstream_path: /handbook/engineering/data-engineering/analytics/platform-insights/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T07:03:07+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-06-24T22:31:31-04:00"
 ---

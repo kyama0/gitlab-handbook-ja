@@ -4,7 +4,7 @@ upstream_path: /handbook/engineering/ai/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 lastmod: "2026-07-07T12:09:18+01:00"
 translated_at: "2026-07-10T20:48:59+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 

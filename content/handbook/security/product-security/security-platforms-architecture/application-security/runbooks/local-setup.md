@@ -3,7 +3,7 @@ title: "AppSec Engineer's Local Setup"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/application-security/runbooks/local-setup/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T06:15:47+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-07T12:09:18+01:00"
 ---

@@ -3,7 +3,7 @@ title: "セキュリティとの関わり方"
 upstream_path: /handbook/security/engaging-with-security/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T06:15:47+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-06-29T11:36:24-06:00"
 ---

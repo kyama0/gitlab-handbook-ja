@@ -1,13 +1,13 @@
 ---
 title: "在宅勤務フィールドガイド"
 description: チームがより健康的に在宅勤務をするための支援方法
-summary: This field guide serves as a blueprint to help your team work healthier from home.
+summary: このフィールドガイドは、チームがより健康的に在宅勤務をするためのブループリントとして機能します。
 twitter_image: '/images/work-from-home-field-guide/pdf-cover-image.jpeg'
 upstream_path: /handbook/company/culture/all-remote/work-from-home-field-guide/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 lastmod: "2026-06-29T08:59:00-04:00"
 translated_at: "2026-07-10T20:48:59+09:00"
-translator: codex
+translator: "claude"
 stale: false
 ---
 

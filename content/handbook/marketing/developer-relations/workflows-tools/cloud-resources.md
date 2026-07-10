@@ -3,7 +3,7 @@ title: "Developer Relations のクラウドリソース"
 upstream_path: /handbook/marketing/developer-relations/workflows-tools/cloud-resources/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T07:06:29+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-09T08:13:40+02:00"
 ---

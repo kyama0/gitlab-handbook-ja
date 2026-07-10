@@ -7,7 +7,7 @@ upstream_path: /handbook/engineering/architecture/design-documents/artifact_regi
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 lastmod: "2026-07-06T09:56:59+10:00"
 translated_at: "2026-07-10T20:55:36+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 

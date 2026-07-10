@@ -3,7 +3,7 @@ title: ノートパソコンソフトウェア更新
 upstream_path: /handbook/security/corporate/end-user-services/laptop-management/laptop-security/updates/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T06:32:43+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-06-30T11:20:04-07:00"
 ---

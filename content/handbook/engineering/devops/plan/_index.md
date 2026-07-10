@@ -3,7 +3,7 @@ title: "Plan"
 upstream_path: /handbook/engineering/devops/plan/
 upstream_sha: 2e7a8730e4bbae1125f2d28ea6f22b445742c723
 translated_at: "2026-07-10T21:35:00+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-10T12:19:01+02:00"
 ---

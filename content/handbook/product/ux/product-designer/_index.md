@@ -4,7 +4,7 @@ description: "プロダクト開発プロセスの上流に戦略的パートナ
 upstream_path: /handbook/product/ux/product-designer/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T06:46:26+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-06-29T11:52:06+01:00"
 ---

@@ -5,7 +5,7 @@ upstream_path: /handbook/product/ux/ux-resources/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 lastmod: "2026-06-29T11:52:06+01:00"
 translated_at: "2026-07-10T06:32:43+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 

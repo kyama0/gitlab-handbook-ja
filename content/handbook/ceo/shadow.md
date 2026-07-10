@@ -4,7 +4,7 @@ description: "GitLab では、CEO シャドウとは役職ではなく、CEO に
 upstream_path: "/handbook/ceo/shadow/"
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T21:02:32+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-06-29T08:59:00-04:00"
 ---

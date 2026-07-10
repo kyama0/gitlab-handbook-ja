@@ -4,7 +4,7 @@ upstream_path: /handbook/product/categories/
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 lastmod: "2026-07-02T19:47:53+01:00"
 translated_at: "2026-07-10T07:06:29+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 
