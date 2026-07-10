@@ -1,11 +1,11 @@
 ---
 title: コンテンツ削除ガイドライン
 upstream_path: "/handbook/legal/dmca/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "6eef8dbb6a0d15167aa5378f476b04cd38b78675"
+translated_at: "2026-07-10T07:06:25+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T13:51:34+00:00"
+lastmod: "2026-07-02T17:52:25+00:00"
 ---
 
 ## DMCA（デジタルミレニアム著作権法）テイクダウン申請要件

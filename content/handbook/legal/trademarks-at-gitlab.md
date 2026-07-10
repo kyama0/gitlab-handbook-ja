@@ -2,16 +2,16 @@
 title: "GitLab における商標"
 description: "GitLab チームメンバー向けの商標情報"
 upstream_path: "/handbook/legal/trademarks-at-gitlab/"
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: "6eef8dbb6a0d15167aa5378f476b04cd38b78675"
+translated_at: "2026-07-10T07:06:25+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-06-29T08:59:00-04:00"
 ---
 
 ## GitLab における商標
 
-GitLab のブランドは、その最も価値ある資産の一つです。これの一環として、GitLab の商標（GitLab という名称、および GitLab の <a href="https://about.gitlab.com/images/press/logo/png/gitlab-icon-rgb.png" target="_blank">Tanuki ロゴ</a>）は、GitLab の製品を競合他社のものと区別します。また、GitLab と関連付けられる製品の高品質を、お客様および見込み顧客に示すものでもあります。
+GitLab のブランドは、その最も価値ある資産の一つです。これの一環として、GitLab の商標（GitLab という名称、および GitLab の <a href="/images/press/logo/png/gitlab-icon-rgb.png" target="_blank">Tanuki ロゴ</a>）は、GitLab の製品を競合他社のものと区別します。また、GitLab と関連付けられる製品の高品質を、お客様および見込み顧客に示すものでもあります。
 
 ## GitLab の商標の適切な使用
 

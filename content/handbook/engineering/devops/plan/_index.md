@@ -1,17 +1,18 @@
 ---
 title: "Plan"
 upstream_path: /handbook/engineering/devops/plan/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-06T00:00:00Z"
+upstream_sha: 2e7a8730e4bbae1125f2d28ea6f22b445742c723
+translated_at: "2026-07-10T21:35:00+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-18T15:39:47+00:00"
+lastmod: "2026-07-10T12:19:01+02:00"
 ---
 
 Plan チーム:
 
 - [Plan:Project Management チーム](/handbook/engineering/devops/plan/project-management/)
 - [Plan:Product Planning チーム](/handbook/engineering/devops/plan/product-planning/)
+- [Plan:Planning Views チーム](/handbook/engineering/devops/plan/planning-views/)
 - [Plan:Knowledge チーム](/handbook/engineering/devops/plan/knowledge/)
 
 このチームの責務は [Plan ステージ](/handbook/product/categories/#plan-stage) によって定義されています。具体的には、Issue、ボード、マイルストーン、Todo リスト、Issue リストとフィルタリング、ロードマップ、タイムトラッキング、要件管理、通知、バリューストリーム分析（VSA）、Wiki、Pages など、GitLab の機能について取り組んでいます。

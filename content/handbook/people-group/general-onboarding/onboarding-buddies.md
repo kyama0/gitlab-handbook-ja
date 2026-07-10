@@ -2,9 +2,9 @@
 title: GitLab オンボーディングバディ
 description: オンボーディングの責任とプロセス
 upstream_path: /handbook/people-group/general-onboarding/onboarding-buddies/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-lastmod: "2026-05-19T12:12:02+01:00"
-translated_at: "2026-05-22T12:00:00Z"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+lastmod: "2026-06-30T16:55:38-04:00"
+translated_at: "2026-07-10T07:06:29+09:00"
 translator: claude
 stale: false
 ---
@@ -31,8 +31,6 @@ stale: false
    - [リモート組織](/handbook/company/culture/all-remote/) で働いた経験のない新しい GitLab チームメンバーは、理想的な [ワークスペース](/handbook/company/culture/all-remote/workspace/) を考え、[インフォーマルコミュニケーション](/handbook/company/culture/all-remote/informal-communication/) を取り入れる際に支援が必要となる場合があります。`#remote` Slack チャンネルで経験豊富なリモートの同僚に連絡を取り、質問に答えてもらうよう依頼することを検討してください。
    - Git が初めての場合は、`#git-help` Slack チャンネルの専門家に連絡を取り、チュートリアルを提供するよう依頼することを検討してください。
    - [Markdown](https://about.gitlab.com/blog/2018/08/17/gitlab-markdown-tutorial/) が初めての場合は、`#content` Slack チャンネルの専門家に連絡を取り、サポートを提供するよう依頼することを検討してください。
-1. **チームページのお手伝いをします。** 技術にあまり詳しくない新入社員にとって、[チームページ](/handbook/company/team/) に自分自身を追加することは、オンボーディング Issue の中で最も困難なタスクのように感じられるかもしれません。プロセスのお手伝いを申し出てください。これは必ずしも初日に行う必要はありませんが、必要なときにいつでもサポートする用意があることを伝えるべきです。今週の後半に 2 回目のミーティングをスケジュールして、[プロセス](/handbook/about/editing-handbook/#add-yourself-to-the-team-page) を一緒に進めることを検討してください。
-   - 特に、多くの新入社員にとってつまずきの石となりがちな SSH キーの作成を手伝ってください。[Lyle のウォークスルー](https://youtu.be/_FIOhk03VtM) を見せることもできます。
 1. **定期的にチェックインしてください。** あなたは、その新しい GitLab チームメンバーがチームで作る最初の友人になるかもしれません。定期的にチェックインすることで、彼らは歓迎され、サポートされていると感じられるようになります。Slack で連絡を取り、開始日の翌週に少なくとも 2 回、最初の月の残りの期間に少なくとも 1 回のフォローアップコールをスケジュールしてください。ただし、人によって異なるため、週あたりの通話頻度を増やすか減らすかを本人に尋ねることもできます。
 1. **必要に応じてバックアップを用意してください。** 新しい GitLab チームメンバーの最初の数週間に休みを取る予定がある場合（例: [休暇](/handbook/people-group/time-off-and-absence/time-off-types/)、[会社業務](/handbook/finance/travel/)、[イベント](https://about.gitlab.com/events/) など）は、サポートを提供できるバックアップのオンボーディングバディが利用可能であることを確認してください。
 1. **長期的なメンターシッププログラムを検討してください。** 新しいチームメンバーが新しい役割に慣れるまでには長い時間がかかることがあり、その過程でメンターがいることは、役割の責任への移行をできるだけスムーズに進めるうえで大いに役立ちます。バディが途中で苦労している事柄を取り上げられるよう、週次または隔週で 1 時間のメンターシップセッションを設定することを検討してください。

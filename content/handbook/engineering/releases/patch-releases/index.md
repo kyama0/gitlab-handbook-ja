@@ -1,9 +1,9 @@
 ---
 title: "パッチリリース"
 upstream_path: /handbook/engineering/releases/patch-releases/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-09T09:11:01-06:00
-translated_at: "2026-06-12T21:15:09Z"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+lastmod: "2026-07-02T17:44:09-06:00"
+translated_at: "2026-07-10T07:06:25+09:00"
 translator: claude
 stale: false
 ---

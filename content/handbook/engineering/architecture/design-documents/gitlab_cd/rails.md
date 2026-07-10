@@ -6,9 +6,9 @@ authors: [ "@josephburnett" ]
 owning-stage: "~devops::deploy"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/gitlab_cd/rails/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-11T14:33:24-07:00
-translated_at: "2026-06-12T21:12:19Z"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+lastmod: 2026-07-02T09:48:33+10:00
+translated_at: "2026-07-10T21:02:32+09:00"
 translator: claude
 stale: false
 ---
@@ -119,6 +119,7 @@ erDiagram
         bigint organization_id FK "shard"
         text name UK "unique per organization"
         text description
+        smallint tier "enum: development|qa|staging|production (Beta); FK to cd_environment_tiers post-Beta"
     }
     cd_environment_driver_bindings {
         bigint id PK
@@ -212,7 +213,7 @@ erDiagram
 - **Artifact Source** — Service のアーティファクトがどこから来るかを指す汎用ポインター。このポインターは、コンテナイメージ、マシンイメージなど、あらゆる種類のソースを不透明にアドレス指定できます。1 つの Service は *多数* を持ちます（3 つのコンテナを持つ Pod は 3 箇所から取得することがあります）。
 - **Version** — ソース上の特定のアーティファクトで、`digest`（不変なアイデンティティ）によってピン留めされます。
 - **Version Set** — `(Version, Service)` ペアのキュレーションされたセット、ソースごとに 1 エントリ。これがデプロイされる *対象* です。例えば「Payments 2.0 = api@v7 + worker@v3 + web@v9」。同じ Version が多数の Version Set にわたって再利用されるため、エントリは中間テーブル（結合）です。
-- **Environment** — 名前付きのデプロイメントターゲット（staging、production-eu、…）。Deploy Driver をバインドします。Organization が所有します。
+- **Environment** — [ティア](#environment-tiers)を持つ名前付きのデプロイメントターゲット（staging、production-eu、…）。Deploy Driver をバインドします。Organization が所有します。
 - **Rollout** — Version Set を 1 つ以上の Environment にわたってプロモートすること。変更と監査のユニットです。1 つの Rollout は、Version Set を環境から環境へと完了するまで移動させる 1 つの AutoFlow ワークフローによって駆動されます。詳細は[後述](#rollouts-are-immutable-change-records)。
 - **Rollout Environment** — Rollout 内の *1 つの* Environment に Version Set が着地すること。その環境のピン留めされたドライバーバインディング、その移行元の Version Set、そしてプロモーション順序におけるその位置を保持します。
 - **Deployment** — Rollout Environment 内の 1 つの Service をアクチュエートすること。その Service の M ソースの M バージョン（Pod の M コンテナ）を担います。Service ごとの状態とヘルスのユニットです。
@@ -286,6 +287,7 @@ erDiagram
 | `organization_id` | bigint FK | シャードキー |
 | name | text | Organization ごとに一意 |
 | description | text | |
+| tier | `smallint` | Beta では enum（`development`、`qa`、`staging`、`production`）。Beta 後に `cd_environment_tiers` への外部キー `tier_id` に置き換えます。[Environment のティア](#environment-tiers)を参照してください |
 
 **`cd_environment_driver_bindings`**
 
@@ -389,6 +391,22 @@ erDiagram
 Artifact Source は *独立したバージョニング* のユニットであり、物理的な配置のユニットではありません。3 つのコンテナを持つ Pod を考えてみましょう。そのうち 2 つは同じイメージを異なる設定で使っているとします。
 
 同じイメージは **1 つ** の Artifact Source → 1 つの Version → Version Set 内の 1 つのエントリです。ドライバーがその 1 つのソースを 2 つ（または N 個）のコンテナスロットにマッピングします。そのマッピングは事前に構成され、Rails ではなくドライバーの背後に存在します。2 つ目のエントリを強制する唯一のものは、*独立して* バージョン管理されるスロットです。それは定義上 2 つ目のソースです。したがってルールは **セットごと・ソースごとに 1 つの Version**（`UNIQUE(version_set_id, artifact_source_id)`）であり、1 つのソースがいくつのスロットに着地するかはドライバーの問題です。
+
+### Environment のティア {#environment-tiers}
+
+各 Environment には、UI でのフィルタリングと表示のためにグループ化する **ティア** があります。Beta では、ティアは GitLab が提供する固定セット（production、staging、QA、development）です。Beta 後は、他の Organization とは独立して Organization ごとにユーザーが定義できるようになります。
+
+Beta では、値を `cd_environments.tier` の `smallint` enum として保存します（`development: 0, qa: 1, staging: 2, production: 3`）。Beta 後は、ユーザー定義のセットを新しい `cd_environment_tiers` テーブルに格納し、`cd_environments.tier`（smallint）を `cd_environments.tier_id`（bigint FK）に置き換えます。
+
+**Beta で enum を使用する理由**:
+
+1. ユーザー定義ティアの管理 UI は Beta のスコープ外です。`cd_environment_tiers` テーブルには、Organization ごとに同じ 4 つのハードコードされたデフォルト値しか格納されないため、enum なら挿入なしで直接表現できます。
+1. Organization ごとにこれら 4 つのデフォルト値をシードするには、複数のエントリーポイント（`ai_native_deploy` の有効化、Environment の一覧表示またはティアによるフィルタリング、Environment の作成）があり、それぞれに複雑なロジックが追加されます。enum ならシードの問題を完全に回避できます。
+1. ユーザー定義の形は Beta と Beta 後の UI 作業の間にまだ変わる可能性があるため、今テーブル構造を確定するとバックフィルを 2 回実行するリスクがあります。
+
+**Beta 後の移行**:
+
+`cd_environment_tiers` の提供時に、Beta でティア値を使用した各 Organization に 4 つのデフォルト行をバックフィルし（Beta 参加者に限定されるため、少数になる見込みです）、`cd_environments.tier`（smallint）を `cd_environments.tier_id`（bigint FK）に移行し、ユーザーがティアを定義、編集、並べ替えできる管理操作を追加します。バックフィルのコストが発生するのは 1 回だけで、Beta で CD を実際に使用した Organization のみが対象です。
 
 ## Deploy Driver
 

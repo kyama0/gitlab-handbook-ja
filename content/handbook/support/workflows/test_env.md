@@ -3,11 +3,11 @@ title: テスト環境
 category: Infrastructure for troubleshooting
 description: "サポートエンジニアのテスト環境のセットアップ選択肢とガイドライン"
 upstream_path: /handbook/support/workflows/test_env/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T06:15:47+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-21T21:56:48+01:00"
+lastmod: "2026-07-09T08:13:40+02:00"
 ---
 
 ## 適切なテスト環境の選択
@@ -342,9 +342,9 @@ self-managed GitLab インスタンスとの LDAP 統合のテストでは、こ
 
 ### テストインスタンス用 DNS
 
-[ドメイン名と DNS レコード](https://internal.gitlab.com/handbook/it/it-self-service/it-guides/domains-dns/) に関する IT ポリシーについてはハンドブックを参照してください。
+[ドメイン名と DNS レコード](https://internal.gitlab.com/handbook/security/product_security/infrastructure_security/guides/domains-dns/)に関する InfraSec ポリシーについては、ハンドブックを参照してください。
 
-実際のドメイン名（IP アドレスではなく、たとえば TLS 証明書のテスト用）を使用してリソースをテストしたい場合、Sandbox Cloud AWS アカウントまたは GCP プロジェクトを通じて GitLab が支払う、好きなドメイン名（GitLab の商標を含まないもの）を購入できます。手順とガイドラインは [こちら](https://internal.gitlab.com/handbook/it/it-self-service/it-guides/domains-dns#non-trademark-domain-names) にあります。
+手順とガイドラインは、[商標を含まないドメイン名の手順](https://internal.gitlab.com/handbook/security/product_security/infrastructure_security/guides/domains-dns/#non-trademark-domain-names)にあります。
 
 ## クラウドテスト環境のセキュリティ確保 {#securing-cloud-testing-environments}
 

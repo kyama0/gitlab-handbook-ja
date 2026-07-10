@@ -1,11 +1,11 @@
 ---
 title: インシデント管理
 upstream_path: "/handbook/engineering/infrastructure-platforms/incident-management/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "6eef8dbb6a0d15167aa5378f476b04cd38b78675"
+translated_at: "2026-07-10T07:03:07+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-06T07:25:23-06:00"
+lastmod: "2026-07-09T11:26:59-06:00"
 ---
 
 {{% alert color="warning" %}}
@@ -264,6 +264,10 @@ Delivery のリーダーシップには PagerDuty を介して連絡できます
         1. アカウントでの活動が [不正利用と見なされる](/handbook/security/security-operations/trustandsafety/abuse-on-gitlab-com/#abuse-categories) 場合、[Trust and Safety](/handbook/security/security-operations/trustandsafety/#gitlab-team-members-can-reach-trust-and-safety-via) にユーザーを報告して、アカウントが永久にブロックされてクリーンアップされるようにしてください。イベントの性質によっては、EOC が SIRT チームへの連絡を検討する場合もあります。
         1. そうでない場合は、[関連する機密インシデント Issue を開いて CMOC に割り当て](https://gitlab.com/gitlab-com/gl-infra/production/-/issues/new?issuable_template=confidential_incident_data)、なぜ一時的にアカウントをブロックする必要があったのかを説明するためにユーザーに連絡してもらいます。
         1. EOC が、ユーザーのトラフィックが悪意あるものかどうか判断できない場合は、調査を実施するために [SIRT](/handbook/security/security-operations/sirt/) チームを関与させてください。
+        1. インシデントを軽減するためにアカウントをブロックしておく必要がなくなったら、EOC が軽減策が機能していること、およびトリガーとなった動作が理解され再発しないことを確認したうえで、IMOC がブロック解除するかどうかを決定します。
+            1. 不正利用が疑われる場合や悪意があるか不明な場合は、ブロックを解除しないでください。これらのケースは [Trust and Safety](/handbook/security/security-operations/trustandsafety/#gitlab-team-members-can-reach-trust-and-safety-via) または [SIRT](/handbook/security/security-operations/sirt/) のレビューが終わるまでブロックされたままにします。
+            1. アクセスを復元する前に、CMOC はユーザーに連絡するか、通知を準備しておく必要があります。
+            1. 承認後、管理者権限を持つ対応者（通常は EOC）がブロック解除を実行し、承認者、実行者、日付、理由を管理者メモに追記します。
 
 ### Incident Manager を関与させるタイミング
 

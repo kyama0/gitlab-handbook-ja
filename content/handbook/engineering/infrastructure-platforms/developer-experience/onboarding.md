@@ -2,11 +2,11 @@
 title: "Developer Experience オンボーディング"
 description: "新しい Developer Experience セクションメンバーとしてオンボーディングするためのガイドライン"
 upstream_path: /handbook/engineering/infrastructure-platforms/developer-experience/onboarding/
-upstream_sha: 6a459a3ca969603754a3b5133342edb804d3012c
-translated_at: "2026-04-28T17:23:43Z"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T07:03:07+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-06T09:57:12-06:00"
+lastmod: "2026-07-07T16:51:00+02:00"
 ---
 
 ここに記載されている手順は、People Ops がチームメンバーの初日に割り当てるオンボーディング Issue に加えて行うものです。
@@ -45,7 +45,6 @@ lastmod: "2026-03-06T09:57:12-06:00"
   * [Staging-canary](https://staging.gitlab.com) - `gitlab_canary=true`
   * [Staging-ref](https://staging-ref.gitlab.com)
   * [Preprod](https://pre.gitlab.com/)
-  * [Release](https://release.gitlab.net)
   * [Customer-dot](https://customers.staging.gitlab.com/)
 * CI 環境
   * Main - Slack チャンネル [#e2e-run-master](https://gitlab.slack.com/archives/CNV2N29DM)
@@ -65,7 +64,6 @@ lastmod: "2026-03-06T09:57:12-06:00"
   * [#infrastructure-managers](https://gitlab.slack.com/archives/C017BFF9CJU) - Infrastructure のすべてのエンジニアリングマネージャーとコミュニケーション・協力するためのチャンネル
   * [#e2e-run-master](https://gitlab.slack.com/archives/CNV2N29DM) - マスターパイプラインのエンドツーエンドテスト結果が届くチャンネル
   * [#e2e-run-preprod](https://gitlab.slack.com/messages/CCNNKFP8B) - pre.gitlab.com への実行に対するエンドツーエンドテスト結果が届くチャンネル
-  * [#e2e-run-release](https://gitlab.slack.com/archives/C0154HCFLRE) - release.gitlab.net への実行に対するエンドツーエンドテスト結果が届くチャンネル
   * [#e2e-run-staging](https://gitlab.slack.com/messages/CBS3YKMGD) - staging.gitlab.com への実行に対するエンドツーエンドテスト結果が届くチャンネル
   * [#e2e-run-production](https://gitlab.slack.com/messages/CCNNKFP8B) - gitlab.com への実行に対するエンドツーエンドテスト結果が届くチャンネル
   * [#gpt-performance-run](https://gitlab.slack.com/messages/CH8J9EG49) - パフォーマンステスト結果が届くチャンネル

@@ -2,9 +2,9 @@
 title: リリースステージ
 description: "Organizations チームが協調された一連のフィーチャーフラグステージを通じて作業をリリースする方法"
 upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/organizations/release-stages/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-11T10:03:08+08:00
-translated_at: "2026-06-12T21:15:09Z"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+lastmod: 2026-07-07T09:35:07-07:00
+translated_at: "2026-07-10T07:03:07+09:00"
 translator: claude
 stale: false
 ---
@@ -22,6 +22,17 @@ Organizations は多くの機能で構成される **面（サーフェス）** 
 成熟するにつれて層を通じて外側に広がり、対象者とプラットフォームの範囲を広げながら、最終的に外側の
 Stable 層に落ち着きます。ステージは一時的なものです。機能はそこに蓄積されるのではなく素早く通過し、
 すべての機能は最終的に Stable に到達し、もはやフィーチャーフラグの背後にはありません。
+
+対象者は、次の 2 つの軸に沿って拡大する一方です:
+
+- **セグメント** — 機能を利用できる人: Organizations チーム、次に GitLab チーム
+  メンバーとオプトインした顧客、次にすべての GitLab.com 顧客、最後に全員。
+- **プラットフォーム** — 機能が動作する場所: 最初は GitLab.com、GA では GitLab Self-Managed と
+  GitLab Dedicated。
+
+各ステージは、この拡大する面上の一点です。より高いステージでは、一方または両方の軸で
+対象者が広がり、狭まることはありません。そのためアクセスは累積的であり、より早い段階の
+小さなセグメントで利用できた機能は、外側へ拡大しても引き続き利用できます。
 
 ```mermaid
 flowchart TB
@@ -207,3 +218,7 @@ Organizations の面については、上記で説明した追加の構造を適
   保持されます。
 - **Experimental ステージ。** Beta の準備ができていない大規模／複雑で
   未完成な作業のために、明示的な Beta 前の場所を追加します。
+
+## 開発におけるリリースステージ
+
+Organization リリースステージを使って機能をゲートする方法については、[Organizations のリリースプロセス](https://docs.gitlab.com/development/organizations/release_process/)を参照してください。

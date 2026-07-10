@@ -2,11 +2,11 @@
 title: "Goldcast"
 description: "Goldcast は B2B マーケター向けのデジタルイベントプラットフォームで、イベント、ウェビナー、動画キャンペーンの作成・配信を支援します。AI を活用して魅力的なコンテンツを作成し、動画を複数のフォーマットに転用できます。"
 upstream_path: /handbook/marketing/marketing-operations/goldcast/
-upstream_sha: 0b5a5f39bf48045cf2d6f198c5637420369674de
-translated_at: "2026-05-16T00:00:00Z"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T07:06:29+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-28T12:45:18-06:00"
+lastmod: "2026-06-30T16:30:33-06:00"
 ---
 
 

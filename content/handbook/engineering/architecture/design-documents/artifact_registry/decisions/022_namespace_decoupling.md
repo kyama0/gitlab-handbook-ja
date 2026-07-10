@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "不変なスラッグと仮想アンカータプルを持つ内部ネームスペースエンティティを導入し、Artifact Registry を Rails の内部識別子から切り離す提案"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-lastmod: 2026-06-19T12:48:58+02:00
-translated_at: "2026-06-20T13:37:44Z"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+lastmod: "2026-07-06T09:56:59+10:00"
+translated_at: "2026-07-10T20:55:36+09:00"
 translator: claude
 stale: false
 ---
@@ -152,7 +152,9 @@ OCI:         /v2/<slug>/repositories/my-repo/manifests/latest
 更新されます。スラッグは変わりません。すべての URL は安定したままです。すべてのパーティション分割されたテーブルは影響を受けません。これは将来の
 機能です。Organization v1 では、プロモーションイベントは存在しません。
 
-**削除:** Artifact Registry はネームスペースをソフト削除または無効化します。スラッグは予約され、別の顧客によって再取得
+**ステータス:** ネームスペースのサービス提供可否は、[ADR-007](007_database_schema.md#namespaces) で定義されたライフサイクルイベントとサービス条件から導出されます。これらには、一方向の `deleted_at` および `purged_at` イベントと、可逆的な `blocked_at`（セキュリティ）、`disabled_at`（Organization がレジストリを無効化）、`suspended_at`（請求、読み取り専用）の条件が含まれます。Artifact Registry は Rails 側でキャッシュされている内容に関係なく、すべてのリクエストでこれらを適用します。また、その API は導出されたステータスを公開し、Rails は表示のためにそれをキャッシュします（[スラッグのディスカバリー](#slug-discovery)を参照）。
+
+**削除:** Artifact Registry はネームスペースをソフト削除します。スラッグは予約され、別の顧客によって再取得
 できません。リポジトリ名の再取得と同じセキュリティリスク（認可バイパス、キャッシュポイズニング）を避けるためです。完全なライフサイクル（再取得を可能にするソフト削除期間、恒久的な廃止を伴うハード削除）と、セキュリティブロックおよび移管の制御については、[ADR-015 (internal)](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/#slug-lifecycle) を参照してください。
 
 ### Organization のマージ {#organization-merges}
@@ -215,7 +217,7 @@ Organization: Acme Corp (merged)
 
 **認証されたリクエスト** は、
 [ADR-020](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18462) で定義された JWT 交換フローを使用します。すべてのクライアントは Artifact Registry を通じて認証し、Artifact Registry は自身のネームスペーステーブルからスラッグを組織 ID に解決し、Rails との
-透過的な交換にそれを含めます。Rails はスラッグについて知る必要が決してありません。
+透過的な交換にそれを含めます。このパスでは Rails はスラッグについて知る必要がありません。UI のパスは異なります（[スラッグのディスカバリー](#slug-discovery)を参照）。
 
 **認証されていないリクエスト** は JWT 交換をスキップし
 （[ADR-020](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18462)）、直接 `no_access` が
@@ -234,13 +236,15 @@ Organization: Acme Corp (merged)
 - **Organization の Owner** は、Rails の組織メンバーシップから直接 Owner のアクセスレベルを受け取ります。ネームスペースの
   アプローチからの影響はありません。
 
-### スラッグのディスカバリー
+### スラッグのディスカバリー {#slug-discovery}
 
-GitLab のフロントエンドは、（Rails を通じてではなく）Artifact Registry の API を直接呼び出します。すべての API 呼び出しは URL にスラッグを必要とするため、フロントエンドは何らかのリクエストを行う前にスラッグを必要とします。
+GitLab のフロントエンドは、Rails モノリスを介して Artifact Registry にアクセスします（[ADR-014](014_frontend_to_artifact_registry.md)）。Artifact Registry のすべての API 呼び出しでは URL にスラッグが必要になるため、Rails はリクエストを行う前にスラッグを必要とします。
 
-Artifact Registry は、指定された Organization のスラッグのリストを返す軽量なエンドポイント（`/api/v1/o/:org_id/slugs`）を公開します。v1 ではこのリストは常に単一の項目（Organization ごとに 1 つのネームスペース）を含みますが、複数のネームスペースが Organization ごとにサポートされる場合（例: Organization のマージ後）に API の破壊的変更を避けるため、レスポンスはリストになっています。Rails は、フロントエンドのアイデンティティトークンをミントするとき（[ADR-020](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18462)）にこのエンドポイントを呼び出し、スラッグをトークンペイロードに含めます。フロントエンドはその後、後続のすべての API 呼び出しでそれらを使用します。
+Rails はネームスペース UUID のみを永続的に保存します。これはプロビジョニング時に書き込まれる、ネームスペースごとに 1 行のレコードです（[gitlab#603023](https://gitlab.com/gitlab-org/gitlab/-/work_items/603023)）。Organizations v1 では、Organization ごとに 1 行だけです。[Organization のマージ](#organization-merges)が発生すると、吸収されたネームスペースの行が存続する Organization に追加されます。UUID は不変なので、この参照は同期が不要で、マージやアンカーの変更後も維持されます。
 
-マッピングは不変であるため、Rails はレスポンスを積極的にキャッシュできます。Artifact Registry は唯一の信頼できる情報源であり続けます。Rails がそれを永続化することは決してありません。アンカーの切り替えや Organization ごとの複数ネームスペースが将来サポートされる場合、キャッシュの無効化に対処する必要があります。
+スラッグとネームスペースのステータスは Rails 側には永続化されません。Rails は UUID を使って Artifact Registry からこれらを解決し、キャッシュします。どちらも Artifact Registry の権限のもとでのみ変更できます。スラッグは不変性に対する緊急回避策（法務エスカレーション。[ADR-007 のスラッグの不変性](007_database_schema.md#slug-immutability)を参照）によって変更され、ステータスはサービス条件（[ADR-007](007_database_schema.md#namespaces)）によって変更されます。たとえば、ネームスペースを迅速に無効化する必要がある場合です。ハイブリッドデプロイモデル（Self-Managed Rails と SaaS Artifact Registry の組み合わせ）では、これらの変更は Artifact Registry 側でしか発生しないため、Rails を唯一の信頼できる情報源にすることはできません。
+
+古いキャッシュによって適用が弱まることはありません。Artifact Registry はすべてのリクエストでネームスペースのステータスを適用します。ステータスについては、古さは次回の更新まで表示に影響するだけです（たとえば、ネームスペースが無効化されている間もナビゲーションにレジストリが短時間表示されます）。スラッグについては、古い値によって次回の更新までリンク切れが表示される可能性があります。スラッグの変更はまれな緊急イベントであり、キャッシュの更新間隔がその期間の上限になります。
 
 ## 結果
 
@@ -296,7 +300,7 @@ Artifact Registry は、指定された Organization のスラッグのリスト
   パーティショニング戦略、複合主キー、外部キーのパターンは変わらない。
 - **[ADR-009: API 設計](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18458)**: URL の
   `/o/<org_id>/` プレフィックスが `/<slug>/` に置き換えられる。スラッグは、すべてのプロトコル（management、Maven、npm、OCI）で API プレフィックスの後の最初のパスセグメント
-  である。どの URL にも数値 ID は現れない。また、組織 ID に対するネームスペースを取得する新しい CRUD API も必要になる。
+  である。どの URL にも数値 ID は現れない。Rails から Artifact Registry へのエンドポイント（Rails が永続化する UUID を返すネームスペース作成と、スラッグおよびステータスを返す UUID をキーとしたネームスペース解決）は、内部 API サーフェスに属する。このサーフェスは公開サーフェスとともに ADR-009 で定義されるが、スラッグプレフィックスのルールは適用されない。
 - **[ADR-020: 認証フロー](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18462)**: すべての
   クライアントが Artifact Registry を通じて認証し、Artifact Registry がスラッグを組織 ID に解決してから
   Rails と交換する。JWT 内の `organization_id` クレームはもはや不要になる。

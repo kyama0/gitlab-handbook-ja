@@ -10,11 +10,11 @@ owning-stage: "~devops::ai_powered"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/ai_catalog/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T21:02:32+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-20T09:39:32+13:00"
+lastmod: "2026-07-07T12:09:18+01:00"
 ---
 
 
@@ -33,7 +33,7 @@ lastmod: "2026-02-20T09:39:32+13:00"
 
 ## 問題の声明
 
-ワークフローカタログのバックエンドアーキテクチャは、以下をサポートするため段階的に進化してきました（[用語集](https://docs.gitlab.com/development/ai_features/glossary/#agent-types) 参照）:
+AI カタログのバックエンドアーキテクチャは、以下をサポートするため段階的に進化してきました（[用語集](https://docs.gitlab.com/development/ai_features/glossary/#agent-types) 参照）:
 
 - カスタムエージェント
 - カスタムフロー

@@ -1,11 +1,11 @@
 ---
 title: "セキュリティとの関わり方"
 upstream_path: /handbook/security/engaging-with-security/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:00:00Z"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T06:15:47+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-06T19:27:57-05:00"
+lastmod: "2026-06-29T11:36:24-06:00"
 ---
 
 ## 脆弱性レポートと HackerOne
@@ -40,7 +40,7 @@ HackerOne プロセスについては、[専用ページ](/handbook/security/pro
 
 ### CVE ID
 
-私たちは CVE ID を使って、自社製品の脆弱性を一意に識別し公的に定義します。すべてのセキュリティ脆弱性はパッチリリースから 30 日後に公開開示するため、自己マネージド版に影響する修正対象の脆弱性ごとに CVE ID を取得する必要があります。早く取得するほど良く、修正の準備中または準備直後に申請するべきです。
+私たちは CVE ID を使って、自社製品の脆弱性を一意に識別し公的に定義します。すべてのセキュリティ脆弱性はパッチリリースから 90 日後に公開開示するため、自己マネージド版に影響する修正対象の脆弱性ごとに CVE ID を取得する必要があります。早く取得するほど良く、修正の準備中または準備直後に申請するべきです。
 
 現在、私たちは [CVE プロジェクト](https://about.gitlab.com/security/cve/)経由で CVE を申請しています。なお、私たちのセキュリティリリースの一部には、関連する [CWE](https://cwe.mitre.org/) や脆弱性を持たない*セキュリティ関連の*強化が含まれることに注意してください。これらの個別 Issue は関連する脆弱性が存在しないため、CVE 取得は必須ではありません。
 
@@ -52,11 +52,11 @@ HackerOne プロセスについては、[専用ページ](/handbook/security/pro
 - すべてのセキュリティパッチが公開リポジトリにプッシュされます。
 - GitLab ブログのリリース投稿、セキュリティアラートメール、Twitter で一般に通知されます。
 
-その後、GitLab Issue はクローズされ、30 日後にサニタイズされて公開されます。レポートが HackerOne 経由で受け取られた場合は、[HackerOne プロセス](/handbook/security/product-security/psirt/runbooks/hackerone-process/#closing-out--disclosing-issues)に従ってください。
+その後、GitLab Issue はクローズされ、90 日後にサニタイズされて公開されます。レポートが HackerOne 経由で受け取られた場合は、[HackerOne プロセス](/handbook/security/product-security/psirt/runbooks/hackerone-process/#closing-out--disclosing-issues)に従ってください。
 
 ### セキュリティ Issue の開示プロセス
 
-GitLab では、[可能な限り透明であること](/handbook/values/#transparency)を重視しており、[コストがかかるときであっても](/handbook/values/#transparency-is-most-valuable-if-you-continue-to-do-it-when-there-are-costs)透明性を保ちます。その一環として、セキュリティ脆弱性に関する confidential な GitLab Issue を、パッチ後 30 日で公開しています。プロセスは以下のとおりです。
+GitLab では、[可能な限り透明であること](/handbook/values/#transparency)を重視しており、[コストがかかるときであっても](/handbook/values/#transparency-is-most-valuable-if-you-continue-to-do-it-when-there-are-costs)透明性を保ちます。その一環として、セキュリティ脆弱性に関する confidential な GitLab Issue を、パッチ後 90 日で公開しています。プロセスは以下のとおりです。
 
 1. `~keep confidential` タグの有無を確認します。タグが付いている場合
    1. このタグが現在も適切で、私たちの[透明性](/handbook/values/#transparency)の価値観に沿っているか判断します
@@ -72,7 +72,7 @@ GitLab では、[可能な限り透明であること](/handbook/values/#transpa
 1. Issue の Confidentiality を編集し、Public に設定します。
 1. `~publication-pending` ラベルが存在する場合は削除します。
 
-このプロセスを促進するため、[GitLab Security Bot](https://gitlab.com/gitlab-com/gl-security/engineering-and-research/automation-team/appsec-escalator) は `~keep confidential` ラベルが付いていない confidential Issue について、Issue クローズから 30 日後にコメントします。
+このプロセスを促進するため、[GitLab Security Bot](https://gitlab.com/gitlab-com/gl-security/engineering-and-research/automation-team/appsec-escalator) は `~keep confidential` ラベルが付いていない confidential Issue について、Issue クローズから 90 日後にコメントします。
 
 ### 妨害的な研究者活動への対応
 

@@ -2,11 +2,11 @@
 title: 開発者チートシート
 description: Editor チームの開発者に役立つ情報。
 upstream_path: /handbook/engineering/devops/create/remote-development/developer-cheatsheet/
-upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
-translated_at: "2026-04-28T11:23:44Z"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T07:03:07+09:00"
 translator: claude
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-06-29T08:59:00-04:00"
 ---
 
 ## 便利なコマンド
@@ -118,7 +118,7 @@ RubyMine で QA スペックを実行するには、カスタム rspec ランナ
 
 ### Git リファレンス
 
-- 詳細な git のヒントは[このブログ記事](https://about.gitlab.com/blog/2016/12/08/git-tips-and-tricks/)と私たちの [git チートシート](https://about.gitlab.com/images/press/git-cheat-sheet.pdf)を参照してください。
+- 詳細な git のヒントは[このブログ記事](https://about.gitlab.com/blog/2016/12/08/git-tips-and-tricks/)と私たちの [git チートシート](/pdfs/press/git-cheat-sheet.pdf)を参照してください。
 
 ### インタラクティブな Git 学習ツール
 

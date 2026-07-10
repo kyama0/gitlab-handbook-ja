@@ -2,11 +2,11 @@
 title: "デベロッパーアドボケイトのコンテンツライブラリとワークフロー"
 description: "デベロッパーアドボカシーチームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/content/
-upstream_sha: 6421bb05e502917cfdfa263c81ae8fbbc41ed52b
-translated_at: "2026-06-22T07:04:45+09:00"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T07:06:29+09:00"
 translator: codex
 stale: false
-lastmod: 2026-06-21T11:54:38+00:00
+lastmod: "2026-07-05T09:50:43+00:00"
 ---
 
 デベロッパーアドボカシーチームは、キャンペーン、フィールドイネーブルメント、製品ローンチサポート、ユースケース採用、顧客向けデモ、一般的な学習・オンボーディングに使用できるコンテンツを作成しています。チームが参加するすべてのコンテンツとアクティビティは、[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/) に従って Issue で追跡されます。
@@ -80,6 +80,8 @@ lastmod: 2026-06-21T11:54:38+00:00
 ### 一元化されたデモハブ {#centralized-demo-hub}
 
 私たちは、すべての製品ツアーを 1 か所にまとめた一元化されたデモハブを作成しました。**Duo Agent Platform**、**Security**、**DevSecOps Platform** の 3 つの主要領域に整理されたデモにアクセスできます。
+
+注: Narrative ボックスの表示／非表示を切り替えるには、Navattic デモでは `ctrl+p`、agentic デモでは `h` を使用します。どのプラットフォームでデモが作成されたかは、デモの URL で確認できます（Navattic の URL には `navattic.com` が含まれます）。ナビゲーションボックスがない場合は、左右の矢印キーで移動します。
 
 **[Demo Zone を見る →](https://dap-demo-hub-dac14a.gitlab.io/)**
 

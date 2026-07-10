@@ -1,79 +1,70 @@
 ---
 title: "在宅勤務フィールドガイド"
-description: チームがより健康的に在宅勤務をするためのサポート方法
+description: チームがより健康的に在宅勤務をするための支援方法
 summary: このフィールドガイドは、チームがより健康的に在宅勤務をするためのブループリントとして機能します。
-twitter_image: '/images/work-from-home-field-guide/PDF-Cover-Image.jpeg'
-upstream_path: "/handbook/company/culture/all-remote/work-from-home-field-guide/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
+twitter_image: '/images/work-from-home-field-guide/pdf-cover-image.jpeg'
+upstream_path: /handbook/company/culture/all-remote/work-from-home-field-guide/
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+lastmod: "2026-06-29T08:59:00-04:00"
+translated_at: "2026-07-10T20:48:59+09:00"
 translator: "claude"
 stale: false
-lastmod: "2025-04-10T15:50:45-07:00"
 ---
 
 <div class="container">
 <div class="row align-items-center">
     <div class="col">
-        <p class="lead">多様なチームに対して公平かつ包括的な体験を生み出したいリーダーと雇用主は、どこで行われるとしても仕事をサポートする必要があります。今日、それはホームオフィス、コワーキングスペース、あるいは外出先かもしれません。リモートワークへのシフトは何年にもわたって成熟してきましたが、COVID-19 パンデミックがその普及を急速に加速させました。リモートワークが定着した今、ビジネスリーダーはどのようにして組織を導くことができるでしょうか？</p>
-        <p class="lead">このフィールドガイドがそのブループリントです。</p>
-        <p class="lead">リモートワークについて<a href="">もっと詳しく</a>、または <a href="https://about.gitlab.com/resources/downloads/remote-work-report-2021.pdf" class="btn btn-primary">完全レポートをダウンロード</a>
+        <p class="lead">多様なチームに公平でインクルーシブな体験を提供したいリーダーや雇用主は、どこで行われる仕事でも支援する必要があります。現在では、ホームオフィス、コワーキングスペース、さらには移動中かもしれません。リモートワークへの移行は長年かけて進んできましたが、Covid-19 パンデミックによって広範な導入が急速に加速しました。リモートワークが定着した今、ビジネスリーダーは組織がこの状況を乗り切るためにどのような支援ができるでしょうか？</p>
+        <p class="lead">このフィールドガイドが、その設計図です。</p>
+        <p class="lead">詳しくは、<a href="">リモートワークについて</a>をご覧いただくか、<a href="https://about.gitlab.com/resources/downloads/remote-work-report-2021.pdf" class="btn btn-primary">完全版レポートをダウンロード</a>してください。
     </div>
     <div class="col text-center">
-        <img src="https://about.gitlab.com/images/work-from-home-field-guide/PDF-Cover-Image.jpeg" class="shadow cover-image" style="border: 1px solid rgba(0, 0, 0, 0.08); box-sizing: border-box; border-radius: 4px; padding-left: 0px; box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.08);" alt="">
+        <img src="/images/work-from-home-field-guide/pdf-cover-image.jpeg" class="shadow cover-image" style="border: 1px solid rgba(0, 0, 0, 0.08); box-sizing: border-box; border-radius: 4px; padding-left: 0px; box-shadow: 0px 2px 50px rgba(0, 0, 0, 0.08);" alt="">
     </div>
-
 </div>
 <hr>
 <div class="container">
 <div class="row align-items-center">
     <div class="col">
         <h2 class="h1 my-4">プロジェクトの背景</h2>
-        <p class="h3">GitLab は、<a href="guide/">リモートチームに関する GitLab の専門知識</a>とベストプラクティスと、Herman Miller のワークスペースとデザインに関する深い理解を組み合わせて、このフィールドガイドを Herman Miller と共同制作できることを嬉しく思います。</a>
+        <p class="h3">GitLab は、<a href="guide/">GitLab のリモートチームに関する専門知識</a>とベストプラクティスを、Herman Miller が持つワークスペースとデザインへの深い理解と組み合わせ、Herman Miller と共同でこのフィールドガイドを作成できることを嬉しく思います。</a>
     </div>
     <div class="col text-center">
-        <img src="https://about.gitlab.com/images/work-from-home-field-guide/herman-miller-image.jpeg" alt="">
+        <img src="/images/work-from-home-field-guide/herman-miller-image.jpeg" alt="">
     </div>
-
 </div>
 <hr>
 <div class="row my-5">
-    <div class="col"><h2 class="h1">主要なポイント</h2></div>
-
+    <div class="col"><h2 class="h1">重要なポイント</h2></div>
 </div>
 <div class="row  my-5">
     <div class="col">
-        <h3 class="h2 my-4">リーダーシップから始まる</h3>
-        <p class="lead">組織がハイブリッドであれ完全リモートであれ、すべての従業員体験の側面をサポートするのは会社のリーダーの役割です。コロケーションのオフィスでチームのワークスペースに投資するのと同様に、オフィス外でも健康的で生産的なスペースを作れるよう支援することは、リモートワークインフラを構築する上での中核的な部分です。</p>
+        <h3 class="h2 my-4">リーダーシップから始まります</h3>
+        <p class="lead">組織がハイブリッドか完全なリモートかにかかわらず、従業員体験のあらゆる側面を支援するのは企業のリーダーの役目です。同じ場所に集まるオフィスでチームのワークスペースに投資するのと同様に、オフィスの外でも健康的で生産性の高い空間を作れるようにすることは、リモートワークのインフラストラクチャを構築するうえで中核となる要素です。。</p>
     </div>
     <div class="col">
-        <h3 class="h2 my-4">仕事はワーカーのいる場所で行われる</h3>
-        <p class="lead">ある日の働く場所として多くの選択肢があります: ホームオフィスやキッチンカウンター、コーヒーショップ、コワーキングスペース、さらには車や飛行機の中も。仕事がどこで行われるにしても、これらのスペースをどう使うかについて意図的であることが重要です。</p>
+        <h3 class="h2 my-4">働く人がいる場所が職場です</h3>
+        <p class="lead">ある日にどこで働くかには、ホームオフィスやキッチンカウンター、コーヒーショップ、コワーキングスペース、さらには車や飛行機など、多くの選択肢があります。仕事をする場所にかかわらず、こうした空間をどのように使うかを意識することが重要です。</p>
     </div>
-
 </div>
 <div class="row  my-5">
     <div class="col">
-        <h3 class="h2 my-4">インクルーシブなスペースが帰属感を高める</h3>
-        <p class="lead">優秀で多様なチームを引きつけ、維持したいリーダーは、ニーズや好みを包括した職場環境を育てる必要があります。意図的に実施されると、リモートやハイブリッドワークを受け入れた職場戦略はチームの差別化要因になり得ます。</p>
+        <h3 class="h2 my-4">インクルーシブな空間が帰属意識を強めます</h3>
+        <p class="lead">才能ある多様なチームを惹きつけ、定着させたいリーダーは、ニーズや好みを受け入れるインクルーシブな職場環境を育む必要があります。意図を持って実行すれば、リモートワークやハイブリッドワークを取り入れる職場戦略は、チームの差別化要因になり得ます。</p>
     </div>
     <div class="col">
-        <h3 class="h2 my-4">一つのサイズですべてに対応することはできない</h3>
-        <p class="lead">チームの各メンバーは、仕事を行う上で異なる機器のニーズ、スペースの制限、ロケーションの好みを持っています。重要なのは、これらの決断を自分でできるよう自律性と主体性を与え、フィードバックにオープンであり、イテレーションの文化を作ることです。</p>
+        <h3 class="h2 my-4">万人に合う単一の方法はありません</h3>
+        <p class="lead">チームメンバーごとに、必要な機器、スペースの制約、仕事をする場所の好みは異なります。重要なのは、自分で判断できる自律性と裁量をチームメンバーに与え、フィードバックを受け入れ、イテレーションの文化を作ることです。</p>
     </div>
-
 </div>
 <hr>
 <div class="row text-center">
-    <p><img src="https://about.gitlab.com/images/pricing/particles-contact.svg" alt="" width="90" style="max-width: 90px"></p>
-    <p class="h3 display-5 mb-4">あなたとあなたのチームのリモートワークを改善する</p>
+    <p><img src="/images/pricing/particles-contact.svg" alt="" width="90" style="max-width: 90px"></p>
+    <p class="h3 display-5 mb-4">あなたとチームのリモートワークを改善しましょう</p>
     <p class="my-2">
-        <a href="https://about.gitlab.com/resources/downloads/Work-from-Home%20Field%20Guide.pdf" class="btn btn-lg btn-primary me-4">在宅勤務フィールドガイドを入手する</a>
-        <a href="" class="btn btn-lg btn-dark">リモートワークについてもっと知る</a>
+        <a href="https://about.gitlab.com/resources/downloads/Work-from-Home%20Field%20Guide.pdf" class="btn btn-lg btn-primary me-4">在宅勤務フィールドガイドを入手</a>
+        <a href="" class="btn btn-lg btn-dark">リモートワークについて詳しく見る</a>
     </p>
-
 </div>
-
 </div>
-
 {{% include "includes/take-gitlab-for-a-spin.md" %}}
-

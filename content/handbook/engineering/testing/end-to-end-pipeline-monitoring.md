@@ -1,12 +1,12 @@
 ---
 title: エンドツーエンドパイプラインモニタリング
-description: E2Eモニタリングツールと実践の概要
+description: E2E モニタリングツールと実践の概要
 upstream_path: /handbook/engineering/testing/end-to-end-pipeline-monitoring/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T07:06:25+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-25T13:09:27+00:00"
+lastmod: "2026-07-07T16:51:00+02:00"
 ---
 
 ## エンドツーエンド（E2E）テストパイプライン
