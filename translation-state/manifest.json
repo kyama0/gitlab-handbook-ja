@@ -19522,19 +19522,19 @@
     },
     "content/handbook/marketing/marketing-operations/campaigns-and-programs.md": {
       "path": "content/handbook/marketing/marketing-operations/campaigns-and-programs.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T07:06:29+09:00",
+      "upstream_sha": "5ea6b5d6141bc938b1c87b63ca72396fbfe19b58",
+      "translated_at": "2026-07-11T06:05:57+09:00",
       "model": "codex",
-      "input_hash": "783e26077a8614707c253066d44c57e7ae8fea0b0ce3eb72c0082685d1b599bb",
-      "upstream_committed_at": "2026-07-09T11:15:29+01:00"
+      "input_hash": "937a1bfbdf1138984281ac8afb3ac5aa673740e807ee324bc8c031124402c6d7",
+      "upstream_committed_at": "2026-07-10T10:07:39-06:00"
     },
     "content/handbook/marketing/marketing-operations/cognism.md": {
       "path": "content/handbook/marketing/marketing-operations/cognism.md",
-      "upstream_sha": "a5b638fa0e0322f75ff5afd220e7b1de88c6615a",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "d5b8aa6e2ba2f3e8dbfa5c338688ab1b134e21de6a5ab4c300876f828a588921",
-      "upstream_committed_at": "2026-04-17T16:13:00-07:00"
+      "upstream_sha": "5ea6b5d6141bc938b1c87b63ca72396fbfe19b58",
+      "translated_at": "2026-07-11T06:05:57+09:00",
+      "model": "codex",
+      "input_hash": "52da737360f559758781978516460e9fa6f266aee824a3c94c85079451658d31",
+      "upstream_committed_at": "2026-07-10T10:07:39-06:00"
     },
     "content/handbook/marketing/marketing-operations/email-management/_index.md": {
       "path": "content/handbook/marketing/marketing-operations/email-management/_index.md",
@@ -19650,19 +19650,19 @@
     },
     "content/handbook/marketing/marketing-operations/marketo/_index.md": {
       "path": "content/handbook/marketing/marketing-operations/marketo/_index.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "2436caacccc9440866f962cf161df2c8cf34d51f6584db2f377ec1bafddae754",
-      "upstream_committed_at": "2026-06-03T16:50:03-06:00"
+      "upstream_sha": "5ea6b5d6141bc938b1c87b63ca72396fbfe19b58",
+      "translated_at": "2026-07-11T06:05:57+09:00",
+      "model": "codex",
+      "input_hash": "e9dfde38a187ad61dc3a8cfea6b4123754866d2313bc049d170da1ae65344da5",
+      "upstream_committed_at": "2026-07-10T10:07:39-06:00"
     },
     "content/handbook/marketing/marketing-operations/marketo/interesting-moments.md": {
       "path": "content/handbook/marketing/marketing-operations/marketo/interesting-moments.md",
-      "upstream_sha": "eb9c7122b4259a2111ed65628e5384768922a597",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a71daadd9bff4b254695af4453af27cff8f3e9c88bbd8995fca373310b347628",
-      "upstream_committed_at": "2025-10-24T16:57:09-07:00"
+      "upstream_sha": "5ea6b5d6141bc938b1c87b63ca72396fbfe19b58",
+      "translated_at": "2026-07-11T06:05:57+09:00",
+      "model": "codex",
+      "input_hash": "161723f64620e6fd0a328881a2760d9ff466822113c17c733ac1f4d1c4f3e0c1",
+      "upstream_committed_at": "2026-07-10T10:07:39-06:00"
     },
     "content/handbook/marketing/marketing-operations/marketo/tech-stack-guide-marketo.md": {
       "path": "content/handbook/marketing/marketing-operations/marketo/tech-stack-guide-marketo.md",
@@ -23930,11 +23930,11 @@
     },
     "content/handbook/security/security-operations/security-logging/_index.md": {
       "path": "content/handbook/security/security-operations/security-logging/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "dcd1969c429b58b6ffe62342d805e377a0233f1c67eba689222c5b6d53bb3f64",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
+      "upstream_sha": "5ea6b5d6141bc938b1c87b63ca72396fbfe19b58",
+      "translated_at": "2026-07-11T06:05:57+09:00",
+      "model": "codex",
+      "input_hash": "cf1e601d7dd3e1c3a2b070bfc807f57e867bd0e9435daf0dc29cd44329f3d4e6",
+      "upstream_committed_at": "2026-07-10T13:30:25+00:00"
     },
     "content/handbook/security/security-operations/security-logging/critical-logging-methodology.md": {
       "path": "content/handbook/security/security-operations/security-logging/critical-logging-methodology.md",
