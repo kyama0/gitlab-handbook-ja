@@ -2,11 +2,11 @@
 title: 'エンドユーザー'
 description: 'Zendesk のエンドユーザーに関するドキュメント'
 upstream_path: /handbook/security/customer-support-operations/zendesk/users/end-users/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
-translator: claude
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T06:15:47+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-26T12:05:00-05:00"
+lastmod: "2026-07-03T08:17:38-05:00"
 ---
 
 このガイドでは、GitLab における Zendesk のエンドユーザーの作成、編集、管理方法について説明します。また、Zendesk のエンドユーザー設定についても扱います。管理者は[管理者タスク](#administrator-tasks)セクションを確認してください。
@@ -43,7 +43,7 @@ lastmod: "2026-05-26T12:05:00-05:00"
 
 #### 管理者ではない者がエンドユーザーの BAN を依頼する
 
-エンドユーザーを BAN する必要がある場合は、#support_operations Slack チャンネルにユーザーを BAN する必要がある旨を投稿してください。カスタマーサポートオペレーションチームのメンバーから（ダイレクトメッセージで）連絡が入り、対応について協力します。
+エンドユーザーを BAN する必要がある場合は、#customer_support_systems Slack チャンネルにユーザーを BAN する必要がある旨を投稿してください。カスタマーサポートオペレーションチームのメンバーから（ダイレクトメッセージで）連絡が入り、対応について協力します。
 
 ### 現在のシステムエンドユーザー設定 {#current-system-end-user-settings}
 
@@ -57,17 +57,17 @@ lastmod: "2026-05-26T12:05:00-05:00"
     - [x] リクエストおよびアップロード API への認証を必須にする
     - [ ] ユーザーに登録を求める
     - ユーザー登録メッセージ
-      > Please fill out this form, and we'll send you a welcome email to verify your email address and log you in.
+      > このフォームに記入してください。メールアドレスを確認してログインするためのウェルカムメールをお送りします。
   - 許可リスト
     > gitlab@gitlab.com google.com
   - ブロックリスト: Zendesk 管理パネルで直接確認 - 機密データを含む
 - アカウントメール
   - [ ]  アカウントメールに有効な Help Center のリストを含める
   - ユーザーウェルカムメール本文:
-    > Welcome to GitLab Support. Please click the link below to create a password and login.
+    > GitLab Support へようこそ。以下のリンクをクリックしてパスワードを作成し、ログインしてください。
   - [ ] エージェントまたは管理者によって新規ユーザーが作成された場合にもウェルカムメールを送信する
   - メール検証メール本文
-    > We need to verify that you are the owner of this email address. Please follow the link below to verify.
+    > このメールアドレスの所有者であることを確認する必要があります。以下のリンクから確認してください。
 - ユーザーが自分のプロファイルデータを閲覧および編集できるようにする
   - [x] 有効
 - ユーザーがパスワードを変更できるようにする
@@ -88,17 +88,17 @@ lastmod: "2026-05-26T12:05:00-05:00"
     - [x] リクエストおよびアップロード API への認証を必須にする
     - [ ] ユーザーに登録を求める
     - ユーザー登録メッセージ
-      > Please fill out this form, and we'll send you a welcome email so you can verify your email address and sign in.
+      > このフォームに記入してください。メールアドレスを確認してサインインするためのウェルカムメールをお送りします。
   - 許可リスト
     > gitlab@gitlab.com google.com
   - ブロックリスト: Zendesk 管理パネルで直接確認 - 機密データを含む
 - アカウントメール
   - [ ]  アカウントメールに有効な Help Center のリストを含める
   - ユーザーウェルカムメール本文:
-    > Welcome to GitLab Federal Support. Please click the link below to create a password and sign-in.
+    > GitLab Federal Support へようこそ。以下のリンクをクリックしてパスワードを作成し、サインインしてください。
   - [ ] エージェントまたは管理者によって新規ユーザーが作成された場合にもウェルカムメールを送信する
   - メール検証メール本文
-    > We need to verify that you are the owner of this email address. Please follow the link below to verify.
+    > このメールアドレスの所有者であることを確認する必要があります。以下のリンクから確認してください。
 - ユーザーが自分のプロファイルデータを閲覧および編集できるようにする
   - [x] 有効
 - ユーザーがパスワードを変更できるようにする
@@ -262,7 +262,7 @@ Zendesk でセカンダリメールアドレスをプライマリメールに設
 
 {{% /alert %}}
 
-エンドユーザーを BAN する必要がある場合（さまざまな理由がありますが、特に不正行為によるもの）、誰かが #support_operations チャンネルにその件について投稿します。
+エンドユーザーを BAN する必要がある場合（さまざまな理由がありますが、特に不正行為によるもの）、誰かが #customer_support_systems チャンネルにその件について投稿します。
 
 その投稿に対して反応し、詳細を確認するためにダイレクトメッセージを送ります。
 
@@ -288,11 +288,11 @@ Zendesk でセカンダリメールアドレスをプライマリメールに設
    ```
 
 1. [エンドユーザーのノートを変更](#managing-the-user-note)し、BAN に関する情報（BAN されたという表明、理由、詳細を確認したい場合の連絡先）を追加します。次のような内容が適しています。
-   > This user has been banned from the support portal as of YYYY-MM-DD by request of TEAM_NAME team.
+   > このユーザーは、TEAM_NAME チームの依頼により、YYYY-MM-DD 付でサポートポータルから BAN されました。
    >
-   > This was due to REASON.
+   > 理由は REASON です。
    >
-   > If more details are needed, please reach out to the Customer Support Operations team via the #support_operations Slack channel.
+   > 詳細が必要な場合は、#customer_support_systems Slack チャンネルを通じて Customer Support Operations チームにお問い合わせください。
    - 置き換え:
      - `YYYY-MM-DD` を現在の日付（ISO フォーマット）に
      - `TEAM_NAME` を BAN を要求しているチームの名前（例: Support、Security、Legal など）に

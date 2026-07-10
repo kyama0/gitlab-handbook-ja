@@ -1,11 +1,11 @@
 ---
 title: "テクニカルライティング"
 upstream_path: /handbook/product/ux/technical-writing/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T13:13:04Z"
-translator: claude
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T06:32:43+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-16T18:31:40+01:00
+lastmod: "2026-07-08T17:43:36-06:00"
 ---
 
 GitLab のテクニカルライティングチームは、開発者、プロダクトマネージャー、コミュニティと協力してプロダクトドキュメントを作成しています。
@@ -397,8 +397,9 @@ PTO を取得する際、テクニカルライターは次を行います。
 
 | バージョン | 月 | リリースポストチェック | 毎月のドキュメントリリース | メンテナンスタスク |
 |---------|-------|------------------------------|---------------------|-------------------|
-| 19.7 | 2026 年 12 月 | TBD | TBD | {{< member-by-name "Isaac Durham" >}} |
-| 19.6 | 2026 年 11 月 | TBD | {{< member-by-name "Isaac Durham" >}} | {{< member-by-name "Lorena Ciutacu" >}} |
+| 19.8 | 2027 年 1 月 | TBD | TBD | {{< member-by-name "Lysanne Pinto" >}} |
+| 19.7 | 2026 年 12 月 | TBD | {{< member-by-name "Ashraf Khamis" >}} | {{< member-by-name "Isaac Durham" >}} |
+| 19.6 | 2026 年 11 月 | {{< member-by-name "Ashraf Khamis" >}} | {{< member-by-name "Isaac Durham" >}} | {{< member-by-name "Lorena Ciutacu" >}} |
 | 19.5 | 2026 年 10 月 | {{< member-by-name "Isaac Durham" >}} | {{< member-by-name "Lorena Ciutacu" >}} | {{< member-by-name "Zach Painter" >}} |
 | 19.4 | 2026 年 9 月 | {{< member-by-name "Lorena Ciutacu" >}} | {{< member-by-name "Zach Painter" >}} | {{< member-by-name "Roshni Sarangadharan" >}} |
 | 19.3 | 2026 年 8 月 | {{< member-by-name "Zach Painter" >}} | {{< member-by-name "Roshni Sarangadharan" >}} | {{< member-by-name "Fiona Neill" >}} |

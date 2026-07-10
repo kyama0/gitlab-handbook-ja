@@ -7,11 +7,11 @@ twitter_site: "@gitlab"
 twitter_image_alt: "GitLab For Remote Teams graphical image using icons representing remote work"
 destination_url: "https://youtu.be/qCDAioq3eis"
 upstream_path: "/handbook/company/culture/all-remote/gitlab-for-remote/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T00:00:00Z"
-translator: "claude"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T20:55:48+09:00"
+translator: codex
 stale: false
-lastmod: "2025-04-28T10:53:04-07:00"
+lastmod: "2026-06-29T08:59:00-04:00"
 ---
 
 <div class="container">
@@ -89,14 +89,14 @@ lastmod: "2025-04-28T10:53:04-07:00"
         </div>
     </div>
     <div class="col">
-        <img src="https://about.gitlab.com/images/solutions/gitlab-for-remote/issue.png" alt="GitLab DevOps loop png">
+        <img src="/images/solutions/gitlab-for-remote/issue.png" alt="GitLab DevOps loop png">
     </div>
 
 </div>
 
 <div class="row my-5">
     <div class="col">
-        <img src="https://about.gitlab.com/images/solutions/gitlab-for-remote/board-drag.png" alt="GitLab DevOps loop png">
+        <img src="/images/solutions/gitlab-for-remote/board-drag.png" alt="GitLab DevOps loop png">
     </div>
     <div class="col d-flex align-items-center">
         <div>
@@ -114,14 +114,14 @@ lastmod: "2025-04-28T10:53:04-07:00"
         </div>
     </div>
     <div class="col">
-        <img src="https://about.gitlab.com/images/solutions/gitlab-for-remote/max.png" alt="GitLab DevOps loop png">
+        <img src="/images/solutions/gitlab-for-remote/max.png" alt="GitLab DevOps loop png">
     </div>
 
 </div>
 
 <div class="row my-5">
     <div class="col">
-        <img src="https://about.gitlab.com/images/solutions/gitlab-for-remote/diff.png" alt="GitLab DevOps loop png">
+        <img src="/images/solutions/gitlab-for-remote/diff.png" alt="GitLab DevOps loop png">
     </div>
     <div class="col d-flex align-items-center">
         <div>

@@ -1,11 +1,11 @@
 ---
 title: "シミュレーションデモ"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/sim-demos/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T12:58:25Z"
-translator: claude
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T07:06:29+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-16T12:33:40-04:00
+lastmod: "2026-06-29T08:59:00-04:00"
 ---
 
 ## サマリー
@@ -55,15 +55,15 @@ lastmod: 2026-06-16T12:33:40-04:00
 
 MacOS Catalina ではデモファイルを開くとエラーが表示されます。
 
-![GitLab Project](https://about.gitlab.com/images/tech-pmm/errorcatalina.png)
+![GitLab Project](/images/tech-pmm/errorcatalina.png)
 
 開くには、デモファイルを右クリック -> Open
 
-![GitLab Repository](https://about.gitlab.com/images/tech-pmm/demofilecatalina.png)
+![GitLab Repository](/images/tech-pmm/demofilecatalina.png)
 
 新しいダイアログが表示されるので、Open をクリックします。
 
-![GitLab Repository](https://about.gitlab.com/images/tech-pmm/dialogopencatalina.png)
+![GitLab Repository](/images/tech-pmm/dialogopencatalina.png)
 
 ## sim デモの作成
 

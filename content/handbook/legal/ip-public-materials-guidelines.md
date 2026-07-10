@@ -2,11 +2,11 @@
 title: "外部資料におけるクリエイティブアセットおよびサードパーティコンテンツの利用ガイドライン"
 description: "外部資料におけるクリエイティブアセットおよびサードパーティコンテンツの利用に関するガイドライン"
 upstream_path: /handbook/legal/ip-public-materials-guidelines/
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-29T10:00:00Z"
-translator: claude
+upstream_sha: "6eef8dbb6a0d15167aa5378f476b04cd38b78675"
+translated_at: "2026-07-10T07:06:25+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-09T20:42:10+00:00"
+lastmod: "2026-06-29T08:59:00-04:00"
 ---
 
 ## 適用範囲と目的
@@ -32,7 +32,7 @@ lastmod: "2026-02-09T20:42:10+00:00"
 
 ## 商標 - ロゴとワードマーク
 
-「**ロゴ**」とは、[GitLab Tanuki ロゴ](https://about.gitlab.com/images/press/logo/png/gitlab-icon-rgb.png)のように、企業、製品、またはサービスを識別するために使用されるシンボルを指します。
+「**ロゴ**」とは、[GitLab Tanuki ロゴ](/images/press/logo/png/gitlab-icon-rgb.png)のように、企業、製品、またはサービスを識別するために使用されるシンボルを指します。
 
 「**ワードマーク**」とは、*GitLab* のように、企業、製品、またはサービスを識別するために使用されるスタイルなしの文字や文字列を指します。
 

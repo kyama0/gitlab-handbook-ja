@@ -4,16 +4,16 @@ status: ongoing
 creation-date: "2025-04-10"
 authors: [ "@ankitbhatnagar" ]
 coach: [ "@ahegyi" ]
-approvers: [ "@dennis", "@nicholasklick", "@lfarina8" ]
-owning-stage: "~group::platform insights"
+approvers: [ "@ghosh-abhinaba" ]
+owning-stage: "~section::analytics"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/data_insights_platform/
-upstream_sha: 0ee1352c26e468fa8032143d735391a793de7086
-translated_at: "2026-04-27T10:00:00Z"
-translator: claude
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T20:55:36+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-10T11:40:11+13:00"
+lastmod: "2026-07-04T07:40:44+00:00"
 ---
 
 

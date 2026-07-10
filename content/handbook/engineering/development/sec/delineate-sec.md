@@ -2,11 +2,11 @@
 title: Sec サブ部門の境界定義
 description: "GitLab 製品の AST および SRM ステージにおける機能の責任を持つエンジニアリンググループの定義"
 upstream_path: /handbook/engineering/development/sec/delineate-sec/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-28T05:48:28Z"
-translator: claude
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T07:03:07+09:00"
+translator: codex
 stale: false
-lastmod: "2025-08-22T16:04:10+01:00"
+lastmod: "2026-07-01T10:27:42+02:00"
 ---
 
 
@@ -93,9 +93,9 @@ Threat Insights は[ベーススキーマ](https://gitlab.com/gitlab-org/securit
 
 #### AI 脆弱性説明と脆弱性解決
 
-これらのワークフローは、[脆弱性ページ](https://docs.gitlab.com/ee/user/application_security/vulnerabilities/)の一部として Threat Insights が所有します（上記参照）。これには、モノリポへの統合、脆弱性ページでの表示、脆弱性解決のマージリクエストインターフェース、脆弱性説明のための Duo Chat への統合が含まれます。Threat Insights は、これらのチームが所有する領域への統合をサポートするため、[AI Framework](/handbook/engineering/ai/ai-framework/) および [Duo Chat](/handbook/engineering/ai/duo-chat/) と協力します。
+これらのワークフローは、[脆弱性ページ](https://docs.gitlab.com/ee/user/application_security/vulnerabilities/)の一部として Threat Insights が所有します（上記参照）。これには、モノリポへの統合、脆弱性ページでの表示、脆弱性解決のマージリクエストインターフェース、脆弱性説明のための Duo Chat への統合が含まれます。Threat Insights は、これらのチームが所有する領域への統合をサポートするため、[AI Core Infra](/handbook/engineering/ai/ai-core-infra/) および [Duo Chat](/handbook/engineering/ai/duo-chat/) と協力します。
 
-脆弱性の種類に基づいて、脆弱性説明と脆弱性解決のプロンプト、テストデータセットのキュレーション、レスポンス品質の検証は、[Secure](/handbook/engineering/development/sec/secure/) の関連グループが所有します。これらのグループはプロンプトエンジニアリングのサポートのために必要に応じて [Vulnerability Research](/handbook/engineering/development/sec/secure/vulnerability-research/) および [AI Framework](/handbook/engineering/ai/ai-framework/) とコミュニケーション・協力します。これらの機能は現在 [SAST](/handbook/engineering/development/sec/secure/#sast) のみで利用可能です。
+脆弱性の種類に基づいて、脆弱性説明と脆弱性解決のプロンプト、テストデータセットのキュレーション、レスポンス品質の検証は、[Secure](/handbook/engineering/development/sec/secure/) の関連グループが所有します。これらのグループはプロンプトエンジニアリングのサポートのために必要に応じて [Vulnerability Research](/handbook/engineering/development/sec/secure/vulnerability-research/) および [AI Core Infra](/handbook/engineering/ai/ai-core-infra/) とコミュニケーション・協力します。これらの機能は現在 [SAST](/handbook/engineering/development/sec/secure/#sast) のみで利用可能です。
 
 プロンプトは Secure チームが所有していますが、プロンプトエンジニアリングは AI Powered DevSecOps プラットフォームである GitLab でのソフトウェア開発の重要な部分です。Threat Insights を含む Govern 内のチームは、オンボードしてこれらの機能のプロンプトエンジニアリングをサポートし、フォローザサンカバレッジを通じてモノリポ内のプロンプト更新に必要に応じて協力できることが期待されます。
 

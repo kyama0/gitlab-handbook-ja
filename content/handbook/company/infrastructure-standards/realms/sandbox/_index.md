@@ -2,11 +2,11 @@
 title: "サンドボックスクラウドレルム"
 description: "このハンドブックセクションでは、GitLab の全部門・グループにおける AWS および GCP サンドボックスのインフラストラクチャ標準の最新イテレーションを定義します。"
 upstream_path: "/handbook/company/infrastructure-standards/realms/sandbox/"
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T08:36:01+09:00"
-translator: claude
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T20:55:48+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-08T11:09:01-04:00"
+lastmod: "2026-07-09T08:13:40+02:00"
 ---
 
 ### クイックリンク
@@ -136,7 +136,7 @@ GitLab.com SaaS について [Production Architecture](/handbook/engineering/inf
 
 ## ドメイン名
 
-詳細については [Domain Names and DNS Records](https://internal.gitlab.com/handbook/it/it-self-service/it-guides/domains-dns/) IT ガイドの内部ハンドブックページを参照してください。
+詳細については [Domain Names and DNS Records](https://internal.gitlab.com/handbook/security/product_security/infrastructure_security/guides/domains-dns/) InfraSec ガイドの内部ハンドブックページを参照してください。
 
 ## Terraform 環境
 

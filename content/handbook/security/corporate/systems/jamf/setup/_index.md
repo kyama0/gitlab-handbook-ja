@@ -1,11 +1,11 @@
 ---
 title: Jamf MDM セットアップガイド
 upstream_path: /handbook/security/corporate/systems/jamf/setup/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T11:05:06+09:00"
+upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
+translated_at: "2026-07-10T06:32:43+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-08T14:46:05-04:00"
+lastmod: "2026-07-08T18:33:05-07:00"
 ---
 
 ## 手動エンロール
