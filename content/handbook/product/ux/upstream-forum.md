@@ -87,7 +87,7 @@ stale: false
 - [Secure: グループレベルのセキュリティスキャナーステータスウィジェット](https://youtu.be/4W-cWcEae_o)
 - [Secure: セキュリティワークフローのイテレーション](https://youtu.be/v3gv-rplcBI)
 
-### 準備
+### 準備 {#preparation}
 
 - Upstream Forum の前に、具体的なトピックをミーティングのアジェンダに追加します。
 - APAC フォーラムでまだホストがいない場合は、[ホストする](#hosting)ことを検討します。
@@ -110,7 +110,7 @@ stale: false
   - 現在の課題、次のステップ、未解決の質問は何か？
   - ほかの人はこれにどう取り組み、どのように支援できるか？
 
-### 共有する人に役立つヒント
+### 共有する人に役立つヒント {#helpful-tips-for-those-sharing}
 
 - 自己紹介し、トピックの[コンテキスト](#preparation)を提供します。
 - [参加者に楽しい体験を提供します](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-tips/#make-the-participant-experience-an-enjoyable-one)。動きが速すぎたり（たとえば Figma プロトタイプを見せるとき）、前のビューで言い忘れたことがあるためビュー間を行き来したりしないようにします。
@@ -126,7 +126,7 @@ stale: false
 
 ヒントの詳細については、[コミュニケーションハンドブックのページ](/handbook/communication/#presentations)を参照してください。
 
-## ホストする
+## ホストする {#hosting}
 
 Product Design Manager が交代で Upstream Forum をホストします。
 

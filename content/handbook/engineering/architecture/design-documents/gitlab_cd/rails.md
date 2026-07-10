@@ -392,7 +392,7 @@ Artifact Source は *独立したバージョニング* のユニットであり
 
 同じイメージは **1 つ** の Artifact Source → 1 つの Version → Version Set 内の 1 つのエントリです。ドライバーがその 1 つのソースを 2 つ（または N 個）のコンテナスロットにマッピングします。そのマッピングは事前に構成され、Rails ではなくドライバーの背後に存在します。2 つ目のエントリを強制する唯一のものは、*独立して* バージョン管理されるスロットです。それは定義上 2 つ目のソースです。したがってルールは **セットごと・ソースごとに 1 つの Version**（`UNIQUE(version_set_id, artifact_source_id)`）であり、1 つのソースがいくつのスロットに着地するかはドライバーの問題です。
 
-### Environment のティア
+### Environment のティア {#environment-tiers}
 
 各 Environment には、UI でのフィルタリングと表示のためにグループ化する **ティア** があります。Beta では、ティアは GitLab が提供する固定セット（production、staging、QA、development）です。Beta 後は、他の Organization とは独立して Organization ごとにユーザーが定義できるようになります。
 

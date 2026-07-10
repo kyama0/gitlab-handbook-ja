@@ -69,7 +69,7 @@ DRI の責任:
 
 詳細は[Issue テンプレート](https://gitlab.com/gitlab-org/ai-powered/ai-catalog/team-tasks/-/blob/main/.gitlab/issue_templates/goalkeeper.md)で確認できます。
 
-### コミュニケーション
+### コミュニケーション {#communication}
 
 AI Catalog チームは、以下のガイドラインに基づいてコミュニケーションを行います。
 

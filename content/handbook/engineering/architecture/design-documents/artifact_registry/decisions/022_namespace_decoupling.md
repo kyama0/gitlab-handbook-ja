@@ -236,7 +236,7 @@ Organization: Acme Corp (merged)
 - **Organization の Owner** は、Rails の組織メンバーシップから直接 Owner のアクセスレベルを受け取ります。ネームスペースの
   アプローチからの影響はありません。
 
-### スラッグのディスカバリー
+### スラッグのディスカバリー {#slug-discovery}
 
 GitLab のフロントエンドは、Rails モノリスを介して Artifact Registry にアクセスします（[ADR-014](014_frontend_to_artifact_registry.md)）。Artifact Registry のすべての API 呼び出しでは URL にスラッグが必要になるため、Rails はリクエストを行う前にスラッグを必要とします。
 
