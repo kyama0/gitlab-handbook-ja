@@ -2,10 +2,10 @@
 title: Global Channel Marketing - MDF オペレーションプロセス
 description: "このページでは、MDF プログラムの運用プロセスについて詳しく説明します。"
 upstream_path: /handbook/marketing/channel-marketing/mdf-operations-process/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-12T14:44:40+00:00
-translated_at: "2026-06-12T21:15:00Z"
-translator: claude
+upstream_sha: 6a7e263deb491dffe5c490fb2d26a0cbadc431d5
+lastmod: "2026-07-10T21:20:21+00:00"
+translated_at: "2026-07-12T06:05:38+09:00"
+translator: codex
 stale: false
 ---
 
@@ -19,7 +19,7 @@ stale: false
 
 ### ステップ 2: Allocadia 項目の作成
 
-1. 次の命名規則でサブカテゴリを作成します: Partner Activity Name Location。例: `GitLab Demo Partner DevSecOps World Tour Paris`
+1. Allocadia の適切な Channel Partner MDF（AMER/EMEA/APAC/Japan/PubSec）プランに、次の命名規則でサブカテゴリを作成します: Partner Activity Name Location。例: `GitLab Demo Partner DevSecOps World Tour Paris`
      1. Start Date を追加します。
      1. End Date を追加します。
      1. Is a Channel Partner Involved?
@@ -49,7 +49,7 @@ stale: false
      1. `Pending MDF Approval` を追加します - Manager から Issue の承認を得るため（自動化）。
          1. 承認されたら、`MDF-Approved` に更新します。
 1. 可視性のためにステークホルダー（ESM、マーケティング、フィールドセールス）をタグ付けします。
-1. `Operations Checklist` に入力します。
+1. `Operations Checklist.` に入力します。
 1. 完了したら、運用サポートの DRI に依頼して Issue を [Plan から WIP](/handbook/marketing/field-marketing/#process-for-moving-events-from-plan-to-wip) へ移動してもらいます。
 
 ### ステップ 4: パートナーがファンドリクエストを提出
