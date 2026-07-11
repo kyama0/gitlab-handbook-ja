@@ -18162,11 +18162,11 @@
     },
     "content/handbook/marketing/channel-marketing/mdf-operations-process.md": {
       "path": "content/handbook/marketing/channel-marketing/mdf-operations-process.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:15:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "7929200d18732e2a0a79bbaa5c05ec9b2f766e5be854f7e7be98fe6088e17017",
-      "upstream_committed_at": "2026-06-12T14:44:40+00:00"
+      "upstream_sha": "6a7e263deb491dffe5c490fb2d26a0cbadc431d5",
+      "translated_at": "2026-07-12T06:05:38+09:00",
+      "model": "codex",
+      "input_hash": "70b418c6b6e31e09e319b87394a9784bdf7e726062ea82f4719716bf696c6f26",
+      "upstream_committed_at": "2026-07-10T21:20:21+00:00"
     },
     "content/handbook/marketing/cmo-shadow.md": {
       "path": "content/handbook/marketing/cmo-shadow.md",
@@ -20226,11 +20226,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/_index.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/_index.md",
-      "upstream_sha": "ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c",
-      "translated_at": "2026-06-24T07:28:04+09:00",
+      "upstream_sha": "6a7e263deb491dffe5c490fb2d26a0cbadc431d5",
+      "translated_at": "2026-07-12T06:05:38+09:00",
       "model": "codex",
-      "input_hash": "7d4cfad99792d411530e82f4a16cdef16371b9f0870bd4c1ab0a6de8d731afcb",
-      "upstream_committed_at": "2026-06-23T13:40:50+00:00"
+      "input_hash": "baff3fec8324d828ae59000c16927f04874b695cd3c8ee048f6652efc67cfba7",
+      "upstream_committed_at": "2026-07-10T17:26:48-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/bv-benefits-belgium.md",
