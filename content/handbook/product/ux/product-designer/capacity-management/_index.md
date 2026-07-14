@@ -2,66 +2,59 @@
 title: プロダクトデザイナーの優先順位とキャパシティ管理
 description: "トリオやプラットフォームイニシアチブに取り組む戦略的パートナーとして、プロダクトデザイナーが作業を優先順位付けし、キャパシティを管理するためのガイドライン。"
 upstream_path: /handbook/product/ux/product-designer/capacity-management/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
+translated_at: "2026-07-14T06:26:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-01-08T10:38:10-06:00"
+lastmod: "2026-07-13T10:41:37-07:00"
 ---
 
-プロダクトデザイナーは[マネージャーオブワン](/handbook/values/#managers-of-one)として働き、ステージグループの作業、プラットフォームイニシアチブ、より広範な UX 責任にわたって自身のキャパシティを管理します。このページでは、作業の優先順位付けとキャパシティ計画に関するガイダンスを提供します。
+プロダクトデザイナーは [Manager of One](/handbook/values/#managers-of-one)として働き、トリオの作業、プラットフォームイニシアチブ、より広範な Upstream Studios の責任に対して、自らのキャパシティの配分順序を決めます。このページでは、作業の優先順位付けとキャパシティ計画に関するガイダンスを提供します。
 
-[Upstream Studios](/handbook/upstream-studios/)の一部である [プロダクトデザイン](/handbook/product/ux/product-design/)で働くプロダクトデザイナー向けです。
+[Product Design](/handbook/product/ux/product-design/)で働くプロダクトデザイナー向けです。Product Design は [Upstream Studios](/handbook/upstream-studios/)の一部です。
 
 ## キャパシティの計画と管理
 
-プロダクトデザイナーは自分のステージグループ内で作業に割り当てられ、より広範な UX 部門全体にわたる責任も引き受けます。以下のガイドラインは、責任を効果的に管理するのに役立ちます。
+プロダクトデザイナーは、トリオの対等なメンバーとしてグループに割り当てられます。以下のガイドラインは、制作作業と、このロールの核となる上流段階での判断の両方にキャパシティを確保しながら、作業の順序を決めるために役立ちます。
 
 **プロダクトデザイナー**
 
-- 部門レベルのイニシアチブなどの UX チームの割り当てと、成功するために必要なことをディシプリンの同僚に知らせるようにしてください。
+- プラットフォームイニシアチブなどの Upstream Studios の割り当てと、成功するために必要なことをクロスファンクショナルな同僚に知らせてください。
+- リクエストによってリサーチ、探索、トリオの戦略作業が圧迫される場合は、キャパシティ上のトレードオフとしてマネージャーに直接提起してください。
 - マイルストーン計画中は、休暇（自分と他人の両方）を考慮してください。
-- 期限内に作業を完了できないと思った場合は、すぐにマネージャーに通知してください。早い通知は、問題を解決し、期待を管理する可能性を高めます。
+- コミットした作業を期限内に完了できないと思った場合は、分かった時点ですぐにマネージャーとトリオへ伝えてください。早めに知らせることで、トレードオフについて話し合う余地を保てます。
 - オプションで、UX Issue のウェイトを使用してキャパシティをよりよく理解し、プロダクトマネージャーとの会話を促進してください。
 
 **プロダクトデザインマネージャー**
 
-- 要求があれば、プロダクトデザイナーが各マイルストーンでステージおよび UX チーム割り当ての作業に対するベースラインキャパシティを設定するのを支援してください。
-- 戦略作業を、明確な完了までの時間（TTC）の期待値、測定可能な目標、期限付きで定量化してください。
+- 要求があれば、プロダクトデザイナーが各マイルストーンでグループおよびプラットフォームに割り当てられた作業のベースラインキャパシティを設定できるよう支援してください。
+- 制作作業には、明確な完了までの時間（TTC）の期待値と期限を設定してください。戦略作業には、チームの学びに応じたペースで、測定可能な目標とチェックポイントを設定してください。
 - チームの質問、懸念、ブロッカーを迅速に解決してください。
-- クロスファンクショナルパートナーに潜在的な依存関係を認識させてください。
+- AI がより多くの定型的な制作作業を担うようになったら、空いたキャパシティをディスカバリーと戦略作業に振り向けてください。
+- クロスファンクショナルパートナーに、デザイナーのキャパシティには制作作業項目だけでなくディスカバリーと戦略作業も含まれることを理解してもらい、潜在的な依存関係も認識してもらってください。
 
 ### 優先順位
 
-デザイナーは自身のキャパシティを管理する責任があり、[マネージャーオブワン](/handbook/values/#managers-of-one)です。以下のカテゴリーは、マイルストーン全体にわたって作業の優先順位付けに役立ちます。
+最も大きな効果を生む作業は、コードが 1 行でも書かれる前に行われます。問題を検証し、プロトタイプに飛びつく前にフローから始め、成功基準を早期に設定することです。複数の作業が同じ時間を必要とする場合は、次の順序で優先します。
 
 必須:
 
-- コミュニティコントリビューションを含む、マージリクエスト（MR）レビュー。[MR レビューガイドライン](/handbook/product/ux/product-designer/mr-reviews/)を参照してください。
-- 他のデザイナーからのフィードバック依頼（Issue、MR、Figma、[`#ux-coworking`](https://gitlab.slack.com/app_redirect?channel=ux_coworking) Slack チャンネル）。
-- 現在のリリースマイルストーンの `Deliverable` とラベル付けされた Issue の調整。
-- `workflow::problem validation`、`workflow::solution validation`、または `workflow::design` ラベル付きで割り当てられた Issue。
-- 次のリリースマイルストーンでの UX Issue の計画と優先順位付け。[マイルストーン計画](/handbook/product/ux/product-designer/)を参照してください。
-- UX フォーラム、Slack 投稿、UX ミーティングを通じてチームと作業を共有する。
+- 現在のマイルストーンでコミットしたトリオの作業: `workflow::problem validation`、`workflow::solution validation`、または `workflow::design` ラベル付きで割り当てられた Issue、次のマイルストーンの計画、Upstream Forum、Slack、デザインクリティークを通じた進捗共有。これは自分がコミットした作業であり、最優先です。
+- 他の人の作業をブロックしているもの: 自動化されたカバレッジがまだない場合の同僚からのフィードバック依頼と、コミュニティコントリビューションを含むマージリクエストレビュー。自分の担当領域で自動化によるカバレッジを進め、これに費やす時間を徐々に減らしてください。
+- 具体的なソリューションのスコープを定める前に行う、大規模で全体的なロードマップ施策の探索・ビジョン策定作業。誰も待っていないため、最も削られやすい作業です。だからこそ、キャパシティを確保して守る必要があります。
 
 すべき:
 
 - ユーザーとそのワークフローの理解を改善するタスク（例: [UX スコアカード](/handbook/product/ux/ux-scorecards/)）。
-- 現在のリリースマイルストーンの `Stretch` とラベル付けされた Issue。
-- `Pajamas`、`pajamas::define`、`pajamas::design`、`pajamas::build`、または `pajamas::integrate` ラベル付きの Issue。[Pajamas コンポーネントライフサイクル](https://design.gitlab.com/get-started/lifecycle/)と [Pajamas Issue トラッカー](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com/-/issues)を参照してください。
-- 完全に指定されていないコンポーネントや例について、[Pajamas の ToDo ブロック](https://gitlab.com/search?group_id=5387503&project_id=4456656&scope=blobs&search=todo)を完成させる。
+- 現在のリリースマイルストーンで `Stretch` とラベル付けされた Issue と、Pajamas デザインシステムへのコントリビューション（`pajamas::define`、`pajamas::design`、`pajamas::build`、`pajamas::integrate`、および未完了の [Pajamas の ToDo ブロック](https://gitlab.com/search?group_id=5387503&project_id=4456656&scope=blobs&search=todo)）。さらに広い範囲に手を伸ばす前に、残りのキャパシティをここに充てます。
 
 できれば:
 
-- [`Seeking community contributions`](https://gitlab.com/groups/gitlab-org/-/issues?state=opened&label_name%5B%5D=Seeking+community+contributions&label_name%5B%5D=UX) ラベル付きの Issue や、その他の手の届きやすいユーザビリティ問題への対応。
-- 将来のマイルストーンの Issue（例: 次のリリースまたは [バックログ](https://gitlab.com/groups/gitlab-org/-/issues?state=opened&milestone_title=Backlog&label_name%5B%5D=UX)）。
-- マイルストーンなしの人気の Issue（コメントや賛同の数に基づく）。
-- [`UX` とラベル付けされたその他の Issue](https://gitlab.com/groups/gitlab-org/-/issues?state=opened&label_name%5B%5D=UX)。
-- GitLab 外で[デザイン作業を共有する](/handbook/product/ux/product-designer/#socializing-your-work)（ブログ投稿、ソーシャルメディア、カンファレンス）。
+- 将来のリリースまたは[バックログ](https://gitlab.com/groups/gitlab-org/-/issues?state=opened&milestone_title=Backlog&label_name%5B%5D=UX)のマイルストーンにある Issue、コミュニティラベル付きの取り組みやすい課題、マイルストーンのない人気の Issue、外部での作業共有。上記のどれにも対応する必要がない場合に取り組んでください。
 
 #### プロダクトマネジメントの支援
 
-トリオの戦略的パートナーとして、プロダクトデザイナーは UX のニーズに関する洞察を提供し、クイックウィンとより大きな戦略的イニシアチブの両方を特定するのに役立ちます。優先順位付けへのこの協調的なアプローチにより、デザインが計画議論のアップストリームに関与することが保証されます。
+トリオの戦略的パートナーとして、プロダクトデザイナーはユーザーのニーズに関するインサイトを提供し、クイックウィンとより大きな戦略的イニシアチブの両方を特定するのに役立ちます。この協調的なアプローチにより、デザインは上流段階から関与し、最初から計画の議論を形作ります。
 
 ### UX Issue ウェイト
 

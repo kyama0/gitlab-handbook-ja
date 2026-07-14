@@ -2,11 +2,11 @@
 title: "UX Bash"
 description: "バグを特定しユーザー体験を改善するための迅速かつ効率的な方法"
 upstream_path: /handbook/product/ux/experience-research/ux-bash/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
+translated_at: "2026-07-14T06:26:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-12T13:14:13+00:00"
+lastmod: "2026-07-13T19:21:22+01:00"
 ---
 
 Bash は、多様なグループまたはターゲットを絞ったグループの参加者が、機能を徹底的に使用し、できるだけ多くのペインポイントを効率的に発見するリサーチ手法です。
@@ -77,7 +77,7 @@ Bash は、[基礎的なリサーチ](/handbook/product/ux/experience-research/f
 
 - [GitLab Discord サーバーに参加します](/handbook/marketing/developer-relations/workflows-tools/discord/)。コミュニティと外部ユーザーが活発に活動しています。
 - Fatima Sarah Khalid（GitLab および Discord のハンドル: sugaroverflow）に連絡して、あなたの Discord プロフィールを GitLab 従業員として表示してもらいます。
-- 参加者に謝礼を支払うために、[インセンティブリクエスト Issue](/handbook/product/ux/research-operations/participation-gratuities/)を作成します。
+- 参加者に謝礼を支払うために、[インセンティブリクエスト Issue](/handbook/upstream-studios/research-operations/participation-gratuities/)を作成します。
 - [スクリーナーアンケート](/handbook/product/ux/experience-research/write-effective-screener/)へのリンクとともに、#announcements Discord チャンネルで bash を告知します。
   - ![Discord 招待の例](/images/product/ux/ux-research/ux-bash/Bash_Discord_invite.png)
 - 参加者を選びます。

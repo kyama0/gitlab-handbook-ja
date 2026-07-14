@@ -2,11 +2,11 @@
 title: "効果的なスクリーナーの書き方"
 description: GitLab で効果的な UX リサーチスクリーナーを書く方法
 upstream_path: /handbook/product/ux/experience-research/write-effective-screener/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
+translated_at: "2026-07-14T06:26:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-12T13:14:13+00:00"
+lastmod: "2026-07-13T19:21:22+01:00"
 ---
 
 {{< youtube "ym_scuZaqs8" >}}
@@ -44,7 +44,7 @@ lastmod: "2026-02-12T13:14:13+00:00"
 - スクリーナーのドラフトを作成する際は、内部メモにはブラケットを使い、リサーチャーや他のステークホルダーが、ある回答が回答者を打ち切り／拒絶すべきかを示せるようにします。ブラケットは、質問をスキップすべきタイミングを示すためにも使えます。
 - 前の回答に基づいて質問を表示したり回答者を特定の経路にルーティングするための高度なロジックが必要な場合、Qualtrics は優れたツールです。
 
-GitLab でのスクリーナーの最終ドラフトは [Qualtrics](/handbook/product/ux/experience-research/surveys/qualtrics/) で作成されます。Qualtrics へのアクセスがない場合は [リクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) してください。[別のリクルーティング方法](/handbook/product/ux/research-operations/recruitment-methods) や、[UserTesting.com](https://www.usertesting.com/) のようなモデレーターなし調査プラットフォームを使う場合は、それらのプラットフォームでスクリーナーを作成します。
+GitLab でのスクリーナーの最終ドラフトは [Qualtrics](/handbook/product/ux/experience-research/surveys/qualtrics/) で作成されます。Qualtrics へのアクセスがない場合は [リクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) してください。[別のリクルーティング方法](/handbook/upstream-studios/research-operations/recruitment-methods) や、[UserTesting.com](https://www.usertesting.com/) のようなモデレーターなし調査プラットフォームを使う場合は、それらのプラットフォームでスクリーナーを作成します。
 
 ### スクリーナーのヒント
 
@@ -67,7 +67,7 @@ GitLab でのスクリーナーの最終ドラフトは [Qualtrics](/handbook/pr
 - 調査の主題を隠すために、もっともらしい紛らわしい回答を使います。
 - 探している行動を示してしまうような、目立つスクリーナーオプションは避けます。
   - 参加者は他の回答選択肢から目立つ回答を探すことができます。
-  - マルチセレクトを使うと、報いなしのマルチ推測ができてしまうことがあります。
+  - マルチセレクトでは、不利益なく複数の選択肢を推測できてしまいます。
 - 複数の正解はあり得ます。インタビューから通常得る参加者についての情報を提供できます。
 
 | 不正解                          | 正解                                                                                                                                                                                                                                                                                                           |
@@ -75,7 +75,7 @@ GitLab でのスクリーナーの最終ドラフトは [Qualtrics](/handbook/pr
 | ダウンタウンの反対側、約 2 マイル離れたミーティングへ行く必要がある場合、ミーティングに行くために次のうちどれを検討しますか？ <ol type="a"><li>歩く</li><li>ハンググライダー</li><li>泳ぐ</li><li>這う</li></ol>             |ダウンタウンの反対側、約 2 マイル離れたミーティングへ行く必要がある場合、ミーティングに行くために次のうちどれを検討しますか？ <ol type="a"><li>歩く</li><li>自転車を借りる</li><li>スクーターを借りる</li><li>Lyft を呼ぶ</li></ol>                                                                                                                                                                                       |
 
 - 特定の行動を探している場合、スクリーナーに「セッションの一部として、画面を共有してもらい、以前のホテル予約をウォークスルーしてもらいます」のような声明を含めることで、その行動の検証を求めることができます。情報を共有することに同意するか不同意するかのオプションを与えます。
-  - これは、参加者が探している行動を完了していることを保証できます。
+  - これは、参加者がこちらの探している行動を実際に行ったことを確認できます。
   - これは、アクションや使用を検証して、参加者をセグメントに振り分ける必要がある場合に役立ちます。
 
 ### GitLab スクリーナーの例

@@ -2,11 +2,11 @@
 title: "サステナビリティ"
 description: "サステナビリティおよび ESG に関連する情報とプロセス"
 upstream_path: /handbook/legal/esg/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T13:23:21Z"
+upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
+translated_at: "2026-07-14T06:42:18+09:00"
 translator: claude
 stale: false
-lastmod: 2026-06-17T12:43:11-06:00
+lastmod: "2026-07-13T07:51:04-06:00"
 ---
 
 ## クイックリンク
@@ -96,7 +96,7 @@ GitLab の Climate Action Program は 4 つの柱で構成されています:
 
 3. **エンゲージ:** これには、GitLab のチームメンバーを気候の教育と行動に巻き込むことが含まれます。2024 年には、[GitLab Team Member Sustainability Guide](/handbook/legal/esg/team-member-sustainability-guide/) を立ち上げ、チームメンバーが自宅で環境への影響を最小限に抑えるために実践できる手順を提供しました。FY26 には、気候リテラシーとチャレンジのプラットフォームである [Mammoth Climate](https://www.mammothclimate.io/en) とのパートナーシップを開始し、教育資料、アクティビティ、報酬でチームメンバーをさらに巻き込みました
 
-4. **加速:** GitLab は排出の削減に取り組む一方で、カーボンフットプリントの一部をカバーするために高品質なカーボンクレジットを購入することで、気候ソリューションの加速にもコミットしています。私たちは、Rubicon の [高品質基準](https://drive.google.com/file/d/1nZgd4nRqNQibnYaJI_MVAfkv0giGvlqj/view) を満たすカーボン除去プロジェクトに資金を提供する、多様な高品質カーボンクレジットのポートフォリオを購入するために、[Rubicon Carbon](https://rubiconcarbon.com/) とパートナーシップを組んでいることを誇りに思います。
+4. **加速:** GitLab は排出の削減に取り組む一方で、カーボンフットプリントの一部をカバーするために高品質なカーボンクレジットを購入することで、気候ソリューションの加速にもコミットしています。私たちは [Rubicon Carbon](https://rubiconcarbon.com/)と提携し、Rubicon の [高品質基準](https://drive.google.com/file/d/1nZgd4nRqNQibnYaJI_MVAfkv0giGvlqj/view)を満たすカーボン除去プロジェクトに資金を提供する、多様な高品質カーボンクレジットのポートフォリオを購入していることを誇りに思います。
 
 #### サステナブル調達プログラム {#sustainable-procurement-program}
 
@@ -268,7 +268,7 @@ GitLab は 2023 年に現物寄付プログラムである [GitLab for Nonprofit
 
 GitLab は、プロジェクト管理、コラボレーション、ソースコード管理、git、自動化、セキュリティなどのための単一のプラットフォームです。使いやすく、柔軟で、すべてが 1 か所にあるため、非営利団体が自分たちの仕事をスケールさせるための最良の選択肢です。GitLab for Nonprofits プログラムは、登録された非営利団体に GitLab の無料ライセンスを提供します。
 
-プログラムに受け入れられた非営利団体には、最大 20 シートまで、1 年間無料の Ultimate ライセンス（SaaS または self-managed）が提供されます。追加のシートをリクエストできますが、付与されない場合があります。
+プログラムに受け入れられた非営利団体には、最大 20 シートまで、1 年間無料の Ultimate ライセンス（SaaS または self-managed）が提供されます。追加のシートは割引料金でリクエストできます。
 
 **誰がプログラムの対象となりますか？**
 
@@ -305,8 +305,8 @@ GitLab for Nonprofits プログラムの恩恵には製品 [サポート](https:
 
 **私は GitLab チームメンバーで、プログラムに応募する顧客がいます。どうすればよいですか？**
 
-* 非営利団体に、プログラム、資格、応募について学べる GitLab for Nonprofits ページを案内してください
-* 非営利団体が応募の資格やステータスについて質問がある場合は、nonprofits@gitlab.com に連絡するよう案内してください。または、チームメンバーは [#esg](https://gitlab.enterprise.slack.com/archives/CPWSJBCDP) で応募のステータスについて問い合わせられます
+* 非営利団体が必要とするシートが 20 未満の場合は、プログラム、資格、応募について学べる GitLab for Nonprofits ページを案内してください。20 を超えるシートが必要な場合は、営業担当者による支援プロセスとなります。Slack チャンネル #gitlab-for-nonprofits で連絡してください
+* 非営利団体が応募の資格やステータスについて質問がある場合は、nonprofits@gitlab.com に連絡するよう案内してください。または、チームメンバーは #gitlab-for-nonprofits で応募のステータスについて問い合わせられます
 * 顧客のチャーンについて質問や懸念がある場合は、#gitlab-for-nonprofits slack チャンネルで提起してください。サステナビリティチームのメンバーが連絡します
 
 ### フィランソロピーリクエスト
