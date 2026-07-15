@@ -2,11 +2,11 @@
 title: "Qualtrics のヒントとコツ"
 description: "GitLab で Qualtrics を使ってアンケートを実施する方法"
 upstream_path: /handbook/product/ux/experience-research/surveys/qualtrics/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
+translated_at: "2026-07-14T06:26:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-12T13:14:13+00:00"
+lastmod: "2026-07-13T19:21:22+01:00"
 ---
 
 ## アンケートを作成する
@@ -68,7 +68,7 @@ lastmod: "2026-02-12T13:14:13+00:00"
 
 ボットには洗練度に差があります。例えば、基本的なボットはアンケートを「スピード」で通過したり、自由回答形式の質問に対して論理的でない回答を提供したりします。より洗練されたボットは、意図的にアンケートの完了に時間をかけたり、アンケート自体の言語を使用して自由回答形式の質問に論理的な回答を作成したりします。
 
-[これらの回答のほとんど](/handbook/product/ux/experience-research/surveys/how-to-identify-low-quality-data-when-designing-and-reviewing-your-survey/)を防止またはフィルタリングするためにできることはいくつかあります。「これらの回答のほとんど」と言うのは、アンケート内のスパムを回避する唯一の真の方法は、ソーシャルメディアで共有するのではなく、[Marketo やデータウェアハウス](/handbook/product/ux/research-operations/recruitment-methods)などのリソースを活用して、私たちが保有する GitLab ユーザーの対象セットに連絡するために、[個別リンク付きのメールアンケート招待を送信する](https://www.qualtrics.com/support/survey-platform/distributions-module/email-distribution/emails-overview/#UnderstandingTheIndividualLink)（一度のみ使用可能）ことだからです。
+[これらの回答のほとんど](/handbook/product/ux/experience-research/surveys/how-to-identify-low-quality-data-when-designing-and-reviewing-your-survey/)を防止またはフィルタリングするためにできることはいくつかあります。「これらの回答のほとんど」と言うのは、アンケート内のスパムを回避する唯一の確実な方法が、ソーシャルメディアで共有せず、一度しか使用できない[個別リンク付きのメールアンケート招待を送信する](https://www.qualtrics.com/support/survey-platform/distributions-module/email-distribution/emails-overview/#UnderstandingTheIndividualLink)ことだからです。その際、[Marketo やデータウェアハウス](/handbook/upstream-studios/research-operations/recruitment-methods)などのリソースを活用して、私たちが保有する GitLab ユーザーの対象セットに連絡します。
 
 ### アンケート共有前にスパム回答を防止する
 
@@ -174,7 +174,7 @@ lastmod: "2026-02-12T13:14:13+00:00"
 
 サンプル数が期待よりも少ない理由はいくつか考えられます。
 
-1. GitLab First Look の連絡頻度が使い切られました。デフォルトでは、GitLab First Look のメンバーは週に 1 回または月に 4 回以上メールを受け取りません。この場合、アンケートの送信を遅らせるか（アンケートの送信を 1 日だけ遅らせるだけでよい場合もあります。確認のために UX Research Coordinator に連絡してください）、GitLab First Look パネル以外からユーザーを調達する必要があります。
+1. GitLab First Look の連絡頻度が使い切られました。デフォルトでは、GitLab First Look のメンバーが週 1 回、月 4 回を超えてメールを受け取ることはありません。この場合、アンケートの送信を遅らせるか（アンケートの送信を 1 日だけ遅らせるだけでよい場合もあります。確認のために UX Research Coordinator に連絡してください）、GitLab First Look パネル以外からユーザーを調達する必要があります。
 1. サンプリング基準に一致する GitLab First Look メンバーが十分にいません。
 1. サンプリング基準にエラーがあります。
 

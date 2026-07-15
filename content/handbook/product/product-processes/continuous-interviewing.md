@@ -2,11 +2,11 @@
 title: "継続的インタビュー"
 description: "継続的インタビューの目的と、その設定方法について"
 upstream_path: /handbook/product/product-processes/continuous-interviewing/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
+translated_at: "2026-07-14T06:42:18+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-12T13:14:13+00:00"
+lastmod: "2026-07-13T19:21:22+01:00"
 ---
 
 [継続的インタビュー](https://medium.com/@ttorres/continuous-interviewing-the-key-to-successful-product-teams-6bf63bfc1936) は、プロダクトマネージャー (PM) がユーザーから継続的に学び、プロダクトディスカバリーに活用できるインサイトを発見できるプロセスです。これらのインタビューは、特定の仮説やリサーチ要求を中心に組み立てられていないため、ほとんどの場合同じスクリプトに従います。ただし、PM は必要に応じてインタビューの潜在的な焦点をシフトし、特定のトピックをより深く掘り下げることができます。
@@ -44,4 +44,4 @@ lastmod: "2026-02-12T13:14:13+00:00"
 - すべての継続的顧客インタビューデータは Dovetail に保管する必要があります。追加情報 (サマリー、テンプレートなど) は、データが Dovetail プロジェクトにつながっていれば、機密 Issue に保管できます。
 - 顧客の [個人を特定できる情報 (PII)](/handbook/support/workflows/pii_removal_requests/) を Dovetail や GitLab Issue から削除し、チームメンバーがリサーチプロセスの一部として特定の個人を特定できないようにする。
   - 例: ユーザーの姓名やユーザーが働いている会社名を含めないようにする。代わりに、職業名、ペルソナタイプ、または参加者番号 (P6) で参照できる。
-- 顧客リサーチでは、参加者の時間に対して [補償する](/handbook/product/ux/research-operations/participation-gratuities/#incentive-qualification) オプションがあります。感謝の小さなトークンを提供することは、ユーザーの時間を私たちが大切にしていることを示すベストプラクティスです。
+- 顧客リサーチでは、参加者の時間に対して [補償する](/handbook/upstream-studios/research-operations/participation-gratuities/#incentive-qualification) オプションがあります。感謝の小さなトークンを提供することは、ユーザーの時間を私たちが大切にしていることを示すベストプラクティスです。

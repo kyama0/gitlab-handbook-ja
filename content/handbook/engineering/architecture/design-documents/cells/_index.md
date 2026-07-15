@@ -10,11 +10,11 @@ participating-stages: []
 toc_hide: true
 no_list: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
+upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
+translated_at: "2026-07-14T06:42:18+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-06-02T15:52:44+12:00"
+lastmod: "2026-07-13T10:55:12+12:00"
 ---
 
 
@@ -302,6 +302,7 @@ Tenant Scale チームは、Cells のデプロイメントの基盤として Git
 - [ADR-024: Use Backup and Restore for Disaster Recovery](decisions/024_disaster_recovery_cells.md)
 - [ADR 025: Separate Cloudflare Worker for /api/v4/jobs/request endpoint](decisions/025_separate_worker_for_jobs_request_endpoint.md)
 - [ADR 026: Using Hono for HTTP Router Path-Based Routing](decisions/026_hono_for_http_router.md)
+- [ADR 027: Cross-Cloud Dependency Allow-List](decisions/027_cross_cloud_dependency_allow_list.md)
 
 ## リンク
 

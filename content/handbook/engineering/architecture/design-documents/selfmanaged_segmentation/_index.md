@@ -261,7 +261,7 @@ flowchart LR
     end
 ```
 
-#### 初期 Self-Managed Advanced（SMA）
+#### 初期 Self-Managed Advanced（SMA） {#early-self-managed-advanced-sma}
 
 Advanced の最初期・最もシンプルな形では、すべての Foundation コンポーネントは Omnibus 内で運用され、すべての補足コンポーネントは OAK 内で運用されます。
 すべてのインバウンド Web ベースサービスは _Foundation のみ_ を通り、OAK に向けられます。

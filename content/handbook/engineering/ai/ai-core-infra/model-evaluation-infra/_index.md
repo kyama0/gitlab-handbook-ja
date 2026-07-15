@@ -2,9 +2,9 @@
 title: AI Core Infra：Model Evaluation Infra
 description: "AI Core Infra 内の Model Evaluation Infra ファンクショナルチーム。GitLab で AI 機能を評価するための Centralized Evaluation Framework の保守に重点を置いています。"
 upstream_path: /handbook/engineering/ai/ai-core-infra/model-evaluation-infra/
-upstream_sha: e829b207a53856c23a25197426cca945626ade8a
-lastmod: "2026-07-01T10:27:42+02:00"
-translated_at: "2026-07-05T00:25:00+09:00"
+upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
+lastmod: "2026-07-13T17:23:35+02:00"
+translated_at: "2026-07-14T06:42:18+09:00"
 translator: codex
 stale: false
 ---
@@ -23,6 +23,13 @@ Model Evaluation Infra チームは AI Core Infra 組織の一部です。この
 | **Stage ラベル** | `devops::ai platform` |
 | **Group ラベル** | `group::ai core infra` |
 | **Category ラベル** | `category:model evaluation infra` |
+
+## チームリソース
+
+| リソース | リンク |
+|---|---|
+| **チームプロジェクト** | [Model Evaluation Infra チームプロジェクト](https://gitlab.com/gitlab-org/ai-powered/model-evaluation-infra/team) |
+| **Issue ボード** | [Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/11425068) |
 
 ## ドキュメント
 

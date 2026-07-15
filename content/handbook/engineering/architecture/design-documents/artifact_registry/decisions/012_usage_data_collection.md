@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "SaaS およびセルフマネージドのデプロイにまたがるプロダクトアナリティクスとビジネスインテリジェンスのために、Artifact Registry が使用状況データを収集する方法に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-10T09:52:28+02:00
-translated_at: "2026-06-12T21:12:20Z"
+upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
+lastmod: "2026-07-13T15:59:31+02:00"
+translated_at: "2026-07-14T06:42:18+09:00"
 translator: claude
 stale: false
 ---
@@ -45,7 +45,7 @@ Go サテライトサービス向けに、[LabKit v2](https://gitlab.com/gitlab-
 すべての AR カスタムイベントは、スコープごとに層を成す 2 つのコンテキストを付加します。
 
 - **[`gitlab_standard/1-1-8`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/gitlab_standard/jsonschema/1-1-8)** — 共通の ID および環境フィールド（`environment`、`realm`、`instance_id`、`deployment_type`、`organization_id`、`user_id`）。AR イベントをモノリスイベントと同じウェアハウスの列に格納し、プロダクト横断の分析を可能にする。
-- **[`artifact_registry_context/1-0-0`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/artifact_registry_context/jsonschema/1-0-0)** — AR 固有のディメンション: `ar_instance_version`（必須）、`ar_namespace_id`、`format`、`repository_kind`（`hosted`/`virtual`/`remote`）、`repository_id`、`cache_hit`、`upstream_type`（`hosted`/`remote`）。`ar_namespace_id` をファーストクラスの列として運び、AR ネームスペースの粒度で課金データとアナリティクスがきれいに結合できるようにする。
+- **[`artifact_registry_context/1-0-0`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/artifact_registry_context/jsonschema/1-0-0)** — AR 固有のディメンション: `ar_instance_version`（必須）、`ar_namespace_id`（ネームスペース UUID）と `ar_namespace_slug`、`format`、`repository_kind`（`hosted`/`virtual`/`remote`）、`repository_id`（リポジトリ UUID）と `repository_name`、`cache_hit`、`upstream_type`（`hosted`/`remote`）。ネームスペースとリポジトリは、それぞれ UUID と人が読める識別子を保持する。UUID は安定した結合キーであり、ネームスペース UUID は AR ネームスペースの粒度における課金の結合キーでもある。これは、スラッグは顧客にとって不変であるものの、管理上の再取得（スクワッティング紛争、法的請求）によって変更される可能性があるためである。
 
 イベント固有の単発フィールド（例: `auth_method`、`deletion_type`、`artifacts_removed_count`）は、いずれのコンテキストでもなく、イベント自身の `custom_event` ペイロードに入れます。
 

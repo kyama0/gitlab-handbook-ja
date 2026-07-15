@@ -5,11 +5,11 @@ status: accepted
 creation-date: "2025-09-04"
 authors: [ "@rymai" ]
 upstream_path: /handbook/engineering/architecture/design-documents/group_and_project_operations_and_state_management/decisions/003_state_propagation_model/
-upstream_sha: 33ef35e4327874fd4153c5606125f5de47ff7924
-translated_at: "2026-04-27T00:00:00Z"
+upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
+translated_at: "2026-07-13T22:24:52Z"
 translator: claude
 stale: false
-lastmod: "2026-04-08T16:19:12+02:00"
+lastmod: "2026-07-13T11:26:01+02:00"
 ---
 
 ## コンテキスト
@@ -31,18 +31,18 @@ GitLab の階層的なネームスペース構造（Organization > Group > Subgr
 
 状態は伝播動作に基づいて 2 つのカテゴリに分類されます：
 
-1. **伝播される状態**：`active`、`archived`、`deletion_scheduled` — これらの状態はネームスペースに設定されるとすべての子孫に伝播されます。ネームスペースがこれらの状態のいずれかに移行すると、すべての子孫ネームスペースとプロジェクトが同じ状態を受け取ります。`active` 状態（`ancestor_inherited` とも呼ばれる）は制限が適用されていないデフォルト状態を表します。
-2. **伝播されない状態**：`creation_in_progress`、`deletion_in_progress`、`transfer_in_progress` — これらの状態は短命な操作を表し、子孫には伝播されません。操作を実行しているネームスペースのみに適用されます。
+1. **伝播される状態**：`active`、`archived`、`deletion_scheduled`、`maintenance` — これらの状態はネームスペースに設定されるとすべての子孫に伝播されます。ネームスペースがこれらの状態のいずれかに移行すると、すべての子孫ネームスペースとプロジェクトが同じ状態を受け取ります。`active` 状態（`ancestor_inherited` とも呼ばれる）は制限が適用されていないデフォルト状態を表します。
+2. **伝播されない状態**：`creation_in_progress`、`deletion_in_progress`、`transfer_in_progress`、`transfer_scheduled` — これらの状態は短命な操作を表し、子孫には伝播されません。操作を実行しているネームスペースのみに適用されます。
 
 ### 状態伝播ルール
 
-1. **遷移時の伝播**：ネームスペースが伝播される状態（`active`、`archived`、または `deletion_scheduled`）に移行すると、その状態はすべての子孫ネームスペースとプロジェクトに書き込まれます。例えば、グループをアーカイブするとすべての子孫がアーカイブされ、アーカイブ解除（`active` への移行）するとすべての子孫が復元されます。
+1. **遷移時の伝播**：ネームスペースが伝播される状態（`active`、`archived`、`deletion_scheduled`、または `maintenance`）に移行すると、その状態はすべての子孫ネームスペースとプロジェクトに書き込まれます。例えば、グループをアーカイブするとすべての子孫がアーカイブされ、アーカイブ解除（`active` への移行）するとすべての子孫が復元されます。
 2. **伝播境界**：伝播は、すでに異なる伝播状態を持つ子孫に遭遇すると停止します。例えば、`archived` の祖先の中に `deletion_scheduled` のネームスペースがある場合、祖先のアーカイブ解除は `deletion_scheduled` ネームスペースまで — ただしそれを通り越しては — `active` を伝播します。`deletion_scheduled` ネームスペースとその子孫は自身の状態を保持します。これにより、階層内で明示的に設定された状態が保持されます。
 3. **トランザクショナルアウトボックスによる信頼性の高い非同期伝播**：伝播はデリバリーを保証するために[トランザクショナルアウトボックスパターン](https://microservices.io/patterns/data/transactional-outbox.html)を使用します。ネームスペースが伝播される状態に移行すると、状態変更と**同じデータベーストランザクション**で `namespace_state_propagation` レコードが作成されます。このレコードは `source_state`（遷移前の状態）と `target_state`（遷移後の状態）を `status: pending` とともにキャプチャします。これにより、プロセスが Sidekiq ジョブのエンキュー前にクラッシュしても、伝播リクエストが失われないことが保証されます。その後、`Namespaces::StatePropagationWorker` がエンキューされ、[ツリーイテレーター](https://docs.gitlab.com/development/database/poc_tree_iterator/)を使用して子孫をバッチ処理する実際の伝播を行います。ツリーイテレーターは `parent_id` カラムを使用したカーソルベースのバッチ処理と深さ優先探索の再帰的 CTE を使用し、非常に大規模な階層でもタイムアウトなしに安全に処理できます（大規模グループでタイムアウトする可能性がある `traversal_ids` ベースのクエリとは異なります）。ワーカーは開始時にアウトボックスレコードを `processing` に移行し、完了時に削除します。
 4. **CRON ベースの調整**：`Namespaces::StatePropagationCronWorker` が数分ごとに実行され、ピックアップされなかったか実行中に停止した伝播をキャッチします。`processing` レコードについては、Sidekiq の重複排除ロックをチェックして、ワーカーがまだアクティブに実行中かどうかを判断します。ロックが期限切れの場合（つまり、そのネームスペースとターゲット状態に対してジョブが実行中またはキューに入っていない場合）、レコードは `pending` にリセットされます。その後、すべての `pending` レコードが再エンキューされます。伝播ワーカーは Sidekiq `deduplicate :until_executed` を使用するため、同じネームスペースとターゲット状態のジョブがすでにキューに入っているか実行中の場合、重複したエンキューは安全にドロップされます。このアプローチにより、固定時間の閾値を避けられます — ジョブが経過時間に基づいて古いかどうかを推測する代わりに、実際の Sidekiq ジョブの状態を確認します。
 5. **伝播後の副作用**：子孫が新しい状態にあることに依存するアクションは、伝播が完了した後にのみ発生する必要があります。これにはドメインイベント（例：`GroupArchivedEvent`、`ProjectArchivedEvent`）、コールバック、Webhook、および任意のダウンストリーム処理が含まれます。例えば、`GroupArchivedEvent` は、すべての子孫ネームスペースとプロジェクトがアーカイブされた後にのみ公開されるべきで、イベントに反応するサブスクライバーがイベント発生時に階層全体がすでに期待される状態にあると仮定できるようにします。伝播が完了する前に副作用をトリガーすると、コンシューマーが階層全体で一貫性のない状態を観測する競合状態を引き起こす可能性があります。
 6. **書き込み時の祖先バリデーション**：伝播により読み取り時の祖先ルックアップが不要になりますが、書き込み時には祖先の状態をバリデーションする必要があります。状態遷移ガードは遷移を許可する前に親の状態を確認する必要があります。例えば、親がまだアーカイブされている場合、子孫をアーカイブ解除することはできません。これにより、すべての読み取り操作での祖先走査を必要とせずに階層の一貫性が維持されます。
-7. **ツリーイテレーターでの境界強制**：伝播された状態は優先順位があります：`deletion_scheduled`（最高）> `archived` > `active`（最低）。伝播ワーカーはルール 2（伝播境界）を 3 つのレイヤーで強制します：
+7. **ツリーイテレーターでの境界強制**：伝播された状態は優先順位があります：`maintenance`（最高）> `deletion_scheduled` > `archived` > `active`（最低）。伝播ワーカーはルール 2（伝播境界）を 3 つのレイヤーで強制します：
     - **走査の刈り込み**：[`Gitlab::Database::NamespaceEachBatch`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/database/namespace_each_batch.rb) のサブクラス（`Namespaces::StatePropagationIterator`）が `walk_down` と `next_elements` メソッドをオーバーライドして、再帰的 CTE の LATERAL サブクエリに状態フィルター（`AND state IN (overwritable_states)`）を追加します。これにより、DFS が同等以上の優先度を持つネームスペースをスキップし、サブツリー全体を走査から刈り込みます。
     - **カーソル巻き戻しを伴うバッチごとの祖先チェック**：各バッチ更新の前に、ワーカーはカーソルの `depth` パスにあるネームスペースが上書き不可能な状態に同時に変更されたかどうかをチェックします。パスの途中で境界が見つかった場合、ワーカーはバッチをスキップし、**カーソルを巻き戻します** — 深さを境界の親にトリミングし、`current_id` を境界ネームスペースに設定します。これにより、ツリーイテレーターの次のバッチが境界ネームスペースの次の兄弟から再開し、境界サブツリー全体を効果的にスキップします。その後、イテレーターは残りの影響を受けていないサブツリーへの DFS を継続します。
     - **条件付き UPDATE**：バッチ UPDATE には、祖先チェックと更新の間の同時変更に対する最終的な安全ネットとして `WHERE state IN (overwritable_states)` 句が含まれます。
@@ -225,14 +225,16 @@ sequenceDiagram
 
 #### すべての状態遷移
 
-| **新しい状態**           | **古い状態: active**     | **古い状態: archived**    | **古い状態: creation_in_progress** | **古い状態: deletion_in_progress** | **古い状態: deletion_scheduled** | **古い状態: transfer_in_progress** |
-|--------------------------|--------------------------|---------------------------|-------------------------------------|-------------------------------------|-----------------------------------|-------------------------------------|
-| **active**               | -                        | :white_check_mark: 許可   | :white_check_mark: 許可             | :white_check_mark: 許可             | :white_check_mark: 許可           | :white_check_mark: 許可             |
-| **archived**             | :white_check_mark: 許可  | -                         | :x: 拒否                            | :white_check_mark: 許可             | :white_check_mark: 許可           | :white_check_mark: 許可             |
-| **creation_in_progress** | :x: 拒否                 | :x: 拒否                  | -                                   | :x: 拒否                            | :x: 拒否                          | :x: 拒否                            |
-| **deletion_in_progress** | :x: 拒否                 | :x: 拒否                  | :white_check_mark: 許可             | -                                   | :white_check_mark: 許可           | :x: 拒否                            |
-| **deletion_scheduled**   | :white_check_mark: 許可  | :white_check_mark: 許可   | :x: 拒否                            | :white_check_mark: 許可             | -                                 | :x: 拒否                            |
-| **transfer_in_progress** | :white_check_mark: 許可  | :white_check_mark: 許可   | :x: 拒否                            | :x: 拒否                            | :x: 拒否                          | -                                   |
+| **新しい状態**           | **古い状態: active**     | **古い状態: archived**    | **古い状態: creation_in_progress** | **古い状態: deletion_in_progress** | **古い状態: deletion_scheduled** | **古い状態: maintenance**       | **古い状態: transfer_in_progress** | **古い状態: transfer_scheduled** |
+|--------------------------|--------------------------|---------------------------|-------------------------------------|-------------------------------------|-----------------------------------|----------------------------------|-------------------------------------|---------------------------------------|
+| **active**               | -                        | :white_check_mark: 許可   | :white_check_mark: 許可             | :white_check_mark: 許可             | :white_check_mark: 許可           | :white_check_mark: 許可          | :white_check_mark: 許可             | :x: 拒否                              |
+| **archived**             | :white_check_mark: 許可  | -                         | :x: 拒否                            | :white_check_mark: 許可             | :white_check_mark: 許可           | :white_check_mark: 許可          | :white_check_mark: 許可             | :x: 拒否                              |
+| **creation_in_progress** | :x: 拒否                 | :x: 拒否                  | -                                   | :x: 拒否                            | :x: 拒否                          | :x: 拒否                         | :x: 拒否                            | :x: 拒否                              |
+| **deletion_in_progress** | :x: 拒否                 | :x: 拒否                  | :white_check_mark: 許可             | -                                   | :white_check_mark: 許可           | :x: 拒否                         | :x: 拒否                            | :x: 拒否                              |
+| **deletion_scheduled**   | :white_check_mark: 許可  | :white_check_mark: 許可   | :x: 拒否                            | :white_check_mark: 許可             | -                                 | :white_check_mark: 許可          | :x: 拒否                            | :x: 拒否                              |
+| **maintenance**          | :white_check_mark: 許可  | :white_check_mark: 許可   | :x: 拒否                            | :x: 拒否                            | :white_check_mark: 許可           | -                                | :x: 拒否                            | :white_check_mark: 許可               |
+| **transfer_in_progress** | :white_check_mark: 許可  | :white_check_mark: 許可   | :x: 拒否                            | :x: 拒否                            | :x: 拒否                          | :x: 拒否                         | -                                   | :white_check_mark: 許可               |
+| **transfer_scheduled**   | :white_check_mark: 許可  | :white_check_mark: 許可   | :x: 拒否                            | :x: 拒否                            | :x: 拒否                          | :white_check_mark: 許可          | :x: 拒否                            | -                                     |
 
 #### 有効な状態遷移
 
@@ -242,18 +244,29 @@ sequenceDiagram
 | creation_in_progress → active               | 作成完了                                                                                           |
 | deletion_in_progress → active               | 削除失敗。無限リトライループを避けるため deletion_scheduled をスキップ                             |
 | deletion_scheduled → active                 | 削除からの復元                                                                                     |
+| maintenance → active                        | メンテナンスモードを終了                                                                           |
 | transfer_in_progress → active               | 移転完了                                                                                           |
 | active → archived                           | アーカイブ                                                                                         |
 | deletion_in_progress → archived             | アーカイブされたネームスペースからトリガーされた削除が失敗した。リトライループを防ぐため deletion_scheduled をスキップ |
 | deletion_scheduled → archived               | アーカイブされたネームスペースからトリガーされた削除                                               |
+| maintenance → archived                      | メンテナンスモードを終了し、archived 状態に戻す                                                    |
 | transfer_in_progress → archived             | アーカイブされたアイテムの移転完了を許可                                                           |
 | creation_in_progress → deletion_in_progress | 致命的な作成失敗                                                                                   |
 | deletion_scheduled → deletion_in_progress   | ネームスペースの削除を開始                                                                         |
 | active → deletion_scheduled                 | 削除スケジュール                                                                                   |
 | archived → deletion_scheduled               | アーカイブされたネームスペースの削除スケジュール                                                   |
 | deletion_in_progress → deletion_scheduled   | 削除失敗。リトライのためにキューに再追加                                                           |
+| maintenance → deletion_scheduled            | メンテナンスモードを終了し、deletion_scheduled 状態に戻す                                          |
+| active → maintenance                        | メンテナンスモードに移行                                                                           |
+| archived → maintenance                      | アーカイブされたネームスペースをメンテナンスモードに移行                                         |
+| deletion_scheduled → maintenance            | 削除スケジュール中にメンテナンスモードに移行                                                       |
+| transfer_scheduled → maintenance            | 移転スケジュール中にメンテナンスモードに移行                                                       |
+| maintenance → transfer_scheduled            | メンテナンスモードを終了し、transfer_scheduled 状態に戻す                                          |
 | active → transfer_in_progress               | ネームスペースを移転                                                                               |
 | archived → transfer_in_progress             | アーカイブされたネームスペースを移転                                                               |
+| transfer_scheduled → transfer_in_progress   | スケジュールされた移転を開始                                                                       |
+| active → transfer_scheduled                 | 移転をスケジュール                                                                                 |
+| archived → transfer_scheduled               | アーカイブされたネームスペースの移転をスケジュール                                                 |
 
 #### 無効な状態遷移
 
@@ -264,15 +277,30 @@ sequenceDiagram
 | archived → creation_in_progress             | creation_in_progress に戻せない                                                           |
 | deletion_in_progress → creation_in_progress | creation_in_progress に戻せない                                                           |
 | deletion_scheduled → creation_in_progress   | creation_in_progress に戻せない                                                           |
+| maintenance → creation_in_progress          | creation_in_progress に戻せない                                                           |
+| maintenance → deletion_in_progress          | 最初に deletion_scheduled を経由する必要がある                                            |
 | transfer_in_progress → creation_in_progress | creation_in_progress に戻せない                                                           |
+| transfer_scheduled → creation_in_progress   | creation_in_progress に戻せない                                                           |
+| transfer_scheduled → active                 | スケジュールされた移転はキャンセルできない                                               |
+| transfer_scheduled → archived               | スケジュールされた移転はキャンセルできない                                               |
 | active → deletion_in_progress               | 最初に deletion_scheduled を経由する必要がある                                            |
 | archived → deletion_in_progress             | 最初に deletion_scheduled を経由する必要がある                                            |
+| maintenance → transfer_in_progress          | メンテナンスモードでは進行中の操作がブロックされる                                       |
 | transfer_in_progress → deletion_in_progress | 永続削除前に移転を完了する必要がある                                                      |
+| transfer_scheduled → deletion_in_progress   | 永続削除前に移転を完了する必要がある                                                      |
 | creation_in_progress → deletion_scheduled   | 削除スケジュールは作成成功後のみ許可                                                      |
 | transfer_in_progress → deletion_scheduled   | 削除スケジュールは移転成功後のみ許可                                                      |
+| transfer_scheduled → deletion_scheduled     | 削除スケジュールは移転成功後のみ許可                                                      |
+| creation_in_progress → maintenance          | メンテナンスは作成成功後のみ許可                                                          |
+| deletion_in_progress → maintenance          | 削除進行中はメンテナンスモードに移行できない                                             |
+| transfer_in_progress → maintenance          | 移転進行中はメンテナンスモードに移行できない                                             |
 | creation_in_progress → transfer_in_progress | 移転は作成成功後のみ許可                                                                  |
 | deletion_in_progress → transfer_in_progress | 削除進行中は移転不可                                                                      |
 | deletion_scheduled → transfer_in_progress   | 削除スケジュール中は移転不可                                                              |
+| creation_in_progress → transfer_scheduled   | 移転スケジュールは作成成功後のみ許可                                                      |
+| deletion_in_progress → transfer_scheduled   | 削除進行中は移転をスケジュールできない                                                   |
+| deletion_scheduled → transfer_scheduled     | 削除スケジュール中は移転をスケジュールできない                                           |
+| transfer_in_progress → transfer_scheduled   | 移転進行中は移転をスケジュールできない                                                   |
 
 #### 状態遷移の概要
 
@@ -294,8 +322,19 @@ sequenceDiagram
 | active → deletion_scheduled                 | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress               | 親は deletion_in_progress、deletion_scheduled、transfer_in_progress であってはならない          | NOT creation_in_progress, NOT transfer_in_progress | creation_in_progress または transfer_in_progress の子は親の削除スケジュールをブロックする |
 | archived → deletion_scheduled               | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress               | 親は deletion_in_progress、deletion_scheduled、transfer_in_progress であってはならない          | NOT creation_in_progress, NOT transfer_in_progress | creation_in_progress または transfer_in_progress の子は親の削除スケジュールをブロックする |
 | deletion_in_progress → deletion_scheduled   | -                                                                                        | リトライのための削除失敗ロールバック                                                            | -                                                  | ロールバックシナリオ - すべての子状態が許可                                               |
-| active → transfer_in_progress               | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress               | 親は active または archived である必要がある                                                    | すべての子は active または archived のみ           | すべての子は active または archived である必要がある                                      |
-| archived → transfer_in_progress             | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress               | 親は active または archived である必要がある                                                    | すべての子は active または archived のみ           | すべての子は active または archived である必要がある                                      |
+| active → maintenance                        | NOT deletion_in_progress, NOT transfer_in_progress                                       | 親は deletion_in_progress または transfer_in_progress であってはならない                        | NOT creation_in_progress, NOT transfer_in_progress | creation_in_progress または transfer_in_progress の子は親のメンテナンスモード移行をブロックする |
+| archived → maintenance                      | NOT deletion_in_progress, NOT transfer_in_progress                                       | 親は deletion_in_progress または transfer_in_progress であってはならない                        | NOT creation_in_progress, NOT transfer_in_progress | creation_in_progress または transfer_in_progress の子は親のメンテナンスモード移行をブロックする |
+| deletion_scheduled → maintenance            | -                                                                                        | 削除スケジュール中にメンテナンスモードに移行                                                    | -                                                  | すべての子状態が許可                                                                      |
+| transfer_scheduled → maintenance            | -                                                                                        | 移転スケジュール中にメンテナンスモードに移行                                                    | -                                                  | すべての子状態が許可                                                                      |
+| maintenance → active                        | -                                                                                        | メンテナンスモードを終了 - 階層全体が maintenance のため、親チェックは不要                      | -                                                  | 子はメンテナンスモードの終了を継承                                                        |
+| maintenance → archived                      | -                                                                                        | メンテナンスモードを終了 - 階層全体が maintenance のため、親チェックは不要                      | -                                                  | 子はメンテナンスモードの終了を継承                                                        |
+| maintenance → deletion_scheduled            | -                                                                                        | メンテナンスモードを終了 - 階層全体が maintenance のため、親チェックは不要                      | -                                                  | 子はメンテナンスモードの終了を継承                                                        |
+| maintenance → transfer_scheduled            | -                                                                                        | メンテナンスモードを終了 - 階層全体が maintenance のため、親チェックは不要                      | -                                                  | 子はメンテナンスモードの終了を継承                                                        |
+| active → transfer_in_progress               | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress, NOT maintenance | 親は active または archived である必要がある                                                    | すべての子は active または archived のみ           | すべての子は active または archived である必要がある                                      |
+| archived → transfer_in_progress             | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress, NOT maintenance | 親は active または archived である必要がある                                                    | すべての子は active または archived のみ           | すべての子は active または archived である必要がある                                      |
+| transfer_scheduled → transfer_in_progress   | -                                                                                        | スケジュールされた移転を開始                                                                    | -                                                  | 移転実行 - 子は自身の状態を維持                                                           |
+| active → transfer_scheduled                 | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress, NOT transfer_scheduled | 親は deletion_in_progress、deletion_scheduled、transfer_in_progress、transfer_scheduled であってはならない | NOT creation_in_progress, NOT transfer_in_progress | creation_in_progress または transfer_in_progress の子は親の移転スケジュールをブロックする |
+| archived → transfer_scheduled               | NOT deletion_in_progress, NOT deletion_scheduled, NOT transfer_in_progress, NOT transfer_scheduled | 親は deletion_in_progress、deletion_scheduled、transfer_in_progress、transfer_scheduled であってはならない | NOT creation_in_progress, NOT transfer_in_progress | creation_in_progress または transfer_in_progress の子は親の移転スケジュールをブロックする |
 
 ### 実装アプローチ
 
@@ -327,8 +366,8 @@ module Namespaces
   module Stateful
     extend ActiveSupport::Concern
 
-    PROPAGATED_STATES = %i[active archived deletion_scheduled].freeze
-    NON_PROPAGATED_STATES = %i[creation_in_progress deletion_in_progress transfer_in_progress].freeze
+    PROPAGATED_STATES = %i[active archived deletion_scheduled maintenance].freeze
+    NON_PROPAGATED_STATES = %i[creation_in_progress deletion_in_progress transfer_in_progress transfer_scheduled].freeze
 
     included do
       ...
@@ -432,7 +471,7 @@ module Namespaces
     idempotent!
     deduplicate :until_executed, including_scheduled: true
 
-    STATE_PRECEDENCE = { active: 0, archived: 1, deletion_scheduled: 2 }.freeze
+    STATE_PRECEDENCE = { active: 0, archived: 1, deletion_scheduled: 2, maintenance: 6 }.freeze
 
     def perform(namespace_id, target_state)
       propagation = Namespaces::StatePropagation.find_by!(
@@ -452,12 +491,11 @@ module Namespaces
       )
 
       iterator.each_batch(of: 500) do |ids, cursor|
-        # 祖先チェック：カーソルの depth 配列は伝播元から
-        # 現在の位置への DFS パスを保持します。イテレーターが
-        # サブツリーに入った後に、パスにある祖先が同時に
-        # 上書き不可能な状態に遷移したかどうかを確認します
-        # （例：deletion_scheduled がイテレーターがサブツリーに
-        # 入った後に出現した場合など）。
+        # Ancestor check: the cursor's depth array holds the DFS path
+        # from the propagation source to the current position. Check if
+        # any ancestor in that path has concurrently transitioned to a
+        # non-overwritable state (e.g., deletion_scheduled appeared
+        # after the iterator entered its subtree).
         ancestors_in_path = cursor[:depth] - [namespace_id]
         boundary_id = Namespace.where(id: ancestors_in_path)
                                .where.not(state: overwritable)
@@ -524,11 +562,10 @@ module Namespaces
     include CronjobQueue
 
     def perform
-      # processing レコードを確認：Sidekiq の重複排除ロックが
-      # 期限切れの場合、ワーカーはもはや実行中ではありません —
-      # 再エンキューできるよう pending にリセットします。
-      # これにより、経過時間ではなく実際のジョブ状態を
-      # 確認することで固定時間の閾値を避けられます。
+      # Check processing records: if the Sidekiq deduplication lock has
+      # expired, the worker is no longer running — reset to pending so
+      # it can be re-enqueued. This avoids fixed time thresholds by
+      # checking actual job state instead of elapsed time.
       Namespaces::StatePropagation.where(status: :processing).find_each do |propagation|
         unless job_deduplicated?(propagation)
           propagation.update!(status: :pending, started_at: nil)

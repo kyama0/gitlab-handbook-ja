@@ -1,11 +1,11 @@
 ---
 title: シグナルエンジニアリングチーム (SET)
 upstream_path: /handbook/security/security-operations/signals-engineering/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T16:00:00Z"
+upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
+translated_at: "2026-07-14T06:42:18+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-07-13T13:38:41+00:00"
 ---
 
 ## シグナルエンジニアリングへのエンゲージ
@@ -44,9 +44,11 @@ lastmod: "2026-03-04T12:15:15-08:00"
 
 | チームメンバー | 役割 |
 |---|---|
-| Matt Coons | [Security Manager](/job-description-library/security/security-leadership/) |
-| Harjeet Sharma | [Staff Security Engineer, Signals Engineering](/job-description-library/security/security-engineer/#signals-engineering) |
+| Matt Coons | [Senior Security Manager](/job-description-library/security/security-leadership/) |
+| Harjeet Sharma | [Principal Security Engineer, Signals Engineering](/job-description-library/security/security-engineer/#signals-engineering) |
 | Evan Baltman | [Security Engineer, Signals Engineering](/job-description-library/security/security-engineer/#signals-engineering) |
+| Shashi Priyatham Chitakodur | [Associate Security Engineer, Signals Engineering](/job-description-library/security/security-engineer/#signals-engineering) |
+| Joanna Rubi | [Senior Security Engineer, Signals Engineering](/job-description-library/security/security-engineer/#signals-engineering) |
 
 ### 私たちのステークホルダー
 
