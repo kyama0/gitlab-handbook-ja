@@ -38,7 +38,7 @@ NOTE:
   テスト障害 Issue は追跡と調査の目的に使用されるため、`~"type::bug"` ラベルを付けるべきではありません。テスト障害がバグの結果である場合は、代わりに `~"failure::bug"` ラベルを適用します。
 1. **誰でもテストを修正でき、責任は最後にそれに取り組んだ人にある**: 誰でも失敗している／フレーキーなテストを修正できますが、クォランティンされたテストが無視されないようにするため、最後にそのテストに取り組んだエンジニアが、それを [クォランティン](https://gitlab.com/gitlab-org/gitlab/blob/master/qa/README.md#quarantined-tests) から外す責任を負います。
 
-## 優先順位と対応の期待事項
+## 優先順位と対応の期待事項 {#prioritization-and-response-expectations}
 
 これらの期待事項は、パイプライン障害をトリアージする人、通常は所有チーム（`feature_category`/`product_group` ごと）に適用されます。
 
