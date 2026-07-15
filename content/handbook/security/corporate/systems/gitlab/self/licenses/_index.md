@@ -1,11 +1,14 @@
 ---
 title: チームメンバー向け GitLab セルフマネージド内部ライセンス
+description: セルフサービスでチームメンバー用のセルフマネージド GitLab ライセンスを取得する方法
 upstream_path: /handbook/security/corporate/systems/gitlab/self/licenses/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T12:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:30:25+09:00"
+translator: codex
 stale: false
-lastmod: "2024-07-29T19:23:31+00:00"
+lastmod: "2026-07-15T09:49:44+00:00"
 ---
 
-GitLab チームメンバー専用のセルフマネージドライセンスをリクエストするには、この[フォーム](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/)を使用し、ドロップダウンで `Request a team member license` を選択してください。
+チームメンバーが使用する GitLab のセルフマネージドライセンスはセルフサービスです。[チームメンバー向けセルフマネージド / GDK で Premium/Ultimate 機能を有効にする](/handbook/support/internal-support/#unlock-premiumultimate-features-on-self-managed--gdk-for-team-members) に従い、staging Customers Portal を通じて自分のテスト用サブスクリプションをプロビジョニングしてください。
+
+チームメンバーのライセンスリクエストは Issue として処理されなくなったため、この目的で Support Super Form を使用しないでください。

@@ -1,11 +1,11 @@
 ---
 title: "変更管理"
 upstream_path: /handbook/engineering/infrastructure-platforms/change-management/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T06:52:34+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-08T08:19:56+02:00"
+lastmod: "2026-07-14T08:00:16-06:00"
 ---
 
 ## 目的
@@ -224,7 +224,7 @@ bastion-01-gstg  $ ./script/migrate
 
 メンテナンス変更には変更レビューが必要です。レビューは、特定の変更の潜在的リスクを指摘するフォーラムを提供しながら、チームの**集合的な**経験を活用することを意図しています。~C1または~C2変更リクエストに対しては、複数のレビュアーの使用を検討してください。
 
-誰にレビューを依頼するか分からない場合は、[#s_production_engineering](https://gitlab.enterprise.slack.com/archives/C07U6SAKS4D)で SRE に変更リクエストのレビューを依頼してください。
+レビューを依頼すべき相手がわからない場合は、[Reviewer Roulette](https://gitlab-org.gitlab.io/gitlab-roulette/?currentProject=production&order=1)を使用して、Production チームの対応可能なレビュアーを見つけてください。
 
 Issue に割り当てられた変更重要度ラベルに基づいて、`Change Reviewer checklist`の各項目に記入します。
 

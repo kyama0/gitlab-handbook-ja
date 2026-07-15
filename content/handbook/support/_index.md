@@ -2,12 +2,12 @@
 title: サポートチーム ハンドブック
 description: GitLab サポートチームのハンドブックは、私たちがなぜ・どのようにこの方法で働いているのかを示す中心的なリポジトリです。
 upstream_path: /handbook/support/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:04:40+09:00"
+translator: codex
 stale: false
-model: claude-opus-4-7
-lastmod: "2026-05-19T17:06:44+12:00"
+model: codex
+lastmod: "2026-07-14T10:35:27+10:00"
 ---
 
 ## GitLab サポートチーム ハンドブックへようこそ
@@ -270,7 +270,7 @@ GitLab、私たちの FOSS プロジェクト、または GitLab コンポーネ
 | [#support_gitlab-dedicated](https://gitlab.enterprise.slack.com/archives/C058LM1RL3V) | GitLab Dedicated チケットとお客様の Issue を議論 |
 | [#support_licensing-subscription](https://gitlab.slack.com/archives/C018C623KBJ) | ライセンスと更新のチケットとお客様の Issue を議論 |
 | [#support_ticket-attention-requests](https://gitlab.slack.com/archives/CBVAE1L48) | Support Manager On-Call とエスカレーションされたチケットを議論 |
-| [#support_operations](https://gitlab.slack.com/archives/C018ZGZAMPD) | サポートの運用方法に関連する運用項目を議論 |
+| [#customer_support_systems](https://gitlab.slack.com/archives/C018ZGZAMPD) | サポートの運用方法に関連する運用項目を議論 |
 | [#support_leadership](https://gitlab.slack.com/archives/C01F9S37AKT) | サポートマネージャーの注意が必要なサポートチームの内部事項を議論 |
 | [#recruiting-support-engineering](https://gitlab.slack.com/archives/CE9S6JW4S) | サポートチームの採用関連事項を議論 |
 | [#spt_amer_global](https://gitlab.enterprise.slack.com/archives/C07EYM9NNE4) | AMER のグローバル SE に固有のトピックを議論 |
@@ -438,7 +438,7 @@ GitLab では、公開にできない正当な理由がない限り、[デフォ
 - **What Did we Learn this Week（今週何を学んだか）**: 発見した（または再発見した！）ことや学んだことを共有するスペース。
 - **Support Operations Corner（サポートオペレーションコーナー）**: サポートオペレーションチームからの発表と情報
 - **Kudos（称賛）**: 他のチームメンバーに特別な称賛を贈るか、当人が行ったことをハイライトします。
-   - **SSAT**: 今週お客様から受け取ったポジティブな SSAT フィードバックの抜粋
+   -**SSAT**: 今週お客様から受け取ったポジティブな SSAT フィードバックの抜粋
 - **Metrics report（メトリクスレポート）**: 1 週間のサポートメトリクスをレビューします。
 
 #### SWIR ラベル

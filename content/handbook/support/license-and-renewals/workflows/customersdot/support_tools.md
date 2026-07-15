@@ -3,11 +3,11 @@ title: CustomersDot 管理者サポートツール
 category: CustomersDot
 description: L&R リクエストで CustomersDot 管理者サポートツールを使用する方法。
 upstream_path: /handbook/support/license-and-renewals/workflows/customersdot/support_tools/
-upstream_sha: 6c73093986242c762a8f4a2769fbfba69b31fcf9
-translated_at: "2026-05-08T13:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:21:18+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-08T15:49:17+00:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 
 ## 概要
@@ -28,7 +28,7 @@ CustomersDot 管理者サポートツールは https://customers.gitlab.com/admi
 
 > **重要**: 変更前 **と** 変更後 で追加の compute 分数およびストレージを必ず再確認し、メモを取ってください。
 
-名前空間は、管理者として、または [API を使って](https://docs.gitlab.com/api/namespaces/)、または [Zendesk Super App](/handbook/security/customer-support-operations/zendesk/apps/global#gitlab-super-app) で表示できます。
+名前空間は、管理者として、または [API を使って](https://docs.gitlab.com/api/namespaces/)、または [Zendesk Super App](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) で表示できます。
 
 #### 追加 CI 分数を設定
 

@@ -4,9 +4,9 @@ owning-stage: ""
 description: "ライブラリコードはポートフォリオ全体に届くため、横断的なサービス機能を Lab Bench アセンブリフレームワークよりも LabKit ライブラリコードとして提供する決定。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/theseus_platform_vision/decisions/007_prefer_labkit_library_over_assembly/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-lastmod: "2026-06-30T17:42:08+02:00"
-translated_at: "2026-07-14T07:42:19+09:00"
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+lastmod: "2026-07-15T12:33:58+02:00"
+translated_at: "2026-07-16T06:15:42+09:00"
 translator: codex
 stale: false
 ---
@@ -41,7 +41,7 @@ Lab Bench の提案自体も同じ立場を取っています。
 **横断的なサービス機能は、Lab Bench アセンブリフレームワーク内に実装するよりも、
 LabKit ライブラリコードとして優先的に提供します。**
 
-アセンブリに本当に固有の機能であり、提案するチームが
+アセンブリに本当に固有であり、提案するチームがそれを
 LabKit が適切な場所ではない理由を明確に正当化できる場合に限り、
 機能をアセンブリフレームワークへコンパイルします。
 

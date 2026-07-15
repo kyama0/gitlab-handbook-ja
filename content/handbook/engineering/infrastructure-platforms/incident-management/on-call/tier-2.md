@@ -1,11 +1,11 @@
 ---
 title: オンコールプロセスとポリシー - Tier 2
 upstream_path: /handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/
-upstream_sha: ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c
-translated_at: "2026-06-24T07:02:38+09:00"
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T06:52:34+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-23T14:57:25-06:00"
+lastmod: "2026-07-14T17:24:40+02:00"
 ---
 
 Tier 2 ローテーションは、サポートのためにチームメンバーをページするかを人間が判断するオンコールローテーションを指します。
@@ -273,6 +273,27 @@ Fleet Visibility、Design Management、Environments、Deployments、Release Mana
 - 問題を修復するためにエンジニアリングチームから即時のアクションを必要とする S2 以上の SIRT Issue。
 
 **カバレッジ:** 24x5 (月曜日〜金曜日、07:00-23:00 UTC)
+
+### Database Excellence
+
+- ローテーションリーダー: Alex Ives
+- カバレッジ: 24x5 (月曜日〜金曜日)、勤務時間内のみ
+- ギャップ: 05:00 - 07:00 および 22:00 - 23:00
+- スケジュール: [スケジュール](https://app.incident.io/gitlab/on-call/schedules/01KVWT063XW0P0YBDTMYHYQ12Q)
+- Slack チャンネル: #s_database_excellence
+- Slack ハンドル: @db-oncall
+
+**専門領域:**
+
+- PostgreSQL のパフォーマンス、レプリケーション、フェイルオーバー
+- GitLab Load Balancer
+- クエリパフォーマンスの問題、デッドロック、接続プールの問題
+- デプロイを妨げるデータベースマイグレーション
+- PgBouncer とデータベース容量の問題
+
+**エスカレーションのタイミング:**
+
+[データベース問題に関する支援の取得](/handbook/engineering/data-engineering/database-excellence/help/#step-1-what-kind-of-help-do-you-need)を参照してください。
 
 ### Dev Escalation
 

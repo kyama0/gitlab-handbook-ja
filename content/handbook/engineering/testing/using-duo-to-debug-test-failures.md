@@ -2,11 +2,11 @@
 title: Duo を使ったテスト失敗とライブ Issue のデバッグ
 description: MR とライブ環境 E2E テストパイプラインにおけるテスト失敗の診断と修正に Duo を使用するための簡潔なガイド。
 upstream_path: "/handbook/engineering/testing/using-duo-to-debug-test-failures/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T12:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-15T21:34:06Z"
+translator: codex
 stale: false
-lastmod: "2026-02-02T14:35:03+10:00"
+lastmod: "2026-07-15T17:51:54+00:00"
 ---
 
 GitLab Duo は、2つの主要なシナリオでテスト失敗を素早く診断・解決するのに役立ちます:
@@ -169,4 +169,4 @@ Duo の分析で問題が解決しない場合:
 - [テストクォランティンプロセス](quarantine-process.md) - テストをクォランティンする方法
 - [E2E テスト失敗 Issue のガイド](guide-to-e2e-test-failure-issues.md) - プロダクトエンジニア向けデバッグガイド
 
-**サポートが必要ですか？** [**#s_developer_experience**](https://gitlab.enterprise.slack.com/archives/C07TWBRER7H) で連絡するか、[サポートリクエスト Issue](https://gitlab.com/gitlab-org/quality/test-governance/request-for-help/-/issues/new) を作成してください
+**サポートが必要ですか？** プロダクトチームは自分たちのテストに責任を持ちます。ガイダンスについては、[**#s_developer_experience**](https://gitlab.enterprise.slack.com/archives/C07TWBRER7H) で Developer Experience に連絡してください。

@@ -2,14 +2,14 @@
 title: "パーソナル VPN"
 description: "パーソナル VPN の利用に関する基本的な疑問への回答、ヒント、推奨事項。"
 upstream_path: /handbook/tools-and-tips/personal-vpn/
-upstream_sha: 68af60af15ea4dcb51c3d985f7473b212e4f2cb4
-translated_at: "2026-05-07T15:33:18Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:30:25+09:00"
+translator: codex
 stale: false
-lastmod: "2025-04-01T09:22:28+00:00"
+lastmod: "2026-07-14T11:05:13-04:00"
 ---
 
-GitLab は [企業 VPN](/handbook/security/product-security/security-platforms-architecture/security-architecture/zero-trust/#why-we-dont-have-a-corporate-vpn) を使用していません。私たちは [NordLayer](/handbook/security/corporate/systems/vpn/_index.md) をパーソナル VPN ソリューションとして選定しました。
+私たちは [NordLayer](/handbook/security/corporate/systems/vpn/_index.md) をパーソナル VPN ソリューションとして選定しました。
 
 ## パーソナル VPN とは何か？
 

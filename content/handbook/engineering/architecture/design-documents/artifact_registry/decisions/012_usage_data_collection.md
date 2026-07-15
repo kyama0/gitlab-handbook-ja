@@ -4,10 +4,10 @@ owning-stage: "~devops::package"
 description: "SaaS およびセルフマネージドのデプロイにまたがるプロダクトアナリティクスとビジネスインテリジェンスのために、Artifact Registry が使用状況データを収集する方法に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-lastmod: "2026-07-13T15:59:31+02:00"
-translated_at: "2026-07-14T06:42:18+09:00"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+lastmod: "2026-07-14T09:51:51+01:00"
+translated_at: "2026-07-16T06:24:10+09:00"
+translator: codex
 stale: false
 ---
 
@@ -71,7 +71,7 @@ Go サテライトサービス向けに、[LabKit v2](https://gitlab.com/gitlab-
 
 AR ネームスペースは [ADR-022](022_namespace_decoupling.md) のスラッグアンカーされたエンティティであり、1 つの Organization が複数の AR ネームスペースを所有できます。[課金設計ドキュメント](https://gitlab.com/gitlab-org/architecture/usage-billing/-/merge_requests/27) は計量境界を AR ネームスペースに設定しているため、イベントは（`artifact_registry_context` 内の）`ar_namespace_id` を運び、同じ粒度で課金データときれいに結合します。（`gitlab_standard` 内の）`organization_id` は、ネームスペース横断のロールアップをサポートします。
 
-**設定**: Snowplow コレクターのエンドポイントは環境変数で提供されます（LabKit の規約に従う）。SaaS ではこれは `snowplowprd.trx.gitlab.net` を指します。オプトインしたセルフマネージドおよび Dedicated インスタンスでは、同じコレクターを指すように設定されます。オプトアウトしたインスタンスでは、エミッターは無効化されます（イベントは送信されません）。
+**設定**: Snowplow コレクターのエンドポイントはサービス構成ファイルで提供されます。SaaS ではこれは `snowplowprd.trx.gitlab.net` を指します。オプトインしたセルフマネージドおよび Dedicated インスタンスでは、同じコレクターを指すように設定されます。オプトアウトしたインスタンスでは、エミッターは無効化されます（イベントは送信されません）。
 
 **カバレッジ**: SaaS（常時）、セルフマネージドおよび Dedicated（顧客のオプトインによる。デフォルトはオプトアウト）。
 

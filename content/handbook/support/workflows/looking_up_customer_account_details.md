@@ -4,11 +4,11 @@ description: "Zendesk と customers.gitlab.com 内で顧客アカウントの詳
 category: Handling tickets
 subcategory: Customer Info
 upstream_path: /handbook/support/workflows/looking_up_customer_account_details/
-upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
-translated_at: "2026-05-08T00:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:04:40+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-21T12:28:59-06:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 
 ## 顧客アカウント詳細の検索
@@ -30,7 +30,7 @@ SFDC、customers.gitlab.com の手動検索の概要と通読については、A
 
 ## Zendesk の GitLab User Lookup アプリ {#gitlab-user-lookup-app-in-zendesk}
 
-Zendesk の [GitLab User Lookup アプリケーション](/handbook/security/customer-support-operations/zendesk/apps/global#gitlab-super-app)から、SFDC と GitLab.com の依頼者の詳細にアクセスできます。
+Zendesk の [GitLab User Lookup アプリケーション](/handbook/eta/css/zendesk/apps/global#gitlab-super-app)から、SFDC と GitLab.com の依頼者の詳細にアクセスできます。
 
 ## customers.gitlab.com 内 {#within-customersgitlabcom}
 

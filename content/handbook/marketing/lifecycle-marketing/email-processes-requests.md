@@ -5,11 +5,11 @@ twitter_image: '/images/tweets/handbook-marketing.png'
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/marketing/lifecycle-marketing/email-processes-requests/
-upstream_sha: 768e1a6af6ab56133195582e6a0b17d225df15f7
-translated_at: "2026-05-01T00:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:30:25+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-20T16:41:12-07:00"
+lastmod: "2026-07-15T08:40:37-07:00"
 ---
 
 ## 概要
@@ -21,11 +21,9 @@ lastmod: "2026-03-20T16:41:12-07:00"
 
 ## GitLab メールカレンダー
 <!-- DO NOT CHANGE THIS ANCHOR -->
-メールカレンダーを Asana に移行しました！毎週木曜日にメールステークホルダー同期会を実施し、今後 2 週間分のメールをレビューします。このコールをカレンダーに追加してほしい場合は、Allie Klatzkin に依頼してください。スムーズな運用のため、メール送信予定が分かり次第（情報がすべて揃っていなくても）すぐにカレンダーに追加してください。
+メールカレンダーを [GitLab サイト](https://marketing-calendars.gitlab-marketing.workers.dev/email-calendar) に移行しました！毎週木曜日にメールステークホルダー同期会を実施し、今後 2 週間分のメールをレビューします。このコールをカレンダーに追加してほしい場合は、Allie Klatzkin に依頼してください。スムーズな運用のため、メール送信予定が分かり次第（情報がすべて揃っていなくても）すぐにカレンダーに追加してください。
 
 **送信日の前週のメールステークホルダーコールよりも前に、すべてのメールをカレンダーに追加する必要があります**。コール後に追加されたメールは、翌週送信に持ち越されます。
-
-座席数に限りがあるため、カレンダー上で 1 チームあたり 1〜2 席を提供します。ご質問はお使いのチームの DRI までお願いします。
 
 **カレンダーの目標**
 
@@ -35,7 +33,7 @@ lastmod: "2026-03-20T16:41:12-07:00"
 
 **カレンダーへのメール追加プロセス:**
 
-Campaigns、Marketing Ops、Corporate Marketing、Field Marketing の各プロジェクトの [メール Issue テンプレート](/handbook/marketing/lifecycle-marketing/#issue-templates) には ~email-calendar ラベルが付いており、これによりメールが自動的にカレンダーに追加されます。Issue に ~email-calendar ラベルが付いていない場合は、カレンダーへの可視性を確保するためにラベルを追加してください。
+Lifecycle Marketing、Campaigns、Marketing Ops、Corporate Marketing、Customer Success、Field Marketing の各プロジェクトの [メール Issue テンプレート](/handbook/marketing/lifecycle-marketing/#issue-templates) には ~email-calendar ラベルが付いており、これによりメールが自動的にカレンダーに追加されます。Issue に ~email-calendar ラベルが付いていない場合は、カレンダーへの可視性を確保するためにラベルを追加してください。
 
 Asana カレンダーに追加する手順:
 
@@ -49,7 +47,7 @@ Asana カレンダーに追加する手順:
 
 **送信前に、上記セクションの重要な注意事項を必ずお読みください**
 
-メール送信を依頼するには、メールアイデアの検討のために [Issue を作成](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new?issuable_template=request-email) し、（特にオーディエンスに関して）可能な限り詳しい情報を記載してください。また、「労力に見合わない」と判断され、基礎となるオーディエンスセグメンテーションが整うまでローンチを延期する場合があることをご理解ください。詳細は下記の `メールレビュープロトコル` セクションをご確認ください。
+メール送信を依頼するには、メールアイデアの検討のために [Issue を作成](https://gitlab.com/gitlab-com/marketing/demand-generation/lifecycle-marketing/-/issues/new?issuable_template=request-email) し、（特にオーディエンスに関して）可能な限り詳しい情報を記載してください。また、「労力に見合わない」と判断され、基礎となるオーディエンスセグメンテーションが整うまでローンチを延期する場合があることをご理解ください。詳細は下記の `メールレビュープロトコル` セクションをご確認ください。
 
 **SLA:** 新しいメール依頼に対しては標準で 5 営業日の SLA が設定されています。Issue の「Submitter Checklist」のすべての項目を完了していなければ、適切な Campaign Manager もしくは Lifecycle Marketing Manager にトリアージできません。
 
@@ -59,9 +57,9 @@ Asana カレンダーに追加する手順:
 
 **Issue のアサイン先:** 送信前のレビューのために、対応する Lifecycle Marketing Manager に Issue をアサインしてください。
 
-* `@aklatzkin`: グローバル、Public Sector、ローカライズメール、Corporate Events
-* `@alee`: AMER、Customer メール
-* `@cbaun`: EMEA、APAC、ニュースレター
+* `@aklatzkin`: グローバル、EMEA、ローカライズメール、Corporate Events
+* `@alee23`: AMER、Customer メール
+* `@jolee3`: APAC、Product メール
 
 **Issue を Asana メールカレンダーに追加する:** デフォルトで、Issue に ~"email-calendar" ラベルが追加されますが、オーディエンスのラベルも追加する必要があります:
 

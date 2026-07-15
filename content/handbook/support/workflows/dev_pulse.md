@@ -4,11 +4,11 @@ category: Handling tickets
 description: Dev Pulse のサポートドキュメントページ
 canonical_path: "/handbook/support/workflows/dev_pulse"
 upstream_path: /handbook/support/workflows/dev_pulse/
-upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
-translated_at: "2026-05-08T21:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:04:40+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-21T12:28:59-06:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 
 ## Dev Pulse とは?
@@ -19,7 +19,7 @@ Dev Pulse は、バグの解決や機能リクエストの実装に関する Iss
 
 特定の状態に達すると、Dev Pulse を使用している Zendesk 内のチケットは、待機していた Issue またはマージリクエストに状態変更があったことを示すように更新されます。
 
-Dev Pulse の実装の詳細については [ドキュメント](/handbook/security/customer-support-operations/zendesk/dev-pulse) を参照してください。
+Dev Pulse の実装の詳細については [ドキュメント](/handbook/eta/css/zendesk/dev-pulse) を参照してください。
 
 ## どのように動作するか?
 

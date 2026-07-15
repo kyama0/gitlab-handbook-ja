@@ -2,11 +2,11 @@
 title: グローバルナレッジベース
 description: GitLab グローバルナレッジベース
 upstream_path: /handbook/support/knowledge-base/
-upstream_sha: 6c73093986242c762a8f4a2769fbfba69b31fcf9
-translated_at: "2026-05-08T13:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:21:18+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-27T05:22:34-04:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 グローバルナレッジベースは、顧客の問題に対するソリューションを検索可能な形で集約したリポジトリで、ユーザーがサポートに問い合わせることなく素早く回答を見つけられるよう設計されています。
 
@@ -136,7 +136,7 @@ Sync repo でナレッジ記事を作成する方法を見たいですか？ [Le
 1. Explorer の **Knowledge Articles > Templates** フォルダを選択します。
 1. 適切なテンプレートファイル（Breakfix、FAQ、How-To、Process）を開きます。
 1. ファイルの内容全体をコピーします。
-1. Knowledge Articles の下から [適切なセクション](../../security/customer-support-operations/zendesk/knowledge-center/sections#current-sections-in-use) を選択します。**注意**: セクションがまだ存在しない場合は、[セクションの作成](../../security/customer-support-operations/zendesk/knowledge-center/sections#creating-a-section) の手順に従います。
+1. Knowledge Articles の下から [適切なセクション](../../eta/css/zendesk/knowledge-center/sections#current-sections-in-use) を選択します。**注意**: セクションがまだ存在しない場合は、[セクションの作成](../../eta/css/zendesk/knowledge-center/sections#creating-a-section) の手順に従います。
 1. 適切なセクションの下に新しいファイルを作成します（セクションを右クリック > New File...）。
     1. ファイル名（記事のタイトル）を付け、タイトルの後に .md を追加します。例: TitleOfYourKnowledgeArticle.md
     1. コピーしたテンプレートの詳細をエディタに貼り付けます。

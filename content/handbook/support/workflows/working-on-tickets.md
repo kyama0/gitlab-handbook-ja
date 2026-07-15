@@ -3,11 +3,11 @@ title: チケットへの対応
 category: Handling tickets
 description: サポートチケットの探し方、選び方、着手方法
 upstream_path: /handbook/support/workflows/working-on-tickets/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T05:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:16:12+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-19T09:44:14+00:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 
 ## はじめに
@@ -273,7 +273,7 @@ GitLab の [Success Signature](https://gitlab.zendesk.com/agent/search/1?copy&ty
 
 ### 顧客に代わって新規チケットを起票するにはどうしますか？
 
-[Support General Policies](https://about.gitlab.com/support/general-policies/#we-handle-each-incident-within-a-single-support-ticket) に詳述されているとおり、各個別のインシデント、問題、または Issue は単一のサポートチケット内で扱うことが GitLab のポリシーです。顧客に代わって新規チケットを起票する必要がある状況が発生した場合、適切なルーティングと SLA アサインを確保するため、Zendesk Super App 内の [Create new ticket plugin](/handbook/security/customer-support-operations/zendesk/apps/global#zendesk-super-app) を **必ず** 使用する必要があります:
+[Support General Policies](https://about.gitlab.com/support/general-policies/#we-handle-each-incident-within-a-single-support-ticket) に詳述されているとおり、各個別のインシデント、問題、または Issue は単一のサポートチケット内で扱うことが GitLab のポリシーです。顧客に代わって新規チケットを起票する必要がある状況が発生した場合、適切なルーティングと SLA アサインを確保するため、Zendesk Super App 内の [Create new ticket plugin](/handbook/eta/css/zendesk/apps/global#zendesk-super-app) を **必ず** 使用する必要があります:
 
 1. チケット内で Zendesk Super App に移動し、Create new ticket プラグインを選択します。
 1. 適切なフォームタイプを選択します。これはおそらく起点となるチケットのリクエストタイプと一致します。

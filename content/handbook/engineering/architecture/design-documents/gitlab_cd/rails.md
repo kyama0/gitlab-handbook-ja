@@ -6,10 +6,10 @@ authors: [ "@josephburnett" ]
 owning-stage: "~devops::deploy"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/gitlab_cd/rails/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: 2026-07-02T09:48:33+10:00
-translated_at: "2026-07-10T21:02:32+09:00"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+lastmod: 2026-07-02T15:45:46+10:00
+translated_at: "2026-07-16T06:24:10+09:00"
+translator: codex
 stale: false
 ---
 
@@ -59,6 +59,7 @@ erDiagram
     cd_services ||--o{ cd_version_set_entries : "denormalized grouping"
     cd_version_sets ||--o{ cd_rollouts : "to / target"
     cd_application_flow_definitions ||--o{ cd_rollouts : "pinned pipeline"
+    cd_applications ||--o{ cd_application_links : "has many"
     cd_rollouts ||--o{ cd_rollout_environments : "promotes through"
     cd_environments ||--o{ cd_rollout_environments : "target of"
     cd_version_sets ||--o{ cd_rollout_environments : "from / previous (per env)"
@@ -76,6 +77,14 @@ erDiagram
         bigint organization_id FK "shard"
         text name UK "unique per organization"
         text description
+    }
+    cd_application_links {
+        bigint id PK
+        bigint organization_id FK "shard"
+        bigint application_id FK
+        smallint link_type "enum: runbook|dashboard|docs|repository|chat|issue_tracker|on_call|change_request|other"
+        text name
+        text url UK "UNIQUE(application_id, url); http/https only"
     }
     cd_services {
         bigint id PK
@@ -218,6 +227,7 @@ erDiagram
 - **Rollout Environment** — Rollout 内の *1 つの* Environment に Version Set が着地すること。その環境のピン留めされたドライバーバインディング、その移行元の Version Set、そしてプロモーション順序におけるその位置を保持します。
 - **Deployment** — Rollout Environment 内の 1 つの Service をアクチュエートすること。その Service の M ソースの M バージョン（Pod の M コンテナ）を担います。Service ごとの状態とヘルスのユニットです。
 - **Flow Definition** — パイプライン。Application ごとのバージョン管理されたドキュメントで、キャンバスで作成されます。
+- **Application Link** — Application 上の外部参照（ランブック、ダッシュボード、ドキュメントなど）で、概要ページに表示されます。
 
 注: どこにも `Project` 外部キーはなく、Kubernetes を名指すものは何もありません。これが不変条件 #1 と #2 が保たれていることです。
 
@@ -232,6 +242,16 @@ erDiagram
 | `organization_id` | bigint FK | シャードキー |
 | name | text | Organization ごとに一意 |
 | description | text | |
+
+**`cd_application_links`**
+
+| カラム | 型 | 備考 |
+|---|---|---|
+| `organization_id` | bigint FK | シャードキー |
+| `application_id` | bigint FK | → `cd_applications` |
+| `link_type` | `smallint` | 列挙型（`runbook`、`dashboard`、`docs`、`repository`、`chat`、`issue_tracker`、`on_call`、`change_request`、`other`） |
+| name | text | |
+| url | text | UNIQUE(`application_id`, `url`)、http/https のみ |
 
 **`cd_services`**
 

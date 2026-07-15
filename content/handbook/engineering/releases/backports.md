@@ -1,11 +1,11 @@
 ---
 title: "バックポート"
 upstream_path: /handbook/engineering/releases/backports/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T00:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-15T21:34:06Z"
+translator: codex
 stale: false
-lastmod: "2026-04-09T11:59:40-06:00"
+lastmod: "2026-07-15T17:51:54+00:00"
 ---
 
 ## バックポートの概要
@@ -32,7 +32,7 @@ graph TD
 - バックポートは[メンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)に従って提供され、そのポリシー外のバックポート例外はベストエフォートベースで提供され、保証はありません
 - リリースマネージャーはメンテナンスポリシーでカバーされないバックポートについて最終的な判断権を持ちます
 - リリースマネージャーは顧客が過度な量のアップグレードを受けないよう、バックポートを含むリリースをスケジュールします
-- バックポート MR の作成者は、すべての修正における十分なテストカバレッジを確保する責任があります。同じ MR 内でテストシナリオを自動化できない場合、修正がマージされて各リリース環境にデプロイされた後、作成者が手動検証を行う責任があります。テスト設計に助けが必要な場合は、[テストガバナンス RFH](/handbook/engineering/infrastructure-platforms/developer-experience/test-governance/#request-for-help-process) プロセスを使用してください。
+- バックポート MR の作成者は、すべての修正における十分なテストカバレッジを確保する責任があります。同じ MR 内でテストシナリオを自動化できない場合、修正がマージされて各リリース環境にデプロイされた後、作成者が手動検証を行う責任があります。テスト設計のガイダンスが必要な場合は、Developer Experience の [`#s_developer_experience`](https://gitlab.enterprise.slack.com/archives/C07TWBRER7H) に連絡してください。
 
 ### バックポートプロセスの概要
 

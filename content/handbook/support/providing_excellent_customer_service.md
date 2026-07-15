@@ -3,11 +3,11 @@ title: 卓越したカスタマーサービスの提供
 category: References
 description: 顧客に優れた体験を届けるためのガイダンス
 upstream_path: /handbook/support/providing_excellent_customer_service/
-upstream_sha: 18c3e90de89449f1cbbf92c21776a3ea7899476c
-translated_at: "2026-05-08T18:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:04:40+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-21T12:28:59-06:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 
 ## 顧客のニーズを理解する
@@ -34,8 +34,8 @@ lastmod: "2026-01-21T12:28:59-06:00"
 - 選択したスケジュールがニーズに合わない場合は知らせるよう促し、必要に応じて計画を調整できるようにする。[ビジネスインパクトを理解する](#understanding-business-impact)も参照してください。
 - 毎日、少なくとも 4 日に 1 回（[`On-Hold` 期間の長さ](/handbook/support/workflows/zendesk-ticket-basics/#behavior-of-on-hold-tickets)）は更新を提供することを目標にする。
 
-チケットを `Pending` または `On-Hold` に設定する際は、コミットメントを果たすために [Due Date](/handbook/security/customer-support-operations/zendesk/apps/global#zendesk-super-app)
-や [Reminders](/handbook/security/customer-support-operations/zendesk/apps/global#gitlab-reminders-app)
+チケットを `Pending` または `On-Hold` に設定する際は、コミットメントを果たすために [Due Date](/handbook/eta/css/zendesk/apps/global#zendesk-super-app)
+や [Reminders](/handbook/eta/css/zendesk/apps/global#gitlab-reminders-app)
 アプリの利用を検討してください。
 
 ### 「機能 / 修正 X はいつ期待できますか？」に対して具体的な回答を避ける

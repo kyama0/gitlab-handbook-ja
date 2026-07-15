@@ -2,11 +2,11 @@
 title: "Developer Experience"
 description: "Developer Experience セクションは、すべてのチームが高品質な変更をリリースできるよう、開発者体験の向上に取り組んでいます"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/"
-upstream_sha: "839c14e40e08e6fd4099a01ee623aaf85faafd12"
-translated_at: "2026-06-01T21:39:56Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T06:52:34+09:00"
+translator: codex
 stale: false
-lastmod: "2026-06-01T15:57:46+02:00"
+lastmod: "2026-07-15T17:51:54+00:00"
 ---
 
 ## ミッション
@@ -130,8 +130,6 @@ graph TD
     click DT "/handbook/engineering/infrastructure-platforms/developer-experience/development-tooling"
     DE --> PE[Performance Enablement]
     click PE "/handbook/engineering/infrastructure-platforms/developer-experience/performance-enablement"
-    DE --> TG[Test Governance]
-    click TG "/handbook/engineering/infrastructure-platforms/developer-experience/test-governance"
 ```
 
 ## チームメンバー
@@ -165,9 +163,3 @@ graph TD
 次のメンバーが [Performance Enablement グループ](performance-enablement)に所属しています:
 
 {{< team-by-manager-slug manager="mkomor1" team="Performance Enablement(.*)" >}}
-
-#### Test Governance
-
-次のメンバーが [Test Governance グループ](test-governance)に所属しています:
-
-{{< team-by-manager-slug manager="ndenisenko" team="Test Governance(.*)">}}
