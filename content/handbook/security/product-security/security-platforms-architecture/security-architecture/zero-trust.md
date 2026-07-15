@@ -8,7 +8,7 @@ stale: false
 lastmod: "2026-07-14T11:05:13-04:00"
 ---
 
-## ゼロトラスト
+## ゼロトラスト {#zero-trust}
 
 セキュリティの水準を引き上げる取り組みの一環として、GitLab はゼロトラスト、すなわちアクセス制御を組織のペリメーター（境界）から個人、資産、エンドポイントへと移すという実践を導入しています。この戦略の詳細については、[Google BeyondCorp ホワイトペーパー: A New Approach to Enterprise Security](https://research.google/pubs/beyondcorp-a-new-approach-to-enterprise-security/) をご覧ください。
 
