@@ -2,10 +2,10 @@
 title: "Infrastructure Platforms"
 description: "Infrastructure Platforms 部門は GitLab SaaS プラットフォームおよびサポートサービスの可用性、信頼性、パフォーマンス、スケーラビリティに責任を持ちます"
 upstream_path: "/handbook/engineering/infrastructure-platforms/"
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-lastmod: 2026-06-25T07:50:17-06:00
-translated_at: "2026-07-02T06:06:16+09:00"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+lastmod: 2026-07-15T17:51:54+00:00
+translated_at: "2026-07-16T06:52:34+09:00"
+translator: codex
 stale: false
 ---
 
@@ -68,8 +68,6 @@ flowchart LR
     click DT "/handbook/engineering/infrastructure-platforms/developer-experience/development-tooling/"
     DE --> PER[Performance Enablement]
     click PER "/handbook/engineering/infrastructure-platforms/developer-experience/performance-enablement/"
-    DE --> TG[Test Governance]
-    click TG "/handbook/engineering/infrastructure-platforms/developer-experience/test-governance/"
 
     GD --> E[Environment Automation]
     click E "/handbook/engineering/infrastructure-platforms/gitlab-dedicated/environment-automation/"

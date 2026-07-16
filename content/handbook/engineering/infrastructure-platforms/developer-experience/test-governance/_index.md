@@ -1,136 +1,58 @@
 ---
-title: "Test Governance グループ"
-description: "Developer Experience セクション内の Test Governance グループ"
+title: "Test Governance グループ（廃止）"
+description: "Test Governance グループは廃止されました。機能チームがテストライフサイクル全体を担います。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/test-governance/"
-upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
-translated_at: "2026-04-28T21:28:32Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+lastmod: "2026-07-15T17:51:54+00:00"
+translated_at: "2026-07-16T06:52:34+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-25T17:35:05+01:00"
 ---
 
-## 共通リンク
+{{% alert title="このグループは廃止されました" color="warning" %}}
+**Test Governance** グループは廃止されました。テストは中央集権的に管理される機能ではありません。
+{{% /alert %}}
 
-| **カテゴリ**            | **ハンドル**                                                                                     |
-|-------------------------|------------------------------------------------------------------------------------------------|
-| **GitLab グループハンドル** | [`@gl-dx/test-governance`](https://gitlab.com/gl-dx/test-governance)                           |
-| **Slack チャンネル**       | [`#g_test-governance`](https://gitlab.enterprise.slack.com/archives/C064M4S0FU5)               |
-| **Slack ハンドル**        | `@dx-test-governance`                                                                     |
-| **チームボード**         |                                                                                                |
-| **Issue トラッカー**       | [`tracker`](https://gitlab.com/groups/gitlab-org/developer-experience/test-governance/-/issues) |
-| **GitLab リポジトリ** | [test-governance](https://gitlab.com/gitlab-org/developer-experience/test-governance)          |
+## 変更内容
 
-## ミッション
+DevOps 変革の一環として、GitLab は中央集権的に管理されるテスト機能から離れ、Test Governance グループを廃止しました。
 
-テストフレームワークとツールを提供し、設定を最適化し、開発チームと協力して顧客に不具合が届くことを防ぐ包括的な機能テストを作成・維持することで、すべてのチームにわたって高度に効果的なテストを確保します。
+**モジュール型の機能チームとモノリスが、エンドツーエンド（E2E）を含むすべてのレベルで、テストの設計、作成、保守、トリアージ、品質というテストライフサイクル全体を担います**。チームに代わってテスト（E2E を含む）を作成または保守する専任者や中央チームは存在しません。
 
-## ビジョン
+**リリース準備完了はチーム内で行う意思決定です。** GitLab.com へのロールアウトを承認する外部チームはありません。自動パイプラインチェック（たとえば、staging-canary スモークテスト）は、その決定を支援する*仕組み*であり、外部の承認者ではありません。
 
-* 可能な限り早い段階でバグを発見するために、安定した・再現可能な・高速なテストフレームワークと設定を提供する
-* 機能テストと品質に関するチームのスキルアップのためのトレーニング。すべてのエンジニアリングチームが、何をテストすべきか・いつ・どのようにアプリケーションが成長するにつれてテストカバレッジを維持するための価値あるテストをテストスイートに追加すべきかを知るべきです
-* GitLab.com と Dedicated のインシデントとバグ分析 - テストのギャップを特定し、テストの改善のために開発チームと協力する
-* フレーキーなテストをステージグループが修正または削除するために迅速に特定して隔離するための効果的な隔離プロセス
+## DevEx が現在行うこと
 
-## チームメンバー
+[Developer Experience 部門](../)は、チームが効果的にテストを担えるよう**ガイダンスとスキル向上の支援を提供**し、**共有テストインフラ**（テスト環境、フレームワーク、ツール、ダッシュボード、E2E パイプライン）を担います。
 
+失敗のトリアージと最初の対応は**担当する機能チーム**が行います。DevEx は、深い専門知識を本当に必要とする深刻なケースにおける**最後のエスカレーション先**であり、問題が起きたときの標準的な連絡先ではありません。
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/developer-experience/test-governance/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+ガイダンスが必要な場合は、[`#s_developer_experience`](https://gitlab.enterprise.slack.com/archives/C07TWBRER7H)で連絡してください。
 
+## 参照先
 
-## 主な責任
+1. [GitLab におけるテスト](/handbook/engineering/testing/) — テストの考え方、オーナーシップモデル、サポート
+1. [Developer Experience 部門](/handbook/engineering/infrastructure-platforms/developer-experience/)
+1. [品質は全員の責任](/handbook/engineering/development/principles/#quality)
 
-```mermaid
-graph LR
-    A[Test Governance チーム]
+### テストを担うための役立つリソース
 
-    A --> B[重要なプロダクトリリースのためのテスト専門知識を提供する]
-    B --> B1[重要な機能リリースのテスト戦略を定義する]
-    B --> B2[重要な機能の適切で堅牢なテストカバレッジを確保する]
-    B --> B3[ステージロードマップを把握する]
+**カバレッジ戦略とレベル**
 
-    A --> C[ステージレベルのテストツールとインフラ]
-    C --> C1[テスト・テストフレームワーク・ツールを設計・構築し、継続的に改善する]
-    C --> C2[プロダクトチームのテスト能力に影響を与え、アドバイスし、向上させる]
-    C --> C3[テストのフレーキーさを監視して対処する]
+* [GitLab テストの概要](/handbook/engineering/testing/) — チームがユニット、統合、エンドツーエンドのテスト全体で包括的なテストカバレッジを担うという全体的な期待を示します。エンドツーエンドのカバレッジは重要なユーザーフローに重点を置きます。
+* [テストレベル](https://docs.gitlab.com/development/testing_guide/testing_levels/) — テストピラミッドを最も明確に説明しています。カバレッジの大半はユニットレベルに置き、上位レイヤーのテストは少なくし、実行と保守のコストが最も高いため E2E は最小の割合にします。
+* [テスト戦略](https://docs.gitlab.com/development/testing_guide/testing_strategy/) — GitLab の自動テストの設計図です。テストを実行する場所とタイミングを示すため、チームは各スイートがどのリスクを担うかを把握できます。
+* [テストカバレッジ](/handbook/engineering/testing/test-coverage/) — 機能レベルの E2E だけでなく、オフラインまたはエアギャップ環境でのテストやアップグレードパスのカバレッジなど、特別なシナリオ全体のカバレッジを GitLab がどのように考えるかを説明します。
 
-    A --> D[テストガイダンス. エンジニアリングチームのコーチ]
-    D --> D1[e2e テストと機能スペックの記述]
-    D --> D2[テスト失敗のデバッグと修正]
-    D --> D3[開発プロセスの早い段階でのテスト計画]
-    D --> D4[テストインフラのニーズを予測し、事前に変更を要求する]
-    D --> D5[シフトレフトと、ユニット・統合・e2e テスト間の適切な比率の維持]
-    D --> D7[インシデント後のアクション]
+**テストの作成**
 
-    A --> E[E2E パイプラインのトリアージ. DevX サブ部門全体での共有責任]
-```
+* [テストのベストプラクティス](https://docs.gitlab.com/development/testing_guide/best_practices/) — テスト設計、RSpec、FactoryBot、システムテスト、パラメータ化テストなど、優れたテストを書くために知っておくべきすべてを説明します。
+* [フロントエンドテストの標準とスタイルガイドライン](https://docs.gitlab.com/development/testing_guide/frontend_testing/) — promise のテストとスタブを含め、Jest で優れたフロントエンドテストを書く方法を説明します。
+* [エンドツーエンドテスト作成の入門ガイド](https://docs.gitlab.com/development/testing_guide/end_to_end/beginners_guide/) — まず既存の下位レベルのカバレッジを確認します。ユニット、機能、統合のカバレッジがすでに十分なら、追加の E2E テストは不要な場合があります。
+* [エンドツーエンドテストガイド](https://docs.gitlab.com/development/testing_guide/end_to_end/) — GitLab が E2E を実行する方法、選択的実行、および下位レベルの機能テストがすでにリスクをカバーしている場合に E2E カバレッジを避ける原則を説明します。
 
-## ロードマップとテーマ
+**テストを健全に保つ**
 
-Test Governance ロードマップは、今四半期のコミットメントに基づいており、会社の目標と整合しています。すべての Test Governance コミットメントは、おおまかに以下のテーマとサブテーマに分類されます:
-
-* テストレジリエンス
-  * 安定性: 品質プロセスが直感的で、テスト結果が予測可能であることを確保します。
-  * 速度: 機能テストフレームワークが望ましい速度でパフォーマンスを発揮し、新しいツールが実行時間を増やさないことを確認します。
-* テストオブザーバビリティ
-  * テストレベルの追跡: 機能テストレベルが追跡・尊重されることを確保します。
-  * フレーキーさ: フレーキーなテストをより早く検出して対処することを確保します。
-  * 隔離: テストスイートが健全で高品質なテストで構成されることを確保します。
-  * カバレッジ: 多様なテストタイプを可能にする新しいテスト自動化フレームワークの提供と既存フレームワークの拡張により、品質カバレッジを向上させます。
-* テスト知識ベース
-  * 品質についてエンジニアをコーチするための包括的なドキュメント・ガイドライン・ハウツー・トレーニングを提供します。
-* テストガバナンス
-  * テストカバレッジの適切なバランスを提供することにより、最終製品の品質を保証します。上流チームへの機能変更を通知し、重要なジャーニーが常に徹底的にテストされることを確保します。
-  * 戦略とツール: 組織の成長をサポートするための品質戦略を発展させます。
-* 開発者支援
-  * 品質のオーナーシップを持てるようにエンジニアを支援するヘルパーツールを提供します。
-
-現在の Test Governance の取り組みを確認するには [DevEx: Test Governance Issue](https://gitlab.com/groups/gitlab-org/quality/-/epics/116) を使用してください。
-
-### 短期コミットメント
-
-フォーカス: 品質を損なわずにテストパイプラインのパフォーマンスを最適化する（FY27Q1）
-
-* パイプライン実行時間の短縮
-* CI コストの削減
-* 品質の維持または改善（エスケープされた欠陥の増加なし）
-
-### 中期コミットメント
-
-フォーカス: ランナーコストの削減、欠陥エスケープ率の低下、パイプライン安定性の改善を継続する（FY27Q2 - FY27Q3）
-
-* AI を活用してランナーコストを削減するための予測テストシステムの改善
-* 欠陥エスケープ率を下げるためにコードの変更に自動テストを適応させるシステムの構築
-* パイプラインの安定性を向上させるために、セルフヒーリングテストをフレーキーテストと隔離テストのプロセスに統合する
-
-### ヘルプリクエストによる連携方法
-
-Test Governance グループは、[品質はすべての人の責任](/handbook/engineering/development/principles/#quality) という原則をチームがより適用できるよう支援することを目指しています。
-すべてのサポートは以下の RFH プロセスを通じてリクエストしてください。これにより、計画されたプロジェクトロードマップに対してリクエストの優先順位を付けることができます。
-すべてのサポートリクエストに以下のヘルプリクエストプロセスをご利用ください。
-
-#### ヘルプリクエストプロセス
-
-1. [ヘルプリクエスト](https://gitlab.com/gitlab-org/quality/test-governance/request-for-help#step-1-create-a-new-issue) プロジェクトに Issue を作成します。リクエストを迅速にトリアージできるよう、テンプレートのすべてのセクションを完成させてください。
-1. Test Governance チームは 1 週間以内にリクエストをトリアージし、リクエストの種類と優先度に基づいて適切なラベルを追加してチームメンバーを割り当てます。優先順位付けと次のステップの詳細はヘルプリクエスト Issue でお知らせします。
-
-E2E テストカバレッジの詳細なガイダンスについては、以下のアプローチを検討してください:
-
-* 主要な DRI と連携して、さまざまな顧客が新機能をどのように使用するかを示す[ペルソナ](/handbook/product/personas)ユースケースを定義する
-* 全体的な[テストピラミッド](https://docs.gitlab.com/ee/development/testing_guide/testing_levels.html)を念頭に置きながら、ユースケースのどの部分が下位レベルのテストでカバーできるか、どの部分が E2E テストでカバーできるかを評価する
-* リクエストを提出する前に、[テストのベストプラクティス](https://docs.gitlab.com/development/testing_guide/end_to_end/best_practices)に関するドキュメントを参照する
-
-<!--
-## 働き方
-### 作業に関する儀式
-### 作業管理
-#### 計画
--->
-
-## チームミーティング
-
-これらのミーティングの目的に関する詳細は、[グループ Test Governance のプロセス](/handbook/engineering/infrastructure-platforms/developer-experience/test-governance/workflows/#processes-and-their-frequencies) を参照してください。
-
-* **チーム同期・知識共有**: 隔週（すべてのタイムゾーンをカバーするために 2 セッション）
-* **Issues/Epics のリファインメント**: 毎週、同期（すべてのタイムゾーンをカバーするために 2 セッション）と非同期を交互に
-* **四半期計画**: 四半期に 1 回
-* **振り返り**: 月次だが四半期ごとにまとめる
+* [不健全なテスト](https://docs.gitlab.com/development/testing_guide/unhealthy_tests/) — 発生するフレーキーテストの種類と、その特定および修正方法を説明します。これにより、チームは自らのスイートを信頼できる状態に保てます。
+* [フレーキーテスト](/handbook/engineering/testing/flaky-tests/) — 主要なフレーキーテストがチームの対応のために自動検出・報告される方法を説明します。
+* [隔離プロセス](/handbook/engineering/testing/quarantine-process/) — テストを隔離する方法と、担当チームが `feature_category` に基づいて解決または削除の責任を持つことを説明します。

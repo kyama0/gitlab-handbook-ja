@@ -3,14 +3,14 @@ title: チケットの翻訳
 category: Zendesk
 description: お客様に多言語サポートを提供するため、GitLab は Zendesk 内の自動翻訳機能を活用しています。
 upstream_path: /handbook/support/workflows/translating_tickets/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T04:02:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:16:12+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-26T18:09:15-05:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 
 ### 概要
 
 詳しくは
-[Translating Tickets](/handbook/security/customer-support-operations/zendesk/agent-workspace/#translating-tickets) を参照してください。
+[Translating Tickets](/handbook/eta/css/zendesk/agent-workspace/#translating-tickets) を参照してください。

@@ -1,11 +1,11 @@
 ---
 title: "インフラストラクチャプラットフォームのプロジェクト管理"
 upstream_path: /handbook/engineering/infrastructure-platforms/project-management/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T03:12:43Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T06:52:34+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-04T15:20:03-07:00"
+lastmod: "2026-07-15T17:51:54+00:00"
 ---
 
 ## プラットフォームにおけるプロジェクト管理
@@ -156,7 +156,7 @@ DRI と EM は参加者リストを適切に更新する責任があります。
 |-------------|--------|
 | セクションラベル | `section::developer experience`<br/>`section::gitlab delivery`<br/>`section::gitlab dedicated`<br/>`section::production engineering`<br/>`section::tenant scale` |
 | ステージラベル | `devops::developer experience`<br/>`devops::gitlab delivery`<br/>`devops::gitlab dedicated`<br/>`devops::production engineering`<br/>`devops::data access`<br/>`devops::runtime` |
-| グループラベル | `group::build`<br/>`group::Cloud Cost Utilization`<br/>`group::development analytics`<br/>`group::development tooling`<br/>`group::environment automation`<br/>`group::Foundations`<br/>`group::geo`<br/>`group::git`<br/>`group::gitaly`<br/>`group::Observability`<br/>`group::operate`<br/>`group::Ops`<br/>`group::organizations`<br/>`group::performance enablement`<br/>`group::release-and-deploy`<br/>`group::Runners Platform`<br/>`group::runway`<br/>`group::switchboard`<br/>`group::tenant services`<br/>`group::test governance`<br/>`group::US PubSec` |
+| グループラベル | `group::build`<br/>`group::Cloud Cost Utilization`<br/>`group::development analytics`<br/>`group::development tooling`<br/>`group::environment automation`<br/>`group::Foundations`<br/>`group::geo`<br/>`group::git`<br/>`group::gitaly`<br/>`group::Observability`<br/>`group::operate`<br/>`group::Ops`<br/>`group::organizations`<br/>`group::performance enablement`<br/>`group::release-and-deploy`<br/>`group::Runners Platform`<br/>`group::runway`<br/>`group::switchboard`<br/>`group::tenant services`<br/>`group::US PubSec` |
 | スコープ付き `workflow-infra::*` ラベル | （以下参照） |
 | スコープ付き `infra-category::*` ラベル | （以下参照） |
 | オプションのスコープ付き `Service` ラベル | `Service::*` |

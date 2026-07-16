@@ -2,11 +2,11 @@
 title: "データゴールデンパス"
 description: "Developer Experience チームのためのデータストレージと可視化に関するガイダンス"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/data-golden-path/"
-upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
-translated_at: "2026-04-28T16:51:32Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T06:52:34+09:00"
+translator: codex
 stale: false
-lastmod: "2025-10-27T19:08:13+02:00"
+lastmod: "2026-07-15T17:51:54+00:00"
 ---
 
 製品機能が不足しているためにカスタムツールを構築すると、カスタムデータも作成されます。このカスタムデータは監視とアラートができるようにどこかに保存する必要があります。カスタムツールを製品機能にすること（該当する場合）で、データも製品の一部になります — 私たちのメンテナンス作業を削減しながら顧客を支援します。
@@ -218,10 +218,6 @@ flowchart LR
 *近日公開*
 
 #### Performance Enablement
-
-*近日公開*
-
-#### Test Governance
 
 *近日公開*
 

@@ -4,11 +4,11 @@ category: GitLab.com
 subcategory: Accounts
 description: "お客様から確認メールを受信していないと報告されたケースのワークフロー"
 upstream_path: /handbook/support/workflows/confirmation_emails/
-upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
-translated_at: "2026-05-08T20:14:55Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:04:40+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-21T12:28:59-06:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 
 ## 概要
@@ -18,7 +18,7 @@ lastmod: "2026-01-21T12:28:59-06:00"
 ## **Stage 0:** チケットのトリアージ
 
 チケットに対応する前に、`SaaS Account` フォームと `Did not receive confirmation email` 問題タイプで正しくトリアージされていることを確認し、
-[SaaS Account Ticket Helper](/handbook/security/customer-support-operations/zendesk/apps/global#gitlab-super-app) アプリケーションがアクティブになるようにします。
+[SaaS Account Ticket Helper](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) アプリケーションがアクティブになるようにします。
 
 ユーザーが正しい問題タイプをすでに選択している場合、エージェントが初めてチケットを開いたときに自動化がアクティブになります。何らかの理由で SaaS Account Ticket Helper アプリケーションが問題を解決できなかった場合は、以下のセクションの手順に従って手動で解決します。
 

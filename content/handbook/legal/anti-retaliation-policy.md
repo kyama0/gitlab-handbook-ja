@@ -2,21 +2,15 @@
 title: "報復防止ポリシー"
 description: "GitLabの報復防止ポリシー。倫理・コンプライアンスに関する懸念やその他の不適切な行為の報告に関するガイダンスを定め、善意による報告に対する報復からの保護を提供します。"
 upstream_path: "/handbook/legal/anti-retaliation-policy/"
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-29T00:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:41:07+09:00"
+translator: codex
 stale: false
-lastmod: "2025-05-02T17:21:30+00:00"
+lastmod: "2026-07-14T20:24:30+00:00"
 ---
 
 GITLAB INC.
 {.h1}
-
-報復防止ポリシー
-{.h1}
-
-- **発効日:** 2023年4月21日
-- **承認者:** Robin Schulman、最高法務責任者、コーポレートアフェアーズ責任者、および会社秘書
 
 ## 目的
 

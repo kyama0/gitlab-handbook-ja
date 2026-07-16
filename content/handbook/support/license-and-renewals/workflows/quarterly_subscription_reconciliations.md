@@ -3,11 +3,11 @@ title: 四半期サブスクリプション リコンサイル (QSR)
 category: General
 description: QSR の異議申し立て、QSR の一時停止、最大シートの解決、リコンサイルの再実行に関するワークフロー。
 upstream_path: /handbook/support/license-and-renewals/workflows/quarterly_subscription_reconciliations/
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:21:18+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-08T16:30:47-04:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 ## 概要
 
@@ -58,7 +58,7 @@ QSR とその仕組みを説明し、[ドキュメントページ](https://docs.
 #### QSR を手動で一時停止する場合
 
 1. バグ修正やその他の回避策が実装された後、再アクティブ化されることを保証する責任を負う必要があります。
-   - [Zendesk Super App](/handbook/security/customer-support-operations/zendesk/apps/global#zendesk-super-app)、[reminder app](/handbook/security/customer-support-operations/zendesk/apps/global#gitlab-reminders-app)、Slack 標準のリマインダーツール、その他自分に合ったものを検討してください。
+   - [Zendesk Super App](/handbook/eta/css/zendesk/apps/global#zendesk-super-app)、[reminder app](/handbook/eta/css/zendesk/apps/global#gitlab-reminders-app)、Slack 標準のリマインダーツール、その他自分に合ったものを検討してください。
 
 ## 最大シート超過の解決 {#resolving-max-seats-overages}
 

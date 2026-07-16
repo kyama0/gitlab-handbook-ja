@@ -1,11 +1,11 @@
 ---
 title: "GitLab テスト環境カタログ"
 upstream_path: "/handbook/engineering/testing/test-environments-catalog/"
-upstream_sha: "6eef8dbb6a0d15167aa5378f476b04cd38b78675"
-translated_at: "2026-07-10T07:06:25+09:00"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-15T21:34:06Z"
+translator: codex
 stale: false
-lastmod: "2026-07-07T16:51:00+02:00"
+lastmod: "2026-07-15T17:51:54+00:00"
 ---
 
 このページは .com、セルフマネージド、Dedicated プラットフォーム向けに GitLab で利用可能なテスト環境のカタログを提供します。
@@ -370,7 +370,7 @@ Dedicated インフラ変更向けのエフェメラル環境。E2E スモーク
 
 | タイプ | ステータス | プラットフォーム | URL | オーナー/DRI | プロジェクト | Cells | アクセス |
 |------|--------|----------|-----|-----------|---------|-------|--------|
-| エフェメラル | アクティブ | Cloud Native GitLab | N/A（MR ごとのエフェメラル） | DevEx - テストガバナンス | [CNG オーケストレーター](https://gitlab.com/gitlab-org/gitlab/-/tree/master/qa/gems/gitlab-orchestrator) | 無効 | MR パイプラインで自動 |
+| エフェメラル | アクティブ | Cloud Native GitLab | N/A（MR ごとのエフェメラル） | Developer Experience | [CNG オーケストレーター](https://gitlab.com/gitlab-org/gitlab/-/tree/master/qa/gems/gitlab-orchestrator) | 無効 | MR パイプラインで自動 |
 
 **目的:** Cloud Native GitLab 向けのマージ前 E2E 検証。E2E テストを使用して [Cloud Native GitLab（CNG）](https://gitlab.com/gitlab-org/build/CNG)インストールに対して MR の変更をテストします。マージ前検証ライフサイクルの一部であり、コードをマージするには合格が必要です。
 
@@ -386,7 +386,7 @@ Dedicated インフラ変更向けのエフェメラル環境。E2E スモーク
 
 | タイプ | ステータス | プラットフォーム | URL | オーナー/DRI | プロジェクト | Cells | アクセス |
 |------|--------|----------|-----|-----------|---------|-------|--------|
-| エフェメラル | アクティブ | 開発 | N/A（MR ごとのエフェメラル） | DevEx - テストガバナンス | [GitLab Development Kit](https://gitlab.com/gitlab-org/gitlab-development-kit) | 有効 | MR パイプラインで自動 |
+| エフェメラル | アクティブ | 開発 | N/A（MR ごとのエフェメラル） | Developer Experience | [GitLab Development Kit](https://gitlab.com/gitlab-org/gitlab-development-kit) | 有効 | MR パイプラインで自動 |
 
 **目的:** エンジニア向けの高速 E2E テストフィードバック。[GitLab Development Kit](https://gitlab.com/gitlab-org/gitlab-development-kit)（GDK）に対して実行することで、Omnibus ベースのテストよりも高速なエンドツーエンドテスト実行を提供します。
 
@@ -404,7 +404,7 @@ Dedicated インフラ変更向けのエフェメラル環境。E2E スモーク
 
 | タイプ | ステータス | プラットフォーム | URL | オーナー/DRI | プロジェクト | アクセス |
 |------|--------|----------|-----|-----------|---------|--------|
-| エフェメラル | N/A | セルフマネージド | N/A（MR ごとのエフェメラル） | DevEx - テストガバナンス | [Omnibus GitLab](https://gitlab.com/gitlab-org/omnibus-gitlab) | MR で手動トリガー |
+| エフェメラル | N/A | セルフマネージド | N/A（MR ごとのエフェメラル） | Developer Experience | [Omnibus GitLab](https://gitlab.com/gitlab-org/omnibus-gitlab) | MR で手動トリガー |
 
 **目的:** Omnibus インストールに対する E2E 検証
 

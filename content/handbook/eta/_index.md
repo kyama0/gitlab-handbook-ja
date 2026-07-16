@@ -1,12 +1,12 @@
 ---
 title: "エンタープライズテクノロジーと AI"
-description: "GitLab のエンタープライズテクノロジーおよび人工知能の社内ハンドブックへようこそ。このセクションは社内限定の項目を対象としています。社内限定でないものはすべて公開ハンドブックに記載してください。"
+description: "GitLab の Enterprise Technology and Artificial Intelligence ハンドブックのページへようこそ。"
 upstream_path: "/handbook/eta/"
-upstream_sha: "cd48478a4249801968533c5281c38a2b58b5e688"
-translated_at: "2026-04-29T12:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:41:07+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-17T12:23:47-05:00"
+lastmod: "2026-07-14T08:28:21-04:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />

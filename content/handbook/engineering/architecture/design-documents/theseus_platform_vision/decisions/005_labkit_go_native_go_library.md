@@ -4,9 +4,9 @@ owning-stage: ""
 description: "LabKit Go は、FFI、動的リンク、サブプロセス + IPC、WASM を介して Go 以外のコアをラップするのではなく、純粋なネイティブ Go ライブラリとして維持する決定。"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/theseus_platform_vision/decisions/005_labkit_go_native_go_library/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-lastmod: "2026-06-30T17:42:08+02:00"
-translated_at: "2026-07-14T07:42:19+09:00"
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+lastmod: "2026-07-15T12:33:58+02:00"
+translated_at: "2026-07-16T06:15:42+09:00"
 translator: codex
 stale: false
 ---
@@ -87,7 +87,7 @@ LabKit Ruby や、今後別の言語向けに実装される LabKit を制約す
 
 ## これは双方向ドアの意思決定です
 
-これが重要だと判断した場合は、後の段階で単一の
+これが重要だと判断した場合は、後の段階で、単一の
 バイナリへ移行できます。
 
 ## 検討した代替案
@@ -115,11 +115,11 @@ flowchart LR
   subprocess_mech(["Subprocess + IPC\nseparate binary"]):::mech
 
   dev_complex["Developer complexity\nUsers need a C toolchain\n(gcc/clang/MinGW) installed.\nCGO_ENABLED=0 builds break.\nPer-platform .a artifacts\nmust be prebuilt and shipped."]:::term
-  compile_speed["Compile speed\ncgo invokes system linker(no fast Go internal linker).\n+1–3s per cgo package, cold.\nSlows go test, gopls, lintacross the whole module."]:::term
-  per_call["Per-call overhead\nFFI/IPC boundary costper invocation.\nWASM: 100sof ns. Subprocess + serde:microseconds.\nKills chattyAPIs; forces batching."]:::term
-  loss_binary["Loss of single binary\nShip .so/.dylib/.dll or a\nsecond executable alongsidethe Go binary.\nLD_LIBRARY_PATHor PATH must be set.\nBreaks scratch/distroless deploys."]:::term
+  compile_speed["Compile speed\ncgo invokes system linker (no fast Go internal linker).\n+1–3s per cgo package, cold.\nSlows go test, gopls, lint across the whole module."]:::term
+  per_call["Per-call overhead\nFFI/IPC boundary cost per invocation.\nWASM: 100s of ns. Subprocess + serde: microseconds.\nKills chatty APIs; forces batching."]:::term
+  loss_binary["Loss of single binary\nShip .so/.dylib/.dll or a\nsecond executable alongside the Go binary.\nLD_LIBRARY_PATH or PATH must be set.\nBreaks scratch/distroless deploys."]:::term
   startup["Startup time\nWASM compile/instantiate cost\nper process. wazero AOT helps\nbut adds tens to hundreds of ms\non cold start. Bad for CLIs\nand short-lived processes."]:::term
-  experimental["Experimental\npurego skips cgo's goroutine\nstack switch. Rust runs on asmall movable stack — large\nstack use, callbacks, threads,or async will corrupt state."]:::term
+  experimental["Experimental\npurego skips cgo's goroutine\nstack switch. Rust runs on a small movable stack — large\nstack use, callbacks, threads, or async will corrupt state."]:::term
   ops_complex["Operational complexity\nTwo binaries to version,\nrelease, and monitor. Crash\nhandling, restarts, IPC\nschema evolution, and orphan\nprocess cleanup all on you."]:::term
 
   uniffi --> static_mech

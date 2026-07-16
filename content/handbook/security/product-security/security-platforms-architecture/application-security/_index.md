@@ -2,10 +2,10 @@
 title: "Application Security"
 description: Application Securityのホームページ
 upstream_path: "/handbook/security/product-security/security-platforms-architecture/application-security/"
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-lastmod: 2026-06-26T09:02:11+12:00
-translated_at: "2026-07-02T06:06:16+09:00"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+lastmod: "2026-07-14T15:22:25-05:00"
+translated_at: "2026-07-16T07:30:25+09:00"
+translator: codex
 stale: false
 ---
 <!-- markdownlint-disable MD052 -->
@@ -60,7 +60,7 @@ Secure Design and Developmentチームの責任は機能に焦点を当ててお
 - [PRおよびコミュニケーション](/handbook/security/external-security-communications-procedure/)
 - [Legal](/handbook/legal/)
 - [Delivery](/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/)
-- [カスタマーサポート](/handbook/security/customer-support-operations/)
+- [Customer Support Systems](/handbook/eta/css/)
 
 ## スコープ外
 

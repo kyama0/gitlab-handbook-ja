@@ -4,11 +4,11 @@ category: GitLab.com
 subcategory: Security
 description: 不正使用レポートのレビューをリクエストする方法
 upstream_path: /handbook/support/workflows/abuse_report_review_request/
-upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
-translated_at: "2026-05-08T19:23:50Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:04:40+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-21T12:28:59-06:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 
 このワークフローは、不正使用レポートのレビューをリクエストするためのものです。ブロックされたすべてのアカウントには、関連する Issue へのリンクが付いた admin note があるはずです。
@@ -16,7 +16,7 @@ lastmod: "2026-01-21T12:28:59-06:00"
 ## プロセス
 
 1. アカウントが不正使用レポートのレビューをリクエストした場合、Trust and Safety の [Operations Issue Tracker](/handbook/security/security-operations/trustandsafety/) で `Abuse_Report_Review_Request` Issue を作成します
-    - Zendesk の [(GitLab user lookup app](/handbook/security/customer-support-operations/zendesk/apps/global#gitlab-super-app) は、ユーザーが自分のアカウントに関連付けられたメールアドレスを使ってサポートに連絡している場合、そのユーザーの admin note を表示します。代わりに -
+    - Zendesk の [(GitLab user lookup app](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) は、ユーザーが自分のアカウントに関連付けられたメールアドレスを使ってサポートに連絡している場合、そのユーザーの admin note を表示します。代わりに -
     - ChatOps へのアクセスがある場合、chatops が有効化された任意の Slack チャンネルで以下のコマンドを使用してユーザーの admin note を読み取れます
         > `/chatops run user find <username or email>`
 1. 不正使用レポートのレビューリクエストが不正使用行為に関連している場合、

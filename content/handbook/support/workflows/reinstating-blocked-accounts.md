@@ -4,16 +4,16 @@ category: GitLab.com
 subcategory: Security
 description: ブロックされたユーザーを復活させられるか判断する方法
 upstream_path: /handbook/support/workflows/reinstating-blocked-accounts/
-upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
-translated_at: "2026-05-08T01:46:59Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:04:40+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-06T16:08:49-08:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 
 このワークフローページでは、**Locked**、**Blocked**、および **Banned** アカウントへの対応方法を説明します。ユーザーは自分がブロックされていると思っていても、実際にはアカウントがロックされているだけというケースがあります。これを確認する方法はいくつかあります:
 
-1. この情報を確認する最良の方法は、[Zendesk User Lookup app（GitLab Super App の一部）](/handbook/security/customer-support-operations/zendesk/apps/global#gitlab-super-app) の `Locked` および `State` フィールドを使うことです。
+1. この情報を確認する最良の方法は、[Zendesk User Lookup app（GitLab Super App の一部）](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) の `Locked` および `State` フィールドを使うことです。
 1. 管理ユーザー UI の `/admin/user/USERNAME` には、上部の名前の隣に `(Locked)`、`(Blocked)`、または `(Banned)` と表示されます。
 1. [Users API](https://docs.gitlab.com/api/users/#get-a-single-user) を使って、管理ユーザーとしてログインしている状態でブラウザから URL `https://gitlab.com/api/v4/users/<user_id>` を開くと、ユーザーの `locked` および `state` ステータスも確認できます。
 
@@ -72,7 +72,7 @@ lastmod: "2026-03-06T16:08:49-08:00"
 ### なぜアカウントがブロックされたか？
 
 アカウントがブロックされている場合、admin note を確認してブロックされた理由を調べてください。
-    - Zendesk の [GitLab user lookup app](/handbook/security/customer-support-operations/zendesk/apps/global#gitlab-super-app) は、ユーザーがアカウントに紐づくメールアドレスでサポートに問い合わせた場合に、そのユーザーの admin notes を表示します。あるいは、
+    - Zendesk の [GitLab user lookup app](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) は、ユーザーがアカウントに紐づくメールアドレスでサポートに問い合わせた場合に、そのユーザーの admin notes を表示します。あるいは、
     - ChatOps へのアクセス権がある場合は、chatops が有効な任意の Slack チャンネルで以下のコマンドを使ってユーザーの admin notes を読むことができます。
         > `/chatops run user find <username or email>`
 
@@ -163,14 +163,17 @@ Trust and Safety からの最終決定が、ユーザーアカウントを復活
 
 プロセス:
 
-1. リクエスター が、そのユーザーを claim しているトップレベルグループの Owner であることを確認します。Owner ロールを確認するには [GitLab user lookup app](/handbook/security/customer-support-operations/zendesk/apps/global#gitlab-super-app) または [Members API](https://docs.gitlab.com/api/members/) を使います。
+1. リクエスター が、そのユーザーを claim しているトップレベルグループの Owner であることを確認します。Owner ロールを確認するには [GitLab user lookup app](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) または [Members API](https://docs.gitlab.com/api/members/) を使います。
 1. 対象アカウントが、リクエスターのネームスペースが claim している [Enterprise user](/handbook/support/workflows/gitlab-com_overview#enterprise-users) であることを確認します。
 1. ネームスペース Owner は [アカウント検証](/handbook/support/workflows/account_verification) に合格する必要があります。
 1. [ユーザーをブロック解除](https://docs.gitlab.com/administration/moderate_users/#unblock-a-user) して保留中の削除をキャンセルします。
 1. ユーザーに [admin note](/handbook/support/workflows/admin_note) を残し、ネームスペース Owner のリクエストにより削除がキャンセルされたこと、日付、チケット番号を記載します。
 1. ネームスペース Owner に削除がキャンセルされたことを通知します。
 
-> **注意:** Enterprise users のアカウントはネームスペース管理者によって管理されているため、このアクションにユーザー本人の同意は必要ありません。ただし、ユーザーが後から削除を再開始する場合は、ネームスペース管理者がその根本原因についてユーザーと直接話す必要がある可能性があります。
+> **注意:** このアクションにユーザー本人の同意は必要ありません。
+> Enterprise users のアカウントはネームスペース管理者によって管理されます。
+> ただし、ユーザーが後から削除を再開始する場合は、ネームスペース
+> 管理者がその根本原因についてユーザーと直接話す必要がある可能性があります。
 
 ---
 

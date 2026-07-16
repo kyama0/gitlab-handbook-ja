@@ -4,11 +4,11 @@ category: Handling tickets
 subcategory: Writing responses and handling feedback
 description: サポートチームの顧客満足度（Customer Effort Score または CES）レビュープロセス、および顧客フィードバックに対応するためにマネージャーが行うアクションについて説明します
 upstream_path: /handbook/support/workflows/how-to-respond-to-feedback/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:04:40+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-22T11:27:49+08:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 
 [サポート満足度](/handbook/support/performance-indicators/#support-satisfaction-ssat) に貢献する要因を理解するため、サポートチケットに対して受領したフィードバックをレビューします。受領したすべてのサポート満足度フィードバックに対して、Issue が [フィードバック Issue トラッカー](https://gitlab.com/gitlab-com/support/feedback/-/issues)（社内のみ）に自動的に作成され、チケットに割り当てた人物のマネージャーに割り当てられます。
@@ -34,7 +34,7 @@ lastmod: "2026-05-22T11:27:49+08:00"
 
 顧客がこのセクションの完了をオプトアウトした場合、結果として作成されるフィードバック Issue には「User did not leave a comment」が含まれます
 
-フォームは [こちら](/handbook/security/customer-support-operations/zendesk/satisfaction/#ces-survey-form) にあります
+フォームは [こちら](/handbook/eta/css/zendesk/satisfaction/#ces-survey-form) にあります
 
 ## 顧客フィードバック Issue の購読
 

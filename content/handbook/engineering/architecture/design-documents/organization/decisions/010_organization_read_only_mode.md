@@ -6,11 +6,11 @@ creation-date: "2026-04-28"
 authors: [ "@abdwddd" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode/
-upstream_sha: "18de125bd3131a62f0a7026bc69c7de124fc6c8a"
-translated_at: "2026-06-20T13:54:37Z"
-translator: "claude"
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T06:24:10+09:00"
+translator: codex
 stale: false
-lastmod: "2026-06-15T11:20:57+02:00"
+lastmod: "2026-07-14T10:03:47+02:00"
 ---
 
 ## コンテキスト
@@ -86,7 +86,7 @@ Cell 間の Organization 移行では、データのカットオーバー前の*
 - **ドレイン確認ウィンドウ。** チェックは短い間隔で少なくとも 2 回実行され、両方とも 0 を読み取らなければなりません。1 回だけのゼロは、ワーカーに今まさに拾われそうだったジョブと競合する可能性があります。
 - **有界の待機、その後エスカレーション。** 設定されたウィンドウ内に準備状態が収束しない場合、カットオーバーツールは Organization をまだ保持しているワーカーを浮上させ、オペレータが待機、強制終了、中止のいずれを行うかを判断できるようにします。移行のカットオーバーは協調的で人間の監督下にあるステップであり、サイレントタイムアウトは許容されません。
 
-準備状態チェックは、[Organization データ移行ブループリント](../../organization-data-migration/_index.md)におけるデータコピー / ルーティング切り替えステップの前提条件となるゲーティング条件です。これは admin エンドポイントとして公開され、ホットパスではありません。これを計算するために使用される具体的な Sidekiq API とリゾルバのシグネチャは実装の詳細であり、[#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327) に存在します。
+準備状態チェックは、[Organization データ移行ブループリント](../../organization-data-migration/_index.md)におけるデータコピー / ルーティング切り替えステップの前提条件となるゲーティング条件です。これは admin エンドポイントとして公開され、ホットパスではありません。ジョブは、各ジョブに付随する同じ Organization コンテキスト（下記の *Organization スコープのルール* を参照）を通じて Organization に帰属します。具体的な実装は [#594327](https://gitlab.com/gitlab-org/gitlab/-/work_items/594327) にあります。
 
 ### どこで強制されるか
 
@@ -130,11 +130,16 @@ Cell 間の Organization 移行では、データのカットオーバー前の*
 
 #### Organization スコープのルール
 
-ワーカーが*Organization スコープ*であるとは、その引数のいずれかが Organization に解決される場合であり、明示的な `organization_id` を取る場合に限りません。モデルが（直接または推移的に）`organization_id` を持つ任意の引数が該当します。必要に応じて関連を辿り、[ADR 008](008_non_isolated_organizations_gitlab_com.md) のトップレベルグループ → Organization の 1:1 不変条件に従います。引数タイプごとの完全な分類はリゾルバ実装と共に存在します。
+ワーカーが操作する Organization は `Current.organization` から解決され、既存のジョブコンテキスト機構（[!212406](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/212406)）を通じてワーカーに複製されます。エンキュー時に設定されたコンテキストは Organization をジョブに運び、ワーカーの実行時に `Current.organization` に再設定されます。ワーカー引数から導出されるのでも、追加の `perform_async` 引数として渡されるのでもありません。`Current.organization` はすべての Web および API リクエストで設定されるため、リクエスト起点のジョブはデフォルトでそれを運びます。リクエストコンテキストを持たないエンキュー箇所は、並行する解決機構を導入するのではなく、既存パターンである `Gitlab::ApplicationContext.with_context(organization: ...)` ブロックでエンキューをラップします。
 
-ワーカーが*クロス Organization*であるのは、その引数のいずれも Organization に解決されない場合か、Organization をまたぐコレクションを反復する場合（例: `Project.find_each` を反復する Cell 全体の cron ワーカー）のみです。反復ワーカーはワーカーレベルではクロス Organization ですが、行ごとには Organization スコープになり、反復中に読み取り専用 Organization をフィルタリングする必要があります（下記の *ポリシー* を参照）。
+これはデータ分離とも整合します。分離された Organization では、分離が Cell 間移行の前提条件であり、データベースクエリは `Current.organization` にスコープされます。したがってコンテキストの Organization *こそが*、ワーカーが読み書きできるデータの Organization です。別の Organization のデータを参照するジョブのスケジュールは、読み取り専用設計が解決すべきケースではなく、スケジューリングのバグです。
 
-単一のリゾルバが、与えられた `(worker_class, args)` ペアに対して `Organization | :cross_org | :unresolved` を返し、このロジックが存在する唯一の場所になります。これは新しい機能であることに注意してください。`Gitlab::ApplicationContext` はコンテキストをジョブペイロードとログに *シリアライズ* するだけで（`to_lazy_hash`、例: `project ⇒ project_path`、`organization_id ⇒ organization&.id`）、ペイロードからモデルを再構築することはありません。既存の読み戻しパスは、すでにシリアライズされた文字列を `Labkit::Context` に再生するだけです。現在ジョブ引数からコンテキストを導出する唯一の仕組みは、ワーカーごとの opt-in `context_for_arguments`（`Gitlab::BatchWorkerContext`）です。したがって、リゾルバは構築する必要があります。実行時にジョブ引数から Organization を解決するよう `ApplicationContext` を拡張するか、ワーカーごとの `context_for_arguments` に標準化します。
+ルール:
+
+- **`Current.organization` が使用可能な状態で実行されるすべてのワーカーは、その Organization に対して Organization スコープです。** その Organization の読み取り専用状態が、下記の *ポリシー* に従って適用されます。`read_only_initialization`（ドレインフェーズ）では、キュー済みおよび実行中のジョブは完了まで実行されます。Organization が `read_only`（ドレイン収束後の定常状態）に達すると、ワーカーはバックストップとして早期終了します。この時点で到着するジョブはフロントドアのブロックをすり抜けています。
+- **cron ワーカーはデフォルトでクロス Organization です。** エンキュー時にリクエストコンテキストがありません。cron ワーカーが Organization 所有データを変更する場合、Organization を反復しながら各反復で `with_context(organization: ...)` を設定するなど、Organization コンテキストを確立しなければなりません。そうすると同じワーカー側のルールが反復ごとに適用されます。これは [#599101](https://gitlab.com/gitlab-org/gitlab/-/work_items/599101) と、下記の *ポリシー* にある反復フィルタ要件で追跡されています。
+
+コンテキスト機構を完全にするには、既知のギャップを解消する必要があります。プロジェクトまたは namespace のコンテキストのみでエンキューされたジョブは、現時点では Organization を運ばないため、エンキュー時にプロジェクトまたは namespace から導出する必要があります。これは [#603918](https://gitlab.com/gitlab-org/gitlab/-/work_items/603918) で追跡されています。
 
 #### ポリシー
 

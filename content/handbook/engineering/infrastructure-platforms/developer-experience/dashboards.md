@@ -2,11 +2,11 @@
 title: "Developer Experience ダッシュボード"
 description: "このハンドブックページは、すべての Developer Experience ダッシュボードの詳細の中央リポジトリとして機能します"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/dashboards/"
-upstream_sha: "6a459a3ca969603754a3b5133342edb804d3012c"
-translated_at: "2026-04-28T16:51:32Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T06:52:34+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-09T11:51:33+01:00"
+lastmod: "2026-07-15T17:51:54+00:00"
 ---
 
 > 耐障害性があり効率的で堅牢なプラットフォームを追求するにあたり、私たちのテストプラットフォームサブ部門は
@@ -23,7 +23,7 @@ lastmod: "2026-04-09T11:51:33+01:00"
 ||[dx: Job Metrics](https://dashboards.gitlab.net/d/dx-job-metrics)| CI ジョブメトリクスの概要。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
 ||[dx: Failure Analysis Dashboard](https://dashboards.gitlab.net/d/dx-failure-analysis)| CI パイプラインの失敗分析。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
 ||[dx: Master-Broken Incident Detection](https://dashboards.gitlab.net/d/dx-master-broken-incident-detection)| Master-broken インシデント関連ダッシュボード。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
-||[dx: Test Governance Key Metrics](https://dashboards.gitlab.net/d/dx-test-governance)| gitlab-org/gitlab の CI/CD パイプライン実行に関連する主要メトリクス。 |[Test Governance](../../infrastructure-platforms/developer-experience/test-governance)|
+||[dx: Test Governance Key Metrics](https://dashboards.gitlab.net/d/dx-test-governance)| gitlab-org/gitlab の CI/CD パイプライン実行に関連する主要メトリクス。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
 |テストメトリクス|[dx: Test Suite Overview](https://dashboards.gitlab.net/d/dx-suite-overview/dx3a-test-suite-overview)| テストスイートのヘルスとステータスの概要。|[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
 ||[dx: Predictive Tests](https://dashboards.gitlab.net/d/dx-predictive-tests)| 予測テストのメトリクス。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
 ||[dx: Quarantined Tests](https://dashboards.gitlab.net/d/dx-quarantined-tests)| 隔離されたテストの概要。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|

@@ -2,11 +2,11 @@
 title: E2Eテスト失敗 Issue デバッグガイド
 description: プロダクトエンジニア向けのE2Eテスト失敗 Issue デバッグ簡易ガイド
 upstream_path: /handbook/engineering/testing/guide-to-e2e-test-failure-issues/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T10:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-15T21:34:06Z"
+translator: codex
 stale: false
-lastmod: "2026-01-08T10:39:52+10:00"
+lastmod: "2026-07-15T17:51:54+00:00"
 ---
 
 [失敗 Issue のトラブルシューティング（動画 3分）](https://www.youtube.com/watch?v=KbQzrVJMvNQ&t=1552s)
@@ -97,4 +97,4 @@ lastmod: "2026-01-08T10:39:52+10:00"
 
 ### さらなる支援が必要な場合
 
-**#g_test_governance** Slack チャンネルに問い合わせるか、[Test Governance ヘルプリクエスト Issue](https://gitlab.com/gitlab-org/quality/test-governance/request-for-help/-/issues/new) を作成してください
+プロダクトチームは自分たちのテストのトリアージと保守を所有します。ガイダンスについては、[**#s_developer_experience**](https://gitlab.enterprise.slack.com/archives/C07TWBRER7H) Slack チャンネルで Developer Experience に連絡してください。

@@ -2,22 +2,22 @@
 title: パイプライントリアージ
 description: GitLab の E2E パイプライントリアージプロセスの概要
 upstream_path: /handbook/engineering/testing/pipeline-triage/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-15T21:34:06Z"
+translator: codex
 stale: false
-lastmod: "2026-05-22T14:47:44+02:00"
+lastmod: "2026-07-15T17:51:54+00:00"
 ---
 
-> ⚠️ 注: このプロセスは現在更新中です。Software Engineer in Test (SET) のロールは Backend Engineer へ移行中で、Pipeline DRI プロセスは廃止されつつあります。このページは、決定が確定したしだい、新しいプロセスを反映するよう改訂されます。
+> ⚠️ 注: DevOps の変革の一環として、**Developer Experience はパイプライントリアージを行わなくなり**、中央集約型の Pipeline DRI プロセスは廃止されつつあります。テストパイプライン障害のトリアージとデバッグは、`feature_category`/`product_group` ごとの**所有機能チーム**の責任です。Developer Experience（DevEx）は、トリアージの所有者ではなく、**重大なエスカレーション先に限られます**。以下の手順ガイダンスは、トリアージを行う人にとって引き続き役立ちます。Software Engineer in Test（SET）のロールも Backend Engineer に移行しました。以下の「SET」は、所有チーム内の該当するエンジニアを意味します。
 
 ## 概要
 
-このガイドラインは、パイプライントリアージを担当する GitLab チームメンバーに、この責務に伴う優先順位とプロセスのイメージを提供します。これは [On-Call ローテーション](oncall-rotation.md) で提供される情報を土台としています。
+このガイドでは、エンドツーエンドのテストパイプライン障害をトリアージおよびデバッグする方法を説明します。トリアージは、失敗したテストの `feature_category`/`product_group` で識別される、そのテストを所有するチームが担います。DevEx は共有パイプラインインフラストラクチャを提供し、重大な問題では最後の手段としてのみ対応します。これは [On-Call ローテーション](oncall-rotation.md) の情報を土台としています。
 
 このガイドは [Broken `master`](/handbook/engineering/workflow/#broken-master) エンジニアリングワークフローの拡張であり、エンドツーエンドのテストパイプライン障害をトリアージする方法について、より具体的なガイドを提供することを目的としています。[broken master インシデントを特定し解決するための最初のステップとして、broken master プロセスの手順に従ってください。](../workflow/#broken-master-escalation)
 
-パイプライントリアージの [DRI](/handbook/people-group/directly-responsible-individuals/) は、テストパイプライン障害の分析とデバッグに責任を持ちます。現在の DRI が誰かを知るには、[DRI 週次ローテーションスケジュール](oncall-rotation#schedule) を参照してください。
+パイプライン障害をトリアージする人は、以下の手順を使って障害を分析およびデバッグし、所有チームを巻き込む責任を負います。
 
 NOTE:
 テストパイプライン障害のデバッグに関する情報については、[Debugging Failing E2E Tests and Test Pipelines](https://docs.gitlab.com/development/testing_guide/end_to_end/debugging_end_to_end_test_failures/) を参照してください。
@@ -26,7 +26,7 @@ NOTE:
 
 1. **[monthly](https://gitlab.com/gitlab-org/release-tools/-/blob/80d9e08d7ffd99546e810911a31fb46934097880/.gitlab/ci/monthly/update-paths-ci.yml#L43) および [patch](https://gitlab.com/gitlab-org/release-tools/-/blob/80d9e08d7ffd99546e810911a31fb46934097880/.gitlab/ci/security/update-paths-ci.yml#L43) リリースパイプラインで失敗しているアップデートパス QA を調査または修正する**。必要に応じて修正について [Release Managers](/handbook/engineering/deployments-and-releases/#release-managers) と調整します。
 1. **[Release Environments のパイプライン障害を調査または修正する](https://gitlab.com/gitlab-com/gl-infra/release-environments/-/pipelines?page=1&scope=all&source=pipeline&ref=main&status=failed)**。必要に応じて修正について [Release Managers](/handbook/engineering/deployments-and-releases/#release-managers) と調整します。
-1. **他の開発作業より先に `master` で失敗しているテストを修正する**: [`master` で失敗しているテストは、新機能などの他の開発作業よりも最優先で扱われます](/handbook/engineering/workflow/#broken-master)。パイプライントリアージ DRI にとっては、[トリアージとレポート](#report-the-failure) がテストの修正より優先されることに注意してください。
+1. **他の開発作業より先に `master` で失敗しているテストを修正する**: [`master` で失敗しているテストは、新機能などの他の開発作業よりも最優先で扱われます](/handbook/engineering/workflow/#broken-master)。パイプライン障害をトリアージするときは、[トリアージとレポート](#report-the-failure) がテストの修正より優先されることに注意してください。
 1. **[Release Environments のパイプライン障害を調査または修正する](https://gitlab.com/gitlab-com/gl-infra/release-environments/-/pipelines?page=1&scope=all&source=pipeline&ref=main&status=failed)**。必要に応じて修正について [Release Managers](/handbook/engineering/deployments-and-releases/#release-managers) と調整します。
 1. **テスト障害の調査、レポート、解決については [パイプライントリアージガイドライン](#how-to-triage-a-qa-test-pipeline-failure) に従う**
 1. **フレーキーなテストは安定が証明されるまでクォランティンする**: フレーキーなテストはテストがないのと同じくらい悪く、場合によってはテストの修正や書き直しに要する労力のためにそれより悪いことさえあります。検出されしだい、CI を安定させるために直ちにクォランティンし、可能な限り早く修正し、修正されるまで監視します。
@@ -37,6 +37,18 @@ NOTE:
 1. **バグによる障害**: 1 つまたは複数のテスト障害がバグの結果である場合、バグ Issue を作成し、できるだけ多くの詳細（例: Issue の Bug テンプレートの使用、再現手順、関連するスクリーンショットなど）を提供します。**すべて** の関連するテスト障害 Issue をバグ Issue にリンクします。修正がタイムリーにスケジュールされるよう、`~"type::bug"`、severity、priority、product group、feature category などのラベルを適用します。
   テスト障害 Issue は追跡と調査の目的に使用されるため、`~"type::bug"` ラベルを付けるべきではありません。テスト障害がバグの結果である場合は、代わりに `~"failure::bug"` ラベルを適用します。
 1. **誰でもテストを修正でき、責任は最後にそれに取り組んだ人にある**: 誰でも失敗している／フレーキーなテストを修正できますが、クォランティンされたテストが無視されないようにするため、最後にそのテストに取り組んだエンジニアが、それを [クォランティン](https://gitlab.com/gitlab-org/gitlab/blob/master/qa/README.md#quarantined-tests) から外す責任を負います。
+
+## 優先順位と対応の期待事項 {#prioritization-and-response-expectations}
+
+これらの期待事項は、パイプライン障害をトリアージする人、通常は所有チーム（`feature_category`/`product_group` ごと）に適用されます。
+
+- **ライブ環境パイプラインを優先する**: [Production](https://ops.gitlab.net/gitlab-org/quality/production/pipelines)、[Canary](https://ops.gitlab.net/gitlab-org/quality/canary/pipelines)、[Staging](https://ops.gitlab.net/gitlab-org/quality/staging/pipelines) パイプラインでの E2E 障害の報告と分析は、[GitLab `master`](https://gitlab.com/gitlab-org/gitlab/pipelines) および [GitLab FOSS `master`](https://gitlab.com/gitlab-org/gitlab-foss/pipelines)、そしてテストの修正よりも優先されます。
+- **リリース週中**: リリース週の月曜日から木曜日まで、リリース候補テストでは [Preprod](https://ops.gitlab.net/gitlab-org/quality/preprod/-/pipelines) パイプラインが Production および Staging と同等の優先度を持ちます。
+- **ライブ環境の障害を緊急として扱う**: 特に反証されない限り、それらのパイプラインで報告された障害は `~priority::1`/`~severity::1` として扱い、できるだけ早く、理想的には報告から 2 時間以内に調査します。時間に制約がある場合は、アプリケーション問題かインフラストラクチャ問題かを判断できる最小限のトリアージを行い、[必要に応じてエスカレーションします](/handbook/engineering/workflow/development-processes/infra-dev-escalation/process/)。
+- **必要に応じてリリースをブロックする**: スモーク spec で新しい `~severity::1` のリグレッションが見つかった場合は、[インシデントを作成してリリースをブロックする](/handbook/engineering/deployments-and-releases/deployments/#i-found-a-regression-what-do-i-do-next)ことを検討してください。
+- **その他の障害**: [すべてのパイプライン](/handbook/engineering/testing/end-to-end-pipeline-monitoring/)を参照し、適時に、理想的には報告から 24 時間以内に調査してください。
+- **すべてのリリースブランチに修正またはクォランティンを適用する**: リリース遅延を防ぐためです。
+- **より広範な支援が必要ですか？** 重大で横断的な問題では、Developer Experience の [`#s_developer_experience`](https://gitlab.enterprise.slack.com/archives/C07TWBRER7H) にエスカレーションしてください。[`gitlab-org/gitlab`](https://gitlab.com/gitlab-org/gitlab/-/settings/ci_cd) で CI/CD 変数の変更が必要でアクセス権がない場合は、`#dx_maintainers` および `#development` Slack チャンネルで依頼してください。
 
 ## トリアージフロー
 
@@ -185,7 +197,7 @@ flowchart TB
 
 1. [QA failure](https://gitlab.com/gitlab-org/gitlab/issues/new?issuable_template=QA%20Failure) テンプレートを使用して、テストまたはシステムの障害（後者はジョブのリトライで解決しない場合）に対する Issue を [https://gitlab.com/gitlab-org/gitlab/issues](https://gitlab.com/gitlab-org/gitlab/issues) に作成します。CustomersDot のテストの障害については、[CustomersDot](https://gitlab.com/gitlab-org/customers-gitlab-com/-/issues) プロジェクトに Issue をオープンします。
     - 調査が完了して [Issue タイプ](/handbook/product/groups/product-analysis/engineering/metrics/#work-type-classification) が決定するまで、Issue に `~"type::ignore"` ラベルを適用します。
-    - カウンターパートの SET に障害について知らせます。
+    - 所有チーム（`feature_category`/`product_group` ごと）に障害について知らせます。
     - システム障害については、[Omnibus GitLab](https://gitlab.com/gitlab-org/omnibus-gitlab/issues)、[GitLab QA](https://gitlab.com/gitlab-org/gitlab-qa/issues)、[GitLab Runner](https://gitlab.com/gitlab-org/gitlab-runner/issues) などの別のプロジェクトに Issue をオープンするのが理にかなっている場合があります。
     - ステージング環境関連の障害については、[`#infrastructure_platforms`](https://gitlab.enterprise.slack.com/archives/C02D1HQRTKQ) で質問を投稿するか、[infrastructure プロジェクト](https://gitlab.com/gitlab-com/gl-infra/infrastructure) に Issue をオープンできます。
     - Issue をどこに登録すればよいか不明な場合は、[`#s_developer_experience`](https://gitlab.slack.com/archives/C3JJET4Q6) で助けを求めてください。
@@ -357,7 +369,7 @@ cc する適切なチームメンバーを見つけるには、[組織図](https
 問題の種類に基づいて従う手順:
 
 1. **デバッグが困難な失敗テスト**
-    - [#g_developer_experience Slack チャンネル](https://gitlab.enterprise.slack.com/archives/C07TWBRER7H) でサポートを求めます
+    - 最後の手段として、[#s_developer_experience Slack チャンネル](https://gitlab.enterprise.slack.com/archives/C07TWBRER7H) で Developer Experience にサポートを求めます
     - リリースマネージャーに問題について通知します（[リリースマネージャーへの通知方法](#ways-to-notify-release-managers) を参照）
 
 2. **テストを失敗させている環境障害**

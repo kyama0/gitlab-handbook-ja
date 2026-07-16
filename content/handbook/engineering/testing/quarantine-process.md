@@ -2,11 +2,11 @@
 title: テスト検疫プロセス
 description: GitLab のテスト検疫プロセスの完全ガイド
 upstream_path: /handbook/engineering/testing/quarantine-process/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-29T10:00:00Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-15T21:34:06Z"
+translator: codex
 stale: false
-lastmod: "2026-04-21T08:34:43+02:00"
+lastmod: "2026-07-15T17:51:54+00:00"
 ---
 
 このページでは、フレーキーおよび壊れたテストを管理するための GitLab の検疫プロセスについて説明します。技術的な実装の構文（RSpec と Jest）については、[テストの検疫（開発者ドキュメント）](https://docs.gitlab.com/development/testing_guide/quarantining_tests/)を参照してください。フレーキーテストのデバッグについては、[不健全なテスト（開発者ドキュメント）](https://docs.gitlab.com/development/testing_guide/unhealthy_tests/)を参照してください。
@@ -42,7 +42,7 @@ lastmod: "2026-04-21T08:34:43+02:00"
 
 **アクションが取られなかった場合：**
 
-- マージリクエストは緊急度タイムラインが終了した後にパイプライン DRI によって承認されます。
+- マージリクエストは緊急度タイムラインが終了した後に、所有チーム（`feature_category` ごと）によって承認されます。
 - テストは長期検疫に入ります。
 - 3 ヶ月の削除カウントダウンが始まります。
 
@@ -64,7 +64,7 @@ lastmod: "2026-04-21T08:34:43+02:00"
 
 ### 手動特定
 
-パイプライン DRI または他のチームメンバーが繰り返しの失敗を特定し、[Test Failure Issues](https://gitlab.com/gitlab-org/quality/test-failure-issues/-/issues) プロジェクトの関連 Issue を使用してテストを手動で検疫します。
+所有チーム（`feature_category` ごと）または他のチームメンバーが繰り返しの失敗を特定し、[Test Failure Issues](https://gitlab.com/gitlab-org/quality/test-failure-issues/-/issues) プロジェクトの関連 Issue を使用してテストを手動で検疫します。
 
 ## 前提条件
 
@@ -160,7 +160,7 @@ Issue には以下が含まれていなければなりません：
 
 長期検疫を使用するには、適切なメタデータを含む検疫マージリクエストを作成してください。技術的な実装の詳細（RSpec 構文、Jest 構文、メタデータタイプ）については、[テストの検疫（開発者ドキュメント）](https://docs.gitlab.com/development/testing_guide/quarantining_tests/)を参照してください。
 
-長期検疫の最大期間は 3 ヶ月（3 マイルストーンまたはリリース）です。所有者または Engineering Manager は、検疫通知システムによってテストが削除されることを通知されます。検疫クリーンアップシステムは、パイプライン DRI が 1 週間以内に対応するための削除マージリクエストを作成します。
+長期検疫の最大期間は 3 ヶ月（3 マイルストーンまたはリリース）です。所有者または Engineering Manager は、検疫通知システムによってテストが削除されることを通知されます。検疫クリーンアップシステムは、所有チーム（Engineering Manager またはコードオーナー）が 1 週間以内に対応するための削除マージリクエストを作成します。
 
 ## テストの検疫解除
 
@@ -204,14 +204,13 @@ Issue には以下が含まれていなければなりません：
 テストが 3 回以上検疫された場合：
 
 - テストは恒久的な削除の候補です。
-- `#g_test_governance` で Test Governance チームと議論する。
-- 代替テストアプローチを検討する。
+- 所有チームが次の進め方を決定し、代替テストアプローチを検討します。ガイダンスについては、`#s_developer_experience` で Developer Experience に連絡してください。
 
 ## オーナーシップと説明責任
 
 ### 検疫されたテストを誰が所有するか
 
-オーナーシップは `feature_category` によって決定されます。各フィーチャーカテゴリは特定のエンジニアリンググループにマッピングされており、そのグループはフィーチャーカテゴリを持つすべてのテストに対して責任を持ちます。
+オーナーシップは `feature_category` によって決定されます。各機能カテゴリは特定のエンジニアリンググループにマッピングされており、そのグループは機能カテゴリを持つすべてのテストに対して責任を持ちます。
 
 ### オーナーシップの責任
 
@@ -227,7 +226,6 @@ Issue には以下が含まれていなければなりません：
 
 - テストは 3 ヶ月後に自動的に削除されます。
 - チームのテスト健全性メトリクスが影響を受ける可能性があります。
-- 繰り返しの問題は Test Governance の介入が必要になる場合があります。
 
 ## 自動クリーンアッププロセス
 
@@ -249,7 +247,7 @@ Issue には以下が含まれていなければなりません：
 
 - 関連する Engineering Manager またはコードオーナーに割り当てられる。
 - メンションでタグ付けされる。
-- **パイプライン DRI による手動承認が必要**（半自動プロセス、完全自動ではない）。
+- **所有チームによる手動承認が必要**（Engineering Manager またはコードオーナー。半自動プロセスであり、完全自動ではありません）。
 - 解決または延長を正当化する最後の機会を提供する。
 
 ## 検疫レポート
@@ -258,7 +256,7 @@ Issue には以下が含まれていなければなりません：
 
 - **週次サマリー**：現在の検疫ステータスとテスト解決の奨励を含む、エンジニアリングチームへの週次サマリーが送られる。
 - **月次ロールアップ**：テスト健全性メトリクスに関する上級管理職への月次ロールアップが提供される。
-- **チームダッシュボード**：フィーチャーカテゴリ別にチームの検疫されたテストを追跡するために利用可能。
+- **チームダッシュボード**：機能カテゴリ別にチームの検疫されたテストを追跡するために利用可能。
 
 これらのレポートは、検疫がバックログではなく一時的な状態であることを確保するのに役立ちます。
 
@@ -301,8 +299,7 @@ Issue には以下が含まれていなければなりません：
 
 ## ヘルプを得る
 
-- **プロセスの質問**：`#g_test_governance` - [Test Governance グループ](../infrastructure-platforms/developer-experience/test-governance)
-- **一般的な質問**：`#s_developer_experience` - [Developer Experience ステージ](../infrastructure-platforms/developer-experience)
+- **プロセスとガイダンスに関する質問**：`#s_developer_experience` - [Developer Experience ステージ](../infrastructure-platforms/developer-experience)
 - **技術的なヘルプ**：`#development` - 一般的な開発ヘルプ
 - **緊急の問題**：`#master-broken` - 即座のパイプラインの問題
-- **テストオーナーシップの質問**：フィーチャーカテゴリのマッピングを確認し、関連チームチャンネルで質問するか、`#g_test_governance` にエスカレーションする
+- **テストオーナーシップの質問**：機能カテゴリのマッピングを確認し、関連チームチャンネルで質問してください。ガイダンスについては、`#s_developer_experience` で連絡してください。

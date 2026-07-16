@@ -2,11 +2,11 @@
 title: AI ツール選択
 description: 業務に最適な AI ツールを選択するためのガイドライン
 upstream_path: /handbook/support/ai/ai-tool-selection/
-upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
-translated_at: "2026-06-01T21:50:58Z"
-translator: claude
+upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
+translated_at: "2026-07-16T07:21:18+09:00"
+translator: codex
 stale: false
-lastmod: "2026-06-01T17:35:18+01:00"
+lastmod: "2026-07-14T15:22:25-05:00"
 ---
 
 GitLab サポートは、さまざまな機能と専門性を持つ複数の AI ツールへのアクセスを提供しています。このガイドは、特定のタスク要件に基づいて適切なツールを選択するのに役立ちます。
@@ -20,7 +20,7 @@ GitLab サポートは、さまざまな機能と専門性を持つ複数の AI 
 |------|----------|---------------|---------------|-----------------|
 | [GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/) | GitLab 固有の質問、コード分析 | ✅ 安全 | プロダクトナレッジ | ✅ 承認済み (RED) |
 | [GitLab Duo Agentic Chat](https://docs.gitlab.com/user/gitlab_duo_chat/agentic_chat/) | 複雑なリサーチ、多段階の分析 | ✅ 安全 | エコシステム全体へのアクセス | ✅ 承認済み (RED) |
-| [Glean](../../security/customer-support-operations/zendesk/apps/global/#glean) | Zendesk チケットサマリー、KB 記事、エンタープライズ検索 | ✅ 安全 | プロダクトナレッジ (Duo Chat 経由) | ✅ 承認済み (ORANGE) |
+| [Glean](../../eta/css/zendesk/apps/global/#glean) | Zendesk チケットサマリー、KB 記事、エンタープライズ検索 | ✅ 安全 | プロダクトナレッジ (Duo Chat 経由) | ✅ 承認済み (ORANGE) |
 | [Anthropic Claude (Web)](#anthropic-claude-web) | 下書き作成、サマリー、リサーチ、推論 |  ⚠️ サニタイズ必要 | なし | ✅ 承認済み (ORANGE) |
 | [Slack AI](#slack-ai) | Slack 内でのサマリーと下書き作成 |  ⚠️ サニタイズ必要 | なし | ✅ 承認済み (ORANGE) |
 | [Gemini Chat (Workspace)](#gemini-chat-workspace) | Google Workspace 内でのライティング、リサーチ、Q&A |  ⚠️ サニタイズ必要 | なし | ✅ 承認済み (ORANGE) |
