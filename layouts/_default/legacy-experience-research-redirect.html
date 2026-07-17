@@ -1,0 +1,14 @@
+{{- $target := replace .RelPermalink "/handbook/product/ux/experience-research/" "/handbook/upstream-studios/experience-research/" -}}
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="refresh" content="0; url={{ $target }}">
+    <link rel="canonical" href="{{ $target }}">
+    <script>window.location.replace({{ $target | jsonify | safeJS }});</script>
+    <title>{{ .Title }} は移動しました</title>
+  </head>
+  <body>
+    <p><a href="{{ $target }}">{{ .Title }} は移動しました。新しいページへ移動します。</a></p>
+  </body>
+</html>

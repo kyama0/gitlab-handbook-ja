@@ -9,7 +9,7 @@ translator: codex
 stale: false
 ---
 
-## サービスデザインとは
+## サービスデザインとは {#what-is-service-design}
 
 [サービスデザイン](https://www.nngroup.com/articles/service-design-101/)は、タッチポイント、チーム、システムをまたいで**エンドツーエンドの体験**を形作る実践です。次の点を考慮することで、**ビジネス戦略、ユーザーニーズ、**および**デリバリーチーム**の橋渡しをします:
 
@@ -23,11 +23,11 @@ stale: false
 |  フロントステージ     |  カンファレンス      | gitlab.com | 社内外のミーティング | 更新ミーティング、gitlab.com |
 |  バックステージ      |   DevRel     | Product | Sales | Customer Success |
 
-### Service Designer が協働する相手
+### Service Designer が協働する相手 {#who-service-designers-work-with}
 
 サービスデザインは、Product Design、Product Management、Engineering Management、UX Research と並走し、インサイトとソリューションをジャーニー全体の包括的な視点へつなぐアクセラレーターとして機能します。戦略、デザイン、実行を整合させることで、各領域のインパクトを高め、GitLab が一貫したエンドツーエンドの体験を提供するのを支援します。
 
-### サービスデザインに期待できること
+### サービスデザインに期待できること {#what-to-expect-from-service-design}
 
 サービスデザインは、特に次のようなチームを遅らせる調整と整合の課題を解決するのに役立ちます:
 
@@ -40,7 +40,7 @@ stale: false
 - リサーチインサイトが、**チームをまたぐ戦略**に情報を与える必要がある。
   - サービスデザインは、断片化した知識を、優先順位付けの指針となるブループリント、体験ビジョン、将来のユースケースなどの戦略的アーティファクトに統合します。
 
-### 方法と成果物
+### 方法と成果物 {#methods-and-deliverables}
 
 **サービスデザインの方法**
 
@@ -62,11 +62,11 @@ stale: false
 - [体験ビジョン](https://www.thoughtworks.com/insights/blog/experience-design/experience-visions)
 - リサーチの統合（例: インサイトレポート、機会マップ、テーマ別サマリー）
 
-## GitLab におけるアプローチ
+## GitLab におけるアプローチ {#our-approach-at-gitlab}
 
 サービスデザインは、リサーチがサービスデザインに不可欠であり、機能横断の体験とインサイトへのアクセスが、この実践としてのサービスデザインの成功を左右するため、GitLab では Experience Research の一部です。同じ機能内にあることで、サービスデザインは継続中のリサーチに直接アクセスでき、そのインサイトをチーム間の調整を行うシステムレベルのアーティファクトへ迅速に統合できます。これにより、実際のユーザーインサイトではなく仮定に基づいて整合のアーティファクトを作るというよくある誤りを防ぎます。
 
-### 現在の注力領域
+### 現在の注力領域 {#current-focus-areas}
 
 GitLab でサービスデザインを UX の専門領域として確立するにあたり、私たちは、共通の視点を築くために考え方を広め、機能横断で協働して実践を確立し、すぐに価値を加えるために [Growth Section](/handbook/product/categories/#growth-section)へ深く取り組むことに注力します。
 
@@ -78,11 +78,11 @@ GitLab でサービスデザインを UX の専門領域として確立するに
 
 ---
 
-## サービスデザインがチームを支援する方法
+## サービスデザインがチームを支援する方法 {#how-service-design-can-enable-your-team}
 
 ユーザーに提供している価値が他のチームに依存している場合、ステークホルダー間で整合が取れていない場合、または構築前にエンドツーエンドで機能する戦略を検証する必要がある場合に、サービスデザインが役立ちます。
 
-### 🔎 コミットする前に明確にする
+### 🔎 コミットする前に明確にする {#clarify-before-you-commit}
 
 作業の優先順位を付けているものの、それが他のチームが構築しているものにどう適合するか、または本当の問題を解決するか確信が持てない場合、サービスデザインは次の方法で支援できます:
 
@@ -96,7 +96,7 @@ GitLab でサービスデザインを UX の専門領域として確立するに
 - **Product Designer:** 自分の機能がより広いユーザージャーニーにどう適合するかを把握し、デザイン上の注意が必要な引き継ぎを特定する
 - **Engineering Manager:** スプリントを計画する前に、システムとチームをまたぐ依存関係を理解する
 
-### 💬 優先事項についてチームを整合させる
+### 💬 優先事項についてチームを整合させる {#align-teams-on-priorities}
 
 チーム、同僚、ステークホルダーの間で必要なことに対する理解が異なり、手戻りや見落とした依存関係のリスクが見えている場合、サービスデザインは次の方法で支援できます:
 
@@ -110,7 +110,7 @@ GitLab でサービスデザインを UX の専門領域として確立するに
 - **Product Designer:** デザイン意図を伝え、ステークホルダーの賛同を得るアーティファクトを共同作成する
 - **Engineering Manager:** 技術的依存関係を早期に明らかにし、アーキテクチャとリソーシングを適切に計画する。
 
-### ✨ 戦略的な意思決定のリスクを減らす
+### ✨ 戦略的な意思決定のリスクを減らす {#derisk-strategic-decisions}
 
 大きな賭け（新しいプロダクト領域、AI 機能、プラットフォームの転換）を行う一方で、体験全体が機能するか、正しいユーザーを対象にしているか確信が持てない場合、サービスデザインは次の方法で支援できます:
 
@@ -126,9 +126,9 @@ GitLab でサービスデザインを UX の専門領域として確立するに
 
 ---
 
-## サービスデザインを日常業務に取り入れる方法
+## サービスデザインを日常業務に取り入れる方法 {#how-to-bring-service-design-into-your-day-to-day-work}
 
-### 自身のロールでサービスデザインの帽子をかぶる
+### 自身のロールでサービスデザインの帽子をかぶる {#wearing-the-service-design-hat-in-your-role}
 
 Service Designer でなくても、サービスデザインの考え方を適用できます。実践できることをいくつか示します:
 
@@ -144,7 +144,7 @@ Product Designer は、次についてよく考えてください:
 - この体験を実現するために、バックエンド / オフラインでは何が必要ですか?
 - 私たちは望む体験のためにデザインしていますか? それとも、現在の制約のためにデザインしていますか?
 
-### GitLab でサービスデザインと協働する
+### GitLab でサービスデザインと協働する {#working-with-service-design-at-gitlab}
 
 サービスデザインの作業は、戦略的優先事項に基づいて、UX Research Manager が Service Designer と協力して優先順位を付けます。また、週 2 ～ 4 時間を通じた継続的な支援も提供したいと考えています:
 
@@ -153,7 +153,7 @@ Product Designer は、次についてよく考えてください:
 
 ---
 
-## リソース
+## リソース {#resources}
 
 GitLab におけるサービスデザインを紹介する[導入用スライドデッキ](https://docs.google.com/presentation/d/1MghK2kBCqmMRKR4fW32fKyQ3zmwh1xBTopRX2J81M3U/edit?usp=sharing)と、[UX Forum の動画](https://www.youtube.com/watch?v=vkZQOZX6l64)があります。さらに役立つ外部リソース:
 
@@ -162,7 +162,7 @@ GitLab におけるサービスデザインを紹介する[導入用スライド
 - [Service Design Show podcast](https://www.youtube.com/c/Servicedesignshow)
 - [2 つのコーヒーショップの物語の動画](https://youtu.be/HNOY8GLVy_8?feature=shared)
 
-## このページへのフィードバック
+## このページへのフィードバック {#provide-feedback-on-this-page}
 
 提案やアイデアを共有するには、[フィードバック Issue](https://gitlab.com/gitlab-org/ux-research/-/issues/3643)にコメントを残してください。ぜひお聞かせください!
 

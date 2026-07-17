@@ -9,7 +9,7 @@ translator: codex
 stale: false
 ---
 
-## GitLab におけるユーザビリティ
+## GitLab におけるユーザビリティ {#usability-at-gitlab}
 
 「ユーザビリティ」という用語はさまざまなことを意味します。GitLab では、ユーザーリサーチを実施しプロダクトをデザインするとき、ユーザビリティを次のように定義します。
 
@@ -23,13 +23,13 @@ stale: false
 
 *注: この定義は、[Handbook of Usability Testing](https://www.amazon.com/Handbook-Usability-Testing-Conduct-Effective/dp/0470185481)および [International Usability and UX Qualification Board curriculum](https://uxqb.org/en/documents/cpux-f-en-curriculum/)の情報に基づいています。*
 
-## ユーザビリティテスト
+## ユーザビリティテスト {#usability-testing}
 
 ユーザビリティテストは、代表的なユーザーとともにプロダクト体験を評価するプロセスです。目的は、ユーザーが一連のタスクをどのように完了するかを観察し、遭遇する問題を理解することです。ユーザーはしばしば予想とは異なる方法でタスクを実行するため、この定性的手法は、ユーザーの動機やニーズを理解することを含め、ユーザーがそのようにタスクを実行する理由を明らかにするのに役立ちます。GitLab では、ユーザビリティテストは[ソリューション検証](/handbook/upstream-studios/experience-research/solution-validation-and-methods/)の一部です。
 
 GitLab では、定期的に[ユーザビリティベンチマーク](/handbook/upstream-studios/experience-research/usability-benchmarking/)調査も実施します。これらもユーザビリティに焦点を当て、GitLab 全体の特定のタスクとワークフローについて、パフォーマンスと UX のベンチマークを設定するために使用します。そのため、通常のユーザビリティテストよりもはるかに厳密で時間がかかります。
 
-### さまざまな種類のユーザビリティテスト
+### さまざまな種類のユーザビリティテスト {#different-types-of-usability-testing}
 
 一般的に、次のように区別できます。
 
@@ -49,7 +49,7 @@ GitLab では、定期的に[ユーザビリティベンチマーク](/handbook/
 
 総括的ユーザビリティテストは、範囲がより大きい傾向があり、実際のプロダクトで実施します。ユーザーが特定の問題を経験する理由の詳細が不足している場合や、まずどれほど使いやすいかを検証したい場合に有用です。
 
-### ユーザビリティテストを実施する手順
+### ユーザビリティテストを実施する手順 {#steps-for-conducting-a-usability-test}
 
 1. [リサーチ質問を設定します](/handbook/upstream-studios/experience-research/defining-goals-objectives-and-hypotheses/#step-1---start-thinking-of-a-problem)。
 1. ユーザビリティテストで焦点を当てるタスクを特定します。
@@ -76,11 +76,11 @@ GitLab では、定期的に[ユーザビリティベンチマーク](/handbook/
 1. 次のステップを決定します。
     - [実行可能な洞察](/handbook/upstream-studios/experience-research/research-insights/#actionable-insights)にはフォローアップが必要です。特定されたユーザビリティ上の問題の優先順位を決めるために、対応するメンバーと協力してください。提案したソリューションを検証するために、別のユーザビリティ調査を実施することを忘れないでください。
 
-### 測定するユーザビリティ要因
+### 測定するユーザビリティ要因 {#usability-factors-to-measure}
 
 これらの要因についてさらに学ぶには、[私たちのユーザビリティの定義](#usability-at-gitlab)を参照してください。
 
-#### 有効性
+#### 有効性 {#effectiveness}
 
 - 何を測定しますか？
   - 有効性は、合格率を計算することで判定できます。これは各タスクの成功率または完了率を示します。
@@ -90,7 +90,7 @@ GitLab では、定期的に[ユーザビリティベンチマーク](/handbook/
 - なぜ測定しますか？
   - 私たちはユーザーが目標を達成できることを望んでいます。ユーザーが失敗する理由と場所を理解すると、体験の改善に役立ちます。
 
-#### 効率性
+#### 効率性 {#efficiency}
 
 - 何を測定しますか？
   - 効率性は、タスクの容易さについての参加者の認識を理解することで測定できます。
@@ -101,7 +101,7 @@ GitLab では、定期的に[ユーザビリティベンチマーク](/handbook/
 - なぜ測定しますか？
   - 特に評価が低い場合は、参加者が評価を付けた理由を理解することが重要です。参加者数も少ないユーザビリティテストでは、これは特に重要です。
 
-#### 満足度
+#### 満足度 {#satisfaction}
 
 - 何を測定しますか？
   - 満足度は、体験についての参加者の認識を理解することで判定できます。
@@ -112,7 +112,7 @@ GitLab では、定期的に[ユーザビリティベンチマーク](/handbook/
 - なぜ測定しますか？
   - 参加者が評価を付けた理由を理解することが重要です。参加者数も少ないユーザビリティテストでは、これは特に重要です。
 
-#### 有用性
+#### 有用性 {#usefulness}
 
 - 何を測定しますか？
   - 有用性は、テストした機能によって参加者が目標をどの程度達成できるようになるかについての認識を理解することで判定できます。
@@ -124,7 +124,7 @@ GitLab では、定期的に[ユーザビリティベンチマーク](/handbook/
   - このスコアは、通常の[パフォーマンス指標](/handbook/product/ux/performance-indicators/#system-usability-scale-sus-score)の 1 つである [System Usability Scale](/handbook/product/ux/performance-indicators/system-usability-scale/) (SUS) スコアと高く相関します。
   - 特に評価が低い場合は、参加者が評価を付けた理由を理解することが重要です。参加者数も少ないユーザビリティテストでは、これは特に重要です。
 
-## よくある質問
+## よくある質問 {#frequently-asked-questions}
 
 **ユーザーテストで、参加者がタスクを正常に完了したかを尋ねるべきではないのはなぜですか？**
 

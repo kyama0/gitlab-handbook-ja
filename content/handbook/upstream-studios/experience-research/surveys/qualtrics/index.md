@@ -9,7 +9,7 @@ translator: codex
 stale: false
 ---
 
-## アンケートの作成
+## アンケートの作成 {#creating-a-survey}
 
 1. `Blank survey project` を選択します。
 1. プロジェクトに名前を付けます。
@@ -30,7 +30,7 @@ stale: false
 1. アンケートの作成が完了したら、`Preview` して、すべてが期待どおりに機能することを確認します。
 1. アンケートを開始する準備ができたら、`Publish` をクリックします。
 
-## スタイル設定（Look & Feel の設定）
+## スタイル設定（Look & Feel の設定） {#styling-look--feel-settings}
 
 アンケートには次の設定を適用してください。
 
@@ -62,7 +62,7 @@ stale: false
     - 前景のコントラスト: 中
     - 質問コンテナ: オフ
 
-## ソーシャルメディアからのスパム回答の回避
+## ソーシャルメディアからのスパム回答の回避 {#avoiding-spam-responses-from-social-media}
 
 ソーシャルメディアでアンケートを配布することは、オーディエンスを迅速に拡大し、リサーチの時間とコストを削減する優れた方法です。ただし、**ソーシャルメディアで共有したアンケートは、短時間に何十件、何百件もの回答を送信するボットや偽の参加者の標的になることがよくあります**。これは[データの完全性に影響します](https://europepmc.org/article/MED/25846043)。**これは特に報酬付きのアンケートに影響します。**
 
@@ -70,7 +70,7 @@ stale: false
 
 *これらの回答の大半*を防止または除外するためにできる[複数の方法](/handbook/upstream-studios/experience-research/surveys/how-to-identify-low-quality-data-when-designing-and-reviewing-your-survey/)があります。「これらの回答の大半」と言うのは、アンケートのスパムを真に回避する唯一の方法は、ソーシャルメディアで共有せず、[1 回しか使用できない個別リンクを含むメールのアンケート招待を送信する](https://www.qualtrics.com/support/survey-platform/distributions-module/email-distribution/emails-overview/#UnderstandingTheIndividualLink)ことだからです。そのためには、[Marketo または Data Warehouse](/handbook/upstream-studios/research-operations/recruitment-methods)などのリソースを活用して、登録済みの GitLab ユーザーの対象セットに連絡します。
 
-### アンケートを共有する前にスパム回答を防止する
+### アンケートを共有する前にスパム回答を防止する {#prevent-spam-responses-before-sharing-the-survey}
 
 アンケートを共有する前に、ボットや偽の参加者を防ぐため、次のアプローチを使用してください。Qualtrics の[captcha 質問](https://www.qualtrics.com/support/survey-platform/survey-module/editing-questions/question-types-guide/advanced/captcha-verification/)と[不正検出機能](https://www.qualtrics.com/support/survey-platform/survey-module/survey-checker/fraud-detection/)は役立ちますが、より高度なボットを防ぐには不十分であることに注意してください。
 
@@ -95,7 +95,7 @@ stale: false
 
 さらに、アンケートが複数のソーシャルメディアチャネルで共有される場合は、[クエリ文字列を通じて情報を渡す](https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/passing-information-through-query-strings/#PassingInformationIntoASurvey)ことで、参加者がどのソースからアンケートにアクセスしているかを追跡できます。これは、あるソースのスパムが他より多いように見える場合に回答を除外する助けになります。
 
-### アンケートを閉じた後にスパム回答を除外する
+### アンケートを閉じた後にスパム回答を除外する {#filter-out-spam-responses-after-closing-the-survey}
 
 アンケートを閉じた後は、防止策によってスパム回答がどの程度緩和されたか、またどの回答をまだ除外する必要があるかを確認する時です。[Response Quality](https://www.qualtrics.com/support/survey-platform/data-and-analysis-module/data/response-quality-functionality/)機能は、[多数の基準](https://www.qualtrics.com/support/survey-platform/survey-module/survey-checker/response-quality/)に基づいて、回答を自動的にフラグ付けします。
 
@@ -104,7 +104,7 @@ stale: false
 - アンケートを完了するのが早すぎる回答者を確認します。Response Quality 機能は[「高速回答」の回答にフラグを付ける](https://www.qualtrics.com/support/survey-platform/survey-module/survey-checker/response-quality/#Speeders)ことを試みますが、少なくとも 100 件の回答があるアンケートでのみ機能します。
 - 該当する場合は、重複するメールアドレスを確認します。アンケートのスパムに頻繁に使用される `@aol.com`、`@yahoo.com`、`@hotmail.com` のメールアドレスにも注意してください。
 
-### 埋め込みデータ
+### 埋め込みデータ {#embedded-data}
 
 **注: これらの手順は UX Researchers と Research Coordinators にのみ適用されます。**
 
@@ -168,7 +168,7 @@ stale: false
 - 埋め込みデータフィールドは以前は大文字と小文字を区別していました。Qualtrics のユーザーの大半では、埋め込みデータで大文字と小文字を区別しなくなっており、「test」と「Test」は同じフィールドとして扱われます。ただし、この変更が行われていないアカウントも一部あるため、Qualtrics はベストプラクティスとして大文字と小文字を一致させるよう引き続き助言しています。
 - すべての Embedded Data Value が GitLab First Look の作成時点で作成されたわけではありません。そのため、すべてのユーザーについて完全な値があるとは限りません。ユーザーの値の一部は時間とともに変わる可能性があることにも注意してください。たとえば、誰かが転職すると、役職、組織、チームサイズに影響する場合があります。そのため、保持しているユーザー情報には不一致がある可能性があります。このリスクを減らすため、GitLab First Look のメンバーに対し、登録されている情報を確認し、必要に応じて更新するよう定期的に依頼する予定です。
 
-### サンプルサイズが予想より少ない場合の対応
+### サンプルサイズが予想より少ない場合の対応 {#what-to-do-if-your-sample-size-is-lower-than-expected}
 
 **注: これらの手順は UX Researchers と Research Coordinators にのみ適用されます。**
 
@@ -180,7 +180,7 @@ stale: false
 
 - 選択肢 2 と 3 については、サンプルに移動して `List options` をクリックし、`Edit sample` を選択してサンプリング基準を変更します。
 
-## GitLab.com ユーザーへのアンケート配布
+## GitLab.com ユーザーへのアンケート配布 {#distributing-your-survey-to-gitlabcom-users}
 
 **注: これらの手順は UX Researchers と Research Coordinators にのみ適用されます。**
 
@@ -200,7 +200,7 @@ stale: false
 
 上記の手順をすべて正しく実施しても、スプレッドシートを Qualtrics Request ドライブに追加してから 20 分以内に処理されない場合、Qualtrics Data Pipeline が壊れている可能性があります。これを修正するには、[GitLab Data Team プロジェクト](https://gitlab.com/gitlab-data/analytics/-/issues)で DE Triage テンプレートを使用して Issue を開いてください。チームが開いた[以前の Issue](https://gitlab.com/gitlab-data/analytics/-/issues/11443#note_817069161)の例を次に示します。
 
-### アンケート回答率を高めるヒント
+### アンケート回答率を高めるヒント {#tips-for-increasing-survey-response-rate}
 
 1. アンケートの質問数を最小限に抑え（[Hubspot](https://blog.hubspot.com/service/ideal-survey-length)は 10 問以下を推奨しています）、質問の種類を基本的なものにします（複数の自由記述質問やマトリクス形式の質問は避けます）。
 1. アンケートの目的と、完了までにかかる時間をメールで回答者に伝えます。
@@ -219,11 +219,11 @@ stale: false
 1. 中小企業またはエンタープライズの顧客に送るアンケートでは、回答率を高めるため、早朝（午前 10 時〜午後 12 時）または午後遅く（午後 3 時〜午後 6 時）の勤務時間に配信するようにします。
 1. アンケートは平日（月曜日〜金曜日）にのみ送信すべきです。アンケートは通常、月曜日に最も良い回答率を得ます。
 
-## トラッキングリンクの作成方法
+## トラッキングリンクの作成方法 {#how-to-create-a-tracked-link}
 
 複数の方法でアンケートを宣伝し、どの方法が最も優れた成果を上げるかを追跡したい場合があります（例: GitLab のソーシャル、UX チームのソーシャル、ブログ投稿、gitlab.com 内のバナー）。これは、[クエリ文字列を使用する](https://www.qualtrics.com/support/survey-platform/survey-module/survey-flow/standard-elements/passing-information-through-query-strings/)ことで行えます。
 
-## ディレクトリから連絡先を削除する方法
+## ディレクトリから連絡先を削除する方法 {#how-to-delete-a-contact-from-our-directory}
 
 UX Research Coordinators は、すべてのリストから連絡先を削除するリクエストを受けることがあります。各リストは独立しているため、あるリストから連絡先を削除しても、連絡先が登録している可能性がある他のリストから自動的に削除されるわけではないことに注意してください。
 

@@ -13,7 +13,7 @@ stale: false
 
 開始するには、Product ハンドブックに記載されている [初期ステップ](/handbook/product-development/how-we-work/product-development-flow/#validation-phase-2-problem-validation) に従ってください。
 
-### ユーザーインタビューの場合
+### ユーザーインタビューの場合 {#for-user-interviews}
 
 1. Product Manager が [ディスカッションガイド](/handbook/upstream-studios/experience-research/discussion-guide-user-interviews/) のドラフトを作成します。ガイドの初稿が完成したら、UX Researcher がレビューしてフィードバックを提供します。
 1. 並行して、UX Researcher は Qualtrics でスクリーニングサーベイの作成を開始します。
@@ -25,7 +25,7 @@ stale: false
 1. Product Manager と UX Researcher は協力してデータを統合し、Dovetail でトレンドを特定してインサイトを導き出します。
 1. UX Researcher は `Problem validation research` Issue を更新し、Dovetail の調査結果へのリンクを記載します。該当する場合は、Issue をクローズする前に `Problem validation research` Issue の `confidential` を解除します。
 
-### サーベイの場合
+### サーベイの場合 {#for-surveys}
 
 1. Product Manager がサーベイのドラフトを作成します。初稿が完成したら、UX Researcher がレビューしてフィードバックを提供します。
 1. UX Researcher が Qualtrics にサーベイを入力します。

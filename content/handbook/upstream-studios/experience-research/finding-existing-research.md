@@ -11,7 +11,7 @@ stale: false
 
 新しい UX Research を開始する前に、まず既に実施したリサーチでリサーチの質問に回答できるかを確認することをお勧めします。このステップには時間がかからず、質問の答えが見つかれば大幅な時間の節約につながる場合があります。
 
-## 既存のリサーチを見つける方法
+## 既存のリサーチを見つける方法 {#how-to-find-existing-research}
 
 - [GitLab Research Library](https://uxr-library.com/)は、リサーチ知識と調査結果の中心ハブです。
 - [Dovetail](https://dovetailapp.com/)は、GitLab チームメンバーが発見したすべてのユーザーインサイトの唯一の情報源（SSOT）です。

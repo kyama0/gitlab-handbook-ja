@@ -11,7 +11,7 @@ stale: false
 
 今後の問題検証およびソリューション検証のリサーチを周知するため、共有の [UX Research Google Calendar](https://calendar.google.com/calendar/b/2?cid=Z2l0bGFiLmNvbV9raWVxdjk2ajM1bXB0OGJka2Nicml1MnFiZ0Bncm91cC5jYWxlbmRhci5nb29nbGUuY29t)（リンクは GitLab のチームメンバーのみが利用できます）を使用します。UX Researcher、Product Designer、Product Manager は、このカレンダーにイベントを追加できます。これらの招待は GitLab のチームメンバーだけが閲覧できます。参加者には元の Calendly 招待が表示され、それを使用します。
 
-## *外部の*リサーチ参加者向けイベントの追加
+## *外部の*リサーチ参加者向けイベントの追加 {#adding-an-event-for-external-research-participants}
 
 1. UX Research カレンダーに新しいイベントを作成します。
 1. リサーチ内容と参加者の名を説明するタイトルを含めます。
@@ -22,7 +22,7 @@ stale: false
     - ディスカッションガイド、リサーチ Issue、Dovetail プロジェクトへのリンク
     - ![Google カレンダーの招待の例](/images/product/ux/ux-research/ux-research-google-calendar/Google_calendar_invite_small.png)
 
-## *内部の*リサーチ参加者向けイベントの追加
+## *内部の*リサーチ参加者向けイベントの追加 {#adding-an-event-for-internal-research-participants}
 
 1. 自分のカレンダーに会議招待を作成します。
 1. UX Research カレンダーを任意の出席者として追加します。

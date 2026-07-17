@@ -11,7 +11,7 @@ stale: false
 
 リサーチパネルは、リサーチ作業の一部として開発されるさまざまな手法と段階を通じて、参加に同意した同じグループを調査するリサーチを実施する際に、参加者をリクルーティングするためのよく使用される手段です。このページでは、パネルを作成・管理するセルフサービスプロセスを説明します。
 
-### リサーチパネルを使用するべきなのはいつですか？
+### リサーチパネルを使用するべきなのはいつですか？ {#when-should-i-use-a-research-panel}
 
 ニッチなトピックのリサーチのために参加者をリクルーティングするには、見つけるまでに多くの時間と労力がかかることがあります。パネルが必要かどうかを考える際には、頻度、専門領域、範囲、規模をすべて考慮します。ある Issue に焦点を当てた特定のニッチな基準の周囲に、長期にわたってより大きなグループが必要な場合（複数のリサーチ調査を含む）、パネルの使用を検討するタイミングです。たとえば、大規模なエンタープライズユーザー、または SAST ツールの使用経験があり、セキュリティツールやプラクティスの使用を伴うロールを持つ Ultimate ユーザーなどです。
 
@@ -46,13 +46,13 @@ stale: false
 - **毎月：**リサーチ作業または今後のリサーチセッションに関する最新情報を含める場合があります。
 - **終了時：**パネルが不要になったとき。
 
-### パネルを作成し、パネルを使用してリサーチを実施する方法は？
+### パネルを作成し、パネルを使用してリサーチを実施する方法は？ {#how-do-i-create-and-conduct-research-using-a-panel}
 
-#### パネルの DRI を定める
+#### パネルの DRI を定める {#establish-a-dri-for-the-panel}
 
 パネルを作成する前に、Panel DRI を定める必要があります。この担当者は、パネル作成の手順、参加者とのコミュニケーション、パネルの管理と追跡に責任を持ちます。
 
-#### パネルを作成する
+#### パネルを作成する {#creating-a-panel}
 
 パネルを作成するには、以下の手順に従ってください。質問がある場合は、支援のため UX Research Operations Coordinator に連絡してください。
 
@@ -74,7 +74,7 @@ stale: false
     - 担当者：Panel DRI
     - テンプレートについては、[参加者向けメールコミュニケーションの例](https://docs.google.com/document/d/1vEthOeiZl-yly-afd6eZrh5DIXL-DzH79BZBOKxzqlM/edit?usp=sharing)を参照してください。
 
-#### パネルを使用してリサーチを実施する
+#### パネルを使用してリサーチを実施する {#conducting-research-with-your-panel}
 
 パネルを確立した後、パネル参加者を活用するには次の手順に従います。
 
@@ -91,7 +91,7 @@ stale: false
 
 **パネルを使用する際は、パネリストの情報とエンゲージメントを継続的に管理・追跡する必要があります。[パネルの管理と追跡](/handbook/upstream-studios/experience-research/research-panel-management/#panel-management-and-tracking)セクションを参照してください。**
 
-### パネリストとコミュニケーションする際のガイドライン
+### パネリストとコミュニケーションする際のガイドライン {#guidelines-when-communicating-with-panelists}
 
 パネルの目標の 1 つは、参加者のエンゲージメントを維持し、過度なコミュニケーションによる疲弊で参加したくなくなることを避けることです。パネルとのコミュニケーションに関するガイドラインを以下に示します：
 
@@ -101,7 +101,7 @@ stale: false
 - 参加者が指定された連絡先に連絡した場合、平日であれば 24 時間以内に返信する必要があります（それ以外の場合は次の営業日で十分です）。応答性があり、一貫して関わることを最優先にしてください。
   - 指定された連絡先が PTO に入る場合、パネリストとのコミュニケーションを担当する人がいることを確認してください。
 
-### パネルの管理と追跡
+### パネルの管理と追跡 {#panel-management-and-tracking}
 
 リサーチ作業に含める参加者のアンケートを実施し、リストをまとめたら、コミュニケーション、参加、インセンティブに関連するすべてのパネリスト活動を追跡する必要があります。
 
@@ -147,7 +147,7 @@ stale: false
 
 **[Panel Tracking & Reimbursement Template](https://docs.google.com/spreadsheets/d/1uQO7BfvXCB-ysIRMivH5ReG8LB5nptGw0ma7E4Rz5gM/copy)を安全な場所に保管するには、シートを [UX Research Google Shared Drive の Research Panels フォルダー](https://drive.google.com/drive/folders/1jVYpf5YWEFTdSriKrYHP59rsiE8SbuGi?usp=sharing)に保存する必要があります。共有設定は、必要なアクセス権を持つチームメンバーに制限してください。**
 
-### Personally Identifiable Information（PII）の管理
+### Personally Identifiable Information（PII）の管理 {#managing-personally-identifiable-information-pii}
 
 パネルを管理する際、Personally Identifiable Information（PII）を保護する責任があります。通常は Research Operations が行いますが、チームが独自のパネルをセルフ作成する場合、参加者とそれに関連する PII を管理する責任があります。[ORANGE に分類される](/handbook/security/policies_and_standards/data-classification-standard/#orange)データのベストプラクティスをレビューし、[PII の概要](https://dataprivacymanager.net/what-is-personally-identifiable-information-pii/)をよく理解してください。
 
@@ -171,7 +171,7 @@ stale: false
   - **パネルからの削除：**参加者を削除し、他のアクティブなパネルとその他のコミュニケーションからも削除されるよう、Research Operations チームメンバーに連絡してください。
   - **個人データの確認：**登録しているリストを確認するため、[個人データリクエスト](/handbook/legal/privacy/gdpr/)を送信できます。このリクエストについては、Research Operations チームメンバーに支援を依頼してください。
 
-### GitLab で実際に使用されているパネルの例はありますか？
+### GitLab で実際に使用されているパネルの例はありますか？ {#what-is-an-example-of-a-panel-in-action-at-gitlab}
 
 Verify と Package が使用したパネルの[例はこちら](https://gitlab.com/gitlab-org/ux-research/-/issues/1894)です。チームはリクルーティング作業を迅速化するために、複数の調査で使用できるパネル向けの[共通スクリーナー](/handbook/upstream-studios/experience-research/recruiting-participants/common-screener/)をドラフトするためにこの Issue を作成しました。このシナリオでは、見つけにくいユーザープロファイルに向けたリソースをプールすることが目標でした。
 
@@ -182,7 +182,7 @@ Verify と Package が使用したパネルの[例はこちら](https://gitlab.c
 - 調査形式
 - プロダクトステージ
 
-### ヒントとコツ
+### ヒントとコツ {#tips-and-tricks}
 
 - **リクルーティングソースは組み合わせられます。**たとえば、パネルから一部の参加者を、他のソースから一部の参加者をリクルーティングし、パネルからのサンプル過多を避けることができます。同じ人を調査で年に 4 回を超えて使用しないでください。
 - **パネリストとの関係を築いてください。**複数回話す場合があるため、パネリストとのつながりを築けます。

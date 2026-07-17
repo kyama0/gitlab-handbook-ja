@@ -11,7 +11,7 @@ stale: false
 
 私たちは次のリサーチツールを使用します。
 
-## 使用するリサーチツールとアクセスの取得方法
+## 使用するリサーチツールとアクセスの取得方法 {#research-tools-we-use-and-how-to-get-access}
 
 - [RallyUXR](https://app.rallyuxr.com/gitlab/studies)- 主なリクルーティングおよびパネル管理ツール。外部参加者のリクルーティング（Respondent.io 経由）も提供します
 - [User Interviews](https://www.userinterviews.com/) - RallyUXR では不十分な場合の、モデレートあり / なしのセッション用の代替手段
@@ -23,7 +23,7 @@ stale: false
 
 UX 実務者は、入社時にロールの権限としてこれらのツールの一部にアクセスできます。**誰でも [Lumos](https://app.lumosidentity.com/app_store)を通じて新しいツールを閲覧し、アクセスをリクエストできます**。探しているツールがまだ Lumos にない場合は、[アクセスリクエストを作成](/handbook/security/corporate/end-user-services/access-requests/)できます。Optimal Workshop については、必要に応じて個別の月額パスを購入するため、代わりに調達 Issue（[例](https://gitlab.com/gitlab-com/Finance-Division/procurement-team/procurement/-/issues/1596)）を作成する必要があることに注意してください。
 
-## ツール選択ガイド
+## ツール選択ガイド {#tool-selection-guide}
 
 リサーチ上の問題に取り組む方法は数多くあることに注意してください。以下は基本的な提案です。不明な場合は、[#ux_research](https://gitlab.enterprise.slack.com/archives/CMEERUCE4)チャンネルに質問を投稿して UX Researcher に確認してください。
 

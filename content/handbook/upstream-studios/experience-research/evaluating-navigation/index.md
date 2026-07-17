@@ -9,7 +9,7 @@ translator: codex
 stale: false
 ---
 
-## Navigation の変更を評価する
+## Navigation の変更を評価する {#evaluating-navigation-changes}
 
 Navigation は、他のすべての体験を支える構造です。ユーザーは、プロダクトで最も重要なタスクをどこで、どのように行うかを知るために Navigation に頼っています。Navigation に何らかの変更を提案する場合は、高い確信を持って進めることが重要です。
 
@@ -17,7 +17,7 @@ Navigation は、他のすべての体験を支える構造です。ユーザー
 
 ![ダブルダイヤモンドのプロセスモデル](/images/product/ux/ux-research/evaluating-navigation/double_diamond.png)
 
-### 開発／テスト
+### 開発／テスト {#developtest}
 
 このフェーズでは、幅広い Navigation ソリューションを検討し、ユーザーからのフィードバックを収集して、さらにイテレーションするソリューションを絞り込みます。これを初期段階のソリューション検証または初期コンセプトテストとも呼びます。このフェーズでは、次のような質問に答える必要がある場合があります。
 
@@ -29,7 +29,7 @@ Navigation は、他のすべての体験を支える構造です。ユーザー
 
 これらの質問に対応する適切な方法の詳細は、[こちらをお読みください](/handbook/upstream-studios/experience-research/early-solution-validation-process-for-navigation/)。
 
-### 提供／観察
+### 提供／観察 {#deliverlisten}
 
 前のフェーズで新しい Navigation ソリューションを特定したら、提案した改善が既存の体験と比べてどうか、また経時的にどのような成果を上げるかを理解することが重要です。次のような質問に答える必要がある場合があります。
 
@@ -40,7 +40,7 @@ Navigation は、他のすべての体験を支える構造です。ユーザー
 
 Navigation に対するユーザーの認識と感情を経時的に監視するために実施する四半期ごとの Navigation アンケートなど、これらの質問に対応する方法を詳述したハンドブックページを追加中です。
 
-## Navigation の変更を評価するためのアプローチ
+## Navigation の変更を評価するためのアプローチ {#our-approach-to-evaluating-navigation-changes}
 
 異なるステージグループが Navigation 体験への変更を提案する場合があり、これらの提案が Navigation 全体のユーザビリティに与える影響を理解することが重要です。
 

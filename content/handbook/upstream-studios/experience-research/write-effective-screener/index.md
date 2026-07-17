@@ -11,14 +11,14 @@ stale: false
 
 {{< youtube "ym_scuZaqs8" >}}
 
-### スクリーナーの目標
+### スクリーナーの目標 {#screener-goals}
 
 スクリーナーの質問には、相反する 2 つの目標があります：
 
 - ユーザーについての特定の情報を引き出さなければなりません。
 - 調査についての特定の情報を明らかにしないようにすべきです。
 
-### ステップ 1: 探している参加者の特性を定義する
+### ステップ 1: 探している参加者の特性を定義する {#step-1-define-the-traits-of-the-participants-you-are-looking-for}
 
 プロダクトのユーザーについて考えるとき、おそらくいくつかの「典型的な」ユーザーのカテゴリが思い浮かぶでしょう。ユーザーの記述を具体的にできるほど、ユーザープロフィールに合う人を特定するのが上手くなります。職務名だけでは、その人のタスク、職務、行動を完全には反映できないことに注意することが重要です。下の例は、ユーザー特性をスクリーナー質問にどう変換できるかを示しています。
 
@@ -30,13 +30,13 @@ stale: false
 | すべての旅行手配を行う   | 個人旅行で、旅行手配（フライト、ホテルなど）を担当するのは誰ですか？ <ol type="a"><li>私が単独で担当している</li><li>誰かと役割を分担している</li><li>誰かが手配するが、決定は私がする</li><li>誰かが単独で担当している</li></ol>                                                                 |
 | 高級リゾートに滞在することを好む | 個人旅行で、最も多く滞在する宿泊施設のタイプは何ですか？高級リゾート（Auburge、Fairmont など） <ol type="a"><li>バジェットホテル（Clarion、Comfort In、Motel 6 など）</li><li>中価格ホテル（Tru、Windgate、Hampton Inn など）</li><li>高級ホテル（St. Regis、Autograph Collection など）</li><li>Airbnb の物件 Vrbo の物件 </li><li>その他（テキスト）</li></ol> |
 
-### ステップ 2: スクリーナー質問を構造化する
+### ステップ 2: スクリーナー質問を構造化する {#step-2-structure-your-screener-questions}
 
 スクリーナー質問を考える際は、参加者を絞り込むためのファネルのように構成してみてください。広範な質問から始めて、より具体的な質問へ移行します。
 
 ![広範な質問から始めて、より具体的な質問へ移行し、参加者を絞り込む](/images/product/ux/ux-research/screener_funnel.png)
 
-### ステップ 3: スクリーナーを構築する
+### ステップ 3: スクリーナーを構築する {#step-3-build-the-screener}
 
 ゼロからスクリーナーを作成する際のベストプラクティスをいくつか紹介します：
 
@@ -46,7 +46,7 @@ stale: false
 
 GitLab でのスクリーナーの最終ドラフトは [Qualtrics](/handbook/upstream-studios/experience-research/surveys/qualtrics/) で作成されます。Qualtrics へのアクセスがない場合は [リクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) してください。[別のリクルーティング方法](/handbook/upstream-studios/research-operations/recruitment-methods) や、[UserTesting.com](https://www.usertesting.com/) のようなモデレーターなし調査プラットフォームを使う場合は、それらのプラットフォームでスクリーナーを作成します。
 
-### スクリーナーのヒント
+### スクリーナーのヒント {#screener-tips}
 
 質問を作成する際は、次のことに留意してください：
 
@@ -78,6 +78,6 @@ GitLab でのスクリーナーの最終ドラフトは [Qualtrics](/handbook/up
   - これは、参加者がこちらの探している行動を実際に行ったことを確認できます。
   - これは、アクションや使用を検証して、参加者をセグメントに振り分ける必要がある場合に役立ちます。
 
-### GitLab スクリーナーの例
+### GitLab スクリーナーの例 {#example-gitlab-screener}
 
 - [Screening Question Repository](https://docs.google.com/document/d/1v8_a3DH9UKhakn61Z1vFXUT-IOAPC6-FwJegaquYUS4/edit?usp=sharing)（内部アクセスのみ）

@@ -8,7 +8,7 @@ translator: codex
 stale: false
 ---
 
-## GitLab 導入リサーチとは
+## GitLab 導入リサーチとは {#what-is-gitlab-adoption-research}
 
 ソリューションとして、GitLab は [DevOps Platform](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/)と見なされています。DevOps Platform は、複雑な統合、データのボトルネック、ツールチェーンの保守をなくし、生産性を高める単一のアプリケーションです。この単一のアプリケーションは、GitLab の[ステージ](/handbook/product/categories/#devops-stages)で構成されています。DevOps Platform の導入をよりよく理解するには、ユーザーがより多くのステージをどのように、またなぜ導入しているかを理解する必要があります。
 
@@ -16,21 +16,21 @@ stale: false
 
 DevOps Platform Solution とエンドツーエンドの機能を利用するユーザーにより良いサービスを提供するため、このリサーチプログラムを作成しました。
 
-## GitLab 導入リサーチプログラムの仕組み
+## GitLab 導入リサーチプログラムの仕組み {#how-does-the-gitlab-adoption-research-program-work}
 
 このプログラムの DRI は Director の Jackie Porter（@jreporter）であり、[Strategic Research Intiative](/handbook/upstream-studios/experience-research/strategic-research-at-gitlab/#how-does-gitlab-think-about-strategic-research)です。
 
-## GitLab 導入リサーチプログラムの成果物
+## GitLab 導入リサーチプログラムの成果物 {#what-are-the-gitlab-adoption-research-program-outputs}
 
 1. 導入リサーチのレポート共有
 1. ペルソナ更新のための組織ベースのテーマ
 1. 1 ～ 3 年の時間軸における方向性ページの更新
 
-## 現在の GitLab 導入リサーチ
+## 現在の GitLab 導入リサーチ {#current-gitlab-adoption-research}
 
 1. [DevOps 導入に対するアプリケーションタイプの影響](https://gitlab.com/gitlab-org/ux-research/-/issues/1783)
 
-## 過去の GitLab 導入リサーチ
+## 過去の GitLab 導入リサーチ {#past-gitlab-adoption-research}
 
 1. [ステージ横断の導入を促進する](https://docs.google.com/presentation/d/1Dop32ZNbyHhJvi-TMRR-uiJVKN-qaBl8hPj-N03YSL8/edit?usp=sharing) - [Issue](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/10466)
 1. [ステージ横断の導入に至る理由](https://docs.google.com/presentation/d/10aCNhZ8KvDMpOCqhhgcI-Sb6jpH6UT0-ApXH7_t-7XA/edit?usp=sharing) - [Issue](https://gitlab.com/gitlab-org/ux-research/-/issues/1385)
