@@ -1,11 +1,11 @@
 ---
 title: センシングメカニズム
 upstream_path: /handbook/product/product-processes/sensing-mechanisms/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-17T06:29:12+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-23T15:35:45-08:00"
+lastmod: "2026-07-16T17:32:42-03:00"
 ---
 
 ## センシングメカニズムとは？
@@ -24,7 +24,7 @@ lastmod: "2026-02-23T15:35:45-08:00"
 1. [Developer Relations チーム](/handbook/marketing/developer-relations/) と一緒に当社のコミュニティと関わり、コミュニティが生成した Issue やアイデアを [トリアージ](https://docs.gitlab.com/development/contributing/issue_workflow/#issue-triaging) する
 1. アップボートが多い Issue のトップをレビューする
 1. 顧客と直接、また [customer](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name%5B%5D=customer) ラベルを介してエンゲージする
-1. [Experience research](/handbook/product/ux/experience-research/) からの [結果](https://gitlab.com/gitlab-org/uxr_insights) を [要求](/handbook/product/ux/experience-research/) し、分析する。
+1. [Experience research](/handbook/upstream-studios/experience-research/) からの [結果](https://gitlab.com/gitlab-org/uxr_insights) を [要求](/handbook/upstream-studios/experience-research/) し、分析する。
 1. 以前のユーザーインタビューのまとめは [ユーザーインタビュープロジェクト](https://gitlab.com/gitlab-com/user-interviews) にあります
 1. すべての UX リサーチは [Dovetail](https://dovetailapp.com/) で文字起こしされています
 

@@ -2,24 +2,24 @@
 title: "デザイン判断のためのデータ"
 description: "デザイン判断を支えるデータを見つけるために GitLab 内で使用されているツールに関するガイド。"
 upstream_path: /handbook/product/ux/ux-resources/designers-guide-to-data/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-16T21:37:21Z"
+translator: codex
 stale: false
-lastmod: "2026-02-12T13:14:13+00:00"
+lastmod: "2026-07-16T17:32:42-03:00"
 ---
 
 ## GitLab でデザイン判断にデータを使う
 
 データは、GitLab のデザイナーとリサーチャーがユーザー行動を理解するためのもう 1 つの方法です。アナリティクスは、プロダクト開発フロー全体を通じて貴重なインプットを提供できます。データを使うことで、私たちが出荷したイテレーションの影響を理解し定量化できます。
 
-私たちは、意思決定を完全にデータに依存すべきではありませんが、意思決定の重要なインプットであるべきです。定量的なデータ/リサーチについて詳しくは、[データを使ってインサイトを見つける](/handbook/product/ux/experience-research/quantitative-data/) ハンドブックページを参照してください。
+私たちは、意思決定を完全にデータに依存すべきではありませんが、意思決定の重要なインプットであるべきです。定量的なデータ/リサーチについて詳しくは、[データを使ってインサイトを見つける](/handbook/upstream-studios/experience-research/quantitative-data/) ハンドブックページを参照してください。
 
 {{< youtube "J-USG9BKH-g" >}}
 
 ## 仮説とインパクトを連動させる
 
-デザインプロセスの一部は、作業をガイドする[強い仮説](/handbook/product/ux/experience-research/defining-goals-objectives-and-hypotheses/) を持つことです。
+デザインプロセスの一部は、作業をガイドする[強い仮説](/handbook/upstream-studios/experience-research/defining-goals-objectives-and-hypotheses/) を持つことです。
 
 理想的には、仮説はユーザーリサーチからの情報に基づいているべきです。
 
@@ -96,4 +96,4 @@ lastmod: "2026-02-12T13:14:13+00:00"
 - [GitLab の内部アナリティクス](https://docs.gitlab.com/development/internal_analytics/)
 - [実験の設計と分析](/handbook/product/groups/product-analysis/experimentation/)
 - [Growth Experiments ナレッジベース](/handbook/marketing/growth/)
-- [データを使ってインサイトを見つける](/handbook/product/ux/experience-research/quantitative-data/)
+- [データを使ってインサイトを見つける](/handbook/upstream-studios/experience-research/quantitative-data/)

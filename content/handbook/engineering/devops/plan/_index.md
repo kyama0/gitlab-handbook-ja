@@ -1,11 +1,11 @@
 ---
 title: "Plan"
 upstream_path: /handbook/engineering/devops/plan/
-upstream_sha: 2e7a8730e4bbae1125f2d28ea6f22b445742c723
-translated_at: "2026-07-10T21:35:00+09:00"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-17T06:09:44+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-10T12:19:01+02:00"
+lastmod: "2026-07-16T17:32:42-03:00"
 ---
 
 Plan チーム:
@@ -462,7 +462,7 @@ _ソリューションの検証_
 
 ##### ワークアイテムのリサーチプロセス
 
-[UX リサーチハンドブック](/handbook/product/ux/experience-research/)のメソッドとツールを使用しています。
+[UX リサーチハンドブック](/handbook/upstream-studios/experience-research/)のメソッドとツールを使用しています。
 
 これらに加えて、共通のスクリーナーを使用し、リサーチニーズに合わせた適格な参加者のミニデータベースを構築することで、効率ボーナスを得ることに取り組んでいます。
 

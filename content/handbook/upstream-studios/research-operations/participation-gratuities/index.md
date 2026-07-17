@@ -2,9 +2,9 @@
 title: "リサーチ参加のインセンティブ"
 description: "UX リサーチのインセンティブがどのように処理されるかを学びます"
 upstream_path: /handbook/upstream-studios/research-operations/participation-gratuities/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-lastmod: "2026-07-13T19:21:22+01:00"
-translated_at: "2026-07-14T06:10:50+09:00"
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+lastmod: "2026-07-16T17:32:42-03:00"
+translated_at: "2026-07-17T06:46:21+09:00"
 translator: codex
 stale: false
 ---
@@ -128,7 +128,7 @@ Tremendous の **未対応国** （リワードがない国）は次のとおり
 | セッションの 36 時間前以内 | 50% |
 | セッションの 36 時間より前 | 0% |
 
-キャンセルや再スケジュールのベストプラクティスについては、[リサーチ DRI のためのリソース ページ](/handbook/product/ux/experience-research/resources-for-research-dris/) を参照してください。
+キャンセルや再スケジュールのベストプラクティスについては、[リサーチ DRI のためのリソース ページ](/handbook/upstream-studios/experience-research/resources-for-research-dris/) を参照してください。
 
 ## インセンティブの履行タイムライン
 

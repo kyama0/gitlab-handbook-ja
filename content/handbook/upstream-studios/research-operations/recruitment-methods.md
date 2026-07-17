@@ -2,9 +2,9 @@
 title: "リクルート方法"
 description: "UX Research Operations Coordinator がどのようにリクルートを行うかを学びます"
 upstream_path: /handbook/upstream-studios/research-operations/recruitment-methods/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-lastmod: "2026-07-13T19:21:22+01:00"
-translated_at: "2026-07-14T06:10:50+09:00"
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+lastmod: "2026-07-16T17:32:42-03:00"
+translated_at: "2026-07-17T06:46:21+09:00"
 translator: codex
 stale: false
 ---
@@ -15,7 +15,7 @@ UX Research Operations Coordinator は、複数のソースから参加者をリ
 
 1. **Respondent.io:** GitLab ユーザーであるかどうかに関わらず、ソフトウェア専門家を対象とした調査に適した参加者リクルートサービスです。セキュリティ専門家やその他リーチが難しい参加者を見つけるための良い情報源となっています。Respondent はユーザーを迅速に必要とする場合にも最適です。
     - Respondent.io は条件にもよりますが最速のオプションの 1 つで、通常は数時間以内に適格な参加者が現れ始めます。
-1. **UserTesting.com:** [モデレーターなしユーザビリティテストプラットフォーム](/handbook/product/ux/experience-research/unmoderated-testing/)です。このプラットフォームを介してパネルを使い、ユーザビリティテスト用のユーザーをリクルートできます。
+1. **UserTesting.com:** [モデレーターなしユーザビリティテストプラットフォーム](/handbook/upstream-studios/experience-research/unmoderated-testing/)です。このプラットフォームを介してパネルを使い、ユーザビリティテスト用のユーザーをリクルートできます。
     - 条件によりますが、通常は数時間以内に適格な参加者が現れ始めます。
 1. **ソーシャルアウトリーチ:** GitLab のブランドチャネルでソーシャル投稿が行われることがあります。UX Research Operations Coordinator は、[Corporate Marketing プロジェクト](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing) の [Social Request issue テンプレート](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/.gitlab/issue_templates/social-general-request.md?ref_type=heads) を使用して、この種類の投稿をリクエストします。リクルートリクエストを発行した DRI が、UX Research Operations Coordinator からソーシャルリクエストの Issue を開くよう促されることもあります。これは主に GitLab ユーザーを対象とした調査に適しています。プロダクトマネージャー、プロダクトデザイナー、その他のチームメイトは、自分のネットワークを通じてリサーチを宣伝することが強く推奨されます。
     - これらのリクエストが公開されるまで 1〜2 週間を見ておいてください。

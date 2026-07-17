@@ -1,6 +1,9 @@
 ---
 title: "GitLab における Experience Research"
 description: "ブランドからプロダクトまで、エンドツーエンドのインサイトを提供し、何を作るか、どのようにポジショニングするかを決め、あらゆる段階の意思決定を形作ります。"
+layout: legacy-experience-research-redirect
+cascade:
+  layout: legacy-experience-research-redirect
 upstream_path: /handbook/product/ux/experience-research/
 upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
 translated_at: "2026-07-14T06:26:33+09:00"

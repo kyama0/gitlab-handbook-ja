@@ -2,11 +2,11 @@
 title: プロダクトマネジメントの学習と能力開発
 description: "このページには、GitLab のプロダクトマネージャーがスキルを構築するために活用できる社内外のリソースへのリンクを掲載しています。"
 upstream_path: /handbook/product/product-management/learning-and-development/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-16T21:18:58Z"
+translator: codex
 stale: false
-lastmod: "2026-03-06T00:30:56+00:00"
+lastmod: "2026-07-16T17:32:42-03:00"
 ---
 
 {{% include "includes/product/product-handbook-links.md" %}}
@@ -287,7 +287,7 @@ GitLab は、GitLab のチームメンバーが学習に関連して以下の活
 - [Julie Zhuo: How to Work with Designers](https://medium.com/the-year-of-the-looking-glass/how-to-work-with-designers-6c975dede146#.q68swu2de)
 - [Jess Eddy: What do designers really want from product managers?](https://uxdesign.cc/what-do-designers-really-want-from-product-managers-9c0e14993a8)
 - [Jared Spool: Using the Kano Model to Build Delightful UX](https://youtu.be/ewpz2gR_oJQ) (45 min ビデオ)
-- [GitLab Kano Model and Feature Prioritization Survey](/handbook/product/ux/experience-research/kano-model/)
+- [GitLab Kano Model and Feature Prioritization Survey](/handbook/upstream-studios/experience-research/kano-model/)
 
 #### より深く
 

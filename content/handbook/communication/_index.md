@@ -2,10 +2,10 @@
 title: GitLab のコミュニケーション
 description: "オールリモートの企業として、つながりを保ちながらより効率的に働くために、明確なコミュニケーションを実践することが私たちにとって重要です。"
 upstream_path: /handbook/communication/
-upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
-lastmod: "2026-07-08T11:09:01-04:00"
-translated_at: "2026-07-09T08:23:34+09:00"
-translator: claude
+upstream_sha: "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca"
+lastmod: "2026-07-16T16:32:06-04:00"
+translated_at: "2026-07-17T06:09:44+09:00"
+translator: codex
 stale: false
 ---
 <!-- markdownlint-disable MD001 MD051 -->
@@ -19,16 +19,11 @@ stale: false
 
 ## 効果的で責任あるコミュニケーションのガイドライン {#effective--responsible-communication-guidelines}
 
-1. **[ポジティブな意図](/handbook/values/#collaboration)を前提とする。** 常にポジティブで思いやりのある姿勢から始めます。
-1. **思いやりは重要です。** あなたが見ているのは画面ですが、実際には人と話しています。面と向かって言わないようなことを、テキストメッセージで送らないでください。
+1. **ポジティブな意図を前提とする。** 常に前向きで思いやりのある姿勢から始めます。
+1. **思いやりは重要です。** あなたが見ているのは画面ですが、実際には人と話しています。誰かに面と向かって言わないようなことを、Slack メッセージで送らないでください。
 1. **自分の考えを責任を持って包括的に表現する。** 私たちは異なるロケーションに住んでおり、しばしば非常に異なる視点を持っています。私たちはあなたの考え、意見、感情を知りたいと思っています。同時に、機微な可能性のあるトピックを伝える際のガイドラインを考慮することもお願いします。
 1. **当事者意識を持つ。** 口にしたこと、入力したことには責任を持ってください。それが意図せずとも会社や個人を傷つけたなら、他の視点から物事を見て、素直に謝ることをお勧めします。
-1. **私たちの[バリュー](/handbook/values/)のロールモデルになる。**
-1. **フィードバックは不可欠です。** 私たちのチームメンバーが暮らす 60 以上の国それぞれで何が適切かを知るのは困難です。チームメンバーには、思いやりを持ってフィードバックを与え、受け取ることをお勧めします。
-1. **1:1 を過小評価しない。** 非同期コミュニケーション（例: テキストを通じたもの）は役に立ち、必要なものです。場合によっては（例: 誤解を解くために）、Zoom のビデオ通話に切り替える方がはるかに効果的なこともあります。
 1. **私たちの[ハラスメント防止ポリシー](/handbook/people-group/anti-harassment/)と [GitLab Code of Business Conduct and Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx) に常に従う。** 誰もが職場環境で快適に過ごせるべきです。
-1. **私たちが直接影響を与えられることに集中する。** 私たちが直接影響を与えられない要因は数多くあり、そうしたことを議論することに時間を費やすのは避けるべきです。たとえば、私たちは[時価総額](/handbook/company/being-a-public-company/#market-capitalization)について話しません。これにはコントロールできない側面があるためです。その代わりに、会社の目標を達成し、[年間経常収益](/handbook/sales/sales-term-glossary/arr-in-practice/)を成長させるために、どのように協力できるかに集中すべきです。
-1. **[積極的かつ効果的な傾聴](/handbook/leadership/coaching/#essential-coaching-skills)に取り組む**。
 
 ### 非同期コミュニケーション {#asynchronous-communication}
 

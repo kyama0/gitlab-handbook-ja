@@ -706,11 +706,11 @@
     },
     "content/handbook/communication/_index.md": {
       "path": "content/handbook/communication/_index.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T08:23:34+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:09:44+09:00",
       "model": "codex",
-      "input_hash": "e9f7b716c60a0f45bbfdb22377223c0e81e4b15d1dc19872cb20ef552da0126d",
-      "upstream_committed_at": "2026-07-08T11:09:01-04:00"
+      "input_hash": "e30823fe9a58ce3ea7db2595fb00c0bd18d8784d72f10231eff7f52625c06bc0",
+      "upstream_committed_at": "2026-07-16T16:32:06-04:00"
     },
     "content/handbook/communication/ask-me-anything.md": {
       "path": "content/handbook/communication/ask-me-anything.md",
@@ -1418,11 +1418,11 @@
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-global-voices.md": {
       "path": "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-global-voices.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-25T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "0a1b6337ab635d86c54420d534a3745418ac317084524f1ddc6a5d32762f9eda",
-      "upstream_committed_at": "2026-03-26T10:04:30+00:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:09:44+09:00",
+      "model": "codex",
+      "input_hash": "73597eb056bd13d24de973b052f162a5d95264d719914c27fd44d77c3566fc46",
+      "upstream_committed_at": "2026-07-16T18:03:25+02:00"
     },
     "content/handbook/company/culture/inclusion/unconscious-bias.md": {
       "path": "content/handbook/company/culture/inclusion/unconscious-bias.md",
@@ -10290,11 +10290,11 @@
     },
     "content/handbook/engineering/data-engineering/database-excellence/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/_index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T13:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "eda9edbb0d249ab097ea6154028f1173c017ab5effdce31d935fc2b90873377a",
-      "upstream_committed_at": "2026-06-08T10:04:59-05:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:09:44+09:00",
+      "model": "codex",
+      "input_hash": "b8aff04e5a4753f0ec5c698086626a4edb967e007ac69c6579a6d1c0d12f64fd",
+      "upstream_committed_at": "2026-07-15T15:06:40+02:00"
     },
     "content/handbook/engineering/data-engineering/database-excellence/database-architecture/_index.md": {
       "path": "content/handbook/engineering/data-engineering/database-excellence/database-architecture/_index.md",
@@ -10498,11 +10498,11 @@
     },
     "content/handbook/engineering/development/fulfillment/_index.md": {
       "path": "content/handbook/engineering/development/fulfillment/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "6331081295509cfbb2bd03892034883f5f69c5584ca218703a7864cf408ca0d5",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:09:44+09:00",
+      "model": "codex",
+      "input_hash": "bc4323c227201dc6381f441980b1abd32358b585c07158ddc8c8deddf4c31016",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/engineering/development/fulfillment/dib.md": {
       "path": "content/handbook/engineering/development/fulfillment/dib.md",
@@ -11578,11 +11578,11 @@
     },
     "content/handbook/engineering/devops/plan/_index.md": {
       "path": "content/handbook/engineering/devops/plan/_index.md",
-      "upstream_sha": "2e7a8730e4bbae1125f2d28ea6f22b445742c723",
-      "translated_at": "2026-07-10T21:35:00+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:09:44+09:00",
       "model": "codex",
-      "input_hash": "76b7c7effe3f740c87b740e0d0927ed7e9350fe5be6d2cb8b82f35196b271b6e",
-      "upstream_committed_at": "2026-07-10T12:19:01+02:00"
+      "input_hash": "0cfadc971e35b6915f662930bfe357eca841ec1eec1452c5026adb2e9da1834d",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/engineering/devops/plan/internship.md": {
       "path": "content/handbook/engineering/devops/plan/internship.md",
@@ -12466,11 +12466,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/_index.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-28T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "837de485aafcd0acfe89b676b8416e5c87cd342889c324ef509f604d0bb9223e",
-      "upstream_committed_at": "2026-03-04T15:20:03-07:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:09:44+09:00",
+      "model": "codex",
+      "input_hash": "b2ba16169b4e62778a28dccd56d1cd3be60549348cd470d401759dce4fb8cb22",
+      "upstream_committed_at": "2026-07-16T14:06:57-04:00"
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/architecture/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-dedicated/architecture/_index.md",
@@ -12914,11 +12914,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2.md",
-      "upstream_sha": "f469f09c3347a37927c75866af3d2611a5421062",
-      "translated_at": "2026-07-16T06:52:34+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:09:44+09:00",
       "model": "codex",
-      "input_hash": "e7f21a731d74e536d19019aef0cf06f554cfe674a8782cb619da6de68e0714d7",
-      "upstream_committed_at": "2026-07-14T17:24:40+02:00"
+      "input_hash": "97fee2e425fbca3424e1508fa95c52d04350fef0e048d061805196b6b0388619",
+      "upstream_committed_at": "2026-07-15T15:06:40+02:00"
     },
     "content/handbook/engineering/infrastructure-platforms/incident-management/roles/communications-lead.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/incident-management/roles/communications-lead.md",
@@ -13250,11 +13250,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/production/component-ownership-model.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production/component-ownership-model.md",
-      "upstream_sha": "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d",
-      "translated_at": "2026-04-29T03:12:43Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "7dc2f29f881036effb0adafc924f36efcb65538c6cc776915235abbcc6ab3e54",
-      "upstream_committed_at": "2026-02-20T16:56:45+00:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:09:44+09:00",
+      "model": "codex",
+      "input_hash": "ed70dde5936f43f94b198b217870a60f2ea9c7696b306888ca90a46156143bea",
+      "upstream_committed_at": "2026-07-15T13:40:08+02:00"
     },
     "content/handbook/engineering/infrastructure-platforms/production/prep.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/production/prep.md",
@@ -14122,11 +14122,11 @@
     },
     "content/handbook/engineering/testing/test-environments-catalog.md": {
       "path": "content/handbook/engineering/testing/test-environments-catalog.md",
-      "upstream_sha": "f469f09c3347a37927c75866af3d2611a5421062",
-      "translated_at": "2026-07-15T21:34:06Z",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:18:58Z",
       "model": "codex",
-      "input_hash": "1de255944ce3dbcc4560588a244d027a9fa45d9c1d2468a2ffef36d64e264bba",
-      "upstream_committed_at": "2026-07-15T17:51:54+00:00"
+      "input_hash": "8354954867821fbf056f7ce3ea150a730755a4dd173fa36156f862608b31152f",
+      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
     },
     "content/handbook/engineering/testing/using-duo-to-debug-test-failures.md": {
       "path": "content/handbook/engineering/testing/using-duo-to-debug-test-failures.md",
@@ -14778,11 +14778,11 @@
     },
     "content/handbook/enterprise-data/platform/_index.md": {
       "path": "content/handbook/enterprise-data/platform/_index.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T08:52:04+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:18:58Z",
       "model": "codex",
-      "input_hash": "b31a1a89ee8228ac29ec9666d4f03505c7f83c93a4a77d900536d12ab7743ae3",
-      "upstream_committed_at": "2026-07-08T14:38:08+02:00"
+      "input_hash": "55b096b811ad4c1ca5c4c5868615ebf443a815dac944e8ee1764a384833e55a3",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/enterprise-data/platform/agentic-tool-development/index.md": {
       "path": "content/handbook/enterprise-data/platform/agentic-tool-development/index.md",
@@ -19946,11 +19946,11 @@
     },
     "content/handbook/tools-and-tips/_index.md": {
       "path": "content/handbook/tools-and-tips/_index.md",
-      "upstream_sha": "f469f09c3347a37927c75866af3d2611a5421062",
-      "translated_at": "2026-07-16T07:30:25+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:37:21Z",
       "model": "codex",
-      "input_hash": "2dd36f8c1ab0c34706322317a5a494cceb1675ab10ecf4d43deef06388186981",
-      "upstream_committed_at": "2026-07-14T11:05:13-04:00"
+      "input_hash": "95b6eec7ea2b5aa1889bb99a8cc2fc44ddf7a3110d6ee42ad0ebe979966e05e8",
+      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
     },
     "content/handbook/tools-and-tips/ai/_index.md": {
       "path": "content/handbook/tools-and-tips/ai/_index.md",
@@ -20458,11 +20458,11 @@
     },
     "content/handbook/support/on-call.md": {
       "path": "content/handbook/support/on-call.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "8e07f3e10a83d04318511b75bbb1dd60f293cc6c1ee31589c31d3468a0c9baa8",
-      "upstream_committed_at": "2026-05-22T11:27:49+08:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:37:21Z",
+      "model": "codex",
+      "input_hash": "05004ae639972bbf64a42254099f1486a41d2704807f322bc652699f3eb86b6a",
+      "upstream_committed_at": "2026-07-15T19:55:12-07:00"
     },
     "content/handbook/support/managers/_index.md": {
       "path": "content/handbook/support/managers/_index.md",
@@ -22394,19 +22394,19 @@
     },
     "content/handbook/upstream-studios/_index.md": {
       "path": "content/handbook/upstream-studios/_index.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T20:58:39+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:37:21Z",
       "model": "codex",
-      "input_hash": "a18254e4fac9d41dba42e9130a32313aa601e84166aa872d205b97ee65688505",
-      "upstream_committed_at": "2026-06-19T14:14:46-07:00"
+      "input_hash": "2b9c64956d1826d03dcc8ad5dc9f1586ea0983b3e7c175430c377d0f86250ed5",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/upstream-studios/vision-strategy/_index.md": {
       "path": "content/handbook/upstream-studios/vision-strategy/_index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:18:07Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "096eeea9b77db9d91df61f3fb77f77b6791f944b5ed9986037b9a01389da7980",
-      "upstream_committed_at": "2026-06-11T16:19:36+01:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:46:21+09:00",
+      "model": "codex",
+      "input_hash": "433e09199f8fbab58652e91cb71b301bb54ee9d2f960277fe1d91216651164b0",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/values/_index.md": {
       "path": "content/handbook/values/_index.md",
@@ -30058,11 +30058,11 @@
     },
     "content/handbook/product-development/how-we-work/product-development-flow/_index.md": {
       "path": "content/handbook/product-development/how-we-work/product-development-flow/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b21d92ead3722611de022b11b75de5b1a3eff6cd929db48edfa9742523b0ab0e",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:18:58Z",
+      "model": "codex",
+      "input_hash": "21666b7157a3d966ce3409bb10052faf7b13d5e897e03037c9d290d1277f59e6",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product-development/how-we-work/product-development-flow/phase-template.md": {
       "path": "content/handbook/product-development/how-we-work/product-development-flow/phase-template.md",
@@ -30178,11 +30178,11 @@
     },
     "content/handbook/product/ux/ux-quality-metrics-framework.md": {
       "path": "content/handbook/product/ux/ux-quality-metrics-framework.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "e1fe8f2b0dda0dfa4d86197d39c9fccf31ffd3691f37063332a96872bd416efc",
-      "upstream_committed_at": "2026-02-26T09:15:10-05:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:37:21Z",
+      "model": "codex",
+      "input_hash": "c2586794f64ced3908f513b62df574b5ee34698c0b3ecae0611a7b45acb0ddb9",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/ux-scorecards.md": {
       "path": "content/handbook/product/ux/ux-scorecards.md",
@@ -30194,11 +30194,11 @@
     },
     "content/handbook/product/ux/ux-resources/_index.md": {
       "path": "content/handbook/product/ux/ux-resources/_index.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T06:32:43+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:37:21Z",
       "model": "codex",
-      "input_hash": "dd2caac01c8ccbd012ca3afe97baf7d4d28665861301e7c24471263633bfe1db",
-      "upstream_committed_at": "2026-06-29T11:52:06+01:00"
+      "input_hash": "90928ea87e309f71001a8f96bd6d54c20185062717a03b24443f0bb1a2da0b40",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/ux-resources/dark-mode-rollout-playbook.md": {
       "path": "content/handbook/product/ux/ux-resources/dark-mode-rollout-playbook.md",
@@ -30210,11 +30210,11 @@
     },
     "content/handbook/product/ux/ux-resources/designers-guide-to-data.md": {
       "path": "content/handbook/product/ux/ux-resources/designers-guide-to-data.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "6c6783fb2a68df3a4abfaaa5afd77a3b14eee5076553686399c10f55098a6bfd",
-      "upstream_committed_at": "2026-02-12T13:14:13+00:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:37:21Z",
+      "model": "codex",
+      "input_hash": "ae54f3bb09f0022d37ee59e9e3810a39dbbfe643889fa04b1f36ac3d9805452f",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/ux-resources/designers-step-by-step-guide-to-make-code-changes.md": {
       "path": "content/handbook/product/ux/ux-resources/designers-step-by-step-guide-to-make-code-changes.md",
@@ -30338,19 +30338,19 @@
     },
     "content/handbook/product/ux/product-designer/_index.md": {
       "path": "content/handbook/product/ux/product-designer/_index.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T06:46:26+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:37:21Z",
       "model": "codex",
-      "input_hash": "79cbeda277156125ab2657219b8174b49a3fc0cc5ade8944e078fb034e918948",
-      "upstream_committed_at": "2026-06-29T11:52:06+01:00"
+      "input_hash": "dc1cdfac459e77ee59b74d3f61ac94d51c1dfe997bd839fa0020d0b9e211621e",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/product-designer/ai-design.md": {
       "path": "content/handbook/product/ux/product-designer/ai-design.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T13:13:04Z",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:37:21Z",
       "model": "codex",
-      "input_hash": "b8288edcdd344534d23ad55aac2c2e8d26dde29d112f326e4970aed42a3ec8eb",
-      "upstream_committed_at": "2026-06-16T09:26:31-04:00"
+      "input_hash": "f17bcecf4c38c1e136224aef8db5858af31a25c4b185ffbe03bcbf55fb363bed",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/product-designer/mr-reviews/_index.md": {
       "path": "content/handbook/product/ux/product-designer/mr-reviews/_index.md",
@@ -30386,11 +30386,11 @@
     },
     "content/handbook/product/ux/product-design/_index.md": {
       "path": "content/handbook/product/ux/product-design/_index.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T13:13:04Z",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:37:21Z",
       "model": "codex",
-      "input_hash": "72edca07cd73716102064f538c451592a80cc639ad4d909df171777bd4d36c09",
-      "upstream_committed_at": "2026-06-16T09:26:31-04:00"
+      "input_hash": "e728c91cec156d12ec2a6c4e6af88022b44c760300d7c2b7edb3ddce1d72ba05",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/product-design/design-pair-rotation.md": {
       "path": "content/handbook/product/ux/product-design/design-pair-rotation.md",
@@ -30458,11 +30458,11 @@
     },
     "content/handbook/product/ux/persona-creation/index.md": {
       "path": "content/handbook/product/ux/persona-creation/index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "426e34ad50888c785183bbef1256eb2dbdf0bbd633bc2ec77d3be323c0cf6c9c",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:37:21Z",
+      "model": "codex",
+      "input_hash": "a98ef922f6fa1b63f7792b81f5165a8b212ec49fab6e3f0d4fb4e00fdcf998aa",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/performance-indicators/_index.md": {
       "path": "content/handbook/product/ux/performance-indicators/_index.md",
@@ -30490,11 +30490,11 @@
     },
     "content/handbook/product/ux/performance-indicators/system-usability-scale/sus-outreach.md": {
       "path": "content/handbook/product/ux/performance-indicators/system-usability-scale/sus-outreach.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "fd85ef77f00c1bd6135807c7ee44134f871c922cf44d784c8c890e44dcfa9e9e",
-      "upstream_committed_at": "2026-02-12T13:14:13+00:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:29:12+09:00",
+      "model": "codex",
+      "input_hash": "c20de13639e9bb73f8a818a97908ee9b6448a5718f111876338b9b8d5a7ea7c2",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/pajamas-design-system/_index.md": {
       "path": "content/handbook/product/ux/pajamas-design-system/_index.md",
@@ -30514,19 +30514,19 @@
     },
     "content/handbook/product/ux/operations/_index.md": {
       "path": "content/handbook/product/ux/operations/_index.md",
-      "upstream_sha": "ccb1e392292beca5aa187b61502738defd99d030",
-      "translated_at": "2026-06-13T21:07:03Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "f27f2905808f8e16ceb7cd8d879995deb002789e2acae7cf38ee1893f4bb3e7a",
-      "upstream_committed_at": "2026-06-12T14:42:54-07:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:29:12+09:00",
+      "model": "codex",
+      "input_hash": "4450f69291953f07f21de50252a76207fd7e200f7823cceabede4623146cd51e",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/navigation/_index.md": {
       "path": "content/handbook/product/ux/navigation/_index.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "e6f63313817717700d978f7fb9716b0bb0ed1c2d0f46218371448045cc8dcdde",
-      "upstream_committed_at": "2026-06-04T06:51:08-07:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:29:12+09:00",
+      "model": "codex",
+      "input_hash": "4675ff7672570ee7a8249e1178c707e67463f770b7b44a7c69b2d4ec260fe7e9",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/navigation/inventory.md": {
       "path": "content/handbook/product/ux/navigation/inventory.md",
@@ -30562,11 +30562,11 @@
     },
     "content/handbook/product/ux/jobs-to-be-done/jtbd-beyond-the-playbook.md": {
       "path": "content/handbook/product/ux/jobs-to-be-done/jtbd-beyond-the-playbook.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "79f095a1e87a7fc951a32499f83a1f443f4e07988de925ac8f9f8d7afa3dc698",
-      "upstream_committed_at": "2026-02-12T13:14:13+00:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:29:12+09:00",
+      "model": "codex",
+      "input_hash": "bc10aec10f8a10f0d5187ebefcc7373746a513f0ab49a59da8ff286a61f0ba8a",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/jobs-to-be-done/jtbd-canvas-anatomy.md": {
       "path": "content/handbook/product/ux/jobs-to-be-done/jtbd-canvas-anatomy.md",
@@ -30578,11 +30578,11 @@
     },
     "content/handbook/product/ux/jobs-to-be-done/jtbd-playbook.md": {
       "path": "content/handbook/product/ux/jobs-to-be-done/jtbd-playbook.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "0b053bd00ff4c86e33c53597bdb8b919276a35e52f6e0ef51b6ede972ddbf53a",
-      "upstream_committed_at": "2026-02-23T15:35:45-08:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:29:12+09:00",
+      "model": "codex",
+      "input_hash": "ac5bbc8df75fc1fb9848c555bf782426071bba4d1de2260b5b194b07c54ab3da",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/jobs-to-be-done/validated-canvases-and-opportunity-scores.md": {
       "path": "content/handbook/product/ux/jobs-to-be-done/validated-canvases-and-opportunity-scores.md",
@@ -31202,11 +31202,11 @@
     },
     "content/handbook/product/ux/dovetail/index.md": {
       "path": "content/handbook/product/ux/dovetail/index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "6704571c800573cc75f35708b40d8f1050c4caa7ec64eb06e59a21f8296f6d03",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:29:12+09:00",
+      "model": "codex",
+      "input_hash": "720fea4148363ce549c13c84eecb2b526caa90ad1f2972e6d6391b25d745aa68",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/category-maturity/_index.md": {
       "path": "content/handbook/product/ux/category-maturity/_index.md",
@@ -31226,11 +31226,11 @@
     },
     "content/handbook/product/ux/category-maturity/category-maturity-scorecards/index.md": {
       "path": "content/handbook/product/ux/category-maturity/category-maturity-scorecards/index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "7a666752b73f8b27fd400aeb0f22d137e069a38ea268f201e8282e1df55ac915",
-      "upstream_committed_at": "2026-02-26T14:02:23-08:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:29:12+09:00",
+      "model": "codex",
+      "input_hash": "00350761dc033a4a210af1ab9c6161de9836ed8f0b9d9ee9091f049d4cb0bd7c",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ux/accessibility/_index.md": {
       "path": "content/handbook/product/ux/accessibility/_index.md",
@@ -31266,11 +31266,11 @@
     },
     "content/handbook/product/product-processes/_index.md": {
       "path": "content/handbook/product/product-processes/_index.md",
-      "upstream_sha": "8451bcaa23ef826bedc5422c87ee89de121dd85b",
-      "translated_at": "2026-07-14T07:00:47+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:29:12+09:00",
       "model": "codex",
-      "input_hash": "1b47deb41da1ddd5d718c91579818f0f73ab888489d0d8c6628012a4f6e83615",
-      "upstream_committed_at": "2026-07-13T19:21:22+01:00"
+      "input_hash": "f023574357ea16df52929daca38e3b07e679d3f5e08b713dbb10e74ff55c164a",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/product-processes/board-deck-prep.md": {
       "path": "content/handbook/product/product-processes/board-deck-prep.md",
@@ -31282,11 +31282,11 @@
     },
     "content/handbook/product/product-processes/continuous-interviewing.md": {
       "path": "content/handbook/product/product-processes/continuous-interviewing.md",
-      "upstream_sha": "8451bcaa23ef826bedc5422c87ee89de121dd85b",
-      "translated_at": "2026-07-14T06:42:18+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:29:12+09:00",
       "model": "codex",
-      "input_hash": "49ef9194b080a6a1bd1ed26f913c229564ceaa9c9c7fb84695b83e56d3edef77",
-      "upstream_committed_at": "2026-07-13T19:21:22+01:00"
+      "input_hash": "730013bdca27606344b6eaceb0da8470777248f01898eef40dbd4b9bac098731",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/product-processes/cross-functional-prioritization.md": {
       "path": "content/handbook/product/product-processes/cross-functional-prioritization.md",
@@ -31362,11 +31362,11 @@
     },
     "content/handbook/product/product-processes/sensing-mechanisms.md": {
       "path": "content/handbook/product/product-processes/sensing-mechanisms.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "0d074f47d97516b10bf354dabed0d8bd593fcacc295e7a357b5ee7c98dae1cd9",
-      "upstream_committed_at": "2026-02-23T15:35:45-08:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:29:12+09:00",
+      "model": "codex",
+      "input_hash": "78040ef284ee1643737382a61cb517767a60ce2fb1377c426adb8b02a0c2f08e",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/product-processes/tiering-guidance-for-features.md": {
       "path": "content/handbook/product/product-processes/tiering-guidance-for-features.md",
@@ -31426,11 +31426,11 @@
     },
     "content/handbook/product/product-management/learning-and-development.md": {
       "path": "content/handbook/product/product-management/learning-and-development.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "2291fb46d8b9753e41d3f0028fcffd52ebd720791daca7af45fe9116c948e480",
-      "upstream_committed_at": "2026-03-06T00:30:56+00:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:18:58Z",
+      "model": "codex",
+      "input_hash": "8212f037281b0cefb0f62107a596325fe261afacf5ee32f155fb7a28430ad306",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/product-management/product-cdf-competencies.md": {
       "path": "content/handbook/product/product-management/product-cdf-competencies.md",
@@ -31442,11 +31442,11 @@
     },
     "content/handbook/product/product-management/product-manager-buddy-tasks.md": {
       "path": "content/handbook/product/product-management/product-manager-buddy-tasks.md",
-      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
-      "translated_at": "2026-06-01T21:12:29Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "837a5a9e8da079bb7ce7936e46b41acea82f66c43a6d59a8145e39ea025ad38d",
-      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:18:58Z",
+      "model": "codex",
+      "input_hash": "49356517b84bd8a35893c2d5b4b30849bfdc239955ac40698fadbcc4554e2de1",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/product-management/product-manager-role.md": {
       "path": "content/handbook/product/product-management/product-manager-role.md",
@@ -31618,11 +31618,11 @@
     },
     "content/handbook/product/groups/growth/_index.md": {
       "path": "content/handbook/product/groups/growth/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "7ae24efae2064a23e24adb25a239898574f652921041aa16f2923d13d7b31dc8",
-      "upstream_committed_at": "2026-02-23T15:35:45-08:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:18:58Z",
+      "model": "codex",
+      "input_hash": "a1d0c461a7d2463ce1e0a3a7e34ec1431d552ed6896f44e2a99c570aaa19d7b6",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/groups/fulfillment/_index.md": {
       "path": "content/handbook/product/groups/fulfillment/_index.md",
@@ -31754,11 +31754,11 @@
     },
     "content/handbook/product/ai/_index.md": {
       "path": "content/handbook/product/ai/_index.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:17:57Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "d3db7866f4982fcb911c15559f65d79763169ff178b75b3651e01fbc0cd0853c",
-      "upstream_committed_at": "2026-06-09T14:49:21+05:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:18:58Z",
+      "model": "codex",
+      "input_hash": "9112782e72a825001590f884303b5ce0f3c2295a43b069e976b1f343bae6a050",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ai/continuity-plan.md": {
       "path": "content/handbook/product/ai/continuity-plan.md",
@@ -31778,11 +31778,11 @@
     },
     "content/handbook/product/ai/ux-maturity.md": {
       "path": "content/handbook/product/ai/ux-maturity.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "99459305468e9424026a2c1222935480025ad4c6a5f11f2848da3a05521cf162",
-      "upstream_committed_at": "2026-02-23T15:35:45-08:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:18:58Z",
+      "model": "codex",
+      "input_hash": "b16d54e6cf085172b0d6534c75c002df71f0d04c00e7b7b70269f88dcf3bd862",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/product/ai/ux-support.md": {
       "path": "content/handbook/product/ai/ux-support.md",
@@ -32338,11 +32338,11 @@
     },
     "content/handbook/people-group/general-onboarding/_index.md": {
       "path": "content/handbook/people-group/general-onboarding/_index.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T09:31:27+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:18:58Z",
       "model": "codex",
-      "input_hash": "e581014c9810aad72b41f53ef79719f890b08b5964be7f8e2c66cc1667e8e865",
-      "upstream_committed_at": "2026-07-08T14:46:05-04:00"
+      "input_hash": "30d75988dd03d99ed25cbdff0015995d2c451bd5fe8bfc07073af59a773e2f05",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/people-group/general-onboarding/mr-buddies.md": {
       "path": "content/handbook/people-group/general-onboarding/mr-buddies.md",
@@ -32562,11 +32562,11 @@
     },
     "content/handbook/marketing/readmes/brian-tabbert.md": {
       "path": "content/handbook/marketing/readmes/brian-tabbert.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9ca411f8087531c82dde03a681166acc3e35a2d0707693394a03d158c064d2d3",
-      "upstream_committed_at": "2025-10-17T08:20:38-04:00"
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-16T21:18:58Z",
+      "model": "codex",
+      "input_hash": "a719ecf98e50db9e381f630f422c9767a5e568a3840a638757f33d629b1bd4f9",
+      "upstream_committed_at": "2026-07-16T08:18:28-04:00"
     },
     "content/handbook/marketing/readmes/jean-baptiste-larramendy.md": {
       "path": "content/handbook/marketing/readmes/jean-baptiste-larramendy.md",
@@ -33738,11 +33738,11 @@
     },
     "content/handbook/upstream-studios/research-operations/recruitment-methods.md": {
       "path": "content/handbook/upstream-studios/research-operations/recruitment-methods.md",
-      "upstream_sha": "8451bcaa23ef826bedc5422c87ee89de121dd85b",
-      "translated_at": "2026-07-14T06:10:50+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:46:21+09:00",
       "model": "codex",
-      "input_hash": "c696927bebcac6681223c47f1ffaf740986472c00705262ae7e6c083604afd3b",
-      "upstream_committed_at": "2026-07-13T19:21:22+01:00"
+      "input_hash": "c025f5141168aa5fd912575705cc57c1e9475c5d2ddc4d5a588bbbb9c80f5d0e",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/upstream-studios/research-operations/reops-procurement.md": {
       "path": "content/handbook/upstream-studios/research-operations/reops-procurement.md",
@@ -33754,11 +33754,11 @@
     },
     "content/handbook/upstream-studios/research-operations/research-specialist-fill-in.md": {
       "path": "content/handbook/upstream-studios/research-operations/research-specialist-fill-in.md",
-      "upstream_sha": "8451bcaa23ef826bedc5422c87ee89de121dd85b",
-      "translated_at": "2026-07-14T06:10:50+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:04:09+09:00",
       "model": "codex",
-      "input_hash": "320a2f9e07a0ef7208630ed4e620dd99db779b028eda9be0c3bd2dac7c84be95",
-      "upstream_committed_at": "2026-07-13T19:21:22+01:00"
+      "input_hash": "f18c78d88b3cdb276c5b651cc75d55de11846b68f69dc53152694686b7d47d88",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/upstream-studios/research-operations/shareouts/index.md": {
       "path": "content/handbook/upstream-studios/research-operations/shareouts/index.md",
@@ -33770,11 +33770,11 @@
     },
     "content/handbook/upstream-studios/research-operations/participation-gratuities/index.md": {
       "path": "content/handbook/upstream-studios/research-operations/participation-gratuities/index.md",
-      "upstream_sha": "8451bcaa23ef826bedc5422c87ee89de121dd85b",
-      "translated_at": "2026-07-14T06:10:50+09:00",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:46:21+09:00",
       "model": "codex",
-      "input_hash": "b670af6be56bb69b8f57c51bed7858ebef0be09e969a3e5f9e8e9ec7e346d265",
-      "upstream_committed_at": "2026-07-13T19:21:22+01:00"
+      "input_hash": "533761d5a7d272deaf259756f1e46fe4d914191dacccb38d32320c78da778b93",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     },
     "content/handbook/engineering/architecture/design-documents/theseus_platform_vision/decisions/001_protobuf_as_preferred_schema_language.md": {
       "path": "content/handbook/engineering/architecture/design-documents/theseus_platform_vision/decisions/001_protobuf_as_preferred_schema_language.md",
@@ -33855,6 +33855,574 @@
       "model": "codex",
       "input_hash": "8194db4ec916442310def21607e34312ad82e41d8cdc496ce51c64dea0a3a72d",
       "upstream_committed_at": "2026-07-14T10:11:24-07:00"
+    },
+    "content/handbook/upstream-studios/experience-research/_index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/_index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:46:21+09:00",
+      "model": "codex",
+      "input_hash": "7bd2ae82a33a404a9c8637b1ab94343bd6484eca4f8cd2f160be10740a37187d",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/analyzing-research-data.md": {
+      "path": "content/handbook/upstream-studios/experience-research/analyzing-research-data.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:46:21+09:00",
+      "model": "codex",
+      "input_hash": "2a58d4c74c0eca84f41efb9db7e3d523cdba6faa7d0885436d36036bfa5e0927",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/analyzing-survey-verbatim.md": {
+      "path": "content/handbook/upstream-studios/experience-research/analyzing-survey-verbatim.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:46:21+09:00",
+      "model": "codex",
+      "input_hash": "d317cb173f47edd9641fe5860ba8a4a2753e32a0e6a6aadfdb95b5aa43d7657e",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/attending-a-research-event.md": {
+      "path": "content/handbook/upstream-studios/experience-research/attending-a-research-event.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:46:21+09:00",
+      "model": "codex",
+      "input_hash": "4fcb9f099d955be2aee30f0e2f1c3c80b404a610a693d342f6ad7b2e91f7eb26",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/choosing-a-research-methodology.md": {
+      "path": "content/handbook/upstream-studios/experience-research/choosing-a-research-methodology.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:46:21+09:00",
+      "model": "codex",
+      "input_hash": "62da820fdac82b1403c7cfceb77e3b4d49f87550467f0f25083098c7ab6c5214",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/collecting-useful-data.md": {
+      "path": "content/handbook/upstream-studios/experience-research/collecting-useful-data.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T06:46:21+09:00",
+      "model": "codex",
+      "input_hash": "631334e957346bab888a4f131124230c327251f7337a2c80df5d0adaaf9bc556",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/community-contributions-for-actionable-insights/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/community-contributions-for-actionable-insights/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:07:05+09:00",
+      "model": "codex",
+      "input_hash": "4aca2f5afab1a9ce8bbde24fe7685b5809ee0d5cde3a41197543543a2fa119fc",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/comparative-testing-for-navigation.md": {
+      "path": "content/handbook/upstream-studios/experience-research/comparative-testing-for-navigation.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:07:05+09:00",
+      "model": "codex",
+      "input_hash": "04f6a734f45a45a2e3727c7278f8c5c181873a63227fb73ba69148f88fa7a1e3",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/creating-first-click-study-qualtrics.md": {
+      "path": "content/handbook/upstream-studios/experience-research/creating-first-click-study-qualtrics.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:07:05+09:00",
+      "model": "codex",
+      "input_hash": "a1fc85ebd17b663ac1bd0d17e7ca29081af5c035b819e37749448f87c123eb3e",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/defining-goals-objectives-and-hypotheses/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/defining-goals-objectives-and-hypotheses/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:07:05+09:00",
+      "model": "codex",
+      "input_hash": "2961b4e1249f84c2454325f60b7b9f711a0268f55291fe1a5f055ebd1a61237c",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/diary-studies.md": {
+      "path": "content/handbook/upstream-studios/experience-research/diary-studies.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:07:05+09:00",
+      "model": "codex",
+      "input_hash": "6161dd2e5104f0dd188426ebf732d19160752a39ceed8c85b546ba2a9eb88355",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/discussion-guide-user-interviews.md": {
+      "path": "content/handbook/upstream-studios/experience-research/discussion-guide-user-interviews.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:07:05+09:00",
+      "model": "codex",
+      "input_hash": "23ea4cba2f4aa62836048e23280444f68f40f776978ba493d3e5912bae146e9e",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/early-solution-validation-process-for-navigation/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/early-solution-validation-process-for-navigation/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:07:05+09:00",
+      "model": "codex",
+      "input_hash": "61335651d453a06f19f432f0e78c2894e4e2d02e8a8b929cf0174eef85a11904",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/evaluating-navigation/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/evaluating-navigation/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:07:05+09:00",
+      "model": "codex",
+      "input_hash": "d0a0e3614438b13a62ac43630f5371f5bbd15ac8b38f4650a6ab0044a5a33f79",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/facilitating-user-interviews/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/facilitating-user-interviews/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:07:05+09:00",
+      "model": "codex",
+      "input_hash": "03739610f5697c910049cb65116056a63fed2493eec610988a3f89bdf4bff977",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/finding-existing-research.md": {
+      "path": "content/handbook/upstream-studios/experience-research/finding-existing-research.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:07:05+09:00",
+      "model": "codex",
+      "input_hash": "1371b3378e22c196185438f09784401ec4a62c56e61ef26d3158da6ec897265a",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/finding-saas-users.md": {
+      "path": "content/handbook/upstream-studios/experience-research/finding-saas-users.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:18:26+09:00",
+      "model": "codex",
+      "input_hash": "47a1c67da84c3169c934e21fa897a4ad3b739ede80b3a14616e24586f28a16f4",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/first-click-testing.md": {
+      "path": "content/handbook/upstream-studios/experience-research/first-click-testing.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:18:26+09:00",
+      "model": "codex",
+      "input_hash": "b5c4a26f227cfd521a162a13aed00e6eddc6ae4668b7d18e53cb6829551a80da",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/foundational-research/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/foundational-research/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:18:26+09:00",
+      "model": "codex",
+      "input_hash": "aee4fa1fd127f9e4324747fdbe98a74e31655aa7abe55093898a34f9d1272641",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/how-to-conduct-ux-research-workshops/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/how-to-conduct-ux-research-workshops/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:18:26+09:00",
+      "model": "codex",
+      "input_hash": "b8f7f1460061397354cec59b45ffe1d5d4c1d126676b4c6c2996438f8db6f496",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/how-uxr-team-operates/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/how-uxr-team-operates/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:18:26+09:00",
+      "model": "codex",
+      "input_hash": "d1262b66a604bc4181449ebe8624da538ac271a795c620c2a9e486993c0e3566",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/interview-carousel.md": {
+      "path": "content/handbook/upstream-studios/experience-research/interview-carousel.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:18:26+09:00",
+      "model": "codex",
+      "input_hash": "e98ed3cb7065081eef1e0144f4aad1895eca6504fc4af833e6196abdfb807451",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/kano-model/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/kano-model/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:18:26+09:00",
+      "model": "codex",
+      "input_hash": "3c06c813e0685a4813a4ebb31c91578e7b60f7fd29007a39e6ada2207aaf5962",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/longitudinal-studies/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/longitudinal-studies/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:18:26+09:00",
+      "model": "codex",
+      "input_hash": "ea8aeffb8995037be00f7af0dfd4eade7aee139172d7c251a4e52198b337bd19",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/mental-modeling/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/mental-modeling/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:18:26+09:00",
+      "model": "codex",
+      "input_hash": "c7bcc3b8fa92577041512f4d8b045275a07d4f81681c13f57dafe5f22c5929ba",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/preference-testing/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/preference-testing/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:18:26+09:00",
+      "model": "codex",
+      "input_hash": "87a9098f5ab2223fb5a439cb15b7f9c234e86808ca5bdc37b11774d846e6f062",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/product-analytics-for-ux-research/_index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/product-analytics-for-ux-research/_index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:37:26+09:00",
+      "model": "codex",
+      "input_hash": "19dfaa4338f26ed00a5fc0d4cdf5e527c2be475911270cd23380ab30fa957d70",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/quantitative-data/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/quantitative-data/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:37:26+09:00",
+      "model": "codex",
+      "input_hash": "6ed5880f81d419840e6f2a191ed828dc9ea044199e702c4f9c3ec2e2121eff34",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/rapid-validations.md": {
+      "path": "content/handbook/upstream-studios/experience-research/rapid-validations.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:37:26+09:00",
+      "model": "codex",
+      "input_hash": "05a5860a80c332d4210480b288a3feb409d27f8f819d9eb03884bd608468e3b1",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/recruiting-participants/_index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/recruiting-participants/_index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:37:26+09:00",
+      "model": "codex",
+      "input_hash": "71ebc926618a0e58a5a0e3895bf93b70ee9c4a7aa9cea2e47945910e9807e064",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/recruiting-participants/recruiting-email-tips.md": {
+      "path": "content/handbook/upstream-studios/experience-research/recruiting-participants/recruiting-email-tips.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:37:26+09:00",
+      "model": "codex",
+      "input_hash": "f8eb89f713ef846ce5629ed2c75ef911065b529c12d2adbd8a0b6fd878e036de",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/recruiting-participants/common-screener/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/recruiting-participants/common-screener/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:37:26+09:00",
+      "model": "codex",
+      "input_hash": "46f914cffb99bded193d479850164f9cda040a92b10b13195f99ee53d553a4d3",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/research-in-the-ai-space/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/research-in-the-ai-space/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:37:26+09:00",
+      "model": "codex",
+      "input_hash": "f97b1563c78252470f258b7a9276b4b250112e2a0a87126bf53bf507b2dcab89",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/research-insights/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/research-insights/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:37:26+09:00",
+      "model": "codex",
+      "input_hash": "b2996c61f24c95ffd636f97371161881ec978b1bd59afe16debb3b7646ee5b2d",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/research-library.md": {
+      "path": "content/handbook/upstream-studios/experience-research/research-library.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:37:26+09:00",
+      "model": "codex",
+      "input_hash": "6aef9497ae8c783c2e08085ccfaa7cdc84725f4984b866293f3032f4f465f2a0",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/research-panel-management.md": {
+      "path": "content/handbook/upstream-studios/experience-research/research-panel-management.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T07:37:26+09:00",
+      "model": "codex",
+      "input_hash": "52a61a011b91d6fb91db649dbb7c4005fa8eb04460afc59146f4252c0df7acac",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/research-prioritization/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/research-prioritization/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:00:00+09:00",
+      "model": "codex",
+      "input_hash": "cc7ed8a5b819b2a73330632f14baa861f9078618853054f9aad66814f992c2c7",
+      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/research-shadowing.md": {
+      "path": "content/handbook/upstream-studios/experience-research/research-shadowing.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:00:00+09:00",
+      "model": "codex",
+      "input_hash": "c6538bfd98635f2f7250c5743e70869625f75f762b0acc402f9a8d563c587aea",
+      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/research-tools.md": {
+      "path": "content/handbook/upstream-studios/experience-research/research-tools.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:00:00+09:00",
+      "model": "codex",
+      "input_hash": "2224f4170a87c1b72de51cbce1fad79097d5c24753184e9ac3d45c0e944e904d",
+      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/resources-for-research-dris/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/resources-for-research-dris/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:00:00+09:00",
+      "model": "codex",
+      "input_hash": "fa095792b96a098e79d111138bc6f59eb13b3e6d1756ab24a14bf3540316ed66",
+      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/rite/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/rite/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:00:00+09:00",
+      "model": "codex",
+      "input_hash": "2e6730d2980d13e83dbc7dcc8a9c0fbbb1d531d0bb25d959717e83485339fedd",
+      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/service-design.md": {
+      "path": "content/handbook/upstream-studios/experience-research/service-design.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:00:00+09:00",
+      "model": "codex",
+      "input_hash": "6626dd270c7905d57265b64f3b5e95cf84432d03f55252e1cb3b3d562296d567",
+      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/solution-validation-and-methods.md": {
+      "path": "content/handbook/upstream-studios/experience-research/solution-validation-and-methods.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:00:00+09:00",
+      "model": "codex",
+      "input_hash": "52075b118e982708c1aed700a1fc109b98e0ad7d86e59ece29dc068f20d9da51",
+      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/strategic-research-at-gitlab/_index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/strategic-research-at-gitlab/_index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:00:00+09:00",
+      "model": "codex",
+      "input_hash": "b930a1fc747a1becd50fab36f1de89ba8c5463bd0d37da2019cc2ec12bb32458",
+      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/strategic-research-at-gitlab/gitlab-adoption-research-program.md": {
+      "path": "content/handbook/upstream-studios/experience-research/strategic-research-at-gitlab/gitlab-adoption-research-program.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:00:00+09:00",
+      "model": "codex",
+      "input_hash": "5af6009f3ea1a49a7f8c25e95f9ba018718d217ed7232e9bb96141516307197f",
+      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/surveys/_index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/surveys/_index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:00:00+09:00",
+      "model": "codex",
+      "input_hash": "10a94756957f0517016461dd874b9ae5000408c0c048bea4a29d566b9b2188ed",
+      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/surveys/common-types-of-survey-questions/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/surveys/common-types-of-survey-questions/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:16:44+09:00",
+      "model": "codex",
+      "input_hash": "098108f663f2f46aabbf981430ffa08363ed2b523a28602c2c6cb758957255ec",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/surveys/designing-your-survey.md": {
+      "path": "content/handbook/upstream-studios/experience-research/surveys/designing-your-survey.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:16:44+09:00",
+      "model": "codex",
+      "input_hash": "5abccb6a1703a18822f908d4c2c5c62fe5643eaef4d0088d6071e0a211668532",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/surveys/how-to-identify-low-quality-data-when-designing-and-reviewing-your-survey.md": {
+      "path": "content/handbook/upstream-studios/experience-research/surveys/how-to-identify-low-quality-data-when-designing-and-reviewing-your-survey.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:16:44+09:00",
+      "model": "codex",
+      "input_hash": "dc45a2cae6854a2f3fd0000a85ce3d565833798f70802868b03131a47e8cb577",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/surveys/piloting-your-survey.md": {
+      "path": "content/handbook/upstream-studios/experience-research/surveys/piloting-your-survey.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:16:44+09:00",
+      "model": "codex",
+      "input_hash": "d0b99c2cbef33f609c83706158bd0f9a48ebb83334db48bf222aa93a20ba4a69",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/surveys/qualtrics/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/surveys/qualtrics/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:16:44+09:00",
+      "model": "codex",
+      "input_hash": "215c5f709d567b9e2e3116a628c9ec4bcb91e536229eadc44613eff5d21e3bd5",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/surveys/sample-sizes-for-surveys.md": {
+      "path": "content/handbook/upstream-studios/experience-research/surveys/sample-sizes-for-surveys.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:16:44+09:00",
+      "model": "codex",
+      "input_hash": "d31ea236407e881f050d5ca597d41876b2b2bc43faa8d3ebd3ebdbb69f30c7e8",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/surveys/survey-question-scales/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/surveys/survey-question-scales/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:16:44+09:00",
+      "model": "codex",
+      "input_hash": "668d73095dd5a3b1d0d92a0919c9b29896106fd31574d21af133dcad0a97e3e7",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/tracking-actionable-insights.md": {
+      "path": "content/handbook/upstream-studios/experience-research/tracking-actionable-insights.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:16:44+09:00",
+      "model": "codex",
+      "input_hash": "1fcd84e8ba6a3f26b5bc048205def73f22650f1c2a02fa4f7c4b36c70e47532b",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/tracking-research-projects.md": {
+      "path": "content/handbook/upstream-studios/experience-research/tracking-research-projects.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:16:44+09:00",
+      "model": "codex",
+      "input_hash": "1090d3fa9555c7a1aed155956a22a003aba46b6944271434a8f826ca30ac7ead",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/tracking-research-velocity.md": {
+      "path": "content/handbook/upstream-studios/experience-research/tracking-research-velocity.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:16:44+09:00",
+      "model": "codex",
+      "input_hash": "dcd86e7b7298008834cceef4442ba25c030f2db179534a9642ccf111e6821c1c",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/unmoderated-testing.md": {
+      "path": "content/handbook/upstream-studios/experience-research/unmoderated-testing.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:32:10+09:00",
+      "model": "codex",
+      "input_hash": "1842bb78b17104336aef26f66ce194a53c6af7d76ecd7508036c921f37df6473",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/usability-benchmarking.md": {
+      "path": "content/handbook/upstream-studios/experience-research/usability-benchmarking.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:32:10+09:00",
+      "model": "codex",
+      "input_hash": "40da13f97f3f406b31a1f18f23bf9d4404e13a603a997bc3e7299eda0edbfc67",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/usability-testing.md": {
+      "path": "content/handbook/upstream-studios/experience-research/usability-testing.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:32:10+09:00",
+      "model": "codex",
+      "input_hash": "651606cd53cb7bf51e0520abc17c5bbe29ef38c17356a4717f3d8313a440069d",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/user-story-mapping.md": {
+      "path": "content/handbook/upstream-studios/experience-research/user-story-mapping.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:32:10+09:00",
+      "model": "codex",
+      "input_hash": "ab3b01985bb6aa8d39ec5f2abacdb39c0116ba4e3e470b656c573c767db2fe0c",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/using-rite-to-test-navigation.md": {
+      "path": "content/handbook/upstream-studios/experience-research/using-rite-to-test-navigation.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:32:10+09:00",
+      "model": "codex",
+      "input_hash": "65cd07e64cfe04d7e3a5cb7b63655cf0d25aacca9f7050856b63059c45e2805e",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/ux-bash/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/ux-bash/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:32:10+09:00",
+      "model": "codex",
+      "input_hash": "f9b15e71d777d962ebede00a375e03e8a07f246b71ebefd393a6985a8654b347",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/ux-cloud-sandbox/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/ux-cloud-sandbox/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:32:10+09:00",
+      "model": "codex",
+      "input_hash": "f483a4e01bf7520d78b60740bc1ff8bb162d320b5d1ddeb4918e8d6135fe0ca9",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/ux-research-google-calendar/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/ux-research-google-calendar/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:32:10+09:00",
+      "model": "codex",
+      "input_hash": "04e3a430dde86de8b36f73926422219c0b5fade0d72e55e2f60b4f38af361c9e",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/ux-research-growth-and-development.md": {
+      "path": "content/handbook/upstream-studios/experience-research/ux-research-growth-and-development.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:32:10+09:00",
+      "model": "codex",
+      "input_hash": "d83c50b48d025617013e57734200da21bcde222f3653960596105dde71b3ac2e",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/ux-researcher-pairings.md": {
+      "path": "content/handbook/upstream-studios/experience-research/ux-researcher-pairings.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T08:32:10+09:00",
+      "model": "codex",
+      "input_hash": "8d3a0c03d9e1e4d05dbbe6cff9c39bbb51407fb59fc012c0ad58f2d1c0ee5349",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/problem-validation-and-methods.md": {
+      "path": "content/handbook/upstream-studios/experience-research/problem-validation-and-methods.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T09:05:00+09:00",
+      "model": "codex",
+      "input_hash": "4fc284754ab8582ec99782ccc2f30a9a93b79539d3172faf5cd114d19680a355",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/problem-validation-single-stage-group.md": {
+      "path": "content/handbook/upstream-studios/experience-research/problem-validation-single-stage-group.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T09:05:00+09:00",
+      "model": "codex",
+      "input_hash": "b9a567c8a9dfbe7921a519ec25f1f7f074911c9d1e86f0ae30b0a8b170a772da",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/writing-usability-testing-script.md": {
+      "path": "content/handbook/upstream-studios/experience-research/writing-usability-testing-script.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T09:05:00+09:00",
+      "model": "codex",
+      "input_hash": "0bd9566abe13de84f67b2c1a549e3da673f641baa80af630e570cb9dc7a68873",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/write-effective-screener/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/write-effective-screener/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T09:05:00+09:00",
+      "model": "codex",
+      "input_hash": "d8c47ee37422c9e87385baa2a960eb3cea92724399be078fac7a50691623d0d6",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+    },
+    "content/handbook/upstream-studios/experience-research/when-to-conduct-ux-research/index.md": {
+      "path": "content/handbook/upstream-studios/experience-research/when-to-conduct-ux-research/index.md",
+      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
+      "translated_at": "2026-07-17T09:05:00+09:00",
+      "model": "codex",
+      "input_hash": "a61d93821c725efd4cc68164cff65ee55a876aff471afb660b4faeb5953584d4",
+      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
     }
   }
 }

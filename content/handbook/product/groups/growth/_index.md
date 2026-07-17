@@ -1,11 +1,11 @@
 ---
 title: Growth セクションの仕組み
 upstream_path: /handbook/product/groups/growth/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-16T21:18:58Z"
+translator: codex
 stale: false
-lastmod: "2026-02-23T15:35:45-08:00"
+lastmod: "2026-07-16T17:32:42-03:00"
 ---
 
 ## 概要
@@ -132,7 +132,7 @@ Growth は製品のエリアを所有しませんが、GitLab アプリケーシ
 
 #### UX の働き方
 
-ハンドブックの [Product Design セクション](/handbook/product/ux/)で説明されている [プロダクトデザイナーのワークフロー](/handbook/product/ux/product-designer/)と [UX リサーチャーのワークフロー](/handbook/product/ux/experience-research/)に従います。Growth デザイナーとして、[実験ワークフロー](/handbook/engineering/development/growth/experimentation/)に従って、デザイン変更のインパクトを徹底的に測定します。さらに:
+ハンドブックの [Product Design セクション](/handbook/product/ux/)で説明されている [プロダクトデザイナーのワークフロー](/handbook/product/ux/product-designer/)と [UX リサーチャーのワークフロー](/handbook/upstream-studios/experience-research/)に従います。Growth デザイナーとして、[実験ワークフロー](/handbook/engineering/development/growth/experimentation/)に従って、デザイン変更のインパクトを徹底的に測定します。さらに:
 
 - 全員が何をしているかを確認できるように Issue ボードがあります。計画 Issue で Issue ボードを参照してください。たとえば、これは [Acquisition Planning Issue のテンプレート](https://gitlab.com/gitlab-org/growth/team-tasks/-/blob/master/.gitlab/issue_templates/growth_acquisition_planning_template.md)です。
 - Issue には `UX`、`devops::growth`、`group::` で**ラベル**を付けます。

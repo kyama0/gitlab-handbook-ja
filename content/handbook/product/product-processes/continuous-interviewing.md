@@ -2,11 +2,11 @@
 title: "継続的インタビュー"
 description: "継続的インタビューの目的と、その設定方法について"
 upstream_path: /handbook/product/product-processes/continuous-interviewing/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-translated_at: "2026-07-14T06:42:18+09:00"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-17T06:29:12+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-13T19:21:22+01:00"
+lastmod: "2026-07-16T17:32:42-03:00"
 ---
 
 [継続的インタビュー](https://medium.com/@ttorres/continuous-interviewing-the-key-to-successful-product-teams-6bf63bfc1936) は、プロダクトマネージャー (PM) がユーザーから継続的に学び、プロダクトディスカバリーに活用できるインサイトを発見できるプロセスです。これらのインタビューは、特定の仮説やリサーチ要求を中心に組み立てられていないため、ほとんどの場合同じスクリプトに従います。ただし、PM は必要に応じてインタビューの潜在的な焦点をシフトし、特定のトピックをより深く掘り下げることができます。
@@ -15,7 +15,7 @@ lastmod: "2026-07-13T19:21:22+01:00"
 
 継続的インタビューの実践を開始する前に、PM は自分の製品領域に関連する独自のインタビュースクリプトを作成する必要があります。プロダクトマネージャーは UX リサーチや [このプロジェクト](https://gitlab.com/gitlab-com/user-interviews/-/issues) の例を参考にスクリプトを作成できます。
 
-顧客と話す際、PM はこれらの [インタビューのヒント](/handbook/product/ux/experience-research/facilitating-user-interviews/#tips-for-interviewing) を参照し、ユーザーとプロダクトチームにとってこれらの会話が成功した経験になるよう支援する必要があります。
+顧客と話す際、PM はこれらの [インタビューのヒント](/handbook/upstream-studios/experience-research/facilitating-user-interviews/#tips-for-interviewing) を参照し、ユーザーとプロダクトチームにとってこれらの会話が成功した経験になるよう支援する必要があります。
 
 顧客の同意のもと、インタビューは録画され、[Dovetail](/handbook/product/ux/dovetail/) に追加され、メモとトランスクリプトは [今後の参照のためにタグ付け](/handbook/product/ux/dovetail/#tagging-data-in-dovetail) されます。
 
@@ -36,7 +36,7 @@ lastmod: "2026-07-13T19:21:22+01:00"
 - カスタマーサクセスチームに対して、顧客通話に開いていることを継続的に伝える。ただし、これらは顧客インタビューであり営業通話ではないことを明確にする。`#customer-success` Slack チャンネルを使うか、[CSM プロジェクト Issue](https://gitlab.com/gitlab-com/customer-success/tam/-/issues/new?issueable_template=Product%20Engagement) を開く
   - 月次のカスタマーサクセスマネージャー (CSM) ミーティングに参加し、Google ドキュメントのアジェンダ内で継続的インタビューのリクエストを行う
   - CSM とコーヒーチャットを設定して、継続的インタビューのリクエストについて話し合う
-- [UX Research を通じた参加者の募集](/handbook/product/ux/experience-research/recruiting-participants/) のための追加リソース
+- [UX Research を通じた参加者の募集](/handbook/upstream-studios/experience-research/recruiting-participants/) のための追加リソース
 
 #### 継続的インタビューを主導するためのヒント
 
