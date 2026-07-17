@@ -2,10 +2,10 @@
 title: "GitLab ナビゲーション"
 description: "ナビゲーションとは、ユーザーが GitLab 内を移動する助けとなる要素を指し、構成や道案内の手がかりを含みます。"
 upstream_path: /handbook/product/ux/navigation/
-upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
-lastmod: 2026-06-04T06:51:08-07:00
-translated_at: "2026-06-06T12:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+lastmod: "2026-07-16T17:32:42-03:00"
+translated_at: "2026-07-17T06:29:12+09:00"
+translator: codex
 stale: false
 ---
 
@@ -97,13 +97,13 @@ GitLab の UX はユーザーがさまざまな方法でプロダクト全体を
 1. このナビゲーションの提案は、私たちの[主要な JTBD](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/jtbd.yml?ref_type=heads) の 1 つを促進するか？ どのジョブか？
 1. この変更は、そのジョブを完了しようとするユーザーのワークフローをどのように改善するか？
 
-ナビゲーションの機会の領域を学ぶために実施できる[問題検証リサーチ](/handbook/product/ux/experience-research/problem-validation-and-methods/)には、さまざまな種類があります。実施する具体的なリサーチの種類は、調査のリサーチ質問と目標に基づくべきです。以下のリサーチ手法とフレームワークは、既存の GitLab ナビゲーションへの新しい追加を正当化するためにリサーチを使える方法の例です。
+ナビゲーションの機会の領域を学ぶために実施できる[問題検証リサーチ](/handbook/upstream-studios/experience-research/problem-validation-and-methods/)には、さまざまな種類があります。実施する具体的なリサーチの種類は、調査のリサーチ質問と目標に基づくべきです。以下のリサーチ手法とフレームワークは、既存の GitLab ナビゲーションへの新しい追加を正当化するためにリサーチを使える方法の例です。
 
 1. [コンテキスチュアル・インクワイアリー](https://www.nngroup.com/articles/contextual-inquiry/): この手法では、ユーザーが自分のロールに関連するタスクを実行する様子を観察・インタビューし、その背後にある「なぜ」と「どのように」を理解します。
    - **例**: ユーザーが、ダッシュボードを見つけるために GitLab 内の複数のメニューやページをどのように移動しているかを示すことがあります。このインサイトは、すべてのダッシュボードを見つけるための単一のページが GitLab に必要であることを明らかにします。
-1. [Jobs to be Done (JTBD)](/handbook/product/ux/jobs-to-be-done/): このフレームワークは[基礎リサーチ](/handbook/product/ux/experience-research/foundational-research/)の一種で、顧客が自分のロールの中で達成したいジョブを学ぶことを目的としています。ジョブによって、私たちは顧客の仕事の状況、目標、成果を定義できます。
+1. [Jobs to be Done (JTBD)](/handbook/product/ux/jobs-to-be-done/): このフレームワークは[基礎リサーチ](/handbook/upstream-studios/experience-research/foundational-research/)の一種で、顧客が自分のロールの中で達成したいジョブを学ぶことを目的としています。ジョブによって、私たちは顧客の仕事の状況、目標、成果を定義できます。
    - **例**: ユーザーへのインタビューを通じて、彼らにはアプリケーションの健全性を示すためにメトリクスを追跡し、アプリケーションが故障しているときを特定できるようにするという主要なジョブがあることを学びます。このインサイトは、アプリケーションのメトリクスを表示するページを追加することで GitLab において埋められるギャップを示唆します。
-1. [日記調査](/handbook/product/ux/experience-research/diary-studies/): この手法は、一定期間にわたってユーザーからのフィードバックを得るために使われ、日・週・月単位で起こる変化を明らかにできます。
+1. [日記調査](/handbook/upstream-studios/experience-research/diary-studies/): この手法は、一定期間にわたってユーザーからのフィードバックを得るために使われ、日・週・月単位で起こる変化を明らかにできます。
    - **例**: ユーザーが GitLab のナビゲーションバーへの大きな変更にどう関わるかについてのフィードバックを集める際に、GitLab の管理者が設定を調整するための管理者エリアを見つけることに、月をまたいで継続的に苦労していることを観察します。このインサイトは、管理者エリアが時間が経っても見つけにくいため、ユーザーインターフェース上でそれを浮かび上がらせる必要があることを示唆します。
 
 ナビゲーションの変更が必要かどうかを学ぶために尋ねる質問:
@@ -113,7 +113,7 @@ GitLab の UX はユーザーがさまざまな方法でプロダクト全体を
 1. 既存のツールを使って特定のタスクをどのように実行するか見せてください。
 1. そのタスクを完了するプロセスについて、もしあれば、何を改善しますか？
 
-ナビゲーションの問題に対するインサイトが得られたら、プロダクトチームの DRI は、後続の[ソリューション検証](/handbook/product/ux/experience-research/evaluating-navigation/#our-approach-to-evaluating-navigation-changes)調査を通じて理想的なソリューションを評価するために、Product Design と UX Research と協力すべきです。
+ナビゲーションの問題に対するインサイトが得られたら、プロダクトチームの DRI は、後続の[ソリューション検証](/handbook/upstream-studios/experience-research/evaluating-navigation/#our-approach-to-evaluating-navigation-changes)調査を通じて理想的なソリューションを評価するために、Product Design と UX Research と協力すべきです。
 
 ### ナビゲーションの変更を提案する方法 {#how-to-propose-a-navigation-change}
 

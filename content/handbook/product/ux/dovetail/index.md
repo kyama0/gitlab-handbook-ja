@@ -2,14 +2,14 @@
 title: "Dovetailでリサーチインサイトを文書化する"
 description: "GitLab UXリサーチチームのDovetailでのインサイト文書化ガイド"
 upstream_path: /handbook/product/ux/dovetail/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T12:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-17T06:29:12+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-22T14:47:44+02:00"
+lastmod: "2026-07-16T17:32:42-03:00"
 ---
 
-UXリサーチチームは、GitLabのUXリサーチプログラムを通じて発見されたすべてのリサーチインサイトを文書化するために [Dovetail](https://dovetailapp.com/) を使用しています。リサーチインサイトは、ユーザー[インタビュー](/handbook/product/ux/experience-research/facilitating-user-interviews/)、[ユーザビリティテスト](/handbook/product/ux/experience-research/usability-testing/)、サーベイ、カードソート、ツリーテスト、顧客との会話などの手法を通じて収集できます。
+UXリサーチチームは、GitLabのUXリサーチプログラムを通じて発見されたすべてのリサーチインサイトを文書化するために [Dovetail](https://dovetailapp.com/) を使用しています。リサーチインサイトは、ユーザー[インタビュー](/handbook/upstream-studios/experience-research/facilitating-user-interviews/)、[ユーザビリティテスト](/handbook/upstream-studios/experience-research/usability-testing/)、サーベイ、カードソート、ツリーテスト、顧客との会話などの手法を通じて収集できます。
 
 #### なぜDovetailでリサーチを文書化するのか？
 
@@ -55,7 +55,7 @@ ReadMeファイルで、プロジェクト名を `Problem or Solution Validation
 
 Dovetailは、リサーチデータ全体に現れるパターンとテーマを特定し、それをインサイトステートメントに変えるのに役立ちます。すべての生データをインポートしたら、コンテンツをハイライトしてタグ付けする準備が整いました。ハイライトとは、リサーチセッション中に聞いたり観察したりした興味深いもの（例えば、ユーザーのペインポイントやモチベーション）と考えてください。ハイライトには、可能であれば、ハイライトが関連するGitLabの機能/エリア（例: 'Merge Requests'）と、コメントしたペルソナ（例: 'Sasha: Software Developer'）でタグを付けます。
 
-[アフィニティマッピング](https://en.wikipedia.org/wiki/Affinity_diagram) のように、Dovetailのタグはリサーチデータ全体に現れるパターンを特定し追跡するのに役立ちます。単一のハイライトに、1つまたは複数のタグを関連付けることができます。詳細なヘルプは、私たちの [ユーザーデータの分析と統合](/handbook/product/ux/experience-research/analyzing-research-data/) ハンドブックページにあります。
+[アフィニティマッピング](https://en.wikipedia.org/wiki/Affinity_diagram) のように、Dovetailのタグはリサーチデータ全体に現れるパターンを特定し追跡するのに役立ちます。単一のハイライトに、1つまたは複数のタグを関連付けることができます。詳細なヘルプは、私たちの [ユーザーデータの分析と統合](/handbook/upstream-studios/experience-research/analyzing-research-data/) ハンドブックページにあります。
 
 #### プロジェクトでグローバルタグを有効にする
 
@@ -103,11 +103,11 @@ GitLab Global Tagsは6つのカテゴリーに整理されています。
 | カテゴリー      | 詳細           |  例              |
 | ------------- | ------------- | ---------------- |
 | User Action   | これらのタグは、ユーザーがUIを使用中に何をしたかを示すために使用できます。 | タスクが与えられたとき、ユーザーは `unsure what to do` で、その後 `down the wrong path` に進む場合があります。|
-| User Feedback | リサーチセッション中にユーザーが言ったことを記述するのに有用。<br>また、汎用オプション（AからD）を持つタグのセットがあり、[解決策検証](/handbook/product/ux/experience-research/solution-validation-and-methods/) で使用できます。<br>| ワークフローに必要な機能について話すとき、ユーザーは `feature request` を持っているかもしれません。<br><br>または、デザイン評価でユーザーが `Prefer Option B` する場合もあります。                                            |
-| User Emotion  | これらのタグは、[ユーザビリティテスト](/handbook/product/ux/experience-research/usability-testing/) やウォークスルーのように、UIに対するユーザーの態度に関連しています。 | UIを提示されたとき、ユーザーは `overwhelmed` と感じる可能性があります。 |
-| Workflow      | ワークフローでのユーザーの行動を具体的に追跡するために使用できます。<br><br>また、汎用タスク番号（1〜10）を持つタグのサブセットがあり、[ユーザビリティテスト](/handbook/product/ux/experience-research/usability-testing/) や [UX Scorecards](/handbook/product/ux/ux-scorecards/#option-b-perform-a-formative-evaluation) で使用できます。| 一連のタスクを終えたが主要な成果物を逃した場合、`unsuccessful end task` タグを使用できます。<br><br>または、ユーザーが `task 1` と `task 2` を終えたタイミングを追跡したい場合があります。|
-| Personas      | 各タグは、私たちの [ユーザーペルソナ](/handbook/product/personas/#list-of-user-personas) の1つ、またはそれらのペルソナの特性に関連しています。<br><br>特定のペルソナに対応するジョブまたは機能を探すときに、これらのタグを使用してください。| ユーザーが静的スキャナーを設定するとき、`Amy, Application Security Engineer` の可能性があります。<br><br>または、ユーザーの組織について [基礎研究](/handbook/product/ux/experience-research/foundational-research/) を行う場合は、`enterprise` や `start-up` タグを使用できます。 |
-| JTBD          | ほとんどのタグは、[ジョブのマッピング](/handbook/product/ux/jobs-to-be-done/jtbd-playbook/) のさまざまな段階に関連しています。<br><br>[コンテクスチュアル・インクワイアリー](/handbook/product/ux/experience-research/problem-validation-and-methods) のような基礎ジョブリサーチを行うときに使用できます。 | コンテクスチュアルを実施するとき、ユーザーはパイプラインの監視について話す可能性があり、これは `Step in Job - monitor` でタグ付けできます。|
+| User Feedback | リサーチセッション中にユーザーが言ったことを記述するのに有用。<br>また、汎用オプション（AからD）を持つタグのセットがあり、[解決策検証](/handbook/upstream-studios/experience-research/solution-validation-and-methods/) で使用できます。<br>| ワークフローに必要な機能について話すとき、ユーザーは `feature request` を持っているかもしれません。<br><br>または、デザイン評価でユーザーが `Prefer Option B` する場合もあります。                                            |
+| User Emotion  | これらのタグは、[ユーザビリティテスト](/handbook/upstream-studios/experience-research/usability-testing/) やウォークスルーのように、UIに対するユーザーの態度に関連しています。 | UIを提示されたとき、ユーザーは `overwhelmed` と感じる可能性があります。 |
+| Workflow      | ワークフローでのユーザーの行動を具体的に追跡するために使用できます。<br><br>また、汎用タスク番号（1〜10）を持つタグのサブセットがあり、[ユーザビリティテスト](/handbook/upstream-studios/experience-research/usability-testing/) や [UX Scorecards](/handbook/product/ux/ux-scorecards/#option-b-perform-a-formative-evaluation) で使用できます。| 一連のタスクを終えたが主要な成果物を逃した場合、`unsuccessful end task` タグを使用できます。<br><br>または、ユーザーが `task 1` と `task 2` を終えたタイミングを追跡したい場合があります。|
+| Personas      | 各タグは、私たちの [ユーザーペルソナ](/handbook/product/personas/#list-of-user-personas) の1つ、またはそれらのペルソナの特性に関連しています。<br><br>特定のペルソナに対応するジョブまたは機能を探すときに、これらのタグを使用してください。| ユーザーが静的スキャナーを設定するとき、`Amy, Application Security Engineer` の可能性があります。<br><br>または、ユーザーの組織について [基礎研究](/handbook/upstream-studios/experience-research/foundational-research/) を行う場合は、`enterprise` や `start-up` タグを使用できます。 |
+| JTBD          | ほとんどのタグは、[ジョブのマッピング](/handbook/product/ux/jobs-to-be-done/jtbd-playbook/) のさまざまな段階に関連しています。<br><br>[コンテクスチュアル・インクワイアリー](/handbook/upstream-studios/experience-research/problem-validation-and-methods) のような基礎ジョブリサーチを行うときに使用できます。 | コンテクスチュアルを実施するとき、ユーザーはパイプラインの監視について話す可能性があり、これは `Step in Job - monitor` でタグ付けできます。|
 
 #### グローバルタグの定義
 

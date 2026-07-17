@@ -2,11 +2,11 @@
 title: ツールとヒント
 simple_list: true
 upstream_path: /handbook/tools-and-tips/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:30:25+09:00"
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-16T21:37:21Z"
 translator: codex
 stale: false
-lastmod: "2026-07-14T11:05:13-04:00"
+lastmod: "2026-07-16T17:32:44-03:00"
 ---
 
 ## 概要
@@ -755,7 +755,7 @@ Google Apps を使用して Google ファイルを作成し、保存場所を指
 
 GitLab 共有ファイルの Google Drive リポジトリがいくつかあります（もっとあるかもしれませんが、リストにない場合は追加してください）:
 
-- [UX Research Drive](https://drive.google.com/drive/folders/0AH_zdtW5aioNUk9PVA) - これは [Customer Discovery Meetings](/handbook/product/product-processes/#customer-discovery-meetings) からのすべての発見と、Design、UX Research、Product、Customer Success と共有された顧客からの生の機密資料を保管します。[ユーザーリサーチ](/handbook/product/ux/experience-research/) からの抽出された発見は [UXR_Insights リポジトリ](https://gitlab.com/gitlab-org/uxr_insights/) に保管されます。
+- [UX Research Drive](https://drive.google.com/drive/folders/0AH_zdtW5aioNUk9PVA) - これは [Customer Discovery Meetings](/handbook/product/product-processes/#customer-discovery-meetings) からのすべての発見と、Design、UX Research、Product、Customer Success と共有された顧客からの生の機密資料を保管します。[ユーザーリサーチ](/handbook/upstream-studios/experience-research/) からの抽出された発見は [UXR_Insights リポジトリ](https://gitlab.com/gitlab-org/uxr_insights/) に保管されます。
 - [GitLab Marketing Drive](https://drive.google.com/drive/u/0/folders/0Bz6KrzE1R_3helZZQlV3ajFNTzg) - これはマーケティング組織全体からのすべての共有ファイルを保管します。
 ベストプラクティスは、サブ組織がこのスペース内に独自のディレクトリを持つことです（例: [Strategic Marketing](https://drive.google.com/drive/u/0/folders/0Bz6KrzE1R_3hNjJMNUt2LUJGREU)）。
 - [Sales Drive](https://drive.google.com/drive/u/0/folders/0BzQII5CcGHkKSFFJWkx3R1lUdGM) - これはセールス組織からのすべての共有ファイルを保管します。

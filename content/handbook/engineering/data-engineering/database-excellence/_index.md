@@ -2,11 +2,11 @@
 title: "Database Excellence ステージ"
 description: "Database Excellence セクションは、GitLab のデータベースがスケールにおいて確実に稼働することを保証しながら、すべてのデータストアにわたるデータアーキテクチャ、配置、ライフサイクル管理についてチームが情報に基づいた意思決定を行えるようにします。"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-translated_at: "2026-06-12T13:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-17T06:09:44+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-08T10:04:59-05:00
+lastmod: 2026-07-15T15:06:40+02:00
 ---
 
 ## ミッション {#mission}
@@ -100,9 +100,9 @@ TBD
 
 ### Tier-2 オンコール {#tier-2-on-call}
 
-[Database Tier-2](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/#database-operations-dbo) は、チームメンバーが「ベストエフォート」ベースで対応する 24/5 の体制で運用されています。これは、このローテーションへのページがときに未確認のまま終わる可能性があることを意味します。データベースオペレーターの可用性が限られているため、それ以上のコミットが難しくなっています。
+[Database Excellence オンコール](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/#database-excellence) は Tier-2 ローテーションです。
 
-最近の再編成を受けて、FY27-Q2 にこのローテーションを再検討する可能性があります。
+24x5 のカバレッジ体制で、チームのキャパシティにより 05:00 - 07:00 および 22:00 - 23:00 がローテーションにおける既知のギャップです。
 
 ### 長期的な Stable Counterpart またはレビュアーの依頼 {#long-term-stable-counterpart-or-reviewer-requests}
 

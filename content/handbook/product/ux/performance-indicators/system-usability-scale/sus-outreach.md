@@ -2,11 +2,11 @@
 title: "System Usability Scale回答者アウトリーチ"
 description: "System Usability Scale（SUS）は、プロダクトの長期的なユーザビリティを測定するために使用するパフォーマンス指標です。このページでは、UXチームとのフォローアップディスカッションにオプトインした調査回答者にアウトリーチするプロセスを概説します。"
 upstream_path: /handbook/product/ux/performance-indicators/system-usability-scale/sus-outreach/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-17T06:29:12+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-12T13:14:13+00:00"
+lastmod: "2026-07-16T17:32:42-03:00"
 ---
 
 四半期ごとに、SUS 調査に、回答者が GitLab チームメンバーと自分の回答について話し合うことに関心があるかどうかを尋ねる質問を含めます。これは、プロダクトデザイナーとプロダクトマネージャーが、自分の特定のプロダクト領域のユーザビリティの課題についてより詳しく学ぶ素晴らしい機会です。
@@ -30,7 +30,7 @@ lastmod: "2026-02-12T13:14:13+00:00"
 1. 回答者に送るメールを下書きします。コピーの例は以下です。
 1. **通話には時間どおりに参加してください**。通話に参加している全員が自己紹介することを確認してください。
 1. 回答者が録画に同意した場合でも、録画をオンにする前にもう一度録画してもよいか尋ねてください。
-1. [ユーザーインタビューのファシリテーション](/handbook/product/ux/experience-research/facilitating-user-interviews/)に関するトレーニング資料を参照してください
+1. [ユーザーインタビューのファシリテーション](/handbook/upstream-studios/experience-research/facilitating-user-interviews/)に関するトレーニング資料を参照してください
 
 **例のメールコピー**:
 

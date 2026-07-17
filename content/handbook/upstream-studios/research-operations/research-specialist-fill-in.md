@@ -2,14 +2,14 @@
 title: "Research Operations Coordinator の代理を務める"
 description: "リクルートを最初から最後まで成功させるために必要な手順を詳述します"
 upstream_path: /handbook/upstream-studios/research-operations/research-specialist-fill-in/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-lastmod: "2026-07-13T19:21:22+01:00"
-translated_at: "2026-07-14T06:10:50+09:00"
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+lastmod: "2026-07-16T17:32:42-03:00"
+translated_at: "2026-07-17T07:04:09+09:00"
 translator: codex
 stale: false
 ---
 
-UX Research Operations Coordinator の役割を担う場面があります。このページでは、リクルートを最初から最後まで成功させるために必要な「舞台裏」のすべての手順を詳述します。UX Research Operations Coordinator とどう連携するかに興味がありますか？ その情報は[こちら](/handbook/product/ux/experience-research/recruiting-participants/) で見つけられます。
+UX Research Operations Coordinator の役割を担う場面があります。このページでは、リクルートを最初から最後まで成功させるために必要な「舞台裏」のすべての手順を詳述します。UX Research Operations Coordinator とどう連携するかに興味がありますか？ その情報は[こちら](/handbook/upstream-studios/experience-research/recruiting-participants/) で見つけられます。
 
 ## プロセス
 
@@ -20,7 +20,7 @@ UX Research Operations Coordinator の役割を担う場面があります。こ
 - UX Research Operations Coordinator は、これらの進行中の Issue にあなたをアサインするので、簡単に追跡できます。
 - UX Research Operations Coordinator は、Open Recruitment Projects シートも共有し、サポートが必要なプロジェクトであなたをタグ付けします。
 - 今後 X 日間および／または週間のリクルート問い合わせ先として、`#product` と `#upstream-studios` Slack チャネルで自己紹介します。
-  - Slack でリクルートリクエストを上げようとする人がいたら、[リクルートリクエスト Issue を作成](/handbook/product/ux/experience-research/recruiting-participants/#opening-a-recruitment-request) し、追跡と可視性のためにあなたにアサインするよう促します。
+  - Slack でリクルートリクエストを上げようとする人がいたら、[リクルートリクエスト Issue を作成](/handbook/upstream-studios/experience-research/recruiting-participants/#opening-a-recruitment-request) し、追跡と可視性のためにあなたにアサインするよう促します。
   - コメントで引き継ぎを確認したら、Issue があなたに引き継がれたことを依頼者に伝えます。
 - UX Research Operations Coordinator の代理が複数人いる場合は、調整を容易にするため `#research_operations` Slack チャネルに必ず参加してください。
 - UX Research Operations Coordinator が連続 7 営業日以上不在になる場合、UX Research Operations Coordinator は Research Recruiting & Incentive Request Issue Template に対する MR を開き、代理を務める人物が新規 Issue に自動アサインされるようにします。
@@ -47,7 +47,7 @@ UX Research Operations Coordinator の役割を担う場面があります。こ
 
 ### ステップ 3 - 以下のオプションから最適なリクルートチャネルを選ぶ
 
-- **[Data warehouse の連絡先](/handbook/product/ux/experience-research/recruiting-participants/)**
+- **[Data warehouse の連絡先](/handbook/upstream-studios/experience-research/recruiting-participants/)**
   - エディタアクセスと SQL の知識が必要
   - GitLab SaaS ユーザー情報を含む。
   - アンケートの回答者を特定するために使用可能。
@@ -57,7 +57,7 @@ UX Research Operations Coordinator の役割を担う場面があります。こ
   - 使用方法:
     - Respondent にログインし、リサーチを実施する人物のスクリーナーを使用してキャンペーンを構築・開始します。
     - 条件を再確認し、参加者を「失格」にする質問を正しく設定するよう注意してください。たとえば関連する質問で「Jira」を「必須選択」にすることで、Jira ユーザーのみを希望するように指定できます。これにより、他の回答を選んだ人を自動的に失格にします。これによって精査すべきスクリーナー回答の量が減り、時間を節約できます。また、リサーチャー以外の人にも、誰が調査参加資格を持つかが容易にわかります。
-- **[UserTesting.com](/handbook/product/ux/experience-research/unmoderated-testing/)**
+- **[UserTesting.com](/handbook/upstream-studios/experience-research/unmoderated-testing/)**
   - モデレーターなしユーザビリティテストに適する
   - パネルを活用して技術系ユーザーをリクルートできます
 - **チームメンバーを活用してリクエストを社内共有:**
@@ -107,5 +107,5 @@ UX Research Operations Coordinator の役割を担う場面があります。こ
 
 ## リソース
 
-- [UX Research チームの運営方法](/handbook/product/ux/experience-research/how-uxr-team-operates/)
-- [リクルートケーススタディ](/handbook/product/ux/experience-research/recruiting-participants/#recruitment-case-study)
+- [UX Research チームの運営方法](/handbook/upstream-studios/experience-research/how-uxr-team-operates/)
+- [リクルートケーススタディ](/handbook/upstream-studios/experience-research/recruiting-participants/#recruitment-case-study)

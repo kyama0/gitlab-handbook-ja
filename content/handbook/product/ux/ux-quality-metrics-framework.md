@@ -2,11 +2,11 @@
 title: "UX 品質メトリクスフレームワーク"
 description: "コンセプト、デザイン、アプリ内体験の UX 品質を評価するために、何を測定し、どう測定するかを定義するフレームワークです。"
 upstream_path: /handbook/product/ux/ux-quality-metrics-framework/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-16T21:37:21Z"
+translator: codex
 stale: false
-lastmod: "2026-02-26T09:15:10-05:00"
+lastmod: "2026-07-16T17:32:42-03:00"
 ---
 
 最終更新: 2026-01-22
@@ -89,7 +89,7 @@ UX 品質は、2 つの補完的なレンズを通じて測定できます。
 
 ラフな説明やスケッチができたら、できるだけ早くコンセプトをテストします。あなたのニーズに適した方法を実行するために UX リサーチと連携してください。大きな転換後に再テストします。
 
-- 1-2 個のアイデアに素早く対応するための[ラピッドバリデーション](/handbook/product/ux/experience-research/rapid-validations/) - 2 週間のターンアラウンドタイム
+- 1-2 個のアイデアに素早く対応するための[ラピッドバリデーション](/handbook/upstream-studios/experience-research/rapid-validations/) - 2 週間のターンアラウンドタイム
 - 深堀りのためのコンセプトインタビュー - 3-4 週間
 - 3-5 個のアイデアを評価するための望ましさ調査、例: Kano - 2-3 週間
 
@@ -118,9 +118,9 @@ UX 品質は、2 つの補完的なレンズを通じて測定できます。
 
 クリッカブルなプロトタイプができたら、デザインをテストします。あなたのニーズに適した方法を実行するために UX リサーチと連携してください。大きなデザイン変更後に再テストします。発見に基づいて 1-2 回のイテレーションを計画します。
 
-- 1-2 個のデザインに素早く対応するための[ラピッドバリデーション](/handbook/product/ux/experience-research/rapid-validations/) - 2 週間のターンアラウンドタイム
+- 1-2 個のデザインに素早く対応するための[ラピッドバリデーション](/handbook/upstream-studios/experience-research/rapid-validations/) - 2 週間のターンアラウンドタイム
 - より深い掘り下げのためのモデレートユーザビリティテスト - 3-4 週間
-- 自己説明的なデザインのための[アンモデレートユーザビリティテスト](/handbook/product/ux/experience-research/unmoderated-testing/) - 1-2 週間（ツールでセルフサーブ可能）
+- 自己説明的なデザインのための[アンモデレートユーザビリティテスト](/handbook/upstream-studios/experience-research/unmoderated-testing/) - 1-2 週間（ツールでセルフサーブ可能）
 - スピードのため、またはユーザーへのアクセスがないときの[ヒューリスティック評価](/handbook/product/ux/heuristics/) / [UX スコアカード](/handbook/product/ux/ux-scorecards/) - 様々（PD/リサーチで実施可能）
 
 #### 両方の条件が満たされたら開発に進む
@@ -161,7 +161,7 @@ B2B システムのメトリクスティア:
 | 視覚的魅力 | ユーザーはプロダクトインターフェースをどれくらい視覚的に魅力的だと感じるか？ | 視覚的に魅力的なインターフェースは肯定的なユーザー体験を作り出し、プロダクトの認識に貢献する。 | 「GitLab インターフェースは視覚的に魅力的です。」（1=強く反対、2=反対、3=どちらでもない、4=同意、5=強く同意） | 優秀: 4 以上<br><br>良好: 3.5 以上<br><br>改善必要: 3 未満 |
 | 一貫性 | デザインはプロダクトの異なる部分で一貫しているか？ | 一貫性の欠如はユーザーのワークフローを妨げ、プロダクトを予測しにくく使いにくくして摩擦を作り出す。 | 「GitLab には一貫性の欠如が多すぎる。」（1=強く反対、2=反対、3=どちらでもない、4=同意、5=強く同意） | 優秀: 4 以上<br><br>良好: 3.5 以上<br><br>改善必要: 3 未満 |
 
-*AI のメトリクスに関するインスピレーションについては、[このハンドブックページ](/handbook/product/ux/experience-research/research-in-the-ai-space/)を参照してください*
+*AI のメトリクスに関するインスピレーションについては、[このハンドブックページ](/handbook/upstream-studios/experience-research/research-in-the-ai-space/)を参照してください*
 
 🔴 = すべての機能について測定必須
 
@@ -179,7 +179,7 @@ B2B システムの優先順位:
 
 - 全体プロダクトの認識のための [USAT+ サーベイ](/handbook/product/ux/performance-indicators/usat-plus/) - 四半期ごとの実施（UX リサーチが管理）
 - フォローアップインタビュー - 2-3 週間（たとえば、USAT+ 経由でオプトインしたユーザーに連絡できます）
-- [縦断的研究](/handbook/product/ux/experience-research/longitudinal-studies/) - 4-12 週間
+- [縦断的研究](/handbook/upstream-studios/experience-research/longitudinal-studies/) - 4-12 週間
 
 ##### コンテキストメトリクス
 

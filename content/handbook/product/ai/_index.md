@@ -2,10 +2,10 @@
 title: AI 支援機能
 description: "このページには GitLab における AI に関する情報が掲載されています。"
 upstream_path: /handbook/product/ai/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-09T14:49:21+05:00
-translated_at: "2026-06-12T21:17:57Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+lastmod: "2026-07-16T17:32:42-03:00"
+translated_at: "2026-07-16T21:18:58Z"
+translator: codex
 stale: false
 ---
 
@@ -18,14 +18,14 @@ stale: false
 ## AI 機能のデザインと UX リサーチ
 
 * [Pajamas AI ガイドライン](https://design.gitlab.com/usability/ai-human-interaction/): AI 機能のユーザーエクスペリエンスをどのようにデザインするか。デザインパターンとガイドラインを含みます。
-* [AI 分野における UX リサーチ](/handbook/product/ux/experience-research/research-in-the-ai-space/): チームメンバーが AI 機能の有用性と使いやすさを評価するのに役立ちます。
+* [AI 分野における UX リサーチ](/handbook/upstream-studios/experience-research/research-in-the-ai-space/): チームメンバーが AI 機能の有用性と使いやすさを評価するのに役立ちます。
 * [UX 成熟度ガイドライン](/handbook/product/ai/ux-maturity/): AI 機能の成熟度を引き上げるために推奨される UX 検証。
 
 ## AI 機能の品質を評価する
 
 * AI Framework チームは、AI 搭載機能の開発、テスト、評価のための[ガイダンス](https://docs.gitlab.com/development/ai_features/ai_feature_development_playbook/)を提供しています。
-* UX Research チームは、使いやすさを確保するための[ユーザビリティ評価とスコアリングのプロセス](/handbook/product/ux/experience-research/research-in-the-ai-space/#ai-user-experience-survey-pilot)を維持しています。
-* AI の応答品質に関する迅速で定性的なフィードバックを得るとともに、ユーザーがどのようなプロンプトを書くかを把握するために、[UX Chat Bash](/handbook/product/ux/experience-research/ux-bash/) を実施できます。
+* UX Research チームは、使いやすさを確保するための[ユーザビリティ評価とスコアリングのプロセス](/handbook/upstream-studios/experience-research/research-in-the-ai-space/#ai-user-experience-survey-pilot)を維持しています。
+* AI の応答品質に関する迅速で定性的なフィードバックを得るとともに、ユーザーがどのようなプロンプトを書くかを把握するために、[UX Chat Bash](/handbook/upstream-studios/experience-research/ux-bash/) を実施できます。
 
 ## AI 機能に関する特別な考慮事項
 

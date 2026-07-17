@@ -1,11 +1,11 @@
 ---
 title: "GitLab Dedicated グループ"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-28T00:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-17T06:09:44+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-04T15:20:03-07:00"
+lastmod: "2026-07-16T14:06:57-04:00"
 ---
 
 ![GitLab Dedicated グループロゴ](/images/engineering/infrastructure-platforms/gitlab-dedicated/dedicated_team_logo.png)
@@ -147,10 +147,8 @@ PCL は以下の要件が満たされた場合に手動で実施されます：
 
 | プラットフォーム | 日程 | タイプ | 理由 |
 |-----------------------------------|----------------------------------------------|--------|---------------------------------------------------|
-| Dedicated for Gov | 2025-11-26 14:00 UTC -> 2025-12-01 14:00 UTC | Hard | 米国感謝祭（チームメンバーの可用性低下） |
-| Dedicated for Gov | 2025-12-22 14:00 UTC -> 2026-01-12 14:00 UTC | Hard | 年末休暇（チームメンバーの可用性低下） |
-| Dedicated Commercial (Production) | 2025-12-22 03:00 UTC -> 2026-01-12 03:00 UTC | Hard | 年末休暇（チームメンバーの可用性低下） |
-| Dedicated Commercial (Pre-prod) | 2025-12-22 03:00 UTC -> 2026-01-05 14:00 UTC | Hard | 年末休暇（チームメンバーの可用性低下） |
+| Dedicated for Gov | 2026-07-20 01:00 UTC -> 2026-07-27 01:00 UTC | Hard | 2026 R&D Summit（チームメンバーの可用性低下） |
+| Dedicated Commercial | 2026-07-20 01:00 UTC -> 2026-07-27 01:00 UTC | Hard | 2026 R&D Summit（チームメンバーの可用性低下） |
 
 時間が指定されていない日程は 09:00 UTC に始まり、翌日の 09:00 UTC に終了します。
 

@@ -4,11 +4,11 @@ description: >-
   Priority Support をお持ちのお客様に対して、サポートエンジニアリングチームは
   オンコール体制で緊急対応を行います
 upstream_path: /handbook/support/on-call/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-16T21:37:21Z"
+translator: codex
 stale: false
-lastmod: "2026-05-22T11:27:49+08:00"
+lastmod: "2026-07-15T19:55:12-07:00"
 ---
 
 ## GitLab サポートにおけるオンコール
@@ -17,7 +17,7 @@ lastmod: "2026-05-22T11:27:49+08:00"
 
 - [Communications Manager オンコール (CMOC)](/handbook/support/workflows/cmoc_workflows) - GitLab.com の運用上の緊急時のインシデント管理プロセスにおいて、サポートエンジニアが公開コミュニケーションを推進します。
 - [Customer Emergencies オンコール (CEOC)](/handbook/support/workflows/customer_emergencies_workflows) - サポートエンジニアが、セルフマネージドおよび GitLab.com のお客様からの緊急報告に対応し、解決を調整します。
-- [US Government Emergencies](/handbook/support/workflows/usgovernment_oncall) - Customer Emergencies と類似していますが、対応時間帯が異なり、参加には米国市民であることが要件となります。
+- [US Government Emergencies](/handbook/support/workflows/usgovernment_oncall) - US Government サポートのお客様向けのオンコールローテーションで、対応時間帯と参加要件が異なります。このローテーションは主に US Government Support チームが担当します。
 - [Support Leader on the Hook (SLOTH)](/handbook/support/workflows/support-leader-on-the-hook) - サポートマネージャーが、サポートエンジニアや GitLab チームメンバーから上がってくる Issue や、見逃された PagerDuty 通知のためのエスカレーションポイントとなります。
 
 [Priority Support](https://about.gitlab.com/support/#priority-support) をお持ちのお客様に対して、サポートエンジニアリングチームはこれらの体制でオンコール対応を行い、緊急時の支援を提供できます。何が緊急事態にあたるかは、私たちの [サポートインパクトの定義](https://about.gitlab.com/support/definitions/#definitions-of-support-impact) で定められています。

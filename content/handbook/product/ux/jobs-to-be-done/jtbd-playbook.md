@@ -3,11 +3,11 @@ title: JTBD リサーチプレイブック
 description: >-
   GitLab は、[Jim Kalbach の JTBD Playbook](https://www.amazon.com/Jobs-Be-Done-Playbook-Organization/dp/1933820683) に基づくプロセスに従い、[ジョブキャンバス](/handbook/product/ux/jobs-to-be-done/jtbd-canvas-anatomy)を開発し、ランク付けされた顧客成果を特定します。
 upstream_path: /handbook/product/ux/jobs-to-be-done/jtbd-playbook/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-17T06:29:12+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-23T15:35:45-08:00"
+lastmod: "2026-07-16T17:32:42-03:00"
 ---
 
 このプレイブックは、すべての GitLab チームメンバーが JTBD リサーチを実施できるようにするものです。ジョブキャンバスの各側面の詳細については、[JTBD キャンバスの構造](/handbook/product/ux/jobs-to-be-done/jtbd-canvas-anatomy) をレビューしてください。質問がある場合は、UX リサーチャーまたは JTBD 専門家に連絡してください。
@@ -98,7 +98,7 @@ lastmod: "2026-02-23T15:35:45-08:00"
 
 ### キャンバスを完成させる
 
-インタビュー後、収集した情報を JTBD キャンバスに統合し、共通パターンに焦点を当て、外れ値を破棄します。[データ統合](/handbook/product/ux/experience-research/analyzing-research-data/) の専門知識を持つ UX リサーチャーとのコラボレーションを検討してください。
+インタビュー後、収集した情報を JTBD キャンバスに統合し、共通パターンに焦点を当て、外れ値を破棄します。[データ統合](/handbook/upstream-studios/experience-research/analyzing-research-data/) の専門知識を持つ UX リサーチャーとのコラボレーションを検討してください。
 
 #### エクササイズ 1: ジョブマップを完成させる
 

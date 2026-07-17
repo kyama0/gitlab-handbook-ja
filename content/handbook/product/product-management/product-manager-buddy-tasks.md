@@ -2,11 +2,11 @@
 title: バディタスク
 draft: true
 upstream_path: /handbook/product/product-management/product-manager-buddy-tasks/
-upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
-translated_at: "2026-06-01T21:12:29Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-16T21:18:58Z"
+translator: codex
 stale: false
-lastmod: "2026-06-01T12:55:15+02:00"
+lastmod: "2026-07-16T17:32:42-03:00"
 ---
 
 1. [ ] - 新しいプロダクトマネージャーと Day 1 の 1:1 を設定する
@@ -26,8 +26,8 @@ lastmod: "2026-06-01T12:55:15+02:00"
     - [ティアとグループごとの機能一覧](/handbook/product/categories/features/)
     - [Analytics Direction Page](https://about.gitlab.com/direction/monitor/)
     - リサーチに役立つもの
-        - [リサーチプロジェクトの始め方・タイミング](/handbook/product/ux/experience-research/)
-        - [UX プロジェクトのリクルート方法](/handbook/product/ux/experience-research/recruiting-participants/)
+        - [リサーチプロジェクトの始め方・タイミング](/handbook/upstream-studios/experience-research/)
+        - [UX プロジェクトのリクルート方法](/handbook/upstream-studios/experience-research/recruiting-participants/)
         - Dovetail
             - [Dovetail へのアクセス取得](/handbook/security/corporate/end-user-services/access-requests/access-requests/)
             - [GitLab Dovetail プロジェクト](https://gitlab.dovetailapp.com/projects)

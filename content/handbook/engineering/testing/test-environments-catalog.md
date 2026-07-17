@@ -1,11 +1,11 @@
 ---
 title: "GitLab テスト環境カタログ"
 upstream_path: "/handbook/engineering/testing/test-environments-catalog/"
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-15T21:34:06Z"
+upstream_sha: "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca"
+translated_at: "2026-07-16T21:18:58Z"
 translator: codex
 stale: false
-lastmod: "2026-07-15T17:51:54+00:00"
+lastmod: "2026-07-16T17:32:44-03:00"
 ---
 
 このページは .com、セルフマネージド、Dedicated プラットフォーム向けに GitLab で利用可能なテスト環境のカタログを提供します。
@@ -488,7 +488,7 @@ OpenShift テストのための唯一の既知の環境です。[Operator CI ド
 
 | タイプ | ステータス | プラットフォーム | URL | オーナー/DRI | プロジェクト | Cells | アクセス |
 |------|--------|----------|-----|-----------|---------|-------|--------|
-| 永続 | アクティブ | セルフマネージド | https://ux.gitlabdemo.cloud/ | UX チーム | [UX リサーチ](/handbook/product/ux/experience-research/ux-cloud-sandbox/) | 無効 | UX チームに連絡 |
+| 永続 | アクティブ | セルフマネージド | https://ux.gitlabdemo.cloud/ | UX チーム | [UX リサーチ](/handbook/upstream-studios/experience-research/ux-cloud-sandbox/) | 無効 | UX チームに連絡 |
 
 **目的:** UX リサーチとテスト。外部参加者がセキュリティ/プライバシーの懸念なく画面共有できる安全な環境。
 

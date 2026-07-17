@@ -2,11 +2,11 @@
 title: Fulfillment サブ部門
 description: "Fulfillment サブ部門は、GitLab DevOps プラットフォームを支えるユーザー購入プロセスに関わるシステム間のインフラを担う、Billing・Subscription Management・Fulfillment Platform・Provision・Utilization の各開発チームで構成されています。"
 upstream_path: /handbook/engineering/development/fulfillment/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
+translated_at: "2026-07-17T06:09:44+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-22T14:47:44+02:00"
+lastmod: "2026-07-16T17:32:42-03:00"
 ---
 
 - [方針](/handbook/product/groups/fulfillment/direction/fulfillment_section/)
@@ -211,7 +211,7 @@ Basecamp はこれらの段階を [丘の登りと下り](https://basecamp.com/h
 
 #### 私たちの働き方
 
-- ハンドブックの [プロダクトデザインセクション](/handbook/product/ux/) で説明されている [プロダクトデザイナーワークフロー](/handbook/product/ux/product-designer/) と [UX リサーチャーワークフロー](/handbook/product/ux/experience-research/) に従います。
+- ハンドブックの [プロダクトデザインセクション](/handbook/product/ux/) で説明されている [プロダクトデザイナーワークフロー](/handbook/product/ux/product-designer/) と [UX リサーチャーワークフロー](/handbook/upstream-studios/experience-research/) に従います。
 - [UX スコアカード](/handbook/product/ux/ux-scorecards/) を使って進捗を測定します。
 - 毎四半期に最も重要なプロジェクトを優先し、Fulfillment プロダクトデザイナーは [グループの代わりにプロジェクトをサポート](#product-designer-focus-areas) します。
 - デザインの SSOT として [[UX] Issue](#ux-issue-management-and-weights) を使用します。実装 Issue は、SSOT を維持するためにデザインの詳細について [UX] Issue にリンクすべきです。
