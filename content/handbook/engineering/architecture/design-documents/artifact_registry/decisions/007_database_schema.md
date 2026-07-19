@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリのデータテーブル構成"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-translated_at: "2026-07-14T07:14:23+09:00"
+upstream_sha: 1c5f183add4a3220f2aa77e0c98565c4fad645e2
+translated_at: "2026-07-18T06:07:48+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-13T16:03:28+02:00"
+lastmod: "2026-07-17T12:36:00+02:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -437,10 +437,10 @@ erDiagram
         uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         uuid container_image_id FK "NOT NULL, (container_image_id, namespace_id) references container_images(id, namespace_id)"
-        bytea digest "NOT NULL"
+        bytea digest "NOT NULL, CHECK octet_length = 32"
         text media_type "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
-        bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
+        bytea blob_sha256 FK "NOT NULL, CHECK octet_length = 32, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
         timestamptz soft_deleted_at "nullable"
     }
 
@@ -448,10 +448,10 @@ erDiagram
         uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         uuid container_image_id FK "NOT NULL, (container_image_id, namespace_id) references container_images(id, namespace_id)"
-        bytea digest "NOT NULL"
+        bytea digest "NOT NULL, CHECK octet_length = 32"
         text media_type "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
-        bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
+        bytea blob_sha256 FK "NOT NULL, CHECK octet_length = 32, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
         bigint size "NOT NULL, precomputed at push time"
         text gitlab_user_id "nullable, opaque string, limit 255"
         text gitlab_project_id "nullable, opaque string, limit 255"
@@ -491,8 +491,8 @@ erDiagram
 
 - **`container_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親リポジトリ参照によってコンテナリポジトリを検索します。
 - **`container_images`**: `(namespace_id, container_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — イメージ名はリポジトリ内で一意なイメージを識別します。重複すると OCI の名前ベースの検索が壊れます。部分条件により、ソフト削除後に同じ名前のイメージを再作成できます。`(namespace_id, container_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。リポジトリ内のすべてのイメージをスキャンして行ごとにフィルターするのではなく、境界のある範囲スキャンによって期限切れになったイメージのみを返します。`NULLS FIRST` は、一度もダウンロードされていないイメージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。
-- **`container_blobs`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — blob のダイジェストはコンテンツアドレス指定です。同じイメージ内の同じダイジェストは定義上同じ blob です。部分条件により、ソフト削除後に同じダイジェストを再プッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによって blob を検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべてのコンテナ blob への逆引きで、クロスフォーマットのチェックサム検索と脆弱性影響クエリ「この侵害されたダイジェストが与えられたとき、どのイメージがそれを参照しているか?」を支えます。既存の `(namespace_id, container_image_id, digest)` インデックスはイメージをキーとし、1 つのイメージ内でしかスキャンできないため、このインデックスがなければクエリはネームスペースごとのパーティションスキャンにフォールバックします。同じ形状は、この MR の他のすべての逆引きインデックスに適用されます。無条件（`soft_deleted_at` 述語なし）なので、かつて参照されたダイジェストは監査証跡に引き続き表示されます。現在影響を受けているアーティファクトのみを必要とする脆弱性影響は、クエリ時に親テーブル（イメージ/バージョン/パッケージ）に対する JOIN に `soft_deleted_at IS NULL` を追加します。これは小さな中間集合に対する安価な後置フィルターです。
-- **`container_manifests`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — マニフェストのダイジェストはコンテンツアドレス指定です。同じイメージ内の同じダイジェストは定義上同じマニフェストです。部分条件により、ソフト削除後に同じダイジェストを再プッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってマニフェストを検索します。`(namespace_id, blob_sha256)` に対するインデックス — マニフェストペイロードの保存された blob の sha256 から、それを参照するすべてのマニフェストへの逆引きで、クロスフォーマットのチェックサム検索を支えます。[`container_blobs`](#container-repositories) インデックスを反映しており、単一の sha256 検索でレイヤーとマニフェストの両方の参照を 1 回の走査で返します。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたマニフェストを削除時刻順に一覧し、コンテナイメージのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクト出所クエリを支えます。無条件（`soft_deleted_at` 述語なし）なので、後でソフト削除された公開イベントも監査証跡に引き続き表示されます。
+- **`container_blobs`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — blob のダイジェストはコンテンツアドレス指定です。同じイメージ内の同じダイジェストは定義上同じ blob です。部分条件により、ソフト削除後に同じダイジェストを再プッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによって blob を検索します。`(namespace_id, digest)` に対するインデックス — コンテンツダイジェストによるイメージ横断の検索で、blob のマウントに使用します。コンテナ blob はコンテンツアドレス指定であるため、その `digest` は保存された `blob_sha256` と等しくなります。このため、このインデックスは別個の `(namespace_id, blob_sha256)` インデックスなしに、クロスフォーマットのチェックサム検索と脆弱性影響クエリ「この侵害されたダイジェストが与えられたとき、どのイメージがそれを参照しているか?」にも使用されます。このドキュメントの逆引きインデックスは無条件（`soft_deleted_at` 述語なし）なので、かつて参照されたダイジェストは監査証跡に引き続き表示されます。現在影響を受けているアーティファクトのみを必要とする脆弱性影響は、クエリ時に `soft_deleted_at IS NULL` を追加します。これは小さな中間集合に対する安価な後置フィルターです。Maven と npm のファイルはコンテンツアドレス指定ではなく、同等のダイジェストカラムもないため、これらのテーブルには専用の `(namespace_id, blob_sha256)` 逆引きインデックスがあり、コンテナテーブルにはありません。この等価性は sha256 が唯一のダイジェストアルゴリズムである間に成り立ちます。`digest` と `blob_sha256` はどちらも `octet_length = 32` CHECK の下で 32 バイトの値であり、コンテンツは書き込み時にダイジェストに対して検証されるため、`(namespace_id, digest)` インデックスは `blob_sha256` インデックスとまったく同じ行を返します。将来、sha256 以外のダイジェストアルゴリズムが導入される場合は、2 つのカラムを分離し、再検討します。
+- **`container_manifests`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — マニフェストのダイジェストはコンテンツアドレス指定です。同じイメージ内の同じダイジェストは定義上同じマニフェストです。部分条件により、ソフト削除後に同じダイジェストを再プッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってマニフェストを検索します。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたマニフェストを削除時刻順に一覧し、コンテナイメージのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクト出所クエリを支えます。無条件（`soft_deleted_at` 述語なし）なので、後でソフト削除された公開イベントも監査証跡に引き続き表示されます。`container_blobs` とは異なり、`container_manifests` にはスタンドアロンの `(namespace_id, digest)` インデックスがありません。ダイジェストはイメージ内でのみ、ユニークな `(namespace_id, container_image_id, digest)` によってインデックス化されます。そのため、マニフェストペイロードのイメージ横断チェックサム検索（マニフェストの `digest` は保存された `blob_sha256` と等しい）は、ネームスペースで絞り込まれたパーティションをスキャンします。これは許容されています。これを発行する MVP エンドポイントはなく、脆弱性影響の検索は `container_blobs` の `(namespace_id, digest)` インデックスによって提供されるレイヤー/設定ダイジェスト検索であるためです。
 - **`container_manifest_relationships`**: `(namespace_id, parent_container_manifest_id, child_container_manifest_id)` に対するユニークインデックス — 親子関係の重複を防ぎ、特定の親マニフェストのすべての子を見つけます。`(namespace_id, child_container_manifest_id)` に対するインデックス — 特定の子マニフェストのすべての親を見つけます。`(namespace_id, container_image_id)` に対するインデックス — 特定のイメージのすべてのマニフェスト関係を見つけます。
 - **`container_tags`**: `(namespace_id, container_image_id, name)` に対するユニークインデックス — イメージ内で名前によってタグを検索します。`(namespace_id, container_manifest_id)` に対するインデックス — 特定のマニフェストを指すすべてのタグを見つけます。
 
@@ -531,25 +531,32 @@ erDiagram
     AND ci.soft_deleted_at IS NULL AND cm.soft_deleted_at IS NULL;
   ```
 
-- チェックサム検索と脆弱性影響: 保存された blob の `sha256` が与えられたとき、それを参照するネームスペース内のすべてのアーティファクトを見つける（各フォーマットテーブルの `(namespace_id, blob_sha256)` インデックスを使用）。`namespace_id` の等価性により、テーブルごとに単一のパーティションに絞り込み、インデックスは一致する行を直接返します（パーティションをスキャンする代わりに）。チェックサム検索はすべての参照を返します。脆弱性影響（「この侵害されたダイジェストによって現在影響を受けているアーティファクトはどれか?」）は、結果をアクティブなアーティファクトに限定するために `soft_deleted_at IS NULL` を追加します。
+- チェックサム検索と脆弱性影響: 保存された blob の `sha256` が与えられたとき、それを参照するネームスペース内のすべてのアーティファクトを見つけます。`namespace_id` の等価性により、テーブルごとに単一のパーティションに絞り込みます。Maven と npm のファイルは `(namespace_id, blob_sha256)` インデックスを使用し、パーティションをスキャンせずに一致する行を直接返します。コンテナテーブルはコンテンツアドレス指定です。blob またはマニフェストの `digest` は保存された `blob_sha256` と等しいため、`container_blobs` は `(namespace_id, digest)` インデックスを通じてこれに応答します。`container_manifests` にはスタンドアロンのダイジェストインデックスがないため、マニフェストペイロードの検索はネームスペースで絞り込まれたパーティションをスキャンします。チェックサム検索はすべての参照を返します。脆弱性影響（「この侵害されたダイジェストによって現在影響を受けているアーティファクトはどれか?」）は、結果をアクティブなアーティファクトに限定するために `soft_deleted_at IS NULL` を追加します。
 
   ```sql
-  -- Single format: container layer/config blobs referencing the digest
+  -- Single format: container layer/config blobs referencing the digest.
+  -- container_blobs is content-addressed (digest = blob_sha256) and has a
+  -- (namespace_id, digest) index, so this reverse lookup rides that index
+  -- rather than a dedicated blob_sha256 one. container_manifests has no
+  -- standalone digest index. See the cross-format query below.
   SELECT cb.id, cb.container_image_id, cb.digest
   FROM container_blobs cb
   WHERE cb.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
-    AND cb.blob_sha256 = 'sha256:abcd1234...'::bytea;
+    AND cb.digest = 'sha256:abcd1234...'::bytea;
 
   -- Cross-format: every artifact referencing the digest, active rows only (vulnerability impact)
   SELECT 'container_blob' AS artifact_kind, cb.id AS artifact_id, cb.container_image_id AS parent_id
   FROM container_blobs cb
   WHERE cb.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
-    AND cb.blob_sha256 = 'sha256:abcd1234...'::bytea AND cb.soft_deleted_at IS NULL
+    AND cb.digest = 'sha256:abcd1234...'::bytea AND cb.soft_deleted_at IS NULL
   UNION ALL
+  -- container_manifests has no standalone (namespace_id, digest) index, so this
+  -- arm scans the namespace-pruned partition (accepted: no MVP endpoint issues
+  -- a cross-image manifest-payload checksum search).
   SELECT 'container_manifest', cm.id, cm.container_image_id
   FROM container_manifests cm
   WHERE cm.namespace_id = '018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8'
-    AND cm.blob_sha256 = 'sha256:abcd1234...'::bytea AND cm.soft_deleted_at IS NULL
+    AND cm.digest = 'sha256:abcd1234...'::bytea AND cm.soft_deleted_at IS NULL
   UNION ALL
   SELECT 'maven_file', mf.id, mf.maven_version_id
   FROM maven_files mf
@@ -608,10 +615,10 @@ erDiagram
         uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         uuid container_remote_image_id FK "NOT NULL, (container_remote_image_id, namespace_id) references container_remote_images(id, namespace_id)"
-        bytea digest "NOT NULL"
+        bytea digest "NOT NULL, CHECK octet_length = 32"
         text media_type "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
-        bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
+        bytea blob_sha256 FK "NOT NULL, CHECK octet_length = 32, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
         timestamptz soft_deleted_at "nullable"
     }
 
@@ -619,10 +626,10 @@ erDiagram
         uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         uuid container_remote_image_id FK "NOT NULL, (container_remote_image_id, namespace_id) references container_remote_images(id, namespace_id)"
-        bytea digest "NOT NULL"
+        bytea digest "NOT NULL, CHECK octet_length = 32"
         text media_type "NOT NULL, limit 255"
         bigint blob_storage_attachment_id FK "NOT NULL, (namespace_id, blob_storage_attachment_id, blob_sha256) references blob_storage_attachments(namespace_id, id, sha256)"
-        bytea blob_sha256 FK "NOT NULL, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
+        bytea blob_sha256 FK "NOT NULL, CHECK octet_length = 32, (namespace_id, blob_sha256) references blob_storage_blobs(namespace_id, sha256)"
         bigint size "NOT NULL, updated as children are cached"
         timestamptz soft_deleted_at "nullable"
         timestamptz created_at "NOT NULL, DEFAULT NOW()"
@@ -659,8 +666,8 @@ erDiagram
 
 - **`container_remote_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によってリモートリポジトリを検索します。
 - **`container_remote_images`**: `(namespace_id, container_remote_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — 名前によってキャッシュされたイメージを検索します。部分条件により、ソフト削除後に同じ名前のイメージを再作成できます。
-- **`container_remote_blobs`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — イメージ内でダイジェストによってキャッシュされた blob を検索します。部分条件により、ソフト削除後に同じダイジェストを再キャッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによって blob を検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべてのキャッシュされた blob への逆引きで、ホスト型の [`container_blobs`](#container-repositories) インデックスを反映し、チェックサム検索と脆弱性影響がキャッシュ側の参照もカバーするようにします。
-- **`container_remote_manifests`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — イメージ内でダイジェストによってキャッシュされたマニフェストを検索します。部分条件により、ソフト削除後に同じダイジェストを再キャッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってマニフェストを検索します。`(namespace_id, blob_sha256)` に対するインデックス — マニフェストペイロードの保存された blob の sha256 から、それを参照するすべてのキャッシュされたマニフェストへの逆引きで、ホスト型の [`container_manifests`](#container-repositories) インデックスを反映します。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みマニフェストを削除時刻順に一覧し、キャッシュされたコンテナイメージのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、ホスト型の [`container_manifests`](#container-repositories) インデックスを反映し、キャッシュ側の公開履歴と出所をカバーします。ホスト型のインデックスと同じ監査証跡の理由から無条件（`soft_deleted_at` 述語なし）です。
+- **`container_remote_blobs`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — イメージ内でダイジェストによってキャッシュされた blob を検索します。部分条件により、ソフト削除後に同じダイジェストを再キャッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによって blob を検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべてのキャッシュされた blob への逆引きで、チェックサム検索と脆弱性影響がキャッシュ側の参照もカバーするようにします。このインデックスはリモートキャッシュ固有です。ホスト型の `container_blobs` テーブルはコンテンツアドレス指定であり、同じ検索を `(namespace_id, digest)` インデックスで処理するため、これを反映する `blob_sha256` インデックスはありません。リモートテーブルには、逆引きに再利用できるスタンドアロンの `(namespace_id, digest)` インデックスもありません。これは pull 専用で、blob マウントパスを正当化するものがないためです。そのため、チェックサム検索とサイズ照合クエリが `blob_storage_blobs(namespace_id, sha256)` と JOIN するカラムである `blob_sha256` を直接インデックス化します。
+- **`container_remote_manifests`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — イメージ内でダイジェストによってキャッシュされたマニフェストを検索します。部分条件により、ソフト削除後に同じダイジェストを再キャッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってマニフェストを検索します。`(namespace_id, blob_sha256)` に対するインデックス — マニフェストペイロードの保存された blob の sha256 から、それを参照するすべてのキャッシュされたマニフェストへの逆引きで、チェックサム検索と脆弱性影響がキャッシュ側の参照もカバーするようにします。このインデックスはリモートキャッシュ固有です。ホスト型の `container_manifests` テーブルには同等のインデックスがありません。また、リモート blob テーブルと同様に、リモートマニフェストテーブルにも再利用できるスタンドアロンの `(namespace_id, digest)` インデックスがないため、逆引きには `blob_sha256` を直接インデックス化します。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みマニフェストを削除時刻順に一覧し、キャッシュされたコンテナイメージのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、ホスト型の [`container_manifests`](#container-repositories) インデックスを反映し、キャッシュ側の公開履歴と出所をカバーします。ホスト型のインデックスと同じ監査証跡の理由から無条件（`soft_deleted_at` 述語なし）です。
 - **`container_remote_manifest_relationships`**: `(namespace_id, parent_container_remote_manifest_id, child_container_remote_manifest_id)` に対するユニークインデックス — 親子関係の重複を防ぎます。`(namespace_id, child_container_remote_manifest_id)` に対するインデックス — 特定の子マニフェストのすべての親を見つけます。`(namespace_id, container_remote_image_id)` に対するインデックス — 特定のイメージのすべてのマニフェスト関係を見つけます。
 - **`container_remote_tags`**: `(namespace_id, container_remote_image_id, name)` に対するユニークインデックス — イメージ内で名前によってタグを検索します。`(namespace_id, container_remote_manifest_id)` に対するインデックス — 特定のマニフェストを指すすべてのタグを見つけます。
 
@@ -1525,7 +1532,7 @@ erDiagram
 
 blob ストレージテーブルは、Artifact Registry の外部でも再利用できるように設計されています。これにより、他の機能が同じ重複排除とストレージインフラを活用できます。
 
-すべてのハッシュカラム（`digest` と `sha256`、`sha1`、`md5`、`sha512` — Maven 固有）は `bytea` として保存されます。正確なエンコーディング戦略（例: [Container Registry](https://gitlab.com/gitlab-org/container-registry) で使用されているインラインアルゴリズムプレフィックス、または別個の `digest_algorithm` カラム）はまだ決定されていません。
+すべてのハッシュカラム（`digest` と `sha256`、`sha1`、`md5`、`sha512` — Maven 固有）は、テキストエンコーディングやインラインアルゴリズムプレフィックスを持たない、生のハッシュバイトを保持する `bytea` として保存されます。コンテナの `digest` と `blob_sha256` カラムは生の 32 バイト SHA-256 を保持し、`CHECK octet_length = 32` によって強制されます。OCI のワイヤ形式 `sha256:<64 hex chars>` はサービスレイヤーで生のバイトへ、また生のバイトから変換されるため、`blob_sha256` は `blob_storage_blobs.sha256` と直接バイト比較で JOIN します。MVP は sha256 のみをサポートします。sha256 以外の参照はこれらのテーブルに到達する前にサービスレイヤーで拒否されるため、別個の `digest_algorithm` カラムは保存しません。コンテナ blob の `digest` と `blob_sha256` は同じバイトになるため、`(namespace_id, digest)` インデックスはコンテンツハッシュの逆引きインデックスも兼ね、ホスト型コンテナテーブルに別個の `blob_sha256` インデックスはありません（[Container Repositories のインデックス](#container-repositories) を参照）。将来、sha256 以外のダイジェストアルゴリズムが導入される場合は、2 つのカラムを分離し、再検討します。
 
 ### アップロードセッション {#upload-sessions}
 

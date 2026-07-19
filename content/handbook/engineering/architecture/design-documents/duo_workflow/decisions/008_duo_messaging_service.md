@@ -9,11 +9,11 @@ owning-stage: "~devops::ai_powered"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/duo_workflow/decisions/008_duo_messaging_service/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: 1c5f183add4a3220f2aa77e0c98565c4fad645e2
+translated_at: "2026-07-18T06:25:37+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-21T17:51:20+02:00"
+lastmod: "2026-07-17T14:17:40-04:00"
 ---
 
 ## コンテキスト
@@ -55,22 +55,25 @@ graph LR
     classDef callback fill:#fef9c3,stroke:#fde047,color:#713f12
 
     Caller["💬 Caller<br/><i>PostProcessService · AppMentionedService · ...</i><br/><i>policy: auth, SA, flow, project, goal</i>"]
-    Adapter["🔌 Delivery Adapter<br/><i>GitlabNote · Slack · ...</i><br/><i>lifecycle: progress, results, errors</i>"]
+    Adapter["🔌 Delivery Adapter<br/><i>GitlabDuoNote · Slack · ...</i><br/><i>lifecycle: progress, results, errors</i>"]
     Base["⚙️ Base Adapter<br/><i>mechanism: identity, membership,<br/>enrichment, execution</i>"]
     CI["🏃 CI Runner<br/><i>ExecuteWorkflowService</i>"]
-    CW["📬 CallbackWorker<br/><i>WorkloadFinishedEvent</i>"]
+    CW["📬 CallbackWorker<br/><i>WorkloadFinishedEvent · WorkflowStartedEvent</i>"]
+    PW["📡 ProgressDeliveryWorker<br/><i>checkpoint streaming (live)</i>"]
 
     Caller -->|"resolved params"| Adapter
     Adapter -->|"trigger"| Base
     Base -->|"start pipeline"| CI
-    CI -.->|"workflow finished"| CW
-    CW -.->|"result / error"| Adapter
+    CI -.->|"workflow started / finished"| CW
+    CI -.->|"checkpoint created"| PW
+    CW -.->|"result / error / started"| Adapter
+    PW -.->|"on_progress delta"| Adapter
     Adapter -.->|"post answer / status"| Caller
 
     class Caller surface
     class Adapter,Base adapter
     class CI execution
-    class CW callback
+    class CW,PW callback
 ```
 
 **実線の矢印** = 同期呼び出し &nbsp;&nbsp; **破線の矢印** = 非同期イベント
@@ -85,6 +88,7 @@ sequenceDiagram
     participant Base as Base Adapter
     participant CI as CI Runner
     participant CW as CallbackWorker
+    participant PW as ProgressDeliveryWorker
 
     User->>Caller: @duo do something
     Caller->>Caller: Resolve auth, SA, flow, project, goal
@@ -97,12 +101,16 @@ sequenceDiagram
         Note right of Base: Composite identity link,<br/>SA project membership,<br/>callback enrichment
         Base->>CI: ExecuteWorkflowService.execute
         CI-->>Base: success + workflow
-        Adapter->>User: on_flow_started (👀 / progress note)
+        Adapter->>User: on_flow_enqueued (👀 / progress note, workflow URL)
     end
 
     rect rgb(237, 233, 254)
         Note right of CI: Execution phase (async)
         CI->>CI: Agent works (tools, API, git)
+        CI-->>CW: WorkflowStartedEvent (agent running)
+        CW->>Adapter: on_flow_started (update ack message with session link)
+        CI-->>PW: checkpoint created (per step)
+        PW->>Adapter: on_progress(delta) (plan + monologue updates)
     end
 
     rect rgb(254, 249, 195)
@@ -119,7 +127,7 @@ sequenceDiagram
 このアーキテクチャは 3 つの関心事を分離します:
 
 - **Caller**（例: `@mention` トリガー向けの `PostProcessService`、Slack 向けの `AppMentionedService`）は、すべてのポリシー判断を所有します。認可、サービスアカウントの選択、フローの選択、バージョンの選択、プロジェクトの選択、ゴールの構築です。Caller はすべてを解決し、アダプターを関与させる前に、型付けされた解決済み入力を構築します。
-- **配信アダプター**（例: `GitlabNote`、`Slack`）は、ユーザー向けのライフサイクルを所有します。リクエストの確認応答、進捗の表示、結果やエラーの配信、非同期復元のためのコールバック状態の永続化です。アダプターはトリガーソースではなく**配信チャネル**によって構成されます。`GitlabNote` アダプターは、`@mention`、`@GitLabDuo`、将来のウェブフックのいずれによってトリガーされたかにかかわらず、ノートスレッド経由で配信するあらゆるフローを処理します。
+- **配信アダプター**（例: `GitlabDuoNote`、`Slack`）は、ユーザー向けのライフサイクルを所有します。リクエストの確認応答、進捗の表示、結果やエラーの配信、非同期復元のためのコールバック状態の永続化です。アダプターはトリガーソースではなく**配信チャネル**によって構成されます。`GitlabDuoNote` アダプターは、`@mention`、`@GitLabDuo`、将来のウェブフックのいずれによってトリガーされたかにかかわらず、ノートスレッド経由で配信するあらゆるフローを処理します。
 - **共有ベースアダプター**は、どの Caller やアダプターも個別に行うべきではない、セキュリティ上重要なメカニズムを処理します。コンポジットアイデンティティのリンク、SA プロジェクトメンバーシップ、コールバックコンテキストのエンリッチメント、リソースの変換、`ExecuteWorkflowService` 経由のワークフロー実行です。
 
 これは、異なる Caller が根本的に異なる認証モデル（例: Slack はワークスペースインストール + namespace マッピング、GitLab ノートは `:trigger_ai_flow` ポリシー、`@GitLabDuo` は MR レベルのアビリティを使用）を持ちつつ、チャネルが同じ場合は同じ配信アダプターを再利用できることを意味します。
@@ -136,7 +144,7 @@ sequenceDiagram
 
 **段階的なレジリエンス。** ライフサイクルフックは重要度によって分類されます。ユーザー向けの確認応答は成功する必要があり、そうでなければトリガーは短絡します。ベストエフォートのフック（進捗更新、完了シグナル）は失敗に対して耐性があります。セキュリティ上重要なステップとワークフロー実行は明示的に失敗します。
 
-**EventStore コールバック。** `CallbackWorker` は `WorkloadFinishedEvent` をサブスクライブし、ワークフローレコード（JSONB カラム）の `messaging_callback_context` をチェックし、アダプターを通じて結果を配信します。GraphQL もポーリングも不要です。ベースアダプターは、アダプターが提供したコールバックコンテキストを、永続化する前にオーケストレーションのメタデータ（アダプターキー、サービスアカウント ID、フロー参照、バージョン）でエンリッチします。これにより、非同期経路ではアダプターとサービスアカウントを再解決せずに解決できます。例:
+**EventStore コールバック。** `CallbackWorker` は、`WorkloadFinishedEvent`（最終結果の配信）と `WorkflowStartedEvent`（エージェントが `:running` に遷移したときに `on_flow_started` を実行）の両方をサブスクライブします。ワークフローレコード（JSONB カラム）の `messaging_callback_context` をチェックし、アダプターを通じて結果を配信します。GraphQL もポーリングも不要です。ベースアダプターは、アダプターが提供したコールバックコンテキストを、永続化する前にオーケストレーションのメタデータ（アダプターキー、サービスアカウント ID、フロー参照、バージョン）でエンリッチします。これにより、非同期経路ではアダプターとサービスアカウントを再解決せずに解決できます。例:
 
 ```json
 {
@@ -144,14 +152,47 @@ sequenceDiagram
   "team_id": "T0123ABC",
   "channel_id": "C0123ABC",
   "thread_ts": "1234567890.123456",
+  "status_ts": "1234567890.654321",
+  "session_url": "https://gitlab.com/-/duo_workflows/123",
+  "progress_cursor": 42,
   "service_account_id": 12345,
   "flow_reference": "developer/v1"
 }
 ```
 
-### ストリーミングと人間による承認への道
+**`progress_cursor`** は、各配信の成功後に `ProgressDeliveryWorker` が書き込み、次の tick で差分を計算するために読み取ります。これにより、各配信は新しいチェックポイントだけを処理し、リトライ時も冪等になります。
 
-このアーキテクチャは、コア設計を変更せずに、リアルタイムの進捗とインタラクティブな機能に拡張されます:
+### チェックポイントストリーミング
+
+チェックポイントストリーミングは `ProgressDeliveryWorker` と `on_progress` アダプターフックを通じて**実装済み**です。これは将来の作業ではありません。
+
+```mermaid
+sequenceDiagram
+    participant CI as CI Runner
+    participant Rails as Rails
+    participant PW as ProgressDeliveryWorker
+    participant Adapter as Messaging Adapter
+    participant Slack as Slack
+    participant User as User
+
+    CI->>Rails: Save checkpoint
+    Rails-->>PW: Enqueue (debounced, 2s window)
+    PW->>Adapter: on_progress(delta, callback_context)
+    Note right of PW: delta.messages = cumulative snapshot<br/>delta.new_messages = appended since last tick
+    Adapter->>Slack: Update message (plan block + monologue block)
+    PW->>Rails: Persist progress_cursor
+```
+
+`ProgressDeliveryWorker` はワークフローごとにデバウンスされます（2 秒のウィンドウ、衝突時に `reschedule_once` を伴う `until_executed` の重複排除）。そのため、チェックポイントのバーストは 1 回の配信にまとめられます。アダプターは `self.supports_live_progress?` から `true` を返すことでオプトインします。オプトインしないアダプターには `ProgressDeliveryWorker` がスケジュールされません。
+
+`delta` オブジェクトは、同一時点の 2 つのビューを持ちます:
+
+1. `delta.messages` — 完全な累積スナップショット。メッセージ全体を書き換える Slack のような置換型サーフェスは、今回の変更が無関係なエントリであっても、現在の状態（例: アクティブな TODO リスト）を維持するためにこれからレンダリングします。
+1. `delta.new_messages` — 前回の配信以降に追加されたエントリのみ。追記/ストリーム型のサーフェスはこれを使用します。
+
+### 人間による承認への道
+
+人間による承認は、新しい EventStore サブスクリプションと新しい `on_approval_requested` アダプターフックを通じて、コアを変更せずに同じアーキテクチャを加法的に拡張します。これはまだ実装されていません。
 
 ```mermaid
 sequenceDiagram
@@ -161,11 +202,6 @@ sequenceDiagram
     participant Adapter as Messaging Adapter
     participant Slack as Slack
     participant User as User
-
-    CI->>Rails: Save checkpoint
-    Rails-->>CW: CheckpointCreatedEvent (via EventStore)
-    CW->>Adapter: on_checkpoint_created(context, diff)
-    Adapter->>Slack: Status update ("Searching issues...")
 
     Note over CI,Slack: When approval is required:
     CI->>Rails: Save checkpoint (approval_required)
@@ -177,7 +213,7 @@ sequenceDiagram
     Rails->>Rails: Write approval → resume workflow
 ```
 
-新しい `CheckpointCallbackWorker` は `WorkflowCheckpointCreatedEvent` をサブスクライブします。`CallbackWorker` とは分離されているのは、チェックポイントイベントが異なる特性（高頻度、異なるリトライセマンティクス）を持つためです。各ステップはイベント駆動であり、永続的な接続は不要です。承認状態はワークフローレコードに永続化され、フローを停止して再開できます。
+承認状態はワークフローレコードに永続化され、フローを停止して再開できます。
 
 ### アダプターインターフェース
 
@@ -193,18 +229,29 @@ sequenceDiagram
 
 **ライフサイクルフック（オプションのオーバーライド）:**
 
+| メソッド | いつ | 注記 |
+|---|---|---|
+| `on_request_received` | 同期、`build_callback_context` の前。成功しない場合、トリガーは中止される | トリガー前の確認応答（例: 👀 リアクションの追加、進捗メッセージの投稿） |
+| `on_flow_enqueued(callback_context:, workflow:)` | 同期、CI の送信成功後 | 作業がキューに入ったことを通知する（例: ワークフロー URL の永続化、開始システムノートの投稿）。コンテナはまだ実行されていない |
+| `on_flow_started(callback_context:, workflow:)` | 非同期、`WorkflowStartedEvent` により駆動 | エージェントが `:running` に遷移済み。冪等でなければならない（少なくとも 1 回の配信） |
+| `on_flow_completed(callback_context:, workflow:)` | 非同期、`deliver_result` の後 | 作業完了を通知する（例: ✅ リアクション） |
+| `on_flow_failed(callback_context:, error:, workflow:)` | 非同期または同期 | 失敗を通知する。`workflow: nil` はワークフローが存在する前の同期的な失敗 |
+| `on_progress(delta:, callback_context:)` | 非同期、チェックポイントごと（デバウンス） | ライブ進捗の更新。`supports_live_progress?` が `true` を返す場合は**必須** |
+| `on_approval_requested` | 非同期（将来） | 承認プロンプトを投稿する |
+
+**クラスレベルのインターフェース:**
+
 | メソッド | 目的 |
 |---|---|
-| `on_request_received` | トリガー前の確認応答（例: 進捗ノートの作成）。成功する必要があり、そうでなければトリガーは中止される |
-| `on_flow_started` | 作業開始のシグナル（例: 👀 絵文字、進捗ノートの更新） |
-| `on_flow_completed` | 作業完了のシグナル（例: ✅ 絵文字） |
-| `on_flow_failed` | 失敗のシグナル（例: ❌ + エラー）。同期的な失敗（ワークフロー開始前）と非同期的な失敗（ワークフローが実行され失敗した）を区別し、アダプターが条件付きのクリーンアップを行えるようにする |
-| `on_checkpoint_created` | 中間的な進捗更新（将来） |
-| `on_approval_requested` | 承認プロンプトの投稿（将来） |
+| `self.adapter_key` | レジストリ検索とコールバックコンテキストの永続化に使用する一意な文字列キー |
+| `self.from_callback_context(ctx)` | ファクトリー: 非同期配信のために永続化されたコールバックコンテキストからアダプターを再構築する |
+| `self.supports_live_progress?` | `true` を返すと、`ProgressDeliveryWorker` のチェックポイントストリーミングにオプトインする。オプトインするアダプターは `on_progress` を実装する**必要がある** |
 
-**非同期復元:** 各アダプターは、レジストリ検索用の一意なキーを宣言し、永続化されたコールバックコンテキストから自身を再構築するためのファクトリーメソッドを実装します。`CallbackWorker` は descendants ベースのレジストリを使用して、配信時に正しいアダプタークラスを解決します。
+**非同期復元:** 各アダプターは、レジストリ検索用の一意なキーを宣言し、永続化されたコールバックコンテキストから自身を再構築するためのファクトリーメソッドを実装します。`AdapterRegistry` はアダプターキーをクラスにマッピングし、`CallbackWorker` と `ProgressDeliveryWorker` は配信時に正しいアダプタークラスを解決するために使用します。
 
 ベースクラスは、確認応答、コールバックコンテキストの構築、コンポジットアイデンティティのリンク、SA プロジェクトメンバーシップ、コールバックコンテキストのエンリッチメント、ワークフロー実行をオーケストレーションするテンプレートメソッドを提供します。Caller はポリシーを解決して入力を構築し、アダプターは配信を実装し、ベースクラスは共有のメカニズムを処理します。
+
+**`trigger` と `with_lifecycle_hooks`:** `Base#trigger` は完全なエントリポイントです。コンポジットアイデンティティをリンクし、SA メンバーシップを確保してから、`with_lifecycle_hooks` を呼び出します。`with_lifecycle_hooks` は、実行を自ら処理する呼び出し元（例: アダプターの外部で実行をプロビジョニングする `@GitLabDuo` ノートフロー）のための純粋なライフサイクルオーケストレーターです。どちらのパスも、同じ `on_request_received → build_callback_context → yield → on_flow_enqueued` のシーケンスを共有します。
 
 ### 責務の分担
 
@@ -220,11 +267,14 @@ sequenceDiagram
 | コールバックコンテキスト（チャネル/スレッド ID） | 配信アダプター |
 | ユーザー向けライフサイクル（進捗、結果、エラー） | 配信アダプター |
 | コールバックコンテキストからの非同期復元 | 配信アダプター |
+| ライブ進捗へのオプトイン（`supports_live_progress?`） | 配信アダプター |
 | コンポジットアイデンティティのリンク | ベースアダプター（メカニズム） |
 | SA プロジェクトメンバーシップ | ベースアダプター（メカニズム） |
 | コールバックコンテキストのエンリッチメント（アダプターキー、SA ID、フロー参照） | ベースアダプター（メカニズム） |
 | リソースの変換（Issue → `issue_id`、MR → `merge_request_id`） | ベースアダプター（メカニズム） |
 | ワークフロー実行（`ExecuteWorkflowService`） | ベースアダプター（メカニズム） |
+| チェックポイントからの最終結果の抽出 | `CallbackWorker` |
+| チェックポイントストリーミングとカーソル管理 | `ProgressDeliveryWorker` |
 
 この 3 層の分割（Caller、配信アダプター、ベースアダプター）は、既存のチャネルに新しいトリガーソースを追加する（例: GitLab ノート上の `@GitLabDuo`）には Caller 側の解決コードを新しく書くだけで済み、既存の配信アダプターは変更なしで再利用されることを意味します。新しいチャネルを追加する（例: Microsoft Teams）には新しい配信アダプターが必要ですが、ベースアダプターや既存の Caller の変更は不要です。
 
@@ -248,7 +298,7 @@ sequenceDiagram
 - 同じアーキテクチャが外部メッセージングと GitLab ネイティブなサーフェスの両方を処理する
 - ワークスペースプロジェクトは自然なカスタマイズのサーフェス（イメージ、スキル、シークレット）
 - 型付けされたアダプターのコントラクトが不足しているフィールドを早期に検出する
-- ストリーミングと人間による承認は同じアーキテクチャを加法的に拡張する（新しい EventStore のサブスクリプション、新しいアダプターフック — コアの変更なし）
+- チェックポイントストリーミングは稼働中であり、同じアーキテクチャを加法的に拡張する
 
 ## デメリット
 
