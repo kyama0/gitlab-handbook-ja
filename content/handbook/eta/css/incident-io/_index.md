@@ -40,7 +40,7 @@ Incident.io の[ホームページ](https://incident.io/)の説明によると:
 
 ## Customer Support Systems の設定
 
-### コンポーネントカタログ
+### コンポーネントカタログ {#components-catalog}
 
 <sup>ソース: [Customer Support Operations コンポーネント](https://app.incident.io/gitlab/catalog/01JXZ8QTFEYF84RP0V80MG1VAP)</sup>
 
@@ -48,7 +48,7 @@ Incident.io の[ホームページ](https://incident.io/)の説明によると:
 
 このカタログには多数の項目が含まれているため、上記のソースリンクを参照してください。
 
-### グループカタログ
+### グループカタログ {#groups-catalog}
 
 <sup>ソース: [Customer Support Operations グループ](https://app.incident.io/gitlab/catalog/01JXZ8X7HVN23T3773PGXB5NNR)</sup>
 
