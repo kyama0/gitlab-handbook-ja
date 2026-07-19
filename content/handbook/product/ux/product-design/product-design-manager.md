@@ -2,14 +2,14 @@
 title: プロダクトデザインマネージャーのワークフロー
 description: "プロダクト開発プロセスの上流に位置する戦略的パートナーとしてデザイナーを率いる Product Design Manager のための戦略的ワークフロー。"
 upstream_path: /handbook/product/ux/product-design/product-design-manager/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-11T08:45:13-07:00
-translated_at: "2026-06-12T21:17:57Z"
-translator: claude
+upstream_sha: ed29e38c0251514dde8ce6a5d84d024d4a56a28f
+lastmod: "2026-07-19T05:12:18-07:00"
+translated_at: "2026-07-19T21:09:43Z"
+translator: codex
 stale: false
 ---
 
-Product Design Manager は、[Upstream Studios](/handbook/upstream-studios/) の一部である [Product Design](/handbook/product/ux/product-design/) において戦略的パートナーとして働くデザイナーを率います。このページでは、デザイナーが上流で考え、活動できるようにし、デザインの卓越性とプラットフォーム全体を見据えた思考を通じてプロダクトの方向性を推進するための、戦略的ワークフローを概説します。
+Product Design Manager は、[Product Design](/handbook/upstream-studios/product-design/) において戦略的パートナーとして働くデザイナーを率います。Product Design は [Upstream Studios](/handbook/upstream-studios/) の一部です。このページでは、デザイナーが上流で考え、活動できるようにし、デザインの卓越性とプラットフォーム全体を見据えた思考を通じてプロダクトの方向性を推進するための、戦略的ワークフローを概説します。
 
 チームメンバーの更新といった運用上のタスクや管理プロセスについては、[Product Design Operations](/handbook/product/ux/product-design/operations/) を参照してください。
 
@@ -77,7 +77,7 @@ Product Design Manager は、Senior Product Design Manager または Director of
 
 ## リソース
 
-- [Product Design ランディングページ](/handbook/product/ux/product-design/) - 概要と戦略的な位置づけ
+- [Product Design ランディングページ](/handbook/upstream-studios/product-design/) - 概要と戦略的な位置づけ
 - [Product Design operations](/handbook/product/ux/product-design/operations/) - 管理タスクと手順
 - [Product Designer の採用](/handbook/product/ux/product-design/hiring-product-designers/) - 採用プロセスとガイドライン
 - [ジョブファミリー: Product Design Management](/job-description-library/product/product-design-management/) - 役割の要件と責務

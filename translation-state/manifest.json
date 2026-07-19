@@ -22394,19 +22394,19 @@
     },
     "content/handbook/upstream-studios/_index.md": {
       "path": "content/handbook/upstream-studios/_index.md",
-      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
-      "translated_at": "2026-07-16T21:37:21Z",
+      "upstream_sha": "ed29e38c0251514dde8ce6a5d84d024d4a56a28f",
+      "translated_at": "2026-07-19T21:09:43Z",
       "model": "codex",
-      "input_hash": "2b9c64956d1826d03dcc8ad5dc9f1586ea0983b3e7c175430c377d0f86250ed5",
-      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+      "input_hash": "1d48f20bfa7598e181d98e2bd552be2fa5b098ce42773a73b2e4e6a19c7151f3",
+      "upstream_committed_at": "2026-07-19T05:12:18-07:00"
     },
     "content/handbook/upstream-studios/vision-strategy/_index.md": {
       "path": "content/handbook/upstream-studios/vision-strategy/_index.md",
-      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
-      "translated_at": "2026-07-17T06:46:21+09:00",
+      "upstream_sha": "ed29e38c0251514dde8ce6a5d84d024d4a56a28f",
+      "translated_at": "2026-07-19T21:09:43Z",
       "model": "codex",
-      "input_hash": "433e09199f8fbab58652e91cb71b301bb54ee9d2f960277fe1d91216651164b0",
-      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+      "input_hash": "6023654a0c8ddf96972b0065e6e9a187029f6b6127dd33b7cfb3ba1685f7fdec",
+      "upstream_committed_at": "2026-07-19T05:12:18-07:00"
     },
     "content/handbook/values/_index.md": {
       "path": "content/handbook/values/_index.md",
@@ -30034,11 +30034,11 @@
     },
     "content/handbook/product-development/how-we-work/issue-triage.md": {
       "path": "content/handbook/product-development/how-we-work/issue-triage.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "e0ef779f35641e4fc50e1844bbf1e2491686acc419e89ed9a5a80b769ec150ff",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
+      "upstream_sha": "ed29e38c0251514dde8ce6a5d84d024d4a56a28f",
+      "translated_at": "2026-07-19T21:09:43Z",
+      "model": "codex",
+      "input_hash": "dac67d46e7eee6fa9ced69fdf6830e455de77a972e3ee3573ca6007a36927995",
+      "upstream_committed_at": "2026-07-19T05:12:18-07:00"
     },
     "content/handbook/product-development/how-we-work/roles-and-responsibilities/_index.md": {
       "path": "content/handbook/product-development/how-we-work/roles-and-responsibilities/_index.md",
@@ -30338,11 +30338,11 @@
     },
     "content/handbook/product/ux/product-designer/_index.md": {
       "path": "content/handbook/product/ux/product-designer/_index.md",
-      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
-      "translated_at": "2026-07-16T21:37:21Z",
+      "upstream_sha": "ed29e38c0251514dde8ce6a5d84d024d4a56a28f",
+      "translated_at": "2026-07-19T21:09:43Z",
       "model": "codex",
-      "input_hash": "dc1cdfac459e77ee59b74d3f61ac94d51c1dfe997bd839fa0020d0b9e211621e",
-      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+      "input_hash": "e96f8fb7333504d7b946e1cf9cf1c2fb6b3f09a263130e852859fff0dcaf8542",
+      "upstream_committed_at": "2026-07-19T05:12:18-07:00"
     },
     "content/handbook/product/ux/product-designer/ai-design.md": {
       "path": "content/handbook/product/ux/product-designer/ai-design.md",
@@ -30378,11 +30378,11 @@
     },
     "content/handbook/product/ux/product-designer/capacity-management/_index.md": {
       "path": "content/handbook/product/ux/product-designer/capacity-management/_index.md",
-      "upstream_sha": "8451bcaa23ef826bedc5422c87ee89de121dd85b",
-      "translated_at": "2026-07-14T06:26:33+09:00",
+      "upstream_sha": "ed29e38c0251514dde8ce6a5d84d024d4a56a28f",
+      "translated_at": "2026-07-19T21:09:43Z",
       "model": "codex",
-      "input_hash": "cadcffbb954b007fdd7d7ebfccc577f1486becdb037318305452dfc02f3bc56b",
-      "upstream_committed_at": "2026-07-13T10:41:37-07:00"
+      "input_hash": "c7571dd44df6dbf73879853db873e6ea4d876d31503788b782cd3543d442fe8a",
+      "upstream_committed_at": "2026-07-19T05:12:18-07:00"
     },
     "content/handbook/product/ux/product-design/_index.md": {
       "path": "content/handbook/product/ux/product-design/_index.md",
@@ -30434,11 +30434,11 @@
     },
     "content/handbook/product/ux/product-design/product-design-manager.md": {
       "path": "content/handbook/product/ux/product-design/product-design-manager.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T21:17:57Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "8683701f77191ce4951268e9c67dff2e9792b97fa421ded490cd1e1fa5aef7b2",
-      "upstream_committed_at": "2026-06-11T08:45:13-07:00"
+      "upstream_sha": "ed29e38c0251514dde8ce6a5d84d024d4a56a28f",
+      "translated_at": "2026-07-19T21:09:43Z",
+      "model": "codex",
+      "input_hash": "f11d446f1a6250c8ab58d52df2521265d4d050757caae65a7b475431f868e0ce",
+      "upstream_committed_at": "2026-07-19T05:12:18-07:00"
     },
     "content/handbook/product/ux/product-design/ux-roadmaps/_index.md": {
       "path": "content/handbook/product/ux/product-design/ux-roadmaps/_index.md",
@@ -35279,6 +35279,22 @@
       "model": "codex",
       "input_hash": "1aab2a22bfcb8fec74f5d1ff1ab5005c3e38a22668c4a6b974a475fdfe280d10",
       "upstream_committed_at": "2026-07-17T17:30:02-07:00"
+    },
+    "content/handbook/upstream-studios/product-studios/_index.md": {
+      "path": "content/handbook/upstream-studios/product-studios/_index.md",
+      "upstream_sha": "ed29e38c0251514dde8ce6a5d84d024d4a56a28f",
+      "translated_at": "2026-07-19T21:09:43Z",
+      "model": "codex",
+      "input_hash": "47416dc24b507ef6a3b72929cdb113f567a423c6cc2eda6855af740999301f52",
+      "upstream_committed_at": "2026-07-19T05:12:18-07:00"
+    },
+    "content/handbook/upstream-studios/product-design/_index.md": {
+      "path": "content/handbook/upstream-studios/product-design/_index.md",
+      "upstream_sha": "ed29e38c0251514dde8ce6a5d84d024d4a56a28f",
+      "translated_at": "2026-07-19T21:09:43Z",
+      "model": "codex",
+      "input_hash": "244b9348dd8c25e5d97504b80a2285c94ac2d92f401c35b7801ac639ab46dc80",
+      "upstream_committed_at": "2026-07-19T05:12:18-07:00"
     }
   }
 }

@@ -2,14 +2,14 @@
 title: プロダクトデザイナーのワークフロー
 description: "プロダクト開発プロセスの上流に戦略的パートナーとして位置付けられるプロダクトデザイナー向けに、デザインプロセス、コラボレーションプラクティス、クラフトを包括的にガイドします。"
 upstream_path: /handbook/product/ux/product-designer/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-16T21:37:21Z"
+upstream_sha: ed29e38c0251514dde8ce6a5d84d024d4a56a28f
+translated_at: "2026-07-19T21:09:43Z"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:42-03:00"
+lastmod: "2026-07-19T05:12:18-07:00"
 ---
 
-Product Designer は、[Product Design](/handbook/product/ux/product-design/) 内で働きます。Product Design は [Upstream Studios](/handbook/upstream-studios/) の一部です。私たちは戦略的パートナーとして上流に位置し、プロダクト開発プロセス全体を通じて Product Management と Engineering とのトリオで協力します。
+Product Designer は、[Product Design](/handbook/upstream-studios/product-design/) 内で働きます。Product Design は [Upstream Studios](/handbook/upstream-studios/) の一部です。私たちは戦略的パートナーとして上流に位置し、プロダクト開発プロセス全体を通じて Product Management と Engineering とのトリオで協力します。
 
 Issue のトリアージ、ラベル付け、スケジューリングなど運用の詳細については、[Product Design Operations](/handbook/product/ux/product-design/operations/) を参照してください。
 

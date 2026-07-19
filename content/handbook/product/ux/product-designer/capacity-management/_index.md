@@ -2,16 +2,16 @@
 title: プロダクトデザイナーの優先順位とキャパシティ管理
 description: "トリオやプラットフォームイニシアチブに取り組む戦略的パートナーとして、プロダクトデザイナーが作業を優先順位付けし、キャパシティを管理するためのガイドライン。"
 upstream_path: /handbook/product/ux/product-designer/capacity-management/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-translated_at: "2026-07-14T06:26:33+09:00"
-translator: claude
+upstream_sha: ed29e38c0251514dde8ce6a5d84d024d4a56a28f
+translated_at: "2026-07-19T21:09:43Z"
+translator: codex
 stale: false
-lastmod: "2026-07-13T10:41:37-07:00"
+lastmod: "2026-07-19T05:12:18-07:00"
 ---
 
 プロダクトデザイナーは [Manager of One](/handbook/values/#managers-of-one)として働き、トリオの作業、プラットフォームイニシアチブ、より広範な Upstream Studios の責任に対して、自らのキャパシティの配分順序を決めます。このページでは、作業の優先順位付けとキャパシティ計画に関するガイダンスを提供します。
 
-[Product Design](/handbook/product/ux/product-design/)で働くプロダクトデザイナー向けです。Product Design は [Upstream Studios](/handbook/upstream-studios/)の一部です。
+[Product Design](/handbook/upstream-studios/product-design/)で働くプロダクトデザイナー向けです。Product Design は [Upstream Studios](/handbook/upstream-studios/)の一部です。
 
 ## キャパシティの計画と管理
 
