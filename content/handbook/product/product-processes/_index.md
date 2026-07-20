@@ -3,11 +3,11 @@ title: プロダクトプロセス
 description: >-
   プロダクト組織として、私たちは顧客が愛し価値を見出す製品を開発するための、柔軟でありながら簡潔な製品開発フレームワークを作ることに取り組んでいます。
 upstream_path: /handbook/product/product-processes/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-17T06:29:12+09:00"
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-21T06:59:28+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:42-03:00"
+lastmod: "2026-07-20T13:03:25-03:00"
 ---
 
 <!-- include omitted: includes/product/product-handbook-links.md -->
@@ -468,7 +468,7 @@ SaaS のために機能を提供する際にはいくつかの特別な考慮事
 プロダクトマネージャーとして、あなたは単一の [グループ](/handbook/company/structure/#product-groups) の [安定したカウンターパート](/handbook/company/structure/#specialist) として割り当てられます。GitLab では、グループとやり取りする際に、独自で非常に有益なガイドラインに従います。これらには以下が含まれます:
 
 1. プロダクトマネージャーは全体的な作業の優先順位付けの [DRI](/handbook/people-group/directly-responsible-individuals/) ですが、各 [作業タイプ](/handbook/product/groups/product-analysis/engineering/metrics/#work-type-classification) からの適切な優先順位が考慮されることを保証するため、EM および UX の安定したカウンターパートと協力して働きます (各タイプは異なる DRI を持つため)。プロダクトマネージャーは全体的な優先順位をコミュニケートする責任があります。
-1. プロダクトマネージャーは機能作業の「何を」「いつ」を提供します。エンジニアリング (UX、バックエンド、フロントエンド) は「どのように」を提供します。このプロセスは私たちの月次の [プロダクト](/handbook/product-development/how-we-work/product-development-flow/)、[エンジニアリング](/handbook/engineering/workflow/#product-development-timeline)、[UX](/handbook/product/ux/product-designer/) のケイデンスの一部としてドキュメント化されています。グループ内の [これらの各機能について安定したカウンターパートを定義](/handbook/product/categories/) しています。
+1. プロダクトマネージャーは機能作業の「何を」「いつ」を提供します。エンジニアリング (バックエンド、フロントエンド) は「どのように」を提供します。このプロセスは私たちの月次の [プロダクト](/handbook/product-development/how-we-work/product-development-flow/)、[エンジニアリング](/handbook/engineering/workflow/#product-development-timeline)、[プロダクトデザイン](/handbook/upstream-studios/product-design/workflow/) のケイデンスの一部としてドキュメント化されています。グループ内の [これらの各機能について安定したカウンターパートを定義](/handbook/product/categories/) しています。
 
 オールリモートの会社として、プロダクト提供プロセス全体での責任に関する明確さは必要性から生まれましたが、それは計り知れない配当をもたらします。利点には以下が含まれます:
 

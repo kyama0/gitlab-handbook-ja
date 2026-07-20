@@ -2,11 +2,11 @@
 title: ASE 向けレポートとダッシュボード
 description: ASE が利用できる各種標準レポートおよびダッシュボードの説明
 upstream_path: /handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/ase-reports/
-upstream_sha: c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba
-translated_at: "2026-05-09T00:00:00Z"
-translator: claude
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-21T06:21:42+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-09T20:14:47+00:00"
+lastmod: "2026-07-20T13:03:25-03:00"
 ---
 
 ## はじめに
@@ -98,6 +98,25 @@ TICKET_ID IN ( #TICKET_ARRAY_GOES_HERE ) ORDER BY TICKET_ID DESC;
 ```
 
 なお、これは利用可能なフィールドの完全なリストではないこと、```CREATED_AT``` および ```SYNCED_AT``` フィールドはチケットの日付を反映していないこと、Snowflake は標準的な SQL クエリ形式を採用しているため、このクエリは容易に拡張できることに注意してください。
+
+#### Glean で Snowflake をクエリする
+
+1. Your Settings -> Connectors に移動して Snowflake Glean コネクターを有効にする
+1. [assigned-support-engineers リポジトリ](https://gitlab.com/gitlab-com/support/assigned-support-engineers/-/tree/main?ref_type=heads)から、その組織の Zendesk Organization ID を取得する。
+1. このクエリでチケットを取得し、返されたデータに基づくレポートを作成するよう Glean に依頼する:
+
+   ```sql
+   select
+       zdt.*
+   from
+       prod.common.fct_support_ticket as a,
+       PROD.COMMON_PREP.PREP_ZENDESK_PROCESSED_TICKETS as zdt
+   where
+       a.dim_support_organization_id = ZD_ORG_ID
+       and a.dim_support_ticket_id = zdt.ticket_id
+   order by a.solved_at desc
+
+注意: Snowflake の `PREP_ZENDESK_PROCESSED_TICKETS` テーブルには、2022 年 11 月以降に作成された解決済みチケットのみが含まれます。
 
 #### ユースケース
 

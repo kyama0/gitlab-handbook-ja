@@ -1,11 +1,11 @@
 ---
 title: "Plan"
 upstream_path: /handbook/engineering/devops/plan/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-17T06:09:44+09:00"
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-21T06:59:28+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:42-03:00"
+lastmod: "2026-07-20T13:03:25-03:00"
 ---
 
 Plan チーム:
@@ -387,7 +387,7 @@ _UX Issue のウェイト付け_
 
 デザイナーが取り組むすべての Issue には、マイルストーンの作業がスケジュールされる前に UX ウェイトが必要です。
 
-- Issue ウェイトは [UX 部門の定義](/handbook/product/ux/product-designer/capacity-management/#ux-issue-weights) に従う必要があります。
+- Issue ウェイトは [Upstream Studios 部門の定義](/handbook/upstream-studios/product-design/workflow/capacity-management/#ux-issue-weights) に従う必要があります。
 - Issue が専用の [UX] Issue である場合、Issue ウェイトを `weight` フィールドに追加できますが、~'design weight:' ラベルとしても複製する必要があります。これは UX 部門の計画目的のためです。実装と UX 作業が同じ Issue で行われる小さい Issue の場合、UX ウェイトは ~'design weight:' ラベルを使って追加すべきです（`weight` フィールドはエンジニアリングによって使用されます）。
 - プロダクトマネージャーとプロダクトデザイナーは Issue ウェイトを使用して、マイルストーンに適切な作業量があることを確認したり、トレードオフを議論したり、ウェイトの高い項目のために作業を小さなピースに分割することに関する会話を始めたりできます。
 

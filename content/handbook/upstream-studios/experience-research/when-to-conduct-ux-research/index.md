@@ -2,9 +2,9 @@
 title: "UX Research を実施するタイミング"
 description: "チームにとって UX Research を実施するのが適切なタイミングを学びます。"
 upstream_path: /handbook/upstream-studios/experience-research/when-to-conduct-ux-research/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T09:05:00+09:00"
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+lastmod: "2026-07-20T13:03:25-03:00"
+translated_at: "2026-07-21T06:21:42+09:00"
 translator: codex
 stale: false
 ---
@@ -77,7 +77,7 @@ Improve Phase からのインサイトは、新たな問題検証またはソリ
 確信度のレベルを測るために自分に問いかけるべき質問の例：
 
 - 高い確信度を持っている理由を示せますか？（例: ソリューション検証調査の結果、過去の関連リサーチの参照などの結果かもしれません。主に、勘ではなく具体的な根拠を特定したいところです。競合のソリューションを根拠として参照することは魅力的ですが、競合がソリューションを情報源にするためにどの程度自らリサーチを行ったかは不明なため、リスクがあります。）
-- あなたのデザインはデザイン [ガイドライン](https://design.gitlab.com/) や [基本理念](/handbook/product/ux/product-designer/#product-design-process) に従っていますか？[デザインと UI 変更のチェックリスト](https://docs.gitlab.com/development/contributing/design/#checklist) をレビューしましたか？
+- あなたのデザインはデザイン [ガイドライン](https://design.gitlab.com/) や [基本理念](/handbook/upstream-studios/product-design/workflow/#product-design-process) に従っていますか？[デザインと UI 変更のチェックリスト](https://docs.gitlab.com/development/contributing/design/#checklist) をレビューしましたか？
 - [UX Scorecard](/handbook/product/ux/ux-scorecards/) を実施しましたか？もしそうなら、結果は何で、それを踏まえて何を行いましたか？
 - なぜあなたのデザインがネガティブなユーザー体験を引き起こさないと考えていますか？
 

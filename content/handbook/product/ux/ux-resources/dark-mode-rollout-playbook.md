@@ -2,16 +2,16 @@
 title: "ダークモードロールアウトプレイブック"
 description: "このプレイブックは、各チームが自分たちの責任範囲でダークモードを実装・維持するための期待値、ワークフロー、ガイダンスをまとめたものです。"
 upstream_path: /handbook/product/ux/ux-resources/dark-mode-rollout-playbook/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
-translator: claude
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-21T06:51:05+09:00"
+translator: codex
 stale: false
-lastmod: "2025-09-26T10:24:24-07:00"
+lastmod: "2026-07-20T13:03:25-03:00"
 ---
 
 このプレイブックは、各チームが自分たちの責任範囲でダークモードを実装・維持するための期待値、ワークフロー、ガイダンスをまとめたものです。
 
-ダークモードは一般提供されており、[機能成熟度ガイドライン](https://docs.gitlab.com/policy/development_stages_support/)に沿った正式なサポートが必要です。このプレイブックは、採用を継続するチーム、ロングテールの課題を修正するチーム、今後の作業でも互換性を確保するチームのリファレンスとして機能します。プロダクトチームは、[モードを使ったデザインの方法](/handbook/product/ux/product-designer/#designing-with-modes)を理解し、ダークモードのデザイン原則を適用することで、自身の領域が一貫性のあるダークモード体験を提供することに最終的な責任を負います。
+ダークモードは一般提供されており、[機能成熟度ガイドライン](https://docs.gitlab.com/policy/development_stages_support/)に沿った正式なサポートが必要です。このプレイブックは、採用を継続するチーム、ロングテールの課題を修正するチーム、今後の作業でも互換性を確保するチームのリファレンスとして機能します。プロダクトチームは、[モードを使ったデザインの方法](/handbook/upstream-studios/product-design/workflow/#designing-with-modes)を理解し、ダークモードのデザイン原則を適用することで、自身の領域が一貫性のあるダークモード体験を提供することに最終的な責任を負います。
 
 このプレイブックに従うことで、チームは今日の高品質なダークモード体験に貢献できるだけでなく、今後それを維持・強化し、他のモードにも対応するために必要な専門知識を構築できます。
 

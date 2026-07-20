@@ -2,16 +2,16 @@
 title: 意図しない脆弱性開示の取り扱い
 summary: 意図しない脆弱性開示の様々なシナリオに対応するためのランブック。
 upstream_path: /handbook/security/product-security/psirt/runbooks/unintended-vuln-disclosure/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
-translator: claude
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-21T07:26:07+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-12T20:47:52+00:00"
+lastmod: "2026-07-20T14:52:30+01:00"
 ---
 
 ## 概要
 
-未修正の (または不十分にしか修正されていない) 脆弱性に関する詳細が、意図せず公開されてしまう状況があります。このランブックには、こうした状況で AppSec が従うべき具体的なプロセスを含みます。
+未修正の (または不十分にしか修正されていない) 脆弱性に関する詳細が、意図せず公開されてしまう状況があります。このランブックには、こうした状況で PSIRT が従うべき具体的なプロセスを含みます。
 
 ## SIRT への呼び出し手順
 
@@ -19,14 +19,11 @@ lastmod: "2026-02-12T20:47:52+00:00"
 
 ### canonical でセキュリティミラーではなく修正された脆弱性
 
-#### 即時対応
-
-1. セキュリティ Issue が公開で対応してよいかを確認します。これは通常 ~"security-fix-in-public" ラベルで示されており、このラベルがない場合は次のステップに進みます。
-1. AppSec エンジニアは Slack で `/security` を使用して SIRT を呼び出すべきです。
+セキュリティ修正は公開リポジトリではなく、[セキュリティミラー](/handbook/security/product-security/security-platforms-architecture/application-security/vulnerability-management#fixing-the-vulnerability)で開発する必要があります。AppSec が公開を承認した修正には ~"security-fix-in-public" ラベルが付き、削除する必要はありません。未承認の修正が公開された場合は、マージリクエストを削除するため `/security` 経由で SIRT を呼び出します。このページは、MR の内部ノートで促されたマージリクエスト作成者または AppSec から行われる場合があります。
 
 #### 緩和
 
-1. SIRT が[コミットクリーンアップ](https://internal.gitlab.com/handbook/security/security_operations/sirt/operations/ttps/procedures/accidental_commit_cleanup/)を実行します。
+1. SIRT が[コミットクリーンアップ](https://internal.gitlab.com/handbook/security/security_operations/sirt/operations/ttps/procedures/accidental_commit_cleanup/)を実行し、マージリクエストを公開状態から削除します。
 
 #### フォローアップアクション
 
@@ -36,8 +33,8 @@ lastmod: "2026-02-12T20:47:52+00:00"
 
 #### 即時対応
 
-1. 脆弱性がクリティカルな場合、SIRT が検出と緩和の作業を開始できるよう、/security 経由で SIRT を呼び出す必要があります。
-1. AppSec は、適切な priority と severity ラベルを付けて新しい Issue を作成すべきです。即座に対応できるよう、適切な EM/PM にメンションすべきです。
+1. 脆弱性がクリティカルな場合、SIRT が検出と緩和の作業を開始できるよう、`/security` 経由で SIRT を呼び出す必要があります。
+1. MR の作成者または AppSec は（誰がトリガーしたかに応じて）、適切な priority と severity ラベルを付けて新しい Issue を作成すべきです。即座に対応できるよう、適切な EM / PM にメンションすべきです。
 
 #### 緩和
 
@@ -52,7 +49,7 @@ lastmod: "2026-02-12T20:47:52+00:00"
 
 #### 即時対応
 
-1. AppSec エンジニアは即座に Slack で `/security` を使用して SIRT を呼び出すべきです。
+1. PSIRT エンジニアは即座に Slack で `/security` を使用して SIRT を呼び出すべきです。
 
 #### 緩和
 
@@ -105,5 +102,5 @@ lastmod: "2026-02-12T20:47:52+00:00"
 #### コミュニケーションミスやその他の意図しない漏洩へのフォローアップアクション
 
 1. Issue の confidentiality がチームメンバーによって誤って変更されたか? もしそうなら、[脆弱性関連データ](https://internal.gitlab.com/handbook/security/data_classification/#data-classification-index)の安全な取り扱いについて教育します。
-1. リリースが公開される前にこのようなミスがないよう慎重に審査されるため、AppSec のリリースマネージャーにインシデントについてメンションします。
+1. リリースが公開される前にこのようなミスがないよう慎重に審査されるため、PSIRT のリリースマネージャーにインシデントについてメンションします。
 1. ブログ記事への脆弱性詳細の追加は Delivery チームによって自動化されています。これがツール側のバグであるかどうかを判断するため、Delivery チームに連絡します。

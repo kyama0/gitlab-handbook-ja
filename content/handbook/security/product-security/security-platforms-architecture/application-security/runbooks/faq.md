@@ -2,11 +2,11 @@
 title: "AppSec よくある質問"
 description: "AppSec 関連で最もよく寄せられる質問のキュレーションリスト"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/application-security/runbooks/faq/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:00:00Z"
-translator: claude
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-20T21:39:44Z"
+translator: codex
 stale: false
-lastmod: "2026-02-06T19:27:57-05:00"
+lastmod: "2026-07-20T14:52:30+01:00"
 ---
 
 これは、アプリケーションセキュリティに関する一般的な質問のキュレーションリストです。ここまたは[ハンドブックページ](/handbook/security/product-security/security-platforms-architecture/application-security/) で回答されていない質問がある場合は、`#security_help` Slack チャンネルで AppSec チームに連絡してください。
@@ -15,7 +15,7 @@ lastmod: "2026-02-06T19:27:57-05:00"
 
 ## セキュリティ関連の MR を誤って公開で開いてしまった場合はどうすればよいですか？
 
-関連する機密のセキュリティ Issue に `~"security-fix-in-public"` ラベルが付いているかどうかを確認してください。このラベルは、セキュリティ Issue が[公開で対処されることがすでに承認されている](/handbook/security/product-security/security-platforms-architecture/application-security/vulnerability-management/#fixing-in-public) ことを意味するため、その MR が公開のままで問題ありません。そうでない場合は、[セキュリティエンジニアオンコールに連絡](/handbook/security/security-operations/sirt/engaging-security-on-call/#engage-the-security-engineer-on-call) して MR とブランチを削除してもらいます。
+関連する機密のセキュリティ Issue に `~"security-fix-in-public"` ラベルが付いているかどうかを確認してください。このラベルは、セキュリティ Issue が[公開で対処されることがすでに承認されている](/handbook/security/product-security/security-platforms-architecture/application-security/vulnerability-management/#fixing-in-public) ことを意味するため、その MR を公開のままにしても問題ありません。ラベルが付いていない場合は、Slack の `/security` 経由で SIRT にエスカレーションし、MR とブランチを削除してもらってください。自動化がすでに MR にフラグを付け、この作業を求める内部ノートを投稿している可能性がありますが、対応は同じです。
 
 ## Stable Counterpart が不在の場合、誰に連絡すればよいですか？
 
