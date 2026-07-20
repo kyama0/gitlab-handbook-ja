@@ -2,11 +2,11 @@
 title: "GitLab セキュリティリソースセンター"
 description: "GitLab の顧客と見込み顧客に向けて、人気で重要なリンクと情報を集約してリストします。"
 upstream_path: /handbook/security/gitlab_security_resource_center/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:00:00Z"
-translator: claude
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-21T06:21:42+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-06T19:27:57-05:00"
+lastmod: "2026-07-20T13:03:25-03:00"
 ---
 
 ## よく要求されるリソース
@@ -123,9 +123,9 @@ lastmod: "2026-02-06T19:27:57-05:00"
 ### セキュリティ意識向上 {#security-awareness}
 
 - [セキュリティトレーニング](/handbook/security/security-assurance/governance/security-training/)
-- [セキュリティ意識向上トレーニングプログラム](security-assurance/governance/sec-awareness-training/)
-- [セキュリティ意識向上トレーニング手順](security-assurance/governance/sec-training/)
-- [フィッシングプログラム](security-assurance/governance/phishing/)
+- [セキュリティ意識向上トレーニングプログラム](/handbook/security/security-assurance/governance/sec-awareness-training/)
+- [セキュリティ意識向上トレーニング手順](/handbook/security/security-assurance/governance/sec-training/)
+- [フィッシングプログラム](/handbook/security/security-assurance/governance/phishing/)
 
 ### サードパーティリスク管理 {#third-party-risk-management}
 

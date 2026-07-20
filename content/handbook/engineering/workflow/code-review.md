@@ -2,11 +2,11 @@
 title: コードレビューガイドライン
 description: "コードレビューはすべてのマージリクエストで必須です。コードレビューガイドラインに慣れ、それに従ってください。"
 upstream_path: "/handbook/engineering/workflow/code-review/"
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T12:49:33Z"
-translator: claude
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-21T06:59:28+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-15T07:58:19-05:00
+lastmod: "2026-07-20T09:40:42-03:00"
 ---
 
 ## 概要
@@ -176,7 +176,7 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 
 [`design.gitlab.com`](https://gitlab.com/gitlab-org/gitlab-services/design.gitlab.com) または [`gitlab-svgs`](https://gitlab.com/gitlab-org/gitlab-svgs)
 
-- [メンテナになる方法](/handbook/product/ux/pajamas-design-system/design-review/#how-to-become-a-maintainer)を理解する。
+- [メンテナになる方法](/handbook/upstream-studios/design-expression/design-system/design-review/#how-to-become-a-maintainer)を理解する。
 - すべてのデザイナーは [`gitlab-design`](https://gitlab.com/gitlab-org/gitlab-design) プロジェクトのメンテナです。`gitlab` および `gitlab-ui` プロジェクトの UI（`.scss`）のメンテナになることに関心がある場合は、[エンジニアリングレビューワークフロー](/handbook/engineering/workflow/code-review)に従ってください。
 - 十分な MR をレビューでき、多様な種類が含まれるようにするのはあなた次第です。チームからのレビューを求めることも、`#upstream-studios` や `#g_pajamas-design-system` Slack チャンネルでレビューを依頼することもできます。トレーニングを進めるのに十分な MR を受け取っていない場合は、能動的に Pajamas への自分自身の改善に取り組んでください。これは、プロダクトの全体的な理解と品質の高い貢献を示し、進捗を後押しするのに役立ちます。メンテナはあなたを導く準備ができています。
 - あなたのレビューは、レビュアーの責任に加えてメンテナの責任もカバーすることを目指すべきです。デザインメンテナは、使いやすさに影響を与え、既存のユーザー体験をイテレートする MR、および／またはデザインガイドライン、標準、パターンの使用を含む MR に焦点を当てるべきです。あなたの承認は、マージ準備ができていると考えていることを意味します。

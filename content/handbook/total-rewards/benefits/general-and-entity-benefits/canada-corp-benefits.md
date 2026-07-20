@@ -2,11 +2,11 @@
 title: "GitLab Canada Corp"
 description: "カナダ在住のチームメンバー向けの GitLab Canada Corp 福利厚生。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/canada-corp-benefits/
-upstream_sha: e829b207a53856c23a25197426cca945626ade8a
-translated_at: "2026-07-05T00:04:57+09:00"
+upstream_sha: 239a95f5729d7e61f33d703f5b4179327673cbc2
+translated_at: "2026-07-21T06:59:28+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-01T16:03:46-07:00"
+lastmod: "2026-07-20T15:00:19-07:00"
 ---
 
 ## あなたをしっかりカバーします
@@ -89,7 +89,7 @@ Canada Life を通じた GitLab のグループ RRSP で経済的な未来を構
 - 個人の RRSP 拠出限度額の追跡はあなたの責任です
 - ボーナスおよびコミッションの拠出: ボーナスまたはコミッションの支払いを RRSP に振り向けたい場合は、[給与締切](https://internal.gitlab.com/handbook/finance/payroll/?search=payroll)前に [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=7b018859478c069067429ee0026d4352) 経由でリクエストを送信できます。以下に注意してください:
   - 全社的なボーナス支払いの前に、Payroll は登録済みの RRSP チームメンバーにボーナスが近づいていることを通知し、リクエストを提出する期限を案内します。
-  - ボーナス拠出は全額で行う必要があります。部分的な拠出は認められません。
+  - ボーナスおよびコミッションの拠出は全額で行う必要があります。部分的な拠出は認められません。
   - コミッション拠出の選択は、四半期に 1 回のみ更新できます。
 
 - 移管と引き出しは 2025 年 4 月から利用可能

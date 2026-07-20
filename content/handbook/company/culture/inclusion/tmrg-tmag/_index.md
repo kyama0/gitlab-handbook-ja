@@ -2,11 +2,11 @@
 title: "TMxG — チームメンバーリソース＆アドボカシーグループガイド"
 description: "GitLab におけるチームメンバーリソースグループ（TMRG）とチームメンバーアドボカシーグループ（TMAG）とは何か、どのように機能するか、どのように参加するか。"
 upstream_path: "/company/culture/inclusion/tmrg-tmag/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-translated_at: "2026-07-19T09:38:53+09:00"
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-21T06:59:28+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-17T10:47:06-07:00"
+lastmod: "2026-07-20T14:37:31+08:00"
 ---
 
 このページでは、GitLab における**チームメンバーリソースグループ（TMRG）**と**チームメンバーアドボカシーグループ（TMAG）**とは何か、どのように機能するか、そしてどのように参加できるかを説明します。
@@ -62,18 +62,18 @@ TMxG Slack チャンネルは一貫した命名規則を使用しているため
 
 どの TMRG または TMAG が他のものより重要であるという印象を避けるために、アルファベット順に並べています。
 
-| TMxG | 焦点 | Slack チャンネル | Google Group / サインアップ | TMxG リード | エグゼクティブスポンサー | 継続アジェンダ | Loop ページ URL |
-|------|-------|---------------|------------------------|---------------|-------------------|----------------|
-| [API@GitLab — アジア太平洋諸島系](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-api/) | アジア系・太平洋諸島系コミュニティ | `#api-tmrg` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/api-tmrg) | _追加予定_ | [Nabitha Rao](https://gitlab.com/nabitha) | [API アジェンダ](https://docs.google.com/document/d/17zJuZlWVg40mPjcybnGlj_mK2f4SEpRdrjq3s3Cseow/edit?usp=sharing) |
-| [Black@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-black/) | 黒人チームメンバーコミュニティとアドボカシー | `#black-at-gitlab` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/black-tmrg) | _追加予定_ | **TBD** | [Black @ GitLab アジェンダ](https://docs.google.com/document/d/1G9Be3e3hjj3gexLmrmR1bqzaEErP-4BfDgJR4q_jUTw/edit#heading=h.vf9sdppkn4e0) |
-| [Caregivers@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-caregivers/) | 介護コミュニティとサポート | `#caregivers-tmrg` | _TBA（Google Group）_ | _追加予定_ | **TBD** | [介護者アジェンダ](https://docs.google.com/document/d/1taPLNLkVvTayEzySFUU5XKZeSK9tmsK-WELu_Pp14m8/edit?usp=sharing) |
-| [障害＆神経多様性@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/erg-gitlab-diversability/) | 障害、インクルージョン、神経多様性 | `#disability-and-neurodivergence-tmrg` | [サインアップ（Google Form）](https://forms.gle/5g2wVB577Lr7M3CH7) | _追加予定_ | [Rob Allen](https://gitlab.com/roballen) | [DiversABILITY アジェンダ](https://docs.google.com/document/d/130LH9QPewms025z4OFxNNUYnjcQ53D1049EZOL2WdWc/edit?usp=sharing) |
-| [Gente@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-gente/) | ラテン系/ヒスパニック系コミュニティと文化 | `#gente` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/latinxtmrg) | _追加予定_ | [Josh Lemos](https://gitlab.com/joshlemos) | [Gente アジェンダ](https://docs.google.com/document/d/12dYSDjiVvFt-c6UO9y350pFbrrK5Iq2o/edit) |
-| [世代間理解](/handbook/company/culture/inclusion/tmrg-tmag/tmag-gitlab-generational-understanding/)（TMAG） | 世代を超えた視点とコラボレーション | `#generational_understanding` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/Generational_Differences_ERG) | _追加予定_ | [Tim Zallmann](https://gitlab.com/timzallmann) | [世代間理解アジェンダ](https://docs.google.com/document/d/1h81q60KnCJFsATKjZKOFglBmgkv8TlGrKY8punX2SEg/edit?usp=sharing) |
-| [Global Voices@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-global-voices/) | 米国外のチームメンバー | `#global-voices-tmrg` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/globalvoices/) | _追加予定_ | **TBD** | TBD |
-| [メンタルヘルス TMAG](/handbook/company/culture/inclusion/tmrg-tmag/tmag-mental-health/) | メンタルヘルス意識とサポート | `#mental-health-tmag` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/wellness-mental-health) | _追加予定_ | [Lisa Boughner](https://gitlab.com/lboughner) | [メンタルヘルスアジェンダ](https://docs.google.com/document/d/1zslRNKJJ_WnRj-lvkOP4U22pxkb0T1MPiGhXWy5_n1s/edit?tab=t.0#heading=h.ttb7ltwed88k) |
-| [Pride@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-pride/) | LGBTQ+コミュニティとアライシップ | `#lgbtq` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/pride-tmrg) | _追加予定_ | [Robin Schulman](https://gitlab.com/rmschulman) | [Pride アジェンダ](https://docs.google.com/document/d/11D-Izm5mbopEUCY036Qr0bHx6UePMyfkzhUfNDE-mnk/edit?usp=sharing) |
-| [Women@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/) | ジェンダー多様性と女性の活躍 | `#women`（`#women-tmrg`に標準化予定） | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/womenstmrg) | _追加予定_ | [Robin Schulman](https://gitlab.com/rmschulman) | [Women アジェンダ](https://docs.google.com/document/d/1bJ3Y8IVjnssPpRa3IUafdzC0wsJUU6rYCGf-YEiDHeg/edit) |
+| TMxG | 焦点 | Slack チャンネル | Google Group / サインアップ | TMxG リード | エグゼクティブスポンサー | 継続アジェンダ
+|------|-------|---------------|------------------------|---------------|-------------------|----------------
+| [API@GitLab — アジア太平洋諸島系](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-api/) | アジア系・太平洋諸島系コミュニティ | `#api-tmrg` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/api-tmrg) | _追加予定_ | [Manu Narayan](https://gitlab.com/mnarayan-gl)、[Rashmi Chachra](https://gitlab.com/rchachra) | [API アジェンダ](https://docs.google.com/document/d/17zJuZlWVg40mPjcybnGlj_mK2f4SEpRdrjq3s3Cseow/edit?usp=sharing)
+| [Black@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-black/) | 黒人チームメンバーコミュニティとアドボカシー | `#black-at-gitlab` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/black-tmrg) | _追加予定_ | **TBD** | [Black @ GitLab アジェンダ](https://docs.google.com/document/d/1G9Be3e3hjj3gexLmrmR1bqzaEErP-4BfDgJR4q_jUTw/edit#heading=h.vf9sdppkn4e0)
+| [Caregivers@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-caregivers/) | 介護コミュニティとサポート | `#caregivers-tmrg` | _TBA（Google Group）_ | _追加予定_ | **TBD** | [介護者アジェンダ](https://docs.google.com/document/d/1taPLNLkVvTayEzySFUU5XKZeSK9tmsK-WELu_Pp14m8/edit?usp=sharing)
+| [障害＆神経多様性@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/erg-gitlab-diversability/) | 障害、インクルージョン、神経多様性 | `#disability-and-neurodivergence-tmrg` | [サインアップ（Google Form）](https://forms.gle/5g2wVB577Lr7M3CH7) | _追加予定_ | [Rob Allen](https://gitlab.com/roballen) | [DiversABILITY アジェンダ](https://docs.google.com/document/d/130LH9QPewms025z4OFxNNUYnjcQ53D1049EZOL2WdWc/edit?usp=sharing)
+| [Gente@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-gente/) | ラテン系/ヒスパニック系コミュニティと文化 | `#gente` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/latinxtmrg) | _追加予定_ | [Josh Lemos](https://gitlab.com/joshlemos) | [Gente アジェンダ](https://docs.google.com/document/d/12dYSDjiVvFt-c6UO9y350pFbrrK5Iq2o/edit)
+| [世代間理解](/handbook/company/culture/inclusion/tmrg-tmag/tmag-gitlab-generational-understanding/)（TMAG） | 世代を超えた視点とコラボレーション | `#generational_understanding` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/Generational_Differences_ERG) | _追加予定_ | [Tim Zallmann](https://gitlab.com/timzallmann) | [世代間理解アジェンダ](https://docs.google.com/document/d/1h81q60KnCJFsATKjZKOFglBmgkv8TlGrKY8punX2SEg/edit?usp=sharing)
+| [Global Voices@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-global-voices/) | 米国外のチームメンバー | `#global-voices-tmrg` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/globalvoices/) | _追加予定_ | **TBD** | TBD
+| [メンタルヘルス TMAG](/handbook/company/culture/inclusion/tmrg-tmag/tmag-mental-health/) | メンタルヘルス意識とサポート | `#mental-health-tmag` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/wellness-mental-health) | _追加予定_ | [Lisa Boughner](https://gitlab.com/lboughner) | [メンタルヘルスアジェンダ](https://docs.google.com/document/d/1zslRNKJJ_WnRj-lvkOP4U22pxkb0T1MPiGhXWy5_n1s/edit?tab=t.0#heading=h.ttb7ltwed88k)
+| [Pride@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-pride/) | LGBTQ+コミュニティとアライシップ | `#lgbtq` | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/pride-tmrg) | _追加予定_ | [Robin Schulman](https://gitlab.com/rmschulman) | [Pride アジェンダ](https://docs.google.com/document/d/11D-Izm5mbopEUCY036Qr0bHx6UePMyfkzhUfNDE-mnk/edit?usp=sharing)
+| [Women@GitLab](/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/) | ジェンダー多様性と女性の活躍 | `#women`（`#women-tmrg`に標準化予定） | [サインアップ（Google Group）](https://groups.google.com/a/gitlab.com/g/womenstmrg) | _追加予定_ | [Robin Schulman](https://gitlab.com/rmschulman) | [Women アジェンダ](https://docs.google.com/document/d/1bJ3Y8IVjnssPpRa3IUafdzC0wsJUU6rYCGf-YEiDHeg/edit)
 
 ---
 

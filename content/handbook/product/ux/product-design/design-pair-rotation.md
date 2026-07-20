@@ -2,16 +2,16 @@
 title: "プロダクトデザインのペア"
 description: "プロダクトデザイナーのペアローテーションスケジュール"
 upstream_path: /handbook/product/ux/product-design/design-pair-rotation/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
-translator: claude
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-21T06:51:05+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-12T13:25:38-06:00"
+lastmod: "2026-07-20T13:03:25-03:00"
 ---
 
 ## デザインペア
 
-ペアデザイニングは、プロダクトデザイナーに、取り組みの初期段階でアイデアを出し合い、デザインプロセス中にフィードバックを得て、[デザインレビュー](/handbook/product/ux/product-designer/#design-reviews)を実施するための一貫したパートナーを提供します。また、プロダクトデザイナーが自分の以外のプロダクトエリアに触れる機会も提供します。
+ペアデザイニングは、プロダクトデザイナーに、取り組みの初期段階でアイデアを出し合い、デザインプロセス中にフィードバックを得て、[デザインレビュー](/handbook/upstream-studios/product-design/workflow/#design-reviews)を実施するための一貫したパートナーを提供します。また、プロダクトデザイナーが自分の以外のプロダクトエリアに触れる機会も提供します。
 
 - 新しいデザイナーペアは 6 か月ごとに接続されます。
 - ペアリング割り当ては異なるステージのデザイナーで構成される必要があります（例: Plan のデザイナーは Plan ステージ以外の人とペアになる必要があります）。

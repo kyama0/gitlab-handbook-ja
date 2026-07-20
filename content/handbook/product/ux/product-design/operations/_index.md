@@ -3,16 +3,16 @@ title: プロダクトデザインオペレーション
 description: >-
   "プロダクトデザイナーおよびプロダクトデザインマネージャー向けの運用ガイダンス。Issue管理、チームオペレーション、管理プロセスを含みます。"
 upstream_path: /handbook/product/ux/product-design/operations/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
-translator: claude
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-21T06:59:28+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-13T14:13:34-06:00"
+lastmod: "2026-07-20T13:03:25-03:00"
 ---
 
 プロダクトデザインは、GitLab のフルスタックエクスペリエンス組織である[Upstream Studios](/handbook/upstream-studios/)の一部です。上流に位置する戦略的パートナーとして、私たちは最初から計画に関与し、これらの運用プラクティスを使用して、プロダクト開発プロセス全体を通じてデザインが統合されることを確保します。
 
-デザインプロセス、コラボレーションプラクティス、技巧ガイダンスについては、[プロダクトデザイナーのワークフロー](/handbook/product/ux/product-designer/)を参照してください。
+デザインプロセス、コラボレーションプラクティス、技巧ガイダンスについては、[プロダクトデザイナーのワークフロー](/handbook/upstream-studios/product-design/workflow/)を参照してください。
 
 ## Issue 管理
 
@@ -26,7 +26,7 @@ lastmod: "2026-01-13T14:13:34-06:00"
 
 ### スケジュールされた UX Issue をステージグループに伝える
 
-チームのプランニング Issue に`User Experience`セクションを追加することを検討してください（[例 1](https://gitlab.com/gitlab-org/ci-cd/release-group/release/-/issues/53#user-experience-roller_coaster)、[例 2](https://gitlab.com/gitlab-org/ci-cd/release-group/release/-/issues/59#research-sleuth_or_spy)）。このセクションには、マイルストーンのアクティブなデザイン項目（リサーチプロジェクト、Deferred UX、UI polish、Pajamas コンポーネントなど）を含めることができます。プロダクトデザイナーの[プランニングとキャパシティ](/handbook/product/ux/product-designer/capacity-management)について詳しく学んでください。
+チームのプランニング Issue に`User Experience`セクションを追加することを検討してください（[例 1](https://gitlab.com/gitlab-org/ci-cd/release-group/release/-/issues/53#user-experience-roller_coaster)、[例 2](https://gitlab.com/gitlab-org/ci-cd/release-group/release/-/issues/59#research-sleuth_or_spy)）。このセクションには、マイルストーンのアクティブなデザイン項目（リサーチプロジェクト、Deferred UX、UI polish、Pajamas コンポーネントなど）を含めることができます。プロダクトデザイナーの[プランニングとキャパシティ](/handbook/upstream-studios/product-design/workflow/capacity-management)について詳しく学んでください。
 
 プランニング Issue にデザインの問題を含めることで、デザインの取り組みが可視化され、`workflow::problem validation`、`workflow::design`、`workflow::solution validation`の段階でクロスファンクショナルなコラボレーションが促進されます。
 

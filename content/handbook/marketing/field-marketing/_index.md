@@ -2,9 +2,9 @@
 title: "Regional Marketing"
 description: "GitLab における Regional Marketing の役割は、対面およびバーチャルのインタラクションを通じて、地域レベルでのマーケティングメッセージとパイプライン構築を支援するために、セールスと密接に連携することです。"
 upstream_path: "/handbook/marketing/field-marketing/"
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-lastmod: 2026-07-08T18:11:59+00:00
-translated_at: "2026-07-09T09:12:42+09:00"
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+lastmod: "2026-07-20T19:07:45+00:00"
+translated_at: "2026-07-21T06:59:28+09:00"
 translator: codex
 stale: false
 ---
@@ -707,7 +707,7 @@ info@bostonbusinessprinting.com
 
 ## Regional Marketing FedEx アカウント
 
-Regional Marketing チームは、発送に Regional Marketing Fedex Account を利用しています（詳細は Marketing 1pass にあります）。アカウントを使用する際は、費用が適切に追跡できるよう、常に参照情報（Allocadia ID、イベント名など）を含めてください。Regional Marketing Fedex アカウントに関する質問は、AMER Regional Director に連絡してください。
+Regional Marketing チームは、発送に Regional Marketing Fedex Account を利用しています（詳細は Marketing 1pass にあります）。アカウントを使用する際は、費用が適切に追跡できるよう、常に参照情報（Allocadia ID、イベント名など）を含めてください。Regional Marketing Fedex アカウントに関する質問は、Liz Garrity に連絡してください。
 
 ## バーチャルイベント向けの食品・飲料ベンダー
 

@@ -5,11 +5,11 @@ tags:
   - security_policy
   - security_policy_caplscsi
 upstream_path: /handbook/security/security-and-technology-policies/software-development-lifecycle-policy/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:00:00Z"
-translator: claude
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-20T21:39:44Z"
+translator: codex
 stale: false
-lastmod: "2025-11-20T12:36:11+00:00"
+lastmod: "2026-07-19T22:35:10-07:00"
 ---
 
 {{< label name="Visibility: Non-Audit" color="#428BCA" >}}
@@ -35,7 +35,7 @@ lastmod: "2025-11-20T12:36:11+00:00"
 
 開発活動は、セキュリティ、機密性、および可用性の原則を念頭に置いて実施されます。(PL-8, SA-8)
 
-開発プロセス全体で使用されるテストデータは、GitLab の [データ分類基準](/handbook/security/policies_and_standards/data-classification-standard/) の対象となります。(SA-3(2))
+開発プロセス全体で使用されるテストデータは、GitLab の [データ分類基準](/handbook/security/policies_and_standards/data-classification-standard) の対象となります。(SA-3(2))
 
 ## 標準
 
@@ -43,4 +43,4 @@ lastmod: "2025-11-20T12:36:11+00:00"
 
 ## 例外
 
-本手順への例外は、[情報セキュリティポリシー例外管理プロセス](/handbook/security/controlled-document-procedure/#exceptions) に従って追跡されます。
+本手順への例外は、[情報セキュリティポリシー例外管理プロセス](/handbook/security/controlled-document-procedure#exceptions) に従って追跡されます。

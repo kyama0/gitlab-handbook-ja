@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/collaboration-and-whiteboarding/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T00:00:00Z"
-translator: "claude"
+upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
+translated_at: "2026-07-21T06:59:28+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-10T06:37:33+01:00"
+lastmod: "2026-07-20T13:03:25-03:00"
 ---
 
 このページでは、グローバルなオールリモート企業においてコラボレーションとホワイトボーディングがどのように機能するかを詳しく説明します。
@@ -134,7 +134,7 @@ GitLab でのほとんどのデザインの議論と決定は、[GitLab の Issu
 
 ### 会社ハンドブック
 
-GitLab では、「誰もが貢献できる」と信じています。会社ハンドブックは、すべてが文書化されている場所です—私たちの[唯一の信頼できる情報源](../handbook-first/#terminology-documentation-handbook-first-single-source-of-truth)—特に会社の 6 つのコア[価値観](/handbook/values/)を明示します。ハンドブックは意図的かつ明示的に、[UX チーム](/handbook/product/ux/product-designer/)が製品をどのようにリサーチ、デザイン、執筆するかを含め、会社内の各グループの役割を説明しています。
+GitLab では、「誰もが貢献できる」と信じています。会社ハンドブックは、すべてが文書化されている場所です—私たちの[唯一の信頼できる情報源](../handbook-first/#terminology-documentation-handbook-first-single-source-of-truth)—特に会社の 6 つのコア[価値観](/handbook/values/)を明示します。ハンドブックは意図的かつ明示的に、[Upstream Studios チーム](/handbook/upstream-studios/product-design/workflow/)が製品をどのようにリサーチ、デザイン、執筆するかを含め、会社内の各グループの役割を説明しています。
 
 ### イテレーションをさらに重ねる
 
