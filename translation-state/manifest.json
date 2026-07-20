@@ -26899,7 +26899,7 @@
     "content/handbook/security/policies_and_standards/password-standard.md": {
       "path": "content/handbook/security/policies_and_standards/password-standard.md",
       "upstream_sha": "d92acb119be844b83eb2f76de26d722afea570c3",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "translated_at": "2026-07-21T07:26:07+09:00",
       "model": "codex",
       "input_hash": "ebd785079a2778c979ea4ef9fba1a19efcb81b6d5117dbacfeb0b8a755b1e5e7",
       "upstream_committed_at": "2026-07-19T22:33:35-07:00"
@@ -27059,7 +27059,7 @@
     "content/handbook/security/product-security/psirt/runbooks/unintended-vuln-disclosure.md": {
       "path": "content/handbook/security/product-security/psirt/runbooks/unintended-vuln-disclosure.md",
       "upstream_sha": "d92acb119be844b83eb2f76de26d722afea570c3",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "translated_at": "2026-07-21T07:26:07+09:00",
       "model": "codex",
       "input_hash": "16dfa4b8e09ac1928602f0a0923297c78cda66cb3f95492db43e28c34f9fc97d",
       "upstream_committed_at": "2026-07-20T14:52:30+01:00"
@@ -27347,7 +27347,7 @@
     "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/triage-rotation.md": {
       "path": "content/handbook/security/product-security/security-platforms-architecture/application-security/runbooks/triage-rotation.md",
       "upstream_sha": "d92acb119be844b83eb2f76de26d722afea570c3",
-      "translated_at": "2026-05-10T00:00:00Z",
+      "translated_at": "2026-07-21T07:26:07+09:00",
       "model": "codex",
       "input_hash": "2d3fea31c71cc9896e8e5f4bdd0330b7f082bf18f4cf3a94dce11498ba670269",
       "upstream_committed_at": "2026-07-20T14:52:30+01:00"

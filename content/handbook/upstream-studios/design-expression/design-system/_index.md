@@ -1,6 +1,6 @@
 ---
-title: Pajamasデザインシステム
-description: "Pajamasデザインシステムのオーナーシップ、コラボレーション、期待事項"
+title: Pajamas デザインシステム
+description: "Pajamas デザインシステムのオーナーシップ、コラボレーション、期待事項"
 upstream_path: /handbook/upstream-studios/design-expression/design-system/
 upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
 translated_at: "2026-07-21T06:21:42+09:00"

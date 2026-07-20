@@ -7,10 +7,10 @@ tags:
   - security_standard_acia
 upstream_path: /handbook/security/policies_and_standards/password-standard/
 upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-05-10T00:00:00Z"
+translated_at: "2026-07-21T07:26:07+09:00"
 translator: codex
 stale: false
-lastmod: "2026-04-02T12:48:42-07:00"
+lastmod: "2026-07-19T22:33:35-07:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
