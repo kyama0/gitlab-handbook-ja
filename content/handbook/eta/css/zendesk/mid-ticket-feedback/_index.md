@@ -2,11 +2,11 @@
 title: 'チケット対応中のフィードバック'
 description: 'Zendesk のチケット対応中のフィードバックに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/mid-ticket-feedback/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-translated_at: "2026-07-19T06:29:35+09:00"
+upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-07-21T11:29:58-05:00"
 ---
 
 このガイドでは、顧客による送信と処理のワークフローを含む、GitLab におけるチケット対応中のフィードバックについて説明します。
@@ -66,7 +66,7 @@ lastmod: "2026-07-14T15:22:25-05:00"
 
 Zendesk Global のチケット対応中のフィードバックフォームを変更するには、Customer Support チームにワークフローについて相談します。
 
-それ以外の場合は、[機能リクエスト Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
+それ以外の場合は、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
 
 ## 管理者タスク
 

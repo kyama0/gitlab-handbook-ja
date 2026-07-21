@@ -2,9 +2,9 @@
 title: '記事'
 description: 'Zendesk 記事に関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/knowledge-center/articles/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-lastmod: "2026-07-14T15:22:25-05:00"
-translated_at: "2026-07-19T07:47:07+09:00"
+upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
+lastmod: "2026-07-21T11:29:58-05:00"
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
 ---
@@ -189,11 +189,11 @@ Sandbox 環境で `bin/sync` スクリプトをトリガーするため、マー
 - 特定の Zendesk インスタンスから記事を削除する場合は、記事の管理対象コンテンツファイルを変更して、`instances` 属性から対応する Zendesk インスタンスを削除します。
 - すべての Zendesk インスタンスから記事を削除する場合は、記事の管理対象コンテンツファイルを削除します。
 
-その後、[機能リクエスト Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
+その後、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
 
 ### 記事から配置を削除するようリクエストする
 
-記事から配置を削除するようリクエストするには、[機能リクエスト Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
+記事から配置を削除するようリクエストするには、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
 
 ## 管理者タスク
 

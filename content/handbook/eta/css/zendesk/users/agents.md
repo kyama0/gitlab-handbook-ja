@@ -2,11 +2,11 @@
 title: 'エージェント'
 description: 'Zendesk エージェントに関するドキュメント'
 upstream_path: /handbook/eta/css/zendesk/users/agents/
-upstream_sha: 1312dadbdf7381446077faefcfae17ba323692b6
-translated_at: "2026-07-18T21:56:20Z"
+upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-07-21T11:29:58-05:00"
 ---
 
 このガイドは、自動エージェント同期プロセスや手動エージェント管理を含む、GitLab における Zendesk エージェント管理について説明します。エージェント同期は GitLab のチームデータからエージェントメタデータを自動的に維持し、手動プロセスはプロビジョニングや特殊ケースに使用されます。
@@ -136,7 +136,7 @@ Zendesk 内で同期外でエージェントに対して行われた変更は、
 
 ### 同期への変更リクエスト {#requesting-changes-to-the-sync}
 
-エージェント同期への変更をリクエストするには、[機能リクエスト Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Systems チームによる手動対応が必要なため）。
+エージェント同期への変更をリクエストするには、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Systems チームによる手動対応が必要なため）。
 
 ## 管理者タスク {#administrator-tasks}
 

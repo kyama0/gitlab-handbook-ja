@@ -2,11 +2,11 @@
 title: 'Transcend'
 description: 'Transcend のドキュメント'
 upstream_path: "/handbook/eta/css/transcend/"
-upstream_sha: "1c5f183add4a3220f2aa77e0c98565c4fad645e2"
-translated_at: "2026-07-18T06:50:00+09:00"
+upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-07-21T11:29:58-05:00"
 ---
 
 ## Transcend を理解する
@@ -41,7 +41,7 @@ Customer Support Systems には、Transcend から項目が割り当てられる
 
 ## 補足 Issue
 
-状況によっては、データプライバシーリクエストを行ったが有償サブスクリプションの一部であるため拒否されたユーザーの削除を Legal が依頼します。この場合、Legal は[このテンプレート](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/work_items/new?description_template=Zendesk%20User%20Deletion)を使用して Issue トラッカーに Issue を作成します。
+状況によっては、データプライバシーリクエストを行ったが有償サブスクリプションの一部であるため拒否されたユーザーの削除を Legal が依頼します。
 
 これらの Issue では、対象ユーザーのメールアドレスを使用して Zendesk 内でユーザーを探す必要があります。提供された各メールアドレスについて、クエリ `email:EMAIL_ADDRESS` を使用して検索できます（`EMAIL_ADDRESS` を実際のメールアドレスに置き換えます）。
 

@@ -2,11 +2,11 @@
 title: "TMRG - GitLab Women"
 description: "リモート TMRG GitLab Women の概要"
 upstream_path: "/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/"
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T22:00:00Z"
-translator: claude
+upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
+translated_at: "2026-07-22T06:32:52+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-30T16:57:54+00:00"
+lastmod: "2026-07-21T16:33:10+01:00"
 ---
 
 ## ミッション
@@ -25,18 +25,19 @@ GitLab で働く女性たちをぜひ知ってください！
 | ----- | ----- | ----- |
 | 認識と教育 | GitLab における TMRG メンバーの経験への認識を高め、アライを教育する。 | |
 | プロフェッショナル開発 | TMRG メンバーのキャリアとプロフェッショナル成長の機会へのアクセスを増やす | [Women at GitLab メンターシッププログラム](mentorship-program/) |
-| 採用と定着 | GitLab における女性の採用と定着を成功させる | [#candidate_tmrg-call Slack チャンネル](https://app.slack.com/client/T02592416/C03JEQPSN3V/thread/C012GP5CGCR-1655385119.184549) に参加して [候補者 TMRG コール](/handbook/hiring) に参加する |
+| 採用と定着 | GitLab における女性の採用と定着を成功させる | [候補者 TMRG コール](/handbook/hiring) に参加するには、[#candidate_tmrg-call Slack チャンネル](https://app.slack.com/client/T02592416/C03JEQPSN3V/thread/C012GP5CGCR-1655385119.184549) に参加します |
 | ビジネスへの影響 | GitLab ビジネスに影響を与える議論を開始し貢献する。 | バーンアウトデータを People Leadership に提示 |
 
 ## リード
 
 - [Winnie Chan](https://gitlab.com/wyychan) Co-Lead
-- [Gosia Ksionek](https://gitlab.com/mksionek) Co-Lead
-- [Sara Cuesta](https://gitlab.com/sglad) Co-lead
+- [Pamela Corpus](https://gitlab.com/pcorpus) Co-Lead
+- [Tatiana Fernandez](https://gitlab.com/tfernandez) Co-lead
 
 ## エグゼクティブスポンサー
 
-- [Robin Schulman](https://gitlab.com/rschulman) - Chief Legal Officer and Corporate Secretary
+- [Jessica Ross](https://gitlab.com/jross) - Chief Financial Officer
+- [Dorina Pulluqi](https://gitlab.com/dpulluqi) - VP, High Velocity Sales & Sales Development
 
 ## 参加方法
 

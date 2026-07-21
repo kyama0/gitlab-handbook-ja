@@ -1,11 +1,11 @@
 ---
 title: "チャネルパートナーマイグレーションサービス"
 upstream_path: /handbook/resellers/partner-enablement/partner-migration-services/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
-translator: claude
+upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
+translated_at: "2026-07-22T06:32:52+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-19T10:11:18+00:00"
+lastmod: "2026-07-21T09:08:15+00:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -34,7 +34,7 @@ GitLab Professional Services が提供する [Migration Readiness Checklist](htt
 
 [顧客の移行前・移行中・移行後の義務と責任とは](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/customer/famq.md#what-are-a-customers-obligations-and-responsibilities-prior-during-and-after-a-migration) と [移行に必要なインスタンスアクセスと権限のレベル](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/customer/famq.md#what-level-of-instance-access-and-permission-are-needed-for-migrating) について顧客と明確にコミュニケーションすることも、円滑な移行を確実にします。
 
-同様に、[GitLab Professional Services Delivery Kits](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits) の [Migration グループ](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits/migration-delivery-kits) も非常に役立ちます。これらのプロジェクトは「単一のアクティビティから Statement of Work (SOW) 全体まで、あらゆる作業の提供に関するステップバイステップの手順を提供する」ためです。
+同様に、[Migration グループ](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits/migration-delivery-kits)は、私たちの [GitLab Professional Services Delivery Kits](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits)にあり、非常に役立ちます。これらのプロジェクトは「単一のアクティビティから Statement of Work (SOW) 全体まで、あらゆる作業の提供に関するステップバイステップの手順を提供する」ためです。
 
 ## 他の DevOps プラットフォームから GitLab へ
 
@@ -49,6 +49,13 @@ GitLab Duo Agent Platform の [Convert to GitLab CI/CD Flow](https://docs.gitlab
 ### Azure DevOps
 
 GitLab Professional Services チーム自身が執筆した、[Azure DevOps から GitLab への移行に関する詳細ガイド](https://about.gitlab.com/blog/migration-from-azure-devops-to-gitlab/) を参照してください。
+
+### Jira
+
+* [Jira からの移行に関するドキュメントページ](https://docs.gitlab.com/user/import/third_party_systems/jira/) - 利用可能なすべてのオプションを一覧にしています。
+* [Jira2Lab ツール](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/jira2lab) - Ecosystem チームが推奨しています。
+* [Jira Migration Delivery Kit](https://gitlab.com/gitlab-org/professional-services-automation/delivery-kits/migration-delivery-kits/migration-delivery-kit/-/blob/main/Jira/Jira-Importer.md) - Jira2Lab を使用します。
+* [GitLab Triage](https://gitlab.com/gitlab-org/ruby/gems/gitlab-triage) - 自動化された作業項目ステータス管理。
 
 ## GitLab セルフマネージドから GitLab セルフマネージドへ
 
@@ -78,15 +85,15 @@ GitLab ログ専用に調整された完全な ELK Stack（Elasticsearch、Logst
 
 direct transfer が対応できない、または対応しない場合のためのものです。良い例は [air-gapped 環境](#air-gapped-environments) です。
 
-- [Migrating projects using file exports](https://docs.gitlab.com/ee/user/project/settings/import_export.html)
+* [Migrating projects using file exports](https://docs.gitlab.com/ee/user/project/settings/import_export.html)
 
-- [Items that are exported via file exports](https://docs.gitlab.com/ee/user/project/settings/import_export.html#items-that-are-exported)
+* [Items that are exported via file exports](https://docs.gitlab.com/ee/user/project/settings/import_export.html#items-that-are-exported)
 
-- [Items that are not exported via file exports](https://docs.gitlab.com/ee/user/project/settings/import_export.html#items-that-are-not-exported)
+* [Items that are not exported via file exports](https://docs.gitlab.com/ee/user/project/settings/import_export.html#items-that-are-not-exported)
 
-- [Project import and export API](https://docs.gitlab.com/ee/api/project_import_export.html)
+* [Project import and export API](https://docs.gitlab.com/ee/api/project_import_export.html)
 
-- [Group import and export API](https://docs.gitlab.com/ee/api/group_import_export.html)
+* [Group import and export API](https://docs.gitlab.com/ee/api/group_import_export.html)
 
 ### 3. Congregate
 
@@ -96,21 +103,21 @@ file exports と同様に、direct transfer が対応できない／対応しな
 
 Congregate について重要な点:
 
-- [Congregate Migration Features Matrix](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/customer/gitlab-migration-features-matrix.md)
+* [Congregate Migration Features Matrix](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/customer/gitlab-migration-features-matrix.md)
 
-- [Migration Readiness Checklist](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/customer/migration-readiness-checklist.md)
+* [Migration Readiness Checklist](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/customer/migration-readiness-checklist.md)
 
-- [顧客の義務と責任 - Congregate FAMQ](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/customer/famq.md#what-are-a-customers-obligations-and-responsibilities-prior-during-and-after-a-migration)
+* [顧客の義務と責任 - Congregate FAMQ](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/customer/famq.md#what-are-a-customers-obligations-and-responsibilities-prior-during-and-after-a-migration)
 
-- [Congregate によるセルフマネージドから SaaS への移行の制限事項 - Congregate FAMQ](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/customer/famq.md#what-level-of-instance-access-and-permission-are-needed-for-migrating)
+* [Congregate によるセルフマネージドから SaaS への移行の制限事項 - Congregate FAMQ](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/customer/famq.md#what-level-of-instance-access-and-permission-are-needed-for-migrating)
 
 ## Air-gapped 環境
 
 GitLab は [オフライン環境](https://docs.gitlab.com/ee/user/application_security/offline_deployments/) でインストールおよび運用できます。このセットアップは移行プロジェクトをより複雑にします。
 
-- Direct transfer はこれをサポートしていません。Project/export import が回避策です。これを実行するための微妙な技術詳細については、GitLab Issue [Direct transfer - Support for air-gapped solutions](https://gitlab.com/groups/gitlab-org/-/epics/8985) および [maintain project and group file-based import/export as a workaround for migrations over air-gapped networks and to serve other use cases](https://gitlab.com/gitlab-org/gitlab/-/issues/363406) を参照してください。
+* Direct transfer はこれをサポートしていません。Project/export import が回避策です。これを実行するための微妙な技術詳細については、GitLab Issue [Direct transfer - Support for air-gapped solutions](https://gitlab.com/groups/gitlab-org/-/epics/8985) および [maintain project and group file-based import/export as a workaround for migrations over air-gapped networks and to serve other use cases](https://gitlab.com/gitlab-org/gitlab/-/issues/363406) を参照してください。
 
-- GitLab のオープンソース CLI 移行ツール [Congregate](https://gitlab-org.gitlab.io/professional-services-automation/tools/migration/congregate/) は Air-gapped 環境をサポートしています。[Support air-gapped environment migrations](https://gitlab.com/groups/gitlab-org/professional-services-automation/tools/migration/-/epics/116) および [Migrating data in an air-gapped environment](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/runbooks/airgapped-migration-usage.md) を参照してください。
+* GitLab のオープンソース CLI 移行ツール [Congregate](https://gitlab-org.gitlab.io/professional-services-automation/tools/migration/congregate/) は Air-gapped 環境をサポートしています。[Support air-gapped environment migrations](https://gitlab.com/groups/gitlab-org/professional-services-automation/tools/migration/-/epics/116) および [Migrating data in an air-gapped environment](https://gitlab.com/gitlab-org/professional-services-automation/tools/migration/congregate/-/blob/master/runbooks/airgapped-migration-usage.md) を参照してください。
 
 ## パッケージ／コンテナレジストリの移行
 

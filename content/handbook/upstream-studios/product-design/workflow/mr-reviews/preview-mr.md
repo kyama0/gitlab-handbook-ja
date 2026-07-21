@@ -2,11 +2,11 @@
 title: マージリクエストの変更をプレビューする
 description: "マージリクエスト（MR）の変更をレビュー、テスト、または貢献するためにプレビューする方法。"
 upstream_path: /handbook/upstream-studios/product-design/workflow/mr-reviews/preview-mr/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:21:42+09:00"
+upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T13:03:25-03:00"
+lastmod: "2026-07-21T08:59:24-03:00"
 ---
 
 ## 概要

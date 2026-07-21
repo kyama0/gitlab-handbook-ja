@@ -2,9 +2,9 @@
 title: 'チケットフォーム'
 description: 'Zendesk チケットフォームに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/tickets/forms/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-lastmod: "2026-07-14T15:22:25-05:00"
-translated_at: "2026-07-19T08:46:00+09:00"
+upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
+lastmod: "2026-07-21T11:29:58-05:00"
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
 ---
@@ -171,15 +171,15 @@ UI では、エンドユーザー条件の形式は次のとおりです:
 
 ## 管理者以外としてチケットフォームを作成する
 
-チケットフォームを作成するには、[機能リクエスト Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
+チケットフォームを作成するには、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
 
 ## 管理者以外としてチケットフォームを編集する
 
-チケットフォームを変更するには、[機能リクエスト Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
+チケットフォームを変更するには、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
 
 ## 管理者以外としてチケットフォームを非アクティブ化する
 
-チケットフォームの非アクティブ化をリクエストするには、[機能リクエスト Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
+チケットフォームの非アクティブ化をリクエストするには、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
 
 ## 人が読める形式の置換
 
