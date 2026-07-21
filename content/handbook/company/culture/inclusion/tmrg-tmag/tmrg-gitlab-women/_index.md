@@ -4,7 +4,7 @@ description: "リモート TMRG GitLab Women の概要"
 upstream_path: "/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/"
 upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
 translated_at: "2026-07-22T06:32:52+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-21T16:33:10+01:00"
 ---
