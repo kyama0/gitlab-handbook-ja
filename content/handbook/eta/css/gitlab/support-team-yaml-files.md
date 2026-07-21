@@ -2,11 +2,11 @@
 title: 'Support team YAML ファイル'
 description: 'Support team YAML ファイルに関するドキュメント'
 upstream_path: "/handbook/eta/css/gitlab/support-team-yaml-files/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-translated_at: "2026-07-19T07:29:58+09:00"
+upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-07-21T11:29:58-05:00"
 ---
 
 このガイドでは、さまざまな Customer Support Systems の自動化と統合で使用されるチームメンバー情報を含む、一元化されたデータソースである Support team YAML ファイルについて説明します。これらのファイルにより、システム間で一貫したエージェントデータを使用でき、チーム構造、スキル、スケジュール、割り当てに関する信頼できる唯一の情報源として機能します。
@@ -63,7 +63,7 @@ Support team YAML ファイルは、[Support Team プロジェクト](https://gi
 
 ### その他を変更する
 
-Support team YAML ファイル内のその他の項目を変更するには、[Feature Request issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
+Support team YAML ファイル内のその他の項目を変更するには、[Feature Request issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
 
 ## Support team YAML ファイルの構成
 

@@ -2,11 +2,11 @@
 title: "Marketing Operations"
 description: "Marketing Operations (MktgOps) は、マーケティングチーム全体をサポートし、プロセスを合理化し関連ツールを管理します。これらのツールにより、GitLab の他のチームもしばしばサポートします。"
 upstream_path: /handbook/marketing/marketing-operations/
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
+upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-06-01T16:41:36-07:00"
+lastmod: "2026-07-21T09:53:23-06:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -160,7 +160,8 @@ Sales Systems とのプロセスステップ
 Systems 関連ラベル
 </summary>
 
-- `entapps-customer::MOPS`: Sales Systems サポートが必要な Issue に使用
+- `ETA Customer:: Marketing Ops`: Enterprise Technology and AI。この Issue は Marketing Ops とのパートナーシップにあります
+- `MktgOps/Systems-Request`: Marketing Operations と Sales Systems 全体の作業を追跡し、優先順位を付けるために使用
 - `MktgSystems-PMO`: 優先順位付けの支援とワークストリームの決定のために、コミットされた PMO プロジェクトに関する Issue に使用
 
 ビジネスインパクトラベル: どのビジネスインパクトまたは主題エリアがこれらの変更を駆動しているか
@@ -510,7 +511,7 @@ Marketing Ops チーム - 新しいプロジェクト実装のために、Issue 
 
 リードライフサイクルの詳細については、[このハンドブックページ](/handbook/marketing/marketing-operations/lead-lifecycle/) を参照してください
 
-Marketing Qualified Lead (MQL) は、人口統計/属性および/または行動情報に基づいて、当社が決定した特定の閾値（累計 100 ポイント）に達したリードです。`Person Score` は、ポジティブまたはネガティブなポイント値で重み付けされたさまざまなアクションおよび/またはプロファイルデータで構成されています。スコアリングモデルの詳細については、[Marketo ページ](/handbook/marketing/marketing-operations/marketo/#scoring-model) を参照してください
+Marketing Qualified Lead (MQL) は、人口統計/属性および/または行動情報に基づいて、当社が決定した特定の閾値（累計 100 ポイント）に達したリードです。`Person Score` は、ポジティブまたはネガティブなポイント値で重み付けされたさまざまなアクションおよび/またはプロファイルデータで構成されています。スコアリングモデルの詳細については、[Marketo ページ](/handbook/marketing/marketing-operations/marketo/#scoring-models) を参照してください
 
 ### MQL SLA とは何か?
 

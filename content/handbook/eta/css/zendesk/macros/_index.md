@@ -2,11 +2,11 @@
 title: 'マクロ'
 description: 'Zendesk マクロに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/macros/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-translated_at: "2026-07-19T08:24:00+09:00"
+upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-07-21T11:29:58-05:00"
 ---
 
 このガイドでは、GitLab で Zendesk マクロを作成、編集、管理する方法について説明します。単純なマクロを作成したいサポートエージェントは、[管理者以外としてマクロを作成する](#creating-a-macro-as-a-non-admin)を参照してください。管理者は、[管理者のタスク](#administrator-tasks)セクションを確認してください。
@@ -179,7 +179,7 @@ graph TD;
 
 ### 高度なマクロ
 
-[高度なマクロ](#simple-vs-advanced-macros)を作成する場合は、まず [SIG チーム](https://gitlab.com/support-innovation-group)のメンバーに相談し、[このテンプレート](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?issuable_template=Feature)を使用して Customer Support Systems チームに Issue を送信してもらってください（Customer Support Systems チームによる手動対応が必要になるためです）。
+[高度なマクロ](#simple-vs-advanced-macros)を作成する場合は、まず [SIG チーム](https://gitlab.com/support-innovation-group)のメンバーに相談し、[このテンプレート](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?issuable_template=Feature)を使用して Customer Support Systems チームに Issue を送信してもらってください（Customer Support Systems チームによる手動対応が必要になるためです）。
 
 ## 管理者以外としてマクロを編集する
 
@@ -189,11 +189,11 @@ graph TD;
 
 ### タイトル、制限、コメント以外の文言アクションなどを変更する
 
-マクロ内のその他の項目を変更する場合は、まず [SIG チーム](https://gitlab.com/support-innovation-group)のメンバーに相談し、[このテンプレート](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?issuable_template=Feature)を使用して Customer Support Systems チームに Issue を送信してもらってください（Customer Support Systems チームによる手動対応が必要になるためです）。
+マクロ内のその他の項目を変更する場合は、まず [SIG チーム](https://gitlab.com/support-innovation-group)のメンバーに相談し、[このテンプレート](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?issuable_template=Feature)を使用して Customer Support Systems チームに Issue を送信してもらってください（Customer Support Systems チームによる手動対応が必要になるためです）。
 
 ## 管理者以外としてマクロを無効化する
 
-マクロの無効化を依頼するには、まず [SIG チーム](https://gitlab.com/support-innovation-group)のメンバーに相談し、[このテンプレート](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?issuable_template=Feature)を使用して Customer Support Systems チームに Issue を送信してもらってください（Customer Support Systems チームによる手動対応が必要になるためです）。
+マクロの無効化を依頼するには、まず [SIG チーム](https://gitlab.com/support-innovation-group)のメンバーに相談し、[このテンプレート](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?issuable_template=Feature)を使用して Customer Support Systems チームに Issue を送信してもらってください（Customer Support Systems チームによる手動対応が必要になるためです）。
 
 ## 管理者のタスク
 

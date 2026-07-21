@@ -2,11 +2,11 @@
 title: 'トリガー'
 description: 'Zendesk トリガーのドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/triggers/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-translated_at: "2026-07-19T08:31:17+09:00"
+upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-07-21T11:29:58-05:00"
 ---
 
 このガイドでは、GitLab における Zendesk トリガーの作成、編集、管理方法について説明します。管理者は[管理者タスク](#administrator-tasks)セクションを確認してください。
@@ -158,7 +158,7 @@ graph TD;
 
 ## 非管理者としてトリガーを作成する
 
-トリガーを作成する場合は、[Feature Request Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
+トリガーを作成する場合は、[Feature Request Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
 
 ## 非管理者としてトリガーを編集する
 
@@ -172,11 +172,11 @@ graph TD;
 
 ### タイトル、コメント以外の文言アクションなどを変更する
 
-トリガーのその他の項目を変更する場合は、[Feature Request Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
+トリガーのその他の項目を変更する場合は、[Feature Request Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
 
 ## 非管理者としてトリガーを無効化する
 
-トリガーの無効化をリクエストする場合は、[Feature Request Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
+トリガーの無効化をリクエストする場合は、[Feature Request Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要になるためです）。
 
 ## 管理者タスク
 

@@ -1,11 +1,12 @@
 ---
 title: "GitLab IT オンボーディング 101"
+description: "新入社員が Okta、デバイス登録、アカウントアクセスを含めて GitLab の MacBook または Linux ラップトップをセットアップするためのステップバイステップガイド"
 upstream_path: /handbook/security/corporate/end-user-services/onboarding101/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T10:22:00+09:00"
+upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-08T14:46:05-04:00"
+lastmod: "2026-07-21T10:14:54-05:00"
 ---
 
 ## GitLab へようこそ
@@ -70,15 +71,6 @@ GitLab への参加おめでとうございます！このページは IT オン
     <ol type="a">
       <li>ローカル Mac アカウントのパスワードを作成します</li>
       <li><b>Continue</b> をクリックします</li>
-      <li>完全な GitLab メールアドレスを使用します（例: yourname@gitlab.com）</li>
-      <li>個人デバイスで作成したパスワードを入力します</li>
-      <li><b>Sign in</b> をクリックします</li>
-    </ol>
-  </li>
-  <li>コンピューターアカウントをセットアップします:
-    <ol type="a">
-      <li>ローカル Mac アカウントのパスワードを作成します</li>
-      <li><b>Continue</b> をクリックします</li>
     </ol>
   </li>
   <li>Apple の利用規約に同意します</li>
@@ -112,22 +104,11 @@ GitLab への参加おめでとうございます！このページは IT オン
   </li>
   <li>FileVault を有効化します:
     <ol type="a">
-      <li><b>Enable Now</b> をクリックします</li>
+      <li>FileVault（ディスク暗号化）を有効にするよう促されたら、<b>Enable Now</b> をクリックします</li>
       <li>これには数分かかります</li>
       <li>完了したら、<b>Done</b> をクリックします</li>
     </ol>
-  </li>
-  <li>システム再起動:</li>
-    <ol type="a">
-      <li>ポップアップが、マシンが次の 1 分以内に再起動する必要があることを通知します</li>
-      <li>自動再起動を待つか、自分で開始します</li>
-      <li>再起動後、再度ログインします</li>
-    </ol>
-   </li>
-  <li>FileVault を有効化します
-    <ol type="a">
-      <li>FileVault（ディスク暗号化）を有効にするよう促されたら、<b>Enable Now</b> をクリックします</li>
-    </ol>
+    <p><b>注:</b> FileVault は必須です。次回のログイン時に有効化するよう促され、そうしなければ先に進めません。</p>
   </li>
 </ol>
 
@@ -169,7 +150,7 @@ GitLab への参加おめでとうございます！このページは IT オン
       <li><b>Create a passkey for gitlab.okta.com</b> ポップアップで、<b>Save another way</b> をクリックします</li>  
       <li><b>Your Chrome profile</b> を選択し、続いて <b>Continue</b> をクリックします</li>
         <ol>
-          <li><code><b>重要</b>: パスキーは Chrome プロファイルに保存し、Google アカウントには保存<b>しない</b>でください。Google アカウントに保存するとキーがアクセス不能になり、アカウントからロックアウトされる結果になります</code>
+          <li><b>重要</b>: パスキーは Chrome プロファイルに保存し、Google アカウントには保存<b>しない</b>でください。Google アカウントに保存するとキーがアクセス不能になり、アカウントからロックアウトされる結果になります。</li>
         </ol>
     </ol>
    </li>

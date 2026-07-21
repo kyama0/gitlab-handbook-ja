@@ -2,9 +2,9 @@
 title: 'セクション'
 description: 'Zendesk セクションに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/knowledge-center/sections/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-lastmod: "2026-07-14T15:22:25-05:00"
-translated_at: "2026-07-19T08:01:00+09:00"
+upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
+lastmod: "2026-07-21T11:29:58-05:00"
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
 ---
@@ -96,15 +96,15 @@ stale: false
 
 ## 非管理者としてセクションを作成する
 
-セクションを作成する場合は、[機能リクエスト Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要なため）。
+セクションを作成する場合は、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要なため）。
 
 ## 非管理者としてセクションを編集する
 
-セクションを変更する場合は、[機能リクエスト Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要なため）。
+セクションを変更する場合は、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要なため）。
 
 ## 非管理者としてセクションを削除する
 
-セクションの無効化をリクエストする場合は、[機能リクエスト Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要なため）。
+セクションの無効化をリクエストする場合は、[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動対応が必要なため）。
 
 ## 管理者タスク
 

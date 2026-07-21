@@ -1,11 +1,11 @@
 ---
 title: "チャネルパートナー実装サービス"
 upstream_path: /handbook/resellers/partner-enablement/partner-implementation-services/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-13T16:57:56+00:00"
+lastmod: "2026-07-21T13:16:49+02:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -37,6 +37,8 @@ lastmod: "2025-11-13T16:57:56+00:00"
 - [GitLab Runbooks](https://runbooks.gitlab.com/)
   - [バッキングリポジトリ](https://gitlab.com/gitlab-com/runbooks) — または右上の Tanuki アイコンをクリックします。
   - GitLab が gitlab.com をどのように運用しているかを学べます。当社のセットアップは独特で、リファレンスアーキテクチャとは異なるため、すべてがセルフマネージドインストールに直接転用できるわけではありません。それでも GitLab コンポーネントのトラブルシューティングに関する有用な情報を多数得られます。
+- [GitLab Detective](https://gitlab.com/gitlab-com/support/toolbox/gitlab-detective)
+  - Omnibus ベースの GitLab インストールで発生する一般的な問題の特定とトラブルシューティングを支援する自動診断ツールです。
 
 ## GitLab Runners の実装
 

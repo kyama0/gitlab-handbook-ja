@@ -2,9 +2,9 @@
 title: 'ビュー'
 description: 'Zendesk ビューに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/views/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-lastmod: "2026-07-14T15:22:25-05:00"
-translated_at: "2026-07-19T09:00:11+09:00"
+upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
+lastmod: "2026-07-21T11:29:58-05:00"
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
 ---
@@ -218,7 +218,7 @@ Zendesk で個人用ビューを作成するには、次の手順に従います
 
 ## 非管理者として個人用ではないビューを作成する
 
-ビューを作成するには、[Feature Request Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
+ビューを作成するには、[Feature Request Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
 
 ## 非管理者として個人用ビューを編集する
 
@@ -238,11 +238,11 @@ Zendesk で個人用ビューを作成するには、次の手順に従います
 
 ### タイトル、位置などの変更
 
-ビューでその他の変更を行うには、[Feature Request Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
+ビューでその他の変更を行うには、[Feature Request Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
 
 ## 非管理者としてビューを非アクティブ化する
 
-ビューの非アクティブ化をリクエストするには、[Feature Request Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
+ビューの非アクティブ化をリクエストするには、[Feature Request Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature)を作成してください（Customer Support Systems チームによる手動介入が必要になるためです）。
 
 ## 管理者タスク
 

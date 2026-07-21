@@ -2,11 +2,11 @@
 title: 'アクセスログ'
 description: 'Zendesk のアクセスログに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/access-logs/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-translated_at: "2026-07-19T06:29:35+09:00"
+upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-07-21T11:29:58-05:00"
 ---
 
 このガイドでは、GitLab で Zendesk のアクセスログを表示・管理する方法を説明します。アクセスログは Zendesk の読み取りおよび書き込みイベントを追跡し、管理者とエージェントのアクションの監査証跡を提供します。
@@ -84,7 +84,7 @@ Zendesk Global（本番）では、特定のエンドポイントのアクセス
 
 ### 管理者以外がエンドポイントを追加リクエストする
 
-さらに多くのエンドポイントの監視をリクエストしたい場合は、Customer Support Systems チームに[機能リクエスト Issue](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?issuable_template=Feature)を作成してください。
+さらに多くのエンドポイントの監視をリクエストしたい場合は、Customer Support Systems チームに[機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?issuable_template=Feature)を作成してください。
 
 ### 管理者がエンドポイントを追加する
 

@@ -1394,11 +1394,11 @@
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/_index.md": {
       "path": "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-15T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "bc41c3ab97177a46a4e31f8142be46dcd831408f202a0bb782a0170bdd0a2beb",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
+      "model": "codex",
+      "input_hash": "2e0e744bd32b77a3be30e568a9e2fa6e95726f66a13ea486777384a3ee57cbd9",
+      "upstream_committed_at": "2026-07-21T16:33:10+01:00"
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/agile-career.md": {
       "path": "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/agile-career.md",
@@ -14866,11 +14866,11 @@
     },
     "content/handbook/enterprise-data/platform/edw/index.md": {
       "path": "content/handbook/enterprise-data/platform/edw/index.md",
-      "upstream_sha": "d638a3d5418a620365f135648ea547e0992abbf1",
-      "translated_at": "2026-04-29T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "e1272063b458b31091ad765e9e0373a24f1e781de44d52fa9bbf08839c284643",
-      "upstream_committed_at": "2026-04-17T09:57:28+02:00"
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
+      "model": "codex",
+      "input_hash": "0a2b6fd21aca34a7f17b90d647c832465e4ac535fe513aa6d1b07954c8170562",
+      "upstream_committed_at": "2026-07-21T12:07:52+01:00"
     },
     "content/handbook/enterprise-data/platform/feature-store/_index.md": {
       "path": "content/handbook/enterprise-data/platform/feature-store/_index.md",
@@ -16322,11 +16322,11 @@
     },
     "content/handbook/legal/esg/_index.md": {
       "path": "content/handbook/legal/esg/_index.md",
-      "upstream_sha": "8451bcaa23ef826bedc5422c87ee89de121dd85b",
-      "translated_at": "2026-07-14T06:42:18+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "ba8c9a3869f3c8b0b82e1f67ed7a85f7f2b7e99ea2d90ed24119ae9c28885625",
-      "upstream_committed_at": "2026-07-13T07:51:04-06:00"
+      "input_hash": "4e19f670d0a72f1e684951a172e1942887b1b9599fc3834b1fd52db1e50e73f2",
+      "upstream_committed_at": "2026-07-21T14:08:51-07:00"
     },
     "content/handbook/legal/esg/earth-month/_index.md": {
       "path": "content/handbook/legal/esg/earth-month/_index.md",
@@ -19442,11 +19442,11 @@
     },
     "content/handbook/marketing/marketing-operations/_index.md": {
       "path": "content/handbook/marketing/marketing-operations/_index.md",
-      "upstream_sha": "7d467b8ae210e5b3bb843857cd3639cbc27af386",
-      "translated_at": "2026-06-02T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "827f83dba6f8d532b47e14dfff4a04589afd1384ffa008949c8073e12b34119d",
-      "upstream_committed_at": "2026-06-01T16:41:36-07:00"
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
+      "model": "codex",
+      "input_hash": "b7180ea3b3fc05f0863ae3f44085befa7ac649511a82074535568e1564213739",
+      "upstream_committed_at": "2026-07-21T09:53:23-06:00"
     },
     "content/handbook/marketing/marketing-operations/accelevents.md": {
       "path": "content/handbook/marketing/marketing-operations/accelevents.md",
@@ -25082,11 +25082,11 @@
     },
     "content/handbook/security/corporate/systems/_index.md": {
       "path": "content/handbook/security/corporate/systems/_index.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T10:46:20+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "44aaf5ba717fbbed18c3fc114764976da4789731c83e91d8e6fc69871ed1fca8",
-      "upstream_committed_at": "2026-07-08T11:09:01-04:00"
+      "input_hash": "7d5e33fb6c7049229105c8e8d18961d53858de52761c7ba004e4e6b8d66cc076",
+      "upstream_committed_at": "2026-07-21T10:14:54-05:00"
     },
     "content/handbook/security/corporate/systems/google/_index.md": {
       "path": "content/handbook/security/corporate/systems/google/_index.md",
@@ -27778,11 +27778,11 @@
     },
     "content/handbook/security/corporate/support/_index.md": {
       "path": "content/handbook/security/corporate/support/_index.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T10:38:25+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "336ac33a4b3293e067609afd6a377afa7cfebdb68fe94241d8c04e94d9c0898b",
-      "upstream_committed_at": "2026-07-08T11:09:01-04:00"
+      "input_hash": "92c1892e8767bb685ab41d36e934c9aceaf65a834774889c90693c994c9d4f24",
+      "upstream_committed_at": "2026-07-21T10:14:54-05:00"
     },
     "content/handbook/security/corporate/support/usb-encryption/_index.md": {
       "path": "content/handbook/security/corporate/support/usb-encryption/_index.md",
@@ -28106,11 +28106,11 @@
     },
     "content/handbook/security/corporate/end-user-services/onboarding101/_index.md": {
       "path": "content/handbook/security/corporate/end-user-services/onboarding101/_index.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T10:22:00+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "3cddc346d058b216f92ec18b1ac5284731f034f862435396c87f9004fa803619",
-      "upstream_committed_at": "2026-07-08T14:46:05-04:00"
+      "input_hash": "30914fe0394569a94fee0ac805db77d1055f7075b37f15d3b54da6dde01b4586",
+      "upstream_committed_at": "2026-07-21T10:14:54-05:00"
     },
     "content/handbook/security/corporate/end-user-services/onboarding101/linux-onboarding101.md": {
       "path": "content/handbook/security/corporate/end-user-services/onboarding101/linux-onboarding101.md",
@@ -29938,27 +29938,27 @@
     },
     "content/handbook/resellers/partner-enablement/partner-implementation-services.md": {
       "path": "content/handbook/resellers/partner-enablement/partner-implementation-services.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "06e55f739f81a1c1d3771880dc43e9782fabbdcadf71d7ccf0a4c49d4c79b9c7",
-      "upstream_committed_at": "2025-11-13T16:57:56+00:00"
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
+      "model": "codex",
+      "input_hash": "355ec8c84be513384979749ea19c54f1181cdfae7456dfc08b1f3ba51a49abb3",
+      "upstream_committed_at": "2026-07-21T13:16:49+02:00"
     },
     "content/handbook/resellers/partner-enablement/partner-migration-services.md": {
       "path": "content/handbook/resellers/partner-enablement/partner-migration-services.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "e2ea216af26a1b649ff6545d5b8c344a83b4756d79437aad6dbc8c029c6b6157",
-      "upstream_committed_at": "2025-12-19T10:11:18+00:00"
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
+      "model": "codex",
+      "input_hash": "cee72295a32140f092992ea69358d840db1d9110a9791992068ec96ae2917013",
+      "upstream_committed_at": "2026-07-21T09:08:15+00:00"
     },
     "content/handbook/resellers/partner-enablement/power.md": {
       "path": "content/handbook/resellers/partner-enablement/power.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "16bce1142842349090ca96bb2fdb160a8846bad754653497a69fd5fee671b847",
-      "upstream_committed_at": "2026-05-08T14:07:20+02:00"
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
+      "model": "codex",
+      "input_hash": "5e8e99d7e20159fb80abd640c0e8f050a65ccdc23b5cecb9187f35f3abf84b7e",
+      "upstream_committed_at": "2026-07-21T13:55:38+00:00"
     },
     "content/handbook/resellers/partner-champions-program/_index.md": {
       "path": "content/handbook/resellers/partner-champions-program/_index.md",
@@ -32650,11 +32650,11 @@
     },
     "content/handbook/enterprise-data/ai/agent-usage-guide.md": {
       "path": "content/handbook/enterprise-data/ai/agent-usage-guide.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "dfe9fb6698dbb5659b86d894e6d44a04699d3385414b8a590f67a561bc5422d5",
-      "upstream_committed_at": "2026-06-05T13:54:40+00:00"
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
+      "model": "codex",
+      "input_hash": "5fbc38e6c8f9b6cc63b24a50379ddf776b17e11efb6fd1e3bf87cca078369ae6",
+      "upstream_committed_at": "2026-07-21T08:37:13-06:00"
     },
     "content/handbook/enterprise-data/ai/agentic-tool-development.md": {
       "path": "content/handbook/enterprise-data/ai/agentic-tool-development.md",
@@ -34490,11 +34490,11 @@
     },
     "content/handbook/eta/css/contacting-third-parties.md": {
       "path": "content/handbook/eta/css/contacting-third-parties.md",
-      "upstream_sha": "1c5f183add4a3220f2aa77e0c98565c4fad645e2",
-      "translated_at": "2026-07-18T06:40:02+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "bb4b13f2384e2ba9a9bf1cfa5c46e528fae07722296540c5e260eae4254426e4",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "9b94f4808b96a0a2906aad40689a2a9b40955637ed04ce0f4794f16654697a22",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/salesforce/account-merges.md": {
       "path": "content/handbook/eta/css/salesforce/account-merges.md",
@@ -34610,11 +34610,11 @@
     },
     "content/handbook/eta/css/transcend/_index.md": {
       "path": "content/handbook/eta/css/transcend/_index.md",
-      "upstream_sha": "1c5f183add4a3220f2aa77e0c98565c4fad645e2",
-      "translated_at": "2026-07-18T06:50:00+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "470faa7c0f8d359d67bb31d5f838e0353bcbb95074a3fd137969facc8c862047",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "46d3d0befae55a689324ab56b53b4ee0d631bc6568e012eec484839221fe898f",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/users/automated-user-deletion.md": {
       "path": "content/handbook/eta/css/zendesk/users/automated-user-deletion.md",
@@ -34738,27 +34738,27 @@
     },
     "content/handbook/eta/css/_index.md": {
       "path": "content/handbook/eta/css/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T06:15:29+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "4e6e49cf51ac6e63fe6004b3d08eb5e6cb8494a7e720a49c65a8bcbfd516b203",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "939deea1dc76a80642df3e3ddd8ffca137d18f834f37fcf4cc73e8e5e6ce7bf7",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/gitlab/issues/issue-boards.md": {
       "path": "content/handbook/eta/css/gitlab/issues/issue-boards.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T06:15:29+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "dd363fbc4b722b0c371efebd6909541df93d73880f149b100b8806d9b7323fb2",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "5f5067d42fe4327608951e76921e1092bff68befbc0a2db706955c4197a93275",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/mid-ticket-feedback/_index.md": {
       "path": "content/handbook/eta/css/zendesk/mid-ticket-feedback/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T06:29:35+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "814d9a43c0653d5cb39512bec3177d0585f000aa768b1000c15db5e10a8fe388",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "e9a4a88720d89345f8a686da47bdff01d9982d63d7d1e94e5eeaf622c89b8c6f",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/metrics-definitions/_index.md": {
       "path": "content/handbook/eta/css/zendesk/metrics-definitions/_index.md",
@@ -34770,11 +34770,11 @@
     },
     "content/handbook/eta/css/zendesk/access-logs/_index.md": {
       "path": "content/handbook/eta/css/zendesk/access-logs/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T06:29:35+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "134bd6b927522984a1c393552a309db17b5032b1e5de217152756c9f25cddcf7",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "4dd0f8ee443583252d6f9ae95ebb4c05692299afe36e31a959c28039a0fa82b6",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/gitlab/labels.md": {
       "path": "content/handbook/eta/css/gitlab/labels.md",
@@ -34874,27 +34874,27 @@
     },
     "content/handbook/eta/css/zendesk/tags/_index.md": {
       "path": "content/handbook/eta/css/zendesk/tags/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-18T21:56:20Z",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "c624ed9eaef9f8935aea16f7d154491e81fab5d91b33e3e498874c0c5eba2847",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "905a7388866abc49bfdb2500286945b4d05db32072906e775044968aeb1ebfe4",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/users/agents.md": {
       "path": "content/handbook/eta/css/zendesk/users/agents.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-18T21:56:20Z",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "23d115148bbd4d63297bdfba6ae4d3dbf562921d975ede346e3fa296d9db312b",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "f61b9e490c4db2f49559a57e0b8e03d6590573a10d3ba73c678d6534670ccc72",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/triggers/categories.md": {
       "path": "content/handbook/eta/css/zendesk/triggers/categories.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T07:03:38+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "899b29a92723b7c582be4ec146e6cea1fa4f58e9888a82031248ff5901c4ba9a",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "44fa1c15ae574fd85a9b08f1e214ecdbdc802540a1f68330fadf12a2ea46f98f",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/deletion-schedules/_index.md": {
       "path": "content/handbook/eta/css/zendesk/deletion-schedules/_index.md",
@@ -34922,19 +34922,19 @@
     },
     "content/handbook/eta/css/zendesk/knowledge-center/user-segments.md": {
       "path": "content/handbook/eta/css/zendesk/knowledge-center/user-segments.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T07:03:38+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "b12a9fc52a650cd94620ea08fa640a34240976326d91b3b6bf0b2caf32acab69",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "37be6fd5ff15da32d4f7be8bfe6dd65b5f68ab4f08d081eae354c779decf8256",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/users/roles.md": {
       "path": "content/handbook/eta/css/zendesk/users/roles.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T07:03:38+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "eeb3d9c743b67e2642666872a856c2c79b42a1c2ca25b22bedb67ed17ce3d041",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "84135c9765e4119ec042beb7a84a363b14e8ca4b79ba07c3c8c660b0f0049015",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/agent-workspace/_index.md": {
       "path": "content/handbook/eta/css/zendesk/agent-workspace/_index.md",
@@ -34946,11 +34946,11 @@
     },
     "content/handbook/eta/css/zendesk/knowledge-center/categories.md": {
       "path": "content/handbook/eta/css/zendesk/knowledge-center/categories.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T07:20:00+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "0cffc9d1b144cfd41e7713535a14d6fea235b27b15aaf75ceeddb729645e6de6",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "d32d2b191b05523744d3b384e5af9a134bada1c1498c6e9b496a24409e793ae3",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/dev-pulse/_index.md": {
       "path": "content/handbook/eta/css/zendesk/dev-pulse/_index.md",
@@ -34962,11 +34962,11 @@
     },
     "content/handbook/eta/css/zendesk/knowledge-center/management-permissions-groups.md": {
       "path": "content/handbook/eta/css/zendesk/knowledge-center/management-permissions-groups.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T07:24:00+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "3766a6db755ba7cc8eb20496d651d7be2a80b1283a06e034eccd490e0e8239a9",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "84c4165678080c5081e0870d732a6f4df81f491600021ed2d68d9b224032b5ba",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/gitlab/working-merge-requests.md": {
       "path": "content/handbook/eta/css/gitlab/working-merge-requests.md",
@@ -34986,11 +34986,11 @@
     },
     "content/handbook/eta/css/gitlab/support-team-yaml-files.md": {
       "path": "content/handbook/eta/css/gitlab/support-team-yaml-files.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T07:29:58+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "c751bb337d72b03d3d7bfea5707ce96c6445573f83ee811b74efd166eb2a46a4",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "782dec611a7148261e0407152691b305d53819591c505bb142c3dd90c8a7328a",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/searching/_index.md": {
       "path": "content/handbook/eta/css/zendesk/searching/_index.md",
@@ -35002,27 +35002,27 @@
     },
     "content/handbook/eta/css/zendesk/knowledge-center/theme.md": {
       "path": "content/handbook/eta/css/zendesk/knowledge-center/theme.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T07:34:03+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "812dcc77fab633d24e257d51b17b695d838002e48b7c4ec7bb9bcd260fce6e89",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "1710033a75e752b792baae491f6ce6e8961173b004814b9bdfdf20ad53512a38",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/groups/_index.md": {
       "path": "content/handbook/eta/css/zendesk/groups/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T07:38:49+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "0aa716009a359fb186b828b7cdfb91c19d9f865dbac8d297dbcf52b0c415c0b7",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "0b4c6b2705b6b3129b6e86d38411f142ea7faebc521b60bdfd14f3d70dcc12b1",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/incidents/_index.md": {
       "path": "content/handbook/eta/css/incidents/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T07:38:49+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "ee48ee661ff3ac196fd5dc8eeb376a8205b30466c85db0cbe6e5afdda3ec9125",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "4931bbe2da25364ea555e2a36132df4a5822b25e832376b52e65f71a687a6a76",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/knowledge-center/_index.md": {
       "path": "content/handbook/eta/css/zendesk/knowledge-center/_index.md",
@@ -35042,19 +35042,19 @@
     },
     "content/handbook/eta/css/zendesk/schedules/_index.md": {
       "path": "content/handbook/eta/css/zendesk/schedules/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T07:47:07+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "eb5f0314414dc0f2ddc4e758a73eca5603eabe1b49f39348cc9e90fd065908b9",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "17123f59be79cd07a43c4bf9710c02e09040ee62bcc5a286bbcb2006666685cf",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/knowledge-center/articles.md": {
       "path": "content/handbook/eta/css/zendesk/knowledge-center/articles.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T07:47:07+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "c01c8c7fbc52c266e6ae5329012cb01fec3e811f126ed625c716430907588a87",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "97d00f5eb180f2a5a9ad7a7fa4d2a9c8dda203278e129eae65de416a8965a727",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/api/_index.md": {
       "path": "content/handbook/eta/css/zendesk/api/_index.md",
@@ -35082,19 +35082,19 @@
     },
     "content/handbook/eta/css/zendesk/users/end-users.md": {
       "path": "content/handbook/eta/css/zendesk/users/end-users.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T08:01:00+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "26197d49e9b1a199215c47124a55885afe81844d0ed17f59b7eea2030277ae69",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "f12ec95651f1d8da1a0eecb0d0fdb3fdc41eb297794373918595f0f6978b8c77",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/knowledge-center/sections.md": {
       "path": "content/handbook/eta/css/zendesk/knowledge-center/sections.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T08:01:00+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "9f4354152f46c240dcfc94330483910a47893cf40b1ca71537fa6298992d69de",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "eadcbdffa0a344826f3dd990523c8059c1391c814083b569110a4693ac3d7036",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/liquid/_index.md": {
       "path": "content/handbook/eta/css/zendesk/liquid/_index.md",
@@ -35114,19 +35114,19 @@
     },
     "content/handbook/eta/css/zendesk/sla-policies/_index.md": {
       "path": "content/handbook/eta/css/zendesk/sla-policies/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T08:09:48+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "9c0db37543b8e9fe2e8929a5c3a495189d7eeeac22b7bb91094559ef191b3152",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "14c2d907655d3b133eab86391fb36dbb87b2466fd1f7ec5c88c66632bc5eea20",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/webhooks/_index.md": {
       "path": "content/handbook/eta/css/zendesk/webhooks/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T08:09:48+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "6c969d74e006c559d029eead15b6dfbc5cc5da314895bfbccd6894dcb9ed7bfb",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "7bd140868288ff237d5e6deb7f8a91f98af59e7077dc06970b6636eef9043419",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/token-management.md": {
       "path": "content/handbook/eta/css/token-management.md",
@@ -35138,11 +35138,11 @@
     },
     "content/handbook/eta/css/zendesk/macros/_index.md": {
       "path": "content/handbook/eta/css/zendesk/macros/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T08:24:00+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "4b54db96ad084627cdcb4ea204fa0d9b25bd583ae176967099e50f90a40acf02",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "d52677106dfcd9dd48d32010c751a9252acab9f75c1c7d31df6c7e19b8747a80",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/gitlab/project-setup.md": {
       "path": "content/handbook/eta/css/gitlab/project-setup.md",
@@ -35154,27 +35154,27 @@
     },
     "content/handbook/eta/css/zendesk/automations/_index.md": {
       "path": "content/handbook/eta/css/zendesk/automations/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T08:31:17+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "f29ac1749941b850f20a95d0671b78178a59ccb50853d2b21d8f8b83c07bb188",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "9571cffa2cb292889e851dfdc1e49236c703c7f6b439a4d808fce89e68877cb3",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/triggers/_index.md": {
       "path": "content/handbook/eta/css/zendesk/triggers/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T08:31:17+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "a45967de08ce0b81dea137e9b35c0415a12eb6893a67acbc4147b71b0878ed22",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "0a0e5a2a18dfa37257b456112bd9e010b31eb7495729f7d0aeea934c17eb4dfe",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/tickets/forms.md": {
       "path": "content/handbook/eta/css/zendesk/tickets/forms.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T08:46:00+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "27106c3752755a0d0d50d8da5d9710fd46b75d4e5c51c63d01f2a5d279f870b6",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "5fedb708c89ccaac68c246d1fbcbe3becba10986de4ed95e2a6a128f007fc517",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/organizations/fields.md": {
       "path": "content/handbook/eta/css/zendesk/organizations/fields.md",
@@ -35186,35 +35186,35 @@
     },
     "content/handbook/eta/css/zendesk/tickets/fields.md": {
       "path": "content/handbook/eta/css/zendesk/tickets/fields.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T08:46:00+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "6d50a0c154ac24f0f67f42765a015a1aeb39747e5f68b20a916305f892b81fa9",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "3f1fe978ce61fd43d586f29708f840f09eebbbf5b059f384af6e5b8058f7cc0c",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk/tickets/_index.md": {
       "path": "content/handbook/eta/css/zendesk/tickets/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T09:00:11+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "71fdee11dba9cedeefba679ab4887bfbb7d74d2714fec8baac0edf42530afa2e",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "faf4a6e023f2643ad71b4c930db1d730f8ea3b78e6239a5bb5aa5de0481602d6",
+      "upstream_committed_at": "2026-07-21T09:28:24-05:00"
     },
     "content/handbook/eta/css/zendesk/views/_index.md": {
       "path": "content/handbook/eta/css/zendesk/views/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T09:00:11+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "e09684d7dbd55184f5779147cc43ab29f3f53bf8719e321b407b7ab886d38b54",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "439b26f8d135ccf2a6d479d4608399b5f10c7108096c75001d0d8dc2b8cf1645",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/gitlab/issues/working-issues.md": {
       "path": "content/handbook/eta/css/gitlab/issues/working-issues.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T09:10:26+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "433d22ae31bcfb4ab5d48508f5f4ddaa122d90a85c0618b5709e778fc770a278",
-      "upstream_committed_at": "2026-07-14T15:22:25-05:00"
+      "input_hash": "eb30ea39e027705b5b6d684d81c86182c621dd1eb2d45731f46b5f023473b0b2",
+      "upstream_committed_at": "2026-07-21T11:29:58-05:00"
     },
     "content/handbook/eta/css/zendesk-salesforce-sync/_index.md": {
       "path": "content/handbook/eta/css/zendesk-salesforce-sync/_index.md",
@@ -35306,35 +35306,35 @@
     },
     "content/handbook/upstream-studios/product-design/workflow/ai-design.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/ai-design.md",
-      "upstream_sha": "d92acb119be844b83eb2f76de26d722afea570c3",
-      "translated_at": "2026-07-21T06:21:42+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "340decbb6e1efa1fa4b329db9134578dcc42eab99d6037b0e4000d2c6d708462",
-      "upstream_committed_at": "2026-07-20T13:03:25-03:00"
+      "input_hash": "dee2f1142b01f28f6abc9758457af7675d09263b9cdf9eb31a05542b7e3ab2f8",
+      "upstream_committed_at": "2026-07-21T08:59:24-03:00"
     },
     "content/handbook/upstream-studios/product-design/workflow/mr-reviews/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/mr-reviews/_index.md",
-      "upstream_sha": "d92acb119be844b83eb2f76de26d722afea570c3",
-      "translated_at": "2026-07-21T06:21:42+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "57efb5ab3881e42264e5d6080deb10ccf2cf6a757d44b0fc846bf2a2ed52de12",
-      "upstream_committed_at": "2026-07-20T13:03:25-03:00"
+      "input_hash": "546b01fcbf9537d84abfc9a8a889225a1a7dd15a1077bd3ebd001878edddcd56",
+      "upstream_committed_at": "2026-07-21T08:59:24-03:00"
     },
     "content/handbook/upstream-studios/product-design/workflow/mr-reviews/preview-mr.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/mr-reviews/preview-mr.md",
-      "upstream_sha": "d92acb119be844b83eb2f76de26d722afea570c3",
-      "translated_at": "2026-07-21T06:21:42+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "6acb041af66729d157c799265f0aca56fe3666ddded6bef5dc1c335b4310a9a0",
-      "upstream_committed_at": "2026-07-20T13:03:25-03:00"
+      "input_hash": "1c2a32a8a37624ebe811db92249fd8f595e0c822aae146cf79a2da8787220c5a",
+      "upstream_committed_at": "2026-07-21T08:59:24-03:00"
     },
     "content/handbook/upstream-studios/product-design/workflow/figma/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/figma/_index.md",
-      "upstream_sha": "d92acb119be844b83eb2f76de26d722afea570c3",
-      "translated_at": "2026-07-21T06:21:42+09:00",
+      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
+      "translated_at": "2026-07-22T06:32:52+09:00",
       "model": "codex",
-      "input_hash": "f24e1fe70670ca6d3c2c329c7233341bbd27b2010c5d7f9555657eed18e62e6a",
-      "upstream_committed_at": "2026-07-20T13:03:25-03:00"
+      "input_hash": "f065f225fafdd6a07d8974062e36cf9fec1e7f89267b2a5ef7758f5c41d7688a",
+      "upstream_committed_at": "2026-07-21T08:59:24-03:00"
     },
     "content/handbook/upstream-studios/product-design/workflow/capacity-management/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/capacity-management/_index.md",

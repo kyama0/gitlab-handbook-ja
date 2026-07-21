@@ -2,9 +2,9 @@
 title: 'チケット'
 description: 'Zendesk チケットに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/tickets/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-lastmod: "2026-07-14T15:22:25-05:00"
-translated_at: "2026-07-19T09:00:11+09:00"
+upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
+lastmod: "2026-07-21T09:28:24-05:00"
+translated_at: "2026-07-22T06:32:52+09:00"
 translator: codex
 stale: false
 ---
@@ -108,7 +108,7 @@ GitLab では、これらを少し異なる方法で定義しています。
     - メール本文を作成する
 
       ```plaintext
-      You are a follower on this request ({{ticket.id}}). {{ticket.follower_reply_type_message}}
+      You are a follower on this request ({{ticket.link}}). {{ticket.follower_reply_type_message}}
 
       {{ticket.comments_formatted}}
       ```
