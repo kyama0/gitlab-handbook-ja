@@ -3,7 +3,7 @@ title: "チャネルパートナーマイグレーションサービス"
 upstream_path: /handbook/resellers/partner-enablement/partner-migration-services/
 upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
 translated_at: "2026-07-22T06:32:52+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-21T09:08:15+00:00"
 ---

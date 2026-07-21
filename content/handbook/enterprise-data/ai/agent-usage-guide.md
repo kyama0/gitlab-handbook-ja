@@ -5,7 +5,7 @@ upstream_path: /handbook/enterprise-data/ai/agent-usage-guide/
 upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
 lastmod: "2026-07-21T08:37:13-06:00"
 translated_at: "2026-07-22T06:32:52+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 

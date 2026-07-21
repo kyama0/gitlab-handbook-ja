@@ -4,7 +4,7 @@ description: "Marketing Operations (MktgOps) は、マーケティングチー�
 upstream_path: /handbook/marketing/marketing-operations/
 upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
 translated_at: "2026-07-22T06:32:52+09:00"
-translator: "codex"
+translator: "claude"
 stale: false
 lastmod: "2026-07-21T09:53:23-06:00"
 ---
