@@ -2,9 +2,9 @@
 title: UX リソース
 description: "Upstream Studios の一部である Product Design、UX Research、Technical Writing、Design System の各 UX チームメンバー向けのリソースとツール。"
 upstream_path: /handbook/product/ux/ux-resources/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-lastmod: "2026-07-20T13:03:25-03:00"
-translated_at: "2026-07-21T06:51:05+09:00"
+upstream_sha: 50ee631c98005b47a0caea9d46e4ba5cfc62891a
+lastmod: "2026-07-22T08:32:12-03:00"
+translated_at: "2026-07-23T06:31:48+09:00"
 translator: codex
 stale: false
 ---
@@ -16,7 +16,7 @@ stale: false
 ### ワークフローとオペレーション
 
 - [プロダクトデザイナーのワークフロー](/handbook/upstream-studios/product-design/workflow/) - 日々のデザインプロセスとコラボレーション
-- [プロダクトデザインオペレーション](/handbook/product/ux/product-design/operations/) - Issue 管理、ラベリング、スケジューリング
+- [プロダクトデザインオペレーション](/handbook/upstream-studios/product-design/operations/) - Issue 管理、ラベリング、スケジューリング
 - [UX リサーチャーのワークフロー](/handbook/upstream-studios/experience-research/)
 - [テクニカルライティングのワークフロー](/handbook/product/ux/technical-writing/)
 - [UX オペレーション](/handbook/product/ux/operations/) - 人員計画、調達、ラベル、カレンダー

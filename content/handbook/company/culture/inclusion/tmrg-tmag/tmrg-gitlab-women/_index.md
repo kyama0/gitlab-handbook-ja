@@ -2,11 +2,11 @@
 title: "TMRG - GitLab Women"
 description: "リモート TMRG GitLab Women の概要"
 upstream_path: "/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/"
-upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: 50ee631c98005b47a0caea9d46e4ba5cfc62891a
+translated_at: "2026-07-23T07:04:48+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-21T16:33:10+01:00"
+lastmod: "2026-07-22T11:04:29+01:00"
 ---
 
 ## ミッション
@@ -32,11 +32,11 @@ GitLab で働く女性たちをぜひ知ってください！
 
 - [Winnie Chan](https://gitlab.com/wyychan) Co-Lead
 - [Pamela Corpus](https://gitlab.com/pcorpus) Co-Lead
-- [Tatiana Fernandez](https://gitlab.com/tfernandez) Co-lead
+- [Tatiana Fernandez](https://gitlab.com/tatianafernandez) Co-Lead
 
 ## エグゼクティブスポンサー
 
-- [Jessica Ross](https://gitlab.com/jross) - Chief Financial Officer
+- [Jessica Ross](https://gitlab.com/jessicapross) - Chief Financial Officer
 - [Dorina Pulluqi](https://gitlab.com/dpulluqi) - VP, High Velocity Sales & Sales Development
 
 ## 参加方法
