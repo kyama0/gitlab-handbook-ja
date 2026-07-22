@@ -1,5 +1,5 @@
 ---
-title: Product Design Operations
+title: プロダクトデザインオペレーション
 description: >-
   "Issue 管理、チーム運営、管理プロセスを含む、Product Designer および Product Design Manager 向けの運用ガイダンス。"
 upstream_path: /handbook/upstream-studios/product-design/operations/
