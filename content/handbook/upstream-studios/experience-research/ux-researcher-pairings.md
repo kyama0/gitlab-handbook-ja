@@ -2,14 +2,14 @@
 title: "リサーチャーのペアリング"
 description: "UX Researcher が別の UX Researcher とペアになり、互いにフィードバックを提供・受領できる任意参加の取り組みです。"
 upstream_path: /handbook/upstream-studios/experience-research/ux-researcher-pairings/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T08:32:10+09:00"
+upstream_sha: 50ee631c98005b47a0caea9d46e4ba5cfc62891a
+lastmod: "2026-07-22T13:37:37-03:00"
+translated_at: "2026-07-23T06:22:46+09:00"
 translator: codex
 stale: false
 ---
 
-[Product Designer のペアリングプログラム](/handbook/product/ux/product-design/design-pair-rotation)に着想を得て、UX Researcher も独自のペアリングの取り組み、**UX Research のペアリング**に参加できます。
+[Product Designer のペアリングプログラム](/handbook/upstream-studios/product-design/design-pair-rotation)に着想を得て、UX Researcher も独自のペアリングの取り組み、**UX Research のペアリング**に参加できます。
 
 ## UX Research のペアリング {#ux-research-pairings}
 

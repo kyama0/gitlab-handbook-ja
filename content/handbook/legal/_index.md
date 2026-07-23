@@ -1,9 +1,9 @@
 ---
 title: Legal & Corporate Affairs（"LACA"）
 upstream_path: /handbook/legal/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-lastmod: "2026-05-21T12:17:18-04:00"
-translated_at: "2026-05-22T12:00:00Z"
+upstream_sha: 50ee631c98005b47a0caea9d46e4ba5cfc62891a
+lastmod: "2026-07-22T06:04:32-06:00"
+translated_at: "2026-07-23T06:46:47+09:00"
 translator: claude
 stale: false
 ---
@@ -70,7 +70,7 @@ Legal の [Employment](/handbook/legal/employment-law/) チームは、チーム
 
 ## 匿名の社内倫理・コンプライアンス報告
 
-私たちは従業員の懸念を非常に真剣に受け止めており、すべての GitLab チームメンバーが [EthicsPoint](https://secure.ethicspoint.com/domain/media/en/gui/74686/index.html) を使って倫理および/またはコンプライアンス違反を報告することを奨励しています。詳細は [People Group ハンドブック](/handbook/people-group/) の [違反の報告方法](/handbook/people-group/#how-to-report-violations) および [Code of Business Conduct and Ethics](/handbook/legal/gitlab-code-of-business-conduct-and-ethics/) を参照してください。
+私たちは従業員の懸念を非常に真剣に受け止めており、すべての GitLab チームメンバーが [Ethico](https://www.mycompliancereport.com/report?cid=GTLB) を使って倫理および/またはコンプライアンス違反を報告することを奨励しています。詳細は [People Group ハンドブック](/handbook/people-group/) の [違反の報告方法](/handbook/people-group/#how-to-report-violations) および [Code of Business Conduct and Ethics](/handbook/legal/gitlab-code-of-business-conduct-and-ethics/) を参照してください。
 
 ## GitLab ポリシー
 

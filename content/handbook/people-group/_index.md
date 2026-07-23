@@ -2,11 +2,11 @@
 title: ピープルグループ
 description: "GitLab のピープルグループは、チームメンバーのライフサイクル全体を通じてすべての GitLab チームメンバーを支援します。"
 upstream_path: /handbook/people-group/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T09:31:27+09:00"
+upstream_sha: 50ee631c98005b47a0caea9d46e4ba5cfc62891a
+translated_at: "2026-07-23T06:35:45+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-08T11:09:01-04:00"
+lastmod: "2026-07-22T18:00:59+00:00"
 ---
 
 ## ようこそ
@@ -27,7 +27,7 @@ lastmod: "2026-07-08T11:09:01-04:00"
 
 - [**ピープルグループ**](https://gitlab.com/gitlab-com/people-ops) は、ピープルグループを編成するためのいくつかのサブプロジェクトを保持しています。適切なサブプロジェクト、または不明な場合は `general` で issue を作成してください。GitLab チームメンバーのみに見えるべきトピックには confidential issues を使用してください。同様に、質問が共有可能な場合は public issue を使用してください。適切なチームメンバーがフォローアップできるよう `@gl-people-ops-team` または `@gl-hiring` をタグ付けしてください。
   - 機密性のため、ピープルグループのすべてのプロジェクトが issue で共有できるわけではないことに注意してください。完全に透明にできない場合は、issue の説明で共有できるものを共有し、その理由を説明します。
-  - [**Employment Issue Tracker**](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates): このサブプロジェクトには Onboarding、Offboarding、Transition の Issue Templates のみが保持されており、People Operations チームのみが作成します。Interview Training Issue は [Training project](https://gitlab.com/gitlab-com/people-group/Training) に保持され、Talent Acquisition チームによって作成されます。詳細は [interviewing page](/handbook/hiring/interviewing) を参照してください。
+  - [**雇用 Issue トラッカー**](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates): このサブプロジェクトにはオンボーディング、オフボーディング、移行の Issue テンプレートのみが保持されており、People Operations チームのみが作成します。面接トレーニング Issue は [トレーニング プロジェクト](https://gitlab.com/gitlab-com/people-group/Training) に保持され、Talent Acquisition チームによって作成されます。詳細は [面接ページ](/handbook/hiring/interviewing) を参照してください。
 - **People Operations**; issue tracker に適切でないと思われる質問がある場合、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/#how-do-i-use-helplab) 内で People Operations チームのケースを作成し、該当するテンプレート／カテゴリを選択してください。Google または Slack グループに関するアクセス要求については、こちらで issue を作成してください: https://gitlab.com/gitlab-com/team-member-epics/access-requests。Payroll、Expenses、または Equity に関する質問については、HelpLab 内のそれぞれのチームに質問を向けてください。リクルーティングチームへの質問（アクセスに関連する質問、または Greenhouse、紹介、面接、面接トレーニングに関するものを含む）については、`#talent-acquisition` チャンネルを使用してください。
 - 機密／プライベートな事項（チームをめぐる機微な事項を含む）について議論する必要がある場合は、Team Member Relations チームの [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=d865085147cc069067429ee0026d43eb&in_context=true) ケースを開くことができます。すべてのチームメンバーは、所在地にかかわらず、プライベートな機微な事項について議論するためにこのフォームを使用できます。
 - 技術的事項（たとえば 2FA）について助けが必要な場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com で IT に連絡してください。
@@ -46,9 +46,9 @@ GitLab のピープルチームから緊急サポートが必要な場合は、[
 
 ### 違反の報告方法
 
-[Code of Business Conduct and Ethics](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf) に記載されているとおり、違反の報告に関連するセクションがあります。GitLab は、すべてのチームメンバー向けに、包括的で機密性のある報告ツール、匿名の倫理ホットラインである EthicsPoint を提供するため Navex を起用しています。サービスの目的は、[Code of Business Conduct and Ethics](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf) で扱われている行為について匿名で報告したいチームメンバーが、報復を恐れることなくそうできるようにすることです。
+[Code of Business Conduct and Ethics](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf) に記載されているとおり、違反の報告に関連するセクションがあります。GitLab は、すべてのチームメンバー向けの包括的で機密性のある報告ツールおよび匿名の倫理ホットラインである Ethico（https://www.mycompliancereport.com/report?cid=GTLB）を起用しています。サービスの目的は、[Code of Business Conduct and Ethics](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf) で扱われている行為について匿名で報告したいチームメンバーが、報復を恐れることなくそうできるようにすることです。
 
-EthicsPoint に加えて、GitLab は、チームメンバーの関係に関する報告をすべてのチームメンバーが提出できる匿名の報告ホットラインを提供するために Lighthouse Services を起用しています。報告は、不正な解雇または懲戒処分、[セクシュアルハラスメント](/handbook/people-group/anti-harassment/#sexual-harassment)、差別、行為違反、アルコールおよび薬物乱用、脅迫、不適切な行為、会社ポリシーの違反などのトピックをカバーしますが、これらに限定されません。
+Ethico に加えて、GitLab は、チームメンバーの関係に関する報告をすべてのチームメンバーが提出できる匿名の報告ホットラインを提供するために Lighthouse Services を起用しています。報告は、不正な解雇または懲戒処分、[セクシュアルハラスメント](/handbook/people-group/anti-harassment/#sexual-harassment)、差別、行為違反、アルコールおよび薬物乱用、脅迫、不適切な行為、会社ポリシーの違反などのトピックをカバーしますが、これらに限定されません。
 
 あなたが提供する情報は、報告している問題に関する社内および／または社外調査の基礎となる可能性があり、あなたの匿名性は法律で可能な範囲で Lighthouse によって保護されます。ただし、提供した情報のため、調査の過程であなたの身元が明らかになる場合があります。報告は、当社のポリシーに従って調査するため、Lighthouse によって会社の指定者に提出されます。
 
@@ -64,7 +64,7 @@ Lighthouse には、チームメンバーが使用できるフリーダイヤル
 - メール: reports@lighthouse-services.com（報告には会社名を含める必要があります）
 - ファックス: (215) 689-3885（報告には会社名を含める必要があります）
 
-EthicsPoint および Lighthouse に加えて、[Team Member Relations](/handbook/people-group/team-member-relations/) ページをご確認ください。GitLab はまた、任意のチームメンバーが任意のタイプの職場ハラスメントのインスタンスを文書化するために使用できる [Harassment Complaint Form](https://docs.google.com/document/d/1Xk5SXvh2kpO-w-TdykiczjhXNrEBjbMwDQHEt6lMhIk/edit?usp=sharing) も提供します。フォームをコピーして、あなたの情報で記入し、teammemberrelations@gitlab.com で Team Member Relations Specialist に送信するだけです。
+Ethico および Lighthouse に加えて、[Team Member Relations](/handbook/people-group/team-member-relations/) ページをご確認ください。GitLab はまた、任意のチームメンバーが任意のタイプの職場ハラスメントのインスタンスを文書化するために使用できる [Harassment Complaint Form](https://docs.google.com/document/d/1Xk5SXvh2kpO-w-TdykiczjhXNrEBjbMwDQHEt6lMhIk/edit?usp=sharing) も提供します。フォームをコピーして、あなたの情報で記入し、teammemberrelations@gitlab.com で Team Member Relations Specialist に送信するだけです。
 
 ## ピープルグループの適切なメンバーへの連絡方法 {#how-to-reach-the-right-member-of-the-people-group}
 
@@ -91,7 +91,7 @@ EthicsPoint および Lighthouse に加えて、[Team Member Relations](/handboo
 
 ## マネージャーおよびチームメンバー向けのピープルグループ プログラムカレンダー
 
-[このページ](https://theloop.gitlab.com/home)で、People Manager Calendar と All Team Member Calendar を見つけることができます。これらのページの目標は、チームメンバーと People Manager が事前に計画を立て、今後のプログラムとタイムラインの概要を把握できるようにすることです。
+この [ページ]https://theloop.gitlab.com/home で、People Manager Calendar と All Team Member Calendar を見つけることができます。これらのページの目標は、チームメンバーと People Manager が事前に計画を立て、今後のプログラムとタイムラインの概要を把握できるようにすることです。
 
 ## Legal, Employment チームがピープルグループに提供するサポート
 
@@ -130,18 +130,18 @@ People Business Partners からの People Operations チームのほとんどの
 
 | 責任 | 対応タイムライン |
 | -------------- | ----------------- |
-| [Onboarding](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/onboarding_process/) | 開始日の 2 週間前 |
-| [Offboarding](/handbook/people-group/offboarding/offboarding_standards/) | 非自発的の場合は即時、自発的の場合は 24 時間 |
-| [Organizational Changes](/handbook/people-group/promotions-transfers/#organization-change-checklist) | 変更の発効日から 3 日以内 |
-| [Letters of Employment](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/frequently_requested/#letter-of-employment) | 24 時間以内 |
-| [Employment Verification](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/frequently_requested/#letter-of-employment) | 24 時間以内 |
-| [Anniversary Emails](/handbook/people-group/celebrations/#anniversary-gifts) | 翌月の初日 |
+| [オンボーディング](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/onboarding_process/) | 開始日の 2 週間前 |
+| [オフボーディング](/handbook/people-group/offboarding/offboarding_standards/) | 非自発的の場合は即時、自発的の場合は 24 時間 |
+| [組織変更](/handbook/people-group/promotions-transfers/#organization-change-checklist) | 変更の発効日から 3 日以内 |
+| [在職証明書](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/frequently_requested/#letter-of-employment) | 24 時間以内 |
+| [雇用証明](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/frequently_requested/#letter-of-employment) | 24 時間以内 |
+| [記念日メール](/handbook/people-group/celebrations/#anniversary-gifts) | 翌月の初日 |
 | HelpLab Queries | 24 時間以内 |
-| [Probation Period Notifications](/handbook/people-group/contracts-probation-periods/#probation-period) | 毎日（該当する場合） |
-| [Contract Renewals](/handbook/people-group/contracts-probation-periods/#contract-renewals) | チームメンバーの更新日の 30 日以上前 |
-| [Exit Interviews](/handbook/people-group/offboarding/#resignation) | 自発的 offboarding のチームメンバーの最終週中 |
-| [US Unemployment Claim Management](/handbook/people-group/offboarding/#unemployment-claims-in-the-us) | 必要に応じて、四半期ごとに監査 |
-| [Relocations](/handbook/people-group/relocation/) | 要求通り、通常チームメンバーの relocation 日の 30 日以上前に完了 |
+| [試用期間通知](/handbook/people-group/contracts-probation-periods/#probation-period) | 毎日（該当する場合） |
+| [契約更新](/handbook/people-group/contracts-probation-periods/#contract-renewals) | チームメンバーの更新日の 30 日以上前 |
+| [退職面談](/handbook/people-group/offboarding/#resignation) | 自発的オフボーディングのチームメンバーの最終週中 |
+| [米国失業保険請求管理](/handbook/people-group/offboarding/#unemployment-claims-in-the-us) | 必要に応じて、四半期ごとに監査 |
+| [転居](/handbook/people-group/relocation/) | 要求通り、通常チームメンバーの転居日の 30 日以上前に完了 |
 
 People Operations Team のその他のリストされたプロセスは[こちら](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/people_operations_team/)で見つけることができます。
 
@@ -206,40 +206,40 @@ CultureAmp への管理アクセスは、役割と責任に基づいて制限さ
 
 ### Total Rewards
 
-- [Benefits](/handbook/total-rewards/benefits/)
-- [Global Compensation](/handbook/total-rewards/compensation/)
+- [福利厚生](/handbook/total-rewards/benefits/)
+- [グローバル報酬](/handbook/total-rewards/compensation/)
 
 ### People Operations
 
-- [Code of Business Conduct and Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx)
-- [Promotions and Transfers](/handbook/people-group/promotions-transfers/)
-- [Employment Solutions (International Expansion)](/handbook/people-group/employment-solutions/)
-- [Contracts](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/)
-- [Probation Periods & PIAA](/handbook/people-group/contracts-probation-periods/)
-- [Onboarding](/handbook/people-group/general-onboarding/)
-- [Offboarding](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854)
-- [Celebrations](/handbook/people-group/celebrations/)
+- [ビジネス行動規範および倫理](https://ir.gitlab.com/governance/governance-documents/default.aspx)
+- [昇進と異動](/handbook/people-group/promotions-transfers/)
+- [雇用ソリューション（国際展開）](/handbook/people-group/employment-solutions/)
+- [契約](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/employment_contracts/)
+- [試用期間と PIAA](/handbook/people-group/contracts-probation-periods/)
+- [オンボーディング](/handbook/people-group/general-onboarding/)
+- [オフボーディング](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854)
+- [お祝い](/handbook/people-group/celebrations/)
 - [People Operations](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/people_operations_team/)
 - [People Analytics](people-ops-tech-analytics/people-analytics/_index.md)
 
 ### Talent Acquisition
 
-- [Incentives](/handbook/total-rewards/incentives/)
-- [Hiring process](/handbook/hiring/)
-- [Leadership](/handbook/leadership/)
+- [インセンティブ](/handbook/total-rewards/incentives/)
+- [採用プロセス](/handbook/hiring/)
+- [リーダーシップ](/handbook/leadership/)
 
 ### Learning and Development
 
-- [Learning & Development](/handbook/company/culture/all-remote/)
-- [Guidance on Feedback](/handbook/people-group/guidance-on-feedback/)
+- [学習と能力開発](/handbook/company/culture/all-remote/)
+- [フィードバックに関するガイダンス](/handbook/people-group/guidance-on-feedback/)
 
 ### Diversity, Inclusion and Belonging
 
-- [Gender and Sexual-orientation Identity Definitions and FAQ](/handbook/people-group/orientation-identity/)
+- [ジェンダーと性的指向のアイデンティティの定義および FAQ](/handbook/people-group/orientation-identity/)
 
 ### その他のピープルグループ関連リンク
 
-- [People Policy Directory](/handbook/people-policies/)
-- [Underperformance](/handbook/leadership/underperformance/)
-- [Visas](/handbook/people-group/visas/)
-- [Leadership handbook](/handbook/leadership/)
+- [ピープルポリシー ディレクトリ](/handbook/people-policies/)
+- [パフォーマンス不振](/handbook/leadership/underperformance/)
+- [ビザ](/handbook/people-group/visas/)
+- [リーダーシップ ハンドブック](/handbook/leadership/)

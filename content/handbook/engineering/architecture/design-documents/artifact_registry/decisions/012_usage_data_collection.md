@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "SaaS およびセルフマネージドのデプロイにまたがるプロダクトアナリティクスとビジネスインテリジェンスのために、Artifact Registry が使用状況データを収集する方法に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-lastmod: "2026-07-14T09:51:51+01:00"
-translated_at: "2026-07-16T06:24:10+09:00"
+upstream_sha: "78a0e7a77d6186ee917e52daef46030cba948677"
+lastmod: "2026-07-22T23:40:34+02:00"
+translated_at: "2026-07-23T07:28:59+09:00"
 translator: codex
 stale: false
 ---
@@ -62,7 +62,7 @@ Go サテライトサービス向けに、[LabKit v2](https://gitlab.com/gitlab-
 | イベント | `artifact_registry_context` フィールド | イベントペイロード（単発）フィールド |
 |---|---|---|
 | `artifact_registry_artifact_pushed` | `format`、`repository_kind=hosted`、`repository_id`、`ar_namespace_id` | `auth_method` |
-| `artifact_registry_artifact_pulled` | `format`、`repository_kind`（`hosted`/`virtual`）、`repository_id`、`ar_namespace_id`、`cache_hit`（virtual のみ） | `auth_method` |
+| `artifact_registry_artifact_pulled` | `format`、`repository_kind`（`hosted`/`virtual`）、`repository_id`、`ar_namespace_id`、`cache_hit`（virtual のみ） | `auth_method`、`delivery_mode`（`proxy`/`redirect`） |
 | `artifact_registry_artifact_deleted` | `format`、`repository_kind`、`repository_id`、`ar_namespace_id` | `deletion_type`（`manual`/`lifecycle_policy`） |
 | `artifact_registry_repository_created` | `format`、`repository_kind`、`repository_id`、`ar_namespace_id` | — |
 | `artifact_registry_repository_deleted` | `format`、`repository_kind`、`repository_id`、`ar_namespace_id` | — |

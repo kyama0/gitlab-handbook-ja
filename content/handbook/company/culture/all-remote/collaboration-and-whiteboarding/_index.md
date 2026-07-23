@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/collaboration-and-whiteboarding/"
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:59:28+09:00"
+upstream_sha: 50ee631c98005b47a0caea9d46e4ba5cfc62891a
+translated_at: "2026-07-23T07:04:48+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T13:03:25-03:00"
+lastmod: "2026-07-22T13:37:37-03:00"
 ---
 
 このページでは、グローバルなオールリモート企業においてコラボレーションとホワイトボーディングがどのように機能するかを詳しく説明します。
@@ -163,7 +163,7 @@ Slack は一般的に[インフォーマルなコミュニケーション方法]
 
 同僚とのミーティングをスケジュールしてください。ペアでのミーティングでは、課題と目標についてコラボレーションするための真剣な 1 対 1 の対面時間が確保されます。この時間により、各参加者は自分が取り組んでいることを共有し、馴染みのないプロジェクトも共有する可能性があります。Zoom では、画面共有オプションによりミーティングパートナーの仕事に直接関与できます。
 
-GitLab では、[ペアデザインプログラム](/handbook/product/ux/product-design/design-pair-rotation/)が立ち上げられ、同じタイムゾーン内だが製品の異なる部分に取り組んでいるデザインピアとプロダクトデザイナーを繋げています。各ペアは 6 ヶ月間会合を持ち、その後全員が異なるアイデア、製品分野、コラボレーションに触れる機会を与えるために入れ替えられます。
+GitLab では、[ペアデザインプログラム](/handbook/upstream-studios/product-design/design-pair-rotation/)が立ち上げられ、同じタイムゾーン内だが製品の異なる部分に取り組んでいるデザインピアとプロダクトデザイナーを繋げています。各ペアは 6 ヶ月間会合を持ち、その後全員が異なるアイデア、製品分野、コラボレーションに触れる機会を与えるために入れ替えられます。
 
 > 「UX での各『ペア』との仕事がとても好きです！通常、週に 1 回 30 分から 1 時間会い、各自が最優先のことについて半分ずつの時間を使います。
 >
