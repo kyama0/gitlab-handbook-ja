@@ -2,11 +2,11 @@
 title: "GitLab Duo Agent Platform - ハンズオンラボ: カスタムフローを作成する"
 description: "このハンズオンガイドでは、カスタムフローの作成方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T12:49:33Z"
+upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
+translated_at: "2026-07-23T21:51:15Z"
 translator: claude
 stale: false
-lastmod: 2026-06-15T14:13:50-04:00
+lastmod: "2026-07-23T16:30:17+01:00"
 ---
 
 > 完了までの推定時間: 20 分
@@ -249,6 +249,8 @@ flow:
 グループレベルでフローを有効化すると、グループ内のすべてのプロジェクトで利用可能になります。これは、ラボ 3 でカスタムエージェントを有効化するために使用したのと同じプロセスです。
 
 1. フローを作成したのと同じページから、右上隅の **Enable** をクリックします。
+
+1. Issue ベースのこのフローには関係ないため、'Assign Reviewer' オプションの選択を解除します。
 
 1. 次に、確認のため再度 **Enable** をクリックします。
 

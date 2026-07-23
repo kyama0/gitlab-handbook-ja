@@ -2,14 +2,14 @@
 title: "プロダクトセキュリティリスクレジスター"
 description: "プロダクトセキュリティリスクレジスター (PSRR) は、セキュリティリスクチームによる STORM プロセスを基に駆動されています。"
 upstream_path: /handbook/security/product-security/security-platforms-architecture/risk-register/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:40:09Z"
+upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
+translated_at: "2026-07-24T06:17:58+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-09T20:14:47+00:00"
+lastmod: "2026-07-23T13:34:20-07:00"
 ---
 
-プロダクトセキュリティリスクレジスター (PSRR) は、GitLab の製品におけるシステミックなセキュリティリスクを特定、評価、優先順位付け、緩和、監視するための一元化されたフレームワークです。PSRR は、[セキュリティリスクチーム](/handbook/security/security-assurance/security-risk/) による [STORM プロセス](/handbook/security/security-assurance/security-risk/storm-program/) と [統合セキュリティリスク管理 (USRM)](/handbook/security/security-observations-risk-management/) 方法論を基に駆動され、それらに従っています。
+プロダクトセキュリティリスクレジスター (PSRR) は、GitLab の製品におけるシステミックなセキュリティリスクを特定、評価、優先順位付け、緩和、監視するための一元化されたフレームワークです。PSRR は、[STORM プロセス](/handbook/security/security-assurance/security-risk/storm-program/) と [統合セキュリティリスク管理 (USRM)](/handbook/security/security-observations-risk-management/) 方法論に基づき、[セキュリティリスクチーム](/handbook/security/security-assurance/security-risk/) によって推進され、それらに従っています。
 
 ## 目的
 
@@ -255,7 +255,7 @@ PSRR は、リスク分類、スコアリング、ワークフロー追跡、ヘ
 
 ## トリアージボット自動化
 
-PSRR は、推奨される [USRM ポリシー](/handbook/security/security-observations-risk-management/#required-triage-bot-policies) を使用して [GitLab Triage Bot](https://gitlab.com/gitlab-org/ruby/gems/gitlab-triage) を採用しています:
+PSRR は、[GitLab Triage Bot](https://gitlab.com/gitlab-org/ruby/gems/gitlab-triage) を採用し、推奨される [USRM ポリシー](/handbook/security/security-observations-risk-management/#required-usrm-finding-policies) を使用します:
 
 - **PSRR ラベルを強制** - psrr-risk-rating、psrr-scope、または health-* ラベルが欠落している Issue にフラグを立てる
 - **ヘルス指標を検証** - ヘルスラベルが実際のリスクステータスと一致することを保証（例: オーナーがいないが緑ステータス）。
