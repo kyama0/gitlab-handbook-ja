@@ -2,21 +2,21 @@
 title: 公共部門ナレッジベース
 description: GitLab 公共部門ナレッジベース
 upstream_path: /handbook/support/public-sector-knowledge/knowledgearticles/
-upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
+translated_at: "2026-07-24T06:08:04+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-25T05:08:27-05:00"
+lastmod: "2026-07-23T06:44:13-05:00"
 ---
 
 ナレッジベースは、顧客の問題に対するソリューションを集めた検索可能なリポジトリであり、ユーザーがサポートに連絡することなく素早く回答を見つけられるようにすることを目的としています。
+
+![ナレッジ管理](/images/support/assets/usg_kb.jpg)
 
 **ナレッジベースの記事はこちらからご覧いただけます**
 
 - [米国公共部門サポート ナレッジベース](https://federal-support.gitlab.com/hc/en-us/sections/29015014994068-Knowledge-Base)
 - [グローバルサポート ナレッジベース](https://support.gitlab.com/hc/en-us/sections/15215649512604-Knowledge-Base)
-
-![Knowledge Management](/images/support/assets/usg_kb.jpg)
 
  **メリット**:
 

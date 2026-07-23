@@ -1,16 +1,16 @@
 ---
 title: "GitLab における戦略的リサーチ"
 upstream_path: /handbook/upstream-studios/experience-research/strategic-research-at-gitlab/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:44-03:00"
-translated_at: "2026-07-17T08:00:00+09:00"
+upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
+lastmod: "2026-07-23T12:35:46-03:00"
+translated_at: "2026-07-24T06:08:04+09:00"
 translator: codex
 stale: false
 ---
 
 ### 戦略的リサーチとは {#what-is-strategic-research}
 
-戦略的リサーチは、長期的なプロダクトの方向性とロードマップに情報を与える、ユーザーに関する[将来志向の](/handbook/product/ux/product-design/ux-roadmaps/#timeframe)質問に答えることに焦点を当てます。この種のリサーチは、より大きなトピック領域を理解するために、つながりのある 1 つ以上のプロジェクトで構成されることがあります。通常、トピックは複数のステージグループおよび / またはステージをカバーするほど広範です。そのため、戦略的リサーチは、プロダクトチームと会社全体に[大きなインパクト](https://uxdesign.cc/how-to-be-a-more-strategic-55915d8e9ef7)を与えることができます。
+戦略的リサーチは、長期的なプロダクトの方向性とロードマップに情報を与える、ユーザーに関する[将来志向の](/handbook/upstream-studios/product-design/ux-themes/#timeframe)質問に答えることに焦点を当てます。この種のリサーチは、より大きなトピック領域を理解するために、つながりのある 1 つ以上のプロジェクトで構成されることがあります。通常、トピックは複数のステージグループおよび / またはステージをカバーするほど広範です。そのため、戦略的リサーチは、プロダクトチームと会社全体に[大きなインパクト](https://uxdesign.cc/how-to-be-a-more-strategic-55915d8e9ef7)を与えることができます。
 
 {{< youtube "pYJEiC9Cs-A" >}}
 
@@ -27,7 +27,7 @@ stale: false
 
 - チームおよび / または組織の戦略に直接情報を与えるために実施する
 - 単一のステージ領域または機能に限定されない、より広範なリサーチ質問に答えることを目指す
-- [Solution Validation](/handbook/upstream-studios/experience-research/solution-validation-and-methods/)よりも、[Problem Validation](/handbook/upstream-studios/experience-research/problem-validation-and-methods/)により密接に結び付く
+- [Problem Validation](/handbook/upstream-studios/experience-research/problem-validation-and-methods/)に、[Solution Validation](/handbook/upstream-studios/experience-research/solution-validation-and-methods/)よりも密接に結び付く
 - 月次リリースサイクルから独立している
 - 長期的なプロダクトロードマップを最適に支援するため、6 ヶ月から 3 年先に焦点を当てる
 

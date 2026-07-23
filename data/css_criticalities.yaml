@@ -768,6 +768,18 @@
     href: 'https://gitlab.com/gitlab-support-readiness/zendesk-global/help-center-user-segments'
   - name: 'Project'
     href: 'https://gitlab.com/gitlab-support-readiness/zendesk-us-government/help-center-user-segments'
+- name: 'Zendesk Copilot'
+  criticality: 'Business Operational'
+  data_classification: 'Orange'
+  links:
+  - name: 'Handbook'
+    href: '/handbook/eta/css/zendesk/copilot/'
+- name: 'Zendesk Copilot > Topics'
+  criticality: 'Business Operational'
+  data_classification: 'Green'
+  links:
+  - name: 'Handbook'
+    href: '/handbook/eta/css/zendesk/copilot/topics/'
 - name: 'Calendly > Events to gCal Events'
   criticality: 'Administrative'
   data_classification: 'Yellow'

@@ -2,11 +2,11 @@
 title: "GitLab Duo Agent Platform - ハンズオンラボ: Foundational Flow を使用する"
 description: "このハンズオンガイドでは、GitLab で Foundational Flow を使用する基本を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab1/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
+translated_at: "2026-07-23T21:51:15Z"
 translator: claude
 stale: false
-lastmod: "2026-05-01T11:26:38-04:00"
+lastmod: "2026-07-23T16:30:17+01:00"
 ---
 
 > 完了までの推定時間: 20 分
@@ -93,6 +93,8 @@ Swag Shop Flows プロジェクトは GitLab Pages を使って Web アプリケ
 
 1. **Visit site** をクリックしてブラウザでライブ Swag Shop を開きます。
 
+   *注:* ネットワークのアクセス規則やファイアウォールによっては、レビュー環境のデプロイに署名済み SSL 証明書がないため、このリンクをクリックするとエラーが発生する場合があります。その場合でも、この後の手順には影響しないため、ラボの残りをそのまま続けてください。表示を確認したい場合は、Instructor にそのデプロイを見せてもらってください。
+
    >**注:** ホームページにはまだ featured 製品はありません。これがあなたのベースラインです。後ほどラボでエージェントの変更をマージした後、ここに戻ってリフレッシュし、featured バッジとボーダーが表示されることを確認します。
 
 1. このタブを開いたままにしておきます。
@@ -152,7 +154,7 @@ Swag Shop Flows プロジェクトは GitLab Pages を使って Web アプリケ
 
 Issue が作成された状態で、Issue ビューから直接 foundational flow を呼び出すことができます。GitLab Duo は Issue の説明を読み取り、コードベースを分析し、適切なコード変更を含むマージリクエストを生成します。手動のブランチ作成やコーディングは必要ありません。
 
-1. **Add Featured Products Styling to Homepage** Issue を開きます。
+1. **Add Featured Products Styling to Homepage** Issue を開きます。これは、このラボで先ほど作成した Issue です。
 
 1. **Generate MR With Duo** ボタンをクリックします。このプロセスには数分かかります。
 
