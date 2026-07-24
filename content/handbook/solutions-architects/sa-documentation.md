@@ -2,11 +2,11 @@
 title: ソリューションアーキテクト GitLab Docs セクション
 description: "GitLab ソリューションドキュメンテーションセクションの目的と貢献プロセス。"
 upstream_path: /handbook/solutions-architects/sa-documentation/
-upstream_sha: cf317047d2c9678524c0db59ab7ed8c050713245
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
+translated_at: "2026-07-25T06:07:57+09:00"
 translator: claude
 stale: false
-lastmod: "2025-03-14T03:39:50+01:00"
+lastmod: "2026-07-24T14:14:48+00:00"
 ---
 
 ## 目的
@@ -30,7 +30,7 @@ lastmod: "2025-03-14T03:39:50+01:00"
 - GitLab と統合するパートナー製品の機能に焦点を当てることができる
 - GitLab の多くの部分の機能を、また非 GitLab テクノロジーと組み合わせて活用するソリューションに焦点を当てることができる
 
-ソリューション領域は SA チームの完全なスチュワードシップ下にあり、Tech Writing によって積極的にレビューされません。ソリューションドキュメンテーションセクションは、GitLab のテックライティングが設定する卓越性のバーを満たすよう努めます。すべての貢献者は[GitLab 内部テックライティングコース](https://university.gitlab.com/courses/gitlab-technical-writing-fundamentals)を受講することが推奨されます。
+ソリューション領域は SA チームの完全なスチュワードシップ下にあり、Tech Writing によって積極的にレビューされません。ソリューションドキュメンテーションセクションは、GitLab のテックライティングが設定する卓越性のバーを満たすよう努めます。
 
 ## コンテンツのスコープ
 

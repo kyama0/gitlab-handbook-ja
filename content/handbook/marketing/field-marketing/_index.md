@@ -2,9 +2,9 @@
 title: "Regional Marketing"
 description: "GitLab における Regional Marketing の役割は、対面およびバーチャルのインタラクションを通じて、地域レベルでのマーケティングメッセージとパイプライン構築を支援するために、セールスと密接に連携することです。"
 upstream_path: "/handbook/marketing/field-marketing/"
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-lastmod: "2026-07-20T19:07:45+00:00"
-translated_at: "2026-07-21T06:59:28+09:00"
+upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
+lastmod: "2026-07-24T15:57:51+00:00"
+translated_at: "2026-07-25T06:27:01+09:00"
 translator: codex
 stale: false
 ---
@@ -590,12 +590,11 @@ Brand Design サポートの詳細については、[Brand Design ハンドブ�
 
 #### ステッカー
 
-1. [Stickermule アカウント](https://www.stickermule.com/)にログインします（1Password では Regional Marketing Stickermule Account として利用可能）。
+1. [Stickermule アカウント](https://www.stickermule.com/)にログインします（1Password では Regional Marketing Stickermule account として利用可能）。
 1. ステッカーと数量を選択し、配送先住所を入力します。
-1. 支払いには Stickermule 仮想カードを使用します（Regional Director または RMS から毎年チームに提供されます）。
-1. 適切な Allocadia ライン項目（Regional Director または RMS に確認）の予測に、正しい月で合計コストを追加します。既存の金額が記載されている場合は、その既存金額に自分の金額を加算してください。
-1. Stickermule の支払い領収書をダウンロードし、地域の DRI（AMER - Amy Moy、EMEA - Helena Dixon、APJ - Louise Choi）に送信します。
-1. 地域 DRI が領収書を Zip にアップロードします。
+1. 支払いには地域の Stickermule 仮想カードを使用します（地域 DRI が毎年チームに提供します: AMER - Michelle Ortiz、EMEA - Helena Dixon、APJ - Louise Choi）。Stickermule の費用は毎年地域チームの予算でカバーされ、イベントごとに個別の Allocadia ID は不要です。
+1. Stickermule の支払い領収書をダウンロードし、地域の DRI（上記）に送信します。
+1. 地域 DRI は、領収書を Zip にアップロードし、包括 PO の Allocadia ID を提供します。また、適切な Allocadia ライン項目の予測に正しい月で合計コストを追加します。既存の金額が記載されている場合は、既存の金額に自分の金額を加え、新しい合計を提示してください。
 
 イベントですべてのステッカーを使い切らなかった場合は、今後のイベントのためにステッカーを手元に保管してください（Boundless に返送**しない**でください）。
 

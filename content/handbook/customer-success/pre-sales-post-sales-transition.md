@@ -3,17 +3,14 @@ title: プリセールスからポストセールスへのアカウント引き�
 description: >-
   顧客がプリセールスエンゲージメントからポストセールスへ円滑に移行し、成功を収めるための方法。
 upstream_path: /handbook/customer-success/pre-sales-post-sales-transition/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
+translated_at: "2026-07-25T06:36:16+09:00"
 translator: claude
 stale: false
-lastmod: "2025-08-11T16:04:45+00:00"
+lastmod: "2026-07-24T14:14:48+00:00"
 ---
 
 プリセールスチームのメンバーとして、GitLab の商談を成功裏にクローズした後は、CSM のために道を整えることが重要です。CSM の紹介は、カスタマーライフサイクルにおける重要なステップです。効果的な CSM の紹介は、顧客の製品に対する期待感を高め、オンボーディング・実装・採用を通じて顧客を支援する CSM の信頼性を向上させます。
-
-<!-- NOTE: This course probably needs to be checked to ensure it's not conflicting with the new guidelines -->
-[カスタマーサクセスマネージャーの紹介](https://university.gitlab.com/courses/introducing-the-technical-account-manager)に関するこちらのコースをご確認ください。
 
 ## CSA/M/E のエンゲージ
 

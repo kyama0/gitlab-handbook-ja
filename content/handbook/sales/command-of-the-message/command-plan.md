@@ -2,16 +2,16 @@
 title: "Command Plan"
 description: "Command Plan は、GitLab が顧客価値駆動型のセールス方法論と戦略的商談管理を商談管理プロセスに運用化した方法です"
 upstream_path: /handbook/sales/command-of-the-message/command-plan/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
+translated_at: "2026-07-25T06:27:01+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-07-24T14:14:48+00:00"
 ---
 
 ## 概要
 
-Command Plan は、GitLab が [Command of the Message](/handbook/sales/command-of-the-message/) (*顧客価値駆動型のセールス方法論*) と [MEDDPPICC](/handbook/sales/meddppicc/) (*エンタープライズ組織向けの戦略的商談管理と複雑なセールスプロセスのオーケストレーションに使用される実証済みの方法論*) を商談管理プロセスに運用化した方法です。ENT 向けの [Effective Command Plans to Help You Win More Deals](https://university.gitlab.com/access/saml/login/internal-team-members?returnTo=https://university.gitlab.com/learn/course/sal-effective-command-plans-to-help-you-win-more-deals) e-learning コース、または Commercial 向けの [Strategic Opportunity Management](https://university.gitlab.com/learn/course/strategic-opportunity-management-the-process/main/strategic-opportunity-management-the-process?client=internal-team-members&page=6) にアクセスしてください。
+Command Plan は、GitLab が [Command of the Message](/handbook/sales/command-of-the-message/) (*顧客価値駆動型のセールス方法論*) と [MEDDPPICC](/handbook/sales/meddppicc/) (*エンタープライズ組織向けの戦略的商談管理と複雑なセールスプロセスのオーケストレーションに使用される実証済みの方法論*) を商談管理プロセスに運用化した方法です。
 
 ## Command Plan 要件
 

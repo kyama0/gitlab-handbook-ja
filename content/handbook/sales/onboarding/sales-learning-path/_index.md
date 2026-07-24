@@ -2,11 +2,11 @@
 title: "セールス & カスタマーサクセス Quick Start 学習パス"
 description: "GitLab のセールス & カスタマーサクセスオンボーディングのコアカリキュラム"
 upstream_path: /handbook/sales/onboarding/sales-learning-path/
-upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
-translated_at: "2026-06-01T22:16:39Z"
+upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
+translated_at: "2026-07-25T06:27:01+09:00"
 translator: claude
 stale: false
-lastmod: "2026-06-01T12:55:15+02:00"
+lastmod: "2026-07-24T14:14:48+00:00"
 ---
 
 ## セールス & カスタマーサクセス学習パス - コアカリキュラム
@@ -222,8 +222,6 @@ lastmod: "2026-06-01T12:55:15+02:00"
   - 見込み顧客やクライアントに良く見える素晴らしいプロフィールを作成するための [スライドデック](https://drive.google.com/open?id=1UCRF6PC6al8XxT8E_4rDKkQjkW6WGPA6gybWeuRIg7A&authuser=0) をチェックしてください！
 - **Salesforce - 注文の予約 (Material - ハンドブック - 10 分)**
   - Salesforce で Account、Contact、Opportunity、[Quote](/handbook/sales/field-operations/sales-operations/deal-desk/#zuora-quote-configuration-guide---standard-quotes) を [作成する方法を学ぶ](/handbook/sales/field-operations/order-processing/)。
-- **リードスコアリング - Salesforce で見込み顧客をフィルタリング (FOR SALES ONLY - Material - Level Up ビデオコース - 20 分)**
-  - [リードスコアリング - 仕組みは？](https://university.gitlab.com/access/saml/login/internal-team-members?returnTo=https://university.gitlab.com/learn/course/lead-scoring-training) リードスコアリングの基本と、リードスコア分類の使用方法を学びます
 - **Reference Edge (Material - ビデオ - 10 分)**
   - Reference Edge ソフトウェアは、担当者が現在の機会に最適な利用可能なリファレンスを簡単に見られるように支援します。この新しいツールに関する [ビデオ](/handbook/sales/training/#functional-and-technical-skills--processes) と [PowerPoint](https://docs.google.com/presentation/d/18odHX0PTzifRJaeAr-yxa9jdg1_nw4RYDiBqAkYFAyM/edit?usp=sharing) をチェックしてください。
 
@@ -239,8 +237,6 @@ lastmod: "2026-06-01T12:55:15+02:00"
 - **GitLab Legal チーム (Material - ハンドブック - 10 分)**
   - Legal/Contract のサポートのために契約リクエストを送信することに慣れてください。[プレゼンテーション](https://docs.google.com/presentation/d/1lesWNvPAFd1B3RuCgKsqQlE85ZEwLuE01QpVAKPhQKw/edit#slide=id.g5d6196cc9d_2_0)、[ビデオ](https://www.youtube.com/watch?v=CIWdsqRX7E0&amp=&feature=youtu.be)、[ハンドブックページ](/handbook/sales/field-operations/order-processing/#process-for-agreement-terms-negotiations-when-applicable-and-contacting-legal)
   - #legal Slack チャットチャンネルで [Legal Team](/handbook/legal/) に連絡できます。legal Slack チャットチャンネルは、日常的な法的質問のために予約されています。何らかの成果物を必要とするリクエストをする場合、legal Slack チャットチャンネルを使用しないでください。Slack は即時的、非公式なコミュニケーションのために予約されています。また、会社全体で見ることを意図していない機密情報を Slack で共有しないでください、また法的アドバイスを求めるためにそれを使用しないでください。legal@gitlab.com で legal チームにメールを送信できます。
-- **GitLab チームメンバーへのサポート (Material - ハンドブック - 10 分)**
-  - [GitLab Support](/handbook/support/internal-support/#what-does-the-support-team-do) は、GitLab 製品の Self-managed および GitLab.com 顧客に技術サポートを提供します。私たちは内部 IT サポートではないので、おそらく MacBook、1Password、または同様の問題でお手伝いすることはできません。
 - **GitLab Alliances (Material - ハンドブック - 10 分)**
   - [ビデオ](https://www.youtube.com/watch?v=Mi3dtKxypkA&feature=youtu.be) を見て、[ハンドブック](/handbook/alliances/) ページと [スライド](https://docs.google.com/presentation/d/1iSW8-h6nVaqIdHm5jJZqRrHMB-GCiOe-9ODFo0oke4E/edit?usp=sharing) をチェックして、私たちが他の会社と協力して、すべてのチームが行っている素晴らしい仕事を外の世界とつなげることで、GitLab の軌道を加速させる方法を理解してください。
 - **GitLab 利用規約 (Material - ハンドブック - 10 分)**
@@ -263,9 +259,6 @@ lastmod: "2026-06-01T12:55:15+02:00"
     - 顧客のためにチケットをエスカレートする必要がある場合に、それを取り巻く期待値を理解するためにこの [Slack ワークフロー](/handbook/support/internal-support/#i-want-to-escalate-a-ticket) をチェックしてください。
       - サポート体験を評価しようとする見込み顧客に対して従うべき [Trials and Prospect Support](/handbook/support/internal-support/#trials-and-prospect-support) ワークフローを読んでください。
     - サポートの [internal-requests](https://gitlab.com/gitlab-com/support/internal-requests) プロジェクトに留意してください — 上記のページにリストされている一部のワークフローについては、これに Issue を提出することになります。
-- **Zendesk ワークフローのレビュー (Material - ハンドブック - 15 分)**
-  - Zendesk は GitLab Support Team が顧客のチケットを処理するために使用するツールです。関連するワークフローに慣れてください。
-  - [ハンドブック](/handbook/support/workflows/#zendesk) のこのセクションのワークフローをレビューしてください。
 - **Zendesk へのサインアップ (Assignment - 5 分 - 10 ポイント - 事前作業)**
   - すべての GitLab スタッフは、Zendesk で顧客チケットを表示し、サポートチームのためのメモを残せるように、'Light Agent' アカウントをリクエストできます。
     - これを行うには、[ハンドブック](/handbook/support/internal-support/#requesting-a-zendesk-light-agent-account) で概説されているプロセスに従ってください。アカウントが作成されたら、Okta で割り当てられるまで 24 時間待つ必要があります。Zendesk が割り当てられたら、https://gitlab.zendesk.com/agent で Zendesk にログインできるはずです。
@@ -287,8 +280,6 @@ lastmod: "2026-06-01T12:55:15+02:00"
   - 小グループで作業して、防御可能な差別化要素に関する [添付課題](https://docs.google.com/document/d/1V2yMIaHvp_s1RzSlsAR2_AsExSloyLKbVuSlqVkbufg/edit?usp=sharing) を記入してください。
 - **GitLab を Pro のように検索 (Assignment - 10 分 - 10 ポイント - クラス内)**
   - GitLab では、ハンドブック、ウェブサイト、GitLab ドキュメントで私たちが行うことを文書化するのが盛んです。これは特定のコンテンツを見つけるのを難しくする可能性があります。Google はすでに私たちのすべての公開向けページをインデックスしており、Google が提供する検索修飾子があり、それが役立ちます。プロのように [検索エンジンをセットアップする方法](/handbook/tools-and-tips/searching/) に関するハンドブックページをご覧ください！
-- **ロールプレイノート (Assignment - 10 分 - 10 ポイント - クラス内)**
-  - [ノートテンプレート](https://docs.google.com/document/d/1bzuO-ngACn4Z1S55Z7EtNOb2HYCZbcBZZRYIVpkeMtw/edit?usp=sharing) を使って、観察したロールプレイの 1 つからのノートを提出してください。GitLab でのノートの取り方に関する [ハンドブックページ](/handbook/sales/#sales-note-taking) もチェックしてください。
 
 </details>
 
@@ -304,7 +295,7 @@ lastmod: "2026-06-01T12:55:15+02:00"
 ## カスタマーサクセス Quick Start - 役割ベースのカリキュラム
 
 <details>
-<summary markdown="span">テクニカルディープダイブ (SA、CSM、PSE のみ)</summary>
+<summary markdown="span">テクニカルディープダイブ (SA、CSM、PSE のみ</summary>
 
 ### 12. テクニカルディープダイブ (SA、CSM、PSE のみ)
 

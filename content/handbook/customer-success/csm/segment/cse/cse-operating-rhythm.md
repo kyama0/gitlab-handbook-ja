@@ -1,11 +1,11 @@
 ---
 title: "CSE オペレーティングリズム"
 upstream_path: /handbook/customer-success/csm/segment/cse/cse-operating-rhythm/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T20:55:48+09:00"
+upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
+translated_at: "2026-07-25T06:36:16+09:00"
 translator: claude
 stale: false
-lastmod: "2026-06-27T20:06:18+00:00"
+lastmod: "2026-07-24T14:14:48+00:00"
 ---
 
 CSM/CSE 関連のハンドブックページについては、[CSM ハンドブックホームページ](/handbook/customer-success/csm/)をご覧ください。
@@ -95,9 +95,9 @@ CSE チームはコンテンツチームと連携してウェビナーのコン�
 
 Success On-Demand（CSE）の[対象](https://gitlab.com/gitlab-com/customer-success/csm/-/wikis/CSM-Segments)となる顧客を担当するアカウントオーナー（AE、SAE、Renewals Manager）は、顧客ライフサイクルにおける通常のオペレーティングリズム（Gainsight からのプログラムによる通話招待、CSE による Outreach での手動アウトリーチ、オフィスアワーおよびウェビナー）以外に、CSE エンゲージメントが有益であると判断することがあります。このような場合は、Salesforce でアドホックエンゲージメントリクエストを提出するのが最善です。
 
-新しいヘルプリクエスト（CSE ケース）を開くには、SFDC の顧客アカウントに移動し、ケースに関連付ける _Opportunity_ を選択します。Opportunity ページで _**Request Help**_ ボタンをクリックします。次のページでオプションを選択するよう求められます。CS Help を選択し、その後 _CSE Help（エスカレーションではない）_ を選択します。本当にエスカレーションである場合のみ _Escalations（CSM/CSE アカウント）_ を選択してください（エスカレーションに関する詳細は [Success On-Demand（CSE）エスカレーション](#success-on-demand-CSE-escalations)をご確認ください）。
+新しいヘルプリクエスト（CSE ケース）を開くには、SFDC の顧客アカウントに移動し、ケースに関連付ける _Opportunity_ を選択します。Opportunity ページで _**Request Help**_ ボタンをクリックします。次のページでオプションを選択するよう求められます。CS Help を選択し、その後 _CSE Help（エスカレーションではない）_ を選択します。本当にエスカレーションである場合のみ _Escalations（CSM/CSE アカウント_ を選択してください（エスカレーションに関する詳細は [Success On-Demand（CSE）エスカレーション]#success-on-demand-CSE-escalations]をご確認ください）。
 
-次のステップでケースに関する情報を提供します。_On-Demand Catalog Offerings_ ドロップダウンで、顧客のニーズに最も合致するサービスを選択します。[以下](#cse-catalog-offerings)に各オファリングの詳細説明があります。次に、CSE が対話する _Contact_ を追加します。
+次のステップでケースに関する情報を提供します。_On-Demand Catalog Offerings_ ドロップダウンで、顧客のニーズに最も合致するサービスを選択します。[以下](# cse-catalog-offerings)に各オファリングの詳細説明があります。次に、CSE が対話する _Contact_ を追加します。
 
 その他の必須情報として、このエンゲージメントに期待される内容の詳細説明が必要です。_Challenges/Pain Points_ フィールドに関連するすべての情報を追加してください。CSE が顧客の状況を明確に理解することは、ミーティングに適切に準備するために非常に重要です。
 
@@ -243,6 +243,6 @@ QBR: [テンプレート](https://docs.google.com/presentation/d/1YlEpP81DlZd5rS
 **1:MANY**: [Adoption Labs マスターデッキ](https://drive.google.com/drive/u/1/folders/1h-I2J_J4MlgBmjfwxpdGiyVM0vIVW9vY) / [ウェビナーマスター録画](https://drive.google.com/drive/u/1/folders/1x0_7J30cTpfbRXjrXgG_2XOIARLusNt3) / [ウェビナー YouTube](https://www.youtube.com/playlist?list=PL05JrBw4t0Kpczt4pRtyF147Uvn2bGGvq) / [Scale ウェビナーダッシュボード](https://gitlab.gainsightcloud.com/v1/ui/dashboard#/7b7c1229-e510-490f-9dbe-5c082b4e1c30)
 **COACH**: [CI プロダクトコーチプレイブック](https://docs.google.com/document/d/1qUu2JGe9c_KGMaC67z1R5li_5IVFKdyuz2xdFnic97U/edit) / [CI コーチレポート](https://docs.google.com/document/d/1LUtRu5EiPES9g9EORrk6poZ6t6Grj1Wqd19CbYepHGM/edit?usp=sharing) / [セキュリティコーチプレイブック](https://docs.google.com/document/d/1e1-Ib6lDR61QigylGLmAEWMePorauCWdg2Kb3v4jYLM) / [パイプラインパーサー](https://gitlab.com/ci-product-coach-pipeline-parser/pipeline-parser-2-0) / [セキュリティコーチの一般的なトピックと推奨事項](https://docs.google.com/document/d/1li025fruN2shzQr5tVE5Ss0wVnXcIzOMGe9V6aqeuJ4/edit#heading=h.ndg2qmc91wtx)
 **DEMO**: [デモクラウド](https://gitlabdemo.cloud/login) / [共有デモシステムドキュメント](/handbook/customer-success/demo-systems/#access-shared-omnibus-instances) / [サンドボックスクラウド](https://gitlabsandbox.cloud/login) / [CS 共有デモスペース](https://gitlab.com/gitlab-learn-labs/webinars)
-**TRAINING**: [DevSecOps ブートキャンプ Nana](https://techworld-with-nana.teachable.com/p/devsecops-bootcamp) / [新 CSE ラーニングパス](https://university.gitlab.com/learn/learning-path/scale-customer-success-engineer-cse-onboarding)
+**TRAINING**: [DevSecOps ブートキャンプ Nana](https://techworld-with-nana.teachable.com/p/devsecops-bootcamp)
 **便利なアプリ**: [Rectangle](https://rectangleapp.com/) / [Amphetamine](https://apps.apple.com/us/app/amphetamine/id937984704?mt=12)
 **CSE ランチ＆ラーン録画**: [録画](https://drive.google.com/drive/folders/1lXYzA4QSFEtR1zr0n7Nby7OYMrUYoVw4)

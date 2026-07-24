@@ -1,11 +1,11 @@
 ---
 title: バリューストリームディスカバリ
 upstream_path: /handbook/solutions-architects/sa-practices/value-stream-discovery/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T11:04:43+09:00"
+upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
+translated_at: "2026-07-25T06:07:57+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-08T14:46:05-04:00"
+lastmod: "2026-07-24T14:14:48+00:00"
 ---
 
 GitLab を利用する多くの見込み顧客や顧客にとって、ソフトウェアデリバリのパフォーマンス改善は重要なビジネスアウトカムとなっています。残念ながら、ソフトウェアデリバリプロセスに内在し増大する複雑性のため、組織のソフトウェアデリバリのバリューストリームは、しばしば数十、場合によっては数百の手作業による設定の接点や受け渡しで構成されています。一般的に、現状のプロセスに対する可視性と理解が不足しており、ソフトウェアデリバリの改善を特定し測定することが困難になっています。現状のソフトウェア開発バリューストリームを理解せずに、組織はソフトウェアデリバリ能力を意味のある形で改善しない領域に時間、労力、資金を投じるリスクを負います。
@@ -320,8 +320,6 @@ _バリューストリームワークショップは高度なディスカバリ�
 #### バリューストリームワークショップ概要
 
 このコースは、GitLab アカウントチームが見込み顧客や顧客に対し、顧客のバリューストリームの軽量なアセスメントを提供することによってどのように支援すべきかについての概要を提供するように設計されています。このコースは、見込み顧客や顧客のバリューストリームアセスメントを実施するために使用されるアプローチ、ツール、成果物を概説します。
-
-* [LevelUp での GitLab バリューストリームワークショップ認定](https://university.gitlab.com/access/saml/login/internal-team-members?returnTo=https://university.gitlab.com/learn/learning-path/value-stream-assessment-accreditation)
 
 #### 過去のイネーブルメント
 
