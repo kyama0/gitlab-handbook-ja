@@ -1,14 +1,14 @@
 ---
 title: GitLab アライアンスハンドブック
 upstream_path: /handbook/alliances/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T08:00:00Z"
+upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
+translated_at: "2026-07-25T06:36:16+09:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-07-24T21:41:56+02:00"
 ---
 
-**GitLab パートナーへの参加に興味のある組織は、[今すぐ申し込む](https://partners.gitlab.com/English/register_email.aspx)からご応募ください。**
+**GitLab パートナーへの参加に興味のある組織は、[今すぐ申し込む](https://partners.gitlab.com/)からご応募ください。**
 
 ## アライアンスミッション
 

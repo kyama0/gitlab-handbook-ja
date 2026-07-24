@@ -2,9 +2,9 @@
 title: "GitLab France S.A.S."
 description: "フランス在住のチームメンバー向けの GitLab France S.A.S. 福利厚生。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/france-sas/
-upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
-lastmod: "2026-06-01T12:29:22+01:00"
-translated_at: "2026-06-01T22:09:08Z"
+upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
+lastmod: "2026-07-24T11:07:16-05:00"
+translated_at: "2026-07-25T06:07:57+09:00"
 translator: claude
 stale: false
 ---
@@ -209,6 +209,44 @@ GitLab France は、法定要件を満たすか上回る包括的な育児休業
 
 </details>
 
+### 追加出生休暇（congé supplémentaire de naissance）
+
+2026 年 7 月 1 日から有効 — 2026 年 1 月 1 日以降に出生または養子縁組されたお子さんに適用されます。法定の出産休暇、父親休暇、または養子休暇を使い切った後、対象のチームメンバーは新しいお子さんの世話を続けるために追加出生休暇を取得できます。
+
+<details markdown="1">
+<summary>対象資格要件</summary>
+
+- 2026 年 1 月 1 日以降に出生または養子縁組されたお子さんについて、法定の出産休暇、父親休暇、または養子休暇を使い切ったすべてのチームメンバー
+- 最低勤続期間の要件はありません
+
+</details>
+
+<details markdown="1">
+<summary>休暇付与</summary>
+
+- 各親は、最大 2 か月の休暇を取得できます
+- これは個人に付与される権利であり、未使用分をもう一方の親に移すことはできません
+- 休暇は 2 か月連続で取得するか、各期間が少なくとも 1 か月の 2 つの期間に分割して取得できます
+- 出生または養子縁組から 9 か月以内に取得する必要があります
+  - 2026 年 1 月 1 日から 2026 年 6 月 30 日までに出生したお子さんの場合、9 か月の期間は 2026 年 7 月 1 日に始まります。したがって、休暇は 2027 年 3 月 31 日までに使用する必要があります
+
+この休暇は、フランスの社会保障制度から日額給付（indemnités journalières）として、逓減率で支給されます:
+
+- 第 1 か月: 基準純給与の 70%
+- 第 2 か月: 基準純給与の 60%
+- 月額給付は月額社会保障上限額（PASS）を上限とし、2026 年は EUR 4,005 です
+
+</details>
+
+<details markdown="1">
+<summary>申請方法</summary>
+
+1. マネージャーに通知し、希望する開始日と期間を指定して、leaves@gitlab.com の Absence Management Team に少なくとも 1 か月前までに通知します。追加出生休暇が父親休暇または養子休暇の直後に続く場合、通知期間は 15 日に短縮されます
+2. 休暇を 2 つの別の期間に分けて取得する場合、予定日とともにリクエストでその旨を伝えます
+3. 該当する社会保障の日額給付（indemnités journalières）を申請します
+
+</details>
+
 ### 家族介護休暇
 
 家族があなたを必要とするとき、GitLab は病気の家族をケアする時間を提供し、困難な時期にそばにいられるようにします。
@@ -226,7 +264,7 @@ GitLab France は、法定要件を満たすか上回る包括的な育児休業
 
 家族介護のために年 3 日
 お子さんが 12 か月未満の場合は 5 日
-原則として無給 (GitLab の病気休暇ポリシーの対象でない限り)
+原則として無給（GitLab の病気休暇ポリシーの対象となる場合を除く）
 
 </details>
 
@@ -250,7 +288,7 @@ GitLab France は、フランスの法定要件に沿った寛大な有給休暇
 
 すべての GitLab France S.A.S. チームメンバー
 フランス労働法に基づく付与
-Workday と Mihi の両方で時間を追跡する必要があります
+Workday で時間を追跡する必要があります
 
 </details>
 
@@ -258,9 +296,9 @@ Workday と Mihi の両方で時間を追跡する必要があります
 <summary>主な特徴</summary>
 
 - フランスの要件に基づく法定休暇日数
-- ワークライフバランスのための追加 RTT 日。チームメンバーは、Mihi と Workday の両方で自分の時間を正確に追跡する責任があります。
-- GitLab の PTO ポリシーを通じた柔軟な休暇
-- チームメンバーは、休暇に関する[法定要件](/handbook/people-group/time-off-and-absence/time-off-types/)をレビューできます
+- ワークライフバランスのための追加 RTT 日。チームメンバーは、Workday で自分の時間を正確に追跡する責任があります。
+- [GitLab の PTO ポリシー](/handbook/people-group/time-off-and-absence/time-off-types/#flexible-paid-time-off-pto)を通じた柔軟な休暇
+- チームメンバーは、休暇に関する[法定要件](https://internal.gitlab.com/handbook/finance/payroll/timekeeping/france/)をレビューできます（社内アクセスのみ）
 - チームメンバーは、該当する休暇のカテゴリーを把握し、業務からの離脱時間のログ記録および休暇残高の使用順序の推奨事項について、[ログ記録要件をレビュー](https://internal.gitlab.com/handbook/finance/payroll/timekeeping/france/#logging-time-away)できます (社内アクセスのみ)
 
 </details>
@@ -268,17 +306,13 @@ Workday と Mihi の両方で時間を追跡する必要があります
 <details markdown="1">
 <summary>休暇申請方法</summary>
 
-- Workday で Slack 経由でリクエストを提出します
-- [Mihi プラットフォーム](https://2.mihi.info/Account/Login?ReturnUrl=%2F)で離脱時間をログ記録します
-- RTT の場合: Mihi で「RTT」を選択し、Workday で「PTO」を選択して「RTT」と記載したコメントを付けます
-- 両方のシステムで正確な追跡を確実に行ってください
+- [休暇ログ記録の手順](https://internal.gitlab.com/handbook/finance/payroll/timekeeping/france/#logging-time-away-and-working-time)に従って、Slack 経由で Workday にリクエストを提出します
 
 </details>
 
 <details markdown="1">
 <summary>重要な詳細</summary>
 
-- Mihi と Workday の両方の入力が必要
 - RTT は通常の PTO とは別に追跡
 
 </details>
@@ -286,8 +320,8 @@ Workday と Mihi の両方で時間を追跡する必要があります
 <details markdown="1">
 <summary>連絡先情報</summary>
 
-- 技術サポート (Mihi): support@mihi.info
 - ポリシーに関する質問: leaves@gitlab.com
+- 給与明細の残高に関する質問: nonuspayroll@gitlab.com
 
 </details>
 
@@ -325,10 +359,9 @@ Workday と Mihi の両方で時間を追跡する必要があります
 <summary>病気休暇の報告方法</summary>
 
 1. Workday の「Out Sick」を通じて 48 時間以内に GitLab に通知します
-2. Mihi プラットフォームに病気休暇を入力します
-3. 医師からのシート No.3 を leaves@gitlab.com に送付します
-4. シート No.1 と No.2 を社会保障機関に提出します
-5. 延長する場合: 更新されたシート No.3 を添えて 48 時間以内に通知します
+2. 医師からのシート No.3 を leaves@gitlab.com に送付します
+3. シート No.1 と No.2 を社会保障機関に提出します
+4. 延長する場合: 更新されたシート No.3 を添えて 48 時間以内に通知します
 
 </details>
 
@@ -355,7 +388,6 @@ Workday と Mihi の両方で時間を追跡する必要があります
 <details markdown="1">
 <summary>要件</summary>
 
-- すべての労働時間を Mihi で追跡する
 - 業務からのすべての離脱時間をログ記録する
 - [詳細な勤怠管理ポリシーをレビューする](https://internal.gitlab.com/handbook/finance/payroll/timekeeping/france/) (社内アクセス)
 
@@ -364,7 +396,6 @@ Workday と Mihi の両方で時間を追跡する必要があります
 <details markdown="1">
 <summary>連絡先情報</summary>
 
-- 技術サポート: support@mihi.info
 - ポリシーに関する質問: leaves@gitlab.com
 
 </details>

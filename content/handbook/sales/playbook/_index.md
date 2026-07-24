@@ -2,11 +2,11 @@
 title: "Enterprise Sales"
 description: "GitLab の Enterprise Sales 部門は、戦略的および大規模な見込み顧客と顧客に対し、GitLab とのジャーニー全体を通じて最大限の価値を提供することに注力しています。"
 upstream_path: /handbook/sales/playbook/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
+translated_at: "2026-07-25T06:17:55+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-28T11:19:46-04:00"
+lastmod: "2026-07-24T14:14:48+00:00"
 ---
 
 ## 概要
@@ -19,7 +19,6 @@ Enterprise Sales 部門は [GitLab Sales](/handbook/sales/#welcome-to-the-sales-
 
 - **[GitLab Sales ハンドブックページ](/handbook/sales/#welcome-to-the-sales-team-homepage):** このページはホームベースとして機能します。ここから、セールスフィールド全体に関連する豊富なリソースを見つけることができます。セールス注文処理情報を探していても、エグゼクティブサポートの取得方法を知りたい場合でも、ここで必要なものが見つかります。
 - **[Field Slack Channels](/handbook/sales/sales-google-groups/#field-slack-channels):** 役割やチームに基づいてこれらの Slack チャネルを表示・参加し、仲間とつながりを保ちましょう。
-- **[GitLab Level Up Learning Platform](https://university.gitlab.com/learn/dashboard):** オンボーディングの最初の週に GitLab Level Up へのアクセス権を受け取ります。この学習ハブには、GitLab のセールス（セールス手法、ツール、セールススキルを含む）に関するすべてのトレーニングと復習コースが含まれています。
 - **[Enterprise Sales Google ドライブ](https://drive.google.com/drive/folders/14obWsdpYmaASD186cXyUIA19mk2Id_db?usp=sharing):** このフォルダと [GitLab Sales ドライブ](https://drive.google.com/drive/folders/0BzQII5CcGHkKSFFJWkx3R1lUdGM?resourcekey=0-A23lzowP5l3KyPLQtvxIgA&usp=sharing) を使って、業務に関連する内部限定リソースを参照・保管します。アカウントの作業ノート文書から、提案書やプレゼンテーションのプランニングツールキットやテンプレートまで、あらゆるものが見つかります。
 - **[Sales Highspot ホームページ](https://gitlab.highspot.com/):** オンボーディングの最初の週に Okta で Highspot へのアクセス権を受け取ります。ここはすべてのセールスコンテンツが保存されている場所です。競合インテリジェンス、ソリューションセリングのガイダンス、提案書のテンプレート、または最新のお客様向けマーケティングアセットを探している場合に活用できます。
 - **[Customer-Ready Shadow プログラム](/handbook/sales/shadow-program/):** 顧客コールのシャドーイングは、さまざまな GitLab の役割が GitLab をどのように代表しているかをハンズオンで学ぶ方法を提供します。仲間から学び、練習し、インタラクティブにフィードバックを得る機会があるとき、私たちは最もよく学ぶことができます。新入社員に歓迎の意を示し、GitLab のセールスカルチャーの一員と感じてもらう素晴らしい方法でもあります。Enterprise Sales のすべてのセラーは、何らかの形でシャドープログラムに参加します。シャドーするか、仲間をホストするかのいずれかです。
@@ -41,7 +40,7 @@ Enterprise Sales 部門は [GitLab Sales](/handbook/sales/#welcome-to-the-sales-
 |[Channel Account Manager (CAM)](https://partners.gitlab.com/English/directory/):| パートナーランドスケープを理解しマッピング: 機会と協業、オンボーディングとリクルートのためのパートナーを提案、システムインテグレーターをプランに組み込む、[Partner Directory](https://partners.gitlab.com/English/directory/) で現在のパートナーを表示 |
 |[Professional services](/handbook/customer-success/professional-services-engineering/working-with/):| あなたのソリューションや顧客のニーズを、このチームが提供するトレーニング、教育、採用、または展開サポートにマッチさせる。または、見込み顧客や顧客にサービスを提案する手助けに招き入れる。|
 | [Regional Marketing](/handbook/marketing/field-marketing/#regional-marketing-manager-support) とアカウントベースマーケティング:| テリトリー、アカウント、パイプライン生成の戦略的計画にこのチームを含める。イベントやウェビナーを開催・ホストする計画を立てる際、関連する第三者イベントに参加する。スケジュールを把握: [GitLab event site](https://about.gitlab.com/events/)、[All marketing activities (internal)](https://docs.google.com/spreadsheets/d/1ni6gKeWhjtrNppMdYvPESsCRjDbfVdYjTNtUtcNBFGg/edit#gid=571560493)。優先アカウントを [Account-based marketing (ABM) サポート](/handbook/marketing/account-based-marketing/) にノミネート。Slack: #abmteam、#emea_marketing (EMEA)、#regional-partner-marketing (Global)|
-| Sales leaders と executives | アカウントの [エグゼクティブスポンサーシップを提供](/handbook/sales/field-operations/gtm-resources/#executive-sponsorship-program)、[ミーティングへの e-group メンバー参加をリクエスト](/handbook/eba/#customer-prospect-and-partner-meetings-with-an-e-group-member)、または [CEO がミーティングに参加することをリクエスト](/handbook/eba/ceo-scheduling/#how-to-request-a-meeting-with-ceo) する必要があるかもしれません |
+| Sales leaders と executives | アカウントのエグゼクティブスポンサーシップを提供、[ミーティングへの e-group メンバー参加をリクエスト](/handbook/eba/#customer-prospect-and-partner-meetings-with-an-e-group-member)、または [CEO がミーティングに参加することをリクエスト](/handbook/eba/ceo-scheduling/#how-to-request-a-meeting-with-ceo) する必要があるかもしれません |
 |[Sales operations と deal desk:](/handbook/sales/field-operations/sales-operations/deal-desk/) |ディールの構造化とクロージングのため、特に非標準見積もりに対しては、Deal Desk と頻繁に作業します。#sales-support は、私たちのプロセスを通じてディールを進めることに関する緊急の質問の go-to チャネルでもあります。 |
 | [GitLab Support](/handbook/support/): | サポートチームは、購入したものに応じてさまざまなレベルでお客様にサービスを提供します。|
 |[Product team](/handbook/product/categories/): | 戦略的なディールでは、お客様が最も気にする機能の利点や成熟度について話してもらうため、Product のエキスパートを連れてくることがしばしば理にかなっています。GitLab でまだ何かが不可能な場合、Product にはそれが利用可能になる時期のプランとロードマップがあることが多いです。 |
@@ -98,7 +97,7 @@ Enterprise Sales のすべての Strategic Account Executive は、自分のパ�
 
 ## セールスイネーブルメントリソース
 
-テンプレート、ガイド、顧客デッキ、その他の編集可能なセールスコンテンツを探している場合は、[Highspot の Pipeline Acceleration Spot の Sales Deck Library](https://gitlab.highspot.com/items/650461a504701b188c124951?lfrm=srp.0) に移動してください。スキルベースのトレーニングを探している場合は、[LevelUp](https://university.gitlab.com/learn/dashboard?_gl=1*1ejz71x*_ga*MTEwMjkzNzM1MS4xNjI1NTI2MTE3*_ga_ENFH3X7M5Y*MTY3NDI1MjgyMS4zOS4xLjE2NzQyNTU4MjYuMC4wLjA.) が行くべき場所です。
+テンプレート、ガイド、顧客デッキ、その他の編集可能なセールスコンテンツを探している場合は、[Highspot の Pipeline Acceleration Spot の Sales Deck Library](https://gitlab.highspot.com/items/650461a504701b188c124951?lfrm=srp.0) に移動してください。
 
 **外部トレーニング機会:** GitLab には、学習を補完するのに役立つ堅牢な [成長と開発の福利厚生](/handbook/total-rewards/benefits/general-and-entity-benefits/#growth-and-development-fund) もあります。技術的な筋肉を伸ばし、顧客フィードバックを聞きたい場合は、[CS ウェビナー](https://university.gitlab.com/pages/gitlab-user-webinars) のオーディエンスに参加することができます。
 
@@ -116,7 +115,6 @@ Enterprise Sales のすべての Strategic Account Executive は、自分のパ�
 - [LucidChart](https://apis.google.com/additnow/l?applicationid=7081045131&__ls=ogb&__lu=https%3A%2F%2Flucid.app%2Fusers%2FgoogleLogin%3Fdomain%3Dgitlab.com) は、アカウントプラン用の図表や組織図を作成するためのものです。
 - [Chorus](/handbook/sales/field-operations/sales-operations/go-to-market/chorus/) は、GitLab セールスコールとデモの録画を表示するために使用されます。
 - 提案やお客様向けに文書やプレゼンテーションを構築するために、ロゴをダウンロードし、イラストとアイコンライブラリにアクセスするには、[GitLab's Design Toolkit](https://design.gitlab.com/brand/overview/) を使用してください。
-- [Gainsight の Product Usage Data & Health Scores](/handbook/customer-success/product-usage-data/using-product-usage-data-in-gainsight/#using-product-usage-data-in-gainsight) は CSM が使用し、Gainsight の関連ダッシュボードを案内することで、ユースケース別の現在の顧客使用データへの洞察を提供できます。すべての AE は Gainsight への読み取りアクセスがあります。Health Score はアカウントレベルでも Salesforce で確認できます。アカウントのレポートを実行するときは、Health Score フィールドを取り込んで、緊急に取る必要があるアクションを理解してください。
 - [CustomersDot Admin](https://customers.gitlab.com/admin/)（[概要動画はこちら](https://youtu.be/G9JuHXqV5LM)）: ほとんどの顧客は、購入を分解し、SaaS 使用量への洞察を提供するアカウントを持っています。VersionDot 使用データに購入をリンクするのにも適しています
 
 ### **プロスペクティングツール**

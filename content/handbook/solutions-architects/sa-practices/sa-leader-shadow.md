@@ -2,11 +2,11 @@
 title: ソリューションアーキテクト ピープルリーダーシャドウプログラム
 description: "ソリューションアーキテクト（SA）がソリューションアーキテクトのピープルリーダーをシャドウできるプログラム。"
 upstream_path: /handbook/solutions-architects/sa-practices/sa-leader-shadow/
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "886c0f074266fdc336cfcc58cd53699da6c71a73"
+translated_at: "2026-07-25T06:07:57+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-07-24T14:14:48+00:00"
 ---
 
 ## 概要
@@ -87,10 +87,8 @@ SA リーダーシップ シャドウプログラムは、SA ピープルリー�
 
 - SA 1:1 ミーティングに参加する
 - 採用マネージャー/パネル面接に参加する
-- [面接トレーニング](https://university.gitlab.com/learn/course/interviewer-training) を完了する
 - [ライドアロング](/handbook/solutions-architects/sa-practices/ride-alongs) を通じてフィードバックの提供を実践する
 - チーム開発と人材保持戦略を学ぶ
-- [TeamOps 認定](https://university.gitlab.com/learn/course/teamops/introduction-to-teamops/introduction?client=internal-team-members) を取得する
 
 #### Rule 2: 組織をビジネスとして運営する
 
@@ -114,8 +112,6 @@ SA リーダーシップ シャドウプログラムは、SA ピープルリー�
 | スキル | 開発アクティビティ |
 |-------|---------|
 | 模範を示す | アカウントの責任を維持し、プロアクティブなお客様エンゲージメントを実演する |
-| チーム開発 | [TeamOps 認定](https://university.gitlab.com/learn/course/teamops/introduction-to-teamops/introduction?client=internal-team-members) を完了し、チームビルディングに参加する |
-| 人材管理 | [面接トレーニング](https://university.gitlab.com/learn/course/interviewer-training) を完了し、可能であれば採用プロセスに参加する |
 | 人材保持 | Retrospective からフィードバックを受け、自分のチームの QBR Retrospective スライドを準備し、そのスライドでのディスカッションをリードし、チームの 1 つの側面を改善するためのイニシアチブを構築する |
 | フィードバックを提供する | お客様コールに参加し、SA にフィードバックを提供する |
 | コミュニケーション | 適切な場合、リーダーシップミーティングに参加し、ノートテイキングに参加する |

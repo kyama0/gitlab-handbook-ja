@@ -2,11 +2,11 @@
 title: Proof of Value (POV)
 description: Proof of Value (POV)
 upstream_path: /handbook/solutions-architects/playbooks/pov/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
+translated_at: "2026-07-25T06:17:55+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-07-24T14:14:48+00:00"
 ---
 
 ## Proof of Value (POV)
@@ -431,8 +431,3 @@ POV には通常ライセンスのアクティベーションが必要です。G
 
 - [NodeJS Juice Shop](https://github.com/juice-shop/juice-shop) リポジトリには .gitlab-ci.yml ファイルが含まれており、SAST と Dependency Scanning を使い始められます。必要に応じてその他を段階的に組み込みます。
 - [OWASP WebGoat.NET](https://gitlab-core.us.gitlabdemo.cloud/tanuki-group/dot-net-webgoat) リポジトリは、パッケージ化されたテンプレートを使い、SAST、ライセンス管理、シークレットスキャンを素早く有効化できます。これは私たちの .NET アプリケーション開発（Framework と Core 両方）におけるポジショニングを検証します。
-
-#### Proof of Value のイネーブルメント
-
-- [PoV Overview Course](https://university.gitlab.com/courses/gitlab-proof-of-value-overview)
-- [Executing an Exceptional PoV Course](https://university.gitlab.com/courses/delivering-an-exceptional-proof-of-value)

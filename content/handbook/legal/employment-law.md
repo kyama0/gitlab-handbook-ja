@@ -1,11 +1,11 @@
 ---
 title: "法務・雇用（GitLab における雇用）: 戦略的パートナーシップ"
 upstream_path: "/handbook/legal/employment-law/"
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-30T00:55:37Z"
+upstream_sha: "886c0f074266fdc336cfcc58cd53699da6c71a73"
+translated_at: "2026-07-25T06:27:01+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-07-24T14:14:48+00:00"
 ---
 
 ![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
@@ -54,6 +54,6 @@ lastmod: "2025-10-14T17:59:32+00:00"
 
 ### 追加のガイドラインを検討する
 
-GitLab の Legal and Corporate Affairs チーム（LACA チームとも呼ばれる）（法務雇用チームを含む）とのコミュニケーションの際には、[特権ガイドライン](/handbook/legal/risk-management-dispute-resolution/#privilege)を考慮することが有益です。なお、通信が特権的である場合、訴訟やその他の紛争での開示から保護される可能性があります。不明な場合は、GitLab University の['Privileged communication（特権的コミュニケーション）'](https://university.gitlab.com/courses/attorney-client-privilege)に関する社内マイクロコースがあります。これは、GitLab の代理として法的アドバイスを求めて LACA チームとコミュニケーションを取るチームメンバーに関連しています。このトレーニングでは、チームメンバーと LACA 間の特定のコミュニケーションに適用される可能性のある法的保護と、保護を確保するための最適なコミュニケーション方法について説明しています。
+GitLab の Legal and Corporate Affairs チーム（LACA チームとも呼ばれる）（法務雇用チームを含む）とのコミュニケーションの際には、[特権ガイドライン](/handbook/legal/risk-management-dispute-resolution/#privilege)を考慮することが有益です。なお、通信が特権的である場合、訴訟やその他の紛争での開示から保護される可能性があります。
 
 また、法的通知、要求、召喚状、法廷書類、またはその他の潜在的な訴訟資料と思われる正式な文書を受け取った場合は、自身で応答せずに、直ちに法務チームに（'legal@gitlab.com' のメールアドレスに）転送してください。文書をいつどのように受け取ったかを説明する簡単なメモを添えてください。これらの資料には厳格な応答期限があることが多く、迅速な共有によって法務チームが適切に審査・対応し、あなたと GitLab の両方を保護することができます。

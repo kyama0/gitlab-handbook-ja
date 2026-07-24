@@ -1,11 +1,11 @@
 ---
 title: "Executive Business Administrators (EBAs)"
 upstream_path: /handbook/eba/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-translated_at: "2026-06-12T13:00:00Z"
+upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
+translated_at: "2026-07-25T06:36:16+09:00"
 translator: claude
 stale: false
-lastmod: 2026-06-10T07:49:32-07:00
+lastmod: 2026-07-24T07:25:48-07:00
 ---
 
 ## はじめに
@@ -87,3 +87,9 @@ GitLab の E-Group メンバーとあなたの顧客、見込み顧客または�
    - メッセージのスレッドで CES に時間と Zoom リンク（該当する場合）を提供し、CES が Greenhouse でスケジュールを設定し確認メールを送信できるようにする
    - Greenhouse にアクセスして面接をスケジュールし、その後、面接がスケジュールされ確認メールを送信する準備ができたことをスレッドで CES チームに通知する。CEO と CRO のスケジューリングは例外であり、CEO と CRO の EBA が処理します。確認メールは EBA から直接送信されます。
 1. CES チームは、24営業時間以内に EBA から返答がない場合、必要に応じてフォローアップを行います
+
+### 会社宛て郵便（Stable Mail）
+
+GitLab は、登録済みのサンフランシスコ事業所住所宛ての国内郵便について、エンタープライズ向け郵便スキャンおよび転送サービスである Stable を利用しています。Stable は UPS Store の私書箱から郵便物を回収し、受信郵便物をデジタル化して、物理郵便物の安全な振り分け、転送、または廃棄を可能にします。
+
+運用の詳細、振り分けルール、ライセンス割り当て、チーム受信者、および料金はすべて、[GitLab Domestic Enterprise Mail Service SOP（社内）](https://docs.google.com/document/d/1-41U8Fhqpjb6bAn6tutWHWZgZsz41tklfs7E1kjSLOo) で管理されています。
