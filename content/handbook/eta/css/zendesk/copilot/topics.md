@@ -2,9 +2,9 @@
 title: 'Zendesk Copilot トピック'
 description: 'Zendesk Copilot トピックに関するドキュメント'
 upstream_path: /handbook/eta/css/zendesk/copilot/topics/
-upstream_sha: "7032d681eb34b7baa363eb97119170b35beb5d76"
-lastmod: "2026-07-23T10:49:35-05:00"
-translated_at: "2026-07-24T06:39:10+09:00"
+upstream_sha: aa050cd4c77778c3f3ebc5d01bf39c92d7da06be
+lastmod: "2026-07-27T13:51:40-05:00"
+translated_at: "2026-07-28T06:14:45+09:00"
 translator: codex
 stale: false
 ---

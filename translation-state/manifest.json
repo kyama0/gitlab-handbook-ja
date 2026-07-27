@@ -4458,11 +4458,11 @@
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab2.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab2.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a4bcc984d77d06ab6df3d45315d0bd4036c2ca7eff623f9922d243806c378e10",
-      "upstream_committed_at": "2026-04-06T16:04:29-04:00"
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:14:45+09:00",
+      "model": "codex",
+      "input_hash": "b11ae6eabd26cea9ec01e572ee8020eeb67eb16e64e6fdd1ac70302339532e9b",
+      "upstream_committed_at": "2026-07-27T10:23:40-04:00"
     },
     "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab3.md": {
       "path": "content/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab3.md",
@@ -14866,11 +14866,11 @@
     },
     "content/handbook/enterprise-data/platform/edw/index.md": {
       "path": "content/handbook/enterprise-data/platform/edw/index.md",
-      "upstream_sha": "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36",
-      "translated_at": "2026-07-22T06:32:52+09:00",
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T07:06:45+09:00",
       "model": "codex",
-      "input_hash": "0a2b6fd21aca34a7f17b90d647c832465e4ac535fe513aa6d1b07954c8170562",
-      "upstream_committed_at": "2026-07-21T12:07:52+01:00"
+      "input_hash": "437038d2a4465c5df52d4529ca1b298aaf68b390f8252b9c5db2d91f13383c6e",
+      "upstream_committed_at": "2026-07-27T08:19:47-06:00"
     },
     "content/handbook/enterprise-data/platform/feature-store/_index.md": {
       "path": "content/handbook/enterprise-data/platform/feature-store/_index.md",
@@ -23506,11 +23506,11 @@
     },
     "content/handbook/security/controlled-document-procedure.md": {
       "path": "content/handbook/security/controlled-document-procedure.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T08:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a9db0d524766f5ffdcfd8d3c35f4efe809b7d189efb75201001ea951bfb224dd",
-      "upstream_committed_at": "2025-11-19T20:38:24+00:00"
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:14:45+09:00",
+      "model": "codex",
+      "input_hash": "332e6ab613f281692abe7ee1fdaaa188dfa475162721e1183c066d53fc065e9c",
+      "upstream_committed_at": "2026-07-26T22:43:19-07:00"
     },
     "content/handbook/security/critical-projects.md": {
       "path": "content/handbook/security/critical-projects.md",
@@ -24394,11 +24394,11 @@
     },
     "content/handbook/security/security-and-technology-policies/audit-logging-policy.md": {
       "path": "content/handbook/security/security-and-technology-policies/audit-logging-policy.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "e6cd4816807e880e2213d5b206c07df855a37555a9caa233b45d4bfc93a1aa3b",
-      "upstream_committed_at": "2026-01-23T12:25:37-06:00"
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:14:45+09:00",
+      "model": "codex",
+      "input_hash": "ce818aa5965ef0630816220cef6b530dd77bc310d70fabd2e373b94c97c96b07",
+      "upstream_committed_at": "2026-07-26T20:53:54-07:00"
     },
     "content/handbook/security/security-and-technology-policies/change-management-policy.md": {
       "path": "content/handbook/security/security-and-technology-policies/change-management-policy.md",
@@ -35442,19 +35442,91 @@
     },
     "content/handbook/eta/css/zendesk/copilot/_index.md": {
       "path": "content/handbook/eta/css/zendesk/copilot/_index.md",
-      "upstream_sha": "7032d681eb34b7baa363eb97119170b35beb5d76",
-      "translated_at": "2026-07-24T06:29:02+09:00",
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:14:45+09:00",
       "model": "codex",
-      "input_hash": "1e68120ee7622df1f8f6e700934821f98d4745f7f083f9823b0616bf86ee3bdc",
-      "upstream_committed_at": "2026-07-23T10:49:35-05:00"
+      "input_hash": "00e1e7c1c0305579f817d13c67c8e970b14e084f5e13f1485537c039b3a6af04",
+      "upstream_committed_at": "2026-07-27T13:51:40-05:00"
     },
     "content/handbook/eta/css/zendesk/copilot/topics.md": {
       "path": "content/handbook/eta/css/zendesk/copilot/topics.md",
-      "upstream_sha": "7032d681eb34b7baa363eb97119170b35beb5d76",
-      "translated_at": "2026-07-24T06:39:10+09:00",
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:14:45+09:00",
       "model": "codex",
-      "input_hash": "97f282cfd56d188f1665733722346770271764d6f405f883f0690c89daa4de1b",
-      "upstream_committed_at": "2026-07-23T10:49:35-05:00"
+      "input_hash": "16124ed3127497f2b05366a6a7a1501821ef32e5982700dfa47d816e3c440687",
+      "upstream_committed_at": "2026-07-27T13:51:40-05:00"
+    },
+    "content/handbook/eta/css/zendesk/copilot/admin-copilot.md": {
+      "path": "content/handbook/eta/css/zendesk/copilot/admin-copilot.md",
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:31:03+09:00",
+      "model": "codex",
+      "input_hash": "e24deb867bfb7bd0cb8a730eef6ce77466beee743deadc7de84734031abc31fd",
+      "upstream_committed_at": "2026-07-27T13:51:40-05:00"
+    },
+    "content/handbook/eta/css/zendesk/copilot/auto-assist.md": {
+      "path": "content/handbook/eta/css/zendesk/copilot/auto-assist.md",
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:31:03+09:00",
+      "model": "codex",
+      "input_hash": "f39dde6da013e0e98c07aebddf3d95c8ec922fad8eab2aef5c1176adfaddae50",
+      "upstream_committed_at": "2026-07-27T13:51:40-05:00"
+    },
+    "content/handbook/eta/css/zendesk/copilot/entity.md": {
+      "path": "content/handbook/eta/css/zendesk/copilot/entity.md",
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:31:03+09:00",
+      "model": "codex",
+      "input_hash": "2ed36b6d32ef055b9d459a98eb2c360a668296b9e2d4a3b4860d7c57d2051729",
+      "upstream_committed_at": "2026-07-27T13:51:40-05:00"
+    },
+    "content/handbook/eta/css/zendesk/copilot/procedures.md": {
+      "path": "content/handbook/eta/css/zendesk/copilot/procedures.md",
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:31:03+09:00",
+      "model": "codex",
+      "input_hash": "2643d96230a1e66a1ecd5c6399a5ad312c6ed0df06ea515265a4b2bba0a75d7f",
+      "upstream_committed_at": "2026-07-27T13:51:40-05:00"
+    },
+    "content/handbook/eta/css/zendesk/copilot/knowledge.md": {
+      "path": "content/handbook/eta/css/zendesk/copilot/knowledge.md",
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:40:44+09:00",
+      "model": "codex",
+      "input_hash": "f2fb498b56149440b16e9fb4241707c06e165b99d7cf1d2c146b4e42d73dd543",
+      "upstream_committed_at": "2026-07-27T13:51:40-05:00"
+    },
+    "content/handbook/eta/css/zendesk/copilot/recommendations.md": {
+      "path": "content/handbook/eta/css/zendesk/copilot/recommendations.md",
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:40:44+09:00",
+      "model": "codex",
+      "input_hash": "b05bf6092fd53fa6c86ff4abc5a73414555547c929933022c6dcefc9444e4924",
+      "upstream_committed_at": "2026-07-27T13:51:40-05:00"
+    },
+    "content/handbook/eta/css/zendesk/copilot/sentiment.md": {
+      "path": "content/handbook/eta/css/zendesk/copilot/sentiment.md",
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:40:44+09:00",
+      "model": "codex",
+      "input_hash": "2effd1839d03f11ad639c0841f816af1d949822cf605728971025a1aed0a3730",
+      "upstream_committed_at": "2026-07-27T13:51:40-05:00"
+    },
+    "content/handbook/eta/css/zendesk/copilot/suggestions.md": {
+      "path": "content/handbook/eta/css/zendesk/copilot/suggestions.md",
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:40:44+09:00",
+      "model": "codex",
+      "input_hash": "bcb817c988f3042801a1c2a7a7bc9098f2ff1783e42937037894b8b884173912",
+      "upstream_committed_at": "2026-07-27T13:51:40-05:00"
+    },
+    "content/handbook/eta/css/zendesk/copilot/writing.md": {
+      "path": "content/handbook/eta/css/zendesk/copilot/writing.md",
+      "upstream_sha": "aa050cd4c77778c3f3ebc5d01bf39c92d7da06be",
+      "translated_at": "2026-07-28T06:40:44+09:00",
+      "model": "codex",
+      "input_hash": "1cebdd78a2f7474f55351d25fa469012bbefc4ef3df796f636191a9a5e97b351",
+      "upstream_committed_at": "2026-07-27T13:51:40-05:00"
     }
   }
 }

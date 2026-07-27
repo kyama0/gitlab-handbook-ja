@@ -2,11 +2,11 @@
 title: "GitLab Security Essentials - ハンズオンラボ: 脆弱性への対応"
 description: "このハンズオンガイドは、アプリケーションの脆弱性をトリアージして対応する方法を案内します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab2/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: aa050cd4c77778c3f3ebc5d01bf39c92d7da06be
+lastmod: "2026-07-27T10:23:40-04:00"
+translated_at: "2026-07-28T06:14:45+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-06T16:04:29-04:00"
 ---
 
 > 推定所要時間: 15 分
@@ -59,7 +59,7 @@ lastmod: "2026-04-06T16:04:29-04:00"
 
 1. 脆弱性の右上隅で **AI Vulnerability Management** を選択し、**Explain with AI** を選択します。DAP ツールが脆弱性を分析し、その脆弱性がどのように悪用される可能性があるかを説明します。エージェントはまた、その脆弱性を改修する方法も説明します。
 
-1. **AI Vulnerability Management** を選択し、**Explain with AI** を選択します。AI は、脆弱性を含むコードがコードベース内でどのように使われているかを分析し、誤検知かどうかをチェックします。実行には数分かかります。
+1. **AI Vulnerability Management** を選択し、**Check for False Positive** を選択します。AI は、脆弱性を含むコードがコードベース内でどのように使われているかを分析し、誤検知かどうかをチェックします。実行には数分かかります。
 
 1. **AI Vulnerability Management** を選択し、**Resolve with AI** を選択します。これにより、脆弱性を改修するマージリクエストが作成されます。AI が作成を完了すると、そのままマージリクエストに案内されます。
 

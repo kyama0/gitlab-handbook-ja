@@ -3,11 +3,11 @@ title: "管理文書手順"
 description: "GitLab は、期待されることを確立するポリシーや標準と、ポリシーや標準を実行に移す手順を通じて、コントロール活動を展開します。"
 controlled_document: true
 upstream_path: /handbook/security/controlled-document-procedure/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T00:00:00Z"
-translator: claude
+upstream_sha: aa050cd4c77778c3f3ebc5d01bf39c92d7da06be
+lastmod: "2026-07-26T22:43:19-07:00"
+translated_at: "2026-07-28T06:14:45+09:00"
+translator: codex
 stale: false
-lastmod: "2025-11-19T20:38:24+00:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -122,5 +122,5 @@ GitLab の誰もが、管理文書の作成や変更提案のためにマージ�
 ## 参考資料
 
 - [GCF Compliance Controls](/handbook/security/security-assurance/security-compliance/sec-controls/)
-- [Data Classifiation Standard](/handbook/security/policies_and_standards/data-classification-standard/)
-- [Controlled Documents Work Instruction](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance/controlled-documents-program/-/blob/main/runbooks/controlled_document_annual_review_work_instruction.md)
+- [Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/)
+- [Controlled Documents Work Instruction](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance-and-field-security/governance/controlled-documents-program/-/blob/main/runbooks/controlled_document_annual_review_work_instruction.md)

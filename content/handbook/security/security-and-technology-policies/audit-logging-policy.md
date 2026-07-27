@@ -5,11 +5,11 @@ tags:
   - security_policy
   - security_policy_au
 upstream_path: /handbook/security/security-and-technology-policies/audit-logging-policy/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T12:00:00Z"
-translator: claude
+upstream_sha: aa050cd4c77778c3f3ebc5d01bf39c92d7da06be
+lastmod: "2026-07-26T20:53:54-07:00"
+translated_at: "2026-07-28T06:14:45+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-23T12:25:37-06:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -50,6 +50,5 @@ GitLab の継続的監視コントロールに沿って、システムオーナ�
 
 ## 参考
 
-- [本番環境とみなされるもの](https://gitlab.com/gitlab-com/gl-security/security-assurance/sec-compliance/compliance/-/blob/master/production_definition.md)
+- [本番環境とみなされるもの](https://gitlab.com/gitlab-com/gl-security/security-assurance/team-commercial-compliance/compliance/-/blob/master/production_definition.md)
 - [本番アーキテクチャ](/handbook/engineering/infrastructure-platforms/production/architecture/)
-- 構成管理
