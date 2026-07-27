@@ -11,7 +11,7 @@ stale: false
 
 ## 提案とは
 
-Suggestions は、実行する Copilot の提案アクションを中心にまとめられた、さまざまな Zendesk Copilot 機能のグループです:
+提案は、Copilot が実行できる提案アクションを中心にまとめられた、さまざまな Zendesk Copilot 機能のグループです:
 
 - 最初の返信
 - マージするチケット
