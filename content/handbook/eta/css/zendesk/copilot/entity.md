@@ -13,7 +13,7 @@ stale: false
 
 [Zendesk](https://support.zendesk.com/hc/en-us/articles/6711181959194-Classifying-unique-information-in-tickets-with-entities) によると:
 
-> インテリジェントトリアージの一部であるエンティティ分類では、受信チケットおよびメッセージングの会話から、製品名、注文番号、所在地の詳細など、特定の情報を自動的に取得し、対応に活用できる詳細情報でチケットを充実させます。
+> Intelligent triage の一部であるエンティティ分類では、受信チケットおよびメッセージングの会話から、製品名、注文番号、所在地の詳細など、特定の情報を自動的に取得し、対応に活用できる詳細情報でチケットを充実させます。
 
 ## 現在の設定
 

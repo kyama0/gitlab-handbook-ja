@@ -6,7 +6,7 @@ upstream_path: /handbook/security/controlled-document-procedure/
 upstream_sha: aa050cd4c77778c3f3ebc5d01bf39c92d7da06be
 lastmod: "2026-07-26T22:43:19-07:00"
 translated_at: "2026-07-28T06:14:45+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 

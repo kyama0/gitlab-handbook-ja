@@ -4,7 +4,7 @@ upstream_path: /handbook/enterprise-data/platform/edw/
 upstream_sha: aa050cd4c77778c3f3ebc5d01bf39c92d7da06be
 lastmod: "2026-07-27T08:19:47-06:00"
 translated_at: "2026-07-28T07:06:45+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 
@@ -599,7 +599,7 @@ END AS first_day_of_week
 以下の手順は、`Lucidchart の ERD インポート機能` を使用して `ER 図`（論理・物理データモデル）を作成する方法を示します。データベースまたはスクリプトからデータモデルを作成するこのプロセスは、`リバースエンジニアリング` とも呼ばれます。
 
 <details markdown=1>
-<summary><b>ステップ 1:</b> 'Lucidchart app' から空の Lucid ドキュメントを作成します（ユーザーに割り当てられている場合は Okta ダッシュボードから利用できます）。</summary>
+<summary><b>ステップ 1:</b> 'Lucidchart アプリ' から空の Lucid ドキュメントを作成します（ユーザーに割り当てられている場合は Okta ダッシュボードから利用できます）。</summary>
 
 ![Lucidchart の作成](/images/enterprise-data/platform/edw/create-lucid-chart.png)
 </details>
@@ -656,7 +656,7 @@ AND t.TABLE_SCHEMA IN ('COMMON', 'COMMON_PREP')
 </details>
 
 <details markdown=1>
-<summary><b>ステップ 7:</b> Lucidchart app に戻り、アップロードする result.csv ファイルを選択して 'Import' をクリックします。</summary>
+<summary><b>ステップ 7:</b> Lucidchart アプリに戻り、アップロードする result.csv ファイルを選択して 'Import' をクリックします。</summary>
 
 ![テーブルのインポート](/images/enterprise-data/platform/edw/import-tables.png)
 </details>
@@ -700,7 +700,7 @@ AND t.TABLE_SCHEMA IN ('COMMON', 'COMMON_PREP')
 
 #### バラエティ
 
-エンタープライズデータウェアハウスの現在の設計は Snowflake クラウドデータベース上に構築されています。これにより、処理できるデータの形式と構造は構造化テーブルに適合するものに制限されます。JSON などの半構造化データはエンタープライズデータウェアハウス内で直接処理できる場合もありますが、これは限定的であり、まずテーブルの列として取り込む必要があるため効率が低下します。一般に、構造化テーブルに含まれないエンタープライズデータウェアハウスへのすべてのデータ入力またはそこからの出力は、ビッグデータと見なします。たとえば、Version データベースのサービス Ping ペイロードは JSON であり、分析できるようになる前に広範な操作が必要なため、ビッグデータと見なします。
+エンタープライズデータウェアハウスの現在の設計は Snowflake クラウドデータベース上に構築されています。これにより、処理できるデータの形式と構造は構造化テーブルに適合するものに制限されます。JSON などの半構造化データはエンタープライズデータウェアハウス内で直接処理できる場合もありますが、これは限定的であり、まずテーブルの列として取り込む必要があるため効率が低下します。一般に、構造化テーブルに含まれないエンタープライズデータウェアハウスへのすべてのデータ入力またはそこからの出力は、ビッグデータと見なします。たとえば、Version データベースの Service Ping ペイロードは JSON であり、分析できるようになる前に広範な操作が必要なため、ビッグデータと見なします。
 
 ## アナリティクスパフォーマンスポリシーフレームワーク
 
