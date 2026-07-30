@@ -9,7 +9,7 @@ translator: claude
 stale: false
 ---
 
-GitLab はオーガニックに成長してきたため、複数の部門および職能グループには、組織全体のコンプライアンス、インフラストラクチャ、セキュリティのベストプラクティスの枠組みの中で、その部門または職能グループに固有の Tech Stack アプリケーションの日常的な管理を担当する独自のシステム管理者（「Tech Stack App/System Owners」）がいます。GitLab の各 [tech stack アプリケーション](/handbook/business-technology/tech-stack-applications/)には、そのアプリケーションを使用するチームメンバー（部門または職能グループ内）への実装および日常的な運用サポートを担当する DRI であるシステムオーナーがいます。これにより、従来の IT 部門がボトルネックになることを防ぎ、GitLab の[適切なグループにとっての効率性](/handbook/values/#efficiency-for-the-right-group)というサブバリューの一環として、各部門がセルフサービスを行えるという副次的な利点もあります。
+GitLab はオーガニックに成長してきたため、複数の部門および職能グループには、組織全体のコンプライアンス、インフラストラクチャ、セキュリティのベストプラクティスの枠組みの中で、その部門または職能グループに固有の Tech Stack アプリケーションの日常的な管理を担当する独自のシステム管理者（「Tech Stack App/System Owners」）がいます。GitLab の各 [Tech Stack アプリケーション](/handbook/business-technology/tech-stack-applications/)には、そのアプリケーションを使用するチームメンバー（部門または職能グループ内）への実装および日常的な運用サポートを担当する DRI であるシステムオーナーがいます。これにより、従来の IT 部門がボトルネックになることを防ぎ、GitLab の[適切なグループにとっての効率性](/handbook/values/#efficiency-for-the-right-group)というサブバリューの一環として、各部門がセルフサービスを行えるという副次的な利点もあります。
 
 Corporate Security チームは、チームメンバーおよび一時的なサービスプロバイダー（コントラクター、ベンダーなど）に技術サポートのヘルプデスクサービスを提供するとともに、私たちが管理する全社的な[システム](/handbook/security/corporate/systems)の構成管理エンジニアリングを担当します。
 
@@ -116,7 +116,7 @@ Corporate Security チームは、チームメンバーおよび一時的なサ�
 
 私たちのチームメンバーにはオンコールシフトが予定されているため、特定の個人に Slack のダイレクトメッセージを送るのではなく、チャンネルで質問していただくようお願いします。
 
-Corporate Security が管理していないシステムについては、[tech stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)でオーナーを確認できます。どこに質問すればよいかわからない場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com でお問い合わせください。
+Corporate Security が管理していないシステムについては、[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)でオーナーを確認できます。どこに質問すればよいかわからない場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com でお問い合わせください。
 
 ### Tier 3. エスカレーションおよびシステムエンジニアリング
 

@@ -10,10 +10,10 @@ stale: false
 lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
-## Zendesk 米国政府向け緊急リクエスト
+## Zendesk U.S. Government 向け緊急リクエスト
 
 米国政府のお客様には、緊急時にメール送信できるメールアドレスを提供しています。緊急メールは緊急ページャーをトリガーし、Support ページに記載された時間内にエンジニアが応答します。
 
-## Zendesk 米国政府でのチケット対応
+## Zendesk U.S. Government でのチケット対応
 
-このインスタンスでのチケット対応に関する情報は、[米国政府サポートチケットの取り扱い](/handbook/support/workflows/usgovernment_tickets/)を参照してください。
+このインスタンスでのチケット対応に関する情報は、[U.S. Government Support チケットの取り扱い](/handbook/support/workflows/usgovernment_tickets/)を参照してください。

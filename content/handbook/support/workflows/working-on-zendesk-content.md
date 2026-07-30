@@ -41,12 +41,12 @@ Zendesk のビュー、マクロ、トリガー、オートメーションのコ
 
 #### マクロ
 
-- マクロの文言を編集したい場合は、リポジトリ（Zendesk Global または Zendesk 米国政府）に MR を作成します。
+- マクロの文言を編集したい場合は、リポジトリ（Zendesk Global または Zendesk U.S. Government）に MR を作成します。
 - 文言以外の変更（名前変更、オプションの追加／削除など）を行いたい場合は、[このテンプレート](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?issuable_template=Feature)を使用して Customer Support Operations チームへの機能リクエストを作成します
 - マクロを非アクティブ化したい場合は、[このテンプレート](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/new?issuable_template=Feature)を使用して Customer Support Operations チームへの機能リクエストを作成します
 - 「シンプル」なマクロを作成したい場合は、対応する Zendesk インスタンスの Zendesk 内部フォームを使用します:
   - [Zendesk Global](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22784239213084&tf_22783439650716=custsuppops_ir_category_create_macro)
-  - [Zendesk 米国政府](https://gitlab-federal-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=41826926738708&tf_41825819758484=custsuppops_ir_category_create_macro)
+  - [Zendesk U.S. Government](https://gitlab-federal-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=41826926738708&tf_41825819758484=custsuppops_ir_category_create_macro)
   - **注**
     - 新しいマクロ名は、Zendesk で見られる `::` を使ったフォーマットに従う必要があります。たとえば、`Support/SaaS/GitLab.com/Abuse/Identity Verification Request` Accepts は `Support::SaaS::GitLab.com::Abuse::Identify Verification Request Accepts` となります。
     - 管理対象コンテンツファイルが必要な場合（`Public` または `Internal` コメントが使用されると選択した場合）、オートメーションがプレースホルダーファイルを作成します（そのファイルが存在しない場合）。最も迅速な解決のためには、チケット送信前に管理対象コンテンツファイルを作成 *しない* ことが最善です。
@@ -70,7 +70,7 @@ Zendesk のビュー、マクロ、トリガー、オートメーションのコ
 Zendesk 組織への一部の変更は、対応する Zendesk インスタンスの Zendesk 内部フォームを使用して行えます:
 
 - [Zendesk Global](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22784239213084)
-- [Zendesk 米国政府](https://gitlab-federal-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=41826926738708)
+- [Zendesk U.S. Government](https://gitlab-federal-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=41826926738708)
 
 許可されている変更内容は次のとおりです:
 
