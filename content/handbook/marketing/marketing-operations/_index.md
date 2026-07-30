@@ -1,10 +1,10 @@
 ---
-title: "マーケティングオペレーション"
+title: "Marketing Operations"
 description: "Marketing Operations (MktgOps) は、マーケティングチーム全体をサポートし、プロセスを合理化し関連ツールを管理します。これらのツールにより、GitLab の他のチームもしばしばサポートします。"
 upstream_path: /handbook/marketing/marketing-operations/
 upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
 translated_at: "2026-07-30T08:58:52+09:00"
-translator: "codex"
+translator: "claude"
 stale: false
 lastmod: "2026-07-28T15:04:15+01:00"
 ---
@@ -53,7 +53,7 @@ Marketing Operations は、マーケティング組織がプロセスを合理�
   </div>
 </div>
 
-### ハンドブックの更新
+### ハンドブックの更新 {#handbook-updates}
 
 ハンドブックページのワークフローを更新する際は、関連する Slack チャンネルにマージされた MR をプッシュするように設定し、ページに加えられた変更をチームが認識できるようにしてください。マージされた MR が該当する Slack チャンネルに表示されるようにするには、MR に以下の対応する `labels` のいずれかを追加する必要があります。
 

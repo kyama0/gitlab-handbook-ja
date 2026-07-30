@@ -4,7 +4,7 @@ description: "GitLab のテクニカルなフィールドチームメンバー�
 upstream_path: /handbook/sales/training/customer-success-skills-exchange/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T07:54:58+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-28T15:04:15+01:00"
 ---
@@ -36,13 +36,13 @@ Technical Skills Exchange のカレンダー招待を受け取るには、sales-
 
 - [Technical Skills Exchange Issue Board](hhttps://gitlab.com/gitlab-com/sales-team/field-operations/enablement/-/boards/7792277?label_name[]=Technical%20Skills%20Exchange) にある現四半期のプランニング Issue にコメントして、私たちのチームと連絡を取ってください
 
-### スピーカーの責任
+### スピーカーの責任 {#speaker-responsibilities}
 
 - セッション開始予定の少なくとも 2 分前に準備を整え、定刻通りに開始できるようにしてください。
 - スライドを Customer Success and SA Enablement プログラムマネージャーに送り、[ノートドキュメント](https://docs.google.com/document/d/1Zyj8u4JfiBi4gUSn9xAbRZ5H1erY9qpb8j0NzvFwwWg/edit) に追加してください
 - その他の関連リンクも [ノートドキュメント](https://docs.google.com/document/d/1Zyj8u4JfiBi4gUSn9xAbRZ5H1erY9qpb8j0NzvFwwWg/edit) に含めてください
 
-### モデレーターの責任
+### モデレーターの責任 {#moderator-responsibilities}
 
 #### Technical Skills Exchange の全体管理
 
@@ -72,6 +72,6 @@ Technical Skills Exchange のモデレーターとして、四半期のトピッ
 
 アナウンスのサンプル:
 
-> 昨日の Technical Skills Exchange セッションで <Presenter> が < Summary of session> について話したものを見逃した場合、録画が Highspot で公開されています！
+> 昨日の Technical Skills Exchange セッションで <プレゼンター> が <セッションの概要> について話したものを見逃した場合、録画が Highspot で公開されています！
 >
 > [Highspot ページ](https://gitlab.highspot.com/items/6554f9b2501316c929028227) で過去のすべての録画セッションへのリンクを確認でき、セッションの [ノートドキュメント](https://docs.google.com/document/d/1Zyj8u4JfiBi4gUSn9xAbRZ5H1erY9qpb8j0NzvFwwWg/edit) でチームの Q&A を確認できます。

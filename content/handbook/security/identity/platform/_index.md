@@ -4,7 +4,7 @@ description: "Identity Platform は、各ベンダーの API を使用して IAM
 upstream_path: /handbook/security/identity/platform/
 upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
 translated_at: "2026-07-29T06:29:34+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-28T15:04:15+01:00"
 ---

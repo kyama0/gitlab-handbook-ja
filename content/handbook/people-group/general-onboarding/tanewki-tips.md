@@ -4,7 +4,7 @@ description: GitLab で開始する新入社員のガイド
 upstream_path: /handbook/people-group/general-onboarding/tanewki-tips/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T08:53:50+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-28T15:04:15+01:00"
 ---

@@ -6,7 +6,7 @@ subcategory: Triaging
 upstream_path: /handbook/support/workflows/ticket_triage/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T06:31:24+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-29T12:39:09-04:00"
 ---

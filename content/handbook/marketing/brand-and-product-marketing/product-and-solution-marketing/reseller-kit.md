@@ -3,7 +3,7 @@ title: "リセラーマーケティングキット"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/reseller-kit/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T09:43:30+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-28T05:53:28-07:00"
 ---

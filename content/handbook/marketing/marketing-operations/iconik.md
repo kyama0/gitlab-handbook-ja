@@ -4,7 +4,7 @@ description: "Iconik はデジタル制作ワークフロー向けのハイブ�
 upstream_path: /handbook/marketing/marketing-operations/iconik/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T09:02:57+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-28T15:04:15+01:00"
 ---

@@ -5,7 +5,7 @@ description: >-
 upstream_path: /handbook/product/ux/learning-and-development/tufts-university-capstone-course/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-29T23:22:04Z"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-28T05:53:28-07:00"
 ---

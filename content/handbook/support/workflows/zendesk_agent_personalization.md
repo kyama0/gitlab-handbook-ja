@@ -7,7 +7,7 @@ last-reviewed: 2024-05-23
 upstream_path: /handbook/support/workflows/zendesk_agent_personalization/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T06:52:01+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-29T12:39:09-04:00"
 ---

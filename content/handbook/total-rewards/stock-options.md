@@ -4,7 +4,7 @@ description: "GitLab のエクイティ報酬について詳しく学ぶ"
 upstream_path: /handbook/total-rewards/stock-options/
 upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
 translated_at: "2026-07-29T06:11:55+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-27T15:48:49-07:00"
 ---

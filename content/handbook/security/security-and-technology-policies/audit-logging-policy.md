@@ -8,7 +8,7 @@ upstream_path: /handbook/security/security-and-technology-policies/audit-logging
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 lastmod: "2026-07-26T20:53:54-07:00"
 translated_at: "2026-07-30T07:12:47+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 

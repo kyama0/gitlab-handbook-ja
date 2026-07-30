@@ -4,7 +4,7 @@ description: "GitLab のフィールドセールス & カスタマーサクセ�
 upstream_path: /handbook/sales/training/sales-enablement-sessions/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T07:54:58+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-28T15:04:15+01:00"
 ---
@@ -417,7 +417,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 - 各セッションの開始時、および Q&A に移行する前に、ファシリテーターはコールが公開か非公開かをオーディエンスに発表します
 - GitLab Unfiltered で非公開動画にアクセスするための [ハウツー動画](https://www.youtube.com/watch?v=LKZ23pRfpBg&list=PL05JrBw4t0KrirMKe3CyWl4ZBCKna5rJX&index=33&t=0s) はこちらです。
 
-## スピーカー
+## スピーカー {#speaker}
 
 - コンテンツをハンドブックページとして作成します（スライドデックを使用しないでください）
   - `/handbook/sales/training/sales-enablement-sessions/enablement/` 配下に、トークのタイトルで新しいディレクトリを作成
@@ -436,7 +436,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
   - このページにコンテンツを追加します。
   - トレーニングページからプレゼンできるように、参照する必要のある他のページへのリンクをこのページに追加します。
 
-## モデレーター
+## モデレーター {#moderator}
 
 モデレーターはコールのホストとして、プレゼンターの全体的な相棒として機能する必要があります。モデレーターはチャットを監視してプレゼンターに質問を提起し、コールで言及されたリンクを検索して、トレーニングのハンドブックページにリンクされていることを確認します。
 
@@ -458,7 +458,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 
 - コールをローカルコンピュータに録画します。
 
-> 本日の GitLab セールスイネーブルメントトレーニングでは、`<speaker name>` に `<topic>` についてお話しいただけることを嬉しく思います。それでは、`<speaker name>` にお渡しします。
+> 本日の GitLab セールスイネーブルメントトレーニングでは、`<スピーカー名>` に `<トピック>` についてお話しいただけることを嬉しく思います。それでは、`<スピーカー名>` にお渡しします。
 
 - 時間を監視します。プレゼンテーションが15分以上に及ぶ場合は、スピーカーに15分経過し Q&A の時間を残したいことを思い出させるために割り込みます。
 - 録画を停止します。

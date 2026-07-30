@@ -4,7 +4,7 @@ description: ライセンスと更新（L&R）は、顧客が GitLab のサブ�
 upstream_path: /handbook/support/license-and-renewals/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T06:59:13+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-29T12:39:09-04:00"
 ---

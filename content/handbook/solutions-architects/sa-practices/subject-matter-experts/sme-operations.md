@@ -5,7 +5,7 @@ description: SME プログラムオペレーションに必要な SME コラボ�
 upstream_path: /handbook/solutions-architects/sa-practices/subject-matter-experts/sme-operations/
 upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
 translated_at: "2026-07-29T06:25:33+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-28T15:04:15+01:00"
 ---

@@ -4,7 +4,7 @@ description: "GitLab のセールス学習フレームワークとセールス�
 upstream_path: /handbook/sales/training/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T07:54:58+09:00"
-translator: codex
+translator: claude
 stale: false
 model: claude-opus-4-7
 lastmod: "2026-07-28T05:53:39-07:00"

@@ -4,7 +4,7 @@ description: コーポレートセキュリティ部門は、当社が管理す�
 upstream_path: /handbook/security/corporate/systems/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T06:09:23+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-28T15:04:15+01:00"
 ---

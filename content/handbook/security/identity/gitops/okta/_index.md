@@ -4,7 +4,7 @@ description: "Okta リポジトリは、Admin UI で実行可能なあらゆる�
 upstream_path: /handbook/security/identity/gitops/okta/
 upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
 translated_at: "2026-07-29T06:36:18+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-28T15:04:15+01:00"
 ---

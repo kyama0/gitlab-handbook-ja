@@ -4,7 +4,7 @@ description: GitLab Dedicated Support Stable Counterpart がサポート部門�
 upstream_path: /handbook/support/support-pods/gitlab-dedicated/ssc-monthly-business-review-prep/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T06:52:01+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-29T12:39:09-04:00"
 ---
@@ -32,7 +32,7 @@ lastmod: "2026-07-29T12:39:09-04:00"
 
 この[スプレッドシート](https://docs.google.com/spreadsheets/d/1tckSKeZkKHrxOfE2otruH8GrHCDxdPYc7ZJIagisqxk/edit?usp=sharing)を参照し、テナントおよび ASE のソースに関してリストが最新であることを確認してください。テナント数をカウントする際には、本番、プリプロダクション、内部テナントの区別に留意してください。Assigned Support Engineer を持つテナントの割合をカウントする際は本番テナントのみを対象とし、その点を MBR スライド内で明示します。
 
-### 📅 集計期間
+### 📅 集計期間 {#-cutoff-period}
 
 各 MBR では先月の状況を確認します。物事を一度だけカウントするためにも、MBR を準備する際にどの日付を見ているかを特に意識してください。MBR の前週の終わりが[適切な集計区切り](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6738#note_2394065104)になります。
 

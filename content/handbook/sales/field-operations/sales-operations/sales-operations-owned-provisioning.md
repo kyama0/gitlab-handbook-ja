@@ -3,7 +3,7 @@ title: "Sales Operations 所有のプロビジョニング"
 upstream_path: /handbook/sales/field-operations/sales-operations/sales-operations-owned-provisioning/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T08:10:01+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-07-28T15:04:15+01:00"
 ---
@@ -62,7 +62,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 ### DataFox
 
-1. DataFox の右上にある自分の名前の下の [Settings ページ] (https://app.datafox.com/settings/general-information) で、左側の **Team Management** をクリックします。
+1. DataFox の右上にある自分の名前の下の [Settings ページ](https://app.datafox.com/settings/general-information) で、左側の **Team Management** をクリックします。
 1. **Team Management** から **Invite Your Team** ボタンをクリックし、プロビジョニングするユーザーのメールアドレスを入力し、**Send Invitations** をクリックします。
 1. Access Request で特に指定がない限り、ほとんどのユーザーは **Member ステータス** となります。
 1. Access Request で特に指定がない限り、ほとんどのユーザーは **Bulk Sync Accounts** の権限を持ちます。

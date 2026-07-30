@@ -4,7 +4,7 @@ upstream_path: /handbook/marketing/developer-relations/technical-marketing/gl-co
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 lastmod: "2026-07-28T05:53:28-07:00"
 translated_at: "2026-07-30T09:28:09+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 

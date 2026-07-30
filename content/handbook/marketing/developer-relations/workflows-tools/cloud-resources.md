@@ -4,7 +4,7 @@ upstream_path: /handbook/marketing/developer-relations/workflows-tools/cloud-res
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 lastmod: "2026-07-28T15:04:15+01:00"
 translated_at: "2026-07-30T09:28:09+09:00"
-translator: codex
+translator: claude
 stale: false
 ---
 
