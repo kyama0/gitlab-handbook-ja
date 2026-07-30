@@ -3,11 +3,11 @@ title: Customer Console
 category: CustomersDot
 description: 社内リクエストでカスタマーコンソールを使うのは、既存ツールでは対応できない特殊なケースに限られます。
 upstream_path: /handbook/support/license-and-renewals/workflows/customersdot/customer_console/
-upstream_sha: 6c73093986242c762a8f4a2769fbfba69b31fcf9
-translated_at: "2026-05-08T13:00:00Z"
-translator: claude
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:25:33+09:00"
+translator: codex
 stale: false
-lastmod: "2025-11-03T10:56:28-07:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -16,7 +16,7 @@ lastmod: "2025-11-03T10:56:28-07:00"
 
 社内リクエストでカスタマーコンソールを使うのは、既存ツールでは対応できない特殊なケースに限られます。
 
-コンソールアクセスは [Teleport](https://goteleport.com/docs/connect-your-client/introduction/) を介して行われ、関連する Okta グループへの所属が必要です（[CustomersDot プロジェクトのドキュメント](https://gitlab.com/gitlab-org/customers-gitlab-com/-/blob/main/doc/setup/teleport.md#group-membership)に記載）。所属を取得するには [アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request) を提出できます。
+コンソールアクセスは [Teleport](https://goteleport.com/docs/connect-your-client/introduction/) を介して行われ、関連する Okta グループへの所属が必要です（[CustomersDot プロジェクトのドキュメント](https://gitlab.com/gitlab-org/customers-gitlab-com/-/blob/main/doc/setup/teleport.md#group-membership)に記載）。所属を取得するには [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request) を提出できます。
 
 Teleport をインストールして本番／ステージングの rails コンソールにアクセスする方法の全体像については、[CustomersDot の Teleport に関するドキュメントページ](https://gitlab.com/gitlab-org/customers-gitlab-com/-/blob/main/doc/setup/teleport.md#using-teleport-for-db-rails-access) を参照してください。
 

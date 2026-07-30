@@ -1,11 +1,11 @@
 ---
 title: "Sales Operations 所有のプロビジョニング"
 upstream_path: /handbook/sales/field-operations/sales-operations/sales-operations-owned-provisioning/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:10:01+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 手順
@@ -40,7 +40,7 @@ lastmod: "2025-07-07T23:50:04+00:00"
 
 ### 個人または一括アクセスリクエスト
 
-1. ユーザーは、[個人または一括 AR](/handbook/security/corporate/end-user-services/access-requests/access-requests/) を手動で作成
+1. ユーザーは、[個人または一括 AR](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) を手動で作成
 1. 手順内で、以下のタスクとともに Tech Stack ドキュメントに案内されます:
    - SalesOpsAR::Action Needed ラベルを追加
    - 担当者を空のままにする
@@ -62,7 +62,7 @@ lastmod: "2025-07-07T23:50:04+00:00"
 
 ### DataFox
 
-1. DataFox の右上にある自分の名前の下の [Settings ページ](https://app.datafox.com/settings/general-information) で、左側の **Team Management** をクリックします。
+1. DataFox の右上にある自分の名前の下の [Settings ページ] (https://app.datafox.com/settings/general-information) で、左側の **Team Management** をクリックします。
 1. **Team Management** から **Invite Your Team** ボタンをクリックし、プロビジョニングするユーザーのメールアドレスを入力し、**Send Invitations** をクリックします。
 1. Access Request で特に指定がない限り、ほとんどのユーザーは **Member ステータス** となります。
 1. Access Request で特に指定がない限り、ほとんどのユーザーは **Bulk Sync Accounts** の権限を持ちます。

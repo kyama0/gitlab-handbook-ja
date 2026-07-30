@@ -2,9 +2,9 @@
 title: "リサーチツールとアプリケーション"
 description: "使用するツール、既存リサーチの見つけ方、リサーチ結果の追跡など。"
 upstream_path: /handbook/upstream-studios/experience-research/research-tools/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:44-03:00"
-translated_at: "2026-07-17T08:00:00+09:00"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+lastmod: "2026-07-28T15:04:15+01:00"
+translated_at: "2026-07-29T06:11:55+09:00"
 translator: codex
 stale: false
 ---
@@ -21,7 +21,7 @@ stale: false
 - [UserTesting.com](http://UserTesting.com) - 音声 / 動画のキャプチャを伴うモデレートなしのテスト
 - [Figjam](http://figma.com) - オンラインでのブレインストーミングと統合
 
-UX 実務者は、入社時にロールの権限としてこれらのツールの一部にアクセスできます。**誰でも [Lumos](https://app.lumosidentity.com/app_store)を通じて新しいツールを閲覧し、アクセスをリクエストできます**。探しているツールがまだ Lumos にない場合は、[アクセスリクエストを作成](/handbook/security/corporate/end-user-services/access-requests/)できます。Optimal Workshop については、必要に応じて個別の月額パスを購入するため、代わりに調達 Issue（[例](https://gitlab.com/gitlab-com/Finance-Division/procurement-team/procurement/-/issues/1596)）を作成する必要があることに注意してください。
+UX 実務者は、入社時にロールの権限としてこれらのツールの一部にアクセスできます。**誰でも [Lumos](https://app.lumosidentity.com/app_store)を通じて新しいツールを閲覧し、アクセスをリクエストできます**。探しているツールがまだ Lumos にない場合は、[アクセスリクエストを作成](/handbook/eta/corporate-it/end-user-services/access-requests/)できます。Optimal Workshop については、必要に応じて個別の月額パスを購入するため、代わりに調達 Issue（[例](https://gitlab.com/gitlab-com/Finance-Division/procurement-team/procurement/-/issues/1596)）を作成する必要があることに注意してください。
 
 ## ツール選択ガイド {#tool-selection-guide}
 

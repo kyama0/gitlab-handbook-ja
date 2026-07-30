@@ -2,11 +2,11 @@
 title: "Field Enablement Spotlight: GitLab における継続教育"
 description: "GitLab のフィールドセールス & カスタマーサクセスチームメンバー全員のための継続教育ウェブキャストシリーズ"
 upstream_path: /handbook/sales/training/sales-enablement-sessions/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T07:54:58+09:00"
+translator: codex
 stale: false
-lastmod: "2025-11-21T15:22:32-08:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## Field Enablement Spotlight セッション
@@ -326,7 +326,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 - SDR BDR チーム `sdrbdr@`
 - マーケティングチーム `marketing-team@`
 
-メールグループへのアクセスを要求するには、[アクセスリクエストを記入](/handbook/security/corporate/end-user-services/access-requests/access-requests/)してください。これらのグループはミーティングに招待されているため、各個人が個別の招待を受ける必要はありません。
+メールグループへのアクセスを要求するには、[アクセスリクエストを記入](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)してください。これらのグループはミーティングに招待されているため、各個人が個別の招待を受ける必要はありません。
 
 ## トレーニングプレイリスト
 
@@ -417,7 +417,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 - 各セッションの開始時、および Q&A に移行する前に、ファシリテーターはコールが公開か非公開かをオーディエンスに発表します
 - GitLab Unfiltered で非公開動画にアクセスするための [ハウツー動画](https://www.youtube.com/watch?v=LKZ23pRfpBg&list=PL05JrBw4t0KrirMKe3CyWl4ZBCKna5rJX&index=33&t=0s) はこちらです。
 
-## スピーカー {#speaker}
+## スピーカー
 
 - コンテンツをハンドブックページとして作成します（スライドデックを使用しないでください）
   - `/handbook/sales/training/sales-enablement-sessions/enablement/` 配下に、トークのタイトルで新しいディレクトリを作成
@@ -436,7 +436,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
   - このページにコンテンツを追加します。
   - トレーニングページからプレゼンできるように、参照する必要のある他のページへのリンクをこのページに追加します。
 
-## モデレーター {#moderator}
+## モデレーター
 
 モデレーターはコールのホストとして、プレゼンターの全体的な相棒として機能する必要があります。モデレーターはチャットを監視してプレゼンターに質問を提起し、コールで言及されたリンクを検索して、トレーニングのハンドブックページにリンクされていることを確認します。
 
@@ -458,7 +458,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 
 - コールをローカルコンピュータに録画します。
 
-> 本日の GitLab セールスイネーブルメントトレーニングでは、`<スピーカー名>` に `<トピック>` についてお話しいただけることを嬉しく思います。それでは、`<スピーカー名>` にお渡しします。
+> 本日の GitLab セールスイネーブルメントトレーニングでは、`<speaker name>` に `<topic>` についてお話しいただけることを嬉しく思います。それでは、`<speaker name>` にお渡しします。
 
 - 時間を監視します。プレゼンテーションが15分以上に及ぶ場合は、スピーカーに15分経過し Q&A の時間を残したいことを思い出させるために割り込みます。
 - 録画を停止します。

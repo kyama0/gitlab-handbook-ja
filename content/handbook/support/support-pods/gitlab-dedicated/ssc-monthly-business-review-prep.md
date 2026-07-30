@@ -2,11 +2,11 @@
 title: GitLab Dedicated 月次ビジネスレビュー準備
 description: GitLab Dedicated Support Stable Counterpart がサポート部門の月次ビジネスレビューに向けた準備を行えるようにします。
 upstream_path: /handbook/support/support-pods/gitlab-dedicated/ssc-monthly-business-review-prep/
-upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
-translated_at: "2026-05-08T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:52:01+09:00"
+translator: codex
 stale: false
-lastmod: "2025-08-26T17:29:16+01:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 毎月、Support Stable Counterpart（SSC）は GitLab サポートの月次ビジネスレビュー（MBR）で利用する情報を準備します。このハンドブックページでは、GitLab Dedicated SSC が任意の MBR 向けに GitLab Dedicated に関するメモを準備するためにどのような手順を踏むべきかをドキュメント化しています。GitLab Dedicated SSC であれば誰でも MBR の調整を主導できます。
@@ -32,7 +32,7 @@ lastmod: "2025-08-26T17:29:16+01:00"
 
 この[スプレッドシート](https://docs.google.com/spreadsheets/d/1tckSKeZkKHrxOfE2otruH8GrHCDxdPYc7ZJIagisqxk/edit?usp=sharing)を参照し、テナントおよび ASE のソースに関してリストが最新であることを確認してください。テナント数をカウントする際には、本番、プリプロダクション、内部テナントの区別に留意してください。Assigned Support Engineer を持つテナントの割合をカウントする際は本番テナントのみを対象とし、その点を MBR スライド内で明示します。
 
-### 📅 集計期間 {#-cutoff-period}
+### 📅 集計期間
 
 各 MBR では先月の状況を確認します。物事を一度だけカウントするためにも、MBR を準備する際にどの日付を見ているかを特に意識してください。MBR の前週の終わりが[適切な集計区切り](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/6738#note_2394065104)になります。
 
@@ -52,7 +52,7 @@ _作業中です。_
 
 #### GitLab Dedicated（商用）
 
-1. 統合 `request-for-help` [プロジェクト](https://gitlab.com/gitlab-com/request-for-help)内の[Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=opened&first_page_size=100) を、`Label` `is one of` `Help group::Dedicated`、`Help group::switchboard`（[直接リンク](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=all&or%5Blabel_name%5D%5B%5D=Help%20group%3A%3ASwitchboard&or%5Blabel_name%5D%5B%5D=Help%20group%3A%3ADedicated&first_page_size=20)）でフィルタします。
+1. [Issue](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=opened&first_page_size=100)を統合 `request-for-help` [プロジェクト](https://gitlab.com/gitlab-com/request-for-help)内で、`Label` `is one of` `Help group::Dedicated`、`Help group::switchboard`（[直接リンク](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=all&or%5Blabel_name%5D%5B%5D=Help%20group%3A%3ASwitchboard&or%5Blabel_name%5D%5B%5D=Help%20group%3A%3ADedicated&first_page_size=20)）でフィルタします。
 
 1. **All** を選択
 1. **Created Date** でソート
@@ -64,7 +64,7 @@ _作業中です。_
 
 CompSecGov 上の[該当プロジェクト](https://compsecgov.gitlab-dedicated.us/gitlab-dedicated-us-public-sector/incident-management)にある RFH Issue について、上記と同じ手順を実施してください。
 
-執筆時点では、Wade と Brie だけがこの情報を取得できる GitLab Dedicated SSC です。（US Government Support チームの他のメンバーが手伝うことができます。）
+執筆時点では、Wade と Brie だけがこの情報を取得できる GitLab Dedicated SSC です。（U.S. Government Support チームの他のメンバーが手伝うことができます。）
 
 ### 🚨 ページ数のカウント
 
@@ -76,9 +76,9 @@ CompSecGov 上の[該当プロジェクト](https://compsecgov.gitlab-dedicated.
 
 #### GitLab Dedicated for Government
 
-[Incident Management - GitLab Dedicated for US Gov CMOC](https://gitlab.pagerduty.com/service-directory/PQRVHA8) サービスを使用し、集計期間内の **Resolved Incidents** の数を数えてください。
+[Incident Management - GitLab Dedicated for U.S. Gov CMOC](https://gitlab.pagerduty.com/service-directory/PQRVHA8) サービスを使用し、集計期間内の **Resolved Incidents** の数を数えてください。
 
-執筆時点では、Wade と Brie だけがこの情報を取得できる GitLab Dedicated SSC です。（US Government Support チームの他のメンバーが手伝うことができます。）
+執筆時点では、Wade と Brie だけがこの情報を取得できる GitLab Dedicated SSC です。（U.S. Government Support チームの他のメンバーが手伝うことができます。）
 
 ## 取り扱う領域
 
@@ -91,7 +91,7 @@ MBR スライドでは、通常次の項目を取り扱います。
 
 また、次の表も含まれます。
 
-| | グローバル | US Government |
+| | グローバル | U.S. Government |
 |-|--------|---------------|
 | チケット | | |
 | RFH | | |

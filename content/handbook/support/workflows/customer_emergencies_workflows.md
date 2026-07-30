@@ -3,11 +3,11 @@ title: 顧客緊急対応業務の遂行方法
 category: On-call
 description: "サポートエンジニアリングにおける顧客緊急対応ローテーションの役割と責任の説明"
 upstream_path: /handbook/support/workflows/customer_emergencies_workflows/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:25:26+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-22T11:27:49+08:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ## はじめに
@@ -486,7 +486,7 @@ DRI として、以下の条件のいずれかが満たされるまでチケッ�
 
 まれに、あなたとマネージャーオンコールが、subject matter expert からの必要な開発者の入力を得るために [Tier 2 オンコールプログラム](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/) にエスカレートすることが必要だと判断する場合があります。専門的な専門知識があっても、緊急対応の焦点となっている GitLab の特定の側面についてオンコールエンジニアが追いつくのに時間がかかる可能性があることに留意してください。
 
-Subject Matter Expert (SME) にエスカレートするには、Slack で `/inc escalate` コマンドを使用し、"Oncall team" ドロップダウンリストから適切なチームを選択します。適切なチームと [エスカレーション基準](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/#escalation-criteria) については、[Tier 2 オンコールプログラム](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/) を参照してください。Tier 2 オンコールにページする際は、顧客はこれをインシデントだと推定することを覚えておいてください。`Notification Message` フィールドで、ページが Sev 1 self-managed 顧客緊急対応のためであることを明確に述べ、関連する Zendesk チケットと進行中の self-managed CEOC スレッドの両方へのリンクを含めてください。
+Subject Matter Expert (SME) にエスカレートするには、Slack で `/inc escalate` コマンドを使用し、"Oncall team" ドロップダウンリストから適切なチームを選択します。適切なチームについては [Tier 2 オンコールプログラム](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/)を参照し、[エスカレーション基準](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/#escalation-criteria)を確認してください。Tier 2 オンコールにページする際は、顧客はこれをインシデントだと推定することを覚えておいてください。`Notification Message` フィールドで、ページが Sev 1 self-managed 顧客緊急対応のためであることを明確に述べ、関連する Zendesk チケットと進行中の self-managed CEOC スレッドの両方へのリンクを含めてください。
 
 通知メッセージの例:
 
@@ -746,9 +746,9 @@ GitLab.com でインシデントが発生し、ステータスページに掲載
 
 ![ZD Bulk Update View](/images/support/zd-bulk-update.png)
 
-### US Government オンコール
+### U.S. Government オンコール
 
-US Government オンコールサポートは、12x5 US Gov サポートを購入した premium および ultimate 顧客で発生する [severity one](https://support.gitlab.com/hc/en-us/articles/11626416629660-Definitions#severity-1--urgent) Issue について、太平洋時間の 0500 〜 1700 の時間に週 7 日提供されます。high と緊急のカバレッジに 24x7 ultimate を選択した顧客は、いつでもページできます。
+U.S. Government オンコールサポートは、12x5 U.S. Government サポートを購入した premium および ultimate 顧客で発生する [severity one](https://support.gitlab.com/hc/en-us/articles/11626416629660-Definitions#severity-1--urgent) Issue について、太平洋時間の 0500 〜 1700 の時間に月曜日から金曜日まで提供されます。high と緊急のカバレッジに 24x7 ultimate を選択した顧客は、いつでもページできます。
 
 現在のオンコールスケジュールは [PagerDuty](https://gitlab.pagerduty.com/schedules#P89ZYHZ)(内部リンク) で表示できます。スケジュールは現在 3 つの 8 時間シフトに分割されており、これらはおおよそデイシフト、夕方、深夜のチームメンバーの時間と相関しています:
 
@@ -756,9 +756,9 @@ US Government オンコールサポートは、12x5 US Gov サポートを購入
 - 夕方: 13:00 〜 21:00 PT
 - 深夜: 21:00 〜 05:00 PT
 
-顧客は、メールまたは US Government サポートポータルの緊急フォームを使用して緊急対応を送信することが許可されています。
+顧客は、メールまたは U.S. Government サポートポータルの緊急フォームを使用して緊急対応を送信することが許可されています。
 
-#### US Government におけるオンコールシフトカバレッジ
+#### U.S. Government におけるオンコールシフトカバレッジ
 
 サポートエンジニアがスケジュールされたオンコールシフトのカバレッジが必要な場合、`us-gov-oncall-coverage` テンプレートを使用して Support Team Meta で Issue を開いてください。
 
@@ -766,10 +766,10 @@ US Government オンコールサポートは、12x5 US Gov サポートを購入
 
 #### オンコール時間外の緊急対応
 
-24x7 対応外の顧客が [Government Support の業務時間](https://about.gitlab.com/support/us-government-support/#hours-of-operation) 外に緊急ケースを送信した場合、以下が発生します:
+24x7 対応外の顧客が [U.S. Government Support の業務時間](https://about.gitlab.com/support/us-government-support/#hours-of-operation) 外に緊急ケースを送信した場合、以下が発生します:
 
 - #spt_us-government チャンネルで Slack 通知がトリガーされ、業務時間外の緊急対応をチームに通知し、業務時間開始時にフォローアップが必要であることを示します
-- `Off hours emergency request` トリガーは、チケット送信者に時間外であることを知らせ、Global support で緊急ケースを作成するか、次の業務時間開始時に US Government サポートのフォローアップを待つかのオプションを与えます
+- `Off hours emergency request` トリガーは、チケット送信者に時間外であることを知らせ、Global support で緊急ケースを作成するか、次の業務時間開始時に U.S. Government サポートのフォローアップを待つかのオプションを与えます
 
 ##### 時間外緊急対応への対応
 
@@ -780,9 +780,9 @@ US Government オンコールサポートは、12x5 US Gov サポートを購入
 
 応答するエンジニアはまた、自分のマネージャーをフォロワーとして追加し、時間外サポートが提供されていることを内部ノートで示すべきです。これは、適切なフォローアップが顧客のアカウントチームと一緒に確実に行われるのに役立ちます。
 
-#### Global の US Gov 緊急対応
+#### Global の U.S. Government 緊急対応
 
-12x5 サポートパッケージを持つ US Government 顧客は、組織のポリシーが米国市民でない人とのやり取りや情報共有を許可している場合、時間外の緊急対応のためにグローバルサポートポータルを使用することが許可されます。US Gov サポートチームは、特定のケースが US Government サポートの権利を持つユーザーまたは組織に属するかどうかを **確認も否定もできません**。グローバルサポートポータルで提出された緊急対応に応答できる人に関する要件や制限はありません。ユーザーが米国市民を求める場合は、米国市民権が保証されないグローバルサポートポータルを使用していることを思い出させ、それが要件である場合は今後のコミュニケーションのために US Government Support ポータルを使用すべきであることを伝えてください。
+12x5 サポートパッケージを持つ U.S. Government 顧客は、組織のポリシーが米国市民でない人とのやり取りや情報共有を許可している場合、時間外の緊急対応のためにグローバルサポートポータルを使用することが許可されます。U.S. Government サポートチームは、特定のケースが U.S. Government サポートの権利を持つユーザーまたは組織に属するかどうかを **確認も否定もできません**。グローバルサポートポータルで提出された緊急対応に応答できる人に関する要件や制限はありません。ユーザーが米国市民を求める場合は、米国市民権が保証されないグローバルサポートポータルを使用していることを思い出させ、それが要件である場合は今後のコミュニケーションのために U.S. Government Support ポータルを使用すべきであることを伝えてください。
 
 ### GitLab Dedicated 緊急対応
 
@@ -807,7 +807,7 @@ US Government オンコールサポートは、12x5 US Gov サポートを購入
 
 1. Dedicated SRE チームが積極的に関与し、インシデントの所有権を取った後:
    - SRE が必要なすべての情報を持っていることを確認します
-   - 顧客の [コミュニケーション](/handbook/support/workflows/dedicated_cmoc#modes-of-communication) が必要な場合、[GitLab Dedicated Communications Manager on Call (GDCMOC)](/handbook/support/workflows/dedicated_cmoc#engaging-the-gdcmoc) に通知します
+   - [GitLab Dedicated Communications Manager on Call (GDCMOC)](/handbook/support/workflows/dedicated_cmoc#engaging-the-gdcmoc)に通知します（顧客との[コミュニケーション](/handbook/support/workflows/dedicated_cmoc#modes-of-communication)が必要な場合）
    - すでに顧客との通話中の場合、通話を終了することと、必要に応じて GDCMOC が非同期でさらなる更新を提供することを伝えます
    - 内部ノートでチケット内のハンドオフを文書化します
 1. SRE がアクティブな DRI であることを確認したら、緊急チケットを閉じます

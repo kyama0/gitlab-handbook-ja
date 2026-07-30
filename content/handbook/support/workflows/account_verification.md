@@ -4,11 +4,11 @@ category: GitLab.com
 subcategory: Accounts
 description: "2FA 解除を含む、アカウント所有権を確認する方法と時期を詳述するワークフロー"
 upstream_path: /handbook/support/workflows/account_verification/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:04:40+09:00"
+upstream_sha: "5934211cb62d0c36181bc3a4be1381e5e07aef42"
+translated_at: "2026-07-29T06:21:07+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -27,7 +27,7 @@ GitLab.com では、2FA を有効化していないユーザーがログイン�
 
 ### GitLab チームメンバー
 
-ユーザーが GitLab チームメンバーである場合は、[IT Ops に連絡](/handbook/security/corporate/end-user-services/_index.md)してもらってください。
+ユーザーが GitLab チームメンバーである場合は、[IT Ops に連絡](/handbook/eta/corporate-it/end-user-services/)してもらってください。
 
 ## GitLab 内での 2FA 解除
 

@@ -1,11 +1,11 @@
 ---
 title: GitLab パスワードガイドライン
 upstream_path: /handbook/security/password-guidelines/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T11:04:27+09:00"
-translator: claude
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:25:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-08T14:46:05-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 <!-- markdownlint-disable MD051 -->
 ## GitLab におけるパスワード
@@ -324,7 +324,7 @@ GitLab 以外のアカウントで TOTP を使用する場合があるかもし�
 
 ### Passkey
 
-1Password には [Okta](/handbook/security/corporate/end-user-services/okta/) などのサイトで FIDO2/WebAuthn で使用される認証情報である Passkey をサポートする機能が実装されています。この機能により、ユーザー名とパスワードを必要とするサイトへのパスワードレスサインインが可能になります。Passkey は MFA の一種としても機能します。Passkey はアプリに公開鍵を、1Password vault 内に秘密鍵を保存します。
+1Password には [Okta](/handbook/eta/corporate-it/end-user-services/okta/) などのサイトで FIDO2/WebAuthn で使用される認証情報である Passkey をサポートする機能が実装されています。この機能により、ユーザー名とパスワードを必要とするサイトへのパスワードレスサインインが可能になります。Passkey は MFA の一種としても機能します。Passkey はアプリに公開鍵を、1Password vault 内に秘密鍵を保存します。
 
 Passkey のセットアップはシンプルです。ウェブサイトやアプリでログインページを開くか、サインインボタンを選択します。通常、生体認証または YubiKey で認証ステップを完了するプロンプトが表示されます。下の画像のようなものが表示されることがあります。
 

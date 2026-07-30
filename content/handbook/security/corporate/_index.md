@@ -1,11 +1,11 @@
 ---
 title: コーポレートセキュリティ (CorpSec)
 upstream_path: /handbook/security/corporate/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T09:49:06+09:00"
-translator: claude
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:42:01+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-08T11:09:01-04:00"
+lastmod: "2026-07-28T16:24:24+01:00"
 ---
 
 👋 コーポレートセキュリティへようこそ、お会いできて嬉しいです！私たちは、2024 年初頭にファイナンス部門からセキュリティ部門に異動した、旧 IT オペレーションチームとしてもご存知かもしれません。
@@ -14,7 +14,7 @@ lastmod: "2026-07-08T11:09:01-04:00"
 
 まずは以下のページを確認し、質問の回答がハンドブックページに記載されているかを探してください。追加の質問がある場合は、Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけてください）または it-help@gitlab.com からお問い合わせください。
 
-- [CorpSec オンボーディング 101 ガイド](/handbook/security/corporate/end-user-services/onboarding101/)
+- [CorpSec オンボーディング 101 ガイド](/handbook/eta/corporate-it/end-user-services/onboarding101/)
 - [CorpSec サポートガイド](/handbook/security/corporate/support)
 - [CorpSec サービス](/handbook/security/corporate/services)
 - [CorpSec システムと Tech Stack アプリ](/handbook/security/corporate/systems)
@@ -85,22 +85,16 @@ GitLab は会社であり、製品でもあります。コーポレートセキ�
 
 - 👀 **ヘルプをお探しの場合は、[CorpSec サポート](/handbook/security/corporate/support) をご覧ください。**
 - 📚 [アプリケーションとシステム](/handbook/security/corporate/systems)
-- 🛟 [ヘルプデスクサービス](/handbook/security/corporate/services/helpdesk)
-  - 🔐 [アクセスリクエスト](/handbook/security/corporate/services/access-requests)
-  - 💻 [ラップトップとロジスティクスサービス](/handbook/security/corporate/end-user-services/laptop-management)
+- 🛟 ヘルプデスク、ラップトップ、エンドユーザーサポートは、Enterprise Technology and AI 部門の [Corporate IT](/handbook/eta/corporate-it/) によって提供されています。
+  - 🔐 [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)
   - 🛬 [オンボーディング](/handbook/security/corporate/services/onboarding)
   - 🛫 [オフボーディング](/handbook/security/corporate/services/offboarding)
-  - 🧑‍💻 [テックサポート (チームメンバー向け)](/handbook/security/corporate/support/)
-- ☁ [インフラストラクチャサービス](/handbook/security/corporate/services/infrastructure)
 
 ### エンジニアリング
 
 - 📋 [私たちの働き方](/handbook/security/corporate/how-we-work)
-- 💻 [デバイストラストエンジニアリング](/handbook/security/corporate/engineering/device-trust)
+- 💻 [CorpSec Devices](/handbook/security/corporate/engineering/devices)
 - 🔐 [アイデンティティエンジニアリング](/handbook/security/corporate/engineering/identity)
-- ☁ [インフラストラクチャエンジニアリング](/handbook/security/corporate/engineering/infrastructure)
-- 🏗 [プラットフォームエンジニアリング](/handbook/security/corporate/engineering/platform)
-- 👷 [SaaS エンジニアリング](/handbook/security/corporate/engineering/saas)
 
 ## 私たちは誰か
 
@@ -122,14 +116,8 @@ GitLab は会社であり、製品でもあります。コーポレートセキ�
 - マネジメントチーム
   - `@gitlab-com/gl-security/corp/managers`
   - Slack で該当する [機能チームマネージャー](/handbook/security/corporate/team) またはディレクターをタグ付けしてください。
-    - ディレクター - Steve Manzuik
-    - プログラム管理 - Steve Manzuik、Kim Waters
-    - デバイストラスト - Eric Rubin
-    - ヘルプデスクサポート - Michael Beltran
-    - インフラストラクチャ - Jeff Martin
-    - ラップトップとロジスティクス - Michael Beltran
-    - オンボーディング・オフボーディングの日常運用 (ヘルプデスクサービス) - Michael Beltran
+    - Engineering Management - David Zhu、Lenny Vaknine
+    - CorpSec Devices - Lenny Vaknine
+    - ヘルプデスクサポート、ラップトップとロジスティクス - Rick Pollak ([Corporate IT](/handbook/eta/corporate-it/))
     - オンボーディング・オフボーディングのポリシーと戦略 (アイデンティティエンジニアリング) - David Zhu
-    - プラットフォームエンジニアリング (カスタムソフトウェア開発) - Jeff Martin
-    - SaaS エンジニアリング - David Zhu、Eric Rubin
-    - 機密データまたは雇用関連リクエスト - Michael Beltran
+    - 機密データまたは雇用関連リクエスト - Rick Pollak ([Corporate IT](/handbook/eta/corporate-it/))

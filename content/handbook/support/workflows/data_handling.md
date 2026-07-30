@@ -3,11 +3,11 @@ title: サポートエンジニアとしてのデータの取り扱い
 description: サポートにおけるデータ取り扱いのベストプラクティスのガイド
 category: References
 upstream_path: /handbook/support/workflows/data_handling/
-upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
-translated_at: "2026-05-08T20:30:00Z"
-translator: claude
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:21:07+09:00"
+translator: codex
 stale: false
-lastmod: "2025-10-03T14:17:43-06:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ### 概要
@@ -79,7 +79,7 @@ Issue の議論中、顧客名を列挙する関連するスクリーンショ�
 
 このような連携を見たら、SIRT を宣言してください。
 
-加えて、連携で支援が必要な場合は、以下のチームに連絡してください。Google、Slack、Zoom、Okta などに関する連携については、Corp Sec チームに [こちら](https://internal.gitlab.com/handbook/security/corporate/end-user-services/app-integrations/?search=integration+request) から連絡してください。エンタープライズアプリケーション関連については、こちらのチーム [こちら](https://internal.gitlab.com/handbook/it-enterprise-applications/enterprise-applications/enterprise-applications-integrations/) に連絡してください。
+加えて、連携で支援が必要な場合は、以下のチームに連絡してください。Google、Slack、Zoom、Okta などに関する連携については、Corp Sec チームに [こちら](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/app-integrations/?search=integration+request) から連絡してください。エンタープライズアプリケーション関連については、こちらのチーム [こちら](https://internal.gitlab.com/handbook/it-enterprise-applications/enterprise-applications/enterprise-applications-integrations/) に連絡してください。
 
 ### 要点
 

@@ -2,11 +2,11 @@
 title: "YouTube の利用とアクセス"
 description: "私たちは YouTube を、ライブストリーミングのグループカンバセーション、マーケティング動画、デモなどを含む動画コンテンツの単一の信頼できる情報源 (SSoT) として使用しています。"
 upstream_path: /handbook/marketing/marketing-operations/youtube/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-01T01:35:00Z"
-translator: claude
+upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
+translated_at: "2026-07-30T09:08:29+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-30T19:32:27+01:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## チャンネル
@@ -37,7 +37,7 @@ GitLab チーム内のすべての人が、ミーティングやイベントを 
 
 ### ライブストリームの考慮事項
 
-1. [録画動画の開始に関するガイドライン](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-recording)に必ず従ってください。
+1. [録画動画の開始に関するガイドライン](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording)に必ず従ってください。
 1. ホストでない場合、Zoom から直接ライブストリーミングはできませんが、現在のホストは別の参加者をホストに昇格できます。
 1. ミーティングに複数のホストがいる場合、**ミーティングに最初に参加したホスト** だけが Zoom から直接ライブストリーミングできます。Zoom ミーティングから、別のチームメンバーがライブストリームの開始のために指定されている場合、ホストは他の人をホストに昇格できます。ホストを変更する手順:
     - ホストはホストコントロールを渡す参加者の名前にカーソルを合わせます
@@ -45,7 +45,7 @@ GitLab チーム内のすべての人が、ミーティングやイベントを 
     - 「Make Host」をクリックして「Yes」を選択します
     - 新しいホストは Zoom からコールをライブストリーミングできるようになります
 1. 通常、ライブストリームの場合、[人々をパネリストに昇格](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0063276)を担当する別の人がいると役立ちます。
-1. アクセシビリティを向上させるために、[ライブトランスクリプションを有効](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-additional-config/#enable-captions-and-live-transcription)にしてください。
+1. アクセシビリティを向上させるために、[ライブトランスクリプションを有効](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-additional-config/#enable-captions-and-live-transcription)にしてください。
 1. **YouTube 動画の説明には機密情報を含めないでください。[非公開動画の説明が公開動画にも反映されてしまう](https://gitlab.com/gitlab-com/business-ops/team-member-enablement/issue-tracker/-/issues/809)バグがあるためです**
 
 ### Zoom でのライブストリーム
@@ -68,7 +68,7 @@ GitLab チーム内のすべての人が、ミーティングやイベントを 
 
 ![grant permissions](/images/marketing/marketing-operations/youtube/grant_permissions.png)
 
-1. [録画動画の開始](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-recording)の手順に従います。
+1. [録画動画の開始](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording)の手順に従います。
 
 ![configure stream](/images/marketing/marketing-operations/youtube/stream_settings.png)
 
@@ -242,7 +242,7 @@ GitLab Unfiltered でプライベート動画にアクセスする方法のビ�
 
 ## アクセス
 
-1. GitLab Branded チャンネル: アクセスをリクエストするには、[個別アクセスリクエストの Issue](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request) を作成し、[Tech Stack YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) に列挙されたプロビジョナー (列 G) を割り当ててください。
+1. GitLab Branded チャンネル: アクセスをリクエストするには、[個別アクセスリクエストの Issue](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request) を作成し、[Tech Stack YAML](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) に列挙されたプロビジョナー (列 G) を割り当ててください。
 1. GitLab Unfiltered: 全員がオンボーディング中に YouTube Unfiltered へのアクセスを取得すべきです。受信トレイに招待が見つからない場合は、Google Workspace アカウントの [Pending Invitations](https://myaccount.google.com/brandaccounts) セクションを確認してください。招待がそこにない場合、HelpLab を介して People Operations チームに新しい招待をリクエストしてください。
 
 People Operations のトラブルシューティング:
@@ -323,7 +323,7 @@ Unfiltered チャンネルに投稿される定期ミーティングの公開さ
 <iframe width="560" height="315" src="https://www.youtube.com/embed/xGwX9zjNr2E?rel=0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
 1. アップロードではなく[公開またはプライベートストリーミング](#public-or-private-streaming)をデフォルトとしてください。
-1. [録画動画の開始](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-recording)プロセスに従ってください。
+1. [録画動画の開始](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording)プロセスに従ってください。
 1. 別途記載または手配されていない限り、ミーティング後に動画を配信する責任はミーティング主催者にあるという期待される動作です。
 1. ミーティングの [Zoom](https://zoom.us/) アカウントにログインし、右側のメニューに移動して「My Recordings」を選択します (録画が共有可能になるまで最大 30 分かかる場合があります)。
 1. ミーティングを選択し、録画をコンピュータにダウンロードします (録画がしばらく前のものだったために見つからない場合は、左上のメニューの「Trash」を確認し、録画を「Recover」してください)。

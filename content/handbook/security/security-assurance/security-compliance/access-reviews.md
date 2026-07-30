@@ -5,11 +5,11 @@ tags:
   - security_standard
   - security_standard_acia
 upstream_path: /handbook/security/security-assurance/security-compliance/access-reviews/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T06:00:00Z"
-translator: claude
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:29:34+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-16T15:03:53-06:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -174,7 +174,7 @@ GitLab のユーザーアクセスレビューは、内部および外部の IT 
 ## <i class="fas fa-book" style="color:rgb(110,73,203)" aria-hidden="true"></i> 参照
 
 - [識別と認証セキュリティコントロール](/handbook/security/security-assurance/security-compliance/sec-controls/)
-- [アクセスリクエストハンドブックページ](/handbook/security/corporate/end-user-services/access-requests/access-requests/)
+- [アクセスリクエストハンドブックページ](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)
 - [アクセス管理ポリシー](/handbook/security/security-and-technology-policies/access-management-policy/)
 
 <a href="/handbook/security/security-assurance/" class="btn bg-primary text-white btn-lg">セキュリティアシュアランスホームページに戻る</a>

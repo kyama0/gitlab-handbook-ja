@@ -3,11 +3,11 @@ title: インサイドセールス部門
 description: >-
   インサイドセールス部門は [GitLab セールス](/handbook/sales/) 機能の一部であり、セールスチームおよびカスタマーサクセスチームと連携して、GitLab を利用するお客様のジャーニー全体を通じて最大の価値を提供します。
 upstream_path: /handbook/sales/insidesales/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T07:54:58+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-27T11:50:06+01:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 エンタープライズインサイドセールスチームへの連絡は [Slack チャンネル](https://gitlab.slack.com/archives/C01P39947ND) （社内のみ）から可能です。
@@ -104,7 +104,7 @@ SAE、ASM、その他のアカウントチームのリソース（SA や CSM）�
 1. チームを知りましょう。最初のチームコールで自己紹介できるよう準備し、世界中のチームメイトと知り合うためにコーヒーチャットをスケジュールしましょう。
 2. Field Operations ハンドブックの [見積構成プロセス](/handbook/sales/field-operations/order-processing/#quote-configuration) を確認します。
 3. 下記の "Resources" セクションでリンクされているハンドブックページを確認します。
-4. GitLab に新しく入社した場合は、[オンボーディング Issue](/handbook/people-group/general-onboarding/#completing-onboarding-issue) を完了します。社内異動の場合は、[組織変更チェックリスト](/handbook/people-group/promotions-transfers/#organization-change-checklist) と [アクセス変更リクエスト Issue](/handbook/security/corporate/end-user-services/access-requests/) を完了します。リージョンまたはテリトリーを割り当てる前に、これらを完了してクローズする必要があります。
+4. GitLab に新しく入社した場合は、[オンボーディング Issue](/handbook/people-group/general-onboarding/#completing-onboarding-issue) を完了します。社内異動の場合は、[組織変更チェックリスト](/handbook/people-group/promotions-transfers/#organization-change-checklist) と [アクセス変更リクエスト Issue](/handbook/eta/corporate-it/end-user-services/access-requests/) を完了します。リージョンまたはテリトリーを割り当てる前に、これらを完了してクローズする必要があります。
 5. [地域のディールデスクチーム](/handbook/sales/field-operations/sales-operations/deal-desk/#deal-desk---a-global-presence) を知りましょう。コーヒーチャットをスケジュールしたり、ディールデスクのオフィスアワーに参加したり、両方を行ってください。
 
    テリトリーが割り当てられたら:

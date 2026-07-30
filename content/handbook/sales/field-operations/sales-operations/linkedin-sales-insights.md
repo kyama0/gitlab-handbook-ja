@@ -2,11 +2,11 @@
 title: "LinkedIn Sales Insights"
 description: "LinkedIn Sales Insights は LinkedIn のデータとインサイトに大規模にアクセスする手段を提供し、Sales Operations がよりスマートなセールスプランニングを行うために必要な明瞭さをもたらします。"
 upstream_path: /handbook/sales/field-operations/sales-operations/linkedin-sales-insights/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:10:01+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ### LinkedIn Sales Insights について
@@ -30,7 +30,7 @@ LSI は、従業員数、業界、HQ や本人の所在地のほか、最近 Lin
 
 LinkedIn Sales Insights（LSI）には、通常の LinkedIn ユーザー名/パスワードでログインできます: https://www.linkedin.com/sales-insights/
 
-アクセスをリクエストするには、[Access Request](/handbook/security/corporate/end-user-services/access-requests/access-requests/#how-do-i-choose-which-template-to-use) を作成してください。
+アクセスをリクエストするには、[Access Request](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/#how-do-i-choose-which-template-to-use) を作成してください。
 
 ### Sales Leadership（ASM 以上）のユースケース
 

@@ -1,11 +1,11 @@
 ---
 title: "ユースケース: GitLab + Google Cloud"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/google/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:43:30+09:00"
+translator: codex
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 #### 連絡先
@@ -37,11 +37,11 @@ lastmod: "2025-01-04T01:51:25+00:00"
 
 Sam, the SRE: Sam は、クラウドインフラ上で稼働するアプリケーションソフトウェアの稼働時間と信頼性に責任を負っています。彼は SLA(Service Level Agreements)と SLO(Service Level Objectives)を達成するため、Google Cloud のサービスと直接やり取りします。彼は SRE 専任チームに所属することも、開発者と一緒に製品/サービスチームに組み込まれることもあります。
 
-[Devon, the DevOps Engineer](/handbook/product/personas/): Devon は、開発チームに対する Ops のインターフェースとなることが多いです。彼はインフラ、環境、統合のサポートを提供します。Devon はコードにかなり精通しており、多種多様なツールやコンテキスト切り替えではなく、コードを通じてインフラを管理することを好みます。
+[Devon, the DevOps Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/): Devon は、開発チームに対する Ops のインターフェースとなることが多いです。彼はインフラ、環境、統合のサポートを提供します。Devon はコードにかなり精通しており、多種多様なツールやコンテキスト切り替えではなく、コードを通じてインフラを管理することを好みます。
 
-[Priyanka, the Platform Operator](/handbook/product/personas/#priyanka-platform-engineer): インフラ管理は、プラットフォームチームの主要な責務の 1 つです。Priyanka は、開発チームがソフトウェアをより迅速に出荷・運用するために利用する共有プラットフォーム(従来型または最新のクラウドプラットフォーム)を提供、保守、運用する責任を負っています。
+[Priyanka, the Platform Operator](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer): インフラ管理は、プラットフォームチームの主要な責務の 1 つです。Priyanka は、開発チームがソフトウェアをより迅速に出荷・運用するために利用する共有プラットフォーム(従来型または最新のクラウドプラットフォーム)を提供、保守、運用する責任を負っています。
 
-[Sydney, the System Administrator](/handbook/product/personas/#sidney-systems-administrator): Sydney はアプリケーションチームのインフラと構成を定義、保守、スケールします。彼女は同じタスクに対して繰り返しの依頼を受けることがよくあります。Sydney の主な動機は、エラーを最小化し時間を節約するために繰り返し作業を自動化すること、そしてインフラと構成を変更が追跡できる形で定義し、インフラ変更が[ワイルドウェスト](https://en.wikipedia.org/wiki/Cowboy_coding)状態になるのを防ぐことです。
+[Sydney, the System Administrator](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator): Sydney はアプリケーションチームのインフラと構成を定義、保守、スケールします。彼女は同じタスクに対して繰り返しの依頼を受けることがよくあります。Sydney の主な動機は、エラーを最小化し時間を節約するために繰り返し作業を自動化すること、そしてインフラと構成を変更が追跡できる形で定義し、インフラ変更が[ワイルドウェスト](https://en.wikipedia.org/wiki/Cowboy_coding)状態になるのを防ぐことです。
 
 ### バイヤーペルソナ
 
@@ -77,9 +77,9 @@ GitLab と Google Cloud の合同ソリューション機能の全容につい�
 
 | **キーバリュー** | **スピード** | **効率** | **信頼** |
 |--------------|----------------------------------------------------------|--------------|--------------|
-| **Promise** | スピードに関する Promise | 効率に関する Promise | 信頼に関する Promise |
-| **Pain points** | one | two | three |
-| **Why GitLab** |  one | two| three |
+| **約束** | スピードに関する約束 | 効率に関する約束 | 信頼に関する約束 |
+| **課題** | 1 | 2 | 3 |
+| **GitLab を選ぶ理由** |  1 | 2| 3 |
 
 ## プルーフポイント
 

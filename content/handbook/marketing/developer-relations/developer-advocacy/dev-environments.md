@@ -1,11 +1,11 @@
 ---
 title: デベロッパーアドボケイトの開発環境
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/dev-environments/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-translated_at: "2026-06-12T21:15:21Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:37:27+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-08T11:30:44+02:00
+lastmod: 2026-07-28T15:04:15+01:00
 ---
 
 デベロッパーアドボケイトは、GitLab Duo Agent Platform を使用した AI ネイティブワークフローを含む、さまざまなタイプのプラットフォーム、エディタ、IDE で作業します。このページでは、デベロッパーアドボカシー関連のセットアップを最適化するためのベストプラクティスと役立つヒントをまとめます。
@@ -239,7 +239,7 @@ CLI は [GitLab LSP](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp)
 
 Claude Code へのアクセスを得ることは、コンテンツ作成に役立ちます。例えば、このブログチュートリアル [Claude Code and GitLab: Three workflows that ship](https://about.gitlab.com/blog/claude-code-and-gitlab/) があります。
 
-1. [AI ツールの要件](https://internal.gitlab.com/handbook/ai-security-at-gitlab/ai-tool-usage-requirements/)を確認し、Anthropic API キーの[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/)を作成します。[例（内部向け）](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/work_items/39031)
+1. [AI ツールの要件](https://internal.gitlab.com/handbook/ai-security-at-gitlab/ai-tool-usage-requirements/)を確認し、Anthropic API キーの[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)を作成します。[例（内部向け）](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/work_items/39031)
 1. [Claude Console](https://platform.claude.com/settings/keys) で API キーを作成します
 1. [Claude Code](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code) をインストールします
 1. Console API キーで Claude Code に認証します。
@@ -256,7 +256,7 @@ claude auth login
 
 Codex へのアクセスを得ることは、コンテンツ作成に役立ちます。例えば、このブログチュートリアル [Codex and GitLab: From code fix to production](https://about.gitlab.com/blog/fix-bugs-with-codex-and-gitlab/) があります。
 
-1. [AI ツールの要件](https://internal.gitlab.com/handbook/ai-security-at-gitlab/ai-tool-usage-requirements/)を確認し、OpenAI キーの[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/)を作成します。[例（内部向け）](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/work_items/43999)。
+1. [AI ツールの要件](https://internal.gitlab.com/handbook/ai-security-at-gitlab/ai-tool-usage-requirements/)を確認し、OpenAI キーの[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)を作成します。[例（内部向け）](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/work_items/43999)。
 1. OpenAI プラットフォームに移動します。`GitLab` organization と `Default project` を選択し、[API キー](https://platform.openai.com/api-keys)を生成します
 1. Homebrew で [Codex CLI](https://developers.openai.com/codex/cli) をインストールします。
 1. `--with-api-key` パラメータでログインし、STDIN から API キーを読み込みます。

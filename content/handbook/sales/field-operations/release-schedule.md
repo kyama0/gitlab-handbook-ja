@@ -2,11 +2,11 @@
 title: "オペレーション/プロセス/ツール更新のための Spekit"
 description: "RSOE は Spekit ツールを使用して、オペレーション、プロセス、および/またはツールの変更について Field チームに更新を伝えます。"
 upstream_path: /handbook/sales/field-operations/release-schedule/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T10:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:03:43+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## オペレーション/プロセス/ツール更新における Spekit の活用方法
@@ -72,7 +72,7 @@ Spekit へのアクセス権がある場合は、テンプレートを[こちら
    1. Tool Update
    1. Incident Report
 
-加えて、3 つの既存画像のいずれも該当しない場合に、ブランドガイドラインに沿ったテキストベースの画像をカスタム作成するための [Canva テンプレート](https://www.canva.com/design/DAGOCmVEVoI/-J-pk80dtxI59EyYqIp5Eg/edit?utm_content=DAGOCmVEVoI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)が利用可能です。Canva へのアクセス権がない場合は、[Access Request](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を開いてください。
+加えて、3 つの既存画像のいずれも該当しない場合に、ブランドガイドラインに沿ったテキストベースの画像をカスタム作成するための [Canva テンプレート](https://www.canva.com/design/DAGOCmVEVoI/-J-pk80dtxI59EyYqIp5Eg/edit?utm_content=DAGOCmVEVoI&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)が利用可能です。Canva へのアクセス権がない場合は、[Access Request](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を開いてください。
 
 ### Phase 2: Field 更新のための GitLab Spekit エキスパート
 

@@ -3,17 +3,17 @@ title: Zendesk サポートインスタンス
 category: Zendesk
 description: GitLab グローバルサポートの Zendesk インスタンスは、私たちが顧客のチケットの大部分を受信して対応するインスタンスです。
 upstream_path: /handbook/support/workflows/zendesk-instances/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T05:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:39:37+09:00"
+translator: codex
 stale: false
-lastmod: "2025-04-03T23:25:36+00:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
-## Zendesk US Government 向け緊急リクエスト
+## Zendesk 米国政府向け緊急リクエスト
 
-US Government のお客様には、緊急時にメール送信できるメールアドレスを提供しています。緊急メールは緊急ページャーをトリガーし、Support ページに記載された時間内にエンジニアが応答します。
+米国政府のお客様には、緊急時にメール送信できるメールアドレスを提供しています。緊急メールは緊急ページャーをトリガーし、Support ページに記載された時間内にエンジニアが応答します。
 
-## Zendesk US Government でのチケット対応
+## Zendesk 米国政府でのチケット対応
 
-このインスタンスでのチケット対応に関する情報は、[US Government サポートチケットの取り扱い](/handbook/support/workflows/usgovernment_tickets/)を参照してください。
+このインスタンスでのチケット対応に関する情報は、[米国政府サポートチケットの取り扱い](/handbook/support/workflows/usgovernment_tickets/)を参照してください。

@@ -2,11 +2,11 @@
 title: "提案中のユースケース - インシデント管理"
 description: "ダウンタイムは高くつきます。GitLab のインシデント管理によって MTTR を低減できます。"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/incident-management/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:43:30+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-23T15:08:44-08:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 <!--
@@ -33,9 +33,9 @@ lastmod: "2026-01-23T15:08:44-08:00"
 
 ### ユーザーペルソナ
 
-- [Devon the DevOps Engineer](/handbook/product/personas/#priyanka-platform-engineer)
-- [Allison in Application Ops](/handbook/product/personas/#allison-application-ops)
-- [Priyanka the Platform Engineer](/handbook/product/personas/#priyanka-platform-engineer)
+- [Devon the DevOps Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer)
+- [Allison in Application Ops](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#allison-application-ops)
+- [Priyanka the Platform Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer)
 
 ### バイヤーペルソナ
 

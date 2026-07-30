@@ -2,11 +2,11 @@
 title: "User Satisfaction Plus（USAT+）調査"
 description: "User Satisfaction（USAT+）調査は、プロダクト健全性を主要な次元にわたって追跡するためにプロダクト＆マーケティング部門内で年2回使用する統合された指標調査です。"
 upstream_path: /handbook/product/ux/performance-indicators/usat-plus/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:15:54+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-17T16:54:45-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ### USAT+データ収集スケジュール
@@ -139,11 +139,11 @@ USAT+は、有料の SaaS ユーザー（GitLab.com Premium と Ultimate ティ�
 
 各四半期の初めに、UX リサーチ DRI は以下の手順を通じて USAT+調査を配布する対象ユーザーのリストを生成します:
 
-1. Snowflake で以下の[クエリ](https://docs.google.com/document/d/1XSABfApXJY_VHm7Q9j4V64xsMNkSorb5SWcLn-b4Tfk/edit?usp=sharing)を使用して、コンタクトする有料 GitLab.com ユーザーの新しいリストを生成します。約 40,000 のユーザー ID とメールアドレスをクエリします。注: このステップでデータテーブルをクエリするには、Snowflake と SAFE データへのアクセスが必要です。一方または両方へのアクセスがない場合は、[Access Request Issue](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request)を作成してください。
+1. Snowflake で以下の[クエリ](https://docs.google.com/document/d/1XSABfApXJY_VHm7Q9j4V64xsMNkSorb5SWcLn-b4Tfk/edit?usp=sharing)を使用して、コンタクトする有料 GitLab.com ユーザーの新しいリストを生成します。約 40,000 のユーザー ID とメールアドレスをクエリします。注: このステップでデータテーブルをクエリするには、Snowflake と SAFE データへのアクセスが必要です。一方または両方へのアクセスがない場合は、[Access Request Issue](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)を作成してください。
 2. 両方のプログラムで同じユーザーにコンタクトすることを防ぐために、関連する調査の取り組みについて Customer Experience チームに連絡します。
 3. ステップ 1 で編集したユーザーのリストを新しい Rally プロジェクトに作成し、四半期のコンタクトを追跡するためにユーザーコンタクトのリストをプロジェクトにアップロードします。
 4. Rally のプロジェクト/スタディフィルターを使用して、12 か月以上前にコンタクトされたユーザーを削除します。これにより、他の USAT+ Rally プロジェクトのユーザーへのコンタクトを回避します。
-5. 現在の四半期の[プランタイプ別の比率](https://10az.online.tableau.com/#/site/gitlab/views/DraftTDLicensedUsersbyProductRatePlanName/TDLicensedUsersbyProductRatePlanName?:iid=1)を計算します。これらのパーセンテージをユーザーリストに追加して、各プランタイプに招待する必要があるユーザーの数を計算するのに役立てます。最終目標は、人口の内訳とほぼ一致する（+/- 3%）サンプル内訳を達成することです。注: このステップのリンクを表示するには、Tableau と SAFE データへのアクセスが必要です。一方または両方へのアクセスがない場合は、[Access Request Issue](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request)を作成してください。
+5. 現在の四半期の[プランタイプ別の比率](https://10az.online.tableau.com/#/site/gitlab/views/DraftTDLicensedUsersbyProductRatePlanName/TDLicensedUsersbyProductRatePlanName?:iid=1)を計算します。これらのパーセンテージをユーザーリストに追加して、各プランタイプに招待する必要があるユーザーの数を計算するのに役立てます。最終目標は、人口の内訳とほぼ一致する（+/- 3%）サンプル内訳を達成することです。注: このステップのリンクを表示するには、Tableau と SAFE データへのアクセスが必要です。一方または両方へのアクセスがない場合は、[Access Request Issue](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)を作成してください。
 
 ##### メールウェーブの送信
 

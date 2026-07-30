@@ -2,11 +2,11 @@
 title: ライセンスと更新
 description: ライセンスと更新（L&R）は、顧客が GitLab のサブスクリプションを購入または更新する際に直面する問題を解決するための活動全般を指します。
 upstream_path: /handbook/support/license-and-renewals/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:59:13+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-02T22:15:45+00:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ## 概要
@@ -120,7 +120,7 @@ L&R チームは多くの異なる種類の購入を扱い、また単発もし�
 - Premium: `10,000`
 - Ultimate: `50,000`
 
-ユニットは **分数と 1:1 で対応していません**。パイプラインで [使用される Runner の種類](https://docs.gitlab.com/ci/pipelines/compute_minutes/#additional-costs-on-gitlab-saas) を含む [コスト係数](https://docs.gitlab.com/ci/pipelines/compute_minutes/#cost-factor) が適用されます。顧客は [いつでも追加ユニットを購入](https://docs.gitlab.com/subscriptions/gitlab_com/compute_minutes/) できます。
+ユニットは **分数と 1:1 で対応していません**。[コスト係数](https://docs.gitlab.com/ci/pipelines/compute_minutes/#cost-factor) が適用され、これにはパイプラインで [使用される Runner の種類](https://docs.gitlab.com/ci/pipelines/compute_minutes/#additional-costs-on-gitlab-saas) が含まれます。顧客は [いつでも追加ユニットを購入](https://docs.gitlab.com/subscriptions/gitlab_com/compute_minutes/) できます。
 
 #### Storage and Transfer
 
@@ -161,10 +161,10 @@ Salesforce.com (SFDC) アカウントがあると、Chatter メッセージで�
 [個別／一括アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) を作成する際には、以下の情報を使用してください:
 
 - System name:
-  - If you are a US citizen:
+  - If you are a U.S. citizen:
     > SalesForce, Role: Executive - No View All, Profile: Read Only GitLab,
-    > with US public sector record visibility
-  - If you are not a US citizen:
+    > with U.S. public sector record visibility
+  - If you are not a U.S. citizen:
     > SalesForce, Role: Executive - No View All, Profile: Read Only GitLab
 - Justification for this access:
   > L&R Support Engineers need their own Salesforce accounts to better collaborate

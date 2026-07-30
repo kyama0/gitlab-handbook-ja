@@ -2,11 +2,11 @@
 title: GitLab Dedicated サポートポッド
 description: サポートチーム内の他のメンバーが GitLab Dedicated のチケットに対応できるようにします。
 upstream_path: /handbook/support/support-pods/gitlab-dedicated/
-upstream_sha: 2ea342c4234f3820e0bad8565152836e52df6849
-translated_at: "2026-07-03T20:37:21+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:52:01+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-01T09:10:46+01:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ## 目的
@@ -25,7 +25,7 @@ lastmod: "2026-07-01T09:10:46+01:00"
 - 共同リード: {{< member-by-name "Wei-Meng Lee" >}} (`@weimeng-gtlb`)
 - APAC リード: {{< member-by-name "Daphne Kua" >}} (`@dkua1`)
 - EMEA リード: {{< member-by-name "Nilanka De Silva" >}} (`@ndesilva`)
-- US Gov リード: {{< member-by-name "Wade Jenkins" >}} (`@wwjenkins`)
+- U.S. Government リード: {{< member-by-name "Wade Jenkins" >}} (`@wwjenkins`)
 - {{< member-by-name "Armin Hergenhan" >}} (`@ahergenhan`)
 - {{< member-by-name "Cleveland Bledsoe Jr" >}} (`@cleveland`)
 - {{< member-by-name "Gerardo Gutierrez" >}} (`@gerardo`)
@@ -56,9 +56,9 @@ GitLab Dedicated に関するあらゆる事柄に焦点を当てたこれらの
 
 - [GitLab Dedicated ハンドブック](/handbook/support/workflows/dedicated/)
   - このハンドブックは [Support Workflows](/handbook/support/workflows/) にあり、GitLab Dedicated チケットを扱う際のさらなる情報の出発点として最適です
-- [Support Training](https://gitlab.com/gitlab-com/support/support-training) プロジェクトにある [GitLab Dedicated](https://gitlab.com/gitlab-com/support/support-training/-/blob/master/.gitlab/issue_templates/GitLab%20Dedicated.md) のトレーニングモジュールも参照してください。
+- [GitLab Dedicated](https://gitlab.com/gitlab-com/support/support-training/-/blob/master/.gitlab/issue_templates/GitLab%20Dedicated.md) のトレーニングモジュールは [Support Training](https://gitlab.com/gitlab-com/support/support-training) プロジェクトにあります。
 - GitLab Dedicated のチケットを扱う際の [ログを使った作業方法](/handbook/support/workflows/dedicated_logs/) を読んでください。
-- [GitLab Dedicated に含まれる機能](https://docs.gitlab.com/subscriptions/gitlab_dedicated/#available-features) と同じくらい重要なので、[GitLab Dedicated に _含まれない_ 機能](https://docs.gitlab.com/subscriptions/gitlab_dedicated/#unavailable-features) も確認してください
+- [GitLab Dedicated に _含まれない_ 機能](https://docs.gitlab.com/subscriptions/gitlab_dedicated/#unavailable-features)は、[GitLab Dedicated に含まれる機能](https://docs.gitlab.com/subscriptions/gitlab_dedicated/#available-features)と同じくらい重要なので、確認してください
 
 ## ℹ️  最新情報を入手しよう
 

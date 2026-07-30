@@ -2,11 +2,11 @@
 title: CorpSec システムと Tech Stack
 description: コーポレートセキュリティ部門は、当社が管理する全社規模のシステムについて、チームメンバーと一時的なサービスプロバイダー (契約社員、ベンダーなど) 向けに構成管理エンジニアリングとテックサポートヘルプデスクサービスを提供しています。システムディレクトリには、当社のすべてのシステムの一覧と、管理ランブック、エンドユーザードキュメント、Issue テンプレート、メンション可能なグループ、GitLab の Epic・Issue・マージリクエストで使用されるタグへのクイックリファレンスリンクが記載されています。
 upstream_path: /handbook/security/corporate/systems/
-upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
-translated_at: "2026-07-22T06:32:52+09:00"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:09:23+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-21T10:14:54-05:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 部門横断的なシステムオーナー
@@ -25,7 +25,7 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 
 ## CorpSec システムディレクトリ
 
-コーポレートセキュリティ部門は、当社が管理する全社規模のシステムについて、チームメンバーと一時的なサービスプロバイダー (契約社員、ベンダーなど) 向けに構成管理エンジニアリングとテックサポート [ヘルプデスクサービス](/handbook/security/corporate/services/helpdesk) を提供しています。
+コーポレートセキュリティ部門は、当社が管理する全社規模のシステムについて、チームメンバーと一時的なサービスプロバイダー (契約社員、ベンダーなど) 向けに構成管理エンジニアリングとテックサポート [ヘルプデスクサービス](/handbook/eta/corporate-it/end-user-services) を提供しています。
 
 <table>
 <thead>
@@ -106,7 +106,7 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <i class="fas fa-tag mr-2"></i><code>corpsys-aws-billing</code><br>
 <i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/aws-billing">@gitlab-com/corpsys/aws-billing</a><br>
 <i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-aws-billing</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-infra</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security_help</code><br>
 <i class="fas fa-shield-halved mr-2"></i>
 <span style="background-color: #0284c7; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER SSO</span>
 <span style="background-color: #16a34a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER APP ROLE</span>
@@ -143,7 +143,7 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <i class="fas fa-tag mr-2"></i><code>corpsys-aws-services</code><br>
 <i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/aws-services">@gitlab-com/corpsys/aws-services</a><br>
 <i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-aws-services</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-infra</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security_help</code><br>
 <i class="fas fa-shield-halved mr-2"></i>
 <span style="background-color: #0284c7; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER SSO</span>
 <span style="background-color: #16a34a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER APP ROLE</span>
@@ -191,7 +191,7 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <i class="fas fa-tag mr-2"></i><code>corpsys-aws-systems</code><br>
 <i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/aws-systems">@gitlab-com/corpsys/aws-systems</a><br>
 <i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-aws-systems</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-infra</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security_help</code><br>
 <i class="fas fa-shield-halved mr-2"></i>
 <span style="background-color: #b91c1c; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN SSO</span>
 <span style="background-color: #71717a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN APP ROLE</span>
@@ -292,21 +292,18 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <!-- Domain Names -->
 <tr>
 <td>
-<a href="/handbook/security/corporate/systems/domains">Domain Names</a></td>
+ドメイン名<br><small><a href="/handbook/security/product-security/infrastructure-security/">Infrastructure Security</a> が管理</small></td>
 <td>
-<i class="fas fa-cart-plus mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=domains_purchase">Purchase Request</a><br>
-<i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=domains_default">Engineering Issue</a>
+<i class="fas fa-cart-plus mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/dns-records/-/issues/new">購入リクエスト</a><br>
+<i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/dns-records/-/issues/new">エンジニアリング Issue</a>
 </td>
 <td>
-<a href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?label_name%5B%5D=corpsys-domains">ARs</a>
-&nbsp;/&nbsp;<a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?label_name%5B%5D=corpsys-domains">Issues</a>
-&nbsp;/&nbsp;<a href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/epics?label_name[]=corpsys-domains">Epics</a>
+<a href="https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/dns-records/-/issues">Issues</a>
 <br>
-<i class="fas fa-book mr-2"></i><a href="https://handbook.gitlab.systems/domains">Administration Runbooks</a><br>
-<i class="fas fa-tag mr-2"></i><code>corpsys-domains</code><br>
-<i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/domains">@gitlab-com/corpsys/domains</a><br>
-<i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-domains</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-infra</code><br>
+<i class="fas fa-users mr-2"></i><a href="/handbook/security/product-security/infrastructure-security/">Infrastructure Security</a><br>
+<i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/dns-records">infrastructure-security/dns-records</a><br>
+<i class="fa-brands fa-slack mr-2"></i><code>@infrasec-team</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security-infrasec</code><br>
 <i class="fas fa-shield-halved mr-2"></i>
 <span style="background-color: #b91c1c; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN SSO</span>
 <span style="background-color: #71717a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN APP ROLE</span>
@@ -315,21 +312,18 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <!-- DNS Records -->
 <tr>
 <td>
-<a href="/handbook/security/corporate/systems/dns">DNS Records</a></td>
+DNS レコード<br><small><a href="/handbook/security/product-security/infrastructure-security/">Infrastructure Security</a> が管理</small></td>
 <td>
-<i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=dns_update">Update Request</a><br>
-<i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=dns_default">Engineering Issue</a>
+<i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/dns-records/-/issues/new">更新リクエスト</a><br>
+<i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/dns-records/-/issues/new">エンジニアリング Issue</a>
 </td>
 <td>
-<a href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?label_name%5B%5D=corpsys-dns">ARs</a>
-&nbsp;/&nbsp;<a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?label_name%5B%5D=corpsys-dns">Issues</a>
-&nbsp;/&nbsp;<a href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/epics?label_name[]=corpsys-dns">Epics</a>
+<a href="https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/dns-records/-/issues">Issues</a>
 <br>
-<i class="fas fa-book mr-2"></i><a href="https://handbook.gitlab.systems/dns">Administration Runbooks</a><br>
-<i class="fas fa-tag mr-2"></i><code>corpsys-dns</code><br>
-<i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/dns">@gitlab-com/corpsys/dns</a><br>
-<i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-dns</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-infra</code><br>
+<i class="fas fa-users mr-2"></i><a href="/handbook/security/product-security/infrastructure-security/">Infrastructure Security</a><br>
+<i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/product-security/infrastructure-security/dns-records">infrastructure-security/dns-records</a><br>
+<i class="fa-brands fa-slack mr-2"></i><code>@infrasec-team</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security-infrasec</code><br>
 <i class="fas fa-shield-halved mr-2"></i>
 <span style="background-color: #6d28d9; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER MR</span>
 <span style="background-color: #6d28d9; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN MR</span>
@@ -483,7 +477,7 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/gitlab-cfg">@gitlab-com/corpsys/gitlab-cfg</a><br>
 <i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-gitlab-cfg</code><br>
 <i class="fa-brands fa-slack mr-2"></i><code>Slack の Compass アプリ（上部検索バーに「Compass」と入力して見つけてください）または it-help@gitlab.com からお問い合わせください。</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-infra</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security_help</code><br>
 <i class="fas fa-shield-halved mr-2"></i>
 <span style="background-color: #0284c7; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER SSO</span>
 <span style="background-color: #b91c1c; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN SSO</span>
@@ -508,7 +502,7 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/gcp-billing">@gitlab-com/corpsys/gcp-billing</a><br>
 <i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-gcp-billing</code><br>
 <i class="fa-brands fa-slack mr-2"></i><code>#cloud-finops</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-infra</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security_help</code><br>
 <i class="fas fa-shield-halved mr-2"></i>
 <span style="background-color: #0284c7; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER SSO</span>
 <span style="background-color: #16a34a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER APP ROLE</span>
@@ -537,7 +531,7 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-gcp-com</code><br>
 <i class="fa-brands fa-slack mr-2"></i><code>#infrastructure_lounge</code><br>
 <i class="fa-brands fa-slack mr-2"></i><code>#s_production_engineering</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-infra</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security_help</code><br>
 <i class="fas fa-shield-halved mr-2"></i>
 <span style="background-color: #0284c7; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER SSO</span>
 <span style="background-color: #16a34a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER APP ROLE</span>
@@ -587,7 +581,7 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <i class="fas fa-tag mr-2"></i><code>corpsys-gcp-systems</code><br>
 <i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/gcp-systems">@gitlab-com/corpsys/gcp-systems</a><br>
 <i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-gcp-systems</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-infra</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security_help</code><br>
 <i class="fas fa-shield-halved mr-2"></i>
 <span style="background-color: #b91c1c; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN SSO</span>
 <span style="background-color: #71717a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN APP ROLE</span>
@@ -869,29 +863,29 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 </td>
 <td>
 <i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=macos_default">Engineering Issue</a><br>
-<i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-ordering/">Onboarding Hardware Ordering Guide</a><br>
-<i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-ordering/#laptop-refreshes">Refresh/Replace Guide</a><br>
+<i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering/">Onboarding Hardware Ordering Guide</a><br>
+<i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering/#laptop-refreshes">Refresh/Replace Guide</a><br>
 <i class="fas fa-book mr-2"></i><a href="handbook/security/corporate/services/laptops">Repair Guide</a><br>
-<i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-wipe/">Wipe (Factory Reset) Guide</a><br>
+<i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-wipe/">Wipe (Factory Reset) Guide</a><br>
 <br>
-<i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/onboarding101/#laptop-setup-macbook">MacBook セットアップガイド（Onboarding 101）</a><br>
+<i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/onboarding101/#laptop-setup-macbook">MacBook セットアップガイド（Onboarding 101）</a><br>
 <i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/support/onboarding">Onboarding Software Setup Guide</a><br>
-<i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security">Security Configuration Standards</a><br>
+<i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security">Security Configuration Standards</a><br>
 <ul>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/appleid">Apple ID for Work</a></li>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/backups">Backups</a></li>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/encryption">Disk Encryption</a></li>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/firewall">Firewall</a></li>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/appleid">Apple ID for Work</a></li>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/backups">Backups</a></li>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/encryption">Disk Encryption</a></li>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/firewall">Firewall</a></li>
 <li><i class="fas fa-book mr-2"></i><a href="https://internal.gitlab.com/handbook/security/corporate/tooling/jamf/endpoint_naming_convention/">Hostnames and Usernames (Internal)</a></li>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/icloud">iCloud Drive</a></li>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/unattended">Locking When Unattended</a></li>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/passwords">Password Management</a></li>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/personal/">Personal Use</a></li>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/management">Remote Management (MDM and EDR)</a></li>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/updates/">Software Updates</a></li>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/touchid/">Touch ID (Biometric Passwords and 2FA)</a></li>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/browsers/)">Web Browsers</a></li>
-<li><i class="fas fa-book mr-2"></i><a href="/handbook/security/corporate/end-user-services/laptop-management/laptop-security/networks)">Wireless Networks and VPN</a><br>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/icloud">iCloud Drive</a></li>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/unattended">Locking When Unattended</a></li>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/passwords">Password Management</a></li>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/personal/">Personal Use</a></li>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/management">Remote Management (MDM and EDR)</a></li>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/updates/">Software Updates</a></li>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/touchid/">Touch ID (Biometric Passwords and 2FA)</a></li>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/browsers/)">Web Browsers</a></li>
+<li><i class="fas fa-book mr-2"></i><a href="/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/networks)">Wireless Networks and VPN</a><br>
 </ul>
 </td>
 <td>
@@ -903,30 +897,6 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/macos">@gitlab-com/corpsys/macos</a><br>
 <i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-macos</code><br>
 <i class="fa-brands fa-slack mr-2"></i><code>Slack の Compass アプリ（上部検索バーに「Compass」と入力して見つけてください）または it-help@gitlab.com からお問い合わせください。</code><br>
-</td>
-</tr>
-<!-- Nira -->
-<tr>
-<td>
-<a href="/handbook/security/corporate/systems/nira">Nira (Google Drive)</a></td>
-<td>
-<i class="fas fa-user-plus mr-2"></i><a href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=nira_default">Open an Access Request</a><br>
-<i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=nira_default">Engineering Issue</a>
-</td>
-<td>
-<a href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?label_name%5B%5D=corpsys-nira">ARs</a>
-&nbsp;/&nbsp;<a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?label_name%5B%5D=corpsys-nira">Issues</a>
-&nbsp;/&nbsp;<a href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/epics?label_name[]=corpsys-nira">Epics</a>
-<br>
-<i class="fas fa-book mr-2"></i><a href="https://handbook.gitlab.systems/nira">Administration Runbooks</a><br>
-<i class="fas fa-tag mr-2"></i><code>corpsys-nira</code><br>
-<i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/nira">@gitlab-com/corpsys/nira</a><br>
-<i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-nira</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>Slack の Compass アプリ（上部検索バーに「Compass」と入力して見つけてください）または it-help@gitlab.com からお問い合わせください。</code><br>
-<i class="fas fa-shield-halved mr-2"></i>
-<span style="background-color: #0284c7; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER SSO</span>
-<span style="background-color: #b91c1c; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN SSO</span>
-<span style="background-color: #71717a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN APP ROLE</span>
 </td>
 </tr>
 <!-- NordLayer -->
@@ -979,7 +949,7 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/okta-apps">@gitlab-com/corpsys/okta-apps</a><br>
 <i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-okta-apps</code><br>
 <i class="fa-brands fa-slack mr-2"></i><code>Slack の Compass アプリ（上部検索バーに「Compass」と入力して見つけてください）または it-help@gitlab.com からお問い合わせください。</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-identity</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-identity</code> <small>（プライベート）</small><br>
 <i class="fas fa-shield-halved mr-2"></i>
 <span style="background-color: #0284c7; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER SSO</span>
 <span style="background-color: #16a34a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER SSO GROUP</span>
@@ -1036,7 +1006,8 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <i class="fas fa-tag mr-2"></i><code>corpsys-okta-org</code><br>
 <i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/okta-org">@gitlab-com/corpsys/okta-org</a><br>
 <i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-okta-org</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-identity</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security_help</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-identity</code> <small>（プライベート）</small><br>
 <i class="fas fa-shield-halved mr-2"></i>
 <span style="background-color: #0284c7; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER SSO</span>
 <span style="background-color: #16a34a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER SSO GROUP</span>
@@ -1102,7 +1073,8 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <i class="fas fa-tag mr-2"></i><code>corpsys-okta-flow</code><br>
 <i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/okta-flows">@gitlab-com/corpsys/okta-flows</a><br>
 <i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-okta-flows</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-identity</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security_help</code><br>
+<i class="fa-brands fa-slack mr-2"></i><code>#security-corpsec-identity</code> <small>（プライベート）</small><br>
 <i class="fas fa-shield-halved mr-2"></i>
 <span style="background-color: #b91c1c; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN SSO</span>
 <span style="background-color: #71717a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">ADMIN APP ROLE</span>
@@ -1111,7 +1083,7 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <!-- Sandbox Cloud -->
 <tr>
 <td>
-<a href="/handbook/security/corporate/systems/hackystack">Sandbox Cloud (HackyStack)</a><br>
+<a href="/handbook/company/infrastructure-standards/realms/sandbox/">Sandbox Cloud</a><br>
 <code>gitlabsandbox.cloud</code><br>
 </td>
 <td>
@@ -1199,31 +1171,6 @@ GitLab がオーガニックに成長するにつれて、いくつかの部門�
 <i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/yubikey">@gitlab-com/corpsys/yubikey</a><br>
 <i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-yubikey</code><br>
 <i class="fa-brands fa-slack mr-2"></i><code>Slack の Compass アプリ（上部検索バーに「Compass」と入力して見つけてください）または it-help@gitlab.com からお問い合わせください。</code><br>
-</td>
-</tr>
-<!-- Zoom -->
-<tr>
-<td>
-<a href="/handbook/security/corporate/systems/zoom">Zoom</a><br>
-<code>gitlab.zoom.us</code><br>
-</td>
-<td>
-<i class="fas fa-user-plus mr-2"></i><a href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=zoom_default">Open an Access Request</a><br>
-<i class="fas fa-gear mr-2"></i><a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?issuable_template=zoom_default">Engineering Issue</a>
-</td>
-<td>
-<a href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?label_name%5B%5D=corpsys-zoom">ARs</a>
-&nbsp;/&nbsp;<a href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?label_name%5B%5D=corpsys-zoom">Issues</a>
-&nbsp;/&nbsp;<a href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/epics?label_name[]=corpsys-zoom">Epics</a>
-<br>
-<i class="fas fa-book mr-2"></i><a href="https://handbook.gitlab.systems/zoom">Administration Runbooks</a><br>
-<i class="fas fa-tag mr-2"></i><code>corpsys-zoom</code><br>
-<i class="fa-brands fa-gitlab mr-2"></i><a href="https://gitlab.com/groups/gitlab-com/corpsys/zoom">@gitlab-com/corpsys/zoom</a><br>
-<i class="fa-brands fa-slack mr-2"></i><code>@corpsysadmins-zoom</code><br>
-<i class="fa-brands fa-slack mr-2"></i><code>Slack の Compass アプリ（上部検索バーに「Compass」と入力して見つけてください）または it-help@gitlab.com からお問い合わせください。</code><br>
-<i class="fas fa-shield-halved mr-2"></i>
-<span style="background-color: #0284c7; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER SSO</span>
-<span style="background-color: #71717a; color: #ffffff; font-weight: normal; padding: 2px 4px; border-radius: 0.25rem; letter-spacing: 0.05em; font-size: 10px;">USER APP ADMIN ROLE</span>
 </td>
 </tr>
 </tbody>

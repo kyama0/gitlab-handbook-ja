@@ -2,11 +2,11 @@
 title: "Technical Skills Exchange"
 description: "GitLab のテクニカルなフィールドチームメンバー向けの継続教育ウェブキャストシリーズ"
 upstream_path: /handbook/sales/training/customer-success-skills-exchange/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T07:54:58+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 Technical Skills Exchange（旧称 Customer Success Skills Exchange）は、テクニカルなフィールドチームメンバー向けトピックに焦点を当てた隔週ウェビナーです。このシリーズは主に Customer Success と SA 組織を念頭に企画されていますが、フィールドチームメンバーであれば誰でも参加歓迎です。
@@ -22,7 +22,7 @@ Technical Skills Exchange（旧称 Customer Success Skills Exchange）は、テ�
 
 Technical Skills Exchange のカレンダー招待を受け取るには、sales-cs メールグループに追加されていることを確認してください。
 
-メールグループへのアクセスを依頼するには [アクセスリクエストを提出](/handbook/security/corporate/end-user-services/access-requests/access-requests/) できます。これらのグループはミーティングに招待されているので、個人ごとに招待は不要です。
+メールグループへのアクセスを依頼するには [アクセスリクエストを提出](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) できます。これらのグループはミーティングに招待されているので、個人ごとに招待は不要です。
 
 ### トレーニングプレイリスト
 
@@ -36,13 +36,13 @@ Technical Skills Exchange のカレンダー招待を受け取るには、sales-
 
 - [Technical Skills Exchange Issue Board](hhttps://gitlab.com/gitlab-com/sales-team/field-operations/enablement/-/boards/7792277?label_name[]=Technical%20Skills%20Exchange) にある現四半期のプランニング Issue にコメントして、私たちのチームと連絡を取ってください
 
-### スピーカーの責任 {#speaker-responsibilities}
+### スピーカーの責任
 
 - セッション開始予定の少なくとも 2 分前に準備を整え、定刻通りに開始できるようにしてください。
 - スライドを Customer Success and SA Enablement プログラムマネージャーに送り、[ノートドキュメント](https://docs.google.com/document/d/1Zyj8u4JfiBi4gUSn9xAbRZ5H1erY9qpb8j0NzvFwwWg/edit) に追加してください
 - その他の関連リンクも [ノートドキュメント](https://docs.google.com/document/d/1Zyj8u4JfiBi4gUSn9xAbRZ5H1erY9qpb8j0NzvFwwWg/edit) に含めてください
 
-### モデレーターの責任 {#moderator-responsibilities}
+### モデレーターの責任
 
 #### Technical Skills Exchange の全体管理
 
@@ -72,6 +72,6 @@ Technical Skills Exchange のモデレーターとして、四半期のトピッ
 
 アナウンスのサンプル:
 
-> 昨日の Technical Skills Exchange セッション（<プレゼンター> が <セッションの概要> について話したもの）に参加できなかった方、録画が Highspot で公開されています！
+> 昨日の Technical Skills Exchange セッションで <Presenter> が < Summary of session> について話したものを見逃した場合、録画が Highspot で公開されています！
 >
 > [Highspot ページ](https://gitlab.highspot.com/items/6554f9b2501316c929028227) で過去のすべての録画セッションへのリンクを確認でき、セッションの [ノートドキュメント](https://docs.google.com/document/d/1Zyj8u4JfiBi4gUSn9xAbRZ5H1erY9qpb8j0NzvFwwWg/edit) でチームの Q&A を確認できます。

@@ -2,11 +2,11 @@
 title: "デベロッパーアドボケイトのコンテンツライブラリとワークフロー"
 description: "デベロッパーアドボカシーチームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/content/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T07:06:29+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:33:50+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-05T09:50:43+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 デベロッパーアドボカシーチームは、キャンペーン、フィールドイネーブルメント、製品ローンチサポート、ユースケース採用、顧客向けデモ、一般的な学習・オンボーディングに使用できるコンテンツを作成しています。チームが参加するすべてのコンテンツとアクティビティは、[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/) に従って Issue で追跡されます。
@@ -246,7 +246,7 @@ GitLab Unfiltered YouTube チャンネル:
 1. ソフトウェア:
    - 画面録画ソフトウェア: Quicktime、[OBS](#recording-with-obs)、[Screen Studio](#recording-with-screen-studio) をおすすめします。
    - ポスト編集ソフトウェア: Adobe Premiere Pro（動画のカット、音声ゲインブーストなど）
-   - アクセスリクエスト: ツールへのアクセスについては @johncoghlan に依頼し、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/) を作成してください。
+   - アクセスリクエスト: ツールへのアクセスについては @johncoghlan に依頼し、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/) を作成してください。
 1. 従うべき動画設定:
    - アスペクト比 / 解像度: 録画ウィンドウのサイズを 16x9 のアスペクト比に設定します。
        - 一般的な解像度は、画面録画の場合 1920×1080（16:9 アスペクト比）または 2880×1750 です。
@@ -378,7 +378,7 @@ OBS は画面録画をより細かく柔軟に制御できますが、トレー�
 
 #### Adobe Premiere Pro でのポスト編集 {#post-editing-with-adobe-premiere-pro}
 
-アクセス: [アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/)が必要です。[例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/30951)。
+アクセス: [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)が必要です。[例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/30951)。
 
 [Developer Advocacy showcase notes](https://docs.google.com/document/d/1co-DKoR4xn4JNIcynWPjoJsWo3vYzwj8WDFzX3uKrH0/edit?tab=t.0#heading=h.yrmatlea9dpq)（内部向け）と[録画](https://www.youtube.com/watch?v=qNH8NDShGJA)（公開版）を確認してください。
 

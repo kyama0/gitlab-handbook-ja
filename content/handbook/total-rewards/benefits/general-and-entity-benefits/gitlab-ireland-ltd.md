@@ -2,10 +2,10 @@
 title: "GitLab Ireland Ltd"
 description: "アイルランドのチームメンバー向けの GitLab の福利厚生を見つけよう"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/gitlab-ireland-ltd/
-upstream_sha: e829b207a53856c23a25197426cca945626ade8a
-lastmod: "2026-06-29T11:54:46-07:00"
-translated_at: "2026-07-05T00:04:57+09:00"
-translator: claude
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+lastmod: "2026-07-27T15:56:47-07:00"
+translated_at: "2026-07-29T06:11:55+09:00"
+translator: codex
 stale: false
 ---
 
@@ -455,7 +455,10 @@ TravelHub を通じて、自転車と公共交通機関の税金節約を利用�
 <details markdown="1">
 <summary>主な特徴</summary>
 
-- 最大 3,000 EUR
+- 上限
+  - 通常の自転車: EUR 1250
+  - 電動自転車: EUR 1500
+  - カーゴバイク: EUR 3000
 - 月次または年次の交通チケット  
 - 給与天引き (salary sacrifice) による税金節約
 

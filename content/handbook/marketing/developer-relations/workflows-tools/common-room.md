@@ -1,44 +1,44 @@
 ---
-title: "Common Room ワークフロー"
+title: "Common Room のワークフロー"
 upstream_path: /handbook/marketing/developer-relations/workflows-tools/common-room/
-upstream_sha: 6b2970dac4d9078a5a79c285a6ee08817ecbd954
-translated_at: "2026-05-01T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+lastmod: "2026-07-28T15:04:15+01:00"
+translated_at: "2026-07-30T09:28:09+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-27T10:00:00+01:00"
 ---
 
-[Common Room](https://www.commonroom.io/docs/get-started/) は、異なるプラットフォーム間のデータを統合し、メンバーを特定し、トレンドや感情を可視化することで、デジタルコミュニティの管理・エンゲージメント・成長を支援するコミュニティグロースプラットフォームです。
+[Common Room](https://www.commonroom.io/docs/get-started/) は、さまざまなプラットフォームのデータを統合し、メンバーを特定し、トレンドと感情をレポートすることで、デジタルコミュニティの管理、関与、成長を支援するコミュニティ成長プラットフォームです。
 
-[Developer Relations](/handbook/marketing/developer-relations/) チームは、コミュニティプラットフォーム全体からのインサイトを集約・レビューし、それを基にアクションを取るために Common Room を利用しています。トレンドやコミュニティ感情の追跡にも使用しています。
+[Developer Relations](/handbook/marketing/developer-relations/) チームは、コミュニティプラットフォーム全体からのインサイトを集約、レビューし、アクションを取るために Common Room を使用します。トレンドとコミュニティの感情を追跡するためにも使用します。
 
 ## Common Room へのアクセス
 
-アクセス権は Okta 経由で付与され、個人席（シート）ごとに課金されます。現在、空きシートはありません。追加のシートは Zip リクエスト経由で購入できます。
+アクセスは Okta 経由で付与され、個別のシートごとに課金されます。現在、利用可能な空きシートはありません。追加のシートは Zip リクエストで購入できます。
 
-Common Room へのアクセスをリクエストするには:
+Common Room へのアクセスをリクエストするには、
 
 1. ビジネスケースと説明をこのハンドブックページに追加してください。
-2. MR がマージされたら、`Individual_Bulk_Access_Request` テンプレートを使用して Common Room の[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を作成してください。
-3. ステップ 2 の _Justification for this access_（このアクセスが必要な理由）に、Common Room を使用するビジネスケースの説明とリンクを記載してください。
+2. MR がマージされたら、`Individual_Bulk_Access_Request` テンプレートを使用して、Common Room の [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を作成してください。
+3. ステップ 2 の _Justification for this access_ で、Common Room を使用するビジネスケースを説明し、リンクしてください。
 
-### 一時的なアクセス
+### 一時アクセス
 
-シート購入の事前評価のため、3 ヶ月間の一時的アクセスが利用可能です。Common Room との 30 分間のオンボーディングミーティングへの参加が必要です。
+シートを購入する可能性を評価するため、3 か月間の一時アクセスを利用できます。Common Room との 30 分間のオンボーディングを行う必要があります。
 
-1. Individual_Bulk_Access_Request テンプレートを使用して[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を作成してください。3 ヶ月間の一時シートであることを明記してください。
-2. Developer Evangelism Meta に[機密 Issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=common-room-temporary-access) を作成し、一時シートの有効期限を記録してください。
-3. `@sugaroverflow` が Common Room との必須オンボーディングミーティングをスケジュールし、3 ヶ月後にシートをデプロビジョニングします。
+1. Individual_Bulk_Access_Request テンプレートを使用して[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を作成してください。3 か月間の一時シートであることを指定してください。
+2. Developer Evangelism Meta で[機密 Issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=common-room-temporary-access)を作成して、一時シートの有効期限を記録してください。
+3. `@sugaroverflow` が Common Room との必須オンボーディングミーティングを予定し、3 か月後にシートをデプロビジョニングします。
 
 ## GitLab データ
 
-Common Room はネイティブには GitLab と統合されていません。
-データ取り込みのため、スケジュールパイプラインで実行される[カスタム Ruby スクリプト](https://gitlab.com/gitlab-org/developer-relations/gitlab-common-room-api-source)があります。
+Common Room は GitLab とネイティブには統合されていません。
+スケジュールされたパイプラインで実行されてデータを取り込む[カスタム Ruby スクリプト](https://gitlab.com/gitlab-org/developer-relations/gitlab-common-room-api-source)があります。
 
 ## リソース
 
-* Common Room の[入門ドキュメント](https://www.commonroom.io/docs/get-started/)。
-* Common Room の[コミュニティ育成のためのプレイブック](https://www.commonroom.io/resources/)。
+* Common Room の[開始方法に関するドキュメント](https://www.commonroom.io/docs/get-started/)。
+* Common Room の[コミュニティ育成のプレイブック](https://www.commonroom.io/resources/)。
 
 ## Developer Relations のビジネスケース
 
@@ -48,28 +48,28 @@ Common Room はネイティブには GitLab と統合されていません。
 
 **説明**:
 
-* [セグメント](https://www.commonroom.io/docs/using-common-room/segments/) Heroes、Core Team、MVPs を監視。
-* これらのセグメントでトレンドのトピックやネガティブな感情を追跡。
-* 活動内容に基づき、潜在的な新規コントリビューターを発見。
+* [セグメント](https://www.commonroom.io/docs/using-common-room/segments/)の Heroes、Core Team、MVP を監視します。
+* それらのセグメントでどのトピックがトレンドになっているかを確認し、ネガティブな感情を追跡します。
+* 活動に基づいて、新しいコントリビューターになる可能性がある人を見つけます。
 
 **KPI**:
 
-* 各セグメントにおけるアクティブコントリビューターの数とエンゲージメント率。
+* 各セグメントのアクティブなコントリビューター数とエンゲージメント率。
 
 **成果**:
 
-* トップコントリビューター、スーパーユーザー、新たなスーパーユーザー候補の活動と興味の理解の向上。
-* さまざまな種類のコントリビューションへのインサイト。
+* 上位のコントリビューター、スーパーユーザー、新たなスーパーユーザー候補の活動と関心をよりよく理解します。
+* さまざまな種類のコントリビューションに関するインサイト。
 
-### コミュニティエンゲージメントのトラッキング
+### コミュニティエンゲージメントの追跡
 
 **DRI**: [Fatima Sarah Khalid](https://gitlab.com/sugaroverflow)
 
 **説明**:
 
-* すべてのコミュニティプラットフォーム横断で人気のディスカッションをレビュー。
-* カスタムダッシュボードの作成またはレポートのエクスポートで分析・レポーティングを実施。
-* ネガティブ感情とトレンドのトピックを追跡。
+* すべてのコミュニティプラットフォームで人気のあるディスカッションをレビューします。
+* カスタムダッシュボードを作成するか、レポートをエクスポートして分析とレポート作成を行います。
+* ネガティブな感情とトレンドのトピックを追跡します。
 
 **KPIs**:
 
@@ -79,45 +79,45 @@ Common Room はネイティブには GitLab と統合されていません。
 
 **成果**:
 
-* コミュニティプラットフォームのエンゲージメントのレベルと種類の理解。
-* 人気のトレンドとネガティブ感情を早期に把握。
-* 活動やエンゲージメントが低い場合の議論や戦略を促進。
+* コミュニティプラットフォームにおけるエンゲージメントのレベルと種類を理解します。
+* 人気のトレンドとネガティブな感情を早期に明らかにします。
+* 活動またはエンゲージメントの低さに関する議論または戦略を促します。
 
-### ソートリーダーシップのためのキーワードトレンドの特定とモニタリング
+### ソートリーダーシップのためのキーワードトレンドの特定と監視
 
 **DRI**: [Developer Advocacy](/handbook/marketing/developer-relations/developer-advocacy/)
 **説明**:
 
-* チームアラート経由でトレンドのキーワードや会話を追跡。
-* これらのキーワードがコミュニティと目標にどの程度関連しているかを評価。
-* ソートリーダーシップ向けのコンテンツ作成の参考や将来の利用に向けて、キーワードバンクを作成・更新。
+* チームアラートを通じてトレンドのキーワードと会話を追跡します。
+* これらのキーワードが私たちのコミュニティと目標に関連するかを評価します。
+* ソートリーダーシップの参考および今後のコンテンツ作成のために、キーワードバンクを作成・更新します。
 
 **KPIs**:
 
-* トレンドキーワードの数と頻度。
+* トレンドのキーワードの数と頻度。
 
 **成果**:
 
-* コミュニティ内でトレンドとなっているトピックを把握し続ける。
-* トレンドのトピックとコミュニティの関心に基づいてコンテンツ制作を導く。
+* コミュニティ内のトレンドトピックについて常に情報を得ます。
+* トレンドトピックとコミュニティの関心に基づいてコンテンツ作成を導きます。
 
-### Open Source プログラムの機会発掘
+### Open Source プログラムの機会の特定
 
 **DRI**: [Developer Relations Programs](/handbook/marketing/developer-relations/programs/)
 
 **説明**:
 
-* [Open Source プログラム](/handbook/marketing/developer-relations/programs/open-source-program/)向けに潜在的な組織を監視。
-* 既存パートナー（セグメント経由）の活動、トレンドキーワード、感情をレビューし、潜在的なコラボレーションを特定。
+* [Open Source プログラム](/handbook/marketing/developer-relations/programs/open-source-program/)の潜在的な組織を監視します。
+* 潜在的な協業を特定するため、既存パートナー（セグメント経由）の活動、トレンドのキーワード、感情をレビューします。
 
 **KPI**:
 
-* 既存パートナー組織からのアクティブな参加率。
+* 既存のパートナー組織によるアクティブな参加の割合。
 
 **成果**:
 
-* OSS プログラム向けの潜在メンバーや活動を特定。
-* 機会を主体的に発掘することでコラボレーションの数と質を向上。
+* OSS プログラムの潜在的なメンバーと活動を特定します。
+* 機会を積極的に特定して協業の数と質を向上させます。
 
 ### 新規メンバーのオンボーディング（Discord）
 
@@ -125,34 +125,34 @@ Common Room はネイティブには GitLab と統合されていません。
 
 **説明**:
 
-* コミュニティ内の新規メンバーを自動的に特定し、主要リソースとコミュニティガイドラインを含むウェルカムメッセージを送信。自動フォローアップのオプションも含みます。
+* コミュニティの新規メンバーを自動的に特定し、主要なリソースとコミュニティガイドラインを含むウェルカムメッセージを送信します。自動フォローアップのオプションも含まれます。
 
 **KPIs**:
 
-* オンボードされた新規メンバーの数とエンゲージメント率。
+* オンボーディングした新規メンバー数とエンゲージメント率。
 * 新規メンバーの定着率。
 
 **成果**:
 
-* 新規メンバーがコミュニティへスムーズに移行できる。
-* エンゲージメントと定着率の向上の可能性。
+* 新規メンバーがコミュニティにスムーズに移行します。
+* エンゲージメントと定着率が向上する可能性があります。
 
-## Common Room からの情報のリクエスト
+## Common Room から情報をリクエストする
 
-Common Room からの情報抽出をリクエストする場合は、[Developer Advocacy Meta プロジェクトに機密 Issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/de-tmm-meta/-/issues) をリクエストの詳細とともに作成し、`@sugaroverflow` にアサインしてください。DevRel チームがクエリを実行し、レポートを PDF として Issue にエクスポートします。
+Common Room から情報を抽出するリクエストについては、[Developer Advocacy Meta プロジェクトで機密 Issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/de-tmm-meta/-/issues)を開き、リクエストの詳細を記載して `@sugaroverflow` に割り当ててください。その後、DevRel チームがクエリを実行し、レポートを PDF として Issue にエクスポートできます。
 
-リクエストは情報のエクスポートのほか、Slack への[チームアラート](https://www.commonroom.io/docs/using-common-room/team-alerts-page/)の設定も可能です。レポーティングの種類は [Common Room のドキュメント](https://www.commonroom.io/docs/using-common-room/reporting-page/room-overview/)で詳しく確認できます。
+リクエストは、情報をエクスポートすることも、Slack への[チームアラート](https://www.commonroom.io/docs/using-common-room/team-alerts-page/)を設定することもできます。レポートの種類の詳細は、[Common Room のドキュメント](https://www.commonroom.io/docs/using-common-room/reporting-page/room-overview/)で確認できます。
 
-リクエストベースのビジネスケースの例:
+リクエストに基づくビジネスケースをいくつか示します:
 
-### 特定顧客のエンゲージメント追跡
+### 特定の顧客エンゲージメントの追跡
 
 **DRI**: [Jordan Chivell](https://gitlab.com/jchivell)
 
 **説明**:
-営業（Sales）が特定の顧客に関する重要情報やコンテキストを得たい場合があります。コミュニティでの顧客のインタラクションパターン（投稿、コメント、関心領域、コミュニティプラットフォームで提起した質問など）を確認したいというニーズです。
+Sales は、特定の顧客に関する重要な情報やコンテキストを得たい場合があります。Sales は、コミュニティでの顧客の交流パターン（投稿、コメント、主な関心領域、コミュニティプラットフォームで提起した可能性があるクエリ）を確認したいと考えます。
 
 **成果**:
 
-* コミュニティ内での顧客行動の理解の向上。
-* コミュニティからの重要なコンテキスト情報を提供することで、営業のパイプライン生成プロセスを支援。
+* コミュニティ内の顧客行動に対する理解を深めます。
+* コミュニティからの重要なコンテキスト情報を提供して、営業パイプラインの生成プロセスを支援します。

@@ -3,11 +3,11 @@ title: Cloud Licensing と Support による除外プロセスの解説
 description: "Cloud Licensing を使用できない顧客向けにレガシーライセンスを生成する方法"
 category: GitLab Self-Managed licenses
 upstream_path: /handbook/support/license-and-renewals/workflows/self-managed/cloud-licensing/
-upstream_sha: 9da08370100b76603b2eb82901592f9d21c9766c
-translated_at: "2026-05-08T11:18:50Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:59:13+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-15T10:59:14-06:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ## Cloud Licensing の概要
@@ -60,7 +60,7 @@ Pre-Sale 除外プロセスは **唯一の** オプトアウト手段として�
 
 1. 適切な Zendesk インスタンスにサインインします。
    1. Global Support: [Zendesk Global](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780)
-   1. US Gov Support: [Zendesk US Gov](https://gitlab-federal-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=41826474429588)
+   1. U.S. Government Support: [Zendesk U.S. Government](https://gitlab-federal-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=41826474429588)
 1. "What category of request?*" のプロンプトで以下を選択します。
    1. サブメニュー "Self-Managed License Related (for paid customers only)" を選択
    1. そのサブメニューの中で "Cloud Licensing exemption" を選択

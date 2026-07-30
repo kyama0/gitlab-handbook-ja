@@ -1,11 +1,11 @@
 ---
 title: "People Analytics サーベイサポート"
 upstream_path: /handbook/people-group/people-ops-tech-analytics/people-analytics/survey-support/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:48:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-09-30T12:30:49-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 従業員サーベイ
@@ -72,4 +72,4 @@ Culture Amp のすべてのサーベイには、設定する必要のある `Lau
 
 ## レポートアクセスのリクエスト
 
-リーダーが新しいロールに移ったり、People Business Partner の責任が変わって Culture Amp の特定のサーベイレポートへのアクセスを付与する必要がある場合があります。例：新しいディレクターが加入し、前任のリーダーの下での自分の組織のエンゲージメントサーベイの結果をレビューしたい場合。この例では、新ディレクター（またはその People Business Partner）は結果を含むレポートを閲覧するために[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を提出する必要があります。適切な承認が得られた後、Culture Amp への admin アクセスを持つ People Technology チームまたは People Analytics チームのチームメンバーがリクエストされたレポートを共有します。アクセスリクエストプロセスに従うことで、アクセスを付与する前に適切な承認を得ていることを保証します。
+リーダーが新しいロールに移ったり、People Business Partner の責任が変わって Culture Amp の特定のサーベイレポートへのアクセスを付与する必要がある場合があります。例：新しいディレクターが加入し、前任のリーダーの下での自分の組織のエンゲージメントサーベイの結果をレビューしたい場合。この例では、新ディレクター（またはその People Business Partner）は結果を含むレポートを閲覧するために[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を提出する必要があります。適切な承認が得られた後、Culture Amp への admin アクセスを持つ People Technology チームまたは People Analytics チームのチームメンバーがリクエストされたレポートを共有します。アクセスリクエストプロセスに従うことで、アクセスを付与する前に適切な承認を得ていることを保証します。

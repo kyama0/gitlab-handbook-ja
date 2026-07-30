@@ -6,11 +6,11 @@ tags:
   - security_standard
   - security_standard_acia
 upstream_path: /handbook/security/policies_and_standards/password-standard/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T07:26:07+09:00"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:29:34+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-19T22:33:35-07:00"
+lastmod: "2026-07-28T10:04:46-07:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -103,7 +103,7 @@ MFA が GitLab にどのように適合するかをより理解するには、�
 
 #### アプリケーション認証要件
 
-- FY23 Q3 以降、GitLab の機密データを格納するすべてのサードパーティアプリケーションは、[GitLab の集中認証・認可アプローチに従って Okta 経由で認証する](/handbook/security/corporate/end-user-services/okta/#what-is-okta)ことが必須です。Okta がサポートされていないすべてのケースでは、[Security Notices](/handbook/security/security-assurance/security-risk/third-party-risk-management/#tprm-security-notice-process) が必要となります。
+- FY23 Q3 以降、GitLab の機密データを格納するすべてのサードパーティアプリケーションは、[GitLab の集中認証・認可アプローチに従って Okta 経由で認証する](/handbook/eta/corporate-it/end-user-services/okta/#what-is-okta)ことが必須です。Okta がサポートされていないすべてのケースでは、[Security Notices](/handbook/security/security-assurance/security-risk/third-party-risk-management/#tprm-security-notice-process) が必要となります。
 - アプリケーションへの認証には多要素認証（トークン、OTP ジェネレーター、SSO、YubiKey）が含まれるべきです。
 - 認証ポータルへのログイン後の OIDC、SAML、WS-Federation は、技術的に可能な場合（例: Okta）必須です。
 - アプリケーションへの認証は、グループではなく個別のユーザーをサポートするべきです。

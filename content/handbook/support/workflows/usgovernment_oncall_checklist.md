@@ -3,11 +3,11 @@ title: 米国政府向けオンコールシフトの準備
 category: Handling tickets
 description: "米国政府向けオンコールシフトの準備手順を解説するサポートエンジニアリングのワークフロー"
 upstream_path: /handbook/support/workflows/usgovernment_oncall_checklist/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T04:02:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:31:24+09:00"
+translator: codex
 stale: false
-lastmod: "2025-11-27T20:17:50+00:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 米国政府向けサポートのオンコールシフトを開始する前に、特に初回のシフトやデバイスを変更したあとは、緊急ケースの受信、確認、対応のためのインテグレーションとアクセスが正しく構成されていることを確認してください。
@@ -33,7 +33,7 @@ lastmod: "2025-11-27T20:17:50+00:00"
 
 それ以外のフィールドは入力不要なので、**Create Incident** をクリックします。
 
-## Dedicated for Government
+## 政府専用
 
 [FedRAMP Okta](https://gitlabus.okta.com/) からロックアウトされた場合、ロック解除のプロセスにはある程度の時間がかかることがあります。オンコールシフトが始まる前の週の早い段階で必ずこれを試しておきましょう。
 

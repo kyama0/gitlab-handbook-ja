@@ -1,12 +1,12 @@
 ---
-title: "Marketing Operations"
+title: "マーケティングオペレーション"
 description: "Marketing Operations (MktgOps) は、マーケティングチーム全体をサポートし、プロセスを合理化し関連ツールを管理します。これらのツールにより、GitLab の他のチームもしばしばサポートします。"
 upstream_path: /handbook/marketing/marketing-operations/
-upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
-translated_at: "2026-07-22T06:32:52+09:00"
-translator: "claude"
+upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
+translated_at: "2026-07-30T08:58:52+09:00"
+translator: "codex"
 stale: false
-lastmod: "2026-07-21T09:53:23-06:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -53,7 +53,7 @@ Marketing Operations は、マーケティング組織がプロセスを合理�
   </div>
 </div>
 
-### ハンドブックの更新 {#handbook-updates}
+### ハンドブックの更新
 
 ハンドブックページのワークフローを更新する際は、関連する Slack チャンネルにマージされた MR をプッシュするように設定し、ページに加えられた変更をチームが認識できるようにしてください。マージされた MR が該当する Slack チャンネルに表示されるようにするには、MR に以下の対応する `labels` のいずれかを追加する必要があります。
 
@@ -401,7 +401,7 @@ Tech Stack の補完として、ティア 1 およびティア 2 のツールを
 
 ### 既存ツールへのアクセスのリクエスト
 
-ほとんどのツールはプロビジョニングのために Lumos に移行されています。Lumos でツールを見つけられない場合は、ビジネスオペレーションハンドブックに記載されている [アクセスリクエストプロセス](/handbook/security/corporate/end-user-services/access-requests/access-requests/) に従ってください。
+ほとんどのツールはプロビジョニングのために Lumos に移行されています。Lumos でツールを見つけられない場合は、ビジネスオペレーションハンドブックに記載されている [アクセスリクエストプロセス](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) に従ってください。
 
 スタック内のツールへのアクセスが必要なコントラクターまたはコンサルタントと作業している場合は、調達ハンドブックに記載されている [プロフェッショナルサービスアクセスリクエストプロセス](/handbook/finance/procurement/) に従ってください。
 

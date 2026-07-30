@@ -3,11 +3,11 @@ title: SME オペレーション - コラボレーションプロジェクト、
 
 description: SME プログラムオペレーションに必要な SME コラボレーションプロジェクト、Google Groups、Slack チャンネルを説明します
 upstream_path: /handbook/solutions-architects/sa-practices/subject-matter-experts/sme-operations/
-upstream_sha: fb150f3a4f831172cf23c7f0d75b0d6310a68972
-translated_at: "2026-05-08T18:59:21Z"
-translator: claude
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:25:33+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## StackOverflow（TBD）
@@ -189,7 +189,7 @@ SME 関心領域が正式 SME プログラムになるとき、これらは設�
 * SA SME 参加者のリストを維持 - [SME](https://gitlab.com/gitlab-com/customer-success/subject-matter-experts/cs-subject-matter-experts/-/tree/main#who-are-the-current-smes-and-what-areas-are-they-focused-on) のリストを確認
 * 各領域のプールとして潜在的な SME（SME アソシエイト）のリストを維持
 * カレンダー目的のために必要な SME google グループを作成
-   1. IT に [アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) を開いて Google Group を作成してもらう。
+   1. IT に [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) を開いて Google Group を作成してもらう。
    2. 他の SME 領域と同じ命名規則を使用し、DRI をグループオーナーとグループマネージャーとして提供する。例として、この [Issue](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/34007) を複製できます。
    3. IT によって Google Group が作成されたら、グループオーナー/マネージャーは Google Groups ページに移動し、SME をグループメンバーとして追加できる。
 * SME に質問に答えてもらうように Stack OverFlow をセットアップ。

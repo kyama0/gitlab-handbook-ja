@@ -2,11 +2,11 @@
 title: ブラウザ拡張機能
 description: GitLab サポートチーム向けのブラウザ拡張機能の管理、開発、公開に関するドキュメント
 upstream_path: /handbook/support/browser-extensions/
-upstream_sha: cf317047d2c9678524c0db59ab7ed8c050713245
-translated_at: "2026-05-09T00:00:00Z"
-translator: claude
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:25:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-05T14:58:07-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 GitLab サポートチームは、サポートエンジニアの日常業務に役立ついくつかのブラウザ拡張機能を管理しています。このページでは、これらの拡張機能がどのように管理、開発、公開されているかをドキュメント化しています。
@@ -48,7 +48,7 @@ Chrome Web Store 発行者アカウントへのアクセスをリクエストす
    - ⚠️ **登録プロセス中に[事業者検証](https://developer.chrome.com/docs/webstore/program-policies/trader-disclosure)フォームの入力を求められても、入力しないでください**。
 1. Anton Smith (Slack の `@anton`) に連絡し、共有「GitLab Inc」発行者アカウントへのアクセスをリクエストしてください。
 
-なお、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)は不要です。
+なお、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)は不要です。
 
 #### アクセス管理
 

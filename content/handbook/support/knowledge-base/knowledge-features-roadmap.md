@@ -2,11 +2,11 @@
 title: ナレッジベースの機能とロードマップ
 description: このセクションでは、リクエストされた機能や進行中の機能、およびナレッジロードマップを提供します
 upstream_path: /handbook/support/knowledge-base/knowledge-features-roadmap/
-upstream_sha: 597f4cdde51f70d22792d64c8bf63dff58c6fda8
-translated_at: "2026-05-08T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T07:06:20+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-04T13:35:11-05:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ### この表では、現在 **進行中（IN PROGRESS）** の取り組みの概要を提供します

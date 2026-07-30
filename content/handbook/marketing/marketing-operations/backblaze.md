@@ -2,11 +2,11 @@
 title: "Backblaze"
 description: "Backblaze はデジタルプロダクションが利用する高性能なクラウドストレージツールです。"
 upstream_path: /handbook/marketing/marketing-operations/backblaze/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:02:57+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -19,7 +19,7 @@ Backblaze は、デジタルプロダクションチームが動画アーカイ�
 
 ## アクセス
 
-Backblaze へのアクセスを依頼するには、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) を作成してください。Backblaze は各ユーザーにユーザーシートを提供するツールではありません。UI へのアクセスが必要なユーザーには、1つのアカウントと1つのログインのみが提供されます。アクセスが必要な理由を明記してください。このツールは主に、大量のデータを管理しているデジタルプロダクションチーム向けであるため、リクエストが承認されない場合があります。
+Backblaze へのアクセスを依頼するには、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) を作成してください。Backblaze は各ユーザーにユーザーシートを提供するツールではありません。UI へのアクセスが必要なユーザーには、1つのアカウントと1つのログインのみが提供されます。アクセスが必要な理由を明記してください。このツールは主に、大量のデータを管理しているデジタルプロダクションチーム向けであるため、リクエストが承認されない場合があります。
 
 ## トレーニング
 

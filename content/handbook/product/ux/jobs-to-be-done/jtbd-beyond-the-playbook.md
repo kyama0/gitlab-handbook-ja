@@ -3,11 +3,11 @@ title: JTBD - Playbook を超えて
 description: >-
   JTBD は、GitLab が実施する多くのリサーチおよびデザインアクティビティで、戦略的機会を明確にし洗練するために使用できます。
 upstream_path: /handbook/product/ux/jobs-to-be-done/jtbd-beyond-the-playbook/
-upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
-translated_at: "2026-07-24T06:17:58+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-29T23:22:04Z"
 translator: codex
 stale: false
-lastmod: "2026-07-23T12:35:46-03:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ## 混合手法のリサーチで Jobs to be Done を使用する
@@ -20,7 +20,7 @@ JTBD は、調査からユーザビリティベンチマーキングまで、多
 
 例: 脆弱性レポートページを使用しているセキュリティ専門家が必要な研究があるとしましょう。
 
-   [GitLab のユーザーペルソナリスト](/handbook/product/personas/#list-of-user-personas) のセキュリティペルソナで使用される職種を見ると、Security Analyst、Security Operation Engineer、Security Consultant、Application Security Engineer など 10 以上の職種に及ぶリストになります。このリストは回答者にとって回答するのが非常に煩雑であり、理想的な候補者の日々の役割を正確に反映していない可能性があります。
+   [GitLab のユーザーペルソナリスト](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#list-of-user-personas) のセキュリティペルソナで使用される職種を見ると、Security Analyst、Security Operation Engineer、Security Consultant、Application Security Engineer など 10 以上の職種に及ぶリストになります。このリストは回答者にとって回答するのが非常に煩雑であり、理想的な候補者の日々の役割を正確に反映していない可能性があります。
 
    [Secure および Software Supply Chain Security ステージ向けの JTBD](/handbook/upstream-studios/product-design/ux-themes/) を使用して、研究に理想的な 2、3 のジョブ／ジョブパフォーマーを特定できます。これらのジョブステートメントを例に見てみましょう: 「組織の資産のリスクを特定する」と「検出されたビジネス上重要な脆弱性に対処する」。さらに、不適合な候補者を除外する無効なオプションを含めたい場合、Secure セクションの他のワークフローからのジョブを含めることができます。このスクリーナー質問は、参加者が選択できる少数のオプションになり、結果として理想的な候補者を正確に反映する参加者を得ます。
 

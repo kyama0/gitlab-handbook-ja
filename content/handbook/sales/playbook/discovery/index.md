@@ -2,11 +2,11 @@
 title: "効果的なディスカバリー"
 description: "効果的なディスカバリーは、顧客のニーズを徹底的に理解するために重要であり、GitLab の価値と差別化を魅力的で顧客中心の方法で効果的に明確化できる基盤を確立します"
 upstream_path: /handbook/sales/playbook/discovery/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:03:43+09:00"
+translator: codex
 stale: false
-lastmod: "2025-01-23T11:43:11+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ## 概要
@@ -61,7 +61,7 @@ lastmod: "2025-01-23T11:43:11+00:00"
 見込み顧客の組織内のさまざまな役割は、本質的に異なるものを気にし、異なるものに動機付けられます。あなたが関与しているペルソナの課題と動機を理解するために、以下のリソースを活用してください。
 
 - [Buyer personas](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)
-- [User personas](/handbook/product/personas/#user-personas)
+- [User personas](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)
 
 <!-- blank line -->
 <figure class="video_container">

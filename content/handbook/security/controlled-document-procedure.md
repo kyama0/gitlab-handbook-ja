@@ -3,11 +3,11 @@ title: "管理文書手順"
 description: "GitLab は、期待されることを確立するポリシーや標準と、ポリシーや標準を実行に移す手順を通じて、コントロール活動を展開します。"
 controlled_document: true
 upstream_path: /handbook/security/controlled-document-procedure/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+lastmod: "2026-07-26T22:43:19-07:00"
+translated_at: "2026-07-30T07:12:47+09:00"
+translator: codex
 stale: false
-lastmod: "2025-11-19T20:38:24+00:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -102,7 +102,7 @@ GitLab の誰もが、管理文書の作成や変更提案のためにマージ�
 
 例外申請の承認要件は、Issue テンプレート内に記載されています。リクエスターは、承認マトリクスに従って承認を提供する必要がある適切な個人にタグを付ける必要があります。
 
-ビジネスが承認決定に対して異議を申し立てたい場合、その異議は legal@gitlab.com の Legal に送られます。Legal は、例外が承認された場合の会社へのリスクの提案について意見を起草します。Legal の意見は、最終決定のために CEO と CFO に転送されます。
+ビジネスが決定に対して異議を申し立てたい場合、その異議は legal@gitlab.com の Legal に送られます。Legal は、例外が承認された場合の会社へのリスクの提案について意見を起草します。Legal の意見は、最終決定のために CEO と CFO に転送されます。
 
 例外承認は以下を満たす必要があります。
 
@@ -123,4 +123,4 @@ GitLab の誰もが、管理文書の作成や変更提案のためにマージ�
 
 - [GCF Compliance Controls](/handbook/security/security-assurance/security-compliance/sec-controls/)
 - [Data Classifiation Standard](/handbook/security/policies_and_standards/data-classification-standard/)
-- [Controlled Documents Work Instruction](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance/controlled-documents-program/-/blob/main/runbooks/controlled_document_annual_review_work_instruction.md)
+- [Controlled Documents Work Instruction](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance-and-field-security/governance/controlled-documents-program/-/blob/main/runbooks/controlled_document_annual_review_work_instruction.md)

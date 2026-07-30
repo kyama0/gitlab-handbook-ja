@@ -1,11 +1,11 @@
 ---
 title: "補助ソリューションリソース: GitOps"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T00:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:52:04+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-07T16:47:36-08:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 #### 連絡先
@@ -81,16 +81,16 @@ GitOps は [Infrastructure as Code](https://about.gitlab.com/topics/gitops/infra
 
 Infrastructure as Code はプラットフォームの理解とアプリケーション環境の望ましい状態の理解を必要とします。Infrastructure as Code のユーザーは、SCM ツールとしての Git と、プロビジョニング・管理を期待されるプラットフォームの両方をよく理解しています。以下に Infrastructure as Code の主なパワーユーザーをいくつか挙げます。
 
-- [Sam, SRE](/handbook/product/personas/)
+- [Sam, SRE](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)
   Sam は機能開発者と同じサービスチームに組み込まれて働きます。サービスを稼働させ続け、デプロイし、そのサービスのインフラニーズを管理する作業を行います。プラットフォームチームと協力してベストプラクティスを体系化します。
 
-- [Devon, DevOps エンジニア](/handbook/product/personas/)
+- [Devon, DevOps エンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)
   Devon は開発チームに対する Ops のインターフェースを担当することが多いです。インフラ、環境、統合のサポートを提供します。Devon はコードに精通しており、多数の異なるツールやコンテキストスイッチではなく、コードを通じてインフラを管理することを好みます。
 
-- [Priyanka, プラットフォームオペレーター](/handbook/product/personas/)
-  インフラ管理はプラットフォームチームの主な責任の一つです。[Priyanka](/handbook/product/personas/#priyanka-platform-engineer) は、開発チームがソフトウェアをより迅速に出荷・運用するために活用する共有プラットフォーム（伝統的なものまたは現代のクラウドプラットフォーム）の提供、保守、運用に責任を持っています。
+- [Priyanka, プラットフォームオペレーター](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)
+  インフラ管理はプラットフォームチームの主な責任の一つです。[Priyanka](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer) は、開発チームがソフトウェアをより迅速に出荷・運用するために活用する共有プラットフォーム（伝統的なものまたは現代のクラウドプラットフォーム）の提供、保守、運用に責任を持っています。
 
-- [Sydney, システム管理者](/handbook/product/personas/#sidney-systems-administrator)
+- [Sydney, システム管理者](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator)
   Sydney はアプリケーションチームのインフラと構成を定義、保守、スケールします。同じタスクに対する繰り返しの依頼を受けることがしばしばあります。Sydney の主な動機は、エラーを最小限に抑え時間を節約するために繰り返しのタスクを自動化すること、そしてインフラと構成を変更が追跡される方法で定義し、インフラ変更が[ワイルドウェスト](https://en.wikipedia.org/wiki/Cowboy_coding) になるのを止めることです。
 
 ### バイヤーペルソナ

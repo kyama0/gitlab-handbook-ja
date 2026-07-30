@@ -2,11 +2,11 @@
 title: "アイデンティティおよびアクセス管理（IAM）v3"
 description: "Security Identity チームは、内部 GitLab システム、クラウドインフラ、テックスタックアプリケーションの次世代アイデンティティおよびアクセス管理（IAM）、ロールベースアクセスコントロール（RBAC）、管理者アクセス制御に関する技術戦略と自動化実装をリードしています。"
 upstream_path: /handbook/security/identity/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
-translator: claude
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:29:34+09:00"
+translator: codex
 stale: false
-lastmod: "2025-10-17T10:18:03-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -75,7 +75,7 @@ GitLab Identity v1 は 2018 年以前、Infrastructure および People Operatio
 
 ### GitLab Identity v2
 
-GitLab Identity v2 は私たちが今日行っており、2018 年以降 [baseline entitlements](https://internal.gitlab.com/handbook/security/corporate/end-user-services/access-request/baseline-entitlements/) と[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) で実施しているものです。詳細は [Access Management Policy](/handbook/security/security-and-technology-policies/access-management-policy/) を参照してください。
+GitLab Identity v2 は私たちが今日行っており、2018 年以降 [baseline entitlements](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/) と[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) で実施しているものです。詳細は [Access Management Policy](/handbook/security/security-and-technology-policies/access-management-policy/) を参照してください。
 
 私たちが今日行っているプロセスは監査とコンプライアンスの要件を満たしていますが、プロセスはほとんど手動であり、結果として内部の非効率性が生じています。オンボーディング、アクセスリクエスト、アクセスレビュー、オフボーディングのプロセスを管理するには多くの工数を要します。
 
@@ -138,7 +138,7 @@ Identity Platform は、[CI/CD パイプラインジョブ](/handbook/security/i
 - 1Password 管理
 - Google Cloud アーキテクチャ
 
-詳細は関連するハンドブックページを参照、`#security-identity-ops` に質問するか、Jeff Martin と通話をスケジュールしてください。
+詳細は関連するハンドブックページを参照するか、`#security-identity-eng` に質問してください。
 
 ### 自動化のオプション
 
@@ -336,37 +336,7 @@ dmurphy:
 
 [Identity Engineering](/handbook/security/threat-management/identity) チームは、2023-12-01 の部門横断的な再編成で [Security Threat Management](/handbook/security/threat-management) サブ部門に編成され、GitLab における次世代のアイデンティティおよびアクセス管理フレームワークとプログラムである [Identity v3](#gitlab-identity-v3) として、[2024 年を通じて反復的にリリース](https://gitlab.com/groups/gitlab-com/gl-security/identity/eng/-/roadmap?state=all&sort=start_date_asc&layout=QUARTERS&timeframe_range_type=THREE_YEARS&group_path=gitlab-com/gl-security/identity/eng&progress=WEIGHT&show_progress=true&show_milestones=false&milestones_type=ALL&show_labels=true) されるブランドの設計と実装をリードしています。
 
-Identity チームには 3 つの機能専門があり、私たちの [stable counterparts](/handbook/security/identity/counterparts) と部門横断的にコラボレーションしています。
-
-### Identity Infrastructure Engineering
-
-Identity Infrastructure チームは、[Infrastructure Security](/handbook/security/product-security/infrastructure-security) チームとコラボレーションして、AWS と GCP のクラウドプロバイダのトップレベル組織レベル管理に焦点を当てています。
-
-ユーザーが自身の AWS アカウントと GCP プロジェクトを作成できるセルフサービスツールを構築し、城壁の硬化を提供します。
-
-インフラリソースをデプロイする各チームは、業界のベストプラクティスを使用して、自身のインフラワークロードと DevOps 業務を管理する責任を負います。つまり、Security チームは城のための足場を作り、硬化された城壁を提供しますが、城壁の中で構築するものについては各チームに責任があります。
-
-詳細は [Identity Infrastructure](/handbook/security/identity/infrastructure) ハンドブックページを参照してください。
-
-- **Slack Channel:** `#security-identity-ops`
-- **Slack Tag:** `@security-identity`
-- **GitLab Tag:** `@gitlab-com/gl-security/identity/infra`
-- **Epics:** [gitlab.com/gl-security/identity/infra](https://gitlab.com/groups/gitlab-com/gl-security/identity/infra/-/epics)
-- **Issue Tracker:** [gitlab.com/gl-security/identity/infra/issue-tracker](https://gitlab.com/gitlab-com/gl-security/identity/infra/issue-tracker/-/issues)
-- **Escalation DRI:** Jeff Martin または Vlad Stoianovici
-
-### Identity Operations
-
-2024 年中頃に GitLab Identity v3 をオペレーション化する際、IT Operations、People Operations、Security Operations チームから部門横断的なチームメンバーが配置され、Okta、Okta IGA、および Identity Platform の日々の管理を実施し、業務およびユーザーリクエストを処理します。
-
-その間、Identity Platform Engineering と Identity Infrastructure チームメンバーが [counterparts](/handbook/security/identity/counterparts) とコラボレーションしてカバーします。
-
-- **Slack Channel:** `#security-identity-ops`
-- **Slack Tag:** `@security-identity`
-- **GitLab Tag:** `@gitlab-com/gl-security/identity/ops`
-- **Epics:** [gitlab.com/gl-security/identity/ops](https://gitlab.com/groups/gitlab-com/gl-security/identity/ops/-/epics)
-- **Issue Tracker:** [gitlab.com/gl-security/identity/ops/issue-tracker](https://gitlab.com/gitlab-com/gl-security/identity/ops/issue-tracker/-/issues)
-- **Escalation DRI:** Jeff Martin
+Identity チームは、私たちの [stable counterparts](/handbook/security/identity/counterparts) と部門横断的にコラボレーションしています。
 
 ### Identity Platform Engineering
 
@@ -383,7 +353,6 @@ HackyStack で動作する [GitLab Sandbox Cloud](/handbook/company/infrastructu
 - **GitLab Tag:** `@gitlab-com/gl-security/identity/eng`
 - **Epics:** [gitlab.com/gl-security/identity/eng](https://gitlab.com/groups/gitlab-com/gl-security/identity/eng/-/epics)
 - **Issue Tracker:** [gitlab.com/gl-security/identity/eng/issue-tracker](https://gitlab.com/gitlab-com/gl-security/identity/eng/issue-tracker/-/issues)
-- **Escalation DRI:** Jeff Martin
 
 ### 透明性
 

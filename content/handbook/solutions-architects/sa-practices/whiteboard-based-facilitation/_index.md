@@ -2,11 +2,11 @@
 title: ホワイトボードベースのファシリテーション
 description: ホワイトボードは、オーディエンスの能動的な参加を促し、アイデアやフィードバックをリアルタイムで視覚的に捉える強力なファシリテーションツールです。スライドショーが事前に準備された静的なコンテンツを提示するのとは異なり、ホワイトボードはより自然な会話の流れを可能にします。ホワイトボードは、参加者に即時の価値を提供し、すべての関係者間で共通の理解を生み出し、参加者間で信頼を築く共有された成果物となります。このページでは、通常の SA プラクティスに即座に適用できるホワイトボードテンプレートを提供します。
 upstream_path: /handbook/solutions-architects/sa-practices/whiteboard-based-facilitation/
-upstream_sha: fb150f3a4f831172cf23c7f0d75b0d6310a68972
-translated_at: "2026-05-08T18:59:21Z"
-translator: claude
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:25:33+09:00"
+translator: codex
 stale: false
-lastmod: "2025-11-03T17:49:46+01:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## なぜホワイトボードを使用するのか？
@@ -24,7 +24,7 @@ lastmod: "2025-11-03T17:49:46+01:00"
 
 ### 利用可能なテンプレート
 
-ホワイトボードテンプレートのライブラリは、[SA Whiteboard and Pitch Catalog](https://www.figma.com/files/972612628770206748/project/354583643) FigJam Team にあります。アクセスするには、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) を開いて、ソリューションアーキテクチャチームに追加されていることを確認してください。
+ホワイトボードテンプレートのライブラリは、[SA Whiteboard and Pitch Catalog](https://www.figma.com/files/972612628770206748/project/354583643) FigJam Team にあります。アクセスするには、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) を開いて、ソリューションアーキテクチャチームに追加されていることを確認してください。
 
 1. End to End GitLab Value
 1. End to End GitLab People and Process

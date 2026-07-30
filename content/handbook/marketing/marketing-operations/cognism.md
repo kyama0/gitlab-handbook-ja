@@ -2,11 +2,11 @@
 title: "Cognism"
 description: "Cognism は、コンタクトおよびアカウントデータを提供するセールスインテリジェンスソフトウェアであり、セールスチームとマーケティングチームが予測可能なパイプラインを推進するのに役立ちます。"
 upstream_path: /handbook/marketing/marketing-operations/cognism/
-upstream_sha: 5ea6b5d6141bc938b1c87b63ca72396fbfe19b58
-translated_at: "2026-07-11T06:05:57+09:00"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:02:57+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-10T10:07:39-06:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## Cognism について
@@ -155,4 +155,4 @@ Marketing Operations は所属組織内のユーザーに連絡し、アクセ�
 
 ### 保留中の招待
 
-保留中の Cognism 招待は、ライセンス割り当てをブロックするため、1 週間以内に承諾する必要があります。1 週間後も招待が承諾されない場合はキャンセルされます。再度招待が必要な場合は、[個人アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) を通じてリクエストできます。
+保留中の Cognism 招待は、ライセンス割り当てをブロックするため、1 週間以内に承諾する必要があります。1 週間後も招待が承諾されない場合はキャンセルされます。再度招待が必要な場合は、[個人アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) を通じてリクエストできます。

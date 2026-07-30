@@ -2,11 +2,11 @@
 title: "Identity 承認"
 description: "GitLab リポジトリは、Identity Kingdom Black Ops の GitLab セルフマネージドインスタンスにセキュアにホストされており、Admin UI で実行可能なあらゆる操作の Configuration-as-Code / Infrastructure-as-Code 管理に利用されます。これにより、日々の管理操作とグローバル設定のすべてを、MR 承認ルールと CI/CD 自動化を備えた状態管理へと移行できます。"
 upstream_path: /handbook/security/identity/approvals/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
-translator: claude
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:36:18+09:00"
+translator: codex
 stale: false
-lastmod: "2024-11-14T23:18:47+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 {{% alert title="Not Live Yet" color="warning" %}}
@@ -42,8 +42,8 @@ gitGraph
 
 各マージリクエストはピアレビューを必須とし、3 つ (実際は 2 つ) の [GitLab 承認ルール](https://docs.gitlab.com/ee/user/project/merge_requests/approvals/) で構成されています。ピアレビュアーは修正のためにコミットを追加したり、マージリクエストレビューコメントで提案を行うことが許可されています。
 
-1. **Identity Approval** 承認は、技術的な正確性を保証するため、Identity Engineering または Identity Operations チームによるレビューを必須とします。これは、コミットを行わなかった Identity ピアレビュアーが実行できます。ピアレビュアーがコミットを行った場合、職務分掌のために追加の人物が承認を提供する必要があります。
-1. **System Owner** 承認は、Terraform GitLab リポジトリ内の各ディレクトリまたはファイルのビジネスオーナーとテクニカルオーナーを指定する [CODEOWNERS](https://docs.gitlab.com/ee/user/project/codeowners/) ファイルを利用します。デフォルトでは GitLab のテックスタックに依存していますが、Identity Operations チームが特定の構成のドメイン主題専門家 (SME) になるように更新できます。
+1. **Identity Approval** 承認は、技術的な正確性を保証するため、Identity Engineering チームによるレビューを必須とします。これは、コミットを行わなかった Identity ピアレビュアーが実行できます。ピアレビュアーがコミットを行った場合、職務分掌のために追加の人物が承認を提供する必要があります。
+1. **System Owner** 承認は、Terraform GitLab リポジトリ内の各ディレクトリまたはファイルのビジネスオーナーとテクニカルオーナーを指定する [CODEOWNERS](https://docs.gitlab.com/ee/user/project/codeowners/) ファイルを利用します。デフォルトでは GitLab のテックスタックに依存していますが、Identity Engineering チームが特定の構成のドメイン主題専門家 (SME) になるように更新できます。
 
 すべての承認が提供された後、マージリクエストは自動的にマージされます。**変更が本番に反映される準備が整うまで承認は提供すべきではありません。**
 

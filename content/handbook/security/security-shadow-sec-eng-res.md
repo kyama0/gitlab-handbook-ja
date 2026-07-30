@@ -1,11 +1,11 @@
 ---
 title: "Security Shadow: Product Security"
 upstream_path: /handbook/security/security-shadow-sec-eng-res/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T14:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+lastmod: "2026-07-28T15:04:15+01:00"
+translated_at: "2026-07-30T07:12:47+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-06T19:27:57-05:00"
 ---
 
 各コースを修了すると修了証が授与されます。3 つのコースをすべて修了すると、お名前がこのページで紹介されます。
@@ -46,8 +46,7 @@ lastmod: "2026-02-06T19:27:57-05:00"
 
 - SR101.1: Security Research の概要 w/ Ethan（1 時間）
 - SR101.2a: Rabbit Hole #1 w/ Joern（1〜2 時間）
-- SR101.2b: Rabbit Hole #2 w/ Mark（1〜2 時間）
-- SR101.2c: Rabbit Hole #3 w/ Dennis（1〜2 時間）
+- SR101.2b: Rabbit Hole #2 w/ Dennis（1〜2 時間）
 
 **コース期間:**
 

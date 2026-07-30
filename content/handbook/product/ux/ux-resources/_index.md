@@ -2,9 +2,9 @@
 title: UX リソース
 description: "Upstream Studios の一部である Product Design、UX Research、Technical Writing、Design System の各 UX チームメンバー向けのリソースとツール。"
 upstream_path: /handbook/product/ux/ux-resources/
-upstream_sha: 50ee631c98005b47a0caea9d46e4ba5cfc62891a
-lastmod: "2026-07-22T08:32:12-03:00"
-translated_at: "2026-07-23T06:31:48+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+lastmod: "2026-07-28T05:53:28-07:00"
+translated_at: "2026-07-30T08:15:54+09:00"
 translator: codex
 stale: false
 ---
@@ -113,7 +113,7 @@ UX 部門の全員とすべてのプロダクトマネージャーは、新し�
 
 ### ユーザーペルソナ
 
-[ユーザーペルソナ](/handbook/product/personas/)は、実際に GitLab を使う人々を表します。UX チームとマーケティングチームは、ユーザーエクスペリエンスとデザインに関する意思決定に役立てるためにペルソナを使用します。
+[ユーザーペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)は、実際に GitLab を使う人々を表します。UX チームとマーケティングチームは、ユーザーエクスペリエンスとデザインに関する意思決定に役立てるためにペルソナを使用します。
 
 ## プレイブックとガイド
 

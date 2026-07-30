@@ -2,11 +2,11 @@
 title: "GitLab セキュリティリソースセンター"
 description: "GitLab の顧客と見込み顧客に向けて、人気で重要なリンクと情報を集約してリストします。"
 upstream_path: /handbook/security/gitlab_security_resource_center/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:21:42+09:00"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:25:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T13:03:25-03:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## よく要求されるリソース
@@ -51,7 +51,7 @@ lastmod: "2026-07-20T13:03:25-03:00"
 
 - [アクセス管理ポリシー](/handbook/security/security-and-technology-policies/access-management-policy/)
 - [アクセスレビュー手順](/handbook/security/security-assurance/security-compliance/access-reviews)
-- [アクセスリクエストプロセス](/handbook/security/corporate/end-user-services/access-requests/access-requests/)
+- [アクセスリクエストプロセス](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)
 
 ### 事業継続 {#business-continuity}
 

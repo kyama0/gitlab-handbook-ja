@@ -2,11 +2,11 @@
 title: "Linux のツールとヒント"
 description: " GitLab における Linux ノート PC の利用に関する各種ツールやヒント"
 upstream_path: /handbook/tools-and-tips/linux/
-upstream_sha: 68af60af15ea4dcb51c3d985f7473b212e4f2cb4
-translated_at: "2026-05-07T15:33:18Z"
-translator: claude
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:21:07+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-05T13:09:58-05:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 Linux は macOS の代替として利用可能ですが、サポートが限定的なため推奨はされていません。Linux を選択した場合、自身の環境を維持する責任をすべて自分で負うことになり、IT がサポートを提供しないことを理解する必要があります。Slack には `#linux` チャンネルがありヒントやコツを交換できますが、これは公式のヘルプデスクリソースではありません。
@@ -20,7 +20,7 @@ Linux は macOS の代替として利用可能ですが、サポートが限定�
 
 ## 基本セットアップ
 
-すべてのノート PC およびデスクトップシステム向けに [こちら](/handbook/security/corporate/end-user-services/laptop-management/laptop-security) に列挙されている基本事項に加えて、Linux には追加で必要なステップがあります。会社標準は **Ubuntu LTS（最新版）** が動作する Dell ノート PC で、これが唯一承認された Linux ディストリビューションです。詳細なインストール手順と必要なセキュリティツールについては、[Linux オンボーディングガイド](/handbook/security/corporate/end-user-services/onboarding101/linux-onboarding101/) を参照してください。
+すべてのノート PC およびデスクトップシステム向けに [こちら](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security) に列挙されている基本事項に加えて、Linux には追加で必要なステップがあります。会社標準は **Ubuntu LTS（最新版）** が動作する Dell ノート PC で、これが唯一承認された Linux ディストリビューションです。詳細なインストール手順と必要なセキュリティツールについては、[Linux オンボーディングガイド](/handbook/eta/corporate-it/end-user-services/onboarding101/linux-onboarding101/) を参照してください。
 
 ## 一般的なアプリケーション
 

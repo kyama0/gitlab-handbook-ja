@@ -4,11 +4,11 @@ description: "IP アドレスのブロックを引き起こした原因を特定
 category: GitLab.com
 subcategory: Troubleshooting
 upstream_path: /handbook/support/workflows/ip-blocks/
-upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
-translated_at: "2026-05-08T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:31:24+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-18T17:49:08+00:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 GitLab.com のユーザーは、レート制限により自身の IP アドレスがブロックされていることに気付くことがあります。現在、GitLab.com のレート制限パラメータは [GitLab.com 設定ドキュメントページ](https://docs.gitlab.com/user/gitlab_com/#account-and-limit-settings) で最も適切に説明されています。GitLab.com のレート制限の単一の信頼できる情報源は、[インフラストラクチャのレート制限ドキュメント](/handbook/engineering/infrastructure-platforms/rate-limiting/) にあります。このページは、サポートエンジニアがレート制限と IP ブロックに関連する Issue をトラブルシューティングする際の助けになることを目的としています。
@@ -25,7 +25,7 @@ GitLab.com のユーザーは、レート制限により自身の IP アドレ�
 
 ユーザーから提供された IP アドレスについて、`json.meta.remote_ip` への positive フィルタを追加することから始めます:
 
-![Add remote_ip filter](/images/support/ipblocks_add_remoteip_filter.png)
+![remote_ip フィルターを追加](/images/support/ipblocks_add_remoteip_filter.png)
 
 そこから、[フィールド](#fields) 上で positive および negative フィルタを使ってドリルダウンし、最良の結果を得ることができます。
 
@@ -35,11 +35,11 @@ GitLab.com のユーザーは、レート制限により自身の IP アドレ�
 
 そのためには、IP アドレスをメイン検索フィールドに入力し、`json.message` に `Rack_Attack` の positive フィルタを設定します。
 
-![Searching for an IP](/images/support/ipblocks_rack_attack_search.png)
+![IP を検索](/images/support/ipblocks_rack_attack_search.png)
 
 次のような結果が表示されるはずです:
 
-![Checking Rack Attack results](/images/support/ipblocks_rack_attack_results.png)
+![Rack Attack の結果を確認](/images/support/ipblocks_rack_attack_results.png)
 
 これらの結果が存在することは、このユーザーが Rack Attack によってブロックされたことを示しており、`json.fullpath` フィールドを追加して、各リクエストが GitLab.com 上のどの正確なパスにアクセスしようとしたのかを確認できます。
 
@@ -51,7 +51,7 @@ Rack Attack はトラフィックを *スロットル* することもできま�
 
 Rack Attack でブロックを見つけられない場合は、アプリケーションレート制限を確認してみてください。Kibana でこれを検索でき、`json.message.keyword` が `Application_Rate_limiter_Request` です。`json.env` でさまざまな上限を識別でき、`json.meta.user` および `json.meta.remote_ip` でフィルタリングすることもできます。
 
-![Checking Application Rate Limiter](/images/support/application_rate_limit.png)
+![Application Rate Limiter を確認](/images/support/application_rate_limit.png)
 
 ### フィールド {#fields}
 
@@ -78,7 +78,7 @@ Rack Attack でブロックを見つけられない場合は、アプリケー�
 
 `registry.gitlab.com` への push または pull の失敗が多数あると、IP ブロックを引き起こす可能性があります。[ドキュメント](https://docs.gitlab.com/user/gitlab_com/#git-and-container-registry-failed-authentication-ban) より:
 
-> GitLab.com responds with HTTP status code 403 for 1 hour, if 30 failed authentication requests were received in a 3-minute period from a single IP address.
+> GitLab.com は、単一の IP アドレスから 3 分間に 30 件の認証失敗リクエストを受け取った場合、1 時間にわたって HTTP ステータスコード 403 を返します。
 
 提供された IP アドレスを検索し、`json.path` に `/jwt/auth` の positive フィルタを設定することで、コンテナレジストリへのヒットに関するすべてのログ結果をリストできます。
 
@@ -97,7 +97,7 @@ Rack Attack でブロックを見つけられない場合は、アプリケー�
 
 失敗した push は Kibana で以下のように見えます。
 
-![Failed Push](/images/support/ipblocks_registry_failed_push.png)
+![失敗した push](/images/support/ipblocks_registry_failed_push.png)
 
 ##### pull
 
@@ -105,7 +105,7 @@ push と同様に、レジストリからの失敗した pull は常に `json.co
 
 失敗した pull は Kibana で以下のように見えます。
 
-![Failed Pull](/images/support/ipblocks_registry_failed_pull.png)
+![失敗した pull](/images/support/ipblocks_registry_failed_pull.png)
 
 #### `gitlab-ci-token` の pull
 
@@ -130,7 +130,7 @@ LFS オブジェクトを含むリポジトリへの push または pull は、�
 
 失敗した LFS push は Kibana で以下のように見えます。
 
-![Failed LFS Push](/images/support/ipblocks_lfs_failed_push.png)
+![失敗した LFS push](/images/support/ipblocks_lfs_failed_push.png)
 
 ### クローンの失敗
 
@@ -138,7 +138,7 @@ LFS オブジェクトを含むリポジトリへの push または pull は、�
 
 リクエストは以下のように見えます:
 
-![Log results for a failed clone](/images/support/ipblocks_failed_clone.png)
+![失敗した clone のログ結果](/images/support/ipblocks_failed_clone.png)
 
 #### 役立つフィールド
 
@@ -182,7 +182,7 @@ LFS オブジェクトを含むリポジトリへの push または pull は、�
 
 ユーザーが Cloudflare によってブロックまたはレート制限されているケースもあります。Kibana にログがない、または `RateLimit-*` ヘッダーがないことは、通常、Cloudflare レベルで調査することを示唆しています。Cloudflare の "Access Denied" ページのスクリーンショットを依頼するか、お客様に `-i` フラグ付きの `curl` を実行してもらい、関連するヘッダーを取得できます:
 
-![Access Denied](/images/support/workflows/assets/AccessDenied.png)
+![アクセス拒否](/images/support/workflows/assets/AccessDenied.png)
 
 ```text
 curl -i --header "PRIVATE-TOKEN: *****" https://gitlab.com

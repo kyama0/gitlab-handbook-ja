@@ -2,18 +2,18 @@
 title: "ユーザーペルソナの作成方法"
 description: "このページでは、高い信頼度でユーザーペルソナを作成するために必要な手順を詳細に説明します。"
 upstream_path: /handbook/product/ux/persona-creation/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-16T21:37:21Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:15:54+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:42-03:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 このハンドブックページでは、ユーザーペルソナを作成するプロセスのみを定義します。
 
 GitLab では、ユーザーのニーズと感情に焦点を当てたデータ駆動型の洞察に基づいて、2 種類のペルソナを作成し使用しています:
 
-- [ユーザーペルソナ](/handbook/product/personas/) - UX 専門家とプロダクトマネージャー（PM）が、エンドユーザーのニーズ、動機、行動、スキルとつながるためのメカニズムとして使用します。プロダクトマネージャーが所有し、ペルソナ関連のリサーチ活動の DRI でもあります。
+- [ユーザーペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) - UX 専門家とプロダクトマネージャー（PM）が、エンドユーザーのニーズ、動機、行動、スキルとつながるためのメカニズムとして使用します。プロダクトマネージャーが所有し、ペルソナ関連のリサーチ活動の DRI でもあります。
 
 - [バイヤーペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/) - ユーザーになる可能性のある潜在的な顧客の高レベルな目標に焦点を当てます。マーケティングチームが所有します。
 
@@ -23,7 +23,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 
 ## ユーザーペルソナを構成するものは？
 
-[GitLab のペルソナページ](/handbook/product/personas/)の各ペルソナには、以下の特性が含まれている必要があります:
+[GitLab のペルソナページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)の各ペルソナには、以下の特性が含まれている必要があります:
 
 - ジョブの概要 - 主要な焦点領域と、スキルおよび責任の一般的な説明を含むべきです
 - 代替タイトル
@@ -38,7 +38,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 - ワークフロー - ユーザーが通常タスクを完了するために行う一連のステップ
 - 協働するチーム - 責任の重複がある可能性のある、またはペルソナのワークフローが依存している、組織内のチーム
 
-私たちの[Simone（Backend Engineer）](/handbook/product/personas/#simone-backend-engineer)は、これらの多くの良い例です。
+私たちの[Simone（Software Engineer in Test）](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#simone-software-engineer-in-test)は、これらの多くの良い例です。
 
 追加の詳細すべてが必要なわけではないため、どれが有用かを知るためにステークホルダーと話し合うことが役立つ場合があります。疑問がある場合、ガイドラインとしては、詳細であるほど良いとされています。
 
@@ -148,7 +148,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 
 ### ステップ 5: マージリクエストを通じて新しいペルソナを公開する
 
-すべてのデータが収集され、要約されたら、[Roles & Personas ハンドブックページ](/handbook/product/personas/)を更新する時が来ました。
+すべてのデータが収集され、要約されたら、[Roles & Personas ハンドブックページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)を更新する時が来ました。
 
 既存のユーザーペルソナの 1 つからテキストをコピーし、現在記入されている最後のペルソナの下に貼り付けます。データを収集したペルソナの情報を編集し、ペルソナの名前とタイトルを含むすべての情報をダブルチェックします。
 

@@ -6,11 +6,11 @@ tags:
   - security_standard
   - security_standard_ps
 upstream_path: /handbook/people-group/offboarding/offboarding_standards/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:53:50+09:00"
+translator: codex
 stale: false
-lastmod: "2025-11-19T12:25:32-08:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -51,7 +51,7 @@ People Operations のローテーションに従い、オフボーディング I
 
 オフボーディング Issue は、Workday によって入力されたデータを使用して[自動的に](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854)作成されます。オフボーディング Issue が作成されると、割り当てられた People Operations チームメンバーがアサイニーリストに自動的に追加されます。
 
-IT Operations を含む多くのチームがアクセスの deprovisioning に取り組みます。これは緊急とみなされ、[ラップトップの返却](/handbook/security/corporate/end-user-services/laptop-management/)（2-4 週間かかることがある）を除き、すべてのタスクが 5 営業日以内に完了することが期待されます。
+IT Operations を含む多くのチームがアクセスの deprovisioning に取り組みます。これは緊急とみなされ、[ラップトップの返却](/handbook/eta/corporate-it/end-user-services/laptop-management/)（2-4 週間かかることがある）を除き、すべてのタスクが 5 営業日以内に完了することが期待されます。
 
 **注：** チームメンバーが一時的に[契約者またはコンサルタントロール](/handbook/finance/procurement/contingent-worker-policy/)に移行する場合、完全なオフボーディングプロセスを進め、契約上の義務を果たすために必要な特定の一時的アクセスのみを付与するための別個のオンボーディング Issue を作成してください。
 

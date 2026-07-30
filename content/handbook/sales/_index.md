@@ -2,11 +2,11 @@
 title: "セールス"
 description: "GitLab フィールドチームには、Enterprise Sales、Commercial Sales、Customer Success、Channel Partners、Alliances、Field Operations といった複数の機能が含まれます"
 upstream_path: /handbook/sales/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T07:54:58+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## セールスチームのホームページへようこそ
@@ -73,7 +73,7 @@ lastmod: "2026-05-08T14:07:20+02:00"
 | [Deal Desk: Assistance with Quotes](/handbook/sales/field-operations/order-processing/#assistance-with-quotes) | [Business Operations Handbook](/handbook/business-technology/) | [Collaborating with Legal - Sales](/handbook/legal/customer-negotiations/) |  |
 | [Deal Desk: Approval Process](/handbook/sales/field-operations/order-processing/#deal-desk-approval-process) | [Data Team Handbook](/handbook/enterprise-data/) | [Legal Page](/handbook/legal/) |  |
 | [Sending a Quote to Zuora](/handbook/sales/field-operations/order-processing/#step-8--sending-the-quote-to-zuora) | [Data Quality Process](/handbook/enterprise-data/data-governance/data-quality/) | [Engaging Legal in Deals](/handbook/sales/field-operations/order-processing/#process-for-agreement-terms-negotiations-when-applicable) |  |
-| [How to Initiate a Refund](/handbook/finance/accounting/#7-invoice-cancellations-and-refunds) | [IT Ops Handbook](/handbook/security/corporate/end-user-services/access-requests/) |  |  |
+| [How to Initiate a Refund](/handbook/finance/accounting/#7-invoice-cancellations-and-refunds) | [IT Ops Handbook](/handbook/eta/corporate-it/end-user-services/access-requests/) |  |  |
 |  | [Access Requests](https://gitlab.com/gitlab-com/team-member-epics/access-requests) |  |  |
 
 ## 私たちは誰か

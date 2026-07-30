@@ -4,11 +4,11 @@ description: "Zendesk でのチケットトリアージの手順解説"
 category: Handling tickets
 subcategory: Triaging
 upstream_path: /handbook/support/workflows/ticket_triage/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T04:02:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:31:24+09:00"
+translator: codex
 stale: false
-lastmod: "2025-11-25T14:16:47-06:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ## このページの目的
@@ -52,7 +52,7 @@ Free ユーザーのチケットをトリアージし、ユーザーの問題が
 
 ## グローバルサポートポータル経由の米国政府チケット
 
-GitLab の [US Government Support](https://about.gitlab.com/support/us-government-support/) を利用しているユーザーは、グローバルサポートポータルでチケットを起票することも選べます。最も多い理由は、米国政府サポートの[業務時間外](https://about.gitlab.com/support/us-government-support/#hours-of-operation)にサポートが必要となるケースです。トリアージの過程で、グローバルエージェントが、米国政府サポートを受ける権利を持つと思われる組織からのチケットに遭遇した場合、エージェントは他のチケットと同様にケースを進めて構いません。
+GitLab の [U.S. Government Support](https://about.gitlab.com/support/us-government-support/) を利用しているユーザーは、グローバルサポートポータルでチケットを起票することも選べます。最も多い理由は、米国政府サポートの[業務時間外](https://about.gitlab.com/support/us-government-support/#hours-of-operation)にサポートが必要となるケースです。トリアージの過程で、グローバルエージェントが、米国政府サポートを受ける権利を持つと思われる組織からのチケットに遭遇した場合、エージェントは他のチケットと同様にケースを進めて構いません。
 
 グローバルサポートポータル経由でチケットが作成され、米国市民権を持つエージェントのみがケースを担当することを依頼された場合、エージェントはお客様に対して、米国政府サポートポータル経由で新規ケースを起票するよう案内し、アカウントチームに知らせてください。
 

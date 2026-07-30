@@ -2,10 +2,10 @@
 title: 昇進と異動
 description: "GitLab の昇進と異動に関する情報とプロトコル。"
 upstream_path: /handbook/people-group/promotions-transfers/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-lastmod: "2026-07-13T09:50:38-04:00"
-translated_at: "2026-07-14T07:00:47+09:00"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+lastmod: "2026-07-28T15:04:15+01:00"
+translated_at: "2026-07-30T08:41:12+09:00"
+translator: codex
 stale: false
 ---
 
@@ -791,7 +791,7 @@ GitLab チームメンバーが新しい役割に選ばれた場合、マネー�
 - マネージャーから個人コントリビューターへの移行 (Workday 内で Mgr+ から IC への管理レベルの減少として定義)
 - チームの移行 (組織変更チェックリストの目的のために、チーム変更はマネージャーとコストセンターの両方の変更として定義)
 
-管理レベルに移動する個人コントリビューターは、彼らのアクセスがレビューされる必要がある場合とそうでない場合があります。このステップを確認するために、現在のマネージャーと新しいマネージャーに確認してください。アクセスを更新する必要がある場合は、[こちら](/handbook/security/corporate/end-user-services/access-requests/access-requests/)に文書化された AR プロセスに従ってください。
+管理レベルに移動する個人コントリビューターは、彼らのアクセスがレビューされる必要がある場合とそうでない場合があります。このステップを確認するために、現在のマネージャーと新しいマネージャーに確認してください。アクセスを更新する必要がある場合は、[こちら](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)に文書化された AR プロセスに従ってください。
 
 または、チームメンバーが必要なシステムとツールへのアクセスを既に持っている場合、マネージャーは GitLab の[トレーニングプロジェクト](https://gitlab.com/gitlab-com/people-group/Training/-/issues/?sort=created_date&state=opened&first_page_size=100)内にハウスされている 'Becoming a GitLab Manager' と 'Interview Training' Issue を開くことができます。
 

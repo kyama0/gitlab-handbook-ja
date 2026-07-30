@@ -2,18 +2,12 @@
 title: "Identity カウンターパート"
 description: "Identity and Access Management (IAM) およびロールベースアクセス制御 (RBAC) は、GitLab の複数のチームにまたがる共有責任です。このページには、私たちのすべての安定したカウンターパートのディレクトリがあります。"
 upstream_path: /handbook/security/identity/counterparts/
-upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
-translated_at: "2026-07-09T11:04:27+09:00"
-translator: claude
+upstream_sha: "5934211cb62d0c36181bc3a4be1381e5e07aef42"
+translated_at: "2026-07-29T06:36:18+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-08T14:46:05-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
-
-## Identity v3 プログラム DRI
-
-アーキテクチャ、意思決定、議論、ガイダンス、その他の質問については、`@jeffersonmartin` にタグ付けしてください。
-
-<!-- TODO Mermaid Diagram -->
 
 ## Identity カウンターパートおよびステークホルダー ディレクトリ
 
@@ -25,7 +19,7 @@ lastmod: "2026-07-08T14:46:05-04:00"
     - TODO
   manager: rpollak1
   counterparts:
-    - jwong
+    - TODO
   gitlab_saas_tag: '@gitlab-com/it/end-user-services'
   slack_channel: Please contact IT via the Compass app in Slack (type "Compass" in the top search bar to find it) or it-help@gitlab.com.
   handbook_page: 'https://handbook.gitlab.com/handbook/business-technology/end-user-services/'
@@ -56,9 +50,9 @@ lastmod: "2026-07-08T14:46:05-04:00"
   team_name: 'IT Security and Engineering'
   responsibilities:
     - TODO
-  manager: erubin
+  manager: lvaknine
   counterparts:
-    - erubin
+    - lvaknine
     - mwhitaker
     - malkobaisy
   gitlab_saas_tag: '@gitlab-com/it/security @gitlab-com/it/engops'
@@ -201,50 +195,24 @@ lastmod: "2026-07-08T14:46:05-04:00"
 - sec_identity_eng:
   team_name: 'Identity Engineering (Architecture and Platform)'
   responsibilities:
+    - Administrative access (BLACK accounts) and control plane change management
     - Architect next-generation IAM and access management standards
     - Build automation and integration between systems that provides data consistency, reliability, strong security, and audibility.
+    - Company-wide RBAC group and role management
     - Consolidate and refactor legacy data, processes, and tech debt.
     - Design and document processes with automation mindset to improve back office operations.
     - Efficiency optimization is our North Star.
+    - Escalation requests from counterpart teams
     - Factor in cost, security, compatibility, maintainability and user experience when making decisions.
-  manager: smanzuik
+    - Provisioning user access requests for administrative systems
+    - Role-based access control with just-in-time elevated access
+  manager: dzhu
   counterparts:
-    - jmartin
+    - vstoianovici
   gitlab_saas_tag: '@gitlab-com/gl-security/identity/eng'
   slack_channel: '#security-identity-eng'
   handbook_page: 'https://handbook.gitlab.com/handbook/security/threat-management/identity/eng/'
   issue_tracker: 'https://gitlab.com/gitlab-com/gl-security/identity/eng/issue-tracker/-/issues'
-- sec_identity_infra:
-  team_name: 'Identity Infrastructure'
-  responsibilities:
-    - Administrative control plane architecture
-    - AWS and GCP infrastructure organization-level management
-    Cloud infrastructure organizational management and least privilege security
-    - Infrastructure service accounts
-    - Infrastructure user access requests
-  manager: smanzuik
-  counterparts:
-    - vstoianovici
-  gitlab_saas_tag: '@gitlab-com/gl-security/identity/infra'
-  slack_channel: '#security-identity-ops'
-  handbook_page: 'https://handbook.gitlab.com/handbook/security/threat-management/identity/infra/'
-  issue_tracker: 'https://gitlab.com/gitlab-com/gl-security/identity/infra/issue-tracker/-/issues'
-- sec_identity_ops:
-  team_name: 'Identity Operations'
-  responsibilities:
-    - Administrative access (BLACK accounts) and control plane change management
-    - Company-wide RBAC group and role management
-    - Escalation requests from counterpart teams
-    - Provisioning user access requests for administrative systems
-    - Role-based access control with just-in-time elevated access
-  manager: smanzuik
-  counterparts:
-    - jmartin
-    - vstoianovici
-  gitlab_saas_tag: '@gitlab-com/gl-security/identity/ops'
-  slack_channel: '#security-identity-ops'
-  handbook_page: 'https://handbook.gitlab.com/handbook/security/threat-management/identity/ops/'
-  issue_tracker: 'https://gitlab.com/gitlab-com/gl-security/identity/ops/issue-tracker/-/issues'
 - sec_infra:
   team_name: 'Infrastructure Security (aka InfraSec)'
   responsibilities:

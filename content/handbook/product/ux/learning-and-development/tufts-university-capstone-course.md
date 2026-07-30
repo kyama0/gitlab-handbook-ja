@@ -3,11 +3,11 @@ title: GitLab スポンサー Tufts 大学 Human Factors／工学心理学キャ
 description: >-
   このページでは、GitLab が Human Factors Engineering の分野で Tufts 大学のキャップストーンプロジェクトにどのように参加するかについての情報を提供します。
 upstream_path: /handbook/product/ux/learning-and-development/tufts-university-capstone-course/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-29T23:22:04Z"
+translator: codex
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 GitLab では、誰もが貢献できると信じています。その精神に基づき、UX 部門のメンバーは、春学期に [Tufts 大学 Human Factors Engineering／工学心理学 (BS)](https://engineering.tufts.edu/me/current-students/undergraduate-program/bachelor-science-human-factors-engineering-bs) のシニアレベルの学生が取り組むプロジェクトをスポンサーすることを志願できます。
@@ -80,7 +80,7 @@ Tufts のキャップストーンは、自分の知識を共有し互いに学�
 {{% /details %}}
 
 {{% details summary="ユーザーはプロジェクトレベルの分析とどのように相互作用しており、満足しているか？" %}}
-さまざまな [ペルソナ](/handbook/product/personas/) が、さまざまなジョブのためにプロジェクトレベルの分析ページを利用しています。これは組織が[プロダクト開発ワークフロー](/handbook/product-development/how-we-work/product-development-flow/)を通じてどのように進んでいるかを評価するのに役立ちます。これらの分析ページを実装した後、これらがユーザーにとってどれほど有用か、またワークフロー内のどこで彼らが使用するかを知るのは困難です。それらはユーザーが効率的にジョブを完了するのに最も理想的な場所に配置されていますか？あなたは [UX ヒューリスティック](/handbook/product/ux/heuristics) と[既存リサーチのカタログ](/handbook/product/ux/dovetail/)を使用して、これらのページが何をうまく行っており、何をうまく行っていないかを判断します。また、[Pajamas 標準](https://design.gitlab.com/) を活用するためにページを再設計し、これらの新しい解決策が実際の GitLab ユーザーに対してこれらのページの [jobs to be done (JTBD)](/handbook/product/ux/jobs-to-be-done) にプラスの影響を与えていることを検証します。このプロジェクトを完了する十分な時間が確保できるように、チームと協力してスコープを縮小してください！たとえば、[リポジトリ分析ページ](https://gitlab.com/gitlab-org/gitlab/-/issues/352074)の改善のみに焦点を当てます。
+さまざまな [ペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) が、さまざまなジョブのためにプロジェクトレベルの分析ページを利用しています。これは組織が[プロダクト開発ワークフロー](/handbook/product-development/how-we-work/product-development-flow/)を通じてどのように進んでいるかを評価するのに役立ちます。これらの分析ページを実装した後、これらがユーザーにとってどれほど有用か、またワークフロー内のどこで彼らが使用するかを知るのは困難です。それらはユーザーが効率的にジョブを完了するのに最も理想的な場所に配置されていますか？あなたは [UX ヒューリスティック](/handbook/product/ux/heuristics) と[既存リサーチのカタログ](/handbook/product/ux/dovetail/)を使用して、これらのページが何をうまく行っており、何をうまく行っていないかを判断します。また、[Pajamas 標準](https://design.gitlab.com/) を活用するためにページを再設計し、これらの新しい解決策が実際の GitLab ユーザーに対してこれらのページの [jobs to be done (JTBD)](/handbook/product/ux/jobs-to-be-done) にプラスの影響を与えていることを検証します。このプロジェクトを完了する十分な時間が確保できるように、チームと協力してスコープを縮小してください！たとえば、[リポジトリ分析ページ](https://gitlab.com/gitlab-org/gitlab/-/issues/352074)の改善のみに焦点を当てます。
 {{% /details %}}
 
 {{% details summary="GitLab ユーザーは、docs.gitlab.com で必要な具体的情報をどこで見つければよいかを理解しているか？" %}}

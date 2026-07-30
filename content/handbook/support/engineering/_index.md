@@ -2,11 +2,11 @@
 title: サポートエンジニア リソース
 description: サポートエンジニアが何をしているか、どうやって行っているかについてもっと知りたい方は、ここを参照してください。
 upstream_path: /handbook/support/engineering/
-upstream_sha: c1bf211b73eb496a1cb1e97c36f3e2aceeb892ba
-translated_at: "2026-05-09T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T07:06:20+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-05T14:58:07-04:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ### サポートエンジニアの一日
@@ -26,7 +26,7 @@ GitLab のサポートエンジニアとして、あなたの時間の大部分�
 GitLab では、Customer Support Operations チームが現在 2 つの異なる Zendesk インスタンスを管理しています。
 
 1. GitLab Support インスタンス: [gitlab.zendesk.com](https://gitlab.zendesk.com)
-1. GitLab US Federal Support インスタンス: [gitlab-federal-support.zendesk.com](https://gitlab-federal-support.zendesk.com)
+1. GitLab U.S. Government Support インスタンス: [gitlab-federal-support.zendesk.com](https://gitlab-federal-support.zendesk.com)
 
 - 顧客 URL: [federal-support.gitlab.com](https://federal-support.gitlab.com)、フルリンク（上記）の CNAME。
 - 米国国内にいる米国市民のサポートエンジニアのみアクセスできます。

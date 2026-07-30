@@ -2,9 +2,9 @@
 title: "UX リサーチ参加者をリクルーティングする方法"
 description: "GitLab でリサーチ調査に適した参加者を見つける方法"
 upstream_path: /handbook/upstream-studios/experience-research/recruiting-participants/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T07:37:26+09:00"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+lastmod: "2026-07-28T15:04:15+01:00"
+translated_at: "2026-07-29T06:11:55+09:00"
 translator: codex
 stale: false
 ---
@@ -54,7 +54,7 @@ GitLab では、UX Research Operations Coordinator がリサーチを依頼す�
 
 ### スクリーナーを作成する {#craft-your-screener}
 
-スクリーナーには特定の役割があります。対象となる人口統計の人を特定し、調査で本当に知りたいことを尋ねられるようにするものです。ベストプラクティスは、Google Docs で[スクリーナーテンプレート](https://docs.google.com/document/d/1hMchH7C7Af2jCLeV9SK89F0ajT3m-hojJ0MmZnV5wmE/edit)（内部リンクのみ）をコピーし、すべての質問が確定するまでステークホルダーと協力することです。効果的なスクリーナーの書き方のヒントについては、[このページ](/handbook/upstream-studios/experience-research/write-effective-screener/)を確認してください。その後、質問を含むスクリーナーを Qualtrics で作成します。Qualtrics へのアクセス権がない場合は、[リクエストしてください](/handbook/security/corporate/end-user-services/access-requests/access-requests/)。確定したスクリーナーが Qualtrics で作成され、UX Research Operations Coordinator と共有されるまで、リクルーティングは開始しません。
+スクリーナーには特定の役割があります。対象となる人口統計の人を特定し、調査で本当に知りたいことを尋ねられるようにするものです。ベストプラクティスは、Google Docs で[スクリーナーテンプレート](https://docs.google.com/document/d/1hMchH7C7Af2jCLeV9SK89F0ajT3m-hojJ0MmZnV5wmE/edit)（内部リンクのみ）をコピーし、すべての質問が確定するまでステークホルダーと協力することです。効果的なスクリーナーの書き方のヒントについては、[このページ](/handbook/upstream-studios/experience-research/write-effective-screener/)を確認してください。その後、質問を含むスクリーナーを Qualtrics で作成します。Qualtrics へのアクセス権がない場合は、[リクエストしてください](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)。確定したスクリーナーが Qualtrics で作成され、UX Research Operations Coordinator と共有されるまで、リクルーティングは開始しません。
 
 スクリーナーの質問は、参加者基準と*一致しなければなりません*。これにより、UX Research Operations Coordinator は希望する基準を確認し、スクリーナーでどの回答を見たいかを把握できます。スクリーナーを抽象的または自由回答にすればするほど、UX Research Operations Coordinator が求める回答を解析することは難しくなります。ベストプラクティスは、スクリーナーで自由回答の質問を使用しないことです。
 

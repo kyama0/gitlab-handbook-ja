@@ -5,11 +5,11 @@ tags:
   - security_standard
   - security_standard_sasr
 upstream_path: /handbook/security/security-assurance/security-risk/third-party-risk-management/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T11:04:27+09:00"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:29:34+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-08T08:29:51-07:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -226,7 +226,7 @@ Security Risk Team は、ベンダーと協力し、私たちのレビューを�
 
 1. ISO 27001、SOC 2 Type 2 などのサードパーティセキュリティ証明の欠如
 1. 従業員と請負業者のバックグラウンドチェックの欠如
-1. [Okta](/handbook/security/corporate/end-user-services/okta/#what-is-okta) との統合不可*（[GitLab の Password Standard](/handbook/security/policies_and_standards/password-standard/#application-authentication-requirements) との整合）
+1. [Okta](/handbook/eta/corporate-it/end-user-services/okta/#what-is-okta) との統合不可*（[GitLab の Password Standard](/handbook/security/policies_and_standards/password-standard/#application-authentication-requirements) との整合）
    - Okta 統合が整備されていない、または不可能な場合、ネイティブの多要素認証 (MFA) 機能が軽減コントロールになり得ます。これは、関連する要求を承認する前に、サインオフのために CorpSec にエスカレーションすべきです。
 1. 最近のペネトレーションテストの証拠を欠いているシステム
 1. 明らかな是正計画または予想される是正日のない、解決されていない High および/または Critical のペネトレーションテストの所見
@@ -275,8 +275,8 @@ Security Risk チームは、私たちのレビュー中にベンダーの SOC 2
 | # | CUEC | ガイダンス | 関連する [GCF Control(s)](/handbook/security/security-assurance/security-compliance/sec-controls/#gitlab-control-framework-gcf) |
 |---|:-----|:---------| -----------------------|
 |1|ベンダーと共有するデータの正確性を確保する|あるシステムから別のシステムへデータを移動する際に発生する可能性のある [データ品質の問題](/handbook/enterprise-data/data-governance/data-quality/#types-of-data-quality-problems) のリスクを軽減すべきです。これは、ソースデータと宛先データを比較することで行うことができます。データを生成するために使用されるクエリは、不適切に除外されていないことを確認するためにレビューされるべきです。| SC-8 |
-|2|アプリケーションへのアクセスの追加と削除|新しいアプリケーションについては、Tech Stack Add プロセスがアプリケーションを私たちの [access request](/handbook/security/corporate/end-user-services/access-requests/access-requests/) と [off-boarding](/handbook/business-technology/tech-stack-applications/#updating-the-offboarding-templates) のプロセスにオンボーディングすることを促進すべきです。既存のアプリケーションについては、上記のプロセスがあなたのアプリケーションに対して従われていることを確認してください。| AC-2|
-|3|私たちのネットワークへのアクセスの管理|私たちは [従来のエンタープライズネットワーク](/handbook/security/product-security/security-platforms-architecture/security-architecture/zero-trust/#zero-trust) を持っていません。[Okta](/handbook/security/corporate/end-user-services/okta/#adding-new-applications-to-okta) と統合することは、アプリケーションへのアクセスが多要素認証の背後にゲートされ、Okta を通じてのみアクセス可能であることを保証するのに役立ちます。|AC-17|
+|2|アプリケーションへのアクセスの追加と削除|新しいアプリケーションについては、Tech Stack Add プロセスがアプリケーションを私たちの [access request](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) と [off-boarding](/handbook/business-technology/tech-stack-applications/#updating-the-offboarding-templates) のプロセスにオンボーディングすることを促進すべきです。既存のアプリケーションについては、上記のプロセスがあなたのアプリケーションに対して従われていることを確認してください。| AC-2|
+|3|私たちのネットワークへのアクセスの管理|私たちは [従来のエンタープライズネットワーク](/handbook/security/product-security/security-platforms-architecture/security-architecture/zero-trust/#zero-trust) を持っていません。[Okta](/handbook/eta/corporate-it/end-user-services/okta/#adding-new-applications-to-okta) と統合することは、アプリケーションへのアクセスが多要素認証の背後にゲートされ、Okta を通じてのみアクセス可能であることを保証するのに役立ちます。|AC-17|
 |4|アプリケーションへのアクセスのレビュー|アクセスレビューは、私たちの [コンプライアンスおよび規制プログラム](/handbook/business-technology/tech-stack-applications/#compliance) の対象範囲である Tier 1 と Tier 2 のシステムに対して実行されます。私たちのコンプライアンスおよび規制プログラムの対象範囲ではない Tier 1/2/3 システムのシステムオーナーは、[このプロセス](/handbook/security/security-assurance/security-compliance/access-reviews/) をガイドとして使用して、所有しているシステムに対して年次の終了アクセスレビューを最低でも実行することが強く推奨されます。Tier 4 システムのアクセスレビューは必要ありません。アドホックなアクセスレビューを要求するには、[こちら](https://gitlab.com/gitlab-com/gl-security/security-assurance/team-commercial-compliance/user-access-review/-/issues/new?issuable_template=Ad-Hoc%20User%20Access%20Review%20Request) でリクエスト Issue を作成してください。定期的なレビューのリマインダーは、共有カレンダーで Google Calendar イベントとして設定するか、GitLab のスケジュールパイプラインで Issue を作成することができます。| AC-6 |
 |5|タイムリーにベンダーに変更を通知する|ベンダーと協力して、どの変更が伝達される必要があるかを理解してください。一般的な例は、ベンダーの主要または副次連絡先と見なされた誰かが会社を辞めた場合や、セキュリティ侵害の場合です。これらのシナリオを文書化するプロセス、それらがどのように伝達されるか、そのための SLA を確立してください。| SR-8 |
 |6|災害復旧手順の確立|私たちは、アプリケーションの停止に備えるべきです。停止のために利用できないデータを再現できるでしょうか? アプリケーションの停止にどのように対応するかについての手順を文書化してください。| CP-2 |
@@ -491,7 +491,7 @@ GitLab チームメンバーによる人工知能 (AI) サービスの使用は�
 - [GCF Compliance Controls](/handbook/security/security-assurance/security-compliance/sec-controls/)
 - [Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/)
 - [Current listing of controlled documents](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance/security-governance/-/issues/42)
-- [App Integrations (Team Member Enablement)](https://internal.gitlab.com/handbook/security/corporate/end-user-services/app-integrations/)
+- [App Integrations (Team Member Enablement)](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/app-integrations/)
 - [Observation Management Procedure](/handbook/security/security-assurance/observation-management-procedure/)
 - [STORM](/handbook/security/security-assurance/security-risk/storm-program/)
 - [Procurement Process](/handbook/finance/procurement/#how-to-start-the-procurement-process)

@@ -2,11 +2,11 @@
 title: "Yubikey WebAuthn 2FA ユーザーガイド"
 description: "YubiKey は WebAuthn プロトコルを使用した二要素認証 (2FA) に使用します。YubiKey は他にも複数のプロトコル (OTP、U2F など) をサポートしていますが、GitLab では使用しません。このガイドでは、WebAuthn 用に YubiKey を使い始める方法を説明します。"
 upstream_path: /handbook/security/corporate/systems/yubikey/2fa/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T07:19:19+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-09T20:42:10+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## オンボーディングガイド
@@ -23,7 +23,7 @@ lastmod: "2026-02-09T20:42:10+00:00"
 
 3. 各アプリケーションのガイドに従って、2FA 認証器として YubiKey を設定します。複数のアカウントがある場合は、各アカウントについてステップを繰り返します。
 
-    - [Okta ガイド](/handbook/security/corporate/end-user-services/onboarding101/#macbook-step-5-okta-account-verification)
+    - [Okta ガイド](/handbook/eta/corporate-it/end-user-services/onboarding101/#macbook-step-5-okta-account-verification)
     - [Google ガイド](/handbook/security/guides/yubikey/2fa/google)
     - [GitLab ガイド](/handbook/security/guides/yubikey/2fa/gitlab)
 
@@ -35,7 +35,7 @@ lastmod: "2026-02-09T20:42:10+00:00"
 
 今後、設定済みアプリケーションへのサインインを求められる際、QR コードが表示されたり、パスキーや Touch ID の使用を求められることがあります。Passkey や Touch ID と表示されていても、YubiKey をタッチすれば動作します。キーをタッチするか、プロンプト内の USB サムドライブのアイコンをクリックしてからキーをタッチするだけです。
 
-<img src="/images/security/corporate/systems/yubikey/yubikey-touchid.png" alt="YubiKey Models" style="border: 1px #888 solid; padding: 3px;" /><br />
+<img src="/images/security/corporate/systems/yubikey/yubikey-touchid.png" alt="YubiKey モデル" style="border: 1px #888 solid; padding: 3px;" /><br />
 
 ### 新しいアプリケーションの追加
 
@@ -43,11 +43,11 @@ lastmod: "2026-02-09T20:42:10+00:00"
 
 そのアプリケーションで YubiKey が動作しない場合は、Touch ID の使用を試し、それからフォールバックとして 1Password で QR コードをスキャンし、適切なレコードに 1Password のボルト内へワンタイムパスワード (OTP) を保存してください。
 
-<img src="/images/security/corporate/systems/yubikey/yubikey-passkey-1password.png" alt="YubiKey Models" style="border: 1px #888 solid; padding: 3px;" /><br />
+<img src="/images/security/corporate/systems/yubikey/yubikey-passkey-1password.png" alt="YubiKey モデル" style="border: 1px #888 solid; padding: 3px;" /><br />
 
-<img src="/images/security/corporate/systems/yubikey/yubikey-passkey-step1.png" alt="YubiKey Models" style="border: 1px #888 solid; padding: 3px;" /><br />
+<img src="/images/security/corporate/systems/yubikey/yubikey-passkey-step1.png" alt="YubiKey モデル" style="border: 1px #888 solid; padding: 3px;" /><br />
 
-<img src="/images/security/corporate/systems/yubikey/yubikey-passkey-step2.png" alt="YubiKey Models" style="border: 1px #888 solid; padding: 3px;" /><br />
+<img src="/images/security/corporate/systems/yubikey/yubikey-passkey-step2.png" alt="YubiKey モデル" style="border: 1px #888 solid; padding: 3px;" /><br />
 
 ### モバイルデバイスでの YubiKey の使用
 
@@ -81,11 +81,11 @@ NFC キーはラップトップを移動する際に折れやすいので、ラ�
 
 *どの*ポートにも挿入できます。電源コード、モニターケーブル、ドッキングステーションのケーブルとして普段使わないポートを選ぶことを推奨します。
 
-<img src="/images/security/corporate/systems/yubikey/yubikey-models.jpg" alt="YubiKey Models" style="border: 1px #888 solid; padding: 3px;" /><br />
+<img src="/images/security/corporate/systems/yubikey/yubikey-models.jpg" alt="YubiKey モデル" style="border: 1px #888 solid; padding: 3px;" /><br />
 
-<img src="/images/security/corporate/systems/yubikey/yubikey-nano-port.jpg" alt="YubiKey Nano Port" style="border: 1px #888 solid; padding: 3px;" /><br />
+<img src="/images/security/corporate/systems/yubikey/yubikey-nano-port.jpg" alt="YubiKey Nano ポート" style="border: 1px #888 solid; padding: 3px;" /><br />
 
-<img src="/images/security/corporate/systems/yubikey/yubikey-nfc-port.jpg" alt="YubiKey NFC Port" style="border: 1px #888 solid; padding: 3px;" /><br />
+<img src="/images/security/corporate/systems/yubikey/yubikey-nfc-port.jpg" alt="YubiKey NFC ポート" style="border: 1px #888 solid; padding: 3px;" /><br />
 
 ### WebAuthn 認証 {#webauthn-authentication}
 
@@ -93,9 +93,9 @@ NFC キーはラップトップを移動する際に折れやすいので、ラ�
 
 もっとシンプルな説明でしょうか？単純化したアナロジーは、SSH（または Git）経由で認証する際に使用される SSH キーの公開鍵と秘密鍵のペアと概念的に似ているということです。
 
-<img src="/images/security/corporate/systems/yubikey/yubikey-nano-touch.jpg" alt="YubiKey Nano Port" style="border: 1px #888 solid; padding: 3px;" /><br />
+<img src="/images/security/corporate/systems/yubikey/yubikey-nano-touch.jpg" alt="YubiKey Nano ポート" style="border: 1px #888 solid; padding: 3px;" /><br />
 
-<img src="/images/security/corporate/systems/yubikey/yubikey-nfc-touch.jpg" alt="YubiKey NFC Port" style="border: 1px #888 solid; padding: 3px;" /><br />
+<img src="/images/security/corporate/systems/yubikey/yubikey-nfc-touch.jpg" alt="YubiKey NFC ポート" style="border: 1px #888 solid; padding: 3px;" /><br />
 
 ### その他の認証方式
 

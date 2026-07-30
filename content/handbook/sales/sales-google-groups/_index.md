@@ -2,11 +2,11 @@
 title: "フィールドとのコミュニケーション"
 description: "Slack と Email の両方を使って GitLab フィールドチームとコミュニケーションし、フィールド内でコミュニケーションするためのガイド"
 upstream_path: /handbook/sales/sales-google-groups/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
-translator: claude
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:03:43+09:00"
+translator: codex
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 このページは、Slack と Email の両方を使ってフィールドとコミュニケーションし、フィールド内でコミュニケーションするためのガイドとして機能することを意図しています。CRO 組織のすべての Google グループ、Slack グループ、Slack チャネルの概要を見つけるには、以下を読んでください。
@@ -93,17 +93,17 @@ CRO 組織の親 Google グループは sales-all です。いくつかの子グ
 | sales-dev-apj | team | APJ Sales Dev チームのメンバー |
 | sales-dev-emea | team | EMEA Sales Dev チームのメンバー |
 
-ほとんどのチームメンバーは、GitLab で開始してから数日以内に[チームの EBA](/handbook/eba/) によって、自分のチームの該当する Google グループに自動的に追加されます。新しい Google グループへのアクセスを得るには、[アクセスリクエスト (AR) フォームに記入してください](/handbook/security/corporate/end-user-services/access-requests/)。
+ほとんどのチームメンバーは、GitLab で開始してから数日以内に[チームの EBA](/handbook/eba/) によって、自分のチームの該当する Google グループに自動的に追加されます。新しい Google グループへのアクセスを得るには、[アクセスリクエスト (AR) フォームに記入してください](/handbook/eta/corporate-it/end-user-services/access-requests/)。
 
 ## Slack チャネルとグループ
 
 フィールドの主要な Slack チャネルは次のとおりです。
 
 1. #field-fyi: 公式のフィールドアナウンスチャネル。重要な更新を効率化するために権限レベルが制限されています。(詳細は [こちら](/handbook/sales/sales-google-groups/field-fyi-channel)。)
-2. #field-managers: フィールド組織のすべてのマネージャー以上の公式チャネル。
-3. #sales: WW Sales の一般チャネルで、すべてのチームメンバーからの投稿に開かれています。
+1. #field-managers: フィールド組織のすべてのマネージャー以上の公式チャネル。
+1. #sales: WW Sales の一般チャネルで、すべてのチームメンバーからの投稿に開かれています。
 
-すべてのフィールドチームメンバーは、ビジネスに関する重要な更新のためにこれら 3 つのチャネルを[スター](https://slack.com/help/articles/360043207674-Organize-your-sidebar-with-custom-sections) 🌟 してフォローすべきです。フィールド組織には、以下にアウトラインされている複数のチームチャネルがあります。役割に関連するチャネルをフォローしてください。プライベートチャネルへのアクセスを得るには、[アクセスリクエスト (AR) フォームに記入してください](/handbook/security/corporate/end-user-services/access-requests/)。
+すべてのフィールドチームメンバーは、ビジネスに関する重要な更新のためにこれら 3 つのチャネルを[スター](https://slack.com/help/articles/360043207674-Organize-your-sidebar-with-custom-sections) 🌟 してフォローすべきです。フィールド組織には、以下にアウトラインされている複数のチームチャネルがあります。役割に関連するチャネルをフォローしてください。プライベートチャネルへのアクセスを得るには、[アクセスリクエスト (AR) フォームに記入してください](/handbook/eta/corporate-it/end-user-services/access-requests/)。
 
 ### Slack グループ
 
@@ -112,8 +112,8 @@ Slack グループとは、ワークスペース内のメンバーのグルー�
 Slack グループは以下の場合にのみ使用してください。
 
 1. メッセージのコンテンツが、グループのすべてのメンバーに極めて関連性が高い
-2. メッセージのコンテンツが時間に敏感である、または即座のアクションが必要
-3. メッセージのコンテンツが、ビジネスおよび/またはチームに重大な影響を与える
+1. メッセージのコンテンツが時間に敏感である、または即座のアクションが必要
+1. メッセージのコンテンツが、ビジネスおよび/またはチームに重大な影響を与える
 
 | グループ名 | グループメンバー/説明 |
 | ------ | ------ |
