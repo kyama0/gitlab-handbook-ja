@@ -2,11 +2,11 @@
 title: "GitLab オフボーディング"
 description: "GitLab チームメンバーおよびステークホルダー向けのオフボーディング手順"
 upstream_path: /handbook/people-group/offboarding/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:48:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-26T09:28:42-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 <!-- markdownlint-disable MD051 -->
 ## オフボーディング概要
@@ -19,7 +19,7 @@ lastmod: "2026-05-26T09:28:42-04:00"
 
 ### オフボーディングサポート
 
-オフボーディングに関連するシステムアクセスの質問や[ラップトップのワイプ](https://internal.gitlab.com/handbook/security/corporate/end-user-services/gitlab-laptop-offboarding/)については、`gitlab-laptop-recovery@gitlab.com` にメールを送ってください。
+オフボーディングに関連するシステムアクセスの質問や[ラップトップのワイプ](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/gitlab-laptop-offboarding/)については、`gitlab-laptop-recovery@gitlab.com` にメールを送ってください。
 
 ペイロール関連の質問や未提出の経費精算については、`uspayroll@gitlab.com` または `nonuspayroll@gitlab.com` のいずれかに連絡してください。
 
@@ -320,7 +320,7 @@ GitLab の[離職率データ](https://10az.online.tableau.com/#/site/gitlab/wor
 
 オフボーディングの一環として、1,000 USD を超える価値の GitLab の所有物はすべて GitLab に返却する必要があります。
 
-ラップトップについては、[ラップトップ買い戻しポリシー](/handbook/security/corporate/end-user-services/laptop-management/laptop-offboarding-returns/#laptop-buybacks)を確認・参照してください。これは、チームメンバーが GitLab の裁量により、リフレッシュで新しいものに切り替わるとき、またはチームメンバーがオフボーディングするときに、既存のラップトップを保持するか買い戻すかのオプションを*持つ可能性がある*ことを述べています。ただし、チームメンバーが調査、不正行為、[GitLab の Code of Business Conduct & Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx) のいずれかの違反による解雇、その他の法的または安全関連の調査に関与する場合、無料でラップトップを購入または保持するオプションは無効になる可能性があります。
+ラップトップについては、[ラップトップ買い戻しポリシー](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-offboarding-returns/#laptop-buybacks)を確認・参照してください。これは、チームメンバーが GitLab の裁量により、リフレッシュで新しいものに切り替わるとき、またはチームメンバーがオフボーディングするときに、既存のラップトップを保持するか買い戻すかのオプションを*持つ可能性がある*ことを述べています。ただし、チームメンバーが調査、不正行為、[GitLab の Code of Business Conduct & Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx) のいずれかの違反による解雇、その他の法的または安全関連の調査に関与する場合、無料でラップトップを購入または保持するオプションは無効になる可能性があります。
 
 ラップトップを GitLab に返却するには、オフボーディング後すぐに `gitlab-laptop-recovery@gitlab.com` に連絡してください。
 

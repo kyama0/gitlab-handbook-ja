@@ -1,14 +1,14 @@
 ---
 title: CorpSec チームディレクトリ
 upstream_path: /handbook/security/corporate/team/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T06:32:43+09:00"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:46:30+09:00"
 translator: claude
 stale: false
-lastmod: "2026-06-29T08:59:00-04:00"
+lastmod: "2026-07-28T16:24:24+01:00"
 ---
 
-コーポレートセキュリティ部門は、チームメンバーと一時的なサービスプロバイダー (契約社員、ベンダーなど) 向けのテックサポート [ヘルプデスクサービス](/handbook/security/corporate/services/helpdesk) と、私たちが管理する社内システムの構成管理 [エンジニアリング](/handbook/security/corporate/services/infrastructure/) を提供します。
+コーポレートセキュリティ部門は、チームメンバーと一時的なサービスプロバイダー (契約社員、ベンダーなど) 向けのテックサポート [ヘルプデスクサービス](/handbook/eta/corporate-it/end-user-services) と、私たちが管理する社内システムの構成管理 [エンジニアリング](/handbook/security/corporate/engineering/) を提供します。
 
 ## チームディレクトリ
 
@@ -17,7 +17,7 @@ lastmod: "2026-06-29T08:59:00-04:00"
 <!-- Team Member -->
 <tr>
 <th>チームメンバー</th>
-<th>アイデンティティロール</th>
+<th>Identity ロール</th>
 <th>グループタグ</th>
 </tr>
 </thead>
@@ -25,55 +25,18 @@ lastmod: "2026-06-29T08:59:00-04:00"
 <!-- Team Member -->
 <tr>
 <td>
-<a href="https://gitlab.com/akrusiec"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Alex Krusiec"></div><div style="display: inline-block; vertical-align: top">Alex Krusiec</a><br>
+<a href="https://gitlab.com/arishwain"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Andrew Rishwain"></div><div style="display: inline-block; vertical-align: top">Andrew Rishwain</a><br>
 <small>
 <i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>akrusiec</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/akrusiec">@akrusiec</a>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>arishwain</code><br>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/arishwain">@arishwain</a>
 </small>
 </td>
 <td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_helpdesk</code>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code>
 </small></td>
 <td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/helpdesk">@gitlab-com/gl-security/corp/helpdesk</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/bferreira-ext"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Bruno Ferreira"></div><div style="display: inline-block; vertical-align: top">Bruno Ferreira</a><br>
-<small>
-<i class="fas fa-earth-europe" style="padding-right: 5px;"></i>EMEA<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>bferreira</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/bruno.n.ferreira">@bruno.n.ferreira</a>
-</small>
-</td>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_helpdesk</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/helpdesk">@gitlab-com/gl-security/corp/helpdesk</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/cshankgitlab"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/claytonshank.jpeg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Clayton Shank"></div><div style="display: inline-block; vertical-align: top">Clayton Shank</a><br>
-<small>
-<i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>cshank</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/cshankgitlab">@cshankgitlab</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_device_trust</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_saas</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/device">@gitlab-com/gl-security/corp/device</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/saas">@gitlab-com/gl-security/corp/saas</a><br>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/identity">@gitlab-com/gl-security/corp/identity</a><br>
 </small></td>
 </tr>
 <!-- Team Member -->
@@ -88,36 +51,11 @@ lastmod: "2026-06-29T08:59:00-04:00"
 </td>
 <td><small>
 <i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_platform</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_saas</code><br>
 <i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_mgr_eng</code>
 </small></td>
 <td><small>
 <i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/identity">@gitlab-com/gl-security/corp/identity</a><br>
 <i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/managers">@gitlab-com/gl-security/corp/managers</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/code">@gitlab-com/gl-security/corp/code</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/saas">@gitlab-com/gl-security/corp/saas</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/ericrubin"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Eric Rubin"></div><div style="display: inline-block; vertical-align: top">Eric Rubin</a><br>
-<small>
-<i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>erubin</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/ericrubin">@ericrubin</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_device_trust</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_saas</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_mgr_eng</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/device">@gitlab-com/gl-security/corp/device</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/managers">@gitlab-com/gl-security/corp/managers</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/saas">@gitlab-com/gl-security/corp/saas</a><br>
 </small></td>
 </tr>
 <!-- Team Member -->
@@ -131,29 +69,10 @@ lastmod: "2026-06-29T08:59:00-04:00"
 </small>
 </td>
 <td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_saas</code>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code>
 </small></td>
 <td><small>
 <i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/identity">@gitlab-com/gl-security/corp/identity</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/saas">@gitlab-com/gl-security/corp/saas</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/edunne-ext"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Eoghan Dunne"></div><div style="display: inline-block; vertical-align: top">Eoghan Dunne</a><br>
-<small>
-<i class="fas fa-earth-europe" style="padding-right: 5px;"></i>EMEA<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>edunne</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/edunne-gl">@edunne-gl</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_helpdesk</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/helpdesk">@gitlab-com/gl-security/corp/helpdesk</a><br>
 </small></td>
 </tr>
 <!-- Team Member -->
@@ -167,54 +86,10 @@ lastmod: "2026-06-29T08:59:00-04:00"
 </small>
 </td>
 <td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_platform</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_saas</code>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code>
 </small></td>
 <td><small>
 <i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/identity">@gitlab-com/gl-security/corp/identity</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/code">@gitlab-com/gl-security/corp/code</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/saas">@gitlab-com/gl-security/corp/saas</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/jeffford_"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/jeffford.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Jeff Ford"></div><div style="display: inline-block; vertical-align: top">Jeff Ford</a><br>
-<small>
-<i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>jford</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/jeffford_">@jeffford_</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_helpdesk</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/helpdesk">@gitlab-com/gl-security/corp/helpdesk</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/jeffersonmartin"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Jeff Martin"></div><div style="display: inline-block; vertical-align: top">Jeff Martin</a><br>
-<small>
-<i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>jmartin</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/jeffersonmartin">@jeffersonmartin</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_infra</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_platform</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_mgr_program</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_infra</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/identity">@gitlab-com/gl-security/corp/identity</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/infra">@gitlab-com/gl-security/corp/infra</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/code">@gitlab-com/gl-security/corp/code</a><br>
 </small></td>
 </tr>
 <!-- Team Member -->
@@ -228,47 +103,47 @@ lastmod: "2026-06-29T08:59:00-04:00"
 </small>
 </td>
 <td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_helpdesk</code>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code>
 </small></td>
 <td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/helpdesk">@gitlab-com/gl-security/corp/helpdesk</a><br>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/identity">@gitlab-com/gl-security/corp/identity</a><br>
 </small></td>
 </tr>
 <!-- Team Member -->
 <tr>
 <td>
-<a href="https://gitlab.com/jbisutti-gl"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/jbisutti-gl.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Justin Bisutti"></div><div style="display: inline-block; vertical-align: top">Justin Bisutti</a><br>
+<a href="https://gitlab.com/lennyv-glab"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Lenny Vaknine"></div><div style="display: inline-block; vertical-align: top">Lenny Vaknine</a><br>
 <small>
 <i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>jbisutti</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/jbisutti-gl">@jbisutti-gl</a>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>lvaknine</code><br>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/lennyv-glab">@lennyv-glab</a>
 </small>
 </td>
 <td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_device_trust</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_saas</code>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_devices</code><br>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_mgr_eng</code>
 </small></td>
 <td><small>
 <i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/device">@gitlab-com/gl-security/corp/device</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/saas">@gitlab-com/gl-security/corp/saas</a><br>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/managers">@gitlab-com/gl-security/corp/managers</a><br>
 </small></td>
 </tr>
 <!-- Team Member -->
 <tr>
 <td>
-<a href="https://gitlab.com/kimwaters"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/kimwaters.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Kim Waters"></div><div style="display: inline-block; vertical-align: top">Kim Waters</a><br>
+<a href="https://gitlab.com/mspry_gl"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Madison Spry"></div><div style="display: inline-block; vertical-align: top">Madison Spry</a><br>
 <small>
 <i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>kwaters</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/kimwaters">@kimwaters</a>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>mspry</code><br>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/mspry_gl">@mspry_gl</a>
 </small>
 </td>
 <td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_mgr_program</code>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code>
 </small></td>
-<td>
-N/A
-</td>
+<td><small>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/identity">@gitlab-com/gl-security/corp/identity</a><br>
+</small></td>
 </tr>
 <!-- Team Member -->
 <tr>
@@ -281,89 +156,10 @@ N/A
 </small>
 </td>
 <td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_saas</code>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code>
 </small></td>
 <td><small>
 <i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/identity">@gitlab-com/gl-security/corp/identity</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/saas">@gitlab-com/gl-security/corp/saas</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/mloveless"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/markloveless.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Mark Loveless"></div><div style="display: inline-block; vertical-align: top">Mark Loveless</a><br>
-<small>
-<i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>mloveless</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/mloveless">@mloveless</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_device</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_saas</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_mgr_program</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/device">@gitlab-com/gl-security/corp/device</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/saas">@gitlab-com/gl-security/corp/saas</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/mhirata-gl"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/maximilianhirata.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Maximillian Hirata"></div><div style="display: inline-block; vertical-align: top">Maximillian Hirata</a><br>
-<small>
-<i class="fas fa-earth-asia" style="padding-right: 5px;"></i>JAPAC<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>mhirata</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/mhirata-gl">@mhirata-gl</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_helpdesk</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/helpdesk">@gitlab-com/gl-security/corp/helpdesk</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/mic_rohr"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/mic_rohr.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Mic Rohr"></div><div style="display: inline-block; vertical-align: top">Mic Rohr</a><br>
-<small>
-<i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>mrohr</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/mic_rohr">@mic_rohr</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_helpdesk</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_logistics</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/helpdesk">@gitlab-com/gl-security/corp/helpdesk</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/logistics">@gitlab-com/gl-security/corp/logistics</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/mbeee"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Michael Beltran"></div><div style="display: inline-block; vertical-align: top">Michael Beltran</a><br>
-<small>
-<i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>mbeltran</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/mbeee">@mbeee</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_mgr_svc</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_helpdesk</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_logistics</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/helpdesk">@gitlab-com/gl-security/corp/helpdesk</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/logistics">@gitlab-com/gl-security/corp/logistics</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/managers">@gitlab-com/gl-security/corp/managers</a><br>
 </small></td>
 </tr>
 <!-- Team Member -->
@@ -377,52 +173,61 @@ N/A
 </small>
 </td>
 <td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_infra</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_platform</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_saas</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_infra</code>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code>
 </small></td>
 <td><small>
 <i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/identity">@gitlab-com/gl-security/corp/identity</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/infra">@gitlab-com/gl-security/corp/infra</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/code">@gitlab-com/gl-security/corp/code</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/saas">@gitlab-com/gl-security/corp/saas</a><br>
 </small></td>
 </tr>
 <!-- Team Member -->
 <tr>
 <td>
-<a href="https://gitlab.com/sladgrove"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/sladgrove.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Steve Ladgrove"></div><div style="display: inline-block; vertical-align: top">Steve Ladgrove</a><br>
-<small>
-<i class="fas fa-earth-asia" style="padding-right: 5px;"></i>JAPAC<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>sladgrove</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/sladgrove">@sladgrove</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_helpdesk</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/helpdesk">@gitlab-com/gl-security/corp/helpdesk</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/smanzuik"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/stevemanzuik.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Steve Manzuik"></div><div style="display: inline-block; vertical-align: top">Steve Manzuik</a><br>
+<a href="https://gitlab.com/nstrauss-gl"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Nathaniel Strauss"></div><div style="display: inline-block; vertical-align: top">Nathaniel Strauss</a><br>
 <small>
 <i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>smanzuik</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/smanzuik">@smanzuik</a>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>nstrauss</code><br>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/nstrauss-gl">@nstrauss-gl</a>
 </small>
 </td>
 <td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_dir</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_mgr_program</code><br>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_devices</code>
 </small></td>
 <td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/managers">@gitlab-com/gl-security/corp/managers</a><br>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/device">@gitlab-com/gl-security/corp/device</a><br>
+</small></td>
+</tr>
+<!-- Team Member -->
+<tr>
+<td>
+<a href="https://gitlab.com/p_han"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Peter Hansen"></div><div style="display: inline-block; vertical-align: top">Peter Hansen</a><br>
+<small>
+<i class="fas fa-earth-europe" style="padding-right: 5px;"></i>EMEA<br>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>phansen</code><br>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/p_han">@p_han</a>
+</small>
+</td>
+<td><small>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_devices</code>
+</small></td>
+<td><small>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/device">@gitlab-com/gl-security/corp/device</a><br>
+</small></td>
+</tr>
+<!-- Team Member -->
+<tr>
+<td>
+<a href="https://gitlab.com/stevesagan"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Steve Sagan"></div><div style="display: inline-block; vertical-align: top">Steve Sagan</a><br>
+<small>
+<i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>ssagan</code><br>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/stevesagan">@stevesagan</a>
+</small>
+</td>
+<td><small>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_devices</code>
+</small></td>
+<td><small>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/device">@gitlab-com/gl-security/corp/device</a><br>
 </small></td>
 </tr>
 <!-- Team Member -->
@@ -436,34 +241,13 @@ N/A
 </small>
 </td>
 <td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_infra</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_platform</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_svc_infra</code>
+<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code>
 </small></td>
 <td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/infra">@gitlab-com/gl-security/corp/infra</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/code">@gitlab-com/gl-security/corp/code</a><br>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/identity">@gitlab-com/gl-security/corp/identity</a><br>
 </small></td>
 </tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/zhardie1"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/zackhardie.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Zack Hardie"></div><div style="display: inline-block; vertical-align: top">Zack Hardie</a><br>
-<small>
-<i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>zhardie</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/zhardie1">@zhardie1</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_device_trust</code><br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_saas</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/device">@gitlab-com/gl-security/corp/device</a><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/saas">@gitlab-com/gl-security/corp/saas</a><br>
-</small></td>
-</tr>
+
 </tbody>
 </table>
 
@@ -472,36 +256,12 @@ N/A
 ```mermaid
 graph TB
 
-CORPSEC_SVC["<b>Corporate Security (CorpSec)</b><br><i><b>Director:</b> Steve Manzuik</i>"]:::violet
+CORPSEC_SVC["<b>Corporate Security (CorpSec)</b><br><i><b>Engineering Managers:</b> David Zhu,<br>Lenny Vaknine</i>"]:::violet
 
-CORPSEC_SVC_HELPDESK["<b>Helpdesk Services</b><br><i><b>Manager:</b> Michael Beltran</i><br><i><b>Analysts:</b> Alex Krusiec (AMER)<br>Bruno Ferreira (EMEA)<br>Eoghan Dunne (EMEA)<br>Jeff Ford (AMER)<br>Jenny Wong (AMER)<br>Max Hirata (JAPAC)<br>Mic Rohr (AMER)<br>Steve Ladgrove (JAPAC)"]:::emerald
-CORPSEC_SVC_LOGISTICS["<b>Logistics Services (Laptops)</b><br><i><b>Manager:</b> Michael Beltran</i><br><i><b>Analysts:</b> Mic Rohr</i>"]:::emerald
-CORPSEC_SVC_INFRA["<b>Infrastructure Services</b><br><i><b>Program Manager:</b> Jeff Martin</i><br><i><b>Engineers:</b> Mohammed Al Kobaisy (EMEA)<br>Vlad Stoianovici (EMEA)"]:::emerald
 
-CORPSEC_ENG_SAAS["<b>(Corporate) SaaS Engineering</b><br><i><b>Eng Managers:</b> David, Eric</i><br><i><b>Program Manager:</b> Kim Waters</i><br><i><b>Staff Engineer:</b> Mark Loveless</i><br><i><b>Engineers:</b> Clayton, Erik,<br> Jacob, Justin, Marcus, Mohammed, Zack</i><br><br>1Password<br>GitLab.com IAM Policies<br>Google Drive<br>Google Workspace<br>Nira<br>Okta Configuration<br>Service Accounts<br>Slack<br>Zoom"]:::fuchsia
-CORPSEC_ENG_DEVICE["<b>Device Trust Engineering</b><br><i><b>Eng Manager:</b> Eric Rubin</i><br><i><b>Program Manager:</b> Kim Waters</i><br><i><b>Staff Engineer:</b> Mark Loveless</i><br><i><b>Engineers:</b>  Clayton, Justin, Zack</i><br><br>DriveStrike<br>Jamf MDM<br>Mobile Devices<br>NordLayer VPN<br>Okta Verify<br>SentinelOne EDR<br>Software Version Updates<br>YubiKey"]:::fuchsia
-CORPSEC_ENG_IDENTITY["<b>Identity Engineering</b><br><i><b>Eng Manager:</b> David Zhu</i><br><i><b>Program Manager:</b> Kim Waters</i><br><i><b>Staff Engineer:</b> Jeff Martin</i><br><i><b>Engineers:</b> Erik, Jacob,<br>Marcus, Mohammed</i><br><br>ABAC and RBAC<br>AuthN and AuthZ Policies<br>Identity Governance (IGA)<br>No Code Automation<br>Onboarding<br>Offboarding<br>Role Entitlements"]:::fuchsia
-CORPSEC_ENG_INFRA["<b>Infrastructure Engineering</b><br><i><b>Program Manager:</b> Jeff Martin</i><br><i><b>Engineers:</b> Mohammed, Vlad<br><br>ARs and IAM (AWS/GCP)<br>Amazon Web Services (AWS)<br>Azure<br>Billing and Cost Mgmt<br>Domains and DNS<br>Google Cloud (GCP)<br>Multi-Tenant Org Architecture<br>Sandbox Cloud<br>Secrets Mgmt Platform<br>Tech Debt Cleanup<br>Teleport Bastion"]:::fuchsia
-CORPSEC_ENG_PLATFORM["<b>Platform Engineering</b><br><i><b>Program Manager:</b> David Zhu</i><br><i><b>Staff Engineer:</b> Jeff Martin</i><br><i>(+ contributors per project)</i><br><br>accesschk (IAM/RBAC)<br>accessctl (IAM/RBAC)<br>demosys (IAM/RBAC/Infra)<br>hackystack (Infra)<br>provisionesta (API/Auditlog)<br>Systems Handbook<br>trainingctl (Student IAM)<br>Terraform (Config Mgmt)"]:::fuchsia
+CORPSEC_ENG_DEVICE["<b>CorpSec Devices</b><br><i><b>Eng Manager:</b> Lenny Vaknine</i><br><i><b>Engineers:</b> Nathaniel, Peter, Steve</i><br><br>DriveStrike<br>Google Chrome<br>Jamf MDM<br>Mobile Devices<br>NordLayer VPN<br>Okta Verify<br>SentinelOne EDR<br>Software Version Updates<br>YubiKey"]:::fuchsia
+CORPSEC_ENG_IDENTITY["<b>Identity Engineering</b><br><i><b>Eng Manager:</b> David Zhu</i><br><i><b>Engineers:</b> Andrew, Erik, Jacob,<br>Jenny, Madison, Marcus,<br>Mohammed, Vlad</i><br><br>1Password<br>ABAC and RBAC<br>ARs and IAM (AWS/Azure/GCP)<br>AuthN and AuthZ Policies<br>GitLab.com IAM Policies<br>Google Workspace<br>Identity Governance (IGA)<br>No Code Automation<br>Okta Configuration<br>Onboarding<br>Offboarding<br>Role Entitlements<br>Sandbox Cloud<br>Service Accounts<br>Slack"]:::fuchsia
 
-CORPSEC_SVC --> CORPSEC_SVC_HELPDESK
-CORPSEC_SVC --> CORPSEC_SVC_LOGISTICS
-CORPSEC_SVC --> CORPSEC_SVC_INFRA
-CORPSEC_SVC_HELPDESK <--> CORPSEC_ENG_SAAS
-CORPSEC_SVC_HELPDESK <--> CORPSEC_ENG_DEVICE
-CORPSEC_SVC_HELPDESK <--> CORPSEC_ENG_IDENTITY
-CORPSEC_SVC_LOGISTICS <--> CORPSEC_SVC_HELPDESK
-%% CORPSEC_ENG -.- CORPSEC_ENG_SAAS
-%% CORPSEC_ENG -.- CORPSEC_ENG_DEVICE
-%% CORPSEC_ENG -.- CORPSEC_ENG_IDENTITY
-%% CORPSEC_ENG -.- CORPSEC_ENG_INFRA
-%% CORPSEC_ENG -.- CORPSEC_ENG_PLATFORM
-CORPSEC_SVC_INFRA -.- CORPSEC_ENG_PLATFORM
-CORPSEC_ENG_PLATFORM -.- CORPSEC_ENG_IDENTITY
-CORPSEC_ENG_PLATFORM -.- CORPSEC_ENG_INFRA
-CORPSEC_SVC_INFRA <--> CORPSEC_ENG_INFRA
-%% CORPSEC_ENG_IDENTITY -.- CORPSEC_ENG_PLATFORM
-%% CORPSEC_ENG_INFRA -.- CORPSEC_ENG_PLATFORM
 
 classDef slate fill:#cbd5e1,stroke:#475569,stroke-width:1px;
 classDef red fill:#fca5a5,stroke:#dc2626,stroke-width:1px;
@@ -512,6 +272,10 @@ classDef cyan fill:#67e8f9,stroke:#0891b2,stroke-width:1px;
 classDef sky fill:#7dd3fc,stroke:#0284c7,stroke-width:1px;
 classDef violet fill:#c4b5fd,stroke:#7c3aed,stroke-width:1px;
 classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
+CORPSEC_SVC --> CORPSEC_ENG_DEVICE
+CORPSEC_SVC --> CORPSEC_ENG_IDENTITY
+CORPSEC_ENG_DEVICE <--> CORPSEC_ENG_IDENTITY
+
 ```
 
 ## マネージャー組織図
@@ -520,71 +284,42 @@ classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
 graph LR
 
 JLEMOS["Josh Lemos<br>CISO"]:::slate
-KWATERS["Kim Waters<br>Program Manager"]:::slate
-SMANZUIK["Steve Manuzik<br>Sr Director, CorpSec"]:::orange
 
-subgraph "Support Helpdesk (aka End User Services)"
-direction TB
-AKRUSIEC["Alex Kruseic"]:::emerald
-BFERREIRA["Bruno Ferreira"]:::emerald
-EDUNNE["Eoghan Dunne"]:::emerald
-JFORD["Jeff Ford"]:::emerald
-JWONG["Jenny Wong"]:::emerald
-MBELTRAN["Michael Beltran<br>Manager"]:::orange
-MHIRATA["Max Hirata"]:::emerald
-MROHR["Mic Rohr"]:::emerald
-SLADGROVE["Steve Ladgrove"]:::emerald
+subgraph "CorpSec Devices"
+LVAKNINE["Lenny Vaknine<br>Manager<br>(CorpSec Devices)"]:::orange
+NSTRAUSS["Nathaniel Strauss"]:::fuchsia
+PHANSEN["Peter Hansen"]:::fuchsia
+SSAGAN["Steve Sagan"]:::fuchsia
 end
 
-subgraph "Device Trust and SaaS Engineering"
-MLOVELESS["Mark Loveless<br>Staff Engineer"]:::violet
-CSHANK["Clayton Shank"]:::fuchsia
-ERUBIN["Eric Rubin<br>Manager<br>(Device Trust and SaaS)"]:::orange
-JBISUTTI["Justin Bisutti"]:::fuchsia
-ZHARDIE["Zack Hardie"]:::fuchsia
-end
-
-subgraph "Identity, Infrastructure, Platform, and SaaS Engineering"
-DZHU["David Zhu<br>Manager<br>(Identity and SaaS)"]:::orange
+subgraph "Identity Engineering"
+DZHU["David Zhu<br>Manager<br>(Identity)"]:::orange
+ARISHWAIN["Andrew Rishwain"]:::fuchsia
 ELENTZ["Erik Lentz"]:::fuchsia
 JWATERS["Jacob Waters"]:::fuchsia
+JWONG["Jenny Wong"]:::fuchsia
+MSPRY["Madison Spry"]:::fuchsia
 MWHITAKER["Marcus Whitaker"]:::fuchsia
 MALKOBAISY["Mohammed Al Kobaisy"]:::fuchsia
 VSTOIANOVICI["Vlad Stoianovici"]:::fuchsia
-JMARTIN["Jeff Martin<br>Staff Engineer<br>(Infra and Platform)"]:::violet
 end
 
-JLEMOS --- SMANZUIK
-SMANZUIK --- MBELTRAN
-SMANZUIK --- ERUBIN
-SMANZUIK --- DZHU
-KWATERS -.- SMANZUIK
-MLOVELESS -. Device<br>Trust .- ERUBIN
+JLEMOS --- LVAKNINE
+JLEMOS --- DZHU
 
-MBELTRAN --- AKRUSIEC
-MBELTRAN --- BFERREIRA
-MBELTRAN --- EDUNNE
-MBELTRAN --- JFORD
-MBELTRAN --- JWONG
-MBELTRAN --- MHIRATA
-MBELTRAN --- MROHR
-MBELTRAN --- SLADGROVE
 
-ERUBIN --- AHUSS
-ERUBIN --- CSHANK
-ERUBIN --- ZHARDIE
-ERUBIN --- JBISUTTI
+LVAKNINE --- NSTRAUSS
+LVAKNINE --- PHANSEN
+LVAKNINE --- SSAGAN
 
-DZHU --- JWATERS
+DZHU --- ARISHWAIN
 DZHU --- ELENTZ
+DZHU --- JWATERS
+DZHU --- JWONG
+DZHU --- MSPRY
 DZHU --- MWHITAKER
 DZHU --- MALKOBAISY
 DZHU --- VSTOIANOVICI
-JMARTIN --- DZHU
-SMANZUIK --- MLOVELESS
-SMANZUIK -.- JMARTIN
-JMARTIN -. Infrastructure<br>Services .- MALKOBAISY
-JMARTIN -. Infrastructure<br>Engineering .- VSTOIANOVICI
 
 classDef slate fill:#cbd5e1,stroke:#475569,stroke-width:1px;
 classDef red fill:#fca5a5,stroke:#dc2626,stroke-width:1px;

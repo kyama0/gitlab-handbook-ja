@@ -2,11 +2,11 @@
 title: "アイデンティティエンジニアリングチーム"
 description: "アイデンティティエンジニアリングチームは、社内のGitLabシステム、クラウドインフラ、テックスタックアプリケーション向けのアイデンティティおよびアクセス管理 (IAM)、ロールベースアクセス制御 (RBAC)、管理者アクセス制御に関する技術戦略と自動化の実装をリードしています。セキュリティチームは顧客と製品の信頼に焦点を当て、ビジネステクノロジー・ITチームはコンプライアンスと財務上の信頼に焦点を当てています。"
 upstream_path: /handbook/security/threat-management/identity/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T03:09:44Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:29:34+09:00"
 translator: claude
 stale: false
-lastmod: "2024-06-06T07:14:15+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -17,7 +17,7 @@ lastmod: "2024-06-06T07:14:15+00:00"
 
 チームはまだ発足したばかりですので、私たちが取り組んでいる内容については [Identity Engineering Issue Tracker](https://gitlab.com/gitlab-com/gl-security/identity/eng/issue-tracker/-/issues) をご覧ください。
 
-**ITインフラをお探しですか？** [Identity Ops Issue Tracker](https://gitlab.com/gitlab-com/gl-security/identity/ops/issue-tracker) でIssueを作成するか、Slackの `#security-identity-ops` でお問い合わせください。
+**ITインフラをお探しですか？** [Identity Engineering Issue Tracker](https://gitlab.com/gitlab-com/gl-security/identity/eng/issue-tracker/-/issues) でIssueを作成するか、Slackの `#security-identity-eng` でお問い合わせください。
 
 **何かにアクセスしたいですか？** 適切な [Issueテンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/blob/master/README.md?ref_type=heads) を使ってアクセスリクエストをオープンしてください。
 
@@ -25,26 +25,23 @@ lastmod: "2024-06-06T07:14:15+00:00"
 
 ### お問い合わせ
 
-- (推奨) `#security-identity-ops` でお尋ねください
-- 既存のIssueで `@gitlab-com/gl-security/identity/ops` をタグ付けしてください
+- (推奨) `#security-identity-eng` でお尋ねください
+- 既存のIssueで `@gitlab-com/gl-security/identity/eng` をタグ付けしてください
 - 既存のSlackスレッドで `@security-identity` をタグ付けしてください
-- [Identity Ops Issue Tracker](https://gitlab.com/gitlab-com/gl-security/identity/ops/issue-tracker) でIssueを作成してください
+- [Identity Engineering Issue Tracker](https://gitlab.com/gitlab-com/gl-security/identity/eng/issue-tracker/-/issues) でIssueを作成してください
 - 機密事項ですか？チームメンバーの誰かにSlackのDMをお送りください。
 
 #### オンコールスケジュール (Slack DM)
 
 - 平日はSlack DMを使用してください。週末はPagerDutyを使用してください。
-- 00:00 から 03:00 UTC - Jeff Martin
-- 03:00 から 07:00 UTC - 担当なし (SIRTにご連絡ください)
+- 00:00 から 07:00 UTC - 担当なし (SIRTにご連絡ください)
 - 07:00 から 15:00 UTC - Vlad Stoianovici
-- 15:00 から 17:00 UTC - Jeff Martin / Vlad Stoianovici (サンセットハンドオフ)
-- 17:00 から 23:59 UTC - Jeff Martin
+- 15:00 から 23:59 UTC - 担当なし (SIRTにご連絡ください)
 
 ### EpicとIssue
 
 - オペレーション
   - [Access Requests Issue Tracker](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues) ([Issueテンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/blob/master/README.md?ref_type=heads) を使用)
-  - [Identity Ops Issue Tracker](https://gitlab.com/gitlab-com/gl-security/identity/ops/issue-tracker/-/issues) (日々のリクエスト)
 - エンジニアリング
   - [Identity Engineering Epics Roadmap](https://gitlab.com/groups/gitlab-com/gl-security/identity/eng/-/epics)
   - [Identity Engineering Epics](https://gitlab.com/groups/gitlab-com/gl-security/identity/eng/-/epics)

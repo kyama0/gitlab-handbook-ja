@@ -2,11 +2,11 @@
 title: "Field Enablement Spotlight: GitLab における継続教育"
 description: "GitLab のフィールドセールス & カスタマーサクセスチームメンバー全員のための継続教育ウェブキャストシリーズ"
 upstream_path: /handbook/sales/training/sales-enablement-sessions/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T07:54:58+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-21T15:22:32-08:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## Field Enablement Spotlight セッション
@@ -326,7 +326,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 - SDR BDR チーム `sdrbdr@`
 - マーケティングチーム `marketing-team@`
 
-メールグループへのアクセスを要求するには、[アクセスリクエストを記入](/handbook/security/corporate/end-user-services/access-requests/access-requests/)してください。これらのグループはミーティングに招待されているため、各個人が個別の招待を受ける必要はありません。
+メールグループへのアクセスを要求するには、[アクセスリクエストを記入](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)してください。これらのグループはミーティングに招待されているため、各個人が個別の招待を受ける必要はありません。
 
 ## トレーニングプレイリスト
 

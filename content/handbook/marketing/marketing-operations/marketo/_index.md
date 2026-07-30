@@ -2,11 +2,11 @@
 title: "Marketo"
 description: "Marketo は、メールマーケティング、リード管理、プログラム管理に使用される私たちのマーケティングオートメーションプラットフォームです。"
 upstream_path: "/handbook/marketing/marketing-operations/marketo/"
-upstream_sha: "7032d681eb34b7baa363eb97119170b35beb5d76"
-translated_at: "2026-07-24T06:29:02+09:00"
+upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
+translated_at: "2026-07-30T09:14:12+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-07-23T09:08:13-06:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## Marketo について {#about-marketo}
@@ -53,7 +53,7 @@ Sales Systems と協力して、`Block_Marketo_Sync__c` というカスタム数
 
 Marketo にはサンドボックスがあります。サンドボックスはトレーニング、API リンクの作成、本番に移す前の全体的なテストに使用されます。
 
-サンドボックスへのアクセスを希望する場合は、[AR](/handbook/security/corporate/end-user-services/access-requests/#application-specific-templates) に記入してください。
+サンドボックスへのアクセスを希望する場合は、[AR](/handbook/eta/corporate-it/end-user-services/access-requests/#application-specific-templates) に記入してください。
 
 SFDC ステージングから Marketo サンドボックスに通過するリード数を制限するため、`Marketo Sync` = TRUE の場合のみ、SFDC ステージングから Marketo サンドボックスにリードが同期されるカスタムルールを設定しています。これは本番環境とは反対のロジックです。
 

@@ -3,11 +3,11 @@ title: チケットへの対応
 category: Handling tickets
 description: サポートチケットの探し方、選び方、着手方法
 upstream_path: /handbook/support/workflows/working-on-tickets/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:16:12+09:00"
+upstream_sha: "5934211cb62d0c36181bc3a4be1381e5e07aef42"
+translated_at: "2026-07-29T06:25:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## はじめに
@@ -66,7 +66,7 @@ lastmod: "2026-07-14T15:22:25-05:00"
 
 ## Zendesk 添付ファイルの管理
 
-Zendesk チケットを扱う際、添付ファイルをノートPCにダウンロードする必要が生じる場合があります。[ノートPCはフルディスク暗号化されています](/handbook/security/corporate/end-user-services/laptop-management/laptop-security/encryption)が、ダウンロードした添付ファイルは [RED データ（顧客データ）](/handbook/security/policies_and_standards/data-classification-standard/#red) を含む可能性があるため、慎重に扱う必要があります。
+Zendesk チケットを扱う際、添付ファイルをノートPCにダウンロードする必要が生じる場合があります。[ノートPCはフルディスク暗号化されています](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/encryption)が、ダウンロードした添付ファイルは [RED データ（顧客データ）](/handbook/security/policies_and_standards/data-classification-standard/#red) を含む可能性があるため、慎重に扱う必要があります。
 
 1. 管理しやすいよう、ダウンロードを専用フォルダに保存します。例: [Zendesk Download Router](https://gitlab.com/gitlab-com/support/toolbox/zd-dl-router) を使用
 1. チケットを解決した後はできるだけ早く、ダウンロードした添付ファイルの削除を自動化します

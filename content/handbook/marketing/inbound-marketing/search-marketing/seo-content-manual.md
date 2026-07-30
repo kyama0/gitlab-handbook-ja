@@ -3,11 +3,11 @@ title: "SEO コンテンツマニュアル"
 description: "本マニュアルの目的は、検索者と検索エンジンの両方にとって有用で価値のあるコンテンツを作成することを支援することです。"
 canonical_path: "/handbook/marketing/inbound-marketing/search-marketing/seo-content-manual/"
 upstream_path: /handbook/marketing/inbound-marketing/search-marketing/seo-content-manual/
-upstream_sha: 2aee792005d83a7f758d3cf1573626202b05037c
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:20:18+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 
@@ -106,7 +106,7 @@ GitLab には、ターゲティングプロセスを情報提供、検証、進�
 
 1. [**プロダクト & ソリューションマーケティング**](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/#some-key-resources) - チームメンバーとリンクし、彼らの豊富な情報とリサーチリソースにアクセスすることで、お客様への例外的な洞察が提供され、お客様にフォーカスした言語とニーズを使用した最新のターゲティングが可能になります。
 
-1. [**主要なペルソナ &amp; ペインポイント**](/handbook/product/personas/) - ユーザーペルソナリサーチは、特定のオーディエンスのための可能なキーワードターゲットを彼らの要件、動機、ペインポイントに基づいて特定するのを支援します。リソースとして、これは特定のセグメント向けの問題解決キーワードターゲットを確立するのに優れています。
+1. [**主要なペルソナ &amp; ペインポイント**](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) - ユーザーペルソナリサーチは、特定のオーディエンスのための可能なキーワードターゲットを彼らの要件、動機、ペインポイントに基づいて特定するのを支援します。リソースとして、これは特定のセグメント向けの問題解決キーワードターゲットを確立するのに優れています。
 
 1. [**Chorus**](https://chorus.ai/) - お客様の会話に基づいて、最も重要なこととして彼ら自身の言語を使用した情報と洞察を提供します。議論の議事録のフィルタリングと分析は、キーワードターゲティングリサーチを情報提供し、現在の用語の特定を支援します。追加のベネフィットは、特定の用語のコンテキスト分析能力です。
 

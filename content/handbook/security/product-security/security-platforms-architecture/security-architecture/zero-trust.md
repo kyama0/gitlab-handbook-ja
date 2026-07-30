@@ -1,11 +1,11 @@
 ---
 title: ゼロトラスト
 upstream_path: /handbook/security/product-security/security-platforms-architecture/security-architecture/zero-trust/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:30:25+09:00"
+upstream_sha: "5934211cb62d0c36181bc3a4be1381e5e07aef42"
+translated_at: "2026-07-29T06:29:34+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T11:05:13-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## ゼロトラスト {#zero-trust}
@@ -27,4 +27,4 @@ lastmod: "2026-07-14T11:05:13-04:00"
 
 /r/netsec subreddit に行って、ZTN 実装、ロードマップ、戦略などに関する質問に答えた [2019 年 10 月 29 日の Reddit AMA](https://www.reddit.com/r/netsec/comments/d71p1d/were_a_100_remote_cloudnative_company_and_were/) をご覧ください。
 
-ID は ZTN フレームワーク実装の重要な要素です。GitLab は、クラウドアプリケーションアクセスの認証を標準化し、ユーザーフレンドリーな SSO を実装するために、Okta の実装を進めています。詳細については [Okta](/handbook/security/corporate/end-user-services/okta/) ページをご覧ください。
+ID は ZTN フレームワーク実装の重要な要素です。GitLab は、クラウドアプリケーションアクセスの認証を標準化し、ユーザーフレンドリーな SSO を実装するために、Okta の実装を進めています。詳細については [Okta](/handbook/eta/corporate-it/end-user-services/okta/) ページをご覧ください。

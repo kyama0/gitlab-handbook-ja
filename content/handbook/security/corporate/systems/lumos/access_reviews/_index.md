@@ -1,11 +1,11 @@
 ---
 title: Lumos アクセスレビューガイド
 upstream_path: /handbook/security/corporate/systems/lumos/access_reviews/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T07:19:19+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -58,5 +58,5 @@ Slack の #user-access-reviews チャンネルにご連絡ください。
 
 - [アクセスレビュー手順](/handbook/security/security-assurance/security-compliance/access-reviews/)
 - [識別と認証のセキュリティコントロール](/handbook/security/security-assurance/security-compliance/sec-controls/)
-- [アクセスリクエストハンドブックページ](/handbook/security/corporate/end-user-services/access-requests/access-requests/)
+- [アクセスリクエストハンドブックページ](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)
 - [アクセス管理ポリシー](/handbook/security/security-and-technology-policies/access-management-policy/)

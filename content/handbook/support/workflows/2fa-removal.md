@@ -4,11 +4,11 @@ category: GitLab.com
 subcategory: Accounts
 description: "2FA 解除リクエストを処理する方法を詳述するワークフロー"
 upstream_path: /handbook/support/workflows/2fa-removal/
-upstream_sha: 05f1dda85e84923d830b0bf74ffd3f63fddbd830
-translated_at: "2026-07-06T21:06:15Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:21:07+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-06T18:13:03+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -21,7 +21,7 @@ lastmod: "2026-07-06T18:13:03+00:00"
 
 ### GitLab チームメンバー
 
-ユーザーが GitLab チームメンバーである場合は、[IT Ops に連絡](/handbook/security/corporate/end-user-services/_index.md)してもらってください。
+ユーザーが GitLab チームメンバーである場合は、[IT Ops に連絡](/handbook/eta/corporate-it/end-user-services/)してもらってください。
 
 ## GitLab 内での 2FA 解除 {#2fa-removal-within-gitlab}
 

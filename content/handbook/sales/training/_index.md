@@ -2,12 +2,12 @@
 title: "セールストレーニング"
 description: "GitLab のセールス学習フレームワークとセールストレーニングリソース"
 upstream_path: /handbook/sales/training/
-upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
-translated_at: "2026-07-25T06:17:55+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T07:54:58+09:00"
 translator: claude
 stale: false
 model: claude-opus-4-7
-lastmod: "2026-07-24T14:14:48+00:00"
+lastmod: "2026-07-28T05:53:39-07:00"
 ---
 
 ## GitLab セールス学習フレームワーク
@@ -25,7 +25,7 @@ GitLab Field チームメンバーは、さまざまなトピック、スキル�
 | GitLab の理想的な顧客プロファイルとは? |- [ハンドブックページ](/handbook/marketing/account-based-marketing/) <br>- [GitLab Account Based Marketing and Ideal Customer Profile](https://youtu.be/6TbtGiS9Eak)（2020 年 3 月、34 分）（内部のみ） |
 | GitLab はどのようなビジネス上の課題を顧客が解決するのを支援するか? | - GitLab の [Command of the Message ページ](/handbook/sales/command-of-the-message/) のバリュードライバーやその他の資料をチェック |
 | ターゲットとなるバイヤーペルソナとそのペインポイントは? | - [GitLab Buyer Personas](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/) <br> - [Interview with an IT Agility Director](/handbook/sales/it-agility-director-interview/) <br> - [Enterprise IT roles & key pain points](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enterprise-it-roles/) について学ぶ |
-| ターゲットとなるユーザーペルソナとそのペインポイントは? | - [ハンドブックページ](/handbook/product/personas/#list-of-user-personas) |
+| ターゲットとなるユーザーペルソナとそのペインポイントは? | - [ハンドブックページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#list-of-user-personas) |
 
 ## 業界のトピック・トレンド
 

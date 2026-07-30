@@ -1,9 +1,9 @@
 ---
 title: "GitLab における戦略的リサーチ"
 upstream_path: /handbook/upstream-studios/experience-research/strategic-research-at-gitlab/
-upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
-lastmod: "2026-07-23T12:35:46-03:00"
-translated_at: "2026-07-24T06:08:04+09:00"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+lastmod: "2026-07-28T05:53:28-07:00"
+translated_at: "2026-07-29T06:11:55+09:00"
 translator: codex
 stale: false
 ---
@@ -62,7 +62,7 @@ stale: false
 
 **最近のプロジェクトにおける戦略的リサーチの例:**
 
-1. [Release Manager Persona Addition](https://gitlab.com/gitlab-org/ux-research/-/issues/316)は、[Roles and Personas ページ](/handbook/product/personas/)の更新につながった、ステージ横断かつ複数グループにまたがる戦略的リサーチの優れた例です。これは Ops Section 全体にプラスの影響を与え、Ultimate ティアで新しいオーディエンスに到達する助けとなりました。
+1. [Release Manager Persona Addition](https://gitlab.com/gitlab-org/ux-research/-/issues/316)は、[Roles and Personas ページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)の更新につながった、ステージ横断かつ複数グループにまたがる戦略的リサーチの優れた例です。これは Ops Section 全体にプラスの影響を与え、Ultimate ティアで新しいオーディエンスに到達する助けとなりました。
 1. [KubeCon Ops Product Direction Survey](https://gitlab.com/gitlab-org/ux-research/-/issues/1740)は、Ops 内の[将来のプロダクトロードマップ](https://about.gitlab.com/blog/2022/05/31/the-kubecon-summary-from-a-product-perspective/)に情報を与えられた大規模なプロジェクトです。これは、GitLab ユーザーにとってどの CI/CD ワークフローが最も困難であるかについて貴重なフィードバックを得て、理想的なシークレットソリューションについてユーザーが考えている好みを学ぶことで実現しました。
 
 ### 戦略的リサーチの成果物 {#strategic-research-outputs}

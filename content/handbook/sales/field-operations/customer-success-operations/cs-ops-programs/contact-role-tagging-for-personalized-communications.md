@@ -2,11 +2,11 @@
 title: "パーソナライズされたコミュニケーションのための顧客コンタクトの役割タグ付け"
 description: "より効果的なデジタルエンゲージメントのために顧客コンタクトをタグ付けする戦略的アプローチを学びましょう。"
 upstream_path: /handbook/sales/field-operations/customer-success-operations/cs-ops-programs/contact-role-tagging-for-personalized-communications/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T12:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:10:01+09:00"
 translator: claude
 stale: false
-lastmod: "2025-04-30T18:11:10+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ## なぜ重要か
@@ -105,7 +105,7 @@ Gainsight のコンタクト管理レポートを活用して、割り当てら�
 
 ## 関連リソース
 
-- [カスタマーペルソナ定義](/handbook/product/personas/)
+- [カスタマーペルソナ定義](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)
 - [デジタルプログラムコンテンツカレンダー](https://docs.google.com/spreadsheets/d/14udgDUoEhzMjkQMYBVmYInPUBHgpfSKm8vVDRTR3NyY/edit?usp=sharing)
 - [Gainsight トレーニングリソース](https://about.gitlab.com/handbook/customer-success/csm/gainsight/)
 - [Contact-to-Persona Mapping Project Overview](https://gitlab.com/gitlab-com/customer-success/csmerm/okrs/-/issues/692)

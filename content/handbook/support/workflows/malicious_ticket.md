@@ -4,11 +4,11 @@ category: Handling tickets
 subcategory: General
 description: チケットが疑わしい/悪意のある性質を持つように見える場合に、いつどのようにセキュリティに連絡するかを文書化しています。
 upstream_path: /handbook/support/workflows/malicious_ticket/
-upstream_sha: 5b8afe7d206f5c195e463506206021ee3c9a4491
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:31:24+09:00"
 translator: claude
 stale: false
-lastmod: "2025-03-04T09:48:51+01:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ## 概要

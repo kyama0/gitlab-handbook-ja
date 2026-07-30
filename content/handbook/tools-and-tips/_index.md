@@ -2,11 +2,11 @@
 title: ツールとヒント
 simple_list: true
 upstream_path: /handbook/tools-and-tips/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-16T21:37:21Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:11:55+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:44-03:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -444,7 +444,7 @@ GitLab で機能するその他のハードウェアトークンもまずまず�
 
 GitLab チームメンバーが心に留めておくべきことは、会社のラップトップを持って旅行する場合 - 出張、家族や友人の訪問だが仕事を続けるつもり、または単に地元のコーヒーショップへの旅行 - トークンをクレジットカードと同じレベルの注意で扱うことです。盗まれる可能性のある場所に置いておかないでください。
 
-ハードウェアトークンを失う可能性が心配な場合は、[Touch ID](/handbook/security/corporate/end-user-services/onboarding101/#macbook-step-5-okta-account-verification) と、可能であれば [モバイルデバイス](/handbook/security/corporate/end-user-services/onboarding101/onboarding-mobile-devices) を承認された認証トークンとして追加してください。FIDO2/WebAuthn 標準に従うサイトは、複数のトークンをサポートする必要があります。これにより、1 つを紛失または盗まれた場合でも、別の方法でログインできます。現在、YubiKey はユーザーごとに 1 つに制限されており、紛失または破損した場合は、#it_security_help Slack チャンネルで連絡してください。交換のサポートをします。
+ハードウェアトークンを失う可能性が心配な場合は、[Touch ID](/handbook/eta/corporate-it/end-user-services/onboarding101/#macbook-step-5-okta-account-verification) と、可能であれば [モバイルデバイス](/handbook/eta/corporate-it/end-user-services/onboarding101/onboarding-mobile-devices) を承認された認証トークンとして追加してください。FIDO2/WebAuthn 標準に従うサイトは、複数のトークンをサポートする必要があります。これにより、1 つを紛失または盗まれた場合でも、別の方法でログインできます。現在、YubiKey はユーザーごとに 1 つに制限されており、紛失または破損した場合は、#it_security_help Slack チャンネルで連絡してください。交換のサポートをします。
 
 GitLab チームメンバーには 2FA の使用が必須です。
 
@@ -970,7 +970,7 @@ Jamboard は <https://jamboard.google.com/> でアクセスできるコラボレ
   - ブックマークバーを非表示にする: `cmd shift b`（例: スクリーンショットや共有画面プレゼンテーション用）
   - 開発者ツールを開く: `cmd option i`（例: ウェブサイトエラーのデバッグ用）
 - [タブをタブグループに整理](https://www.google.com/chrome/tips/#organize) し、名前とカスタムカラーを割り当て、折りたたみまたは並べ替えできます。タブをグループ間で移動することは、ブラウザウィンドウ間でも機能します。
-- ブラウザにログイン（GitLab Workspace アカウントで）すると、[インストール間でプロフィールが保持](https://www.google.com/chrome/tips/#customize) されます。これは、[ラップトップを更新するとき](/handbook/security/corporate/end-user-services/laptop-management/laptop-ordering/#laptop-refreshes) にブックマーク、拡張機能、構成を移行するのに役立ちます。
+- ブラウザにログイン（GitLab Workspace アカウントで）すると、[インストール間でプロフィールが保持](https://www.google.com/chrome/tips/#customize) されます。これは、[ラップトップを更新するとき](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering/#laptop-refreshes) にブックマーク、拡張機能、構成を移行するのに役立ちます。
 
 #### Chrome のパフォーマンス設定
 

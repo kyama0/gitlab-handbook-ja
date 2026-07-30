@@ -1,11 +1,11 @@
 ---
 title: "リセラーマーケティングキット"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/reseller-kit/
-upstream_sha: d0a19ab78fc5e0d322868c8f35ab8f81e761bd21
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:43:30+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ## はじめに
@@ -18,7 +18,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - [GitLab 価格](https://about.gitlab.com/pricing/)
   - [GitLab Ultimate を販売する価値](https://about.gitlab.com/pricing/ultimate/)
 - [GitLab プロダクトビジョン／ロードマップ](https://about.gitlab.com/direction/)
-- [GitLab ペルソナ](/handbook/product/personas/)
+- [GitLab ペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)
 - [GitLab 競合分析](https://about.gitlab.com/why-gitlab/)
 - [カスタマーサクセスストーリー](https://about.gitlab.com/customers/)
 

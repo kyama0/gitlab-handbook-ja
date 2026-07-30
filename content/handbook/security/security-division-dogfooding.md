@@ -1,11 +1,11 @@
 ---
 title: Security 部門ドッグフーディングプログラム
 upstream_path: /handbook/security/security-division-dogfooding/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T14:00:00Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:25:33+09:00"
 translator: claude
 stale: false
-lastmod: "2024-06-20T14:58:12+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ## はじめにと目的
@@ -76,7 +76,7 @@ FY25Q2 時点で、私たちは [現在の GitLab 機能の利用状況を評価
 
 ### Security ペルソナの管理
 
-GitLab は、さまざまな種類の GitLab ユーザー、そのニーズ、および GitLab プロダクトとの関わり方を説明する [公式ペルソナリスト](/handbook/product/personas/) を維持しています。Security 部門は、これらのペルソナのいくつかを通じて代表されています。Security 部門のチームメンバーが特定の機能や機能性をプロダクトに統合することをリクエストする際、新しいペルソナを作成するか、既存のペルソナを変更することが適切かどうかを判断する評価が実施されます。
+GitLab は、さまざまな種類の GitLab ユーザー、そのニーズ、および GitLab プロダクトとの関わり方を説明する [公式ペルソナリスト](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) を維持しています。Security 部門は、これらのペルソナのいくつかを通じて代表されています。Security 部門のチームメンバーが特定の機能や機能性をプロダクトに統合することをリクエストする際、新しいペルソナを作成するか、既存のペルソナを変更することが適切かどうかを判断する評価が実施されます。
 
 ### ドッグフーディング評価の方法論
 

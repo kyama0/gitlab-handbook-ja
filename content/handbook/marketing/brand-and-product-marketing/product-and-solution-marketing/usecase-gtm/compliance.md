@@ -2,11 +2,11 @@
 title: "DevOps ソリューションリソース: ソフトウェアコンプライアンス"
 description: "GitLab がソフトウェアコンプライアンスソリューションにどう取り組むか、メッセージングとマーケティングおよびセールスを支援する主要リソース。"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/compliance/
-upstream_sha: d0a19ab78fc5e0d322868c8f35ab8f81e761bd21
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:43:30+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-07T16:47:36-08:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 **GitLab のソフトウェアコンプライアンスケイパビリティに関するお客様向けの概要をお探しですか？ [Compliance Solution](https://about.gitlab.com/solutions/compliance/) を参照してください**
@@ -44,11 +44,11 @@ GitLab のプラットフォームアプローチは、DevOps プラットフォ
 
 ### ユーザーペルソナ
 
-**[コンプライアンスマネージャー Cameron](/handbook/product/personas/#cameron-compliance-manager)** は、会社のすべての開発プロセスがコンプライアンスに準拠していることを確認する必要があります。ソフトウェア開発・デリバリーライフサイクルが生成するデータの量と、典型的な DevOps ツールチェーンの複雑さを考えると、監査目的でシステム間で行われたすべての必要なデータと変更を見つけ、集約し、レポートするのは困難です。彼は、SDLC 全体にわたってエンドツーエンドで誰が何を、どこで、いつ変更したかを簡単に確認できる必要があります。情報を素早く簡単に得て、エビデンス収集プロセスにかかる時間と混乱を減らすことが必要です。
+**[コンプライアンスマネージャー Cameron](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#cameron-compliance-manager)** は、会社のすべての開発プロセスがコンプライアンスに準拠していることを確認する必要があります。ソフトウェア開発・デリバリーライフサイクルが生成するデータの量と、典型的な DevOps ツールチェーンの複雑さを考えると、監査目的でシステム間で行われたすべての必要なデータと変更を見つけ、集約し、レポートするのは困難です。彼は、SDLC 全体にわたってエンドツーエンドで誰が何を、どこで、いつ変更したかを簡単に確認できる必要があります。情報を素早く簡単に得て、エビデンス収集プロセスにかかる時間と混乱を減らすことが必要です。
 
-**[ソフトウェア開発者 Sasha](/handbook/product/personas/#sasha-software-developer)** は主に MR パイプラインレポート内で GitLab を使用しています。開発者はコンプライアンスとセキュリティを気にしますが、コンプライアンス専門家になりたいわけではありません。コンプライアンスを保ちながら速く動くのに役立つケイパビリティはありがたいものです。
+**[ソフトウェア開発者 Sasha](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer)** は主に MR パイプラインレポート内で GitLab を使用しています。開発者はコンプライアンスとセキュリティを気にしますが、コンプライアンス専門家になりたいわけではありません。コンプライアンスを保ちながら速く動くのに役立つケイパビリティはありがたいものです。
 
-**[アプリケーションセキュリティエンジニア Amy](/handbook/product/personas/#amy-application-security-engineer)** はコンプライアンスポリシーの自動化とレポートを任されている可能性があるため、可能な限りシンプルで効率的、自動化されていることを望みます。Amy は、開発プロセス内（CI パイプラインなど）で適用されるポリシーをコントロールし、回避されないようにすることが難しいと感じています。実際、回避されたことに気付かないことさえあります。
+**[アプリケーションセキュリティエンジニア Amy](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#amy-application-security-engineer)** はコンプライアンスポリシーの自動化とレポートを任されている可能性があるため、可能な限りシンプルで効率的、自動化されていることを望みます。Amy は、開発プロセス内（CI パイプラインなど）で適用されるポリシーをコントロールし、回避されないようにすることが難しいと感じています。実際、回避されたことに気付かないことさえあります。
 
 ### バイヤーペルソナ
 

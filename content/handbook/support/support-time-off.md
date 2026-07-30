@@ -2,11 +2,11 @@
 title: サポートチームメンバーの休暇
 description: サポートチームメンバーに休暇がどのように適用され、どのような対応が必要かのガイドライン。Support Global Change Management の Issue 抜きでこのページを移動しないでください。
 upstream_path: /handbook/support/support-time-off/
-upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
-translated_at: "2026-05-08T19:23:50Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-29T21:19:18Z"
 translator: claude
 stale: false
-lastmod: "2026-03-09T10:03:33-05:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ## サポートチームメンバーの休暇
@@ -52,7 +52,7 @@ lastmod: "2026-03-09T10:03:33-05:00"
 | グループ |        |        |        |
 | ----- | ------ | ------ | ------ |
 | [L&R](https://calendar.google.com/calendar/u/0/embed?src=c_200f3afcbd9d0e18cbd80f00163ea7ca84e08bf857bdafc2bcad4202fed64f3e@group.calendar.google.com) | [APAC](https://calendar.google.com/calendar/u/0/embed?src=c_6d683f9a00d982d28055c0ef986561adc1aacf57570b7285a14ec79c31fd5f89@group.calendar.google.com) | [EMEA](https://calendar.google.com/calendar/u/0/embed?src=c_a849778a4950b23ce10953fa4f98d49e3abdc0aa57e88d448a27d87c6286ad0d@group.calendar.google.com) | [AMER](https://calendar.google.com/calendar/u/0/embed?src=c_55ea946dce89e101efa9d377ae355a201cc96b8d91079ada092cd2d9d821d602@group.calendar.google.com) |
-| US Gov | [Daytime](https://calendar.google.com/calendar/u/0?cid=Y182Y2JlZTA4ZmFiOWFjYTI2NzE4YjQ5ODFmOWI5YTk0MDNlNzEyNTRjZmYyZTE5NTc0MjBjN2RhODgwYzg2M2IzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) | [Evenings](https://calendar.google.com/calendar/u/0?cid=Y182MzFiMDNkNGRhYmI3NWZmNjczMDNmMTUwNjZmNTRlYzhhMTE2ZWYzNGE5ZDA4Zjg5YTE1NDJlYzA5YTM5ZjgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) | [Overnight](https://calendar.google.com/calendar/u/0?cid=Y19hYjlhNzM0ODJmNGM3MDE1NzI0N2EzNTEwYmQxMjdiZWE3ZTExYmUzZWQzN2IzN2FlNThiMjNhOTNhOWI3MjQ3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) |
+| U.S. Gov | [Daytime](https://calendar.google.com/calendar/u/0?cid=Y182Y2JlZTA4ZmFiOWFjYTI2NzE4YjQ5ODFmOWI5YTk0MDNlNzEyNTRjZmYyZTE5NTc0MjBjN2RhODgwYzg2M2IzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) | [Evenings](https://calendar.google.com/calendar/u/0?cid=Y182MzFiMDNkNGRhYmI3NWZmNjczMDNmMTUwNjZmNTRlYzhhMTE2ZWYzNGE5ZDA4Zjg5YTE1NDJlYzA5YTM5ZjgyQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) | [Overnight](https://calendar.google.com/calendar/u/0?cid=Y19hYjlhNzM0ODJmNGM3MDE1NzI0N2EzNTEwYmQxMjdiZWE3ZTExYmUzZWQzN2IzN2FlNThiMjNhOTNhOWI3MjQ3QGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20) |
 
 ##### マネージャーのカレンダーリンク
 

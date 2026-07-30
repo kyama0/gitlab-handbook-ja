@@ -2,11 +2,11 @@
 title: "Identity Platform"
 description: "Identity Platform は、各ベンダーの API を使用して IAM/RBAC データをフェッチし、Identity Governance ベンダーがサポートしていない複雑な階層と権限を持つテックスタックアプリケーション全体でユーザーとロールのプロビジョニング・デプロビジョニングの状態管理を扱うために GitOps プラクティスを使用する、マイクロサービスとツールのコレクションです。各概念は、自社開発の自動化を構築する際に IAM/RBAC アーキテクチャを標準化するために考案されました。"
 upstream_path: /handbook/security/identity/platform/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:29:34+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 {{% alert title="Not Live Yet" color="warning" %}}
@@ -79,7 +79,7 @@ Identity Platform は、各ベンダーの API を使用し、それらの間の
 
 **Identity Role** は、アクセスコントロールと権限に関連する、ユーザーが所属する機能チームまたは職位の標準化された snake case フォーマットです。
 
-これは、GitLab Identity v2 の [job family](/job-description-library/) と [ロールベースの baseline entitlements](https://internal.gitlab.com/handbook/security/corporate/end-user-services/access-request/baseline-entitlements/) の次世代イテレーションです。
+これは、GitLab Identity v2 の [job family](/job-description-library/) と [ロールベースの baseline entitlements](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/) の次世代イテレーションです。
 
 各ロールは `{department_slug}_{functional_team_slug}_{specific_role_if_applicable}` の構文を使用します。例えば、あなたの部門が `Infrastructure` であれば、RBAC slug は `infra` です。
 
@@ -726,7 +726,7 @@ classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
 
 ## Access Control (accessctl)
 
-Access Control は、[Laravel framework](https://laravel.com) で構築された、Jeff Martin が作成したオープンソースのモノリス[コードベース](https://gitlab.com/gitlab-identity/accessctl) であり、複数の機能コンポーネントを含み、GitLab CI/CD パイプラインと GitLab Runner をバックグラウンドジョブにドッグフードし、ポリシーとマニフェスト保管に GitLab リポジトリを使用し、変更管理に CODEOWNERS とマージリクエスト承認を使用するように分散デプロイされています。
+Access Control は、[Laravel framework](https://laravel.com) で構築されたオープンソースのモノリス[コードベース](https://gitlab.com/gitlab-identity/accessctl) であり、複数の機能コンポーネントを含み、GitLab CI/CD パイプラインと GitLab Runner をバックグラウンドジョブにドッグフードし、ポリシーとマニフェスト保管に GitLab リポジトリを使用し、変更管理に CODEOWNERS とマージリクエスト承認を使用するように分散デプロイされています。
 
 Laravel は Django や Ruby on Rails に匹敵するフルスタック Web アプリケーションと SQL データベース機能のための [batteries included](https://laravel.com/docs/11.x) を持っていますが、私たちはそれをチームメンバーが貢献しやすく、可能な限りバックエンド処理に GitLab を活用するスクリプティングエンジンとしてより使用しています。改善されたフロントエンドユーザー体験のために REST API、Web UI、CLI を公開するために Laravel ネイティブ機能を引き続き使用しています。
 
@@ -736,9 +736,9 @@ Laravel は Django や Ruby on Rails に匹敵するフルスタック Web ア�
 
 ### Why Laravel
 
-これは私たちが知っていてビジネス価値を効率的に届けられるツールを使うシンプルなケースです。プライマリ開発者である Jeff Martin は 10 年以上 Laravel を使ってきており、Ruby on Rails、Golang、Python の使用も試してきましたが、Laravel エコシステムの方が依然として豊かであることを発見しています。
+これは私たちが知っていてビジネス価値を効率的に届けられるツールを使うシンプルなケースです。チームは Laravel に関する豊富な経験を持ち、Ruby on Rails、Golang、Python を試したうえで、Laravel エコシステムの方が依然として豊かであると考えています。
 
-GitLab Sandbox Cloud、Demo Systems、Training Lab Manager で何が可能かをすでに見たかもしれません。それは単に動作し、本番環境に持っていくのに 1 人のエンジニアがパートタイムで関与するだけで済みます。これまでに 12 名以上のチームメンバーに、何の問題もなく Laravel の動作を教えてきました。これは GitLab 製品自体の一部ではないので、それは関係ありません。興味があれば Jeff にコードペアの依頼をお気軽にお送りください。
+GitLab Sandbox Cloud、Demo Systems、Training Lab Manager で何が可能かをすでに見たかもしれません。それは単に動作し、本番環境に持っていくのに 1 人のエンジニアがパートタイムで関与するだけで済みます。これまでに 12 名以上のチームメンバーに、何の問題もなく Laravel の動作を教えてきました。これは GitLab 製品自体の一部ではないので、それは関係ありません。興味があれば `#security-identity-eng` でコードペアを依頼してください。
 
 ### CI/CD Scripts
 

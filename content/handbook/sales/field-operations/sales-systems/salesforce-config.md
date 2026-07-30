@@ -2,11 +2,11 @@
 title: "Salesforce 設定"
 description: "このページの目的は、GitLab における Salesforce インスタンスの設定を文書化することです。一般的な Salesforce 設定に関する質問の確認場所として機能します。"
 upstream_path: /handbook/sales/field-operations/sales-systems/salesforce-config/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T10:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:03:43+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## Salesforce 設定
@@ -15,7 +15,7 @@ lastmod: "2025-07-07T23:50:04+00:00"
 
 ### Salesforce のプロビジョニング
 
-Salesforce アクセスを自動的に受け取るべきロールについては、Okta によってアカウントと権限が自動的に作成されます。職務上 Salesforce アクセスが必要な他のメンバーは、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) を開いてください。
+Salesforce アクセスを自動的に受け取るべきロールについては、Okta によってアカウントと権限が自動的に作成されます。職務上 Salesforce アクセスが必要な他のメンバーは、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) を開いてください。
 
 ### Salesforce のデプロビジョニング
 

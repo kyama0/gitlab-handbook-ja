@@ -3,11 +3,11 @@ title: GitLab Dedicated Switchboard のトラブルシューティング
 category: GitLab Dedicated
 description: "GitLab Dedicated サポート - Switchboard"
 upstream_path: /handbook/support/workflows/dedicated_switchboard/
-upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
-translated_at: "2026-05-08T21:00:00Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:21:07+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-09T20:14:47+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -17,7 +17,7 @@ Switchboard の目標について詳しくは [Switchboard ハンドブックペ
 
 ## Switchboard へのアクセス {#accessing-switchboard}
 
-GitLab サポートエンジニアは、[Okta](/handbook/security/corporate/end-user-services/okta/) ホームページで **Switchboard (production)** を検索することで、[Switchboard](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/) アプリケーションにアクセスできます。
+GitLab サポートエンジニアは、[Okta](/handbook/eta/corporate-it/end-user-services/okta/) ホームページで **Switchboard (production)** を検索することで、[Switchboard](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/) アプリケーションにアクセスできます。
 
 直接アクセスすることもできます:
 

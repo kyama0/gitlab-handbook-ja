@@ -2,11 +2,11 @@
 title: "GitLab オフボーディング FAQ"
 description: "オフボーディングプロセスに関するよくある質問"
 upstream_path: "/handbook/people-group/offboarding/faq/"
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T09:31:27+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:48:05+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-08T14:46:05-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## タイミング
@@ -71,7 +71,7 @@ Alumni チャンネルの[対象](/handbook/people-group/offboarding#gitlab-alum
 
 ### ラップトップのワイプ
 
-最終日にラップトップをワイプする必要があります。最終日に IT Ops チームメンバーとの[予約を取ってください](/handbook/security/corporate/end-user-services/laptop-management/laptop-wipe//)。
+最終日にラップトップをワイプする必要があります。最終日に IT Ops チームメンバーとの[予約を取ってください](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-wipe//)。
 
 **いかなる状況でも** 自分でラップトップをワイプしてはいけません。ラップトップのワイプはログ取得のため、IT Ops チームメンバーが実施する必要があります。Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com で IT に連絡してください。
 
@@ -79,7 +79,7 @@ Alumni チャンネルの[対象](/handbook/people-group/offboarding#gitlab-alum
 
 ラップトップを IT に返却する場合は、最終日までに段ボール箱と梱包フォームを購入し、Navan の [Office supplies & consumables](https://internal.gitlab.com/handbook/finance/expenses/#office-supplies--consumables) で経費精算してください。IT がラップトップ返却用の前払い配送ラベルを送付します。
 
-Laptop Buy Back Policy については[こちら](/handbook/security/corporate/end-user-services/laptop-management/laptop-offboarding-returns/#laptop-buybacks)を参照してください。
+Laptop Buy Back Policy については[こちら](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-offboarding-returns/#laptop-buybacks)を参照してください。
 
 ## 報酬 - Payroll
 

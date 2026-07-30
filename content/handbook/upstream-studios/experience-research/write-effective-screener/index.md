@@ -2,9 +2,9 @@
 title: "効果的なスクリーナーの書き方"
 description: "GitLab で効果的な UX リサーチスクリーナーを書く方法"
 upstream_path: /handbook/upstream-studios/experience-research/write-effective-screener/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T09:05:00+09:00"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+lastmod: "2026-07-28T15:04:15+01:00"
+translated_at: "2026-07-29T06:11:55+09:00"
 translator: codex
 stale: false
 ---
@@ -44,7 +44,7 @@ stale: false
 - スクリーナーのドラフトを作成する際は、内部メモには角括弧を使い、リサーチャーや他のステークホルダーが、ある回答が回答者を打ち切り/拒否すべきかを示せるようにします。角括弧は、質問をスキップすべきタイミングを示すためにも使えます。
 - 前の回答に基づいて質問を表示したり回答者を特定の経路にルーティングするための高度なロジックが必要な場合、Qualtrics は優れたツールです。
 
-GitLab でのスクリーナーの最終ドラフトは [Qualtrics](/handbook/upstream-studios/experience-research/surveys/qualtrics/) で作成されます。Qualtrics へのアクセスがない場合は [リクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) してください。[別のリクルーティング方法](/handbook/upstream-studios/research-operations/recruitment-methods) や、[UserTesting.com](https://www.usertesting.com/) のようなモデレーターなし調査プラットフォームを使う場合は、それらのプラットフォームでスクリーナーを作成します。
+GitLab でのスクリーナーの最終ドラフトは [Qualtrics](/handbook/upstream-studios/experience-research/surveys/qualtrics/) で作成されます。Qualtrics へのアクセスがない場合は [リクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) してください。[別のリクルーティング方法](/handbook/upstream-studios/research-operations/recruitment-methods) や、[UserTesting.com](https://www.usertesting.com/) のようなモデレーターなし調査プラットフォームを使う場合は、それらのプラットフォームでスクリーナーを作成します。
 
 ### スクリーナーのヒント {#screener-tips}
 

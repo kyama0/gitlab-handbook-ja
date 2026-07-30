@@ -2,11 +2,11 @@
 title: "Ringlead"
 description: "Ringlead プラットフォームは、重複の管理、データの正規化、セグメンテーション、エンリッチメントなどの Salesforce およびマーケティングオートメーションプロセスをオーケストレーションします。"
 upstream_path: /handbook/marketing/marketing-operations/ringlead/
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
+upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
+translated_at: "2026-07-30T09:08:29+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-06-01T16:41:36-07:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ### Ringlead について
@@ -74,7 +74,7 @@ Ringlead プラットフォームは、重複の管理、データの正規化�
 
 ### セットアップ & アクセス
 
-現在、Sales & Marketing Operations が Ringlead にアクセスできます。アクセスをリクエストするには、business operations ハンドブックに記載されている [アクセスリクエストプロセスに従ってください](/handbook/security/corporate/end-user-services/access-requests/access-requests/)。
+現在、Sales & Marketing Operations が Ringlead にアクセスできます。アクセスをリクエストするには、business operations ハンドブックに記載されている [アクセスリクエストプロセスに従ってください](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)。
 
 ### Ringlead & ヘルプへのアクセス方法
 

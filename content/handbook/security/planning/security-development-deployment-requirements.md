@@ -1,11 +1,11 @@
 ---
 title: "開発とデプロイメントのセキュリティ要件"
 upstream_path: /handbook/security/planning/security-development-deployment-requirements/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:29:34+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-06T19:27:57-05:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## サマリー
@@ -66,7 +66,7 @@ Security Department とそのサブチームは、GitLab.com のサポートに�
 #### サービスアカウントの使用
 
 1. サービスアカウント名は意味のあるものであるべきです。
-1. RED データへのアクセスを持つサービスアカウントは、[Access Request](/handbook/security/corporate/end-user-services/access-requests/) プロセスに従わなければなりません。
+1. RED データへのアクセスを持つサービスアカウントは、[Access Request](/handbook/eta/corporate-it/end-user-services/access-requests/) プロセスに従わなければなりません。
 1. RED データへのアクセスを持つサービスアカウントは、単一の論理スコープに制限しなければなりません。例えば単一の GCP プロジェクトなど。
 
 #### ネットワークセキュリティ
@@ -237,6 +237,6 @@ GCP には現在 [permission recommender](https://cloud.google.com/iam/docs/reco
 
 ## アイデンティティプロバイダ
 
-[Okta](/handbook/security/corporate/end-user-services/okta/) は私たちの企業アイデンティティおよび認証プロバイダです。Okta を SAML プロバイダとするアプリケーション構成が望ましいソリューションです。これはアクティビティのセキュリティ監視のオペレーションニーズを満たし、標準的な Access Request プロセスを使用して IT Ops によりプロビジョニングできます。SAML サービスプロバイダとして動作するように設計されたアプリケーションは、将来変更があれば他のアイデンティティプロバイダでも動作できるべきです。
+[Okta](/handbook/eta/corporate-it/end-user-services/okta/) は私たちの企業アイデンティティおよび認証プロバイダです。Okta を SAML プロバイダとするアプリケーション構成が望ましいソリューションです。これはアクティビティのセキュリティ監視のオペレーションニーズを満たし、標準的な Access Request プロセスを使用して IT Ops によりプロビジョニングできます。SAML サービスプロバイダとして動作するように設計されたアプリケーションは、将来変更があれば他のアイデンティティプロバイダでも動作できるべきです。
 
 毎日の作業のためにシェルアクセスを必要とするアプリケーションには、ssh 認証のために [Okta ASA](https://gitlab.com/gitlab-cookbooks/gitlab_okta_asa) を実装するべきです。

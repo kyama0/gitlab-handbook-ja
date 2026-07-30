@@ -2,11 +2,11 @@
 title: "iconik"
 description: "Iconik はデジタル制作ワークフロー向けのハイブリッドクラウドメディア管理ソリューションです。"
 upstream_path: /handbook/marketing/marketing-operations/iconik/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:02:57+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -15,7 +15,7 @@ lastmod: "2025-07-07T23:50:04+00:00"
 
 ## アクセス
 
-このツールはデジタル制作チームによって特定の用途で主に使用されているため、アクセスはユースケースに応じて制限されています。すべてのリクエストはマーケティングオペレーションおよびデジタル制作によって精査され、アクセスの正当性が判断されます。デジタル制作チームのために業務を行う契約社員の方は、[アクセスリクエストプロセス](/handbook/security/corporate/end-user-services/access-requests/access-requests/)に従ってください。
+このツールはデジタル制作チームによって特定の用途で主に使用されているため、アクセスはユースケースに応じて制限されています。すべてのリクエストはマーケティングオペレーションおよびデジタル制作によって精査され、アクセスの正当性が判断されます。デジタル制作チームのために業務を行う契約社員の方は、[アクセスリクエストプロセス](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)に従ってください。
 
 ## サポート
 

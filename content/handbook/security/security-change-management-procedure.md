@@ -2,11 +2,11 @@
 title: "Security 変更管理手順"
 description: "Security 部門の変更管理手順。"
 upstream_path: /handbook/security/security-change-management-procedure/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T14:00:00Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:25:33+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 目的
@@ -18,7 +18,7 @@ lastmod: "2025-07-07T23:50:04+00:00"
 本ドキュメントは、Security が所有するシステムおよびアプリケーション、ならびに Security 部門が所有するプロセスに適用されます。
 
 {{% note %}}
-ユーザーアクセスと認可に関する変更については、引き続き [アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) プロセスを通じて処理してください。
+ユーザーアクセスと認可に関する変更については、引き続き [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) プロセスを通じて処理してください。
 {{% /note %}}
 
 Security では、以下の種類の変更を定義しています:

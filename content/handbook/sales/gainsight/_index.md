@@ -2,11 +2,11 @@
 title: "GitLabでGainsightを使用する"
 description: "GitLabでGainsightを使用してお客様の成功を推進するための主要な側面"
 upstream_path: /handbook/sales/gainsight/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:03:43+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## Gainsight とは何ですか?
@@ -46,7 +46,7 @@ Gainsight に直接アクセスするには、[gitlab.gainsightcloud.com](https:
 
 **ログインできませんか?ヘルプを得る方法は次のとおりです:**
 
-- Gainsight へのアクセスをリクエストする必要がある場合は、[Access Request](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request)に記入し、マネージャーに manager approved ラベルを追加してもらってください。
+- Gainsight へのアクセスをリクエストする必要がある場合は、[Access Request](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)に記入し、マネージャーに manager approved ラベルを追加してもらってください。
 - Gainsight 関連のアクセスに関する質問がある場合は、[#gainsight-users](https://gitlab.enterprise.slack.com/archives/C011ACG9MJB) Slack チャンネルで Gainsight アドミンチームに ping してください。
 
 ### タイムゾーンを確認
@@ -57,9 +57,9 @@ Gainsight に直接アクセスするには、[gitlab.gainsightcloud.com](https:
 
 個別の通知を調整するには、右上の名前をクリックし、"My Settings"を選択し、上部中央の"Notifications"を選択します。下の写真はデフォルトを示しており、好みに基づいて選択できる以下のオプションがあります。詳細は Gainsight の[ドキュメント](https://support.gainsight.com/gainsight_nxt/Notifications/User_Guides/Setup_User_Notifications)を参照してください。
 
-![Gainsight Channel Subscriptions](/images/handbook/customer-success/gainsight-channel-subscriptions.png "Gainsight Channel Subscriptions")
+![Gainsight チャネルのサブスクリプション](/images/handbook/customer-success/gainsight-channel-subscriptions.png "Gainsight チャネルのサブスクリプション")
 
-![Gainsight Event Subscriptions](/images/handbook/customer-success/gainsight-event-subscriptions.png "Gainsight Event Subscriptions")
+![Gainsight イベントのサブスクリプション](/images/handbook/customer-success/gainsight-event-subscriptions.png "Gainsight イベントのサブスクリプション")
 
 ## Gainsight に関するフィードバック
 

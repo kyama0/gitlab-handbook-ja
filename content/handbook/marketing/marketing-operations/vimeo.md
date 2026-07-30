@@ -2,11 +2,11 @@
 title: "Vimeo"
 description: "Vimeo は動画ホスティング、共有、サービスのプラットフォームです。"
 upstream_path: /handbook/marketing/marketing-operations/vimeo/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-01T01:15:00Z"
+upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
+translated_at: "2026-07-30T09:08:29+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## Vimeo について
@@ -17,11 +17,11 @@ Vimeo は動画ホスティング、共有、サービスのプラットフォ�
 
 ### 個別アクセス
 
-Vimeo は Okta と接続されています。アクセスをリクエストするには、[アクセスリクエストを作成](/handbook/security/corporate/end-user-services/access-requests/access-requests/)し、プロビジョニングのために GitLab ユーザーグループ `gitlab-com/gl-security/corp/helpdesk` を使用してください。アクセスを希望する理由のビジネスケースを必ず含め、ディジタルプロダクションのチームメンバーをタグ付けしてください。Vimeo にプロビジョニングされたら、必要に応じて Marketing Ops が権限セットを調整できます。
+Vimeo は Okta と接続されています。アクセスをリクエストするには、[アクセスリクエストを作成](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)し、プロビジョニングのために GitLab ユーザーグループ `gitlab-com/gl-security/corp/helpdesk` を使用してください。アクセスを希望する理由のビジネスケースを必ず含め、ディジタルプロダクションのチームメンバーをタグ付けしてください。Vimeo にプロビジョニングされたら、必要に応じて Marketing Ops が権限セットを調整できます。
 
 ### 一括アクセス
 
-チームが Vimeo へのアクセスを必要としている場合は、[一括アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request)をオープンし、プロビジョニングのために GitLab ユーザーグループ `@gitlab-com/gl-security/corp/helpdesk` を使用してください。Business Ops が Okta にグループを作成し、SSO 経由で Vimeo にプッシュします。アクセスが付与されたら、`@MihaiConteanu` にメンションして、グループ内の各ユーザーの権限を更新するよう依頼してください。Okta で作成されたグループは Vimeo の `Manage Team` セクションには同期されません。グループまたはチームの一部として個々のユーザーが表示され、チーム自体は表示されません。ただし、このグループ／チームはフォルダー権限とアクセスに関しては同期されます。Vimeo の特定のフォルダーへのアクセスをチーム全体に提供するには、Vimeo でフォルダー設定をクリックし、`Share` をクリックします。そこで、選択したフォルダーに対するチーム全体の権限を調整できます。
+チームが Vimeo へのアクセスを必要としている場合は、[一括アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)をオープンし、プロビジョニングのために GitLab ユーザーグループ `@gitlab-com/gl-security/corp/helpdesk` を使用してください。Business Ops が Okta にグループを作成し、SSO 経由で Vimeo にプッシュします。アクセスが付与されたら、`@MihaiConteanu` にメンションして、グループ内の各ユーザーの権限を更新するよう依頼してください。Okta で作成されたグループは Vimeo の `Manage Team` セクションには同期されません。グループまたはチームの一部として個々のユーザーが表示され、チーム自体は表示されません。ただし、このグループ／チームはフォルダー権限とアクセスに関しては同期されます。Vimeo の特定のフォルダーへのアクセスをチーム全体に提供するには、Vimeo でフォルダー設定をクリックし、`Share` をクリックします。そこで、選択したフォルダーに対するチーム全体の権限を調整できます。
 
 ### ユーザーロール
 

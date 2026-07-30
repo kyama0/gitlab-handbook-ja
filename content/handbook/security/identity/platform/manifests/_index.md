@@ -2,11 +2,11 @@
 title: "Identity Platform CI/CD マニフェストパイプライン"
 description: ""
 upstream_path: /handbook/security/identity/platform/manifests/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:29:34+09:00"
 translator: claude
 stale: false
-lastmod: "2024-11-14T23:18:47+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 {{% alert title="Not Live Yet" color="warning" %}}
@@ -220,7 +220,7 @@ classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
 
 これにより、`department`、`division`、`title` などがもう存在しないこと（例: 上流側で名前変更された）を検出できます。
 
-ポリシーがもう存在しない属性キー値を使用している場合、更新後のマニフェストは作成されず、現在（前回）の状態が維持されます。これにより、Identity Operations とポリシーの `CODEOWNERS` がポリシーを更新するまで、現在のマニフェストは凍結されます。
+ポリシーがもう存在しない属性キー値を使用している場合、更新後のマニフェストは作成されず、現在（前回）の状態が維持されます。これにより、Identity Engineering とポリシーの `CODEOWNERS` がポリシーを更新するまで、現在のマニフェストは凍結されます。
 
 このプロセスがどのように部分的に自動化されたかについては、[ポリシー内のキーの更新](#updating-keys-in-policies) のドキュメントを参照してください。
 
@@ -228,13 +228,13 @@ classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
 
 [属性キーがもう存在しない場合](#attribute-key-no-longer-exists) と同様に、すべての `manager` 値は最新のユーザーマニフェストに対して検証されます。これにより、ユーザーがオフボーディングされていないこと、メールハンドルが変更されていないこと（例: 旧姓への変更）を確認します。
 
-ポリシーで定義された `manager` ハンドルに基づいてマネージャーユーザーがもう存在しない場合、更新後のマニフェストは作成されず、現在（前回）の状態が維持されます。これにより、Identity Operations とポリシーの `CODEOWNERS` がポリシーを更新するまで、現在のマニフェストは凍結されます。
+ポリシーで定義された `manager` ハンドルに基づいてマネージャーユーザーがもう存在しない場合、更新後のマニフェストは作成されず、現在（前回）の状態が維持されます。これにより、Identity Engineering とポリシーの `CODEOWNERS` がポリシーを更新するまで、現在のマニフェストは凍結されます。
 
 このプロセスがどのように部分的に自動化されたかについては、[ポリシー内のキーの更新](#updating-keys-in-policies) のドキュメントを参照してください。
 
 ### ポリシー内のキーの更新 {#updating-keys-in-policies}
 
-ポリシー内のキーが見つからない場合、`accessctl` によって自動的にブランチとマージリクエストが作成され、`CODEOWNERS` と Identity Operations のチームメンバーが編集を担当するようアサインされます。
+ポリシー内のキーが見つからない場合、`accessctl` によって自動的にブランチとマージリクエストが作成され、`CODEOWNERS` と Identity Engineering のチームメンバーが編集を担当するようアサインされます。
 
 マージリクエストには、前回のマニフェストユーザーのリストと、もう存在しない値のキーに対する最新の更新値が自動的にコメントとして投稿されます。これにより、新しい値が上流で何になっているかを判定する調査作業が自動化され、`CODEOWNERS` が確認・調整できます。
 

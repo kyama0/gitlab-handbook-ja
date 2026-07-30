@@ -1,11 +1,11 @@
 ---
 title: "Chorus.ai の使い方"
 upstream_path: /handbook/sales/field-operations/sales-operations/go-to-market/chorus/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T00:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:10:01+09:00"
 translator: claude
 stale: false
-lastmod: "2025-08-13T16:11:39+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 Chorus の使い方に戸惑っていますか？この重要なセールスツールを最大限に活用する方法については、以下の手順とリンクをご確認ください。
@@ -22,7 +22,7 @@ Chorus にログインするには、[Okta ダッシュボード](https://gitlab
 
 - Chorus を利用する前に、[GitLab の SAFE フレームワーク](/handbook/legal/safe-framework/) に慣れておいてください。
 
-- すべての ROW チームメンバーは、Recorder アクセスを付与されるために [Chorus GDPR トレーニング](https://gitlab.edcast.com/insights/chorus-ai-compliance) を完了する必要があります。マネージャーが [Baseline Role-Based Entitlement](https://internal.gitlab.com/handbook/security/corporate/end-user-services/access-request/baseline-entitlements/) を提出すると、SalesOps はチームメンバーに EdCast の Chorus トレーニングのリンクを提供します。
+- すべての ROW チームメンバーは、Recorder アクセスを付与されるために [Chorus GDPR トレーニング](https://gitlab.edcast.com/insights/chorus-ai-compliance) を完了する必要があります。マネージャーが [Baseline Role-Based Entitlement](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/) を提出すると、SalesOps はチームメンバーに EdCast の Chorus トレーニングのリンクを提供します。
 
   - チームメンバーがトレーニングを完了したら、Chorus 内のライセンスを Recorder ライセンスに更新するように SalesOps に通知します。
   - SalesOps は [EdCast レポート](https://edcast-536.domo.com/page/1681897168/kpis/details/58622395) を通じてコース完了を確認します。
@@ -87,7 +87,7 @@ Tracker は、セールス会話全体でハイライトしたいキーワード
 - すべての SDR/BDR チームメンバー
 - すべての Public Sector チームメンバー
 - Operations 担当、および所属組織を問わずすべてのマネージャーを含む、顧客対応以外の役割のすべての GitLab チームメンバー
-- GitLab チームメンバーは、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/#how-do-i-choose-which-template-to-use) を通じて Listener アクセスを要求でき、ケースバイケースで付与される場合があります。
+- GitLab チームメンバーは、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/#how-do-i-choose-which-template-to-use) を通じて Listener アクセスを要求でき、ケースバイケースで付与される場合があります。
 
 ## なぜミーティングが「Livestreamed」されるのか？
 

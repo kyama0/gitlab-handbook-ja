@@ -2,11 +2,11 @@
 title: ピープルグループ
 description: "GitLab のピープルグループは、チームメンバーのライフサイクル全体を通じてすべての GitLab チームメンバーを支援します。"
 upstream_path: /handbook/people-group/
-upstream_sha: 50ee631c98005b47a0caea9d46e4ba5cfc62891a
-translated_at: "2026-07-23T06:35:45+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:35:48+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-22T18:00:59+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## ようこそ
@@ -194,7 +194,7 @@ CultureAmp への管理アクセスは、役割と責任に基づいて制限さ
 - Survey Creator administrator アクセスは、サーベイの作成、管理、設計、参加者の選択、結果の共有ができます。
 - Survey data analyst administrator は、生データ抽出が有効になっているすべてのサーベイから生データをエクスポートできます。
 
-アクセスを要求するには、要求するアカウントタイプの[アクセス要求](/handbook/security/corporate/end-user-services/access-requests/access-requests/#how-do-i-choose-which-template-to-use)とビジネス上のニーズを記して、アクセス要求を開いてください。デフォルトの管理アクセスは、その他のアクセスが指定されない限り、Survey Creator の管理権限になります。Chief People Officer の許可なしには、ピープルグループ外のチームメンバーに Survey Data Analyst の管理権限は付与されないことに注意してください。
+アクセスを要求するには、要求するアカウントタイプの[アクセス要求](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/#how-do-i-choose-which-template-to-use)とビジネス上のニーズを記して、アクセス要求を開いてください。デフォルトの管理アクセスは、その他のアクセスが指定されない限り、Survey Creator の管理権限になります。Chief People Officer の許可なしには、ピープルグループ外のチームメンバーに Survey Data Analyst の管理権限は付与されないことに注意してください。
 
 特定の CultureAmp サーベイのサポートが必要な場合は、People Analytics チームに通知するため、この [issue template](https://gitlab.com/gitlab-com/people-group/people-analytics/general/-/blob/main/.gitlab/issue_templates/survey_request.md) を完了してください。
 

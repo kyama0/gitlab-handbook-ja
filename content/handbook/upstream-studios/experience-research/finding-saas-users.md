@@ -2,9 +2,9 @@
 title: "SaaS ユーザーの見つけ方"
 description: "特定の条件を満たす SaaS リサーチ参加者を対象にする方法"
 upstream_path: /handbook/upstream-studios/experience-research/finding-saas-users/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T07:18:26+09:00"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+lastmod: "2026-07-28T15:04:15+01:00"
+translated_at: "2026-07-29T06:11:55+09:00"
 translator: codex
 stale: false
 ---
@@ -24,7 +24,7 @@ Respondent.io やソーシャルメディア経由のリクルーティングな
 ### 前提条件 {#pre-requisites}
 
 1. データウェアハウスのクエリには Structured Query Language（SQL）を使用します。Web には SQL を無料で学べるガイドが無数にあります。SQL にはさまざまな種類があり、私たちが使用しているのは [Snowflake](https://docs.snowflake.com/en/index)です。ただし、基本的な機能の大半は主要な SQL のバリエーション間で一貫しているため、Snowflake 固有のリソースを探す必要はありません。
-1. データウェアハウスにクエリを実行するには、Sisense（旧 Periscope）への Editor アクセスが必要です。これには[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を完了する必要があります。
+1. データウェアハウスにクエリを実行するには、Sisense（旧 Periscope）への Editor アクセスが必要です。これには[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を完了する必要があります。
 1. [Product Managers 向けデータ](/handbook/enterprise-data/organization/programs/data-for-product-managers/)では、クエリを記述して実行する Sisense 内の SQL Explorer へのアクセス方法の概要と、ウェアハウスの構造に関する大まかな概要を説明しています。
 1. Data チームは、dbt というツールを使用して[個々のデータウェアハウスのテーブルを文書化](https://dbt.gitlabdata.com/#!/overview)しています。一部のテーブルは十分に文書化され、目的の説明やさまざまな列の説明が含まれていますが、残念ながらそうでないものもあります。ただし、文書は時間とともに改善されています。
 

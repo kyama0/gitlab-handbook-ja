@@ -2,11 +2,11 @@
 title: GitLab サポートとの連携
 description: GitLab チームメンバーが GitLab サポートと連携する方法とサポートに連絡する最善の方法。
 upstream_path: /handbook/support/internal-support/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:14:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-21T21:56:48+01:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ## 概要
@@ -31,7 +31,7 @@ lastmod: "2026-05-21T21:56:48+01:00"
 
 ## GitLab サポートの目的 {#gitlab-supports-purpose}
 
-GitLab サポートは、GitLab.com およびセルフマネージド GitLab の顧客に対して技術サポートを提供します。IT（1Password、Slack、Mac など）の問題を抱えている GitLab チームメンバーにサポートを **提供しません**。そういった性質の問題で支援が必要な場合は、[Team Member Enablement](/handbook/security/corporate/end-user-services/) に連絡してください。
+GitLab サポートは、GitLab.com およびセルフマネージド GitLab の顧客に対して技術サポートを提供します。IT（1Password、Slack、Mac など）の問題を抱えている GitLab チームメンバーにサポートを **提供しません**。そういった性質の問題で支援が必要な場合は、[Team Member Enablement](/handbook/eta/corporate-it/end-user-services/) に連絡してください。
 
 ## GitLab サポートに連絡すべきか？ {#should-i-contact-gitlab-support}
 
@@ -104,7 +104,7 @@ Light エージェントアカウントでは、顧客への公開返信を送�
 
 | リクエスト    | 対応方法                                                   |
 | ---------- | ------------------------------------------------------------ |
-| アップグレード支援 | **グローバル組織:** [サービスを確認](https://about.gitlab.com/support/scheduling-upgrade-assistance/) してから、グローバルサポートポータルで新しいチケットを開く <br> **公共セクター組織:** 米国政府サポートポータルで [チケットを開く](https://about.gitlab.com/support/scheduling-upgrade-assistance/#us-federal-support) |
+| アップグレード支援 | **グローバル組織:** [サービスを確認](https://about.gitlab.com/support/scheduling-upgrade-assistance/) してから、グローバルサポートポータルで新しいチケットを開く <br> **米国政府組織:** U.S. Government サポートポータルで [チケットを開く](https://about.gitlab.com/support/scheduling-upgrade-assistance/#us-federal-support) |
 | 顧客の緊急事態の対応者は誰か？ | `GitLab Chatops` へのダイレクトメッセージで `/chatops run oncall support` を実行し、結果を確認します。これによりオンコールエンジニアに **ページングは送信されません**。 |
 | GitLab.com CMOC の対応者は誰か？ | `GitLab Chatops` へのダイレクトメッセージで `/chatops run oncall cmoc` を実行し、結果を確認します。これによりオンコールエンジニアに **ページングは送信されません**。 |
 | GitLab.com で過剰な reCaptcha が発生 | 発生中に [#support_gitlab-com](https://gitlab.slack.com/messages/C4XFU81LG/) に投稿し、対象の Issue/MR へのリンクを貼って許可リストに追加してもらいます。 |
@@ -340,9 +340,9 @@ Hacker One レポーター用のライセンス生成をリクエストするた
 
 ---
 
-### 米国政府サポート社内リクエスト
+### U.S. Government Support の社内リクエスト
 
-**公共セクター組織:** 米国政府サポートの顧客に関連する機密ライセンス Issue については、GitLab チームメンバーは [米国政府サポートにケースを開く](https://gitlab-com.gitlab.io/support/support-ops/forms/us-federal-internal-request-form/) ことができます。
+U.S. Government Support の顧客に関連する機密ライセンス Issue については、GitLab チームメンバーは [U.S. Government Support にケースを開く](https://gitlab-federal-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=41826474429588) ことができます。
 
 ### GitLab.com 課金可能メンバーリスト
 

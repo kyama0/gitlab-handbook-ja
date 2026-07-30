@@ -3,11 +3,11 @@ title: JTBD キャンバスの構造
 description: >-
   Jobs to be Done キャンバスは、[ジョブパフォーマー](#job-performer-who-do-you-want-to-innovate-for)の[メインジョブ](/handbook/product/ux/jobs-to-be-done/#main-jobs)の要素を、簡単なイテレーション、共有、文書化のために整理します。私たちは [FigJam テンプレート](https://www.figma.com/file/Z4lsAOLH1ANN3pstQFYgSk/Jobs-to-be-done----Playbook-Template?type=whiteboard&node-id=0%3A1&t=7nzgsnW0igvXKwjr-1) 内の [JTBD playbook](/handbook/product/ux/jobs-to-be-done/jtbd-playbook) でキャンバスを使用しています。
 upstream_path: /handbook/product/ux/jobs-to-be-done/jtbd-canvas-anatomy/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-29T23:22:04Z"
 translator: claude
 stale: false
-lastmod: "2025-01-06T20:13:53+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ![JTBD キャンバス](/images/product/ux/jobs-to-be-done/JTBD_Canvas.png)
@@ -39,7 +39,7 @@ lastmod: "2025-01-06T20:13:53+00:00"
 
 ### ジョブパフォーマー対ペルソナ
 
-[ユーザーペルソナ](/handbook/product/personas/#user-personas) が職種（「Software Developer」のような）を表すのに対し、ジョブパフォーマーは役割内の特定のタスクに焦点を当てます。1 つのペルソナは複数のメインジョブ（コーディング、レビュー、インフラのメンテナンス）を処理することがあり、異なるペルソナが同じジョブパフォーマー役割を共有することがあります。たとえば、さまざまな役割がコードをレビューする可能性がありますが、その特定のタスクを理解するために単一の「コードレビュアー」ジョブパフォーマーを使用します。
+[ユーザーペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) が職種（「Software Developer」のような）を表すのに対し、ジョブパフォーマーは役割内の特定のタスクに焦点を当てます。1 つのペルソナは複数のメインジョブ（コーディング、レビュー、インフラのメンテナンス）を処理することがあり、異なるペルソナが同じジョブパフォーマー役割を共有することがあります。たとえば、さまざまな役割がコードをレビューする可能性がありますが、その特定のタスクを理解するために単一の「コードレビュアー」ジョブパフォーマーを使用します。
 
 ## **メインジョブ:** ジョブパフォーマーは何を達成しようとしているか？
 

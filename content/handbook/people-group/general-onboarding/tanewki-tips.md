@@ -2,11 +2,11 @@
 title: TaNewKi のヒント
 description: GitLab で開始する新入社員のガイド
 upstream_path: /handbook/people-group/general-onboarding/tanewki-tips/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:53:50+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-22T12:05:48+01:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## チームへようこそ
@@ -23,7 +23,7 @@ People Operations チームは、オンボーディングおよび GitLab での
 
 #### 機器のセットアップ
 
-- 候補者エクスペリエンススペシャリストチームから[ノートパソコン](/handbook/security/corporate/end-user-services/laptop-management/) を注文するための指示が記載されたウェルカムメールに注意してください
+- 候補者エクスペリエンススペシャリストチームから[ノートパソコン](/handbook/eta/corporate-it/end-user-services/laptop-management/) を注文するための指示が記載されたウェルカムメールに注意してください
 - ノートパソコンはロックされており、正式な初日（開始日）にのみロック解除されることに注意してください。その後、以下に従って必要なオンボーディング手順と関連するアクセスを完了することができます。
 
 #### 書類
@@ -49,8 +49,8 @@ People Operations チームは、オンボーディングおよび GitLab での
 - 自分が快適と感じる時にいつでも仕事を始めてください — 私たちは [非線形ワークデイ](/handbook/company/culture/all-remote/non-linear-workday/#find-what-works-for-you) を取り入れています。ウェルカムメールは現地時間で午前 6 時頃に送信されます。
 - 個人メールでオンボーディング指示を確認してください：
     1. 開始日の前日に受け取った Okta メールに戻ります。このメールにより Okta アカウントを有効化でき、それぞれのノートパソコンセットアップと従うべき手順にリンクされます：
-        - [Mac OS](/handbook/security/corporate/end-user-services/onboarding101/#laptop-setup-macbook)
-        - [Linux OS](/handbook/security/corporate/end-user-services/onboarding101/#laptop-setup-linux)
+        - [Mac OS](/handbook/eta/corporate-it/end-user-services/onboarding101/#laptop-setup-macbook)
+        - [Linux OS](/handbook/eta/corporate-it/end-user-services/onboarding101/#laptop-setup-linux)
     1. Okta アカウントを有効化し、ノートパソコンをセットアップしたら、ウェルカムメールを確認して GitLab ユーザー名を登録してください（GitLab メールにアクセスして）。
     1. その後、パーソナライズされた [GitLab オンボーディング Issue](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding.md) にアクセスできるようになります。
     1. 1Password（安全なパスワード管理用）からの招待も受け取ります。アカウントを有効化し、パスワードを個人ボールトに保存してください。
@@ -226,7 +226,7 @@ A: [Family & Friends Day](/handbook/company/family-and-friends-day/) は、私�
 | 略語 | 単語/表現/役職 |
 |:---------------|:---------------|
 | AMA | [Ask Me Anything](/handbook/communication/ask-me-anything/) |
-| AR | [Access Request](/handbook/security/corporate/end-user-services/access-requests/access-requests/) |
+| AR | [Access Request](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) |
 | DRI | Directly Responsible Individual |
 | E-Group | Executive Group |
 | EBA | Executive Business Administrator |

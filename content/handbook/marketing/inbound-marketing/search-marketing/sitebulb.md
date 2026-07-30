@@ -2,11 +2,11 @@
 title: "Sitebulb"
 description: "Sitebulb は検索エンジン最適化（SEO）のためのウェブサイト監査ツールです。"
 upstream_path: /handbook/marketing/inbound-marketing/search-marketing/sitebulb/
-upstream_sha: 2aee792005d83a7f758d3cf1573626202b05037c
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:20:18+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -15,7 +15,7 @@ Sitebulb は検索エンジン最適化（SEO）のためのウェブサイト�
 
 ## アクセス
 
-アクセス権は購入したライセンス数に基づいて制限されています。アクセスを申請するには、標準の[アクセスリクエストプロセス](/handbook/security/corporate/end-user-services/access-requests/access-requests/)に従ってください。ビジネスケースとライセンスの空き状況に応じて、リクエストが承認または却下されることがあります。
+アクセス権は購入したライセンス数に基づいて制限されています。アクセスを申請するには、標準の[アクセスリクエストプロセス](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)に従ってください。ビジネスケースとライセンスの空き状況に応じて、リクエストが承認または却下されることがあります。
 
 ## 利用方法
 

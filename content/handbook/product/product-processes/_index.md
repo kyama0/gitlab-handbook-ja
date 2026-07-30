@@ -3,11 +3,11 @@ title: プロダクトプロセス
 description: >-
   プロダクト組織として、私たちは顧客が愛し価値を見出す製品を開発するための、柔軟でありながら簡潔な製品開発フレームワークを作ることに取り組んでいます。
 upstream_path: /handbook/product/product-processes/
-upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
-translated_at: "2026-07-24T06:17:58+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:30:39+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-23T12:35:46-03:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 <!-- include omitted: includes/product/product-handbook-links.md -->
@@ -309,7 +309,7 @@ PM が計画を立てる手助けとして、ステージグループの安定�
    1. ファシリテーターは、グループの計画 Issue で参加者と準備作業を共有することが望ましいです (このリストの後のテンプレートと [例](https://gitlab.com/gitlab-org/create-stage/-/issues/12980#note_834155059) を参照)。
    1. 参加者は準備作業を行います (このリストの後のテンプレートを参照)。
 1. 当日 ([セッションの録画例](https://youtu.be/xgeXUEzOpUY) を参照):
-   1. ファシリテーターは [通話の録画](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-recording) を開始します。
+   1. ファシリテーターは [通話の録画](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording) を開始します。
    1. **発表**: 各参加者について、ファシリテーターは [タイマーを設定](https://support.mural.co/en/articles/3029991-using-the-timer) します (参加者数に応じて適応、10 分)。参加者は次に、[RICE フレームワーク](#using-the-rice-framework) を使用することが望ましく、自分の Issue を発表します。参加者がすべての Issue を発表してから初めて、他の出席者が質問できます。ファシリテーターは時折、残り時間を発表します。タイマーが鳴ったら、これを別の参加者で繰り返します。
    1. **投票**: すべての参加者が発表した後、ファシリテーターは [2 つの投票セッション](https://support.mural.co/en/articles/2113758-run-a-voting-session) を実施します: 最初に _重要性_、次に _実現可能性_ です。各参加者は 5 票持ちます (Issue 数に応じて適応)。ファシリテーターはタイマーを 2 分に設定し、各投票セッションで繰り返します。
    1. **可視化**: [投票セッションの結果をレビュー](https://support.mural.co/en/articles/2113758-run-a-voting-session#h_7cb8e4f588) し、各基準の投票数に応じて、全員がマトリックスに付箋を配置するのを手伝います。
@@ -1255,7 +1255,7 @@ GitLab のプロダクトマネージャーであることの一部は、ステ�
 PM が機能の運用コストを理解するために活用できるいくつかの異なるツールがあります。これらのいくつかはインフラストラクチャによって維持されており、GitLab.com の運用データに基づいています。サービスピンのような他のツールは、self-managed ユーザーのコストをより理解するために活用できます。最終的に、各プロダクトグループは、コストを理解し最適化するために必要なデータを持つことを保証する責任があります。
 
 - インフラストラクチャコストを可視化するための有用なダッシュボード:
-- [Access to Billing Console](https://console.cloud.google.com/billing/) ([アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) 必要)
+- [Access to Billing Console](https://console.cloud.google.com/billing/) ([アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) 必要)
 - [Service ping](https://docs.gitlab.com/development/internal_analytics/service_ping/)
 - あなたのエンジニアリングマネージャー、Slack の #infrafin、より広い GitLab チーム
 

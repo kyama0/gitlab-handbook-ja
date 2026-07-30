@@ -2,11 +2,11 @@
 title: "Identity Kingdom とテックスタック"
 description: "私たちはテックスタックを `Identity Kingdoms`（領域の意味）にリファクタリングし、Business、Cloud、Product（SaaS と Dedicated）それぞれ固有のニーズ間で関心の分離を実現しました。特に、管理用のコントロールプレーンや最小権限の構成における分離が重要です。これにより、各 Kingdom のコンプライアンス要件に固有な自動化やポリシーを作成し、トップレベルのアーキテクチャとガードレールの中で各チームが効率的に運用できるようになります。"
 upstream_path: /handbook/security/identity/kingdoms/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:36:18+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-02T13:11:13+01:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## Business Kingdom
@@ -15,7 +15,7 @@ lastmod: "2026-02-02T13:11:13+01:00"
 
 IT チームの主な焦点は、ほとんどのアプリケーションを Okta SSO と連携させることであり、組織全体で利用されるアプリケーション、SOX コンプライアンス対象のアプリケーション、または Finance、Legal、People、Sales 機能に関連するアプリケーションを優先します。
 
-詳しくは [テックスタックのハンドブックページ](/handbook/business-technology/tech-stack-applications/) と [Okta ハンドブックページ](/handbook/security/corporate/end-user-services/okta/) をご覧ください。
+詳しくは [テックスタックのハンドブックページ](/handbook/business-technology/tech-stack-applications/) と [Okta ハンドブックページ](/handbook/eta/corporate-it/end-user-services/okta/) をご覧ください。
 
 ## Cloud Kingdom
 

@@ -2,12 +2,11 @@
 title: サポートチーム ハンドブック
 description: GitLab サポートチームのハンドブックは、私たちがなぜ・どのようにこの方法で働いているのかを示す中心的なリポジトリです。
 upstream_path: /handbook/support/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:04:40+09:00"
+upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
+translated_at: "2026-07-30T06:14:05+09:00"
 translator: codex
 stale: false
-model: codex
-lastmod: "2026-07-14T10:35:27+10:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ## GitLab サポートチーム ハンドブックへようこそ
@@ -277,7 +276,7 @@ GitLab、私たちの FOSS プロジェクト、または GitLab コンポーネ
 | [#spt_emea](https://gitlab.enterprise.slack.com/archives/C07N48KHCR0) | EMEA のグローバル SE に固有のトピックを議論 |
 | [#spt_apac](https://gitlab.enterprise.slack.com/archives/C07EJ2L3P7E) | APAC のグローバル SE に固有のトピックを議論 |
 | [#spt_pairing](https://gitlab.slack.com/archives/C03UW0HPBGD) | チケットと Issue で協力して取り組む際に使用 |
-| [#spt_us-government](https://gitlab.slack.com/archives/C03RTN3JEJ2) | US 連邦サポートに関するトピックの議論 |
+| [#spt_us-government](https://gitlab.slack.com/archives/C03RTN3JEJ2) | U.S. Government Support に関するトピックを議論 |
 | [#spt_onboarding](https://gitlab.slack.com/archives/C07UJ1N8S1F) | 新メンバーの方へ: オンボーディングに関するトピック |
 
 ##### プライベートチャンネル
@@ -340,7 +339,7 @@ GitLab では、公開にできない正当な理由がない限り、[デフォ
 
 #### Zoom 名前形式
 
-[Zoom プロフィールのカスタマイズ](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-additional-config/#customize-your-zoom-profile) で説明されているように、Zoom での名前に以下の形式を使用してください。主にお客様向けのチームとして、これらの形式はお客様が存在するコールでベンダーとロールによってあなたを識別するのに役立つように選ばれました。
+[Zoom プロフィールのカスタマイズ](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-additional-config/#customize-your-zoom-profile) で説明されているように、Zoom での名前に以下の形式を使用してください。主にお客様向けのチームとして、これらの形式はお客様が存在するコールでベンダーとロールによってあなたを識別するのに役立つように選ばれました。
 
 サブ部門については、所属する最小単位を使用してください。技術的な正確さよりもお客様の理解を優先してください。
 
@@ -348,7 +347,7 @@ GitLab では、公開にできない正当な理由がない限り、[デフォ
 
 - Customer Support -> Support Engineering（Support Engineering を使用）
 - Customer Support -> Support Readiness -> Support Operations（Support Operations を使用）
-- Customer Support -> Support Engineering -> US Federal Support（US Federal Support を使用）
+- Customer Support -> Support Engineering -> U.S. Government Support（U.S. Government Support を使用）
 
 ##### 例
 
@@ -357,7 +356,7 @@ GitLab では、公開にできない正当な理由がない限り、[デフォ
 - シニア サポートエンジニア: `名前 | Sr. Support Engineer | GitLab` - `Shen Hua Li | Sr. Support Engineer | GitLab`
 - スタッフ サポートエンジニア: `名前 | Staff Support Engineer | GitLab` - `Jabulani Achebe | Staff Support Engineer | GitLab`
 - サポートマネージャー: `名前 | Manager, Sub-department | GitLab` - `Sneha Sharma | Manager, Support Operations | GitLab`
-- シニア サポートマネージャー: `名前 | Sr. Manager, Sub-department | GitLab` | `Joo Hee Ko | Sr. Manager, US Federal Support | GitLab`
+- シニア サポートマネージャー: `名前 | Sr. Manager, Sub-department | GitLab` | `Joo Hee Ko | Sr. Manager, U.S. Government Support | GitLab`
 - ディレクター: `名前 | Director, Sub-department | GitLab` | `Noémie Blanchet | Director, Support Engineering | GitLab`
 - バイスプレジデント: `名前 | VP, Department | GitLab` - `Kalina Nowak | VP, Customer Support | GitLab`
 

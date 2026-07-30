@@ -1,11 +1,11 @@
 ---
 title: "GitLab Duo のヒント"
 upstream_path: /handbook/tools-and-tips/ai/gitlab-duo/
-upstream_sha: 6f672d050777a6a6cb33fc5f31ccf71ebdd5b812
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:21:07+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 AI 駆動の GitLab Duo Chat、Code Suggestions などを使って DevSecOps ワークフローを高速化する方法を学びましょう。
@@ -16,7 +16,7 @@ gitlab-com [グループ](https://gitlab.com/gitlab-com) で GitLab Duo への�
 
 GitLab のコントリビューターおよび co-creator も AI 駆動の GitLab Duo を活用できます。[contributors.gitlab.com/](https://contributors.gitlab.com/) のオンボーディングプロセスから始めてください。
 
-GitLab.com の顧客デモグループでチームメンバーがアクセスを必要とする場合は、`GitlabCom_Licensed_Demo_Group_Request` テンプレートを使って [Access Request](/handbook/security/corporate/end-user-services/access-requests/access-requests/) を作成してください。
+GitLab.com の顧客デモグループでチームメンバーがアクセスを必要とする場合は、`GitlabCom_Licensed_Demo_Group_Request` テンプレートを使って [Access Request](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) を作成してください。
 
 オンボーディングについては、[Getting Started](https://docs.gitlab.com/ee/user/get_started/getting_started_gitlab_duo.html) ドキュメントを参照してください。
 

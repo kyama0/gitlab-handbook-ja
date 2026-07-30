@@ -2,11 +2,11 @@
 title: "Zoominfo"
 description: "ZoomInfo は、ビジネスや専門職のコンタクト情報のデータベースを提供するセールスインテリジェンスソフトウェアです。"
 upstream_path: /handbook/marketing/marketing-operations/zoominfo/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T07:06:29+09:00"
+upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
+translated_at: "2026-07-30T09:08:29+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-07T17:29:07+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ### ZoomInfo について
@@ -81,7 +81,7 @@ ZoomInfo の admin 管理は、Field Sales ロール (AE/SAE/ASM/ISR) のライ�
 
 セールス組織と Sales Development のメンバーは、ロール エンタイトルメント リクエストの一部として ZoomInfo へのアクセスを受け取ります。チームメンバーがアクセスを受け取らなかった場合、またはアクセスが削除されて取り戻したい場合は、アクセスリクエストをオープンする必要があります。
 
-具体的には、マーケティング関連のロール (SDR/BDR) の場合は、[個別アクセスリクエスト - 略して AR](/handbook/security/corporate/end-user-services/access-requests/access-requests/) をオープンし、承認のためにマネージャーと `RobRosu` (Mops) をタグ付けしてください。Field Sales 関連のロール (AE/SAE/ASM/ISR) の場合は、AR をオープンし、承認のためにマネージャーと `@kbetances` (Sales Operations) をタグ付けしてください。
+具体的には、マーケティング関連のロール (SDR/BDR) の場合は、[個別アクセスリクエスト - 略して AR](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) をオープンし、承認のためにマネージャーと `RobRosu` (Mops) をタグ付けしてください。Field Sales 関連のロール (AE/SAE/ASM/ISR) の場合は、AR をオープンし、承認のためにマネージャーと `@kbetances` (Sales Operations) をタグ付けしてください。
 
 ZoomInfo に問題が発生している場合、最初の連絡先は ZoomInfo です。次のメールアドレスで連絡できます: helpmenow@zoominfo.com。
 

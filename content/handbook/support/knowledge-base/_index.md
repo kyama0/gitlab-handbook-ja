@@ -2,11 +2,11 @@
 title: グローバルナレッジベース
 description: GitLab グローバルナレッジベース
 upstream_path: /handbook/support/knowledge-base/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:21:18+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:59:13+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 グローバルナレッジベースは、顧客の問題に対するソリューションを検索可能な形で集約したリポジトリで、ユーザーがサポートに問い合わせることなく素早く回答を見つけられるよう設計されています。
 

@@ -3,11 +3,11 @@ title: サポート向けCalendly セットアップ
 category: References
 description: "Support Engineering におけるCalendly のセットアップと使用方法のワークフロー"
 upstream_path: /handbook/support/workflows/calendly/
-upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
-translated_at: "2026-05-08T20:14:55Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-29T21:19:18Z"
 translator: claude
 stale: false
-lastmod: "2025-07-23T12:35:43+02:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 **注意**: お客様への通話を提案する際は、必ず [シングルユース Calendly リンク](#generating-a-single-use-calendly-link) を使用してください。
@@ -146,7 +146,7 @@ GitLab Support Call                 https://api.calendly.com/event_types/CEGFRWO
 Upgrade Assistance             https://api.calendly.com/event_types/AHBRCBLAH6ECV5E6
 Pairing Session                     https://api.calendly.com/event_types/EBLAHIHDJDJRSS42
 Support call with me                https://api.calendly.com/event_types/DBLAH4WXTM7ADUB2
-US Government Upgrade Assistance  https://api.calendly.com/event_types/BLAHTQKLLSHV3GL3
+U.S. Government Upgrade Assistance  https://api.calendly.com/event_types/BLAHTQKLLSHV3GL3
 ```
 
 「Support call with me」イベントのシングルユースリンクを生成するには:
@@ -239,8 +239,8 @@ Ben Prescott
 - 私は社内GitLab ミーティング用に25分・50分のミーティング、そして「GitLab Customer support」と呼ばれる別の30分・60分のミーティングを用意しています。Zendesk でリンクを送るのは後者です。
 - デフォルトで60分を提供し、説明／指示文を以下のように変更しました。最後の行を含めているのは、お客様の現地時間の午前3時に予約されたことがあり、Calendly がタイムゾーンを誤認したのではないかと考えたためです。
 
-> This will be a Zoom Meeting.
+> こちらは Zoom ミーティングです。
 >
-> Let me know via the ticket if you have any questions, will need to use a different conference platform, or if you want a link to schedule a 30 minute call instead (which may be available sooner.)
+> ご質問がある場合、別の会議プラットフォームを使用する必要がある場合、または代わりに 30 分の通話をスケジュールするためのリンク（こちらの方が早く利用できる場合があります）が必要な場合は、チケットでお知らせください。
 >
-> Check that your time zone and current time are displayed correctly on this page (below the calendar.)
+> このページ（カレンダーの下）で、タイムゾーンと現在時刻が正しく表示されていることを確認してください。

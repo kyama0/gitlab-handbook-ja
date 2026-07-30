@@ -1,18 +1,18 @@
 ---
 title: "Claude.ai のヒント"
 upstream_path: /handbook/tools-and-tips/ai/claude/
-upstream_sha: 6f672d050777a6a6cb33fc5f31ccf71ebdd5b812
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:21:07+09:00"
 translator: claude
 stale: false
-lastmod: "2025-06-12T19:34:05-07:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 [Claude.ai](https://claude.ai/) を使って AI をワークフロー、ツール、プロセスに取り入れ、効率を高める方法を学びましょう。Claude を使うと、コンテンツの執筆、アウトラインやドキュメントの作成、コンテンツの要約、データベースマイグレーションや SQL ステートメントの生成、リファクタリングの推奨など、さまざまな作業ができます。
 
 ## アクセス
 
-[claude.ai](https://claude.ai/) を開き、SSO ログインにチームメンバーのメールアドレスを使用します。[Okta](/handbook/security/corporate/end-user-services/okta/) の Claude タイルからもアクセスできます。[利用ガイドラインと FAQ](https://internal.gitlab.com/handbook/company/ai-at-gitlab/#usage-guidelines-and-faqs)（社内）も確認してください。
+[claude.ai](https://claude.ai/) を開き、SSO ログインにチームメンバーのメールアドレスを使用します。[Okta](/handbook/eta/corporate-it/end-user-services/okta/) の Claude タイルからもアクセスできます。[利用ガイドラインと FAQ](https://internal.gitlab.com/handbook/company/ai-at-gitlab/#usage-guidelines-and-faqs)（社内）も確認してください。
 
 ## 関連リソース
 

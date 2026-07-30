@@ -1,11 +1,11 @@
 ---
 title: "SentinelOne エンドポイント検出と対応 (EDR)"
 upstream_path: /handbook/security/corporate/systems/sentinelone/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T07:19:19+09:00"
 translator: claude
 stale: false
-lastmod: "2025-06-26T03:27:50+00:00"
+lastmod: "2026-07-28T16:24:24+01:00"
 ---
 
 ## 概要
@@ -14,7 +14,7 @@ GitLab ではエンドポイント (チームメンバーのラップトップ) 
 
 GitLab チームメンバーが GitLab チームメンバーとしての職責を果たすために使用するすべての macOS、Windows、Linux デバイスには、SentinelOne EDR エージェントがインストールされ、機能している必要があります。
 
-Windows エンドポイントの使用には特定のビジネス上の理由と承認済みの例外が必要です。これは [Windows エンドポイントの使用が禁止されている](/handbook/security/corporate/end-user-services/laptop-management/#windows-for-customer-support-and-product-development) ためです。
+Windows エンドポイントの使用には特定のビジネス上の理由と承認済みの例外が必要です。これは [Windows エンドポイントの使用が禁止されている](/handbook/eta/corporate-it/end-user-services/laptop-management/#windows-for-customer-support-and-product-development) ためです。
 
 - `#sentinelone` Slack チャンネル
 - [SentinelOne セットアップガイド](/handbook/security/corporate/systems/sentinelone/setup)
@@ -24,7 +24,7 @@ Windows エンドポイントの使用には特定のビジネス上の理由と
 
 このプラットフォームは責任共有モデルを採用しています。
 
-- **Corporate Security (Device Trust Engineering):** エージェントの設定とデプロイ (Jamf 経由)
+- **CorpSec Devices:** デバイス管理を通じたエージェントの設定とデプロイ
 - **Security Operations (Security Incident Response Team):** インシデントおよび調査のためのコンソールアラートの管理
 - **Security Compliance:** コンポーネントと設定の監査
 - **Legal Privacy:** インシデントおよび個人データに対する適切な管理者アクセスの監査
@@ -84,7 +84,7 @@ SentinelOne があなたの職責遂行能力に問題を引き起こしてい�
 
 ホームネットワークにさらなるプライバシーとセキュリティを追加したい場合は、業務マシン用に別個のネットワークを作成することで、業務マシンをさらに分離できます。
 
-このタイプのネットワーク設定について直接的なサポートは提供できませんが、[ワイヤレスネットワーク](/handbook/security/corporate/end-user-services/laptop-management/laptop-security/networks)および[ネットワーク分離](/handbook/security/network-isolation)ガイドを参照してください。[例](/handbook/security/network-isolation/) は出発点として役立つでしょう。
+このタイプのネットワーク設定について直接的なサポートは提供できませんが、[ワイヤレスネットワーク](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/networks)および[ネットワーク分離](/handbook/security/network-isolation)ガイドを参照してください。[例](/handbook/security/network-isolation/) は出発点として役立つでしょう。
 
 ### サードパーティベンダー
 

@@ -2,11 +2,11 @@
 title: "Litmus"
 description: "Litmus は主にマーケティングキャンペーンマネージャーが私たちのメールマーケティングプログラムを構築・テスト・最適化するために使用するメールマーケティングソフトウェアです。"
 upstream_path: /handbook/marketing/marketing-operations/litmus/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:02:57+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 用途
@@ -17,7 +17,7 @@ Litmus は、主にライフサイクルマーケティングが私たちのメ�
 
 現在、Enterprise サブスクリプションを契約しています。これにより、`Admin`、`Full`、`Code editor`、`Content editor` のユーザーをアカウントに 5 名プロビジョニングできます。`Reviewer` と `Proof reviewer` ユーザーは無制限です。
 
-Litmus へのアクセスをリクエストするには、[AR プロセス](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request)に従ってください。AR では必ずリクエストするロールを明記してください。
+Litmus へのアクセスをリクエストするには、[AR プロセス](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)に従ってください。AR では必ずリクエストするロールを明記してください。
 
 なお、`Proof reviewer` アクセスをリクエストする場合、AR は不要です。プルーフのレビュー依頼があった際に自動的に追加されます。
 

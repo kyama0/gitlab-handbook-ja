@@ -1,12 +1,12 @@
 ---
-title: "Identity ユーザーガイド - Identity 運用"
-description: "Identity Platform とインフラストラクチャには、複数のバックエンドコンポーネント、インフラストラクチャ、サービスがあります。本ページでは、Identity Operations のチームメンバーが Identity Platform のさまざまな側面を管理するためのクイックリファレンスガイドとランブックを提供します。"
+title: "Identity ユーザーガイド - Identity Engineering"
+description: "Identity Platform とインフラストラクチャには、複数のバックエンドコンポーネント、インフラストラクチャ、サービスがあります。本ページでは、Identity Engineering のチームメンバーが Identity Platform のさまざまな側面を管理するためのクイックリファレンスガイドとランブックを提供します。"
 upstream_path: /handbook/security/identity/guide/admin/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:36:18+09:00"
 translator: claude
 stale: false
-lastmod: "2024-01-17T16:18:44+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 {{% alert title="まだ運用開始前" color="warning" %}}

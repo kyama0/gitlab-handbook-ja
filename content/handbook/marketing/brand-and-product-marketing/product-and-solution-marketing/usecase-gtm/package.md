@@ -1,11 +1,11 @@
 ---
 title: "ユースケース: アーティファクト管理"
 upstream_path: "/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/package/"
-upstream_sha: "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1"
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
+translated_at: "2026-07-30T09:52:04+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-22T14:47:44+02:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 #### 連絡先
@@ -47,37 +47,37 @@ GitLab は、GitLab Artifact Management の提供によって、お金と時間�
 
 #### 現在
 
-1. 🟩 [Sasha - Software Developer](/handbook/product/personas/#sasha-software-developer)
-1. 🟩 [Devon - DevOps Engineer](/handbook/product/personas/)
-1. 🟨 [Priyanka - Platform Engineer](/handbook/product/personas/#priyanka-platform-engineer)
-1. 🟨 [Simone - Backend Engineer](/handbook/product/personas/#simone-backend-engineer)
-1. 🟨 [Delaney - Development Team Lead](/handbook/product/personas/#delaney-development-team-lead)
-1. 🟨 [Rachel - Release Manager](/handbook/product/personas/#rachel-release-manager)
+1. 🟩 [Sasha - Software Developer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer)
+1. 🟩 [Devon - DevOps Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)
+1. 🟨 [Priyanka - Platform Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer)
+1. 🟨 [Simone - Software Engineer in Test](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#simone-software-engineer-in-test)
+1. 🟨 [Delaney - Development Team Lead](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead)
+1. 🟨 [Rachel - Release Manager](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager)
 1. ⬜️ Central IT / System Admins
 
 #### 中期（1〜2 年）
 
 [3 年戦略](https://about.gitlab.com/direction/#3-year-strategy)を実行する中で、私たちの中期（1〜2 年）の目標は、クラウドネイティブ開発チームとプラットフォームチームの間のコラボレーションを可能にする単一のアプリケーションを提供することです。
 
-1. 🟩 [Priyanka - Platform Engineer](/handbook/product/personas/#priyanka-platform-engineer)
-1. 🟩 [Sasha - Software Developer](/handbook/product/personas/#sasha-software-developer)
-1. 🟩 [Devon - DevOps Engineer](/handbook/product/personas/)
-1. 🟩 [Allison - Application Ops](/handbook/product/personas/#allison-application-ops)
-1. 🟩 [Simone - Backend Engineer](/handbook/product/personas/#simone-backend-engineer)
-1. 🟩 [Delaney - Development Team Lead](/handbook/product/personas/#delaney-development-team-lead)
-1. 🟩 [Rachel - Release Manager](/handbook/product/personas/#rachel-release-manager)
+1. 🟩 [Priyanka - Platform Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer)
+1. 🟩 [Sasha - Software Developer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer)
+1. 🟩 [Devon - DevOps Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)
+1. 🟩 [Allison - Application Ops](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#allison-application-ops)
+1. 🟩 [Simone - Software Engineer in Test](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#simone-software-engineer-in-test)
+1. 🟩 [Delaney - Development Team Lead](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead)
+1. 🟩 [Rachel - Release Manager](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager)
 1. 🟨 Ops Teams
 1. ⬜️ Central IT / System Admins
 
 #### Software Developer Sacha
 
-[Software developer](/handbook/product/personas/#sasha-software-developer) は、あらゆる種類の開発ツールとプログラミング言語に精通しています。これは、パッケージを管理し、イメージを保存・配布するなど、アプリケーション開発プロセス全体およびソフトウェア開発エコシステム全体を通じて、使いやすさと一貫性を確保するのに役立つ、かけがえのないスキルセットです。
+[Software developer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer) は、あらゆる種類の開発ツールとプログラミング言語に精通しています。これは、パッケージを管理し、イメージを保存・配布するなど、アプリケーション開発プロセス全体およびソフトウェア開発エコシステム全体を通じて、使いやすさと一貫性を確保するのに役立つ、かけがえのないスキルセットです。
 
 - 開発者は問題解決者であり、批判的思考者であり、学ぶことが大好きです。彼らは計画されたタスクで最もよく働き、その時間の大半を、愛される機能の形で顧客に届けられる価値の創出に費やしたいと考えています。
 
 #### DevOps Engineer Devon
 
-[DevOps Engineer](/handbook/product/personas/) は、自分の組織の SDLC を深く理解しており、インフラ、環境、インテグレーションのサポートを提供します。
+[DevOps Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) は、自分の組織の SDLC を深く理解しており、インフラ、環境、インテグレーションのサポートを提供します。
 
 - DevOps エンジニアは、あらゆるものを自動化することで、毎日少しずつ日常を楽にしようと努めています。
 

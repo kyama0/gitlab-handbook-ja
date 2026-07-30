@@ -4,11 +4,11 @@ description: "お客様にアップグレードアシスタンスを提供する
 category: Self-managed
 subcategory: Upgrade Assistance
 upstream_path: /handbook/support/workflows/upgrade-assistance/
-upstream_sha: c8fa138220d8c6d69f811b17242d6d2f08e4e409
-translated_at: "2026-05-08T04:02:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:31:24+09:00"
 translator: claude
 stale: false
-lastmod: "2025-06-04T12:36:39+02:00"
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ### 概要
@@ -27,7 +27,7 @@ GitLab Support は [Upgrade Assistance](https://about.gitlab.com/support/schedul
 
 #### プロセスの開始
 
-1. リクエストを起こすエンドユーザーは、Support for Self managed Instance フォームで問題種別を「Upgrade Assistance Request」に設定して新しいサポート依頼を作成するか、対象ユーザーであれば各サポートポータルの [US Government Upgrade Planning Assistance Request](https://federal-support.gitlab.com/hc/en-ushc/en-us/requests/new?ticket_form_id=360001434131) フォームで作成します。これによりインスタンスに高優先度のチケットが作成されます。
+1. リクエストを起こすエンドユーザーは、Support for Self managed Instance フォームで問題種別を「Upgrade Assistance Request」に設定して新しいサポート依頼を作成するか、対象ユーザーであれば各サポートポータルの [U.S. Government Upgrade Planning Assistance Request](https://federal-support.gitlab.com/hc/en-ushc/en-us/requests/new?ticket_form_id=360001434131) フォームで作成します。これによりインスタンスに高優先度のチケットが作成されます。
 1. トリアージを行うエンジニアは、チケットを自分にアサインしてください。
 1. チケットの担当者は、組織に CSM が付いているかを確認し、付いている場合はその CSM を CC またはフォロワーとしてチケットに追加します。
 1. ユーザーが提供する情報には、[必要な情報](https://about.gitlab.com/support/scheduling-upgrade-assistance/#what-information-do-i-need-to-schedule-upgrade-assistance) がすべて含まれている必要があります。

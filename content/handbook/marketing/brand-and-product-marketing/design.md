@@ -3,11 +3,11 @@ title: "ブランドクリエイティブハンドブック"
 description: "GitLab ブランドクリエイティブハンドブック: "
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/brand-and-product-marketing/design/
-upstream_sha: 2e7a8730e4bbae1125f2d28ea6f22b445742c723
-translated_at: "2026-07-10T21:27:59+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:37:27+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-09T16:02:11-06:00"
+lastmod: 2026-07-28T15:04:15+01:00
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -296,7 +296,7 @@ Canva は、ブランドデザインテンプレートを活用することで�
 
 ### GitLab Enterprise アクセス
 
-定期的に Canva でデザインを作成する場合、無料または個人アカウントを使用するのではなく、`GitLab Enterprise` Canva Pro アカウントで作業することをお願いします。アクセスを取得するには、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)Issue を提出してください。これが完了したら、ブランドデザインチームの誰かがアクセスを許可します。
+定期的に Canva でデザインを作成する場合、無料または個人アカウントを使用するのではなく、`GitLab Enterprise` Canva Pro アカウントで作業することをお願いします。アクセスを取得するには、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)Issue を提出してください。これが完了したら、ブランドデザインチームの誰かがアクセスを許可します。
 
 利用可能なシート数は限られているため、チームはアクセスが必要なチームメンバーの数を統合することをお勧めします。*注意: 共有ログインは禁止されています*。
 

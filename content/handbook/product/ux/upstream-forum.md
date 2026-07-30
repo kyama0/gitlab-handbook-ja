@@ -3,9 +3,9 @@ title: Upstream Forum
 description: >-
   Upstream Forum は、UX チームメンバーが作業を共有し、議論するための定期的なミーティングです。
 upstream_path: /handbook/product/ux/upstream-forum/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: "2026-06-29T11:52:06+01:00"
-translated_at: "2026-07-10T06:46:26+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+lastmod: "2026-07-28T15:04:15+01:00"
+translated_at: "2026-07-30T08:15:54+09:00"
 translator: codex
 stale: false
 ---
@@ -113,11 +113,11 @@ stale: false
 ### 共有する人に役立つヒント {#helpful-tips-for-those-sharing}
 
 - 自己紹介し、トピックの[コンテキスト](#preparation)を提供します。
-- [参加者に楽しい体験を提供します](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-tips/#make-the-participant-experience-an-enjoyable-one)。動きが速すぎたり（たとえば Figma プロトタイプを見せるとき）、前のビューで言い忘れたことがあるためビュー間を行き来したりしないようにします。
-- [画面を共有するとき](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-tips/#how-to-share-a-presentation-in-zoom)は、対象者が細部を確認できるよう、フルスクリーン表示を検討します。
+- [参加者に楽しい体験を提供します](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-tips/#make-the-participant-experience-an-enjoyable-one)。動きが速すぎたり（たとえば Figma プロトタイプを見せるとき）、前のビューで言い忘れたことがあるためビュー間を行き来したりしないようにします。
+- [画面を共有するとき](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-tips/#how-to-share-a-presentation-in-zoom)は、対象者が細部を確認できるよう、フルスクリーン表示を検討します。
   - macOS で UI を表示／非表示にする便利な Figma キーボードショートカット: `⌘\` または `⌘.`。
 - ストーリー内のテキストの最小フォントサイズを、誰もが容易に読める大きさにします。
-- Issue、エピック、Figma ファイル、FigJam ボード、録画など、ストーリーに関連するものへの[リンクを提供します](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-tips/#provide-links-rather-than-sharing-while-you-present-or-edit)。リンクはアジェンダドキュメントに記載します。
+- Issue、エピック、Figma ファイル、FigJam ボード、録画など、ストーリーに関連するものへの[リンクを提供します](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-tips/#provide-links-rather-than-sharing-while-you-present-or-edit)。リンクはアジェンダドキュメントに記載します。
 - Figma ファイルや Issue から直接共有するときは、事前に説明する内容のアウトラインを用意し、言及するポイントの詳細をいくつか書き込むことを検討します。話す際のガイドとして使えば、話がより直線的になり、対象者が理解しやすくなります。
 - インターネット接続が制限されている場合は、Zoom のカメラ映像を停止するか、[こちらのヒント](https://www.canr.msu.edu/od/educational-technology/tips-zoom-slow-connection)を試してください。
 - ストーリーの各セクションが終わった後に、質問を共有するよう参加者に依頼します。

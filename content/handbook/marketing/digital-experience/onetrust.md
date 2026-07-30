@@ -2,11 +2,11 @@
 title: "OneTrust"
 description: "OneTrust は、マーケティングが Web サイト上のプライバシーおよびコンプライアンスソリューションとして使用しているプライバシー、セキュリティ、データガバナンスのソフトウェアです。"
 upstream_path: /handbook/marketing/digital-experience/onetrust/
-upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T09:20:18+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-09T15:19:03-07:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 用途
@@ -27,7 +27,7 @@ OneTrust 関連のリクエストは、[Marketing Operations](https://gitlab.com
 
 ## アクセス
 
-OneTrust にアクセスするには、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を作成してください。OneTrust は Google グループを通じて Okta SSO 経由でプロビジョニングされます。ユーザーは、Okta SSO と OneTrust に直接接続された Google グループ経由で追加されます。すべてのユーザーは `Project Manager` として追加されます。アクセス取得後に更新できるよう、OneTrust で必要なロールをアクセスリクエストに明記してください。利用可能なロールは下記の[システムデフォルトロール](#system-default-roles)を参照してください。
+OneTrust にアクセスするには、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を作成してください。OneTrust は Google グループを通じて Okta SSO 経由でプロビジョニングされます。ユーザーは、Okta SSO と OneTrust に直接接続された Google グループ経由で追加されます。アクセス取得後に更新できるよう、OneTrust で必要なロールをアクセスリクエストに明記してください。利用可能なロールは下記の[システムデフォルトロール](#system-default-roles)を参照してください。
 
 ## トレーニング
 

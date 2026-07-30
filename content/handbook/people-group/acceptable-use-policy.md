@@ -6,11 +6,11 @@ tags:
   - security_policy
   - security_policy_caplscsi
 upstream_path: /handbook/people-group/acceptable-use-policy/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T09:31:27+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T08:35:48+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-08T10:20:19-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
@@ -126,7 +126,7 @@ GitLab の本番環境および企業環境ならびに GitLab が管理する�
 
 ### GitLab 所有資産の返却
 
-すべての GitLab 所有のコンピューティングリソースは、会社からの離職時に[返却する](/handbook/people-group/offboarding/#returning-property-to-gitlab)必要があります。[Laptop Buy Back Policy](/handbook/security/corporate/end-user-services/laptop-management/laptop-offboarding-returns/#laptop-buybacks) や [Offboarding Tasks](/handbook/people-group/offboarding/#managing-the-offboarding-tasks) における反対の記述にかかわらず、チームメンバーは、GitLab 在籍中またはオフボーディング時に具体的に要求された場合、評価額にかかわらず、GitLab 所有のすべての資産を返却する必要があります。調査、不正行為、原因のある解雇、または [GitLab's Code of Business Conduct & Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx) のいかなる違反のケースにおいても、チームメンバーには GitLab 所有のコンピューティング機器を保持する権利はありません。
+すべての GitLab 所有のコンピューティングリソースは、会社からの離職時に[返却する](/handbook/people-group/offboarding/#returning-property-to-gitlab)必要があります。[Laptop Buy Back Policy](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-offboarding-returns/#laptop-buybacks) や [Offboarding Tasks](/handbook/people-group/offboarding/#managing-the-offboarding-tasks) における反対の記述にかかわらず、チームメンバーは、GitLab 在籍中またはオフボーディング時に具体的に要求された場合、評価額にかかわらず、GitLab 所有のすべての資産を返却する必要があります。調査、不正行為、原因のある解雇、または [GitLab's Code of Business Conduct & Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx) のいかなる違反のケースにおいても、チームメンバーには GitLab 所有のコンピューティング機器を保持する権利はありません。
 
 ### Bring-Your-Own-Device (BYOD)
 
@@ -140,9 +140,9 @@ GitLab の本番環境および企業環境ならびに GitLab が管理する�
 
 #### 会社のラップトップを利用できない場合
 
-会社のラップトップを受け取っていない新入社員には、非会社デバイスを利用するための[例外プロセス](/handbook/security/corporate/end-user-services/laptop-management/laptop-ordering/#exception-processes)があります。
+会社のラップトップを受け取っていない新入社員には、非会社デバイスを利用するための[例外プロセス](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering/#exception-processes)があります。
 
-紛失、盗難、故障により会社のラップトップが利用できないか使用不能になった場合も、同じ例外プロセスが適用されます。追加情報については[紛失または盗難時の手順](/handbook/security#reporting-an-incident)を参照してください。[Policy Exception Request](https://gitlab.com/gitlab-com/gl-security/security-assurance/sec-compliance/exceptions/issues/new?issuable_template=exception_request) を起票する必要があります。例外プロセスは一時的な解決策と見なされますが、非会社システムが[基本構成基準](/handbook/security/corporate/end-user-services/laptop-management/laptop-security)を満たすことを確認する必要があり、Microsoft Windows システムはいかなる状況においてもアクセスが許可されません。
+紛失、盗難、故障により会社のラップトップが利用できないか使用不能になった場合も、同じ例外プロセスが適用されます。追加情報については[紛失または盗難時の手順](/handbook/security#reporting-an-incident)を参照してください。[Policy Exception Request](https://gitlab.com/gitlab-com/gl-security/security-assurance/sec-compliance/exceptions/issues/new?issuable_template=exception_request) を起票する必要があります。例外プロセスは一時的な解決策と見なされますが、非会社システムが[基本構成基準](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security)を満たすことを確認する必要があり、Microsoft Windows システムはいかなる状況においてもアクセスが許可されません。
 
 図書館やホテルのキオスクなどの公共のコンピューターを使用して GitLab 関連のアカウントにサインインしないでください。
 
@@ -160,7 +160,7 @@ USB フラッシュドライブや外付けバックアップドライブなど�
 
 ### GitLab の Google ドライブ以外のファイル共有サービスの利用
 
-GitLab の Google ドライブ以外のファイル共有サービスでアカウントを作成したり、バックアップ/冗長化目的で利用することは禁止されています。GitLab 外部の関係者と GitLab 関連のファイルを共有する場合は、例外が付与される必要があります。例外を取得するには、業務上の理由を概説した[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を作成し、例外が付与されるまで進めないでください。
+GitLab の Google ドライブ以外のファイル共有サービスでアカウントを作成したり、バックアップ/冗長化目的で利用することは禁止されています。GitLab 外部の関係者と GitLab 関連のファイルを共有する場合は、例外が付与される必要があります。例外を取得するには、業務上の理由を概説した[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を作成し、例外が付与されるまで進めないでください。
 
 Google ドライブ以外のファイル共有サービスでアカウントを作成して利用する際、チームメンバーは次の点に留意する必要があります:
 

@@ -2,11 +2,11 @@
 title: "Okta 構成管理"
 description: "Okta リポジトリは、Admin UI で実行可能なあらゆる操作の Configuration-as-Code 管理に利用されます。これにより、日々の管理操作とグローバル設定のすべてを、MR 承認ルールと CI/CD 自動化を備えた状態管理へと移行できます。"
 upstream_path: /handbook/security/identity/gitops/okta/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:36:18+09:00"
 translator: claude
 stale: false
-lastmod: "2024-11-14T23:18:47+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 {{% alert title="Not Live Yet" color="warning" %}}
@@ -63,9 +63,9 @@ end
 
 | 構成ファイル              | CODEOWNERS                                    |
 |---------------------------|-----------------------------------------------|
-| `admins/{handle}.tf`      | `sec_identity_ops`                            |
-| `policies/{namespace}.tf` | (2 Approvals) `sec_identity_ops` `sec_leader` |
-| `settings/{namespace}.tf` | (2 Approvals) `sec_identity_ops` `sec_leader` |
+| `admins/{handle}.tf`      | `sec_identity_eng`                            |
+| `policies/{namespace}.tf` | (2 Approvals) `sec_identity_eng` `sec_leader` |
+| `settings/{namespace}.tf` | (2 Approvals) `sec_identity_eng` `sec_leader` |
 
 ## アプリケーションと割り当てグループ
 

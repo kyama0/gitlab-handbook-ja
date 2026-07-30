@@ -3,11 +3,11 @@ title: 米国政府向けオンコール業務の進め方
 category: On-call
 description: "サポートエンジニアリングにおける米国政府オンコールローテーションの役割と責務について"
 upstream_path: /handbook/support/workflows/usgovernment_oncall/
-upstream_sha: e2aabe3bf4147150a0bc54fee61fc5f695a17d9f
-translated_at: "2026-06-23T06:53:07+09:00"
+upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
+translated_at: "2026-07-30T06:31:24+09:00"
 translator: codex
 stale: false
-lastmod: 2026-06-22T16:36:51-04:00
+lastmod: "2026-07-29T12:39:09-04:00"
 ---
 
 ## はじめに
@@ -81,7 +81,7 @@ lastmod: 2026-06-22T16:36:51-04:00
 
 これは平日の日中シフト時間帯に届き、緊急ケースを知らせるために*稼働可能な*すべてのエンジニアに通知します。
 
-![US Gov Slack Bot の緊急ケース例](/images/support/usgov_pd_bot_alert.png)
+![U.S. Gov Slack Bot の緊急ケース例](/images/support/usgov_pd_bot_alert.png)
 
 ### フローの例
 

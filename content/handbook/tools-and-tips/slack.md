@@ -2,11 +2,11 @@
 title: "Slack"
 description: "GitLab における Slack の利用とヒント"
 upstream_path: /handbook/tools-and-tips/slack/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
+translated_at: "2026-07-29T06:21:07+09:00"
 translator: claude
 stale: false
-lastmod: "2025-09-25T09:40:49-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -91,7 +91,7 @@ Slack Enterprise Grid では、グループ DM を開始してチャンネルに
 
 Slack 管理者だけがプライベートチャンネルをパブリックチャンネルに変更できます。
 
-既存のプライベートチャンネルをパブリックにすることを依頼するには、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests) を提出してください。
+既存のプライベートチャンネルをパブリックにすることを依頼するには、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests) を提出してください。
 
 ## Slack でのノイズの管理と集中の創出
 
@@ -180,7 +180,7 @@ Slack には、Slack に投稿されたメッセージに含まれる [リンク
 
 `#whats-happening-at-gitlab` のようなチャンネルで、複数のリンクプレビュー付きの投稿を共有しているチームメンバーがおり、それが気を散らすと感じる場合は、[全員がモデレーター](/handbook/communication/#everyone-is-a-moderator) の精神で行動し、次のいずれかを検討してください:
 
-- DM で知らせる: メッセージにノイズを加えていることを伝えます。
+- DM で、メッセージにノイズを加えていることを伝えます。
 - メッセージに `:consider-removing-link-previews-to-keep-the-channel-tidy-please:` 絵文字でリアクションする。
 
 ## カスタムテーマ
