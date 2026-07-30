@@ -2,11 +2,11 @@
 title: Jenkins パイプラインの作成
 description: "GitLab の Jenkins インテグレーションを使って Jenkins パイプラインページを作成する方法を解説します"
 upstream_path: /handbook/customer-success/demo-systems/tutorials/integrations/create-jenkins-pipeline/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:40:38+09:00"
+translator: codex
 stale: false
-lastmod: "2025-01-08T16:54:09+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -106,7 +106,7 @@ Jenkins ドキュメントには、アプリケーションの言語に基づい
 これは共有環境であるため、ダッシュボードを整理するためにユーザー名のフォルダを作成し、その中にパイプラインを配置することがベストプラクティスです。
 
 1. 左サイドバーで **New Item** をクリックします。
-1. **Enter an item name** フィールドに GitLab Demo Cloud のユーザー名を入力します（例: `jeffersonmartin`）。
+1. **Enter an item name** フィールドに GitLab Demo Cloud のユーザー名を入力します（例: `yourname`）。
 
 > ユーザー名を覚えていない場合は、GitLab プロジェクトを開いているタブに切り替えてください。ブラウザの URL からプロジェクトのパスを確認することでユーザー名がわかります。
 
@@ -150,7 +150,7 @@ tutorial-app-jenkins-pipeline
 
 ```text
 例
-https://gitlab-core.us.gitlabdemo.cloud/demosys-users/jeffersonmartin/tutorial-app-jenkins-pipeline
+https://gitlab-core.us.gitlabdemo.cloud/demosys-users/yourname/tutorial-app-jenkins-pipeline
 ```
 
 1. **GitLab Connection** フィールドで、ドロップダウンメニューからまだ選択されていない場合は `GitLab Core US` オプションを選択します。この接続はシステム管理者によって事前に設定されています。
@@ -161,7 +161,7 @@ https://gitlab-core.us.gitlabdemo.cloud/demosys-users/jeffersonmartin/tutorial-a
 
 ```text
 例
-https://gitlab-core.us.gitlabdemo.cloud/demosys-users/jeffersonmartin/tutorial-app-jenkins-pipeline
+https://gitlab-core.us.gitlabdemo.cloud/demosys-users/yourname/tutorial-app-jenkins-pipeline
 ```
 
 > 接続エラーのメッセージが表示される場合があります。これは認証情報が選択されていないため想定される動作です。次の手順でドロップダウンメニューから認証情報を選択してください。
@@ -199,7 +199,7 @@ https://gitlab-core.us.gitlabdemo.cloud/demosys-users/jeffersonmartin/tutorial-a
 
 ```text
 例
-https://gitlab-core.us.gitlabdemo.cloud/demosys-users/jeffersonmartin/tutorial-app-jenkins-pipeline
+https://gitlab-core.us.gitlabdemo.cloud/demosys-users/yourname/tutorial-app-jenkins-pipeline
 ```
 
 1. **GitLab Connection** フィールドで、ドロップダウンメニューからまだ選択されていない場合は `GitLab Core US` オプションを選択します。この接続はシステム管理者によって事前に設定されています。
@@ -212,7 +212,7 @@ https://gitlab-core.us.gitlabdemo.cloud/demosys-users/jeffersonmartin/tutorial-a
 
 ```text
 例
-https://gitlab-core.us.gitlabdemo.cloud/demosys-users/jeffersonmartin/tutorial-app-jenkins-pipeline
+https://gitlab-core.us.gitlabdemo.cloud/demosys-users/yourname/tutorial-app-jenkins-pipeline
 ```
 
 > 接続エラーのメッセージが表示される場合があります。これは認証情報が選択されていないため想定される動作です。次の手順でドロップダウンメニューから認証情報を選択してください。
@@ -274,7 +274,7 @@ https://jenkins.us.gitlabdemo.cloud
 
 ```text
 例
-jeffersonmartin/tutorial-app-jenkins-pipeline
+yourname/tutorial-app-jenkins-pipeline
 ```
 
 1. **Username** フィールドに GitLab のユーザー名を入力します（フォルダ名と同じです）。

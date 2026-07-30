@@ -2,11 +2,11 @@
 title: "データチームプラットフォーム"
 description: "GitLabデータチームプラットフォーム"
 upstream_path: /handbook/enterprise-data/platform/
-upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
-translated_at: "2026-07-24T06:39:10+09:00"
+upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
+translated_at: "2026-07-31T07:45:00+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-23T12:08:18+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## データプラットフォームのビジョン
@@ -738,6 +738,8 @@ Snowflakeのコンピュートリソースは「ウェアハウス」として�
   * 一般的に、並行クエリを実行してもより多くのお金を費やすことはありません。
 
 * Snowflakeのクエリタイムアウトは、`REPORTING` ウェアハウスに対して30分に設定されています。
+
+Permifrost の制限により、MONITOR 権限のみを付与することはできず、チームメンバーには結果として USE アクセスも付与されます。チームメンバーに `transforming_*` ウェアハウスの権限が付与される場合、それは Query Profile へのアクセス/監視目的に限られます。これらのウェアハウスをクエリの実行に使用してはいけません。
 
 ### データストレージ
 

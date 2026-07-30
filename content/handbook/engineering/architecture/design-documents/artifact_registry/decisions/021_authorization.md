@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "Artifact Registry の認可設計"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/021_authorization/
-upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
-lastmod: "2026-07-23T15:34:14+02:00"
-translated_at: "2026-07-23T21:51:15Z"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+lastmod: "2026-07-28T11:36:21+02:00"
+translated_at: "2026-07-31T08:29:15+09:00"
 translator: codex
 stale: false
 ---
@@ -65,7 +65,7 @@ Artifact Registry は**ロールと権限**のモデルを使用します。
 クローズドベータでは、認可は 2 つのメカニズムを使用します。
 
 1. **Namespace ロール割り当て**（[詳細](#role-assignment)） — プリンシパルには namespace 上のロールが割り当てられ、レジストリ内のすべてのリポジトリに継承されるベースラインの権限セットが付与されます。
-2. **加算的なリポジトリオーバーライド**（[詳細](#role-assignment)） — プリンシパルには個別リポジトリ上の追加ロールを割り当てることができ、そこで権限を追加します。クローズドベータではオーバーライドは加算的です。特定リポジトリでアクセスを減らすことは[延期](#reductive-repository-overrides)されます。
+2. **リポジトリロールの割り当て（加算的）**（[詳細](#role-assignment)） — プリンシパルには個別リポジトリ上のロールを直接割り当て、そこで権限を付与します。これは直接的なメンバーシップの関連付けであり、namespace レベルの割り当てを必要としません。クローズドベータのリポジトリレベルの割り当ては加算的です。特定リポジトリでアクセスを制限することは[延期](#reductive-repository-overrides)されます。
 
 これにより関心事が明確に分離されます。auth platform はロール割り当て（relationships）を保存し、ポリシー評価エンジンを提供します。Artifact Registry はロール定義と権限モデルを所有し、同じ場所に配置されたエンジンを通じてすべての判断を行います。
 
@@ -82,7 +82,7 @@ Artifact Registry は、Artifact Registry にスコープされた、プラッ�
 
 これらは**ユーザーロール**であり、プラットフォームの**ユーザータイプ**（例: Organization Administrator または Organization Member）とは異なります。ユーザータイプは Artifact Registry ロールを意味しません。この 2 つは独立して割り当てられます。この区別の背後にあるチーム横断の整合性については、[roles management work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/593455) を参照してください。
 
-ロールが割り当てられていないプリンシパルは、プライベートリポジトリへアクセスできません（デフォルトでは閉じる）。公開リポジトリは割り当てなしでも読み取り可能です。[リポジトリの可視性](#repository-visibility)を参照してください。
+ロールが割り当てられていないプリンシパルはアクセスできません（デフォルトでは閉じる）。クローズドベータではすべてのリポジトリが private であるため、割り当てなしで読み取り可能なものはありません。[リポジトリの可視性](#repository-visibility)を参照してください。
 
 Organization Administrator には、Artifact Admin と同等のフルアクセスが**ブートストラップ**されます（R6）。Organization Administrator は organization レベルの owner relationship、つまり owner と organization を束ねるタプルを持ちます。これは所有者の変更に合わせて継続的に維持されます（[owner role assignments work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/601665)）。ポリシーエンジンは、そのタプルを organization の Artifact Registry namespace とその配下のすべてのリポジトリへの暗黙的アクセスとして扱います。この付与は暗黙的で取り消し不可です。owner であり続ける限り、取り消したりダウングレードしたりできません。これは通常の relationship レコードを通じて流れ、他の割り当てと同じように評価されるため、Artifact Registry 側で特別な処理は不要です。これにより、有効化時に割り当てがまだ存在しなくても、Organization Administrator がリポジトリを作成し、他のユーザーへロールを割り当てられることが保証されます。
 
@@ -132,16 +132,13 @@ Artifact Registry は固定の権限セットを定義します。
 
 ### リポジトリの可視性 {#repository-visibility}
 
-各リポジトリには、public または private の可視性レベルがあり、Artifact Registry データベースに保存されます（[ADR-007: Database Schema](007_database_schema.md) を参照）。可視性は Artifact Registry ネイティブの属性であり、外部エンティティには同期されません。
+各リポジトリには、Artifact Registry データベースに保存される可視性レベルがあります（[ADR-007: Database Schema](007_database_schema.md) を参照）。可視性は Artifact Registry ネイティブの属性であり、外部エンティティには同期されません。
 
-可視性が影響するのは、ベースラインの読み取りアクセスのみです。
+**クローズドベータでは `private` のみをサポートします**: 割り当てられたロールがなければアクセスできません。すべてのリポジトリはデフォルトで閉じられます。読み取りを含むすべての操作に明示的なロール割り当てが必要です。
 
-- **Public**: ロール割り当てが存在しない場合でも、リポジトリの `public` 属性に基づいて公開読み取りが付与されます。そのため、認証されていない呼び出し元を含むすべての呼び出し元がリポジトリとそのアーティファクトを読み取れます。ロールが割り当てられている呼び出し元は、そのロールが付与するものも追加で保持します。
-- **Private**: ロールが割り当てられていない場合、アクセスできません。
+`internal`（organization メンバーが読み取り可能）と `public`（認証されていない呼び出し元を含む誰でも読み取り可能）は、いずれもロールなしで読み取りを許可するため、クローズドベータのスコープから外します。`internal` は organization メンバーシップを通じて、`public` はすべての人に許可します。どちらもデフォルトで閉じる制約を破ります。メンバーシップはアクセスを**付与できる**人を決めるゲートであり、付与そのものではありません。どちらも GA まで延期します。[Public および internal の可視性](#public-and-internal-visibility)を参照してください。
 
 書き込み操作と管理操作は、可視性に関係なく、常に割り当てられたロールから対応する権限を必要とします。
-
-Internal visibility は GA 後のイテレーションに延期されます。クローズドベータでは public と private のみをサポートします。
 
 ### Namespace レベルとリポジトリレベルのリソース
 
@@ -193,22 +190,22 @@ namespace 全体およびリポジトリ内で一覧表示をどのように認�
 ロールは、**2 つのリソースレベル**のいずれか、つまり namespace またはリポジトリで動作し、4 つのロールはいずれもどちらのレベルにも割り当てられます。
 
 - **Namespace（トップレベル）**: ロールはレジストリ全体、つまりすべてのリポジトリに適用されます。たとえば、namespace レベルの Artifact Manager はすべてのリポジトリの manager です。namespace レベルの Artifact Viewer はすべてのリポジトリを読み取れます。これは、管理者が数千人のユーザーへ大規模にアクセスを付与できるようにするベースラインです。Organization Administrator は namespace レベルの Artifact Admin としてブートストラップされます（R6）。
-- **リポジトリ（加算的オーバーライド）**: 単一リポジトリに割り当てられたロールは、そのリポジトリに対するプリンシパルの namespace ロールへ権限を追加します。権限を増やすことだけができ、減らすことはできません。プリンシパルの有効な権限は、namespace レベルとリポジトリレベルの割り当ての**和集合**です。特定リポジトリでアクセスを減らすこと（減算的オーバーライド）は、[クローズドベータから延期](#reductive-repository-overrides)されます。
+- **リポジトリ（直接、加算的）**: 単一リポジトリに割り当てられたロールは、そのリポジトリ上で権限を付与します。これは独立した直接メンバーシップの関連付けであり、namespace レベルの割り当てを必要としません。そのため、プリンシパルには単一リポジトリへのアクセスのみを付与できます。プリンシパルが両レベルでロールを持つ場合、リポジトリ上の有効な権限は 2 つの**和集合**になります。リポジトリレベルの割り当ては権限を増やすことだけができ、減らすことはできません。特定リポジトリでアクセスを制限すること（減算的オーバーライド）は、[クローズドベータから延期](#reductive-repository-overrides)されます。
 
-`create_repository` と `delete_repository` はレジストリ全体に対して作用するため、Artifact Admin ロールは主に namespace レベルの割り当てとして意味を持ちます。リポジトリオーバーライドとして割り当てられても、そのリポジトリに対する Artifact Manager を超える意味のあるものは追加されません。
+`create_repository` と `delete_repository` はレジストリ全体に対して作用するため、Artifact Admin ロールは主に namespace レベルの割り当てとして意味を持ちます。リポジトリレベルで割り当てられても、そのリポジトリに対する Artifact Manager を超える意味のあるものは追加されません。
 
 **各リクエストは 1 つのリソースに対して解決されます。** リクエストは、それが指す単一リソースに対して認可されます。relationships lookup はそのリソースと祖先（リポジトリ → namespace → organization）でフィルタリングされるため、_別の_リポジトリの割り当てが判断に含まれることはありません。オーバーライドは権限を上げるだけなので、有効ロールは該当する中で最上位のものになります。「最も制限的」という解決はありません。これは仮想リポジトリにも含まれます。**仮想リポジトリを経由して**提供されるリクエストは、**その仮想リポジトリ**自体のロールに対して解決される一方、含まれる**ホスト型またはリモートリポジトリ**に割り当てられたロールは、その含まれるリポジトリに**直接**宛てたリクエストを制御します。したがって、仮想リポジトリのロールは、それを経由して提供される集約対象コンテンツへのアクセスを許可します。これは、含まれるリポジトリの割り当てを迂回するものではなく、設計どおりです。
 
 ロール割り当てが Artifact Registry に届く方法は、イテレーションによって異なります。
 
-- **クローズドベータ**: トークンはアイデンティティとコンテキストのみを運びます（認可 claim はありません）。Artifact Registry は同じ場所に配置された relationships API に問い合わせ、**対象リソースでフィルタリング**します。namespace 操作では namespace id と organization id を渡し、リポジトリ操作では repository id、namespace id、organization id を渡します。API はそのリソースとその祖先に対するプリンシパルのロール割り当てを membership tuple として返します。Artifact Registry はそれらのすべてのタプルをポリシーエンジンに渡し、ポリシーエンジンが有効な権限を解決します。オーバーライドは加算的であるため、権限は namespace レベルとリポジトリレベルの割り当ての和集合です（エンジンのネイティブな most-permissive 評価）。Artifact Registry は relationships API のレスポンスを、AR で設定された短い期間（デフォルト 30 秒、最大 60 秒）キャッシュします。キャッシュは relationships API に送られた入力、つまりプリンシパル、操作、対象リソースをキーにします。そのため、キャッシュされた結果が別のプリンシパル、操作、リソースに再利用されることはありません。その結果、取り消しを含む最近のロール割り当て変更は、即時に適用されるのではなく、最大でその時間枠だけ反映に時間がかかる可能性があります。
+- **クローズドベータ**: トークンはアイデンティティとコンテキストのみを運びます（認可 claim はありません）。Artifact Registry は同じ場所に配置された relationships API に問い合わせ、**対象リソースでフィルタリング**します。namespace 操作では namespace id と organization id を渡し、リポジトリ操作では repository id、namespace id、organization id を渡します。API はそのリソースとその祖先に対するプリンシパルのロール割り当てを membership tuple として返します。Artifact Registry はそれらのすべてのタプルをポリシーエンジンに渡し、ポリシーエンジンが有効な権限を解決します。リポジトリレベルの割り当ては加算的であるため、権限は namespace レベルとリポジトリレベルの割り当ての和集合です（エンジンのネイティブな most-permissive 評価）。Artifact Registry は relationships API のレスポンスを、AR で設定された短い期間（デフォルト 30 秒、最大 60 秒）キャッシュします。キャッシュは relationships API に送られた入力、つまりプリンシパル、操作、対象リソースをキーにします。そのため、キャッシュされた結果が別のプリンシパル、操作、リソースに再利用されることはありません。その結果、取り消しを含む最近のロール割り当て変更は、即時に適用されるのではなく、最大でその時間枠だけ反映に時間がかかる可能性があります。
 - **目標状態**: auth platform の enrichment layer がロール割り当てを解決し、enriched token に認可 claim を含めるため、lookup は不要になります。ADR-020 がこの ADR に委ねているそれらの claim の形は、enrichment layer が出荷されるときに定義されます。
 
 ### 認可フロー
 
 認可は認証の後に始まります。Artifact Registry はすでにトークンを検証し、プリンシパルを確立しています（[ADR-020](020_authentication_flow.md)）。次に、relationships API からプリンシパルのロール割り当てを取得し、同じ場所に配置されたポリシーエンジンサイドカーに要求されたアクションの評価を依頼し、GitLab インスタンスへコールバックせずに判断を返します。
 
-下記のフローは、認証済みプリンシパルを前提としています。認証されていないリクエストにはトークンがありません。公開リポジトリでは、リポジトリの `public` 属性に基づいて読み取りが許可され、非公開リポジトリでは拒否されます。[リポジトリの可視性](#repository-visibility)を参照してください。
+下記のフローは、認証済みプリンシパルを前提としています。認証されていないリクエストにはトークンがなく、拒否されます。クローズドベータには public リポジトリがありません（[リポジトリの可視性](#repository-visibility)を参照）。
 
 ```mermaid
 sequenceDiagram
@@ -244,24 +241,28 @@ sequenceDiagram
 
 一覧は一度に多くのリソースにまたがるため、上記の単一リソース評価には当てはまりません。
 
-**リポジトリ一覧（namespace スコープ）。** Artifact Registry は、リポジトリごとに 1 回ずつ確認するのではなく、単一の namespace レベルチェックでこれを判断します。
+**リポジトリ一覧（namespace スコープ）。** Artifact Registry は、リポジトリごとに 1 回ずつポリシーチェックを行うのではなく、プリンシパルのロール割り当てからこれを判断します。
 
 - **任意の namespace レベルロール**を持つプリンシパルは、その namespace 内の**すべての**リポジトリを一覧表示できます。すべてのロールは `read_repository` を含むため、これは「プリンシパルが namespace でロールを持っているか」に単純化されます。その後、Artifact Registry は自身のデータベースからリポジトリを列挙します。
-- **namespace レベルロールを持たない**プリンシパル（認証されていない呼び出し元を含む）には、各リポジトリの `public` 属性から解決される**公開リポジトリのみ**が見えます。
+- **namespace レベルロールを持たない**プリンシパルには、**リポジトリレベルの割り当て**を持つリポジトリのみが見えます。クローズドベータには、ロールなしで読み取りを許可する可視性レベルがありません（[リポジトリの可視性](#repository-visibility)を参照）。直接割り当てはリポジトリごとの評価を通じて解決されます。Artifact Registry は relationships API からリポジトリの tuple を取得し、割り当てが `read_repository` を提供する場合にポリシーエンジンが許可します。
 
 レジストリ全体の統計の表示も同じように機能します。これは単一リポジトリではなくレジストリ全体を要約するため、namespace レベルロールが必要です。
 
 **リポジトリ内の一覧（リポジトリスコープ）。** リポジトリのコンテンツまたはサブリソースを閲覧することは単一リポジトリを対象とするため、そのリポジトリに対する通常のポイントチェックです。アーティファクト/コンテンツ一覧（tag、version、file）には `read_artifact` が必要です。リポジトリ詳細、リポジトリ単位の統計、upstream リストには `read_repository` が必要です。
 
-すべての場合において、プリンシパルが読み取れないリソースは拒否されるのではなく結果から省略されます。空または部分的な一覧になり、エラーも、隠されたリソースが存在することを示す情報もありません。これによりメタデータ漏えいを防ぎます。
+すべての場合において、プリンシパルが読み取れないリソースは拒否されるのではなく結果から省略されます。空または部分的な一覧になり、エラーも、隠されたリソースが存在することを示す情報もありません。これによりメタデータ漏えいを防ぎます。これはランディング時の体験でもあります。レジストリのナビゲーションエントリは権限チェックでゲートされません（[ADR-014](014_frontend_to_artifact_registry.md)）。organization に対して Artifact Registry が有効であることなど、他のゲートは引き続き適用されます。そのため、アクセス権のないプリンシパルはリポジトリ一覧に到達し、空の一覧を見ます。
 
 ## 後続イテレーションへ延期 {#deferred-to-later-iterations}
 
 次の機能は、意図的にクローズドベータのスコープ外です。設計を記録に残すためここに文書化しており、クローズドベータの顧客需要に基づいて再検討します。
 
+### Public および internal の可視性 {#public-and-internal-visibility}
+
+クローズドベータでは `private` の可視性のみをサポートします（[リポジトリの可視性](#repository-visibility)を参照）。`public`（認証されていない呼び出し元を含む誰でも読み取り可能）と `internal`（organization メンバーが読み取り可能）を再導入するには、デフォルトで閉じたまま広範な読み取りアクセスをどう付与するかについて、追加の検討が必要です。まだ決定されていないため、どちらも GA まで延期します。
+
 ### 減算的リポジトリオーバーライド {#reductive-repository-overrides}
 
-クローズドベータでは、**加算的（引き上げのみ）**のリポジトリオーバーライドをサポートします。リポジトリレベルの割り当てはそのリポジトリ上で権限を追加するだけであり、Artifact Registry は namespace とリポジトリの割り当ての和集合を付与します（[ロール割り当て](#role-assignment)を参照）。
+クローズドベータのリポジトリレベルの割り当ては、**加算的（引き上げのみ）**です。リポジトリ上の権限を追加するだけであり、Artifact Registry は namespace レベルとリポジトリレベルの割り当ての和集合を付与します（[ロール割り当て](#role-assignment)を参照）。
 
 特定リポジトリ上でプリンシパルのアクセスを下げること（減算的オーバーライド）はスコープ外です。これは、GitLab 全体で機能しているロール継承と衝突するためです。namespace レベルの割り当てはすべてのリポジトリへ伝播します。これが追加される場合、Artifact Registry は namespace レベルとリポジトリレベルの両方でプリンシパルの権限を読み取り、それらの和集合を取るのではなく、リポジトリレベルが完全に優先されるようにして、アクセスを_引き上げる_ことも_引き下げる_こともできるようにすることで優先順位を解決します。
 
@@ -282,7 +283,6 @@ sequenceDiagram
 1. **プラットフォームの方向性と一致している。** Artifact Registry は独自の認可システムを構築するのではなく、auth platform の relationships API とポリシー評価エンジン（R4、R5）を利用し、統合の方向性と一致します。
 1. **同じ場所に配置された評価。** ロール割り当てが利用可能になると（クローズドベータでは解決され、目標状態では enriched token に含まれる）、権限判断は GitLab インスタンスへコールバックせず、同じ場所に配置されたサービスを通じて行われます。
 1. **関心事の明確な分離。** アイデンティティは ADR-020 で確立されます。この ADR はプリンシパルが何を実行できるかに答えます。auth platform は割り当てを保存し、Artifact Registry はロールと権限モデルを所有します。
-1. **デフォルトでセキュア。** プラットフォームメンバーシップからの継承がなく、デフォルトで閉じたアクセスは、明示的に割り当てられた場合にのみアクセスが付与されることを意味し、エンタープライズ顧客が重視するものです。
 1. **権限モデルが維持され、移植しやすい。** 独立した権限バケットとしてのロールは、ポリシーエンジンの「deny overrides」モデルに一致し、将来の移行作業を最小化します。
 
 ### ネガティブ
@@ -290,7 +290,7 @@ sequenceDiagram
 1. **クローズドベータのロール解決。** enrichment layer が出荷されるまで、Artifact Registry はトークンから claim を読むのではなく、relationships API に問い合わせてロール割り当てを自ら解決します。これはより複雑です。
 1. **オンボーディングの負荷。** デフォルトで閉じるには明示的なロール割り当てが必要であり、管理作業が増えます。これは Organizations UI の一括割り当てワークフローによって緩和されます。
 1. **ロール増殖の可能性。** プロダクト固有ロールは時間とともに大きなリストへ増える可能性があります。これは [roles management work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/593455) の north star に従い、スケーリングメカニズムとして Teams と group template によって緩和されます。
-1. **クローズドベータではリポジトリごとの引き締めがない。** アクセスルールや減算的オーバーライドがない場合、管理権限はレジストリ全体で保持され、プリンシパルのアクセスはリポジトリ上で引き上げることだけができ、引き下げることはできません。どちらも[延期](#deferred-to-later-iterations)され、顧客需要に基づいて再検討されます。
+1. **クローズドベータではリポジトリごとの引き締めがない。** アクセスルールや減算的オーバーライドがない場合、プリンシパルのアクセスはリポジトリ上で引き上げることだけができ、引き下げることはできません。namespace レベルの割り当ては例外を切り出す方法なくすべてのリポジトリに到達します。どちらも[延期](#deferred-to-later-iterations)され、顧客需要に基づいて再検討されます。
 
 ## 検討した代替案
 
@@ -321,7 +321,7 @@ Artifact Registry は、auth platform に依存せず、独自のユーザー・
 - [ADR-020: Authentication Flow](020_authentication_flow.md) — アイデンティティの確立とトークン検証
 - [ADR-022: Namespace Decoupling](022_namespace_decoupling.md)
 - [Artifact Registry and Auth Platform interface agreement](../agreements/auth.md) — ここで扱う R4–R6（認可）要件
-- [Relationships API](https://gitlab.com/gitlab-org/auth/iam/-/blob/main/docs/relationships-api.md) — IAM relationships API contract。クローズドベータでは、リソースとその祖先に対する直接 relationship tuple を返し、ポリシーエンジンがそれを和集合（加算的オーバーライド）として評価します
+- [Relationships API](https://gitlab.com/gitlab-org/auth/iam/-/blob/main/docs/relationships-api.md) — IAM relationships API contract。クローズドベータでは、リソースとその祖先に対する直接 relationship tuple を返し、ポリシーエンジンがそれを和集合（加算的なリポジトリレベル割り当て）として評価します
 - [GitLab permission conventions](https://docs.gitlab.com/ee/development/permissions/conventions.html) — これらの権限が従う命名規則と CRUD 分解ルール
 - [Roles management and Artifact Registry onboarding](https://gitlab.com/gitlab-org/gitlab/-/work_items/593455) — プロダクト固有ロール、デフォルトで閉じる、3 部構成モデル
 - [GATE Design Document](https://gitlab.com/gitlab-org/architecture/auth-architecture/design-doc/-/blob/main/design.md) — GitLab Adaptive Trust Environment

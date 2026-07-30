@@ -2,11 +2,11 @@
 title: Auto DevOps
 description: "Auto DevOps はDevOps ベストプラクティスの自動適用を可能にするテクノロジーです。"
 upstream_path: /handbook/engineering/devops/runner/environments/autodevops/
-upstream_sha: 1065c86ab1ba75adefbb07560d726608885e6d4e
-translated_at: "2026-04-28T13:32:34Z"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:19:21+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-02T07:33:04-05:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 現在のエンドツーエンドテスト
@@ -53,7 +53,7 @@ qa ディレクトリの [`qa/specs/features/browser_ui/7_configure`](https://gi
 [オーケストレーション](https://gitlab.com/gitlab-org/gitlab-qa/-/blob/master/docs/what_tests_can_be_run.md#orchestrated-tests) を実行するには `gitlab-qa Test::Instance::Image EE -- qa/specs/features/browser_ui/7_configure/auto_devops/create_project_with_auto_devops_spec.rb --tag orchestrated --tag kubernetes`。
 
 `auto_devops_templates_spec.rb` テストを実行するには、環境変数の設定に関する[これらの手順](https://gitlab.com/gitlab-org/gitlab-qa/-/blob/master/docs/what_tests_can_be_run.md#testinstancestaging)に従って [staging](https://staging.gitlab.com/) 環境に対してテストを実行することが最も簡単です。
-注意: 1password の "QA Vault" へのアクセスが必要です。アクセスが必要な場合は、[こちら](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request)から個人アクセスリクエストを記入できます。
+注意: 1password の "QA Vault" へのアクセスが必要です。アクセスが必要な場合は、[こちら](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)から個人アクセスリクエストを記入できます。
 
 例: [オーケストレーション](https://gitlab.com/gitlab-org/gitlab-qa/-/blob/master/docs/what_tests_can_be_run.md#orchestrated-tests) を実行するには `gitlab-qa Test::Instance::Staging -- qa/specs/features/browser_ui/7_configure/auto_devops/auto_devops_templates_spec.rb`（隔離されたテストを実行するには `--tag quarantine` を追加してください）。
 

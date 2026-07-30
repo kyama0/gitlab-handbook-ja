@@ -2,11 +2,11 @@
 title: "グループレベルの Kubernetes クラスターで GitLab を設定する"
 description: "Google Kubernetes クラスターで GitLab を設定する方法"
 upstream_path: /handbook/customer-success/demo-systems/tutorials/getting-started/configuring-group-cluster/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T02:17:48Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:40:38+09:00"
+translator: codex
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -40,7 +40,7 @@ GCP プロジェクトへのアクセスについての追加サポートは、[
 
 3. まだサインインしていない場合は、GitLab のメールアカウントでサインインしてください。
 
-4. 青いトップナビゲーションバーで、`Google Cloud Platform` タイトルの*右側*のドロップダウンメニューを見つけます。これはアクセス権を持つプロジェクト（認証レルム）です。プロジェクト（例：`jmartin-xxxxxxxx`）が選択されていることを確認してください。
+4. 青いトップナビゲーションバーで、`Google Cloud Platform` タイトルの*右側*のドロップダウンメニューを見つけます。これはアクセス権を持つプロジェクト（認証レルム）です。プロジェクト（例：`yourname-xxxxxxxx`）が選択されていることを確認してください。
 
 5. 青いトップナビゲーションバーで、`Google Cloud Platform` タイトルの*左側*のハンバーガーメニューアイコンを見つけてクリックします。Google Cloud Platform で利用可能なすべてのサービスが表示されます。**コンピューティング** セクションで **Kubernetes Engine** または **Kubernetes Engine > クラスター** をクリックします。
 
@@ -58,7 +58,7 @@ GCP プロジェクトへのアクセスについての追加サポートは、[
 
 8. *左側*のメニューで以下のセクションをクリックしてクラスターを設定します:
 
-   - **クラスターの基本**: クラスター名（例：`jmartin-cluster`）を指定し、「ロケーションタイプ」として **ゾーン** を選択します。
+   - **クラスターの基本**: クラスター名（例：`yourname-cluster`）を指定し、「ロケーションタイプ」として **ゾーン** を選択します。
 
      <img src="https://storage.googleapis.com/gitlab-demosys-docs-assets/tutorials/getting-started/configuring-group-cluster-23.png"  style="width: 75%" alt=""/>
 
@@ -80,7 +80,7 @@ GCP プロジェクトへのアクセスについての追加サポートは、[
 
 1. 一時参照のために値をコピー&ペーストできるよう、テキストエディターで新しいファイルを作成します。
 
-1. クラスターのダッシュボード上部にあるクラスター名をテキストファイルにコピー&ペーストします（例：`jmartin-cluster`）。
+1. クラスターのダッシュボード上部にあるクラスター名をテキストファイルにコピー&ペーストします（例：`yourname-cluster`）。
 
 1. GCP コンソールのクラスターダッシュボードのブラウザで、エンドポイント（IP アドレス値）の隣にある **認証情報を表示** リンクを見つけてクリックします。
 
@@ -109,12 +109,12 @@ GCP プロジェクトへのアクセスについての追加サポートは、[
 1. Cloud Shell ターミナルが表示されると、最初の行にはロールベースのアクセス制御（RBAC）を使用してクラスターの資格情報を取得するコマンドが事前入力されています。**単に ENTER キーを押してください。**
 
    ```console
-   jmartin@cloudshell:~ (jmartin-xxxxxxxx)$ gcloud container clusters get-credentials jmartin-cluster --zone us-central1-c --project jmartin-xxxxxxxx
+   yourname@cloudshell:~ (yourname-xxxxxxxx)$ gcloud container clusters get-credentials yourname-cluster --zone us-central1-c --project yourname-xxxxxxxx
    ```
 
    ```text
    Fetching cluster endpoint and auth data.
-   kubeconfig entry generated for demosys-us-jmartin-cluster.
+   kubeconfig entry generated for demosys-us-yourname-cluster.
    ```
 
    上記の例に示す出力が表示されない場合は、GCP アカウントに権限の問題がある可能性があり、`#demo-systems` チームにサポートを依頼してください。
@@ -197,7 +197,7 @@ GitLab Omnibus インスタンスへのアクセス方法は、[デモシステ�
 
 管理セクションからではなく、必ず独自のグループ内でクラスターを設定することが重要です。管理セクションで変更を行うと、チーム全体に影響が出る破壊的変更になります。デモ目的でアカウントに付与されている管理者権限には十分注意してください。
 
-1. グループ（例：`Jeff Martin`）の左側サイドバーで **Kubernetes** を見つけてクリックします。
+1. グループ（例：`Your Name`）の左側サイドバーで **Kubernetes** を見つけてクリックします。
 
 1. Kubernetes ページには利用可能なクラスターの一覧が表示されます。グループクラスターを追加していない場合は、インスタンスクラスターのみが表示されます。
 
@@ -210,7 +210,7 @@ GitLab Omnibus インスタンスへのアクセス方法は、[デモシステ�
 1. フォームフィールドに以下の値を使用し、テキストエディターから適切な値をコピー&ペーストします。
 
    ```text
-   Kubernetes クラスター名:     （コピー&ペースト — 例：jmartin-cluster）
+   Kubernetes クラスター名:     （コピー&ペースト — 例：yourname-cluster）
    環境スコープ:                 *
    API URL:                     （コピー&ペースト — 例：https://35.239.222.203）
    CA 証明書:                   （コピー&ペースト）

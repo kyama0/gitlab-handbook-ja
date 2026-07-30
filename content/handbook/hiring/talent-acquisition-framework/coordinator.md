@@ -2,11 +2,11 @@
 title: "Candidate Experience Specialistの責務"
 description: "このページでは、Candidate Experience チームが担当するプロセスとシステムの概要を説明します。"
 upstream_path: "/handbook/hiring/talent-acquisition-framework/coordinator/"
-upstream_sha: "fe88192cad67a795a237396e552566cb08c118b9"
-translated_at: "2026-04-29T08:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:39:44+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-12T10:48:57-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 CESチームは、[GitLab Service Desk](https://docs.gitlab.com/ee/user/project/service_desk/) と ModernLoop を活用して、CESチームへのすべての受信リクエストを追跡します。GitLab チームメンバーで Candidate Experience チームへのリクエストや質問がある場合は、`ces@gitlab.com` にメールを送ると、CES Service Desk 内に自動的に Issue が作成されます。どの CES チームメンバーがあなたのリクエストを担当するかについては、[アライメントページ](/handbook/hiring/)をご覧ください。私たちのチームはインタビューのスケジューリングに ModernLoop を活用しており、既存のカレンダーや ATS とシームレスに連携しています。
@@ -400,7 +400,7 @@ GitLab はリファレンスを取得し、雇用確認とともに犯罪[記録
 1. CES は Greenhouse で候補者を「Hired」にします：*プロンプトが表示されたら、採用要件をクローズするオプションを選択してください。* 新入社員の Workday プロフィールが自動的に生成されます。
 1. Candidate Experience Specialist は Greenhouse から IT Ops、ハイリングマネージャー、採用担当者を CC にして新しいチームメンバーにウェルカムメールを送ります。候補者の場所とラップトップを自分で調達する必要があるかどうかに基づいて適切なウェルカムメールを送ります。
 
-   - このメールには[ラップトップ注文プロセス](/handbook/security/corporate/end-user-services/laptop-management/laptop-ordering//)に関する手順が含まれています。
+   - このメールには[ラップトップ注文プロセス](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering//)に関する手順が含まれています。
 
 1. ウェルカムメールを送った後に開始日が変更された場合は、[こちら](/handbook/hiring/)の必要な手順を参照してください。
 1. 開始日とオンボーディング日の整合の例外: 新しいチームメンバーが法的な理由（雇用の断絶を防ぐため）で特定の開始日を必要とするが、その特定の日（公共の祝日、Family & Friends Day などのため）にオンボーディングが制限されている場合、Candidate Experience Specialist はプライベート Slack チャンネル `people-connect_ces` で People Connect チームに通知できます。コントラクト、Greenhouse、Workday は実際のオンボーディング日に関わらず、同じ開始日を反映する必要があります。

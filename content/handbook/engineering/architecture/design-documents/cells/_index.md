@@ -10,11 +10,11 @@ participating-stages: []
 toc_hide: true
 no_list: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-translated_at: "2026-07-14T06:42:18+09:00"
-translator: "claude"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:29:15+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-13T10:55:12+12:00"
+lastmod: "2026-07-29T15:19:52-04:00"
 ---
 
 
@@ -303,6 +303,7 @@ Tenant Scale チームは、Cells のデプロイメントの基盤として Git
 - [ADR 025: Separate Cloudflare Worker for /api/v4/jobs/request endpoint](decisions/025_separate_worker_for_jobs_request_endpoint.md)
 - [ADR 026: Using Hono for HTTP Router Path-Based Routing](decisions/026_hono_for_http_router.md)
 - [ADR 027: Cross-Cloud Dependency Allow-List](decisions/027_cross_cloud_dependency_allow_list.md)
+- [ADR 028: Observability Federation](decisions/028_observability_federation.md)
 
 ## リンク
 

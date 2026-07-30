@@ -1,11 +1,11 @@
 ---
 title: "クラウドコスト最適化チーム"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T01:48:37Z"
+upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
+translated_at: "2026-07-31T08:13:25+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-07-28T09:36:21+02:00"
 ---
 
 [クラウドコスト最適化機能](../../../../../job-description-library/engineering/infrastructure/site-reliability-engineer#finops)は、サイトリライアビリティエンジニアリング（SRE）とソフトウェアエンジニアリング（SWE）の両方の経験を持ち、これらのスキルを活用してクラウドサービスとデータリソースの財務運営を最適化します。この技術的専門知識により、財務目標との整合を確保するだけでなく、スケールでの運用効率を推進できます。クラウドのコスト構造、インフラストラクチャ、データ管理、および自動化に対するチームの深い理解により、コスト配分から詳細な分析まで、クラウド消費のライフサイクル全体を管理しながら、現代のクラウド環境で求められる高い信頼性とパフォーマンスの基準を維持しています。
@@ -92,3 +92,9 @@ DM やアドホックなリクエストは重複した作業や文脈の見落�
 - **FP&A:** 財務予測のためのコストインサイトと分析を提供します。
 - **データチーム（PDI & AI）:** ステークホルダーから必要なデータがデータウェアハウスに存在するよう共同作業を行います。これにより構造が確保され、運用ニーズと財務ニーズの両方に合致します。
 - **エンジニアリングとインフラストラクチャ:** エンジニアリングチームと緊密に連携してリソース利用状況を分析し、クラウドインフラストラクチャのコスト削減機会を特定します。
+
+## レポーティング
+
+1. **FinOps Exec Overview** — Sybe（@stigchelaar）を直接支援する、クラウドコストのエグゼクティブレベルのビューです。[ソースリポジトリ](https://gitlab.com/gitlab-com/gl-infra/finops/executive-overview)
+1. **CCU レポート** — Grafana のクラウドコストレポートです。[Cloud Cost Utilization フォルダ](https://dashboards.gitlab.net/dashboards/f/cloud-cost-utilization/cloud-cost-utilization)
+1. **クラウドコストデータモデル** — FOCUS ベースのクラウドコストデータモデルは、[sqlmesh-catalog の cloud_cost カタログ](https://gitlab-com.gitlab.io/gl-infra/data/sqlmesh-catalog/catalog/cloud_cost/)で確認できます。

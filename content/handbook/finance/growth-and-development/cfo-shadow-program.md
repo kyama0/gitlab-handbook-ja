@@ -1,11 +1,11 @@
 ---
 title: CFO シャドープログラム
 upstream_path: /handbook/finance/growth-and-development/cfo-shadow-program/
-upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
-translated_at: "2026-04-29T18:40:41Z"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:50:17+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-28T09:37:14+01:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -68,7 +68,7 @@ CFO の [Staff EBA](/handbook/eba/#e-group-member-ebas) とのコールをスケ
 ## ミーティング
 
 1. CFO のスタッフ エグゼクティブビジネスアドミニストレーターが、参加可能なすべてのミーティングに追加します。シャドーが参加しないミーティングやイベントもあります。すべてのミーティングへの参加を義務と感じる必要はありません — すべてのミーティングは任意参加です。
-1. リマインダーとして、Zoom の名前の一部として肩書きを更新してください。シャドーローテーション中は肩書きを「CFO Shadow」に更新します。Zoom でのプロフィールの肩書き更新方法については[こちら](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-additional-config/#customize-your-zoom-profile)をご参照ください。
+1. リマインダーとして、Zoom の名前の一部として肩書きを更新してください。シャドーローテーション中は肩書きを「CFO Shadow」に更新します。Zoom でのプロフィールの肩書き更新方法については[こちら](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-additional-config/#customize-your-zoom-profile)をご参照ください。
 1. GitLab 外部の人とのミーティングは Zoom でない場合があります。コールの前に CFO のカレンダーを確認し、必要な他の会議プログラムを起動してください。音声会議への電話での参加が必要な場合もあります。リンクの確認に問題がある場合は、`#cfo-shadow` Slack チャンネルにご連絡ください。
 
 ### ミーティングに関するその他のメモ

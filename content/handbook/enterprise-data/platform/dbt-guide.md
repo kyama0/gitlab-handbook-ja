@@ -3,9 +3,9 @@ title: "dbt ガイド"
 description: "data build tool (dbt) ガイド"
 math: true
 upstream_path: /handbook/enterprise-data/platform/dbt-guide/
-upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
-lastmod: "2026-06-05T08:41:51-06:00"
-translated_at: "2026-06-06T12:00:00Z"
+upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
+lastmod: "2026-07-28T15:04:15+01:00"
+translated_at: "2026-07-31T07:45:00+09:00"
 translator: claude
 stale: false
 ---
@@ -47,7 +47,7 @@ dbt の基礎についてのさらに詳しい情報は、[data analyst onboardi
 
 dbt の使用に興味がある場合、[dbt のドキュメントには優れたチュートリアル](https://docs.getdbt.com/docs/get-started-dbt)があり、Jaffle Shop という架空のビジネスのデータを扱えるようにセットアップする方法を学べます。
 
-dbt を使ってデータチームのプロジェクトに貢献したい場合は、私たちの Snowflake インスタンスへのアクセス権を取得する必要があります。これは[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を通じて行えます。
+dbt を使ってデータチームのプロジェクトに貢献したい場合は、私たちの Snowflake インスタンスへのアクセス権を取得する必要があります。これは[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を通じて行えます。
 
 ### ローカル環境 {#local-environment}
 

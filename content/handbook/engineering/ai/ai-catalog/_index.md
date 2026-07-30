@@ -2,9 +2,9 @@
 title: AI Catalog グループ
 description: "AI Catalog グループは、組織、グループ、プロジェクトをまたいで作成、キュレーション、共有できるエージェント、ツール、フローのカタログである AI Catalog の開発に注力しています。"
 upstream_path: /handbook/engineering/ai/ai-catalog/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: 2026-07-07T12:09:18+01:00
-translated_at: "2026-07-10T20:32:43+09:00"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+lastmod: "2026-07-30T15:29:14+01:00"
+translated_at: "2026-07-31T08:29:15+09:00"
 translator: codex
 stale: false
 ---
@@ -15,9 +15,7 @@ AI Catalog グループは、組織、グループ、プロジェクトをまた
 
 ## チームメンバー
 
-**エンジニアリングマネージャーおよびエンジニア**
-
-{{< team-by-manager-slug "sam-beckham" >}}
+{{% product/section-group-table "AI Catalog" %}}
 
 ## 連絡方法
 
@@ -115,7 +113,7 @@ AI Catalog のほとんどの機能は Workflow Service 内で新しい機能を
 #### 主要な Agent Foundations の連絡先
 
 | チームメンバー | 専門領域 |
-| ---      | ---     |
+| --- | --- |
 | [Mikołaj Wawrzyniak](https://gitlab.com/mikolaj_wawrzyniak) | Workflow Service アーキテクチャ |
 | [Frédéric Caplette](https://gitlab.com/f_caplette) | クライアントサイドの実装 |
 | [Dylan Griffith](https://gitlab.com/DylanGriffith) | Workflow Executor アーキテクチャ: リモート実行環境とランナーの実装 |
@@ -127,10 +125,17 @@ AI Catalog のほとんどの機能は Workflow Service 内で新しい機能を
 
 私たちは GitLab の[プロダクトマイルストーン](/handbook/product/product-processes/milestones/)に合わせて作業を計画し、整合させます。マイルストーンの計画は、次のマイルストーンが始まる前の週に行われます。
 
-### ~Deliverable ラベル
+### ~Deliverable と ~Stretch ラベル
 
-`~Deliverable` ラベルは、チームが特定のマイルストーン内で提供することをコミットした Issue を識別するために使用されます。
-このラベルは複数の目的を果たします。
+マイルストーンに割り当てられたすべての Issue は、トリアージされ、`~Deliverable` または `~Stretch` のいずれかのラベルが付けられます。
+これらのラベルは Issue にのみ適用されます。エピックには `~Deliverable` または `~Stretch` を付けてはいけません
+（[マイルストーン内のエピック](#epics-in-a-milestone)を参照）。
+
+* `~Deliverable`: チームがマイルストーン内に完了することをコミットした作業です。これらの Issue には[重み](#weighting)が必要です。
+* `~Stretch`: トリアージ済みですがコミットされていない作業です。すべての
+  `~Deliverable` Issue が完了したら、Stretch Issue を取り上げます（[優先順位付け](#prioritization)を参照）。
+
+`~Deliverable` ラベルは複数の目的を果たします。
 
 * **コミットメントのシグナル**: この作業をマイルストーン内で完了する意図があることを、ステークホルダーやお客様に伝える
 * **優先順位付け**: チームメンバーがどの Issue に最初に取り組むべきかを識別するのを助ける
@@ -138,26 +143,43 @@ AI Catalog のほとんどの機能は Workflow Service 内で新しい機能を
 
 #### 誰がいつ適用するか
 
-エンジニアリングマネージャーは、マイルストーンが始まる前の計画プロセス中に `~Deliverable` ラベルを適用します。
+エンジニアリングマネージャーは、マイルストーンが始まる前の計画プロセス中に `~Deliverable` と `~Stretch` のラベルを適用します。
 この決定は、以下に基づいて Product Manager と協力して行われます。
 
 * マイルストーンのチームのキャパシティ
 * Issue の見積もりと複雑さ
 * 戦略的な優先事項とお客様へのコミットメント
 
-#### 優先順位付け
+### マイルストーン内のエピック
+
+エピックには `~Deliverable` または `~Stretch` を付けません。これらのラベルは Issue にのみ適用されます。
+
+* 現在のマイルストーンにコミットされたエピックには、そのマイルストーンにもコミットされた Issue のみを含める必要があります。
+* エピックが単一のマイルストーンより大きい場合は、各イテレーションがマイルストーンに収まるよう、サブエピック（イテレーション 1、2 など）に分解する必要があります。
+
+### 優先順位付け
 
 `~Deliverable` ラベルが付いた Issue は、マイルストーン内の他の作業よりも優先されます。
 チームメンバーは以下を行うべきです。
 
 1. まず、現在のマイルストーンでアサインされた `~Deliverable` の Issue に取り組む
-2. すべての `~Deliverable` の Issue が完了またはブロックされている場合、マイルストーンから他の Issue を取り上げる
+2. すべての `~Deliverable` の Issue が完了またはブロックされている場合、マイルストーンから `~Stretch` の Issue を取り上げる
 3. 優先順位が不明確な場合、または `~Deliverable` の Issue の優先度を下げる必要がある場合は、エンジニアリングマネージャーに相談する
 
 **マイルストーン中:**
 
 * `~Deliverable` の Issue がブロックされたり完了できなくなったりした場合は、`#g_ai_catalog` または関連する Issue で早めに伝える
-* エンジニアリングマネージャーは、優先順位やキャパシティの変化に基づいて、マイルストーン中に `~Deliverable` ラベルを調整する場合があります
+* エンジニアリングマネージャーは、優先順位やキャパシティの変化に基づいて、マイルストーン中に `~Deliverable` と `~Stretch` のラベルを調整する場合があります
+
+### 重み付け
+
+Issue はフィボナッチ数列（0、1、2、3、5、8+）を使用して重み付けされます。
+
+* **重み 1:** 不確実性が最小限の単純な Issue（新規コントリビューターに適しています）
+* **重み 2:** 複数のコード/テスト更新を必要とする、直接的な Issue
+* **重み 3:** ある程度の複雑さがあるものの、スコープを管理できる大きめの Issue
+* **重み 5:** 通常は分解する必要があります
+* **重み 8+:** 分解が必要であることを示すプレースホルダーの重み。即時実装には大きすぎるか、不確実性が高すぎます
 
 ### 私たちの技術スタック
 

@@ -2,11 +2,11 @@
 title: "DevOps ソリューションリソース: DevSecOps"
 description: "GitLab が DevSecOps ソリューションをどのように実現するか、メッセージングや、マーケティングと営業を支援する主要リソースを含めて解説します。"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:15:26+09:00"
+translator: codex
 stale: false
-lastmod: "2025-01-07T16:47:36-08:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 **GitLab の DevSecOps 機能の顧客向け概要をお探しですか？ [DevSecOps Solution](https://about.gitlab.com/solutions/security-compliance/) をご覧ください**
@@ -55,7 +55,7 @@ DevSecOps は CI パイプライン内に自動セキュリティスキャンと
 
 開発者はセキュリティを気にしてはいるものの、セキュリティの専門家になりたくはありません。セキュアなコードを書く主な動機は、個人的・職業的な評判を守ることです。自身が書いた脆弱なコードによって会社を倒すような人にはなりたくないのです。同時に、彼らは主にユーザー要件を満たすコードを素早く出すことを目標とされています。多くの場合、彼らはセキュリティ欠陥で評価されません。セキュリティは必要悪のように感じられることがあります。コンテキストスイッチなしにワークフローに収まるツールが最も受け入れられます。GitLab がコードコミット時に脆弱性をレポートして提供する明瞭性は役立ちます。
 
-**[Amy アプリケーションセキュリティエンジニア](/handbook/product/personas/#amy-application-security-engineer)** は GitLab を主に Security Dashboard と脆弱性レポートで利用します
+**[Amy アプリケーションセキュリティエンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#amy-application-security-engineer)** は GitLab を主に Security Dashboard と脆弱性レポートで利用します
 
 セキュリティ専門家はエンタープライズ／機関のリスク管理を最も気にします。プロセス改善の領域を探してプロセスを広く見て、リスクを低減し繰り返しのミスを避けます。リスクを気にするため、未解決の脆弱性、その重大度、修復状況を特定したいと考えています。時系列の傾向や集計改善を気にします。多くの場合、彼らの指標は平均修復時間です。セキュリティ担当者自身がソフトウェアセキュリティ欠陥を修復できることはまれで、開発者に依存することが多いです。この目標の不一致は、グループ間の対立の原因となることがよくあります。SDLC の最後にテストが行われる従来のアプリセキュリティ環境では、彼らは脆弱性ステータスの追跡・レポート、結果の精査、開発チームへのトリアージに多くの時間を費やすかもしれません。開発がより自動化されている場所では、ポリシーの設定とツールによるその適用に集中できる場合があります。多くの場合、新たな Critical／High 脆弱性が本番に入ることを避けたいと考え、これを徹底するためにビルドを失敗させることを好みます。
 

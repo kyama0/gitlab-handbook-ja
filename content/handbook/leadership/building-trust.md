@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/leadership/building-trust/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:39:44+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-30T16:58:50+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## はじめに
@@ -120,7 +120,7 @@ GitLab の共同創業者であるSid Sijbrandijは、彼が特定した信頼�
 
 ### Zoom 背景アイスブレーカー
 
-[任意の背景画像](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-tips/#virtual-backgrounds) を選んでアップロードする Zoom 機能は、アイスブレーカーに使う楽しいツールです。マネージャーはチームに、お気に入りのバケーション先や、いつか訪れたい場所などをバックグラウンドにしてミーティングに来るよう依頼できます。通話を楽しくし、団結を構築できる優れた機能です。ミーティングの最初の5分間を Zoom 背景について話し、ミーティングの全員に発言の機会を与えてみましょう。
+[任意の背景画像](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-tips/#virtual-backgrounds) を選んでアップロードする Zoom 機能は、アイスブレーカーに使う楽しいツールです。マネージャーはチームに、お気に入りのバケーション先や、いつか訪れたい場所などをバックグラウンドにしてミーティングに来るよう依頼できます。通話を楽しくし、団結を構築できる優れた機能です。ミーティングの最初の5分間を Zoom 背景について話し、ミーティングの全員に発言の機会を与えてみましょう。
 
 私たちのマネージャーの一人は、Zoom 背景アイスブレーカーについてこう語っています:
 

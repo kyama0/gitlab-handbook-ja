@@ -1,11 +1,11 @@
 ---
 title: "GitLab.com サブスクリプション"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions/
-upstream_sha: 072f834e2cd849e6ac3cfa985e4eb1249dd62cd6
-translated_at: "2026-04-30T12:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:39:44+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## GitLab.com サブスクリプションの仕組み
@@ -42,7 +42,7 @@ GitLab.com のサブスクリプションは、Self-managed ライセンスと�
 
 ### 内部ネームスペース
 
-内部ネームスペース向けの GitLab サブスクリプションは IT Operations チームが管理しています。内部グループまたは内部プロジェクトへのサブスクリプションをリクエストするには、[個別アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request) を提出してください。
+内部ネームスペース向けの GitLab サブスクリプションは IT Operations チームが管理しています。内部グループまたは内部プロジェクトへのサブスクリプションをリクエストするには、[個別アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request) を提出してください。
 
 ## 営業支援付き購入で Support Team が遭遇する一般的な問題
 

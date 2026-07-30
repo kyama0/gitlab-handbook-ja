@@ -5,11 +5,11 @@ tags:
   - security_policy_au
   - security_policy_acia
 upstream_path: "/handbook/engineering/gitlab-com/policies/teleport/"
-upstream_sha: "27d1e9b21984fe11eff53db49a85c2ba08ef901c"
-translated_at: "2026-04-28T15:26:32Z"
+upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
+translated_at: "2026-07-31T08:19:21+09:00"
 translator: claude
 stale: false
-lastmod: "2026-01-23T12:25:37-06:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 目的
@@ -30,7 +30,7 @@ Teleport アクセスポリシーは、ターミナルまたは CLI アクセス
 
 ## 手順
 
-- Teleport アクセスは [Okta](/handbook/security/corporate/end-user-services/okta/) を通じて管理され、ロールのベースライングループ割り当ての一部として、または適切な承認を受けた[アクセスリクエスト](/handbook/security/corporate/services/access-requests/)を通じて提供されます
+- Teleport アクセスは [Okta](/handbook/eta/corporate-it/end-user-services/okta/) を通じて管理され、ロールのベースライングループ割り当ての一部として、または適切な承認を受けた[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/ar-services/)を通じて提供されます
 - アクセスレビューはすべてのユーザーが適切であり、適切なアクセスレベルを持っていることを確認するために四半期ごとに実施されます
 - Teleport 監査ログは 1 年間という定められた期間保持されなければなりません
 - Teleport 監査ログは 1 年間という定められた期間が経過する前に変更または削除されてはなりません

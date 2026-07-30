@@ -2,11 +2,11 @@
 title: "チームメンバー サステナビリティガイド"
 description: "リモートワークにおける GitLab のチームメンバー サステナビリティガイド"
 upstream_path: "/handbook/legal/esg/team-member-sustainability-guide/"
-upstream_sha: "50ee631c98005b47a0caea9d46e4ba5cfc62891a"
-translated_at: "2026-07-22T21:58:44Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:39:44+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-22T13:59:03-07:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 このガイドへのアイデアを[こちら](https://gitlab.com/gitlab-com/legal-and-compliance/-/issues/2072)からご提供ください。
 
@@ -26,7 +26,7 @@ GitLab チームメンバー サステナビリティガイドの第1イテレ�
 
 1. 1日の終わりにデバイスのプラグを抜きましょう。使用していないデバイスのプラグを抜くことで、年間100〜200ドルの節約になります。<sup>1</sup>
 2. スクリーンセーバーの代わりにスリープモードを使用しましょう。スクリーンセーバーは実際にはスクリーンセーバーを使用しない場合よりも多くのエネルギーを消費することがあります。<sup>2</sup>
-3. 交換ではなく修理を行いましょう。[ifixit](https://www.ifixit.com/) は、様々な電子機器やその他の家庭用品の修理方法を提供しています。GitLab のラップトップ修理については、[ハンドブックに記載のステップ](/handbook/security/corporate/end-user-services/laptop-management/laptop-repairs)に従ってください。
+3. 交換ではなく修理を行いましょう。[ifixit](https://www.ifixit.com/) は、様々な電子機器やその他の家庭用品の修理方法を提供しています。GitLab のラップトップ修理については、[ハンドブックに記載のステップ](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-repairs)に従ってください。
 
 ## 照明
 

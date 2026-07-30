@@ -1,11 +1,11 @@
 ---
 title: グローバル出張・経費ポリシー
 upstream_path: /handbook/finance/expenses/
-upstream_sha: "7032d681eb34b7baa363eb97119170b35beb5d76"
-translated_at: "2026-07-24T06:29:02+09:00"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:39:44+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-23T08:41:47-07:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 {{% alert title="これは管理対象ドキュメントです" color="danger" %}}
@@ -527,7 +527,7 @@ Navanの航空運賃ポリシーは「Dynamic Policy」として設定されて�
 ### ノートパソコン、保険、修理
 
 - すべてのノートパソコンは、GitLabがノートパソコンを配達できない地域にチームメンバーがいる場合を除き、GitLabを通じて購入されます。
-- チームメンバーのノートパソコンは、3年間の雇用後にリフレッシュできます。チームメンバーが損傷により交換用ノートパソコンを必要とする場合、新しいものを購入する前にIssueを介してITに連絡する必要があります。参考のため[ノートパソコンハンドブックページ](/handbook/security/corporate/end-user-services/access-requests/)を参照してください。
+- チームメンバーのノートパソコンは、3年間の雇用後にリフレッシュできます。チームメンバーが損傷により交換用ノートパソコンを必要とする場合、新しいものを購入する前にIssueを介してITに連絡する必要があります。参考のため[ノートパソコンハンドブックページ](/handbook/eta/corporate-it/end-user-services/access-requests/)を参照してください。
 
 #### 会社支給機器の修理
 

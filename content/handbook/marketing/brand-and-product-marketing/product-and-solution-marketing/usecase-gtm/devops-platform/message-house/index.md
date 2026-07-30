@@ -1,11 +1,11 @@
 ---
 title: "DevOps プラットフォームメッセージハウス"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/message-house/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:15:26+09:00"
+translator: codex
 stale: false
-lastmod: "2024-07-09T00:48:53+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ## 概要
@@ -114,7 +114,7 @@ DevOps を始めたばかりの SMB はおそらくすでに複数ツールの�
 
 ### SMB
 
-|   ユーザー: [Delaney - 開発チームリード](/handbook/product/personas/#delaney-development-team-lead) |   ユーザー: [Devon - DevOps エンジニア](/handbook/product/personas/) |   バイヤー: CTO<code>&ast;</code> |  バイヤー: CIO<code>&ast;</code>  |
+|   ユーザー: [Delaney - 開発チームリード](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead) |   ユーザー: [Devon - DevOps エンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) |   バイヤー: CTO<code>&ast;</code> |  バイヤー: CIO<code>&ast;</code>  |
 |--- |--- |--- |--- |
 |   コミット時に即座にコードの品質、パフォーマンス、セキュリティのフィードバックを受け取れる。チーム間でシームレスに協業できる。 |   カスタム統合を構築・サポートする必要なく成長できる。 |   単一システムで協業し、コンテキストスイッチを最小化し、開発者の生産性と集中力を高める。 |   カスタム統合を構築・サポートせずに成長できる。単一システムをスケール・管理する。 |
 
@@ -124,7 +124,7 @@ DevOps を始めたばかりの SMB はおそらくすでに複数ツールの�
 
 ### ミッドマーケット
 
-|   ユーザー: [Delaney - 開発チームリード](/handbook/product/personas/#delaney-development-team-lead) |   ユーザー: [Devon - DevOps エンジニア](/handbook/product/personas/) |   バイヤー: [Erin - アプリケーション開発エグゼクティブ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#erin---the-application-development-executive-vp-etc) から CTO<code>&ast;</code> までの幅 |  バイヤー: [Kennedy - インフラエンジニアリングディレクター](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#kennedy---the-infrastructure-engineering-director) から CIO<code>&ast;</code> までの幅  |
+|   ユーザー: [Delaney - 開発チームリード](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead) |   ユーザー: [Devon - DevOps エンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) |   バイヤー: [Erin - アプリケーション開発エグゼクティブ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#erin---the-application-development-executive-vp-etc) から CTO<code>&ast;</code> までの幅 |  バイヤー: [Kennedy - インフラエンジニアリングディレクター](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#kennedy---the-infrastructure-engineering-director) から CIO<code>&ast;</code> までの幅  |
 |--- |--- |--- |--- |
 |   コミット時に即座にコードの品質、パフォーマンス、セキュリティのフィードバックを受け取れる。チーム間でシームレスに協業できる。 |   信頼性を高め、その場しのぎでチームベースの統合を排除する。 |  単一システムで協業し、コンテキストスイッチと待ち時間を最小化し、生産性のブロッカーを特定・除去し、生産性が高く集中した開発者でより多くの価値をより速く提供する。  |   カスタム統合を排除して、成長しながら信頼性とパフォーマンスを高める。単一システムをスケール・管理する。 |
 
@@ -134,6 +134,6 @@ DevOps を始めたばかりの SMB はおそらくすでに複数ツールの�
 
 <div class="panel-body">
 
-|   ユーザー: [Delaney - 開発チームリード](/handbook/product/personas/#delaney-development-team-lead) |   ユーザー: [Devon - DevOps エンジニア](/handbook/product/personas/) |   バイヤー: [Erin - アプリケーション開発エグゼクティブ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#erin---the-application-development-executive-vp-etc) |  バイヤー: [Kennedy - インフラエンジニアリングディレクター](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#kennedy---the-infrastructure-engineering-director)  |
+|   ユーザー: [Delaney - 開発チームリード](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead) |   ユーザー: [Devon - DevOps エンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) |   バイヤー: [Erin - アプリケーション開発エグゼクティブ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#erin---the-application-development-executive-vp-etc) |  バイヤー: [Kennedy - インフラエンジニアリングディレクター](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#kennedy---the-infrastructure-engineering-director)  |
 |--- |--- |--- |--- |
 |   コミット時に即座にコードの品質、パフォーマンス、セキュリティのフィードバックを受け取れる。チーム間でシームレスに協業できる。 |   信頼性を高め、その場しのぎでチームベースの統合を排除する。 |   単一システムで協業し、コンテキストスイッチと待ち時間を最小化し、生産性のブロッカーを特定・除去し、生産性が高く集中した開発者でより多くの価値をより速く提供する。 |   カスタム統合を排除して、成長しながら信頼性とパフォーマンスを高める。単一システムをスケール・管理する。 |

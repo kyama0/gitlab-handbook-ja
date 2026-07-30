@@ -1,11 +1,11 @@
 ---
 title: "セキュリティオペレーションエンジニアペルソナの 1 日"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/day-in-the-life-secopsengineer-persona/
-upstream_sha: d0a19ab78fc5e0d322868c8f35ab8f81e761bd21
-translated_at: "2026-04-30T12:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:28:23+09:00"
+translator: codex
 stale: false
-lastmod: "2024-08-16T13:10:36+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ## セキュリティオペレーションエンジニア ― 1 日の流れ
@@ -36,4 +36,4 @@ Alex はプロセスの改善とチームの効率化に情熱を持っている
 
 先週のインシデントの片付けはまだ完了していません（すべての Issue がクローズされていない）が、物事は Alex がいくつかのバックログプロジェクトに目を向けられるところまで来ています。Alex はデスクの小さなノートパッドに TODO リストを保管しています ― それを見て、Alex は取り組むものをリストから選びます。
 
-*[セキュリティオペレーションエンジニアペルソナの詳細](/handbook/product/personas/#alex-security-operations-engineer)*
+*[セキュリティオペレーションエンジニアペルソナの詳細](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#alex-security-operations-engineer)*

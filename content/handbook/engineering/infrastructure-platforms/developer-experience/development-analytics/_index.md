@@ -2,11 +2,11 @@
 title: "Development Analytics グループ"
 description: "Developer Experience セクション配下の Development Analytics グループ"
 upstream_path: /handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/
-upstream_sha: 1312dadbdf7381446077faefcfae17ba323692b6
-translated_at: "2026-07-19T09:35:45+09:00"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:19:21+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-17T17:14:43-07:00"
+lastmod: "2026-07-28T14:48:53+02:00"
 ---
 
 ## 共通リンク
@@ -17,40 +17,40 @@ lastmod: "2026-07-17T17:14:43-07:00"
 | **Slack チャンネル**       | [`#g_development_analytics`](https://gitlab.enterprise.slack.com/archives/C064M4D2V37)                                     |
 | **Slack ハンドル**        | `@dx-development-analytics`                                                                                                |
 | **チームボード**         | [`Team Issues Board`](https://gitlab.com/groups/gitlab-org/-/boards/8966549?label_name%5B%5D=group::development%20analytics), [`Team Epics Board`](https://gitlab.com/groups/gitlab-org/-/epic_boards/2068920?label_name[]=group%3A%3Adevelopment%20analytics), [`Support Requests`](https://gitlab.com/groups/gitlab-org/-/boards/9098093?label_name%5B%5D=development-analytics::support-request)                                           |
-| **Issue トラッカー**       | [`tracker`](https://gitlab.com/groups/gitlab-org/quality/dx/analytics/-/issues)                                            |
+| **Issue トラッカー**       | [`Development Analytics Issues`](https://gitlab.com/groups/gitlab-org/quality/dx/analytics/-/issues)                       |
 | **チームリポジトリ** | [development-analytics](https://gitlab.com/gitlab-org/quality/analytics)                                                   |
 
-## ビジョン
+## 戦略
+
+### ビジョン
 
 すべての GitLab プロジェクトは、カスタムの計測を一切行わずに、開発の健全性スコアをすぐに取得できます。SDLC の摩擦、潜在的なボトルネック、実行可能なシグナルをリアルタイムかつセルフサービスで可視化します。GitLab 自身のエンジニアリングで実証したパターンは、GitLab を利用するすべてのチームが利用できる標準テレメトリになります。
 
-## ミッション
+### ミッション
 
-SDLC 全体の開発健全性シグナルを明らかにし、そのシグナルを所有するチームに見える形で提供します。私たちは開発健全性シグナルにおける Customer Zero です。まず GitLab 自身のエンジニアリングでパターンを実証し、その後すべての顧客に拡張します。
+SDLC 全体の開発健全性シグナルを明らかにし、そのシグナルを所有するチームに見える形で提供します。私たちは Customer Zero です。まず GitLab 自身の Engineering でパターンを実証し、その後、製品チームに影響を与え協力してすべての顧客に届けます。GitLab モノリスと Modular Components の両方を第一級の対象として扱います。各イニシアチブでは適切なプラットフォームに焦点を当てますが、両方を念頭に置きます。
 
-## 戦略的な柱
+### 戦略的な柱
 
-### 開発健全性シグナルプラットフォーム
+#### 開発健全性シグナルプラットフォーム
 
-GitLab エンジニアリング向けの SDLC シグナルレイヤー全体を担います。開発健全性データを製品に取り込み、ユーザー、AI エージェント、ダッシュボードで利用できるようにします。エンジニアから VP レベルまでのスコアカードを提供します。
+GitLab Engineering 向けの SDLC シグナルレイヤー全体を担い、モノリスと Modular Components の両方を対象とします。開発健全性データを製品に取り込み、ユーザー、AI エージェント、ダッシュボードで利用できるようにします。エンジニアから VP レベルまでのスコアカードを提供します。
 
-### Customer Zero から製品への展開
+#### Customer Zero から製品への展開
 
-まず GitLab 自身のプロジェクトでデータモデル、シグナル品質、UX パターンを検証し、その後すべての顧客向けの製品に取り込みます。私たちは製品機能ではなく、リファレンス実装とデータパイプラインを担います。長期的な成果は、すべての GitLab プロジェクトがプロジェクトごとの SDLC テレメトリをすぐに取得できることです。
+GitLab Engineering に組み込まれた社内ラボとして運用します。開発健全性のギャップを特定し、それを表面化するための軽量なシグナルまたは計測を構築して、モノリスと Modular Components の両方にわたる実際の Engineering 作業でその価値を検証します。その後、製品チームと連携してそのシグナルを GitLab にネイティブに組み込み、カスタム計測なしですべての顧客が利用できるようにします。
 
-### ツールの維持管理
+#### ツールの維持管理
 
 Triage Ops、Roulette、Dangerfiles、EP Infrastructure など、GitLab エンジニアリングが依存するツールを維持します。カスタムツールを並行して運用するのではなく、段階的に製品へ移行します。現在人間またはスクリプトが行っている L1 自動化作業は、AI エージェントが引き継ぎます。
 
 ## FY27 ロードマップ
 
-### 現在 FY27-Q2
+社内で何を構築する場合でも、私たちは製品を念頭に置いて構築します。Customer Zero とは、まず GitLab 内でシグナルパターンを検証し、その後、すべての GitLab 顧客が恩恵を受けられるよう製品に取り込むことです。
+
+### Q2
 
 チームが現在取り組んでいる内容の最新の状況については、[Q2 計画 Issue](https://gitlab.com/gitlab-org/quality/analytics/team/-/work_items/573)を参照してください。
-
-## FY27 Q3/Q4 ロードマップ
-
-社内で何を構築する場合でも、私たちは製品を念頭に置いて構築します。Customer Zero とは、まず GitLab 内でシグナルパターンを検証し、その後、すべての GitLab 顧客が恩恵を受けられるよう製品に取り込むことです。
 
 ### Q3
 
@@ -76,7 +76,7 @@ CI 健全性インシデントの検出はすでに稼働しており、旧 mast
 
 #### Theseus — モジュラー機能の CI/CD とテストの可観測性 *(ベストエフォート)*
 
-Theseus は GitLab の将来の開発プラットフォームです。新しい Modular Component はすべてこれを基盤とします。DA は早期に関与し、モジュラー機能にとって優れた可観測性とは何かを確立する機会があります。DA では、Theseus ベースのコンポーネントのエンドツーエンド CI/CD とテストシグナルフローをまだ誰も検証していません。まず試験プロジェクトで実施し、Artifact Registry で検証すれば、将来のすべてのモジュラーチームに従うべき舗装済みの道筋を提供できます。
+Theseus は GitLab の将来の開発プラットフォームです。新しい Modular Component はすべてこれを基盤とします。DA は早期に関与し、Modular Components にとって優れた可観測性とは何かを確立する機会があります。DA では、Theseus ベースのコンポーネントのエンドツーエンド CI/CD とテストシグナルフローをまだ誰も検証していません。まず試験プロジェクトで実施し、Artifact Registry で検証すれば、将来のすべてのモジュラーチームに従うべき舗装済みの道筋を提供できます。
 
 *エピック: [Theseus のテストと CI の可観測性](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/49)*
 
@@ -128,19 +128,19 @@ GitLab のテストスイートには、隔離テスト、フレーキーテス�
 
 ---
 
-## 将来の作業 / 候補
+### 将来の作業 / 候補
 
 *このサイクルではコミットしません。レビュー担当者が価値を確認し、必要に応じて優先順位を変更できるよう掲載しています。*
 
-### 体系的な本番インシデントの根本原因分析
+#### 体系的な本番インシデントの根本原因分析
 
 テストカバレッジ、隔離状態、CI シグナルを本番インシデントに結び付け、「なぜパイプラインはグリーンだったのか？」に答えます。ハッカソンの試作（[リポジトリ](https://gitlab.com/gitlab-ai-hackathon/transcend/8043245)、[記事](https://dev.to/arek_h/finding-the-root-cause-of-production-incidents-in-seconds-with-gitlab-orbit-ai-244i)）では、すでに Orbit を通じたインシデントから MR へのトラバーサルパターンが実証されています。DA の CI シグナルレイヤーが、体系的かつ再現可能な根本原因分析に欠けている要素です。
 
-*エピック: [体系的なインシデント根本原因分析](https://gitlab.com/groups/gitlab-org/quality/analytics/-/work_items/39)*
+*エピック: [体系的なインシデント根本原因分析](https://gitlab.com/gitlab-org/quality/analytics/team/-/work_items/39)*
 
 ---
 
-### Development Analytics 向け Tier-1 エージェント
+#### Development Analytics 向け Tier-1 エージェント
 
 DA で Tier-1 エージェントを責任を持って運用するための設計図を調査します。実行場所、ガードレール、良い/悪い結果の定義を扱います。DA は、他の DevEx チームや社内チームが追随できるリファレンス実装になります。現在の GitLab には、このための共通パターンがありません。
 
@@ -148,7 +148,7 @@ DA で Tier-1 エージェントを責任を持って運用するための設計
 
 ---
 
-### ClickHouse のエンジニアリングデータカバレッジを拡大する
+#### ClickHouse のエンジニアリングデータカバレッジを拡大する
 
 より多くの欠けているデータソースを ClickHouse に追加します。ファクトリープロファイリング、MR レビューメタデータ、CI/CD コストテレメトリが対象です。データギャップを 1 つ埋めるたびに、検証し、製品チームに提供し、最終的に顧客へ届けられるシグナルカテゴリが増えます。
 

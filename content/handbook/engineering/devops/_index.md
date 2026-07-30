@@ -1,18 +1,18 @@
 ---
 title: DevOpsエンジニアリング
 upstream_path: /handbook/engineering/devops/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:19:21+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-02T07:33:04-05:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ## ビジョン
 
  **私たちの目標は単に機能をリリースすることではなく、それらが成功裏に着地し、お客様に真の価値を提供することを保証することです。** 私たちは、信頼性を確保し、運用の容易さとスケーラビリティを維持して多様な顧客ニーズに応えながら、すべてのユーザーグループにわたって期待を超える高品質基準を満たす、業界最高の製品を開発するよう努めています。すべてのチームメンバーは、私たちが行うすべてにおいて、ターゲット顧客とサポートする複数のプラットフォームを念頭に置く必要があります。
 
-特に大企業の主要な顧客[組織アーキタイプ](/handbook/product/personas/organization-archetype/)に対して、製品があらゆる面で優れていることを保証します。これには、スケーラビリティ、適応性、シームレスなアップグレードパスが含まれます。機能の設計と実装時には、常にすべてのデプロイメントオプション（セルフマネージド、Dedicated、Software as a Service (SaaS)）との互換性を念頭に置いてください。
+特に大企業の主要な顧客[組織アーキタイプ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/organization-archetype/)に対して、製品があらゆる面で優れていることを保証します。これには、スケーラビリティ、適応性、シームレスなアップグレードパスが含まれます。機能の設計と実装時には、常にすべてのデプロイメントオプション（セルフマネージド、Dedicated、Software as a Service (SaaS)）との互換性を念頭に置いてください。
 
 [私たちの価値観](/handbook/values/)と[独自の働き方](/handbook/company/culture/all-remote/guide/)を維持しながら、製品と顧客の成長を支える結果を出すための、技術力があり多様でグローバルなチームを育成します。
 

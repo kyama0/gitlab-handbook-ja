@@ -1,11 +1,11 @@
 ---
 title: "CSEs"
 upstream_path: /handbook/customer-success/csm/segment/cse/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:40:38+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-07-29T14:14:43+00:00"
 ---
 
 [CSM ハンドブックホームページ](/handbook/customer-success/csm/)で、CSM に関連するその他のハンドブックページをご覧ください。
@@ -57,7 +57,13 @@ GitLab では顧客の成功を真剣に捉えており、カスタマーサク�
 
 - 究極の顧客成功を推進する。
 
-4\. **自動メールキャンペーンプロセス:**
+4\. **[CSE Assigned](/handbook/customer-success/csm/segment/cse/cse-assigned/)**
+
+- CSM/CSA が付いていない ARR $100K 以上のアカウントに対する、プロアクティブな担当 CSE によるカバレッジ。
+
+- 役割と責任（RACI）、運用リズム、ヘルス評価、CTA を扱います。
+
+5\. **自動メールキャンペーンプロセス:**
 
 - 顧客ライフサイクルの重要なポイントでタイムリーな自動メールを送信。
 
@@ -67,9 +73,7 @@ GitLab では顧客の成功を真剣に捉えており、カスタマーサク�
 
 - コミュニケーションと顧客満足度を向上させる。
 
-- [メールコンテンツ - GitLab 内部のみ](https://docs.google.com/document/d/1Db6y_i2gPQrPnJkJpAAbfFKQtw4c5VgSFJcHKDG-4hk/edit)
-
-5\. **CSM から CSE+ へのアカウント移行プロセス**
+6\. **[CSM から CSE+ へのアカウント移行プロセス](/handbook/customer-success/csm/segment/cse/csm-to-cse-handover/)**
 
 - 専任 CSM からプール型 CSE+ サポートへのアカウント移行の標準化プロセス。
 
@@ -78,8 +82,6 @@ GitLab では顧客の成功を真剣に捉えており、カスタマーサク�
 - CSM 主導の顧客コミュニケーションでは、AE を主要連絡窓口として、オンデマンドの CSE サポートを強調する。
 
 - エンゲージメントモデルの変更中に顧客の成功の継続性を維持する。
-
-- [CSM から CSE+ へのアカウント移行プロセス](/handbook/customer-success/csm/segment/cse/csm-to-cse-handover/)
 
 ### **CSE オペレーティングリズム**
 

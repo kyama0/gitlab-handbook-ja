@@ -1,11 +1,11 @@
 ---
 title: GitLab リポジトリ
 upstream_path: /handbook/engineering/workflow/gitlab-repositories/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:13:25+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-21T17:29:09+02:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 GitLab は多くのサブプロジェクトで構成されています。GitLab プロジェクトの厳選されたリストは [GitLab エンジニアリングプロジェクト](/handbook/engineering/projects/)ページで確認できます。
@@ -24,7 +24,7 @@ GitLab は多くのサブプロジェクトで構成されています。GitLab 
    * 厳密に会社関連のものには [`gitlab-com`](https://gitlab.com/gitlab-com)
 
    コンテキストと権限継承の複雑さを避けるため、これらのルートネームスペース直下（例: `gitlab-org/NEW_PROJECT`）にプロジェクトを作成することは推奨されません。必要な場合はメンテナーのみが作成できますが、前述の理由から避けるべきです。
-   作成権限がない場合は、[アクセスリクエスト Issue](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request) を作成し、メンテナー（[gitlab-org](https://gitlab.com/groups/gitlab-org/-/group_members?sort=access_level_desc) および [gitlab-com](https://gitlab.com/groups/gitlab-com/-/group_members?sort=access_level_desc)）に承認を求めてください。
+   作成権限がない場合は、[アクセスリクエスト Issue](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request) を作成し、メンテナー（[gitlab-org](https://gitlab.com/groups/gitlab-org/-/group_members?sort=access_level_desc) および [gitlab-com](https://gitlab.com/groups/gitlab-com/-/group_members?sort=access_level_desc)）に承認を求めてください。
 1. プロジェクトリポジトリのデフォルトブランチ名として `main` を使用するよう設定します。
 1. [`projects.yml` の GitLab プロジェクト一覧にプロジェクトを追加します](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/doc/projects.md)。
 1. リポジトリにライセンスを追加してください。どのライセンスを追加するかは #legal に確認してください。サンプルライセンスはこちらです: [`gitlab-org/gitlab` MIT License](https://gitlab.com/gitlab-org/gitlab/blob/master/LICENSE)ただし使用前に法務に確認してください。

@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "SaaS およびセルフマネージドのデプロイにまたがるプロダクトアナリティクスとビジネスインテリジェンスのために、Artifact Registry が使用状況データを収集する方法に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection/
-upstream_sha: "78a0e7a77d6186ee917e52daef46030cba948677"
-lastmod: "2026-07-22T23:40:34+02:00"
-translated_at: "2026-07-23T07:28:59+09:00"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+lastmod: "2026-07-29T12:07:01+02:00"
+translated_at: "2026-07-31T08:29:15+09:00"
 translator: codex
 stale: false
 ---
@@ -68,6 +68,19 @@ Go サテライトサービス向けに、[LabKit v2](https://gitlab.com/gitlab-
 | `artifact_registry_repository_deleted` | `format`、`repository_kind`、`repository_id`、`ar_namespace_id` | — |
 | `artifact_registry_virtual_cache_miss` | `format`、`repository_kind=virtual`、`repository_id`、`ar_namespace_id`、`upstream_type`（`hosted`/`remote`） | — |
 | `artifact_registry_lifecycle_policy_executed` | `format`、`repository_kind`、`repository_id`、`ar_namespace_id` | `artifacts_removed_count` |
+
+#### pull イベントが発火するタイミング
+
+上のカタログはディメンションを示しますが、タイミングは示しません。レスポンスのステータスがコミットされた後に失敗する可能性があるため、「ダウンロード成功」は曖昧です。各フォーマットのスライスはその曖昧さを独自に解決していたため、読み取り結果が分岐していました。ルールは、**各配信モードが観測できる最も強いシグナルを報告する**ことです。
+
+[ADR-005](005_artifact_delivery_mode.md)は 2 つのモードを定義します。モードはインスタンスレベルのデフォルトであり、常に利用可能な namespace ごとのオーバーライドがあるため、同じアーティファクトでも、提供する namespace に応じていずれのルールでもカウントされ得ます。イベントは設定値ではなく、レスポンスが実際にどのように配信されたかを記録します。
+
+1. **プロキシモード**: サービスがバイトをストリーミングするため、配信が完了したかを把握できます。ペイロードのコピーが正常に完了した後にのみイベントが発火します。レスポンスステータスのコミット後にクライアントの接続が切断された場合やストレージ読み取り障害が起きた場合、部分転送はダウンロードではないため何も発行しません。
+1. **リダイレクトモード**: サービスはクライアントに署名付きストレージまたは CDN URL を渡し、転送を確認しません。サービスがリダイレクトを発行した時点でイベントが発火します。それが唯一観測可能なタイミングであり、プロダクトの使用状況として 1 回の pull としてカウントします。
+
+プロキシモードをリダイレクトのルールまで下げると、サービスが保持している配信シグナルを捨てることになります。一方、リダイレクトモードをプロキシのルールまで上げることは不可能です。
+
+したがって、2 つのモードは異なる信頼度を持ちます。リダイレクトモードの pull は過大計上する可能性があります（クライアントがリダイレクトに従わない場合があります）。また、過小計上する可能性もあります（1 つの署名付き URL が TTL 内に複数の転送を提供でき、CDN が 1 回のオリジンフェッチから多くのクライアントに提供できるためです）。上のカタログに従い、イベントペイロードはモードを運ぶため、分析で両者を分離できます。両者を合計すると信頼度の水準が混ざります。特に請求対象の数量はリダイレクトモードのイベントに依拠できず、ストレージまたは CDN のアクセスログが必要です。
 
 AR ネームスペースは [ADR-022](022_namespace_decoupling.md) のスラッグアンカーされたエンティティであり、1 つの Organization が複数の AR ネームスペースを所有できます。[課金設計ドキュメント](https://gitlab.com/gitlab-org/architecture/usage-billing/-/merge_requests/27) は計量境界を AR ネームスペースに設定しているため、イベントは（`artifact_registry_context` 内の）`ar_namespace_id` を運び、同じ粒度で課金データときれいに結合します。（`gitlab_standard` 内の）`organization_id` は、ネームスペース横断のロールアップをサポートします。
 

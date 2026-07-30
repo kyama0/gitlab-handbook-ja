@@ -11,11 +11,11 @@ group: Organizations
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-translated_at: "2026-07-02T06:06:16+09:00"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:19:21+09:00"
 translator: claude
 stale: false
-lastmod: 2026-06-26T08:54:58-07:00
+lastmod: "2026-07-28T12:27:01+08:00"
 ---
 
 {{< engineering/design-document-header >}}
@@ -72,11 +72,9 @@ GitLab.com は今後、プライベートなエンタープライズ Organizatio
 
 ## Organization Isolation
 
-GitLab におけるすべての Organization のデータと機能は隔離されます。
-隔離とは、データと機能が Organization の境界を越えられないことを意味します。
-これについては [Organization Isolation](isolation.md) で詳しく説明しています。
+Organization は隔離できます。隔離とは、データと機能がその Organization の境界を越えられないことを意味します。これについては [Organization Isolation](isolation.md) で詳しく説明しています。
 
-GitLab.com では、トップレベルグループがデフォルト Organization から段階的に移行するのをサポートするため、organization は **非隔離（non-isolated）** 状態で始まります。
+GitLab.com では、トップレベルグループがデフォルト Organization から段階的に移行するのをサポートするため、Organization は非隔離の状態で始まります。非隔離はそれ自体で有効かつ恒久的な状態でもあり、Organization は無期限に非隔離のままでよく、隔離は任意です。[ADR 015: 非隔離は恒久的な Organization の状態](decisions/015_non_isolation_is_permanent.md)を参照してください。
 organization スコープのデータに依存する機能は、Organization の境界ルールを強制する前に、現在の organization が非隔離か隔離済みかを確認しなければなりません。
 詳細は [ADR 008: GitLab.com 上の非隔離 organization](decisions/008_non_isolated_organizations_gitlab_com.md) を参照してください。
 
@@ -328,6 +326,7 @@ Organization user 管理とダッシュボードを含む、Organization のユ�
 - [012: Organization はスコープ付き空間である](decisions/012_organization_space.md)
 - [013: Organization 内で Top-Level-Group を作成するときに警告する](decisions/013_warn_on_tlg_creation.md)
 - [014: Organization roles renamed to Organization user types](decisions/014_organization_roles_renamed_to_organization_user_type.md)
+- [015: 非隔離は恒久的な Organization の状態](decisions/015_non_isolation_is_permanent.md)
 
 ## リンク
 

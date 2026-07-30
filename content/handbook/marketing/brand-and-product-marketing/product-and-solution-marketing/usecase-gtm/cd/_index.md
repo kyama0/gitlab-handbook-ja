@@ -1,11 +1,11 @@
 ---
 title: "補助ソリューションリソース: 継続的デリバリー"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/
-upstream_sha: d0a19ab78fc5e0d322868c8f35ab8f81e761bd21
-translated_at: "2026-05-01T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:22:17+09:00"
+translator: codex
 stale: false
-lastmod: "2025-08-18T10:18:01-07:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 #### 連絡先
@@ -46,23 +46,23 @@ lastmod: "2025-08-18T10:18:01-07:00"
 
 #### DevOps エンジニア、Devon
 
-[DevOps エンジニア](/handbook/product/personas/)は、開発者がコードをテスト/ステージング・本番環境にデプロイするために必要なインフラ、環境、インテグレーションのサポートを提供する、開発者の安定したカウンターパートです。
+[DevOps エンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)は、開発者がコードをテスト/ステージング・本番環境にデプロイするために必要なインフラ、環境、インテグレーションのサポートを提供する、開発者の安定したカウンターパートです。
 
 #### システム管理者、Sidney
 
-[システム管理者](/handbook/product/personas/#sidney-systems-administrator)はインフラのエキスパートであり、テスト/ステージング・本番環境（物理・仮想・クラウドインフラ、データベースやミドルウェアといったアプリケーションインフラを含む）のモデリング、保守、スケーリングに貢献します。
+[システム管理者](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator)はインフラのエキスパートであり、テスト/ステージング・本番環境（物理・仮想・クラウドインフラ、データベースやミドルウェアといったアプリケーションインフラを含む）のモデリング、保守、スケーリングに貢献します。
 
 #### リリースマネージャー、Rachel
 
-[リリースマネージャー](/handbook/product/personas/#rachel-release-manager)はリリース計画、スケジューリング、依存関係とリソースの特定において中心的な役割を担い、リリースが期日通りに行われることを保証します。リリースマネージャーはリリースプロセスの自動化を支援します。
+[リリースマネージャー](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager)はリリース計画、スケジューリング、依存関係とリソースの特定において中心的な役割を担い、リリースが期日通りに行われることを保証します。リリースマネージャーはリリースプロセスの自動化を支援します。
 
 #### プラットフォームエンジニア、Priyanka
 
-[プラットフォームエンジニア](/handbook/product/personas/#priyanka-platform-engineer)はモダンなプラットフォームのスペシャリストであり、開発者がセルフサービス方式で多層環境のプロビジョニング、デプロイ、廃止を行えるようにすることを目指します。
+[プラットフォームエンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer)はモダンなプラットフォームのスペシャリストであり、開発者がセルフサービス方式で多層環境のプロビジョニング、デプロイ、廃止を行えるようにすることを目指します。
 
 #### アプリケーションオペレーション、Allison
 
-[オペレーションスペシャリスト](/handbook/product/personas/#allison-application-ops)は、デプロイされたアプリケーションが利用可能であり、要求されたパフォーマンスパラメータで動作していることを保証します。
+[オペレーションスペシャリスト](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#allison-application-ops)は、デプロイされたアプリケーションが利用可能であり、要求されたパフォーマンスパラメータで動作していることを保証します。
 
 ### バイヤーペルソナ
 

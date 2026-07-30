@@ -2,9 +2,9 @@
 title: "GitLab Security Essentials - ハンズオンラボ概要"
 description: "このハンズオンガイドは、GitLab Security Essentials コースのラボ演習を案内します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentials/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T05:12:10Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:29:15+09:00"
+translator: codex
 stale: false
 lastmod: "2026-02-10T15:36:21-05:00"
 ---

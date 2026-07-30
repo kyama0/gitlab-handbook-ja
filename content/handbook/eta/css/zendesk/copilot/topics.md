@@ -2,9 +2,9 @@
 title: 'Zendesk Copilot トピック'
 description: 'Zendesk Copilot トピックに関するドキュメント'
 upstream_path: /handbook/eta/css/zendesk/copilot/topics/
-upstream_sha: "7032d681eb34b7baa363eb97119170b35beb5d76"
-lastmod: "2026-07-23T10:49:35-05:00"
-translated_at: "2026-07-24T06:39:10+09:00"
+upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
+lastmod: "2026-07-27T13:51:40-05:00"
+translated_at: "2026-07-31T07:01:08+09:00"
 translator: codex
 stale: false
 ---
@@ -61,7 +61,7 @@ stale: false
 1. [Customer Support の対応](#customer-support-actions)
 1. [CSS の対応](#css-actions)
 
-### リクエスターの対応 {#requester-actions}
+### リクエスターの対応
 
 {{% alert title="注記" color="warning" %}}
 
@@ -77,7 +77,7 @@ CI/CD が完了し、問題がないことを確認したら、マージリク�
 
 ここから、リクエストは [Customer Support の対応](#customer-support-actions) に移ります。
 
-### Customer Support の対応 {#customer-support-actions}
+### Customer Support の対応
 
 {{% alert title="注記" color="warning" %}}
 
@@ -91,7 +91,7 @@ Customer Support の担当者は、同意できない点がないかを確認し
 
 ここから、リクエストは [CSS の対応](#css-actions) に移ります。
 
-### CSS の対応 {#css-actions}
+### CSS の対応
 
 CSS の担当者は、同意できない点がないかを確認しながらマージリクエストをレビューします。問題が見つかった場合は、調査結果をマージリクエストにコメントとして追加してください（リクエスターに必ずメンションします）。
 
@@ -101,7 +101,7 @@ CSS の担当者は、同意できない点がないかを確認しながらマ�
 
 Issue への対応が完了したら、マージリクエストを承認してマージします。
 
-## トピック変更の Issue への対応 {#working-topic-change-issues}
+## トピック変更の Issue への対応
 
 作業項目が作成されたら、CSS チーム全員をアサインする必要があります。自分がその項目を対応する場合は、他のメンバーのアサインを解除します（自分だけを残します）。
 

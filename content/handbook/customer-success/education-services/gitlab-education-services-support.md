@@ -2,11 +2,11 @@
 title: "GitLab 教育サービスサポートハンドブック"
 description: "このハンドブックでは、教育サービスチームおよび使用されている該当システムへのサポート問い合わせの処理方法を詳述します。"
 upstream_path: /handbook/customer-success/education-services/gitlab-education-services-support/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:29:15+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -23,7 +23,7 @@ lastmod: "2025-07-07T23:50:04+00:00"
 - [Zapier](https://zapier.com/app/zaps/folder/840205)
 - [Credly](https://www.credly.com/organizations/gitlab/badges/badges)
 
-これらのシステムへのアクセス権がない場合は、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を完了してください。これらのシステムの所有者またはアカウントをプロビジョニングできる担当者については、[GitLab テックスタック](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)を参照してください。
+これらのシステムへのアクセス権がない場合は、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を完了してください。これらのシステムの所有者またはアカウントをプロビジョニングできる担当者については、[GitLab テックスタック](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)を参照してください。
 
 ### ZenDesk の使用
 
@@ -48,7 +48,7 @@ lastmod: "2025-07-07T23:50:04+00:00"
 
 ---
 
-GitLab 教育サービスチームのすべてのメンバーは、GitLab Level Up サポート受信箱にアクセスできます。このグループにアクセスできない場合は、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を完了してください。チームは週単位でローテーションして受信箱の監視を担当します。現在の担当者は [GitLab 教育サービスカレンダー](https://calendar.google.com/calendar/embed?src=c_2f86c1ceb88f08d428c3406c956335383e323ef8bbd19fde5379a8ab0f48b4b1%40group.calendar.google.com&ctz=America%2FDenver)で確認できます。
+GitLab 教育サービスチームのすべてのメンバーは、GitLab Level Up サポート受信箱にアクセスできます。このグループにアクセスできない場合は、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を完了してください。チームは週単位でローテーションして受信箱の監視を担当します。現在の担当者は [GitLab 教育サービスカレンダー](https://calendar.google.com/calendar/embed?src=c_2f86c1ceb88f08d428c3406c956335383e323ef8bbd19fde5379a8ab0f48b4b1%40group.calendar.google.com&ctz=America%2FDenver)で確認できます。
 
 1. Level Up サポート Google グループに参加している場合は、<Levelup@gitlab.com> 受信箱へのすべてのメールを受信します。
 2. 担当週の場合は、月曜日から金曜日の通常業務時間内にサポートメールに返信します。
@@ -61,7 +61,7 @@ GitLab 教育サービスチームのすべてのメンバーは、GitLab Level 
 
 ---
 
-システム間のインテグレーションと Webhook（バッジの発行、自動メッセージなど）に使用される Zapier にアクセスするには、Zapier 1Pass Vault へのアクセス権が必要です。アクセス権がない場合は、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を完了してください。
+システム間のインテグレーションと Webhook（バッジの発行、自動メッセージなど）に使用される Zapier にアクセスするには、Zapier 1Pass Vault へのアクセス権が必要です。アクセス権がない場合は、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を完了してください。
 
 教育サービスチームに関連するすべての Zap は、[Zapier](https://zapier.com/app/zaps/folder/840205) の以下のフォルダ内にあります。
 
@@ -69,7 +69,7 @@ GitLab 教育サービスチームのすべてのメンバーは、GitLab Level 
 
 ---
 
-Credly にアクセスするには、[こちら](https://info.credly.com/)のサイトにログインしてください。アクセス権がない場合は、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を完了してください。
+Credly にアクセスするには、[こちら](https://info.credly.com/)のサイトにログインしてください。アクセス権がない場合は、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を完了してください。
 
 [GitLab 組織プロフィール](https://www.credly.com/organizations/gitlab/badges)
 
