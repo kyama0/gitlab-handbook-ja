@@ -116,7 +116,7 @@ Okta は、認証ポリシーに基づく Okta の信頼判断によって認可
 
 はい、各 Apps に App Notes を追加し、直感的なラベルを追加できるように取り組みます。例として、すでに Workday と他のいくつかで有効にしています。Apps を構成してユーザー体験を改善するには、Okta メインページの Dashboard Tips ビデオを参照してください。
 
-## Application が SAML2.0 経由で統合されていない理由はありますか？
+## 私のアプリケーションが SAML2.0 経由で統合されていない理由はありますか？
 
 SAML への変換が必要なアプリケーションがあります。更新をリクエストするには、[Change Management Issue](https://gitlab.com/gitlab-com/business-technology/change-management/-/issues/new?issue%5Bmilestone_id%5D=#)を作成してください。
 

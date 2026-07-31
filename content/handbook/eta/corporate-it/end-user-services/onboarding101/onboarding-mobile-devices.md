@@ -30,7 +30,7 @@ stale: false
       <li><b>Use Touch ID to sign in?</b> ポップアップが表示された場合は、<b>Cancel</b> をクリックします</li>
     </ol>
   </li>
-  <li><b>gitlab.okta.com のパスキーを保存する場所を選択</b>するよう求められたら、<b>スマートフォン、タブレット、またはセキュリティキーを使用</b>を選択します。画面に QR コードが表示されます
+  <li><b>Choose where to save your passkey for gitlab.okta.com</b> と表示されたら、<b>Use a phone, tablet or security key</b> を選択します。画面に QR コードが表示されます
     <ol type="a">
       <li><b>YubiKey</b>: YubiKey を挿入してボタンを押します</li>
       <li><b>iOS</b>:
