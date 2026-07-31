@@ -1,7 +1,5 @@
 ---
 title: ユーザーペルソナ
-aliases:
-  - /handbook/product/personas/
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
 lastmod: "2026-07-28T05:53:28-07:00"
@@ -9,8 +7,6 @@ translated_at: "2026-07-31T06:28:23+09:00"
 translator: codex
 stale: false
 ---
-
-<a id="buyer-personas"></a>
 
 ### ユーザーペルソナ {#user-personas}
 

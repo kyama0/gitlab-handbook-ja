@@ -1,5 +1,7 @@
 ---
 title: ロール・ペルソナ
+aliases:
+  - /handbook/product/personas/
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
 translated_at: "2026-07-31T06:22:17+09:00"
