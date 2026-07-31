@@ -11,7 +11,7 @@ translator: codex
 stale: false
 ---
 
-Access Requests は IT チームが担当し、オンボーディング、オフボーディング、社内異動のリクエストは People Operations Team が担当します。
+アクセスリクエストは IT チームが担当し、オンボーディング、オフボーディング、社内異動のリクエストは People Operations Team が担当します。
 
 アクセスリクエストに関する質問がある場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com から IT にお問い合わせください。
 
@@ -97,8 +97,8 @@ Access Requests は IT チームが担当し、オンボーディング、オフ
 
 #### 共有アカウントに関する IT 向けの手順とガイダンス
 
-1. 共有アカウントのアクセスリクエストをレビューし、共有アカウントに追加する各ユーザーについて[Exception Request](https://gitlab.com/gitlab-com/gl-security/security-assurance/sec-compliance/compliance/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Exception%20Request)があることを確認してください。Exception Request をレビューし、Access Request Issue に例外期間を記載してください。承認を追加したり共有アカウントを設定したりする前に、Exception Request が Security によりレビューおよび承認されていることを確認してください。
-1. すべての共有アカウントは Okta 経由で管理する必要があります。1Password を使用する必要がある場合（Okta を技術的に使用できない場合）は、そのことを Access Request に明記する必要があります。
+1. 共有アカウントのアクセスリクエストをレビューし、共有アカウントに追加する各ユーザーについて[Exception Request](https://gitlab.com/gitlab-com/gl-security/security-assurance/sec-compliance/compliance/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Exception%20Request)があることを確認してください。Exception Request をレビューし、アクセスリクエスト Issue に例外期間を記載してください。承認を追加したり共有アカウントを設定したりする前に、Exception Request が Security によりレビューおよび承認されていることを確認してください。
+1. すべての共有アカウントは Okta 経由で管理する必要があります。1Password を使用する必要がある場合（Okta を技術的に使用できない場合）は、そのことをアクセスリクエストに明記する必要があります。
 1. 共有アカウントを Okta で管理する場合 - 例外のタイムラインに応じて共有アカウントアクセスをレビューし、Issue をクローズするためのレビュー／リマインダー日を Okta に設定してください。
    1. タイムラインの期限が近づいていることに関する通知を Okta から受け取った場合は、新しい共有アカウントのアクセスリクエストを記録し、完了するために Shared Account Owner に割り当ててください。
 1. 共有アカウントを 1Password で管理する場合 - 例外のタイムラインに応じた期限を追加し、Issue をオープンのままにしてください。
@@ -161,7 +161,7 @@ Okta で設定されているアプリケーションの一覧については、
 
 ## アクセスリクエストへの取り組み
 
-### 部門の Access Request ボード
+### 部門のアクセスリクエストボード
 
 - 完全に自動化できるまでの間に追加のラベルが必要な場合や、プロセス改善の提案がある場合は、[Issue を作成してください](https://gitlab.com/gitlab-com/it/end-user-services/issues/it-help-issue-tracker/-/issues/new)。
 - AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数の provisioner がいます。テンプレートを自動割り当てできない場合、Business Technology は provisioner がラベルごとに部門の Issue を確認できるボードを提供します（例: `dept::to do`）。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
@@ -183,10 +183,10 @@ Okta で設定されているアプリケーションの一覧については、
 1. [Support](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/boards/1319053)
 {{% /panel %}}
 
-## Tech Stack の新しい項目に Access Request プロセスを追加する
+## Tech Stack の新しい項目にアクセスリクエストプロセスを追加する
 
-Tech Stack の新しい項目に対する Access Request プロセスを開始する必要がある場合：
+Tech Stack の新しい項目に対するアクセスリクエストプロセスを開始する必要がある場合：
 
 1. ツールが [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に追加されていることを確認してください。
 1. チームメンバーが `provisioner` `deprovisioner` として含まれていることを確認してください。
-1. 関連するハンドブックページに Access Request を送信する要件を文書化してください。
+1. 関連するハンドブックページにアクセスリクエストを送信する要件を文書化してください。
