@@ -74,7 +74,7 @@ Slack またはメールで通知を開くか、Okta タイルから Lumos に�
 
 ### アクセス変更リクエスト
 
-[Access Change Requests](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Access_Change_Request) は、チームメンバーが現在プロビジョニング済みのシステムへのアクセスを必要としなくなった場合、または同じアクセスレベルを必要としなくなった場合（admin から user へのアクセスのダウングレードなど）に記録されます。
+[Access Change Requests](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Access_Change_Request) は、チームメンバーが現在プロビジョニング済みのシステムへのアクセスを必要としなくなった場合、または同じアクセスレベルを必要としなくなった場合（管理者からユーザーへのアクセスのダウングレードなど）に記録されます。
 追加情報については、GitLab ハンドブックの [`For Total Rewards Analysts: Processing Promotions & Compensation Changes`](/handbook/people-group/promotions-transfers/) セクションを参照してください。
 
 Okta にはプロビジョニング／プロビジョニング解除の自動化がありますが、これはアクセスのプロビジョニングおよびプロビジョニング解除を完全かつ正確に反映するものではないことに注意してください。

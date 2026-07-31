@@ -22,7 +22,7 @@ Copilot ナレッジは、Zendesk Knowledge Center に関連する特定の Zend
     - Translations
       - [x] Translate knowledge base articles
       - Exclude terms from translations
-        - None used at this time
+        - 現在は使用していません
     - Article context
       - [x] Summarize articles
     - Knowledge Copilot
@@ -35,7 +35,7 @@ Copilot ナレッジは、Zendesk Knowledge Center に関連する特定の Zend
     - Translations
       - [x] Translate knowledge base articles
       - Exclude terms from translations
-        - None used at this time
+        - 現在は使用していません
     - Article context
       - [ ] Summarize articles
     - Knowledge Copilot
@@ -49,7 +49,7 @@ Copilot ナレッジは、Zendesk Knowledge Center に関連する特定の Zend
     - Translations
       - [x] Translate knowledge base articles
       - Exclude terms from translations
-        - None used at this time
+        - 現在は使用していません
     - Article context
       - [x] Summarize articles
     - Knowledge Copilot
@@ -62,7 +62,7 @@ Copilot ナレッジは、Zendesk Knowledge Center に関連する特定の Zend
     - Translations
       - [x] Translate knowledge base articles
       - Exclude terms from translations
-        - None used at this time
+        - 現在は使用していません
     - Article context
       - [ ] Summarize articles
     - Knowledge Copilot
