@@ -20,7 +20,7 @@
   "devDependencies": {
     "@aws-sdk/client-s3": "^3.1077.0",
     "@types/node": "^26.0.0",
-    "autoprefixer": "^10.5.2",
+    "autoprefixer": "^10.5.4",
     "pagefind": "^1.5.2",
     "postcss": "^8.5.16",
     "postcss-cli": "^11.0.1",
