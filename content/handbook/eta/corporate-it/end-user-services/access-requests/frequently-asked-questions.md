@@ -33,7 +33,7 @@ stale: false
     1. Google Workspace のメールエイリアスまたはグループに追加される内部チームメンバー
     1. Slack グループに追加される内部チームメンバー
     1. まったく変更のないロールベースの baseline entitlement
-1. [システムへのアクセスをプロビジョニングする担当者。](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に Issue を割り当ててください。
+1. [システムへのアクセスをプロビジョニングする担当者](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に Issue を割り当ててください。
 1. サポートが必要な場合は、支援が必要な Issue へのリンクを添えて Slack チャンネル #it-help で IT-Ops に依頼してください。
 1. 作業に必要な最小限のアクセスのみを要求してください。
 
