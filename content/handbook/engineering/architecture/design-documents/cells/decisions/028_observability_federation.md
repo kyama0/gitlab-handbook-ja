@@ -98,7 +98,7 @@ Instrumentor は、テナントの設定およびデプロビジョニングフ�
 - Grafana API キーの Vault シークレットパスの規約を定義し、文書化する必要があります。
 - Envoy Prometheus Gateway リソース（`HTTPRoute`、`SecurityPolicy`、オプションの `ClientTrafficPolicy`）は、テナントモデルまたは既知の Grafana エグレス IP リストから取得した CIDR リストを使用し、Cell ごとに Instrumentor が管理します。
 - Grafana エグレス IP 許可リストは、内容の信頼できる情報源である Observability（O11y）チームが所有します。静的で変更頻度は低いと予想されます。config-mgmt 内の許可リストが変更された場合、config-mgmt は対応する Vault シークレットを自動更新し、Instrumentor と Grafana 向け Gateway 設定が手動操作なしで最新の IP を使用できるようにする必要があります。
-- mTLS の有効化には、より強い認証を必要とする Cells のための follow-up runbook と、Grafana データソース設定にクライアント証明書を注入する Instrumentor のサポートが必要です。
+- mTLS の有効化には、より強い認証を必要とする Cells のためのフォローアップ用 runbook と、Grafana データソース設定にクライアント証明書を注入する Instrumentor のサポートが必要です。
 - テナントごとの集約ネットワークエグレスを計測し、フェデレーテッドプルのクエリ時エグレスと継続的 remote write の取り込み時エグレスを直接比較できるようにする必要があります。これにより、どちらかのモデルを長期に採用する前に、受け入れた不確実性のトレードオフを検証します。
 
 ## フォローアップ

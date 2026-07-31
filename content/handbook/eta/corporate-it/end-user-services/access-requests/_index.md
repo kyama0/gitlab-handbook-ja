@@ -42,7 +42,7 @@ Lumos Slack アプリの *Messages* タブを開きます。作成したすべ�
 
 Slack またはメールで通知を開くか、Okta タイルから Lumos にアクセスして、承認、コメント、または拒否します。Slack の承認画面で **Edit** をクリックすると、承認前にユーザーを追加するグループを変更できます。
 
-まだすべてのアプリケーションが Lumos に含まれているわけではありません。プロビジョニング自動化とリクエスト量が多いアプリを優先し、tech stack をイテレーションごとに移行しています。必要なアプリが表示されない場合は、以下の Issue テンプレートを使用してください。
+まだすべてのアプリケーションが Lumos に含まれているわけではありません。プロビジョニング自動化とリクエスト量が多いアプリを優先し、Tech Stack をイテレーションごとに移行しています。必要なアプリが表示されない場合は、以下の Issue テンプレートを使用してください。
 
 スクリーンショットと、アプリを Lumos App Store に追加するリクエスト方法を含む完全な手順については、[Lumos Access Request Guide](/handbook/security/corporate/systems/lumos/ar/)を参照してください。
 
@@ -64,7 +64,7 @@ Slack またはメールで通知を開くか、Okta タイルから Lumos に�
 
 *利用可能なすべてのテンプレートの完全な一覧は[こちら](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/tree/master/.gitlab/issue_templates)で確認できます*
 
-### 個別または一括のアクセスリクエスト
+### 個別または一括のアクセスリクエスト {#individual-or-bulk-access-request}
 
 [Individual or Bulk Access Requests](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Individual_Bulk_Access_Request) は、探している内容に他のテンプレートが一致しない場合に使用してください。
 
@@ -80,7 +80,7 @@ Okta は、ユーザーのロール／グループに基づいて統合済み／
 これによりアプリケーションには Okta 経由でアクセスできますが、ユーザーはシステムに直接アクセスすることも可能です。
 Okta で設定されているアプリケーションの一覧については、[Okta Application Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)を参照してください。
 
-### アプリケーション固有のテンプレート
+### アプリケーション固有のテンプレート {#application-specific-templates}
 
 これらの Issue は、特定のアプリケーションおよびサービスへの、またはそれらに関するアクセスに関連します。たとえば、既存の vault やグループの変更、または新規作成には [1Password Request Form](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=1Password_Request)を使用できます。
 
@@ -112,7 +112,7 @@ Baseline Entitlement Requests の作成に関する追加サポートについ�
 ### 部門の Access Request ボード
 
 - 完全に自動化できるまでの間に追加のラベルが必要な場合や、プロセス改善の提案がある場合は、[Issue を作成してください](https://gitlab.com/gitlab-com/it/end-user-services/issues/it-help-issue-tracker/-/issues/new)。
-- AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数の provisioner がいます。テンプレートを自動割り当てできない場合、Business Technology は provisioner がラベルごとに部門の Issue を確認できるボードを提供します（例：`dept::to do`。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
+- AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数の provisioner がいます。テンプレートを自動割り当てできない場合、Business Technology は provisioner がラベルごとに部門の Issue を確認できるボードを提供します（例: `dept::to do`）。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
 - **Issue をある列から別の列へ移動すると、最初のラベル（列ヘッダーごと）が削除され、2 番目のラベルが追加されます。列間で Issue を移動する際は注意してください。**
 - 部門は以下のボードを表示して、未解決のアクセスリクエスト Issue を確認できます。
 
@@ -133,9 +133,9 @@ Baseline Entitlement Requests の作成に関する追加サポートについ�
 
 ## Tech Stack の新しい項目に Access Request プロセスを追加する
 
-tech stack の新しい項目に対する Access Request プロセスを開始する必要がある場合：
+Tech Stack の新しい項目に対する Access Request プロセスを開始する必要がある場合：
 
-1. ツールが [tech stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に追加されていることを確認してください。
+1. ツールが [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に追加されていることを確認してください。
 1. チームメンバーが `provisioner` `deprovisioner` として含まれていることを確認してください。
 1. 関連するハンドブックページに Access Request を送信する要件を文書化してください。
 

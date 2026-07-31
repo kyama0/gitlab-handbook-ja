@@ -29,22 +29,22 @@ GitLab への参加、おめでとうございます！このページでは、I
    - [Google アカウントのセットアップ](#linux-step-3-google-account-setup)
    - [GitLab メールと GitLab.com アカウントにアクセスする](#linux-step-4-access-gitlab-email--gitlabcom-account)
 
-## 始める前に
+## 始める前に {#before-you-begin}
 
 個人用メールアドレスに Okta の有効化メールが届きます。これは GitLab のシステムへアクセスするための最初の手順です。
 
-## ラップトップのセットアップ: MacBook
+## ラップトップのセットアップ: MacBook {#laptop-setup-macbook}
 
 > **重要**: 入社日まで業務用 MacBook にはアクセスできません。入社日になったら、このガイドに従ってください。
 
-### MacBook ステップ 1: Okta アカウントを有効化する
+### MacBook ステップ 1: Okta アカウントを有効化する {#macbook-step-1-activate-your-okta-account}
 
 1. モバイルデバイスで、個人用メールアドレスに届いた Okta の有効化メールを確認します。
 1. メール内のリンクをクリックして、パスワードを設定します
 1. パスワードの設定後、ブラウザは Okta Dashboard にリダイレクトされます。**重要: ステップ 2 のラップトップセットアッププロセスを完了する前に、Gmail (G Suite SSO Mail) または Google アプリケーション (G Suite SSO Drive、G Suite SSO Calendar、G Suite SSO Account) を開かないでください。これらのアプリケーションを早すぎるタイミングで開くと、ラップトップにログインできなくなります。**
 1. Okta から、件名が **Security Method enrolled** のフォローアップメールが届きます。
 
-### MacBook ステップ 2: 初期セットアップ
+### MacBook ステップ 2: 初期セットアップ {#macbook-step-2-initial-setup}
 
 > **重要**: ラップトップで `Remote Management` を利用できない場合は、[Jamf MDM Setup Guide](/handbook/security/corporate/systems/jamf/setup/)を使用してデバイスを手動で登録してください。
 
@@ -86,7 +86,7 @@ GitLab への参加、おめでとうございます！このページでは、I
   </li>
 </ol>
 
-### MacBook ステップ 3: システム構成
+### MacBook ステップ 3: システム構成 {#macbook-step-3-system-configuration}
 
 <ol>
   <li><b>Welcome to your new Mac!</b> 画面で、アプリケーションが自動的にインストールされるまで待ちます
@@ -112,7 +112,7 @@ GitLab への参加、おめでとうございます！このページでは、I
   </li>
 </ol>
 
-### MacBook ステップ 4: Google アカウントのセットアップ
+### MacBook ステップ 4: Google アカウントのセットアップ {#macbook-step-4-google-account-setup}
 
 1. Google Chrome を開きます
 1. **Sign in to Chrome** ウィンドウで、**Sign in** をクリックします
@@ -125,7 +125,7 @@ GitLab への参加、おめでとうございます！このページでは、I
 1. **Your organization will manage this profile** と表示されたら、**Continue** をクリックします
 1. **Turn on Sync** ウィンドウで、**Yes, I'm in** をクリックします
 
-### MacBook ステップ 5: Okta アカウントの認証
+### MacBook ステップ 5: Okta アカウントの認証 {#macbook-step-5-okta-account-verification}
 
 <ol>
   <li>Chrome で https://gitlab.okta.com にアクセスし、Okta Verify が開くまで待ちます
@@ -156,24 +156,24 @@ GitLab への参加、おめでとうございます！このページでは、I
    </li>
 </ol>
 
-### MacBook ステップ 6: GitLab メールと GitLab.com アカウントにアクセスする
+### MacBook ステップ 6: GitLab メールと GitLab.com アカウントにアクセスする {#macbook-step-6-access-gitlab-email--gitlabcom-account}
 
 1. Okta で **G Suite SSO Mail** をクリックして GitLab メールにアクセスします
 1. GitLab メールで、件名が "**Welcome to GitLab Onboarding, `yourname`!**" のメールを確認します
 1. メールの手順に従って GitLab.com アカウントをセットアップし、Onboarding Issue にアクセスします
 
-## ラップトップのセットアップ: Linux
+## ラップトップのセットアップ: Linux {#laptop-setup-linux}
 
 このガイドは Ubuntu を使用していることを前提としています。使用するディストリビューションに合わせて、コマンドの構文を調整してください。
 
-### Linux ステップ 1: Okta アカウントを有効化する
+### Linux ステップ 1: Okta アカウントを有効化する {#linux-step-1-activate-your-okta-account}
 
 1. モバイルデバイスで、個人用メールアドレスに届いた Okta の有効化メールを確認します。
 1. メール内のリンクをクリックして、パスワードを設定します
 1. パスワードの設定後、ブラウザは Okta Dashboard にリダイレクトされます
 1. Okta から、件名が **Security Method enrolled** のフォローアップメールが届きます
 
-### Linux ステップ 2: Okta のセットアップ
+### Linux ステップ 2: Okta のセットアップ {#linux-step-2-okta-setup}
 
 > **重要**: Linux の Web ブラウザは Dell ラップトップの指紋リーダーにアクセスできません。Okta のパスキーを保存するには、YubiKey または携帯電話のいずれかを使用する必要があります。<br>
 ラップトップと一緒に YubiKey は届きませんが、[こちら](/handbook/security/corporate/systems/yubikey/purchasing/)の手順に従ってリクエストできます。<br>
@@ -206,7 +206,7 @@ GitLab への参加、おめでとうございます！このページでは、I
   </li>
 </ol>
 
-### Linux ステップ 3: Google アカウントのセットアップ
+### Linux ステップ 3: Google アカウントのセットアップ {#linux-step-3-google-account-setup}
 
 1. Google Chrome を開きます
 1. **Sign in to Chrome** ウィンドウで、**Sign in** をクリックします
@@ -218,7 +218,7 @@ GitLab への参加、おめでとうございます！このページでは、I
 1. **Your organization will manage this profile** と表示されたら、**Continue** をクリックします
 1. **Turn on Sync** ウィンドウで、**Yes, I'm in** をクリックします
 
-### Linux ステップ 4: GitLab メールと GitLab.com アカウントにアクセスする
+### Linux ステップ 4: GitLab メールと GitLab.com アカウントにアクセスする {#linux-step-4-access-gitlab-email--gitlabcom-account}
 
 1. GitLab メールで、件名が "**Welcome to GitLab Onboarding, `yourname`!**" のメールを確認します
 1. メールの手順に従って GitLab.com アカウントをセットアップし、Onboarding Issue にアクセスします

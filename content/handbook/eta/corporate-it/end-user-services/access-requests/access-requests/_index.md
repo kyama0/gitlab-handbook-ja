@@ -44,7 +44,7 @@ Access Requests は IT チームが担当し、オンボーディング、オフ
 
 1. アクセスが必要なシステムに合わせて行を削除または追加します。**テンプレートの形式に必ず従ってください（以下にも記載しています）**。リクエストするロール、vault、グループ、チャンネル、またはプロジェクトを追加して、リクエストするアクセスをできるだけ具体的に示してください。
 1. 管理アクセスが付与される場合は、admin-access ラベルを追加してください。[最小権限レビュー](https://internal.gitlab.com/handbook/security/access-management-standard/#least-privilege-reviews-for-access-requests)に従って必要最小限のアクセスをリクエストし、根拠セクションでアクセスが必要な理由を説明してください。
-1. リクエストに Infrastructure チームが所有するシステムへのアクセスが含まれる場合は（[tech stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に従って）、`@gitlab-com/gl-infra/managers` にメンションし、~InfrastructureApproved ラベルを追加して承認するよう依頼してください。
+1. リクエストに Infrastructure チームが所有するシステムへのアクセスが含まれる場合は（[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に従って）、`@gitlab-com/gl-infra/managers` にメンションし、~InfrastructureApproved ラベルを追加して承認するよう依頼してください。
 
    ```text
    - [ ] System name: Which vault, which group, which channel, which project, which role?
@@ -60,7 +60,7 @@ Access Requests は IT チームが担当し、オンボーディング、オフ
 **ステップ 4: Managers が行うこと**
 
 1. この人の Manager である場合は、Issue に `AR-Approval::Manager Approved` と `ReadyForProvisioning` のラベルを追加してください。自分がアクセスを求める人である場合は、承認のために*自分の* Manager に割り当てる必要があり、その Manager が `AR-Approval::Manager Approved` と `ready for provisioning` のラベルを追加する必要があります。
-1. 承認後、**必ず Issue を[tech stack に一覧化されている system provisioner](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に割り当ててください。**
+1. 承認後、**必ず Issue を[Tech Stack に一覧化されている system provisioner](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に割り当ててください。**
 
 **ステップ 5: Provisioners が行うこと**
 
@@ -91,7 +91,7 @@ Access Requests は IT チームが担当し、オンボーディング、オフ
 1. 必要なシステムだけが Issue に残るよう、アクセスが必要なシステムの**行を追加**してください。**チェックを入れないでください。**
    - *[最小権限レビュー](https://internal.gitlab.com/handbook/security/access-management-standard/#least-privilege-reviews-for-access-requests)に従って必要最小限のアクセスをリクエストし、根拠セクションでアクセスが必要な理由を説明して、リクエストするロールを指定してください。具体的に記載してください。*
 1. この人の Manager である場合は、Issue に `AR-Approval::Manager Approved` と `ready for provisioning` のラベルを追加してください。自分がアクセスを求める人である場合は、承認のために*自分の* Manager に割り当てる必要があり、その Manager が `AR-Approval::Manager Approved` と `ready for provisioning` のラベルを追加する必要があります。
-1. 承認後、**必ず Issue を[tech stack に一覧化されている system provisioner](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に割り当ててください。**
+1. 承認後、**必ず Issue を[Tech Stack に一覧化されている system provisioner](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に割り当ててください。**
 1. 完了したら Issue をクローズしてください。
 {{% /panel %}}
 
@@ -164,7 +164,7 @@ Okta で設定されているアプリケーションの一覧については、
 ### 部門の Access Request ボード
 
 - 完全に自動化できるまでの間に追加のラベルが必要な場合や、プロセス改善の提案がある場合は、[Issue を作成してください](https://gitlab.com/gitlab-com/it/end-user-services/issues/it-help-issue-tracker/-/issues/new)。
-- AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数の provisioner がいます。テンプレートを自動割り当てできない場合、Business Technology は provisioner がラベルごとに部門の Issue を確認できるボードを提供します（例：`dept::to do`。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
+- AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数の provisioner がいます。テンプレートを自動割り当てできない場合、Business Technology は provisioner がラベルごとに部門の Issue を確認できるボードを提供します（例: `dept::to do`）。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
 - **Issue をある列から別の列へ移動すると、最初のラベル（列ヘッダーごと）が削除され、2 番目のラベルが追加されます。列間で Issue を移動する際は注意してください。**
 - 部門は以下のボードを表示して、未解決のアクセスリクエスト Issue を確認できます。
 
@@ -185,8 +185,8 @@ Okta で設定されているアプリケーションの一覧については、
 
 ## Tech Stack の新しい項目に Access Request プロセスを追加する
 
-tech stack の新しい項目に対する Access Request プロセスを開始する必要がある場合：
+Tech Stack の新しい項目に対する Access Request プロセスを開始する必要がある場合：
 
-1. ツールが [tech stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に追加されていることを確認してください。
+1. ツールが [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に追加されていることを確認してください。
 1. チームメンバーが `provisioner` `deprovisioner` として含まれていることを確認してください。
 1. 関連するハンドブックページに Access Request を送信する要件を文書化してください。
