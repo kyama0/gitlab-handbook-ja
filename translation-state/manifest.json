@@ -31136,22 +31136,6 @@
       "input_hash": "ff67efad1e977cc780f11c2edb2e4e0e6e41a9a992270acc1375e8898083a748",
       "upstream_committed_at": "2026-03-19T09:43:34-05:00"
     },
-    "content/handbook/product/personas/_index.md": {
-      "path": "content/handbook/product/personas/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "66d09296f24b50d105daab89a25a3299bf7ba4a47dbc18cd3ef013712427d436",
-      "upstream_committed_at": "2026-05-22T14:47:44+02:00"
-    },
-    "content/handbook/product/personas/organization-archetype.md": {
-      "path": "content/handbook/product/personas/organization-archetype.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-13T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "81b8b515d85776726fc13d562efb774fa86b574d7b841d44dd30fb4eba48a95a",
-      "upstream_committed_at": "2026-01-23T15:08:44-08:00"
-    },
     "content/handbook/product/groups/_index.md": {
       "path": "content/handbook/product/groups/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",

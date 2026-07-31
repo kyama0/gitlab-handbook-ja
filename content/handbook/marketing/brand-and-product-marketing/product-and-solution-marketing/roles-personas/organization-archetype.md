@@ -1,5 +1,7 @@
 ---
 title: 組織アーキタイプ
+aliases:
+  - /handbook/product/personas/organization-archetype/
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/organization-archetype/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
 lastmod: "2026-07-28T05:53:28-07:00"

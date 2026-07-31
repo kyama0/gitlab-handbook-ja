@@ -18,12 +18,12 @@ stale: false
 ## 現在の設定
 
 - Zendesk Global
-  - Sandbox: 現在は無効
-  - Production: 現在は無効
+  - Sandbox: Currently inactive
+  - Production: Currently inactive
 - Zendesk US Government
   - Sandbox
-    - アクセス権を持つユーザー: すべてのグループ
-    - [x] エージェントコンポーザーに auto assist の返信とアクションを表示
+    - Who has access: All groups
+    - [x] Show auto assist replies and actions in the agent composer
   - Production
-    - アクセス権を持つユーザー: すべてのグループ
-    - [x] エージェントコンポーザーに auto assist の返信とアクションを表示
+    - Who has access: All groups
+    - [x] Show auto assist replies and actions in the agent composer
