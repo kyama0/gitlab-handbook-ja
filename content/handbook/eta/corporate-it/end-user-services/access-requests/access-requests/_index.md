@@ -81,7 +81,7 @@ stale: false
 {{% panel header="**手順**" header-bg="success" %}}
 **この Issue リクエストを送信する前に**
 
-1. リクエストが GitLab のポリシーと手順に沿っていることを確認するため、[Access Control Policy and Procedures](/handbook/security/)を確認してください。確認後も共有アカウントが必要だと判断した場合は、テンプレートを使用して Issue を送信してください。**PCI データを含むシステムでは共有アカウントは許可されないことに注意してください。**
+1. リクエストが GitLab のポリシーと手順に沿っていることを確認するため、[アクセス制御ポリシーと手順](/handbook/security/)を確認してください。確認後も共有アカウントが必要だと判断した場合は、テンプレートを使用して Issue を送信してください。**PCI データを含むシステムでは共有アカウントは許可されないことに注意してください。**
 1. 共有アカウントのリクエストは、IT Ops と記載されている Tech Stack Owner によるレビューと承認が必要です。
 **追加をリクエストするユーザーごとに、[Exception Request](https://gitlab.com/gitlab-com/gl-security/security-assurance/sec-compliance/compliance/issues/new?issuable_template=Exception%20Request)を記録する必要があります。** Exception Request の例外期間は最大 90 日です（デバイスの例外のみ 365 日）。
 例外期間の後は、レビューと承認のために別の例外リクエストを送信する必要があります。**例外リクエストが記録、レビューされ、延長を承認されない場合、共有アカウントは無効になります。** 詳細については、[情報セキュリティポリシー例外管理プロセス](/handbook/security/controlled-document-procedure/#exceptions) ハンドブックページを参照してください。
