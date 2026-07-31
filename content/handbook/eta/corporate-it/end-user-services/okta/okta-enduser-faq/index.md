@@ -66,7 +66,7 @@ GitLab は多くのアプリケーションに Secure Web Authentication (SWA) �
 
 ## アプリの更新をリクエストするにはどうすればよいですか？
 
-まず、[CorpSec Issue](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new)を作成し、イテレーション計画と仕様収集のために `@gitlab-com/gl-security/corp/identity` をタグ付けしてください。Application Update Requests は、Business Technology チーム内の [Change Management Issue](https://gitlab.com/gitlab-com/business-technology/change-management/-/issues/new?issue%5Bmilestone_id%5D=#)で追跡されます。必要なすべての情報フィールドが入力されるよう、`okta_existing_app_udate` テンプレートを使用してください。
+まず、[CorpSec Issue](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new)を作成し、イテレーション計画と仕様収集のために `@gitlab-com/gl-security/corp/identity` をタグ付けしてください。アプリケーション更新リクエストは、Business Technology チーム内の [変更管理 Issue](https://gitlab.com/gitlab-com/business-technology/change-management/-/issues/new?issue%5Bmilestone_id%5D=#)で追跡されます。必要なすべての情報フィールドが入力されるよう、`okta_existing_app_udate` テンプレートを使用してください。
 
 ## アプリの表示順序を変更するにはどうすればよいですか？
 
@@ -110,15 +110,15 @@ Okta は、認証ポリシーに基づく Okta の信頼判断によって認可
 
 ## セルフサービスアプリケーションは Okta でどのように動作しますか？
 
-この例は、Okta ページにリンクされている Application configuration Video にあります。要するに、Add Apps ボタンをクリックし、リクエストする App を検索して、リクエストボタンをクリックします。ベストプラクティスとして、Application owner がリクエストの要件を理解できるよう、作成した Access Request issue へのリンクを追加してください！
+この例は、Okta ページにリンクされている Application configuration ビデオにあります。要するに、Add Apps ボタンをクリックし、リクエストするアプリを検索して、リクエストボタンをクリックします。ベストプラクティスとして、アプリケーションオーナーがリクエストの要件を理解できるよう、作成したアクセスリクエスト Issue へのリンクを追加してください！
 
 ## アプリの名前変更や機能の追加はできますか？
 
-はい、各 Apps に App Notes を追加し、直感的なラベルを追加できるように取り組みます。例として、すでに Workday と他のいくつかで有効にしています。Apps を構成してユーザー体験を改善するには、Okta メインページの Dashboard Tips ビデオを参照してください。
+はい、各アプリにアプリノートを追加し、直感的なラベルを追加できるように取り組みます。例として、すでに Workday と他のいくつかで有効にしています。アプリを構成してユーザー体験を改善するには、Okta メインページの Dashboard Tips ビデオを参照してください。
 
 ## 私のアプリケーションが SAML2.0 経由で統合されていない理由はありますか？
 
-SAML への変換が必要なアプリケーションがあります。更新をリクエストするには、[Change Management Issue](https://gitlab.com/gitlab-com/business-technology/change-management/-/issues/new?issue%5Bmilestone_id%5D=#)を作成してください。
+SAML への変換が必要なアプリケーションがあります。更新をリクエストするには、[変更管理 Issue](https://gitlab.com/gitlab-com/business-technology/change-management/-/issues/new?issue%5Bmilestone_id%5D=#)を作成してください。
 
 ## GitLab Okta のユーザー名とパスワードは何ですか？
 
@@ -126,7 +126,7 @@ GitLab では、GitLab メールアドレスがユーザー名です。パスワ
 
 ## 安全なパスワードを作成するにはどうすればよいですか？
 
-Okta は、パスワードポリシーに沿ったパスワード複雑性ルールと長さを使用して、強力なパスワードをサポートします。ルールを確認するには、[GitLab の Password Policy ガイドライン](/handbook/security/policies_and_standards/password-standard/)に従ってください。
+Okta は、パスワードポリシーに沿ったパスワード複雑性ルールと長さを使用して、強力なパスワードをサポートします。ルールを確認するには、[GitLab のパスワードポリシーガイドライン](/handbook/security/policies_and_standards/password-standard/)に従ってください。
 
 ## 多要素認証 (MFA) はどのように機能しますか？
 
@@ -178,7 +178,7 @@ GitLab 管理者はユーザー名を確認できますが、パスワードや�
 
 ## Okta は業務関連の認証情報にのみ使用されますか？使用される場合、どのように強制されますか？
 
-現時点では、誰かが個人用の認証情報を使用することを妨げるものはありません。詳細については、Apps の構成について作成されたビデオを参照してください。
+現時点では、誰かが個人用の認証情報を使用することを妨げるものはありません。詳細については、アプリの構成について作成されたビデオを参照してください。
 
 ## Okta は MFA を可視化できますか？
 

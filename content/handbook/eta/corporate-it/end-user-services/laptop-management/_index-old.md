@@ -70,7 +70,7 @@ stale: false
 
 ## 例外
 
-この手順の例外は、[Information Security Policy Exception Management Process](/handbook/security/controlled-document-procedure/#exceptions)に従って追跡されます。
+この手順の例外は、[情報セキュリティポリシー例外管理プロセス](/handbook/security/controlled-document-procedure/#exceptions)に従って追跡されます。
 
 ## 参照
 

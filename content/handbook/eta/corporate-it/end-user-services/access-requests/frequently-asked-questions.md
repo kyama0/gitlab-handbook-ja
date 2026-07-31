@@ -26,7 +26,7 @@ stale: false
 ### システムまたはグループ／vault へのアクセスが必要ですか？
 
 1. ニーズに基づいてテンプレートを選択してください。ほとんどの人は [Bulk](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Bulk_Access_Request) または [Single Person](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) テンプレートを使用します。
-1. オンボーディング中に漏れた場合を除き、baseline entitlement の一部であるものについて Access Request を作成しないでください。
+1. オンボーディング中に漏れた場合を除き、baseline entitlement の一部であるものについてアクセスリクエストを作成しないでください。
     1. [全チームメンバーの baseline entitlement](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/#baseline-entitlements-all-gitlab-team-members)
     1. [ロールベースの baseline entitlement](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/tree/master/.gitlab/issue_templates/role_baseline_access_request_tasks)
 1. 次の場合を**除き**、Issue には `AR-Approval::Manager Approved` ラベルが必要です。
@@ -61,14 +61,14 @@ Teleport を使用して、一時的なアクセスを次のいずれかにリ�
 
 ### Zendesk に Light Agent としてアクセスする必要があります
 
-Zendesk の light access に Access Request を作成する必要はありません。[メールでアクセスを取得する手順](/handbook/support/internal-support/)に従ってください。
+Zendesk Light アクセスのアクセスリクエストを作成する必要はありません。[メールでアクセスを取得する手順](/handbook/support/internal-support/)に従ってください。
 
 ### メールエイリアスを追加するか、氏名を変更する必要があります
 
 メールエイリアスの追加または氏名変更には、[`slack_googlegroup_1password` AR テンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/issues/new?issuable_template=slack_googlegroup_1Passwordgroupvault)を使用してください。
 リクエストできる内容や数に制限はありませんが、追加または変更について短い説明を記載してください。不適切と判断された場合、または operations の裁量により、一部のエイリアスリクエストが却下されることがあります。
 
-このアプリケーションの自動化は Okta で行われますが、「真の」システムのプロビジョニングとプロビジョニング解除は、影響を受けるシステム内で Access Change Request を通じて手動で完了する必要があります。
+このアプリケーションの自動化は Okta で行われますが、「真の」システムのプロビジョニングとプロビジョニング解除は、影響を受けるシステム内でアクセス変更リクエストを通じて手動で完了する必要があります。
 
 ### 古いアクセスリクエストをクローズする
 
@@ -86,4 +86,4 @@ Zendesk の light access に Access Request を作成する必要はありませ
 
 ### 既存のアクセスを削除する必要があります
 
-削除する必要があるアクセスと対象者を指定した Access Request を作成してください。
+削除する必要があるアクセスと対象者を指定したアクセスリクエストを作成してください。
