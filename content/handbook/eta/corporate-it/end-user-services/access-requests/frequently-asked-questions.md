@@ -19,8 +19,8 @@ stale: false
 
 1. アクセスリクエストが[手順](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests#how-do-i-choose-which-template-to-use)に従って完了していること、およびアクセスが必要なシステム／vault／グループ／プロジェクトと、必要なロールまたは権限を含めたことを確認してください。
 1. ほとんどのアクセスリクエストには Manager の承認が必要です。AR で Manager をタグ付けし、Issue に ~"AR-Approval::Manager Approved" と ~"ReadyForProvisioning" のラベルを追加するよう依頼してください。
-1. アクセスをリクエストしているツールに対して、正しい provisioner を Issue にタグ付けし、担当に割り当てたことを確認してください。すべてのツールの provisioner は [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)で確認できます。
-1. provisioner が IT チームの場合は、AR に ~"IT::to do" ラベルを追加してください。
+1. アクセスをリクエストしているツールに対して、正しいプロビジョニング担当者を Issue にタグ付けし、担当に割り当てたことを確認してください。すべてのツールのプロビジョニング担当者は [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)で確認できます。
+1. プロビジョニング担当者が IT チームの場合は、AR に ~"IT::to do" ラベルを追加してください。
 1. 上記のすべての手順を実行してもアクセスリクエストの対応が進まない場合は、ツールを所有するチームの Slack チャンネルで連絡してください。各チームの Slack Channel は [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)で確認できます。
 
 ### システムまたはグループ／vault へのアクセスが必要ですか？
