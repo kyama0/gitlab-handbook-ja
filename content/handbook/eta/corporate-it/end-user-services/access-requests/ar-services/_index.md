@@ -45,7 +45,7 @@ Access Requests は Corporate Security Helpdesk チームが担当します。�
 - 特定の SLA はありませんが、Issue で `@gitlab-com/business-technology/end-user-services` にメンションしてください。
 - リクエストが緊急の場合は、アクセスリクエストへのリンクを Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com を通じて投稿してください。
 
-## Access Requests に取り組む
+## アクセスリクエストへの取り組み
 
 ### 部門の Access Request ボード
 

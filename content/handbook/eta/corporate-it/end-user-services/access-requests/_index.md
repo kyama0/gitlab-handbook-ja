@@ -107,7 +107,7 @@ baseline Issue テンプレートの一覧は[こちら](https://gitlab.com/gitl
 
 Baseline Entitlement Requests の作成に関する追加サポートについては、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com からお問い合わせください。
 
-## Access Requests に取り組む
+## アクセスリクエストへの取り組み
 
 ### 部門の Access Request ボード
 
