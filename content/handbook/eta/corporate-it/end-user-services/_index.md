@@ -47,7 +47,7 @@ End User Services (EUS) チームは GitLab の IT ヘルプデスクです。�
 1. [オンボーディング](/handbook/security/corporate/services/onboarding)と[オフボーディング](/handbook/security/corporate/services/offboarding)の自動化と全体設計
 1. [サービスアカウント](/handbook/security/corporate/services/service-accounts)
 
-Corporate IT または Corporate Security が管理していないシステムについては、[tech stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) で所有者を確認できます。どこに問い合わせればよいかわからない場合は、私たちに連絡してください。適切な担当者または場所に案内します。
+Corporate IT または Corporate Security が管理していないシステムについては、[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) で所有者を確認できます。どこに問い合わせればよいかわからない場合は、私たちに連絡してください。適切な担当者または場所に案内します。
 
 ## ヘルプ記事
 

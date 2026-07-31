@@ -24,7 +24,7 @@ Gmail は主要なメールアプリケーションです。Okta Dashboard の `
 - [スパムメッセージを報告する](#reporting-spam-messages)
 - [追加サポート](#additional-support)
 
-## Gmail アクセスリクエスト
+## Gmail アクセスリクエスト {#gmail-access-requests}
 
 次のリクエストには、[この AR テンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Google_Gmail_Request)を使用できます:
 
@@ -32,14 +32,14 @@ Gmail は主要なメールアプリケーションです。Okta Dashboard の `
 - 他者の Gmail に設定する不在メッセージ
 - 自分の Gmail アカウントに作成するエイリアス
 
-## 不在時の返信を設定する
+## 不在時の返信を設定する {#set-up-out-of-office-replies}
 
 1. Gmail の [General Settings](https://mail.google.com/mail/u/0/#settings/general) ページに移動します
 1. `Out-of-Office AutoReply:` までスクロールします
 1. メッセージの開始日と終了日を設定します
 1. 不在時の返信メッセージを記入します。不在中に責任を引き継ぐ人の連絡先詳細を必ず含めてください。
 
-## エイリアスを使用する
+## エイリアスを使用する {#using-aliases}
 
 1. [Gmail サポート AR](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Google_Gmail_Request)を作成し、アカウントへのエイリアス追加をリクエストします
 1. 付与されたら、[Gmail Accounts Settings ページ](https://mail.google.com/mail/u/0/#settings/accounts)に移動します
@@ -47,7 +47,7 @@ Gmail は主要なメールアプリケーションです。Okta Dashboard の `
 1. 表示されるポップアップに別のメールアドレスを入力し、`Next Step` をクリックします
 1. 新しいメールアドレスがアカウントに表示され、デフォルトにするかどうかを選択できます
 
-## 委任アクセスを設定する
+## 委任アクセスを設定する {#set-up-delegate-access}
 
 メッセージ送信などのタスクを他者がアカウントへアクセスして実行できるようにするには、まずアカウントでこの機能を有効にする必要があります。
 
@@ -58,7 +58,7 @@ Gmail は主要なメールアプリケーションです。Okta Dashboard の `
 1. 委任アクセスを受け取るユーザーに、確認メッセージのメールを確認するよう依頼します
 1. 承認後、そのユーザーは Gmail アカウントの右上にあるプロフィール画像をクリックし、アカウント名を選択することで、あなたの代理としてメッセージを送信できます
 
-## フィルターとラベルを設定する
+## フィルターとラベルを設定する {#setting-up-filters-and-labels}
 
 フィルターとラベルを使用すると、受信メールを自動的に並べ替えて受信トレイを整理したり、不要なメッセージを自動的に削除したりできます。
 
@@ -69,7 +69,7 @@ Gmail は主要なメールアプリケーションです。Okta Dashboard の `
 1. 指定した条件に一致するすべてのメールを Gmail がどのように処理するか指定します
 1. `Create filter` をクリックします
 
-### ラベル
+### ラベル {#labels}
 
 指定した条件に一致するメールを Gmail がどのように処理するかを指定するとき、`Apply the label:...` のチェックボックスがあります。これらのラベルは、内容に基づいて受信メールを簡単にマークしてフィルターするために使用できます。
 
@@ -79,12 +79,12 @@ Gmail は主要なメールアプリケーションです。Okta Dashboard の `
 1. `Apply the label..` フィールドの横にあるボックスを必ずチェックし、ドロップダウンメニューからラベルを選択します
 1. メールフィルターの設定を続けます
 
-## スパムメッセージを報告する
+## スパムメッセージを報告する {#reporting-spam-messages}
 
 1. 受信トレイの右側で、`PhishArm` アドオンアイコンをクリックします
 1. 不審なメールをクリックします。**メール内のリンクを絶対にクリックしないでください**
 1. PhishArm パネルの `Report Email` ボタンをクリックします
 
-## 追加サポート
+## 追加サポート {#additional-support}
 
 追加のサポートが必要な場合は、Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけます）または [it-help@gitlab.com](mailto:it-help@gitlab.com) から IT に連絡してください。

@@ -15,7 +15,7 @@ stale: false
 1. [モバイルパスキーと YubiKey のセットアップ](#mobile-passkey-and-yubikey-setup)
 1. [Okta Verify](#okta-verify)
 
-### モバイルパスキーと YubiKey のセットアップ
+### モバイルパスキーと YubiKey のセットアップ {#mobile-passkey-and-yubikey-setup}
 
 > モバイルデバイスにパスキーを追加しても、GitLab がスマートフォン上のデータへアクセスできるようにはなりません。詳細は https://support.okta.com/help/s/article/Passkey-Management を参照してください
 > 以下の手順は iOS と Android の両方のデバイスに適用されます
@@ -54,7 +54,7 @@ stale: false
   </li>
 </ol>
 
-### Okta Verify
+### Okta Verify {#okta-verify}
 
 > これらの手順は Apple および Android デバイスに適用されます
 

@@ -98,7 +98,7 @@ Access Requests は IT チームが担当し、オンボーディング、オフ
 #### 共有アカウントに関する IT 向けの手順とガイダンス
 
 1. 共有アカウントのアクセスリクエストをレビューし、共有アカウントに追加する各ユーザーについて[Exception Request](https://gitlab.com/gitlab-com/gl-security/security-assurance/sec-compliance/compliance/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=Exception%20Request)があることを確認してください。Exception Request をレビューし、Access Request Issue に例外期間を記載してください。承認を追加したり共有アカウントを設定したりする前に、Exception Request が Security によりレビューおよび承認されていることを確認してください。
-1. すべての共有アカウントは Okta 経由で管理する必要があります。1password を使用する必要がある場合（okta を技術的に使用できない場合）は、そのことを Access Request に明記する必要があります。
+1. すべての共有アカウントは Okta 経由で管理する必要があります。1Password を使用する必要がある場合（Okta を技術的に使用できない場合）は、そのことを Access Request に明記する必要があります。
 1. 共有アカウントを Okta で管理する場合 - 例外のタイムラインに応じて共有アカウントアクセスをレビューし、Issue をクローズするためのレビュー／リマインダー日を Okta に設定してください。
    1. タイムラインの期限が近づいていることに関する通知を Okta から受け取った場合は、新しい共有アカウントのアクセスリクエストを記録し、完了するために Shared Account Owner に割り当ててください。
 1. 共有アカウントを 1Password で管理する場合 - 例外のタイムラインに応じた期限を追加し、Issue をオープンのままにしてください。

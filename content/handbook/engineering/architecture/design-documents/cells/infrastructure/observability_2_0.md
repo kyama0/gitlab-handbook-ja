@@ -70,7 +70,7 @@ graph TD
 
 ゲートウェイ、認証、自動化レイヤーの詳細については、[ADR 028: Observability Federation](../decisions/028_observability_federation.md)を参照してください。
 
-### 一元化された Remote Write ではなくフェデレーテッドプルを選ぶ理由
+### 一元化された Remote Write ではなくフェデレーテッドプルを選ぶ理由 {#why-federated-pull-instead-of-centralized-remote-write}
 
 すべての Cell が完全なテレメトリストリームをグローバル Mimir クラスターへ継続的に remote write する一元化アーキテクチャは、当初検討されていました（[設計](https://gitlab.com/gitlab-com/gl-infra/tenant-scale/tenant-services/team/-/work_items/403)を参照）。
 

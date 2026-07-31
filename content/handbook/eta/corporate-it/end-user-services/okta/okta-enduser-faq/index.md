@@ -105,7 +105,7 @@ GitLab は多くのアプリケーションに Secure Web Authentication (SWA) �
 
 **SAML** - SAML（Security Assertion Markup Language）統合は、エンドユーザーがワンクリックでアプリにアクセスできる Federated Authentication 標準を提供します。
 SAML は、Okta などのアイデンティティプロバイダー (IdP) とサービスプロバイダー (SP) の間で認証および認可データを交換するための XML ベースの標準です。
-アプリケーションが SAML をサポートしている場合、これは SWA より優れた Authentication Protocol です。SAML が有効な場合、Okta はアプリケーションの Authentication provider になります。また、この Authentication Protocol により、ユーザーの Authentication の動作をより詳細に制御できます。
+アプリケーションが SAML をサポートしている場合、これは SWA より優れた認証プロトコルです。SAML が有効な場合、Okta はアプリケーションの認証プロバイダーになります。また、この認証プロトコルにより、ユーザーの認証の動作をより詳細に制御できます。
 Okta は、認証ポリシーに基づく Okta の信頼判断によって認可される「パスワードレス」アサーション方式である SAML Assertions を使用して Cloud Applications を認証できます。これにより、認証情報漏洩への露出が減り、監査可能性が向上します。
 
 ## セルフサービスアプリケーションは Okta でどのように動作しますか？

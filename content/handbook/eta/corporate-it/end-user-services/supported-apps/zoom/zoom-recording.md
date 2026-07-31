@@ -22,13 +22,13 @@ stale: false
     - [Zoom アプリを使用する](#using-the-zoom-app)
   - [録画動画の文字起こし](#recording-video-transcripts)
 
-## Zoom での録画
+## Zoom での録画 {#recording-in-zoom}
 
 Zoom ミーティングを録画できるようにするには、まず Zoom プロフィールで録画を有効にする必要があります。\
 [Recording Settings](https://zoom.us/profile/setting?tab=recording)からこのページにアクセスできます。\
 録画するにはサインインしている必要があります。
 
-### ギャラリービューを使用して全参加者を録画する
+### ギャラリービューを使用して全参加者を録画する {#record-all-participants-using-gallery-view}
 
 デフォルトの録画ビューを `Gallery view` に設定することを検討してください。
 
@@ -42,7 +42,7 @@ Zoom ミーティングを録画できるようにするには、まず Zoom プ
 
 Zoom サポートの録画に関する一般情報は[こちら](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0059856)でも確認できます
 
-### Zoom ミーティングを HD で録画する
+### Zoom ミーティングを HD で録画する {#recording-zoom-meetings-in-hd}
 
 1. [Zoom プロフィール設定](https://gitlab.zoom.us/profile/setting)に移動します
 1. 上部メニューの `Meeting` タブをクリックします
@@ -53,7 +53,7 @@ Zoom サポートの録画に関する一般情報は[こちら](https://support
 
 これで、Zoom ミーティングをフル HD で録画するよう設定が更新されます。
 
-### 自動録画
+### 自動録画 {#auto-recording}
 
 ミーティングを自動録画するには、[クラウド録画](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0067954)を設定します
 
@@ -63,7 +63,7 @@ Zoom を設定して、クラウドに自動保存することもできます。
 1. ミーティングのトピックを設定することは重要です。設定しない場合、すべてのミーティングが一般的な名前で録画されます
 1. 録画が完了すると、動画は Zoom アカウントの "Recordings" セクションに表示されません
 
-### 共有ドライブ録画
+### 共有ドライブ録画 {#shared-drive-recording}
 
 <div class="w3-panel w3-yellow">
   <h3>注意！</h3>
@@ -76,7 +76,7 @@ Zoom を設定して、クラウドに自動保存することもできます。
 - タイトルを変更せずにミーティングを自動アップロードしやすくするため、同期スクリプトでは[許可リスト](https://gitlab.com/gitlab-com/zoom-sync#allow-list)も使用します
 - ミーティングタイトルが、指定したホストのメールアドレスを持つ提供された正規表現に一致する場合、そのミーティングも Google Drive にアップロードされます。[現在のリスト](https://gitlab.com/gitlab-com/zoom-sync/-/blob/master/zoom_sync.yml)を変更するにはマージリクエストを作成してください。
 
-### 録画権限を持つミーティングホストを識別する方法
+### 録画権限を持つミーティングホストを識別する方法 {#how-to-identify-the-meeting-host-with-recording-permissions}
 
 ミーティングに参加した後、以下のいずれかの方法でこの情報を確認できます。
 
@@ -88,20 +88,20 @@ Zoom を設定して、クラウドに自動保存することもできます。
    1. 左上隅に移動すると、i アイコンが表示されます
    1. アイコンを選択して、通話を録画できるミーティングホストを見つけます
 
-### ホストが不在の場合に録画を許可する方法
+### ホストが不在の場合に録画を許可する方法 {#how-to-allow-recording-when-the-host-is-not-present}
 
 これは通常、ホストが常に参加できるとは限らない定期ミーティングで発生します。
 
 ミーティング作成者は、参加できない場合でも他の人が録画を開始できるよう、同僚を `Alternative Hosts` として追加する必要があります。
 
-#### Web サイトを使用する
+#### Web サイトを使用する {#using-the-website}
 
 1. `https://gitlab.zoom.us/meeting/<meeting id>/edit` に移動します
 1. 下までスクロールして "Alternative Hosts" を見つけます
 1. 1 人以上の同僚のメールアドレスをコンマで区切って追加します
 1. Save をクリックします
 
-#### Zoom アプリを使用する
+#### Zoom アプリを使用する {#using-the-zoom-app}
 
 1. "Meetings" をクリックします
 1. アプリの左側でミーティングを見つけます
@@ -111,7 +111,7 @@ Zoom を設定して、クラウドに自動保存することもできます。
 1. 1 人以上の同僚のメールアドレスをセミコロンで区切って追加します
 1. Save をクリックします。
 
-### 録画動画の文字起こし
+### 録画動画の文字起こし {#recording-video-transcripts}
 
 - [クローズドキャプションとライブ文字起こし](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0062490)はすべてのユーザーでデフォルトで有効ですが、ホストがミーティング開始後に手動で有効にしない限り、参加者には字幕が表示されません
 - 録画されたミーティングの終了後、文字起こしは他の録画ファイルと同じフォルダー内のテキストファイルで利用できます

@@ -69,7 +69,7 @@ lastmod: "2025-04-28T10:53:04-07:00"
 
    **理由:** グローバルな可観測性が必要であるため、GitLab Dedicated からのすべてのメトリクスが、ダッシュボードへのアクセス権を持つすべての人が利用できることになります。これはすべての Dedicated のメトリクスに対して許可されない可能性があります。そのため、ステージグループのエラーバジェットを含むグローバルスタックにそれらのメトリクスを組み込む前に、その対処方法を検討する必要があります。
 
-## 設計と実装の詳細
+## 設計と実装の詳細 {#design-and-implementation-details}
 
 Cells のデプロイメントは、GitLab Dedicated 環境の作成と管理にも使用される [Instrumentor](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/instrumentor) を効果的に使用します。
 Instrumentor は AWS と GCP へのデプロイが可能ですが、Cells では GCP のみが対象となります。

@@ -19,7 +19,7 @@ Firefox、Safari などの他のブラウザの使用は推奨もサポートも
 - [ベンダードキュメント - Chrome をインストールする](https://support.google.com/chrome/answer/95346?hl=en&co=GENIE.Platform%3DDesktop&oco=0#zippy=%2Cmac)
 - [ベンダードキュメント - Chrome プロファイル](https://support.google.com/chrome/answer/185277?hl=en&ref_topic=7439538&sjid=3263200837792153330-NC)
 
-## Enterprise Browser Management
+## エンタープライズブラウザ管理
 
 [Chrome Enterprise Browser Management](https://chromeenterprise.google/browser/management/)は、Corporate Security システム管理者が次の利点を得られるようにするサービスです:
 

@@ -20,19 +20,19 @@ stale: false
 - [Zoom でミュートするショートカットを設定する](#set-up-a-shortcut-for-muting-in-zoom)
 - [参加者が先に参加した場合のホスト向けメール通知を有効にする](#enabling-email-notifications-for-hosts-when-attendees-join-first)
 
-## Zoom で音声とビデオをテストする
+## Zoom で音声とビデオをテストする {#test-audio-and-video-in-zoom}
 
 Zoom を初めて使用する前に、[音声をテスト]( https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0062765)し、[ビデオをテスト](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0061836)することをおすすめします。
 Zoom には独自の[テスト](https://zoom.us/test)もあり、すべてが正しく設定されていることを確認するために使用できます。
 
-## Zoom プロフィールをカスタマイズする
+## Zoom プロフィールをカスタマイズする {#customize-your-zoom-profile}
 
 Zoom では、表示名、場所、役職名など、さまざまな設定をカスタマイズできます。
 
 1. Chrome を開き、[Zoom プロフィールページ](https://gitlab.zoom.us/profile)に移動します
 1. ページ上の各種フィールドの横にある **Edit** をクリックし、すべての詳細が正しいことを確認します
 
-## カスタマイズしたパーソナルリンクを作成する
+## カスタマイズしたパーソナルリンクを作成する {#create-a-customized-personal-link}
 
 パーソナライズされたリンクを使用すると、Zoom ミーティング用に短く覚えやすいリンクを作成できます。
 
@@ -54,7 +54,7 @@ Zoom では、表示名、場所、役職名など、さまざまな設定をカ
 1. ページ下部付近で "Edit" を選択し、"Passcode" ボックスのチェックを外します。
 1. "Save" を選択します。
 
-## Zoom 待機室
+## Zoom 待機室 {#zoom-waiting-rooms}
 
 他の人が参加することを防ぐため（例えば、連続したミーティングの場合）、パーソナルミーティングルームで[待機室](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0063329)機能を有効にすることをおすすめします。\
 パーソナルミーティングでこれを有効にするには、いくつかの手順があります:
@@ -65,7 +65,7 @@ Zoom では、表示名、場所、役職名など、さまざまな設定をカ
 1. 待機室のオプションをさらに編集したり、カスタム動画や画像で待機室をカスタマイズしたりできます。
     1. 詳細は [Zoom の公式ドキュメント](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0059359)を参照してください
 
-## 画面共有を有効にする
+## 画面共有を有効にする {#enable-screen-sharing}
 
 通話の参加者と画面を共有するには、Mac のシステム設定で Zoom に適切なアクセスを許可する必要があります。
 
@@ -81,7 +81,7 @@ Zoom では、表示名、場所、役職名など、さまざまな設定をカ
     1. Zoom がリストに表示されない場合は、`+` ボタンをクリックし、**zoom.us** アプリケーションを手動で選択します
 1. Zoom を再起動します
 
-## キャプションとライブ文字起こしを有効にする
+## キャプションとライブ文字起こしを有効にする {#enable-captions-and-live-transcription}
 
 ミーティングのホストである場合は、アクセシビリティのためにライブ文字起こしを有効にすることを検討してください。ライブ文字起こしはデフォルトで有効になっておらず、ミーティングごとに手動で有効にする必要があります:
 
@@ -90,7 +90,7 @@ Zoom では、表示名、場所、役職名など、さまざまな設定をカ
 
 ホストが不在の場合、誰もライブ文字起こしを有効にできません。ミーティングを作成したが参加しない場合は、出席する人に代替ホスト権限を割り当てて、その人がライブ文字起こしを有効にできるようにすることを検討してください。
 
-## Zoom でミュートするショートカットを設定する
+## Zoom でミュートするショートカットを設定する {#set-up-a-shortcut-for-muting-in-zoom}
 
 Zoom が選択されているウィンドウでない場合でも、ミュート／ミュート解除用のホットキーが必要になることがあります。
 次の手順で設定します:
@@ -99,7 +99,7 @@ Zoom が選択されているウィンドウでない場合でも、ミュート
 1. `Mute/Unmute My Audio` の `Enable Global Shortcut` ボックスにチェックを入れます
 1. `F1`（Cmd 1）など、任意のキーボードショートカットにマッピングできます
 
-## 参加者が先に参加した場合のホスト向けメール通知を有効にする
+## 参加者が先に参加した場合のホスト向けメール通知を有効にする {#enabling-email-notifications-for-hosts-when-attendees-join-first}
 
 1. Zoom アカウントの[設定](https://gitlab.zoom.us/profile/setting)に移動します。
 1. `Meeting` タブをクリックします。

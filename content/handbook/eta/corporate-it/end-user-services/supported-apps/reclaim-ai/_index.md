@@ -26,13 +26,13 @@ Reclaim.ai を使用する GitLab チームメンバーとして、以下のセ�
 - [データの正確性と完全性](#data-accuracy-and-completeness)
 - [追加サポート](#additional-support)
 
-## データ分類
+## データ分類 {#data-classification}
 
 **Reclaim.ai は Orange データを処理できます**
 
 Reclaim.ai の利用が GitLab のデータ分類および取り扱いポリシーに沿っていることを確認してください。機密の顧客情報やその他の RED データを含めないでください。
 
-## 記録システムの維持
+## 記録システムの維持 {#system-of-record-maintenance}
 
 **Reclaim.ai はカレンダーを補強できますが、責任は引き続きあなたにあります！**
 
@@ -41,7 +41,7 @@ Reclaim.ai の利用が GitLab のデータ分類および取り扱いポリシ�
 - Reclaim.ai と主要なカレンダーシステム間で同期される情報が正確であることを定期的に確認します
 - 重要なスケジュールとタスク情報のバックアップコピーを Reclaim.ai 外に保持します
 
-## マネージャーの責任
+## マネージャーの責任 {#manager-responsibilities}
 
 **マネージャーの場合: 関与していることを確認してください**
 
@@ -50,20 +50,20 @@ Reclaim.ai の利用が GitLab のデータ分類および取り扱いポリシ�
 - 事業部門固有の懸念を考慮し、Reclaim.ai を通じて管理すべき情報とすべきでない情報の種類をチームメンバーとともに決定します
 - チームのアクセスと利用パターンを定期的にレビューします
 
-## 災害復旧と事業継続性
+## 災害復旧と事業継続性 {#disaster-recovery-and-business-continuity}
 
 Reclaim.ai のユーザーは、次を行う必要があります:
 
 - Reclaim.ai だけに依存しない代替のスケジューリングおよび生産性ワークフローを維持します
 - 重要なミーティングとタスクも GitLab の主要システム（Google Calendar、GitLab Issues など）で追跡されるようにします
 
-## セキュリティ設定の変更
+## セキュリティ設定の変更 {#security-configuration-changes}
 
 - IT EUS はセキュリティおよび設定変更を承認できます。すべてのリクエストは通常の[アクセスリクエストプロセス](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を経由する必要があります
 - IT EUS は、データ伝送に影響する重要な設定変更を行う前に Security チームと調整する必要があります
 - 変更を行うすべての人は、監査目的で設定変更に関する標準ワークフローに従う必要があります
 
-## セキュリティインシデントの報告
+## セキュリティインシデントの報告 {#security-incident-reporting}
 
 ### 必要な即時対応
 
@@ -91,7 +91,7 @@ Reclaim.ai に関するセキュリティインシデントが疑われる場合
 - インシデントを封じ込めるためにすでに実施した手順
 - 利用可能な証拠またはログ
 
-## データの正確性と完全性
+## データの正確性と完全性 {#data-accuracy-and-completeness}
 
 Reclaim.ai のユーザーは、次を行う必要があります:
 
@@ -109,7 +109,7 @@ Reclaim.ai のユーザーは、次を行う必要があります:
 - **Confidential**: 機密性の高いビジネス情報、人事事項、戦略的な話し合い
 - **Restricted**: 外部 AI システムで処理すべきでない高度に機密性の高い情報
 
-## 追加サポート
+## 追加サポート {#additional-support}
 
 Reclaim.ai の利用、セキュリティ上の懸念、コンプライアンス要件に関する質問:
 

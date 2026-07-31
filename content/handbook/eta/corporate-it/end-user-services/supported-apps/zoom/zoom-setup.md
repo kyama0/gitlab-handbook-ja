@@ -20,29 +20,29 @@ stale: false
   - [Google Calendar](#google-calendar)
   - [Slack](#slack)
 
-## インストール
+## インストール {#installation}
 
 GitLab 支給の MacBook を使用している場合、最初にラップトップをセットアップすると Zoom が自動的にインストールされます。手動でアプリをインストールするには、以下の手順を参照してください。
 
-### MacOS
+### MacOS {#macos}
 
 - **Finder** を開き、**Applications** に移動して見つかる **Self Service** アプリを開きます。Zoom を検索し、インストールオプションを選択します。
 - または、[Zoom 公式ダウンロードページ](https://zoom.us/download?os=mac)から Zoom を直接ダウンロードしてインストールすることもできます
 
-### Linux
+### Linux {#linux}
 
 - Zoom の最新バージョンは[こちら](https://zoom.us/download?os=linux)からダウンロードできます
 
-## セットアップ
+## セットアップ {#setup}
 
 1. **Zoom** アプリを開きます
 1. `or sign in with` の下にある **SSO** をクリックします
 1. Chrome が自動的に開き、Okta 資格情報でサインインする必要がある Okta ログインページに移動します
 1. Chrome タブの青い **Launch Zoom Workplace** ボタンをクリックします。Zoom アプリウィンドウの右上にプロフィール画像が表示されます
 
-## Zoom を他のアプリに接続する
+## Zoom を他のアプリに接続する {#connect-zoom-to-other-apps}
 
-### Google Chrome
+### Google Chrome {#google-chrome}
 
 1. Zoom 拡張機能はデフォルトでインストールされているはずです
    1. そうでない場合は、[Chrome Web Store](https://chromewebstore.google.com/detail/zoom-chrome-extension/kgjfgplpablkjnlkjmjdecgdpfankdle)からインストールできます
@@ -52,7 +52,7 @@ GitLab 支給の MacBook を使用している場合、最初にラップトッ�
 1. `Company Domain` フィールドに **gitlab** と入力し、**Continue** をクリックします
 1. Okta でサインインし、求められた場合は Chrome に Zoom へのアクセスを許可することを確認します
 
-### Google Calendar
+### Google Calendar {#google-calendar}
 
 Chrome 拡張機能を使用すると、Google Calendar を通じて Zoom ミーティングを作成できます。ただし、通常のミーティングを作成し、`Add video conferencing` オプションから Zoom リンクを手動で追加することもできます
 
@@ -65,7 +65,7 @@ Chrome 拡張機能を使用すると、Google Calendar を通じて Zoom ミー
 1. `Authorization Successful!` 通知が表示されたポップアップ画面を閉じます
 1. Google Calendar と Zoom をより適切に同期するため、[Zoom Web ポータルとカレンダー間で Zoom ミーティングデータの双方向同期](https://zoom.us/profile/setting?tab=zoomMailCalendar#CalendarEventSyncBackToMeeting)を有効にします
 
-### Slack
+### Slack {#slack}
 
 任意の Slack チャンネルまたはチャットで `/zoom` コマンドを使用して、Slack から直接 Zoom ミーティングを開始できます
 

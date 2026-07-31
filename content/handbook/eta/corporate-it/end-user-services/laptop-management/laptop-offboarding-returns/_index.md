@@ -39,7 +39,7 @@ GitLab の裁量により、以下の条件で会社支給デバイスの返却�
 
 > ハードウェア返却の場合、追加情報またはリクエストについてベンダーから直接連絡が来る場合があります。
 
-### ラップトップの買い戻し
+### ラップトップの買い取り
 
 >チームメンバーが、調査、不正行為、正当な理由による解雇、[GitLab の Code of Business Conduct & Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx)の違反、その他の法的またはセキュリティ関連の照会に関与している場合、ラップトップを購入または無償で保持するオプションが無効になることがあります。
 
@@ -68,7 +68,7 @@ GitLab チームメンバーとして、基準に沿ったベンダーを追加�
 
 1. [ラップトップ更新](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering/#laptop-refreshes) Issue を作成する際、ラップトップを寄付する意向と、寄付先の[承認済みベンダー](https://docs.google.com/spreadsheets/d/15g4v5coC_yLlVNTKUZMwATllZhxzqbxrtvwJsi8bjXE/edit#gid=0)を指定できます
     1. オフボーディングの場合は、[メール](mailto:laptops@gitlab.com)でお問い合わせいただき、私たちが支援できるかをお知らせください。
-1. ロジスティクスのどのオプションを使用するかを Issue に記載します: Local Drop off または Sending via courier。
+1. ロジスティクスのどのオプションを使用するかを Issue に記載します: 地元での持ち込み、または宅配便での発送。
 1. セキュリティ上の理由から、持ち込みまたは送付の前に[ラップトップワイプ](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-wipe/)プロセスを完了したことを確認してください。
 
 質問または懸念がある場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または laptops@gitlab.com からお問い合わせください。

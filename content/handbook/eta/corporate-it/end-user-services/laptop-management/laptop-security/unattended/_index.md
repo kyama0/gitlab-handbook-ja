@@ -17,7 +17,7 @@ stale: false
 - ロック解除したコンピューターを放置しないでください。
 - スクリーンセーバーを有効にし、デスクトップをロックするか、蓋を閉じます。
 - 可能な場合は、完了時にアクティブな Web ブラウザセッションからサインアウトするか閉じます。
-- 公共の[ワイヤレスネットワーク](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/networks)を使用する場合は、ネットワークトラフィックの傍受を避けるため、未使用時または旅行中にラップトップの WiFi を無効にするか、Nordlayer VPN を使用してください。
+- 公共の[ワイヤレスネットワーク](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/networks)を使用する場合は、ネットワークトラフィックの傍受を避けるため、未使用時または旅行中にラップトップの WiFi を無効にするか、NordLayer VPN を使用してください。
 
 ## スクリーンセーバーとパスワードロック
 

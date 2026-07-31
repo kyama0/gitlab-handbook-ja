@@ -26,7 +26,7 @@ Linux ユーザーには、セキュリティポリシーに準拠しながら�
    1. [SentinelOne のインストール - ドイツ、オランダ、イタリア、オーストリアのみ](#sentinelone-installation---germany-the-netherlands-italy-and-austria-only)
 1. [追加リソース](#additional-resources)
 
-## 開始する前に
+## 開始する前に {#before-you-begin}
 
 新しい Linux ラップトップを設定するには、次のものが必要です:
 
@@ -35,7 +35,7 @@ Linux ユーザーには、セキュリティポリシーに準拠しながら�
 1. カメラを備えた最新の iOS または Android デバイス、または YubiKey
 1. 初日に個人メールへ送信される Okta アクティベーションメール
 
-## セキュリティ要件
+## セキュリティ要件 {#security-requirements}
 
 >**注記**: Ubuntu LTS（最新バージョン）は唯一承認された Linux ディストリビューションです。これにより GitLab はすべての規制およびコンプライアンス基準を満たし、Ubuntu は必要なセキュリティツールの実行に高い信頼性を示しています。
 
@@ -46,7 +46,7 @@ Okta にログインするには、以下のセキュリティ要件を満たす
 1. **Fleet:** デバイス管理をインストールする必要があります
 1. **EDR:** CrowdStrike Falcon または SentinelOne（ドイツ、オランダ、イタリア、オーストリアのみ）をインストールする必要があります
 
-## 初期インストールとディスク暗号化
+## 初期インストールとディスク暗号化 {#initial-installation-and-disk-encryption}
 
 Dell ラップトップに搭載されているデフォルトバージョンの Ubuntu では、ディスク暗号化が有効になっていません。OS のインストール後にディスクを暗号化することはおすすめせず、問題が発生する可能性があります。暗号化を有効にして OS を再インストールする必要があります。
 
@@ -65,13 +65,13 @@ Dell ラップトップに搭載されているデフォルトバージョンの
 1. 高速ログインのため、指紋検証を有効にします - [指紋でログインする](https://help.ubuntu.com/stable/ubuntu-help/session-fingerprint.html.en)
    1. 追加リソース: [fprint](https://fprint.freedesktop.org/)
 
-## 初回 Okta ログイン
+## 初回 Okta ログイン {#initial-okta-login}
 
 >**重要**: 新規採用者は、すべてのセキュリティ要件が満たされていなくても初回 Okta ログインを実行できます。ただし、初日に必要なすべての手順を完了しない場合、以後ログインできなくなります。
 
 続行する前に、[こちら](/handbook/eta/corporate-it/end-user-services/onboarding101/#laptop-setup-linux)で必要なすべての手順を完了してください。
 
-## デバイス管理とエンドポイントセキュリティ
+## デバイス管理とエンドポイントセキュリティ {#device-management-and-endpoint-security}
 
 私たちはすべての Linux デバイスを管理するために Fleet を使用しています。Fleet を使用すると Okta へアクセスでき、最もよく使用するアプリケーションの一部（例: Zoom）の中央リポジトリが提供され、ラップトップの潜在的なセキュリティ問題を通知します。
 
@@ -79,13 +79,13 @@ Dell ラップトップに搭載されているデフォルトバージョンの
 
 ラップトップを Fleet に登録すると、ドイツ、オランダ、イタリア、オーストリアを拠点とする場合を除き、CrowdStrike Falcon もマシンに自動インストールされます。
 
-### SentinelOne のインストール - ドイツ、オランダ、イタリア、オーストリアのみ
+### SentinelOne のインストール - ドイツ、オランダ、イタリア、オーストリアのみ {#sentinelone-installation---germany-the-netherlands-italy-and-austria-only}
 
 CrowdStrike は上記の地域ではまだ承認されていないため、それらの地域のユーザーは Fleet に加えて SentinelOne Endpoint security を手動でインストールする必要があります。
 
 必要なファイルとセットアップ手順については、[こちら](/handbook/security/corporate/systems/sentinelone/setup/)をクリックしてください。
 
-## 追加リソース
+## 追加リソース {#additional-resources}
 
 - [Linux ツールとヒント](/handbook/tools-and-tips/linux/)
 - [CrowdStrike - エンドポイントの検知と対応](https://internal.gitlab.com/handbook/security/corporate/tooling/crowdstrike/)

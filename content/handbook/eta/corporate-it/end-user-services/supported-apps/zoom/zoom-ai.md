@@ -15,7 +15,7 @@ stale: false
 - [AI Companion ミーティング要約へのアクセス](#accessing-ai-companion-meeting-summaries)
 - [AI Companion スマート録画へのアクセス](#accessing-ai-companion-smart-recordings)
 
-## AI Companion によるミーティング要約
+## AI Companion によるミーティング要約 {#meeting-summary-with-ai-companion}
 
 1. Zoom デスクトップクライアントでミーティングを開始します。
 1. ミーティングウィンドウの右上付近にある `AI Companion` アイコンをクリックします
@@ -25,13 +25,13 @@ stale: false
 1. 参加者には、AI Companion がアクティブでミーティングを分析しているという通知が表示されます
 1. ミーティング終了後、要約は組織内のミーティングホストと招待者にメールで送信されます
 
-### AI Companion ミーティング要約へのアクセス
+### AI Companion ミーティング要約へのアクセス {#accessing-ai-companion-meeting-summaries}
 
 1. Zoom アカウントの[プロフィール](https://gitlab.zoom.us/profile)に移動します。
 1. サイドバーで `AI Companion` を展開し、`Meeting Summary` をクリックします
 1. 編集または共有するには、ミーティングトピックをクリックします。ミーティング要約を `Share`、`Edit`、`Delete` できます
 
-#### AI Companion スマート録画へのアクセス
+#### AI Companion スマート録画へのアクセス {#accessing-ai-companion-smart-recordings}
 
 1. Zoom アカウントの[プロフィール](https://gitlab.zoom.us/profile)に移動します
 1. サイドバーで `Recordings` をクリックします。スマート録画は `Cloud Recordings` の下にあります
