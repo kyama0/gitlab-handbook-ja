@@ -27,7 +27,7 @@ stale: false
 
 ある組織アーキタイプのペルソナが、別の組織アーキタイプの 1 つまたは複数のペルソナと類似した jobs-to-be-done やその他の特性を持つことが起こり得ます。これらすべてを記述することで、見過ごされる可能性のある違いを理解し、製品開発の過程でより焦点化された決定を行うのに役立ちます。GitLab が対応する組織アーキタイプについて [詳しくはこちら](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/organization-archetype/) をご覧ください。
 
-#### ユーザーペルソナのリスト
+#### ユーザーペルソナのリスト {#list-of-user-personas}
 
 私たちは以下のペルソナを、彼らが行う仕事、モチベーション、フラストレーションの観点から記述します。このレンズを通じてユーザーを理解することは、彼らのワークフローをサポートする製品に貢献するのに役立ちます。
 

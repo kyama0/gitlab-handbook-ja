@@ -39,7 +39,7 @@ GitLab の裁量により、以下の条件で会社支給デバイスの返却�
 
 > ハードウェア返却の場合、追加情報またはリクエストについてベンダーから直接連絡が来る場合があります。
 
-### ラップトップの買い取り
+### ラップトップの買い取り {#laptop-buybacks}
 
 >チームメンバーが、調査、不正行為、正当な理由による解雇、[GitLab の Code of Business Conduct & Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx)の違反、その他の法的またはセキュリティ関連の照会に関与している場合、ラップトップを購入または無償で保持するオプションが無効になることがあります。
 

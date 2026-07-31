@@ -8,7 +8,7 @@ translator: codex
 stale: false
 ---
 
-## Okta とは？
+## Okta とは？ {#what-is-okta}
 
 Okta Web サイトより
 
@@ -56,7 +56,7 @@ GitLab では、すべてのチームメンバーに、[Okta 認証](/handbook/e
 
 Okta Device Trust は、チームメンバーが管理対象デバイスから Okta アプリケーションにアクセスしていることを保証します。追加の詳細とタイムラインについては、[社内ハンドブック](https://internal.gitlab.com/handbook/it/okta-device-trust/)を参照してください。
 
-## Okta に新しいアプリケーションを追加する
+## Okta に新しいアプリケーションを追加する {#adding-new-applications-to-okta}
 
 [新しい CorpSec Issue](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/new?description_template=okta_app_change)を作成し、`@gitlab-com/gl-security/corp/identity` をタグ付けします
 

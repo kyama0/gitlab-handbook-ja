@@ -22,7 +22,7 @@ GitLab では、会社支給デバイスに集中型ラップトップ管理を�
 
 > **注**: ほとんどの場合、更新よりも新規採用者向けラップトップの注文を優先します。在庫状況によっては、更新が遅れる場合があります。
 
-## ラップトップの仕様
+## ラップトップの仕様 {#laptop-specs}
 
 GitLab は、チームメンバーのラップトップで macOS と Linux の使用を承認し、サポートします。GitLab IT Support を効率的に維持するため、Windows はラップトップ OS としてサポートされません。
 
@@ -63,7 +63,7 @@ Linux は macOS の代替として利用できますが、サポートが限定�
 
 EDR の展開は、[仮想マシン](/handbook/security/corporate/systems/sentinelone/#virtual-machines)を含むすべてのチームメンバーのエンドポイントシステムで必要です。Docker コンテナは MDM/EDR 登録要件の対象外です。
 
-### Customer Support と Product Development 向けの Windows
+### Customer Support と Product Development 向けの Windows {#windows-for-customer-support-and-product-development}
 
 Windows は GitLab Corporate サービス（例: Slack、G-Suite、GitLab.com）へのアクセスには使用できません。Windows OS は、GitLab 管理デバイスに追加する場合にのみ使用できます。特定のロールでは、Microsoft Ecosystem 向けに開発する GitLab の顧客とパートナーのプラットフォームおよびエコシステムサポートを確保するため、Windows を使用する必要があることを理解しています。
 
