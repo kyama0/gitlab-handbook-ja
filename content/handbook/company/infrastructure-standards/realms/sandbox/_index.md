@@ -48,7 +48,7 @@ Sandbox Cloud は、AWS アカウントまたは GCP プロジェクトを作成
 
 Sandbox Cloud は [CorpSec Identity](/handbook/security/corporate/) チームによって管理されています。質問がある場合は Slack の `#sandbox-cloud-questions` で尋ねるか、CorpSec Issue で `@vlad` にタグ付けしてください。
 
-### はじめ方
+### はじめ方 {#how-to-get-started}
 
 #### 個人 AWS アカウントまたは GCP プロジェクト
 

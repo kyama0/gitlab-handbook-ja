@@ -22,9 +22,9 @@ CSE Assigned はアカウントの技術的健全性レイヤーを所有しま�
 | 導入シグナルと技術的リスクに関する定期的なヘルス評価を実施する | EBR または QBR を実施する |
 | 担当アカウントのエンドツーエンドのエスカレーション管理を、エスカレーション DRI として所有する | Success Plan または Success Tier のエンゲージメントを提供する |
 | アカウントチーム（AE、RM、SA）と連携し、作業で必要な場合に顧客と直接エンゲージする | リレーションシップマネージャーまたは CSM の代替として行動する |
-| アカウントチームがアクションを取る成長機会をフラグする | 無制限のエンゲージメントを提供する。プロアクティブな作業は、[Engagement & CSE vs. Success Tiers](/handbook/customer-success/csm/segment/cse/cse-assigned-engagement/)を参照し、アカウントごとに四半期あたり 3 件のエンゲージメントに制限されます |
+| アカウントチームがアクションを取る成長機会をフラグする | 無制限のエンゲージメントを提供する。プロアクティブな作業は、[エンゲージメントと CSE 対 Success Tiers](/handbook/customer-success/csm/segment/cse/cse-assigned-engagement/)を参照し、アカウントごとに四半期あたり 3 件のエンゲージメントに制限されます |
 | 既存のアカウントチームの会話に反映される、プロダクト中心のリスクシグナルを提示する | より深いアドバイザリーに対する顧客の依頼を満たす。それは AE にとっての Success Tiers に関する会話です |
 
 ## エスカレーションのオーナーシップ
 
-CSE Assigned アカウントについて、**担当 CSE がエスカレーション DRI です**。これは Pool エスカレーションの扱いを変更しません。Pool の DRI は引き続きリージョナル CSE リーダーです。完全なエスカレーションプロセスについては [Customer Success Escalations Process](/handbook/customer-success/csm/escalations/) ページを参照してください。このページは、この区分を反映するフォローアップ更新が必要です。
+CSE Assigned アカウントについて、**担当 CSE がエスカレーション DRI です**。これは Pool エスカレーションの扱いを変更しません。Pool の DRI は引き続きリージョナル CSE リーダーです。完全なエスカレーションプロセスについては [カスタマーサクセスエスカレーションプロセス](/handbook/customer-success/csm/escalations/) ページを参照してください。このページは、この区分を反映するフォローアップ更新が必要です。

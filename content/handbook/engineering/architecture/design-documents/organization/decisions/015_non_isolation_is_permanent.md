@@ -15,7 +15,7 @@ stale: false
 
 ## 背景
 
-[Organization Isolation](../isolation.md)は、すべての Organization が最終的に隔離されることを前提としています。また、[GitLab.com 上の非隔離 Organization](008_non_isolated_organizations_gitlab_com.md)は、非隔離を隔離に至るまでの出発点としてのみ扱います。非隔離が一時的なものか、有効で恒久的な結果かは、これまで曖昧でした。この ADR はそれを明確にします。
+[Organization 隔離](../isolation.md)は、すべての Organization が最終的に隔離されることを前提としています。また、[GitLab.com 上の非隔離 Organization](008_non_isolated_organizations_gitlab_com.md)は、非隔離を隔離に至るまでの出発点としてのみ扱います。非隔離が一時的なものか、有効で恒久的な結果かは、これまで曖昧でした。この ADR はそれを明確にします。
 
 ## 決定
 
@@ -23,7 +23,7 @@ stale: false
 
 ## 結果
 
-1. すべての Organization データが隔離されるという [Organization Isolation](../isolation.md) の冒頭の主張は、この ADR の一部として修正されます。その下にある段階的なロールアウトは、すべての Organization が最終的に隔離されるかのように、引き続きエンジニアリングのマイルストーンを説明しています。これを改訂することは別の作業です。
+1. すべての Organization データが隔離されるという [Organization 隔離](../isolation.md) の冒頭の主張は、この ADR の一部として修正されます。その下にある段階的なロールアウトは、すべての Organization が最終的に隔離されるかのように、引き続きエンジニアリングのマイルストーンを説明しています。これを改訂することは別の作業です。
 1. 非隔離の Organization は、隔離されるまでだけでなく、レガシー Cell に無期限に留まることができます。今後予定されている Organization スコープのリクエストコンテキストのブループリントでは、これが Cell の配置にとって何を意味するかを詳細に扱います。
 1. 複数 Organization のメンバーシップは、進行中の移行による一時的な副作用ではありません。非隔離のままでいるあらゆる Organization にとって、恒久的な機能です。
 

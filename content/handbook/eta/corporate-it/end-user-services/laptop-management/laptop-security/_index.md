@@ -12,8 +12,8 @@ stale: false
 
 既知のセキュリティ脆弱性が多いソフトウェアをインストールしないでください。
 
-エンドポイントデバイスに個別に展開するサービスをレビューする際は、[Third Party Risk Management Procedure](/handbook/security/security-assurance/security-risk/third-party-risk-management/)に従ってください。エンドポイント管理ソリューションの展開に関する決定が下された後、このプロセスはそれに応じて再設計され、該当するサービスは遡及的にレビューされます。[acceptable use policy](/handbook/people-group/acceptable-use-policy/)で定義されている要件に引き続き従ってください。
+エンドポイントデバイスに個別に展開するサービスをレビューする際は、[セキュリティ第三者リスク管理](/handbook/security/security-assurance/security-risk/third-party-risk-management/)に従ってください。エンドポイント管理ソリューションの展開に関する決定が下された後、このプロセスはそれに応じて再設計され、該当するサービスは遡及的にレビューされます。[GitLab 内部利用ポリシー](/handbook/people-group/acceptable-use-policy/)で定義されている要件に引き続き従ってください。
 
-> **iOS または Android を使用していますか？**[Mobile Devices（電話とタブレット）](/handbook/security/corporate/services/phones)ページを参照してください。
+> **iOS または Android を使用していますか？**[CorpSec モバイルデバイス（スマートフォンとタブレット）サービス](/handbook/security/corporate/services/phones)ページを参照してください。
 >
-> **Linux を使用していますか？**[Linux Desktop Security Standards](/handbook/security/corporate/systems/linux/security)ページを参照してください。
+> **Linux を使用していますか？**[Linux デスクトップ OS セキュリティ標準](/handbook/security/corporate/systems/linux/security)ページを参照してください。

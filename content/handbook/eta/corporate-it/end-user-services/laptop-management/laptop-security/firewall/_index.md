@@ -41,7 +41,7 @@ Jamf と SentinelOne が管理コンソールと通信できるようにして�
 
 私たちの中核製品は、リモートコード実行を機能として提供します。テストする他のアプリケーションも、開発環境の緩やかな性質を通じて、同様の機能を公開することがよくあります。これらをインターネットに公開されたラップトップで実行すると、基本的にリモート攻撃者が悪用するためのバックドアを提供することになります。これにより、自宅ネットワークと、マシンからアクセスしたすべての業務用および個人用アカウントが完全に侵害される可能性があります。
 
-[Acceptable Use Policy](/handbook/people-group/acceptable-use-policy/)では、GitLab 所有のコンピューターのセキュリティを回避することを禁止しています。この方法で ngrok を使用することは、ファイアウォール要件を回避する例です。
+[GitLab 内部利用ポリシー](/handbook/people-group/acceptable-use-policy/)では、GitLab 所有のコンピューターのセキュリティを回避することを禁止しています。この方法で ngrok を使用することは、ファイアウォール要件を回避する例です。
 
 ngrok の代替手段は、[GitLab Sandbox Cloud](/handbook/company/infrastructure-standards/realms/sandbox/#how-to-get-started)を使用して一時的なインフラストラクチャを作成することです。
 

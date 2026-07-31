@@ -68,7 +68,7 @@ graph TD
     G -- "HTTPS query fan-out<br>(CIDR-gated, optional mTLS)" --> GWN
 ```
 
-ゲートウェイ、認証、自動化レイヤーの詳細については、[ADR 028: Observability Federation](../decisions/028_observability_federation.md)を参照してください。
+ゲートウェイ、認証、自動化レイヤーの詳細については、[Cells ADR 028: オブザーバビリティフェデレーション](../decisions/028_observability_federation.md)を参照してください。
 
 ### 一元化された Remote Write ではなくフェデレーテッドプルを選ぶ理由 {#why-federated-pull-instead-of-centralized-remote-write}
 
@@ -101,7 +101,7 @@ graph TD
 
 ### 解決済みの問い
 
-以下の設計上の問いは、[ADR 028: Observability Federation](../decisions/028_observability_federation.md)と上記のフェデレーションの根拠で回答されています。
+以下の設計上の問いは、[Cells ADR 028: オブザーバビリティフェデレーション](../decisions/028_observability_federation.md)と上記のフェデレーションの根拠で回答されています。
 
 - [x] グローバルクエリ中に Cell に到達できない場合はどう扱うか。
 

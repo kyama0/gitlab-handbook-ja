@@ -776,7 +776,7 @@ GitLab 共有ファイルの Google Drive リポジトリがいくつかあり�
 1. 結果のポップアップメニューから「Add to My Drive」を選択
 1. これで、まずドライブに移動し（<https://drive.google.com>）、次にそのリンクを開いてそのディレクトリに行けるようになります
 
-#### Mac に Google Drive を追加する
+#### Mac に Google Drive を追加する {#adding-google-drive-to-your-mac}
 
 Google Drive にアクセスしやすくするために、Mac Finder で通常のドライブとして Google Drive を表示できます。
 これにより、ビデオ、アナリストレポート（PDF）などのファイルの保存と表示が容易になります。
