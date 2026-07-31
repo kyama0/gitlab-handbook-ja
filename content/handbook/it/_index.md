@@ -15,4 +15,4 @@ IT End User Services（EUS）チームは、Enterprise Technology and AI 部門�
 
 更新されたページは[こちら](/handbook/eta/corporate-it/end-user-services/)をご覧ください。
 
-もちろん、Slack の Compass app（上部の検索バーに "Compass" と入力して見つけてください）またはメールアドレス it-help@gitlab.com からも引き続きお問い合わせいただけます。
+もちろん、Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけてください）またはメールアドレス it-help@gitlab.com 宛てにも引き続きお問い合わせいただけます。

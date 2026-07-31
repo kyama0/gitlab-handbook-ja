@@ -71,4 +71,4 @@ GitLab チームメンバーとして、基準に沿ったベンダーを追加�
 1. ロジスティクスのどのオプションを使用するかを Issue に記載します: 地元での持ち込み、または宅配便での発送。
 1. セキュリティ上の理由から、持ち込みまたは送付の前に[ラップトップワイプ](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-wipe/)プロセスを完了したことを確認してください。
 
-質問または懸念がある場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または laptops@gitlab.com からお問い合わせください。
+質問または懸念がある場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または laptops@gitlab.com 宛てにメールでお問い合わせください。

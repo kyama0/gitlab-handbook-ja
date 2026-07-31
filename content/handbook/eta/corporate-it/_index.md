@@ -18,7 +18,7 @@ Corporate IT は、組織のテクノロジーインフラストラクチャの�
 
 ## サポートが必要ですか？
 
-Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけます）または it-help@gitlab.com から IT に連絡してください。
+Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけます）または it-help@gitlab.com へメールで IT に連絡してください。
 
 ## サービス
 
