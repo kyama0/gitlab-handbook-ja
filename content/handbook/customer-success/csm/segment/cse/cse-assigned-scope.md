@@ -27,4 +27,4 @@ CSE Assigned はアカウントの技術的健全性レイヤーを所有しま�
 
 ## エスカレーションのオーナーシップ
 
-CSE Assigned アカウントについて、**担当 CSE がエスカレーション DRI です**。これは Pool エスカレーションの扱いを変更しません。Pool の DRI は引き続きリージョナル CSE リーダーです。完全なエスカレーションプロセスについては [Customer Success Escalations Process](/handbook/customer-success/csm/escalations/) ページを参照してください。このページは、この区分を反映する follow-up 更新が必要です。
+CSE Assigned アカウントについて、**担当 CSE がエスカレーション DRI です**。これは Pool エスカレーションの扱いを変更しません。Pool の DRI は引き続きリージョナル CSE リーダーです。完全なエスカレーションプロセスについては [Customer Success Escalations Process](/handbook/customer-success/csm/escalations/) ページを参照してください。このページは、この区分を反映するフォローアップ更新が必要です。

@@ -61,7 +61,7 @@ stale: false
 1. [Customer Support の対応](#customer-support-actions)
 1. [CSS の対応](#css-actions)
 
-### リクエスターの対応
+### リクエスターの対応 {#requester-actions}
 
 {{% alert title="注記" color="warning" %}}
 
@@ -77,7 +77,7 @@ CI/CD が完了し、問題がないことを確認したら、マージリク�
 
 ここから、リクエストは [Customer Support の対応](#customer-support-actions) に移ります。
 
-### Customer Support の対応
+### Customer Support の対応 {#customer-support-actions}
 
 {{% alert title="注記" color="warning" %}}
 
@@ -91,7 +91,7 @@ Customer Support の担当者は、同意できない点がないかを確認し
 
 ここから、リクエストは [CSS の対応](#css-actions) に移ります。
 
-### CSS の対応
+### CSS の対応 {#css-actions}
 
 CSS の担当者は、同意できない点がないかを確認しながらマージリクエストをレビューします。問題が見つかった場合は、調査結果をマージリクエストにコメントとして追加してください（リクエスターに必ずメンションします）。
 
@@ -140,7 +140,7 @@ Issue への対応が完了したら、マージリクエストを承認して�
      - 新しいカテゴリーまたはサブカテゴリーを作成する必要がある場合は、ここで作成します。
 1. ページ右下の `Create custom topic` をクリックします
 
-### トピックの変更
+### トピックの変更 {#working-topic-change-issues}
 
 トピックを変更するには:
 

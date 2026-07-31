@@ -2,7 +2,7 @@
 title: "アクセスリクエスト（AR）サービス"
 upstream_path: /handbook/eta/corporate-it/end-user-services/access-requests/ar-services/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-lastmod: 2026-07-30T18:56:53+01:00
+lastmod: "2026-07-28T15:04:15+01:00"
 translated_at: "2026-07-31T07:54:55+09:00"
 translator: codex
 stale: false
@@ -54,7 +54,7 @@ Access Requests は Corporate Security Helpdesk チームが担当します。�
 - **Issue をある列から別の列へ移動すると、最初のラベル（列ヘッダーごと）が削除され、2 番目のラベルが追加されます。列間で Issue を移動する際は注意してください。**
 - 部門は以下のボードを表示して、未解決のアクセスリクエスト Issue を確認できます。
 
-{{% panel header="**AR boards: to-do:**" header-bg="success" %}}
+{{% panel header="**AR ボード: 対応待ち:**" header-bg="success" %}}
 
 1. [Data](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/boards/1319045)
 1. [Finance](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/boards/1319048)
