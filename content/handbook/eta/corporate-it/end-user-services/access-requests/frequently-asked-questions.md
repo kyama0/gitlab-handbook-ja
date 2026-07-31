@@ -45,19 +45,19 @@ stale: false
 1. Slack グループに追加される内部チームメンバー
 1. 自身のロールベース entitlement に含まれるもの
 
-### Rails またはデータベースの production console（grpd）へのアクセスが必要です
+### Rails またはデータベースの本番コンソール（grpd）へのアクセスが必要です
 
 Teleport を使用して、一時的なアクセスを次のいずれかにリクエストしてください。
-[Rails console](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/teleport/Connect_to_Rails_Console_via_Teleport.md)
+[Rails コンソール](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/teleport/Connect_to_Rails_Console_via_Teleport.md)
 または
-[database console](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/teleport/Connect_to_Database_Console_via_Teleport.md)。
+[データベースコンソール](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/teleport/Connect_to_Database_Console_via_Teleport.md)。
 
 ### version.gitlab.com へのアクセスが必要です
 
-すでにアクセスできる可能性があります。[dev account があるかテストしてください。](https://dev.gitlab.org/)
+すでにアクセスできる可能性があります。[dev アカウントがあるかテストしてください。](https://dev.gitlab.org/)
 
-- dev account が必要な場合は、[Single Person Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)を作成してください。
-- dev account がある場合は、[version](https://version.gitlab.com/users/sign_in)に移動し、GitLab でログインして、認証情報の使用を許可してください。
+- dev アカウントが必要な場合は、[Single Person Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)を作成してください。
+- dev アカウントがある場合は、[version](https://version.gitlab.com/users/sign_in)に移動し、GitLab でログインして、認証情報の使用を許可してください。
 
 ### Zendesk に Light Agent としてアクセスする必要があります
 
@@ -66,7 +66,7 @@ Zendesk Light アクセスのアクセスリクエストを作成する必要は
 ### メールエイリアスを追加するか、氏名を変更する必要があります
 
 メールエイリアスの追加または氏名変更には、[`slack_googlegroup_1password` AR テンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/issues/new?issuable_template=slack_googlegroup_1Passwordgroupvault)を使用してください。
-リクエストできる内容や数に制限はありませんが、追加または変更について短い説明を記載してください。不適切と判断された場合、または operations の裁量により、一部のエイリアスリクエストが却下されることがあります。
+リクエストできる内容や数に制限はありませんが、追加または変更について短い説明を記載してください。不適切と判断された場合、または運用の裁量により、一部のエイリアスリクエストが却下されることがあります。
 
 このアプリケーションの自動化は Okta で行われますが、「真の」システムのプロビジョニングとプロビジョニング解除は、影響を受けるシステム内でアクセス変更リクエストを通じて手動で完了する必要があります。
 
