@@ -11,12 +11,12 @@ stale: false
 
 ## ヘルス評価
 
-- **頻度:** アカウントごとにローリング 90 日あたり 1 回（CSE Assigned 運用の最初の四半期は、対象全体の初回フルパスを完了するために使用します）。
-- **必須セクション:** TL;DR の文を 1 つ置き、その後にアカウントの基本情報（プロダクト/ティア/シート数/更新日）、利用状況の概要、サポート、顧客とのやり取り、リスク評価、提案する次のステップを扱うエグゼクティブ概要を記載します。
+- **頻度：** アカウントごとにローリング 90 日あたり 1 回（CSE Assigned 運用の最初の四半期は、対象全体の初回フルパスを完了するために使用します）。
+- **必須セクション：** TL;DR の文を 1 つ置き、その後にアカウントの基本情報（プロダクト/ティア/シート数/更新日）、利用状況の概要、サポート、顧客とのやり取り、リスク評価、提案する次のステップを扱うエグゼクティブ概要を記載します。
 - ヘルス評価は**社内向けのみ**であり、顧客向けではありません。
 - 出力先は **Gainsight Timeline** の Health Update エントリであり、自動的に CTA になるわけではありません。
-- **推奨する方法:** 自動データ取得を実行し（現在は[このスクリプト](https://gitlab.com/gitlab-com/customer-success/csmerm/customer-success-engineering/scale-cse/-/tree/main/CSE%20Health%20Assessment?ref_type=heads)を使用）、顧客とのやり取りおよび AE/RM とのキャッチアップで得たアカウント固有の知識を確認・補完してから、TL;DR とエグゼクティブサマリーを Gainsight の Health Update として投稿します。
-- **利用状況データが Gainsight にない場合:** インスタンスが "Production" に設定されているかを確認し、必要に応じて顧客に直接質問し、その間はエンゲージメント頻度、やり取り、サポートチケットをシグナルとして使用します。技術的に壊れているように見える場合は、`#gainsight-users` で相談してください。
+- **推奨する方法：** 自動データ取得を実行し（現在は[このスクリプト](https://gitlab.com/gitlab-com/customer-success/csmerm/customer-success-engineering/scale-cse/-/tree/main/CSE%20Health%20Assessment?ref_type=heads)を使用）、顧客とのやり取りおよび AE/RM とのキャッチアップで得たアカウント固有の知識を確認・補完してから、TL;DR とエグゼクティブサマリーを Gainsight の Health Update として投稿します。
+- **利用状況データが Gainsight にない場合：** インスタンスが "Production" に設定されているかを確認し、必要に応じて顧客に直接質問し、その間はエンゲージメント頻度、やり取り、サポートチケットをシグナルとして使用します。技術的に壊れているように見える場合は、`#gainsight-users` で相談してください。
 
 ## CTA
 
