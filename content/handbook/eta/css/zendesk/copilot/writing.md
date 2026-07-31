@@ -11,7 +11,7 @@ stale: false
 
 ## Copilot の文章作成とは
 
-Copilot の文章作成は、文章強化に基づいてグループ化された、さまざまな Zendesk Copilot 機能です:
+Copilot の文章作成は、文章強化に基づいてグループ化された、さまざまな Zendesk Copilot 機能です：
 
 - コミュニケーションガイドライン
 - 文章を改善

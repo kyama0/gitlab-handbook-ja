@@ -11,7 +11,7 @@ stale: false
 
 ## 推奨事項とは
 
-[Zendesk](https://support.zendesk.com/hc/en-us/articles/9598690362010-Optimizing-your-account-with-admin-copilot-insights-and-recommendations)によると:
+[Zendesk](https://support.zendesk.com/hc/en-us/articles/9598690362010-Optimizing-your-account-with-admin-copilot-insights-and-recommendations)によると：
 
 > Admin Copilot はアカウントをプロアクティブに監視し、パフォーマンスの傾向を特定して最適化を提案します。解決時間や再オープン率などの指標の変化を強調する週次インサイトと、パーソナライズされた推奨事項を組み合わせることで、非効率性をすばやく解消できます。
 >

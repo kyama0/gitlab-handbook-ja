@@ -13,15 +13,15 @@ stale: false
 
 {{% alert title="技術詳細" color="primary" %}}
 
-- デプロイメントの種類: `Ad-hoc`
-- プロジェクトリポジトリ: [Topics](https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics)
+- デプロイメントの種類：`Ad-hoc`
+- プロジェクトリポジトリ：[Topics](https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics)
 - `CustSuppOps Zendesk Test Suite Generator` は無効
 
 {{% /alert %}}
 
 ## トピックを理解する
 
-[Zendesk](https://support.zendesk.com/hc/en-us/articles/8903424797722-Setting-up-intelligent-triage-topics) によると:
+[Zendesk](https://support.zendesk.com/hc/en-us/articles/8903424797722-Setting-up-intelligent-triage-topics) によると：
 
 > トピックは、チケットの内容を分類します。チケットに表示されるトピックを使用して、ワークフローを自動化できます。
 
@@ -33,12 +33,12 @@ stale: false
 
 トピックはサブカテゴリー（カテゴリー内にあります）内の項目です。各トピックには、Zendesk Copilot がチケットにそのトピックを使用すべきかどうかを判断するのに役立てる説明があります。
 
-例として、トピック `Product::Geo::Geo replication or failover` は次のとおりです:
+例として、トピック `Product::Geo::Geo replication or failover` は次のとおりです：
 
 - カテゴリー: `Product`
 - サブカテゴリー: `Geo`
-- トピック: `Geo replication or failover`
-- 説明（使用例であり、本番環境の値を反映していない場合があります）:
+- トピック：`Geo replication or failover`
+- 説明（使用例であり、本番環境の値を反映していない場合があります）：
   > GitLab Geo のレプリケーション、セカンダリサイト、分散されたセルフマネージドデプロイメントのための災害復旧に関するチケット。症状には、レプリケーションの遅延、検証の失敗、サイトのフェイルオーバーまたは再同期の問題、トラッキングデータベースの問題、セカンダリノードで欠落または古くなっているコンテンツが含まれます。一般的なデータベースやストレージの問題ではなく、Geo の動作に固有の問題である場合に使用します。
 
 ### トピック名の制限
@@ -49,13 +49,13 @@ stale: false
 
 {{% alert title="注記" color="warning" %}}
 
-カテゴリーまたはサブカテゴリーを具体的に変更しようとしている場合は、代わりに [Feature Request Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Systems チームによる手動の対応が必要になるためです）。
+カテゴリーまたはサブカテゴリーを具体的に変更しようとしている場合は、代わりに [機能リクエスト Issue](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/issues/new?description_template=Feature) を作成してください（Customer Support Systems チームによる手動の対応が必要になるためです）。
 
 {{% /alert %}}
 
 トピックに変更を加えるには（新規作成や既存トピックの説明の変更など）、[Topics](https://gitlab.com/gitlab-support-readiness/zendesk-copilot/topics) プロジェクトリポジトリを通じてマージリクエストを作成します。
 
-その後の手順は次のとおりです:
+その後の手順は次のとおりです：
 
 1. [リクエスターの対応](#requester-actions)
 1. [Customer Support の対応](#customer-support-actions)
@@ -121,7 +121,7 @@ Issue への対応が完了したら、マージリクエストを承認して�
 
 ### トピックの作成
 
-トピックを作成するには:
+トピックを作成するには：
 
 1. Zendesk インスタンスの管理ダッシュボードに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
@@ -133,16 +133,16 @@ Issue への対応が完了したら、マージリクエストを承認して�
    - [Zendesk Global (sandbox)](https://gitlab1707170878.zendesk.com/admin/ai/intelligent-triage/intent)
    - [Zendesk US Government](https://gitlab-federal-support.zendesk.com/admin/ai/intelligent-triage/intent)
    - [Zendesk US Government (sandbox)](https://gitlabfederalsupport1585318082.zendesk.com/admin/ai/intelligent-triage/intent)
-1. 必要な詳細を入力します:
-   - 名前: 名前は Agent Workspace に表示されます。
-   - 説明: チケットを正確に分類するための詳細
-   - カテゴリー: トピックのカテゴリー
+1. 必要な詳細を入力します：
+   - 名前：名前は Agent Workspace に表示されます。
+   - 説明：チケットを正確に分類するための詳細
+   - カテゴリー：トピックのカテゴリー
      - 新しいカテゴリーまたはサブカテゴリーを作成する必要がある場合は、ここで作成します。
 1. ページ右下の `Create custom topic` をクリックします
 
 ### トピックの変更
 
-トピックを変更するには:
+トピックを変更するには：
 
 1. Zendesk インスタンスの管理ダッシュボードに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)
@@ -162,7 +162,7 @@ Issue への対応が完了したら、マージリクエストを承認して�
 
 ### トピックの無効化
 
-トピックを無効化するには:
+トピックを無効化するには：
 
 1. Zendesk インスタンスの管理ダッシュボードに移動します
    - [Zendesk Global (production)](https://gitlab.zendesk.com/admin/home)

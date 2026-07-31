@@ -23,18 +23,18 @@ stale: false
 1. ほとんどのアクセスリクエストには Manager の承認が必要です。AR で Manager をタグ付けし、Issue に ~"AR-Approval::Manager Approved" と ~"ReadyForProvisioning" のラベルを追加するよう依頼してください。
 1. アクセスをリクエストしているツールに対して、正しいプロビジョニング担当者を Issue にタグ付けし、担当に割り当てたことを確認してください。すべてのツールのプロビジョニング担当者は [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)で確認できます。
 1. プロビジョニング担当者が IT チームの場合は、AR に ~"IT::to do" ラベルを追加してください。
-1. 上記のすべての手順を実行してもアクセスリクエストの対応が進まない場合は、ツールを所有するチームの Slack チャンネルで連絡してください。各チームの Slack Channel は [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)で確認できます。
+1. 上記のすべての手順を実行してもアクセスリクエストの対応が進まない場合は、ツールを所有するチームの Slack チャンネルで連絡してください。各チームの Slack チャンネルは [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)で確認できます。
 
 ### システムまたはグループ／vault へのアクセスが必要ですか？
 
 1. ニーズに基づいてテンプレートを選択してください。ほとんどの人は [Bulk](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Bulk_Access_Request) または [Single Person](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) テンプレートを使用します。
-1. オンボーディング中に漏れた場合を除き、baseline entitlement の一部であるものについてアクセスリクエストを作成しないでください。
-    1. [全チームメンバーの baseline entitlement](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/#baseline-entitlements-all-gitlab-team-members)
-    1. [ロールベースの baseline entitlement](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/tree/master/.gitlab/issue_templates/role_baseline_access_request_tasks)
+1. オンボーディング中に漏れた場合を除き、ベースライン権限の一部であるものについてアクセスリクエストを作成しないでください。
+    1. [全チームメンバーのベースライン権限](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/#baseline-entitlements-all-gitlab-team-members)
+    1. [ロールベースのベースライン権限](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/tree/master/.gitlab/issue_templates/role_baseline_access_request_tasks)
 1. 次の場合を**除き**、Issue には `AR-Approval::Manager Approved` ラベルが必要です。
     1. Google Workspace のメールエイリアスまたはグループに追加される内部チームメンバー
     1. Slack グループに追加される内部チームメンバー
-    1. まったく変更のないロールベースの baseline entitlement
+    1. まったく変更のないロールベースのベースライン権限
 1. [システムへのアクセスをプロビジョニングする担当者](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に Issue を割り当ててください。
 1. サポートが必要な場合は、支援が必要な Issue へのリンクを添えて Slack チャンネル #it-help で IT-Ops に依頼してください。
 1. 作業に必要な最小限のアクセスのみを要求してください。
@@ -45,7 +45,7 @@ stale: false
 
 1. Google Workspace のメールエイリアスまたはグループに追加される内部チームメンバー（そのグループが Google Cloud Platform の権限を提供する場合を除く）
 1. Slack グループに追加される内部チームメンバー
-1. 自身のロールベース entitlement に含まれるもの
+1. 自身のロールベース権限に含まれるもの
 
 ### Rails またはデータベースの本番コンソール（grpd）へのアクセスが必要です
 

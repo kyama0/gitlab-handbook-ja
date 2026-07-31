@@ -11,7 +11,7 @@ stale: false
 
 ## センチメントとは
 
-[Zendesk](https://support.zendesk.com/hc/en-us/articles/4550640560538-Automatically-classifying-tickets-with-intelligent-triage) によると:
+[Zendesk](https://support.zendesk.com/hc/en-us/articles/4550640560538-Automatically-classifying-tickets-with-intelligent-triage) によると：
 
 > Intelligent triage は、トピック、センチメント、言語、製品名などのエンティティによって、新しいカスタマーサポートチケットを AI で自動的に分類します。これらの AI 分類をワークフローに組み込むことで、繰り返し発生するリクエストを自動化し、手動トリアージをなくし、エージェントをリアルタイムでガイドし、リスクの高いチケットに迅速に対応できます。
 

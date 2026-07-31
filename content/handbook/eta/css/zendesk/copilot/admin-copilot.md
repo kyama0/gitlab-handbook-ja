@@ -11,7 +11,7 @@ stale: false
 
 ## Admin Copilot とは
 
-[Zendesk](https://support.zendesk.com/hc/en-us/articles/10013995711386-About-admin-copilot)によると:
+[Zendesk](https://support.zendesk.com/hc/en-us/articles/10013995711386-About-admin-copilot)によると：
 
 > Admin Copilot は、Zendesk 管理者による運用の合理化と環境の最適化を支援するために設計された、プロアクティブな AI アシスタントです。問題が深刻化する前に潜在的な問題を見つけ、新しいワークフローの作成を支援し、設定全体の非効率性を解消するために Admin Copilot を使用すれば、時間を節約できます。
 

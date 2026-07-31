@@ -13,7 +13,7 @@ stale: false
 アクセスリクエストに関する質問がある場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com を通じて IT に連絡してください。
 
 - [よくある質問](/handbook/eta/corporate-it/end-user-services/access-requests/frequently-asked-questions/)
-- [Baseline Entitlements](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/)
+- [ベースライン権限](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/)
 - [一時的なサービスプロバイダーのアクセスリクエストとオンボーディング](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/temporary-service-providers/)
 
 ## Issue トラッカー
@@ -50,7 +50,7 @@ stale: false
 ### 部門のアクセスリクエストボード
 
 - 完全に自動化できるまでの間に追加のラベルが必要な場合や、プロセス改善の提案がある場合は、[Issue を作成してください](https://gitlab.com/gitlab-com/it/end-user-services/issues/it-help-issue-tracker/-/issues/new)。
-- AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数のプロビジョニング担当者がいます。テンプレートを自動割り当てできない場合、Business Technology はプロビジョニング担当者がラベルごとに部門の Issue を確認できるボードを提供します（例: `dept::to do`）。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
+- AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数のプロビジョニング担当者がいます。テンプレートを自動割り当てできない場合、Business Technology はプロビジョニング担当者がラベルごとに部門の Issue を確認できるボードを提供します（例：`dept::to do`）。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
 - **Issue をある列から別の列へ移動すると、最初のラベル（列ヘッダーごと）が削除され、2 番目のラベルが追加されます。列間で Issue を移動する際は注意してください。**
 - 部門は以下のボードを表示して、未解決のアクセスリクエスト Issue を確認できます。
 

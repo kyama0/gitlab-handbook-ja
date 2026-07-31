@@ -11,7 +11,7 @@ stale: false
 
 ## auto assist とは
 
-[Zendesk](https://support.zendesk.com/hc/en-us/articles/8013454025114-Turning-on-and-configuring-auto-assist)によると:
+[Zendesk](https://support.zendesk.com/hc/en-us/articles/8013454025114-Turning-on-and-configuring-auto-assist)によると：
 
 > auto assist は、エージェント向けの AI 搭載アシスタントです。大規模言語モデル（LLM）技術を使用して、auto assist は送信されたチケットの内容を理解し、解決方法に関する提案をエージェントに提供します。
 

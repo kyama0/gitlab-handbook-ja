@@ -11,7 +11,7 @@ stale: false
 
 ## 提案とは
 
-提案は、実行する Copilot の提案アクションに基づいてグループ化された、さまざまな Zendesk Copilot 機能です:
+提案は、実行する Copilot の提案アクションに基づいてグループ化された、さまざまな Zendesk Copilot 機能です：
 
 - 初回返信
 - マージするチケット

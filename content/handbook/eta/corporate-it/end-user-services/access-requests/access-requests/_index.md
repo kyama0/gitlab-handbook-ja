@@ -20,7 +20,7 @@ stale: false
 ## アクセスリクエストに関連するページ
 
 - [よくある質問](/handbook/eta/corporate-it/end-user-services/access-requests/#application-specific-templates)
-- [Baseline Entitlements](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/)
+- [ベースライン権限](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/)
 - [一時的なサービスプロバイダーのアクセスリクエストとオンボーディング](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/temporary-service-providers/)
 
 ## お困りの場合
@@ -39,8 +39,8 @@ stale: false
 
 **ステップ 1. 個人情報**
 
-1. *個人情報:* アクセスをリクエストする人のリストを提供してください。関連する情報を含めてください。
-1. *SSH Keys:* リクエストするアクセスの種類で必要な場合にのみ、公開 ssh キーを追加してください。
+1. *個人情報：* アクセスをリクエストする人のリストを提供してください。関連する情報を含めてください。
+1. *SSH キー：* リクエストするアクセスの種類で必要な場合にのみ、SSH 公開鍵を追加してください。
 
 **ステップ 2. アクセスリクエスト**
 
@@ -125,7 +125,7 @@ Okta で設定されているアプリケーションの一覧については、
 1. このプロファイルの変更により、チームメンバーの Okta プロファイルの変更が自動的にトリガーされます。
 1. これにより、新しい部門とロールに基づいて、チームメンバーに新しいアプリケーションが割り当てられます。
 1. 同時に、新しいロールに関連しない古いアプリケーションはすべて取り消し／割り当て解除されます。
-1. さらに、Okta 管理者はユーザープロファイルに変更があったことを Okta からメールで受け取ります（メールの件名: 1 existing user updated）。Okta の自動化はすでにバックグラウンドで実行されており、このメールは情報提供のみを目的としています。
+1. さらに、Okta 管理者はユーザープロファイルに変更があったことを Okta からメールで受け取ります（メールの件名：1 existing user updated）。Okta の自動化はすでにバックグラウンドで実行されており、このメールは情報提供のみを目的としています。
 
 このアプリケーションの自動化は Okta で行われますが、「真の」システムのプロビジョニングとプロビジョニング解除は、影響を受けるシステム内でアクセス変更リクエストを介して手動で完了する必要があります。
 
@@ -137,9 +137,9 @@ Okta で設定されているアプリケーションの一覧については、
 
 {{% panel header="**手順**" header-bg="success" %}}
 
-1. **タイトル**には、自分の情報を使用して「Full Name - System - Role」（例: Laura Croft Google Group: adventurer）と入力します。
+1. **タイトル**には、自分の情報を使用して「Full Name - System - Role」（例：Laura Croft Google Group: adventurer）と入力します。
 1. 必要なアクセスの行を**削除または追加**します。
-1. このリクエストが以下に該当する場合は、ラベルによる承認を得るために Manager に割り当ててください**（Manager は `AR-Approval::Manager Approved` と `ReadyForProvisioning` のラベルを適用する必要があります）:**
+1. このリクエストが以下に該当する場合は、ラベルによる承認を得るために Manager に割り当ててください**（Manager は `AR-Approval::Manager Approved` と `ReadyForProvisioning` のラベルを適用する必要があります）：**
    - 1Password vault またはグループへのアクセス
    - 管理アクセス
    - 共有 Slack チャンネルを含む、社内関係者以外の人の Slack グループへのアクセス
@@ -166,7 +166,7 @@ Okta で設定されているアプリケーションの一覧については、
 ### 部門のアクセスリクエストボード
 
 - 完全に自動化できるまでの間に追加のラベルが必要な場合や、プロセス改善の提案がある場合は、[Issue を作成してください](https://gitlab.com/gitlab-com/it/end-user-services/issues/it-help-issue-tracker/-/issues/new)。
-- AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数のプロビジョニング担当者がいます。テンプレートを自動割り当てできない場合、Business Technology はプロビジョニング担当者がラベルごとに部門の Issue を確認できるボードを提供します（例: `dept::to do`）。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
+- AR は可能な場合に部門別に自動割り当ておよび自動ラベル付けされます。場合によっては、ツールごとに複数のプロビジョニング担当者がいます。テンプレートを自動割り当てできない場合、Business Technology はプロビジョニング担当者がラベルごとに部門の Issue を確認できるボードを提供します（例：`dept::to do`）。Issue を完了まで担当する人のワークフロー管理は部門の責任です。
 - **Issue をある列から別の列へ移動すると、最初のラベル（列ヘッダーごと）が削除され、2 番目のラベルが追加されます。列間で Issue を移動する際は注意してください。**
 - 部門は以下のボードを表示して、未解決のアクセスリクエスト Issue を確認できます。
 

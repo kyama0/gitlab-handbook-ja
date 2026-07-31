@@ -11,7 +11,7 @@ stale: false
 
 ## エンティティとは
 
-[Zendesk](https://support.zendesk.com/hc/en-us/articles/6711181959194-Classifying-unique-information-in-tickets-with-entities)によると:
+[Zendesk](https://support.zendesk.com/hc/en-us/articles/6711181959194-Classifying-unique-information-in-tickets-with-entities)によると：
 
 > インテリジェントトリアージの一部であるエンティティ分類は、受信チケットやメッセージング会話から、製品名、注文番号、所在地の詳細などの特定情報を自動的に取得し、実行可能な詳細情報でチケットを充実させます。
 
