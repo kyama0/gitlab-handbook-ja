@@ -518,7 +518,7 @@ GitLab はオープンコアプロジェクトであるため、（獲得でき�
 ## バイヤーベースオープンコア {#buyer-based-open-core}
 
 機能のティア決定は以下に基づいて行います：**「誰がその機能を最も気にするか」**。
-私たちの[3 つのティア](#three-tiers)は、個人貢献者からマネージャー/ディレクター、エグゼクティブまでの[バイヤーペルソナ](/handbook/product/personas/#buyer-personas)または IC に基づいて差別化されています。会社のすべての人は、すべての機能を使用しない場合でも[同じティア](#single-plan-for-one-customer)を使用します。
+私たちの[3 つのティア](#three-tiers)は、個人貢献者からマネージャー/ディレクター、エグゼクティブまでの[バイヤーペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/#buyer-personas)または IC に基づいて差別化されています。会社のすべての人は、すべての機能を使用しない場合でも[同じティア](#single-plan-for-one-customer)を使用します。
 機能は、どのチャンピオンが最も**気にする**かに基づいてプランに配置されます。
 バイヤーは意味があります。なぜなら、より高コストのプランにはより上位のバイヤーが必要だからです。
 
