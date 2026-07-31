@@ -162,7 +162,7 @@ GitLab への参加、おめでとうございます！このページでは、I
 
 1. Okta で **G Suite SSO Mail** をクリックして GitLab メールにアクセスします
 1. GitLab メールで、件名が "**Welcome to GitLab Onboarding, `yourname`!**" のメールを確認します
-1. メールの手順に従って GitLab.com アカウントをセットアップし、Onboarding Issue にアクセスします
+1. メールの手順に従って GitLab.com アカウントをセットアップし、オンボーディング Issue にアクセスします
 
 ## ラップトップのセットアップ: Linux {#laptop-setup-linux}
 
@@ -223,7 +223,7 @@ GitLab への参加、おめでとうございます！このページでは、I
 ### Linux ステップ 4: GitLab メールと GitLab.com アカウントにアクセスする {#linux-step-4-access-gitlab-email--gitlabcom-account}
 
 1. GitLab メールで、件名が "**Welcome to GitLab Onboarding, `yourname`!**" のメールを確認します
-1. メールの手順に従って GitLab.com アカウントをセットアップし、Onboarding Issue にアクセスします
+1. メールの手順に従って GitLab.com アカウントをセットアップし、オンボーディング Issue にアクセスします
 
 ### おめでとうございます
 
