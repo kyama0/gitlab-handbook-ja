@@ -17,55 +17,55 @@ Copilot ナレッジは、Zendesk Knowledge Center に関連する特定の Zend
 
 - Zendesk Global
   - Sandbox:
-    - 執筆ツール
-      - [x] 文章を改善
-    - 翻訳
-      - [x] ナレッジベース記事を翻訳
-      - 翻訳から用語を除外
-        - 現在は使用していません
-    - 記事コンテキスト
-      - [x] 記事を要約
+    - Writing tools
+      - [x] Enhance writing
+    - Translations
+      - [x] Translate knowledge base articles
+      - Exclude terms from translations
+        - None used at this time
+    - Article context
+      - [x] Summarize articles
     - Knowledge Copilot
 
-      - [x] Knowledge Copilot を有効化（Early Access Program）
-      - [ ] Conversational Help Center - Lisbon Theme を有効化（Early Access Program）
+      - [x] Turn on Knowledge copilot (Early Access Program)
+      - [ ] Turn on the Conversational Help Center - Lisbon Theme (Early Access Program)
   - Production:
-    - 執筆ツール
-      - [ ] 文章を改善
-    - 翻訳
-      - [x] ナレッジベース記事を翻訳
-      - 翻訳から用語を除外
-        - 現在は使用していません
-    - 記事コンテキスト
-      - [ ] 記事を要約
+    - Writing tools
+      - [ ] Enhance writing
+    - Translations
+      - [x] Translate knowledge base articles
+      - Exclude terms from translations
+        - None used at this time
+    - Article context
+      - [ ] Summarize articles
     - Knowledge Copilot
-      - [ ] Knowledge Copilot を有効化（Early Access Program）
+      - [ ] Turn on Knowledge copuilot (Early Access Program)
     - Lisbon theme
-      - [ ] Conversational Help Center - Lisbon Theme を有効化（Early Access Program）
+      - [ ] Turn on the Conversational Help Center - Lisbon Theme (Early Access Program)
 - Zendesk US Government
   - Sandbox:
-    - 執筆ツール
-      - [x] 文章を改善
-    - 翻訳
-      - [x] ナレッジベース記事を翻訳
-      - 翻訳から用語を除外
-        - 現在は使用していません
-    - 記事コンテキスト
-      - [x] 記事を要約
+    - Writing tools
+      - [x] Enhance writing
+    - Translations
+      - [x] Translate knowledge base articles
+      - Exclude terms from translations
+        - None used at this time
+    - Article context
+      - [x] Summarize articles
     - Knowledge Copilot
-      - [x] Knowledge Copilot を有効化（Early Access Program）
+      - [x] Turn on Knowledge copuilot (Early Access Program)
     - Lisbon theme
-      - [ ] Conversational Help Center - Lisbon Theme を有効化（Early Access Program）
+      - [ ] Turn on the Conversational Help Center - Lisbon Theme (Early Access Program)
   - Production:
-    - 執筆ツール
-      - [ ] 文章を改善
-    - 翻訳
-      - [x] ナレッジベース記事を翻訳
-      - 翻訳から用語を除外
-        - 現在は使用していません
-    - 記事コンテキスト
-      - [ ] 記事を要約
+    - Writing tools
+      - [ ] Enhance writing
+    - Translations
+      - [x] Translate knowledge base articles
+      - Exclude terms from translations
+        - None used at this time
+    - Article context
+      - [ ] Summarize articles
     - Knowledge Copilot
-      - [ ] Knowledge Copilot を有効化（Early Access Program）
+      - [ ] Turn on Knowledge copuilot (Early Access Program)
     - Lisbon theme
-      - [ ] Conversational Help Center - Lisbon Theme を有効化（Early Access Program）
+      - [ ] Turn on the Conversational Help Center - Lisbon Theme (Early Access Program)

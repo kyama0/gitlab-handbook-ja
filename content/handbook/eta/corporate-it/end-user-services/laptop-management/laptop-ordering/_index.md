@@ -1,6 +1,8 @@
 ---
 title: "ラップトップの注文"
 description: 新規採用者および既存チームメンバーのラップトップ注文（配送先、更新、例外を含む）を Corp IT チームが処理する方法に関する情報
+aliases:
+  - /handbook/security/corporate/end-user-services/laptop-management/laptop-ordering/
 upstream_path: /handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering/
 upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
 lastmod: "2026-07-28T15:04:15+01:00"

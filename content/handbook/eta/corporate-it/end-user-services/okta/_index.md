@@ -1,5 +1,7 @@
 ---
 title: "Okta"
+aliases:
+  - /handbook/security/corporate/end-user-services/okta/
 upstream_path: /handbook/eta/corporate-it/end-user-services/okta/
 upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
 lastmod: "2026-07-28T15:04:15+01:00"
@@ -47,7 +49,7 @@ Okta にサインインしたら、仕事用 Gmail にアクセスし、"Welcome
 
 <div class="w3-panel w3-yellow">
   <h3>重要:</h3>
-  <p>Okta アカウントが正しく設定されるよう、[IT Onboarding Guide](/handbook/eta/corporate-it/end-user-services/onboarding101/)に必ず従ってください</p>
+  <p>Okta アカウントが正しく設定されるよう、[IT オンボーディングガイド](/handbook/eta/corporate-it/end-user-services/onboarding101/)に必ず従ってください</p>
 </div>
 
 GitLab では、すべてのチームメンバーに、[Okta 認証](/handbook/eta/corporate-it/end-user-services/onboarding101/onboarding-mobile-devices/#mobile-passkey-and-yubikey-setup)として生体認証または YubiKey のいずれかを使用することを求めています

@@ -1,6 +1,8 @@
 ---
 title: "GitLab IT オンボーディング 101"
 description: "新入社員が GitLab MacBook または Linux ラップトップをセットアップするための手順ガイドです。Okta、デバイス登録、アカウントアクセスについて説明します。"
+aliases:
+  - /handbook/security/corporate/end-user-services/onboarding101/
 upstream_path: /handbook/eta/corporate-it/end-user-services/onboarding101/
 upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
 lastmod: "2026-07-28T15:04:15+01:00"
@@ -229,7 +231,7 @@ GitLab アカウントとラップトップの初期セットアッププロセ�
 
 ### 次のステップ
 
-オンボーディングの Day 2 に従ってモバイルデバイスで会社のアプリケーションへアクセスするには、[Mobile Device Onboarding](/handbook/eta/corporate-it/end-user-services/onboarding101/onboarding-mobile-devices)ガイドに従ってください。
+オンボーディングの Day 2 に従ってモバイルデバイスで会社のアプリケーションへアクセスするには、[モバイルデバイスのオンボーディング](/handbook/eta/corporate-it/end-user-services/onboarding101/onboarding-mobile-devices)ガイドに従ってください。
 
 ## お困りですか？
 

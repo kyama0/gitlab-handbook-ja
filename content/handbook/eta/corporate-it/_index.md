@@ -24,7 +24,7 @@ Slack の Compass アプリ（上部の検索バーに "Compass" と入力して
 
 1. [End User Services（IT ヘルプデスク）](/handbook/eta/corporate-it/end-user-services/) - 24x5 のサポート範囲、サポート時間、オンコールスケジュール、セルフサービスガイド
    1. [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)
-   1. [IT Onboarding 101](/handbook/eta/corporate-it/end-user-services/onboarding101/)
+   1. [IT オンボーディング 101](/handbook/eta/corporate-it/end-user-services/onboarding101/)
    1. [ラップトップ管理](/handbook/eta/corporate-it/end-user-services/laptop-management/)
    1. [Okta エンドユーザーガイド](/handbook/eta/corporate-it/end-user-services/okta/)
    1. [サポート対象アプリケーション](/handbook/eta/corporate-it/end-user-services/supported-apps/)

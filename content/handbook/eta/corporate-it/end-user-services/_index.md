@@ -1,6 +1,8 @@
 ---
 title: End User Services (EUS)
 description: "End User Services は、アクセス管理、ハードウェアの調達とサポート、最もよく使用されるツールのアプリケーションサポートを含む、組織全体向けの社内 IT サポートを提供します。"
+aliases:
+  - /handbook/security/corporate/end-user-services/
 upstream_path: /handbook/eta/corporate-it/end-user-services/
 upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
 lastmod: "2026-07-28T16:24:24+01:00"
@@ -54,7 +56,7 @@ Corporate IT または Corporate Security が管理していないシステム�
 1. [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/) - [AR サービス](/handbook/eta/corporate-it/end-user-services/access-requests/ar-services/)と[FAQ](/handbook/eta/corporate-it/end-user-services/access-requests/frequently-asked-questions/)を含む
 1. [アカウントパスワードと 2FA のリセット](/handbook/eta/corporate-it/end-user-services/account-resets/)
 1. [外部コラボレーター（顧客、パートナー、ベンダー）](/handbook/eta/corporate-it/end-user-services/external-collaborators/)
-1. [IT Onboarding 101](/handbook/eta/corporate-it/end-user-services/onboarding101/)
+1. [IT オンボーディング 101](/handbook/eta/corporate-it/end-user-services/onboarding101/)
 1. [ラップトップ管理](/handbook/eta/corporate-it/end-user-services/laptop-management/) - [ラップトップのワイプ（工場出荷時リセット）プロセス](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-wipe/)を含む
 1. [Okta エンドユーザーガイド](/handbook/eta/corporate-it/end-user-services/okta/)
 1. [サポート対象アプリケーション](/handbook/eta/corporate-it/end-user-services/supported-apps/)

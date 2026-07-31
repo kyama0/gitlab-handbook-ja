@@ -19,11 +19,11 @@ stale: false
 
 - Zendesk Global
   - Sandbox
-    - [x] 会話型支援を許可
+    - [x] Allow conversational assistance
   - Production
-    - [x] 会話型支援を許可
+    - [x] Allow conversational assistance
 - Zendesk US Government
   - Sandbox
-    - [x] 会話型支援を許可
+    - [x] Allow conversational assistance
   - Production
-    - [x] 会話型支援を許可
+    - [x] Allow conversational assistance

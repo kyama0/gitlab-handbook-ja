@@ -18,60 +18,60 @@ stale: false
 ## 現在の設定
 
 - Zendesk Global
-  - サンドボックス:
-    - [x] センチメントを検出
-    - 動的検出
-      - [x] 最新のやり取りに基づいてセンチメントを更新
-    - チャネル
-      - メールと非同期
-        - Web フォーム
-        - メール
-        - Web サービス (API)
-        - クローズ済みチケット
-      - メッセージング: なし
-      - [ ] 音声
-    - 除外条件
-      - [x] エージェントが作成したメール、メッセージング、その他の非同期チケットのトリアージをスキップ
-  - 本番環境:
-    - [x] センチメントを検出
-    - 動的検出
-      - [x] 最新のやり取りに基づいてセンチメントを更新
-    - チャネル
-      - メールと非同期
-        - Web フォーム
-        - メール
-        - Web サービス (API)
-        - クローズ済みチケット
-      - メッセージング: なし
-      - [ ] 音声
-    - 除外条件
-      - [x] エージェントが作成したメール、メッセージング、その他の非同期チケットのトリアージをスキップ
+  - Sandbox:
+    - [x] Detect sentiment
+    - Dynamic detection
+      - [x] Update sentiment based on the latest interaction
+    - Channels
+      - Email and async
+        - Web form
+        - Email
+        - Web service (API)
+        - Closed ticket
+      - Messaging: none
+      - [ ] Voice
+    - Exclusion conditions
+      - [x] Skip triaging email, messaging, and other asynchronous tickets created by agents
+  - Production:
+    - [x] Detect sentiment
+    - Dynamic detection
+      - [x] Update sentiment based on the latest interaction
+    - Channels
+      - Email and async
+        - Web form
+        - Email
+        - Web service (API)
+        - Closed ticket
+      - Messaging: none
+      - [ ] Voice
+    - Exclusion conditions
+      - [x] Skip triaging email, messaging, and other asynchronous tickets created by agents
 - Zendesk US Government
-  - サンドボックス:
-    - [x] センチメントを検出
-    - 動的検出
-      - [x] 最新のやり取りに基づいてセンチメントを更新
-    - チャネル
-      - メールと非同期
-        - Web フォーム
-        - メール
-        - Web サービス (API)
-        - クローズ済みチケット
-      - メッセージング: なし
-      - [ ] 音声
-    - 除外条件
-      - [x] エージェントが作成したメール、メッセージング、その他の非同期チケットのトリアージをスキップ
-  - 本番環境:
-    - [x] センチメントを検出
-    - 動的検出
-      - [x] 最新のやり取りに基づいてセンチメントを更新
-    - チャネル
-      - メールと非同期
-        - Web フォーム
-        - メール
-        - Web サービス (API)
-        - クローズ済みチケット
-      - メッセージング: なし
-      - [ ] 音声
-    - 除外条件
-      - [x] エージェントが作成したメール、メッセージング、その他の非同期チケットのトリアージをスキップ
+  - Sandbox:
+    - [x] Detect sentiment
+    - Dynamic detection
+      - [x] Update sentiment based on the latest interaction
+    - Channels
+      - Email and async
+        - Web form
+        - Email
+        - Web service (API)
+        - Closed ticket
+      - Messaging: none
+      - [ ] Voice
+    - Exclusion conditions
+      - [x] Skip triaging email, messaging, and other asynchronous tickets created by agents
+  - Production:
+    - [x] Detect sentiment
+    - Dynamic detection
+      - [x] Update sentiment based on the latest interaction
+    - Channels
+      - Email and async
+        - Web form
+        - Email
+        - Web service (API)
+        - Closed ticket
+      - Messaging: none
+      - [ ] Voice
+    - Exclusion conditions
+      - [x] Skip triaging email, messaging, and other asynchronous tickets created by agents

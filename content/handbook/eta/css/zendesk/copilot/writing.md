@@ -19,20 +19,20 @@ Copilot の文章作成は、文章強化に基づいてグループ化された
 ## 現在の設定
 
 - Zendesk Global
-  - サンドボックス:
-    - [x] コミュニケーションガイドライン
-    - [ ] 文章を改善
-      - アクセスできるユーザー: すべてのグループ
-  - 本番環境:
-    - [x] コミュニケーションガイドライン
-    - [ ] 文章を改善
-      - アクセスできるユーザー: すべてのグループ
+  - Sandbox:
+    - [x] Communication guidelines
+    - [ ] Enhance writing
+      - Who has access: All groups
+  - Production:
+    - [x] Communication guidelines
+    - [ ] Enhance writing
+      - Who has access: All groups
 - Zendesk US Government
-  - サンドボックス:
-    - [x] コミュニケーションガイドライン
-    - [x] 文章を改善
-      - アクセスできるユーザー: すべてのグループ
-  - 本番環境:
-    - [x] コミュニケーションガイドライン
-    - [x] 文章を改善
-      - アクセスできるユーザー: すべてのグループ
+  - Sandbox:
+    - [x] Communication guidelines
+    - [x] Enhance writing
+      - Who has access: All groups
+  - Production:
+    - [x] Communication guidelines
+    - [x] Enhance writing
+      - Who has access: All groups

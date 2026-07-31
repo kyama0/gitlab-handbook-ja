@@ -4,6 +4,8 @@ controlled_document: true
 tags:
   - security_standard
   - security_standard_acia
+aliases:
+  - /handbook/security/corporate/end-user-services/access-requests/
 upstream_path: /handbook/eta/corporate-it/end-user-services/access-requests/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
 lastmod: "2026-07-28T15:04:15+01:00"
@@ -84,10 +86,10 @@ Okta で設定されているアプリケーションの一覧については、
 
 これらの Issue は、特定のアプリケーションおよびサービスへの、またはそれらに関するアクセスに関連します。たとえば、既存の vault やグループの変更、または新規作成には [1Password Request Form](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=1Password_Request)を使用できます。
 
-### Admin（Black）アカウント
+### 管理者（Black）アカウント
 
-Okta、1Password、Google Workspace など、さまざまなコアサービスへの admin アクセスのプロビジョニングをサポートしています。このプロセスでは通常、まず新しいメールアドレスを使った[admin アカウントの作成](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Admin_Black_Account_Creation)をリクエストします。
-admin アカウントを作成した後、特定のサービスへの admin アクセスについて追加の AR を送信する必要があります。
+Okta、1Password、Google Workspace など、さまざまなコアサービスへの管理者アクセスのプロビジョニングをサポートしています。このプロセスでは通常、まず新しいメールアドレスを使った[管理者アカウントの作成](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Admin_Black_Account_Creation)をリクエストします。
+管理者アカウントを作成した後、特定のサービスへの管理者アクセスについて追加の AR を送信する必要があります。
 
 - [Admin（Black）Account](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Admin_Black_Account_Creation)
 - [1Password Admin](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Admin_Black_Account_Role_1Password)

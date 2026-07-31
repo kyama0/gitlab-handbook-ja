@@ -25,82 +25,82 @@ stale: false
 ## 現在の設定
 
 - Zendesk Global
-  - サンドボックス:
-    - [ ] 初回返信を提案
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [x] マージするチケットを提案
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [x] 類似チケットを表示
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [ ] 電話中にライブ文字起こしと提案を生成
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [ ] 会話を要約
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [x] ヘッダーにインテントを表示
-    - [x] ヘッダーにセンチメントを表示
-    - [ ] チケットの担当者を提案 (EAP)
-  - 本番環境:
-    - [ ] 初回返信を提案
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [x] マージするチケットを提案
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [x] 類似チケットを表示
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [ ] 電話中にライブ文字起こしと提案を生成
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [ ] 会話を要約
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [x] ヘッダーにインテントを表示
-    - [x] ヘッダーにセンチメントを表示
-    - [ ] チケットの担当者を提案 (EAP)
+  - Sandbox:
+    - [ ] Suggest first replies
+      - Who has access:
+        - All groups
+    - [x] Suggest tickets to merge
+      - Who has access:
+        - All groups
+    - [x] Show similiar tickets
+      - Who has access:
+        - All groups
+    - [ ] Generate live transcriptions and suggestions during phone calls
+      - Who has access:
+        - All groups
+    - [ ] Summarize conversations
+      - Who has access:
+        - All groups
+    - [x] Show intent in the header
+    - [x] Show sentiment in the header
+    - [ ] Suggest ticket assignees (EAP)
+  - Production:
+    - [ ] Suggest first replies
+      - Who has access:
+        - All groups
+    - [x] Suggest tickets to merge
+      - Who has access:
+        - All groups
+    - [x] Show similiar tickets
+      - Who has access:
+        - All groups
+    - [ ] Generate live transcriptions and suggestions during phone calls
+      - Who has access:
+        - All groups
+    - [ ] Summarize conversations
+      - Who has access:
+        - All groups
+    - [x] Show intent in the header
+    - [x] Show sentiment in the header
+    - [ ] Suggest ticket assignees (EAP)
 - Zendesk US Government
-  - サンドボックス:
-    - [x] 初回返信を提案
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [x] マージするチケットを提案
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [x] 類似チケットを表示
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [ ] 電話中にライブ文字起こしと提案を生成
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [x] 会話を要約
-      - アクセスできるユーザー:
-        - すべてのグループ
-      - [x] 要約に内部メモを含める
-    - [x] ヘッダーにインテントを表示
-    - [x] ヘッダーにセンチメントを表示
-    - [ ] チケットの担当者を提案 (EAP)
-  - 本番環境:
-    - [x] 初回返信を提案
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [x] マージするチケットを提案
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [x] 類似チケットを表示
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [ ] 電話中にライブ文字起こしと提案を生成
-      - アクセスできるユーザー:
-        - すべてのグループ
-    - [x] 会話を要約
-      - アクセスできるユーザー:
-        - すべてのグループ
-      - [x] 要約に内部メモを含める
-    - [x] ヘッダーにインテントを表示
-    - [x] ヘッダーにセンチメントを表示
-    - [ ] チケットの担当者を提案 (EAP)
+  - Sandbox:
+    - [x] Suggest first replies
+      - Who has access:
+        - All groups
+    - [x] Suggest tickets to merge
+      - Who has access:
+        - All groups
+    - [x] Show similiar tickets
+      - Who has access:
+        - All groups
+    - [ ] Generate live transcriptions and suggestions during phone calls
+      - Who has access:
+        - All groups
+    - [x] Summarize conversations
+      - Who has access:
+        - All groups
+      - [x] Include internal notes in summary
+    - [x] Show intent in the header
+    - [x] Show sentiment in the header
+    - [ ] Suggest ticket assignees (EAP)
+  - Production:
+    - [x] Suggest first replies
+      - Who has access:
+        - All groups
+    - [x] Suggest tickets to merge
+      - Who has access:
+        - All groups
+    - [x] Show similiar tickets
+      - Who has access:
+        - All groups
+    - [ ] Generate live transcriptions and suggestions during phone calls
+      - Who has access:
+        - All groups
+    - [x] Summarize conversations
+      - Who has access:
+        - All groups
+      - [x] Include internal notes in summary
+    - [x] Show intent in the header
+    - [x] Show sentiment in the header
+    - [ ] Suggest ticket assignees (EAP)
