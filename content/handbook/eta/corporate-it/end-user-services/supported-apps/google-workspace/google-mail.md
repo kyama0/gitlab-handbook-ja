@@ -87,4 +87,4 @@ Gmail は主要なメールアプリケーションです。Okta Dashboard の `
 
 ## 追加サポート {#additional-support}
 
-追加のサポートが必要な場合は、Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけます）または [it-help@gitlab.com](mailto:it-help@gitlab.com) から IT に連絡してください。
+追加のサポートが必要な場合は、Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけます）または [it-help@gitlab.com](mailto:it-help@gitlab.com) へメールで IT に連絡してください。

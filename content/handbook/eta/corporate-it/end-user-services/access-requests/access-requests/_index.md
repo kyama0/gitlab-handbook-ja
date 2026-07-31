@@ -13,7 +13,7 @@ stale: false
 
 アクセスリクエストは IT チームが担当し、オンボーディング、オフボーディング、社内異動のリクエストは People Operations Team が担当します。
 
-アクセスリクエストに関する質問がある場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com から IT にお問い合わせください。
+アクセスリクエストに関する質問がある場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com へメールで IT にお問い合わせください。
 
 ## アクセスリクエストに関連するページ
 
@@ -24,7 +24,7 @@ stale: false
 ## お困りの場合
 
 - 特定の SLA はありませんが、Issue で `@gitlab-com/gl-security/corp/helpdesk` に @メンションしてください。
-- リクエストが緊急の場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com から IT にお問い合わせください。
+- リクエストが緊急の場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com へメールで IT にお問い合わせください。
 
 ## どのテンプレートを使用すればよいですか？ {#how-do-i-choose-which-template-to-use}
 

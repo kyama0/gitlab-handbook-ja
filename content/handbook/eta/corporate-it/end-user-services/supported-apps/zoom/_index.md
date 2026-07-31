@@ -26,4 +26,4 @@ Zoom を使用する際は、以下を確認してください:
 
 ## 追加サポート
 
-Zoom に関する追加の支援が必要な場合は、Slack の #it_help または it-help@gitlab.com から直接お問い合わせください
+Zoom に関する追加の支援が必要な場合は、Slack の #it_help または it-help@gitlab.com へ直接メールでお問い合わせください

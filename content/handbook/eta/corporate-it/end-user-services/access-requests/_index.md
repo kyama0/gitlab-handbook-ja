@@ -16,7 +16,7 @@ stale: false
 
 アクセスリクエストは IT チームが担当し、オンボーディング、オフボーディング、社内異動のリクエストは People Operations Team が担当します。
 
-アクセスリクエストに関する質問がある場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com からお問い合わせください。
+アクセスリクエストに関する質問がある場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com へメールでお問い合わせください。
 
 ## Lumos でアクセスをリクエストする
 
@@ -105,7 +105,7 @@ admin アカウントを作成した後、特定のサービスへの admin ア�
 
 baseline Issue テンプレートの一覧は[こちら](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/tree/master/.gitlab/issue_templates/role_baseline_access_request_tasks)で確認でき、自由にカスタマイズできます。
 
-Baseline Entitlement Requests の作成に関する追加サポートについては、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com からお問い合わせください。
+Baseline Entitlement Requests の作成に関する追加サポートについては、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com へメールでお問い合わせください。
 
 ## アクセスリクエストへの取り組み
 
@@ -142,4 +142,4 @@ Tech Stack の新しい項目に対するアクセスリクエストプロセス
 ## 追加のサポート
 
 - 特定の SLA はありませんが、Issue で `@gitlab-com/gl-security/corp/helpdesk` に @メンションしてください。
-- リクエストが緊急の場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com からお問い合わせください。
+- リクエストが緊急の場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com へメールでお問い合わせください。

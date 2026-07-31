@@ -113,7 +113,7 @@ Reclaim.ai のユーザーは、次を行う必要があります:
 
 Reclaim.ai の利用、セキュリティ上の懸念、コンプライアンス要件に関する質問:
 
-- **一般 IT サポート**: Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけます）または it-help@gitlab.com から IT に連絡してください。
+- **一般 IT サポート**: Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけます）または it-help@gitlab.com へメールで IT に連絡してください。
 - **セキュリティに関する質問**: Slack の [#security-help](https://gitlab.slack.com/channels/security-help)
 - **アクセスリクエスト**: [アクセスリクエストプロセス](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)に従います
 - **コンプライアンスに関する質問**: マネージャーまたは Compliance チームに連絡してください

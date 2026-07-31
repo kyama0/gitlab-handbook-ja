@@ -10,4 +10,4 @@ stale: false
 
 ## 概要
 
-これはプレースホルダーページです。[GitLab Password Guideslines](/handbook/security/password-guidelines/)および [Password Standards Policy](/handbook/security/policies_and_standards/password-standard/)ページを参照してください。
+これはプレースホルダーページです。[GitLab パスワードガイドライン](/handbook/security/password-guidelines/)および [GitLab パスワード標準](/handbook/security/policies_and_standards/password-standard/)ページを参照してください。

@@ -84,4 +84,4 @@ GitLab.com の 2FA は、Okta にログインするために使用する MFA と
 
 ## 質問がある場合はどこに行けばよいですか？
 
-- Okta のヘルプ、セットアップ、統合に関する質問: Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけます）または it-help@gitlab.com から IT に連絡してください。
+- Okta のヘルプ、セットアップ、統合に関する質問: Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけます）または it-help@gitlab.com へメールで IT に連絡してください。

@@ -47,7 +47,7 @@ stale: false
           <li><a href="https://support.google.com/android/answer/7680439?">Android が最新であることを確認します</a></li>
           <li>デバイスに応じて、<b>Camera</b> アプリまたは <b>Google Lens</b> を開きます</li>
           <li>QR コードをスキャンし、Google アカウントにパスキーを保存するオプションを選択します</li>
-          <li>Samsung デバイスでは、<b>次回は QR コードをスキップ<b>するよう求められたら、<b>今はしない</b>を選択し、Google アカウントにパスキーを保存します。パスキーは Samsung Passkey ではなく Google のパスキーマネージャーに保存してください。
+          <li>Samsung デバイスでは、<b>Skip the QR code next time<b>するよう求められたら、<b>not now</b>を選択し、Google アカウントにパスキーを保存します。パスキーは Samsung Passkey ではなく Google のパスキーマネージャーに保存してください。
         </ol>
      </li>
    </ol>
@@ -105,4 +105,4 @@ stale: false
 
 ## サポートが必要ですか？
 
-ラップトップのセットアップにさらに支援が必要な場合は、毎週火曜日に予定されているオンボーディングコール（Calendar を確認してください！）に参加するか、Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけます）または it-help@gitlab.com からお問い合わせください。
+ラップトップのセットアップにさらに支援が必要な場合は、毎週火曜日に予定されているオンボーディングコール（Calendar を確認してください！）に参加するか、Slack の Compass アプリ（上部の検索バーに "Compass" と入力して見つけます）または it-help@gitlab.com へメールでお問い合わせください。
