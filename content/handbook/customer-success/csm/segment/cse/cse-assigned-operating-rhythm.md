@@ -1,5 +1,5 @@
 ---
-title: "CSE Assigned: 運用リズム"
+title: "CSE Assigned：運用リズム"
 description: "CSE がアカウントの担当ブックに優先順位を付け、四半期ごとのヘルス評価の提供を構成する方法。"
 upstream_path: /handbook/customer-success/csm/segment/cse/cse-assigned-operating-rhythm/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894

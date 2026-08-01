@@ -1,5 +1,5 @@
 ---
-title: "CSE Assigned: ヘルス評価と CTA"
+title: "CSE Assigned：ヘルス評価と CTA"
 description: "CSE Assigned アカウントのヘルス評価を実施し、CTA を使用してフォローアップ作業を追跡する方法。"
 upstream_path: /handbook/customer-success/csm/segment/cse/cse-assigned-assessments-ctas/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894

@@ -1,5 +1,5 @@
 ---
-title: "CSE Assigned: エンゲージメントと CSE 対 Success Tiers"
+title: "CSE Assigned：エンゲージメントと CSE 対 Success Tiers"
 description: "CSE が顧客と直接エンゲージする方法と、CSE Assigned、Pool、Success Tiers の比較。"
 upstream_path: /handbook/customer-success/csm/segment/cse/cse-assigned-engagement/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894

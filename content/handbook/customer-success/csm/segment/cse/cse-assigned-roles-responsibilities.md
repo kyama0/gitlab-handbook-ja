@@ -1,5 +1,5 @@
 ---
-title: "CSE Assigned: 役割と責任"
+title: "CSE Assigned：役割と責任"
 description: "CSE Assigned、CSMA、Professional Services 間の RACI、エンゲージメント上限、境界トリガー。"
 upstream_path: /handbook/customer-success/csm/segment/cse/cse-assigned-roles-responsibilities/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894

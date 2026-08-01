@@ -1,5 +1,5 @@
 ---
-title: "CSE Assigned: 質問と回答"
+title: "CSE Assigned：質問と回答"
 description: "CSE Assigned のモーションについて CSE からよく寄せられる質問。"
 upstream_path: /handbook/customer-success/csm/segment/cse/cse-assigned-qa/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894

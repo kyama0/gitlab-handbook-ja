@@ -95,7 +95,7 @@ All-in-One & Service チームでは、専門ロールが DevOps/SecOps のプ�
   - All-in-One チームメンバーは、Security チームが提示するガイダンスまたは要件（実行すべきセキュリティスキャンなど）に基づいて、異なる種類のサービスでシークレットをどのように扱うかを決定します。All-in-One チームメンバーが推奨パターンから逸脱する場合は、Security チームに通知するか、免除申請を完了します
   - プラットフォームチームは、All-in-One チームメンバーが従うための社内ドキュメントを作成します
 
-### All-in-One & Embedded Model
+### All-in-One & Embedded モデル
 
 ![All-in-One & Embedded](/images/product/personas/all-in-one-embedded.png)
 

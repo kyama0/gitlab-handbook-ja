@@ -1,5 +1,5 @@
 ---
-title: "CSE Assigned: 対象範囲と役割のスコープ"
+title: "CSE Assigned：対象範囲と役割のスコープ"
 description: "CSE Assigned の対象範囲と、エスカレーションのオーナーシップを含む役割のスコープ内外。"
 upstream_path: /handbook/customer-success/csm/segment/cse/cse-assigned-scope/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894

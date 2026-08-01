@@ -1,5 +1,5 @@
 ---
-title: "CSE Assigned: ツールとリソース"
+title: "CSE Assigned：ツールとリソース"
 description: "CSE が CSE Assigned モーションを運用するために使用するツールとリソース。"
 upstream_path: /handbook/customer-success/csm/segment/cse/cse-assigned-tools/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
