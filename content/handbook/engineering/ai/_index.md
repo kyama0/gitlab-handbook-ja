@@ -1,9 +1,9 @@
 ---
 title: AI Engineering
 upstream_path: /handbook/engineering/ai/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-lastmod: "2026-07-28T05:53:28-07:00"
-translated_at: "2026-07-31T08:29:15+09:00"
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+lastmod: "2026-07-31T12:38:28+02:00"
+translated_at: "2026-08-01T15:59:51+09:00"
 translator: codex
 stale: false
 ---
@@ -41,11 +41,11 @@ GitLab 独自の非同期な働き方、ハンドブックファーストの手�
 **** Gateway Services
 **** AI Health + Connectivity
 **** Model Selection
-** Sebastian Rehm - Duo Agent Platform
+** Sebastian Rehm - Agent Foundations
 *** Annie Ying
 **** Agent Developer
 **** Flow Components
-*** Agent Execution EM (open role)
+*** Sebastian Rehm
 **** Agent Observability
 **** Runner Execution
 **** Agent Tools
@@ -77,7 +77,7 @@ GitLab 独自の非同期な働き方、ハンドブックファーストの手�
 
 | チーム | 担当範囲 |
 |------|-----------------|
-| [Agent Foundations](/handbook/engineering/ai/agent-foundations/) | エージェント型オブザーバビリティ / 再利用可能なエージェント型コンポーネント / Duo ワークフローサービス |
+| [Agent Foundations](/handbook/engineering/ai/agent-foundations/) | エージェント型 AI の基盤セクション: <ul><li>[Agent Developer](/handbook/engineering/ai/agent-foundations/agent-developer/)</li><li>[AI Catalog](/handbook/engineering/ai/agent-foundations/ai-catalog/)</li><li>[Agent Execution](/handbook/engineering/ai/agent-foundations/agent-execution/)</li></ul> |
 | [AI Coding](/handbook/engineering/ai/ai-coding/) | Code Suggestions、Duo Code Review、コード関連のスラッシュコマンド (/explain, /refactor, /tests, /fix)、Semantic Indexing、Duo Context Exclusion、Repository X-Ray  |
 | [AI Core Infra](/handbook/engineering/ai/ai-core-infra/) | アプリケーション（GitLab Chat、Code Suggestions、その他の AI 機能）に LLM を統合するための Abstraction Layer / AI Gateway |
 | [AI Core Infra](/handbook/engineering/ai/ai-core-infra/)（旧 Model Validation） | 機能別のカスタム評価機能、評価サポート、自動評価ツール |
@@ -86,7 +86,6 @@ GitLab 独自の非同期な働き方、ハンドブックファーストの手�
 | [AI Clients](/handbook/engineering/ai/ai-clients/) | 顧客が GitLab Duo を体験するクライアント側のサーフェス: <ul><li>Duo Chat（Web Chat と Chat Engine）</li><li>[Duo Client SDK / Language Server](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp)</li><li>Duo CLI</li><li>[VS Code](https://gitlab.com/gitlab-org/gitlab-vscode-extension) と [Web IDE](https://gitlab.com/gitlab-org/gitlab-web-ide) の拡張機能</li><li>[JetBrains](https://gitlab.com/gitlab-org/editor-extensions/gitlab-jetbrains-plugin) プラグイン</li></ul> |
 | [Global Search](/handbook/engineering/ai/search/) | Abstraction Layer / Vector Storage / セマンティック検索 |
 | [Infrastructure Platforms - Runway](/handbook/engineering/infrastructure-platforms/gitlab-delivery/runway/) | AI Gateway のスケーラビリティ / Runway インフラストラクチャ |
-| [AI Catalog](/handbook/engineering/ai/ai-catalog/) | AI Catalog / Custom Agents / Custom Flows |
 
 ## カウンターパート
 

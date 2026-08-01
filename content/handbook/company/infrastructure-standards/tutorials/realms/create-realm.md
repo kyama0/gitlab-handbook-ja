@@ -2,15 +2,15 @@
 title: "インフラ標準 - チュートリアル - レルム作成リクエスト"
 description: "このハンドブックセクションでは、GitLab の全部門・グループにわたる AWS および GCP のインフラ標準の最新イテレーションを定義します。"
 upstream_path: "/handbook/company/infrastructure-standards/tutorials/realms/create-realm/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T15:43:48Z"
-translator: "claude"
+upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
+translated_at: "2026-08-01T16:12:50+09:00"
+translator: codex
 stale: false
-lastmod: "2024-08-22T16:29:21+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
 
 新しいレルムの作成に関するチュートリアルのプレースホルダーです。
 
-当面の間、Slack または GitLab の Issue で Dave Smith または Jeff Martin にお問い合わせください。
+当面の間、Slack または GitLab の Issue で Dave Smith にお問い合わせください。

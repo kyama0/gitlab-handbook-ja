@@ -2,11 +2,11 @@
 title: "Database Excellence ステージ"
 description: "Database Excellence セクションは、GitLab のデータベースがスケールにおいて確実に稼働することを保証しながら、すべてのデータストアにわたるデータアーキテクチャ、配置、ライフサイクル管理についてチームが情報に基づいた意思決定を行えるようにします。"
 upstream_path: /handbook/engineering/data-engineering/database-excellence/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-17T06:09:44+09:00"
+upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
+translated_at: "2026-08-01T15:50:15+09:00"
 translator: codex
 stale: false
-lastmod: 2026-07-15T15:06:40+02:00
+lastmod: "2026-07-31T11:48:16+05:30"
 ---
 
 ## ミッション {#mission}
@@ -55,7 +55,7 @@ lastmod: 2026-07-15T15:06:40+02:00
 * データベースのプロビジョニング、設定、アップグレードのための再利用可能なツールを構築する
 * デプロイメントタイプを横断して信頼性が高く反復可能なデータベース運用を実現する
 
-{{< group-by-slugs dazhu1 bshah11 saadullah707 mattkasa jon_jenkins pmistry2 amritasinha >}}
+{{< group-by-slugs dazhu1 bshah11 saadullah707 mattkasa jon_jenkins pmistry2 amritasinha amsingh6 >}}
 
 ### 以前のチーム {#previous-teams}
 
@@ -113,9 +113,9 @@ TBD
 Database Excellence には[毎週のトリアージ Issue](https://gitlab.com/gitlab-org/database-team/team-tasks/-/work_items?state=opened&label_name[]=database::triage)があり、この Issue は[自動化](https://gitlab.com/gitlab-org/database-team/update_status/-/blob/main/team_triage_issue.rb)によって毎週自動的に作成され、Database Excellence の入力と継続的なモニタリングが必要なさまざまなセクション（例: DB の飽和、テーブルサイズのモニタリングなど）を構築します。
 
 これは Database Excellence ステージのバックエンドエンジニアと SRE が担当します。
-彼らは責任を分担し、必要に応じて適切な担当者（つまり、アプリケーション関連の項目は BE、インフラ関連の項目は SRE）をタグ付けします。
+責任を分担し、必要に応じて適切な担当者（つまり、アプリケーション関連の項目は BE、インフラ関連の項目は SRE）をタグ付けします。
 
-{{% alert title="Note" color="info" %}}
+{{% alert title="注記" color="info" %}}
 次のステップ: トリアージ Issue 内のセクションは `backend`、`infra`、`shared` に分類されます。これにより、アサインされた DRI が同じ Issue をトリアージする必要がなくなります。
 {{% /alert %}}
 

@@ -2,11 +2,11 @@
 title: "Verify:Pipeline Execution グループ"
 description: "Pipeline Execution グループの GitLab チームページです。"
 upstream_path: /handbook/engineering/devops/verify/pipeline-execution/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:59:28+09:00"
+upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
+translated_at: "2026-08-01T15:50:15+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T13:03:25-03:00"
+lastmod: "2026-07-30T23:21:09-04:00"
 ---
 
 このチームは [Verify](/handbook/product/categories/#verify-stage) DevOps ステージにマッピングされており、Continuous Integration [ユースケース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/) をサポートしています。
@@ -221,7 +221,7 @@ Pipeline Execution グループのドメインに含まれないもの:
 
 1. Pipeline Execution の broken-master アラートに対応する。
 1. サポートからの受信ヘルプリクエストの DRI。
-    1. 既存のヘルプリクエストは、既存の DRI の裁量により彼らに移管される場合があります。
+    1. 既存のヘルプリクエストは、既存の DRI の裁量によりフロントラインレスポンダーへ移管される場合があります。
     1. リクエストに対処するために必要に応じて他のメンバーを呼び込むのは自由ですが、リクエストが対処されることを確実にする DRI のままです。
 1. お客様のエスカレーションに最初に投入される開発者。明らかに別のチームメンバーを選ぶ理由がない限り。
 1. [オプション] 追加のチームメンバーとともにヘルプリクエストに取り組む週次スウォームミーティングを企画・主催する。
@@ -237,7 +237,7 @@ Pipeline Execution グループのドメインに含まれないもの:
 
 上記のいずれかのタスクについて、緊急の Issue がチームメンバーの労働時間外に発生した場合、他のチームメンバーが最初の対応者になる必要があります。
 マイルストーンのフロントラインレスポンダーは、自分の労働時間中にそうした Issue をフォローアップする責任を持ちます。
-彼らはマイルストーン中に 24 時間 365 日オンコールであることが期待されているわけではありません。
+マイルストーン中に 24 時間 365 日オンコールであることは期待されていません。
 マイルストーンの終わりに、まだ進行中の Issue は、次回のフロントラインレスポンダーに移管される場合があります。元のチームメンバーが引き続き DRI のままであることが理にかなっている場合、それも可能です。
 
 #### コミュニティコーディネーター
@@ -304,13 +304,13 @@ Pipeline Execution には、明示的な SLO にひもづき、迅速なトリ�
 - [Pipeline Execution Infradev のトリアージと追跡](https://gitlab.com/gitlab-org/verify-stage/-/work_items/635)
 - [Pipeline Execution S1 & S2 バグのトリアージと追跡](https://gitlab.com/gitlab-org/verify-stage/-/work_items/619)
 - [Pipeline Execution RFH のトリアージと追跡](https://gitlab.com/gitlab-org/verify-stage/-/work_items/614)
-- Pipeline Execution の不安定なテスト: これについてはまだ明文化されたプロセスがありませんが、新たに現れつつある優先度の高いワークストリームであり、今後注意深く監視し、積極的に管理する必要があります。
+- [Pipeline Execution の不安定なテスト](https://gitlab.com/gitlab-org/verify-stage/-/work_items/637)
 
 これらの Issue は、トリアージされた重大度に基づいていつでも作業にスケジュールできます。S1 Issue は開発に直接取り込まれる場合があり、一部の Issue は、私たちが行わない変更を要求している場合、バックログに入れるかそのままクローズする可能性があります。トリアージの結果にかかわらず、これらの Issue は迅速に _対処_ し、バックログに放置しないようにする必要があります。開発者が Issue に直接アサインされている場合、その開発者が最初の連絡先となり、Issue の解決に関する権限を持つべきです。一般に、EM と PM は、目標期間内にこれらが解決されるようにする責任を負います。
 
 ### 計画された作業
 
-- [Pipeline Execution の現在のマイルストーン](https://gitlab.com/groups/gitlab-org/-/boards/1372896?milestone_title=Started&label_name[]=group%3A%3Apipeline%20execution): 計画済み・計画外を問わず、すべての作業はその Issue を提供する予定のマイルストーンに割り当てます。このボードには現在進行中の Issue が表示されます。アサインされていない Issue は Ready For Development としてマークされ、いつでもピックアップできる状態であるべきです。Issue が Ready For Development でない場合は、そうなっているか確認するためにレビューするか、マイルストーンから外す必要があります。
+- [Pipeline Execution の現在のマイルストーン](https://gitlab.com/gitlab-org/gitlab/-/boards/5029854): 計画済み・計画外を問わず、すべての作業はその Issue を提供する予定のマイルストーンに割り当てます。このボードには、現在のアクティブなマイルストーンに割り当てられた Issue が表示されます。アサインされていない Issue は Ready For Development としてマークされ、いつでもピックアップできる状態であるべきです。Issue が Ready For Development でない場合は、そうなっているか確認するためにレビューするか、マイルストーンから外す必要があります。
 - [Pipeline Execution の次のマイルストーン](https://gitlab.com/groups/gitlab-org/-/boards/1372896?label_name[]=group%3A%3Apipeline%20execution&milestone_title=Upcoming): 一般に、任意のマイルストーン中に EM と PM が次のマイルストーンの作業をキューに入れます。私たちが取り組むプロジェクトの一般的な長さにより、開発者が現在の作業のフォローアップとして作成した新しい Issue が含まれることもよくあります。
 - [今後 1〜3 リリース](https://gitlab.com/groups/gitlab-org/-/boards/1372896?label_name[]=group%3A%3Apipeline%20execution&milestone_title=Next%201-3%20releases): 優先度が比較的高い Issue のプールで、今後のマイルストーンにおける計画作業の主な供給元にする必要があります。このリストは定期的にレビューし、優先度が最新であること、および開発に取り込める健全なバックログ上位があることを確認する必要があります。
 - [今後 4〜6 リリース](https://gitlab.com/groups/gitlab-org/-/boards/1372896?label_name[]=group%3A%3Apipeline%20execution&milestone_title=Next%204-6%20releases): 今後 1〜3 リリースのプールと似ていますが、緊急度は低くなります。適切な場合は開発に取り込むことも、1〜3 リリースのプールから Issue がスケジュールされた際にそのプールを補充するために使うこともできます。
@@ -321,7 +321,7 @@ FY27Q2 時点では、Backlog マイルストーンの Issue を定期的かつ�
 
 Issue がまだ **Ready for Development** としてマークされていない場合、[次のマイルストーン](https://gitlab.com/groups/gitlab-org/-/boards/1372896?label_name[]=group%3A%3Apipeline%20execution&milestone_title=Upcoming) に移す際に、EM または PM がエンジニアへ Issue のレビュー、検証、リファインを依頼します
 
-- 計画された作業は、リファインメントと技術実装の提案が完了していない状態で[現在のマイルストーン](https://gitlab.com/groups/gitlab-org/-/boards/1372896?milestone_title=Started&label_name[]=group%3A%3Apipeline%20execution)に存在してはなりません。**Ready for Development** である必要があります。
+- 計画された作業は、リファインメントと技術実装の提案が完了していない状態で[現在のマイルストーン](https://gitlab.com/gitlab-org/gitlab/-/boards/5029854)に存在してはなりません。**Ready for Development** である必要があります。現在のマイルストーンボードでリファインメントが必要な Issue を見つけた場合は、今すぐリファインメントのためにピックアップしてください。それができる状況でなければ、チームに連絡してください。
 - 計画された作業は、**Refinement** 中でも[次のマイルストーン](https://gitlab.com/groups/gitlab-org/-/boards/1372896?label_name[]=group%3A%3Apipeline%20execution&)に存在できます。この状態では、リファインメントを明示的に任されたチームの IC にアサインする必要があります。
 - 計画外の作業は予測できない性質上、どの状態でも現在または次のマイルストーンに存在する可能性があります。迅速に進めるよう最善を尽くしますが、アサインされたエンジニアが進行中の重大な問題をすばやく軽減または解決する必要がある場合、正式なプロセスは軽量になり、可視性が下がることがあります。
 
@@ -579,7 +579,7 @@ Pipeline Execution グループは以下に説明されるプロダクトマー�
 | ----------------------| -------| ----|------------|
 | `api` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=api&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=api&label_name[]=group%3A%3Acontinuous%20integration) | CI 機能の API エンドポイントに関連する Issue。 |
 | `CI permissions` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=CI+permissions&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=CI+permissions&label_name[]=group%3A%3Acontinuous%20integration) | `CI_JOB_TOKEN` と CI 認証に関連する Issue |
-| `Compute minutes` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=CI+minutes&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=CI+minutes&label_name[]=group%3A%3Acontinuous%20integration) | Continuous Integration の分数を数え、利用量を計算する方法に関連するすべての Issue と MR。以前の `~ci minutes` |
+| `Compute minutes` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=CI+minutes&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=CI+minutes&label_name[]=group%3A%3Acontinuous%20integration) | Continuous Integration の利用時間（分）を集計し、利用量を計算する方法に関連するすべての Issue と MR。以前の `~ci minutes` |
 | `merge requests` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=merge+requests&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=merge+requests&label_name[]=group%3A%3Acontinuous%20integration) | マージリクエスト内の CI 機能に関連する Issue。 |
 | `notifications` | [Issues](https://gitlab.com/groups/gitlab-org/-/issues?label_name%5B%5D=notifications&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/groups/gitlab-org/-/merge_requests?label_name%5B%5D=notifications&label_name[]=group%3A%3Acontinuous%20integration) | CI 機能に関連するさまざまな形式の通知に関連する Issue。 |
 | `pipeline analytics` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=pipeline+analytics&label_name[]=group%3A%3Acontinuous%20integration) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?label_name%5B%5D=pipeline+analytics&label_name[]=group%3A%3Acontinuous%20integration) | CI パイプラインの統計とダッシュボードに関連する Issue。 |
@@ -598,7 +598,7 @@ Pipeline Execution グループは以下に説明されるプロダクトマー�
 
 影響が大きい可能性のある機能を構築する場合、チームは機能フラグの確立された [GitLab ガイドライン](/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/) を使用します。
 
-私たちはまた、機能が有効化される前に [ロールアウト Issue について彼らに警告する](https://docs.gitlab.com/ee/development/feature_flags/controls.html#communicate-the-change) ことで、カスタマーサポートとカスタマーサクセスのチームメイトと協力していることを確実にします。
+私たちはまた、機能が有効化される前に [ロールアウト Issue についてカスタマーサポートとカスタマーサクセスのチームメイトへ知らせる](https://docs.gitlab.com/ee/development/feature_flags/controls.html#communicate-the-change) ことで、両チームと連携できるようにします。
 
 チームによって導入されたコード内に残っている機能フラグは、[このテーブル](https://10az.online.tableau.com/t/gitlab/views/Engineering-Featureflags/Engineering-FeatureFlags/6ecdfc19-ff4b-4a81-b7b6-25948fe8816f/c486cf97-81c5-4d83-9533-bf259ead2885) で確認できます。
 
@@ -606,9 +606,9 @@ Pipeline Execution グループは以下に説明されるプロダクトマー�
 
 ### UX とエンジニアリングとのコラボレーション
 
-機能的で有用な高品質な製品を作成するため、エンジニアリング、PM、Product Designer は緊密に協力し、方法論を組み合わせ、製品開発プロセス全体を通じて頻繁につながります。彼らは `workflow::design` を使って、提案されたソリューションをめぐる可能な複雑さ、課題、ブロッカーを議論します。
+機能的で有用な高品質な製品を作成するため、エンジニアリング、PM、Product Designer は緊密に協力し、方法論を組み合わせ、製品開発プロセス全体を通じて頻繁につながります。また、`workflow::design` を使って、提案されたソリューションをめぐる可能な複雑さ、課題、ブロッカーを議論します。
 
-Product Designer は、ユーザー向け Issue の製品開発で重要な役割を果たします。彼らはエンジニアリングとプロダクトマネージャーと協力して、機能のためのユーザー体験を設計します。設計ソリューションが提案され、合意され、検証されたら、エンジニアリングの [DRI](/handbook/people-group/directly-responsible-individuals/) が、Issue が計画されたマイルストーン中にその設計と機能を実装することにアサインされます。
+Product Designer は、ユーザー向け Issue の製品開発で重要な役割を果たします。エンジニアリングとプロダクトマネージャーと協力して、機能のためのユーザー体験を設計します。設計ソリューションが提案され、合意され、検証されたら、エンジニアリングの [DRI](/handbook/people-group/directly-responsible-individuals/) が、Issue が計画されたマイルストーン中にその設計と機能を実装することにアサインされます。
 
 [コードレビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html#approval-guidelines) に従うことは、ユーザー向けの変更を伴うすべての MR が Product Designer によってレビューされることを確実にすることを意味します。UX レビューは、品質を維持しながら速度への影響を減らすため、可能な限り [デザイナーレビューガイドライン](/handbook/upstream-studios/product-design/workflow/mr-reviews/) に近い形で従う必要があります。
 
@@ -619,7 +619,7 @@ Product Designer は、ユーザー向け Issue の製品開発で重要な役�
 これのいくつかの実用的な例:
 
 - エピック、Issue、またはマージリクエストをオープンするか、それで作業を開始するときに、すべてのステークホルダーがこれを認識しているか、または更新する必要があるかを検討してください。確信が持てない場合は、黙っているよりも更新することを誤りとしてください。
-- 重要な進捗を遂げるときには、自動メール通知に依存するのではなく、それらをメンションすることで、即座のフィードバックが必要なくても、関連するステークホルダーに見られていることを確認してください。彼らの関与を明示してください。
+- 重要な進捗を遂げるときには、自動メール通知に依存するのではなく、関連するステークホルダーをメンションすることで、即座のフィードバックが必要なくても、進捗が確実に伝わるようにしてください。関与を明示してください。
 
 注: マージリクエスト体験に関連する Issue については、技術的または Deferred UX が発生するのを避けるために、常に [Code Review グループ](/handbook/product/categories/#code-review-group) に情報を共有してください。コラボレーションフレームワークについて詳しく学ぶには、[マージリクエスト体験のコラボレーション](/handbook/product/cross-stage-features/merge-requests/) ページを参照してください。
 
@@ -642,7 +642,7 @@ Product Designer は、ユーザー向け Issue の製品開発で重要な役�
 1. ユーザーリサーチやお客様のフィードバックがユーザーニーズを特定し、そのニーズを満たすためのいくつかのアイデアを生成した後、Product Designer は、これらのアイデアを設計提案に移動するプロセスを推進し、PM とエンジニアリングチームを早く頻繁に巻き込みます。MVC が開発フェーズに移動できるようになる前に、設計ワークフローのどのステップを完了する必要があるかについての洞察をカウンターパートに提供するために、[UX Definition of Done](https://docs.gitlab.com/development/contributing/merge_request_workflow/#definition-of-done) を参照できます。
 1. 提案されたソリューションへの私たちの自信に応じて、これらのプロトタイプをユーザーテストにかけて、元の問題を解決するかどうか検証する場合があります。
 1. エンジニア、Product Designer、EM、PM は、ソリューションのスコープとチームの経験に基づいて、最初に取り組むかを決定するために、複数の可能なエンジニアリングアプローチを比較対照できます。
-1. ソリューションが検証され、チームが必要な労力を明確に理解したら、大きなソリューションをより小さな Issue に分解する時間です。これは通常、`workflow::planning breakdown` フェーズで行われ、チーム全体 (PM、エンジニア、Product Designer、QA、テクニカルライター) がプロセスに関わります。彼らは緊密に協力して、もっとも技術的に実現可能で最小の機能セットを見つけ、初期のお客様に価値を提供し、将来の製品開発のためのフィードバックを提供します。助けが必要な場合はイテレーション戦略を確認してください。
+1. ソリューションが検証され、チームが必要な労力を明確に理解したら、大きなソリューションをより小さな Issue に分解する時間です。これは通常、`workflow::planning breakdown` フェーズで行われ、チーム全体 (PM、エンジニア、Product Designer、QA、テクニカルライター) がプロセスに関わります。チームは緊密に協力して、もっとも技術的に実現可能で最小の機能セットを見つけ、初期のお客様に価値を提供し、将来の製品開発のためのフィードバックを提供します。助けが必要な場合はイテレーション戦略を確認してください。
 
 私たちは、エピックや完全な機能のために少なくとも 1 マイルストーン前に広範に設計し、その後、次のマイルストーンでピックアップする小さな Issue に大きなソリューションを分解することを目指します。
 大きなソリューションを設計するために 1 マイルストーン前に作業することが不可能だと仮定します。その場合、エンジニアリングと Product Designer は、同じマイルストーンで実装される、初期のお客様を満足させる最初のもっとも技術的に実現可能で最小の機能セット ([MVC](/handbook/values/#minimal-valuable-change-mvc)) を定義します。
@@ -696,7 +696,7 @@ GitLab に一般的にコントリビュートする方法の詳細について�
 
 E2E スペックを別の MR に分割すると、機能の DRI 以外の誰かにアサインでき、状況に応じてより適切な人がスペックを書けるようになります。
 
-E2E テストを書くために必要な Ruby の専門知識を考えると、バックエンドエンジニアがそれらを書くプライマリチームメンバーです。フロントエンドエンジニアは自信があればそれらを書くために自発的に取り組むことができますが、それは彼らに **期待されていません**。
+E2E テストを書くために必要な Ruby の専門知識を考えると、バックエンドエンジニアがそれらを書くプライマリチームメンバーです。フロントエンドエンジニアは自信があればそれらを書くために自発的に取り組むことができますが、そうすることはフロントエンドエンジニアに **期待されていません**。
 
 可能な場合は常に、バックエンドエンジニアは自分が構築する機能や修正するバグの E2E テストを書く必要があります。
 E2E テストのカバレッジやテスト戦略に関するガイダンスについては、[Developer Experience](/handbook/engineering/infrastructure-platforms/developer-experience/) チームに連絡してください。
@@ -727,7 +727,7 @@ E2E テストのカバレッジやテスト戦略に関するガイダンスに�
 
 ### 機能
 
-私たちが新しい機能を構築するとき、Iteration の価値に沿って、機能の中核的な側面をカバーする MVC を目指します。
+私たちが新しい機能を構築するとき、イテレーションのバリューに沿って、機能の中核的な側面をカバーする MVC を目指します。
 その後、残りの機能をイテレートするために `~feature::enhancement` ラベル付きの Issue を作成します。新しい機能が使われれば使われるほど、最終的にはユーザーによって不足している機能がバグとして認識される可能性があります。
 
 私たちは、これらの Issue が `~type::bug` になるのを防ぐために、`severity::1`、`severity::2`、`severity::3`、`severity::4` ラベルを `~feature::enhancement` と一緒に使って、これらの Issue の影響を分類します。
@@ -789,7 +789,7 @@ E2E テストのカバレッジやテスト戦略に関するガイダンスに�
 
 ### 振り返り
 
-{{% include "includes/engineering/verify-retrospectives.md" %}}
+<!-- include omitted: includes/engineering/verify-retrospectives.md (no localized version under content/ja/) -->
 
 ### チームコミュニケーション
 

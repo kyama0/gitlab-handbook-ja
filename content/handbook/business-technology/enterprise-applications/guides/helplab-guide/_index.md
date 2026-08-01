@@ -2,11 +2,11 @@
 title: "HelpLab 情報ガイド"
 description: "GitLab の ServiceNow 実装に関する FAQ と操作ガイドを掲載しています。"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/helplab-guide/"
-upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
-translated_at: "2026-07-09T08:23:34+09:00"
-translator: "claude"
+upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
+translated_at: "2026-08-01T16:25:30+09:00"
+translator: "codex"
 stale: false
-lastmod: "2026-07-08T11:09:01-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## HelpLab とは
@@ -23,7 +23,7 @@ HelpLab は、GitLab が ServiceNow プラットフォームにつけたブラ�
 
 ## いつ稼働しますか？
 
-ServiceNow（別名 HelpLab）は 2024-04-25 に稼働開始しました。
+ServiceNow（別名 HelpLab）は 2024-04-25 に稼働開始する予定です。
 
 ## HelpLab ではどのチームが対応していますか？
 
@@ -40,7 +40,7 @@ HelpLab を通じて以下のチームが対応しています:
 - [経費精算](/handbook/finance/expenses/)
 - [給与計算（米国・海外）](/handbook/finance/payroll/)
 - [Sales Commissions](https://internal.gitlab.com/handbook/sales/sales-commission/#fy23-sales-commission-policies)
-- [CorpSec End User Services](/handbook/security/corporate/end-user-services/)
+- [CorpSec End User Services](/handbook/eta/corporate-it/end-user-services/)
 - [Enterprise Applications](/handbook/business-technology)
 
 ## HelpLab の使い方
@@ -61,7 +61,7 @@ HelpLab は Okta 経由でアクセスできます。プラットフォームに
 
 ![helplab1](/images/business-technology/enterprise-applications/guides/helplab-guide/helplab1.png)
 
-1. サポートが必要なチームを特定したら、質問や Issue に関連するトピックまたはカテゴリを探します。
+1. サポートが必要なチームを特定したら、質問や問題に関連するトピックまたはカテゴリを探します。
    - どのトピックを選べばよいかわからない場合、またはリクエストが特定のカテゴリに当てはまらない場合は、各チームで提供されている `General Request`（一般リクエスト）を開くことを検討してください。このオプションでは、特定のトピックを選択しなくても、問題や質問の概要を入力できます。
 1. リクエストに必要な詳細を入力し、追加のコンテキストを提供するために必要な書類やスクリーンショットを添付します。
 1. リクエストの正確性と完全性を確認します。
@@ -69,7 +69,7 @@ HelpLab は Okta 経由でアクセスできます。プラットフォームに
 
 ### チームメンバーのチケット / リクエストへの追加
 
-リクエストを提出した後、マネージャーなどのチームメンバーを `ウォッチリスト` に追加できます。ウォッチリストにチームメンバーを追加すると、そのメンバーは通知を受け取り、ケースの状況を把握できるようになります。この機能は、ケースの進捗を確認する必要がある方や、更新・解決について通知が必要な関係者がいる場合に役立ちます。
+リクエストを提出した後、マネージャーなどのチームメンバーを `watch list`（ウォッチリスト）に追加できます。ウォッチリストにチームメンバーを追加すると、そのメンバーは通知を受け取り、ケースの状況を把握できるようになります。この機能は、ケースの進捗を確認する必要がある方や、更新・解決について通知が必要な関係者がいる場合に役立ちます。
 
 ![helplab2](/images/business-technology/enterprise-applications/guides/helplab-guide/helplab2.png)
 

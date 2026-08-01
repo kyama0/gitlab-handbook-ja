@@ -1,11 +1,11 @@
 ---
 title: インシデント管理
 upstream_path: "/handbook/engineering/infrastructure-platforms/incident-management/"
-upstream_sha: "6eef8dbb6a0d15167aa5378f476b04cd38b78675"
-translated_at: "2026-07-10T07:03:07+09:00"
-translator: claude
+upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
+translated_at: "2026-08-01T15:50:15+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-09T11:26:59-06:00"
+lastmod: "2026-07-31T12:42:54-06:00"
 ---
 
 {{% alert color="warning" %}}
@@ -92,7 +92,7 @@ GitLab では、インシデント管理フレームワークは 2 つの重要�
 
 <i class="fa-brands fa-youtube"></i> [Incident Response Roles vs. Teams の詳細を視聴する](https://youtu.be/vmK9-7roDFM)
 
-## インシデント対応役割
+## インシデント対応役割 {#incident-response-roles}
 
 インシデント中の責任の明確な区切りは重要です。迅速な解決には、フォーカスとタスク委譲のための明確な階層が必要です。重複を防ぎ、適切な操作順序を確保することは、軽減の鍵です。
 
@@ -123,7 +123,7 @@ GitLab では、インシデント管理フレームワークは 2 つの重要�
 
 低重大度のインシデントでは、ページされた個人が複数の役割を担う場合があります。例えば S4 インシデントでは、EOC が Incident Lead と Incident Responder の両方を兼ねる場合があります。重大度が上がるにつれて、これらの役割を別々の個人が担うことがより重要になります。 [Tier 2](#tier-2) の人がページされる必要があります。
 
-### Tier 2
+### Tier 2 {#tier-2}
 
 人間によって通知されるオンコールローテーション:
 
@@ -167,13 +167,13 @@ Communications Lead は、ステータスページ更新の管理、ステーク
 
 ## チーム別の詳細責任
 
-### Engineer On Call (EOC) の責任
+### Engineer On Call (EOC) の責任 {#engineer-on-call-eoc-responsibilities}
 
 Engineer On Call は通常、主な Incident Responder として機能し、宣言されたインシデントの影響軽減と解決を担当します。EOC は、助けが必要な場合、または他の人をインシデント調査に支援するために必要な場合、IMOC に連絡すべきです。
 
 EOC は [Incident Responder の責任](./roles/incident-responder.html) を確認すべきです。
 
-### Incident Manager On Call (IMOC) の責任
+### Incident Manager On Call (IMOC) の責任 {#incident-manager-on-call-imoc-responsibilities}
 
 Incident Manager On Call は通常、Incident Lead として機能し、インシデント中の戦術的なリーダーシップと調整を担当します。
 
@@ -181,7 +181,7 @@ IMOC は、Incident Lead が低重大度のインシデントの多くで Commun
 
 _シフトのスケジュール方法、PTO を取るときや代替が必要なときに何をするかについての一般的な情報は、[Incident Manager オンボーディングドキュメント](/handbook/engineering/infrastructure-platforms/incident-management/incident-manager-onboarding/#frequently-asked-questions) を参照してください_
 
-### Infrastructure Leadership の責任
+### Infrastructure Leadership の責任 {#infrastructure-leadership-responsibilities}
 
 Infrastructure Leadership は、Engineer On Call (EOC) と Incident Manager On Call (IMOC) の両方のエスカレーションパス上にあります。
 これはアクティブな IMOC の代用または置き換えではありません（現在の IMOC が対応できない場合を除く）。
@@ -311,7 +311,7 @@ Engineer on Call (EOC) が応答しない場合、ページは Incident Manager 
 
 EOC が対応できないために応答しない場合、incident.io アプリケーションを使ってインシデントをエスカレーションする必要があります。これにより Infrastructure Engineering リーダーシップにアラートが送られます。
 
-### 対応チームを関与させる方法
+### 対応チームを関与させる方法 {#how-to-engage-response-teams}
 
 インシデント中に、Incident Responder (EOC)、IMOC、または Communications Manager (CMOC) を関与させる必要がある場合、以下のいずれかの方法を使ってオンコールの担当者をページしてください。これは PagerDuty インシデントまたは incident.io エスカレーションをトリガーし、選択した **Impacted Service** に基づいて適切な人物にページします。
 
@@ -349,14 +349,14 @@ S1 または S2 インシデント中に、1 人以上の顧客と同期的な�
 
 シナリオによっては、インシデントのほとんどの参加者 (EOC、他の開発者などを含む) が直接顧客と作業する必要がある場合があります。この場合、Incident Zoom ではなく、顧客とのやり取り Zoom を使用すべきです。これにより、会話 (およびテキストチャット) を許可しつつ、一次対応者が内部コミュニケーションを Incident Zoom でいつでもすばやく再開できるようにします。
 
-## 是正措置 (Corrective Actions)
+## 是正措置 (Corrective Actions) {#corrective-actions}
 
 是正措置 (CA) は、インシデントの結果として作成される作業項目です。
 インシデントから生じる Issue のみが `~"corrective action"` ラベルを受け取るべきです。
 それらは同種のインシデントを防ぐか、軽減までの時間を改善するために設計されており、そのためインシデント管理サイクルの一部です。
 下流の分析に役立てるため、是正措置はインシデント Issue に関連付けられている必要があります。
 
-[Production Engineering プロジェクト](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/new) における是正措置 Issue は、形式、ラベル、[完了に向けたサービスレベル目標](/handbook/product-development/how-we-work/issue-triage/#severity-slos) のアプリケーション/モニタリングの一貫性を確保するために、[Corrective Action Issue テンプレート](https://gitlab.com/gitlab-com/gl-infra/reliability/-/blob/master/.gitlab/issue_templates/incident-corrective-action.md) を使って作成する必要があります。
+[Production Engineering プロジェクト](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/new) における是正措置 Issue は、[Corrective Action Issue テンプレート](https://gitlab.com/gitlab-com/gl-infra/reliability/-/blob/master/.gitlab/issue_templates/incident-corrective-action.md) を使用して作成し、形式、ラベル、[完了に向けたサービスレベル目標](/handbook/product-development/how-we-work/issue-triage/#severity-slos) の適用と監視の一貫性を確保する必要があります。
 
 `~"corrective action"` ラベルが付いた Issue には、自動的に `~"infradev"` ラベルが付与されます。
 これは、開発に対するプロセスに従って [特定の時間枠](/handbook/product-development/how-we-work/issue-triage/#severity-slos) で解決されるようにするために行われます。
@@ -391,7 +391,7 @@ S1 または S2 インシデント中に、1 人以上の顧客と同期的な�
 
 **GitLab.com の停止時には**、runbooks リポジトリのミラーが Ops インスタンス https://ops.gitlab.net/gitlab-com/runbooks で利用可能です。
 
-### 現在の EOC は誰?
+### 現在の EOC は誰? {#who-is-the-current-eoc}
 
 現在の EOC を確認するには `@sre-oncall` ハンドルを使ってください
 
@@ -405,7 +405,7 @@ S1 または S2 インシデント中に、1 人以上の顧客と同期的な�
 
 EOC は、Slack での `@sre-oncall` ハンドルの使用に対してできるだけ早く応答しますが、状況によってはすぐに対応できない場合があります。緊急で即時の応答が必要な場合は、[インシデントの報告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident) セクションを参照してください。
 
-## インシデントの報告
+## インシデントの報告 {#reporting-an-incident}
 
 GitLab のチームメンバーで、GitLab.com に関する可能性のあるインシデントを報告したい場合、以下の手順に従ってインシデントを宣言してください。EOC がオンラインになり、インシデントについてあなたと関与するチャンスを得るまで、オンラインのままでいてください。ご協力ありがとうございます！
 
@@ -486,7 +486,7 @@ Partial Service Disruption は、GitLab.com のサービスまたはインフラ
 
 インシデントがセキュリティ関連である可能性がある場合、Slack で `/security` を使って Security Engineer on-call を関与させてください。詳細は [Security Engineer On-Call の関与](/handbook/security/security-operations/sirt/engaging-security-on-call/) を参照してください。
 
-## コミュニケーション
+## コミュニケーション {#communication}
 
 情報はインシデントに影響を受けるすべての人にとって資産です。サプライズを最小化し、期待値を設定するためには、情報の流れを適切に管理することが重要です。私たちは、関心のあるステークホルダーに対して、適切に計画できるようにタイムリーに進捗を伝え続けることを目指しています。
 
@@ -506,7 +506,7 @@ Partial Service Disruption は、GitLab.com のサービスまたはインフラ
 1. status.io を介した status.gitlab.com への定期的な更新。さまざまなメディア (例: Twitter) に配信されます
 1. インシデントや変更の Issue を保持する、Infrastructure のワークロードを保持するキューとは別の [Production](https://gitlab.com/gitlab-com/production) に関連する Issue 用の専用リポジトリ。
 
-### インシデント告知チャンネル
+### インシデント告知チャンネル {#incident-announcement-channels}
 
 私たちは、インシデントが告知される 3 つの専用の Slack チャンネルを持っています
 
@@ -516,7 +516,7 @@ Partial Service Disruption は、GitLab.com のサービスまたはインフラ
 
 ### Status
 
-私たちは、[status.gitlab.com](https://status.gitlab.com) を更新する status.io を使ってインシデント [コミュニケーション](#communication) を管理しています。status.io のインシデントには **state** と **status** があり、CMOC によって更新されます。
+私たちは status.io を使用してインシデントの[コミュニケーション](#communication)を管理し、status.io は[status.gitlab.com](https://status.gitlab.com)を更新します。status.io のインシデントには **state** と **status** があり、CMOC によって更新されます。
 
 status.io でインシデントを作成するには、Slack で `/woodhouse incident post-statuspage` を使用できます。
 
@@ -544,14 +544,14 @@ Status は state とは独立して設定できます。これらが一致しな
 | **Status** | **定義** |
 | ------ | ---------- |
 | Operational | インシデントが開かれる前およびインシデントが解決された後のデフォルトのステータス。すべてのシステムが通常通り運用されています。 |
-| Degraded Performance | ユーザーは断続的に影響を受けますが、影響はメトリクスに観察されていないか、広範または systemic であるとは報告されていません。 |
+| Degraded Performance | ユーザーは断続的に影響を受けますが、影響はメトリクスに観察されていないか、広範またはシステム全体に及ぶとは報告されていません。 |
 | Partial Service Disruption | ユーザーは私たちの SLO に違反する率で影響を受けています。Incident Manager On Call を関与させる必要があり、解決まで 30 分以上モニタリングが必要です。 |
 | Service Disruption | これは Outage です。Incident Manager On Call を関与させる必要があります。 |
 | Security Issue | セキュリティ脆弱性が公開と宣言され、セキュリティチームがステータスページへの公開を要請した場合。 |
 
 ## 重大度
 
-### インシデントの重大度
+### インシデントの重大度 {#incident-severity}
 
 インシデントの重大度は、組織全体での適切な対応を確保するために、インシデントの開始時に割り当てるべきです。インシデントの重大度は、**その時点で** 利用可能な情報に基づいて決定すべきです。重大度は、より多くの情報が利用可能になるにつれて調整できますし、すべきです。重大度レベルは、インシデントが持っていた最大影響を反映し、インシデントが軽減または解決された後でもそのレベルにとどまるべきです。**Customer Impact または GitLab Impact の基準のいずれかが満たされる場合、その行の Severity が割り当てられるべきです。**
 
@@ -559,8 +559,8 @@ Incident Manager と Engineers On-Call は、インシデント重大度を割�
 
 | 重大度 | 影響 | GitLab の対応 | 例 |
 |--------|-------------|-------------|---------------------|
-| Severity:1 **Critical** | **Customer Impact:** <br> ユーザーへの非常に高い影響: ユーザー側の顧客またはビジネス成果が影響を受ける <br><br> **OR** <br><br> **GitLab Impact:** <br> ビジネスに対する確実なまたは深刻なダメージ |即時の総力対応 | - 顧客向けサービスがダウン <br> - 確認されたデータ侵害または赤/オレンジデータの曝露 <br> - 顧客データの損失 <br> - GitLab のプラットフォームまたはサプライチェーンに対する複雑度が低く、検証済みのエクスプロイトシナリオ。 <br> - 積極的にエクスプロイトされている、またはパッチ未適用で到達可能でエクスプロイト可能性の telemetry がない Critical RCE <br> - 公開されている (プレス、顧客、研究者による 0-day) Critical 脆弱性 <br> - 外部のアクターが特権の高い GitLab サービスアカウントを制御する|
-| Severity:2 **High** | **Customer Impact:** <br> ユーザーへの重大な影響: ユーザーの内部運用が中断される <br><br> **OR** <br><br>**GitLab Impact:** <br> ビジネスに対するありうる、または高まったダメージ | リソースの割り当て、チーム間の調整、定期的なステークホルダー更新 | - 一部の顧客にとって顧客向けサービスが利用できない<br> - コア機能が大きく影響を受けている<br> - アカウント侵害またはインサイダー脅威の動機と知識を必要とする特権昇格シナリオ<br>- エクスプロイトの証拠がある、または高いプレスの注目を集める高重大度脆弱性<br>- 機密の GitLab システムへの不正アクセスの疑い<br>- GitLab のクラウドインフラストラクチャでのマルウェア検出 |
+| Severity:1 **Critical** | **Customer Impact:** <br> ユーザーへの非常に高い影響: ユーザー側の顧客またはビジネス成果が影響を受ける <br><br> **OR** <br><br> **GitLab Impact:** <br> ビジネスに対する可能性が高い、または深刻な損害: <br> Dedicated: <br>    - Dedicated フリートのスケールと運用性への深刻な混乱 <br>      OR <br>      - 可視的な影響（小規模または大規模）を伴う、エスカレーションされた Dedicated 顧客の高い離反リスク . |即時の総力対応 | - 顧客向けサービスがダウン <br> - 確認されたデータ侵害または赤/オレンジデータの曝露 <br> - 顧客データの損失 <br> - GitLab のプラットフォームまたはサプライチェーンに対する複雑度が低く、検証済みのエクスプロイトシナリオ。 <br> - 積極的にエクスプロイトされている、またはパッチ未適用で到達可能でエクスプロイト可能性の telemetry がない Critical RCE <br> - 公開されている (プレス、顧客、研究者による 0-day) Critical 脆弱性 <br> - 外部のアクターが特権の高い GitLab サービスアカウントを制御する <br> - Dedicated のビジネスへの影響: フリートを自動化された方法で変更またはスケールする能力の阻害、バージョンドリフトと手動運用の大幅な蓄積 <br> - Dedicated のビジネスへの影響: 対応能力の飽和、重要顧客、特にリスクの高いエスカレーション顧客への対応品質の低下 <br> - 毎月のセルフマネージドのマイナーまたはメジャーリリースを逃すリスク |
+| Severity:2 **High** | **Customer Impact:** <br> ユーザーへの重大な影響: ユーザーの内部運用が中断される <br><br> **OR** <br><br>**GitLab Impact:** <br> ビジネスに対するありうる、または高まったダメージ: <br> Dedicated : <br> - 修正によってフリートのロールアウトが 1 週間を超えてブロック <br> OR <br>  - 可視的な製品への影響を伴わない、エスカレーションされた Dedicated 顧客の高い離反リスク | リソースの割り当て、チーム間の調整、定期的なステークホルダー更新 | - 一部の顧客にとって顧客向けサービスが利用できない<br> - コア機能が大きく影響を受けている<br> - アカウント侵害またはインサイダー脅威の動機と知識を必要とする特権昇格シナリオ<br>- エクスプロイトの証拠がある、または高いプレスの注目を集める高重大度脆弱性<br>- 機密の GitLab システムへの不正アクセスの疑い<br>- GitLab のクラウドインフラストラクチャでのマルウェア検出 |
 | Severity:3 **Medium** | **Customer Impact:** <br> ユーザーへの中程度の影響: ユーザーの内部運用が妨げられる可能性がある <br><br> **OR** <br><br> **GitLab Impact:** <br> ビジネスに対するありそうもない、または軽度のダメージ | 通常の運用手順を超えた対応のためにリソースが配分される | - 軽微なパフォーマンス劣化<br>- 重要でない機能が最適に動作していない<br>- 重要でないシステムにおける一般的マルウェア検出  |
 | Severity:4 **Low** | **Customer Impact:**: <br> ユーザーへの低い影響: ユーザーの内部運用が変更される可能性がある <br><br> **OR** <br><br> **GitLab Impact:** ビジネスに対する最小限のダメージ | 標準の手順に従って問題が解決される | - 顧客への不便、回避策あり<br>- 使用可能なパフォーマンス劣化<br>- 赤/オレンジデータに影響を与えない GitLab セキュリティポリシー違反  |
 
@@ -577,9 +577,9 @@ GitLab の [Data Classification Standard](/handbook/security/policies_and_standa
 - ORANGE および YELLOW データは含めることができ、インシデントを管理する Incident Manager は、インシデント Issue が confidential としてマークされるか、内部ノートにあることを確認すべきです。
 
 Incident Manager は注意を払い、自分の最良の判断を行使すべきです。一般的に、可能ならば issue 全体を confidential としてマークするのではなく、内部ノートを使用することが推奨されます。
-わずかな匿名性のあるログデータはデータセキュリティの懸念を示さない可能性がありますが、より大きなログ、クエリ、または他のデータセットには、より制限的なアクセスが必要です。
+特徴や具体性に乏しいログデータが数行だけであれば、データセキュリティ上の懸念がない可能性がありますが、より大きなログ、クエリ、または他のデータセットには、より制限的なアクセスが必要です。
 
-## インシデントワークフロー
+## インシデントワークフロー {#incident-workflow}
 
 ### サマリー
 
@@ -587,7 +587,7 @@ Incident Manager は注意を払い、自分の最良の判断を行使すべき
 
 インシデントは [報告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident) され、劣化が終わりおそらく再発しない時点で解決されます。
 
-### Incident Lead
+### Incident Lead {#incident-lead}
 
 Incident Lead は、インシデントが進行し、最新の状態に保たれることを保証する責任を負います。この役割はインシデントの開始後に意図的に割り当てられます。
 Lead は、インシデントのタイプに基づいて選ばれるべきです。例えば:

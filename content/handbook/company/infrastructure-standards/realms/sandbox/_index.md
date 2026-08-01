@@ -2,11 +2,11 @@
 title: "サンドボックスクラウドレルム"
 description: "このハンドブックセクションでは、GitLab の全部門・グループにおける AWS および GCP サンドボックスのインフラストラクチャ標準の最新イテレーションを定義します。"
 upstream_path: "/handbook/company/infrastructure-standards/realms/sandbox/"
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T20:55:48+09:00"
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+translated_at: "2026-08-01T16:12:50+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-09T08:13:40+02:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ### クイックリンク
@@ -24,7 +24,7 @@ lastmod: "2026-07-09T08:13:40+02:00"
 #### Issue トラッキングとコラボレーション
 
 - [HackyStack Issue トラッキング](https://gitlab.com/gitlab-com/gl-security/identity/eng/hackystack-enhanced/-/issues)（機能開発とバグ）
-- [CorpSec Infrastructure Issue トラッキング](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues)（GitLab 固有のトピックと依頼）
+- [CorpSec Issue トラッキング](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues)（GitLab 固有のトピックと依頼）
 - `#sandbox-cloud-questions` Slack チャネルで質問やヘルプを求めることができます。
 
 #### コードと例
@@ -44,7 +44,7 @@ lastmod: "2026-07-09T08:13:40+02:00"
 
 Sandbox Cloud は、AWS アカウントまたは GCP プロジェクトを作成するための自動化されたプロビジョニングプラットフォームで、デモ、サンドボックス、テスト、本番環境的な用途に使用でき、GitLab が連結請求で支払います（クレジットカードは不要）。
 
-このプラットフォームは、Jeff Martin が最初に作成し現在 Vlad Stoianovici によってメンテナンスされているオープンソースの Laravel アプリケーションである [HackyStack Enhanced](https://gitlab.com/gitlab-com/gl-security/identity/eng/hackystack-enhanced) によって駆動されています。HackyStack は Okta インテグレーションを使用してアクセス要求プロセスを自動化し、部門に基づいて役割と権限を自動割り当てし、クラウドプロバイダー API を使用して AWS アカウントと GCP プロジェクトをプロビジョニングします。
+このプラットフォームは、Vlad Stoianovici がメンテナンスするオープンソースの Laravel アプリケーションである [HackyStack Enhanced](https://gitlab.com/gitlab-com/gl-security/identity/eng/hackystack-enhanced) によって駆動されています。HackyStack は Okta インテグレーションを使用してアクセスリクエストプロセスを自動化し、部門に基づいて役割と権限を自動割り当てし、クラウドプロバイダー API を使用して AWS アカウントと GCP プロジェクトをプロビジョニングします。
 
 Sandbox Cloud は [CorpSec Identity](/handbook/security/corporate/) チームによって管理されています。質問がある場合は Slack の `#sandbox-cloud-questions` で尋ねるか、CorpSec Issue で `@vlad` にタグ付けしてください。
 
@@ -57,7 +57,7 @@ Sandbox Cloud は [CorpSec Identity](/handbook/security/corporate/) チームに
 1. [https://gitlabsandbox.cloud](https://gitlabsandbox.cloud) にアクセスし、Okta アカウントでサインインします。
 1. 上部のナビゲーションで **Cloud Infrastructure** に移動します。
 1. 紫色の **Create Individual Account** ボタンをクリックします。
-1. ドロップダウンリストから *クラウドプロバイダー* と *クラウド組織単位* を選択します。**組織単位のドロップダウンリストにオプションがない場合、HRIS での部門名変更または追加により、あなたの部門がまだデータベースに作成されていない可能性があります。`#sandbox-cloud-questions` で追加を依頼してください。**
+1. ドロップダウンリストから *クラウドプロバイダー* と *クラウド組織単位* を選択します。**組織単位のドロップダウンリストにオプションがない場合、HRIS での部門名変更または追加により、あなたの部門はまだデータベースに作成されていません。`#sandbox-cloud-questions` で追加を依頼してください。**
 1. 緑色の **Create Account** ボタンをクリックします。
 1. アカウントの AWS サービスがアクティブ化されている間、AWS API がプロビジョニングプロセスを完了するのに 2-5 分かかります。
 1. ユーザーアカウントが `Provisioning` から `Active` に変更されたことを確認できるまで、約 60 秒ごとにブラウザウィンドウを更新してください。
@@ -112,7 +112,7 @@ GitLab.com SaaS について [Production Architecture](/handbook/engineering/inf
 
 新しい SaaS アプリケーションは [調達プロセス](/handbook/finance/procurement/) を経由する必要があり、それぞれの部門の [system owners](/handbook/business-technology/#cross-department-system-owners) によって管理されます。
 
-セルフホスト型アプリケーションインフラストラクチャはケースバイケースで決定され、CorpSec Infrastructure、[Infrastructure Security](/handbook/security/product-security/infrastructure-security/)、[Application Security](/handbook/security/product-security/security-platforms-architecture/application-security/)、[3rd Party Risk](/handbook/security/security-assurance/security-risk/third-party-risk-management/) と共同で設計されます。新しいサービスについての予備的ガイダンスについては、Issue で `@vlad` にタグ付けしてください。まだ Issue がない場合は、[CorpSec Infrastructure Issue トラッカー](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues) に作成してください。
+セルフホスト型アプリケーションインフラストラクチャはケースバイケースで決定され、[CorpSec Identity Engineering](/handbook/security/corporate/engineering/identity)、[Infrastructure Security](/handbook/security/product-security/infrastructure-security/)、[Application Security](/handbook/security/product-security/security-platforms-architecture/application-security/)、[3rd Party Risk](/handbook/security/security-assurance/security-risk/third-party-risk-management/) と共同で設計されます。新しいサービスについての予備的ガイダンスについては、Issue で `@vlad` にタグ付けしてください。まだ Issue がない場合は、[CorpSec Issue トラッカー](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues)に作成してください。
 
 #### AWS アカウントへのアクセス {#accessing-your-aws-account}
 
@@ -225,7 +225,7 @@ GitLab.com SaaS について [Production Architecture](/handbook/engineering/inf
 
 何年にもわたって、GitLab の非本番インフラストラクチャリソースは、アカウンタビリティ、コスト管理、または GCP と AWS にわたるセキュリティのベストプラクティスなしで有機的に成長しました。FY21-Q3 では、全社的な [インフラストラクチャ標準](/handbook/company/infrastructure-standards/) が [ラベル、タグ、命名規則](/handbook/company/infrastructure-standards/labels-tags/) と、異なるユースケース用の個別のセキュリティ境界を作成する [レルム](/handbook/company/infrastructure-standards/#gitlab-infrastructure-realms) という概念とともに確立されました。
 
-Jeff Martin は、サンドボックスのプロビジョニングをエンドツーエンドで自動化するオープンソースプロジェクトとして [HackyStack](https://gitlab.com/hackystack/hackystack-portal) の最初のリリースを開発しました。コードベースは後にアクティブな開発のために CorpSec Identity チームの下で [HackyStack Enhanced](https://gitlab.com/gitlab-com/gl-security/identity/eng/hackystack-enhanced) にフォークされました。オーナーシップとメンテナンスは Jeff Martin から Vlad Stoianovici と CorpSec Identity チームに移管されました。
+[HackyStack](https://gitlab.com/hackystack/hackystack-portal) の最初のリリースは、サンドボックスのプロビジョニングをエンドツーエンドで自動化するオープンソースプロジェクトとして開発されました。コードベースは後に、活発な開発のために CorpSec Identity チームの下で [HackyStack Enhanced](https://gitlab.com/gitlab-com/gl-security/identity/eng/hackystack-enhanced) にフォークされ、現在は Vlad Stoianovici と CorpSec Identity チームが所有およびメンテナンスしています。
 
 ### ビジネスと財務への影響
 

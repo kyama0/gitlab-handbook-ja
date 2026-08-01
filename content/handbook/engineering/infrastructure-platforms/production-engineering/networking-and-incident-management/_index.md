@@ -2,11 +2,11 @@
 title: "プロダクションエンジニアリング ネットワーキングとインシデント管理チーム"
 description: "私たちはシステムへのトラフィックを制御するネットワーキングプラットフォームと GitLab のインシデント対応プロセスの両方を管理します"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/networking-and-incident-management/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T01:48:37Z"
-translator: claude
+upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
+translated_at: "2026-08-01T15:50:15+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-24T12:53:30-05:00"
+lastmod: "2026-07-29T16:00:30-06:00"
 ---
 
 ## ミッション
@@ -38,9 +38,7 @@ lastmod: "2026-02-24T12:53:30-05:00"
 
 ## チームメンバー
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/production-engineering/networking-and-incident-management/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug "steve-abrams" >}}
 
 ## 作業方法
 
@@ -87,4 +85,3 @@ lastmod: "2026-02-24T12:53:30-05:00"
 - [インシデント管理プロジェクトエピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/work_items/1873)
 - [Issue トラッカー](https://gitlab.com/gitlab-com/gl-infra/production-engineering/-/issues/?sort=created_asc&state=opened&label_name%5B%5D=group%3A%3ANetworking%20%26%20Incident%20Management&first_page_size=100)
 - [障害回復プラクティス](/handbook/engineering/infrastructure-platforms/production-engineering/networking-and-incident-management/dr-practice/)
-- [AI プロンプトライブラリ](ai-prompts.md)

@@ -2,18 +2,18 @@
 title: Finance Systems アクセスリクエスト
 description: Finance Systems アクセスリクエスト
 upstream_path: /handbook/business-technology/enterprise-applications/entapps-crm/finsys-access-requests/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T06:00:00Z"
-translator: claude
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+translated_at: "2026-08-01T16:25:30+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## <i class="fas fa-book" id="biz-tech-icons"></i> アクセスリクエスト
 
 プロビジョニングされる多くのファイナンスシステムは SOX システムとも見なされており、[SOX プログラム](https://internal.gitlab.com/handbook/internal-audit/sarbanes-oxley/)の対象となります。
 
-ファイナンスシステム管理チームは、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を処理する際に追加の手順を踏みます。
+ファイナンスシステム管理チームは、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を処理する際に追加の手順を踏みます。
 
 これは以下のシステムに適用されます:
 
@@ -28,12 +28,12 @@ lastmod: "2025-07-07T23:50:04+00:00"
 
 ### 追加手順
 
-[GitLab アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request)プロセスに加えて、チームは以下を実施します:
+[GitLab アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)プロセスに加えて、チームは以下を実施します:
 
 - リクエストされているアクセスが対象システムに固有のものであることを確認・明確化します。
   - 例: `NetSuite への読み取り専用アクセスが必要` という代わりに、チームはリクエスターに対して NetSuite の `Custom Auditor (read only)` ロールを求めているのかを確認します。
   - システム固有の要件については[こちら](/handbook/business-technology/enterprise-applications/finsys-access-requests/#-system-specific-access-request-requirements)のマトリクスを参照してください。
-- [テックスタック](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に記載されている担当者に従って、リクエストされている正確なロールや権限についてビジネスオーナーの承認を求めます。これには[ベースライン権限](https://internal.gitlab.com/handbook/security/corporate/end-user-services/access-request/baseline-entitlements/)も含まれます。
+- [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に記載されている担当者に従って、リクエストされている正確なロールや権限についてビジネスオーナーの承認を求めます。これには[ベースライン権限](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/baseline-entitlements/)も含まれます。
 - 承認後、チームはシステム内でユーザーをプロビジョニングし、対応する Okta Google グループに追加します（必要な場合）。
 - プロビジョニング後、チームはシステム内のタイムスタンプ付きユーザーレコードのスクリーンショットを撮影し、Issue に添付してクローズします。
 

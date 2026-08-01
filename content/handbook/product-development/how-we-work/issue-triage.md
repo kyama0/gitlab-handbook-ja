@@ -1,12 +1,12 @@
 ---
-title: Issue Triage
+title: Issue のトリアージ
 description: "GitLab.com プロジェクトにおける Issue のトリアージとラベル付けのガイドライン"
 upstream_path: /handbook/product-development/how-we-work/issue-triage/
-upstream_sha: ed29e38c0251514dde8ce6a5d84d024d4a56a28f
-translated_at: "2026-07-19T21:09:43Z"
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+translated_at: "2026-08-01T15:25:19+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-19T05:12:18-07:00"
+lastmod: "2026-07-31T12:42:54-06:00"
 ---
 
 GitLab は [Open Development](https://about.gitlab.com/blog/2015/12/16/improving-open-development-for-everyone/) を信じており、[GitLab.com](https://gitlab.com/groups/gitlab-org) 上のプロジェクトに対してコミュニティが Issue を立て、マージリクエストを開くことを推奨しています。コミュニティのコントリビューションは貴重であり、私たちはできるだけ効果的に対応すべきです。その中心にあるのがトリアージ、すなわちタイプと深刻度に応じた分類のプロセスです。
@@ -157,8 +157,8 @@ Issue のトリアージ担当者として、あなたは後で浮上する追�
 
 | 深刻度 | 可用性への影響 | 軽減までの時間 (TTM)(1) | 解決までの時間 (TTR)(2) | 最小優先度 |
 |-|-|-|-|-|
-| `~"severity::1"` | 典型的なユーザーのワークフローをブロックする GitLab SaaS の問題<br/><br/>利用可能な回避策なしで、GitLab.com または Dedicated のテナントのユーザーの 20% 以上に影響する<br/><br/>**AND/OR**<br/><br/>[保証された self-managed リリース日](/handbook/engineering/releases/monthly-releases/#timelines)をリスクにさらすあらゆる障害（~backstage ラベルを使用）<br /><br/>**AND/OR**<br/><br/>顧客に直接影響するあらゆるデータ損失 <br/>**AND/OR**<br/> 新規顧客のオンボーディング能力を妨げる、SaaS 上での繰り返されるインシデントを引き起こす | 8 時間以内 | 48 時間以内 | `~"priority::1"` |
-| `~"severity::2"` | 典型的なユーザーのワークフローをブロックする GitLab SaaS の問題<br/><br/>GitLab.com または Dedicated のテナントのユーザーの 20% 以上に影響するが、合理的な回避策が利用可能。<br/><br/>利用可能な回避策なしで、GitLab.com または Dedicated のテナントのユーザーの 5% 〜 20% に影響する | 24 時間以内 | 7 日以内 |  `~"priority::1"` |
+| `~"severity::1"` | 典型的なユーザーのワークフローをブロックする GitLab SaaS の問題<br/><br/>利用可能な回避策なしで、GitLab.com または Dedicated のテナントのユーザーの 20% 以上に影響する<br/><br/>**AND/OR**<br/><br/>[保証された self-managed リリース日](/handbook/engineering/releases/monthly-releases/#timelines)をリスクにさらすあらゆる障害（~backstage ラベルを使用）<br/><br/>**AND/OR**<br/><br/>顧客に直接影響するあらゆるデータ損失<br/><br/>**AND/OR**<br/><br/>SaaS 上でインシデントが繰り返し発生し、Dedicated フリートの運用を危険にさらし、過度な手動対応によってスケールアップを妨げる<br/><br/>**AND/OR**<br/><br/>Issue が Dedicated の自動フリートロールアウトをブロックし、予定されたリリースを 1 週間以上遅延させる | 8 時間以内 | 48 時間以内 | `~"priority::1"` |
+| `~"severity::2"` | 典型的なユーザーのワークフローをブロックする GitLab SaaS の問題<br/><br/>GitLab.com または Dedicated のテナントのユーザーの 20% 以上に影響するが、合理的な回避策が利用可能。<br/>**AND/OR**<br/>利用可能な回避策なしで、GitLab.com または Dedicated のテナントのユーザーの 5% 〜 20% に影響する | 24 時間以内 | 7 日以内 |  `~"priority::1"` |
 | `~"severity::3"` | GitLab SaaS への広範な影響と、典型的なユーザーのワークフローへの軽微な不便。回避策は不要。<br/><br/>GitLab.com または Dedicated のテナントのユーザーの最大 5% に影響する| 72 時間以内 | 30 日以内 | `~"priority::2"` |
 | `~"severity::4"` | GitLab.com または Dedicated のテナントのユーザーの 5% 未満に対する、GitLab SaaS の典型的なユーザーのワークフローへの最小限の影響 <br/><br/>影響はないが、将来のリスクを防ぐために解決することが重要なインシデントも含む場合がある| 7 日以内 | 60 日以内 | `~"priority::3"` |
 
@@ -317,7 +317,7 @@ Issue が要件を満たしている場合、[スケジューリングリクエ�
 
 とはいえ、すべてを自動化することはできません。このセクションでは、手動で行っているプラクティスのいくつかを説明します。
 
-### Shared responsibility issue
+### 共有責任の Issue
 
 時々、どのグループやステージが責任を持つべきかを選ぶのが難しい Issue に遭遇することがあります。これらの Issue は、製品の [Shared Responsibility Functionality](/handbook/product/categories/#shared-responsibility-functionality) と呼ばれるものに対処している可能性が高いです。
 

@@ -2,11 +2,11 @@
 title: "プロダクションエンジニアリング"
 description: "マルチテナント SaaS オファリング - GitLab.com の運用を担当します"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T01:48:37Z"
-translator: claude
+upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
+translated_at: "2026-08-01T15:50:15+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-24T12:53:30-05:00"
+lastmod: "2026-07-29T16:00:30-06:00"
 ---
 
 ## チーム
@@ -14,28 +14,29 @@ lastmod: "2026-02-24T12:53:30-05:00"
 プロダクションエンジニアリングは以下のチームで構成されています:
 
 1. [クラウドコスト最適化](./cloud-cost-utilization/)
-1. [ネットワーキングとインシデント管理](./networking-and-incident-management/)
+1. [フリート管理](./fleet-management/)
+1. [ネットワーキング](./networking-and-incident-management/)
+1. [インシデント管理](./networking-and-incident-management/)
 1. [オブザーバビリティ](./observability/)
-1. [ランナープラットフォーム](./runners-platform/)
-1. [Runway とフリート管理](/handbook/engineering/infrastructure-platforms/gitlab-delivery/runway/)
+1. テナントコントロール
 
 ## 作業方法
 
-私たちは GitLab の[バリュー](/handbook/values/)に沿って作業することをデフォルトとし、[インフラストラクチャプラットフォームセクション全体のプロセス](/handbook/engineering/infrastructure-platforms/project-management/)に従います。これに加えて、プロダクションエンジニアリングにおける作業に特有な、または特に重要なプロセスを以下に列挙します。
+私たちは GitLab の[運営原則](/handbook/company/operating-principles/)に沿って作業することをデフォルトとし、[インフラストラクチャプラットフォームセクション全体のプロセス](/handbook/engineering/infrastructure-platforms/project-management/)に従います。これに加えて、プロダクションエンジニアリングにおける作業に特有な、または特に重要なプロセスを以下に列挙します。
 
 ### オペレーティングモデル
 
 毎四半期、インフラストラクチャプラットフォームのエンジニアリングおよびプロダクトリーダーが[オペレーティングモデルエピック](https://gitlab.com/groups/gitlab-operating-model/-/epics?label_name%5B%5D=Owner%3A%3AInfrastructure%20Platforms)を設定します。これらは、その四半期に達成が必要な目標を表します。
 
-ディレクターとシニア EM が、それらの目標をサポートするためにその四半期にコミットするエピックを提供します。チームのエピックはこれらのオペレーティングモデルエピックに[リンク](https://docs.gitlab.com/user/group/epics/linked_epics/)されます。
+プロダクションエンジニアリングのリーダーが、それらの目標をサポートするためにその四半期にコミットするエピックを提供します。チームのエピックはこれらのオペレーティングモデルエピックに[リンク](https://docs.gitlab.com/user/group/epics/linked_epics/)されます。
 
 プロジェクト上でリンクされたエピックを参照することで、それが部門や会社の目標にどのように結びついているかを確認できます。
 
 ### ロードマップ
 
-四半期目標に何を貢献できるかを把握するため、チームごとに事前にロードマップを準備します。各四半期の終わりに向けて、EM はロードマップレビューセッションを設定し、重要なプロジェクトについて合意します。
+四半期目標に何を貢献できるかを把握するため、チームごとに事前にロードマップを準備します。各四半期の終わりに向けて、EM はロードマップレビューセッションを設定し、重要なプロジェクトについて合意します。グループ内のすべての EM が一緒にロードマップをレビューし、チーム間の依存関係とキャパシティのニーズを検討します。
 
-シニア EM がこれらのプロジェクトをインフラストラクチャプラットフォームのエンジニアリングおよびプロダクトリーダーに提案し、四半期開始前に追加または削除すべき作業を明確にします。
+プロダクションエンジニアリングのリーダーがこれらのプロジェクトをインフラストラクチャプラットフォームのエンジニアリングおよびプロダクトリーダーに提案し、四半期開始前に追加または削除すべき作業を明確にします。
 
 ### エピック構造
 

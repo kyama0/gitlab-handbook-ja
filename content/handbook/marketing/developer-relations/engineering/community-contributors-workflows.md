@@ -2,11 +2,11 @@
 title: "コミュニティ貢献を扱うワークフロー"
 description: DevRel Engineering が扱うすべてのプロセス
 upstream_path: /handbook/marketing/developer-relations/engineering/community-contributors-workflows/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T12:58:25Z"
-translator: claude
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+translated_at: "2026-08-01T15:25:19+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-19T15:08:30+01:00
+lastmod: "2026-07-31T16:25:20+01:00"
 ---
 
 ## ワークフロー
@@ -149,7 +149,7 @@ Contributor success は、Legal and Corporate Affairs チームを支援して�
 
 `gitlab-corporate-cla` 下のサブグループは、[`gitlab-corporate-cla/config`](https://gitlab.com/gitlab-corporate-cla/config) プロジェクトで OpenTofu を介して宣言的に管理されます。標準的なグループ設定（可視性、説明、プロジェクト/サブグループの作成レベル、Wiki 無効化、メンション無効化、share-with-group ロックなど）はすべてパイプラインによって自動的に適用されます。
 
-1. [`groups.yaml`](https://gitlab.com/gitlab-corporate-cla/config/-/blob/main/groups.yaml) にエントリを追加するマージリクエストを [`gitlab-corporate-cla/config`](https://gitlab.com/gitlab-corporate-cla/config) に対してオープンします:
+1. [`gitlab-corporate-cla/config`](https://gitlab.com/gitlab-corporate-cla/config) に対して、[`groups.yaml`](https://gitlab.com/gitlab-corporate-cla/config/-/blob/main/groups.yaml) にエントリを追加するマージリクエストをオープンします:
 
     ```yaml
     - name: Acme Corp
@@ -238,7 +238,7 @@ MR をマージしてもらった広範コミュニティメンバーや、マ�
 
 ### ハッカソン
 
-GitLab コミュニティメンバーが集まり、マージリクエストに取り組み、チュートリアルセッションに参加し、[GitLab Discord](https://discord.gg/gitlab) で互いをサポートする四半期ごとの[ハッカソン](https://about.gitlab.com/community/hackathon/)があります。ハッカソンのアジェンダ、ロジスティクス、資料、録画、その他の情報は [GitLab Community Hackathon](https://about.gitlab.com/community/hackathon/) ページで利用できます。
+四半期ごとの[ハッカソン](https://about.gitlab.com/community/hackathon/)では、GitLab コミュニティメンバーが集まり、マージリクエストに取り組み、チュートリアルセッションに参加し、[GitLab Discord](https://discord.gg/gitlab) で互いをサポートします。ハッカソンのアジェンダ、ロジスティクス、資料、録画、その他の情報は [GitLab Community Hackathon](https://about.gitlab.com/community/hackathon/) ページで利用できます。
 
 イベントの計画は、[ハッカソン Issue テンプレート](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/new?description_template=hackathon)に従って行われます。
 
@@ -334,12 +334,21 @@ Contributor Success チームは、広範コミュニティ貢献者のブロッ
 
 ### `quick win` Issue の基準
 
-GitLab は広範コミュニティに、貢献したい場合は `quick win` ラベルが付いた Issue を検索するようガイドしています。これらの Issue は、コミュニティ貢献者にとってわかりやすく、貢献プロセスを学びながら完了するのに十分速いことを意図しています。これは、誰もが貢献し、初回貢献者がコミュニティでオンボーディングするのをサポートする[GitLab のミッション](/handbook/company/mission/#mission)に従っています。[GitLab Bot](https://gitlab.com/gitlab-bot) はこの基準の維持を支援し、Issue が要件を満たさない場合に `quick win` ラベルを削除します。機械的にシンプルに見えるが、ドメイン固有のロールアウト判断が必要な Issue は `quick win` ではありません。
+GitLab は広範コミュニティに、貢献したい場合は `quick win` ラベルが付いた Issue を検索するようガイドしています。
+これらの Issue は、コミュニティ貢献者にとってわかりやすく、貢献プロセスを学びながらもすぐに完了できるものを意図しています。
+これは、誰もが貢献できるようにし、初回貢献者のコミュニティへのオンボーディングを支援するという[GitLab のミッション](/handbook/company/mission/#mission)に沿っています。
 
-- Issue の説明には、貢献者が始めるのを助けるガイダンス付きの実装計画を、第二または第三レベルの見出しとして含める必要があります。
-たとえば、`## Implementation`、`### Implementation`、`## Implementation plan`、`### Implementation guide` はすべて受け入れられます。
-このセクションは非常に簡潔でも、Issue を解決するための可能なアクションを提供してもかまいません。
-- 貢献者が質問したりメンタリングを受けたりできるよう、GitLab チームメンバーまたは経験豊富なコミュニティ貢献者を連絡先として含めることを検討してください。
+AI トリアージは、チームが作成した新しい Issue をすべて評価し、Issue が以下に該当する場合に `quick win` ラベルを適用します。
+
+- 明確で自己完結した実装計画がある（または、容易に作成できるほどわかりやすい）
+- 広範コミュニティの貢献者が迅速かつ容易に提供できる
+- コードベースに関する深い知識を必要としない
+
+チームメンバーもこのラベルを直接適用でき、AI はその判断に同意するかどうかを評価します。
+Issue が `quick win` に該当しないと AI が判断した場合、ラベルを追加したチームメンバーに通知します
+（ラベルは削除しません）。
+
+[GitLab Bot](https://gitlab.com/gitlab-bot) は、ラベルが 1 年以上適用されている場合、または Issue がブロックされた場合にラベルを削除します。
 
 ### `quick win::first-time contributor` Issue の基準
 

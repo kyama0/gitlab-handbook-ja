@@ -2,11 +2,11 @@
 title: "GitLab Fundamentals - ハンズオンラボ: GitLab で作業を整理する"
 description: "このハンズオンガイドでは、GitLab で作業を整理・構造化する基本を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab1/
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-translated_at: "2026-07-02T06:06:16+09:00"
-translator: claude
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+translated_at: "2026-08-01T15:59:51+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-26T10:02:20-04:00
+lastmod: "2026-07-30T08:14:41-04:00"
 ---
 
 > 完了までの推定時間: 30 分
@@ -17,7 +17,9 @@ lastmod: 2026-06-26T10:02:20-04:00
 
 ## タスク A. グループ構造を表示する
 
-まず、左サイドバーで **Groups** を選択します。
+1. はじめに、`ilt.gitlabtraining.cloud` にアクセスしてメインページへ移動します。
+
+1. 左サイドバーで **Groups** を選択します。
 
 1. **Groups** セクションで、**Events** の左にあるドロップダウン矢印を選択します。
 
