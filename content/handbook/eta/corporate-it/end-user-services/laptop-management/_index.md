@@ -67,7 +67,7 @@ EDR の展開は、[仮想マシン](/handbook/security/corporate/systems/sentin
 
 ### Customer Support と Product Development 向けの Windows {#windows-for-customer-support-and-product-development}
 
-Windows は GitLab Corporate サービス（例: Slack、G-Suite、GitLab.com）へのアクセスには使用できません。Windows OS は、GitLab 管理デバイスに追加する場合にのみ使用できます。特定のロールでは、Microsoft Ecosystem 向けに開発する GitLab の顧客とパートナーのプラットフォームおよびエコシステムサポートを確保するため、Windows を使用する必要があることを理解しています。
+Windows は GitLab Corporate サービス（例：Slack、G-Suite、GitLab.com）へのアクセスには使用できません。Windows OS は、GitLab 管理デバイスとは別の追加デバイスとしてのみ使用できます。特定のロールでは、Microsoft Ecosystem 向けに開発する GitLab の顧客とパートナーのプラットフォームおよびエコシステムサポートを確保するため、Windows を使用する必要があることを理解しています。
 
 仮想化された Windows の使用が強く推奨され、ほとんどのサポートおよび開発ニーズを満たすはずです。Windows の使用に関する完全な詳細は、内部の [GitLab Team Member Endpoint Systems 向けの承認済みオペレーティングシステム](https://internal.gitlab.com/handbook/security/corporate/operating-systems/#windows-for-customer-support-and-product-development)ページで確認できます。
 
