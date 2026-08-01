@@ -42,7 +42,7 @@ stale: false
 
 ## 決定
 
-### 1. ネットワーク: TLS、CIDR 制限、パスフィルタリングを備えた Envoy Gateway
+### 1. ネットワーク：TLS、CIDR 制限、パスフィルタリングを備えた Envoy Gateway
 
 各 Cell の Prometheus エンドポイントは、次を備える Envoy Gateway（Gateway API、`gateway.networking.k8s.io`）リソースを通じて公開します。
 
@@ -55,24 +55,24 @@ stale: false
 
 認証は 2 つの異なるプレーンで行われます。
 
-**Instrumentor から Grafana（データソース登録）:** Instrumentor は、データソース管理にスコープされた Grafana サービスアカウントが発行した **bearer token API キー**を使用して Grafana HTTP API を呼び出します。キーは次のとおりです。
+**Instrumentor から Grafana（データソース登録）：** Instrumentor は、データソース管理にスコープされた Grafana サービスアカウントが発行した **bearer token API キー**を使用して Grafana HTTP API を呼び出します。キーは次のとおりです。
 
 - Vault に保存され、プロビジョニング時に Instrumentor へ注入されます。
 - 標準の Instrumentor シークレットローテーションライフサイクルの一部としてローテーションされます。
 - データソースを作成および削除する Grafana API 呼び出しで、`Authorization: Bearer <token>` ヘッダーとして渡されます。
 
-**Grafana から Cell Prometheus（クエリパス）:** Grafana による各テナントの Envoy Gateway へのアクセスは、API キーではなくネットワークレイヤーで制限されます。
+**Grafana から Cell Prometheus（クエリパス）：** Grafana による各テナントの Envoy Gateway へのアクセスは、API キーではなくネットワークレイヤーで制限されます。
 
 - Gateway で終端される **TLS** は、サーバーを Grafana に認証します。
 - `SecurityPolicy` の **CIDR 許可リストは、受信アクセスを Grafana ロードバランサーのエグレス IP のみに制限します**。
 - mTLS が有効な場合、Grafana は追加でテナントごとの CA（Vault に保存）で署名されたクライアント証明書を提示し、呼び出し元を認証します。
 
-### 3. 自動化: Instrumentor が Grafana データソースをプロビジョニングする
+### 3. 自動化：Instrumentor が Grafana データソースをプロビジョニングする
 
 Instrumentor は、テナントの設定およびデプロビジョニングフローの一部として Grafana データソースのライフサイクルを管理します。
 
-- **プロビジョニング/設定時:** Grafana HTTP API を呼び出して、サービスアカウント API キーで認証され、`https://<tenant_managed_domain>/prometheus`（または同等のイングレスホスト名）を指す Prometheus データソースを作成します。データソース名は `cell-<tenant_id>-<region>`（例: `cell-icellapp-us-east-1`）です。
-- **デプロビジョニング時:** Grafana HTTP API を呼び出してデータソースを削除します。
+- **プロビジョニング/設定時：** Grafana HTTP API を呼び出して、サービスアカウント API キーで認証され、`https://<tenant_managed_domain>/prometheus`（または同等のイングレスホスト名）を指す Prometheus データソースを作成します。データソース名は `cell-<tenant_id>-<region>`（例: `cell-icellapp-us-east-1`）です。
+- **デプロビジョニング時：** Grafana HTTP API を呼び出してデータソースを削除します。
 - Grafana API エンドポイントとサービスアカウントの認証情報は、`TENANT_PROMETHEUS_DB_DISK_SIZE` や他の環境変数と同じパターンで、Jsonnet によって生成された環境を通じて Instrumentor に注入されます。
 
 ### 4. 許可 IP リストの自動化

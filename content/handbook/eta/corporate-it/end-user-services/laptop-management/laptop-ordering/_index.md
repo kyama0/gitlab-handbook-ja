@@ -110,7 +110,7 @@ End User Services Issue Tracker プロジェクトで[Issue を作成](https://g
 
 ### 追加ラップトップのリクエスト
 
-追加デバイスが必要で、業務上の正当性、マネージャー承認、IT 承認がある場合は、[Laptop Refresh/Upgrade template](https://gitlab.com/gitlab-com/it/end-user-services/issues/laptop-issue-tracker/-/issues/new#)から追加ラップトップをリクエストできます。セカンダリデバイスが承認された場合、それは新しいデバイスではなく再生品になることに注意してください。
+追加デバイスが必要で、業務上の正当性、マネージャー承認、IT 承認がある場合は、[Laptop Refresh/Upgrade テンプレート](https://gitlab.com/gitlab-com/it/end-user-services/issues/laptop-issue-tracker/-/issues/new#)から追加ラップトップをリクエストできます。セカンダリデバイスが承認された場合、それは新しいデバイスではなく再生品になることに注意してください。
 
 ### 個人用ラップトップの使用
 
