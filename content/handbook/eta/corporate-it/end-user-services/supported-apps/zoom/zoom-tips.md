@@ -141,7 +141,7 @@ Zoom ミーティングへ迅速かつ効果的に電話接続するためのヒ
 
 物理的な[グリーンスクリーン](https://www.amazon.com/dp/B00JSAOGWG/)の購入を検討してください。
 
-ログインしている GitLab チームメンバーがアクセスできる[カスタマイズ可能な GitLab Background](https://docs.google.com/presentation/d/1PM4sCuCTSmVtoCp_O-_K9BS7yrIJjh1kteMTT7PS9zI/edit#slide=id.gc454e6622b_0_3)の使用を検討してください（*Google Drive アクセスを利用できます*）。
+ログインしている GitLab チームメンバーがアクセスできる[カスタマイズ可能な GitLab 背景](https://docs.google.com/presentation/d/1PM4sCuCTSmVtoCp_O-_K9BS7yrIJjh1kteMTT7PS9zI/edit#slide=id.gc454e6622b_0_3)の使用を検討してください（*Google Drive アクセスを利用できます*）。
 
 1. Zoom の [In Meeting (Advanced)](https://zoom.us/profile/setting#advanced_meeting_options) 設定で、`Virtual background` を有効にします
 1. コンピューターの Zoom アプリケーションで設定を開き、`Virtual Background` 設定をクリックします

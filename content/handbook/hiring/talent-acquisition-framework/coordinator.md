@@ -1001,7 +1001,7 @@ GitLab は [Global Upside](https://www.safeguardglobal.com/) と提携し、以�
     - [PEO に雇用されるチームメンバーの試用期間](/handbook/people-group/contracts-probation-periods/#probation-period)に移動し、候補者の国を確認します。
     - 「Offer Details」のドロップダウンで試用期間（ある場合）を選択します。ない場合は、そのフィールドで「N/A」を選択します。
 1. Candidate Experience Specialist は、コントラクトが無期限か有期かを確認します。
-    - 確定コントラクトの場合は、「Offer Details」のドロップダウンから「Indefinite」を選択します。
+    - 無期限コントラクトの場合は、「Offer Details」のドロップダウンから「Indefinite」を選択します。
     - 有期コントラクトの場合は、「Offer Details」のドロップダウンから「Fixed Contract」を選択し、「End Date」に終了日を入力します。
 1. 追加の詳細を取得したら、すべての情報を反映するよう Offer Details を更新します。CES が署名者になります。
 1. Offer Documents で「PEO New Hire Template」を生成し、DocuSign を通じて送信します
