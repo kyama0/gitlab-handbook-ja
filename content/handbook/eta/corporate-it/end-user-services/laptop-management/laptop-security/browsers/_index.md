@@ -23,7 +23,7 @@ Firefox、Safari などの他のブラウザの使用は推奨もサポートも
 
 ## エンタープライズブラウザ管理
 
-[Chrome Enterprise Browser Management](https://chromeenterprise.google/browser/management/)は、Corporate Security システム管理者が次の利点を得られるようにするサービスです:
+[Chrome Enterprise Browser Management](https://chromeenterprise.google/browser/management/)は、Corporate Security システム管理者が次の利点を得られるようにするサービスです：
 
 - 効果的な管理とセキュリティレポート
 - ユーザー体験を改善し、標準化された構成を実装する

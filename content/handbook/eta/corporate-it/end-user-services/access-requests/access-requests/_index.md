@@ -131,7 +131,7 @@ Okta で設定されているアプリケーションの一覧については、
 
 ---
 
-### Google Groups、1Password ボルト、または Groups のアクセスリクエスト
+### Google Groups、1Password ボルト、またはグループのアクセスリクエスト
 
 *すべての人が同じシステムへのアクセスをリクエストする場合、個人または複数人へのアクセスをリクエストするには[このテンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=googlegroup_1Passwordgroupvault)を使用できます。複数の人が異なるシステムへのアクセスを必要とする場合は、同じテンプレートを使用して複数の Issue を作成してください。同じ部門または部に所属しながら異なる Manager に報告する複数の人にアクセスをリクエストする場合は、部門または部の最上位の Manager、すなわち Director、Vice President、または Executive から承認を取得できます。*
 
