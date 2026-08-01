@@ -3,7 +3,7 @@ title: "Employment Solutions - 概要"
 description: GitLab の Employment Solutions について。
 upstream_path: /handbook/people-group/employment-solutions/
 upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 lastmod: "2026-04-09T13:22:51+00:00"
@@ -22,7 +22,7 @@ GitLab は、採用制限を伴わない法人を持つ国で採用します。�
 - 運用の複雑さの軽減
 - 安定したフットプリントの提供と、特定の国での成長の容易化
 
-## GitLab のチームメンバータイプ
+## GitLab のチームメンバータイプ {#team-member-types-at-gitlab}
 
 | チームメンバータイプ | 略称 | 場所 |
 | ---------------- | ------------ | -------- |

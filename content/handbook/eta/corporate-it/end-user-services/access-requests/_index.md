@@ -84,7 +84,7 @@ Okta で設定されているアプリケーションの一覧については、
 
 ### アプリケーション固有のテンプレート {#application-specific-templates}
 
-これらの Issue は、特定のアプリケーションおよびサービスへの、またはそれらに関するアクセスに関連します。たとえば、既存の vault やグループの変更、または新規作成には [1Password Request Form](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=1Password_Request)を使用できます。
+これらの Issue は、特定のアプリケーションおよびサービスへの、またはそれらに関するアクセスに関連します。たとえば、既存のボルトやグループの変更、または新規作成には [1Password Request Form](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=1Password_Request)を使用できます。
 
 ### 管理者（Black）アカウント
 
