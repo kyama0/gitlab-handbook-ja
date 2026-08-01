@@ -25,7 +25,7 @@ stale: false
 - [その他の Zoom のヒント](#additional-zoom-tips)
   - [仮想背景](#virtual-backgrounds)
   - [ビデオフィルターを適用する](#applying-video-filters)
-  - [外部 Web カメラと DSLR](#external-webcams-and-dslrs)
+  - [外付けウェブカメラと DSLR](#external-webcams-and-dslrs)
   - [Zoom がマイク入力音量を自動的に下げる場合](#zoom-automatically-lowering-your-microphone-input-volume)
 
 ## Zoom でプレゼンテーションを共有する方法 {#how-to-share-a-presentation-in-zoom}
@@ -158,14 +158,14 @@ Zoom ミーティングへ迅速かつ効果的に電話接続するためのヒ
 1. 希望するフィルターを選択します。（GitLab テーマのフィルターがあります！）
 1. （任意）下にスクロールし、`Apply to all future meetings` チェックボックスを選択すると、参加またはホストするすべてのミーティングのデフォルトとしてこのフィルターを設定できます。
 
-### 外部 Web カメラと DSLR {#external-webcams-and-dslrs}
+### 外付けウェブカメラと DSLR {#external-webcams-and-dslrs}
 
-- DSLR または外部 Web カメラを使用すると、プロフェッショナルな [bokeh](https://en.wikipedia.org/wiki/Bokeh) 効果で高品質のビデオ出力を実現できます
-- 外部 Web カメラは、ホワイトバランスやコントラスト調整などの高度な色と光の補正を含め、より多くの制御が可能なため、内蔵 Macbook Web カメラの優れた代替手段です
-- 外部 Web カメラでは、動画の特定部分、つまり顔に集中するようライブ画像を切り抜くこともできます
-- Mac 対応の外部 Web カメラの最新リストは[こちら](https://www.imore.com/best-webcams-mac)で確認できます
-- Mac で DSLR を Web カメラとして機能させるセットアップはかなり複雑で、通常はアダプターなどの追加ハードウェアが必要になります
-  - Mac で DSLR を Web カメラとして設定する簡単な動画チュートリアルは[こちら](https://www.youtube.com/watch?v=9kQJXQ25SmQ)で確認できます。
+- DSLR または外付けウェブカメラを使用すると、プロフェッショナルな [bokeh](https://en.wikipedia.org/wiki/Bokeh) 効果で高品質のビデオ出力を実現できます
+- 外付けウェブカメラは、ホワイトバランスやコントラスト調整などの高度な色と光の補正を含め、より多くの制御が可能なため、内蔵 MacBook ウェブカメラの優れた代替手段です
+- 外付けウェブカメラでは、動画の特定部分、つまり顔に集中するようライブ画像を切り抜くこともできます
+- Mac 対応の外付けウェブカメラの最新リストは[こちら](https://www.imore.com/best-webcams-mac)で確認できます
+- Mac で DSLR をウェブカメラとして機能させるセットアップはかなり複雑で、通常はアダプターなどの追加ハードウェアが必要になります
+  - Mac で DSLR をウェブカメラとして設定する簡単な動画チュートリアルは[こちら](https://www.youtube.com/watch?v=9kQJXQ25SmQ)で確認できます。
 
 ### Zoom がマイク入力音量を自動的に下げる場合 {#zoom-automatically-lowering-your-microphone-input-volume}
 
