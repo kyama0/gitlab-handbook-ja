@@ -635,7 +635,7 @@ PM の応答と会話からの関連コンテキストで追跡用 Issue を更�
 | 顧客が報告したバグを修正したい | 良いフィット - PM は通常受容的 |
 | 顧客が彼らだけに利益がある機能を望む | 整合しない可能性 - スコープを広げられるか探る |
 | Issue に GitLab エンジニアからのアクティブな MR がある | おそらく競合 - 代替を見つける |
-| Issue がセキュリティクリティカルな領域にある | 追加の精査が必要 - Staff+エンジニアレビューが必要な可能性 |
+| Issue がセキュリティクリティカルな領域にある | 追加の精査が必要 - Staff+ エンジニアレビューが必要な可能性 |
 | Issue が構造的変更を必要とする | 複雑 - PM は Engineering の意見が必要になる可能性が高い |
 
 #### 顧客が断る、または適格でない - 機会のクローズ
@@ -833,7 +833,7 @@ A: GitLab はオープンコア企業であり、コミュニティからのコ�
 
 **Q: 取り組みたいものに何でも取り組めますか？**
 
-A: コントリビューションは GitLab の製品の方向性と整合する必要があります。事前承認済み Issue の[キュレートされたリスト](https://cocreate.gitlab.com/?label=co-create)を管理していますが、特定の案がある場合は、担当の Product Manager と適合性を評価します。この承認はオンサイトを確約する前に行われるため、想定外のことはありません。
+A: コントリビューションは GitLab の製品の方向性と整合する必要があります。事前承認済み Issue の[キュレートされたリスト](https://cocreate.gitlab.com/?label=co-create) を管理していますが、特定の案がある場合は、担当の Product Manager と適合性を評価します。この承認はオンサイトを確約する前に行われるため、想定外のことはありません。
 
 **Q: 関心のある内容がキュレートされたリストにない場合はどうなりますか？**
 
@@ -861,7 +861,7 @@ A: いいえ。GitLab のエンジニアがチームとペアプログラミン�
 
 A: エンジニアリングリーダーシップに響く観点をいくつか示します。
 
-1. [Harvard Business School の研究](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3091831)では、コントリビュートする企業は、使用するオープンソースソフトウェアから最大 2 倍の生産的価値を得ることが示されています
+1. [Harvard Business School の研究](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=3091831) では、コントリビュートする企業は、使用するオープンソースソフトウェアから最大 2 倍の生産的価値を得ることが示されています
 1. GitLab はコントリビュートしたものすべてを維持します。継続的な保守負担がゼロになるため、かなりの社内エンジニアリング時間を相殺します
 1. スキル移転は即時かつ実践的です。Scania のあるエンジニアは、Co-Create を通じて得た Ruby の知識を、数週間後に社内のアップグレード Issue のトラブルシューティングに活用しました
 1. 直接コントリビューションは、従来の機能リクエストプロセスよりも高速です
@@ -875,7 +875,7 @@ A: 通常、エンドツーエンドで 6 〜 8 週間です。適格性確認�
 
 **Q: 当社の法務チームがオープンソースへのコントリビューションに懸念を持っています。**
 
-A: これは、特に規制産業では非常によくあることです。技術業界全体で使用されている標準の[企業コントリビューター契約](https://about.gitlab.com/community/contribute/dco-cla/)に加えて、[ライセンス互換性ガイド](/handbook/marketing/developer-relations/programs/cocreate/license-compatibility-guide/)があります。詳細を法務担当者に説明するため、当社の法務専門家との通話を手配できます。金融サービス、防衛、自動車の組織はいずれもこのプロセスを完了しています。
+A: これは、特に規制産業では非常によくあることです。技術業界全体で使用されている標準の[企業コントリビューター契約](https://about.gitlab.com/community/contribute/dco-cla/) に加えて、[ライセンス互換性ガイド](/handbook/marketing/developer-relations/programs/cocreate/license-compatibility-guide/) があります。詳細を法務担当者に説明するため、当社の法務専門家との通話を手配できます。金融サービス、防衛、自動車の組織はいずれもこのプロセスを完了しています。
 
 **Q: コントリビュートするコードは誰が所有しますか？**
 
@@ -927,7 +927,7 @@ A: はい。公開されている例には次のものがあります。
 1. **Scania**: Conan パッケージレジストリのサポートを前進させ、17.8 リリースで GitLab MVP として認定
 1. **Kitware**: ハイパフォーマンスコンピューティングのユースケース向けに OAuth2 デバイス認可グラントフローを追加
 
-ディスカバリーコール中またはその後に、詳細と [Co-Create ブログ記事](https://about.gitlab.com/blog/2025/01/30/the-co-create-program-how-customers-are-collaborating-to-build-gitlab/)を共有できます。
+ディスカバリーコール中またはその後に、詳細と [Co-Create ブログ記事](https://about.gitlab.com/blog/2025/01/30/the-co-create-program-how-customers-are-collaborating-to-build-gitlab/) を共有できます。
 
 ### アカウントチーム向け
 
