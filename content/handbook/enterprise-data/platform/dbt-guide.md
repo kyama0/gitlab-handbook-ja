@@ -6,7 +6,7 @@ upstream_path: /handbook/enterprise-data/platform/dbt-guide/
 upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
 lastmod: "2026-07-28T15:04:15+01:00"
 translated_at: "2026-07-31T07:45:00+09:00"
-translator: claude
+translator: codex
 stale: false
 ---
 

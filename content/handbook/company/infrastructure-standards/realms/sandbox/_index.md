@@ -4,7 +4,7 @@ description: "このハンドブックセクションでは、GitLab の全部�
 upstream_path: "/handbook/company/infrastructure-standards/realms/sandbox/"
 upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
 translated_at: "2026-07-10T20:55:48+09:00"
-translator: claude
+translator: codex
 stale: false
 lastmod: "2026-07-09T08:13:40+02:00"
 ---

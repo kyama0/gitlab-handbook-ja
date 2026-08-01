@@ -3,7 +3,7 @@ title: "SentinelOne エンドポイント検出と対応 (EDR)"
 upstream_path: /handbook/security/corporate/systems/sentinelone/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T07:19:19+09:00"
-translator: claude
+translator: codex
 stale: false
 lastmod: "2026-07-28T16:24:24+01:00"
 ---

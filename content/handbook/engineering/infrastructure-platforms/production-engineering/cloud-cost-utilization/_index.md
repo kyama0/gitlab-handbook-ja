@@ -3,7 +3,7 @@ title: "クラウドコスト最適化チーム"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/"
 upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
 translated_at: "2026-07-31T08:13:25+09:00"
-translator: claude
+translator: codex
 stale: false
 lastmod: "2026-07-28T09:36:21+02:00"
 ---
