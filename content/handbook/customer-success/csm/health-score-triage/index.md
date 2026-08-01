@@ -2,11 +2,11 @@
 description: "このページでは、顧客のヘルスを考慮するための要素、適切な評価の選択ガイドライン、コミュニケーションガイドライン、CSMの責任、アカウントトリアージのIssue作成手順について説明します。"
 title: "顧客ヘルスの評価と管理"
 upstream_path: /handbook/customer-success/csm/health-score-triage/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T12:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:50:51+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-22T13:25:26-04:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 CSM関連のハンドブックページについては、[CSMハンドブックホームページ](/handbook/customer-success/csm/)を参照してください。
@@ -60,9 +60,9 @@ CSMは赤、黄、緑を使用して、顧客ヘルスに対するセンチメ�
 - 成果を推進できるステークホルダーとのアライメントの欠如...
   - [エコノミックバイヤー](/handbook/sales/meddppicc/#economic-buyer)
   - [チャンピオン](/handbook/sales/meddppicc/#champion)
-  - 主要[ペルソナ](/handbook/product/personas/)
-    - [Cameron（コンプライアンスマネージャー）](/handbook/product/personas/#cameron-compliance-manager)
-    - [Delaney（開発チームリード）](/handbook/product/personas/#delaney-development-team-lead)
+  - 主要[ペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)
+    - [Cameron（コンプライアンスマネージャー）](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#cameron-compliance-manager)
+    - [Delaney（開発チームリード）](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead)
 - 製品がサクセスプランで定義された期待する価値や成果を提供しない
 - 製品の採用なしまたは低採用で進捗がない
 - 不良なセンチメントのコミュニケーション

@@ -1,11 +1,11 @@
 ---
 title: GitLab.com のモニタリング
 upstream_path: /handbook/engineering/monitoring/
-upstream_sha: "6eef8dbb6a0d15167aa5378f476b04cd38b78675"
-translated_at: "2026-07-10T07:06:25+09:00"
-translator: "claude"
+upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
+translated_at: "2026-07-31T08:13:25+09:00"
+translator: "codex"
 stale: false
-lastmod: "2026-07-02T12:44:52-06:00"
+lastmod: "2026-07-30T18:56:53+01:00"
 ---
 
 ## GitLab.com サービス可用性
@@ -19,6 +19,9 @@ GitLab.com サービス可用性定義の計算方法論は、[モニタリン�
 障害や劣化の定義に関する詳細は、[インシデント管理ページ](/handbook/engineering/infrastructure-platforms/incident-management/#definition-of-outage-vs-degraded-vs-disruption-and-when-to-communicate) にあります。
 
 ## サービス可用性の履歴
+
+<details>
+<summary>過去の可用性データを展開するにはクリックしてください</summary>
 
 | **年月** | **可用性** | **コメント** |
 | ---- | ----------- | ---- |
@@ -96,6 +99,8 @@ GitLab.com サービス可用性定義の計算方法論は、[モニタリン�
 | 2020年7月 | 99.81% | |
 | 2020年6月 | 99.56% | |
 | 2020年5月 | 99.58% | |
+
+</details>
 
 ## 関連ページ
 

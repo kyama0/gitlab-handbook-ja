@@ -9,11 +9,11 @@ owning-stage: "~devops::tenant scale"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/isolation/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:19:21+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-18T16:41:45+13:00"
+lastmod: "2026-07-28T12:27:01+08:00"
 ---
 
 このブループリントは、Organization が隔離されるための要件を詳述しています。
@@ -23,8 +23,7 @@ Organization とは何かについての詳細は、[Organization](_index.md) �
 
 ## 何を?
 
-GitLab のすべての Organization データと機能は隔離されます。
-隔離は、データと機能が Organization の境界を越えることが決してできないことを意味します。
+Organization は隔離できます。隔離とは、データと機能がその Organization の境界を越えることが決してできないことを意味します。非隔離はそれ自体で有効かつ恒久的な状態でもあります。[ADR 015: 非隔離は恒久的な Organization の状態](decisions/015_non_isolation_is_permanent.md)を参照してください。
 
 以下は、"Cell 1" と呼ばれる単一のインスタンス内の複数の Organization の図示です。
 

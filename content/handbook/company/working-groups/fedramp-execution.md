@@ -3,11 +3,11 @@ title: "FedRAMP 実行ワーキンググループ"
 description: "このワーキンググループのチャーターは、FedRAMP コンプライアンスの実行を推進することです。"
 status: active
 upstream_path: "/handbook/company/working-groups/fedramp-execution/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T00:00:00Z"
-translator: "claude"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:50:51+09:00"
+translator: codex
 stale: false
-lastmod: "2025-04-01T09:22:28+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 属性
@@ -38,7 +38,6 @@ GitLab が新しい SaaS オファリングに対して FedRAMP Moderate 認定�
 | Marin Jankovski  | Sr. Dir Engineering          | SaaS プラットフォームインフラリーダーシップ |
 | Corey Oas        | Compliance Manager           | FedRAMP SME                              |
 | Will Szabo       | Sr. Sec. Program Manager     | セキュリティプログラムマネージャー                 |
-| Steve Manzuik    | Dir. Threat Management       | 脆弱性修復 DRI            |
 | Stephen Dumesnil | EM US Public Sector Services | USPS チーム DRI                            |
 | Cynthia Miller   | Sr. Dir. Security Assurance  | セキュリティ DRI                             |
 

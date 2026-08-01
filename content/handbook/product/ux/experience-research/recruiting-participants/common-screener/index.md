@@ -37,13 +37,13 @@ Verify チームと Package チームは 2022 年初頭にコモンスクリー�
 
 パイロットは Verify チームと Package チームの User Personas に焦点を当てています:
 
-- [Presley, Product Designer](/handbook/product/personas/#presley-product-designer)
-- [Sasha, Software Developer](/handbook/product/personas/#sasha-software-developer)
-- [Devon, DevOps Engineer](/handbook/product/personas/#priyanka-platform-engineer)
-- [Sidney, Systems Administrator](/handbook/product/personas/#sidney-systems-administrator)
-- [Sam, Security Analyst](/handbook/product/personas/#amy-application-security-engineer)
-- [Rachel, Release Manager](/handbook/product/personas/#rachel-release-manager)
-- [Alex, Security Operations Engineer](/handbook/product/personas/#alex-security-operations-engineer)
+- [Presley, Product Designer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#presley-product-designer)
+- [Sasha, Software Developer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer)
+- [Devon, DevOps Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer)
+- [Sidney, Systems Administrator](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator)
+- [Sam, Security Analyst](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#amy-application-security-engineer)
+- [Rachel, Release Manager](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager)
+- [Alex, Security Operations Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#alex-security-operations-engineer)
 
 私たちのコモンスクリーナーでは、回答者をリサーチスタディとマッチングするために、次のようないくつかの重要領域に関する質問を使用しています:
 
@@ -75,13 +75,13 @@ Verify チームと Package チームは 2022 年初頭にコモンスクリー�
 
 | ユーザーペルソナ | 差別化するタスク |
 | ------ | ------ |
-| [Presley, Product Designer](/handbook/product/personas/#presley-product-designer) | 効果的で共感的かつ効率的なユーザー体験のデザインをリードする |
-| [Sasha, Software Developer](/handbook/product/personas/#sasha-software-developer) | プロダクトデザインをコードに変換する |
-| [Devon, DevOps Engineer](/handbook/product/personas/#priyanka-platform-engineer) | コードのデプロイ・ビルド・リリースを行う；パイプライン定義と CI テンプレートを提供する；コードを使って機能やバグ修正を実装する |
-| [Sidney, Systems Administrator](/handbook/product/personas/#sidney-systems-administrator) | インフラと構成を維持・スケールさせる；サーバーを構築してそこへデプロイする、もしくは開発者がそうするのを支援する |
-| [Sam, Security Analyst](/handbook/product/personas/#amy-application-security-engineer) | チームと協力してセキュリティ修正を実装する；セキュリティテストを実行する、もしくは潜在的なセキュリティ問題を報告する |
-| [Rachel, Release Manager](/handbook/product/personas/#rachel-release-manager) | パイプラインビルドを実行・テストする；パイプラインを自動化する；リリース横断でチームを調整する |
-|  [Alex, Security Operations Engineer](/handbook/product/personas/#alex-security-operations-engineer) | セキュリティインシデントに対処する；セキュリティを強化するためのツールを構築・実装する |
+| [Presley, Product Designer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#presley-product-designer) | 効果的で共感的かつ効率的なユーザー体験のデザインをリードする |
+| [Sasha, Software Developer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer) | プロダクトデザインをコードに変換する |
+| [Devon, DevOps Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer) | コードのデプロイ・ビルド・リリースを行う；パイプライン定義と CI テンプレートを提供する；コードを使って機能やバグ修正を実装する |
+| [Sidney, Systems Administrator](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator) | インフラと構成を維持・スケールさせる；サーバーを構築してそこへデプロイする、もしくは開発者がそうするのを支援する |
+| [Sam, Security Analyst](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#amy-application-security-engineer) | チームと協力してセキュリティ修正を実装する；セキュリティテストを実行する、もしくは潜在的なセキュリティ問題を報告する |
+| [Rachel, Release Manager](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager) | パイプラインビルドを実行・テストする；パイプラインを自動化する；リリース横断でチームを調整する |
+|  [Alex, Security Operations Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#alex-security-operations-engineer) | セキュリティインシデントに対処する；セキュリティを強化するためのツールを構築・実装する |
 
 ### コモンスクリーナーを使用するための要件はありますか？
 

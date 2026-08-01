@@ -3,11 +3,11 @@ title: マーケティングアナリティクス
 description: >-
   マーケティングアナリティクスは、リーダーシップと GTM チームと連携して、グローバルマーケティング戦略の策定と実行を行い、全体的な測定フレームワークを管理します。
 upstream_path: "/handbook/enterprise-data/marketing-analytics/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T12:00:00Z"
-translator: claude
+upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
+translated_at: "2026-07-31T08:13:25+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-08T14:33:54+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## チームの紹介
@@ -162,7 +162,7 @@ Salesforce 内の SoT またはキャンペーンベースのダッシュボー�
 - [Google Analytics](/handbook/enterprise-data/marketing-analytics/google-analytics-4/)
 - Hightouch
 
-アクセスをリクエストするには、ビジネスオペレーションのハンドブックに記載されている[アクセスリクエストプロセス](/handbook/security/corporate/end-user-services/access-requests/)に従ってください。これらのツールへのアクセスを必要とする契約者やコンサルタントと作業している場合は、調達ハンドブックに記載されている[プロフェッショナルサービスのアクセスリクエストプロセス](/handbook/finance/procurement/)に従ってください。
+アクセスをリクエストするには、ビジネスオペレーションのハンドブックに記載されている[アクセスリクエストプロセス](/handbook/eta/corporate-it/end-user-services/access-requests/)に従ってください。これらのツールへのアクセスを必要とする契約者やコンサルタントと作業している場合は、調達ハンドブックに記載されている[プロフェッショナルサービスのアクセスリクエストプロセス](/handbook/finance/procurement/)に従ってください。
 
 ## 重要なリソース
 

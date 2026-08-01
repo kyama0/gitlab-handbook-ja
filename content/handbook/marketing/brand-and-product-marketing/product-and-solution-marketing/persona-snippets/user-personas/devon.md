@@ -1,18 +1,18 @@
 ---
 title: "Devon ペルソナスニペット"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/devon/
-upstream_sha: 214b98c98d2eb739dbe3a358027667a7f128ec69
-translated_at: "2026-04-30T12:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:28:23+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-23T15:08:44-08:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ## ユースケース別 SDR ペルソナスニペット
 
 ### Devon（DevOps エンジニア）
 
-[Devon（DevOps エンジニア）](/handbook/product/personas/#priyanka-platform-engineer)
+[Devon（DevOps エンジニア）](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer)
 
 **概要**
 

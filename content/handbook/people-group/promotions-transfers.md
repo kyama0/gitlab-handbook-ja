@@ -494,7 +494,7 @@ Greenhouse で異動の報酬をレビューする際、Total Rewards チーム�
 
 1. リクエストが Workday を通じて承認された場合、People Operations チームは[職務変更レター](/handbook/hiring)を作成しますが、リクエストが Greenhouse を通じての場合、`People Operations チームは People Operations チームメールで通知されます`、CES チームによって[職務変更レター](/handbook/hiring)が作成され署名されました。
 
-#### 職務変更レター
+#### 職務変更レター {#job-change-letter}
 
 1. [国別の署名要件](/handbook/hiring)をレビューし、それに従って職務変更レターを処理します。すべての法人と国の場所で職務変更レターが必要なわけではないことに注意してください (たとえば、米国のチームメンバーは職務変更レターを受け取りません)。
 1. 該当する職務変更レターテンプレートのコピーを作成し、Workday リクエストに基づいてすべての適用可能な情報を入力し、該当する[署名者](/handbook/hiring)または[会社署名スタンプ](https://docs.google.com/document/d/1RWkI7zuFIUkW_sh1TmYii6e8zNOmz9USUoEr1wBIBpQ/edit?usp=sharing)を追加します。発効日は次のとおりです:

@@ -62,7 +62,7 @@ lastmod: "2026-02-12T13:14:13+00:00"
 
 **最近のプロジェクトからの戦略的調査の例:**
 
-1. [Release Manager Persona Addition](https://gitlab.com/gitlab-org/ux-research/-/issues/316)は、[Roles and Personas ページ](/handbook/product/personas/)の更新につながったクロスステージおよびマルチグループの戦略的調査の取り組みの素晴らしい例でした。これは Ops セクション全体にプラスの影響を与え、Ultimate ティアで新しい対象者にリーチするのに役立ちました。
+1. [Release Manager Persona Addition](https://gitlab.com/gitlab-org/ux-research/-/issues/316)は、[Roles and Personas ページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/)の更新につながったクロスステージおよびマルチグループの戦略的調査の取り組みの素晴らしい例でした。これは Ops セクション全体にプラスの影響を与え、Ultimate ティアで新しい対象者にリーチするのに役立ちました。
 1. [KubeCon Ops Product Direction Survey](https://gitlab.com/gitlab-org/ux-research/-/issues/1740)は、Ops 内の[将来の製品ロードマップ](https://about.gitlab.com/blog/2022/05/31/the-kubecon-summary-from-a-product-perspective/)に情報を提供できた大規模なプロジェクトでした。これは、GitLab ユーザーにとって最も困難な CI/CD ワークフローについて貴重なフィードバックを取得し、ユーザーが理想的なシークレットソリューションについて持っている好みを学習することで行われました。
 
 ### 戦略的調査の成果

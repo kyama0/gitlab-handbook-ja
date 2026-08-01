@@ -2,18 +2,18 @@
 title: "デモシステム"
 description: "GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales・Training チームが、様々な非同期・ライブの場面で GitLab の機能・価値・ワークフローをデモするためのインフラを提供します。"
 upstream_path: /handbook/customer-success/demo-systems/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T02:17:48Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:40:38+09:00"
+translator: codex
 stale: false
-lastmod: "2025-09-08T12:57:18-05:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## デモシステムの概要
 
 GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales・Training チームが、様々な非同期・ライブの場面で GitLab の機能・価値・ワークフローをデモするためのインフラを提供します。
 
-デモシステムは、[Jeff Martin](https://gitlab.com/jeffersonmartin) が 2019 年 10 月にシニアデモシステムエンジニアとして設計を開始したものです。現在は ([デモアーキテクチャ](/handbook/solutions-architects/center-of-excellence/demo-architecture/)) チームの [Logan Stucker](https://gitlab.com/lfstucker) と [Seraphine Young](https://gitlab.com/seraphiney)、そして [Scott Cosentino](https://gitlab.com/scottcosentinogitlab)（[GitLab University](https://university.gitlab.com)）がデモシステムの主要メンテナーとして引き継ぎ、トレーニングインストラクターや受講生の [GitLab Learn Labs](https://gitlab.com/gitlab-learn-labs) サポートも担当しています。
+デモシステムは 2019 年 10 月に設計されました。現在は [Logan Stucker](https://gitlab.com/lfstucker) と [Seraphine Young](https://gitlab.com/seraphiney) が ([デモアーキテクチャ](/handbook/solutions-architects/center-of-excellence/demo-architecture/)) チームで、[Scott Cosentino](https://gitlab.com/scottcosentinogitlab)（[GitLab University](https://university.gitlab.com)）とともにデモシステムの主要メンテナーを担い、トレーニングインストラクターや受講生の [GitLab Learn Labs](https://gitlab.com/gitlab-learn-labs) サポートも担当しています。
 
 利用可能なデモサンプルプロジェクトに関するご質問や、失敗したパイプラインジョブのトラブルシューティングについては、`#demo-architect-partners` Slack チャンネルでお問い合わせください。
 
@@ -60,7 +60,6 @@ GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales�
 <code>gitlab-core.us.gitlabdemo.cloud</code> インスタンスは 2021-04-20 に廃止され、2021-06-03 に削除されました。データのバックアップはありません。<code>cs.gitlabdemo.cloud</code> インスタンス（直接の置き換え）へのアクセス手順については、<a href="#access-shared-omnibus-instances">共有 Omnibus インスタンスへのアクセス</a>をご参照ください。
 {{% /panel %}}
 
-
 - `cs.gitlabdemo.cloud` — すべてのチームメンバーがアクセスできる主要な GitLab Omnibus インスタンスです。セルフマネージド Omnibus インスタンス上でグループ・プロジェクト・サンドボックスを作成できます。これは全チームメンバーが共有する環境ですので、管理者エリアは読み取り専用として扱ってください。
 - `cs-gitlabamazonq.com` — Amazon Q を中心としたイネーブルメントとデモに使用されます。
 - `gitlab-amazonq.com` — Amazon Q の公開インスタンスとして使用されます。
@@ -70,10 +69,10 @@ GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales�
 
 ## 独立した環境
 
-- **AWS アカウント**: GitLab Sandbox Cloud を使用して独自の独立した AWS アカウントをプロビジョニングするための[手順](#aws-account-or-gcp-project-sandbox-cloud)をご覧ください。
-- **GCP プロジェクト**: GitLab Sandbox Cloud を使用して独自の独立した GCP プロジェクトをプロビジョニングするための[手順](#aws-account-or-gcp-project-sandbox-cloud)をご覧ください。
-- **AWS Elastic Kubernetes Service (EKS) クラスター**: AWS アカウントを使用して、GitLab ドキュメントの [EKS クラスターの追加](https://docs.gitlab.com/ee/user/project/clusters/add_eks_clusters.html)に従い EKS クラスターをプロビジョニングできます。
-- **GCP Google Kubernetes Engine (GKE) クラスター**: `group-cs` GCP プロジェクトのクラスターについては Jeff Martin にメッセージを送ってください。クラスターを GitLab グループに追加するには、[グループレベルの Kubernetes クラスターで GitLab を設定するチュートリアル](/handbook/customer-success/demo-systems/tutorials/getting-started/configuring-group-cluster/)をご参照ください。
+- **AWS アカウント**： GitLab Sandbox Cloud を使用して独自の独立した AWS アカウントをプロビジョニングするための[手順](#aws-account-or-gcp-project-sandbox-cloud)をご覧ください。
+- **GCP プロジェクト**： GitLab Sandbox Cloud を使用して独自の独立した GCP プロジェクトをプロビジョニングするための[手順](#aws-account-or-gcp-project-sandbox-cloud)をご覧ください。
+- **AWS Elastic Kubernetes Service (EKS) クラスター**： AWS アカウントを使用して、GitLab ドキュメントの [EKS クラスターの追加](https://docs.gitlab.com/ee/user/project/clusters/add_eks_clusters.html)に従い EKS クラスターをプロビジョニングできます。
+- **GCP Google Kubernetes Engine (GKE) クラスター**： `group-cs` GCP プロジェクトのクラスターについての質問は、Demo Systems Slack チャンネルで尋ねてください。クラスターを GitLab グループに追加するには、[グループレベルの Kubernetes クラスターで GitLab を設定するチュートリアル](/handbook/customer-success/demo-systems/tutorials/getting-started/configuring-group-cluster/)をご参照ください。
 
 ## はじめ方
 
@@ -83,7 +82,7 @@ GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales�
 
 以下の手順により、[共有環境](#shared-environments)（Omnibus セルフマネージドインスタンス）の 1 つ以上にアクセスできます。
 
-> デモクラウドポータルとプロビジョニングシステムは、[Jeff Martin](https://gitlab.com/jeffersonmartin) が作成したオープンソースプロジェクト [gitlabdemo-cloud-app](https://gitlab.com/gitlab-com/demo-systems/management-apps/gitlabdemo-cloud-app) によって提供されています。
+> デモクラウドポータルとプロビジョニングシステムは、オープンソースプロジェクト [gitlabdemo-cloud-app](https://gitlab.com/gitlab-com/demo-systems/management-apps/gitlabdemo-cloud-app) によって提供されています。
 
 1. GitLab Demo Cloud ポータル（[https://gitlabdemo.cloud](https://gitlabdemo.cloud)）にアクセスし、Okta の資格情報でサインインします。
 1. ナビゲーションの Environments リンクをクリックするか、ダッシュボードの **View Environments** ボタンをクリックします。

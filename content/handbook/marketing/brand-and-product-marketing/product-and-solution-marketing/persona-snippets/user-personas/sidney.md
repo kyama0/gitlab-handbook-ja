@@ -1,18 +1,18 @@
 ---
 title: "Sidney ペルソナスニペット"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/sidney/
-upstream_sha: 214b98c98d2eb739dbe3a358027667a7f128ec69
-translated_at: "2026-04-30T12:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:28:23+09:00"
+translator: codex
 stale: false
-lastmod: "2024-08-08T22:55:54+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ## ユースケース別 SDR ペルソナスニペット
 
 ### Sidney（システム管理者）
 
-[Sidney（システム管理者）](/handbook/product/personas/#sidney-systems-administrator)
+[Sidney（システム管理者）](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator)
 
 **概要**
 

@@ -2,18 +2,18 @@
 title: "Blog Handbook"
 description: "GitLab Blog への投稿提案と公開について知っておくべきすべての情報。"
 upstream_path: "/handbook/marketing/blog/"
-upstream_sha: "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1"
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:39:44+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-20T09:32:02-07:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 GitLab Blog ハンドブックへようこそ! [GitLab Blog](https://about.gitlab.com/blog/) は Content Marketing チームによって管理されています。ブログのマネージングエディターは Sandra Gittlen（@sgittlen）です。
 
 ## ブログ投稿とは何か?
 
-GitLab では、ブログ投稿は主に、オーディエンス（[DevSecOps プロフェッショナル](/handbook/product/personas/)）に役立つ情報を共有することに焦点を当てています。ブログ投稿を提案または執筆する際は、それが読者に何を提供するかを常に考えてください。投稿がより内部向け、あるいは一種の個人的なエッセイである場合、ブログには合わない可能性が高いです（ただし、あなた個人の LinkedIn ページには載せられるかもしれません）。
+GitLab では、ブログ投稿は主に、オーディエンス（[DevSecOps プロフェッショナル](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)）に役立つ情報を共有することに焦点を当てています。ブログ投稿を提案または執筆する際は、それが読者に何を提供するかを常に考えてください。投稿がより内部向け、あるいは一種の個人的なエッセイである場合、ブログには合わない可能性が高いです（ただし、あなた個人の LinkedIn ページには載せられるかもしれません）。
 
 ブログは以下のカテゴリーに分類されます。
 

@@ -1,11 +1,11 @@
 ---
 title: "提案中のユースケース: データサイエンス"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/data-science/
-upstream_sha: d0a19ab78fc5e0d322868c8f35ab8f81e761bd21
-translated_at: "2026-05-01T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:22:17+09:00"
+translator: codex
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ## 市場の視点
@@ -33,7 +33,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 
 ### ユーザーペルソナ
 
-[ユーザー](/handbook/product/personas/#user-personas)は誰か
+[ユーザー](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)は誰か
 
 - データアナリスト
 - データエンジニア
@@ -43,7 +43,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 
 ### バイヤーペルソナ
 
-[バイヤー](/handbook/product/personas/)は誰か
+[バイヤー](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)は誰か
 
 - データコンシューマー（エグゼクティブレベル）
 - エンタープライズデータスチュワード

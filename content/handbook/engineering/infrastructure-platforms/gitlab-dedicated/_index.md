@@ -1,11 +1,11 @@
 ---
 title: "GitLab Dedicated グループ"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-17T06:09:44+09:00"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:13:25+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T14:06:57-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ![GitLab Dedicated グループロゴ](/images/engineering/infrastructure-platforms/gitlab-dedicated/dedicated_team_logo.png)
@@ -237,7 +237,7 @@ GitLab Dedicated は GitLab 内および広い市場で高い注目を集めて�
 - `GitLab Dedicated Product <> Eng Sync` - この通話は月曜日と木曜日に週次で開催され、PM と EM がアライメントを確保します
 - `Dedicated Managers Sync` - この通話は 2 週間ごとに Dedicated EM が同期してアライメントを確保します
 
-主催者は、主催者が不在の場合でもこれらの通話を録画できるように [Zoom で「Alternative Hosts」を有効化](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-recording/#how-to-allow-recording-when-the-host-is-not-present) することが責任です。
+主催者は、主催者が不在の場合でもこれらの通話を録画できるように [Zoom で「Alternative Hosts」を有効化](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording/#how-to-allow-recording-when-the-host-is-not-present) することが責任です。
 
 GitLab Dedicated の作業に関する個人間の即興 Zoom ミーティングは必要に応じて作成されます。
 これらのミーティングはプライベートストリーミング、または録画（1*）され、[GitLab Unfiltered プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KqC5FfUVPyndvLvTWifWbfB) にアップロードされることが期待されます。

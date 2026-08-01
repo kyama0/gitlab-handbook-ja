@@ -1,11 +1,11 @@
 ---
 title: "DevOps プラットフォームメッセージハウス"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/message-house/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:15:26+09:00"
+translator: codex
 stale: false
-lastmod: "2024-07-09T00:48:53+00:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 ## 概要
@@ -61,7 +61,7 @@ lastmod: "2024-07-09T00:48:53+00:00"
 
 | **[キーバリュー](/handbook/sales/command-of-the-message/#customer-value-drivers)** | バリュー 1: [運用効率の向上](/handbook/sales/command-of-the-message/#customer-value-drivers)  | バリュー 2: [より良い製品をより速く提供](/handbook/sales/command-of-the-message/#customer-value-drivers)  | バリュー 3: [セキュリティ & コンプライアンスリスクの低減](/handbook/sales/command-of-the-message/#customer-value-drivers) |
 |--------------|----------|----------|----------|
-| **約束（Promise）** | **効率**:<br>R&D と IT の生産性を最大化。 | **速度**:<br>市場投入までの時間を加速。 | **セキュリティ**:<br>妥協のないコンプライアンス。 |
+| **約束（Promise）** | **効率**：<br>R&D と IT の生産性を最大化。 | **速度**：<br>市場投入までの時間を加速。 | **セキュリティ**：<br>妥協のないコンプライアンス。 |
 | **顧客の痛み** |  組織はツールチェーン統合の保守、ツール固有のコンピテンシーのサイロ化、統合における「データギャップ」によるコンテキスト不足と手動回避策に時間とリソースを浪費しています。 | DIY ツールチェーンは意思決定を支えるべき重要な DevOps データへの可視性を制限します。また、信頼性が低く一貫性もないため、リスクを大幅に増やすことなく組織が大規模に意思決定を実行することを妨げます。 | セキュリティスキャンが遅すぎる、または全く実施されないため、開発者が脆弱性をソースまでさかのぼり、脆弱なコードとそれに依存する変更の両方を修復するという広範な再作業が必要となります。 |
 | **GitLab の約束** | 統合データソース上に構築された単一アプリケーションとして、GitLab は DIY ツールチェーンを構築・保守するためにリソースを費やすことなく、完全な DevOps ソリューションを提供します。何らかの理由で統合が必要な場合も、一度統合すればプラットフォーム全体にアクセスできます。 | 統合データソース上に構築された GitLab の単一アプリケーションは、ソフトウェアサプライチェーン全体のエンドツーエンドビューを提供し、完全な透明性を実現します。ツールチェーン統合の不在は、より一貫性があり予測可能で保守の少ない開発フローを生み出します。 | 組み込みセキュリティスキャナーにより、組織はコミットごとにすべてのコード行をスキャンでき、開発者はプッシュする前に脆弱性を特定・修復できます。 |
 | **ROI のテーマ** | 統合データソース上に構築された単一アプリケーションとして、GitLab は DIY ツールチェーンを構築・保守するためにリソースを費やすことなく、完全な DevOps ソリューションを提供します。何らかの理由で統合が必要な場合も、一度統合すればプラットフォーム全体にアクセスできます。 | 統合データソース上に構築された GitLab の単一アプリケーションは、ソフトウェアサプライチェーン全体のエンドツーエンドビューを提供し、完全な透明性を実現します。ツールチェーン統合の不在は、より一貫性があり予測可能で保守の少ない開発フローを生み出します。 | 組み込みセキュリティスキャナーにより、組織はコミットごとにすべてのコード行をスキャンでき、開発者はプッシュする前に脆弱性を特定・修復できます。 |
@@ -114,7 +114,7 @@ DevOps を始めたばかりの SMB はおそらくすでに複数ツールの�
 
 ### SMB
 
-|   ユーザー: [Delaney - 開発チームリード](/handbook/product/personas/#delaney-development-team-lead) |   ユーザー: [Devon - DevOps エンジニア](/handbook/product/personas/) |   バイヤー: CTO<code>&ast;</code> |  バイヤー: CIO<code>&ast;</code>  |
+|   ユーザー: [Delaney - 開発チームリード](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead) |   ユーザー: [Devon - DevOps エンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) |   バイヤー: CTO<code>&ast;</code> |  バイヤー: CIO<code>&ast;</code>  |
 |--- |--- |--- |--- |
 |   コミット時に即座にコードの品質、パフォーマンス、セキュリティのフィードバックを受け取れる。チーム間でシームレスに協業できる。 |   カスタム統合を構築・サポートする必要なく成長できる。 |   単一システムで協業し、コンテキストスイッチを最小化し、開発者の生産性と集中力を高める。 |   カスタム統合を構築・サポートせずに成長できる。単一システムをスケール・管理する。 |
 
@@ -124,7 +124,7 @@ DevOps を始めたばかりの SMB はおそらくすでに複数ツールの�
 
 ### ミッドマーケット
 
-|   ユーザー: [Delaney - 開発チームリード](/handbook/product/personas/#delaney-development-team-lead) |   ユーザー: [Devon - DevOps エンジニア](/handbook/product/personas/) |   バイヤー: [Erin - アプリケーション開発エグゼクティブ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#erin---the-application-development-executive-vp-etc) から CTO<code>&ast;</code> までの幅 |  バイヤー: [Kennedy - インフラエンジニアリングディレクター](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#kennedy---the-infrastructure-engineering-director) から CIO<code>&ast;</code> までの幅  |
+|   ユーザー: [Delaney - 開発チームリード](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead) |   ユーザー: [Devon - DevOps エンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) |   バイヤー: [Erin - アプリケーション開発エグゼクティブ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#erin---the-application-development-executive-vp-etc) から CTO<code>&ast;</code> までの幅 |  バイヤー: [Kennedy - インフラエンジニアリングディレクター](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#kennedy---the-infrastructure-engineering-director) から CIO<code>&ast;</code> までの幅  |
 |--- |--- |--- |--- |
 |   コミット時に即座にコードの品質、パフォーマンス、セキュリティのフィードバックを受け取れる。チーム間でシームレスに協業できる。 |   信頼性を高め、その場しのぎでチームベースの統合を排除する。 |  単一システムで協業し、コンテキストスイッチと待ち時間を最小化し、生産性のブロッカーを特定・除去し、生産性が高く集中した開発者でより多くの価値をより速く提供する。  |   カスタム統合を排除して、成長しながら信頼性とパフォーマンスを高める。単一システムをスケール・管理する。 |
 
@@ -134,6 +134,6 @@ DevOps を始めたばかりの SMB はおそらくすでに複数ツールの�
 
 <div class="panel-body">
 
-|   ユーザー: [Delaney - 開発チームリード](/handbook/product/personas/#delaney-development-team-lead) |   ユーザー: [Devon - DevOps エンジニア](/handbook/product/personas/) |   バイヤー: [Erin - アプリケーション開発エグゼクティブ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#erin---the-application-development-executive-vp-etc) |  バイヤー: [Kennedy - インフラエンジニアリングディレクター](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#kennedy---the-infrastructure-engineering-director)  |
+|   ユーザー: [Delaney - 開発チームリード](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead) |   ユーザー: [Devon - DevOps エンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) |   バイヤー: [Erin - アプリケーション開発エグゼクティブ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#erin---the-application-development-executive-vp-etc) |  バイヤー: [Kennedy - インフラエンジニアリングディレクター](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#kennedy---the-infrastructure-engineering-director)  |
 |--- |--- |--- |--- |
 |   コミット時に即座にコードの品質、パフォーマンス、セキュリティのフィードバックを受け取れる。チーム間でシームレスに協業できる。 |   信頼性を高め、その場しのぎでチームベースの統合を排除する。 |   単一システムで協業し、コンテキストスイッチと待ち時間を最小化し、生産性のブロッカーを特定・除去し、生産性が高く集中した開発者でより多くの価値をより速く提供する。 |   カスタム統合を排除して、成長しながら信頼性とパフォーマンスを高める。単一システムをスケール・管理する。 |

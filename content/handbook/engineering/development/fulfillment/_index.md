@@ -2,11 +2,11 @@
 title: Fulfillment サブ部門
 description: "Fulfillment サブ部門は、GitLab DevOps プラットフォームを支えるユーザー購入プロセスに関わるシステム間のインフラを担う、Billing・Subscription Management・Fulfillment Platform・Provision・Utilization の各開発チームで構成されています。"
 upstream_path: /handbook/engineering/development/fulfillment/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:59:28+09:00"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:19:21+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T13:03:25-03:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 - [方針](/handbook/product/groups/fulfillment/direction/fulfillment_section/)
@@ -433,7 +433,7 @@ Fulfillment エンジニアリングのエンジニアリングマネージャ�
 - IT Helpdesk
 - Support チーム
 
-不確かな場合は、別の [アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/) を通じて簡単に復元できるため、アクセスを拒否する側に立ってください。
+不確かな場合は、別の [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/) を通じて簡単に復元できるため、アクセスを拒否する側に立ってください。
 
 ### デプロイメント
 
@@ -524,9 +524,9 @@ Fulfillment はインシデント対応のために [Tier 2 SME オンコール�
 
 - インシデントまたは停止の間、Engineer on Call (EOC) は incident.io を通じて Fulfillment Tier 2 SME オンコールローテーションにエスカレートできます
 - Tier 2 SME ローテーションは [定義されたエスカレーションパス](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/) に従います:
-  - **レベル 1**: スケジュールローテーションに基づく現在の SME オンコール (EMEA、AMER、または APAC)
-  - **レベル 2**: レベル 1 が 15 分以内に確認応答しない場合、エスカレーションはラウンドロビンで全チームメンバーに進行
-  - **レベル 3**: [James Lopez](https://gitlab.com/jameslopez) へのさらなるエスカレーション
+  - **レベル 1**： スケジュールローテーションに基づく現在の SME オンコール (EMEA、AMER、または APAC)
+  - **レベル 2**： レベル 1 が 15 分以内に確認応答しない場合、エスカレーションはラウンドロビンで全チームメンバーに進行
+  - **レベル 3**： [James Lopez](https://gitlab.com/jameslopez) へのさらなるエスカレーション
 
 **停止のための追加の自動通知:**
 

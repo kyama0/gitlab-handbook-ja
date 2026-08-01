@@ -1,11 +1,12 @@
 ---
 title: "エンタープライズデータ"
-description: "このページは現在構築中です。"
 upstream_path: "/handbook/eta/enterprise-data/"
-upstream_sha: "8aa1a9efd98433fb2296996366f1023b5675ea70"
-translated_at: "2026-04-29T00:00:00Z"
-translator: claude
+upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
+translated_at: "2026-07-31T06:50:17+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-12T17:03:36-05:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
-<link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
+title: "エンタープライズデータ"
+description: "Enterprise Data チームのハンドブックページ。"
+---

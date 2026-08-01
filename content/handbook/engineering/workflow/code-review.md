@@ -2,11 +2,11 @@
 title: コードレビューガイドライン
 description: "コードレビューはすべてのマージリクエストで必須です。コードレビューガイドラインに慣れ、それに従ってください。"
 upstream_path: "/handbook/engineering/workflow/code-review/"
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:59:28+09:00"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:13:25+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T09:40:42-03:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 概要
@@ -107,7 +107,7 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 
 ##### ネガティブフィードバックの管理
 
-**マネージャー／メンターがレビュアーはメンテナになる準備ができていないことを示すプライベートフィードバックを受け取った場合**:
+**マネージャー／メンターがレビュアーはメンテナになる準備ができていないことを示すプライベートフィードバックを受け取った場合**：
 
 1. マネージャー／メンターは提起された懸念をレビューし、マージリクエストをクローズするほど実質的かを判断するべきです。
 1. マネージャー／メンターは、レビュアーが取り組むべきフィードバックがあるとコメントしてマージリクエストをクローズしますが、フィードバックは機密のままにします。
@@ -553,7 +553,7 @@ CODEOWNERS @gitlab-org/development-leaders @gitlab-org/tw-leadership
 
 `CODEOWNERS` ファイルの Code Owner を更新する方法は 2 つあります:
 
-1. CODEOWNERS 変更を承認する能力をすでに持つグループのメンバーシップを、[標準のアクセスリクエストプロセス](/handbook/security/corporate/end-user-services/access-requests/access-requests/)で更新する。
+1. CODEOWNERS 変更を承認する能力をすでに持つグループのメンバーシップを、[標準のアクセスリクエストプロセス](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)で更新する。
 1. 関連する行を更新するためにマージリクエストを開く。既存の Code Owner がマージリクエストを承認する必要があります。可視性のためにセキュリティコンプライアンスチームメンバーにピングすることもお勧めします。
 
 `@gitlab-org/development-leaders` グループは、Engineering 内の開発部門の管理職トラックの Senior Manager 以上、および個人貢献者トラックの Distinguished Engineer 以上のチームメンバーで構成されます。

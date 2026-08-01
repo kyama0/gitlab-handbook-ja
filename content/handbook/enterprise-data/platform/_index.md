@@ -2,11 +2,11 @@
 title: "データチームプラットフォーム"
 description: "GitLabデータチームプラットフォーム"
 upstream_path: /handbook/enterprise-data/platform/
-upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
-translated_at: "2026-07-24T06:39:10+09:00"
+upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
+translated_at: "2026-07-31T07:45:00+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-23T12:08:18+00:00"
+lastmod: "2026-07-28T22:48:58+00:00"
 ---
 
 ## データプラットフォームのビジョン
@@ -739,6 +739,8 @@ Snowflakeのコンピュートリソースは「ウェアハウス」として�
 
 * Snowflakeのクエリタイムアウトは、`REPORTING` ウェアハウスに対して30分に設定されています。
 
+Permifrost の制限により、MONITOR 権限のみを付与することはできず、チームメンバーには結果として USE アクセスも付与されます。チームメンバーに `transforming_*` ウェアハウスの権限が付与される場合、それは Query Profile へのアクセス/監視目的に限られます。これらのウェアハウスをクエリの実行に使用してはいけません。
+
 ### データストレージ
 
 私たちは、`raw`、`prep`、`prod` の3つの主要なデータベースを使用しています。
@@ -1220,7 +1222,7 @@ S3 --> workato{{Workato recipe}} --> target[(Target)]
 
 dbtモデル（例: [`pump_smb_daily_case_automation`](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.pump_smb_daily_case_automation)）はSnowflakeでマテリアライズされます。[Data Pump Airflow DAG](https://airflow.gaprd.gke.gitlab.net/dags/data_pumps/grid) は、その後、結果をデータチームの [gitlab-com-snowflake-data-pump](https://us-east-1.console.aws.amazon.com/s3/buckets/gitlab-com-snowflake-data-pump?region=us-east-1&tab=objects) S3バケットに直接エクスポートします。そこで、Workato recipeがそれを取り上げ、ターゲットアプリケーションに配信します。
 
-**現在のスケジュール**:
+**現在のスケジュール**：
 
 > ⚠️ このプロセス全体は固定時間スケジュールで時間トリガーされており、データレイテンシが（より）高くなる可能性があることに注意してください。dbt DAGの完了に近いAirflow Exportsをスケジュールしてレイテンシを減らす [follow-up issue](https://gitlab.com/gitlab-data/analytics/-/issues/26579) があります。
 

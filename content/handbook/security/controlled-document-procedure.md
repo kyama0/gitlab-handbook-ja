@@ -6,7 +6,7 @@ upstream_path: /handbook/security/controlled-document-procedure/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 lastmod: "2026-07-26T22:43:19-07:00"
 translated_at: "2026-07-30T07:12:47+09:00"
-translator: claude
+translator: codex
 stale: false
 ---
 
@@ -92,7 +92,7 @@ GitLab の誰もが、管理文書の作成や変更提案のためにマージ�
 
 現在の管理文書の正確なリストは[こちら](https://codeowners-report-schedule-gitlab-com-gl-securit-4422acedb936dd.gitlab.io/) で確認できます。
 
-## 例外
+## 例外 {#exceptions}
 
 管理文書に対する例外は、監査可能な形式で管理文書承認者によって追跡・承認される必要があります。例外プロセスは各文書で定義されている必要があります。
 

@@ -2,11 +2,11 @@
 title: "Logging ワーキンググループ"
 description: "GitLab Logging ワーキンググループには複数のビジネス上の目的があります。このページでご確認ください。"
 upstream_path: "/handbook/company/working-groups/logging/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
-translator: "claude"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:50:51+09:00"
+translator: codex
 stale: false
-lastmod: "2025-10-03T14:17:43-06:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 属性
@@ -43,8 +43,6 @@ lastmod: "2025-10-03T14:17:43-06:00"
 | ワーキンググループの役割  | 担当者           | 役職                                  |
 |---------------------|------------------|----------------------------------------|
 | ファシリテーター     | Harjeet Sharma | Security Engineer, SIRT |
-| メンバー              | Jeff Martin      | Senior IT Systems Engineer |
-| メンバー              | Steve Manzuik | Senior Manager, Threat Management |
 | メンバー              |Byron Boots |Senior Security Compliance Engineer  |
 | メンバー              | Kyle Smith | Senior Security Assurance Engineer |
 | メンバー              | Paulo Martins| Infrastructure Security Engineer |

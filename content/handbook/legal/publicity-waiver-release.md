@@ -2,11 +2,11 @@
 title: "パブリシティ免責・リリースのガイドラインとプロセス"
 description: "パブリシティ免責・リリース契約の使用に関するガイドラインとプロセス"
 upstream_path: "/handbook/legal/publicity-waiver-release/"
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-29T10:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:39:44+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-07T23:50:04+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## パブリシティ免責・リリース契約は必要ですか？
@@ -61,7 +61,7 @@ click D "/handbook/legal/publicity-waiver-release/#team-member-general-publicity
 
 
 {{% details summary="一般免責・リリースを使用する DRI 向けの手順を展開する" %}}
-1. DocuSign へのアクセス権がない場合は、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/access-requests/)を開いて取得します。
+1. DocuSign へのアクセス権がない場合は、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)を開いて取得します。
 1. DocuSign へのアクセス権を取得したら、[一般免責・リリーステンプレート](https://app.docusign.com/templates/details/0716de66-3f1e-4969-b305-4562b9af665d)にアクセスします。
 1. `USE` をクリックします。
 1. `Recipients` ページで:

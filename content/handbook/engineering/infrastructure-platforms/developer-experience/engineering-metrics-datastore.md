@@ -2,11 +2,11 @@
 title: "エンジニアリングメトリクスデータストア"
 description: "Developer Experience セクションが使用するエンジニアリングメトリクスデータストアの概要。CI 実行、テスト実行、コードカバレッジ、パフォーマンステスト、Issue、マージリクエストのデータを網羅しています"
 upstream_path: /handbook/engineering/infrastructure-platforms/developer-experience/engineering-metrics-datastore/
-upstream_sha: 6a459a3ca969603754a3b5133342edb804d3012c
-translated_at: "2026-04-28T17:23:43Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:13:25+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-10T10:27:50+02:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## インスタンス
@@ -32,4 +32,4 @@ Developer Experience セクションは、大規模なエンジニアリング�
 
 ## アクセス
 
-ClickHouse インスタンスは内部向けであり、GitLab チームメンバーがアクセスできます。アクセスをリクエストするには、[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/)を提出してください。
+ClickHouse インスタンスは内部向けであり、GitLab チームメンバーがアクセスできます。アクセスをリクエストするには、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)を提出してください。

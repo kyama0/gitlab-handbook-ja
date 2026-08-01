@@ -1,11 +1,11 @@
 ---
 title: "補助ソリューションリソース: アジャイル"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/agile/
-upstream_sha: d0a19ab78fc5e0d322868c8f35ab8f81e761bd21
-translated_at: "2026-04-30T12:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:22:17+09:00"
+translator: codex
 stale: false
-lastmod: "2025-03-05T11:51:11-08:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 #### 連絡先
@@ -41,7 +41,7 @@ lastmod: "2025-03-05T11:51:11-08:00"
 
 ### GitLab
 
-[GitLab は、参入してわずか 2 年でビジョナリーから](https://about.gitlab.com/blog/2019/05/22/gitlab-identified-by-gartner-as-eapt-visionary/)、[2021 年の Gartner Magic Quadrant for Enterprise Agile Planning Tools で「リーダー」に選ばれました](https://about.gitlab.com/press/releases/2021-04-27-gitlab-positioned-leader-gartner-magic-quadrant-enterprise-agile-planning-tools/)。比較的最近この分野に参入したベンダーです。
+GitLab は、この領域への比較的新しい参入者でありながら、[2021 年の Gartner Magic Quadrant for Enterprise Agile Planning Tools で「リーダー」に選ばれました](https://about.gitlab.com/press/releases/2021-04-27-gitlab-positioned-leader-gartner-magic-quadrant-enterprise-agile-planning-tools/)。これは、わずか 2 年前に[ビジョナリーとしてレポートに初登場](https://about.gitlab.com/blog/2019/05/22/gitlab-identified-by-gartner-as-eapt-visionary/)して以来のことです。
 
 *Gartner, "Magic Quadrant for Enterprise Agile Planning Tools," Bill Blosen, Mike West, Deacon D.K Wan, Akis Sklavounakis, Keith Mann, Wan Fui Chan, Hassan Ennaciri, April 20, 2021.*
 
@@ -138,14 +138,14 @@ GitLab を Agile Planning に使用するユーザーペルソナとその主要
 
 #### Parker the Product Manager
 
-[Parker the Product Manager](/handbook/product/personas/#parker-product-manager)
+[Parker the Product Manager](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#parker-product-manager)
 
 - PM は、機能開発とプロジェクトの成功、および全般的な作業負荷を調整します。コミットとレビューアプリを通じて進捗を監視し、それらの変更を検証してフィードバックを提供する能力は、彼らの成功の鍵です。
 - 時間とともに、変更により、PM がプロダクト開発と他のプロジェクトの進捗を評価するための貴重な統計的洞察が生成されます。
 
 #### Delaney the Development Team Lead
 
-[Delaney the Development Team Lead](/handbook/product/personas/#delaney-development-team-lead)
+[Delaney the Development Team Lead](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead)
 
 - PM と同様に、チームリードは、今後のタスクを割り当て、目標を時間通りに達成するために、チームのキャパシティを理解する必要があります。
 

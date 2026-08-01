@@ -2,10 +2,10 @@
 title: "Release & Deploy グループ"
 description: "Release & Deploy グループは、GitLab Engineering が GitLab.com、GitLab Dedicated、および Self-Managed のお客様に対して、安全でスケーラブルかつ効率的な方法で機能を届けられるよう支援します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/"
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-lastmod: 2026-06-26T10:28:17-06:00
-translated_at: "2026-07-02T06:06:16+09:00"
-translator: "claude"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+lastmod: "2026-07-27T18:22:03+02:00"
+translated_at: "2026-07-31T08:13:25+09:00"
+translator: "codex"
 stale: false
 ---
 
@@ -110,7 +110,6 @@ GitLab Duo/AI を私たちのワークフローに組み込む方法のアイデ
 
 | 名前 | 役割 |
 |------|------|
-| Chris Sanders  | Director, Infrastructure - Delivery Enablement |
 | Michele Bursi  | Senior Engineering Manager, GitLab Delivery    |
 | Martin Brümmer | Senior Product Manager, GitLab Delivery        |
 | Dave Smith     | Engineering Manager - Release & Deploy         |

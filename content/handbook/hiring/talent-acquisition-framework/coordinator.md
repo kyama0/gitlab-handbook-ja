@@ -2,11 +2,11 @@
 title: "Candidate Experience Specialistの責務"
 description: "このページでは、Candidate Experience チームが担当するプロセスとシステムの概要を説明します。"
 upstream_path: "/handbook/hiring/talent-acquisition-framework/coordinator/"
-upstream_sha: "fe88192cad67a795a237396e552566cb08c118b9"
-translated_at: "2026-04-29T08:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:39:44+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-12T10:48:57-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 CESチームは、[GitLab Service Desk](https://docs.gitlab.com/ee/user/project/service_desk/) と ModernLoop を活用して、CESチームへのすべての受信リクエストを追跡します。GitLab チームメンバーで Candidate Experience チームへのリクエストや質問がある場合は、`ces@gitlab.com` にメールを送ると、CES Service Desk 内に自動的に Issue が作成されます。どの CES チームメンバーがあなたのリクエストを担当するかについては、[アライメントページ](/handbook/hiring/)をご覧ください。私たちのチームはインタビューのスケジューリングに ModernLoop を活用しており、既存のカレンダーや ATS とシームレスに連携しています。
@@ -41,7 +41,7 @@ CESチームは、[GitLab Service Desk](https://docs.gitlab.com/ee/user/project/
    1. 「Value」の下で目的のリストの適切なラベルを選択します
    1. ボード上のリストの順序を変更するには、リストをクリックしてドラッグします
 
-### チームインタビュー
+### チームインタビュー {#team-interviews}
 
 - 候補者がチームインタビューの準備ができると、採用担当者は ModernLoop で候補者の都合のいい時間を確認するリクエストを送ります。可用性リクエストが送られると、CES のスケジューリングタスクが作成されます。
   - 採用チームが定めたロールの短いタイムラインがある場合は、インタビューをスケジュールする必要がある期限について CES に事前に知らせる必要があります。インタビュアーの準備時間を確保するため、インタビューは最低[48時間](/handbook/hiring/interviewing/)後にスケジュールすることをデフォルトとします。
@@ -400,7 +400,7 @@ GitLab はリファレンスを取得し、雇用確認とともに犯罪[記録
 1. CES は Greenhouse で候補者を「Hired」にします：*プロンプトが表示されたら、採用要件をクローズするオプションを選択してください。* 新入社員の Workday プロフィールが自動的に生成されます。
 1. Candidate Experience Specialist は Greenhouse から IT Ops、ハイリングマネージャー、採用担当者を CC にして新しいチームメンバーにウェルカムメールを送ります。候補者の場所とラップトップを自分で調達する必要があるかどうかに基づいて適切なウェルカムメールを送ります。
 
-   - このメールには[ラップトップ注文プロセス](/handbook/security/corporate/end-user-services/laptop-management/laptop-ordering//)に関する手順が含まれています。
+   - このメールには[ラップトップ注文プロセス](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering//)に関する手順が含まれています。
 
 1. ウェルカムメールを送った後に開始日が変更された場合は、[こちら](/handbook/hiring/)の必要な手順を参照してください。
 1. 開始日とオンボーディング日の整合の例外: 新しいチームメンバーが法的な理由（雇用の断絶を防ぐため）で特定の開始日を必要とするが、その特定の日（公共の祝日、Family & Friends Day などのため）にオンボーディングが制限されている場合、Candidate Experience Specialist はプライベート Slack チャンネル `people-connect_ces` で People Connect チームに通知できます。コントラクト、Greenhouse、Workday は実際のオンボーディング日に関わらず、同じ開始日を反映する必要があります。
@@ -417,7 +417,7 @@ People Connect チームは、エンティティ/PEO ベースのチームメン
 
 **グローバル祝日の確認** - CES は提案された開始日が新入社員の場所での祝日と重なるかどうかを確認する必要があります。新しいチームメンバーがオンボーディング初日にサポート/オンボーディングバディがいることを確認するために採用マネージャーと確認することは採用担当者の責任です。
 
-**緊急採用の開始日例外メール** - このメールは、提案された開始日変更に関する必要な説明とビジネス上の正当な理由を求めます。People Connect チームはこれをケースバイケースでレビューします。緊急採用とは、HM が以前に合意した開始日より早い開始日を要求し、新しい開始日が候補者オンボーディングの標準 10 営業日の SLA 期間を遵守していない状況を指します。**重要**: People Connect チームへの最低 5 営業日の通知なしには例外は認められません。
+**緊急採用の開始日例外メール** - このメールは、提案された開始日変更に関する必要な説明とビジネス上の正当な理由を求めます。People Connect チームはこれをケースバイケースでレビューします。緊急採用とは、HM が以前に合意した開始日より早い開始日を要求し、新しい開始日が候補者オンボーディングの標準 10 営業日の SLA 期間を遵守していない状況を指します。**重要**： People Connect チームへの最低 5 営業日の通知なしには例外は認められません。
 
 緊急採用の主な理由は、重要なスキルギャップ/新しいビジネスチャンス、エクイティベスティンググラントオプション、予期しない退職やバックフィルです。CES はこのメールを候補者の Greenhouse プロフィールの「Email the team」オプションからアクセスできます。
 
@@ -600,3 +600,676 @@ People Connect チームは、エンティティ/PEO ベースのチームメン
    - 保存します
    - Greenhouse の「Make a Note」セクションに古い開始日と新しい開始日を記載し、オファーを承認した FP&A の担当者（通常は 2 番目の承認者）をタグ付けします
    - 保存します
+
+### フランスまたはスペインのコントラクト署名後に開始日を更新する方法
+
+   通常の開始日変更[プロセス](/handbook/hiring/)に従った後、以下の手順を実行してください：
+
+   1. この開始日修正[レター](https://docs.google.com/document/d/1qpxTi6nPrT4KXDi87tDAWm49D9NZNvTS/edit)のコピーを作成します
+   1. ハイライトされた詳細をすべて編集し、ドキュメントをデスクトップに保存します
+   1. DocuSign で新しいエンベロープを作成し、署名順序を次のように設定します：
+      - 1 - GitLab France または Spain Signatory（署名）
+      - 2 - 候補者（署名）
+      - 3 - Alessio Spaggiari（コピー）
+   1. DocuSign のメール本文で TextExpander の「StartdateFS」を使用します
+   1. コントラクト用 Slack チャンネル `#contracts-to-sign` で署名者にレターへの署名を依頼します
+   1. ドキュメントが署名されたら、候補者の Workday プロフィールにアップロードします
+
+### 候補者が署名する前にコントラクトを無効にする方法
+
+まれに、候補者がコントラクトに署名する前にオファーを取り消すことがあります。Recruiter、Hiring Manager、People Business Partner、VP of Talent Acquisition、Contract Employment Counsel と連携し、一貫したコミュニケーションを確保してください。Talent Acquisition チームが候補者に口頭およびメールで通知した後、以下の手順を実行します：
+
+1. メールが Greenhouse の Activity Feed にエクスポートされていることを確認します。
+1. メールで送信したものと同じ内容を使用して、DocuSign でコントラクトを無効にします。
+1. Greenhouse で候補者を不採用にします。必ず「Reject and Don't Send Email」を選択してください。
+
+### 候補者がオファーを辞退し、システム上で採用済みとされていない場合にコントラクトを無効にする方法
+
+候補者が Talent Acquisition チームまたは CES に口頭かメールでオファー辞退を伝えた場合は、Recruiter がコントラクトを無効にしてよいと確認した後、以下の手順を実行します：
+
+1. DocuSign ポータルに移動し、「 waiting for others」タブで、コントラクトを無効にする候補者の名前をクリックします。
+1. 「More」タブで「Void」をクリックします。「Candidate declined offer」など、コントラクトを無効にする理由を入力し、Void をクリックします。
+1. 候補者の Greenhouse プロフィールに移動し、Recruiter を CC に入れてコントラクトを無効にしたことをメモします。まだ実施していない場合、これにより Recruiter は GH で候補者を不採用にするよう促されます。
+
+### 採用済みとされた後にコントラクトを再送する方法
+
+システム上で採用済みとされた後に、候補者へコントラクトを再送しなければならない場合があります。その場合は、以下の手順を実行します：
+
+1. req がすでにクローズされている場合は、Greenhouse プロフィールで Enablement チームをタグ付けし、状況と、コントラクトを再送するために req を再度オープンする必要があることを説明します。
+1. Greenhouse で候補者の採用を取り消します。（ポジションが Closed の場合、Enablement がこの手順を支援する必要があります）。
+1. 正しいコントラクトを再送し、そのための標準手順に従います。
+1. 返送されたコントラクトを受け取ったら、候補者を Greenhouse で採用済みとする**前に**、Slack チャンネル `#peopleop-alerts-private` で People Connect チームに連絡し、変更内容を正確に説明します。更新された詳細は Workday に反映されないため、People Connect Team が手動で修正する必要があります。
+1. 新しいコントラクトを候補者の Workday プロフィールにアップロードします。
+1. People Connect Team に連絡し、コントラクトが更新され、Workday の詳細を修正できることを伝えます。
+
+Talent Acquisition Enablement の場合：
+
+1. CES チームから通知を受けたら、Job Approval Chain をコピーして Approval Details Notes セクションに追加します。承認者の名前、承認日、求人を再度オープンする理由を含めます。このメモで Finance Business Partner、CES、Recruiter をタグ付けします。
+1. Approvals ページで「Edit Job & Openings」を選択します
+1. 再度オープンする必要がある Opening を複製します。
+1. Job Approval セクションで承認をバイパスし、Job Status を Draft から Open に変更します。
+1. req がオープンになったら CES に知らせます。
+1. CES が修正版のコントラクトをアップロードしたら、オファーの主要フィールドが同じままか確認します。同じであれば、オファー承認をバイパスし、完了後に CES に知らせます。
+1. CES チームが候補者を Greenhouse で採用済みとしたら、複製した Opening をクローズして変更を保存します。
+
+### PEO のコントラクトプロセスに遅延が生じた場合に候補者へ状況を知らせる方法
+
+CES チームが発行する PEO New Hire Document を候補者が受け取ってから、PEO の正式なコントラクトを受け取るまでに遅れが生じることがあります。この遅れにより、候補者は不安な時間を過ごすことになります。PEO SLA を超える遅延について、PEO から完全なコントラクトをまだ受け取っていない全員に知らせる必要があります。
+
+コントラクトプロセスを開始した Candidate Experience Specialist は、コントラクトが送信されるまで 24 〜 48 時間ごとに PEO をフォローアップし、フォローアップした日付を [PEO Tracker](https://docs.google.com/spreadsheets/d/1gSOVTJ1Yv-YsSaliJwKVf-1H0vBZXxb5NWFiqCwT-uo/edit#gid=0) に記録します。コミュニケーションが Activity Feed に記録されるよう、Greenhouse から送信してください。PEO SLA の範囲外で候補者にコントラクトが届くことになる特別な事情がある場合、CES はそれも PEO Tracker に記録します。Recruiter は、候補者がコントラクトを受け取るまで 24 〜 48 時間ごとに進捗状況を候補者へ知らせます。遅延を説明する簡単なメッセージだけで十分です。Candidate Experience Specialist または Recruiter は、Greenhouse のリマインダー機能を利用してこれらの更新を管理し、メールを Greenhouse に記録することが推奨されます。
+
+## 修正コントラクト
+
+コントラクトの修正または変更は、チームメンバーが勤務を開始していない場合は Candidate Experience Specialist が、開始している場合は People Connect Team のメンバーが処理します。
+
+### GitLab で勤務を開始する前の修正
+
+修正が必要で、以前のコントラクトが一度も有効になっていない場合、Candidate Experience Specialist は次のように対応します：
+
+- Slack チャンネル `people-exp_ces` で People Connect に、以前のコントラクトを Workday から削除するよう依頼します。
+- 「Contracts and Changes」ドキュメントカテゴリを使用して、チームメンバーの Workday プロフィールの Documents セクションに更新済みのコントラクトをアップロードします。
+
+*注：Workday のさまざまなフィールドを更新する必要があるため、すべての変更を People Connect Team のメンバーに知らせることが不可欠です。*
+
+### 転居を予定している新入社員のコントラクト修正
+
+1. Candidate Experience Specialist は、新入社員の開始日後の転居に伴う報酬変更条件を明確に記した文言があることを確認し、Total Rewards チームが両方の報酬を承認済みであることを確認します。
+1. Total Rewards の承認について確信がない場合、CES は Approval Notes で Total Rewards チームに連絡します。
+    - 候補者の GH プロフィールの一番下に移動します
+    - 「Approval Notes」を確認します
+    - 「Leave a Note」をクリックします
+    - 承認した Total Rewards チームメンバーをメモでタグ付けし、両方の報酬額が承認されていることを確認します
+    - Recruiter を CC としてタグ付けします
+1. Total Rewards が両方をレビューおよび承認済みであることを確認したら、適切なコントラクトを生成します
+1. コントラクトの Word 版をダウンロードし、編集用に Google Drive へアップロードします。ドキュメントをクリックして開かず、書式に影響しないよう Drive へ転送するだけにします。
+    - Google Drive に移動します
+    - 左側のツールバーの上部にある「New」をクリックします
+    - 「File Upload」を選択します
+    - コントラクトを選択します
+1. ドキュメントの上部に行を追加し、転居の報酬カテゴリを記載します
+    - ID から CA に転居する場合の例：
+        - CA の報酬：$ USD
+        - ID の報酬：$ USD
+1. Section 10 Location の文言を更新します：
+    - 変更前
+        - 10. 勤務地。GitLab でのあなたの雇用は、永住地が ID 州 Boise 近郊であることを条件とします。永住地をその場所から変更する場合、その変更に先立って Company に通知する必要があります。永住地の変更により、報酬や福利厚生が変更される場合があり、状況によっては雇用が終了する場合があります。
+    - 変更後
+        - 10. 勤務地。GitLab でのあなたの雇用は、永住地が ID 州 Boise 近郊であることを条件とし、あなたは 2021 年 1 月 1 日頃に CA 州 San Francisco へ転居する予定であることを開示しています。永住地をこれらの場所から変更する場合、その変更に先立って Company に通知する必要があります。永住地の変更により、報酬や福利厚生が変更される場合があり、状況によっては雇用が終了する場合があります。
+1. 署名トークンが DocuSign でテキストとして表示されないよう、ドキュメントからすべて削除します。
+1. コントラクトを保存し、PDF としてダウンロードします
+1. GH で「Upload Replacement」を選択してアップロードします
+1. 通常どおりコントラクトをステージングします
+1. 署名順序を変更した後、トークンを再度追加します
+1. 送信します
+1. コントラクトが完了したら、People Connect にメッセージを送り、転居が記録されていることを確認します。
+
+### GitLab で勤務を開始した後の修正
+
+請負業者が、氏名変更または会社設立を理由にコントラクトの変更を依頼する場合（例：最近会社を設立し、個人としてではなく会社を通じて GitLab に請求したい場合）
+
+- People Connect Team のメンバーは、「Contracts and Changes」ドキュメントカテゴリを使用して、チームメンバーの Workday プロフィールの Documents セクションに依頼された変更を記録します。
+- People Connect Team のメンバーは、社内ハンドブックの [Employment Contracts](https://internal.gitlab.com/handbook/people-group/people-operations/people-connect/employment_contracts/) ページにある適切なテンプレートを使用して、新しいコントラクトを作成します。***編集する前に、必ずテンプレートのコピーを作成してください。***
+
+*重要：雇用コントラクトの日付を遡及させることはできません。チームメンバーが請求目的でコントラクトの日付を遡及させるよう依頼した場合、コントラクトに次の補遺を追加します：「請負業者は `contractor start date` の開始日以降 GitLab に支払いを請求していないため、GitLab は請負業者の基本報酬に従い、この期間について請負業者に支払います」。新しいコントラクトの開始日には、必ず署名のためにコントラクトをステージングした日付を反映します。*
+
+- People Connect Team のメンバーは、チームメンバーと Director of People Operations の両方が署名できるよう、DocuSign でコントラクトをステージングします。
+- 両当事者が署名したら、「Contracts and Changes」ドキュメントカテゴリを使用して、チームメンバーの Workday プロフィールの Documents セクションにコントラクトをアップロードします。
+
+### コントラクト署名後に候補者の採用を取り消す方法
+
+候補者がシステム上で採用済みとされた後に何らかの理由でオファーを辞退した場合、その情報を受け取った人は、Greenhouse プロフィールで `@ces` がタグ付けされ、候補者が GitLab で勤務を開始しないことを CES が把握していることを確認します。以下の手順は、その人が GitLab で勤務しないことを前提としている点に注意してください。採用済みとされた後にオファーを修正するだけの場合は、上記の再送プロセスを参照してください。
+
+候補者が Greenhouse で採用済みとなり Workday にエクスポートされている場合、チームは以下の手順を実行します：
+
+1. req がまだオープンであれば、候補者のオファーにある「unhire」ボタンをクリックして Greenhouse で採用を取り消します。req がクローズされている場合は、Enablement に採用の取り消しを依頼します。
+1. Recruiter に Greenhouse で候補者を不採用にするよう依頼します。メモに理由を追加し、候補者から送信されたメールを追加しても構いません。「reject and don't send email」をクリックします。
+1. Greenhouse で予定されているメールをすべてキャンセルします。
+1. PEO を通じて採用した場合は、この変更を PEO の連絡担当者に直ちに、できればオンボーディング開始前に知らせます。外部給与計算を利用する国の場合は、給与計算会社にも知らせる必要があります。
+1. チャンネル #people-ops-ces で IT、People Connect、Sr. Background Check Specialist にメッセージを送り、ノート PC の注文、オンボーディング Issue、バックグラウンドチェックのキャンセル、および Workday からの削除を依頼します。
+1. Recruiter がまだ Greenhouse のメモで FP&A 承認者をタグ付けしていない場合は、候補者が辞退したことを知らせるため、その承認者をタグ付けしてください。
+1. Recruiter がまだ実施していない場合は、候補者のプロフィールに `Rescinded Acceptance` という候補者タグを追加します。
+
+**Enablement の手順：**
+
+1. Approvals タブにメモを作成し、最後に求人を承認した各 Job Approver をタグ付けします。承認日を記録し、対応は不要であること、ヘッドカウントを追加するものではないこと、すでに承認済みのため代理で再承認することを伝えます。
+1. Approvals タブから、すべての空の必須フィールドに「TEMP」を入力して Draft の Opening をオープンします。
+1. Total Rewards を代理して承認します（Job Approval のステップ 1）。
+1. 候補者のプロフィールで採用を取り消します。
+1. Approvals ページから一時的な Opening を削除します。これは 2 段階で行います。まず、Opening をオープンしたときと同じプロセスを使用してクローズし、保存してから再度戻り、Opening の記録を削除します。この段階のポップアップに影響する Greenhouse のバグがあるため、確認メッセージが表示されない場合はブラウザのサイズを変更する必要があります。
+1. 当初の承認者を代理して最終承認を行います。
+1. 次の手順を担当する関係者に、採用取り消しの状況を知らせます。
+
+## ジョブ変更レター
+
+チームメンバーが Greenhouse を通じて新しいポジションに応募して採用された場合、DocuSign を使用して、新しいコントラクトの代わりにジョブ変更レターを作成します。Candidate Experience Specialist がレターを作成します。このドキュメントは Director, Total Rewards、Sr. Director, Global People Operations、または Chief People Officer とチームメンバーが DocuSign を通じて署名します。Greenhouse の「Offer through DocuSign - Job Change Letter」テンプレートを使用し、処理のために peopleops@gitlab.com チームを CC に入れます。
+
+ジョブ変更レターの発効日は、月の 1 日または 16 日にします。Sales または Sales Development のチームメンバーの場合は、月の 1 日のみです。これらの発効日が営業日である必要はなく、給与計算の目的で遵守する必要があります。
+チームメンバーが Federal, LLC. エンティティから他のエンティティに異動する場合、**または** Federal, LLC. ではないエンティティから Federal, LLC. エンティティに異動する場合は、JCL を使用できないことに注意してください。このエンティティには税務上の影響があるため、そのような場合は新しいコントラクトを発行する**必要があります**。
+
+チームメンバーが報酬の変更を伴わない横方向の異動をする場合、開始日は月のどの日でも構いません。
+
+PEO のジョブ変更レターを生成する場合、手順は以下と同じです。ただし、RSU を含まない JCL テンプレートを選択し、RSU の詳細を DocuSign メールで送信します。
+
+Candidate Experience Specialist は、採用済みとする前に追加の候補者プロフィールを統合する必要があります。プロフィールを統合しないと、重複が作成され、Workday への Employment Bot の同期に影響します。署名済みのレターは Total Rewards Analyst が Workday の Documents タブにある Contracts and Changes フォルダへアップロードします。
+
+内部異動が行われ、その JCL の開始日が修正された場合は、Slack の `#people-connect_ces` チャンネルで新しい開始日を People Connect チームに必ず知らせてください。
+
+チームメンバーが Greenhouse ではなく Workday を通じて昇進する場合、Total Rewards チームがハンドブックページに記載されたとおりに[ジョブ変更レター](/handbook/people-group/promotions-transfers/#job-change-letter)を作成します。
+
+CES：ジョブ変更レターの作成および送信方法について、以下の手順に従います。
+
+1. 開始日が月の 1 日または 16 日であることを確認します。Sales または Sales Development の場合、開始日は 1 日にします。これは給与計算のためであり、営業日である必要はありません。
+1. 署名者が適切なエンティティと一致していることを確認します。候補者が米国（Federal を含む）にいる場合、Morgan Wilkins が署名者になれます。候補者が PEO を通じて雇用される場合、Morgan Wilkins と Marissa Ferber が署名者になれます（このプロセスは変更される可能性があります）
+1. 次に、Generate をクリックします
+1. Greenhouse で Job Change Letter テンプレートを選択します：
+    - Job Change Letter - OTE/with RSU's
+    - Job Change Letter - No OTE/with RSU's
+    - Job Change Letter w/ OTE, no RSU's
+    - Job Change Letter, No OTE, No RSU's
+
+JCL はコントラクトと同様に扱う必要があります。RSU は米国向けのものにのみ記載し、その他すべての国では DocuSign メール本文にテキストを記載します。
+
+1. Send through DocuSign をクリックします
+1. DocuSign にリダイレクトされます。
+1. 画面左上で候補者の名前が表示されている箇所をクリックし、「Edit Recipients」をクリックします。受信者の順序を次のように変更します：
+    - #1 は Director, Total Rewards（署名が必要）
+    - #1 は Recruiter（コピーを受領）
+    - #1 Hiring Manager（コピーを受領）
+    - #2 候補者（署名が必要）
+    - #3 People Ops（コピーを受領）
+    - #3 Nitin Upadhyay と Julia Demina（コピーを受領）
+    - これにより、コントラクトは最初に GitLab の署名者へ署名のため送信され、同時に Recruiter へ CC として送信されます。署名後、記録更新のため People Experience に送信されます。
+1. 次に「Done」をクリックします。
+1. JCL が署名されたら、重複プロフィールが作成されないよう、採用済みとする前にプロフィールを統合してください
+
+## 請負業者からの転換
+
+請負業者からの転換とは、GitLab の請負業者が正規ポジションに移ることです。Recruiter は、候補者が請負業者からの転換プロセスを進めていることを CES パートナーに伝えます。求人に表示される「source」が Contractor Conversion になっていることを確認できます。CES のチームメンバーは通常のコントラクトと同じ手順に従いますが、注意すべき点がいくつかあります：
+
+1. **リファレンスチェックフォーム：** 候補者がリファレンスチェックフォームに記入済みであることを確認する必要があります。請負業者が正規ポジションへ移行する場合、これが必要であることを Recruiter に念押しする必要があるかもしれません。候補者はリファレンスを再度提供する必要はありませんが、社外での仕事と PIAA を開示する必要があります。
+1. **開始日：** 請負業者からの転換では、コントラクト終了日と新入社員の開始日の間に空白が生じないよう、開始日までの期間が短くなる場合があります（例：10 営業日未満での開始、または通常の開始日ではない日での開始の依頼）。
+1. **バックグラウンドチェック：** 新しいバックグラウンドチェックを開始する必要があるか、Slack チャンネル backgroundcheck-ces で Senior Background Check Specialist に確認してください。コントラクトと正規ポジションの間に空白がなければ、新しいバックグラウンドチェックを開始する必要がない場合があります。
+1. **採用済みにする：** Greenhouse で候補者を採用済みにした後、[peopleops-alerts](https://gitlab.enterprise.slack.com/archives/CLTBQ9XC7) Slack チャンネルで People Connect に、請負業者からの転換であることをコメントで知らせる必要があります。
+1. **ノート PC／IT：** すべての請負業者からの転換について、CES は候補者に新しいノート PC が必要かどうかを [people-connect_CES](https://gitlab.enterprise.slack.com/archives/GJT1K944Q) Slack チャンネルで IT Ops に確認する必要があります。
+    - 新しいノート PC が不要な場合、CES は候補者への Welcome メールから「Ordering your laptop」セクションを削除します。
+
+## 再雇用
+
+元チームメンバーを会社が再雇用する場合も、通常の面接プロセスと標準のオンボーディングを行います。コントラクトに署名したら、CES は統合するプロフィールが残っていないことと、プロフィール右側の候補者タグとして `Former Team Member` が選択されていることを確認します。Greenhouse アカウントには以前の採用記録が存在するはずです。
+
+再雇用が行われる場合は、#peopleops-alerts-private で People Connect に知らせてください。
+
+## オランダの GitLab チームメンバー向けプロセス
+
+この拠点では、一時コントラクト（tijdelijk contract）の期間は 12 ヶ月で、終了日があらかじめ決められています。一時コントラクトを期間満了時に終了するための解雇手続きは必要ありません。ただし、コントラクト延長については、実際のコントラクト終了日の遅くとも 1 ヶ月前（aanzegtermijn）までに通知する必要があります。
+
+オランダの雇用主が最初の一時コントラクトの満了時に 2 つ目の一時コントラクトを提示することは一般的ですが、保証されてはいません。オランダの雇用主として、これは GitLab の標準手順です。2015-07-01 以降、一時コントラクトで雇用主のもとで 2 年以上勤務した従業員は、雇用契約が継続する場合、無期限コントラクトを締結する権利があります。これは連鎖ルール（ketenregeling）と呼ばれます。
+
+新入社員のプロセスは次のとおりです：
+
+1. Recruiter が[採用プロセス](/handbook/hiring)に従ってオファーを提示します。
+1. 生年月日が入力されておらず、リファレンスチェックフォームにも見つからない場合、Candidate Experience Specialist は GreenHouse のメールテンプレート Contract Info Request - the Netherlands を使用して候補者へ送信できます。
+1. 月曜日が祝日である場合、または月曜日以外の日付が法的に必要な場合を除き、開始日が月曜日であることを確認します。
+1. Candidate Experience Specialist は DocuSign を通じて署名用のコントラクトをステージングし、Hiring Manager と HRSavvy グループのメールアドレスを CC に入れます。これにより、この拠点の給与計算プロバイダーは、私たちのオンボーディングより十分早くオンボーディングを開始できます。
+1. オランダでは、代わりに別のプロセス（Certificate of Good Conduct／VoGS）を行うため、犯罪歴のバックグラウンドチェックを実施しない点に注意してください。雇用確認と拡張されたグローバル制裁検索のみを含む Netherlands バックグラウンドチェックパッケージを選択してください。
+
+People Operation Specialist が[コントラクト更新](/handbook/people-group/contracts-probation-periods/#contract-renewals)を担当します。**最初の 12 ヶ月の GitLab BV Netherlands 一時コントラクトの終了時**のプロセスは、[Netherlands Renewal Process](/handbook/people-group/contracts-probation-periods/#netherlands-renewal-process) セクションに記載されています。このセクションは、ハンドブックの [Contracts, Probation Periods & PIAA](/handbook/people-group/contracts-probation-periods/) ページにあります。
+
+*GitLab IT BV のコントラクトは請負業者にのみ使用します。オランダのすべての**従業員**には GitLab BV のコントラクトを発行してください。*
+
+## オーストラリアまたはニュージーランドの GitLab チームメンバー向けプロセス
+
+GitLab はこの拠点にエンティティを保有しています。この拠点のチームメンバーは全員従業員です。
+月曜日が祝日である場合、または月曜日以外の日付が法的に必要な場合を除き、開始日が月曜日であることを常に確認します。
+
+## アイルランド、英国、またはシンガポールの GitLab チームメンバー向けプロセス
+
+GitLab はこの拠点にエンティティを保有しています。英国、アイルランド、シンガポールの給与計算は現在 Papaya を通じて処理されます。これらの国をまとめた更新済みの「Offer Through DocuSign」メールテンプレートがあります。
+Papaya は、これらの拠点のチームメンバーに給与計算についてフォローアップします。
+
+北アイルランドは英国に属するため、UK を含む住所を見つけた場合は処理を保留し、候補者がどこにいるか、別のコントラクトとバックグラウンドチェックが必要かを Google Maps で確認してください。
+
+## 韓国またはフランスの GitLab チームメンバー向けプロセス
+
+GitLab はシンガポール、韓国、フランスにエンティティを保有しています。この拠点のチームメンバーは全員従業員ですが、給与計算は Global Upside を通じて処理されます。オファープロセスの最終ステップで CC に入るよう、正しい DocuSign メールテンプレートを必ず選択してください。
+
+リマインダー：フランスでは、Legal チームがコントラクトを個別に作成する必要があります。これらの依頼を追跡する [SSOT ドキュメント](https://docs.google.com/spreadsheets/d/1HQxOwt30v1qffulaZay61aj_A5edQgb_zfBrhoq0CgA/edit#gid=0)があります。
+
+月曜日が祝日である場合、または月曜日以外の日付が法的に必要な場合を除き、開始日が月曜日であることを常に確認します。
+
+## フランスおよびスペインのオファー作成
+
+1. フランスまたはスペインの Offer を作成する req を受け取ります。
+1. Greenhouse で Job setup、Hiring Team の順にクリックし、Sarah Rogers と Darren Burr を Job に追加して Job Admin: FPA and Legal 権限を付与し、保存します。
+1. 月曜日が祝日である場合、または月曜日以外の日付が法的に必要な場合を除き、開始日が月曜日であることを確認します。
+1. [ces_legal_contracts](https://gitlab.slack.com/archives/C05R0R495L6) で Legal Team に Slack メッセージを送り、オファーに関する支援を依頼します。チャンネルで依頼する際は、候補者の名前を示し、GH プロフィールへのリンクを含めてください
+1. Legal Team のメンバーの 1 人が次の情報を回答します：
+    - 使用する GreenHouse のオファーテンプレート
+    - テンプレートに追加する文言（文言を配置する場所の情報を含む）。この文言は、Legal が提供したとおりに英語側とフランス語側の両方へ英語で配置します。
+    - オファーにドローに関する文言が含まれない場合、Legal はオファーテンプレートのどの部分を削除するか確認します。
+
+この情報を受け取ったら、GH に移動して以下の手順を実行してください：
+
+1. 設定アイコンをクリックします
+1. 左側の「Offer Templates」を選択します
+1. Legal の指示に従ってテンプレートを検索します
+1. 使用するテンプレートの右側にある 3 つの点をクリックし、「download」タブを選択します
+1. Google Docs でドキュメントを開きます
+1. Legal Team の指示に従ってすべての変更を行い、ドキュメントを保存します
+1. GH の Offer Templates ページに戻ります
+1. 右側の「Upload New」をクリックします
+1. 修正したドキュメントをアップロードします
+1. 次に GH の通常のオファー作成プロセスに従い、このオファーのオファーテンプレートとしてアップロードしたドキュメントを選択します。
+1. プロセスが完了し、署名者と候補者がオファーに署名したら、このテンプレートを削除することを忘れないでください
+
+## イスラエルのオファー作成
+
+イスラエルのオファー作成依頼を受け取ったら、以下の手順を実行してください。
+
+1. Greenhouse で Job setup、Hiring Team の順にクリックし、Sarah Rogers と Darren Burr を Job に追加して Job Admin: FPA and Legal 権限を付与し、保存します。
+1. イスラエルのチームメンバーの勤務週は日曜日から木曜日までのため、開始日を日曜日にできます。開始日が日曜日になることを People Connect Team に知らせてください。
+1. Slack チャンネル ces_legal_contracts で Legal Team にメッセージを送り、オファーに関する支援を依頼します。チャンネルで依頼する際は、候補者の名前を示し、GH プロフィールへのリンクを含め、報酬の内訳と使用するコントラクトテンプレートを知らせるよう依頼してください。
+1. Legal Team のメンバーの 1 人が次の情報を回答します：
+   - 使用する GreenHouse のオファーテンプレート
+   - 報酬の内訳と、Exhibit A に CES が追加する ID 番号
+   - テンプレートに追加する文言（コントラクト内で文言を配置する場所を含む）。
+
+この情報を受け取ったら、GH に移動して以下の手順を実行してください：
+
+1. 設定アイコンをクリックします
+1. 左側の「Offer Templates」を選択します
+1. Legal の指示に従ってテンプレートを検索します
+1. 使用するテンプレートの右側にある 3 つの点をクリックし、「download」オプションを選択します
+1. Google Docs でドキュメントを開きます
+1. Legal Team の指示に従ってすべての変更を行い、ドキュメントを保存します
+1. GH の Offer Templates ページに戻ります
+1. 右側の「Upload New」をクリックします
+1. 候補者のイニシャルを含むタイトルで修正したドキュメントをアップロードします（コントラクトを生成するときにテンプレートを識別できるようにするためです）
+1. 次に GH の通常のオファー作成プロセスに従い、このオファーのオファーテンプレートとしてアップロードしたドキュメントを選択します。
+1. プロセスが完了し、署名者と候補者がオファーに署名したら、このテンプレートを削除することを忘れないでください
+
+候補者がオファーに署名したら、ノート PC のリクエストフォームがある「New Hire Welcome Email」を送信してください。GitLab はイスラエルへノート PC を発送できるため、イスラエルのチームメンバーがノート PC を自己調達する必要はなくなりました。
+
+## CXC（注：現在ここでの採用は一時停止中です：オファーレターを送信する前に Enablement に相談してください）
+
+GitLab は [CXC Global](https://www.cxcglobal.com/) と提携し、**ポーランド**、**ウクライナ**、**ルーマニア**、**ロシア**、**セルビア**、**スロベニア**にいる GitLab チームメンバーを雇用しています。実際の雇用コントラクトは CXC が送信および発行し、現地の労働法に準拠します。また、CXC は GitLab に代わって各国の給与計算および支払い、関連する税務とコンプライアンスも処理します。コントラクト自体は個人と CXC の間で締結されます。
+
+CXC はこれらの拠点で 12 ヶ月のコントラクトを提供し、延長できます。上記の国で設立済みのエンティティ／会社を持つ請負業者のみをサポートできます。オファーの詳細は GitLab の Hiring Team が CXC に提供します。
+
+コントラクトを作成するには：
+
+1. Recruiter が[採用プロセス](/handbook/hiring)に従ってオファーを提示します。
+1. Candidate Experience Specialist は GreenHouse から新しいチームメンバーに Contract Info Request - CXC をメールで送信します。
+    - 「Email CANDIDATE NAME」をクリックします
+    - ドロップダウンから「Contract Info Request-CXC」を選択します。
+    - Recruiter を CC に入れます
+    - 「Send Email」をクリックします
+1. 月曜日が祝日である場合、または月曜日以外の日付が法的に必要な場合を除き、開始日が月曜日であることを確認します。
+1. Candidate Experience Specialist は試用期間の有無を確認します。
+    - [PEO に雇用されるチームメンバーの試用期間](/handbook/people-group/contracts-probation-periods/#probation-period)に移動し、候補者の国を確認します。
+    - 「Offer Details」のドロップダウンで試用期間（ある場合）を選択します。ない場合は、そのフィールドで「N/A」を選択します。
+1. Candidate Experience Specialist は、コントラクトが無期限か有期かを確認します。
+    - 無期限コントラクトの場合は、「Offer Details」のドロップダウンから「Indefinite」を選択します。
+    - 有期コントラクトの場合は、「Offer Details」のドロップダウンから「Fixed Contract」を選択し、「End Date」に終了日を入力します。
+1. 追加情報を受け取ったら、Candidate Experience Specialist は GreenHouse から PEO フォームを生成します。
+    - 「Generate」をクリックします
+    - ドロップダウンから「PEO New Hire Template」を選択します
+    - 「Generate」をクリックします
+1. Candidate Experience Specialist は、DocuSign を通じて、自分、新しいチームメンバー、適切な CXC 連絡先の署名用にフォームをステージングします。連絡先の詳細は 1password => People Operations Vault => Entity & Co-employer HR Contacts にあります。
+1. Candidate Experience Specialist は候補者を [PEO Tracking Sheet](https://docs.google.com/spreadsheets/d/1gSOVTJ1Yv-YsSaliJwKVf-1H0vBZXxb5NWFiqCwT-uo/edit#gid=0) に追加し、GitLab とのコミュニケーションを追跡します。
+1. 次に CXC が SOW とコントラクトを作成します。
+1. 次に CXC が候補者へ直接連絡し、コントラクト署名と CXC の給与計算へのオンボーディングを調整します。
+1. CXC がプロセスを完了するまで 1 週間の期間を見込んでください。GitLab での勤務開始までの通知期間が 2 週間の場合でも、3 週間に延びる可能性があります。この期間をこの拠点の新入社員へ伝えることが重要です。
+1. コントラクトが署名されたら、CXC が Candidate Experience Specialist に知らせます。
+1. Candidate Experience Specialist は候補者を採用済みとします。
+1. CES は「Accepted」の日付を「Sent」の日付と一致するよう調整します。
+1. Candidate Experience Specialist は候補者を採用済みとします。
+
+## Global Expansion（GX）を通じて雇用される GitLab チームメンバーの雇用契約書作成
+
+GitLab は Global Expansion と提携し、以下の拠点にいる GitLab チームメンバーを雇用しています：
+
+- メキシコ
+- コスタリカ
+- ケニア
+- 南アフリカ
+- UAE
+- ラトビア
+- フィリピン
+- オーストリア
+- チリ
+
+1. Recruiter が採用プロセスに従ってオファーを提示します
+1. Nationality フィールドが入力されておらず、Reference Check フォームにも見つからない場合、CES は新入社員に「Contract Info Request-Global Upside」メールを送り、追加情報を収集します
+1. 月曜日が祝日である場合、または月曜日以外の日付が法的に必要な場合を除き、開始日が月曜日であることを確認します
+1. Candidate Experience Specialist は試用期間の有無を確認します。
+1. [PEO に雇用されるチームメンバーの試用期間](/handbook/people-group/contracts-probation-periods/#probation-period)に移動し、候補者の国を確認します。
+1. 「Offer Details」のドロップダウンで試用期間（ある場合）を選択します。ない場合は、そのフィールドで「N/A」を選択します
+1. Candidate Experience Specialist は、コントラクトが無期限か有期かを確認します
+1. 無期限コントラクトの場合は、「Offer Details」のドロップダウンから「Indefinite」を選択します
+1. 有期コントラクトの場合は、「Offer Details」のドロップダウンから「Fixed Contract」を選択し、「End Date」に終了日を入力します
+1. 追加の詳細を取得したら、すべての情報を反映するよう Offer Details を更新します。CES が署名者になります
+1. Offer Documents で「PEO Template!」を生成し、DocuSign を通じて送信します
+1. 「Offer through DocuSign -GX - Global Expansion -To User, Self (CES) -Sign and complete」Template を選択します
+1. CES Team のログイン認証情報を使用して GX 1 Platform にログインします（この情報は CES Desk リポジトリにあります）
+1. ランディングページで「+ New Employee」（ピンク色のボタン）をクリックします
+1. 灰色のバーの左側にある「+」アイコンをクリックします
+1. 新入社員の個人情報を必須フィールドに追加します
+    - Legal Last Name
+    - Legal First Name
+    - Email
+    - Contact Number
+    - To Country
+1. Position の詳細を追加します
+    - Job Title
+    - Intended Start Date
+    - Contract Duration
+    - Projected End Date（有期コントラクトの場合）
+1. Signatory フィールドに CES の名前と連絡先情報を追加します
+1. 「Line Manager」フィールドに Hiring Manager の情報を追加します
+1. [PEO に雇用されるチームメンバーの試用期間](/handbook/people-group/contracts-probation-periods/#probation-period)の情報を使用して、従業員と雇用主の通知期間、および試用期間を追加します。
+1. 福利厚生情報を追加します：
+    - Medical Benefits：CES Repository にある Country Guide の情報を使用して、2 つのフィールドに入力します
+    - Employment Retirement Insurance：CES Repository にある Country Guide の情報を使用します。その国の Guide に何も記載されていない場合は、「Not Applicable」を選択します
+    - Benefits Policy Duration：コントラクト期間には「auto renew」を選択します
+    - Visa とバックグラウンドスクリーニングのチェックボックスが 3 つ表示される場合：UAE の場合に限り YES（Visa のみ）を選択し、すべての国のバックグラウンドスクリーニングでは常に「No」を選択します
+1. GX Compensation
+    - Monthly Basic Salary：数字の「1」を入力します（これを計算する必要はありません）。候補者の年収を Additional Notes セクションに追加し、必ず通貨を含めます
+    - Local currency：フィールド横の下矢印をクリックし、国を検索します。候補者の Greenhouse Offer でも通貨を確認できます。
+1. すべての詳細が入力済みの場合は「Initiate New Employee」をクリックします（データが不足している場合は「Save and Submit Later」）
+1. 次に GX が詳細を確認して従業員のコントラクトを作成します。完了すると ces@gitlab.com にメールを送り、レビューを依頼します。最初に GX Platform にログインし、その後 GX から送られたメールのリンクをクリックする必要があります
+1. コントラクトのすべての詳細をレビューし、正確であることを確認します
+    - 項目が不足している場合は、フィードバックのメモを書いて GX に返送できます。ドロップダウンをクリックし、「REJECT - the following changes are required」を選択して送信します
+    - すべて問題なければ、ドロップダウンをクリックし、「APPROVE - I am happy with this employment contract」を選択して送信します
+1. GX は ces@gitlab.com に 1 ページの DocuSign も送信し、雇用の詳細を再確認するよう依頼します。内容が正確であれば、ドキュメントをレビューして署名してください。DocuSign は「GL CES Team」という署名を自動入力しますが、そのタイトルの前に自分の名前を追加できます。自分の役職を追加して送信します
+1. 次に GX が雇用コントラクトを候補者に公開し、署名されるとすぐにメールで知らせます。コントラクトがポータルに手動でアップロードされた際に Desk へメールが届く場合もありますが、すでに GX から連絡を受けている場合は無視できます
+1. 正しい Welcome Email の送信に進みます
+1. 候補者を GH で採用済みとする前に、他の候補者がすべて不採用になっていることを確認してください。完了したら、候補者を Greenhouse で採用済みとし、「Accepted」の日付を「Sent」の日付と一致するよう調整して req をクローズします
+
+## Global Upside を通じて雇用される GitLab チームメンバーの雇用契約書作成
+
+GitLab は [Global Upside](https://www.safeguardglobal.com/) と提携し、以下の拠点にいる GitLab チームメンバーを雇用しています：
+
+- インド
+
+契約書の作成および送信プロセスは次のとおりです：
+
+1. Recruiter が[採用プロセス](/handbook/hiring)に従ってオファーを提示します。
+1. Nationality フィールドが入力されておらず、Reference Check フォームにも見つからない場合、CES は新入社員に「Contract Info Request-Global Upside」メールを送り、追加情報を収集します。
+1. 月曜日が祝日である場合、または月曜日以外の日付が法的に必要な場合を除き、開始日が月曜日であることを確認します。
+1. Candidate Experience Specialist は試用期間の有無を確認します。
+    - [PEO に雇用されるチームメンバーの試用期間](/handbook/people-group/contracts-probation-periods/#probation-period)に移動し、候補者の国を確認します。
+    - 「Offer Details」のドロップダウンで試用期間（ある場合）を選択します。ない場合は、そのフィールドで「N/A」を選択します。
+1. Candidate Experience Specialist は、コントラクトが無期限か有期かを確認します。
+    - 無期限コントラクトの場合は、「Offer Details」のドロップダウンから「Indefinite」を選択します。
+    - 有期コントラクトの場合は、「Offer Details」のドロップダウンから「Fixed Contract」を選択し、「End Date」に終了日を入力します。
+1. 追加の詳細を取得したら、すべての情報を反映するよう Offer Details を更新します。CES が署名者になります。
+1. Offer Documents で「PEO New Hire Template」を生成し、DocuSign を通じて送信します
+1. Template *Offer through DocuSign -Global Upside* を選択します
+    -To User, Self (CES)
+    -Sign and complete
+1. 完了した Statement of Work を PDF 形式でダウンロードし、Egnyte にアップロードします。
+    -ダウンロードしたファイルのタイトルが新入社員のフルネームであることを確認します
+1. Egnyte で *「/Shared/GPS/Active Clients/GitLab/IN/HR/Employee Master/Client Upload/New Employee Information」* に移動します
+1. *Upload* をクリックし、新入社員の Statement of Work をこのフォルダに配置します
+1. Greenhouse の「Email the Team」にあるメールテンプレート *Email to Global Upside* を使用し、新しい SOW を Egnyte にアップロードしたことと従業員の名前をメールで伝えて、Global Upside チーム（gitlabHR@globalpeoservices.com）に新入社員について知らせます。
+1. Candidate Experience Specialist は候補者を [PEO Tracking Sheet](https://docs.google.com/spreadsheets/d/1gSOVTJ1Yv-YsSaliJwKVf-1H0vBZXxb5NWFiqCwT-uo/edit#gid=0) に追加し、GitLab とのコミュニケーションを追跡します。
+1. Global Upside がコントラクトを作成したら、Egnyte に配置して CES にメールを送り、レビューと承認を依頼します。
+    -CES は、コントラクトに送信した正しい情報がすべて反映されていることを再確認します。
+1. 新入社員がコントラクトに署名したら、Global Upside が CES に知らせます。
+1. Greenhouse で採用済みとし、「Accepted」の日付を「Sent」の日付と一致するよう調整して Welcome Email を送信し、採用済みとして req をクローズする前に他の候補者がすべて不採用になっていることを確認します。
+
+## Remote.com
+
+GitLab は [Remote.com](https://remote.com/) と提携し、ブラジル、デンマーク、スイス、イタリア、スウェーデン、ルクセンブルク、ハンガリーで採用しています。実際の雇用コントラクトは Remote が送信および発行し、現地の労働法に準拠します。オファーの詳細は GitLab の Hiring Team が Remote に提供します。
+
+コントラクトを作成するには：
+
+1. Recruiter が[採用プロセス](/handbook/hiring)に従ってオファーを提示します。
+1. Nationality フィールドが入力されておらず、Reference Check フォームにも見つからない場合、CES は新入社員に「Contract Info Request-Global Upside」メールを送り、追加情報を収集します。
+    - 「Email CANDIDATE NAME」をクリックします
+    - ドロップダウンから「Contract Info Request-Remote.com」を選択します。
+    - Recruiter を CC に入れます
+    - 「Send Email」をクリックします
+1. 月曜日が祝日である場合、または月曜日以外の日付が法的に必要な場合を除き、開始日が月曜日であることを確認します。
+1. Candidate Experience Specialist は試用期間の有無を確認します。
+    - [PEO に雇用されるチームメンバーの試用期間](/handbook/people-group/contracts-probation-periods/#probation-period)に移動し、候補者の国を確認します。
+    - 「Offer Details」のドロップダウンで試用期間（ある場合）を選択します。ない場合は、そのフィールドで「N/A」を選択します。
+1. Candidate Experience Specialist は、コントラクトが無期限か有期かを確認します。
+    - 無期限コントラクトの場合は、「Offer Details」のドロップダウンから「Indefinite」を選択します。
+    - 有期コントラクトの場合は、「Offer Details」のドロップダウンから「Fixed Contract」を選択し、「End Date」に終了日を入力します。
+1. CES は署名者を自分に変更し、自分の署名用にオファーをステージングします。
+1. 追加情報を受け取ったら、Candidate Experience Specialist は GreenHouse から PEO フォームを生成します。
+    - 「Generate」をクリックします
+    - ドロップダウンから「PEO New Hire Template」を選択します
+    - 「Generate」をクリックします
+1. Candidate Experience Specialist は Template *Offer through DocuSign -Remote.com* を選択し、メールに gitlab@remote.com を CC で追加します。
+1. DocuSign で、CES は署名順序を更新し、CES／Signatory を署名する 1 番に、コピーを受け取るその他全員を 2 番にします。
+1. CES は PEO Template を送信し、受信トレイに届いたら署名します。
+1. PEO Template が署名されたら、CES は候補者を Remote.com Platform にアップロードできます（詳細な手順は以下を参照してください）。
+1. Remote が New Employee Contract を作成し、コントラクトが署名されたら Candidate Experience Specialist に知らせます。
+1. CES が候補者による Remote.com コントラクト署名の確認を受け取ったら（Portal で確認可能）、通常どおり Welcome Email を送信して候補者を採用済みとする手順を続行します。
+1. CES は「Accepted」の日付を「Sent」の日付と一致するよう調整します。
+
+## 新入社員を Remote Platform に追加する方法
+
+1. [Remote](https://employ.remote.com/dashboard) Platform にログインします
+1. ページ左側の Onboarding タブをクリックします
+1. ページ右上の「add new employee」をクリックします
+1. 「employee」をクリックします
+1. 「employment eligibility」ページが表示されます。候補者の詳細を入力して Continue をクリックします
+1. 「basic information」ページが表示されます。候補者の詳細を入力して Continue をクリックします
+1. 「contract details」ページが表示されます。コントラクトの詳細を入力します
+
+このセクションに入力する際は、以下に注意してください：
+
+1. Contract Duration：Recruiter が指定しない限り、ほとんどのコントラクトは無期限です
+    - Probation Period：Remote が指定するデフォルトまたは最小のオプションを使用します。試用期間を決定するには、ハンドブックの[試用期間セクション](/handbook/people-group/contracts-probation-periods/#probation-period)を使用してください。
+    - メキシコの場合：Remote Platform にチームメンバーを追加する際は、Christmas Bonus として 15 日ではなく 30 日を選択します。
+1. Type of employee：Full time
+1. Annual Gross salary：GH の Offer Details に記載された金額
+1. Annual leave：通常は法定最低日数です。[General & Entity Specific Benefits ページ](/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com/)も使用できます
+   - メキシコの場合は 20 日と入力できます
+1. Is this employee approved for outside employment：No
+1. Signing bonus：GH の Offer Details に記載された金額
+1. Other Bonus：保証されたドローは含めません。依頼された場合は、Marissa を関係者に加えてください。Remote は現在、私たちのボーナス体系について、この情報を含められるほど十分に詳しく理解していません。
+1. Commission：No
+1. Equity Compensation：含めません。
+1. Number of paid time off days：Remote が提示する法定最低日数を選択します。選択肢がある場合は、最も少ない日数を選択します（これが法定最低日数のはずです）
+1. Role Description：Job Family 内の Job Description をコピー＆ペーストします。候補者の特定の役割のみが含まれていることを確認し、冒頭と末尾の補足部分は省略できます。
+1. Training requirement：空欄のままにします
+1. Supervisor Name：GH の Offer Details に記載された名前
+1. Experience level：選択する国に応じて、これらの選択肢には異なるバージョンがあります。ポジションに最も近いものを選択し、不明な場合は Recruiter に推奨を尋ねます。
+1. Work Address：Yes を選択します
+1. Benefits - 国ごとに以下を選択します：
+
+| 国 | 福利厚生プラン |
+|---------|--------------|
+| デンマーク | Standard |
+| ハンガリー | Standard |
+| ルクセンブルク | Premium |
+| ブラジル | Omint Plan（自動的に追加されるはずです） |
+| イタリア | Premium |
+| スイス | None |
+| スウェーデン | None |
+
+1. Life Insurance Coverage - メキシコでの採用の場合、「Life/ADD Insurance of 350 MXN (~18 USD)」を選択してください。Remote を通じて契約するチームメンバーの福利厚生の詳細は、[こちら](/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com/#brazil-)をクリックしてください。
+質問がある場合は、help@remote.com に連絡してください。
+1. 福利厚生に関する確認をクリックして続行します
+1. 「billing cycle」ページが表示されます。
+1. Monthly Billing Cycle をクリックして Continue をクリックします。
+1. 候補者とコントラクトのすべての詳細をレビューできるようになります。必要に応じて編集できます。
+1. レビューしてすべて問題なければ、「invite now」をクリックします。
+1. 「add this employee to a single employee plan」オプションを選択してください
+1. 候補者が正常に送信されました。Remote のホームページで進捗を確認できます。
+
+## 新入社員を Papaya Platform に追加する方法
+
+1. [Papaya](https://gitlab.papayaglobal.com/backoffice/org/1826/dashboard) Platform にログインします
+1. ページ右上の「add worker」タブをクリックします
+1. EOR Worker ブロックの下にある「create new request」をクリックします
+1. ドロップダウンで候補者の国を選択します
+1. Next をクリックします
+1. 「worker details」ページが表示されます。候補者の詳細を入力します
+1. Company ID は無視してください
+1. Next をクリックします
+1. 「employment terms」ページが表示されます。詳細を入力します
+1. 無期限コントラクトの場合の Expected End Date と Organizational Attributes は無視してください
+1. Continue をクリックします
+1. 「contract compensation」ページが表示されます。コントラクトの詳細を入力します
+1. Allowances と Miscellaneous は無視してください
+1. Contract Terms で、すべてについて Mandatory Requirements by Local Law タブを選択します
+1. Next をクリックします
+1. 「initial employment terms letter」ページが表示されます。コントラクトの詳細を入力します
+1. Papaya がコントラクトより前に Initial Employment Terms Letter を候補者へ送信するかどうかでは、「yes」をクリックします
+1. Next をクリックします
+1. 候補者とコントラクトのすべての詳細をレビューできるようになります。必要に応じて編集できます。
+1. Consent Clause のすべての条件を選択します
+1. Papaya がいつ Worker に連絡するかでは、「as soon as possible」を選択します
+1. Submit をクリックします
+1. 候補者が正常に送信されました。Papaya のホームページにリダイレクトされます
+1. 候補者を送信すると、新しいプロジェクトについて Papaya に知らせるアラートが送信されます
+1. GitLab を担当する Papaya の Customer Success Manager である Amit Bengal（AmitBe@papayaglobal.com）が CES に連絡し、アラートを受け取ったことを確認します。Amit は候補者へ直接連絡する許可を求めるため、できるだけ早く確認してください。Papaya は Platform に送信された情報を検証し、共有されたコントラクト情報についてすぐに質問がある場合は CES または候補者へ連絡します
+1. 基本的なオファーの詳細を記載した Offer Overview（Offer Template）が承認のため CES に送信されます（私たちの PEO Template に似ています）。承認されると、Offer Template を添えて候補者へ Welcome Email が送信されます。Welcome Email では候補者に PEO を紹介します。
+1. この段階で、候補者は情報を検証し、依頼の完了に必要なドキュメントを提供するよう求められます。
+1. 候補者が情報を検証して必要なドキュメントを提供したら、Papaya はオファーのドラフトを Local Team（候補者の国の連絡担当者）へ送り、その国の法律に照らしてコントラクトをレビューします。所要時間：48 時間
+1. Local Team は担当部分を完了すると、オファーを Papaya の Legal Team へ送信します。その後、Legal Team が最終オファーを承認します。所要時間：24 時間
+1. 承認されたオファーは、Papaya Platform の Hidden Documents にアップロードされます。候補者に発行する前に、最終ドラフトを承認するよう CES に通知されます。
+1. 質問または修正が必要な場合、複雑さによっては、Local Team（48 時間）へ戻し、その後 Legal Team（24 時間）へ戻してから、再び私たちへ戻す必要があります。
+1. CES がオファーを承認すると、Papaya が候補者へ提示します。
+1. 質問または修正が必要な場合、複雑さによっては、Local Team（48 時間）へ送り、その後 Legal Team（24 時間）へ戻してから、再承認のため私たちへ戻し、再び候補者に発行する必要があります。
+1. 候補者が承諾すると、Papaya が私たちに知らせます。
+
+## GitLab がノート PC を注文できない拠点向けの前払い資金プロセス
+
+[こちら](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering//)に掲載されている一部の国では、新入社員が開始日前に自分でノート PC を調達する必要があります。
+
+1. CES のチームメンバーは、新入社員がこれらの国のいずれかにいることを確認し、New Hire Welcome Email - Brazil, Costa Rica, Chile, Armenia, or Ukraine Template を送信します。
+1. このメールでは、通常の Welcome Email とは異なる Google Form を使用します。新入社員には 2 つの選択肢が提示され、希望する方を選択するよう求められます：
+    - GitLab での初日に、購入し NAVAN を通じて経費精算する
+    - 自己調達のために前払い資金を依頼する
+1. IT は [IT Equipment Order Processing](https://gitlab.com/gitlab-com/it/end-user-services/issues/it-equipment-order-processing/-/issues/?sort=closed_at_desc&state=opened&first_page_size=100) Desk で、新入社員の選択内容を記載した Issue を受け取ります。候補者が前払い資金を依頼した場合、IT は Issue 内で AP をタグ付けし、ノート PC 購入の承認を提供します。AP は新入社員の銀行口座情報を収集し、資金を支払います。
+
+**GitLab と新入社員：**
+
+1. Recruiter が[採用プロセス](/handbook/hiring)に従って口頭でオファーを提示したら、このページを使用してコントラクトを作成する方法に従い、[Template-GitLab China Employee Offer letter](https://docs.google.com/document/d/1c69dG9TuAB0MgiKj_gLDuHTHpzjocvEAm2okUOKqRIs/edit#)に記入します。
+1. CIIC では、[Letter of Employment Intent](https://docs.google.com/document/d/1BEHvveYUJkS1xwyd037P_zzitOSotF_68Kbi-c7k8hY/edit)の中国語版が必要です。
+1. 必要な／判明しているすべての情報を Letter of Intents に記入します。まず[英語](https://docs.google.com/document/d/1b3fHqHzXhhoJeskUN-Km9vTLeuszysWPj8PlvXm45ug/edit)で作成し、その後 Google Translate を使用して中国語に翻訳します。
+1. 完了したら、Letter of Employment Intent の GitLab 版（中国語と英語）を DocuSign で新入社員へ送り、レビュー、記入、署名を依頼します。Peopleops と CIIC がコピーを受け取るようにしてください。
+1. すべて署名されたら、中国語と英語の Letter of Intents を印刷し、FedEx で CIIC に送ります。住所は Google Drive の PEO China フォルダ > China Employment Options > CIIC にあります。
+1. Candidate Experience Specialist は候補者を [PEO Tracking Sheet](https://docs.google.com/spreadsheets/d/1gSOVTJ1Yv-YsSaliJwKVf-1H0vBZXxb5NWFiqCwT-uo/edit#gid=0) に追加し、GitLab とのコミュニケーションを追跡します。
+1. コントラクトが署名されたら、PEO が Candidate Experience Specialist に知らせます。
+1. Candidate Experience Specialist は候補者を採用済みとします。
+1. CES は「Accepted」の日付を「Sent」の日付と一致するよう調整します。
+1. Candidate Experience Specialist は候補者を採用済みとします。
+
+**GitLab と CIIC：**
+
+1. GitLab は CIIC と Secondment Agreement を締結しています。更新が必要な場合がありますが、CIIC が確認します。
+1. CIIC はドキュメントを受け取ったら Payment Notice を作成し、支払いのために GitLab（peopleops）へ送信します。これは前払いする必要があり、CFO の承認が必要な場合があります。
+1. CIIC は支払いを受け取った後、新入社員へ連絡して Labor Contract を作成します。
+
+**CIIC と新入社員**
+
+CIIC と新入社員の両方が Labor Contract に署名したら、その人は GitLab で勤務を開始できます。
+
+## ドイツの GitLab チームメンバー向け雇用契約書
+
+2025 年 1 月 1 日から、ドイツでの自筆署名要件が撤廃されたため、DocuSign を通じた電子署名でオファーを発行できます（手順は以下に記載）。現在、ドイツの給与計算はすべて Papaya を通じて処理されています。
+
+1. CES は、開始日が月曜日、または月の 1 日か 16 日のいずれかであることを確認します
+1. この[テーブル](/handbook/hiring/)に従い、German Entity に記載されている署名者を使用してください
+1. Greenhouse と DocuSign を通じてオファーを送信します。「send through DocuSign」Template を使用し、メール本文に RSU 情報を追加します。
+1. バックグラウンドチェックを開始します。Sterling のドロップダウンから Germany Package を使用してください。
+
+ドイツの候補者には、自筆署名のコントラクトを求める権利があります。（プロセスは後日追加予定）
+
+## 日本の GitLab チームメンバー向け雇用契約書
+
+GitLab は日本にエンティティ（GitLab GK）を保有しており、この拠点では GitLab GK のコントラクトを使用します。この拠点のチームメンバーは全員従業員です。
+
+月曜日が祝日である場合、または月曜日以外の日付が法的に必要な場合を除き、開始日が月曜日であることを常に確認します。
+
+## インターン雇用コントラクト
+
+GitLab は INC エンティティ内でのインターン採用および Code2College プログラムに参加しています。Code2College は、高校生を有給の技術インターンシップに配属する初めてかつ唯一のプログラムです。
+
+Intern Contract Template は、C2C インターンと GitLab に採用されるその他すべてのインターンの両方に使用します。ただし、C2C インターンを処理する場合は、いくつか異なる必須手順があります。プロセスを以下に説明します。
+
+1. オファーを決定したら、Emerging Talent Coordinator／Recruiter は GH プロフィールで Offer を作成し、通常どおり承認を依頼します。
+1. 承認されたら、CES は GH の「INC Intern」Template を使用してコントラクトを送信します。Offer Details で必要な重要情報には、時間給とコントラクト終了日（無期限コントラクトではないため）があります。生成する前に、これらの詳細が Offer に含まれていることを確認してください。
+1. Offer を送信した後、CES は Comprehensive Criminal Check with Employment を選択してバックグラウンドチェックを開始します。**重要な注意 - C2C（Code2College）インターンの場合、Sterling で Comprehensive Criminal Check のみを選択します。ほとんどの C2C インターンは未成年のため、Employment Check は必要ありません。**
+1. C2C のインターンの多くは未成年であるため、BGC の開始時に CES はインターンの保護者へ [Parental Consent Form](https://docs.google.com/document/d/1J0xundRL___Hhg0zNkt7KTMMEgTv63U5rseqTlmv8ok/edit)も送信する必要があります。
+
+   - このフォームは DocuSign で送信できます
+   - 適切なトークンを追加してください
+   - 配布を次のように設定してください（保護者のメールアドレスは Emerging Talent Coordinator から受け取れます）：
+      1. 保護者 - 署名が必要
+      1. Emerging Talent Coordinator - コピーを受領
+
+1. 候補者が Offer に署名したら、CES は GitLab Inc Intern Welcome Email を送信します。**注：GitLab はこれらのインターンにノート PC を提供します。Welcome Email では、できるだけ早くフォームに入力するよう求めています**
+1. req がクリアされたら、CES はインターンを採用済みとできます。
+1. CES は Slack チャンネル #peopleops-alerts で People Connect に連絡し、インターンを採用したことを知らせます。**メッセージで C2C かどうかを示してください**
+1. インターンがシステム上で採用済みとなった後は、People Connect が責任を引き継ぎ、オンボーディング Issue を作成して TaNewKi Call に関する情報を伝えます。
+1. C2C インターンに「youth work permit」が必要であると通知された場合は、フォームを People Connect へ送信してください。People Connect は「employer」部分を記入し、インターン／保護者へ提出する必要があります。
+
+## その他すべての拠点にいる GitLab チームメンバー向けの雇用契約書（IT BV Contractor Agreements）
+
+1. 対象とする拠点の[採用状況](/handbook/people-group/employment-solutions#country-hiring-guidelines)をレビューします。拠点がまだ評価されていない場合は、IT BV Contractor Agreement を発行します。
+1. 候補者が請負業者契約に自身のエンティティを使用したい場合は、Contractor Name と Address で Offer Details を更新します。この場合は IT BV Contractor Agreement - C2C を使用します。
+1. IT BV Contractor Agreement - Independent または IT BV Contractor Agreement - C2C を生成します
+1. Send with DocuSign を選択します
+1. 「Offer through DocuSign-IT BV」メールテンプレートを選択します
+1. 「To」フィールドを更新して GitLab の署名者を含め、CC フィールドに Hiring Manager を含めます
+1. Preview on DocuSign を選択します
+1. DocuSign で、他のコントラクトと同様に署名順序を更新し、Send をクリックします
+
+## エンティティのコントラクトへの転居文言の追加
+
+1. Candidate Experience Specialist は、新入社員の開始日後の転居に伴う報酬変更条件を明確に記した文言があることを確認します。
+1. CES は Approval Notes で Total Rewards チームに連絡します。
+    - 候補者の GH プロフィールの一番下に移動します
+    - 「Approval Notes」を確認します
+    - 「Leave a Note」をクリックします
+    - Brittany Rohde をメモでタグ付けし、両方の報酬額が承認されていることを確認します
+    - Recruiter を CC としてタグ付けします
+1. Total Rewards が両方をレビュー済みであることを確認したら、適切なコントラクトを生成します
+1. コントラクトの Word 版をダウンロードし、編集用に Google Drive へアップロードします
+    - Google Drive に移動します
+    - 左側のツールバーの上部にある「New」をクリックします
+    - 「File Upload」を選択します
+    - コントラクトを選択します
+1. ドキュメントの上部に行を追加し、転居の報酬カテゴリを記載します
+    - ID から CA に転居する場合の例：
+        - CA の報酬：$ USD
+        - ID の報酬：$ USD
+1. Section 10 Location の文言を更新します：
+    - 変更前
+        - 10. 勤務地。GitLab でのあなたの雇用は、永住地が ID 州 Boise 近郊であることを条件とします。永住地をその場所から変更する場合、その変更に先立って Company に通知する必要があります。永住地の変更により、報酬や福利厚生が変更される場合があり、状況によっては雇用が終了する場合があります。
+    - 変更後
+        - 10. 勤務地。GitLab でのあなたの雇用は、永住地が ID 州 Boise 近郊であることを条件とし、あなたは 2021 年 1 月 1 日頃に CA 州 San Francisco へ転居する予定であることを開示しています。永住地をこれらの場所から変更する場合、その変更に先立って Company に通知する必要があります。永住地の変更により、報酬や福利厚生が変更される場合があり、状況によっては雇用が終了する場合があります。
+1. すべてのトークンを削除します
+1. コントラクトを保存してダウンロードします
+1. GH で「Upload Replacement」を選択してアップロードします
+1. Slack の `Contracts-to-sign` チャンネルに連絡し、将来の転居を想定してステージングしたコントラクトを送信することを Recruiter に知らせます
+1. 通常どおりコントラクトをステージングします
+1. 署名順序を変更した後、トークンを再度追加します
+1. 送信します
+
+### 雇用オフボーディング
+
+チームメンバーが GitLab を退職すると、People Connect がオフボーディング Issue を作成します。CES チームは `@gitlab-com/gl-ces` セクションにあるタスクを完了する責任があります。オフボーディング Issue には期限があるため、Issue に設定された期日までに完了する必要がある点に注意してください。これらのタスクを完了することで、GitLab のコンプライアンス維持も確保されます。
+
+1. オフボーディング Issue がある [Employment Issues](https://gitlab.com/gitlab-com/team-member-epics/employment/-/issues) に移動します。検索バーで「CES: To Do」ラベルを使用して Issue を絞り込み、期日順に対応します。オフボーディング Issue を開いたら、`@gitlab-com/gl-ces` セクションに移動し、以下の手順を完了します。
+1. Google Calendar を開き、「Interview Calendar」を選択し、上部の検索バーにチームメンバーの名前を入力します。オフボーディングするチームメンバーが進行中の面接に参加していないことを確認します。チームメンバーが進行中の面接に表示される場合は、該当する CES チームメンバーに、Recruiter と協力して面接担当者を交代するよう伝えます。Calendar でグレー表示された面接は、すでに終了しています。
+1. オフボーディングするチームメンバーが Engineering 部門に所属する場合、CES は Hiring Repository の [Backend](https://gitlab.com/gitlab-com/people-group/hiring-processes/-/blob/master/Engineering/Frontend/2-TechnicalInterview/Interviewers.md)、[Frontend](https://gitlab.com/gitlab-com/people-group/hiring-processes/-/blob/master/Engineering/Backend/Interviewers.md?plain=0#rubyrails-technical-interviewers)、[Platform POOL](https://gitlab.com/gitlab-com/people-group/hiring-processes/-/tree/master/Engineering/Infrastructure/Platforms?ref_type=heads)を確認し、退職する面接担当者を Pool から削除します。
+CES は、たとえば「Removed John Doe from list of ruby on rails technical interviewers」のようなマージリクエストを通じて変更できます。CES は、オフボーディングする面接担当者を Hiring Repository から削除するためにのみマージ権限を使用し、その他の重要な変更を加えてはいけません。
+
+1. Greenhouse の `Users` でチームメンバーの名前を検索し、そのチームメンバーが参加している可能性のある req を確認します。チームメンバーの名前を検索する際は、そのチームメンバーの GitLab メールアドレスが表示されたプロフィールを選択します。これにより Greenhouse のプロフィール設定へ移動します。
+    Open の Job req を持つ「Job Admin: Hiring Manager」としてチームメンバーの名前が掲載されている場合は、以下の手順を実行してください：
+    - Job req のタイトルをコピーして新しい Greenhouse ウィンドウに貼り付け、検索します
+    - req 番号が一致していることを確認し、正しい Job req を選択します（例：7458）
+    - Job Set up を選択して Hiring Team セクションに移動します
+    - Hiring Manager のポジションが別のチームメンバーによって補充されていることを確認してください。Hiring Manager セクションが空であるか、オフボーディングするチームメンバーがまだ表示されている場合は、記載されている CES Coordinator に連絡し、Recruiter と協力して代わりの Hiring Manager を見つけ、Interview Plan を更新するよう CES チームメンバーに伝えてください。
+    - オフボーディングするチームメンバーが、タイトルに「Closed」、「Draft」、「Template」を含む req で「Job Admin: Hiring Manager」として掲載されている場合は、対応不要です。
+1. すべての手順が完了したら、オフボーディング Issue の右側に移動し、「CES: To Do」ラベルを削除して通知を無効にし、「Recruiting Ops」にコメント／通知を残します。（例：@ destinyreyes ces tasks done）

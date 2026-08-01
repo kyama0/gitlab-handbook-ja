@@ -1,11 +1,11 @@
 ---
 title: "補助ソリューションリソース: 継続的デリバリー"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/
-upstream_sha: d0a19ab78fc5e0d322868c8f35ab8f81e761bd21
-translated_at: "2026-05-01T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:22:17+09:00"
+translator: codex
 stale: false
-lastmod: "2025-08-18T10:18:01-07:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 #### 連絡先
@@ -46,23 +46,23 @@ lastmod: "2025-08-18T10:18:01-07:00"
 
 #### DevOps エンジニア、Devon
 
-[DevOps エンジニア](/handbook/product/personas/)は、開発者がコードをテスト/ステージング・本番環境にデプロイするために必要なインフラ、環境、インテグレーションのサポートを提供する、開発者の安定したカウンターパートです。
+[DevOps エンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)は、開発者がコードをテスト/ステージング・本番環境にデプロイするために必要なインフラ、環境、インテグレーションのサポートを提供する、開発者の安定したカウンターパートです。
 
 #### システム管理者、Sidney
 
-[システム管理者](/handbook/product/personas/#sidney-systems-administrator)はインフラのエキスパートであり、テスト/ステージング・本番環境（物理・仮想・クラウドインフラ、データベースやミドルウェアといったアプリケーションインフラを含む）のモデリング、保守、スケーリングに貢献します。
+[システム管理者](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator)はインフラのエキスパートであり、テスト/ステージング・本番環境（物理・仮想・クラウドインフラ、データベースやミドルウェアといったアプリケーションインフラを含む）のモデリング、保守、スケーリングに貢献します。
 
 #### リリースマネージャー、Rachel
 
-[リリースマネージャー](/handbook/product/personas/#rachel-release-manager)はリリース計画、スケジューリング、依存関係とリソースの特定において中心的な役割を担い、リリースが期日通りに行われることを保証します。リリースマネージャーはリリースプロセスの自動化を支援します。
+[リリースマネージャー](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager)はリリース計画、スケジューリング、依存関係とリソースの特定において中心的な役割を担い、リリースが期日通りに行われることを保証します。リリースマネージャーはリリースプロセスの自動化を支援します。
 
 #### プラットフォームエンジニア、Priyanka
 
-[プラットフォームエンジニア](/handbook/product/personas/#priyanka-platform-engineer)はモダンなプラットフォームのスペシャリストであり、開発者がセルフサービス方式で多層環境のプロビジョニング、デプロイ、廃止を行えるようにすることを目指します。
+[プラットフォームエンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer)はモダンなプラットフォームのスペシャリストであり、開発者がセルフサービス方式で多層環境のプロビジョニング、デプロイ、廃止を行えるようにすることを目指します。
 
 #### アプリケーションオペレーション、Allison
 
-[オペレーションスペシャリスト](/handbook/product/personas/#allison-application-ops)は、デプロイされたアプリケーションが利用可能であり、要求されたパフォーマンスパラメータで動作していることを保証します。
+[オペレーションスペシャリスト](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#allison-application-ops)は、デプロイされたアプリケーションが利用可能であり、要求されたパフォーマンスパラメータで動作していることを保証します。
 
 ### バイヤーペルソナ
 
@@ -113,9 +113,9 @@ GitLab の CD ケイパビリティを示す短いデモのコレクションで
 | 5) **ミドルウェアのプロビジョニング** | GitLab は Terraform と統合し、ミドルウェアを含むインフラのモデリングとプロビジョニングを実現します。GitLab は Terraform を使った Infrastructure as Code を可能にし、環境のインフラと構成を GitLab 内のソース管理で維持します | [Terraform based infrastructure automation](https://about.gitlab.com/webcast/gitops-gitlab-terraform/), [Infrastructure as code with Terraform and GitLab](https://docs.gitlab.com/ee/user/infrastructure/) | tbd |
 | 6) **アプリケーションリリース自動化 & デリバリー** | GitLab はプログレッシブ・インクリメンタルデリバリーを含む複数の高度なデプロイ戦略をサポートします。Review Apps はデプロイ前に Web アプリケーションをプレビューする機会を提供し、Feature Flags は機能のオーディエンスを制御できます。GitLab CI/CD パイプラインはパイプラインを構成・シーケンスするように設計でき、`.gitlab-ci.yml` ファイルでパイプラインバージョンをセットアップ・定義できます。さらに Web アプリ向けのブラウザパフォーマンステストや、Analytics Stage の機能を使ったアプリケーションパフォーマンステストにより、デプロイ後のモニタリングを実施できます | [**Release ステージ**](https://about.gitlab.com/stages-devops-lifecycle/release/): [Continuous Delivery](https://about.gitlab.com/stages-devops-lifecycle/continuous-delivery/), [Review Apps](https://docs.gitlab.com/ee/ci/review_apps/), [Advanced Deployments](https://docs.gitlab.com/ee/topics/autodevops/index.html#incremental-rollout-to-production), [Feature Flags](https://docs.gitlab.com/ee/operations/feature_flags.html), [Release Evidence](https://docs.gitlab.com/ee/user/project/releases/#release-evidence), [Secrets Management](https://docs.gitlab.com/ee/integration/vault.html) <br> [**Analytics ステージ**](https://about.gitlab.com/stages-devops-lifecycle/monitor/): [Metrics](https://docs.gitlab.com/ee/operations/metrics/), [Logging](https://docs.gitlab.com/ee/administration/logs/), [Tracing](https://docs.gitlab.com/ee/operations/tracing.html), [Error Tracking](https://docs.gitlab.com/ee/operations/error_tracking.html) <br> [**Verify**](https://about.gitlab.com/stages-devops-lifecycle/verify/): [Browser Performance Testing](https://docs.gitlab.com/ee/ci/testing/browser_performance_testing.html)  | [![Incremental rollout](/images/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/youtube_social_icon_red-32x23.png) アプリケーションリリース自動化 & デリバリー](https://youtu.be/ZAYBxLLcZrM) <br> [![Feature Flags](/images/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/youtube_social_icon_red-32x23.png) Feature Flags](https://youtu.be/_BZDM8LgGzg) |
 | 7) **リソースの割り当てと管理** | GitLab CI とモニタリング機能を活用してリソースの割り当てと消費をチャート化し、しきい値到達時にアラートを設定したり、提案された Infrastructure as Code 変更のコストへの影響をマージリクエスト内で確認したりできます。このケイパビリティのネイティブサポートは GitLab のロードマップに含まれています | [Cluster Cost Optimization](https://about.gitlab.com/direction/delivery/#what-we-arent-focused-on-now) [特定のリソースへのデプロイ数を制限](https://docs.gitlab.com/ee/ci/yaml/#resource_group) - 同じリソースグループに属する複数のジョブが同時にエンキューされた場合、Runner はそのうちの 1 つだけをピックアップし、その他のジョブは `resource_group` が空くまで待機します。  | tbd |
-| 8) **マルチプラットフォーム/クラウド/インテグレーションのサポート** | GitLab は AWS、Google Cloud、Azure にインストールでき、AWS、Google Cloud、Azure、VMWare、IBM などの複数のクラウドにデプロイできます。GitLab のインストールは Linux ベースのディストリビューションのみサポートしています。  | **すべてのステージ**: [GitLab Installation Clouds](https://docs.gitlab.com/ee/install/#install-gitlab-on-cloud-providers) [Cloud Deployment Targets](https://about.gitlab.com/install/), [Install Requirements](https://docs.gitlab.com/ee/install/requirements.html), [Integrations](https://docs.gitlab.com/ee/user/project/integrations/) | tbd |
+| 8) **マルチプラットフォーム/クラウド/インテグレーションのサポート** | GitLab は AWS、Google Cloud、Azure にインストールでき、AWS、Google Cloud、Azure、VMWare、IBM などの複数のクラウドにデプロイできます。GitLab のインストールは Linux ベースのディストリビューションのみサポートしています。  | **すべてのステージ**： [GitLab Installation Clouds](https://docs.gitlab.com/ee/install/#install-gitlab-on-cloud-providers) [Cloud Deployment Targets](https://about.gitlab.com/install/), [Install Requirements](https://docs.gitlab.com/ee/install/requirements.html), [Integrations](https://docs.gitlab.com/ee/user/project/integrations/) | tbd |
 | 9) **ガバナンス & コンプライアンス** | コンプライアンステストと監査コントロールが GitLab CI パイプラインに組み込まれています。 | [Compliance at GitLab](https://about.gitlab.com/solutions/compliance/) <br> [Manage Stage](https://about.gitlab.com/stages-devops-lifecycle/): [Audit Events](https://docs.gitlab.com/ee/administration/audit_event_reports.html), [Audit Logs](https://docs.gitlab.com/ee/administration/logs/#audit_jsonlog), [Audit Reports](https://docs.gitlab.com/ee/administration/audit_event_reports.html), [Compliance Management](https://docs.gitlab.com/ee/administration/compliance.html), [Release Evidence](https://docs.gitlab.com/ee/user/project/releases/#release-evidence) <br> [Secure Stage](https://about.gitlab.com/stages-devops-lifecycle/secure/): [License Compliance](https://docs.gitlab.com/ee/user/compliance/license_approval_policies.html), [Dependency Scanning](https://docs.gitlab.com/ee/user/application_security/dependency_scanning/)| tbd |
-| 10) **分析とレポート** | GitLab はエグゼクティブインサイト、生産性インサイト、運用インサイト、セキュリティインサイトといった多様なインサイトを提供します | **すべてのステージ**: <br> **エグゼクティブインサイト** DevOps スコア、バリューストリーム分析、CI/CD チャート、ロードマップ <br> **運用インサイト**: Operations ダッシュボード、Environments ダッシュボード、Environments <br> **その他のインサイト** 生産性インサイトや開発者インサイトなどは、他のユースケースに該当します| tbd |
+| 10) **分析とレポート** | GitLab はエグゼクティブインサイト、生産性インサイト、運用インサイト、セキュリティインサイトといった多様なインサイトを提供します | **すべてのステージ**： <br> **エグゼクティブインサイト** DevOps スコア、バリューストリーム分析、CI/CD チャート、ロードマップ <br> **運用インサイト**： Operations ダッシュボード、Environments ダッシュボード、Environments <br> **その他のインサイト** 生産性インサイトや開発者インサイトなどは、他のユースケースに該当します| tbd |
 | 11) **エンタープライズレディネス** | GitLab はエンタープライズグレードの認証・認可、アクセス管理、監査情報、コンプライアンス、高可用性とディザスタリカバリー、ロケーション間で優れたユーザー体験を実現する地理的レプリケーション、大規模ユーザー向けリファレンスアーキテクチャ、Infrastructure as Code などをサポートします  | **すべてのステージ**、特に [Manage ステージ](https://about.gitlab.com/direction/dev/#manage)、[Enablement Section](https://about.gitlab.com/direction/core_platform/#enablement-section-overview) | tbd |
 
 ## CD のロードマップトップアイテム

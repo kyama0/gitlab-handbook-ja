@@ -2,11 +2,11 @@
 title: "CSM として Calendly を活用する"
 description: "Customer Success Manager が Calendly を使って顧客からのミーティングリクエストを管理するためのベストプラクティスとセットアップガイド。"
 upstream_path: /handbook/customer-success/csm/calendly/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-translated_at: "2026-05-22T21:55:06Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:50:51+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-22T18:37:20+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 CSM 関連のほかのハンドブックページについては、[CSM ハンドブックホームページ](/handbook/customer-success/csm/)を参照してください。
@@ -42,7 +42,7 @@ Calendly が GDPR やそれに類するプライバシー法に準拠するよ�
   - *イベント名*: 時間の長さや特定のトピック・フォーカスに基づいて名前を付けます（例: New Customer: Onboarding Call）
   - *場所*: Custom（Zoom PMI から生成した Chorus Scheduler の静的リンクを使用）
     - 次に、Calendly イベント設定の Location フィールドに go.chorus.ai のリンクを追加します。
-      - *重要*: Calendly 経由で予約する人は、ミーティングごとに自動生成されるユニークなミーティング ID ではなく、同じ場所のリンクを使ってイベントを予約することになります。Zoom Personal Meeting が GitLab の [プライバシー・セキュリティ](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-security) ベストプラクティスに従っていることを必ず確認してください。
+      - *重要*: Calendly 経由で予約する人は、ミーティングごとに自動生成されるユニークなミーティング ID ではなく、同じ場所のリンクを使ってイベントを予約することになります。Zoom Personal Meeting が GitLab の [プライバシー・セキュリティ](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-security) ベストプラクティスに従っていることを必ず確認してください。
 
       - 確認後にのみ場所を表示するオプションを必ず選択してください
       - ![calendly-location](/images/customer-success/csm/calendly/calendly-location-chorus-go.jpeg)

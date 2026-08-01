@@ -1,11 +1,11 @@
 ---
 title: "DevOps ソリューションリソース: 継続的インテグレーション"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/
-upstream_sha: d0a19ab78fc5e0d322868c8f35ab8f81e761bd21
-translated_at: "2026-05-01T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:22:17+09:00"
+translator: codex
 stale: false
-lastmod: "2025-03-28T11:26:28-04:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 **GitLab の継続的インテグレーション（CI）ケイパビリティに関するお客様向けの概要をお探しですか？ [CI Solution](https://about.gitlab.com/solutions/continuous-integration/) を参照してください**
@@ -43,19 +43,19 @@ CI はソフトウェア開発を開発者にとってより簡単に、より�
 
 #### ソフトウェア開発者 Sasha
 
-[ソフトウェア開発者](/handbook/product/personas/#sasha-software-developer)は、あらゆる種類の開発ツールとプログラミング言語の専門知識を持ち、DevOps 領域において非常に貴重なリソースとなります。彼らはソースコード管理と CI ケイパビリティを併用して、迅速かつ一貫した高品質のコードを提供します。
+[ソフトウェア開発者](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer)は、あらゆる種類の開発ツールとプログラミング言語の専門知識を持ち、DevOps 領域において非常に貴重なリソースとなります。彼らはソースコード管理と CI ケイパビリティを併用して、迅速かつ一貫した高品質のコードを提供します。
 
 - 開発者は問題解決者であり、批判的思考者であり、学ぶことが大好きです。彼らは計画されたタスクで最高の働きをし、時間の大半を、お客様に愛される機能としてデリバーされるコードを書くことに費やしたいと考えています。
 
 #### 開発チームリード Delaney
 
-[開発チームリード](/handbook/product/personas/#delaney-development-team-lead)は、チームの生産性と計画された作業を期日通りにデリバーする能力を重視します。CI を活用することで、チームの生産性を最大化し、計画されたタスクへの混乱を最小化できます。
+[開発チームリード](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead)は、チームの生産性と計画された作業を期日通りにデリバーする能力を重視します。CI を活用することで、チームの生産性を最大化し、計画されたタスクへの混乱を最小化できます。
 
 - チームリードは、今後のタスクを割り当てるためにチームのキャパシティを把握する必要があり、また、適切なリソースを割り当ててブロッカーの解決を支援する必要があります。
 
 #### DevOps エンジニア Devon
 
-[DevOps エンジニア](/handbook/product/personas/)は、組織の SDLC を深く理解し、インフラ、環境、インテグレーションをサポートします。CI は、自動テストを実行し、開発チームによって SCM に統合し直されたコード変更を検証する単一の場所を提供することで、彼らの仕事を楽にします。
+[DevOps エンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)は、組織の SDLC を深く理解し、インフラ、環境、インテグレーションをサポートします。CI は、自動テストを実行し、開発チームによって SCM に統合し直されたコード変更を検証する単一の場所を提供することで、彼らの仕事を楽にします。
 
 - DevOps エンジニアは開発チームを直接サポートし、リアクティブではなくプロアクティブに働くことを好みます。彼らは時間を、機能やバグ修正の実装のためのコーディングと、開発者がコードをビルド・テスト・リリースするのを支援することの間で分けます。
 
@@ -382,7 +382,7 @@ GitLab は、お客様とパートナー向けに[さまざまなパッケージ
 組織全体で CI をスケールし、追加のチームをオンボーディングする際、GitLab Premium はエキスパートサポート、高度な構成、一貫した標準で、任意の数のチーム向けに、価値実現までの道のりを高速化します。
 
 - 安心を得る: 24 時間 365 日のアップタイムサポート、専任のカスタマーサクセスマネージャー（CSM）、アップグレード支援を含むエンタープライズレベルの優先サポートを活用。
-- 信頼性とコンプライアンス: [監査ログ](https://docs.gitlab.com/ee/administration/audit_event_reports.html)、[監査ユーザー](https://docs.gitlab.com/ee/administration/auditor_users.html)、[高可用性](https://docs.gitlab.com/ee/administration/reference_architectures/) のサポートを伴う実行可能な[ディザスタリカバリー戦略](https://docs.gitlab.com/ee/administration/geo/disaster_recovery/index.html) の能力を得られます。
+- 信頼性とコンプライアンス: [監査ログ](https://docs.gitlab.com/ee/administration/audit_event_reports.html)、[監査ユーザー](https://docs.gitlab.com/ee/administration/auditor_users.html)、[ディザスタリカバリー戦略](https://docs.gitlab.com/ee/administration/geo/disaster_recovery/index.html)と、それを支える[高可用性](https://docs.gitlab.com/ee/administration/reference_architectures/)のサポートを得られます。
 
 **Premium の主要機能:**
 

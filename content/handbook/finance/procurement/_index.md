@@ -127,7 +127,7 @@ GitLab のビジネスニーズに関する詳細や機密情報を共有する�
 1. サプライヤーグループを評価しているとき、または [RFP プロセス](https://internal.gitlab.com/handbook/finance/procurement/)を開始するとき
 1. 開始する場所や時期がわからない場合は、#procurement Slack チャンネルで @procurement_team にタグを付けてサポートを求めてください。また、[調達カテゴリーマネージャー](#procurement-team-alignment)に直接連絡することもできます。
 
-### 調達プロセスの開始方法
+### 調達プロセスの開始方法 {#how-to-start-the-procurement-process}
 
 調達プロセスの大部分は Zip という調達システム内にあります。Zip には[Okta のホームページ](https://gitlab.okta.com/app/UserHome#)からアクセスできます。Zip アクセスが必要な場合は、[こちらからアクセスリクエストを提出してください](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request&_gl=1*bsfkbc*_ga*MzkwMDUyMjg5LjE2MzU3NzYxMDA.*_ga_ENFH3X7M5Y*MTY3NzYyMDEwMi4xMzkuMS4xNjc3NjIwOTc3LjAuMC4w)。
 

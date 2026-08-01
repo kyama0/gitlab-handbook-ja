@@ -2,11 +2,11 @@
 title: "チームメンバープライバシーポリシー"
 description: "このチームメンバープライバシーポリシーは、チームメンバーについて収集する可能性のある個人データの種類とその使用方法を説明しています"
 upstream_path: "/handbook/legal/privacy/employee-privacy-policy/"
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-29T07:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:39:44+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-14T10:54:53-08:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 *最終更新日：2025年12月12日*
 
@@ -233,7 +233,7 @@ GitLabはチームメンバーの記録を以下の場所に保管します：[W
 
 ### 収集された個人データのセキュリティ
 
-収集された個人データのセキュリティを保護することに尽力しており、個人データを不正なまたは不適切なアクセスや使用から保護するために合理的な物理的、電子的、行政的なセーフガードを講じています。例えば、People Operations Groupは企業システムへのアクセスをプロビジョニングする前に[アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/)プロセスを厳守しています。さらに、コアITおよびPeople GroupシステムはGitLabの[サードパーティリスク管理プログラム](/handbook/security/security-assurance/security-risk/third-party-risk-management/)の下で適切なコントロール（[WorkdayのSecurity Exhibit](https://www.workday.com/content/dam/web/en-us/documents/legal/workday-universal-security-exhibit.pdf)に記載されているセキュリティ対策など）について評価されています。
+収集された個人データのセキュリティを保護することに尽力しており、個人データを不正なまたは不適切なアクセスや使用から保護するために合理的な物理的、電子的、行政的なセーフガードを講じています。例えば、People Operations Groupは企業システムへのアクセスをプロビジョニングする前に[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)プロセスを厳守しています。さらに、コアITおよびPeople GroupシステムはGitLabの[サードパーティリスク管理プログラム](/handbook/security/security-assurance/security-risk/third-party-risk-management/)の下で適切なコントロール（[WorkdayのSecurity Exhibit](https://www.workday.com/content/dam/web/en-us/documents/legal/workday-universal-security-exhibit.pdf)に記載されているセキュリティ対策など）について評価されています。
 
 ## チームメンバーのデータ主体権利
 

@@ -3,9 +3,9 @@ title: "Developer Relations"
 description: "Developer Relations チームは、コミュニティと連携し、GitLab への貢献に対するサポートと評価を確実に提供することで、GitLab のミッションを支えています。"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/developer-relations/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-lastmod: "2026-06-16T12:33:40-04:00"
-translated_at: "2026-06-20T15:10:46Z"
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+lastmod: "2026-07-30T10:20:47+02:00"
+translated_at: "2026-07-31T06:15:26+09:00"
 translator: codex
 stale: false
 ---
@@ -28,7 +28,7 @@ Developer Relations では、私たちのミッションとビジョンを会社
 私たちの運用戦略は[内部ハンドブックに記載](https://internal.gitlab.com/handbook/marketing/developer-relations/)されていますが、ビジネスの機微性、顧客への影響、そしてチームメンバーにとっての心理的安全な環境を促進するため、機密として分類されています。以下では、より広いコミュニティに公開されており、Developer Relations チームがコラボレーションを歓迎している戦略的計画を見ることができます。
 
 - [Contributor Program Unification & Growth Plan](/handbook/marketing/developer-relations/programs/strategic-plans/contributor-program-unification/)
-- [Co-Creation Initiative](/handbook/marketing/developer-relations/cocreation/)
+- [Co-Creation Initiative](/handbook/marketing/developer-relations/programs/cocreate/)
 
 ## <i class="fas fa-users fa-fw color-orange font-awesome"></i> チーム紹介 {#i-classfas-fa-users-fa-fw-color-orange-font-awesomei-meet-the-team}
 

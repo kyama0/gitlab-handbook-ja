@@ -2,11 +2,11 @@
 title: "ブランドビデオ"
 description: "GitLab ブランドクリエイティブ - ブランドビデオ ハンドブック"
 upstream_path: /handbook/marketing/brand-and-product-marketing/brand-video/
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-30T07:00:13Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:39:44+09:00"
+translator: codex
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ### 私たちが行うこと
@@ -57,7 +57,7 @@ lastmod: "2025-10-14T17:59:32+00:00"
 ### バーチャル録画
 
 - **Riverside:** ウェビナー、インタビュー、推薦、ホストコンテンツのために、デバイスに直接高品質な動画録画をキャプチャするために Riverside を使用します。このプラットフォームにより、録画のホストがカメラとマイクの設定を最適な結果に操作できます。バーチャルスタジオと考えてください。
-- **Zoom:** Zoom は重要なミーティングを録画したり、ウェビナーの映像を迅速にキャプチャしたりする際に優れたリソースです。Zoom の録画品質は各参加者のインターネット速度とコンピューター / デバイスのパフォーマンスによって影響を受ける可能性があります。Zoom は映像をクラウドに直接録画するため、ラグやオーディオのズレが発生する可能性があります。Zoom で最良の結果を得るには、Zoom を使用して録画する際に [Zoom 録画設定を確認](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-recording/#recording-zoom-meetings-in-hd)してください。
+- **Zoom:** Zoom は重要なミーティングを録画したり、ウェビナーの映像を迅速にキャプチャしたりする際に優れたリソースです。Zoom の録画品質は各参加者のインターネット速度とコンピューター / デバイスのパフォーマンスによって影響を受ける可能性があります。Zoom は映像をクラウドに直接録画するため、ラグやオーディオのズレが発生する可能性があります。Zoom で最良の結果を得るには、Zoom を使用して録画する際に [Zoom 録画設定を確認](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording/#recording-zoom-meetings-in-hd)してください。
 - **QuickTime:** QuickTime は、特にインターネット接続なしでシンプルで高品質な録画を行う場合に、自分自身を録画したり画面をキャプチャしたりするための優れたオプションです。macOS に組み込まれているため、簡単にアクセスでき、使いやすいです。ビデオメッセージ、チュートリアル、プレゼンテーションを録画する場合でも、QuickTime は最小限のセットアップでウェブカメラと画面コンテンツの両方を録画する簡単な方法を提供します。
 
 ### ポストプロダクションツール

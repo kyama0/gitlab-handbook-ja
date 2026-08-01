@@ -1,11 +1,11 @@
 ---
 title: "DevOps ソリューションリソース: DevOps プラットフォーム"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T06:15:26+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-14T07:59:50-06:00"
+lastmod: "2026-07-28T05:53:28-07:00"
 ---
 
 **GitLab の DevOps プラットフォームの顧客向け概要をお探しですか？ [DevOps Platform Solution](https://about.gitlab.com/solutions/devops-platform/) をご覧ください**
@@ -52,10 +52,10 @@ DevOps プラットフォームの[主要な技術的差別化要因](#key-diffe
 
 主要なユーザーペルソナは 2 つあります。
 
-1. [Devon - DevOps エンジニア](/handbook/product/personas/)
+1. [Devon - DevOps エンジニア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)
 Devon は様々なニーズを持つ複数の異なるチームを支援します。単一の DevOps プラットフォームは、一貫した効率的な開発体験を提供し、チーム固有の独自実装をサポートする負担を取り除きます。
 
-1. [Delaney - 開発チームリード](/handbook/product/personas/#delaney-development-team-lead)
+1. [Delaney - 開発チームリード](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead)
 Delaney は製品ライフサイクル全体を通じたコミュニケーションとコラボレーションに責任を持ち、容量を正確に見積もり、機能を計画し、すべての関係者と調整するために、作業項目とステータスのエンドツーエンドの可視化を必要とします。単一の DevOps プラットフォームはこれらのサービスをネイティブに提供し、Delaney は依存関係なしに必要な情報に必要なときアクセスできます。
 
 ### バイヤーペルソナ

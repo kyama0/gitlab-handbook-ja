@@ -98,7 +98,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 GitLab メールアドレスを GitLab、Slack、[Gravatar](https://gravatar.com/) 上の認識しやすい自分の写真にリンクします。
 すべての GitLab アカウントには、写真を使用することは会社の方針です。アバター、ストック写真、サングラスを着けたものではなく。私たちには多くの GitLab チームメンバーがおり、私たちの脳は人を認識することに慣れているので、それを活用しましょう。
 
-***注**: gitlab.com メールに関連付けて Gravatar に写真をアップロードした場合、GitLab と Slack のプロファイルに画像を設定する必要はなく、Gravatar の写真が自動的に使用されます。GitLab と Slack のプロファイルにすでに個別の写真をアップロードしている場合、それらを削除するだけで、デフォルトで Gravatar の写真が使用されます。*
+***注**： gitlab.com メールに関連付けて Gravatar に写真をアップロードした場合、GitLab と Slack のプロファイルに画像を設定する必要はなく、Gravatar の写真が自動的に使用されます。GitLab と Slack のプロファイルにすでに個別の写真をアップロードしている場合、それらを削除するだけで、デフォルトで Gravatar の写真が使用されます。*
 
 ### Mermaid の使用
 
@@ -776,7 +776,7 @@ GitLab 共有ファイルの Google Drive リポジトリがいくつかあり�
 1. 結果のポップアップメニューから「Add to My Drive」を選択
 1. これで、まずドライブに移動し（<https://drive.google.com>）、次にそのリンクを開いてそのディレクトリに行けるようになります
 
-#### Mac に Google Drive を追加する
+#### Mac に Google Drive を追加する {#adding-google-drive-to-your-mac}
 
 Google Drive にアクセスしやすくするために、Mac Finder で通常のドライブとして Google Drive を表示できます。
 これにより、ビデオ、アナリストレポート（PDF）などのファイルの保存と表示が容易になります。

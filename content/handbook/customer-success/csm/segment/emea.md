@@ -1,11 +1,11 @@
 ---
 title: "EMEA CSM"
 upstream_path: /handbook/customer-success/csm/segment/emea/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:40:38+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-30T16:57:54+00:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 CSM 関連のハンドブックページについては、[CSM ハンドブックホームページ](/handbook/customer-success/csm/)をご覧ください。
@@ -287,7 +287,7 @@ A: いいえ、ガイダンスであり必須ではありません。推奨ラ�
 
 ### ミーティング録画とサマリー
 
-Zoom ミーティングは、Zoom が提供する AI Companion 機能を使用して[録画](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-recording)または[要約](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-ai)できます。ミーティングサマリーにより、通話に参加できなかった人が議論、決定、アクションアイテムを素早く把握できます。これにより、全員が情報を把握しやすくなり、生産性と効率性が向上します。この機能はデフォルトでオフになっており、ミーティングホストが有効にできます。ミーティングホストは、録音または要約が許容されるかどうか、常に全参加者に確認してください。また、Zoom 通話の録音または Zoom AI Companion が有効になると、すべての参加者に通知バナーが表示されます。これは顧客ミーティングでは特に重要です。顧客が Zoom 通話録音または Zoom AI Companion の使用を望まない場合は、ホストはそれをオフにしてください。通話録音については[プライバシーステートメント](https://about.gitlab.com/privacy/)にもセクションがあります。
+Zoom ミーティングは、Zoom が提供する AI Companion 機能を使用して[録画](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording)または[要約](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-ai)できます。ミーティングサマリーにより、通話に参加できなかった人が議論、決定、アクションアイテムを素早く把握できます。これにより、全員が情報を把握しやすくなり、生産性と効率性が向上します。この機能はデフォルトでオフになっており、ミーティングホストが有効にできます。ミーティングホストは、録音または要約が許容されるかどうか、常に全参加者に確認してください。また、Zoom 通話の録音または Zoom AI Companion が有効になると、すべての参加者に通知バナーが表示されます。これは顧客ミーティングでは特に重要です。顧客が Zoom 通話録音または Zoom AI Companion の使用を望まない場合は、ホストはそれをオフにしてください。通話録音については[プライバシーステートメント](https://about.gitlab.com/privacy/)にもセクションがあります。
 
 ## Slack チャンネル
 

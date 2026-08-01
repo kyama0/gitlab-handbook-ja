@@ -3,7 +3,7 @@ title: "SentinelOne エンドポイント検出と対応 (EDR)"
 upstream_path: /handbook/security/corporate/systems/sentinelone/
 upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
 translated_at: "2026-07-30T07:19:19+09:00"
-translator: claude
+translator: codex
 stale: false
 lastmod: "2026-07-28T16:24:24+01:00"
 ---
@@ -104,7 +104,7 @@ SentinelOne があなたの職責遂行能力に問題を引き起こしてい�
 
 はい。GitLab のコンピューティングリソース、インフラ、または環境にアクセスするために使用されるホストコンピュータ上の各 OS には、EDR エージェントをインストールする必要があります。
 
-### 仮想マシン
+### 仮想マシン {#virtual-machines}
 
 > ラップトップ上にいくつかの仮想ホスト/マシンがありますが、すべてにエージェントが必要ですか？
 

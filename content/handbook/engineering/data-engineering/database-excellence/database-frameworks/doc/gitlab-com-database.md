@@ -1,11 +1,11 @@
 ---
 title: 開発者向け GitLab.com データベースの操作方法
 upstream_path: /handbook/engineering/data-engineering/database-excellence/database-frameworks/doc/gitlab-com-database/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-27T10:00:00Z"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:19:21+09:00"
+translator: codex
 stale: false
-lastmod: "2025-11-19T13:56:02-06:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 開発者向け GitLab.com データベース操作ガイド
@@ -26,19 +26,19 @@ GitLab.com は大規模な PostgreSQL データベース（このドキュメン
 
 これは最も直接的なアクセスタイプです。実際のデータベースのレプリカ（通常はライブトラフィックを処理している）への psql コンソールにアクセスできます。コンソールは読み取り専用で、15秒のステートメントタイムアウトを遵守する必要があります。
 
-アクセス方法: [アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request)を申請し、*本番データベースコンソールアクセス*（ロール: `db-console`）を要求して永続的な SSH アクセスを受け取るか、または[Teleport を使用して一時アクセスをリクエスト](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/teleport/Connect_to_Database_Console_via_Teleport.md)してください（推奨）。SSH アクセスの設定については以下を参照してください。
+アクセス方法: [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)を申請し、*本番データベースコンソールアクセス*（ロール: `db-console`）を要求して永続的な SSH アクセスを受け取るか、または[Teleport を使用して一時アクセスをリクエスト](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/teleport/Connect_to_Database_Console_via_Teleport.md)してください（推奨）。SSH アクセスの設定については以下を参照してください。
 
 ##### 「アーカイブ」レプリカへのアクセス
 
 この場合、「アーカイブ」レプリカへの psql コンソールにアクセスできます。これはライブトラフィックを処理しないデータベースのレプリカで、むしろ「探索的な」方法での使用に適しています（分析的なクエリにも適しています）。コンソールアクセスは読み取り専用で、15分のステートメントタイムアウトが適用されます。`show statement_timeout` コマンドをデータベースコンソールで実行して確認できます。
 
-アクセス方法: [アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request)を申請し、*本番環境のアーカイブデータベースへのコンソールアクセス*（ロール: `db-console-archive`）を要求してください。SSH アクセスの設定については以下を参照してください。
+アクセス方法: [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)を申請し、*本番環境のアーカイブデータベースへのコンソールアクセス*（ロール: `db-console-archive`）を要求してください。SSH アクセスの設定については以下を参照してください。
 
 ##### Rails コンソールアクセス
 
 Rails コンソールもデータベースへのアクセスに使用できます。これは通常、読み書き可能なコンソールであるため、細心の注意を払って使用してください。
 
-アクセス方法: [アクセスリクエスト](/handbook/security/corporate/end-user-services/access-requests/#individual-or-bulk-access-request)を申請し、*本番環境の Rails コンソールアクセス*（ロール: `rails-console`）を要求して永続的な SSH アクセスを受け取るか、または[Teleport を使用して一時アクセスをリクエスト](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/teleport/Connect_to_Rails_Console_via_Teleport.md)してください（推奨）。SSH アクセスの設定については以下を参照してください。
+アクセス方法: [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/#individual-or-bulk-access-request)を申請し、*本番環境の Rails コンソールアクセス*（ロール: `rails-console`）を要求して永続的な SSH アクセスを受け取るか、または[Teleport を使用して一時アクセスをリクエスト](https://gitlab.com/gitlab-com/runbooks/-/blob/master/docs/teleport/Connect_to_Rails_Console_via_Teleport.md)してください（推奨）。SSH アクセスの設定については以下を参照してください。
 
 ##### 直接アクセスのための SSH 設定
 

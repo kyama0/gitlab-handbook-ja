@@ -2,11 +2,11 @@
 title: "コンティンジェントワーカーの採用 - 開発部門"
 description: "開発部門がエンジニアをコンティンジェントワーカーとして採用する方法"
 upstream_path: /handbook/engineering/workflow/development-processes/hiring-contractors/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T08:36:01+09:00"
-translator: claude
+upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
+translated_at: "2026-07-31T08:13:25+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-08T14:46:05-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 GitLabは通常、法人とPEO（Professional Employer Organization）を通じて開発チームに正規雇用のフルタイムエンジニアを採用することを優先しています。しかし、チームが業務遂行を支援する一時的なコンティンジェントワーカーを採用する必要が生じる場合があります。
@@ -76,7 +76,7 @@ Coupaの購入依頼が承認されると、ベンダー/コンティンジェ�
 
 契約処理が完了したら、新しいコンティンジェントワーカーをプロジェクトまたはチームにオンボーディングしたいと思います。これは、業務の性質、チーム、プロジェクトによって、コンティンジェントワーカーごとに大きく異なります。
 
-一般的に言えば、コンティンジェントワーカーは「一時的なサービスプロバイダー（Temporary Service Providers）」と呼ばれることを知っておく必要があります。ハンドブックには、彼らの[ライフサイクル](https://internal.gitlab.com/handbook/security/corporate/end-user-services/access-request/temporary-service-providers/)、アクセスリクエストの作成方法、オンボーディングおよびオフボーディングについての具体的なドキュメントがあります。
+一般的に言えば、コンティンジェントワーカーは「一時的なサービスプロバイダー（Temporary Service Providers）」と呼ばれることを知っておく必要があります。ハンドブックには、彼らの[ライフサイクル](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/access-request/temporary-service-providers/)、アクセスリクエストの作成方法、オンボーディングおよびオフボーディングについての具体的なドキュメントがあります。
 
 一般的なガイドラインとして、以下のことを実施してください:
 

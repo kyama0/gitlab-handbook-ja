@@ -602,7 +602,7 @@ GitLab は [$5,000（USD）](/handbook/total-rewards/compensation/#exchange-rate
 
 固定資産の請求書と購入領収書は最低 5 年間保管されます。
 
-### 固定資産台帳と資産追跡
+### 固定資産台帳と資産追跡 {#fixed-asset-register-and-asset-tracking}
 
 会社が支払った品目は会社の財産です。購入価格が [$5,000 USD](/handbook/total-rewards/compensation/#exchange-rates) を超える資産または主要コンポーネント資産は、NetSuite 固定資産管理（FAM）モジュールを通じて記録・追跡されます。これには個別購入資産の詳細が含まれます。NetSuite FAM が提供する資産台帳レポートは、以下の情報を含む個別購入資産を提供します：
 
