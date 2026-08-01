@@ -134,9 +134,9 @@ eval "$(pyenv init -)"
 - `.dbt/profiles.yml` を自分固有のユーザー設定で更新したことを確認します
 - SSH 設定が [GitLab の手順](https://docs.gitlab.com/user/ssh/)に従ってセットアップされていることを確認します。鍵は `~/.ssh/` にあるはずで、パスワードなしで生成されているはずです。
   - メインプロジェクトで `dbt deps` を実行するために、[このプロジェクト](https://gitlab.com/gitlab-data/data-tests)へのアクセス権も必要になります。
-- **注**: デフォルトのブラウザが chrome に設定されていることを確認します。組み込みの SSO ログインは chrome でのみ動作します
-- **注**: `/analytics` リポジトリがある場所のフォルダにいることを確認します。すべてを適切にインストールしていれば、`jump analytics` で `dbt` コマンドを正常に実行するために必要な場所に移動できます。
-- **注**: dbt を初めて実行する前に `make prepare-dbt` を実行します。これにより venv がインストールされていることが保証されます。
+- **注**： デフォルトのブラウザが chrome に設定されていることを確認します。組み込みの SSO ログインは chrome でのみ動作します
+- **注**： `/analytics` リポジトリがある場所のフォルダにいることを確認します。すべてを適切にインストールしていれば、`jump analytics` で `dbt` コマンドを正常に実行するために必要な場所に移動できます。
+- **注**： dbt を初めて実行する前に `make prepare-dbt` を実行します。これにより venv がインストールされていることが保証されます。
   - これは `poetry` インストールスクリプトのダウンロードと実行を含む[一連のコマンド](https://gitlab.com/gitlab-data/analytics/-/blob/master/Makefile#L111-114)を実行します。
   - `urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1124)>` のような証明書エラーが出た場合は、これらの [StackOverflow の手順](https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org/53310545#53310545)に従ってください。
   - `ssh: connect to host gitlab.com port 22: Operation timed out fatal: Could not read from remote repository.` のようなエラーが出て、正しいアクセス権があることとリポジトリが存在することを確認済みの場合、ポート 22 での GitLab への SSH 接続がネットワーク/ファイアウォールによってブロックされている SSH の問題である可能性があります。これを解決するには、SSH がポート 443 で GitLab の代替 SSH サービスを使うように設定します。
@@ -1781,11 +1781,11 @@ dbt のスナップショットは [SCD Type 2](https://en.wikipedia.org/wiki/Sl
 
 ### スナップショットのベストプラクティス {#snapshot-best-practices}
 
-- **データベースとスキーマの設定**: データベースとスキーマを `dbt_project.yml` で設定します。データベースには環境変数を使い、スキーマを `snapshots` に設定します。これにより一貫性が確保され、環境間でのデプロイが簡素化されます。
-- **命名規約に従う**: データウェアハウス内のテーブル名は `{source_table_name}_snapshots` の命名規約に従うべきです。
-- **変換を避ける**: スナップショットモデルでは、重複排除以外の変換は最小限にします。クリーニングや変換のロジックは、スナップショットをシンプルに保つために下流で扱うべきです。
-- **タイムスタンプ戦略を優先する**: 信頼できる `updated_at` フィールドが利用できない場合を除き、`check` より `timestamp` 戦略を優先します。ただし、Salesforce では `SystemModstamp` フィールドが数式フィールドへの変更をキャプチャしないことに注意してください。SFDC のスナップショットでは、更新が見逃されないように、`check` 戦略を使ってすべての列を検証する方が良いです。スナップショット戦略の詳細については、[snapshot strategies](https://docs.getdbt.com/reference/resource-configs/strategy) の dbt ドキュメントを参照してください。
-- **`invalidate_hard_deletes` を有効にする**: 削除されたレコードを追跡して除外することが重要なスナップショットには、`invalidate_hard_deletes` オプションを使います。この設定を有効にすると、ソースから削除されたレコードには、NULL のままにする代わりに有効な終了タイムスタンプ（`dbt_valid_to`）が割り当てられます。
+- **データベースとスキーマの設定**： データベースとスキーマを `dbt_project.yml` で設定します。データベースには環境変数を使い、スキーマを `snapshots` に設定します。これにより一貫性が確保され、環境間でのデプロイが簡素化されます。
+- **命名規約に従う**： データウェアハウス内のテーブル名は `{source_table_name}_snapshots` の命名規約に従うべきです。
+- **変換を避ける**： スナップショットモデルでは、重複排除以外の変換は最小限にします。クリーニングや変換のロジックは、スナップショットをシンプルに保つために下流で扱うべきです。
+- **タイムスタンプ戦略を優先する**： 信頼できる `updated_at` フィールドが利用できない場合を除き、`check` より `timestamp` 戦略を優先します。ただし、Salesforce では `SystemModstamp` フィールドが数式フィールドへの変更をキャプチャしないことに注意してください。SFDC のスナップショットでは、更新が見逃されないように、`check` 戦略を使ってすべての列を検証する方が良いです。スナップショット戦略の詳細については、[snapshot strategies](https://docs.getdbt.com/reference/resource-configs/strategy) の dbt ドキュメントを参照してください。
+- **`invalidate_hard_deletes` を有効にする**： 削除されたレコードを追跡して除外することが重要なスナップショットには、`invalidate_hard_deletes` オプションを使います。この設定を有効にすると、ソースから削除されたレコードには、NULL のままにする代わりに有効な終了タイムスタンプ（`dbt_valid_to`）が割り当てられます。
 
 ### スナップショット MR テンプレート {#snapshot-mr-template}
 

@@ -74,11 +74,11 @@ Issue が `> 3 ウェイト` の場合は、Epic に昇格させ（クイック�
 すべてのティア T1 および T2 のロードマップ項目と、複数のマイルストーンにまたがるイニシアチブに対して、[アーキテクチャ設計ワークフロー](../../architecture/workflow/) を使用して[設計ドキュメント](../../architecture/design-documents/)を作成することを推奨します。
 このアプローチにはいくつかのメリットがあります:
 
-1. **単一情報源（SSOT）**: 設計ドキュメントはイニシアチブに関連するすべての重要な情報の中心的な場所となり、様々な場所にある意思決定を検索する時間を削減します。
-2. **可視性の向上**: 設計ドキュメントを作成することで、[ワークアイテムフレームワーク](../../architecture/design-documents/work_items/)、[設定可能なワークアイテムタイプ](../../architecture/design-documents/configurable_work_item_types/)、[カスタムフィールド](../../architecture/design-documents/work_items_custom_fields/)、[カスタムステータス](../../architecture/design-documents/work_items_custom_status/)、[GLQL](../../architecture/design-documents/glql/)、フロントエンド主導のビューなど、Plan ステージで行われた作業の認知度を高めます。
-3. **発見可能性**: 設計ドキュメントは[公開ハンドブックを通じて](../../architecture/design-documents/)簡単にアクセスでき、エンジニアリングのベストプラクティスに沿っています。
-4. **協働的な意思決定**: [変更と議論はマージリクエストを通じて行われます](../../architecture/workflow/#why-are-design-documents-tracked-in-merge-requests)。これにより、関係するすべてのチームメンバーに可視性が確保されます。
-5. **包括的なエントリポイント**: 設計ドキュメントはイニシアチブの主要なエントリポイントとして機能し、以下が含まれます:
+1. **単一情報源（SSOT）**： 設計ドキュメントはイニシアチブに関連するすべての重要な情報の中心的な場所となり、様々な場所にある意思決定を検索する時間を削減します。
+2. **可視性の向上**： 設計ドキュメントを作成することで、[ワークアイテムフレームワーク](../../architecture/design-documents/work_items/)、[設定可能なワークアイテムタイプ](../../architecture/design-documents/configurable_work_item_types/)、[カスタムフィールド](../../architecture/design-documents/work_items_custom_fields/)、[カスタムステータス](../../architecture/design-documents/work_items_custom_status/)、[GLQL](../../architecture/design-documents/glql/)、フロントエンド主導のビューなど、Plan ステージで行われた作業の認知度を高めます。
+3. **発見可能性**： 設計ドキュメントは[公開ハンドブックを通じて](../../architecture/design-documents/)簡単にアクセスでき、エンジニアリングのベストプラクティスに沿っています。
+4. **協働的な意思決定**： [変更と議論はマージリクエストを通じて行われます](../../architecture/workflow/#why-are-design-documents-tracked-in-merge-requests)。これにより、関係するすべてのチームメンバーに可視性が確保されます。
+5. **包括的なエントリポイント**： 設計ドキュメントはイニシアチブの主要なエントリポイントとして機能し、以下が含まれます:
    - エグゼクティブサマリー
    - 関連する Epic、Issue、Wiki ページへのリンク
    - ステータス更新へのリンク

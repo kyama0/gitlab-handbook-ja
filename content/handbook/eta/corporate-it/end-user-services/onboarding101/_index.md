@@ -37,7 +37,7 @@ GitLab への参加、おめでとうございます！このページでは、I
 
 ## ラップトップのセットアップ: MacBook {#laptop-setup-macbook}
 
-> **重要**: 入社日まで業務用 MacBook にはアクセスできません。入社日になったら、このガイドに従ってください。
+> **重要**： 入社日まで業務用 MacBook にはアクセスできません。入社日になったら、このガイドに従ってください。
 
 ### MacBook ステップ 1: Okta アカウントを有効化する {#macbook-step-1-activate-your-okta-account}
 
@@ -48,7 +48,7 @@ GitLab への参加、おめでとうございます！このページでは、I
 
 ### MacBook ステップ 2: 初期セットアップ {#macbook-step-2-initial-setup}
 
-> **重要**: ラップトップで `Remote Management` を利用できない場合は、[Jamf MDM Setup Guide](/handbook/security/corporate/systems/jamf/setup/)を使用してデバイスを手動で登録してください。
+> **重要**： ラップトップで `Remote Management` を利用できない場合は、[Jamf MDM Setup Guide](/handbook/security/corporate/systems/jamf/setup/)を使用してデバイスを手動で登録してください。
 
 <ol>
   <li>GitLab ラップトップの電源を入れます</li>
@@ -177,7 +177,7 @@ GitLab への参加、おめでとうございます！このページでは、I
 
 ### Linux ステップ 2: Okta のセットアップ {#linux-step-2-okta-setup}
 
-> **重要**: Linux の Web ブラウザは Dell ラップトップの指紋リーダーにアクセスできません。Okta のパスキーを保存するには、YubiKey または携帯電話のいずれかを使用する必要があります。<br>
+> **重要**： Linux の Web ブラウザは Dell ラップトップの指紋リーダーにアクセスできません。Okta のパスキーを保存するには、YubiKey または携帯電話のいずれかを使用する必要があります。<br>
 ラップトップと一緒に YubiKey は届きませんが、[こちら](/handbook/security/corporate/systems/yubikey/purchasing/)の手順に従ってリクエストできます。<br>
 
 <ol>

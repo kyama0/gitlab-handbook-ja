@@ -524,9 +524,9 @@ Fulfillment はインシデント対応のために [Tier 2 SME オンコール�
 
 - インシデントまたは停止の間、Engineer on Call (EOC) は incident.io を通じて Fulfillment Tier 2 SME オンコールローテーションにエスカレートできます
 - Tier 2 SME ローテーションは [定義されたエスカレーションパス](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/) に従います:
-  - **レベル 1**: スケジュールローテーションに基づく現在の SME オンコール (EMEA、AMER、または APAC)
-  - **レベル 2**: レベル 1 が 15 分以内に確認応答しない場合、エスカレーションはラウンドロビンで全チームメンバーに進行
-  - **レベル 3**: [James Lopez](https://gitlab.com/jameslopez) へのさらなるエスカレーション
+  - **レベル 1**： スケジュールローテーションに基づく現在の SME オンコール (EMEA、AMER、または APAC)
+  - **レベル 2**： レベル 1 が 15 分以内に確認応答しない場合、エスカレーションはラウンドロビンで全チームメンバーに進行
+  - **レベル 3**： [James Lopez](https://gitlab.com/jameslopez) へのさらなるエスカレーション
 
 **停止のための追加の自動通知:**
 

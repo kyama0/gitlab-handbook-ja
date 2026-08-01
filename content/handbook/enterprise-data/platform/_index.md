@@ -1222,7 +1222,7 @@ S3 --> workato{{Workato recipe}} --> target[(Target)]
 
 dbtモデル（例: [`pump_smb_daily_case_automation`](https://dbt.gitlabdata.com/#!/model/model.gitlab_snowflake.pump_smb_daily_case_automation)）はSnowflakeでマテリアライズされます。[Data Pump Airflow DAG](https://airflow.gaprd.gke.gitlab.net/dags/data_pumps/grid) は、その後、結果をデータチームの [gitlab-com-snowflake-data-pump](https://us-east-1.console.aws.amazon.com/s3/buckets/gitlab-com-snowflake-data-pump?region=us-east-1&tab=objects) S3バケットに直接エクスポートします。そこで、Workato recipeがそれを取り上げ、ターゲットアプリケーションに配信します。
 
-**現在のスケジュール**:
+**現在のスケジュール**：
 
 > ⚠️ このプロセス全体は固定時間スケジュールで時間トリガーされており、データレイテンシが（より）高くなる可能性があることに注意してください。dbt DAGの完了に近いAirflow Exportsをスケジュールしてレイテンシを減らす [follow-up issue](https://gitlab.com/gitlab-data/analytics/-/issues/26579) があります。
 

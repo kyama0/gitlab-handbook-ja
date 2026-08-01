@@ -58,15 +58,15 @@ GCP プロジェクトへのアクセスについての追加サポートは、[
 
 8. *左側*のメニューで以下のセクションをクリックしてクラスターを設定します:
 
-   - **クラスターの基本**: クラスター名（例：`yourname-cluster`）を指定し、「ロケーションタイプ」として **ゾーン** を選択します。
+   - **クラスターの基本**： クラスター名（例：`yourname-cluster`）を指定し、「ロケーションタイプ」として **ゾーン** を選択します。
 
      <img src="https://storage.googleapis.com/gitlab-demosys-docs-assets/tutorials/getting-started/configuring-group-cluster-23.png"  style="width: 75%" alt=""/>
 
-   - **ノードプール > default-pool**: 「ノード数」に **1**（一つ）を指定します。
+   - **ノードプール > default-pool**： 「ノード数」に **1**（一つ）を指定します。
 
      <img src="https://storage.googleapis.com/gitlab-demosys-docs-assets/tutorials/getting-started/configuring-group-cluster-24.png"  style="width: 75%" alt=""/>
 
-   - **ノードプール > default-pool > ノード**: 「マシンタイプ」に **e2-standard-2** を選択します（推奨）。
+   - **ノードプール > default-pool > ノード**： 「マシンタイプ」に **e2-standard-2** を選択します（推奨）。
 
      <img src="https://storage.googleapis.com/gitlab-demosys-docs-assets/tutorials/getting-started/configuring-group-cluster-25.png"  style="width: 75%" alt=""/>
 

@@ -47,7 +47,7 @@ stale: false
 各 Cell の Prometheus エンドポイントは、次を備える Envoy Gateway（Gateway API、`gateway.networking.k8s.io`）リソースを通じて公開します。
 
 - Gateway での **TLS 終端**（cert-manager 管理の証明書。専用 HTTP リスナーの ACME HTTP-01 によって更新）。AWS の Cell と GCP の Grafana 間のマシン間トラフィックを保護します。
-- **パスフィルタリング**: `HTTPRoute` は、Grafana に必要な読み取り専用の Prometheus クエリサーフェスのみを公開します。`/api/v1/query`、`/api/v1/query_range`、`/api/v1/query_exemplars` です。管理、書き込み、設定のエンドポイントは、意図的にルーティングせずブロックしたままにします。`/api/v1/admin/*`、`/api/v1/write`、`/-/reload`、`/-/quit`、`/federate`、`/api/v1/status/config`、`/api/v1/status/flags`。
+- **パスフィルタリング**： `HTTPRoute` は、Grafana に必要な読み取り専用の Prometheus クエリサーフェスのみを公開します。`/api/v1/query`、`/api/v1/query_range`、`/api/v1/query_exemplars` です。管理、書き込み、設定のエンドポイントは、意図的にルーティングせずブロックしたままにします。`/api/v1/admin/*`、`/api/v1/write`、`/-/reload`、`/-/quit`、`/federate`、`/api/v1/status/config`、`/api/v1/status/flags`。
 - Envoy Gateway `SecurityPolicy` による **CIDR 許可リスト**。既知の Grafana エグレス IP への受信アクセスを制限します。ポリシーは常に作成され、**fail closed** になります。オブザーバビリティ許可リストが空の場合、保護されていないルートではなく全拒否ポリシーになります。このホストでは Cloudflare WAF がバイパスされるため、これは重要です。
 - **mTLS はデフォルトで無効**ですが、Gateway を再設計せずに Instrumentor テナントモデル（`prometheus_central_grafana_mtls_enabled`）を通じて Cell ごとに有効化できます。有効にすると、Envoy Gateway `ClientTrafficPolicy` は、テナントごとの CA（cert-manager 発行の `prometheus-mtls-ca-tls`）で署名されたクライアント証明書を要求します。この場合、CIDR 許可リストだけでは不十分です。ポリシーは `sectionName` によって HTTPS クエリリスナー（`prometheus-web-<i>`）のみを対象にします。クライアント証明書を提示しない HTTP-01 証明書更新を動作させ続けるため、ACME HTTP リスナーを除外します。また、`mergeGateways` が有効であるため、Gateway 全体に適用する（`sectionName` を持たない）ポリシーでは、テナントクラスターのマージされた Gateway のすべてのリスナーに誤って mTLS を強制し、Grafana 向け Prometheus パスだけでなく Cell の他のすべてのワークロードトラフィックも壊してしまいます。
 

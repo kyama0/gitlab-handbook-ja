@@ -69,10 +69,10 @@ GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales�
 
 ## 独立した環境
 
-- **AWS アカウント**: GitLab Sandbox Cloud を使用して独自の独立した AWS アカウントをプロビジョニングするための[手順](#aws-account-or-gcp-project-sandbox-cloud)をご覧ください。
-- **GCP プロジェクト**: GitLab Sandbox Cloud を使用して独自の独立した GCP プロジェクトをプロビジョニングするための[手順](#aws-account-or-gcp-project-sandbox-cloud)をご覧ください。
-- **AWS Elastic Kubernetes Service (EKS) クラスター**: AWS アカウントを使用して、GitLab ドキュメントの [EKS クラスターの追加](https://docs.gitlab.com/ee/user/project/clusters/add_eks_clusters.html)に従い EKS クラスターをプロビジョニングできます。
-- **GCP Google Kubernetes Engine (GKE) クラスター**: `group-cs` GCP プロジェクトのクラスターについての質問は、Demo Systems Slack チャンネルで尋ねてください。クラスターを GitLab グループに追加するには、[グループレベルの Kubernetes クラスターで GitLab を設定するチュートリアル](/handbook/customer-success/demo-systems/tutorials/getting-started/configuring-group-cluster/)をご参照ください。
+- **AWS アカウント**： GitLab Sandbox Cloud を使用して独自の独立した AWS アカウントをプロビジョニングするための[手順](#aws-account-or-gcp-project-sandbox-cloud)をご覧ください。
+- **GCP プロジェクト**： GitLab Sandbox Cloud を使用して独自の独立した GCP プロジェクトをプロビジョニングするための[手順](#aws-account-or-gcp-project-sandbox-cloud)をご覧ください。
+- **AWS Elastic Kubernetes Service (EKS) クラスター**： AWS アカウントを使用して、GitLab ドキュメントの [EKS クラスターの追加](https://docs.gitlab.com/ee/user/project/clusters/add_eks_clusters.html)に従い EKS クラスターをプロビジョニングできます。
+- **GCP Google Kubernetes Engine (GKE) クラスター**： `group-cs` GCP プロジェクトのクラスターについての質問は、Demo Systems Slack チャンネルで尋ねてください。クラスターを GitLab グループに追加するには、[グループレベルの Kubernetes クラスターで GitLab を設定するチュートリアル](/handbook/customer-success/demo-systems/tutorials/getting-started/configuring-group-cluster/)をご参照ください。
 
 ## はじめ方
 
