@@ -1,16 +1,16 @@
 ---
 title: "GitLab の倫理・コンプライアンスプログラム"
 upstream_path: "/handbook/legal/ethics-compliance-program/"
-upstream_sha: "50ee631c98005b47a0caea9d46e4ba5cfc62891a"
-translated_at: "2026-07-23T06:46:47+09:00"
-translator: claude
+upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
+translated_at: "2026-08-01T15:50:15+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-22T15:42:33+00:00"
+lastmod: "2026-07-31T20:42:15+00:00"
 ---
 
 ## ミッション
 
-GitLab Inc.（その子会社と合わせて***「GitLab」***、***「私たち」***）は、私たちが行うすべてのことにおいて合法的かつ倫理的な行動に取り組んでおり、GitLab の取締役会（***「取締役会」***）のメンバーおよび役員、従業員、請負業者（総称して***「チームメンバー」***）が、誠実に、倫理的に、そして適用されるすべての法律と規制に従ってビジネスを行うことを期待しています。
+GitLab Inc.（その子会社と合わせて***「GitLab」***、***「私たち」***、***「私たちの」***）は、私たちが行うすべてのことにおいて合法的かつ倫理的な行動に取り組んでおり、GitLab の取締役会（***「取締役会」***）のメンバーおよび役員、従業員、請負業者（総称して***「チームメンバー」***）が、誠実に、倫理的に、そして適用されるすべての法律と規制に従ってビジネスを行うことを期待しています。
 
 GitLab のコンプライアンス文化は、行動規範・倫理規範（Code of Business Conduct and Ethics）および各種支援ポリシー（不正防止ポリシー、報復禁止ポリシーなど、総称して***「コンプライアンス基準」***）に反映・強化されています。GitLab は倫理的行動へのコミットメントに沿った個人で構成されており、お客様、株主、そして互いに対して責任を持っているため、チームメンバーのための運営フレームワークとしてこの倫理・コンプライアンスプログラム（***「プログラム」***）を設計しました。このプログラムは（特に）GitLab のコンプライアンス基準が最新で、完全で、容易にアクセスできる状態にあることを確保することに専念しています。チームメンバーは、継続的なトレーニング、啓発キャンペーン、年次レビューと確認の要求、および #compliance-legal を含む追加リソースを通じてこれらのコンプライアンス基準について教育されています。
 
@@ -95,7 +95,7 @@ GitLab が私たちのポリシーが対処するよう設計された常に進�
 
 ### 職場ハラスメントの報告（非匿名のみ）
 
-職場ハラスメントの懸念を**非匿名**で報告することに問題がないチームメンバーは、GitLab の[ハラスメント申告フォーム](https://docs.google.com/document/d/1Xk5SXvh2kpO-w-TdykiczjhXNrEBjbMwDQHEt6lMhIk/edit?usp=sharing)を使用してください。フォームに記入し、チームメンバーリレーションズスペシャリスト（<teammemberrelations@gitlab.com>）に送付してください。[ハラスメント防止ポリシー](/handbook/people-group/anti-harassment/#types-of-harassment)を読んで、ハラスメントが取り得る様々な形態を理解し、[GitLab の最高人事責任者](mailto:rallen@gitlab.com)、[GitLab の最高法務責任者](mailto:CLO@gitlab.com)、[チームメンバーリレーションズチーム](/handbook/people-group/team-member-relations)、または[ピープルビジネスパートナー](/handbook/people-group/people-business-partners/#people-business-partner-alignments)などの代替報告手段を理解してください。
+チームメンバーは、差し支えなければ、GitLab の[ハラスメント申告フォーム](https://docs.google.com/document/d/1Xk5SXvh2kpO-w-TdykiczjhXNrEBjbMwDQHEt6lMhIk/edit?usp=sharing)を使用して、職場ハラスメントに関する懸念を**非匿名**で報告してください。フォームに記入し、Team Member Relations Specialists（<teammemberrelations@gitlab.com>）に送付してください。[ハラスメント防止ポリシー](/handbook/people-group/anti-harassment/#types-of-harassment)を読んで、ハラスメントが取り得る様々な形態を理解し、[GitLab の Chief People Officer](mailto:rallen@gitlab.com)、[GitLab の Chief Legal Officer](mailto:CLO@gitlab.com)、[Team Member Relations Team](/handbook/people-group/team-member-relations)、または[People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments)などの代替報告手段を理解してください。
 
 ### チームメンバー関係に関する懸念の報告（匿名または非匿名）
 
@@ -108,11 +108,15 @@ GitLab が私たちのポリシーが対処するよう設計された常に進�
 - 電子メール：<reports@lighthouse-services.com>（報告に会社名を含めること）
 - ファックス：(215) 689-3885（報告に会社名を含めること）
 
-チームメンバーは代替として、GitLab のハラスメント防止ポリシーへの違反を含むチームメンバー関係に関する懸念を、GitLab の[最高法務責任者](mailto:rschulman@gitlab.com)、[最高人事責任者](mailto:rallen@gitlab.com)、[チームメンバーリレーションズチーム](/handbook/people-group/team-member-relations)、または[ビジネスピープルパートナー](/handbook/people-group/people-business-partners/#people-business-partner-alignments)に報告することもできます。
+チームメンバーは代替として、GitLab のハラスメント防止ポリシーへの違反を含むチームメンバー関係に関する懸念を、GitLab の[Chief Legal Officer](mailto:clo@gitlab.com)、[Chief People Officer](mailto:rallen@gitlab.com)、[Team Member Relations Team](/handbook/people-group/team-member-relations)、または[People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments)に報告することもできます。
+
+### 不正リスクガバナンス
+
+GitLab の不正リスク管理プログラムは、Employment Legal、Ethics & Compliance、Internal Audit、Finance、Security を含む複数のステークホルダーにまたがって、組織構造、役割のオーナーシップ、エスカレーションパスを定義する部門横断的なガバナンスモデルの下で運用されています。組織構造、役割のオーナーシップ（RACI）、不正の防止と検出の活動、トレーニング要件、経営幹部および Audit Committee への報告を含む、プログラム全体のリファレンスについては、[不正ガバナンスフレームワーク](/handbook/legal/ethics-compliance-program/fraud-governance-framework/)を参照してください。
 
 ### マネージャーの役割と責任
 
-チームメンバーは、不正行為、職場ハラスメント、およびチームメンバー関係に関するその他の懸念について、問題がある場合はマネージャーに報告してください。報告を受けた（口頭または書面）、または不正行為、職場ハラスメント、その他の懸念を認識したマネージャーは、その不正行為が関連するピープルビジネスパートナーに、または上記の報告手段の一つを通じて即座に報告されることを確認しなければなりません。
+チームメンバーは、差し支えなければ、不正行為、職場ハラスメント、およびチームメンバー関係に関するその他の懸念について、マネージャーに報告してください。報告を受けた（口頭または書面）、または不正行為、職場ハラスメント、その他の懸念を認識したマネージャーは、その不正行為が関連する People Business Partner に、または上記の報告手段の一つを通じて即座に報告されることを確認しなければなりません。
 
 ### 調査
 
@@ -134,9 +138,9 @@ GitLab は不正行為の申し立てを非常に真剣に受け止め、解決�
 
 GitLab Inc. の[取締役会](/handbook/board-meetings/)は、その監査委員会を通じて、行動規範の管理と、コンプライアンス基準および適用される法律・規制に関する重大な問題とリスクへの対処について責任を負っています。
 
-#### 最高法務責任者
+#### Chief Legal Officer
 
-監査委員会は、行動規範の管理と解釈の日常的な責任を GitLab の最高法務責任者（***「CLO」***）に委任しています。CLO はプログラムを合理的に管理し、特に以下を行います：
+監査委員会は、行動規範の管理と解釈の日常的な責任を GitLab の Chief Legal Officer（***「CLO」***）に委任しています。CLO はプログラムを合理的に管理し、特に以下を行います：
 
 - プログラムにリソースを割り当て、プログラムの実施・維持・強化に必要な主要ステークホルダーに権限を委任すること；
 - 潜在的な違法行為や犯罪的不正行為に対応するための合理的な手順が取られることを確保すること；

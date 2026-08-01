@@ -5,14 +5,14 @@ tags:
   - security_policy
   - security_policy_cmma
 upstream_path: /handbook/security/security-and-technology-policies/change-management-policy/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:21:42+09:00"
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+translated_at: "2026-08-01T15:25:19+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T13:03:25-03:00"
+lastmod: "2026-07-30T18:09:41-07:00"
 ---
 
-{{< label name="Visibility: Non-Audit" color="#428BCA" >}}
+{{< label name="可視性: 非監査" color="#428BCA" >}}
 
 ## 目的
 
@@ -47,15 +47,15 @@ Tier 4 Administrative システムはこのポリシーのスコープの対象�
 
 ## ポリシー
 
-変更は関連手順に従って文書化されます。(CM-3)
+変更は関連手順に従って文書化されます。
 
-変更は関連手順に従ってテストされる場合があります。(CM-4)
+変更は関連手順に従ってテストされる場合があります。
 
-変更は適切なステークホルダーによってレビューされます。(CM-3, CM-4)
+変更は適切なステークホルダーによってレビューされます。
 
-変更は適切なステークホルダーによって承認されます。(CM-3)
+変更は適切なステークホルダーによって承認されます。
 
-変更は関連手順に従ってデプロイされます。(CM-5)
+変更は関連手順に従ってデプロイされます。
 
 ## スタンダード
 

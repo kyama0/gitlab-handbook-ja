@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/meetings/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
-translator: claude
+upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
+translated_at: "2026-08-01T16:12:50+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-03T13:36:56-05:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## GitLab で効果的なミーティングを運営する方法
@@ -98,7 +98,7 @@ lastmod: "2026-02-03T13:36:56-05:00"
 
 {{% cardpane %}}
 {{% card footer="どうしてもミーティングを開く必要があるなら、せめて楽しいものにしましょう！" %}}
-![GitLab marketing team Show & Tell social call](/images/all-remote/gitlab-zoom-meeting-hat-filter.jpg)
+![GitLab マーケティングチームの Show & Tell ソーシャルコール](/images/all-remote/gitlab-zoom-meeting-hat-filter.jpg)
 {{% /card %}}
 {{% /cardpane %}}
 
@@ -109,11 +109,11 @@ lastmod: "2026-02-03T13:36:56-05:00"
 
 多くの企業では、同期ミーティングはコンセンサスを生み出すメカニズムとして使われています。GitLab の[リーダーシップ](/handbook/leadership)の部分を読むとわかるように、私たちは民主的またはコンセンサス主導の会社ではありません。人々はコメントや意見を表明することを奨励されますが、最終的には一人が全員のフィードバックを聞いた後に事項を決定します。
 
-これが私たちの価値観のために機能しており、GitLab は[効率性の価値観](/handbook/values/#efficiency)に詳述された自律的に動けるマネージャーであることを楽しむ個人を採用するようになっています。チームメンバーは同期ミーティングが自分の時間の最善の使い方かどうかを決め、必要に応じて[境界線を設ける](mental-health/#be-transparent-about-boundaries)権限を与えられています。
+これが私たちの価値観のために機能しており、GitLab は[効率性の価値観](/handbook/values/#efficiency)に詳述された Manager of One であることを楽しむ人材を採用するようになっています。チームメンバーは同期ミーティングが自分の時間の最善の使い方かどうかを決め、必要に応じて[境界線を設ける](mental-health/#be-transparent-about-boundaries)権限を与えられています。
 
 #### 非同期参加を奨励するためのミーティング録画
 
-すべてのミーティングを録画することを目指すべきです。これにより、チームメンバーが起きたことに追いつき、ミーティング中に取られたメモにコンテキストを追加できます。Zoom での録画について詳しくは、[GitLab ハンドブックのヒントとテクニックセクション](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-recording)を参照してください。
+すべてのミーティングを録画することを目指すべきです。これにより、チームメンバーが起きたことに追いつき、ミーティング中に取られたメモにコンテキストを追加できます。Zoom での録画について詳しくは、[GitLab ハンドブックのヒントとテクニックセクション](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording)を参照してください。
 
 #### チームメンバーのミーティング参加管理
 
@@ -132,7 +132,7 @@ lastmod: "2026-02-03T13:36:56-05:00"
 
 ### 3. 時間通りに開始し、時間通りに終了する
 
-集中力を取り戻すのに非 trivial な量の時間が必要です。集中力の妨げにならないようにミーティングをスケジュールすることは常に可能ではありませんが、混乱を最小限に抑えるためにミーティングを時間通りに開始・終了することが重要です。
+集中力を取り戻すには、無視できないほどの時間が必要です。集中力の妨げにならないようにミーティングをスケジュールすることは常に可能ではありませんが、混乱を最小限に抑えるためにミーティングを時間通りに開始・終了することが重要です。
 
 GitLab でミーティングをスケジュールする場合、私たちは人々の時間を尊重し、Google カレンダーの「スピーディーミーティング」設定を好みます。これにより、例えば 25 分または 50 分のミーティングが実現し、次の通話を続ける前にメモを書いたり、ストレッチしたりする時間が残ります。詳しくは、[GitLab ハンドブックのコミュニケーションセクション](/handbook/communication/#scheduling-meetings)をご覧ください。
 
@@ -171,7 +171,7 @@ GitLab でミーティングをスケジュールする場合、私たちは人�
 1. ミーティングアジェンダでチームメンバーの名前を参照する際は、最初と最後の名前の両方が表示されていることを確認してください。（例：アジェンダで話者の名前を書くとき、最初と最後の名前を書くか、タグ付け機能をプレフィックスとして使用するべきです）
 1. アクションアイテムについては、[直接 GitLab の Issue に進みます](/handbook/communication/#start-with-a-merge-request)または[マージリクエスト](https://docs.gitlab.com/ee/user/project/merge_requests/)へ。これにより、アイデアが要約されてすぐに行動を開始できるミーティングからの直接のテイクアウェイが生まれます。参照と完全性のためにミーティングアジェンダに Issue や MR へのリンクを追加してください。
 1. オプションの参加者や、ライブでミーティングに参加できなかった重要なチームメンバーに対しては、結果の GitLab Issue でタグ付けすることで、彼らが自分のスケジュールに合ったときにキャッチアップして貢献できるようにします。
-1. ミーティングを録画してください。不要なミーティングはいつでも削除できますが、ミーティングを遡って録画することはできません。これは、プレゼンテーションをしたい場合や書き起こしをしたい場合に特に重要です。Zoom の[クラウド録画](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0064927)は[書き起こし](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-recording/#recording-video-transcripts)をネイティブでサポートしており、[Otter](https://otter.ai)も人気の書き起こしツールです。
+1. ミーティングを録画してください。不要なミーティングはいつでも削除できますが、ミーティングを遡って録画することはできません。これは、プレゼンテーションをしたい場合や書き起こしをしたい場合に特に重要です。Zoom の[クラウド録画](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0064927)は[書き起こし](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording/#recording-video-transcripts)をネイティブでサポートしており、[Otter](https://otter.ai)も人気の書き起こしツールです。
 
 ### 6. 適切なツールを使用する
 
@@ -218,7 +218,7 @@ GitLab での必要なミーティング数を削減するための主要なイ�
 
 ### 9. 目をそらしても構わない
 
-多くの組織がミーティングの実用性を改善しようとしてきました（通常は実際に減らすための回避策として）。GitLab では、チームメンバーが自分の注意のマネージャーになるよう権限を与えています。
+多くの組織は、ミーティング自体を減らす代わりの回避策として、「画面を使わない」ミーティングを義務化し、ミーティングの有用性を改善しようとしてきました。GitLab では、チームメンバーが自分の注意のマネージャーになるよう権限を与えています。
 
 1. ミーティングの（特定の部分が）自分に関係しない場合は、他のタスクに取り組むことは完全に許容されます。GitLab チームメンバーのみとのミーティングであれば、特定のトピックに費やされる時間を調整できるよう、全体的な関心レベルが見えるよう、カメラをオンにしたままにしてください。GitLab 外のメンバーが含まれるミーティングでは、カメラをオフにすることを検討してください。GitLab 外の人々は、ミーティング中に他のタスクに取り組むことが私たちにとって許容されることを知らないかもしれません。
 1. 時々、何かを繰り返してもらうよう頼むことは恥ずかしくありません。自分の注意を管理しているため、他の仕事に関わり、その後ミーティングの会話の関連する部分に引き戻されることができます。
@@ -262,7 +262,7 @@ GitLab には[感謝を述べる](/handbook/communication/#say-thanks)ために�
 1. アクションアイテム、次のステップ、または将来のミーティングをスケジュールしてください。ボールが落ちないよう、適切なディレクトリ（Google Drive、Salesforce など）に入力してください。
 1. 何かを見落とした場合は、ビデオ録画を再視聴してください。
 
-![GitLab all-remote mentor](/images/all-remote/ceo-shadow-gitlab-awesomeness.jpg)
+![GitLab オールリモートメンター](/images/all-remote/ceo-shadow-gitlab-awesomeness.jpg)
 {style="max-width: 50%;"}
 
 ### リモートミーティングのスキルをどのように向上させるか？
@@ -278,12 +278,12 @@ GitLab には[感謝を述べる](/handbook/communication/#say-thanks)ために�
 
 ### 「オールリモートバーチャル『オフサイト』」とは何か？
 
-![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
+![GitLab バリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
 
 オールリモート企業で働く場合、全参加者からの移動を必要とする従来の「オフサイト」を避ける強い傾向があります。GitLab は、重い財政的、個人的、環境的な旅行の代価なしに、そのようなミーティングから得られるより深い共通理解の一部を提供する方法として、オールリモートの「オフサイト」を[実験して](https://gitlab.com/gitlab-com/Product/issues/601)きました。これらの長く構造化されたミーティングは混合した結果をもたらしました。これまでに学んだことを以下に示します。
 
-1. オフサイトのために移動したかのように、全員のカレンダーをブロックしてください。他のすべての気晴らし（Slack、メールなど）を取り除き、電話とコンピュータで「方向不転換」モードを有効にしてください。
+1. オフサイトのために移動したかのように、全員のカレンダーをブロックしてください。他のすべての気晴らし（Slack、メールなど）を取り除き、電話とコンピューターで「おやすみモード（Do Not Disturb）」を有効にしてください。
 1. バーチャルオフサイトを計画する前に、強く望む成果を確保してください。これは理想的には日時が設定される前に議論され、アジェンダに書き込まれるべきです。
 1. リモートオフサイトの前に[非同期的に](/handbook/communication/#internal-communication)行える事前読み取りと作業を調整してください。
 1. 新たに形成されたグループについては、共有の信頼を育てるための初期のアイスブレイカーやアクティビティを含めてください。例えば、チームメンバーが組み立てたもの、または貢献したものを紹介するショー・アンド・テルから始めます。

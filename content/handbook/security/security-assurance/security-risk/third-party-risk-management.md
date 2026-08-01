@@ -5,14 +5,14 @@ tags:
   - security_standard
   - security_standard_sasr
 upstream_path: /handbook/security/security-assurance/security-risk/third-party-risk-management/
-upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
-translated_at: "2026-07-29T06:29:34+09:00"
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+translated_at: "2026-08-01T15:25:19+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-07-30T16:25:07-05:00"
 ---
 
-{{< label name="Visibility: Audit" color="#E24329" >}}
+{{< label name="可視性: 監査" color="#E24329" >}}
 
 ## GitLab の統合 Third-Party Risk Management プログラム
 
@@ -31,7 +31,7 @@ GitLab の Security Third Party Risk Management (TPRM) プログラムは、GitL
 GitLab の Security TPRM プログラムは、[Procurement](/handbook/finance/procurement/) プロセスに統合された 3 つのコンポーネントを含んでいます。
 
 1. サードパーティがデータプライバシーとセキュリティを実施する保護策を実装することを保証するためのデューデリジェンスの実施
-    - この活動は、私たちの Security Assessment Process を通じて実行されます。私たちの TPRM Assessment Report テンプレートのオープンソース版は、[Open Source Security Hub](https://gitlab.com/gitlab-security-oss/risk-mgmt/tprm-templates) で見つけることができます。
+    - この活動は、私たちの Security Assessment Process を通じて実行されます。私たちの TPRM アセスメントレポートテンプレートのオープンソース版は、[Open Source Security Hub](https://gitlab.com/gitlab-security-oss/risk-mgmt/tprm-templates) で見つけることができます。
 1. これらの保護策を実装することをサードパーティに [契約上](/handbook/finance/procurement/#3-contracting) 義務付ける
 1. サードパーティの保護策と契約された規定の遵守をモニタリングする
     - 高リスクの特定のサードパーティは年次でレビューされ、低リスクのものはこの文書内でさらに定義された間隔でレビューされます。
@@ -63,9 +63,9 @@ TPRM エンジニアは、ベンダーの取り込みと TPRM の問い合わせ
 | *これは迅速化できますか?*  | リクエストが重要で時間に敏感な場合、私たちのチームは合理的な範囲内でレビューを優先順位付けできますが、レビューを迅速化する **最良の** 方法は、ベンダーが私たちの問い合わせに迅速に応答するよう促すことです。緊急のリクエストは、#Procurement チャンネルで @Security-Risk にエスカレーションすべきです。|
 | *レビューのステータスはどのように追跡できますか?* | 更新は Zip 要求内のコメントを通じて提供されます。ステータスの更新はそこ、または #Procurement チャンネル内で要求できます。|
 | *彼らがレビューに失敗したらどうなりますか?* | [Security Notice](/handbook/security/security-assurance/security-risk/third-party-risk-management/#tprm-security-notice-process) がオープンされ、関連するステークホルダーに不備を伝達し、ビジネスニーズをサポートするための次のステップを判定します。私たちの TPRM レビューに失敗した新しいベンダーは、進む前に特定された不備に対処することが必要になる場合があります。既存のベンダーについては、不備の深刻度に応じて、是正計画またはオフボーディング計画が必要になる場合があります。|
-|*何が TPRM Assessment をトリガーしますか?* | おかしなことに、それを聞いてくれてよかった...|
+|*何が TPRM アセスメントをトリガーしますか?* | おかしなことに、それを聞いてくれてよかった...|
 
-## 何が TPRM Assessment をトリガーしますか?
+## 何が TPRM アセスメントをトリガーしますか?
 
 Security Risk は、コンプライアンスを維持し、適切な監視を確保するために、さまざまなインプットをモニタリングしています。TPRM アセスメントは、特に指定されない限り通常 12 か月間有効で、次のシナリオでトリガーされます。
 
@@ -81,7 +81,7 @@ Security Risk は、コンプライアンスを維持し、適切な監視を確
 セキュリティは GitLab のベンダー選定プロセスにおける最優先事項であり、GitLab は機密データの保護を優先し、堅牢なセキュリティ対策を維持するベンダーとパートナーシップを結ぶことに尽力しています。そのため、Security Risk は、業界標準への遵守、関連規制へのコンプライアンス、Bitsight セキュリティレーティングの健全性を含む、各ベンダーのセキュリティ慣行を徹底的に評価します。GitLab の目的は、GitLab のデータを保護し、ステークホルダーの信頼を維持するために、セキュリティの最高基準を維持することへのコミットメントを共有するベンダーとパートナーシップを確立することです。以下は、Security Risk がさまざまなタイプのベンダーをどのように評価するかの例と、購買決定を行う際にベンダーを審査するための推奨事項です。
 
 <details>
-<summary markdown="span">Software as a Service (SaaS)</summary>
+<summary markdown="span">Software as a Service（SaaS）</summary>
 
 ビジネスニーズと目標に対処するための新しいソフトウェアを検討する際、ソフトウェアの能力を評価するために活用すべき高レベルの推奨事項について以下を参照してください。
 
@@ -99,7 +99,7 @@ Security Risk は、コンプライアンスを維持し、適切な監視を確
 </details>
 
 <details>
-<summary markdown="span">Professional Services</summary>
+<summary markdown="span">プロフェッショナルサービス</summary>
 
 GitLab には、Orange または Red データにアクセスするすべての個人が、GitLab 管理デバイスの発行、または、適切なエンドポイントセキュリティコントロールが整備されていることを保証するための TPRM レビューの実施のいずれかにより、十分なエンドポイントコントロールの対象となることを保証する義務があります。プロフェッショナルサービスファームは、彼らのセキュリティ環境について十分なドキュメンテーションを提供できることが多いため、十分な保証が得られたら、彼らのエンドポイントに依存することができます。十分に文書化されたエンドポイントコントロールを持たない独立した請負業者やファームには、IT によって GitLab 管理エンドポイントが提供されます。
 
@@ -114,16 +114,16 @@ GitLab には、Orange または Red データにアクセスするすべての�
 
  </details>
 
-### TPRM Assessment Requirements {#tprm-assessment-requirements}
+### TPRM アセスメント要件 {#tprm-assessment-requirements}
 
 次の表は、異なる [GitLab データの分類](https://internal.gitlab.com/handbook/security/policies_and_standards/standards/data_classification/) にアクセスまたは送信されるベンダーに対して TPRM エンジニアが従う手順を定義しています。以下の手順は、[Procurement](/handbook/finance/procurement/#the-procurement-process) プロセス中に開始され、該当するベンダーが以下に定義された承認ウィンドウ内でレビューされていない場合のすべてのインスタンスで従われます。**[TPRM の Minimum Security Standards](#third-party-minimum-security-standards) との不整合は、ベンダー要求の拒否や Security Notice の発行につながる可能性があります。** 前回のアセスメント時に Security Notice が文書化された場合、要求承認の前に、特定された不備の現在のステータスを判定するために問い合わせが行われます。不備の性質に応じて、新しい TPRM アセスメントが必要になる場合があります。更新は Security Notice Issue 内に文書化されます。
 
 | データ<br>分類 | リクエスト | 補足<br>アンケート | Okta SSO? | 新規 BIA /<br>Tech Stack エントリ? | Bitsight<br>レビュー? | ペネトレーションテストの証拠 |
 | ------ | ------ |------ |------ |------ |------ | ------ |
-|Red SaaS Systems     |3rd Party Attestation |     はい|          はい |     はい|    はい | はい |
-|Orange SaaS Systems または Locally Hosted/Installed Systems with Data Exchange| 3rd Party Attestation|     はい|          はい|     はい|     はい | はい |
-| Orange Individual Use Software* | 3rd Party Attestation または [Self-Attestation](#standard-information-gathering-sig-questionnaire-for-vendor-self-attestation) | いいえ | いいえ | いいえ | はい | いいえ|
-|Orange Professional Services | 3rd Party Attestation または [Prof Svcs SIG](https://docs.google.com/spreadsheets/d/1xiReZd5heUl5YVFCqPxEfXJIYlqtz_LS/edit?usp=drive_link&ouid=103289635706160914358&rtpof=true&sd=true)|          N/A|     N/A| N/A|   N/A | N/A|
+|Red SaaS システム     |第三者証明 |     はい|          はい |     はい|    はい | はい |
+|Orange SaaS システムまたはデータ交換を伴うローカルホスト/インストール型システム| 第三者証明|     はい|          はい|     はい|     はい | はい |
+| Orange Individual Use Software* | 第三者証明または [Self-Attestation](#standard-information-gathering-sig-questionnaire-for-vendor-self-attestation) | いいえ | いいえ | いいえ | はい | いいえ|
+|Orange Professional Services | 第三者証明または [Prof Svcs SIG](https://docs.google.com/spreadsheets/d/1xiReZd5heUl5YVFCqPxEfXJIYlqtz_LS/edit?usp=drive_link&ouid=103289635706160914358&rtpof=true&sd=true)|          N/A|     N/A| N/A|   N/A | N/A|
 |Yellow/Green     | N/A |  N/A |  N/A |     いいえ | N/A  | N/A  |
 
 *GitLab の機密性の高いデータを収集および保管するために Web 対応のアプリケーションを利用するプロフェッショナルサービスベンダーは、一般的に Orange SaaS システムとして扱われます。*
@@ -132,7 +132,7 @@ GitLab には、Orange または Red データにアクセスするすべての�
 
 GitLab がデータを管理、所有、その他の責任を負う場合、以下の図は、サードパーティと共有されるデータの [Data Classification](/handbook/security/policies_and_standards/data-classification-standard/) に基づく TPRM 手順を示しています。
 
-{{% details summary="(Expand to view chart)" %}}
+{{% details summary="（展開してチャートを表示）" %}}
 
 ```mermaid
 graph TB
@@ -216,9 +216,9 @@ GitLab のセキュリティ要件を満たすベンダーは、以下のよう�
 
 GitLab の Third Party Risk Assessment 要件を満たさないベンダーには、[Security Notice](#tprm-security-notice-process) が必要になります。
 
-## Third Party Minimum Security Standards {#third-party-minimum-security-standards}
+## サードパーティ最低セキュリティ標準 {#third-party-minimum-security-standards}
 
-TPRM は、サードパーティをアセスメントする際にリスクベースのアプローチを利用しています。異なるベンダータイプ/リスクプロファイルをアセスメントするために使用される特定の手順は、上記の [TPRM Assessment Requirements](#tprm-assessment-requirements) セクションで確認できます。
+TPRM は、サードパーティをアセスメントする際にリスクベースのアプローチを利用しています。異なるベンダータイプ/リスクプロファイルをアセスメントするために使用される特定の手順は、上記の [TPRM アセスメント要件](#tprm-assessment-requirements) セクションで確認できます。
 
 Security Risk Team は、ベンダーと協力し、私たちのレビューを完了するために必要なドキュメンテーションを取得するために合理的なステップを踏みます。提供されるサービスと送信されるデータに応じて、これにはサードパーティセキュリティ証明とペネトレーションテストの概要などの他の関連ドキュメンテーションのリクエストが含まれる場合があります。ベンダーがこのドキュメンテーションを維持していない、または提供を拒否した場合、Security Risk チームはリクエストを拒否したり、承認前に [TPRM Security Notice](#tprm-security-notice-process) の完了を必要としたりする場合があります。
 
@@ -258,19 +258,19 @@ GitLab は、サービスプロバイダーの内部統制環境の設計およ�
   - レポート内で、条件付き意見の発行につながらない例外が特定される場合がありますが、それらが GitLab データにリスクを呈する可能性があるかどうかを判定するために、いずれの例外も以下についてレビューされるべきです。
     - **例外の性質:** 関連するコントロールと例外自体は、GitLab がそのコントロールに依存して私たちのデータを保護しているかどうかを判定するためにレビューされるべきです。
     - **経営の対応:** 例外の理由とそれに対処および是正するためにとられたステップを扱うために、経営の対応がしばしば含まれます。これは、是正が成功したことを検証するために外部監査人によって実施される再テストを伴う場合があります。
-  - これらの項目は、存在する場合、TPRM Assessment Report 内に記録されるべきです。条件付きまたは例外の性質が GitLab のセキュリティに影響することが判明し、経営の対応が是正ステップがとられたという十分な保証を提供しない場合、これは TPRM Security Notice Process を通じて Business Owner に報告されるべきです。
+  - これらの項目は、存在する場合、TPRM アセスメントレポート内に記録されるべきです。条件付きまたは例外の性質が GitLab のセキュリティに影響することが判明し、経営の対応が是正ステップがとられたという十分な保証を提供しない場合、これは TPRM Security Notice Process を通じて Business Owner に報告されるべきです。
 
 **SOC 2 Type 1:** SOC 2 Type 1 レポートは、SOC 2 Type 2「準備状況」プロセス中の予備的なアセスメントの一環としてしばしば公開されます。これは、サービスプロバイダーの環境内で整備されているコントロールの設計の限定的なスコープ、ある時点でのアセスメントであり、**コントロール運用上の有効性の検証は含まれません。そのため、Type 1 レポートは、Orange SaaS / Red システムに対する私たちのサードパーティ証明要件を扱うために単独で活用すべきではありません**。ただし、サービスプロバイダーの環境に対する保証を提供するために、ISO 27001 認証または同等の証明に追加して活用できます。
 
-**PCI Attestation of Compliance:** [PCI Attestation of Compliance (AoC)](https://www.pcisecuritystandards.org/glossary/aoc/) は、サービスプロバイダーの PCI DSS フレームワークへのコンプライアンスを検証するために、[Security Compliance Team](/handbook/security/security-assurance/security-compliance/) によって活用されます。この証明は、付随する Responsibility Matrix と共に、GitLab インフラストラクチャをホスティングするベンダーに対して一般的に必要とされます。Security Risk チームは、Security Compliance のリクエストにより必要に応じてこのドキュメンテーションを収集します。PCI AoC は、Security Risk が [TPRM Assessment Requirements](/handbook/security/security-assurance/security-risk/third-party-risk-management/#tprm-assessment-requirements) を満たすために **活用されません**。
+**PCI Attestation of Compliance:** [PCI Attestation of Compliance (AoC)](https://www.pcisecuritystandards.org/glossary/aoc/) は、サービスプロバイダーの PCI DSS フレームワークへのコンプライアンスを検証するために、[Security Compliance Team](/handbook/security/security-assurance/security-compliance/) によって活用されます。この証明は、付随する Responsibility Matrix と共に、GitLab インフラストラクチャをホスティングするベンダーに対して一般的に必要とされます。Security Risk チームは、Security Compliance のリクエストにより必要に応じてこのドキュメンテーションを収集します。PCI AoC は、Security Risk が [TPRM アセスメント要件](/handbook/security/security-assurance/security-risk/third-party-risk-management/#tprm-assessment-requirements) を満たすために **活用されません**。
 
-#### Complementary User Entity Controls (CUECs)
+#### 補完的利用組織のコントロール（CUECs）
 
 一部のベンダーのコントロール目的は、GitLab によるサポートコントロールの適切な設計と実装なしには達成できず、これらはベンダーの SOC 2 レポート内で Complementary User Entity Controls (CUEC) の形で指定されます。CUEC は、データセキュリティとサービスコミットメントをサポートするためにベンダーによって一般的に活用されており、データセキュリティをサポートし、不正なデータ開示を防止するためにこれらのコントロールに対処するのは GitLab の責任です。
 
 Security Risk チームは、私たちのレビュー中にベンダーの SOC 2 レポートを取得し、CUEC が定義され、ベンダーによって依存されているかどうかを判定します。CUEC が定義されている場合、Business Owner は Zip 要求の承認時に通知され、CUEC をレビューし、それらに対処するためのコントロールが整備されていることを確認するように指示されます。コントロールがまだ整備されていない場合、Business Owner はこれらのコントロールの実装を調整する責任があります。これは Security Assurance チームと協力して完了することができます。私たちはあなたの主要な GitLab プロジェクトで `Application/Service Name CUEC Mapping` というタイトルの Epic を作成することを推奨します。アクションが必要な各 CUEC に対して Issue を作成すべきです。Issue は、必要に応じてコントロールが定期的に行われることを保証するメカニズムを含む、文書化された計画またはプロセスが整備されたら、理想的にはハンドブック内でクローズされるべきです。一般的な CUEC と各々のガイダンスは以下の表で確認できます。ベンダーの SOC レポートで定義された具体的な言語は以下の言語と異なる場合があり、修正された行動方針が必要になる場合があることに注意してください。
 
-{{% details summary="(Expand to view chart)" %}}
+{{% details summary="（展開してチャートを表示）" %}}
 
 | # | CUEC | ガイダンス | 関連する [GCF Control(s)](/handbook/security/security-assurance/security-compliance/sec-controls/#gitlab-control-framework-gcf) |
 |---|:-----|:---------| -----------------------|
@@ -285,9 +285,9 @@ Security Risk チームは、私たちのレビュー中にベンダーの SOC 2
 
 CUEC に関する質問は、Slack の #security_help チャンネルに直接送ることができます。
 
-### Standard Information Gathering (SIG) Questionnaire for Vendor Self Attestation {#standard-information-gathering-sig-questionnaire-for-vendor-self-attestation}
+### ベンダーの自己証明用 Standard Information Gathering（SIG）アンケート {#standard-information-gathering-sig-questionnaire-for-vendor-self-attestation}
 
-[SIG questionnaire](https://sharedassessments.org/sig/) や CAIQ などの同等のドキュメントなどの自己証明は、個別利用ソフトウェアベンダーが有効な SOC 2 Type 2 レポートまたは ISO 27001 認証および Statement of Applicability を提供できない場合に必要です。Red ベンダーまたは Orange SaaS ベンダーは、上記で定義された Third-Party Attestation を提供する必要があります。SIG questionnaire は、サービス組織のセキュリティ環境の成熟度をアセスメントする際に、私たちの Security Questionnaire への回答と並行してレビューされます。
+[SIG questionnaire](https://sharedassessments.org/sig/) や CAIQ などの同等のドキュメントなどの自己証明は、個別利用ソフトウェアベンダーが有効な SOC 2 Type 2 レポートまたは ISO 27001 認証および Statement of Applicability を提供できない場合に必要です。Red ベンダーまたは Orange SaaS ベンダーは、上記で定義された第三者証明を提供する必要があります。SIG questionnaire は、サービス組織のセキュリティ環境の成熟度をアセスメントする際に、私たちの Security Questionnaire への回答と並行してレビューされます。
 
 Security Risk は、評価される製品やサービスに応じて使用するための SIG questionnaire の複数のテンプレート版を維持しています。一部のベンダーは提供する SIG questionnaire や同等のものを持っていない場合があります。SIG テンプレートには、メインアンケートタブの列 D と E 内の Inquiry 回答のみが必要であるという指示が含まれており、SIG 内の追加の情報やドキュメンテーションのリクエストは一般的に必要ありません。専門的な裁量により、ベンダーの回答を補完するために追加のドキュメンテーションリクエストの必要性が指示される可能性のある潜在的なフリンジケースが存在する *可能性があります*。さらに、どのバージョンの SIG questionnaire が送信されるべきかを決定する際には、専門的な裁量を適用すべきです。レビューに必要なレベルが不明な場合、エンジニアは #Sec-Assurance-Team チャンネル内の @Security-Risk チームと相談し、提供されるサービス、交換されるデータ、以前のアセスメントの結果などの要因を考慮した上で意思決定を行うことが奨励されています。
 
@@ -336,8 +336,8 @@ Security Risk は、評価される製品やサービスに応じて使用する
 
 {{% /details %}}
 
-{{% details summary="Reviewing SIG Responses" %}}
-SIG questionnaire 内に文書化されたベンダーの回答は、ベンダーが提供するサービスの文脈の中でレビューされるべきであり、より広いコントロール環境と特定のコントロールの不備が他の既存のコントロールによってどのように軽減される可能性があるかを理解するために注意を払うべきです。たとえば、サービスの提供で第三者サービスプロバイダーに依存していないベンダーは、Third Party Risk Management プログラムを維持する可能性が低く、提供されているサービスのより広い文脈の中で GitLab にリスクを呈する可能性は低いです。このような重要な逸脱は、レビュー中にフラグが立てられ、不備が GitLab データにリスクを呈さない理由の説明と共に SIG questionnaire 内に記録されるべきです。軽減コントロールが特定された場合、これらのノート内に定義されるべきです。エンジニアは、コントロールの不備が存在するかどうかを判定するために、必要に応じてベンダーとフォローアップ問い合わせを実行することが奨励されています。これらの問い合わせは、SIG ドキュメント内または TPRM Assessment Report 内にさらに記録されるべきです。
+{{% details summary="SIG 回答のレビュー" %}}
+SIG questionnaire 内に文書化されたベンダーの回答は、ベンダーが提供するサービスの文脈の中でレビューされるべきであり、より広いコントロール環境と特定のコントロールの不備が他の既存のコントロールによってどのように軽減される可能性があるかを理解するために注意を払うべきです。たとえば、サービスの提供で第三者サービスプロバイダーに依存していないベンダーは、Third Party Risk Management プログラムを維持する可能性が低く、提供されているサービスのより広い文脈の中で GitLab にリスクを呈する可能性は低いです。このような重要な逸脱は、レビュー中にフラグが立てられ、不備が GitLab データにリスクを呈さない理由の説明と共に SIG questionnaire 内に記録されるべきです。軽減コントロールが特定された場合、これらのノート内に定義されるべきです。エンジニアは、コントロールの不備が存在するかどうかを判定するために、必要に応じてベンダーとフォローアップ問い合わせを実行することが奨励されています。これらの問い合わせは、SIG ドキュメント内または TPRM アセスメントレポート内にさらに記録されるべきです。
 
 GitLab データに対する重大なリスクを呈する可能性のある特定された不備は、TPRM アセスメントレポート内に記録され、以下に詳述されている TPRM Security Notice Process を通じて Business Owner に提示されるべきです。
 
@@ -346,17 +346,13 @@ GitLab データに対する重大なリスクを呈する可能性のある特�
 
 ### Bitsight の活用
 
-Bitsight の使用は、Security Risk チームに GitLab のベンダーエコシステムの外部セキュリティポスチャーの包括的かつ継続的なビューを提供します。Bitsight は、Security Risk が私たちのベンダー全体にわたる潜在的なセキュリティリスクをリアルタイムで特定およびアセスメントすることを可能にし、私たちのリソースを優先順位付けし、GitLab に影響を与える可能性のある重大な脆弱性に対処することに焦点を当てることができます。GitLab は 2 つのサービスを活用しています。
-
-- **Bitsight Total Risk Monitoring**
-
-Bitsight の Total Risk Monitoring は、公開スキャンとピアベンチマーキングの使用により、ベンダーの外部からアクセス可能な環境のセキュリティに対する追加の保証を取得するために活用されます。ベンダーをアセスメントする際、彼らの Bitsight レポートはダウンロードされ、彼らのスコアリングが「Advanced」セキュリティレーティングによって証明されるように適切であるかどうかを判定するためにレビューされます。「Basic」または「Intermediate」の Bitsight レーティングは、低いレーティングの背後にある根拠と特定された不備が GitLab に対するリスクを示す可能性があるかどうかを理解するためにさらに詳細にレビューされます。Bitsight のスキャンの広い範囲のため、一部の不備は GitLab のベンダーサービスの使用に影響しない領域内に存在する可能性があり、したがってベンダーの残留リスクに寄与しません。GitLab に重大なリスクを呈する可能性のある不備が特定された場合、それらが解決されたかどうかを判定するためにベンダーとさらなる問い合わせが行われる可能性があります。解決されていない重大な不備は、TPRM Assessment Report 内に文書化され、以下に定義されている [TPRM Security Notice Process](#tprm-security-notice-process) を通じて Business Owner に報告されるべきです。
-
-ベンダーがレビュー時に BitSight 内に存在しない場合、アセッサーは [Company Request を提出](https://help.bitsighttech.com/hc/en-us/articles/231344488-Company-) すべきです。
+Bitsight の使用は、Security Risk チームに GitLab のベンダーエコシステムの外部セキュリティポスチャーの包括的かつ継続的なビューを提供します。Bitsight は、Security Risk が私たちのベンダー全体にわたる潜在的なセキュリティリスクをリアルタイムで特定およびアセスメントすることを可能にし、私たちのリソースを優先順位付けし、GitLab に影響を与える可能性のある重大な脆弱性に対処することに焦点を当てることができます。GitLab は、以下のプロセスを通じて、ほとんどの重要システムの継続的なモニタリングに Bitsight を活用しています。
 
 - **Bitsight Daily Alerting**
 
 Bitsight の Daily Alerting は、潜在的なリスクと脆弱性を迅速に特定および対応するために、GitLab の最高重要性のベンダーのセキュリティポスチャーを継続的にモニタリングするシステムを確立するために活用されます。このサービスの使用は、Security Risk が GitLab の機密性の高いデータとインフラストラクチャを効果的に保護するのに役立つ 24 時間 365 日体制で運営される、サードパーティセキュリティ管理に対するプロアクティブなアプローチを維持することを可能にします。GitLab の Tier 1 ベンダーの環境内の変化は、深刻度と GitLab への影響に応じて、さらなるセキュリティ問い合わせと調査、新しいセキュリティレビュー、または TPRM Security Notice につながる可能性があります。
+
+ベンダーがレビュー時に BitSight 内に存在しない場合、アセッサーは [Company Request を提出](https://help.bitsighttech.com/hc/en-us/articles/231344488-Company-) すべきです。
 
 ### TPRM 承認ウィンドウ {#tprm-approval-windows}
 
@@ -389,9 +385,9 @@ GitLab に提供されるサービスやベンダーのセキュリティ環境�
 
 **注:** 上記で定義されている以外の状況が、さらなるレビューを必要とする可能性があります。TPRM Engineer は、これらの状況を特定する際に専門的な裁量を使用し、必要に応じて追加のレビューや検証を実行すべきです。変更の重要性や適切な承認ウィンドウに関する質問や懸念事項は、#Sec-Assurance-Team チャンネル内の Security Risk チームにエスカレーションすべきです。
 
-### TPRM Security Notice Process {#tprm-security-notice-process}
+### TPRM セキュリティ通知プロセス {#tprm-security-notice-process}
 
-TPRM レビュー中に特定された不備は、GitLab 内の [TPRM Security Notice](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-risk-team/third-party-vendor-security-management/-/issues/new?issuable_template=Security%20Notice%20%20Template) を通じて Business Owner に報告されます。この Issue には、(1) ベンダーまたは要求に関連する背景情報、(2) Security Risk チームによって実行された検証の説明、(3) ベンダーと共有される GitLab データに存在する可能性のあるセキュリティ不備と結果として生じるリスクの説明が含まれています。リスクから結果として生じるセキュリティインシデントの潜在的な実世界の影響を表現するために、「最悪の場合」のシナリオが含まれています。可能な場合、TPRM は特定されたリスクを軽減または回避するための推奨事項も含めます。システムのセキュリティコントロールの設計または運用上の有効性の失敗から生じる不備については、Security Notice 内でより大きな文脈を提供するために、ステークホルダーへの配信前に [Technical Security Validation](/handbook/security/security-assurance/security-risk/third-party-risk-management/#technical-security-validations) が要求される場合があります。これらの項目は、Business Owner と他の関連関係者による情報に基づく意思決定をサポートするために文書化されます。
+TPRM および Post-Implementation Controls (PIC) のレビュー中に特定された不備は、[TPRM Security Notice](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-risk-team/third-party-vendor-security-management/-/issues/new?issuable_template=Security%20Notice%20%20Template) Issue を通じて Business Owner に報告されます。この Issue には、(1) ベンダーまたは要求に関連する背景情報、(2) Security Risk チームによって実行された検証の説明、(3) ベンダーと共有される GitLab データに存在する可能性のあるセキュリティ不備と結果として生じるリスクの説明が含まれています。リスクから結果として生じるセキュリティインシデントの潜在的な実世界の影響を表現するために、「最悪の場合」のシナリオが含まれています。可能な場合、TPRM は特定されたリスクを軽減または回避するための推奨事項も含めます。システムのセキュリティコントロールの設計または運用上の有効性の失敗から生じる不備については、Security Notice 内でより大きな文脈を提供するために、ステークホルダーへの配信前に [Technical Security Validation](/handbook/security/security-assurance/security-risk/third-party-risk-management/#technical-security-validations) が要求される場合があります。これらの項目は、Business Owner と他の関連関係者による情報に基づく意思決定をサポートするために文書化されます。
 
 #### 要求の拒否
 
@@ -436,7 +432,9 @@ Post-Implementation Controls (PIC) プロセスは、go-live 後に新しいシ�
 - **Application Integrations** — go-live 時に確立された API 接続を文書化し、API キーが GitLab ポリシーに従って管理されていることを確認する。
 - **Compliance Scope** — システムに関連するコンプライアンス義務を確認する。
 
-完了した PIC Issue は、ベンダーの [Tech Stack](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications) レコードにリンクされます。質問は #security_help チャンネルの @security-risk に問い合わせることができます。
+完了した PIC Issue は、ベンダーの [Tech Stack](https://helplab.gitlab.systems/esc?id=gitlab_cmdb_applications) レコードにリンクされます。質問は #security_help チャンネルの @security-risk に問い合わせることができます。
+
+コントロールドメインで GitLab の要件に対する不備が特定され、代替コントロールが存在しない場合、Security Risk は [TPRM Security Notice](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-risk-team/third-party-vendor-security-management/-/issues/new?issuable_template=Security%20Notice%20%20Template) を作成し、[TPRM Security Notice Process](#tprm-security-notice-process) に従って Business Owner に承認を求めます。
 
 ### その他のタイプのサードパーティアセスメント
 
@@ -467,7 +465,7 @@ App Integration Requests は、TPRM レビューと契約更新との整合を�
 
 個別利用ソフトウェアのリクエスト手順は [こちら](https://internal.gitlab.com/handbook/finance/procurement/pre-approved-individual-use-software/) で確認できます。これらのツールは、しばしば「4」の [Critical System Tier](/handbook/security/security-assurance/security-risk/storm-program/critical-systems) としてカテゴライズされており、集中化されたオーナーシップの欠如により、[Tech Stack](/handbook/business-technology/tech-stack-applications/) で表現される必要はありません。
 
-Orange Individual-Use Software は、ベンダーリソースと GitLab 内での使用範囲の限定を考慮して、削減された範囲の下でアセスメントされます。これらのベンダーの要件の詳細については、上記の [TPRM Assessment Requirements](/handbook/security/security-assurance/security-risk/third-party-risk-management/#tprm-assessment-requirements) セクションを参照してください。アセッサーは、フルスコープのアセスメントが正当化されると感じる場合、それを実行することが奨励されています。Security Risk は、私たちのセキュリティ要件を満たさない個別利用ソフトウェアを許可しないか、承認を保留する権利を留保します。このプロセスへの例外はケースバイケースで検討され、TPRM Security Notice プロセスを通じて関連ステークホルダーに報告されます。詳細については、GitLab の [Internal Acceptable Use Policy](/handbook/people-group/acceptable-use-policy/) を参照してください。
+Orange Individual-Use Software は、ベンダーリソースと GitLab 内での使用範囲の限定を考慮して、削減された範囲の下でアセスメントされます。これらのベンダーの要件の詳細については、上記の [TPRM アセスメント要件](/handbook/security/security-assurance/security-risk/third-party-risk-management/#tprm-assessment-requirements) セクションを参照してください。アセッサーは、フルスコープのアセスメントが正当化されると感じる場合、それを実行することが奨励されています。Security Risk は、私たちのセキュリティ要件を満たさない個別利用ソフトウェアを許可しないか、承認を保留する権利を留保します。このプロセスへの例外はケースバイケースで検討され、TPRM Security Notice プロセスを通じて関連ステークホルダーに報告されます。詳細については、GitLab の [Internal Acceptable Use Policy](/handbook/people-group/acceptable-use-policy/) を参照してください。
 
 #### ドキュメンテーションリクエスト
 
@@ -488,10 +486,10 @@ GitLab チームメンバーによる人工知能 (AI) サービスの使用は�
 
 ## 参考文献
 
-- [GCF Compliance Controls](/handbook/security/security-assurance/security-compliance/sec-controls/)
-- [Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/)
-- [Current listing of controlled documents](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance/security-governance/-/issues/42)
-- [App Integrations (Team Member Enablement)](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/app-integrations/)
-- [Observation Management Procedure](/handbook/security/security-assurance/observation-management-procedure/)
+- [GCF コンプライアンスコントロール](/handbook/security/security-assurance/security-compliance/sec-controls/)
+- [データ分類標準](/handbook/security/policies_and_standards/data-classification-standard/)
+- [管理対象文書の現在の一覧](https://gitlab.com/gitlab-com/gl-security/security-assurance/governance/security-governance/-/issues/42)
+- [アプリ統合（チームメンバーのイネーブルメント）](https://internal.gitlab.com/handbook/eta/corporate-it/end-user-services/app-integrations/)
+- [オブザベーション管理手順](/handbook/security/security-assurance/observation-management-procedure/)
 - [STORM](/handbook/security/security-assurance/security-risk/storm-program/)
-- [Procurement Process](/handbook/finance/procurement/#how-to-start-the-procurement-process)
+- [調達プロセス](/handbook/finance/procurement/#how-to-start-the-procurement-process)

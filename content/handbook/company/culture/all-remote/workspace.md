@@ -6,16 +6,16 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/workspace/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
-translator: "claude"
+upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
+translated_at: "2026-08-01T16:12:50+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-25T21:10:14+01:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## なぜホームオフィスの環境がそれほど重要なのですか？
 
-![GitLab all-remote laptop illustration](/images/all-remote/gitlab-all-remote-laptop-map-illustration.jpg)
+![GitLab オールリモートのノートパソコンのイラスト](/images/all-remote/gitlab-all-remote-laptop-map-illustration.jpg)
 {style="max-width: 50%;"}
 
 [リモートワーク](getting-started/#what-exactly-is-a-remote-job)はどこからでも働ける柔軟性を提供します。多くの人にとって、それはホームワークスペースを自分のユニークなニーズに合わせてカスタマイズできることを意味します。自分にとって最も適したリモート設定を構成することが重要です。リモートの役割を始めたばかりであれば、より多くのヒントについては[このガイド](getting-started/#experiment-with-work-environments)を参照してください。
@@ -41,7 +41,7 @@ GitLab はワークプレイスデザインの専門家 Herman Miller と提携�
 
 すべての機器の質問に答えることはできませんが、ワークプレイス専門家の一部が自分のホームオフィスで使用しているものについて詳細なガイドをここに示します。
 
-![GitLab commit illustration](/images/all-remote/gitlab-commit-illustration.jpg)
+![GitLab のコミットのイラスト](/images/all-remote/gitlab-commit-illustration.jpg)
 {style="max-width: 50%;"}
 
 ## リモートワークにはどのようなテクノロジーが必要ですか？
@@ -54,7 +54,7 @@ GitLab はワークプレイスデザインの専門家 Herman Miller と提携�
 
 ### PC
 
-[コンピュータまたはラップトップの購入](/handbook/security/corporate/end-user-services/laptop-management/)に関する詳細については、会社のポリシーを参照してください。これが主要な作業・コミュニケーション手段となるため、スペックと速度が自分の最適な作業方法に適合していることを確認してください。
+[コンピュータまたはラップトップの購入](/handbook/eta/corporate-it/end-user-services/laptop-management/)に関する詳細については、会社のポリシーを参照してください。これが主要な作業・コミュニケーション手段となるため、スペックと速度が自分の最適な作業方法に適合していることを確認してください。
 
 ### 動画撮影機能付きカメラ
 
@@ -189,7 +189,7 @@ GitLab のチームメンバーは[Autonomous](https://www.autonomous.ai)、[IKE
 
 勤務日の[理想的な座位と立位の比率](https://uwaterloo.ca/kinesiology-health-sciences/news/innovation-measuring-fatty-acids-saves-labs-time-and-money)に関する研究は進行中です。
 
-> 高度なエルゴノミクスと健康リスク計算を使用して、ウォータールー大学運動学部の Jack Callaghan 教授は、理想的な座位対立位の比率が 1:1 から 1:3 の間にあることを発見しました — これは従来の常識から大きく外れています。
+> 高度なエルゴノミクスと健康リスク計算を使用して、ウォータールー大学運動学部の [Jack Callaghan](https://uwaterloo.ca/kinesiology-health-sciences/people-profiles/jack-callaghan) 教授は、理想的な座位対立位の比率が 1:1 から 1:3 の間にあることを発見しました — これは従来の常識から大きく外れています。
 
 #### スタンディングマット
 
@@ -212,7 +212,7 @@ GitLab のチームメンバーは[Autonomous](https://www.autonomous.ai)、[IKE
 1. [密室](https://about.gitlab.com/blog/2019/09/12/not-everyone-has-a-home-office/)は光の制御に理想的ですが、作業する場所として制限的に感じられる場合があります。
 1. 影と変化する光の状態を避けるようにしてください。
 
-スタジオ照明が理想的ですが、自宅のオフィスに大きくて熱を発する照明ボックスをインストールする傾向がある人ばかりではありません。リモートワークとライブストリーミングがより普及するにつれて、企業はより小さなソリューションを考案しています。Elgato の Key Light はその良い例です。デスクのエッジに 1 つの Key Light を置いてその LED を直接壁に向けることで、柔らかくリフレッシュングな光が[参加者に反射されます](https://www.youtube.com/watch?v=RckLFNRKPfU)。
+スタジオ照明が理想的ですが、自宅のオフィスに大きくて熱を発する照明ボックスをインストールする傾向がある人ばかりではありません。リモートワークとライブストリーミングがより普及するにつれて、企業はより小さなソリューションを考案しています。Elgato の [Key Light](https://www.youtube.com/watch?v=d2qR-wMPoTE) はその良い例です。デスクのエッジに 1 つの Key Light を置いてその LED を直接壁に向けることで、柔らかく爽やかな光が[参加者に反射されます](https://www.youtube.com/watch?v=RckLFNRKPfU)。
 
 [DIY ソリューション](https://www.diyphotography.net/look-good-webcam-vlog/)はマウントとリングライトで比較的簡単に作成できます。
 

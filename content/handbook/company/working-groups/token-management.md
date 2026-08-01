@@ -3,11 +3,11 @@ title: "トークン管理ワーキンググループ"
 description: "このワーキンググループの使命はトークン管理の改善を推進することです。"
 status: active
 upstream_path: /handbook/company/working-groups/token-management/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T23:40:34Z"
-translator: claude
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+translated_at: "2026-08-01T16:12:50+09:00"
+translator: codex
 stale: false
-lastmod: "2025-10-22T09:06:24+01:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ## 属性
@@ -23,7 +23,7 @@ lastmod: "2025-10-22T09:06:24+01:00"
 
 GitLab ユーザーへの誠実さと責任として、トークン管理ワーキンググループは将来のトークン管理セキュリティ強化に向けた基盤とロードマップの構築に取り組みます。これは、トークン管理セキュリティポリシーの策定・公開と、リスクが高く対応コストの低いトークン管理 Issue への修正案提示によって実現します。これにより、中長期的なトークン管理セキュリティ強化の取り組みを成功に導くための基礎を整えます。詳細については、[トークンリーク社内ハンドブックページ](https://internal.gitlab.com/handbook/engineering/security/token-leaks/)をご覧ください。すべてのトークンは、ユーザーや顧客に提供する GitLab アプリケーション内に保存されます。これらの強化機能をドッグフーディングし、私たち自身のセキュリティニーズを満たす改善を行うことで、すべてのユーザーに対するトークン管理とシークレット保護を向上させ、ユーザーのシークレットを守る優れた管理者となります。
 
-## 終了基準 {#exit-criteria}
+## 終了基準
 
 トークン管理ワーキンググループが提供するもの:
 
@@ -39,7 +39,7 @@ GitLab ユーザーへの誠実さと責任として、トークン管理ワー�
 
 ## ふりかえり
 
-トークンワーキンググループのふりかえりは 2023 年 4 月 25 日 に実施されました。詳細は[ふりかえり Issue](https://gitlab.com/gitlab-com/gl-security/security-department-meta/-/issues/1587) をご覧ください。
+トークンワーキンググループのふりかえりは 2023 年 4 月 25 日に実施されました。詳細は[ふりかえり Issue](https://gitlab.com/gitlab-com/gl-security/security-department-meta/-/issues/1587)をご覧ください。
 
 ## 役割と責任
 
@@ -62,4 +62,3 @@ GitLab ユーザーへの誠実さと責任として、トークン管理ワー�
 | メンバー                   | Zach Rice               | Senior Backend Engineer, Secure:Static Analysis              |
 | メンバー                   | Lucas Charles           | Staff Backend Engineer, Secure:Static Analysis               |
 | メンバー                   | Dennis Appelt           | Staff Security Engineer, Security Research                   |
-| メンバー                   | Mark Loveless           | Staff Security Engineer, Security Research                   |

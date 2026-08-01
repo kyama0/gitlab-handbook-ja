@@ -2,11 +2,11 @@
 title: "IT レルム"
 description: "このインフラストラクチャレルムは、IT インフラチームが管理するリソースのためのものです。"
 upstream_path: "/handbook/company/infrastructure-standards/realms/it/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
-translator: "claude"
+upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
+translated_at: "2026-08-01T16:12:50+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-03T09:55:48+01:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
 ### クイックリンク
@@ -30,7 +30,6 @@ lastmod: "2025-07-03T09:55:48+01:00"
 
 | 氏名                 | GitLab.com ハンドル     | グループ役割     | 役職                                     |
 |----------------------|-------------------------|------------------|------------------------------------------|
-| Jeff Martin          | `jeffersonmartin`       | オーナー         | Sr IT Systems Engineer                   |
 | Dillon Wheeler       | `dillonwheeler`         | カウンターパート | IT Systems Engineer                      |
 | Daniel Parker        | `dparker`               | カウンターパート | Sr Integrations Engineer                 |
 

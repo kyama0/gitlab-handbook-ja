@@ -4,11 +4,11 @@ creation-date: "2025-04-18"
 authors: [ "@mksionek" ]
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/notifications/adr/001_database_schema/"
-upstream_sha: "6eef8dbb6a0d15167aa5378f476b04cd38b78675"
-translated_at: "2026-07-10T20:55:36+09:00"
-translator: claude
+upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
+translated_at: "2026-08-01T15:50:15+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-07T12:09:18+01:00"
+lastmod: "2026-07-31T12:38:28+02:00"
 ---
 
 ## データベース構造の提案
@@ -142,7 +142,7 @@ class Notification < ApplicationRecord
 end
 ```
 
-### 通知作成サービス
+### 通知作成サービス {#notification-creation-service}
 
 リソースセーフな作成ロジックをカプセル化します:
 
@@ -240,9 +240,9 @@ ORDER BY created_at DESC;
 
 ### この設計の探求
 
-このドメイン（通知）とは直接関係ありませんが、このアーキテクチャ設計の提案は[AI Catalog グループ](/handbook/engineering/ai/ai-catalog/)によって[マージリクエスト 194032](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/194032)で探求されました。
+このドメイン（通知）とは直接関係ありませんが、このアーキテクチャ設計の提案は[AI Catalog グループ](/handbook/engineering/ai/agent-foundations/ai-catalog/)によって[マージリクエスト 194032](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/194032)で探求されました。
 
-上記で提案した[通知作成サービス](#通知作成サービス)の代わりに、以下を含む[コンサーン](https://gitlab.com/gitlab-org/gitlab/-/blob/98fab27d5b3d0f354c1ea93a86c18d0f37347b90/ee/app/models/concerns/ai/catalog/itemable.rb)を使用することを探求しました:
+上記で提案した[通知作成サービス](#notification-creation-service)の代わりに、以下を含む[コンサーン](https://gitlab.com/gitlab-org/gitlab/-/blob/98fab27d5b3d0f354c1ea93a86c18d0f37347b90/ee/app/models/concerns/ai/catalog/itemable.rb)を使用することを探求しました:
 
 - `accepts_nested_attributes_for` - ネストされた属性の処理を有効化
 - `after_initialize` コールバック - 汎用モデルを自動的に作成

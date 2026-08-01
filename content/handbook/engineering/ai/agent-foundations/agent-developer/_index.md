@@ -1,10 +1,12 @@
 ---
 title: Agent Developer グループ
 description: "Agent Developer グループは、GitLab Duo Developer の基盤フローに注力しています。フロー自体とその評価の改善、およびフローレジストリの改善に取り組んでいます。"
-upstream_path: /handbook/engineering/ai/agent-developer/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: 2026-06-29T19:34:46-07:00
-translated_at: "2026-07-10T20:37:43+09:00"
+aliases:
+  - /handbook/engineering/ai/agent-developer/
+upstream_path: /handbook/engineering/ai/agent-foundations/agent-developer/
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+lastmod: "2026-07-31T12:38:28+02:00"
+translated_at: "2026-08-01T15:59:51+09:00"
 translator: codex
 stale: false
 ---
@@ -17,6 +19,7 @@ GitLab における中核的な AI／Agent 開発を推進し、エージェン�
 
 **エンジニアリングマネージャーおよびエンジニア**
 
+<!-- TODO: Confirm the correct manager slug for Annie Ying (aying-gl / aying). -->
 {{< team-by-manager-slug "aying-gl" >}}
 
 **プロダクト、デザイン、品質**
@@ -148,7 +151,7 @@ _Remember to update the status!_
 
 ### ⏲ 休暇
 
-チームメンバーは、[休暇取得](/handbook/engineering/#taking-time-off)ポリシーに従って、[予定された休暇](/handbook/people-group/time-off-and-absence/time-off-types/)を「Workday」Slack アプリに追加し、[PTO カバレッジ Issue](https://gitlab.com/gitlab-com/engineering-division/pto-coverage/-/issues/new)の作成を含めて行うべきです。
+チームメンバーは、[予定された休暇](/handbook/people-group/time-off-and-absence/time-off-types/)を「Workday」Slack アプリに追加し、[休暇取得](/handbook/engineering/#taking-time-off)ポリシーに従って [PTO カバレッジ Issue](https://gitlab.com/gitlab-com/engineering-division/pto-coverage/-/issues/new)も作成する必要があります。
 
 ### 🤙 アドホックな同期コール {#-ad-hoc-sync-calls}
 

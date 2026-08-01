@@ -1,10 +1,12 @@
 ---
 title: AI Catalog グループ
 description: "AI Catalog グループは、組織、グループ、プロジェクトをまたいで作成、キュレーション、共有できるエージェント、ツール、フローのカタログである AI Catalog の開発に注力しています。"
-upstream_path: /handbook/engineering/ai/ai-catalog/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-lastmod: "2026-07-30T15:29:14+01:00"
-translated_at: "2026-07-31T08:29:15+09:00"
+aliases:
+  - /handbook/engineering/ai/ai-catalog/
+upstream_path: /handbook/engineering/ai/agent-foundations/ai-catalog/
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+lastmod: "2026-07-31T12:38:28+02:00"
+translated_at: "2026-08-01T15:59:51+09:00"
 translator: codex
 stale: false
 ---
@@ -95,7 +97,7 @@ AI Catalog は、基盤となるバックエンドサービスとして
 [Workflow Service](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/tree/main/duo_workflow_service?ref_type=heads)
 に依存しています。
 AI Catalog のほとんどの機能は Workflow Service 内で新しい機能を開発する必要があり、
-これは私たちのエンジニアが [Agent Foundations チーム](../agent-foundations/_index.md)と連携して、
+これは私たちのエンジニアが [Agent Foundations](../_index.md)内の他のチームと連携して、
 そのコードベースに直接貢献する必要があることを意味します。
 
 **協業の要件:**
@@ -187,7 +189,7 @@ Issue はフィボナッチ数列（0、1、2、3、5、8+）を使用して重�
   [フロントエンド](https://docs.gitlab.com/development/fe_guide/graphql/)。すべての新しいスキーマアイテムは、
   必要なときに破壊的変更を行えるように[実験的としてマーク](https://docs.gitlab.com/development/api_graphql_styleguide/#mark-schema-items-as-experiments)する必要があります。
 * ポーリングではなく GraphQL [サブスクリプション](https://docs.gitlab.com/development/fe_guide/graphql/#subscriptions)。
-* [AI Catalog Backend Architecture](../../../engineering/architecture/design-documents/ai_catalog/_index.md) のデザインドキュメント（2026 年 2 月に執筆）を読んでください。
+* [AI Catalog Backend Architecture](/handbook/engineering/architecture/design-documents/ai_catalog/) のデザインドキュメント（2026 年 2 月に執筆）を読んでください。
 
 ## チームミーティング
 

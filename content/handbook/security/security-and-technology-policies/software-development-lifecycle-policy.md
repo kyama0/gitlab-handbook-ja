@@ -5,14 +5,14 @@ tags:
   - security_policy
   - security_policy_caplscsi
 upstream_path: /handbook/security/security-and-technology-policies/software-development-lifecycle-policy/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-20T21:39:44Z"
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+translated_at: "2026-08-01T15:25:19+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-19T22:35:10-07:00"
+lastmod: "2026-07-30T17:38:52-07:00"
 ---
 
-{{< label name="Visibility: Non-Audit" color="#428BCA" >}}
+{{< label name="可視性: 非監査" color="#428BCA" >}}
 
 ## 目的
 
@@ -31,11 +31,11 @@ lastmod: "2026-07-19T22:35:10-07:00"
 
 ## ポリシー
 
-対象範囲の開発活動は、GitLab の [プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/) に従って実施されます。(SA-3)
+対象範囲の開発活動は、GitLab の [プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/) に従って実施されます。
 
-開発活動は、セキュリティ、機密性、および可用性の原則を念頭に置いて実施されます。(PL-8, SA-8)
+開発活動は、セキュリティ、機密性、および可用性の原則を念頭に置いて実施されます。
 
-開発プロセス全体で使用されるテストデータは、GitLab の [データ分類基準](/handbook/security/policies_and_standards/data-classification-standard) の対象となります。(SA-3(2))
+開発プロセス全体で使用されるテストデータは、GitLab の [データ分類基準](/handbook/security/policies_and_standards/data-classification-standard) の対象となります。
 
 ## 標準
 

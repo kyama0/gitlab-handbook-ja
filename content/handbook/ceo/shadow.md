@@ -2,17 +2,16 @@
 title: CEO シャドウプログラム
 description: "GitLab では、CEO シャドウとは役職ではなく、CEO に同行する一時的なアサインメントです"
 upstream_path: "/handbook/ceo/shadow/"
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T21:02:32+09:00"
-translator: claude
+upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
+translated_at: "2026-08-01T16:25:30+09:00"
+translator: codex
 stale: false
-lastmod: "2026-06-29T08:59:00-04:00"
+lastmod: "2026-07-28T15:04:15+01:00"
 ---
 <!-- vale handbook.InclusionLanguage = NO -->
 
 
-{{% alert title="Note" color="secondary" %}}
-**注意**
+{{% alert title="注意" color="secondary" %}}
 CEO シャドウプログラムは、追って通知があるまで一時停止中です。
 {{% /alert %}}
 
@@ -241,7 +240,7 @@ CEO には[ハンドブックのセクション](/handbook/ceo/)があり、CEO 
 
 ### リモートシャドウローテーション
 
-![GitLab all-remote mentor](/images/all-remote/ceo-shadow-gitlab-awesomeness.jpg)
+![GitLab オールリモートメンター](/images/all-remote/ceo-shadow-gitlab-awesomeness.jpg)
 
 シャドウは通常の作業環境からすべてのミーティングに参加します。
 
@@ -333,7 +332,7 @@ CEO シャドウは常にノートの DRI であるわけではなく、誰で�
 - 担当者を決めてください。過去のシャドウはプログラムの 2 週目の個人が時間管理を担当することが便利だと分かっています。
 - ミーティングの長さを把握してください。カレンダー招待をミーティングがどのくらい続くかの目安として使用してください。[スピーディーミーティング](/handbook/communication/#scheduling-meetings)を行うことを忘れないでください。
 - シャドウは 5 分前と 1 分前の通知を提供する必要があります。Zoom チャットで「時間確認、あと 5 分」と書くことができます。
-- **ミーティングが予定時間を超えた場合は、ミュートを解除して言葉で「残業中です」と言ってください。** 会話の合間を待たないでください。
+- **ミーティングが予定時間を超えた場合は、ミュートを解除して「予定時間を超えています」と口頭で伝えてください。** 会話の合間を待たないでください。
 
 **役立つツール**
 
@@ -362,14 +361,14 @@ CEO だけでなく、全員が[コミュニケーションガイドライン](/
 
 #### 何か気づいたら伝える
 
-シャドウは、[名前と職種](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-additional-config/#customize-your-zoom-profile)が Zoom に表示されていない場合は GitLab のミーティング参加者に通知してください。
+シャドウは、[名前と職種](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-additional-config/#customize-your-zoom-profile)が Zoom に表示されていない場合は GitLab のミーティング参加者に通知してください。
 
-GitLab チームメンバーが自己紹介前に画面を共有している場合、シャドウは GitLab プレゼンターに、GitLab は[ズームミーティング中の画面共有を推奨しておらず](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-additional-config/#enable-screen-sharing)、参加者が自己紹介中に互いをはっきり見えるよう、自己紹介が完了するまで待つようにリマインドしてください。これは、参加者が初めて会う外部との通話で特に重要です。
+GitLab チームメンバーが自己紹介前に画面を共有している場合、シャドウは GitLab プレゼンターに、GitLab は[ズームミーティング中の画面共有を推奨しておらず](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-additional-config/#enable-screen-sharing)、参加者が自己紹介中に互いをはっきり見えるよう、自己紹介が完了するまで待つようにリマインドしてください。これは、参加者が初めて会う外部との通話で特に重要です。
 
 Google Docs が積極的に作成されている際に、誰かが Google に写真を設定していない場合は、[写真の設定方法](https://myaccount.google.com/personal-info)を教えてあげてください。そうすることで、最初のイニシャルではなく写真がドキュメントに表示されます。これにより、特に話しているときにドキュメント内でどこにいるかを全員が見つけやすくなります。これは 100% 任意であることを伝えてください。
 
 シャドウはビデオ通話で発言し、CEO のカメラが機能していない場合や太陽の角度でグリーンスクリーンが正常に機能していない場合は声を上げる必要があります。
-![Sun on Green Screen Zoom Issue](/images/ceoshadow/ceo_sun_zoom_issue.png)
+![太陽光によるグリーンスクリーンの Zoom Issue](/images/ceoshadow/ceo_sun_zoom_issue.png)
 
 #### 「私は思います」や他の問題のある行動について CEO に通知する
 
@@ -455,7 +454,7 @@ CEO シャドウは作成するハンドブック MR に `ceo-shadow` ラベル�
 ### CEO のカレンダー
 
 1. 週の始めに CEO のカレンダーを確認してください。CEO のカレンダーが Single Source of Truth です。シャドウは CEO のカレンダーを頻繁に確認してアップデートを確認してください。すべてのミーティングに招待されるわけではありません。シャドウが参加**できない**ミーティングには、「No CEO Shadows（CEO シャドウ不参加）」と記載された別のカレンダーエントリが CEO のスケジュールにあります。迷った場合は、CEO の EBA に参加すべきかどうかを確認してください。参加しないミーティングやイベントもあります。すべてのミーティングへの参加を義務感から強いられる必要はありません。すべてのミーティングは任意参加と見なされます。
-1. リマインダーとして、Zoom での姓の更新に肩書きを含める必要があります。シャドウのローテーション中は肩書きを「CEO Shadow」に更新してください。[これが Zoom で姓の一部として肩書きを更新する方法です](/handbook/security/corporate/end-user-services/supported-apps/zoom/zoom-additional-config/#customize-your-zoom-profile)。
+1. リマインダーとして、Zoom での姓の更新に肩書きを含める必要があります。シャドウのローテーション中は肩書きを「CEO Shadow」に更新してください。[これが Zoom で姓の一部として肩書きを更新する方法です](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-additional-config/#customize-your-zoom-profile)。
 1. 「その他のカレンダー」の横にある `+` をクリックして CEO のカレンダーを Google Calendar に追加してください。次に「カレンダーを購読」をクリックし、CEO の名前を検索して Enter を押してください。
 1. 採用候補者のインタビューは機密性のために「プライベート」（予定あり）としてマークされているため、EBA がシャドウをそれらのイベントに直接招待します。その結果、候補者のフィードバックを求める Greenhouse からのメールが届きますが、これは不要です。
 1. GitLab 以外の方とのミーティングは Zoom でない場合があります。通話前に CEO のカレンダーを確認し、必要な他のビデオ会議プログラムを読み込んでください。音声会議のために電話でダイヤルインする必要がある場合があります。リンクの確認に問題がある場合は、`#ceo-shadow` Slack チャンネルで EBA に連絡してください。
@@ -562,7 +561,7 @@ CEO シャドウは「シャドウ不参加」と特に記されていない限�
 
 ### CEO シャドウの自己紹介
 
-**自己紹介の順番:** ミーティング開始時に CEO シャドウが自己紹介します。どちらのシャドウが最初に自己紹介するかという順番は決まっていません。最初に参加したシャドウが**最初のシャドウ**として自己紹介します。ミーティングによっては、CEO が最初に話す CEO シャドウを指名することで、CEO シャドウの自己紹介の順番を決めることがあります（通常、2 週間プログラムの最終週を担当している CEO シャドウが最初に指名されます）。
++**自己紹介の順番:** ミーティング開始時に CEO シャドウが自己紹介します。どちらのシャドウが最初に自己紹介するかという順番は決まっていません。最初に参加したシャドウが**最初のシャドウ**として自己紹介します。ミーティングによっては、CEO が最初に話す CEO シャドウを指名することで、CEO シャドウの自己紹介の順番を決めることがあります（通常、2 週間プログラムの最終週を担当している CEO シャドウが最初に指名されます）。
 
 正しいトーンを設定することが重要ですので、以下の自己紹介の内容を一言一句守ってください。
 
@@ -612,21 +611,21 @@ CEO シャドウ参加者間の継続性を確保するために、プログラ�
 
 Slack の検索バーに「from:@bill」と入力すると結果が表示されます。
 
-![Slack User Activity](/images/ceoshadow/slackuseractivity.png)
+![Slack ユーザーアクティビティ](/images/ceoshadow/slackuseractivity.png)
 ユーザーの Slack アクティビティをフォローして、日々の活動を確認
 
 ### GitLab で
 
 CEO の [GitLab アクティビティログ](https://gitlab.com/users/bill_staples/activity)で確認できます。
 
-![GitLab Activity Log](/images/ceoshadow/gitlabactivitylog.png)
+![GitLab アクティビティログ](/images/ceoshadow/gitlabactivitylog.png)
 CEO がどの Issue や MR に関与しているかを確認
 
 ### X/Twitter で
 
 [CEO の X/Twitter アカウント](https://twitter.com/bstaples)をチェックしてください。
 
-![X/Twitter notification](/images/ceoshadow/twitternotification.png)
+![X/Twitter 通知](/images/ceoshadow/twitternotification.png)
 Twitter 通知に登録（Twitter アカウントが必要）して、日々の活動をフォロー
 
 ## 出張と経費
@@ -635,7 +634,7 @@ Twitter 通知に登録（Twitter アカウントが必要）して、日々の�
 
 #### 保育費
 
-保育費はシャドウとして活動している期間中に支給され、経費報告を通じて払い戻されます。保育施設は自分で予約する必要があり、保育施設の「飛び込み」は週によって制限される場合があるため、早めに連絡することをお勧めします。現在 GitLab には「バックアップケア」プログラムがないため、保育施設には「飛び込み」利用であることを伝える必要があります。
+保育費はシャドウとして活動している期間中に支給され、経費報告を通じて払い戻されます。保育施設は自分で予約する必要があり、保育施設の「飛び込み」は週によって制限される場合があるため、早めに連絡することをお勧めします。現在 GitLab には[「バックアップケア」](https://www.brighthorizons.com/family-solutions/back-up-care)プログラムがないため、保育施設には「飛び込み」利用であることを伝える必要があります。
 
 CEO シャドウプログラムのために移動している場合は、ホテルの宿泊施設によっては、近くの保育所を見つけることが最も便利です。一部の保育施設は、現金/小切手のみで毎日または毎週の終わりに支払いを要求するため、経費提出のために請求書/領収書を要求してください。
 
@@ -671,7 +670,7 @@ CEO と移動する際は、以下を念頭に置いてください:
 
 ## CEO シャドウプログラムを開始する他の企業への考慮事項
 
-GitLab の共同創業者で CEO シャドウプログラムの創設者である Sid Sijbrandij は、Sam Altman との YouTube ライブストリームで、他の組織で CEO シャドウプログラムを実施する際の考慮事項についての質問に答えました。主要なポイントは以下の通りです。
+GitLab の共同創業者で CEO シャドウプログラムの創設者である Sid Sijbrandij は、Sam Altman との [YouTube ライブストリームで、他の組織で CEO シャドウプログラムを実施する際の考慮事項についての質問に答えました](https://youtu.be/ExG8_bnIAMI)。主要なポイントは以下の通りです。
 
 1. CEO はシャドウのためにミーティングを最適化すべきではありません。シャドウは部屋（対面またはバーチャル）にいることで学んでおり、シャドウがすべてを完全に理解しなくても大丈夫です。
 1. うまく設計された CEO シャドウプログラムは CEO に負担をかけるべきではありません。実際、シャドウはノートのサポートや要求に応じた会社ハンドブックの変更を通じて、CEO の日々を楽にするよう積極的に努力すべきです。
