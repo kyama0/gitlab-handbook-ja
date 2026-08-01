@@ -36,7 +36,7 @@ stale: false
 
 - これらのテンプレートは、作成後に追加の権限を削除または追加するよう編集できません。ただし、その変更がロールの所属チームの Manager（またはそれ以上）に承認された場合を除きます。1 人のチームメンバーが権限変更を通すリスクを軽減するため、ベースライン権限テンプレートに対する変更が Manager 以上からのものであっても、承認が必要である点に注意してください。
 
-- 私たちは、Role-Based Entitlements テンプレートからすべての SOX アプリケーションを削除することに決めました。したがって、SOX の対象システムに対してリクエストされるアクセスは、[ハンドブック](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/#how-do-i-choose-which-template-to-use)に記載された標準の A/R プロセスに従う必要があります。これにより、これまでロールベースの権限を通じて自動付与されていた今後のアクセスは、承認が適切に記録されるよう標準の A/R でリクエストする必要があります。
+- 私たちは、Role-Based Entitlements テンプレートからすべての SOX アプリケーションを削除することに決めました。したがって、SOX の対象システムに対してリクエストされるアクセスは、[ハンドブック](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/#how-do-i-choose-which-template-to-use)に記載された標準の A/R プロセスに従う必要があります。これにより、これまでロールベースの権限を通じて自動付与されていたアクセスは、今後、承認が適切に記録されるよう標準の A/R でリクエストする必要があります。
 
 - 既存のテンプレートを編集する場合または新しいテンプレートを作成する場合、ロールベースアクセステンプレートにいかなる種類のアクセスも含めないでください。SOX アプリケーションの完全な一覧は[こちら](https://gitlab.com/groups/gitlab-com/internal-audit/-/wikis/IT-General-Controls)で確認できます。
 

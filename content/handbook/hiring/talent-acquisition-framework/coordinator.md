@@ -607,13 +607,13 @@ People Connect チームは、エンティティ/PEO ベースのチームメン
 
    1. この開始日修正[レター](https://docs.google.com/document/d/1qpxTi6nPrT4KXDi87tDAWm49D9NZNvTS/edit)のコピーを作成します
    1. ハイライトされた詳細をすべて編集し、ドキュメントをデスクトップに保存します
-   1. Docusign で新しいエンベロープを作成し、署名順序を次のように設定します：
+   1. DocuSign で新しいエンベロープを作成し、署名順序を次のように設定します：
       - 1 - GitLab France または Spain Signatory（署名）
       - 2 - 候補者（署名）
       - 3 - Alessio Spaggiari（コピー）
-   1. Docusign のメール本文で TextExpander の「StartdateFS」を使用します
+   1. DocuSign のメール本文で TextExpander の「StartdateFS」を使用します
    1. コントラクト用 Slack チャンネル `#contracts-to-sign` で署名者にレターへの署名を依頼します
-   1. ドキュメントが署名されたら、候補者の WorkDay プロフィールにアップロードします
+   1. ドキュメントが署名されたら、候補者の Workday プロフィールにアップロードします
 
 ### 候補者が署名する前にコントラクトを無効にする方法
 
@@ -627,7 +627,7 @@ People Connect チームは、エンティティ/PEO ベースのチームメン
 
 候補者が Talent Acquisition チームまたは CES に口頭かメールでオファー辞退を伝えた場合は、Recruiter がコントラクトを無効にしてよいと確認した後、以下の手順を実行します：
 
-1. Docusign ポータルに移動し、「 waiting for others」タブで、コントラクトを無効にする候補者の名前をクリックします。
+1. DocuSign ポータルに移動し、「 waiting for others」タブで、コントラクトを無効にする候補者の名前をクリックします。
 1. 「More」タブで「Void」をクリックします。「Candidate declined offer」など、コントラクトを無効にする理由を入力し、Void をクリックします。
 1. 候補者の Greenhouse プロフィールに移動し、Recruiter を CC に入れてコントラクトを無効にしたことをメモします。まだ実施していない場合、これにより Recruiter は GH で候補者を不採用にするよう促されます。
 
@@ -754,7 +754,7 @@ Candidate Experience Specialist は、採用済みとする前に追加の候補
 
 内部異動が行われ、その JCL の開始日が修正された場合は、Slack の `#people-connect_ces` チャンネルで新しい開始日を People Connect チームに必ず知らせてください。
 
-チームメンバーが Greenhouse ではなく WorkDay を通じて昇進する場合、Total Rewards チームがハンドブックページに記載されたとおりに[ジョブ変更レター](/handbook/people-group/promotions-transfers/#job-change-letter)を作成します。
+チームメンバーが Greenhouse ではなく Workday を通じて昇進する場合、Total Rewards チームがハンドブックページに記載されたとおりに[ジョブ変更レター](/handbook/people-group/promotions-transfers/#job-change-letter)を作成します。
 
 CES：ジョブ変更レターの作成および送信方法について、以下の手順に従います。
 
@@ -831,7 +831,7 @@ Papaya は、これらの拠点のチームメンバーに給与計算につい�
 
 ## 韓国またはフランスの GitLab チームメンバー向けプロセス
 
-GitLab はシンガポール、韓国、フランスにエンティティを保有しています。この拠点のチームメンバーは全員従業員ですが、給与計算は Global Upside を通じて処理されます。オファープロセスの最終ステップで CC に入るよう、正しい Docusign メールテンプレートを必ず選択してください。
+GitLab はシンガポール、韓国、フランスにエンティティを保有しています。この拠点のチームメンバーは全員従業員ですが、給与計算は Global Upside を通じて処理されます。オファープロセスの最終ステップで CC に入るよう、正しい DocuSign メールテンプレートを必ず選択してください。
 
 リマインダー：フランスでは、Legal チームがコントラクトを個別に作成する必要があります。これらの依頼を追跡する [SSOT ドキュメント](https://docs.google.com/spreadsheets/d/1HQxOwt30v1qffulaZay61aj_A5edQgb_zfBrhoq0CgA/edit#gid=0)があります。
 
@@ -981,7 +981,7 @@ GitLab は Global Expansion と提携し、以下の拠点にいる GitLab チ�
 1. コントラクトのすべての詳細をレビューし、正確であることを確認します
     - 項目が不足している場合は、フィードバックのメモを書いて GX に返送できます。ドロップダウンをクリックし、「REJECT - the following changes are required」を選択して送信します
     - すべて問題なければ、ドロップダウンをクリックし、「APPROVE - I am happy with this employment contract」を選択して送信します
-1. GX は ces@gitlab.com に 1 ページの Docusign も送信し、雇用の詳細を再確認するよう依頼します。内容が正確であれば、ドキュメントをレビューして署名してください。Docusign は「GL CES Team」という署名を自動入力しますが、そのタイトルの前に自分の名前を追加できます。自分の役職を追加して送信します
+1. GX は ces@gitlab.com に 1 ページの DocuSign も送信し、雇用の詳細を再確認するよう依頼します。内容が正確であれば、ドキュメントをレビューして署名してください。DocuSign は「GL CES Team」という署名を自動入力しますが、そのタイトルの前に自分の名前を追加できます。自分の役職を追加して送信します
 1. 次に GX が雇用コントラクトを候補者に公開し、署名されるとすぐにメールで知らせます。コントラクトがポータルに手動でアップロードされた際に Desk へメールが届く場合もありますが、すでに GX から連絡を受けている場合は無視できます
 1. 正しい Welcome Email の送信に進みます
 1. 候補者を GH で採用済みとする前に、他の候補者がすべて不採用になっていることを確認してください。完了したら、候補者を Greenhouse で採用済みとし、「Accepted」の日付を「Sent」の日付と一致するよう調整して req をクローズします
@@ -1175,11 +1175,11 @@ CIIC と新入社員の両方が Labor Contract に署名したら、その人�
 
 ## ドイツの GitLab チームメンバー向け雇用契約書
 
-2025 年 1 月 1 日から、ドイツでの自筆署名要件が撤廃されたため、DosuSign を通じた電子署名でオファーを発行できます（手順は以下に記載）。現在、ドイツの給与計算はすべて Papaya を通じて処理されています。
+2025 年 1 月 1 日から、ドイツでの自筆署名要件が撤廃されたため、DocuSign を通じた電子署名でオファーを発行できます（手順は以下に記載）。現在、ドイツの給与計算はすべて Papaya を通じて処理されています。
 
 1. CES は、開始日が月曜日、または月の 1 日か 16 日のいずれかであることを確認します
 1. この[テーブル](/handbook/hiring/)に従い、German Entity に記載されている署名者を使用してください
-1. Greenhouse と DocuSign を通じてオファーを送信します。「send through Docusign」Template を使用し、メール本文に RSU 情報を追加します。
+1. Greenhouse と DocuSign を通じてオファーを送信します。「send through DocuSign」Template を使用し、メール本文に RSU 情報を追加します。
 1. バックグラウンドチェックを開始します。Sterling のドロップダウンから Germany Package を使用してください。
 
 ドイツの候補者には、自筆署名のコントラクトを求める権利があります。（プロセスは後日追加予定）
