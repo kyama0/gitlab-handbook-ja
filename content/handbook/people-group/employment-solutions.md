@@ -12,7 +12,7 @@ lastmod: "2026-04-09T13:22:51+00:00"
 このページには、私たちがチームメンバーをグローバルにスケールさせる方法の概要が含まれています。
 すべての Employment Solutions の DRI は [Employment Solutions Partner](/job-description-library/people-group/global-workforce-strategy) です。契約への変更はすべて Employment Solutions Partner に依頼する必要があり、Director of Tax および Director of Legal, Employment による承認が必要です。
 
-## 国別採用ガイドライン
+## 国別採用ガイドライン {#country-hiring-guidelines}
 
 GitLab は、世界中の国や地域、そしてあらゆる分野のチームメンバーを抱えています。Diversity, Inclusion & Belonging は、私たちの[コア バリュー](/handbook/values/)の 1 つです。複雑なルール、法律、規制を持つ多数の国における運営の維持は、効率的にビジネスを行う能力に影響を与える可能性があります。残念ながら、これは当該国の市民および居住者の雇用可能性に影響します。私たちは、ビジネスニーズが必要とする場合、そして一貫した完全に支援されたチームメンバー体験を提供できる場合に、新しい場所での採用を検討します。
 一部の役割は、場所に基づく特定の適格要件を伴うことがあります。私たちの Talent Acquisition チームが、採用プロセスの開始後に、応募者の場所に関する質問に答えるお手伝いをします。

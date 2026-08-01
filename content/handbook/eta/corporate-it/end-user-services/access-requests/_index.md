@@ -118,7 +118,7 @@ Okta、1Password、Google Workspace など、さまざまなコアサービス�
 - **Issue をある列から別の列へ移動すると、最初のラベル（列ヘッダーごと）が削除され、2 番目のラベルが追加されます。列間で Issue を移動する際は注意してください。**
 - 部門は以下のボードを表示して、未解決のアクセスリクエスト Issue を確認できます。
 
-{{% panel header="**AR ボード: 対応待ち:**" header-bg="success" %}}
+{{% panel header="**AR ボード：対応待ち：**" header-bg="success" %}}
 
 1. [Data](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/boards/1319045)
 1. [Finance](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/boards/1319048)

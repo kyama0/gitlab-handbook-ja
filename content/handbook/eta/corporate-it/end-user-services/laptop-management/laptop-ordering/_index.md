@@ -52,7 +52,7 @@ Corp IT がラップトップ注文を受け取った後、リクエストへの
 
 まれに、入社日前にラップトップが損傷している、または使用不能な状態で到着した場合は、即時の交換または修理に関する次のステップについて Candidate Experience Specialist に連絡し、[laptops@gitlab.com](mailto:laptops@gitlab.com)を CC に追加してください。
 
-{{% alert title="**警告: 偽の求人詐欺**" color="warning" %}}
+{{% alert title="**警告：偽の求人詐欺**" color="warning" %}}
 詐欺師は GitLab になりすまし、求職者を標的にする場合があります。GitLab が新規採用者に機器購入のための資金を送るよう依頼することは決してありません。
 
 警告の兆候と自分を保護する方法については、ブログ記事の[「GitLab になりすます偽の求人詐欺について知っておくべきこと」](https://about.gitlab.com/blog/2023/06/29/fake-gitlab-job-scam/)をお読みください。

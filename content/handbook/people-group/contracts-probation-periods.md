@@ -36,7 +36,7 @@ Director, Talent Brand & Talent Acquisition Enablement は、テンプレート�
 1. 署名された文書をチームメンバーの Workday の文書フォルダーにアップロードします。
 1. 必要に応じて、チームメンバーの Workday プロファイルに必要な更新を行い、Total Rewards (total-rewards@ gitlab.com) および Payroll (uspayroll@ gitlab.com または nonuspayroll@ gitlab.com) に変更を通知するメールを送信します。
 
-## 職務変更レター
+## 職務変更レター {#job-change-letter}
 
 GitLab でチームメンバーが役職を変更し、承認が Greenhouse を通じて行われる場合、Job Change Letter のプロセスは CES 契約プロセス ハンドブックページの [Job Change Letter](/handbook/hiring) セクションに記載されています。
 GitLab でチームメンバーが役職を変更し、承認が Workday を通じて行われる場合、Job Change Letter のプロセスは Promotions & Transfers ハンドブックページの [Job Change Letter](/handbook/people-group/promotions-transfers/#job-change-letter) セクションに記載されています。
@@ -181,7 +181,7 @@ GitLab チームメンバーが GitLab アカウントを使用する承認済�
 
 [People Operations Team](/job-description-library/people-group/people-operations) は、オンボーディング中に新入社員による[Code of Business Conduct & Ethics の署名完了](https://internal.gitlab.com/handbook/people-group/people-operations/people-operations/onboarding_process/#request-signature-for-code-of-conduct-2021-acknowledgement-of-relocation-2021-consent-to-collect-and-use-data-regarding-race-ethnicity-and-social-media-policy-acknowledgment)を追跡します。[Ethics & Compliance team](/handbook/legal/ethics-compliance-program/#training) は、Code of Conduct リフレッシャートレーニングを監督および管理し、従業員は毎年認定書に署名する必要があります。完了は、関連する学習管理プラットフォーム Level Up で追跡されます。署名プロセスは、Workday を通じて追跡され配布されます。年次署名プロセスは、通常、毎年 4 月に開始されます。
 
-## 契約の更新
+## 契約の更新 {#contract-renewals}
 
 以下のプロセスは、以下の用途で使用できます:
 
@@ -219,7 +219,7 @@ GitLab チームメンバーが GitLab アカウントを使用する承認済�
 1. People Operations チームに通知し、Workday の変更を監査できるようにします。
 1. People Operations チームメンバーは、契約が完了したことを確認して、People Operations Task [Tracker](https://docs.google.com/spreadsheets/d/1Z45eOZ2rCRIKgGae3eOKQ8lhIbAPikSs5gLz3V8Kh9U/edit?ts=5e7a2c42#gid=84302455) を更新します。
 
-## オランダ更新プロセス
+## オランダ更新プロセス {#netherlands-renewal-process}
 
 1. 契約終了の 2 ヶ月前、HR Savvy が People Operations チームメンバーのメールアドレスにメールを送信します。
 1. 契約更新の割り当てを担当する People Operations チームメンバーが、契約更新プロセスの完了のために People Operations チームのメンバーを割り当てます。

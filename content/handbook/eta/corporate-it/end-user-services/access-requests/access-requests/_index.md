@@ -44,7 +44,7 @@ stale: false
 
 **ステップ 2. アクセスリクエスト**
 
-1. アクセスが必要なシステムに合わせて行を削除または追加します。**テンプレートの形式に必ず従ってください（以下にも記載しています）**。リクエストするロール、vault、グループ、チャンネル、またはプロジェクトを追加して、リクエストするアクセスをできるだけ具体的に示してください。
+1. アクセスが必要なシステムに合わせて行を削除または追加します。**テンプレートの形式に必ず従ってください（以下にも記載しています）**。リクエストするロール、ボルト、グループ、チャンネル、またはプロジェクトを追加して、リクエストするアクセスをできるだけ具体的に示してください。
 1. 管理アクセスが付与される場合は、admin-access ラベルを追加してください。[最小権限レビュー](https://internal.gitlab.com/handbook/security/access-management-standard/#least-privilege-reviews-for-access-requests)に従って必要最小限のアクセスをリクエストし、根拠セクションでアクセスが必要な理由を説明してください。
 1. リクエストに Infrastructure チームが所有するシステムへのアクセスが含まれる場合は（[Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml)に従って）、`@gitlab-com/gl-infra/managers` にメンションし、~InfrastructureApproved ラベルを追加して承認するよう依頼してください。
 
@@ -140,7 +140,7 @@ Okta で設定されているアプリケーションの一覧については、
 1. **タイトル**には、自分の情報を使用して「Full Name - System - Role」（例：Laura Croft Google Group: adventurer）と入力します。
 1. 必要なアクセスの行を**削除または追加**します。
 1. このリクエストが以下に該当する場合は、ラベルによる承認を得るために Manager に割り当ててください**（Manager は `AR-Approval::Manager Approved` と `ReadyForProvisioning` のラベルを適用する必要があります）：**
-   - 1Password vault またはグループへのアクセス
+   - 1Password ボルトまたはグループへのアクセス
    - 管理アクセス
    - 共有 Slack チャンネルを含む、社内関係者以外の人の Slack グループへのアクセス
    - 社内関係者以外の人が Slack チャンネルから削除され、再度アクセスをリクエストする場合は、新しいアクセスリクエストと Manager の承認が必要であることに注意してください。
@@ -170,7 +170,7 @@ Okta で設定されているアプリケーションの一覧については、
 - **Issue をある列から別の列へ移動すると、最初のラベル（列ヘッダーごと）が削除され、2 番目のラベルが追加されます。列間で Issue を移動する際は注意してください。**
 - 部門は以下のボードを表示して、未解決のアクセスリクエスト Issue を確認できます。
 
-{{% panel header="**AR ボード: 対応待ち:**" header-bg="success" %}}
+{{% panel header="**AR ボード：対応待ち：**" header-bg="success" %}}
 
 1. [Data](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/boards/1319045)
 1. [Finance](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/boards/1319048)
