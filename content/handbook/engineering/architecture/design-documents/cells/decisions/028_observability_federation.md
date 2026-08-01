@@ -94,7 +94,7 @@ Instrumentor は、テナントの設定およびデプロビジョニングフ�
 
 ## 結果
 
-- Instrumentor は設定およびデプロビジョニングのプレイブックで、新たに Grafana API 呼び出しを 2 つ（データソースの作成/削除）取得します。
+- Instrumentor の設定およびデプロビジョニングのプレイブックに、2 つの新しい Grafana API 呼び出し（データソースの作成/削除）が追加されます。
 - Grafana API キーの Vault シークレットパスの規約を定義し、文書化する必要があります。
 - Envoy Prometheus Gateway リソース（`HTTPRoute`、`SecurityPolicy`、オプションの `ClientTrafficPolicy`）は、テナントモデルまたは既知の Grafana エグレス IP リストから取得した CIDR リストを使用し、Cell ごとに Instrumentor が管理します。
 - Grafana エグレス IP 許可リストは、内容の信頼できる情報源である Observability（O11y）チームが所有します。静的で変更頻度は低いと予想されます。config-mgmt 内の許可リストが変更された場合、config-mgmt は対応する Vault シークレットを自動更新し、Instrumentor と Grafana 向け Gateway 設定が手動操作なしで最新の IP を使用できるようにする必要があります。
