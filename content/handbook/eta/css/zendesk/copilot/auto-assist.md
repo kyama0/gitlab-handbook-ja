@@ -18,8 +18,8 @@ stale: false
 ## 現在の設定
 
 - Zendesk Global
-  - Sandbox: Currently inactive
-  - Production: Currently inactive
+  - Sandbox：現在は使用していません
+  - Production：現在は使用していません
 - Zendesk US Government
   - Sandbox
     - Who has access: All groups

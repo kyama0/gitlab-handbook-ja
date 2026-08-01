@@ -1,5 +1,7 @@
 ---
 title: ユーザーペルソナ
+aliases:
+  - /handbook/product/personas/
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/
 upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
 lastmod: "2026-07-28T05:53:28-07:00"
@@ -9,6 +11,8 @@ stale: false
 ---
 
 ### ユーザーペルソナ {#user-personas}
+
+<p id="buyer-personas">バイヤーペルソナについては、<a href="/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/">バイヤーペルソナページ</a>を参照してください。</p>
 
 ユーザーペルソナは、実際に GitLab を使う人々です。彼らは組織内で GitLab を購入する権限と予算を持つ人物である場合もそうでない場合もありますが、購入プロセスにおいて強い影響力を持つ人々です。ユーザーペルソナは UX リサーチの研究から収集されたデータから作成されます。
 
@@ -259,6 +263,8 @@ stale: false
 - JIRA（非技術系ユーザーからのチケット用）
 - Trello（Issue とコミュニケーションの計画用）
 - Slack（コミュニケーション用）
+
+<span id="simone-backend-engineer"></span>
 
 #### Simone (Software Engineer in Test)
 
