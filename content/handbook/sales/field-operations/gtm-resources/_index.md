@@ -2,11 +2,11 @@
 title: "Go to Market"
 description: "オペレーション、手順、ドキュメント"
 upstream_path: /handbook/sales/field-operations/gtm-resources/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T09:55:18+09:00"
+upstream_sha: 46180fa3686c8baa55f91bf32c6e1d676eefd475
+translated_at: "2026-08-03T06:08:55+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-08T11:09:01-04:00"
+lastmod: "2026-07-28T12:14:03+01:00"
 ---
 
 ---
@@ -338,7 +338,7 @@ Salesforce でアカウントオーナーを変更できるのは、Sales System
 
 ### Salesforce での Opportunity オーナーシップの変更
 
-Salesforce でオポチュニティオーナーを変更できるのは、Sales Systems、Sales Operations、Channel Operations、Deal Desk、Finance のみです。これは、エンゲージメントルールが遵守されること、また対応する Account Owner（例外は [Opportunity Ownership](/handbook/sales/field-operations/gtm-resources/rules-of-engagement/#opportunity-ownership-rules-of-engagement) を参照）、Account Demographic 出力、親子関係、報酬プランに基づいてオポチュニティが正しいオーナーに割り当てられることを保証するためです。オポチュニティ割り当てに問題がある場合は、[Opportunity Ownership エンゲージメントルール](/handbook/sales/field-operations/gtm-resources/rules-of-engagement/#opportunity-ownership-rules-of-engagement) で概説されている例外プロセスに従ってください。
+Salesforce でオポチュニティオーナーを変更できるのは、Sales Systems、Sales Operations、Channel Operations、Deal Desk、Finance のみです（ただし、オポチュニティを所有している SDR/BDR は、そのオポチュニティを担当 AE に割り当てることができます）。これは、エンゲージメントルールが遵守されること、また対応する Account Owner（例外は [Opportunity Ownership](/handbook/sales/field-operations/gtm-resources/rules-of-engagement/#opportunity-ownership-rules-of-engagement) を参照）、Account Demographic 出力、親子関係、報酬プランに基づいてオポチュニティが正しいオーナーに割り当てられることを保証するためです。オポチュニティ割り当てに問題がある場合は、[Opportunity Ownership エンゲージメントルール](/handbook/sales/field-operations/gtm-resources/rules-of-engagement/#opportunity-ownership-rules-of-engagement) で概説されている例外プロセスに従ってください。
 
 オポチュニティオーナーの更新をリクエストするには、更新を試みているオポチュニティレコードで Salesforce Chatter で @sales-support にタグを付けてください。
 

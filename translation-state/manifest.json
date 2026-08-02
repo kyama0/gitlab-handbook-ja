@@ -28978,11 +28978,11 @@
     },
     "content/handbook/sales/field-operations/gtm-resources/_index.md": {
       "path": "content/handbook/sales/field-operations/gtm-resources/_index.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T09:55:18+09:00",
+      "upstream_sha": "46180fa3686c8baa55f91bf32c6e1d676eefd475",
+      "translated_at": "2026-08-03T06:08:55+09:00",
       "model": "codex",
-      "input_hash": "8e70debe0192cb8193d7e69c0d00eefe3bf2cfc42996913aa81dc31b461a2c91",
-      "upstream_committed_at": "2026-07-08T11:09:01-04:00"
+      "input_hash": "9aad1682bc2c3658cf1ae6a362b3bfb6cdc074bed0e59abed1aefd800ed0a5d1",
+      "upstream_committed_at": "2026-07-28T12:14:03+01:00"
     },
     "content/handbook/sales/field-operations/gtm-resources/rules-of-engagement.md": {
       "path": "content/handbook/sales/field-operations/gtm-resources/rules-of-engagement.md",
