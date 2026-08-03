@@ -4,11 +4,11 @@ owning-stage: "~devops::tenant scale"
 group: Organizations
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/users/
-upstream_sha: 171236827c9a366363160b625ff53ec19c521940
-translated_at: "2026-04-27T10:00:00Z"
+upstream_sha: 30048133aad0232ed4d59fa0c80643620c85adb3
+translated_at: "2026-08-04T06:12:43+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-23T10:25:38+13:00"
+lastmod: "2026-08-03T15:47:52+08:00"
 ---
 
 GitLab は設立当初から、シングルサーバー・グローバルユーザーアーキテクチャを採用してきました。GitLab.com のスケーリングの懸念とプラットフォーム間の製品機能セットの分化により、このモデルはもはや十分ではありません。これらの制限が、マルチ Cell・マルチテナントアーキテクチャという新時代への進化を促しています。私たちは現在、予測可能な顧客体験を維持しながら、現在のアーキテクチャと目指すアーキテクチャのギャップを埋めるという課題に直面しています。
@@ -17,15 +17,13 @@ GitLab は設立当初から、シングルサーバー・グローバルユー�
 
 最終的な目的地では、複数の GitLab インスタンスが存在し、それぞれが Users テーブルを持ち、必要に応じてインスタンス間でトラフィックがルーティングされます。ユーザーは Organization によって完全に管理され、ユーザーが他の Organization にアクセスすることを防いだり、ユーザーアカウントを完全に削除したりする機能を持つことができます。レガシーユーザーは影響を受けず、新しいアーキテクチャに移行するオプションが提供されます。
 
-## ユーザーのホーム Organization
+## ユーザーのホーム Organization {#the-users-home-organization}
 
-ユーザーはホーム Organization として知られる 1 つの Organization に所属します。この Organization はユーザーに対して完全な権限を持ちます。
+User のホーム Organization は、`User.organization_id` に記録された Organization です。このフィールドは必須で、Cells の `users` テーブルをシャードするためにも使用されます。すべての User の ID は常に 1 つの Organization に関連付けられます。つまり、所有権は常に排他的です。メンバーシップもその Organization に限定されるかどうかは、その Organization が隔離されているかによって決まります。非隔離 Organization ではメンバーシップは排他的になりません。User は同じアカウントで、任意の数の他の非隔離 Organization のメンバーにもなれ、User コンテキストはそれらすべてを横断して集約します。隔離 Organization ではメンバーシップが排他的になります。`organization_id` はその Organization に再割り当てされ、User の ID はその Organization の外部には存在しません。モデル全体については[リクエストコンテキスト](contexts.md)を、.com にとっての意味を含め、このフィールドのエンコード方法については [ADR 016](decisions/016_user_context.md)を参照してください。
 
 既存のユーザーは GitLab が管理するデフォルト Organization に所属します。私たちはユーザーがデフォルト Organization から移行して独自の Organization に入れるようにするマイグレーションパスを開発しています。
 
-ユーザーが 1 つの Organization に所属するようになったため、`users` テーブルには `NOT NULL` の `organization_id` カラムが設けられます。この `organization_id` カラムは `users` テーブルをシャードするためにも使用され、ユーザーとその関連データ（`user_statistics` など）も Organization にスコープされます。
-
-ユーザーはホーム Organization にのみアクセスできます。GitLab.com 上の GitLab チームメンバーの場合、複数の Organization にアクセスできる機能を有効にします（以下の[ドッグフーディング](#dog-fooding)セクションを参照）。最終的には、すべてのユーザーが OAuth のような認証メカニズムを通じて他の Organization と対話できるようになることが提案されています。
+`organization_id` は必須で null になることがないため、常に `users` テーブルを 1 つの Organization にシャードします。その Organization が排他的な境界として機能するのは隔離された後です。その時点で、User と `user_statistics` などの関連データは、実際にその Organization 内に限定されます。
 
 ## ユーザー名
 
@@ -34,12 +32,6 @@ GitLab は設立当初から、シングルサーバー・グローバルユー�
 ## 個人ネームスペース
 
 ユーザーはホーム Organization 内に 1 つの個人ネームスペースを持ちます。個人ネームスペースは、そのネームスペースを所有するユーザーであっても、関連するホーム Organization の外からはアクセスできません。
-
-## ドッグフーディング
-
-ドッグフーディングのために、同じ Cell 内の複数の Organization にユーザーが存在することを可能にする対応を行います。ユーザーは `users.organization_id` を通じてまだ単一の Organization に所属しますが、複数の `organization_users` エントリを持ちます。これにより、GitLab チームが新しい Isolated Organization を作成しやすくなります。ただし、このタイプのドッグフード Organization は、デフォルト Organization と同じ Cell（レガシー Cell）にのみ存在できるという注意点があります。
-
-ドッグフーディングでは、すべてのリクエストに Organization コンテキストが提供されることが保証され、チームがそれに応じて機能をスコープし始めることができます。
 
 ## グローバルボットユーザー
 
@@ -88,7 +80,7 @@ TBD
 
 ## ユーザーはいつ Organization を見ることができるのか？
 
-Organization の公開設定の詳細については、[公開設定](index.md#visibility) を参照してください。
+Organization の公開設定の詳細については、[公開設定](_index.md#visibility) を参照してください。
 
 ## ユーザーは Organization 内で何を見ることができるのか？
 
@@ -153,7 +145,7 @@ SaaS では、ユーザーが課金対象メンバーとみなされるかどう
 
 ## ユーザーはどのようにして異なる Organization を切り替えるのか？
 
-Cells のコンテキストの Organization では、ユーザーは 1 つの Organization のみに所属できます。ユーザーが複数の Organization に参加したい場合、新しいユーザーアカウントで追加の Organization に参加する必要があります。
+User は同じアカウントですでに複数の非隔離 Organization に参加できます。[ユーザーのホーム Organization](#the-users-home-organization)を参照してください。User のホーム Organization が隔離されると、その Organization が User の ID を所有します。そこから別の Organization への切り替えは、ここで決定した内容ではなく、将来の隔離 Organization 切り替え UX に依存します。
 
 後ほど、Cells 1.5 のコンテキストで、ユーザーは[コンテキストスイッチャー](https://gitlab.com/gitlab-org/gitlab/-/issues/411637)を使用できるようになります。この機能により、異なる Organization のコンテンツと設定への簡単なナビゲーションとアクセスが可能になります。コンテキストスイッチャーをクリックして提供されたリストから特定の Organization を選択することで、ユーザーは表示と権限をシームレスに切り替えられ、選択した Organization のリソースと機能を操作できるようになります。
 
@@ -173,7 +165,7 @@ Organization MVC の一環として、Organization オーナーは Organization 
 
 非ユーザーは Organization の外部にあり、パブリックプロジェクトなど Organization のパブリックリソースにのみアクセスできます。
 
-## SaaS チャート
+## SaaS チャート {#saas-chart}
 
 ```mermaid
 flowchart TD
@@ -230,7 +222,7 @@ flowchart TD
         end
 ```
 
-## SM チャート
+## SM チャート {#sm-chart}
 
 ```mermaid
 flowchart TD

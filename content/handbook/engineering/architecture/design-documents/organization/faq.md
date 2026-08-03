@@ -4,11 +4,11 @@ owning-stage: "~devops::tenant scale"
 group: Tenant Scale
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/faq/
-upstream_sha: 171236827c9a366363160b625ff53ec19c521940
-translated_at: "2026-04-27T10:00:00Z"
+upstream_sha: 30048133aad0232ed4d59fa0c80643620c85adb3
+translated_at: "2026-08-04T06:12:43+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-23T10:25:38+13:00"
+lastmod: "2026-08-03T15:47:52+08:00"
 ---
 
 ## 大規模な SaaS 顧客は Organization レベルでライセンスを取得することが想定されますか？
@@ -29,9 +29,9 @@ lastmod: "2026-03-23T10:25:38+13:00"
 
 長期的には、Organization をすべてのプラットフォームにわたる共通のトップレベルエンティティとして持つことで、より高速な機能開発が可能になると予想しています。
 
-## ユーザーは複数の Organization に所属できますか？
+## ユーザーは複数の Organization のメンバーになれますか？
 
-現在、私たちのモデルでは 1 人のユーザーが 1 つの Organization に所属するように設計されています。ユーザーが複数の Organization に所属できるようにすると、大きな技術的課題が生じ、多くの製品上の問題が浮上するため、この制限が実装されました。複数の Organization メンバーシップの利用は比較的少ないと予想されるため、この制限はしばらくの間続く可能性が高いです。
+はい。ただし、それらの Organization が非隔離である場合に限ります。所有権（`organization_id`）は常に 1 つの Organization だけを指しますが、メンバーシップがその Organization に限定されるのは、Organization が隔離された後だけです（[ユーザーのホーム Organization](users.md#the-users-home-organization)を参照）。それまでは、同じアカウントで任意の数の非隔離 Organization のメンバーになれます。モデル全体については[リクエストコンテキスト](contexts.md)を参照してください。特定の Organization に隔離機能が提供された後は、単一の隔離された Organization のメンバーになることが長期的な目標です。
 
 ## Organization に代替の GitLab ドメイン名（`customer.gitlab.com` など）を設定できるようになることが想定されますか？
 
@@ -40,7 +40,7 @@ lastmod: "2026-03-23T10:25:38+13:00"
 
 ## Organization には独自の公開設定（パブリック/プライベート）があることが想定されますか？
 
-公開設定はメインの [Organization ページ](index.md#visibility) に記載されています。
+公開設定はメインの [Organization ページ](_index.md#visibility) に記載されています。
 
 ## トップレベルグループから Organization への機能の移行はどのようなものになりますか？
 

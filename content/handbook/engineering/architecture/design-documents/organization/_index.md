@@ -11,11 +11,11 @@ group: Organizations
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:19:21+09:00"
+upstream_sha: 30048133aad0232ed4d59fa0c80643620c85adb3
+translated_at: "2026-08-04T06:12:43+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T12:27:01+08:00"
+lastmod: "2026-08-03T15:47:52+08:00"
 ---
 
 {{< engineering/design-document-header >}}
@@ -78,6 +78,10 @@ GitLab.com では、トップレベルグループがデフォルト Organizatio
 organization スコープのデータに依存する機能は、Organization の境界ルールを強制する前に、現在の organization が非隔離か隔離済みかを確認しなければなりません。
 詳細は [ADR 008: GitLab.com 上の非隔離 organization](decisions/008_non_isolated_organizations_gitlab_com.md) を参照してください。
 
+## リクエストコンテキスト
+
+すべてのリクエスト、ジョブ、タスクは、Organization コンテキスト、User コンテキスト、Nil コンテキストの 3 つのいずれかに解決されます。隔離によって変わるのは、どのコンテキストが適用されるかという点だけです。モデル全体については[リクエストコンテキスト](contexts.md)を、現在のエンコード方法については [ADR 016: `organization_id` と Organization スコープのクエリフィルタリング](decisions/016_user_context.md)を参照してください。
+
 ## Organization が他のドメインに与える影響
 
 Organization がシステムの他の部分にどのように影響するかをより詳しく説明するページのリストです。今後も増えていきます。
@@ -87,6 +91,7 @@ Organization がシステムの他の部分にどのように影響するかを�
 - [Settings](settings.md)
 - [Lifecycle](lifecycle.md)
 - [Users](users.md)
+- [リクエストコンテキスト](contexts.md)
 - [Login](login.md)
 - [OAuth - GitLab as SP](oauth_client_auth.md)
 
@@ -137,7 +142,7 @@ Organization 内で User がどのように管理されるかの詳細につい�
 
 Organization はパブリックまたはプライベートにできます。パブリックな Organization は誰もが見ることができます。パブリックおよびプライベートな Group と Project を含めることができます。プライベートな Organization は、その Organization の Organization user だけが見ることができます。プライベートな Group と Project のみを含めることができます。
 
-将来的には、Organization は Group と Project に対する内部（internal）可視性設定を追加で持つようになります。これにより、それを含む User だけが見られる内部 Organization を導入できます。これは、Organization に属する User だけが次のものを見られることを意味します。
+将来的には、Organization は Group と Project に対する内部（internal）可視性設定を追加で持つようになります。これにより、そこに含まれる User だけが見られる内部 Organization を導入できます。これは、Organization に属する User だけが次のものを見られることを意味します。
 
 - Organization の URL に移動したときに 404 ではなく Organization のフロントページ
 - Organization の名前
@@ -195,7 +200,7 @@ self-managed インスタンスは一般に単一の organization にスコー�
 現在、グローバルに一意であることが `https://gitlab.com/<path>/-/` 上で要求されるルーティング可能なエンティティとして扱われるのは、User、Project、Namespace、コンテナイメージのみです。
 私たちは、既存のグローバルスコープのルートを許可するようルーティングルールを更新し、新たに並行する Organization スコープのルート群を導入します。
 グローバルスコープのルートは既存のルートとの後方互換性を維持し、また GitLab.com 以外で単一の Organization を持つ可能性が高いプラットフォームに対してはパスの冗長性を減らします。
-URL の仕組みは [ADR 004](decisions/004_path_scope.md) で決定されており、さらに詳しい情報は [Current Organization](current_organization.md) にあります。
+URL の仕組みは [ADR 004](decisions/004_path_scope.md) で決定されており、さらに詳しい情報は [現在の Organization](current_organization.md) にあります。
 
 ## Organization の開発
 
@@ -253,7 +258,7 @@ Organization user 管理とダッシュボードを含む、Organization のユ�
 - **可視性**
   - Organization はパブリックまたはプライベートにできます。
   - Default Organization はパブリックです。
-  - `/explore` のような Organization 固有でないエンドポイントへのリクエストは、デフォルトで default organization になります。
+  - `/explore` のような Organization 固有でないエンドポイントへのリクエストは、デフォルトで default organization になります。このようなエンドポイントを代わりに Nil コンテキストへ解決すべきかどうかは、ルートごとに決める必要がある未解決事項です。詳しくは[リクエストコンテキスト](contexts.md)を参照してください。
   - パブリックな Organization は誰もが見ることができます。パブリックおよびプライベートな Group と Project を含めることができます。
   - プライベートな Organization は、その Organization に属する User だけが見ることができます。プライベートまたは内部の Group と Project のみを含めることができます。
 - **ユーザー**
@@ -261,7 +266,7 @@ Organization user 管理とダッシュボードを含む、Organization のユ�
   - Organization を作成すると、作成した User が Organization Administrator に任命されます。
   - Organization Administrator は、ユーザーの既存の user type を Regular User から Administrator へ、またはその逆に更新できます。
   - Organization ごとに少なくとも 1 人の Organization Administrator が必要です。
-  - User は 1 つの Organization にのみ所属できます。User が所属したい Organization ごとに、新しいアカウントを作成する必要があります。
+  - User は同じアカウントで複数の非隔離 Organization に所属できます。User の ID が隔離された Organization に所有されるようになると、その User はその Organization のみに所属します。[リクエストコンテキスト](contexts.md)を参照してください。
   - Organization Administrator は、自身の Organization 内のユーザーを削除できます。
   - ユーザーがグループやプロジェクトのメンバーになると、Organization user としても追加されます。Organization に追加されたことを知らせるメールを受け取ります。
   - ユーザーを最後のグループまたはプロジェクトから削除しても、Organization からは削除されないようにします。
@@ -327,6 +332,7 @@ Organization user 管理とダッシュボードを含む、Organization のユ�
 - [013: Organization 内で Top-Level-Group を作成するときに警告する](decisions/013_warn_on_tlg_creation.md)
 - [014: Organization roles renamed to Organization user types](decisions/014_organization_roles_renamed_to_organization_user_type.md)
 - [015: 非隔離は恒久的な Organization の状態](decisions/015_non_isolation_is_permanent.md)
+- [016: `organization_id` と Organization スコープのクエリフィルタリング](decisions/016_user_context.md)
 
 ## リンク
 

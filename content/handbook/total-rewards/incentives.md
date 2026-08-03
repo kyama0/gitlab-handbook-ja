@@ -3,11 +3,11 @@ title: "GitLab におけるインセンティブ"
 description: "このページでは、GitLab チームメンバーが利用できるインセンティブに関する情報を扱っています。"
 date: 2026-03-06
 upstream_path: /handbook/total-rewards/incentives/
-upstream_sha: 82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2
-translated_at: "2026-07-09T11:04:43+09:00"
+upstream_sha: 30048133aad0232ed4d59fa0c80643620c85adb3
+translated_at: "2026-08-04T06:05:19+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-08T11:09:01-04:00"
+lastmod: "2026-08-03T09:56:05-07:00"
 ---
 
 お探しのものが見つかりませんか？ メインの [People Operations ページ](/handbook/people-group/) をお試しください。
@@ -30,7 +30,7 @@ FY 2021 の Q2 から、代行または暫定マネジメント役職に就く�
 
 ### 暫定ボーナスの計算
 
-ボーナスの計算式は、チームメンバーが暫定役職を演じている期間の長さを認識します。一時ボーナスの支払いは、暫定役職の完了時に発生します。ボーナスは以下の計算式を使用して計算されます:
+ボーナスの計算式では、チームメンバーが暫定役職に就いている期間の長さを考慮します。一時ボーナスの支払いは、暫定役職の完了時に発生します。ボーナスは以下の計算式を使用して計算されます:
 
 標準的な裁量ボーナス額 ($1,000、現在の為替レートで) または以下の計算のいずれか大きい方の値:
 
@@ -47,7 +47,7 @@ Go-to-Market 役職の OTE (On Target Earnings) 報酬プランのチームメ�
   * 暫定ボーナスは、より高位のリーダーシップポジションの代表的な BCR (基本コミッション率) x 暫定期間中にクローズされた Net ARR に基づいて計算されます
 * 標準的なコミッション支払いは、暫定役職期間中続きます
 * In-plan (OTI 内) のすべての構成要素は、GTM 役職の暫定ボーナス計算に含めることができます。例: Net ARR、New Logo、Professional Services Bookings など。
-* プールド報酬プランで測定されるチーム (例: SA および CSM) の場合、暫定ボーナスはパフォーマンスではなく、シート中の暫定役職の OTE に基づきます: (現地通貨建て年間 OTE/365) / x .10 (10%) x 暫定役職の暦日数
+* プールド報酬プランで測定されるチーム (例: SA および CSM) の場合、暫定ボーナスはパフォーマンスではなく、その暫定役職に就いている期間の OTE に基づきます: (現地通貨建て年間 OTE/365) / x .10 (10%) x 暫定役職の暦日数
 * GTM 役職のすべてのピープルマネージャーは、CRO または CMO リーダーシップチームのメンバー、すなわち CRO または CMO の直属を除き、暫定マネジメント割り当ての候補です
 * 暫定マネジメント役職にある GTM チームメンバーの合計ボーナス支払いは、単一の暫定リーダーシップ割り当てに対して50,000 USD を超えてはなりません
 
@@ -109,7 +109,7 @@ Workday の例:
 
 #### 目的
 
-裁量ボーナスは、GitLab の [CREDIT](/handbook/values/#credit) 価値観 — :handshake: Collaboration、📈 Results for Customers、:stopwatch: Efficiency、:globe_with_meridians: Diversity, Inclusion & Belonging、:footprints: Iteration、:eye: Transparency — を体現しながら、 **役割の期待を超える** 例外的な仕事に対する **ピアツーピア** の認識アワードです。
+裁量ボーナスは、GitLab の [CREDIT](/handbook/values/#credit) 価値観 — :handshake: Collaboration、📈 Results for Customers、:stopwatch: Efficiency、:globe_with_meridians: Diversity, Inclusion & Belonging、:footprints: イテレーション、:eye: Transparency — を体現しながら、 **役割の期待を超える** 例外的な仕事に対する **ピアツーピア** の称賛アワードです。
 
 良い仕事と素晴らしい仕事は私たちのベースラインです — ボーナスは、その高い基準でも際立つ真に例外的な貢献を称えるものです。
 
@@ -119,7 +119,7 @@ Workday の例:
 
 ##### 推薦できる人
 
-good standing の任意の GitLab [チームメンバー](/handbook/people-group/employment-solutions/#team-member-types-at-gitlab) が、自分のチーム外の人を含む、誰でも推薦できます。自己推薦は許可されていません。
+良好な在籍状況にある任意の GitLab [チームメンバー](/handbook/people-group/employment-solutions/#team-member-types-at-gitlab)が、自分のチーム外の人を含む、誰でも推薦できます。自己推薦は許可されていません。
 
 ##### 推薦される対象
 
@@ -128,7 +128,7 @@ good standing の任意の GitLab [チームメンバー](/handbook/people-group
 * 直属のマネージャーまたはマネジメントチェーンの誰か
 * 一時的な契約者
 * 現在パフォーマンス改善中のチームメンバー
-* good standing にないか、GitLab を離れたチームメンバー
+* 良好な在籍状況にない、または GitLab を離れたチームメンバー
 
 #### 対象となるもの
 
@@ -146,7 +146,7 @@ good standing の任意の GitLab [チームメンバー](/handbook/people-group
 | 📈 Results for Customers | 自分の役割を完全に超えて、重要な顧客 Issue を解決する |
 | :stopwatch: Efficiency | チーム横断的にプロセスを劇的に改善するソリューションを実装する |
 | :globe_with_meridians: DIB | 組織全体の帰属感を測定可能に向上させるイニシアティブを作成する |
-| :footprints: Iteration | 他の人が完璧を待つ場面で、漸進的な価値を出荷する |
+| :footprints: イテレーション | 他の人が完璧を待つ場面で、漸進的な価値を出荷する |
 | :eye: Transparency | 組織全体で情報をアクセス可能で可視化する |
 
 ##### &cross; 無効な基準
@@ -171,7 +171,7 @@ good standing の任意の GitLab [チームメンバー](/handbook/people-group
 1. **マネージャー** — 価値観が明確に表現されていること、ワークが真に例外的で通常の役割の外であること、ボーナスがチーム全体で思慮深く分配されていることを確認します
 1. **Compensation** — レビューと承認
 1. **People Operations** — 最終レビューと承認、支払いを処理します
-1. **認識** — #thanks で実証された価値観を強調して共有されます
+1. **称賛** — #thanks で実証された価値観を強調して共有されます
 
 90日以上アイドル状態の推薦は自動的にキャンセルされます。
 
@@ -215,8 +215,8 @@ good standing の任意の GitLab [チームメンバー](/handbook/people-group
 1. 'Nominate!' ボタンをクリックして、推薦の詳細を追加します。テキストフィールドを使用して、GitLab チームメンバーが自分のワークで特定の GitLab 価値観をどのように実証したかを説明する数文を書きます。 上記の有効・無効基準を確認したことを必ず確認してください。推薦リクエストは私たちの価値観と関連付けられ、推薦が基準を満たしていることを保証するために十分に詳細でなければならないことを忘れないでください。適用される価値観を選択できます。
 1. 該当する場合は、推薦をサポートする関連 Issue またはマージリクエストを必ず含めてください。
 1. 提出されると、ボットはマネージャーに送信して承認フローを開始します。
-1. 承認フローのいずれかの時点で、マネージャーまたはマネージャーのマネージャーがボーナス承認について質問がある場合、マネージャーや承認者はマネージャーおよび/または推薦者に追加のコンテキストを求めることができます。プロセスとロジスティクスに関する残りの質問 (例えば、ボーナスは承認チェーンのどこにあるか?) がある場合、この [FAQ ガイド](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854) が明確化に役立つ可能性があります。あるいは、 [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=e7b7f30d474c069067429ee0026d431f) を通じて People Operations チームに連絡することができます。推薦を承認するかどうかのガイダンスに関する残りの質問については、整合した [People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments) に連絡できます。
-1. マネージャーまたは2レベル目の承認者が長期休暇中で、合理的な時間枠 (2週間以上) で推薦に応答できない場合、推薦が誰のためであるかを記載した [HelpLab](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=ff7a26094784069067429ee0026d4337) で People Operations チームのケースを作成し、処理のために次のレベルのマネージャーに手動で移動できるようにしてください。
+1. 承認フローのいずれかの時点で、マネージャーまたはその上位のマネージャーがボーナスの承認について質問がある場合、マネージャーまたは推薦者に追加のコンテキストを求めることができます。プロセスとロジスティクスに関する残りの質問 (例えば、ボーナスは承認チェーンのどこにあるか?) がある場合、この [FAQ ガイド](https://theloop.gitlab.com/site/4455aa7f-24d9-41f2-b940-467b54962e4d/page/0fa19bf4-fd6a-41b9-9316-c2dcf3add854) が明確化に役立つ可能性があります。あるいは、 [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=e7b7f30d474c069067429ee0026d431f) を通じて People Operations チームに連絡することができます。推薦を承認するかどうかのガイダンスに関する残りの質問については、整合した [People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments) に連絡できます。
+1. マネージャーまたは 2 レベル目の承認者が長期休暇中で、合理的な時間枠 (2 週間を超える) で推薦に応答できない場合、推薦が誰のためであるかを記載した [HelpLab](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=ff7a26094784069067429ee0026d4337) で People Operations チームのケースを作成し、処理のために次のレベルのマネージャーに手動で移動できるようにしてください。
 1. 全員が承認すると、ボットは良いニュースとともに報告を返します。拒否された場合は、拒否した人にあなたに連絡してもらうように依頼します。それはボットによって行われません。
 
 ##### マネージャープロセス
@@ -224,7 +224,7 @@ good standing の任意の GitLab [チームメンバー](/handbook/people-group
 1. Nominator ボットは、推薦の承認または拒否を求める Slack DM をあなたに送信します。
 1. 承認することを決定したら、必要なのは承認ボタンをクリックするだけです。ボットが次のステップ (2レベル目のマネージャーと People Operations チームへの送信) を処理します。
 1. 拒否することを決定したら、拒否ボタンをクリックします。推薦は `rejected_by_manager` として更新されます。ボットは推薦者に連絡して、推薦が承認されなかった理由を確実に理解してもらうように依頼します。
-1. 次のレベルの承認者が長期休暇中で、合理的な時間枠 (2週間以上) で推薦に応答できない場合、推薦が誰のためであるかを記載した [HelpLab](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=ff7a26094784069067429ee0026d4337) で People Operations チームのケースを作成し、処理のために次のレベルのマネージャーに手動で移動できるようにしてください。
+1. 次のレベルの承認者が長期休暇中で、合理的な時間枠 (2 週間を超える) で推薦に応答できない場合、推薦が誰のためであるかを記載した [HelpLab](https://helplab.gitlab.systems/esc?id=sc_cat_item&sys_id=ff7a26094784069067429ee0026d4337) で People Operations チームのケースを作成し、処理のために次のレベルのマネージャーに手動で移動できるようにしてください。
 1. 他の全員が承認すると、ボットはあなたに連絡し、 [#thanks](https://gitlab.slack.com/archives/C038E3Q6L) Slack チャンネルでチームメンバーと共有し、チームメンバーの直接のピアが簡単に見えるようにできます:
     * 例えば、チームメンバーのグループチャンネルにクロスポストする
     * Support の場合、 [Support Week in Review](/handbook/support/#support-week-in-review) に「Team Member Update」項目として追加する
@@ -248,7 +248,7 @@ graph TD;
 ### Working Group ボーナス
 
 1. 時には [working group](/handbook/company/structure/#working-groups) が、ある期間、プロジェクト、または状況で GitLab 価値観を強く示すことがあります。このケースには、Working Group ボーナスを使用します。
-1. 個人と同様に、 `#thanks` チャンネルを通じて、また時には Working Group ボーナスを通じてグループを構成する人々を認識します。
+1. 個人と同様に、 `#thanks` チャンネルを通じて、また時には Working Group ボーナスを通じてグループを構成する人々を称えます。
 1. 誰でも、関係する個人のマネージャーを通じて、 [Working Group ボーナスの推薦](#process-for-recommending-working-group-bonus-in-workday) ができます。1人あたり100ドル ([為替レート](/handbook/total-rewards/compensation/#exchange-rates) で)。
 
 ### Workday での Working Group ボーナス推薦プロセス {#process-for-recommending-working-group-bonus-in-workday}
@@ -257,7 +257,7 @@ graph TD;
 
 1. ワーキンググループが自分のワークで特定の GitLab 価値観をどのように示したかの説明を書きます。
 1. その文を関係する個人のマネージャーにメールし、Working Group ボーナスを提案し、すべてのマネージャーと15分間の Zoom ミーティングをセットアップして提案について議論します。 **注: マネージャーとの整合は、プライベート Slack チャンネルで非同期に行うこともできます。**
-1. マネージャーは同意するかしないかもしれず、レポートがボーナスを取得するかどうかについて (マネージャーの承認とともに) 完全な裁量を持っていることを忘れないでください。 また、 `#thanks` チャンネルを使用して人々を認識することもできることを忘れないでください。
+1. マネージャーは同意する場合もあれば、同意しない場合もあります。また、直属のチームメンバーがボーナスを受け取るかどうかについて、上位のマネージャーの承認を条件に完全な裁量を持っていることを忘れないでください。`#thanks` チャンネルを使って人々を称えることもできます。
 
 **Sales Development Focus ボーナス (Sales Development 固有のワーキングボーナス)**
 
@@ -290,11 +290,11 @@ graph TD;
 
 ## GitLab Awards プログラム
 
-各会計年度、GitLab Awards プログラムは、私たちの [価値観](/handbook/values/#credit) を示すことで大きなインパクトをもたらしたチームメンバーを認識します。GitLab Awards プログラムは、2種類の異なるアワードで構成されています: DZ Award と Values Awards です。
+各会計年度、GitLab Awards プログラムは、私たちの [価値観](/handbook/values/#credit) を示すことで大きなインパクトをもたらしたチームメンバーを表彰します。GitLab Awards プログラムは、2種類の異なるアワードで構成されています: DZ Award と Values Awards です。
 
 ### The DZ Award
 
-私たちの大切な共同創設者である [Dmitriy Zaporozhets「DZ」](https://university.gitlab.com/learn/video/dz-video)、DZ の貢献、そして GitLab に10年を捧げたDZ を称え、GitLab は毎会計年度、 [boring solution](/handbook/values/#boring-solutions) を使用して困難な問題を解決することで大きなインパクトをもたらしたチームメンバーを認識します。
+私たちの大切な共同創設者である [Dmitriy Zaporozhets「DZ」](https://university.gitlab.com/learn/video/dz-video)、DZ の貢献、そして GitLab に10年を捧げたDZ を称え、GitLab は毎会計年度、 [boring solution](/handbook/values/#boring-solutions) を使用して困難な問題を解決することで大きなインパクトをもたらしたチームメンバーを表彰します。
 
 DZ アワードの詳細:
 
@@ -316,15 +316,15 @@ DZ アワードの詳細:
 * チームメンバーが技術的な役割にあること、または技術的な問題に対するソリューションを作成することは、このアワードに推薦される要件ではありません。
 * ビジネスのレベル - このアワードはリーダーのみに付与されることを意図したものではなく、すべてのチームメンバーが利用可能です。
 * [Talent Assessment](/handbook/people-group/talent-assessment) - 私たちはペイ・フォー・パフォーマンス報酬哲学を継続したいですが、最後のレビューサイクルの結果に関係なく、チームメンバーはこのアワードの対象となる可能性があります。
-* 唯一の基準は、チームメンバーが good standing にあることです (例: PIP/最近書面警告を受けていないこと)。
+* 唯一の基準は、チームメンバーが良好な在籍状況にあることです (例: PIP/最近書面警告を受けていないこと)。
 
 ### Values Award
 
-Values Award は、誰もが活躍できる環境を育む GitLab 価値観を体現し採用する人々を称えます。これらのアワードは、特に思考と視点の多様性において、すべてのチームメンバーに対して包括的なチームメンバーを認識します。これらのアワードの対象となるチームメンバーは、職場でのエゴなし、Single Source of Truth の使用、何ではなくなぜを言うこと、不快なアイデアと会話を受け入れることを実証します。GitLab 価値観の貢献または表示は、チームメンバーの直接のチーム、顧客、ユーザー、投資家を超えて見える必要があります。
+Values Award は、誰もが活躍できる環境を育む GitLab 価値観を体現し採用する人々を称えます。これらのアワードは、特に思考と視点の多様性において、すべてのチームメンバーを受け入れるチームメンバーを表彰します。これらのアワードの対象となるチームメンバーは、職場でのエゴなし、Single Source of Truth の使用、何ではなくなぜを言うこと、不快なアイデアと会話を受け入れることを実証します。GitLab 価値観の貢献または表示は、チームメンバーの直接のチーム、顧客、ユーザー、投資家を超えて見える必要があります。
 
 Values Award の詳細:
 
-* 6つのアワードがあり、それぞれは: Collaboration、Results、Efficiency、Diversity, Inclusion and Belonging、Iteration、Transparency 用です。
+* 6つのアワードがあり、それぞれは: Collaboration、Results、Efficiency、Diversity, Inclusion and Belonging、イテレーション、Transparency 用です。
 * 各価値観アワードの受賞者は、為替レートで 5,000 USD 相当の一時現金ボーナスを受け取ります。
 * 特別にデザインされた GitLab Awards メダル。
 
@@ -346,9 +346,9 @@ Values Award の詳細:
 
 私たちは、誰もが活躍できる環境を育む努力で大きなインパクトをもたらすことを目指しています。 [Diversity, Inclusion and Belonging](/handbook/values/#diversity-inclusion) の価値観アワードは、例えば: 非同期コミュニケーションへのバイアス、多様な視点の追求、神経多様性の受容などを通じて、あらゆる背景と状況の人々が帰属し貢献できると感じる環境を作るのに貢献したチームメンバーに付与されます。
 
-##### Iteration Award
+##### イテレーションアワード
 
-私たちは可能な限り最小限のことを行い、可能な限り速くそれを世に出します。 [Iteration](/handbook/values/#iteration) の価値観アワードは、例えば: 期日の設定、最小限の価値ある変更 (MVC)、または低レベルの恥などを通じて、より速い結果につながったイテレーションを貢献または示したチームメンバーに付与されます。
+私たちは可能な限り最小限のことを行い、可能な限り速くそれを世に出します。 [イテレーション](/handbook/values/#iteration) の価値観アワードは、例えば: 期日の設定、最小限の価値ある変更 (MVC)、または低レベルの恥などを通じて、より速い結果につながったイテレーションを貢献または示したチームメンバーに付与されます。
 
 ##### Transparency Award
 
@@ -361,7 +361,7 @@ Values Award の詳細:
 * 貢献または表示は、直接のチーム、顧客、ユーザー、投資家以外のチームメンバーから見える。
 * 貢献または表示は、役割/ジョブファミリー責任の一般的なスコープ外であった
 * ​​真に例外的なワーク。良いと素晴らしいはチームメンバーのワークとパフォーマンスにすでに期待されている
-* チームメンバーが会社で good standing にある (例: PIP/最近書面警告を受けていない)。
+* チームメンバーが会社で良好な在籍状況にある (例: PIP/最近書面警告を受けていない)。
 
 ### アワードの推薦プロセス
 
@@ -379,9 +379,9 @@ Values Award の詳細:
 
 ## CTO DevSecOps Innovation Award
 
-DevSecOps Innovation Award は、当社のプラットフォームとその機能を活用して、日常業務へのアプローチの生産性と効果を向上させている GitLab チームメンバーのための認識プログラムです。 製品を **ドッグフーディング** することは、自分自身だけでなく、お客様にとっても製品を改善する方法を学ぶために重要です。製品の社内利用を理解することで、生産性と、プラットフォームを他の人に売り込み、宣伝する能力の両方を向上させることができます。
+DevSecOps Innovation Award は、当社のプラットフォームとその機能を活用して、日常業務へのアプローチの生産性と効果を向上させている GitLab チームメンバーのための表彰プログラムです。 製品を **ドッグフーディング** することは、自分自身だけでなく、お客様にとっても製品を改善する方法を学ぶために重要です。製品の社内利用を理解することで、生産性と、プラットフォームを他の人に売り込み、宣伝する能力の両方を向上させることができます。
 
-このアワードの詳細は [internal handbook page](https://internal.gitlab.com/handbook/engineering/cto-programs/cto-devsecops-innovation-award/) で確認できます。
+このアワードの詳細は [社内ハンドブックページ](https://internal.gitlab.com/handbook/engineering/cto-programs/cto-devsecops-innovation-award/)で確認できます。
 
 ## 紹介ボーナス
 
@@ -399,7 +399,7 @@ GitLab で働いているなら、私たちの [Team](/handbook/company/team/) �
 * Strategic または Major Account Executive 役職に採用された紹介に対して10,000ドル
 これらの強化されたボーナスは、 **2025年12月8日から2026年2月23日の間** に採用日のある Account Executive 紹介に適用され、すべての会社の紹介と支払いポリシーに従います。
 
-私たちは、私たちのチームと採用慣行における [diversity](/handbook/values/#diversity-inclusion) を奨励しサポートし、チームメンバーがネットワーク内に technology における代表されていないグループのメンバーとして認識する潜在的な候補者がいるかどうかを検討することを奨励します。
+私たちは、私たちのチームと採用慣行における [diversity](/handbook/values/#diversity-inclusion) を奨励しサポートし、チームメンバーに、ネットワーク内にテクノロジー業界で十分に代表されていないグループに属する潜在的な候補者がいないか検討するよう奨励します。
 
 チームメンバーが **2025-12-07 より前** の採用日を持つ場合は、 [以前の](/handbook/hiring/referral-operations/#adding-a-referral-to-workday-people-operations-team) で言及された紹介ボーナス額が適用されることをご注意ください。
 
@@ -412,8 +412,8 @@ GitLab で働いているなら、私たちの [Team](/handbook/company/team/) �
 * 直属のレポートまたは直接のレポーティングチェーンの人々を採用することに対するボーナスはありません、
 * 現在のチームメンバーを紹介する場合のボーナスはありません、
 * Boomerang Team Member (戻ってきたチームメンバー) を紹介することに対するボーナスはありません、
-* 紹介するチームメンバーが Talent Acquisition チームの一部である場合のボーナスはありません - マネージャーや承認者はポジションの性質上、候補者と関わるため、対象となりません。
-* 利益相反が認識される場合のボーナスはありません。
+* 紹介者が Talent Acquisition チームのメンバーである場合、候補者との関与が職務の性質に含まれるため、ボーナスの対象にはなりません。
+* 利益相反があると見なされる場合のボーナスはありません。
 * VP レベルまたは [Executive Group](/handbook/company/structure/#executives) のボーナスはありません。
 * 紹介がインターンの場合のボーナスはありません。紹介 (インターン) がフルタイム、中級レベルのチームメンバーに変換された場合、紹介ボーナスが支払われます。
 * 紹介ボーナス支払い日より前にチームメンバーの雇用が終了した場合、紹介チームメンバーに対するボーナスは適用されません。アクティブなチームメンバーである必要があります。
@@ -435,17 +435,17 @@ GitLab で働いているなら、私たちの [Team](/handbook/company/team/) �
 
 ### GitLab 記念日
 
-毎週木曜日の 10:00 UTC に、 `PeopleOps Bot` slack ボットが、その週に採用記念日を祝うすべてのチームメンバーに祝福する shout out を `#team-member-updates` チャンネルに送信します。
+毎週木曜日の 10:00 UTC に、 `PeopleOps Bot` Slack ボットが、その週に採用記念日を祝うすべてのチームメンバーへの称賛メッセージを `#team-member-updates` チャンネルに送信します。
 ギフトに関する詳細情報については、 [GitLab Anniversary Gift](/handbook/people-group/celebrations/#anniversary-gifts) セクションをご覧ください。
 
 ## GitLab Ultimate と Duo Enterprise
 
-すべての GitLab チームメンバーは、GitLab.com の [Ultimate](https://about.gitlab.com/pricing/#gitlab-com) tier をリクエストできます。
-チームメンバーが GitLab.com で個別のプライベートおよびワークアカウントを持っている場合、両方にリクエストできます。このインセンティブは、GitLab チームメンバーが所有するグループには **適用されません** (例えば、epics などのグループレベルの Ultimate 機能は、Ultimate GitLab チームメンバー個人アカウントでは利用できません)。
+すべての GitLab チームメンバーは、GitLab.com の [Ultimate](https://about.gitlab.com/pricing/#gitlab-com) プランをリクエストできます。
+チームメンバーが GitLab.com で個別のプライベートおよびワークアカウントを持っている場合、両方にリクエストできます。このインセンティブは、GitLab チームメンバーが所有するグループには **適用されません** (例えば、エピックなどのグループレベルの Ultimate 機能は、Ultimate GitLab チームメンバー個人アカウントでは利用できません)。
 
-Ultimate をリクエストするには、 [このフォームを提出](https://docs.google.com/forms/d/e/1FAIpQLSddexI8VZTCiyxme1_7QtbQZ6WoIJRlHdaI2Gi6PD8Eti-DLQ/viewform) してください。あなたのアカウントは、提出から2時間以内に Ultimate tier にアップグレードされます。
+Ultimate をリクエストするには、 [このフォームを提出](https://docs.google.com/forms/d/e/1FAIpQLSddexI8VZTCiyxme1_7QtbQZ6WoIJRlHdaI2Gi6PD8Eti-DLQ/viewform) してください。あなたのアカウントは、提出から2時間以内に Ultimate プランにアップグレードされます。
 
-{{% alert title="Note" color="primary" %}}
+{{% alert title="注" color="primary" %}}
 
 GitLab プロファイルやアカウント情報ページから Ultimate プランにあることを確認する簡単な方法はありません。特定のアカウントで Ultimate Plan を持っていることを確認するには:
 
@@ -455,16 +455,44 @@ GitLab プロファイルやアカウント情報ページから Ultimate プラ
 
   ```json
   "plan": "ultimate",
-  ```
 
 {{% /alert %}}
 
 このプロセスについて質問がある場合、または上記の手順で確認したうえで 2 時間後にこのアップグレードが見られない場合は、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して探します）または it-help@gitlab.com から IT にお問い合わせください。
 
-加えて、GitLab チームメンバーは、 [`GitlabCom_Licensed_Demo_Group_Request` issue テンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?type=ISSUE&description_template=GitlabCom_Licensed_Demo_Group_Request) を使用して、個人アカウント (上記の Ultimate tier リクエストに使用された同じアカウント) の単一グループ向けに、 [Duo Enterprise](https://about.gitlab.com/gitlab-duo/#addons) 付きのシングルシート Ultimate プラングループをリクエストできます。
+加えて、GitLab チームメンバーは、個人アカウント (上記の Ultimate プランのリクエストに使用したものと同じアカウント) の単一グループ向けに、[Duo Enterprise](https://about.gitlab.com/gitlab-duo/#addons)付きの 1 シート Ultimate プラングループを、[`GitlabCom_Licensed_Demo_Group_Request` Issue テンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?type=ISSUE&description_template=GitlabCom_Licensed_Demo_Group_Request)を使用してリクエストできます。
 
 これらのオプションは、当社の製品を [ドッグフーディング](/handbook/values/#dogfooding) する一環として、可能な限りすべての機能を使用することを奨励するために提供されています。
 
 Ultimate と Duo Enterprise は、オフボーディングの一環として、すべての関連する名前空間から削除されます。
 
 GitLab チームメンバーとしての時間中に作成された知的財産 (IP) の所有権は、雇用契約によって規定されます。このインセンティブの恩恵を受ける個人 GitLab アカウントでこの IP を開発しホストすることを選択しても、IP が雇用契約の発明譲渡条項の対象となるかどうかは決定されません。
+
+## 企業ボーナスプラン
+
+新しい企業ボーナスプログラムは、Director+ ボーナスプランまたはセールス／インセンティブプランにすでに参加していない、対象となる GitLab チームメンバーに現金ボーナスの機会を提供します。
+
+目標ボーナスは基本給の 10% です。これは目標ボーナスであり、支給額が自動的に基本給の 10% になるという意味ではありません。
+
+このプログラムは 2026 年 6 月 1 日に発効します。2027 年以降は、2 月 1 日から 1 月 31 日までの標準的な会計年度サイクルに従います。
+
+### 具体的な内容
+
+対象となるチームメンバーには、基本給の 10% に相当する目標ボーナスの機会があり、年に 2 回、ボーナスサイクルの各 6 ヶ月間に半分ずつ支給されます。これにより、年間を通じて評価をパフォーマンスに結び付けながら、より広範なパフォーマンスプロセスおよび ACR（年次報酬レビュー）のタイムラインとの整合性を維持します。目標は基本給の 10% ですが、支給額はパフォーマンス評価と予算に応じて決まり、目標の 80% 〜 120% になる場合があります。
+
+### 対象者
+
+このプログラムは、以下のプランにすでに参加していないチームメンバーに適用されます。
+
+1. Director+ ボーナスプラン
+1. Sales Incentive プラン
+
+対象となるには、チームメンバーはさらに以下の条件を満たす必要があります。
+
+1. ボーナス期間中に在籍していること
+1. パフォーマンス評価サイクルの対象となり、評価を受けること
+1. 支給を受けるため、支給日に在籍していること
+
+ボーナス額は勤務期間に基づいて按分されます。休職中のチームメンバーは、在籍している限り、休職のみを理由に按分されることはありません。移行期間により退職日が延長されたチームメンバーも、支給日に在籍していれば引き続き対象となります。
+
+<small>フランス、ドイツ、オランダでは、導入にあたり現地法で義務付けられた労使協議会の手続きが必要です。これらの国では、その手続きが完了するまで最終決定は行われません。私たちは各労使協議会と積極的に協議しており、それぞれの国で変更が発効する前に、協議会の意見を取り入れ、法的に必要な場合は同意を得ることに取り組んでいます。</small>

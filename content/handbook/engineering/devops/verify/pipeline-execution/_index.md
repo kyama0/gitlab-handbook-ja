@@ -2,11 +2,11 @@
 title: "Verify:Pipeline Execution グループ"
 description: "Pipeline Execution グループの GitLab チームページです。"
 upstream_path: /handbook/engineering/devops/verify/pipeline-execution/
-upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
-translated_at: "2026-08-01T15:50:15+09:00"
+upstream_sha: "8085f1fc9975b1712e5bc23078a44b05ecea946a"
+translated_at: "2026-08-04T06:26:26+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-30T23:21:09-04:00"
+lastmod: "2026-08-03T17:13:47-04:00"
 ---
 
 このチームは [Verify](/handbook/product/categories/#verify-stage) DevOps ステージにマッピングされており、Continuous Integration [ユースケース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/) をサポートしています。
@@ -44,7 +44,7 @@ Verify:Pipeline Execution グループは、[Continuous Integration](https://abo
 ### スケーラビリティ
 
 - 多くのお客様をサポート。
-- 大規模で複雑なセットアップを持つ単一のお客様をサポート。
+- 大規模または複雑、あるいはその両方に該当するセットアップを持つ単一のお客様をサポート。
 
 ### 開発者の効率
 
@@ -130,80 +130,6 @@ Pipeline Execution グループのドメインに含まれないもの:
 - Pipeline オーサリング。[direction page](https://about.gitlab.com/direction/verify/pipeline_composition/) を参照。
 - パイプラインにおけるコンプライアンス。[direction page](https://about.gitlab.com/direction/software_supply_chain_security/compliance/compliance-management/) を参照。
 - [ジョブアーティファクト: アーティファクトのストレージと管理は多くの CI/CD 機能のゲートウェイです](https://about.gitlab.com/direction/verify/)
-
----
-
-## 技術ロードマップ
-
-### FY25
-
-これらは、私たちの 1 年間の高レベルなエンジニアリング主導の目標です。私たちのどの目標とも同様、これらは野心的であり変更される可能性があります。
-
-#### パフォーマンス
-
-##### パイプライン速度
-
-**目標:**
-
-- パイプライン速度を向上させるために何ができるかを理解する
-- 大きな改善のための少なくとも 1 つのプロトタイプを作成する
-
-##### 長年の Pipeline ステータス Issue の修正
-
-**目標:**
-
-- 既存のパイプラインステータスの Issue とコードに深く踏み込む
-  - 多くの Issue に対処するための体系的変更があるか判断し、変更を行う
-
-#### スケーラビリティ
-
-##### Sidekiq
-
-**目標:**
-
-- 信頼性とスケーラビリティを高めるため、バックグラウンドワーカーのパフォーマンスを向上させる
-
-##### ジョブ検索機能の強化サポート
-
-**目標:**
-
-- ジョブに対する追加の検索とフィルタリング機能をサポートする能力を向上させる
-
-##### 運用コストの削減
-
-**目標:**
-
-- データ保持計画への貢献
-- ジョブログの圧縮による潜在的なコスト削減を特定する - [Spike](https://gitlab.com/gitlab-org/gitlab/-/issues/390114)
-  - 結果に応じて、圧縮を実装する作業をスケジュールする
-
-#### 開発者の効率
-
-##### 技術的負債の削減
-
-**目標:**
-
-- コードベース内に存在する全体的な技術的負債を削減する
-- フォローアップ Issue を迅速にスケジュールすることで、長期的な負債のさらなる蓄積を回避する
-
-##### Vue へのフロントエンドリファクタリング
-
-**目標:**
-
-- パイプラインサブスクリプションページの Vue へのリファクタリングを完了する
-- リファクタリングすべき追加の領域を特定する [Epic](https://gitlab.com/groups/gitlab-org/-/epics/12836)
-
-##### パイプラインレンダリング
-
-**目標:**
-
-- パイプラインページレンダリングのパフォーマンス改善を完了する。この機能は開発者によって頻繁に使用されており、パフォーマンスが悪いと生産性に影響します。
-
-##### Merge Trains
-
-**目標:**
-
-- Merge Trains を、GitLab プロジェクトで効果的に利用するのに十分なほどスケーラブルな状態にする。
 
 ---
 
@@ -297,7 +223,7 @@ Pipeline Execution グループのドメインに含まれないもの:
 
 [Pipeline Execution Workflow ボード](https://gitlab.com/groups/gitlab-org/-/boards/1372896) は、現在および今後の作業の信頼できる情報源です。
 
-### 計画外の作業
+### 計画外の作業 {#unplanned-work}
 
 Pipeline Execution には、明示的な SLO にひもづき、迅速なトリアージと解決が必要な、計画外かつリアクティブな作業の特別なワークストリームがいくつかあります:
 
@@ -308,7 +234,7 @@ Pipeline Execution には、明示的な SLO にひもづき、迅速なトリ�
 
 これらの Issue は、トリアージされた重大度に基づいていつでも作業にスケジュールできます。S1 Issue は開発に直接取り込まれる場合があり、一部の Issue は、私たちが行わない変更を要求している場合、バックログに入れるかそのままクローズする可能性があります。トリアージの結果にかかわらず、これらの Issue は迅速に _対処_ し、バックログに放置しないようにする必要があります。開発者が Issue に直接アサインされている場合、その開発者が最初の連絡先となり、Issue の解決に関する権限を持つべきです。一般に、EM と PM は、目標期間内にこれらが解決されるようにする責任を負います。
 
-### 計画された作業
+### 計画された作業 {#planned-work}
 
 - [Pipeline Execution の現在のマイルストーン](https://gitlab.com/gitlab-org/gitlab/-/boards/5029854): 計画済み・計画外を問わず、すべての作業はその Issue を提供する予定のマイルストーンに割り当てます。このボードには、現在のアクティブなマイルストーンに割り当てられた Issue が表示されます。アサインされていない Issue は Ready For Development としてマークされ、いつでもピックアップできる状態であるべきです。Issue が Ready For Development でない場合は、そうなっているか確認するためにレビューするか、マイルストーンから外す必要があります。
 - [Pipeline Execution の次のマイルストーン](https://gitlab.com/groups/gitlab-org/-/boards/1372896?label_name[]=group%3A%3Apipeline%20execution&milestone_title=Upcoming): 一般に、任意のマイルストーン中に EM と PM が次のマイルストーンの作業をキューに入れます。私たちが取り組むプロジェクトの一般的な長さにより、開発者が現在の作業のフォローアップとして作成した新しい Issue が含まれることもよくあります。
@@ -618,7 +544,7 @@ Product Designer は、ユーザー向け Issue の製品開発で重要な役�
 
 これのいくつかの実用的な例:
 
-- エピック、Issue、またはマージリクエストをオープンするか、それで作業を開始するときに、すべてのステークホルダーがこれを認識しているか、または更新する必要があるかを検討してください。確信が持てない場合は、黙っているよりも更新することを誤りとしてください。
+- エピック、Issue、またはマージリクエストをオープンするか、それで作業を開始するときに、すべてのステークホルダーがこれを認識しているか、または更新する必要があるかを検討してください。確信が持てない場合は、黙っているのではなく、情報を共有する方を選んでください。
 - 重要な進捗を遂げるときには、自動メール通知に依存するのではなく、関連するステークホルダーをメンションすることで、即座のフィードバックが必要なくても、進捗が確実に伝わるようにしてください。関与を明示してください。
 
 注: マージリクエスト体験に関連する Issue については、技術的または Deferred UX が発生するのを避けるために、常に [Code Review グループ](/handbook/product/categories/#code-review-group) に情報を共有してください。コラボレーションフレームワークについて詳しく学ぶには、[マージリクエスト体験のコラボレーション](/handbook/product/cross-stage-features/merge-requests/) ページを参照してください。
