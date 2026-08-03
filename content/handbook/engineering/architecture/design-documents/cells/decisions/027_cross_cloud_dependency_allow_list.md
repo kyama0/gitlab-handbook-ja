@@ -8,9 +8,9 @@ coach:
 approvers: []
 toc_hide: true
 upstream_path: "/handbook/engineering/architecture/design-documents/cells/decisions/027_cross_cloud_dependency_allow_list/"
-upstream_sha: "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2"
-lastmod: "2026-07-08T10:32:13-07:00"
-translated_at: "2026-07-09T08:36:01+09:00"
+upstream_sha: "30048133aad0232ed4d59fa0c80643620c85adb3"
+lastmod: "2026-08-03T14:06:01+12:00"
+translated_at: "2026-08-04T06:05:19+09:00"
 translator: codex
 stale: false
 ---
@@ -54,6 +54,7 @@ ADR-016 は、コスト、レジリエンス、明確な分離のために、Cel
 | AWS Cell &rarr; Artifact Registry | GCP にのみデプロイされています | Artifact Registry | [Cellular Target](../../artifact_registry/decisions/024_infrastructure_delivery.md#phase-2--cellular-target) |
 | AWS Cell &rarr; Secrets Manager | GCP にのみデプロイされています | Secrets Manager | [Cellular Target](https://gitlab.com/groups/gitlab-org/-/work_items/17846) |
 | AWS S3 &rarr; GCP Elastic Agent (OIDC workload identity) | 中央運用の Elasticsearch への Cells ログ取り込み | Security Logging | クラウドごとのログシンク（正当化される場合 / 時期） |
+| AWS Cell &rarr; GCP GitLab Observability Backend (GOB) | ハードコードされた `observe.gitlab.com` URL（`lib/gitlab/observability.rb`）の背後にある単一の中央ホスト型バックエンド。テレメトリはプロジェクト／グループをキーとして外部に保存され、OAuth のスコープは最上位の親グループごとに設定されるため、Cell や Org を認識しない外部 SaaS のように動作します | Observability | Cell ごとの Observability Backend。[gitlab#606874](https://gitlab.com/gitlab-org/gitlab/-/work_items/606874)で追跡中 |
 
 この表にない依存関係は、単一クラウド内に封じ込める必要があります。
 

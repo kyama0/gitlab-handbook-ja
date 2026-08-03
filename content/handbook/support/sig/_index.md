@@ -2,9 +2,9 @@
 title: Support Innovation Group (SIG)
 description: Support Innovation Group（SIG）は、Support、IT、Product をつなぎ、AI を活用したワークフロー、ナレッジ、サポートイノベーションを推進する、GitLab の部門横断的な取り組みです。
 upstream_path: /handbook/support/sig/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: "2026-07-01T08:58:43-04:00"
-translated_at: "2026-07-10T06:46:26+09:00"
+upstream_sha: 30048133aad0232ed4d59fa0c80643620c85adb3
+lastmod: "2026-08-03T15:25:29-04:00"
+translated_at: "2026-08-04T06:05:19+09:00"
 translator: codex
 stale: false
 ---
@@ -21,25 +21,30 @@ SIG と Support Ops（IT）は緊密に連携します —
 
 ## 受付プロセス
 
-- Support リクエスト - SIG がリクエストをレビューして優先順位付け - リクエストについて Ops／I.T. と連携
-- [SIG 受付リクエストフォーム](https://gitlab.com/gitlab-com/support/support-project-portfolio/-/work_items/new?description_template=sig_intake)
+このセクションは、プロセスを簡素化し、SIG Team Lead と SIG Team Member の役割を理解しやすくするために作成されました。
 
-Support の全員が意見を述べ、私たちの取り組みを把握できるように、2 段階のプロセスを導入します。
+受付リクエストは、[SIG 受付リクエストフォーム](https://gitlab.com/gitlab-com/support/support-project-portfolio/-/work_items/new?description_template=sig_intake)を通じて行います。
 
-**ステップ 1**:
+1. 変更リクエスト（既存プロセスへの変更の場合）
+1. プロジェクトリクエスト（まだ存在せず、開始とサブタスクが必要な大規模な依頼の場合）
+1. AI ツールリクエスト（エージェントの作成、ツールの調整）
 
-Support Team Meta（STM）で RFC を作成します — これによりリクエストが可視化され、Support 全体からフィードバックを募ることができ、他のプロジェクトとの重複も見つけやすくなります。作業を進められるよう期限を設定してください（以下のワークフローを参照）。
-RFC が完了したら、次に進みます。
+**SIG Team Lead** は、SIG リクエストの優先順位付けについて Support Leadership と連携します。優先順位は、現在進行中の項目と次に着手する項目に基づきます。優先順位付けの依頼には Slack チャンネル #spt_leadership_internal を使用します。週次リストに対して R.I.C.E スコアリングに基づいて優先順位を設定し、変更が必要かを確認します。
 
-**ステップ 2**:
+**SIG Team Member** は以下を行います。
 
-SIG 受付を送信します — RFC のフィードバックが既に揃っているため、SIG はリクエストの優先順位を決め、ロードマップに組み込む作業をより迅速に行えます。
+- SIG Issue Board に基づいて、担当するリクエストを自ら選択します（割り当てを受けるのではありません）。  
+- SIG Team Member が同時に担当する項目は最大 3 件までです。
+- Manager は直属のチームメンバー（SIG Team Member）と連携し、プロジェクトが前進するようにします。
+- 解決策を見つけるため、Leadership 全体の Manager とともに Issue に取り組みます。
+- 解決者ではなくレビュアーとして行動します。SIG Team Member の役割は、適切な質問が行われていることを確認し、不明瞭な点をリクエスト者（DRI）に差し戻して明確化を求めることです。SIG Team Member がアイデアを完全に具体化したり、自らソリューションを推進したりすることは役割ではありません。
+- 担当項目について Leadership の承認を得ます。
+- ソリューションが必要な場合は、CSS（Customer Support Systems）に機能リクエスト（FR）を作成します。
+- Leadership が承認したら（承認された場合）、項目を「Approved (Ready for Release)」ラベルのステータスに移動します。
 
-**注**: すべてのリクエストに RFC が必要なわけではありません。プロダクトカテゴリの追加など、単純な変更の場合は、RFC を省略して直接 SIG 受付に進めば、すぐに対応を開始できます。
+その後、SIG Team Lead が関与し、CSS とロードマップ／キャパシティプランニングに取り組みます。
 
-SIG の役割は、リクエストを進める前に検証、レビューし、その影響を評価することです。これにより、後工程で予期しない事態が発生するのを防ぎます。
-
-すべてのリクエストは、Support Manager が選出したチームメンバーによってレビューされます。
+SIG Team Lead は、メッセージングとコミュニケーションを担当します。
 
 ![SIG ワークフロー](/images/support/assets/sigworkflow.png)
 
