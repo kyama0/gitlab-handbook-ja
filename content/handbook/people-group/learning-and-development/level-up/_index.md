@@ -1,11 +1,11 @@
 ---
 title: LevelUp
 upstream_path: /handbook/people-group/learning-and-development/level-up/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
-translator: claude
+upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
+translated_at: "2026-08-05T06:27:42+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-13T12:25:16+00:00"
+lastmod: "2026-08-04T09:49:53+00:00"
 ---
 
 ## LevelUp とは？
@@ -67,10 +67,9 @@ LevelUp は、幅広い学習リソースを提供するためにいくつかの
 - **O'Reilly** - 技術書、動画、学習パス
 - **Hone** - Elevate リーダーシッププログラムを含む、ライブトレーニングとコーチングセッション
 - **Masterclass** - リーダーシップ、クリエイティビティなどに関する専門家による教育コース
-- **BizLibrary** - ビジネススキルとソフトスキルのトレーニング
 - **Google Cloud Skills Boost** - ラボと認定資格を伴うハンズオン Google Cloud トレーニング
 
-これらのプラットフォームのいずれかへのアクセスをリクエストするには、Lumos を使用するか、**#learninganddevelopment** でタレント開発チームに連絡してください。
+これらのプラットフォームのいずれかへのアクセスをリクエストするには、Lumos を使用するか、**#learninganddevelopment** で Talent Development team に連絡してください。
 
 ### コンテンツの検索
 
@@ -87,7 +86,7 @@ LevelUp で学習コンテンツを作成・共有するためのいくつかの
 
 1. **サードパーティ統合** - Hone、Masterclass などのパートナーからのコンテンツ
 2. **ネイティブコンテンツ作成** - SmartCards、Pathways、Journeys を使用して LevelUp で直接コンテンツを構築
-3. **Articulate Rise コース** - タレント開発チームと協力して構築されたプロフェッショナルな e ラーニング
+3. **Articulate Rise コース** - Talent Development team と協力して構築されたプロフェッショナルな e ラーニング
 
 ### 各アプローチをいつ使うか
 
@@ -178,7 +177,7 @@ Journeys は、複数の Pathways と SmartCards を組み合わせて、セク�
 
 ## Articulate Rise でコンテンツを作成する
 
-より高度な e ラーニングコースについては、タレント開発チームが **Articulate Rise**（インタラクティブでモバイル対応のコースを作成するためのプロフェッショナルオーサリングツール）を使用して、あなたと協力できます。
+より高度な e ラーニングコースについては、Talent Development team が **Articulate Rise**（インタラクティブでモバイル対応のコースを作成するためのプロフェッショナルオーサリングツール）を使用して、あなたと協力できます。
 
 **Articulate Rise を使うタイミング:**
 
@@ -190,7 +189,7 @@ Journeys は、複数の Pathways と SmartCards を組み合わせて、セク�
 
 **仕組み:**
 
-1. **コラボレーションをリクエスト** - **#learninganddevelopment** でタレント開発チームに連絡
+1. **コラボレーションをリクエスト** - **#learninganddevelopment** で Talent Development team に連絡
 2. **初回コンサルテーション** - チームメンバーがあなたに会い、以下を行います:
    - あなたのコンテンツと学習目標について学ぶ
    - Rise オーサリングツールのデモ
@@ -198,7 +197,7 @@ Journeys は、複数の Pathways と SmartCards を組み合わせて、セク�
    - 最善のアプローチを決定する（あなたが構築する、私たちが構築する、または協力する）
 3. **開発** - ライセンスの可用性とプロジェクトの複雑さに応じて:
    - サポートを伴って自分でコンテンツを構築するための一時的な Rise ライセンスを受け取る場合があります
-   - または、タレント開発チームメンバーが反復的なフィードバックサイクルを通じてあなたの入力でコンテンツを構築します
+   - または、Talent Development team メンバーが反復的なフィードバックサイクルを通じてあなたの入力でコンテンツを構築します
 4. **最終化** - 完成したら、コースは SCORM ファイルとしてエクスポートされ、SCORM SmartCard として LevelUp にアップロードされます
 5. **公開** - コースは完全な完了トラッキングとレポートを伴って LevelUp で公開されます
 
@@ -222,16 +221,13 @@ Learning Management System との統合機能を提供するコンテンツパ�
 - O'Reilly
 - Hone
 - Masterclass
-- BizLibrary
-- CyberU
-- MadeCraft
 - Google Cloud Skills Boost
 
 **統合をリクエストする方法:**
 
 Cornerstone は世界最大級の LMS プラットフォームの 1 つであり、多くのコンテンツプロバイダーとパートナーシップを結んでいます。トレーニングコンテンツを提供するベンダーと協力していて、統合を検討したい場合:
 
-1. **#learninganddevelopment** でタレント開発チームに連絡
+1. **#learninganddevelopment** で Talent Development team に連絡
 2. ベンダーとその統合機能に関する情報を提供
 3. チームは機会を評価し、統合が可能であればベンダーと協力します
 
@@ -342,8 +338,8 @@ LevelUp から割り当てられているコンプライアンストレーニン
 
 - コンプライアンストレーニングは必須であり、期限までに完了する必要があります
 - 完了状況は追跡され、報告されます
-- 完了しないと、マネージャーやピープルチームからのフォローアップが発生する場合があります
-- 特殊な状況により延長が必要な場合は、マネージャーまたはタレント開発チームに連絡してください
+- 完了しないと、マネージャーや People team からのフォローアップが発生する場合があります
+- 特殊な状況により延長が必要な場合は、マネージャーまたは Talent Development team に連絡してください
 
 ---
 
@@ -358,7 +354,7 @@ LevelUp から割り当てられているコンプライアンストレーニン
 - 利用可能なチャンネルを閲覧して、興味のあるトピックを見つける
 - 新しいコンテンツが追加されたときに通知を受けるためにチャンネルを **フォロー** する
 - チャンネルには「リーダーシップ開発」「テクニカルスキル」「製品知識」などのトピックが含まれる場合があります
-- チャンネルのコンテンツは専門家またはタレント開発チームによって厳選されています
+- チャンネルのコンテンツは専門家または Talent Development team によって厳選されています
 
 ### グループ
 
@@ -453,7 +449,7 @@ A: 最適な確認場所は [システムトランスクリプト](https://level
 
 **Q: GitLab University コンテンツにまだアクセスできますか？**
 
-A: はい、GitLab University のすべての製品教育コンテンツは、すべての GitLab 認定資格を含めて、GitLab チームメンバーが完了するために引き続き利用できます。GitLab University のコンテンツに関する質問があれば、デジタルサクセスチームに連絡してください。
+A: はい、GitLab University のすべての製品教育コンテンツは、すべての GitLab 認定資格を含めて、GitLab チームメンバーが完了するために引き続き利用できます。GitLab University のコンテンツに関する質問があれば、Digital Success team に連絡してください。
 
 **Q: Google Cloud Skills Boost や他のコンテンツパートナーへのアクセスをリクエストするにはどうすればよいですか？**
 
@@ -465,15 +461,15 @@ A: Lumos を通じてアクセスをリクエストしてください
 
 **Q: LevelUp でバグや機能していないものを見つけました。誰に伝えるべきですか？**
 
-A: 技術的な問題や機能に関するフィードバックは #learninganddevelopment Slack チャンネルで共有してください。チームはこれを定期的にモニタリングし、報告された問題に対処します。
+A: 技術的な問題や機能に関するフィードバックは #learninganddevelopment Slack チャンネルで共有するか、HelpLab からチケットを提出してください。チームは両方を定期的にモニタリングし、報告された問題に対処します。
 
 **Q: LevelUp での操作について質問があります。どこで助けを得ることができますか？**
 
-A: #learninganddevelopment Slack チャンネルで尋ねてください。
+A: #learninganddevelopment Slack チャンネルで尋ねるか、Talent Development チーム宛てに HelpLab チケットを作成してください。
 
 **Q: コンプライアンストレーニングに関する通知を受け取りましたが、コースが見つかりません。どうすればよいですか？**
 
-A: まず、LevelUp ダッシュボードの **Assigned Learning** セクションを確認してください。それでも見つからない場合は、すでに完了したかどうかを確認するためにシステムトランスクリプトを確認してください。それらが助けにならない場合は、探しているトレーニングの詳細とともに #learninganddevelopment でタレント開発チームに連絡してください。
+A: まず、LevelUp ダッシュボードの **Assigned Learning** セクションを確認してください。それでも見つからない場合は、すでに完了したかどうかを確認するためにシステムトランスクリプトを確認してください。それでも解決しない場合は、探しているトレーニングの詳細とともに #learninganddevelopment または HelpLab から Talent Development team に連絡してください。
 
 ---
 
@@ -503,4 +499,4 @@ A: すべてのチームメンバーが LevelUp で SmartCards を作成でき�
 
 ## ヘルプを得る
 
-LevelUp に関する質問、フィードバック、またはサポートについては、**#learninganddevelopment** Slack チャンネルにご連絡ください。タレント開発チームはあなたの学習ジャーニーをサポートし、LevelUp の機能を最大限に活用するお手伝いをします。
+LevelUp に関する質問、フィードバック、またはサポートについては、**#learninganddevelopment** Slack チャンネルに連絡するか、**HelpLab** からリクエストを提出してください。Talent Development team はあなたの学習ジャーニーをサポートし、LevelUp の機能を最大限に活用するお手伝いをします。

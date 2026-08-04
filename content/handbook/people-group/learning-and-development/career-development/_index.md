@@ -2,11 +2,11 @@
 title: キャリア開発とモビリティ
 description: "すべての GitLab チームメンバーのためのキャリア開発とモビリティに関するリソースと方針"
 upstream_path: /handbook/people-group/learning-and-development/career-development/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
-translator: claude
+upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
+translated_at: "2026-08-05T06:27:42+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-08-04T09:49:53+00:00"
 ---
 
 ## キャリア開発とは
@@ -55,8 +55,6 @@ GitLab ハンドブック全体に配置されたキャリア開発リソース�
   <div>
     <a href="/handbook/people-group/learning-and-development/elevate-programs/" class="btn btn-primary" style="margin:5px;">Elevate</a>
     <a href="https://levelup.csod.com/ui/lms-learning-details/app/course/9ca2cbac-f6cb-4dd2-9462-94c899f64b7d" class="btn btn-primary" style="margin:5px;">キャリア会話でチームを支援するコース</a>
-    <a href="https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/13409" class="btn btn-primary" style="margin:5px;">マネージャー M グループ</a>
-    <a href="https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/13409" class="btn btn-primary" style="margin:5px;">マネージャー M-Team グループ</a>
   </div>
 </div>
 
@@ -131,13 +129,13 @@ IGP の記入に関するステップバイステップガイドをお探しで�
 1. Workday で IGP に記入する。[ジョブフレームワーク](https://docs.google.com/spreadsheets/d/1A46wqVK0ZdhmN7HT7G3QrBbExJw6vZJrSCFIiFd9T7U/edit?usp=sharing)と[ジョブファミリー](/job-description-library/)を参照して、注力するスキルと行動を決定します。考え、計画し、IGP に記入する時間を確保してください。IGP を一気に完成させるのではなく、今後 1〜2 週間にわたって学習の時間ブロックを設定してください。
 1. IGP をマネージャーに提出する。マネージャーとのキャリア会話をスケジュールし、次の 1:1 または別の時間に IGP をレビューしてください。
 1. 業務の流れの中で IGP に取り組めるよう、週次または月次で学習に専念する時間を確保する計画を立ててください。これらの時間をカレンダーにブロックします。
-1. 開発目標に対する進捗を更新する。IGP と [Workday の開発目標](https://docs.google.com/document/d/1qEqTHx_G1uIPQi8rIIbrHjJ6S0NYhKDoHeBOLXsjkNw/edit#heading=h.wje1pky1vhig) 自体がうまく機能するかもしれませんが、さらに構造が必要な場合は、[GitLab Epics + Issues を使ってキャリア開発を追跡する](/handbook/people-group/learning-and-development/career-development/#use-gitlab-epics-to-track-your-career-development) か、Google Sheets でのヘルストラッカーを使うことを検討してください。
+1. 開発目標に対する進捗を更新する。IGP と [Workday の開発目標](https://docs.google.com/document/d/1qEqTHx_G1uIPQi8rIIbrHjJ6S0NYhKDoHeBOLXsjkNw/edit#heading=h.wje1pky1vhig) 自体がうまく機能するかもしれませんが、さらに構造が必要な場合は、[GitLab エピック + Issue を使ってキャリア開発を追跡する](/handbook/people-group/learning-and-development/career-development/#use-gitlab-epics-to-track-your-career-development) か、Google Sheets でのヘルストラッカーを使うことを検討してください。
 
 ### 進捗の追跡
 
 #### アコンプリッシュメントトラッカー
 
-「ブラッグシート」とも、「CREDIT トラッカー」とも呼ばれます。いずれにせよ、自分の成果とフィードバックを集める場所として最適です。アコンプリッシュメントトラッカーは IGP と GitLab Epics と組み合わせて活用してください。
+「ブラッグシート」とも、「CREDIT トラッカー」とも呼ばれます。いずれにせよ、自分の成果とフィードバックを集める場所として最適です。アコンプリッシュメントトラッカーは IGP と GitLab エピックと組み合わせて活用してください。
 
 1. [アコンプリッシュメントトラッカーのテンプレート](https://docs.google.com/document/d/1tBjEbX-p4MYinEsdU-91KDQ_BJkihwrBKZ0n9yfdLjo/edit?usp=sharing) のコピーを作成し、自分のドライブに保存する
 1. リンク、メモ、スクリーンショットを使って記入を始める（下記の動画でウォークスルーを確認）
@@ -147,16 +145,16 @@ IGP の記入に関するステップバイステップガイドをお探しで�
 
 この [Google Sheets のヘルストラッカー](https://docs.google.com/spreadsheets/d/1Pr_yl8TRAXucSr4qYml6TdsO86PgiaKB/edit#gid=2104005676) のコピーを作成し、自分のドライブに保存してください。現在の状況と成長のために設定した長期目標を追跡するために使ってください。
 
-#### GitLab Epics を使ってキャリア開発を追跡する
+#### GitLab エピックを使ってキャリア開発を追跡する
 
 {{< youtube "xuisSgBQtaU" >}}
 
-Epics は、業務を [透明性](/handbook/values/#transparency) と [効率性](/handbook/values/#efficiency) を持って追跡し、学習を [結果](/handbook/values/#results) に結びつける優れた方法です。
+エピックは、業務を [透明性](/handbook/values/#transparency) と [効率性](/handbook/values/#efficiency) を持って追跡し、学習を [結果](/handbook/values/#results) に結びつける優れた方法です。
 
-1. 個人またはチームのプロジェクトで Epic を開く
+1. 個人またはチームのプロジェクトでエピックを開く
 1. 説明欄を活用して、学習目標、レビューしたい理想的なプログラムやリソース、計画時の考慮事項などを記載する
 1. 学んだことや使用したリソースの結果として行うアクションを追跡するため Issue を開く
-1. Issue を Epic に関連付ける。別のプロジェクトの Issue をリンクするには、Epic 内のスレッドを利用する
+1. Issue をエピックに関連付ける。別のプロジェクトの Issue をリンクするには、エピック内のスレッドを利用する
 
 ## キャリアに関する会話
 
@@ -168,8 +166,8 @@ Epics は、業務を [透明性](/handbook/values/#transparency) と [効率性
 | Results for Customers | 成長は仕事へのエンゲージメントを高め、それがより大きな成果を導く。 |
 | Efficiency | 成長は業務の流れの中で起こる。 |
 | Diversity, Inclusion, and Belonging | 私たちの経験はキャリアモチベーションと必要なサポートに影響を与える。 |
-| Iteration | モチベーションは変化し、有意義で興味深く、適切な成長を促す。 |
-| Transparency | 信頼が、本当のキャリア目標に到達するための脆弱性とサポートを可能にする。 |
+| イテレーション | モチベーションは変化し、有意義で興味深く、適切な成長を促す。 |
+| Transparency | 信頼があれば、本当のキャリア目標に向けて弱さや本音を率直に共有し、支援を受けられる。 |
 
 ### チームとキャリア開発に関する会話を行う
 
@@ -182,7 +180,7 @@ Level Up の [Support your team with Career Conversations コース](https://lev
 | 耳を傾ける | チームのキャリア目標と直面しているユニークな課題を理解する。 |
 | バイアスを意識する | 存在する可能性のあるパワーダイナミクスと無意識のバイアスを認識する。 |
 | 質問をする | キャリアモチベーションと学習目標について批判的に考えるよう、チームに挑戦と励ましを与える。 |
-| リソースを浮上させる | 社内外のリソース、人脈、推奨アクションを含め、自分が知っていることを共有する。 |
+| リソースを提示する | 社内外のリソース、人脈、推奨アクションを含め、自分が知っていることを共有する。 |
 | イテレーションを提案する | 必要に応じて目標の再評価と調整を促す。 |
 | 期待を設定する | 次回のキャリア会話の日付とその日までに達成する成果を一緒に決定する。 |
 
@@ -190,7 +188,7 @@ Level Up の [Support your team with Career Conversations コース](https://lev
 
 マネージャーは、直属の部下のプロフェッショナル開発目標を支援する必要があります。チームを支援するため、[1-1](/handbook/leadership/1-1/)、チームミーティング、または非同期コミュニケーションで以下を実施してください。
 
-1. チームメンバーに [Individual Growth Plan](/handbook/people-group/learning-and-development/career-development/#individual-growth-plan) を作成すること、または [GitLab Epics を使ってキャリア開発を追跡すること](/handbook/people-group/learning-and-development/career-development/#use-gitlab-epics-to-track-your-career-development) を促す。
+1. チームメンバーに [Individual Growth Plan](/handbook/people-group/learning-and-development/career-development/#individual-growth-plan) を作成すること、または [GitLab エピックを使ってキャリア開発を追跡すること](/handbook/people-group/learning-and-development/career-development/#use-gitlab-epics-to-track-your-career-development) を促す。
 1. [Growth & Development Benefit](/handbook/people-group/learning-and-development/growth-and-development/) を活用する。
 1. 業務時間内に学習する時間をブロックすることを推奨する（そして自ら模範を示す）。
 1. ソーシャルラーニングを実践するため、チーム特有およびクロスファンクショナルな学習コミュニティを編成する。

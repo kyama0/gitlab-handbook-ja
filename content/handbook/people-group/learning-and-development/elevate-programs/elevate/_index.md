@@ -1,11 +1,11 @@
 ---
 title: Elevate
 upstream_path: /handbook/people-group/learning-and-development/elevate-programs/elevate/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
-translator: claude
+upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
+translated_at: "2026-08-05T06:27:42+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-13T10:12:58-04:00"
+lastmod: "2026-08-04T09:49:53+00:00"
 ---
 
 Elevate は GitLab のマネージャー向けのライブ仮想リーダーシップ開発プログラムで、リーダーシップコンピテンシーの理解、感情知性の構築、優れたフィードバックの授受、コーチング、無意識のバイアスの認識に焦点を当てています。
@@ -16,7 +16,7 @@ GitLab のマネージャーは、[誰もが貢献できる](/handbook/company/m
 
 ### ゴール
 
-FY26 において、GitLab マネージャーの 85% が Elevate を修了します。
+私たちの目標は、各会計年度に GitLab マネージャーの大多数が Elevate を修了することです。
 
 ## Elevate についてのチームメンバーの声
 
@@ -99,10 +99,10 @@ Elevate は 6 つの学習モジュールで構成されており、そのうち
 
 ### マネージャー志望の場合、プログラムに参加する機会はありますか？
 
-FY26 第 1 四半期に ElevatePrep プログラムを開始しました。これは、いつかピープルマネジメントの役割に就きたい、あるいは多面的なクロスファンクショナルプロジェクトをより効果的にリードしたいと考えている GitLab の個人コントリビューター（IC）向けに特別に設計されたものです。ElevatePrep は、さまざまな目標を支える強固なプロフェッショナルスキルの基礎を築きます。
+私たちは ElevatePrep プログラムを提供しています。これは、いつかピープルマネジメントの役割に就きたい、あるいは多面的なクロスファンクショナルプロジェクトをより効果的にリードしたいと考えている GitLab の個人コントリビューター（IC）向けに特別に設計されたものです。ElevatePrep は、さまざまな目標を支える強固なプロフェッショナルスキルの基礎を築きます。
 
 次回の検討対象となりたい場合は、#learninganddevelopment で Talent and Development チームに連絡してください。プログラムに関する詳細は近日中に共有します。
 
 ### Elevate に参加中に昇進した場合はどうなりますか？
 
-マネージャーからシニアマネージャーへ昇進した場合は、中断なく Elevate を続けます。ディレクター以上の役職に昇進した場合は、マネージャーおよび Elevate チームと直接相談する計画を立ててください。決定はケースバイケースで行われます。
+Manager から Senior Manager へ昇進した場合は、中断なく Elevate を続けます。Director 以上の役職に昇進した場合は、Manager および Elevate チームと直接相談する計画を立ててください。決定はケースバイケースで行われます。

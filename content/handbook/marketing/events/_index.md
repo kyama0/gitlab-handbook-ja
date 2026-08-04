@@ -1,11 +1,11 @@
 ---
 title: GitLab イベント情報
 upstream_path: /handbook/marketing/events/
-upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
-translated_at: "2026-05-01T12:25:17Z"
-translator: claude
+upstream_sha: 197b140c5d91cf90c19d493d4723862ee691745f
+translated_at: "2026-08-05T06:53:49+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-27T16:37:34+01:00"
+lastmod: "2026-08-04T21:32:31+00:00"
 ---
 
 ## GitLab のイベント
@@ -444,7 +444,7 @@ COVID-19 を監視していることを顧客や見込み客に伝えること�
 
 **LP の例文:**
 
-GitLab では、障害や特別なニーズに関係なく、誰もがイベントに参加できるようにすることを目指しています。すべての会場をアクセシビリティのために検証しています。障害、特別なニーズ、特定の食事制限がある場合は、このメールに返信してお知らせください。イベント前にフォローアップします。この情報は非公開に保たれ、宿泊リクエストを完了するために必要な個人にのみ配布されます。
+GitLab では、障害や特別なニーズに関係なく、誰もがイベントに参加できるようにすることを目指しています。すべての会場をアクセシビリティのために検証しています。障害、特別なニーズ、特定の食事制限がある場合は、このメールに返信してお知らせください。イベント前にフォローアップします。この情報は非公開に保たれ、合理的配慮の要望に対応するために必要な担当者にのみ共有されます。
 
 ##### 登録者コミュニケーション
 
@@ -776,7 +776,7 @@ Field Marketing と Corporate Events は両方とも、Marketing 1pass vault の
     - **注:** QR コードをコラテラルに配置する際、効率的なスキャンのため [デザインチーム](/handbook/marketing/brand-and-product-marketing/design/) は 1 インチ × 1 インチ未満であってはならないと推奨しています
 1. Tag & Organize セクションを使用して、整理しておくため Display Name と Tag を追加します
     - Display Name を使用して QR コードを簡単に検索できます
-    - レポートで QR コード使用を追跡するため UTM を追加することもできます ([UTM ジェネレーター](/handbook/marketing/utm-strategy/#how-to-create-utms) を参照)
+    - レポートで QR コード使用を追跡するため UTM を追加することもできます ([UTM ジェネレーター]/handbook/marketing/utm-strategy/#how-to-create-utms) を参照)
 1. QR コードを生成してダウンロード
 1. QR コードを個人的にテストし、QR コードがライブで、アナリティクスが Hovercode ダッシュボードに収集されていることを確認するため、少なくとも 1 人のチームメイトに送信します
 1. イベントが終了したり QR コードがもう使用されていない場合、QR コードを削除するには、QR コードにナビゲートして `edit` をクリックします。一番下までスクロールして `Delete this QR code` テキストを選択し、削除を確認します
@@ -875,7 +875,7 @@ GitLab の自社主催イベントでは、参加している GitLab CXO と 10 
 
 - 人々が CXO に会いたいだけで、ミーティングに 10 分間全部を取る必要がない場合、それは素晴らしいです! 最大時間は 10 分です
 - 10 分のミーティングにアジェンダはありません。ミーティングの DRI は、SFDC を介して会社をすばやく調査 (SFDC アプリが電話にない場合、これがそれが役立つ理由のすばらしいユースケースです!) し、できるだけ多くの情報をすばやく収集して、CXO にこの情報を伝えます。例えば、CXO に会う列の次にエンタープライズ顧客がいる場合、CXO に知らせてください。短いブリーフ情報、なぜならこの情報を伝える時間があまりないからです
-- ミーティングは DRI または部屋にいる指定された代理人によって取られるべきで、CXO がミーティングに集中できるようにします。これらのメモは、DRI ノートテーカーによって 48 時間以内に SFDC の人物レコードに追加されるべきです。次のステップが議論され、部屋にいない誰かにアクションが割り当てられた場合、割り当てられた人をタグ付けすることを忘れないでください!
+- CXO がミーティングに集中できるよう、メモは DRI または部屋にいる指定された代理人が取る必要があります。これらのメモは、メモ担当の DRI が 48 時間以内に SFDC の人物レコードへ追加します。次のステップが議論され、部屋にいない誰かにアクションが割り当てられた場合、割り当てられた人をタグ付けすることを忘れないでください!
 
 ## `about.gitlab.com/events` にイベントを追加する方法
 
@@ -905,11 +905,32 @@ GitLab の自社主催イベントでは、参加している GitLab CXO と 10 
 
 [メールマーケティングの詳細は Emails & Nurture ハンドブックページを参照してください](/handbook/marketing/lifecycle-marketing/emails-nurture)
 
-## イベントでの講演
+## イベントの講演者
 
 イベントでの講演に関する情報をお探しの場合は、[Corporate Communications ページ](/handbook/marketing/corporate-communications/speaking-resources/) で完全な詳細をご確認ください。
 
-### 講演者の旅費の支払い
+### Corp Events および Growth Community Programs の講演者経費プロセス
+
+1. GitLab DRI は、講演者に [GitLab Speaker & Customer Travel Stipend Form](https://docs.google.com/forms/d/e/1FAIpQLSdq1dqE5QGTjQ3eL6yR3SJavg7JVk-SA6R0kl3_5AdPHNN6xg/viewform?usp=sharing&ouid=105213572985369295202)を送信し、記入を依頼します。フォームを提出すると、AP は講演者を ZIP にオンボーディングし（システムにまだ存在しない場合）、PO に裏付けられていない請求書として処理します。
+1. GitLab DRI は、講演者が旅行を予約できるよう Navan の招待を送信します。DRI が Navan の招待を送信するアクセス権を持っていない場合は、Navan の AR（Access Request）を提出し、個人の Navan プロフィールに旅行権限を追加するようリクエストします。DRI は、Navan の招待を送信するために以下の手順に従います。
+   - Okta 経由で Navan にログインします
+   - 左上の `Navan Business Travel` をクリックし、ドロップダウンから `Guest Travel` を選択します
+   - 右上の `Invite Guest` をクリックします
+   - 各ページで求められる適切な詳細をすべて追加します
+     - Cost Center: Marketing
+     - Department: Corporate Events
+     - Subsidiary: Marketing
+     - Legal Entity: 必要な適切な[法人](https://gitlab.com/gitlab-com/Finance-Division/finance/-/wikis/company-information)を選択してください
+     - 必要に応じて会社の連絡先情報を調整します
+     - 希望する通知設定を選択します
+     - 同伴者 1 名が承認されているかを指定します
+     - ゲストの適切な旅行詳細を入力します。Corporate Events チームが管理する客室ブロックを通じて部屋を予約する場合は、ホテルの部屋の選択を解除します
+     - Travel Policy - `Default`
+     - 請求情報を指定します - `n/a` と入力します
+
+1. イベント後、講演者は Navan の招待を通じて経費を提出します。
+
+### その他の GitLab チーム向け講演者経費プロセス
 
 時として、GitLab は、イベントで GitLab の使用について講演する人物の旅費を負担することがあります。
 
@@ -918,7 +939,7 @@ GitLab の自社主催イベントでは、参加している GitLab CXO と 10 
 #### オプション A
 
 1. 経費が [Allocadia](/handbook/enterprise-data/marketing-analytics/allocadia/) のラインアイテムで計上されていることを確認します。スペンドタイプは `Sub-Category` レベルで選択されたものにデフォルトする必要があります
-1. 旅行のために必要と思われる金額分の [Coupa バーチャルカード](/handbook/business-technology/enterprise-applications/guides/coupa-virtual-cards/#what-is-virtual-card) を開きます
+1. 見積費用について ZIP を提出し、支払い用のバーチャルカードを取得します
    - 航空運賃、車サービス、ホテル滞在、食事を考慮してください
    - バーチャルカードに正しい Allocadia ID を追加していることを確認してください
 1. バーチャルカードが作成されたら、カード番号を講演者と共有し、可能な限りすべての旅行関連アイテムにこのカードを使用するよう依頼します
@@ -927,7 +948,7 @@ GitLab の自社主催イベントでは、参加している GitLab CXO と 10 
 
 ##### ホテル滞在
 
-ホテルも Coupa バーチャルカードを使用して確保することを希望しますが、時にはホテルがチェックインの際に物理的なカードを請求の偶発費用のために提供するよう依頼することがあります。講演者は自分のカードを提示してから払い戻しを申請するか、GitLab チームメンバーが自分のクレジットカードを提供することができます。
+ホテルもバーチャルカードを使用して確保することを希望しますが、時にはホテルがチェックインの際に物理的なカードを請求の偶発費用のために提供するよう依頼することがあります。講演者は自分のカードを提示してから払い戻しを申請するか、GitLab チームメンバーが自分のクレジットカードを提供することができます。
 
 GitLab チームメンバーが自分のカードを提供する場合、経費レポートを提出する際に、経費は次のように計上されるべきです:
 
