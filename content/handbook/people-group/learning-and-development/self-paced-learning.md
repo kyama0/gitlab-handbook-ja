@@ -2,10 +2,10 @@
 title: "セルフペース型の外部トレーニング"
 description: "GitLab の各部門が利用しているサードパーティのトレーニングプロバイダーの詳細"
 upstream_path: "/handbook/people-group/learning-and-development/self-paced-learning/"
-upstream_sha: "eff3a749f8927544a08073e8f660283a5d80478b"
-lastmod: "2026-05-21T14:25:32+00:00"
-translated_at: "2026-05-22T21:55:06Z"
-translator: claude
+upstream_sha: "a2af0b1d81734a87d89ce13f0302597755181359"
+lastmod: "2026-08-04T09:49:53+00:00"
+translated_at: "2026-08-05T06:14:38+09:00"
+translator: codex
 stale: false
 ---
 
@@ -37,7 +37,7 @@ Google Cloud Skills Boost のシートを希望する場合は、[Lumos](/handbo
 
 ## Hone Learning
 
-2025 年 1 月から、GitLab は従業員育成プラットフォームの Hone と提携し、GitLab の全マネージャー層にライセンスを提供しています。システムの詳細とアクセス方法（IC のアクセスも含む）については、[Hone ハンドブックページ](/handbook/people-group/learning-and-development/hone/) を参照してください。
+GitLab は従業員育成プラットフォームの Hone と提携し、GitLab の全マネージャー層にライセンスを提供しています。システムの詳細とアクセス方法（IC のアクセスも含む）については、[Hone ハンドブックページ](/handbook/people-group/learning-and-development/hone/) を参照してください。
 
 ## MasterClass
 

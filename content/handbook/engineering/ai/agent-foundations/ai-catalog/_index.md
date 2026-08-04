@@ -4,9 +4,9 @@ description: "AI Catalog グループは、組織、グループ、プロジェ�
 aliases:
   - /handbook/engineering/ai/ai-catalog/
 upstream_path: /handbook/engineering/ai/agent-foundations/ai-catalog/
-upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
-lastmod: "2026-07-31T12:38:28+02:00"
-translated_at: "2026-08-01T15:59:51+09:00"
+upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
+lastmod: "2026-08-03T18:10:59+01:00"
+translated_at: "2026-08-05T06:06:38+09:00"
 translator: codex
 stale: false
 ---
@@ -36,7 +36,7 @@ AI Catalog グループは、組織、グループ、プロジェクトをまた
 始めるためのいくつかのリンクを以下に示します。
 
 * [ルートエピック](https://gitlab.com/groups/gitlab-org/-/epics/11111): すべての作業をグループ化し、ロードマップを設定するため
-* [Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/3871464): 進行中のすべての Issue 用
+* [Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/11420787?label_name%5B%5D=group%3A%3Aai+catalog&milestone_title=Started#/): 進行中のすべての Issue 用
 * [チームタスク](https://gitlab.com/gitlab-org/ai-powered/ai-catalog/team-tasks/-/issues): プロダクトに関連しないすべてのチーム Issue 用
 * [非同期アップデート](https://gitlab.com/gitlab-org/ai-powered/ai-catalog/team-tasks/-/issues/?label_name%5B%5D=async%20update)
 * [チーム Wiki](https://gitlab.com/gitlab-org/ai-powered/ai-catalog/team-tasks/-/wikis/home): プロダクトの意思決定と有用な情報のため
@@ -58,7 +58,7 @@ DRI の責任:
 
 ### 支援の依頼への対応方法
 
-お客様がカタログで問題を経験している場合、サポートチームが
+お客様がカタログで問題を経験している場合、Support チームが
 [支援の依頼（request for help）](https://gitlab.com/gitlab-com/request-for-help)を提起します。
 支援の依頼を提起したい場合は、その方法とタイミングについての指示を[こちらの readme](https://gitlab.com/gitlab-com/request-for-help#please-read-the-following-before-submiting-a-request-for-help-to-the-gitlab-development-team-sections)で読んでください。
 
@@ -121,7 +121,7 @@ AI Catalog のほとんどの機能は Workflow Service 内で新しい機能を
 | [Dylan Griffith](https://gitlab.com/DylanGriffith) | Workflow Executor アーキテクチャ: リモート実行環境とランナーの実装 |
 | [Jessie Young](https://gitlab.com/jessieay) | 認可と認証 |
 | [Shekhar Patnaik](https://gitlab.com/shekharpatnaik)  / [Igor Drozdov](https://gitlab.com/igor.drozdov) | Duo Chat エージェントの統合 |
-| [Sebastian Rehm](https://gitlab.com/bastirehm) | エンジニアリングマネージャー、上記いずれのバックアップ連絡先 |
+| [Sebastian Rehm](https://gitlab.com/bastirehm) | Engineering Manager、上記いずれのバックアップ連絡先 |
 
 ### 計画のサイクル
 
@@ -145,7 +145,7 @@ AI Catalog のほとんどの機能は Workflow Service 内で新しい機能を
 
 #### 誰がいつ適用するか
 
-エンジニアリングマネージャーは、マイルストーンが始まる前の計画プロセス中に `~Deliverable` と `~Stretch` のラベルを適用します。
+Engineering Manager は、マイルストーンが始まる前の計画プロセス中に `~Deliverable` と `~Stretch` のラベルを適用します。
 この決定は、以下に基づいて Product Manager と協力して行われます。
 
 * マイルストーンのチームのキャパシティ
@@ -166,12 +166,12 @@ AI Catalog のほとんどの機能は Workflow Service 内で新しい機能を
 
 1. まず、現在のマイルストーンでアサインされた `~Deliverable` の Issue に取り組む
 2. すべての `~Deliverable` の Issue が完了またはブロックされている場合、マイルストーンから `~Stretch` の Issue を取り上げる
-3. 優先順位が不明確な場合、または `~Deliverable` の Issue の優先度を下げる必要がある場合は、エンジニアリングマネージャーに相談する
+3. 優先順位が不明確な場合、または `~Deliverable` の Issue の優先度を下げる必要がある場合は、Engineering Manager に相談する
 
 **マイルストーン中:**
 
 * `~Deliverable` の Issue がブロックされたり完了できなくなったりした場合は、`#g_ai_catalog` または関連する Issue で早めに伝える
-* エンジニアリングマネージャーは、優先順位やキャパシティの変化に基づいて、マイルストーン中に `~Deliverable` と `~Stretch` のラベルを調整する場合があります
+* Engineering Manager は、優先順位やキャパシティの変化に基づいて、マイルストーン中に `~Deliverable` と `~Stretch` のラベルを調整する場合があります
 
 ### 重み付け {#weighting}
 

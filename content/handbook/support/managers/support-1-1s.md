@@ -1,12 +1,12 @@
 ---
 title: サポート 1:1
-description: "サポートチームの 1:1 ガイドライン"
+description: "Support チームの 1:1 ガイドライン"
 upstream_path: /handbook/support/managers/support-1-1s/
-upstream_sha: 9da08370100b76603b2eb82901592f9d21c9766c
-translated_at: "2026-05-08T09:50:12Z"
-translator: claude
+upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
+translated_at: "2026-08-05T06:06:38+09:00"
+translator: codex
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-08-04T09:49:53+00:00"
 ---
 
 ## 目的とコンテキスト
@@ -15,7 +15,7 @@ GitLab では [毎週の 1-1](/handbook/leadership/1-1/) を実施していま�
 
 このページの **目的** は次のとおりです:
 
-1. [サポートエンジニアの責務](/handbook/support/support-engineer-responsibilities) を議論する際に、グローバルサポートチーム全体で一貫性を促進する
+1. [Support Engineer の責務](/handbook/support/support-engineer-responsibilities) を議論する際に、グローバル Support チーム全体で一貫性を促進する
 1. 業務の可視化を支援する
 
 このページが **行わない** ことは次のとおりです:
@@ -54,11 +54,11 @@ GitLab では [毎週の 1-1](/handbook/leadership/1-1/) を実施していま�
 
 このような質問は、会話を開きやすくし、業務に関連する側面をコンテキストの中で位置づけるのに役立ちます。（このアイデアの出典は [この GitLab の会話](https://twitter.com/gitlab/status/1244728191069171716) です。）
 
-**コールの最初のあたりで、サポートエンジニアが議論したい重要なことを提起する機会を与えてください。もっと重要な話題に集中する必要がある場合は、以下のセクションをスキップしても構いません。**
+**コールの最初のあたりで、Support Engineer が議論したい重要なことを提起する機会を与えてください。もっと重要な話題に集中する必要がある場合は、以下のセクションをスキップしても構いません。**
 
 ### 2. 今週のチケット作業はどうでしたか？
 
-サポートエンジニアの業務の中核は、サポートチケットを解決することで顧客を助けることです。そのため、毎週この業務について議論する時間を確保することが重要です。
+Support Engineer の業務の中核は、サポートチケットを解決することで顧客を助けることです。そのため、毎週この業務について議論する時間を確保することが重要です。
 
 **A. チケットレビュー**
 
@@ -72,25 +72,23 @@ GitLab では [毎週の 1-1](/handbook/leadership/1-1/) を実施していま�
 
 **C. チケットベースラインの達成（オプションの議論）**
 
-チームの Zendesk Explore ダッシュボードを見て、チケットベースラインを達成しているか確認します。[サポートエンジニアの責務ページに詳細があります](/handbook/support/support-engineer-responsibilities#ticket-baseline)。
+チームの Zendesk Explore ダッシュボードを見て、チケットベースラインを達成しているか確認します。[Support Engineer の責務ページに詳細があります](/handbook/support/support-engineer-responsibilities#ticket-baseline)。
 
 メンバーの貢献に満足できているなら、このセクションはスキップしてもよいでしょう。
 
 ### 3. キャリア開発と学習について議論する
 
-サポートエンジニアのキャリア開発と学習に対する希望について **少なくとも四半期ごとに** 議論し、目標達成を助けるためのガイダンスを提供してください。
+Support Engineer のキャリア開発と学習に対する希望について **少なくとも四半期ごとに** 議論し、目標達成を助けるためのガイダンスを提供してください。
 
-その希望に応じ、かつチームスキルの強化と知識ギャップの補完というサポートチームのニーズも満たすトレーニング計画について合意し、文書化します。
+その希望に応じ、かつチームスキルの強化と知識ギャップの補完という Support チームのニーズも満たすトレーニング計画について合意し、文書化します。
 
-進捗をレビューするためのチェックインポイントについて合意し、必要に応じて [Learning and Development](/handbook/people-group/learning-and-development/) に必要な時間の優先順位付けと配分でサポートエンジニアを支援します。
-
-[キャリア開発ページにより詳しい情報があります](/handbook/people-group/learning-and-development/career-development/#recomendations-for-managers-to-support-the-learning-of-team-members)
+進捗をレビューするためのチェックインポイントについて合意し、必要に応じて [Learning and Development](/handbook/people-group/learning-and-development/) に必要な時間の優先順位付けと配分で Support Engineer を支援します。
 
 ### 4. 責務領域からのその他の活動について議論する
 
 ドキュメント上部の **アクティビティリンク** からの興味深い活動について議論します（例は下記参照）。
 
-サポートエンジニアが議論したい活動の中には、アクティビティリンクに含まれていないものもあるかもしれません。
+Support Engineer が議論したい活動の中には、アクティビティリンクに含まれていないものもあるかもしれません。
 
 ### 5. 休暇
 
@@ -103,7 +101,7 @@ GitLab では [毎週の 1-1](/handbook/leadership/1-1/) を実施していま�
 
 ### 6. その他の議論
 
-1:1 で集中したい内容は人それぞれです。コールの残りは、サポートエンジニアとマネージャーが議論したいことに集中させてください。
+1:1 で集中したい内容は人それぞれです。コールの残りは、Support Engineer とマネージャーが議論したいことに集中させてください。
 
 ---
 
@@ -111,22 +109,22 @@ GitLab では [毎週の 1-1](/handbook/leadership/1-1/) を実施していま�
 
 すべての 1:1 ノートドキュメントには、上部に同様のテキストとリンクを含める必要があります。
 
-### 1. How are you feeling this week on a scale of 1 to 5?
+### 1. 今週の気分を 1 から 5 で表すと？
 
-1. Very positive
-1. More positive than usual
-1. Same as usual
-1. Not as good as usual
-1. Not great right now
+1. とても前向き
+1. いつもより前向き
+1. いつもと同じ
+1. いつもほど良くない
+1. 今はあまり良くない
 
-### 2. Activity Links
+### 2. アクティビティリンク
 
-1. Assigned tickets: `https://gitlab.zendesk.com/agent/users/{USER_ID}/assigned_tickets` Replace `{USER_ID}` with the engineer's ZenDesk userid (shown in the address bar when viewing their profile).
-1. All tickets commented on: `https://gitlab.zendesk.com/agent/search/1?q=commenter%3A{USER_ID}%20order_by%3Aupdated_at%20sort%3Adesc` Replace `{USER_ID}` with the engineer's ZenDesk userid
-1. Pairings completed - [Link to the pairings summary page](https://gitlab-com.gitlab.io/support/support-pairing/)
-1. Bug report and feature requests - [Link example](/handbook/support/support-engineer-responsibilities#6-create-and-update-issues-for-bugs-and-feature-requests-weekly)
-1. Documentation updates - [Link example](/handbook/support/support-engineer-responsibilities#7-improve-documentation-and-publicly-share-knowledge-weekly)
-1. Bug fixes - [Link example](/handbook/support/support-engineer-responsibilities#8-fix-gitlab-bugs-and-create-features-occasionally)
-1. Learning and training progress - [Link example](/handbook/support/support-engineer-responsibilities#11-develop-your-skills-through-learning-and-training-weekly)
-1. Customer calls? (Currently no link for this item. Included as a reminder to mention customer calls completed in the last week.)
-1. Interviews? (Currently no link for this item. Included as a reminder to mention interviews completed in the last week.)
+1. 割り当て済みチケット: `https://gitlab.zendesk.com/agent/users/{USER_ID}/assigned_tickets` `{USER_ID}` をエンジニアの ZenDesk ユーザー ID（プロフィール表示時のアドレスバーに表示）に置き換えます。
+1. コメントしたすべてのチケット: `https://gitlab.zendesk.com/agent/search/1?q=commenter%3A{USER_ID}%20order_by%3Aupdated_at%20sort%3Adesc` `{USER_ID}` をエンジニアの ZenDesk ユーザー ID に置き換えます
+1. 完了したペアリング - [ペアリング概要ページへのリンク](https://gitlab-com.gitlab.io/support/support-pairing/)
+1. バグ報告と機能リクエスト - [リンク例](/handbook/support/support-engineer-responsibilities#6-create-and-update-issues-for-bugs-and-feature-requests-weekly)
+1. ドキュメント更新 - [リンク例](/handbook/support/support-engineer-responsibilities#7-improve-documentation-and-publicly-share-knowledge-weekly)
+1. バグ修正 - [リンク例](/handbook/support/support-engineer-responsibilities#8-fix-gitlab-bugs-and-create-features-occasionally)
+1. 学習とトレーニングの進捗 - [リンク例](/handbook/support/support-engineer-responsibilities#11-develop-your-skills-through-learning-and-training-weekly)
+1. 顧客コール？（現在、この項目へのリンクはありません。前週に完了した顧客コールに触れるためのリマインダーとして含めています。）
+1. 面接？（現在、この項目へのリンクはありません。前週に完了した面接に触れるためのリマインダーとして含めています。）

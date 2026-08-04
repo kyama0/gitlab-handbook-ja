@@ -1,11 +1,11 @@
 ---
 title: Elevate+
 upstream_path: /handbook/people-group/learning-and-development/elevate-programs/elevateplus/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
-translator: claude
+upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
+translated_at: "2026-08-05T06:27:42+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-13T10:38:53-04:00"
+lastmod: "2026-08-04T09:49:53+00:00"
 ---
 
 Elevate+: GitLab のリーダーをリードするリーダー向けのライブ仮想リーダーシップ開発プログラムです。リーダーとしてのアイデンティティの強化、GitLab のビジネスアキュメンの習得、チーム戦略の構築と実行、クロスファンクショナルな連携の維持、そして効率的なチェンジマネジメントに焦点を当てています。

@@ -2,11 +2,11 @@
 title: "GitLab と RSOE におけるキャリア開発"
 description: "このページは、Growth & Development に関連する RSOE チーム向けのガイダンスとリソースを提供します"
 upstream_path: /handbook/sales/field-operations/rsoe-gd/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T10:00:00Z"
-translator: claude
+upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
+translated_at: "2026-08-05T06:06:38+09:00"
+translator: codex
 stale: false
-lastmod: "2025-04-30T18:11:10+00:00"
+lastmod: "2026-08-04T09:49:53+00:00"
 ---
 ## GitLab と RSOE におけるキャリア開発
 
@@ -14,9 +14,9 @@ lastmod: "2025-04-30T18:11:10+00:00"
 
 GitLab では、[キャリア開発とモビリティ](/handbook/people-group/learning-and-development/career-development/)が最優先事項であり、従業員がスキルを成長させ、キャリアを進めるのを助けるためのさまざまなリソースとプログラムを提供しています。GitLab の[成長と開発の機会](/handbook/people-group/learning-and-development/career-development/#career-growth-opportunities)には、社内トレーニング、メンターシッププログラム、認定資格が含まれており、チームメンバーが自分の強みを活かし、新しい関心領域を探求できるようにエンパワーメントしています。GitLab は継続的な学習の文化を奨励しており、従業員は GitLab ハンドブックの[Learning and Development セクション](/handbook/people-group/learning-and-development/)を含むさまざまな学習リソースにアクセスできます。この成長へのコミットメントは、従業員が新しい挑戦を追求し、社内でキャリアを進められることを保証します。
 
-## Revenue, Strategy, Operations, Enablement (RSOE) チーム内のキャリアパス
+## Revenue, Strategy, Operations, and Enablement (RSOE) チーム内のキャリアパス
 
-GitLab の Revenue, Strategy, Operations, Enablement (RSOE) チームは、キャリアの進歩のための数多くの道筋を提供しており、従業員はチーム内のさまざまな役割を探求できます。RSOE チームは内部モビリティ、専門能力開発、部門横断的なコラボレーションを奨励し、ダイナミックな職場環境を確保しています。
+GitLab の Revenue, Strategy, Operations, and Enablement (RSOE) チームは、キャリアの進歩のための数多くの道筋を提供しており、従業員はチーム内のさまざまな役割を探求できます。RSOE チームは内部モビリティ、専門能力開発、部門横断的なコラボレーションを奨励し、ダイナミックな職場環境を確保しています。
 
 新しい役割への移動を検討する際には、現在の知識、スキル、コンピテンシーを評価して、開発すべき領域を特定することが不可欠です。まず、下のチャートに表示されている希望する役割の職務要件を確認してください。次に、現在のスキルセットを振り返り、マネージャーや同僚からフィードバックを求め、GitLab のセルフペースコースや個人開発計画などのツールを活用して、自己評価を行います。[RSOE Individual Growth Plan & Career tracker テンプレート](https://docs.google.com/spreadsheets/d/1J6LrCN7-Z8sc2SAFPAPTKrwejJJE9onQ1iHUmW2DfHA/edit?gid=336501902#gid=336501902)を使用して、対象を絞った学習、メンターシップ、または実践的なプロジェクトを通じてギャップに対処するためのアクションプランを作成してください。
 
@@ -36,4 +36,4 @@ GitLab の RSOE チーム内のこれらのジョブファミリーは、横方�
 
 ## RSOE マネージャー向けのキャリア開発リソース
 
-マネージャーとして、あなたはチームメンバーがキャリアで[成長し、進歩する](/handbook/people-group/learning-and-development/career-development/#manager-responsibilities)のを助ける重要な役割を果たします。メンバーが自分の強みと改善すべき領域を特定するために必要な[ガイダンス、サポート、リソースを提供](/handbook/people-group/learning-and-development/career-development/#recomendations-for-managers-to-support-the-learning-of-team-members)し、チーム内外での役割を進めるために必要なスキルと経験を開発できるようにすることが、あなたの責任です。あなたはまた、メンターシップ、ネットワーキングの機会を提供し、メンバーのキャリア志望を組織の目標と整合させるアドボケートとしての役割も果たします。最終的に、メンバーの開発へのあなたのコミットメントは、メンバーの成功、チーム全体のパフォーマンス、そして GitLab にとって鍵となります！[RSOE Career Development Best Practices Guide](https://docs.google.com/document/d/13gvILCumR6-kPeOo3WZNn5114vlZ2DAYDQBjoTGNfX0/edit?tab=t.0)を見て始めましょう！
+マネージャーとして、あなたはチームメンバーがキャリアで[成長し、進歩する](/handbook/people-group/learning-and-development/career-development/#manager-responsibilities)のを助ける重要な役割を果たします。メンバーが自分の強みと改善すべき領域を特定するために必要なガイダンス、サポート、リソースを提供し、チーム内外での役割を進めるために必要なスキルと経験を開発できるようにすることが、あなたの責任です。あなたはまた、メンターシップ、ネットワーキングの機会を提供し、メンバーのキャリア志望を組織の目標と整合させるアドボケートとしての役割も果たします。最終的に、メンバーの開発へのあなたのコミットメントは、メンバーの成功、チーム全体のパフォーマンス、そして GitLab にとって鍵となります！[RSOE Career Development Best Practices Guide](https://docs.google.com/document/d/13gvILCumR6-kPeOo3WZNn5114vlZ2DAYDQBjoTGNfX0/edit?tab=t.0)を見て始めましょう！

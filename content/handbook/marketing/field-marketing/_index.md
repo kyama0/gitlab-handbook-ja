@@ -2,9 +2,9 @@
 title: "Regional Marketing"
 description: "GitLab における Regional Marketing の役割は、対面およびバーチャルのインタラクションを通じて、地域レベルでのマーケティングメッセージとパイプライン構築を支援するために、セールスと密接に連携することです。"
 upstream_path: "/handbook/marketing/field-marketing/"
-upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
-lastmod: "2026-07-24T15:57:51+00:00"
-translated_at: "2026-07-25T06:27:01+09:00"
+upstream_sha: 197b140c5d91cf90c19d493d4723862ee691745f
+lastmod: "2026-08-04T21:32:31+00:00"
+translated_at: "2026-08-05T06:54:54+09:00"
 translator: codex
 stale: false
 ---
@@ -564,7 +564,7 @@ Regional Marketing 以外のイベントのスワッグやイベントアセッ�
 
 ### 顧客スピーカーへのギフト
 
-スピーカーの旅費や宿泊費の支払いに関する情報が必要な場合は、GitLab Event Information ページの[このセクション](/handbook/marketing/events/#paying-for-speaker-travel)を参照してください。
+スピーカーの旅費や宿泊費の支払いに関する情報が必要な場合は、GitLab Event Information ページの[このセクション](/handbook/marketing/events/#speakers-at-events)を参照してください。
 
 顧客スピーカーへのギフトには、1 人あたり年間 $75 USD の上限があることに注意してください。
 

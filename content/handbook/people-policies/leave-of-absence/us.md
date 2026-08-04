@@ -2,11 +2,11 @@
 title: 米国の休職ポリシー
 description: "GitLab の米国における休職ポリシー。"
 upstream_path: /handbook/people-policies/leave-of-absence/us/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
-translator: claude
+upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
+translated_at: "2026-08-05T06:06:38+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-19T16:28:22-06:00"
+lastmod: "2026-08-04T15:03:09-05:00"
 ---
 
 これらの GitLab および米国固有の休暇ポリシーは、深刻な健康状態から回復するために自分自身をケアする、深刻な健康状態から回復している家族をケアする、または新生児や新たに養子縁組された子どもとの絆を深めるために、チームメンバーが仕事から離れて過ごす時間を提供することを目的としています。
@@ -34,9 +34,9 @@ lastmod: "2026-02-19T16:28:22-06:00"
 | 休暇プログラム | 説明 | 適格性 |
 |:---:|:---:|:---:|
 | Parental Leave | 子どもが生まれる予定です<br>パートナーが子どもを出産予定です<br>家族が子どもを養子縁組しています | GitLab での雇用期間中に子どもが生まれた、または新たに養子縁組されたすべてのチームメンバー |
-| Family Medical Leave Act<br>(FMLA) | 手術を受けます<br>家族*が重傷を負っています<br>フォローアップケアのために繰り返し予約があります（化学療法、出産前検診など）<br>新生児または新たに養子縁組された子どもと絆を深めています<br>active duty 中に重傷を負った家族をケアしています | 1 年間の勤務、かつ<br>休暇開始の直前 1 年間に<br>1250 時間勤務 |
-| California Family Rights Act (CFRA) | 手術を受けます<br>家族**が重傷を負っています<br>フォローアップケアのために繰り返し予約があります（化学療法など）<br>新生児、新たに養子縁組された子ども、または里子と絆を深めています<br>active duty 中に重傷を負った家族をケアしています | 1 年間の勤務、かつ<br>休暇開始の直前 1 年間に<br>1250 時間勤務 |
-| Military Leave (USERRA) | 配備されています<br>長期訓練（5 日以上）のために報告する予備役です | 休暇前に書面または<br>口頭での通知を提供（可能な場合） |
+| Family Medical Leave Act<br>(FMLA) | 手術を受けます<br>家族*が重傷を負っています<br>フォローアップケアのために繰り返し予約があります（化学療法、出産前検診など）<br>新生児または新たに養子縁組された子どもと絆を深めています<br>現役軍務中に重傷を負った家族をケアしています | 1 年間の勤務、かつ<br>休暇開始の直前 1 年間に<br>1250 時間勤務 |
+| California Family Rights Act (CFRA) | 手術を受けます<br>家族**が重傷を負っています<br>フォローアップケアのために繰り返し予約があります（化学療法など）<br>新生児、新たに養子縁組された子ども、または里子と絆を深めています<br>現役軍務中に重傷を負った家族をケアしています | 1 年間の勤務、かつ<br>休暇開始の直前 1 年間に<br>1250 時間勤務 |
+| 軍務休暇（USERRA） | 配備されています<br>長期訓練（5 日以上）のために報告する予備役です | 休暇前に書面または<br>口頭での通知を提供（可能な場合） |
 
 *FMLA 対象家族: 配偶者、息子、娘、親。
 
@@ -62,7 +62,7 @@ lastmod: "2026-02-19T16:28:22-06:00"
 | [Family Medical Leave Act<br>(FMLA - Own Condition)](#payroll-processing-during-fmla) | 66.67% (STD) + 33.3% を GitLab が週ごとに支払い<br>26 週間後:  <br>     66.67% (LTD) 月ごと |
 | [Family Medical Leave Act<br>(FMLA - Care for a Family Member)](#the-family-medical-leave-act-fmla) | 最大 25 営業日まで 100% |
 | California Family Rights Act<br>(CFRA) | 最初の 8 週間:  60% (SDI/PFL) + 6.66% (STD) + 33.3% を GitLab が支払い<br>8-12 週間:  60% (SDI - 該当する場合) + 6.66% (STD) + 33.3% を GitLab が支払い<br>26 週間後:  Cigna が 66.67% LTD を月ごとに支払い（対象の場合） |
-| [Military Leave (USERRA)](#us-military-leave) | 最初の 25 日:  GitLab が 100% 支払い<br>25 日後:  無給 |
+| [Military Leave (USERRA)](#us-military-leave) | [米国の軍務休暇ポリシー](/handbook/people-policies/leave-of-absence/us/#us-military-leave)の「報酬」の見出しを参照してください |
 
 *休暇が継続して取られる場合
 
@@ -76,21 +76,21 @@ lastmod: "2026-02-19T16:28:22-06:00"
 
 [FMLA](https://www.dol.gov/agencies/whd/fmla)（Family Medical Leave Act）は、対象となる米国チームメンバーに、自分自身の深刻な健康状態、深刻な健康状態の家族の介護、新生児または新たに養子縁組された子どもとの絆を深めるために、最大 12 週間（または、軍人の介護のために 12 ヶ月間に最大 26 週間）の無給休暇を提供します。FMLA 対象の休暇時間は、医師の証明により、継続的に、または断続的に取得できます。FMLA を子どもまたは新たに養子縁組された子どもとの絆を深めるために使用する場合、対象となるすべての時間は、子どもの 1 歳の誕生日または養子縁組の日までに使用する必要があります。詳細については、[Employee Rights Under the Family Medical Leave Act](https://www.dol.gov/sites/dolgov/files/WHD/legacy/files/fmlaen.pdf) を参照してください。
 
-チームメンバーは、FMLA 休暇の対象となるために、休暇開始の直前年に 12 ヶ月の継続勤務と 1250 時間の勤務時間がある必要があります。労働時間は実際の労働時間として計算され、PTO や休暇時間は含まれません。GitLab は、FMLA 休暇使用日から逆算して測定される「ローリング」12 ヶ月期間として FMLA の対象期間を計算します。（チームメンバーが FMLA 休暇を取得するたびに、残りの休暇は FMLA 休暇開始直前の 12 ヶ月間に使用されなかった 12 週間の残高です。）すべての FMLA 対象の休暇は、適用可能な州固有の休暇および障害または paid family leave プログラム（該当する場合）、GitLab の病気休暇ポリシー（COVID 休暇を含む）、および／または短期障害給付と同時並行で実行されます。GitLab の Flexible PTO ポリシーは、FMLA を遅らせる、延長する、または代替するために使用することはできません。
+チームメンバーは、FMLA 休暇の対象となるために、休暇開始の直前年に 12 ヶ月の継続勤務と 1250 時間の勤務時間がある必要があります。労働時間は実際の労働時間として計算され、PTO や休暇時間は含まれません。GitLab は、FMLA 休暇使用日から逆算して測定される「ローリング」12 ヶ月期間として FMLA の対象期間を計算します。（チームメンバーが FMLA 休暇を取得するたびに、残りの休暇は FMLA 休暇開始直前の 12 ヶ月間に使用されなかった 12 週間の残高です。）すべての FMLA 対象の休暇は、適用可能な州固有の休暇および障害または有給家族休暇プログラム（該当する場合）、GitLab の病気休暇ポリシー（COVID 休暇を含む）、および／または短期障害給付と同時並行で実行されます。GitLab の Flexible PTO ポリシーは、FMLA を遅らせる、延長する、または代替するために使用することはできません。
 
 #### 申請方法
 
-5 日以上（継続的または非継続的だが同じ状態に関連する）仕事を欠勤する必要のある医療関連の欠勤（自分自身または家族）は、Tilt に報告する必要があります。可能な限り 24-48 営業時間以内に連絡があり、要求に関する情報が提供されます。承認された場合は、OOO であることを示すように Slack ステータスを調整してください。
+5 日を超えて（継続的または非継続的だが同じ状態に関連する）仕事を欠勤する必要のある医療関連の欠勤（自分自身または家族）は、Tilt に報告する必要があります。可能な限り 24-48 営業時間以内に連絡があり、要求に関する情報が提供されます。承認された場合は、OOO であることを示すように Slack ステータスを調整してください。
 
 #### FMLA 中の給与処理
 
-Tilt は、Short-Term Disability 給付、State pay 給付、および／または GitLab の Sick Time ポリシーに対するチームメンバーの適格性を確認し、チームメンバーが休暇中にどのように給与を受け取ることが期待されるかを伝えます。
+Tilt は、Short-Term Disability 給付、州の給与給付、および／または GitLab の Sick Time ポリシーに対するチームメンバーの適格性を確認し、チームメンバーが休暇中にどのように給与を受け取ることが期待されるかを伝えます。
 
 ### California Family Rights Act (CFRA)
 
 GitLab は、California Family Rights Act（「CFRA」）および連邦 Family and Medical Leave Act (Fed-FMLA) の要件に従って、対象となるチームメンバーに休暇を付与します。CFRA と Fed-FMLA の両方が適用される場合、各々が提供する休暇は両方の法律の下でのチームメンバーの権利に対してカウントされ、同時並行で取得する必要があります。これらの法律のいずれか 1 つのみの対象となるチームメンバーは、その法律のみに従って給付を受けます。いずれの場合も、チームメンバーは適用される法律の下で利用可能な最も寛大な給付の対象となります。
 
-以下のポリシーは、CFRA のみに基づくチームメンバーの権利を扱います。Fed-FMLA に関する追加の詳細については、チームメンバーは [GitLab's Team Member Handbook](#the-family-medical-leave-act-fmla) を参照してください。このポリシーに関するすべての質問は Tilt に向けるべきです。
+以下のポリシーは、CFRA のみに基づくチームメンバーの権利を扱います。Fed-FMLA に関する追加の詳細については、チームメンバーは [GitLab チームメンバーハンドブック](#the-family-medical-leave-act-fmla) を参照してください。このポリシーに関するすべての質問は Tilt に向けるべきです。
 
 **チームメンバーの適格性**
 
@@ -103,8 +103,8 @@ CFRA 休暇の対象となるには、カリフォルニア州に居住するチ
 - チームメンバーの子どもの出産、または里親養護もしくは養子縁組のためにチームメンバーに子どもが配置される場合、その休暇が子どもの出生または配置から 12 ヶ月以内に完了する場合
 - 深刻な健康状態にあるチームメンバーの配偶者または登録国内パートナー、子ども（年齢や扶養状況に関係なく）、親、祖父母、孫、または兄弟姉妹を介護するため
 - チームメンバー自身の深刻な健康状態のため。ただし、妊娠、出産、または関連する医学的状態による障害を除く
-- 米国軍隊のチームメンバーの配偶者、国内パートナー、子、または親の covered active duty または covered active duty への召集に関連する qualifying exigency のため
-  - このポリシーにおいて、「親」には、生物学的、里親、または養親、継親、義理の親、法的後見人、または従業員が子どもだったときに従業員に対して in loco parentis として位置していた他の人が含まれます。
+- チームメンバーの配偶者、国内パートナー、子、または親が、米国軍における対象となる現役軍務（covered active duty）に就いている、または召集されたことに関連する適格緊急事態（qualifying exigency）のため
+  - このポリシーにおいて、「親」には、生物学的、里親、または養親、継親、義理の親、法的後見人、または従業員が子どもだったときに親代わり（in loco parentis）となっていた他の人が含まれます。
   - 「深刻な健康状態」とは、以下のいずれかを含む病気、けが（業務上のけがを含むがこれに限定されない）、機能障害、または身体的もしくは精神的状態を意味します:
 - 病院、ホスピス、または住居型医療施設での入院ケア（薬物乱用治療を含むがこれに限定されない）。これには、無能力期間（つまり、仕事ができない、学校に出席できない、またはその他の通常の日常活動を遂行できない）またはこの入院ケアに関連する後続の治療が含まれます。または
 - 以下のいずれか 1 つ以上を含む、医療提供者による継続的な治療（薬物乱用治療を含むがこれに限定されない）または継続的な監督:
@@ -121,7 +121,7 @@ CFRA 休暇は、チームメンバーが妊娠、出産、または関連する
 
 CFRA 休暇が子どもの出産または配置のためであり、両親の両方が会社に勤務している場合、両親は子どもの出産または配置の 12 ヶ月以内に各々最大 12 週間の CFRA 休暇を取得できます。
 
-CFRA 休暇の理由がチームメンバーの深刻な健康状態であり、これがカリフォルニア州 Fair Employment and Housing Act（「FEHA」）に基づく「障害」も構成し、CFRA 休暇の終了時にチームメンバーが仕事に復帰できない場合、会社は、休暇の延長が FEHA に基づく合理的配慮となるかどうかを判断するために、interactive process に従事します。
+CFRA 休暇の理由がチームメンバーの深刻な健康状態であり、これがカリフォルニア州 Fair Employment and Housing Act（「FEHA」）に基づく「障害」も構成し、CFRA 休暇の終了時にチームメンバーが仕事に復帰できない場合、会社は、休暇の延長が FEHA に基づく合理的配慮となるかどうかを判断するために、対話的プロセス（interactive process）に従事します。
 
 **断続的または短縮スケジュール休暇**
 
@@ -151,19 +151,19 @@ CFRA 休暇の理由がチームメンバーの深刻な健康状態であり、
 
 会社は、会社の費用負担で、チームメンバー自身の深刻な健康状態に関する第 2 の医療意見を要求することもできます。チームメンバーは、会社が要求する追加の医療意見の取得に協力することが期待されます。
 
-**Qualifying Exigency 休暇の要件**
+**適格緊急事態（Qualifying Exigency）休暇の要件**
 
 チームメンバーは以下を提供する必要があります:
 
 - 状況下で合理的かつ実用的な限り多くの事前通知
-- チームメンバーが休暇を要求するときの対象軍人の active duty 命令のコピー、および／または軍人の休暇日を示す軍が発行した書類（Rest and Recuperation の休暇命令など）
-- 異常な状況が後日フォームを提供する正当な理由とならない限り、15 暦日以内の完成した Certification of Qualifying Exigency フォーム
+- チームメンバーが休暇を要求するときの対象軍人の現役軍務命令（active duty orders）のコピー、および／または軍人の休暇日を示す軍が発行した書類（休息・療養（Rest and Recuperation）の休暇命令など）
+- 異常な状況が後日フォームを提供する正当な理由とならない限り、15 暦日以内の完成した適格緊急事態証明書（Certification of Qualifying Exigency）
 
 証明フォームは Tilt から入手できます。
 
 **通知または証明の提供および休暇からの復帰の不履行**
 
-異常な状況がない限り、これらの通知および証明要件の遵守不履行は、休暇の遅延または拒否につながる可能性があります。チームメンバーが休暇の終了時に仕事に復帰しないこと、および休暇の延長を取得していないこと、会社はチームメンバーが仕事に復帰する予定がなく、自発的に雇用を終了したと推定する可能性があります。
+異常な状況がない限り、これらの通知および証明要件の遵守不履行は、休暇の遅延または拒否につながる可能性があります。チームメンバーが休暇の終了時に仕事に復帰せず、かつ休暇の延長も取得していない場合、会社はチームメンバーが仕事に復帰する予定がなく、自発的に雇用を終了したと推定する可能性があります。
 
 **福利厚生**
 
@@ -203,7 +203,7 @@ New York Paid Family Leave は、職務が保護される有給休暇を提供�
 
 - 新生児、養子縁組された、または里子の子どもとの絆を深める
 - 深刻な健康状態にある近親者を介護する
-- 家族が active military service で海外に配備された場合、家族の状況を支援する
+- 家族が現役軍務で海外に配備された場合、家族の状況を支援する
 
 Paid Family Leave は、自分自身または未成年の扶養家族の子どもが COVID-19 のために隔離または分離命令を受けている状況での使用にも利用可能な場合があります。詳細については PaidFamilyLeave.ny.gov/COVID19 を参照してください。
 
@@ -242,9 +242,9 @@ Paid Family Leave は、カバレッジのコストに合わせて毎年設定�
 - 病院、ホスピス、または住居型医療施設での入院ケア、または
 - 医療提供者による継続的な治療または継続的な監督
 
-家族には以下が含まれます:  配偶者、Domestic Partner、子および継子、親および継親、義理の親、祖父母、孫、および 2023 年から有効な兄弟姉妹（生物学的、養子、半血、および継兄弟姉妹）。
+家族には以下が含まれます:  配偶者、国内パートナー、子および継子、親および継親、義理の親、祖父母、孫、および 2023 年から有効な兄弟姉妹（生物学的、養子、半血、および継兄弟姉妹）。
 
-**Military Active Service Deployment:** 配偶者、domestic partner、子、または親が active military service で海外に配備されたか、海外での軍事配備が差し迫っている通知を受けた場合、生じる家族の状況を支援するために Paid Family Leave を取得できます。自分自身の対象となる軍事イベントのために Paid Family Leave を使用することはできません。
+**現役軍務への派遣:** 配偶者、国内パートナー、子、または親が現役軍務で海外に配備されたか、海外での軍事配備が差し迫っている通知を受けた場合、生じる家族の状況を支援するために Paid Family Leave を取得できます。自分自身の対象となる軍事関連事由のために Paid Family Leave を使用することはできません。
 
 **COVID-19 隔離:** Paid Family Leave は、自分自身または未成年の扶養家族の子どもが COVID-19 のために隔離または分離命令を受けている状況での使用にも利用可能な場合があります。詳細については PaidFamilyLeave.ny.gov/COVID19 を参照してください。
 
@@ -264,7 +264,7 @@ Paid Family Leave は、カバレッジのコストに合わせて毎年設定�
 
 **Paid Family Leave プロセスと連絡先**
 
-GitLab では、Paid Family Leave フォームの要求およびフォームの提出は Tilt に向けるべきです。当社の Paid Family Leave キャリアは NYLife です。
+GitLab では、Paid Family Leave フォームの要求およびフォームの提出は Tilt に向けるべきです。当社の Paid Family Leave の保険会社は NYLife です。
 
 **紛争**
 
@@ -276,45 +276,47 @@ Paid Family Leave のクレームが拒否された場合、保険会社（NYLif
 
 > Paid Family Leave, P. O. Box 9030, Endicott, NY 13761-9030
 
-雇用主が 30 日以内に職務復帰の要求に応じない場合、Paid Family Leave のウェブサイトでも入手可能な Paid Family Leave Discrimination Complaint (Form PFL-DC-120) を使用して、Workers' Compensation Board に Paid Family Leave 差別の苦情を申し立てることができます。苦情が受領されると、Board は事件を組み立て、Workers' Compensation Law Judge の前で予備聴聞会を予定します。
+雇用主が 30 日以内に職務復帰の要求に応じない場合、Paid Family Leave のウェブサイトでも入手可能な Paid Family Leave Discrimination Complaint (Form PFL-DC-120) を使用して、Workers' Compensation Board に Paid Family Leave 差別の苦情を申し立てることができます。苦情が受領されると、Board は案件を取りまとめ、Workers' Compensation Law Judge の前で予備聴聞会を予定します。
 
 ## 州別のその他の休暇タイプ
 
 | 休暇タイプ                              | 州または都市／地域 |
 |-----------------------------------------|-------|
-| Bereavement Leave                       | IL, OR, WA (Tacoma)  |
-| Blood/Bone Marrow/Organ Donation Leave  | AR, CA, CT, HI, IL, LA, ME, MD, MN, NE, NJ, NY, OR, SC, WI |
-| Court Attendance/Witness Leave          | CA, CT, DC, FL, GA, HI, IL, IN, IA, KY, MD, MA, MN, MO, NV, ND, OH, OR, PA, RI, TX, UT, VT, VI, WI, WY |
-| Crime Victims' Leave                    | AL, AK, AZ, AR, CA, CO, CT, DE, MD, MA, MI, MN, MS, MO, MT, NH, NY, OH, OR, PA, RI, SC, VT, VA, WY |
-| Domestic/Sexual Violence Victims' Leave | AZ, AR, CA, CO, CT, DC, FL, HI, IL, IA, KS, ME, MD, MA, MI, MN, NV, NJ, NM, NY, NC, OR, PA, RI, TX, VT, VA, WA |
-| Drinking and Driving Class Leave        | IA      |
-| Drug/alcohol Rehabilitation Leave       | CA      |
-| Election Officials' Leave               | AL, CA, DE, IL, KY, MN, NE, NC, OH, VA, WI  |
-| Emancipation Day Leave                  | DC      |
-| Emergency Evacuation Leave              | TX      |
-| Legislative/Political Leave             | CT, IA, ME, MN, MT, NV, OK, OR, SD, TX, VT, WV      |
-| Literacy Leave                          | CA      |
-| Mobile Support Unit Leave               | IN      |
-| Paid Family/Disability Leave            | CA, CO, CT, DC, DE, HI, MA, MD, NH, NJ, NY, OR, Puerto Rico, RI, VA, WA       |
-| Pregnancy Disability Leave              | CA, CT, HI, IA, LA, MN, MT, NH, OR, WA      |
-| Public Health Emergency (Quarantine/Isolation) Leave | AZ, CA (San Diego), CO, DE, IL (Cook Co), MA, MD (Montgomery Co), MI, MN, NJ, NY (Westchester Co & NYC), OR, PA (Pittsburgh), RI, SC, VT, WA  |
-| School Activities/Visitation Leave      | CA, CO, DC, IL, LA, MA, MN, NV, NJ, NC, OR, RI, TN, VT   |
-| State Family Medical Leave              | AK, CA, CT, DC, FL, GA, HI, IL, IN, IA, KS, KY, LA, ME, MD, MA, MN, MO, MT, NE, NV, NH, NJ, NM, NY, NC, OH, OR, PA, Puerto Rico, RI, TN, VT, VA, WA, WI  |
-| Student Leave                           | DC      |
-| Volunteer Emergency Responder Leave     | AL, CA, CO, CT, DE, IL, IN, IA, KS, KY, LA, ME, MD, MA, MO, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OR, PA, RI, SC, TN, UT, WA, WV, WI |
-| Voting Leave                            | AL, AK, AZ, AR, CA, CO, DC, GA, IL, IA, KS, KY, MD, MA, MN, MO, NE, NV, NM, NY, ND, OH, OK, SD, TN, TX, UT, VT, WV, WI, WY   |
+| 忌引休暇                                | IL, OR, WA (Tacoma)  |
+| 血液・骨髄・臓器提供休暇                | AR, CA, CT, HI, IL, LA, ME, MD, MN, NE, NJ, NY, OR, SC, WI |
+| 出廷・証人休暇                          | CA, CT, DC, FL, GA, HI, IL, IN, IA, KY, MD, MA, MN, MO, NV, ND, OH, OR, PA, RI, TX, UT, VT, VI, WI, WY |
+| 犯罪被害者休暇                          | AL, AK, AZ, AR, CA, CO, CT, DE, MD, MA, MI, MN, MS, MO, MT, NH, NY, OH, OR, PA, RI, SC, VT, VA, WY |
+| 家庭内・性暴力被害者休暇                | AZ, AR, CA, CO, CT, DC, FL, HI, IL, IA, KS, ME, MD, MA, MI, MN, NV, NJ, NM, NY, NC, OR, PA, RI, TX, VT, VA, WA |
+| 飲酒運転講習休暇                        | IA      |
+| 薬物・アルコール依存症リハビリ休暇      | CA      |
+| 選挙管理業務休暇                        | AL, CA, DE, IL, KY, MN, NE, NC, OH, VA, WI  |
+| 奴隷解放記念日休暇                      | DC      |
+| 緊急避難休暇                            | TX      |
+| 議会・政治活動休暇                      | CT, IA, ME, MN, MT, NV, OK, OR, SD, TX, VT, WV      |
+| 読み書き教育休暇                        | CA      |
+| 移動支援部隊休暇                        | IN      |
+| 有給家族・障害休暇                      | CA, CO, CT, DC, DE, HI, MA, MD, NH, NJ, NY, OR, Puerto Rico, RI, VA, WA       |
+| 妊娠障害休暇                            | CA, CT, HI, IA, LA, MN, MT, NH, OR, WA      |
+| 公衆衛生上の緊急事態（隔離・分離）休暇  | AZ, CA (San Diego), CO, DE, IL (Cook Co), MA, MD (Montgomery Co), MI, MN, NJ, NY (Westchester Co & NYC), OR, PA (Pittsburgh), RI, SC, VT, WA  |
+| 学校活動・訪問休暇                      | CA, CO, DC, IL, LA, MA, MN, NV, NJ, NC, OR, RI, TN, VT   |
+| 州家族・医療休暇                        | AK, CA, CT, DC, FL, GA, HI, IL, IN, IA, KS, KY, LA, ME, MD, MA, MN, MO, MT, NE, NV, NH, NJ, NM, NY, NC, OH, OR, PA, Puerto Rico, RI, TN, VT, VA, WA, WI  |
+| 学生休暇                                | DC      |
+| ボランティア緊急対応者休暇              | AL, CA, CO, CT, DE, IL, IN, IA, KS, KY, LA, ME, MD, MA, MO, NE, NV, NH, NJ, NM, NY, NC, ND, OH, OR, PA, RI, SC, TN, UT, WA, WV, WI |
+| 投票休暇                                | AL, AK, AZ, AR, CA, CO, DC, GA, IL, IA, KS, KY, MD, MA, MN, MO, NE, NV, NM, NY, ND, OH, OK, SD, TN, TX, UT, VT, WV, WI, WY   |
 
 ## 米国の軍務休暇
 
-GitLab, Inc. は、米国の任意の部門の軍隊またはその他の制服を着た部隊で勤務するチームメンバーの義務を認識しています。GitLab 内の雇用状況は、Uniformed Services Employment and Reemployment Rights Act of 1994（「USERRA」）によって保護されています。
+GitLab, Inc. は、米国軍のいずれかの軍種、またはその他の制服組で勤務するチームメンバーの義務を認識しています。GitLab 内の雇用状況は、Uniformed Services Employment and Reemployment Rights Act of 1994（「USERRA」）によって保護されています。
 
 **休暇と再雇用**
 
-active または reserve duty で勤務するチームメンバーは、法律で要求される最大時間まで休暇が付与されます。GitLab は、法律に従って、軍務休暇で欠勤しているチームメンバーの職務の権利を保護することにコミットしています。
+現役または予備役として勤務するチームメンバーは、法律で要求される最大時間まで休暇が付与されます。GitLab は、法律に従って、軍務休暇で欠勤しているチームメンバーの職務の権利を保護することにコミットしています。
 
 **報酬**
 
-無給の軍務休暇中のチームメンバーは、休暇の最初の 25 日について給与の 100% が支払われます。免除チームメンバーは、このポリシーに基づく休暇のための部分週欠勤の給与減額を被ることはありません。
+**無給**の軍務休暇中のチームメンバーは、休暇の最初の 31 暦日について給与の 100% が支払われます。免除チームメンバーは、このポリシーに基づく休暇のための部分週欠勤の給与減額を被ることはありません。
+
+軍務休暇中に**軍または政府から支払いを受ける**チームメンバーは、休暇の最初の 31 暦日について週給総額の 100% に相当する追加の補填給与を受け取ります。
 
 **ヘルスケアの継続**
 

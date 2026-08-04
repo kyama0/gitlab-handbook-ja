@@ -2,11 +2,11 @@
 title: "GitLab Singapore Pte Ltd"
 description: "シンガポールのチームメンバー向け GitLab の福利厚生をご紹介します"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd/
-upstream_sha: 23c2fc5bd7f24c010a605fa6c69802a42ed0cfd0
-translated_at: "2026-05-07T22:45:00Z"
-translator: claude
+upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
+translated_at: "2026-08-05T06:06:38+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-06T10:38:21-06:00"
+lastmod: "2026-08-04T12:47:53-07:00"
 ---
 
 ## 私たちがあなたをサポートします
@@ -35,7 +35,7 @@ GitLab Singapore のチームメンバーは、HSBC Insurance を通じて包括
 <details markdown="1">
 <summary>専門医ケアへのアクセス方法</summary>
 
-**ステップ 1**: お近くの専門医が[IHP パネルクリニックディレクトリ](https://drive.google.com/file/d/1FO3ZpkrHGuaqooMNDUrCI62i2JQOW6vE/view?usp=sharing)に記載されているか確認してください
+**ステップ 1**：お近くの専門医が[IHP パネルクリニックディレクトリ](https://drive.google.com/file/d/1FO3ZpkrHGuaqooMNDUrCI62i2JQOW6vE/view?usp=sharing)に記載されているか確認してください。最新のリストは IHP App で確認してください。
 
 **ステップ 2**:
 
@@ -52,7 +52,7 @@ IHP ポータルにアクセスして以下を行えます:
 - 請求の提出と追跡
 - テレコンサルテーションの予約
 - 近くのパネル提供者の検索
-- Letters of Guarantee の依頼 - [IHP ポータルとモバイルガイド](https://drive.google.com/file/d/1OajuRXQ1Td9zfsrAcxYGjPZZ0uCv8G4h/view)のスライド 49 をご覧ください
+- 保証状の依頼
 - 福利厚生の権利を確認
 - メンバーホットラインへのアクセス
 - I-Health Palace マーケットプレイスでのお買い物
@@ -63,17 +63,27 @@ IHP ポータルにアクセスして以下を行えます:
 </details>
 
 <details markdown="1">
-<summary>請求の報告方法</summary>
+<summary>請求および緊急時の手続き</summary>
 
-- **請求手続き**: [Benefit Overview](https://drive.google.com/file/d/1btQKyv4v1PEk1YKiCwqdDFoqhF6zPiT8/view?usp=sharing) のスライド 51 を参照してください
-- Willis Towers Watson (WTW) は GitLab の福利厚生ブローカーとして、ご質問や請求の問題のサポートを行います。連絡先: claims.sg@wtwco.com
+以下の詳細については、[Singapore Claims and Emergency Procedure Guide](https://docs.google.com/document/d/1b2SUq9V_auJqRIwwec_9P0hXsG0eBGKB/edit?usp=sharing)を参照してください。
+
+- 緊急入院
+- 予定入院および外科手術（Log 手続き）
+- 直接請求ネットワーク
+- 遠隔医療の手続き
+- 費用精算請求
+- E サービス（IHP OneConnect App）
+- 主な注意事項
+
+- **請求手続き**：さらに詳しくは、[Benefit Overview](https://drive.google.com/file/d/1OxHW3FxBqSfm6P_cfZ4lZ-WMDHYC27-H/view?usp=sharing)のスライド 17〜22 を参照してください
+- Pacific Prime は GitLab の登録ブローカーであり、請求のサポートやエスカレーションを支援します：メール：SGServiceTeam@pacificprime.com、電話：+65 6346 3781、オプション 3
 
 </details>
 
 <details markdown="1">
 <summary>登録方法</summary>
 
-- **新規チームメンバー**: 入社後最初の週にシンガポール福利厚生オンボーディングフォームを受け取ります。完了すると、Total Rewards チームが Willis Towers Watson と連携してすべてのグループプランに登録します。WTW からの引受フォームは入社後 1 か月以内に届く予定です。
+- **新規チームメンバー**: 入社後最初の週にシンガポール福利厚生オンボーディングフォームを受け取ります。完了すると、Total Rewards チームがすべてのグループプランに登録します。引受フォームは入社後 1 か月以内に届く予定です。
 - **ライフチェンジ**: 更新情報を total-rewards@gitlab.com にメールしてください。扶養家族を追加する場合は、以下を含めてください: 扶養家族のフルネーム、生年月日、NRIC 番号、性別、国籍。
 
 </details>
@@ -81,9 +91,10 @@ IHP ポータルにアクセスして以下を行えます:
 <details markdown="1">
 <summary>リソース</summary>
 
-- [GitLab Singapore Benefit Overview](https://drive.google.com/file/d/1btQKyv4v1PEk1YKiCwqdDFoqhF6zPiT8/view?usp=sharing)（詳細はスライド 10〜36、請求手続きはスライド 51）
+- [GitLab Singapore Benefit Overview](https://drive.google.com/file/d/1OxHW3FxBqSfm6P_cfZ4lZ-WMDHYC27-H/view?usp=sharing)
 - [IHP パネルクリニックディレクトリ](https://drive.google.com/file/d/1FO3ZpkrHGuaqooMNDUrCI62i2JQOW6vE/view?usp=sharing)
-- [福利厚生ウェビナー録画](https://drive.google.com/file/d/16DAmm9C8slL3xrYwgyOL1I-ofPeQ_zRY/view?usp=sharing)（2025 年 8 月 13 日）
+- [福利厚生ウェビナー録画](https://drive.google.com/file/d/1MII8lZeuoF-6DkNd9Y5ezQC9sgK06vsH/view?usp=sharing) - 2026 年 7 月
+- [シンガポールの請求手続き](https://docs.google.com/document/d/1b2SUq9V_auJqRIwwec_9P0hXsG0eBGKB/edit)
 
 </details>
 
@@ -119,25 +130,25 @@ ehs@fullertonhealth.com または +65 6333 3636（オプション 3）にて Ful
 
 ## 経済的安全
 
-### 生命保険
+### グループ定期生命保険
 
-GitLab は、HSBC Insurance を通じてチームメンバーごとに SGD 500,000 のカバレッジを持つ会社負担のグループ定期生命保険を提供しています。
+GitLab は、HSBC Insurance を通じて会社負担のグループ定期生命保険を提供しています
 
-- **自動カバレッジ**: SGD 150,000（医療質問不要）
-- **フルカバレッジ**: SGD 500,000（医療引受審査の完了が必要）
-- 詳細については[GitLab Singapore Benefit Overview](https://drive.google.com/file/d/1EhdoC9Dgkf_5919-WZeuBJtdWeNz8hWp/view?usp=sharing)のスライド 37〜42 を参照してください
+- **無料保障限度額（FCL）**：$300,000（FCL を超えるカバレッジは、引受審査と承認の対象となります）
+- **フルカバレッジ**：基本月給の 36 倍、最低 $500,000、最高 $3,000,000
+- 詳細については、[GitLab Singapore Benefit Overview](https://drive.google.com/file/d/1OxHW3FxBqSfm6P_cfZ4lZ-WMDHYC27-H/view)の Group Term Life insurance セクションを参照してください
 
 ### 個人傷害保険
 
-Zurich Insurance を通じて、チームメンバーは **SGD 500,000** の個人傷害カバレッジに加え、価値ある拡張給付を受け取ります。
+GitLab は、Zurich を通じて、基本月給の 36 倍、最低 $500,000、最高 $3,000,000 の会社負担 Group Personal Accident Policy を提供しています
 
 追加の保護には以下が含まれます:
 
 - 救急車費用カバレッジ
 - 緊急旅行費用
 - トラウマカウンセリングサポート
-- 詳細については[GitLab Singapore Benefit Overview](https://drive.google.com/file/d/1EhdoC9Dgkf_5919-WZeuBJtdWeNz8hWp/view?usp=sharing)のスライド 44〜47 を参照してください
-- 完全なポリシーの詳細: [Group Personal Accident Insurance Policy](https://drive.google.com/file/d/1LHYCWa0Q_8_giWC7-B-_H1okVNbo-qA8/view?usp=sharing)
+- 詳細については、[GitLab Singapore Benefit Overview](https://drive.google.com/file/d/1OxHW3FxBqSfm6P_cfZ4lZ-WMDHYC27-H/view)の Accident Policy セクションを参照してください
+- 完全なポリシーの詳細: [Group Personal Accident Policy](https://drive.google.com/file/d/1W1RlfSFidpvnCOHNlKlmzy_PmJqSACo9/edit)
 
 ### 退職プラン
 
@@ -246,6 +257,6 @@ GitLab Singapore は、法定休暇と私たちのグローバルな育児休暇
 ご質問は、サポートチームまでお問い合わせください:
 
 - **福利厚生に関する質問**: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
-- **請求サポート**: claims.sg@wtwco.com（Willis Towers Watson）
+- **請求サポート**：Pacific Prime は GitLab の登録ブローカーであり、請求のサポートやエスカレーションを支援します：メール：SGServiceTeam@pacificprime.com、電話：+65 6346 3781、オプション 3
 - **医療請求**: IHP ポータルまたは +64 6715 9422
 - **健康診断**: ehs@fullertonhealth.com または +65 6333 3636（オプション 3）
