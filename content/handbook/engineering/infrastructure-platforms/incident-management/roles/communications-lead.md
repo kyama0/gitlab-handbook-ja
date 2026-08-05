@@ -1,5 +1,5 @@
 ---
-title: Incident Roles - Communications Lead
+title: インシデントロール - Communications Lead
 upstream_path: /handbook/engineering/infrastructure-platforms/incident-management/roles/communications-lead/
 upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
 translated_at: "2026-08-06T06:38:11+09:00"
