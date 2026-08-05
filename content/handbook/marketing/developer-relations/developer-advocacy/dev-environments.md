@@ -1,14 +1,14 @@
 ---
-title: デベロッパーアドボケイトの開発環境
+title: Developer Advocates の開発環境
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/dev-environments/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T09:37:27+09:00"
+upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
+translated_at: "2026-08-06T07:24:45+09:00"
 translator: claude
 stale: false
-lastmod: 2026-07-28T15:04:15+01:00
+lastmod: "2026-08-05T12:28:06-04:00"
 ---
 
-デベロッパーアドボケイトは、GitLab Duo Agent Platform を使用した AI ネイティブワークフローを含む、さまざまなタイプのプラットフォーム、エディタ、IDE で作業します。このページでは、デベロッパーアドボカシー関連のセットアップを最適化するためのベストプラクティスと役立つヒントをまとめます。
+Developer Advocates は、GitLab Duo Agent Platform を使用した AI ネイティブワークフローを含む、さまざまなタイプのプラットフォーム、エディタ、IDE で作業します。このページでは、Developer Advocacy 関連のセットアップを最適化するためのベストプラクティスと役立つヒントをまとめます。
 
 ## リソース {#resources}
 
@@ -20,7 +20,7 @@ lastmod: 2026-07-28T15:04:15+01:00
 
 ## IDE {#ides}
 
-デベロッパーアドボケイトは、プロジェクトやコンテンツ要件に応じてさまざまな IDE を使用できます。IDE の機能とユースケースを理解し、コンテンツリクエストの際にそれらに焦点を当て、さまざまなオーディエンス向けに使用法を多様化することが重要です。
+Developer Advocates は、プロジェクトやコンテンツ要件に応じてさまざまな IDE を使用できます。IDE の機能とユースケースを理解し、コンテンツリクエストの際にそれらに焦点を当て、さまざまなオーディエンス向けに使用法を多様化することが重要です。
 
 ### IDE 内の AI と GitLab Duo {#ai-and-gitlab-duo-in-ides}
 
@@ -43,7 +43,7 @@ GitLab Duo は、[VS Code マーケットプレイスの GitLab Workflow 拡張�
 1. よく使う [VS Code のキーボードショートカット](https://code.visualstudio.com/docs/configure/keybindings)を学んで頻繁に練習しましょう。
     - コマンドパレット: macOS では `cmd shift p`、Windows/Linux では `ctrl shift p`。
     - 設定: macOS では `cmd ,`、Windows/Linux では `ctrl ,`。
-    - ヒント: [GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/examples/) や [Claude](/handbook/tools-and-tips/ai/claude/) に助けを求めることもできます。
+    - ヒント: [GitLab Duo Chat](https://docs.gitlab.com/user/gitlab_duo_chat/examples/)や [Claude](/handbook/tools-and-tips/ai/claude/)に助けを求めることもできます。
 1. ターミナルから `code .` ショートカットを使ってローカルの Git リポジトリやディレクトリを開きます。これにより、GitLab UI、VS Code、ターミナルの間でコンテキストを切り替える必要があるときに、コードの編集/デバッグのワークフローが簡単になります。
 1. VS Code でターミナルを開きます（ショートカット: macOS では `cmd j`、または `cmd shift p` で `terminal` を検索）。これにより、コードを編集しながらサーバー、コンパイラ、Ansible playbook の実行などのバックグラウンドタスクを開始でき、異なるウィンドウ間のコンテキスト切り替えを避けられます。
 
@@ -67,7 +67,7 @@ VS Code のデフォルトプロファイルはダークテーマを使用しま
 "workbench.colorTheme": "Default Dark Modern",
 ```
 
-ライトテーマは対面イベントのプロジェクターでよりよく機能し、[デモ録画](/handbook/marketing/developer-relations/developer-advocacy/content/#content-creation)にも役立ちます。
+ライトテーマは対面イベントのプロジェクターでよりよく機能し、[デモ録画](/handbook/marketing/developer-relations/developer-advocacy/content/#content-creation-guidelines)にも役立ちます。
 
 ```json
 "workbench.colorTheme": "Default Light Modern",
@@ -75,7 +75,7 @@ VS Code のデフォルトプロファイルはダークテーマを使用しま
 
 異なるテーマやインストールされた拡張機能を管理するため、`Default` と `Light theme for demos` など、複数のプロファイルを作成することが推奨されます。
 
-必要なデモ録画設定については、[動画ガイドラインハンドブック](/handbook/marketing/developer-relations/developer-advocacy/content/#content-creation)を確認してください。
+必要なデモ録画設定については、[動画ガイドラインハンドブック](/handbook/marketing/developer-relations/developer-advocacy/content/#content-creation-guidelines)を確認してください。
 
 ##### Chat を右パネルに移動する {#move-chat-to-the-right-panel}
 
@@ -119,7 +119,7 @@ Chat を右サイドバーに移動するには:
 
 ユースケースの例: GitLab Duo Agentic Chat は MCP 統合を提供しており、MCP サーバーが起動され追加の AI コンテキストを消費していることを検証したいとします。
 
-知っておくべきこと: [GitLab Language Server](https://docs.gitlab.com/editor_extensions/language_server/) は、GitLab の IDE 拡張機能全体でバックエンドを動かし、GitLab Duo Agentic Chat の MCP 統合を処理します。
+知っておくべきこと: [GitLab Language Server](https://docs.gitlab.com/editor_extensions/language_server/)は、GitLab の IDE 拡張機能全体でバックエンドを動かし、GitLab Duo Agentic Chat の MCP 統合を処理します。
 
 1. VS Code の `Output` ビューを使って拡張機能をデバッグできます。
 1. デバッグの手順:
@@ -131,11 +131,11 @@ Chat を右サイドバーに移動するには:
    - 左下隅の歯車アイコンをクリックして設定を開きます（ショートカット: macOS では `cmd ,`）。設定ツリーで `GitLab` または `gitlab` を検索します。
    - `GitLab: Debug` チェックボックスにチェックを入れ、VS Code を再起動します。
 
-[GitLab Duo Agentic Chat](https://docs.gitlab.com/user/gitlab_duo_chat/agentic_chat/) は、コマンドを実行するためにターミナルも生成します。実行がブロックされたり無限に実行されたりする場合は、[Oh-My-ZSH や Powerlevel10k などのターミナル統合を無効にする](https://docs.gitlab.com/user/duo_agent_platform/troubleshooting/#ide-commands-fail-or-run-indefinitely)かどうかを調査してください。
+[GitLab Duo Agentic Chat](https://docs.gitlab.com/user/gitlab_duo_chat/agentic_chat/)は、コマンドを実行するためにターミナルも生成します。実行がブロックされたり無限に実行されたりする場合は、[Oh-My-ZSH や Powerlevel10k などのターミナル統合を無効にする](https://docs.gitlab.com/user/duo_agent_platform/troubleshooting/#ide-commands-fail-or-run-indefinitely)かどうかを調査してください。
 
 ### JetBrains IDE {#jetbrains-ides}
 
-デベロッパーアドボケイトは、さまざまな目的とユースケースで [JetBrains IDE](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/) にアクセスできます:
+Developer Advocates は、さまざまな目的とユースケースで [JetBrains IDE](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/)にアクセスできます:
 
 - IntelliJ IDEA Ultimate（Java、Kotlin、Scala）
 - PyCharm（Python、Django）
@@ -161,10 +161,10 @@ GitLab Duo は、[JetBrains マーケットプレイスの GitLab Duo プラグ�
 #### JetBrains IDE のヒントとベストプラクティス {#tips-and-best-practices-for-jetbrains-ides}
 
 1. [利用可能な IDE ライセンス](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/licenses/)を確認し、必要に応じて追加の恒久的な IDE ライセンスのアクセスリクエストを作成します。
-1. [セットアップと設定のガイド](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/setup-and-config/)を読み、[JetBrains Toolbox](https://www.jetbrains.com/toolbox-app/) をインストールして個々の IDE とそのアップデートを管理します。
+1. [セットアップと設定のガイド](/handbook/tools-and-tips/editors-and-ides/jetbrains-ides/setup-and-config/)を読み、[JetBrains Toolbox](https://www.jetbrains.com/toolbox-app/)をインストールして個々の IDE とそのアップデートを管理します。
    - オプションのヒント: デフォルトでは、ツールボックスは古いインストール済みバージョンを保持します。この動作がストレージ消費の問題を引き起こす場合は、`Tools > Keep previous versions to enable instant rollback` の設定を無効にします。
    - JetBrains IDE は、既存のセットアップから設定を移行/インポートできます。これは、GitLab Duo プラグインを一度インストール/設定し、それを別の JetBrains IDE にインポートするのに便利です。
-1. [GitLab Duo Agentic Chat](https://docs.gitlab.com/user/gitlab_duo_chat/agentic_chat/) は、コマンドを実行するためにターミナルも生成します。実行がブロックされたり無限に実行されたりする場合は、[Oh-My-ZSH や Powerlevel10k などのターミナル統合を無効にする](https://docs.gitlab.com/user/duo_agent_platform/troubleshooting/#ide-commands-fail-or-run-indefinitely)かどうかを調査してください。
+1. [GitLab Duo Agentic Chat](https://docs.gitlab.com/user/gitlab_duo_chat/agentic_chat/)は、コマンドを実行するためにターミナルも生成します。実行がブロックされたり無限に実行されたりする場合は、[Oh-My-ZSH や Powerlevel10k などのターミナル統合を無効にする](https://docs.gitlab.com/user/duo_agent_platform/troubleshooting/#ide-commands-fail-or-run-indefinitely)かどうかを調査してください。
 
 #### デモ設定: JetBrains IDE の外観 {#demo-settings-appearance-in-jetbrains-ides}
 
@@ -172,13 +172,13 @@ JetBrains IDE のデフォルトプロファイルはダークテーマを使用
 
 `Zoom` ドロップダウンは、講演のライブデモで詳細を見やすくするため 125% に変更できます。
 
-必要なデモ録画設定については、[動画ガイドラインハンドブック](/handbook/marketing/developer-relations/developer-advocacy/content/#content-creation)を確認してください。
+必要なデモ録画設定については、[動画ガイドラインハンドブック](/handbook/marketing/developer-relations/developer-advocacy/content/#content-creation-guidelines)を確認してください。
 
 ### MS Visual Studio {#ms-visual-studio}
 
 > 注: Windows と Visual Studio ライセンスへのアクセスが必要で、追加のセキュリティレビューが必要です。
 >
-> ステータス: 調査中。未対応のタスクは[この内部 Issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/712) で追跡されています。
+> ステータス: 調査中。未対応のタスクは[この内部 Issue](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/712)で追跡されています。
 
 GitLab Duo は、[Visual Studio マーケットプレイスの GitLab 拡張機能](https://docs.gitlab.com/editor_extensions/visual_studio/)を使って統合できます。
 
@@ -192,7 +192,7 @@ GitLab Duo は、[Eclipse マーケットプレイスの GitLab 拡張機能](ht
 
 ### neovim {#neovim}
 
-> ヒント: [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) のフォークを使って新しい neovim 設定を開始し、neovim 体験をブートストラップして最適化します。
+> ヒント: [kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim)のフォークを使って新しい neovim 設定を開始し、neovim 体験をブートストラップして最適化します。
 
 GitLab Duo は、[neovim プラグイン](https://docs.gitlab.com/editor_extensions/neovim/)を使って統合できます。
 
@@ -200,11 +200,11 @@ GitLab Duo は、[neovim プラグイン](https://docs.gitlab.com/editor_extensi
 
 ### GitLab Duo CLI {#gitlab-duo-cli}
 
-GitLab Duo CLI は、ターミナルで [GitLab Duo Agent Platform](https://docs.gitlab.com/user/duo_agent_platform/) へのアクセスを提供します。
+GitLab Duo CLI は、ターミナルで [GitLab Duo Agent Platform](https://docs.gitlab.com/user/duo_agent_platform/)へのアクセスを提供します。
 
 要件:
 
-1. NodeJS 22+ をインストールします。例えば [mise](#mise-for-managing-language-runtimes) を使用します
+1. NodeJS 22+ をインストールします。例えば [mise](#mise-for-managing-language-runtimes)を使用します
 1. `api` スコープを持つパーソナルアクセストークンを作成します。
 1. CLI をインストールします。
 1. CLI を実行して設定ダイアログを開始します。
@@ -231,17 +231,17 @@ Help me implement issue 15
 The pipelines in MR 23 fail. Please fix them.
 ```
 
-CLI は [GitLab LSP](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp) を使って AIGW と DAP サービスと通信するため、CLI は `gitlab-lsp` 内で開発されています。
+CLI は [GitLab LSP](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp)を使って AIGW と DAP サービスと通信するため、CLI は `gitlab-lsp` 内で開発されています。
 
-機能とロードマップのアップデートについては [製品エピック](https://gitlab.com/groups/gitlab-org/-/epics/19070) をフォローし、[Duo CLI Feedback & Dogfooding エピック](https://gitlab.com/groups/gitlab-org/-/epics/19806) にフィードバックを追加してください。
+機能とロードマップのアップデートについては [製品エピック](https://gitlab.com/groups/gitlab-org/-/epics/19070)をフォローし、[Duo CLI Feedback & Dogfooding エピック](https://gitlab.com/groups/gitlab-org/-/epics/19806)にフィードバックを追加してください。
 
 ### Claude Code {#claude-code}
 
-Claude Code へのアクセスを得ることは、コンテンツ作成に役立ちます。例えば、このブログチュートリアル [Claude Code and GitLab: Three workflows that ship](https://about.gitlab.com/blog/claude-code-and-gitlab/) があります。
+Claude Code へのアクセスを得ることは、コンテンツ作成に役立ちます。例えば、このブログチュートリアル [Claude Code and GitLab: Three workflows that ship](https://about.gitlab.com/blog/claude-code-and-gitlab/)があります。
 
 1. [AI ツールの要件](https://internal.gitlab.com/handbook/ai-security-at-gitlab/ai-tool-usage-requirements/)を確認し、Anthropic API キーの[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)を作成します。[例（内部向け）](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/work_items/39031)
-1. [Claude Console](https://platform.claude.com/settings/keys) で API キーを作成します
-1. [Claude Code](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code) をインストールします
+1. [Claude Console](https://platform.claude.com/settings/keys)で API キーを作成します
+1. [Claude Code](https://code.claude.com/docs/en/quickstart#step-1-install-claude-code)をインストールします
 1. Console API キーで Claude Code に認証します。
 
 ```shell
@@ -254,11 +254,11 @@ claude auth login
 
 ### Codex {#codex}
 
-Codex へのアクセスを得ることは、コンテンツ作成に役立ちます。例えば、このブログチュートリアル [Codex and GitLab: From code fix to production](https://about.gitlab.com/blog/fix-bugs-with-codex-and-gitlab/) があります。
+Codex へのアクセスを得ることは、コンテンツ作成に役立ちます。例えば、このブログチュートリアル [Codex and GitLab: From code fix to production](https://about.gitlab.com/blog/fix-bugs-with-codex-and-gitlab/)があります。
 
 1. [AI ツールの要件](https://internal.gitlab.com/handbook/ai-security-at-gitlab/ai-tool-usage-requirements/)を確認し、OpenAI キーの[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)を作成します。[例（内部向け）](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/work_items/43999)。
 1. OpenAI プラットフォームに移動します。`GitLab` organization と `Default project` を選択し、[API キー](https://platform.openai.com/api-keys)を生成します
-1. Homebrew で [Codex CLI](https://developers.openai.com/codex/cli) をインストールします。
+1. Homebrew で [Codex CLI](https://developers.openai.com/codex/cli)をインストールします。
 1. `--with-api-key` パラメータでログインし、STDIN から API キーを読み込みます。
 
 ```shell
@@ -280,7 +280,7 @@ codex login status
 
 ### Skills {#skills}
 
-[Agent Skills](https://docs.gitlab.com/user/duo_agent_platform/customize/agent_skills/) はエージェントやユーザーによってオンデマンドで読み込まれ、デフォルトでコンテキストウィンドウを小さく保ちます。
+[Agent Skills](https://docs.gitlab.com/user/duo_agent_platform/customize/agent_skills/)はエージェントやユーザーによってオンデマンドで読み込まれ、デフォルトでコンテキストウィンドウを小さく保ちます。
 
 プロジェクトの例:
 
@@ -288,7 +288,7 @@ codex login status
 
 ### AGENTS.md {#agentsmd}
 
-[AGENTS.md 標準](https://docs.gitlab.com/user/duo_agent_platform/customize/agents_md/)はカスタムルールに似ています。ルートおよびサブディレクトリレベルの AGENTS.md ファイルをサポートし、特定のプロジェクトやディレクトリをどのように操作・使用するかをエージェント AI に案内・指示します。
+[AGENTS.md 標準](https://docs.gitlab.com/user/duo_agent_platform/customize/agents_md/)はカスタムルールに似ています。ルートおよびサブディレクトリレベルの AGENTS.md ファイルをサポートし、特定のプロジェクトやディレクトリをどのように操作・使用するかをエージェント型 AI に案内・指示します。
 
 環境の例:
 
@@ -296,10 +296,10 @@ codex login status
 
 ### カスタムルール {#custom-rules}
 
-**すべての新規または既存のデベロッパーアドボカシープロジェクトにデフォルトでカスタムルールを追加することを検討してください。**
+**すべての新規または既存の Developer Advocacy プロジェクトにデフォルトでカスタムルールを追加することを検討してください。**
 
 1. [カスタムルール](https://docs.gitlab.com/user/duo_agent_platform/customize/custom_rules/)
-2. [Code Review Flow](https://docs.gitlab.com/user/duo_agent_platform/customize/review_instructions/) のカスタムレビュー指示。
+2. [Code Review Flow](https://docs.gitlab.com/user/duo_agent_platform/customize/review_instructions/)のカスタムレビュー指示。
 3. [AI Catalog のカスタムエージェント](https://docs.gitlab.com/user/duo_agent_platform/agents/custom/)のシステムプロンプト
 
 環境の例:
@@ -328,9 +328,9 @@ AI ツールと IDE でのセットアップと設定については、[GitLab M
 
 ## GitLab Duo Agent Platform のユースケース {#gitlab-duo-agent-platform-use-cases}
 
-### デベロッパーアドボケイトのユースケースプロンプト {#developer-advocates-use-case-prompts}
+### Developer Advocates のユースケースプロンプト {#developer-advocates-use-case-prompts}
 
-これらのプロンプトを IDE の [GitLab Duo Agentic Chat](https://docs.gitlab.com/user/gitlab_duo_chat/agentic_chat/) や [CLI](#gitlab-duo-cli) で使用します:
+これらのプロンプトを IDE の [GitLab Duo Agentic Chat](https://docs.gitlab.com/user/gitlab_duo_chat/agentic_chat/)や [CLI](#gitlab-duo-cli)で使用します:
 
 **デモ環境の管理**
 
@@ -426,9 +426,9 @@ AI ツールと IDE でのセットアップと設定については、[GitLab M
 
 ### 言語ランタイムを管理する mise {#mise-for-managing-language-runtimes}
 
-[mise](https://mise.jdx.dev/) は、さまざまな言語ランタイムとツールの管理を支援する多言語対応のバージョンマネージャーです。[GitLab Development Kit (GDK)](https://docs.gitlab.com/development/contributing/first_contribution/configure-dev-env-gdk/) と [GitLab ハンドブック](https://handbook.gitlab.com/docs/development/running-locally/)で、Node.js、Ruby、Go、その他の依存関係を管理するために使用されています。
+[mise](https://mise.jdx.dev/)は、さまざまな言語ランタイムとツールの管理を支援する多言語対応のバージョンマネージャーです。[GitLab Development Kit (GDK)](https://docs.gitlab.com/development/contributing/first_contribution/configure-dev-env-gdk/)と [GitLab ハンドブック](https://handbook.gitlab.com/docs/development/running-locally/)で、Node.js、Ruby、Go、その他の依存関係を管理するために使用されています。
 
-デベロッパーアドボケイトは `mise` を以下の用途に使用できます:
+Developer Advocates は `mise` を以下の用途に使用できます:
 
 1. **複数の言語バージョンを管理する**: さまざまなプロジェクトやデモに必要な Node.js、Python、Ruby、Go などの異なるバージョンを簡単に切り替えます。
 
@@ -476,11 +476,11 @@ AI ツールと IDE でのセットアップと設定については、[GitLab M
 #### GitLab 開発における mise 環境 {#mise-environments-in-gitlab-development}
 
 - [GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit)
-- [GitLab LSP](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp)（[IDE](#ides) と [CLI](#cli) に統合）
+- [GitLab LSP](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp)（[IDE](#ides)と [CLI](#cli)に統合）
 
 ## リモート開発ワークスペース {#remote-development-workspaces}
 
-[Workspaces](https://docs.gitlab.com/user/workspace/) は、[Developer Relations Cloud Resources](/handbook/marketing/developer-relations/workflows-tools/cloud-resources/) 上で動作するクラウド開発環境を提供します。
+[Workspaces](https://docs.gitlab.com/user/workspace/)は、[Developer Relations Cloud Resources](/handbook/marketing/developer-relations/workflows-tools/cloud-resources/) 上で動作するクラウド開発環境を提供します。
 
 > ステータス: 非アクティブ。現在、インフラストラクチャのメンテナーはいません。以下のドキュメントは、将来の歴史的参照用に存在しています。
 
@@ -500,7 +500,7 @@ AI ツールと IDE でのセットアップと設定については、[GitLab M
 
 ### 開発環境を取り上げた講演とデモ {#talks-and-demos-highlighting-dev-environments}
 
-[デベロッパーアドボカシーコンテンツライブラリ](/handbook/marketing/developer-relations/developer-advocacy/content/)と以下のリソースを確認してください:
+[Developer Advocacy コンテンツライブラリ](/handbook/marketing/developer-relations/developer-advocacy/content/)と以下のリソースを確認してください:
 
 1. Learning AI 101: Practical Foundations for Developers - 2025-06、Open Source @ Siemens
     - スライド: [公開版](https://dnsmichi.click/learning-ai-101-os-siemens-2025)、[内部版](https://docs.google.com/presentation/d/1PUCUrVzKnzc25md8gbh1jYznz-dUFfQcENvbR9xUJ7k/edit)

@@ -2,11 +2,11 @@
 title: GitLab Dedicated サポートポッド
 description: サポートチーム内の他のメンバーが GitLab Dedicated のチケットに対応できるようにします。
 upstream_path: /handbook/support/support-pods/gitlab-dedicated/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T06:52:01+09:00"
+upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
+translated_at: "2026-08-06T06:28:14+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-29T12:39:09-04:00"
+lastmod: "2026-08-05T12:28:10-04:00"
 ---
 
 ## 目的
@@ -23,16 +23,14 @@ lastmod: "2026-07-29T12:39:09-04:00"
 
 - 全体/AMER リード:
 - 共同リード: {{< member-by-name "Wei-Meng Lee" >}} (`@weimeng-gtlb`)
+- AMER 共同リード: {{< member-by-name "Adam Lauzon" >}} (`@adamlauzon`)
+- AMER 共同リード: {{< member-by-name "Michelle Almendarez" >}} (`@malmendarez`)
 - APAC リード: {{< member-by-name "Daphne Kua" >}} (`@dkua1`)
 - EMEA リード: {{< member-by-name "Nilanka De Silva" >}} (`@ndesilva`)
-- U.S. Government リード: {{< member-by-name "Wade Jenkins" >}} (`@wwjenkins`)
+- U.S. Government リード: {{< member-by-name "Rommel Rodas" >}} (`@iHeartLinux`)
 - {{< member-by-name "Armin Hergenhan" >}} (`@ahergenhan`)
-- {{< member-by-name "Cleveland Bledsoe Jr" >}} (`@cleveland`)
 - {{< member-by-name "Gerardo Gutierrez" >}} (`@gerardo`)
-- {{< member-by-name "Brenda Nyaringita" >}} (`@bnyaringita`)
 - {{< member-by-name "Segolene Bouly" >}} (`@sbouly`)
-- {{< member-by-name "Sam Bernal-Damasco" >}} (`@definitelynotsam`)
-- {{< member-by-name "Luminus Alabi" >}} (`@lalabi`)
 
 ## コラボレーションチャネル
 

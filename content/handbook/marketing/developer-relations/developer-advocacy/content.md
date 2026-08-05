@@ -1,43 +1,52 @@
 ---
-title: "デベロッパーアドボケイトのコンテンツライブラリとワークフロー"
-description: "デベロッパーアドボカシーチームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
+title: "Developer Advocates のコンテンツライブラリとワークフロー"
+description: "Developer Advocacy チームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/content/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T09:33:50+09:00"
+upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
+translated_at: "2026-08-06T06:15:42+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-08-05T12:28:06-04:00"
 ---
 
-デベロッパーアドボカシーチームは、キャンペーン、フィールドイネーブルメント、製品ローンチサポート、ユースケース採用、顧客向けデモ、一般的な学習・オンボーディングに使用できるコンテンツを作成しています。チームが参加するすべてのコンテンツとアクティビティは、[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/) に従って Issue で追跡されます。
+Developer Advocacy チームは、キャンペーン、フィールドイネーブルメント、製品ローンチサポート、ユースケース採用、顧客向けデモ、一般的な学習・オンボーディングに使用できるコンテンツを作成しています。チームが参加するすべてのコンテンツとアクティビティは、[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/)に従って Issue で追跡されます。
 
-このページの内容:
+このページの内容
 
+- [コンテンツをリクエストする](#request-content)
 - [コンテンツライブラリ](#content-library)
-- [コンテンツ作成](#content-creation)
-  - [動画ガイドライン](#video-guidelines)（録画ツール、仕様、ヒント付き）。
+  - [Highspot](#highspot)
+  - [ブログ記事](#blog-posts)
+  - [製品ツアー](#product-tours)
+  - [動画](#videos)
+  - [メンテナンスされている講演](#maintained-talks)
+  - [ワークショップ](#workshops)
+  - [メンテナンスされているドキュメント](#maintained-documentation)
+  - [クリックスルーデモ](#click-through-demos)
+  - [製品採用イニシアチブ](#product-adoption-initiatives)
+  - [プロジェクト](#projects)
+- [コンテンツ作成ガイドライン](#content-creation-guidelines)
+  - [動画制作ガイドライン](#video-production-guidelines)
   - [製品ツアーガイドライン](#product-tours-guidelines)
 - [コンテンツ配信](#content-distribution)
 
 ## コンテンツをリクエストする {#request-content}
 
-**注**: 更新または新規作成されたコンテンツアセットが必要な場合は、[コンテンツリクエストワークフロー](/handbook/marketing/developer-relations/content-request/#how-to-work-with-the-developer-advocate-team) に従ってください。
+更新または新規作成されたコンテンツアセットが必要な場合は、[コンテンツリクエストワークフロー](/handbook/marketing/developer-relations/content-request/#how-to-work-with-the-developer-advocate-team)に従ってください。
 
-既存のコンテンツ作業項目は、[FY コンテンツ戦略エピック](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/work_items?sort=created_date&state=opened&label_name%5B%5D=DevRel-Content&type%5B%5D=8&first_page_size=20) にまとめられています。
+既存のコンテンツ作業項目は、[FY コンテンツ戦略エピック](https://gitlab.com/groups/gitlab-com/marketing/developer-relations/-/work_items?sort=created_date&state=opened&label_name%5B%5D=DevRel-Content&type%5B%5D=8&first_page_size=20)にまとめられています。
 
 ## コンテンツライブラリ {#content-library}
 
-このハンドブックページで関連コンテンツを検索でき、リンクされたコンテンツエピックまたは [#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B) Slack チャンネルでチームに連絡できます。
-
-以下のセクションでは、すべてのコンテンツアセットの概要と、それらを見つけるためのリンクを提供します。
+以下のセクションでは、すべてのコンテンツアセットの概要と、それらを見つけるためのリンクを提供します。このページで関連コンテンツを検索し、リンクされたコンテンツエピックまたは [#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B) Slack チャンネルでチームに連絡できます。
 
 ### Highspot {#highspot}
 
-チームのコンテンツは、以下のコンテンツプラットフォームと、[Highspot](https://gitlab.highspot.com/) のトピック別・タイプ別のスポット（例: [GitLab Duo (AI)](https://gitlab.highspot.com/spots/64b14e7cc4b08381c0408bb4) や [Customer Outreach](https://gitlab.highspot.com/spots/615dd7c2506d3fc490ad78cd)）で配信されています。
+チームのコンテンツは、以下のコンテンツプラットフォームと、[Highspot](https://gitlab.highspot.com/)のトピック別・タイプ別のスポット（例: [GitLab Duo (AI)](https://gitlab.highspot.com/spots/64b14e7cc4b08381c0408bb4)や [Customer Outreach](https://gitlab.highspot.com/spots/615dd7c2506d3fc490ad78cd)）で配信されています。
 
 ### ブログ記事 {#blog-posts}
 
-このセクションでは、デベロッパーアドボカシーチームによって執筆された多数のブログ記事から例を紹介します。著者名をクリックすると、ブログ記事の全リストが表示されます。
+Developer Advocacy チームは、GitLab の機能、ユースケース、ベストプラクティスを扱うブログ記事を定期的に公開しています。以下の著者名をクリックすると、その著者のブログ記事の全リストが表示されます。
 
 - [Cesar Saavedra](https://about.gitlab.com/blog/authors/cesar-saavedra/)
   - [GitLab Duo Agent Platform with Claude accelerates development](https://about.gitlab.com/blog/gitlab-duo-agent-platform-with-claude-accelerates-development/)
@@ -75,17 +84,13 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 ### 製品ツアー {#product-tours}
 
-製品ツアーは、機能の「何ができるか（What）」を強調する自己ガイド型のジャーニーであり、「やり方（How-to）」の手順を省略して価値の側面を直接紹介します。
+製品ツアーは、機能の「What」を強調する自己ガイド型のジャーニーであり、「How-to」の手順を省略して価値を直接紹介します。
 
-### 一元化されたデモハブ {#centralized-demo-hub}
-
-私たちは、すべての製品ツアーを 1 か所にまとめた一元化されたデモハブを作成しました。**Duo Agent Platform**、**Security**、**DevSecOps Platform** の 3 つの主要領域に整理されたデモにアクセスできます。
-
-注: Narrative ボックスの表示／非表示を切り替えるには、Navattic デモでは `ctrl+p`、agentic デモでは `h` を使用します。どのプラットフォームでデモが作成されたかは、デモの URL で確認できます（Navattic の URL には `navattic.com` が含まれます）。ナビゲーションボックスがない場合は、左右の矢印キーで移動します。
-
-**[Demo Zone を見る →](https://dap-demo-hub-dac14a.gitlab.io/)**
+**[Demo Zone を見る →](https://dap-demo-hub-dac14a.gitlab.io/)** - 一元化されたデモハブでは、すべての製品ツアーを 1 か所にまとめ、**Duo Agent Platform**、**Security**、**DevSecOps Platform** の 3 つの主要領域に整理しています。
 
 [![Demo Hub のスクリーンショット](/images/handbook/marketing/developer-relations/developer-advocacy/content/demohub.png)](https://dap-demo-hub-dac14a.gitlab.io/)
+
+#### すべての製品ツアー {#all-product-tours}
 
 | タイトル | 領域 | 最終更新 | DRI |
 |-------|------|--------------|-----|
@@ -112,7 +117,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 | [Integrating security to the pipeline](https://gitlab.navattic.com/gitlab-scans) | DevSecOps | 2024-01-24 | @iganbaruch |
 | [Code Suggestions](https://gitlab.navattic.com/code-suggestions) |GitLab Duo Agent Platform | 2024-01-24 | @iganbaruch |
 
-### 短縮版製品ツアー {#short-product-tours}
+#### 短縮版製品ツアー {#short-product-tours}
 
 このセクションでは、ステップ数が少ない短縮版の製品ツアー（通常 15 ステップ未満）を紹介します。イベントのデモブースや、すばやくデモを見せる必要がある場合に便利です。
 
@@ -122,11 +127,24 @@ lastmod: "2026-07-28T15:04:15+01:00"
 | [Compliance Frameworks](https://gitlab.navattic.com/compliance-short) |  DevSecOps Platform | 2025-01-27 | @iganbaruch | 9 |
 | [Vulnerability Explanation/Resolution](https://gitlab.navattic.com/ve-vr-short) | GitLab Duo | 2024-02-24 | @iganbaruch | 5 |
 
+#### 内部向け製品ツアー {#internal-product-tours}
+
+内部向け製品ツアーは、GitLab チームメンバーが顧客や見込み顧客に機能をデモするために設計されています。公開製品ツアーとは異なり、説明ダイアログを省略して、シームレスなライブデモ体験を提供します。フローを操作する方法については、ナビゲーションガイドを参照してください。
+
+| タイトル | 領域 | 最終更新 | DRI |
+|-------|------|--------------|-----|
+| [Compliance Frameworks](https://gitlab.navattic.com/compliance-internal) | DevSecOps Platform | 2025-02-20 | @iganbaruch |
+| [Idea to MR](https://gitlab.navattic.com/duo-q-internal) | GitLab Duo with Amazon Q | 2025-01-05 | @iganbaruch |
+| [Java modernization](https://gitlab.navattic.com/duo-q-transform-internal) | GitLab Duo with Amazon Q | 2025-01-05 | @iganbaruch |
+| [Advanced SAST](https://gitlab.navattic.com/advanced-sast-internal) | DevSecOps Platform | 2024-09-24 | @iganbaruch |
+| [AI Impact analytics](https://gitlab.navattic.com/ai-impact-internal) | GitLab Duo | 2024-10-30 | @iganbaruch |
+| [Duo Enterprise](https://gitlab.navattic.com/duo-enterprise-internal) | GitLab Duo | 2024-10-28 | @iganbaruch |
+
+これらのツアーを操作する詳しい手順を見つけるには、Google Drive で「[製品名] tour - navigation guide」（例: Advanced SAST tour - navigation guide）を検索してください。
+
 ### 動画 {#videos}
 
-#### YouTube プレイリスト {#youtube-playlists}
-
-GitLab YouTube チャンネル:
+#### GitLab YouTube チャンネル {#gitlab-youtube-channel}
 
 - [GitLab Demos](https://www.youtube.com/playlist?list=PLFGfElNsQthYv5OtNEFoGwd0cAg-55Hdj)
 - [GitLab Duo Demos](https://www.youtube.com/playlist?list=PLFGfElNsQthZGazU1ZdfDpegu0HflunXW)
@@ -134,22 +152,15 @@ GitLab YouTube チャンネル:
 - [GitLab Snapshots - español](https://www.youtube.com/playlist?list=PLFGfElNsQthbm-EfY2AyFNr8o6qT5A2ud)
 - [GitLab Snapshots - português](https://www.youtube.com/playlist?list=PLFGfElNsQthaRSNTv93cM57GBB1l_95Px)
 
-GitLab Unfiltered YouTube チャンネル:
+#### GitLab Unfiltered YouTube チャンネル {#gitlab-unfiltered-youtube-channel}
 
-- [Developer Advocacy](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq-bYO9jCJaN45BBpzWSLAQ)（講演の録画、ワークショップ、コミュニティエンゲージメント）。
+- [Developer Advocacy](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq-bYO9jCJaN45BBpzWSLAQ) - 講演の録画、ワークショップ、コミュニティエンゲージメント
 - [Dev Advocacy: GitLab Duo Agent Platform use cases](https://www.youtube.com/playlist?list=PL05JrBw4t0Ko7aR6sM8e4uXGYtjs4-NqK)
-- [Contributor Success AI Catalog / Duo Agent Platform Demos](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq5vFCEQLrowmwGGi5YmCJK)。AI カタログのパワーを示し、誰もがコントリビュートするよう促すユーザーストーリー
+- [Contributor Success AI Catalog / Duo Agent Platform Demos](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq5vFCEQLrowmwGGi5YmCJK) - AI カタログの力を示すユーザーストーリー
 
-{{% details summary="アーカイブ" %}}
+#### GitLab Unfiltered チャンネルへの動画アップロード {#uploading-videos-to-gitlab-unfiltered-channel}
 
-- [GitLab Duo Coffee Chat](/handbook/marketing/developer-relations/developer-advocacy/projects/#gitlab-duo-coffee-chat)。GitLab Duo と AI を使った学習セッション。（ステータス: 非アクティブ）
-- [DevOps with GitLab Duo](https://www.youtube.com/playlist?list=PL05JrBw4t0Krzu4U6gO3tS738hlsQGFz5)。GitLab Duo、DevOps、AI を使った学習セッション。（ステータス: 非アクティブ）
-
-{{% /details %}}
-
-#### GitLab Unfiltered チャンネルへの動画アップロード {#upload-videos-to-gitlab-unfiltered-channel}
-
-2025 年 7 月以降、チームメンバーは [GitLab Vidoe Scanner](https://internal.gitlab.com/handbook/security/product_security/token-leaks/video_scanner/) を使用して `GitLab Unfiltered` に動画をアップロードすることが推奨されています。これは、GitLab Unfiltered チャンネルに公開される動画でのトークン漏洩リスクをチームメンバーが軽減するのを支援する内部サービスです。
+2025 年 7 月以降、チームメンバーは [GitLab Vidoe Scanner](https://internal.gitlab.com/handbook/security/product_security/token-leaks/video_scanner/)を使用して `GitLab Unfiltered` に動画をアップロードすることが推奨されています。これは、GitLab Unfiltered チャンネルに公開される動画でのトークン漏洩リスクをチームメンバーが軽減するのを支援する内部サービスです。
 
 #### Vimeo フォルダ {#vimeo-folder}
 
@@ -157,7 +168,7 @@ GitLab Unfiltered YouTube チャンネル:
 
 ### メンテナンスされている講演 {#maintained-talks}
 
-これらの講演スライドデッキは、イベント、講演、顧客向けワークショップなどでのストーリーテリングを提供します。スライドデッキを自分の講演やワークショップなどに使用したり、特定のスライドを新しいストーリーに転用したりできます。質問やフィードバックは [#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B) の DRI に連絡してください。
+これらの講演スライドデッキは、イベント、講演、顧客向けワークショップなどでのストーリーテリングを提供します。スライドデッキを自分の講演やワークショップなどに使用したり、特定のスライドを新しいストーリーに転用したりできます。質問やフィードバックは [#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B)の DRI に連絡してください。
 
 以下の講演がメンテナンスされています:
 
@@ -178,9 +189,9 @@ GitLab Unfiltered YouTube チャンネル:
 
 ### ワークショップ {#workshops}
 
-デベロッパーアドボカシーチームは、さまざまな製品・フォーカス領域でワークショップをメンテナンスしています。ワークショップにはさまざまなタイプがあります: 受講者がライブで演習に参加するハンズオン形式（トレーニングコース）や、受講者が質問で関与するライブデモ／プログラミングセッションの実演形式です。ワークショップは [Solution Architect](/handbook/solutions-architects/) チームや [Customer Success](/handbook/customer-success/) チームと協力して作成し、ビジネス目標と整合させるべきです。
+Developer Advocacy チームは、さまざまな製品・フォーカス領域でワークショップをメンテナンスしています。ワークショップにはさまざまなタイプがあります: 受講者がライブで演習に参加するハンズオン形式（トレーニングコース）や、受講者が質問で関与するライブデモ／プログラミングセッションの実演形式です。ワークショップは [Solution Architect](/handbook/solutions-architects/) チームや [Customer Success](/handbook/customer-success/) チームと協力して作成し、ビジネス目標と整合させるべきです。
 
-> 注: 特定の顧客向けに焦点を当てたワークショップは、[顧客コンサルティングハンドブック](/handbook/marketing/developer-relations/developer-advocacy/consultancy/) に従ってリクエストできます。
+> 注: 特定の顧客向けに焦点を当てたワークショップは、[顧客コンサルティングハンドブック](/handbook/marketing/developer-relations/developer-advocacy/consultancy/)に従ってリクエストできます。
 
 {{% details summary="アーカイブ" %}}
 
@@ -194,7 +205,7 @@ GitLab Unfiltered YouTube チャンネル:
 
 ### メンテナンスされているドキュメント {#maintained-documentation}
 
-デベロッパーアドボケイトは、採用と効率化のユースケースを支援する実践的・技術的な例を含む、以下のドキュメントページを執筆・メンテナンスしています。
+Developer Advocates は、採用と効率化のユースケースを支援する実践的・技術的な例を含む、以下のドキュメントページを執筆・メンテナンスしています。
 
 | タイトル | 領域 | 作成日 | DRI |
 |-------|------|--------------|-----|
@@ -231,316 +242,394 @@ GitLab Unfiltered YouTube チャンネル:
 
 ### プロジェクト {#projects}
 
-ソースコード、デモプロジェクト、ワークショップ、チュートリアル、研究などは、[プロジェクトハンドブック](/handbook/marketing/developer-relations/developer-advocacy/projects/) に文書化されています。これには、GitLab Duo (AI)、CI/CD コンポーネント、DevSecOps とセキュリティ、Workspaces、GitLab API などのユースケースが含まれます。
+ソースコード、デモプロジェクト、ワークショップ、チュートリアル、研究などは、[プロジェクトハンドブック](/handbook/marketing/developer-relations/developer-advocacy/projects/)に文書化されています。これには、GitLab Duo (AI)、CI/CD コンポーネント、DevSecOps とセキュリティ、Workspaces、GitLab API などのユースケースが含まれます。
 
-## コンテンツ作成 {#content-creation}
+## コンテンツ作成ガイドライン {#content-creation-guidelines}
 
-### 動画ガイドライン {#video-guidelines}
+### 動画制作ガイドライン {#video-production-guidelines}
 
-動画録画の際は以下を参考にしてください:
+#### 推奨機材 {#equipment-recommendations}
 
-1. 動画機材
-   - マイク: [Logitech Blue Yeti](https://www.logitechg.com/en-us/shop/p/yeti-premium-usb-microphone)
-   - カメラ: [Logitech MX Brio Ultra HD 4k](https://www.logitech.com/en-us/shop/p/mx-brio-4k-webcam)
-   - 照明: [Elgato Key Light](https://www.elgato.com/us/en/p/key-light)
-1. ソフトウェア:
-   - 画面録画ソフトウェア: Quicktime、[OBS](#recording-with-obs)、[Screen Studio](#recording-with-screen-studio) をおすすめします。
-   - ポスト編集ソフトウェア: Adobe Premiere Pro（動画のカット、音声ゲインブーストなど）
-   - アクセスリクエスト: ツールへのアクセスについては @johncoghlan に依頼し、[アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/) を作成してください。
-1. 従うべき動画設定:
-   - アスペクト比 / 解像度: 録画ウィンドウのサイズを 16x9 のアスペクト比に設定します。
-       - 一般的な解像度は、画面録画の場合 1920×1080（16:9 アスペクト比）または 2880×1750 です。
-       - 4K モニターに接続している場合は、ラップトップからキャプチャする方が簡単な場合があります。
-       - ソーシャル向けに録画する場合は、マルチプラットフォーム互換性のために正方形（1:1）または縦長（9:16）を検討してください。
-   - Brand チームが編集する動画で使用する動画を Screen Studio で録画する場合は、次のガイダンスに従ってください:
-       - Screen Studio のすべての Zoom を削除します。Brand チームが必要に応じて Zoom を追加します。
-       - ウェブカメラ / ユーザービューは録画しないでください。
-       - 画面サイズを最大化するため、角丸とパディングを 0% に設定します。
-       - `Always use pointer cursor` をオンにします。
-       - カーソルサイズを 1.2x に設定し、一番左の `Cursor style` オプションを使用します。
-       - 次のようにエクスポートします: Format - MP4、Resolution - 1080p、Compression - Web。
-   - その他のコンテンツタイプ（ソーシャル、YouTube への直接公開、ウェビナーなど）の場合:
-       - Zoom の使用については、コンテンツの DRI と相談すべきですが、Screen Studio がフォーカスすべき適切なコンテンツを正しく識別できているかを確認するため、その使用をレビューすべきです。
-       - ウェブカメラの使用が推奨されます。実際のユーザーが見えることで、視聴者との信頼と結びつきを築くのに役立ちます。注: 録画後にウェブカメラ映像を非表示にしたい場合は、**Camera** アイコンをクリックして **Hide camera** スライダーを切り替えることで、ウェブカメラなしのバージョンの録画をエクスポートできます。
-       - 境界線やフレームの使用は役立つ場合がありますが、それらの使用がコンテンツの可読性に影響を与えないようにしてください。
-       - `Always use pointer cursor` をオンにします。
-       - カーソルサイズを 1.2x に設定し、一番左の `Cursor style` オプションを使用します。
-       - 次のようにエクスポートします: Format - MP4、Resolution - 1080p、Compression - Web。
+**マイク**
 
-デモ環境のセットアップ:
+- 推奨: [Logitech Blue Yeti](https://www.logitechg.com/en-us/shop/p/yeti-premium-usb-microphone)
+- 動画間で一貫した音質を確保するため、すべての録画で同じマイク設定を使用します
+- 滑らかでクリアな音声を確保するため、録画前にマイクのレベルをテストします
+- 音質を維持するため、マイクを口から 6 〜 12 インチの一定の位置に配置します
 
-1. ユーザーアカウント
-   - ブランドデモには [demo-tanuki アカウント](https://gitlab.com/demo-tanuki) を優先してください。（ログイン情報は 1Password の Marketing vault にあります）
-   - その他すべてのデモには、自分のアカウント（または GDK admin）を使用してください。
-1. Chrome ブラウザでの GitLab UI
-   - ズーム: 125%（または代替として 110%）
-   - ブックマークバーを最小化（`cmd shift b`）
-   - テーマ: ホワイト
-   - GitLab レイアウト幅: Fluid（[`Profile > Settings > Layout width`](https://docs.gitlab.com/user/profile/preferences/#change-the-layout-width-on-the-ui)）
-1. [開発環境](/handbook/marketing/developer-relations/developer-advocacy/dev-environments/) での IDE
-   - 視聴者が画面で何が起きているかを明確に見られるよう、IDE のズームは思い切り大きくしてください。
-   - VS Code: 必要だと思う回数より 1〜2 回多くズーム（`cmd` + `+`）します。
-   - JetBrains: `Settings > Appearance & Behavior > Appearance > Accessibility > Zoom`。@dnsmichi のテストでは `125%` が最も効果的でした。
-   - 不要なタブやツールバー項目を閉じて IDE をシンプルにします。
-   - [IDE ベンダーのすべての AI 統合を無効化](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments)します。
-   - 上部・下部のバーに入れ子になっている不要なアイコンを非表示にしたり、Zen モード（`cmd`+`k`+`z`）を使用したりすることで、表示をシンプルにできます。
+**カメラ**
 
-追加のガイダンスは内部ハンドブックにあります: [開発環境](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments)
+- 推奨: [Logitech MX Brio Ultra HD 4k](https://www.logitech.com/en-us/shop/p/mx-brio-4k-webcam)
+- 最も自然に見えるよう、目の高さに配置します
+
+**照明**
+
+- 推奨: [Elgato Key Light](https://www.elgato.com/us/en/p/key-light)
+- カメラに映るすべての録画で一貫した照明を使用します
+
+**背景**
+
+- 背景を整理し、プロフェッショナルに保ちます
+- 散らかったもの、注意をそらすもの、目立ちすぎるパターンを避けます
+- ニュートラルな背景、またはシンプルで整理されたワークスペースを使用します
+- 背景を十分に照らし、強い影がないことを確認します
+- 動画間で一貫性を保つことで、よりプロフェッショナルな印象になります
+
+#### ソフトウェア {#software}
+
+**画面録画**
+
+- 推奨ツール: Quicktime、[OBS](#recording-with-obs)、または [Screen Studio](#recording-with-screen-studio)
+
+**ポスト編集**
+
+- Adobe Premiere Pro（動画のカット、音声ゲインブーストなど）
+
+#### カメラに映るプレゼンテーションのヒント {#on-camera-presentation-tips}
+
+自分がカメラに映る動画を録画する場合:
+
+- 自然な会話調で話し、スクリプトの読み上げは避けます
+- 自然さを保つため、完全なスクリプトではなく箇条書きや要点を使用します
+- 視聴者とのつながりを築くため、カメラに目線を合わせます
+- 自分らしく振る舞います。自然さが視聴者との信頼とつながりを築きます
+- 間違えた場合は、無理に続けようとせず、一旦止めてそのセクションを自然に再開します
+- 重要なポイントは事前に練習しますが、録画中は会話調で伝えます
+
+#### 動画設定 {#video-settings}
+
+**アスペクト比と解像度**
+
+- 録画ウィンドウのサイズを 16:9 のアスペクト比に設定します
+- 一般的な解像度: 1920×1080（16:9）、または画面録画では 2880×1750
+- 4K モニターに接続している場合は、ラップトップからキャプチャする方が簡単な場合があります
+
+**Brand team 向け動画の Screen Studio 設定**
+
+- すべての Zoom を削除します（Brand team が必要に応じて追加します）
+- ウェブカメラ／ユーザービューは録画しません
+- 画面サイズを最大化するため、角丸とパディングを 0% に設定します
+- `Always use pointer cursor` をオンにします
+- カーソルサイズを 1.2x に設定し、一番左の `Cursor style` オプションを使用します
+- エクスポート: Format - MP4、Resolution - 1080p、Compression - Web
+
+**その他のコンテンツ向けの Screen Studio 設定**（ソーシャル、YouTube、ウェビナー）
+
+- Zoom の使用についてコンテンツ関係者と話し合い、正しい箇所にフォーカスしていることをレビューします
+- ウェブカメラの使用を推奨します。実際の人が見えることで信頼とつながりが生まれます
+  - 録画後にウェブカメラを非表示にするには、**Camera** アイコンをクリックし、**Hide camera** スライダーを切り替えます
+- 境界線やフレームは役立つ場合がありますが、コンテンツの可読性に影響しないことを確認します
+- `Always use pointer cursor` をオンにします
+- カーソルサイズを 1.2x に設定し、一番左の `Cursor style` オプションを使用します
+- エクスポート: Format - MP4、Resolution - 1080p、Compression - Web
+
+#### デモ環境のセットアップ {#demo-environment-setup}
+
+**ユーザーアカウント**
+
+- ブランドデモには [demo-tanuki アカウント](https://gitlab.com/demo-tanuki)を優先します（ログイン情報は 1Password の Marketing vault にあります）
+- その他すべてのデモには、自分のアカウント（または GDK admin）を使用します
+
+**Chrome ブラウザでの GitLab UI**
+
+- ズーム: 125%（または代替として 110%）
+- ブックマークバーを最小化（`cmd shift b`）
+- テーマ: White
+- GitLab レイアウト幅: Fluid（[`Profile > Settings > Layout width`](https://docs.gitlab.com/user/profile/preferences/#change-the-layout-width-on-the-ui)）
+
+**IDE** - 詳細は[開発環境](/handbook/marketing/developer-relations/developer-advocacy/dev-environments/)を参照してください
+
+- 視聴者が画面で何が起きているかを明確に見られるよう、ズームを十分に大きくします
+- VS Code: 必要だと思う回数より 1 〜 2 回多くズーム（`cmd` + `+`）します
+- JetBrains: `Settings > Appearance & Behavior > Appearance > Accessibility > Zoom` - テストでは `125%` が最適でした
+- 不要なタブやツールバー項目を閉じて IDE をシンプルにします
+- [IDE ベンダーのすべての AI 統合を無効化](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments)します
+- 不要なアイコンを非表示にするか、Zen モード（`cmd`+`k`+`z`）を使って表示をシンプルにします
+
+追加のガイダンス: [開発環境（内部ハンドブック）](https://internal.gitlab.com/handbook/marketing/developer-relations/developer-advocacy/dev-environments)
 
 #### 外部コンテンツリクエストのチェックリスト {#checklist-for-external-content-requests}
 
-1. 動画には音声ナレーション、またはテキストのみのナレーションスクリプトを含めるべきです。
-1. どの出力アーティファクトを提供すべきか（デフォルト: mp4）。
-1. 配信フォーマット（デフォルト: 16:9、1920x1080）でよいか、カスタムフォーマットが必要か。
-1. 動画アーティファクトがどこで使用されるか（YouTube、ブログ埋め込み、ソーシャル）。
-1. キャプション用の字幕を含む srt ファイル。
+外部向け動画コンテンツのリクエストに対応する場合は、次の項目を確認します:
+
+1. 動画に音声ナレーションを含めるか、テキストのみのナレーションスクリプトにするか
+2. 出力アーティファクトの形式（デフォルト: mp4）
+3. 配信フォーマット（デフォルト: 16:9、1920x1080）、または必要なカスタムフォーマット
+4. 動画の使用場所（YouTube、ブログ埋め込み、ソーシャルメディア）
+5. キャプション用字幕を含む SRT ファイル
 
 #### Screen Studio での録画 {#recording-with-screen-studio}
 
-Screen Studio は、画面領域やウィンドウをキャプチャし、ウェブカメラビューと組み合わせることができます。シンプルで直感的な録画・編集 UI を備えており、タイムラインで編集できるインテリジェントな自動「[シーンへのズーム](https://screen.studio/guide/adding-editing-zooms)」を使用します。
+Screen Studio は、画面領域やウィンドウをキャプチャしてウェブカメラビューと組み合わせ、シンプルな編集 UI でインテリジェントな自動「[シーンへのズーム](https://screen.studio/guide/adding-editing-zooms)」を使用します。
 
-Screen Studio は、[録画を開始する](https://screen.studio/guide/new-recording)ための最小限のオーバーレイ UI を提供します。
+[録画を開始する](https://screen.studio/guide/new-recording)には、最小限のオーバーレイ UI を使用します:
 
 ![Screen Studio オーバーレイメニュー](/images/handbook/marketing/developer-relations/developer-advocacy/content/screenstudio-overlay-menu.png)
 
+**手順:**
+
 1. Display、Window、または Area を選択します
-   - Screen Studio は任意の解像度を録画できますが、[仕様](#screen-studio-recording-specifications)に応じて 16:9 または 4:3 を使用することが推奨されます。
-   - Area: AR を選択し、録画領域をドラッグして指定します。
+   - Screen Studio は任意の解像度を録画できますが、16:9 または 4:3 を推奨します（[仕様](#screen-studio-recording-specifications)を参照）
+   - Area の場合: アスペクト比を選択し、録画領域をドラッグします
 
    ![Screen Studio の領域選択](/images/handbook/marketing/developer-relations/developer-advocacy/content/screenstudio-recording-area-selector.png)
 
-1. record をクリックして録画を開始します。
+2. record をクリックして録画を開始します
 
-録画が終了したら、まず[プロジェクトを保存する](https://screen.studio/guide/saving-your-project)ことを選択し、その後エディタを開きます。
+終了後、まず[プロジェクトを保存](https://screen.studio/guide/saving-your-project)してから、エディタを開きます。
 
 ![Screen Studio エディタ](/images/handbook/marketing/developer-relations/developer-advocacy/content/screenstudio-editor.png)
 
-1. エディタでは、最終的な動画を保存する前に、すべての設定、動画の配置、Zoom タイムラインなどを確認できます。
-1. このページの [動画ガイドラインセクション](/handbook/marketing/developer-relations/developer-advocacy/content/#video-guidelines) で詳述されている仕様に従っていることを確認してください。
-1. これらの調整を行った後、プロジェクトを保存します。
-1. 次に `export` し、`Export to file` を選択します。
-1. [エクスポートダイアログ](https://screen.studio/guide/exporting-the-video)で、`.mp4` ドロップダウンの下にある `mp4` を選択します
+**エディタ内:**
 
-Screen Studio は、`~/Screen Studio Projects` フォルダ内のディスクにプロジェクトを保存します。プロジェクトファイルは名前と `.screenstudio` 拡張子に従い、生の動画ファイルと設定を含むコンテナです。
+1. すべての設定、動画の配置、Zoom タイムラインなどを確認します
+2. [動画設定](#video-settings)セクションの仕様に従っていることを確認します
+3. プロジェクトを保存します
+4. `Export` → `Export to file` をクリックします
+5. [エクスポートダイアログ](https://screen.studio/guide/exporting-the-video)で `mp4` 形式を選択します
 
-!![ディスク上の Screen Studio プロジェクト](/images/handbook/marketing/developer-relations/developer-advocacy/content/screenstudio-projects-on-disk.png)
+**プロジェクト管理:**
 
-ターミナルで `ls` を使って確認したり、`Screen Studio` のプロジェクトリストで再度開いたりできます。
+- Screen Studio はプロジェクトを `~/Screen Studio Projects` フォルダに保存します
+- プロジェクトファイルは `.screenstudio` 拡張子を使用し、生の動画ファイルと設定を含みます
+- ターミナルで `ls` を使って確認できます
+- `Screen Studio` のプロジェクトリストから再度開けます:
 
 ![Screen Studio - 以前のプロジェクトを開く](/images/handbook/marketing/developer-relations/developer-advocacy/content/screenstudio-open-previous-projects.png)
 
-コンテンツの納品が終わったら、ローカルストレージを節約するため、すべての動画ファイル（エクスポートしたアーティファクトと Screen Studio プロジェクト）をチームの GDrive にアップロードすることが推奨されます。
+**納品後:** ローカルストレージを節約するため、すべての動画ファイル（エクスポートしたアーティファクトと Screen Studio プロジェクト）をチームの Google Drive にアップロードします。
 
 ##### Screen Studio 録画仕様 {#screen-studio-recording-specifications}
 
-このページの [動画ガイドラインセクション](/handbook/marketing/developer-relations/developer-advocacy/content/#video-guidelines) で詳述されている設定に従ってください。
+上記の[動画設定](#video-settings)セクションに詳述されている設定に従います。
 
-#### ソーシャル向けの Screen Studio クリップ {#screen-studio-clips-for-social}
+#### ソーシャルメディア向けの Screen Studio クリップ {#screen-studio-clips-for-social-media}
 
-ソーシャル向けの短い製品動画クリップは、機能や能力をコミュニティと共有する効果的な方法になります。これらの短い動画クリップを作成する際は、以下のガイダンスに従ってください:
+ソーシャルメディア向けの短い製品動画クリップは、機能や能力を効果的に紹介します。次のガイドラインに従います:
+
+**設定:**
 
 1. 動画の長さ: 約 30 秒
 1. 音声録音なし
 1. 録画ウィンドウ: 1280 x 960
-1. 出力アスペクト比: 4x3
+1. 出力アスペクト比: 4:3
 1. 角丸: 20
 1. パディング: 4%
 1. カーソルサイズ: 3x
 1. 常にポインターカーソル
-1. 背景色 #7759c2
-1. 録画が GitLab に集中したものになるよう、Chrome ツールバー（アドレスバーやタブなし）の録画を避けてください。次のコマンドを使用して、1280 x 960 の解像度でアプリモードでターミナルから Chrome を起動し、`--app=` の URL を録画したいページ/プロジェクトに置き換えてください: `/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --app=https://gitlab.com/gitlab-da/projects/cheap-flights --window-size=1280,960`
+1. 背景色: #7759c2
+
+**Chrome のセットアップ:**
+GitLab にフォーカスし続けるため、Chrome ツールバー（アドレスバーやタブ）を録画しないようにします。1280 x 960 のアプリモードで Chrome を起動します:
+
+```bash
+/Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --app=https://gitlab.com/gitlab-da/projects/cheap-flights --window-size=1280,960
+```
+
+`--app=` の URL を対象のページ／プロジェクトに置き換えます。
 
 #### OBS での録画 {#recording-with-obs}
 
 OBS は画面録画をより細かく柔軟に制御できますが、トレードオフとしてセットアップと編集のプロセスがより複雑になります。
 
-留意すべきいくつかのヒントを以下に示します:
+**主要な概念:**
 
-1. Scene - シーンは、同時に録画するソースのコレクションです。
-1. Sources - ソースは、音声、画面録画、ウェブカメラなどです。
-   - ソースを追加するには、`+` アイコンをクリックします。最もよく使用する 3 つのソースは以下のとおりです:
-      - macOS Screen Capture: 画面録画
-      - Audio Input Capture: オプション、直接の音声録音が必要な場合
-      - Video Capture Input: オプション、録画にスピーカー/ウェブカメラを含める場合
-   - Macbook の画面を録画するには、`macOS Screen Capture` を使用し、ソースに名前を付けて、右クリックでソースのプロパティを編集します。
-   - Properties - これらは変更できるソースの要素です。異なる画面（ラップトップ vs モニター）を選択できるほか、画面全体、ウィンドウ、または特定のアプリケーションのどれをキャプチャするかも選択できます。
-1. Preferences - 環境設定はシーンの録画方法を制御します。次の環境設定をおすすめします:
-   - OBS > Preferences > Video
-      - Base (Canvas) Resolution 1920x1080、Aspect ratio 16:9
-      - Output (Scaled) Resolution 1920x1080、Aspect ratio 16:9
-   - OBS > Preferences > Output > ドロップダウン: Advanced。
-      - OBS > Preferences > Advanced: 「Recording > Automatically remux to mp4」を有効にします（これは mkv コンテナをインポートできない Adobe Premiere Pro にとって重要です）
+**Scene** - 同時に録画するソースのコレクション
 
-追加のガイダンスは以下にあります:
+**Sources** - 音声、画面録画、ウェブカメラなど
+
+- ソースを追加するには `+` アイコンをクリックします
+- よく使用するソース:
+  - macOS Screen Capture: 画面録画
+  - Audio Input Capture: 直接の音声録音
+  - Video Capture Input: 録画内の話者／ウェブカメラ
+- Macbook の画面を録画するには `macOS Screen Capture` を使用し、名前を付けて右クリックし、プロパティを編集します
+- Properties: 画面（ラップトップとモニター）とキャプチャタイプ（画面全体、ウィンドウ、アプリケーション）を選択します
+
+**推奨設定:**
+
+OBS > Preferences > Video:
+
+- Base (Canvas) Resolution: 1920x1080、Aspect ratio 16:9
+- Output (Scaled) Resolution: 1920x1080、Aspect ratio 16:9
+
+OBS > Preferences > Output > Dropdown: Advanced
+
+- 「Recording > Automatically remux to mp4」を有効にします（mkv コンテナをインポートできない Adobe Premiere Pro で必要です）
+
+**追加リソース:**
 
 - [OBS Recording Studio Guide](https://docs.google.com/presentation/d/16b58bVgJfM2nIKFyVRurNsNJoK2yqS_1QKHRp0F7CNo/edit?slide=id.g3357bbe63e5_0_183#slide=id.g3357bbe63e5_0_183)
 - [Developer Advocacy showcase notes](https://docs.google.com/document/d/1co-DKoR4xn4JNIcynWPjoJsWo3vYzwj8WDFzX3uKrH0/edit?tab=t.0#heading=h.yrmatlea9dpq)（内部向け）と[録画](https://www.youtube.com/watch?v=qNH8NDShGJA)（公開版）
 
 #### Adobe Premiere Pro でのポスト編集 {#post-editing-with-adobe-premiere-pro}
 
-アクセス: [アクセスリクエスト](/handbook/eta/corporate-it/end-user-services/access-requests/)が必要です。[例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/30951)。
+**アクセス:** [アクセスリクエスト]((/handbook/eta/corporate-it/end-user-services/access-requests/)が必要です（[例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/30951)）
 
-[Developer Advocacy showcase notes](https://docs.google.com/document/d/1co-DKoR4xn4JNIcynWPjoJsWo3vYzwj8WDFzX3uKrH0/edit?tab=t.0#heading=h.yrmatlea9dpq)（内部向け）と[録画](https://www.youtube.com/watch?v=qNH8NDShGJA)（公開版）を確認してください。
+**リソース:** [Developer Advocacy showcase notes](https://docs.google.com/document/d/1co-DKoR4xn4JNIcynWPjoJsWo3vYzwj8WDFzX3uKrH0/edit?tab=t.0#heading=h.yrmatlea9dpq)（内部向け）と[録画](https://www.youtube.com/watch?v=qNH8NDShGJA)（公開版）を確認してください
 
-#### プロ用放送マイクでの音声ゲインブースト {#audio-gain-boost-with-professional-broadcaster-microphones}
+#### プロ用放送マイクでの音声ゲインブースト {#audio-gain-boost-for-professional-broadcaster-microphones}
 
-プロ用の放送マイク（例: Shure SM7B）を使用していて音声ゲインが低すぎる場合、さまざまなオプションがあります:
+プロ用の放送マイク（例: Shure SM7B）を使用していて音声ゲインが低すぎる場合は、次のオプションを試します:
 
-1. ハードウェアソリューション（オーディオインターフェース + Cloudlifter）は初期結果を大幅に改善します。SM7B マイクは、コンピューターに到達する前にその追加ゲインを本当に必要とするためです。
-1. OBS 録画
-   - 録画中に OBS で音声ゲインを上げます。
-   - `Source > Audio Capture Device` を見つけます
-   - 右クリックして `Filters` を選択します
-   - Gain を +10 または +20dB に設定します。
+**ハードウェアソリューション（推奨）**
+
+- オーディオインターフェース + Cloudlifter により結果が大幅に改善します
+- SM7B マイクは、コンピューターに到達する前に追加のゲインが必要です
+
+**OBS 録画**
+
+1. 録画中に OBS で音声ゲインを上げます
+2. `Source > Audio Capture Device` を見つけます
+3. 右クリックして `Filters` を選択します
+4. Gain を +10 または +20dB に設定します
+5. フィルターを設定します:
    - Noise Suppression: RNNoise または Speex
    - Compressor: Ratio 3:1、Threshold -18dB、Attack 6ms、Release 60ms
    - Limiter: Threshold -6dB、Release 60ms
-   - ヒント: ベストプラクティスの設定については [Claude](/handbook/tools-and-tips/ai/claude/) に尋ねてください（プロンプト: `How to boost audio in OBS for a SureSM7B microphone as input?`）。
-1. Screen Studio のポスト編集
-   - Screen Studio でエクスポートした録画を Adobe Premiere Pro で編集し、音声を調整します。
-   - 新しいプロジェクトを作成し、メディアブラウザに動画ソースを追加します。
-   - 動画を右側のエディタスコープにドラッグ＆ドロップします。
-   - 音声トラックを右クリックし、`Audio Gain` を選択します。
-   - `Set Gain to:` を選択し、`25 dB` を入力します。
 
-#### 録画機材 {#recording-equipment}
+ヒント: ベストプラクティスの設定については [Claude](/handbook/tools-and-tips/ai/claude/)に尋ねてください（プロンプト: `How to boost audio in OBS for a Shure SM7B microphone as input?`）
 
-[この FY26Q2 Issue（内部向け）](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/842)でのディスカッションとヒントを確認してください。
+**Screen Studio 録画のポスト編集**
 
-@dnsmichi のセットアップは [dnsmichi.com](https://dnsmichi.com/all-remote-workspace/#audio) に文書化されています。
+1. エクスポートした録画を Adobe Premiere Pro で編集します
+2. 新しいプロジェクトを作成し、メディアブラウザに動画ソースを追加します
+3. 動画をエディタにドラッグ＆ドロップします
+4. 音声トラックを右クリックし、`Audio Gain` を選択します
+5. `Set Gain to:` を選択し、`25 dB` と入力します
 
-### Click-Through Demo Generator {#click-through-demo-generator}
+#### 録画機材に関する追加リソース {#additional-recording-equipment-resources}
 
-Click-Through Demo Generator は、GitLab デベロッパーアドボカシーチームが構築したエージェント型ツールで、スクリーンショットのフォルダを、ホストされたインタラクティブな製品ウォークスルーに変換します。エディタも録画もビルド手順も不要です。[デモの例](https://click-through-demo-generator-v-2-d63870.gitlab.io/demos/demo-20260506-094904/)を参照してください。
-
-#### 仕組み {#how-it-works}
-
-スクリーンショットをフォルダに入れ、AI エージェントにプロンプトを渡します。エージェントは画面を並べ替え、ナレーションを書き、マージリクエストを開きます。マージリクエストがマージされると、デモは GitLab Pages に公開されます。後で変更したい場合は、画面の並べ替えやナレーションの書き直しをエージェントに依頼すると、デモが再構築されます。
-
-#### メリット {#benefits}
-
-1. 高速かつ効率的 — 手作業で何時間もかけて組み立て・編集する代わりに、プロンプトだけでスクリーンショットから公開済みデモまで進められます。
-1. 動画作成より速い — 動画を録画せずに製品フローを簡単に案内したい場合は、クリックスルーデモを使います。動画とは異なり、ナレーションと画面順序は後から簡単に修正できます。
-1. ベンダー不要、コスト不要 — 外部デモプラットフォームを GitLab ネイティブなワークフローに置き換えます。すべてが GitLab プロジェクト内にあり、追加のライセンスは不要です。
-1. レビューとメンテナンスが容易 — ナレーションは Git にあるため、更新はツール間でコピー＆ペーストする代わりに通常のマージリクエストで行われます。これによりレビューが簡単になり、製品の進化に合わせてデモを最新に保ちやすくなります。
-
-誰が使えますか？全員です。[リポジトリをフォーク](https://gitlab.com/gitlab-da/projects/click-through-demo-generator-v-2/-/forks/new)してテストを始めてください。
-
-[プロジェクト README](https://gitlab.com/gitlab-da/projects/click-through-demo-generator-v-2/-/blob/main/README.md)
+- [FY26Q2 のディスカッションとヒント（内部向け）](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/842)
+- [@dnsmichi の音声セットアップ](https://dnsmichi.com/all-remote-workspace/#audio)
 
 ### 製品ツアーガイドライン {#product-tours-guidelines}
 
-#### Navattic で GitLab ツアーを作成するためのガイドラインとヒント {#guideline-and-tips-for-creating-gitlab-tours-with-navattic}
+#### Navattic で GitLab ツアーを作成するためのガイドライン {#guidelines-for-creating-gitlab-tours-with-navattic}
 
-1. **簡潔に保つ** – 製品ツアーは理想的には **5〜12 ステップ** で、それぞれが明確な価値を提供することに焦点を当てるべきです。指導的になりがちなチュートリアルとは異なり、製品ツアーはすばやく魅力的であるべきです。
-2. **コンテキストを提供する** – メインコンテンツを煩雑にすることなく追加リソースを提供するため、ポップアップダイアログにブログ記事やドキュメントへのリンクを追加します。
-3. **GitLab ブランディングを適用する** – テーマ設定で **「GitLab Branding [Navattic Team]」** を選択し、一貫したデザインを確保します。
-4. **適切なキャプチャタイプを使用する** – Navattic は 2 種類の画面キャプチャをサポートしています:
-   - **Web captures**（推奨）は製品内体験を作り出します。
-   - **Screenshots** は、Web ベースでないアプリケーション（例: IDE）に使用すべきです。
-5. **正しい解像度を設定する** – Chrome でキャプチャする際は、ブラウザを **1440x900** に設定します。これは Navattic の推奨解像度です。Navattic 録画ツールバーの組み込みリサイズツールを使用して解像度を調整できます。
-6. **コールトゥアクションを含める** – 最終ステップには **CTA**（通常は **Free Trial** リンク）を配置すべきです。
-7. **関連要素を強調するために Beacons の使用を検討する** – **Highlight** の外観設定を適用して重要な要素を強調します。
-8. **キーボードナビゲーションを有効にする** – ツアー設定のこの機能により、ユーザーは矢印キーを使ってツアーを移動でき、よりスムーズな体験になります。
-9. **Presenter Mode を使用する** – この機能は必要に応じてポップアップを非表示にし、よりすっきりとしたビジュアルプレゼンテーションを確保します。
+1. **簡潔に保つ** - 製品ツアーは 5 〜 12 ステップにし、各ステップで明確な価値を提供します。チュートリアルとは異なり、製品ツアーはすばやく魅力的なものにします。
+2. **コンテキストを提供する** - 追加リソースとして、ポップアップダイアログにブログ記事やドキュメントへのリンクを追加します。
+3. **GitLab ブランディングを適用する** - テーマ設定で「GitLab Branding [Navattic Team]」を選択し、一貫したデザインにします。
+4. **適切なキャプチャタイプを使用する**:
+   - Web captures（推奨）は製品内体験を作り出します
+   - Web ベースでないアプリケーション（例: IDE）には Screenshots を使用します
+5. **正しい解像度を設定する** - Chrome でキャプチャする際は、1440x900（Navattic の推奨解像度）を使用します。Navattic 録画ツールバーの組み込みリサイズツールを使用します。
+6. **コールトゥアクションを含める** - 最終ステップには CTA（通常は Free Trial リンク）を配置します。
+7. **Beacons を使って関連要素を強調する** - Highlight の外観設定を適用して重要な要素を強調します。
+8. **キーボードナビゲーションを有効にする** - 矢印キーでツアーを移動できるようにし、よりスムーズな体験を提供します。
+9. **Presenter Mode を使用する** - 必要に応じてポップアップを非表示にし、よりすっきりとしたビジュアルプレゼンテーションにします。
 10. **ポップアップを適切に設定する**:
-    - 最初と最後のステップには、**強い背景**を持つ **Modals** を使用します。
-    - 中間ステップには **Tooltips** を使用し、適切な場合は **Backdrop 設定** を有効にします。
-11. ダイアログでは、ユーザーが積極的に製品に関与していると感じられるように、「Next」の代わりに「Commit」「Install」「Submit」などのアクション固有のラベルを使用してみてください。
-12. **利用可能な例を参照する** – 推奨されるフォーマットを理解するため、[既存の製品ツアー](#product-tours) を確認します。
-13. 公開向けの製品ツアーをリリースする前に、デベロッパーアドボカシーチームにレビューを依頼してください。
+    - 最初と最後のステップには、強い背景を持つ Modals を使用します
+    - 中間ステップには Tooltips を使用し、適切な場合は Backdrop 設定を有効にします
+11. **アクション固有のラベルを使用する** - ユーザーが積極的に関与していると感じられるように、「Next」の代わりに「Commit」「Install」「Submit」などのラベルを使用します。
+12. **例を確認する** - 推奨されるフォーマットを理解するため、[既存の製品ツアー](#product-tours)を確認します。
+13. **レビューを依頼する** - 公開向け製品ツアーをリリースする前に、Developer Advocacy チームへレビューを依頼します。
 
 #### Navattic へのアクセスをリクエストする {#requesting-access-to-navattic}
 
-チームにツアーに関する特別な要件があり、Navattic で自分自身でツアーを開発したい場合、私たちがお手伝いできます。
+チームにツアーに関する特別な要件があり、Navattic でツアーを開発したい場合:
 
-- Navattic を使用する **正当なビジネス上の理由** を提供してアクセスをリクエストするチームメンバーに、**3 か月のトライアルライセンス** を提供できます。
-- ユーザーがツールを積極的に活用している場合、必要に応じて **アクセスを延長** したり、追加ライセンスの購入を検討したりすることがあります。
-- ユーザーがツールを積極的に使用していない場合、そのライセンスは別のチームメンバーに **再割り当て** されることがあります。
-- アクセスをリクエストするには、Lumos（Okta ダッシュボードで利用可能）でリクエストを開きます。
+- 正当なビジネス上の理由があるチームメンバーは、3 か月のトライアルライセンスを利用できます
+- アクティブユーザーは、必要に応じてアクセス期間の延長や追加ライセンスを受けられる場合があります
+- 非アクティブユーザーのライセンスは、別のチームメンバーに再割り当てされる場合があります
+- アクセスをリクエストするには、Lumos（Okta ダッシュボードで利用可能）でリクエストを開きます
 
-質問やサポートについては、チームチャンネル [#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B) でご連絡ください。
+質問がある場合は、[#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B)で私たちに連絡してください
 
-#### 新しい Navattic ユーザーの追加（デベロッパーアドボカシーチームのプロセス） {#adding-a-new-navattic-user-developer-advocacy-team-process}
-
-このセクションでは、デベロッパーアドボカシーチームが新しいチームメンバーを Navattic にオンボーディングするための手順を提供します。
+#### 新しい Navattic ユーザーの追加（Developer Advocacy チームのプロセス） {#adding-a-new-navattic-user-developer-advocacy-team-process}
 
 チームメンバーが Navattic へのアクセスをリクエストしたら、次のプロセスに従います:
 
-1. Navattic admin は Slack またはメール経由で Lumos リクエストを受け取ります。
-2. **リクエストを検証する** – リクエスト者が Navattic を使用する正当なビジネス上の理由を提供していることを確認します。
-3. **ライセンスの空き状況を確認する** – [Navattic ユーザー追跡スプレッドシート](https://docs.google.com/spreadsheets/d/1x5T3rXhsqUZYHdMAz1BWt5gExNA_MLO9AtFpTVbzDwc/edit?gid=0#gid=0)を確認し、ライセンスプールに追加ユーザー分の空きがあることを確認します。
-4. **Lumos でリクエストを承認する** – 検証後、Okta アクセスのために Lumos でアクセスリクエストを承認します。
-5. **Navattic の招待を送る** – Navattic で、GitLab チームの下に Builder ロールでチームメンバーを招待します。
-6. **ガイドラインを送る** – [Navattic ガイドライン](#guideline-and-tips-for-creating-gitlab-tours-with-navattic)をチームメンバーと共有します。
-7. **トライアル期間を伝える** – [Navattic へのアクセスをリクエストする](#requesting-access-to-navattic)プロセスに基づき、アクセスが **デフォルトで 3 か月間** 付与されることをチームメンバーに伝えます。
-8. **追跡スプレッドシートを更新する** – [Navattic ユーザー追跡スプレッドシート](https://docs.google.com/spreadsheets/d/1x5T3rXhsqUZYHdMAz1BWt5gExNA_MLO9AtFpTVbzDwc/edit?gid=0#gid=0)に、チームメンバーの名前、メール、開始日、予定終了日を追加します。
-9. **Slack チャンネルに追加する** – 継続的なコミュニケーションと更新のため、[#navattic-updates](https://gitlab.slack.com/archives/navattic-updates) Slack チャンネルにチームメンバーを招待します。
+1. **リクエストを受け取る** - Navattic admin が Slack またはメール経由で Lumos リクエストを受け取ります
+2. **検証する** - リクエスト者が正当なビジネス上の理由を提供していることを確認します
+3. **空き状況を確認する** - [Navattic ユーザー追跡スプレッドシート](https://docs.google.com/spreadsheets/d/1x5T3rXhsqUZYHdMAz1BWt5gExNA_MLO9AtFpTVbzDwc/edit?gid=0#gid=0)でライセンスの空き状況を確認します
+4. **Lumos で承認する** - 検証後、Okta アクセスのためにアクセスリクエストを承認します
+5. **Navattic の招待を送る** - GitLab チームの Builder ロールでチームメンバーを招待します
+6. **ガイドラインを共有する** - [Navattic ガイドライン](#guidelines-for-creating-gitlab-tours-with-navattic)を送ります
+7. **トライアル期間を伝える** - デフォルトのアクセス期間が 3 か月であることをチームメンバーに伝えます
+8. **追跡情報を更新する** - [Navattic ユーザー追跡スプレッドシート](https://docs.google.com/spreadsheets/d/1x5T3rXhsqUZYHdMAz1BWt5gExNA_MLO9AtFpTVbzDwc/edit?gid=0#gid=0)に、名前、メール、開始日、予定終了日を追加します
+9. **Slack に追加する** - [#navattic-updates](https://gitlab.slack.com/archives/navattic-updates) チャンネルに招待します
 
 #### 製品ツアーの公開 {#publishing-product-tours}
 
-製品ツアーは以下の場所で公開されます:
+製品ツアーは次の場所で公開されます:
 
-- [デベロッパーアドボカシーコンテンツライブラリ](#product-tours)
+- [Developer Advocacy コンテンツライブラリ](#product-tours)
 - [Highspot](#highspot)
-- [GitLab ドキュメント](https://docs.gitlab.com/)（デモの[リンク](https://docs.gitlab.com/ee/development/documentation/styleguide/#link-to-click-through-demos)については GitLab ドキュメントスタイルガイドに従う）
-- [Demo Hub](https://gitlab.com/gitlab-da/projects/dap-demo-hub)、すべての製品デモの一元化されたプラットフォーム
+- [GitLab ドキュメント](https://docs.gitlab.com/)（デモの[リンク](https://docs.gitlab.com/ee/development/documentation/styleguide/#link-to-click-through-demos)についてはスタイルガイドに従います）
+- [Demo Hub portal](https://about.gitlab.com/gitlab-da/projects/dap-demo-hub) - すべての製品デモを一元化するプラットフォーム
 
-さらに、選ばれたツアーはウェブサイトで紹介される場合があります。
+選ばれたツアーはウェブサイトで紹介される場合もあります。
 
-#### 製品ツアーへのコントリビュート {#contribute-to-product-tours}
+#### 製品ツアーへのコントリビュート {#contributing-to-product-tours}
 
-デベロッパーアドボカシーチームは、**Advanced SAST**、**GitLab Duo**、**GitLab Duo with Amazon Q**、[その他](#product-tours)など、主要なワークフローを紹介し新機能を強調する製品ツアーを作成しています。チームは、ユーザーと潜在顧客に一貫性のある高品質な体験を確保するため、製品ツアーの構築、レビュー、公開に取り組んでいます。追加のツアーを提案し、コンテンツ、スクリプト、環境を提供することで、あなたもコントリビュートできます。新しい製品ツアーを作成するためにデベロッパーアドボカシーチームと協力する方法は次のとおりです:
+Developer Advocacy チームは、Advanced SAST、GitLab Duo、GitLab Duo with Amazon Q、[その他](#product-tours)の主要なワークフローと新機能を紹介する製品ツアーを作成しています。コンテンツ、スクリプト、環境を用意して追加のツアーを提案することで、コントリビュートできます。
 
-1. [製品ツアー提出テンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=product-tour-submission-template)を使ってアイデアを提案します。
-1. テンプレートのすべての質問に回答します。これにより、デベロッパーアドボカシーチームがあなたのアイデアを効果的に評価できます。
-1. デベロッパーアドボカシーチームはピッチをレビューし、a) ツアーを承認し、チームが持つ他の優先事項に基づいて作成のタイムラインを提案するか、b) 改善のための提案を提供するか、c) なぜそのアイデアがツアーに適していないかを説明し、メッセージを発信するための他のアイデアを提供します。
-1. ツアーが承認されたら、著者は **製品ツアーテンプレート**（google doc）を使ってスクリプトを起草します。テンプレートへのリンクは [製品ツアー提出テンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=product-tour-submission-template) にあります。
-1. 提出テンプレート Issue のコメントにテンプレートへのリンクを追加します。
-1. デベロッパーアドボカシーチームは著者とスクリプトについて協力し、Navattic を使ってツアーを作成し、該当する場合は公式なターゲット（例: ウェブサイト、ドキュメント、HighSpot、デベロッパーアドボカシーハンドブック）で公開します。
+**コラボレーションの方法:**
+
+1. [製品ツアー提出テンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=product-tour-submission-template)を使ってアイデアを提案します
+2. 効果的に評価できるよう、テンプレートのすべての質問に回答します
+3. Developer Advocacy チームがレビューし、次のいずれかを行います:
+   - ツアーを承認し、優先事項に基づいてタイムラインを提案します
+   - 改善案を提供します
+   - 適さない理由を説明し、代替案を提供します
+4. 承認後、製品ツアーテンプレート（Google Doc）を使ってスクリプトを起草します（リンクは提出テンプレート内にあります）
+5. 提出 Issue のコメントにスクリプトのリンクを追加します
+6. Developer Advocacy チームがスクリプト作成で協力し、Navattic でツアーを作成して、公式な公開先（ウェブサイト、ドキュメント、Highspot、ハンドブック）に公開します
 
 ## コンテンツ配信 {#content-distribution}
 
 ### URL のタグ付けと追跡のための UTM {#utms-for-url-tagging-and-tracking}
 
-デベロッパーアドボカシーチームは、デベロッパーリレーションズチームの [UTM 戦略](/handbook/marketing/developer-relations/utm-strategy/) と連携しており、これはより大きな [マーケティング UTM 戦略](/handbook/marketing/utm-strategy/) に基づいています。デベロッパーエバンジェリズムチームの `utm_content` プレフィックスは `de_` であり、これにより Sisense でチームのデータを簡単にフィルタリングできます。
+Developer Advocacy チームは、Developer Relations の [UTM 戦略](/handbook/marketing/developer-relations/utm-strategy/)に従います。この戦略は[マーケティング UTM 戦略](/handbook/marketing/utm-strategy/)と整合しています。Developer Advocacy チームの `utm_content` プレフィックスは `de_` であり、Sisense でデータを簡単にフィルタリングできます。
 
-コミュニティ UTM ページの [UTM Generator](/handbook/marketing/developer-relations/utm-strategy/#utm-generator) を使用すると、キャンペーン用の UTM コードを簡単に生成できます。
+[UTM Generator](/handbook/marketing/developer-relations/utm-strategy/#utm-generator)を使用して、キャンペーン用の UTM コードを作成します。
 
-私たちは以下のキャンペーンを使用しています:
+**アクティブなキャンペーン:**
 
-1. [ブログ記事（一般）](https://campaign-manager.gitlab.com/campaigns/view/17) - 私たちが著者でないすべての GitLab ブログ。ソーシャルメディアのコンテンツ追跡用。
-1. [ブログ記事（著者）](https://campaign-manager.gitlab.com/campaigns/view/18) - 私たちが著者の GitLab ブログ記事。ソーシャルメディアのコンテンツ追跡用。
-1. [講演リソース（一般）](https://campaign-manager.gitlab.com/campaigns/view/13) - 講演スライド用の QR コードと短縮 URL。
-1. [コミュニティニュースレター](https://campaign-manager.gitlab.com/campaigns/view/27) - コミュニティニュースレターの短縮 URL。
-1. [デモ（TMM、DE）](https://campaign-manager.gitlab.com/campaigns/view/50) - スタンドアロン URL を持つ技術デモ。
-1. [リリースエバンジェリズム](https://campaign-manager.gitlab.com/campaigns/view/3) - [リリースエバンジェリズム活動](/handbook/marketing/developer-relations/developer-advocacy/social-media/#release-evangelism)。
-1. [ポッドキャストリソース](https://campaign-manager.gitlab.com/campaigns/view/38) - ポッドキャストのホストと共有する URL。
-1. [寄稿記事](https://campaign-manager.gitlab.com/campaigns/view/47) - ソーシャルメディアで共有される外部記事。
+1. [ブログ記事（一般）](https://campaign-manager.gitlab.com/campaigns/view/17) - GitLab ブログ記事（著者以外）、ソーシャルメディアのコンテンツ追跡
+1. [ブログ記事（著者）](https://campaign-manager.gitlab.com/campaigns/view/18) - GitLab ブログ記事（著者）、ソーシャルメディアのコンテンツ追跡
+1. [講演リソース（一般）](https://campaign-manager.gitlab.com/campaigns/view/13) - 講演スライド用の QR コードと短縮 URL
+1. [コミュニティニュースレター](https://campaign-manager.gitlab.com/campaigns/view/27) - コミュニティニュースレターの短縮 URL
+1. [デモ（TMM、DE）](https://campaign-manager.gitlab.com/campaigns/view/50) - スタンドアロン URL を持つ技術デモ
+1. [リリースエバンジェリズム](https://campaign-manager.gitlab.com/campaigns/view/3) - [リリースエバンジェリズム活動](/handbook/marketing/developer-relations/developer-advocacy/social-media/#release-evangelism)
+1. [ポッドキャストリソース](https://campaign-manager.gitlab.com/campaigns/view/38) - ポッドキャストのホストと共有する URL
+1. [寄稿記事](https://campaign-manager.gitlab.com/campaigns/view/47) - ソーシャルメディアで共有される外部記事
 
-イベントとコンテンツ固有の追跡の例は [KubeCon EU 2023](https://campaign-manager.gitlab.com/campaigns/view/36) です。
+イベント固有の追跡例: [KubeCon EU 2023](https://campaign-manager.gitlab.com/campaigns/view/36)
 
 ### コンテンツ配信ワークフロー {#content-distribution-workflow}
 
-コンテンツが作成・公開された後の次のステップは配信です。このプロセスを支援するいくつかのステップを以下に示します:
+コンテンツの公開後、次の配信手順に従います:
 
-1. [UTM Generator](/handbook/marketing/developer-relations/utm-strategy/#utm-generator) を使用して、コンテンツ用の UTM コードと短縮 URL を作成します。これに関する詳しい知見は、デベロッパーアドボカシーの [UTM 戦略](/handbook/marketing/developer-relations/utm-strategy/) にあります。
+**一般設定:**
 
-ドキュメントとコミュニティ向け:
+1. [UTM Generator](/handbook/marketing/developer-relations/utm-strategy/#utm-generator)を使用して、UTM コードと短縮 URL を作成します
 
-1. 誰にとっても役立つチュートリアルブログ記事、デモなどは、[GitLab ドキュメント](https://docs.gitlab.com/) に追加すべきです。コントリビュートのドキュメントに従い、存在しない場合は [関連トピック](https://docs.gitlab.com/ee/development/documentation/topic_types/#related-topics) の見出しを作成します。MR を作成し、コンテンツの短縮 URL を使用して、[担当テクニカルライター](/handbook/product/ux/technical-writing/#assignments) にレビューを依頼します。MR の例: [Add tutorial blog posts to workspaces docs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/127500)
-1. [GitLab Forum](https://forum.gitlab.com/) や [r/gitlab](https://www.reddit.com/r/gitlab) サブレディットなど、私たちのコミュニティプラットフォームの 1 つでコンテンツを共有することを検討してください。GitLab より広いトピックを扱っている場合は、他のサブレディットや、dev.to などのブログサイトへのクロスポストも検討できます。
+**ドキュメントとコミュニティ:**
 
-ソーシャルメディア向け:
+1. 役立つチュートリアルブログ記事やデモを [GitLab ドキュメント](https://docs.gitlab.com/)に追加します
+   - コントリビュートのドキュメントに従い、必要に応じて[関連トピック](https://docs.gitlab.com/ee/development/documentation/topic_types/#related-topics)の見出しを作成します
+   - コンテンツの短縮 URL を含む MR を作成し、[担当テクニカルライター](/handbook/product/ux/technical-writing/#assignments)にレビューを依頼します
+   - 例: [Add tutorial blog posts to workspaces docs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/127500)
+2. コミュニティプラットフォームで共有します:
+   - [GitLab Forum](https://forum.gitlab.com/)
+   - [r/gitlab](https://www.reddit.com/r/gitlab) サブレディット
+   - より広いトピックの場合: その他のサブレディットや dev.to などのブログサイト
 
-1. ソーシャルメディアでコンテンツを共有するためのコピーを起草します。ヒントとさまざまなプラットフォームの概要については [コンテンツ共有](/handbook/marketing/developer-relations/developer-advocacy/social-media/#content) を参照してください。絵文字などの追加のエンゲージメントアイデアについては [メッセージのヒント](/handbook/marketing/developer-relations/developer-advocacy/social-media/#message-tips) を確認してください。
-1. 他の GitLab チームメンバーも共有できるよう、EveryoneSocial でコンテンツをストーリーとして提案します。[EveryoneSocial でコンテンツを提案する方法の詳細](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/team-member-social-advocacy/#suggesting-content-for-team-members-to-share-on-everyonesocial)。
-1. ソーシャルメディアにコンテンツを投稿した後、[`#social-media-action`](https://gitlab.slack.com/archives/C01AZ9C8Z4G) Slack チャンネルにリンクを共有して、ソーシャルメディアチームにプロモーションを依頼します。
+**ソーシャルメディア:**
 
-GitLab チーム向け:
+1. ソーシャルメディア用のコピーを起草します
+   - プラットフォームごとのヒントについては[コンテンツ共有](/handbook/marketing/developer-relations/developer-advocacy/social-media/#content)を参照してください
+   - エンゲージメントのアイデアについては[メッセージのヒント](/handbook/marketing/developer-relations/developer-advocacy/social-media/#message-tips)を確認してください
+2. チームメンバーが共有できるよう、EveryoneSocial でコンテンツを提案します
+   - [EveryoneSocial でコンテンツを提案する方法](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/team-member-social-advocacy/#suggesting-content-for-team-members-to-share-on-everyonesocial)
+3. 投稿後、[`#social-media-action`](https://gitlab.slack.com/archives/C01AZ9C8Z4G) Slack チャンネルで共有し、ソーシャルメディアチームにプロモーションを依頼します
 
-1. フィールドチームに役立つコンテンツは、[Highspot](https://gitlab.highspot.com/) にも投稿すべきです。
-1. 次のメッセージテンプレートを使って、[#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B) Slack チャンネルでアップデートを共有します:
+**GitLab チーム:**
+
+1. フィールドで役立つコンテンツを [Highspot](https://gitlab.highspot.com/)に投稿します
+2. 次のテンプレートを使って、[#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B) Slack チャンネルでアップデートを共有します:
 
 ```text
 :results-tanuki: <Content type> published: <title>

@@ -2,9 +2,9 @@
 title: AI Core Infra：Duo Service Infra
 description: "AI Core Infra 内の Duo Service Infra ファンクショナルチーム。AI Gateway と Duo Workflow Service の信頼性改善と可観測性に重点を置いています。"
 upstream_path: /handbook/engineering/ai/ai-core-infra/duo-service-infra/
-upstream_sha: 8451bcaa23ef826bedc5422c87ee89de121dd85b
-lastmod: "2026-07-13T17:23:35+02:00"
-translated_at: "2026-07-14T06:42:18+09:00"
+upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
+lastmod: "2026-08-05T11:12:58+02:00"
+translated_at: "2026-08-06T06:31:46+09:00"
 translator: codex
 stale: false
 ---
@@ -28,7 +28,7 @@ Duo Service Infra チームは AI Core Infra 組織の一部であり、AI Gatew
 
 | リソース | リンク |
 |---|---|
-| **チームプロジェクト** | [Duo Service Infra チームプロジェクト](https://gitlab.com/gitlab-org/ai-powered/duo-service-infra/team) |
+| **チームプロジェクト** | [Duo Service Infra チームプロジェクト](https://gitlab.com/gitlab-org/ai-powered/ai-platform/ai-core-infra/duo-service-infra/team) |
 | **Issue ボード** | [Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/11425042) |
 
 ## チームミーティング
