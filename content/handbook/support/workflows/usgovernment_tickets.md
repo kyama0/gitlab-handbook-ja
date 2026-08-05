@@ -3,11 +3,11 @@ title: U.S. Government Support チケットへの対応
 category: Handling tickets
 description: "U.S. Government Support チケットへの対応方法を解説するサポートエンジニアリングのワークフロー"
 upstream_path: /handbook/support/workflows/usgovernment_tickets/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T06:39:37+09:00"
+upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
+translated_at: "2026-08-06T06:28:14+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-29T12:39:09-04:00"
+lastmod: "2026-08-03T18:29:52-07:00"
 ---
 
 U.S. Government Support は、Zendesk U.S. Government インスタンスにおける新規チケットの割り当てに、重み付きラウンドロビンワークフローを使用します。
@@ -260,4 +260,4 @@ CompSecGov で RFH を開くには、`Customer Support` グループに移動し
 
 FedRAMP Okta インスタンスは、90 日間の非アクティブ状態の後にアカウントをロックします。アカウントのロックを解除するには、ロックアウトされた CompSecGov 上で [アクセスリクエスト](https://compsecgov.gitlab-dedicated.us/corporate-security/access-management/-/issues) を開く必要があります。
 
-このプロセスについては、`#g_dedicated-us-pubsec`、Wade、Ian、Kasey、または Nick のいずれかに支援を求めてください。
+このプロセスについては、`#g_dedicated-us-pubsec`、Wade、Kasey、または Nick のいずれかに支援を求めてください。

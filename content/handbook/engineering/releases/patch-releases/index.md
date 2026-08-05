@@ -1,9 +1,9 @@
 ---
 title: "パッチリリース"
 upstream_path: /handbook/engineering/releases/patch-releases/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: "2026-07-02T17:44:09-06:00"
-translated_at: "2026-07-10T07:06:25+09:00"
+upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
+lastmod: "2026-08-05T08:42:06+09:00"
+translated_at: "2026-08-06T06:38:11+09:00"
 translator: claude
 stale: false
 ---
@@ -53,16 +53,16 @@ stale: false
 - バックポートは[メンテナンス対象バージョン](https://docs.gitlab.com/policy/maintenance/#maintained-versions)の stable ブランチを対象とします
 - パッチリリースに含まれるセキュリティ修正は、[内部リリース](/handbook/engineering/releases/internal-releases/)を通じて GitLab Dedicated により早く提供される場合もあります
 
-メンテナンスポリシー外のパッチは、リリースマネージャーとリクエスト者によって要請され合意される必要があります（詳細については[メンテナンスポリシー外のバージョンへのバックポート](https://docs.gitlab.com/ee/policy/maintenance.html#backporting-to-older-releases)を参照してください）。[メンテナンス対象バージョンのリスト](https://docs.gitlab.com/policy/maintenance/#maintained-versions)を参照してください。
+メンテナンスポリシー外のパッチは、Release Managers とリクエスト者によって要請され合意される必要があります（詳細については[メンテナンスポリシー外のバージョンへのバックポート](https://docs.gitlab.com/ee/policy/maintenance.html#backporting-to-older-releases)を参照してください）。[メンテナンス対象バージョンのリスト](https://docs.gitlab.com/policy/maintenance/#maintained-versions)を参照してください。
 
 パッチリリースは、継続的デプロイがブロックされないように、通常の GitLab.com のデプロイと並行して準備されます。このようにして、公開リリースの前に GitLab.com インスタンスにセキュリティ修正を適用できます。
 
 GitLab エンジニアで以下を行いたい場合:
 
-- パッチリリースにセキュリティ修正を含めるには、[GitLab エンジニア向けセキュリティ runbook](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/readme.md#security-guides-by-role)の手順に従ってください。
-- パッチリリースにバグ修正を含めるには、[GitLab エンジニア向けパッチリリース runbook](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/patch/engineers.md)の手順に従ってください。GitLab およびその依存関係のセキュリティ脆弱性は、[セキュリティ是正 SLA](/handbook/security/product-security/vulnerability-management/sla/)に従って対処されます。
+- パッチリリースにセキュリティ修正を含めるには、[GitLab エンジニア向けセキュリティランブック](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/readme.md#security-guides-by-role)の手順に従ってください。
+- パッチリリースにバグ修正を含めるには、[GitLab エンジニア向けパッチリリースランブック](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/patch/engineers.md)の手順に従ってください。GitLab およびその依存関係のセキュリティ脆弱性は、[セキュリティ是正 SLA](/handbook/security/product-security/vulnerability-management/sla/)に従って対処されます。
 
-バグ修正は GitLab の canonical リポジトリで作業されますが、セキュリティ修正は、リリース前に脆弱性が明らかになるのを避けるため、ミラーリングされた GitLab security リポジトリで作業されます。
+バグ修正は GitLab の canonical リポジトリで作業されますが、セキュリティ修正は、リリース前に脆弱性が明らかになるのを避けるため、ミラーリングされた GitLab security リポジトリで作業されます。例外は、公開済みの CVE またはベンダーアドバイザリですでに扱われている脆弱性を是正する、依存関係のみのバージョン更新です。これらは、アプリケーション脆弱性管理手順の[依存関係のバージョン更新](/handbook/security/product-security/security-platforms-architecture/application-security/vulnerability-management#dependency-version-bumps)ガイダンスに従う場合、canonical リポジトリで実装できます。
 
 バックポートの準備をしたい GitLab チームメンバーは、[パッチリリース情報ダッシュボード](#patch-release-information-dashboard)を参照してください。
 
@@ -81,8 +81,6 @@ GitLab エンジニアで以下を行いたい場合:
 
 ## パッチリリースのタイプ {#patch-release-types}
 
-パッチリリースには、バグおよび脆弱性修正を含むパッケージを準備、検証、公開するために、多くのチーム間の複数のタッチポイントがあります。
-
 GitLab には、2 種類のパッチリリースプロセスがあります:
 
 1. **定期スケジュール（デフォルト）**: [GitLab メンテナンスポリシー](https://docs.gitlab.com/ee/policy/maintenance.html)に従って、利用可能なすべてのバグおよび脆弱性修正を公開する SLO 駆動のパッチ。
@@ -90,32 +88,34 @@ GitLab には、2 種類のパッチリリースプロセスがあります:
    [バグ SLO](/handbook/product-development/how-we-work/issue-triage/#severity-slos)と
    [セキュリティ是正 SLA](/handbook/security/product-security/vulnerability-management/sla/)に準拠します。
    [`critical` 脆弱性](/handbook/security/product-security/vulnerability-management/sla/)を含むパッチは、critical パッチとみなされます。
-2. **アウトオブバンド**: 通常の[パッチリリースのケイデンス](#patch-release-cadence)外のパッチで、
-高重大度のバグまたは critical 脆弱性の緩和に厳密に限定して予約されます。これらのアドホックなパッチは、
-宣言された[インシデント](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)からのみ発生し、
-逃した期限への対応や標準のリリースポリシーの回避に決して使用してはなりません。
-パッチリリースのケイデンスに従い、アウトオブバンドパッチは水曜日に提供されます。
+1. **アウトオブバンド**: 通常の[パッチリリースのケイデンス](#patch-release-cadence)外で行うパッチで、
+   高重大度のバグまたは critical 脆弱性の緩和に厳密に限定されます。これらのアドホックな
+   パッチは、期限の超過に対応したり、標準のリリースポリシーを回避したりするために使用してはなりません。
+   パッチリリースのケイデンスに従い、アウトオブバンドパッチは水曜日に提供されます。
 
-   - **Critical セキュリティ脆弱性** の場合 - [セキュリティ RCA](/handbook/security/root-cause-analysis/)
-   が**必須**であり、アウトオブバンドリリースを強いた脆弱性を導入した責任を負うチームによって完了されなければなりません。この説明責任に例外はありません。
+   バグ修正かセキュリティ脆弱性かを問わず、すべてのアウトオブバンドパッチは次の要件を
+   満たす必要があります:
 
-   - **バグ修正** の場合 - [例外プロセス](/handbook/engineering/releases#exception-process)
-   が**必須**であり、アウトオブバンドパッチを実行する前に従わなければなりません。リリースマネージャーは、
-   ビジネス上のプレッシャーに関係なく、このプロセスを完了していないリクエストを却下する権限を持ちます。以下の属性を持つ
-   [インシデントを宣言](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)しなければなりません:
-      - "Out-of-Band Patch" としてマークされている
-      - 重大度 S1 または S2
-      - 寄与要因が「Inadequate testing or QA」または「Miscommunication or coordination gap」である
+   - **例外プロセス**: [例外リクエスト](/handbook/engineering/releases#exception-process)は
+     **必須**であり、アウトオブバンドパッチを実行する前に従う必要があります。Release Managers は、
+     ビジネス上のプレッシャーに関係なく、このプロセスを完了していないリクエストを却下する権限を持ちます。
+   - **インシデント宣言**: 次の属性を持つ[インシデントを宣言する必要があります](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident):
+     - 「Out-of-Band Patch」としてマークされている
+     - Severity S1 または S2
+     - Contributing Factor が「Inadequate testing or QA」または「Miscommunication or coordination gap」である
+   - **FCL とインシデントレビュー**: あらゆる GitLab プラットフォームの信頼性と可用性を維持するため、
+     [インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)と
+     [FCL](/handbook/engineering/#feature-change-locks)を完了することが**必須**です。
 
-      あらゆる GitLab プラットフォームの信頼性と可用性を維持するためのバグ修正については、**
-      [インシデントレビュー](/handbook/engineering/infrastructure-platforms/incident-review/)と
-      [FCL](/handbook/engineering/#feature-change-locks)の完了が必須です**。
+   さらに、**critical セキュリティ脆弱性**の場合は、[セキュリティ RCA](/handbook/security/root-cause-analysis/)が
+   **必須**であり、アウトオブバンドリリースを強いた脆弱性を導入した責任を負うチームが完了しなければなりません。
+   この説明責任に例外はありません。
 
 ## パッチリリースのプロセス {#patch-release-process}
 
-パッチリリースのプロセスは、1 つの重要な違いを除いてすべてのタイプで同じです: 計画されたパッチには
-パッチリリース準備時点で準備が整っているすべてのバグおよびセキュリティ修正が含まれますが、計画外のパッチには
-おそらく高重大度の脆弱性のセキュリティ修正のみが含まれます。
+パッチリリースのプロセスは、1 つの重要な違いを除いてすべてのタイプで同じです: 定期スケジュールのパッチには
+パッチリリース準備時点で準備が整っているすべてのバグおよびセキュリティ修正が含まれますが、アウトオブバンドパッチには
+高重大度のバグまたは critical 脆弱性の修正のみが含まれる可能性があります。
 
 エンドツーエンドのパッチリリースプロセスは、以下のステージで構成されます:
 
@@ -136,19 +136,19 @@ GitLab には、2 種類のパッチリリースプロセスがあります:
   - 各対象バージョンのバックポート MR。ほとんどの場合、これはサポートされている各バージョンをカバーするために 4 つの MR を意味します。各 MR はパイプラインが通過し、必要な承認があり、処理のためにリリースボットにアサインされていなければなりません。
   - `~"security-target"` ラベルが適用されている。これにより、Issue が自動的にレビューされ、準備ができていればセキュリティトラッキング Issue にリンクされます。
 
-計画された期日の 2 日前に、リリースマネージャーはパッチリリースプロセスを開始し、
+計画された期日の 2 日前に、Release Managers はパッチリリースプロセスを開始し、
 準備されたすべてのバグおよびセキュリティ修正が安全にリリースされることを確認します。GitLab.com へのデプロイは並行して実行されます。
 
 パッチリリースには以下のフェーズがあります:
 
-- **ステップ 2: 最初のステップ** リリース準備は、リリースマネージャーが `prepare` chatops コマンドを実行して、パッチリリースを導く新しいリリースタスク Issue を作成したときに始まります。ここから、彼らはチェックリストに従って、リリースの準備に必要な初期セットアップとコミュニケーション Issue を完了します。
-- **ステップ 3: 早期マージフェーズ** - リリースマネージャーは GitLab.com にセキュリティ修正をデプロイします。セキュリティトラッキング Issue にリンクされた `~"security-target"` ラベルを持つ修正は、デフォルトブランチを対象とした MR がマージされます。これにより、修正が self-managed ユーザーにリリースされる前に GitLab.com にデプロイできます。
+- **ステップ 2: 最初のステップ** リリース準備は、Release Managers が `prepare` chatops コマンドを実行して、パッチリリースを導く新しいリリースタスク Issue を作成したときに始まります。ここから、彼らはチェックリストに従って、リリースの準備に必要な初期セットアップとコミュニケーション Issue を完了します。
+- **ステップ 3: 早期マージフェーズ** - Release Managers は GitLab.com にセキュリティ修正をデプロイします。セキュリティトラッキング Issue にリンクされた `~"security-target"` ラベルを持つ修正は、デフォルトブランチを対象とした MR がマージされます。これにより、修正が self-managed ユーザーにリリースされる前に GitLab.com にデプロイできます。
 - **ステップ 4: バックポートのマージ** - リリース期日の前日、サポートされているバージョンを対象とするセキュリティ修正を含むバックポートがマージされます。この時点で、パッチに含まれるすべてのものが GitLab.com にデプロイされていなければならず、バックポートはすべての stable ブランチに適用されなければなりません。
-- **ステップ 5: リリースの準備*** - すべての修正がデプロイされマージされたら、リリースマネージャーはパッケージを準備しテストします。
-  - **ステップ 5a: タグ付け** - リリースマネージャーは[メンテナンス対象バージョン](https://docs.gitlab.com/policy/maintenance/#maintained-versions)用の新しいパッチリリースパッケージにタグを付けます。
+- **ステップ 5: リリースの準備*** - すべての修正がデプロイされマージされたら、Release Managers はパッケージを準備しテストします。
+  - **ステップ 5a: タグ付け** - Release Managers は[メンテナンス対象バージョン](https://docs.gitlab.com/policy/maintenance/#maintained-versions)用の新しいパッチリリースパッケージにタグを付けます。
   - **ステップ 5b: デプロイ** - パッチリリースパッケージが GitLab リリースインスタンスにデプロイされテストされます。
-  - **ステップ 5c: リリース** - リリースマネージャーはパッチリリースに関連付けられたパッケージを公開します。
-- **ステップ 6: 最終ステップ** - この時点で、パッチリリースパッケージはすべてのユーザーが利用可能です。リリースマネージャーはパッチリリースの最終ステップを締めくくります。
+  - **ステップ 5c: リリース** - Release Managers はパッチリリースに関連付けられたパッケージを公開します。
+- **ステップ 6: 最終ステップ** - この時点で、パッチリリースパッケージはすべてのユーザーが利用可能です。Release Managers はパッチリリースの最終ステップを締めくくります。
   - **ステップ 6a**: パッチリリースのブログ記事が公開されます
   - **ステップ 6b**: デフォルトブランチ、stable ブランチ、タグが Security から Canonical に同期され、オープンに作業するデフォルトの状態に戻ります。
 
@@ -169,7 +169,7 @@ GitLab チームメンバーは、今後のパッチリリースに関する以�
 
 ### 次のパッチリリースにバグ修正をバックポートするにはどうすればよいですか？ {#how-can-i-backport-a-bug-fix-to-the-next-patch-release}
 
-パッチリリースにバグ修正を含めたい GitLab エンジニアは、[GitLab エンジニア向けパッチリリース runbook](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/patch/engineers.md)の手順に従ってください。
+パッチリリースにバグ修正を含めたい GitLab エンジニアは、[GitLab エンジニア向けパッチリリースランブック](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/patch/engineers.md)の手順に従ってください。
 
 ### 次のパッチリリース情報はどこで確認できますか？ {#where-can-i-find-the-next-patch-release-information}
 
@@ -199,6 +199,6 @@ GitLab チームメンバーは、今後のパッチリリースに関する以�
 セキュリティ脆弱性が二次的なバグを導入した場合、対応はその重大度によって異なります:
 
 - **脆弱性ではないバグ（S3 および S4）**: 適切なパスは、通常のパッチリリースプロセスに従って、パッチリリースが公開された後に canonical リポジトリで Issue を修正することです。
-- **脆弱性ではないバグ（高重大度: S1 および S2）**: PSIRT とリリースマネージャーに直ちに連絡し、次のステップを調整してください。一方的に取り消そうとしないでください。
+- **脆弱性ではないバグ（高重大度: S1 および S2）**: PSIRT と Release Managers に直ちに連絡し、次のステップを調整してください。一方的に取り消そうとしないでください。
 
-セキュリティ修正が公開されているかどうかに関わらず、いかなる取り消しも、進める前に**[PSIRT チーム](/handbook/security/product-security/psirt/)からの明示的な書面による承認が必要です**。緩和オプションとステップバイステップのガイダンスについては、[セキュリティマージリクエストによって導入されたバグの緩和方法](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/bugs_introduced_by_security_merge_request.md) runbook を参照してください。
+セキュリティ修正が公開されているかどうかに関わらず、いかなる取り消しも、進める前に**[PSIRT チーム](/handbook/security/product-security/psirt/)からの明示的な書面による承認が必要です**。緩和オプションとステップバイステップのガイダンスについては、[セキュリティマージリクエストによって導入されたバグの緩和方法](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/bugs_introduced_by_security_merge_request.md)ランブックを参照してください。

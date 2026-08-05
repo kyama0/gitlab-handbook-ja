@@ -2,9 +2,9 @@
 title: AI Core Infra:Semantic Code Search
 description: "AI Core Infra 内の Semantic Code Search ファンクショナルチーム。コードリポジトリの意味的理解を提供する GitLab の RAG 実装に重点を置いています。"
 upstream_path: /handbook/engineering/ai/ai-core-infra/semantic-code-search/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: "2026-07-09T09:31:33+02:00"
-translated_at: "2026-07-10T20:48:59+09:00"
+upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
+lastmod: "2026-08-05T11:12:58+02:00"
+translated_at: "2026-08-06T06:31:46+09:00"
 translator: codex
 stale: false
 ---
@@ -26,8 +26,8 @@ Semantic Code Search チームは AI Core Infra 組織の一部です。この�
 
 | リソース | リンク |
 |---|---|
-| **チームプロジェクト** | [gitlab-org/ai-powered/semantic-code-search/team](https://gitlab.com/gitlab-org/ai-powered/semantic-code-search/team) |
-| **計画 Issue** | [計画 Issue](https://gitlab.com/gitlab-org/ai-powered/semantic-code-search/team/-/work_items?sort=created_date&state=opened&label_name%5B%5D=Planning%20Issue&first_page_size=100) |
+| **チームプロジェクト** | [gitlab-org/ai-powered/ai-platform/ai-core-infra/semantic-code-search/team](https://gitlab.com/gitlab-org/ai-powered/ai-platform/ai-core-infra/semantic-code-search/team) |
+| **計画 Issue** | [計画 Issue](https://gitlab.com/gitlab-org/ai-powered/ai-platform/ai-core-infra/semantic-code-search/team/-/work_items?sort=created_date&state=opened&label_name%5B%5D=Planning%20Issue&first_page_size=100) |
 | **Issue ボード** | [Issue ボード](https://gitlab.com/groups/gitlab-org/-/boards/11125588) |
 
 ## ランブック

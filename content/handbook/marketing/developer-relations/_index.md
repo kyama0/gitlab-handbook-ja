@@ -3,9 +3,9 @@ title: "Developer Relations"
 description: "Developer Relations チームは、コミュニティと連携し、GitLab への貢献に対するサポートと評価を確実に提供することで、GitLab のミッションを支えています。"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/developer-relations/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-lastmod: "2026-07-30T10:20:47+02:00"
-translated_at: "2026-07-31T06:15:26+09:00"
+upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
+lastmod: "2026-08-05T12:28:06-04:00"
+translated_at: "2026-08-06T07:24:45+09:00"
 translator: codex
 stale: false
 ---
@@ -21,7 +21,7 @@ Developer Relations（略: DevRel）は、テクノロジー、コミュニテ�
 
 Developer Relations は、GitLab の顧客を支援し、コミュニティを通じてつながり、開発者がいる場所でエンゲージすることで、プラットフォームの認知と採用を推進します。GitLab は GitLab.com だけで毎月 3000 人を超える開発者とエンゲージし、毎月 250 件以上の貢献を受けています。これにより、DevSecOps 領域でのユニークな影響力を持ち、イノベーションの加速に貢献しています。私たちの究極的な目標は、クラス最高の技術的なイネーブルメントとアクティブなコントリビューターコミュニティを通じて、開発者の心と頭を勝ち取ることで、GitLab の認知度を高め、顧客の成功を推進することです。
 
-Developer Relations では、私たちのミッションとビジョンを会社の 3 年戦略と整合させています。私たちは [誰もが貢献できる](/handbook/company/mission/#mission) と信じています。GitLab がこのゴールを達成できるよう、アウトリーチとエンゲージメントを倍増し、コミュニティでのプレゼンスを強化し、健全なコントリビューターコミュニティをサポートすることを目指しています。最終的に、これらのゴールは認知度、採用を高め、私たちのデュアルフライホイールを駆動します。
+Developer Relations では、私たちのミッションとビジョンを会社の 3 年戦略と整合させています。私たちは [誰もが貢献できる](/handbook/company/mission/#mission)と信じています。GitLab がこのゴールを達成できるよう、アウトリーチとエンゲージメントを倍増し、コミュニティでのプレゼンスを強化し、健全なコントリビューターコミュニティをサポートすることを目指しています。最終的に、これらのゴールは認知度、採用を高め、私たちのデュアルフライホイールを駆動します。
 
 ## <i class="fas fa-map-marked-alt fa-fw color-orange font-awesome"></i> 私たちの戦略
 
@@ -42,19 +42,19 @@ Developer Relations では、私たちのミッションとビジョンを会社
   - [#developer-relations](https://gitlab.slack.com/archives/C0R04UMT9): すべての GitLab 関連のディスカッション用（例: Issue に関する質問、近日開催のイベントの告知）
   - [developer-relations-confidential](https://gitlab.slack.com/archives/C0566B6N2KC): （非公開）GitLab 外の人がいるチャンネルで共有できない機密トピックのディスカッション用（例: チーム内で #company-fyi-private で共有されたトピックの議論）
 - Slack アクセスを持つ GitLab チームメンバーやその他の人は、[`#developer-relations`](https://gitlab.slack.com/messages/developer-relations) Slack チャンネルにアクセスするか、`@devrel-team` グループハンドルにタグ付けすることで、私たちに連絡できます。
-- より広い GitLab コミュニティのメンバーは、[公開 Discord ルーム](https://discord.gg/gitlab) で私たちとつながることができます。
+- より広い GitLab コミュニティのメンバーは、[公開 Discord ルーム](https://discord.gg/gitlab)で私たちとつながることができます。
 
 Developer Relations 内のチームには、以下の Slack チャンネルでアクセスできます:
 
 - [#developer-advocacy](https://gitlab.slack.com/archives/CMELFQS4B): [Developer Advocate](/handbook/marketing/developer-relations/developer-advocacy/) チームは、コンテンツの更新、ソートリーダーシップと製品アイデアを共有し、コミュニティ対応や CFP などをサポートします。
-- [#developer-relations-programs](https://gitlab.slack.com/archives/C024ZBWK5KJ): [Developer Relations Programs](/handbook/marketing/developer-relations/programs/) に関するすべての問い合わせ用
-  - [#developer-relations-engineering](https://gitlab.slack.com/archives/C02R0NE6P6C): [Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/) に関するすべての問い合わせ用
+- [#developer-relations-programs](https://gitlab.slack.com/archives/C024ZBWK5KJ): [Developer Relations Programs](/handbook/marketing/developer-relations/programs/)に関するすべての問い合わせ用
+  - [#developer-relations-engineering](https://gitlab.slack.com/archives/C02R0NE6P6C): [Developer Relations Engineering](/handbook/marketing/developer-relations/engineering/)に関するすべての問い合わせ用
   - [#developer-relations-community-contributions](https://gitlab.slack.com/archives/C02R0NE6P6C): コミュニティ貢献に関するディスカッション用
   - [#developer-relations-eng-and-programs](https://gitlab.slack.com/archives/C02R0NE6P6C): Developer Relations Engineering と Programs 間のクロスチームディスカッション用
 
 ### メールで連絡する
 
-- [各プログラム固有のメールアドレス](/handbook/marketing/developer-relations/programs/) をご利用ください
+- [各プログラム固有のメールアドレス](/handbook/marketing/developer-relations/programs/)をご利用ください
 
 ### Issue を作成する
 
@@ -121,7 +121,7 @@ Developer Relations 内のチームには、以下の Slack チャンネルで�
 
 会社、製品、または価格設定に関する変更に取り組んでおり、それらが GitLab コミュニティのメンバーや GitLab ブランドに重大な影響を与えることが予想される場合は、`~Community Interest` ラベルを使用することをお勧めします。これにより、Developer Relations チームが計画プロセスにおいて、より広い GitLab コミュニティの利益を代表できます。
 
-Developer Relations チームのすべてのメンバーは、[`gitlab-com`](https://gitlab.com/groups/gitlab-com/-/labels?search=community) と [`gitlab-org`](https://gitlab.com/groups/gitlab-org/-/labels?search=community) の両方のプロジェクトでこのラベルをサブスクライブする必要があります。
+Developer Relations チームのすべてのメンバーは、[`gitlab-com`](https://gitlab.com/groups/gitlab-com/-/labels?search=community)と [`gitlab-org`](https://gitlab.com/groups/gitlab-org/-/labels?search=community)の両方のプロジェクトでこのラベルをサブスクライブする必要があります。
 
 ### チームのタッチポイント
 
@@ -155,7 +155,7 @@ GitLab Developer Relations チームのロゴは、Google Drive で `gitlab-devr
 
 ## <i class="fas fa-receipt"></i> チーム予算
 
-詳細は [Developer Relations 予算ページ](/handbook/marketing/developer-relations/workflows-tools/team-budgets/) で確認できます。
+詳細は [Developer Relations 予算ページ](/handbook/marketing/developer-relations/workflows-tools/team-budgets/)で確認できます。
 
 ## <i class="fas fa-globe fa-fw color-orange font-awesome"></i> コミュニティの多様性、インクルージョン、ベロンギング
 
@@ -227,7 +227,7 @@ GitLab Developer Relations チームのロゴは、Google Drive で `gitlab-devr
 
 ## <i class="fas fa-book" fa-fw color-orange font-awesome></i> Community Learning Pathway
 
-[Community Learning Pathway](/handbook/marketing/developer-relations/community-pathway) は、Developer Relations チームの働き方、さまざまなコミュニティプログラム、GitLab への貢献方法をコミュニティに伝えるために作られたコースです。コースを完了したコミュニティメンバーと GitLab チームメンバーはバッジを獲得します。
+[Community Learning Pathway](/handbook/marketing/developer-relations/community-pathway)は、Developer Relations チームの働き方、さまざまなコミュニティプログラム、GitLab への貢献方法をコミュニティに伝えるために作られたコースです。コースを完了したコミュニティメンバーと GitLab チームメンバーはバッジを獲得します。
 
 ## <i class="fas fa-book" fa-fw color-orange font-awesome></i> Community Building Reading Group
 
@@ -252,18 +252,18 @@ Community Building Reading Group は、GitLab でコミュニティを構築す�
 - **支援と成長の場を作る。** コミュニティと働くには感情労働が必要であり、それに取り組む人々は、同じ志を持つ協力者と仕事上の課題を話し合う場から恩恵を得ることがよくあります。このグループはそのような場の 1 つとして機能します。
 - **リソースを生成し共有する。** コミュニティと働くことは、ベストプラクティスと信頼できるフレームワークの知識があると容易になります。最先端に関する資料を読みレビューすることで、メンバーは他の人がアクセスし学べる知識共有の場を生成します。
 
-コミュニティ構築の実践に関心のある GitLab チームメンバーは誰でも、このグループに参加し貢献できます。典型的な [GitLab ブッククラブ](/handbook/leadership/book-clubs/) とは異なり、このリーディンググループは:
+コミュニティ構築の実践に関心のある GitLab チームメンバーは誰でも、このグループに参加し貢献できます。典型的な [GitLab ブッククラブ](/handbook/leadership/book-clubs/)とは異なり、このリーディンググループは:
 
 - 個別で期限のあるイベントではなく、継続的な取り組みです
 - 単一の作品ではなく、一連の作品に焦点を当てています
 
 リーディンググループは、グループメンバーが一緒に決める頻度で運営されます。グループメンバーは、毎週扱う資料、例えば書籍の章、ホワイトペーパー、調査レポート、プレゼンテーション録画、ケーススタディも共同で決めます。
 
-1. グループメンバーは、Developer Relations チームの `Community Building` [プロジェクト](https://gitlab.com/gitlab-com/marketing/developer-relations/community-building) で `reading-group` テンプレートを使って Issue を作成し、`Reading Group::Proposed` ラベルを付けることで、グループが学習し議論する資料を提案します。
+1. グループメンバーは、Developer Relations チームの `Community Building` [プロジェクト](https://gitlab.com/gitlab-com/marketing/developer-relations/community-building)で `reading-group` テンプレートを使って Issue を作成し、`Reading Group::Proposed` ラベルを付けることで、グループが学習し議論する資料を提案します。
 1. グループメンバーは互いの提案を閲覧し、学習対象を共同で選択できます。
 1. 読むものを決めたら、Issue を `Reading Group::Up Next.` に再ラベル付けします。
 1. 提案された資料の読書と学習を始めたら、`Reading Group::Now Reading` ラベルを適用して Issue を再ラベル付けします。
-1. 選択した資料を終えたら、関連する Issue に `Reading Group::Finished` ラベルを適用します。[プロジェクトボード](https://gitlab.com/gitlab-com/marketing/developer-relations/community-building/-/boards/4595510) がすべての選択を追跡します。
+1. 選択した資料を終えたら、関連する Issue に `Reading Group::Finished` ラベルを適用します。[プロジェクトボード](https://gitlab.com/gitlab-com/marketing/developer-relations/community-building/-/boards/4595510)がすべての選択を追跡します。
 
 読みながら、グループメンバーは `Community Building` プロジェクトに保存された[ファイル](https://gitlab.com/gitlab-com/marketing/developer-relations/community-building/-/tree/master/resources)を通じてメモと所感を非同期に共有します。選択した資料を完了したら、これらのメモを磨き、`Community Building` Wiki を更新します。
 
