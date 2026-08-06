@@ -2,11 +2,11 @@
 title: "GitLab Singapore Pte Ltd"
 description: "シンガポールのチームメンバー向け GitLab の福利厚生をご紹介します"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd/
-upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
-translated_at: "2026-08-05T06:06:38+09:00"
+upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
+translated_at: "2026-08-07T06:19:17+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-04T12:47:53-07:00"
+lastmod: "2026-08-06T10:08:38-07:00"
 ---
 
 ## 私たちがあなたをサポートします
@@ -30,12 +30,14 @@ GitLab Singapore のチームメンバーは、HSBC Insurance を通じて包括
 - **外来専門診療** - 専門医療の知見へのアクセス
 - **歯科** - 口腔衛生のニーズに対するカバレッジ
 
+詳細については、[GitLab Singapore Benefit Overview](https://drive.google.com/file/d/1OxHW3FxBqSfm6P_cfZ4lZ-WMDHYC27-H/view?usp=sharing)を参照してください。
+
 </details>
 
 <details markdown="1">
 <summary>専門医ケアへのアクセス方法</summary>
 
-**ステップ 1**：お近くの専門医が[IHP パネルクリニックディレクトリ](https://drive.google.com/file/d/1FO3ZpkrHGuaqooMNDUrCI62i2JQOW6vE/view?usp=sharing)に記載されているか確認してください。最新のリストは IHP App で確認してください。
+**ステップ 1**: 利用予定の専門医が[IHP パネルクリニックディレクトリ](https://drive.google.com/file/d/1FO3ZpkrHGuaqooMNDUrCI62i2JQOW6vE/view?usp=sharing)に記載されているか確認してください。最新のリストは IHP App で確認してください。
 
 **ステップ 2**:
 
@@ -75,15 +77,15 @@ IHP ポータルにアクセスして以下を行えます:
 - E サービス（IHP OneConnect App）
 - 主な注意事項
 
-- **請求手続き**：さらに詳しくは、[Benefit Overview](https://drive.google.com/file/d/1OxHW3FxBqSfm6P_cfZ4lZ-WMDHYC27-H/view?usp=sharing)のスライド 17〜22 を参照してください
-- Pacific Prime は GitLab の登録ブローカーであり、請求のサポートやエスカレーションを支援します：メール：SGServiceTeam@pacificprime.com、電話：+65 6346 3781、オプション 3
+- **請求手続き**: さらに詳しくは、[Benefit Overview](https://drive.google.com/file/d/1OxHW3FxBqSfm6P_cfZ4lZ-WMDHYC27-H/view?usp=sharing)のスライド 17 〜 22 を参照してください
+- Pacific Prime は GitLab の登録ブローカーであり、請求のサポートやエスカレーションを支援します: メール: SGServiceTeam@pacificprime.com、電話: +65 6346 3781、オプション 3
 
 </details>
 
 <details markdown="1">
 <summary>登録方法</summary>
 
-- **新規チームメンバー**: 入社後最初の週にシンガポール福利厚生オンボーディングフォームを受け取ります。完了すると、Total Rewards チームがすべてのグループプランに登録します。引受フォームは入社後 1 か月以内に届く予定です。
+- **新規チームメンバー**: 入社後最初の週にシンガポール福利厚生オンボーディングフォームを受け取ります。完了すると、Total Rewards チームがすべてのグループプランに登録します。該当する場合、引受フォームは入社後 1 か月以内に届く予定です。
 - **ライフチェンジ**: 更新情報を total-rewards@gitlab.com にメールしてください。扶養家族を追加する場合は、以下を含めてください: 扶養家族のフルネーム、生年月日、NRIC 番号、性別、国籍。
 
 </details>
@@ -106,7 +108,7 @@ GitLab はすべてのシンガポールチームメンバーに、Fullerton Hea
 <summary>含まれる内容</summary>
 
 - シンガポール内の任意の Fullerton Health 拠点でのエグゼクティブヘルススクリーニング
-- GitLab への直接請求（CPF 支払いではない）
+- GitLab への直接請求（CPF 拠出対象外）
 - 自己負担で検査の追加またはアップグレードのオプション
 - 各暦年に給付金が更新されます
 
@@ -134,9 +136,16 @@ ehs@fullertonhealth.com または +65 6333 3636（オプション 3）にて Ful
 
 GitLab は、HSBC Insurance を通じて会社負担のグループ定期生命保険を提供しています
 
-- **無料保障限度額（FCL）**：$300,000（FCL を超えるカバレッジは、引受審査と承認の対象となります）
-- **フルカバレッジ**：基本月給の 36 倍、最低 $500,000、最高 $3,000,000
+- **無料保障限度額（FCL）**: $300,000（FCL を超えるカバレッジは、引受審査と承認の対象となります）。
+- **フルカバレッジ**: 基本月給の 36 倍、最低 $500,000、最高 $3,000,000
 - 詳細については、[GitLab Singapore Benefit Overview](https://drive.google.com/file/d/1OxHW3FxBqSfm6P_cfZ4lZ-WMDHYC27-H/view)の Group Term Life insurance セクションを参照してください
+
+<details markdown="1">
+<summary>引受ガイド</summary>
+
+生命保険給付が無料保障限度額を超える場合、HSBC から引受審査の実施について連絡があります。引受ガイドについては、[GitLab Singapore Benefit Overview](https://drive.google.com/file/d/1OxHW3FxBqSfm6P_cfZ4lZ-WMDHYC27-H/view?usp=sharing)のスライド 18 を参照してください。
+
+</details>
 
 ### 個人傷害保険
 
@@ -202,7 +211,7 @@ GitLab Singapore は、法定休暇と私たちのグローバルな育児休暇
 1. Workday で「Parental Leave」リクエストを提出
 2. [GPPL 申告フォーム](https://file.go.gov.sg/gpfd1.pdf)を leaves@gitlab.com に送信
 
-適格性については [Ministry of Manpower のウェブサイト](https://www.mom.gov.sg/employment-practices/leave/paternity-leave) で詳細をご覧ください。
+適格性については [Ministry of Manpower のウェブサイト](https://www.mom.gov.sg/employment-practices/leave/paternity-leave)で詳細をご覧ください。
 
 </details>
 
@@ -213,7 +222,7 @@ GitLab Singapore は、法定休暇と私たちのグローバルな育児休暇
 - 両親の間で 10 週間共有（デフォルトでは各 5 週間。LifeSG ポータルを通じて再配分可能）
 - 完全に政府支給で、CPF 拠出を含めて週あたり SGD 2,500 を上限とします
 - 子の出生から 12 か月以内に使用する必要があります
-- 適格性については [Ministry of Manpower のウェブサイト](https://www.mom.gov.sg/employment-practices/leave/shared-parental-leave) で詳細をご覧ください。
+- 適格性については [Ministry of Manpower のウェブサイト](https://www.mom.gov.sg/employment-practices/leave/shared-parental-leave)で詳細をご覧ください。
 
 <details markdown="1">
 <summary>申請方法</summary>
@@ -252,11 +261,11 @@ GitLab Singapore は、法定休暇と私たちのグローバルな育児休暇
 - 育児および延長育児休暇
 - 無給乳児ケア休暇
 
-## ご質問は？
+## ご質問は?
 
 ご質問は、サポートチームまでお問い合わせください:
 
 - **福利厚生に関する質問**: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
-- **請求サポート**：Pacific Prime は GitLab の登録ブローカーであり、請求のサポートやエスカレーションを支援します：メール：SGServiceTeam@pacificprime.com、電話：+65 6346 3781、オプション 3
+- **請求サポート**: Pacific Prime は GitLab の登録ブローカーであり、請求のサポートやエスカレーションを支援します: メール: SGServiceTeam@pacificprime.com、電話: +65 6346 3781、オプション 3
 - **医療請求**: IHP ポータルまたは +64 6715 9422
 - **健康診断**: ehs@fullertonhealth.com または +65 6333 3636（オプション 3）

@@ -1,5 +1,5 @@
 ---
-title: "Duo Agent Platform ADR 008: Duo Messaging Service"
+title: "Duo Agent Platform ADR 008: Duo メッセージングサービス"
 status: proposed
 creation-date: "2026-04-17"
 authors: [ "@thomas-schmidt" ]
@@ -9,11 +9,11 @@ owning-stage: "~devops::ai_powered"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/duo_workflow/decisions/008_duo_messaging_service/
-upstream_sha: 1c5f183add4a3220f2aa77e0c98565c4fad645e2
-translated_at: "2026-07-18T06:25:37+09:00"
+upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
+translated_at: "2026-08-07T06:13:54+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-17T14:17:40-04:00"
+lastmod: "2026-08-05T14:10:51-04:00"
 ---
 
 ## コンテキスト
@@ -39,7 +39,7 @@ lastmod: "2026-07-17T14:17:40-04:00"
 
 4. **直接 gRPC** — Sidekiq が DWS への gRPC 双方向ストリームを直接開きます。低レイテンシで型安全です。**ADR 004 に違反**します（DWS への 2 つ目の経路を導入するため）。HTTP アクションのプロキシを Ruby で再実装する必要があります。コードベースには Sidekiq から gRPC 双方向ストリーミングを行う確立されたパターンがありません。同じ実行環境の制限があります。ファイルシステムやツールが利用できません。
 
-5. **Workhorse ヘッドレス HTTP** — HTTP POST 経由でワークフロートリガーを受け付け、内部で gRPC ストリームを管理する新しい Workhorse エンドポイントです。**チームをまたぐ Workhorse の変更が必要**（Go コード約 50〜100 行）で、ランナーのライフサイクルを変更する必要があります。オプション 2〜4 と同じ実行環境の制限があります。追加のアーキテクチャなしには開発タスクへの道がありません。
+5. **Workhorse ヘッドレス HTTP** — HTTP POST 経由でワークフロートリガーを受け付け、内部で gRPC ストリームを管理する新しい Workhorse エンドポイントです。**チームをまたぐ Workhorse の変更が必要**（Go コード約 50 〜 100 行）で、ランナーのライフサイクルを変更する必要があります。オプション 2 〜 4 と同じ実行環境の制限があります。追加のアーキテクチャなしには開発タスクへの道がありません。
 
 ## 決定
 
@@ -58,13 +58,13 @@ graph LR
     Adapter["🔌 Delivery Adapter<br/><i>GitlabDuoNote · Slack · ...</i><br/><i>lifecycle: progress, results, errors</i>"]
     Base["⚙️ Base Adapter<br/><i>mechanism: identity, membership,<br/>enrichment, execution</i>"]
     CI["🏃 CI Runner<br/><i>ExecuteWorkflowService</i>"]
-    CW["📬 CallbackWorker<br/><i>WorkloadFinishedEvent · WorkflowStartedEvent</i>"]
+    CW["📬 CallbackWorker<br/><i>WorkflowStartedEvent · WorkflowFinishedEvent<br/>WorkloadFinishedEvent (backstop)</i>"]
     PW["📡 ProgressDeliveryWorker<br/><i>checkpoint streaming (live)</i>"]
 
     Caller -->|"resolved params"| Adapter
     Adapter -->|"trigger"| Base
     Base -->|"start pipeline"| CI
-    CI -.->|"workflow started / finished"| CW
+    CI -.->|"workflow started / finished,<br/>workload finished"| CW
     CI -.->|"checkpoint created"| PW
     CW -.->|"result / error / started"| Adapter
     PW -.->|"on_progress delta"| Adapter
@@ -115,9 +115,15 @@ sequenceDiagram
 
     rect rgb(254, 249, 195)
         Note right of CW: Callback phase (async)
-        CI-->>CW: WorkloadFinishedEvent
+        CI-->>CW: WorkflowFinishedEvent (agent done, answer persisted)
         CW->>Adapter: deliver_result(message)
-        Adapter->>User: Post answer + on_flow_completed (✅)
+        Adapter->>User: Post answer
+        Adapter-->>CW: truthy only if it reached the surface
+        CW->>CW: Record delivered_at
+        CW->>Adapter: on_flow_completed (✅)
+        Note over CI,CW: Later, once CI finalization completes
+        CI-->>CW: WorkloadFinishedEvent (backstop)
+        CW->>CW: delivered_at present → no-op
     end
 ```
 
@@ -144,7 +150,15 @@ sequenceDiagram
 
 **段階的なレジリエンス。** ライフサイクルフックは重要度によって分類されます。ユーザー向けの確認応答は成功する必要があり、そうでなければトリガーは短絡します。ベストエフォートのフック（進捗更新、完了シグナル）は失敗に対して耐性があります。セキュリティ上重要なステップとワークフロー実行は明示的に失敗します。
 
-**EventStore コールバック。** `CallbackWorker` は、`WorkloadFinishedEvent`（最終結果の配信）と `WorkflowStartedEvent`（エージェントが `:running` に遷移したときに `on_flow_started` を実行）の両方をサブスクライブします。ワークフローレコード（JSONB カラム）の `messaging_callback_context` をチェックし、アダプターを通じて結果を配信します。GraphQL もポーリングも不要です。ベースアダプターは、アダプターが提供したコールバックコンテキストを、永続化する前にオーケストレーションのメタデータ（アダプターキー、サービスアカウント ID、フロー参照、バージョン）でエンリッチします。これにより、非同期経路ではアダプターとサービスアカウントを再解決せずに解決できます。例:
+**EventStore コールバック。** `CallbackWorker` はメッセージングのライフサイクルイベントをサブスクライブする唯一のワーカーであり、次の 3 つをサブスクライブします:
+
+| イベント | フック | 役割 |
+|---|---|---|
+| `Ai::DuoWorkflows::WorkflowStartedEvent` | `on_flow_started` | エージェントが `:running` に遷移した |
+| `Ai::DuoWorkflows::WorkflowFinishedEvent` | `deliver_result` | **主要な結果配信** — エージェントが完了した瞬間に発火する |
+| `Ci::Workloads::WorkloadFinishedEvent` | `deliver_result` / `on_flow_failed` | 失われた成功時の配信に対するバックストップ。失敗（`drop` / `stop`）時の主要な経路 |
+
+ワークフローレコード（JSONB カラム）の `messaging_callback_context` をチェックし、アダプターを通じて結果を配信します。GraphQL もポーリングも不要です。ベースアダプターは、アダプターが提供したコールバックコンテキストを、永続化する前にオーケストレーションのメタデータ（アダプターキー、サービスアカウント ID、フロー参照、バージョン）でエンリッチします。これにより、非同期経路ではアダプターとサービスアカウントを再解決せずに解決できます。例:
 
 ```json
 {
@@ -155,12 +169,23 @@ sequenceDiagram
   "status_ts": "1234567890.654321",
   "session_url": "https://gitlab.com/-/duo_workflows/123",
   "progress_cursor": 42,
+  "delivered_at": "2026-08-05T10:38:05Z",
   "service_account_id": 12345,
   "flow_reference": "developer/v1"
 }
 ```
 
 **`progress_cursor`** は、各配信の成功後に `ProgressDeliveryWorker` が書き込み、次の tick で差分を計算するために読み取ります。これにより、各配信は新しいチェックポイントだけを処理し、リトライ時も冪等になります。
+
+### 返信の配信: パイプラインの終了処理時ではなくワークフローの完了時
+
+**返信は CI パイプラインの終了処理時ではなく、エージェントの完了時に配信されます。** 当初、配信で利用できる実行終了時のシグナルは、`Ci::PipelineFinishedEvent` から派生する `WorkloadFinishedEvent` だけでした。そのため、回答は `checkpoints.latest` に完全に永続化されたまま、CI ジョブの終了処理中に待機していました。これにより、Rails と DWS の完全に外側で、パイプラインの終了処理にかかるコストに応じて実行ごとに変動する**大幅な遅延がすべての返信に追加されていました**。`Ai::DuoWorkflows::WorkflowFinishedEvent` はこのギャップを解消します。これは `after_transition on: :finish` から発行され、成功した `running → finished` 遷移（`drop` / `stop` ではない）と、`messaging_callback_context` を持つワークフローにスコープされるため、メッセージング以外の CI ワークフローは何も発行しません。
+
+**順序の前提条件（DWS）。** `:finish` で安全に配信できるのは、DWS が終端チェックポイントを Rails に永続化するまで FINISH 遷移を遅らせるためです。以前、LangGraph の `aput_writes` は、メッセージを含む `aput` が保存される*前*に FINISH をトリガーしていたため、リスナーが古い `checkpoints.latest` を読み取り、応答がないと報告する可能性がありました。これは、チェックポイントの書き込み完了からずっと後に発火するパイプラインをゲートとする設計によって隠されていた競合状態です。このイベントを今後利用するコンシューマーはこの保証を継承するため、補償のために遅延を再び追加すべきではありません。
+
+**ワークロードイベントは、実行の最後のイベントであるため、引き続きバックストップとして残ります。** `messaging_callback_context` 内の `delivered_at` タイムスタンプにより、両方のイベントにまたがる成功時の配信が冪等になります。すでに設定されている場合は配信をスキップするため、返信が 2 回投稿されることはなく、どちらのイベントでも Sidekiq のリトライは無害です。この値は配信済みとして先に記録するのではなく、配信が確認された*後*に書き込まれます。先に記録すると、配信途中のクラッシュによって返信が永続的に抑止され、この設計が防ごうとしているまさにその障害が発生するためです。`no_response` のケースは試行前にマークします。`:finish` 時にメッセージがない場合はその後もメッセージがないままであり、そうしなければバックストップが 2 回目のエラーを投稿するためです。
+
+バックストップを機能させるには、**`deliver_result` はメッセージが実際にサーフェスへ到達した場合にのみ真と評価される値（truthy）を返す必要があります**。アダプターは自身のトランスポートエラーを内部で処理します（`Slack::API` は API と HTTP の両方の失敗を `{'ok' => false}` に変換し、`Notes::CreateService` は*保存されていない*ノートを返します）。そのため、「例外が発生しなかった」ことは配信済みを意味しません。失敗を報告した場合は `on_flow_completed` の実行を保留し、回答がないのにサーフェスが回答済み（例: Slack の ✅）とマークされないようにします。
 
 ### チェックポイントストリーミング
 
@@ -224,7 +249,7 @@ sequenceDiagram
 | メソッド | 目的 |
 |---|---|
 | `build_callback_context` | 非同期配信のためのアダプター固有のコンテキストを構築する（例: ノート/ディスカッション ID、Slack のチャネル/スレッド ID） |
-| `deliver_result(callback_context:, message:)` | 最終的な回答をサーフェスに投稿する |
+| `deliver_result(callback_context:, message:, workflow:)` | 最終的な回答をサーフェスに投稿する。**メッセージが実際に到達した場合にのみ真と評価される値を返す必要がある**。これは、失われた配信をバックストップから再試行するかどうかをワーカーが判断する唯一のシグナルである |
 | `deliver_error(callback_context:, error:)` | エラーメッセージをサーフェスに投稿する |
 
 **ライフサイクルフック（オプションのオーバーライド）:**
@@ -234,7 +259,7 @@ sequenceDiagram
 | `on_request_received` | 同期、`build_callback_context` の前。成功しない場合、トリガーは中止される | トリガー前の確認応答（例: 👀 リアクションの追加、進捗メッセージの投稿） |
 | `on_flow_enqueued(callback_context:, workflow:)` | 同期、CI の送信成功後 | 作業がキューに入ったことを通知する（例: ワークフロー URL の永続化、開始システムノートの投稿）。コンテナはまだ実行されていない |
 | `on_flow_started(callback_context:, workflow:)` | 非同期、`WorkflowStartedEvent` により駆動 | エージェントが `:running` に遷移済み。冪等でなければならない（少なくとも 1 回の配信） |
-| `on_flow_completed(callback_context:, workflow:)` | 非同期、`deliver_result` の後 | 作業完了を通知する（例: ✅ リアクション） |
+| `on_flow_completed(callback_context:, workflow:)` | 非同期、**成功した** `deliver_result` の後 | 作業完了を通知する（例: ✅ リアクション）。配信が失敗した場合はスキップし、回答がないのにサーフェスが回答済みとマークされないようにする |
 | `on_flow_failed(callback_context:, error:, workflow:)` | 非同期または同期 | 失敗を通知する。`workflow: nil` はワークフローが存在する前の同期的な失敗 |
 | `on_progress(delta:, callback_context:)` | 非同期、チェックポイントごと（デバウンス） | ライブ進捗の更新。`supports_live_progress?` が `true` を返す場合は**必須** |
 | `on_approval_requested` | 非同期（将来） | 承認プロンプトを投稿する |
@@ -274,6 +299,8 @@ sequenceDiagram
 | リソースの変換（Issue → `issue_id`、MR → `merge_request_id`） | ベースアダプター（メカニズム） |
 | ワークフロー実行（`ExecuteWorkflowService`） | ベースアダプター（メカニズム） |
 | チェックポイントからの最終結果の抽出 | `CallbackWorker` |
+| 配信の冪等性 + バックストップによるリトライ（`delivered_at`） | `CallbackWorker` |
+| 配信が実際に到達したかどうかの報告 | 配信アダプター（`deliver_result` の戻り値） |
 | チェックポイントストリーミングとカーソル管理 | `ProgressDeliveryWorker` |
 
 この 3 層の分割（Caller、配信アダプター、ベースアダプター）は、既存のチャネルに新しいトリガーソースを追加する（例: GitLab ノート上の `@GitLabDuo`）には Caller 側の解決コードを新しく書くだけで済み、既存の配信アダプターは変更なしで再利用されることを意味します。新しいチャネルを追加する（例: Microsoft Teams）には新しい配信アダプターが必要ですが、ベースアダプターや既存の Caller の変更は不要です。
@@ -298,18 +325,21 @@ sequenceDiagram
 - 同じアーキテクチャが外部メッセージングと GitLab ネイティブなサーフェスの両方を処理する
 - ワークスペースプロジェクトは自然なカスタマイズのサーフェス（イメージ、スキル、シークレット）
 - 型付けされたアダプターのコントラクトが不足しているフィールドを早期に検出する
-- チェックポイントストリーミングは稼働中であり、同じアーキテクチャを加法的に拡張する
+- チェックポイントストリーミングは稼働中であり、同じアーキテクチャを加法的に拡張する（新しい EventStore サブスクリプション、新しいアダプターフック — コアの変更は不要）
+- 返信のレイテンシが CI パイプラインの終了処理から切り離される。返信はパイプラインの終了処理を待つ代わりにワークフローの `:finish` 遷移を利用し、ワークロードイベントは配信のバックストップとして保持される
 
 ## デメリット
 
 - CI の起動レイテンシ（空のプロジェクトで約 10 秒）は直接のサービス呼び出しよりも遅いが、非同期メッセージングには許容範囲
 - プロジェクトとサービスアカウントの自動作成が namespace に暗黙的なリソースを追加する
 - アダプターメソッドが 2 つのコンテキストで実行される — 同期（完全な状態）と非同期（コールバックコンテキストのみ） — 新しいアダプターの作成者向けに明確なドキュメントが必要
+- 結果配信に 2 つのトリガーイベントが存在するため、アダプターは配信の成功を正確に報告し、少なくとも 1 回の配信に耐える必要がある。`delivered_at` マーカーは成功後に書き込まれるため、配信途中のクラッシュによって返信が 1 回重複する可能性のあるわずかな時間枠が残る
 - 各新しいトリガーソースは、呼び出し元で独自の解決ロジック（認証、SA、フロー、プロジェクト）を実装する必要があるが、これは通常、新しいクラスではなく単純なコード
 
 ## 実装
 
 - [Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/590434)
+- [返信レイテンシの最適化](https://gitlab.com/gitlab-org/gitlab/-/work_items/605913)
 
 ### フィーチャーフラグ
 

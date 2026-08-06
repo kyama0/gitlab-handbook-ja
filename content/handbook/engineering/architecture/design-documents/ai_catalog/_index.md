@@ -10,18 +10,18 @@ owning-stage: "~devops::ai_powered"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/ai_catalog/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T21:02:32+09:00"
-translator: claude
+upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
+translated_at: "2026-08-07T06:06:43+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-07T12:09:18+01:00"
+lastmod: "2026-08-06T19:43:13+12:00"
 ---
 
 
 {{< engineering/design-document-header >}}
 
 
-## Summary
+## 概要
 
 このドキュメントでは、GitLab Rails モノリス内の AI Catalog バックエンドの現在のアーキテクチャを記録します。データモデル、基盤的（foundational）アイテムとカスタムアイテムの異なる実装パターンを記録し、システムが進化する過程で生じたアーキテクチャの不整合を特定します。
 
@@ -41,7 +41,7 @@ AI カタログのバックエンドアーキテクチャは、以下をサポ�
 - 基盤エージェント
 - 基盤フロー
 - 基盤外部エージェント
-- MCP サーバー（近日中）
+- MCP サーバー
 
 この進化は統一されたアーキテクチャパターンなしで行われ、類似の概念に対して異なる実装アプローチが生まれました。このドキュメントは現在の状況を捉えることを目指します。
 
@@ -59,6 +59,9 @@ AI カタログのバックエンドアーキテクチャは、以下をサポ�
 | `namespace_foundational_agent_statuses` | 基盤エージェントのエージェントごとの有効化オーバーライド（名前空間レベル） |
 | `organization_foundational_agent_statuses` | 基盤エージェントのエージェントごとの有効化オーバーライド（組織レベル） |
 | `ai_flow_triggers` | フローと外部エージェント向けのイベントベーストリガー（assign、mention、pipeline hook） |
+| `ai_catalog_mcp_servers` | 組織スコープの MCP サーバー定義（`ai_catalog_items` とは別） |
+| `ai_catalog_mcp_servers_users` | MCP サーバー接続用のユーザーごとの OAuth トークンストア |
+| `ai_catalog_mcp_server_blocks` | MCP サーバー用の名前空間ごとのオプトアウトキルスイッチ |
 
 ### インメモリモデル（`FixedItemsModel`）
 
@@ -179,7 +182,7 @@ erDiagram
 | **有効化追跡** | `namespace_foundational_agent_statuses` / `organization_foundational_agent_statuses` テーブル | `enabled_foundational_flows` + `ai_catalog_item_consumers` | `ai_catalog_item_consumers` のみ |
 | **トリガーサポート** | N/A（チャットベース） | `ai_flow_triggers`（自動作成） | `ai_flow_triggers`（手動作成） |
 
-注: 基盤エージェントは [オプションで `ai_catalog_items` テーブルに表現可能](https://docs.gitlab.com/development/ai_features/foundational_chat_agents/#using-the-ai-catalog) であり、カタログで可視となり複製も可能です。ただし機能的には、基盤エージェントのデータソースは常に `Ai::FoundationalChatAgent` です。
+注: 基盤エージェントは [オプションで `ai_catalog_items` テーブルに表現可能](https://docs.gitlab.com/development/ai_features/foundational_chat_agents/#using-the-ai-catalog)であり、カタログで可視となり複製も可能です。ただし機能的には、基盤エージェントのデータソースは常に `Ai::FoundationalChatAgent` です。
 
 ### アーキテクチャ図
 
@@ -245,7 +248,7 @@ flowchart TB
 
 ```plaintext
 ├── namespace_id / organization_id (FK)
-├── reference (string) - 例: "duo_planner", "security_analyst_agent"
+├── reference (string) - e.g., "duo_planner", "security_analyst_agent"
 ├── enabled (boolean)
 └── timestamps
 ```
@@ -292,8 +295,8 @@ sequenceDiagram
 **スキーマ:**
 
 ```plaintext
-├── namespace_id OR project_id (どちらか 1 つ)
-├── catalog_item_id (ai_catalog_items への FK)
+├── namespace_id OR project_id (exactly one)
+├── catalog_item_id (FK to ai_catalog_items)
 └── timestamps
 ```
 
@@ -604,13 +607,13 @@ Duo Workflow Service は、エージェントとフローの実行エンジン�
 
 **Rails からの統合パス:**
 
-1. **Web UI（Agentic Chat）**: [Workhorse 経由の](../duo_workflow/#from-the-gitlab-web-ui-without-a-separate-executor) WebSocket 接続が gRPC を使って Duo Workflow Service にプロキシされます。`aiCatalogAgentFlowConfig` GraphQL クエリがフロー設定を提供します。
+1. **Web UI（Agentic Chat）**: [Workhorse 経由の](../duo_workflow/_index.md#from-the-gitlab-web-ui-without-a-separate-executor) WebSocket 接続が gRPC を使って Duo Workflow Service にプロキシされます。`aiCatalogAgentFlowConfig` GraphQL クエリがフロー設定を提供します。
 
-2. **IDE**: [GitLab Language Server](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp) には Duo Agent Platform クライアント（別名 executor）が含まれており、Workhorse プロキシを通じて Duo Workflow Service に接続し、ワークフローアクションをローカルで実行します。
+2. **IDE**: [GitLab Language Server](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp)には Duo Agent Platform クライアント（別名 executor）が含まれており、Workhorse プロキシを通じて Duo Workflow Service に接続し、ワークフローアクションをローカルで実行します。
 
 3. **Flow Triggers**: `Ai::FlowTriggers::RunService` が `Ai::Catalog::Flows::ExecuteService` に委譲し、それが `Ai::DuoWorkflows::StartWorkflowService` を使って CI パイプラインを通じて実行をオーケストレーションします。
 
-詳細なアーキテクチャ図については、[Duo Workflow Architecture ドキュメンテーション](../duo_workflow/#gitlabcom-architecture) を参照してください。
+詳細なアーキテクチャ図については、[Duo Workflow Architecture ドキュメンテーション](../duo_workflow/_index.md#gitlabcom-architecture)を参照してください。
 
 ### 外部エージェントの実行
 
@@ -623,7 +626,7 @@ Duo Workflow Service は、エージェントとフローの実行エンジン�
 
 ## エージェントアイデンティティ {#agent-identity}
 
-フローと外部エージェントが [Flow Triggers](#flow-triggers) を通じてランナー上で実行される時、エージェントの権限は [複合アイデンティティ](https://docs.gitlab.com/user/duo_agent_platform/composite_identity/) を通じて付与されます。
+フローと外部エージェントが [Flow Triggers](#flow-triggers)を通じてランナー上で実行される時、エージェントの権限は [複合アイデンティティ](https://docs.gitlab.com/user/duo_agent_platform/composite_identity/)を通じて付与されます。
 
 複合アイデンティティ（Composite Identity）は、サービスアカウント（アクションを実行するマシンユーザー）と人間のユーザー（リクエストを開始した人）を 1 つの OAuth トークンに結合する認証メカニズムです。これにより、アクションがサービスアカウントに帰属させられつつ、権限昇格を防ぎます - トークンはサービスアカウントと人間のユーザーの両方がアクセスできるリソースへのアクセスのみを付与します。
 
@@ -723,9 +726,9 @@ AI Catalog バックエンドのデータは GitLab の GraphQL API を通じて
 
 | タイプ | ディレクトリ |
 | ---- | --------- |
-| Queries | `ee/app/graphql/resolvers/ai/catalog/` |
-| Mutations | `ee/app/graphql/mutations/ai/catalog/` |
-| Types | `ee/app/graphql/types/ai/catalog/` |
+| クエリ | `ee/app/graphql/resolvers/ai/catalog/` |
+| ミューテーション | `ee/app/graphql/mutations/ai/catalog/` |
+| タイプ | `ee/app/graphql/types/ai/catalog/` |
 
 ## 認可
 
@@ -735,7 +738,7 @@ AI Catalog バックエンドのデータは GitLab の GraphQL API を通じて
 
 | 層 | 場所 | メカニズム |
 | ----- | -------- | --------- |
-| **GraphQL** | Mutations | `authorize :permission` + `authorized_find!` |
+| **GraphQL** | ミューテーション | `authorize :permission` + `authorized_find!` |
 | **GraphQL** | Resolvers（finder 経由） | 通常 finder を通じて `Ability.allowed?` チェック |
 | **Services** | すべてのサービス | `authorized?` メソッド内で `Ability.allowed?` |
 | **Model** | `Item` スコープ | `public_or_visible_to_user` スコープがプロジェクトメンバーシップでフィルタ |
@@ -746,6 +749,127 @@ AI Catalog バックエンドのデータは GitLab の GraphQL API を通じて
 - `Ai::Catalog::ItemVersionPolicy` — 未使用のバージョン実行権限を含む（代わりに `ItemConsumerPolicy` の類似権限が使用される）。基底権限は `ItemPolicy` に委譲。
 - `Ai::Catalog::ItemConsumerPolicy` — アイテム消費者の実行を制御。プロジェクトアイテム消費者には `ProjectPolicy`、グループアイテム消費者には `GroupPolicy` の両方に委譲。
 - `ProjectPolicy` と `GroupPolicy` - アイテムと消費者作成のためのコンテナレベル権限。
+
+## MCP サーバー
+
+### 概要
+
+MCP サーバーは AI Catalog 内の独立した機能であり、カスタムエージェントが [Model Context Protocol](https://modelcontextprotocol.io/)を介して外部データソースやサードパーティサービスに接続できるようにします。アーキテクチャ上、MCP サーバーは `Ai::Catalog::Item` レコードとは分離されています。独自のモデルを持ち、プロジェクトではなく組織をスコープとし、カタログ内の他のすべてとは異なる所有権、有効化、可視性の仕組みを使用します。
+
+| 観点 | カタログアイテム（エージェント / フロー） | MCP サーバー |
+| ------ | ----------------------------- | ----------- |
+| モデル | `Ai::Catalog::Item` | `Ai::Catalog::McpServer` |
+| 所有者 | プロジェクト（`project_id`） | 組織（`organization_id`） |
+| 名前空間での有効化 | オプトイン: プロジェクトごとに明示的な `ItemConsumer` 行 | オプトアウト: 名前空間ごとの `McpServerBlock` キルスイッチ |
+| ユーザーごとの状態 | 消費者上のオプションのサービスアカウント | `McpServersUser`（ユーザーおよびサーバーごとの OAuth トークン） |
+| バージョニング | `ItemVersion` の JSONB 定義 | なし — バージョンなし |
+| 可視性制御 | `visibility` 列挙型（private / restricted / public）+ `public` フラグ | 組織メンバーシップ + ブロック状態 |
+| 作成権限 | Maintainer 以上（カスタム権限 `admin_ai_catalog_item_consumer`） | `admin` または `organization_owner` のみ |
+
+MCP サーバーはアイテムから参照されます。エージェントの `ItemVersion.definition` JSONB には `McpServer` ID の `mcp_servers` 配列を含めることができ、`McpServers::ListService` が実行時にそれらの ID を解決します。
+
+### データモデル
+
+`Ai::Catalog::McpServer` はルートモデルです。`organization_id` でシャーディングされ、サーバーの `name`、`url`、`transport`（列挙型: `http` のみ）、`auth_type`（列挙型: `oauth`、`no_auth`）、暗号化された `oauth_client_secret` を保持します。`url` はアドレス指定可能な URL として検証され、組織ごとに一意である必要があります。
+
+`Ai::Catalog::McpServersUser` はサーバーとユーザーの結合テーブルで、ユーザーごとの OAuth `token` と `refresh_token`（どちらも保存時に暗号化）、および `expires_at` タイムスタンプを格納します。`(mcp_server, user)` のペアごとに 1 レコードが存在します。
+
+`Ai::Catalog::McpServerBlock` は名前空間ごとのオプトアウトキルスイッチとして機能します。`McpServerBlock.blocked_server_ids_for(namespace, server_ids)` は `namespace.self_and_ancestor_ids` をたどって祖先のブロックを検索し、これにより `BLOCKED_BY_ANCESTOR` ステータスが導出されます。
+
+### エンティティ関連図
+
+```mermaid
+erDiagram
+    organizations ||--o{ ai_catalog_mcp_servers : "has many"
+    ai_catalog_mcp_servers ||--o{ ai_catalog_mcp_servers_users : "has many"
+    ai_catalog_mcp_servers ||--o{ ai_catalog_mcp_server_blocks : "has many"
+    namespaces ||--o{ ai_catalog_mcp_server_blocks : "has many"
+    users ||--o{ ai_catalog_mcp_servers_users : "has many"
+
+    ai_catalog_mcp_servers {
+        bigint id PK
+        bigint organization_id FK
+        bigint created_by_id FK
+        text name
+        text url
+        text description
+        text homepage_url
+        smallint transport
+        smallint auth_type
+        text oauth_client_xid
+        jsonb oauth_client_secret
+    }
+    ai_catalog_mcp_servers_users {
+        bigint id PK
+        bigint organization_id FK
+        bigint ai_catalog_mcp_server_id FK
+        bigint user_id FK
+        jsonb token
+        jsonb refresh_token
+        timestamptz expires_at
+    }
+    ai_catalog_mcp_server_blocks {
+        bigint id PK
+        bigint organization_id FK
+        bigint namespace_id FK
+        bigint ai_catalog_mcp_server_id FK
+        bigint created_by_id FK
+    }
+```
+
+`ai_catalog_items` から MCP サーバーへの接続は（外部キーではなく）**疎結合**です。エージェントの `ai_catalog_item_versions.definition` JSONB は、`ai_catalog_mcp_servers.id` 値の `mcp_servers` 配列を保持します。`Ai::Catalog::McpServers::ListService` が実行時にこれらの ID を解決します。
+
+### エージェントとの関連付け
+
+MCP サーバーはエージェントの `ItemVersion` 定義 JSONB を通じてエージェントにリンクされます:
+
+```json
+{
+  "system_prompt": "...",
+  "tools": [1, 3],
+  "mcp_servers": [42, 99]
+}
+```
+
+`Ai::Catalog::McpServers::ListService` は `agent_version` を受け取り、組織に対する `:read_ai_catalog_mcp_server` によって制御されたうえで、`McpServer.id_in(agent_version.def_mcp_servers)` を返します。
+
+MCP ツール（サーバーが公開する個々の機能）は、インメモリモデル `FixedItemsModel` である `Ai::Catalog::McpTool` で表現され、永続化されません。ツールは起動時に `Mcp::Tools::Manager` から動的に検出され、エージェント定義内で名前によって参照されます。
+
+### 名前空間の可視性
+
+グループおよびプロジェクトレベルの **AI > MCP servers** ページには、その名前空間で*有効化された*エージェントに関連付けられた MCP サーバーが表示されます。導出方法は次のとおりです:
+
+1. 名前空間のすべての `ItemConsumer` レコード（そこで有効化されたエージェント）を検索します。
+2. 有効化された各エージェントバージョンについて、`def_mcp_servers` ID を収集します。
+3. 祖先チェーンをたどる `McpServerBlock` によってブロックされたサーバーを除外します。
+
+`AiCatalogMcpServer` の `block_status` GraphQL フィールド（`group_full_path` または `project_full_path` を受け取る）は、`AiCatalogMcpServerBlockStatus` の 3 つの値のいずれかを返します:
+
+| 値 | 意味 |
+| ----- | ------- |
+| `ACTIVE` | この名前空間ではサーバーがブロックされていない |
+| `BLOCKED` | この特定の名前空間にブロックレコードが存在する |
+| `BLOCKED_BY_ANCESTOR` | 祖先の名前空間にブロックレコードが存在する |
+
+切断 / ブロックの書き込みパス（`McpServerBlock` の作成 / 削除）には、まだ専用サービスや GraphQL ミューテーションがありません。読み取り側のバッチローダーは存在しますが、書き込み操作はまだ公開されていません。
+
+### ユーザーごとの認証
+
+MCP サーバーの `auth_type` が `oauth` の場合、ユーザーはエージェントがそのサーバーを呼び出す前に個別に認証する必要があります。GitLab は [OAuth 2.0 Dynamic Client Registration（RFC 7591）](https://tools.ietf.org/html/rfc7591)をサポートしています。サーバーがこれをサポートしている場合、GitLab は初回接続時に OAuth クライアントとして自動的に自身を登録し、`oauth_client_xid` と暗号化された `oauth_client_secret` を `McpServer` レコードに格納します。
+
+ユーザーごとのトークンは `McpServersUser` に格納されます（ユーザーおよびサーバーごとに 1 レコードで、`token` と `refresh_token` は暗号化されます）。`McpServer#connected_by_user?(user)` はこのレコードが存在するか確認します。`AiCatalogMcpServer` GraphQL タイプの `current_user_connected` フィールドは、この情報をフロントエンドに公開します。
+
+エージェント実行中に使用する OAuth 設定（URL、ヘッダー）は、`Ai::Catalog::McpServers::ConfigService` によって組み立てられます。
+
+### サービスと GraphQL
+
+サービスは `ee/app/services/ai/catalog/mcp_servers/`（`BaseService`、`CreateService`、`UpdateService`、`ListService`、`ConfigService`）配下にあります。GraphQL ミューテーション `AiCatalogMcpServerCreate` と `AiCatalogMcpServerUpdate` は存在しますが、削除またはブロック / ブロック解除のミューテーションはまだありません。リゾルバー（`McpServersResolver`、`McpServerResolver`）は組織スコープです。バッチローダーは `McpServersBatchLoader` と `McpServerBlockStatusBatchLoader` を処理します。
+
+### 現在の管理モデル
+
+GitLab.com では、MCP サーバーは GitLab 管理者によって一元的に管理されます。GitLab Self-Managed および Dedicated では、インスタンス管理者が管理 UI を介して MCP サーバーを管理できます。
+
+管理 UI はインスタンス / explore レベル（`/explore/ai-catalog/mcp-servers`）にあります。読み取り専用の名前空間ページはグループレベル（`/groups/:group/-/automate/mcp-servers`）およびプロジェクトレベル（`/:project/-/automate/mcp-servers`）に存在し、その名前空間で有効化されたエージェントに関連付けられたサーバーを表示します。
 
 ## 特定された不整合
 
@@ -776,3 +900,12 @@ AI Catalog バックエンドのデータは GitLab の GraphQL API を通じて
 - **エージェント:** シーディングなし（純粋なフィクスチャ）
 - **フロー:** サービスベースのシーディング
 - **外部エージェント:** Admin UI ボタン
+
+### 6. MCP サーバーは完全に独立したモデルツリーを使用
+
+MCP サーバーは組織スコープであり、エージェントとフローを管理する `ai_catalog_items` / `ItemConsumer` / `ItemVersion` の構造外に存在します。これにより、いくつかの非対称性が生じます:
+
+- **所有権:** アイテムはプロジェクト所有、MCP サーバーは組織所有。
+- **有効化のセマンティクス:** アイテムはオプトインの `ItemConsumer` レコードを使用し、MCP サーバーはオプトアウトの `McpServerBlock` レコードを使用。
+
+MCP サーバーはバージョン管理された自動化定義ではなくインフラストラクチャエンドポイントであり、ライフサイクルが異なるため、この相違は意図的です。ただし、これは MCP サーバーが共有カタログの仕組み（可視性、ソフト削除、バージョンピン留め、使用数）の恩恵を受けないことを意味します。
