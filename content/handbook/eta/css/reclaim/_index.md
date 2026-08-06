@@ -4,7 +4,7 @@ description: 'Reclaim に関するドキュメント'
 upstream_path: /handbook/eta/css/reclaim/
 upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
 lastmod: "2026-08-06T12:08:12-05:00"
-translated_at: "2026-08-07T06:19:17+09:00"
+translated_at: "2026-08-07T07:39:49+09:00"
 translator: codex
 stale: false
 ---
