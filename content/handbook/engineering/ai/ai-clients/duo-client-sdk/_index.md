@@ -1,5 +1,5 @@
 ---
-title: Duo Client SDK Group
+title: Duo Client SDK グループ
 description: "Duo Client SDK グループは、すべての GitLab エディター拡張機能とクライアントサーフェスにわたる AI 機能を支える共有 Language Server を担当します。"
 upstream_path: /handbook/engineering/ai/ai-clients/duo-client-sdk/
 upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
