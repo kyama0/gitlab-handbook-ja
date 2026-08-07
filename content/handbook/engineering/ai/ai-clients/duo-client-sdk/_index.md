@@ -35,8 +35,8 @@ Duo Client SDK グループは、すべての GitLab クライアントサーフ
 
 ### Slack
 
-- **チームチャンネル:** [#f_duo-client-sdk](https://gitlab.slack.com/archives/C05B1PFHRPU)（`#f_language_server` から名称変更）
-- **公開ステージチャンネル:** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)
+- **チームチャンネル：** [#f_duo-client-sdk](https://gitlab.slack.com/archives/C05B1PFHRPU)（`#f_language_server` から名称変更）
+- **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)
 
 ---
 
@@ -55,7 +55,7 @@ Duo Client SDK グループは、以下を担当します。
 1. **GitLab Language Server（gitlab-lsp）**
    - [リポジトリ](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp)
    - [バックログ](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=Editor%20Extensions%3A%3ALanguage%20Server)
-   - Slack チャンネル: [#f_duo-client-sdk](https://gitlab.enterprise.slack.com/archives/C05B1PFHRPU)
+   - Slack チャンネル： [#f_duo-client-sdk](https://gitlab.enterprise.slack.com/archives/C05B1PFHRPU)
 
 Language Server はすべてのエディター拡張機能で共同利用され、共有 AI 機能レイヤーを提供します。
 
