@@ -88,14 +88,14 @@ graph TD
 
 | 領域 | ラベル |
 |---|---|
-| Duo CLI（ターミナルクライアント） | `section::ai`, `devops::ai clients`, `group::developer clients`, `category: duo cli` |
-| VS Code 拡張機能 | `section::ai`, `devops::ai clients`, `group::developer clients`, `category: vs code` |
-| JetBrains プラグイン | `section::ai`, `devops::ai clients`, `group::developer clients`, `category: jetbrains` |
-| Duo Client SDK / Language Server | `section::ai`, `devops::ai clients`, `group::duo client sdk`, `category: duo client sdk` |
-| Duo Chat（UI と GitLab 内のチャット体験） | `section::ai`, `devops::ai clients`, `group::duo chat`, `category: web chat` |
-| Duo Chat（バックエンド / Chat Engine の機能作業） | `section::ai`, `devops::ai clients`, `group::duo chat`, `category: chat engine` |
-| Duo Developer（エンドツーエンドフロー、Agent Foundations） | `section::ai`, `devops::agent foundations`, `group::agent developer`, `category: duo developer` |
-| Flow Components（再利用可能なフロー / オーケストレーションコンポーネント） | `section::ai`, `devops::agent foundations`, `group::agent developer`, `category: flow components` |
+| Duo CLI（ターミナルクライアント） | `section::ai`、`devops::ai clients`、`group::developer clients`、`category: duo cli` |
+| VS Code 拡張機能 | `section::ai`、`devops::ai clients`、`group::developer clients`、`category: vs code` |
+| JetBrains プラグイン | `section::ai`、`devops::ai clients`、`group::developer clients`、`category: jetbrains` |
+| Duo Client SDK / Language Server | `section::ai`、`devops::ai clients`、`group::duo client sdk`、`category: duo client sdk` |
+| Duo Chat（UI と GitLab 内のチャット体験） | `section::ai`、`devops::ai clients`、`group::duo chat`、`category: web chat` |
+| Duo Chat（バックエンド / Chat Engine の機能作業） | `section::ai`、`devops::ai clients`、`group::duo chat`、`category: chat engine` |
+| Duo Developer（エンドツーエンドフロー、Agent Foundations） | `section::ai`、`devops::agent foundations`、`group::agent developer`、`category: duo developer` |
+| Flow Components（再利用可能なフロー / オーケストレーションコンポーネント） | `section::ai`、`devops::agent foundations`、`group::agent developer`、`category: flow components` |
 
 変更が実際に複数のプロダクト領域にまたがる場合は、複数のカテゴリラベルを付けますが、ステージラベルとグループラベルは主要なオーナーに合わせてください。
 
