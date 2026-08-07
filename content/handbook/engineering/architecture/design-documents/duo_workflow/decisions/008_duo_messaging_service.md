@@ -1,5 +1,5 @@
 ---
-title: "Duo Agent Platform ADR 008: Duo Messaging Service"
+title: "Duo Agent Platform ADR 008：Duo メッセージングサービス"
 status: proposed
 creation-date: "2026-04-17"
 authors: [ "@thomas-schmidt" ]
@@ -9,37 +9,37 @@ owning-stage: "~devops::ai_powered"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/duo_workflow/decisions/008_duo_messaging_service/
-upstream_sha: 1c5f183add4a3220f2aa77e0c98565c4fad645e2
-translated_at: "2026-07-18T06:25:37+09:00"
+upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
+translated_at: "2026-08-07T06:13:54+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-17T14:17:40-04:00"
+lastmod: "2026-08-05T14:10:51-04:00"
 ---
 
 ## コンテキスト
 
 私たちは、ユーザーがさまざまなサーフェスから Duo とやり取りできるようにしたいと考えています。外部のメッセージングサービス（Slack、Microsoft Teams、WhatsApp、Telegram）に加え、Issue やマージリクエストのコメントといった GitLab ネイティブなサーフェスも含みます。ユーザーが Duo を @メンションしてタスクを与えると、Duo はそれを非同期に処理し、結果を投稿して返します。
 
-主な動機は外部メッセージングプラットフォームですが、同じアダプターパターンは自然に GitLab のノートベースのインタラクション（例: MR や Issue で Duo サービスアカウントを @メンションする）にも拡張されます。マージリクエストのコメントは概念的にはメッセージングの一形態であり、このアーキテクチャはそれらを一様に扱います。
+主な動機は外部メッセージングプラットフォームですが、同じアダプターパターンは自然に GitLab のノートベースのインタラクション（例： MR や Issue で Duo サービスアカウントを @メンションする）にも拡張されます。マージリクエストのコメントは概念的にはメッセージングの一形態であり、このアーキテクチャはそれらを一様に扱います。
 
-これらのインタラクションには 2 つの固有の課題があります:
+これらのインタラクションには 2 つの固有の課題があります：
 
-1. CI パイプラインにはプロジェクトが必要だが、一部のサーフェス（例: Slack）にはプロジェクトのコンテキストがない
+1. CI パイプラインにはプロジェクトが必要だが、一部のサーフェス（例： Slack）にはプロジェクトのコンテキストがない
 2. オーケストレーションロジックを重複させずに複数のサーフェスをサポートする必要がある
 
 ### 検討した代替案
 
-5 つのアプローチを調査しました:
+5 つのアプローチを調査しました：
 
-1. **CI ジョブ（Flows API）** — 既存の Flows インフラを通じて CI パイプラインをトリガーします。実績があり、ADR 004 に準拠しており、Workhorse や DWS の変更を必要としません。実際の実行環境を提供する唯一のアプローチです。エージェントは git clone、テストの実行、ツールのインストール、完全な開発タスクを行えます。欠点: CI の起動レイテンシ（空のプロジェクトで約 10 秒）。パイプラインにはプロジェクトが必要ですが、プロジェクトのコンテキストが存在しない場合にワークスペースプロジェクトを自動作成することで解決します。サーフェスがすでにプロジェクトを提供している場合（例: MR 上の GitLab ノート）は、ワークスペースプロジェクトは不要です。
+1. **CI ジョブ（Flows API）** — 既存の Flows インフラを通じて CI パイプラインをトリガーします。実績があり、ADR 004 に準拠しており、Workhorse や DWS の変更を必要としません。実際の実行環境を提供する唯一のアプローチです。エージェントは git clone、テストの実行、ツールのインストール、完全な開発タスクを行えます。欠点： CI の起動レイテンシ（空のプロジェクトで約 10 秒）。パイプラインにはプロジェクトが必要ですが、プロジェクトのコンテキストが存在しない場合にワークスペースプロジェクトを自動作成することで解決します。サーフェスがすでにプロジェクトを提供している場合（例： MR 上の GitLab ノート）は、ワークスペースプロジェクトは不要です。
 
-2. **WebSocket ブロッキング** — Sidekiq ワーカーが Workhorse への WebSocket を開き、ワークフローの全期間を通じてそれを開いたままにします。シンプルで、ストリーミングをサポートします。欠点: リクエストごとに最大 5 分間 Sidekiq スレッドをブロックし、スループットを Sidekiq プロセスあたり約 50 の同時ワークフローに制限します。実行環境がありません。エージェントは Workhorse 内で実行され、ファイルシステム、git、コマンド実行の能力がありません。エージェントを読み取り専用の API インタラクションに制限し、開発タスクへの道がありません。
+2. **WebSocket ブロッキング** — Sidekiq ワーカーが Workhorse への WebSocket を開き、ワークフローの全期間を通じてそれを開いたままにします。シンプルで、ストリーミングをサポートします。欠点： リクエストごとに最大 5 分間 Sidekiq スレッドをブロックし、スループットを Sidekiq プロセスあたり約 50 の同時ワークフローに制限します。実行環境がありません。エージェントは Workhorse 内で実行され、ファイルシステム、git、コマンド実行の能力がありません。エージェントを読み取り専用の API インタラクションに制限し、開発タスクへの道がありません。
 
-3. **WebSocket fire-and-forget** — Sidekiq が WebSocket を開き、開始リクエストを送信し、すぐに切断します。**ブロック**: プロトタイピングにより、クライアントが切断すると Workhorse がワークフローを終了させることが判明しました（正常なクローズ時には `StopWorkflow` を送信し、異常なクローズ時には gRPC を破棄します）。ヘッドレス/デタッチドモードを追加するために Workhorse の変更が必要になります。オプション 2 と同じ実行環境の制限があります。
+3. **WebSocket fire-and-forget** — Sidekiq が WebSocket を開き、開始リクエストを送信し、すぐに切断します。**ブロック**： プロトタイピングにより、クライアントが切断すると Workhorse がワークフローを終了させることが判明しました（正常なクローズ時には `StopWorkflow` を送信し、異常なクローズ時には gRPC を破棄します）。ヘッドレス/デタッチドモードを追加するために Workhorse の変更が必要になります。オプション 2 と同じ実行環境の制限があります。
 
 4. **直接 gRPC** — Sidekiq が DWS への gRPC 双方向ストリームを直接開きます。低レイテンシで型安全です。**ADR 004 に違反**します（DWS への 2 つ目の経路を導入するため）。HTTP アクションのプロキシを Ruby で再実装する必要があります。コードベースには Sidekiq から gRPC 双方向ストリーミングを行う確立されたパターンがありません。同じ実行環境の制限があります。ファイルシステムやツールが利用できません。
 
-5. **Workhorse ヘッドレス HTTP** — HTTP POST 経由でワークフロートリガーを受け付け、内部で gRPC ストリームを管理する新しい Workhorse エンドポイントです。**チームをまたぐ Workhorse の変更が必要**（Go コード約 50〜100 行）で、ランナーのライフサイクルを変更する必要があります。オプション 2〜4 と同じ実行環境の制限があります。追加のアーキテクチャなしには開発タスクへの道がありません。
+5. **Workhorse ヘッドレス HTTP** — HTTP POST 経由でワークフロートリガーを受け付け、内部で gRPC ストリームを管理する新しい Workhorse エンドポイントです。**チームをまたぐ Workhorse の変更が必要**（Go コード約 50 〜 100 行）で、ランナーのライフサイクルを変更する必要があります。オプション 2 〜 4 と同じ実行環境の制限があります。追加のアーキテクチャなしには開発タスクへの道がありません。
 
 ## 決定
 
@@ -58,13 +58,13 @@ graph LR
     Adapter["🔌 Delivery Adapter<br/><i>GitlabDuoNote · Slack · ...</i><br/><i>lifecycle: progress, results, errors</i>"]
     Base["⚙️ Base Adapter<br/><i>mechanism: identity, membership,<br/>enrichment, execution</i>"]
     CI["🏃 CI Runner<br/><i>ExecuteWorkflowService</i>"]
-    CW["📬 CallbackWorker<br/><i>WorkloadFinishedEvent · WorkflowStartedEvent</i>"]
+    CW["📬 CallbackWorker<br/><i>WorkflowStartedEvent · WorkflowFinishedEvent<br/>WorkloadFinishedEvent (backstop)</i>"]
     PW["📡 ProgressDeliveryWorker<br/><i>checkpoint streaming (live)</i>"]
 
     Caller -->|"resolved params"| Adapter
     Adapter -->|"trigger"| Base
     Base -->|"start pipeline"| CI
-    CI -.->|"workflow started / finished"| CW
+    CI -.->|"workflow started / finished,<br/>workload finished"| CW
     CI -.->|"checkpoint created"| PW
     CW -.->|"result / error / started"| Adapter
     PW -.->|"on_progress delta"| Adapter
@@ -115,26 +115,32 @@ sequenceDiagram
 
     rect rgb(254, 249, 195)
         Note right of CW: Callback phase (async)
-        CI-->>CW: WorkloadFinishedEvent
+        CI-->>CW: WorkflowFinishedEvent (agent done, answer persisted)
         CW->>Adapter: deliver_result(message)
-        Adapter->>User: Post answer + on_flow_completed (✅)
+        Adapter->>User: Post answer
+        Adapter-->>CW: truthy only if it reached the surface
+        CW->>CW: Record delivered_at
+        CW->>Adapter: on_flow_completed (✅)
+        Note over CI,CW: Later, once CI finalization completes
+        CI-->>CW: WorkloadFinishedEvent (backstop)
+        CW->>CW: delivered_at present → no-op
     end
 ```
 
 ### 主要な設計選択
 
 **Caller がポリシーを所有し、アダプターが配信を所有し、ベースアダプターがメカニズムを所有する。**
-このアーキテクチャは 3 つの関心事を分離します:
+このアーキテクチャは 3 つの関心事を分離します：
 
-- **Caller**（例: `@mention` トリガー向けの `PostProcessService`、Slack 向けの `AppMentionedService`）は、すべてのポリシー判断を所有します。認可、サービスアカウントの選択、フローの選択、バージョンの選択、プロジェクトの選択、ゴールの構築です。Caller はすべてを解決し、アダプターを関与させる前に、型付けされた解決済み入力を構築します。
-- **配信アダプター**（例: `GitlabDuoNote`、`Slack`）は、ユーザー向けのライフサイクルを所有します。リクエストの確認応答、進捗の表示、結果やエラーの配信、非同期復元のためのコールバック状態の永続化です。アダプターはトリガーソースではなく**配信チャネル**によって構成されます。`GitlabDuoNote` アダプターは、`@mention`、`@GitLabDuo`、将来のウェブフックのいずれによってトリガーされたかにかかわらず、ノートスレッド経由で配信するあらゆるフローを処理します。
+- **Caller**（例： `@mention` トリガー向けの `PostProcessService`、Slack 向けの `AppMentionedService`）は、すべてのポリシー判断を所有します。認可、サービスアカウントの選択、フローの選択、バージョンの選択、プロジェクトの選択、ゴールの構築です。Caller はすべてを解決し、アダプターを関与させる前に、型付けされた解決済み入力を構築します。
+- **配信アダプター**（例： `GitlabDuoNote`、`Slack`）は、ユーザー向けのライフサイクルを所有します。リクエストの確認応答、進捗の表示、結果やエラーの配信、非同期復元のためのコールバック状態の永続化です。アダプターはトリガーソースではなく**配信チャネル**によって構成されます。`GitlabDuoNote` アダプターは、`@mention`、`@GitLabDuo`、将来のウェブフックのいずれによってトリガーされたかにかかわらず、ノートスレッド経由で配信するあらゆるフローを処理します。
 - **共有ベースアダプター**は、どの Caller やアダプターも個別に行うべきではない、セキュリティ上重要なメカニズムを処理します。コンポジットアイデンティティのリンク、SA プロジェクトメンバーシップ、コールバックコンテキストのエンリッチメント、リソースの変換、`ExecuteWorkflowService` 経由のワークフロー実行です。
 
-これは、異なる Caller が根本的に異なる認証モデル（例: Slack はワークスペースインストール + namespace マッピング、GitLab ノートは `:trigger_ai_flow` ポリシー、`@GitLabDuo` は MR レベルのアビリティを使用）を持ちつつ、チャネルが同じ場合は同じ配信アダプターを再利用できることを意味します。
+これは、異なる Caller が根本的に異なる認証モデル（例： Slack はワークスペースインストール + namespace マッピング、GitLab ノートは `:trigger_ai_flow` ポリシー、`@GitLabDuo` は MR レベルのアビリティを使用）を持ちつつ、チャネルが同じ場合は同じ配信アダプターを再利用できることを意味します。
 
-**フローの参照とバージョンは Caller によって制御される。** 各 Caller は、どのフローをトリガーするか（例: `developer/v1`）を指定し、オプションでバージョンを固定します。Caller は、フローのバージョニングに標準の解決経路を使用することも、バージョンを独立してオーバーライドすることもできます。これにより、同じインフラが異なるバージョン戦略を持つ複数のエージェントフローをサポートできます。
+**フローの参照とバージョンは Caller によって制御される。** 各 Caller は、どのフローをトリガーするか（例： `developer/v1`）を指定し、オプションでバージョンを固定します。Caller は、フローのバージョニングに標準の解決経路を使用することも、バージョンを独立してオーバーライドすることもできます。これにより、同じインフラが異なるバージョン戦略を持つ複数のエージェントフローをサポートできます。
 
-**`project:` は Caller によって制御される — ワークスペースプロジェクトはフォールバック。** Caller がプロジェクトを持っている場合（例: MR 上の GitLab ノートは `note.project` を提供する）、そのプロジェクトが直接使用されます。`duo-workspace` の自動作成プロジェクトは、プロジェクトのコンテキストを持たない Caller（例: Slack の `AppMentionedService`）のためにのみ機能します。
+**`project:` は Caller によって制御される — ワークスペースプロジェクトはフォールバック。** Caller がプロジェクトを持っている場合（例： MR 上の GitLab ノートは `note.project` を提供する）、そのプロジェクトが直接使用されます。`duo-workspace` の自動作成プロジェクトは、プロジェクトのコンテキストを持たない Caller（例： Slack の `AppMentionedService`）のためにのみ機能します。
 
 **`duo-workspace` 自動作成プロジェクト（プロジェクトのないサーフェス向け）。** トップレベル namespace ごとのプライベートで空のプロジェクトは、プロジェクトが利用できない場合に CI パイプラインのコンテキストを提供します。ワークスペースプロジェクトは、ユーザーの `duo_default_namespace` の**ルート namespace** に作成されます。たとえば、ユーザーのデフォルト namespace が `gitlab-org/editor-extensions` の場合、ワークスペースプロジェクトは `gitlab-org/duo-workspace` に作成されます。これにより、トップレベルグループごとに 1 つのワークスペースプロジェクトが維持され、ネストされた namespace 全体でプロジェクトが増殖するのを防ぎます。正確なプロジェクト名（`duo-workspace`）は最終的なものではなく、イテレーションで変更できます。
 
@@ -144,7 +150,15 @@ sequenceDiagram
 
 **段階的なレジリエンス。** ライフサイクルフックは重要度によって分類されます。ユーザー向けの確認応答は成功する必要があり、そうでなければトリガーは短絡します。ベストエフォートのフック（進捗更新、完了シグナル）は失敗に対して耐性があります。セキュリティ上重要なステップとワークフロー実行は明示的に失敗します。
 
-**EventStore コールバック。** `CallbackWorker` は、`WorkloadFinishedEvent`（最終結果の配信）と `WorkflowStartedEvent`（エージェントが `:running` に遷移したときに `on_flow_started` を実行）の両方をサブスクライブします。ワークフローレコード（JSONB カラム）の `messaging_callback_context` をチェックし、アダプターを通じて結果を配信します。GraphQL もポーリングも不要です。ベースアダプターは、アダプターが提供したコールバックコンテキストを、永続化する前にオーケストレーションのメタデータ（アダプターキー、サービスアカウント ID、フロー参照、バージョン）でエンリッチします。これにより、非同期経路ではアダプターとサービスアカウントを再解決せずに解決できます。例:
+**EventStore コールバック。** `CallbackWorker` はメッセージングのライフサイクルイベントをサブスクライブする唯一のワーカーであり、次の 3 つをサブスクライブします：
+
+| イベント | フック | 役割 |
+|---|---|---|
+| `Ai::DuoWorkflows::WorkflowStartedEvent` | `on_flow_started` | エージェントが `:running` に遷移した |
+| `Ai::DuoWorkflows::WorkflowFinishedEvent` | `deliver_result` | **主要な結果配信** — エージェントが完了した瞬間に発火する |
+| `Ci::Workloads::WorkloadFinishedEvent` | `deliver_result` / `on_flow_failed` | 失われた成功時の配信に対するバックストップ。失敗（`drop` / `stop`）時の主要な経路 |
+
+ワークフローレコード（JSONB カラム）の `messaging_callback_context` をチェックし、アダプターを通じて結果を配信します。GraphQL もポーリングも不要です。ベースアダプターは、アダプターが提供したコールバックコンテキストを、永続化する前にオーケストレーションのメタデータ（アダプターキー、サービスアカウント ID、フロー参照、バージョン）でエンリッチします。これにより、非同期経路ではアダプターとサービスアカウントを改めて解決する必要がありません。例：
 
 ```json
 {
@@ -155,12 +169,23 @@ sequenceDiagram
   "status_ts": "1234567890.654321",
   "session_url": "https://gitlab.com/-/duo_workflows/123",
   "progress_cursor": 42,
+  "delivered_at": "2026-08-05T10:38:05Z",
   "service_account_id": 12345,
   "flow_reference": "developer/v1"
 }
 ```
 
 **`progress_cursor`** は、各配信の成功後に `ProgressDeliveryWorker` が書き込み、次の tick で差分を計算するために読み取ります。これにより、各配信は新しいチェックポイントだけを処理し、リトライ時も冪等になります。
+
+### 返信の配信： パイプラインの終了処理時ではなくワークフローの完了時
+
+**返信は CI パイプラインの終了処理時ではなく、エージェントの完了時に配信されます。** 当初、配信で利用できる実行終了時のシグナルは、`Ci::PipelineFinishedEvent` から派生する `WorkloadFinishedEvent` だけでした。そのため、回答は `checkpoints.latest` に完全に永続化されたまま、CI ジョブの終了処理中に待機していました。これにより、Rails と DWS の完全に外側で、パイプラインの終了処理にかかるコストに応じて実行ごとに変動する**大幅な遅延がすべての返信に追加されていました**。`Ai::DuoWorkflows::WorkflowFinishedEvent` はこのギャップを解消します。これは `after_transition on: :finish` から発行され、成功した `running → finished` 遷移（`drop` / `stop` ではない）と、`messaging_callback_context` を持つワークフローにスコープされるため、メッセージング以外の CI ワークフローは何も発行しません。
+
+**順序の前提条件（DWS）。** `:finish` で安全に配信できるのは、DWS が終端チェックポイントを Rails に永続化するまで FINISH 遷移を遅らせるためです。以前、LangGraph の `aput_writes` は、メッセージを含む `aput` が保存される*前*に FINISH をトリガーしていたため、リスナーが古い `checkpoints.latest` を読み取り、応答がないと報告する可能性がありました。これは、チェックポイントの書き込み完了からずっと後に発火するパイプラインをゲートとする設計によって隠されていた競合状態です。このイベントを今後利用するコンシューマーはこの保証を継承するため、補償のために遅延を再び追加すべきではありません。
+
+**ワークロードイベントは、実行の最後のイベントであるため、引き続きバックストップとして残ります。** `messaging_callback_context` 内の `delivered_at` タイムスタンプにより、両方のイベントにまたがる成功時の配信が冪等になります。すでに設定されている場合は配信をスキップするため、返信が 2 回投稿されることはなく、どちらのイベントでも Sidekiq のリトライは無害です。この値は配信済みとして先に記録するのではなく、配信が確認された*後*に書き込まれます。先に記録すると、配信途中のクラッシュによって返信が永続的に抑止され、この設計が防ごうとしているまさにその障害が発生するためです。`no_response` のケースは試行前にマークします。`:finish` 時にメッセージがない場合はその後もメッセージがないままであり、そうしなければバックストップが 2 回目のエラーを投稿するためです。
+
+バックストップを機能させるには、**`deliver_result` はメッセージが実際にサーフェスへ到達した場合にのみ真と評価される値（truthy）を返す必要があります**。アダプターは自身のトランスポートエラーを内部で処理します（`Slack::API` は API と HTTP の両方の失敗を `{'ok' => false}` に変換し、`Notes::CreateService` は*保存されていない*ノートを返します）。そのため、「例外が発生しなかった」ことは配信済みを意味しません。失敗を報告した場合は `on_flow_completed` の実行を保留し、回答がないのにサーフェスが回答済み（例： Slack の ✅）とマークされないようにします。
 
 ### チェックポイントストリーミング
 
@@ -185,9 +210,9 @@ sequenceDiagram
 
 `ProgressDeliveryWorker` はワークフローごとにデバウンスされます（2 秒のウィンドウ、衝突時に `reschedule_once` を伴う `until_executed` の重複排除）。そのため、チェックポイントのバーストは 1 回の配信にまとめられます。アダプターは `self.supports_live_progress?` から `true` を返すことでオプトインします。オプトインしないアダプターには `ProgressDeliveryWorker` がスケジュールされません。
 
-`delta` オブジェクトは、同一時点の 2 つのビューを持ちます:
+`delta` オブジェクトは、同一時点の 2 つのビューを持ちます：
 
-1. `delta.messages` — 完全な累積スナップショット。メッセージ全体を書き換える Slack のような置換型サーフェスは、今回の変更が無関係なエントリであっても、現在の状態（例: アクティブな TODO リスト）を維持するためにこれからレンダリングします。
+1. `delta.messages` — 完全な累積スナップショット。メッセージ全体を書き換える Slack のような置換型サーフェスは、今回の変更が無関係なエントリであっても、現在の状態（例： アクティブな TODO リスト）を維持するためにこれからレンダリングします。
 1. `delta.new_messages` — 前回の配信以降に追加されたエントリのみ。追記/ストリーム型のサーフェスはこれを使用します。
 
 ### 人間による承認への道
@@ -219,39 +244,39 @@ sequenceDiagram
 
 アダプターの `trigger` メソッドは、Caller から完全に解決された入力（ユーザー、サービスアカウント、フロー、バージョン、プロジェクト、ゴール）を受け取ります。アダプターはポリシーを解決しません。配信のみを行います。
 
-**配信（必須）:**
+**配信（必須）：**
 
 | メソッド | 目的 |
 |---|---|
-| `build_callback_context` | 非同期配信のためのアダプター固有のコンテキストを構築する（例: ノート/ディスカッション ID、Slack のチャネル/スレッド ID） |
-| `deliver_result(callback_context:, message:)` | 最終的な回答をサーフェスに投稿する |
+| `build_callback_context` | 非同期配信のためのアダプター固有のコンテキストを構築する（例： ノート/ディスカッション ID、Slack のチャネル/スレッド ID） |
+| `deliver_result(callback_context:, message:, workflow:)` | 最終的な回答をサーフェスに投稿する。**メッセージが実際に到達した場合にのみ真と評価される値を返す必要がある**。これは、失われた配信をバックストップから再試行するかどうかをワーカーが判断する唯一のシグナルである |
 | `deliver_error(callback_context:, error:)` | エラーメッセージをサーフェスに投稿する |
 
-**ライフサイクルフック（オプションのオーバーライド）:**
+**ライフサイクルフック（オプションのオーバーライド）：**
 
 | メソッド | いつ | 注記 |
 |---|---|---|
-| `on_request_received` | 同期、`build_callback_context` の前。成功しない場合、トリガーは中止される | トリガー前の確認応答（例: 👀 リアクションの追加、進捗メッセージの投稿） |
-| `on_flow_enqueued(callback_context:, workflow:)` | 同期、CI の送信成功後 | 作業がキューに入ったことを通知する（例: ワークフロー URL の永続化、開始システムノートの投稿）。コンテナはまだ実行されていない |
+| `on_request_received` | 同期、`build_callback_context` の前。成功しない場合、トリガーは中止される | トリガー前の確認応答（例： 👀 リアクションの追加、進捗メッセージの投稿） |
+| `on_flow_enqueued(callback_context:, workflow:)` | 同期、CI の送信成功後 | 作業がキューに入ったことを通知する（例： ワークフロー URL の永続化、開始システムノートの投稿）。コンテナはまだ実行されていない |
 | `on_flow_started(callback_context:, workflow:)` | 非同期、`WorkflowStartedEvent` により駆動 | エージェントが `:running` に遷移済み。冪等でなければならない（少なくとも 1 回の配信） |
-| `on_flow_completed(callback_context:, workflow:)` | 非同期、`deliver_result` の後 | 作業完了を通知する（例: ✅ リアクション） |
+| `on_flow_completed(callback_context:, workflow:)` | 非同期、**成功した** `deliver_result` の後 | 作業完了を通知する（例： ✅ リアクション）。配信が失敗した場合はスキップし、回答がないのにサーフェスが回答済みとマークされないようにする |
 | `on_flow_failed(callback_context:, error:, workflow:)` | 非同期または同期 | 失敗を通知する。`workflow: nil` はワークフローが存在する前の同期的な失敗 |
 | `on_progress(delta:, callback_context:)` | 非同期、チェックポイントごと（デバウンス） | ライブ進捗の更新。`supports_live_progress?` が `true` を返す場合は**必須** |
 | `on_approval_requested` | 非同期（将来） | 承認プロンプトを投稿する |
 
-**クラスレベルのインターフェース:**
+**クラスレベルのインターフェース：**
 
 | メソッド | 目的 |
 |---|---|
 | `self.adapter_key` | レジストリ検索とコールバックコンテキストの永続化に使用する一意な文字列キー |
-| `self.from_callback_context(ctx)` | ファクトリー: 非同期配信のために永続化されたコールバックコンテキストからアダプターを再構築する |
+| `self.from_callback_context(ctx)` | ファクトリー： 非同期配信のために永続化されたコールバックコンテキストからアダプターを再構築する |
 | `self.supports_live_progress?` | `true` を返すと、`ProgressDeliveryWorker` のチェックポイントストリーミングにオプトインする。オプトインするアダプターは `on_progress` を実装する**必要がある** |
 
-**非同期復元:** 各アダプターは、レジストリ検索用の一意なキーを宣言し、永続化されたコールバックコンテキストから自身を再構築するためのファクトリーメソッドを実装します。`AdapterRegistry` はアダプターキーをクラスにマッピングし、`CallbackWorker` と `ProgressDeliveryWorker` は配信時に正しいアダプタークラスを解決するために使用します。
+**非同期復元：** 各アダプターは、レジストリ検索用の一意なキーを宣言し、永続化されたコールバックコンテキストから自身を再構築するためのファクトリーメソッドを実装します。`AdapterRegistry` はアダプターキーをクラスにマッピングし、`CallbackWorker` と `ProgressDeliveryWorker` は配信時に正しいアダプタークラスを解決するために使用します。
 
 ベースクラスは、確認応答、コールバックコンテキストの構築、コンポジットアイデンティティのリンク、SA プロジェクトメンバーシップ、コールバックコンテキストのエンリッチメント、ワークフロー実行をオーケストレーションするテンプレートメソッドを提供します。Caller はポリシーを解決して入力を構築し、アダプターは配信を実装し、ベースクラスは共有のメカニズムを処理します。
 
-**`trigger` と `with_lifecycle_hooks`:** `Base#trigger` は完全なエントリポイントです。コンポジットアイデンティティをリンクし、SA メンバーシップを確保してから、`with_lifecycle_hooks` を呼び出します。`with_lifecycle_hooks` は、実行を自ら処理する呼び出し元（例: アダプターの外部で実行をプロビジョニングする `@GitLabDuo` ノートフロー）のための純粋なライフサイクルオーケストレーターです。どちらのパスも、同じ `on_request_received → build_callback_context → yield → on_flow_enqueued` のシーケンスを共有します。
+**`trigger` と `with_lifecycle_hooks`：** `Base#trigger` は完全なエントリポイントです。コンポジットアイデンティティをリンクし、SA メンバーシップを確保してから、`with_lifecycle_hooks` を呼び出します。`with_lifecycle_hooks` は、実行を自ら処理する呼び出し元（例： アダプターの外部で実行をプロビジョニングする `@GitLabDuo` ノートフロー）のための純粋なライフサイクルオーケストレーターです。どちらのパスも、同じ `on_request_received → build_callback_context → yield → on_flow_enqueued` のシーケンスを共有します。
 
 ### 責務の分担
 
@@ -263,7 +288,7 @@ sequenceDiagram
 | プロジェクトの選択 | Caller |
 | ゴールの構築 | Caller |
 | アダプター向けの解決済み入力の構築 | Caller |
-| プリフライトチェック（例: Slack OAuth リンク、ライセンス） | Caller（アダプターが関与する前） |
+| プリフライトチェック（例： Slack OAuth リンク、ライセンス） | Caller（アダプターが関与する前） |
 | コールバックコンテキスト（チャネル/スレッド ID） | 配信アダプター |
 | ユーザー向けライフサイクル（進捗、結果、エラー） | 配信アダプター |
 | コールバックコンテキストからの非同期復元 | 配信アダプター |
@@ -274,9 +299,11 @@ sequenceDiagram
 | リソースの変換（Issue → `issue_id`、MR → `merge_request_id`） | ベースアダプター（メカニズム） |
 | ワークフロー実行（`ExecuteWorkflowService`） | ベースアダプター（メカニズム） |
 | チェックポイントからの最終結果の抽出 | `CallbackWorker` |
+| 配信の冪等性 + バックストップによるリトライ（`delivered_at`） | `CallbackWorker` |
+| 配信が実際に到達したかどうかの報告 | 配信アダプター（`deliver_result` の戻り値） |
 | チェックポイントストリーミングとカーソル管理 | `ProgressDeliveryWorker` |
 
-この 3 層の分割（Caller、配信アダプター、ベースアダプター）は、既存のチャネルに新しいトリガーソースを追加する（例: GitLab ノート上の `@GitLabDuo`）には Caller 側の解決コードを新しく書くだけで済み、既存の配信アダプターは変更なしで再利用されることを意味します。新しいチャネルを追加する（例: Microsoft Teams）には新しい配信アダプターが必要ですが、ベースアダプターや既存の Caller の変更は不要です。
+この 3 層の分割（Caller、配信アダプター、ベースアダプター）は、既存のチャネルに新しいトリガーソースを追加する（例： GitLab ノート上の `@GitLabDuo`）には Caller 側の解決コードを新しく書くだけで済み、既存の配信アダプターは変更なしで再利用されることを意味します。新しいチャネルを追加する（例： Microsoft Teams）には新しい配信アダプターが必要ですが、ベースアダプターや既存の Caller の変更は不要です。
 
 ### 起動時間
 
@@ -298,18 +325,21 @@ sequenceDiagram
 - 同じアーキテクチャが外部メッセージングと GitLab ネイティブなサーフェスの両方を処理する
 - ワークスペースプロジェクトは自然なカスタマイズのサーフェス（イメージ、スキル、シークレット）
 - 型付けされたアダプターのコントラクトが不足しているフィールドを早期に検出する
-- チェックポイントストリーミングは稼働中であり、同じアーキテクチャを加法的に拡張する
+- チェックポイントストリーミングは稼働中であり、同じアーキテクチャを加法的に拡張する（新しい EventStore サブスクリプション、新しいアダプターフック — コアの変更は不要）
+- 返信のレイテンシが CI パイプラインの終了処理から切り離される。返信はパイプラインの終了処理を待つ代わりにワークフローの `:finish` 遷移を利用し、ワークロードイベントは配信のバックストップとして保持される
 
 ## デメリット
 
 - CI の起動レイテンシ（空のプロジェクトで約 10 秒）は直接のサービス呼び出しよりも遅いが、非同期メッセージングには許容範囲
 - プロジェクトとサービスアカウントの自動作成が namespace に暗黙的なリソースを追加する
 - アダプターメソッドが 2 つのコンテキストで実行される — 同期（完全な状態）と非同期（コールバックコンテキストのみ） — 新しいアダプターの作成者向けに明確なドキュメントが必要
+- 結果配信に 2 つのトリガーイベントが存在するため、アダプターは配信の成功を正確に報告し、少なくとも 1 回の配信に耐える必要がある。`delivered_at` マーカーは成功後に書き込まれるため、配信途中のクラッシュによって返信が 1 回重複する可能性のあるわずかな時間枠が残る
 - 各新しいトリガーソースは、呼び出し元で独自の解決ロジック（認証、SA、フロー、プロジェクト）を実装する必要があるが、これは通常、新しいクラスではなく単純なコード
 
 ## 実装
 
 - [Issue](https://gitlab.com/gitlab-org/gitlab/-/work_items/590434)
+- [返信レイテンシの最適化](https://gitlab.com/gitlab-org/gitlab/-/work_items/605913)
 
 ### フィーチャーフラグ
 

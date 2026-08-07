@@ -62,7 +62,7 @@ Duo Workflow は、多くの異なるコアコンポーネント上に構築さ�
 1. ワークフローが UI からトリガーされた場合、Workflow executor は不要です。GitLab が Workflow service を直接呼び出せます。
 1. プライベートデータにアクセスしたりデータを更新したりする、Workflow service から GitLab へのすべての API 呼び出しは、ワークフローを作成したユーザーに代わって認証されます。Workflow service は GitLab への特権アクセスを必要としないはずです。
 
-### GitLab.com アーキテクチャ
+### GitLab.com アーキテクチャ {#gitlabcom-architecture}
 
 ![Workflow Architecture gitlab-com](/images/engineering/architecture/design-documents/duo_workflow/diagrams/duo-workflow-architecture-gitlab-com.png)
 
@@ -148,7 +148,7 @@ sequenceDiagram
     gitlab_rails->>user: Workflow done!
 ```
 
-#### GitLab Web UI から（別の executor なしで）
+#### GitLab Web UI から（別の executor なしで） {#from-the-gitlab-web-ui-without-a-separate-executor}
 
 Web UI を通じてエージェント型チャットを実行できるようにするため、私たちは[ワークフローを Workhorse の内部で実行する機能を実装しました](decisions/004_workhorse_as_a_duo_workflow_service_proxy.md)。
 このアーキテクチャでは、Workhorse がリクエストを GitLab Rails インスタンスに転送するコンポーネントです。

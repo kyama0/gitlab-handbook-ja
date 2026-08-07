@@ -5466,11 +5466,11 @@
     },
     "content/handbook/engineering/ai/_index.md": {
       "path": "content/handbook/engineering/ai/_index.md",
-      "upstream_sha": "ad217b024ba77ae34e6f41cb4a28107135c5dba5",
-      "translated_at": "2026-08-01T15:59:51+09:00",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:19:17+09:00",
       "model": "codex",
-      "input_hash": "abf190a0991eee2a82f41c318151391c766c5e43e2b14d0cf428fbf116e45ae6",
-      "upstream_committed_at": "2026-07-31T12:38:28+02:00"
+      "input_hash": "9089af2afa9db7c58ab29785f2823a2f49b6ba83408820f8ba32c2af7b6c269c",
+      "upstream_committed_at": "2026-08-06T16:35:18+02:00"
     },
     "content/handbook/engineering/ai/agent-foundations/_index.md": {
       "path": "content/handbook/engineering/ai/agent-foundations/_index.md",
@@ -5567,38 +5567,6 @@
       "model": "claude-sonnet-4-6",
       "input_hash": "958f66da9aa84bbff08d6f46adb7d772196f756527cb1f4d7c3bcfe7a5b67e79",
       "upstream_committed_at": "2025-10-14T17:59:32+00:00"
-    },
-    "content/handbook/engineering/ai/editor-extensions-multi-platform/_index.md": {
-      "path": "content/handbook/engineering/ai/editor-extensions-multi-platform/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "c6102f5c35631652d090d75e230c6d5e1532c8dd34b1c1604cf450c0d5fe107e",
-      "upstream_committed_at": "2026-05-08T14:13:21-07:00"
-    },
-    "content/handbook/engineering/ai/editor-extensions-multi-platform/duo-cli/_index.md": {
-      "path": "content/handbook/engineering/ai/editor-extensions-multi-platform/duo-cli/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "3e42736b578558a7046897275db21547724aa192e100490ff15f0ce8137e186b",
-      "upstream_committed_at": "2026-05-08T14:13:21-07:00"
-    },
-    "content/handbook/engineering/ai/editor-extensions-vscode/_index.md": {
-      "path": "content/handbook/engineering/ai/editor-extensions-vscode/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "185a05857fcd0e60f207b6570abfb654d1d0e9300e77c192cb7f5260b5b5a029",
-      "upstream_committed_at": "2026-05-08T14:13:21-07:00"
-    },
-    "content/handbook/engineering/ai/editor-extensions-vscode/ownership.md": {
-      "path": "content/handbook/engineering/ai/editor-extensions-vscode/ownership.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "7593fa517bb464bf48edc94736c2193ef0fc0b6ee912fd1fad501e1730d95150",
-      "upstream_committed_at": "2025-09-29T18:12:40+02:00"
     },
     "content/handbook/engineering/ai/operating-principles/_index.md": {
       "path": "content/handbook/engineering/ai/operating-principles/_index.md",
@@ -5722,11 +5690,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/ai_catalog/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/ai_catalog/_index.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T21:02:32+09:00",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:06:43+09:00",
       "model": "codex",
-      "input_hash": "5eaa1f38998245c19219195ceaa08873274e5bebabd91a168455004cb02bca39",
-      "upstream_committed_at": "2026-07-07T12:09:18+01:00"
+      "input_hash": "77a3e205d88dcbe1541659b9e98786209a8fa63f9af36b39c3479b3322e9c904",
+      "upstream_committed_at": "2026-08-06T19:43:13+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/ai_context_abstraction_layer/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/ai_context_abstraction_layer/_index.md",
@@ -7514,11 +7482,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/008_duo_messaging_service.md": {
       "path": "content/handbook/engineering/architecture/design-documents/duo_workflow/decisions/008_duo_messaging_service.md",
-      "upstream_sha": "1c5f183add4a3220f2aa77e0c98565c4fad645e2",
-      "translated_at": "2026-07-18T06:25:37+09:00",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:13:54+09:00",
       "model": "codex",
-      "input_hash": "7ab56ec04ede9981f42d06c92378c149cf792b5c47c6eb1cb4542cb7ee7378e8",
-      "upstream_committed_at": "2026-07-17T14:17:40-04:00"
+      "input_hash": "8dde1aadebe023ac2d2f50f9897a7fc3e6dfe6845f427237b13062fde62621e4",
+      "upstream_committed_at": "2026-08-05T14:10:51-04:00"
     },
     "content/handbook/engineering/architecture/design-documents/email-ingestion/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/email-ingestion/_index.md",
@@ -20354,11 +20322,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd.md",
-      "upstream_sha": "a2af0b1d81734a87d89ce13f0302597755181359",
-      "translated_at": "2026-08-05T06:06:38+09:00",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:19:17+09:00",
       "model": "codex",
-      "input_hash": "b4f02db89e7ab94e60766f81d0a8ba05d98db096eeb512147de790eb1f2411ca",
-      "upstream_committed_at": "2026-08-04T12:47:53-07:00"
+      "input_hash": "43837927110f72b648f3c5a69a1b44ccad13406e5e7247fd7da312c2ea3451cc",
+      "upstream_committed_at": "2026-08-06T10:08:38-07:00"
     },
     "content/handbook/total-rewards/benefits/modern-health.md": {
       "path": "content/handbook/total-rewards/benefits/modern-health.md",
@@ -32386,11 +32354,11 @@
     },
     "content/handbook/company/working-groups/task-groups/sentry-signal-loop.md": {
       "path": "content/handbook/company/working-groups/task-groups/sentry-signal-loop.md",
-      "upstream_sha": "6329e70e21b29c3cf88be90bd4abee6489b39003",
-      "translated_at": "2026-05-21T11:45:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "0d880bbc477eb589890ad9c2d47e1d502347bd9bccce975ee8a45ac55d0c471b",
-      "upstream_committed_at": "2026-05-20T13:21:20+01:00"
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:19:17+09:00",
+      "model": "codex",
+      "input_hash": "8e5f2b476c3639929e257653d5d8767d446100bade09fe589b21fa0261d660ce",
+      "upstream_committed_at": "2026-08-06T17:32:10+01:00"
     },
     "content/handbook/support/workflows/escalations-support_engineer.md": {
       "path": "content/handbook/support/workflows/escalations-support_engineer.md",
@@ -34842,59 +34810,19 @@
     },
     "content/handbook/engineering/ai/ai-clients/_index.md": {
       "path": "content/handbook/engineering/ai/ai-clients/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T09:23:58+09:00",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:19:17+09:00",
       "model": "codex",
-      "input_hash": "6104da29a841b3598dace0935d29f39d9d6571b7ffb2f2c2850f555b9b1803d1",
-      "upstream_committed_at": "2026-07-17T17:30:02-07:00"
-    },
-    "content/handbook/engineering/ai/ai-clients/chat-engine/_index.md": {
-      "path": "content/handbook/engineering/ai/ai-clients/chat-engine/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T09:23:58+09:00",
-      "model": "codex",
-      "input_hash": "ed6be339fd2d2598907e49684255e0b84ff170ee31fea343b0d0760e746c1a6b",
-      "upstream_committed_at": "2026-07-17T17:30:02-07:00"
-    },
-    "content/handbook/engineering/ai/ai-clients/duo-cli/_index.md": {
-      "path": "content/handbook/engineering/ai/ai-clients/duo-cli/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T09:23:58+09:00",
-      "model": "codex",
-      "input_hash": "08530fd694af1384c66bd1e6e3d6523aeb0f181c1fec63aa93d6eb0371c08fb8",
-      "upstream_committed_at": "2026-07-17T17:30:02-07:00"
+      "input_hash": "e61a2dcd15c22fa00c2d0009d393c61ac736ad6d9890555b32902cf84594db91",
+      "upstream_committed_at": "2026-08-06T16:35:18+02:00"
     },
     "content/handbook/engineering/ai/ai-clients/duo-client-sdk/_index.md": {
       "path": "content/handbook/engineering/ai/ai-clients/duo-client-sdk/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T09:26:50+09:00",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:19:17+09:00",
       "model": "codex",
-      "input_hash": "24d9ed9fb87ce0dc48c33d512929fd6f476f14828cabf6cc465d8fe3364c0d59",
-      "upstream_committed_at": "2026-07-17T17:30:02-07:00"
-    },
-    "content/handbook/engineering/ai/ai-clients/jetbrains/_index.md": {
-      "path": "content/handbook/engineering/ai/ai-clients/jetbrains/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T09:27:25+09:00",
-      "model": "codex",
-      "input_hash": "8e1ae0147fb3223d331caa2739d8f81a670aea8f8c62fa5db23110674ecd6ffd",
-      "upstream_committed_at": "2026-07-17T17:30:02-07:00"
-    },
-    "content/handbook/engineering/ai/ai-clients/vscode/_index.md": {
-      "path": "content/handbook/engineering/ai/ai-clients/vscode/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T09:27:58+09:00",
-      "model": "codex",
-      "input_hash": "3e9aeea28b5c4dc1ff602b5c25e9e82b6a9c31dcf6ebe62211dacb52f06f64a7",
-      "upstream_committed_at": "2026-07-17T17:30:02-07:00"
-    },
-    "content/handbook/engineering/ai/ai-clients/web-chat/_index.md": {
-      "path": "content/handbook/engineering/ai/ai-clients/web-chat/_index.md",
-      "upstream_sha": "1312dadbdf7381446077faefcfae17ba323692b6",
-      "translated_at": "2026-07-19T09:28:31+09:00",
-      "model": "codex",
-      "input_hash": "1aab2a22bfcb8fec74f5d1ff1ab5005c3e38a22668c4a6b974a475fdfe280d10",
-      "upstream_committed_at": "2026-07-17T17:30:02-07:00"
+      "input_hash": "9c53f41ba5698c4f73a2140bd5f71f37bd6878b98f09cb4db4c6e681adfffc44",
+      "upstream_committed_at": "2026-08-06T16:35:18+02:00"
     },
     "content/handbook/upstream-studios/product-studios/_index.md": {
       "path": "content/handbook/upstream-studios/product-studios/_index.md",
@@ -35735,6 +35663,86 @@
       "model": "codex",
       "input_hash": "d90ac8c0250b641edde43a225e21d7201aad28f918e2b96589b06f7f7f2ce565",
       "upstream_committed_at": "2026-08-04T10:45:08-04:00"
+    },
+    "content/handbook/eta/css/reclaim/_index.md": {
+      "path": "content/handbook/eta/css/reclaim/_index.md",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T07:39:49+09:00",
+      "model": "codex",
+      "input_hash": "fc924c984b97df3085684cb683e9d17715fae294b484932d45df56fb871e4b00",
+      "upstream_committed_at": "2026-08-06T12:08:12-05:00"
+    },
+    "content/handbook/engineering/ai/ai-clients/duo-client-sdk/duo-client-sdk/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-clients/duo-client-sdk/duo-client-sdk/_index.md",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:19:17+09:00",
+      "model": "codex",
+      "input_hash": "65eeb54eb921ef87fe8084c096e48867f0acb8ae53ad0391266ffb9783989379",
+      "upstream_committed_at": "2026-08-06T16:35:18+02:00"
+    },
+    "content/handbook/engineering/ai/ai-clients/developer-clients/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-clients/developer-clients/_index.md",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:30:08+09:00",
+      "model": "codex",
+      "input_hash": "b315790d6ab3d8ba9e53847e72873ebb80f008fc4655da35adb0b6e088ba637b",
+      "upstream_committed_at": "2026-08-06T16:35:18+02:00"
+    },
+    "content/handbook/engineering/ai/ai-clients/developer-clients/duo-cli/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-clients/developer-clients/duo-cli/_index.md",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:30:08+09:00",
+      "model": "codex",
+      "input_hash": "cdc82499ea069efe6cefbdb637d1da5c96c640b36feac16035eb7dff78771538",
+      "upstream_committed_at": "2026-08-06T16:35:18+02:00"
+    },
+    "content/handbook/engineering/ai/ai-clients/developer-clients/vscode/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-clients/developer-clients/vscode/_index.md",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:30:08+09:00",
+      "model": "codex",
+      "input_hash": "096e665a461e4ae51e50b47d03c12963197f0965f976b30a8be909367d01f3b6",
+      "upstream_committed_at": "2026-08-06T16:35:18+02:00"
+    },
+    "content/handbook/engineering/ai/ai-clients/developer-clients/jetbrains/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-clients/developer-clients/jetbrains/_index.md",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:30:08+09:00",
+      "model": "codex",
+      "input_hash": "34ed9c1e6257352fe90b1309df8892fd3236b0350088cfdfaa8bef1cef36182c",
+      "upstream_committed_at": "2026-08-06T16:35:18+02:00"
+    },
+    "content/handbook/engineering/ai/ai-clients/ownership.md": {
+      "path": "content/handbook/engineering/ai/ai-clients/ownership.md",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:30:08+09:00",
+      "model": "codex",
+      "input_hash": "f01982a03d5343fd7e06ce9bb89a807e229e24e1746bd89766561f72d411199f",
+      "upstream_committed_at": "2026-08-06T16:35:18+02:00"
+    },
+    "content/handbook/engineering/ai/ai-clients/duo-chat/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-clients/duo-chat/_index.md",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:50:55+09:00",
+      "model": "codex",
+      "input_hash": "624c2d9d647b8173bf8cffe106b35a5ec5593e678ff088ac27783ecff0718cb4",
+      "upstream_committed_at": "2026-08-06T16:35:18+02:00"
+    },
+    "content/handbook/engineering/ai/ai-clients/duo-chat/web-chat/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-clients/duo-chat/web-chat/_index.md",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:50:55+09:00",
+      "model": "codex",
+      "input_hash": "f15d69dc93743e2840c4016545930000c3427b4591f8f829e03719b56b7a59dd",
+      "upstream_committed_at": "2026-08-06T16:35:18+02:00"
+    },
+    "content/handbook/engineering/ai/ai-clients/duo-chat/chat-engine/_index.md": {
+      "path": "content/handbook/engineering/ai/ai-clients/duo-chat/chat-engine/_index.md",
+      "upstream_sha": "d51496d2a9ca5dfcbd3a4eef779fc95c357103f3",
+      "translated_at": "2026-08-07T06:50:55+09:00",
+      "model": "codex",
+      "input_hash": "31ac384fb7cc807acd2fc7a19247377b49788ab2d85ec9e39c5b4975a8019511",
+      "upstream_committed_at": "2026-08-06T16:35:18+02:00"
     }
   }
 }

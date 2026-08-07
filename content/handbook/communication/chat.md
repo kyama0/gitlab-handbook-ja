@@ -78,7 +78,7 @@ Slack で [e-group](/handbook/company/team/?departmentOrDivision=Executive) に�
 - IT 関連の問い合わせ、Okta、ハードウェア、ソフトウェア、システムアクセスリクエスト、ユーザー権限などの問題については、Slack の Compass アプリ（上部の検索バーに「Compass」と入力して見つけます）または it-help@gitlab.com から IT に連絡してください。
 - **`#talent-acquisition`**: 紹介に関する質問、候補者の調整、一般的な Talent Acquisition など
 
-### チャンネルカテゴリ
+### チャンネルカテゴリ {#channel-categories}
 
 #### アカウントチャンネル（a_）
 
