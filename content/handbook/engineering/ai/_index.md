@@ -85,7 +85,7 @@ GitLab 独自の非同期な働き方、ハンドブックファーストの手�
 | [AI Clients: Duo Client SDK](/handbook/engineering/ai/ai-clients/duo-client-sdk/) | GitLab Language Server、およびすべてのエディター拡張機能にわたる AI 機能を支える共有クライアント SDK |
 | [AI Clients: Duo Chat](/handbook/engineering/ai/ai-clients/duo-chat/) | Web と IDE の各サーフェスにわたる Duo Chat（Web Chat、Chat Engine） |
 | [AI Model Services](/handbook/engineering/ai/ai-model-services/) | Model Selection（モデルのライフサイクル、選択エンジンと UI）/ Health & Connectivity（Duo Health Check、セットアップ、接続性）/ Gateway Services（Prompt Registry、イベント追跡、AIGW 請求） |
-| [Global Search](/handbook/engineering/ai/search/) | Abstraction Layer / Vector Storage / セマンティック |
+| [Global Search](/handbook/engineering/ai/search/) | Abstraction Layer / Vector Storage / セマンティック検索 |
 | [Infrastructure Platforms - Runway](/handbook/engineering/infrastructure-platforms/gitlab-delivery/runway/) | AI Gateway のスケーラビリティ / Runway インフラストラクチャ |
 
 ## カウンターパート
