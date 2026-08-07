@@ -69,7 +69,7 @@ Language Server はすべてのエディター拡張機能で共同利用され�
 
 ### グループ横断のオーナーシップと境界
 
-Language Server はすべてのエディター拡張機能で使用されます。[Ownership and Boundaries](/handbook/engineering/ai/ai-clients/ownership/)ページでは、私たちのシステムで機能を作成・保守するすべての関係者の間で、オーナーシップと境界、期待事項を明確にしています。
+Language Server はすべてのエディター拡張機能で使用されます。[オーナーシップと境界](/handbook/engineering/ai/ai-clients/ownership/)ページでは、私たちのシステムで機能を作成・保守するすべての関係者の間で、オーナーシップと境界、期待事項を明確にしています。
 
 ---
 
