@@ -652,9 +652,9 @@ Duo Workflow Service は、エージェントとフローの実行エンジン�
 2. **名前生成**： アイテム名。基盤フローの場合は "Duo " のプレフィックス付き
 
 3. **`Namespaces::ServiceAccounts::CreateService` を通じたサービスアカウント作成**：
-   - `namespace_id`: グループ ID
+   - `namespace_id`： グループ ID
    - `composite_identity_enforced: true`（複合アイデンティティに必要）
-   - `organization_id`: グループから継承
+   - `organization_id`： グループから継承
 
 4. **再利用ロジック**： 同じユーザー名のサービスアカウントが存在し、まだ `ItemConsumer` にリンクされていない場合は、新規作成ではなく再利用される。
 
@@ -711,8 +711,8 @@ flowchart LR
 
 ### 認可
 
-- `delete_ai_catalog_item`: 任意の削除に必須（maintainer+ が必須）
-- `force_hard_delete_ai_catalog_item`: 強制ハード削除に必須（admin が必須）
+- `delete_ai_catalog_item`： 任意の削除に必須（maintainer+ が必須）
+- `force_hard_delete_ai_catalog_item`： 強制ハード削除に必須（admin が必須）
 
 ### GraphQL 公開
 

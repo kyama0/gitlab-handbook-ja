@@ -59,7 +59,7 @@ Duo CLI チームは、AI を活用したコマンドラインインターフェ
 
 ### コミュニケーションチャンネル
 
-- **Slack**: [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
+- **Slack**： [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
 - または、Duo CLI から [`/feedback`](https://docs.gitlab.com/user/gitlab_duo_cli/use/#slash-commands) コマンドを使用するだけで GitLab Issue を作成できます
 
 ### Issue のラベル

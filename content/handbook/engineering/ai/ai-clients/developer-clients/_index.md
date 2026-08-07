@@ -21,11 +21,11 @@ stale: false
 
 ## 👨‍💻 チームメンバー
 
-**Engineering Manager:** Amr Elhusseiny
+**Engineering Manager：** Amr Elhusseiny
 
-**Product Manager:** James Casey
+**Product Manager：** James Casey
 
-**UX:** Yi-Ann Chen
+**UX：** Yi-Ann Chen
 
 {{< team-by-manager-slug "aelhusseiny" >}}
 
@@ -46,14 +46,14 @@ stale: false
 - **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C) — 質問と問い合わせ
 - **内部ステージチャンネル：** [#s_ai-clients](https://gitlab.slack.com/archives/s_ai-clients) — チームの同期のみ
 - **機能チームの Slack チャンネル：**
-  - Duo CLI: [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
+  - Duo CLI： [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
   - VS Code 拡張機能： [#f_vscode_extension](https://gitlab.slack.com/archives/C013QJ9NEPL)
   - JetBrains プラグイン： [#f_jetbrains_plugin](https://gitlab.slack.com/archives/C02UY9XKABH)
 - **私たちが管理するその他の Slack チャンネル：**
   - Visual Studio 拡張機能： [#f_visual_studio_extension](https://gitlab.enterprise.slack.com/archives/C0581SE363C)
   - Eclipse プラグイン： [#f_eclipse_plugin](https://gitlab.enterprise.slack.com/archives/C07MKHCFGHG)
   - Neovim プラグイン： [#f_neovim_plugin](https://gitlab.enterprise.slack.com/archives/C05BF7L6PEX)
-  - Web IDE: [#f_vscode_web_ide](https://gitlab.enterprise.slack.com/archives/C03CEHDPQGH)
+  - Web IDE： [#f_vscode_web_ide](https://gitlab.enterprise.slack.com/archives/C03CEHDPQGH)
 
 ### 共有カレンダー {#shared-calendar}
 
@@ -281,7 +281,7 @@ Issue の複雑さの大まかな見積もりを示すため、3 つのウェイ
   - <a href="https://app.snowflake.com/ys68254/gitlab/#/streamlit-apps/PROD.STREAMLIT_TEST.EDITOR_EXTENSION_DAU/!/editor_extension_dau" target="_blank">Snowflake： Developer Clients の DAU と利用状況</a>
   - <a href="https://app.snowflake.com/ys68254/gitlab/#/streamlit-apps/PROD.STREAMLIT_TEST.EDITOR_EXTENSION_DAU/!/language_server_metrics" target="_blank">Snowflake： LSP の速度パフォーマンス</a>
   - <a href="https://10az.online.tableau.com/#/site/gitlab/views/PDCodeSuggestions/IDEMetrics" target="_blank">Tableau： Code Suggestions の IDE メトリクス</a>
-  - <a href="https://10az.online.tableau.com/#/site/gitlab/views/DRAFTCentralizedGMAUDashboard/MetricReporting/48493d6c-cd11-45b9-bdc5-bf5242e0de0b/EditorExtensionsMAU?:iid=2" target="_blank">Tableau: MAU</a>
+  - <a href="https://10az.online.tableau.com/#/site/gitlab/views/DRAFTCentralizedGMAUDashboard/MetricReporting/48493d6c-cd11-45b9-bdc5-bf5242e0de0b/EditorExtensionsMAU?:iid=2" target="_blank">Tableau：MAU</a>
   - <a href="https://dashboards.gitlab.net/dashboards/f/editor-extensions/?orgId=1" target="_blank">Grafana： ダッシュボード</a>
   - <a href="https://session-error-rates-dashboard-87d159.gitlab.io/" target="_blank">Agent Platform セッションエラーレート</a>
 - **その他**
