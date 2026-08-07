@@ -35,10 +35,10 @@ Duo Chat グループは、他のプロダクトグループや幅広いコミ�
 
 ### Slack
 
-- **Duo Chat ラウンジ:** [#duo-chat-lounge](https://gitlab.enterprise.slack.com/archives/C06LWENL58F)
-- **Duo Chat に関する一般的な質問:** [#g_duo_chat](https://gitlab.slack.com/archives/g_duo_chat)
-- **公開ステージチャンネル:** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C) — 質問と連絡
-- **内部ステージチャンネル:** [#s_ai-clients](https://gitlab.slack.com/archives/s_ai-clients) — チームの同期専用
+- **Duo Chat ラウンジ：** [#duo-chat-lounge](https://gitlab.enterprise.slack.com/archives/C06LWENL58F)
+- **Duo Chat に関する一般的な質問：** [#g_duo_chat](https://gitlab.slack.com/archives/g_duo_chat)
+- **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C) — 質問と連絡
+- **内部ステージチャンネル：** [#s_ai-clients](https://gitlab.slack.com/archives/s_ai-clients) — チームの同期専用
 
 ---
 
@@ -70,23 +70,23 @@ Duo Chat グループは、他のプロダクトグループや幅広いコミ�
 
 | システム部分 | 担当グループ |
 | -------- | ------- |
-| Duo-UI の共有 UI コンポーネント | group: duo chat |
-| VS Code - Chat Webview | group: duo chat (support: developer clients) |
-| VS Code - Chat ビジネスロジック | group: developer clients |
-| Visual Studio - Chat Webview（Web ページ） | group: duo chat (support: developer clients) |
-| Visual Studio - Chat ビジネスロジック | group: developer clients |
-| JetBrains - Chat Webview（Web ページ） | group: duo chat (support: developer clients) |
-| JetBrains - Chat ビジネスロジック | group: developer clients |
+| Duo-UI の共有 UI コンポーネント | Duo Chat グループ |
+| VS Code - Chat Webview | Duo Chat グループ（サポート：Developer Clients） |
+| VS Code - Chat ビジネスロジック | Developer Clients グループ |
+| Visual Studio - Chat Webview（Web ページ） | Duo Chat グループ（サポート：Developer Clients） |
+| Visual Studio - Chat ビジネスロジック | Developer Clients グループ |
+| JetBrains - Chat Webview（Web ページ） | Duo Chat グループ（サポート：Developer Clients） |
+| JetBrains - Chat ビジネスロジック | Developer Clients グループ |
 
 #### 責任
 
-1. 単純なコンポーネントの更新: UI コンポーネントグループ（group: duo chat）が担当します。
-2. 複雑な機能の統合: UI コンポーネントグループ（group: duo chat）が統合を主導し、ダミーデータを使用して拡張機能との通信用スタブを作成します。group: developer clients は IDE プラグインへの統合作業を支援します。
-3. 破壊的変更: すべての破壊的変更を早い段階で伝える必要があります。IDE 拡張機能のワークフローへの影響を避けるため、可能な限り新機能を任意で利用できるようにすることを検討してください。
+1. 単純なコンポーネントの更新：UI コンポーネントグループ（Duo Chat グループ）が担当します。
+2. 複雑な機能の統合：UI コンポーネントグループ（Duo Chat グループ）が統合を主導し、ダミーデータを使用して拡張機能との通信用スタブを作成します。Developer Clients グループは IDE プラグインへの統合作業を支援します。
+3. 破壊的変更：すべての破壊的変更を早い段階で伝える必要があります。IDE 拡張機能のワークフローへの影響を避けるため、可能な限り新機能を任意で利用できるようにすることを検討してください。
 
 #### ツール
 
-- [GitLab Duo ホストステータスページ](https://jannik_lehmann.gitlab.io/gitlab-ui-hosts-status-page/): 各ホストシステムが使用する GitLab UI と Duo UI のバージョンを追跡します。
+- [GitLab Duo ホストステータスページ](https://jannik_lehmann.gitlab.io/gitlab-ui-hosts-status-page/)：各ホストシステムが使用する GitLab UI と Duo UI のバージョンを追跡します。
 
 ### 計画プロセス
 
@@ -100,11 +100,11 @@ Duo Chat グループは、他のプロダクトグループや幅広いコミ�
 
 **計画の詳細化**ステップでは、ウェイトを割り当てる前に、エンジニアが以下の質問に答えられる必要があります。
 
-- 要件は明確かつ具体的であり、提供を期待されているものを完全に理解していますか?
-- 要件は包括的で、あまり明白ではない実行経路も網羅していますか?（エッジケース、パッケージング、エラー処理など、いわゆる「ハッピーパス」以外の経路）。
-- 非機能要件に関する考慮事項は盛り込まれていますか? たとえば、スケーラビリティ、アクセシビリティ、コンプライアンス、セキュリティ、計測などです。
-- 品質への期待や、テストおよび評価のレベルに関する要件は明確で、理解されていますか?
-- Issue の妥当な見積もりを提示できる技術的な実装経路が見えていますか? たとえば、技術的な不明点がすべて解決しているか、追加の技術調査スパイクなしで対処できますか?
+- 要件は明確かつ具体的であり、提供を期待されているものを完全に理解していますか？
+- 要件は包括的で、あまり明白ではない実行経路も網羅していますか？（エッジケース、パッケージング、エラー処理など、いわゆる「ハッピーパス」以外の経路）。
+- 非機能要件に関する考慮事項は盛り込まれていますか？ たとえば、スケーラビリティ、アクセシビリティ、コンプライアンス、セキュリティ、計測などです。
+- 品質への期待や、テストおよび評価のレベルに関する要件は明確で、理解されていますか？
+- Issue の妥当な見積もりを提示できる技術的な実装経路が見えていますか？ たとえば、技術的な不明点がすべて解決しているか、追加の技術調査スパイクなしで対処できますか？
 
 これらの質問のいずれかに対する答えが「いいえ」の場合、その Issue は `~workflow::refinement` に戻す必要があります。
 

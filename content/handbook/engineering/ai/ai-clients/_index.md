@@ -120,9 +120,9 @@ graph TD
 | [`#f_duo-client-sdk`](https://gitlab.enterprise.slack.com/archives/C05B1PFHRPU) | Duo Client SDK 機能別チーム（`#f_language_server` から名称変更） |
 | [`#duo-chat-lounge`](https://gitlab.enterprise.slack.com/archives/C06LWENL58F) | Duo Chat ラウンジ |
 
-### 共有カレンダー
+### 共有カレンダー {#shared-calendar}
 
-AI Clients 共有カレンダー（カレンダー ID: c_673d889354d021f7fa9f20a003b5867185a9bf12989b5eaacbc8b537cc9ef27c@group.calendar.google.com）
+AI Clients 共有カレンダー（カレンダー ID：c_673d889354d021f7fa9f20a003b5867185a9bf12989b5eaacbc8b537cc9ef27c@group.calendar.google.com）
 
 ### プロダクトカテゴリ
 

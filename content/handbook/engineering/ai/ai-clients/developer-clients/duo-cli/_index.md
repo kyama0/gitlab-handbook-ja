@@ -38,8 +38,8 @@ Duo CLI 機能チームは、[Developer Clients グループ](/handbook/engineer
 
 ## 💬 Slack
 
-- **チームチャンネル:** [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
-- **公開ステージチャンネル:** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)
+- **チームチャンネル：** [#f_duo_cli](https://gitlab.slack.com/archives/f_duo_cli)
+- **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)
 
 ---
 
@@ -53,9 +53,9 @@ Duo CLI チームは、AI を活用したコマンドラインインターフェ
 
 ### 開発リソース
 
-- **リポジトリ**: [GitLab Language Server — CLI パッケージ](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp/-/tree/main/packages/cli?ref_type=heads)
-- **Issue トラッカー**: [Duo CLI の進行中の作業](https://gitlab.com/groups/gitlab-org/-/boards/9839597?epic_id=3743089)
-- **エピック**: [Duo CLI 開発エピック](https://gitlab.com/groups/gitlab-org/-/epics/19070)
+- **リポジトリ**： [GitLab Language Server — CLI パッケージ](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp/-/tree/main/packages/cli?ref_type=heads)
+- **Issue トラッカー**： [Duo CLI の進行中の作業](https://gitlab.com/groups/gitlab-org/-/boards/9839597?epic_id=3743089)
+- **エピック**： [Duo CLI 開発エピック](https://gitlab.com/groups/gitlab-org/-/epics/19070)
 
 ### コミュニケーションチャンネル
 
@@ -76,13 +76,13 @@ Duo CLI チームは、AI を活用したコマンドラインインターフェ
 
 私たちは、GitLab チームメンバーにとって CLI を効果的なものにするため、フィードバックを収集しています。次のような主要な開発ワークフローをテストしてください。
 
-- **コードタスク**: 生成、説明、リファクタリング、デバッグ、テスト作成
-- **GitLab ワークフロー**: MR レビュー、Issue 分析、CI/CD デバッグ、セキュリティレビュー
-- **高度なシナリオ**: 複数ファイルの変更、アーキテクチャ計画、大規模なコードベース
+- **コードタスク**： 生成、説明、リファクタリング、デバッグ、テスト作成
+- **GitLab ワークフロー**： MR レビュー、Issue 分析、CI/CD デバッグ、セキュリティレビュー
+- **高度なシナリオ**： 複数ファイルの変更、アーキテクチャ計画、大規模なコードベース
 
-**フィードバックのカテゴリー:**
+**フィードバックのカテゴリー：**
 
-- **バグ**: クラッシュ、エラー、パフォーマンスの問題にはバグテンプレートを使用します
-- **機能**: 不足している機能や改善には機能テンプレートを使用します
-- **ユーザビリティ**: 分かりにくいワークフロー、不明瞭なエラー、ドキュメントの不足を報告します
-- **成功事例**: うまく機能していることや生産性向上の成果を共有します
+- **バグ**： クラッシュ、エラー、パフォーマンスの問題にはバグテンプレートを使用します
+- **機能**： 不足している機能や改善には機能テンプレートを使用します
+- **ユーザビリティ**： 分かりにくいワークフロー、不明瞭なエラー、ドキュメントの不足を報告します
+- **成功事例**： うまく機能していることや生産性向上の成果を共有します

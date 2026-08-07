@@ -25,7 +25,7 @@ lastmod: "2026-08-06T19:43:13+12:00"
 
 このドキュメントでは、GitLab Rails モノリス内の AI Catalog バックエンドの現在のアーキテクチャを記録します。データモデル、基盤的（foundational）アイテムとカスタムアイテムの異なる実装パターンを記録し、システムが進化する過程で生じたアーキテクチャの不整合を特定します。
 
-このドキュメンテーションにより、以下が可能になります:
+このドキュメンテーションにより、以下が可能になります：
 
 - アーキテクチャレビュー
 - パターン統一のための改善ロードマップの作成
@@ -33,7 +33,7 @@ lastmod: "2026-08-06T19:43:13+12:00"
 
 ## 問題の声明
 
-AI カタログのバックエンドアーキテクチャは、以下をサポートするため段階的に進化してきました（[用語集](https://docs.gitlab.com/development/ai_features/glossary/#agent-types) 参照）:
+AI カタログのバックエンドアーキテクチャは、以下をサポートするため段階的に進化してきました（[用語集](https://docs.gitlab.com/development/ai_features/glossary/#agent-types) 参照）：
 
 - カスタムエージェント
 - カスタムフロー
@@ -65,7 +65,7 @@ AI カタログのバックエンドアーキテクチャは、以下をサポ�
 
 ### インメモリモデル（`FixedItemsModel`）
 
-これらは `FixedItemsModel` パターンを使用する Ruby クラスで、**データベースには格納されません**:
+これらは `FixedItemsModel` パターンを使用する Ruby クラスで、**データベースには格納されません**：
 
 | モデル | 目的 | 定義場所 |
 | ----- | ------- | ------------------- |
@@ -144,7 +144,7 @@ erDiagram
 
 ### アイテムタイプ
 
-`ai_catalog_items.item_type` enum は 3 つのタイプを定義します:
+`ai_catalog_items.item_type` enum は 3 つのタイプを定義します：
 
 | 値 | タイプ | 説明 |
 | ----- | ---- | ----------- |
@@ -154,7 +154,7 @@ erDiagram
 
 ### 定義スキーマ
 
-アイテム定義は `ai_catalog_item_versions.definition` に JSONB として格納され、JSON スキーマに対して検証されます:
+アイテム定義は `ai_catalog_item_versions.definition` に JSONB として格納され、JSON スキーマに対して検証されます：
 
 | スキーマ | アイテムタイプ | 主要フィールド |
 | ------ | --------- | ---------- |
@@ -182,7 +182,7 @@ erDiagram
 | **有効化追跡** | `namespace_foundational_agent_statuses` / `organization_foundational_agent_statuses` テーブル | `enabled_foundational_flows` + `ai_catalog_item_consumers` | `ai_catalog_item_consumers` のみ |
 | **トリガーサポート** | N/A（チャットベース） | `ai_flow_triggers`（自動作成） | `ai_flow_triggers`（手動作成） |
 
-注: 基盤エージェントは [オプションで `ai_catalog_items` テーブルに表現可能](https://docs.gitlab.com/development/ai_features/foundational_chat_agents/#using-the-ai-catalog)であり、カタログで可視となり複製も可能です。ただし機能的には、基盤エージェントのデータソースは常に `Ai::FoundationalChatAgent` です。
+注： 基盤エージェントは [オプションで `ai_catalog_items` テーブルに表現可能](https://docs.gitlab.com/development/ai_features/foundational_chat_agents/#using-the-ai-catalog)であり、カタログで可視となり複製も可能です。ただし機能的には、基盤エージェントのデータソースは常に `Ai::FoundationalChatAgent` です。
 
 ### アーキテクチャ図
 
@@ -239,12 +239,12 @@ flowchart TB
 
 基盤エージェントは、標準の `ItemConsumer` パターンとは別の専用ステータステーブルシステムを使用します。
 
-**テーブル:**
+**テーブル：**
 
 - `namespace_foundational_agent_statuses`
 - `organization_foundational_agent_statuses`
 
-**スキーマ:**
+**スキーマ：**
 
 ```plaintext
 ├── namespace_id / organization_id (FK)
@@ -253,13 +253,13 @@ flowchart TB
 └── timestamps
 ```
 
-**ロジック**（`Ai::FoundationalAgentsStatusable` concern 内）:
+**ロジック**（`Ai::FoundationalAgentsStatusable` concern 内）：
 
 1. Duo Chat（`reference: 'chat'`）は **常に有効**（ハードコードされた例外）
 2. 明示的なステータスレコードが存在する場合 -> その `enabled` 値を使用
 3. それ以外 -> `foundational_agents_default_enabled` 設定にフォールバック
 
-**主な特徴:**
+**主な特徴：**
 
 - `ItemConsumer` レコードを作成しない
 
@@ -286,13 +286,13 @@ sequenceDiagram
 
 ### 基盤フロー
 
-基盤フローは 2 つのテーブルアプローチを使用します:
+基盤フローは 2 つのテーブルアプローチを使用します：
 
-#### Stage 1: 選択（`enabled_foundational_flows`）
+#### Stage 1： 選択（`enabled_foundational_flows`）
 
 どのフローを有効化するかという管理者の **選択** を記録します。
 
-**スキーマ:**
+**スキーマ：**
 
 ```plaintext
 ├── namespace_id OR project_id (exactly one)
@@ -300,19 +300,19 @@ sequenceDiagram
 └── timestamps
 ```
 
-**書き込み元:** `CascadeDuoSettingsService` による `sync_enabled_foundational_flows!`
+**書き込み元：** `CascadeDuoSettingsService` による `sync_enabled_foundational_flows!`
 
-**カスケード:** 階層を下に伝播（グループ -> サブグループ -> プロジェクト）
+**カスケード：** 階層を下に伝播（グループ -> サブグループ -> プロジェクト）
 
-#### Stage 2: アクティベーション（`ai_catalog_item_consumers`）
+#### Stage 2： アクティベーション（`ai_catalog_item_consumers`）
 
 実行のための **運用上の構成** を記録します。
 
-**書き込み元:** `SyncFoundationalFlowsService`（worker を通じて非同期）
+**書き込み元：** `SyncFoundationalFlowsService`（worker を通じて非同期）
 
-**含まれるもの:** サービスアカウントセットアップ、トリガー作成、バージョンピン留め
+**含まれるもの：** サービスアカウントセットアップ、トリガー作成、バージョンピン留め
 
-**主な特徴:**
+**主な特徴：**
 
 - グループ階層内のすべてのプロジェクトに対して `ItemConsumer` レコードを自動作成
 - [プロジェクト作成](https://gitlab.com/gitlab-org/gitlab/-/blob/5c2913e148da0d7054d03949e21ac5b9bc796bc6/ee/app/services/ee/projects/create_service.rb#L229) 後と、有効な基盤フローオプションへの変更後のフックを通じて `ItemConsumer` レコードを同期し続ける必要がある
@@ -348,13 +348,13 @@ sequenceDiagram
 
 基盤外部エージェントは **一回限りのシーディング** アプローチを使用します。
 
-**定義場所:** `Gitlab::Ai::Catalog::ThirdPartyFlows::Seeder::AGENTS` 定数
+**定義場所：** `Gitlab::Ai::Catalog::ThirdPartyFlows::Seeder::AGENTS` 定数
 
-**書き込み元:** `Gitlab::Ai::Catalog::ThirdPartyFlows::Seeder.run!`
+**書き込み元：** `Gitlab::Ai::Catalog::ThirdPartyFlows::Seeder.run!`
 
-**トリガー:** Admin API（`POST /admin/ai_catalog/seed_external_agents`）、Rake タスク、または Admin UI
+**トリガー：** Admin API（`POST /admin/ai_catalog/seed_external_agents`）、Rake タスク、または Admin UI
 
-**主な特徴:**
+**主な特徴：**
 
 - `ItemConsumer` レコードを自動作成しない、手動有効化が必要
 
@@ -390,13 +390,13 @@ sequenceDiagram
 
 ### 主な特徴
 
-1. ピン留めは semver 形式に従う - `MAJOR.MINOR.PATCH`（例: 1.2.3）
+1. ピン留めは semver 形式に従う - `MAJOR.MINOR.PATCH`（例： 1.2.3）
 1. ピン留めルールは保守的 - コードはプレフィックスマッチングを使った `"1"` または `"1.2"` ピンの解決と、最新リリース版に解決する `nil` をサポートしているが、現在の作成・更新の検証は厳密な semver 形式へのピン留めを要求している
 1. ピンからバージョンを解決するコードは `Ai::Catalog::ItemConsumer#pinned_version` と `Ai::Catalog::Item#resolve_version` にある
 
 ### 格納
 
-カラム: `ai_catalog_item_consumers.pinned_version_prefix`。
+カラム： `ai_catalog_item_consumers.pinned_version_prefix`。
 
 ### 作成
 
@@ -520,7 +520,7 @@ flowchart LR
 ### 制限
 
 - データソースは同期を通じて手動で更新する必要がある。
-- 現在、ツールを削除するプロセスはありません（issue: [!584050](https://gitlab.com/gitlab-org/gitlab/-/work_items/584050)）。
+- 現在、ツールを削除するプロセスはありません（Issue：[!584050](https://gitlab.com/gitlab-org/gitlab/-/work_items/584050)）。
 
 ### エージェントとの関連付け
 
@@ -544,14 +544,14 @@ flowchart LR
 
 Flow トリガーにより、GitLab イベントに基づいてカタログフローの自動実行が可能になります。
 
-### モデル: `Ai::FlowTrigger`
+### モデル： `Ai::FlowTrigger`
 
-`ai_flow_triggers` テーブルに格納されます。プロジェクトを以下のいずれかにリンクします:
+`ai_flow_triggers` テーブルに格納されます。プロジェクトを以下のいずれかにリンクします：
 
 - カタログアイテム消費者（`ai_catalog_item_consumer_id`）、または
 - 設定ファイルパス（`config_path`）
 
-**イベントタイプ:**
+**イベントタイプ：**
 
 | 値 | タイプ | 説明 |
 | ----- | ---- | ----------- |
@@ -560,29 +560,29 @@ Flow トリガーにより、GitLab イベントに基づいてカタログフ�
 | 2 | `assign_reviewer` | サービスアカウントがレビュアーとして追加される |
 | 3 | `pipeline_hooks` | パイプラインイベント |
 
-**主な検証:**
+**主な検証：**
 
 - `config_path` または `ai_catalog_item_consumer` のうち厳密に 1 つを持つ必要がある
 - ユーザーはサービスアカウントである必要がある
 - 消費者にリンクされている場合、消費者のアイテムはフローまたは third-party フローである必要がある
 - 消費者のプロジェクトはトリガーのプロジェクトと一致する必要がある
 
-### 実行: `Ai::FlowTriggers::RunService`
+### 実行： `Ai::FlowTriggers::RunService`
 
-アイテムタイプに基づいて実行をルーティング:
+アイテムタイプに基づいて実行をルーティング：
 
 | アイテムタイプ | 実行パス |
 | --------- | -------------- |
 | `flow`（基盤 / カスタム） | `Ai::Catalog::Flows::ExecuteService` → Duo Workflow Service |
 | `third_party_flow` | `Ci::Workloads::RunWorkloadService` → Docker イメージで CI パイプライン |
 
-カタログフローの場合、サービスは:
+カタログフローの場合、サービスは：
 
 1. 消費者からピン留めバージョンを解決
 2. 入力とリソースコンテキストからユーザープロンプトを構築
 3. `Flows::ExecuteService` に委譲
 
-外部エージェント（third-party フロー）の場合、サービスは:
+外部エージェント（third-party フロー）の場合、サービスは：
 
 1. アイテムバージョンからフロー定義を取得
 2. `Ai::DuoWorkflows::Workflow` レコードを作成
@@ -605,19 +605,19 @@ Flow トリガーにより、GitLab イベントに基づいてカタログフ�
 
 Duo Workflow Service は、エージェントとフローの実行エンジンです。LangGraph 上に構築された Python ベースのサービスで、gRPC API を持ちます。
 
-**Rails からの統合パス:**
+**Rails からの統合パス：**
 
-1. **Web UI（Agentic Chat）**: [Workhorse 経由の](../duo_workflow/_index.md#from-the-gitlab-web-ui-without-a-separate-executor) WebSocket 接続が gRPC を使って Duo Workflow Service にプロキシされます。`aiCatalogAgentFlowConfig` GraphQL クエリがフロー設定を提供します。
+1. **Web UI（Agentic Chat）**： [Workhorse 経由の](../duo_workflow/_index.md#from-the-gitlab-web-ui-without-a-separate-executor) WebSocket 接続が gRPC を使って Duo Workflow Service にプロキシされます。`aiCatalogAgentFlowConfig` GraphQL クエリがフロー設定を提供します。
 
-2. **IDE**: [GitLab Language Server](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp)には Duo Agent Platform クライアント（別名 executor）が含まれており、Workhorse プロキシを通じて Duo Workflow Service に接続し、ワークフローアクションをローカルで実行します。
+2. **IDE**： [GitLab Language Server](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp)には Duo Agent Platform クライアント（別名 executor）が含まれており、Workhorse プロキシを通じて Duo Workflow Service に接続し、ワークフローアクションをローカルで実行します。
 
-3. **Flow Triggers**: `Ai::FlowTriggers::RunService` が `Ai::Catalog::Flows::ExecuteService` に委譲し、それが `Ai::DuoWorkflows::StartWorkflowService` を使って CI パイプラインを通じて実行をオーケストレーションします。
+3. **Flow Triggers**： `Ai::FlowTriggers::RunService` が `Ai::Catalog::Flows::ExecuteService` に委譲し、それが `Ai::DuoWorkflows::StartWorkflowService` を使って CI パイプラインを通じて実行をオーケストレーションします。
 
 詳細なアーキテクチャ図については、[Duo Workflow Architecture ドキュメンテーション](../duo_workflow/_index.md#gitlabcom-architecture)を参照してください。
 
 ### 外部エージェントの実行
 
-外部エージェント（third-party フロー）は Duo Workflow Service を **使用しません**。CI ワークロードとして直接実行されます:
+外部エージェント（third-party フロー）は Duo Workflow Service を **使用しません**。CI ワークロードとして直接実行されます：
 
 1. `Ai::FlowTriggers::RunService` がトリガーイベントを受信
 2. フロー定義（Docker イメージ、コマンド）が `ItemVersion#definition` から読み取られる
@@ -632,7 +632,7 @@ Duo Workflow Service は、エージェントとフローの実行エンジン�
 
 フローと外部エージェントに使用されるサービスアカウントは、`Ai::Catalog::ItemConsumer#service_account` のユーザーレコードです（関連する [flow trigger](#flow-triggers) レコード `Ai::FlowTrigger#user` 内で複製されます）。
 
-さらなる読み物:
+さらなる読み物：
 
 - [複合アイデンティティ開発者ドキュメンテーション](https://docs.gitlab.com/development/ai_features/composite_identity/)
 - [複合アイデンティティ顧客ドキュメンテーション](https://docs.gitlab.com/user/duo_agent_platform/composite_identity/)
@@ -643,37 +643,37 @@ Duo Workflow Service は、エージェントとフローの実行エンジン�
 
 ### 作成
 
-`Ai::Catalog::ItemConsumers::CreateService` がフローまたは外部エージェントのグループレベル消費者を作成すると:
+`Ai::Catalog::ItemConsumers::CreateService` がフローまたは外部エージェントのグループレベル消費者を作成すると：
 
-1. **ユーザー名生成**: `"{prefix}-{item_name}-{group_name}".parameterize`
-   - 基盤フロー: prefix は `duo`（例: `duo-code-review-my-group`）
-   - カスタムフロー / 外部エージェント: prefix は `ai`（例: `ai-my-flow-my-group`）
+1. **ユーザー名生成**： `"{prefix}-{item_name}-{group_name}".parameterize`
+   - 基盤フロー： prefix は `duo`（例： `duo-code-review-my-group`）
+   - カスタムフロー / 外部エージェント： prefix は `ai`（例： `ai-my-flow-my-group`）
 
-2. **名前生成**: アイテム名。基盤フローの場合は "Duo " のプレフィックス付き
+2. **名前生成**： アイテム名。基盤フローの場合は "Duo " のプレフィックス付き
 
-3. **`Namespaces::ServiceAccounts::CreateService` を通じたサービスアカウント作成**:
+3. **`Namespaces::ServiceAccounts::CreateService` を通じたサービスアカウント作成**：
    - `namespace_id`: グループ ID
    - `composite_identity_enforced: true`（複合アイデンティティに必要）
    - `organization_id`: グループから継承
 
-4. **再利用ロジック**: 同じユーザー名のサービスアカウントが存在し、まだ `ItemConsumer` にリンクされていない場合は、新規作成ではなく再利用される。
+4. **再利用ロジック**： 同じユーザー名のサービスアカウントが存在し、まだ `ItemConsumer` にリンクされていない場合は、新規作成ではなく再利用される。
 
 ### 階層
 
-- **グループレベル消費者**（`group_id` を持つ `ItemConsumer`）: サービスアカウントを所有（`service_account_id` カラム）
-- **プロジェクトレベル消費者**（`project_id` を持つ `ItemConsumer`）: `parent_item_consumer_id` を通じて親グループ消費者を参照し、そのサービスアカウントを継承
+- **グループレベル消費者**（`group_id` を持つ `ItemConsumer`）： サービスアカウントを所有（`service_account_id` カラム）
+- **プロジェクトレベル消費者**（`project_id` を持つ `ItemConsumer`）： `parent_item_consumer_id` を通じて親グループ消費者を参照し、そのサービスアカウントを継承
 
-プロジェクトレベル消費者が作成される時:
+プロジェクトレベル消費者が作成される時：
 
 - 親のサービスアカウントが **Developer** ロールでプロジェクトに追加される
 - `FlowTrigger` レコードもサービスアカウントを `user` カラムに保存する
 
 ### クリーンアップ
 
-`ItemConsumer` が破棄される時:
+`ItemConsumer` が破棄される時：
 
-- プロジェクト消費者: サービスアカウントがプロジェクトメンバーシップから削除される
-- グループ消費者: サービスアカウントがグループ階層内のすべてのプロジェクトから削除される
+- プロジェクト消費者： サービスアカウントがプロジェクトメンバーシップから削除される
+- グループ消費者： サービスアカウントがグループ階層内のすべてのプロジェクトから削除される
 
 ## ソフト削除
 
@@ -681,7 +681,7 @@ Duo Workflow Service は、エージェントとフローの実行エンジン�
 
 ### ソフト削除の動作
 
-ソフト削除されたアイテム:
+ソフト削除されたアイテム：
 
 - デフォルトで finder の結果から除外される
 - `showSoftDeleted: true` で直接クエリ可能
@@ -690,11 +690,11 @@ Duo Workflow Service は、エージェントとフローの実行エンジン�
 
 ### モデルサポート
 
-**スコープ:** `not_deleted` は `deleted_at` が null のアイテムにフィルタする。
+**スコープ：** `not_deleted` は `deleted_at` が null のアイテムにフィルタする。
 
 ### 削除ロジック
 
-すべてのアイテムタイプを破棄する時に使用される基底サービスクラスである `Ai::Catalog::Items::BaseDestroyService` は、ソフト削除とハード削除の間で選択します:
+すべてのアイテムタイプを破棄する時に使用される基底サービスクラスである `Ai::Catalog::Items::BaseDestroyService` は、ソフト削除とハード削除の間で選択します：
 
 ```mermaid
 flowchart LR
@@ -734,7 +734,7 @@ AI Catalog バックエンドのデータは GitLab の GraphQL API を通じて
 
 ### 認可が行われる場所
 
-認可は **3 つの層** で強制されます:
+認可は **3 つの層** で強制されます：
 
 | 層 | 場所 | メカニズム |
 | ----- | -------- | --------- |
@@ -760,7 +760,7 @@ MCP サーバーは AI Catalog 内の独立した機能であり、カスタム�
 | ------ | ----------------------------- | ----------- |
 | モデル | `Ai::Catalog::Item` | `Ai::Catalog::McpServer` |
 | 所有者 | プロジェクト（`project_id`） | 組織（`organization_id`） |
-| 名前空間での有効化 | オプトイン: プロジェクトごとに明示的な `ItemConsumer` 行 | オプトアウト: 名前空間ごとの `McpServerBlock` キルスイッチ |
+| 名前空間での有効化 | オプトイン： プロジェクトごとに明示的な `ItemConsumer` 行 | オプトアウト： 名前空間ごとの `McpServerBlock` キルスイッチ |
 | ユーザーごとの状態 | 消費者上のオプションのサービスアカウント | `McpServersUser`（ユーザーおよびサーバーごとの OAuth トークン） |
 | バージョニング | `ItemVersion` の JSONB 定義 | なし — バージョンなし |
 | 可視性制御 | `visibility` 列挙型（private / restricted / public）+ `public` フラグ | 組織メンバーシップ + ブロック状態 |
@@ -770,7 +770,7 @@ MCP サーバーはアイテムから参照されます。エージェントの 
 
 ### データモデル
 
-`Ai::Catalog::McpServer` はルートモデルです。`organization_id` でシャーディングされ、サーバーの `name`、`url`、`transport`（列挙型: `http` のみ）、`auth_type`（列挙型: `oauth`、`no_auth`）、暗号化された `oauth_client_secret` を保持します。`url` はアドレス指定可能な URL として検証され、組織ごとに一意である必要があります。
+`Ai::Catalog::McpServer` はルートモデルです。`organization_id` でシャーディングされ、サーバーの `name`、`url`、`transport`（列挙型： `http` のみ）、`auth_type`（列挙型： `oauth`、`no_auth`）、暗号化された `oauth_client_secret` を保持します。`url` はアドレス指定可能な URL として検証され、組織ごとに一意である必要があります。
 
 `Ai::Catalog::McpServersUser` はサーバーとユーザーの結合テーブルで、ユーザーごとの OAuth `token` と `refresh_token`（どちらも保存時に暗号化）、および `expires_at` タイムスタンプを格納します。`(mcp_server, user)` のペアごとに 1 レコードが存在します。
 
@@ -821,7 +821,7 @@ erDiagram
 
 ### エージェントとの関連付け
 
-MCP サーバーはエージェントの `ItemVersion` 定義 JSONB を通じてエージェントにリンクされます:
+MCP サーバーはエージェントの `ItemVersion` 定義 JSONB を通じてエージェントにリンクされます：
 
 ```json
 {
@@ -837,13 +837,13 @@ MCP ツール（サーバーが公開する個々の機能）は、インメモ�
 
 ### 名前空間の可視性
 
-グループおよびプロジェクトレベルの **AI > MCP servers** ページには、その名前空間で*有効化された*エージェントに関連付けられた MCP サーバーが表示されます。導出方法は次のとおりです:
+グループおよびプロジェクトレベルの **AI > MCP servers** ページには、その名前空間で*有効化された*エージェントに関連付けられた MCP サーバーが表示されます。導出方法は次のとおりです：
 
 1. 名前空間のすべての `ItemConsumer` レコード（そこで有効化されたエージェント）を検索します。
 2. 有効化された各エージェントバージョンについて、`def_mcp_servers` ID を収集します。
 3. 祖先チェーンをたどる `McpServerBlock` によってブロックされたサーバーを除外します。
 
-`AiCatalogMcpServer` の `block_status` GraphQL フィールド（`group_full_path` または `project_full_path` を受け取る）は、`AiCatalogMcpServerBlockStatus` の 3 つの値のいずれかを返します:
+`AiCatalogMcpServer` の `block_status` GraphQL フィールド（`group_full_path` または `project_full_path` を受け取る）は、`AiCatalogMcpServerBlockStatus` の 3 つの値のいずれかを返します：
 
 | 値 | 意味 |
 | ----- | ------- |
@@ -879,11 +879,11 @@ GitLab.com では、MCP サーバーは GitLab 管理者によって一元的に
 
 ### 2. 有効化の断片化
 
-3 つの異なる有効化メカニズム:
+3 つの異なる有効化メカニズム：
 
-- **基盤エージェント:** 専用ステータステーブル（`*_foundational_agent_statuses`）
-- **基盤フロー:** 2 段階プロセス（`enabled_foundational_flows` -> `ItemConsumer`）
-- **その他すべて:** 直接 `ItemConsumer` レコード
+- **基盤エージェント：** 専用ステータステーブル（`*_foundational_agent_statuses`）
+- **基盤フロー：** 2 段階プロセス（`enabled_foundational_flows` -> `ItemConsumer`）
+- **その他すべて：** 直接 `ItemConsumer` レコード
 
 ### 3. Consumer レコードの不整合
 
@@ -891,21 +891,21 @@ GitLab.com では、MCP サーバーは GitLab 管理者によって一元的に
 
 ### 4. カタログアイテムリンケージのばらつき
 
-- **エージェント:** `Ai::FoundationalChatAgent#global_catalog_id` フィールド
-- **フロー:** `Ai::Catalog::Item#foundational_flow_reference` カラム
-- **外部エージェント:** `verification_level: :gitlab_maintained` を持つ標準アイテム
+- **エージェント：** `Ai::FoundationalChatAgent#global_catalog_id` フィールド
+- **フロー：** `Ai::Catalog::Item#foundational_flow_reference` カラム
+- **外部エージェント：** `verification_level: :gitlab_maintained` を持つ標準アイテム
 
 ### 5. シーディングメカニズムの違い
 
-- **エージェント:** シーディングなし（純粋なフィクスチャ）
-- **フロー:** サービスベースのシーディング
-- **外部エージェント:** Admin UI ボタン
+- **エージェント：** シーディングなし（純粋なフィクスチャ）
+- **フロー：** サービスベースのシーディング
+- **外部エージェント：** Admin UI ボタン
 
 ### 6. MCP サーバーは完全に独立したモデルツリーを使用
 
-MCP サーバーは組織スコープであり、エージェントとフローを管理する `ai_catalog_items` / `ItemConsumer` / `ItemVersion` の構造外に存在します。これにより、いくつかの非対称性が生じます:
+MCP サーバーは組織スコープであり、エージェントとフローを管理する `ai_catalog_items` / `ItemConsumer` / `ItemVersion` の構造外に存在します。これにより、いくつかの非対称性が生じます：
 
-- **所有権:** アイテムはプロジェクト所有、MCP サーバーは組織所有。
-- **有効化のセマンティクス:** アイテムはオプトインの `ItemConsumer` レコードを使用し、MCP サーバーはオプトアウトの `McpServerBlock` レコードを使用。
+- **所有権：** アイテムはプロジェクト所有、MCP サーバーは組織所有。
+- **有効化のセマンティクス：** アイテムはオプトインの `ItemConsumer` レコードを使用し、MCP サーバーはオプトアウトの `McpServerBlock` レコードを使用。
 
 MCP サーバーはバージョン管理された自動化定義ではなくインフラストラクチャエンドポイントであり、ライフサイクルが異なるため、この相違は意図的です。ただし、これは MCP サーバーが共有カタログの仕組み（可視性、ソフト削除、バージョンピン留め、使用数）の恩恵を受けないことを意味します。

@@ -36,8 +36,8 @@ VS Code チームは [Developer Clients グループ](/handbook/engineering/ai/a
 
 ## 💬 Slack
 
-- **チームチャンネル:** [#f_vscode_extension](https://gitlab.slack.com/archives/C013QJ9NEPL)
-- **公開ステージチャンネル:** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)
+- **チームチャンネル：** [#f_vscode_extension](https://gitlab.slack.com/archives/C013QJ9NEPL)
+- **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)
 
 ---
 
@@ -49,10 +49,10 @@ VS Code チームは以下を担当します。
    - [リポジトリ](https://gitlab.com/gitlab-org/gitlab-vscode-extension)
    - [ドキュメント](https://docs.gitlab.com/editor_extensions/visual_studio_code/)
    - [バックログ](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=group%3A%3Aeditor%20extensions)
-   - Slack チャンネル: [#f_vscode_extension](https://gitlab.slack.com/archives/C013QJ9NEPL)
+   - Slack チャンネル： [#f_vscode_extension](https://gitlab.slack.com/archives/C013QJ9NEPL)
 2. **Web IDE**
    - [リポジトリ](https://gitlab.com/gitlab-org/gitlab-web-ide)
-   - Slack チャンネル: [#f_vscode_web_ide](https://gitlab.enterprise.slack.com/archives/C03CEHDPQGH)
+   - Slack チャンネル： [#f_vscode_web_ide](https://gitlab.enterprise.slack.com/archives/C03CEHDPQGH)
 
 ### グループ間のオーナーシップと境界
 

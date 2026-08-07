@@ -13,8 +13,8 @@ stale: false
 
 {{% alert title="技術詳細" color="primary" %}}
 
-- デプロイタイプ: `Ad-hoc`
-- プロジェクトリポジトリ: [Reclaim to gCal](https://gitlab.com/gitlab-support-readiness/reclaim-to-gcal)
+- デプロイタイプ： `Ad-hoc`
+- プロジェクトリポジトリ： [Reclaim to gCal](https://gitlab.com/gitlab-support-readiness/reclaim-to-gcal)
 
 {{% /alert %}}
 
@@ -26,8 +26,8 @@ Reclaim to gCal は、Reclaim の Webhook からペイロードを受け取り�
 
 デフォルトでは、他の人がイベントを利用しても、あなたの[スケジュールリンク](https://app.reclaim.ai/scheduling-links)からプロジェクトへペイロードは送信されません。プロジェクトへのペイロード送信を有効にする（これにより、チームの Google カレンダーに追加されます）には、スケジュールリンクを編集して Webhook を追加する必要があります。イベントを編集する際、Webhook は設定（Booking Page Customization）の一番下にあります。使用する Webhook はチームによって異なります。
 
-- Global Customer Support の場合: `Add to Global Support calendar`
-- US Government Customer Support の場合: `Add to US Gov Support calendar`
+- Global Customer Support の場合： `Add to Global Support calendar`
+- US Government Customer Support の場合： `Add to US Gov Support calendar`
 
 ### Reclaim to gCal の変更
 

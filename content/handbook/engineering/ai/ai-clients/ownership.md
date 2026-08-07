@@ -24,14 +24,14 @@ stale: false
 現在、AI Clients を通じて統合される外部機能は、以下のアーキテクチャに従います。
 
 * [gitlab-ui](https://gitlab.com/gitlab-org/gitlab-ui)で構築された UI コンポーネント
-* エディターとの統合: Webview
+* エディターとの統合： Webview
   * Webview はエディター内に表示される Web ページです
-* エディターとの統合: ビジネスロジック
-  * ビジネスロジックはエディター固有の統合を表します（例: TypeScript と VS Code Extension API、Kotlin と JetBrains Plugin API）
+* エディターとの統合： ビジネスロジック
+  * ビジネスロジックはエディター固有の統合を表します（例： TypeScript と VS Code Extension API、Kotlin と JetBrains Plugin API）
 
 ## レガシーオーナーシップモデル
 
-現在 **Duo Chat** で使用中:
+現在 **Duo Chat** で使用中：
 
 | システムの一部 | 責任グループ |
 | ------ | ------ |
@@ -53,11 +53,11 @@ stale: false
 
 ## 他者への通知プロセス
 
-* チームが AI Clients のサポートを必要とする機能の作業を開始する場合:
+* チームが AI Clients のサポートを必要とする機能の作業を開始する場合：
   * PM/EM は **AI-Powered:AI-Clients** グループの PM/EM に通知します - これにより、チームは近い将来サポートに必要なキャパシティを予測できます
 * 機能の実装
   * レガシーオーナーシップモデル（すべての拡張機能で個別に実装される Duo Chat）
-    * 機能の UI が準備できたら:
+    * 機能の UI が準備できたら：
       * 作成チームが統合 MR をオープンします
       * **AI-Powered:AI-Clients** ステージはエンジニアをアサインし、MR を引き継いで統合を完了します
   * Language Server オーナーシップモデル

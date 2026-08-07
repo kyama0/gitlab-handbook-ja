@@ -31,10 +31,10 @@ Web Chat 機能別チームは、[Duo Chat グループ](/handbook/engineering/a
 
 ## 💬 Slack
 
-- **Duo Chat ラウンジ:** [#duo-chat-lounge](https://gitlab.enterprise.slack.com/archives/C06LWENL58F)
-- **Duo Chat に関する一般的な質問:** [#g_duo_chat](https://gitlab.slack.com/archives/g_duo_chat)
-- **公開ステージチャンネル:** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C) — 質問と連絡
-- **内部ステージチャンネル:** [#s_ai-clients](https://gitlab.slack.com/archives/s_ai-clients) — チームの同期専用
+- **Duo Chat ラウンジ：** [#duo-chat-lounge](https://gitlab.enterprise.slack.com/archives/C06LWENL58F)
+- **Duo Chat に関する一般的な質問：** [#g_duo_chat](https://gitlab.slack.com/archives/g_duo_chat)
+- **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C) — 質問と連絡
+- **内部ステージチャンネル：** [#s_ai-clients](https://gitlab.slack.com/archives/s_ai-clients) — チームの同期専用
 
 ---
 

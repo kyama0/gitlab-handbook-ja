@@ -35,8 +35,8 @@ JetBrains チームは [Developer Clients グループ](/handbook/engineering/ai
 
 ## 💬 Slack
 
-- **チームチャンネル:** [#f_jetbrains_plugin](https://gitlab.slack.com/archives/C02UY9XKABH)
-- **公開ステージチャンネル:** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)
+- **チームチャンネル：** [#f_jetbrains_plugin](https://gitlab.slack.com/archives/C02UY9XKABH)
+- **公開ステージチャンネル：** [#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)
 
 ---
 
@@ -48,7 +48,7 @@ JetBrains チームは以下を担当します。
    - [リポジトリ](https://gitlab.com/gitlab-org/editor-extensions/gitlab-jetbrains-plugin)
    - [ドキュメント](https://docs.gitlab.com/editor_extensions/jetbrains_ide/)
    - [バックログ](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=Editor%20Extensions%3A%3AJetBrains)
-   - Slack チャンネル: [#f_jetbrains_plugin](https://gitlab.enterprise.slack.com/archives/C02UY9XKABH)
+   - Slack チャンネル： [#f_jetbrains_plugin](https://gitlab.enterprise.slack.com/archives/C02UY9XKABH)
 
 ### グループ間のオーナーシップと境界
 
