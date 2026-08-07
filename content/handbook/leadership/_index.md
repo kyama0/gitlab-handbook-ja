@@ -153,7 +153,7 @@ README は、私たちの [バリュー](/handbook/values/)に馴染みのない
 
 [no-matrix-organization](/handbook/leadership/no-matrix-organization/)を参照してください。
 
-## 安定したカウンターパート
+## 安定したカウンターパート {#stable-counterparts}
 
 私たちは、人々が一緒に働く必要のある他の機能のための安定したカウンターパートを与えることで、自然発生的なクロスファンクショナルな協働を促進したいと考えています。例えば、各 Strategic Account Executive（SAE）は 1 人の Sales Development Representative（SDR）と働きます。私たちの [カテゴリー](/handbook/product/categories/)では、開発者の各バックエンドチームが [Product Manager（PM）](/job-description-library/product/product-manager/)と [フロントエンドチーム](/handbook/engineering/)にマッピングされます。
 
