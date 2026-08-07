@@ -1,5 +1,5 @@
 ---
-title: "Duo Agent Platform ADR 008: Duo メッセージングサービス"
+title: "Duo Agent Platform ADR 008：Duo メッセージングサービス"
 status: proposed
 creation-date: "2026-04-17"
 authors: [ "@thomas-schmidt" ]
