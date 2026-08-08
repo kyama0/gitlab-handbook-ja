@@ -5,7 +5,7 @@ description: 予定された PTO に入る際、割り当て済みチケット�
 upstream_path: /handbook/support/workflows/ooo-ticket-management/
 upstream_sha: "0a3ee6d988174ce935c5be0c230371ec02739f3d"
 translated_at: "2026-08-08T09:25:46+09:00"
-translator: codex
+translator: "claude"
 stale: false
 lastmod: "2026-08-07T17:18:03-07:00"
 ---

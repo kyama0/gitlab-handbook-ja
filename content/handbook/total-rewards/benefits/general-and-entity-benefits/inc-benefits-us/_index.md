@@ -4,7 +4,7 @@ description: "米国を拠点とするチームメンバー向けの GitLab Inc 
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/
 upstream_sha: a3ed2ed7423727a5f31c3f20f77f9547a3b7b152
 translated_at: "2026-08-08T08:52:01+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-08-06T20:53:38-07:00"
 ---
