@@ -2,11 +2,11 @@
 title: 'Support team YAML ファイル'
 description: 'Support team YAML ファイルに関するドキュメント'
 upstream_path: "/handbook/eta/css/gitlab/support-team-yaml-files/"
-upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: "a3ed2ed7423727a5f31c3f20f77f9547a3b7b152"
+translated_at: "2026-08-08T08:52:01+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-21T11:29:58-05:00"
+lastmod: "2026-08-07T09:55:15-05:00"
 ---
 
 このガイドでは、さまざまな Customer Support Systems の自動化と統合で使用されるチームメンバー情報を含む、一元化されたデータソースである Support team YAML ファイルについて説明します。これらのファイルにより、システム間で一貫したエージェントデータを使用でき、チーム構造、スキル、スケジュール、割り当てに関する信頼できる唯一の情報源として機能します。
@@ -228,6 +228,21 @@ Zendesk 情報を含むハッシュです。属性は次のとおりです:
   - `active`: ラウンドロビンの一部であるかどうかを決定します
   - `modifier`: 合計ワークロードの重みを計算する際に乗算する修正係数です
     - この数値が 0 の場合、ラウンドロビンでは 1 を使用します
+  - `forms_enabled`: エージェントに割り当てられる可能性があるチケットフォーム（フォーム名による）の配列
+
+例：
+
+```yaml
+    round_robin:
+      active: true
+      modifier: 1.5
+      forms_enabled:
+      - 'GitLab Dedicated'
+      - 'Support'
+      - 'Upgrade Assistance'
+```
+
+このエントリを使用すると、エージェントはラウンドロビンの対象となり、ワークロードが 1.5 倍になり、`GitLab Dedicated`、`Support`、`Upgrade Assistance` のいずれかのフォームを使用するチケットだけが割り当てられます。
 
 ### gitlab
 

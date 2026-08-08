@@ -2,11 +2,11 @@
 title: "Verify:Pipeline Execution グループ"
 description: "Pipeline Execution グループの GitLab チームページです。"
 upstream_path: /handbook/engineering/devops/verify/pipeline-execution/
-upstream_sha: "8085f1fc9975b1712e5bc23078a44b05ecea946a"
-translated_at: "2026-08-04T06:26:26+09:00"
+upstream_sha: "a3ed2ed7423727a5f31c3f20f77f9547a3b7b152"
+translated_at: "2026-08-08T08:52:01+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-03T17:13:47-04:00"
+lastmod: "2026-08-07T17:42:26-04:00"
 ---
 
 このチームは [Verify](/handbook/product/categories/#verify-stage) DevOps ステージにマッピングされており、Continuous Integration [ユースケース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/) をサポートしています。
@@ -61,7 +61,7 @@ Verify:Pipeline Execution グループは、[Continuous Integration](https://abo
 - SUSImpacting Issue へのタイムリーな対処。
 - 信頼性が高く正確なドキュメントの提供。
 
-## Performance Indicator
+## パフォーマンス指標
 
 Performance Indicator (PI) を使って提供する価値を測定し、進捗を追跡します。
 [Pipeline Execution グループの現在の PI](https://internal.gitlab.com/handbook/company/performance-indicators/product/#verify-ci-verify-runner-count-of-pipelines-triggered-by-unique-users) は `ci_pipelines をトリガーするユニークユーザー数` です。詳細については、[プロダクトチームの Performance Indicator](https://internal.gitlab.com/handbook/company/performance-indicators/product/#regular-performance-indicators) をご覧ください。最新の Verify ステージの ci_pipeline データを確認するには、[Tableau ダッシュボード](https://10az.online.tableau.com/t/gitlab/views/VerifyPerformanceIndicatorDashboard/VerifyPerformanceIndicatorHub) をご覧ください。
@@ -230,7 +230,7 @@ Pipeline Execution には、明示的な SLO にひもづき、迅速なトリ�
 - [Pipeline Execution Infradev のトリアージと追跡](https://gitlab.com/gitlab-org/verify-stage/-/work_items/635)
 - [Pipeline Execution S1 & S2 バグのトリアージと追跡](https://gitlab.com/gitlab-org/verify-stage/-/work_items/619)
 - [Pipeline Execution RFH のトリアージと追跡](https://gitlab.com/gitlab-org/verify-stage/-/work_items/614)
-- [Pipeline Execution の不安定なテスト](https://gitlab.com/gitlab-org/verify-stage/-/work_items/637)
+- [Pipeline Execution の不安定なテスト](https://gitlab.com/gitlab-org/quality/test-failure-issues/-/work_items?sort=created_date&state=opened&label_name%5B%5D=automation%3Atop-flaky-test-file&label_name%5B%5D=group%3A%3Apipeline%20execution&first_page_size=20)：これらのラベルが付いたオープンな Issue のうち、まだ Verification にないものは、24 時間以内にピックアップ（In Dev）して Verification に移動する必要があります。
 
 これらの Issue は、トリアージされた重大度に基づいていつでも作業にスケジュールできます。S1 Issue は開発に直接取り込まれる場合があり、一部の Issue は、私たちが行わない変更を要求している場合、バックログに入れるかそのままクローズする可能性があります。トリアージの結果にかかわらず、これらの Issue は迅速に _対処_ し、バックログに放置しないようにする必要があります。開発者が Issue に直接アサインされている場合、その開発者が最初の連絡先となり、Issue の解決に関する権限を持つべきです。一般に、EM と PM は、目標期間内にこれらが解決されるようにする責任を負います。
 
@@ -553,9 +553,9 @@ Product Designer は、ユーザー向け Issue の製品開発で重要な役�
 
 #### UX スコアカード
 
-私たちにとっての最優先事項はユーザビリティであり、[JTBD](/handbook/engineering/devops/verify/pipeline-execution/jtbd/) を効果的に評価する 1 つの方法は、定期的な [UX スコアカード](/handbook/product/ux/ux-scorecards/) です。機能的なクラスタや `.gitlab-ci.yml` ファイルを持つプロビジョニングされた環境などのインフラストラクチャサポートを必要とする技術的なタスクについては、Product Designer とプロダクトマネージャーが、エンジニアリングマネージャーおよび Quality 安定したカウンターパートと協力して、JTBD のテストシナリオに基づいたプロジェクトを作成できます。この場合に協力するためのいくつかのガイドライン:
+私たちにとっての最優先事項はユーザビリティであり、[JTBD](/handbook/engineering/devops/verify/pipeline-execution/jtbd/) を効果的に評価する 1 つの方法は、定期的な [UX スコアカード](/handbook/product/ux/ux-scorecards/) です。機能的なクラスタや `.gitlab-ci.yml` ファイルを持つプロビジョニングされた環境などのインフラストラクチャサポートを必要とする技術的なタスクについては、Product Designer とプロダクトマネージャーが、Engineering Manager および Quality stable counterparts と協力して、JTBD のテストシナリオに基づいたプロジェクトを作成できます。この場合に協力するためのいくつかのガイドライン:
 
-- 安定したカウンターパートに十分なリードタイムがあるよう、_少なくとも_ 1 マイルストーン前にスケジュールしてください
+- stable counterparts に十分なリードタイムがあるよう、_少なくとも_ 1 マイルストーン前にスケジュールしてください
 - 全体的なエピックを作成し、インフラストラクチャ作成のためのタスク追跡用 Issue を追加してください
 - キックオフをスケジュールするか、評価される JTBD についての全員の共通理解を持てるよう、シナリオのウォークスルーを記録してください
 

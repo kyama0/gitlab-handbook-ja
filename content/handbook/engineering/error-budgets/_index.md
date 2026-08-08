@@ -2,11 +2,11 @@
 title: "エンジニアリングのエラーバジェット"
 description: "エラーバジェットは、1四半期内にサービスがどの程度信頼できなくてもよいかを決定する、明確で客観的な指標を提供します。"
 upstream_path: /handbook/engineering/error-budgets/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: a3ed2ed7423727a5f31c3f20f77f9547a3b7b152
+translated_at: "2026-08-08T08:52:01+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-02T07:33:04-05:00"
+lastmod: "2026-08-07T14:38:55+02:00"
 ---
 
 [エンタープライズグレードのプラットフォームとしてGitLab SaaSを強化する](https://about.gitlab.com/direction/core_platform/dotcom/)という[3年戦略](https://about.gitlab.com/direction/#3-year-strategy)の一環として、GitLab.comには特定の[可用性](/handbook/engineering/infrastructure/performance-indicators/#gitlabcom-availability)と[パフォーマンス](/handbook/engineering/infrastructure/performance-indicators/#gitlabcom-performance)の目標があります。
@@ -51,7 +51,7 @@ GitLabの現在のエラーバジェット実装は、SLOおよびエラーバ�
 
 `500`ステータスコードエラーが結果となるWebリクエストがカウントされます。Sidekiqでは、未処理の例外のために失敗したジョブがカウントされます。
 
-グループに[カスタムSLI](https://docs.gitlab.com/ee/development/application_slis/)がある場合、または[メトリクスカタログ](https://gitlab.com/gitlab-com/runbooks/-/tree/master/metrics-catalog)で固定のフィーチャーカテゴリーが設定されたSLIがある場合、それらのエラーもカウントされます。
+グループに[カスタムSLI](https://docs.gitlab.com/ee/development/application_slis/)がある場合、または[メトリクスカタログ](https://gitlab.com/gitlab-com/runbooks/-/tree/master/metrics-catalog)で固定の機能カテゴリーが設定されたSLIがある場合、それらのエラーもカウントされます。
 
 エンジニアは`Gitlab::ErrorTracking.track_exception`またはその他のログを、エラーバジェットに影響を与えることなく自由に使用できます。
 
@@ -65,7 +65,7 @@ GitLabは、可用性の高いSaaSプラットフォームとして提供され�
 
 GitLabでのエラーバジェットの初期のイテレーションは、客観的なデータを導入し、個々の機能が長期間にわたってどのように機能しているかについてより深い洞察を作り出すシステムを確立することを目的としています。これは、組織が焦点を正しく割り当て、リスクが適切にバランスされ、システム全体がより長い期間健全に保たれることを確保するために使用できます。
 
-エラーバジェットをフィーチャーカテゴリーまで割り当てることで、特定の機能の基準が設定され、それによりGitLab SaaSにとって重要なものを優先することへの調整が確保されます。
+エラーバジェットを機能カテゴリーまで割り当てることで、特定の機能の基準が設定され、それによりGitLab SaaSにとって重要なものを優先することへの調整が確保されます。
 
 ## 最優先の改善をどのように決定しますか？
 
@@ -122,7 +122,7 @@ GitLabでのエラーバジェットの初期のイテレーションは、客�
 
 バジェットはSaaSプラットフォームに設定され、ステージチームとインフラチーム間で共有されます。サービス可用性計算方法論については、[GitLab.comサービス可用性ページ](/handbook/engineering/monitoring/#gitlabcom-service-availability)で詳細にカバーされています。
 
-これには、すべてのRailsコントローラー、APIエンドポイント、Sidekiqワーカー、およびサービスカタログで定義された他のSLIが含まれます。これは、フィーチャーカテゴリーを定義することでグループに帰属されます。フィーチャーカテゴリー化に関するドキュメントは、[開発者ガイド](https://docs.gitlab.com/ee/development/feature_categorization/index.html#feature-categorization)で利用できます。
+これには、すべてのRailsコントローラー、APIエンドポイント、Sidekiqワーカー、およびサービスカタログで定義された他のSLIが含まれます。これは、機能カテゴリーを定義することでグループに帰属されます。機能カテゴリー化に関するドキュメントは、[開発者ガイド](https://docs.gitlab.com/ee/development/feature_categorization/index.html#feature-categorization)で利用できます。
 
 チームが所有する機能の数や複雑さ、既存の製品優先事項、チームの規模は、バジェットに影響を与えません。
 
@@ -135,12 +135,12 @@ GitLabでのエラーバジェットの初期のイテレーションは、客�
 レポートが生成されるとき、5以上のグループがバジェット超過の場合（グループのトラフィックシェアが>0.1%）、Scalabilityグループがレポートを発行する前に増加した支出を調査します。レポートを発行する前に調査していることをSlackチャンネルでアナウンスします。
 目的は、複数のチームによる重複した調査を防ぐことです。
 
-ステージグループは、月次エラーバジェットレポートをレビューし、フィーチャーカテゴリーでの超過支出にコメントすることが期待されます。
+ステージグループは、月次エラーバジェットレポートをレビューし、機能カテゴリーでの超過支出にコメントすることが期待されます。
 
 ### Engineering Allocationミーティングでのエラーバジェット
 
 ステージグループは、エラーバジェット支出について毎週レポートすることは期待されていません。
-3か月連続で割り当てられたバジェットを超える月次支出を持つフィーチャーカテゴリーは、議論のためにアジェンダに追加されます。
+3か月連続で割り当てられたバジェットを超える月次支出を持つ機能カテゴリーは、議論のためにアジェンダに追加されます。
 
 ## バジェット支出（サービス別）
 
@@ -160,7 +160,7 @@ GitLabでのエラーバジェットの初期のイテレーションは、客�
 
 これがどのように構築されているかの詳細を含む[例があります](error-budget-by-stage-group-example.md)。
 
-現在の[28日間](/handbook/enterprise-data/organization/programs/data-for-product-managers)のバジェット支出は、各[ステージグループダッシュボード](https://dashboards.gitlab.net/dashboards/f/stage-groups/stage-groups)で確認できます。そのステージグループのフィーチャーカテゴリーは単一の値にロールアップされます。
+現在の[28日間](/handbook/enterprise-data/organization/programs/data-for-product-managers)のバジェット支出は、各[ステージグループダッシュボード](https://dashboards.gitlab.net/dashboards/f/stage-groups/stage-groups)で確認できます。そのステージグループの機能カテゴリーは単一の値にロールアップされます。
 
 ステージグループは、ダッシュボードを使用してバジェット支出の原因を探索できます。バジェット支出を調査するプロセスは、[開発者ドキュメント](https://docs.gitlab.com/ee/development/stage_group_observability/dashboards/stage_group_dashboard.html)に記載されています
 
@@ -192,22 +192,22 @@ ApdexとErrorレートは、[ハンドブックページ](/handbook/engineering/
 
 ### エラーバジェットの帰属を変更する方法
 
-エラーバジェットイベントは、フィーチャーカテゴリー化を介してステージグループに帰属されます。エンドポイントのフィーチャーカテゴリーを変更するには、[フィーチャーカテゴリー化開発ドキュメント](https://docs.gitlab.com/ee/development/feature_categorization/index.html#feature-categorization)で説明されているようにエンドポイントを更新します。
+エラーバジェットイベントは、機能カテゴリー化を介してステージグループに帰属されます。エンドポイントの機能カテゴリーを変更するには、[機能カテゴリー化開発ドキュメント](https://docs.gitlab.com/ee/development/feature_categorization/index.html#feature-categorization)で説明されているようにエンドポイントを更新します。
 
-フィーチャーカテゴリーの更新は、将来のイベントがステージグループにマップされる方法のみを変更します。以前にレポートされたイベントは遡及的に更新されません。
+機能カテゴリーの更新は、将来のイベントがステージグループにマップされる方法のみを変更します。以前にレポートされたイベントは遡及的に更新されません。
 
-[Observabilityチーム](/handbook/engineering/infrastructure-platforms/production-engineering/observability/)は、フィーチャーカテゴリーがWebサイトリポジトリで変更されたときに、マッピングを最新の状態に保つことを所有しています。`stages.yml`でカテゴリーが変更されると、スケジュールされたパイプラインが[ビルドボード](https://gitlab.com/gitlab-com/gl-infra/scalability/-/boards/1697160)にIssue（[Issue例](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2084)）を作成します。Issueには、パイプラインリンクと説明に従うべき指示が含まれています。カテゴリーは2つの場所に同期する必要があります:
+[Observabilityチーム](/handbook/engineering/infrastructure-platforms/production-engineering/observability/)は、機能カテゴリーがWebサイトリポジトリで変更されたときに、マッピングを最新の状態に保つことを所有しています。`stages.yml`でカテゴリーが変更されると、スケジュールされたパイプラインが[ビルドボード](https://gitlab.com/gitlab-com/gl-infra/scalability/-/boards/1697160)にIssue（[Issue例](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2084)）を作成します。Issueには、パイプラインリンクと説明に従うべき指示が含まれています。カテゴリーは2つの場所に同期する必要があります:
 
 1. [Railsアプリケーション](https://docs.gitlab.com/ee/development/feature_categorization/#updating-configfeature_categoriesyml)。
 1. [Runbooksリポジトリ](https://gitlab.com/gitlab-com/runbooks/-/blob/master/services/stage-group-mapping.jsonnet)。
 
 ### 新しいグループのエラーバジェット
 
-グループが作成されると、グループは[`stages.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/stages.yml)に追加されます。そのマージリクエストで、新しいグループには新しいまたは既存のフィーチャーカテゴリーが割り当てられます。
+グループが作成されると、グループは[`stages.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/stages.yml)に追加されます。そのマージリクエストで、新しいグループには新しいまたは既存の機能カテゴリーが割り当てられます。
 
 このMRがマージされると、Scalabilityは、私たちの記録インフラのメトリクスカタログを更新するための自動Issueを受け取ります。これは、新しいグループが`stages.yml`に追加されてから1週間以内に発生します。
 
-そのメトリクスカタログが更新されると、関連するフィーチャーカテゴリーのメトリクスは新しいステージグループに帰属されます。帰属が変更されたときと同様に、変更は遡及的ではありません。これは、既存のフィーチャーカテゴリーが15日に`source code`から`code review`に移動した場合、そのフィーチャーカテゴリーは1日から15日まで放出されたメトリクスについて`source code`のエラーバジェットに貢献することを意味します。15日以降のメトリクスは`code review`のエラーバジェットにカウントされます。
+そのメトリクスカタログが更新されると、関連する機能カテゴリーのメトリクスは新しいステージグループに帰属されます。帰属が変更されたときと同様に、変更は遡及的ではありません。これは、既存の機能カテゴリーが15日に`source code`から`code review`に移動した場合、その機能カテゴリーは1日から15日まで放出されたメトリクスについて`source code`のエラーバジェットに貢献することを意味します。15日以降のメトリクスは`code review`のエラーバジェットにカウントされます。
 
 グループが名前変更された場合、またはステージが移動した場合も同じことが当てはまります: 15日にメトリクスカタログでグループ名変更がマージされた場合、28日間のレポートには、グループの古い名前のデータが15日分含まれ、最新の日は新しい名前を持つグループに帰属されます。
 
@@ -218,14 +218,14 @@ ApdexとErrorレートは、[ハンドブックページ](/handbook/engineering/
 
 エラーバジェットは[製品開発タイムライン](/handbook/engineering/workflow/#product-development-timeline)の一部として月次でレビューされる必要があります。
 
-フィーチャーカテゴリーの機能開発と信頼性開発のバランスは次のとおりです:
+機能カテゴリーの機能開発と信頼性開発のバランスは次のとおりです:
 
 |**月次支出（28日）**               |**アクション**|
 |------------------------------  |----------|
 | <= 20分                   | 支出を理解する - 追加のアクションは不要。 |
 | > 20分                   | [信頼性/可用性の改善](/handbook/product/product-processes/#prioritization)へのコミットメント、機能開発は二次。 |
 
-3か月連続で割り当てられたバジェットを超える月次支出を持つフィーチャーカテゴリーは、追加の機能開発の制限が課される可能性があります。
+3か月連続で割り当てられたバジェットを超える月次支出を持つ機能カテゴリーは、追加の機能開発の制限が課される可能性があります。
 
 #### 異なるエラーバジェットを持つステージグループ
 
@@ -234,6 +234,7 @@ ApdexとErrorレートは、[ハンドブックページ](/handbook/engineering/
 |**ステージグループ**   | **月次支出（28日）** | **ビジネス上の理由** | **レビュー日**|
 |------------------|---------------------|---------------------|---------------------|
 | Runtime: Organizations | 99.79% | 長期スケーラビリティ作業（Protocells/Organizations）に集中することを許可し、また次のAPIバージョンで導入を必要とする変更を調整する。[このMR](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/108039)で説明 | 2026-04-30（または合計トラフィックシェアが5%を超えた場合） |
+| Verify: Pipeline Execution | 99.9% | 顧客所有の runner のキューイングが、グループのエラーバジェット消費の 50 〜 60% を占めています。この一時的な例外は、[runbooks#221](https://gitlab.com/gitlab-com/runbooks/-/issues/221)のメトリクス除外が実装されるまで有効です。 | 2026-09-30 |
 
 **例外**
 
@@ -293,7 +294,7 @@ ApdexとErrorレートは、[ハンドブックページ](/handbook/engineering/
 
 ### 現状
 
-1. エラーバジェットは各フィーチャーカテゴリーに存在し、標準のApdexしきい値とエラー率を組み込んでいます。
+1. エラーバジェットは各機能カテゴリーに存在し、標準のApdexしきい値とエラー率を組み込んでいます。
 1. エラーバジェットは、GrafanaおよびSisenseダッシュボードを通じてステージグループとステージに対して公開されています。
 1. 貢献要因は、Grafanaダッシュボードで利用可能なリンクを通じて探索可能です。
 1. エラーバジェットは[製品優先順位付けプロセス](/handbook/engineering/workflow/#product-development-timeline)に含まれています。
@@ -309,9 +310,9 @@ ApdexとErrorレートは、[ハンドブックページ](/handbook/engineering/
 - ***キャンセル*** エラーバジェットに最初に使用されたSLO目標は、インフラ監視に使用されるアラートと結合されています。[ステージグループごとに目標を設定するためにSisenseを使用することを提案しました](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1236)が、このアプローチは支持されませんでした。インフラ監視とエラーバジェットに別々の目標を使用する方法を見つけましたが、目標を同じに保ち、エラーバジェットのApdex部分のデフォルトのレイテンシしきい値を調整するという決定が下されました（次の項目を参照）。
 - ***完了*** SLI計算はすべてのエンドポイントに適切ではなかったリクエスト持続時間しきい値を使用していました。[しきい値は9月21日に5秒に増加](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1243)され、エラーバジェットに完全な影響が表示されるには28日かかります。
 - **完了** ステージグループは、SLIリクエスト持続時間しきい値の構成可能性を拡張することにより、エンドポイントごとに独自のSLIを設定できるようになります。[エピック](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/525)。
-- 現在`not_owned`のエンドポイントは、正しいフィーチャーカテゴリーに帰属されます。これは以下によって対処されます
+- 現在`not_owned`のエンドポイントは、正しい機能カテゴリーに帰属されます。これは以下によって対処されます
   - **完了** [Sidekiqの呼び出し元情報を使用](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/1200)、および
-  - [graphQLクエリからフィーチャーへの相関](https://gitlab.com/gitlab-org/gitlab/-/issues/328535)を持つこと。
+  - [graphQLクエリから機能への相関](https://gitlab.com/gitlab-org/gitlab/-/issues/328535)を持つこと。
 - [システム全体の停止のエラーバジェットへの影響をより明確にする必要があります](https://gitlab.com/gitlab-com/Product/-/issues/2884)。
 - エラーバジェットとサービス可用性の両方にレポートするPM向けのガイダンスを提供します（RunnerやPagesなど）。
 
