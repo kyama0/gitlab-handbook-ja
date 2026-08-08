@@ -4,26 +4,21 @@ description: 新規採用者および既存チームメンバーのラップト�
 aliases:
   - /handbook/security/corporate/end-user-services/laptop-management/laptop-ordering/
 upstream_path: /handbook/eta/corporate-it/end-user-services/laptop-management/laptop-ordering/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:37:15+09:00"
+upstream_sha: "a3ed2ed7423727a5f31c3f20f77f9547a3b7b152"
+lastmod: "2026-08-07T15:44:07-07:00"
+translated_at: "2026-08-08T08:52:01+09:00"
 translator: codex
 stale: false
 ---
-## ラップトップの注文
-
-Corp IT チームがすべてのラップトップ注文のプロセスを処理します。自分で調達できるのは、ラップトップを配送できない地域にいる場合のみです。
 
 ## 配送先
 
-これらの国に住むチームメンバーは、IT ラップトップ注文プロセスを通じて対応できます:
-
-北米、EU の大部分、英国、日本、フィリピン、シンガポール、オーストラリア、ニュージーランド、インド、イスラエル、韓国。
+これらの国に住むチームメンバーは、IT ラップトップ注文プロセスを通じて対応できます：北米（米国、カナダ、メキシコ）、EU の大部分、英国、日本、フィリピン、シンガポール、オーストラリア、ニュージーランド、インド、イスラエル、韓国。
 
 世界的にベンダーとの関係を拡大するにつれて、サポート対象国を追加しています。
-現在、ブラジル、アルメニア、ウクライナ向けにはラップトップを調達できません。
+ブラジル、アルメニア、ウクライナ、スロベニア、ベトナム、インドネシア、パキスタン、モルドバ、エクアドルでは、標準のベンダー調達をまだ利用できません。これらの国のチームメンバーは、代わりに自己調達と払い戻しのプロセスを通じてサポートされます。
 
-チームメンバーの国が上記に記載されていない場合、または一般的なラップトップ調達に関する質問がある場合は、代替オプションについて話し合うため laptops@gitlab.com または Candidate Experience Specialist にお問い合わせください。
+チームメンバーの国が上記に記載されていない場合、または一般的なラップトップ調達に関する質問がある場合は、代替オプションについて話し合うため it-help@gitlab.com または Candidate Experience Specialist にお問い合わせください。
 チームメンバーがハードウェア購入のための資金援助を必要とする場合、会社は購入を円滑に進めるため資金を前払いできます（下記の例外プロセスを参照してください）。
 
 ## ラップトップの購入および配送プロセス
@@ -36,21 +31,21 @@ Corp IT がラップトップ注文を受け取った後、リクエストへの
 
 新規採用者向けラップトップ注文プロセスは、Candidate Experience Specialist が最初のウェルカムメールを送信すると開始されます。メールには、GitLab 支給ラップトップをリクエストするリンクが含まれています。遅延を避けるため、できるだけ早くフォームに記入してください。
 
-新規採用者がフォームに記入すると、ラップトップは入社日の前週に届くことを想定できます。これをリモートで実現するため、世界中の複数のベンダーとのビジネス関係を活用しています。**注意: 配送時間は、場所、ハードウェア供給、ベンダーの選択、配送方法によって異なります。**
+新規採用者がフォームに記入すると、ラップトップは入社日の前週に届くことを想定できます。これをリモートで実現するため、世界中の複数のベンダーとのビジネス関係を活用しています。**注意：配送時間は、場所、ハードウェア供給、ベンダーの選択、配送方法によって異なります。**
 
-場合によっては、優先配送または翌日配送を手配できることがあります。すべてのケースおよび地域でこの対応はできません。必要な場合は、`laptops@gitlab.com` へ連絡するか、Candidate Experience Specialist に相談して、利用可能なすべてのオプションを確認してください。
+場合によっては、優先配送または翌日配送を手配できることがあります。すべてのケースおよび地域でこの対応はできません。必要な場合は、`it-help@gitlab.com` へ連絡するか、Candidate Experience Specialist に相談して、利用可能なすべてのオプションを確認してください。
 
 採用マネージャーまたは採用/リクルーティングチームのメンバーである場合、[IT Equipment Order Process Project](https://gitlab.com/gitlab-com/it/end-user-services/issues/it-equipment-order-processing/-/issues/?sort=created_date&state=all&first_page_size=100)で新規採用者の注文状況と内容を確認できます
 
 発送前に必要なラップトップリクエストの最短処理時間。一部の国では、配送に必要な書類によりさらに時間がかかる場合があります。
 
-* 北米の新規採用者 - 2 週間（Apple）および 5 週間（Linux）
-* EMEA/APAC の新規採用者 - 2 週間（Apple）および 5 週間（Linux）
-* その他の地域 - 3 週間（Apple）および 9 週間（Linux）
+* 北米の新規採用者 - 3 週間（Apple）および 5 週間（Linux）
+* EMEA/APAC の新規採用者 - 3 週間（Apple）および 5 週間（Linux）
+* その他の地域 - 4 週間（Apple）および 9 週間（Linux）
 
 新しい GitLab チームメンバーが入社日にラップトップを利用できない場合、採用マネージャーまたは採用/リクルーティングチームのメンバーは、新規採用者が個人用 macOS または Linux ラップトップを一時的に使用するための[セキュリティ例外](https://gitlab.com/gitlab-com/gl-security/security-assurance/security-compliance-commercial-and-dedicated/exceptions/-/issues/new?description_template=exception_request)をリクエストする必要があります。
 
-まれに、入社日前にラップトップが損傷している、または使用不能な状態で到着した場合は、即時の交換または修理に関する次のステップについて Candidate Experience Specialist に連絡し、[laptops@gitlab.com](mailto:laptops@gitlab.com)を CC に追加してください。
+まれに、入社日前にラップトップが損傷している、または使用不能な状態で到着した場合は、即時の交換または修理に関する次のステップについて Candidate Experience Specialist に連絡し、[it-help@gitlab.com](mailto:it-help@gitlab.com)を CC に追加してください。
 
 {{% alert title="**警告：偽の求人詐欺**" color="warning" %}}
 詐欺師は GitLab になりすまし、求職者を標的にする場合があります。GitLab が新規採用者に機器購入のための資金を送るよう依頼することは決してありません。
@@ -61,12 +56,12 @@ Corp IT がラップトップ注文を受け取った後、リクエストへの
 
 ## ラップトップの更新 {#laptop-refreshes}
 
-> **注**： ほとんどの場合、更新よりも新規採用者向けラップトップの注文を優先します。在庫状況によっては、更新が遅れる場合があります。
+> **注**：Corp IT は、更新よりも新規採用者向けラップトップの注文を優先します。在庫状況によっては、更新が遅れる場合があります。
 
-2026 年 7 月 17 日の更新\
-**ラップトップ更新の注文は、Act 2 の発表を受けて現在保留中です。実行可能になり次第、再開します。**
+2026 年 8 月 7 日の更新\
+**ラップトップ更新の注文は、Act 2 の発表を受けて再開しました。チームはリクエストのバックログに対応し、デバイスを確保しています。**
 
-チームメンバーは、3 年間のアクティブ使用後にラップトップの更新対象となります。3 年の期間は次のとおりです:
+チームメンバーは、3 年間のアクティブ使用後にラップトップの更新対象となります。3 年の期間は次のとおりです：
 
 * チームメンバーが割り当てられたラップトップをアクティブに使用し始めた時点から始まり、必ずしも最初に受け取った時点ではありません
 * 損傷、故障、またはその他の状況により交換用ラップトップが支給されるとリセットされます
@@ -96,7 +91,7 @@ End User Services Issue Tracker プロジェクトで[Issue を作成](https://g
 
 ### 仕様外のラップトップ
 
-リクエストしたラップトップが[こちら](/handbook/eta/corporate-it/end-user-services/laptop-management/#laptop-specs)に記載されている標準仕様の範囲外である場合、IT がラップトップを購入する前にチームメンバーのマネージャーと Device Logistics Team の承認が必要です。マネージャーが承認した後、ロジスティクス承認のために `@gitlab-com/gl-security/corp/logistics` をタグ付けしてください。
+リクエストしたラップトップが[こちら](/handbook/eta/corporate-it/end-user-services/laptop-management/#laptop-specs)に記載されている標準仕様の範囲外である場合、ラップトップを購入する前にチームメンバーのマネージャーと Device Logistics Team の承認が必要です。マネージャーが承認した後、ロジスティクス承認のために `@gitlab-com/gl-security/corp/logistics` をタグ付けしてください。
 
 ### 自分での調達
 
@@ -110,7 +105,7 @@ End User Services Issue Tracker プロジェクトで[Issue を作成](https://g
 
 ### 追加ラップトップのリクエスト
 
-追加デバイスが必要で、業務上の正当性、マネージャー承認、IT 承認がある場合は、[Laptop Refresh/Upgrade テンプレート](https://gitlab.com/gitlab-com/it/end-user-services/issues/laptop-issue-tracker/-/issues/new#)から追加ラップトップをリクエストできます。セカンダリデバイスが承認された場合、それは新しいデバイスではなく再生品になることに注意してください。
+追加デバイスが必要で、業務上の正当性、マネージャー承認、IT 承認がある場合は、[Laptop Refresh/Upgrade テンプレート](https://gitlab.com/gitlab-com/it/end-user-services/issues/laptop-issue-tracker/-/issues/new#)から追加ラップトップをリクエストできます。セカンダリデバイスが承認された場合、それは新しいデバイスではなく、再生品になることに注意してください。
 
 ### 個人用ラップトップの使用
 

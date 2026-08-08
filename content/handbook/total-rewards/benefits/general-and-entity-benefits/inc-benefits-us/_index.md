@@ -1,12 +1,12 @@
 ---
-title: "GitLab Inc (US) Benefits"
+title: "GitLab Inc (US) の福利厚生"
 description: "米国を拠点とするチームメンバー向けの GitLab Inc (US) の福利厚生です。"
 upstream_path: /handbook/total-rewards/benefits/general-and-entity-benefits/inc-benefits-us/
-upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
-translated_at: "2026-06-06T12:00:00Z"
-translator: claude
+upstream_sha: a3ed2ed7423727a5f31c3f20f77f9547a3b7b152
+translated_at: "2026-08-08T08:52:01+09:00"
+translator: codex
 stale: false
-lastmod: 2026-06-02T22:00:31-07:00
+lastmod: "2026-08-06T20:53:38-07:00"
 ---
 
 ## 私たちがあなたをサポートします {#weve-got-you-covered}
@@ -131,7 +131,7 @@ Workday プロファイルを通じて PlanSource にアクセス:
 - 配偶者の雇用の変更
 - 別の州への引越し
 
-**プロセス:** 適格イベントから 30 日以内に PlanSource にログインして変更を提出します。[プロセス手順と必要な書類](https://docs.google.com/document/d/1Ce2x5GU0tZpLxFQ3x2QF0t_hGboO82WVyg-ZIquvddo/edit?tab=t.0) を確認してください
+**プロセス：** 適格イベントから 30 日以内に PlanSource にログインして変更を提出します。PlanSource で適格ライフイベント（QLE）を提出する方法（扶養家族の追加や書類のアップロードを含む）の詳しい手順については、[適格ライフイベント（QLE）のプロセスと書類に関するガイド](https://docs.google.com/document/d/1Ce2x5GU0tZpLxFQ3x2QF0t_hGboO82WVyg-ZIquvddo/edit?tab=t.0)を参照してください。
 
 ## 健康と健全性: 完全な健全性サポート {#health--wellbeing-complete-wellness-support}
 
@@ -192,6 +192,10 @@ RX プラン: [2025 Standard 3-Tier](https://drive.google.com/file/d/1mPLR54AnbO
 - **IdentityForce カバレッジ**: [Identity Protection Resources](https://drive.google.com/file/d/1kB1f6w-yCUvDb5j2c6nVd7GephDmwnZO/view?usp=sharing)
 - **トランスジェンダーカバレッジ:** [WPATH 準拠カバレッジポリシー](https://drive.google.com/file/d/1sdsiFcTFEWsIidOXwPBcNNOCqFVERSXg/view?usp=sharing)
 - **従業員アシスタンスプログラム:** Cigna メンバーに利用可能な追加の [EAP サービス](https://www.cigna.com/individuals-families/member-guide/employee-assistance-program)
+
+**Cigna の追加リソース：** 中核となる医療カバレッジに加えて、Cigna は Cigna Medical プランのメンバー向けに、複数の補足プログラムとリソースを提供しています。これらのプログラムは Cigna が直接提供・管理します。
+
+利用可能なすべてのリソースは[こちら](https://drive.google.com/drive/folders/1H4bQnoCQkPGYwZlT0AuGEO3d-L9srNjB)で確認できます。
 
 </details>
 
@@ -434,7 +438,7 @@ Cigna を通じて追加の任意生命保険が利用可能です。プラン�
 
 ## 人生の移行をサポート {#supporting-life-transitions}
 
-### Flexible Spending and Health Savings Accounts
+### フレキシブル支出口座と医療貯蓄口座
 
 医療費と扶養者ケア費用の管理を支援する税優遇アカウント:
 

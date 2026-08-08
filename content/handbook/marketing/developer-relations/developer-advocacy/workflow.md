@@ -1,11 +1,11 @@
 ---
 title: "デベロッパーアドボケイトチームのワークフロー"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/workflow/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T00:00:00Z"
-translator: claude
+upstream_sha: a3ed2ed7423727a5f31c3f20f77f9547a3b7b152
+translated_at: "2026-08-08T08:52:01+09:00"
+translator: codex
 stale: false
-lastmod: "2025-11-21T07:39:47-08:00"
+lastmod: "2026-08-07T15:05:45+04:00"
 ---
 
 

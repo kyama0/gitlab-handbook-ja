@@ -9,11 +9,11 @@ owning-stage: "~devops::package"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-translated_at: "2026-07-02T06:06:16+09:00"
+upstream_sha: a3ed2ed7423727a5f31c3f20f77f9547a3b7b152
+translated_at: "2026-08-08T09:00:12+09:00"
 translator: codex
 stale: false
-lastmod: 2026-06-26T14:20:13+01:00
+lastmod: "2026-08-07T17:13:39+01:00"
 ---
 
 <!--
@@ -222,7 +222,7 @@ API designs or implementation. The "Design Details" section below is for the
 real nitty-gritty.
 
 You might want to consider including the pros and cons of the proposed solution so that they can be
-compared with the pros and cons of altenatives.
+compared with the pros and cons of alternatives.
 -->
 
 ## 設計と実装の詳細
@@ -261,10 +261,10 @@ Artifact Registry は独立したサービスとして実装されます。
 主要なアーキテクチャ上の意思決定:
 
 - **技術スタック**: Go、LabKit v2、PostgreSQL、Object Storage（[ADR-006](decisions/006_technology_stack.md) を参照）
-- **ストレージ**: namespace スコープの重複排除を備えたコンテンツアドレス指定（[ADR-008](decisions/008_content_addressable_storage.md) を参照）
+- **ストレージ**: ネームスペースにスコープされた重複排除を備えたコンテンツアドレス指定（[ADR-008](decisions/008_content_addressable_storage.md) を参照）
 - **データベース**: 共有 blob ストレージを備えたフォーマット固有のテーブル（[ADR-007](decisions/007_database_schema.md) を参照）
 - **API**: 管理 API（REST）とフォーマット固有のクライアント API（OCI、Maven、npm）（[ADR-009](decisions/009_api_design.md) を参照）
-- **配信**: namespace ごとの構成を備えたリダイレクト、プロキシ、ハイブリッドのダウンロードモード（[ADR-005](decisions/005_artifact_delivery_mode.md) を参照）
+- **配信**: ネームスペースごとの構成を備えたリダイレクト、プロキシ、ハイブリッドのダウンロードモード（[ADR-005](decisions/005_artifact_delivery_mode.md) を参照）
 - **ストレージバックエンドとのインタラクション**: CDN + blob ストレージのペアリング、署名付き URL の生成、IP ベースのルーティング、ダウンロードメタデータの伝播（[ADR-013](decisions/013_storage_backend_interaction.md) を参照）
 
 ### スケーラビリティ要件
@@ -308,7 +308,7 @@ Artifact Registry は独立したサービスとして実装されます。
 
 - 組織 RBAC
 - 認証方法（パーソナルアクセストークン、デプロイトークン、CI/CD ジョブトークン）
-- 可視性制御（公開、internal、プライベート）
+- 可視性制御（公開、内部、プライベート）
 
 **ライフサイクル管理:**
 
@@ -407,9 +407,9 @@ TBD
 
 <!--| Team | What's Needed | Output | Criticality |
 |------|---------------|--------|-------------|
-| **[Database Frameworks](/handbook/engineering/data-engineering/database-excellence/database-frameworks/)** | **Schema design**: Review schema proposed in [ADR-007](decisions/007_database_schema.md)-format-specific tables vs. cross-format operations, deduplication logic, blob reference tracking, access and cleanup pattens. **Sharding**: Validate sharding key. **Performance**: Query pattens for key operations, cleanup tasks, storage attribution. **Scale**: Validate for GitLab.com scale (billions of records, TB-range metadata). **Partitioning/isolation**: Table partitioning strategy and logical database isolation (new database alongside `main` and `ci`). | ADR-007 revised, expanded, and approved. | **Critical** - Large number of new tables with complex deduplication, reference tracking, and cleanup logic. Schema must be correct from the start; large-scale refactoring would be extremely costly. |
-| **[Platform Insights](/handbook/engineering/data-engineering/analytics/platform-insights/)** | **ClickHouse/DIP integration**: Event collection pattens for artifact operations, schema design for analytics tables, query optimization for cost tracking and usage reporting. **Event instrumentation**: Pattens for capturing and storing long-term event records for audit and feeding AI/ML features (recommendations, optimization). | New ADR with strategy for event collection and processing. | **High** - Core value proposition includes cost analytics, usage tracking, and AI-powered insights. Getting this right from the start is key. |
-| **[Fulfillment:Utilization](/handbook/engineering/development/fulfillment/utilization/)** | **Billing integration**: Billing model, integration with CustomersDot for invoicing and payment processing. **Storage quotas**: Quota enforcement pattens, usage tracking per organization, integration with existing consumables management. **Cost attribution**: Mechanisms for tracking and reporting storage costs. **Usage notifications**: Alert mechanisms when approaching limits. | New ADR with strategy for consumption tracking and usage billing. | **High** - New paid SKU requiring monetization. Without billing integration the product cannot be sold. |
+| **[Database Frameworks](/handbook/engineering/data-engineering/database-excellence/database-frameworks/)** | **Schema design**: Review schema proposed in [ADR-007](decisions/007_database_schema.md)-format-specific tables vs. cross-format operations, deduplication logic, blob reference tracking, access and cleanup patterns. **Sharding**: Validate sharding key. **Performance**: Query patterns for key operations, cleanup tasks, storage attribution. **Scale**: Validate for GitLab.com scale (billions of records, TB-range metadata). **Partitioning/isolation**: Table partitioning strategy and logical database isolation (new database alongside `main` and `ci`). | ADR-007 revised, expanded, and approved. | **Critical** - Large number of new tables with complex deduplication, reference tracking, and cleanup logic. Schema must be correct from the start; large-scale refactoring would be extremely costly. |
+| **[Platform Insights](/handbook/engineering/data-engineering/analytics/platform-insights/)** | **ClickHouse/DIP integration**: Event collection patterns for artifact operations, schema design for analytics tables, query optimization for cost tracking and usage reporting. **Event instrumentation**: Patterns for capturing and storing long-term event records for audit and feeding AI/ML features (recommendations, optimization). | New ADR with strategy for event collection and processing. | **High** - Core value proposition includes cost analytics, usage tracking, and AI-powered insights. Getting this right from the start is key. |
+| **[Fulfillment:Utilization](/handbook/engineering/development/fulfillment/utilization/)** | **Billing integration**: Billing model, integration with CustomersDot for invoicing and payment processing. **Storage quotas**: Quota enforcement patterns, usage tracking per organization, integration with existing consumables management. **Cost attribution**: Mechanisms for tracking and reporting storage costs. **Usage notifications**: Alert mechanisms when approaching limits. | New ADR with strategy for consumption tracking and usage billing. | **High** - New paid SKU requiring monetization. Without billing integration the product cannot be sold. |
 | **[Geo](/handbook/engineering/infrastructure-platforms/tenant-scale/geo/)** | **Replication validation**: Confirm existing Geo Self-Service Framework can replicate all relevant registry data for self-managed and Dedicated installations. **Gap analysis**: Identify any limitations or additional work needed beyond the framework. | Update blueprint to confirm full compatibility. Follow-up issues for any gaps. | **Medium** - Early validation prevents costly rework and ensures feature parity across all installation types. |-->
 
 ## 代替案
@@ -442,7 +442,7 @@ each altenative solution/path.
 1. [ADR-002: Storage Deduplication Scope](decisions/002_storage_deduplication_scope.md) - インスタンス全体ではなく Organizations にスコープされる重複排除
 1. [ADR-003: System Requirements](decisions/003_system_requirements.md) - インフラ要件とパフォーマンス制約
 1. [ADR-004: Data and Application Limits](decisions/004_data_and_application_limits.md) - ストレージ、アーティファクトサイズ、レート、並行性、エンティティ数の制限
-1. [ADR-005: Artifact Delivery Mode](decisions/005_artifact_delivery_mode.md) - namespace ごとの構成を備えたリダイレクト、プロキシ、ハイブリッドの配信モード
+1. [ADR-005: Artifact Delivery Mode](decisions/005_artifact_delivery_mode.md) - ネームスペースごとの構成を備えたリダイレクト、プロキシ、ハイブリッドの配信モード
 1. [ADR-006: Technology Stack](decisions/006_technology_stack.md) - 要件とアーキテクチャに基づく技術選択
 1. [ADR-007: Database Schema](decisions/007_database_schema.md) - レジストリのデータテーブルの構成
 1. [ADR-008: Content-Addressable Storage](decisions/008_content_addressable_storage.md) - 重複排除と整合性検証のための SHA256 ベースの識別
@@ -452,12 +452,13 @@ each altenative solution/path.
 1. [ADR-012: Usage Data Collection](decisions/012_usage_data_collection.md) - Artifact Registry の利用データ収集メカニズムとしての Snowplow
 1. [ADR-013: Storage Backend Interaction](decisions/013_storage_backend_interaction.md) - ストレージバックエンド + CDN のペアリング、署名付き URL の生成、リダイレクトターゲットのルーティング、ダウンロードメタデータの伝播
 1. [ADR-014: Frontend to Artifact Registry Interaction](decisions/014_frontend_to_artifact_registry.md) - ブラウザと Artifact Registry のインタラクションのための Rails GraphQL リゾルバーパターン
-1. [ADR-015: Slug Policy (internal)](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/) - namespace slug の検証、デフォルト導出、予約分類、ライフサイクル、運用上の制御（ブロック、再割り当て）
+1. [ADR-015: Slug Policy (internal)](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/artifact_registry/decisions/015_slug_policy/) - ネームスペースのスラッグの検証、デフォルト導出、予約分類、ライフサイクル、運用上の制御（ブロック、再割り当て）
 1. [ADR-020: Authentication Flow](decisions/020_authentication_flow.md) - Artifact Registry の認証設計
 1. [ADR-021: Authorization](decisions/021_authorization.md) - プロダクト固有のロールとアクセスルールを使用する認可設計
-1. [ADR-022: Namespace Decoupling](decisions/022_namespace_decoupling.md) - 不変のスラッグを備えた内部 namespace エンティティ
+1. [ADR-022: ネームスペースの分離](decisions/022_namespace_decoupling.md) - 不変のスラッグを備えた内部ネームスペースエンティティ
 1. [ADR-023: Code Structure and Enforcement](decisions/023_code_structure_and_enforcement.md) - 機能ごとのパッケージ構成を備えた Go の `cmd/` + `internal/` レイアウト
-1. [ADR-024: Infrastructure for GitLab.com Beta Delivery](decisions/024_infrastructure_delivery.md) - Theseus に必要な最小限の実行可能なプラットフォームとして、Artifact Registry と Auth を用い、GKE v2 向け Runway 上で GitLab.com ベータを提供します。cellular ターゲットは後続フェーズへ延期します
+1. [ADR-024: Infrastructure for GitLab.com Beta Delivery](decisions/024_infrastructure_delivery.md) - Theseus に必要な最小限の実行可能なプラットフォームとして、Artifact Registry と Auth を用い、GKE v2 向け Runway 上で GitLab.com ベータを提供します。Cells アーキテクチャ対応のターゲットは後続フェーズへ延期します
+1. [ADR-025: Garbage Collection](decisions/025_garbage_collection.md) - ネームスペースごとにオンラインで実行する、参照されていない blob ストレージの遅延回収
 
 ## インターフェース合意事項
 

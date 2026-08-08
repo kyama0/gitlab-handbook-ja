@@ -3,11 +3,11 @@ title: OOO チケット管理
 category: Handling tickets
 description: 予定された PTO に入る際、割り当て済みチケットを管理する方法
 upstream_path: /handbook/support/workflows/ooo-ticket-management/
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
-translator: "claude"
+upstream_sha: "0a3ee6d988174ce935c5be0c230371ec02739f3d"
+translated_at: "2026-08-08T09:25:46+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-06T12:20:37+01:00"
+lastmod: "2026-08-07T17:18:03-07:00"
 ---
 
 ## 概要
@@ -16,14 +16,14 @@ lastmod: "2026-05-06T12:20:37+01:00"
 
 ### OOO Ticket Summary マクロの使用
 
-このワークフローの一環として、休暇に入る Support エンジニアは、現在 Open、Pending、On-Hold のチケットにマクロを使ってメモを残します。このマクロはチケットのサマリーを提供し、Support エンジニアをチケットの CC リストに追加し、チケットに `ooo_summary` サマリータグを追加します。すべての高優先度チケット、または 3 日以上の PTO を取る場合に、このワークフローに従うことを推奨します。Pending チケットは手動で割り当てを解除する必要はありません。マクロが `ooo_summary` タグを追加するため、顧客が応答した際に自動的に割り当てが解除されます。
+このワークフローの一環として、休暇に入る Support エンジニアは、現在 Open、Pending、On-Hold のチケットにマクロを使ってメモを残します。このマクロはチケットのサマリーを提供し、Support エンジニアをチケットの CC リストに追加します。すべての高優先度チケット、または 3 日以上の PTO を取る場合に、このワークフローに従うことを推奨します。Pending チケットは手動で割り当てを解除する必要はありません。OOO マクロにより、顧客が応答した際に自動的に割り当てが解除されます。
 
 ### チケット優先順位付けワークフロー
 
 ### PTO に入る前に
 
 - 任意: 説明と ID 番号を含むリストやスクリーンショットを作成して、チケットを文書化することもできます。これは便利なバックアップ参照として機能します。
-- 自動化を理解する: チケットは、`ooo_summary` タグが適用されており、かつ `顧客がチケットに応答した` 場合に、自動的に割り当てが解除されてグローバルキューに配置されます。
+- 自動化を理解する：担当者が OOO マクロを使用し、Out of Office アプリで不在とマークされている状態で顧客がチケットに応答すると、チケットは自動的に割り当て解除され、Global Queue に配置されます。
 
 #### Severity 2 以上のチケットについて
 
@@ -49,14 +49,14 @@ lastmod: "2026-05-06T12:20:37+01:00"
 
 #### 解決済みチケットについて
 
-解決済みチケットは、顧客が返信すると再オープンする可能性があります。これらにもタグ付けする必要があります。
+解決済みチケットは、顧客が返信すると再オープンする可能性があります。これらにも OOO マクロを適用する必要があります。
 
 1. Zendesk の右上のプロフィールアイコンをクリックし、「View profile」をクリックします
 2. 「status: solved」の下で、チェックボックスを追加してチケットを選択します
 3. 右上の黒い「Edit X ticket(s)」ボタンをクリックします
 4. 「OOO Solved」マクロを適用します
 
-これにより、これらのチケットに `ooo_summary` タグが適用されるため、適切に割り当てが解除されてキューに戻ります。
+これにより、不在中に顧客が応答した場合、これらのチケットは適切に割り当て解除され、キューに戻されます。
 
 ### ワークフロー
 
@@ -73,21 +73,24 @@ Zendesk の My Assigned Tickets ビューに移動します。継続的な作業
 
 #### チケット引き継ぎプロセス
 
-`ooo_summary` タグが付いたチケットを引き継ぐ場合:
+PTO 中の同僚からチケットを引き継ぐ場合：
 
 1. Global Support Ticket View から、自分の地域の未割り当てチケットをレビューします。
-1. `take it` をクリックしてチケットを引き受けます。重要なのは、内部ノートの追加や顧客への更新の送信などの更新も実行することです — これは作業を文書化すると同時に、チケットから `ooo_summary` タグが自動的に削除されることを保証します。
+1. `take it` をクリックしてチケットを引き受けます。作業を文書化するため、内部ノートの追加や顧客への更新の送信などの更新も必ず実行してください。
 1. Zendesk フィールド `Handover Status` を `Handover Completed` に設定します。
 1. マクロで指定された復帰日以降、元のエンジニアと連携してチケットを引き戻すことができます。必要に応じて、復帰したエンジニアと知識移転セッションをスケジュールします。
-
-**重要:** `ooo_summary` タグの削除を省略すると、顧客が再度応答した場合にチケットが自動的に割り当て解除されます。
 
 #### PTO からの復帰プロセス
 
 1. 任意: PTO 前に自分に割り当てられていたチケットのステータスを確認します。所有権を取り戻すのが理にかなっている場合は、新しいオーナーと調整できます。これは、顧客との既存のラポールがある場合、その問題に対する強い技術的専門知識がある場合、または復帰時に調査を継続することに以前合意していた場合に有益となる可能性があります。
-1. アクティブなすべてのチケットに `General::Return from OOO` マクロを適用する ***または*** 各チケットから `ooo_summary` タグを手動で削除します。
+1. アクティブなすべてのチケットに `General::Return from OOO` マクロを適用します。復帰後に自動割り当て解除の動作を無効にするため、この操作が重要です。
 
-ヒント: [Zendesk の一括編集機能](https://support.zendesk.com/hc/en-us/articles/4408886890906-Managing-tickets-in-bulk)を使用してマクロを適用したりタグを削除したりできます。この機能を使用する際は注意して操作してください。
+ヒント：[Zendesk の一括編集機能](https://support.zendesk.com/hc/en-us/articles/4408886890906-Managing-tickets-in-bulk)を使用して、複数のチケットに一度にマクロを適用できます。この機能を使用する際は注意して操作してください。
+
+**マクロに関する重要事項：**
+
+1. PTO に入る際に OOO マクロを実行**しない**場合、顧客が応答してもチケットは自動的に割り当て解除**されません**。
+1. 復帰時に Return from OOO マクロを実行**しない**場合、顧客が応答するとチケットは引き続き自動的に割り当て解除**されます**。
 
 #### PTO フローチャート
 
@@ -117,8 +120,7 @@ flowchart TD
 
     subgraph MacroDetails [OOO Ticket Summary]
         ApplyMacro --> Summary[Add Ticket Summary]
-        Summary --> AddOOOTag[Add ooo_summary Tag]
-        AddOOOTag --> AutoUnassign[Note: Ticket will auto-unassign if customer responds]
+        Summary --> AutoUnassign["Note: Ticket will auto-unassign<br/>if customer responds while you are OOO"]
         AutoUnassign --> DocumentDetails[Document:
         - Problem Description
         - Action Taken
