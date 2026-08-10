@@ -8,9 +8,9 @@ dris: ["@michaelangeloio"]
 owning-stage: "~devops::analytics"
 participating-stages: ["~devops::secure", "~devops::platforms", "~devops::ai-powered"]
 upstream_path: /handbook/engineering/architecture/design-documents/orbit/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: "2026-07-07T15:33:26-04:00"
-translated_at: "2026-07-10T20:00:13+09:00"
+upstream_sha: 1099e381063485f55ad7088a1ce8b80dd7077696
+lastmod: "2026-07-30T12:45:24+02:00"
+translated_at: "2026-08-11T06:40:00+09:00"
 translator: codex
 stale: false
 ---
@@ -53,6 +53,10 @@ flowchart LR
 - [スキーマ管理](https://gitlab.com/gitlab-org/orbit/knowledge-graph/-/blob/main/docs/design-documents/schema_management.md)
 - [セキュリティ](https://gitlab.com/gitlab-org/orbit/knowledge-graph/-/blob/main/docs/design-documents/security.md)
 - [可観測性](https://gitlab.com/gitlab-org/orbit/knowledge-graph/-/blob/main/docs/design-documents/observability.md)
+
+GitLab Self-Managed への提供は例外であり、このリポジトリの ADR に記録されています:
+
+- [ADR 001: Orbit と DIP を独立したチャートとして提供する](decisions/01-delivery.md)
 
 ## リソース
 

@@ -2,11 +2,11 @@
 title: "Geo とディザスタリカバリ"
 description: "Geo チームに関する情報"
 upstream_path: "/handbook/engineering/infrastructure-platforms/tenant-scale/geo/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: "1099e381063485f55ad7088a1ce8b80dd7077696"
+translated_at: "2026-08-11T06:08:21+09:00"
 translator: claude
 stale: false
-lastmod: "2026-01-23T15:08:44-08:00"
+lastmod: "2026-08-10T14:49:33+10:00"
 ---
 
 ## Geo チーム
@@ -15,15 +15,11 @@ lastmod: "2026-01-23T15:08:44-08:00"
 
 ### チームメンバー
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/geo/#the-geo-team" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-slug manager="thiagocsf" team="Geo" >}}
 
 ### Stable Counterparts
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/geo/#stable-counterparts" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< engineering/stable-counterparts role="Geo" manager-role="Fullstack Engineering Manager, Geo" >}}
 
 ## 目標と優先事項
 
@@ -60,7 +56,7 @@ Geo はデータの冗長性を提供します。お客様は別の場所にデ�
 
 ### 一般的な質問をする
 
-回答が見つからない一般的な質問がある場合は、Slack の [#g_geo](https://gitlab.slack.com/archives/C32LCGC1H) チャンネルで気軽に質問してください。エンジニアは可能な限りサポートし、頭の中から質問に答えるよう最善を尽くします。より多くの調査が必要な場合や、より複雑なシナリオに対処する必要がある場合は、サポート Issue を作成する必要があります（次のセクションを参照）。
+回答が見つからない一般的な質問がある場合は、Slack の [#g_geo](https://gitlab.slack.com/archives/C32LCGC1H) チャンネルで気軽に質問してください。エンジニアは可能な限りサポートし、その場で分かる範囲で質問に答えるよう最善を尽くします。より多くの調査が必要な場合や、より複雑なシナリオに対処する必要がある場合は、サポート Issue を作成する必要があります（次のセクションを参照）。
 
 ### サポートリクエスト Issue を作成する
 
@@ -80,7 +76,7 @@ Geo 関連の質問には [Geo サポートリクエスト Issue テンプレー
 
 | 優先度 | 通常の使用シナリオ | 期待される最初の応答時間 |
 | ---      | ---   |  ------  |
-| P4          | Geo エンジニアが頭の中から答えられず、もう少し調査が必要な一般的な質問 | 2〜3 日 |
+| P4          | Geo エンジニアが Slack 上で即答できず、もう少し調査が必要な一般的な質問 | 2〜3 日 |
 | P3          | 時間的に緊急でない（つまり、簡単な回避策がある）お客様の問題、または将来的にお客様が目標を達成するための関与スケジュール | 1 日 |
 | P2          | 時間的にやや緊急で、お客様側での決定や進捗を妨げているお客様の問題 | 半日 |
 | P1          | お客様が経験している緊急事態 | 1〜2 時間 |

@@ -2,11 +2,11 @@
 title: "顧客ヘルススコアリング"
 description: "顧客アカウントスコアリングの概要と方法論フレームワーク。顧客のジャーニーと ROI 達成に対する理解を深めます。"
 upstream_path: /handbook/customer-success/customer-health-scoring/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T01:56:09Z"
+upstream_sha: 1099e381063485f55ad7088a1ce8b80dd7077696
+translated_at: "2026-08-11T06:43:59+09:00"
 translator: claude
 stale: false
-lastmod: "2026-01-22T20:31:15+05:30"
+lastmod: "2026-08-10T15:41:56+00:00"
 ---
 
 ---
@@ -25,9 +25,7 @@ lastmod: "2026-01-22T20:31:15+05:30"
 - 顧客ヘルススコアリングフレームワークがバックテストされ、有効で有益であることが検証された
 - 顧客ヘルスが CSM、Sales、Product、および広範な組織によって、顧客の GitLab 製品採用レベルと GitLab 企業とのエンゲージメントを評価するための会社レベルのレポートメトリクスとして使用されている
 
-<br>
-![Early Warning Segmentation Framework](https://lucid.app/publicSegments/view/1d7cb4c0-392c-41d8-afeb-569fa48440dd/image.png)
-<br>
+![早期警戒セグメンテーションフレームワーク](https://lucid.app/publicSegments/view/1d7cb4c0-392c-41d8-afeb-569fa48440dd/image.png)
 
 ## スコアリング方法論
 
@@ -39,7 +37,7 @@ lastmod: "2026-01-22T20:31:15+05:30"
 | **バリューストリーム管理** | この顧客向けダッシュボードは DORA4 を含む[バリューストリームアナリティクス](https://docs.gitlab.com/ee/user/group/value_stream_analytics/index.html)メトリクスをホスト | GitLab 顧客 | DORA4 メトリクス、月次使用メトリクス | |
 | **プラットフォーム採用スコア** | 各顧客は、利用中のユースケースのレベルと顧客が GitLab アプリケーションから現在受け取っている価値を理解するための単一のプラットフォーム採用スコアを持つ | GitLab 内部チーム | ユースケースごとに 3〜7 の製品使用メトリクス、Red/Yellow/Green スコアリングを使用。メトリクスはユースケースのスコアに集約され、ユースケーススコアがプラットフォーム採用スコアに集約される | [Platform Adoption Scoring](/handbook/customer-success/product-usage-data/platform-value-score/) |
 | **ユースケース採用スコアカード** | 各顧客はユースケース（SCM、CI、CD...）ごとにスコアカードを持ち、採用進捗をハイライトして勝利を祝い、改善の余地を特定する | GitLab 内部チーム**と**顧客 | ユースケースごとに 3〜7 の製品使用メトリクス、Red/Yellow/Green スコアリングを使用。これらを使用してユースケースごとの採用レベルをハイライトするデッキを作成する | [Use Case Adoption Scoring](/handbook/customer-success/product-usage-data/maturity-scoring/) |
-| **DevOps スコア** | 顧客がパフォーマンス上位のインスタンスと比較した自社の DevOps ステータスを理解するため（セルフマネージドのみ） | GitLab 顧客 | 10 のユースケースにわたる 10 のメトリクス、過去 1 ヶ月に機能を利用したユーザーの%として表示、パフォーマンス上位インスタンスがその機能をどのように利用したかと比較（セルフマネージドのみ - [GitLab 機能](https://about.gitlab.com/features/)） | [ハンドブックリンク](https://about.gitlab.com/blog/2021/12/15/devops-adoption/#devops-score) |
+| **DevOps スコア** | 顧客がパフォーマンス上位のインスタンスと比較した自社の DevOps ステータスを理解するため（セルフマネージドのみ） | GitLab 顧客 | ユースケース全体にわたる 10 のメトリクス、過去 1 ヶ月に機能を利用したユーザーの%として表示、パフォーマンス上位インスタンスがその機能をどのように利用したかと比較（セルフマネージドのみ - [GitLab 機能](https://about.gitlab.com/features/)） | [ハンドブックリンク](https://about.gitlab.com/blog/2021/12/15/devops-adoption/#devops-score) |
 | **DevOps 採用** | DevOps 採用は組織内のグループが GitLab の最も重要な機能を採用・使用する方法を示す | GitLab 顧客 | SaaS ではグループとプロジェクトレベル、セルフマネージドではインスタンスレベルで設定が必要な Dev、Sec、Ops にわたる顧客の全体的な採用を示す特定のメトリクス（[GitLab 機能](https://about.gitlab.com/features/)） | [ドキュメントリンク](https://docs.gitlab.com/ee/user/group/devops_adoption/) |
 | **DevOps レポート** | これは DevOps 採用と統合されており、最終的に顧客エグゼクティブダッシュボードに置き換えられる | GitLab 顧客 | Dev、Sec、Ops の機能利用（[ドキュメント](https://docs.gitlab.com/ee/administration/analytics/dev_ops_reports.html)） | |
 
@@ -64,7 +62,7 @@ lastmod: "2026-01-22T20:31:15+05:30"
 - **Voice of the customer（顧客の声）**（VoC）: サポート + アンケート: 5%
 - **Engagement（エンゲージメント）**: 顧客エンゲージメント + エグゼクティブスポンサーシップ + イベント + 認定: 10%
 
-![Customer Health Vision](https://lucid.app/publicSegments/view/cccc6a4b-adad-4fcf-aba6-ddc53310111d/image.png)
+![顧客ヘルスのビジョン](https://lucid.app/publicSegments/view/cccc6a4b-adad-4fcf-aba6-ddc53310111d/image.png)
 <br><br>
 
 ## 顧客ヘルスのカテゴリーとリスク
@@ -97,7 +95,7 @@ lastmod: "2026-01-22T20:31:15+05:30"
 
 ### その他の組織的要因
 
-顧客のビジネスパフォーマンスが大幅に影響を受け、低下している。会社が買収される、別の会社と合併する、分割される、または顧客ビジネスの他の構造的変化。
+顧客のビジネスパフォーマンスが大幅に影響を受け、低下している。会社が買収される、別の会社と合併する、事業売却される、または顧客ビジネスの他の構造的変化。
 
 ## ヘルス評価ガイドライン
 
@@ -150,7 +148,7 @@ CSM センチメントが更新されたタイムラインエントリを表示�
 | | CI 採用 | | | | 15% | | All |
 | | DevSecOps 採用 | | | | 15% | | All |
 | | CD 採用 | | | | 15% | | All |
-| **Risk** | [CSM センチメント](/handbook/customer-success/csm/health-score-triage/#gainsight) | CSM が顧客の認識されたセンチメントを示すために更新する定性的メジャー | 手動/自動 | すべての `CSM 所有`アカウントについて、CSM が手動で red/yellow/green を決定する | 100% | 25% | Tech Touch には N/A |
+| **Risk** | [CSM センチメント](/handbook/customer-success/csm/health-score-triage/#gainsight) | CSM が顧客の認識されたセンチメントを示すために更新する定性的メジャー | 手動/自動 | すべての `CSM-owned` アカウントについて、CSM が手動で red/yellow/green を決定する | 100% | 25% | Tech Touch には N/A |
 | **Outcomes** | ROI | 顧客は目標とメモを持つサクセスプランを持っているか？ | 自動 | すべての `CSM Prioritization = 1` アカウントおよびオープンなサクセスプランを持つすべての CSM 所有アカウントについて:<br>- Green: 1 つ以上の目標があり戦略/ハイライト情報がないアクティブなサクセスプラン<br>- Yellow: ドラフトのサクセスプラン OR 1 つ以上の目標があり戦略/ハイライト情報がないアクティブなサクセスプラン<br>- Red: サクセスプランなしまたは目標なし | 100% | 10% | Scale と Tech Touch には N/A |
 | **Voice of the customer** | | | | | | 5% | |
 | | サポート Issue | サポートインタラクションのヘルスを評価する。現在のバージョンは MVC で [v2 が予定されている](https://gitlab.com/gitlab-com/sales-team/field-operations/sales-operations/-/issues/1202)。 | 自動 | - Green: 月 1〜5 チケット<br>- Yellow: 月 5〜15 チケット<br>- Red: 月 15 件以上のチケット | 100% | | All |
@@ -246,7 +244,7 @@ CSM が Premium サブスクリプション下の本番インスタンスをマ�
 
 いくつかのメトリクスは先行指標または遅行指標です。予測ソリューションを重視しますが、過去のパフォーマンスを評価するために遅行メトリクスも組み込まれています。
 
-以下のグラフ（Early Warning Segmentation Framework）は、使用する戦略とどのリソースを活用するかのフレームワークを提供するために使用されます。顧客はアカウントヘルスと成長ポテンシャルによってグループ化されます。Renewal Operations アナリストは、時間をどこに費やすかを特定するためにフィールドのトリアージをサポートします。
+以下のグラフ（早期警戒セグメンテーションフレームワーク）は、使用する戦略とどのリソースを活用するかのフレームワークを提供するために使用されます。顧客はアカウントヘルスと成長ポテンシャルによってグループ化されます。Renewal Operations アナリストは、時間をどこに費やすかを特定するためにフィールドのトリアージをサポートします。
 
 ## 方法論
 
@@ -273,7 +271,7 @@ CSM が Premium サブスクリプション下の本番インスタンスをマ�
 | **Engagement** | エンゲージメント | CSM ケーデンスコールの最近性 | 顧客エンゲージメントの欠如 | 最後の CSM ケーデンスコールの日付 | CSM 所有 | 100% |
 | **Engagement** | エグゼクティブスポンサーシップ | ステークホルダーは整合されてコミュニケーションしているか？ | 整合性とコミュニケーションの欠如は、エグゼクティブと ROI の間の断絶を示す可能性がある | 整合されたステークホルダーコミュニケーションの最近性 | CSM 所有 | 未開始 |
 | **Engagement** | イベント | 顧客は GitLab イベントに参加しているか？ | イベント参加は顧客エンゲージメント、チームメンバーとの対話、対面でのやり取りを示す | TBD | All | 未開始 |
-| **Engagement** | 認定 | アカウント内のユーザーは認定を取得しているか？認定を維持しているか？ | GitLab 認定を取得することは私たちと顧客の両方にとってポジティブです；また GitLab への関与、GitLab の使用に関する知識を示し、社内チャンピオンとしての推論を提供します | TBC | All | 未開始 |
+| **Engagement** | 認定 | アカウント内のユーザーは認定を取得しているか？認定を維持しているか？ | GitLab 認定を取得することは私たちと顧客の両方にとってポジティブです；また GitLab への関与、GitLab の使用に関する知識を示し、社内チャンピオンであることを推測する材料にもなります | TBC | All | 未開始 |
 
 ## 予測分析
 

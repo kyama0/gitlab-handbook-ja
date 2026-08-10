@@ -4,9 +4,9 @@ description: "Agent Developer グループは、GitLab Duo Developer の基盤�
 aliases:
   - /handbook/engineering/ai/agent-developer/
 upstream_path: /handbook/engineering/ai/agent-foundations/agent-developer/
-upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
-lastmod: "2026-07-31T12:38:28+02:00"
-translated_at: "2026-08-01T15:59:51+09:00"
+upstream_sha: 1099e381063485f55ad7088a1ce8b80dd7077696
+lastmod: "2026-08-10T07:49:15+02:00"
+translated_at: "2026-08-11T06:40:00+09:00"
 translator: codex
 stale: false
 ---
@@ -26,7 +26,7 @@ GitLab における中核的な AI／Agent 開発を推進し、エージェン�
 
 | 役割 | 担当者 |
 |------|--------|
-| Product Manager | @frwang1 |
+| Product Manager | @frwang1, @bjune |
 
 ### ☎️ 私たちへの連絡方法
 
@@ -136,7 +136,7 @@ Agent Developer チームは、次のガイドラインに基づいてコミュ�
 
 _Remember to update the status!_
 
-/cc @aying-gl @bastirehm @frwang1
+/cc @aying-gl @bastirehm @frwang1 @bjune
 ```
 
 エンジニアリングマネージャー、プロダクトマネージャー、そして協働しているチームメンバーを必ずタグ付けしてください。
