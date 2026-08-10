@@ -4,16 +4,16 @@ description: "AI Catalog グループは、組織、グループ、プロジェ�
 aliases:
   - /handbook/engineering/ai/ai-catalog/
 upstream_path: /handbook/engineering/ai/agent-foundations/ai-catalog/
-upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
-lastmod: "2026-08-03T18:10:59+01:00"
-translated_at: "2026-08-05T06:06:38+09:00"
+upstream_sha: d8a780e3c56bf562557ac96eeca47c1b02a85268
+lastmod: "2026-08-10T21:48:58+00:00"
+translated_at: "2026-08-11T07:18:51+09:00"
 translator: codex
 stale: false
 ---
 
-## ビジョン
+## 概要
 
-AI Catalog グループは、組織、グループ、プロジェクトをまたいで作成、キュレーション、共有できるエージェント、ツール、フローのカタログである AI Catalog の開発に注力しています。
+AI Catalog グループは、GitLab ユーザーがエージェント、フロー、MCP サーバー、スキルなどの AI 搭載オブジェクトを発見、評価、有効化、管理するための場を構築することに注力しています。私たちは Explore、Group、Project の各スコープにわたるカタログ体験を担当し、プロダクト、デザイン、エンジニアリングを横断して、AI オブジェクトをどのように作成、キュレーション、提示し、信頼できるものにして活用するかを定義します。
 
 ## チームメンバー
 
@@ -103,13 +103,13 @@ AI Catalog のほとんどの機能は Workflow Service 内で新しい機能を
 **協業の要件:**
 
 * すべての Workflow Service への貢献は、Agent Foundations チームと密接に連携して開発する必要があります
-* 私たちの実装は、彼らのサービスアーキテクチャとビジョンに沿ったものでなければなりません
-* 私たちは、Workflow Service のより広範な目標をサポートし、彼らの技術基準を遵守することにコミットします
+* 私たちの実装は、Agent Foundations のサービスアーキテクチャとビジョンに沿ったものでなければなりません
+* 私たちは、Workflow Service のより広範な目標をサポートし、その技術基準を遵守することにコミットします
 
 **協業のプロセス:**
 
 * 計画フェーズ中に、関連する Agent Foundations の連絡先（以下に記載）に連絡します
-* 彼らの [`#g_duo-agent-platform`](https://gitlab.enterprise.slack.com/archives/C07035GQ0TB) チャンネルに参加します
+* Agent Foundations の [`#g_duo-agent-platform`](https://gitlab.enterprise.slack.com/archives/C07035GQ0TB) チャンネルに参加します
 * デフォルトで私たちの[非同期コミュニケーションの方針](#communication)に従いますが、必要に応じて同期ミーティングを設定し、主要な成果が GitLab Issue に文書化されるようにします
 
 #### 主要な Agent Foundations の連絡先
@@ -190,6 +190,11 @@ Issue はフィボナッチ数列（0、1、2、3、5、8+）を使用して重�
   必要なときに破壊的変更を行えるように[実験的としてマーク](https://docs.gitlab.com/development/api_graphql_styleguide/#mark-schema-items-as-experiments)する必要があります。
 * ポーリングではなく GraphQL [サブスクリプション](https://docs.gitlab.com/development/fe_guide/graphql/#subscriptions)。
 * [AI Catalog Backend Architecture](/handbook/engineering/architecture/design-documents/ai_catalog/) のデザインドキュメント（2026 年 2 月に執筆）を読んでください。
+
+## UX 原則
+
+すべてのデザインとエンジニアリングの意思決定を導く、AI Catalog の [UX 原則](/handbook/engineering/ai/ai-catalog/ux-principles/)を参照してください。
+これは、カタログに貢献するすべての人がトレードオフを判断する前に意図をすり合わせるための参照点です。
 
 ## チームミーティング
 

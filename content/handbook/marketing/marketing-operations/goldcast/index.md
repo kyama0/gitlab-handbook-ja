@@ -2,11 +2,11 @@
 title: "Goldcast"
 description: "Goldcast は B2B マーケター向けのデジタルイベントプラットフォームで、イベント、ウェビナー、動画キャンペーンの作成・配信を支援します。AI を活用して魅力的なコンテンツを作成し、動画を複数のフォーマットに転用できます。"
 upstream_path: /handbook/marketing/marketing-operations/goldcast/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T07:06:29+09:00"
+upstream_sha: 1099e381063485f55ad7088a1ce8b80dd7077696
+translated_at: "2026-08-11T06:08:21+09:00"
 translator: claude
 stale: false
-lastmod: "2026-06-30T16:30:33-06:00"
+lastmod: "2026-08-10T09:21:44-06:00"
 ---
 
 
@@ -301,6 +301,18 @@ Goldcast の「フォームライブラリ」内のフォームはすべて、UT
 
 これらはすべて [Templates - Goldcast Webcasts フォルダ](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/classic/ME21842A1/) にあります。Goldcast テンプレートが Marketo プログラムと同期されている限り、Goldcast はテンプレートに基づいて Marketo プログラムを自動クローンできます。作成された Marketo プログラムは Goldcast イベントと同じ名前を持ち、末尾にタイムスタンプが付きます。新規プログラムは元の Marketo プログラムと同じフォルダに表示されます。
 
+ワークショップでは、Goldcast のテンプレート選択を対応する Marketo ワークショップテンプレートに合わせる必要があります。イベントのトピックに合うワークショップテンプレートを選択すると、Goldcast が正しい Marketo プログラムを自動作成します。ワークショップが 7 つの専用ワークショップテンプレートカテゴリのいずれにも該当しない場合は、[デフォルトのワークショップテンプレート](https://admin.goldcast.io/templates/d1b01312-30b4-4cc9-a212-8faa2c1c1753)を使用してください。
+
+Goldcast テンプレート（以下のワークショップテンプレートはすべて、Marketo プログラムを自動作成するように設定されています）:
+
+1. [CI Workshop template](https://admin.goldcast.io/templates/fa5b849a-18e1-4dc9-9642-84b36edb3bec)
+2. [DAP Workshop template](https://admin.goldcast.io/templates/066a3172-2911-49f4-88cb-bab98b061edd)
+3. [GitHub to GitLab Workshop template](https://admin.goldcast.io/templates/1cbc7cf6-f39a-4dc5-b15d-073b9b065281)
+4. [GitLab Basics Workshop template](https://admin.goldcast.io/templates/4b9c8abe-bea0-44b3-9180-79d0feea4aff)
+5. [Platform Engineering Workshop template](https://admin.goldcast.io/templates/c66e6b04-b5f4-4e24-aac1-61aa56d6d5d2)
+6. [Project Management Workshop template](https://admin.goldcast.io/templates/2f47e16e-4f67-4f90-a007-1facd323799b)
+7. [Security Workshop template](https://admin.goldcast.io/templates/acf3d40c-a4aa-4840-8629-bc90f4b88c25)
+
 正しく動作している場合、Marketo プログラムのトークンはプログラム作成時（Goldcast のプログラムクローン機能経由）または Goldcast イベントに手動で接続したときに自動で値が入力されます。このプロセスに関係するトークンは以下のとおりです:
 
 - {{my.goldcast_eventEndDate}}
@@ -389,6 +401,8 @@ Marketo ランディングページトークン
 
 注意: すべてのローカライズされたテンプレートは Marketo プログラムを自動作成します
 
+注意: ワークショップでは、イベントタイプに合うワークショップテンプレートを選択してください。より具体的なワークショップテンプレートが利用できる場合、汎用のデフォルトワークショップテンプレートは使用しません。
+
 #### ステップ 2: 基本情報
 
 以下のフィールドに入力してください（ほとんどが Marketo プログラムトークンに自動入力されます）:
@@ -474,7 +488,7 @@ _注意: 名前変更は同期や Goldcast イベントには影響しません_
 
 | シナリオ | 推奨される方法 | テンプレートの選択 |
 | ------ | ------ | ------ |
-|   シンプルなワークフロー、自動作成を望む    |   Goldcast First    | GitLab Primary Template (auto-Marketo)、GitLab Roundtable Template (auto-Marketo)、または GitLab Workshop Template - (auto-Marketo program creation)  |
+|   シンプルなワークフロー、自動作成を望む    |   Goldcast First    | GitLab Primary Template (auto-Marketo)、GitLab Roundtable Template (auto-Marketo)、GitLab Workshop Template - (auto-Marketo program creation)、または利用可能な 7 種類のワークショップテンプレートのいずれか  |
 |   まずカスタム Marketo セットアップが必要 |  Marketo First  | GitLab Primary Template (w/o Marketo) |
 | ローカライズされたイベント | Goldcast First | ローカライズ済みテンプレート |
 | ドライラン／テスト | Goldcast First | GitLab Primary Template (auto-Marketo)、GitLab Roundtable Template (auto-Marketo)、または GitLab Workshop Template - (auto-Marketo program creation) |
@@ -972,12 +986,12 @@ Goldcast はホストしたウェブキャストのリストをサブドメイ�
 #### ステップ 2: カスタム再スケジュールメールを送信
 
 - メインのイベントメニューで `Email` メニューを選択
-- `Custom Email` 送信を選択
+- 右側の `New Email` ボタンをクリック
 - 適切なタイトルで `Email Subject` を入力
 - 事前作成テンプレート: `[Reschedule] Default GitLab Template` を選択
-- `Send to Registrants` をクリックしてメール送信を完了
-
-![Goldcast Reschedule Email](/images/marketing/marketing-operations/goldcast/goldcast_rescheduleemail.png)
+- すべての登録者に送信する前に、自分宛てにテストサンプルを送信する（サンプルメールでは Enter event ボタンが動作しないことに注意してください）
+- すぐにメールを送信する場合は `Send Now`、送信を予約する場合は `Schedule` を選択
+- `Send Email` をクリックしてメール送信を完了
 
 #### ステップ 3: Marketo プログラムを更新
 
@@ -1002,6 +1016,57 @@ Goldcast はホストしたウェブキャストのリストをサブドメイ�
 #### ステップ 3: Marketo プログラムの処理
 
 - #mktgops Slack チャンネルで Marketo プログラムを削除してもらうか、権限があれば自分でプログラムを削除してください
+
+### 再スケジュールメールとキャンセルメール
+
+再スケジュールまたはキャンセルメールを送信するには、上で説明したものと同様のプロトコルに従ってください。以下のタイトルのテンプレートを選択してください:
+
+- `[Reschedule] Default GitLab Template - {{Primary Language}}`
+- `[Cancellation] Default GitLab Template - {{Primary Language}}`
+
+メールタイプに応じて、件名にこれらの翻訳のいずれかを入力してください:
+
+**英語テンプレート**:
+
+- a. "Your event has been rescheduled!"
+- b. "Due to unforeseen circumstances, the event has been canceled."
+
+**言語別の翻訳**:
+
+_スペイン語_
+
+- a. “Su evento se reprogramó.”
+- b. “Debido a circunstancias imprevistas, el evento se canceló.”
+
+_フランス語_
+
+- a. “Votre événement a été reprogrammé!”
+- b. “En raison de circonstances imprévues, l’événement a été annulé.”
+
+_ドイツ語_
+
+- a. “Dein Event wurde verschoben.”
+- b. “Aufgrund unvorhergesehener Umstände wurde das Event abgesagt.”
+
+_ポルトガル語_
+
+- a. “Seu evento foi reagendado!”
+- b. "Devido a imprevistos, o evento foi cancelado."
+
+_イタリア語_
+
+- a. “Il tuo evento è stato riprogrammato.”
+- b. “A causa di circostanze impreviste, l’evento è stato annullato.”
+
+_日本語_
+
+- a. “イベントのスケジュールが変更されました！”
+- b. “予期せぬ事情により、イベントは中止となりました。”
+
+_韓国語_
+
+- a. “이벤트 일정이 변경되었습니다!”
+- b. “예기치 못한 상황으로 인해 이벤트가 취소되었습니다. 불편을 끼쳐드려 죄송합니다.”
 
 ### 重要な注意事項
 
@@ -1066,57 +1131,6 @@ Goldcast には 7 つの追加言語のローカライズされたブランド�
 #### 日本語テンプレート
 
 すべての日本語イベントテンプレートは、メールが日本語であろうと英語であろうと、{{last name}}-sama という挨拶を含むメールテンプレートで更新されています。
-
-### 再スケジュールメールとキャンセルメール
-
-再スケジュールまたはキャンセルメールを送信するには、上で説明したものと同様のプロトコルに従ってください。以下のタイトルのテンプレートを選択してください:
-
-- `[Reschedule] Default GitLab Template - {{Primary Language}}`
-- `[Cancellation] Default GitLab Template - {{Primary Language}}`
-
-メールタイプに応じて、件名にこれらの翻訳のいずれかを入力してください:
-
-**英語テンプレート**:
-
-- a. "Your event has been rescheduled!"
-- b. "Due to unforeseen circumstances, the event has been canceled."
-
-**言語別の翻訳**:
-
-_スペイン語_
-
-- a. “Su evento se reprogramó.”
-- b. “Debido a circunstancias imprevistas, el evento se canceló.”
-
-_フランス語_
-
-- a. “Votre événement a été reprogrammé!”
-- b. “En raison de circonstances imprévues, l’événement a été annulé.”
-
-_ドイツ語_
-
-- a. “Dein Event wurde verschoben.”
-- b. “Aufgrund unvorhergesehener Umstände wurde das Event abgesagt.”
-
-_ポルトガル語_
-
-- a. “Seu evento foi reagendado!”
-- b. “evido a imprevistos, o evento foi cancelado."
-
-_イタリア語_
-
-- a. “Il tuo evento è stato riprogrammato.”
-- b. “A causa di circostanze impreviste, l’evento è stato annullato.”
-
-_日本語_
-
-- a. “イベントのスケジュールが変更されました！”
-- b. “予期せぬ事情により、イベントは中止となりました。”
-
-_韓国語_
-
-- a. “이벤트 일정이 변경되었습니다!”
-- b. “예기치 못한 상황으로 인해 이벤트가 취소되었습니다. 불편을 끼쳐드려 죄송합니다.”
 
 ## シリーズの利用
 

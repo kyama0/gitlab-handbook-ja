@@ -1,11 +1,11 @@
 ---
 title: エンジニアリング原則
 upstream_path: "/handbook/engineering/development/principles/"
-upstream_sha: "3480299851f7e2243d4f08b75dac452f89929636"
-translated_at: "2026-04-28T05:15:25Z"
+upstream_sha: "1099e381063485f55ad7088a1ce8b80dd7077696"
+translated_at: "2026-08-11T06:40:00+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-02T19:44:15+00:00"
+lastmod: "2026-08-10T20:46:47+02:00"
 ---
 
 ## エンジニアリング原則
@@ -45,7 +45,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 「次のマイルストーンで最小限のものを構築する」パターンに先行する可能性があり、イテレーションの効率性を高めることを目的としたいくつかのパターンを以下に示します:
 
 1. 基本的なデザインの問題を特定し、デザインドキュメントで説明する。
-1. それらに関連する最も重要なリスクを特定し、de-risk する方法を見つける。
+1. それらに関連する最も重要なリスクを特定し、リスクを軽減する方法を見つける。
 1. 基本的なデザインの側面を個別にイテレーションするための計画を策定する。
 1. プロトタイプまたは概念実証として最初のエンドツーエンドのイテレーションを提供する。
 
@@ -161,7 +161,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 - [フィーチャーフラグの使用](https://docs.gitlab.com/ee/development/feature_flags/index.html)
 - [コードレビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html)
 
-私たちはメトリクスを分析してトレンドを特定し、レトロスペクティブを開催し（例: [グループレトロスペクティブ](/handbook/engineering/careers/management/group-retrospectives/)、[イテレーションレトロスペクティブ](/handbook/engineering/devops/create/engineers/iteration/)）、[根本原因分析](/handbook/customer-success/professional-services-engineering/workflows/internal/root-cause-analysis/)を実施し、チームメンバーからフィードバックを受けることで改善の機会を見つけます。チームメンバーはプロセスを改善する機会を特定し解決策を提案することが奨励されており、その例として MR または Issue でこれらの機会を説明することが考えられます。
+私たちはメトリクスを分析してトレンドを特定し、レトロスペクティブを開催し（例: [グループレトロスペクティブ](/handbook/engineering/careers/management/group-retrospectives/)、[イテレーションレトロスペクティブ](/handbook/engineering/devops/create/engineers/iteration/)）、[根本原因分析](/handbook/customer-success/professional-services-engineering/workflows/internal\root-cause-analysis/)を実施し、チームメンバーからフィードバックを受けることで改善の機会を見つけます。チームメンバーはプロセスを改善する機会を特定し解決策を提案することが奨励されており、その例として MR または Issue でこれらの機会を説明することが考えられます。
 
 誰でも新しいプロセスを提案したり既存のプロセスを改善したりすることで貢献できます。
 
@@ -180,7 +180,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 期限のプレッシャーは論理的にいくつかの結果につながります:
 
-1. 人々が[燃え尽き症候群のリスクが高まります](/handbook/people-group/time-off-and-absence/time-off-types/)。
+1. [人々は燃え尽き症候群のリスクが高まります](/handbook/people-group/time-off-and-absence/time-off-types/)。
 1. [完了の定義](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#definition-of-done)を妥協する可能性があります。
 1. [スコープを削減します](/handbook/values/#move-fast-by-shipping-the-minimal-valuable-change)。
 1. 期限を逃します。
@@ -192,7 +192,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 1. マージリクエストの著者が期限に間に合わせるために[時間外に作業する](/handbook/values/#measure-impact-not-activity)ことや急ぐことを望みません。
 1. [レビュアーとメンテナー](/handbook/engineering/workflow/code-review/)が[通常の SLO](/handbook/engineering/workflow/code-review/#review-response-slo)を満たす以外のことをするためにプレッシャーをかけられることを望みません。
 
-マージリクエストが特定のリリースに入ることが不可欠な場合は、エンジニアとすべてのレビュアーがそのコミットメントを果たせるよう、事前に十分に伝えることが必要です。深刻なバグを短い通知で修正する必要がある場合は、急ぐよりも、またはリリースを準備ができるまで遅延させるよりも、それを導入した変更を元に戻す方が良いです。
+マージリクエストが特定のリリースに入ることが不可欠な場合は、エンジニアとすべてのレビュアーがそのコミットメントを果たせるよう、事前に十分に伝えることが必要です。重大なバグに急きょ対処する必要がある場合は、修正を急いだり、修正が完了するまでリリースを遅らせたりするよりも、原因となった変更を元に戻す方が適切です。
 
 一般的に、Self-Managed リリース間近に行動を変える必要はありません。
 
@@ -228,15 +228,16 @@ GitLab の外でツールを構築することを検討する際は、[プロダ
 - [フロントエンドガイド](https://docs.gitlab.com/ee/development/fe_guide/index.html)
 - [データベースガイド](https://docs.gitlab.com/ee/development/#database-guides)
 
-コードを柔軟にする唯一の方法は、それをできる限りシンプルにすることであることを覚えておいてください:
+コードを柔軟にする唯一の方法は、できる限りシンプルにすることだと覚えておいてください。
 
-<blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">A lot of programmers make the mistake of thinking the way you make code flexible is by predicting as many future uses as possible, but this paradoxically leads to *less* flexible code.<br>
-The only way to achieve flexibility is to make things as simple and easy to change as you can.</p>&mdash; Nearby Cats (@BaseCase) <a href="https://twitter.com/BaseCase/status/1085686616499183616?ref_src=twsrc%5Etfw">January 16, 2019</a></blockquote>
-<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+[Nearby Cats (@BaseCase)](https://twitter.com/BaseCase/status/1085686616499183616) は 2019 年 1 月 16 日に次のように書いています:
+
+> 多くのプログラマーは、コードを柔軟にする方法とは、将来の用途をできる限り多く予測することだと考える間違いを犯します。しかし、これは逆説的に*柔軟性の低い*コードにつながります。
+> 柔軟性を実現する唯一の方法は、物事をできる限りシンプルで変更しやすくすることです。
 
 ### Rails と VueJS フロントエンド全体での UI の一貫性とメンテナビリティ
 
-私たちのエンジニアリング文化の一部は、ユーザーと顧客が GitLab.com または Self-Managed インスタンスに追加された重要な新しい価値を見られるよう出荷し続けることです。迅速な開発をサポートするために、実用的に適切なテクノロジーを選択します。各ビューはユニークであるため、HAML と Vue のコードベースを等しく尊重し、最大限の一貫性とメンテナビリティを実現するフレームワークをビューごとに教育的に選択すべきです。
+私たちのエンジニアリング文化の一部は、ユーザーと顧客が GitLab.com または Self-Managed インスタンスに追加された重要な新しい価値を見られるよう出荷し続けることです。迅速な開発をサポートするために、実用的に適切なテクノロジーを選択します。各ビューはユニークであるため、HAML と Vue のコードベースを等しく尊重し、最大限の一貫性とメンテナビリティを実現できるフレームワークを、ビューごとに十分な知識に基づいて選択すべきです。
 
 複雑なアプリケーションを構築する際には、完全に計画された機能などの多くの要因を考慮することが重要です。複雑さが増すにつれて後で Vue で書き直す必要が生じるだけのために HAML で MVC を構築するような状況を避けるためです。
 

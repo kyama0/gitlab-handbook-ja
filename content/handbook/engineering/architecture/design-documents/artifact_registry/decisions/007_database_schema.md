@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリのデータテーブル構成"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema/
-upstream_sha: a3ed2ed7423727a5f31c3f20f77f9547a3b7b152
-translated_at: "2026-08-08T09:00:12+09:00"
+upstream_sha: 1099e381063485f55ad7088a1ce8b80dd7077696
+translated_at: "2026-08-11T06:43:59+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-07T17:50:17+01:00"
+lastmod: "2026-08-10T13:30:07+01:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -156,7 +156,7 @@ erDiagram
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         text name "NOT NULL, limit 255"
         text description "nullable, limit 1024"
-        smallint format "NOT NULL, 0=container, 1=maven, 2=npm"
+        smallint format "NOT NULL, 0=docker, 1=maven, 2=npm, 3=oci"
         smallint kind "NOT NULL, 0=hosted, 1=virtual, 2=remote"
         smallint visibility "NOT NULL, 0=public, 1=private, 2=internal"
         bigint artifacts_count "NOT NULL, DEFAULT 0, buffered counter"
@@ -170,7 +170,7 @@ erDiagram
     }
 ```
 
-- **repositories**: すべてのリポジトリの親エンティティです。`format` はアーティファクトフォーマット（container、Maven、npm）を識別します。`kind` はリポジトリの種類（ホスト型、仮想型、リモート型）を識別します。リポジトリは [`repository_collection_repositories`](#repository-collection-repositories) 結合テーブルを介してリポジトリコレクションにリンクされ、リポジトリがそのネームスペース内の 1 つ以上のリポジトリコレクションに属することを可能にします。MVP の間、すべてのリポジトリはネームスペースのデフォルトのリポジトリコレクションにリンクされます。`name` はネームスペース内で一意でなければならず、これはすべての競合製品と一致しています。カウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）は、ホット行の競合を避けるために [バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`last_updated_at` は、ダウンロードではなくコンテンツの変更（アーティファクトの公開/変更/削除、キャッシュイベント）を追跡します。`gitlab_created_by_user_id` と `gitlab_last_updated_by_user_id` は、どの GitLab ユーザーがリポジトリを作成し最後に変更したかを記録します。どちらも NULL 許容の不透明な参照で、外部キーもアプリケーション側の検証もありません。なぜなら、ユーザーレコードはモノリスに存在するためです。ユーザーハンドルとアバターのレンダリングはコンシューマーの責任であり、AR スキーマは ID のみを保存します。これらは `namespaces.entity_id` と同じ理由で `TEXT` として保存されます。上流のユーザー ID 形式が将来変更されても（例: UUID への変更）、スキーママイグレーションは不要です。`description` は、UI が仮想リポジトリだけでなくすべてのリポジトリ型の説明を表示するため、親テーブルにあります。`soft_deleted_at` タイムスタンプは、リポジトリがソフト削除された時刻を記録し、必要に応じて復元を可能にします。ソフト削除を親テーブルに置くことで、すべてのリポジトリ型（ホスト型、仮想型、リモート型）がフォーマット固有の処理なしに同じ削除セマンティクスを共有します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **repositories**: すべてのリポジトリの親エンティティです。`format` はアーティファクトフォーマット（Docker、Maven、npm、OCI）を識別します。`kind` はリポジトリの種類（ホスト型、仮想型、リモート型）を識別します。リポジトリは [`repository_collection_repositories`](#repository-collection-repositories) 結合テーブルを介してリポジトリコレクションにリンクされ、リポジトリがそのネームスペース内の 1 つ以上のリポジトリコレクションに属することを可能にします。MVP の間、すべてのリポジトリはネームスペースのデフォルトのリポジトリコレクションにリンクされます。`name` はネームスペース内で一意でなければならず、これはすべての競合製品と一致しています。カウンターカラム（`artifacts_count`、`downloads_count`、`size_bytes`）は、ホット行の競合を避けるために [バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`last_updated_at` は、ダウンロードではなくコンテンツの変更（アーティファクトの公開/変更/削除、キャッシュイベント）を追跡します。`gitlab_created_by_user_id` と `gitlab_last_updated_by_user_id` は、どの GitLab ユーザーがリポジトリを作成し最後に変更したかを記録します。どちらも NULL 許容の不透明な参照で、外部キーもアプリケーション側の検証もありません。なぜなら、ユーザーレコードはモノリスに存在するためです。ユーザーハンドルとアバターのレンダリングはコンシューマーの責任であり、AR スキーマは ID のみを保存します。これらは `namespaces.entity_id` と同じ理由で `TEXT` として保存されます。上流のユーザー ID 形式が将来変更されても（例: UUID への変更）、スキーママイグレーションは不要です。`description` は、UI が仮想リポジトリだけでなくすべてのリポジトリ型の説明を表示するため、親テーブルにあります。`soft_deleted_at` タイムスタンプは、リポジトリがソフト削除された時刻を記録し、必要に応じて復元を可能にします。ソフト削除を親テーブルに置くことで、すべてのリポジトリ型（ホスト型、仮想型、リモート型）がフォーマット固有の処理なしに同じ削除セマンティクスを共有します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 
 リポジトリをハード削除すると、その構造上の子へカスケードします。関連する外部キーは、次の参照アクションを持ちます。
 
@@ -478,7 +478,7 @@ erDiagram
 ```
 
 - **container_repositories**: 複数のイメージのコンテナです。各リポジトリは独立したバージョニングを持つ複数のイメージをホストできます。名前、可視性、クロスフォーマットクエリのために `repository_id` を介して親の `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
-- **container_images**: リポジトリ内の名前付きコンテナイメージ（例: `myapp`、`backend`）を表します。`last_downloaded_at` はイメージが最後にプルされた時刻を記録し、[バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`keep_last_downloaded_at` ライフサイクルルールによって、ダウンロードベースの保持を評価するために使用されます（[ADR-010](010_data_retention.md)）。`soft_deleted_at` タイムスタンプは、イメージがソフト削除された時刻を記録し、必要に応じて復元を可能にします。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **container_images**: リポジトリ内の名前付きコンテナイメージ（例: `myapp`、`backend`）を表します。`last_downloaded_at` はイメージが最後にプルされた時刻を記録し、[バッファ書き込み/非同期書き込み](#buffered-and-asynchronous-writes) を介して維持されます。`keep_last_downloaded_at` ライフサイクルルールによって、ダウンロードベースの保持を評価するために使用されます（[ADR-010](010_data_retention.md)）。`soft_deleted_at` タイムスタンプは、イメージがソフト削除された時刻を記録し、必要に応じて復元を可能にします。イメージの削除は、リクエスト時間内のトランザクションで完了できない唯一のコンテナ削除でもあります。タグの削除では 1 行が削除され、マニフェストの削除は [ADR-004](004_data_and_application_limits.md#entity-count-limits) の 1,000 タグ上限によって制限されますが、1 つのイメージには最大 25,000 個のマニフェストを格納でき、各マニフェストは 200 個の参照を持つことができます。そのため、イメージを削除すると行をマークし、バックグラウンド処理に回収を委ねます。このため、このテーブルはイメージレベルの削除マーカー検出インデックスを持ち、マニフェストレベルの削除マーカーインデックスでは代用できません（以下のインデックス一覧を参照してください）。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **container_blobs**: コンテナイメージを構成する、個々のコンテンツアドレス可能なレイヤーと設定オブジェクトを保存します。マニフェストとその構成要素であるレイヤー（blob）の関係は暗黙的であり（実行時にマニフェストの内容を解析することで決定される）、データベースの外部キーとしてはモデル化されません。`soft_deleted_at` タイムスタンプは、blob がソフト削除された時刻を記録し、必要に応じて復元を可能にします。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **container_manifests**: 特定のイメージバージョンの設定とレイヤーを記述するイメージマニフェストを表します。`size` カラムは、ここをルートとするマニフェストツリーの合計バイトサイズを保持します。すなわち、このマニフェスト自体のペイロードに加えて、そこから到達可能なすべての blob（マニフェストリストや OCI インデックスの場合は子マニフェストを通じて推移的に到達するものを含む）です。`gitlab_user_id` はどの GitLab ユーザーがこのマニフェストをプッシュしたかを記録します。NULL 許容の不透明なテキスト参照で外部キーはなく、[repositories](#repositories) の同等のカラムと同じ根拠によります。ユーザーレコードはモノリスに存在し、ユーザーハンドルとアバターのレンダリングはコンシューマーの責任であり、AR スキーマは ID のみを保存し、`TEXT` はスキーマを上流のユーザー ID 形式の将来の変更から隔離します。`gitlab_project_id` と `gitlab_git_commit_sha` は、その帰属に公開コンテキストの残りを加えて拡張します。`gitlab_project_id` はプッシュ元の GitLab プロジェクト（例: `CI_PROJECT_ID`）であり、`gitlab_user_id` と同じモノリス参照の理由から NULL 許容の不透明テキストとして保存されます。`gitlab_git_commit_sha` は公開時の Git コミット（例: `CI_COMMIT_SHA`）で、ハッシュカラムのスキーマ規約に従って NULL 許容の `bytea` として保存されます。可変長で、SHA-1（20 バイト）と SHA-256（32 バイト）の両方に収まります。これはモノリス参照ではなく公開時の事実なので、外部キーは不要です。両方とも、CI コンテキストなしでプッシュが到着した場合（例: 開発者のワークステーションからの手動プッシュ）には NULL になります。`soft_deleted_at` タイムスタンプは、マニフェストがソフト削除された時刻を記録し、必要に応じて復元を可能にします。`created_at` はマニフェストが最初にプッシュされた時刻を記録します。ネームスペースごとの時刻順インデックスと組み合わせることで、公開履歴と時間範囲のアーティファクト出所クエリ（例: 「午前 2 時から午前 8 時の間にこのネームスペースにプッシュされたものは何か?」）を支えます。公開イベント自体は削除によって消去されないため、ソフト削除された行も公開履歴に引き続き表示されます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **container_manifest_relationships**: Docker マニフェストリストと OCI インデックス（マルチアーキテクチャイメージなど）を扱います。ここでは親マニフェストが複数の他のマニフェストを参照できます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
@@ -490,7 +490,7 @@ erDiagram
 #### インデックス {#container-repositories-indexes}
 
 - **`container_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親リポジトリ参照によってコンテナリポジトリを検索します。
-- **`container_images`**: `(namespace_id, container_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — イメージ名はリポジトリ内で一意なイメージを識別します。重複すると OCI の名前ベースの検索が壊れます。部分条件により、ソフト削除後に同じ名前のイメージを再作成できます。`(namespace_id, container_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。リポジトリ内のすべてのイメージをスキャンして行ごとにフィルターするのではなく、境界のある範囲スキャンによって期限切れになったイメージのみを返します。`NULLS FIRST` は、一度もダウンロードされていないイメージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。
+- **`container_images`**: `(namespace_id, container_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — イメージ名はリポジトリ内で一意なイメージを識別します。重複すると OCI の名前ベースの検索が壊れます。部分条件により、ソフト削除後に同じ名前のイメージを再作成できます。`(namespace_id, container_repository_id, last_downloaded_at NULLS FIRST) WHERE soft_deleted_at IS NULL` に対するインデックス — `keep_last_downloaded_at` ライフサイクルルールの評価をサポートします。リポジトリ内のすべてのイメージをスキャンして行ごとにフィルターするのではなく、境界のある範囲スキャンによって期限切れになったイメージのみを返します。`NULLS FIRST` は、一度もダウンロードされていないイメージを最も古い行とグループ化し、両方が同じ範囲スキャンで返されるようにします。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたイメージを削除時刻の順に一覧表示し、イメージ粒度のゴミ箱一覧とリーパーによるイメージレベルのスキャンを支えます。この形の `container_manifests` インデックスは、どちらにも使用できません。このインデックスはマニフェストをキーとし、ソフト削除されたイメージのマニフェストには独自の `soft_deleted_at` がないため、マニフェストのスキャンでもリポジトリの走査でも、リポジトリがまだ有効な削除マーカー付きのイメージには到達できません。
 - **`container_blobs`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — blob のダイジェストはコンテンツアドレス指定です。同じイメージ内の同じダイジェストは定義上同じ blob です。部分条件により、ソフト削除後に同じダイジェストを再プッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによって blob を検索します。`(namespace_id, digest)` に対するインデックス — コンテンツダイジェストによるイメージ横断の検索で、blob のマウントに使用します。コンテナ blob はコンテンツアドレス指定であるため、その `digest` は保存された `blob_sha256` と等しくなります。このため、このインデックスは別個の `(namespace_id, blob_sha256)` インデックスなしに、クロスフォーマットのチェックサム検索と脆弱性影響クエリ「この侵害されたダイジェストが与えられたとき、どのイメージがそれを参照しているか?」にも使用されます。このドキュメントの逆引きインデックスは無条件（`soft_deleted_at` 述語なし）なので、かつて参照されたダイジェストは監査証跡に引き続き表示されます。現在影響を受けているアーティファクトのみを必要とする脆弱性影響は、クエリ時に `soft_deleted_at IS NULL` を追加します。これは小さな中間集合に対する安価な後置フィルターです。Maven と npm のファイルはコンテンツアドレス指定ではなく、同等のダイジェストカラムもないため、これらのテーブルには専用の `(namespace_id, blob_sha256)` 逆引きインデックスがあり、コンテナテーブルにはありません。この等価性は sha256 が唯一のダイジェストアルゴリズムである間に成り立ちます。`digest` と `blob_sha256` はどちらも `octet_length = 32` CHECK の下で 32 バイトの値であり、コンテンツは書き込み時にダイジェストに対して検証されるため、`(namespace_id, digest)` インデックスは `blob_sha256` インデックスとまったく同じ行を返します。将来、sha256 以外のダイジェストアルゴリズムが導入される場合は、2 つのカラムを分離し、再検討します。
 - **`container_manifests`**: `(namespace_id, container_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — マニフェストのダイジェストはコンテンツアドレス指定です。同じイメージ内の同じダイジェストは定義上同じマニフェストです。部分条件により、ソフト削除後に同じダイジェストを再プッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってマニフェストを検索します。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたマニフェストを削除時刻順に一覧し、コンテナイメージのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、公開履歴のページネーションと時間範囲のアーティファクト出所クエリを支えます。無条件（`soft_deleted_at` 述語なし）なので、後でソフト削除された公開イベントも監査証跡に引き続き表示されます。`container_blobs` とは異なり、`container_manifests` にはスタンドアロンの `(namespace_id, digest)` インデックスがありません。ダイジェストはイメージ内でのみ、ユニークな `(namespace_id, container_image_id, digest)` によってインデックス化されます。そのため、マニフェストペイロードのイメージ横断チェックサム検索（マニフェストの `digest` は保存された `blob_sha256` と等しい）は、ネームスペースで絞り込まれたパーティションをスキャンします。これは許容されています。これを発行する MVP エンドポイントはなく、脆弱性影響の検索は `container_blobs` の `(namespace_id, digest)` インデックスによって提供されるレイヤー/設定ダイジェスト検索であるためです。
 - **`container_manifest_relationships`**: `(namespace_id, parent_container_manifest_id, child_container_manifest_id)` に対するユニークインデックス — 親子関係の重複を防ぎ、特定の親マニフェストのすべての子を見つけます。`(namespace_id, child_container_manifest_id)` に対するインデックス — 特定の子マニフェストのすべての親を見つけます。`(namespace_id, container_image_id)` に対するインデックス — 特定のイメージのすべてのマニフェスト関係を見つけます。
@@ -1943,7 +1943,7 @@ Cells レベルのシャーディング（`namespace_id`）と標準的なイン
 
 **オプション A（専用の `partitions` スキーマ）が選択されました**。
 
-決定的な要因は、アプリケーション向けのテーブルとパーティショニングの内部の区別です。論理テーブルは、アプリケーションが読み書きする表面積です。パーティション子はパーティショニングメカニズムの内部であり、パーティションライフサイクルツールによってのみ触れられるべきです。両方を単一のスキーマに保つことはその境界をぼかします。スキーマのイントロスペクション、権限、運用ツールはすべて、それらを区別するために名前でフィルターしなければなりません。専用の `partitions` スキーマは、その区別をデータベース自体の中で構造的にします。パーティションライフサイクル操作は 1 つのネームスペースにスコープされ、`public` を読むものはアプリケーションが触れるべき表面積のみを見ます。
+決定的な要因は、アプリケーション向けのテーブルとパーティショニングの内部の区別です。論理テーブルは、アプリケーションが読み書きする公開インターフェースです。パーティション子はパーティショニングメカニズムの内部であり、パーティションライフサイクルツールによってのみ触れられるべきです。両方を単一のスキーマに保つことはその境界をぼかします。スキーマのイントロスペクション、権限、運用ツールはすべて、それらを区別するために名前でフィルターしなければなりません。専用の `partitions` スキーマは、その区別をデータベース自体の中で構造的にします。パーティションライフサイクル操作は 1 つのネームスペースにスコープされ、`public` を読むものにはアプリケーションに公開される操作対象だけが見えます。
 
 可読性の議論がこの選択を補強します。パーティション子は最初のデプロイから論理テーブルを大きく上回り、より多くのテーブルがパーティショニングされるにつれてギャップが広がるため、単一スキーマのレイアウトは最初のデプロイから不格好で、時間とともに悪化します。ブートストラップコスト（マイグレーションツールのパーティションルーティングヘルパー、起動時のスキーマ作成）は一度限りであり、同じマイグレーション抽象化を採用するすべてのサテライトサービスにわたって償却されます（[ADR-006](006_technology_stack.md)）。
 
