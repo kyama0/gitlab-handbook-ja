@@ -2,9 +2,9 @@
 title: セールス開発
 description: "このページの目的は、セールス開発組織のハンドブック上のホームページとして機能することです。"
 upstream_path: "/handbook/marketing/sales-development/"
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-lastmod: 2026-06-26T17:53:41+01:00
-translated_at: "2026-07-02T06:06:16+09:00"
+upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
+lastmod: "2026-08-11T11:05:40+01:00"
+translated_at: "2026-08-12T06:25:09+09:00"
 translator: claude
 stale: false
 ---
@@ -56,9 +56,10 @@ GitLab のセールス開発組織へようこそ！私たちは、インバウ�
 | **BDR HYBRID AMER (Manager — Chris Stauder)** | [`#bdr_amer_hybrid`](https://gitlab.enterprise.slack.com/archives/C014PHFNE2U) |
 | **BDR FO AMER (Manager — Christie Park)** | [`#bdr_amer_fo`](https://gitlab.enterprise.slack.com/archives/C04R8DN5H8R) |
 | **BDR FINS & LATAM AMER (Manager — Ashley Dunn)** | [`#bdr_amer_fo`](https://gitlab.enterprise.slack.com/archives/C04QL1YSXGW) |
-| **BDR ENTG EMEA DACH EGC — (Manager — Christopher Allenfort)** | [`#bdr_entg_emea_dach_egc`](https://gitlab.slack.com/archives/C04NP4VC449) |
-| **BDR ENTG EMEA NORTH — (Manager — Eamon Keane)** | [`#bdr_emea_north`](https://gitlab.enterprise.slack.com/archives/C06TYUE1RU5) |
-| **BDR ENTG EMEA SEUR — (Manager — Tati Fernandez)** | [`#bdr_emea_high_growth_markets`](https://gitlab.slack.com/archives/C04NE65S6AE) |
+| **BDR EMEA — (Regional Director — Elsje Smart)** | [`#emea_bdr`](https://gitlab.enterprise.slack.com/archives/C0921HUKT0A) |
+| **BDR ENTG EMEA CEUR — (Interim Manager — Elsje Smart)** | [`#bdr_entg_emea_dach_egc`](https://gitlab.slack.com/archives/C04NP4VC449) |
+| **BDR ENTG EMEA NEUR, FR and BeLux — (Manager — Eamon Keane)** | [`#bdr_emea_north`](https://gitlab.enterprise.slack.com/archives/C06TYUE1RU5) |
+| **BDR ENTG EMEA SEMA — (Manager — Tati Fernandez)** | [`#bdr_emea_high_growth_markets`](https://gitlab.slack.com/archives/C04NE65S6AE) |
 | **BDR EMEA FO — (Manager — Maroussia Stolarczuk)** | [`#bdr_emea_fo`](https://gitlab.enterprise.slack.com/archives/C0A9HPNSPFF) |
 | **BDR APJ — (Regional Director — Robin Falkowski / Manager — Aletha Alfarania)** | [`#apj_sales_dev`](https://gitlab.enterprise.slack.com/archives/C031EGFR5UK) |
 
@@ -68,7 +69,7 @@ GitLab のセールス開発組織へようこそ！私たちは、インバウ�
 | ------- | ------------ |
 | [Marketing Operations Team](https://gitlab.enterprise.slack.com/archives/CGL35F20G) | MOPs 所有ツールに関するバグや問題: Cognism、ZoomInfo、UserGems、Outreach、6Sense |
 | [CorpSec Team](https://gitlab.enterprise.slack.com/archives/CK4EQH50E) | GitLab、Okta、ラップトップ、オフボーディング/オンボーディングに関するヘルプ。[HelpLab チケットはこちら](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=e3812e68ebe5a210725cf4f2bad0cd53) |
-| [Sales Dev Operations Team](https://gitlab.enterprise.slack.com/archives/C2V1KLY0Z) | 日常的なすべて — イテレーションと改善のアイデア。`@Mona` または `@Panos` にタグ付けしてください |
+| [Sales Dev Operations Team](https://gitlab.enterprise.slack.com/archives/C2V1KLY0Z) | 日常的なすべて — イテレーションと改善のアイデア。`@Mona` または `@Sam` にタグ付けしてください |
 | [UserGems Feedback](https://gitlab.enterprise.slack.com/archives/C07Q6GHJ2AV) | UserGems の改善 |
 | [6Sense Help](https://gitlab.enterprise.slack.com/archives/C04L7EV24PK) | 6Sense に関する質問 |
 | Salesforce (SFDC) | Opportunity、Lead、Contact に関するすべての要望には、関連する SFDC レコード内の**Request Support** ボタンを直接使用してください。 |
@@ -177,7 +178,7 @@ GitLab のセールス開発組織へようこそ！私たちは、インバウ�
 | 四半期あたりの 6QA'd アカウント | BDR あたり 25 件 |
 | 調査品質 | `BDR Prospecting Status = Actively Working` のアカウントの 80% 以上がインテントデータまたは購入の高い性向を示している必要があります |
 | アカウントあたりの見込み客 | AWA アカウントあたり 5〜10 件、ICP ペルソナにマッチ |
-| 6QA アカウントレビュー SLA | すべての自動 6QA'd アカウントは 48 時間以内に `6QA Acceptance Status = Accepted または Disputed` でなければなりません |
+| 6QA アカウントレビュー SLA | すべての自動 6QA'd アカウントは 48 時間以内に `6QA Acceptance Status = Accepted or Disputed` でなければなりません |
 
 > **注:** Ultimate Parent Account または重複 Account を Actively Working に設定する必要はありません。Traction と SDR は、親アカウントと同じ名前を共有していれば、子会社が AW として設定されていることを確認できます。
 
@@ -215,7 +216,7 @@ Lead views は、効率的にパイプラインを優先順位付けして管理
 | ビュー | 説明 |
 | ---- | ----------- |
 | FY26 B1 — My Leads, Action Needed | `MQL` リードステータスのリード、または `High Priority` としてマークされたリード。**High Priority Reason** フィールドでより多くのコンテキストを確認してください。 |
-| FY26 B2 — AWA leads w/ LIM | あなたのアカウントのうち `Actively Working` BDR Prospecting Status にマッチする、あなたの名前のリード。**Last Interesting Moment Date** で並べ替え、**Lead Classification Score** とクロスリファレンスします。過去 14 日以内にシーケンスに追加されたリードは除外。 |
+| FY26 B2 — AWA leads w/ LIM | あなたのアカウントのうち `Actively Working` BDR Prospecting Status にマッチする、あなたの名前のリード。**Last Interesting Moment Date** で並べ替え、**Lead Classification Score** とクロスリファレンスして、どれを最初にシーケンスするか決定します。過去 14 日以内にシーケンスに追加されたリードは除外。 |
 | FY26 B3 — Change Owner AWA's (Clone) | あなたがアカウントを `Actively Working` BDR Prospecting Status に移動したときに `Accepted`、`MQL`、`Qualifying` ステータスだったため、まだあなたの名前に移動されていないリード。 |
 | FY26 B4 — My HT Leads W/ Phone | `phone` データポイントを持つ High Touch シーケンスのリード。コールブリッツや、Outreach の通話タスクが日次 KPI を下回る場合に使用。 |
 | FY26 B5 — My Qualifying Leads | `Qualifying` ステータスでアクティブな双方向の会話にあるリード。各リードはアクティブシーケンス、アクティブタスク、または未来のミーティングがスケジュールされている必要があります（未来の Last Activity Date で表示）。 |
@@ -334,7 +335,7 @@ Lead レコードを開き、ページの上部にある `Find Duplicates` を�
 | BDR が Actively Working でないアカウントからの MQL を受け取る | `@mktops` |
 | リードのルーティングが間違っているように見える | `@mktops` — まず `Admin Company Override` フィールドで正しい住所情報を更新し、リードレコードで **"Re-route Traction"** をクリック。特定のチームにルーティングする場合: PubSec リード → PubSec マネージャー。Startup の問い合わせ → Alex Karsten。その他のセグメント → テリトリーレポートに基づいてルーティング。 |
 | 重複アカウント | Sales Support — マージを依頼。正式にエスカレートするには、SFDC で**ケースを作成**し、重複アカウントへのリンクを含めて Sales Support に割り当てます。 |
-| Opp が誤ったデータで Stage 1 に移動 | あなたのマネージャー → 彼らが Sales Dev Operations（Ramona、Panos、Ed）に連絡します。Sales Dev では他の誰も Stage 1+ の案件を編集できません。 |
+| Opp が誤ったデータで Stage 1 に移動 | あなたのマネージャー → 彼らが Sales Dev Operations（Ramona または Sam）に連絡します。Sales Dev では他の誰も Stage 1+ の案件を編集できません。 |
 | テリトリー割り当てが不明確 | 候補となる各テリトリーの AE。 |
 | opp の SAO クレジット要求 | Sales Dev Ops または Director of Commercial Sales Development。 |
 | Restricted Status のアカウント（非 Major テリトリー） | SAE — 連絡許可を求める。AE は 48 時間以内に応答。 |
@@ -776,7 +777,7 @@ SFDC 案件を作成するための完全なウォークスルーは[こちら](
 
 AE/SAL は、Next Steps Date フィールドに反映されたミーティング日から 48 時間以内に IQM の後に Opportunity を Stage 1 Discovery に移動します。Opportunity の Close Date はデフォルトで四半期の最終日になります — ベストプラクティスは作成日から少なくとも 90 日先に設定することです。
 
-Opportunity が Stage 1 に移動した後に誤ったデータがある場合 → マネージャーをチャタリング → 彼らが Sales Dev Operations の誰か（Ramona、Panos、Ed）をチャタリング。Sales Dev では他の誰も Stage 1 以降の Opportunity を編集できません。
+Opportunity が Stage 1 に移動した後に誤ったデータがある場合 → マネージャーをチャタリング → 彼らが Sales Dev Operations の誰か（Ramona または Sam）をチャタリング。Sales Dev では他の誰も Stage 1 以降の Opportunity を編集できません。
 
 Opportunity が既存の中央 Opportunity を持つ Large アカウント内の新しいユーザーグループに対するものである場合 → あなたの Opportunity はそれにマージされるべきです。[Stage 8 ガイダンス](/handbook/sales/field-operations/gtm-resources/#opportunity-stages)を参照してください。
 
@@ -1005,7 +1006,7 @@ UserGems は、私たちが関心を持つアカウントでの転職や新規�
 
 **ユースケース 3 — オープン案件のコンタクト**
 
-オープンな opportunity のあるアカウントに誰かが参加または離脱した場合、Stage 3+ opp の場合は通知が Sales チームのみに、Stage 0〜2 opp の場合は Sales および Sales Dev チームに送信されます。
+オープンな opportunity のあるアカウントに誰かが参加または離脱した場合、Stage 3+ opp → Sales チームのみ、Stage 0–2 opp → Sales と Sales Dev の両チームに通知されます。
 
 これらのリードをレビューするには[このレポート](https://gitlab.my.salesforce.com/00OPL000007z6XV)を使用してください。特定のシーケンスは存在しません — シナリオに基づいてテンプレートメッセージを Outreach で検索します。
 
@@ -1030,16 +1031,16 @@ UserGems は、私たちが関心を持つアカウントでの転職や新規�
 **コールドコール**は 4 つの中核要素に従います: パターン中断、エレベーターピッチ、必要に応じて反論/トラップ設定質問、Up-Front Contract (UFC)。これらは、地理的なビジネス文化、DISC パーソナリティタイプ、個人の役割、会社の目的に基づいてカスタマイズする必要があります。
 
 - [BDR 101 Level Up Course — コールドコールスクリプト](https://university.gitlab.com/learn/course/bdr101-outbound-cold-calling/)
-- [メインコールドコールドキュメント](https://docs.google.com/document/d/1D3iV_WW5fRidRN5H8-3SZVAAr3ffEvjxUC6cW5SFXDM/edit)
+- [メインのコールドコール用ドキュメント](https://docs.google.com/document/d/1D3iV_WW5fRidRN5H8-3SZVAAr3ffEvjxUC6cW5SFXDM/edit)
 - [リソースライブラリ](https://drive.google.com/drive/folders/1VhxVwy4DoEvFco_wXeOLb0DLtVIfo7wQ)
 - [Up-Front Contract ドキュメント](https://docs.google.com/document/d/1Y7qEq8g3eHh5-oagERGvNmatiOV3JXi9Tw46SKWwpNM/edit)
 
 **意思決定者の発見質問:**
 
-- "Who gets involved while evaluating a tool at [company]?"
-- "Would you expect anyone to challenge your initiative — can I help by connecting with anyone else on your end?"
-- "If you as a [title] wanted to purchase GitLab, what process would you need to follow internally, and how can we help you navigate it?"
-- "What challenges do you expect to face when pitching this change internally? Who has a say, and what do they care about most?"
+- "[company] でツールを評価する際、誰が関与しますか？"
+- "あなたの取り組みに異議を唱えそうな人はいますか？ ほかの関係者につなぐお手伝いはできますか？"
+- "[title] の立場で GitLab を購入する場合、社内でどのようなプロセスを踏む必要がありますか？ また、その進行をどう支援できますか？"
+- "この変更を社内で提案するとき、どのような課題が予想されますか？ 誰に発言権があり、その人たちは何を最も重視しますか？"
 
 **メール作成**は Command of the Message フレームワークに従います。完全な構造については[完全なチートシート](https://docs.google.com/document/d/1-DF6bEtS9QF9idqBcK77RiLL04CKiFMuc0LDEM5N6RA/edit)を、ソース別（LinkedIn、会社のウェブサイト、Google など）に使用するデータポイントの個別化マトリックスについては同じドキュメントを参照してください。
 
@@ -1300,12 +1301,12 @@ Sales Development の見込み客対応の役割では、見込み客との通�
 **A:** SDR は、ウェブ直接購入の前に 60 日以内に見込み客と意味のある双方向のコミュニケーションを持っていた opportunity でクレジットを取得します。[このレポート](https://gitlab.my.salesforce.com/00O4M000004dkX4) を使用 — 日付範囲を設定して、見込み客のアカウントに紐づいた opportunity を見つけます。次に、以下のウェブ直接 SAO クレジットリクエストプロセスに従います。
 
 **Q:** ウェブ直接 opportunity のクレジットをどうやってリクエストしますか？
-**A:** opportunity レコードでチャタリング: (1) Ramona Elliott、Ed Bao、または Brian Tabbert にタグ付け — Sales Support に直接タグ付けしないでください。(2) 過去 60 日以内の双方向のアクティビティを示す SFDC レコードへのリンク。コールノートは、後ではなくコール時に Qualification Notes フィールドに入力されている必要があります。(3) 購入決定に影響を与えた方法を説明します。
+**A:** opportunity レコードでチャタリング: (1) Ramona Elliott、Sam Bradley、または Brian Tabbert にタグ付け — Sales Support に直接タグ付けしないでください。(2) 過去 60 日以内の双方向のアクティビティを示す SFDC レコードへのリンク。コールノートは、後ではなくコール時に Qualification Notes フィールドに入力されている必要があります。(3) 購入決定に影響を与えた方法を説明します。
 
 ### RoE のよくある質問
 
 **Q:** BDR は重複アカウントをフラグすべきですか？
-**A:** はい。BDR は自分でアカウントをマージできません — `@Sales Support` をチャタリングしてマージを依頼してください。
+**A:** はい。BDR は自分でアカウントをマージできません — 関連する SFDC レコード内の Request Support ボタンを直接使用し、関連するすべてのアカウントリンクを提供してください。
 
 **Q:** SAO クレジットの紛争をどう解決しますか？
 **A:** SDR と BDR が最初に話し合います。合意しない場合: マネージャーが決定します。マネージャーが同意しない場合: シニアリーダーシップにエスカレートします。ダブルクレジットとダブル報酬は与えられません。
@@ -1354,12 +1355,12 @@ Sales Development の見込み客対応の役割では、見込み客との通�
 
 ### Sales Dev Operations チームの地域別対応
 
-私たちの[共有現実](/teamops/shared-reality/) を維持するために、以下の DRI を `#sales_dev_global` でタグ付けしてください。彼らの空き状況に基づいて誰にでも自由に連絡してください — EMEA で営業時間外で誰かが急ぎで必要な場合、AMER の Ed が支援できます。
+私たちの[共有現実](/teamops/shared-reality/) を維持するために、以下の DRI を `#sales_dev_global` でタグ付けしてください。彼らの空き状況に基づいて誰にでも自由に連絡してください — EMEA で営業時間外で誰かが急ぎで必要な場合、AMER の Sam が支援できます。
 
 | 地域 / タイムゾーン | Ops DRI | 補完的 DRI |
 | ----------------- | ------- | ----------------- |
-| AMER | TBH | — |
-| EMEA / APJ | Panos Rodopoulos | N/A |
+| AMER | Sam Bradley | — |
+| EMEA / APJ | TBH | N/A |
 
 ### Sales Dev Operations 定期的なチーム訪問
 

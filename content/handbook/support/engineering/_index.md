@@ -2,11 +2,11 @@
 title: サポートエンジニア リソース
 description: サポートエンジニアが何をしているか、どうやって行っているかについてもっと知りたい方は、ここを参照してください。
 upstream_path: /handbook/support/engineering/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T07:06:20+09:00"
+upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
+translated_at: "2026-08-12T06:21:26+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-29T12:39:09-04:00"
+lastmod: "2026-08-11T11:43:02+10:00"
 ---
 
 ### サポートエンジニアの一日
@@ -84,4 +84,3 @@ MR の数とそれらの総ウェイトは、[1:1 ジェネレーターレポー
 - Zendesk Download Router - Zendesk のダウンロードをチケット番号別の個別フォルダに自動的にルーティング ([Chrome](https://chrome.google.com/webstore/detail/zendesk-download-router/pgfhacdbkdeppdjgighdeejjfneifkml))
 - GitLab Web Debugger - GitLab.com および内部 GitLab インスタンスでのページ読み込みエラーの根本原因を特定するのに役立つ ([Chrome](https://gitlab.com/gitlab-com/gl-infra/gitlab-web-debugger))
 - [Zendesk Quicktab](https://support.zendesk.com/hc/en-us/articles/6443360776346-Installing-the-Quicktab-Google-Chrome-extension) - Zendesk チケットを単一のブラウザタブで開く ([Chrome](https://chrome.google.com/webstore/detail/quicktab-for-zendesk-by-t/hhbimbckgheipimadcknkfogegmpoibj))
-- Calendly Meeting Scheduling Software - アドホックなミーティング、ワンクリック予約 ([Chrome](https://chrome.google.com/webstore/detail/calendly-meeting-scheduli/cbhilkcodigmigfbnphipnnmamjfkipp))

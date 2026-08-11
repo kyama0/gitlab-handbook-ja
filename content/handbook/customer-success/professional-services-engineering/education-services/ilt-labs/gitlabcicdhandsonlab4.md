@@ -2,11 +2,11 @@
 title: "GitLab CI/CD - ハンズオンラボ: CI/CD コンポーネントの操作"
 description: "このハンズオンガイドでは、パイプラインに CI/CD コンポーネントを追加する方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T20:55:48+09:00"
+upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
+translated_at: "2026-08-12T06:06:45+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-02T13:56:51+01:00"
+lastmod: "2026-08-11T13:03:24+01:00"
 ---
 
 > 完了までの推定時間: 15 分
@@ -93,13 +93,13 @@ GitLab プロジェクトで使用するコンポーネントを作成しまし�
       ```yaml
       stages:
         - release
-        
+
       release component:
         stage: release
         image: registry.gitlab.com/gitlab-org/release-cli:latest
         script:
           - echo "Releasing the latest version of our component."
-        release: 
+        release:
           tag_name: '1.0.$CI_PIPELINE_IID'
           description: 'The latest component release.'
         rules:
@@ -131,7 +131,7 @@ GitLab プロジェクトで使用するコンポーネントを作成しまし�
 
       ```
 
-1. ページの左上の Tanuki ロゴをクリックして CI/CD プロジェクトに移動し、**Projects** をクリックします。CI/CD プロジェクト（コンポーネントプロジェクトではない方）をクリックします。
+1. ページ左上の Tanuki ロゴをクリックし、次に **Projects** をクリックします。Tanuki App プロジェクト（コンポーネントプロジェクトではない方）をクリックします。
 
 1. **Build > Pipeline Editor** を選択します。
 
@@ -143,7 +143,7 @@ GitLab プロジェクトで使用するコンポーネントを作成しまし�
       workflow:
         rules:
           - if: $CI_COMMIT_TAG
-            when: never 
+            when: never
           - when: always
 
       default:
@@ -159,12 +159,12 @@ GitLab プロジェクトで使用するコンポーネントを作成しまし�
 
 1. 次のコードを `.gitlab-ci.yml` ファイルに追加して、代わりに build ステージで実行するようにステージを上書きしてみましょう:
 
-    ```yaml
-      include:
-        - component: $CI_SERVER_FQDN/training-users/session-0a9ee9b9/iu6t0rjr/example-component/sample-template@v0.36.0
-          inputs:
-            stage: build
-    ```
+      ```yaml
+        include:
+          - component: $CI_SERVER_FQDN/training-users/session-0a9ee9b9/iu6t0rjr/example-component/sample-template@v0.36.0
+            inputs:
+              stage: build
+      ```
 
 1. **Commit changes** を選択して、*component-job* が build ステージで実行されるのを確認します。
 
@@ -178,4 +178,4 @@ CI/CD コンポーネントを実装したことで、Tanuki Enterprises はパ�
 
 ## ご提案について
 
-ラボに変更を加えたい場合は、マージリクエスト経由で変更を送信してください。
+ラボに変更を加えたい場合は、マージリクエストを通じて変更を送信してください。

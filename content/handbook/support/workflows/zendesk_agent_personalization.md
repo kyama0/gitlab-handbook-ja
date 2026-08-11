@@ -5,11 +5,11 @@ category: Zendesk
 subcategory:
 last-reviewed: 2024-05-23
 upstream_path: /handbook/support/workflows/zendesk_agent_personalization/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T06:52:01+09:00"
+upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
+translated_at: "2026-08-12T06:21:26+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-29T12:39:09-04:00"
+lastmod: "2026-08-11T11:43:02+10:00"
 ---
 
 ## Zendesk エージェントのパーソナライズ
@@ -31,7 +31,7 @@ support-team.yaml で編集可能な Zendesk のフィールドの詳細につ�
 顧客に表示される名前には他にも考慮すべき方法があることに注意してください。たとえば次のものです:
 
 * Zoom の[表示名](/handbook/support/#zoom-name-format)
-* Calendly の[Personal Link](https://calendly.com/app/personal/link) URL
+* Reclaim の[Personal Link](https://app.reclaim.ai/) URL（パーソナライズされたユーザー名を含む）
 * GitLab の[ユーザー名](/handbook/tools-and-tips/#change-your-username-at-gitlabcom)
 
 ### Zendesk 署名に表示される GitLab ハンドル
