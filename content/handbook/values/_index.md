@@ -7,9 +7,9 @@ images:
 no_list: true
 weight: -20
 upstream_path: /handbook/values/
-upstream_sha: e829b207a53856c23a25197426cca945626ade8a
-lastmod: "2026-07-02T10:23:01-04:00"
-translated_at: "2026-07-05T00:04:57+09:00"
+upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
+lastmod: "2026-08-11T21:18:43+02:00"
+translated_at: "2026-08-12T06:25:09+09:00"
 translator: claude
 stale: false
 ---
@@ -239,7 +239,7 @@ GitLab のすべてのチームメンバーは、顧客のニーズ、課題、�
 
 ##### エンドユーザーを視野に入れ続ける {#keep-end-users-in-sight}
 
-私たちの焦点は顧客の成果を高めることです。GitLab で顧客の成果を牽引する 1 つの方法は、直接のユーザーに最も価値をもたらすプラットフォームの強化です。これには、[Concur 効果](https://x.com/ryanfalor/status/1182647229414166528?s=12) を意識することが必要です。
+私たちの焦点は顧客の成果を高めることです。GitLab で顧客の成果を牽引する 1 つの方法は、直接のユーザーに最も価値をもたらすプラットフォームの強化です。これには、[Concur 効果](https://web.archive.org/web/20191010/https://twitter.com/ryanfalor/status/1182647229414166528) を意識することが必要です。
 
 プリンストン大学教授の [Arvind Narayanan](https://www.cs.princeton.edu/~arvindn/) は、バズったツイートで Blackboard への不満を次のように述べました。
 

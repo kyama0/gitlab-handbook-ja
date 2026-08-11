@@ -3,9 +3,9 @@ title: Support Leader on the Hook (SLOTH 🦥) の役割
 category: On-call
 description: "Support Engineering における Support Leader on the Hook (SLOTH 🦥) ローテーションの役割と責任を説明します"
 upstream_path: /handbook/support/workflows/support-leader-on-the-hook/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-lastmod: "2026-05-22T11:27:49+08:00"
-translated_at: "2026-05-22T12:00:00Z"
+upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
+lastmod: "2026-08-11T11:43:02+10:00"
+translated_at: "2026-08-12T06:21:26+09:00"
 translator: claude
 stale: false
 ---
@@ -22,8 +22,8 @@ SLOTH ロールは、通常の営業日には在席ベースで、週末・祝�
 
 SLOTH は一般的に以下に責任を持ちます。
 
-1. お客様の緊急事態が [SLA に従って](https://about.gitlab.com/support/)[迅速かつ正確に対応される](#handling-customer-emergencies-and-incidents)ことの確保
-1. [Global Support Hours](https://about.gitlab.com/support/#hours-of-operation) における [Support Ticket Attention Requests の処理](/handbook/support/internal-support/support-ticket-attention-requests)
+1. お客様の緊急事態が[迅速かつ正確に対応され](#handling-customer-emergencies-and-incidents)、[SLA に準拠している](https://about.gitlab.com/support/)ことの確保
+1. [Support Ticket Attention Requests の処理](/handbook/support/internal-support/support-ticket-attention-requests)を [Global Support Hours](https://about.gitlab.com/support/#hours-of-operation)中に行う
 1. [セキュリティインシデントの通知ポイント](#act-as-a-notification-point-for-security-incidents) として行動すること
 1. [Account Escalation の Support Manager DRI の特定](#finding-a-support-manager-dri-for-an-account-escalation)
 1. SLA 違反の回避支援。詳細は [Working on Tickets](/handbook/support/workflows/working-on-tickets) を参照してください。
@@ -138,7 +138,7 @@ STAR が解決されたら：
 
 1. フィードバックとチケット情報をレビューし、どの程度緊急の返信が必要かを検討する。可能な限り早く返信することで、お客様のさらなる不満や STAR または緊急事態への発展を防げる可能性があります。
 1. 緊急性を念頭に置き、対応を割り当てられたエンジニアのマネージャーが行うべきか、Manager On-Call が行うべきかを判断する。
-1. フィードバックが即時対応を必要とする場合、適切にチケットまたはメールで返信し、次のステップを共有してビデオ通話をスケジュールするための Calendly リンクを提供する。
+1. フィードバックが即時対応を必要とする場合、適切にチケットまたはメールで返信し、次のステップを共有してビデオ通話をスケジュールするための Reclaim カレンダーリンクを提供する。
 1. チケットが軌道に戻るまで DRI として残る。
 1. Feedback Issue を以下のように更新する：
    1. コミュニケーションのテキストを Feedback Issue にコメントとして追加する。
@@ -150,7 +150,7 @@ STAR が解決されたら：
 
 1. Issue は自動的に Val Parsons に割り当てられます - DRI として自分自身に再アサインしてください。
 1. フィードバックをレビューし、次のベストアクションを検討する。
-1. お客様が通話を希望する場合、ビデオ通話をスケジュールするための Calendly リンクを提供する。
+1. お客様が通話を希望する場合、ビデオ通話をスケジュールするための Reclaim カレンダーリンクを提供する。
 1. フィードバックが Product または他チーム宛てのものであれば、適切なチャンネルで共有する。
 1. お客様とのやり取りから追加のアクションが生じた場合、Feedback Issue に戻ってそれらを記録する。
 
@@ -209,7 +209,7 @@ Zendesk で [`Support::Managers::Trigger manual emergency`](https://gitlab.com/s
 - 復元せずに回復するにはどうすればよいか？（「安全に」回復はできません。環境に 100% の信頼を持つには復元を推奨します。）
 - どのデータがアクセスされたのか？（これは常に難しい質問で、侵害が人間によるものなら痕跡を消している可能性もあります。完全な情報が得られないこともあります。お客様は可能な限り早く復元を開始し、フォレンジックは後で行うべきです。）
 
-通話に進むのが正しい場合、エンジニアの代わりに（または代わりとして）通話に参加し、達成可能な範囲を伝えることを検討してください。
+通話に進むのが正しい場合、エンジニアより先に（またはエンジニアの代わりに）通話に参加し、達成可能な範囲を伝えることを検討してください。
 
 通話の例となるフレームワーク（または、お客様が主催するブリッジ通話）：
 

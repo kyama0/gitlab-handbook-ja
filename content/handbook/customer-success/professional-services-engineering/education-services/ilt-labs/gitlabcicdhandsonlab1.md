@@ -2,11 +2,11 @@
 title: "GitLab CI/CD - ハンズオンラボ: アプリケーションをビルドするパイプラインを設定する"
 description: "このハンズオンガイドでは、アプリケーションの基本的なパイプラインを構築する手順を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1/
-upstream_sha: 1312dadbdf7381446077faefcfae17ba323692b6
-translated_at: "2026-07-19T09:38:53+09:00"
+upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
+translated_at: "2026-08-12T06:06:45+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-17T08:55:50-04:00"
+lastmod: "2026-08-11T13:03:24+01:00"
 ---
 
 > 完了までの推定時間: 15 分
@@ -83,7 +83,7 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
 
 ## タスク C. ビルドプロセスを作成する
 
-すべてのパイプラインジョブは `.gitlab-ci.yml` ファイルに記述します。まず、次の手順でプロジェクトのルートにこのファイルを作成します:
+すべてのパイプラインジョブは `.gitlab-ci.yml file` に記述します。まず、次の手順でプロジェクトのルートにこのファイルを作成します:
 
 1. プロジェクトのホームページに移動します。
 
@@ -324,4 +324,4 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
 
 ## ご提案について
 
-ラボに変更を加えたい場合は、マージリクエスト経由で変更を送信してください。
+ラボに変更を加えたい場合は、マージリクエストを通じて変更を送信してください。

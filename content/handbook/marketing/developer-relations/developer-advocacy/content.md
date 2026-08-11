@@ -2,11 +2,11 @@
 title: "Developer Advocates のコンテンツライブラリとワークフロー"
 description: "Developer Advocacy チームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/content/
-upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
-translated_at: "2026-08-06T06:15:42+09:00"
+upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
+translated_at: "2026-08-12T06:14:18+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-05T12:28:06-04:00"
+lastmod: "2026-08-11T08:42:28+00:00"
 ---
 
 Developer Advocacy チームは、キャンペーン、フィールドイネーブルメント、製品ローンチサポート、ユースケース採用、顧客向けデモ、一般的な学習・オンボーディングに使用できるコンテンツを作成しています。チームが参加するすべてのコンテンツとアクティビティは、[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/)に従って Issue で追跡されます。
@@ -84,18 +84,17 @@ Developer Advocacy チームは、GitLab の機能、ユースケース、ベス
 
 ### 製品ツアー {#product-tours}
 
-製品ツアーは、機能の「What」を強調する自己ガイド型のジャーニーであり、「How-to」の手順を省略して価値を直接紹介します。
+製品ツアーは、機能の「What」を強調し、価値を直接紹介する自己ガイド型のジャーニーです。
 
-**[Demo Zone を見る →](https://dap-demo-hub-dac14a.gitlab.io/)** - 一元化されたデモハブでは、すべての製品ツアーを 1 か所にまとめ、**Duo Agent Platform**、**Security**、**DevSecOps Platform** の 3 つの主要領域に整理しています。
+**[Demo Zone を見る →](https://about.gitlab.com/demo-hub/)** - Developer Advocacy チームが管理し、GitLab のマーケティング Web サイトでホストしている一元化されたデモハブでは、すべての製品ツアーを 1 か所にまとめ、**Duo Agent Platform**、**Security**、**DevSecOps Platform** の 3 つの主要領域に整理しています。
 
-[![Demo Hub のスクリーンショット](/images/handbook/marketing/developer-relations/developer-advocacy/content/demohub.png)](https://dap-demo-hub-dac14a.gitlab.io/)
+[![Demo Hub のスクリーンショット](/images/handbook/marketing/developer-relations/developer-advocacy/content/demohub.png)](https://about.gitlab.com/demo-hub/)
 
 #### すべての製品ツアー {#all-product-tours}
 
 | タイトル | 領域 | 最終更新 | DRI |
 |-------|------|--------------|-----|
 | [External agents - GitLab-managed - Japanese](https://gitlab.navattic.com/external-agents-managed-jp) | GitLab Duo Agent Platform | 2026-05-28 | @nakiyama-ext |
-| [GitLab Duo Agent Platform](https://dap-demo-hub-dac14a.gitlab.io/) | GitLab Duo Agent Platform | 2025-09-14 | @iganbaruch |
 | [GitLab MCP Server with Cursor - Japanese](https://gitlab.navattic.com/gitlab-mcp-server-jp) | GitLab Duo Agent Platform | 2025-12-10 | @nakiyama-ext |
 | [GitLab Duo Agent Platform - MCP - Japanese](https://gitlab.navattic.com/mcp-ja) | GitLab Duo Agent Platform | 2025-10-15 | @nakiyama-ext |
 | [GitLab Duo Self-hosted - japanese](https://gitlab.navattic.com/gitlab-duo-self-hosted-ja) | GitLab Duo Agent Platform | 2025-09-30 | @nakiyama-ext |
@@ -180,7 +179,7 @@ Developer Advocacy チームは、GitLab の機能、ユースケース、ベス
 
 | タイトル | 領域 | フォーカス | リソース | 更新日 | DRI |
 |-------|------|-------|-----------|---------|-----|
-| Breaking and Entering (Open Source): AI for Swift Contribution | AI で貢献し共創する | AI を使った学習済みベストプラクティス、contributors.gitlab.com の紹介 | Bitkom Forum Open Source 2025 スライド: [公開版](https://dnsmichi.click/oss-contributions-ai-bitkom-forum-open-source-2025)、[内部版](https://docs.google.com/presentation/d/1gqxkzoUiTlajYeI4gwWXGdV8fxC8jQwS3oOeKqQxnxg/edit) | 2025-09-18 | @dnsmichi |
+| Breaking and Entering (Open Source): AI for Swift Contribution | AI で貢献し共創する | AI を使って学んだベストプラクティス、contributors.gitlab.com の紹介 | Bitkom Forum Open Source 2025 スライド: [公開版](https://dnsmichi.click/oss-contributions-ai-bitkom-forum-open-source-2025)、[内部版](https://docs.google.com/presentation/d/1gqxkzoUiTlajYeI4gwWXGdV8fxC8jQwS3oOeKqQxnxg/edit) | 2025-09-18 | @dnsmichi |
 | Evolving the Edge: AI, CI, and Hardware-in-the-Loop for Embedded | Agentic AI、CI、組み込み | GitLab CI/CD Runner、LLM、組み込みハードウェア上での MCP を使った Agentic AI に関する研究 | Container Days 2025 [録画](https://www.youtube.com/watch?v=1DGolO9bEfo)、スライド: [公開版](https://dnsmichi.click/evolving-edge-ai-ci-hil-embedded-container-days-2025)、[内部版](https://docs.google.com/presentation/d/1tcsvvgjCAt4lXc_9vhiTg93Rhgn_K-1DYU5tYsKjmEQ/edit) | 2025-09-10 | @dnsmichi |
 | Learning AI 101: Practical Foundations for Developers | Agentic AI | LLM、RAG、Tool、Agent、MCP のユースケースと実践的なプロンプトなどの学習 | Open Source @ Siemens 2025 [録画](https://www.youtube.com/watch?v=6NxSJmpjxfo)、スライド: [公開版](https://dnsmichi.click/learning-ai-101-os-siemens-2025)、[内部版](https://docs.google.com/presentation/d/1PUCUrVzKnzc25md8gbh1jYznz-dUFfQcENvbR9xUJ7k/edit) | 2025-06-03 | @dnsmichi |
 | Efficient DevSecOps workflows with a little help from AI | AI、GitLab Duo | Duo を使った製品ユースケース | DACH Roadshow 2024 スライド: [公開版](https://go.gitlab.com/JRFMG4)、[内部版](https://docs.google.com/presentation/d/1Pm8yT46jpcc3kY0PLZqZlG2slIiFyZiQPKFEgyqqstw/edit)  | 2024-11-14 | @dnsmichi |

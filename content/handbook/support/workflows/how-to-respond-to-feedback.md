@@ -4,11 +4,11 @@ category: Handling tickets
 subcategory: Writing responses and handling feedback
 description: サポートチームの顧客満足度（Customer Effort Score または CES）レビュープロセス、および顧客フィードバックに対応するためにマネージャーが行うアクションについて説明します
 upstream_path: /handbook/support/workflows/how-to-respond-to-feedback/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:04:40+09:00"
+upstream_sha: "8194127ea2690cda322cc5bdda07644aa275d6cc"
+translated_at: "2026-08-12T06:21:26+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-08-11T11:43:02+10:00"
 ---
 
 [サポート満足度](/handbook/support/performance-indicators/#support-satisfaction-ssat) に貢献する要因を理解するため、サポートチケットに対して受領したフィードバックをレビューします。受領したすべてのサポート満足度フィードバックに対して、Issue が [フィードバック Issue トラッカー](https://gitlab.com/gitlab-com/support/feedback/-/issues)（社内のみ）に自動的に作成され、チケットに割り当てた人物のマネージャーに割り当てられます。
@@ -24,13 +24,13 @@ lastmod: "2026-07-14T15:22:25-05:00"
 
 チケットが解決されると、顧客は次の 1 つの簡単な質問に答えることでアンケートを完了するよう招待するメールを受け取ります:
 
-- Thinking about your recent experience of creating and working on a ticket, how easy was it to work with GitLab Customer Support?
+- 最近、チケットを作成して対応した経験を振り返って、GitLab Customer Support とのやり取りはどの程度簡単でしたか？
 
 評価の選択肢は「非常に簡単」から「非常に難しい」まで、5 つの中間オプションがあります。結果として作成されるフィードバック Issue では、これらは 7 から 1 までの評価として識別されます
 
 オプションの 2 つ目の質問:
 
-- What would make working on a ticket with GitLab Customer Support easier?
+- GitLab Customer Support とチケットでやり取りする際、何があればもっと簡単になりますか？
 
 顧客がこのセクションの完了をオプトアウトした場合、結果として作成されるフィードバック Issue には「User did not leave a comment」が含まれます
 
@@ -145,7 +145,7 @@ Support Week in Review でポジティブフィードバックを共有するた
 
 このジョブを実行するには:
 
-1. [手動パイプラインを実行](https://docs.gitlab.com/ci/pipelines/#run-a-pipeline-manually) し、`populate_ssat` ジョブを実行します。
+1. [手動パイプラインを実行] (https://docs.gitlab.com/ci/pipelines/#run-a-pipeline-manually)し、`populate_ssat` ジョブを実行します。
 
 このタスクは Issue に追記するため、何度でも安全に再実行できます。
 
@@ -191,7 +191,7 @@ Support Week in Review でポジティブフィードバックを共有するた
 | `~feedback::new-product-issue` | 製品の問題に遭遇した。新しい Issue や MR を起票した |
 | `~feedback::missing-info-from-customer` | 顧客が調査に十分な情報を提供しなかった |
 | `~feedback::missing-info-by-engineer` | サポートエンジニアが顧客に適切な情報を提供しなかった |
-| `~feedback::outside-support` | 問題は GitLab 内部にあるが、サポートが直接の原因ではない |
+| `~feedback::outside-support` | 問題は GitLab 内部にあるが、Support の直接の管轄ではない |
 | `~feedback::process-confusing-customer` | 顧客がサポートプロセスを混乱しているまたは不明確と感じた |
 | `~feedback::process-engineer-not-followed` | サポートエンジニアが文書化されたサポートプロセスに従わなかった |
 | `~feedback::process-does-not-exist` | 問題に既存のサポートプロセスがない |
@@ -215,7 +215,7 @@ Support Week in Review でポジティブフィードバックを共有するた
 
 - 顧客に連絡する（[後述](#if-the-customer-should-be-contacted) を参照）
 - フィードバックについて議論するために `support-team-meta` で新しい Issue を作成（フィードバック Issue を関連としてクロスリンク）
-- チケットに参加した個人または個人のマネージャーにタグを付けて、1:1 で議論する
+- チケットに参加した人のマネージャーをタグ付けし、1:1 で話し合う
 - 周知のために製品グループにタグを付ける（一部のネガティブフィードバックは製品関連です）
 
 さらなる議論が必要な場合は、フィードバック Issue を開いたままにします。それ以外の場合は、`/close` します。
@@ -234,11 +234,11 @@ Support Week in Review でポジティブフィードバックを共有するた
       - チケットを再オープンする場合は、サポートエンジニア（通常は既存の担当者）を割り当て、次のアクションについて簡単に説明することを確認してください。
       - クローズまたは解決されたチケットを再オープンすると、再オープン率と解決時間の測定に影響することに注意してください。
 1. 顧客に連絡する際は、以下を確実に行ってください:
-   1. 自己紹介をし、GitLab での自分の役割を説明します
-   1. チケット ID を含む状況の詳細に言及します - `https://support.gitlab.com/hc/requests/<ticket number>` の形式でリンクを含めることができます
-   1. 顧客のコメントを再述し、確認します
-   1. 関連するドキュメントへのリンクを含め、必要な謝罪や明確化を提供します
-   1. ビデオコールをスケジュールするための Calendly リンクを提供します
+   1. 自己紹介をし、GitLab での自分の役割を説明します。
+   1. チケット ID を含む状況の詳細に言及します。`https://support.gitlab.com/hc/requests/<ticket number>` の形式でリンクを含めることができます。
+   1. 顧客のコメントを再述し、確認します。
+   1. 関連するドキュメントへのリンクを含め、必要な謝罪や明確化を提供します。
+   1. ビデオコールをスケジュールするための Reclaim カレンダーリンクを提供します。
 1. フィードバック Issue を以下のように更新します:
    1. メールの本文をフィードバック Issue にコメントとして追加します。
    1. ラベル `~ssat-manager-contacted-customer` を適用します。

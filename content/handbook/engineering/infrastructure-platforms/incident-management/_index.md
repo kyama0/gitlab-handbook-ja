@@ -1,11 +1,11 @@
 ---
 title: インシデント管理
 upstream_path: "/handbook/engineering/infrastructure-platforms/incident-management/"
-upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
-translated_at: "2026-08-01T15:50:15+09:00"
+upstream_sha: "8194127ea2690cda322cc5bdda07644aa275d6cc"
+translated_at: "2026-08-12T06:14:18+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-31T12:42:54-06:00"
+lastmod: "2026-08-11T07:02:51-06:00"
 ---
 
 {{% alert color="warning" %}}
@@ -335,8 +335,8 @@ S1 または S2 インシデント中に、1 人以上の顧客と同期的な�
 インシデントに対する顧客との直接のやり取りの呼び出しの実施は、現在の Incident Manager がこれらのステップに従って開始します:
 
 1. 顧客通話に専念する 2 人目の Incident Manager を特定します。インシデント内で利用可能でない場合は、`/here A second incident manager is required for a customer interaction call for XXX` のようなメッセージで #im-general でその必要性をアナウンスします。
-2. 追加のサポートと意識を高めるために [Infrastructure Leadership ローテーション](#infrastructure-leadership-responsibilities) をページします。
-3. 主要 CSM として行動し、顧客通話に専念する Customer Success Manager を特定します。この役割が明確でない場合、Infrastructure Leadership に支援を求めることも参照してください。
+2. 追加の支援を得て状況を共有するため、[Infrastructure Leadership ローテーション](#infrastructure-leadership-responsibilities)をページします。
+3. 主要 CSM として行動し、顧客通話に専念する Customer Success Manager を特定します。この役割が明確でない場合は、Infrastructure Leadership にも支援を求めてください。
 4. これらの追加役割の両者がインシデントの履歴と現在のステータスを把握するため、メインインシデントに参加することをリクエストします。軽減への集中を維持するために必要な場合、この情報共有は別の Zoom ミーティングで行うことができます (その後、顧客との会話にも使用できます)。
 
 インシデントの履歴と現在の状態を把握した後、Engineering Communications Lead は以下のアクションを通じて顧客とのやり取りを開始・管理します:
@@ -537,7 +537,7 @@ state と status の遷移のための定義とルールは以下のとおりで
 | Active | インシデントは進行中であり、まだ軽減されていません。**注:** 影響が軽減された後にインシデントを `Active` 状態のままにしておくべきではありません。 |
 | Identified | インシデントの原因が特定されたと考えられ、**軽減のためのステップが計画され合意されています**。 |
 | Monitoring | ステップが実行され、メトリクスが監視されてベースラインで動作していることを確認しています。解決につながる特定の軽減の明確な理解と、影響が再発しないという高い確信がある場合、この状態をスキップする方が望ましいです。 |
-| Resolved | インシデントの影響が軽減され、ステータスは再び Operational です。解決されたインシデントは [レビュー対象としてマーク](/handbook/engineering/infrastructure-platforms/incident-review/#incident-review-process) され、[Corrective Actions](/handbook/engineering/infrastructure-platforms/incident-management/#corrective-actions) が定義できます。|
+| Resolved | インシデントの影響が軽減され、ステータスは再び Operational です。解決されたインシデントは [レビュー対象としてマーク](/handbook/engineering/infrastructure-platforms/incident-review) され、[Corrective Actions](/handbook/engineering/infrastructure-platforms/incident-management/#corrective-actions) が定義できます。|
 
 Status は state とは独立して設定できます。これらが一致しなければならないのは、Issue が次のとおりの場合のみです:
 
@@ -559,7 +559,7 @@ Incident Manager と Engineers On-Call は、インシデント重大度を割�
 
 | 重大度 | 影響 | GitLab の対応 | 例 |
 |--------|-------------|-------------|---------------------|
-| Severity:1 **Critical** | **Customer Impact:** <br> ユーザーへの非常に高い影響: ユーザー側の顧客またはビジネス成果が影響を受ける <br><br> **OR** <br><br> **GitLab Impact:** <br> ビジネスに対する可能性が高い、または深刻な損害: <br> Dedicated: <br>    - Dedicated フリートのスケールと運用性への深刻な混乱 <br>      OR <br>      - 可視的な影響（小規模または大規模）を伴う、エスカレーションされた Dedicated 顧客の高い離反リスク . |即時の総力対応 | - 顧客向けサービスがダウン <br> - 確認されたデータ侵害または赤/オレンジデータの曝露 <br> - 顧客データの損失 <br> - GitLab のプラットフォームまたはサプライチェーンに対する複雑度が低く、検証済みのエクスプロイトシナリオ。 <br> - 積極的にエクスプロイトされている、またはパッチ未適用で到達可能でエクスプロイト可能性の telemetry がない Critical RCE <br> - 公開されている (プレス、顧客、研究者による 0-day) Critical 脆弱性 <br> - 外部のアクターが特権の高い GitLab サービスアカウントを制御する <br> - Dedicated のビジネスへの影響: フリートを自動化された方法で変更またはスケールする能力の阻害、バージョンドリフトと手動運用の大幅な蓄積 <br> - Dedicated のビジネスへの影響: 対応能力の飽和、重要顧客、特にリスクの高いエスカレーション顧客への対応品質の低下 <br> - 毎月のセルフマネージドのマイナーまたはメジャーリリースを逃すリスク |
+| Severity:1 **Critical** | **Customer Impact:** <br> ユーザーへの非常に高い影響: ユーザー側の顧客またはビジネス成果が影響を受ける <br><br> **OR** <br><br> **GitLab Impact:** <br> ビジネスに対する可能性が高い、または深刻な損害: <br> Dedicated: <br>    - Dedicated フリートのスケールと運用性への深刻な混乱 <br>      OR <br>      - 可視的な影響（小規模または大規模）を伴う、エスカレーションされた Dedicated 顧客の高い離反リスク . |即時の総力対応 | - 顧客向けサービスがダウン <br> - 確認されたデータ侵害または赤/オレンジデータの曝露 <br> - 顧客データの損失 <br> - GitLab のプラットフォームまたはサプライチェーンに対する複雑度が低く、検証済みのエクスプロイトシナリオ。 <br> - 積極的にエクスプロイトされている、またはパッチ未適用で到達可能でエクスプロイト可能性を判断できるテレメトリがない Critical RCE <br> - 公開されている (プレス、顧客、研究者による 0-day) Critical 脆弱性 <br> - 外部のアクターが特権の高い GitLab サービスアカウントを制御する <br> - Dedicated のビジネスへの影響: フリートを自動化された方法で変更またはスケールする能力の阻害、バージョンドリフトと手動運用の大幅な蓄積 <br> - Dedicated のビジネスへの影響: 対応能力の飽和、重要顧客、特にリスクの高いエスカレーション顧客への対応品質の低下 <br> - 毎月のセルフマネージドのマイナーまたはメジャーリリースを逃すリスク |
 | Severity:2 **High** | **Customer Impact:** <br> ユーザーへの重大な影響: ユーザーの内部運用が中断される <br><br> **OR** <br><br>**GitLab Impact:** <br> ビジネスに対するありうる、または高まったダメージ: <br> Dedicated : <br> - 修正によってフリートのロールアウトが 1 週間を超えてブロック <br> OR <br>  - 可視的な製品への影響を伴わない、エスカレーションされた Dedicated 顧客の高い離反リスク | リソースの割り当て、チーム間の調整、定期的なステークホルダー更新 | - 一部の顧客にとって顧客向けサービスが利用できない<br> - コア機能が大きく影響を受けている<br> - アカウント侵害またはインサイダー脅威の動機と知識を必要とする特権昇格シナリオ<br>- エクスプロイトの証拠がある、または高いプレスの注目を集める高重大度脆弱性<br>- 機密の GitLab システムへの不正アクセスの疑い<br>- GitLab のクラウドインフラストラクチャでのマルウェア検出 |
 | Severity:3 **Medium** | **Customer Impact:** <br> ユーザーへの中程度の影響: ユーザーの内部運用が妨げられる可能性がある <br><br> **OR** <br><br> **GitLab Impact:** <br> ビジネスに対するありそうもない、または軽度のダメージ | 通常の運用手順を超えた対応のためにリソースが配分される | - 軽微なパフォーマンス劣化<br>- 重要でない機能が最適に動作していない<br>- 重要でないシステムにおける一般的マルウェア検出  |
 | Severity:4 **Low** | **Customer Impact:**: <br> ユーザーへの低い影響: ユーザーの内部運用が変更される可能性がある <br><br> **OR** <br><br> **GitLab Impact:** ビジネスに対する最小限のダメージ | 標準の手順に従って問題が解決される | - 顧客への不便、回避策あり<br>- 使用可能なパフォーマンス劣化<br>- 赤/オレンジデータに影響を与えない GitLab セキュリティポリシー違反  |
@@ -574,9 +574,9 @@ Incident Manager と Engineers On-Call は、インシデント重大度を割�
 GitLab の [Data Classification Standard](/handbook/security/policies_and_standards/data-classification-standard/#data-classification-levels) には 4 つのデータ分類レベルが定義されています。
 
 - RED データは、Issue が機密であっても、決してインシデントに含めるべきではありません。
-- ORANGE および YELLOW データは含めることができ、インシデントを管理する Incident Manager は、インシデント Issue が confidential としてマークされるか、内部ノートにあることを確認すべきです。
+- ORANGE および YELLOW データを含めることはできますが、インシデントを管理する Incident Manager は、インシデント Issue が機密としてマークされているか、そのデータが内部ノートに記載されていることを確認すべきです。
 
-Incident Manager は注意を払い、自分の最良の判断を行使すべきです。一般的に、可能ならば issue 全体を confidential としてマークするのではなく、内部ノートを使用することが推奨されます。
+Incident Manager は注意を払い、自分の最良の判断を行使すべきです。一般的に、可能ならば Issue 全体を機密としてマークするのではなく、内部ノートを使用することが推奨されます。
 特徴や具体性に乏しいログデータが数行だけであれば、データセキュリティ上の懸念がない可能性がありますが、より大きなログ、クエリ、または他のデータセットには、より制限的なアクセスが必要です。
 
 ## インシデントワークフロー {#incident-workflow}
@@ -659,7 +659,8 @@ Follow-up 項目はデフォルトで [incident-follow-ups プロジェクト](h
 
 [John Allspaw が述べる](https://qz.com/504661/why-etsy-engineers-send-company-wide-emails-confessing-mistakes-they-made) ように:
 
-> ニアミスはワクチンのようなものです。誰にも、何にも害を与えることなく、将来のより深刻なエラーから会社をより良く防衛するのに役立ちます。
+> ニアミスはワクチンのようなものです。誰にも、何にも害を与えることなく、
+> 将来のより深刻なエラーから会社をより良く防衛するのに役立ちます。
 
 ### ニアミスの取り扱い
 

@@ -2,11 +2,11 @@
 title: "GitLab CI/CD - ハンズオンラボ: 壊れたパイプラインの調査"
 description: "このハンズオンガイドでは、CI/CD パイプラインのトラブルシューティングと修正方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab5/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
+translated_at: "2026-08-12T06:06:45+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-25T17:26:37+00:00"
+lastmod: "2026-08-11T13:03:24+01:00"
 ---
 
 > 完了までの推定時間: 15 分
@@ -28,51 +28,51 @@ Tanuki Enterprises は、CI/CD ジャーニーの最終ステップ、つまり�
 
 このコースの一部として、デプロイメント用に使用する SSH キーが提供されました。CI/CD プロセス中に使用するために、この SSH キーを GitLab に追加する必要があります。
 
-1. CI/CD プロジェクトに移動します。
+1. Tanuki App プロジェクトに移動します。
 
 1. **Build > Pipeline Editor** を選択します。
 
-1. `deploy` という名前の新しいステージを追加します。
+1. deploy という名前の新しいステージを追加します。
 
-    ```yaml
-    stages:
-      - test
-      - build
-      - run
-      - release
-      - deploy
-    ```
+      ```yaml
+      stages:
+        - test
+        - build
+        - run
+        - release
+        - deploy
+      ```
 
-1. このステージには、`deploy app` という名前の単一ジョブを置きます。このジョブが最初に行うことは、SSH エージェントが利用可能かどうかをチェックし、なければインストールすることです。
+1. このステージには、deploy app という名前の単一ジョブを置きます。このジョブが最初に行うことは、SSH エージェントが利用可能かどうかをチェックし、なければインストールすることです。
 
-    ```yaml
-    deploy app:
-      stage: deploy
-      script: 
-        - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
-        - eval $(ssh-agent -s)
-    ```
+      ```yaml
+      deploy app:
+        stage: deploy
+        script: 
+          - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
+          - eval $(ssh-agent -s)
+      ```
 
 1. 次に、SSH キー変数から pem ファイルをセットアップし、SSH 用途で使用できるようにファイルに必要な権限を設定します。グループレベルの変数である `SSH_PRIVATE_KEY` 変数を使用していることに注意してください。変数の完全なリストは、グループに移動して **Settings > CI/CD** を選択し、**Variables** サブメニューを選択することで確認できます。
 
-    ```yaml
-    deploy app:
-      stage: deploy
-      script: 
-        - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
-        - eval $(ssh-agent -s)
-        - chmod 400 "$SSH_PRIVATE_KEY"
-        - ssh-add "$SSH_PRIVATE_KEY"
-        - mkdir -p ~/.ssh
-        - chmod 700 ~/.ssh
-    ```
+      ```yaml
+      deploy app:
+        stage: deploy
+        script:
+          - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
+          - eval $(ssh-agent -s)
+          - chmod 400 "$SSH_PRIVATE_KEY"
+          - ssh-add "$SSH_PRIVATE_KEY"
+          - mkdir -p ~/.ssh
+          - chmod 700 ~/.ssh
+      ```
 
 1. 接続が機能しているかどうかをテストするための簡単な SSH コマンドを追加できます。
 
       ```yaml
       deploy app:
         stage: deploy
-        script: 
+        script:
           - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
           - eval $(ssh-agent -s)
           - chmod 400 "$SSH_PRIVATE_KEY"
@@ -88,7 +88,7 @@ Tanuki Enterprises は、CI/CD ジャーニーの最終ステップ、つまり�
       ```yaml
       deploy app:
         stage: deploy
-        script: 
+        script:
           - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
           - eval $(ssh-agent -s)
           - chmod 400 "$SSH_PRIVATE_KEY"
@@ -102,7 +102,7 @@ Tanuki Enterprises は、CI/CD ジャーニーの最終ステップ、つまり�
           url: "http://$ip:80"
       ```
 
-1. 変更をコミットしてパイプラインを実行します。`deploy app` ジョブが失敗していることが分かります。
+1. 変更をコミットしてパイプラインを実行します。deploy app ジョブが失敗していることが分かります。
 
 何が間違っていて、どう修正するかを見つけてみましょう!
 
@@ -162,4 +162,4 @@ Tanuki Enterprises は、CI/CD ジャーニーの最終ステップ、つまり�
 
 ## 提案?
 
-ラボへの変更を加えたい場合は、マージリクエスト経由で変更を提出してください。
+ラボへの変更を加えたい場合は、マージリクエストを通じて変更を提出してください。

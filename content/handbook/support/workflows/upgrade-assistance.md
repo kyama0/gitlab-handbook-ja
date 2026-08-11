@@ -4,11 +4,11 @@ description: "お客様にアップグレードアシスタンスを提供する
 category: Self-managed
 subcategory: Upgrade Assistance
 upstream_path: /handbook/support/workflows/upgrade-assistance/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T06:31:24+09:00"
+upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
+translated_at: "2026-08-12T06:21:26+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-29T12:39:09-04:00"
+lastmod: "2026-08-11T11:43:02+10:00"
 ---
 
 ### 概要
@@ -34,7 +34,7 @@ GitLab Support は [Upgrade Assistance](https://about.gitlab.com/support/schedul
     - 情報に欠落・不足・誤りがある場合、チケット担当者は不足点を指摘し、ユーザーがそれを補正するうえで参考となる情報を提供します。
     - チケット担当者は、不足情報を依頼するために Zendesk の `Upgrade Request Missing Info` マクロを使うこともできます。
 1. （任意）必要な情報が揃ったら、担当者は [Skills by Subject](http://gitlab-com.gitlab.io/support/team-pages/skills-by-subject.html?search=Upgrade) ページで `Upgrade` または `Upgrade Assistance` をフォーカスとしているメンバーに声をかけ、ペアでの作業や非同期での知見共有を依頼できます。
-1. 任意の 30 分間の最終レビュー通話をお客様が希望する場合は、お客様が GitLab インスタンスのアップグレードを予定している日の少なくとも 2〜3 日前に 30 分間のミーティング用のパーソナル使い切り Calendly リンクを送付します。
+1. 任意の 30 分間の最終レビュー通話をお客様が希望する場合は、お客様が GitLab インスタンスのアップグレードを予定している日の少なくとも 2〜3 日前に、30 分間のミーティング用の 1 回限りの個人用 Reclaim カレンダーリンクを送付します。
     - レビュー担当エンジニアがチケットを引き継ぐ必要がある場合、適切な引き継ぎを担保するために、最終レビューを担当するエンジニアと **必ず** 同期してください。
 1. お客様がアップグレードのスケジュールを確定したら、チケット担当者はお客様からアップグレードが正常に完了したと確認が得られるまで、チケットを `on-hold` 状態にしておきます。
 
