@@ -2,11 +2,11 @@
 title: "GitLab CI/CD - ハンズオンラボ: ルールと変更のマージ"
 description: "このハンズオンガイドでは、ルールとマージリクエストパイプラインの設定方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab2/
-upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
-translated_at: "2026-08-12T06:06:45+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:44:15+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-11T13:03:24+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 完了までの推定時間: 15 分
@@ -44,7 +44,7 @@ build go:
   script:
     - go build
   artifacts:
-    paths: 
+    paths:
       - array
 
 run go:
@@ -59,55 +59,55 @@ run go:
 
 1. パイプラインエディターで `release` ジョブを `stages` に追加します:
 
-    ```yml
-    stages:
-      - build
-      - run
-      - release
-    ```
+      ```yml
+      stages:
+        - build
+        - run
+        - release
+      ```
 
 1. `run go` ジョブの下に release ステージの新しいジョブを追加します:
 
-    ```yml
-    release go:
-      stage: release
-      script:
-        - echo "Generating the latest Tanuki App release!"
-    ```
+      ```yml
+      release go:
+        stage: release
+        script:
+          - echo "Generating the latest Tanuki App release!"
+      ```
 
 1. リリースジョブには特別な CLI ツールが必要です。必要なツールを含むイメージをリリースジョブに追加します:
 
-    ```yml
-    release go:
-      stage: release
-      image: registry.gitlab.com/gitlab-org/release-cli:latest
-      script:
-        - echo "Generating the latest Tanuki App release!"
-    ```
+      ```yml
+      release go:
+        stage: release
+        image: registry.gitlab.com/gitlab-org/release-cli:latest
+        script:
+          - echo "Generating the latest Tanuki App release!"
+      ```
 
 1. リリースを作成するには、リリースの `tag_name` と `description` を指定する必要があります。一意のバージョン番号を生成するために、組み込み変数 `CI_PIPELINE_IID` を使用します。この変数には現在のパイプラインのプロジェクトレベルの ID が含まれます。`release job` の `script` の下に release キーワードを追加します:
 
-    ```yml
-      image: registry.gitlab.com/gitlab-org/release-cli:latest
-      script:
-        - echo "Generating the latest Tanuki App release!"
-      release: 
-        tag_name: 'v0.$CI_PIPELINE_IID'
-        description: 'The latest release!'
-    ```
+      ```yml
+        image: registry.gitlab.com/gitlab-org/release-cli:latest
+        script:
+          - echo "Generating the latest Tanuki App release!"
+        release:
+          tag_name: 'v0.$CI_PIPELINE_IID'
+          description: 'The latest release!'
+      ```
 
-    ジョブは次のようになります:
+      ジョブは次のようになります:
 
-    ```yml
-    release go:
-      stage: release
-      image: registry.gitlab.com/gitlab-org/release-cli:latest
-      script:
-        - echo "Generating the latest Tanuki App release!"
-      release: 
-        tag_name: 'v0.$CI_PIPELINE_IID'
-        description: 'The latest release!'
-    ```
+      ```yml
+      release go:
+        stage: release
+        image: registry.gitlab.com/gitlab-org/release-cli:latest
+        script:
+          - echo "Generating the latest Tanuki App release!"
+        release:
+          tag_name: 'v0.$CI_PIPELINE_IID'
+          description: 'The latest release!'
+      ```
 
     リリースジョブが実行されると、リポジトリにタグが作成されます。タグの作成はデフォルトでパイプラインの実行をトリガーします。これにより、パイプラインが完了するたびに新しいタグが作成され、新しいパイプラインがトリガーされるという無限ループが生じます。
 
@@ -115,13 +115,13 @@ run go:
 
 1. `.gitlab-ci.yml` ファイルの先頭に次のワークフローを定義します:
 
-    ```yml
-    workflow:
-      rules:
-        - if: $CI_COMMIT_TAG
-          when: never 
-        - when: always
-    ```
+      ```yml
+      workflow:
+        rules:
+          - if: $CI_COMMIT_TAG
+            when: never
+          - when: always
+      ```
 
 1. **Commit changes** を選択します。
 
@@ -141,59 +141,59 @@ run go:
 
 1. `build go` と `run go` ジョブの `script` の下に次のルールを追加します:
 
-    ```yml
-      rules:
-        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-    ```
+      ```yml
+        rules:
+          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+      ```
 
-    > このルールが 2 スペースでインデントされていることを確認してください。`script` キーワードと同じ位置に揃える必要があります。
+      > このルールが 2 スペースでインデントされていることを確認してください。`script` キーワードと同じ位置に揃える必要があります。
 
-    build および run ジョブは次のようになります:
+      build および run ジョブは次のようになります:
 
-    ```yml
-    build go:
-      stage: build
-      script:
-        - go build
-      artifacts:
-        paths: 
-          - array
-      rules:
-        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+      ```yml
+      build go:
+        stage: build
+        script:
+          - go build
+        artifacts:
+          paths:
+            - array
+        rules:
+          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
 
-    run go:
-      stage: run
-      script:
-        - ./array
-      rules:
-        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-    ```
+      run go:
+        stage: run
+        script:
+          - ./array
+        rules:
+          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+      ```
 
-    > これで、build と run ジョブはパイプラインがマージリクエストの一部である場合にのみ実行されます。
+      > これで、build と run ジョブはパイプラインがマージリクエストの一部である場合にのみ実行されます。
 
 1. 次に、ルールを否定することでマージリクエストでリリースジョブが実行されないようにします。`release job` の script の下に次のルールを追加します:
 
-    ```yml
-      rules:
-        - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-    ```
+      ```yml
+        rules:
+          - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+      ```
 
-    > これが `script` キーワードと同じレベル（2 スペース）にインデントされていることを確認してください。
+      > これが `script` キーワードと同じレベル（2 スペース）にインデントされていることを確認してください。
 
-    リリースジョブは次のようになります:
+      リリースジョブは次のようになります:
 
-    ```yml
-    release go:
-      stage: release
-      image: registry.gitlab.com/gitlab-org/release-cli:latest
-      script:
-        - echo "Generating the latest Tanuki App release!"
-      release: 
-        tag_name: 'v0.$CI_PIPELINE_IID'
-        description: 'The latest release!'
-      rules:
-        - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-    ```
+      ```yml
+      release go:
+        stage: release
+        image: registry.gitlab.com/gitlab-org/release-cli:latest
+        script:
+          - echo "Generating the latest Tanuki App release!"
+        release:
+          tag_name: 'v0.$CI_PIPELINE_IID'
+          description: 'The latest release!'
+        rules:
+          - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+      ```
 
 1. これらの変更を加えたら **Commit changes** を選択して `.gitlab-ci.yml` ファイルを更新します。
 
@@ -245,4 +245,4 @@ run go:
 
 ## ご提案について
 
-ラボに変更を加えたい場合は、マージリクエストを通じて変更を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更を送信してください。

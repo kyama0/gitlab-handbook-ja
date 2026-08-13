@@ -2,11 +2,11 @@
 title: "GitLab Security Essentials - ハンズオンラボ: コンテナスキャン"
 description: "このハンズオンガイドは、プロジェクトでコンテナスキャンを使用するプロセスを案内します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab4/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T05:12:10Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:31:06+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-12T07:47:05-04:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 推定所要時間: 15 〜 20 分
@@ -27,76 +27,76 @@ lastmod: "2026-03-12T07:47:05-04:00"
 
 1. `.gitlab-ci.yml` のステージリストの先頭（既存の `test` ステージの**前**）に以下を追加して、`build` ステージを定義します。既存の `test` ステージと同じインデントになるようにしてください:
 
-    ```yml
-    stages:
-      - build
-      - test
-    ```
+      ```yml
+      stages:
+        - build
+        - test
+      ```
 
 1. 新しいジョブに名前を付けて **build** ステージに割り当てるため、`.gitlab-ci.yml` の末尾に以下のコードを貼り付けます:
 
-    ```yml
-    build-and-push-docker-image:
-      stage: build
-    ```
+      ```yml
+      build-and-push-docker-image:
+        stage: build
+      ```
 
 1. ジョブは Docker ツールを含む Docker イメージ上で実行する必要があります。このアプローチは「Docker in Docker」または「dind」と呼ばれることがあります。このタスクに適したテスト済みのバージョンのイメージを指定する必要があります。前のステップで追加した `build-and-push-docker-image` ジョブに以下を追加します:
 
-    ```yml
-    build-and-push-docker-image:
-      stage: build
-      image: docker:20.10.17
-    ```
+      ```yml
+      build-and-push-docker-image:
+        stage: build
+        image: docker:20.10.17
+      ```
 
 1. ジョブには Docker in Docker ワークフローを有効にする 2 番目の Docker イメージも必要です。`services` キーワードを使用して 2 番目のイメージを指定します。ジョブ定義に以下を追加します:
 
-    ```yml
-    build-and-push-docker-image:
-      stage: build
-      image: docker:20.10.17
-      services:
-        - docker:20.10.17-dind
-    ```
+      ```yml
+      build-and-push-docker-image:
+        stage: build
+        image: docker:20.10.17
+        services:
+          - docker:20.10.17-dind
+      ```
 
 1. 作成する Docker イメージの完全な名前とバージョンを保持する変数を定義すると便利です。GitLab が提供する定義済み変数（一般的に `CI_` で始まる）から名前とバージョンを組み立てることができます。ジョブ定義に以下を追加します:
 
-    ```yml
-    build-and-push-docker-image:
-      stage: build
-      image: docker:20.10.17
-      services:
-        - docker:20.10.17-dind
-      variables:
-        IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
-    ```
+      ```yml
+      build-and-push-docker-image:
+        stage: build
+        image: docker:20.10.17
+        services:
+          - docker:20.10.17-dind
+        variables:
+          IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
+      ```
 
 1. Docker に TLS を使用しないよう指示する変数を設定すれば、セキュリティ証明書の設定を心配する必要がありません。`DOCKER_TLS_CERTDIR` 変数を追加します。
 
-    ```yml
-    build-and-push-docker-image:
-      stage: build
-      image: docker:20.10.17
-      services:
-        - docker:20.10.17-dind
-      variables:
-        IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
-        DOCKER_TLS_CERTDIR: ""
-    ```
+      ```yml
+      build-and-push-docker-image:
+        stage: build
+        image: docker:20.10.17
+        services:
+          - docker:20.10.17-dind
+        variables:
+          IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
+          DOCKER_TLS_CERTDIR: ""
+      ```
 
 1. `Dockerfile` のレシピを使用して Docker イメージをビルドするよう Docker に指示します。`script:` と `docker-build` の行を追加します。
 
-    ```yml
-    build-and-push-docker-image:
-      stage: build
-      image: docker:20.10.17
-      services:
-        - docker:20.10.17-dind
-      variables:
-        IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
-        DOCKER_TLS_CERTDIR: ""
-      script:
-        - docker build --tag $IMAGE .
-    ```
+      ```yml
+      build-and-push-docker-image:
+        stage: build
+        image: docker:20.10.17
+        services:
+          - docker:20.10.17-dind
+        variables:
+          IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
+          DOCKER_TLS_CERTDIR: ""
+        script:
+          - docker build --tag $IMAGE .
+      ```
 
 ## タスク B. Docker イメージをプロジェクトコンテナレジストリにプッシュ
 
@@ -104,53 +104,53 @@ lastmod: "2026-03-12T07:47:05-04:00"
 
 1. `script` セクションの末尾に `docker login` の行を追加します。
 
-    ```yml
-    build-and-push-docker-image:
-      stage: build
-      image: docker:20.10.17
-      services:
-        - docker:20.10.17-dind
-      variables:
-        IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
-        DOCKER_TLS_CERTDIR: ""
-      script:
-        - docker build --tag $IMAGE .
-        - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
-    ```
+      ```yml
+      build-and-push-docker-image:
+        stage: build
+        image: docker:20.10.17
+        services:
+          - docker:20.10.17-dind
+        variables:
+          IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
+          DOCKER_TLS_CERTDIR: ""
+        script:
+          - docker build --tag $IMAGE .
+          - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
+      ```
 
 1. 単一の Docker コマンドでイメージをプッシュできます。`script` セクションの末尾に `docker push` の行を追加します。
 
-    ```yml
-    build-and-push-docker-image:
-      stage: build
-      image: docker:20.10.17
-      services:
-        - docker:20.10.17-dind
-      variables:
-        IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
-        DOCKER_TLS_CERTDIR: ""
-      script:
-        - docker build --tag $IMAGE .
-        - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
-        - docker push $IMAGE
-    ```
+      ```yml
+      build-and-push-docker-image:
+        stage: build
+        image: docker:20.10.17
+        services:
+          - docker:20.10.17-dind
+        variables:
+          IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
+          DOCKER_TLS_CERTDIR: ""
+        script:
+          - docker build --tag $IMAGE .
+          - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
+          - docker push $IMAGE
+      ```
 
 1. 完成したジョブ定義は以下のようになります。`.gitlab-ci.yml` のジョブ定義に必要な修正を加えてください。
 
-    ```yml
-    build-and-push-docker-image:
-      stage: build
-      image: docker:20.10.17
-      services:
-        - docker:20.10.17-dind
-      variables:
-        IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
-        DOCKER_TLS_CERTDIR: ""
-      script:
-        - docker build --tag $IMAGE .
-        - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
-        - docker push $IMAGE
-    ```
+      ```yml
+      build-and-push-docker-image:
+        stage: build
+        image: docker:20.10.17
+        services:
+          - docker:20.10.17-dind
+        variables:
+          IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
+          DOCKER_TLS_CERTDIR: ""
+        script:
+          - docker build --tag $IMAGE .
+          - docker login --username $CI_REGISTRY_USER --password $CI_REGISTRY_PASSWORD $CI_REGISTRY
+          - docker push $IMAGE
+      ```
 
 1. 適切なコミットメッセージ（`Adding a Docker build job`）で `main` ブランチに変更をコミットします。
 
@@ -164,19 +164,19 @@ lastmod: "2026-03-12T07:47:05-04:00"
 
 1. `.gitlab-ci.yml` の既存の `include:` セクションにコンテナスキャンコンポーネントを追加します:
 
-    ```yml
-    - component: ilt.gitlabtraining.cloud/components/container-scanning/container-scanning@~latest
-    ```
+      ```yml
+      - component: ilt.gitlabtraining.cloud/components/container-scanning/container-scanning@~latest
+      ```
 
-    > これはコンポーネントリストのどこにでも追加できます。
+      > これはコンポーネントリストのどこにでも追加できます。
 
 1. コンテナスキャナーがスキャンするコンテナを認識できるようにするため、`container_scanning` ジョブをオーバーライドする必要があります。以下のコードをコピーして `container_scanning` ジョブの `CS_IMAGE` 変数をオーバーライドします:
 
-    ```yml
-    container_scanning:
-      variables:
-        CS_IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
-    ```
+      ```yml
+      container_scanning:
+        variables:
+          CS_IMAGE: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
+      ```
 
 1. 適切なコミットメッセージで変更をコミットします。
 
@@ -198,4 +198,4 @@ lastmod: "2026-03-12T07:47:05-04:00"
 
 ## ご提案・改善点
 
-ラボに変更を加えたい場合は、マージリクエストで変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

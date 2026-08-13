@@ -4,34 +4,67 @@ description: >-
   Sec セクションは、GitLab DevOps プラットフォームの Secure および
   Software Supply Chain Security 機能に取り組む開発チームで構成されています。
 upstream_path: /handbook/engineering/development/sec/
-upstream_sha: 3480299851f7e2243d4f08b75dac452f89929636
-translated_at: "2026-04-28T05:48:28Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:19:19+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-02T07:33:04-05:00"
+lastmod: "2026-08-13T15:10:33+03:00"
 ---
+
+## リーダーシップ
+
+このセクションは、3 つのステージリードが率いています:
+
+| ステージ | リード |
+| --- | --- |
+| [Security Factory](security-factory/) | Maw Wildpaner（`@maw`、暫定） |
+| [Security Governance](security-governance/) | Mohamed Waseem（`@mwaseem5`） |
+| [Security Platform](security-platform/) | Mark Mishaev（`@mmishaev`） |
 
 ## チームとハンドブックページ
 
-以下のチームがこのサブ部門を構成しています:
+Sec セクションは、3 つのステージで構成されています。各ステージページには、そのグループ、
+Engineering Manager と Tech Lead、および作業の追跡に使用する `group::` ラベルが掲載されています。
 
-- Software Supply Chain Security ステージ - [ハンドブック](/handbook/engineering/development/sec/software-supply-chain-security/)
-  - Anti-abuse グループ - [ハンドブック](/handbook/engineering/development/sec/software-supply-chain-security/anti-abuse)
-  - Authentication グループ - [ハンドブック](/handbook/engineering/development/sec/software-supply-chain-security/authentication)
-  - Authorization グループ - [ハンドブック](/handbook/engineering/development/sec/software-supply-chain-security/authorization)
-  - Compliance グループ - [ハンドブック](software-supply-chain-security/compliance/)
-- Application Security Testing ステージ - [ハンドブック](/handbook/engineering/development/sec/secure/)
-  - Composition Analysis グループ - [ハンドブック](/handbook/engineering/development/sec/secure/composition-analysis/)
-  - Dynamic Analysis グループ - [ハンドブック](/handbook/engineering/development/sec/secure/dynamic-analysis/dynamic-analysis/)
-  - Static Analysis グループ - [ハンドブック](/handbook/engineering/development/sec/secure/static-analysis/)
-  - Secret Detection グループ - [ハンドブック](/handbook/engineering/development/sec/secure/secret-detection/)
-  - Vulnerability Research グループ - [ハンドブック](/handbook/engineering/development/sec/secure/vulnerability-research/)
-  - API Security - [ハンドブック](/handbook/engineering/development/sec/secure/dynamic-analysis/api-security/)
-- Security Risk Management
-  - Security Policies グループ - [ハンドブック](/handbook/engineering/development/sec/security-risk-management/security-policies/)
-  - Security Platform Management グループ
-  - Security Insights グループ - [ハンドブック](/handbook/engineering/development/sec/security-risk-management/security-insights/)
-  - Security Infrastructure グループ - [ハンドブック](/handbook/engineering/development/sec/security-risk-management/security-infrastructure/)
+- [**Security Factory**](security-factory/) - 顧客コードのセキュリティ上の問題を発見し、説明し、修正する
+  エンジン。
+  - [Secret Detection](security-factory/secret-detection/)
+  - [Composition Analysis](security-factory/composition-analysis/)
+  - [Code Scanning](security-factory/code-scanning/)
+  - [Code Security](security-factory/code-security/)
+  - [AI Security](security-factory/ai-security/)
+  - [Vulnerability Management](security-factory/vulnerability-management/)
+  - [Agentic Security Flows](security-factory/agentic-security-flows/)
+  - [Threat Research](security-factory/threat-research/)
+  - [Security Foundations](security-factory/security-foundations/)
+- [**Security Governance**](security-governance/) - セキュリティとコンプライアンスのルールを
+  表現、保存、評価、監査する方法。
+  - [Policy Engine](security-governance/policy-engine/)
+  - [Policy Management](security-governance/policy-management/)
+  - [Security Controls](security-governance/security-controls/)
+  - [Compliance](security-governance/compliance/)
+  - [AI Governance](security-governance/ai-governance/)
+  - [AI Control Plane](security-governance/ai-control-plane/)
+- [**Security Platform**](security-platform/) - GitLab のほかの部分が依存する ID と信頼の
+  基盤要素。
+  - [Authentication](security-platform/authentication/)
+  - [GATE Infra](security-platform/gate-infra/)
+  - [GATE Core](security-platform/gate-core/)
+  - [Authorization](security-platform/authorization/)
+  - [Abuse Engineering](security-platform/abuse-engineering/)
+  - [Build Security](security-platform/build-security/)
+  - [Dependency Firewall](security-platform/dependency-firewall/)
+  - [Secrets Manager (Application)](security-platform/secrets-manager/application/)
+  - [Secrets Manager (OpenBAO)](security-platform/secrets-manager/openbao/)
+
+この構成は FY27 の Sec 再編で発効し、Application Security Testing、Security Risk Management、
+Software Supply Chain Security の各ステージを置き換えました。この 3 つのステージページは、現在も
+新しいステージページへ統合している途中です。
+
+## オンコール
+
+Sec は、Security Platform と Security Governance のチームにまたがる共有オンコールローテーションを
+運用しています。[Sec オンコールハンドブック](oncall/)を参照してください。
 
 機能ごとに EM と PM の DRI を明確にすることが重要です。特に明らかでない場合はなおさらです。これは専用の[境界定義ページ](delineate-sec.html)に文書化されています。
 
@@ -47,9 +80,9 @@ lastmod: "2026-03-02T07:33:04-05:00"
 
 ### オブザーバビリティ
 
-- [チュートリアル: CI ベースのアナライザーにオブザーバビリティメトリクスを追加する](/handbook/engineering/development/sec/secure/analyzer-observability-metrics/) -
+- [チュートリアル: CI ベースのアナライザーにオブザーバビリティメトリクスを追加する](/handbook/engineering/development/sec/security-factory/analyzer-observability-metrics/) -
   セキュリティアナライザーに分散イベントパターンを実装するためのステップバイステップガイド。
-- [Secret Detection メトリクス](/handbook/engineering/development/sec/secure/secret-detection/metrics/) -
+- [Secret Detection メトリクス](/handbook/engineering/development/sec/security-factory/secret-detection/metrics/) -
   Secret Detection アナライザーと GitLab モノリスにメトリクスを追加するためのガイド。
 
 ## プロジェクト設定

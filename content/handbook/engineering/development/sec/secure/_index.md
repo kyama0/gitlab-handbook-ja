@@ -1,11 +1,11 @@
 ---
 title: Application Security Testing サブ部門
 upstream_path: /handbook/engineering/development/sec/secure/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-06T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:19:19+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-10T16:58:29-05:00"
+lastmod: "2026-08-13T15:10:33+03:00"
 ---
 
 Application Security Testing エンジニアリングサブ部門は、プロダクトの [Application Security Testing ステージ](/handbook/product/categories/#sec-section)を担当しています。
@@ -43,7 +43,7 @@ Application Security Testing ステージの開発ピープルリーダーに連
 
 ### Composition Analysis
 
-チームページ: [Composition Analysis](composition-analysis/)
+チームページ: [Composition Analysis](/handbook/engineering/development/sec/security-factory/composition-analysis/)
 
 {{< team-by-departments departments="Secure:Composition Analysis BE Team"  >}}
 
@@ -51,19 +51,19 @@ Application Security Testing ステージの開発ピープルリーダーに連
 
 ### Static Analysis
 
-チームページ: [Static Analysis](static-analysis/)
+チームページ: [Code Scanning](/handbook/engineering/development/sec/security-factory/code-scanning/)（旧 Static Analysis）
 
 {{< team-by-departments departments="Application Security Testing:Static Analysis" >}}
 
 ### Dynamic Analysis
 
-チームページ: [Dynamic Analysis](dynamic-analysis/dynamic-analysis.md)
+チームページ: [Dependency Firewall](/handbook/engineering/development/sec/security-platform/dependency-firewall/)（旧 Dynamic Analysis）
 
 {{< team-by-manager-role role="Engineering(.*)Manager(.*)Secure:Dynamic Analysis" team="Engineer" >}}
 
-### Vulnerability Research
+### Threat Research
 
-チームページ: [Vulnerability Research](vulnerability-research/)
+チームページ: [Threat Research](/handbook/engineering/development/sec/security-factory/threat-research/)
 
 {{< team-by-departments departments="Secure:Vulnerability Research BE Team" >}}
 
@@ -120,9 +120,9 @@ Dependency Scanning は主に Gemnasium エンジンに依拠しています。
 [License Compliance](https://docs.gitlab.com/ee/user/compliance/license_approval_policies.html) は、アプリケーションのサードパーティライブラリによって持ち込まれるライセンスへの対処を支援します。
 ライセンス管理は [LicenseFinder](https://github.com/pivotal/LicenseFinder) gem に依拠しています。
 
-#### Vulnerability Research
+#### Threat Research
 
-[Vulnerability Research](vulnerability-research/) チームの目的は、
+[Threat Research](/handbook/engineering/development/sec/security-factory/threat-research/) チームの目的は、
 [Secure ステージ](https://about.gitlab.com/stages-devops-lifecycle/secure/)
 の能力と有効性を高める研究を行い、概念実証を開発することです。
 
@@ -149,7 +149,7 @@ Dependency Scanning は主に Gemnasium エンジンに依拠しています。
 
 ### QA プロセス
 
-詳細は [QA Process](qa_process.html) を参照してください。
+詳細は [QA Process](/handbook/engineering/development/sec/security-factory/qa_process/) を参照してください。
 
 ### 脆弱性管理プロセス
 
@@ -329,7 +329,7 @@ GitLab は非常に活発な組織で、毎週多くのニュースやアクテ�
 
 #### ワークフローとリファインメント
 
-[Application Security Testing エンジニアリングプランニング](/handbook/engineering/development/sec/secure/planning)を参照してください。
+[Application Security Testing エンジニアリングプランニング](/handbook/engineering/development/sec/security-factory/planning)を参照してください。
 
 #### コーディング標準とスタイルガイドライン
 
@@ -355,7 +355,7 @@ Application Security Testing 機能を支えるアーキテクチャの一部の
 
 プロダクトの進化とともに、エンジニアリングチームは新しい機能を実現する方法やアーキテクチャを改善する方法をリサーチしています。
 
-このリサーチの成果は[技術ドキュメント](tech-docs/)セクションにあります。
+このリサーチの成果は[技術ドキュメント](/handbook/engineering/development/sec/security-factory/tech-docs/)セクションにあります。
 
 ### データソース
 

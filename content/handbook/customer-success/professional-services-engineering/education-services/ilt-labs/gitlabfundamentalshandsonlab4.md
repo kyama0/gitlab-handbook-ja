@@ -2,11 +2,11 @@
 title: "GitLab 基礎 - ハンズオンラボ: コラボレーションとコードレビュー"
 description: "このハンズオンガイドでは、変更のコラボレーションとコードレビューの作成方法を学習します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab4/
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-translated_at: "2026-07-02T06:06:16+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:13:44+09:00"
 translator: claude
 stale: false
-lastmod: 2026-06-26T10:02:20-04:00
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 完了までの推定時間: 30 分
@@ -69,47 +69,47 @@ lastmod: 2026-06-26T10:02:20-04:00
 
 ブランチにコードを追加して、それをレビューするプロセスを実践してみましょう。
 
-1. マージリクエストから **Code** ドロップダウンをクリックして **Open in Web IDE** を選択します。
+1. マージリクエストから **Code** ドロップダウンリストをクリックして **Open in Web IDE** を選択します。
 
 1. 画面左上付近にある **New file** ボタンを選択し、`index.js` という名前のファイルを追加します。
 
 1. ファイルに以下のコードを貼り付けます:
 
-    ```js
-        const http = require('http');
+      ```js
+          const http = require('http');
 
-        var users = [
-        { id: 1, name: 'Alice', password: 'password123' },
-        { id: 2, name: 'Bob', password: 'admin' }
-        ];
+          var users = [
+          { id: 1, name: 'Alice', password: 'password123' },
+          { id: 2, name: 'Bob', password: 'admin' }
+          ];
 
-        const server = http.createServer((req, res) => {
-        res.statusCode = 200;
-        
-        if (req.url === '/') {
-            res.setHeader('Content-Type', 'text/html');
-            res.end('<h1>Welcome to My App!</h1><p>Visit /users to see all users</p>');
-        } else if (req.url === '/users') {
-            res.setHeader('Content-Type', 'application/json');
-            res.end(JSON.stringify(users));
-        } else if (req.url.startsWith('/user/')) {
-            const userId = req.url.split('/')[2];
-            const user = users[userId - 1];
-            res.setHeader('Content-Type', 'application/json');
-            res.end(JSON.stringify(user));
-        } else {
-            res.statusCode = 404;
-            res.end('Not Found');
-        }
-        });
+          const server = http.createServer((req, res) => {
+          res.statusCode = 200;
 
-        const PORT = 3000;
-        server.listen(PORT, () => {
-        console.log(`Server running at http://localhost:${PORT}/`);
-        });
-    ```
+          if (req.url === '/') {
+              res.setHeader('Content-Type', 'text/html');
+              res.end('<h1>Welcome to My App!</h1><p>Visit /users to see all users</p>');
+          } else if (req.url === '/users') {
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify(users));
+          } else if (req.url.startsWith('/user/')) {
+              const userId = req.url.split('/')[2];
+              const user = users[userId - 1];
+              res.setHeader('Content-Type', 'application/json');
+              res.end(JSON.stringify(user));
+          } else {
+              res.statusCode = 404;
+              res.end('Not Found');
+          }
+          });
 
-    > コードが正確に何をしているかは今は深く気にしないでください。アプリケーションのすべてのユーザーを表示する Web サイトを作成しています。
+          const PORT = 3000;
+          server.listen(PORT, () => {
+          console.log(`Server running at http://localhost:${PORT}/`);
+          });
+      ```
+
+      > コードが正確に何をしているかは今は深く気にしないでください。アプリケーションのすべてのユーザーを表示する Web サイトを作成しています。
 
 1. 画面左側の **Source control** ボタンを選択し、このコードを新しいブランチにコミットします。
 
@@ -135,7 +135,7 @@ GitLab Duo は私たちの組み込み AI 機能セットです。コードの�
 
 1. マージリクエストの右側にある **Reviewers** メタデータセクションで **Edit** を選択し、**GitLab Duo** アカウントを選択します。
 
-    > これにより GitLab Duo のコードレビューセッションがトリガーされます。
+      > これにより GitLab Duo のコードレビューセッションがトリガーされます。
 
 1. Duo にレビューを実施させるために 1〜2 分待ちます。
 
@@ -147,7 +147,7 @@ GitLab Duo は私たちの組み込み AI 機能セットです。コードの�
 
 1. マージリクエストの **Overview** タブに戻ります。
 
-    > 画面の中央に **Merge blocked** というメッセージが表示されます。このセクションでは、コードをメインにマージすることを妨げている問題を確認できます。失敗したパイプラインからセキュリティスキャンの結果まで、設定に応じてさまざまな要因がマージリクエストをブロックする可能性があります。現在、リクエストがブロックされている理由は「Merge request must not be a draft」と表示されています。この問題を解決しましょう。
+      > 画面の中央に **Merge blocked** というメッセージが表示されます。このセクションでは、コードをメインにマージすることを妨げている問題を確認できます。失敗したパイプラインからセキュリティスキャンの結果まで、設定に応じてさまざまな要因がマージリクエストをブロックする可能性があります。現在、リクエストがブロックされている理由は「Merge request must not be a draft」と表示されています。この問題を解決しましょう。
 
 1. **Merge blocked** ブロック内の **Mark as ready** をクリックします。**Mark as ready** オプションが表示されない場合は、**Merge blocked** ブロックの右側にある矢印をクリックして展開してください。
 
@@ -163,4 +163,4 @@ GitLab Duo は私たちの組み込み AI 機能セットです。コードの�
 
 ## ご提案はありますか?
 
-ラボへの変更を希望する場合は、マージリクエストで変更を送信してください。
+このラボへの変更を希望する場合は、マージリクエストを通じて変更を送信してください。

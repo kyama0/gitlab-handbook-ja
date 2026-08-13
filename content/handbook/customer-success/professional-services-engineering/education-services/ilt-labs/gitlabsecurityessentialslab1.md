@@ -2,11 +2,11 @@
 title: "GitLab Security Essentials - ハンズオンラボ: SAST とシークレット検出"
 description: "このハンズオンガイドは、プロジェクトで SAST とシークレット検出を有効化・使用するプロセスを案内します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab1/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T05:12:10Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:31:06+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-25T17:26:37+00:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 推定所要時間: 15 分
@@ -25,13 +25,13 @@ lastmod: "2026-03-25T17:26:37+00:00"
 
 1. **プロジェクト名** フィールドに `Security Labs` と入力します。
 
-    > プロジェクトスラグは自動的に入力されます。必要に応じて短い文字列に変更することもできますが、このラボではデフォルトのままにしてください。
+      > プロジェクトスラグは自動的に入力されます。必要に応じて短い文字列に変更することもできますが、このラボではデフォルトのままにしてください。
 
-1. **プロジェクト URL** フィールドで、URL の後半部分のドロップダウンをクリックして、**グループ名**（`training-users/*` で始まる）を指しているか確認します。**ユーザー名** ではなくグループ内にプロジェクトを作成してください。
+1. **プロジェクト URL** フィールドで、URL の後半部分のドロップダウンリストをクリックして、**グループ名**（`training-users/*` で始まる）を指しているか確認します。**ユーザー名** ではなくグループ内にプロジェクトを作成してください。
 
 1. **公開レベル** が **プライベート** に設定されていることを確認します。
 
-    > 親グループがプライベートに設定されているため、その配下のすべての子グループとプロジェクトもプライベートになります。プロジェクトの公開レベルについては[ドキュメント](https://docs.gitlab.com/ee/user/public_access.html)でさらに詳しく学べます。
+      > 親グループがプライベートに設定されているため、その配下のすべての子グループとプロジェクトもプライベートになります。プロジェクトの公開レベルについては[ドキュメント](https://docs.gitlab.com/ee/user/public_access.html)でさらに詳しく学べます。
 
 1. **プロジェクトを作成** をクリックします。
 
@@ -45,48 +45,48 @@ lastmod: "2026-03-25T17:26:37+00:00"
 
 1. 単一の **test** ステージを定義します:
 
-    ```yml
-    stages:
-      - test
-    ```
+      ```yml
+      stages:
+        - test
+      ```
 
-    > YAML ファイルはスペース 2 つでインデントする必要があります。Web IDE ではタブ 4 スペースに設定されている場合があります。サンプルをコピー&ペーストしない場合は、バックスペースで 2 スペースに調整してください。
+      > YAML ファイルはスペース 2 つでインデントする必要があります。Web IDE ではタブ 4 スペースに設定されている場合があります。サンプルをコピー&ペーストしない場合は、バックスペースで 2 スペースに調整してください。
 
 1. `.gitlab-ci.yml` のステージ定義の後に以下のテキストを貼り付けて SAST を有効化します:
 
-    ```yml
-    include:
-      - component: ilt.gitlabtraining.cloud/components/sast/sast@~latest
-    ```
+      ```yml
+      include:
+        - component: ilt.gitlabtraining.cloud/components/sast/sast@~latest
+      ```
 
-    > GitLab UI から SAST を設定することも可能です。その場合は **Secure > セキュリティ設定** に移動し、**SAST を設定** ボタンをクリックします。このラボでは CI ファイルを編集して設定することで、仕組みをより深く理解できるようにしています。
+      > GitLab UI から SAST を設定することも可能です。その場合は **Secure > セキュリティ設定** に移動し、**SAST を設定** ボタンをクリックします。このラボでは CI ファイルを編集して設定することで、仕組みをより深く理解できるようにしています。
 
 1. `.gitlab-ci.yml` ファイルの末尾に inputs セクションを追加し、`excluded_paths: venv/` を設定します。
 
-    ```yml
-    include:
-      - component: ilt.gitlabtraining.cloud/components/sast/sast@~latest
-        inputs:
-          excluded_paths: venv/
-    ```
+      ```yml
+      include:
+        - component: ilt.gitlabtraining.cloud/components/sast/sast@~latest
+          inputs:
+            excluded_paths: venv/
+      ```
 
-    > `.gitlab-ci.yml` ファイルの inputs セクションに設定を追加することで SAST をカスタマイズできます。たとえば、`excluded_paths` 変数を使用すると、SAST スキャンからプロジェクトのパスを除外できます。不要なファイルのスキャンを防ぐために設定できます。
-    >
-    > 例として、Python プロジェクトには `venv` ディレクトリが含まれていることが多く、プロジェクトが使用するパッケージが格納されています。このディレクトリには自分たちのソースコードが含まれていないため、SAST スキャンから除外するべきです。
-    >
-    > SAST 変数の完全なリストは[ドキュメント](https://docs.gitlab.com/ee/user/application_security/sast/#available-cicd-variables)で確認できます。
+      > `.gitlab-ci.yml` ファイルの inputs セクションに設定を追加することで SAST をカスタマイズできます。たとえば、`excluded_paths` 変数を使用すると、SAST スキャンからプロジェクトのパスを除外できます。不要なファイルのスキャンを防ぐために設定できます。
+      >
+      > 例として、Python プロジェクトには `venv` ディレクトリが含まれていることが多く、プロジェクトが使用するパッケージが格納されています。このディレクトリには自分たちのソースコードが含まれていないため、SAST スキャンから除外するべきです。
+      >
+      > SAST 変数の完全なリストは[ドキュメント](https://docs.gitlab.com/ee/user/application_security/sast/#available-cicd-variables)で確認できます。
 
 1. 完成すると、`.gitlab-ci.yml` ファイルは以下のようになります:
 
-    ```yml
-    stages:
-      - test
+      ```yml
+      stages:
+        - test
 
-    include:
-      - component: ilt.gitlabtraining.cloud/components/sast/sast@~latest
-        inputs:
-          excluded_paths: venv/
-    ```
+      include:
+        - component: ilt.gitlabtraining.cloud/components/sast/sast@~latest
+          inputs:
+            excluded_paths: venv/
+      ```
 
 1. **変更をコミット** ボタンをクリックし、適切なコミットメッセージを追加します（例: `Add SAST template to .gitlab-ci.yml`）。
 
@@ -122,16 +122,16 @@ lastmod: "2026-03-25T17:26:37+00:00"
 
 1. `excluded_paths` の入力の下に、`run_advanced_sast` という名前で値 `true` の別の入力を追加します。完成すると、ファイルは以下のようになります:
 
-    ```yml
-    stages:
-      - test
+      ```yml
+      stages:
+        - test
 
-    include:
-      - component: ilt.gitlabtraining.cloud/components/sast/sast@~latest
-        inputs:
-          excluded_paths: venv/
-          run_advanced_sast: true
-    ```
+      include:
+        - component: ilt.gitlabtraining.cloud/components/sast/sast@~latest
+          inputs:
+            excluded_paths: venv/
+            run_advanced_sast: true
+      ```
 
 1. **変更をコミット** をクリックします。
 
@@ -159,50 +159,50 @@ GitLab Advanced SAST スキャナーは SAST スキャナーからより多く�
 
 1. `.gitlab-ci.yml` の既存の `include:` セクションの末尾（SAST のコンポーネントの下）に以下のコンポーネントを追加して、シークレット検出を有効化します。インデントは前のテンプレートと同じレベルにしてください。
 
-    ```yml
-    include:
-      - component: ilt.gitlabtraining.cloud/components/sast/sast@~latest
-        inputs:
-          excluded_paths: venv/
-          run_advanced_sast: true
-      - component: ilt.gitlabtraining.cloud/components/secret-detection/secret-detection@~latest
-    ```
+      ```yml
+      include:
+        - component: ilt.gitlabtraining.cloud/components/sast/sast@~latest
+          inputs:
+            excluded_paths: venv/
+            run_advanced_sast: true
+        - component: ilt.gitlabtraining.cloud/components/secret-detection/secret-detection@~latest
+      ```
 
-    > GitLab UI からシークレット検出を設定することも可能です。その場合は **Secure > セキュリティ設定** に移動し、**シークレット検出を設定** ボタンをクリックします。このラボでは `.gitlab-ci.yml` ファイルを編集して設定することで、仕組みをより深く理解できるようにしています。
+      > GitLab UI からシークレット検出を設定することも可能です。その場合は **Secure > セキュリティ設定** に移動し、**シークレット検出を設定** ボタンをクリックします。このラボでは `.gitlab-ci.yml` ファイルを編集して設定することで、仕組みをより深く理解できるようにしています。
 
 1. コンポーネントのインポートの下に以下のジョブ定義を貼り付けて、シークレット検出ジョブが test ディレクトリを無視するように設定します。
 
-    ```yml
-    secret_detection:
-      variables:
-        SECRET_DETECTION_EXCLUDED_PATHS: tests/
-    ```
+      ```yml
+      secret_detection:
+        variables:
+          SECRET_DETECTION_EXCLUDED_PATHS: tests/
+      ```
 
-    > デフォルト以外の動作を使用するようにシークレット検出を設定するには、**secret_detection** ジョブ定義をオーバーライドし、その中に変数を追加します。
-    >
-    > シークレット検出変数の完全なリストは[ドキュメント](https://docs.gitlab.com/ee/user/application_security/secret_detection/#available-cicd-variables)で確認できます。
+      > デフォルト以外の動作を使用するようにシークレット検出を設定するには、**secret_detection** ジョブ定義をオーバーライドし、その中に変数を追加します。
+      >
+      > シークレット検出変数の完全なリストは[ドキュメント](https://docs.gitlab.com/ee/user/application_security/secret_detection/#available-cicd-variables)で確認できます。
 
 1. `.gitlab-ci.yml` ファイルは以下のようになります:
 
-    ```yml
-    stages:
-      - test
+      ```yml
+      stages:
+        - test
 
-    include:
-      - component: ilt.gitlabtraining.cloud/components/sast/sast@~latest
-        inputs:
-          excluded_paths: venv/
-          run_advanced_sast: true
-      - component: ilt.gitlabtraining.cloud/components/secret-detection/secret-detection@~latest
+      include:
+        - component: ilt.gitlabtraining.cloud/components/sast/sast@~latest
+          inputs:
+            excluded_paths: venv/
+            run_advanced_sast: true
+        - component: ilt.gitlabtraining.cloud/components/secret-detection/secret-detection@~latest
 
-    secret_detection:
-      variables:
-        SECRET_DETECTION_EXCLUDED_PATHS: tests/
-    ```
+      secret_detection:
+        variables:
+          SECRET_DETECTION_EXCLUDED_PATHS: tests/
+      ```
 
 1. ブランチを `main` に設定し、**変更をコミット** を選択します。
 
-    > 注: リポジトリへのすべての変更は MR を通じて行い、MR はマージ前に他のチームメンバーによって承認されることがベストプラクティスとされています。ただし、このプロジェクトのメンバーはラボを実施している人一人だけなので、そのようなレビューは不可能です。そのため、小規模なチームやデモ環境では main ブランチに直接コミットすることが一般的に許容されています。実際の業務環境では、マージリクエストを使用してください。
+      > 注: リポジトリへのすべての変更は MR を通じて行い、MR はマージ前に他のチームメンバーによって承認されることがベストプラクティスとされています。ただし、このプロジェクトのメンバーはラボを実施している人一人だけなので、そのようなレビューは不可能です。そのため、小規模なチームやデモ環境では main ブランチに直接コミットすることが一般的に許容されています。実際の業務環境では、マージリクエストを使用してください。
 
 1. **ビルド > パイプライン** に移動し、ジョブを確認して、すべてのパイプラインが完了するまで待ちます。
 
@@ -214,7 +214,7 @@ GitLab Advanced SAST スキャナーは SAST スキャナーからより多く�
 
 1. **開発の脆弱性** テーブルの **レポートタイプ** 列を確認すると、有効にした各ツールの様々な脆弱性検出結果が表示されています。
 
-1. Advanced SAST スキャナーが検出した脆弱性のみを表示します。**脆弱性を検索またはフィルター...** バーの **スキャナー** ドロップダウンを選択し、**GitLab Advanced SAST** を選択してフィルタリングします。
+1. Advanced SAST スキャナーが検出した脆弱性のみを表示します。**脆弱性を検索またはフィルター...** バーの **スキャナー** フィルターオプションを選択し、**GitLab Advanced SAST** を選択してフィルタリングします。
 
 1. **SQL コマンドで使用される特殊要素の不適切な無効化（「SQL インジェクション」）** の脆弱性の 1 つを選択します。ここには **詳細** と **コードフロー** の 2 つのタブがあります。**詳細** タブには脆弱性に関する一般的な詳細が表示されます。**コードフロー** タブは Advanced SAST スキャナーが提供する特別な機能です。コードの中でその脆弱性がどのように発生するかが表示されます。
 
@@ -226,4 +226,4 @@ GitLab Advanced SAST スキャナーは SAST スキャナーからより多く�
 
 ## ご提案・改善点
 
-ラボに変更を加えたい場合は、マージリクエストで変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

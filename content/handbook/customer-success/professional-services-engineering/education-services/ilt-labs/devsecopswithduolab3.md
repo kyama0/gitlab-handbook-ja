@@ -2,9 +2,9 @@
 title: "GitLab Duo Principles - ハンズオンラボ: Issue とマージリクエストを扱う"
 description: "このハンズオンガイドでは、GitLab Duo を使って Issue とマージリクエストを作成する手順を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab3/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-09T10:04:35-04:00
-translated_at: "2026-06-12T21:18:07Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+lastmod: "2026-08-13T07:16:24-04:00"
+translated_at: "2026-08-14T00:34:30+09:00"
 translator: claude
 stale: false
 ---
@@ -33,15 +33,15 @@ GitLab Duo は単なるコード生成にとどまりません。GitLab Duo は 
 
 1. **Submit** を選択します。
 
-   応答は次のようになります:
+      応答は次のようになります:
 
-   ```text
-   Issue: The "hello world" application lacks visual appeal
+      ```text
+      Issue: The "hello world" application lacks visual appeal
 
-   The current "hello world" application prints basic text without any formatting or visual elements. We want to enhance the user experience and make the application output more interesting to look at.
+      The current "hello world" application prints basic text without any formatting or visual elements. We want to enhance the user experience and make the application output more interesting to look at.
 
-   The Go Figure module allows printing text in different styles and formats. Integrating this module into our "hello world" code will let us customize how the message is displayed, such as changing fonts, colors, effects and more. This will make our application stand out more and be more enjoyable for end users to interact with.
-   ```
+      The Go Figure module allows printing text in different styles and formats. Integrating this module into our "hello world" code will let us customize how the message is displayed, such as changing fonts, colors, effects and more. This will make our application stand out more and be more enjoyable for end users to interact with.
+      ```
 
 1. この応答をコピーし、**Edit** ボタンを選択して AI が生成した説明を Description フィールドに貼り付けて、Issue の説明として追加します。
 
@@ -65,22 +65,22 @@ GitLab Duo は単なるコード生成にとどまりません。GitLab Duo は 
 
 1. チャットで次のプロンプトを入力します: `How could I use the go-figure module of go to print hello world in a different font?`
 
-   次のような応答が返ってきます:
+      次のような応答が返ってきます:
 
-   ```go
-   package main
+      ```go
+      package main
 
-   import (
-       "github.com/common-nighthawk/go-figure"
-   )
+      import (
+          "github.com/common-nighthawk/go-figure"
+      )
 
-   func main() {
-       myFigure := figure.NewFigure("hello world", "", true)
-       myFigure.Print()
-   }
-   ```
+      func main() {
+          myFigure := figure.NewFigure("hello world", "", true)
+          myFigure.Print()
+      }
+      ```
 
-   > **注意**: 使用しなくなった `fmt` モジュールをインポートしたままにしないでください。使用していないとパイプラインエラーの原因になります。
+      > **注意**: 使用しなくなった `fmt` モジュールをインポートしたままにしないでください。使用していないとパイプラインエラーの原因になります。
 
 1. 生成されたコードをコピーします。
 
@@ -96,7 +96,7 @@ GitLab Duo は単なるコード生成にとどまりません。GitLab Duo は 
 
 1. **Go to MR** を選択してマージリクエストに戻ります。
 
-   > ここでパイプラインが失敗することに気づくかもしれません。それは想定どおりです！すぐにトラブルシューティングを行います。
+      > ここでパイプラインが失敗することに気づくかもしれません。それは想定どおりです！すぐにトラブルシューティングを行います。
 
 ## タスク D. コード変更を要約する
 
@@ -122,7 +122,7 @@ GitLab Duo は単なるコード生成にとどまりません。GitLab Duo は 
 
 1. 失敗したジョブの説明と修正例を確認します。
 
-   > 提案された修正は、Go の依存関係をローカルで更新するというグッドプラクティスに従っています。このデモの目的では、この依存関係を `.gitlab-ci.yml` ファイルに追加します。以下の手順に従ってこの変更を適用してください。これらの手順は GitLab Duo が提案した修正を反映しています。
+      > 提案された修正は、Go の依存関係をローカルで更新するというグッドプラクティスに従っています。このデモの目的では、この依存関係を `.gitlab-ci.yml` ファイルに追加します。以下の手順に従ってこの変更を適用してください。これらの手順は GitLab Duo が提案した修正を反映しています。
 
 1. マージリクエストに戻ります。
 
@@ -132,31 +132,31 @@ GitLab Duo は単なるコード生成にとどまりません。GitLab Duo は 
 
 1. `build app` ジョブの `script` セクションに、`go-figure` の依存関係を取得するスクリプトを追加します。
 
-   設定ファイルは次のようになるはずです:
+      設定ファイルは次のようになるはずです:
 
-   ```yml
-   stages:
-     - build
+      ```yml
+      stages:
+        - build
 
-   default:
-     image: golang:latest
+      default:
+        image: golang:latest
 
-   build app:
-     stage: build
-     script:
-       - go get github.com/common-nighthawk/go-figure
-       - go run main.go
-   ```
+      build app:
+        stage: build
+        script:
+          - go get github.com/common-nighthawk/go-figure
+          - go run main.go
+      ```
 
 1. これで Go モジュールを扱うことになるので、`go.mod` ファイルが必要になります。これもまた Duo が助けてくれることの 1 つです！GitLab Duo chat パネルで次のように入力します: `Please create the go.mod file for this application`。次のようなものが返ってきます:
 
-   ```go
-   module hello-world-figure
+      ```go
+      module hello-world-figure
 
-   go 1.21
+      go 1.21
 
-   require github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
-   ```
+      require github.com/common-nighthawk/go-figure v0.0.0-20210622060536-734e95fb86be
+      ```
 
 1. このコードをコピーし、`go.mod` という名前の新しいファイルに追加します。
 
@@ -186,4 +186,4 @@ GitLab Duo はコードレビュアーとして機能し、コード品質の向
 
 ## ご提案はありますか？
 
-ラボに変更を加えたい場合は、マージリクエストで変更を提出してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更を提出してください。

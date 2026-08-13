@@ -2,11 +2,11 @@
 title: "GitLab Advanced CI/CD - ハンズオンラボ: パイプラインテストの最適化"
 description: "このハンズオンガイドでは、テストパイプラインの最適化について説明します"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab3/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T15:26:34Z"
 translator: claude
 stale: false
-lastmod: "2026-03-25T17:26:37+00:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 このラボの目的は、アプリケーションのテストを設定できるさまざまな方法を探ることです。
@@ -233,4 +233,4 @@ lastmod: "2026-03-25T17:26:37+00:00"
 
 ## ご提案は?
 
-ラボへの変更をご希望の場合は、マージリクエストで変更内容を送信してください。
+このラボへの変更をご希望の場合は、マージリクエストを通じて変更内容を送信してください。

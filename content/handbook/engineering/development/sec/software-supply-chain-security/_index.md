@@ -1,11 +1,11 @@
 ---
 title: Software Supply Chain Security サブ部門
 upstream_path: /handbook/engineering/development/sec/software-supply-chain-security/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:19:19+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-22T14:47:44+02:00"
+lastmod: "2026-08-13T15:10:33+03:00"
 ---
 
 Software Supply Chain Security サブ部門のチームは、製品の [Software Supply Chain Security ステージ](https://about.gitlab.com/direction/software_supply_chain_security/)におけるエンジニアリングチームです。
@@ -166,10 +166,10 @@ AI 機能（GitLab Duo、AI エージェント、コード生成）は、私た�
 
 ## グループ
 
-- [Authentication](authentication/)
-- [Authorization](authorization/)
-- [Compliance](compliance/)
-- [Pipeline Security](pipeline-security/)
+- [Authentication](/handbook/engineering/development/sec/security-platform/authentication/)
+- [Authorization](/handbook/engineering/development/sec/security-platform/authorization/)
+- [Compliance](/handbook/engineering/development/sec/security-governance/compliance/)
+- [Secrets Manager](/handbook/engineering/development/sec/security-platform/secrets-manager/)（旧 Pipeline Security）
 
 ### 製品ドキュメントのリンク
 

@@ -2,11 +2,11 @@
 title: "GitLab Duo Agent Platform - ハンズオンラボ: カスタムフローを作成する"
 description: "このハンズオンガイドでは、カスタムフローの作成方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab4/
-upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
-translated_at: "2026-07-23T21:51:15Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T16:06:53Z"
 translator: claude
 stale: false
-lastmod: "2026-07-23T16:30:17+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 完了までの推定時間: 20 分
@@ -61,117 +61,117 @@ lastmod: "2026-07-23T16:30:17+01:00"
 
 1. 以下の YAML をエディタに貼り付けます。
 
-    ```yaml
-    version: "v1"
-    environment: ambient
+      ```yaml
+      version: "v1"
+      environment: ambient
 
-    components:
-      - name: "fetch_issue"
-        type: DeterministicStepComponent
-        tool_name: "get_issue"
-        inputs:
-          - from: "context:project_id"
-            as: "project_id"
-          - from: "context:goal"
-            as: "issue_iid"
-        ui_log_events:
-          - "on_tool_execution_success"
-          - "on_tool_execution_failed"
+      components:
+        - name: "fetch_issue"
+          type: DeterministicStepComponent
+          tool_name: "get_issue"
+          inputs:
+            - from: "context:project_id"
+              as: "project_id"
+            - from: "context:goal"
+              as: "issue_iid"
+          ui_log_events:
+            - "on_tool_execution_success"
+            - "on_tool_execution_failed"
 
-      - name: "issue_reviewer"
-        type: AgentComponent
-        prompt_id: "issue_review_prompt"
-        inputs:
-          - from: "context:fetch_issue.tool_responses"
-            as: "issue_data"
-          - from: "context:project_id"
-            as: "project_id"
-          - from: "context:goal"
-            as: "issue_iid"
-        toolset:
-          - "create_issue_note"
-        ui_log_events:
-          - "on_tool_execution_success"
-          - "on_tool_execution_failed"
-          - "on_agent_final_answer"
+        - name: "issue_reviewer"
+          type: AgentComponent
+          prompt_id: "issue_review_prompt"
+          inputs:
+            - from: "context:fetch_issue.tool_responses"
+              as: "issue_data"
+            - from: "context:project_id"
+              as: "project_id"
+            - from: "context:goal"
+              as: "issue_iid"
+          toolset:
+            - "create_issue_note"
+          ui_log_events:
+            - "on_tool_execution_success"
+            - "on_tool_execution_failed"
+            - "on_agent_final_answer"
 
-    prompts:
-      - prompt_id: "issue_review_prompt"
-        name: "Issue Review Prompt"
-        unit_primitives: []
-        prompt_template:
-          system: |
-            You are a helpful project management assistant integrated into GitLab.
-            Your job is to review a GitLab issue for completeness and quality, then post
-            a single constructive public comment with improvement suggestions.
+      prompts:
+        - prompt_id: "issue_review_prompt"
+          name: "Issue Review Prompt"
+          unit_primitives: []
+          prompt_template:
+            system: |
+              You are a helpful project management assistant integrated into GitLab.
+              Your job is to review a GitLab issue for completeness and quality, then post
+              a single constructive public comment with improvement suggestions.
 
-            Evaluate the issue against these criteria:
-            - Has a clear, detailed description (not empty or vague)
-            - Has defined acceptance criteria
-            - Has at least one label applied
-            - Has an assignee
-            - Has a milestone or due date
-            - Title is specific and descriptive
+              Evaluate the issue against these criteria:
+              - Has a clear, detailed description (not empty or vague)
+              - Has defined acceptance criteria
+              - Has at least one label applied
+              - Has an assignee
+              - Has a milestone or due date
+              - Title is specific and descriptive
 
-            Steps you must follow:
-            1. Review the issue data provided to you
-            2. Evaluate it against every criterion above
-            3. Post exactly one public comment on the issue (project_id: {{project_id}}, issue_iid: {{issue_iid}}) using this structure:
+              Steps you must follow:
+              1. Review the issue data provided to you
+              2. Evaluate it against every criterion above
+              3. Post exactly one public comment on the issue (project_id: {{project_id}}, issue_iid: {{issue_iid}}) using this structure:
 
-            ## Issue Review
+              ## Issue Review
 
-            **Completeness Score: X/6**
+              **Completeness Score: X/6**
 
-            ### Looks good
-            - <list criteria that are met>
+              ### Looks good
+              - <list criteria that are met>
 
-            ### Needs attention
-            - <list criteria that are missing, with a specific suggestion for each>
+              ### Needs attention
+              - <list criteria that are missing, with a specific suggestion for each>
 
-            ### Suggested acceptance criteria (if missing)
-            <only include this section if acceptance criteria are absent>
+              ### Suggested acceptance criteria (if missing)
+              <only include this section if acceptance criteria are absent>
 
-            ---
-            *This review was automatically generated. Please review and apply relevant suggestions.*
+              ---
+              *This review was automatically generated. Please review and apply relevant suggestions.*
 
-            If the issue scores 5 or higher out of 6, open the comment with a positive note.
-            If it scores below 3, add a note encouraging the author to refine before development begins.
-            Keep the tone friendly, constructive, and concise.
-          user: |
-            Here is the issue data to review:
-            {{issue_data}}
+              If the issue scores 5 or higher out of 6, open the comment with a positive note.
+              If it scores below 3, add a note encouraging the author to refine before development begins.
+              Keep the tone friendly, constructive, and concise.
+            user: |
+              Here is the issue data to review:
+              {{issue_data}}
 
-            Post your review as a comment on project_id {{project_id}}, issue IID {{issue_iid}}.
-          placeholder: history
-        params:
-          timeout: 180
+              Post your review as a comment on project_id {{project_id}}, issue IID {{issue_iid}}.
+            placeholder: history
+          params:
+            timeout: 180
 
-    routers:
-      - from: "fetch_issue"
-        to: "issue_reviewer"
-      - from: "issue_reviewer"
-        to: "end"
+      routers:
+        - from: "fetch_issue"
+          to: "issue_reviewer"
+        - from: "issue_reviewer"
+          to: "end"
 
-    flow:
-      entry_point: "fetch_issue"
-    ```
+      flow:
+        entry_point: "fetch_issue"
+      ```
 
 1. **Create flow** を選択して保存します。
 
 ### フロー構成の理解
 
-フローが保存されたので、設定したものを少し時間をかけて理解しましょう。YAML は 3 つのことを定義しています: 作業を行うコンポーネント、エージェントを駆動するプロンプト、それらを接続する router です。
+フローが保存されたので、設定したものを少し時間をかけて理解しましょう。YAML は 3 つのことを定義しています: 作業を行うコンポーネント、エージェントを駆動するプロンプト、それらを接続するルーターです。
 
-#### Version と Environment
+#### バージョンと環境
 
-各フローは version と environment の宣言から始まります。
+各フローはバージョンと環境の宣言から始まります。
 
 ```yml
 version: "v1"
 environment: ambient
 ```
 
-version は使用しているフロー YAML 構成のバージョンを定義します。これは常に `v1` に設定します。`environment` には、`chat`、`chat-partial`、`ambient` の 3 つの可能な値があります。これらのフィールドの詳細は [YAML 仕様](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/main/docs/flow_registry/v1.md#environment) で確認できます。この例では `ambient` を選択しました。これは、エージェントがバックグラウンドで割り当てを完了する、手を動かさない体験のために設計されています。
+バージョンは使用しているフロー YAML 構成のバージョンを定義します。これは常に `v1` に設定します。`environment` には、`chat`、`chat-partial`、`ambient` の 3 つの可能な値があります。これらのフィールドの詳細は [YAML 仕様](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/main/docs/flow_registry/v1.md#environment) で確認できます。この例では `ambient` を選択しました。これは、エージェントがバックグラウンドで割り当てを完了する、手を動かさない体験のために設計されています。
 
 #### コンポーネント
 
@@ -225,7 +225,7 @@ components:
 
 次に、プロンプトを定義します。`system` フィールドはエージェントの振る舞いと個性を定義するプロンプトを定義します。`user` フィールドはユーザープロンプトが配置される場所と、それを解釈する方法を定義します。`placeholder` フィールドを `history` に設定すると、以前のチャット履歴をフロープロンプトに含めることができます。最後に、タイムアウトを 180 秒として提供します。
 
-#### Router
+#### ルーター
 
 `router` と `flow` フィールドは、データが開始から終了までどのように流れるかについての詳細を提供します。
 
@@ -282,7 +282,7 @@ flow:
 
 1. Issue に戻り、フローによって投稿されたコメントをレビューします。
 
-コメントには 6 点満点の completeness スコア、満たされている基準をリストする「Looks good」セクション、欠落している各基準に対する具体的な提案を含む「Needs attention」セクション、そしてオプションで「Suggested acceptance criteria」セクションが含まれます。スコアは選択した Issue によって異なります。
+コメントには 6 点満点の完全性スコア、満たされている基準をリストする「Looks good」セクション、欠落している各基準に対する具体的な提案を含む「Needs attention」セクション、そしてオプションで「Suggested acceptance criteria」セクションが含まれます。スコアは選択した Issue によって異なります。
 
   >**注:** フローの完了には数分かかる場合があります。セッションが Finished と表示された後でもコメントが表示されない場合は、Issue ページをリフレッシュしてください。
 
@@ -290,7 +290,7 @@ flow:
 
 - Swag Shop Issue Reviewer フローが Issue の Assignees フィールドに割り当てられている。
 - **Automate > Sessions** でフローセッションが Finished のステータスで表示されている。
-- 構造化されたコメントが Issue に投稿されており、completeness スコア、Looks good セクション、欠落している基準それぞれに対する具体的な提案を含む Needs attention セクションが含まれている。
+- 構造化されたコメントが Issue に投稿されており、完全性スコア、Looks good セクション、欠落している基準それぞれに対する具体的な提案を含む Needs attention セクションが含まれている。
 
 ## ラボガイド完了
 
@@ -298,4 +298,4 @@ flow:
 
 ## 提案?
 
-ラボへの変更を加えたい場合は、マージリクエスト経由で変更を提出してください。
+このラボを変更したい場合は、マージリクエストを通じて変更を提出してください。

@@ -2,11 +2,11 @@
 title: 'チケットプロセッサー'
 description: 'Zendesk チケットプロセッサーのドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/tickets/processor/"
-upstream_sha: "1c5f183add4a3220f2aa77e0c98565c4fad645e2"
-translated_at: "2026-07-18T06:35:04+09:00"
+upstream_sha: "d8fb317567e8e271f91f602d97d453ad1a69a00a"
+translated_at: "2026-08-13T23:58:47+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-17T09:55:55-05:00"
+lastmod: "2026-08-12T14:22:07-05:00"
 ---
 
 このガイドでは、特定のトリガーに基づいてチケットにカスタムアクションを実行する自動化システム、Zendesk チケットプロセッサーについて説明します。利用可能なプロセッサーの種類と、プロセッサー項目を作成、変更、削除する方法を記載します。
@@ -118,6 +118,12 @@ T&S による禁止またはブロックは、ユーザーのカスタム属性�
   - ASE を追加する場合に指定されたユーザー ID が無効であれば、その旨をリクエスト者にチケットでコメントし、チケットを閉じます
 - 組織が存在しない場合は、その旨をリクエスト者にチケットでコメントし、チケットを閉じます
 
+#### ASE への割り当て {#assign-to-ase}
+
+<sup>[gitlab-com/eta/css/issue-tracker#3](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/work_items/3)で導入</sup>
+
+Assigned Support Engineer（ASE）アドオンを利用する組織に対する、チケットの自動割り当てを処理します。
+
 #### Collaboration ID {#collaboration-ids}
 
 <sup>[gitlab-com/gl-security/corp/cust-support-ops/issue-tracker#623](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/623)で導入</sup>
@@ -227,6 +233,12 @@ Mailgun 内にメール抑制が存在するか確認します。確認結果に
     - `gitlabmtgs.webex.com`
     - `teams.microsoft.com`
 
+#### スパムとしてマーク {#mark-as-spam}
+
+<sup>[gitlab-com/eta/css/issue-tracker#3](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/work_items/3)で導入</sup>
+
+チケットをスパムとしてマークする処理を行います。
+
 #### 名前空間の利用可否
 
 <sup>[gitlab-com/gl-security/corp/cust-support-ops/issue-tracker#578](https://gitlab.com/gitlab-com/gl-security/corp/cust-support-ops/issue-tracker/-/issues/578)で導入</sup>
@@ -294,6 +306,12 @@ Mailgun 内にメール抑制が存在するか確認します。確認結果に
 
 サポートメモファイルが存在しない場合は、この処理で組織用のファイルも作成します。
 
+#### エンドユーザーとして返信 {#reply-as-end-user}
+
+<sup>[gitlab-com/eta/css/issue-tracker#3](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/work_items/3)で導入</sup>
+
+GitLab が管理するエンドユーザーを介して、チケットに返信する処理を行います。
+
 #### STAR
 
 <sup>[gitlab-com/support/support-ops/support-ops-project#957](https://gitlab.com/gitlab-com/support/support-ops/support-ops-project/-/issues/957)で導入</sup>
@@ -305,6 +323,7 @@ Mailgun 内にメール抑制が存在するか確認します。確認結果に
 次の項目は Zendesk Global と同じように動作します。
 
 - [ASE の更新](#ase-update)
+- [ASE への割り当て](#assign-to-ase)
 - [Collaboration ID](#collaboration-ids)
 - [マクロの作成](#create-macro)
 - [リンクタグ付け](#link-tagger)

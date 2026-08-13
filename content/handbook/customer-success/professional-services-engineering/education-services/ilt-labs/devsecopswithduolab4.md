@@ -2,11 +2,11 @@
 title: "GitLab Duo Principles - ハンズオンラボ: GitLab Duo を使って新しいコードを書く"
 description: "このハンズオンガイドでは、GitLab Duo を使ってコードとテストを生成する手順を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab4/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: 2026-04-26T04:33:12Z
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:34:30+09:00"
 translator: claude
 stale: false
-lastmod: "2025-12-01T18:31:34+00:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 完了までの推定時間: 25 分
@@ -25,9 +25,9 @@ lastmod: "2025-12-01T18:31:34+00:00"
 
 1. `import` ブロックと `main` 関数の間に、次のコメントを入力します:
 
-   ```text
-   // write a function called print_phrase that contains a list of string values. It takes in an index of the list and returns the value at the provided index from a list as a string
-   ```
+      ```text
+      // write a function called print_phrase that contains a list of string values. It takes in an index of the list and returns the value at the provided index from a list as a string
+      ```
 
 1. Enter キーを押すと、コードの余白に小さな Tanuki アイコンが表示されます。コードが表示されるまで待ちます。コードが表示されたら Tab キーを押します。
 
@@ -35,37 +35,37 @@ lastmod: "2025-12-01T18:31:34+00:00"
 
 1. この操作を行うと、コードは次のようになります:
 
-   ```go
-   package main
+      ```go
+      package main
 
-   import (
-       "github.com/common-nighthawk/go-figure"
-   )
+      import (
+          "github.com/common-nighthawk/go-figure"
+      )
 
-    // write a function called print_phrase that contains a list of string values. It takes in an index of the list and returns the value at the provided index from a list as a string
-    func print_phrase(index int) string {
-        phrases := []string{
-            "Hello, world!",
-            "Go is awesome",
-            "Programming is fun",
-            "Keep coding",
-            "Practice makes perfect",
+        // write a function called print_phrase that contains a list of string values. It takes in an index of the list and returns the value at the provided index from a list as a string
+        func print_phrase(index int) string {
+            phrases := []string{
+                "Hello, world!",
+                "Go is awesome",
+                "Programming is fun",
+                "Keep coding",
+                "Practice makes perfect",
+            }
+
+            if index < 0 || index >= len(phrases) {
+                return "Invalid index"
+            }
+
+            return phrases[index]
         }
 
-        if index < 0 || index >= len(phrases) {
-            return "Invalid index"
-        }
+      func main() {
+          myFigure := figure.NewFigure(print_phrase(0), "", true)
+          myFigure.Print()
+      }
+      ```
 
-        return phrases[index]
-    }
-
-   func main() {
-       myFigure := figure.NewFigure(print_phrase(0), "", true)
-       myFigure.Print()
-   }
-   ```
-
-   > 入力したプロンプトの性質上、リストからランダムな単語を求めているため、ほとんどのユーザーで異なるコードが生成されます。`phrases :=` の定義で異なる単語が表示されても問題ありません。
+      > 入力したプロンプトの性質上、リストからランダムな単語を求めているため、ほとんどのユーザーで異なるコードが生成されます。`phrases :=` の定義で異なる単語が表示されても問題ありません。
 
 ## タスク B. コードテストを生成する
 
@@ -77,38 +77,38 @@ lastmod: "2025-12-01T18:31:34+00:00"
 
 1. プロンプト `/tests` を入力します。次のようなテストが返ってきます:
 
-   ```go
-    package main
+      ```go
+      package main
 
-    import (
-        "testing"
-    )
+      import (
+          "testing"
+      )
 
-    func TestPrintPhrase(t *testing.T) {
-        tests := []struct {
-            name     string
-            index    int
-            expected string
-        }{
-            {"Valid index 0", 0, "Hello, world!"},
-            {"Valid index 2", 2, "Programming is fun"},
-            {"Valid index 4", 4, "Practice makes perfect"},
-            {"Negative index", -1, "Invalid index"},
-            {"Index out of range", 5, "Invalid index"},
-        }
+      func TestPrintPhrase(t *testing.T) {
+          tests := []struct {
+              name     string
+              index    int
+              expected string
+          }{
+              {"Valid index 0", 0, "Hello, world!"},
+              {"Valid index 2", 2, "Programming is fun"},
+              {"Valid index 4", 4, "Practice makes perfect"},
+              {"Negative index", -1, "Invalid index"},
+              {"Index out of range", 5, "Invalid index"},
+          }
 
-        for _, tt := range tests {
-            t.Run(tt.name, func(t *testing.T) {
-                result := print_phrase(tt.index)
-                if result != tt.expected {
-                    t.Errorf("print_phrase(%d) = %s; want %s", tt.index, result, tt.expected)
-                }
-            })
-        }
-    }
-   ```
+          for _, tt := range tests {
+              t.Run(tt.name, func(t *testing.T) {
+                  result := print_phrase(tt.index)
+                  if result != tt.expected {
+                      t.Errorf("print_phrase(%d) = %s; want %s", tt.index, result, tt.expected)
+                  }
+              })
+          }
+      }
+      ```
 
-   > いつでも `/explain` を使ってこのコードが何をしているかを確認できます。
+      > いつでも `/explain` を使ってこのコードが何をしているかを確認できます。
 
 1. テストをプロジェクトに追加するには、まず GitLab Duo が生成したコードをコピーします。
 
@@ -118,11 +118,11 @@ lastmod: "2025-12-01T18:31:34+00:00"
 
 1. Duo がパッケージとテストのインポートをまだ追加していない場合は、ファイルの先頭に次のコードを追加します:
 
-   ```go
-   package main
+      ```go
+      package main
 
-   import "testing"
-   ```
+      import "testing"
+      ```
 
 1. テストのインポートの下に、GitLab Duo が生成したテストを新しい行に貼り付けます。
 
@@ -140,26 +140,26 @@ lastmod: "2025-12-01T18:31:34+00:00"
 
 1. テストを実行するために `go test` コマンドを追加します。`.gitlab-ci.yml` ファイルは次のようになります:
 
-   ```yml
-   stages:
-       - build
-       - test
+      ```yml
+      stages:
+          - build
+          - test
 
-   default:
-       image: golang:latest
+      default:
+          image: golang:latest
 
-   build app:
-       stage: build
-       script:
-           - go get github.com/common-nighthawk/go-figure
-           - go run main.go
+      build app:
+          stage: build
+          script:
+              - go get github.com/common-nighthawk/go-figure
+              - go run main.go
 
-   test:
-       stage: test
-       script:
-           - go get github.com/common-nighthawk/go-figure
-           - go test ./...
-   ```
+      test:
+          stage: test
+          script:
+              - go get github.com/common-nighthawk/go-figure
+              - go test ./...
+      ```
 
 1. **Commit changes** を選択します。
 
@@ -173,4 +173,4 @@ lastmod: "2025-12-01T18:31:34+00:00"
 
 ## ご提案について
 
-ラボに変更を加えたい場合は、マージリクエスト経由で変更を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更を送信してください。

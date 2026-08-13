@@ -2,11 +2,11 @@
 title: ASE としての PTO 計画
 description: Assigned Support Engineer の PTO 計画
 upstream_path: /handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/planning-pto-as-ase/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T07:21:18+09:00"
+upstream_sha: "d8fb317567e8e271f91f602d97d453ad1a69a00a"
+translated_at: "2026-08-13T23:52:41+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-15T10:22:12-07:00"
+lastmod: "2026-08-12T14:22:07-05:00"
 ---
 
 ## ASE PTO 計画
@@ -25,7 +25,6 @@ Assigned Support Engineer (ASE) 契約に定められているとおり、私た
 
 - バックアップとアカウントおよびオープンチケットをレビューする
 - 顧客とアカウントチームに今後の不在とカバープランを伝える
-- アカウントを監視する SE が、新規チケットの到着時に通知を受け取れるよう、[Zendesk 通知アプリ](/handbook/eta/css/zendesk/apps/global#notifications-app)の設定を支援する
 - Slack の [`Time Off by Deel` の Delegate Tasks 機能](https://help.letsdeel.com/hc/en-gb/articles/11901927070737-How-To-Request-Time-Off-With-Deel-Plugin#h_01GNY1Q325CCDEMASHZCMMY4RS)を使用して、各アカウントについて誰がカバーするかを示す
 
 ### PTO からの復帰時

@@ -1,11 +1,11 @@
 ---
 title: オンコールプロセスとポリシー - Tier 2
 upstream_path: /handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/
-upstream_sha: "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca"
-translated_at: "2026-07-17T06:09:44+09:00"
+upstream_sha: "d8fb317567e8e271f91f602d97d453ad1a69a00a"
+translated_at: "2026-08-13T23:58:47+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-15T15:06:40+02:00"
+lastmod: "2026-08-13T15:10:33+03:00"
 ---
 
 Tier 2 ローテーションは、サポートのためにチームメンバーをページするかを人間が判断するオンコールローテーションを指します。
@@ -171,7 +171,7 @@ Fleet Visibility、Design Management、Environments、Deployments、Release Mana
 - スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01KBH1JNFC4M00T7KDJ4BCFRDD)
 - エスカレーション履歴リンク: [escalations](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01KBH1JNFC4M00T7KDJ4BCFRDD)
 - 主な Slack チャンネル: ##s_software-supply-chain-security (または #g_sscs_authentication、#g_sscs_authorization、#g_sscs_pipeline_security)
-- [詳細情報](/handbook/engineering/development/sec/software-supply-chain-security/oncall/)
+- [詳細情報](/handbook/engineering/development/sec/oncall/)
 
 **専門領域:**
 

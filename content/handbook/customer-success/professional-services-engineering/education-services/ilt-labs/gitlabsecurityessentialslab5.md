@@ -2,11 +2,11 @@
 title: "GitLab Security Essentials - ハンズオンラボ: DAST と API スキャン"
 description: "このハンズオンガイドは、プロジェクトでコンテナスキャンを使用するプロセスを案内します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab5/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T05:12:10Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:31:06+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-12T07:47:05-04:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 推定所要時間: 40 分
@@ -27,60 +27,30 @@ DAST スキャンをテストするために、[OWASP Juice Shop](https://owasp.
 
 1. まず、設定に DAST ステージを追加します:
 
-    ```yml
-    stages:
-      - dast
-    ```
+      ```yml
+      stages:
+        - dast
+      ```
 
 1. DAST は現在 CI/CD テンプレートを使用しています。ステージの下に以下を追加します。
 
-    ```yml
-    include:
-      - template: DAST.gitlab-ci.yml
-    ```
+      ```yml
+      include:
+        - template: DAST.gitlab-ci.yml
+      ```
 
 1. 専用のサーバーがないため、Juice Box アプリケーションを Docker サービスとして DAST に渡すことにします。これを行うために、テンプレートのインクルードの下にサービスを定義します:
 
-    ```yml
-    dast:
-      services:
-        - name: bkimminich/juice-shop:v16.0.0
-          alias: juiceshop
-    ```
+      ```yml
+      dast:
+        services:
+          - name: bkimminich/juice-shop:v16.0.0
+            alias: juiceshop
+      ```
 
 1. DAST スキャナーには様々な変数を提供できます。DAST スキャナーに以下の値を追加します:
 
-    ```yml
-    variables:
-        DAST_TARGET_URL: "http://juiceshop:3000/"
-        DAST_AUTH_URL: "http://juiceshop:3000/#/login"
-        DAST_FULL_SCAN: "false"
-        DAST_AUTH_USERNAME: "admin@juice-sh.op"
-        DAST_AUTH_PASSWORD: "admin123" # use protected/masked variables, this is only for demonstration purposes
-        DAST_AUTH_USERNAME_FIELD: "css:input[id=email]"
-        DAST_AUTH_PASSWORD_FIELD: "css:input[id=password]"
-        DAST_AUTH_SUBMIT_FIELD: "css:button[id=loginButton]"
-        DAST_SCOPE_EXCLUDE_ELEMENTS: "css:[id=navbarLogoutButton]"
-        DAST_AUTH_REPORT: "false"
-        DAST_REQUEST_COOKIES: "welcomebanner_status:dismiss,cookieconsent_status:dismiss"
-        DAST_CRAWL_GRAPH: "false"
-    ```
-
-    > いくつかの変数を説明すると、`DAST_TARGET_URL` と `DAST_AUTH_URL` はスキャンと認証のターゲットを提供します。`DAST_AUTH_USERNAME` と `DAST_AUTH_PASSWORD` で認証のための認証情報を提供します。`DAST_AUTH_USERNAME_FIELD` と関連するフィールド変数は DAST にログインデータを入力する場所を指示します。残りの設定はこのデモのスキャン時間を短縮するためのスキャン設定です。
-
-1. これらの値をすべて入力すると、yaml ファイルは以下のようになります:
-
-    ```yml
-    stages: # List of stages for jobs, and their order of execution
-      - dast
-
-    include:
-      - template: DAST.gitlab-ci.yml
-
-    dast:
-      services:
-        - name: bkimminich/juice-shop:v16.0.0
-          alias: juiceshop
+      ```yml
       variables:
           DAST_TARGET_URL: "http://juiceshop:3000/"
           DAST_AUTH_URL: "http://juiceshop:3000/#/login"
@@ -94,11 +64,41 @@ DAST スキャンをテストするために、[OWASP Juice Shop](https://owasp.
           DAST_AUTH_REPORT: "false"
           DAST_REQUEST_COOKIES: "welcomebanner_status:dismiss,cookieconsent_status:dismiss"
           DAST_CRAWL_GRAPH: "false"
-    ```
+      ```
+
+      > いくつかの変数を説明すると、`DAST_TARGET_URL` と `DAST_AUTH_URL` はスキャンと認証のターゲットを提供します。`DAST_AUTH_USERNAME` と `DAST_AUTH_PASSWORD` で認証のための認証情報を提供します。`DAST_AUTH_USERNAME_FIELD` と関連するフィールド変数は DAST にログインデータを入力する場所を指示します。残りの設定はこのデモのスキャン時間を短縮するためのスキャン設定です。
+
+1. これらの値をすべて入力すると、YAML ファイルは以下のようになります:
+
+      ```yml
+      stages: # List of stages for jobs, and their order of execution
+        - dast
+
+      include:
+        - template: DAST.gitlab-ci.yml
+
+      dast:
+        services:
+          - name: bkimminich/juice-shop:v16.0.0
+            alias: juiceshop
+        variables:
+            DAST_TARGET_URL: "http://juiceshop:3000/"
+            DAST_AUTH_URL: "http://juiceshop:3000/#/login"
+            DAST_FULL_SCAN: "false"
+            DAST_AUTH_USERNAME: "admin@juice-sh.op"
+            DAST_AUTH_PASSWORD: "admin123" # use protected/masked variables, this is only for demonstration purposes
+            DAST_AUTH_USERNAME_FIELD: "css:input[id=email]"
+            DAST_AUTH_PASSWORD_FIELD: "css:input[id=password]"
+            DAST_AUTH_SUBMIT_FIELD: "css:button[id=loginButton]"
+            DAST_SCOPE_EXCLUDE_ELEMENTS: "css:[id=navbarLogoutButton]"
+            DAST_AUTH_REPORT: "false"
+            DAST_REQUEST_COOKIES: "welcomebanner_status:dismiss,cookieconsent_status:dismiss"
+            DAST_CRAWL_GRAPH: "false"
+      ```
 
 1. これらの変更をコミットし、DAST スキャンを実行させます。**ビルド > パイプライン** からジョブの進行状況を監視できます。
 
-    > 注: このジョブは完了まで最大 15 分かかることがあります。
+      > 注: このジョブは完了まで最大 15 分かかることがあります。
 
 1. 完了したら、左サイドバーで **Secure > 脆弱性レポート** を選択します。
 
@@ -116,28 +116,28 @@ API スキャナーを使用すると、アプリケーションの API エン�
 
 1. コンテナに API スキャンを追加するには、`dast` ステージを定義し、API セキュリティテンプレートを追加します。
 
-    ```yml
-    include:
-    #Other scanners would be here as well.
-        - template: API-Security.gitlab-ci.yml
+      ```yml
+      include:
+      #Other scanners would be here as well.
+          - template: API-Security.gitlab-ci.yml
 
-    stages:
-        - build
-        - test
-        - dast
-    ```
+      stages:
+          - build
+          - test
+          - dast
+      ```
 
 1. API スキャナーのジョブ定義を追加します。
 
-    ```yml
-    api_security:
-        services:
-            - name: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
-              alias: target
-        variables:
-            APISEC_POSTMAN_COLLECTION: postman_collection.json
-            APISEC_TARGET_URL: http://target:7777
-    ```
+      ```yml
+      api_security:
+          services:
+              - name: $CI_REGISTRY_IMAGE/$CI_COMMIT_REF_SLUG:$CI_COMMIT_SHA
+                alias: target
+          variables:
+              APISEC_POSTMAN_COLLECTION: postman_collection.json
+              APISEC_TARGET_URL: http://target:7777
+      ```
 
 1. これらの変更をコミットし、パイプラインが完了した後に結果を確認します。
 
@@ -147,4 +147,4 @@ API スキャナーを使用すると、アプリケーションの API エン�
 
 ## ご提案・改善点
 
-ラボに変更を加えたい場合は、マージリクエストで変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

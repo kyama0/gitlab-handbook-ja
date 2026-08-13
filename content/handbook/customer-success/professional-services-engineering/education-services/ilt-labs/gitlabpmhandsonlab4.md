@@ -1,15 +1,15 @@
 ---
-title: "GitLab アジャイルポートフォリオ管理 - ハンズオンラボ: MRとWikiによるコラボレーション"
-description: "このハンズオンガイドでは、GitLab でマージリクエストとWikiを作成する方法を学習します。"
+title: "GitLab Agile Portfolio Management- ハンズオンラボ: MR と Wiki を通じたコラボレーション"
+description: "このハンズオンガイドでは、GitLab でマージリクエストと Wiki を作成する方法を学習します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab4/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:21:21+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-31T13:39:57+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
-> 完了までの推定時間: 45分
+> 完了までの推定時間: 45 分
 
 ## 目標
 
@@ -29,11 +29,11 @@ lastmod: "2026-03-31T13:39:57+01:00"
 
 1. **Groups** フィールドで **Infrastructure** グループを選択します。「All groups」オプションを使用してトップレベルグループを検索する必要があるかもしれません。
 
-    > 検索結果を絞り込むには、`/awesome/infrastructure` または `yourgroupname/awesome/infrastructure` で検索してみてください。
+      > 検索結果を絞り込むには、`/awesome/infrastructure` または `yourgroupname/awesome/infrastructure` で検索してみてください。
 
 1. **Save changes** をクリックします。
 
-1. **Merge Requests** ページの **Merge request approvals** セクションに戻り、**Add approval rule** をクリックして2番目のプロジェクトレベルのルールを作成します。
+1. **Merge Requests** ページの **Merge request approvals** セクションに戻り、**Add approval rule** をクリックして 2 番目のプロジェクトレベルのルールを作成します。
 
 1. **Rule name** フィールドに `Security operations` と入力します。
 
@@ -51,9 +51,9 @@ lastmod: "2026-03-31T13:39:57+01:00"
 
 1. **Family Budget Calculator** プロジェクトで、左ペインの **Issues** をクリックします。
 
-1. **Third-party financial services integration** Issueをクリックします。
+1. **Third-party financial services integration** Issue をクリックします。
 
-1. Issueの説明の下にある **Create merge request** ボタンをクリックします。
+1. Issue の説明の下にある **Create merge request** ボタンをクリックします。
 
 1. **Branch name** フィールドのテキストを `update-db-docs-perf-tools` に変更します。
 
@@ -65,11 +65,11 @@ lastmod: "2026-03-31T13:39:57+01:00"
 
     > マージリクエストのタイトルの先頭に **'Draft:'** を付けると、マージリクエストは「準備完了」とマークされるまでマージが行われません。これはマージリクエストがまだマージ準備ができていないことを示し、誤ったマージを防ぐために使用されます。タイトルに **'Draft:'** を追加すると、タイトルの下にある **Mark as draft** チェックボックスも自動的にチェックされることに注意してください。
 
-1. **Description** フィールドから `Closes #<issue-number>` を削除します。元のIssueを追加作業のためにオープンのままにしておきたいです。
+1. **Description** フィールドから `Closes #<issue-number>` を削除します。元の Issue を追加作業のためにオープンのままにしておきたいです。
 
-    > マージリクエストの説明に `Closes #<issue-number>` がある場合、マージリクエストがマージされるとIssueがクローズされます。
+    > マージリクエストの説明に `Closes #<issue-number>` がある場合、マージリクエストがマージされると Issue がクローズされます。
 
-1. Assignees セクションを確認して、マージリクエストが自分に割り当てられていることを確認します。Issueから継承されたラベルやプロジェクト設定から継承された承認ルールも確認してください。
+1. Assignees セクションを確認して、マージリクエストが自分に割り当てられていることを確認します。Issue から継承されたラベルやプロジェクト設定から継承された承認ルールも確認してください。
 
 1. **Create Merge Request** ボタンをクリックします。
 
@@ -79,15 +79,15 @@ lastmod: "2026-03-31T13:39:57+01:00"
 
 1. 左ファイルペインから **README.md** をクリックします。
 
-1. **README.md** の3行目から以下の内容を貼り付けます。
+1. **README.md** の 3 行目から以下の内容を貼り付けます。
 
-    ```markdown
-    ## Performance tools
-    The Family Budget Calculator currently uses HAProxy for load balancing.
-    We are researching and testing additional tools to improve performance.
-    ```
+      ```markdown
+      ## Performance tools
+      The Family Budget Calculator currently uses HAProxy for load balancing.
+      We are researching and testing additional tools to improve performance.
+      ```
 
-1. 左ペインで **Source Control**（上から3番目のボタン）をクリックします。
+1. 左ペインで **Source Control**（上から 3 番目のボタン）をクリックします。
 
 1. **Commit message** フィールドに `Update docs with performance tools` と入力します。
 
@@ -121,9 +121,9 @@ lastmod: "2026-03-31T13:39:57+01:00"
 
 1. 左ペインで **Code > Merge requests** をクリックします。マージリクエストはこのページの **Merged** タブの下に表示されます。
 
-## タスク D. プロジェクトドキュメント用のWikiを作成する
+## タスク D. プロジェクトドキュメント用の Wiki を作成する
 
-> リポジトリではなく、コードと同じプロジェクト内にドキュメントを保管したい場合は、GitLab が各 GitLab プロジェクトに提供するWikiを使用できます。すべてのWikiは独立したGitリポジトリなので、Webインターフェイスまたはローカルのgitを使用してWikiページを作成できます。GitLab のWikiは、コンテンツとしてMarkdown、Rdoc、AsciiDoc、Orgをサポートしています。Markdownで書かれたWikiページはすべてのMarkdown機能をサポートし、リンクのWiki固有の動作も提供します。Wikiの詳細については[こちら](https://docs.gitlab.com/ee/user/project/wiki/)を参照してください。
+> リポジトリではなく、コードと同じプロジェクト内にドキュメントを保管したい場合は、GitLab が各 GitLab プロジェクトに提供する Wiki を使用できます。すべての Wiki は独立した Git リポジトリなので、Web インターフェイスまたはローカルの git を使用して Wiki ページを作成できます。GitLab の Wiki は、コンテンツとして Markdown、Rdoc、AsciiDoc、Org をサポートしています。Markdown で書かれた Wiki ページはすべての Markdown 機能をサポートし、リンクの Wiki 固有の動作も提供します。[GitLab Wiki の詳細はこちら](https://docs.gitlab.com/ee/user/project/wiki/)を参照してください。
 
 1. **Software > Core** サブグループの **Family Budget Calculator** プロジェクトに移動します。
 
@@ -135,19 +135,19 @@ lastmod: "2026-03-31T13:39:57+01:00"
 
 1. タイトルフィールドの下にあるコンテンツフィールドに以下のテキストを貼り付けます。
 
-    ```markdown
-    ## Summary
+      ```markdown
+      ## Summary
 
-    The Family Budget Calculator helps households stay on budget and save for the future.
+      The Family Budget Calculator helps households stay on budget and save for the future.
 
-    ## Contact
+      ## Contact
 
-    Contact <your-name> with questions or comments.
-    ```
+      Contact <your-name> with questions or comments.
+      ```
 
-1. **Create Page** をクリックします。作成したコンテンツを含む新しいWikiページが表示されます。
+1. **Create Page** をクリックします。作成したコンテンツを含む新しい Wiki ページが表示されます。
 
-> 必要に応じて、**Family Budget Calculator Documentation** ページを編集して追加コンテンツを追加したり、追加のWikiページを作成したりしてください。
+> 必要に応じて、**Family Budget Calculator Documentation** ページを編集して追加コンテンツを追加したり、追加の Wiki ページを作成したりしてください。
 
 ## ラボガイド完了
 
@@ -155,4 +155,4 @@ lastmod: "2026-03-31T13:39:57+01:00"
 
 ## ご提案はありますか?
 
-ラボへの変更を希望する場合は、マージリクエストで変更を送信してください。
+このラボを変更したい場合は、マージリクエストを通じて変更を送信してください。

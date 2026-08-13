@@ -2,11 +2,11 @@
 title: Growth の方向性
 canonical_path: "/handbook/marketing/growth/"
 upstream_path: /handbook/marketing/growth/
-upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
-translated_at: "2026-05-01T12:25:17Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T23:52:41+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-09T20:14:47+00:00"
+lastmod: "2026-08-12T10:14:59-04:00"
 ---
 
 ## Growth セクションの概要
@@ -81,7 +81,7 @@ Growth::Acquisition チームは、GitLab.com および Self-Managed インス�
 **連絡先:**
 
 * **Product Manager:** [@efergen](https://gitlab.com/efergen)
-* **Slack:** [#g_acquisition](https://gitlab.slack.com/channels/g_acquisition)
+* **Slack:** [#s_growth](https://gitlab.slack.com/channels/s_growth)
 
 チームは、登録体験の改善やユーザー獲得戦略に関するデータに基づいた意思決定を推進するために、包括的なユーザーリサーチ、分析ダッシュボード、実験フレームワークを維持しています。
 

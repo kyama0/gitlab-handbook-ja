@@ -2,11 +2,11 @@
 title: "GitLab システム管理者 - ハンズオンラボ: GitLab Kubernetes インスタンスの探索"
 description: "このハンズオンガイドでは、GitLab Kubernetes インスタンスでのコマンドラインツールへのアクセスと操作方法を紹介します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab2k8s/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T16:44:44Z"
 translator: claude
 stale: false
-lastmod: "2026-01-05T09:24:54-05:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 ## 目的
@@ -23,23 +23,23 @@ SSH を使用して GitLab インストールにアクセスします。この�
 
 1. SSH 接続では、プライベートキーファイルに他のユーザーがアクセスできないようにする必要があります。Linux および MacOS では、次のコマンドで設定できます。
 
-    ```bash
-    chmod 400 <keyfile_name>
-    ```
+      ```bash
+      chmod 400 <keyfile_name>
+      ```
 
-    Windows では、次のコマンドで設定できます。
+      Windows では、次のコマンドで設定できます。
 
-    ```bash
-    icacls .\keyname.pem /inheritance:r
-    ```
+      ```bash
+      icacls .\keyname.pem /inheritance:r
+      ```
 
 1. 割り当てられた IP アドレスと SSH キーファイルを使用して、GitLab Omnibus インストールをホストするサーバーにログインします。
 
-    ```bash
-    ssh -i <keyfile_name> student-user@<vm_ip_address>
-    ```
+      ```bash
+      ssh -i <keyfile_name> student-user@<vm_ip_address>
+      ```
 
-    > WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! というエラーが表示された場合は、SSH の known hosts をリセットする必要があるかもしれません。これを行うには、`ssh-keygen -R <vm_ip_address>` コマンドを実行してください。
+      > WARNING: REMOTE HOST IDENTIFICATION HAS CHANGED! というエラーが表示された場合は、SSH の known hosts をリセットする必要があるかもしれません。これを行うには、`ssh-keygen -R <vm_ip_address>` コマンドを実行してください。
 
 1. Enter キーを押します。
 
@@ -53,37 +53,37 @@ SSH を使用して GitLab インストールにアクセスします。この�
 
 1. インスタンスで `kubectl get pods` コマンドを実行します。以下のような出力が表示されます。
 
-    ```bash
-        NAME                                              READY   STATUS      RESTARTS        AGE
-        gitlab-certmanager-7c799d587-9czfz                1/1     Running     0               4m5s
-        gitlab-certmanager-cainjector-9485f8595-976d7     1/1     Running     0               4m3s
-        gitlab-certmanager-webhook-dcf65786c-kfvhg        1/1     Running     0               4m3s
-        gitlab-gitaly-0                                   1/1     Running     0               4m3s
-        gitlab-gitlab-exporter-76db6c9754-pcscv           1/1     Running     0               4m2s
-        gitlab-gitlab-shell-557686d7fc-x6rhm              1/1     Running     0               4m5s
-        gitlab-issuer-e45fa94-dp584                       0/1     Completed   0               4m3s
-        gitlab-kas-5474bdbfdf-p6qw4                       1/1     Running     4 (2m59s ago)   4m5s
-        gitlab-kas-5474bdbfdf-pzqwm                       1/1     Running     4 (2m57s ago)   3m50s
-        gitlab-migrations-92d5ea2-x6lc5                   0/1     Completed   1               4m2s
-        gitlab-minio-5d646cdfb7-cdgw7                     1/1     Running     0               4m5s
-        gitlab-minio-create-buckets-5359da5-rccp6         0/1     Completed   0               4m3s
-        gitlab-nginx-ingress-controller-5dd6f5f49-9k2cq   1/1     Running     0               4m5s
-        gitlab-nginx-ingress-controller-5dd6f5f49-dgvft   1/1     Running     0               4m3s
-        gitlab-postgresql-0                               2/2     Running     0               4m3s
-        gitlab-prometheus-server-c7f9d89dc-wz48w          2/2     Running     0               4m5s
-        gitlab-redis-master-0                             2/2     Running     0               4m3s
-        gitlab-registry-79f74497dd-bk8gw                  1/1     Running     0               4m3s
-        gitlab-registry-79f74497dd-g9s84                  1/1     Running     0               3m50s
-        gitlab-sidekiq-all-in-1-v2-54dfb45f84-d5gbq       1/1     Running     0               4m2s
-        gitlab-toolbox-9cdd66dc5-pz4gz                    1/1     Running     0               4m2s
-        gitlab-webservice-default-67f8cbfd9b-cmn7p        2/2     Running     0               4m3s
-    ```
+      ```bash
+          NAME                                              READY   STATUS      RESTARTS        AGE
+          gitlab-certmanager-7c799d587-9czfz                1/1     Running     0               4m5s
+          gitlab-certmanager-cainjector-9485f8595-976d7     1/1     Running     0               4m3s
+          gitlab-certmanager-webhook-dcf65786c-kfvhg        1/1     Running     0               4m3s
+          gitlab-gitaly-0                                   1/1     Running     0               4m3s
+          gitlab-gitlab-exporter-76db6c9754-pcscv           1/1     Running     0               4m2s
+          gitlab-gitlab-shell-557686d7fc-x6rhm              1/1     Running     0               4m5s
+          gitlab-issuer-e45fa94-dp584                       0/1     Completed   0               4m3s
+          gitlab-kas-5474bdbfdf-p6qw4                       1/1     Running     4 (2m59s ago)   4m5s
+          gitlab-kas-5474bdbfdf-pzqwm                       1/1     Running     4 (2m57s ago)   3m50s
+          gitlab-migrations-92d5ea2-x6lc5                   0/1     Completed   1               4m2s
+          gitlab-minio-5d646cdfb7-cdgw7                     1/1     Running     0               4m5s
+          gitlab-minio-create-buckets-5359da5-rccp6         0/1     Completed   0               4m3s
+          gitlab-nginx-ingress-controller-5dd6f5f49-9k2cq   1/1     Running     0               4m5s
+          gitlab-nginx-ingress-controller-5dd6f5f49-dgvft   1/1     Running     0               4m3s
+          gitlab-postgresql-0                               2/2     Running     0               4m3s
+          gitlab-prometheus-server-c7f9d89dc-wz48w          2/2     Running     0               4m5s
+          gitlab-redis-master-0                             2/2     Running     0               4m3s
+          gitlab-registry-79f74497dd-bk8gw                  1/1     Running     0               4m3s
+          gitlab-registry-79f74497dd-g9s84                  1/1     Running     0               3m50s
+          gitlab-sidekiq-all-in-1-v2-54dfb45f84-d5gbq       1/1     Running     0               4m2s
+          gitlab-toolbox-9cdd66dc5-pz4gz                    1/1     Running     0               4m2s
+          gitlab-webservice-default-67f8cbfd9b-cmn7p        2/2     Running     0               4m3s
+      ```
 
-    > status コマンドにより、サーバー上で実行されている GitLab コンポーネントの概要が表示されます。ここに示されているものとコンポーネント名が異なる場合があります。
+      > status コマンドにより、サーバー上で実行されている GitLab コンポーネントの概要が表示されます。ここに示されているものとコンポーネント名が異なる場合があります。
 
 1. 次に、特定の Pod の詳細を確認してみましょう。これを行うには、`kubectl describe pod <your-webservice-pod-name>` コマンドを実行します。
 
-    > この出力では、webservice Pod に関する詳細情報が表示されます。この出力は、GitLab インスタンスコンポーネントのトラブルシューティングと監視に役立ちます。
+      > この出力では、Webservice Pod に関する詳細情報が表示されます。この出力は、GitLab インスタンスコンポーネントのトラブルシューティングと監視に役立ちます。
 
 ## タスク C. helm の操作
 
@@ -101,7 +101,7 @@ Kubernetes を操作する場合、管理タスクの多くは helm を通じて
 
 1. これらの値が正常にデプロイされることを確認するために、値ファイルをデプロイしてみましょう。これを行うには、`helm upgrade gitlab gitlab/gitlab --version 9.4.3 -f values.yml` コマンドを実行します。
 
-    > このコマンドの実行には数分かかる場合があります。
+      > このコマンドの実行には数分かかる場合があります。
 
 1. コマンドが完了したら、`kubectl get pods` を実行します。すべての Pod が正常にデプロイを完了していることを確認します。
 
@@ -115,7 +115,7 @@ GitLab Rails は、Ruby on Rails を通じて GitLab と直接やり取りでき
 
 1. コマンドが完了したら、`u = User.find_by_username('root')` を実行します。
 
-    > このコマンドにより、GitLab でユーザー名が `root` のユーザーを検索し、変数 `u` に格納します。
+      > このコマンドにより、GitLab でユーザー名が `root` のユーザーを検索し、変数 `u` に格納します。
 
 1. `pp u.attributes` を使用してユーザーの属性を表示します。
 
@@ -129,4 +129,4 @@ GitLab Rails は、Ruby on Rails を通じて GitLab と直接やり取りでき
 
 ## ご提案はありますか?
 
-ラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

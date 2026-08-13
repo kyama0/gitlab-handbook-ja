@@ -3,11 +3,11 @@ title: GitLab Dedicated 向けの Hosted Runner
 category: GitLab Dedicated
 description: "GitLab Dedicated サポート - Hosted Runner"
 upstream_path: /handbook/support/workflows/dedicated_runners/
-upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
-translated_at: "2026-05-08T21:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T23:52:41+09:00"
 translator: claude
 stale: false
-lastmod: "2025-02-24T23:06:08+00:00"
+lastmod: "2026-08-13T17:55:10+08:00"
 ---
 ## Hosted Runner
 
@@ -26,14 +26,17 @@ FY25 Q4 のベータテストとして最初に提供された製品で、FY26 Q
 
 `gitlab-runner` および `systemd` のログは、[GitLab Dedicated アプリケーションログ](dedicated_logs.html) と並んで OpenSearch で利用できます。
 
+CI ジョブログは OpenSearch に**取り込まれません**。ジョブログについては、顧客に直接お問い合わせください。
+
 Runner 関連のログのみを表示するには:
 
 1. 全般的に `fluentd_tag:cloudwatch.*` でフィルタします
 2. 初期結果の `_source` 列からより正確な `fluentd_tag:cloudwatch.<name>-fleeting-logs` を取得し、適用します。
    `<name>` は顧客固有の値（[Runner Model](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/runner-model-schema/) の **CommonProperties** の属性）ですが、まだ Switchboard では利用できません。
-3. `cloudwatch.<name>` に基づいた同じプレフィックスを使用して、`manager-logs` も利用できます。
+3. `cloudwatch.<name>` に基づいた同じプレフィックスを使用すると、`manager-logs` も利用できます。
 
-ジョブログについては顧客にお問い合わせください。
+Dedicated Hosted Runner チームによる追加のトラブルシューティングガイダンスについては、
+[Hosted Runner トラブルシューティングランブック](https://gitlab-com.gitlab.io/gl-infra/gitlab-dedicated/team/runbooks/hosted-runners-troubleshooting.html#accessing-logs-in-opensearch)を参照してください。
 
 ## モニタリング
 

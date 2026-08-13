@@ -2,11 +2,11 @@
 title: "Enterprise Applications - CRM チーム"
 description: "Enterprise Applications CRM チームは、GitLab 内のビジネスプロセスをサポートする専門アプリケーションを実装し、サポートしています。"
 upstream_path: /handbook/sales/field-operations/sales-systems/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T10:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T23:52:41+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-24T23:47:10+00:00"
+lastmod: "2026-08-13T15:10:33+03:00"
 ---
 
 
@@ -344,7 +344,7 @@ GitLab の[パスワードセキュリティのベストプラクティス](/han
 
 - Sales Systems チームは、`GitLab.com` レベルで Milestones として追跡される 2 週間のスプリント/イテレーションで作業します。これは、私たちのビジネスパートナーの多くが運営する方法と Sale Systems チームを整合させますが、[GitLab が提供する](https://about.gitlab.com/solutions/agile-delivery/)ソリューションの 1 つも活用しています
 - Systems チームは、私たちのチームを [GitLab の Values](/handbook/values/#credit) と最も効果的に整合させると信じているため、milestones の計画と実行において以下の原則をエミュレートするよう努めています
-  - [「少なく始めて、多く終わらせる」](/handbook/engineering/development/sec/software-supply-chain-security/pipeline-security/#starting-new-work)
+  - [「少なく始めて、多く終わらせる」](/handbook/engineering/development/sec/security-platform/secrets-manager/#starting-new-work)
   - [「Issue のチャーンを減らす」](/handbook/engineering/devops/runner)
 
 ### Sales Systems からヘルプを得るためのステップ

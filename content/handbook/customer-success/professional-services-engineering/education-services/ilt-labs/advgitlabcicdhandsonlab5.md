@@ -2,11 +2,11 @@
 title: "GitLab Advanced CI/CD - ハンズオンラボ: 複雑なプロセスの設定"
 description: "このハンズオンガイドでは、複雑な CI/CD プロセスの一般的な設定について説明します"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab5/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T15:26:34Z"
 translator: claude
 stale: false
-lastmod: "2026-01-05T13:07:07+00:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 このラボでは、マージトレインとマージコンフリクトを中心に、より複雑なマージプロセスを分析します。まず、マージトレインから始めます。
@@ -52,14 +52,14 @@ lastmod: "2026-01-05T13:07:07+00:00"
 
 1. マージリクエストパイプラインでジョブが実行されるように、次のルールを追加します:
 
-    ```yml
-    workflow:
-      auto_cancel:
-        on_job_failure: all
-      rules:
-        - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-        - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
-    ```
+      ```yml
+      workflow:
+        auto_cancel:
+          on_job_failure: all
+        rules:
+          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+          - if: $CI_COMMIT_BRANCH == $CI_DEFAULT_BRANCH
+      ```
 
       現在のパイプラインは次のようになります:
 
@@ -284,4 +284,4 @@ lastmod: "2026-01-05T13:07:07+00:00"
 
 ## ご提案は?
 
-ラボへの変更をご希望の場合は、マージリクエストで変更内容を送信してください。
+このラボへの変更をご希望の場合は、マージリクエストを通じて変更内容を送信してください。

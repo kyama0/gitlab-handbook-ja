@@ -2,9 +2,9 @@
 title: "Verify プロダクトグループ"
 description: "Verify Product Group は、共有、発見可能性、非同期コミュニケーションへのバイアスを高めることを目指しています。"
 upstream_path: /handbook/product/groups/verify/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-lastmod: "2026-05-20T09:32:02-07:00"
-translated_at: "2026-05-23T12:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+lastmod: "2026-08-13T15:10:33+03:00"
+translated_at: "2026-08-13T23:52:41+09:00"
 translator: claude
 stale: false
 ---
@@ -30,7 +30,7 @@ Verify チーム:
 - [Verify:Pipeline Execution](/handbook/engineering/devops/verify/pipeline-execution/)
 - [Verify:Pipeline Authoring](/handbook/engineering/devops/verify/pipeline-authoring/)
 - [Verify:Runner](/handbook/engineering/devops/runner/)
-- [Verify:Pipeline Security](/handbook/engineering/development/sec/software-supply-chain-security/pipeline-security/)
+- [Sec:Secrets Manager](/handbook/engineering/development/sec/security-platform/secrets-manager/)
 
 ### あなたたちは何をしているのですか?
 

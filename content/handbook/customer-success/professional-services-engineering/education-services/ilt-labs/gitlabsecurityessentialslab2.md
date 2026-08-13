@@ -2,11 +2,11 @@
 title: "GitLab Security Essentials - ハンズオンラボ: 脆弱性への対応"
 description: "このハンズオンガイドは、アプリケーションの脆弱性をトリアージして対応する方法を案内します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab2/
-upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
-translated_at: "2026-08-01T15:59:51+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:31:06+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-27T10:23:40-04:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 推定所要時間: 15 分
@@ -71,4 +71,4 @@ lastmod: "2026-07-27T10:23:40-04:00"
 
 ## ご提案・改善点
 
-ラボに変更を加えたい場合は、マージリクエストで変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

@@ -2,9 +2,9 @@
 title: "GitLab Duo Principles - ハンズオンラボ: GitLab Duo Agent Platform"
 description: "このハンズオンガイドでは、GitLab Duo Agent Platform を使って複雑なトピックを処理する手順を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab6/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-09T10:04:35-04:00
-translated_at: "2026-06-12T21:18:07Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+lastmod: "2026-08-13T07:16:24-04:00"
+translated_at: "2026-08-14T00:34:30+09:00"
 translator: claude
 stale: false
 ---
@@ -19,7 +19,7 @@ stale: false
 
 > 所要時間の目安: 15 分
 
-## タスク A: Duo Agentic Chat で Issue とマージリクエストを作成する
+## タスク A: Duo Agentic Chat を通じて Issue とマージリクエストを作成する
 
 1. 画面上部で **+ > New project/repository** を選択します。
 
@@ -33,52 +33,52 @@ stale: false
 
 1. Project name フィールドに **DAP Demo** と入力します。
 
-1. Project URL フィールドで、ドロップダウンから（ユーザーではなく）**group** を選択します。
+1. Project URL フィールドで、ドロップダウンリストから（ユーザーではなく）**group** を選択します。
 
 1. その他はすべてデフォルトのままにして、**Create project** を選択します。
 
-    このワークショップ全体を通じて、GitLab Duo Chat から Agentic な AI 生成サポートを受けます。
+      > このワークショップ全体を通じて、GitLab Duo Chat から Agentic な AI 生成サポートを受けます。
 
 1. 右上隅で、GitLab Duo Chat アイコンを選択します。
 
 1. GitLab Duo エージェントを選択します。すでに GitLab Duo エージェントを使用している場合は、**Current GitLab Duo Chat** をクリックします。
 
-    **注意:** エージェントを選択するオプションが表示されなかった場合、おそらく Agentic chat を使用していないためです。その場合は、入力フィールドのすぐ上にある `Agentic` スライダーをクリックして Agentic chat を有効にしてください。その後、上記の手順を繰り返します。
+      **注意:** エージェントを選択するオプションが表示されなかった場合、おそらく Agentic chat を使用していないためです。その場合は、入力フィールドのすぐ上にある `Agentic` スライダーをクリックして Agentic chat を有効にしてください。その後、上記の手順を繰り返します。
 
 1. `/reset` と入力してコンテキストをクリアします。
 
 1. 次のプロンプトをコピーしてチャットに貼り付けます:
 
-    ```prompt
-    Read the file `RunBooks/issues_and_mrs_lvl-101.json` and create GitLab issues and merge requests.
+      ```prompt
+      Read the file `RunBooks/issues_and_mrs_lvl-101.json` and create GitLab issues and merge requests.
 
-    **RULES:**
-    - Process items sequentially - finish one completely before starting the next
-    - Once an issue is created, move on (do NOT recreate)
-    - Skip labels entirely (not supported)
+      **RULES:**
+      - Process items sequentially - finish one completely before starting the next
+      - Once an issue is created, move on (do NOT recreate)
+      - Skip labels entirely (not supported)
 
-    **For each item in "issues" array:**
+      **For each item in "issues" array:**
 
-    1. **Create Issue** - use "title" and "description" fields
-    2. **Create Branch** - use exact "source_branch" name, base from main
-    3. **Create MR** - use "mr_title", "mr_description" + "Closes #<issue_iid>", target main
-    4. **Add Note** - only if "add_note" is true, use "note_content"
+      1. **Create Issue** - use "title" and "description" fields
+      2. **Create Branch** - use exact "source_branch" name, base from main
+      3. **Create MR** - use "mr_title", "mr_description" + "Closes #<issue_iid>", target main
+      4. **Add Note** - only if "add_note" is true, use "note_content"
 
-    **Expected Result:**
-    - 3 issues
-    - 3 branches
-    - 3 MRs (each linked to its issue)
-    - 1 note on the third MR
+      **Expected Result:**
+      - 3 issues
+      - 3 branches
+      - 3 MRs (each linked to its issue)
+      - 1 note on the third MR
 
-    **After completion, report:**
-    - Each issue IID and URL
-    - Each MR IID, URL, and linked issue
-    - Any errors encountered
-    ```
+      **After completion, report:**
+      - Each issue IID and URL
+      - Each MR IID, URL, and linked issue
+      - Any errors encountered
+      ```
 
 1. Duo Chat が実行しようとしているアクションの `Approve` を求められた場合は、承認してください。
 
-    > Duo Chat は私たちのために既存のブランチ上に Issue とマージリクエストを作成し、作業できるプロジェクトセットアップを整えます。承認が必要なのは 9 回程度です。あなたは HITL（Human in the Loop）です。その後、締めくくりとして `Completion Report` が表示されます。
+      > Duo Chat は私たちのために既存のブランチ上に Issue とマージリクエストを作成し、作業できるプロジェクトセットアップを整えます。承認が必要なのは 9 回程度です。あなたは HITL（Human in the Loop）です。その後、締めくくりとして `Completion Report` が表示されます。
 
 1. フローが完了したら、Issue とマージリクエストを表示して、タスクが完了したことを確認します。
 
@@ -90,15 +90,15 @@ GitLab Duo Chat がさまざまな開発タスクを支援するインテリジ�
 
 1. 新しいチャットウィンドウで次のプロンプトを尋ねます:
 
-    ```prompt
-    Analyze this project's structure and suggest improvements for maintainability and scalability
-    ```
+      ```prompt
+      Analyze this project's structure and suggest improvements for maintainability and scalability
+      ```
 
 1. 出力を読んだ後、次のプロンプトでフォローアップします:
 
-    ```prompt
-    Create an issue in this project based on your recommendations.
-    ```
+      ```prompt
+      Create an issue in this project based on your recommendations.
+      ```
 
 1. ツールの使用を承認し、Duo が作成した Issue を読みます。
 
@@ -106,17 +106,17 @@ GitLab Duo Chat がさまざまな開発タスクを支援するインテリジ�
 
 1. **Add new chat** ボタンを選択し、**Planner** エージェントを選択します。
 
-1. チャットボックスで次のプロンプトを入力します:
+1. エージェントに次のプロンプトを入力します:
 
-    ```prompt
-    Give me the Quick Wins for this project.
-    ```
+      ```prompt
+      Give me the Quick Wins for this project.
+      ```
 
 1. AI がプロジェクト全体のコンテキストを理解し、作業に優先順位を付ける様子が分かります。エージェントのこれらの推奨事項に従い、次のプロンプトを入力してエージェントとの作業を続けましょう:
 
-    ```prompt
-    Give me the link to the item in Priority 1.
-    ```
+      ```prompt
+      Give me the link to the item in Priority 1.
+      ```
 
 ## タスク C. プロジェクトの Issue の状態を確認する
 
@@ -126,11 +126,11 @@ GitLab Duo Chat がさまざまな開発タスクを支援するインテリジ�
 
 1. 次のプロンプトを入力します:
 
-    ```prompt
-    Which issues are missing estimates, due dates or assignees?
-    ```
+      ```prompt
+      Which issues are missing estimates, due dates or assignees?
+      ```
 
-    結果を観察します。これはあなたとチームがプロジェクトの状態をより把握するのに役立ちます。
+      結果を観察します。これはあなたとチームがプロジェクトの状態をより把握するのに役立ちます。
 
 ## タスク D. 開発タスクのために Duo Chat を探る
 
@@ -140,27 +140,27 @@ Duo Chat がさまざまな開発計画・分析タスクをどのように支�
 
 1. プロジェクトのテスト戦略について Duo に尋ねてみます:
 
-    ```prompt
-    Recommend a comprehensive testing strategy for this application, including unit, integration, and end-to-end tests
-    ```
+      ```prompt
+      Recommend a comprehensive testing strategy for this application, including unit, integration, and end-to-end tests
+      ```
 
 1. パフォーマンスに関するインサイトを得ます:
 
-    ```prompt
-    Analyze this Python application for potential performance bottlenecks and suggest optimizations. Output suggestions in chat.
-    ```
+      ```prompt
+      Analyze this Python application for potential performance bottlenecks and suggest optimizations. Output suggestions in chat.
+      ```
 
 1. デプロイメントアプローチについて尋ねます:
 
-    ```prompt
-    What would be the best deployment strategy for this Python application? Include considerations for scaling and monitoring.
-    ```
+      ```prompt
+      What would be the best deployment strategy for this Python application? Include considerations for scaling and monitoring.
+      ```
 
 1. モダナイゼーションの推奨事項を探ります:
 
-    ```prompt
-    How can I modernize this Python application to use current best practices and frameworks?
-    ```
+      ```prompt
+      How can I modernize this Python application to use current best practices and frameworks?
+      ```
 
 ## オプション: さらなる練習
 
@@ -189,4 +189,4 @@ Issue should include:
 
 ## ご提案はありますか？
 
-ラボに変更を加えたい場合は、マージリクエストで変更を提出してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更を提出してください。

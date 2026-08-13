@@ -2,14 +2,14 @@
 title: "GitLab Compliance - ハンズオンラボ: パイプライン実行ポリシー"
 description: "このハンズオンガイドでは、プロジェクトでパイプライン実行ポリシーを有効化して使用する方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab5/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:53:30+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-14T10:08:46+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
-> 完了までの推定時間: 15分
+> 完了までの推定時間: 15 分
 
 ## 目標
 
@@ -35,17 +35,17 @@ CI/CD ジョブが一貫してコンプライアンスに準拠した方法で�
 
 1. ファイルに以下の内容を追加します:
 
-    ```yml
-    stages:
-        - test
+      ```yml
+      stages:
+          - test
 
-    include:
-        component: ilt.gitlabtraining.cloud/components/sast/sast@main
+      include:
+          component: ilt.gitlabtraining.cloud/components/sast/sast@main
 
-    semgrep-sast:
-        rules:
-            - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
-    ```
+      semgrep-sast:
+          rules:
+              - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+      ```
 
 1. これらの変更をプロジェクトの main ブランチにコミットします。
 
@@ -73,7 +73,7 @@ CI/CD ジョブが一貫してコンプライアンスに準拠した方法で�
 
 1. `Compliance project` プロジェクトに戻ります。
 
-    > これらの変更をテストするために、プロジェクトに変更を加えましょう。
+      > これらの変更をテストするために、プロジェクトに変更を加えましょう。
 
 1. 左サイドバーで **Code > Repository** を選択します。
 
@@ -81,11 +81,11 @@ CI/CD ジョブが一貫してコンプライアンスに準拠した方法で�
 
 1. **Filename** に `test.py` と入力します。内容に以下のコードを追加します:
 
-```python
-import hashlib as h
+      ```python
+      import hashlib as h
 
-h.md5('1')
-```
+      h.md5('1')
+      ```
 
 1. **Commit changes** を選択します。
 
@@ -109,4 +109,4 @@ h.md5('1')
 
 ## ご提案はありますか?
 
-ラボに変更を加えたい場合は、マージリクエストで変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

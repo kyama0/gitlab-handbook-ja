@@ -2,11 +2,11 @@
 title: Growth ステージ
 description: "Growth ステージは、プロダクトの機能強化と実験を行う開発チームで構成されています"
 upstream_path: /handbook/engineering/development/growth/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T07:03:07+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T23:58:47+09:00"
 translator: claude
 stale: false
-lastmod: 2026-07-03T00:57:12+00:00
+lastmod: 2026-08-12T10:14:59-04:00
 ---
 
 ## ビジョン
@@ -60,12 +60,14 @@ Growth のミッション、方向性、プロダクト戦略の詳細につい�
 
 ### チームとコミュニケーション
 
-| チーム | Slack チャンネル | GitLab ハンドル |
-|------|---------------|---------------|
-| Growth（全体） | [#s_growth](https://gitlab.slack.com/channels/s_growth) | `@gitlab-org/growth` , `@gitlab-org/growth/engineers` |
-| Acquisition | [#g_acquisition](https://gitlab.slack.com/channels/g_acquisition) | `@gitlab-org/growth/acquisition` |
-| Activation | [#g_activation](https://gitlab.slack.com/channels/g_activation) | `@gitlab-org/growth/activation` |
-| Engagement | [#g_engagement](https://gitlab.slack.com/channels/g_engagement) | `@gitlab-org/growth/engagement` |
+Growth のすべてのチームは、1 つの Slack チャンネル [#s_growth](https://gitlab.slack.com/channels/s_growth)を共有しています。
+
+| チーム | GitLab ハンドル |
+|------|---------------|
+| Growth（全体） | `@gitlab-org/growth` , `@gitlab-org/growth/engineers` |
+| Acquisition | `@gitlab-org/growth/acquisition` |
+| Activation | `@gitlab-org/growth/activation` |
+| Engagement | `@gitlab-org/growth/engagement` |
 
 ### 全チームメンバー
 

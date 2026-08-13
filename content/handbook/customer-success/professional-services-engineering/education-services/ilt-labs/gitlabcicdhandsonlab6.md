@@ -2,11 +2,11 @@
 title: "GitLab CI/CD - ハンズオンラボ: アプリケーションのデプロイ"
 description: "このハンズオンガイドでは、パイプラインを使ってアプリケーションをデプロイする方法をデモンストレーションします"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab6/
-upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
-translated_at: "2026-08-12T06:06:45+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:44:15+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-11T13:03:24+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 完了までの推定時間: 15 分
@@ -33,112 +33,112 @@ Tanuki Enterprises は自動化されたパイプラインでアプリケーシ�
 
 1. 既存のコードをすべて削除し、以下のコードに置き換えます:
 
-    ```go
-    package main
+      ```go
+      package main
 
-    import (
+      import (
         "fmt"
         "log"
         "net/http"
-    )
+      )
 
-    func handler(w http.ResponseWriter, r *http.Request) {
+      func handler(w http.ResponseWriter, r *http.Request) {
         fmt.Fprintf(w, "Hi there")
-    }
+      }
 
-    func main() {
+      func main() {
         http.HandleFunc("/", handler)
         log.Fatal(http.ListenAndServe(":80", nil))
-    }
-    ```
+      }
+      ```
 
-    このアプリケーションは "/"（ルート）エンドポイントへのリクエストをポート 80 で待ち受けます。リクエストを受信すると、*Hi there* というメッセージを表示します。
+      このアプリケーションは "/"（ルート）エンドポイントへのリクエストをポート 80 で待ち受けます。リクエストを受信すると、*Hi there* というメッセージを表示します。
 
-    新しいアプリケーションの種類に対応するため、アプリケーションバイナリを実行するテストを CI/CD プロセスから削除します。これらのテストはアプリケーションを一時停止させて接続を待ち受けるため、正常に動作しなくなります。代わりに、このアプリケーションをテストサーバーにデプロイしてテストできるようにします。まず、CI/CD ファイルは次のような状態にしてください:
+      新しいアプリケーションの種類に対応するため、アプリケーションバイナリを実行するテストを CI/CD プロセスから削除します。これらのテストはアプリケーションを一時停止させて接続を待ち受けるため、正常に動作しなくなります。代わりに、このアプリケーションをテストサーバーにデプロイしてテストできるようにします。まず、CI/CD ファイルは次のような状態にしてください:
 
-    ```yaml
-    workflow:
+      ```yaml
+      workflow:
       rules:
-          - if: $CI_COMMIT_TAG
-            when: never 
-          - when: always
+        - if: $CI_COMMIT_TAG
+          when: never
+        - when: always
 
-    default:
+      default:
         image: golang
 
-    include:
+      include:
         - component: <replace-with-link-to-your-component>
-          inputs:
-              stage: build
+        inputs:
+          stage: build
 
-    stages:
+      stages:
         - test
         - build
         - run
         - release
         - deploy
 
-    test go:
+      test go:
         stage: test
         script: go test array/ArrayUtils
         allow_failure: true
 
-    build go:
+      build go:
         stage: build
         script:
-            - go build
+          - go build
         artifacts:
-            paths: 
-            - array
+          paths:
+          - array
         rules:
-            - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
 
-    run go:
+      run go:
         stage: run
         script:
-            - ./array
+          - ./array
         rules:
-            - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
+          - if: $CI_PIPELINE_SOURCE == 'merge_request_event'
 
-    release job:
+      release job:
         stage: release
         image: registry.gitlab.com/gitlab-org/release-cli:latest
         script:
-            - echo "Generating the latest release!"
-        release: 
-            tag_name: 'v0.$CI_PIPELINE_IID'
-            description: 'The latest release!'
+          - echo "Generating the latest release!"
+        release:
+          tag_name: 'v0.$CI_PIPELINE_IID'
+          description: 'The latest release!'
         rules:
-            - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+          - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
 
-    deploy app:
+      deploy app:
         stage: deploy
         environment:
-            name: prod
-            url: "http://$ip:80"
+          name: prod
+          url: "http://$ip:80"
         before_script:
-            - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
-            - eval $(ssh-agent -s)
-            - chmod 400 "$SSH_PRIVATE_KEY"
-            - ssh-add "$SSH_PRIVATE_KEY"
-            - mkdir -p ~/.ssh
-            - chmod 700 ~/.ssh
+          - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
+          - eval $(ssh-agent -s)
+          - chmod 400 "$SSH_PRIVATE_KEY"
+          - ssh-add "$SSH_PRIVATE_KEY"
+          - mkdir -p ~/.ssh
+          - chmod 700 ~/.ssh
         script:
-            - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
-            - ssh root@$ip 'ls /'
-    ```
+          - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
+          - ssh root@$ip 'ls /'
+      ```
 
 1. デプロイジョブでビルドアーティファクトにアクセスできるようにするため、ジョブから実行条件（rules ブロック）を削除します:
 
-    ```yaml
-    build go:
+      ```yaml
+      build go:
         stage: build
         script:
-            - go build
+          - go build
         artifacts:
-            paths:
-                - array
-    ```
+          paths:
+            - array
+      ```
 
 ## タスク B. デプロイプロセス
 
@@ -148,45 +148,45 @@ Web アプリケーションの実行と維持を可能にするため、サー�
 
 1. プロジェクトのルートに `array.service` という名前の新しいファイルを作成します。このファイルに以下のテキストを追加します:
 
-    ```bash
-    [Unit]
-    Description=
-    After=network.target
+      ```bash
+      [Unit]
+      Description=
+      After=network.target
 
-    [Service]
-    Type=simple
-    ExecStart=/www/array
+      [Service]
+      Type=simple
+      ExecStart=/www/array
 
-    [Install]
-    WantedBy=multi-user.target
-    ```
+      [Install]
+      WantedBy=multi-user.target
+      ```
 
 1. `.gitlab-ci.yml` ファイルに、デプロイジョブをデフォルトブランチへのコミット時のみ実行するルールを追加します。
 
-    ```yaml
-    deploy app:
+      ```yaml
+      deploy app:
         stage: deploy
         image: ubuntu:latest
         before_script:
-            - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
-            - eval $(ssh-agent -s)
-            - chmod 400 "$SSH_PRIVATE_KEY"
-            - ssh-add "$SSH_PRIVATE_KEY"
-            - mkdir -p ~/.ssh
-            - chmod 700 ~/.ssh
+          - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
+          - eval $(ssh-agent -s)
+          - chmod 400 "$SSH_PRIVATE_KEY"
+          - ssh-add "$SSH_PRIVATE_KEY"
+          - mkdir -p ~/.ssh
+          - chmod 700 ~/.ssh
         script:
-            - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
-            - ssh root@$ip 'ls /'
+          - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
+          - ssh root@$ip 'ls /'
         environment:
-            name: prod
-            url: "http://$ip:80"
+          name: prod
+          url: "http://$ip:80"
         rules:
-            - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-    ```
+          - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+      ```
 
-1. コードでは array バイナリを www ディレクトリに移動し、サービス定義ファイルを /lib/systemd/system ディレクトリに移動する必要があります。これを行うために scp を使用します。`ssh root@$ip 'ls /'` コマンドの後の `script` セクションに以下のコードブロックを追加します:
+1. コードでは array バイナリを `www` ディレクトリに移動し、サービス定義ファイルを /lib/systemd/system ディレクトリに移動する必要があります。これを行うために `scp` コマンドを使用します。`ssh root@$ip 'ls /'` コマンドの後の `script` セクションに以下のコードブロックを追加します:
 
-    ```bash
+      ```bash
         - ssh root@$ip 'mkdir -p /www'
         - ssh root@$ip 'test -e /www/array && rm -f /www/array || echo "No existing /www/array to delete"'
         - scp array root@$ip:/www
@@ -196,38 +196,38 @@ Web アプリケーションの実行と維持を可能にするため、サー�
         - ssh root@$ip 'systemctl enable array.service'
         - ssh root@$ip 'systemctl restart array.service'
         - ssh root@$ip 'systemctl status array.service'
-    ```
+      ```
 
-    `deploy app` ジョブは次のようになるはずです:
+    >`deploy app` ジョブは次のようになるはずです:
 
-    ```yaml
-    deploy app:
+      ```yaml
+      deploy app:
         stage: deploy
         image: ubuntu:latest
         before_script:
-            - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
-            - eval $(ssh-agent -s)
-            - chmod 400 "$SSH_PRIVATE_KEY"
-            - ssh-add "$SSH_PRIVATE_KEY"
-            - mkdir -p ~/.ssh
-            - chmod 700 ~/.ssh
+          - "which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )"
+          - eval $(ssh-agent -s)
+          - chmod 400 "$SSH_PRIVATE_KEY"
+          - ssh-add "$SSH_PRIVATE_KEY"
+          - mkdir -p ~/.ssh
+          - chmod 700 ~/.ssh
         script:
-            - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
-            - ssh root@$ip 'mkdir -p /www'
-            - ssh root@$ip 'test -e /www/array && rm -f /www/array || echo "No existing /www/array to delete"'
-            - scp array root@$ip:/www
-            - scp array.service root@$ip:/lib/systemd/system/
-            - ssh root@$ip 'ls /www'
-            - ssh root@$ip 'ls /lib/systemd/system'
-            - ssh root@$ip 'systemctl enable array.service'
-            - ssh root@$ip 'systemctl restart array.service'
-            - ssh root@$ip 'systemctl status array.service'
+          - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
+          - ssh root@$ip 'mkdir -p /www'
+          - ssh root@$ip 'test -e /www/array && rm -f /www/array || echo "No existing /www/array to delete"'
+          - scp array root@$ip:/www
+          - scp array.service root@$ip:/lib/systemd/system/
+          - ssh root@$ip 'ls /www'
+          - ssh root@$ip 'ls /lib/systemd/system'
+          - ssh root@$ip 'systemctl enable array.service'
+          - ssh root@$ip 'systemctl restart array.service'
+          - ssh root@$ip 'systemctl status array.service'
         environment:
-            name: prod
-            url: "http://$ip:80"
+          name: prod
+          url: "http://$ip:80"
         rules:
-            - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
-    ```
+          - if: $CI_COMMIT_REF_NAME == $CI_DEFAULT_BRANCH
+      ```
 
 1. パイプラインが正常に完了したら、**Operate > Environments** に移動すると、環境がデプロイされていることが確認できます。**Open** ボタンをクリックして、新しくデプロイされたアプリケーションにアクセスします。
 
@@ -241,4 +241,4 @@ Web アプリケーションの実行と維持を可能にするため、サー�
 
 ## ご提案はありますか?
 
-ラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

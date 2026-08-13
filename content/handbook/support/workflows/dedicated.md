@@ -3,11 +3,11 @@ title: GitLab Dedicated 概要
 category: GitLab Dedicated
 description: "GitLab Dedicated サポート概要。"
 upstream_path: /handbook/support/workflows/dedicated/
-upstream_sha: e829b207a53856c23a25197426cca945626ade8a
-translated_at: "2026-07-05T07:22:17+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T23:52:41+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-01T09:10:46+01:00"
+lastmod: "2026-08-13T18:09:23+08:00"
 ---
 
 ### 概要
@@ -207,10 +207,10 @@ GitLab Dedicated インシデントを発生させる際には、3 つすべて�
 
 緊急の Dedicated Issue やインシデントについてすぐに注意を引くために、GitLab Dedicated SRE である GitLab Dedicated エンジニアオンコール (GDEOC) にエスカレーションする必要がある場合があります。
 
-GDEOC をページすることでエスカレーションします。**On-Call Teams** として **dedicated EOC** を選択し、以下のいずれかを行います:
+GDEOC は incident.io を使用して緊急のインフラストラクチャ上の問題を管理します。既存の Dedicated インシデントがあることを確認し（存在しない場合は [Dedicated インシデントを発生させて](#raise-a-dedicated-incident)）、GDEOC をページするために **On-Call Teams** として **dedicated EOC** を選択し、以下のいずれかを行います:
 
-- Slack チャンネルで **📟 Escalate to someone** ボタンをクリックする
-- Slack チャンネルに `/inc escalate` と入力する
+- インシデントの Slack チャンネルで **📟 Escalate to someone** ボタンをクリックする
+- インシデントの Slack チャンネルに `/inc escalate` と入力する
 
 #### GitLab Dedicated CMOC を関与させる
 

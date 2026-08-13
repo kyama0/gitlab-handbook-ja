@@ -2,11 +2,11 @@
 title: "GitLab System Administration with Omnibus - ハンズオンラボ概要"
 description: "このハンズオンガイドは、Omnibus を使用した GitLab システム管理コースのラボ演習を案内します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandson/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T05:12:10Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T16:44:44Z"
 translator: claude
 stale: false
-lastmod: "2025-10-23T12:38:59+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 ## GitLab システム管理ラボガイド
@@ -28,4 +28,4 @@ lastmod: "2025-10-23T12:38:59+01:00"
 
 ## ご提案・改善点
 
-ラボに変更を加えたい場合は、マージリクエストで変更内容を送信してください。
+これらのラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

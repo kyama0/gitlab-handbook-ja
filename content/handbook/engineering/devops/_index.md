@@ -1,11 +1,11 @@
 ---
 title: DevOpsエンジニアリング
 upstream_path: /handbook/engineering/devops/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:19:21+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T23:58:47+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T05:53:28-07:00"
+lastmod: "2026-08-13T15:10:33+03:00"
 ---
 
 ## ビジョン
@@ -308,8 +308,8 @@ GitLabチームメンバーに、定期的なミーティングの前にDRIで�
 | Gitaly製品領域             | トラフィックシェアの高い割合 |                                                                                                                       |
 | [Create: Source Code製品領域](/handbook/product/categories/features/#createsource-code-group) | トラフィックシェアの高い割合。Protected Branches、CODEOWNERS、MR Approvals、Git LFS、Workhorse、SSH経由のgit/gitlab-sshdインターフェイスに特別な注意を払う必要があります。不明な場合はEM (@sean_carroll) またはPM (@tlinz) にお問い合わせください。 | |
 | Pipeline Execution製品領域 | トラフィックシェアの高い割合  | [ドキュメント](https://docs.gitlab.com/ee/development/contributing/verify/)                                          |
-| 認証および認可製品領域    | アプリケーションの複数の領域に触れる    | [ドキュメント](/handbook/engineering/development/sec/software-supply-chain-security/authorization/#code-review)            |
-| Compliance製品領域 | 法律、セキュリティ、またはコンプライアンスの結果を引き起こす可能性がある | [コードレビュードキュメント](/handbook/engineering/development/sec/software-supply-chain-security/compliance/#code-review)                     |
+| 認証および認可製品領域    | アプリケーションの複数の領域に触れる    | [ドキュメント](/handbook/engineering/development/sec/security-platform/authorization/#code-review)            |
+| Compliance製品領域 | 法律、セキュリティ、またはコンプライアンスの結果を引き起こす可能性がある | [コードレビュードキュメント](/handbook/engineering/development/sec/security-governance/compliance/#code-review)                     |
 | Workspace製品領域    | アプリケーションの複数の領域に触れる    | [ドキュメント](/handbook/engineering/architecture/design-documents/workspaces/)                                   |
 | [特定のフルフィルメント製品領域](/handbook/engineering/development/fulfillment/#revenue-impacting-changes) | 収益に影響を与える可能性がある |                                                                                                                       |
 | ランタイム言語の更新 | 複数のサービスへの影響 | [Rubyアップグレードガイドライン](https://docs.gitlab.com/ee/development/ruby_upgrade.html#ruby-upgrade-guidelines)           |

@@ -2,11 +2,11 @@
 title: "GitLab Advanced CI/CD - ハンズオンラボ: GitLab Runners ディープダイブ"
 description: "このハンズオンガイドでは、Docker ランナーの作成と管理について説明します"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T15:26:34Z"
 translator: claude
 stale: false
-lastmod: "2026-03-25T17:26:37+00:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 ランナースケーラーは、オンデマンドでランナーマシンを起動するために一貫したランナーイメージに依存しています。このイメージを作成する最初のステップは、基盤となるランナーの仕組みを理解することです。このラボでは、Docker ベースのランナーを作成する方法を学びます。このランナーは、Docker オートスケーラーの基礎として使用できます。
@@ -59,9 +59,9 @@ lastmod: "2026-03-25T17:26:37+00:00"
 
 1. まず、トークンをプロジェクトレベルの変数としてプロジェクトに安全に追加します。**Settings > CI/CD** に移動して、**Variables** セクションを展開します。
 
-1. **Add variable** を選択します。右側のパネルで、**Key** フィールドに GITLAB_RUNNER_TOKEN と入力し、**Value** フィールドにランナートークンを貼り付けます。
+1. **Add variable** を選択します。右側のパネルで、**Key** フィールドに `GITLAB_RUNNER_TOKEN` と入力し、**Value** フィールドにランナートークンを貼り付けます。
 
-1. 変数の **Visibility** を **Visible** に設定します。これにより、`config.toml` ファイルに書き込まれる値が、マスクされた変数で出力される **[MASKED]** にならないようにします。
+1. 変数の **Visibility** を **Visible** に設定します。GitLab が UI やログで値をマスクする場合がありますが、ランナートークンでは想定される動作です。重要なのは、コピーした値が登録時に使用される実際のトークンであることです。
 
 1. **Add variable** をクリックします。
 
@@ -96,7 +96,7 @@ lastmod: "2026-03-25T17:26:37+00:00"
 
     > このジョブは、ランナー上に SSH エージェントをインストールして起動することから始まります。招待コードを利用すると、デプロイ先のインスタンスが作成され、SSH 秘密鍵が `SSH_PRIVATE_KEY` という変数に格納されます。この鍵は接続に使用するために SSH エージェントに追加されます。
 
-1. ジョブのスクリプトとして、サーバーに SSH 接続して gitlab runner を登録します。先ほど作成した GITLAB_RUNNER_TOKEN 変数を使用していることに注意してください。
+1. ジョブのスクリプトとして、サーバーに SSH 接続して GitLab ランナーを登録します。先ほど作成した GITLAB_RUNNER_TOKEN 変数を使用していることに注意してください。
 
       ```yml
           script:
@@ -174,7 +174,7 @@ lastmod: "2026-03-25T17:26:37+00:00"
           network_mtu = 0
       ```
 
-1. `token:` の値に `[MASKED]` が含まれていないことを再確認します。もし含まれている場合、GITLAB_RUNNER_TOKEN がマスクされており、表示されない設定になっています。
+1. GitLab が UI、ログ、生成された設定の出力でランナートークンをマスクする場合があることに注意してください。`token:` の値が **[MASKED]** と表示される場合、これはランナートークンに対して想定される動作です。
 
 1. 次のタスクで必要になるため、この出力をメモしておきます。
 
@@ -195,7 +195,7 @@ lastmod: "2026-03-25T17:26:37+00:00"
 
 1. ファイル名に `config.toml` と入力します。
 
-1. ジョブ出力の `config.toml` をリポジトリ内に作成した .toml ファイルにコピーします（`your-token` の値を実際のランナートークンに置き換えてください）。
+1. ジョブ出力の `config.toml` をリポジトリ内に作成した `.toml` ファイルにコピーし、**[MASKED]** トークンを先ほどコピーした元のランナートークン値に置き換えます。
 
       `config.toml` は次のようになります:
 
@@ -232,7 +232,7 @@ lastmod: "2026-03-25T17:26:37+00:00"
           network_mtu = 0
       ```
 
-1. `config.toml` ファイルを保存する前に、次のフィールドを更新します:
+1. `config.toml` ファイルを保存する前に、`config.toml` 内の次のフィールドを更新します:
 
       ```toml
       privileged = true
@@ -269,7 +269,7 @@ lastmod: "2026-03-25T17:26:37+00:00"
           - ssh-keyscan -t rsa,ed25519 $ip >> ~/.ssh/known_hosts
         script:
           - ssh root@$ip 'gitlab-runner unregister --all-runners'
-          - ssh root@$ip 'gitlab-runner register --non-interactive --url https://ilt.gitlabtraining.cloud --executor "docker" --docker-image alpine:latest  --token '"$GITLAB_RUNNER_TOKEN"'
+          - ssh root@$ip 'gitlab-runner register --non-interactive --url https://ilt.gitlabtraining.cloud --executor "docker" --docker-image alpine:latest  --token '"$GITLAB_RUNNER_TOKEN"
           - scp config.toml root@$ip:/etc/gitlab-runner/config.toml
           - ssh root@$ip 'gitlab-runner restart'
           - ssh root@$ip 'cat /etc/gitlab-runner/config.toml'
@@ -291,7 +291,7 @@ lastmod: "2026-03-25T17:26:37+00:00"
 
 1. ファイル名に `Dockerfile` と入力します。次のコンテンツを追加します:
 
-      ```dockerfile
+      ```Dockerfile
       FROM node:latest
 
       WORKDIR /app
@@ -341,4 +341,4 @@ lastmod: "2026-03-25T17:26:37+00:00"
 
 ## ご提案は?
 
-ラボへの変更をご希望の場合は、マージリクエストで変更内容を送信してください。
+このラボへの変更をご希望の場合は、マージリクエストを通じて変更内容を送信してください。

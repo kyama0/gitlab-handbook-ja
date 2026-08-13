@@ -2,11 +2,11 @@
 title: "GitLab システム管理者 - ハンズオンラボ: GitLab Kubernetes のロギングと監視"
 description: "このハンズオンガイドでは、GitLab Kubernetes インスタンスの監視とログ分析の方法を紹介します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab5k8s/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:54:00+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-27T20:17:50+00:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 推定所要時間: 30 分
@@ -17,11 +17,11 @@ lastmod: "2025-11-27T20:17:50+00:00"
 
 ## タスク A. Prometheus サービスへのアクセス
 
-1. GitLab の Prometheus サーバーは TCP ポート 9090 経由で接続できます。このポートにアクセスするには、Kubernetes クラスターへのプロキシを作成する必要があります。次のコマンドで実行できます。
+1. GitLab の Prometheus サーバーには TCP ポート 9090 で接続できます。このポートにアクセスするには、Kubernetes クラスターへのプロキシを作成する必要があります。次のコマンドで実行できます。
 
-    ```bash
-    kubectl proxy
-    ```
+      ```bash
+      kubectl proxy
+      ```
 
 1. Prometheus にアクセスするには、Pod 名を知る必要があります。これを見つけるには、`kubectl get pods` コマンドを実行します。出力で Prometheus を探します。
 
@@ -71,21 +71,21 @@ lastmod: "2025-11-27T20:17:50+00:00"
 
 1. **虫眼鏡**ボタンの横の入力欄に、次のクエリを入力します。
 
-    ```text
-    sum(rate(gitlab_cache_misses_total[5m])) by (cache_key)
-    ```
+      ```text
+      sum(rate(gitlab_cache_misses_total[5m])) by (cache_key)
+      ```
 
-    > このクエリにより、GitLab のキャッシュミス率が表示されます。これはパフォーマンスの問題を示している可能性があります。標準的なノードメトリクス（メモリ、CPU）は、Kubernetes クラスターに node-exporter や kube-state-metrics などの追加のエクスポーターをインストールする必要があることに注意してください。
+      > このクエリにより、GitLab のキャッシュミス率が表示されます。これはパフォーマンスの問題を示している可能性があります。標準的なノードメトリクス（メモリ、CPU）は、Kubernetes クラスターに node-exporter や kube-state-metrics などの追加のエクスポーターをインストールする必要があることに注意してください。
 
 1. **Graph** をクリックして、経時的なメモリの割合を表示します。
 
 1. クエリ入力欄で前のクエリを削除し、次のクエリに置き換えます。
 
-    ```text
-    sum(rate(http_requests_total[5m])) by (job)
-    ```
+      ```text
+      sum(rate(http_requests_total[5m])) by (job)
+      ```
 
-    > このクエリにより、GitLab インスタンスのジョブごとの HTTP リクエスト率が表示されます。
+      > このクエリにより、GitLab インスタンスのジョブごとの HTTP リクエスト率が表示されます。
 
 1. **Graph** をクリックして、経時的な CPU 使用率を表示します。
 
@@ -97,4 +97,4 @@ lastmod: "2025-11-27T20:17:50+00:00"
 
 ## ご提案はありますか?
 
-ラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

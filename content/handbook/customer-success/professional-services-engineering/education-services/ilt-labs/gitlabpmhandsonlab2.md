@@ -1,15 +1,15 @@
 ---
-title: "GitLab アジャイルポートフォリオ管理 - ハンズオンラボ: プロジェクト計画"
+title: "GitLab Agile Portfolio Management - ハンズオンラボ: プロジェクト計画"
 description: "このハンズオンガイドでは、GitLab でエピック、イテレーション、マイルストーンを作成する方法を学習します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab2/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:21:21+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-06T16:04:29-04:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
-> 完了までの推定時間: 45分
+> 完了までの推定時間: 45 分
 
 ## 目標
 
@@ -33,9 +33,9 @@ lastmod: "2026-04-06T16:04:29-04:00"
 
 ## タスク B. エピックを作成する
 
-> エピックは、戦略的なテーマを共有するIssueとサブエピックのセットを整理・管理する方法を提供します。論理的なグループ化に加えて、エピックによりプロジェクトマネージャーは高レベルの計画を行い、視覚的なステータス追跡でロードマップを構築できます。エピックの詳細については[ドキュメント](https://docs.gitlab.com/ee/user/group/epics/)を参照してください。
+> エピックは、戦略的なテーマを共有する Issue とサブエピックのセットを整理・管理する方法を提供します。論理的なグループ化に加えて、エピックによりプロジェクトマネージャーは高レベルの計画を行い、視覚的なステータス追跡でロードマップを構築できます。エピックの詳細については[ドキュメント](https://docs.gitlab.com/ee/user/group/epics/)を参照してください。
 
-1. *ラボ環境のブラウザタブで*、ページ上部の **Group XXXXX**（Xはランダムな文字と数字に置き換えられます）をクリックします。
+1. *ラボ環境のブラウザタブで*、ページ上部の **Group XXXXX**（X はランダムな文字と数字に置き換えられます）をクリックします。
 
 1. グループページで、**Awesome Inc** サブグループをクリックします。サブグループ内で **Software** をクリックします。
 
@@ -45,37 +45,37 @@ lastmod: "2026-04-06T16:04:29-04:00"
 
 1. **Type** フィールドが **Epic** に設定されていることを確認します。
 
-1. *New Epic* ページで、**Title (required)** フィールドに `Feature Category: Retirement Planning` を入力します。説明的なタイトルを付けることで、エピックに関連付けるべきIssueとサブエピックが明確になります。
+1. *New Epic* ページで、**Title (required)** フィールドに `Feature Category: Retirement Planning` を入力します。説明的なタイトルを付けることで、エピックに関連付けるべき Issue とサブエピックが明確になります。
 
 1. **Description** フィールドに以下を貼り付けます:
 
-    ```markdown
-    # Overview
+      ```markdown
+      # Overview
 
-    This is the top-level epic for all features in the `Retirement Planning` category of Awesome Co.'s personal finance software.
+      This is the top-level epic for all features in the `Retirement Planning` category of Awesome Co.'s personal finance software.
 
-    # Useful Links
-    - *To-Do: add link to the feature strategy document*
-    - *To-Do: add contributing team member information*
-    ```
+      # Useful Links
+      - *To-Do: add link to the feature strategy document*
+      - *To-Do: add contributing team member information*
+      ```
 
-    > エピックの他のオプションを変更する必要はありませんが、オプションを理解することは重要です。
+      > エピックの他のオプションを変更する必要はありませんが、オプションを理解することは重要です。
 
 1. 設定またはデフォルト設定のままにできる追加オプションがあります。
 
-    - **Assignees**: エピックの完了に責任を持つ個人。
+      - **Assignees**: エピックの完了に責任を持つ個人。
 
-    - **Label**: エピックにラベルを適用します。ラベルはエピックのソートとフィルタリングに使用できるメタデータタグです。
+      - **Label**: エピックにラベルを適用します。ラベルはエピックのソートとフィルタリングに使用できるメタデータタグです。
 
-    - **Parent**: エピックは他のエピックの子や親になることができます。親と子のエピックは、チームや会社の目標をさらに整理し明確にするために使用できます。次のタスクで子エピックを作成します。
+      - **Parent**: エピックは他のエピックの子や親になることができます。親と子のエピックは、チームや会社の目標をさらに整理し明確にするために使用できます。次のタスクで子エピックを作成します。
 
-    - **Milestone**: 包括的な計画を確保するためにエピックをマイルストーンに割り当てることができます。
+      - **Milestone**: 包括的な計画を確保するためにエピックをマイルストーンに割り当てることができます。
 
-    - **Dates**: エピックの作業が開始・完了する予定のスケジュール。固定（手動設定）と継承（エピックに関連するIssueから「継承」）の2つのオプションがあります。
+      - **Dates**: エピックの作業が開始・完了する予定のスケジュール。固定（手動設定）と継承（エピックに関連する Issue から「継承」）の 2 つのオプションがあります。
 
-    - **Health status**: エピックがスケジュールより遅れる危険があるかどうかを識別する方法。
+      - **Health status**: エピックがスケジュールより遅れる危険があるかどうかを識別する方法。
 
-    - **Color**: ロードマップタイムラインバーで使用する際のエピックの表示色をカスタマイズします。タスクAの **GitLab.org** グループのロードマップを参照してください。
+      - **Color**: ロードマップタイムラインバーで使用する際のエピックの表示色をカスタマイズします。タスク A の **GitLab.org** グループのロードマップを参照してください。
 
 1. メタデータを確認したら、**Create epic** を選択します。
 
@@ -89,11 +89,11 @@ lastmod: "2026-04-06T16:04:29-04:00"
 
 1. **Description** フィールドに以下を貼り付けます:
 
-    ```markdown
-    # Overview
+      ```markdown
+      # Overview
 
-    This epic tracks all work on `Investment Tracking` features and integrations, as part of the overall `Retirement Planning` category strategy.
-    ```
+      This epic tracks all work on `Investment Tracking` features and integrations, as part of the overall `Retirement Planning` category strategy.
+      ```
 
 1. 他のフィールドはすべてそのままにして、**Create epic** をクリックします。
 
@@ -101,19 +101,19 @@ lastmod: "2026-04-06T16:04:29-04:00"
 
 1. **Feature Category: Retirement Planning** エピックをクリックします。
 
-1. **Investment Tracking** エピックを **Retirement Planning** エピックの子として指定します。**Child items** タブで、**Add** ドロップダウンメニューを選択し、**Existing epic** をクリックします。
+1. **Investment Tracking** エピックを **Retirement Planning** エピックの子として指定します。**Child items** タブで、**Add** ドロップダウンリストを選択し、**Existing epic** をクリックします。
 
     > このメニューを使用して、子エピックをゼロから作成することもできます。
 
 1. 提供されたフィールドに `&2` と入力し、エピックのリストから **Investment Tracking** を選択します。
 
-    > `&` シンボルを使用すると、エピックを名前ではなく固有のエピックIDで参照できます。これは、似たような名前のエピックが多数ある場合に便利です。
+    > `&` シンボルを使用すると、エピックを名前ではなく固有のエピック ID で参照できます。これは、似たような名前のエピックが多数ある場合に便利です。
 
 1. **Add Epic** をクリックして、**Investment Tracking** を **Retirement Planning** 親エピックの子エピックとしてリンクします。
 
 ## タスク D. マイルストーンを設定して製品目標を表す
 
-> GitLab のマイルストーンは、一定期間内に広い目標を達成するために作成されたIssueとマージリクエストを追跡する方法です。マイルストーンにより、オプションの開始日とオプションの期日とともに、エピック、Issue、マージリクエストを一体的なグループに整理できます。マイルストーンの詳細については[ドキュメント](https://docs.gitlab.com/ee/user/project/milestones/)を参照してください。
+> GitLab のマイルストーンは、一定期間内に広い目標を達成するために作成された Issue とマージリクエストを追跡する方法です。マイルストーンにより、オプションの開始日とオプションの期日とともに、エピック、Issue、マージリクエストを一体的なグループに整理できます。マイルストーンの詳細については[ドキュメント](https://docs.gitlab.com/ee/user/project/milestones/)を参照してください。
 
 1. **Awesome Inc** サブグループに移動します。
 
@@ -125,21 +125,21 @@ lastmod: "2026-04-06T16:04:29-04:00"
 
 1. **Start Date** セクションでカレンダーを使って今日の日付を入力します。
 
-1. **End Date** セクションでカレンダーを使って今日から2日後の日付をマイルストーンの終了日として入力します。
+1. **End Date** セクションでカレンダーを使って今日から 2 日後の日付をマイルストーンの終了日として入力します。
 
-    > 説明は必須ではありませんが、マイルストーンが何に使用されるかを明確にするために説明を入力することをお勧めします。
+      > 説明は必須ではありませんが、マイルストーンが何に使用されるかを明確にするために説明を入力することをお勧めします。
 
 1. **Create milestone** をクリックします。
 
 1. ページ上部のパンくずリストで **Milestones** をクリックします。
 
-1. **New milestone** をクリックして2番目のマイルストーンを作成します。
+1. **New milestone** をクリックして 2 番目のマイルストーンを作成します。
 
 1. **Title** セクションに `Backend services deployed` と入力します。
 
 1. **Start Date** セクションでカレンダーを使って今日の日付を入力します。
 
-1. **End Date** セクションでカレンダーを使って今日から2週間後の日付をマイルストーンの終了日として入力します。
+1. **End Date** セクションでカレンダーを使って今日から 2 週間後の日付をマイルストーンの終了日として入力します。
 
 1. **Create milestone** をクリックします。
 
@@ -163,13 +163,13 @@ lastmod: "2026-04-06T16:04:29-04:00"
 
 1. **Automation start date** 入力フィールドで、カレンダーを使って今日の日付を入力します。
 
-1. **Duration** セクションで、各イテレーションの期間として2週間を選択します。
+1. **Duration** セクションで、各イテレーションの期間として 2 週間を選択します。
 
-1. **Upcoming iterations** セクションで、今後のイテレーション数として6を選択します。
+1. **Upcoming iterations** セクションで、今後のイテレーション数として 6 を選択します。
 
 1. **Enable roll over** チェックボックスが選択されていることを確認します。
 
-    > **Enable roll over** が選択されている場合、現在のイテレーション終了時にすべてのオープンIssueが次のイテレーションに追加されます。
+      > **Enable roll over** が選択されている場合、現在のイテレーション終了時にすべてのオープン Issue が次のイテレーションに追加されます。
 
 1. **Create cadence** を選択します。
 
@@ -181,4 +181,4 @@ lastmod: "2026-04-06T16:04:29-04:00"
 
 ## ご提案はありますか?
 
-ラボへの変更を希望する場合は、マージリクエストで変更を送信してください。
+このラボを変更したい場合は、マージリクエストを通じて変更を送信してください。

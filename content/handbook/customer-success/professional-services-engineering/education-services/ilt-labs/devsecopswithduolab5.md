@@ -2,11 +2,11 @@
 title: "GitLab Duo Principles - ハンズオンラボ: セキュリティ脆弱性に対処する"
 description: "このハンズオンガイドでは、GitLab Duo を使ってセキュリティ脆弱性を説明する手順を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab5/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: 2026-04-26T04:33:12Z
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:34:30+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-09T20:14:47+00:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 完了までの推定時間: 15 分
@@ -23,13 +23,13 @@ lastmod: "2026-04-09T20:14:47+00:00"
 
 1. 既存のすべての YAML を削除し、次のコードを追加します。`.gitlab-ci.yml` は次のようになります:
 
-    ```yml
-    stages:
-      - test
+      ```yml
+      stages:
+        - test
 
-    include:
-      - template: Security/SAST.gitlab-ci.yml
-    ```
+      include:
+        - template: Security/SAST.gitlab-ci.yml
+      ```
 
 1. 任意のコミットメッセージを入力し、ターゲットブランチが **main** に設定されていることを確認して **Commit changes** を選択します。
 
@@ -41,27 +41,27 @@ lastmod: "2026-04-09T20:14:47+00:00"
 
 1. すべてのコードを次のコードに置き換えます:
 
-    ```go
-    package main
+      ```go
+      package main
 
-    import (
-      "net/http"
-      "fmt"
-      "math/rand"
-    )
+      import (
+        "net/http"
+        "fmt"
+        "math/rand"
+      )
 
-    func randomGitlab(w http.ResponseWriter, r *http.Request) {
-      words := []string{"git", "lab", "repo", "commit", "branch"}
-      word := words[rand.Intn(len(words))]
+      func randomGitlab(w http.ResponseWriter, r *http.Request) {
+        words := []string{"git", "lab", "repo", "commit", "branch"}
+        word := words[rand.Intn(len(words))]
 
-      fmt.Fprintf(w, word)
-    }
+        fmt.Fprintf(w, word)
+      }
 
-    func main() {
-      http.HandleFunc("/random", randomGitlab)
-      http.ListenAndServe(":8080", nil)
-    }
-    ```
+      func main() {
+        http.HandleFunc("/random", randomGitlab)
+        http.ListenAndServe(":8080", nil)
+      }
+      ```
 
 1. 任意のコミットメッセージを入力し、ターゲットブランチを **main** に設定して **Commit changes** を選択します。
 
@@ -73,7 +73,7 @@ lastmod: "2026-04-09T20:14:47+00:00"
 
     > これにより脆弱性の概要ページに移動します。
 
-1. 脆弱性概要の右上にある **AI vulnerability management** ドロップダウンを選択します。
+1. 脆弱性概要の右上で、ドロップダウンリストから **AI vulnerability management** オプションを選択します。
 
 1. **Explain with AI** を選択します。
 
@@ -83,7 +83,7 @@ lastmod: "2026-04-09T20:14:47+00:00"
 
   > 脆弱性を明確に理解したところで、修正しましょう!
 
-1. 脆弱性概要の右上にある **AI vulnerability management** ドロップダウンを選択します。
+1. 脆弱性概要の右上で、ドロップダウンリストから **AI vulnerability management** オプションを選択します。
 
 1. **Resolve with AI** を選択します。
 
@@ -101,4 +101,4 @@ lastmod: "2026-04-09T20:14:47+00:00"
 
 ## ご提案について
 
-ラボに変更を加えたい場合は、マージリクエスト経由で変更を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更を送信してください。

@@ -1,19 +1,19 @@
 ---
-title: "GitLab アジャイルポートフォリオ管理 - ハンズオンラボ: タスク管理と進捗追跡"
+title: "GitLab Agile Portfolio Management- ハンズオンラボ: タスク管理と進捗追跡"
 description: "このハンズオンガイドでは、GitLab で Issue とラベルを作成する方法を学習します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab3/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:21:21+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-10T08:39:48-04:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
-> 完了までの推定時間: 45分
+> 完了までの推定時間: 45 分
 
 ## 目標
 
-Issue は GitLab のコアとなる構成要素で、コラボレーション、ディスカッション、作業の計画と追跡を可能にします。Issue は**プロジェクト**のスコープで定義され、グループではありません。詳細については[ドキュメント](https://docs.gitlab.com/ee/user/project/issues/)を参照してください。
+Issue は GitLab のコアとなる構成要素で、コラボレーション、ディスカッション、作業の計画と追跡を可能にします。Issue は **プロジェクト** のスコープで定義され、**グループではありません**。詳細については[ドキュメント](https://docs.gitlab.com/ee/user/project/issues/)を参照してください。
 
 ## タスク A. ラベルの作成と管理
 
@@ -25,25 +25,25 @@ Issue は GitLab のコアとなる構成要素で、コラボレーション、
 
 1. **New label** ボタンをクリックします。
 
-1. **Title** フィールドに `Status::Open` と入力します。ラベルタイトルの2つのコロンは、これが[スコープラベル](https://docs.gitlab.com/ee/user/project/labels.html#scoped-labels)であることを意味します。
+1. **Title** フィールドに `Status::Open` と入力します。ラベルタイトルの 2 つのコロンは、これが[スコープラベル](https://docs.gitlab.com/ee/user/project/labels.html#scoped-labels)であることを意味します。
 
-    > スコープラベルは、タイトルに二重コロン（::）の構文を使用します（例: `workflow::in review`）。Issue、マージリクエスト、またはエピックは、同じキーを持つ2つのスコープラベル（`key::value` の形式）を持つことができません。同じキーで異なる値の新しいラベルを追加すると、以前のキーラベルが新しいラベルに置き換えられます。
+    > スコープラベルは、タイトルに二重コロン（::）の構文を使用します（例: `workflow::in review`）。Issue、マージリクエスト、またはエピックは、同じキーを持つ 2 つのスコープラベル（`key::value` の形式）を持つことができません。同じキーで異なる値の新しいラベルを追加すると、以前のキーラベルが新しいラベルに置き換えられます。
 
 1. **Description** フィールドに `Item that is ready to begin work` と入力します。
 
-1. ラベルの色として、GitLab は任意の16進数カラーコードをサポートします。このラベルには、推奨カラーパレットから **Blue-gray** を選択します（または **Background color** フィールドに `#6699cc` と入力します）。
+1. ラベルの色として、GitLab は任意の 16 進数カラーコードをサポートします。このラベルには、推奨カラーパレットから **Blue-gray** を選択します（または **Background color** フィールドに `#6699cc` と入力します）。
 
 1. **Create label** をクリックします。
 
 1. 次の追加ラベルを作成し、任意の説明と背景色を設定します。スコープラベルとスコープなしラベルが混在していることに注意してください。
-    - `Status::WIP`
-    - `Status::Done`
-    - `Priority::High`
-    - `Priority::Medium`
-    - `Priority::Low`
-    - `Dev`
-    - `QA`
-    - `Security`
+      - `Status::WIP`
+      - `Status::Done`
+      - `Priority::High`
+      - `Priority::Medium`
+      - `Priority::Low`
+      - `Dev`
+      - `QA`
+      - `Security`
 
 1. **Awesome Inc > Software > Core** グループ階層内の **Family Budget Calculator** プロジェクトに移動します。
 
@@ -51,11 +51,11 @@ Issue は GitLab のコアとなる構成要素で、コラボレーション、
 
 1. 以下のラベルを優先ラベルとして指定するために、**Subscribe** ボタンの左側にある星アイコンをクリックします。優先ラベルはラベルリストの上部に表示されます。
 
-     - **Priority::High**
-     - **Priority::Medium**
-     - **Priority::Low**
+      - **Priority::High**
+      - **Priority::Medium**
+      - **Priority::Low**
 
-## タスク B. 作業追跡のためのIssueを作成する
+## タスク B. 作業追跡のための Issue を作成する
 
 1. **Family Budget Calculator** プロジェクトで、左サイドバーから **Plan > Work items** をクリックします。
 
@@ -65,73 +65,73 @@ Issue は GitLab のコアとなる構成要素で、コラボレーション、
 
 1. タイトルセクションに `Third-party financial services integration` と入力します。
 
-1. 説明はオプションのセクションですが、このIssueに独自の説明を入力しても構いません。
+1. 説明はオプションのセクションですが、この Issue に独自の説明を入力しても構いません。
 
-1. **Assignees** ドロップダウンを使用してIssueを自分自身に割り当てます。ドロップダウンをクリックしてから、自分のユーザー名をクリックします。現時点ではオプションをそのままにしますが、それぞれが何をするかを理解することは重要です:
+1. **Assignees** ドロップダウンリストを使用して Issue を自分自身に割り当てます。ドロップダウンリストをクリックしてから、自分のユーザー名をクリックします。現時点ではオプションをそのままにしますが、それぞれが何をするかを理解することは重要です:
 
-    - **Parent:** Issue をエピックと関連付けます。
+      - **Parent:** Issue をエピックと関連付けます。
 
-    - **Milestone:** GitLab のマイルストーンは、一定期間内に広い目標を達成するために作成されたIssueとマージリクエストを追跡する方法です。
+      - **Milestone:** GitLab のマイルストーンは、一定期間内に広い目標を達成するために作成された Issue とマージリクエストを追跡する方法です。
 
-    - **Labels:** Issueにラベルを適用します。ラベルはIssueのソートとフィルタリングに使用できるメタデータタグです。
+      - **Labels:** Issue にラベルを適用します。ラベルは Issue のソートとフィルタリングに使用できるメタデータタグです。
 
-    - **Weight:** Issueにウェイト値を適用して、そのIssueが持つ時間、複雑さ、または価値を測定します。
+      - **Weight:** Issue にウェイト値を適用して、その Issue が持つ時間、複雑さ、または価値を測定します。
 
-    - **Dates:** 期限を把握して機能が予定通りにリリースされるよう、Issueで使用します。
+      - **Dates:** 期限を把握して機能が予定通りにリリースされるよう、Issue で使用します。
 
-    - **Iteration:** Issueをイテレーションに関連付けて、一定期間追跡します。これにより、チームはベロシティとボラティリティの指標を追跡できます。
+      - **Iteration:** Issue をイテレーションに関連付けて、一定期間追跡します。これにより、チームはベロシティとボラティリティの指標を追跡できます。
 
 1. **Create issue** ボタンをクリックします。
 
-1. 名前をクリックして作成したばかりのIssueを開きます。
+1. 名前をクリックして作成したばかりの Issue を開きます。
 
-1. Issueのメタデータペインで、**Labels** フィールドの隣の **Edit** をクリックします。
+1. Issue のメタデータペインで、**Labels** フィールドの隣の **Edit** をクリックします。
 
-1. **Status::Open** ラベルを選択し、メタデータペインの外をクリックしてIssueにラベルを適用します。
+1. **Status::Open** ラベルを選択し、メタデータペインの外をクリックして Issue にラベルを適用します。
 
-1. 前の2つのステップを繰り返して、**Priority::Medium** と **Dev** ラベルをIssueに適用します。
+1. 前の 2 つのステップを繰り返して、**Priority::Medium** と **Dev** ラベルを Issue に適用します。
 
-1. 左ペインで **Plan > Work items** をクリックします。作成したIssueとそのラベルが一覧に表示されます。
+1. 左ペインで **Plan > Work items** をクリックします。作成した Issue とそのラベルが一覧に表示されます。
 
-1. Issue一覧ページの右上にある **New item** をクリックして2番目のIssueを作成します。
+1. Issue 一覧ページの右上にある **New item** をクリックして 2 番目の Issue を作成します。
 
 1. **Title** セクションに `Backend services` と入力します。
 
 1. **Description** セクションに以下を貼り付けます:
 
-    ```markdown
-    - Create DB
-    - Create service infrastructure
-    - Write documentation
-    ```
+      ```markdown
+      - Create DB
+      - Create service infrastructure
+      - Write documentation
+      ```
 
-1. **Assignees** ドロップダウンを使用してIssueを自分自身に割り当てます。ドロップダウンをクリックしてから、自分のユーザー名をクリックします。
+1. **Assignees** ドロップダウンリストを使用して Issue を自分自身に割り当てます。`Edit` を選択してから、自分のユーザー名をクリックします。
 
 1. **Create issue** ボタンをクリックします。
 
-1. ラベルをクリックし、メタデータペインの外をクリックしてラベルをIssueに適用します: **Backend services** Issueに **Dev**、**Status::Open**、**Priority::High** の各ラベルを適用します。
+1. ラベルをクリックし、メタデータペインの外をクリックしてラベルを Issue に適用します: **Backend services** Issue に **Dev**、**Status::Open**、**Priority::High** の各ラベルを適用します。
 
-1. 左ペインで **Plan > Work items** をクリックして、ラベル付きの両Issueを確認します。
+1. 左ペインで **Plan > Work items** をクリックして、ラベル付きの両 Issue を確認します。
 
-1. Issue一覧ページの右上にある **New item** をクリックして3番目のIssueを作成します。
+1. Issue 一覧ページの右上にある **New item** をクリックして 3 番目の Issue を作成します。
 
 1. **Title** セクションに `Frontend services` と入力します。
 
 1. **Description** セクションに以下を貼り付けます:
 
-    ```markdown
-    - UX design
-    - Integration
-    - Write documentation
-    ```
+      ```markdown
+      - UX design
+      - Integration
+      - Write documentation
+      ```
 
-1. **Assignees** ドロップダウンを使用してIssueを自分自身に割り当てます。ドロップダウンをクリックしてから、自分のユーザー名をクリックします。
+1. **Assignees** ドロップダウンリストを使用して Issue を自分自身に割り当てます。`Edit` を選択してから、自分のユーザー名をクリックします。
 
 1. **Create issue** をクリックします。
 
-1. ラベルをクリックし、メタデータペインの外をクリックしてラベルをIssueに適用します: **Frontend services** に **Dev**、**Status::WIP**、**Priority::High** の各ラベルを適用します。
+1. ラベルをクリックし、メタデータペインの外をクリックしてラベルを Issue に適用します: **Frontend services** に **Dev**、**Status::WIP**、**Priority::High** の各ラベルを適用します。
 
-1. 左ペインで **Plan > Work items** をクリックして、ラベル付きの3つのIssueすべてを確認します。
+1. 左ペインで **Plan > Work items** をクリックして、ラベル付きの 3 つの Issue すべてを確認します。
 
 ## タスク C. ラベルに基づいたビューを作成する
 
@@ -139,13 +139,13 @@ Issue は GitLab のコアとなる構成要素で、コラボレーション、
 
 1. **Plan > Work items** に移動します。
 
-1. フィルターバー（現在は「State is Open」でフィルタリングされているはずです）をクリックします。ドロップダウンから **Label** を選択し、次に **is** を選択し、最後に **Priority::High** ラベルを選択します。
+1. フィルターバー（現在は「State is Open」でフィルタリングされているはずです）をクリックします。ドロップダウンリストから **Label** を選択し、次に **is** を選択し、最後に **Priority::High** ラベルを選択します。
 
 1. フィルターボタン（フィルターバーの右端にある虫めがねアイコン）を押してこのラベルでワークアイテムリストをフィルタリングします。
 
-    > これにより、優先度の高いIssueだけに絞り込まれます。
+    > これにより、優先度の高い Issue だけに絞り込まれます。
 
-1. これをビューにするには、フィルターバーの上にある **All Items** ヘッダーの右側にある **+ Add View** ボタンをクリックし、**New View** を選択します。
+1. これをビューにするには、フィルターバーの上にある **All Items** ヘッダーの右側にある **+ Add View** ボタンをクリックし、**New View** を選択します
 
 1. ビューに `High Priority Issues` というタイトルを付け、任意の説明を追加します。
 
@@ -159,4 +159,4 @@ Issue は GitLab のコアとなる構成要素で、コラボレーション、
 
 ## ご提案はありますか?
 
-ラボへの変更を希望する場合は、マージリクエストで変更を送信してください。
+このラボを変更したい場合は、マージリクエストを通じて変更を送信してください。

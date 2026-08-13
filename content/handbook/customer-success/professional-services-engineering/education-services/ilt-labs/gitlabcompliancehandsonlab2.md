@@ -2,14 +2,14 @@
 title: "GitLab Compliance - ハンズオンラボ: スキャン実行ポリシー"
 description: "このハンズオンガイドでは、プロジェクトでスキャン実行ポリシーを有効化して使用する方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab2/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:53:30+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-14T10:08:46+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
-> 完了までの推定時間: 15分
+> 完了までの推定時間: 15 分
 
 ## 目標
 
@@ -65,4 +65,4 @@ lastmod: "2026-04-14T10:08:46+01:00"
 
 ## ご提案はありますか?
 
-ラボに変更を加えたい場合は、マージリクエストで変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

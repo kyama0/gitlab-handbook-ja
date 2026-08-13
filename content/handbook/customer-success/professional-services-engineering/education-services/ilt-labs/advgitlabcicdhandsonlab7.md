@@ -2,11 +2,11 @@
 title: "GitLab Advanced CI/CD - ハンズオンラボ: デプロイ戦略"
 description: "このハンズオンガイドでは、フィーチャーフラグの作成プロセスについて説明します"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab7/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T15:26:34Z"
 translator: claude
 stale: false
-lastmod: "2026-03-25T17:26:37+00:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 開発プロセスの次のステップは、アプリケーションに適したデプロイ戦略を決定することです。すべてのユーザーに一度に変更をロールアウトするのはリスクの高い戦略です。なぜなら、エラーがすべてのユーザーに影響し、障害を引き起こす可能性があるからです。これを軽減するために、GitLab のデプロイ機能を活用できます。このセクションでは、アプリケーションにフィーチャーフラグを実装して、機能を段階的にロールアウトする方法を学びます。
@@ -43,23 +43,23 @@ lastmod: "2026-03-25T17:26:37+00:00"
 
 1. `index.js` ファイルで、既存のコードをすべて削除し、次のコードに置き換えます。**your-instance-url** と **your-instance-id** は先ほどメモした値に置き換えてください:
 
-    ```js
-    const { initialize } = require('unleash-client');
+      ```js
+      const { initialize } = require('unleash-client');
 
-    const unleash = initialize({
-      url: 'your-instance-url',
-      appName:'production',
-      instanceId: 'your-instance-id'
-    });
+      const unleash = initialize({
+        url: 'your-instance-url',
+        appName:'production',
+        instanceId: 'your-instance-id'
+      });
 
-    setInterval(() => {
-    if (unleash.isEnabled('test')) {
-        console.log('Toggle enabled');
-    } else {
-        console.log('Toggle disabled');
-    }
-    }, 1000);
-    ```
+      setInterval(() => {
+      if (unleash.isEnabled('test')) {
+          console.log('Toggle enabled');
+      } else {
+          console.log('Toggle disabled');
+      }
+      }, 1000);
+      ```
 
 1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択します。
 
@@ -71,19 +71,19 @@ lastmod: "2026-03-25T17:26:37+00:00"
 
 1. `.gitlab-ci.yml` ファイル全体を次のコードに置き換えます:
 
-    ```yml
-    default:
-      image: node:latest
-      
-    stages:
-      - test
+      ```yml
+      default:
+        image: node:latest
 
-    test_flag:
-      stage: test
-      script:
-        - npm i unleash-client
-        - node index.js
-    ```
+      stages:
+        - test
+
+      test_flag:
+        stage: test
+        script:
+          - npm i unleash-client
+          - node index.js
+      ```
 
 1. **Commit changes** を選択します。
 
@@ -99,4 +99,4 @@ lastmod: "2026-03-25T17:26:37+00:00"
 
 ## ご提案は?
 
-ラボへの変更をご希望の場合は、マージリクエストで変更内容を送信してください。
+このラボへの変更をご希望の場合は、マージリクエストを通じて変更内容を送信してください。

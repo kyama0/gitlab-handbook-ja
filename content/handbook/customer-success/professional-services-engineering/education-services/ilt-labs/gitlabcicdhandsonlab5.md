@@ -2,11 +2,11 @@
 title: "GitLab CI/CD - ハンズオンラボ: 壊れたパイプラインの調査"
 description: "このハンズオンガイドでは、CI/CD パイプラインのトラブルシューティングと修正方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab5/
-upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
-translated_at: "2026-08-12T06:06:45+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:44:15+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-11T13:03:24+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 完了までの推定時間: 15 分
@@ -48,12 +48,12 @@ Tanuki Enterprises は、CI/CD ジャーニーの最終ステップ、つまり�
       ```yaml
       deploy app:
         stage: deploy
-        script: 
+        script:
           - 'which ssh-agent || ( apt-get update -y && apt-get install openssh-client git -y )'
           - eval $(ssh-agent -s)
       ```
 
-1. 次に、SSH キー変数から pem ファイルをセットアップし、SSH 用途で使用できるようにファイルに必要な権限を設定します。グループレベルの変数である `SSH_PRIVATE_KEY` 変数を使用していることに注意してください。変数の完全なリストは、グループに移動して **Settings > CI/CD** を選択し、**Variables** サブメニューを選択することで確認できます。
+1. 次に、SSH キー変数から PEM ファイルをセットアップし、SSH 用途で使用できるようにファイルに必要な権限を設定します。グループレベルの変数である `SSH_PRIVATE_KEY` 変数を使用していることに注意してください。変数の完全なリストは、グループに移動して **Settings > CI/CD** を選択し、**Variables** サブメニューを選択することで確認できます。
 
       ```yaml
       deploy app:
@@ -162,4 +162,4 @@ Tanuki Enterprises は、CI/CD ジャーニーの最終ステップ、つまり�
 
 ## 提案?
 
-ラボへの変更を加えたい場合は、マージリクエストを通じて変更を提出してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更を提出してください。
