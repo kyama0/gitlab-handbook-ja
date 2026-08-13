@@ -2,9 +2,9 @@
 title: 昇進と異動
 description: "GitLab の昇進と異動に関する情報とプロトコル。"
 upstream_path: /handbook/people-group/promotions-transfers/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-30T08:41:12+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+lastmod: "2026-08-12T19:30:53-04:00"
+translated_at: "2026-08-13T23:52:41+09:00"
 translator: claude
 stale: false
 ---
@@ -496,8 +496,8 @@ Greenhouse で異動の報酬をレビューする際、Total Rewards チーム�
 
 #### 職務変更レター {#job-change-letter}
 
-1. [国別の署名要件](/handbook/hiring)をレビューし、それに従って職務変更レターを処理します。すべての法人と国の場所で職務変更レターが必要なわけではないことに注意してください (たとえば、米国のチームメンバーは職務変更レターを受け取りません)。
-1. 該当する職務変更レターテンプレートのコピーを作成し、Workday リクエストに基づいてすべての適用可能な情報を入力し、該当する[署名者](/handbook/hiring)または[会社署名スタンプ](https://docs.google.com/document/d/1RWkI7zuFIUkW_sh1TmYii6e8zNOmz9USUoEr1wBIBpQ/edit?usp=sharing)を追加します。発効日は次のとおりです:
+1. [国別の署名要件](https://docs.google.com/spreadsheets/d/1soc-j0Z_UUqHX8X04zJUzBrDv0I1SNCjkbO8-OTZQ24/edit?gid=1838311656#gid=1838311656)をレビューし、それに従って職務変更レターを処理します。すべての法人と国の場所で職務変更レターが必要なわけではないことに注意してください (たとえば、米国のチームメンバーは職務変更レターを受け取りません)。
+1. 該当する[職務変更レターテンプレート](https://drive.google.com/drive/folders/1HZAj_REl_LSNHMsTT1BZUXBKKhhl3i6U)のコピーを作成し、Workday リクエストに基づいてすべての適用可能な情報を入力し、該当する[署名者](https://docs.google.com/document/d/1K3j3BE17ip8Bt7i6wTtU_oZGFE2gsCagntbiSJpKWA0/edit?tab=t.0#heading=h.n2154lhe0333)または[会社署名スタンプ](https://docs.google.com/document/d/1RWkI7zuFIUkW_sh1TmYii6e8zNOmz9USUoEr1wBIBpQ/edit?usp=sharing)を追加します。発効日は次のとおりです:
     - 変動報酬の変更があるセールス担当者の場合、発効日は法人に関係なく常に月の 1 日です。
     - チームメンバーが報酬の変更なしのラテラル移動を行う場合、開始日は任意の月曜日にできます。
     - 米国のチームメンバーの場合、発効日は 1 日または 16 日のいずれかである必要があります。[ペイロール締切日](/handbook/finance/payroll)が現在のペイ期間で経過した場合、発効日は次のペイ期間の開始にする必要があります。発効日を決定する際は、GitLab Inc および Federal Payroll カレンダーを参照する必要があります。

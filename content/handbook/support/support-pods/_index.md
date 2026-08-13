@@ -2,11 +2,11 @@
 title: サポートポッド
 description: サポート内および各機能をまたいだ協働に焦点を当てる柔軟な関心グループ
 upstream_path: /handbook/support/support-pods/
-upstream_sha: e829b207a53856c23a25197426cca945626ade8a
-translated_at: "2026-07-05T07:22:17+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T23:52:41+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-01T09:10:46+01:00"
+lastmod: "2026-08-13T05:18:12-04:00"
 ---
 
 サポートポッドは、任意のチームメンバーグループが、取り組みたい任意の課題セットに対して、関心ベースの自己組織化グループを立ち上げるために利用できる柔軟なフレームワークです。
@@ -27,19 +27,19 @@ GitLab の製品機能セットや顧客のユースケースは、ある程度�
 |-------------|-------|-------|
 | [AI](ai) | [#spt_pod_ai](https://gitlab.enterprise.slack.com/archives/C06KMDBJT5F) | <ul><li>{{< member-by-name "John Gaughan" >}}</li></ul> |
 | [Advanced Search](advanced-search) | [#spt_pod_advanced-search](https://gitlab.enterprise.slack.com/archives/C05M99TRDHV) | <ul><li>{{< member-by-name "Cleveland Bledsoe Jr" >}}</li></ul> |
-| [Authentication and Authorization](authentication-and-authorization) | [#spt_pod_auth](https://gitlab.enterprise.slack.com/archives/C01NGKZQ2F2) | <ul><li>{{< member-by-name "Asmaa Hassan Ahmed Ali" >}}</li><li>{{< member-by-name "Gerardo Gutierrez" >}}</li><li>{{< member-by-name "Jio Castillo" >}}</li><li>{{< member-by-name "Alejandro Guerrero de Alba" >}}</li></ul> |
+| [Authentication and Authorization](authentication-and-authorization) | [#spt_pod_auth](https://gitlab.enterprise.slack.com/archives/C01NGKZQ2F2) | <ul><li>{{< member-by-name "Gerardo Gutierrez" >}}</li><li>{{< member-by-name "Jio Castillo" >}}</li></ul> |
 | [CI/CD](ci-cd) | [#spt_pod_cicd](https://gitlab.enterprise.slack.com/archives/C04DHQ91WJE) | |
-| [Code Contributions](code-contributions) | [#spt_pod_code-contributions](https://gitlab.enterprise.slack.com/archives/C05DUHAG3EY) | <ul><li>{{< member-by-name "Anton Smith" >}}</li><li>{{< member-by-name "Manuel Grabowski" >}}</li></ul> |
-| [Database](database) | [#spt_pod_database](https://gitlab.enterprise.slack.com/archives/C05K0R2830A) | <ul><li>{{< member-by-name "Daniel Diniz de Noronha" >}}</li><li>{{< member-by-name "Chris Nightingale" >}}</li><li>{{< member-by-name "Mark Nagle" >}}</li><li>{{< member-by-name "David Israel" >}}</li><li>{{< member-by-name "Ryan Castro" >}}</li></ul> |
-| [Documentation](docs) | [#spt_pod_docs](https://gitlab.enterprise.slack.com/archives/C07UU2R5SKU) | <ul><li>{{< member-by-name "Keelan Lang" >}}</li><li>{{< member-by-name "Michelle Almendarez" >}}</li><li>{{< member-by-name "Michael Gibson" >}}</li></ul> |
-| [Geo](geo) | [#spt_pod_geo](https://app.slack.com/client/T02592416/C03D96JF4LD) | <ul><li>{{< member-by-name "Ronald van Zon" >}}</li><li>{{< member-by-name "Anton Smith" >}}</li><li>{{< member-by-name "Keelan Lang" >}}</li></ul> |
-| [GET](get) | [#spt_pod_get](https://app.slack.com/client/T02592416/C05NL747NMD) | <ul><li>{{< member-by-name "Lewis Brown" >}}</li></ul> |
+| [Code Contributions](code-contributions) | [#spt_pod_code-contributions](https://gitlab.enterprise.slack.com/archives/C05DUHAG3EY) | <ul><li>{{< member-by-name "Anton Smith" >}}</li></ul> |
+| [Database](database) | [#spt_pod_database](https://gitlab.enterprise.slack.com/archives/C05K0R2830A) | <ul><li>{{< member-by-name "Daniel Diniz de Noronha" >}}</li><li>{{< member-by-name "Mark Nagle" >}}</li><li>{{< member-by-name "David Israel" >}}</li><li>{{< member-by-name "Ryan Castro" >}}</li></ul> |
+| [Documentation](docs) | [#spt_pod_docs](https://gitlab.enterprise.slack.com/archives/C07UU2R5SKU) | <ul><li>{{< member-by-name "Michelle Almendarez" >}}</li><li>{{< member-by-name "Michael Gibson" >}}</li></ul> |
+| [Geo](geo) | [#spt_pod_geo](https://app.slack.com/client/T02592416/C03D96JF4LD) | <ul><li>{{< member-by-name "Ronald van Zon" >}}</li><li>{{< member-by-name "Anton Smith" >}}</li></ul> |
+| [GET](get) | [#spt_pod_get](https://app.slack.com/client/T02592416/C05NL747NMD) | |
 | [Git and Gitaly](git-and-gitaly) | [#spt_pod_git](https://gitlab.enterprise.slack.com/archives/C04D5FUADAM) | <ul><li>{{< member-by-name "Jessie Lee" >}}</li></ul> |
-| [GitLab Dedicated](gitlab-dedicated) | [#support_gitlab-dedicated](https://gitlab.enterprise.slack.com/archives/C058LM1RL3V) | <ul><li>{{< member-by-name "Nilanka De Silva" >}}</li><li>{{< member-by-name "Wade Jenkins" >}}</li><li>{{< member-by-name "Daphne Kua" >}}</li><li>{{< member-by-name "Wei-Meng Lee" >}}</li></ul> |
+| [GitLab Dedicated](gitlab-dedicated) | [#support_gitlab-dedicated](https://gitlab.enterprise.slack.com/archives/C058LM1RL3V) | <ul><li>{{< member-by-name "Nilanka De Silva" >}}</li><li>{{< member-by-name "Rommel Rodas" >}}</li><li>{{< member-by-name "Daphne Kua" >}}</li><li>{{< member-by-name "Wei-Meng Lee" >}}</li></ul> |
 | [Import](import) | [#spt_pod_import](https://gitlab.enterprise.slack.com/archives/C052K0Z1F8T) | <ul><li>{{< member-by-name "Anton Smith" >}}</li></ul> |
 | [Integrations](integrations) | [#spt_pod_integrations](https://gitlab.enterprise.slack.com/archives/C08VB43K9N0) | <ul><li>{{< member-by-name "Anton Smith" >}}</li></ul> |
-| [Kubernetes](kubernetes) | [#spt_pod_kubernetes](https://gitlab.enterprise.slack.com/archives/C03U2N3180K/) | <ul><li>{{< member-by-name "Lewis Brown" >}}</li></ul>|
-| [Licensing and Renewals](licensing-and-renewals) | [#support_licensing-subscription](https://gitlab.enterprise.slack.com/archives/C018C623KBJ) | <ul><li>{{< member-by-name "Bethany Mcgrew" >}}</li></ul> |
+| [Kubernetes](kubernetes) | [#spt_pod_kubernetes](https://gitlab.enterprise.slack.com/archives/C03U2N3180K/) | |
+| [Licensing and Renewals](licensing-and-renewals) | [#support_licensing-subscription](https://gitlab.enterprise.slack.com/archives/C018C623KBJ) | <ul><li>{{< member-by-name "Bethany McGrew" >}}</li></ul> |
 | [Performance and Reliability](performance-and-reliability) | [#spt_pod_performance](https://gitlab.enterprise.slack.com/archives/C04DP058MT2) | <ul><li>{{< member-by-name "Cody West" >}}</li></ul> |
 | [Runner](runner) | [#spt_pod_runner](https://gitlab.enterprise.slack.com/archives/C05MBS5RZ50) | <ul><li>{{< member-by-name "Justin Farmiloe" >}}</li><li>{{< member-by-name "Tony Marsh" >}}</li></ul> |
 | [Sec](sec) | [#spt_pod_sec](https://gitlab.enterprise.slack.com/archives/C03FV8G5LV7) | <ul><li>{{< member-by-name "Katrin Leinweber" >}}</li></ul> |

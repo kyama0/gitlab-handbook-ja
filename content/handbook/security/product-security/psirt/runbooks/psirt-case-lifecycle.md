@@ -2,11 +2,11 @@
 title: "PSIRT ケースライフサイクル"
 description: PSIRT がケースをどのように管理するかの説明
 upstream_path: /handbook/security/product-security/psirt/runbooks/psirt-case-lifecycle/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-10T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T23:52:41+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-17T09:37:30-04:00"
+lastmod: "2026-08-13T15:10:33+03:00"
 ---
 最終更新: 2025年12月3日
 
@@ -88,7 +88,7 @@ PSIRT のトリアージワークフローは、重大度と特性に基づい�
    - 重大度評価: 技術的な重大度レベルを評価する
    - 影響分析: STRIDE 手法によるアセスメントを行いセキュリティ影響を理解する
    - CVSS スコアリング: Common Vulnerability Scoring System のスコアを算出する
-   - CWE 分類: 適切な [Common Weakness Enumeration](/handbook/engineering/development/sec/secure/products/metrics/) カテゴリを割り当てる
+   - CWE 分類: 適切な [Common Weakness Enumeration](/handbook/engineering/development/sec/security-factory/products/metrics/) カテゴリを割り当てる
 2. すべての発見と技術的詳細を PSIRT 調査 Issue に記録する
    - GitLab に影響がない場合、理由を特定し、発見者へのフォローアップのために Security Analyst にアサインする
    - GitLab に影響がある場合、アセスメントを完了して Engineering の修復用に Issue をファイルし、Security Analyst にバウンティ支払いと HackerOne 報告の Triaged 状態への移行を依頼する

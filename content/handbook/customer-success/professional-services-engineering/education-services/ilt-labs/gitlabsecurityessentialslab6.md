@@ -2,11 +2,11 @@
 title: "GitLab Security Essentials - ハンズオンラボ: スキャン実行ポリシーを使用したスキャンの有効化"
 description: "このハンズオンガイドは、GitLab プロジェクトでスキャン実行ポリシーを有効化して使用する方法を案内します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab6/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T05:12:10Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:31:06+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-23T12:38:59+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 推定所要時間: 15 分
@@ -59,9 +59,9 @@ lastmod: "2025-10-23T12:38:59+01:00"
 
 1. ファイルに以下のコードを追加します:
 
-    ```py
-    print("Testing scanners!")
-    ```
+      ```py
+      print("Testing scanners!")
+      ```
 
 1. 変更を main ブランチにコミットします。
 
@@ -131,15 +131,15 @@ lastmod: "2025-10-23T12:38:59+01:00"
 
 1. `main.py` ファイルを開き、以下のコードを追加します:
 
-    ```py
-    import subprocess
+      ```py
+      import subprocess
 
-    in = input("Enter your server ip: ")
-    subprocess.run(["ping", in])
+      in = input("Enter your server ip: ")
+      subprocess.run(["ping", in])
 
-    print("Attempting to connect to the server")
-    print("Application authentication was successful")
-    ```
+      print("Attempting to connect to the server")
+      print("Application authentication was successful")
+      ```
 
 1. ソース管理アイコンを選択し、`Commit and push to 'test_policy'` を選択します。
 
@@ -151,10 +151,10 @@ lastmod: "2025-10-23T12:38:59+01:00"
 
 1. `main.py` ファイルを開き、`main.py` のコードを以下のように編集します:
 
-    ```py
-    print("Attempting to connect to the server")
-    print("Application authentication was successful")
-    ```
+      ```py
+      print("Attempting to connect to the server")
+      print("Application authentication was successful")
+      ```
 
 1. ソース管理アイコンを選択し、`Commit and push to 'test_policy'` を選択します。
 
@@ -168,4 +168,4 @@ lastmod: "2025-10-23T12:38:59+01:00"
 
 ## ご提案・改善点
 
-ラボに変更を加えたい場合は、マージリクエストで変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

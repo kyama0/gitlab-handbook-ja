@@ -2,14 +2,14 @@
 title: "GitLab Compliance - ハンズオンラボ: 権限の分離"
 description: "このハンズオンガイドでは、権限の分離をデモンストレーションします"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcompliancehandsonlab1/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:53:30+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-16T07:38:43-04:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
-> 完了までの推定時間: 10分
+> 完了までの推定時間: 10 分
 
 ## 目標
 
@@ -49,4 +49,4 @@ lastmod: "2026-04-16T07:38:43-04:00"
 
 ## ご提案はありますか?
 
-ラボに変更を加えたい場合は、マージリクエストで変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

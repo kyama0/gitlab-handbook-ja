@@ -1,26 +1,43 @@
 ---
-title: "Environment Automation チーム"
+title: "Dedicated Commercial（旧称 Environment Automation）"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/environment-automation/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T23:58:47+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-19T13:58:13+00:00"
+lastmod: "2026-08-12T12:24:04+00:00"
 ---
 
 ## 概要
 
-Environment Automation は [Dedicated グループ](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/) 内のチームです。私たちのミッションは、GitLab Dedicated ソリューションの自動化された配管を開発・運用することです。
+Dedicated Commercial は、[Dedicated グループ](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/) 内の機能別チーム群です。私たちのミッションは、主に Dedicated Commercial のロードマップに注力し、GitLab Dedicated ソリューションの自動化基盤を開発・運用することです。
+この機能別チーム群は、GitLab の Act 2 後に Environment Automation Team から分離してできたものです。
 
 このページで明示的に記載されている違いがある場合を除き、[Dedicated グループ](/handbook/engineering/infrastructure-platforms/gitlab-dedicated/) ページに記載されているものと同じプロセスに従います。
 
-## チームメンバー
+## マネージャー別チームメンバー
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-dedicated/environment-automation/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{< team-by-manager-slug "o-lluch" >}}
+
+{{< team-by-manager-slug "denhams" >}}
+
+## Act 2 後の機能別チーム
+
+R&D 部門は、3 〜 4 人のエンジニアで構成され、機能領域に完全に集中する小規模チームを重視し、1 人のマネージャーが 2 〜 3 チームを担当する組織構造へ移行しました。また、各機能別チームの Tech Lead であるファンクショナルリードの役割も推奨しました。ファンクショナルリードは、チームの技術的な実行と成長に責任を持つ Staff+ です。
+
+この意図を実現するため、Environment Automation は 5 つの機能別チームに分割されました。
+
+| 機能別チーム | サービス提供先 | スコープとオーナーシップ | 主なアライメント | マネージャー | ファンクショナルリード |
+|---|---|---|---|---|---|
+| **Platform Integration** | GitLab モジュール開発チーム | 外部製品やモジュール型 GitLab 機能を Dedicated に導入する統合経路を所有します。これには Dedicated との結合、本番運用への対応、統合経路のテスト戦略が含まれます。 | Theseus と Test Automation Framework。 | 暫定: {{< member-by-gitlab "o-olluch" >}}| {{< member-by-gitlab "bmckitrick" >}} |
+| **Platform Resilience** | Dedicated 運用チーム | 個々のテナント向けのレジリエンスおよび自己修復製品を所有します。これにはディザスタリカバリ、オートスケーリング、自動キャパシティプランニング、レート制限のほか、人の介入を最小限に抑えながらインスタンスが障害を検知、吸収、復旧し、同時にインフラストラクチャのコスト効率を維持できるようにする仕組みが含まれます。 | Dedicated Orchestration Automation と Cloud Cost Utilization。 |  {{< member-by-gitlab "denhams" >}}| {{< member-by-gitlab "ktchernov" >}} |
+| **Dedicated Responder Automation** | Dedicated の SRE および DevOps 対応者 | Dedicated インシデントに対応するワークフローとツールを所有します。これにはシグナルとアラートの情報付加、アラートルーティング、アラート集約、自動トラブルシューティングが含まれます。 | Production Engineering の Incident Management および Signals/Observability。 |  {{< member-by-gitlab "o-olluch" >}}| {{< member-by-gitlab "troblot" >}} |
+| **Dedicated Orchestration Automation** | Dedicated オペレーターおよび DevOps チーム | 中核となるオーケストレーションプラットフォームと変更管理の自動化を所有します。これにはジョブワークフロー、基盤となるインフラストラクチャの変更、メンテナンス操作、テナントモデルのセグメントが含まれます。Platform Resilience、Responder Automation、Platform Integration はこのプラットフォームを利用し、プラットフォーム内の各ワークフローと設定を所有します。 | Switchboard Orchestration APIs。また、インターフェースが重なる領域では Service Delivery Platform および Cells の運用と連携します。 | {{< member-by-gitlab "o-olluch" >}}| {{< member-by-gitlab "SamirHafez" >}} |
+| **Dedicated Commercial Features** | Dedicated Product および Dedicated の顧客 | 商用の Dedicated 機能ロードマップと本番運用可能な実装を所有します。これには BYOD、ネットワーク設定、Geo Proxy などの顧客向けインフラストラクチャおよび分離機能が含まれます。 | アーティファクトの注入、統合、本番品質について Platform Integration および Dedicated Orchestration Automation と連携します。 |   {{< member-by-gitlab "denhams" >}}| {{< member-by-gitlab "vmondo" >}} |
 
 ## 私たちとの連携
 
-Environment Automation チームと連携するには：
+機能別チームへの移行中であるため、いずれかの機能別チームと連携する場合は Environment Automation チームを参照してください（機能別チームごとに新しいコミュニケーションチャネルが利用可能になった時点で、このセクションを更新します）。
 
 - GitLab Dedicated チームの Issue トラッカーで [Issue を作成](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/issues/new) する
 - Issue に以下のラベルを付ける：
@@ -54,7 +71,9 @@ Environment Automation チームと連携するには：
 
 ### 四半期計画プロセス {#quarterly-planning-process}
 
-{{% details summary="四半期計画プロセス" %}}
+<details>
+<summary>四半期計画プロセス</summary>
+
 四半期計画は**戦略的優先事項**と**チームキャパシティ**のバランスを取るために使用されます。一貫した実行、非同期アライメント、およびステークホルダー全体の可視性を確保します。計画は新しい四半期の 4 週間前に開始し、実行可能な作業項目を確保するためのエピックバックログ精緻化が統合されています。
 
 #### ステップ 1 – 計画 Issue の作成（週 -4）
@@ -172,7 +191,8 @@ Environment Automation チームと連携するには：
 この四半期計画プロセスには **ステップ 4（週 -2 から -1）** 中のエピックバックログ精緻化が統合されています。この精緻化により、エンジニアが四半期実行フェーズ中にエピックを選択する準備ができたら素早く開始できるようになります。
 
 この精緻化されたエピックのセットは、正確なキャパシティ見積もりで次の四半期の計画に役立ち、エンジニアが発見とスコープ調整の活動に時間を費やすのではなく、四半期が始まったらすぐに生産的な作業をすぐに開始できるようにします。
-{{% /details %}}
+
+</details>
 
 #### レビュアールーレット
 

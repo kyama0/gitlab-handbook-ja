@@ -2,11 +2,11 @@
 title: "パイプライン検証サービス運用ワーキンググループ"
 description: "パイプライン検証サービス運用ワーキンググループの属性、目標、役割と責任について詳しくはこちら。"
 upstream_path: "/handbook/company/working-groups/pipeline-validation-service-operations/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T00:00:00Z"
+upstream_sha: "d8fb317567e8e271f91f602d97d453ad1a69a00a"
+translated_at: "2026-08-14T01:54:00+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-08-13T15:10:33+03:00"
 ---
 
 ## 属性
@@ -32,7 +32,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 
 1. PVS を長期的なオーナーへ正常に移管する
 
-   - [アンチアビュース](/handbook/engineering/development/sec/software-supply-chain-security/anti-abuse/) グループが [PVS を所有・維持管理](https://about.gitlab.com/direction/software_supply_chain_security/#pvs-pipeline-validation-service)する
+   - [Abuse Engineering](/handbook/engineering/development/sec/security-platform/abuse-engineering/) グループが [PVS を所有・維持管理](https://about.gitlab.com/direction/software_supply_chain_security/#pvs-pipeline-validation-service)する
 
 ### 役割と責任
 

@@ -2,9 +2,9 @@
 title: "GitLab Duo Principles - ハンズオンラボ: GitLab Duo をはじめる"
 description: "このハンズオンガイドでは、GitLab Duo を使って技術的な質問に回答する手順を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/devsecopswithduolab1/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-09T10:04:35-04:00
-translated_at: "2026-06-12T21:16:06Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+lastmod: "2026-08-13T07:16:24-04:00"
+translated_at: "2026-08-14T00:34:30+09:00"
 translator: claude
 stale: false
 ---
@@ -61,4 +61,4 @@ GitLab Duo Agentic chat は、Issue の移動やプロジェクト間でのマ�
 
 ## ご提案はありますか？
 
-ラボに変更を加えたい場合は、マージリクエストで変更を提出してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更を提出してください。

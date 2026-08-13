@@ -2,11 +2,11 @@
 title: "GitLab システム管理者 - ハンズオンラボ: GitLab Omnibus のアップグレード"
 description: "このハンズオンガイドでは、GitLab Omnibus インスタンスのアップグレード方法を紹介します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab4/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:54:00+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-23T12:38:59+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 推定所要時間: 30 分
@@ -45,7 +45,7 @@ GitLab Omnibus のアップデートは、パッケージマネージャーを�
 
 1. 現在の GitLab バージョン（`17.4.1`）とターゲットバージョン（`17.5.5`）を入力します。
 
-1. **Edition** が **Enterprise** に設定され、Distro が **Ubuntu** に設定されていることを確認します。
+1. `Edition` が **Enterprise** に設定され、`Distro` が **Ubuntu** に設定されていることを確認します。
 
 1. `Go!` を選択します。
 
@@ -79,4 +79,4 @@ GitLab Omnibus のアップデートは、パッケージマネージャーを�
 
 ## ご提案はありますか?
 
-ラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

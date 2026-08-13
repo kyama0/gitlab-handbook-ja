@@ -1,15 +1,15 @@
 ---
-title: "GitLab アジャイルポートフォリオ管理 - ハンズオンラボ: レポートとポートフォリオ管理"
+title: "GitLab Agile Portfolio Management - ハンズオンラボ: レポートとポートフォリオ管理"
 description: "このハンズオンガイドでは、GitLab でダッシュボードを作成・管理する方法を学習します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabpmhandsonlab5/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:21:21+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-23T12:38:59+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
-> 完了までの推定時間: 20分
+> 完了までの推定時間: 20 分
 
 ## 目標
 
@@ -45,25 +45,25 @@ GitLab はプロジェクトレベルとグループレベルの両方でいく�
 
 1. 以下の内容をファイルにコピーします:
 
-    ```yaml
-    bugsCharts:
-      title: "Insights for Awesome App"
-      charts:
-        - title: "Team Progress"
-          description: "Tracking how many issues are being worked on by the development team over a month"
-          type: bar
-          query:
-            data_source: issuables
-            params:
-              issuable_type: issue
-              issuable_state: opened
-              filter_labels:
-                - Dev
-              group_by: month
-              period_limit: 30
-    ```
+      ```yaml
+      bugsCharts:
+        title: "Insights for Awesome App"
+        charts:
+          - title: "Team Progress"
+            description: "Tracking how many issues are being worked on by the development team over a month"
+            type: bar
+            query:
+              data_source: issuables
+              params:
+                issuable_type: issue
+                issuable_state: opened
+                filter_labels:
+                  - Dev
+                group_by: month
+                period_limit: 30
+      ```
 
-    このインサイトにより、1ヶ月間にわたるチームの作業量を追跡できます。
+      このインサイトにより、1 ヶ月間にわたるチームの作業量を追跡できます。
 
 1. この変更をコミットします。
 
@@ -75,4 +75,4 @@ GitLab はプロジェクトレベルとグループレベルの両方でいく�
 
 ## ご提案はありますか?
 
-ラボへの変更を希望する場合は、マージリクエストで変更を送信してください。
+このラボを変更したい場合は、マージリクエストを通じて変更を送信してください。

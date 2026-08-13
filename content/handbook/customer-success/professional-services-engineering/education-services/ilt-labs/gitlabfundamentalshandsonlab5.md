@@ -1,23 +1,23 @@
 ---
 title: "GitLab Fundamentals - ハンズオンラボ: 継続的インテグレーションと開発"
-description: "このハンズオンガイドでは、プロジェクトにCI/CDを追加するプロセスを学習します。"
+description: "このハンズオンガイドでは、プロジェクトに CI/CD を追加するプロセスを学習します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab5/
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-translated_at: "2026-07-02T06:06:16+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:13:44+09:00"
 translator: claude
 stale: false
-lastmod: 2026-06-26T10:02:20-04:00
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
-> 完了までの推定時間: 30分
+> 完了までの推定時間: 30 分
 
 ## 目標
 
-このラボでは、QAプロジェクト用の基本的なCI/CDパイプラインを作成する方法を学習します。
+このラボでは、QA プロジェクト用の基本的な CI/CD パイプラインを作成する方法を学習します。
 
 ## タスク A. コードベースのセットアップ
 
-CI/CDプロセスを作成する前に、CI/CDプロセスを実行するコードが必要です。まず、`Cool App QA` プロジェクトに移動します。
+CI/CD プロセスを作成する前に、CI/CD プロセスを実行するコードが必要です。まず、`Cool App QA` プロジェクトに移動します。
 
 1. プロジェクトで **+ > New file** を選択します。
 
@@ -25,18 +25,18 @@ CI/CDプロセスを作成する前に、CI/CDプロセスを実行するコー�
 
 1. `main.go` に以下のコードを追加します:
 
-    ``` go
-    package main
+      ``` go
+      package main
 
-    import(
-        "fmt"
-    ) 
+      import(
+          "fmt"
+      )
 
-    func main() {
-        fmt.Println("We are up and running!")
-    }
+      func main() {
+          fmt.Println("We are up and running!")
+      }
 
-    ```
+      ```
 
 1. **Commit changes** を選択します。
 
@@ -46,7 +46,7 @@ CI/CDプロセスを作成する前に、CI/CDプロセスを実行するコー�
 
 1. マージリクエストのオプションをすべてデフォルトのままにして、**Create merge request** を選択します。
 
-    ここから、コードにもう1つファイル（`go.mod` ファイル）を追加します。追加するには:
+      ここから、コードにもう 1 つファイル（`go.mod` ファイル）を追加します。追加するには:
 
 1. 左サイドバーで **Code > Branches** を選択します。
 
@@ -58,21 +58,21 @@ CI/CDプロセスを作成する前に、CI/CDプロセスを実行するコー�
 
 1. 以下のコードをファイルに追加します:
 
-    ```go
-    module array
+      ```go
+      module array
 
-    go 1.22.2
-    ```
+      go 1.22.2
+      ```
 
 1. **Commit changes** を選択します。
 
 1. **Commit to current `initial-code` branch** が選択されていることを確認します。**Commit changes** を選択します。
 
-コードが作成できたので、コードのCI/CDプロセスを作成できます。
+コードが作成できたので、コードの CI/CD プロセスを作成できます。
 
-## タスク B. CI/CDプロセスの作成
+## タスク B. CI/CD プロセスの作成
 
-先ほど書いたコードのCI/CDプロセスを作成しましょう。目標は、書いたコードをビルドするプロセスを作成することです。これを行うには、`.gitlab-ci.yml` ファイルを作成する必要があります。このファイルには、CI/CDプロセスのすべてのジョブとステージが含まれます。
+先ほど書いたコードの CI/CD プロセスを作成しましょう。目標は、書いたコードをビルドするプロセスを作成することです。これを行うには、`.gitlab-ci.yml` ファイルを作成する必要があります。このファイルには、CI/CD プロセスのすべてのジョブとステージが含まれます。
 
 1. 左サイドバーで **Code > Repository** を選択します。
 
@@ -100,105 +100,105 @@ CI/CDプロセスを作成する前に、CI/CDプロセスを実行するコー�
 
 1. **Commit changes** を選択します。
 
-## タスク C. CI/CDプロセスの確認
+## タスク C. CI/CD プロセスの確認
 
 1. コードをコミットすると、パイプラインがすぐに開始されます。パイプラインを確認するには、**Build > Pipelines** に移動します。
 
-    ここには、プロジェクトのすべてのパイプラインのサマリーが表示されます。各パイプラインには以下の詳細が表示されます:
-    - パイプラインのステータス
-    - パイプライン名、ID、ブランチ、トリガーとなったコミット
-    - パイプラインを作成したユーザー
-    - ステージ別のパイプラインステータスの内訳
+      ここには、プロジェクトのすべてのパイプラインのサマリーが表示されます。各パイプラインには以下の詳細が表示されます:
+      - パイプラインのステータス
+      - パイプライン名、ID、ブランチ、トリガーとなったコミット
+      - パイプラインを作成したユーザー
+      - ステージ別のパイプラインステータスの内訳
 
-1. パイプラインの詳細を確認するには、パイプラインの **Status** を選択します。このUIでは、各ステージとそのステージに関連するジョブを示すパイプラインのグラフが表示されます。
+1. パイプラインの詳細を確認するには、パイプラインの **Status** を選択します。この UI では、各ステージとそのステージに関連するジョブを示すパイプラインのグラフが表示されます。
 
 1. **build go** ジョブを選択します。
 
-> この画面では、ジョブの実行中に実行されたすべてのコマンドを含むジョブの詳細が表示されます。右側には、ジョブの実行時間、ジョブ完了時刻、ジョブのキュー時間、ジョブを完了したランナー、ジョブをトリガーしたコミット、およびジョブに関連するパイプラインの詳細が表示されます。
+      > この画面では、ジョブの実行中に実行されたすべてのコマンドを含むジョブの詳細が表示されます。右側には、ジョブの実行時間、ジョブ完了時刻、ジョブのキュー時間、ジョブを完了したランナー、ジョブをトリガーしたコミット、およびジョブに関連するパイプラインの詳細が表示されます。
 
-各詳細を確認しましょう。まず、ジョブに移動します:
+      各詳細を確認しましょう。まず、ジョブに移動します:
 
 1. **Build > Jobs** を選択します。
 
 1. **build go** ジョブを選択します。
 
-ジョブログを確認して、各ジョブステージをより深く理解しましょう。最初に次のような内容が表示されます:
+      ジョブログを確認して、各ジョブステージをより深く理解しましょう。最初に次のような内容が表示されます:
 
-**ジョブ環境のセットアップ**
+      **ジョブ環境のセットアップ**
 
-```bash
-Running with gitlab-runner 17.0.0 (44feccdf)
-  on ilt-gitlab-runner xZL9uN-ry, system ID: s_e1aab81f250d
-Resolving secrets
-Preparing the "docker-autoscaler" executor
-00:33
-Dialing instance https://www.googleapis.com/compute/v1/projects/demosys-ilt-training-cloud/zones/us-central1-c/instances/added-scale-ilt-runner-group-1138177e63ca2c1e...
-Instance https://www.googleapis.com/compute/v1/projects/demosys-ilt-training-cloud/zones/us-central1-c/instances/added-scale-ilt-runner-group-1138177e63ca2c1e connected
-Using Docker executor with image golang ...
-Pulling docker image golang ...
-Using docker image sha256:92c72d51a65b247eb5672073192030d4964cee907770b0569665499e9880fa48 for golang with digest golang@sha256:ab1f5c47de0f2693ed97c46a646bde2e4f380e40c173454d00352940a379af60 ...
-```
+      ```bash
+      Running with gitlab-runner 17.0.0 (44feccdf)
+            on ilt-gitlab-runner xZL9uN-ry, system ID: s_e1aab81f250d
+      Resolving secrets
+      Preparing the "docker-autoscaler" executor
+      00:33
+      Dialing instance https://www.googleapis.com/compute/v1/projects/demosys-ilt-training-cloud/zones/us-central1-c/instances/added-scale-ilt-runner-group-1138177e63ca2c1e...
+      Instance https://www.googleapis.com/compute/v1/projects/demosys-ilt-training-cloud/zones/us-central1-c/instances/added-scale-ilt-runner-group-1138177e63ca2c1e connected
+      Using Docker executor with image golang ...
+      Pulling docker image golang ...
+      Using docker image sha256:92c72d51a65b247eb5672073192030d4964cee907770b0569665499e9880fa48 for golang with digest golang@sha256:ab1f5c47de0f2693ed97c46a646bde2e4f380e40c173454d00352940a379af60 ...
+      ```
 
-GitLabラボ環境では、ジョブのスケーリングを支援するためにランナーマネージャーを使用しています。ジョブが開始すると、まずキューに入ります。ランナーマネージャーが利用可能になると、ジョブを引き受けます。次に、インスタンスを作成し、定義されたDockerイメージ（この場合はgolangイメージ）でセットアップします。このイメージがランナーにプルされてロードされ、ジョブリクエストの処理を開始する準備が整います。
+      GitLab ラボ環境では、ジョブのスケーリングを支援するためにランナーマネージャーを使用しています。ジョブが開始すると、まずキューに入ります。ランナーマネージャーが利用可能になると、ジョブを引き受けます。次に、インスタンスを作成し、定義された Docker イメージ（この場合は Golang イメージ）でセットアップします。このイメージがランナーにプルされてロードされ、ジョブリクエストの処理を開始する準備が整います。
 
-**Gitリポジトリのクローン**
+      **Git リポジトリのクローン**
 
-環境のセットアップ後、GitLabはリポジトリをランナーにクローンします。
+      環境のセットアップ後、GitLab はリポジトリをランナーにクローンします。
 
-```bash
-Preparing environment
-00:02
-Running on runner-xzl9un-ry-project-25858-concurrent-0 via ilt-autoscale-runner-manager-2...
-Getting source from Git repository
-00:02
-Fetching changes with git depth set to 20...
-Initialized empty Git repository in /builds/training-users/session-c68006ec/iua7f2zr/fundamentals/qa/cool-app-qa/.git/
-Created fresh repository.
-Checking out e4f0de4d as detached HEAD (ref is initial-code)...
-Skipping Git submodules setup
-```
+      ```bash
+      Preparing environment
+      00:02
+      Running on runner-xzl9un-ry-project-25858-concurrent-0 via ilt-autoscale-runner-manager-2...
+      Getting source from Git repository
+      00:02
+      Fetching changes with git depth set to 20...
+      Initialized empty Git repository in /builds/training-users/session-c68006ec/iua7f2zr/fundamentals/qa/cool-app-qa/.git/
+      Created fresh repository.
+      Checking out e4f0de4d as detached HEAD (ref is initial-code)...
+      Skipping Git submodules setup
+      ```
 
-この後、すべてのコードがランナーで利用可能になります。重要な点として、ランナーにはGitリポジトリへのアクセス権があり、リモートリポジトリへのリンクが設定されています。これは2つのことを意味します:
+      この後、すべてのコードがランナーで利用可能になります。重要な点として、ランナーには Git リポジトリへのアクセス権があり、リモートリポジトリへのリンクが設定されています。これは 2 つのことを意味します:
 
-- Gitリポジトリ内の任意のファイルにアクセスして使用できます
-- ジョブプロセス中に変更を加えた場合、リポジトリにコミットして戻すことができます
+      - Git リポジトリ内の任意のファイルにアクセスして使用できます
+      - ジョブプロセス中に変更を加えた場合、リポジトリにコミットして戻すことができます
 
-**オプションのタスク:**
-これを実際に確認したいですか? ジョブスクリプトに `ls` コマンドを追加してみましょう。これにより現在のディレクトリが一覧表示され、ランナーにクローンされたすべてのファイルが表示されます。
+      **オプションのタスク:**
+      これを実際に確認したいですか? ジョブスクリプトに `ls` コマンドを追加してみましょう。これにより現在のディレクトリが一覧表示され、ランナーにクローンされたすべてのファイルが表示されます。
 
-```yaml
-stages:
-  - build
+      ```yaml
+      stages:
+      - build
 
-build go:
-  stage: build
-  image: golang
-  script:
-    - ls
-    - go build
-    - ./array
-```
+      build go:
+      stage: build
+      image: golang
+      script:
+      - ls
+      - go build
+      - ./array
+      ```
 
-**スクリプトの実行:**
-環境がセットアップされ、リポジトリがクローンされると、ジョブスクリプトが実行されます。
+      **スクリプトの実行:**
+      環境がセットアップされ、リポジトリがクローンされると、ジョブスクリプトが実行されます。
 
-```bash
-Executing "step_script" stage of the job script
+      ```bash
+      Executing "step_script" stage of the job script
 
-Using docker image sha256:5905f95343e84d1f8f14aff8f8b83747fb39ea0e0fad52a9d14cf41860295fff for golang with digest golang@sha256:f43c6f049f04cbbaeb28f0aad3eea15274a7d0a7899a617d0037aec48d7ab010 ...
-$ go build
-Cleaning up project directory and file based variables
+      Using docker image sha256:5905f95343e84d1f8f14aff8f8b83747fb39ea0e0fad52a9d14cf41860295fff for golang with digest golang@sha256:f43c6f049f04cbbaeb28f0aad3eea15274a7d0a7899a617d0037aec48d7ab010 ...
+      $ go build
+      Cleaning up project directory and file based variables
 
-Job succeeded
-```
+      Job succeeded
+      ```
 
-まとめとして、パイプラインでジョブを実行する際に覚えておくべき重要なポイントがあります。
+      まとめとして、パイプラインでジョブを実行する際に覚えておくべき重要なポイントがあります。
 
-- ジョブは通常、ジョブスクリプトを実行するためにDockerイメージを使用します
+      - ジョブは通常、ジョブスクリプトを実行するために Docker イメージを使用します
 
-- すべてのジョブは独自のDockerコンテナ内の別のランナーで実行されるため、ジョブが互いに干渉する心配はありません
+      - すべてのジョブは独自の Docker コンテナ内の別のランナーで実行されるため、ジョブが互いに干渉する心配はありません
 
-- ジョブの実行中は、Gitリポジトリや他のシステムリソースに完全にアクセスできます
+      - ジョブの実行中は、Git リポジトリや他のシステムリソースに完全にアクセスできます
 
 ## ラボガイド完了
 
@@ -206,4 +206,4 @@ Job succeeded
 
 ## ご提案はありますか?
 
-ラボへの変更を希望する場合は、マージリクエストで変更を送信してください。
+このラボへの変更を希望する場合は、マージリクエストを通じて変更を送信してください。

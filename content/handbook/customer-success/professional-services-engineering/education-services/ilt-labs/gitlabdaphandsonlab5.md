@@ -2,11 +2,11 @@
 title: "GitLab Duo Agent Platform - ハンズオンラボ: GitLab Duo Agent Platform でコードを作成しセキュリティを確保する"
 description: "このハンズオンガイドでは、Duo Agent Platform を使用してコードを作成し、セキュリティを確保する方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab5/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T12:49:33Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T16:06:53Z"
 translator: claude
 stale: false
-lastmod: 2026-06-15T14:13:50-04:00
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 完了までの推定時間: 20 分
@@ -37,7 +37,7 @@ Swag Shop プロジェクトには、未解決のまま vulnerability report に
 
 1. 検索フィールドをクリックし、**Report Type** を選択して、次に **SAST** を選択します。
 
-   >**注:** DAP の脆弱性修正は SAST の発見でのみ機能します。
+      >**注:** DAP の脆弱性修正は SAST の発見でのみ機能します。
 
 1. `app.py` の 214 行目にある **Improper neutralization of special elements used in an SQL Command ('SQL Injection')** という名前の脆弱性を特定します。
 
@@ -59,11 +59,11 @@ Swag Shop プロジェクトには、未解決のまま vulnerability report に
 
 1. **Explain with AI** を選択します。
 
-   エージェント型チャットセッションが開き、影響を受けるコードパターンと推奨される修正アプローチを含めて、脆弱性を平易な言葉で説明します。
+      エージェント型チャットセッションが開き、影響を受けるコードパターンと推奨される修正アプローチを含めて、脆弱性を平易な言葉で説明します。
 
 1. 続行する前に説明をレビューします。
 
->**今見ているもの:** `app.py` の 214 行目の SQL インジェクションは、ユーザー入力が SQL クエリ文字列に直接埋め込まれているために発生します。攻撃者はその入力を操作してクエリのロジックを変更できます。修正は parameterized クエリを使用することで、これはクエリの構造をデータから分離します。
+>**今見ているもの:** `app.py` の 214 行目の SQL インジェクションは、ユーザー入力が SQL クエリ文字列に直接埋め込まれているために発生します。攻撃者はその入力を操作してクエリのロジックを変更できます。修正はパラメーター化されたクエリを使用することで、これはクエリの構造をデータから分離します。
 
 ### タスク B.2: 修正マージリクエストを生成する
 
@@ -79,23 +79,23 @@ Swag Shop プロジェクトには、未解決のまま vulnerability report に
 
 1. 開いたマージリクエストから、**Changes** タブを選択します。
 
-1. 脆弱な文字列連結クエリが parameterized クエリに置き換えられていることを確認します。修正は、以下の脆弱なパターン:
+1. 脆弱な文字列連結クエリがパラメーター化されたクエリに置き換えられていることを確認します。修正は、以下の脆弱なパターン:
 
-   ```python
-   vulnerable_query = f"SELECT * FROM demo_products WHERE name LIKE '%{search_term}%' OR description LIKE '%{search_term}%'"
-   
-   cursor.execute(vulnerable_query)
-   ```
+      ```python
+      vulnerable_query = f"SELECT * FROM demo_products WHERE name LIKE '%{search_term}%' OR description LIKE '%{search_term}%'"
 
-   を、以下のように置き換える必要があります:
+      cursor.execute(vulnerable_query)
+      ```
 
-   ```python
-   secure_query = "SELECT * FROM demo_products WHERE name LIKE ? OR description LIKE ?"
-   
-   search_param = f"%{search_term}%"
+      を、以下のように置き換える必要があります:
 
-   cursor.execute(secure_query, (search_param, search_param))
-   ```
+      ```python
+      secure_query = "SELECT * FROM demo_products WHERE name LIKE ? OR description LIKE ?"
+
+      search_param = f"%{search_term}%"
+
+      cursor.execute(secure_query, (search_param, search_param))
+      ```
 
 1. **Pipelines** タブを選択します。パイプラインが完了したら、**Passed** ステータスを選択してパイプラインの詳細を開きます。**Security** タブを選択し、`app.py` の 214 行目の **Improper neutralization of special elements used in an SQL Command ('SQL Injection')** がもう報告されていないことを確認します。
 
@@ -116,7 +116,7 @@ Swag Shop プロジェクトには、未解決のまま vulnerability report に
 
 1. 左サイドバーで **Code > Repository** に移動します。
 
-1. ブランチドロップダウンをクリックして、ブランチを `main` から修正ブランチに変更します。ファイルリストには修正ブランチの内容が表示されるようになります。
+1. ブランチドロップダウンリストをクリックして、ブランチを `main` から修正ブランチに変更します。ファイルリストには修正ブランチの内容が表示されるようになります。
 
 1. ファイルリストから `requirements.txt` を開きます。
 
@@ -142,13 +142,13 @@ Swag Shop プロジェクトには、未解決のまま vulnerability report に
 
 1. 失敗したジョブを特定し、それをクリックしてログを開きます。以下に類似の出力が表示されることを確認します:
 
-   ```yaml
-   ERROR: Could not find a version that satisfies the requirement nonexistent-package==1.0.0
-   
-   ERROR: No matching distribution found for nonexistent-package==1.0.0
-   ```
+      ```yaml
+      ERROR: Could not find a version that satisfies the requirement nonexistent-package==1.0.0
 
-   >**注:** これを手動で修正する必要はありません。ログを読むことで何が失敗したかを確認し、Fix Pipeline フローが次に何をするかを理解できます。
+      ERROR: No matching distribution found for nonexistent-package==1.0.0
+      ```
+
+      >**注:** これを手動で修正する必要はありません。ログを読むことで何が失敗したかを確認し、Fix Pipeline フローが次に何をするかを理解できます。
 
 ### タスク C.3: Fix Pipeline フローをトリガーする
 
@@ -156,7 +156,7 @@ Swag Shop プロジェクトには、未解決のまま vulnerability report に
 
 1. ページの上部で **Fix pipeline with Duo** をクリックします。
 
-   >**注:** セッションは自動的に開くはずです。そうでない場合は、**Automate > Sessions** に移動して Fix Pipeline フローのセッションを見つけます。
+      >**注:** セッションは自動的に開くはずです。そうでない場合は、**Automate > Sessions** に移動して Fix Pipeline フローのセッションを見つけます。
 
 1. **Activity** タブをクリックし、フローが実行しているステップ（ログ分析、根本原因の特定、ファイル修正）を観察します。
 
@@ -183,7 +183,7 @@ Fix Pipeline フローは新しいマージリクエスト（修正マージリ�
 ### 期待される出力: タスク C
 
 - Fix Pipeline フローのセッションが **Automate > Sessions** で **Finished** のステータスで表示される。
-- フローが `requirements.txt` から `nonexistent-package==1.0.0` を削除するマージリクエストを開いた。
+- フローが `nonexistent-package==1.0.0 from requirements.txt` を削除するマージリクエストを開いた。
 - 修正マージリクエストが修正ブランチにマージされた。
 - 修正マージリクエストのパイプラインが通過するようになった。
 
@@ -197,7 +197,7 @@ Fix Pipeline フローは新しいマージリクエスト（修正マージリ�
 
 1. **Edit** をクリックして GitLabDuo を検索します。それを選択して GitLab Duo をレビュアーに割り当てます。
 
-   >**代替トリガー:** マージリクエストの任意のコメントボックスに `/assign_reviewer @GitLabDuo` と入力することもできます。
+      >**代替トリガー:** マージリクエストの任意のコメントボックスに `/assign_reviewer @GitLabDuo` と入力することもできます。
 
 1. マージリクエストの **Overview** タブで、アクティビティフィードまでスクロールして、Code Review Flow がリアルタイムで実行されていることを観察します。
 
@@ -243,4 +243,4 @@ Fix Pipeline フローは新しいマージリクエスト（修正マージリ�
 
 ## 提案?
 
-ラボへの変更を加えたい場合は、マージリクエスト経由で変更を提出してください。
+このラボを変更したい場合は、マージリクエストを通じて変更を提出してください。

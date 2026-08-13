@@ -2,11 +2,11 @@
 title: "GitLab Fundamentals - ハンズオンラボ概要"
 description: "このハンズオンガイドでは、GitLab Fundamentals コースで使用するラボ演習を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandson/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:29:15+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:13:44+09:00"
 translator: codex
 stale: false
-lastmod: "2026-02-10T15:36:21-05:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 ## GitLab Fundamentals ラボガイド
@@ -28,4 +28,4 @@ lastmod: "2026-02-10T15:36:21-05:00"
 
 ## ご意見・ご提案
 
-ラボへの変更を希望する場合は、マージリクエスト経由で変更を送信してください。
+これらのラボへの変更を希望する場合は、マージリクエストを通じて変更を送信してください。

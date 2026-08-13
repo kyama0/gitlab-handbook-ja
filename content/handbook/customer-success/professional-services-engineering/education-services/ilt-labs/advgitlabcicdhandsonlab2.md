@@ -2,11 +2,11 @@
 title: "GitLab Advanced CI/CD - ハンズオンラボ: ビルドパイプラインの最適化"
 description: "このハンズオンガイドでは、ビルドパイプラインの最適化について説明します"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab2/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T15:26:34Z"
 translator: claude
 stale: false
-lastmod: "2025-10-23T12:38:59+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 このラボの目的は、GitLab CI/CD パイプラインにおけるキャッシングのメリットを実証することです。キャッシュとは、ジョブがダウンロードして保存する 1 つ以上のファイルのことです。同じキャッシュを使用する後続のジョブは、ファイルを再ダウンロードする必要がないため、より迅速に実行されます。キャッシュはアーティファクトとは異なり、GitLab には保存されません。
@@ -23,7 +23,7 @@ lastmod: "2025-10-23T12:38:59+01:00"
 
 まず、パイプラインビルドのデモに使用する基本的な `Node.js` アプリケーションを作成します。
 
-1. ILT グループ（"My Test Group - XXXXXXXX" という名前で、X がユーザー名に置き換えられます）に移動してください。
+1. ILT グループ（"My Test Group - XXXXXXXX" という名前で、「X」の部分がユーザー名に置き換えられます）に移動してください。
 
 1. **New project** を選択してください。
 
@@ -303,4 +303,4 @@ lastmod: "2025-10-23T12:38:59+01:00"
 
 ## ご提案は?
 
-ラボへの変更をご希望の場合は、マージリクエストで変更内容を送信してください。
+このラボへの変更をご希望の場合は、マージリクエストを通じて変更内容を送信してください。

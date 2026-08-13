@@ -2,11 +2,11 @@
 title: "GitLab CI/CD - ハンズオンラボ: アプリケーションをビルドするパイプラインを設定する"
 description: "このハンズオンガイドでは、アプリケーションの基本的なパイプラインを構築する手順を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab1/
-upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
-translated_at: "2026-08-12T06:06:45+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:44:15+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-11T13:03:24+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 完了までの推定時間: 15 分
@@ -47,21 +47,21 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
 
 1. `main.go` 内に次のコードを追加します:
 
-    ```go
-    package main
+      ```go
+      package main
 
-    import(
-      "fmt"
-    ) 
+      import(
+        "fmt"
+      )
 
-    func main() {
-      fmt.Println("Tanuki Enterprises is up and running!")
-    }
-    ```
+      func main() {
+        fmt.Println("Tanuki Enterprises is up and running!")
+      }
+      ```
 
 1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択します。
 
-    次に `go.mod` ファイルを作成します:
+      次に `go.mod` ファイルを作成します:
 
 1. プロジェクトのメインページに戻ります。
 
@@ -71,11 +71,11 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
 
 1. ファイルに次のコードを追加します:
 
-    ```go
-    module array
+      ```go
+      module array
 
-    go 1.22.2
-    ```
+      go 1.22.2
+      ```
 
 1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択します。
 
@@ -83,7 +83,7 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
 
 ## タスク C. ビルドプロセスを作成する
 
-すべてのパイプラインジョブは `.gitlab-ci.yml file` に記述します。まず、次の手順でプロジェクトのルートにこのファイルを作成します:
+すべてのパイプラインジョブは `.gitlab-ci.yml` ファイルに記述します。まず、次の手順でプロジェクトのルートにこのファイルを作成します:
 
 1. プロジェクトのホームページに移動します。
 
@@ -93,18 +93,18 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
 
 1. script セクションでは、ジョブの一部として実行するスクリプトやコードを指定する必要があります。Go アプリケーションをビルドするため、次のコードを `.gitlab-ci.yml` ファイルにコピーします:
 
-    ```yaml
-    default:
-      image: golang
+      ```yaml
+      default:
+        image: golang
 
-    stages:
-      - build
+      stages:
+        - build
 
-    build go:
-      stage: build
-      script:
-        - go build
-    ```
+      build go:
+        stage: build
+        script:
+          - go build
+      ```
 
 1. **Commit changes** を選択し、適切なコミットメッセージを追加して **Commit changes** を選択します。
 
@@ -112,11 +112,11 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
 
 1. コードをコミットすると、パイプラインがすぐに開始されます。パイプラインを確認するには **Build > Pipelines** に移動します。
 
-    ここでは、すべてのプロジェクトパイプラインの概要が表示されます。各パイプラインには次の詳細が表示されます:
-    - パイプラインのステータス
-    - パイプライン名、ID、ブランチ、トリガーとなったコミット
-    - パイプラインを作成した人
-    - ステージごとのパイプラインステータスの内訳
+      ここでは、すべてのプロジェクトパイプラインの概要が表示されます。各パイプラインには次の詳細が表示されます:
+      - パイプラインのステータス
+      - パイプライン名、ID、ブランチ、トリガーとなったコミット
+      - パイプラインを作成した人
+      - ステージごとのパイプラインステータスの内訳
 
 1. パイプラインの詳細を表示するには、パイプラインの **Status** を選択します。この UI では、各ステージとそのステージに関連するジョブを示すパイプラインのグラフが表示されます。
 
@@ -147,7 +147,7 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
       Using docker image sha256:92c72d51a65b247eb5672073192030d4964cee907770b0569665499e9880fa48 for golang with digest golang@sha256:ab1f5c47de0f2693ed97c46a646bde2e4f380e40c173454d00352940a379af60 ...
       ```
 
-      GitLab ラボ環境はランナーマネージャーを使用してジョブのスケーリングを支援します。ジョブが開始されると、まずキューに入ります。ランナーマネージャーが利用可能になると、ジョブを取得します。その後インスタンスを作成し、定義された Docker イメージ（この場合 golang イメージ）でセットアップします。このイメージはランナーにプルされてロードされ、ジョブリクエストの処理を開始する準備が整います。
+      GitLab ラボ環境はランナーマネージャーを使用してジョブのスケーリングを支援します。ジョブが開始されると、まずキューに入ります。ランナーマネージャーが利用可能になると、ジョブを取得します。その後インスタンスを作成し、定義された Docker イメージ（この場合 Golang イメージ）でセットアップします。このイメージはランナーにプルされてロードされ、ジョブリクエストの処理を開始する準備が整います。
 
       **Git リポジトリのクローン**
 
@@ -224,7 +224,7 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
             - go build
       ```
 
-1. `go build` コマンドは `array` という名前の新しいバイナリを作成します。`.array` コマンドを使用してバイナリを実行できます。
+1. `go build` コマンドは `array` という名前の新しいバイナリを作成します。`./array` コマンドを使用してバイナリを実行できます。
 
       ```yaml
       run go:
@@ -262,7 +262,7 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
 
       ```yaml
         artifacts:
-          paths: 
+          paths:
             - array
       ```
 
@@ -274,7 +274,7 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
         script:
           - go build
         artifacts:
-          paths: 
+          paths:
             - array
       ```
 
@@ -284,27 +284,27 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
 
 1. `run go` スクリプトから `go build` コマンドを削除します。これにより次の設定が得られます:
 
-    ```yaml
-    default:
-      image: golang
+      ```yaml
+      default:
+        image: golang
 
-    stages:
-      - build
-      - run
+      stages:
+        - build
+        - run
 
-    build go:
-      stage: build
-      script:
-        - go build
-      artifacts:
-        paths: 
-          - array
+      build go:
+        stage: build
+        script:
+          - go build
+        artifacts:
+          paths:
+            - array
 
-    run go:
-      stage: run
-      script:
-        - ./array
-    ```
+      run go:
+        stage: run
+        script:
+          - ./array
+      ```
 
 1. **Commit changes** を選択します。
 
@@ -324,4 +324,4 @@ Tanuki Enterprises のエンジニアリングチームは現在、個々の開�
 
 ## ご提案について
 
-ラボに変更を加えたい場合は、マージリクエストを通じて変更を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更を送信してください。

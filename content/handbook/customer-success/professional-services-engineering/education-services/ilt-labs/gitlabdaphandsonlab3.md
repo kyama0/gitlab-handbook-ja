@@ -2,11 +2,11 @@
 title: "GitLab Duo Agent Platform - ハンズオンラボ: カスタムエージェントを構築する"
 description: "このハンズオンガイドでは、カスタムエージェントの作成方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabdaphandsonlab3/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T13:23:21Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T16:06:53Z"
 translator: claude
 stale: false
-lastmod: 2026-06-15T14:13:50-04:00
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 完了目安時間: 15 分
@@ -43,42 +43,42 @@ lastmod: 2026-06-15T14:13:50-04:00
 
 1. **Description** フィールドに次のように入力してください。
 
-   ```prompt
-   Helps new developers get up to speed on the DAP Swag Shop codebase, answers questions about the project architecture, and creates issues for improvements or bugs they discover while onboarding.
-   ```
+      ```prompt
+      Helps new developers get up to speed on the DAP Swag Shop codebase, answers questions about the project architecture, and creates issues for improvements or bugs they discover while onboarding.
+      ```
 
-   > **注:** 説明は AI Catalog とエージェントチャットのエージェントドロップダウンに表示されます。チームメンバーがエージェントが何をするのか、いつ使用するかを理解するのに役立ちます。簡潔で具体的に保ってください。
+      > **注:** 説明は AI Catalog と Agentic Chat のエージェントドロップダウンリストに表示されます。チームメンバーがエージェントの機能と使用時期を理解するのに役立ちます。簡潔かつ具体的にしてください。
 
 1. **Visibility** で **Private** を選択してください。
 
-    > **なぜプライベートなのか？** エージェントをテストする間はプライベートの可視性から始めてください。プライベートエージェントはプロジェクトとグループ内でのみアクセスできます。実証されて他のチームと共有する準備ができたら、パブリックに切り替えると AI Catalog で発見可能になります。
+      > **なぜプライベートなのか？** エージェントをテストする間はプライベートの可視性から始めてください。プライベートエージェントはプロジェクトとグループ内でのみアクセスできます。実証されて他のチームと共有する準備ができたら、パブリックに切り替えると AI Catalog で発見可能になります。
 
-1. **Configuration** で、Tools ドロップダウンで **Create Issue** を検索して選択してください。
+1. **Configuration** で、Tools ドロップダウンリストから **Create Issue** を検索して選択します。
 
-    >**なぜツールが 1 つだけなのか？** エージェントが実際に必要とするツールのみを選択することは、最小権限の原則の実践です。オンボーディングエージェントは Issue を作成する必要がありますが、パイプライン、マージリクエスト、コードへのアクセスは必要ありません。不必要なツールを付与することは、価値を追加せずにリスクを増大させます。より少ないツールから始めて、特定のニーズが生じたときにのみ追加してください。
+      >**なぜツールが 1 つだけなのか？** エージェントが実際に必要とするツールのみを選択することは、最小権限の原則の実践です。オンボーディングエージェントは Issue を作成する必要がありますが、パイプライン、マージリクエスト、コードへのアクセスは必要ありません。不必要なツールを付与することは、価値を追加せずにリスクを増大させます。より少ないツールから始めて、特定のニーズが生じたときにのみ追加してください。
 
 1. **System prompt** セクションに次のように入力してください。
 
-   ```markdown
-   You are the Swag Shop Onboarding Agent for the DAP Swag Shop project.
+      ```markdown
+      You are the Swag Shop Onboarding Agent for the DAP Swag Shop project.
 
-   Your responsibilities:
+      Your responsibilities:
 
-   1. Help new developers understand the project structure and architecture
-   2. Answer questions about how the codebase works (Python/Flask, templates, CSS)
-   3. Explain development workflows, testing, and CI/CD pipelines
-   4. Create issues when developers identify bugs or suggest improvements
+      1. Help new developers understand the project structure and architecture
+      2. Answer questions about how the codebase works (Python/Flask, templates, CSS)
+      3. Explain development workflows, testing, and CI/CD pipelines
+      4. Create issues when developers identify bugs or suggest improvements
 
-   When creating issues:
-   - Use label "good first issue" for simple fixes new developers could tackle
-   - Use label "documentation" for documentation improvements
-   - Use label "bug" for bugs discovered during onboarding
-   - Include clear context and acceptance criteria
+      When creating issues:
+      - Use label "good first issue" for simple fixes new developers could tackle
+      - Use label "documentation" for documentation improvements
+      - Use label "bug" for bugs discovered during onboarding
+      - Include clear context and acceptance criteria
 
-   Restrictions:
-   Do not modify code, merge requests, or pipeline configurations.
-   Be friendly and encouraging. Remember that new team members may not know GitLab or this codebase well yet.
-   ```
+      Restrictions:
+      Do not modify code, merge requests, or pipeline configurations.
+      Be friendly and encouraging. Remember that new team members may not know GitLab or this codebase well yet.
+      ```
 
 1. **Create agent** を選択してください。
 
@@ -96,8 +96,8 @@ lastmod: 2026-06-15T14:13:50-04:00
 1. エージェントを作成したページと同じページから、右上隅の **Enable** をクリックしてください。
 
 1. 確認のために **Enable** を再度クリックしてください。
-   
-   > **注:** 2 段階の Enable 確認により、エージェントの準備が整う前に誤って公開することを防ぎます。最初のクリックで確認プロンプトが開き、2 回目のクリックで有効化がコミットされます。
+
+      > **注:** 2 段階の Enable 確認により、エージェントの準備が整う前に誤って公開することを防ぎます。最初のクリックで確認プロンプトが開き、2 回目のクリックで有効化がコミットされます。
 
 ### タスク B の期待される出力
 
@@ -113,23 +113,23 @@ lastmod: 2026-06-15T14:13:50-04:00
 
 1. エージェントドロップダウンリストから **Swag Shop Onboarding Agent** を選択してください。
 
-   >**注:** このエージェントが表示されない場合は、ページをリフレッシュしてみてください。
+      >**注:** このエージェントが表示されない場合は、ページをリフレッシュしてみてください。
 
 1. 次のプロンプトを入力してください。
 
-   ```prompt
-   I'm new. What's something I could help contribute to on this project?
-   ```
+      ```prompt
+      I'm new. What's something I could help contribute to on this project?
+      ```
 
 1. エージェントのレスポンスをレビューします。
-   
-   **確認するポイント:** レスポンスはタスク A で作成したシステムプロンプトを反映している必要があります。トーンはフレンドリーで奨励的であるべきです。提案は汎用的なオンボーディングアドバイスではなく、実際のプロジェクト（Python/Flask、テンプレート、CSS）を参照している必要があります。明示的に制限したため、コードやパイプラインの変更を提案してはいけません。
+
+      **確認するポイント:** レスポンスはタスク A で作成したシステムプロンプトを反映している必要があります。トーンはフレンドリーで奨励的であるべきです。提案は汎用的なオンボーディングアドバイスではなく、実際のプロジェクト（Python/Flask、テンプレート、CSS）を参照している必要があります。明示的に制限したため、コードやパイプラインの変更を提案してはいけません。
 
 1. 次に、Issue を作成するようエージェントに依頼します。次のプロンプトを入力してください。
 
-   ```prompt
-   Create an issue for me to help onboard and start contributing to help the team.
-   ```
+      ```prompt
+      Create an issue for me to help onboard and start contributing to help the team.
+      ```
 
 1. エージェントがツール呼び出しの承認を求めます。タイトル、説明、ラベルをレビューして **Approve** をクリックしてください。
 
@@ -146,7 +146,7 @@ lastmod: 2026-06-15T14:13:50-04:00
 
 ### タスク C の期待される出力
 
-- Swag Shop Onboarding Agent が Agentic Chat のエージェントドロップダウンから選択可能である。
+- Swag Shop Onboarding Agent が Agentic Chat のエージェントドロップダウンリストから選択できる。
 - エージェントからのレスポンスがプロジェクトの実際の構造を参照し、具体的な最初の貢献を提案している。
 - **Plan > Work items** に説明的なタイトル、完全な説明、受け入れ基準、適切なラベルを持つ新しい Issue が存在する。
 - エージェントの動作がシステムプロンプトを反映している: フレンドリーなトーン、プロジェクト固有の知識、コードやパイプラインの変更の提案なし。
@@ -157,4 +157,4 @@ lastmod: 2026-06-15T14:13:50-04:00
 
 ## ご意見・ご提案
 
-ラボへの変更を希望する場合は、マージリクエスト経由で変更を送信してください。
+このラボを変更したい場合は、マージリクエストを通じて変更を提出してください。

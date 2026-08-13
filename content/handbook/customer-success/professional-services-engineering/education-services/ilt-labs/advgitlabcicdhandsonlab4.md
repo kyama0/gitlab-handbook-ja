@@ -2,11 +2,11 @@
 title: "GitLab Advanced CI/CD - ハンズオンラボ: ベストプラクティスの確認"
 description: "このハンズオンガイドでは、GitLab の CI/CD に関する一般的なベストプラクティスについて説明します"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab4/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T15:26:34Z"
 translator: claude
 stale: false
-lastmod: "2026-03-25T17:26:37+00:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 このラボの目的は、隠しジョブやマップマージなどを活用して、コードをより簡潔にして繰り返しを避けることです。
@@ -42,7 +42,7 @@ install deps:
     key: $CI_COMMIT_REF_SLUG
     paths:
       - node_modules
-  
+
 test binarysearch:
   stage: test
   script:
@@ -78,84 +78,84 @@ test linearsearch:
 
 1. 現在の `.gitlab-ci.yml` ファイルでは、すべてのテストに同じアーティファクトセットが含まれています。各ジョブにアーティファクトを定義する代わりに、次の定義で最初に隠しジョブを作成してください:
 
-    ```yml
-    .artifactdef: &artifactdef
-      artifacts:
-        when: always
-        reports:
-          junit: junit.xml
-    ```
+      ```yml
+      .artifactdef: &artifactdef
+        artifacts:
+          when: always
+          reports:
+            junit: junit.xml
+      ```
 
 1. その後、マップマージを使用して、すべてのテストジョブにアーティファクト定義を追加してください:
 
-    ```yml
-    test binarysearch:
-      stage: test
-      script:
-        - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
-      <<: *artifactdef
-      cache:
-        key: $CI_COMMIT_REF_SLUG
-        paths:
-          - node_modules
+      ```yml
+      test binarysearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
+        <<: *artifactdef
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
 
-    test linearsearch:
-      stage: test
-      script:
-        - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
-      <<: *artifactdef
-      cache:
-        key: $CI_COMMIT_REF_SLUG
-        paths:
-          - node_modules
-    ```
+      test linearsearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
+        <<: *artifactdef
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
+      ```
 
 1. さらに、繰り返しを避けるためにキャッシュも隠しジョブに移動してください。この例では、これらの定義を `cachedef` 隠しジョブに移動しています:
 
-    ```yml
-    stages:
-      - deps
-      - test
-    
-    workflow:
-      auto_cancel:
-        on_job_failure: all
+      ```yml
+      stages:
+        - deps
+        - test
 
-    default:
-      image: node:latest
+      workflow:
+        auto_cancel:
+          on_job_failure: all
 
-    .artifactdef: &artifactdef
-      artifacts:
-        when: always
-        reports:
-          junit: junit.xml
+      default:
+        image: node:latest
 
-    .cachedef: &cachedef
-      cache:
-        key: $CI_COMMIT_REF_SLUG
-        paths:
-          - node_modules
+      .artifactdef: &artifactdef
+        artifacts:
+          when: always
+          reports:
+            junit: junit.xml
 
-    install deps:
-      stage: deps
-      script:
-        - npm install jest jest-junit
-      <<: *cachedef
+      .cachedef: &cachedef
+        cache:
+          key: $CI_COMMIT_REF_SLUG
+          paths:
+            - node_modules
 
-    test binarysearch:
-      stage: test
-      script:
-        - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
-      <<: [ *artifactdef, *cachedef ]
+      install deps:
+        stage: deps
+        script:
+          - npm install jest jest-junit
+        <<: *cachedef
 
-    test linearsearch:
-      stage: test
-      script:
-        - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
-      <<: [ *artifactdef, *cachedef ]
-    ```
+      test binarysearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit binarysearch.test.js
+        <<: [ *artifactdef, *cachedef ]
 
-    > この変更により、コードの総行数が減るだけでなく、アーティファクトが変更された場合に複数の場所ではなく 1 か所だけ変更すれば済むようになります。
+      test linearsearch:
+        stage: test
+        script:
+          - node_modules/.bin/jest --ci --testResultsProcessor=jest-junit linearsearch.test.js
+        <<: [ *artifactdef, *cachedef ]
+      ```
+
+      > この変更により、コードの総行数が減るだけでなく、アーティファクトが変更された場合に複数の場所ではなく 1 か所だけ変更すれば済むようになります。
 
 1. これらの変更を行った後、**Commit changes** を選択してください。
 
@@ -169,4 +169,4 @@ test linearsearch:
 
 ## ご提案は?
 
-ラボへの変更をご希望の場合は、マージリクエストで変更内容を送信してください。
+このラボへの変更をご希望の場合は、マージリクエストを通じて変更内容を送信してください。

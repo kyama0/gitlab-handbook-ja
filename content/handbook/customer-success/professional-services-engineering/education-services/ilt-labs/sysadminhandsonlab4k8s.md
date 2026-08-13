@@ -2,11 +2,11 @@
 title: "GitLab システム管理者 - ハンズオンラボ: GitLab Kubernetes のアップグレード"
 description: "このハンズオンガイドでは、GitLab Kubernetes インスタンスのアップグレード方法を紹介します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab4k8s/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:54:00+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-18T09:17:46-05:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 推定所要時間: 30 分
@@ -43,25 +43,25 @@ GitLab Omnibus のアップデートは、パッケージマネージャーを�
 
 1. 次のコマンドを使用してインスタンスのバックアップを取得します。
 
-    ```bash
-    # toolbox Pod を見つける
-    kubectl get pods -lapp=toolbox
+      ```bash
+      # find the toolbox pod
+      kubectl get pods -lapp=toolbox
 
-    # バックアップユーティリティを実行
-    kubectl exec <toolbox-name>  -it -- backup-utility
+      # Run the backup utility
+      kubectl exec <toolbox-name>  -it -- backup-utility
 
-    #Rails シークレットを取得
-    kubectl get secrets | grep rails-secret
+      #Get your rails secrets
+      kubectl get secrets | grep rails-secret
 
-    #シークレットをローカルの場所に保存
-    kubectl get secrets <rails-secret-name> -o jsonpath="{.data['secrets\.yml']}" | base64 --decode > gitlab-secrets.yml
-    ```
+      #Save the secrets to a local location
+      kubectl get secrets <rails-secret-name> -o jsonpath="{.data['secrets\.yml']}" | base64 --decode > gitlab-secrets.yml
+      ```
 
 1. `https://gitlab-com.gitlab.io/support/toolbox/upgrade-path/` に移動します。
 
 1. 現在の GitLab バージョン（`18.4.3`）とターゲットバージョン（`18.5.1`）を入力します。
 
-1. **Edition** が **Enterprise** に設定され、Distro が **Ubuntu** に設定されていることを確認します。
+1. `Edition` が **Enterprise** に設定され、`Distro` が **Ubuntu** に設定されていることを確認します。
 
 1. `Go!` を選択します。
 
@@ -69,11 +69,11 @@ GitLab Omnibus のアップデートは、パッケージマネージャーを�
 
 1. GitLab インスタンスで、次のコマンドを実行します。
 
-    ```bash
-    helm upgrade gitlab gitlab/gitlab \
-    --version 9.5.1 \
-    -f values.yml
-    ```
+      ```bash
+      helm upgrade gitlab gitlab/gitlab \
+      --version 9.5.1 \
+      -f values.yml
+      ```
 
 1. インストールが完了するまで待ちます。完了したら、Web ブラウザーでインスタンスに移動します。
 
@@ -101,4 +101,4 @@ GitLab Omnibus のアップデートは、パッケージマネージャーを�
 
 ## ご提案はありますか?
 
-ラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

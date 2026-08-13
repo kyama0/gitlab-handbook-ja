@@ -1,15 +1,15 @@
 ---
-title: "GitLab 上級 CI/CD - ハンズオンラボ概要"
-description: "このハンズオンガイドでは、GitLab 上級 CI/CD コースのラボ演習について説明します。"
+title: "GitLab Advanced CI/CD - ハンズオンラボ概要"
+description: "このハンズオンガイドでは、GitLab Advanced CI/CD コースのラボ演習について説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandson/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: 2026-04-26T04:14:42Z
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T15:26:34Z"
 translator: claude
 stale: false
-lastmod: "2025-10-23T12:38:59+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
-## GitLab 上級 CI/CD ラボガイド
+## GitLab Advanced CI/CD ラボガイド
 
 | ラボ名 | ラボリンク |
 |-----------|------------|
@@ -30,4 +30,4 @@ lastmod: "2025-10-23T12:38:59+01:00"
 
 ## 変更のご提案
 
-ラボに変更を加えたい場合は、マージリクエストを使用して変更を送信してください。
+これらのラボに変更を加えたい場合は、マージリクエストを通じて変更を送信してください。

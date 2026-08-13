@@ -2,11 +2,11 @@
 title: "GitLab Fundamentals - ハンズオンラボ: エピックと Issue ボードを使ったプロジェクト管理"
 description: "このハンズオンガイドでは、GitLab でエピックと Issue ボードを操作するプロセスを説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabfundamentalshandsonlab2/
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-translated_at: "2026-07-02T06:06:16+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:13:44+09:00"
 translator: claude
 stale: false
-lastmod: 2026-06-26T10:02:20-04:00
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 完了目安時間: 15 分
@@ -51,7 +51,7 @@ lastmod: 2026-06-26T10:02:20-04:00
 
 1. **Description** を入力して **Create milestone** を選択します。
 
-    次に、マイルストーンに Issue を割り当てる必要があります。
+      次に、マイルストーンに Issue を割り当てる必要があります。
 
 1. 左サイドバーで **Plan > Work items** を選択します。
 
@@ -59,7 +59,7 @@ lastmod: 2026-06-26T10:02:20-04:00
 
 1. 右サイドバーで **Milestone** の隣の **Edit** を選択します。
 
-1. 結果のドロップダウンから `My first milestone` を選択します。
+1. 表示されたドロップダウンリストから `My first milestone` を選択します。
 
 1. 右サイドバーの `My first milestone` を選択してマイルストーンにリダイレクトされます。
 
@@ -73,7 +73,7 @@ Issue とエピックを一箇所で表示するために、Issue ボードと�
 
 1. 左サイドバーで **Plan > Issue boards** を選択します。
 
-    > このビューでは、ステータスに関連付けられたすべての Issue が表示されます。
+      > このビューでは、ステータスに関連付けられたすべての Issue が表示されます。
 
 1. 自分に関連付けられた Issue を保存する新しいリストを作成します。右側の **New List** ボタンをクリックします。
 
@@ -93,4 +93,4 @@ Issue とエピックを一箇所で表示するために、Issue ボードと�
 
 ## ご意見・ご提案
 
-ラボへの変更を希望する場合は、マージリクエスト経由で変更を送信してください。
+このラボへの変更を希望する場合は、マージリクエストを通じて変更を送信してください。

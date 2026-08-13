@@ -2,11 +2,11 @@
 title: "GitLab Security Essentials - ハンズオンラボ概要"
 description: "このハンズオンガイドは、GitLab Security Essentials コースのラボ演習を案内します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentials/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:29:15+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T01:31:06+09:00"
 translator: codex
 stale: false
-lastmod: "2026-02-10T15:36:21-05:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 ## GitLab Security Essentials ラボガイド
@@ -29,4 +29,4 @@ lastmod: "2026-02-10T15:36:21-05:00"
 
 ## ご提案・改善点
 
-ラボに変更を加えたい場合は、マージリクエストで変更内容を送信してください。
+これらのラボに変更を加えたい場合は、マージリクエストを通じて変更内容を送信してください。

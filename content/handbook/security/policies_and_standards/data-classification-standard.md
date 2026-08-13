@@ -6,18 +6,18 @@ tags:
   - security_standard
   - security_standard_caplscsi
 upstream_path: /handbook/security/policies_and_standards/data-classification-standard/
-upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
-translated_at: "2026-07-25T06:17:55+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T23:52:41+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-20T10:27:32-05:00"
+lastmod: "2026-08-11T15:20:35-07:00"
 ---
 
 {{< label name="Visibility: Audit" color="#E24329" >}}
 
 ## 目的
 
-データ分類標準は、データの種類とカテゴリーを定義し、GitLab および顧客データのライフサイクル全体を通じて適用される保護レベルを決定する目的で、それぞれに関連付けられたデータ分類を提供します。
+データ分類標準は、データの種類とカテゴリーを定義し、GitLab および顧客のデータのライフサイクル全体を通じて適用される保護レベルを決定する目的で、それぞれに関連付けられたデータ分類を提供します。
 
 ## スコープ
 
@@ -67,7 +67,7 @@ lastmod: "2026-07-20T10:27:32-05:00"
 
 例には以下が含まれます:
 
-- 顧客データ ([データ分類定義セクション](/handbook/security/policies_and_standards/data-classification-standard/#data-classification-definitions) の上記の定義を参照)
+- 顧客のデータ ([データ分類定義セクション](/handbook/security/policies_and_standards/data-classification-standard/#data-classification-definitions) の上記の定義を参照)
 
 <!-- markdownlint-disable MD022 -->
 ##### REGULATED RED

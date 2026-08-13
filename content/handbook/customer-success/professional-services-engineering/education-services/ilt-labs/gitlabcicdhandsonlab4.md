@@ -2,11 +2,11 @@
 title: "GitLab CI/CD - ハンズオンラボ: CI/CD コンポーネントの操作"
 description: "このハンズオンガイドでは、パイプラインに CI/CD コンポーネントを追加する方法を説明します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab4/
-upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
-translated_at: "2026-08-12T06:06:45+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-14T00:44:15+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-11T13:03:24+01:00"
+lastmod: "2026-08-13T07:16:24-04:00"
 ---
 
 > 完了までの推定時間: 15 分
@@ -178,4 +178,4 @@ CI/CD コンポーネントを実装したことで、Tanuki Enterprises はパ�
 
 ## ご提案について
 
-ラボに変更を加えたい場合は、マージリクエストを通じて変更を送信してください。
+このラボに変更を加えたい場合は、マージリクエストを通じて変更を送信してください。

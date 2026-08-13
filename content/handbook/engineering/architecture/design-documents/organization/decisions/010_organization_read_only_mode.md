@@ -6,11 +6,11 @@ creation-date: "2026-04-28"
 authors: [ "@abdwddd" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/decisions/010_organization_read_only_mode/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T06:24:10+09:00"
+upstream_sha: "d8fb317567e8e271f91f602d97d453ad1a69a00a"
+translated_at: "2026-08-14T00:19:19+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T10:03:47+02:00"
+lastmod: "2026-08-12T20:38:44+05:30"
 ---
 
 ## コンテキスト
@@ -214,9 +214,11 @@ Organization 読み取り専用モード中にリクエストが**許可され�
 
 ### ロールアウトと機能フラグ
 
-- 仕組みは環境スコープと Organization スコープの両方の機能フラグでゲートされており、コホートごとにロールアウトを進められます。
-- GitLab.com では、まず内部/テスト Organization に対して有効化し、その後既存の Organization ロールアウトのコホートと並行して拡大します。
-- Self-Managed および Dedicated では、デフォルトオフでリリースします（*帰結*を参照）。
+- 仕組みは**単一の Organization スコープの機能フラグ**でゲートされており、コホートごとにロールアウトを進められます（アクター: Organization）。
+- このフラグは**リスク低減フラグであり、運用フラグではありません**。強制コードのロールアウトを段階的に進めるためだけに存在し、仕組みのロールアウトが完了したら削除されます。コード内に無期限に残さなければならない、インスタンスまたは環境にスコープされた 2 つ目の運用フラグは、意図的に追加しません。
+- 読み取り専用の強制は Organization 自身の `read_only` / `read_only_initialization` 状態によってすでにゲートされているため、永続的な運用フラグは不要です。`active` な Organization は強制コードの影響を受けないため、状態自体が永続的な Organization ごとのオフスイッチとなります。また、これは機能フラグとは異なり、監査可能で元に戻せます。Organization の読み取り専用をオフにするには、フラグを切り替えるのではなく、Organization を `active` に戻します。
+- GitLab.com では、まず内部/テスト Organization に対してフラグを有効化し、その後既存の Organization ロールアウトのコホートと並行して拡大し、最後にフラグを削除します。
+- Self-Managed および Dedicated では、どの Organization も読み取り専用へ遷移しないため、実際にはこの仕組みは作動しません（*帰結*を参照）。
 
 ## 帰結
 
@@ -226,7 +228,7 @@ Organization 読み取り専用モード中にリクエストが**許可され�
 - Cell 全体の cron ワーカーは、Organization 所有のデータを反復する際にアクティブな Organization フィルタを採用しなければならず、読み取り専用 Organization が除外されることを表明するテストを持たなければなりません。これがないと、ロールアウト後に追加された新しい cron ワーカーが、まさに移動されようとしているデータをサイレントに変更してしまいます。
 - 上記の強制レイヤをバイパスする任意のコードパス（例: マイグレーション内の生 SQL `UPDATE` や、コントローラ、Grape、GraphQL、`Gitlab::GitAccess` を通らない直接の ActiveRecord 書き込み）は、このイテレーションでは**カバーされません**。将来のイテレーションでは、多層防御としてサービスレイヤまたはモデルレイヤのガードが追加される可能性があります。
 - インスタンス全体のメンテナンスモード（`Gitlab.maintenance_mode?`）は引き続き利用可能で、直交します。両方がアクティブな場合は、より制限的な状態が勝ちます。Organization 読み取り専用は、インスタンスメンテナンスチェックをバイパスするコードパスを導入してはなりません。
-- Self-Managed および Dedicated インスタンス（インスタンスごとに単一 Organization、[ADR 007](007_self_managed_dedicated_single_organization.md) を参照）は、この仕組みを無料で継承しますが、実際には Organization 単位の分離による利点がないため、引き続きインスタンス全体のメンテナンスモードを使用すべきです。フラグはこれらのトポロジでは default-off で出荷されます。
+- Self-Managed および Dedicated インスタンス（インスタンスごとに単一 Organization、[ADR 007](007_self_managed_dedicated_single_organization.md) を参照）は、この仕組みを無料で継承しますが、実際には Organization 単位の分離による利点がないため、引き続きインスタンス全体のメンテナンスモードを使用すべきです。そこで休止状態を保つための永続的なトグルは不要です。これらのトポロジ上の単一 Organization は `active` 以外へ遷移しないため、強制コードは作動しません。
 - 読み取りは機能するのに書き込みが突然失敗するため、ユーザーが混乱する可能性があります。UX のコピーと、所有するすべてのページ上のバナー要件は、これを緩和するために存在します。
 
 ## 検討した代替案

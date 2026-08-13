@@ -2,11 +2,11 @@
 title: コードレビューガイドライン
 description: "コードレビューはすべてのマージリクエストで必須です。コードレビューガイドラインに慣れ、それに従ってください。"
 upstream_path: "/handbook/engineering/workflow/code-review/"
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:13:25+09:00"
+upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
+translated_at: "2026-08-13T23:58:47+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-08-13T15:10:33+03:00"
 ---
 
 ## 概要
@@ -201,7 +201,7 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 
 - [Secure Team の標準とスタイルガイドライン](https://docs.gitlab.com/ee/development/go_guide/#secure-team-standards-and-style-guidelines)を理解する。
 - [Secure リリースプロセス](https://docs.gitlab.com/ee/development/sec/analyzer_development_guide.html#versioning-and-release-process)を理解する。
-- [Secure QA プロセス](/handbook/engineering/development/sec/secure/qa_process/)を理解する。
+- [Secure QA プロセス](/handbook/engineering/development/sec/security-factory/qa_process/)を理解する。
 
 #### `gitlab-elasticsearch-indexer` のプロジェクトメンテナプロセス
 
