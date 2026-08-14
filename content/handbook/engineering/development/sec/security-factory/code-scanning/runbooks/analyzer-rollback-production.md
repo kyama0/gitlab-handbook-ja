@@ -13,7 +13,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 このランブックは、リリースに重大度の高いインシデントがある場合にアナライザーを以前のバージョンにロールバックする手順を提供します。これは、顧客にスムーズなユーザー体験を確保するための即時的な応急措置です。
 このランブックは、アナライザーの問題のメンテナンスとトラブルシューティングを担当するエンジニア向けです。
 
-**注意:** このランブックは、[ci-templates](https://gitlab.com/gitlab-org/security-products/ci-templates) を利用し、[analyzer.yml](https://gitlab.com/gitlab-org/security-products/ci-templates/-/blob/fb4bb1541274e1fe47d71b92963e558c1fb6c288/includes-dev/analyzer.yml?ref_type=heads) または [docker.yml](https://gitlab.com/gitlab-org/security-products/ci-templates/-/blob/fb4bb1541274e1fe47d71b92963e558c1fb6c288/includes-dev/docker.yml?ref_type=heads) のいずれかを直接インクルードするアナライザーに適用されます。
+**注意：** このランブックは、[ci-templates](https://gitlab.com/gitlab-org/security-products/ci-templates) を利用し、[analyzer.yml](https://gitlab.com/gitlab-org/security-products/ci-templates/-/blob/fb4bb1541274e1fe47d71b92963e558c1fb6c288/includes-dev/analyzer.yml?ref_type=heads) または [docker.yml](https://gitlab.com/gitlab-org/security-products/ci-templates/-/blob/fb4bb1541274e1fe47d71b92963e558c1fb6c288/includes-dev/docker.yml?ref_type=heads) のいずれかを直接インクルードするアナライザーに適用されます。
 
 ### ロールバック手順
 
@@ -28,7 +28,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 5. パイプラインを実行してください。
 6. パイプラインの完了を待ってください。
 
-**注意:** パイプラインが完了すると、「latest」とメジャーバージョンのイメージタグが、選択したタグからビルドされたイメージに自動的に更新されます。
+**注意：** パイプラインが完了すると、「latest」とメジャーバージョンのイメージタグが、選択したタグからビルドされたイメージに自動的に更新されます。
 
 #### 重要な考慮事項
 
