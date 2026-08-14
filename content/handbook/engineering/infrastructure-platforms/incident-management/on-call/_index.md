@@ -160,7 +160,7 @@ AMER、EMEA、APAC の 3 つのチームメンバーグループを作成する�
 オプションには：
 
 1. 15 分後にすべてのチームメンバーにラウンドロビンでページを設定する
-2. 対応しないオンコールチームメンバーのローテーションにエスカレートする。各ローテーションは [Tier 2 ハンドブックページ](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2.md#active-tier-2-rotations)の「Escalation upon non-response: `@here + msg` on appropriate slack channel `#tier-2-(team-name)-rotation-swaps`」、またはその他の同様のアクションを列挙すべきです。
+2. 対応しないオンコールチームメンバーのローテーションにエスカレートする。各ローテーションは [Tier 2 ハンドブックページ](/handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2.md#active-tier-2-rotations)の「応答がない場合のエスカレーション：適切な Slack チャンネル `#tier-2-(team-name)-rotation-swaps` で `@here + msg`」、またはその他の同様のアクションを列挙すべきです。
 3. IMOC が対応できない特別なケースの場合、カスタムエスカレーションスケジュールを作成する
 
 エスカレーションはまれですが、支援のリクエストに対応する計画を持つことが依然として重要です。

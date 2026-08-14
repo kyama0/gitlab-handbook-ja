@@ -13,7 +13,7 @@ stale: false
 
 このページには、Pipeline Security チームの一般的な日常業務を支援するために、GitLab Duo で使用することを想定した AI プロンプトが掲載されています。これらのプロンプトは、私たちのチーム固有のワークフローとプロセスに合わせて調整されています。
 
-## レトロスペクティブの要約
+## レトロスペクティブの要約 {#retrospective-summary}
 
 レトロスペクティブのコメントを分析および要約し、重要な知見とアクションアイテムを抽出する必要がある場合に、このプロンプトを使用します。
 
@@ -42,7 +42,7 @@ Please be objective and constructive in your analysis, focusing on actionable in
 
 このプロンプトは、チームメンバーがマイルストーンのパフォーマンスを振り返るコメントを 1 か月にわたって追加する、私たちの[非同期月次レトロスペクティブ](/handbook/engineering/development/sec/security-platform/secrets-manager/#async-monthly-retrospectives)プロセスで特に役立ちます。
 
-## Issue のリファインメント
+## Issue のリファインメント {#issue-refinement}
 
 このプロンプトを使用して、大まかな Issue の説明を詳細な実装計画に変換します。
 

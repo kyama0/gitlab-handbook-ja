@@ -57,11 +57,11 @@ Secrets Manager グループは、[Security Platform ステージ](/handbook/eng
 
 ## 共通リンク
 
-- [Issue Tracking Board](https://gitlab.com/groups/gitlab-org/-/boards/364216?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group::pipeline+security)
-- [Issue Backlog](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=group%3A%3Apipeline%20security)
-- [Slack Channel](https://gitlab.slack.com/archives/g_pipeline-security)
-- [Group Direction Page](https://about.gitlab.com/direction/software_supply_chain_security/pipeline_security/)
-- [GitLab Unfiltered YouTube Playlist](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq53VUOvTk3VdXN79PA0SXT)
+- [Issue トラッキングボード](https://gitlab.com/groups/gitlab-org/-/boards/364216?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group::pipeline+security)
+- [Issue バックログ](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=group%3A%3Apipeline%20security)
+- [Slack チャンネル](https://gitlab.slack.com/archives/g_pipeline-security)
+- [グループの方向性ページ](https://about.gitlab.com/direction/software_supply_chain_security/pipeline_security/)
+- [GitLab Unfiltered YouTube プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq53VUOvTk3VdXN79PA0SXT)
 
 ## 私たちのリポジトリ
 
@@ -90,9 +90,9 @@ Issue を `workflow::planning breakdown` ステータスから `workflow::ready 
 
 このフェーズ分けされたプロセスの意図は、アジャイルな計画を可能にし、各マイルストーンを通じて Issue を調査・洗練するために必要な頻繁なコンテキストスイッチの負担をエンジニアから減らすことです。さらに、これはグループの方向性についてチームに四半期ごとの先読みを提供します。
 
-洗練プロセス中の詳細な実装プランの作成支援については、私たちの [Issue Refinement AI prompt](/handbook/engineering/development/sec/security-platform/secrets-manager/ai-prompts/#issue-refinement)を参照してください。
+洗練プロセス中の詳細な実装プランの作成支援については、私たちの [Issue リファインメント用 AI プロンプト](/handbook/engineering/development/sec/security-platform/secrets-manager/ai-prompts/#issue-refinement)を参照してください。
 
-#### 実装テンプレート
+#### 実装テンプレート {#implementation-template}
 
 洗練プロセス（フェーズ 2）中、Issue は一貫性と明確さを確保するために [GitLab 実装 Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Implementation.md)を使用しなければなりません。このテンプレートは以下を強調します：
 
@@ -159,11 +159,11 @@ Issue が複数のコンポーネント（例： ~frontend、~backend、~documen
 1. 複数のマイルストーンにまたがって機能作業をスケジュールできる。
 1. チームメンバーが[グループワークフローボード](https://gitlab.com/groups/gitlab-org/-/boards/4876910?label_name[]=group%3A%3Apipeline%20security)から作業を選択する際、どの Issue がどのコンポーネントに関連するかが単純になる。
 
-#### Error Budget の Issue
+#### エラーバジェットの Issue
 
-ステージグループの [Error Budget](/handbook/engineering/error-budgets/)は、顧客とインフラのパフォーマンスに影響を与えている Issue をグループが特定し、優先順位付けするのを助けるために確立されました。
+ステージグループの[エラーバジェット](/handbook/engineering/error-budgets/)は、顧客とインフラのパフォーマンスに影響を与えている Issue をグループが特定し、優先順位付けするのを助けるために確立されました。
 
-[Pipeline Security グループ Error Budget ダッシュボード](https://dashboards.gitlab.net/d/stage-groups-pipeline_security/stage-groups-pipeline-security-group-dashboard?orgId=1)は、Pipeline Security グループのエラーバジェット消費に寄与している Issue を特定するために使用されます。
+[Pipeline Security グループのエラーバジェットダッシュボード](https://dashboards.gitlab.net/d/stage-groups-pipeline_security/stage-groups-pipeline-security-group-dashboard?orgId=1)は、Pipeline Security グループのエラーバジェット消費に寄与している Issue を特定するために使用されます。
 
 Engineering Manager は、毎週エラーバジェットダッシュボードをレビューして、バジェットを超過しているかどうかを判断し、エラーバジェット消費に（もしあれば）何が寄与しているかを判断し、Product Manager の優先順位付けのために根本原因に対処する Issue を作成します。エラーバジェット消費に対処するために作成された Issue は、適切なラベルを使って作成され、私たちの[技術的負債プロセス](#prioritizing-technical-debt-and-deferred-ux)に従って優先順位付けされるべきです。
 
@@ -374,12 +374,12 @@ Pipeline Security グループは、以下に説明する製品マーケティ�
 アップデートは [Issue の進捗アップデート](#issue-progress-updates)ガイドラインに従ってコメントの形で Issue に共有されます。
 Engineering Manager が翌月曜日にグループの週次アップデートを公開できるよう、これらは金曜日（または週の最終営業日）に投稿すべきです。
 
-#### 非同期月次レトロスペクティブ
+#### 非同期月次レトロスペクティブ {#async-monthly-retrospectives}
 
 私たちは月次レトロスペクティブのために、[このプロジェクト](https://gitlab.com/gl-retrospectives/sscs/pipeline-security/-/issues)の GitLab Issue を使います。Issue は現在のマイルストーンの終わりごろに自動的に作成されます。月次レトロスペクティブ Issue の目的は、マイルストーンを振り返り、何がうまくいったか、何があまりうまくいかなかったか、何をより良くできるかについて話すことです。
 レトロスペクティブ Issue に項目を追加するのにマイルストーンの終わりまで待つ代わりに、私たちはチームメンバーに月を通じてコメントを追加することを奨励しています。毎週金曜日に Issue に項目を追加するのを思い出させる Slack リマインダーが #g_pipeline-security チャンネルにあります。
 
-レトロスペクティブのコメントの分析と実行可能な知見の抽出の支援については、私たちの [Retrospective Summary AI prompt](/handbook/engineering/development/sec/security-platform/secrets-manager/ai-prompts/#retrospective-summary)を参照してください。
+レトロスペクティブのコメントの分析と実行可能な知見の抽出の支援については、私たちの[レトロスペクティブ要約用 AI プロンプト](/handbook/engineering/development/sec/security-platform/secrets-manager/ai-prompts/#retrospective-summary)を参照してください。
 
 ## 私たちとの協働方法
 

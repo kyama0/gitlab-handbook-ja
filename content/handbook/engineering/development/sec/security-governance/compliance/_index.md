@@ -65,7 +65,7 @@ Compliance グループのミッションは、GitLab 内で組織のコンプ�
 
 ### アドホックな作業と質問への取り組み
 
-時折、Slack の質問、Issue 内の質問、Error Budget の調査など、アドホックな作業や質問が発生します。すべての Compliance グループメンバーには、これらの媒体を見て関与することが奨励されています。
+時折、Slack の質問、Issue 内の質問、エラーバジェットの調査など、アドホックな作業や質問が発生します。すべての Compliance グループメンバーには、これらの媒体を見て関与することが奨励されています。
 
 最初に対応する者として、私たちは適切な媒体でアドホックな作業/質問を認識します。これは、質問者が私たちが対応していることを知れるようにするためです。
 
@@ -380,7 +380,7 @@ Issue にリリース記事を持たせたくない場合は、Issue にリリ�
 
 ## PTO の計画
 
-私たちは [Engineering の休暇取得プロセス](/handbook/engineering/#taking-time-off)と [GitLab team members Guide to Time Off](/handbook/people-group/time-off-and-absence/time-off-types/)に従います。
+私たちは [Engineering の休暇取得プロセス](/handbook/engineering/#taking-time-off)と [GitLab チームメンバーの休暇ガイド](/handbook/people-group/time-off-and-absence/time-off-types/)に従います。
 
 ## グループ共有カレンダー
 
