@@ -18,7 +18,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 2. その期間にスケジュールされている場合、できるだけ早くローテーションリーダーに伝える。#sscs-tier2-rotation-coordination で、レポート先のマネージャーまたは @adil.farrukh、@jpr0c、@mmishaev （ローテーションリーダー） に連絡できます。
 3. ローテーションリーダーは以下のいずれかを行います：
    - 同じ地域で交換できる人を見つける
-   - [オーバーライド](https://help.incident.io/articles/2815264840-cover-me%2C-overrides-and-schedules) を作成する （そのスロットを再割り当て）
+   - [オーバーライド](https://help.incident.io/articles/2815264840-cover-me%2C-overrides-and-schedules)を作成する （そのスロットを再割り当て）
    - 一時的にローテーションを調整する
 
 **どのくらい前に通知すべき？** 理想的には 2-4 週間前、緊急時は少なくとも 1 週間前 （事前通知ができないイベントを除く）。
@@ -34,7 +34,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 ## 祝日
 
-[祝日](/handbook/engineering/infrastructure-platforms/incident-management/on-call/holiday-coverage-planning/) に関する一般的なオンコールドキュメントを参照してください。
+[祝日](/handbook/engineering/infrastructure-platforms/incident-management/on-call/holiday-coverage-planning/)に関する一般的なオンコールドキュメントを参照してください。
 
 ### 地域に関する考慮事項
 

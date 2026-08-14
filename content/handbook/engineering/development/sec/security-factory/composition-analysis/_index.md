@@ -11,8 +11,8 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 ## Composition Analysis
 
-GitLab の Composition Analysis グループは、[Container Scanning](https://about.gitlab.com/direction/application_security_testing/composition-analysis/container-scanning/) と
-[Software Composition Analysis](https://about.gitlab.com/direction/application_security_testing/composition-analysis/software-composition-analysis/) を行うソリューションの開発を担当しています。
+GitLab の Composition Analysis グループは、[Container Scanning](https://about.gitlab.com/direction/application_security_testing/composition-analysis/container-scanning/)と
+[Software Composition Analysis](https://about.gitlab.com/direction/application_security_testing/composition-analysis/software-composition-analysis/)を行うソリューションの開発を担当しています。
 グループが管理する[プロジェクトの完全なリスト](#projects)を参照してください。
 
 ## 共通リンク
@@ -85,7 +85,7 @@ Issue の進捗を伝えるために [Issue のヘルスステータス機能](h
 ローテーション中に行っているアクションを追跡し、対応する Issue にメモを追加してください（例：ローカルで実行したツールコマンドのコピー、プロジェクトとプロセスへの関連する変更の共有など）。
 この目的のために [Reaction Rotation Issue テンプレート](https://gitlab.com/gitlab-org/secure/general/-/blob/master/.gitlab/issue_templates/Reaction%20Rotation%20SCA.md?ref_type=heads)を使用できます。
 
-ローテーション終了時に、[`@gitlab-org/secure/composition-analysis-dev/reaction-rotation`](https://gitlab.com/groups/gitlab-org/secure/composition-analysis-dev/reaction-rotation/-/group_members?with_inherited_permissions=exclude) の Owner として次のエンジニアを追加し、現在のエンジニアを削除します。このグループはスケジュールを調べることなく、ローテーション中のエンジニアにタグ付けするために使用されます。
+ローテーション終了時に、[`@gitlab-org/secure/composition-analysis-dev/reaction-rotation`](https://gitlab.com/groups/gitlab-org/secure/composition-analysis-dev/reaction-rotation/-/group_members?with_inherited_permissions=exclude)の Owner として次のエンジニアを追加し、現在のエンジニアを削除します。このグループはスケジュールを調べることなく、ローテーション中のエンジニアにタグ付けするために使用されます。
 
 #### 責務 - セキュリティ
 
@@ -200,7 +200,7 @@ Issue の進捗を伝えるために [Issue のヘルスステータス機能](h
 
 #### セキュリティポリシー {#security-policy}
 
-CVSS の深刻度と [SLA](/handbook/security/product-security/vulnerability-management/sla/) によって検出結果に優先順位を付けます。`Critical` と `High` から始めますが、[脆弱性](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&label_name%5B%5D=type%3A%3Abug&label_name%5B%5D=bug%3A%3Avulnerability&label_name%5B%5D=group%3A%3Acomposition%20analysis&label_name%5B%5D=SLA%3A%3ANear%20Breach&first_page_size=100)に接続されていて `SLA::Near Breach` ラベルが付いている Issue も探してください。これらの脆弱性は CVSS スコアが低い場合がありますが、SLA 違反に達すると「期限超過」のセキュリティ Issue としてカウントされ、FedRAMP コンプライアンスに影響します。
+CVSS の深刻度と [SLA](/handbook/security/product-security/vulnerability-management/sla/)によって検出結果に優先順位を付けます。`Critical` と `High` から始めますが、[脆弱性](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&label_name%5B%5D=type%3A%3Abug&label_name%5B%5D=bug%3A%3Avulnerability&label_name%5B%5D=group%3A%3Acomposition%20analysis&label_name%5B%5D=SLA%3A%3ANear%20Breach&first_page_size=100)に接続されていて `SLA::Near Breach` ラベルが付いている Issue も探してください。これらの脆弱性は CVSS スコアが低い場合がありますが、SLA 違反に達すると「期限超過」のセキュリティ Issue としてカウントされ、FedRAMP コンプライアンスに影響します。
 
 確保した時間をすべて活用してください。Critical と High をすべて完了した場合は、トリアージを続けてください - すべての検出結果に対処したいですが、リスクベースの順序で取り組んでいます。
 
@@ -317,13 +317,13 @@ Issue が数リリースの間ブロックされており低リスクの場合�
 /label ~"Category:Container Scanning"
 ```
 
-上記のように `~security` と `~"bug::vulnerability"` ラベルを追加することが重要です。[`AppSec Escalation Engine`](https://gitlab.com/gitlab-com/gl-security/engineering-and-research/automation-team/appsec-escalator/-/blob/3a7e8a4baed7b7e54039558f4f76328046543a0c/README.md#L3) がこれらのラベルを持つすべての Issue を自動的に取り上げ、追加ラベル `~security-sp-label-missing` と `~security-triage-psirt` を追加し、[AppSec トリアージダッシュボード](https://triage-dashboard-2c1ad6.gitlab.io/)で Issue に言及します。この時点で、[Stable Counterpart](/handbook/engineering/development/sec/secure/#stable-counterparts)または[アプリケーションセキュリティチーム](/handbook/security/product-security/security-platforms-architecture/application-security/)のトリアージ担当者が Issue を取り上げ、appsec トリアージローテーションの一環として深刻度を割り当てます。
+上記のように `~security` と `~"bug::vulnerability"` ラベルを追加することが重要です。[`AppSec Escalation Engine`](https://gitlab.com/gitlab-com/gl-security/engineering-and-research/automation-team/appsec-escalator/-/blob/3a7e8a4baed7b7e54039558f4f76328046543a0c/README.md#L3)がこれらのラベルを持つすべての Issue を自動的に取り上げ、追加ラベル `~security-sp-label-missing` と `~security-triage-psirt` を追加し、[AppSec トリアージダッシュボード](https://triage-dashboard-2c1ad6.gitlab.io/)で Issue に言及します。この時点で、[Stable Counterpart](/handbook/engineering/development/sec/secure/#stable-counterparts)または[アプリケーションセキュリティチーム](/handbook/security/product-security/security-platforms-architecture/application-security/)のトリアージ担当者が Issue を取り上げ、appsec トリアージローテーションの一環として深刻度を割り当てます。
 
 Issue が作成されたら、追跡を容易にするために[脆弱性のリンク項目](https://docs.gitlab.com/ee/user/application_security/vulnerabilities/#link-a-vulnerability-to-existing-issues)に追加してください。
 
 セキュリティ Issue を報告する開発者は、[アプリケーションセキュリティチーム](/handbook/security/product-security/security-platforms-architecture/application-security/)が脆弱性の影響を評価するのを助け、`Impact` セクションで Issue の説明を更新する必要があります。
 
-即時のフィードバックが必要な場合は、[Stable Counterpart](/handbook/engineering/development/sec/secure/#stable-counterparts)セクションにリストされているセキュリティエンジニアの 1 人に `@`-メンションでコメントを追加するか、Slack でメッセージを送ってください。
+即時のフィードバックが必要な場合は、[Stable Counterpart](/handbook/engineering/development/sec/secure/#stable-counterparts) セクションにリストされているセキュリティエンジニアの 1 人に `@`-メンションでコメントを追加するか、Slack でメッセージを送ってください。
 
 ### リリース失敗プロセス {#release-failure-process}
 
@@ -404,7 +404,7 @@ Composition Analysis グループはスキャン機能を提供するために�
 
 追加メモ：
 
-- [gemnasium-db](https://gitlab.com/gitlab-org/security-products/gemnasium-db) は [Threat Research グループ](/handbook/engineering/development/sec/security-factory/threat-research/)によって管理されています。
+- [gemnasium-db](https://gitlab.com/gitlab-org/security-products/gemnasium-db)は [Threat Research グループ](/handbook/engineering/development/sec/security-factory/threat-research/)によって管理されています。
 
 ### Container Scanning {#container-scanning}
 
@@ -475,7 +475,7 @@ OCS モジュールは `Environments` グループが管理する [`gitlab-agent
 
 #### アップストリームスキャナーの更新 {#updating-an-upstream-scanner}
 
-アップストリームスキャナーの新しいリリースは月次で確認しており、[リリース Issue](https://gitlab.com/gitlab-org/security-products/release/-/blob/master/scripts/templates/release_issue.md.erb) の一部として行います。更新が利用可能な場合は、[スキャナー更新 Issue テンプレート](https://gitlab.com/gitlab-org/security-products/release/-/blob/master/scripts/templates/update_scanner_issue.md.erb)を使用して新しい Issue が作成され、次のマイルストーンに追加されます。
+アップストリームスキャナーの新しいリリースは月次で確認しており、[リリース Issue](https://gitlab.com/gitlab-org/security-products/release/-/blob/master/scripts/templates/release_issue.md.erb)の一部として行います。更新が利用可能な場合は、[スキャナー更新 Issue テンプレート](https://gitlab.com/gitlab-org/security-products/release/-/blob/master/scripts/templates/update_scanner_issue.md.erb)を使用して新しい Issue が作成され、次のマイルストーンに追加されます。
 
 ##### アップストリームツールとアナライザーのリスト
 

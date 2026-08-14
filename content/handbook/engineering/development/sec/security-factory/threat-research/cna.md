@@ -8,7 +8,7 @@ translator: codex
 stale: false
 ---
 
-このハンドブックページは、[Threat Research](/handbook/engineering/development/sec/security-factory/threat-research/)チームが GitLab の CNA としての役割に貢献する際に使用する CNA プロセスを文書化することを目的としています。
+このハンドブックページは、[Threat Research](/handbook/engineering/development/sec/security-factory/threat-research/) チームが GitLab の CNA としての役割に貢献する際に使用する CNA プロセスを文書化することを目的としています。
 
 ## CVE リクエスト
 

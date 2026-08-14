@@ -9,7 +9,7 @@ translator: codex
 stale: false
 ---
 
-Policy Management グループは [Security Governance ステージ](/handbook/engineering/development/sec/security-governance/)の一部です。FY27 の Sec 再編以前は Security Policies という名称で、Policy Management と [Policy Engine](/handbook/engineering/development/sec/security-governance/policy-engine/) に分割されました。Policy Management は、現在の `group::policy management` に名称変更された `group::security policies` ラベルの履歴を保持します。
+Policy Management グループは [Security Governance ステージ](/handbook/engineering/development/sec/security-governance/)の一部です。FY27 の Sec 再編以前は Security Policies という名称で、Policy Management と [Policy Engine](/handbook/engineering/development/sec/security-governance/policy-engine/)に分割されました。Policy Management は、現在の `group::policy management` に名称変更された `group::security policies` ラベルの履歴を保持します。
 
 
 ## ミッション
@@ -36,7 +36,7 @@ Security Policies グループのミッションは、セキュリティチー�
 [インターロックデッキ](https://interlock-deck.gitlab.io/#filter=group%3A%3Asecurity_policies)を使用して、取り組む内容とその順序を追跡します。各イニシアチブには以下のフィールドが含まれています。
 
 1. 名前 - エピックの説明とリンク
-1. BE DRI / FE DRI - 積極的に関与するバックエンドとフロントエンドの [DRI](/handbook/engineering/development/sec/security-governance/policy-management/planning/#epic-engineering-dri) を示す
+1. BE DRI / FE DRI - 積極的に関与するバックエンドとフロントエンドの [DRI](/handbook/engineering/development/sec/security-governance/policy-management/planning/#epic-engineering-dri)を示す
 1. サイズ
 1. ターゲットリリース
 
@@ -46,7 +46,7 @@ Security Policies グループのミッションは、セキュリティチー�
 
 Security Policies グループは主に GitLab の[プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)に従っています。
 
-私たちの計画は、エピックレベルの機能に対して[3 フェーズのリリース計画](/handbook/engineering/development/sec/security-governance/policy-management/planning/#three-phase-release-plan-experiment--beta--ga)（実験 → ベータ → GA）を採用した、四半期ごとのインターロック主導のアプローチに従っています。私たちの運営方法の詳細は[計画ページ](/handbook/engineering/development/sec/security-governance/policy-management/planning/)にあります。
+私たちの計画は、エピックレベルの機能に対して [3 フェーズのリリース計画](/handbook/engineering/development/sec/security-governance/policy-management/planning/#three-phase-release-plan-experiment--beta--ga)（実験 → ベータ → GA）を採用した、四半期ごとのインターロック主導のアプローチに従っています。私たちの運営方法の詳細は[計画ページ](/handbook/engineering/development/sec/security-governance/policy-management/planning/)にあります。
 
 現在のワークフローは[ワークフローページ](/handbook/engineering/development/sec/security-governance/policy-management/workflow/)にフローチャートとして可視化されています。
 

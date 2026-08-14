@@ -12,7 +12,7 @@ stale: false
 
 私たちのステージは `workflow` ラベルを含む[プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)プロセスに従っています。このページでは、GitLab の一般的なプロセスに対する調整と追加事項を説明します。競合がある場合はステージのドキュメントを優先してください。
 
-一部のグループは、[Plan](/handbook/product-development/how-we-work/product-development-flow/#build-phase-1-plan)フェーズを[プランニングブレークダウン](#planning-breakdown)と[リファインメント](#refinement)の 2 つの隣接するステップに分けることを好みます。いずれにせよ、プランニングが完了したら、Issue とエピックは[スケジューリング](#scheduling)の準備が整います。
+一部のグループは、[Plan](/handbook/product-development/how-we-work/product-development-flow/#build-phase-1-plan) フェーズを[プランニングブレークダウン](#planning-breakdown)と[リファインメント](#refinement)の 2 つの隣接するステップに分けることを好みます。いずれにせよ、プランニングが完了したら、Issue とエピックは[スケジューリング](#scheduling)の準備が整います。
 
 ### プランニングブレークダウン {#planning-breakdown}
 

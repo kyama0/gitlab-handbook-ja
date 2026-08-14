@@ -21,7 +21,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 * Secret Detection サービス
   * [一般的な FAQ](secret-detection-svc-faqs)
   * [モニタリング](secret-detection-svc-monitoring)
-  * _トラブルシューティング（[#494910](https://gitlab.com/gitlab-org/gitlab/-/issues/494910) と [#499249](https://gitlab.com/gitlab-org/gitlab/-/issues/499249) が完了次第追加予定）_
+  * _トラブルシューティング（[#494910](https://gitlab.com/gitlab-org/gitlab/-/issues/494910)と [#499249](https://gitlab.com/gitlab-org/gitlab/-/issues/499249)が完了次第追加予定）_
 * シークレット有効性チェック
   * [一般的な FAQ](secret-detection-validity-check-faqs)
   * [モニタリング](secret-detection-validity-check-monitoring)

@@ -30,11 +30,11 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 1. semgrep と sast-rules のリリースの複雑さを軽減するための[メンテナンスタスク](https://gitlab.com/gitlab-org/gitlab/-/issues/440373)を実施する。
 
-1. 実装計画に対して厳格なレビュープロセスを適用し、[MVC 原則](/handbook/product/product-principles/#the-minimal-valuable-change-mvc) をより頻繁に参照する。
+1. 実装計画に対して厳格なレビュープロセスを適用し、[MVC 原則](/handbook/product/product-principles/#the-minimal-valuable-change-mvc)をより頻繁に参照する。
 
 ### 17.1
 
-このマイルストーンでは、[IDE での SAST](https://gitlab.com/groups/gitlab-org/-/epics/13753) とさまざまなメンテナンスタスクに焦点を当てました。レトロスペクティブの議論では、以下の点が提起されました：
+このマイルストーンでは、[IDE での SAST](https://gitlab.com/groups/gitlab-org/-/epics/13753)とさまざまなメンテナンスタスクに焦点を当てました。レトロスペクティブの議論では、以下の点が提起されました：
 
 1. 週次チームミーティングの形式が非効率である。2 回目のミーティングは 1 回目と同じ議論を繰り返すことが多い。これに対処するため、ミーティングの形式を変更し、次のタイムゾーンでさらに議論が必要な「キャリーオーバー」アイテムを含めることにした。それ以外のアイテムはすべて読み取り専用としてマークされる。
 

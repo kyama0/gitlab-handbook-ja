@@ -8,7 +8,7 @@ translator: codex
 stale: false
 ---
 
-Dynamic Analysis グループは、FY27 の Sec 再編で [Dependency Firewall](/handbook/engineering/development/sec/security-platform/dependency-firewall/) に名称変更され、担当領域も変更されました。このページは以前の担当領域の参照用として残されています。
+Dynamic Analysis グループは、FY27 の Sec 再編で [Dependency Firewall](/handbook/engineering/development/sec/security-platform/dependency-firewall/)に名称変更され、担当領域も変更されました。このページは以前の担当領域の参照用として残されています。
 
 
 ## Dynamic Analysis
@@ -21,7 +21,7 @@ GitLab の Dynamic Analysis グループは、[Dynamic Analysis Software Testing
 
 ### トップ優先事項（FY25）
 
-**テーマ: 採用の増加**
+**テーマ： 採用の増加**
 
 - **DAST の統合** - プロキシベースの DAST を削除し、アクティブチェックの追加とパフォーマンスの改善によってブラウザベースの DAST を成熟させることで、混乱を軽減します
 
@@ -70,10 +70,10 @@ API Security、DAST、ファジングは Ultimate 機能です。これらの機
 
 ## 連絡方法
 
-- Slack チャンネル: #g_ast-dynamic-analysis, #f_ast-api-security, #f_ast-fuzz-testing
-- Slack エイリアス: @secure_dynamic_analysis_be
-- Google グループ: dynamic-analysis-be@gitlab.com
-- GitLab メンション: @gitlab-org/secure/dynamic-analysis-be
+- Slack チャンネル： #g_ast-dynamic-analysis, #f_ast-api-security, #f_ast-fuzz-testing
+- Slack エイリアス： @secure_dynamic_analysis_be
+- Google グループ： dynamic-analysis-be@gitlab.com
+- GitLab メンション： @gitlab-org/secure/dynamic-analysis-be
 
 ### サポートリクエスト
 
@@ -154,11 +154,11 @@ timeline
           : W4 <br> Weekly Team Sync
 ```
 
-Dynamic Analysis グループは Kanban 原則に従って作業しており、OKR 策定のための四半期、リリース計画のための月次、エピックと Issue の対応・トリアージ・リファインメント・障害解決のための週次のセレモニーが追加されています。チームがこれらのケイデンスでそれぞれ運営・思考することで、高レベルの階層的目標を効果的に設定し、プロダクトの優先事項が計画され、エピックと Issue の作業が停滞したり見落とされたりすることを防ぐことができます。
+Dynamic Analysis グループはカンバン原則に従って作業しており、OKR 策定のための四半期、リリース計画のための月次、エピックと Issue の対応・トリアージ・リファインメント・障害解決のための週次のセレモニーが追加されています。チームがこれらのケイデンスでそれぞれ運営・思考することで、高レベルの階層的目標を効果的に設定し、プロダクトの優先事項が計画され、エピックと Issue の作業が停滞したり見落とされたりすることを防ぐことができます。
 
 ### Hallway Monitor Bot
 
-すべての四半期、月次、週次の Kanban セレモニーにおいて、[Hallway Monitor Bot](https://gitlab.com/gitlab-org/secure/tools/gitlab-bot-hall-monitor) が私たちの道しるべとなり、チームがすべてのケイデンスで熟考・計画できるようにし、将来の作業を事前に把握できるようにします。このボットは四半期の OKR レビューミーティングをスケジュールし、月次のリリース計画とレトロミーティングをスケジュールし、最新のチームメンバーが一時的なリアクションローテーションの役割に割り当てられると週次同期ガイドを更新します。ビジネスプロセスをできる限り自動化するよう努め、Hallway Monitor Bot の[設定](https://gitlab.com/gitlab-org/secure/tools/gitlab-bot-hall-monitor/-/blob/main/deploy/gitlab-bot-hall-monitor.yaml?ref_type=heads)と[テンプレート](https://gitlab.com/gitlab-org/secure/tools/gitlab-bot-hall-monitor/-/tree/main/deploy/templates?ref_type=heads)で多くの自動化アイデアを実現できます。チームをできる限り効率的に保つためにボットへの貢献をお願いします。
+すべての四半期、月次、週次のカンバンセレモニーにおいて、[Hallway Monitor Bot](https://gitlab.com/gitlab-org/secure/tools/gitlab-bot-hall-monitor)が私たちの道しるべとなり、チームがすべてのケイデンスで熟考・計画できるようにし、将来の作業を事前に把握できるようにします。このボットは四半期の OKR レビューミーティングをスケジュールし、月次のリリース計画とレトロミーティングをスケジュールし、最新のチームメンバーが一時的なリアクションローテーションの役割に割り当てられると週次同期ガイドを更新します。ビジネスプロセスをできる限り自動化するよう努め、Hallway Monitor Bot の[設定](https://gitlab.com/gitlab-org/secure/tools/gitlab-bot-hall-monitor/-/blob/main/deploy/gitlab-bot-hall-monitor.yaml?ref_type=heads)と[テンプレート](https://gitlab.com/gitlab-org/secure/tools/gitlab-bot-hall-monitor/-/tree/main/deploy/templates?ref_type=heads)で多くの自動化アイデアを実現できます。チームをできる限り効率的に保つためにボットへの貢献をお願いします。
 
 ### 四半期 OKR 策定
 
@@ -203,7 +203,7 @@ timeline
   section M12 <br> Milestone Planning Sync
 ```
 
-リリースマイルストーンが開始される 2 週間前に、[Hallway Monitor Bot](#hallway-monitor-bot) がグループの月次リリース計画 Issue を自動的に作成してカレンダーイベントをスケジュールします。この Issue はマイルストーンの Kanban バックログとして機能し、PM の優先事項を EM およびすべての IC と調整します。Issue は 3 つのセクションに分かれています:
+リリースマイルストーンが開始される 2 週間前に、[Hallway Monitor Bot](#hallway-monitor-bot)がグループの月次リリース計画 Issue を自動的に作成してカレンダーイベントをスケジュールします。この Issue はマイルストーンのカンバンバックログとして機能し、PM の優先事項を EM およびすべての IC と調整します。Issue は 3 つのセクションに分かれています：
 
 - **リリースする作業** - このマイルストーン中にリリースすることをコミットしているすべての作業
 - **開始/継続する作業** - 新しく持ち込まれる作業または前のマイルストーンから繰り越される既存の作業
@@ -226,7 +226,7 @@ timeline
 
 #### マイルストーンレトロスペクティブ
 
-マイルストーンの完了後、そのマイルストーンの計画 Issue がコメント内のチームレトロをキャプチャするために使用されます。次のマイルストーン計画キックオフミーティングの前に、各チームメンバーはその Issue のコメントで以下の質問に答えるべきです:
+マイルストーンの完了後、そのマイルストーンの計画 Issue がコメント内のチームレトロをキャプチャするために使用されます。次のマイルストーン計画キックオフミーティングの前に、各チームメンバーはその Issue のコメントで以下の質問に答えるべきです：
 
 - 👍 今回のリリースで何が上手くいきましたか？
 - 👎 今回のリリースで何が上手くいきませんでしたか？
@@ -277,14 +277,14 @@ timeline
 
 #### RFH をクローズするタイミング
 
-RFH Issue はエンジニアリング、サポート、顧客の間で多くの往復コミュニケーションで解決に長い時間がかかる場合があります。顧客が問題を解決した場合、回避策が機能した場合、またはサポートケースへの投資を停止することを決定した場合、応答を停止することがあります。必要な Issue メンテナンスの量を制限するために、RFH Issue は実行する手順がなくなったとき、または最後の手順が顧客からの確認である場合にクローズする必要があります。最後の手順が顧客からの確認である場合は、次のようなメッセージでクローズします:
+RFH Issue はエンジニアリング、サポート、顧客の間で多くの往復コミュニケーションで解決に長い時間がかかる場合があります。顧客が問題を解決した場合、回避策が機能した場合、またはサポートケースへの投資を停止することを決定した場合、応答を停止することがあります。必要な Issue メンテナンスの量を制限するために、RFH Issue は実行する手順がなくなったとき、または最後の手順が顧客からの確認である場合にクローズする必要があります。最後の手順が顧客からの確認である場合は、次のようなメッセージでクローズします：
 
 `修正/回避策が提供されたため、この Issue をクローズします。提供されたソリューションが機能しない場合や、顧客が追加の質問/懸念がある場合は、この Issue を再オープンしてください。`
 
 これにより、顧客が応答しない場合にエンジニアが振り返って Issue をクローズする必要がなくなります。
 また、KPI を良好な状態に保つのに役立ちます（オープンな RFH の数、解決までの時間）。
 
-RFH Issue は以下の状況でクローズできます:
+RFH Issue は以下の状況でクローズできます：
 
 1. 解決の確認
     - 顧客が Issue が解決されたことを確認した場合
@@ -326,7 +326,7 @@ RFH Issue は以下の状況でクローズできます:
 1. 私たちが管理するプロジェクトで報告された脆弱性をトリアージし、優先度に応じた解決を支援します。([セキュリティ脆弱性トリアージプロセス](#security-vulnerabilities-triaging-process)を参照)
 1. `SLA::Breached` Issue を確認します。
 1. セキュリティ[自動化の失敗](/handbook/engineering/development/sec/secure/#automation-failures)を確認します。
-1. 依存関係の新しいセキュリティリリースを確認し、使用を確保します:
+1. 依存関係の新しいセキュリティリリースを確認し、使用を確保します：
    1. アップストリームスキャナー（[アップストリームスキャナーの更新](/handbook/engineering/development/sec/security-factory/composition-analysis/#updating-an-upstream-scanner)を参照）
    1. コンテナベースイメージ
    1. アプリケーション依存関係
@@ -336,13 +336,13 @@ RFH Issue は以下の状況でクローズできます:
 
 ### セキュリティ脆弱性トリアージプロセス {#security-vulnerabilities-triaging-process}
 
-私たちは 2 つのプロジェクトセットで報告された脆弱性のトリアージに責任を持ちます: GitLab が管理するプロジェクトと、依存する可能性があるアップストリームスキャナーソフトウェアです。ただし、状況に応じて異なるプロセスが適用されます。
+私たちは 2 つのプロジェクトセットで報告された脆弱性のトリアージに責任を持ちます： GitLab が管理するプロジェクトと、依存する可能性があるアップストリームスキャナーソフトウェアです。ただし、状況に応じて異なるプロセスが適用されます。
 
 [Application Security Testing サブ部門の脆弱性管理プロセス](/handbook/engineering/development/sec/secure/#vulnerability-management-process)を参照してください。
 
 #### セキュリティポリシー {#security-policy}
 
-CVSS の深刻度と [SLA](/handbook/security/product-security/vulnerability-management/sla/) によって検出結果に優先順位を付けます。`Critical` と `High` から始めますが、[脆弱性](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&label_name%5B%5D=type%3A%3Abug&label_name%5B%5D=bug%3A%3Avulnerability&label_name%5B%5D=group%3A%3Adynamic%20analysis&label_name%5B%5D=SLA%3A%3ANear%20Breach&first_page_size=100)に接続されていて `SLA::Near Breach` ラベルが付いている Issue も探してください。これらの脆弱性は CVSS スコアが低い場合がありますが、SLA 違反に達すると「期限超過」のセキュリティ Issue としてカウントされ、FedRAMP コンプライアンスに影響します。
+CVSS の深刻度と [SLA](/handbook/security/product-security/vulnerability-management/sla/)によって検出結果に優先順位を付けます。`Critical` と `High` から始めますが、[脆弱性](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&label_name%5B%5D=type%3A%3Abug&label_name%5B%5D=bug%3A%3Avulnerability&label_name%5B%5D=group%3A%3Adynamic%20analysis&label_name%5B%5D=SLA%3A%3ANear%20Breach&first_page_size=100)に接続されていて `SLA::Near Breach` ラベルが付いている Issue も探してください。これらの脆弱性は CVSS スコアが低い場合がありますが、SLA 違反に達すると「期限超過」のセキュリティ Issue としてカウントされ、FedRAMP コンプライアンスに影響します。
 
 FedRAMP コンプライアンスまたはプラットフォームセキュリティのためのセキュリティ Issue が作成または更新されていることを確認してください（手動または自動化を通じて）。必要に応じて[逸脱リクエスト](/handbook/security/security-assurance/security-compliance/poam-deviation-request-procedure/)の作成をフォローアップしてください。
 
@@ -350,13 +350,13 @@ FedRAMP コンプライアンスまたはプラットフォームセキュリテ
 
 #### SLA::Breached Issue
 
-場合によっては、できるだけ早く対処する必要がある `SLA::Breached` Issue があるかもしれません。[Tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/TopEngineeringMetrics_16989570521080/TopEngineeringMetricsDashboard?:iid=1)でそれらの Issue の数を確認できます（注: これは SAFE アクセスを必要としません）。`SLA::Breached` Issue は多くの理由で現れる場合があります:
+場合によっては、できるだけ早く対処する必要がある `SLA::Breached` Issue があるかもしれません。[Tableau ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/views/TopEngineeringMetrics_16989570521080/TopEngineeringMetricsDashboard?:iid=1)でそれらの Issue の数を確認できます（注： これは SAFE アクセスを必要としません）。`SLA::Breached` Issue は多くの理由で現れる場合があります：
 
 - 優先度が与えられなかったために対処されなかった中程度または低程度の脆弱性。低い脆弱性でも、異なるソースからスコアを得る可能性があるため、`severity::1` Issue につながる場合があることに注意してください。
 - 関連する脆弱性が解決または却下されているにもかかわらず、クローズされない Issue。
 
 SLA が違反されており、SLA 例外リクエストがまだ作成されていない場合は、[SLA 例外リクエスト](/handbook/security/product-security/vulnerability-management/sla-exceptions/)を[状況](/handbook/security/product-security/vulnerability-management/sla-exceptions/#when-is-an-sla-exception-request-appropriate)に基づいて作成してください。
-Issue トラッカーで以下のラベルフィルターを使用して `SLA::Breached` Issue を検索できます:
+Issue トラッカーで以下のラベルフィルターを使用して `SLA::Breached` Issue を検索できます：
 
 - [Severity 1](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&label_name%5B%5D=type%3A%3Abug&label_name%5B%5D=bug%3A%3Avulnerability&label_name%5B%5D=SLA%3A%3ABreached&label_name%5B%5D=group%3A%3Adynamicn%20analysis&label_name%5B%5D=severity%3A%3A1&not%5Blabel_name%5D%5B%5D=Vulnerability%3A%3AVendor%20Base%20Container%3A%3AWill%20Not%20Be%20Fixed&not%5Blabel_name%5D%5B%5D=Vulnerability%3A%3AVendor%20Package%3A%3AWill%20Not%20Be%20Fixed&not%5Blabel_name%5D%5B%5D=Vulnerability%3A%3AVendor%20Base%20Container%3A%3AFix%20Unavailable&not%5Blabel_name%5D%5B%5D=Vulnerability%3A%3AVendor%20Package%3A%3AFix%20Unavailable&not%5Blabel_name%5D%5B%5D=FedRAMP%3A%3ADR%20Status%3A%3AOpen&not%5Blabel_name%5D%5B%5D=FedRAMP%3A%3ADR%20Status%3A%3AVuln%20Remediated&first_page_size=100)
 - [Severity 2](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=created_date&state=opened&label_name%5B%5D=type%3A%3Abug&label_name%5B%5D=bug%3A%3Avulnerability&label_name%5B%5D=SLA%3A%3ABreached&label_name%5B%5D=group%3A%3Adynamic%20analysis&label_name%5B%5D=severity%3A%3A2&not%5Blabel_name%5D%5B%5D=Vulnerability%3A%3AVendor%20Base%20Container%3A%3AWill%20Not%20Be%20Fixed&not%5Blabel_name%5D%5B%5D=Vulnerability%3A%3AVendor%20Package%3A%3AWill%20Not%20Be%20Fixed&not%5Blabel_name%5D%5B%5D=Vulnerability%3A%3AVendor%20Base%20Container%3A%3AFix%20Unavailable&not%5Blabel_name%5D%5B%5D=Vulnerability%3A%3AVendor%20Package%3A%3AFix%20Unavailable&not%5Blabel_name%5D%5B%5D=FedRAMP%3A%3ADR%20Status%3A%3AOpen&not%5Blabel_name%5D%5B%5D=FedRAMP%3A%3ADR%20Status%3A%3AVuln%20Remediated&first_page_size=100)
@@ -384,7 +384,7 @@ Issue トラッカーで以下のラベルフィルターを使用して `SLA::B
 
 #### 脆弱性の確認 {#confirming-a-vulnerability}
 
-脆弱性が依存関係に影響する場合:
+脆弱性が依存関係に影響する場合：
 
 1. 依存関係（ソフトウェアライブラリ、システムライブラリ、ベースイメージなど）をアップグレード*または*削除できるか評価します。
 1. 脆弱性ステータスを「確認済み」に設定します。
@@ -413,7 +413,7 @@ Issue トラッカーで以下のラベルフィルターを使用して `SLA::B
 
 #### ブループリントとデザインドキュメント
 
-`workflow::refinement` または `workflow::ready for development` カラムに作業項目がほとんどないか全くない場合は、現在の[マイルストーンリリース計画](#milestone-release-planning) Issue の「ブループリントを作成する作業」を確認します。DRI として自分自身を割り当て、この作業を次のマイルストーンのためにブループリントする必要なミーティングをチームとスケジュールします。将来の計画、分解、リファインメントのためのプレースホルダーとして、できるだけ多くの子エピックと Issue を作成することを試みます。これはチームが次の月のこれらの優先事項を達成するための高レベルのアーキテクチャ方向性、実装計画、ニーズについて議論する絶好の機会です。作成されたすべてのブループリント Issue は以下のマイルストーンとラベルを受け取るべきです:
+`workflow::refinement` または `workflow::ready for development` カラムに作業項目がほとんどないか全くない場合は、現在の[マイルストーンリリース計画](#milestone-release-planning) Issue の「ブループリントを作成する作業」を確認します。DRI として自分自身を割り当て、この作業を次のマイルストーンのためにブループリントする必要なミーティングをチームとスケジュールします。将来の計画、分解、リファインメントのためのプレースホルダーとして、できるだけ多くの子エピックと Issue を作成することを試みます。これはチームが次の月のこれらの優先事項を達成するための高レベルのアーキテクチャ方向性、実装計画、ニーズについて議論する絶好の機会です。作成されたすべてのブループリント Issue は以下のマイルストーンとラベルを受け取るべきです：
 
 ```text
 /milestone {from mapping}
@@ -444,7 +444,7 @@ Issue は [INVEST ニーモニック](https://en.wikipedia.org/wiki/INVEST_(mnem
 
 Issue は横方向ではなく縦方向に分割する必要があります。縦方向に分割するとは、システム全体が目立つ違いをするということです。横方向に分割すると、個々のコンポーネントで最大限の変更を実現しようとすることになります。
 
-たとえば、サイトに CRUD 機能を追加するエピックがあるとします。Issue は以下の順序で分割して処理できます:
+たとえば、サイトに CRUD 機能を追加するエピックがあるとします。Issue は以下の順序で分割して処理できます：
 
 1. Read。これは独立していて、交渉可能で、見積り可能で、小さく、テスト可能です。また、エンジニアが本番環境でユーザーが読めるデータを手動で作成できるため価値もあります。
 1. Create。これは独立していて、見積り可能で、小さいです。Read 機能がすでに構築されているのでテスト可能です。エンジニアがデータを手動で作成する必要がなくなるので価値があり、エンジニアが手動でデータを作成するだけで十分という PM の決定ができるので交渉可能です。
@@ -453,14 +453,14 @@ Issue は横方向ではなく縦方向に分割する必要があります。�
 
 #### 繰り返しタスク
 
-各マイルストーンで完了する必要があるいくつかのメンテナンスタスクがあります。各イテレーションで、Issue が開かれ、ローテーションベースでエンジニアに割り当てられます。それらのローテーションタスクは:
+各マイルストーンで完了する必要があるいくつかのメンテナンスタスクがあります。各イテレーションで、Issue が開かれ、ローテーションベースでエンジニアに割り当てられます。それらのローテーションタスクは：
 
 - アップストリームの変更をレビューし、アップストリームの変更が重要な改善を提供する場合は DAST をアップグレードするための Issue を開く
-- DAST の[セキュリティダッシュボード](https://gitlab.com/gitlab-org/security-products/dast/-/security/vulnerability_report)をレビューし、すべての Critical および High Issue に対処する。アップストリームプロジェクト [ZAP](https://gitlab.com/gitlab-org/security-products/dependencies/zaproxy) と [ZAP Extensions](https://gitlab.com/gitlab-org/security-products/dependencies/zap-extensions) のダッシュボードをレビューする
+- DAST の[セキュリティダッシュボード](https://gitlab.com/gitlab-org/security-products/dast/-/security/vulnerability_report)をレビューし、すべての Critical および High Issue に対処する。アップストリームプロジェクト [ZAP](https://gitlab.com/gitlab-org/security-products/dependencies/zaproxy)と [ZAP Extensions](https://gitlab.com/gitlab-org/security-products/dependencies/zap-extensions)のダッシュボードをレビューする
 
 ## DAST 技術
 
-私たちが構築する DAST アナライザーは OWASP の [ZAP](https://github.com/zaproxy/zaproxy) オープンソースソフトウェアと [ZAP Extensions](https://github.com/zaproxy/zap-extensions) に大きく依存しています。つまり、DAST アナライザーの精度と品質は、基礎となる OSS の品質に影響されます。
+私たちが構築する DAST アナライザーは OWASP の [ZAP](https://github.com/zaproxy/zaproxy) オープンソースソフトウェアと [ZAP Extensions](https://github.com/zaproxy/zap-extensions)に大きく依存しています。つまり、DAST アナライザーの精度と品質は、基礎となる OSS の品質に影響されます。
 
 変更と脆弱性について[基礎ツールを監視](https://gitlab.com/gitlab-org/security-products/dependencies/zaproxy/-/security/dashboard)しています。
 

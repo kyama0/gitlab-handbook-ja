@@ -41,9 +41,9 @@ lastmod: "2026-08-13T15:10:33+03:00"
 #### 2. 非推奨化の通知
 
 破壊的変更の可能性がある変更を事前に告知する必要があります。
-必要なプロセスの詳細については、[非推奨化、削除、および破壊的変更](https://docs.gitlab.com/ee/development/deprecation_guidelines/) を参照してください。
+必要なプロセスの詳細については、[非推奨化、削除、および破壊的変更](https://docs.gitlab.com/ee/development/deprecation_guidelines/)を参照してください。
 
-SAST アナライザーの非推奨化通知の例として、[14.8 での通知](https://docs.gitlab.com/ee/update/deprecations.html#sast-analyzer-consolidation-and-cicd-template-changes) があります。
+SAST アナライザーの非推奨化通知の例として、[14.8 での通知](https://docs.gitlab.com/ee/update/deprecations.html#sast-analyzer-consolidation-and-cicd-template-changes)があります。
 
 SAST の Product Manager と Engineering Manager が、このアナウンスの公開に責任を持ちます。
 アナライザーの削除を実装するエンジニアは、変更通知の記載された範囲を遵守し、顧客への影響に関する重要な変更を PM/EM に通知する責任があります。
@@ -75,7 +75,7 @@ We've migrated this analyzer's scanning coverage to the GitLab SAST [Semgrep-bas
 
 [`SAST.gitlab-ci.yml`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/SAST.gitlab-ci.yml) ファイルを更新する MR を提出し、アナライザーのエントリをプレースホルダーに置き換えます。プレースホルダーメッセージには、アナライザーの非推奨化が発表された時期と削除された時期に関する通知を記載してください。また、対応する非推奨化 Issue へのハイパーリンクを必ず含めてください。
 
-[`SAST.latest.gitlab-ci.yml`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/SAST.latest.gitlab-ci.yml) への以前の更新をガイドとして使用できますが、「X で削除済み」のバージョン番号を、最新 (`SAST.latest`) テンプレートではなく安定版 (`SAST`) テンプレートでの削除時期に合わせて変更するよう注意してください。
+[`SAST.latest.gitlab-ci.yml`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/lib/gitlab/ci/templates/Jobs/SAST.latest.gitlab-ci.yml)への以前の更新をガイドとして使用できますが、「X で削除済み」のバージョン番号を、最新 (`SAST.latest`) テンプレートではなく安定版 (`SAST`) テンプレートでの削除時期に合わせて変更するよう注意してください。
 
 アナライザー削除 MR の例：https://gitlab.com/gitlab-org/gitlab/-/merge_requests/97216
 

@@ -177,7 +177,7 @@ A：以下によって知ることができます：
 
 **Q：最初のシフト前に必要なトレーニングは何ですか？**
 
-A：スケジュールが許す限りすぐに、[Tier 2 オンコール Level Up Channel](https://levelup.edcast.com/channel/tier-2-on-call-support/home) でトレーニングを完了してください。トレーニングは以下をカバーします：
+A：スケジュールが許す限りすぐに、[Tier 2 オンコール Level Up Channel](https://levelup.edcast.com/channel/tier-2-on-call-support/home)でトレーニングを完了してください。トレーニングは以下をカバーします：
 
 - インシデント対応手順
 - incident.io と PagerDuty の使用

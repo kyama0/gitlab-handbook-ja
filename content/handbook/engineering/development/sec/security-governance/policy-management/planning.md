@@ -14,7 +14,7 @@ stale: false
 
 私たちのプランニングは、四半期ごとのインターロック駆動型アプローチに従います。各四半期、ディレクター、プロダクトマネージャー（PM）、エンジニアリングマネージャー（EM）が**インターロックプロセス**を通じて高レベルの製品ロードマップを調整します。これにより、次の四半期以降にチームが注力するエピックと機能が決まります。
 
-四半期計画が確定したら、EM が個人コントリビュータ（IC）と協力して、各エピックにバックエンドとフロントエンドの [DRI](#epic-engineering-dri) を割り当てます。エンジニアは一方的に割り当てられるのではなく、特定のエピックのオーナーシップを取りたいかどうか確認されます。
+四半期計画が確定したら、EM が個人コントリビュータ（IC）と協力して、各エピックにバックエンドとフロントエンドの [DRI](#epic-engineering-dri)を割り当てます。エンジニアは一方的に割り当てられるのではなく、特定のエピックのオーナーシップを取りたいかどうか確認されます。
 
 マイルストーンレベルのプランニングは非同期で処理されます。EM は各マイルストーンで**プランニング Issue**（[例](https://gitlab.com/gitlab-org/gitlab/-/work_items/594167)参照）を作成し、チームが提供すべき作業を収集・整理します。Issue はマイルストーン開始前または最初の週中にエンジニアに事前割り当てされます。
 
@@ -39,7 +39,7 @@ stale: false
 
 これは柔軟性を持った**デフォルトのガイドライン**です。フィードバックをより早く収集するために Experiment を早期に出荷したり、スケジュールより前倒しで Beta に移行したりすることがあります。正確なフェーズはエピックの複雑さとチームの自信度によって異なります。EM と DRI はエピックプランニング中にフェーズについて合意する必要があります。
 
-GitLab の成熟度ステージの詳細については、[Development Stages and Support](https://docs.gitlab.com/policy/development_stages_support/) を参照してください。
+GitLab の成熟度ステージの詳細については、[Development Stages and Support](https://docs.gitlab.com/policy/development_stages_support/)を参照してください。
 
 ### エピックのスパイクファーストアプローチ {#spike-first-approach-for-epics}
 
@@ -82,7 +82,7 @@ EM は新たにオープンされた Issue の**週次非同期トリアージ**
 
 ## リファインメント
 
-Security Policies グループは、[ステージレベルのリファインメントガイドライン](/handbook/engineering/development/sec/security-governance/planning/#refinement-guidelines) と比較して軽量なリファインメントアプローチを採用しています。リファインメントは、Issue に割り当てられた**個々のエンジニア**の責任です。正式なハンドオフを伴う独立したワークフローステップではなく、リファインメントはマージリクエストの提供プロセスに組み込まれています。
+Security Policies グループは、[ステージレベルのリファインメントガイドライン](/handbook/engineering/development/sec/security-governance/planning/#refinement-guidelines)と比較して軽量なリファインメントアプローチを採用しています。リファインメントは、Issue に割り当てられた**個々のエンジニア**の責任です。正式なハンドオフを伴う独立したワークフローステップではなく、リファインメントはマージリクエストの提供プロセスに組み込まれています。
 
 リファインメントの目標は変わりません。
 
@@ -97,7 +97,7 @@ Security Policies グループは、[ステージレベルのリファインメ�
 1. Issue に割り当てられたエンジニアがその完全性と明確さをレビューします。
 2. Issue が**複雑**である場合、またはエンジニアが別の意見を求める場合は、リファインメント計画を作成して別のチームメンバーにレビューを依頼**できます**。これは**任意**であり、必須ではありません。
 3. Issue が単純な場合、エンジニアは直接 MR の作成に進み、リファインメントを MR 提供プロセスの一部として扱います。
-4. エンジニアはソリューションを解決する中で、Issue の説明を [実装計画](/handbook/engineering/development/sec/security-governance/planning/#implementation-plan) と [検証手順](/handbook/engineering/development/sec/security-governance/planning/#verification-steps) で更新します。
+4. エンジニアはソリューションを解決する中で、Issue の説明を[実装計画](/handbook/engineering/development/sec/security-governance/planning/#implementation-plan)と[検証手順](/handbook/engineering/development/sec/security-governance/planning/#verification-steps)で更新します。
 
 このアプローチは、独立した `workflow::refinement` ステップを排除することで摩擦を軽減しながら、エンジニアがコーディング前にアプローチを考え抜くことを確実にします。複雑な Issue では、レビューのセーフティネットが引き続き利用できます。
 
@@ -138,9 +138,9 @@ Security Policies グループは、[ステージレベルのリファインメ�
 - [ ] リリースポストエントリがマージされている（該当する場合）。
 - [ ] 機能が内部でデモされたか、関連するステークホルダーと共有されている。
 
-完了したアイテムは、上記のすべての基準が満たされた後に [Interlock Deck](https://interlock-deck.gitlab.io/#filter=group%3A%3Asecurity_policies) から削除されます。この時点でエピックはクローズされます。
+完了したアイテムは、上記のすべての基準が満たされた後に [Interlock Deck](https://interlock-deck.gitlab.io/#filter=group%3A%3Asecurity_policies)から削除されます。この時点でエピックはクローズされます。
 
-参考として、GitLab の [機能レベルの完了の定義](https://docs.gitlab.com/development/definition_of_done/) も参照してください。
+参考として、GitLab の[機能レベルの完了の定義](https://docs.gitlab.com/development/definition_of_done/)も参照してください。
 
 ---
 
@@ -150,7 +150,7 @@ Security Policies グループは、[ステージレベルのリファインメ�
 
 エピックの DRI として、エンジニアはすべての作業を実行する責任は**ありません**が、以下については責任を持ちます。
 
-1. [スパイク](#spike-first-approach-for-epics) から始め、PoC で技術的アプローチを検証します。
+1. [スパイク](#spike-first-approach-for-epics)から始め、PoC で技術的アプローチを検証します。
 1. 実装 Issue の分解を提案し、フィードバックを求めます。
 1. 合意した実装 Issue を作成します。
 1. さらなる調査が必要な場合を特定し、スパイク Issue を作成します。

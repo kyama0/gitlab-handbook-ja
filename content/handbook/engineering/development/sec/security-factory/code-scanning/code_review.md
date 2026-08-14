@@ -20,13 +20,13 @@ Static Analysis グループのすべてのメンバーは、定期的にコー�
 
 ### メンテナー
 
-[エンジニアリングレビューワークフロー](/handbook/engineering/workflow/code-review/#how-to-become-a-project-maintainer) からの引用：
+[エンジニアリングレビューワークフロー](/handbook/engineering/workflow/code-review/#how-to-become-a-project-maintainer)からの引用：
 
 > 優れたエンジニアはしばしば優れたレビュアーでもありますが、コードレビューはそれ自体がスキルであり、すべてのエンジニアがシニアリティに関わらず、そのスキルを磨く同じ機会を持っているわけではありません。また、良いメンテナーになることの大きな部分は、既存の製品とコードベースを非常によく知ることから来ています。それにより、他の機能との不整合、エッジケース、または非自明な相互作用を他のレビュアーが見逃しやすいものを発見できるようになります。
 >
 > コードベースと製品全体の品質を保護し確保するために、人々はレビュースキルが既存のメンテナーに匹敵するレベルであることを説得力を持って示した後にのみメンテナーになります。
 
-通常のレビュアーと同様に、メンテナーはチームページ、または[GitLab エンジニアリングプロジェクト](/handbook/engineering/projects/)のリストで確認できます。
+通常のレビュアーと同様に、メンテナーはチームページ、または [GitLab エンジニアリングプロジェクト](/handbook/engineering/projects/)のリストで確認できます。
 
 #### メンテナーシップへの道
 
@@ -80,12 +80,12 @@ SAST には 2 つのティアのメンテナーシップがあります。
 
 ##### レビュアーメンタープログラム
 
-私たちは[エンジニアリングレビューワークフロー](/handbook/engineering/workflow/code-review/#reviewer-mentorship-program) に記載されているのと同じレビュアーメンタープログラムに従っています。
+私たちは[エンジニアリングレビューワークフロー](/handbook/engineering/workflow/code-review/#reviewer-mentorship-program)に記載されているのと同じレビュアーメンタープログラムに従っています。
 
 ### 注意点
 
 Secure プロジェクトを維持する上で、批判的な目が必要な特定の側面があります。これらはチーム内のすべてのレビュアーが認識すべき責任であり、メンテナーに対する期待事項です。いくつかの例を挙げます：
 
 1. マージ前の下流パイプラインの実行：これは `gitlab-org` のメンバーには自動的に発生しますが、コミュニティの貢献には手動のトリガーが必要です
-1. タグのリリース前にパイプラインの失敗を修正する必要があります。[バージョニングとリリースプロセス](https://gitlab.com/gitlab-org/security-products/analyzers/common#versioning-and-release-process) を参照してください。
+1. タグのリリース前にパイプラインの失敗を修正する必要があります。[バージョニングとリリースプロセス](https://gitlab.com/gitlab-org/security-products/analyzers/common#versioning-and-release-process)を参照してください。
 1. アナライザーは CI テンプレートと同期を保つ必要があります。mobsf などの場合、特定のケースではアナライザーのバージョンを同期させる必要があります。

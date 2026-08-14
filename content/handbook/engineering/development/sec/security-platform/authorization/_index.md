@@ -13,7 +13,7 @@ Authorization グループは [Security Platform ステージ](/handbook/enginee
 
 ## プランニング
 
-私たちの [プランニング Issue](https://gitlab.com/gitlab-org/software-supply-chain-security/authorization/team-tasks/-/issues?sort=created_date&state=opened&label_name%5B%5D=Planning%20Issue&first_page_size=50) は、現在私たちが取り組んでいることと、次に取り組むことの SSOT です。また、これらを `workflow` の観点から見るための [Issue ボード](https://gitlab.com/gitlab-org/gitlab/-/boards/9750781?milestone_title=Started&label_name[]=group%3A%3Aauthorization) もあります。Issue リストを維持するために、リーダーシップ（EM+PM）がリストをトリアージし続けます。
+私たちの[プランニング Issue](https://gitlab.com/gitlab-org/software-supply-chain-security/authorization/team-tasks/-/issues?sort=created_date&state=opened&label_name%5B%5D=Planning%20Issue&first_page_size=50)は、現在私たちが取り組んでいることと、次に取り組むことの SSOT です。また、これらを `workflow` の観点から見るための [Issue ボード](https://gitlab.com/gitlab-org/gitlab/-/boards/9750781?milestone_title=Started&label_name[]=group%3A%3Aauthorization)もあります。Issue リストを維持するために、リーダーシップ（EM+PM）がリストをトリアージし続けます。
 
 ### ワークフロー
 
@@ -50,7 +50,7 @@ Authorization グループは [Security Platform ステージ](/handbook/enginee
 
 ## グループメンバー
 
-[Authorization グループ](https://gitlab.com/gitlab-org/software-supply-chain-security/authorization) は GitLab 上で `@gitlab-org/software-supply-chain-security/authorization` として `@` メンションできます。
+[Authorization グループ](https://gitlab.com/gitlab-org/software-supply-chain-security/authorization)は GitLab 上で `@gitlab-org/software-supply-chain-security/authorization` として `@` メンションできます。
 
 以下のメンバーがグループの常任メンバーです。
 
@@ -58,22 +58,22 @@ Authorization グループは [Security Platform ステージ](/handbook/enginee
 
 ## チーム Google ドライブ
 
-Authorization グループ用のドキュメントは [こちら](https://drive.google.com/drive/folders/1XGKbOM46ujoZbv9HMWPtx1x2Mp4Ku3bg) に保存されています。
+Authorization グループ用のドキュメントは[こちら](https://drive.google.com/drive/folders/1XGKbOM46ujoZbv9HMWPtx1x2Mp4Ku3bg)に保存されています。
 
 ## チームミーティング
 
-私たちのグループは、非同期の議論についてさらなる明確さと整合性を得るために同期ミーティングを開催しています。私たちのチームメンバーはいくつかのタイムゾーンにまたがっており、スケジュールされた時間に参加できないことが多いため、すべてのミーティングを [記録](/handbook/tools-and-tips/zoom/) することを目指しています。
+私たちのグループは、非同期の議論についてさらなる明確さと整合性を得るために同期ミーティングを開催しています。私たちのチームメンバーはいくつかのタイムゾーンにまたがっており、スケジュールされた時間に参加できないことが多いため、すべてのミーティングを[記録](/handbook/tools-and-tips/zoom/)することを目指しています。
 
 私たちは AMER/APAC と EMEA/AMER に優しい時間帯をローテーションする週次のチーム同期ミーティングを開催しています。火曜 20:00 UTC と水曜 14:30 UTC です。
-関連する [録画](https://drive.google.com/drive/folders/1_QjpV0TCELapJW2sXzTOViUUWXQyVj3r) と [ドキュメント](https://docs.google.com/document/d/1NGfuCaCNtyaN1qQwARhSh9cCNZkCVG-VisdK5GyP_N4/edit?usp=sharing)。
+関連する[録画](https://drive.google.com/drive/folders/1_QjpV0TCELapJW2sXzTOViUUWXQyVj3r)と[ドキュメント](https://docs.google.com/document/d/1NGfuCaCNtyaN1qQwARhSh9cCNZkCVG-VisdK5GyP_N4/edit?usp=sharing)。
 
 ## PTO の計画
 
-私たちは [休暇取得に関するエンジニアリングプロセス](/handbook/engineering/#taking-time-off) と [GitLab チームメンバーの休暇ガイド](/handbook/people-group/time-off-and-absence/time-off-types/) に従います。
+私たちは[休暇取得に関するエンジニアリングプロセス](/handbook/engineering/#taking-time-off)と [GitLab チームメンバーの休暇ガイド](/handbook/people-group/time-off-and-absence/time-off-types/)に従います。
 
 ## グループ共有カレンダー
 
-[Authorization グループ共有カレンダー](https://calendar.google.com/calendar/embed?src=c_97507fb9234d07c2561c1b1ccc98cab1462bf0364214f2cc4917eee8a86b7cdd%40group.calendar.google.com&ctz=America%2FDetroit) は、PTO イベントがチームの全員に見えるようにするために使用されます。AuthZ エンジニアに関連するイベント (OOO など) を見るには、このカレンダーを購読してください。
+[Authorization グループ共有カレンダー](https://calendar.google.com/calendar/embed?src=c_97507fb9234d07c2561c1b1ccc98cab1462bf0364214f2cc4917eee8a86b7cdd%40group.calendar.google.com&ctz=America%2FDetroit)は、PTO イベントがチームの全員に見えるようにするために使用されます。AuthZ エンジニアに関連するイベント (OOO など) を見るには、このカレンダーを購読してください。
 
 ### Time Off by Deel のエントリを共有カレンダーに同期する
 
@@ -92,10 +92,10 @@ Authorization グループ用のドキュメントは [こちら](https://drive.
 
 ### コードレビュー
 
-このグループはアプリケーションの中で [広範囲に影響する](/handbook/engineering/devops/#reducing-the-impact-of-far-reaching-work) コンポーネントを扱っているため、本番インシデントのリスクを減らすために以下の追加ステップを取ります。
+このグループはアプリケーションの中で[広範囲に影響する](/handbook/engineering/devops/#reducing-the-impact-of-far-reaching-work)コンポーネントを扱っているため、本番インシデントのリスクを減らすために以下の追加ステップを取ります。
 
-1. 私たちのチームのマージリクエストは、チーム間でより多くの組織知識を構築するために、最初のレビューを他の Authorization チームメンバーに割り当てるべきです。このレビューは [レビュアー](https://docs.gitlab.com/ee/development/code_review.html#the-responsibility-of-the-reviewer) として行われるべきです。Authorization の承認は、Authorization レビュアーのロールに対応する承認としてカウントされます。たとえば、Authorization のバックエンドレビューを受けることはバックエンドレビューとしてカウントされます。承認されたら、Authorization レビュアーは適切な [メンテナーカテゴリ](https://docs.gitlab.com/ee/development/code_review.html#approval-guidelines) のメンテナーにレビューを依頼すべきです。
-1. Authorization に関連するマージリクエスト（カスタムロールおよびポリシー関連のコードに触れるもの）は、[Authorization エンジニア](https://gitlab.com/groups/gitlab-org/govern/authorization/approvers/-/group_members?with_inherited_permissions=exclude) によるレビューが必要です。これは GitLab の `CODEOWNERS` 機能でガードされています。
+1. 私たちのチームのマージリクエストは、チーム間でより多くの組織知識を構築するために、最初のレビューを他の Authorization チームメンバーに割り当てるべきです。このレビューは[レビュアー](https://docs.gitlab.com/ee/development/code_review.html#the-responsibility-of-the-reviewer)として行われるべきです。Authorization の承認は、Authorization レビュアーのロールに対応する承認としてカウントされます。たとえば、Authorization のバックエンドレビューを受けることはバックエンドレビューとしてカウントされます。承認されたら、Authorization レビュアーは適切な[メンテナーカテゴリ](https://docs.gitlab.com/ee/development/code_review.html#approval-guidelines)のメンテナーにレビューを依頼すべきです。
+1. Authorization に関連するマージリクエスト（カスタムロールおよびポリシー関連のコードに触れるもの）は、[Authorization エンジニア](https://gitlab.com/groups/gitlab-org/govern/authorization/approvers/-/group_members?with_inherited_permissions=exclude)によるレビューが必要です。これは GitLab の `CODEOWNERS` 機能でガードされています。
 
 ### エンジニアリングリファインメント
 
@@ -127,7 +127,7 @@ Authorization グループ用のドキュメントは [こちら](https://drive.
   - 必要なデザインがあるか？
   - 期待される機能性は明確に表現されているか？
   - 依存関係はあるか？ 他のチームや他の Issue に？
-- Issue が完全でない場合:
+- Issue が完全でない場合：
   - `@NellyVahab`（PM）または `@jpr0c`（EM）にタグを付けて、項目が完全にグルーミングできないことを知らせる。彼らは Issue を完成させ、何が必要かを概説するのに役立つことができる。
 - Issue をタスクに分解する。
   - Issue がフロントエンドとバックエンドの両方の作業を必要とする場合、異なるタスクを作成して作業を分割できる。これにより、異なるエンジニアが Issue で協業することができる。
@@ -135,7 +135,7 @@ Authorization グループ用のドキュメントは [こちら](https://drive.
 - 実装プランを概説する
   - Issue がフロントエンドとバックエンドの両方の作業を必要とする場合、Vue コンポーネントでの計算を最小限にするために API エンドポイントのリクエスト/レスポンス構造を定義する。
   - 実装プランを把握するためにさらなる調査が必要な場合、スパイク Issue を作成できる。スパイクからの調査結果が得られたら、Issue に戻ることができる。
-- [T シャツサイジングアプローチ](/handbook/enterprise-data/how-we-work/planning/#t-shirt-sizing-approach) を使ってウェイトを割り当て、`~workflow::scheduling` ラベルを設定し、`@jpr0c` と `@NellyVahab` にタグを付ける。Issue がタスクに分解されている場合、各タスクにウェイトを割り当てることができる。
+- [T シャツサイジングアプローチ](/handbook/enterprise-data/how-we-work/planning/#t-shirt-sizing-approach)を使ってウェイトを割り当て、`~workflow::scheduling` ラベルを設定し、`@jpr0c` と `@NellyVahab` にタグを付ける。Issue がタスクに分解されている場合、各タスクにウェイトを割り当てることができる。
 - 次のステップが明確になったら、Issue の説明を更新し、自分自身のアサインを解除する。
 
 ## リンクとリソース {#links}

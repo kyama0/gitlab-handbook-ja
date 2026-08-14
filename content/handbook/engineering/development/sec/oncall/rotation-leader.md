@@ -111,7 +111,7 @@ SSCS ローテーションは、3 つの 8 時間地域ブロックの 24x5 モ�
 1. チームメンバーとそのマネージャーと協力して準備状況を確認する
 2. 彼らの地域 （APAC、EMEA、AMER） と主要ドメインを特定する
 3. 連絡先情報 （電話番号、メール） とともに Incident.io に追加する
-4. [初回シフトの準備](/handbook/engineering/development/sec/oncall/your-first-shift) チェックリストを完了させる
+4. [初回シフトの準備](/handbook/engineering/development/sec/oncall/your-first-shift)チェックリストを完了させる
 5. 必要なすべてのツールとドキュメントへのアクセスを提供する
 6. 初回シフトをスケジュールし、明確に伝える
 7. 初回シフト中にサポートできるようにする

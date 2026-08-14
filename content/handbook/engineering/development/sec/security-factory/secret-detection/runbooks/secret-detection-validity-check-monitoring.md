@@ -11,7 +11,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 ### このランブックをいつ使用しますか？
 
 このランブックを使用して、有効性チェック機能の正常性、パフォーマンス、および使用状況を監視します。
-詳細については、[有効性チェックダッシュボード](https://dashboards.gitlab.net/d/secret-detection-sd-partner-token-verify/93b6ec2) を参照してください。
+詳細については、[有効性チェックダッシュボード](https://dashboards.gitlab.net/d/secret-detection-sd-partner-token-verify/93b6ec2)を参照してください。
 
 ### 何を監視しますか？
 
@@ -75,28 +75,28 @@ lastmod: "2026-08-13T15:10:33+03:00"
 - しきい値：5 分以上 > 10%
 - 確認：**現在のエラー率** ゲージ、**パートナー別成功率** チャート
 - 対応：影響を受けたパートナーを特定します。パートナーのステータスページを確認します。詳細については、
-[トラブルシューティング](secret-detection-validity-check-troubleshooting.md#partner-api-high-error-rate) セクションを参照してください。
+[トラブルシューティング](secret-detection-validity-check-troubleshooting.md#partner-api-high-error-rate)セクションを参照してください。
 
 ### `SecretDetectionPartnerAPIHighLatency`
 
 - 重大度：S3
 - しきい値：5 分以上 P95 > 5 秒
 - 確認：**API レスポンス時間（P95）** チャート
-- 対応：システム全体の問題か、特定パートナーの問題かを確認します。詳細については、[トラブルシューティング](secret-detection-validity-check-troubleshooting.md#partner-api-high-latency) セクションを参照してください。
+- 対応：システム全体の問題か、特定パートナーの問題かを確認します。詳細については、[トラブルシューティング](secret-detection-validity-check-troubleshooting.md#partner-api-high-latency)セクションを参照してください。
 
 ### `SecretDetectionPartnerAPIRateLimitHit`
 
 - 重大度：S4
 - しきい値：持続して > 0.1 リクエスト／秒
 - 確認：**レート制限ヒット** 統計、**パートナー別レート制限** チャート
-- 対応：詳細については、[トラブルシューティング](secret-detection-validity-check-troubleshooting.md#rate-limits-hit-frequently) セクションを参照してください。
+- 対応：詳細については、[トラブルシューティング](secret-detection-validity-check-troubleshooting.md#rate-limits-hit-frequently)セクションを参照してください。
 
 ### `SecretDetectionPartnerAPINetworkErrors`
 
 - 重大度：S3
 - しきい値：5 分以上 > 0.5 エラー／秒
 - 確認：**パートナー別ネットワークエラー** チャート
-- 対応：エラー種別（`Timeout`、`ConnectionRefused`、`HTTPError`）を特定します。詳細については、[トラブルシューティング](secret-detection-validity-check-troubleshooting.md#network-errors-to-partner-apis) セクションを参照してください。
+- 対応：エラー種別（`Timeout`、`ConnectionRefused`、`HTTPError`）を特定します。詳細については、[トラブルシューティング](secret-detection-validity-check-troubleshooting.md#network-errors-to-partner-apis)セクションを参照してください。
 
 ## ダッシュボード
 

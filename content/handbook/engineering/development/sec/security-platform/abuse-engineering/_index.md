@@ -33,7 +33,7 @@ FY27 の Sec 再編以前は Anti-Abuse という名称でした。`group::anti-
 
 ## イテレーション
 
-[MVC](/handbook/values/#minimal-valuable-change-mvc) の構築方法を計画する際には、[マージリクエストを垂直方向と水平方向のどちらで分割するかのトレードオフ](/handbook/engineering/workflow/iteration/#tradeoffs-between-horizontal-and-vertical-slicing)を認識する必要があります。各イテレーションでスコープを縮小することが推奨されます。
+[MVC](/handbook/values/#minimal-valuable-change-mvc)の構築方法を計画する際には、[マージリクエストを垂直方向と水平方向のどちらで分割するかのトレードオフ](/handbook/engineering/workflow/iteration/#tradeoffs-between-horizontal-and-vertical-slicing)を認識する必要があります。各イテレーションでスコープを縮小することが推奨されます。
 
 要件が変化することがあり、コードベースの難しい領域が明らかになるにつれて複雑さが増す可能性があるため、明確さを保てるよう Issue の要件を最新の状態に維持するよう努めます。
 
@@ -55,7 +55,7 @@ FY27 の Sec 再編以前は Anti-Abuse という名称でした。`group::anti-
 
 私たちのグループでは、非同期での議論について、さらに明確にして認識を合わせるために同期ミーティングを開催します。チームメンバーは複数のタイムゾーンに分散しており、予定された時間に参加できないことも多いため、すべてのミーティングを[録画する](/handbook/tools-and-tips/zoom/)ことを目指しています。
 
-毎週のチーム同期ミーティングは、[AMER](https://drive.google.com/drive/folders/1ZPjzqSaMslSQXe7ZA0IHK4gbCTv25MYC?usp=sharing) と [AMER/APAC](https://drive.google.com/drive/folders/1wLdWWi3f6Aho6E2m4Xbhv1Nuoy_ZSC1e?usp=sharing) に都合のよい時間帯を交互に設定して開催します。火曜日 18:30 UTC と水曜日 00:00 UTC です。
+毎週のチーム同期ミーティングは、[AMER](https://drive.google.com/drive/folders/1ZPjzqSaMslSQXe7ZA0IHK4gbCTv25MYC?usp=sharing)と [AMER/APAC](https://drive.google.com/drive/folders/1wLdWWi3f6Aho6E2m4Xbhv1Nuoy_ZSC1e?usp=sharing)に都合のよい時間帯を交互に設定して開催します。火曜日 18:30 UTC と水曜日 00:00 UTC です。
 
 ## コラボレーション
 
@@ -75,11 +75,11 @@ FY27 の Sec 再編以前は Anti-Abuse という名称でした。`group::anti-
 
 ### Abuse のメンテナンス
 
-Anti-abuse チームは、プラットフォーム上の不正利用を軽減するため、[Trust and Safety](/handbook/security/security-operations/trustandsafety/) と緊密に連携しています。Trust and Safety が、不正利用を軽減する取り組みを支援するために、私たちのチームへ[機能やメンテナンスを依頼する](https://gitlab.com/gitlab-org/modelops/anti-abuse/team-tasks/-/issues/new?issuable_template=abuse_maintenance)ことは珍しくありません。優先順位付けされたリクエストは、[Abuse Maintenance エピック](https://gitlab.com/groups/gitlab-org/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=group%3A%3Aanti-abuse&or%5Blabel_name%5D%5B%5D=workflow%3A%3Aready%20for%20development&or%5Blabel_name%5D%5B%5D=workflow%3A%3Ain%20dev&or%5Blabel_name%5D%5B%5D=workflow%3A%3Ascheduling&epic_id=773187&first_page_size=20)に整理されています。
+Anti-abuse チームは、プラットフォーム上の不正利用を軽減するため、[Trust and Safety](/handbook/security/security-operations/trustandsafety/)と緊密に連携しています。Trust and Safety が、不正利用を軽減する取り組みを支援するために、私たちのチームへ[機能やメンテナンスを依頼する](https://gitlab.com/gitlab-org/modelops/anti-abuse/team-tasks/-/issues/new?issuable_template=abuse_maintenance)ことは珍しくありません。優先順位付けされたリクエストは、[Abuse Maintenance エピック](https://gitlab.com/groups/gitlab-org/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=group%3A%3Aanti-abuse&or%5Blabel_name%5D%5B%5D=workflow%3A%3Aready%20for%20development&or%5Blabel_name%5D%5B%5D=workflow%3A%3Ain%20dev&or%5Blabel_name%5D%5B%5D=workflow%3A%3Ascheduling&epic_id=773187&first_page_size=20)に整理されています。
 
 #### Pipeline Validation Service の責任
 
-[PVS](https://gitlab.com/gitlab-org/modelops/anti-abuse/pipeline-validation-service) は、Anti-abuse チームが所有する社内サービスです。ヒューリスティックベース（テキストマッチングなど）のルールと、行動ベース（重複ビルドなど）のルールを組み合わせています。[Trust and Safety チーム](/handbook/security/security-operations/trustandsafety/)がこのサービスを最も活用し、機能リクエストの顧客としての役割を果たします。
+[PVS](https://gitlab.com/gitlab-org/modelops/anti-abuse/pipeline-validation-service)は、Anti-abuse チームが所有する社内サービスです。ヒューリスティックベース（テキストマッチングなど）のルールと、行動ベース（重複ビルドなど）のルールを組み合わせています。[Trust and Safety チーム](/handbook/security/security-operations/trustandsafety/)がこのサービスを最も活用し、機能リクエストの顧客としての役割を果たします。
 
 #### ヒューリスティックルール
 

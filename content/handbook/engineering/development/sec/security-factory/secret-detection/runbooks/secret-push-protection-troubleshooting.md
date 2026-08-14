@@ -10,7 +10,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 ### このランブックをいつ使用しますか？
 
-このランブックは、[シークレットプッシュ保護](https://docs.gitlab.com/ee/user/application_security/secret_detection/secret_push_protection/index.html) 機能に関連する本番環境の問題をトラブルシューティングする際に使用します。
+このランブックは、[シークレットプッシュ保護](https://docs.gitlab.com/ee/user/application_security/secret_detection/secret_push_protection/index.html)機能に関連する本番環境の問題をトラブルシューティングする際に使用します。
 
 ### 関連する設定
 
@@ -23,9 +23,9 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 ## モニタリング
 
-[シークレットプッシュ保護モニタリング](secret-push-protection-monitoring) は、GitLab.com で有効になっているときに発生する可能性のある信頼性の問題やパフォーマンスの低下を特定・緩和するために機能を監視する際の推奨ダッシュボードです。
+[シークレットプッシュ保護モニタリング](secret-push-protection-monitoring)は、GitLab.com で有効になっているときに発生する可能性のある信頼性の問題やパフォーマンスの低下を特定・緩和するために機能を監視する際の推奨ダッシュボードです。
 
-[PreReceiveHook メソッドの Gitaly レイテンシダッシュボード](https://dashboards.gitlab.net/d/PqeIQ9Iik/gitaly-feature-latency-detail?from=now-1h&orgId=1&refresh=5m&to=now&var-job=gitaly&var-method=PreReceiveHook) を補助として使用できます。
+[PreReceiveHook メソッドの Gitaly レイテンシダッシュボード](https://dashboards.gitlab.net/d/PqeIQ9Iik/gitaly-feature-latency-detail?from=now-1h&orgId=1&refresh=5m&to=now&var-job=gitaly&var-method=PreReceiveHook)を補助として使用できます。
 
 ## 有効化／無効化
 
@@ -46,7 +46,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 これはプロジェクトの Maintainer 以上のロールを持つユーザーのみが変更でき、プロジェクトを無効化する際の推奨される方法です。
 
 特定のプロジェクトに対して `pre_receive_secret_detection_push_check` フィーチャーフラグがオンの場合、プロジェクトのセキュリティ設定ページからそのプロジェクトのシークレットプッシュ保護を切り替えることができます。
-手順は[進行中のドキュメント MR](https://gitlab.com/gitlab-org/gitlab/-/blob/05d3748d29a047946b173af51141137fafb049a8/doc/user/application_security/secret_detection/pre_receive/index.md#enable-pre-receive-secret-detection-for-a-specific-project) に記載されていますが、最終的にはドキュメントに追加される予定です。
+手順は[進行中のドキュメント MR](https://gitlab.com/gitlab-org/gitlab/-/blob/05d3748d29a047946b173af51141137fafb049a8/doc/user/application_security/secret_detection/pre_receive/index.md#enable-pre-receive-secret-detection-for-a-specific-project)に記載されていますが、最終的にはドキュメントに追加される予定です。
 
 フィーチャーフラグと設定の両方がオンの場合、そのプロジェクトへの git プッシュにシークレットが含まれていると停止されます。テストとして、`glpat-12345678901234567890` を（ターミナル、Web IDE などから）プッシュすると拒否されるはずです。
 
@@ -96,12 +96,12 @@ GitLab.com のログイベントはすべて[こちら](https://log.gprd.gitlab.
 
 ## SDS を使用したモノリスの負荷削減
 
-シークレット検出サービス（SDS）は、負荷が懸念される場合にモノリスからのシークレットスキャンをオフロードするために、GitLab.com でオプションとして有効化できます。これは [`use_secret_detection_service` 運用フィーチャーフラグ](https://docs.gitlab.com/administration/feature_flags/list/#eeonlyproduct) で制御されます。
+シークレット検出サービス（SDS）は、負荷が懸念される場合にモノリスからのシークレットスキャンをオフロードするために、GitLab.com でオプションとして有効化できます。これは [`use_secret_detection_service` 運用フィーチャーフラグ](https://docs.gitlab.com/administration/feature_flags/list/#eeonlyproduct)で制御されます。
 
 ### 動作の仕組み
 
 - **フラグ無効時（デフォルト）**：シークレットスキャンはモノリスに組み込まれた SDS gem で実行
-- **フラグ有効時**：モノリスは [Runway にデプロイされた SDS](https://gitlab.com/gitlab-org/security-products/secret-detection/secret-detection-service) にスキャンをルーティング
+- **フラグ有効時**：モノリスは [Runway にデプロイされた SDS](https://gitlab.com/gitlab-org/security-products/secret-detection/secret-detection-service)にスキャンをルーティング
 
 ### SDS の有効化
 

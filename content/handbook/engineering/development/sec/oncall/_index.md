@@ -12,7 +12,7 @@ Software Supply Chain Security（SSCS）Tier 2 オンコールプログラムへ
 
 ## Tier 2 オンコールとは？
 
-[Tier 2 オンコール](/handbook/engineering/development/sec/oncall/understanding-the-basics) は、GitLab における 2 番目のレベルのインシデント対応です。重大な問題がサービスに影響を与えた場合、Tier 2 エンジニアは、最前線の対応者（SRE/SIRT）では解決できない Sec セクション全体（SRM、Sec Platform など）のドメイン固有の問題を専門的に処理します。
+[Tier 2 オンコール](/handbook/engineering/development/sec/oncall/understanding-the-basics)は、GitLab における 2 番目のレベルのインシデント対応です。重大な問題がサービスに影響を与えた場合、Tier 2 エンジニアは、最前線の対応者（SRE/SIRT）では解決できない Sec セクション全体（SRM、Sec Platform など）のドメイン固有の問題を専門的に処理します。
 
 ## はじめに
 
@@ -20,7 +20,7 @@ Software Supply Chain Security（SSCS）Tier 2 オンコールプログラムへ
 
 ## プログラム管理
 
-ローテーションの仕組みを理解することが不可欠です。チームメンバーが[システムに追加・削除・追跡される方法](/handbook/engineering/development/sec/oncall/coverage-and-scheduling)を学んでください。シフトはチーム全体で公平に分配されており、スケジュールを簡単に確認できます。また、適切なカバレッジを確保するために [PTO、オーバーライド、祝日を管理](/handbook/engineering/development/sec/oncall/time-off-and-holidays) するための明確なプロセスがあります。
+ローテーションの仕組みを理解することが不可欠です。チームメンバーが[システムに追加・削除・追跡される方法](/handbook/engineering/development/sec/oncall/coverage-and-scheduling)を学んでください。シフトはチーム全体で公平に分配されており、スケジュールを簡単に確認できます。また、適切なカバレッジを確保するために [PTO、オーバーライド、祝日を管理](/handbook/engineering/development/sec/oncall/time-off-and-holidays)するための明確なプロセスがあります。
 
 ## シフト中
 

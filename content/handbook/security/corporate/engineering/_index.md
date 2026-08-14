@@ -11,7 +11,7 @@ stale: false
 
 Engineering チームのメンバーは、私たちが管理する Tech Stack アプリケーションのカテゴリーに基づいて、機能別に編成されています。
 
-CorpSec は、AWS、Azure、Google Cloud のアイデンティティおよびアクセス管理（IAM）を担当します。クラウドリソースの管理は、[Infrastructure Security](/handbook/security/product-security/infrastructure-security/) と [Infrastructure Platforms](/handbook/engineering/infrastructure-platforms/)（SRE）チームが担当します。
+CorpSec は、AWS、Azure、Google Cloud のアイデンティティおよびアクセス管理（IAM）を担当します。クラウドリソースの管理は、[Infrastructure Security](/handbook/security/product-security/infrastructure-security/)と [Infrastructure Platforms](/handbook/engineering/infrastructure-platforms/)（SRE）チームが担当します。
 
 ## システムオーナー
 

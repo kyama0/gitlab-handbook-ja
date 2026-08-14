@@ -22,19 +22,19 @@ stale: false
 
 ## Secure QA プロセス
 
-Secure アナライザーは、サポートされる言語/フレームワークのダウンストリームテストプロジェクトに対して新しいコミットを実行することで、マージリクエストを検証します（例：`Dependency Scanning` の [`gemnasium` アナライザー](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium) は `php`、`go`、およびその[他いくつかの](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium/-/blob/v2.21.0/.gitlab-ci.yml#L35-89)テストプロジェクトに対してテストをトリガーします）。検証は、生成されたレポート出力をアナライザーのリポジトリにコミットされた期待レポートと比較することで行われます。アナライザーの動作が変更された場合、期待レポートと生成されたレポートの内容が一致しなくなるため、パイプラインは失敗します。
+Secure アナライザーは、サポートされる言語/フレームワークのダウンストリームテストプロジェクトに対して新しいコミットを実行することで、マージリクエストを検証します（例：`Dependency Scanning` の [`gemnasium` アナライザー](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium)は `php`、`go`、およびその[他いくつかの](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium/-/blob/v2.21.0/.gitlab-ci.yml#L35-89)テストプロジェクトに対してテストをトリガーします）。検証は、生成されたレポート出力をアナライザーのリポジトリにコミットされた期待レポートと比較することで行われます。アナライザーの動作が変更された場合、期待レポートと生成されたレポートの内容が一致しなくなるため、パイプラインは失敗します。
 
 `Dependency Scanning`、`SAST`、`Secrets Detection` アナライザーの期待値は、プロジェクトの `qa/expect` ディレクトリに、各フレームワーク/言語タイプのサブディレクトリとともに格納されています。
 
 ### テストプロジェクト
 
-テストプロジェクトは Secure の [tests サブグループ](https://gitlab.com/gitlab-org/security-products/tests/)にあり、その使用方法とベストプラクティスは [common README](https://gitlab.com/gitlab-org/security-products/tests/common/-/blob/master/README.md) に記載されています。
+テストプロジェクトは Secure の [tests サブグループ](https://gitlab.com/gitlab-org/security-products/tests/)にあり、その使用方法とベストプラクティスは [common README](https://gitlab.com/gitlab-org/security-products/tests/common/-/blob/master/README.md)に記載されています。
 
 ### アナライザーの動作変更
 
 アナライザーへの変更がレポート出力を変更する場合、期待レポートも変更する必要があります。
 
-`SAST`、`Dependency Scanning`、`Secret Detection` では、期待レポートはアナライザーとともに、言語/フレームワークのサブディレクトリ内のテストプロジェクトに対応するパスに格納されています。例えば、`java-maven` の依存関係をスキャンするための期待レポートは [gemnasium-maven/qa/expect](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium-maven/-/tree/master/qa/expect/java-maven) に格納されています。このようにして、アナライザーの動作が変更された場合、期待値を同じコミットで変更してパッケージ化できます。
+`SAST`、`Dependency Scanning`、`Secret Detection` では、期待レポートはアナライザーとともに、言語/フレームワークのサブディレクトリ内のテストプロジェクトに対応するパスに格納されています。例えば、`java-maven` の依存関係をスキャンするための期待レポートは [gemnasium-maven/qa/expect](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium-maven/-/tree/master/qa/expect/java-maven)に格納されています。このようにして、アナライザーの動作が変更された場合、期待値を同じコミットで変更してパッケージ化できます。
 
 `License Compliance` については、期待値はテストプロジェクトの `qa/expect` ディレクトリ（例：[ruby-bundler/qa/expect](https://gitlab.com/gitlab-org/security-products/tests/ruby-bundler/-/tree/master/qa/expect)）に格納されています。
 
@@ -50,7 +50,7 @@ Secure アナライザーは、サポートされる言語/フレームワーク
 
 #### 2. 手動セットアップ
 
-[GitLab Sandbox Cloud](https://gitlabsandbox.cloud/) へのアクセスがすでにある場合、以下の手順に従って OpenShift クラスターをセットアップできます。
+[GitLab Sandbox Cloud](https://gitlabsandbox.cloud/)へのアクセスがすでにある場合、以下の手順に従って OpenShift クラスターをセットアップできます。
 
 1. https://gitlabsandbox.cloud/ にログインします。
 1. [Static Analysis Group EC2 開発マシンセットアップガイド](/handbook/engineering/development/sec/security-factory/code-scanning/ec2_dev_environment_setup/#static-analysis-group-ec2-development-machine-setup-guide)のステップ `1` から `3` に従って、AWS サンドボックスアカウントを作成し、AWS コンソールにログインします。
@@ -101,12 +101,12 @@ Secure アナライザーは、サポートされる言語/フレームワーク
 
    ![Red Hat の概要画面](/images/handbook/engineering/development/sec/secure/openshift/redhat-overview.png)
 
-    テストのみにクラスターを使用する予定の場合は、2ヶ月間の無料試用期間がある `OSD Trial` を選択することをお勧めします。この期間後、クラスターは削除されます。無料試用期間中は2ヶ月以内に有料プランにアップグレードできます。
+    テストのみにクラスターを使用する予定の場合は、2 ヶ月間の無料試用期間がある `OSD Trial` を選択することをお勧めします。この期間後、クラスターは削除されます。無料試用期間中は 2 ヶ月以内に有料プランにアップグレードできます。
 
 1. クラスターのセットアップが完了したら、OpenShift クラスターにログインするためのユーザーを作成する必要があります。`Cluster List > <your cluster>` を選択し、`Identity Provider` に `htpasswd` を選択します。`Cluster Roles and Access` で OpenShift クラスターにアクセスするためのユーザーを作成できます。このユーザーが `dedicated-admin` グループと `cluster-admins` グループに属していることを確認してください。
 1. その後、`Open console` ボタンをクリックし、前のステップで作成したクラスター管理者ユーザーでログインします。
 1. OpenShift クラスターにログインしたら、`Operators > Operator Hub` を選択して GitLab Runner Operator をインストールできます。GitLab Runner を検索し、検索結果をクリックして、[こちら](https://docs.gitlab.com/runner/install/operator.html)で説明されているように `Install` ボタンをクリックします。
-1. OpenShift クラスターでランナーをセットアップするには、[operator の README](https://gitlab.com/gitlab-org/gl-openshift/gitlab-runner-operator/-/blob/5f1134143f1b73171a7bb90d48b1fec948360db8/operator.yaml#L380) に含まれる手順に従ってください。
+1. OpenShift クラスターでランナーをセットアップするには、[operator の README](https://gitlab.com/gitlab-org/gl-openshift/gitlab-runner-operator/-/blob/5f1134143f1b73171a7bb90d48b1fec948360db8/operator.yaml#L380)に含まれる手順に従ってください。
 
    `gitlab-runner-operator README.md` で参照されている[ランナートークン](https://gitlab.com/gitlab-org/gl-openshift/gitlab-runner-operator/-/blob/master/README.md?plain=1#L43)は、GitLab プロジェクトから `CI/CD Settings > Runners > New Runner` を選択することで取得できます。
 

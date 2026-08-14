@@ -20,7 +20,7 @@ stale: false
 すべての参加者がミーティング開始前に Issue をレビューしていることが期待されます。
 参加者は Issue を事前にレビューしたことを示すためにニンジン 🥕 絵文字を追加します。
 
-回答すべき質問:
+回答すべき質問：
 
 1. 要件はリクエストの意図を理解するのに十分明確ですか？
 2. 実施すべき作業の範囲を把握していますか？
@@ -29,9 +29,9 @@ stale: false
 
 これらの質問に「はい」の場合、チームは Issue が**単一のイテレーション内で提供できるかどうか**を推定します（その同じイテレーション内の他の作業は無視します）。議論中の Issue が単一のイテレーション内で提供できないと判断された場合、チームは PM と協力して、それぞれがイテレーション内で提供でき、顧客が使用できる価値の独立した「スライス」（モックアップ UI やアクセス不可のバックエンドのみの作業ではない）であり、すべて提供されると元の Issue の要件を完全に満たす複数の MVC Issue に分解します。
 
-* EM アウトプット: 上記のすべての要件が満たされたら、EM はフロントエンドとバックエンドのエンジニアをそれぞれの [DRI](#epic-engineering-dri) として割り当て、MVC エピック配下に実装 Issue を作成させます。UX が作成したデザイン Issue もこの時点で EM によってクローズされます。
+* EM アウトプット： 上記のすべての要件が満たされたら、EM はフロントエンドとバックエンドのエンジニアをそれぞれの [DRI](#epic-engineering-dri)として割り当て、MVC エピック配下に実装 Issue を作成させます。UX が作成したデザイン Issue もこの時点で EM によってクローズされます。
 
-* エンジニアリングアウトプット: フロントエンドとバックエンドの DRI は [実装 Issue を作成](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Implementation)します。この際、`gitlab-org` プロジェクトの Issue で利用可能な [Implementation テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Implementation.md)に従います。完了したら、自分自身のアサインを解除し、Issue を `workflow::refinement` 状態に移動します。
+* エンジニアリングアウトプット： フロントエンドとバックエンドの DRI は[実装 Issue を作成](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Implementation)します。この際、`gitlab-org` プロジェクトの Issue で利用可能な [Implementation テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Implementation.md)に従います。完了したら、自分自身のアサインを解除し、Issue を `workflow::refinement` 状態に移動します。
 
 ### リファインメント
 
@@ -40,15 +40,15 @@ stale: false
 
 Issue をリファインメントに割り当てるのは、プロダクトマネジメントが決定した最高優先度アイテムに集中するためです。これは Issue の作業への割り当てでは**ありません**。
 
-* エンジニアリングアウトプット: リファインメントが完了したら Issue を `workflow::ready for dev` 状態に移動し、自分自身のアサインを解除します。何らかの理由でリファインメントが完了できない場合は、Issue を `workflow::refinement` のままにして EM に割り当てます。Issue に適切な [作業タイプ分類](/handbook/product/groups/product-analysis/engineering/dashboards/) があることを確認します。
+* エンジニアリングアウトプット： リファインメントが完了したら Issue を `workflow::ready for dev` 状態に移動し、自分自身のアサインを解除します。何らかの理由でリファインメントが完了できない場合は、Issue を `workflow::refinement` のままにして EM に割り当てます。Issue に適切な[作業タイプ分類](/handbook/product/groups/product-analysis/engineering/dashboards/)があることを確認します。
 
 ### リリーススコープ確定とキックオフ
 
 現在のマイルストーンが完了する前の週までに、次のリリースのスコープが EM と PM によって確定されます。
 
 * EM アウトプット：提供にコミットする Issue に `Deliverable` ラベルを適用します。このラベルを受け取る Issue は EM の裁量に委ねられており、say-do ratio（言ったことを必ずやる比率）の計算に使用されます。考慮要因は、マイルストーン内で Issue が完了する自信度、前のマイルストーンから持ち越された Issue の完了状況、他のグループやステークホルダーとのコミットメントです。
-* EM アウトプット: 提供できそうにない Issue を次のイテレーションに移動します。
-* PM アウトプット: `workflow::ready for dev` 状態の `Deliverable` ラベル付き Issue が正しい優先順位にあることを確認します。
+* EM アウトプット： 提供できそうにない Issue を次のイテレーションに移動します。
+* PM アウトプット： `workflow::ready for dev` 状態の `Deliverable` ラベル付き Issue が正しい優先順位にあることを確認します。
 
 ---
 
@@ -56,18 +56,18 @@ Issue をリファインメントに割り当てるのは、プロダクトマ�
 
 バックログリファインメントは、Issue が開発に移行する準備ができており、作業が提供された際に全員の期待に合致することを確実にするための最も重要なステップです。
 
-リファインメントプロセスの目標は、以下を実施して Issue が作業可能な状態であることを確実にすることです:
+リファインメントプロセスの目標は、以下を実施して Issue が作業可能な状態であることを確実にすることです：
 
 * 未解決の質問や議論を特定して解決します。
-* 不足している依存関係（例: `backend` API）を特定します。
+* 不足している依存関係（例： `backend` API）を特定します。
 * 質問、懸念事項、または代替アプローチを提起します。
 * 実装計画を概説します。
 * Issue にウェイトを割り当てます。
 
 ### エンジニアのリファインメント手順
 
-1. リファインメントが必要な Issue は EM から割り当てられます。[バグ](#bug-diagnosis) と [スパイク](#refinement-for-spikes) の違いに注意してください。
-1. バックエンド/フロントエンドラベル:
+1. リファインメントが必要な Issue は EM から割り当てられます。[バグ](#bug-diagnosis)と[スパイク](#refinement-for-spikes)の違いに注意してください。
+1. バックエンド/フロントエンドラベル：
    * Issue にバックエンドエンジニアが必要な場合は `backend` ラベルを確認します。そうでなければ、バックエンドラベルを削除し、関連するラベルを割り当てて完了です。
    * Issue にフロントエンドエンジニアが必要な場合は `frontend` ラベルを確認します。そうでなければ、フロントエンドラベルを削除し、関連するラベルを割り当てて完了です。
 1. Issue の完全性を確認します。
@@ -76,40 +76,40 @@ Issue をリファインメントに割り当てるのは、プロダクトマ�
    * 技術的な詳細が概説されていますか？
    * 議論の分野でコンセンサスが達成または決定されていますか？
    * 依存関係はありますか？それを明記します。
-1. Issue が完全でない場合:
+1. Issue が完全でない場合：
    * Issue を完成させるために助けてもらえる関連する人をタグ付けし、何が必要かを説明します。EM と PM をタグ付けして、アイテムが完全にリファインできないことを知らせます。
-   * 合理的な時間内（イニシアティブの規模によって 2〜3 日）にリファインメントのブロッカーを解決できない場合は [リファインメント失敗](#failing-refinement) を参照してください。
+   * 合理的な時間内（イニシアティブの規模によって 2 〜 3 日）にリファインメントのブロッカーを解決できない場合は[リファインメント失敗](#failing-refinement)を参照してください。
 1. Issue を完全に理解していることを確認します。
    * 実装される内容の最終説明で Issue の説明を更新します。
-   * [実装計画](#implementation-plan) で Issue の説明を更新します。
-   * [検証手順](#verification-steps) で Issue の説明を更新します。
+   * [実装計画](#implementation-plan)で Issue の説明を更新します。
+   * [検証手順](#verification-steps)で Issue の説明を更新します。
    * Issue タイトルが実施される作業に対して正確であることを確認します。
    * スコープ外となった「フォローアップ」作業や作業のための新しい Issue をオープンします。
-1. [ウェイト](#weights) を割り当てます。
+1. [ウェイト](#weights)を割り当てます。
    * Issue がフロントエンドとバックエンドの両方の作業を必要とする場合は、分割して独立してウェイトを付けます。
-1. [フィーチャーフラグが必要かどうか](/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/#when-to-use-feature-flags) を判断します。
+1. [フィーチャーフラグが必要かどうか](/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/#when-to-use-feature-flags)を判断します。
    * 特定の Issue にフィーチャーフラグを使用すべきと思う場合は、`~"feature flag"` ラベルを追加し、説明に **Feature Flag** セクションを追加して提案する名前を記入します。
-   * フィーチャーフラグを使用したリリースの複数のステージを追跡するための [フィーチャーフラグロールアウト](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Feature%20Flag%20Roll%20Out) Issue を作成します。
+   * フィーチャーフラグを使用したリリースの複数のステージを追跡するための[フィーチャーフラグロールアウト](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Feature%20Flag%20Roll%20Out) Issue を作成します。
    * フィーチャーフラグの削除が後続のマイルストーンで発生する場合は、[フィーチャーフラグクリーンアップ](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Feature%20Flag%20Cleanup) Issue の作成を検討してください。
 1. コミュニティ貢献を促進します。
-   * Issue のスコープが明確に定義されており依存関係がない場合は、[貢献ラベル](/handbook/marketing/developer-relations/engineering/community-contributors-workflows/#labels) の追加を検討します。
-   * `~"quick win"` ラベルは特に有用ですが、[新しいコントリビュータのメンターをボランティアで行う](/handbook/marketing/developer-relations/engineering/community-contributors-workflows) ことになる点に注意してください。
+   * Issue のスコープが明確に定義されており依存関係がない場合は、[貢献ラベル](/handbook/marketing/developer-relations/engineering/community-contributors-workflows/#labels)の追加を検討します。
+   * `~"quick win"` ラベルは特に有用ですが、[新しいコントリビュータのメンターをボランティアで行う](/handbook/marketing/developer-relations/engineering/community-contributors-workflows)ことになる点に注意してください。
 1. リファインメントレビュー。
-   * 割り当てたウェイトが3以下の場合は、Issue を直接 `~"workflow::ready for development"` に移動します。
-   * Issue のウェイトが3より大きい場合は、自分自身のアサインを解除して別のエンジニアにレビューを依頼します。
+   * 割り当てたウェイトが 3 以下の場合は、Issue を直接 `~"workflow::ready for development"` に移動します。
+   * Issue のウェイトが 3 より大きい場合は、自分自身のアサインを解除して別のエンジニアにレビューを依頼します。
    * レビュアーが実装計画とウェイトに同意したら、自分自身のアサインを解除して Issue を `~"workflow::ready for development"` に移動します。
 
 誰もがリファインされた Issue の説明を読んで、何が解決されているか、どのように問題を解決するか、Issue を実装するための技術的な計画が理解できるようにします。
 
-Issue とその実装を誰かが理解するために、すべてのコメントを読む必要があっては**なりません**。重要な内容は [信頼できる唯一の情報源](/handbook/communication/#issues) として説明にキャプチャされるべきです。
+Issue とその実装を誰かが理解するために、すべてのコメントを読む必要があっては**なりません**。重要な内容は[信頼できる唯一の情報源](/handbook/communication/#issues)として説明にキャプチャされるべきです。
 
 #### バグ診断 {#bug-diagnosis}
 
-バグをリファインする際の以下の違いに注意してください:
+バグをリファインする際の以下の違いに注意してください：
 
 1. ガイドラインとして、Issue ごとに 1 時間以内に留めます。リファインするのに時間がかかりすぎるバグは、より複雑な Issue の兆候です。
 1. ウェイトを追加しません。私たちのベロシティは、新しいバグのない機能を提供するキャパシティを表します。
-1. リファインメントの時間制限に達したとき、[実装計画](#implementation-plan) に不確実性があっても問題ありません。コード変更が発生すると予想される場所を（高レベルまたは低レベルで）示すだけで十分です。
+1. リファインメントの時間制限に達したとき、[実装計画](#implementation-plan)に不確実性があっても問題ありません。コード変更が発生すると予想される場所を（高レベルまたは低レベルで）示すだけで十分です。
 
 #### スパイクのリファインメント {#refinement-for-spikes}
 
@@ -121,11 +121,11 @@ Issue とその実装を誰かが理解するために、すべてのコメン�
 
 #### セキュリティ Issue のリファインメント
 
-[セキュリティデベロッパープロセス](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/engineer.md) は初めての方には難しく感じられることがあります。リファインメントの一環として、「セキュリティ Issue リリースバディ」として行動するボランティアを求めます。
+[セキュリティデベロッパープロセス](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/engineer.md)は初めての方には難しく感じられることがあります。リファインメントの一環として、「セキュリティ Issue リリースバディ」として行動するボランティアを求めます。
 
 ### リファインメント失敗 {#failing-refinement}
 
-Issue は、追加情報や決定なしには作業できない場合にリファインメント失敗とすべきです。Issue を失敗させるには:
+Issue は、追加情報や決定なしには作業できない場合にリファインメント失敗とすべきです。Issue を失敗させるには：
 
 1. Issue に作業できないことと、まだ何をする必要があるかを強調したコメントを残します。
 2. 現時点でこれ以上 Issue に貢献できない場合は自分自身のアサインを解除します。
@@ -141,11 +141,11 @@ Issue は、追加情報や決定なしには作業できない場合にリフ�
 
 #### 可能な値
 
-Issue のウェイトにはフィボナッチ数列を使用しています。各数値の定義は [frontend-weight と backend-weight ラベル](https://gitlab.com/groups/gitlab-org/-/labels?utf8=%E2%9C%93&subscribed=&search=-weight%3A%3A) に関連付けられています。5 より大きいものは可能な限り分解してください。
+Issue のウェイトにはフィボナッチ数列を使用しています。各数値の定義は [frontend-weight と backend-weight ラベル](https://gitlab.com/groups/gitlab-org/-/labels?utf8=%E2%9C%93&subscribed=&search=-weight%3A%3A)に関連付けられています。5 より大きいものは可能な限り分解してください。
 
 Issue に `frontend-weight` または `backend-weight` ラベルを設定することは任意ですが、リファインメント中に Issue の **Weight** プロパティを設定してください。
 
-ウェイトラベルの設定が適切な場合の例:
+ウェイトラベルの設定が適切な場合の例：
 
 * 新しく作成された Issue で、スコープやフロントエンドとバックエンドの両方が必要かどうかをまだ完全に決定していない場合。
 * バグで、直接ウェイトを割り当てない場合。ラベルは複雑さに関するガイダンスを提供するのに役立ちます。
@@ -168,27 +168,27 @@ Issue 検証手順の目的は、Issue を実装した後にアプリケーシ�
 
 Issue の検証は MR の作者以外の誰かが行う必要があります[^4]。
 
-1. すべての実装 Issue は説明に検証手順を含む必要があります。私たちの [実装 Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Implementation) にはこのセクションが便利に提供されています。
+1. すべての実装 Issue は説明に検証手順を含む必要があります。私たちの[実装 Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Implementation)にはこのセクションが便利に提供されています。
 1. エンジニアが作業をマージしたら、`~workflow:verification` ラベルで示される検証状態に Issue を移動し、リリース Issue のメールでステージング環境に作業がデプロイされた通知を受けるまで待ちます。
 1. 可能であれば、エンジニアが通知を受けてステージングで作業を検証した後、完了したテストの概要をコメントで残します。
 1. .com/本番環境で変更が利用可能になったら（MR に `~workflow:verification` ラベルがあり、GitLab Next をオフにした状態で利用可能であることを確認します）、エンジニアは再度検証し、完了したテストの概要をコメントで残し、自分自身のアサインを解除します。該当する場合はプロジェクトやページへのリンクも提供します。
-1. `~workflow:verification` 状態の未割り当て Issue は、[検証ポリシー](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/assign_dev_for_verification.rb) に基づいてトリアージボットによって適切なチームエンジニアにランダムに割り当てられます。このエンジニアはその後、Issue を追加検証します。
+1. `~workflow:verification` 状態の未割り当て Issue は、[検証ポリシー](https://gitlab.com/gitlab-org/quality/triage-ops/-/blob/master/triage/processor/assign_dev_for_verification.rb)に基づいてトリアージボットによって適切なチームエンジニアにランダムに割り当てられます。このエンジニアはその後、Issue を追加検証します。
 1. 両方のエンジニアによって本番環境で Issue が検証されたら、`workflow::complete` ラベルを追加して Issue をクローズします。
 
 [^4]: エンジニア間のサイクルタイムを最小化するために、作業エンジニアが自分の作業を検証することが望ましいです。Issue が十分に解決されていないと判明した場合、すぐに作業を再開できるためです。別のエンジニアが明らかな失敗を発見するのを待つことで、ターンアラウンドタイムが増加します。
 
 ## PTO のプランニング
 
-私たちは [GitLab チームメンバーの休暇ガイド](/handbook/people-group/time-off-and-absence/time-off-types/) とエンジニアリングプロセスの [PTO カバレッジ Issue 作成](/handbook/engineering/#1-creating-an-engineering-coverage-issue) に従います。PTO カバレッジ Issue は 3 日以上の場合に推奨されます。
+私たちは [GitLab チームメンバーの休暇ガイド](/handbook/people-group/time-off-and-absence/time-off-types/)とエンジニアリングプロセスの [PTO カバレッジ Issue 作成](/handbook/engineering/#1-creating-an-engineering-coverage-issue)に従います。PTO カバレッジ Issue は 3 日以上の場合に推奨されます。
 
-1. グレード8のチームメンバー（EM、Staff+）は、集中管理された [Engineering Division / PTO Coverage](https://gitlab.com/gitlab-com/engineering-division/pto-coverage/-/issues/new?description_template=Default) プロジェクトに PTO カバレッジ Issue を作成します。
+1. グレード 8 のチームメンバー（EM、Staff+）は、集中管理された [Engineering Division / PTO Coverage](https://gitlab.com/gitlab-com/engineering-division/pto-coverage/-/issues/new?description_template=Default) プロジェクトに PTO カバレッジ Issue を作成します。
 1. 他のチームメンバーは、私たちの [Security Risk Management](https://gitlab.com/gitlab-com/security-risk-management-stage/-/issues/new?description_template=ooo_template) プロジェクトに PTO カバレッジ Issue を作成します。
 
 ## エピックエンジニアリング DRI {#epic-engineering-dri}
 
 エピックがリファインメント段階に移行する準備ができたら、EM が各必要な技術スタックに DRI を割り当てます。これはプランニングブレイクダウン中に早期に行われることもあります。
 
-エピックの DRI として、エンジニアはすべての作業を実行する責任は**ありません**が、以下については責任を持ちます:
+エピックの DRI として、エンジニアはすべての作業を実行する責任は**ありません**が、以下については責任を持ちます：
 
 1. 実装 Issue の分解を提案し、フィードバックを求めます。
 1. 合意した実装 Issue を作成します。
@@ -215,7 +215,7 @@ DRI は作成した Issue のリファインメントと作業を選択して進
 
 **A:** プロセスの特定のステップを伝えるために使用します。
 
-* 🥕 [プランニングブレイクダウン](#planning-breakdown) の準備として Issue をレビューしました。
-* 🥒 [Gherkin キーワード](https://cucumber.io/docs/gherkin/reference/#keywords) を使用した仕様の追加リクエスト（人生がキュウリをくれたら、ピクルスにします）。
+* 🥕 [プランニングブレイクダウン](#planning-breakdown)の準備として Issue をレビューしました。
+* 🥒 [Gherkin キーワード](https://cucumber.io/docs/gherkin/reference/#keywords)を使用した仕様の追加リクエスト（人生がキュウリをくれたら、ピクルスにします）。
 
 ## 脚注

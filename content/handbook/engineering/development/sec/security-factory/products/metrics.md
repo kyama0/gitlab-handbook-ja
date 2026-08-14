@@ -12,15 +12,15 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 私たちは、標準的な脆弱性分類システムおよびソフトウェアの弱点を議論するための共通言語として、[Common Weakness Enumeration（CWE）を積極的にサポート](https://gitlab.com/gitlab-org/gitlab/-/issues/300978)しています。
 
-[CWE](https://cwe.mitre.org/) を基盤として使用することにはいくつかの利点があります。
+[CWE](https://cwe.mitre.org/)を基盤として使用することにはいくつかの利点があります。
 
 1. CWE は包括的かつ十分に文書化されたシステムであり、ソフトウェアの弱点を議論するためのデファクトスタンダードと見なすことができます。
-1. CWE は他の脆弱性・分類システムやランキング（[OWASP Top 10](https://owasp.org/Top10/) など）へのマッピングを提供しています。
+1. CWE は他の脆弱性・分類システムやランキング（[OWASP Top 10](https://owasp.org/Top10/)など）へのマッピングを提供しています。
 1. CWE は安定したオントロジーを提供しています。定義は追加できますが、既存の定義は変更されません（OWASP ランキングとは異なり）。
 
 CWE は階層的なシステムであり、親 CWE が子 CWE よりも一般的なツリー構造で編成されたオントロジーを持っています。子 CWE は、親よりも具体的な条件で脆弱性を捉えます。
 
-CWE とは対照的に、[OWASP Top 10](https://owasp.org/Top10/) は最も重大なセキュリティ脆弱性のリスクランキングを提供しています。10 のリスクカテゴリは定期的に変更されます。
+CWE とは対照的に、[OWASP Top 10](https://owasp.org/Top10/)は最も重大なセキュリティ脆弱性のリスクランキングを提供しています。10 のリスクカテゴリは定期的に変更されます。
 
 以下の表は、OWASP カテゴリとその CWE の対応関係を示しています。この表には、[OWASP Top10 ウェブサイト](https://owasp.org/Top10/)に記載されているすべての CWE マッピング（子 CWE を含む推移的な CWE マッピング）が含まれています。
 
@@ -42,8 +42,8 @@ CWE とは対照的に、[OWASP Top 10](https://owasp.org/Top10/) は最も重�
 
 ### OWASP Top 10 2021 カバレッジ
 
-以下のグラフは、[OWASP Top 10 2021](https://owasp.org/www-project-top-ten/) にマッピングされる CWE を示しています。
-これらの CWE はすべて、GitLab の [SAST](https://docs.gitlab.com/ee/user/application_security/sast/)/[DAST](https://docs.gitlab.com/ee/user/application_security/dast/) および[依存関係スキャン](https://docs.gitlab.com/ee/user/application_security/dependency_scanning/)機能によって検出されます。
+以下のグラフは、[OWASP Top 10 2021](https://owasp.org/www-project-top-ten/)にマッピングされる CWE を示しています。
+これらの CWE はすべて、GitLab の [SAST](https://docs.gitlab.com/ee/user/application_security/sast/)/[DAST](https://docs.gitlab.com/ee/user/application_security/dast/)および[依存関係スキャン](https://docs.gitlab.com/ee/user/application_security/dependency_scanning/)機能によって検出されます。
 
 [_Tableau でデータは利用不可_](https://gitlab.com/gitlab-data/tableau/-/issues/330)
 
@@ -51,7 +51,7 @@ CWE とは対照的に、[OWASP Top 10](https://owasp.org/Top10/) は最も重�
 
 #### SAST
 
-以下の表は、[Common Weakness Enumerator（CWE）](https://cwe.mitre.org/) の結果を合計したものです。これらは、[私たちの SAST アナライザー](https://docs.gitlab.com/ee/user/application_security/sast/)が [gitlab.com](https://gitlab.com/) でホストされているプロジェクトについて報告した結果です。
+以下の表は、[Common Weakness Enumerator（CWE）](https://cwe.mitre.org/)の結果を合計したものです。これらは、[私たちの SAST アナライザー](https://docs.gitlab.com/ee/user/application_security/sast/)が [gitlab.com](https://gitlab.com/)でホストされているプロジェクトについて報告した結果です。
 
 [_Tableau でデータは利用不可_](https://gitlab.com/gitlab-data/tableau/-/issues/330)
 
@@ -85,7 +85,7 @@ CWE とは対照的に、[OWASP Top 10](https://owasp.org/Top10/) は最も重�
 
 #### DAST
 
-以下の表は、[Common Weakness Enumerator（CWE）](https://cwe.mitre.org/) の結果を合計したものです。これらは、[私たちの DAST アナライザー](https://docs.gitlab.com/ee/user/application_security/dast/)が [gitlab.com](https://gitlab.com/) でホストされているプロジェクトについて報告した結果です。
+以下の表は、[Common Weakness Enumerator（CWE）](https://cwe.mitre.org/)の結果を合計したものです。これらは、[私たちの DAST アナライザー](https://docs.gitlab.com/ee/user/application_security/dast/)が [gitlab.com](https://gitlab.com/)でホストされているプロジェクトについて報告した結果です。
 
 [_Tableau でデータは利用不可_](https://gitlab.com/gitlab-data/tableau/-/issues/330)
 

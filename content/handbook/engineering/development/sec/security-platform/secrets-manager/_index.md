@@ -23,7 +23,7 @@ Secrets Manager グループは、[Security Platform ステージ](/handbook/eng
 
 私たちは、ソフトウェアサプライチェーンのプロセスにセキュリティを提供し、パイプラインとジョブへの適切なレベルの可視性を確保します。これにより、組織は CI パイプラインを安全に運用できます。
 
-私たちのチームは、以下のカテゴリーの提供を担当しています:
+私たちのチームは、以下のカテゴリーの提供を担当しています：
 
 - [Secrets Management](https://about.gitlab.com/direction/software_supply_chain_security/pipeline_security/secrets_management/)
 - [Artifact Security](https://about.gitlab.com/direction/software_supply_chain_security/pipeline_security/artifact_security/)
@@ -34,12 +34,12 @@ Secrets Manager グループは、[Security Platform ステージ](/handbook/eng
 
 ## パフォーマンス指標 {#performance-indicators}
 
-私たちは、[Product Performance Indicator](https://internal.gitlab.com/handbook/company/performance-indicators/product/)を使って、私たちが貢献する価値を測定します。PI プロセスの目標の 1 つは、製品チームとして、将来の成功の前兆である leading indicator を改善するための戦略的・運用的な改善に集中していることを確保することです。
+私たちは、[Product Performance Indicator](https://internal.gitlab.com/handbook/company/performance-indicators/product/)を使って、私たちが貢献する価値を測定します。PI プロセスの目標の 1 つは、製品チームとして、将来の成功の前兆となる先行指標を改善するための戦略的・運用的な改善に集中していることを確保することです。
 <!-- Our current PI for the Pipeline Security group is still to be determined. [View Sec Section performance indicators (internal handbook)](https://internal.gitlab.com/handbook/company/performance-indicators/product/sec-section/).-->
 
 ## チームメンバー
 
-以下の人々が Software Supply Chain Security:Pipeline Security グループの常任メンバーです:
+以下の人々が Software Supply Chain Security:Pipeline Security グループの常任メンバーです：
 
 {{< engineering/stable-counterparts role="Software Supply Chain Security:Pipeline Security" >}}
 
@@ -73,20 +73,20 @@ Secrets Manager グループは、[Security Platform ステージ](/handbook/eng
 
 #### 一般的な計画
 
-私たちのチームは、PM、EM、UX が協働して、少なくとも 3 マイルストーン分の作業を高レベルで計画する trio planning アプローチを使用しています。計画中、PM はチームの全体的な方向性を設定し、EM と協力して、チームの計画が野心的でありながらチームの capacity に基づいて達成可能であることを確保します。これにより、計画の議論中にチェックアンドバランスが確保され、繰り越しを最小限に抑え、ロードマップの機能優先事項とともにエンジニアリングの優先事項に対処することが確保されます。UX は PM と協力して、調査と設計の Issue が実装に間に合うように準備されることを確保します。計画は主にリリース計画 Issue（後述）を介して非同期で行われ、必要に応じて週次 1:1 セッションやチームミーティングで追加の議論を行います。この tripod アプローチにより、依存関係に早期に対処し、Design と Engineering が私たちの製品ロードマップで足並みを揃えることが確保されます。
+私たちのチームは、PM、EM、UX が協働して、少なくとも 3 マイルストーン分の作業を高レベルで計画する 3 者による計画アプローチを使用しています。計画中、PM はチームの全体的な方向性を設定し、EM と協力して、チームの計画が野心的でありながらチームのキャパシティに基づいて達成可能であることを確保します。これにより、計画の議論中にチェックアンドバランスが確保され、繰り越しを最小限に抑え、ロードマップの機能優先事項とともにエンジニアリングの優先事項に対処することが確保されます。UX は PM と協力して、調査と設計の Issue が実装に間に合うように準備されることを確保します。計画は主にリリース計画 Issue（後述）を介して非同期で行われ、必要に応じて週次 1:1 セッションやチームミーティングで追加の議論を行います。この 3 者体制により、依存関係に早期に対処し、Design と Engineering が私たちの製品ロードマップで足並みを揃えることが確保されます。
 
 #### リリース計画 Issue
 
-私たちは[リリース計画 Issue](https://gitlab.com/gitlab-org/ci-cd/pipeline-security-group/-/issues/new?issuable_template=ReleasePlan)を使って、各マイルストーンでのリリースレベルの優先事項を計画します。この Issue は、成果物、capacity、チームメンバーの休暇などを強調するために使用されます。これにより、チームメンバーとマネージャーは、各リリースで達成しようとしていることを高レベルで把握でき、情報を収集する中心的な場所として機能します。この計画 Issue はマイルストーンが始まると静的になり、マイルストーンへの変更（例: 開始後により高優先度の項目がマイルストーンに追加され、計画された Issue が削除される）を反映するために更新されないことに注意することが重要です。これにより、レトロスペクティブ Issue の一環として、ベースラインの計画と最終リリースを比較できます。
+私たちは[リリース計画 Issue](https://gitlab.com/gitlab-org/ci-cd/pipeline-security-group/-/issues/new?issuable_template=ReleasePlan)を使って、各マイルストーンでのリリースレベルの優先事項を計画します。この Issue は、成果物、キャパシティ、チームメンバーの休暇などを強調するために使用されます。これにより、チームメンバーとマネージャーは、各リリースで達成しようとしていることを高レベルで把握でき、情報を収集する中心的な場所として機能します。この計画 Issue はマイルストーンが始まると静的になり、マイルストーンへの変更（例： 開始後により高優先度の項目がマイルストーンに追加され、計画された Issue が削除される）を反映するために更新されないことに注意することが重要です。これにより、レトロスペクティブ Issue の一環として、ベースラインの計画と最終リリースを比較できます。
 
 #### Issue の重み付けと洗練
 
 Issue を `workflow::planning breakdown` ステータスから `workflow::ready for development` ステータスに移動できる前に、Issue に 0 より大きい重みが適用されていなければなりません。
 
-私たちは 2 ステップの見積もりプロセスを適用します:
+私たちは 2 ステップの見積もりプロセスを適用します：
 
-- Phase 1: 高レベル/ラフな見積もり。ここでの私たちの意図は、PM が capacity に応じて複数マイルストーン先に Issue をスケジュールできるようにすることであり、EM が Issue に高レベルの見積もり重みを追加します。その後、PM は Issue を特定のマイルストーンにスケジュールします。
-- Phase 2: 洗練/検証された見積もり。エンジニアは、Issue のスケジュールされたマイルストーンに先立つマイルストーンの最初の 2 週間に、見積もり重みを洗練・調整（必要であれば）するために割り当てられます。
+- フェーズ 1： 高レベル/ラフな見積もり。ここでの私たちの意図は、PM がキャパシティに応じて複数マイルストーン先に Issue をスケジュールできるようにすることであり、EM が Issue に高レベルの見積もり重みを追加します。その後、PM は Issue を特定のマイルストーンにスケジュールします。
+- フェーズ 2： 洗練/検証された見積もり。エンジニアは、Issue のスケジュールされたマイルストーンに先立つマイルストーンの最初の 2 週間に、見積もり重みを洗練・調整（必要であれば）するために割り当てられます。
 
 このフェーズ分けされたプロセスの意図は、アジャイルな計画を可能にし、各マイルストーンを通じて Issue を調査・洗練するために必要な頻繁なコンテキストスイッチの負担をエンジニアから減らすことです。さらに、これはグループの方向性についてチームに四半期ごとの先読みを提供します。
 
@@ -94,14 +94,14 @@ Issue を `workflow::planning breakdown` ステータスから `workflow::ready 
 
 #### Implementation テンプレート
 
-洗練プロセス（Phase 2）中、Issue は一貫性と明確さを確保するために [GitLab Implementation issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Implementation.md)を使用しなければなりません。このテンプレートは以下を強調します:
+洗練プロセス（フェーズ 2）中、Issue は一貫性と明確さを確保するために [GitLab Implementation issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Implementation.md)を使用しなければなりません。このテンプレートは以下を強調します：
 
-- **なぜこの作業を行うのか**: 解決される問題の明確な明示。「何を」と「なぜ」の両方を含む
-- **非機能要件**: 必要であれば、ドキュメント、フィーチャーフラグ、パフォーマンス、テストなどの項目に関する詳細
+- **なぜこの作業を行うのか**： 解決される問題の明確な明示。「何を」と「なぜ」の両方を含む
+- **非機能要件**： 必要であれば、ドキュメント、フィーチャーフラグ、パフォーマンス、テストなどの項目に関する詳細
 - **Implementation Plan**: 詳細な技術的アプローチと実装ステップ
 - **Verification Steps**: 実装を検証するための段階的な手順
 
-Issue を洗練する際、エンジニアは以下を行うべきです:
+Issue を洗練する際、エンジニアは以下を行うべきです：
 
 1. Issue の説明で Implementation テンプレートの構造を使う
 2. すべてのセクションが関連情報で完成していることを確保する
@@ -112,14 +112,14 @@ Issue を洗練する際、エンジニアは以下を行うべきです:
 
 #### Issue の重みシステム
 
-Issue の重みは、以下の基準における複雑さに基づいて決定されます:
+Issue の重みは、以下の基準における複雑さに基づいて決定されます：
 
 - コード変更 - 必要なコード変更を行うのはどれだけ難しいか?
 - 他チームとのやりとりと依存 - 他チームとのやりとりはどれだけ必要か?
-- 本番への道筋 - コード変更を安全に本番環境に投入するために何をする必要があるか（例: フィーチャーフラグ、後方互換性など）?
+- 本番への道筋 - コード変更を安全に本番環境に投入するために何をする必要があるか（例： フィーチャーフラグ、後方互換性など）?
 - パフォーマンスへの影響 - システムで高いパフォーマンスを維持するために何が必要か?
 
-これらの基準に基づき、Issue は以下の重みのいずれかを持てます:
+これらの基準に基づき、Issue は以下の重みのいずれかを持てます：
 
 | 重み | 説明  |
 | --- | --- |
@@ -149,7 +149,7 @@ SSOT を維持するため、デザインと開発には同じ Issue を使う�
 
 #### Issue の分割
 
-Issue が複数のコンポーネント（例: ~frontend、~backend、~documentation）を持つ場合、別々の実装 Issue に分割すべきです。これらの Issue を作成する際、Issue は `Frontend: [Issue title]` または `Backend: [Issue title]` というタイトルにし、一方が他方をブロックしている場合は `blocked by` とマークすべきです。元の Issue は機能に関するすべての議論を保持し、実装 Issue は行われた作業を追跡するために使われます。Issue を分割することで、いくつかのメリットがあります:
+Issue が複数のコンポーネント（例： ~frontend、~backend、~documentation）を持つ場合、別々の実装 Issue に分割すべきです。これらの Issue を作成する際、Issue は `Frontend: [Issue title]` または `Backend: [Issue title]` というタイトルにし、一方が他方をブロックしている場合は `blocked by` とマークすべきです。元の Issue は機能に関するすべての議論を保持し、実装 Issue は行われた作業を追跡するために使われます。Issue を分割することで、いくつかのメリットがあります：
 
 1. Issue ごとに DRI が 1 人だけになる。
 1. ワークフローラベルとヘルスステータスがより関連性を持つ。
@@ -169,23 +169,23 @@ Engineering Manager は、毎週エラーバジェットダッシュボードを
 
 #### 技術的負債と Deferred UX の優先順位付け {#prioritizing-technical-debt-and-deferred-ux}
 
-私たちは、技術的負債と Deferred UX の優先順位付けについて、[会社のガイダンス](/handbook/engineering/development/principles/#prioritizing-technical-decisions)と [Deferred UX](/handbook/product/ux/performance-indicators/#deferred-ux)の指針に従います。これを効果的に管理するため、私たちは、取り組む準備ができている技術的負債、Deferred UX、機能メンテナンスの Issue を「~workflow::scheduling」列で追跡することにしました。Product によって優先順位付けされますが、これらの Issue が私たちの将来のベロシティに与える影響によって情報が与えられます。私たちは、各マイルストーンで重みベースの capacity の一定の割合（約 30%）を、技術的負債と deferred UX の返済に充てるよう努めます。私たちはバグを負債とは見なさず、残りの重みベースの capacity の一環として優先順位付けします。
+私たちは、技術的負債と Deferred UX の優先順位付けについて、[会社のガイダンス](/handbook/engineering/development/principles/#prioritizing-technical-decisions)と [Deferred UX](/handbook/product/ux/performance-indicators/#deferred-ux)の指針に従います。これを効果的に管理するため、私たちは、取り組む準備ができている技術的負債、Deferred UX、機能メンテナンスの Issue を「~workflow::scheduling」列で追跡することにしました。Product によって優先順位付けされますが、これらの Issue が私たちの将来のベロシティに与える影響によって情報が与えられます。私たちは、各マイルストーンで重みベースのキャパシティの一定の割合（約 30%）を、技術的負債と deferred UX の返済に充てるよう努めます。私たちはバグを負債とは見なさず、残りの重みベースのキャパシティの一環として優先順位付けします。
 
 #### マイルストーンの成果物
 
-Engineering Manager は、以下の基準を満たす Issue に `Deliverable` ラベルを適用します:
+Engineering Manager は、以下の基準を満たす Issue に `Deliverable` ラベルを適用します：
 
 - ユーザーに見える価値を提供している
 - Issue ボードの上部近くにある（高優先度）
 - Issue がよく定義されている
 - UX DoD が適用されている
 - Issue が重み付けされている
-- Engineering Manager が、割り当てられたマイルストーンで作業を完了する capacity があると信じている
+- Engineering Manager が、割り当てられたマイルストーンで作業を完了するキャパシティがあると信じている
 - チームが Issue をマイルストーンに受け入れ、~"workflow::ready for development" ステータスに移動した
 
 #### 準備完了の定義 {#definition-of-ready}
 
-チームが作業のために Issue をマイルストーンに受け入れる前に、以下の基準を満たさなければなりません:
+チームが作業のために Issue をマイルストーンに受け入れる前に、以下の基準を満たさなければなりません：
 
 - ~"type::feature" とラベル付けされた Issue は、よく記述された「なぜ」と顧客の問題を含む
 - ~"type::bug" とラベル付けされた Issue は、再現手順を含む
@@ -213,7 +213,7 @@ Engineering Manager は、以下の基準を満たす Issue に `Deliverable` �
 
 Software Supply Chain Security:Pipeline Security のチームメンバーには、[私たちのマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/364216?label_name[]=group%3A%3Apipeline%20security&milestone_title=Started)で **_右から左へ_** 作業を探し始めることが奨励されています。これは _「右から引く（Pulling from the right）」_ としても知られています。チームメンバーがボード上で進められる Issue がある場合は、新しい作業を始める代わりにそれを行うべきです。これには、価値を加えて Issue をボード上で進められると感じる場合、チームメンバーが割り当てられていない Issue のコードレビューを行うことも含まれます。
 
-具体的には、順番に以下を意味します:
+具体的には、順番に以下を意味します：
 
 - コードが staging、canary、または production に到達したことの検証を行う
 - `workflow::in review` の Issue でコードレビューを行う
@@ -224,11 +224,11 @@ Software Supply Chain Security:Pipeline Security のチームメンバーには�
 
 ##### 取り上げる Deliverable Issue がもうない場合はどうするか?
 
-チームメンバーが「右から引ける」`Deliverable` Issue がもうない場合、チームメンバーは以下のいずれかを行えます:
+チームメンバーが「右から引ける」`Deliverable` Issue がもうない場合、チームメンバーは以下のいずれかを行えます：
 
 - `workflow::ready for development` と `SSCS::P2` ラベルの付いた Issue を引き受ける。
 - 今後のマイルストーンに備えるのを助けるため、`workflow::planning breakdown` と `needs weight` ラベルの付いた Issue を洗練する。
-- 興味のある技術的負債や手の届きやすい Issue に取り組む機会を持つ。これらの Issue は、成果物として計画されるほどの優先度がないことが多いため、エンジニアには capacity があるときにこれらの Issue にプロアクティブに取り組むことが奨励されます。
+- 興味のある技術的負債や手の届きやすい Issue に取り組む機会を持つ。これらの Issue は、成果物として計画されるほどの優先度がないことが多いため、エンジニアにはキャパシティがあるときにこれらの Issue にプロアクティブに取り組むことが奨励されます。
 
 ##### 優先順位
 
@@ -261,13 +261,13 @@ Software Supply Chain Security:Pipeline Security のチームメンバーには�
   - 項目をこのステータスに移動する場合は、Issue で、項目の停滞を解消して `On Track` ステータスに戻すのを助けられると思う個人をメンションしてください。
 - **At Risk** - 現在の状態の Issue は計画されたリリースに間に合わず、今日中に `On Track` に戻すために即座の対応が必要。
   - 項目をこのステータスに移動する場合は、Slack の [#g_pipeline-security](https://gitlab.slack.com/archives/CPANF553J) チャンネルに投稿することを検討してください。項目の停滞を解消して `On Track` ステータスに戻すためにできることがあれば、メッセージに含めるようにしてください。
-  - 注: 現在のマイルストーンで項目を軌道に戻すためにできることが何もない可能性があります。その場合は、それに気づき次第できるだけ早くマネージャーに知らせてください。
+  - 注： 現在のマイルストーンで項目を軌道に戻すためにできることが何もない可能性があります。その場合は、それに気づき次第できるだけ早くマネージャーに知らせてください。
 
 #### Issue の進捗アップデート {#issue-progress-updates}
 
 エンジニアが Issue に積極的に取り組んでいる（現在のマイルストーンで ~workflow::"In dev" 以降のワークフロー）か、割り当てられた Issue について共有すべき重要な詳細がある場合、彼らは週末の要約を提供するために、Issue にトップレベルのコメントとしてステータスアップデートを残します。
 
-ステータスコメントには以下を含めるべきです:
+ステータスコメントには以下を含めるべきです：
 
 - 更新されたヘルスステータス
 - ブロッカーがあれば
@@ -278,7 +278,7 @@ Software Supply Chain Security:Pipeline Security のチームメンバーには�
 
 複数の人が Issue に取り組んでいる場合は、これがフロントエンドかバックエンドのアップデートかも含めます。Issue に関連する各 MR のアップデートをアップデートコメントに含めるべきです。エンジニアはこのときに Issue の[ヘルスステータス](https://docs.gitlab.com/ee/user/project/issues/#health-status)も更新すべきです。
 
-このアップデートは特定の形式に従う必要はありません。形式のいくつかのアイデア:
+このアップデートは特定の形式に従う必要はありません。形式のいくつかのアイデア：
 
 ```text
 Health status: (On track|Needs attention|At risk)
@@ -302,7 +302,7 @@ What's left to be done:
 1. !MyMR3
 ```
 
-このアプローチにはいくつかのメリットがあります:
+このアプローチにはいくつかのメリットがあります：
 
 - チームメンバーが、Issue をボード上で進めるために何ができるかをより良く特定できる
 - アイデアがあれば他のエンジニアが関与して協働する機会を作る
@@ -311,7 +311,7 @@ What's left to be done:
 - レトロスペクションの場合に備えて、Issue が遭遇した障害の履歴がすぐに利用できる
 - 製品とエンジニアリングのマネージャーが作業の進捗をより簡単に把握できる
 
-いくつかのメモ/提案:
+いくつかのメモ/提案：
 
 - 特別な状況を除き、私たちは通常、エンジニアが週に少なくとも 1 回ステータスアップデートを残すことを期待します
 - 理想的には、混乱を最小限に抑えるため、ステータスアップデートはエンジニアのワークフローの論理的な部分で行われます
@@ -339,22 +339,22 @@ What's left to be done:
 
 #### カテゴリーラベル
 
-Pipeline Security グループは、以下に説明する製品マーケティングカテゴリーをサポートします:
+Pipeline Security グループは、以下に説明する製品マーケティングカテゴリーをサポートします：
 
 | ラベル                 | |  | | |
 | ----------------------| -------| ----|------------| ---|
-| `Category:Secrets Management` | [Issues](https://gitlab.com/groups/gitlab-org/-/issues?sort=created_date&state=opened&label_name[]=Category:Secrets+Management) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=Category%3ASecrets%20Management) | [Direction](https://about.gitlab.com/direction/software_supply_chain_security/pipeline_security/secrets_management/) | [Documentation](https://docs.gitlab.com/ee/ci/secrets/index.html) |
-| `Category:Artifact Security` | [Issues](https://gitlab.com/groups/gitlab-org/-/issues?sort=created_date&state=opened&label_name[]=Category:Secure+Artifacts) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=Category%3ASecure%20Artifacts) | [Direction](https://about.gitlab.com/direction/software_supply_chain_security/pipeline_security/artifact_security/) | Documentation - TBD |
+| `Category:Secrets Management` | [Issue](https://gitlab.com/groups/gitlab-org/-/issues?sort=created_date&state=opened&label_name[]=Category:Secrets+Management) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=Category%3ASecrets%20Management) | [方向性](https://about.gitlab.com/direction/software_supply_chain_security/pipeline_security/secrets_management/) | [ドキュメント](https://docs.gitlab.com/ee/ci/secrets/index.html) |
+| `Category:Artifact Security` | [Issue](https://gitlab.com/groups/gitlab-org/-/issues?sort=created_date&state=opened&label_name[]=Category:Secure+Artifacts) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=Category%3ASecure%20Artifacts) | [方向性](https://about.gitlab.com/direction/software_supply_chain_security/pipeline_security/artifact_security/) | ドキュメント - 未定 |
 
 #### 機能ラベル
 
 | ラベル                 | |  | 説明 |
 | ----------------------| -------| ----|------------|
-| `CI job token` | [Issues](https://gitlab.com/groups/gitlab-org/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=CI%20job%20token) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=CI%20job%20token) | Build 環境で利用可能な `CI_JOB_TOKEN` を取り巻く機能に関連する。 |
-| `secrets storage` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=popularity&state=opened&label_name%5B%5D=secrets%20storage) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=secrets%20storage) | Build 環境での、secrets storage プロバイダーとの統合を含む secrets manager の使用を取り巻く機能に関連する。 |
-| `external authentication` | [Issues](https://gitlab.com/groups/gitlab-org/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=external%20authentication) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=external%20authentication) | Build 環境で利用可能な外部認証用のトークンを取り巻く機能に関連する。 |
-| `SLSA` | [Issues](https://gitlab.com/groups/gitlab-org/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=SLSA) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=SLSA) | [Supply-chain Levels for Software Artifacts (SLSA)](https://slsa.dev/)の機能に関連する。 |
-| `ID tokens` | [Issues](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=popularity&state=opened&label_name%5B%5D=ID%20tokens) | [MRs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=ID%20tokens) | ID トークン（`id_token`）の使用を取り巻く機能に関連する。ID トークンは GitLab CI/CD ジョブに追加できる JSON Web Token（JWT）である。サードパーティサービスとの OIDC 認証に使用できる。 |
+| `CI job token` | [Issue](https://gitlab.com/groups/gitlab-org/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=CI%20job%20token) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=CI%20job%20token) | Build 環境で利用可能な `CI_JOB_TOKEN` を取り巻く機能に関連する。 |
+| `secrets storage` | [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=popularity&state=opened&label_name%5B%5D=secrets%20storage) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=secrets%20storage) | Build 環境での、シークレットストレージプロバイダーとの統合を含むシークレットマネージャーの使用を取り巻く機能に関連する。 |
+| `external authentication` | [Issue](https://gitlab.com/groups/gitlab-org/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=external%20authentication) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=external%20authentication) | Build 環境で利用可能な外部認証用のトークンを取り巻く機能に関連する。 |
+| `SLSA` | [Issue](https://gitlab.com/groups/gitlab-org/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=SLSA) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=SLSA) | [Supply-chain Levels for Software Artifacts (SLSA)](https://slsa.dev/)の機能に関連する。 |
+| `ID tokens` | [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=popularity&state=opened&label_name%5B%5D=ID%20tokens) | [MR](https://gitlab.com/gitlab-org/gitlab/-/merge_requests?scope=all&state=opened&label_name[]=ID%20tokens) | ID トークン（`id_token`）の使用を取り巻く機能に関連する。ID トークンは GitLab CI/CD ジョブに追加できる JSON Web Token（JWT）である。サードパーティサービスとの OIDC 認証に使用できる。 |
 
 ### ミーティング
 
@@ -364,7 +364,7 @@ Pipeline Security グループは、以下に説明する製品マーケティ�
 
 #### Async スタンドアップ
 
-私たちは非同期スタンドアップのために、Slack と統合された [geekbot](https://geekbot.com/) を使います。スタンドアップの目的は、各自が何に取り組んでいるかをチームに知らせ続け、ブロッカーを表面化させて取り除けるようにすることです。スタンドアップボットは火曜日と金曜日のチームメンバーの現地時間午前 10 時に実行され、3 つの質問をします:
+私たちは非同期スタンドアップのために、Slack と統合された [geekbot](https://geekbot.com/)を使います。スタンドアップの目的は、各自が何に取り組んでいるかをチームに知らせ続け、ブロッカーを表面化させて取り除けるようにすることです。スタンドアップボットは火曜日と金曜日のチームメンバーの現地時間午前 10 時に実行され、3 つの質問をします：
 
 1. 前回のアップデートから何をしましたか?
 2. 現在何に取り組んでいますか?

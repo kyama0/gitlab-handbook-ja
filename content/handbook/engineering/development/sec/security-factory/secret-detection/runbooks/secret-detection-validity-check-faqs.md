@@ -12,7 +12,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 このランブックを使用して、有効性チェック機能を理解し、よくある質問に答え、
 基本的な設定の問題をトラブルシューティングします。詳細なトラブルシューティングについては、
-[トラブルシューティングガイド](secret-detection-validity-check-troubleshooting) を参照してください。
+[トラブルシューティングガイド](secret-detection-validity-check-troubleshooting)を参照してください。
 
 ### 有効性チェックとは何ですか?
 
@@ -86,12 +86,12 @@ GitLab トークンは、レポートの取り込み中にデータベースク�
 - トークンの形式が無効
 - 予期しないレスポンス
 
-詳細については、[シークレット検出有効性チェックのトラブルシューティング](secret-detection-validity-check-troubleshooting) を参照してください。
+詳細については、[シークレット検出有効性チェックのトラブルシューティング](secret-detection-validity-check-troubleshooting)を参照してください。
 
 ## 問題の報告
 
 `#g_ast-secret-detection` Slack チャンネル、または
-[GitLab トラッカー](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name=group%3A%3Asecret%20detection) に Issue を登録してください。
+[GitLab トラッカー](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name=group%3A%3Asecret%20detection)に Issue を登録してください。
 
 ## 関連ドキュメント
 

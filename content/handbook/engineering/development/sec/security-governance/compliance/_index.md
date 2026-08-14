@@ -25,7 +25,7 @@ Compliance グループのミッションは、GitLab 内で組織のコンプ�
 - 高レベルの目標と方向性から、優先順位付けされたエピックのリストに絞り込み、[Tactical Priorities](https://about.gitlab.com/direction/software_supply_chain_security/compliance/tactical-priorities.html)で最新に保つよう努めています。
 - この優先順位付けされたリストは、各マイルストーンの計画時に使用します。各マイルストーンには、私たちの[計画エピック](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/compliance/-/epics/2)内に独自の Issue があります。
   - マイルストーンの計画へのインプットとして高レベルの目標と方向性を使うことに加えて、Compliance Product Manager は Sales、顧客、社内ステークホルダー（ドッグフーディング）からのインプットを考慮して、各マイルストーンに追加される Issue の優先順位を決定します。
-- 私たちはまた、グループ内の戦略的イニシアチブの優先順位付けを助けるために [OKR](/handbook/company/okrs/) を使います。計画には Issue を使い、それらを [OKR エピック](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/compliance/-/epics/4)にまとめます。
+- 私たちはまた、グループ内の戦略的イニシアチブの優先順位付けを助けるために [OKR](/handbook/company/okrs/)を使います。計画には Issue を使い、それらを [OKR エピック](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/compliance/-/epics/4)にまとめます。
 
 ## FY25 のトップ優先事項
 
@@ -51,7 +51,7 @@ Compliance グループのミッションは、GitLab 内で組織のコンプ�
 このグループはアプリケーションの[広範囲に影響を及ぼす](/handbook/engineering/devops/#reducing-the-impact-of-far-reaching-work)コンポーネントに取り組むため、本番インシデントのリスクを減らすために以下の追加ステップを取ります。
 
 1. チーム全体でより多くの組織的知識を構築するため、私たちはマージリクエストを最初のレビューのために別の Compliance チームメンバーに割り当てるよう努めます。
-1. Compliance 関連のマージリクエストは [Compliance Engineer](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/compliance/engineering/-/group_members?with_inherited_permissions=exclude) によるレビューを必要とします。これは GitLab の `CODEOWNERS` 機能を使ってガードされています。
+1. Compliance 関連のマージリクエストは [Compliance Engineer](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/compliance/engineering/-/group_members?with_inherited_permissions=exclude)によるレビューを必要とします。これは GitLab の `CODEOWNERS` 機能を使ってガードされています。
 
 #### フィーチャーフラグ
 
@@ -110,8 +110,8 @@ Compliance グループのミッションは、GitLab 内で組織のコンプ�
 
 GitLab の誰もが、[私たちは活動ではなくインパクトを測定する](/handbook/values/#measure-impact-not-activity)ため、自分が適切と考えるように自分の作業を管理する自由があります。この一部は、通常の月次リリースの一環としてスケジュールされていない項目に取り組む機会です。これはほとんどハンドブック内の他の場所にある項目の繰り返しであり、それらを明示するためにここにあります。
 
-1. 私たちは人々が [managers of one](/handbook/values/#managers-of-one) であり、[GitLab を私たち自身で使う](/handbook/values/#dogfooding)ことを期待しています。重要だと思うものを見かけたら、それをスケジュールするようリクエストするか、_他の優先事項を念頭に置いている限り_、[自分で提案に取り組めます](/handbook/values/#dont-wait)。
-1. 時折、[issue bash](https://about.gitlab.com/community/issue-bash/) のような、GitLab のチームメンバーが参加できるイベントがあります。誰でもこれらに参加することを歓迎します。
+1. 私たちは人々が [managers of one](/handbook/values/#managers-of-one)であり、[GitLab を私たち自身で使う](/handbook/values/#dogfooding)ことを期待しています。重要だと思うものを見かけたら、それをスケジュールするようリクエストするか、_他の優先事項を念頭に置いている限り_、[自分で提案に取り組めます](/handbook/values/#dont-wait)。
+1. 時折、[issue bash](https://about.gitlab.com/community/issue-bash/)のような、GitLab のチームメンバーが参加できるイベントがあります。誰でもこれらに参加することを歓迎します。
 
 何かに取り組むことを選んだら、以下を行ってください。
 
@@ -207,10 +207,10 @@ GitLab の誰もが、[私たちは活動ではなくインパクトを測定す
 
 一般的に言えば、Issue は 2 つの状態のいずれかにあります。
 
-- ディスカバリー/リファインメント（1〜4）：開発を開始するのを妨げる質問にまだ答えている。
-- 実装（6〜9）：Issue がエンジニアの作業を待っているか、積極的に構築されている。
+- ディスカバリー/リファインメント（1 〜 4）：開発を開始するのを妨げる質問にまだ答えている。
+- 実装（6 〜 9）：Issue がエンジニアの作業を待っているか、積極的に構築されている。
 
-個々のグループは [Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/#workflow-summary)ワークフローの有用と感じる段階を自由に使えますが、Issue がディスカバリー/リファインメントから実装にどう移行するかについては、ある程度規範的であるべきです。
+個々のグループは [Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/#workflow-summary) ワークフローの有用と感じる段階を自由に使えますが、Issue がディスカバリー/リファインメントから実装にどう移行するかについては、ある程度規範的であるべきです。
 
 ### ディスカバリー/リファインメント {#discoveryrefinement}
 
@@ -251,15 +251,15 @@ Issue の作業を開始できる前に、予備調査の後にまずそれを�
 | 8 | コードベースの多くに関わるか、要件を決定するために他者からの多くのインプットを必要とする複雑な変更。これらの Issue は、`workflow::ready for development` になる前にさらなる調査や発見を必要とすることが多く、複数のより小さな Issue から恩恵を受ける可能性が高い。 |
 | 13 | 依存関係（他のチームやサードパーティ）を持つ可能性があり、おそらくまだすべての要件を理解していない重大な変更。これをマイルストーンにコミットすることはまずなく、要件をさらに明確にする、および/またはより小さな Issue に分解することが望ましい。 |
 
-見積もりの一環として、Issue がエンジニアが取り組みを開始するのに適切な状態にあると感じる場合は、`workflow::ready for development` ラベルを追加してください。あるいは、定義すべき要件や、エンジニアが簡単に解決できないと感じる答えるべき質問がまだある場合は、`workflow::blocked` ラベルを追加してください。`workflow::blocked` ラベルの付いた Issue は、私たちの計画ボード上の独自の列に表示され、さらなる注意が必要であることを明確にします。`workflow::blocked` ラベルを適用する際は、ブロックされた Issue にコメントを残して [DRI](/handbook/people-group/directly-responsible-individuals/) をピングする、および/または可視性を高めるためにブロックしている Issue をリンクするよう必ずしてください。
+見積もりの一環として、Issue がエンジニアが取り組みを開始するのに適切な状態にあると感じる場合は、`workflow::ready for development` ラベルを追加してください。あるいは、定義すべき要件や、エンジニアが簡単に解決できないと感じる答えるべき質問がまだある場合は、`workflow::blocked` ラベルを追加してください。`workflow::blocked` ラベルの付いた Issue は、私たちの計画ボード上の独自の列に表示され、さらなる注意が必要であることを明確にします。`workflow::blocked` ラベルを適用する際は、ブロックされた Issue にコメントを残して [DRI](/handbook/people-group/directly-responsible-individuals/)をピングする、および/または可視性を高めるためにブロックしている Issue をリンクするよう必ずしてください。
 
 #### 実装計画 {#implementation-plan}
 
 エンジニアにとっては、Issue を `~workflow::planning breakdown` から移動させる際に実装アプローチを作成したいかもしれません。提案された実装アプローチに従うことは必須ではありませんが、記録された重みを正当化するのに役立ちます。
 
-`workflow::planning breakdown` の [DRI](/handbook/people-group/directly-responsible-individuals/) として、あなたの担当の終わりと、Issue がスケジューリングに移行する準備ができていることを示すために、以下の例に従うことを検討してください。すでに分解されたより単純な Issue はより短い形式を使えるかもしれませんが、プランは（最低限）常に見積もりの背後にある「なぜ」を正当化すべきです。
+`workflow::planning breakdown` の [DRI](/handbook/people-group/directly-responsible-individuals/)として、あなたの担当の終わりと、Issue がスケジューリングに移行する準備ができていることを示すために、以下の例に従うことを検討してください。すでに分解されたより単純な Issue はより短い形式を使えるかもしれませんが、プランは（最低限）常に見積もりの背後にある「なぜ」を正当化すべきです。
 
-以下は [https://gitlab.com/gitlab-org/gitlab/-/issues/247900#implementation-plan](https://gitlab.com/gitlab-org/gitlab/-/issues/247900#implementation-plan) からの実装アプローチの例です。Issue が作業の各部分のためにより小さなサブ Issue に分解されるべきであることを示しています。
+以下は [https://gitlab.com/gitlab-org/gitlab/-/issues/247900#implementation-plan](https://gitlab.com/gitlab-org/gitlab/-/issues/247900#implementation-plan)からの実装アプローチの例です。Issue が作業の各部分のためにより小さなサブ Issue に分解されるべきであることを示しています。
 
 ```md
 ### Implementation approach
@@ -300,7 +300,7 @@ Issue の作業を開始できる前に、予備調査の後にまずそれを�
 
 ```
 
-[DRI](/handbook/people-group/directly-responsible-individuals/) は、Issue を `workflow::scheduling` に移動させる前に、関連するカウンターパート（Quality、UX など）とドメインエキスパート（データベース、バックエンド、フロントエンド）に連絡します。これにより、作業が始まる前に、ドメインエキスパートが実装プランを承認したり、潜在的な落とし穴や懸念を提起したりする機会が得られます。
+[DRI](/handbook/people-group/directly-responsible-individuals/)は、Issue を `workflow::scheduling` に移動させる前に、関連するカウンターパート（Quality、UX など）とドメインエキスパート（データベース、バックエンド、フロントエンド）に連絡します。これにより、作業が始まる前に、ドメインエキスパートが実装プランを承認したり、潜在的な落とし穴や懸念を提起したりする機会が得られます。
 開発実装プランのドメインエキスパートレビューについて、些細な変更の場合は、関連する compliance 開発チームメンバーの誰からでも承認を求められます。トピックに関するコンテキストを持つ人を見つけるよう努めてください。些細でない変更の場合は、Issue のコメントで該当グループ（`@gitlab-org/software-supply-chain-security/compliance/engineering`）をタグ付けして、関連する compliance バックエンドまたはフロントエンド、あるいはその両方のチームメンバー全員から意見を求めるべきです。実装が些細か些細でないかの判断は、DRI と最初にレビューを依頼されたドメインエキスパートの裁量によります。
 
 Issue が見積もられたら、`workflow::scheduling` に移動してマイルストーンを割り当て、最終的に `workflow::ready for development` にできます。
@@ -350,8 +350,8 @@ Issue の検証は、Issue の担当者以外の誰かによって行われる�
 
 `workflow::verification` プロセス中に、Issue がデモを必要とするかどうかを判断します。不明な場合は、PM と協力してデモが必要かどうかを判断します。デモは進捗を披露するのに最適で、ユーザーが機能の使い方とそのメリットをすばやく理解するのに役立ちます。これに対する私たちのプロセスは [Single Engineer Groups Demo](/handbook/engineering/workflow/demos/#single-engineer-groups-demo)に似ています。
 
-- コンピューター上で、または Zoom ライブストリームを介して、動作するソフトウェアの動画を録画します。デモの録画には [loom](/handbook/tools-and-tips/other-apps/#loom) も使えます。
-- [GitLab Unfiltered Channel](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A) にアップロードし、[Compliance Group - Product Playlist](https://www.youtube.com/playlist?list=PL05JrBw4t0KqWds1BN41IJxLd1AvpZxGu)に追加します
+- コンピューター上で、または Zoom ライブストリームを介して、動作するソフトウェアの動画を録画します。デモの録画には [loom](/handbook/tools-and-tips/other-apps/#loom)も使えます。
+- [GitLab Unfiltered Channel](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A)にアップロードし、[Compliance Group - Product Playlist](https://www.youtube.com/playlist?list=PL05JrBw4t0KqWds1BN41IJxLd1AvpZxGu)に追加します
 - YouTube リンクを適切な Slack チャンネルと Issue に投稿します
 
 ### リリース記事
@@ -368,7 +368,7 @@ Issue にリリース記事を持たせたくない場合は、Issue にリリ�
 | 頻度 | ミーティング                              | DRI         | 可能なトピック                                                                                        |
 |-----------|--------------------------------------|-------------|--------------------------------------------------------------------------------------------------------|
 | 週次（APAC/EMEA と AMER で交互）    | Group-level meeting                  | Engineering Manager | ボードを見ながら現在のリリースが順調かを確認し、特定の Issue のブロックを解除する                       |
-| 月次   | Planning meeting                    | Product Manager         | [Planning](#milestone-planning)セクションを参照 |
+| 月次   | Planning meeting                    | Product Manager         | [Planning](#milestone-planning) セクションを参照 |
 
 一回限りのトピック固有のミーティングについては、常にこれらのコールを録画して共有する（または公開されているドキュメントにメモを取る）ことを検討してください。
 
@@ -384,7 +384,7 @@ Issue にリリース記事を持たせたくない場合は、Issue にリリ�
 
 ## グループ共有カレンダー
 
-[Compliance Group Shared Calendar](https://calendar.google.com/calendar/embed?src=c_e21c4d99155603fa2f3b06f41628bebfe6013218000c822ec2fdfe7ed877d3e1%40group.calendar.google.com) は、PTO イベントがチーム全員に見えるようにするために使用されます。
+[Compliance Group Shared Calendar](https://calendar.google.com/calendar/embed?src=c_e21c4d99155603fa2f3b06f41628bebfe6013218000c822ec2fdfe7ed877d3e1%40group.calendar.google.com)は、PTO イベントがチーム全員に見えるようにするために使用されます。
 
 ### Time Off by Deel のエントリを共有カレンダーに同期する
 

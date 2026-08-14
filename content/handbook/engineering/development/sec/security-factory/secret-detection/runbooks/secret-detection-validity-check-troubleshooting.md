@@ -14,14 +14,14 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 ## モニタリング
 
-[有効性チェックモニタリング](secret-detection-validity-check-monitoring) は、信頼性の問題を特定するための推奨ダッシュボードです。
-[Sidekiq ダッシュボード](https://dashboards.gitlab.net/d/sidekiq-workers) を補助として使用できます。[ランブック](https://gitlab.com/gitlab-com/runbooks/-/tree/master/docs/sidekiq) を参照してください。
+[有効性チェックモニタリング](secret-detection-validity-check-monitoring)は、信頼性の問題を特定するための推奨ダッシュボードです。
+[Sidekiq ダッシュボード](https://dashboards.gitlab.net/d/sidekiq-workers)を補助として使用できます。[ランブック](https://gitlab.com/gitlab-com/runbooks/-/tree/master/docs/sidekiq)を参照してください。
 
 ## パートナー API の高エラー率 {#partner-api-high-error-rate}
 
 ### 症状
 
-[ダッシュボード](https://dashboards.gitlab.net/d/secret-detection-sd-partner-token-verify/93b6ec2) でエラー率が 10% を超えている
+[ダッシュボード](https://dashboards.gitlab.net/d/secret-detection-sd-partner-token-verify/93b6ec2)でエラー率が 10% を超えている
 （アラート：`SecretDetectionPartnerAPIHighErrorRate`）。
 
 ### 調査

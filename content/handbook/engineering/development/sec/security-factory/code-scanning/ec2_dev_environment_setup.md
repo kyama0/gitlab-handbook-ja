@@ -10,7 +10,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 ## Static Analysis グループ EC2 開発マシンセットアップガイド
 
-[Semgrep を含む](https://github.com/semgrep/semgrep/issues/2252) 一部の SAST アナライザーは、ARM64 がサポートされていないため M1 Mac では動作しません。
+[Semgrep を含む](https://github.com/semgrep/semgrep/issues/2252)一部の SAST アナライザーは、ARM64 がサポートされていないため M1 Mac では動作しません。
 
 この問題を回避するために、SAST 開発者イメージが EC2 AMI カタログに追加され、SAST コントリビューターが開発環境で SAST アナライザーを実行できるように `arn:aws:organizations::663740273027:organization/o-qjrbh9ll6x` サンドボックス組織と共有されています。イメージをセットアップするには：
 

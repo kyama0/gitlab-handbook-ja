@@ -1,6 +1,6 @@
 ---
-title: "JiHuサポート"
-description: "GitLab IncチームがJiHuにサポートを提供する方法"
+title: "JiHu サポート"
+description: "GitLab Inc チームが JiHu にサポートを提供する方法"
 upstream_path: /handbook/finance/jihu-support/
 upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
 translated_at: "2026-08-14T06:13:39+09:00"
@@ -11,19 +11,19 @@ lastmod: "2026-08-13T13:58:02-04:00"
 
 ## 概要
 
-ブログ記事 [GitLab licensed its technology to new independent Chinese company](https://about.gitlab.com/blog/2021/03/18/gitlab-licensed-technology-to-new-independent-chinese-company/) で発表したように、GitLab Inc. は技術をJiHuにライセンス供与しました。このページでは、GitLab Inc. チームがJiHuにサポートを提供する方法について説明します。
+ブログ記事 [GitLab licensed its technology to new independent Chinese company](https://about.gitlab.com/blog/2021/03/18/gitlab-licensed-technology-to-new-independent-chinese-company/)で発表したように、GitLab Inc. は技術を JiHu にライセンス供与しました。このページでは、GitLab Inc. チームが JiHu にサポートを提供する方法について説明します。
 
 ## ブランド
 
-[ガイドライン](https://docs.google.com/document/d/1oJd_3SMHlTod6j3ThqhjpeCyyw8rqBM4WUeOfy7vYKs/edit?usp=sharing) を参照してください。
+[ガイドライン](https://docs.google.com/document/d/1oJd_3SMHlTod6j3ThqhjpeCyyw8rqBM4WUeOfy7vYKs/edit?usp=sharing)を参照してください。
 
 ## コミュニケーション
 
-[ガイドライン](https://docs.google.com/document/d/1SEBkJp0R-yjN654KTJjcSI55VGwWPHN2xTKLW5FNvUM/edit?usp=sharing) を参照してください。GitLabチームメンバーに送られる `gitlab-jh.slack.com` Slackサーバーへの招待は正規のものです。このサーバーはGitLab Inc. とJiHu間のコミュニケーションに使用されます。
+[ガイドライン](https://docs.google.com/document/d/1SEBkJp0R-yjN654KTJjcSI55VGwWPHN2xTKLW5FNvUM/edit?usp=sharing)を参照してください。GitLab チームメンバーに送られる `gitlab-jh.slack.com` Slack サーバーへの招待は正規のものです。このサーバーは GitLab Inc. と JiHu 間のコミュニケーションに使用されます。
 
 ## セールス
 
-[ガイドライン](https://docs.google.com/document/d/1JigQn7g8KUrY8N6WHuf248ARWHzCpIGhE2yXriuhI5c/edit?usp=sharing) を参照してください。
+[ガイドライン](https://docs.google.com/document/d/1JigQn7g8KUrY8N6WHuf248ARWHzCpIGhE2yXriuhI5c/edit?usp=sharing)を参照してください。
 
 ## GitLab の窓口
 
@@ -31,17 +31,17 @@ lastmod: "2026-08-13T13:58:02-04:00"
 | --- | --- | --- |
 | Elle Shutty | Senior TPM | R&D DRI |
 
-### JiHuエンジニアリングのコンタクト
+### JiHu エンジニアリングのコンタクト
 
-[Shiyuan Chen](https://gitlab.com/shreychen) はGitLab Inc. に対するJiHuエンジニアリングの窓口です。
+[Shiyuan Chen](https://gitlab.com/shreychen)は GitLab Inc. に対する JiHu エンジニアリングの窓口です。
 
 ### プロジェクト
 
-JiHuチームのプロジェクトは <https://jihulab.com/gitlab-cn/> に配置されています。`gitlab-org` のツーリングおよびコンプライアンスチェック用のミラープロジェクトは <https://gitlab.com/gitlab-org/gitlab-jh-mirrors/> で利用可能です。
+JiHu チームのプロジェクトは <https://jihulab.com/gitlab-cn/> に配置されています。`gitlab-org` のツーリングおよびコンプライアンスチェック用のミラープロジェクトは <https://gitlab.com/gitlab-org/gitlab-jh-mirrors/> で利用可能です。
 
-JiHuプロジェクトのほとんどはJiHuLab.com に移動されましたが、一部のプロジェクトはまだ [gitlab-jh](https://gitlab.com/gitlab-jh/) グループの下にあります。
+JiHu プロジェクトのほとんどは JiHuLab.com に移動されましたが、一部のプロジェクトはまだ [gitlab-jh](https://gitlab.com/gitlab-jh/) グループの下にあります。
 
-| GitLab Incプロジェクト                                  | JiHuプロジェクト                                           |
+| GitLab Inc プロジェクト                                  | JiHu プロジェクト                                           |
 |---------------------------------------------------------|------------------------------------------------------------|
 | <https://gitlab.com/gitlab-org/gitlab>                    | <https://jihulab.com/gitlab-cn/gitlab>                       |
 | <https://gitlab.com/gitlab-org/license-gitlab-com>        | <https://gitlab.com/gitlab-jh/license-gitlab-cn> (private)   |
@@ -58,120 +58,120 @@ JiHuプロジェクトのほとんどはJiHuLab.com に移動されましたが�
 | <https://gitlab.com/gitlab-org/gitlab-svgs>             | <https://jihulab.com/gitlab-cn/gitlab-svgs> |
 | <https://gitlab.com/gitlab-org/gitlab-qa> | <https://jihulab.com/gitlab-cn/gitlab-qa> |
 
-### JiHuコントリビューションプロセス
+### JiHu コントリビューションプロセス
 
-詳細は [JiHuコントリビューションプロセス](/handbook/finance/jihu-support/jihu-contribution-process/) を参照してください。
+詳細は [JiHu コントリビューションプロセス](/handbook/finance/jihu-support/jihu-contribution-process/)を参照してください。
 
-### JiHu mainブランチが壊れた場合の解決プロセス
+### JiHu main ブランチが壊れた場合の解決プロセス
 
-[`main-jh` ブランチ](https://jihulab.com/gitlab-cn/gitlab) が壊れていて、アップストリームのマージリクエストによる解決が必要になる場合があります。これが発生した場合、JiHuアップストリームMR作成から2営業日以内にタイムリーに解決するために、以下のプロセスが実施されます。
+[`main-jh` ブランチ](https://jihulab.com/gitlab-cn/gitlab)が壊れていて、アップストリームのマージリクエストによる解決が必要になる場合があります。これが発生した場合、JiHu アップストリーム MR 作成から 2 営業日以内にタイムリーに解決するために、以下のプロセスが実施されます。
 
-1. JiHuチームが解決策を含むアップストリームMRをオープンする
-1. JiHuエンジニアリングDRIが [#main-jh-broken](https://gitlab-jh.slack.com/archives/C026EBMTRRB) でメッセージを投稿し、GitLabのメンテナーにMRがエスカレーションされたことを通知する
-1. GitLabファシリテーターがマージリクエストに `~"JiHu Broken Pipeline"` ラベルを適用し、適切なドメイン（バックエンド、フロントエンド）からのレビューを依頼する
-1. GitLabファシリテーターが #jihu-engineering チャンネルでGitLab Incのチームメンバーに通知する
-1. JiHuがMRと失敗の根本原因を <https://gitlab.com/gitlab-jh/gitlab-jh-enablement/-/issues/215> に追加する
+1. JiHu チームが解決策を含むアップストリーム MR をオープンする
+1. JiHu エンジニアリング DRI が [#main-jh-broken](https://gitlab-jh.slack.com/archives/C026EBMTRRB)でメッセージを投稿し、GitLab のメンテナーに MR がエスカレーションされたことを通知する
+1. GitLab ファシリテーターがマージリクエストに `~"JiHu Broken Pipeline"` ラベルを適用し、適切なドメイン（バックエンド、フロントエンド）からのレビューを依頼する
+1. GitLab ファシリテーターが #jihu-engineering チャンネルで GitLab Inc のチームメンバーに通知する
+1. JiHu が MR と失敗の根本原因を <https://gitlab.com/gitlab-jh/gitlab-jh-enablement/-/issues/215> に追加する
 
-### JiHu検証パイプラインが壊れたマージリクエスト
+### JiHu 検証パイプラインが壊れたマージリクエスト
 
-詳細は [検証パイプラインが失敗したときの対処方法](/handbook/finance/jihu-support/jihu-validation-pipelines/#what-to-do-when-the-validation-pipeline-failed) を確認してください。
+詳細は[検証パイプラインが失敗したときの対処方法](/handbook/finance/jihu-support/jihu-validation-pipelines/#what-to-do-when-the-validation-pipeline-failed)を確認してください。
 
 ### セキュリティリリースプロセス
 
-JiHuは、すべてのパッチおよびセキュリティリリースを含め、毎月JiHu Editionをビルドおよびリリースする責任があります。セキュリティリリースについて、GitLab Inc. は引き続き既存の [セキュリティリリースプロセス](https://gitlab.com/gitlab-org/release/docs/blob/master/general/security/process.md) に従って [セキュリティリリース](https://about.gitlab.com/releases/categories/releases/) を公開します。JiHuがタイムリーにセキュリティリリースをビルドできるように、GitLab Inc. はセキュリティリリースが進行中の場合にJiHuに通知し、彼らのチームが待機できるようにします。GitLab Inc. はセキュリティリリースの内容や脆弱性の内容をJiHuに通知することはありません。
+JiHu は、すべてのパッチおよびセキュリティリリースを含め、毎月 JiHu Edition をビルドおよびリリースする責任があります。セキュリティリリースについて、GitLab Inc. は引き続き既存の[セキュリティリリースプロセス](https://gitlab.com/gitlab-org/release/docs/blob/master/general/security/process.md)に従って[セキュリティリリース](https://about.gitlab.com/releases/categories/releases/)を公開します。JiHu がタイムリーにセキュリティリリースをビルドできるように、GitLab Inc. はセキュリティリリースが進行中の場合に JiHu に通知し、彼らのチームが待機できるようにします。GitLab Inc. はセキュリティリリースの内容や脆弱性の内容を JiHu に通知することはありません。
 
-今後のセキュリティリリースをJiHuに通知するには、次の場所にコメントを投稿してください: https://gitlab.com/gitlab-jh/gitlab-jh-enablement/-/issues/112
+今後のセキュリティリリースを JiHu に通知するには、次の場所にコメントを投稿してください： https://gitlab.com/gitlab-jh/gitlab-jh-enablement/-/issues/112
 
 ### 脆弱性開示プロセス
 
-GitLab Inc. は [文書化された脆弱性開示プロセス](https://about.gitlab.com/security/disclosure/#vulnerability-disclosure) に従い、脆弱性に関する詳細情報をJiHuに直接提供することはありません。進行中のセキュリティリリースの前または最中に情報が共有されることはありません。
+GitLab Inc. は[文書化された脆弱性開示プロセス](https://about.gitlab.com/security/disclosure/#vulnerability-disclosure)に従い、脆弱性に関する詳細情報を JiHu に直接提供することはありません。進行中のセキュリティリリースの前または最中に情報が共有されることはありません。
 
-GitLabの [セキュリティリリース](https://gitlab.com/gitlab-com/gl-infra/readiness/-/tree/master/library/security-releases-development) の後にのみ、GitLab Inc. はJiHuに以下を提供することがあります:
+GitLab の[セキュリティリリース](https://gitlab.com/gitlab-com/gl-infra/readiness/-/tree/master/library/security-releases-development)の後にのみ、GitLab Inc. は JiHu に以下を提供することがあります：
 
 - 公開されたセキュリティリリースブログ記事へのリンク
-- 脆弱性を説明するGitLab Issueへのリンク。これは脆弱性が修正されたリリースから30日後まで非公開のままになります
+- 脆弱性を説明する GitLab Issue へのリンク。これは脆弱性が修正されたリリースから 30 日後まで非公開のままになります
 
-この情報はSlackとJiHuとの週次エンジニアリング同期会議を通じて伝達されます。
+この情報は Slack と JiHu との週次エンジニアリング同期会議を通じて伝達されます。
 
-JiHuのコントリビューションによって導入されたセキュリティ脆弱性については、GitLab Application Securityチームが、脆弱性の詳細や脆弱性の詳細の発見につながる可能性のある情報を開示しない限り、緩和手順を共有します。
+JiHu のコントリビューションによって導入されたセキュリティ脆弱性については、GitLab Application Security チームが、脆弱性の詳細や脆弱性の詳細の発見につながる可能性のある情報を開示しない限り、緩和手順を共有します。
 
-- そのような緩和手順が存在する場合、GitLab Application SecurityチームはJiHu enablementプロジェクトに緩和手順を含む機密Issueを作成してJiHuに通知します
-- 緩和手順が存在しない場合、脆弱性はGitLabの通常のセキュリティ脆弱性開示プロセスに従って開示されます
+- そのような緩和手順が存在する場合、GitLab Application Security チームは JiHu enablement プロジェクトに緩和手順を含む機密 Issue を作成して JiHu に通知します
+- 緩和手順が存在しない場合、脆弱性は GitLab の通常のセキュリティ脆弱性開示プロセスに従って開示されます
 
 ### セキュリティのベストプラクティス
 
-GitLabはJiHuとセキュリティのベストプラクティスを共有することができます。これには、GitLab、JiHu、およびそれらの顧客を安全に保つことを目的として、多層防御策、ハードニング手法、その他の情報が含まれる場合があります。ただし、未修正の脆弱性または進行中のインシデントに関する情報を公開する可能性のある脆弱性の詳細や特定の修復策は含まれません。
+GitLab は JiHu とセキュリティのベストプラクティスを共有することができます。これには、GitLab、JiHu、およびそれらの顧客を安全に保つことを目的として、多層防御策、ハードニング手法、その他の情報が含まれる場合があります。ただし、未修正の脆弱性または進行中のインシデントに関する情報を公開する可能性のある脆弱性の詳細や特定の修復策は含まれません。
 
 ### コンサルティングプロセス
 
-JiHuはGitLabの専門知識、特にGitLabをSaaS製品として運用することに関する専門知識から恩恵を受けています。GitLabは、Slackでの簡単な対応を超えるエンゲージメントを必要とする項目についてJiHuにコンサルティング料金を請求することがあります。これにより、GitLabは予定外の作業から自分を守りつつ、JiHuがドメイン専門性を構築できるようにします。これは [JiHuとのテクニカルサービス契約 - 社内](https://drive.google.com/file/d/19HXz1xxCS-BlDwMFUquw1Vl06SQ16Mgc/view) でも合意されています。
+JiHu は GitLab の専門知識、特に GitLab を SaaS 製品として運用することに関する専門知識から恩恵を受けています。GitLab は、Slack での簡単な対応を超えるエンゲージメントを必要とする項目について JiHu にコンサルティング料金を請求することがあります。これにより、GitLab は予定外の作業から自分を守りつつ、JiHu がドメイン専門性を構築できるようにします。これは [JiHu とのテクニカルサービス契約 - 社内](https://drive.google.com/file/d/19HXz1xxCS-BlDwMFUquw1Vl06SQ16Mgc/view)でも合意されています。
 
 #### コンサルティングの対象外のトピック
 
-- MRのレビュー
+- MR のレビュー
 - ロードマップの調整
 - マネジメントの協業
 
 ## プロダクト
 
-### プロダクトDRIの役割
+### プロダクト DRI の役割
 
-プロダクトDRIは以下の責任を負います:
+プロダクト DRI は以下の責任を負います：
 
-- JiHuのCTOおよびプロダクトカウンターパートにプロダクトマネジメント実践のガイダンスを提供する
-- GitLabプロダクトとJiHuプロダクトのアライメントを可能にする
-  - 定期的に最新情報を提供し、GitLabの投資テーマとロードマップへの認識を高める
-  - JiHuの計画とロードマップを適切な関係者に広める
-- プロダクトデータについてJiHu CTOと連絡を取り合う
-- JiHuまたは中国関連の要件に関連するソリューションを実装するために、ステージグループと協力する
-- エンジニアリングDRIおよびエンジニアリングファシリテーターと連携し、GitLabとJiHuの間の円滑な機能を確保するためのプロセスを定義および維持する
+- JiHu の CTO およびプロダクトカウンターパートにプロダクトマネジメント実践のガイダンスを提供する
+- GitLab プロダクトと JiHu プロダクトのアライメントを可能にする
+  - 定期的に最新情報を提供し、GitLab の投資テーマとロードマップへの認識を高める
+  - JiHu の計画とロードマップを適切な関係者に広める
+- プロダクトデータについて JiHu CTO と連絡を取り合う
+- JiHu または中国関連の要件に関連するソリューションを実装するために、ステージグループと協力する
+- エンジニアリング DRI およびエンジニアリングファシリテーターと連携し、GitLab と JiHu の間の円滑な機能を確保するためのプロセスを定義および維持する
 
 ### プロダクトマネージャーの責任
 
-JiHuのコントリビューションは、コミュニティコントリビューションと類似しています。違いは、ボリュームと頻度が高いことです。JiHuがGitLabコードベースに習熟するにつれて、彼らはGitLabにどこでどのようにコントリビュートできるかを理解し学ぼうとしています。プロダクトマネージャーは、公開されている方向性を共有し、JiHuチームと連携してJiHuが自給自足で効率的になれるよう支援できます。
+JiHu のコントリビューションは、コミュニティコントリビューションと類似しています。違いは、ボリュームと頻度が高いことです。JiHu が GitLab コードベースに習熟するにつれて、彼らは GitLab にどこでどのようにコントリビュートできるかを理解し学ぼうとしています。プロダクトマネージャーは、公開されている方向性を共有し、JiHu チームと連携して JiHu が自給自足で効率的になれるよう支援できます。
 
-時々、プロダクトマネージャーはJiHuからの具体的な提案に対するフィードバックを提供したり、直接対応したりするように求められます。GitLabのPMはGitLabのエンジニアとJiHuチームのコラボレーションを促進する支援を行うべきです。これは、プロダクトの方向性に不一致がある場合は、JiHuがGitLabがマージするつもりのないものに時間を費やすことのないように、早期に指摘することを意味します。
+時々、プロダクトマネージャーは JiHu からの具体的な提案に対するフィードバックを提供したり、直接対応したりするように求められます。GitLab の PM は GitLab のエンジニアと JiHu チームのコラボレーションを促進する支援を行うべきです。これは、プロダクトの方向性に不一致がある場合は、JiHu が GitLab がマージするつもりのないものに時間を費やすことのないように、早期に指摘することを意味します。
 
-プロダクトマネージャーがJiHuのカウンターパートとの接続にヘルプを必要とする場合は、[#jihu-product](https://gitlab.slack.com/archives/C01S8CFF7HR) でプロダクトDRIにメンションしてください。
+プロダクトマネージャーが JiHu のカウンターパートとの接続にヘルプを必要とする場合は、[#jihu-product](https://gitlab.slack.com/archives/C01S8CFF7HR)でプロダクト DRI にメンションしてください。
 
 ### プロダクトデザイナーの責任
 
-GitLabのプロダクトデザイナーは、レビューとガイダンスの責任を負いますが、JiHuがコントリビュートしたいIssueの完全なデザイン作業を引き受けるべきではありません。JiHuにはこれらのIssueを実装の準備が整うように手伝う独自のプロダクトデザインチームがあります。
+GitLab のプロダクトデザイナーは、レビューとガイダンスの責任を負いますが、JiHu がコントリビュートしたい Issue の完全なデザイン作業を引き受けるべきではありません。JiHu にはこれらの Issue を実装の準備が整うように手伝う独自のプロダクトデザインチームがあります。
 
 **プロセス**
 
-JiHuがアップストリームにコントリビュートしようとするIssueにプロダクトデザイナーがメンションされたら、プロダクトデザイナーは、そのIssueに [Pajamasガイドライン](https://design.gitlab.com)、[プロダクト原則](/handbook/product/product-principles)、またはチームの計画作業と矛盾しない明確な提案がすでにあるかどうかを確認します。
+JiHu がアップストリームにコントリビュートしようとする Issue にプロダクトデザイナーがメンションされたら、プロダクトデザイナーは、その Issue に [Pajamas ガイドライン](https://design.gitlab.com)、[プロダクト原則](/handbook/product/product-principles)、またはチームの計画作業と矛盾しない明確な提案がすでにあるかどうかを確認します。
 
-明確なデザイン提案がまだない場合、またはPajamasやプロダクト原則と矛盾がある場合、デザイナーはIssueが実装に進む前に必要なものについてコメントを残します。
+明確なデザイン提案がまだない場合、または Pajamas やプロダクト原則と矛盾がある場合、デザイナーは Issue が実装に進む前に必要なものについてコメントを残します。
 
-#### JiHuとのマイルストーン製品計画プロセス
+#### JiHu とのマイルストーン製品計画プロセス
 
-コラボレーションとフィードバックを促進するため、JiHuはGitLabのマイルストーン計画プロセスに先行して計画し、GitLabプロダクトグループが実装前にフィードバックを提供する時間を確保します。毎マイルストーンで次のことが発生します:
+コラボレーションとフィードバックを促進するため、JiHu は GitLab のマイルストーン計画プロセスに先行して計画し、GitLab プロダクトグループが実装前にフィードバックを提供する時間を確保します。毎マイルストーンで次のことが発生します：
 
-1. JiHuは [gitlab-jh-enablementプロジェクト](https://gitlab.com/gitlab-jh/gitlab-jh-enablement) でマイルストーン計画Issueを作成します。これは [この例](https://gitlab.com/gitlab-jh/gitlab-jh-enablement/-/issues/269) のようなものです。JiHuは通常、月の18日の2週間前に計画を提供します。
-1. GitLab.orgプロジェクトにすでにIssueがない項目については、JiHuチームがIssueを作成します。既存のIssueがある場合、それはマイルストーン計画Issueからリンクされます。これにより、GitLabプロダクトグループは他の日々の作業が追跡されている同じ場所でJiHuのコントリビューションを追跡できます。
-1. プロダクトDRIは [JiHuマイルストーンレビューテンプレート](https://gitlab.com/gitlab-com/Product/-/blob/main/.gitlab/issue_templates/Monthly-JiHu-Milestone-Review.md) を通じて、認識を促進しコラボレーションを奨励します
-1. 個々のプロダクトマネージャーとそのエンジニアリングのカウンターパートは、必要に応じてJiHuにフィードバックを提供します
+1. JiHu は [gitlab-jh-enablement プロジェクト](https://gitlab.com/gitlab-jh/gitlab-jh-enablement)でマイルストーン計画 Issue を作成します。これは[この例](https://gitlab.com/gitlab-jh/gitlab-jh-enablement/-/issues/269)のようなものです。JiHu は通常、月の 18 日の 2 週間前に計画を提供します。
+1. GitLab.org プロジェクトにすでに Issue がない項目については、JiHu チームが Issue を作成します。既存の Issue がある場合、それはマイルストーン計画 Issue からリンクされます。これにより、GitLab プロダクトグループは他の日々の作業が追跡されている同じ場所で JiHu のコントリビューションを追跡できます。
+1. プロダクト DRI は [JiHu マイルストーンレビューテンプレート](https://gitlab.com/gitlab-com/Product/-/blob/main/.gitlab/issue_templates/Monthly-JiHu-Milestone-Review.md)を通じて、認識を促進しコラボレーションを奨励します
+1. 個々のプロダクトマネージャーとそのエンジニアリングのカウンターパートは、必要に応じて JiHu にフィードバックを提供します
 
 ##### 大規模プロダクトイニシアチブの計画
 
-IPを作成することを目的として、JiHuは複数のマイルストーンにまたがる大規模なプロダクトイニシアチブを引き受けます。このタイプのプロダクトイニシアチブはより多くの調整を必要とします。JiHuとGitLabの代表者は、これらのプロダクト計画について定期的に同期を取ります。目標は大規模なイニシアチブを早期に特定し、適切なDRIをループに入れることです。このタイプのプロダクトイニシアチブの一例は [パイプラインエディタのVisual Builder](https://gitlab.com/groups/gitlab-org/-/epics/4499) です。
+IP を作成することを目的として、JiHu は複数のマイルストーンにまたがる大規模なプロダクトイニシアチブを引き受けます。このタイプのプロダクトイニシアチブはより多くの調整を必要とします。JiHu と GitLab の代表者は、これらのプロダクト計画について定期的に同期を取ります。目標は大規模なイニシアチブを早期に特定し、適切な DRI をループに入れることです。このタイプのプロダクトイニシアチブの一例は[パイプラインエディタの Visual Builder](https://gitlab.com/groups/gitlab-org/-/epics/4499)です。
 
 #### プロダクトマネージャーが責任を負わないもの
 
-GitLabのプロダクトマネージャーはJiHuのプロダクト判断に責任を負いませんが、JiHuのプロダクトマネージャーとのコラボレーションとフィードバックは推奨され歓迎されます。
+GitLab のプロダクトマネージャーは JiHu のプロダクト判断に責任を負いませんが、JiHu のプロダクトマネージャーとのコラボレーションとフィードバックは推奨され歓迎されます。
 
-- PMがコミュニティコントリビューションの裁定者ではないのと同様に、プロダクトマネージャーはJiHuチームが取り組むものの裁定者ではありません
-- プロダクトマネージャーは、ティアや価格設定など、JiHuのプロダクト判断には責任を負いません
-- JiHuのマイルストーン計画をレビューする際は:
-  1. 自分のプロダクト領域におけるJiHuの計画を認識する
-  1. GitLabのプロダクト方針に従ってガイダンスを提供する
-  1. サプライズを避け、JiHuの成功を支援する。フィードバックに時間がかかる場合は、事前に知らせる
-  1. 与えるべきフィードバックがなければ、フィードバックを提供する必要はない。JiHuのコントリビューションは他のコミュニティコントリビューションと同じであり得る
+- PM がコミュニティコントリビューションの裁定者ではないのと同様に、プロダクトマネージャーは JiHu チームが取り組むものの裁定者ではありません
+- プロダクトマネージャーは、ティアや価格設定など、JiHu のプロダクト判断には責任を負いません
+- JiHu のマイルストーン計画をレビューする際は：
+  1. 自分のプロダクト領域における JiHu の計画を認識する
+  1. GitLab のプロダクト方針に従ってガイダンスを提供する
+  1. サプライズを避け、JiHu の成功を支援する。フィードバックに時間がかかる場合は、事前に知らせる
+  1. 与えるべきフィードバックがなければ、フィードバックを提供する必要はない。JiHu のコントリビューションは他のコミュニティコントリビューションと同じであり得る
 
-### JiHu独自機能の差別化
+### JiHu 独自機能の差別化
 
-JiHuディストリビューション向けの独自機能は、`/jh` [ディレクトリ](https://gitlab.com/gitlab-org/gitlab-jh-mirrors/-/tree/main-jh/jh) に含めることで差別化します。ただし、JiHuチームメンバーからのコントリビューションの大部分は `/jh` ディレクトリの外側にあるべきであり、これは大部分のコントリビューションがGitLab Core向けであり、特定の機能のみが /jh オファリング独自であるという期待を示しています。
+JiHu ディストリビューション向けの独自機能は、`/jh` [ディレクトリ](https://gitlab.com/gitlab-org/gitlab-jh-mirrors/-/tree/main-jh/jh)に含めることで差別化します。ただし、JiHu チームメンバーからのコントリビューションの大部分は `/jh` ディレクトリの外側にあるべきであり、これは大部分のコントリビューションが GitLab Core 向けであり、特定の機能のみが /jh オファリング独自であるという期待を示しています。
 
 ## リンク
 

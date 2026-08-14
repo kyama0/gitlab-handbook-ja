@@ -537,8 +537,8 @@ CI パイプラインが完了したときにプロジェクトの依存関係�
 - **パッケージメタデータ**： すべてのバージョンに適用されるもの
 
 たとえば、rubygems.org API は
-[gem メソッド](https://guides.rubygems.org/rubygems-org-api/#gem-methods) と
-[gem バージョンメソッド](https://guides.rubygems.org/rubygems-org-api/#gem-version-methods) の両方を提供しています。
+[gem メソッド](https://guides.rubygems.org/rubygems-org-api/#gem-methods)と
+[gem バージョンメソッド](https://guides.rubygems.org/rubygems-org-api/#gem-version-methods)の両方を提供しています。
 
 ほとんどの場合、バージョンメタデータは不変ですが、パッケージメタデータはそうではありません。
 たとえば、パッケージの説明、作者、ライセンスは時間とともに変更される場合がありますが、
@@ -669,8 +669,8 @@ GitLab は既存のパッケージスコアリングサービスに依存する�
 - 既存のアドバイザリーが削除される場合があります（そのバージョンに影響しなくなったため）。
 
 セキュリティアドバイザリーは、GitLab が管理する脆弱性データベースである
-[GitLab Advisory Database](https://gitlab.com/gitlab-org/security-products/gemnasium-db/) や、
-[ruby-advisory-db](https://github.com/rubysec/ruby-advisory-db) などの他の脆弱性データベースによって提供されます。
+[GitLab Advisory Database](https://gitlab.com/gitlab-org/security-products/gemnasium-db/)や、
+[ruby-advisory-db](https://github.com/rubysec/ruby-advisory-db)などの他の脆弱性データベースによって提供されます。
 
 ### 脆弱性データベースの追跡
 
@@ -687,7 +687,7 @@ GitLab が自社の脆弱性データベースのみを使用する場合、2 �
 
 - トラッキングサービスは [gemnasium-db](https://gitlab.com/gitlab-org/security-products/gemnasium-db/) git リポジトリの上に構築され、
   YAML ファイルが追加または変更されたときにリアルタイムで反応するためにウェブフックを使用します。
-- [gemnasium-db](https://gitlab.com/gitlab-org/security-products/gemnasium-db/) はセキュリティアドバイザリーをホストするサービスに置き換えられます。
+- [gemnasium-db](https://gitlab.com/gitlab-org/security-products/gemnasium-db/)はセキュリティアドバイザリーをホストするサービスに置き換えられます。
   それはトラッキングサービスのように動作し、新しいアドバイザリーとアドバイザリーの更新についてリスナーに通知します。
 
 ### パイプライン外での依存関係スキャン
@@ -796,12 +796,12 @@ Software Bill of Materials（SBoM）は、ソフトウェアの構成要素を�
 手動で追跡されスキャナーによって検出されないコンポーネントもリストアップできますが、
 依存関係スキャンとライセンススキャンによって検出されたアプリケーションレベルのパッケージに焦点を当てています。
 
-SBoM にはさまざまなフォーマットがありますが、このドキュメントは [CycloneDX](https://cyclonedx.org/) に焦点を当てています。
+SBoM にはさまざまなフォーマットがありますが、このドキュメントは [CycloneDX](https://cyclonedx.org/)に焦点を当てています。
 これは包括的で、拡張可能であり、オープンソースライブラリと自動化ツールによってよくサポートされているためです。
 
 ### CycloneDX
 
-[CycloneDX](https://cyclonedx.org/) はプロジェクトの依存関係として使用されるコンポーネントのインベントリに使用できます。
+[CycloneDX](https://cyclonedx.org/)はプロジェクトの依存関係として使用されるコンポーネントのインベントリに使用できます。
 CycloneDX コンポーネントは SWID、CPE、または [Package URL](https://github.com/package-url/purl-spec)（PURL）を使用して識別できます。
 [gemnasium-db](https://gitlab.com/gitlab-org/security-products/gemnasium-db/) 脆弱性データベースのパッケージスラグと同様に、
 PURL はパッケージタイプ、完全なパッケージ名、パッケージバージョンを組み合わせています。
@@ -816,7 +816,7 @@ PURL は非デフォルトのパッケージレジストリやリポジトリも
 ライセンスは名前、URL、SPDX 識別子、ライセンス自体を引用することで記述できます。
 SPDX 式もサポートされています。
 
-コンポーネントは[外部 URL](https://cyclonedx.org/use-cases/#external-references) を持つことができ、
+コンポーネントは[外部 URL](https://cyclonedx.org/use-cases/#external-references)を持つことができ、
 各 URL は複数のチェックサムまたは「ハッシュ」を提供できます。
 これはパッケージディストリビューションの署名を保存するために使用できます。
 
@@ -831,8 +831,8 @@ CycloneDX は、インベントリを作成するために使用される依存�
 その結果、SBoM はインベントリにリストされたコンポーネントを導入するファイルへのユーザーリダイレクトに使用できません。
 ただし、この制限を回避する方法があります：
 
-- グローバルメタデータ [プロパティ](https://cyclonedx.org/use-cases/#properties--name-value-store) を使用して、依存関係が検出された依存関係ファイル（オプションのロックファイル）を追跡する。ただし、同じタイプの複数のファイルを追跡することはできません。
-- コンポーネント [プロパティ](https://cyclonedx.org/use-cases/#properties--name-value-store) を使用して、各依存関係が検出された依存関係ファイル（オプションのロックファイル）を追跡する。これは冗長性を導入しますが、より柔軟です。
+- グローバルメタデータ[プロパティ](https://cyclonedx.org/use-cases/#properties--name-value-store)を使用して、依存関係が検出された依存関係ファイル（オプションのロックファイル）を追跡する。ただし、同じタイプの複数のファイルを追跡することはできません。
+- コンポーネント[プロパティ](https://cyclonedx.org/use-cases/#properties--name-value-store)を使用して、各依存関係が検出された依存関係ファイル（オプションのロックファイル）を追跡する。これは冗長性を導入しますが、より柔軟です。
 - 依存関係ファイルを正確に記述し、それらがコンポーネントとどのように関係するかを記述する CycloneDX 拡張を作成する。
 
 [脆弱性拡張](https://cyclonedx.org/ext/vulnerability/)は、
@@ -899,7 +899,7 @@ ISBoM は処理されているコミットのリレーショナル DB でプロ�
 CycloneDX はライセンススキャン（LS）レポートフォーマットのスーパーセットです：
 
 - パッケージマネージャー、パッケージ名、バージョン（LS）を組み合わせると Package URL（CycloneDX）に変換できます。
-- ライセンス ID（LS）は [SPDX ライセンスリスト](https://spdx.org/licenses/) と一致する場合、SPDX ID（CycloneDX）として使用できます。
+- ライセンス ID（LS）は [SPDX ライセンスリスト](https://spdx.org/licenses/)と一致する場合、SPDX ID（CycloneDX）として使用できます。
 - ライセンスは両方のフォーマットで名前と URL を持つことができます。
 
 CycloneDX と同様に、LS レポートはプロジェクトの依存関係を導入する依存関係ファイルや

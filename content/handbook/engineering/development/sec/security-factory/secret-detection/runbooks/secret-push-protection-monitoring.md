@@ -10,14 +10,14 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 ### このランブックをいつ使用しますか？
 
-このランブックは、[シークレットプッシュ保護](https://docs.gitlab.com/user/application_security/secret_detection/secret_push_protection/#secret-push-protection-workflow) 機能を監視する際に使用します。GitLab.com で有効になっているときに発生する可能性のある信頼性の問題やパフォーマンスの低下を特定・緩和するために使用します。また、以下の関連ダッシュボードについて理解を深め、改善方法を検討するためにも使用できます：
+このランブックは、[シークレットプッシュ保護](https://docs.gitlab.com/user/application_security/secret_detection/secret_push_protection/#secret-push-protection-workflow)機能を監視する際に使用します。GitLab.com で有効になっているときに発生する可能性のある信頼性の問題やパフォーマンスの低下を特定・緩和するために使用します。また、以下の関連ダッシュボードについて理解を深め、改善方法を検討するためにも使用できます：
 
 * [シークレットプッシュ保護 – 概要ダッシュボード](https://dashboards.gitlab.net/d/fdk7i56zibv28d/secret-push-protection-e28093-overview?orgId=1)
 * [シークレットプッシュ保護 – メモリと GC モニタリング](https://dashboards.gitlab.net/d/abe91e88-a9a4-4483-97f0-bc170c087cfb/spp-memory-and-gc-monitoring)
 
 ### 何を監視しますか？
 
-機能は[現在の形](../../../../../architecture/design-documents/secret_detection/#high-level-architecture) では外部コンポーネントを持たず、[依存関係](https://gitlab.com/gitlab-org/security-products/secret-detection/secret-detection-service/-/blob/main/gitlab-secret_detection.gemspec) としてアプリケーションサーバー内に封じ込まれていますが、[プッシュイベントのシーケンス図](../../../../../architecture/design-documents/secret_detection/#push-event-detection-flow) に示されているように、多くのコンポーネントとやり取りします。それらのコンポーネントは以下の通りです：
+機能は[現在の形](../../../../../architecture/design-documents/secret_detection/#high-level-architecture)では外部コンポーネントを持たず、[依存関係](https://gitlab.com/gitlab-org/security-products/secret-detection/secret-detection-service/-/blob/main/gitlab-secret_detection.gemspec)としてアプリケーションサーバー内に封じ込まれていますが、[プッシュイベントのシーケンス図](../../../../../architecture/design-documents/secret_detection/#push-event-detection-flow)に示されているように、多くのコンポーネントとやり取りします。それらのコンポーネントは以下の通りです：
 
 * GitLab Shell（SSH 経由の Git）：
   * `git-receive-pack`
@@ -27,7 +27,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
   * `SSHReceivePack`
   * `PostReceivePack`
   * `PreReceiveHook`
-  * `ListAllCommits()` RPC（[`ListCommits()` RPC](https://gitlab.com/gitlab-org/gitlab/-/blob/a7c19f7ae8ed00f512bf7324879ae87d59bb088c/lib/gitlab/gitaly_client/commit_service.rb#L369-370) を使用するのは、[検疫ディレクトリ](https://gitlab.com/gitlab-org/gitaly/-/blob/master/doc/object_quarantine.md) が存在しない場合）
+  * `ListAllCommits()` RPC（[`ListCommits()` RPC](https://gitlab.com/gitlab-org/gitlab/-/blob/a7c19f7ae8ed00f512bf7324879ae87d59bb088c/lib/gitlab/gitaly_client/commit_service.rb#L369-370)を使用するのは、[検疫ディレクトリ](https://gitlab.com/gitlab-org/gitaly/-/blob/master/doc/object_quarantine.md)が存在しない場合）
   * `FindChangedPaths()` RPC
   * `DiffBlobs()` RPC
 * Rails：
@@ -93,7 +93,7 @@ sequenceDiagram
 
 ![シークレットプッシュ保護ワークフロー](/images/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/spp-new-workflow.png "シークレットプッシュ保護ワークフロー")
 
-_注記：`PreReceiveHook` を git の [pre-receive フック](https://git-scm.com/docs/githooks#pre-receive) と混同しないでください。前者は実際の git フックのまわりの[バイナリラッパー](https://gitlab.com/gitlab-org/gitaly/-/tree/master/cmd/gitaly-hooks) です。[フックのセットアップ](https://gitlab.com/gitlab-org/gitaly/-/blob/master/doc/hooks.md#hook-setup) については Gitaly のドキュメントを参照してください。_
+_注記：`PreReceiveHook` を git の [pre-receive フック](https://git-scm.com/docs/githooks#pre-receive)と混同しないでください。前者は実際の git フックのまわりの[バイナリラッパー](https://gitlab.com/gitlab-org/gitaly/-/tree/master/cmd/gitaly-hooks)です。[フックのセットアップ](https://gitlab.com/gitlab-org/gitaly/-/blob/master/doc/hooks.md#hook-setup)については Gitaly のドキュメントを参照してください。_
 
 これらのコンポーネントが、機能を監視する際に焦点を当てる主要な要素です。
 
@@ -148,17 +148,17 @@ _注記：`PreReceiveHook` を git の [pre-receive フック](https://git-scm.c
 * 📖 [Kibana：全スキャンのログ](https://log.gprd.gitlab.net/app/discover#/view/31afcbb2-28e9-466f-a6c3-486e869e1ee3)。
 * 📖 [Kibana：ブロックされたプッシュのログ](https://log.gprd.gitlab.net/app/discover#/view/db7ba29d-d406-46df-8b43-e6d9c47fbed7)。
 
->**注記：** Kibana は[7 日間のみログを保持します](/handbook/support/workflows/kibana/#using-kibana)。
+>**注記：** Kibana は [7 日間のみログを保持します](/handbook/support/workflows/kibana/#using-kibana)。
 
 ### 機能の信頼性またはパフォーマンスの問題を特定・緩和する方法
 
-[概要ダッシュボード](https://dashboards.gitlab.net/d/fdk7i56zibv28d/secret-push-protection-e28093-overview?orgId=1) は、機能を監視するために構築したメインダッシュボードです。信頼性やパフォーマンスの問題を特定しようとする際は、まずここを確認してください。
+[概要ダッシュボード](https://dashboards.gitlab.net/d/fdk7i56zibv28d/secret-push-protection-e28093-overview?orgId=1)は、機能を監視するために構築したメインダッシュボードです。信頼性やパフォーマンスの問題を特定しようとする際は、まずここを確認してください。
 
 ダッシュボード自体は 4 つの行（またはセクション）に分かれており、それぞれに以下のようなパネルが含まれています。
 
 #### GitLab Shell（SSH 経由の Git）
 
-このセクションでは、`GitLab Shell` 内の機能に関連する特定の操作の安定性を監視します。GitLab Shell は Git SSH セッションを処理するために作成された実行ファイルのセットです。ツール自体は SSH を直接処理しませんが、SSH サーバー／デーモン [`gitlab-sshd`](https://docs.gitlab.com/ee/development/gitlab_shell/gitlab_sshd.html) がクライアントとのすべての接続を維持し、認可またはアクセスチェックを実行するために GitLab Shell 経由で Rails を呼び出します。動作の詳細については、[この図](https://docs.gitlab.com/ee/development/gitlab_shell/index.html#git-push-over-ssh) と[リクエストサイクルの説明](https://docs.gitlab.com/ee/development/architecture.html#ssh-request-22) を参照してください。
+このセクションでは、`GitLab Shell` 内の機能に関連する特定の操作の安定性を監視します。GitLab Shell は Git SSH セッションを処理するために作成された実行ファイルのセットです。ツール自体は SSH を直接処理しませんが、SSH サーバー／デーモン [`gitlab-sshd`](https://docs.gitlab.com/ee/development/gitlab_shell/gitlab_sshd.html)がクライアントとのすべての接続を維持し、認可またはアクセスチェックを実行するために GitLab Shell 経由で Rails を呼び出します。動作の詳細については、[この図](https://docs.gitlab.com/ee/development/gitlab_shell/index.html#git-push-over-ssh)と[リクエストサイクルの説明](https://docs.gitlab.com/ee/development/architecture.html#ssh-request-22)を参照してください。
 
 このセクションは、SSH で `git push` 操作を行う際の `git-receive-pack` 操作に関連するパフォーマンス低下がないことを確認するために使用できます。以下の 2 つの行／セクションに分けられています。
 
@@ -331,7 +331,7 @@ _パネル情報_
 
 #### Workhorse（HTTP/S 経由の Git）
 
-このセクションでは、`Workhorse` 内の機能に関連する特定の操作の安定性を監視します。Workhorse は、リソース集約型および長時間実行リクエストを処理するためのスマートリバースプロキシです。すべての HTTP リクエストをインターセプトし、変更せずに転送するか、追加のロジックを実行することで自らが処理します。動作の詳細については、[この図](https://docs.gitlab.com/ee/development/workhorse/handlers.html#git-push) と[リクエストサイクルの説明](https://docs.gitlab.com/ee/development/architecture.html#web-request-80443) を参照してください。
+このセクションでは、`Workhorse` 内の機能に関連する特定の操作の安定性を監視します。Workhorse は、リソース集約型および長時間実行リクエストを処理するためのスマートリバースプロキシです。すべての HTTP リクエストをインターセプトし、変更せずに転送するか、追加のロジックを実行することで自らが処理します。動作の詳細については、[この図](https://docs.gitlab.com/ee/development/workhorse/handlers.html#git-push)と[リクエストサイクルの説明](https://docs.gitlab.com/ee/development/architecture.html#web-request-80443)を参照してください。
 
 このセクションは、HTTP/S で `git push` 操作を行う際の `git-receive-pack` 操作に関連するパフォーマンス低下がないことを確認するために使用できます。
 
@@ -581,7 +581,7 @@ _パネル情報_
 
 #### Rails
 
-このセクションでは、[`/internal/allowed` エンドポイント](https://docs.gitlab.com/ee/development/internal_api/internal_api_allowed.html) の安定性を監視します。このエンドポイントは、`git` プッシュでのシークレット漏洩から保護する機能の要所です。エンドポイントは GitLab の [内部 API](https://docs.gitlab.com/ee/development/internal_api/) の一部であり、ユーザーがリポジトリで特定の操作を実行する権限を持っているかどうかを評価する責任を持ちます。
+このセクションでは、[`/internal/allowed` エンドポイント](https://docs.gitlab.com/ee/development/internal_api/internal_api_allowed.html)の安定性を監視します。このエンドポイントは、`git` プッシュでのシークレット漏洩から保護する機能の要所です。エンドポイントは GitLab の[内部 API](https://docs.gitlab.com/ee/development/internal_api/)の一部であり、ユーザーがリポジトリで特定の操作を実行する権限を持っているかどうかを評価する責任を持ちます。
 
 このセクションは、特定の `git` プッシュの変更がシークレットをスキャンされる際に、`/internal/allowed` エンドポイントに関連するパフォーマンス低下がないことを確認するために使用できます。
 
@@ -638,7 +638,7 @@ _パネル情報_
 
 **[内部 API ／ メモリ飽和率](https://dashboards.gitlab.net/d/fdk7i56zibv28d/secret-push-protection-e28093-overview?orgId=1&viewPanel=42)**
 
-このパネルは、内部 API の 2 つのコンポーネント（[Ruby VM](https://dashboards.gitlab.net/goto/ptHVRjsIR?orgId=1) と [Puma Workers](https://dashboards.gitlab.net/goto/dJXnRjyIR?orgId=1)）のメモリ飽和率を表示します。Rails のメモリ消費が飽和点まで増加しているかどうかを理解するのに役立ち、パフォーマンスとスケーラビリティの問題を示し、対応が必要です。注意：このパネルは `/internal/allowed` エンドポイントに固有ではありません。
+このパネルは、内部 API の 2 つのコンポーネント（[Ruby VM](https://dashboards.gitlab.net/goto/ptHVRjsIR?orgId=1)と [Puma Workers](https://dashboards.gitlab.net/goto/dJXnRjyIR?orgId=1)）のメモリ飽和率を表示します。Rails のメモリ消費が飽和点まで増加しているかどうかを理解するのに役立ち、パフォーマンスとスケーラビリティの問題を示し、対応が必要です。注意：このパネルは `/internal/allowed` エンドポイントに固有ではありません。
 
 _パネル情報_
 

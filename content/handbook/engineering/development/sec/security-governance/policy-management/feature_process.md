@@ -12,11 +12,11 @@ stale: false
 
 機能開発は、機能関連の Issue を集約したエピックで管理します。機能は通常、フィーチャーフラグの背後で開発されます。機能開発プロセスの目標は、フィーチャーフラグをデフォルトで有効化することです。
 
-機能開発エピックは [Interlock Deck](https://interlock-deck.gitlab.io/#filter=group%3A%3Asecurity_policies) に一覧表示されています。
+機能開発エピックは [Interlock Deck](https://interlock-deck.gitlab.io/#filter=group%3A%3Asecurity_policies)に一覧表示されています。
 
 ### 段階的リリース（Experiment → Beta → GA）
 
-デフォルトでは、エピックレベルの機能に対して [3 フェーズリリースプラン](/handbook/engineering/development/sec/security-governance/policy-management/planning/#three-phase-release-plan-experiment--beta--ga) に従います。
+デフォルトでは、エピックレベルの機能に対して [3 フェーズリリースプラン](/handbook/engineering/development/sec/security-governance/policy-management/planning/#three-phase-release-plan-experiment--beta--ga)に従います。
 
 1. **Experiment**（ターゲットの 2 マイルストーン前）：無効化されたフィーチャーフラグの背後に動作するバージョンを出荷し、早期フィードバックを収集します。
 2. **Beta**（ターゲットの 1 マイルストーン前）：ほぼ完成したエクスペリエンスで、特定の顧客またはプロジェクト向けにフィーチャーフラグを選択的に有効化します。
@@ -26,7 +26,7 @@ stale: false
 
 ### スパイクファーストアプローチ
 
-新しいエピックはそれぞれ**スパイク**から始まります。DRI がインターロックされた四半期が始まる**前に**技術的アプローチを検証するための概念実証（PoC）を構築します。これには、開発を加速するために最新の AI ツールを活用できます。PoC が実現可能性を実証したら、DRI は実装計画と個別の実装 Issue を作成します。詳細は [エピックのスパイクファーストアプローチ](/handbook/engineering/development/sec/security-governance/policy-management/planning/#spike-first-approach-for-epics) を参照してください。
+新しいエピックはそれぞれ**スパイク**から始まります。DRI がインターロックされた四半期が始まる**前に**技術的アプローチを検証するための概念実証（PoC）を構築します。これには、開発を加速するために最新の AI ツールを活用できます。PoC が実現可能性を実証したら、DRI は実装計画と個別の実装 Issue を作成します。詳細は[エピックのスパイクファーストアプローチ](/handbook/engineering/development/sec/security-governance/policy-management/planning/#spike-first-approach-for-epics)を参照してください。
 
 ### エピックの Issue
 
@@ -34,7 +34,7 @@ stale: false
   - バックエンドとフロントエンドを示すために 'BE' または 'FE' をタイトルに追加します。ラベルでも示されますが、タイトルに追加することで識別が容易になります。
 - マイルストーン
   - フィーチャーフラグロールアウト Issue のマイルストーンは、機能をリリースする予定のマイルストーンです。フィーチャーフラグロールアウト Issue より上の Issue はすべて、フィーチャーフラグロールアウト Issue のマイルストーン以下のマイルストーンを持つ必要があります。
-  - エピックにバックエンドとフロントエンドの依存作業がある場合、可能であれば [バックエンドをフロントエンドの 1 マイルストーン前に計画](/handbook/engineering/development/sec/security-governance/policy-management/planning/#backend-ahead-of-frontend) します。
+  - エピックにバックエンドとフロントエンドの依存作業がある場合、可能であれば[バックエンドをフロントエンドの 1 マイルストーン前に計画](/handbook/engineering/development/sec/security-governance/policy-management/planning/#backend-ahead-of-frontend)します。
 - ワークフローラベル
   - ユーザー/PM がエピックの状態を把握し、適切に作業計画を立てられるよう最新の状態に保つ必要があります（例：マイルストーンの半ばですべての Issue に ~workflow::in dev ラベルが付いていれば、エピックは順調に進んでいます）。
 - 「子 Issue とエピック」リストの Issue 順序
@@ -48,7 +48,7 @@ stale: false
 
 ### 完了の定義
 
-エピックは、[エピックの完了の定義](/handbook/engineering/development/sec/security-governance/policy-management/planning/#definition-of-done-for-epics) のすべての基準が満たされた時に完了とみなされます。これには以下が含まれます。
+エピックは、[エピックの完了の定義](/handbook/engineering/development/sec/security-governance/policy-management/planning/#definition-of-done-for-epics)のすべての基準が満たされた時に完了とみなされます。これには以下が含まれます。
 
 - 機能が動作しており、フィーチャーフラグがデフォルトで有効化されている。
 - 導入指標が実装されており、チームが利用状況を確認できる。

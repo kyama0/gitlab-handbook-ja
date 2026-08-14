@@ -39,7 +39,7 @@ stale: false
 
 このグループは、FY27 の Sec 再編で Dynamic Analysis から名称変更され、担当領域は DAST とファジングからソフトウェアサプライチェーンセキュリティに移りました。`group::dynamic analysis` ラベルは `group::dependency firewall` に名前が変更されたため、ラベル ID とそれに紐づくすべての Issue およびマージリクエストが引き継がれ、メトリクスの履歴も保持されています。
 
-以前の担当領域のページは、参照用としてここに残しています:
+以前の担当領域のページは、参照用としてここに残しています：
 
 1. [Dynamic Analysis](dynamic-analysis/)
 1. [API Security](api-security/)

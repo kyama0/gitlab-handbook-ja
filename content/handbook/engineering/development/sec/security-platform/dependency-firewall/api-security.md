@@ -8,7 +8,7 @@ translator: codex
 stale: false
 ---
 
-Dynamic Analysis グループは、FY27 の Sec 再編で [Dependency Firewall](/handbook/engineering/development/sec/security-platform/dependency-firewall/) に名称変更されました。このページは以前の担当領域の参照用として残されています。
+Dynamic Analysis グループは、FY27 の Sec 再編で [Dependency Firewall](/handbook/engineering/development/sec/security-platform/dependency-firewall/)に名称変更されました。このページは以前の担当領域の参照用として残されています。
 
 
 ## API Security
@@ -31,10 +31,10 @@ API Security チームは GitLab の Dynamic Analysis グループの一部で�
 
 ## 連絡方法
 
-- Slack チャンネル: #g_ast-dynamic-analysis
-- Slack エイリアス: @secure_dynamic_analysis_be
-- Google グループ: dynamic-analysis-be@gitlab.com
-- GitLab メンション: @gitlab-org/secure/dynamic-analysis-be
+- Slack チャンネル： #g_ast-dynamic-analysis
+- Slack エイリアス： @secure_dynamic_analysis_be
+- Google グループ： dynamic-analysis-be@gitlab.com
+- GitLab メンション： @gitlab-org/secure/dynamic-analysis-be
 
 ## 働き方
 
@@ -44,10 +44,10 @@ Dynamic Analysis グループは主に GitLab の[プロダクト開発フロー
 
 ## 繰り返しタスク
 
-各マイルストーンで完了する必要があるいくつかのメンテナンスタスクがあります。各イテレーションで、Issue が開かれ、ローテーションベースでエンジニアに割り当てられます。それらのローテーションタスクは:
+各マイルストーンで完了する必要があるいくつかのメンテナンスタスクがあります。各イテレーションで、Issue が開かれ、ローテーションベースでエンジニアに割り当てられます。それらのローテーションタスクは：
 
 - アップストリームの変更をレビューし、アップストリームの変更が重要な改善を提供する場合は DAST をアップグレードするための Issue を開く
-- DAST の[セキュリティダッシュボード](https://gitlab.com/gitlab-org/security-products/dast/-/security/vulnerability_report)をレビューし、すべての Critical および High Issue に対処する。アップストリームプロジェクト [ZAP](https://gitlab.com/gitlab-org/security-products/dependencies/zaproxy) と [ZAP Extensions](https://gitlab.com/gitlab-org/security-products/dependencies/zap-extensions) のダッシュボードをレビューする
+- DAST の[セキュリティダッシュボード](https://gitlab.com/gitlab-org/security-products/dast/-/security/vulnerability_report)をレビューし、すべての Critical および High Issue に対処する。アップストリームプロジェクト [ZAP](https://gitlab.com/gitlab-org/security-products/dependencies/zaproxy)と [ZAP Extensions](https://gitlab.com/gitlab-org/security-products/dependencies/zap-extensions)のダッシュボードをレビューする
 
 ### ファジング技術
 
@@ -55,7 +55,7 @@ Dynamic Analysis グループは主に GitLab の[プロダクト開発フロー
 
 ### 専用ラベル
 
-Issue を開く際に、以下のラベルスニペットがよく追加されます:
+Issue を開く際に、以下のラベルスニペットがよく追加されます：
 
 ```text
 /label ~"Category:API Security"

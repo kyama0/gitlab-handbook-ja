@@ -38,7 +38,7 @@ Analytics Instrumentation チームには[こちら](https://docs.gitlab.com/ee/
 
 インターナルトラッキングイベントは個別のイベントを捉え、7 日間、28 日間、または全期間にわたって収集できます。これらのイベントはイベントを明示的に発火させるためのコード変更が必要です。
 
-以下は [Notes::BaseService](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/services/notes/base_service.rb?ref_type=heads) からの例です。
+以下は [Notes::BaseService](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/services/notes/base_service.rb?ref_type=heads)からの例です。
 
 ```ruby
 ...
@@ -96,7 +96,7 @@ end
 
 インターナルイベントトラッキングテストを共有スペックに追加する場合、既にそうでなければイベント発火をトリガーするものに `subject` を再定義できる必要があります。
 
-例えば、[スペック](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/spec/lib/gitlab/checks/secrets_check_spec.rb?ref_type=heads)では、[Gitlab::Checks::SecretsCheck](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/lib/gitlab/checks/secrets_check.rb?ref_type=heads) に対して [secrets_check_shared_example.rb](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/spec/support/shared_examples/lib/gitlab/secrets_check_shared_examples.rb?ref_type=heads) の共有例を使用しています。
+例えば、[スペック](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/spec/lib/gitlab/checks/secrets_check_spec.rb?ref_type=heads)では、[Gitlab::Checks::SecretsCheck](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/lib/gitlab/checks/secrets_check.rb?ref_type=heads)に対して [secrets_check_shared_example.rb](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/spec/support/shared_examples/lib/gitlab/secrets_check_shared_examples.rb?ref_type=heads)の共有例を使用しています。
 
 そのファイルでは、ほとんどのスペックが `subject.validate!` を呼び出してシークレットチェックを実行しますが、インターナルトラッキング共有例の場合は、ただ `subject` を呼び出せることを期待しています。
 
@@ -116,7 +116,7 @@ it_behaves_like 'internal event tracking' do
 
 ### データベースメトリクス（Service Ping）
 
-[データベースメトリクス](https://docs.gitlab.com/ee/development/internal_analytics/metrics/metrics_instrumentation.html#database-metrics)（Service Ping とも呼ばれる）は、データベースクエリで収集できるメトリクスです。これらのメトリクスは約 7 日ごとにバッチで更新されます。ただし、これは保証されておらず、4〜10 日の間で生成される場合があります。
+[データベースメトリクス](https://docs.gitlab.com/ee/development/internal_analytics/metrics/metrics_instrumentation.html#database-metrics)（Service Ping とも呼ばれる）は、データベースクエリで収集できるメトリクスです。これらのメトリクスは約 7 日ごとにバッチで更新されます。ただし、これは保証されておらず、4 〜 10 日の間で生成される場合があります。
 
 #### 追加プロセス
 
@@ -144,7 +144,7 @@ rails generate gitlab:usage_metric CountIssues --type database --operation disti
 
 `relation` はクエリ結果を返すブロックを受け取ります。
 
-[`Gitlab::usage::Metrics::Instrumentation::CountProjectsWithSecretPushProtectionEnabledMetric`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/lib/gitlab/usage/metrics/instrumentations/count_projects_with_secret_push_protection_enabled_metric.rb?ref_type=heads) からの例：
+[`Gitlab::usage::Metrics::Instrumentation::CountProjectsWithSecretPushProtectionEnabledMetric`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/lib/gitlab/usage/metrics/instrumentations/count_projects_with_secret_push_protection_enabled_metric.rb?ref_type=heads)からの例：
 
 ```ruby
 class CountProjectsWithSecretPushProtectionEnabledMetric < DatabaseMetric
@@ -183,7 +183,7 @@ data_source: 'database' }
 
 アーキテクチャとデザインの考慮事項については、[チュートリアル：CI ベースのアナライザーにオブザーバビリティメトリクスを追加する](/handbook/engineering/development/sec/security-factory/analyzer-observability-metrics/)を参照してください。
 
-新しいイベントの追加に関する実装の詳細については、[アナライザーの README](https://gitlab.com/gitlab-org/security-products/analyzers/secrets#adding-observability-events) を参照してください。
+新しいイベントの追加に関する実装の詳細については、[アナライザーの README](https://gitlab.com/gitlab-org/security-products/analyzers/secrets#adding-observability-events)を参照してください。
 
 ### イベント命名規則
 
@@ -206,8 +206,8 @@ collect_<analyzer_name>_<type>_metrics_from_pipeline
 
 イベントには GitLab モノリスに対応する定義が必要で、バックエンドの許可リストに追加される必要があります。許可されたイベントのみが処理されます。
 
-1. [`config/events/`](https://gitlab.com/gitlab-org/gitlab/-/tree/v18.6.4-ee/config/events) または [`ee/config/events/`](https://gitlab.com/gitlab-org/gitlab/-/tree/v18.6.4-ee/ee/config/events) にイベント定義を作成します。
-1. [Security::ProcessScanEventsService::EVENT_NAME_ALLOW_LIST](https://gitlab.com/gitlab-org/gitlab/-/blob/v18.6.4-ee/ee/app/services/security/process_scan_events_service.rb#L9-46) に新しいイベント名を追加します。
+1. [`config/events/`](https://gitlab.com/gitlab-org/gitlab/-/tree/v18.6.4-ee/config/events)または [`ee/config/events/`](https://gitlab.com/gitlab-org/gitlab/-/tree/v18.6.4-ee/ee/config/events)にイベント定義を作成します。
+1. [Security::ProcessScanEventsService::EVENT_NAME_ALLOW_LIST](https://gitlab.com/gitlab-org/gitlab/-/blob/v18.6.4-ee/ee/app/services/security/process_scan_events_service.rb#L9-46)に新しいイベント名を追加します。
 1. アナライザーからの実際のレポート出力を使用した rspec テストを追加します。
 
 詳細については、[インターナルイベントトラッキングのクイックスタート](https://docs.gitlab.com/ee/development/internal_analytics/internal_event_instrumentation/quick_start.html)を参照してください。

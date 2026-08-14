@@ -55,7 +55,7 @@ Static Analysis グループは、会社全体の全グループと同様に、�
 
 ### Static Analysis 共有カレンダー
 
-[Static Analysis 共有カレンダー](https://calendar.google.com/calendar/embed?src=c_fb285ec72974733f23fd84f70397732e68f7db9abe706c5613f199b6202e379a%40group.calendar.google.com) は、PTO イベントをチーム全員が見えるようにするために使用されます。
+[Static Analysis 共有カレンダー](https://calendar.google.com/calendar/embed?src=c_fb285ec72974733f23fd84f70397732e68f7db9abe706c5613f199b6202e379a%40group.calendar.google.com)は、PTO イベントをチーム全員が見えるようにするために使用されます。
 
 Time Off by Deel にカレンダーを追加する手順：
 
@@ -76,7 +76,7 @@ GitLab.com では、Rails アプリケーション内のコードのパフォー
 
 #### ランブック
 
-インシデントの監視、対応、緩和のプロセスは、[Static Analysis ランブック](runbooks/) ページに記載されています。
+インシデントの監視、対応、緩和のプロセスは、[Static Analysis ランブック](runbooks/)ページに記載されています。
 
 ### Static Analysis でのソフトウェア提供
 
@@ -102,11 +102,11 @@ GitLab.com では、Rails アプリケーション内のコードのパフォー
 | 21 | 21 日 | |
 | それ以上 | 変装したエピック | |
 
-アイテムが最初のウェイトより長くかかる場合があります。[速度](/handbook/engineering/development/principles/#velocity) は予測可能性より重要であるため、ウェイトを膨らませることはしません。
+アイテムが最初のウェイトより長くかかる場合があります。[速度](/handbook/engineering/development/principles/#velocity)は予測可能性より重要であるため、ウェイトを膨らませることはしません。
 
 #### マイルストーンでの作業提供へのコミット方法
 
-GitLab では、`~Deliverable` ラベルは[リリーススコープラベル](https://docs.gitlab.com/ee/development/labels/index.html#release-scoping-labels) と呼ばれています。このラベルを適用することは、Issue が割り当てられたマイルストーン内で必要な作業を実現するというエンジニアリングチームのコミットメントを表します。つまり、Issue が `workflow::ready for development` 状態になった後に作業を提供できるかどうかを決定します。
+GitLab では、`~Deliverable` ラベルは[リリーススコープラベル](https://docs.gitlab.com/ee/development/labels/index.html#release-scoping-labels)と呼ばれています。このラベルを適用することは、Issue が割り当てられたマイルストーン内で必要な作業を実現するというエンジニアリングチームのコミットメントを表します。つまり、Issue が `workflow::ready for development` 状態になった後に作業を提供できるかどうかを決定します。
 
 `~Deliverable` ラベルをいつ使用するかの決定は、以下の質問に答えることで行います。
 
@@ -121,19 +121,19 @@ GitLab では、`~Deliverable` ラベルは[リリーススコープラベル](h
 
 #### コードレビュープロセス
 
-レビューとメンテナーコードのプロセスは、[Static Analysis グループコードレビュー](/handbook/engineering/development/sec/security-factory/code-scanning/code_review/) ページに記載されています。
+レビューとメンテナーコードのプロセスは、[Static Analysis グループコードレビュー](/handbook/engineering/development/sec/security-factory/code-scanning/code_review/)ページに記載されています。
 
 ### セキュリティ脆弱性プロセス
 
 私たちは提供するものが安全であることを保証する責任があります。つまり、GitLab のセキュリティ機能をドッグフーディングしています。
 
-[脆弱性管理プロセス](/handbook/engineering/development/sec/secure/#vulnerability-management-process) を参照してください。
+[脆弱性管理プロセス](/handbook/engineering/development/sec/secure/#vulnerability-management-process)を参照してください。
 
-脆弱性の Issue を作成する際は、[エンジニアリングセキュリティの手順](/handbook/security/engaging-with-security/#creating-new-security-issues) に従ってください。
+脆弱性の Issue を作成する際は、[エンジニアリングセキュリティの手順](/handbook/security/engaging-with-security/#creating-new-security-issues)に従ってください。
 
 #### 脆弱性の重大度別 SLO
 
-`Unknown` の脆弱性をトリアージする際は、解決の優先度を決定するために適切な重大度を割り当てる必要があります。対応する優先度は [Issue トリアージ](/handbook/product-development/how-we-work/issue-triage/#priority) から取得されます。
+`Unknown` の脆弱性をトリアージする際は、解決の優先度を決定するために適切な重大度を割り当てる必要があります。対応する優先度は [Issue トリアージ](/handbook/product-development/how-we-work/issue-triage/#priority)から取得されます。
 
 | 目標 | Unknown | Critical | High | Medium | Low |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -147,9 +147,9 @@ GitLab では、`~Deliverable` ラベルは[リリーススコープラベル](h
 | 作業 | 担当ワークストリーム |
 |---|---|
 | 新しい脆弱性のトリアージ | 脆弱性を導入する MR レビューの一部として行う必要があります。 |
-| 既存の脆弱性のトリアージ | [リリースプロジェクトの Issue テンプレート](https://gitlab.com/gitlab-org/security-products/release/-/blob/master/scripts/templates/release_issue.md.erb) で定義された各アナライザーのメインメンテナーが行います。 |
+| 既存の脆弱性のトリアージ | [リリースプロジェクトの Issue テンプレート](https://gitlab.com/gitlab-org/security-products/release/-/blob/master/scripts/templates/release_issue.md.erb)で定義された各アナライザーのメインメンテナーが行います。 |
 | Critical ／ High 脆弱性の解決 | プロダクト主導の優先事項にする必要があります。 |
-| Medium ／ Low 脆弱性の解決 | [リリースプロジェクトの Issue テンプレート](https://gitlab.com/gitlab-org/security-products/release/-/blob/master/scripts/templates/release_issue.md.erb) で定義された各アナライザーのメインメンテナーが行います。 |
+| Medium ／ Low 脆弱性の解決 | [リリースプロジェクトの Issue テンプレート](https://gitlab.com/gitlab-org/security-products/release/-/blob/master/scripts/templates/release_issue.md.erb)で定義された各アナライザーのメインメンテナーが行います。 |
 
 常に、コミュニティや現在のローテーション中の MR コーチからの貢献を歓迎します。
 
@@ -157,7 +157,7 @@ GitLab では、`~Deliverable` ラベルは[リリーススコープラベル](h
 
 脆弱性を誤検知として却下するプロセスは以下の通りです：
 
-- [Static Analysis グループが定義した誤検知](/handbook/engineering/development/sec/security-factory/code-scanning/false_positives/) ページに記載されていない場合は、誤検知の種類とそれが誤検知と分類される理由を説明するドキュメントを作成してください。
+- [Static Analysis グループが定義した誤検知](/handbook/engineering/development/sec/security-factory/code-scanning/false_positives/)ページに記載されていない場合は、誤検知の種類とそれが誤検知と分類される理由を説明するドキュメントを作成してください。
 - 脆弱性が特定のコード場所に関連している場合（例：SAST）、各 FP 場所に誤検知ドキュメントへのリンクを含むコメントをつけた MR を作成してください。
 - 以下を含むコメントとともに GitLab UI で脆弱性を却下します：
   - 誤検知ドキュメントへのリンク。
@@ -170,12 +170,12 @@ GitLab では、`~Deliverable` ラベルは[リリーススコープラベル](h
 - ~security
 - ~"type::bug"
 
-Issue の作成時に重大度／優先度に疑問がある場合や重大度／優先度ラベルが追加されていない場合、[Appsec エスカレーションエンジン](https://gitlab.com/gitlab-com/gl-security/engineering-and-research/automation-team/appsec-escalator#appsec-escalation-engine) を活用して Appsec チームとのディスカッションを開始できます。このボットは ~security とラベル付けされていて ~test または ~"type::feature" とラベル付けされていない Issue を監視します。重大度／優先度ラベルがない場合は、security-sp-label-missing と security-triage-psirt ラベルが追加され、この Issue は [AppSec トリアージダッシュボード](https://triage-dashboard-2c1ad6.gitlab.io/) にリストされます。その後、グループの AppSec Stable Counterpart または Appsec チームのトリアージ担当者が Issue を引き継ぎ、Appsec トリアージローテーションの一部として重大度を割り当てます。
+Issue の作成時に重大度／優先度に疑問がある場合や重大度／優先度ラベルが追加されていない場合、[Appsec エスカレーションエンジン](https://gitlab.com/gitlab-com/gl-security/engineering-and-research/automation-team/appsec-escalator#appsec-escalation-engine)を活用して Appsec チームとのディスカッションを開始できます。このボットは ~security とラベル付けされていて ~test または ~"type::feature" とラベル付けされていない Issue を監視します。重大度／優先度ラベルがない場合は、security-sp-label-missing と security-triage-psirt ラベルが追加され、この Issue は [AppSec トリアージダッシュボード](https://triage-dashboard-2c1ad6.gitlab.io/)にリストされます。その後、グループの AppSec Stable Counterpart または Appsec チームのトリアージ担当者が Issue を引き継ぎ、Appsec トリアージローテーションの一部として重大度を割り当てます。
 
 ### 出荷したものに責任を持つ {#we-own-what-we-ship}
 
 私たちが開発するセキュリティアナライザーはオープンソースソフトウェアに大きく依存する場合があります。
-これはそれらのソフトウェアパッケージの変更によって大きな影響を受ける可能性があることを意味します。私たちは[GitLab リリース](https://about.gitlab.com/releases/)ごとにこれらのパッケージの更新を確認します。新しいバージョンは以下の側面から精査されます：
+これはそれらのソフトウェアパッケージの変更によって大きな影響を受ける可能性があることを意味します。私たちは [GitLab リリース](https://about.gitlab.com/releases/)ごとにこれらのパッケージの更新を確認します。新しいバージョンは以下の側面から精査されます：
 
 - 破壊的変更
 - 新しい、更新された、または削除されたセキュリティルール
@@ -183,7 +183,7 @@ Issue の作成時に重大度／優先度に疑問がある場合や重大度�
 - 新しいバージョンを使用するために必要なアナライザーの変更
 - セキュリティ脆弱性
 
-破壊的変更が発見された場合は Issue が作成され優先されます。そうでない場合、依存関係の更新は関連するアナライザーの変更履歴に詳述され、変更を利用した新しいバージョンがリリースされます。これには多くの作業が必要であり、新しいバージョンで何が起こっているかを理解するために数時間の集中した調査が必要になる場合があります。その結果、依存関係の更新は均等に分配され、シニアおよびインターメディエイトのバックエンドエンジニアに割り当てられ、残りはグループのスタッフバックエンドエンジニアに割り当てられます。割り当ては[リリースプロジェクトの Issue テンプレート](https://gitlab.com/gitlab-org/security-products/release/-/blob/master/scripts/templates/release_issue.md.erb) を通じて管理されます。
+破壊的変更が発見された場合は Issue が作成され優先されます。そうでない場合、依存関係の更新は関連するアナライザーの変更履歴に詳述され、変更を利用した新しいバージョンがリリースされます。これには多くの作業が必要であり、新しいバージョンで何が起こっているかを理解するために数時間の集中した調査が必要になる場合があります。その結果、依存関係の更新は均等に分配され、シニアおよびインターメディエイトのバックエンドエンジニアに割り当てられ、残りはグループのスタッフバックエンドエンジニアに割り当てられます。割り当ては[リリースプロジェクトの Issue テンプレート](https://gitlab.com/gitlab-org/security-products/release/-/blob/master/scripts/templates/release_issue.md.erb)を通じて管理されます。
 
 割り当てられたバックエンドエンジニアは、依存関係のオープンソースコミュニティとのグループの主要な連絡役です。エンジニアは、特に Critical または High のセキュリティ検出結果が確認された場合は特に、それらのプロジェクトに貢献することが期待されます。
 
@@ -194,16 +194,16 @@ Issue の作成時に重大度／優先度に疑問がある場合や重大度�
 1. 出荷したい新しいバージョンに一致するリリースブランチを見つけます。
 1. 存在しない場合は、対応するタグからブランチを作成します。
 1. 全セキュリティ製品を実行するパイプラインを通じてブランチをプッシュします。
-1. 注意：これらのプロジェクトの一部は複雑なビルドを持っています。Auto DevOps が機能することもありますが、[spotbugs](https://gitlab.com/gitlab-org/security-products/dependencies/spotbugs) などのプロジェクトはスキャンが成功するためにカスタム CI 設定が必要な場合があります。また、これらのプロジェクトにはフィルタリングしないとノイズになる可能性があるテストが含まれています。
+1. 注意：これらのプロジェクトの一部は複雑なビルドを持っています。Auto DevOps が機能することもありますが、[spotbugs](https://gitlab.com/gitlab-org/security-products/dependencies/spotbugs)などのプロジェクトはスキャンが成功するためにカスタム CI 設定が必要な場合があります。また、これらのプロジェクトにはフィルタリングしないとノイズになる可能性があるテストが含まれています。
 1. 発見された潜在的なセキュリティ脆弱性を評価します。
 1. Critical または High の重大度の検出結果を解決するために関連するオープンソースコミュニティと協力します。
-1. GitLab は[セキュアコーディングガイドライン](https://docs.gitlab.com/ee/development/secure_coding_guidelines.html) を公開しており、特定されたリスクを解決しようとする際に役立つリソースとなります。
+1. GitLab は[セキュアコーディングガイドライン](https://docs.gitlab.com/ee/development/secure_coding_guidelines.html)を公開しており、特定されたリスクを解決しようとする際に役立つリソースとなります。
 
 私たちは Critical および High の重大度の脆弱性を含む更新された依存関係を出荷したくありません。このような状況にある場合、問題がパッチされるまで依存関係の更新を保留します。
 
 #### Go セキュリティ修正
 
-golang 自体のセキュリティ更新のためにアナライザーを更新する必要がある場合があります。この状況では、[確立されたリリースプロセス](https://docs.gitlab.com/ee/development/sec/analyzer_development_guide.html#security-and-build-fixes-of-go) に従います。
+golang 自体のセキュリティ更新のためにアナライザーを更新する必要がある場合があります。この状況では、[確立されたリリースプロセス](https://docs.gitlab.com/ee/development/sec/analyzer_development_guide.html#security-and-build-fixes-of-go)に従います。
 
 #### テストと検証
 
@@ -237,4 +237,4 @@ golang 自体のセキュリティ更新のためにアナライザーを更新�
 トリアージの目的は他のチームメンバーが前進できるようにサポートすることです。問題に対処するために開発作業が必要な場合、それは自動的にグループの最優先事項にはならず、既存の計画済み作業を自動的に置き換えることはありません。
 バグ修正や改善をすぐに取り上げるべきかどうかに疑問がある場合は、エンジニアリングマネージャーとプロダクトマネージャーに決断を促すために警告すべきです。
 
-[顧客サクセスのエスカレーション](/handbook/customer-success/csm/escalations/) が宣言された場合、エンジニアリングマネージャーとプロダクトマネージャーの両方に警告し、適切なチームメンバーが既存の作業の優先度を下げてできるだけ早くエスカレーションに対応するよう指定すべきです。
+[顧客サクセスのエスカレーション](/handbook/customer-success/csm/escalations/)が宣言された場合、エンジニアリングマネージャーとプロダクトマネージャーの両方に警告し、適切なチームメンバーが既存の作業の優先度を下げてできるだけ早くエスカレーションに対応するよう指定すべきです。

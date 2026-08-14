@@ -44,7 +44,7 @@ flowchart LR
 トレードオフとして：
 
 - すべての可能なイベントをリストする単一の場所がありません。正しい情報源として、モノリスの
-  [`config/events/`](https://gitlab.com/gitlab-org/gitlab/-/tree/v18.6.4-ee/config/events) または
+  [`config/events/`](https://gitlab.com/gitlab-org/gitlab/-/tree/v18.6.4-ee/config/events)または
   [`ee/config/events/`](https://gitlab.com/gitlab-org/gitlab/-/tree/v18.6.4-ee/ee/config/events)
   のイベント定義を使用してください。
 - 新しいイベントはポストアナライザーとバックエンドが更新されるまで処理されません。
@@ -69,7 +69,7 @@ flowchart LR
 イベントには GitLab モノリスでの対応する定義が必要で、バックエンドの許可リストに追加する必要があります。許可されたイベントのみが処理されます。
 
 1. `config/events/` または `ee/config/events/` にイベント定義を作成します。
-1. [ProcessScanEventsService](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/app/services/security/process_scan_events_service.rb#L9) の許可リストを更新します。
+1. [ProcessScanEventsService](https://gitlab.com/gitlab-org/gitlab/-/blob/master/ee/app/services/security/process_scan_events_service.rb#L9)の許可リストを更新します。
 1. アナライザーからの実際のレポート出力を使用した rspec テストを追加します。
 
 詳細については、

@@ -19,7 +19,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 ### 前提条件
 
 * gcloud（[公式手順](https://cloud.google.com/sdk/install)）— さまざまなコマンドの実行、テストランナー VM へのログインに使用
-* Static Analysis GCP プロジェクト（[リソースセクション](#resourcesacronyms) を参照）— インフラへの変更に必要なアクセス権
+* Static Analysis GCP プロジェクト（[リソースセクション](#resourcesacronyms)を参照）— インフラへの変更に必要なアクセス権
 
 ### GPT テストの実行 {#running-gpt-tests}
 
@@ -32,13 +32,13 @@ Engineering Vault で Static Analysis を検索して、1password から `root` 
 VM へのログインオプション：
 
 * VM に SSH 接続：`gcloud compute ssh --zone us-west1-c gpt-test-runner-2 --project dev-sast-prereceive-8a4574ec`
-* または、[Static Analysis GCP プロジェクト：dev-sast-prereceive-8a4574ec](https://console.cloud.google.com/welcome?project=dev-sast-prereceive-8a4574ec) にアクセスし、`Compute Engine` をクリック、`gpt-test-runner-2` を見つけて `SSH` をクリックします。これによりウェブベースの SSH セッションが起動します。
+* または、[Static Analysis GCP プロジェクト：dev-sast-prereceive-8a4574ec](https://console.cloud.google.com/welcome?project=dev-sast-prereceive-8a4574ec)にアクセスし、`Compute Engine` をクリック、`gpt-test-runner-2` を見つけて `SSH` をクリックします。これによりウェブベースの SSH セッションが起動します。
 
 初回セットアップ（VM からテストを実行するすべての人が必要）：
 
 * `git clone https://gitlab.com/gitlab-org/quality/performance.git`
 * `performance` に cd
-* [この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4) から gcp-2k.json ファイルを `performance` ディレクトリにコピー
+* [この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4)から gcp-2k.json ファイルを `performance` ディレクトリにコピー
 * `.tool-versions` ファイルを作成し、`ruby 3.2.2`（または最新版）を追加
 * `bundle install`
 * ブランチ `secret-detection` をチェックアウト
@@ -56,14 +56,14 @@ VM へのログインオプション：
 * GPT テストは `environments` ディレクトリを含む任意のディレクトリから実行できます
 * ローカルターミナルを開いて `git clone https://gitlab.com/gitlab-org/quality/performance.git`
 * ルートに `environments` ディレクトリを作成
-* [この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4) から gcp-2k.json ファイルをその `environments` ディレクトリにコピー
+* [この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4)から gcp-2k.json ファイルをその `environments` ディレクトリにコピー
 * gcp-2k.json ファイルを必要に応じてリネームし、`name` と `url` の値も変更
 * `git_secret_detection.js` テストのみを実行する場合（例）：`docker run -it -e ACCESS_TOKEN=glpat-REDACTED -v $PWD:/config gitlab/gitlab-performance-tool SD_PUSH_CHECK_ENABLED=true SD_FILES_PER_COMMIT=4 GPT_DEBUG=true SD_FILE_SIZES="10kb" GPT_SKIP_RETRY=true --environment gcp-2k.json --options 60s_40rps.json --tests git_secret_detection.js`
 * すべてのテストを実行する場合：`docker run -it -e ACCESS_TOKEN=glpat-REDACTED -v $PWD:/config gitlab/gitlab-performance-tool --environment gcp-2k.json --options 60s_40rps.json`
 
 ### GET のセットアップ {#setting-up-a-get}
 
-GCP 環境は、プレフィックス `gcp-2k` の 2k リファレンスアーキテクチャを使用した GET で、[Static Analysis GCP プロジェクト：dev-sast-prereceive-8a4574ec](https://console.cloud.google.com/welcome?project=dev-sast-prereceive-8a4574ec) の下にセットアップされています。
+GCP 環境は、プレフィックス `gcp-2k` の 2k リファレンスアーキテクチャを使用した GET で、[Static Analysis GCP プロジェクト：dev-sast-prereceive-8a4574ec](https://console.cloud.google.com/welcome?project=dev-sast-prereceive-8a4574ec)の下にセットアップされています。
 
 #### 新しい環境のブートストラップ
 
@@ -71,22 +71,22 @@ GCP 環境は、プレフィックス `gcp-2k` の 2k リファレンスアー�
 
 初回ステップ：
 
-* [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit) をクローンして cd で移動
-* [この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4) から `bootstrap.sh` をルートにコピーし、必要に応じて更新
+* [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)をクローンして cd で移動
+* [この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4)から `bootstrap.sh` をルートにコピーし、必要に応じて更新
 * 実行可能にする必要がある場合があります：`chmod +x bootstrap.sh`
 
 注記、`bootstrap.sh` には 1 回だけ実行するステップと、新しい `$GCP_ENV_PREFIX` のセットアップに必要なステップがあり、まだ分離する必要があります。
 
 新しい `$GCP_ENV_PREFIX` の追加手順：
 
-* [Terraform による環境のプロビジョニング](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_provision.md) を Terraform のセットアップガイドとして使用します（GCP を使用しているので AWS の手順は無視してください）
-* クローンした [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit) 内にいることを確認
+* [Terraform による環境のプロビジョニング](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_provision.md)を Terraform のセットアップガイドとして使用します（GCP を使用しているので AWS の手順は無視してください）
+* クローンした [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)内にいることを確認
 * `bootstrap.sh` の変数を必要に応じて更新
 * `./bootstrap.sh` を実行
 * 最後に表示された IP アドレスをメモ
 * SSH キーがサービスアカウントに追加されたときに作成されたユーザー名をメモ（後で使用）
 * `mkdir -p terraform/environments/$GCP_ENV_PREFIX` を実行
-* [この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4) から `environment.tf`、`main.tf`、`variables.tf` を対応するディレクトリにコピー
+* [この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4)から `environment.tf`、`main.tf`、`variables.tf` を対応するディレクトリにコピー
 * 必要に応じてこれらの `*.tf` ファイルを更新：
   * `variables.tf` の `external_ip` の下に先ほど取得した IP アドレスを追加
   * `environment.tf` に[適切なサービスアカウントプレフィックス](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_provision.md#service-account-prefix-gcp)を追加
@@ -95,13 +95,13 @@ GCP 環境は、プレフィックス `gcp-2k` の 2k リファレンスアー�
 * `terraform init` を実行
 * `terraform apply` を実行
 * 小さなお祝い :tada：
-* [Ansible による環境の設定](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_configure.md) を Ansible のセットアップガイドとして使用します（GCP を使用しているので AWS の手順は無視してください）
-* [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit) のルートディレクトリに cd
+* [Ansible による環境の設定](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_configure.md)を Ansible のセットアップガイドとして使用します（GCP を使用しているので AWS の手順は無視してください）
+* [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)のルートディレクトリに cd
 * `mkdir -p ansible/environments/$GCP_ENV_PREFIX/files/gitlab_configs` を実行
 * `mkdir -p ansible/environments/$GCP_ENV_PREFIX/files/gitlab_tasks` を実行
 * `mkdir -p ansible/environments/$GCP_ENV_PREFIX/inventory` を実行
-* [先ほど参照した MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4) から、`environments/gcp-2k/files/gitlab_configs/gitlab_rails.rb.j2` を `ansible/environments/$GCP_ENV_PREFIX/files/gitlab_configs` にコピー — これはライセンスが設定適用時に正しく追加されるために必要です
-* [その MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4) から `vars.yml` と `gcp_2k.gcp.yml` をその `/inventory` ディレクトリにコピー
+* [先ほど参照した MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4)から、`environments/gcp-2k/files/gitlab_configs/gitlab_rails.rb.j2` を `ansible/environments/$GCP_ENV_PREFIX/files/gitlab_configs` にコピー — これはライセンスが設定適用時に正しく追加されるために必要です
+* [その MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4)から `vars.yml` と `gcp_2k.gcp.yml` をその `/inventory` ディレクトリにコピー
 * `gcp_2k.gcp.yml` を `$GCP_ENV_PREFIX`（アンダースコアを使用）に合わせてリネームし、両方の `*.yml` ファイルを必要に応じて更新
 * `monitor.yml` を `ansible/environments/$GCP_ENV_PREFIX/files/gitlab_tasks` にコピー
 * モニタリングをセットアップする場合は、他のファイルとフォルダもコピーする必要がある場合があります：
@@ -113,28 +113,28 @@ GCP 環境は、プレフィックス `gcp-2k` の 2k リファレンスアー�
 * 必要に応じて[他の変数](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_configure.md#environment-config-varsyml)（パスワード／シークレット）を設定してください（リファレンスアーキテクチャによって異なりますが、少なくとも `gitlab_root_password`、`postgres_password`、`gitaly_token`、`redis_password` が必要です）
 * `prefix`、`external_url` の更新と `gitlab_license_file` などのいくつかの行のコメント解除も必要になる場合があります
 * その他の変数については[ドキュメント](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_configure.md#environment-config-varsyml)と他のリファレンスアーキテクチャファイル（例：[25k リファレンスアーキテクチャのもの](https://gitlab.com/gitlab-com/gl-infra/software-delivery/framework/get-environments/ra-test-environments/-/blob/main/configs/reference_architectures/25k/ansible/inventory/vars.yml?ref_type=heads)）を参照してください
-* [Support Super Form を使用して](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/) 新しい Ultimate ライセンスを取得
+* [Support Super Form を使用して](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/)新しい Ultimate ライセンスを取得
 * ライセンスファイルを（リネームせず）`/ansible/environments/$GCP_ENV_PREFIX/files` に追加
-* ルートディレクトリから、[仮想環境での Ansible のインストール](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_configure.md#installing-ansible-with-a-virtual-environment) の手順に従ってください
+* ルートディレクトリから、[仮想環境での Ansible のインストール](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_configure.md#installing-ansible-with-a-virtual-environment)の手順に従ってください
 * `ansible` ディレクトリに cd
 * `ansible-playbook -i environments/$GCP_ENV_PREFIX/inventory playbooks/all.yml` を実行
 * インスタンスにログイン後、Ultimate ライセンスが適用されない場合は、手動でライセンスをアップロードする必要がある場合があります
 
 #### 既存の環境のセットアップ（$GCP_ENV_PREFIX）
 
-* [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit) をクローン（まだ存在しない場合）して cd で移動
+* [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)をクローン（まだ存在しない場合）して cd で移動
 * `mkdir terraform/environments/$GCP_ENV_PREFIX` を実行
 * `mkdir -p ansible/environments/$GCP_ENV_PREFIX/files/gitlab_tasks` を実行
-* https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs に移動（[この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4) のマージ待ち）
+* https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs に移動（[この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4)のマージ待ち）
 * `configs/$GCP_ENV_PREFIX/terraform/*.tf` ファイルを `terraform/environments/$GCP_ENV_PREFIX` ディレクトリにコピー
 * `configs/$GCP_ENV_PREFIX/ansible/*.yml` ファイルを `ansible/environments/$GCP_ENV_PREFIX` ディレクトリにコピー
-* ルートディレクトリから、[仮想環境での Ansible のインストール](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_configure.md#installing-ansible-with-a-virtual-environment) の手順に従ってください
+* ルートディレクトリから、[仮想環境での Ansible のインストール](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_configure.md#installing-ansible-with-a-virtual-environment)の手順に従ってください
 * `ansible` ディレクトリに cd
 * `ansible-playbook -i environments/$GCP_ENV_PREFIX/inventory playbooks/all.yml` を実行
 
 #### データの投入
 
-* [GPT リポジトリ](https://gitlab.com/gitlab-org/quality/performance) をクローン
+* [GPT リポジトリ](https://gitlab.com/gitlab-org/quality/performance)をクローン
 * データのインポートを以下の 2 つのステップに分けます
 
 水平データ：
@@ -168,7 +168,7 @@ docker run -it \
 ### 新しいビルドの再デプロイ {#re-deploying-a-new-build}
 
 * 今後の `GET のセットアップ` セクションでカバーされる前提条件ステップがあります
-* クローンした [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit) に移動して cd で移動
+* クローンした [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)に移動して cd で移動
 * ターミナルでまだアクティベートされていない場合は、`. ./get-python-env/bin/activate` を実行
 * クローンした GET リポジトリの `ansible` ディレクトリに cd
 * どの 3 つのデプロイ方法を対象としているかを確認し、デプロイ前に変更が必要かどうかを `ansible/environments/$GCP_ENV_PREFIX/inventory/vars.yml` で確認
@@ -185,7 +185,7 @@ Grafana ダッシュボードは `/-/grafana/dashboards/` で確認できます�
 * ansible/environments/dashboards.yaml
 * ansible/environments/datasources.yaml
 
-これらのファイルは[この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4) で確認できます。
+これらのファイルは[この MR](https://gitlab.com/gitlab-org/secure/pocs/gitlab-environment-toolkit-configs/-/merge_requests/4)で確認できます。
 
 詳細は GET ドキュメントの[カスタムタスクセクション](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_advanced.md#custom-tasks)を参照してください。
 

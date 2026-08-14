@@ -14,7 +14,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
  1. **サービスはどこにデプロイされていますか？**
 
-    サービスは [Runway](https://docs.runway.gitlab.com/) にデプロイされています。Runway は、コンテナを管理するために内部で [Google Cloud Run](https://cloud.google.com/run/docs/overview/what-is-cloud-run) を使用しています。
+    サービスは [Runway](https://docs.runway.gitlab.com/)にデプロイされています。Runway は、コンテナを管理するために内部で [Google Cloud Run](https://cloud.google.com/run/docs/overview/what-is-cloud-run)を使用しています。
 
  2. **サービスはいくつの環境にデプロイされますか？**
 
@@ -30,7 +30,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
  5. **サービスの環境変数はどこに保存されており、誰が変更できますか？**
 
-    非機密変数は[プロジェクトリポジトリ](https://gitlab.com/gitlab-org/security-products/secret-detection/secret-detection-service/-/tree/main/.runway?ref_type=heads)の `env-<environment>.yml` ファイルに保存されており、機密変数は [Hashicorp Vault](https://vault.gitlab.net/ui/) に保存されています。現在、~"group::secret detection" チームが Vault へのアクセス権を持っています。
+    非機密変数は[プロジェクトリポジトリ](https://gitlab.com/gitlab-org/security-products/secret-detection/secret-detection-service/-/tree/main/.runway?ref_type=heads)の `env-<environment>.yml` ファイルに保存されており、機密変数は [Hashicorp Vault](https://vault.gitlab.net/ui/)に保存されています。現在、~"group::secret detection" チームが Vault へのアクセス権を持っています。
 
  6. **Vault の SD サービス変数はどこで見つけられますか？**
 
@@ -78,7 +78,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 17. **SLO 違反が発生した場合にアラートは設定されていますか？**
 
-    はい。アラートは[こちら](https://dashboards.gitlab.net/alerting/list?search=secret-detection&view=grouped)に設定されています。アラートは、Apdex 違反、エラーレート違反、トラフィック停止（サーバーシグナルあり、トラフィックなし）、およびトラフィック不在（ヘルスチェックを含むサーバーシグナルなし）について過去30分間でトリガーされます。
+    はい。アラートは[こちら](https://dashboards.gitlab.net/alerting/list?search=secret-detection&view=grouped)に設定されています。アラートは、Apdex 違反、エラーレート違反、トラフィック停止（サーバーシグナルあり、トラフィックなし）、およびトラフィック不在（ヘルスチェックを含むサーバーシグナルなし）について過去 30 分間でトリガーされます。
 
 18. **SLO 違反が発生した場合はどうなりますか？**
 

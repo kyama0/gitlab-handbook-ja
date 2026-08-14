@@ -154,7 +154,7 @@ flowchart TD
 テーブルに変換するのはコストの高いマイグレーションです（[大規模テーブル](#large-tables)を参照）。その後は、パーティションに
 含まれていた行数に関係なく `DETACH PARTITION CONCURRENTLY` は低コストであり、最初からパーティション化されたテーブルでは
 マイグレーションコストを完全に回避できます。したがって、`delete_rows` はデータ量に比例して継続的にコストを払い、`drop_partition` は一度だけ払います。
-詳しくは PlanetScale の [The only scalable delete](https://planetscale.com/blog/the-only-scalable-delete) を参照してください。
+詳しくは PlanetScale の [The only scalable delete](https://planetscale.com/blog/the-only-scalable-delete)を参照してください。
 
 `delete_rows` は、適切なパーティションキーがなく、列数とインデックスが少なく、トラフィックが少ないテーブルでは依然として妥当です。
 理由を `work_item` に記録してください。
@@ -177,11 +177,11 @@ GitLab.com のテーブルのハードリミットは 100 GB です。私たち�
 保持ポリシーの適用が実際に整備された時点で `true` に切り替えることができます。この分離があるのは、ポリシーは
 テーブル作成時に宣言されますが、適用の実装は後から導入されることが多いためです。
 
-#### Work item
+#### ワークアイテム
 
 保持に関する判断の根拠と、テーブルに適用する実装計画の両方を記録する Issue またはエピックです。
-`enforcing` フラグを有効にするには、この Work item を指定する必要があります。
-データベースチームは、この Work item を使用して適用の進捗を追跡します。
+`enforcing` フラグを有効にするには、このワークアイテムを指定する必要があります。
+データベースチームは、このワークアイテムを使用して適用の進捗を追跡します。
 
 #### 一時停止メカニズム
 

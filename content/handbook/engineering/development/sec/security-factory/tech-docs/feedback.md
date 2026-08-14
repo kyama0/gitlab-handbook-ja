@@ -80,7 +80,7 @@ flowchart LR
 `cve` プロパティは [Secure レポートフォーマット](https://docs.gitlab.com/ee/user/application_security/terminology/#secure-report-format)の一部です。
 
 Rails アプリケーションでレポートを解析する際、この `cve` プロパティは
-ファインディングオブジェクトの[`compare_key` 属性](https://gitlab.com/gitlab-org/gitlab/-/blob/0d013cc934887497874f2f1dc2411015e8575084/ee/lib/gitlab/ci/parsers/security/common.rb#L62)にアンマーシャルされます。
+ファインディングオブジェクトの [`compare_key` 属性](https://gitlab.com/gitlab-org/gitlab/-/blob/0d013cc934887497874f2f1dc2411015e8575084/ee/lib/gitlab/ci/parsers/security/common.rb#L62)にアンマーシャルされます。
 
 この `compare_key` は次に [SHA1 にハッシュ化](https://gitlab.com/gitlab-org/gitlab/-/blob/f2d2f348a3ee7a2621bfda6aabf27834fdc60706/ee/lib/gitlab/ci/reports/security/finding.rb#L70-72)され、
 [`project_fingerprint` 属性に割り当てられます](https://gitlab.com/gitlab-org/gitlab/-/blob/f2d2f348a3ee7a2621bfda6aabf27834fdc60706/ee/lib/gitlab/ci/reports/security/finding.rb#L37)。

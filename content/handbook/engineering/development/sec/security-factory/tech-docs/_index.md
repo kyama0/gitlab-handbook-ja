@@ -38,7 +38,7 @@ flowchart LR
 
 スキャン部分は、指定されたリソースの脆弱性を検出し、結果をエクスポートする役割を担います。
 スキャンは、[アナライザー](https://docs.gitlab.com/ee/user/application_security/terminology/#analyzer)と呼ばれるいくつかの小さなプロジェクトを通じて CI ジョブで実行されます。これらのプロジェクトは[アナライザーサブグループ](https://gitlab.com/gitlab-org/security-products/analyzers)にあります。
-アナライザーは、GitLab に統合するために [Scanners](https://docs.gitlab.com/ee/user/application_security/terminology/#scanner) と呼ばれる社内または外部のセキュリティツールをラップする小さなラッパーです。
+アナライザーは、GitLab に統合するために [Scanners](https://docs.gitlab.com/ee/user/application_security/terminology/#scanner)と呼ばれる社内または外部のセキュリティツールをラップする小さなラッパーです。
 アナライザーは主に Go で書かれており、[共通 Go ライブラリ](https://gitlab.com/gitlab-org/security-products/analyzers/common)を利用しています。
 
 一部のサードパーティインテグレーターは、同じアーキテクチャを活用した[インテグレーションドキュメント](https://docs.gitlab.com/ee/development/integrations/secure/)に従うことで、追加のスキャナーを利用可能にしています。
@@ -70,7 +70,7 @@ flowchart LR
 
 セキュリティ機能全体の主要なワークロードは、高速な書き込みレートと履歴データに対する集計分析に依存しています。これらのタイプの OLAP シナリオは PostgreSQL のようなトランザクション型データストアには適しておらず、バッチベースの挿入、高い読み取り比率、ワイドテーブルの恩恵を受けることができます。
 
-このような場合、GitLab のテクノロジースタックへの [ClickHouse](https://clickhouse.com) の導入は、セキュリティ機能を将来に向けてスケールさせる重要な機会を提供します。
+このような場合、GitLab のテクノロジースタックへの [ClickHouse](https://clickhouse.com)の導入は、セキュリティ機能を将来に向けてスケールさせる重要な機会を提供します。
 
 データストアとしての ClickHouse は、セクション内のいくつかの主要なワークフローを強化する可能性があります。
 
@@ -92,4 +92,4 @@ flowchart LR
 
 ## ブラウンバッグセッション
 
-Secure チームメンバーは、さまざまなトピックについて [ブラウンバッグセッション](https://gitlab.com/gitlab-org/secure/brown-bag-sessions#brown-bag-sessions)を通じて知識を共有しています。
+Secure チームメンバーは、さまざまなトピックについて[ブラウンバッグセッション](https://gitlab.com/gitlab-org/secure/brown-bag-sessions#brown-bag-sessions)を通じて知識を共有しています。

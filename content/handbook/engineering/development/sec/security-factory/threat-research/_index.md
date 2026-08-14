@@ -39,7 +39,7 @@ Threat Research（VR）はリサーチ＆ディベロップメントチームで
    - プロダクトグループと協調・調整した短期的な取り組み。
    - Application Security Testing ステージのリーダーシップと協調・調整した長期的な取り組み。
 3. GitLab 依存関係スキャンおよびコンテナスキャンで使用される [GitLab Advisory Database](https://gitlab.com/gitlab-org/security-products/gemnasium-db)を管理・発展させる。
-4. [CVE Numbering Authority（CNA）の職務](/handbook/engineering/development/sec/security-factory/threat-research/cna/)を遂行する。GitLab は [CNA](https://docs.gitlab.com/ee/user/application_security/terminology/#cna) です。
+4. [CVE Numbering Authority（CNA）の職務](/handbook/engineering/development/sec/security-factory/threat-research/cna/)を遂行する。GitLab は [CNA](https://docs.gitlab.com/ee/user/application_security/terminology/#cna)です。
 
 ## 共通リンク
 
@@ -59,7 +59,7 @@ Threat Research（VR）はリサーチ＆ディベロップメントチームで
 - 評価基準：進捗と成功をどのように測定するか？
 - レビュアー：Application Security Testing プロダクトマネージャーとエンジニアリングマネージャー
 - 公開の可能性：この作業を発表、ブログ投稿、または特許申請できるか？
-- 追跡：[gitlab-org/gitlab の Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=group%3A%3Athreat%20research&first_page_size=100) に `group::threat research` ラベルを使用し、[SSOT](/handbook/company/culture/all-remote/)とする
+- 追跡：[gitlab-org/gitlab の Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/?sort=updated_desc&state=opened&label_name%5B%5D=group%3A%3Athreat%20research&first_page_size=100)に `group::threat research` ラベルを使用し、[SSOT](/handbook/company/culture/all-remote/)とする
 
 これらのタイプのイニシアチブは、イニシアチブの性質に応じて `threat research::initiative` ラベルを使用して追跡されます。
 

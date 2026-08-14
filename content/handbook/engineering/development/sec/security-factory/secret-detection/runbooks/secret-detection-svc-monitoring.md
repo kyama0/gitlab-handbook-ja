@@ -19,7 +19,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 * **リソース飽和度**：飽和度は現在利用されている有限リソースの比率の指標です。
 * 集約されたサービスレベル指標（SLI）
   * **Apdex スコア**：Apdex はサービスの許容可能な時間内に完了するリクエストの指標です。
-  * **エラー比率**：エラーレートは1秒あたりの未処理サービス例外の指標です。可能な場合はクライアントエラーを除外します。
+  * **エラー比率**：エラーレートは 1 秒あたりの未処理サービス例外の指標です。可能な場合はクライアントエラーを除外します。
   * **リクエストレート**：操作レートは、このサービス内のすべてのコンポーネントで処理されているすべてのリクエストの合計です。単一のユーザーリクエストが複数のコンポーネントへのリクエストにつながる場合があることに注意してください。
 * サービスによって発生する繰り返しのアプリケーションエラー。
 
@@ -27,13 +27,13 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 上記の監視対象のほとんど（リソース飽和度と集約 SLI）は、[**サービス概要ダッシュボード**](https://dashboards.gitlab.net/d/secret-detection-main/secret-detection3a-overview?orgId=1)で確認できます。
 
-繰り返しのアプリケーションエラーは通常、GitLab エラーモニタリング/[Sentry](https://new-sentry.gitlab.net/organizations/gitlab) ツールで確認できます。ただし、まだサービスとエラーモニタリングツールを統合していません。統合の進捗を追跡するには、この [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/499067) を参照してください。
+繰り返しのアプリケーションエラーは通常、GitLab エラーモニタリング/[Sentry](https://new-sentry.gitlab.net/organizations/gitlab) ツールで確認できます。ただし、まだサービスとエラーモニタリングツールを統合していません。統合の進捗を追跡するには、この [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/499067)を参照してください。
 
 それまでの間、アプリケーション関連のエラーを探すために `ERROR` レベルのログメッセージをログで確認してください。**ログ**は[こちら](https://console.cloud.google.com/run/detail/us-east1/secret-detection/observability/logs?project=gitlab-runway-production)で確認できます。
 
 ### サービスの SLO 違反があるかどうかはどうすれば分かりますか？
 
-サービスは SLO 違反が発生した場合に Slack アラートを受信します。現在、alertmanager によって複数のメトリクスを追跡する[6つのアラート](https://dashboards.gitlab.net/alerting/list?search=secret-detection)が設定されています。
+サービスは SLO 違反が発生した場合に Slack アラートを受信します。現在、alertmanager によって複数のメトリクスを追跡する [6 つのアラート](https://dashboards.gitlab.net/alerting/list?search=secret-detection)が設定されています。
 
 SLO 違反が発生した場合、alertmanager は `#feed_alerts-general` と `#g_secure-secret-detection` Slack チャンネルにアラートを送信します。
 
