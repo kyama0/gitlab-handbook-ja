@@ -89,6 +89,10 @@ regexes = [
 # 固定サンプル（GitLab Education Services のラボ手順）であり、本物の機密情報
 # ではないため、ファイル単位で許可する。
 #
+# Secret Push Protection の troubleshooting には、動作確認用の固定ダミー PAT
+# `glpat-12345678901234567890` が upstream 原文に明記されている。この完全一致値も
+# 実シークレットではないため許可する。別の `glpat-` 値には一致させない。
+#
 # 設計判断:
 #   - `paths` は gitleaks の allowlist で正規表現として評価され、`MatchString()` で
 #     部分一致する。意図せず広いファイル群が許可されないよう、必ず `^…$` で
@@ -97,7 +101,11 @@ regexes = [
 #     増やした場合でも追従しやすくする（教材ページは翻訳パイプラインで自動同期
 #     するのみで、私たちが新規にトークンを書き込むことはない）。
 [allowlist]
-description = "Upstream education-services lab pages contain sample tokens/keys for training"
+description = "Upstream training pages and one fixed Secret Push Protection dummy PAT"
+regexTarget = "line"
+regexes = [
+  '''glpat-12345678901234567890''',
+]
 paths = [
   '''^content/ja/handbook/customer-success/professional-services-engineering/education-services/secessentialshandson1\.md$''',
   '''^content/ja/handbook/customer-success/professional-services-engineering/education-services/ilt-labs/advgitlabcicdhandsonlab1\.md$''',
