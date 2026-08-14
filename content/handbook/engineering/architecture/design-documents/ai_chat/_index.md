@@ -9,7 +9,7 @@ owning-stage: "ai"
 participating-stages: ["duo-chat"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/ai_chat/
-upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
 lastmod: "2026-08-13T15:33:31+00:00"
 translated_at: "2026-08-14T10:12:00+09:00"
 translator: codex

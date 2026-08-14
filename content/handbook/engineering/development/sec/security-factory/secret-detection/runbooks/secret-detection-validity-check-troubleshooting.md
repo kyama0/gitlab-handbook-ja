@@ -1,7 +1,7 @@
 ---
 title: "シークレット検出有効性チェック トラブルシューティング"
 upstream_path: /handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-detection-validity-check-troubleshooting/
-upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
 translated_at: "2026-08-14T07:55:00+09:00"
 translator: codex
 stale: false

@@ -1,7 +1,7 @@
 ---
 title: "Static Analysis グループが定義した誤検知"
 upstream_path: /handbook/engineering/development/sec/security-factory/code-scanning/false_positives/
-upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
 translated_at: "2026-08-14T08:35:00+09:00"
 translator: codex
 stale: false

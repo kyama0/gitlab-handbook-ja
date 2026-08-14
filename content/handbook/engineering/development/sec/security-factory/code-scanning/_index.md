@@ -2,7 +2,7 @@
 title: "Code Scanning グループ"
 description: "Code Scanning グループは、お客様のソフトウェアリポジトリ向けに GitLab の Static Application Security Testing（SAST）機能を開発します。"
 upstream_path: /handbook/engineering/development/sec/security-factory/code-scanning/
-upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
 translated_at: "2026-08-14T08:35:00+09:00"
 translator: codex
 stale: false

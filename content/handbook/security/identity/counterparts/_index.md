@@ -2,7 +2,7 @@
 title: "Identity カウンターパート"
 description: "Identity and Access Management (IAM) およびロールベースアクセス制御 (RBAC) は、GitLab の複数のチームにまたがる共有責任です。このページには、私たちのすべての安定したカウンターパートのディレクトリがあります。"
 upstream_path: /handbook/security/identity/counterparts/
-upstream_sha: "cd448feba02b00726e216b7b3cfed717822b37b6"
+upstream_sha: "c649549e971e74175edf1d5bc1190fcc86e359e6"
 translated_at: "2026-08-14T06:06:19+09:00"
 translator: claude
 stale: false

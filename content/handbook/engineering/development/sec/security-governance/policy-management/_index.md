@@ -2,7 +2,7 @@
 title: Policy Management グループ
 description: "GitLab の Policy Management チームは、スキャンを強制し、脆弱性が検出された場合にセキュリティ承認を必須とするソリューションの作成を担っています。"
 upstream_path: /handbook/engineering/development/sec/security-governance/policy-management/
-upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
 lastmod: "2026-08-13T15:10:33+03:00"
 translated_at: "2026-08-14T06:30:00+09:00"
 translator: codex

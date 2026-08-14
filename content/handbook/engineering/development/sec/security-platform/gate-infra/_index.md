@@ -4,7 +4,7 @@ description: >-
   GATE Infra グループは、GitLab Adaptive Trust Environment のインフラストラクチャと
   Cloud Connector v2 を構築および運用します。
 upstream_path: /handbook/engineering/development/sec/security-platform/gate-infra/
-upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
 lastmod: "2026-08-13T15:10:33+03:00"
 translated_at: "2026-08-14T06:22:26+09:00"
 translator: codex

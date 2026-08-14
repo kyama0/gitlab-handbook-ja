@@ -2,7 +2,7 @@
 title: "JiHu サポート"
 description: "GitLab Inc チームが JiHu にサポートを提供する方法"
 upstream_path: /handbook/finance/jihu-support/
-upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
 translated_at: "2026-08-14T06:13:39+09:00"
 translator: claude
 stale: false

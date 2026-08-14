@@ -10,7 +10,7 @@ owning-stage: "~devops::data stores"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/data_retention_policy_framework/
-upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
 lastmod: "2026-08-13T11:39:25+02:00"
 translated_at: "2026-08-14T10:12:00+09:00"
 translator: codex

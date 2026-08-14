@@ -2,7 +2,7 @@
 title: "依存関係情報のデータモデル"
 description: "このドキュメントでは、依存関係スキャンとライセンススキャンの新機能を実現するためのセキュリティレポートとデータベーススキーマへの追加について検討します。"
 upstream_path: /handbook/engineering/development/sec/security-factory/tech-docs/data-model-for-dependencies-information/
-upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
 translated_at: "2026-08-14T07:35:00+09:00"
 translator: codex
 stale: false

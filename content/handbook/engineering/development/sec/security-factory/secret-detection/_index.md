@@ -2,7 +2,7 @@
 title: Secret Detection グループ
 description: "Secret Detection グループは、GitLab 上での認証情報、トークン、その他のシークレットの漏洩からお客様を保護します。"
 upstream_path: /handbook/engineering/development/sec/security-factory/secret-detection/
-upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
 translated_at: "2026-08-14T07:45:00+09:00"
 translator: codex
 stale: false

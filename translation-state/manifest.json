@@ -12850,7 +12850,7 @@
     },
     "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:13:39+09:00",
       "model": "codex",
       "input_hash": "1c91f7c5baa5bf504deb7fd9ecabd9bff1b4e22d1dd011e7cd91e7841da2dace",
@@ -15450,7 +15450,7 @@
     },
     "content/handbook/finance/jihu-support/_index.md": {
       "path": "content/handbook/finance/jihu-support/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:13:39+09:00",
       "model": "codex",
       "input_hash": "8453248febded3ccaae9c6eddc248b0c0afa52e2a3368d96e61902f087d5d2f9",
@@ -25786,7 +25786,7 @@
     },
     "content/handbook/security/corporate/team/_index.md": {
       "path": "content/handbook/security/corporate/team/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:06:19+09:00",
       "model": "codex",
       "input_hash": "e83f10c0a1cacb39c435c3389b4adb04f0e3ce39b4da73d9954d4d61e971d8d9",
@@ -26610,7 +26610,7 @@
     },
     "content/handbook/security/identity/counterparts/_index.md": {
       "path": "content/handbook/security/identity/counterparts/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:06:19+09:00",
       "model": "codex",
       "input_hash": "d82da9218cdbae4af8e26599f07d80b061b05b80fa480d421a94e73db0f54576",
@@ -27898,7 +27898,7 @@
     },
     "content/handbook/security/corporate/how-we-work/_index.md": {
       "path": "content/handbook/security/corporate/how-we-work/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:06:19+09:00",
       "model": "codex",
       "input_hash": "e72f85ad8407638da0838c2a008d769f932bdda009469cc0b52b9f0baaee59ef",
@@ -27906,7 +27906,7 @@
     },
     "content/handbook/security/corporate/engineering/_index.md": {
       "path": "content/handbook/security/corporate/engineering/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:06:19+09:00",
       "model": "codex",
       "input_hash": "9f9b39252289e4626514905f39bb9eccd77654c4b6ab75428b9d0bfb7dfc368e",
@@ -35770,7 +35770,7 @@
     },
     "content/handbook/eta/css/zendesk/action-flows/_index.md": {
       "path": "content/handbook/eta/css/zendesk/action-flows/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:13:39+09:00",
       "model": "codex",
       "input_hash": "96fd255135e007159ed19a3c3e7925a6f9f2ac20fe50172374cac285171d368e",
@@ -35778,7 +35778,7 @@
     },
     "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/decisions/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/gitlab-delivery/decisions/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:13:39+09:00",
       "model": "codex",
       "input_hash": "a7dc5fe4034d18e0ac1b0fc0203e567c96a0fb067a150522f09354a6cdab5c95",
@@ -35786,7 +35786,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:13:39+09:00",
       "model": "codex",
       "input_hash": "ac1efd7f6bf61c6137182e62a69b946020befff0060166f5736741c22632f6b7",
@@ -35794,7 +35794,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/secrets-manager/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/secrets-manager/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:13:39+09:00",
       "model": "codex",
       "input_hash": "aead057ca46de26b5e3f290df14ac792e0a79b6109c2c91119c5dd79d3b1c5ed",
@@ -35802,7 +35802,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/secrets-manager/ai-prompts.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/secrets-manager/ai-prompts.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:13:39+09:00",
       "model": "codex",
       "input_hash": "84e8fad5106bf87661192b1e02551dac1ee98bdc3cb0d7624fadba39b24f378a",
@@ -35810,7 +35810,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/secrets-manager/application.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/secrets-manager/application.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:13:39+09:00",
       "model": "codex",
       "input_hash": "14e43957595089fb8ebc7fd0365f2e1ce74f84fae0fcaed3f3672c61f3bcf5c1",
@@ -35818,7 +35818,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/secrets-manager/jtbd.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/secrets-manager/jtbd.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:22:26+09:00",
       "model": "codex",
       "input_hash": "d8a418975415fdb3e1104428984d572517af485d7672338145c000cd144a0006",
@@ -35826,7 +35826,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/secrets-manager/openbao.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/secrets-manager/openbao.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:22:26+09:00",
       "model": "codex",
       "input_hash": "3ef3c965e3e7f0b5757f72776abf59cda68c2fdd4695520dbe423babd0148b36",
@@ -35834,7 +35834,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/gate-infra/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/gate-infra/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:22:26+09:00",
       "model": "codex",
       "input_hash": "c877fbe02bf2cc7092058c6a1219c5fff4d5da8089af45b450cd76df1575241d",
@@ -35842,7 +35842,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/gate-core/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/gate-core/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:22:26+09:00",
       "model": "codex",
       "input_hash": "2f9e970aeef5cef82204d03f832c855f6019a4bc808130416b32a5a4833e1bd8",
@@ -35850,7 +35850,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/dependency-firewall/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/dependency-firewall/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:22:26+09:00",
       "model": "codex",
       "input_hash": "3c6b64de9472d26af6cdc13068c9eacff984d20e64359bcbfcb7ec09ed7f438f",
@@ -35858,7 +35858,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/dependency-firewall/api-security.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/dependency-firewall/api-security.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:22:26+09:00",
       "model": "codex",
       "input_hash": "3f3b1e6785082c79ae1a8ad5c7af20d7ff9469149d8ce89460a8dece774142ae",
@@ -35866,7 +35866,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/dependency-firewall/dynamic-analysis.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/dependency-firewall/dynamic-analysis.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:22:26+09:00",
       "model": "codex",
       "input_hash": "de1e642bff6f0bfdb3ababa0bd0f4638cc8bc6f1c84d04f00c74ba061cdf8247",
@@ -35874,7 +35874,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/build-security/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/build-security/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:22:26+09:00",
       "model": "codex",
       "input_hash": "a4b11e4e1041457507ef4c89142b17ec6647096b5c2aa6c76d63a3d8f4239c81",
@@ -35882,7 +35882,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/authorization/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/authorization/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:30:00+09:00",
       "model": "codex",
       "input_hash": "3e21cbecad260714e5cc3c97cc0c1b51cf2e14a5f6cf5c04eb7e918d985d465b",
@@ -35890,7 +35890,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/authentication/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/authentication/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:30:00+09:00",
       "model": "codex",
       "input_hash": "0e91872de83f8b0102615073bff108b4477d076585820638a20db28402eca929",
@@ -35898,7 +35898,7 @@
     },
     "content/handbook/engineering/development/sec/security-platform/abuse-engineering/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-platform/abuse-engineering/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:30:00+09:00",
       "model": "codex",
       "input_hash": "022c1b732d4b1b19c66794398b36bbbdb6578afc0feb40b3b4397fc8b663818c",
@@ -35906,7 +35906,7 @@
     },
     "content/handbook/engineering/development/sec/security-governance/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-governance/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:30:00+09:00",
       "model": "codex",
       "input_hash": "1842804172186baad151f1bdb7781571789179ec2b1da3bf2ecbcb1f87b855bd",
@@ -35914,7 +35914,7 @@
     },
     "content/handbook/engineering/development/sec/security-governance/planning.md": {
       "path": "content/handbook/engineering/development/sec/security-governance/planning.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:30:00+09:00",
       "model": "codex",
       "input_hash": "8e4d8a6a18bd63625cdc351dec9a5e2186739adb5aeea4fe48191d68ac882e51",
@@ -35922,7 +35922,7 @@
     },
     "content/handbook/engineering/development/sec/security-governance/security-controls/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-governance/security-controls/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:30:00+09:00",
       "model": "codex",
       "input_hash": "da3de723041373733ccc5e4b381b5e96d7926ed7e56a06cc5caf9e563d8e74f1",
@@ -35930,7 +35930,7 @@
     },
     "content/handbook/engineering/development/sec/security-governance/policy-management/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-governance/policy-management/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:30:00+09:00",
       "model": "codex",
       "input_hash": "c7339d61a49480a402e927b7324c6646b3624a21784e467b42498efd0f424829",
@@ -35938,7 +35938,7 @@
     },
     "content/handbook/engineering/development/sec/security-governance/policy-management/feature_process.md": {
       "path": "content/handbook/engineering/development/sec/security-governance/policy-management/feature_process.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:50:00+09:00",
       "model": "codex",
       "input_hash": "207902c3797a27af3a7dab9198dd1f92e83547fe6392d65922e2e46d5a6d37a1",
@@ -35946,7 +35946,7 @@
     },
     "content/handbook/engineering/development/sec/security-governance/policy-management/planning.md": {
       "path": "content/handbook/engineering/development/sec/security-governance/policy-management/planning.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:50:00+09:00",
       "model": "codex",
       "input_hash": "fd833505903414b93c6c1b43e8661b8309dcd9f5a6d1e6a30ab08e0ca39b2773",
@@ -35954,7 +35954,7 @@
     },
     "content/handbook/engineering/development/sec/security-governance/policy-management/workflow.md": {
       "path": "content/handbook/engineering/development/sec/security-governance/policy-management/workflow.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:50:00+09:00",
       "model": "codex",
       "input_hash": "3bb2bbfcce29e3b59c569ac1e4cb1cd74f34c50a95c0053b6e0e81daef969a7b",
@@ -35962,7 +35962,7 @@
     },
     "content/handbook/engineering/development/sec/security-governance/policy-engine/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-governance/policy-engine/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:50:00+09:00",
       "model": "codex",
       "input_hash": "54e13e052b4677a39693c0187ab4455b3cbfa9f28d8487f13200fcb83a4655e6",
@@ -35970,7 +35970,7 @@
     },
     "content/handbook/engineering/development/sec/security-governance/compliance/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-governance/compliance/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:50:00+09:00",
       "model": "codex",
       "input_hash": "7c4691fd43a590fa507f014dc191df9c3479ccf37c206e1ec2e76764d26fb64a",
@@ -35978,7 +35978,7 @@
     },
     "content/handbook/engineering/development/sec/security-governance/ai-governance/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-governance/ai-governance/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:50:00+09:00",
       "model": "codex",
       "input_hash": "ceeaabddf9ef12ec98deee9d1b5ca1b7eec10f2d673a01682d268d96cb21e340",
@@ -35986,7 +35986,7 @@
     },
     "content/handbook/engineering/development/sec/security-governance/ai-control-plane/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-governance/ai-control-plane/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:50:00+09:00",
       "model": "codex",
       "input_hash": "7b4c62c629e2f3d804ce58df8b1568b2c0f1b168578872eb8f5ba85706a98332",
@@ -35994,7 +35994,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T06:50:00+09:00",
       "model": "codex",
       "input_hash": "7e5335e92c62883e8f56fea94f3f50bfe65387583a8a7a4d3da11d49781a51b7",
@@ -36002,7 +36002,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/analyzer-observability-metrics.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/analyzer-observability-metrics.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:10:00+09:00",
       "model": "codex",
       "input_hash": "c4e11a54b55f3392d42a5b5419acdd35320542a166e33f690cb617a6998dc526",
@@ -36010,7 +36010,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/planning.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/planning.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:10:00+09:00",
       "model": "codex",
       "input_hash": "983adb1ef3bb3e2c04873072eac202dc791343f6955de8268de876abe9d63f4e",
@@ -36018,7 +36018,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/qa_process.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/qa_process.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:10:00+09:00",
       "model": "codex",
       "input_hash": "0d47da6e4c16debefeeab55e71b111f51145f96565bb8dad41bbec864c7cd86d",
@@ -36026,7 +36026,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/vulnerability-management/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/vulnerability-management/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:10:00+09:00",
       "model": "codex",
       "input_hash": "a6ea0ff9c9d93b48d21e3ebd0673e0f7d42de688ecbf0982951fdc57fe7529fa",
@@ -36034,7 +36034,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/vulnerability-management/developer_setup.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/vulnerability-management/developer_setup.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:10:00+09:00",
       "model": "codex",
       "input_hash": "5851de829fc72e19e9e7b671cbbe33b892f082932bf47f860082c34b3a7c3e64",
@@ -36042,7 +36042,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/vulnerability-management/ve_vr_setup.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/vulnerability-management/ve_vr_setup.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:10:00+09:00",
       "model": "codex",
       "input_hash": "760e4302bcc53bb7f28f074c497448c507468d4ae93888d8b1e6bc81985046bb",
@@ -36050,7 +36050,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/vulnerability-management/ve_vr_troubleshooting.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/vulnerability-management/ve_vr_troubleshooting.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:10:00+09:00",
       "model": "codex",
       "input_hash": "d7ef39d441129fcbf117e6e58f6af0fe329c1980a6a914df31bb969c80fb3655",
@@ -36058,7 +36058,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/vulnerability-management/vulnerability_archival_setup.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/vulnerability-management/vulnerability_archival_setup.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:10:00+09:00",
       "model": "codex",
       "input_hash": "d41cb615a6d13113635474ed976684ad96d02abd33dc3a5c7776d46c4544cb97",
@@ -36066,7 +36066,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/threat-research/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/threat-research/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:25:00+09:00",
       "model": "codex",
       "input_hash": "eabdd16c9a0e6f6b233c48540bef99f7822f6595183f7081b51abe01e834e2ec",
@@ -36074,7 +36074,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/threat-research/cna.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/threat-research/cna.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:25:00+09:00",
       "model": "codex",
       "input_hash": "941b4cceac3a3d0433aff036792faeb949b988e0340b832ca7c512d67f48421f",
@@ -36082,7 +36082,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/threat-research/reaction_rotation.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/threat-research/reaction_rotation.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:25:00+09:00",
       "model": "codex",
       "input_hash": "902b1581a529bb7a62327b31a0e22869b57be9fe2003cd54e85af9ef05b2e0fe",
@@ -36090,7 +36090,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/tech-docs/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/tech-docs/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:25:00+09:00",
       "model": "codex",
       "input_hash": "2ba148021ef144e1a26194db5386a665dca594061342c16fec4bfb2e81769549",
@@ -36098,7 +36098,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/tech-docs/data-model-for-dependencies-information.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/tech-docs/data-model-for-dependencies-information.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:35:00+09:00",
       "model": "codex",
       "input_hash": "175d6bde120e46a3df5d9b6e6b52d0f7502f18c1224a68e77918a9b3ef6fecd3",
@@ -36106,7 +36106,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/tech-docs/feedback.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/tech-docs/feedback.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:45:00+09:00",
       "model": "codex",
       "input_hash": "29e941b9a0f1f3bc451701014e4de584f9aba848f233e3588d9ec2e622b04228",
@@ -36114,7 +36114,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/security-foundations/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/security-foundations/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:45:00+09:00",
       "model": "codex",
       "input_hash": "c011c034c6537e13377886b90d15690c35db104edcec6629844a678abd1e94a6",
@@ -36122,7 +36122,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/secret-detection/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/secret-detection/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:45:00+09:00",
       "model": "codex",
       "input_hash": "bc7657ebffa4ea684919f419bbc26375bb5e8e7b05d173dee96ee264f28a0da7",
@@ -36130,7 +36130,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/secret-detection/rule-development-process.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/secret-detection/rule-development-process.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:45:00+09:00",
       "model": "codex",
       "input_hash": "d3a07288378fc4d9a2c7388e9cb854b361e99540f81bd7b64b84cb8aa4798aed",
@@ -36138,7 +36138,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:45:00+09:00",
       "model": "codex",
       "input_hash": "7e2b8f71f5c22787756613dbc5f0c4866672e7d1832a0b2abb58fea9be3e14e0",
@@ -36146,7 +36146,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-detection-svc-faqs.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-detection-svc-faqs.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:45:00+09:00",
       "model": "codex",
       "input_hash": "e7b6c8bd34363a0c4293018f4da7ee5f6f6c4c1bf4918c67f9fbd4f647f7ad22",
@@ -36154,7 +36154,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-detection-svc-monitoring.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-detection-svc-monitoring.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:45:00+09:00",
       "model": "codex",
       "input_hash": "83eb4ce8d22229e0d053b468d64649bf1b01e09035a091a209e727b2c715bb1a",
@@ -36162,7 +36162,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-detection-validity-check-faqs.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-detection-validity-check-faqs.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:45:00+09:00",
       "model": "codex",
       "input_hash": "53d98387725c492c8c544b3f7e8c4d9dd8affe498d1edc0f8d26e4b11ea7330e",
@@ -36170,7 +36170,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-detection-validity-check-monitoring.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-detection-validity-check-monitoring.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:55:00+09:00",
       "model": "codex",
       "input_hash": "915d72067cd089287393d013e6371af8970124dd7b86db2aeda5252d677b6569",
@@ -36178,7 +36178,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-detection-validity-check-troubleshooting.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-detection-validity-check-troubleshooting.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:55:00+09:00",
       "model": "codex",
       "input_hash": "ec29420f898acb596c913cff83fdcbb6874ddf5f0b0a61fa9a42a47dd1933322",
@@ -36186,7 +36186,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-push-protection-monitoring.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-push-protection-monitoring.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T07:55:00+09:00",
       "model": "codex",
       "input_hash": "08cf8cadbdfca713ab792d12a2bf629589673e0aa4bdc4f672ac9612c1eddb5d",
@@ -36194,7 +36194,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-push-protection-performance-testing.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-push-protection-performance-testing.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:15:00+09:00",
       "model": "codex",
       "input_hash": "a745504bc8074907d9b640d71dbdb8dce5e08c144cff3a1054af5f4839edde47",
@@ -36202,7 +36202,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-push-protection-troubleshooting.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/secret-detection/runbooks/secret-push-protection-troubleshooting.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:15:00+09:00",
       "model": "codex",
       "input_hash": "9a62a22fbcc34c919cf5f2db69e991613ec83cd18e767fe167395c547b388324",
@@ -36210,7 +36210,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/secret-detection/metrics/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/secret-detection/metrics/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:15:00+09:00",
       "model": "codex",
       "input_hash": "5a77a8896bc27248f6a08bc475ba9fbde4ff23b0ded20cae9996a48c3d1b1571",
@@ -36218,7 +36218,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/products/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/products/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:15:00+09:00",
       "model": "codex",
       "input_hash": "43dbfc3436e3449d36ae827494968e7c75bcc0a07c373fa84af9d4c5aa53143f",
@@ -36226,7 +36226,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/products/metrics.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/products/metrics.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:15:00+09:00",
       "model": "codex",
       "input_hash": "dfecf99493ba1c97253c5d177cc6bd47ccf4bf7af0b0f0e4abc89a67c5824077",
@@ -36234,7 +36234,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/composition-analysis/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/composition-analysis/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:35:00+09:00",
       "model": "codex",
       "input_hash": "20589bd85ea11086b5fd2757b8589f46b0d7cf0e7c2eba9e57dfeaf14dfed5cb",
@@ -36242,7 +36242,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/composition-analysis/runbooks/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/composition-analysis/runbooks/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:35:00+09:00",
       "model": "codex",
       "input_hash": "6908c2c988b41c81e2c68580e8ccaa54b4637d9c7d88c9ca3cf114779af3ca27",
@@ -36250,7 +36250,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/composition-analysis/runbooks/semver-dialect-errors-in-sentry.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/composition-analysis/runbooks/semver-dialect-errors-in-sentry.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:35:00+09:00",
       "model": "codex",
       "input_hash": "fb545850a8e2435f514b7fde803d17708ceae0df51bc1d5da2f813af4b12d353",
@@ -36258,7 +36258,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/code-security/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/code-security/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:35:00+09:00",
       "model": "codex",
       "input_hash": "163ca41905cb6c00e2f327a534ff3ffefa39b26eca01b2e37753b726a87ce72e",
@@ -36266,7 +36266,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/code-scanning/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/code-scanning/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:35:00+09:00",
       "model": "codex",
       "input_hash": "3b9db3d0033e4e6f776b84059a1ff55529c887698bd2785c8b435450a62e592a",
@@ -36274,7 +36274,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/code-scanning/code_review.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/code-scanning/code_review.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:35:00+09:00",
       "model": "codex",
       "input_hash": "1218107f05a87038924aeb9d37c8fbf4018d3b9e9f68a3bcf99bf1a16941eacf",
@@ -36282,7 +36282,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/code-scanning/ec2_dev_environment_setup.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/code-scanning/ec2_dev_environment_setup.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:35:00+09:00",
       "model": "codex",
       "input_hash": "5057cab0319fbdb28d88a6ab2f8f1229c8dc5d3d588cede15cc1b84a43a42af5",
@@ -36290,7 +36290,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/code-scanning/false_positives.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/code-scanning/false_positives.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:35:00+09:00",
       "model": "codex",
       "input_hash": "8c86b41e34b6a07e0e9f1930951da53d80524c6c36db8095cb921765abf7b41d",
@@ -36298,7 +36298,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/code-scanning/reaction_rotation.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/code-scanning/reaction_rotation.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:52:00+09:00",
       "model": "codex",
       "input_hash": "56b1f19356d1596f5d958f754c5ace0bfe3a19cec565771107e6e9d2272af23e",
@@ -36306,7 +36306,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/code-scanning/retrospectives_summary.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/code-scanning/retrospectives_summary.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:52:00+09:00",
       "model": "codex",
       "input_hash": "31c14ab351d570c7b959028964f42e96ca231578a3242f97dea010d93ca89769",
@@ -36314,7 +36314,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/code-scanning/runbooks/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/code-scanning/runbooks/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:52:00+09:00",
       "model": "codex",
       "input_hash": "9b79c20ba253e5084163a7e02db110d31c3c43a2272b84f61b6d229ebc77031f",
@@ -36322,7 +36322,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/code-scanning/runbooks/analyzer-deprecation-and-removal-instructions.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/code-scanning/runbooks/analyzer-deprecation-and-removal-instructions.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:52:00+09:00",
       "model": "codex",
       "input_hash": "bc749c863e72d2f78c595a501e0ca0e280ef246781fe8d87b261fcab7e1c7032",
@@ -36330,7 +36330,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/code-scanning/runbooks/analyzer-rollback-production.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/code-scanning/runbooks/analyzer-rollback-production.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:52:00+09:00",
       "model": "codex",
       "input_hash": "e7b0a8022e1987c35ec4dc5f2cf102fd5eeae3e910fe1e0fcf6412803f468298",
@@ -36338,7 +36338,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/code-scanning/runbooks/how-to-monitor-and-respond-to-issues-with-sast-automatic-vulnerability-resolution.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/code-scanning/runbooks/how-to-monitor-and-respond-to-issues-with-sast-automatic-vulnerability-resolution.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:52:00+09:00",
       "model": "codex",
       "input_hash": "f3f5acd6ec5f9b2ee2c9371d70e9ec5202194344ddb8681d7d5a774836977326",
@@ -36346,7 +36346,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/ai-security/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/ai-security/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:52:00+09:00",
       "model": "codex",
       "input_hash": "30b0b095c67e2672ca13f296a9dfd405276759ce9fe5aec1a9714c952537b696",
@@ -36354,7 +36354,7 @@
     },
     "content/handbook/engineering/development/sec/security-factory/agentic-security-flows/_index.md": {
       "path": "content/handbook/engineering/development/sec/security-factory/agentic-security-flows/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T08:52:00+09:00",
       "model": "codex",
       "input_hash": "be284e86dd81a70284ff9fa00d6f1fac6fb9772121f3a287b4551c3c70e4e269",
@@ -36362,7 +36362,7 @@
     },
     "content/handbook/engineering/development/sec/oncall/_index.md": {
       "path": "content/handbook/engineering/development/sec/oncall/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T09:18:00+09:00",
       "model": "codex",
       "input_hash": "4880626182ce2c0163c007116b59ec09e599bc036c7ce2b3ec7033e3f21b1d9d",
@@ -36370,7 +36370,7 @@
     },
     "content/handbook/engineering/development/sec/oncall/communication-and-culture.md": {
       "path": "content/handbook/engineering/development/sec/oncall/communication-and-culture.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T09:18:00+09:00",
       "model": "codex",
       "input_hash": "10a6209073f48c3394037d00faba6fbcaf2ded4354d12698588e545e3a1824ba",
@@ -36378,7 +36378,7 @@
     },
     "content/handbook/engineering/development/sec/oncall/coverage-and-scheduling.md": {
       "path": "content/handbook/engineering/development/sec/oncall/coverage-and-scheduling.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T09:18:00+09:00",
       "model": "codex",
       "input_hash": "306a69f868e80e6d6231643d7ac78a96a0b9314558e79bf96b06a90227cfc217",
@@ -36386,7 +36386,7 @@
     },
     "content/handbook/engineering/development/sec/oncall/faq.md": {
       "path": "content/handbook/engineering/development/sec/oncall/faq.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T09:18:00+09:00",
       "model": "codex",
       "input_hash": "09278452fea31a5e08b0004b1a2ab7c887d817b9330b171ca68794bde6d7d343",
@@ -36394,7 +36394,7 @@
     },
     "content/handbook/engineering/development/sec/oncall/handoff-and-continuity.md": {
       "path": "content/handbook/engineering/development/sec/oncall/handoff-and-continuity.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T09:18:00+09:00",
       "model": "codex",
       "input_hash": "9aae90abee41579d2378c3c6e50681c4286c1ced1586957441e4c0a29644ccaf",
@@ -36402,7 +36402,7 @@
     },
     "content/handbook/engineering/development/sec/oncall/joining-and-leaving-rotation.md": {
       "path": "content/handbook/engineering/development/sec/oncall/joining-and-leaving-rotation.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T09:18:00+09:00",
       "model": "codex",
       "input_hash": "920dad9e21a2c4940d86d38df6b2c89c9cde0f0c8e9c2065d786b39a00fbc092",
@@ -36410,7 +36410,7 @@
     },
     "content/handbook/engineering/development/sec/oncall/measuring-success.md": {
       "path": "content/handbook/engineering/development/sec/oncall/measuring-success.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T09:43:00+09:00",
       "model": "codex",
       "input_hash": "c05f23c1faf7feb6a6468ccb19f69afa92bfaadc0f5a4d436716d8b61f66fb22",
@@ -36418,7 +36418,7 @@
     },
     "content/handbook/engineering/development/sec/oncall/rotation-leader.md": {
       "path": "content/handbook/engineering/development/sec/oncall/rotation-leader.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T09:43:00+09:00",
       "model": "codex",
       "input_hash": "93ff3f3a89243e629e6f2f9a6eb44f05f8ded9dc133249dfe30ce90ad5033f05",
@@ -36426,7 +36426,7 @@
     },
     "content/handbook/engineering/development/sec/oncall/time-off-and-holidays.md": {
       "path": "content/handbook/engineering/development/sec/oncall/time-off-and-holidays.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T09:43:00+09:00",
       "model": "codex",
       "input_hash": "df6f719f6c4558d865e83486c6eb99330224d3fc80514f33e786d1d5300e51dd",
@@ -36434,7 +36434,7 @@
     },
     "content/handbook/engineering/development/sec/oncall/tools-and-access.md": {
       "path": "content/handbook/engineering/development/sec/oncall/tools-and-access.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T09:43:00+09:00",
       "model": "codex",
       "input_hash": "5053723c005c6cfe733447b18c1b6a33d679e023baf321c0a1f837c69aa80c17",
@@ -36442,7 +36442,7 @@
     },
     "content/handbook/engineering/development/sec/oncall/understanding-the-basics.md": {
       "path": "content/handbook/engineering/development/sec/oncall/understanding-the-basics.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T09:43:00+09:00",
       "model": "codex",
       "input_hash": "9f4cf8594a717ea724a8411f7a9b5e7ed66229bf8c2f749d14fe0235e48eced2",
@@ -36450,7 +36450,7 @@
     },
     "content/handbook/engineering/development/sec/oncall/your-first-shift.md": {
       "path": "content/handbook/engineering/development/sec/oncall/your-first-shift.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T09:43:00+09:00",
       "model": "codex",
       "input_hash": "376684992aeb93a08369ad5028e93920cd028f4e3fb72ecf27f1305ac8e9e682",
@@ -36458,7 +36458,7 @@
     },
     "content/handbook/engineering/architecture/design-documents/data_retention_policy_framework/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/data_retention_policy_framework/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T10:12:00+09:00",
       "model": "codex",
       "input_hash": "75af5456194cb901bb08d434d4a38be2df11803c066529e3575abf6b9bb7165a",
@@ -36466,7 +36466,7 @@
     },
     "content/handbook/engineering/architecture/design-documents/ai_chat/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/ai_chat/_index.md",
-      "upstream_sha": "cd448feba02b00726e216b7b3cfed717822b37b6",
+      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
       "translated_at": "2026-08-14T10:12:00+09:00",
       "model": "codex",
       "input_hash": "43dd3933f5480b95a547cf29a8e956d238d9969524d026770e5da530959bbf49",
