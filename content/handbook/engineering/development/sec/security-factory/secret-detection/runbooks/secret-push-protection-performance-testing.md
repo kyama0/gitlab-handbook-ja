@@ -94,7 +94,7 @@ GCP 環境は、プレフィックス `gcp-2k` の 2k リファレンスアー�
 * `/terraform/environments/$GCP_ENV_PREFIX` に cd
 * `terraform init` を実行
 * `terraform apply` を実行
-* 小さなお祝い :tada：
+* 小さなお祝い :tada:
 * [Ansible による環境の設定](https://gitlab.com/gitlab-org/gitlab-environment-toolkit/-/blob/main/docs/environment_configure.md)を Ansible のセットアップガイドとして使用します（GCP を使用しているので AWS の手順は無視してください）
 * [GET リポジトリ](https://gitlab.com/gitlab-org/gitlab-environment-toolkit)のルートディレクトリに cd
 * `mkdir -p ansible/environments/$GCP_ENV_PREFIX/files/gitlab_configs` を実行
