@@ -2,22 +2,16 @@
 title: ローカリゼーションエンジニアリング
 description: GitLab のローカリゼーションインフラとエンジニアリングプロセスの技術的詳細。
 upstream_path: /handbook/marketing/localization/engineering/
-upstream_sha: 768e1a6af6ab56133195582e6a0b17d225df15f7
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
+translated_at: "2026-08-14T10:32:00+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-09T20:14:47+00:00"
+lastmod: "2026-08-13T19:19:31-04:00"
 ---
 
 ドキュメントとプロダクトインターフェースをまたぐ、GitLab のローカリゼーションインフラおよびエンジニアリングプロセスの技術的概要です。翻訳環境、ブランチ管理、開発ワークフロー、国際化されたコンテンツのプレビューシステムを含みます。
 
 ローカリゼーション技術スタックの全体像については、[GitLab におけるローカリゼーション技術管理](/handbook/marketing/localization/localization_technology/) を参照してください。プロダクトドキュメントのローカリゼーションアーキテクチャおよびワークフローについては、[GitLab プロダクトドキュメントのローカリゼーション](/handbook/marketing/localization/tech_docs_localization/) を参照してください。
-
-## チーム
-
-- [Rasam Hossain](https://gitlab.com/rasamhossain), Senior Fullstack Engineer
-- [Lauren Barker](https://gitlab.com/laurenbarker), Staff Fullstack Engineer
-- [Oleksandr Pysaryuk](https://gitlab.com/opysaryuk), Senior Manager, Globalization Technology
 
 ### コミュニケーションチャネル
 
@@ -28,7 +22,7 @@ lastmod: "2026-04-09T20:14:47+00:00"
 
 ローカリゼーション関連の Slack チャネルの完全なリストについては、[Localization handbook](/handbook/marketing/localization/#contact-us) を参照してください。
 
-## 範囲
+### 範囲
 
 ローカリゼーションエンジニアリングチームは、GitLab のコンテンツとプロダクトを複数の言語で配信できるようにするインフラストラクチャを所有・保守しています。
 
@@ -39,16 +33,7 @@ lastmod: "2026-04-09T20:14:47+00:00"
 - **マーケティングウェブサイト** (about.gitlab.com): 新規ページや注目度の高いコンテンツについては GDATP、ボリュームの大きい更新や非同期更新については Argo-Phrase パイプラインを通じて、6 言語にわたる継続的ローカリゼーションを実施しています。
 - **プロダクト UI**: [Crowdin](https://docs.gitlab.com/development/i18n/) によるコミュニティ主導の翻訳。[GitLab String Search](https://gitlab.com/gitlab-com/localization/gitlab-string-search) ツールおよび [Crowdin Automation](https://gitlab.com/gitlab-com/localization/crowdin-automation) スクリプトでサポートされています。
 
-## イテレーションプロセス
-
-イテレーションは火曜日に開始します。イテレーション期間中にリリースを行います。イテレーション期間は 2 週間です。[ローカリゼーションエンジニアリングのイテレーション](https://gitlab.com/groups/gitlab-com/localization/-/cadences/) を参照してください。
-
-エンジニアリング作業の追跡には 2 つのボードを使用します:
-
-- [担当者別](https://gitlab.com/groups/gitlab-com/localization/-/boards/9140637): `~"L10n-engineering"` ラベルが付いたすべての作業項目をチームメンバーごとにグループ化して表示
-- [ステータス別](https://gitlab.com/groups/gitlab-com/localization/-/boards/11195951): Refinement -> Ready for development -> In dev -> In review -> Complete のワークフロー進捗を表示
-
-## レビューワークフロー
+### レビューワークフロー
 
 ローカリゼーションエンジニアリングチームによるマージリクエストレビュープロセスは、GitLab の [コードレビューガイドライン](https://docs.gitlab.com/development/code_review/) に沿って行われます。
 

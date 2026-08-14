@@ -1,11 +1,11 @@
 ---
 title: CorpSec チームディレクトリ
 upstream_path: /handbook/security/corporate/team/
-upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
-translated_at: "2026-07-29T06:46:30+09:00"
+upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+translated_at: "2026-08-14T06:06:19+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T16:24:24+01:00"
+lastmod: "2026-08-13T20:57:11+02:00"
 ---
 
 コーポレートセキュリティ部門は、チームメンバーと一時的なサービスプロバイダー (契約社員、ベンダーなど) 向けのテックサポート [ヘルプデスクサービス](/handbook/eta/corporate-it/end-user-services) と、私たちが管理する社内システムの構成管理 [エンジニアリング](/handbook/security/corporate/engineering/) を提供します。
@@ -61,11 +61,11 @@ lastmod: "2026-07-28T16:24:24+01:00"
 <!-- Team Member -->
 <tr>
 <td>
-<a href="https://gitlab.com/eriklentz"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/eriklentz.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Erik Lentz"></div><div style="display: inline-block; vertical-align: top">Erik Lentz</a><br>
+<a href="https://gitlab.com/eriklentz-gl"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/team/eriklentz-gl.jpg" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Erik Lentz"></div><div style="display: inline-block; vertical-align: top">Erik Lentz</a><br>
 <small>
 <i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
 <i class="fas fa-address-card" style="padding-right: 5px;"></i><code>elentz</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/eriklentz">@eriklentz</a>
+<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/eriklentz-gl">@eriklentz-gl</a>
 </small>
 </td>
 <td><small>
@@ -136,40 +136,6 @@ lastmod: "2026-07-28T16:24:24+01:00"
 <i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
 <i class="fas fa-address-card" style="padding-right: 5px;"></i><code>mspry</code><br>
 <i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/mspry_gl">@mspry_gl</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/identity">@gitlab-com/gl-security/corp/identity</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/mwhitaker"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Marcus Whitaker"></div><div style="display: inline-block; vertical-align: top">Marcus Whitaker</a><br>
-<small>
-<i class="fas fa-earth-americas" style="padding-right: 5px;"></i>AMER<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>mwhitaker</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/mwhitaker">@mwhitaker</a>
-</small>
-</td>
-<td><small>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>corpsec_eng_identity</code>
-</small></td>
-<td><small>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/identity">@gitlab-com/gl-security/corp/identity</a><br>
-</small></td>
-</tr>
-<!-- Team Member -->
-<tr>
-<td>
-<a href="https://gitlab.com/malkobaisy"><div style="display: inline-block; vertical-align: top;"><img class="avatar" src="/images/gitlab-logo-extra-whitespace.png" style="max-width: 50px !important; width: 50px !important; max-height: 50px !important; height: 50px !important;" alt="Mohammed Al Kobaisy"></div><div style="display: inline-block; vertical-align: top">Mohammed Al Kobaisy</a><br>
-<small>
-<i class="fas fa-earth-europe" style="padding-right: 5px;"></i>EMEA<br>
-<i class="fas fa-address-card" style="padding-right: 5px;"></i><code>malkobaisy</code><br>
-<i class="fa-brands fa-gitlab" style="padding-right: 5px;"></i><a target="_blank" href="https://gitlab.com/malkobaisy">@malkobaisy</a>
 </small>
 </td>
 <td><small>
@@ -260,7 +226,7 @@ CORPSEC_SVC["<b>Corporate Security (CorpSec)</b><br><i><b>Engineering Managers:<
 
 
 CORPSEC_ENG_DEVICE["<b>CorpSec Devices</b><br><i><b>Eng Manager:</b> Lenny Vaknine</i><br><i><b>Engineers:</b> Nathaniel, Peter, Steve</i><br><br>DriveStrike<br>Google Chrome<br>Jamf MDM<br>Mobile Devices<br>NordLayer VPN<br>Okta Verify<br>SentinelOne EDR<br>Software Version Updates<br>YubiKey"]:::fuchsia
-CORPSEC_ENG_IDENTITY["<b>Identity Engineering</b><br><i><b>Eng Manager:</b> David Zhu</i><br><i><b>Engineers:</b> Andrew, Erik, Jacob,<br>Jenny, Madison, Marcus,<br>Mohammed, Vlad</i><br><br>1Password<br>ABAC and RBAC<br>ARs and IAM (AWS/Azure/GCP)<br>AuthN and AuthZ Policies<br>GitLab.com IAM Policies<br>Google Workspace<br>Identity Governance (IGA)<br>No Code Automation<br>Okta Configuration<br>Onboarding<br>Offboarding<br>Role Entitlements<br>Sandbox Cloud<br>Service Accounts<br>Slack"]:::fuchsia
+CORPSEC_ENG_IDENTITY["<b>Identity Engineering</b><br><i><b>Eng Manager:</b> David Zhu</i><br><i><b>Engineers:</b> Andrew, Erik, Jacob,<br>Jenny, Madison, Vlad</i><br><br>1Password<br>ABAC and RBAC<br>ARs and IAM (AWS/Azure/GCP)<br>AuthN and AuthZ Policies<br>GitLab.com IAM Policies<br>Google Workspace<br>Identity Governance (IGA)<br>No Code Automation<br>Okta Configuration<br>Onboarding<br>Offboarding<br>Role Entitlements<br>Sandbox Cloud<br>Service Accounts<br>Slack"]:::fuchsia
 
 
 classDef slate fill:#cbd5e1,stroke:#475569,stroke-width:1px;
@@ -299,8 +265,6 @@ ELENTZ["Erik Lentz"]:::fuchsia
 JWATERS["Jacob Waters"]:::fuchsia
 JWONG["Jenny Wong"]:::fuchsia
 MSPRY["Madison Spry"]:::fuchsia
-MWHITAKER["Marcus Whitaker"]:::fuchsia
-MALKOBAISY["Mohammed Al Kobaisy"]:::fuchsia
 VSTOIANOVICI["Vlad Stoianovici"]:::fuchsia
 end
 
@@ -317,8 +281,6 @@ DZHU --- ELENTZ
 DZHU --- JWATERS
 DZHU --- JWONG
 DZHU --- MSPRY
-DZHU --- MWHITAKER
-DZHU --- MALKOBAISY
 DZHU --- VSTOIANOVICI
 
 classDef slate fill:#cbd5e1,stroke:#475569,stroke-width:1px;

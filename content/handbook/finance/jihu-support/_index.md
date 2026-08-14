@@ -2,11 +2,11 @@
 title: "JiHuサポート"
 description: "GitLab IncチームがJiHuにサポートを提供する方法"
 upstream_path: /handbook/finance/jihu-support/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+translated_at: "2026-08-14T06:13:39+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-30T16:57:54+00:00"
+lastmod: "2026-08-13T13:58:02-04:00"
 ---
 
 ## 概要
@@ -25,31 +25,21 @@ lastmod: "2026-04-30T16:57:54+00:00"
 
 [ガイドライン](https://docs.google.com/document/d/1JigQn7g8KUrY8N6WHuf248ARWHzCpIGhE2yXriuhI5c/edit?usp=sharing) を参照してください。
 
-## プロフェッショナルサービス
+## GitLab の窓口
 
-ガイドラインを参照してください（リンクは後日追加予定）。
-
-## カスタマーサポート
-
-以下にプロセスが追加される予定です。
-
-## エンジニアリング
-
-### R&Dロール
-
-| DRI | ロール |
-| --- | --- |
-| [Jerome Ng](https://gitlab.com/jeromezng) | エンジニアリングDRI |
+| チームメンバー | 役職 | ロール |
+| --- | --- | --- |
+| Elle Shutty | Senior TPM | R&D DRI |
 
 ### JiHuエンジニアリングのコンタクト
 
-[Shiyuan Chen](https://gitlab.com/shreychen) はGitLab Inc. に対するJiHuエンジニアリングの窓口です。GitLab Inc. がJiHuにも変更を要求する変更を行う場合、MAOが調整を支援します。
+[Shiyuan Chen](https://gitlab.com/shreychen) はGitLab Inc. に対するJiHuエンジニアリングの窓口です。
 
 ### プロジェクト
 
 JiHuチームのプロジェクトは <https://jihulab.com/gitlab-cn/> に配置されています。`gitlab-org` のツーリングおよびコンプライアンスチェック用のミラープロジェクトは <https://gitlab.com/gitlab-org/gitlab-jh-mirrors/> で利用可能です。
 
-JiHuプロジェクトのほとんどはJiHuLab.com に移動されましたが、一部のプロジェクトはまだ [gitlab-jh](https://gitlab.com/gitlab-jh/) グループの下にあります。アクセスをリクエストするには [Kevin](https://gitlab.com/kevinchu) または [Mek](https://gitlab.com/meks) に連絡してプロビジョニングを依頼してください。
+JiHuプロジェクトのほとんどはJiHuLab.com に移動されましたが、一部のプロジェクトはまだ [gitlab-jh](https://gitlab.com/gitlab-jh/) グループの下にあります。
 
 | GitLab Incプロジェクト                                  | JiHuプロジェクト                                           |
 |---------------------------------------------------------|------------------------------------------------------------|
@@ -126,7 +116,7 @@ JiHuはGitLabの専門知識、特にGitLabをSaaS製品として運用するこ
 
 ### プロダクトDRIの役割
 
-[プロダクトDRI](#rd-roles) は以下の責任を負います:
+プロダクトDRIは以下の責任を負います:
 
 - JiHuのCTOおよびプロダクトカウンターパートにプロダクトマネジメント実践のガイダンスを提供する
 - GitLabプロダクトとJiHuプロダクトのアライメントを可能にする
@@ -142,7 +132,7 @@ JiHuのコントリビューションは、コミュニティコントリビュ�
 
 時々、プロダクトマネージャーはJiHuからの具体的な提案に対するフィードバックを提供したり、直接対応したりするように求められます。GitLabのPMはGitLabのエンジニアとJiHuチームのコラボレーションを促進する支援を行うべきです。これは、プロダクトの方向性に不一致がある場合は、JiHuがGitLabがマージするつもりのないものに時間を費やすことのないように、早期に指摘することを意味します。
 
-プロダクトマネージャーがJiHuのカウンターパートとの接続にヘルプを必要とする場合は、[#jihu-product](https://gitlab.slack.com/archives/C01S8CFF7HR) で [プロダクトDRI](#rd-roles) にメンションしてください。
+プロダクトマネージャーがJiHuのカウンターパートとの接続にヘルプを必要とする場合は、[#jihu-product](https://gitlab.slack.com/archives/C01S8CFF7HR) でプロダクトDRIにメンションしてください。
 
 ### プロダクトデザイナーの責任
 

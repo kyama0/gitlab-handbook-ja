@@ -1,11 +1,11 @@
 ---
 title: オンコールのプロセスとポリシー
 upstream_path: "/handbook/engineering/infrastructure-platforms/incident-management/on-call/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: "cd448feba02b00726e216b7b3cfed717822b37b6"
+translated_at: "2026-08-14T06:13:39+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-19T19:48:12+00:00"
+lastmod: "2026-08-13T13:32:58-06:00"
 ---
 
 
@@ -59,7 +59,7 @@ lastmod: "2026-03-19T19:48:12+00:00"
 
 この区別は重要です。オンコールカバーには法的および HR 上の影響があり（レベルによって異なる）、ベストエフォートローテーションには法的または HR 上の影響はないためです。
 
-#### カバレッジ期間
+#### カバレッジ期間 {#coverage-periods}
 
 1日の 24 時間は各 8 時間の3つの期間に分けられます。エスカレーションローテーション以外のローテーションでは、1日3回発生する8時間のカバレッジ期間を標準化しています。
 
@@ -79,7 +79,7 @@ lastmod: "2026-03-19T19:48:12+00:00"
 
 ##### 国固有の要件
 
-1. ニュージーランド — 祝日シフトは自発的であり、チームメンバーが祝日にシフトを担当することを選択する場合、祝日のページへの対応は補償が必要なため、マネージャーの承認が必要です。祝日のカバーや承認を手配するのはチームメンバーの責任です。[詳細についてはニュージーランドガイドをご覧ください](/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-australia/#on-call-support-engineering-only)。
+1. ニュージーランド — 祝日シフトは自発的であり、チームメンバーが祝日にシフトを担当することを選択する場合、祝日のページへの対応は補償が必要なため、マネージャーの承認が必要です。祝日のカバーや承認を手配するのはチームメンバーの責任です。[詳細についてはニュージーランドガイドをご覧ください](/handbook/total-rewards/benefits/general-and-entity-benefits/pty-benefits-new-zealand/#on-call-support-engineering-only)。
 
 ## ローテーションリーダーの責任
 

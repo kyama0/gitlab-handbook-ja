@@ -2,11 +2,11 @@
 title: "その他のアプリ"
 description: このページでは、GitLab でのワークフローに役立つかもしれない様々なアプリを紹介します。
 upstream_path: /handbook/tools-and-tips/other-apps/
-upstream_sha: 68af60af15ea4dcb51c3d985f7473b212e4f2cb4
-translated_at: "2026-05-07T15:33:18Z"
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
+translated_at: "2026-08-14T10:32:00+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-17T12:53:03-04:00"
+lastmod: "2026-08-13T15:26:51-07:00"
 ---
 
 ### 一般的なセキュリティのヒント
@@ -161,6 +161,12 @@ GitLab チームメンバーとミーティングをスケジュールする場�
 特に集中が必要な期間に、気が散る Web サイトに切り替えてしまい、それが生産性に影響するのではないかと心配な場合は、[Freedom](https://freedom.to/why) の利用を検討してください。
 サービスのブラウザー拡張機能、モバイルアプリ、デスクトップアプリは、設定可能なセッション時間中、気が散る Web サイトやアプリをブロックします。
 筋肉の記憶で `f` を打って `enter` を押してしまうことがあっても、友達のランチ写真を延々とスクロールすることはありません。
+
+### Meetings Page Auto Closer
+
+[Meetings Page Auto Closer](https://chromewebstore.google.com/detail/meetings-page-auto-closer/pbgidoglkjhfgjhalbbiiahdlokjcplb) は、Zoom がミーティングをデスクトップクライアントへ引き渡した後に残るブラウザタブを自動的に閉じる Chrome 拡張機能です。
+
+通話に参加した後もそのタブは開いたままで、後から [What's new](https://about.gitlab.com/whats-new/) ページへリダイレクトされます。そのため、ミーティングが続く 1 日には、自分で開いていないタブがいくつも残ることがあります。この拡張機能がそれらを閉じます。
 
 ### Paste
 

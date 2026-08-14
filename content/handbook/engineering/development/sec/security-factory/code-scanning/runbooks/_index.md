@@ -1,0 +1,19 @@
+---
+title: "Static Analysis ランブック"
+upstream_path: /handbook/engineering/development/sec/security-factory/code-scanning/runbooks/
+upstream_sha: cd448feba02b00726e216b7b3cfed717822b37b6
+translated_at: "2026-08-14T08:52:00+09:00"
+translator: codex
+stale: false
+lastmod: "2026-08-13T15:10:33+03:00"
+---
+
+## 概要
+
+このページには、Static Analysis チームがインシデントの監視、緩和、対応に使用するランブックを一覧表示しています。
+
+## ランブック
+
+* [SAST 自動脆弱性解決の問題を監視して対応する方法](how-to-monitor-and-respond-to-issues-with-sast-automatic-vulnerability-resolution)
+* [SAST アナライザーの非推奨化と削除の手順](analyzer-deprecation-and-removal-instructions)
+* [アナライザーをロールバックする方法](analyzer-rollback-production)
