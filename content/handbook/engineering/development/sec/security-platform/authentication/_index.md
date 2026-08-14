@@ -33,7 +33,7 @@ Authentication グループは [Security Platform ステージ](/handbook/engine
 
 - Cells の作業を支援することで、顧客は GitLab.com での信頼性の向上と障害の区画化を体験できるはずです。
 - Service accounts を拡張することで、自動化のユースケースにおける認証情報セットアップ周りの人手による接点が減り、GitLab 使用時の顧客のセキュリティ態勢と効率が強化されます。同時に、新しい Service account の UI により、こうした高権限アカウントを簡単にセットアップ、管理、失効でき、より良い透明性と監査可能性を提供します。トークン管理の強化と組み合わせることで、顧客はアクセストークン関連のリスクを自信を持って管理、強制、軽減できるようになります。
-- 追加の Enterprise user 管理コントロールにより、組織のワークロードが削減され、セキュリティポリシー管理が改善される一方、Credential Inventory の SaaS への移行により、すべての管理者が使用中の認証情報に関するより良い可視性と制御を得られます。
+- 追加の Enterprise ユーザー管理コントロールにより、組織のワークロードが削減され、セキュリティポリシー管理が改善される一方、Credential Inventory の SaaS への移行により、すべての管理者が使用中の認証情報に関するより良い可視性と制御を得られます。
 - SCIM グループ同期のサポートを拡張することで、顧客向けのユーザープロビジョニングのセットアップを改善・統一し、ユーザープロビジョニングとアクセス管理のために SAML と SCIM の両方に頼る必要がないようにすることを目指しています。
 
 #### OKR のリスト
@@ -41,7 +41,7 @@ Authentication グループは [Security Platform ステージ](/handbook/engine
 私たちの OKR は以下に焦点を当てています。
 
 - [サポートとヘルプリクエストの体験の改善](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/5858)
-- [flaky または遅いテストの数の削減](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/5853)
+- [フレーキーまたは遅いテストの数の削減](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/5853)
 - [Authentication チームメンバーのキャリア成長](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/5643)
 - [Cells の採用と調査スパイクからの学びの共有](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/6280)
 - [GCP Integration 周りのロードマップ完了](https://gitlab.com/gitlab-com/gitlab-OKRs/-/work_items/6186)
@@ -59,11 +59,11 @@ Authentication グループは [Security Platform ステージ](/handbook/engine
   - グループのメンテナー体制の状況。
   - バス係数追跡のための、ドメイン知識領域とそれぞれのカバレッジ。
   - グループに関連するフィーチャーフラグ。
-  - グループに帰属する flaky テスト。
+  - グループに帰属するフレーキーテスト。
 
 - 製品の指標
-  - SAML、Identity provider、Group sync などの auth 統合の採用
-  - クレームされた Enterprise user
+  - SAML、Identity provider、Group sync などの認証統合の採用
+  - クレームされた Enterprise ユーザー
 
 #### 私たちの違いは何か?
 
