@@ -1,11 +1,11 @@
 ---
 title: インシデント管理
 upstream_path: "/handbook/engineering/infrastructure-platforms/incident-management/"
-upstream_sha: "8194127ea2690cda322cc5bdda07644aa275d6cc"
-translated_at: "2026-08-12T06:14:18+09:00"
+upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
+translated_at: "2026-08-15T06:38:37+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-11T07:02:51-06:00"
+lastmod: "2026-08-14T12:11:43-06:00"
 ---
 
 {{% alert color="warning" %}}
@@ -222,6 +222,8 @@ Infrastructure Leadership は、すべての S1 インシデントについて�
 **— Production Issue —**
 Main incident: (link to the incident)
 Slack Channel: (link to incident slack channel)
+
+cc @bill, @Siva
 ```
 
 ## チームコーディネーター
@@ -374,7 +376,7 @@ S1 または S2 インシデント中に、1 人以上の顧客と同期的な�
   - 過度に汎用的 (典型的な誤りで、具体性 (Specific) の反対)
   - インシデントの症状のみを修正する
   - より多くの人為的エラーを導入する
-  - インシデントの再発防止に役立たない
+  - インシデントの再発防止にも、軽減までの時間の改善にも役立たない
   - 速やかに実装できない (時間制約 (time-bounded))。
 - 例: (いくつかのベストプラクティス ポストモーテムページから)
 
@@ -587,6 +589,12 @@ Incident Manager は注意を払い、自分の最良の判断を行使すべき
 
 インシデントは [報告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident) され、劣化が終わりおそらく再発しない時点で解決されます。
 
+### 断続的または自然に解消するインシデント {#intermittent-and-self-resolving-incidents}
+
+断続的または自然に解消するインシデントでは、対応者が積極的に調査している間はインシデントを `Active -> Investigating` に保ち、サービスの軽減または復旧に積極的に取り組んでいる間は `Active -> Fixing` を使用します。サービスが正常で、対応者が再発を監視している場合は、是正措置を講じていない場合や、原因が外部にあり私たちの管理外である場合も含め、`Active -> Monitoring` を使用します。影響が再発した場合は、対応活動に応じてインシデントを Investigating または Fixing に戻します。
+
+再発リスクが不明な場合、Incident Lead は、解決するまでインシデントを Monitoring に保つ期間を伝える必要があります。観察期間は、インシデントの再発パターンと復旧に対する対応者の確信度を反映する必要があります。近い将来に再発する可能性が低くなるまで、顧客向けの status.io インシデントを Active のままにします。
+
 ### Incident Lead {#incident-lead}
 
 Incident Lead は、インシデントが進行し、最新の状態に保たれることを保証する責任を負います。この役割はインシデントの開始後に意図的に割り当てられます。
@@ -642,7 +650,9 @@ Follow-up 項目はデフォルトで [incident-follow-ups プロジェクト](h
     A(Incident is declared) --> |initial severity assigned| B(Active->Investigating)
     A -.-> |If duplicate| Z(Merged)
     B --> |"Fix identified"| C(Active->Fixing)
+    B --> |"Impact stopped; watch for recurrence"| D(Active->Monitoring)
     C --> |"Fix deployed"| D(Active->Monitoring)
+    D --> |"Impact recurs"| B
     D --> |"Incident resolved"| E(Resolved)
     E --> |"S1 or S2"| F(Post-Incident Review)
     E --> |"S3 or S4"| G(Incident Closed)

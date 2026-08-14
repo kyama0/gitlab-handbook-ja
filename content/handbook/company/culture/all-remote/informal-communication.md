@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/informal-communication/"
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T22:00:00Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:54:56+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T19:01:27+10:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
 このページでは、GitLab でインフォーマルコミュニケーションがどのように行われるか、それが [対面でのやり取り](/handbook/company/culture/all-remote/) をどのように補完するか、そしてなぜそれがオールリモート [カルチャー](/handbook/company/culture/#culture-at-gitlab) で重要なのかを詳しく説明します。以下に 20 以上のインフォーマルコミュニケーションを育む方法があり、私たちは常に新しい方法を発見し追加しています。
@@ -25,7 +25,7 @@ lastmod: "2026-05-08T19:01:27+10:00"
 
 ## 職場におけるフォーマルコミュニケーションとインフォーマルコミュニケーションの違いは何ですか？
 
-GitLab は [非同期で働く](asynchronous/) オールリモート組織なので、ほぼすべての仕事のコミュニケーションが [文書化](/handbook/product/ux/technical-writing/#documentation) されており、すべての仕事関連のコミュニケーションが「フォーマル」なコミュニケーションになっています。これは私たちの [透明性](/handbook/values/#transparency) の価値観をサポートします。
+GitLab は [非同期で働く](asynchronous/) オールリモート組織なので、ほぼすべての仕事のコミュニケーションが [文書化](/handbook/marketing/technical-writing/#documentation) されており、すべての仕事関連のコミュニケーションが「フォーマル」なコミュニケーションになっています。これは私たちの [透明性](/handbook/values/#transparency) の価値観をサポートします。
 
 私たちは関係構築を大切にしています。インフォーマルコミュニケーションを通じて関係を構築する時間を意図的に作ることを非常に重視しています。
 
@@ -57,7 +57,7 @@ GitLab は [非同期で働く](asynchronous/) オールリモート組織なの
 
 {{% cardpane %}}
 {{% card footer="グループ社交コールはリモートチームがつながり絆を作るのに最適な方法です" %}}
-![Group social calls are a great way for remote teams to connect and bond](/images/all-remote/gitlab-marketing-team-hotdog-meeting.jpg)
+![グループ社交コールはリモートチームがつながり絆を作るのに最適な方法です](/images/all-remote/gitlab-marketing-team-hotdog-meeting.jpg)
 {{% /card %}}
 {{% /cardpane %}}
 
@@ -115,7 +115,7 @@ GitLab は [非同期で働く](asynchronous/) オールリモート組織なの
 
 {{% cardpane %}}
 {{% card footer="GitLab マーケティングチーム Show & Tell ソーシャルコール" %}}
-![GitLab marketing team Show & Tell social call](/images/all-remote/marketing-social-call-show-and-tell.jpg)
+![GitLab マーケティングチーム Show & Tell ソーシャルコール](/images/all-remote/marketing-social-call-show-and-tell.jpg)
 {{% /card %}}
 {{% /cardpane %}}
 
@@ -147,7 +147,7 @@ GitLab は [非同期で働く](asynchronous/) オールリモート組織なの
 
 {{% cardpane %}}
 {{% card footer="帽子と背景でアレンジ" %}}
-![Mixing it up with hats and backgrounds](/images/all-remote/gitlab-marketing-social-hour.jpg)
+![帽子と背景でアレンジ](/images/all-remote/gitlab-marketing-social-hour.jpg)
 {{% /card %}}
 {{% /cardpane %}}
 
@@ -181,7 +181,7 @@ GitLab は [非同期で働く](asynchronous/) オールリモート組織なの
 
 {{% cardpane %}}
 {{% card footer="GitLab マーケティングタレントショー" %}}
-![GitLab marketing talent show](/images/all-remote/gitlab-marketing-talent-show.jpg)
+![GitLab マーケティングタレントショー](/images/all-remote/gitlab-marketing-talent-show.jpg)
 {{% /card %}}
 {{% /cardpane %}}
 
@@ -203,8 +203,8 @@ GitLab は [非同期で働く](asynchronous/) オールリモート組織なの
 
 例:
 
-1. [Arty's postcards board](https://twitter.com/TheRealArty/status/1420903891764342786)
-1. [Manoj sending 30+ postcards to 12 different countries](https://twitter.com/manoj_g33k/status/1379339796447784961)
+1. [Arty のポストカードボード](https://twitter.com/TheRealArty/status/1420903891764342786)
+1. [Manoj が 12 か国に 30 枚以上のポストカードを送る様子](https://twitter.com/manoj_g33k/status/1379339796447784961)
 
 ## コーヒーチャット
 
@@ -306,7 +306,7 @@ GitLab チームメンバーミキサーをセットアップするには、2 �
 
 {{% cardpane %}}
 {{% card footer="GitLab 会社コールで aloha を広める" %}}
-![Spreading aloha on a GitLab company call](/images/all-remote/GitLab-Aloha-Shirt-Team.jpg)
+![GitLab 会社コールで aloha を広める](/images/all-remote/GitLab-Aloha-Shirt-Team.jpg)
 {{% /card %}}
 {{% /cardpane %}}
 
@@ -328,7 +328,7 @@ Show and Tell セッションは、仕事の経験を人間化し、同僚をよ
 
 {{% cardpane %}}
 {{% card footer="Zoom でバーチャル DJ ルームを開始する時間" %}}
-![Time to get the virtual DJ room started in Zoom](/images/all-remote/zoom-share-computer-music-dj-room.jpg)
+![Zoom でバーチャル DJ ルームを開始する時間](/images/all-remote/zoom-share-computer-music-dj-room.jpg)
 {{% /card %}}
 {{% /cardpane %}}
 
@@ -351,7 +351,7 @@ Zoom でこの機能を使用するには、以下を参照してください。
 
 ## AMA (Ask Me Anything)
 
-![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
+![GitLab バリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
 
 [AMA](/handbook/company/culture/all-remote/) をホストすることは、人々が他の人について学ぶ素晴らしい方法です。質問は仕事についても *できますが*、これらは、より個人的なつながりを可能にする面白くて遠回しな質問をする機会として役立ちます。エグゼクティブとの継続的な AMA を検討することは特に重要です。AMA はリーダーを人間化し、私たちは [異なるよりも似ている](https://allpoetry.com/Human-Family) ことをチームに思い出させます。
@@ -360,7 +360,7 @@ Zoom でこの機能を使用するには、以下を参照してください。
 
 {{% cardpane %}}
 {{% card footer="ハロウィンの Airplane! の楽しみ" %}}
-![A bit of Airplane! fun on Halloween](/images/all-remote/GitLab-Halloween-2019-Costume-Zoom-Call.jpg)
+![ハロウィンの Airplane! の楽しみ](/images/all-remote/GitLab-Halloween-2019-Costume-Zoom-Call.jpg)
 {{% /card %}}
 {{% /cardpane %}}
 
@@ -381,7 +381,7 @@ Zoom でこの機能を使用するには、以下を参照してください。
 
 {{% cardpane %}}
 {{% card footer="素晴らしいチームに乾杯" %}}
-![Cheers to a fantastic team](/images/all-remote/gitlab-zoom-happy-hour.jpg)
+![素晴らしいチームに乾杯](/images/all-remote/gitlab-zoom-happy-hour.jpg)
 {{% /card %}}
 {{% /cardpane %}}
 
@@ -395,7 +395,7 @@ Zoom でこの機能を使用するには、以下を参照してください。
 
 {{% cardpane %}}
 {{% card footer="GitLab でのバーチャルスカベンジャーハント" %}}
-![Virtual scavenger hunt](/images/blogimages/cs-scavenger-hunt/hugo.jpg)
+![GitLab でのバーチャルスカベンジャーハント](/images/blogimages/cs-scavenger-hunt/hugo.jpg)
 {{% /card %}}
 {{% /cardpane %}}
 

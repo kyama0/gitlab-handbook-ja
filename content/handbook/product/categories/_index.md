@@ -1,9 +1,9 @@
 ---
 title: 製品セクション、ステージ、グループ、カテゴリ
 upstream_path: /handbook/product/categories/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: "2026-07-02T19:47:53+01:00"
-translated_at: "2026-07-10T07:06:29+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+lastmod: "2026-08-14T11:43:03-05:00"
+translated_at: "2026-08-15T06:23:48+09:00"
 translator: claude
 stale: false
 ---
@@ -161,27 +161,27 @@ Growth は Enablement の単一グループでしたが、Growth のためにデ
 
 ```mermaid
 flowchart TD
-    Start([作者が詳細な説明を持つ MR を作成]) --> Decision{変更のタイプ?}
+    Start([Author creates MR with detailed description]) --> Decision{Type of Change?}
 
-    Decision -->|Very Significant| VSType{カテゴリを削除?}
-    Decision -->|Significant| SType{カテゴリを追加?}
-    Decision -->|Less Significant| LSApproval[承認は不要]
+    Decision -->|Very Significant| VSType{Remove category?}
+    Decision -->|Significant| SType{Add category?}
+    Decision -->|Less Significant| LSApproval[No Approvals Required]
 
-    VSType -->|はい| CodeReview[コードレビューが必要]
-    VSType -->|いいえ| VSApproval[必要な承認:<br/>✓ PLT<br/>✓ Approver]
+    VSType -->|Yes| CodeReview[Code Review Required]
+    VSType -->|No| VSApproval[Required Approvals:<br/>✓ PLT<br/>✓ Approver]
     CodeReview --> VSApproval
 
-    SType -->|はい| CanvasReview[Opportunity Canvas レビューが必要]
-    SType -->|いいえ| SApproval[必要な承認:<br/>✓ PLT]
+    SType -->|Yes| CanvasReview[Opportunity Canvas Review Required]
+    SType -->|No| SApproval[Required Approvals:<br/>✓ PLT]
     CanvasReview --> SApproval
 
-    VSApproval --> VSMention[メンション:<br/>• PMM]
-    VSMention --> End([MR マージ準備完了])
+    VSApproval --> VSMention[Mention:<br/>• PMM]
+    VSMention --> End([MR Ready for Merge])
 
-    SApproval --> SMention[メンション:<br/>• PMM<br/>• Approver]
+    SApproval --> SMention[Mention:<br/>• PMM<br/>• Approver]
     SMention --> End
 
-    LSApproval --> LSMention[メンションを推奨]
+    LSApproval --> LSMention[Mentions Encouraged]
     LSMention --> End
 ```
 
@@ -221,21 +221,21 @@ flowchart TD
 
 ```mermaid
 flowchart TD
-    Type{変更タイプ?}
+    Type{Change Type?}
 
-    Type -->|メンバーシップ| Member[チーム割り当て]
-    Member --> MemberApproval[関連するマネージャー]
+    Type -->|Membership| Member[team assignments]
+    Member --> MemberApproval[Relevant Manager]
 
-    Type -->|情報| Info[説明、リンク]
-    Info --> InfoApproval[Product Lead または<br/>Engineering Lead]
+    Type -->|Informational| Info[description, links]
+    Info --> InfoApproval[Product Lead OR<br/>Engineering Lead]
 
-    Type -->|その他| Level{どのレベル?}
+    Type -->|Other| Level{Which Level?}
 
-    Level -->|Group| GroupApproval[Product Manager<br/>+ Stage Product Lead]
+    Level -->|Group| GroupApproval[Product Manager<br/>+ Stage Product lead]
 
-    Level -->|Stage| StageApproval[Stage Product Lead<br/>+ Section Product Lead]
+    Level -->|Stage| StageApproval[Stage Product lead<br/>+ Section Product lead]
 
-    Level -->|Section| SectionApproval[Section Product Lead<br/>+ Section Engineering Lead<br/>+ PLT メンバー]
+    Level -->|Section| SectionApproval[Section Product lead<br/>+ Section Engineering lead<br/>+ PLT member]
 ```
 
 **メンバーシップ変更** (Section、Stage、または Group の一員が誰か) は、影響を受けるチームメンバーが直属する関連マネージャーが承認する必要があります。
@@ -266,7 +266,7 @@ Engineering 主導の Section、Stage、Group については、同様のこと�
    - 例えば、Group レベルの変更の場合、Group の Engineering Lead と Group が属する Stage の Engineering Lead をメンションします。
 1. 影響を受ける Section の Engineering Lead
 1. 関連する Product Marketing Manager
-1. [テクニカルライティングのカウンターパート](/handbook/product/ux/technical-writing/#assignments-to-devops-stages-and-groups)
+1. [テクニカルライティングのカウンターパート](/handbook/marketing/technical-writing/#assignments-to-devops-stages-and-groups)
 1. Technical Writing の Lead (Director)
 1. UX Research の Lead
 1. Product Design の Lead (Director)

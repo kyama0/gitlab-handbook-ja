@@ -2,11 +2,11 @@
 title: "プロダクトマーケティング オンボーディング"
 description: "GitLab のオンボーディングガイド: 新しいチームメンバーのための重要情報"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/core-product-marketing/onboarding/
-upstream_sha: c26b483f365d397f86ef45e60a892d0783588ac1
-translated_at: "2026-04-30T00:00:00Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:31:06+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-27T10:12:54-08:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
 ## **オンボーディングガイド**
@@ -63,7 +63,7 @@ lastmod: "2026-02-27T10:12:54-08:00"
 | ------ | ------ |
 |  1. [GitLab コミュニケーションの概要](/handbook/communication/)  |  tbd  |
 |  2. [GitLab Slack tips](/handbook/communication/#slack)  |  tbd |
-|  3. [Markdown 101](/handbook/product/ux/technical-writing/) | [録画](https://www.youtube.com/watch?v=Ix416lAYRSg)  |
+|  3. [Markdown 101](/handbook/marketing/technical-writing/) | [録画](https://www.youtube.com/watch?v=Ix416lAYRSg)  |
 |  4. [GitLab プロジェクト管理](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/101/) | [録画](https://drive.google.com/open?id=1CSUvzrPhWtP7082e0iTCfjVsPU8U6WTR)  |
 |  5. [Git でリモートワークしながら Web サイトを更新する](/handbook/about/editing-handbook/) | [録画](https://drive.google.com/open?id=1lPxAJsq9k4GN_d3H4zCGVzlNcDKVgqrm)  |
 

@@ -1,18 +1,18 @@
 ---
-title: "Plan:Project Management"
-upstream_path: /handbook/product/groups/project-management/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+title: "Plan:Work Items"
+upstream_path: /handbook/product/groups/work-items/
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T07:12:58+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-02T19:44:15+00:00"
+lastmod: "2026-08-14T14:39:01+02:00"
 ---
 
-### Plan: Project Management {#welcome}
+### Plan: Work Items {#welcome}
 
-[すべてのチームメンバーと安定したカウンターパートを表示](/handbook/product/categories/#project-management-group)
+[すべてのチームメンバーと安定したカウンターパートを表示](/handbook/product/categories/#work-items-group)
 
-このチーム全体の責任は、[Project Management Group](/handbook/product/categories/#project-management-group) に記載されています。これは特に、ワークアイテム、ボード、マイルストーン、イテレーション、To-Do リスト、タイムトラッキング、プランニングアナリティクス、通知に関する GitLab の機能を扱うことを意味します。
+このチーム全体の責任は、[Work Items Group](/handbook/product/categories/#work-items-group) に記載されています。これは特に、ワークアイテム、ボード、マイルストーン、イテレーション、To-Do リスト、タイムトラッキング、プランニングアナリティクス、通知に関する GitLab の機能を扱うことを意味します。
 
 - 質問があります。誰に聞けばいいですか?
 
@@ -32,14 +32,14 @@ GitLab Issue では、質問はまずプロダクトマネージャー（`@gweav
 
 #### 製品品質
 
-- ターゲット [Error Budget](https://dashboards.gitlab.net/d/stage-groups-project_management/stage-groups-group-dashboard-plan-project-management?orgId=1)、`> 99.95%`
+- ターゲット [Error Budget](https://dashboards.gitlab.net/d/stage-groups-work_items/stage-groups-group-dashboard-plan-work-items?orgId=1)、`> 99.95%`
 - Escaped defects - canary または本番で見つかった欠陥や脆弱性についてファイルされたバグまたはセキュリティ Issue の数（月次ローリングベース）
 
 #### プロセス
 
 - Open MR Age (OMA)
 - Open MR Review Time (OMRT)
-- Merge Request Rate - エンジニア1人あたりの月次ローリングベースでの平均 MR 数
+- Merge Request Rate - エンジニア 1 人あたりの月次ローリングベースでの平均 MR 数
 - Lead Time - Issue が `workflow::validation backlog` から `closed` まで流れるのにかかる中央値の日数。
 - Validation Track Cycle Time - Issue が `workflow::validation backlog` から `workflow::planning breakdown` まで流れるのにかかる中央値の日数。
 - Build Track Phase 1 Cycle Time - Issue が `workflow::planning breakdown` から `workflow::ready for development` まで流れるのにかかる中央値の日数。
@@ -51,7 +51,7 @@ GitLab Issue では、質問はまずプロダクトマネージャー（`@gweav
 | ゴール | ステータス | Issue |
 | --------------- | ------ | ----- |
 | Issue の 90% 超が現在の Product Development Workflow ステージを正しく反映している | 進行中 | https://gitlab.com/gitlab-org/plan/-/issues/442 |
-| 現在のリリースでエンジニアリングがコミットした Issue は、毎月17日までに `Deliverable` ラベルが適用されている | 進行中 | https://gitlab.com/gitlab-org/plan/-/issues/442 |
+| 現在のリリースでエンジニアリングがコミットした Issue は、毎月 17 日までに `Deliverable` ラベルが適用されている | 進行中 | https://gitlab.com/gitlab-org/plan/-/issues/442 |
 
 ### 私たちの働き方
 
@@ -69,34 +69,34 @@ GitLab Issue では、質問はまずプロダクトマネージャー（`@gweav
 1. 現在開発中だが完了していない仕事。
 1. グループごとの過去の納品（重みによる）。
 
-最初の項目は、最大キャパシティとの比較を私たちに与えます。例えば、チームに4人いて、そのうち1人が月の半分オフを取る場合、チームは最大キャパシティの 87.5% (7/8) を持っていると言えます。
+最初の項目は、最大キャパシティとの比較を私たちに与えます。例えば、チームに 4 人いて、そのうち 1 人が月の半分オフを取る場合、チームは最大キャパシティの 87.5% (7/8) を持っていると言えます。
 
-2番目の項目は難しく、特に Issue が他の Issue をブロックしている場合、Issue を開始した後にどれだけの仕事が残っているかを過小評価しやすいです。私たちは現在、繰り越される Issue の重み付けを変更しません（元の重みを保持するため）。そのため、これは現時点ではかなり曖昧です。
+2 番目の項目は難しく、特に Issue が他の Issue をブロックしている場合、Issue を開始した後にどれだけの仕事が残っているかを過小評価しやすいです。私たちは現在、繰り越される Issue の重み付けを変更しません（元の重みを保持するため）。そのため、これは現時点ではかなり曖昧です。
 
-3番目の項目は、過去にどうしていたかを示します。トレンドが下向きの場合、これを [レトロスペクティブ](#retrospectives) で議論することを検討できます。
+3 番目の項目は、過去にどうしていたかを示します。トレンドが下向きの場合、これを [レトロスペクティブ](#retrospectives) で議論することを検討できます。
 
-繰り越し重み（項目2）を期待キャパシティ（項目1と3の積）から差し引くと、次のリリースのキャパシティが分かるはずです。
+繰り越し重み（項目 2）を期待キャパシティ（項目 1 と 3 の積）から差し引くと、次のリリースのキャパシティが分かるはずです。
 
 #### ワークフロー
 
-Issue と Epic は一般的に、私たちの [Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/) に従います。
+Issue とエピックは一般的に、私たちの [Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/) に従います。
 
-2022年1月から、計画ケイデンスをマイルストーンからイテレーションにシフトする3〜6か月の実験を実施します。主な目標は、よりタイムリーで質の高い意思決定を可能にするため、より小さなバッチで計画を立てることです。イテレーション計画は、30分間の週次 Engineering/Product/UX シンクで行われます。重み付けされ `~workflow::ready for development` とマークされた Issue のみが、今後のイテレーションにスケジュールされます。イテレーションを活用しますが、文書化された [プロダクト開発タイムライン](/handbook/engineering/workflow/#product-development-timeline) には引き続き従います。
+2022 年 1 月から、計画ケイデンスをマイルストーンからイテレーションにシフトする 3 〜 6 か月の実験を実施します。主な目標は、よりタイムリーで質の高い意思決定を可能にするため、より小さなバッチで計画を立てることです。イテレーション計画は、30 分間の週次 Engineering/Product/UX シンクで行われます。重み付けされ `~workflow::ready for development` とマークされた Issue のみが、今後のイテレーションにスケジュールされます。イテレーションを活用しますが、文書化された [プロダクト開発タイムライン](/handbook/engineering/workflow/#product-development-timeline) には引き続き従います。
 
-Project Management ボード:
+Work Items ボード:
 
-- [Validation Track](https://gitlab.com/groups/gitlab-org/-/boards/4058642?label_name[]=group%3A%3Aproject%20management)
-- [Build Track](https://gitlab.com/groups/gitlab-org/-/boards/1235826?label_name[]=group%3A%3Aproject%20management)
-- [Iteration Planning](https://gitlab.com/groups/gitlab-org/-/boards/2528314?label_name[]=group::project+management)
-- [Milestone Planning](https://gitlab.com/groups/gitlab-org/-/boards/1910149?label_name[]=group%3A%3Aproject%20management)
+- [Validation Track](https://gitlab.com/groups/gitlab-org/-/boards/4058642?label_name[]=group%3A%3Awork%20items)
+- [Build Track](https://gitlab.com/groups/gitlab-org/-/boards/1235826?label_name[]=group%3A%3Awork%20items)
+- [Iteration Planning](https://gitlab.com/groups/gitlab-org/-/boards/2528314?label_name[]=group::work+items)
+- [Milestone Planning](https://gitlab.com/groups/gitlab-org/-/boards/1910149?label_name[]=group%3A%3Awork%20items)
 - [Team](https://gitlab.com/groups/gitlab-org/-/boards/2089576)
 
 #### テーマ
 
-少数の優先度の高い機能が、一定期間の「テーマ」として選ばれます。テーマは、直接貢献しないチームメンバーであっても、チーム全体が成果物を中心に結集する機会を提供します。これらのアイテムは、関係するすべての人によって、小さなイテレーションを提供し、仕事のブロックを解除し続けるという観点で、特に注意深く扱われます。チームごとに同時に進行中のテーマは決して2つを超えてはなりません。
+少数の優先度の高い機能が、一定期間の「テーマ」として選ばれます。テーマは、直接貢献しないチームメンバーであっても、チーム全体が成果物を中心に結集する機会を提供します。これらのアイテムは、関係するすべての人によって、小さなイテレーションを提供し、仕事のブロックを解除し続けるという観点で、特に注意深く扱われます。チームごとに同時に進行中のテーマは決して 2 つを超えてはなりません。
 
 - Slack チャンネルは #f_[feature name] という規約で作成されます。
-- Epic 階層が作成され、サブ Epic がイテレーションにマッピングされ、それぞれがマイルストーン内で達成可能です。
+- エピック階層が作成され、サブエピックがイテレーションにマッピングされ、それぞれがマイルストーン内で達成可能です。
 - イテレーションは独立に達成できる複数の Issue に分割され、PM はそれらを通常通りスケジュールします。
 - 定期的な「オフィスアワー」コールなど、他のアクションも確立される可能性があります。
 
@@ -104,8 +104,8 @@ Project Management ボード:
 
 成功したテーマの例:
 
-1. **Requirements Management** ([#f_requirements-management](https://app.slack.com/client/T02592416/CUEQBQ7K8)、[Epic](https://gitlab.com/groups/gitlab-org/-/epics/2703))
-1. **Jira Importer** ([#f_jira-importer](https://app.slack.com/client/T02592416/CUS6GB2JH)、[Epic](https://gitlab.com/groups/gitlab-org/-/epics/2738))
+1. **Requirements Management** ([#f_requirements-management](https://app.slack.com/client/T02592416/CUEQBQ7K8)、[エピック](https://gitlab.com/groups/gitlab-org/-/epics/2703))
+1. **Jira Importer** ([#f_jira-importer](https://app.slack.com/client/T02592416/CUS6GB2JH)、[エピック](https://gitlab.com/groups/gitlab-org/-/epics/2738))
 
 #### 顧客との対話
 
@@ -129,7 +129,7 @@ Plan ステージは、GitLab Issue で月次レトロスペクティブを実�
 
 ### プロダクトシャドーイング
 
-エンジニアリングのチームメンバーは、プロダクトの安定したカウンターパートをシャドーイングできます。シャドーイングセッションは2営業日、または役割の異なる機能で経験を最大化するため複数日に分割された相当する期間続きます。チームのカウンターパートをシャドーイングするには:
+エンジニアリングのチームメンバーは、プロダクトの安定したカウンターパートをシャドーイングできます。シャドーイングセッションは 2 営業日、または役割の異なる機能で経験を最大化するため複数日に分割された相当する期間続きます。チームのカウンターパートをシャドーイングするには:
 
 1. [plan](https://gitlab.com/gitlab-org/plan) プロジェクトトラッカーで `Product-Shadowing` テンプレートを使用して Issue を作成する;
 1. このページへの WIP MR を作成し、以下の表を更新して、自分の名前と Issue リンクを追加する。そして、

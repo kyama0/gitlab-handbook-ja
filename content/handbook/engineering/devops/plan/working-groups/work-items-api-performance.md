@@ -2,11 +2,11 @@
 title: "Work Items API パフォーマンス ワーキンググループ"
 description: "Work Items API のパフォーマンス改善を目的とするステージワーキンググループ"
 upstream_path: /handbook/engineering/devops/plan/working-groups/work-items-api-performance/
-upstream_sha: bb4e4d0fc1a355c00a1d82b1528ff729c83af189
-translated_at: "2026-04-28T13:03:31Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:47:00+09:00"
 translator: claude
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-08-14T14:39:01+02:00"
 ---
 
 ## 属性
@@ -17,7 +17,7 @@ lastmod: "2025-12-05T19:47:34+00:00"
 | 目標終了日          | 2025-08-29                                                                                              |
 | Slack               | [#wg_work-items-api-performance](https://gitlab.enterprise.slack.com/archives/C08G0G394CD)              |
 | Google Doc          | [アジェンダ](https://docs.google.com/document/d/1S5ZSbEOSCAUWe0U3gZPGXSUKIaFjjn_HD1UGkz2hhXY/edit?tab=t.0) |
-| Epic                | https://gitlab.com/groups/gitlab-org/-/epics/16919                                                      |
+| エピック                | https://gitlab.com/groups/gitlab-org/-/epics/16919                                                      |
 | 概要・ステータス    | [終了基準の進捗](#exit-criteria) を参照してください                                                     |
 
 ### 背景
@@ -54,10 +54,10 @@ TBD
 
 | ワーキンググループ役割 | 氏名              | 職位                                                |
 |--------------------|-------------------|-----------------------------------------------------|
-| ファシリテーター   | Eugenia Grieff    | Senior Backend Engineer - Plan::Product Planning    |
-| メンバー           | Alisa Frunza      | Backend Engineer - Plan::Knowledge                  |
-| メンバー           | Heinrich Lee Yu   | Staff Backend Engineer - Plan::Project Management   |
-| メンバー           | Kassio Borges     | Staff Backend Engineer - Plan::Product Planning     |
-| メンバー           | Alexandru Croitor | Senior Backend Engineer - Plan:Project Management   |
-| メンバー           | Nicolas Dular     | Staff Backend Engineer - Plan::Product Planning     |
+| ファシリテーター   | Eugenia Grieff    | Senior Backend Engineer - Plan:Portfolio Planning    |
+| メンバー           | Alisa Frunza      | Backend Engineer - Plan:Planner Intelligence                  |
+| メンバー           | Heinrich Lee Yu   | Staff Backend Engineer - Plan:Work Items   |
+| メンバー           | Kassio Borges     | Staff Backend Engineer - Plan:Portfolio Planning     |
+| メンバー           | Alexandru Croitor | Senior Backend Engineer - Plan:Work Items   |
+| メンバー           | Nicolas Dular     | Staff Backend Engineer - Plan:Portfolio Planning     |
 | メンバー           | Dmitry Gruzd      | Staff Backend Engineer - Foundations::Global Search |

@@ -2,11 +2,11 @@
 title: "GitLab におけるローカリゼーション技術管理"
 description: "GitLab のローカリゼーション技術エコシステム、ワークフロー、グローバルなコンテンツ配信を可能にする AI 駆動の翻訳インフラストラクチャの包括的な概要。"
 upstream_path: /handbook/marketing/localization/localization_technology/
-upstream_sha: 768e1a6af6ab56133195582e6a0b17d225df15f7
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:31:06+09:00"
 translator: claude
 stale: false
-lastmod: "2026-01-27T17:14:51-05:00"
+lastmod: "2026-08-13T14:09:12-04:00"
 ---
 
 ## ミッションとビジョン
@@ -62,6 +62,7 @@ GitLab 内:
 
 - [Tech Docs AI-powered translation](https://gitlab.com/gitlab-com/localization/tech-docs-ai-powered-translation) - Gemini LLM を備えた Google Cloud Vertex AI が GitLab プロダクトドキュメントを処理し、高度な NLP、チェイン化されたプロンプトシステム、複数の用語集とスタイルガイドの注入、ファイル変換および検証を使用
 - カスタム [GitLab Translation Agent](https://gitlab.com/explore/ai-catalog/agents/532/) のための設定および仕様を保持する [GitLab Duo Agent Translation Platform](https://gitlab.com/gitlab-com/localization/gitlab-duo-agent-translation-platform) プロジェクト
+- [CI Translation Components](https://gitlab.com/gitlab-com/localization/ci-translation-components) - 翻訳ワークフロー向けの GitLab CI コンポーネント。ソースコンテンツの変更を検出し、CI/CD パイプラインから翻訳エージェントをトリガーする再利用可能なジョブを提供
 - 新興 AI ツール - プロトタイプの初期段階にある Claude のスタンドアロンプロジェクト
 
 ### コンテンツ管理システム統合

@@ -2,9 +2,9 @@
 title: Product Designer のワークフロー
 description: "プロダクト開発プロセスの上流に位置する戦略的パートナーとして働く Product Designer のための、デザインプロセス、協働の実践、クラフトに関する包括的なガイド。"
 upstream_path: /handbook/upstream-studios/product-design/workflow/
-upstream_sha: 50ee631c98005b47a0caea9d46e4ba5cfc62891a
-lastmod: "2026-07-22T08:32:12-03:00"
-translated_at: "2026-07-23T06:07:21+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+lastmod: "2026-08-14T11:43:03-05:00"
+translated_at: "2026-08-15T06:11:46+09:00"
 translator: codex
 stale: false
 ---
@@ -156,6 +156,7 @@ Upstream Studios は、戦略的パートナーはまず強い社内のつなが
 5. **動画を録画する**: 動画を録画する場合は Zoom を使用し、[GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A) YouTube チャンネルにアップロードする。機密でない限り公開設定を「Public」にし、「UX」プレイリストに追加する
 6. **参照情報を含むコメントをする**: 機能の Issue に動画と、Issue、エピック、Figma ファイルなどの関連する参照情報（[例](https://gitlab.com/gitlab-org/gitlab/-/issues/217355#note_435285696)）へのリンクを付けてコメントする。これらのリンクを動画の説明にも追加する
 7. **Issue にフィードバックを記録する**: レビューに必要なすべての参照情報と情報を添付し、フィードバックを記録する専用の Issue（[例](https://gitlab.com/gitlab-org/gitlab/-/issues/241511)）を作成する
+8. **フィードバックを受け取る期限を含める**: 作業を共有するときは、フィードバックが必要な日付を対象者に伝える。デザインフィードバックのサイクルを短縮するため、ステージグループのステークホルダーにデザインフィードバックを求める際は、MR レビューで期待されるターンアラウンドと同様に、**2 営業日**を推奨する。
 
 **例:**
 
@@ -294,7 +295,7 @@ UI テキストには、ボタンまたはメニューのラベル、エラー�
 **円滑なプロセスを確保するには:**
 
 - **Issue と MR にラベルを付ける**: [UI text](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=UI+text) と `documentation` のラベルを適用する
-- **レビューを依頼する**: デザイン Issue で、[グループ担当の Technical Writer](/handbook/product/ux/technical-writing/#assignments)にメッセージを送り、レビューを依頼する。レビューするファイルまたは行と、プレビューまたはコンテキストを理解する方法を指定する
+- **レビューを依頼する**: デザイン Issue で、[グループ担当の Technical Writer](/handbook/marketing/technical-writing/#assignments)にメッセージを送り、レビューを依頼する。レビューするファイルまたは行と、プレビューまたはコンテキストを理解する方法を指定する
 - **テキストの最終化で協働する**: UI テキストが使いやすく正確になるよう、Technical Writer と密に協働して最終化する
 - **他部門からのフィードバックを取り入れる**: 他部門が UI コピーについて意見を提供する場合は、大幅な修正と委員会方式のデザインを避けるため、具体的なテキストではなく目標を尋ねる
 

@@ -1,14 +1,13 @@
 ---
 title: "テクニカルライティング"
-upstream_path: /handbook/product/ux/technical-writing/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T06:32:43+09:00"
+description: "GitLab の Technical Writing チームは、開発者、プロダクトマネージャー、コミュニティと協力してプロダクトドキュメントを作成しています。"
+upstream_path: /handbook/marketing/technical-writing/
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T07:08:45+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-08T17:43:36-06:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
-
-GitLab のテクニカルライティングチームは、開発者、プロダクトマネージャー、コミュニティと協力してプロダクトドキュメントを作成しています。
 
 優れたドキュメントは、GitLab の顧客、ユーザー、管理者の進化するニーズに応えます。機能やベストプラクティスについて読者を教育します。GitLab を効率的に設定、利用、トラブルシューティングできるようにします。テクニカルライティングチームは [docs.gitlab.com](https://docs.gitlab.com) サイトとそのコンテンツ、プロセス、ツールを管理しています。
 
@@ -329,8 +328,8 @@ DocOps グループは、この作業を他の[テクニカルライティング
 - 2020 年 5 月以降、ページ数は 165% 以上、単語数は 270% 以上増加しています。
 - ページ（30%）と単語（30%）の大部分は、左ナビゲーションの **Use GitLab** セクションにあります。
 
-GitLab チームメンバーは、[ドキュメントメトリクスページ](https://internal.gitlab.com/handbook/product/ux/technical-writing/metrics-kpis/)
-と docs.gitlab.com の [LookerStudio ダッシュボード](https://lookerstudio.google.com/reporting/d6af7a2b-2aaa-4f30-8742-811e62777c93/page/IeVBD)で追加のドキュメントメトリクスを表示できます。ダッシュボードの手順については、[Google Analytics](https://internal.gitlab.com/handbook/product/ux/technical-writing/google-analytics/) を参照してください。
+GitLab チームメンバーは、[ドキュメントメトリクスページ](https://internal.gitlab.com/handbook/marketing/technical-writing/metrics-kpis/)
+と docs.gitlab.com の [LookerStudio ダッシュボード](https://lookerstudio.google.com/reporting/d6af7a2b-2aaa-4f30-8742-811e62777c93/page/IeVBD)で追加のドキュメントメトリクスを表示できます。ダッシュボードの手順については、[Google Analytics](https://internal.gitlab.com/handbook/marketing/technical-writing/google-analytics/) を参照してください。
 
 ## テクニカルライターの PTO {#technical-writer-pto}
 
@@ -364,7 +363,7 @@ PTO を取得する際、テクニカルライターは次を行います。
 
    ```text
    I'm off for the holidays (202y-mm-dd - 202y-mm-dd). For help with documentation while I'm away, see
-   https://handbook.gitlab.com/handbook/product/ux/technical-writing/#technical-writer-pto for ways to get help.
+   https://handbook.gitlab.com/handbook/marketing/technical-writing/#technical-writer-pto for ways to get help.
    For urgent _named time-sensitive task_ matters, ping _named TW_.
    ```
 
@@ -387,7 +386,7 @@ PTO を取得する際、テクニカルライターは次を行います。
 テクニカルライターの通常アサインされている作業に加えて、定期的に完了する必要がある
 反復タスクがあります。
 
-- **リリースポストの構造チェック:** Technical Writing Lead が、各マイルストーンの終わりに公開されるリリースポストの[コンテンツをレビュー](https://docs.gitlab.com/development/documentation/release_notes/)します。アサインについては、[Release Post Scheduling](/handbook/product/ux/technical-writing/#schedule) ページを参照してください。
+- **リリースポストの構造チェック:** Technical Writing Lead が、各マイルストーンの終わりに公開されるリリースポストの[コンテンツをレビュー](https://docs.gitlab.com/development/documentation/release_notes/)します。アサインについては、[Release Post Scheduling](/handbook/marketing/technical-writing/#schedule) ページを参照してください。
 - **毎月のドキュメントリリース:** 各マイルストーンの終わりに、テクニカルライターが[ドキュメントサイトの毎月のリリースを作成](https://gitlab.com/gitlab-org/technical-writing/docs-gitlab-com/-/blob/main/doc/releases.md)します。このタスクにアサインされるテクニカルライターは、前のマイルストーンでリリースポストの構造チェックを完了したライターです。
 - **ドキュメントプロジェクトのメンテナンスタスク:** 毎月、1 人のテクニカルライターが、ドキュメントサイトとそのコンテンツのメンテナンスタスクを完了するようにアサインされます。これには、`technical-writing` プロジェクトで [`tw-monthly-tasks` テンプレートを使用して新しい Issue を作成](https://gitlab.com/gitlab-org/technical-writing/team-tasks/-/issues/new?issue[title]=Docs%20project%20maintenance%20tasks%2C%20Month%20YYYY&issuable_template=tw-monthly-tasks)し、メンテナンス作業を追跡することが含まれます。メンテナンス Issue に記載された内容を超える追加作業が必要な場合、テクニカルライターは必要に応じてマージリクエストや追加の Issue を作成します。
 
@@ -507,7 +506,7 @@ PTO を取得する際、テクニカルライターは次を行います。
     - ドキュメントのみの MR と同じワークフローを使用してコンテンツをレビューする。
     - MR がすべての[必要な承認](#merge-rights)を得ている場合に *限り* マージできる。
 
-レビューの所要時間について詳しくは、[Review-response SLO](../../../engineering/workflow/code-review/#review-response-slo) を参照してください。
+レビューの所要時間について詳しくは、[Review-response SLO](../../engineering/workflow/code-review/#review-response-slo) を参照してください。
 
 #### 自動グループメンションのトリアージ {#triaging-automated-group-mentions}
 

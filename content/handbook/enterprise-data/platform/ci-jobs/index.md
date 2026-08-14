@@ -2,11 +2,11 @@
 title: "データチーム CI ジョブ"
 description: "GitLab データチーム CI ジョブ"
 upstream_path: /handbook/enterprise-data/platform/ci-jobs/
-upstream_sha: 7032d681eb34b7baa363eb97119170b35beb5d76
-translated_at: "2026-07-24T06:39:10+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:34:22+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-23T12:08:18+00:00"
+lastmod: "2026-08-14T11:24:54+00:00"
 ---
 
 ---
@@ -328,6 +328,19 @@ run grants ジョブが `PREP` と `PROD` の既存の付与を比較できな�
 この場合、提出されたロールが `PREP` と `PROD` で適切なアクセスを持っているかどうかを確認してください。問題が続く場合は再実行（1 時間程度かかることがあります）で修正できるはずです。```
 
 **注意：** `run_grants` ジョブは開発プロセス中に複数回実行できます。最初の実行後に新しいモデルが作成された場合、ジョブを再実行してこれらの新しいオブジェクトにも付与が適用されることを確認できます。
+
+#### `run_grants_eval_harness`
+
+**実行内容:** `SQG_EVAL_CI` ロールに、MR ごとの Snowflake ゼロコピークローンデータベース（`<BRANCH>_PROD`／`<BRANCH>_PREP`）に対する `USAGE` と `SELECT` のアクセス権を付与します。クローンデータベースはソースから権限を継承しないため、この手順なしでは SQG 評価ハーネスは MR クローンデータを読み取れません。
+
+**実行するタイミング:** 会話型アナリティクスの評価ハーネスを実行する場合に必要です。MR クローンをビルドした後、SQG 評価ハーネスを実行する前に手動でトリガーしてください。推奨順序:
+
+1. `clone_prod_real`
+2. `🏗️🏭build_changes`（任意）
+3. **`run_grants_eval_harness`** ← ここで手動でトリガーする
+4. `sql-eval` ジョブを実行してハーネスをテストする
+
+**トリガー方法:** 引数なしで実行します。常に `SQG_EVAL_CI` ロールへのアクセス権のみを付与します。
 
 ### 🐍 Python
 

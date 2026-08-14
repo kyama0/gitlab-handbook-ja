@@ -2,11 +2,11 @@
 title: "Triage Operations"
 description: "GitLab でトリアージされていない Issue を処理するための自動化とツール"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/triage-operations/"
-upstream_sha: "aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc"
-translated_at: "2026-05-29T21:13:52Z"
+upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
+translated_at: "2026-08-15T06:41:40+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-29T14:14:34+02:00"
+lastmod: "2026-08-14T14:39:01+02:00"
 ---
 
 GitLab のすべてのチームメンバーは Issue をトリアージできます。[トリアージされていない Issue](/handbook/product-development/how-we-work/issue-triage/#triaging-issues) の数を少なく保つことはメンテナビリティにとって不可欠であり、私たちの共同責任です。
@@ -54,26 +54,26 @@ Developer Experience チームは、この目標を達成するために手動�
 
 ```mermaid
 graph TB;
-  A{ステージラベル<br>が存在する?} -- はい --> B;
-  B{グループラベル<br>が存在する?} -- はい --> D;
-  B -- いいえ --> E;
-  D{グループには<br>1 つのカテゴリがある?} -- はい --> X9[カテゴリラベルを設定する。];
-  D -- いいえ --> X1[何もしない。];
-  E{グループはカテゴリラベルに基づいて検出されたか<br>すべてのカテゴリラベルのうち 50% 超のマッチ率で?} -- はい --> H;
-  E -- いいえ --> K;
-  H{検出されたグループラベルは<br>ステージラベルと一致するか?} -- はい --> X2[検出された<br>グループラベルを設定する。];
-  H -- いいえ --> K;
-  K{現在のステージで<br>カテゴリラベルから複数の候補グループが<br>検出されたか?} -- はい --> X3[手動トリアージ<br>が必要。];
-  K -- いいえ --> L;
-  L{ステージには<br>1 つのグループがあるか?} -- はい --> X4[この<br>グループラベルを設定する。];
-  L -- いいえ --> X5[手動トリアージ<br>が必要。];
-  A -- いいえ --> C;
-  C{グループラベル<br>が存在する?} -- はい --> F;
-  F{グループには<br>1 つのカテゴリがある?} -- はい --> X10[グループラベルに基づいてステージとカテゴリラベルを設定する、<br>完了！];
-  F -- いいえ --> X6[グループラベルに基づいてステージラベルを設定する、<br>完了！];
-  C -- いいえ --> G;
-  G{グループはカテゴリラベルに基づいて検出されたか<br>すべてのカテゴリラベルのうち 50% 超のマッチ率で?} -- はい --> X7[グループと<br>ステージラベルを設定する。];
-  G -- いいえ --> X8[手動トリアージ<br>が必要。];
+  A{Stage label<br>is present?} -- Yes --> B;
+  B{Group label<br>is present?} -- Yes --> D;
+  B -- No --> E;
+  D{Group has<br>one category?} -- Yes --> X9[Set category label.];
+  D -- No --> X1[Nothing to do.];
+  E{Group is detected based on category labels<br>with a match rate > 50% among<br>all category labels?} -- Yes --> H;
+  E -- No --> K;
+  H{Does detected group label<br>matches stage label?} -- Yes --> X2[Set detected<br>group label.];
+  H -- No --> K;
+  K{Several potential groups in<br>current stage detected<br>from category labels?} -- Yes --> X3[Manual triage<br>required.];
+  K -- No --> L;
+  L{Does the stage has<br>a single group?} -- Yes --> X4[Set this<br>group label.];
+  L -- No --> X5[Manual triage<br>required.];
+  A -- No --> C;
+  C{Group label<br>is present?} -- Yes --> F;
+  F{Group has<br>one category?} -- Yes --> X10[Set stage and category labels<br>based on group label,<br>we're done!];
+  F -- No --> X6[Set stage label<br>based on group label,<br>we're done!];
+  C -- No --> G;
+  G{Group is detected based on category labels<br>with a match rate > 50% among<br>all category labels?} -- Yes --> X7[Set group and<br>stage labels.];
+  G -- No --> X8[Manual triage<br>required.];
 ```
 
 上記の推測が完了した後、ステージまたはグループラベルに基づいてセクションラベルが追加されます。この手順で推測されたラベルにセクションラベルのみが含まれる場合、説明は追加されません。
@@ -257,31 +257,31 @@ DRI はこれらのフィーチャーフラグをレビューして、完全に�
 graph LR
     classDef triageOpsClass fill:#FC6D26,stroke:#333,stroke-width:3px;
 
-    MR_INITIAL(["より広いコミュニティのマージリクエスト<br />（著者は `gitlab-org` のメンバーではない）"])
-    MR_COMMUNITY(["`Community contribution` ラベルを持つマージリクエスト"])
-    MR_OPENED[MR がオープンされた]
-    MR_UPDATED[MR が更新された]
-    MR_MERGED[MR がマージされた]
-    MR_CLOSED[MR がクローズされた]
-    MR_AUTHOR_NOTE[MR の著者がノートを投稿した]
-    ANYONE_NOTE[誰かがノートを投稿した]
-    AUTOMATED_THANK(["1. 「ありがとう」ノートを投稿<br/>2. `Community contribution` ラベルを追加<br />3. `workflow::in dev` ラベルを追加<br />4. MR を著者に割り当てる"])
-    WORKFLOW_READY_FOR_REVIEW_LABEL{"`workflow::ready for review`<br />ラベルが追加されたか?"}
-    AUTOMATED_REVIEWER_REQUEST_GENERIC(["レビュアーがいる場合はレビューを依頼。<br />そうでない場合は（グループラベルに基づいて選ばれた）<br />MR コーチに依頼（と割り当て）してレビューする"])
-    AUTOMATED_REVIEW_DOC{"MR はドキュメントファイルに<br/>触れているか?"}
-    AUTOMATED_REVIEWER_REQUEST_DOC(["テクニカルライターにレビューを<br />依頼するノートを投稿する"])
-    AUTOMATED_REVIEW_UX{"MR は<br />`UX` ラベルを持っているか?"}
-    AUTOMATED_REVIEWER_REQUEST_UX(["`#ux-community-contributions`<br />Slack チャンネルと MR にメッセージを投稿する"])
-    AUTOMATED_FEEDBACK_REQUEST(["フィードバックを求める<br />ノートを投稿する"])
-    AUTOMATED_HACKATHON_LABEL{ハッカソンは<br />現在実施中か?}
-    AUTOMATED_HACKATHON_LABEL_ADDITION(["`Hackathon` ラベルを追加する"])
-    WHAT_AUTHOR_NOTE{どのようなノートか?}
-    WHAT_ANYONE_NOTE{どのようなノートか?}
+    MR_INITIAL(["Wider Community Merge request<br />(author is not a member of `gitlab-org`)"])
+    MR_COMMUNITY(["Merge request with the `Community contribution` label"])
+    MR_OPENED[MR is opened]
+    MR_UPDATED[MR is updated]
+    MR_MERGED[MR is merged]
+    MR_CLOSED[MR is closed]
+    MR_AUTHOR_NOTE[MR author posts a note]
+    ANYONE_NOTE[Anyone posts a note]
+    AUTOMATED_THANK(["1. Post a 'Thank you' note<br/>2. Add the `Community contribution` label<br />3. Add the `workflow::in dev` label<br />4. Assign MR to its author"])
+    WORKFLOW_READY_FOR_REVIEW_LABEL{"Was the<br />`workflow::ready for review`<br />label added?"}
+    AUTOMATED_REVIEWER_REQUEST_GENERIC(["If reviewers are present, ask them to review.<br />Otherwise, ask (and assign) an MR coach<br />(selected based on group label) to review"])
+    AUTOMATED_REVIEW_DOC{"Does the MR touches<br/>documentation files?"}
+    AUTOMATED_REVIEWER_REQUEST_DOC(["Post a note asking a<br />technical writer to review"])
+    AUTOMATED_REVIEW_UX{"Does the MR has<br />the `UX` label?"}
+    AUTOMATED_REVIEWER_REQUEST_UX(["Post a message in the<br />`#ux-community-contributions`<br />Slack channel, and on the MR"])
+    AUTOMATED_FEEDBACK_REQUEST(["Post a note asking<br />for feedback"])
+    AUTOMATED_HACKATHON_LABEL{Is a Hackathon<br />currently running?}
+    AUTOMATED_HACKATHON_LABEL_ADDITION(["Add the `Hackathon` label"])
+    WHAT_AUTHOR_NOTE{What note is it?}
+    WHAT_ANYONE_NOTE{What note is it?}
 
-    AUTOMATED_LABEL_COMMAND_REPLY(["リクエストされたラベルを追加する"])
-    AUTOMATED_HELP_COMMAND_REPLY(["ヘルプのために MR コーチに依頼（レビュアーとして割り当て）する"])
-    AUTOMATED_REVIEW_COMMAND_REPLY(["`workflow::ready for review` ラベルを追加する"])
-    AUTOMATED_FEEDBACK_COMMAND_REPLY(["`#mr-feedback` Slack チャンネルにフィードバックを投稿する"])
+    AUTOMATED_LABEL_COMMAND_REPLY(["Add the requested label"])
+    AUTOMATED_HELP_COMMAND_REPLY(["Ask (and assign as reviewer)<br />an MR coach for help"])
+    AUTOMATED_REVIEW_COMMAND_REPLY(["Add the `workflow::ready for review` label"])
+    AUTOMATED_FEEDBACK_COMMAND_REPLY(["Post the feedback in the<br />`#mr-feedback` Slack channel"])
 
     MR_INITIAL -.-> MR_OPENED
     MR_COMMUNITY -.-> MR_UPDATED & MR_MERGED & MR_CLOSED & MR_AUTHOR_NOTE & ANYONE_NOTE
@@ -293,11 +293,11 @@ graph LR
     MR_AUTHOR_NOTE -.-> WHAT_AUTHOR_NOTE
     ANYONE_NOTE -.-> WHAT_ANYONE_NOTE
 
-    WORKFLOW_READY_FOR_REVIEW_LABEL ---> |はい| AUTOMATED_REVIEWER_REQUEST_GENERIC
-    WORKFLOW_READY_FOR_REVIEW_LABEL -.-> |はい| AUTOMATED_REVIEW_DOC & AUTOMATED_REVIEW_UX
-    AUTOMATED_REVIEW_DOC -->|はい| AUTOMATED_REVIEWER_REQUEST_DOC
-    AUTOMATED_REVIEW_UX -->|はい| AUTOMATED_REVIEWER_REQUEST_UX
-    AUTOMATED_HACKATHON_LABEL --->|はい| AUTOMATED_HACKATHON_LABEL_ADDITION
+    WORKFLOW_READY_FOR_REVIEW_LABEL ---> |Yes| AUTOMATED_REVIEWER_REQUEST_GENERIC
+    WORKFLOW_READY_FOR_REVIEW_LABEL -.-> |Yes| AUTOMATED_REVIEW_DOC & AUTOMATED_REVIEW_UX
+    AUTOMATED_REVIEW_DOC -->|Yes| AUTOMATED_REVIEWER_REQUEST_DOC
+    AUTOMATED_REVIEW_UX -->|Yes| AUTOMATED_REVIEWER_REQUEST_UX
+    AUTOMATED_HACKATHON_LABEL --->|Yes| AUTOMATED_HACKATHON_LABEL_ADDITION
 
     WHAT_AUTHOR_NOTE --->|"@gitlab-bot label ..."| AUTOMATED_LABEL_COMMAND_REPLY
     WHAT_AUTHOR_NOTE --->|"@gitlab-bot feedback"| AUTOMATED_FEEDBACK_COMMAND_REPLY
@@ -406,7 +406,7 @@ graph LR
     * `Contributor Success`・`ActivityPub`
     * `security`（追加できるが削除できない）
   * ノートが著者・担当者・またはチームメンバーによって投稿された
-* **注意**: 複数のラベルを追加または削除するには、コマンドの後にすべてのラベルをリストします。例: `@gitlab-bot label ~"group::project management" ~"type::bug"`
+* **注意**: 複数のラベルを追加または削除するには、コマンドの後にすべてのラベルをリストします。例: `@gitlab-bot label ~"group::work items" ~"type::bug"`
 * 自動化アクション:
   * リクエストされたラベルを追加または削除する
 * レート制限: リクエスター/アイテムごとに 1 時間に 60 回

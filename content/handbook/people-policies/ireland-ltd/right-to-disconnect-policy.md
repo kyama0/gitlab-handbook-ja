@@ -2,11 +2,11 @@
 title: "GitLab Ireland Ltd つながらない権利ポリシー"
 description: GitLab Ireland Ltd つながらない権利ポリシー
 upstream_path: /handbook/people-policies/ireland-ltd/right-to-disconnect-policy/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:23:48+09:00"
 translator: claude
 stale: false
-lastmod: "2025-09-25T09:40:49-04:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
 {{% panel header="**これは Secure Document です**" header-bg="orange" %}}
@@ -88,7 +88,7 @@ GitLab（「会社」）では、すべてのチームメンバーの安全、�
 
 ## 8. コミュニケーション
 
-私たちは、会社の価値観に沿って、常に敬意を持ってプロフェッショナルにコミュニケーションをとり、非同期コミュニケーションと[ドキュメントファースト](/handbook/product/ux/technical-writing/#documentation)を志向し、他者とのやり取りでは[ポジティブな意図を仮定](/handbook/values/#assume-positive-intent)します（コミュニケーションのトーンとタイミングに関するものも含む）。可能な限り非同期で運営することにイニシアチブをとってください。これは、特に労働時間外で仕事からつながらない人々への配慮を示すものです。これは、会議の録画の伝達、テキスト、電話、Slack メッセージではなく GitLab Issue と Merge Request の使用、現地の祝日と休暇ステータスへの配慮によって示されます。労働時間外のオンラインを強要するのではなく、ドキュメントをデフォルトとするよう他者を奨励してください。コミュニケーションを送信する際、送信者はタイミングと邪魔になる可能性に十分な配慮を払うべきであり、受信者は労働時間が再開するまで応答することを期待されていないことを理解すべきです。チームメンバーは、毎日どれだけのバーチャルコミュニケーションを行うかを認識し管理する必要があります。
+私たちは、会社の価値観に沿って、常に敬意を持ってプロフェッショナルにコミュニケーションをとり、非同期コミュニケーションと[ドキュメントファースト](/handbook/marketing/technical-writing/#documentation)を志向し、他者とのやり取りでは[ポジティブな意図を仮定](/handbook/values/#assume-positive-intent)します（コミュニケーションのトーンとタイミングに関するものも含む）。可能な限り非同期で運営することにイニシアチブをとってください。これは、特に労働時間外で仕事からつながらない人々への配慮を示すものです。これは、会議の録画の伝達、テキスト、電話、Slack メッセージではなく GitLab Issue と Merge Request の使用、現地の祝日と休暇ステータスへの配慮によって示されます。労働時間外のオンラインを強要するのではなく、ドキュメントをデフォルトとするよう他者を奨励してください。コミュニケーションを送信する際、送信者はタイミングと邪魔になる可能性に十分な配慮を払うべきであり、受信者は労働時間が再開するまで応答することを期待されていないことを理解すべきです。チームメンバーは、毎日どれだけのバーチャルコミュニケーションを行うかを認識し管理する必要があります。
 
 多くのチームメンバーがソーシャルメディアに参加していることを認識しており、ソーシャルメディアで GitLab の同僚チームメンバーとつながることを選択する場合は、プロフェッショナルに保ち、常に [GitLab's Communication Guidelines](/handbook/communication/) を考慮する必要があることに留意してください。チームメンバーは、労働時間外の同僚からのソーシャルコミュニケーションに応答する必要があると感じるべきではありません。詳細については [Team Member Social Media Policy](/handbook/marketing/team-member-social-media-policy/) を参照してください。
 

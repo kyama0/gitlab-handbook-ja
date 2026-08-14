@@ -3,11 +3,11 @@ title: 顧客との通話
 category: Handling tickets
 description: "サポートエンジニアリングにおける顧客通話実施のためのワークフロー"
 upstream_path: /handbook/support/workflows/customer_calls/
-upstream_sha: 0353e616a41b1d1664a95cc83c80b01f990a912f
-translated_at: "2026-05-08T20:30:00Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:11:46+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-25T09:58:26+01:00"
+lastmod: "2026-08-14T18:14:16+12:00"
 ---
 
 ## はじめに
@@ -173,18 +173,17 @@ graph TD
 
 まず、Zendesk で
 [`Support::Customer Calls::Offer a call`](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/Customer%20Calls/Offer%20a%20call.md?ref_type=heads)
-マクロを使用します。`ONETIME_PERSONAL_CALENDLY_LINK` を必ず自分の個人的な
-Calendly リンクに変更してください。
+マクロを使用します。`ONETIME_PERSONAL_MEETING_CALENDAR_LINK` を必ず自分の個人的な
+Reclaim.ai Scheduling リンクに変更してください。
 
 顧客に通話リンクを送信する際:
 
-- ゴーストコール (応答のない通話) を避けるため、必ず [使い捨ての Calendly リンク](/handbook/support/workflows/calendly#generating-a-single-use-calendly-link)
+- ゴーストコール (応答のない通話) を避けるため、必ず [使い捨ての Scheduling リンク](/handbook/support/workflows/reclaim#generating-a-customized-hidden-scheduling-link)
   を使用して顧客を通話に招待してください。
-- [イベントタイトル](https://calendly.com/event_types) に [`Support` という単語が含まれている](/handbook/support/workflows/calendly#support-calls-in-the-team-calendar)
-  ことを確認してください (大文字小文字は区別されません)。これは、イベントが
+- Scheduling リンク名にチケット番号が含まれていることを確認してください。
+- **Booking page customization** の **Webhooks** に [「Add to Global Support calendar」が含まれている](/handbook/eta/css/reclaim/#how-to-opt-into-it)ことを確認してください。
+  これは、イベントが
   `GitLab Support` カレンダーに表示されるために必要です。
-- Calendly イベントに、Zendesk チケット番号を尋ねる必須の招待者質問が
-  含まれていることを確認してください。
 - 自分の都合が限られていることがわかっている、またはバックアップが必要な場合は、
   別の SE に通話を担当できるかどうか確認してください。
 
@@ -278,7 +277,7 @@ Calendly リンクに変更してください。
 
 ### 顧客のノーショー
 
-顧客が通話に参加できない理由はたくさんあります。顧客が通話に参加せず、*10 分以上* 待った場合、通話を終了し、チケットを更新し、新しい通話をスケジュールするために Calendly リンクを再送します。チケットへのあなたの返信は、「お会いできなかったことを申し訳なく思い、新しい通話をスケジュールするためにリンクを使用するよう招待します」とだけ述べるべきです。
+顧客が通話に参加できない理由はたくさんあります。顧客が通話に参加せず、*10 分以上* 待った場合、通話を終了し、チケットを更新し、新しい通話をスケジュールするために Scheduling リンクを再送します。チケットへのあなたの返信は、「お会いできなかったことを申し訳なく思い、新しい通話をスケジュールするためにリンクを使用するよう招待します」とだけ述べるべきです。
 
 ## 通話後
 

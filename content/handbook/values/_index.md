@@ -7,9 +7,9 @@ images:
 no_list: true
 weight: -20
 upstream_path: /handbook/values/
-upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
-lastmod: "2026-08-11T21:18:43+02:00"
-translated_at: "2026-08-12T06:25:09+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+lastmod: "2026-08-14T11:43:03-05:00"
+translated_at: "2026-08-15T06:11:46+09:00"
 translator: claude
 stale: false
 ---
@@ -424,7 +424,7 @@ GitLab において効率性とは、材料、時間、エネルギーを無駄�
 
 可能な限り [非同期](/handbook/company/culture/all-remote/asynchronous/) で動くようイニシアチブを取りましょう。これは、同じタイムゾーンにいないかもしれない人、いつものタイムゾーンの外を旅している人、または家庭やコミュニティでの差し迫った用事を中心に [1 日を組み立てている](/handbook/company/culture/all-remote/) 人への配慮と思いやりを示します。
 
-これは、[ミーティング](/handbook/company/culture/all-remote/meetings/) の録画を共有すること、テキスト・通話・Slack メッセージよりも GitLab の Issue やマージリクエストを使うこと、現地の祝日や休暇のステータスに配慮することによって示されます。他者に勤務時間外もオンラインでいるよう圧力をかけるのではなく、[ドキュメント](/handbook/product/ux/technical-writing/#documentation) をデフォルトにするよう促しましょう。
+これは、[ミーティング](/handbook/company/culture/all-remote/meetings/) の録画を共有すること、テキスト・通話・Slack メッセージよりも GitLab の Issue やマージリクエストを使うこと、現地の祝日や休暇のステータスに配慮することによって示されます。他者に勤務時間外もオンラインでいるよう圧力をかけるのではなく、[ドキュメント](/handbook/marketing/technical-writing/#documentation) をデフォルトにするよう促しましょう。
 
 ##### 居心地の悪いアイデアや会話を受け入れる {#embracing-uncomfortable-ideas-and-conversations}
 
@@ -951,7 +951,7 @@ DRI がシチューに入れる赤いジャガイモと金色のジャガイモ�
 - ある変更が透明性にはポジティブに、効率性にはほぼ同じ量だけネガティブに影響する場合、透明性は効率性よりも階層の上位にあるので、私たちは前に進みます。
 - ある変更が多様性に大きなポジティブな影響を与えるが、イテレーションにはネガティブに影響する場合、多様性はイテレーションよりも階層の下位にありますが、全体的な影響がネガティブよりもポジティブなので、私たちは前に進みます。
 
-![Values](/images/values/values.svg)
+![バリュー](/images/values/values.svg)
 
 [バリューに関する GitLab Unfiltered のインタビュー](https://youtu.be/7kMQj4O4ZGU) で、GitLab 共同創業者の Sid Sijbrandij は次のような文脈を語っています。
 

@@ -2,9 +2,9 @@
 title: 'Issue の作業'
 description: 'Issue の作業に関するドキュメント'
 upstream_path: "/handbook/eta/css/gitlab/issues/working-issues/"
-upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
-lastmod: "2026-07-21T11:29:58-05:00"
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
+lastmod: "2026-08-14T13:09:20-05:00"
+translated_at: "2026-08-15T06:34:22+09:00"
 translator: codex
 stale: false
 ---
@@ -107,7 +107,7 @@ Issue で行う作業は、Issue がどのステージにあるかに大きく�
 {{% alert title="ステージの詳細" color="primary" %}}
 
 - 主担当 DRI: Dylan
-- 副担当 DRI: Alyssa
+- 副担当 DRI: Jason
 - SLA 目標: 1 〜 2 営業日
 - このステージを使用するリクエストタイプ:
   - Administrative

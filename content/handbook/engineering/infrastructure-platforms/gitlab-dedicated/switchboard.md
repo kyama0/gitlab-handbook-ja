@@ -1,11 +1,11 @@
 ---
 title: Switchboard チーム
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/
-upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
-translated_at: "2026-06-25T07:39:40+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:41:40+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-24T15:19:10-04:00"
+lastmod: "2026-08-14T07:35:14+00:00"
 ---
 
 ## 概要
@@ -49,8 +49,23 @@ Switchboard チームと関わるには:
 
 ## Switchboard アプリケーションへのアクセスのリクエスト
 
+アクセスのプロビジョニングは環境によって異なります:
+
+### Test 環境 {#test-environment}
+
+**Test** 環境へのアクセスは **[Lumos](https://app.lumos.app/)** を通じてプロビジョニングされます。Test アクセスに以前使用されていた Okta グループはもう存在しません。
+
+1. `Switchboard Test` の Lumos アクセスリクエストを開きます。
+1. 必要な Role を指定します（下記の [Role 説明](#roles) を参照）。
+1. **Permissions** では、**Other** を選択します（`Dedicated Team Users` が特に必要な場合を除く）。
+1. アクセスの正当性を記載します。
+
+### Beta および Production 環境 {#beta-and-production-environments}
+
+**Beta** および **Production** 環境へのアクセスでは、引き続き既存の Google/Okta グループプロセスを使用します:
+
 - 以下を指定して [Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) を作成
-  - 特定の環境 (Test / Beta / Production)
+  - 特定の環境 (Beta / Production)
   - 必要な Role (下記の [Role 説明](#roles) を参照)
   - アクセスの正当性
 - アプリケーションのアクセス＆プロビジョニングの詳細は [Tech Stack](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/tech_stack.yml) の `Switchboard - GitLab Dedicated` セクションにあります

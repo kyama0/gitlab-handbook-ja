@@ -6,14 +6,14 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/handbook-first/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
+upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
+translated_at: "2026-08-15T06:54:56+09:00"
 translator: claude
 stale: false
-lastmod: "2025-12-01T16:21:31-05:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
-![GitLab navigation and journey](/images/all-remote/gitlab-journey-and-navigation.jpg)
+![GitLab のナビゲーションとジャーニー](/images/all-remote/gitlab-journey-and-navigation.jpg)
 {style="max-width: 50%;"}
 
 [ハンドブックファースト](/handbook/about/handbook-usage/#why-handbook-first)のコミュニケーションアプローチは、適切に運営されるビジネスにとって[密かに不可欠](/handbook/company/culture/all-remote/)なものです。省略できるように感じられ、非効率にさえ見えますが、プロセス、[文化](building-culture/)、解決策を意図的に書き留めて整理することによる桁外れのメリットは驚異的です。逆に、構造化されたドキュメントを*避ける*ことは、全体的な成長を妨げる低レベルの[混乱と混沌](/handbook/values/#five-dysfunctions)を植え付ける最善の方法です。
@@ -28,7 +28,7 @@ GitLab は[単一の真実の情報源](/handbook/values/#single-source-of-truth
 
 ## ハンドブックファーストがなぜ重要なのか？
 
-![GitLab all-remote handbook-first illustration](/images/all-remote/gitlab-all-remote-v2-youtube-2560x1440.png)
+![GitLab のオールリモートにおけるハンドブックファーストのイラスト](/images/all-remote/gitlab-all-remote-v2-youtube-2560x1440.png)
 {style="max-width: 50%;"}
 
 初期段階のスタートアップでは、[ドキュメント戦略](/handbook/about/handbook-usage/#why-handbook-first)を避けたいという誘惑にかられることが特によくあります。チームメンバーが少数のうちは、ミーティング、Slack、またはメールスレッドですべての人に情報を伝えることは可能です。長期的には、この見落としはますます有害になります。
@@ -73,7 +73,7 @@ Slack を[インフォーマルなコミュニケーション](informal-communic
 
 ## ハンドブックを構築するためのツール
 
-![GitLab code review](/images/all-remote/gitlab-code-review.jpg)
+![GitLab のコードレビュー](/images/all-remote/gitlab-code-review.jpg)
 {style="max-width: 50%;"}
 
 会社の Wiki がハンドブックとして機能できるという一般的な考えがありますが、現実には [Wiki はスケールしません](/handbook/about/handbook-usage/#wiki-handbooks-dont-scale)。Wiki は少数の選ばれた人々によって更新されるよう設計されており、いくつかの問題を引き起こします。第一に、コンテンツが頻繁に古くなり、別の人間に個人的に確認しなければ情報を信頼できないという会社全体の信念が生まれます（結果として、[自己学習](/handbook/company/culture/all-remote/)のプロセスに非効率性が注入されます）。
@@ -107,12 +107,12 @@ GitLab は、同じ場所にいる人々も複数のタイムゾーンにまた�
 **分散バージョン管理のパワーをハンドブックで示す例：**
 
 1. [このマージリクエスト](https://gitlab.com/gitlab-com/www-gitlab-com/merge_requests/29227)では、最初の提案の一部のみが合意に達し、GitLab のハンドブックにマージされました。しかし、これにより関連するすべての関係者が意見を持つ機会を得ました。また、これらの変更がなぜ、いつ行われたかを誰でも理解できるように、最終的なドキュメントに至る思考プロセスが[コンテキスト](/handbook/company/culture/all-remote/)として記録されます。
-1. すべてのチームメンバーが提案できるよう権限を与えることで、新入社員が会社に利益をもたらす新鮮な視点を提供できます。[このマージリクエスト](https://gitlab.com/gitlab-com/www-gitlab-com/merge_requests/29045)は、新入社員が GitLab の[オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies/)チェックリストを強化する提案を共有し、その後バディが最終的にマージされた提案を行った例です。
+1. すべてのチームメンバーが提案できるよう権限を与えることで、新入社員が会社に利益をもたらす新鮮な視点を提供できます。[このマージリクエスト](https://gitlab.com/gitlab-com/www-gitlab-com/merge_requests/29045)は、新入社員が GitLab の[オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies.md)チェックリストを強化する提案を共有し、その後バディが最終的にマージされた提案を行った例です。
 1. この[マージリクエスト](https://gitlab.com/gitlab-com/www-gitlab-com/merge_requests/36848)は GitLab でのオンボーディング段階にある人によって提案されました。ディスカッションスレッドは、学習がどのように起こるか、[イテレーション](/handbook/values/#iteration)がどのように提案を形成するか、そして[誰もがハンドブックの進化に貢献できる](/handbook/company/mission/#mission)かについての可視性を提供しています。
 
 ## 会社のハンドブックには何を入れるか？
 
-![GitLab collaboration illustration](/images/all-remote/gitlab-collaboration-illustration.jpg)
+![GitLab コラボレーションのイラスト](/images/all-remote/gitlab-collaboration-illustration.jpg)
 {style="max-width: 50%;"}
 
 [GitLab](https://about.gitlab.com/stages-devops-lifecycle/) のようなツールを使って会社のハンドブックを構築・進化させる良さは、完全な目次を事前にマッピングする必要がないことです。[Notion](https://www.notion.com)や[Guru](https://www.getguru.com)のようなツールも使用できます。以下をトップレベルの組織化の初期ガイドとして検討しますが、会社の規模、範囲、ニーズに基づいて逸脱することをためらわないでください。
@@ -162,7 +162,7 @@ GitLab は、同じ場所にいる人々も複数のタイムゾーンにまた�
 
 ## 書記や編集チームを指定する
 
-理想的には、誰もがハンドブックの進化に貢献するメンバーだと感じるようになります。これは、初期段階で「書き留める」ことを価値観として根付かせると、より育てやすくなります。[拡大している会社](scaling/)が創業後多くの年数が経ってからハンドブックを追加する場合は、各チームに専任の書記を雇用することを検討してください。
+理想的には、誰もがハンドブックの進化に貢献するメンバーだと感じるようになります。これは、初期段階で[「書き留める」](/handbook/values/#write-things-down)ことを価値観として根付かせると、より育てやすくなります。[拡大している会社](scaling/)が創業後多くの年数が経ってからハンドブックを追加する場合は、各チームに専任の書記を雇用することを検討してください。
 
 元ジャーナリストはこの種の仕事に向いています。なぜなら、それは単純な書き起こし以上のものだからです。[ミーティング](meetings/)中の[メモ](/handbook/communication/#external-communication)をドキュメント化し、それを [Google Docs](/handbook/communication/#google-docs) から[ハンドブック](/handbook/about/handbook-usage/#why-handbook-first)に変換するには、ストーリーテリングの才能と何が重要か、どのような[コンテキスト](/handbook/company/culture/all-remote/)を追加すべきかについての理解が必要です。
 
@@ -192,7 +192,7 @@ GitLab ハンドブック使用法の[プレゼンテーションを作成する
 
 以下の GitLab リソースでドキュメントの重要性についてさらに学びましょう。
 
-1. [テクニカルライティングハンドブックセクション](/handbook/product/ux/technical-writing)
+1. [テクニカルライティングハンドブックセクション](/handbook/marketing/technical-writing)
 1. [ドキュメントスタイルガイド](https://docs.gitlab.com/ee/development/documentation/styleguide/)
 1. [ドキュメントガイドライン](https://docs.gitlab.com/ee/development/documentation/)
 1. [ドキュメントによるスケーリング](/handbook/company/culture/all-remote/)

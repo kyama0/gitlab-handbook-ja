@@ -1,12 +1,12 @@
 ---
-title: Product Development Flow
+title: プロダクト開発フロー
 description: クロスファンクショナルなプロダクト開発のワークフロープロセスとラベル付け。
 upstream_path: /handbook/product-development/how-we-work/product-development-flow/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-16T21:18:58Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:20:45+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:42-03:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
 ## 概要と哲学
@@ -39,8 +39,8 @@ GitLab のプロダクトミッションは、ユーザーが愛し、価値を�
 DRI が誰であるかについては、[Product Development Roles and Responsibilities ページ](../roles-and-responsibilities/)を参照してください。
 
 <object data="/images/product-development/product-development-flow/PDF-Diagram.svg" style="width: 100%;" type="image/svg+xml">
-  Product Development Flow diagram.
-  Unable to load this content, check console for details.
+  プロダクト開発フロー図。
+  このコンテンツを読み込めません。詳細はコンソールを確認してください。
 </object>
 
 > <i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:1.25em" aria-hidden="true"></i> 私たちは、Issue の状態を効率的に伝えるために Issue ステータスを使用します。これらのステータスを使用することで、チームを横断したコラボレーションが可能になり、Issue の現在の状態が伝わります。
@@ -356,7 +356,7 @@ Issue が `Verification` 状態にあるとき、担当エンジニアは Stagin
 | 成果 | 活動 |
 |----------|------------|
 |<i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:1.25em" aria-hidden="true"></i> **機能が構築される** | - DRI が[完了の定義](https://gitlab.com/gitlab-org/gitlab-foss/-/blob/master/doc/development/contributing/merge_request_workflow.md#definition-of-done)が満たされていることを確認する<br/>- ステークホルダーに定期的なステータス更新を提供する<br/>- ステータスチェックインや同期スタンドアップを避けるため、非同期の更新を提供する<br/> - エンジニアが割り当てられた Issue を実装するために[エンジニアリングプロセス](/handbook/engineering/workflow/#basics)に従う。 |
-|<i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:1.25em" aria-hidden="true"></i> **機能がテストされる** | - エンジニアが実装する機能をテストする（[完了の定義](https://gitlab.com/gitlab-org/gitlab-foss/-/blob/master/doc/development/contributing/merge_request_workflow.md#definition-of-done)を参照）。<br/>- DRI が Issue にテスト要件を設定する。<br/>- DRI が Quad Planning の成果として必要な特定のテストカバレッジの変更をフォローアップする。<br/>- Technical Writer が作成されたドキュメントの[レビュー](/handbook/product/ux/technical-writing/#reviews)を完了する。<br/>- Application Security Engineer がノンブロッキングの[アプリケーションセキュリティレビュープロセス](/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/)を通じてリスク軽減を検証する。 |
+|<i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:1.25em" aria-hidden="true"></i> **機能がテストされる** | - エンジニアが実装する機能をテストする（[完了の定義](https://gitlab.com/gitlab-org/gitlab-foss/-/blob/master/doc/development/contributing/merge_request_workflow.md#definition-of-done)を参照）。<br/>- DRI が Issue にテスト要件を設定する。<br/>- DRI が Quad Planning の成果として必要な特定のテストカバレッジの変更をフォローアップする。<br/>- Technical Writer が作成されたドキュメントの[レビュー](/handbook/marketing/technical-writing/#reviews)を完了する。<br/>- Application Security Engineer がノンブロッキングの[アプリケーションセキュリティレビュープロセス](/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/)を通じてリスク軽減を検証する。 |
 
 ### Build フェーズ 3: Launch
 

@@ -1,9 +1,9 @@
 ---
 title: "Core Team"
 upstream_path: /handbook/marketing/developer-relations/engineering/core-team/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-lastmod: "2026-06-16T12:33:40-04:00"
-translated_at: "2026-06-20T15:10:46Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+lastmod: "2026-08-14T14:39:01+02:00"
+translated_at: "2026-08-15T06:31:06+09:00"
 translator: codex
 stale: false
 ---
@@ -116,10 +116,10 @@ details summary * {
 - g_gitaly
 - g_monitor_platform_insights
 - g_pajamas-design-system
-- g_product-planning
-- g_project-management
+- g_portfolio-planning
 - g_runner
 - g_sscs_pipeline-security
+- g_work-items
 - gck
 - gdk
 - gdk-gitpod

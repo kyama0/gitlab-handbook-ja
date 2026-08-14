@@ -1,11 +1,11 @@
 ---
 title: インシデントロール - インシデントリード
 upstream_path: /handbook/engineering/infrastructure-platforms/incident-management/roles/incident-lead/
-upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
-translated_at: "2026-08-12T06:14:18+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:38:37+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-11T07:02:51-06:00"
+lastmod: "2026-08-14T12:11:24-06:00"
 ---
 
 ## インシデントリードの責任
@@ -20,6 +20,7 @@ lastmod: "2026-08-11T07:02:51-06:00"
 6. `/incident summary` の `causes` セクションを更新することでインシデントの説明に根本原因が明確かつ平易に記述されていることを確認します。または、絵文字リアクションを使用して内部ステータスアップデートとして共有することもできます。`:pushpin:` でリアクションすると GitLab インシデント Issue にパブリックコメントが投稿され、`:star:` でリアクションすると GitLab インシデント Issue に内部コメントが追加されます。
 7. 全てのフォローアップ項目が適切に文書化され、可能な限り初期オーナーを割り当てることを確認します。
 8. コミュニケーションリードから要請された場合に顧客とのやり取りに対応できるようにします。[コミュニケーションリード - 顧客コール管理](communications-lead.html#customer-call-management)を参照してください。
+9. [断続的または自然に解消するインシデント](/handbook/engineering/infrastructure-platforms/incident-management/#intermittent-and-self-resolving-incidents)では、インシデントのワークフロー状態を対応活動に合わせ、解決まで Monitoring に保つ期間を伝えます。
 
 ### インシデント後
 

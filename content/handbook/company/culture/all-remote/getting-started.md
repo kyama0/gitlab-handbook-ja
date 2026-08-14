@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/getting-started/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T00:00:00Z"
+upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
+translated_at: "2026-08-15T06:54:56+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-03-18T15:39:47+00:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
 このページでは、新しいリモートの役割を始める際の考慮事項とヒントについて詳しく説明します。
@@ -35,7 +35,7 @@ lastmod: "2026-03-18T15:39:47+00:00"
 
 リモート組織で働いたことがない方は、理想的な[ワークスペース](workspace/)について考えたり、[インフォーマルなコミュニケーション](informal-communication/)のヒントやコツが必要かもしれません。テクノロジーとインターネットがすべて動作しつながっていることを確認し、自己紹介し、メモを取り、質問するよう準備してください。
 
-![GitLab customer illustration](/images/all-remote/gitlab-customer-path.jpg)
+![GitLab カスタマーのイラスト](/images/all-remote/gitlab-customer-path.jpg)
 {style="max-width: 50%;"}
 
 ## 助けを求めることを恐れない
@@ -64,7 +64,7 @@ GitLab では、[オンボーディングバディ](/handbook/people-group/gener
 
 ## セルフサービスのマインドセットへの適応
 
-![GitLab collaboration illustration](/images/all-remote/gitlab-collaboration-illustration.jpg)
+![GitLab コラボレーションのイラスト](/images/all-remote/gitlab-collaboration-illustration.jpg)
 {style="max-width: 50%;"}
 
 GitLab の[100%リモート文化](_index.md)と職場方法論は非常にユニークです。同じ場所にいる企業の規範をどこでも働けるシナリオに移植することを期待すべきではありません。GitLab で繁栄する人は、これまでの職場の荷物を入り口に置き去りにし、解放的で力を与える[価値観のセット](/handbook/values/)を受け入れ、本当に異なる方法で運営する許可を自分自身に与える機会を利用します。
@@ -93,7 +93,7 @@ GitLab の[100%リモート文化](_index.md)と職場方法論は非常にユ�
 
 *上記の [GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A) 動画では、2 人の GitLab の同僚が、友人、家族、コミュニティの近くに住む生活費の安い環境でのメリットについて話しています。*
 
-仕事に行くために自宅を物理的に出るとき、それは友人と家族に、あなたが簡単に連絡できないこと、そして仕事関連のタスクに集中していることを示します。[どこでも働けるシナリオ](https://about.gitlab.com/blog/2018/05/11/day-in-the-life-of-remote-sdr/)では、希望すれば一日中自宅にいられます。
+仕事に行くために自宅を物理的に出るとき、それは友人と家族に、あなたが簡単に連絡できないこと、そして仕事関連のタスクに集中していることを示します。[どこでも働けるシナリオ](https://about.gitlab.com/blog/2018/05/11/day-in-life-of-remote-sdr/)では、希望すれば一日中自宅にいられます。
 
 これに慣れていない家族にとっては、境界線を確立・維持するのが難しいことがあります。従業員が明らかに自宅にいると、他の家族メンバーにアクセス可能であることを示すかもしれません。
 
@@ -107,7 +107,7 @@ GitLab の[100%リモート文化](_index.md)と職場方法論は非常にユ�
 
 ## 作業環境を実験する
 
-![GitLab transport illustration](/images/all-remote/gitlab-transport.jpg)
+![GitLab 移動手段のイラスト](/images/all-remote/gitlab-transport.jpg)
 {style="max-width: 50%;"}
 
 自宅から働くことが多くの人にとって理想的なシナリオですが、他の場所でより幸福で充実し、より生産的であることがわかるかもしれません。自宅で負担や社会的な疲れを感じる場合は、コワーキングスペースや[屋外エリア](https://about.gitlab.com/blog/2019/09/23/how-to-push-code-from-a-hammock/)を検討してください。
@@ -182,7 +182,7 @@ GitLab は[仕事以外のコミュニケーション](informal-communication/)�
 
 ## インターネット接続を強化し、冗長性を検討する
 
-![GitLab commit illustration](/images/all-remote/gitlab-commit-illustration.jpg)
+![GitLab コミットのイラスト](/images/all-remote/gitlab-commit-illustration.jpg)
 {style="max-width: 50%;"}
 
 リモートワーカーは自分の接続に責任があることを覚えておくことが重要です。これには、より高品質の家庭用インターネット接続に投資する必要があるかもしれません。この分野での冗長性も検討する価値があります。例えば、スマートフォンのプランをテザリングをサポートするようにアップグレードしたり、専用のモバイルホットスポットまたは MiFi に投資したりすることです。これにより、プライマリ接続が失敗した場合のフォールバック接続が確保されます。
@@ -191,7 +191,7 @@ GitLab は[仕事以外のコミュニケーション](informal-communication/)�
 
 ## 孤独感とメンタルヘルスを管理する
 
-![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
+![GitLab バリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
 
 同じ場所にいる職場での社会的なやり取りに慣れている人にとっては、主に一人で作業するリモート環境に移行することはショッキングに感じることがあります。
@@ -210,7 +210,7 @@ GitLab チームメンバーは、`#mental_health_aware` Slack チャンネル�
 
 ## インフォーマルなコミュニケーションについて意図的にする
 
-![Spreading aloha on a GitLab company call](/images/all-remote/GitLab-Aloha-Shirt-Team.jpg)
+![GitLab 会社コールで aloha を広める](/images/all-remote/GitLab-Aloha-Shirt-Team.jpg)
 {style="max-width: 50%;"}
 
 
@@ -233,7 +233,7 @@ GitLab チームメンバーは、`#mental_health_aware` Slack チャンネル�
 
 *上記の [GitLab Unfiltered](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A) 動画では、2 人の GitLab の同僚がオールリモートのメリットについて話しています。特に、働きながら同僚、友人、家族を訪問しながら継続的に旅行できる能力について。*
 
-リモートの役割を受け入れる最も刺激的でエキサイティングな側面はおそらく、[その純粋な可能性](https://about.gitlab.com/blog/2017/01/31/around-the-world-in-6-releases/)です。最も充実した場所で[生活し働く](https://about.gitlab.com/blog/2017/06/30/there-and-back-again-in-one-release/)ことが[力付けられている](https://about.gitlab.com/blog/2017/06/30/there-and-back-again-in-one-release/)とき、可能性はほぼ無限です。
+リモートの役割を受け入れる最も刺激的でエキサイティングな側面はおそらく、[その純粋な可能性](https://about.gitlab.com/blog/2017/01/31/around-the-world-in-6-releases/)です。最も充実した場所で生活し働くことが[力付けられている](https://about.gitlab.com/blog/2017/06/30/there-and-back-again-in-one-release/)とき、可能性はほぼ無限です。
 
 世界を旅したりビーチサイドのカフェで働いたりすることがすべての人に魅力的ではないかもしれませんが、リモートワークはすべての人に劇的に異なるライフスタイルを可能にします。通勤をなくし、物理的なオフィスで見られる必要をなくすことで、逆の方法ではなく**仕事を自分の生活に合わせて構成する**ことができます。
 
@@ -259,7 +259,7 @@ GitLab チームメンバーは、`#mental_health_aware` Slack チャンネル�
 
 リモートワークは大きな柔軟性、自由、自律性を可能にします。また、コミュニケーションに関して適応性を必要とし、チームメンバーが最高の楽しみに達するために実験が必要かもしれません。
 
-新しいリモートワーカーにとっては、同じ場所にいるスペースで使用していた戦術を、自宅やコワーキングスペースから単純に実装したくなることがあります。例えば、誰かの肩を叩いて質問するのではなく、[ドキュメント](/handbook/product/ux/technical-writing/#documentation)内で答えを検索することを学ぶことです。
+新しいリモートワーカーにとっては、同じ場所にいるスペースで使用していた戦術を、自宅やコワーキングスペースから単純に実装したくなることがあります。例えば、誰かの肩を叩いて質問するのではなく、[ドキュメント](/handbook/marketing/technical-writing/#documentation)内で答えを検索することを学ぶことです。
 
 これは、従業員の認識を含む、より微妙な仕事の側面にも当てはまります。ユニークな場所から働いたり、異なる方法で物事をすることが同じ場所にいるスペースでは推奨されないかもしれませんが、リモートスペースではそのような多様性を祝うことを検討してください。
 

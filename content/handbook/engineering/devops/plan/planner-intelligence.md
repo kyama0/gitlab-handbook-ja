@@ -1,16 +1,16 @@
 ---
-title: Plan:Knowledge エンジニアリングチーム
-upstream_path: /handbook/engineering/devops/plan/knowledge/
-upstream_sha: bb4e4d0fc1a355c00a1d82b1528ff729c83af189
-translated_at: "2026-04-28T00:00:00Z"
+title: Plan:Planner Intelligence エンジニアリングチーム
+upstream_path: /handbook/engineering/devops/plan/planner-intelligence/
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T07:00:16+09:00"
 translator: claude
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-08-14T14:39:01+02:00"
 ---
 
-## Plan:Knowledge チーム
+## Plan:Planner Intelligence チーム
 
-Plan:Knowledge チームは [Knowledge Management カテゴリ](/handbook/product/categories/#knowledge-group)を開発しています:
+Plan:Planner Intelligence チームは [Knowledge Management カテゴリ](/handbook/product/categories/#planner-intelligence-group)を開発しています:
 
 - Wiki
 - GitLab Pages
@@ -21,15 +21,11 @@ Plan:Knowledge チームは [Knowledge Management カテゴリ](/handbook/produc
 
 ### チームメンバー
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/plan/knowledge/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{< team-by-manager-role role="(Engineering Manager|Manager, Engineering)(.*)Plan:Planner Intelligence" >}}
 
 ### 安定したカウンターパート
 
-
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/devops/plan/knowledge/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
-
+{{% engineering/stable-counterparts manager-role="(Engineering Manager|Manager, Engineering)(.*)Plan:Planner Intelligence" role="(.*)Plan:Planner Intelligence$|Product Manager(.*)Plan Stage|Security(.*)Plan|Engineering(.*)Plan$|Principal(.*)Plan$|Group(.*)Plan" %}}
 
 ### 採用チャート
 
@@ -48,7 +44,7 @@ Plan:Knowledge チームは [Knowledge Management カテゴリ](/handbook/produc
 | `~Deliverable` | 現在のマイルストーン内にこの項目を届けることを顧客にコミットしています。 |
 | `~Stretch` | 届けることにコミットはしていませんが、進捗を試みます |
 
-解決できる自信がない場合はトップの項目を取らなくても構いませんが、`#g_knowledge` に投稿してください。
+解決できる自信がない場合はトップの項目を取らなくても構いませんが、`#g_planner-intelligence` に投稿してください。
 
 ### キャパシティ
 
@@ -60,7 +56,7 @@ Plan:Knowledge チームは [Knowledge Management カテゴリ](/handbook/produc
 <!-- include omitted: includes/engineering/plan/estimating-effort.md (no localized version under content/ja/) -->
 
 
-通常、3ヶ月のローリング平均がチームのキャパシティの良い指標となります。Knowledge は新しいチームであり、明確な過去データがないため、最初はキャパシティの判断が難しい場合があります。
+通常、3 ヶ月のローリング平均がチームのキャパシティの良い指標となります。Planner Intelligence は新しいチームであり、明確な過去データがないため、最初はキャパシティの判断が難しい場合があります。
 
 PM と EM はチームのキャパシティの最大 75% に ~Deliverable Issue を収め、残りを ~Stretch Issue に割り当てることを目指します。
 
@@ -72,36 +68,36 @@ PM と EM はチームのキャパシティの最大 75% に ~Deliverable Issue 
 エンジニアは以下のテンプレートを Issue の説明に追加できます:
 
 ```markdown
-### 実装計画
+### Implementation plan
 
 <!--
-開発準備完了とは、以下の質問に「はい」と答えられることを意味します:
+Ready for development means replying yes to the following questions:
 
-- この Issue は十分に小さいですか？そうでない場合は、より小さな Issue に分割してください
-- 正しいドメイン（例: フロントエンド、バックエンド）に割り当てられていますか？そうでない場合は、それぞれのドメインの2つの Issue に分割してください
-– Issue は明確で理解しやすいですか？そうでない場合は、さらに明確化の質問をして、受け取り次第説明を更新してください
+- Is this issue sufficiently small enough? If not, break it into smaller issues
+- Is it assigned to the correct domain (e.g. frontend, backend)? If not, break it into two issues for the respective domains
+– Is the issue clear and easy to understand? If not, try asking further clarification questions and update the description once they are received
 
-2つ以上の MR が必要な場合は、説明に以下のような表を追加することを検討してください（例: `実装計画` の下）。
+If more than 2 MRs are needed, consider adding a table like the following to the description (e.g. under `Implementation plan`).
 -->
 
-| 説明 | MR |
+| Description | MR |
 |-|-|
 | MR 1 | |
 | MR 2 | |
-| ドキュメント | |
+| Documentation | |
 
-**理由:**
+**Reasoning:**
 
 <!--
-この Issue をどのように分解するかについての最初の考えを追加してください。箇条書きで構いません。
+Add some initial thoughts on how you might break down this issue. A bulleted list is fine.
 
-これはおそらく以下のようなコード変更が必要になります:
+This will likely require the code changes similar to the following:
 
-- 六角ドライバーをソニックスクリュードライバーに交換する
-- バックアップを磁気テープに書き直す
-- セマフォフラッグを送り上げて他者に警告する
+- replace the hex driver with a sonic screwdriver
+- rewrite backups to magnetic tape
+- send up semaphore flags to warn others
 
-以前の例へのリンク。先行技術に関する議論。提案されたデザインのシンプルさ/複雑さの顕著な例。
+Links to previous examples. Discussions on prior art. Notice examples of the simplicity/complexity in the proposed designs.
 -->
 
 /label ~"workflow::ready for development"
@@ -123,7 +119,7 @@ PM と EM はチームのキャパシティの最大 75% に ~Deliverable Issue 
 
 #### ボードウォーク（週次）
 
-チームメンバーは週に1回、[ビルドボード](https://gitlab.com/groups/gitlab-org/-/boards/5454834)を歩く集まりを行います。25分がこのシンクコールに割り当てられていますが、それよりはるかに早く完了することもあります。EM が DRI であり、PM を除いて出席はオプションです。録画されて [#g_knowledge Slack チャンネル](https://app.slack.com/client/T02592416/C04R571QF5E)で共有されます。セキュリティや他の機密 Issue が議論されない場合のみ、録画は公開されます。[アジェンダ](https://docs.google.com/document/d/1SZrFiipmH5GX5CYL-nOuc8NNqSs-AXCvHOzajwy06vk/edit?usp=sharing)は社内でアクセス可能であり、すべてのチームメンバーがアップデートと質問を追加することを推奨されます。
+チームメンバーは週に 1 回、[ビルドボード](https://gitlab.com/groups/gitlab-org/-/boards/5454834)を歩く集まりを行います。25 分がこのシンクコールに割り当てられていますが、それよりはるかに早く完了することもあります。EM が DRI であり、PM を除いて出席はオプションです。録画されて [#g_planner-intelligence Slack チャンネル](https://app.slack.com/client/T02592416/C04R571QF5E)で共有されます。セキュリティや他の機密 Issue が議論されない場合のみ、録画は公開されます。[アジェンダ](https://docs.google.com/document/d/1SZrFiipmH5GX5CYL-nOuc8NNqSs-AXCvHOzajwy06vk/edit?usp=sharing)は社内でアクセス可能であり、すべてのチームメンバーがアップデートと質問を追加することを推奨されます。
 
 このミーティングの目的は:
 
@@ -132,11 +128,11 @@ PM と EM はチームのキャパシティの最大 75% に ~Deliverable Issue 
 - 再優先化する
 - 助けを求める
 
-DRI はこのミーティングを待つのではなく、[ワークフローラベル](/handbook/engineering/devops/plan/knowledge/#use-of-labels)と[ヘルスステータス](/handbook/engineering/devops/plan/#keeping-health-status-accurate)を継続的に最新の状態に保つ必要があります。
+DRI はこのミーティングを待つのではなく、[ワークフローラベル](/handbook/engineering/devops/plan/planner-intelligence/#use-of-labels)と[ヘルスステータス](/handbook/engineering/devops/plan/#keeping-health-status-accurate)を継続的に最新の状態に保つ必要があります。
 
 #### プランニングミーティング（月次）
 
-プランニングミーティングはマイルストーン開始前に月に1回開催されます。プロダクトマネージャーがスケジュールの DRI です。
+プランニングミーティングはマイルストーン開始前に月に 1 回開催されます。プロダクトマネージャーがスケジュールの DRI です。
 
 エンジニアの出席はオプションですが、参加は必須です。ミーティングにはアジェンダがあり、録画されます。以下のどれかまたはすべてが含まれる場合があります:
 
@@ -166,7 +162,7 @@ DRI はこのミーティングを待つのではなく、[ワークフローラ
 
 ほとんどのプランニングは非同期で行われます。これをより効率的にするために、いくつかのツールとプロセスが観察されています。
 
-Issue には1つのマイルストーンしか添付できないため、`~"Next Up"` ラベルを使って、マイルストーンがあるかどうかに関係なく、今後のマイルストーンの項目をマークします。PM と EM は、プランニングプロセス中の現在のマイルストーンを slipする可能性のある Item やプロスペクティブな Issue に追加する前に、このラベルをすべての Issue から削除する必要があります。
+Issue には 1 つのマイルストーンしか添付できないため、`~"Next Up"` ラベルを使って、マイルストーンがあるかどうかに関係なく、今後のマイルストーンの項目をマークします。PM と EM は、プランニングプロセス中の現在のマイルストーンを slip する可能性のある Item やプロスペクティブな Issue に追加する前に、このラベルをすべての Issue から削除する必要があります。
 
 このラベルを使用することで、今後のマイルストーンを簡単に分析できます。[プランニングボード](https://gitlab.com/groups/gitlab-org/-/boards/7109724)は、現在のマイルストーンではなくこのラベルにスコープされているビルドボードを模倣しています。以下のために使用します:
 
@@ -190,11 +186,11 @@ Issue の適切なラベル付けは、チームができる作業とやって�
 
 #### 非同期更新
 
-私たちはチームメンバー、カウンターパート、ユーザーがそれぞれの Epic や Issue のステータスを明確かつ簡単にアクセスできるよう努めています。
+私たちはチームメンバー、カウンターパート、ユーザーがそれぞれのエピックや Issue のステータスを明確かつ簡単にアクセスできるよう努めています。
 
 この情報の主要な情報源は `~workflow::*` ラベルとヘルスステータスです。
 
-しかし、Issue が `~"workflow::in dev"`、`~"workflow::in review"` または `~"workflow::verification"` で1週間以上費やす場合、DRI は
+しかし、Issue が `~"workflow::in dev"`、`~"workflow::in review"` または `~"workflow::verification"` で 1 週間以上費やす場合、DRI は
 ["Knowledge - async update" コメントテンプレート](https://gitlab.com/groups/gitlab-org/-/comment_templates/1000436)を使って Issue に非同期更新を残します。
 
 非同期更新が必要な Issue を追跡するには、以下の GLQL クエリを使用できます:
@@ -238,12 +234,12 @@ group = "gitlab-org" and assignee = currentUser() and label in ("workflow::in de
 
 Grafana には、チームが担当するアプリケーション部分のパフォーマンスを表示する追加のダッシュボードがあります。
 
-- [ステージグループダッシュボード](https://dashboards.gitlab.net/d/stage-groups-knowledge/stage-groups-knowledge-group-dashboard?orgId=1)（28日間のエラーバジェットを含む）
-- [エラーバジェット詳細](https://dashboards.gitlab.net/d/stage-groups-detail-knowledge/stage-groups-knowledge-group-error-budget-detail?orgId=1)
+- [ステージグループダッシュボード](https://dashboards.gitlab.net/d/stage-groups-planner_intelligence/stage-groups-planner-intelligence-group-dashboard?orgId=1)（28 日間のエラーバジェットを含む）
+- [エラーバジェット詳細](https://dashboards.gitlab.net/d/stage-groups-detail-planner_intelligence/stage-groups-planner-intelligence-group-error-budget-detail?orgId=1)
 
 ## 便利なリンク
 
-- [Plan:Knowledge](https://gitlab.com/groups/gitlab-org/-/boards/1569369?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Aknowledge) - マイルストーンフィルターを適用して現在のリリースの作業を確認する
+- [Plan:Planner Intelligence](https://gitlab.com/groups/gitlab-org/-/boards/1569369?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=group%3A%3Aplanner%20intelligence) - マイルストーンフィルターを適用して現在のリリースの作業を確認する
 - Slack の [#s_plan](https://gitlab.slack.com/archives/s_plan)
 - [録画されたミーティング](https://www.youtube.com/playlist?list=PL05JrBw4t0KouWOCpPdlVZmwr3QCqhQ94)
 - [回顧](https://gitlab.com/gl-retrospectives/plan/issues?scope=all&utf8=%E2%9C%93&state=all&label_name[]=retrospective)

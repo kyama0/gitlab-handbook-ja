@@ -2,11 +2,11 @@
 title: "リロケーション"
 description: "チームメンバーのリロケーションに関する GitLab のポリシーとプロセス。"
 upstream_path: /handbook/people-group/relocation/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T13:37:44Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:23:48+09:00"
 translator: claude
 stale: false
-lastmod: "2026-06-18T12:00:28-04:00"
+lastmod: "2026-08-14T14:40:29-04:00"
 ---
 
 ## リロケーション / 住所変更
@@ -276,20 +276,23 @@ PEO 雇用の場所からリロケーションする場合、通知期間内に 
 
 - 注: さらなる Provident Fund フィールドは事前入力され、変更してはなりません
 
-1. Voluntary NPS Contribution rate（該当する場合）を追加するには、もう一度 'Add Plan Assignment' を選択 > 'Compensation Plan Type': Allowance を選択 > 'Voluntary NPS Contribution' を選択 > 完了したら OK をクリックします
+##### インド**へ、またはインドから**のリロケーション
 
-- チームメンバーの Workday の契約フォルダーにある、オファーレターに添付された National Pension Scheme (NPS) Enrollment Acknowledgement フォームをレビューします
-
-- Workday の 'Percent' フィールドを、チームメンバーが選択した 'Employee NPS Contribution Rate' で更新し、もう一度 OK をクリックして送信します
+- チームメンバーがインドへ、またはインドからリロケーションする場合、People Operations チームは、該当する[リロケーション Issue](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/relocations.md)で IT Ops チームと Accounting チームをタグ付けする必要があります。その後、IT Ops チームは現地でのノートパソコンの調達を手配し、チームメンバーがノートパソコンの更新対象かどうかを確認します。チームメンバーが現在使用しているノートパソコンは、リロケーション前に移転元法人で処分する必要があります。
 
 #### ドイツ
 
 ##### ドイツ**へ**のリロケーション
 
-これらは、ドイツへリロケーションするチームメンバー、またはドイツから移動するチームメンバーに契約を送るために People Operations チームが使用する手順です。
+すべてのステークホルダー（マネージャーを含む）から承認を受けたら、ドイツへリロケーションするチームメンバーについては、次のステップとして German Works Council の承認を得ます。People Operations Specialist は次を完了する必要があります:
+
+- [Works Council New Hire Checklist - Germany (Relocations)](https://docs.google.com/document/d/12xkKmgTeN0sWKSZfCJ52gJ8sAocpeUpAwYITtJIFI_4/edit?tab=t.0) ドキュメントのコピーを作成し、リロケーションに関するすべての情報を記入します。
+- 情報の記入が完了したら、People Operations Specialist は Emma Tate に Works Council の承認を依頼する HelpLab 子ケースを作成します。作成したドキュメントのコピーを Emma Tate（PBP）と共有します。Emma Tate が承認取得を進め、完了後に HelpLab ケースを更新します。
+
+Works Council の承認を受けたら、People Operations Specialist は次に進めます:
 
 1. 2025 年 1 月 1 日から、ドイツの特定の従業員書類は DocuSign 経由で発行でき、もはやウェットインク署名は不要になります。ドイツへリロケーションするチームメンバーの雇用契約は DocuSign を通じて発行できます。
-1. ドイツの現在の[オンボーディングタスク](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding_tasks/country_germany.md)をレビューし、必要な書類が記入されていることを確認します。
+1. ドイツの現在の[オンボーディングタスク](https://gitlab.com/gitlab-com/people-group/people-operations/employment-templates/-/blob/main/.gitlab/issue_templates/onboarding_tasks/country_germany.md)をレビューします。
 
 ##### ドイツ**から**のリロケーション
 

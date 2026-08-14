@@ -3,9 +3,9 @@ title: Upstream Studios のビジョンと戦略
 description: >-
   Upstream Studios は GitLab の戦略的なエクスペリエンスパートナーとして活動します。私たちは、意思決定の方向性が定められる源流、つまりアップストリームに位置しており、自分たち抜きで決められた意思決定を下流で実行するのではありません。
 upstream_path: /handbook/upstream-studios/vision-strategy/
-upstream_sha: ed29e38c0251514dde8ce6a5d84d024d4a56a28f
-lastmod: "2026-07-19T05:12:18-07:00"
-translated_at: "2026-07-19T21:09:43Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+lastmod: "2026-08-14T11:43:03-05:00"
+translated_at: "2026-08-15T06:11:46+09:00"
 translator: codex
 stale: false
 ---
@@ -179,7 +179,7 @@ stale: false
 - [私たちの働き方](/handbook/upstream-studios/): 私たちの原則、マニフェスト、アプローチ
 - [Product Design](/handbook/upstream-studios/product-design/): ワークフローとプラクティス
 - [Experience Research](/handbook/upstream-studios/experience-research/): リサーチの方法論とインパクト
-- [Technical Writing](/handbook/product/ux/technical-writing/): ドキュメントの哲学
+- [Technical Writing](/handbook/marketing/technical-writing/): ドキュメントの哲学
 - [Design System](https://design.gitlab.com/): Pajamas とプラットフォームパターン
 - [Brand](/handbook/marketing/brand-and-product-marketing/design/): ブランド戦略と Slippers デザインシステム
 

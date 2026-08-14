@@ -1,11 +1,11 @@
 ---
 title: "R&D Interlock"
 upstream_path: /handbook/product-development/how-we-work/r-and-d-interlock/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:20:45+09:00"
 translator: claude
 stale: false
-lastmod: "2026-01-21T18:32:46+00:00"
+lastmod: "2026-08-14T14:39:01+02:00"
 ---
 
 **R&D Interlock プロセス**は、Product Management、User Experience、Engineering の各チームをロードマップ計画と実行調整の上で整合させるために使われます。インターロックは 3 つの主要な要素から構成されます：
@@ -644,7 +644,7 @@ R&D Interlock プロセス経由で提案された作業は、以下のメリッ
 | Interlock candidate | {{< label name="Interlock candidate" color="#854bbe" >}} | エピックを R&D Interlock プロセスの一部として識別する。エピックテンプレートを通じて自動的に適用される |
 | Section | {{< label name="section::analytics" color="#f0ad4e" light="true" >}} <br> {{< label name="section::growth" color="#f0ad4e" light="true" >}} <br> {{< label name="section::ops" color="#f0ad4e" light="true" >}} <br> *シリーズで他のラベルも利用可能....* | 作業が属する高レベルな組織セクションを示し、部門横断でフィルタリングできるようにする |
 | Stage | {{< label name="devops::plan" color="#e44d2a" >}} <br> {{< label name="devops::create" color="#e44d2a" >}} <br> {{< label name="devops::verify" color="#e44d2a" >}} <br> *シリーズで他のラベルも利用可能....* | 作業を担当するプロダクトステージを指定する。ステージリーダーが自分のエリアのすべてのコミットメントを表示できるようにする |
-| Group | {{< label name="group::authorization" color="#a8d695" light="true" >}} <br> {{< label name="group::dedicated" color="#a8d695" light="true" >}} <br> {{< label name="group::knowledge" color="#a8d695" light="true" >}} <br> *シリーズで他のラベルも利用可能....* | 実装を担当する特定のチームを識別する。チームが自分のコミットメントだけをフィルタリングできるようにする |
+| Group | {{< label name="group::authorization" color="#a8d695" light="true" >}} <br> {{< label name="group::dedicated" color="#a8d695" light="true" >}} <br> {{< label name="group::planner intelligence" color="#a8d695" light="true" >}} <br> *シリーズで他のラベルも利用可能....* | 実装を担当する特定のチームを識別する。チームが自分のコミットメントだけをフィルタリングできるようにする |
 | Interlock priority |  {{< label name="Interlock Priority::E1" color="#cd5b45" >}} <br> {{< label name="Interlock Priority::E2" color="#cd5b45" >}} <br> {{< label name="Interlock Priority::E3" color="#cd5b45" >}} <br> {{< label name="Interlock Priority::P1" color="#cc338b" >}} <br> {{< label name="Interlock Priority::P2" color="#cc338b" >}}  <br> {{< label name="Interlock Priority::P3" color="#cc338b" >}} | Interlock Priority ラベルは、プロダクト主導（P1/P2/P3）およびエンジニアリング主導（E1/E2/E3）両方のイニシアチブについて、信頼度とコミットメントレベルを示す。<br><br> - P1/E1 は、完全なリソースコミットメントでデリバリーへの 100% の信頼度を示す。 <br> - P2/E2 は、デリバリーへの 80% の信頼度を示す。 <br>- P3/E3 は、50% の信頼度を示し、P1/P2 または E1/E2 項目がリスクにある場合は優先度を下げられる可能性がある。 <br><br> プロダクト優先順位（P）ラベルはカスタマー対面機能に使用され、エンジニアリング優先順位（E）ラベルは内部可視性のみの技術改善に使用される。 |
 | Go-to-market tier | {{< label name="GTM tier::Tier 1" color="#067aef" >}} <br> {{< label name="GTM tier::Tier 2" color="#067aef" >}}  <br> {{< label name="GTM tier::Tier 3" color="#067aef" >}}  | GTM ティアラベルは、カスタマーやステークホルダーに外部的に伝えられるプロダクト主導イニシアチブのサブセットに適用される。Go-To-Market の優先順位と可視性を表す：<br><br> - Tier 1：capability の GA、カスタマーリファレンス、差別化のストーリーを必要とする。デリバリーの最高の信頼度が必要で、外部に伝えられるコミットメントである <br> - Tier 2：ストーリーを結びつけるのに役立つ主要機能の更新を含む。これらは戦略性は低いと見なされるが、ブログ記事やメディアインタビューに値する場合がある。正式な早期アクセスまたはベータプログラムを経る必要はないが、要件ではなく「より良い」としてカスタマーリファレンス付きで広く利用可能である必要がある。カスタマーに伝えられる高信頼度の項目が必要 <br> - Tier 3：外部に伝えられる可能性のある方向性項目。通常の月次リリース項目で、完全な GTM モーションは正当化されないが、月次リリースノートや潜在的にブログ記事などのコミュニケーションには含めるべきである。 <br><br> GTM ティアはコラボレーションフェーズで議論され、その後、第 10 週の GTM Alignment Discussion でマーケティングとセールスのリーダーシップによって最終化される。GTM 優先順位ティアは、優先順位の逆転を避けるため、対応するプロダクト優先順位（P1-P3）より高くなることはない。 |
 | [Feature release state](https://docs.gitlab.com/development/documentation/experiment_beta/) | {{< label name="Feature state::Experiment" color="#dc143c" >}} <br> {{< label name="Feature state::Beta" color="#dc143c" >}} <br> {{< label name="Feature state::GA" color="#dc143c" >}} | 該当する場合、リリース時の目標機能状態を示す。作業項目のタイトルと一致する。フィルタリングにクリティカル |

@@ -2,11 +2,11 @@
 title: "Growth Community Programs"
 description: "Growth Community Programs は、関係性を魅力的なストーリーと収益に変え、コミュニティ、戦略的アカウント、アドボカシーを横断する成長の好循環を生み出すことで、将来のお客様を育て、現在のお客様を活性化します。"
 upstream_path: /handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/
-upstream_sha: 1099e381063485f55ad7088a1ce8b80dd7077696
-translated_at: "2026-08-11T06:20:47+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:31:06+09:00"
 translator: claude
 stale: false
-lastmod: 2026-08-10T18:46:52+00:00
+lastmod: "2026-08-14T18:11:36+00:00"
 ---
 
 ## チームを紹介
@@ -149,6 +149,10 @@ Growth Community Programs チームは、Content, Brand, and Design とパート
 四半期あたり 3 件のお客様ストーリー、年間 2 件のマーキー動画の制作を目指します。選定と優先順位付けのプロセスにより、適切なストーリーを適切なフォーマットで伝えることができます。選定基準はクロスファンクショナルな協業と戦略的整合性によって決定された GTM ゴールに基づき、アカウントサイズ、ライセンス種別とユーザー数、ユースケースに応じて優先順位を付けます。
 
 > **魅力的なストーリーを持つお客様がいますか?** [Customer Success Story Idea Submission Form](https://docs.google.com/forms/d/e/1FAIpQLSf3ygW-CCJ_I3nZSwvI0ZUxCJt2M3Rrd9B0LF1oTRPc9GujJA/viewform) に記入して、お客様にスポットライトを当てるお手伝いをしてください。
+
+#### カスタマーストーリーテンプレート {#customer-stories-template}
+
+[Customer Stories Template](https://docs.google.com/document/d/1j0RXh_Ya7KFczU8nt7lMJT3kcWX8JC3sjrOhAqLbetM/edit?tab=t.0) はコピーして、お客様への提案に合わせて調整できます。
 
 **カスタマーストーリーの探し方:**
 

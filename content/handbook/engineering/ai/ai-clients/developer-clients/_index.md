@@ -4,9 +4,9 @@ description: "Developer Clients グループは、VS Code および JetBrains ID
 aliases:
   - /handbook/engineering/ai/editor-extensions-multi-platform/
 upstream_path: /handbook/engineering/ai/ai-clients/developer-clients/
-upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
-lastmod: "2026-08-06T16:35:18+02:00"
-translated_at: "2026-08-07T06:30:08+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+lastmod: "2026-08-14T18:11:22+02:00"
+translated_at: "2026-08-15T06:47:00+09:00"
 translator: codex
 stale: false
 ---
@@ -120,125 +120,76 @@ stale: false
 
 {{% /details %}}
 
-### Issue ボード
+### マイルストーンプランニング {#milestone-planning}
 
-- [担当者別](https://gitlab.com/groups/gitlab-org/-/boards/9154815?label_name[]=group%3A%3Aeditor%20extensions)
-- [ステータス別](https://gitlab.com/groups/gitlab-org/-/boards/9651444?label_name%5B%5D=group%3A%3Aeditor%20extensions)
+私たちは[マイルストーン](https://mnohr.gitlab.io/milestone-dates/)ごとに計画します。リリースはそれよりもはるかに頻繁かつ柔軟に行いますが、マイルストーンのケイデンスにより、新機能のリリース投稿や、連携が必要な場合の他チームとの足並みを揃えられます。
 
-### 週次の Issue 絞り込み {#weekly-issues-refinement}
+> このプロセスは意図的に最小限にしています。小さく始め、[フィードバックループ](#feedback-loop)に基づいてイテレーションします。
 
-- **目的：** バックログを集中的かつ最新の状態に保つ
-  - 優先度を見直し、変化する要件に適応します
-  - 実装すべきカスタマーサポート Issue について明確にします
-  - 全員が Issue（新規・緊急のバグ、技術改善、技術的負債）を持ち込み、推進する機会を提供します
-- **形式：** 以下の「フロー」セクションで説明する 3 段階のプロセス
-- **頻度：** 毎週
-- **アウトプット：** 最新の[ローリングバックログ](#rolling-backlog-wiki-page) + [マイルストーン計画 Issue](#milestone-planning-issues)の週次更新の可能性
+概要は、2 つの成果物と 2 つの定例活動です:
 
-{{% details summary="詳細を表示" %}}
+| 成果物 | 使用時期 | 答える問い |
+|---|---|---|
+| [チームバックログ](#team-backlogs) | 計画前 | 次に何に取り組むべきか? |
+| [計画ボード](#planning-boards) | マイルストーン中 | 状況はどうか? 何が進行中か? |
 
-#### ローリングバックログ Wiki ページ {#rolling-backlog-wiki-page}
+| 定例活動 | ケイデンス | 実施内容 |
+|---|---|---|
+| 計画コール（ファンクショナルチームごとに 1 回） | 月次 | スコープを確定し、`Deliverable` / `Stretch` [ラベル](#issues-labels)と[ウェイト](#issues-weight)を割り当て、キャパシティを計画する |
+| [非同期アップデート](#weekly-async-updates) | 週次（火曜日の EOD まで） | 全員が担当 Issue に進捗を投稿し、自動化がそれらをグループ全体の 1 つの Issue に集約する |
 
-この[ローリングバックログページ](https://gitlab.com/gitlab-org/editor-extensions/meta/-/wikis/Editor-Extensions:-Multi-Platform-Rolling-Backlog)はこの絞り込みプロセスのアウトプットであり、私たちが所有するすべてのスコープ（次の 1 〜 2 か月の作業になり得る）について、可視化され優先順位付けされ、チームでレビュー済みのバックログ上位リストとして機能します。
+{{% details summary="時系列の詳細フロー" %}}
 
-**注：** コミュニティのフィードバックも捉えるため、最も多くのサムアップを受けた Issue も考慮します。
-
----
-
-#### フロー
-
-1. **EM と PM の非同期週次プリパス**： 次の 2 ステップに向けた準備
-   1. 検討する Issue のソースの例
-      - [ローリングバックログ](#rolling-backlog-wiki-page)
-      - Slack の通知、チームでの議論
-      - 最近の[トリアージレポート](https://gitlab.com/gitlab-org/quality/triage-reports)の Issue。例： [バグの優先順位付け](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/26385)、[トリアージレポート](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/26506)、[注意が必要なフィーチャーフラグ](https://gitlab.com/gitlab-org/quality/triage-reports/-/issues/26361)
-   2. ステップ #3（EM + PM 同期コール）で議論する Issue に [workflow::scheduling](https://gitlab.com/groups/gitlab-org/-/issues?sort=updated_asc&state=opened&first_page_size=100&label_name%5B%5D=workflow%3A%3Ascheduling&label_name%5B%5D=group%3A%3Aeditor+extensions) ラベルを追加します
-   3. [ローリングバックログ](#rolling-backlog-wiki-page)を最新に保つため、必要に応じて Issue を更新します。
-
-2. **チーム非同期隔週レビュー（タイムボックス約 1 時間）：**
-   - EM はこのレビューを**トリガーする Issue を作成**し、すべてのエンジニアにアサインします（[Issue 例](https://gitlab.com/gitlab-org/editor-extensions/meta/-/issues/257)）。レビューを終えたら自分自身のアサインを解除してください
-   - チームの集中を毎週奪わないよう、**2 週間ごと**に開催します。
-   - **目標**：
-      - チーム全員が優先度に意見を述べられるようにする。
-      - 技術改善や技術的負債の Issue を進める。
-      - より重要視すべき Issue にフラグを立てる。
-      - もう必要ない、または優先度を下げるべき Issue を特定する。
-   - **参加方法：**
-     1. [ローリングバックログ](#rolling-backlog-wiki-page)で現在の優先度を確認します
-     2. 意見を述べる： 必要に応じて以下を追加・変更します（プッシュしたい新規 Issue にも適用）：
-        1. ステータス： `Planning breakdown`： レーダー上にあるべき。今後 2 〜 3 マイルストーン以内のもの
-        2. ステータス： `Ready for development`： 理想的にはこのマイルストーンで完了させるもの
-        3. ラベル： [workflow::scheduling](https://gitlab.com/groups/gitlab-org/-/issues?sort=updated_asc&state=opened&first_page_size=100&label_name%5B%5D=workflow%3A%3Ascheduling&label_name%5B%5D=group%3A%3Aeditor+extensions)： 即時優先。次に着手すべき（あるいは少なくとも今週議論すべき）
-     3. 上記のいずれかを変更する場合は、理由を添えて EM & PM をメンションしてコメントしてください
-   - **注意点**：
-     1. この時点では Issue の深掘り調査に時間をかけず、優先度の概要を把握するだけで十分です
-     2. 該当 Issue 自体、もしくはコメントがそちらでより適切ならローリングバックログ Issue にコメントしてください
-     3. 発見可能性を高めるため、特定の GitLab リソースへの[参照](https://docs.gitlab.com/user/markdown/#gitlab-specific-references)をリンクしてください。
-
-3. **EM + PM 週次同期コール：** [workflow::scheduling](https://gitlab.com/groups/gitlab-org/-/issues?sort=updated_asc&state=opened&first_page_size=100&label_name%5B%5D=workflow%3A%3Ascheduling&label_name%5B%5D=group%3A%3Aeditor+extensions) ラベルに焦点を当て、チームのコメントを読み、ランキングを確認し、トレードオフを判断し、次の 1 〜 2 週間のターゲットデリバラブルを選定します。
-      - ミーティングは[チーム共有カレンダー](#shared-calendar)にスケジュールし録画します。Zoom のトランスクリプトも使用するため、Issue の優先度や順序を変更した理由・議論についてチームに透明性を確保し、計画 Issue に追加できます。
-      - 月に 1 回はこのコールでマイルストーン計画 Issue を作成します（次回の絞り込みで変更される可能性があります）
-      - EM は合意・更新されたデリバラブルのアサインを担当します
-      - **アウトプット：** マイルストーン計画 Issue を週次で更新 + EM が更新された優先度の Issue をアサイン
-        - 月に 1 回、マイルストーン開始前に、新しい[マイルストーン計画 Issue](#milestone-planning-issues)の作成準備として、より多くのチケットにわたる議論を行います
-
----
-
-#### 参加方法（チームメンバー以外向け）
-
-チームに Issue を注目してほしい場合は、Issue を作成してください。Issue がまだ存在しない場合は、[#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C)でご連絡ください。
+1. **マイルストーン全体を通して、次のマイルストーンに備えます。** 次のマイルストーンで優先したい Issue に [`workflow::scheduling`](https://gitlab.com/groups/gitlab-org/-/issues?sort=updated_asc&state=opened&label_name%5B%5D=workflow%3A%3Ascheduling&label_name%5B%5D=group%3A%3Adeveloper+clients) ラベルを付けます。工数が不明でまだ Issue がない場合は、タイムボックス化した[ウェイト](#issues-weight)を持つプレースホルダー（説明は空でも構いません）を作成します。ステータスとラベルを最新に保ちます。[計画ボード](#planning-boards)はマイルストーンの進捗を示すライブビューとしても機能します。
+1. **計画コールの前。** EM と PM は、フラグが付いた Issue を中心に、非同期でバックログの事前確認を行います。全員が自身の稼働状況（例えば、計画している休暇日数）を大まかに把握しておきます。計画は変更されても構いません。私たちは適応します。
+1. **月次計画コール（ファンクショナルチームごとに 1 回）。** マイルストーンで確約するスコープに合意し、`Deliverable` と `Stretch` の[ラベル](#issues-labels)および[ウェイト](#issues-weight)を割り当て、計画ボードのキャパシティ機能を使用してチームのキャパシティを計画します。
+1. **マイルストーン中。** 計画ボードには、マイルストーンの状態と進行中の作業が表示されます。[週次の非同期アップデート](#weekly-async-updates)を投稿します。
 
 {{% /details %}}
 
-### 月次計画
+#### 計画ボード {#planning-boards}
 
-- **目的：** 現在のマイルストーンで何を提供するかを定義しスコープを決める
-  - 製品の優先度を形作るために月次で計画しますが、変化の早い AI 要件、品質への注力、緊急のユーザーニーズに適応できるよう毎週見直します
-- **形式：** 以下の「フロー」セクションで説明する 2 段階のプロセス
-- **頻度：** 毎月 + 週次更新の可能性
-- **アウトプット：**
-  - 最新の[マイルストーン計画 Issue](https://gitlab.com/gitlab-org/editor-extensions/meta/-/issues/?sort=created_date&state=all&label_name%5B%5D=Planning%20Issue)
-  - 更新された Issue フィールド： `status`、`milestone`、`deliverable` を含むラベル
+| チーム | ボード | 表示される Issue |
+|---|---|---|
+| Duo CLI | [dc-duo-cli](https://milestone-planning-board-0c5b79.gitlab.io/?board=dc-duo-cli) | `category:duo cli` ラベル、または [gitlab-lsp](https://gitlab.com/gitlab-org/editor-extensions/gitlab-lsp) リポジトリでタイトルに「cli」を含むもの |
+| VS Code | [dc-vs-code](https://milestone-planning-board-0c5b79.gitlab.io/?board=dc-vs-code) | `category:vs code` ラベル、または [gitlab-vscode-extension](https://gitlab.com/gitlab-org/gitlab-vscode-extension) リポジトリのもの |
+| JetBrains | [dc-jetbrains](https://milestone-planning-board-0c5b79.gitlab.io/?board=dc-jetbrains) | `category:jetbrains` ラベル、または [gitlab-jetbrains-plugin](https://gitlab.com/gitlab-org/editor-extensions/gitlab-jetbrains-plugin) リポジトリのもの |
 
-{{% details summary="詳細を表示" %}}
+#### チームバックログ {#team-backlogs}
 
-#### マイルストーン計画 Issue {#milestone-planning-issues}
+各ファンクショナルチームにはライブのバックログ Wiki ページがあります。テーブルはページ読み込み時に自動更新され、**このマイルストーンで追加**、**次に優先**、**コミュニティからの上位リクエスト**、**バックログ全体**を網羅します:
 
-私たちは[マイルストーン計画 Issue](https://gitlab.com/gitlab-org/editor-extensions/meta/-/issues/?sort=created_date&state=all&label_name%5B%5D=Planning%20Issue)を使用して、現在および今後のマイルストーンの目標を定義します。
-PM と EM が目標のすり合わせを担当します。
-計画 Issue は毎月[自動的に作成](https://gitlab.com/gitlab-org/editor-extensions/meta/-/tree/main#issue-creation-process)されます。
+- [Duo CLI バックログ](https://gitlab.com/gitlab-org/editor-extensions/meta/-/wikis/Developer-Clients:-Duo-CLI-Backlog)
+- [VS Code バックログ](https://gitlab.com/gitlab-org/editor-extensions/meta/-/wikis/Developer-Clients:-VS-Code-Backlog)
+- [JetBrains バックログ](https://gitlab.com/gitlab-org/editor-extensions/meta/-/wikis/Developer-Clients:-JetBrains-Backlog)
 
----
+> 💡 Issue がチームのバックログページに表示されるのは、チームのカテゴリーラベル（`category:duo cli`、`category:vs code`、`category:jetbrains`）が付いている場合だけです。各ページには、チームのリポジトリ内でラベルの付いていない Issue を表示する「missing category label」セクションがあり、ラベル付けの自動化は [meta#398](https://gitlab.com/gitlab-org/editor-extensions/meta/-/work_items/398) で追跡されています。
 
-#### フロー
+#### 参加方法（チーム外のメンバー向け） {#how-to-participate-for-non-team-members}
 
-1. **マイルストーン計画 Issue の初期記入**
-   - PM が EM と整合を取りながらマイルストーンの目標をドライブします
-   - 直前の[Issue 絞り込み](#weekly-issues-refinement)のすべてのアウトプットを考慮します
-   - [マイルストーン開始前](https://mnohr.gitlab.io/milestone-dates/)に行います
-2. 週次の[Issue 絞り込み](#weekly-issues-refinement)後の**週次更新**
-   - EM & PM は必要に応じて[マイルストーン計画 Issue](https://gitlab.com/gitlab-org/editor-extensions/meta/-/issues/?sort=created_date&state=all&label_name%5B%5D=Planning%20Issue)を更新し、最新の変更を反映します。例えば以下のような内容です：
-     - 発生した緊急のバグ
-     - 別の AI エンジニアリングチームの作業を IDE に取り込む必要がある
-     - フラグが立った技術的負債
-   - EM はチームと連携して [Deliverable](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=Deliverable) ラベルと [Stretch](https://gitlab.com/groups/gitlab-org/-/issues/?label_name%5B%5D=Stretch) ラベルを付与し、Issue のステータス、[ウェイト](#issues-weight)、マイルストーンが最新の優先度を反映していることを確認します
-     - 週次の 1:1 や非同期で行うこともあります
+チームに Issue を知らせたい場合は、Issue を作成してください。Issue がまだ存在しない場合は、[#s_ai-clients-questions](https://gitlab.enterprise.slack.com/archives/C058YCHP17C) で連絡してください。
 
-{{% /details %}}
+#### フィードバックループ {#feedback-loop}
+
+このプロセスは v1 です。約 2 マイルストーンごとにチームチャンネルで簡単なフィードバック投票を行い、各月次計画コールには常設の 5 分間のレトロスペクティブ枠を設けます。
 
 ### チーム同期ミーティング
 
-私たちは週に 1 回同期ミーティングを開催します。これは Developer Clients グループ全体のコラボレーションミーティングです。
+私たちは、[AI Clients ステージ](/handbook/engineering/ai/ai-clients/)全体で開催される週次同期ミーティングに参加します。
 
+- コールは週ごとに APAC/AMER と EMEA/AMER に都合のよい時間帯を交互に設定するため、全員が少なくとも隔週で無理なく参加でき、毎週非同期でも貢献できます。
+- [週次同期ミーティングのアジェンダ](https://docs.google.com/document/d/1UJg-Prf5qGjiGImvaYl5HNjMcJddoeE4u33Ri6SxQ6g)は公開されており、全員が足並みを揃えるための関連トピックを持ち込めます。
 - 録画は GitLab Unfiltered の [Editor Extensions Category](https://www.youtube.com/playlist?list=PL05JrBw4t0KoC0pFfuNOAQjKxe4_ypFKc) プレイリストにアップロードされます。
-- コールの時間帯は週ごとに APAC・AMER 向けと EMEA・AMER 向けで交互に切り替わるため、異なるタイムゾーンの全員が少なくとも 1 回おきには都合よく同期に参加でき、毎週非同期でも貢献できます。
-- [週次同期ミーティングのアジェンダ](https://docs.google.com/document/d/1UJg-Prf5qGjiGImvaYl5HNjMcJddoeE4u33Ri6SxQ6g)。アジェンダはオープンで、チーム全員が関連トピックを持ち込んで整合を取れます。
 
-### 週次の非同期アップデート
+### 週次の非同期アップデート {#weekly-async-updates}
 
-チームメンバーは進行中の Issue について [Dev Check-in (editor-extensions)](https://gitlab.com/groups/gitlab-org/editor-extensions/-/comment_templates) コメントテンプレートを使用して週次で非同期アップデートを投稿します。
+積極的に取り組んでいる各 Issue に、[Dev Check-in (editor-extensions)](https://gitlab.com/groups/gitlab-org/editor-extensions/-/comment_templates) コメントテンプレートを使用してアップデートを投稿します。
 
-### Issue のラベル
+**注意: 非同期アップデートは毎週火曜日の EOD までに投稿してください**（休暇の場合はそれより前に投稿します）。
+
+アップデートは、ファンクショナルチームごとのセクションを持つ 1 つの週次 Developer Clients Issue に自動集約されます（[Issue の例](https://gitlab.com/gitlab-org/editor-extensions/meta/-/work_items/400)）。
+
+### Issue のラベル {#issues-labels}
 
 [AI Clients のラベル付けガイダンス](/handbook/engineering/ai/ai-clients/#-how-we-label-issues-and-merge-requests)を確認してください
 
@@ -251,17 +202,16 @@ PM と EM が目標のすり合わせを担当します。
 
 ### Issue のウェイト {#issues-weight}
 
-Issue の複雑さの大まかな見積もりを示すため、3 つのウェイトを使用します。
+ウェイトは、複雑さの大まかな見積もりとして[マイルストーンプランニング](#milestone-planning)中に割り当てます:
 
-- `1` - 1 〜 2 日の作業
-- `2` - 1 週間の作業
-- `3` - 1.5 週間の作業
+| ウェイト | 大まかな工数 |
+|---|---|
+| `1` | 1〜2 日程度 |
+| `2` | 約 1 週間 |
+| `3` | 約 1 週間半 |
 
-**注意点：**
-
-1. 基本ウェイトが `3` を超えるものはすべてスパイクとして扱い、結果として見積もり付きの 1 つ以上の Issue を生成すべきです。
-2. これらはコードベースやシステムに精通している人向けの見積もりです。チーム、コードベース、システムに不慣れな場合は、基本ウェイトに `1` または `2` の追加ウェイトを足すことができます。
-3. ウェイトは計画フローで割り当てられます。
+- `3` を超えると見積もられるものは、まずスパイクとして扱い、見積もり済みのウェイトを持つ 1 つ以上の Issue に分割します。
+- 見積もりはコードベースやシステムに精通していることを前提とします。初めて扱う場合は、基本ウェイトに `1`〜`2` を追加します。
 
 ### グループ間のオーナーシップと境界
 
@@ -274,9 +224,8 @@ Issue の複雑さの大まかな見積もりを示すため、3 つのウェイ
 ## 🔗 便利なリンク
 
 - **計画**
-  - <a href="https://gitlab.com/groups/gitlab-org/-/boards/9154815?label_name[]=group%3A%3Aeditor%20extensions" target="_blank">担当者別 Issue ボード</a>
-  - <a href="https://gitlab.com/groups/gitlab-org/-/boards/9651444?label_name%5B%5D=group%3A%3Aeditor%20extensions" target="_blank">ステータス別 Issue ボード</a>
-  - <a href="https://gitlab.com/gitlab-org/editor-extensions/meta/-/issues/?sort=created_date&state=all&label_name%5B%5D=Planning%20Issue" target="_blank">マイルストーン計画 Issue</a>
+  - [計画ボード](#planning-boards)
+  - [チームバックログ](#team-backlogs)
 - **ダッシュボード & モニタリング**
   - <a href="https://app.snowflake.com/ys68254/gitlab/#/streamlit-apps/PROD.STREAMLIT_TEST.EDITOR_EXTENSION_DAU/!/editor_extension_dau" target="_blank">Snowflake： Developer Clients の DAU と利用状況</a>
   - <a href="https://app.snowflake.com/ys68254/gitlab/#/streamlit-apps/PROD.STREAMLIT_TEST.EDITOR_EXTENSION_DAU/!/language_server_metrics" target="_blank">Snowflake： LSP の速度パフォーマンス</a>
