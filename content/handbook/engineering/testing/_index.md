@@ -124,7 +124,7 @@ GitLabでは、品質は全員の責任であり、テストは別のフェー�
 - [MRテスト失敗をDuoでデバッグする](using-duo-to-debug-test-failures.md#-using-duo-to-debug-and-fix-test-failures-in-your-merge-request) - Duoを使用してMR内のテスト失敗を迅速に診断して修正する
 - [ライブ環境のテスト失敗をDuoでデバッグする](using-duo-to-debug-test-failures.md#-using-duo-to-debug-live-environment-test-failures) - Duoを使用してMR内のテスト失敗を迅速に診断して修正する
 
-#### GitLabエンドツーエンドテスト概要（動画）
+#### 📹 GitLab エンドツーエンドテスト概要（動画） {#-gitlab-end-to-end-testing-overview-video}
 
 <figure class="video_container">
   <iframe src="https://www.youtube.com/embed/KbQzrVJMvNQ" frameborder="0" allowfullscreen="true"> </iframe>
