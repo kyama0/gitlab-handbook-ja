@@ -31,7 +31,7 @@ stale: false
 
 * EM アウトプット： 上記のすべての要件が満たされたら、EM はフロントエンドとバックエンドのエンジニアをそれぞれの [DRI](#epic-engineering-dri)として割り当て、MVC エピック配下に実装 Issue を作成させます。UX が作成したデザイン Issue もこの時点で EM によってクローズされます。
 
-* エンジニアリングアウトプット： フロントエンドとバックエンドの DRI は[実装 Issue を作成](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Implementation)します。この際、`gitlab-org` プロジェクトの Issue で利用可能な [Implementation テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Implementation.md)に従います。完了したら、自分自身のアサインを解除し、Issue を `workflow::refinement` 状態に移動します。
+* エンジニアリングアウトプット： フロントエンドとバックエンドの DRI は[実装 Issue を作成](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Implementation)します。この際、`gitlab-org` プロジェクトの Issue で利用可能な[実装テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Implementation.md)に従います。完了したら、自分自身のアサインを解除し、Issue を `workflow::refinement` 状態に移動します。
 
 ### リファインメント
 

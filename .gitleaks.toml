@@ -97,14 +97,27 @@ regexes = [
 #   - `paths` は gitleaks の allowlist で正規表現として評価され、`MatchString()` で
 #     部分一致する。意図せず広いファイル群が許可されないよう、必ず `^…$` で
 #     パス全体に完全一致させ、ドット (`.`) もエスケープする。
+#   - 既定の `gitlab-pat` ルールは 20 文字で検出を打ち切るため、ここでは
+#     20 文字以上のトークン候補全体を境界まで捕捉するよう上書きする。
+#   - 固定ダミー PAT は `regexTarget = "secret"` とアンカー付き正規表現を使い、
+#     捕捉された secret 全体が完全一致する場合だけ許可する。同じ行にある別の
+#     PAT や、この値を接頭辞に持つ長いトークンは許可しない。
 #   - グローバル allowlist にすることで、将来 upstream が別形式の追加サンプルを
 #     増やした場合でも追従しやすくする（教材ページは翻訳パイプラインで自動同期
 #     するのみで、私たちが新規にトークンを書き込むことはない）。
+[[rules]]
+id = "gitlab-pat"
+description = "GitLab Personal Access Token (capture the complete token candidate)"
+regex = '''(glpat-[\w-]{20,})(?:[^\w-]|$)'''
+secretGroup = 1
+entropy = 3
+keywords = ["glpat-"]
+
 [allowlist]
 description = "Upstream training pages and one fixed Secret Push Protection dummy PAT"
-regexTarget = "line"
+regexTarget = "secret"
 regexes = [
-  '''glpat-12345678901234567890''',
+  '''^glpat-12345678901234567890$''',
 ]
 paths = [
   '''^content/ja/handbook/customer-success/professional-services-engineering/education-services/secessentialshandson1\.md$''',

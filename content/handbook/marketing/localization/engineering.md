@@ -20,7 +20,7 @@ lastmod: "2026-08-13T19:19:31-04:00"
 - `#spartan-software`： Spartan Software エンジニアリングチームとの直接のコミュニケーション
 - `#argos_multilingual`： Argos Multilingual エンジニアリングチームとの直接のコミュニケーション
 
-ローカリゼーション関連の Slack チャネルの完全なリストについては、[Localization handbook](/handbook/marketing/localization/#contact-us)を参照してください。
+ローカリゼーション関連の Slack チャネルの完全なリストについては、[ローカリゼーションハンドブック](/handbook/marketing/localization/#contact-us)を参照してください。
 
 ### 範囲
 

@@ -92,9 +92,9 @@ Issue を `workflow::planning breakdown` ステータスから `workflow::ready 
 
 洗練プロセス中の詳細な実装プランの作成支援については、私たちの [Issue Refinement AI prompt](/handbook/engineering/development/sec/security-platform/secrets-manager/ai-prompts/#issue-refinement)を参照してください。
 
-#### Implementation テンプレート
+#### 実装テンプレート
 
-洗練プロセス（フェーズ 2）中、Issue は一貫性と明確さを確保するために [GitLab Implementation issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Implementation.md)を使用しなければなりません。このテンプレートは以下を強調します：
+洗練プロセス（フェーズ 2）中、Issue は一貫性と明確さを確保するために [GitLab 実装 Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/issue_templates/Implementation.md)を使用しなければなりません。このテンプレートは以下を強調します：
 
 - **なぜこの作業を行うのか**： 解決される問題の明確な明示。「何を」と「なぜ」の両方を含む
 - **非機能要件**： 必要であれば、ドキュメント、フィーチャーフラグ、パフォーマンス、テストなどの項目に関する詳細
@@ -103,7 +103,7 @@ Issue を `workflow::planning breakdown` ステータスから `workflow::ready 
 
 Issue を洗練する際、エンジニアは以下を行うべきです：
 
-1. Issue の説明で Implementation テンプレートの構造を使う
+1. Issue の説明で実装テンプレートの構造を使う
 2. すべてのセクションが関連情報で完成していることを確保する
 3. どのエンジニアでもアプローチを理解してすぐに開発を開始できるよう、十分な詳細を提供する
 4. 信頼できる唯一の情報源として、必要なすべての情報を（コメントではなく）Issue の説明に含める。コメントは必要に応じて追加のコンテキストのために使うべき。
@@ -362,7 +362,7 @@ Pipeline Security グループは、以下に説明する製品マーケティ�
 
 この同期ミーティングは、ブロックとなっているものや、過去 1 週間で注目すべきものについて議論するためのものです。このミーティングはチームの接点として機能します。私たちは毎週このミーティングを 2 セッション持ちます - 1 つは APAC/EMEA タイムゾーン用、もう 1 つは AMER タイムゾーン用です。誰もが非同期で議論から恩恵を受けられるよう、各ミーティングを録画します。
 
-#### Async スタンドアップ
+#### 非同期スタンドアップ
 
 私たちは非同期スタンドアップのために、Slack と統合された [geekbot](https://geekbot.com/)を使います。スタンドアップの目的は、各自が何に取り組んでいるかをチームに知らせ続け、ブロッカーを表面化させて取り除けるようにすることです。スタンドアップボットは火曜日と金曜日のチームメンバーの現地時間午前 10 時に実行され、3 つの質問をします：
 
@@ -374,7 +374,7 @@ Pipeline Security グループは、以下に説明する製品マーケティ�
 アップデートは [Issue の進捗アップデート](#issue-progress-updates)ガイドラインに従ってコメントの形で Issue に共有されます。
 Engineering Manager が翌月曜日にグループの週次アップデートを公開できるよう、これらは金曜日（または週の最終営業日）に投稿すべきです。
 
-#### Async 月次レトロスペクティブ
+#### 非同期月次レトロスペクティブ
 
 私たちは月次レトロスペクティブのために、[このプロジェクト](https://gitlab.com/gl-retrospectives/sscs/pipeline-security/-/issues)の GitLab Issue を使います。Issue は現在のマイルストーンの終わりごろに自動的に作成されます。月次レトロスペクティブ Issue の目的は、マイルストーンを振り返り、何がうまくいったか、何があまりうまくいかなかったか、何をより良くできるかについて話すことです。
 レトロスペクティブ Issue に項目を追加するのにマイルストーンの終わりまで待つ代わりに、私たちはチームメンバーに月を通じてコメントを追加することを奨励しています。毎週金曜日に Issue に項目を追加するのを思い出させる Slack リマインダーが #g_pipeline-security チャンネルにあります。
