@@ -15,10 +15,10 @@ lastmod: "2026-08-13T19:19:31-04:00"
 
 ### コミュニケーションチャネル
 
-- `#localization-engineering`: ローカリゼーションエンジニアリングチームの作業チャネル
-- `#localization-alerts`: フォーク同期パイプラインの自動失敗レポートおよび Translation MR 通知
-- `#spartan-software`: Spartan Software エンジニアリングチームとの直接のコミュニケーション
-- `#argos_multilingual`: Argos Multilingual エンジニアリングチームとの直接のコミュニケーション
+- `#localization-engineering`： ローカリゼーションエンジニアリングチームの作業チャネル
+- `#localization-alerts`： フォーク同期パイプラインの自動失敗レポートおよび Translation MR 通知
+- `#spartan-software`： Spartan Software エンジニアリングチームとの直接のコミュニケーション
+- `#argos_multilingual`： Argos Multilingual エンジニアリングチームとの直接のコミュニケーション
 
 ローカリゼーション関連の Slack チャネルの完全なリストについては、[Localization handbook](/handbook/marketing/localization/#contact-us)を参照してください。
 
@@ -28,10 +28,10 @@ lastmod: "2026-08-13T19:19:31-04:00"
 
 **サポートしているコンテンツストリーム：**
 
-- **GDATP / [GitLab Translation Agent](https://gitlab.com/explore/ai-catalog/agents/532/)**: Duo Agent Platform 上に構築された GitLab ネイティブの AI 翻訳プラットフォームです。アドホックかつインパクトの大きいマーケティングコンテンツ（料金ページ、ランディングページ、ブログ、複数言語同時のコーディネートされたローンチなど）の翻訳に使用されます。Content Manager、Program Manager、Engineer がセルフサービス型の翻訳ツールとして GDATP を使用します。エンジニアリングチームはプラットフォーム、システムプロンプトのアーキテクチャ、言語仕様、ワークフロー開発を所有しています。
-- **プロダクトドキュメント** (docs.gitlab.com): 国際化レイヤーと、Argo オーケストレーションプラットフォーム、Phrase TMS、AI 駆動の翻訳といった連携ツールを備えたローカリゼーションアーキテクチャ。エンジニアリングチームはフォーク同期の自動化、Translation MR の作成、アップストリームへのプッシュプロセスとその自動化、Hugo の国際化設定、継続的ローカリゼーションパイプラインの開発を所有しています。アーキテクチャの詳細については、[GitLab プロダクトドキュメントのローカリゼーション](/handbook/marketing/localization/tech_docs_localization/)を参照してください。
-- **マーケティングウェブサイト** (about.gitlab.com): 新規ページや注目度の高いコンテンツについては GDATP、ボリュームの大きい更新や非同期更新については Argo-Phrase パイプラインを通じて、6 言語にわたる継続的ローカリゼーションを実施しています。
-- **プロダクト UI**: [Crowdin](https://docs.gitlab.com/development/i18n/)によるコミュニティ主導の翻訳。[GitLab String Search](https://gitlab.com/gitlab-com/localization/gitlab-string-search) ツールおよび [Crowdin Automation](https://gitlab.com/gitlab-com/localization/crowdin-automation) スクリプトでサポートされています。
+- **GDATP / [GitLab Translation Agent](https://gitlab.com/explore/ai-catalog/agents/532/)**： Duo Agent Platform 上に構築された GitLab ネイティブの AI 翻訳プラットフォームです。アドホックかつインパクトの大きいマーケティングコンテンツ（料金ページ、ランディングページ、ブログ、複数言語同時のコーディネートされたローンチなど）の翻訳に使用されます。Content Manager、Program Manager、Engineer がセルフサービス型の翻訳ツールとして GDATP を使用します。エンジニアリングチームはプラットフォーム、システムプロンプトのアーキテクチャ、言語仕様、ワークフロー開発を所有しています。
+- **プロダクトドキュメント** (docs.gitlab.com)： 国際化レイヤーと、Argo オーケストレーションプラットフォーム、Phrase TMS、AI 駆動の翻訳といった連携ツールを備えたローカリゼーションアーキテクチャ。エンジニアリングチームはフォーク同期の自動化、Translation MR の作成、アップストリームへのプッシュプロセスとその自動化、Hugo の国際化設定、継続的ローカリゼーションパイプラインの開発を所有しています。アーキテクチャの詳細については、[GitLab プロダクトドキュメントのローカリゼーション](/handbook/marketing/localization/tech_docs_localization/)を参照してください。
+- **マーケティングウェブサイト** (about.gitlab.com)： 新規ページや注目度の高いコンテンツについては GDATP、ボリュームの大きい更新や非同期更新については Argo-Phrase パイプラインを通じて、6 言語にわたる継続的ローカリゼーションを実施しています。
+- **プロダクト UI**： [Crowdin](https://docs.gitlab.com/development/i18n/)によるコミュニティ主導の翻訳。[GitLab String Search](https://gitlab.com/gitlab-com/localization/gitlab-string-search) ツールおよび [Crowdin Automation](https://gitlab.com/gitlab-com/localization/crowdin-automation) スクリプトでサポートされています。
 
 ### レビューワークフロー
 

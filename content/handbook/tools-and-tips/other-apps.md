@@ -128,7 +128,7 @@ https://handbook.gitlab.com/handbook/#stq={query}&stp=1
 
 ### Calendly
 
-**注**: Google Calendar は[予約スケジュールの作成](https://support.google.com/calendar/answer/10729749?hl=en)のサポートを追加しました。これは Calendly が提供する機能と同様です。
+**注**： Google Calendar は[予約スケジュールの作成](https://support.google.com/calendar/answer/10729749?hl=en)のサポートを追加しました。これは Calendly が提供する機能と同様です。
 
 [Calendly](https://calendly.com/)は Google Calendar に接続し、GitLab 外の人があなたの時間を簡単に予約できるようにします。
 GitLab チームメンバーとミーティングをスケジュールする場合は、Google Calendar を使用し、[ミーティングのスケジュール](/handbook/communication/#scheduling-meetings)に関するハンドブックのガイダンスに従ってください。

@@ -98,8 +98,8 @@ Issue を `workflow::planning breakdown` ステータスから `workflow::ready 
 
 - **なぜこの作業を行うのか**： 解決される問題の明確な明示。「何を」と「なぜ」の両方を含む
 - **非機能要件**： 必要であれば、ドキュメント、フィーチャーフラグ、パフォーマンス、テストなどの項目に関する詳細
-- **Implementation Plan**: 詳細な技術的アプローチと実装ステップ
-- **Verification Steps**: 実装を検証するための段階的な手順
+- **Implementation Plan**： 詳細な技術的アプローチと実装ステップ
+- **Verification Steps**： 実装を検証するための段階的な手順
 
 Issue を洗練する際、エンジニアは以下を行うべきです：
 
