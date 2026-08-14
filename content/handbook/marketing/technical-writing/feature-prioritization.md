@@ -1,11 +1,12 @@
 ---
 title: "Docs Engineering: 機能の優先順位付けとプロセス"
-upstream_path: /handbook/product/ux/technical-writing/feature-prioritization/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+description: "Docs Engineering チームが作業に優先順位を付け、GitLab ドキュメントプラットフォームを維持する方法。"
+upstream_path: /handbook/marketing/technical-writing/feature-prioritization/
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T07:08:45+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-19T16:42:54+00:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
 ## 概要
@@ -16,7 +17,7 @@ Docs Engineering チームは、[カンバン](https://en.wikipedia.org/wiki/Kan
 - [ワークフローカンバンボード](https://gitlab.com/groups/gitlab-org/-/boards/4340643)
 - [機能優先順位付けボード](https://gitlab.com/groups/gitlab-org/-/boards/9702008)
 
-GitLab の[プロダクト原則](../../product-principles.md) と [プロダクト開発フロー](../../../product-development/how-we-work/product-development-flow/_index.md) から着想を得て、それを私たちのチームコンテキストに適応させています。
+GitLab の[プロダクト原則](../../product/product-principles.md) と [プロダクト開発フロー](../../product-development/how-we-work/product-development-flow/_index.md) から着想を得て、それを私たちのチームコンテキストに適応させています。
 
 ## Issue ライフサイクル
 
@@ -30,7 +31,7 @@ GitLab の[プロダクト原則](../../product-principles.md) と [プロダク
 
 テクニカルライティングの Staff エンジニアが、すべての新しい Issue を週 2 ～ 3 回レビューし、次の作業を行います。
 
-- [作業タイプラベル](../../groups/product-analysis/engineering/metrics.md#work-type-classification) を適用
+- [作業タイプラベル](../../product/groups/product-analysis/engineering/metrics.md#work-type-classification) を適用
 - 追加のカテゴリー分類のための [docs 固有のラベル](https://docs.gitlab.com/development/documentation/workflow/#available-labels) を追加
 - 機能の工数見積もりのためのウェイト（1/3/8）を設定。ウェイトは優先順位付けに使用され、キャパシティ計画や完了日の見積もりには使用されません。
 - 優先度とキャパシティに基づいてマイルストーンをアサイン。
@@ -40,11 +41,11 @@ GitLab の[プロダクト原則](../../product-principles.md) と [プロダク
 
 ### 優先度要因
 
-- [顧客に成果をもたらす](../../../values/_index.md#results) こと
+- [顧客に成果をもたらす](../../values/_index.md#results) こと
 - インパクト対工数
 - [テクニカルライティングチームロードマップ](https://gitlab.com/groups/gitlab-org/-/epics/17363) との整合
 - 技術的依存関係とブロッキング作業
-- [R&D ガイドライン](../../product-processes/cross-functional-prioritization.md) ごとの 60/40 機能/メンテナンス目標
+- [R&D ガイドライン](../../product/product-processes/cross-functional-prioritization.md) ごとの 60/40 機能/メンテナンス目標
 
 ## 開発者ワークフロー
 

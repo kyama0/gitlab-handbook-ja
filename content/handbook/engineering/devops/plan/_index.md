@@ -1,19 +1,19 @@
 ---
 title: "Plan"
 upstream_path: /handbook/engineering/devops/plan/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:19:21+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:47:00+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T05:53:28-07:00"
+lastmod: "2026-08-14T14:39:01+02:00"
 ---
 
 Plan チーム:
 
-- [Plan:Project Management チーム](/handbook/engineering/devops/plan/project-management/)
-- [Plan:Product Planning チーム](/handbook/engineering/devops/plan/product-planning/)
+- [Plan:Work Items チーム](/handbook/engineering/devops/plan/work-items/)
+- [Plan:Portfolio Planning チーム](/handbook/engineering/devops/plan/portfolio-planning/)
 - [Plan:Planning Views チーム](/handbook/engineering/devops/plan/planning-views/)
-- [Plan:Knowledge チーム](/handbook/engineering/devops/plan/knowledge/)
+- [Plan:Planner Intelligence チーム](/handbook/engineering/devops/plan/planner-intelligence/)
 
 このチームの責務は [Plan ステージ](/handbook/product/categories/#plan-stage) によって定義されています。具体的には、Issue、ボード、マイルストーン、Todo リスト、Issue リストとフィルタリング、ロードマップ、タイムトラッキング、要件管理、通知、バリューストリーム分析（VSA）、Wiki、Pages など、GitLab の機能について取り組んでいます。
 
@@ -21,7 +21,7 @@ Plan チーム:
 
 GitLab の Issue では、まず [対応する Plan ステージグループ](/handbook/product/categories/#plan-stage) のプロダクトマネージャーを @ メンションすることから始めてください。GitLab チームメンバーは [#s_plan](https://gitlab.slack.com/messages/C72HPNV97) も利用できます。
 
-UX に関する質問は、Plan ステージのプロダクトデザイナーを @ メンションしてください。Plan:Project Management は [Nick Leonard](https://gitlab.com/nickleonard)、Plan:Product Planning は [Nick Brandt](https://gitlab.com/nickbrandt)、Plan:Optimize は [Libor Vanc](https://gitlab.com/lvanc) です。Plan:Knowledge はデザイナーを持たないグループの[プロセス](/handbook/product/product-processes/)に従ってください。
+UX に関する質問は、Plan ステージのプロダクトデザイナーを @ メンションしてください。Plan:Portfolio Planning は [Nick Brandt](https://gitlab.com/nickbrandt) です。Plan:Planner Intelligence はデザイナーを持たないグループの[プロセス](/handbook/product/product-processes/)に従ってください。
 
 ### 私たちの働き方
 
@@ -65,9 +65,9 @@ Issue には以下のライフサイクルがあります。各ワークフロ�
 
 誰もが、Issue が他の場所に属すると感じた場合は、別のワークフローに移動することを推奨しています。Issue を常に整理された状態に保つために、Issue を別のワークフロー段階に移動する際は、Issue 内の未解決の議論を確認し、決定事項を説明文に更新してください。これにより、説明が[明確に記載](/handbook/values/#say-why-not-just-what)され、透明性のバリューを維持できます。
 
-#### Epic
+#### エピック
 
-Issue が `> 3 ウェイト` の場合は、Epic に昇格させ（クイックアクション）、複数の Issue に分割してください。新たに昇格した Epic に、各タスクが垂直フィーチャースライス（MVC）を表すタスクリストを追加すると便利です。これにより、タスクリストから新しい Issue を作成することで、下流に実装の余地ができた時点で「ジャストインタイムプランニング」を実践できます。Epic から新しい垂直フィーチャースライスを作成する際は、適切なラベル（`devops::plan`、`group::*`、`Category:*` またはフィーチャーラベル、および適切な `workflow stage label`）を追加し、より大きな Epic を表すすべてのストーリーを添付することを忘れないでください。これにより、ロードマップ上でより大きな取り組みを把握しやすくなり、スケジュールを組みやすくなります。
+Issue が `> 3 ウェイト` の場合は、エピックに昇格させ（クイックアクション）、複数の Issue に分割してください。新たに昇格したエピックに、各タスクが垂直機能スライス（MVC）を表すタスクリストを追加すると便利です。これにより、タスクリストから新しい Issue を作成することで、下流に実装の余地ができた時点で「ジャストインタイムプランニング」を実践できます。エピックから新しい垂直機能スライスを作成する際は、適切なラベル（`devops::plan`、`group::*`、`Category:*` または機能ラベル、および適切な `workflow stage label`）を追加し、より大きなエピックを表すすべてのストーリーを添付することを忘れないでください。これにより、ロードマップ上でより大きな取り組みを把握しやすくなり、スケジュールを組みやすくなります。
 
 #### 設計ドキュメント
 
@@ -80,7 +80,7 @@ Issue が `> 3 ウェイト` の場合は、Epic に昇格させ（クイック�
 4. **協働的な意思決定**： [変更と議論はマージリクエストを通じて行われます](../../architecture/workflow/#why-are-design-documents-tracked-in-merge-requests)。これにより、関係するすべてのチームメンバーに可視性が確保されます。
 5. **包括的なエントリポイント**： 設計ドキュメントはイニシアチブの主要なエントリポイントとして機能し、以下が含まれます:
    - エグゼクティブサマリー
-   - 関連する Epic、Issue、Wiki ページへのリンク
+   - 関連するエピック、Issue、Wiki ページへのリンク
    - ステータス更新へのリンク
    - 実装の詳細
    - 意思決定ログまたはドキュメント内に埋め込まれた意思決定
@@ -94,7 +94,7 @@ Issue が `> 3 ウェイト` の場合は、Epic に昇格させ（クイック�
 2. アーキテクチャ進化ワークフローを使って設計ドキュメントを作成する。
    [このテンプレート](https://gitlab.com/gitlab-com/content-sites/handbook/-/blob/main/content/handbook/engineering/architecture/design-documents/_template.md?plain=1) を使って始めてください。
    すべてのセクションを埋める必要はありません。これは生きたドキュメントであり、時間とともに進化することが期待されます。
-3. Epic 階層は、各マイルストーン内で達成可能なイテレーションにマッピングされたサブ Epic で作成されます。
+3. エピック階層は、各マイルストーン内で達成可能なイテレーションにマッピングされたサブエピックで作成されます。
 4. イテレーションは独立して達成可能な複数の Issue に分割され、PM が通常通りにスケジュールします。
 5. 定期的な「オフィスアワー」コールなど、他のアクションが確立される場合があります。
 
@@ -150,7 +150,7 @@ DRI はプロジェクトのタイムライン、プロジェクトのステー�
 - [設定可能なステータス](/handbook/engineering/architecture/design-documents/work_items_custom_status/)
 - [カスタムフィールド](https://gitlab.com/gitlab-org/plan-stage/project-management-group/team-project/-/wikis/projects/Custom-Fields/Dashboard)
 - [Issue ワークアイテムタイプ](https://gitlab.com/gitlab-org/plan-stage/project-management-group/team-project/-/wikis/projects/Issues%20to%20work%20items/issues-to-work-items)
-- [Epic ワークアイテムタイプ](https://gitlab.com/gitlab-org/plan-stage/work-items-ga-epics/-/wikis/home)
+- [エピックワークアイテムタイプ](https://gitlab.com/gitlab-org/plan-stage/work-items-ga-epics/-/wikis/home)
 
 #### 内部テスト
 
@@ -216,7 +216,7 @@ UX リサーチコールは、バイアスを軽減し、ユーザーニーズ�
 
 ### 今後のリリースにおけるコミット済み作業の追跡
 
-私たちは継続的な Kanban 方式で作業していますが、Issue や Epic がマイルストーンの期限までに完了するかどうかを報告し、伝達できるようにしたいと思っています。ステータスの洞察と明確さを提供するために、優先 Issue に [Issue/Epic ヘルスステータス](https://docs.gitlab.com/ee/user/project/issues/index.html#health-status) を活用します。
+私たちは継続的な Kanban 方式で作業していますが、Issue やエピックがマイルストーンの期限までに完了するかどうかを報告し、伝達できるようにしたいと思っています。ステータスの洞察と明確さを提供するために、優先 Issue に [Issue/エピックヘルスステータス](https://docs.gitlab.com/ee/user/project/issues/index.html#health-status) を活用します。
 
 ### ヘルスステータスを正確に保つ
 
@@ -260,10 +260,10 @@ GitLab は現在、OKR 階層の構造化についていくらかの自由度を
 
 ```mermaid
 flowchart TD
-    A[Plan Objective] --> B(Project Management KR)
-    A --> C[Product Planning KR]
+    A[Plan Objective] --> B(Work Items KR)
+    A --> C[Portfolio Planning KR]
     A --> D[Optimize KR]
-    A --> E[Knowledge KR]
+    A --> E[Planner Intelligence KR]
     A --> K[Principal Engineer KR]
     A --> L[SEM KR]
 ```
@@ -337,19 +337,19 @@ DRI は以下のアクションを完了する責任があります:
 以下の RCA フォーマットは FY23 Q2 OKR でトライアルされたものです。リグレッションが正常に元に戻されたら、元の MR のコメントとして投稿できます。
 
 ```markdown
-**リグレッションの説明:**
-_動作のリグレッションについての一行説明。_
+**Description of the regression:**
+_One-line description of the regression in behavior._
 
-**バグレポート:** _[Issue リンク]_
+**Bug report:** _[Issue link]_
 
-`@author`（社内の場合）`@approvers` このコメントに返信して、以下の質問をコピーし、簡単な回答をお願いできますか？
+`@author`` (if internal) `@approvers` Please could you reply to this comment, copying the questions below and giving some short answers?
 
-1. 通常の業務（メール通知、一般的な業務プロセスなど）の中で、この MR が元に戻されたことを知っていましたか？
-1. この MR を承認する前に問題のある動作を特定しましたか？
-1. 特定していない場合、レビュー中にリグレッションをより明らかにするために何が役立ったでしょうか？
-1. このリグレッションがマージされるのを防ぐために、ツールやレビュープロセスのどのような変更が必要でしたか？
-1. MR をテストする手順は説明に明確に記載されていましたか？追いやすかったですか？
-1. 他にコメント/提案はありますか？
+1. Were you aware this MR was reverted in the course of your normal work (e.g. through email notification, general work process)?
+1. Did you identify the problematic behavior before approving this MR?
+1. If not, what would've made the regression more obvious during review?
+1. What changes to our tooling or review process would have prevented this regression from being merged?
+1. Were the steps to test the MR mentioned clearly in the description? Were they easy to follow?
+1. Do you have any other comments/suggestions?
 ```
 
 責任を問うためではなく、データを収集し、原因となる要因を特定し、是正措置を実施するためであることを参加者に安心させてください。ただし、情報がまだ新鮮なうちに迅速で簡潔な回答を求めてください。
@@ -369,14 +369,14 @@ _動作のリグレッションについての一行説明。_
 
 ### UX
 
-Plan UX チームは [Product Planning](/handbook/product/categories/#product-planning-group)、[Project Management](/handbook/product/categories/#project-management-group)、および [Optimize](/handbook/product/categories/#optimize-group) をサポートしています。Product Planning と Project Management はワークアイテムアーキテクチャの取り組みに注力しています。このページでは、整合性とクロスグループのコラボレーションが必要なため、私たちがこれをどのようにサポートするかについての詳細に焦点を当てています。
+Plan UX チームは [Portfolio Planning](/handbook/product/categories/#portfolio-planning-group)、[Work Items](/handbook/product/categories/#work-items-group)、および [Planning Views](/handbook/product/categories/#planning-views-group) をサポートしています。Portfolio Planning と Work Items はワークアイテムアーキテクチャの取り組みに注力しています。このページでは、整合性とクロスグループのコラボレーションが必要なため、私たちがこれをどのようにサポートするかについての詳細に焦点を当てています。
 
 #### UX Issue 管理、ウェイト、キャパシティプランニング
 
-Product Planning、Project Management、Optimize は UX 作業の Issue を作成し、タイトルの先頭に [UX] を付けます。例: https://gitlab.com/groups/gitlab-org/-/epics/10224#note_1337213171+
+Portfolio Planning、Work Items、Planning Views は UX 作業の Issue を作成し、タイトルの先頭に [UX] を付けます。例: https://gitlab.com/groups/gitlab-org/-/epics/10224#note_1337213171+
 
 - UX Issue は、設計目標、設計ドラフト、設計の会話と批評、および実装される選択した設計方向の SSOT です。
-- プロダクト要件の議論は、できる限りメインの Issue または Epic で続けてください。
+- プロダクト要件の議論は、できる限りメインの Issue またはエピックで続けてください。
 - プロダクトデザイナーがデザインが ~"workflow::planning breakdown" の準備ができたことを示したい場合は、このラベルを Issue に適用し、PM と EM に通知して、Issue をクローズしてください。
 
 _UX Issue を使うのはいつですか？_
@@ -410,7 +410,7 @@ _UX Issue のウェイト付け_
 
 ユーザーエクスペリエンスについて話す際、私たちはユーザー向けの概念に「ワークアイテム」という用語を使用することを避けます。それは体験に特定的ではなく、混乱を招くからです。代わりに、話している製品の部分に特定し、類似した JTBD をサポートする記述子を使用します。以下は、私たちがこれらを分類している方法の例です:
 
-- チームプランニングオブジェクト: Planning JTBD に属するオブジェクト。現在は Epic、Issue、タスクですが、将来的には他のものも含まれる可能性があります。
+- チームプランニングオブジェクト: Planning JTBD に属するオブジェクト。現在はエピック、Issue、タスクですが、将来的には他のものも含まれる可能性があります。
 - 戦略オブジェクト: 戦略的な組織全体のオブジェクトをサポートするオブジェクト。現在は目標とキーリザルトです。
 - 開発/ビルドオブジェクト: 開発タスクをサポートするオブジェクト。MR、テストケース、または要件が含まれる可能性があります。
 - 保護オブジェクト: インシデント、アラート、脆弱性、サービスデスクチケットが含まれる可能性があります。
@@ -433,9 +433,9 @@ _UX Issue のウェイト付け_
 
 ワークアイテムアーキテクチャで設計する際、プロダクトデザイナーはアーキテクチャがどのように機能し、ユーザーエクスペリエンスにどのような影響があるかをおおまかに理解する必要があります。
 
-- ワークアイテムにはタイプ（Epic、インシデント）があり、これによってワークアイテムで利用可能なウィジェットと、ワークアイテムが他のワークアイテムや非ワークアイテムオブジェクトとどのような関係を持てるかが制御されます。
+- ワークアイテムにはタイプ（エピック、インシデント）があり、これによってワークアイテムで利用可能なウィジェットと、ワークアイテムが他のワークアイテムや非ワークアイテムオブジェクトとどのような関係を持てるかが制御されます。
 - ターゲットとする JTBD を実行するという意味でのワークアイテムの動作は、ワークアイテムタイプに対して有効化されたウィジェットのコレクションによって動作します。
-- タイプに固有のロジックやビューを構築することを避けたいです。現在サポートされていないワークフローをサポートする必要がある場合は、ウィジェット（フィールド、アプリ、アクション）を通じて新しい動作を導入できます。実際の例: Epic は他の Epic と Issue を親にできます。Epic と Issue を相互接続する代わりに、この動作は「階層」ウィジェットにカプセル化されており、階層を実装する他のワークアイテムタイプ（目標とキーリザルトなど）で利用できます。
+- タイプに固有のロジックやビューを構築することを避けたいです。現在サポートされていないワークフローをサポートする必要がある場合は、ウィジェット（フィールド、アプリ、アクション）を通じて新しい動作を導入できます。実際の例: エピックは他のエピックと Issue を親にできます。エピックと Issue を相互接続する代わりに、この動作は「階層」ウィジェットにカプセル化されており、階層を実装する他のワークアイテムタイプ（目標とキーリザルトなど）で利用できます。
 - 同様に、ワークアイテムビューはタイプに対して直接カスタマイズすべきではありません。ただし、プロダクトデザイナーは異なるユーザーエクスペリエンスを提案でき、ワークアイテムを実装するチームは必要なユースケースをワークアイテムアーキテクチャに組み込みます。
 - ワークアイテムは、すべてのビューが同じ SSoT グルーピング FE コンポーネント（リスト、ボード、ロードマップ、グリッドなど）を活用する限り、IA/ナビゲーションの観点から任意のグルーピングでユーザーに提示できます。各グルーピングビューの1つのバージョンのみを構築・維持し、そのワークアイテムのセットを表示したい場所で再利用できるようにすべきです。グルーピングはユーザーのニーズに基づいてイテレーティブに決定されます。
 
@@ -445,7 +445,7 @@ _UX Issue のウェイト付け_
 
 _問題の検証_
 
-オブジェクト（インシデント、Epic など）のコードを所有するクアッドが、コードの再利用とユーザーエクスペリエンスに関するトレードオフに基づいて、ワークアイテムアーキテクチャを使用すべきかどうかを決定します。これはクロスファンクショナルな意思決定であるべきで、グループのプロダクトデザイナーは、ユーザーの理想的なワークフローがワークアイテムアーキテクチャによってサポートできるかどうかについてチームにアドバイスする必要があります。これにより、チームは既存のフロントエンドアーキテクチャのどの部分を再利用できるか、および望ましい体験をサポートするために何を追加またはカスタマイズする必要があるかを評価できます。
+オブジェクト（インシデント、エピックなど）のコードを所有するクアッドが、コードの再利用とユーザーエクスペリエンスに関するトレードオフに基づいて、ワークアイテムアーキテクチャを使用すべきかどうかを決定します。これはクロスファンクショナルな意思決定であるべきで、グループのプロダクトデザイナーは、ユーザーの理想的なワークフローがワークアイテムアーキテクチャによってサポートできるかどうかについてチームにアドバイスする必要があります。これにより、チームは既存のフロントエンドアーキテクチャのどの部分を再利用できるか、および望ましい体験をサポートするために何を追加またはカスタマイズする必要があるかを評価できます。
 
 1. 意思決定プロセスの一環として、プロダクトデザイナーは問題検証のユーザーリサーチを行う（または既存のものを活用する）べきで、ユーザーの目標、タスク、コンテンツ/データフィールドのニーズ、およびこのワークアイテムタイプがリレーションシップを持つかどうかとその性質を含む望ましいユーザーエクスペリエンスを理解します。
 1. このフェーズ中に、プロダクトデザイナーとプロダクトマネージャーは、ワークアイテムリサーチプロセス（リンクは TBD）に従って成功指標が定義されることを確認する必要があります。
@@ -536,18 +536,18 @@ Plan は 2023-11-01 まで週次チームミーティングをステージとし
 
 #### リンク/参照
 
-- `~group::project management`
+- `~group::work items`
   - [ボード](https://gitlab.com/groups/gitlab-org/-/boards/1285239)
-  - [ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&label_name[]=group%3A%3Aproject%20management)
-- `~group::product planning`
+  - [ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&label_name[]=group%3A%3Awork+items)
+- `~group::portfolio planning`
   - [ボード](https://gitlab.com/groups/gitlab-org/-/boards/1569369?not[milestone_title]=Backlog)
-  - [ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&label_name[]=group%3A%3Aproduct+planning)
+  - [ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&label_name[]=group%3A%3Aportfolio+planning)
 - `~group::optimize`
   - [ボード](https://gitlab.com/groups/gitlab-org/-/boards/1401511)
   - [ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&label_name[]=group%3A%3Aoptimize)
-- `~group::knowledge`
+- `~group::planner intelligence`
   - [ボード](https://gitlab.com/groups/gitlab-org/-/boards/5454834)
-  - [ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&label_name[]=group%3A%3Aknowledge)
+  - [ロードマップ](https://gitlab.com/groups/gitlab-org/-/roadmap?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=devops%3A%3Aplan&label_name[]=group%3A%3Aplanner+intelligence)
 
 #### 共有カレンダー {#shared-calendar}
 
@@ -638,13 +638,10 @@ GitLab のすべてのグループと同様に、ワーキンググループは�
 
 ステージワーキンググループは、ステージ内の複数のグループ間のコラボレーションを必要とするイニシアチブに焦点を当てています。ステージワーキンググループの構造は[会社全体のワーキンググループ](/handbook/company/working-groups/)に似ており、DRI と明確に定義された役割があります。イニシアチブは[エグゼクティブスポンサー](/handbook/company/working-groups/#executive-sponsor)ではなく、ステージレベルの製品方針によって推進され、終了基準を満たすために参加する機能リードとメンバーのみで構成できます。
 
-#### アクティブなステージワーキンググループ
-
-1. [ワークアイテム API パフォーマンス](/handbook/engineering/devops/plan/working-groups/work-items-api-performance/)
-
 #### アーカイブ済みのステージワーキンググループ
 
-1. [Epic ワークアイテム移行](/handbook/engineering/devops/plan/working-groups/epic-work-items-migration/)
+1. [エピックワークアイテム移行](/handbook/engineering/devops/plan/working-groups/epic-work-items-migration/)
+1. [ワークアイテム API パフォーマンス](/handbook/engineering/devops/plan/working-groups/work-items-api-performance/)
 
 ### プロダクトアウトリーチ
 
@@ -669,8 +666,8 @@ GitLab のすべてのグループと同様に、ワーキンググループは�
   - [スコープ付きラベル](https://youtu.be/ebyCiKMFODg)
 - Issue
   - [説明変更履歴](https://youtu.be/-JgfJSSLYlI)
-- Epic
-  - [Epic ツリーを使ったサブ Epic の整理](https://youtu.be/TzRCan5ki6o)
+- エピック
+  - [エピックツリーを使ったサブエピックの整理](https://youtu.be/TzRCan5ki6o)
 - 要件管理
   - [要件 MVC](https://youtu.be/uSS7oUNSEoU)
   - [CI パイプラインからの要件の充足](https://youtu.be/4m1mSEb2ywU)
@@ -683,7 +680,7 @@ GitLab のすべてのグループと同様に、ワーキンググループは�
 | ---- | ---          | ---                            | ---                | ---    | ---   | ---    |
 | Redis プライマリ CPU | `SUBSCRIBE`、`UNSUBSCRIBE`、`PUBLISH` コマンドによる共有状態 Redis インスタンスへの予期せぬ負荷。 | 不明 | 2023年11月 | ピーク時 [15万の同時 WebSocket 接続](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/11747#action-cable-websockets) | | <span style='border-radius:0.2em; font-weight:bold; padding-left:1em; padding-right:1em; color:white; background-color:green;'>OK</span> |
 | Redis メモリ | 多数のおよび/または停止/ハングしたクライアントによる Redis 共有状態メモリへの Action Cable メッセージの保持。 | 不明 | 2023年11月 | ピーク時 [15万の同時 WebSocket 接続](https://gitlab.com/gitlab-com/www-gitlab-com/-/issues/11747#action-cable-websockets) | [#326364](https://gitlab.com/gitlab-org/gitlab/-/issues/326364) | <span style='border-radius:0.2em; font-weight:bold; padding-left:1em; padding-right:1em; color:white; background-color:green;'>OK</span> |
-| プライマリ DB | 現在の Issue、Epic、要件、テストケースすべてからなる統合された「ワークアイテム」テーブルのスケーリング。 | 不明 | 2024年11月 | 1日あたり [5万のワークアイテム](#work-items) 作成 | | <span style='border-radius:0.2em; font-weight:bold; padding-left:1em; padding-right:1em; color:white; background-color:green;'>OK</span> |
+| プライマリ DB | 現在の Issue、エピック、要件、テストケースすべてからなる統合された「ワークアイテム」テーブルのスケーリング。 | 不明 | 2024 年 11 月 | 1 日あたり [5 万のワークアイテム](#work-items) 作成 | | <span style='border-radius:0.2em; font-weight:bold; padding-left:1em; padding-right:1em; color:white; background-color:green;'>OK</span> |
 
 注意: Int4 プライマリキーのオーバーフローを軽減するための[移行ヘルパー](https://gitlab.com/gitlab-org/gitlab/-/issues/292874)に関する作業が進行中です。これらはこれらの問題を解決するための標準的な方法を提供します。
 
@@ -705,4 +702,4 @@ GitLab のすべてのグループと同様に、ワーキンググループは�
 
 #### Plan xMAU
 
-- [プロダクトプランニングのパフォーマンス指標](https://internal.gitlab.com/handbook/company/performance-indicators/product/)
+- [Portfolio Planning のパフォーマンス指標](https://internal.gitlab.com/handbook/company/performance-indicators/product/)

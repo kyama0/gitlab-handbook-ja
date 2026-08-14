@@ -1,11 +1,11 @@
 ---
 title: GitLab を使った作業計画
 upstream_path: /handbook/product/product-processes/planning-with-gitlab/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:20:45+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-06T19:27:57-05:00"
+lastmod: "2026-08-14T14:39:01+02:00"
 ---
 
 私たちは GitLab を使って製品戦略をドキュメント化し、バックログを管理しています。このプロセスのカギとなるコンセプトは次のとおりです:
@@ -150,7 +150,7 @@ Issue またはエピックがオープンであることは、その変更を�
 ### ボード
 
 計画プロセスの一環として、グループの優先順位付けされた [Issue ボード](https://docs.gitlab.com/user/project/issue_board/) を維持することが重要です。
-これらのボードは慣例的に `STAGE - GROUP - Planning` と呼ばれ、グループラベルを持つすべての Issue にフィルターし、各マイルストーンを列として構成します（[こちらが例](https://gitlab.com/groups/gitlab-org/-/boards/4873470?label_name[]=group%3A%3Aproduct%20planning)）。
+これらのボードは慣例的に `STAGE - GROUP - Planning` と呼ばれ、グループラベルを持つすべての Issue にフィルターし、各マイルストーンを列として構成します（[こちらが例](https://gitlab.com/groups/gitlab-org/-/boards/4873470?label_name[]=group%3A%3Aportfolio%20planning)）。
 
 [マイルストーンの優先順位付け](/handbook/product/product-processes/cross-functional-prioritization/#planning-for-the-milestone) の [DRI](/handbook/people-group/directly-responsible-individuals/) として、計画ボード上のすべての項目がマイルストーンにスケジュールされ、マイルストーン内およびマイルストーン間で優先順位付けされていることを確認する責任があります。これは、現在のマイルストーンの最も低い優先順位は、一般的に次のマイルストーンの最高優先順位になるという意味です。
 この点で、計画演習は近い将来の Issue の完全な優先順位付けです。

@@ -1,11 +1,11 @@
 ---
 title: オンコールプロセスとポリシー - Tier 2
 upstream_path: /handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/
-upstream_sha: "d8fb317567e8e271f91f602d97d453ad1a69a00a"
-translated_at: "2026-08-13T23:58:47+09:00"
+upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
+translated_at: "2026-08-15T06:38:37+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-13T15:10:33+03:00"
+lastmod: "2026-08-14T08:47:32-04:00"
 ---
 
 Tier 2 ローテーションは、サポートのためにチームメンバーをページするかを人間が判断するオンコールローテーションを指します。
@@ -38,7 +38,7 @@ Tier 2 チームをページするには:
 
 ### Gitaly
 
-- ローテーションリーダー: John Cai
+- ローテーションリーダー: Lucie Zhao
 - カバレッジ: 24x5（一部、2 時間のギャップあり）
 - スケジュール: [schedule](https://app.incident.io/gitlab/on-call/schedules/01JJWAE08T9WDE8T6D4VZPBNXE)
 - エスカレーション履歴リンク: [escalations](https://app.incident.io/gitlab/on-call/escalations?escalation_path%5Bone_of%5D=01JJWB07RXAG02RXYR4QR47J9E)

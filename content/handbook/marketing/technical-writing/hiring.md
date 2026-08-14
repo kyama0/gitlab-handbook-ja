@@ -1,11 +1,12 @@
 ---
 title: "テクニカルライターの採用"
-upstream_path: /handbook/product/ux/technical-writing/hiring/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+description: "テクニカルライターの面接プロセスを含む、Technical Writing チームの採用方法。"
+upstream_path: /handbook/marketing/technical-writing/hiring/
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T07:08:45+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
 GitLab が成長するにつれて、テクニカルライティングチームが拡大し、チームメンバーが面接に参加します。一貫した採用プロセスのために、定義された面接プロセスが重要です。

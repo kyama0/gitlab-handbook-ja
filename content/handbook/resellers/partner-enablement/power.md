@@ -2,11 +2,11 @@
 title: "GitLab POWER"
 description: "GitLab パートナーのオンボーディングワークフローとイネーブルメントリソース"
 upstream_path: /handbook/resellers/partner-enablement/power/
-upstream_sha: db1b52fb5e65d37509c3eaaaebfd50dd491e4b36
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:11:46+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-21T13:55:38+00:00"
+lastmod: "2026-08-14T12:29:16+00:00"
 ---
 
 このページは、パートナー向けの GitLab イネーブルメントリソースを集めたものです。主な目的は、パートナーのテクニカルプリセールスチームを私たちの [Channel Partner Program](/handbook/resellers/) にオンボーディングすることです。他のセールスプロフェッショナルやサービスエンジニアにとっても、有用な情報が多数含まれています。
@@ -116,11 +116,15 @@ GitLab は、開発ツールの競争が激しい市場における複雑な製�
 
 * **GitLab Sales Professional Accreditation**
 
-  パートナー版の [GitLab University](#13-gitlab-university) を開き、[Professional Sales Accreditation for Partners コース](https://university.gitlab.com/learn/course/professional-sales-accreditation-for-partners)を開始してください。
+  セールスジャーニーを始めるには、パートナー版の [GitLab University](#13-gitlab-university) を開き、[Professional Sales Accreditation for Partners コース](https://university.gitlab.com/learn/course/professional-sales-accreditation-for-partners)を開始してください。
+
+* **GitLab Flex Foundations**
+
+  [GitLab の従量課金モデル](https://docs.gitlab.com/subscriptions/gitlab_flex/)をより深く理解するには、パートナー版の [GitLab University](#13-gitlab-university) を開き、[GitLab Flex Foundations コース](https://university.gitlab.com/courses/gitlab-flex-foundations)を開始してください。
 
 * [**GitLab Value Framework**](https://partners.gitlab.com/prm/api/objects/v1/asset/cryafg7tweuz/_view)
 
-  このドキュメントはセールス会話を支援し、顧客や見込み客に GitLab をポジショニングするのに役立ちます。上記の認定で得た知識を発展させる、最適な次のステップです。
+  このドキュメントはセールス会話を支援し、顧客や見込み客に GitLab をポジショニングするのに役立ちます。上記の Sales Professional Accreditation で得た知識を発展させる、最適な次のステップです。
 
   これは GitLab 自身のセールスチームが日々の業務で使用するものと同じドキュメントです。情報は GitLab のリーダー、セールス、マーケティング、製品チームから提供されています。顧客とフォーカスグループによる検証を受け、バリューに基づくメッセージングを、現在の市場トレンド（AI、Security & Compliance、Value Stream Management など）および顧客の優先事項と一致させています。
 
@@ -188,7 +192,7 @@ GitLab は、開発ツールの競争が激しい市場における複雑な製�
 
 ### 5.1 GitLab Professional Services Engineer（PSE）認定
 
-組織で標準化されたレベルの技術的専門性を構築するため、テクニカルチームメンバーそれぞれが **GitLab Professional Services Engineer（PSE）認定** を取得することを推奨します。
+組織で標準化されたレベルの技術的専門性を構築するため、テクニカルチームメンバーそれぞれがこの認定を取得することを推奨します。
 
 PSE 試験の受験には費用がかかりますが、学習コース自体は無料です。認定は [GitLab Professional Services Partner（PSP）](/handbook/resellers/channel-program-guide/#the-gitlab-professional-services-partner-psp-program) ステータスを取得したい場合にのみ必須であり、その場合も一定数の従業員に限られます。
 
@@ -208,14 +212,12 @@ PSE 試験の受験には費用がかかりますが、学習コース自体は�
 
   いいえ、あなた次第です。PSE ステータスを得るには、6 つの試験をすべて完了するだけで十分です。
 
-### 5.2 GitLab Duo Agent Platform
+### 5.2 GitLab Duo Agent Platform Associate Certification
 
-執筆時点（2026-07-21）で、Duo Agent Platform（DAP）は PSE カリキュラムの一部ではありません。それでも、パートナーが製品のこの重要な部分に習熟することを強く推奨します。そのためには、以下のリソースを使用してください:
+執筆時点（2026-08-14）で、Duo Agent Platform（DAP）は PSE カリキュラムの一部ではありません。それでも、パートナーが製品のこの重要な部分に習熟することを強く推奨します。そのためには、パートナー版の [GitLab University](#13-gitlab-university) を開き、以下のリソースを使用してください:
 
 * [GitLab Duo Learning Path](https://university.gitlab.com/learning-paths/gitlab-duo-learning-path-v100): 無料のセルフペースオンライン学習です。
 * [GitLab Duo Agent Platform Associate Certification](https://university.gitlab.com/courses/certified-duo-agent-platform-associate): 任意、有料です。
-
-PSE と同様に、Partner Portal から University にアクセスし、このコンテンツのパートナー限定割引も利用してください。
 
 ### 5.3 追加教育
 

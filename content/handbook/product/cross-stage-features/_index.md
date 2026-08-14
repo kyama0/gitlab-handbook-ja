@@ -2,11 +2,11 @@
 title: 共有機能・体験領域における協業
 description: "製品グループ向けの協業プロセスと、共有機能領域のドキュメント"
 upstream_path: /handbook/product/cross-stage-features/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:23:48+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-05T20:15:31+00:00"
+lastmod: "2026-08-14T14:39:01+02:00"
 ---
 
 ## ステージ横断の機能コラボレーション
@@ -48,17 +48,17 @@ lastmod: "2026-02-05T20:15:31+00:00"
 
 | 統合 | DRI グループ | 理由 |
 |---|---|---|
-| [Asana](https://docs.gitlab.com/ee/user/project/integrations/asana.html) | group Plan:Project Management | プロジェクト管理ツールとの整合 |
-| [Bugzilla](https://docs.gitlab.com/ee/user/project/integrations/bugzilla.html) | group Plan:Project Management | Issue 追跡機能 |
-| [ClickUp](https://docs.gitlab.com/ee/user/project/integrations/clickup.html) | group Plan:Project Management | プロジェクト管理統合 |
-| [Custom issue tracker](https://docs.gitlab.com/ee/user/project/integrations/custom_issue_tracker.html) | group Plan:Project Management | 汎用の Issue 追跡フレームワーク |
-| [EWM - IBM Engineering Workflow Management](https://docs.gitlab.com/ee/user/project/integrations/ewm.html) | group Plan:Project Management | エンタープライズプロジェクト管理統合 |
-| [Jira issue integration](https://docs.gitlab.com/ee/integration/jira/configure.html) | group Plan:Project Management | コア Issue 追跡統合 |
-| [GitLab for Jira Cloud app](https://docs.gitlab.com/ee/integration/jira/development_panel.html) | group Plan:Project Management | Jira 統合の拡張 |
-| [Pivotal Tracker](https://docs.gitlab.com/ee/user/project/integrations/pivotal_tracker.html) | group Plan:Project Management | アジャイルプロジェクト管理統合 |
-| [Redmine](https://docs.gitlab.com/ee/user/project/integrations/redmine.html) | group Plan:Project Management | Issue 追跡およびプロジェクト管理 |
-| [YouTrack](https://docs.gitlab.com/ee/user/project/integrations/youtrack.html) | group Plan:Project Management | Issue 追跡統合 |
-| [ZenTao integration](https://docs.gitlab.com/user/project/integrations/zentao/) | group Plan:Project Management | 外部 Issue 追跡統合 |
+| [Asana](https://docs.gitlab.com/ee/user/project/integrations/asana.html) | group Plan:Work Items | プロジェクト管理ツールとの整合 |
+| [Bugzilla](https://docs.gitlab.com/ee/user/project/integrations/bugzilla.html) | group Plan:Work Items | Issue 追跡機能 |
+| [ClickUp](https://docs.gitlab.com/ee/user/project/integrations/clickup.html) | group Plan:Work Items | プロジェクト管理統合 |
+| [Custom issue tracker](https://docs.gitlab.com/ee/user/project/integrations/custom_issue_tracker.html) | group Plan:Work Items | 汎用の Issue 追跡フレームワーク |
+| [EWM - IBM Engineering Workflow Management](https://docs.gitlab.com/ee/user/project/integrations/ewm.html) | group Plan:Work Items | エンタープライズプロジェクト管理統合 |
+| [Jira issue integration](https://docs.gitlab.com/ee/integration/jira/configure.html) | group Plan:Work Items | コア Issue 追跡統合 |
+| [GitLab for Jira Cloud app](https://docs.gitlab.com/ee/integration/jira/development_panel.html) | group Plan:Work Items | Jira 統合の拡張 |
+| [Pivotal Tracker](https://docs.gitlab.com/ee/user/project/integrations/pivotal_tracker.html) | group Plan:Work Items | アジャイルプロジェクト管理統合 |
+| [Redmine](https://docs.gitlab.com/ee/user/project/integrations/redmine.html) | group Plan:Work Items | Issue 追跡およびプロジェクト管理 |
+| [YouTrack](https://docs.gitlab.com/ee/user/project/integrations/youtrack.html) | group Plan:Work Items | Issue 追跡統合 |
+| [ZenTao integration](https://docs.gitlab.com/user/project/integrations/zentao/) | group Plan:Work Items | 外部 Issue 追跡統合 |
 
 #### ソースコード統合
 
@@ -110,32 +110,32 @@ lastmod: "2026-02-05T20:15:31+00:00"
 
 | 統合 | DRI グループ | 理由 |
 |---|---|---|
-| [Slack Notifications](https://docs.gitlab.com/ee/user/project/integrations/slack.html) (非推奨) | group Plan:Project Management | インシデント管理機能を持つチームコミュニケーション |
-| [Discord](https://docs.gitlab.com/ee/user/project/integrations/discord_notifications.html) | group Plan:Project Management | チームコミュニケーションおよびアラート通知 |
-| [Google Chat](https://docs.gitlab.com/ee/user/project/integrations/hangouts_chat.html) | group Plan:Project Management | エンタープライズチームコミュニケーションおよびインシデントアラート |
-| [Irker](https://docs.gitlab.com/ee/user/project/integrations/irker.html) | under group Plan:Project Management | アラートおよび通知向けの IRC ベースのコミュニケーション |
-| [Mattermost notifications](https://docs.gitlab.com/ee/user/project/integrations/mattermost.html) | group Plan:Project Management | インシデント管理機能を備えたチームコミュニケーションプラットフォーム |
-| [Microsoft Teams](https://docs.gitlab.com/ee/user/project/integrations/microsoft_teams.html) | group Plan:Project Management | 運用アラートを備えたエンタープライズチームコミュニケーション |
-| [Pumble](https://docs.gitlab.com/ee/user/project/integrations/pumble.html) | group Plan:Project Management | 通知向けのチームコミュニケーションプラットフォーム |
-| [Unify Circuit](https://docs.gitlab.com/ee/user/project/integrations/unify_circuit.html) | group Plan:Project Management | 運用アラート向けのチームコミュニケーションプラットフォーム |
-| [Webex Teams](https://docs.gitlab.com/ee/user/project/integrations/webex_teams.html) | group Plan:Project Management | インシデント対応機能を備えたエンタープライズチームコミュニケーション |
-| [Telegram](https://docs.gitlab.com/ee/user/project/integrations/telegram.html) | group Plan:Project Management | アラート向けのモバイル中心のチームコミュニケーション |
-| Campfire | group Plan:Project Management | チャット/通知統合 |
-| Flowdock | group Plan:Project Management | チャット/通知統合 |
-| Pushover | group Plan:Project Management | 通知統合 |
+| [Slack Notifications](https://docs.gitlab.com/ee/user/project/integrations/slack.html) (非推奨) | group Plan:Work Items | インシデント管理機能を持つチームコミュニケーション |
+| [Discord](https://docs.gitlab.com/ee/user/project/integrations/discord_notifications.html) | group Plan:Work Items | チームコミュニケーションおよびアラート通知 |
+| [Google Chat](https://docs.gitlab.com/ee/user/project/integrations/hangouts_chat.html) | group Plan:Work Items | エンタープライズチームコミュニケーションおよびインシデントアラート |
+| [Irker](https://docs.gitlab.com/ee/user/project/integrations/irker.html) | under group Plan:Work Items | アラートおよび通知向けの IRC ベースのコミュニケーション |
+| [Mattermost notifications](https://docs.gitlab.com/ee/user/project/integrations/mattermost.html) | group Plan:Work Items | インシデント管理機能を備えたチームコミュニケーションプラットフォーム |
+| [Microsoft Teams](https://docs.gitlab.com/ee/user/project/integrations/microsoft_teams.html) | group Plan:Work Items | 運用アラートを備えたエンタープライズチームコミュニケーション |
+| [Pumble](https://docs.gitlab.com/ee/user/project/integrations/pumble.html) | group Plan:Work Items | 通知向けのチームコミュニケーションプラットフォーム |
+| [Unify Circuit](https://docs.gitlab.com/ee/user/project/integrations/unify_circuit.html) | group Plan:Work Items | 運用アラート向けのチームコミュニケーションプラットフォーム |
+| [Webex Teams](https://docs.gitlab.com/ee/user/project/integrations/webex_teams.html) | group Plan:Work Items | インシデント対応機能を備えたエンタープライズチームコミュニケーション |
+| [Telegram](https://docs.gitlab.com/ee/user/project/integrations/telegram.html) | group Plan:Work Items | アラート向けのモバイル中心のチームコミュニケーション |
+| Campfire | group Plan:Work Items | チャット/通知統合 |
+| Flowdock | group Plan:Work Items | チャット/通知統合 |
+| Pushover | group Plan:Work Items | 通知統合 |
 
 #### その他の統合
 
 | 統合 | DRI グループ | 理由 |
 |---|---|---|
 | [Slack slash commands](https://docs.gitlab.com/ee/user/project/integrations/slack_slash_commands.html) | group Create:Import | Slack ワークスペースからスラッシュコマンドを実行して GitLab データを操作 |
-| [GitLab for Slack app](https://docs.gitlab.com/ee/user/project/integrations/slack.html) | group Plan:Project Management | Slack スラッシュコマンド統合と Slack 通知統合の組み合わせに、追加のインシデント管理フローを加えたもの |
-| [Mattermost slash commands](https://docs.gitlab.com/ee/user/project/integrations/mattermost.html) | group Plan:Project Management | Mattermost 環境からスラッシュコマンドを実行して GitLab データを操作 |
-| [Trello PowerUp](https://docs.gitlab.com/ee/integration/trello_power_up.html) | group Plan:Project Management | ボードベースのプロジェクト管理統合 |
+| [GitLab for Slack app](https://docs.gitlab.com/ee/user/project/integrations/slack.html) | group Plan:Work Items | Slack スラッシュコマンド統合と Slack 通知統合の組み合わせに、追加のインシデント管理フローを加えたもの |
+| [Mattermost slash commands](https://docs.gitlab.com/ee/user/project/integrations/mattermost.html) | group Plan:Work Items | Mattermost 環境からスラッシュコマンドを実行して GitLab データを操作 |
+| [Trello PowerUp](https://docs.gitlab.com/ee/integration/trello_power_up.html) | group Plan:Work Items | ボードベースのプロジェクト管理統合 |
 | [Pipeline status emails](https://docs.gitlab.com/ee/user/project/integrations/pipeline_status_emails.html) | group Verify:Pipeline Execution | CI/CD パイプライン通知統合 |
 | [Emails on push](https://docs.gitlab.com/ee/user/project/integrations/emails_on_push.html) | group Create:Source Code | ソースコードイベントの通知統合 |
-| [Gmail Actions Buttons](https://docs.gitlab.com/ee/integration/gmail_action_buttons_for_gitlab.html) | group Plan:Project Management | 運用対応機能を備えたメール統合 |
-| [Squash TM](https://docs.gitlab.com/ee/user/project/integrations/squash_tm.html) | group Plan:Product Planning | テスト管理統合 |
+| [Gmail Actions Buttons](https://docs.gitlab.com/ee/integration/gmail_action_buttons_for_gitlab.html) | group Plan:Work Items | 運用対応機能を備えたメール統合 |
+| [Squash TM](https://docs.gitlab.com/ee/user/project/integrations/squash_tm.html) | group Plan:Portfolio Planning | テスト管理統合 |
 | [Datadog integration](https://docs.gitlab.com/ee/integration/datadog.html) | group CI Platform | モニタリング統合 |
 
 ### DRI グループの責任

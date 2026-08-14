@@ -6,18 +6,18 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/building-culture/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T00:00:00Z"
+upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
+translated_at: "2026-08-15T06:54:56+09:00"
 translator: "claude"
 stale: false
-lastmod: "2025-12-01T16:21:31-05:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
 このページでは、リモート環境において持続可能な文化を構築し、伝え、強化する方法について詳しく説明します。
 
 ## 会社文化とは何か？
 
-![GitLab values illustration](/images/all-remote/illustration_gitlab-world.png)
+![GitLab バリューのイラスト](/images/all-remote/illustration_gitlab-world.png)
 {style="max-width: 50%;"}
 
 **文化とは、組織において価値観がどれだけ守られ、強化されているかのバロメーターです**。したがって、文化は、価値観が規範的に明確に表現され、[裁量的ボーナス](/handbook/total-rewards/incentives/#discretionary-bonuses)や昇進を価値観と結びつけるなどの要素を通じて目に見える形で[強化](/handbook/values/#how-do-we-reinforce-our-values)されている場合にのみ維持できます。
@@ -32,7 +32,7 @@ lastmod: "2025-12-01T16:21:31-05:00"
 
 ## どのようにしてリモートな文化を作るか？
 
-![GitLab values illustration](/images/all-remote/remote-report-2021_who-are-the-new-remote-workers.png)
+![GitLab バリューのイラスト](/images/all-remote/remote-report-2021_who-are-the-new-remote-workers.png)
 {style="max-width: 50%;"}
 
 「リモート環境でどのようにして文化を構築・維持するのか？」または「[文化はリモートでどのように機能するか？](/handbook/company/culture/#culture-at-gitlab)」という質問は、GitLab でよく耳にします。同じ場所で働く環境では、文化はしばしば暗黙的なものであり、チームメンバーがお互いをどのように扱うか、何が評価され、何が批判され、対面でのやり取りにおいて何が許容されるかによって形成されます。
@@ -125,7 +125,7 @@ GitLab で働いていない人も含め、誰もがあらゆるトピックに�
 
 可能な限り[非同期](asynchronous/)で運営するよう率先して取り組んでください。これは、同じタイムゾーンにいないかもしれない、通常のタイムゾーン外を旅行している、または緊急の個人的・地域的コミットメントに合わせて[一日を構成している](/handbook/company/culture/all-remote/)人への配慮を示します。
 
-例えば、テキスト、電話、または Slack メッセージを送る代わりに、GitLab の Issue とマージリクエストを使ってチーム[ミーティング](meetings/)を録画・共有することができます。地域の祝日、個人の休暇状況を把握し、勤務時間外にオンラインになるようチームメンバーに圧力をかけるのではなく、[ドキュメント](/handbook/product/ux/technical-writing/#documentation)をデフォルトにするよう他者に奨励してください。
+例えば、テキスト、電話、または Slack メッセージを送る代わりに、GitLab の Issue とマージリクエストを使ってチーム[ミーティング](meetings/)を録画・共有することができます。地域の祝日、個人の休暇状況を把握し、勤務時間外にオンラインになるようチームメンバーに圧力をかけるのではなく、[ドキュメント](/handbook/marketing/technical-writing/#documentation)をデフォルトにするよう他者に奨励してください。
 
 ## リモートで文化的適合性をどのように評価するか？
 
@@ -141,7 +141,7 @@ GitLab で働いていない人も含め、誰もがあらゆるトピックに�
 
 ## リモートワーク文化に暗黙のルールはない
 
-![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
+![GitLab バリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
 
 リモート文化に暗黙のルールがあってはなりません。意図的な文書化は、リモート会社内の[機能不全](/handbook/values/#five-dysfunctions)を避けるために不可欠であり、これは文化にも当てはまります。GitLab では、これは会社の価値観から始まります：[コラボレーション](/handbook/values/#collaboration)、[結果](/handbook/values/#results)、[効率性](/handbook/values/#efficiency)、[多様性、インクルージョン、帰属感](/handbook/values/#diversity-inclusion)、[イテレーション](/handbook/values/#iteration)、そして[透明性](/handbook/values/#transparency)。
@@ -152,7 +152,7 @@ GitLab で働いていない人も含め、誰もがあらゆるトピックに�
 
 チームメンバーが会社文化と最初に接触することは避けられません。[オンボーディング体験](/handbook/company/culture/all-remote/)は、文化との面接後の最初の出会いであり、[価値観の重要性](/handbook/company/culture/all-remote/)をその体験に吹き込むことが不可欠です。
 
-リモートオンボーディングでは、新しいチームメンバーが会社の価値観を読んで消化するための時間を設ける必要があります。価値観は会社の文化へのロードマップとして機能します。メンターまたは[オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies/)に、価値観に関連した質問を具体的に尋ねさせることを検討してください。新しいチームメンバーが日々の生活の中でどのように価値観が体現されているかをより深く掘り下げる機会を提供します。
+リモートオンボーディングでは、新しいチームメンバーが会社の価値観を読んで消化するための時間を設ける必要があります。価値観は会社の文化へのロードマップとして機能します。メンターまたは[オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies.md)に、価値観に関連した質問を具体的に尋ねさせることを検討してください。新しいチームメンバーが日々の生活の中でどのように価値観が体現されているかをより深く掘り下げる機会を提供します。
 
 ### リモートオンボーディングへの GitLab の活用
 
@@ -245,7 +245,7 @@ Veamly の創設者兼 CEO である Emna G. が、リモートファースト�
 リモート文化は、それが生き生きと体現されている限りにおいてのみ強固です。GitLab では、チームメンバーが以下のメカニズムを通じて定期的に文化を表面化させることを奨励しています。
 
 1. [ありがとうと言う](/handbook/communication/#say-thanks)
-1. 価値観の絵文字—![CREDIT emoji](/images/handbook/values-emoji.png)—を使って、会社の価値観を体現するメッセージを認識する。
+1. 価値観の絵文字—![CREDIT 絵文字](/images/handbook/values-emoji.png)—を使って、会社の価値観を体現するメッセージを認識する。
 1. 同僚を[裁量的ボーナス](/handbook/total-rewards/incentives/#discretionary-bonuses)に推薦する。認められれば、その理由と体現された価値観が文書化され、会社の通話で発表されます。これにより、他者が価値観を生きることで他者の生活を改善する方法の指針となります。
 1. GitLab Contribute アンバサダーを務めること。会社全体が 9〜12 ヶ月ごとに[一週間の旅行](/handbook/company/culture/summit/)に最大限活用できるよう支援します。
 1. 誰もが[マージリクエスト](https://docs.gitlab.com/ee/user/project/merge_requests/)を作成し、ディスカッションを促進することで、GitLab の価値観の強化に貢献できます。
@@ -266,7 +266,7 @@ Veamly の創設者兼 CEO である Emna G. が、リモート文化を構築�
 >
 > これに構造を設け、文書化すれば、罪悪感と機会損失の恐れを排除できます。— *Emna G., Veamly 創設者兼 CEO*
 
-リーダーシップがトーンを設定することは重要ですが、会社の文化を定義するものを[文書化](/handbook/product/ux/technical-writing/#documentation)することはさらに重要です。明確に定義された答えがないシナリオが生じるたびに、会社の価値観を参照して答えを決定し、文書化してください。
+リーダーシップがトーンを設定することは重要ですが、会社の文化を定義するものを[文書化](/handbook/marketing/technical-writing/#documentation)することはさらに重要です。明確に定義された答えがないシナリオが生じるたびに、会社の価値観を参照して答えを決定し、文書化してください。
 
 ドキュメントは共有された利益であり、組織のすべてのメンバーが受け入れるべきものです。文化に関するニュアンスを文書化することは非効率に感じるかもしれませんが、これに関する良い習慣を作ることで、将来において会社の草創期と同じくらい強い文化が確保されます。
 

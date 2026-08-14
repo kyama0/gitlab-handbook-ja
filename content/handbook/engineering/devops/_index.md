@@ -1,11 +1,11 @@
 ---
 title: DevOpsエンジニアリング
 upstream_path: /handbook/engineering/devops/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T23:58:47+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:47:00+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-13T15:10:33+03:00"
+lastmod: "2026-08-14T14:39:01+02:00"
 ---
 
 ## ビジョン
@@ -214,8 +214,8 @@ GitLabアプリケーションは、PostgreSQLデータベース、Redis、Sidek
 | Email - Outbound | |  | |
 | Elasticsearch  | 特定のチームでの集中型 | @changzhengliu<br />Global Search | |
 | GitLab K8S Agent  | 特定のチームでの集中型 | @nicholasklick<br />Configure |  |
-| GitLab Pages | 特定のチームでの集中型 | @vshushlin<br />[Knowledge](/handbook/engineering/devops/plan/knowledge/) |  |
-| GitLab Rails  | 分散化 |  | 各コントローラーのDRIは、クラスで指定されたフィーチャーカテゴリーによって決定されます。[app/controllers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/controllers)および[ee/app/controllers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee/app/controllers) |
+| GitLab Pages | 特定のチームでの集中型 | @armin.pasalic<br />[Planner Intelligence](/handbook/engineering/devops/plan/planner-intelligence/) |  |
+| GitLab Rails  | 分散化 |  | 各コントローラーの DRI は、クラスで指定された機能カテゴリーによって決定されます。[app/controllers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/controllers)および[ee/app/controllers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee/app/controllers) |
 | GitLab Shell | 特定のチームでの集中型 | @andrevr<br />[Create:Source Code](/handbook/engineering/devops/create/source-code/backend/) | [参照](/handbook/product/categories/#source-code-group-1) |
 | HAproxy  | 特定のチームでの集中型 |  [Infrastructure](/handbook/engineering/infrastructure-platforms/production-engineering/networking-and-incident-management/) |  |
 | Jaeger  | 特定のチームでの集中型 | @dawsmith<br />Infrastructure:Observability | Observabilityチームが[最初の実装/デプロイ](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/210)を行いました。 |
@@ -229,12 +229,12 @@ GitLabアプリケーションは、PostgreSQLデータベース、Redis、Sidek
 | Patroni<br />Geoセカンダリスタンバイクラスター | 特定のチームでの集中型 | @luciezhao<br />[Geo](/handbook/engineering/infrastructure-platforms/tenant-scale/geo/) |  |
 | PgBouncer  | 特定のチームでの集中型 | @plu8<br />[Distribution](/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/) |  |
 | PostgreSQL<br />フレームワークとツーリング | 特定のチームでの集中型 | @alexives<br />[Database](/handbook/engineering/data-engineering/database-excellence/database-frameworks/) | PostgreSQLの開発部分に固有（基本的なアーキテクチャ、テストユーティリティ、その他の生産性ツーリングなど） |
-| PostgreSQL<br />GitLab製品機能 | 分散化 |   | フィーチャー固有のスキーマ変更および/またはパフォーマンスチューニングなどの例 |
+| PostgreSQL<br />GitLab 製品機能 | 分散化 |   | 機能固有のスキーマ変更および/またはパフォーマンスチューニングなどの例 |
 | Prometheus  | 分散化 |    | 各グループは独自のメトリクスを維持します。  |
 | Puma  | 特定のチームでの集中型 | @pjphillips |  |
-| Redis  | 分散化 |   | DRIはSidekiqと類似しており、クラスで指定されたフィーチャーカテゴリーによって決定されます。[app/workers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/workers)および[ee/app/workers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee/app/workers) |
-| Sentry  | 分散化 |   | DRIはGitLab Railsと類似しており、クラスで指定されたフィーチャーカテゴリーによって決定されます。[app/controllers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/controllers)および[ee/app/controllers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee/app/controllers) |
-| Sidekiq  | 分散化 |   | 各ワーカーのDRIは、クラスで指定されたフィーチャーカテゴリーによって決定されます。[app/workers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/workers)および[ee/app/workers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee/app/workers) |
+| Redis  | 分散化 |   | DRI は Sidekiq と類似しており、クラスで指定された機能カテゴリーによって決定されます。[app/workers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/workers)および[ee/app/workers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee/app/workers) |
+| Sentry  | 分散化 |   | DRI は GitLab Rails と類似しており、クラスで指定された機能カテゴリーによって決定されます。[app/controllers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/controllers)および[ee/app/controllers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee/app/controllers) |
+| Sidekiq  | 分散化 |   | 各ワーカーの DRI は、クラスで指定された機能カテゴリーによって決定されます。[app/workers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/app/workers)および[ee/app/workers](https://gitlab.com/gitlab-org/gitlab/-/tree/master/ee/app/workers) |
 | Workhorse  | 特定のチームでの集中型 | @andrevr<br />[Create:Source Code](/handbook/engineering/devops/create/source-code/backend/) |  |
 
 ## 顧客のサポート
@@ -246,7 +246,7 @@ DevOpsがサポートと協働する際、顧客が製品をどのように使�
 - [Zendeskへのアクセス](/handbook/support/internal-support/#requesting-a-zendesk-light-agent-account)を取得し、顧客からの質問とコミュニケーションを表示できるようにします。
 - 常に「コピー＆ペースト」されて顧客に送信できる方法で回答を書きます。
 - 応答でドキュメントを参照し、必要に応じてGitLabドキュメントを更新します。
-- 透明性の価値を繰り返し述べ、顧客からの参加を招待するために、既存のIssueとEpicを参照します。
+- 透明性の価値を繰り返し述べ、顧客からの参加を招待するために、既存の Issue とエピックを参照します。
 - サポートと開発のコラボレーションプロセスまたはワークフローが不明な場合は、ハンドブックページ [GitLab開発チームから助けを求めるためにgitlab.comを使用する方法](/handbook/support/workflows/how-to-get-help#how-to-formally-request-help-from-the-gitlab-development-team) を参照してください
 
 ### 顧客アカウントエスカレーション調整
@@ -257,17 +257,17 @@ DevOpsがサポートと協働する際、顧客が製品をどのように使�
 - 顧客は、変更の利益をいつ見ることができるかを知りたいと思うでしょう。彼らはGitLabの期日とマイルストーンの追跡と予測のプラクティスに精通していないかもしれません。また、ワークフローと関連するラベル、コードレビュータイムラインの予測可能性、GitLab.comへのリリースとセルフホスト顧客向けのリリースの異なるタイムライン、フィーチャーフラグの使用に精通していない可能性があります。
 
 ```markdown
-* 顧客はGitLabが行うレベルでの非同期コミュニケーションに依存していないことがよくあります。私たちのプラクティスについて顧客を教育し、誰にとっても機能する非同期および同期コミュニケーション方法とケイデンスを組み合わせて見つけるように適応します。
-* 顧客にエピック、Issue、関心のあるマージリクエストでコラボレーションすることを推奨します。彼らは機密のものへのアクセスがない場合があり、および/またはこの公共のフォーラムでコラボレーションすることに快適でないか能力がない場合があることを念頭に置いてください。
-* エピック、Issue、マージリクエストを介したコラボレーションのバックアップとして、Googleドキュメントを使用して顧客とコラボレーションすることを検討します。
-* 顧客を共有Slackチャンネル経由でslackに追加することで、コラボレーションのために共有Slackチャンネルを利用することを検討します。"one Slack channel access requests"を使用して。[例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/16192)
-* ミーティングで、顧客に録画したい理由を伝え、それで問題ないか尋ねます。顧客とのミーティングの録画に関する法的要件に対処するために、録画のスケジュールに[Chorus](/handbook/sales/field-operations/sales-operations/go-to-market/chorus/)を使用することを検討してください。
-* ミーティングで、ミーティングの前、最中、後にメモを取る理由を顧客に伝えます。これは彼らがこの方法でコラボレーションするのが自然ではないかもしれないからです。
-* 顧客によって追跡されているすべてのIssueに適切な優先度ラベルが適用されていることを確認します。
-* 定期的なミーティングのアジェンダで、顧客によって追跡されている項目を優先順位順にトップで追跡し、ステータス、次のステップ、顧客DRI、GitLab DRIをそれぞれについてレビューします。ミーティングで定期的に議論します。
-GitLabチームメンバーに、定期的なミーティングの前にDRIである項目のステータスを更新するようSlackで思い出させます。
-* 出席しなかった人がメモと録画がレビュー可能であることを知るように、顧客エスカレーションのためのSlackチャンネルにミーティングノートと録画へのリンクを投稿します。
-* ミーティング内の誰かに（彼らが出席しているかどうかにかかわらず）アクションアイテムがある場合は、IssueまたはMRで（またはSlackで）彼らをタグ付けして、彼らが見ることができるようにします。
+* Customers often don't rely on asynchronous communication at the level that GitLab does. Educate the customer on our practices and adapt to find a combined asynchronous and synchronous communication method and cadence that works for everyone.
+* Encourage customers to collaborate with us in epics, issues, and merge requests of interest. Keep in mind that they may not have access to ones that are confidential and/or may not be comfortable or able to collaborate with us in this public forum.
+* Consider utilizing Google documents to collaborate with the customer as a backup for collaboration via epics, issues, and merge requests.
+* Consider utilizing a shared Slack channel to collaborate, adding the customers to our slack via "one Slack channel access requests".  [Example](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/16192)
+* In meetings, tell customers why we like to record them and ask if they are OK with doing so. Consider using [Chorus](/handbook/sales/field-operations/sales-operations/go-to-market/chorus/) for scheduling the recordings to address legal requirements for recording meetings with customers.
+* In meetings, tell customers why we take notes before, during, and after the meeting, as it may not be natural for them to collaborate in this way.
+* Make sure the appropriate priority label is applied to all issues being tracked by the customer.
+* In the agenda for recurring meetings, track the items tracked by the customer in priority order at the top and review the status, next steps, customer DRI, and GitLab DRI for each.  Discuss in the meeting periodically.
+Remind GitLab team members in Slack to update the status of items they are the DRI for before recurring meetings.
+* Post a link to the meeting notes and recording in a Slack channel for the customer escalation, so those who did not attend know that the notes and recording are available for review.
+* When there is an action item for someone in a meeting (whether they are present or not), tag them in an issue or MR (or in Slack) so they will see it.
 ```
 
 ### 広範囲に及ぶ作業の影響の軽減 {#reducing-the-impact-of-far-reaching-work}
@@ -303,7 +303,7 @@ GitLabチームメンバーに、定期的なミーティングの前にDRIで�
 | ---------------- | --------------------------- |-----------------------------------------------------------------------------------------------------------------------|
 | データベースマイグレーション、ツーリング、複雑なクエリ、メトリクス | アプリケーション全体への影響<br/><br/>データベースは重要なコンポーネントであり、重大な劣化または停止はS1インシデントにつながります。 | [ドキュメント](https://docs.gitlab.com/ee/development/database_review.html#general-process)                          |
 | Sidekiqの変更（ワーカーの追加または削除、キュー名の変更、引数の変更、必要な作業のプロファイルの変更）  | 複数のサービスへの影響<br/><br/>Sidekiqシャードは、メモリバウンドなどの作業のプロファイルに基づいてワーカーのグループを実行します。ワーカーが不適切に失敗した場合、そのシャードのすべての作業を停止する可能性があります。 | [ドキュメント](https://docs.gitlab.com/ee/development/sidekiq/compatibility_across_updates.html) |
-| Redis変更    | 複数のサービスへの影響<br/><br/>Redisインスタンスは、フィーチャーカテゴリーでグループ化されていないデータセットを担当しています。1つのデータセットが誤って構成されている場合、そのRedisインスタンスは失敗する可能性があります。  |                                                                                                                       |
+| Redis 変更    | 複数のサービスへの影響<br/><br/>Redis インスタンスは、機能カテゴリーでグループ化されていないデータセットを担当しています。1 つのデータセットが誤って構成されている場合、その Redis インスタンスは失敗する可能性があります。  |                                                                                                                       |
 | Package製品領域            | トラフィックシェアの高い割合 |                                                                                                                       |
 | Gitaly製品領域             | トラフィックシェアの高い割合 |                                                                                                                       |
 | [Create: Source Code製品領域](/handbook/product/categories/features/#createsource-code-group) | トラフィックシェアの高い割合。Protected Branches、CODEOWNERS、MR Approvals、Git LFS、Workhorse、SSH経由のgit/gitlab-sshdインターフェイスに特別な注意を払う必要があります。不明な場合はEM (@sean_carroll) またはPM (@tlinz) にお問い合わせください。 | |

@@ -2,9 +2,9 @@
 title: 'エージェントワークスペース'
 description: 'Zendesk Agent Workspace に関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/agent-workspace/"
-upstream_sha: "1312dadbdf7381446077faefcfae17ba323692b6"
-lastmod: "2026-07-14T15:22:25-05:00"
-translated_at: "2026-07-19T07:20:00+09:00"
+upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
+lastmod: "2026-08-14T08:28:45-05:00"
+translated_at: "2026-08-15T06:34:22+09:00"
 translator: codex
 stale: false
 ---
@@ -14,6 +14,10 @@ Zendesk Agent Workspace は、エージェントがチケットを受け取り�
 ## チケットタブ
 
 エージェントは複数のチケットを同時に開くことができ、それぞれワークスペース上部のタブからアクセスできます。[会話を管理するためのチケットタブの使用](https://support.zendesk.com/hc/en-us/articles/4408844108826-Using-ticket-tabs-to-manage-conversations)を参照してください。
+
+## チケットの要約 {#ticket-summaries}
+
+Ticket Summaries は、チケットのコメント（有効になっている場合は内部メモを含む）を AI で要約し、更新、折りたたみ／展開、非表示／表示、または新しい言語での再生成が可能なバナーに表示します。[生成 AI を使用してチケットコメントを要約する](https://support.zendesk.com/hc/en-us/articles/8037649972634-Summarizing-ticket-comments-using-generative-AI)を参照してください。
 
 ## チケットメタデータ
 
@@ -73,7 +77,7 @@ GitLab のニーズに固有の情報を取得するために設計された追�
 
 ### テキスト書式設定
 
-エディターは太字、斜体、リスト、見出し、コードブロックを含むリッチテキストの書式設定をサポートします。[チケットコメントに書式を追加する](https://support.zendesk.com/hc/en-us/articles/4408828489370-Adding-formatting-to-ticket-comments#topic_djd_2jx_4y)を参照してください。リッチテキストの書式設定に加えて、Markdown コマンドもサポートしています。[Markdown を使用してテキストを書式設定する](https://support.zendesk.com/hc/en-us/articles/4408846544922)を参照してください。
+エディターは太字、斜体、リスト、見出し、コードブロックを含むリッチテキストの書式設定をサポートします。[チケットコメントに書式を追加する](https://support.zendesk.com/hc/en-us/articles/4408828489370-Adding-comments-to-tickets#topic_djd_2jx_4y)を参照してください。リッチテキストの書式設定に加えて、Markdown コマンドもサポートしています。[Markdown を使用してテキストを書式設定する](https://support.zendesk.com/hc/en-us/articles/4408846544922)を参照してください。
 
 ### 絵文字
 
@@ -86,6 +90,10 @@ GitLab のニーズに固有の情報を取得するために設計された追�
 ### ハイパーリンク
 
 コメント内のテキストは、コメントエディターのツールバーを使用してクリック可能なハイパーリンクとして書式設定できます。
+
+### Enhance Writing
+
+Enhance Writing では、チケットコメントの展開、簡略化、トーンの調整（より親しみやすく、またはよりフォーマルに）、自分の文体に合わせること、カスタムプロンプトの適用ができます。[生成 AI を使用してチケットコメントを改善する](https://support.zendesk.com/hc/en-us/articles/5608712782362-Enhancing-ticket-comments-using-generative-AI)を参照してください。
 
 ### Glean 統合
 

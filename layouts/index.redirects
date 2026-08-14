@@ -353,3 +353,15 @@
 
 # Redirect legacy ProdSecEng requirements page to new ProdSec to Product process - remove 2026-06-25
 /handbook/security/product-security/security-platforms-architecture/product-security-engineering/product-security-requirements/ /handbook/security/product-security/security-platforms-architecture/security-interlock/prodsec-to-product-workflow/ 301
+
+# Technical Writing moved from UX to Marketing - remove 2027-08-05
+/handbook/product/ux/technical-writing/ /handbook/marketing/technical-writing/ 301
+/handbook/product/ux/technical-writing/* /handbook/marketing/technical-writing/:splat 301
+
+# Plan stage reorg renames: Product Planning to Portfolio Planning, Knowledge to Planner Intelligence, Project Management to Work Items - remove 2027-08-12
+/handbook/engineering/devops/plan/product-planning/ /handbook/engineering/devops/plan/portfolio-planning/ 301
+/handbook/engineering/devops/plan/product-planning/project-example-boards/ /handbook/engineering/devops/plan/planning-views/project-example-boards/ 301
+/handbook/engineering/devops/plan/product-planning/* /handbook/engineering/devops/plan/portfolio-planning/:splat 301
+/handbook/engineering/devops/plan/knowledge/ /handbook/engineering/devops/plan/planner-intelligence/ 301
+/handbook/engineering/devops/plan/project-management/ /handbook/engineering/devops/plan/work-items/ 301
+/handbook/product/groups/project-management/ /handbook/product/groups/work-items/ 301

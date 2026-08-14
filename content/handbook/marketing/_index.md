@@ -3,17 +3,17 @@ title: "マーケティング"
 description: "GitLab マーケティング ハンドブック: ブランド & プロダクトマーケティング、統合マーケティング、セールス開発、マーケティング戦略 & プラットフォーム、エンタープライズデータ、デベロッパーリレーションズ、コーポレートコミュニケーション"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-translated_at: "2026-07-10T07:06:29+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:31:06+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-07T07:44:54+00:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
 <i class="fas fa-bullhorn fa-fw color-orange font-awesome"></i> GitLab マーケティング ハンドブックへようこそ
 {.h2}
 
-GitLab マーケティングチームは一つのチームとして機能し、以下の部門で構成されています: [統合マーケティング](/handbook/marketing/#integrated-marketing)、[ブランド & プロダクトマーケティング](/handbook/marketing/#brand-and-product-marketing)、[マーケティングオペレーション & アナリティクス](/handbook/marketing/#marketing-operations-and-analytics)、[セールス開発](/handbook/marketing/#sales-development)、[エンタープライズデータ](/handbook/marketing/#enterprise-data)、[コーポレートコミュニケーション](/handbook/marketing/#corporate-communications)、[デベロッパーリレーションズ](/handbook/marketing/#developer-relations)。このページでは、チームが共有する理念とプロセスを文書化しており、各部門のハンドブックにはより詳細な情報が記載されています。
+GitLab マーケティングチームは一つのチームとして機能し、以下の部門で構成されています: [統合マーケティング](/handbook/marketing/#integrated-marketing)、[ブランド & プロダクトマーケティング](/handbook/marketing/#brand-and-product-marketing)、[マーケティングオペレーション & アナリティクス](/handbook/marketing/#marketing-operations-and-analytics)、[セールス開発](/handbook/marketing/#sales-development)、[エンタープライズデータ](/handbook/marketing/#enterprise-data)、[コーポレートコミュニケーション](/handbook/marketing/#corporate-communications)、[デベロッパーリレーションズ](/handbook/marketing/#developer-relations)、[テクニカルライティング](/handbook/marketing/#technical-writing)。このページでは、チームが共有する理念とプロセスを文書化しており、各部門のハンドブックにはより詳細な情報が記載されています。
 
 ## マーケティングの目的
 
@@ -126,7 +126,7 @@ FY25 マーケティング戦略とプランは[内部ハンドブック](https:
 すべてのチームは自らソーシャル投稿をリクエストする責任があります。特定のカテゴリやキャンペーンの DRI でなく、ソーシャル投稿をリクエストしたい場合は、最初のステップとして以下に記載されているチームの窓口に連絡してください。これらの役割のチームメンバーは、リクエストを断る権利を持っています。承認された場合は、その窓口と連携して[新しいソーシャルリクエスト Issue を作成](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/)し、ソーシャルチームがリクエストを処理して投稿をスケジュールできるようにします。チームの窓口またはマーケティングやソーシャルチームのメンバーは、ブランドボイスの一貫性を確保するためにコピーを調整する場合があります。
 
 - イベント: Jr. コンテンツエディター
-- リリース・テクニカル投稿・製品アップデート: [テクニカルライティング](/handbook/product/ux/technical-writing/)
+- リリース・テクニカル投稿・製品アップデート: [テクニカルライティング](/handbook/marketing/technical-writing/)
 - Twitter/X でのユーザーの質問・コメント: [ソーシャルマーケティング](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/) または [デベロッパーリレーションズ](/handbook/marketing/developer-relations/) チーム
 - リードジェンキャンペーン: [コンテンツ](/handbook/marketing/brand-and-product-marketing/content/) チーム
 - UX デザイン: UX リード
@@ -354,6 +354,18 @@ GitLab のコーポレートコミュニケーションチームの使命は、�
 - [ソーシャルマーケティング](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/)
 - [スピーキングリソース](/handbook/marketing/corporate-communications/speaking-resources/)
 - [インシデントコミュニケーションプラン](/handbook/marketing/corporate-communications/incident-communications-plan/)
+
+### テクニカルライティング {#technical-writing}
+
+Technical Writing チームは、デベロッパー、プロダクトマネージャー、コミュニティと協働して製品ドキュメントを開発します。このチームは [docs.gitlab.com](https://docs.gitlab.com) サイトと、そのコンテンツ、プロセス、ツールを管理します。
+
+<a href="/handbook/marketing/technical-writing/" class="btn btn-primary">ハンドブック</a>
+
+ハンドブックリンク
+{.h4}
+
+- [Technical Writer の採用](/handbook/marketing/technical-writing/hiring/)
+- [Docs Engineering: 機能の優先順位付けとプロセス](/handbook/marketing/technical-writing/feature-prioritization/)
 
 ## <i class="fas fa-calendar-check fa-fw color-orange font-awesome"></i> マーケティングカレンダー
 

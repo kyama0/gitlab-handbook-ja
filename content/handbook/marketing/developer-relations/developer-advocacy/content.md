@@ -2,11 +2,11 @@
 title: "Developer Advocates のコンテンツライブラリとワークフロー"
 description: "Developer Advocacy チームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/content/
-upstream_sha: 8194127ea2690cda322cc5bdda07644aa275d6cc
-translated_at: "2026-08-12T06:14:18+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:31:06+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-11T08:42:28+00:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
 Developer Advocacy チームは、キャンペーン、フィールドイネーブルメント、製品ローンチサポート、ユースケース採用、顧客向けデモ、一般的な学習・オンボーディングに使用できるコンテンツを作成しています。チームが参加するすべてのコンテンツとアクティビティは、[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/)に従って Issue で追跡されます。
@@ -609,7 +609,7 @@ Developer Advocacy チームは、Developer Relations の [UTM 戦略](/handbook
 
 1. 役立つチュートリアルブログ記事やデモを [GitLab ドキュメント](https://docs.gitlab.com/)に追加します
    - コントリビュートのドキュメントに従い、必要に応じて[関連トピック](https://docs.gitlab.com/ee/development/documentation/topic_types/#related-topics)の見出しを作成します
-   - コンテンツの短縮 URL を含む MR を作成し、[担当テクニカルライター](/handbook/product/ux/technical-writing/#assignments)にレビューを依頼します
+   - コンテンツの短縮 URL を含む MR を作成し、[担当テクニカルライター](/handbook/marketing/technical-writing/#assignments)にレビューを依頼します
    - 例: [Add tutorial blog posts to workspaces docs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/127500)
 2. コミュニティプラットフォームで共有します:
    - [GitLab Forum](https://forum.gitlab.com/)

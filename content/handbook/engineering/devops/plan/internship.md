@@ -1,11 +1,11 @@
 ---
 title: "Plan フロントエンドエンジニアインターンシップ"
 upstream_path: /handbook/engineering/devops/plan/internship/
-upstream_sha: bb4e4d0fc1a355c00a1d82b1528ff729c83af189
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:47:00+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-08-14T14:39:01+02:00"
 ---
 
 ## 概要
@@ -14,7 +14,7 @@ Plan フロントエンドチームのインターンシップは、2019年末�
 
 ## 最初の30日間
 
-インターンシッププログラムの目標は、こちらの Epic にまとめられています: [https://gitlab.com/groups/gitlab-com/-/epics/614](https://gitlab.com/groups/gitlab-com/-/epics/614)
+インターンシッププログラムの目標は、こちらのエピックにまとめられています: [https://gitlab.com/groups/gitlab-com/-/epics/614](https://gitlab.com/groups/gitlab-com/-/epics/614)
 
 ## 役割
 
@@ -104,7 +104,6 @@ Plan フロントエンドチームのインターンシップは、2019年末�
 
 - オンボーディング Issue の最初の1週間の項目を完了する
 - ハンドブックの Plan ページをレビューする
-  - [フロントエンド Plan チーム](/handbook/engineering/devops/plan/project-management/)
   - [Plan ステージページ](https://about.gitlab.com/stages-devops-lifecycle/plan/)
 - インターンシップの日々の活動に従う
 - 長期プロジェクトをレビューする

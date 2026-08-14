@@ -6,18 +6,18 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/scaling/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T06:00:00Z"
+upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
+translated_at: "2026-08-15T06:54:56+09:00"
 translator: claude
 stale: false
-lastmod: "2025-12-01T16:21:31-05:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
 このページでは、組織のスケーリングがオールリモートでこそうまく機能する仕組みを詳しく説明します。
 
 ## オールリモートはスケールで機能しますか？
 
-![GitLab journey illustration](/images/all-remote/gitlab-journey-and-navigation.jpg)
+![GitLab のジャーニーのイラスト](/images/all-remote/gitlab-journey-and-navigation.jpg)
 {style="max-width: 50%;"}
 
 オールリモートの比較的新しさから、多くの人はすぐに 100%リモートの会社がスケールでうまく機能するかどうかを疑問に思います。これは主に概念への不慣れさによるものであり、別の質問を見落としています。*コロケーション*はスケールでうまく機能しますか？
@@ -36,13 +36,13 @@ GitLab はオールリモートが仕事の未来であり、スケールでう�
 >
 > 1 つの部屋のチームは非常にうまく機能します。1 つのフロアのチームはおそらくうまくいきます。複数のフロアにまたがるチームでは問題が出始めます。複数のオフィスにまたがるチームでは、さらに難しくなります。複数の都市にまたがるチームでは、さらに難しくなります。複数の大陸にまたがるチームでは、非常に難しくなります。そのモデルは崩壊します。
 >
-> 非常に大きな会社であれば、コロケーションのメリットはほとんどありません。一方、リモートのメリット — [プロセスを書き留めること](/handbook/product/ux/technical-writing/#documentation)、会社全体の[非公式なコミュニケーション](informal-communication/)を刺激すること — これらは規模が大きくなるほど顕著になります。
+> 非常に大きな会社であれば、コロケーションのメリットはほとんどありません。一方、リモートのメリット — [プロセスを書き留めること](/handbook/marketing/technical-writing/#documentation)、会社全体の[非公式なコミュニケーション](informal-communication/)を刺激すること — これらは規模が大きくなるほど顕著になります。
 >
 > [オールリモートが]スケールするだけでなく、はるかによくスケールします。- *GitLab 共同創業者 Sid Sijbrandij*
 
 ## スケールでのコロケーションの課題
 
-![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
+![GitLab バリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 include
 
 オールリモートのスケールでの実行可能性を考える際にしばしば失われるのは、複数のオフィスを持つコロケーション企業全体で効率を生み出すことの固有の難しさです。

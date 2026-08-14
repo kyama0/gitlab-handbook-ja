@@ -2,9 +2,9 @@
 title: "Product Design のペア"
 description: "Product Designer のペアローテーションスケジュール"
 upstream_path: /handbook/upstream-studios/product-design/design-pair-rotation/
-upstream_sha: 50ee631c98005b47a0caea9d46e4ba5cfc62891a
-lastmod: "2026-07-22T13:37:37-03:00"
-translated_at: "2026-07-23T06:07:21+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+lastmod: "2026-08-14T05:25:40-07:00"
+translated_at: "2026-08-15T06:11:46+09:00"
 translator: codex
 stale: false
 ---
@@ -32,29 +32,28 @@ stale: false
 
 ### スケジュール
 
-これは [FY27 Q1 and Q2](/handbook/finance/#fiscal-year)（2026-02-01 から 2026-07-31 まで）のローテーションスケジュールです。
+これは [FY27 Q3 と Q4](/handbook/finance/#fiscal-year)（2026-08-01 から 2027-01-31 まで）のローテーションスケジュールです。
 
 <!-- TIP: Use AI to come up with the next round of design pairs. Follow [this document](https://docs.google.com/document/d/1ifdeBOIfMwkx500o3vClrEgo7Mn3-Tw1lirZXKQb5yY/edit?tab=t.0#heading=h.rpmj7pp77vvd) for easy copy and paste AI prompts.
 
 -->
 
-| デザイナー           | デザインペア              |
-|--------------------|--------------------------|
-| Sascha Eggenberger | Michael Le               |
-| Diego Adams        | Katie Macoy              |
-| Veethika Mishra    | Alex Fracazo & Bonnie Tsang |
-| Julia Miocene      | Timothy Noah             |
-| Mark Unthank       | Dan Mizzi-Harris         |
-| Sayo Bittencourt   | Pedro Moreira da Silva   |
-| Jason Hung         | Camellia Yang            |
-| Andrew Cummins     | Erhan D'Silva            |
-| Nick Leonard       | Austin Regnery           |
-| Chad Lavimoniere   | Torian Parker            |
-| Emily Bauman       | Concho Saez              |
-| Ilonah Pelaez      | Jesse Hoek               |
-| Jeremy Elder       | Michael Moyers           |
-| Michael Fangman    | Alyssa Trinh             |
-| Sam Reiss          | Jaclyn Touchstone        |
-| Jesse Young        | Lina Fowler              |
-| Andrew Bacon       | Libor Vanc               |
-| Becka Lippert      | Nick Brandt              |
+| デザイナー             | デザインペア       |
+|------------------------|--------------------|
+| Maggie Yue             | Becka Lippert      |
+| Adam Ferch             | Mike Finch         |
+| Anuja Shukla           | Marie Chea         |
+| Josh Keckley           | Michael Fangman    |
+| Nick Leonard           | Jeremy Elder       |
+| Emily Bauman           | Nick Brandt        |
+| Chad Lavimoniere       | Andrew Cummins     |
+| Michael Moyers         | Austin Regnery     |
+| Yi-Ann Chen            | Jesse Young        |
+| Pedro Moreira da Silva | Alyssa Trinh       |
+| Diego Adams            | Jason Hung         |
+| Concho Saez            | Sayo Bittencourt   |
+| Veethika Mishra        | Sascha Eggenberger |
+| Bonnie Tsang           | Katie Macoy        |
+| Marcel van Remmerden   | Celeste North      |
+| Paul Wright            | Tim Noah           |
+| Ilonah Pelaez          | Sunjung Park       |

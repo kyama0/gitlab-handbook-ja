@@ -22,7 +22,7 @@ stale: false
 
 Reclaim to gCal は、Reclaim の Webhook からペイロードを受け取り、Google カレンダーの予定に変換する仕組みです。
 
-### 利用を開始する方法
+### 利用を開始する方法 {#how-to-opt-into-it}
 
 デフォルトでは、他の人がイベントを利用しても、あなたの[スケジュールリンク](https://app.reclaim.ai/scheduling-links)からプロジェクトへペイロードは送信されません。プロジェクトへのペイロード送信を有効にする（これにより、チームの Google カレンダーに追加されます）には、スケジュールリンクを編集して Webhook を追加する必要があります。イベントを編集する際、Webhook は設定（Booking Page Customization）の一番下にあります。使用する Webhook はチームによって異なります。
 

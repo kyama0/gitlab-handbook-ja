@@ -1,11 +1,11 @@
 ---
 title: "Gitaly Team"
 upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:38:37+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-20T09:32:02-07:00"
+lastmod: "2026-08-14T08:47:32-04:00"
 ---
 
 ## Gitaly とは?
@@ -102,7 +102,7 @@ Gitaly のオンコールがページされるのは、次の人々によるも�
 - プロダクトレベルの修正や改善の提供。作業はスケジュールされ、結果は通常どおりリリースされます（[EM と PM の指示](#working-with-product) の下）
 - 何かが不明確な場合のドキュメントの改善
 
-_Engineering Manager_ (`@jcaigitlab`) と _Product Manager_ (`@mjwood`) も、ロードマップ、製品機能、タイムラインの明確化、または正しい優先順位付けの確保について支援が必要な場合に、喜んで顧客と関わります。
+_Engineering Manager_ (`@luciezhao`) と _Product Manager_ (`@sranasinghe`) も、ロードマップ、製品機能、タイムラインの明確化、または正しい優先順位付けの確保について支援が必要な場合に、喜んで顧客と関わります。
 
 ただし、次のことが必要な場合、私たちは適していません:
 

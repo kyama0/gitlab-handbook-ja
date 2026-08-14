@@ -2,11 +2,11 @@
 title: "エンジニアリングのエラーバジェット"
 description: "エラーバジェットは、1四半期内にサービスがどの程度信頼できなくてもよいかを決定する、明確で客観的な指標を提供します。"
 upstream_path: /handbook/engineering/error-budgets/
-upstream_sha: a3ed2ed7423727a5f31c3f20f77f9547a3b7b152
-translated_at: "2026-08-08T08:52:01+09:00"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:41:40+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-07T14:38:55+02:00"
+lastmod: "2026-08-11T17:10:40+01:00"
 ---
 
 [エンタープライズグレードのプラットフォームとしてGitLab SaaSを強化する](https://about.gitlab.com/direction/core_platform/dotcom/)という[3年戦略](https://about.gitlab.com/direction/#3-year-strategy)の一環として、GitLab.comには特定の[可用性](/handbook/engineering/infrastructure/performance-indicators/#gitlabcom-availability)と[パフォーマンス](/handbook/engineering/infrastructure/performance-indicators/#gitlabcom-performance)の目標があります。
@@ -233,7 +233,7 @@ ApdexとErrorレートは、[ハンドブックページ](/handbook/engineering/
 
 |**ステージグループ**   | **月次支出（28日）** | **ビジネス上の理由** | **レビュー日**|
 |------------------|---------------------|---------------------|---------------------|
-| Runtime: Organizations | 99.79% | 長期スケーラビリティ作業（Protocells/Organizations）に集中することを許可し、また次のAPIバージョンで導入を必要とする変更を調整する。[このMR](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/108039)で説明 | 2026-04-30（または合計トラフィックシェアが5%を超えた場合） |
+| Runtime: Organizations | 99.79% | 長期スケーラビリティ作業（Protocells/Organizations）に集中することを許可し、また次のAPIバージョンで導入を必要とする変更を調整する。[このMR](https://gitlab.com/gitlab-com/www-gitlab-com/-/merge_requests/108039)で説明 | 2026-10-31（または合計トラフィックシェアが5%を超えた場合） |
 | Verify: Pipeline Execution | 99.9% | 顧客所有の runner のキューイングが、グループのエラーバジェット消費の 50 〜 60% を占めています。この一時的な例外は、[runbooks#221](https://gitlab.com/gitlab-com/runbooks/-/issues/221)のメトリクス除外が実装されるまで有効です。 | 2026-09-30 |
 
 **例外**

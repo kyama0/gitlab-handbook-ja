@@ -3,11 +3,11 @@ title: ドキュメントの改善
 description: "サポートチームから GitLab ドキュメントの改善を提出するためのワークフロー"
 category: Handling tickets
 upstream_path: /handbook/support/workflows/improving-documentation/
-upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
+translated_at: "2026-08-15T06:11:46+09:00"
 translator: claude
 stale: false
-lastmod: "2025-09-03T10:16:03+00:00"
+lastmod: "2026-08-14T11:43:03-05:00"
 ---
 
 ## ドキュメントの改善
@@ -52,7 +52,7 @@ lastmod: "2025-09-03T10:16:03+00:00"
   - *注: ボットは、指定されない場合、ステージ、セクション、[Support Team Contributions](/handbook/support/#support-fixes)、および docs-only ラベルを追加します*
 - [コードレビューガイドライン](https://docs.gitlab.com/development/code_review/) に従い、関連するテクニカルライター（TW）をレビュアーとして設定します。
   - ドキュメントテンプレートにはこれを見つける方法の指示がありますが、基本的にはドキュメントページのソース版の上部にあるメタデータ情報を参照します。
-  - 編集したページに適切なテクニカルライターを見つけるには、[Technical Writing Assignments](/handbook/product/ux/technical-writing/#assignments) を確認します。
+  - 編集したページに適切なテクニカルライターを見つけるには、[Technical Writing Assignments](/handbook/marketing/technical-writing/#assignments) を確認します。
   - [Support dotfiles](https://gitlab.com/gitlab-com/support/toolbox/dotfiles) を使用している場合、`find-technical-writer` コマンドを使用して、特定のグループのテクニカルライターを素早く確認できます。
 - MR を提出する前に、以下のオプションがチェックされていることを確認します:
   - `Delete source branch when merge request is accepted.`
