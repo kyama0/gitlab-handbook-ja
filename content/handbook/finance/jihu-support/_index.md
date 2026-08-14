@@ -78,7 +78,7 @@ JiHu プロジェクトのほとんどは JiHuLab.com に移動されました�
 
 ### セキュリティリリースプロセス
 
-JiHu は、すべてのパッチおよびセキュリティリリースを含め、毎月 JiHu Edition をビルドおよびリリースする責任があります。セキュリティリリースについて、GitLab Inc. は引き続き既存の[セキュリティリリースプロセス](https://gitlab.com/gitlab-org/release/docs/blob/master/general/security/process.md)に従って[セキュリティリリース](https://about.gitlab.com/releases/categories/releases/)を公開します。JiHu がタイムリーにセキュリティリリースをビルドできるように、GitLab Inc. はセキュリティリリースが進行中の場合に JiHu に通知し、彼らのチームが待機できるようにします。GitLab Inc. はセキュリティリリースの内容や脆弱性の内容を JiHu に通知することはありません。
+JiHu は、すべてのパッチおよびセキュリティリリースを含め、毎月 JiHu Edition をビルドおよびリリースする責任があります。セキュリティリリースについて、GitLab Inc. は引き続き既存の[セキュリティリリースプロセス](https://gitlab.com/gitlab-org/release/docs/blob/master/general/security/process.md)に従って[セキュリティリリース](https://about.gitlab.com/releases/categories/releases/)を公開します。JiHu がタイムリーにセキュリティリリースをビルドできるように、GitLab Inc. はセキュリティリリースが進行中の場合に JiHu に通知し、JiHu のチームが待機できるようにします。GitLab Inc. はセキュリティリリースの内容や脆弱性の内容を JiHu に通知することはありません。
 
 今後のセキュリティリリースを JiHu に通知するには、次の場所にコメントを投稿してください： https://gitlab.com/gitlab-jh/gitlab-jh-enablement/-/issues/112
 
@@ -128,7 +128,7 @@ JiHu は GitLab の専門知識、特に GitLab を SaaS 製品として運用�
 
 ### プロダクトマネージャーの責任
 
-JiHu のコントリビューションは、コミュニティコントリビューションと類似しています。違いは、ボリュームと頻度が高いことです。JiHu が GitLab コードベースに習熟するにつれて、彼らは GitLab にどこでどのようにコントリビュートできるかを理解し学ぼうとしています。プロダクトマネージャーは、公開されている方向性を共有し、JiHu チームと連携して JiHu が自給自足で効率的になれるよう支援できます。
+JiHu のコントリビューションは、コミュニティコントリビューションと類似しています。違いは、ボリュームと頻度が高いことです。JiHu が GitLab コードベースに習熟するにつれて、JiHu は GitLab にどこでどのようにコントリビュートできるかを理解し学ぼうとしています。プロダクトマネージャーは、公開されている方向性を共有し、JiHu チームと連携して JiHu が自給自足で効率的になれるよう支援できます。
 
 時々、プロダクトマネージャーは JiHu からの具体的な提案に対するフィードバックを提供したり、直接対応したりするように求められます。GitLab の PM は GitLab のエンジニアと JiHu チームのコラボレーションを促進する支援を行うべきです。これは、プロダクトの方向性に不一致がある場合は、JiHu が GitLab がマージするつもりのないものに時間を費やすことのないように、早期に指摘することを意味します。
 

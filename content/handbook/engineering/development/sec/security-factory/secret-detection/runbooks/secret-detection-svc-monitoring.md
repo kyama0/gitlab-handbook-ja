@@ -37,7 +37,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 SLO 違反が発生した場合、alertmanager は `#feed_alerts-general` と `#g_secure-secret-detection` Slack チャンネルにアラートを送信します。
 
-**注意**：alertmanager はこのサービスの SLO 違反が発生した場合、オンコール SRE チームメンバーに**ページを送信しません**。サービスは Runway のデフォルト SLI を[継承](https://gitlab.com/gitlab-com/runbooks/-/blob/0df5f62959e813330c572465b20879b07b886f46/metrics-catalog/services/secret-detection.jsonnet#L6-10)しており、それがアラートの深刻度を `S4` に[設定](https://gitlab.com/gitlab-com/runbooks/-/blob/master/libsonnet/service-archetypes/runway-archetype.libsonnet#L18)します。`S1` または `S2` としてマークされたアラートのみがオンコールにページが送られます。つまり、Secure::Secret Detection チームが Slack アラートに目を向けることでサービス中断インシデントへの対応に責任を持ちます。
+**注意**：alertmanager はこのサービスの SLO 違反が発生した場合、オンコール SRE チームメンバーに**呼び出し通知を送りません**。サービスは Runway のデフォルト SLI を[継承](https://gitlab.com/gitlab-com/runbooks/-/blob/0df5f62959e813330c572465b20879b07b886f46/metrics-catalog/services/secret-detection.jsonnet#L6-10)しており、それがアラートの深刻度を `S4` に[設定](https://gitlab.com/gitlab-com/runbooks/-/blob/master/libsonnet/service-archetypes/runway-archetype.libsonnet#L18)します。`S1` または `S2` としてマークされたアラートの場合にのみ、オンコールに呼び出し通知が送られます。つまり、Secure::Secret Detection チームが Slack アラートに目を向けることでサービス中断インシデントへの対応に責任を持ちます。
 
 alertmanager が Slack アラートのトリガーに失敗した場合、[`alerts ダッシュボード`](https://alerts.gitlab.net/#/alerts?silenced=false&inhibited=false&active=true&filter=%7Btype%3D%22secret-detection%22%7D)でサービスに対して_アクティブに_発動しているアラートを常に確認できます。
 

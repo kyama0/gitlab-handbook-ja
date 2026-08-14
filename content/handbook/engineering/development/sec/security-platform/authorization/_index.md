@@ -73,7 +73,7 @@ Authorization グループ用のドキュメントは[こちら](https://drive.g
 
 ## グループ共有カレンダー
 
-[Authorization グループ共有カレンダー](https://calendar.google.com/calendar/embed?src=c_97507fb9234d07c2561c1b1ccc98cab1462bf0364214f2cc4917eee8a86b7cdd%40group.calendar.google.com&ctz=America%2FDetroit)は、PTO イベントがチームの全員に見えるようにするために使用されます。AuthZ エンジニアに関連するイベント (OOO など) を見るには、このカレンダーを購読してください。
+[Authorization グループ共有カレンダー](https://calendar.google.com/calendar/embed?src=c_97507fb9234d07c2561c1b1ccc98cab1462bf0364214f2cc4917eee8a86b7cdd%40group.calendar.google.com&ctz=America%2FDetroit)は、PTO イベントがチームの全員に見えるようにするために使用されます。AuthZ エンジニアに関連するイベント（OOO など）を見るには、このカレンダーを購読してください。
 
 ### Time Off by Deel のエントリを共有カレンダーに同期する
 
@@ -128,7 +128,7 @@ Authorization グループ用のドキュメントは[こちら](https://drive.g
   - 期待される機能性は明確に表現されているか？
   - 依存関係はあるか？ 他のチームや他の Issue に？
 - Issue が完全でない場合：
-  - `@NellyVahab`（PM）または `@jpr0c`（EM）にタグを付けて、項目が完全にグルーミングできないことを知らせる。彼らは Issue を完成させ、何が必要かを概説するのに役立つことができる。
+  - `@NellyVahab`（PM）または `@jpr0c`（EM）にタグを付けて、項目が完全にグルーミングできないことを知らせる。PM または EM は Issue を完成させ、何が必要かを概説するのを支援できる。
 - Issue をタスクに分解する。
   - Issue がフロントエンドとバックエンドの両方の作業を必要とする場合、異なるタスクを作成して作業を分割できる。これにより、異なるエンジニアが Issue で協業することができる。
   - 新しいまたは複雑な機能の場合、最初のイテレーションで提供できるものと、将来のイテレーションで提供できるものを指定する。

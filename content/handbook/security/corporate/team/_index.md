@@ -8,7 +8,7 @@ stale: false
 lastmod: "2026-08-13T20:57:11+02:00"
 ---
 
-コーポレートセキュリティ部門は、チームメンバーと一時的なサービスプロバイダー (契約社員、ベンダーなど) 向けのテックサポート[ヘルプデスクサービス](/handbook/eta/corporate-it/end-user-services)と、私たちが管理する社内システムの構成管理[エンジニアリング](/handbook/security/corporate/engineering/)を提供します。
+コーポレートセキュリティ部門は、チームメンバーと一時的なサービスプロバイダー（契約社員、ベンダーなど）向けのテックサポート[ヘルプデスクサービス](/handbook/eta/corporate-it/end-user-services)と、私たちが管理する社内システムの構成管理[エンジニアリング](/handbook/security/corporate/engineering/)を提供します。
 
 ## チームディレクトリ
 

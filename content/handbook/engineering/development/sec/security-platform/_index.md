@@ -44,7 +44,7 @@ Security Platform エンジニアリングステージは、GitLab の他のす�
 
 ## Slack
 
-各グループのチャンネルは、それぞれのグループページに記載されています。複数のチャンネル名変更がまだ進行中であり、[Sec reorg issue 2](https://gitlab.com/gitlab-org/software-supply-chain-security/reorg-act2-2026-06/-/issues/2)で追跡しています。
+各グループのチャンネルは、それぞれのグループページに記載されています。複数のチャンネル名変更がまだ進行中であり、[Sec 再編 Issue 2](https://gitlab.com/gitlab-org/software-supply-chain-security/reorg-act2-2026-06/-/issues/2)で追跡しています。
 
 ## オンコール
 

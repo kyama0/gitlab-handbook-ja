@@ -460,7 +460,7 @@ _パネル情報_
     * Gitaly ／ `/internal/allowed` 前：
         * `PreReceiveHook`.
     * Gitaly ／ `/internal/allowed` 中：
-        * `ListAllCommits()` RPC (または `ListCommits()` RPC)
+        * `ListAllCommits()` RPC（または `ListCommits()` RPC）
         * `FindChangedPaths()` RPC
         * `DiffBlobs()` RPC
 

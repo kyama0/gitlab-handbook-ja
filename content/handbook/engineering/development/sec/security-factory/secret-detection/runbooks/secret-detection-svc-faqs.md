@@ -88,9 +88,9 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
     サービスは [Runway の SLI デフォルト](https://gitlab.com/gitlab-com/runbooks/-/blob/master/libsonnet/service-archetypes/runway-archetype.libsonnet)を借用しているため、デフォルトには[深刻度を S4 に設定すること](https://gitlab.com/gitlab-com/runbooks/-/blob/master/libsonnet/service-archetypes/runway-archetype.libsonnet#L18)も含まれています。必要に応じて異なる深刻度に変更できます（Readiness Review の承認が必要）。
 
-20. **SLO 違反が発生した場合、SRE チームにページが送られますか？**
+20. **SLO 違反が発生した場合、SRE チームに呼び出し通知が送られますか？**
 
-    いいえ。深刻度 S1 または S2 のアラートのみが SRE チームにページが送られます。`group::secret detection` チームがインシデントの監視に責任を持ちます。
+    いいえ。深刻度 S1 または S2 のアラートの場合にのみ、SRE チームに呼び出し通知が送られます。`group::secret detection` チームがインシデントの監視に責任を持ちます。
 
 #### 追加参考資料
 

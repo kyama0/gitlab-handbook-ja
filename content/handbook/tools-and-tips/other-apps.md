@@ -46,7 +46,7 @@ GitLab が管理するデバイス上のブラウザー拡張機能は、許可�
 
 #### One Tab
 
-[One Tab (無料)](https://www.one-tab.com/)は、タブをソートおよびエクスポート可能なリストに変換します。
+[One Tab（無料）](https://www.one-tab.com/)は、タブをソートおよびエクスポート可能なリストに変換します。
 
 #### SessionBox
 
@@ -74,8 +74,8 @@ GitLab が管理するデバイス上のブラウザー拡張機能は、許可�
 
 ### Bear
 
-[Bear (無料)](https://bear.app/)は、ノートや長文執筆向けのクリーンな執筆ツールです。
-[Ulysses ($5/月)](https://ulysses.app/)も素晴らしい選択肢です。
+[Bear（無料）](https://bear.app/)は、ノートや長文執筆向けのクリーンな執筆ツールです。
+[Ulysses（$5/月）](https://ulysses.app/)も素晴らしい選択肢です。
 
 ### LanguageTool
 
@@ -119,7 +119,7 @@ https://handbook.gitlab.com/handbook/#stq={query}&stp=1
 
 ### Brain.fm
 
-[Brain.fm (無料トライアル)](https://www.brain.fm/)は、集中、リラックス、瞑想、リチャージ、睡眠（飛行機での移動に最適）を助けるよう特別に設計された音楽を提供します。
+[Brain.fm（無料トライアル）](https://www.brain.fm/)は、集中、リラックス、瞑想、リチャージ、睡眠（飛行機での移動に最適）を助けるよう特別に設計された音楽を提供します。
 ただの音楽ではありません。
 サービスは結果を得るために科学的に検証された脳波操作を使用しています。
 驚くほど効果があり、本当に機能します。
@@ -183,7 +183,7 @@ GitLab チームメンバーとミーティングをスケジュールする場�
 
 ### Quitter
 
-[Quitter (無料)](https://marco.org/apps)は、一定の非アクティブ期間後にアプリをオフにします。
+[Quitter（無料）](https://marco.org/apps)は、一定の非アクティブ期間後にアプリをオフにします。
 新着メッセージを常にチェックしたい衝動を減らすため、しばらくしたら Slack を非表示にする用途を検討してください。Quitter は Mac でのみ利用可能です。
 
 ### Raycast
@@ -198,7 +198,7 @@ GitLab ドキュメント、ハンドブック、Pajamas デザインシステ�
 
 ### TripMode
 
-[TripMode ($7.99)](https://tripmode.ch/)は、どのアプリがインターネットを使用できるかを制御できます。
+[TripMode（$7.99）](https://tripmode.ch/)は、どのアプリがインターネットを使用できるかを制御できます。
 これはセルラー／従量制接続で作業している場合に特に便利です。TripMode は Mac でのみ利用可能です。
 
 ### Stream Deck
@@ -286,7 +286,7 @@ GitLab は内部および外部のコミュニケーションのための主要�
 
 ### Loom
 
-[Loom (無料)](https://www.loom.com/)は、動画ウォークスルー用の便利な Chrome プラグインツールです。
+[Loom（無料）](https://www.loom.com/)は、動画ウォークスルー用の便利な Chrome プラグインツールです。
 デモ録画や内部／外部ドキュメント用の素晴らしいツールです。注： Loom 動画はデフォルトで公開されているため、非公開のままにすべきデータを公開していないことを確認してください。GitLab には Loom ワークスペースがあり、ライセンスについては [tech stack ページ](/handbook/business-technology/tech-stack/)の指示に従ってください。
 
 ## 言語と翻訳

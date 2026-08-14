@@ -33,7 +33,7 @@ GATE のレイヤー、すなわち認証フロー、認可ポリシー、およ
 
 ## Slack
 
-グループの Slack チャンネル名の変更は進行中であり、[Sec reorg issue 2](https://gitlab.com/gitlab-org/software-supply-chain-security/reorg-act2-2026-06/-/issues/2)で追跡しています。
+グループの Slack チャンネル名の変更は進行中であり、[Sec 再編 Issue 2](https://gitlab.com/gitlab-org/software-supply-chain-security/reorg-act2-2026-06/-/issues/2)で追跡しています。
 
 ## 沿革
 

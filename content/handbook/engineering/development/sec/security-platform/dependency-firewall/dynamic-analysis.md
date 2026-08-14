@@ -323,7 +323,7 @@ RFH Issue は以下の状況でクローズできます：
 
 ### 脆弱性管理
 
-1. 私たちが管理するプロジェクトで報告された脆弱性をトリアージし、優先度に応じた解決を支援します。([セキュリティ脆弱性トリアージプロセス](#security-vulnerabilities-triaging-process)を参照)
+1. 私たちが管理するプロジェクトで報告された脆弱性をトリアージし、優先度に応じた解決を支援します。（[セキュリティ脆弱性トリアージプロセス](#security-vulnerabilities-triaging-process)を参照）
 1. `SLA::Breached` Issue を確認します。
 1. セキュリティ[自動化の失敗](/handbook/engineering/development/sec/secure/#automation-failures)を確認します。
 1. 依存関係の新しいセキュリティリリースを確認し、使用を確保します：
