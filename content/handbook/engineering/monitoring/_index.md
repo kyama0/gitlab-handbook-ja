@@ -159,7 +159,7 @@ Grafana を使った新しいグラフまたはダッシュボードのセット
 
 ステージグループ向けダッシュボードは非常に初期段階です。すべてのコントリビューションを歓迎します。質問や提案がありましたら、[Scalability チームの Issue トラッカー](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/new) に Issue を作成してください。
 
-### モニタリングから役立つダッシュボードのセレクション
+### モニタリングから役立つダッシュボードのセレクション {#selection-of-useful-dashboards-from-the-monitoring}
 
 #### ブラックボックスモニタリング
 

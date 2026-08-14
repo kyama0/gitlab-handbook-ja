@@ -57,7 +57,7 @@ GitLab は [Open Development](https://about.gitlab.com/blog/2015/12/16/improving
 [グループラベル](https://docs.gitlab.com/ee/development/labels/index.html#group-labels)を割り当てると、`gitlab-bot` が正しいステージとセクションのラベルを自動的に割り当てられるようになります。
 [Features by Group](/handbook/product/categories/features) の一覧は、正しいグループを見つけるのに役立ちます。
 
-## 優先度
+## 優先度 {#priority}
 
 優先度ラベルは、Issue の重要性を示し、スケジューリングを導くために使用されます。優先度ラベルは、市場の状況、プロダクトの方向性、IACV への影響、影響を受けるユーザー数、チームのキャパシティに基づいて設定されることが期待されます。優先順位付けの [DRI](/handbook/people-group/directly-responsible-individuals/) は[ワークタイプに基づいて](/handbook/product/product-processes/cross-functional-prioritization/#prioritization-and-dri-by-component)決まります。
 

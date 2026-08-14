@@ -288,7 +288,7 @@ Build トラックは、[MVC](/handbook/product/product-principles/#the-minimal-
 
 **成果:** 私たちの [Product KPI](https://internal.gitlab.com/handbook/company/performance-indicators/product/) および/または [Engineering KPI](/handbook/company/kpis/#engineering-kpis) の 1 つ以上を改善する、パフォーマンスの高い MVC を提供します。そうできない場合は、私たちの Efficiency バリュー（低レベルの恥を含む）を尊重し、それを放棄し、正しいソリューションを特定するために Validation サイクルを再開します。
 
-### Build フェーズ 1: Plan
+### Build フェーズ 1: Plan {#build-phase-1-plan}
 
 #### 必須ステータス
 

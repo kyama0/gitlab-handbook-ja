@@ -19,7 +19,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 GitLab のすべてのレビュアーは、私たちの[レビュアー価値観](/handbook/engineering/workflow/reviewer-values/)を目指して努力する必要があります。
 
-## レビュアー
+## レビュアー {#reviewer}
 
 GitLab のすべてのエンジニアは、同僚やコミュニティ貢献者のマージリクエストでコードレビューを実行でき、また奨励されています。マージリクエストをレビューしたい場合は、誰かがあなたにマージリクエストをアサインするまで待つこともできますが、オープンなマージリクエストのリストをブラウズして、フィードバックや質問を残すことも大歓迎です。
 
@@ -70,7 +70,7 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 
 コードをレビューする人を知っていれば、コミュニケーションがより容易になります。機会（たとえばコーヒーチャット）を捉えて、レビュアーを知り、氷を砕き、将来のコミュニケーションを促進してください。
 
-### プロジェクトメンテナになる方法
+### プロジェクトメンテナになる方法 {#how-to-become-a-project-maintainer}
 
 **これは特にバックエンド、フロントエンド、データベースのメンテナに適用されます。他の領域（ドキュメントなど）には、以下に文書化された別のプロセスがあるかもしれません。**
 
@@ -310,7 +310,7 @@ Senior+ エンジニアにとって、マネージャーまたはチームメン
 - 所属する GitLab メンテナグループへのアクセスをリクエストする: [frontend](https://gitlab.com/gitlab-org/maintainers/frontend)、[backend](https://gitlab.com/gitlab-org/maintainers/rails-backend)、または [database](https://gitlab.com/gitlab-org/maintainers/database)。
 - [Single Person Access Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) Issue テンプレートを使用して、メンテナとして活動するプロジェクトでメンテナ権限をリクエストします。Issue を作成したら、別のメンテナにこれらの権限を付与してもらうよう依頼します。
 
-### レビュアーメンターシッププログラム
+### レビュアーメンターシッププログラム {#reviewer-mentorship-program}
 
 新しいメンテナのトレーニングとオンボーディングは重要なプロセスです。エンジニアリングチームが成長し、MR の総数が急速に拡大するにつれて、メンテナごとの MR レビュー数はすぐに維持困難になります。
 

@@ -102,7 +102,7 @@ Security Department | GitLab
 https://handbook.gitlab.com/handbook/security/
 ```
 
-## 新しいセキュリティ Issue の作成
+## 新しいセキュリティ Issue の作成 {#creating-new-security-issues}
 
 新しいセキュリティ脆弱性を報告するには、[Vulnerability Disclosure Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Vulnerability%20Disclosure)を使うか、私たちの [HackerOne バグバウンティプログラム](https://hackerone.com/gitlab)を使ってください。なお、賞金支給の対象となる脆弱性については、HackerOne プラットフォーム経由でのみ支給可能であることに注意してください。
 

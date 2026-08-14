@@ -67,7 +67,7 @@ Application Security Testing ステージの開発ピープルリーダーに連
 
 {{< team-by-departments departments="Secure:Vulnerability Research BE Team" >}}
 
-## ステーブルカウンターパート
+## ステーブルカウンターパート {#stable-counterparts}
 
 他の機能チームから、以下のメンバーが私たちのステーブルカウンターパートとなっています。
 
@@ -151,7 +151,7 @@ Dependency Scanning は主に Gemnasium エンジンに依拠しています。
 
 詳細は [QA Process](/handbook/engineering/development/sec/security-factory/qa_process/) を参照してください。
 
-### 脆弱性管理プロセス
+### 脆弱性管理プロセス {#vulnerability-management-process}
 
 #### 自動化 {#automation}
 
@@ -163,7 +163,7 @@ Dependency Scanning は主に Gemnasium エンジンに依拠しています。
 
 VulnMapper は脆弱性そのものはクローズしません。これは `gitlab-org` レベルで設定された [Auto resolve vulnerabilites](https://gitlab.com/gitlab-org/gitlab-org-security-policy-project/-/blob/main/.gitlab/security-policies/policy.yml?ref_type=heads#L211) セキュリティポリシーが行います。
 
-#### 自動化が失敗したとき
+#### 自動化が失敗したとき {#automation-failures}
 
 私たちのセキュリティ自動化ツールは[失敗](https://gitlab.com/gitlab-org/security-products/release/-/pipelines?page=1&scope=all&status=failed)する可能性があります。
 そのような場合に、すぐに解決できないときはエラーをトラッキングする Issue を作成してください。次に、認知度を上げるために `#s_application-security-testing` で失敗を周知し、以下に示す手動セキュリティトリアージプロセスに従ってください。

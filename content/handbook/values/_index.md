@@ -392,7 +392,7 @@ GitLab において効率性とは、材料、時間、エネルギーを無駄�
 
 [この HBR の研究](https://hbr.org/2016/09/bad-writing-is-destroying-your-companys-productivity) で述べられているように、一対多の書面でのコミュニケーションは短く保ちましょう。「大多数が、自分の読むものが長すぎる、構成が悪い、不明確、専門用語だらけ、不正確であるために、しばしば効果的でないと答えている。」
 
-##### Manager of one
+##### Manager of one {#managers-of-one}
 
 私たちは、各チームメンバーが、目標を達成するために毎日のチェックインを必要としない [manager of one](/handbook/leadership/#managers-of-one) であることを望みます。チームメンバーには、プロジェクトやイニシアチブをオーナーとして担う自由が与えられ、それを成功裏に最後までやり遂げると信頼されています。
 

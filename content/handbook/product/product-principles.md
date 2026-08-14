@@ -38,7 +38,7 @@ stale: false
 
 DevOps ライフサイクル全体のためのシングルアプリケーションとして、GitLab はアイデアを素早く本番環境へ持っていけるようにすることを目指します。私たちはそれを実現しつつ、おもちゃのようなアプリのデモや単純で些細な例で自分たちのケイパビリティを誇示することは避けます。なぜなら、[プロトタイプを作るのは簡単だが、本番のラインを作るのは難しい](https://www.businessinsider.com/elon-musk-says-building-factory-100-times-harder-than-making-car-2019-3)ことを理解しているからです。
 
-### Minimal Valuable Change (MVC)
+### Minimal Valuable Change (MVC) {#the-minimal-valuable-change-mvc}
 
 Minimal Valuable Change（MVC）は、ユーザー、顧客、そしてより広いコミュニティにとって、測定可能な最小の改善を届けるための GitLab のアプローチです。
 

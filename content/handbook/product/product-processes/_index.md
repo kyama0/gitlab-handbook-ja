@@ -26,7 +26,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 セクション、ステージ、グループ、カテゴリの方向性をドキュメント化することは、私たちがどこに向かっているか、そしてなぜそうしているかをすべてのステークホルダーに伝える上で重要です。私たちは方向性を方向性ページにドキュメント化しています。関連するプロセスについては [計画と方向性](#planning-and-direction) を参照してください。
 
-### マイルストーンとリリースの理解
+### マイルストーンとリリースの理解 {#understanding-milestones-and-releases}
 
 - [リリース日の解釈](/handbook/engineering/releases/monthly-releases/) では、プロダクトチームがマイルストーンとラベルを使って、特定の時間枠内での機能提供の可能性を示す方法を明確にしています。
 - [リリース定義](/handbook/engineering/releases/) はエンジニアリングチームによって維持され、各マイルストーンの終わりは [リリース日](/handbook/engineering/releases/) に行われます。
@@ -273,7 +273,7 @@ GitLab でステージをまたいで作業する詳細については、[この
 
 詳細は [Cross-Functional Prioritization ページ](/handbook/product/product-processes/cross-functional-prioritization/) を参照してください。
 
-#### 優先順位付けフレームワーク
+#### 優先順位付けフレームワーク {#prioritization-framework}
 
 <!-- include omitted: includes/product/master-prioritization-list.md -->
 
@@ -777,7 +777,7 @@ Field チームに影響するかもしれない製品アナウンスやロー�
 
 オールリモートの会社として、私たちは [Remote Design Sprints (RDS)](/handbook/product/ux/design-sprint/) を実施します。手元の問題に適切なアプローチかどうかを判断するには、[RDS の実施に関するガイドライン](/handbook/product/ux/design-sprint/#when-to-opt-for-a-remote-design-sprint) をチェックしてください。
 
-#### Spike
+#### Spike {#spikes}
 
 非常に大規模または複雑な問題に直面し、望ましい結果に向けて最も効率的にイテレートする方法が明確でない場合、エンジニアと協力して実験的な [spike solution](https://www.jamesshore.com/v2/books/aoad1/spike_solutions) を構築することを検討してください。このプロセスは「技術評価」と呼ばれることもあります。spike を実施する際の目標は、チームがどのように進めるべきかを決定するために必要な情報レベルを提供するために、可能な限り短い時間で可能な限り少ないコードを書くことです。spike の最後に、コードは通常破棄されます。元の目標は学ぶことであり、本番対応の解決策を構築することではなかったためです。このプロセスは、主要なリファクタリングと [architecture blueprint](/handbook/engineering/architecture/workflow/) の作成に特に有用です。spike が他のチームからの承認を必要とする変更を含む場合、関連するステークホルダーとドメインの専門家と早期にエンゲージしてアプローチを検証することを検討してください。
 
