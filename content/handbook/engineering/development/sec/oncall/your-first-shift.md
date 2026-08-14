@@ -24,7 +24,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 以下をざっと読んでおいてください：
 
 - [オンコールプロセスとポリシー](/handbook/engineering/infrastructure-platforms/incident-management/on-call/)
-- [Tier 2 On Call Level Up Channel](https://levelup.edcast.com/pathways/ECL-123259b5-e469-485e-a0fe-4be27ee118b3)
+- [Tier 2 オンコール Level Up Channel](https://levelup.edcast.com/pathways/ECL-123259b5-e469-485e-a0fe-4be27ee118b3)
 - [Incident.io - オンコール対応者としての入門](https://help.incident.io/articles/3472064049-get-started-as-an-on-call-responder)
 
 完璧に理解する必要はありません。一晩でエキスパートになるのではなく、慣れ親しむことが目的です。

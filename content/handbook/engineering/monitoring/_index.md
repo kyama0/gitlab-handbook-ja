@@ -126,7 +126,7 @@ GitLab.com サービス可用性定義の計算方法論は、[モニタリン�
 * GitLab.com の Issue。参考までに、これは [最初の gitlab-ce Issue](https://gitlab.com/gitlab-org/gitlab-ce/issues/1) です。
 * [GitLab.com](https://gitlab.com/) は「シンプルで分かりやすい」もので、[GitLab パブリックチェック](https://stats.pingdom.com/81vpf8jyr1h9/4932705/history) と呼ばれます。
 
-#### モニタリングインフラストラクチャ
+#### モニタリングインフラストラクチャ {#monitoring-infrastructure}
 
 メトリクスの取り込みとクエリには Grafana [Mimir](https://grafana.com/oss/mimir/) を使用しています。Mimir は Prometheus を拡張したオープンソースの分散時系列データベースです。実装の詳細は [Runbook ドキュメント](https://gitlab.com/gitlab-com/runbooks/-/tree/master/docs/mimir?ref_type=heads#architecture) で読むことができます。
 
@@ -172,7 +172,7 @@ Grafana を使った新しいグラフまたはダッシュボードのセット
 * [Business Stats](https://dashboards.gitlab.net/dashboard/db/business-stats): プッシュ、新規リポジトリ、CI ビルドの数を表示します。
 * [Daily overview](https://dashboards.gitlab.net/dashboard/db/daily-overview): 呼び出し数とパフォーマンスメトリクスを持つエンドポイントを表示します。何が遅いかを一般的に理解するのに便利。
 
-## ログ
+## ログ {#logs}
 
 ネットワーク、システム、アプリケーションのログは、[ELK スタック](https://www.elastic.co/platform) を使用して処理、保存、検索されます。私たちは [GCP 上のマネージド Elasticsearch クラスター](https://www.elastic.co/partners/google-cloud) を使用しており、API、Kibana、および elastic.co の Web UI を通じてのみインタラクトできます。システムのパフォーマンスとメトリクスのモニタリングには、Elastic の x-pack モニタリングメトリクスを使用しています。これらは専用のモニタリングクラスターに送信されます。長期的には、好ましいインターフェースとして Prometheus と Grafana に切り替える予定です。Elastic がマネージドするため、彼らが VM を運用し、私たちはそれらにアクセスできません。ただし、エラーやインシデントを調査するために、生のログは [Kibana](https://log.gprd.gitlab.net) 経由で利用できます。
 ステージングのログは別の [Kibana](https://nonprod-log.gitlab.net/) インスタンス経由で利用できます。

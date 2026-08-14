@@ -33,7 +33,7 @@ GitLab のプロダクトミッションは、ユーザーが愛し、価値を�
 
 - GitLab の顧客からバグが報告されます。プロダクトマネージャーがバグをテストし、その存在を確認します（Problem Validation）。チームはソリューションに非常に自信があるため、Design と Solution Validation は不要です。バグは即座に Build に移されます。
 
-## ワークフローの概要
+## ワークフローの概要 {#workflow-summary}
 
 このページを通じて、[DRI](/handbook/people-group/directly-responsible-individuals/) が言及されるとき、参照される人物はフェーズによって異なる場合があり、また複数いる場合もあります。
 DRI が誰であるかについては、[Product Development Roles and Responsibilities ページ](../roles-and-responsibilities/)を参照してください。

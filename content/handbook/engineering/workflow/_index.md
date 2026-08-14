@@ -513,7 +513,7 @@ Issue のスケジュールをリクエストするには、[責任あるプロ�
 何かに取り組めない可能性が十分にあります。
 すべての Issue に値する優先度が与えられるよう、適切なラベル（`customer` など）が適用されていることを確認してください。
 
-## プロダクト開発タイムライン
+## プロダクト開発タイムライン {#product-development-timeline}
 
 [![''](/images/engineering/workflow/gitlab-release-timelines.png)](https://gitlab.com/gitlab-org/gitlab/-/snippets/3670861)
 

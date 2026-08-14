@@ -39,7 +39,7 @@ stale: false
 
 これは柔軟性を持った**デフォルトのガイドライン**です。フィードバックをより早く収集するために Experiment を早期に出荷したり、スケジュールより前倒しで Beta に移行したりすることがあります。正確なフェーズはエピックの複雑さとチームの自信度によって異なります。EM と DRI はエピックプランニング中にフェーズについて合意する必要があります。
 
-GitLab の成熟度ステージの詳細については、[Development Stages and Support](https://docs.gitlab.com/policy/development_stages_support/)を参照してください。
+GitLab の成熟度ステージの詳細については、[開発ステージとサポート](https://docs.gitlab.com/policy/development_stages_support/)を参照してください。
 
 ### エピックのスパイクファーストアプローチ {#spike-first-approach-for-epics}
 
