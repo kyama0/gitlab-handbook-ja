@@ -35,7 +35,7 @@ lastmod: "2026-08-13T13:58:02-04:00"
 
 [Shiyuan Chen](https://gitlab.com/shreychen)は GitLab Inc. に対する JiHu エンジニアリングの窓口です。
 
-### プロジェクト
+### プロジェクト {#projects}
 
 JiHu チームのプロジェクトは <https://jihulab.com/gitlab-cn/> に配置されています。`gitlab-org` のツーリングおよびコンプライアンスチェック用のミラープロジェクトは <https://gitlab.com/gitlab-org/gitlab-jh-mirrors/> で利用可能です。
 

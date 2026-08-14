@@ -56,7 +56,7 @@ API Security、DAST、ファジングは Ultimate 機能です。これらの機
 | [GitLab Protocol Fuzzer（CE）](https://gitlab.com/gitlab-org/security-products/protocol-fuzzer-ce) | GitLab のプロトコルファザー（コミュニティエディション）、以前は Peach Protocol Fuzzer。 |
 | [GitLab Protocol Fuzzer（EE）](https://gitlab.com/gitlab-org/security-products/protocol-fuzzer-ee) | プライベート - GitLab のプロトコルファザー（エンタープライズエディション）、以前は Peach Protocol Fuzzer、ライセンスコンポーネントを含む。 |
 | [API Fuzzing E2E Tests](https://gitlab.com/gitlab-org/security-products/tests/api-fuzzing-e2e) | プライベート - API エンドツーエンドテスト。 |
-| [GitLab Cov Fuzz](https://gitlab.com/gitlab-org/security-products/analyzers/gitlab-cov-fuzz-src) | プライベート - GitLab のカバレッジファジングオーケストレーション。ファジングエンジン/結果を GitLab CI と GitLab セキュリティダッシュボードと統合します。 |
+| [GitLab Cov Fuzz](https://gitlab.com/gitlab-org/security-products/analyzers/gitlab-cov-fuzz-src) | プライベート - GitLab のカバレッジファジングオーケストレーション。ファジングエンジン／結果を GitLab CI と GitLab セキュリティダッシュボードと統合します。 |
 | [HAR レコーダー](https://gitlab.com/gitlab-org/security-products/har-recorder) | Web トラフィックに基づいて HAR ファイルを記録するユーティリティ。 |
 
 #### オープンソースファザー
@@ -66,7 +66,7 @@ API Security、DAST、ファジングは Ultimate 機能です。これらの機
 | [JSfuzz](https://gitlab.com/gitlab-org/security-products/demos/coverage-fuzzing) | JavaScript ファザー。 |
 | [Pythonfuzz](https://gitlab.com/gitlab-org/security-products/demos/coverage-fuzzing) | Python ファザー。 |
 | [Javafuzz](https://gitlab.com/gitlab-org/security-products/demos/coverage-fuzzing) | Java ファザー。 |
-| [Coverage Fuzzing サンプル](https://gitlab.com/gitlab-org/security-products/demos/coverage-fuzzing) | 7 以上の言語/ファザーでのカバレッジファジングサンプル。 |
+| [Coverage Fuzzing サンプル](https://gitlab.com/gitlab-org/security-products/demos/coverage-fuzzing) | 7 以上の言語／ファザーでのカバレッジファジングサンプル。 |
 
 ## 連絡方法
 
@@ -206,12 +206,12 @@ timeline
 リリースマイルストーンが開始される 2 週間前に、[Hallway Monitor Bot](#hallway-monitor-bot)がグループの月次リリース計画 Issue を自動的に作成してカレンダーイベントをスケジュールします。この Issue はマイルストーンのカンバンバックログとして機能し、PM の優先事項を EM およびすべての IC と調整します。Issue は 3 つのセクションに分かれています：
 
 - **リリースする作業** - このマイルストーン中にリリースすることをコミットしているすべての作業
-- **開始/継続する作業** - 新しく持ち込まれる作業または前のマイルストーンから繰り越される既存の作業
+- **開始／継続する作業** - 新しく持ち込まれる作業または前のマイルストーンから繰り越される既存の作業
 - **ブループリントを作成する作業** - 次のマイルストーンの開発作業の前に、このマイルストーンで高レベルの計画と分解が必要な作業
 
-リリースマイルストーンのキックオフ日に、プロダクトと一緒に [Dynamic Analysis グループの方向性の優先事項](https://about.gitlab.com/direction/application_security_testing/dynamic-analysis/#priorities)のリストをレビューし、現在のマイルストーンのすべての優先事項が月次リリース計画 Issue の「リリースする作業」と「開始/継続する作業」のセクションに反映されていることを確認します。PM が次のマイルストーンのために特定した中〜大規模の作業は、次のマイルストーンでピックアップするための「ブループリントを作成する作業」セクションに追加して、高レベルのブループリントと作業の分解を行います。
+リリースマイルストーンのキックオフ日に、プロダクトと一緒に [Dynamic Analysis グループの方向性の優先事項](https://about.gitlab.com/direction/application_security_testing/dynamic-analysis/#priorities)のリストをレビューし、現在のマイルストーンのすべての優先事項が月次リリース計画 Issue の「リリースする作業」と「開始／継続する作業」のセクションに反映されていることを確認します。PM が次のマイルストーンのために特定した中〜大規模の作業は、次のマイルストーンでピックアップするための「ブループリントを作成する作業」セクションに追加して、高レベルのブループリントと作業の分解を行います。
 
-プロダクトはすべての高レベルの優先事項を設定し、上記に加えて、このキックオフミーティングからのもう一つの成果は、各優先事項をグループの Issue/エピックと/または目標とするマイルストーンにマッピングした更新された方向性ページへの MR になる場合があります。このプロセスにより、EM と IC は PM に対して作業の整理方法と将来のロードマップ項目に対応できると考えるマイルストーンについての直接的なフィードバックを与えることができます。
+プロダクトはすべての高レベルの優先事項を設定し、上記に加えて、このキックオフミーティングからのもう一つの成果は、各優先事項をグループの Issue／エピックと／または目標とするマイルストーンにマッピングした更新された方向性ページへの MR になる場合があります。このプロセスにより、EM と IC は PM に対して作業の整理方法と将来のロードマップ項目に対応できると考えるマイルストーンについての直接的なフィードバックを与えることができます。
 
 すべてのプロダクト優先度ベースの Issue は、[Dynamic Analysis グループの全 Issue の包括的なリスト](https://gitlab.com/groups/gitlab-org/-/issues/?sort=created_date&state=opened&label_name%5B%5D=group%3A%3Adynamic%20analysis&label_name%5B%5D=Category%3ADAST&first_page_size=20)とともに存在します。すべてのプロダクト優先度ベースのエピックは、[Dynamic Analysis グループの全エピックの包括的なリスト](https://gitlab.com/groups/gitlab-org/-/epics?state=opened&page=1&sort=start_date_desc&label_name%5B%5D=group::dynamic+analysis&label_name%5B%5D=Category:DAST)とともに存在します。
 
@@ -253,13 +253,13 @@ timeline
 
 #### 火曜日の総合ハドル
 
-毎週火曜日に、同期的な総合グループミーティングのカレンダーイベントと添付されたアジェンダが存在します。このミーティングは**プロダクト重視**で、チームのすべてのエンジニア、エンジニアリングマネージャー、プロダクトマネージャーが参加します。このミーティングの目的は、プロダクトの取り組みとタイムラインについて議論し、プロダクトとエンジニアリングチームの間の直接的な双方向フィードバック機構として機能することです。現在の[マイルストーン計画 Issue](#milestone-release-planning)をトランジェントバックログとしてレビューし、これらの優先事項に集中していることを確認します。グループは新しいリアクションコーディネーターにローテーションし、チームをブロックしている重大/プロダクトの障害を議論し、プロダクトマネージャーとの同期チームミーティングで価値ある一般的な議論を開催します。
+毎週火曜日に、同期的な総合グループミーティングのカレンダーイベントと添付されたアジェンダが存在します。このミーティングは**プロダクト重視**で、チームのすべてのエンジニア、エンジニアリングマネージャー、プロダクトマネージャーが参加します。このミーティングの目的は、プロダクトの取り組みとタイムラインについて議論し、プロダクトとエンジニアリングチームの間の直接的な双方向フィードバック機構として機能することです。現在の[マイルストーン計画 Issue](#milestone-release-planning)をトランジェントバックログとしてレビューし、これらの優先事項に集中していることを確認します。グループは新しいリアクションコーディネーターにローテーションし、チームをブロックしている重大／プロダクトの障害を議論し、プロダクトマネージャーとの同期チームミーティングで価値ある一般的な議論を開催します。
 
 ## リアクションローテーション
 
 開発ロードマップに加えて、エンジニアリングチームは脆弱性管理、サポート、メンテナンス、コミュニティコントリビューションに関連するタスクを実行する必要があります。
 
-[ローテーションスケジュール](https://gitlab.com/groups/gitlab-org/secure/-/epics/7)は、GitLab [プロダクトマイルストーン](/handbook/product/product-processes/milestones/)の開始/終了日を使用した開発サイクルに従います。スケジュール作成時、エンジニアリングマネージャーはエンジニアが連続してローテーションを行う回数を最小限に抑えるよう努めるべきです。
+[ローテーションスケジュール](https://gitlab.com/groups/gitlab-org/secure/-/epics/7)は、GitLab [プロダクトマイルストーン](/handbook/product/product-processes/milestones/)の開始／終了日を使用した開発サイクルに従います。スケジュール作成時、エンジニアリングマネージャーはエンジニアが連続してローテーションを行う回数を最小限に抑えるよう努めるべきです。
 
 ### Request For Help（RFH）解決ガイド
 
@@ -367,7 +367,7 @@ Issue トラッカーで以下のラベルフィルターを使用して `SLA::B
 
 [私たちのポリシー](#security-policy)に一致し、関連プロジェクトで報告された項目に集中するためにフィルターを使用した脆弱性レポートを使用します。
 
-1. [Analyzers Vulnerability Report](https://gitlab.com/groups/gitlab-org/security-products/analyzers/-/security/vulnerabilities/?state=CONFIRMED,DETECTED&activity=ALL&severity=CRITICAL,HIGH&projectId=19617580,21351796,40229908,57788406,5964710)
+1. [アナライザー脆弱性レポート](https://gitlab.com/groups/gitlab-org/security-products/analyzers/-/security/vulnerabilities/?state=CONFIRMED,DETECTED&activity=ALL&severity=CRITICAL,HIGH&projectId=19617580,21351796,40229908,57788406,5964710)
 
 各項目について調査し、[却下](#dismissing-a-vulnerability)または[確認](#confirming-a-vulnerability)します。
 > 各ステータスが何を意味するかわからない場合は、[脆弱性ステータス定義](https://docs.gitlab.com/ee/user/application_security/vulnerabilities/#vulnerability-status-values)を参照してください。
@@ -388,7 +388,7 @@ Issue トラッカーで以下のラベルフィルターを使用して `SLA::B
 
 1. 依存関係（ソフトウェアライブラリ、システムライブラリ、ベースイメージなど）をアップグレード*または*削除できるか評価します。
 1. 脆弱性ステータスを「確認済み」に設定します。
-1. 依存関係のアップグレード/削除を含む新しいバージョンのアナライザーをリリースし、[脆弱性の解決](#resolving-a-vulnerability)プロセスに従います。
+1. 依存関係のアップグレード／削除を含む新しいバージョンのアナライザーをリリースし、[脆弱性の解決](#resolving-a-vulnerability)プロセスに従います。
 1. 依存関係を更新または削除できない場合は、[SLA 例外](/handbook/security/product-security/vulnerability-management/sla-exceptions/#non-fedramp-risk-acceptance--sla-exception-procedure)を要求し、[状況](/handbook/security/product-security/vulnerability-management/sla-exceptions/#when-is-an-sla-exception-request-appropriate)に基づいて SLA を延長できます。
 
 #### 脆弱性の解決 {#resolving-a-vulnerability}
@@ -407,9 +407,9 @@ Issue トラッカーで以下のラベルフィルターを使用して `SLA::B
 
 ### 開発前の日々の左右確認
 
-毎日、各チームメンバーは `workflow::ready for development` カラムから新しい作業を開始する前に、[Dynamic Analysis 配信ボード](https://gitlab.com/groups/gitlab-org/-/boards/5719921?label_name%5B%5D=group%3A%3Adynamic%20analysis)で左右を確認し、両方向から各 1 つの Issue を前進させる（合計 2 つ）ことで支援する必要があります。チームはチームメンバーの間でコードレビューとステージング/本番検証アクティビティを均等に分散させるために GitLab の[プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)で明記されたワークフロー状態とアクティビティに従います。左を確認するとは、`workflow::refinement` または `workflow::ready for development` カラムのどちらかからより多くの項目があるカラムから Issue を取り上げて完了させることです。右を確認するとは、`workflow::in review` または `workflow::verification` カラムのどちらかからより多くの項目があるカラムから Issue を取り上げて完了させることです。両方の Issue が新しいカラムに移動した後、チームメンバーは `workflow::ready for development` から準備できた作業を開始できます。
+毎日、各チームメンバーは `workflow::ready for development` カラムから新しい作業を開始する前に、[Dynamic Analysis 配信ボード](https://gitlab.com/groups/gitlab-org/-/boards/5719921?label_name%5B%5D=group%3A%3Adynamic%20analysis)で左右を確認し、両方向から各 1 つの Issue を前進させる（合計 2 つ）ことで支援する必要があります。チームはチームメンバーの間でコードレビューとステージング／本番検証アクティビティを均等に分散させるために GitLab の[プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)で明記されたワークフロー状態とアクティビティに従います。左を確認するとは、`workflow::refinement` または `workflow::ready for development` カラムのどちらかからより多くの項目があるカラムから Issue を取り上げて完了させることです。右を確認するとは、`workflow::in review` または `workflow::verification` カラムのどちらかからより多くの項目があるカラムから Issue を取り上げて完了させることです。両方の Issue が新しいカラムに移動した後、チームメンバーは `workflow::ready for development` から準備できた作業を開始できます。
 
-`開発前の左右確認` 戦略は、作業項目がボード上で詰まらないようにし、すべてのチームメンバーが Issue を計画、分解、リファインする機会を得て、コードレビューとステージング/本番検証アクティビティがチーム全体に均等に分散されることを確保します。左に作業がない場合、現在の[マイルストーンリリース計画](#milestone-release-planning) Issue で定義されたマイルストーンバックログから新しい作業を持ち込むことができます。新しい作業は、セールスとサポートのリクエストフォーヘルプ Issue、高優先度のバグ、セキュリティ関連の Issue からいつでも最初の 2 つのカラムに追加することもできます。
+`開発前の左右確認` 戦略は、作業項目がボード上で詰まらないようにし、すべてのチームメンバーが Issue を計画、分解、リファインする機会を得て、コードレビューとステージング／本番検証アクティビティがチーム全体に均等に分散されることを確保します。左に作業がない場合、現在の[マイルストーンリリース計画](#milestone-release-planning) Issue で定義されたマイルストーンバックログから新しい作業を持ち込むことができます。新しい作業は、セールスとサポートのリクエストフォーヘルプ Issue、高優先度のバグ、セキュリティ関連の Issue からいつでも最初の 2 つのカラムに追加することもできます。
 
 #### ブループリントとデザインドキュメント
 

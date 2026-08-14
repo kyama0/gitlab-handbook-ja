@@ -21,8 +21,8 @@ Compliance グループのミッションは、GitLab 内で組織のコンプ�
 
 ## 私たちが取り組むこと
 
-- 私たちは [Group Direction ページ](https://about.gitlab.com/direction/software_supply_chain_security/compliance/)を使って、グループの高レベルの目標と方向性を説明しています。
-- 高レベルの目標と方向性から、優先順位付けされたエピックのリストに絞り込み、[Tactical Priorities](https://about.gitlab.com/direction/software_supply_chain_security/compliance/tactical-priorities.html)で最新に保つよう努めています。
+- 私たちは[グループ方向性ページ](https://about.gitlab.com/direction/software_supply_chain_security/compliance/)を使って、グループの高レベルの目標と方向性を説明しています。
+- 高レベルの目標と方向性から、優先順位付けされたエピックのリストに絞り込み、[戦術的優先事項](https://about.gitlab.com/direction/software_supply_chain_security/compliance/tactical-priorities.html)で最新に保つよう努めています。
 - この優先順位付けされたリストは、各マイルストーンの計画時に使用します。各マイルストーンには、私たちの[計画エピック](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/compliance/-/epics/2)内に独自の Issue があります。
   - マイルストーンの計画へのインプットとして高レベルの目標と方向性を使うことに加えて、Compliance Product Manager は Sales、顧客、社内ステークホルダー（ドッグフーディング）からのインプットを考慮して、各マイルストーンに追加される Issue の優先順位を決定します。
 - 私たちはまた、グループ内の戦略的イニシアチブの優先順位付けを助けるために [OKR](/handbook/company/okrs/)を使います。計画には Issue を使い、それらを [OKR エピック](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/compliance/-/epics/4)にまとめます。
@@ -31,7 +31,7 @@ Compliance グループのミッションは、GitLab 内で組織のコンプ�
 
 - FY25 の最大の優先事項は、Compliance Frameworks と Security Policies の統合を継続することです。Compliance Center 内の能力を拡張し、Compliance Pipelines の削除に向けて進めます。
 - Standard/Check をさらに追加して Adherence Report の拡張を継続すると同時に、コンプライアンス態勢のもう一方の側面（強制 vs 違反）として違反を統合します。
-- 私たちはまた、カスタマイズ可能なチェックと、顧客にとって最優先の standard の構築も検討しています。
+- 私たちはまた、カスタマイズ可能なチェックと、顧客にとって最優先の標準の構築も検討しています。
 - 監査イベントの DB として ClickHouse の完全な使用をロールアウトします。GitLab プラットフォーム全体のコンプライアンスへのより良い知見を提供する機能のブロックを解除します。
 - 新しい Streaming Audit Event の宛先タイプとフィルタリングを追加する標準的な方法を提供し、より多くのサードパーティ統合とフィルタリングオプションを通じてストリーミング監査イベントの提供を増やします。
 - Compliance グループ外からの貢献が製品全体に監査イベントを追加できるようにするプラットフォームを作成します。これには、現在開いているすべての監査イベント Issue の計画と標準化、簡単に利用できるチュートリアルとガイドラインの作成、そして可能であれば監査イベントデー（pajamas migration デーに似たものだがバックエンド向け）の作成が含まれます。
@@ -39,14 +39,14 @@ Compliance グループのミッションは、GitLab 内で組織のコンプ�
 ## 私たちの働き方
 
 - 私たちの [GitLab バリュー](/handbook/values/)に従います。
-- 透明性を持って、 ほぼすべてが公開されており、可能な限りミーティングを録画/ライブストリームします（[リンク](#links)を参照）
+- 透明性を持って、 ほぼすべてが公開されており、可能な限りミーティングを録画／ライブストリームします（[リンク](#links)を参照）
 - 私たちは取り組みたいことに取り組む機会を得ます。
 - 誰もが貢献できる、サイロはありません。
   - 目標は、製品がエンジニアリングとデザインに、最初から方向性と Issue の定義に関わる機会を与えることです。
 - 私たちはスタンドアップチャンネルで、任意の非同期デイリースタンドアップを行います。
   - Software Supply Chain Security:Compliance [#g_sscs_compliance_updates](https://gitlab.slack.com/archives/C013E163FD0)
 
-### コードレビュー
+### コードレビュー {#code-review}
 
 このグループはアプリケーションの[広範囲に影響を及ぼす](/handbook/engineering/devops/#reducing-the-impact-of-far-reaching-work)コンポーネントに取り組むため、本番インシデントのリスクを減らすために以下の追加ステップを取ります。
 
@@ -67,15 +67,15 @@ Compliance グループのミッションは、GitLab 内で組織のコンプ�
 
 時折、Slack の質問、Issue 内の質問、エラーバジェットの調査など、アドホックな作業や質問が発生します。すべての Compliance グループメンバーには、これらの媒体を見て関与することが奨励されています。
 
-最初に対応する者として、私たちは適切な媒体でアドホックな作業/質問を認識します。これは、質問者が私たちが対応していることを知れるようにするためです。
+最初に対応する者として、私たちは適切な媒体でアドホックな作業／質問を認識します。これは、質問者が私たちが対応していることを知れるようにするためです。
 
 [スパイク](#spikes)と同様に、経験則として、作業に 1 時間以上の調査と回答がかかる場合は、Issue を作成します。これは、この作業が計上され、透明性があり、DRI がいることを確保するためです。これは、質問者に Issue の作成を依頼するか、私たち自身がオーナーシップを取って Issue を作成することで行えます。
 
 私たちは、必要なところでより多くの情報を求めて、アドホックな作業 Issue ができるだけ多くの情報を持つようにします。Issue に取り組む前に、提供する必要のある明確な問いや問題を定義します。
 
-次に、私たちは Issue のオーナーシップを取り、それを自分自身に割り当てます。また、調査が始まったことを示すために、Slack メッセージ/Issue コメントに :eyes: リアクションを追加します。さらに、正しいラベルの衛生（~type::、~group::、~priority::、~workflow::）を確保します。コメントで、透明性を確保するために Compliance の EM と PM をピングします。優先順位に応じて、計画、スケジュール、完了のために[チーム横断的な優先順位付けプロセス](#milestone-planning)を経る必要があるかもしれません。
+次に、私たちは Issue のオーナーシップを取り、それを自分自身に割り当てます。また、調査が始まったことを示すために、Slack メッセージ／Issue コメントに :eyes: リアクションを追加します。さらに、正しいラベルの衛生（~type::、~group::、~priority::、~workflow::）を確保します。コメントで、透明性を確保するために Compliance の EM と PM をピングします。優先順位に応じて、計画、スケジュール、完了のために[チーム横断的な優先順位付けプロセス](#milestone-planning)を経る必要があるかもしれません。
 
-調査が完了したら、私たちは元の媒体でフォローアップします。また、調査が完了したことを示すために、元の Slack メッセージ/Issue コメントに :white_check_mark: リアクションを追加します。
+調査が完了したら、私たちは元の媒体でフォローアップします。また、調査が完了したことを示すために、元の Slack メッセージ／Issue コメントに :white_check_mark: リアクションを追加します。
 
 ### スパイク {#spikes}
 
@@ -94,11 +94,11 @@ Compliance グループのミッションは、GitLab 内で組織のコンプ�
 
 ### 概念実証 MR
 
-私たちは[イテレーション](/handbook/values/#iteration)と、小さな部分で価値を提供することを強く信じています。イテレーションは、特に製品コンテキストが欠けている場合や、コードベースの特にリスクの高い/複雑な部分で作業している場合は難しいことがあります。Issue の見積もりや実現可能性の判断に苦労している場合は、まず概念実証（PoC）MR を作成するのが適切かもしれません。概念実証（PoC）MR の目標は、計画中の主要な仮定を取り除き、早期のフィードバックを提供することで、将来の実装からのリスクを減らすことです。
+私たちは[イテレーション](/handbook/values/#iteration)と、小さな部分で価値を提供することを強く信じています。イテレーションは、特に製品コンテキストが欠けている場合や、コードベースの特にリスクの高い／複雑な部分で作業している場合は難しいことがあります。Issue の見積もりや実現可能性の判断に苦労している場合は、まず概念実証（PoC）MR を作成するのが適切かもしれません。概念実証（PoC）MR の目標は、計画中の主要な仮定を取り除き、早期のフィードバックを提供することで、将来の実装からのリスクを減らすことです。
 
 - `PoC:` を先頭に付けた MR を作成します。
 - PoC MR が解決しようとしている問題を MR の説明で説明します。
-- タイムボックスします。2 〜 3 日未満で実現可能性や計画を判断できますか?
+- タイムボックスします。2 〜 3 日未満で実現可能性や計画を判断できますか？
 - この期間の終わりにフィードバックを提供するレビュアーを特定します。
 - MR をクローズします。製品とパフォーマンスへの影響を含め、PoC から学んだことの要約を元の Issue に提供します。
   - 実装に進めるかどうかを述べます。
@@ -123,7 +123,7 @@ GitLab の誰もが、[私たちは活動ではなくインパクトを測定す
 私たちは [Quality は全員の責任である環境を育むという GitLab の原則](/handbook/engineering/development/principles/#quality)を支持することを目指しています。
 テストは私たちの[製品開発ワークフロー](/handbook/product-development/how-we-work/product-development-flow/)と[コードレビュープロセス](https://docs.gitlab.com/ee/development/code_review.html#quality)の不可欠な部分です。
 
-テストカバレッジに関する情報は、これらの Issue/エピックで見つけられます。
+テストカバレッジに関する情報は、これらの Issue／エピックで見つけられます。
 
 - [Compliance 機能のユニットテストカバレッジ](https://gitlab.com/gitlab-org/gitlab/-/issues/392415)
 - [E2E テストによって提供されるシフトレフトカバレッジ](https://gitlab.com/groups/gitlab-org/-/epics/11644)
@@ -131,7 +131,7 @@ GitLab の誰もが、[私たちは活動ではなくインパクトを測定す
 
 ## マイルストーン計画 {#milestone-planning}
 
-私たちは [Product Development Timeline](/handbook/engineering/workflow/#product-development-timeline)に従って月次サイクルで計画します。私たちの典型的な計画サイクルは以下のようになることが提案されています。
+私たちは[プロダクト開発タイムライン](/handbook/engineering/workflow/#product-development-timeline)に従って月次サイクルで計画します。私たちの典型的な計画サイクルは以下のようになることが提案されています。
 
 ### 事前計画
 
@@ -181,7 +181,7 @@ GitLab の誰もが、[私たちは活動ではなくインパクトを測定す
 
 - Compliance Weekly ミーティング中の口頭の週次アップデートの参照を持つこと。
 - レポーティングのために週次アップデートをドキュメント化すること。
-- 週次アップデートの場当たり的/アドホックな性質を取り除くこと。
+- 週次アップデートの場当たり的／アドホックな性質を取り除くこと。
 - 個人のパフォーマンス指標にしないこと。DRI は必ずしも取り組みに取り組む唯一の個人ではなく、優先順位の変更や、個人の休暇（PTO）や不在（OOO）などの他の要因が常にあり得ます。
 
 ## マイルストーン中
@@ -192,7 +192,7 @@ GitLab の誰もが、[私たちは活動ではなくインパクトを測定す
 
 ### 開発フロー
 
-私たちは一般的に [Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/#workflow-summary)に従います。
+私たちは一般的に[プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/#workflow-summary)に従います。
 
 1. `workflow::problem validation` - 解決すべき問題の明確さが必要
 1. `workflow::design` - 明確な提案（と視覚的な側面のモックアップ）が必要
@@ -207,12 +207,12 @@ GitLab の誰もが、[私たちは活動ではなくインパクトを測定す
 
 一般的に言えば、Issue は 2 つの状態のいずれかにあります。
 
-- ディスカバリー/リファインメント（1 〜 4）：開発を開始するのを妨げる質問にまだ答えている。
+- ディスカバリー／リファインメント（1 〜 4）：開発を開始するのを妨げる質問にまだ答えている。
 - 実装（6 〜 9）：Issue がエンジニアの作業を待っているか、積極的に構築されている。
 
-個々のグループは [Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/#workflow-summary) ワークフローの有用と感じる段階を自由に使えますが、Issue がディスカバリー/リファインメントから実装にどう移行するかについては、ある程度規範的であるべきです。
+個々のグループは[プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/#workflow-summary)ワークフローの有用と感じる段階を自由に使えますが、Issue がディスカバリー／リファインメントから実装にどう移行するかについては、ある程度規範的であるべきです。
 
-### ディスカバリー/リファインメント {#discoveryrefinement}
+### ディスカバリー／リファインメント {#discoveryrefinement}
 
 **最終目標が定義され、** すべての直接のステークホルダーが「はい、これは開発の準備ができている」と言う状態です。一部の Issue はすぐにそこに到達し、一部は何度かのやりとりを必要とします。
 
@@ -249,9 +249,9 @@ Issue の作業を開始できる前に、予備調査の後にまずそれを�
 | 3 | 単純な変更だが、コードのフットプリントが大きい（例： 多くの異なるファイル、または影響を受けるテスト）。要件は明確である。 |
 | 5 | コードベースの複数の領域に影響を与える、より複雑な変更で、いくらかのリファクタリングも伴うかもしれない。要件は理解されているが、途中でいくつかのギャップが生じる可能性が高いと感じる。私たちはこの Issue をより小さな部分に分解することに挑戦すべきである。 |
 | 8 | コードベースの多くに関わるか、要件を決定するために他者からの多くのインプットを必要とする複雑な変更。これらの Issue は、`workflow::ready for development` になる前にさらなる調査や発見を必要とすることが多く、複数のより小さな Issue から恩恵を受ける可能性が高い。 |
-| 13 | 依存関係（他のチームやサードパーティ）を持つ可能性があり、おそらくまだすべての要件を理解していない重大な変更。これをマイルストーンにコミットすることはまずなく、要件をさらに明確にする、および/またはより小さな Issue に分解することが望ましい。 |
+| 13 | 依存関係（他のチームやサードパーティ）を持つ可能性があり、おそらくまだすべての要件を理解していない重大な変更。これをマイルストーンにコミットすることはまずなく、要件をさらに明確にする、および／またはより小さな Issue に分解することが望ましい。 |
 
-見積もりの一環として、Issue がエンジニアが取り組みを開始するのに適切な状態にあると感じる場合は、`workflow::ready for development` ラベルを追加してください。あるいは、定義すべき要件や、エンジニアが簡単に解決できないと感じる答えるべき質問がまだある場合は、`workflow::blocked` ラベルを追加してください。`workflow::blocked` ラベルの付いた Issue は、私たちの計画ボード上の独自の列に表示され、さらなる注意が必要であることを明確にします。`workflow::blocked` ラベルを適用する際は、ブロックされた Issue にコメントを残して [DRI](/handbook/people-group/directly-responsible-individuals/)をピングする、および/または可視性を高めるためにブロックしている Issue をリンクするよう必ずしてください。
+見積もりの一環として、Issue がエンジニアが取り組みを開始するのに適切な状態にあると感じる場合は、`workflow::ready for development` ラベルを追加してください。あるいは、定義すべき要件や、エンジニアが簡単に解決できないと感じる答えるべき質問がまだある場合は、`workflow::blocked` ラベルを追加してください。`workflow::blocked` ラベルの付いた Issue は、私たちの計画ボード上の独自の列に表示され、さらなる注意が必要であることを明確にします。`workflow::blocked` ラベルを適用する際は、ブロックされた Issue にコメントを残して [DRI](/handbook/people-group/directly-responsible-individuals/)をピングする、および／または可視性を高めるためにブロックしている Issue をリンクするよう必ずしてください。
 
 #### 実装計画 {#implementation-plan}
 
@@ -341,17 +341,17 @@ Issue の検証は、Issue の担当者以外の誰かによって行われる�
 
 1. 検証者： Issue の検証スレッドにコメントすることで調査結果をドキュメント化します。
 1. 検証者： 調査結果に基づいて新しい ~"type::bug" または ~"type::feature" の Issue を開きます。
-   1. 検証者：[優先度](/handbook/product-development/how-we-work/issue-triage/#priority)/[重大度](/handbook/product-development/how-we-work/issue-triage/#severity-slos)のトリアージプロセスと Issue タイプ（~"type::bug" または ~"type::feature"）に基づいて重大度および/または優先度を設定します。
+   1. 検証者：[優先度](/handbook/product-development/how-we-work/issue-triage/#priority)／[重大度](/handbook/product-development/how-we-work/issue-triage/#severity-slos)のトリアージプロセスと Issue タイプ（~"type::bug" または ~"type::feature"）に基づいて重大度および／または優先度を設定します。
    1. ~"severity::1" / ~"severity::2" は、Engineering Manager をピング（`@`）するコメントを追加して、直接マイルストーンに引き込まれます。
 1. 検証者： 新しく開いた Issue に MR の作成者を割り当てます。
 1. 検証者： Issue をクローズし、自分自身の割り当てを解除します。Issue には自動的に `~workflow::complete` ラベルが追加されます。
 
 #### デモ
 
-`workflow::verification` プロセス中に、Issue がデモを必要とするかどうかを判断します。不明な場合は、PM と協力してデモが必要かどうかを判断します。デモは進捗を披露するのに最適で、ユーザーが機能の使い方とそのメリットをすばやく理解するのに役立ちます。これに対する私たちのプロセスは [Single Engineer Groups Demo](/handbook/engineering/workflow/demos/#single-engineer-groups-demo)に似ています。
+`workflow::verification` プロセス中に、Issue がデモを必要とするかどうかを判断します。不明な場合は、PM と協力してデモが必要かどうかを判断します。デモは進捗を披露するのに最適で、ユーザーが機能の使い方とそのメリットをすばやく理解するのに役立ちます。これに対する私たちのプロセスは[単一エンジニアグループのデモ](/handbook/engineering/workflow/demos/#single-engineer-groups-demo)に似ています。
 
 - コンピューター上で、または Zoom ライブストリームを介して、動作するソフトウェアの動画を録画します。デモの録画には [loom](/handbook/tools-and-tips/other-apps/#loom)も使えます。
-- [GitLab Unfiltered Channel](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A)にアップロードし、[Compliance Group - Product Playlist](https://www.youtube.com/playlist?list=PL05JrBw4t0KqWds1BN41IJxLd1AvpZxGu)に追加します
+- [GitLab Unfiltered チャンネル](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A)にアップロードし、[Compliance グループ - プロダクトプレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KqWds1BN41IJxLd1AvpZxGu)に追加します
 - YouTube リンクを適切な Slack チャンネルと Issue に投稿します
 
 ### リリース記事
@@ -367,14 +367,14 @@ Issue にリリース記事を持たせたくない場合は、Issue にリリ�
 
 | 頻度 | ミーティング                              | DRI         | 可能なトピック                                                                                        |
 |-----------|--------------------------------------|-------------|--------------------------------------------------------------------------------------------------------|
-| 週次（APAC/EMEA と AMER で交互）    | Group-level meeting                  | Engineering Manager | ボードを見ながら現在のリリースが順調かを確認し、特定の Issue のブロックを解除する                       |
-| 月次   | Planning meeting                    | Product Manager         | [Planning](#milestone-planning) セクションを参照 |
+| 週次（APAC/EMEA と AMER で交互）    | グループレベルミーティング                  | Engineering Manager | ボードを見ながら現在のリリースが順調かを確認し、特定の Issue のブロックを解除する                       |
+| 月次   | 計画ミーティング                    | Product Manager         | [計画](#milestone-planning)セクションを参照 |
 
 一回限りのトピック固有のミーティングについては、常にこれらのコールを録画して共有する（または公開されているドキュメントにメモを取る）ことを検討してください。
 
 アジェンダドキュメントと録画は、信頼できる唯一の情報源として[共有 Google ドライブ](https://drive.google.com/drive/u/0/folders/0ALpc3GhrDkKwUk9PVA)（社内のみ）に置けます。
 
-1:1 や機密トピックを扱うものでないミーティングは、Software Supply Chain Security Shared カレンダーに追加すべきです。
+1:1 や機密トピックを扱うものでないミーティングは、Software Supply Chain Security 共有カレンダーに追加すべきです。
 
 すべてのミーティングは、少なくとも 12 時間前にアジェンダが準備されているべきです。そうでない場合、ミーティングに出席する義務はありません。ミーティングの開始時刻までにアジェンダがなければ、ミーティングはキャンセルされたと見なしてください。
 
@@ -384,7 +384,7 @@ Issue にリリース記事を持たせたくない場合は、Issue にリリ�
 
 ## グループ共有カレンダー
 
-[Compliance Group Shared Calendar](https://calendar.google.com/calendar/embed?src=c_e21c4d99155603fa2f3b06f41628bebfe6013218000c822ec2fdfe7ed877d3e1%40group.calendar.google.com)は、PTO イベントがチーム全員に見えるようにするために使用されます。
+[Compliance グループ共有カレンダー](https://calendar.google.com/calendar/embed?src=c_e21c4d99155603fa2f3b06f41628bebfe6013218000c822ec2fdfe7ed877d3e1%40group.calendar.google.com)は、PTO イベントがチーム全員に見えるようにするために使用されます。
 
 ### Time Off by Deel のエントリを共有カレンダーに同期する
 
@@ -397,14 +397,14 @@ Issue にリリース記事を持たせたくない場合は、Issue にリリ�
 1. 「Additional calendars to include?」の下で、「Add calendar」をクリックします。
 1. 以下のカレンダー ID を追加します：`c_e21c4d99155603fa2f3b06f41628bebfe6013218000c822ec2fdfe7ed877d3e1@group.calendar.google.com`
 
-お疲れさまでした! 🎉 これからは、あなたの PTO イベントが Compliance Group Shared Calendar に同期されます。🚀
+お疲れさまでした！ 🎉 これからは、あなたの PTO イベントが Compliance グループ共有カレンダーに同期されます。🚀
 
 ## グループニュース
 
 EM は通常、毎週、会社内およびグループ内で起きていることについてグループ向けの一般的なアップデートを作成します。
 このアップデートは現在、[Compliance アップデートエピック](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/compliance/-/epics/3)内の Issue の形を取っています。
 
-Compliance EM はまた、[Software Supply Chain Security stage weekly updates](https://gitlab.com/groups/gitlab-com/-/epics/2126) エピック内の Issue にも貢献します。
+Compliance EM はまた、[Software Supply Chain Security ステージ週次アップデート](https://gitlab.com/groups/gitlab-com/-/epics/2126) エピック内の Issue にも貢献します。
 
 ## グループメンバー
 
@@ -416,24 +416,24 @@ Compliance EM はまた、[Software Supply Chain Security stage weekly updates](
 
 - GitLab
   - [gitlab-org/software-supply-chain-security/compliance](https://gitlab.com/gitlab-org/software-supply-chain-security/compliance)
-  - [General issues and discussions](https://gitlab.com/gitlab-org/software-supply-chain-security/compliance/general/-/issues)
-  - [Engineering issues and discussions](https://gitlab.com/gitlab-org/software-supply-chain-security/compliance/engineering)
-  - Compliance alias: `@gitlab-org/software-supply-chain-security/compliance`
-  - Compliance engineering alias: `@gitlab-org/software-supply-chain-security/compliance/engineering`
-  - [Milestone retrospectives](https://gitlab.com/gl-retrospectives/govern/compliance/-/issues)
+  - [一般 Issue とディスカッション](https://gitlab.com/gitlab-org/software-supply-chain-security/compliance/general/-/issues)
+  - [エンジニアリング Issue とディスカッション](https://gitlab.com/gitlab-org/software-supply-chain-security/compliance/engineering)
+  - Compliance エイリアス： `@gitlab-org/software-supply-chain-security/compliance`
+  - Compliance エンジニアリングエイリアス： `@gitlab-org/software-supply-chain-security/compliance/engineering`
+  - [マイルストーンレトロスペクティブ](https://gitlab.com/gl-retrospectives/govern/compliance/-/issues)
   - Issue ボード
-    - [Build board](https://gitlab.com/groups/gitlab-org/-/boards/1305010)
-    - [Planning board](https://gitlab.com/groups/gitlab-org/-/boards/4657720)
+    - [ビルドボード](https://gitlab.com/groups/gitlab-org/-/boards/1305010)
+    - [計画ボード](https://gitlab.com/groups/gitlab-org/-/boards/4657720)
 - 私たちの Slack チャンネル
   - Software Supply Chain Security:Compliance [#g_sscs_compliance](https://gitlab.slack.com/messages/CN7C8029H)
   - デイリースタンドアップ [#g_sscs_compliance_updates](https://gitlab.slack.com/archives/C013E163FD0)
   - グループ関連の Sentry エラー [#g_sscs_compliance_alerts](https://gitlab.slack.com/archives/C05GEBG97V3)
-  - Compliance engineering alias: `@sscs_compliance`
+  - Compliance エンジニアリングエイリアス： `@sscs_compliance`
 - Google Group
   - [sec-software_supply_chain_security-compliance](https://groups.google.com/a/gitlab.com/g/sec-software_supply_chain_security-compliance)
 
 - GitLab Unfiltered チャンネルの Compliance グループプレイリスト
-  - [Product](https://www.youtube.com/playlist?list=PL05JrBw4t0KqWds1BN41IJxLd1AvpZxGu)
-  - [Meetings](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7_yBKIYHi8qvCWeU0Q3yH)
+  - [プロダクト](https://www.youtube.com/playlist?list=PL05JrBw4t0KqWds1BN41IJxLd1AvpZxGu)
+  - [ミーティング](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq7_yBKIYHi8qvCWeU0Q3yH)
 
 <!-- include omitted: includes/engineering/software_supply_chain_security-shared-links.md (no localized version under content/ja/) -->

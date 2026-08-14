@@ -34,7 +34,7 @@ Secrets Manager グループは、[Security Platform ステージ](/handbook/eng
 
 ## パフォーマンス指標 {#performance-indicators}
 
-私たちは、[Product Performance Indicator](https://internal.gitlab.com/handbook/company/performance-indicators/product/)を使って、私たちが貢献する価値を測定します。PI プロセスの目標の 1 つは、製品チームとして、将来の成功の前兆となる先行指標を改善するための戦略的・運用的な改善に集中していることを確保することです。
+私たちは、[プロダクトパフォーマンス指標](https://internal.gitlab.com/handbook/company/performance-indicators/product/)を使って、私たちが貢献する価値を測定します。PI プロセスの目標の 1 つは、製品チームとして、将来の成功の前兆となる先行指標を改善するための戦略的・運用的な改善に集中していることを確保することです。
 <!-- Our current PI for the Pipeline Security group is still to be determined. [View Sec Section performance indicators (internal handbook)](https://internal.gitlab.com/handbook/company/performance-indicators/product/sec-section/).-->
 
 ## チームメンバー
@@ -79,14 +79,14 @@ Secrets Manager グループは、[Security Platform ステージ](/handbook/eng
 
 私たちは[リリース計画 Issue](https://gitlab.com/gitlab-org/ci-cd/pipeline-security-group/-/issues/new?issuable_template=ReleasePlan)を使って、各マイルストーンでのリリースレベルの優先事項を計画します。この Issue は、成果物、キャパシティ、チームメンバーの休暇などを強調するために使用されます。これにより、チームメンバーとマネージャーは、各リリースで達成しようとしていることを高レベルで把握でき、情報を収集する中心的な場所として機能します。この計画 Issue はマイルストーンが始まると静的になり、マイルストーンへの変更（例： 開始後により高優先度の項目がマイルストーンに追加され、計画された Issue が削除される）を反映するために更新されないことに注意することが重要です。これにより、レトロスペクティブ Issue の一環として、ベースラインの計画と最終リリースを比較できます。
 
-#### Issue の重み付けと洗練
+#### Issue の重み付けと洗練 {#issue-weighting-and-refinement}
 
 Issue を `workflow::planning breakdown` ステータスから `workflow::ready for development` ステータスに移動できる前に、Issue に 0 より大きい重みが適用されていなければなりません。
 
 私たちは 2 ステップの見積もりプロセスを適用します：
 
-- フェーズ 1： 高レベル/ラフな見積もり。ここでの私たちの意図は、PM がキャパシティに応じて複数マイルストーン先に Issue をスケジュールできるようにすることであり、EM が Issue に高レベルの見積もり重みを追加します。その後、PM は Issue を特定のマイルストーンにスケジュールします。
-- フェーズ 2： 洗練/検証された見積もり。エンジニアは、Issue のスケジュールされたマイルストーンに先立つマイルストーンの最初の 2 週間に、見積もり重みを洗練・調整（必要であれば）するために割り当てられます。
+- フェーズ 1： 高レベル／ラフな見積もり。ここでの私たちの意図は、PM がキャパシティに応じて複数マイルストーン先に Issue をスケジュールできるようにすることであり、EM が Issue に高レベルの見積もり重みを追加します。その後、PM は Issue を特定のマイルストーンにスケジュールします。
+- フェーズ 2： 洗練／検証された見積もり。エンジニアは、Issue のスケジュールされたマイルストーンに先立つマイルストーンの最初の 2 週間に、見積もり重みを洗練・調整（必要であれば）するために割り当てられます。
 
 このフェーズ分けされたプロセスの意図は、アジャイルな計画を可能にし、各マイルストーンを通じて Issue を調査・洗練するために必要な頻繁なコンテキストスイッチの負担をエンジニアから減らすことです。さらに、これはグループの方向性についてチームに四半期ごとの先読みを提供します。
 
@@ -114,10 +114,10 @@ Issue を洗練する際、エンジニアは以下を行うべきです：
 
 Issue の重みは、以下の基準における複雑さに基づいて決定されます：
 
-- コード変更 - 必要なコード変更を行うのはどれだけ難しいか?
-- 他チームとのやりとりと依存 - 他チームとのやりとりはどれだけ必要か?
-- 本番への道筋 - コード変更を安全に本番環境に投入するために何をする必要があるか（例： フィーチャーフラグ、後方互換性など）?
-- パフォーマンスへの影響 - システムで高いパフォーマンスを維持するために何が必要か?
+- コード変更 - 必要なコード変更を行うのはどれだけ難しいか？
+- 他チームとのやりとりと依存 - 他チームとのやりとりはどれだけ必要か？
+- 本番への道筋 - コード変更を安全に本番環境に投入するために何をする必要があるか（例： フィーチャーフラグ、後方互換性など）？
+- パフォーマンスへの影響 - システムで高いパフォーマンスを維持するために何が必要か？
 
 これらの基準に基づき、Issue は以下の重みのいずれかを持てます：
 
@@ -133,19 +133,19 @@ Issue の重みを 1 日以内に判断できない場合は、詳細な調査�
 
 #### デザインと開発のコラボレーション
 
-Issue がデザイン提案を必要とする場合、私たちは [Product Development Flow](/handbook/product-development/how-we-work/product-development-flow/)に従います。デザインと開発は最初から協働して、Issue が私たちの [MVC ガイドライン](/handbook/product/product-principles/#the-minimal-valuable-change-mvc)に従いつつ、価値と使いやすい体験を提供することを確保すべきです。
+Issue がデザイン提案を必要とする場合、私たちは[プロダクト開発フロー](/handbook/product-development/how-we-work/product-development-flow/)に従います。デザインと開発は最初から協働して、Issue が私たちの [MVC ガイドライン](/handbook/product/product-principles/#the-minimal-valuable-change-mvc)に従いつつ、価値と使いやすい体験を提供することを確保すべきです。
 
-SSOT を維持するため、デザインと開発には同じ Issue を使うべきです。これにより、両チームの重複作業が減ります。プロダクトデザイナーは [UX Definition of Done](https://docs.gitlab.com/development/contributing/merge_request_workflow/#definition-of-done) テンプレートを使って、Issue が製品開発フローのどこに位置するかを明確に示すべきです。これが実践されている例は https://gitlab.com/gitlab-org/gitlab/-/issues/33418/ です。
+SSOT を維持するため、デザインと開発には同じ Issue を使うべきです。これにより、両チームの重複作業が減ります。プロダクトデザイナーは [UX 完了の定義](https://docs.gitlab.com/development/contributing/merge_request_workflow/#definition-of-done) テンプレートを使って、Issue が製品開発フローのどこに位置するかを明確に示すべきです。これが実践されている例は https://gitlab.com/gitlab-org/gitlab/-/issues/33418/ です。
 
 デザインが完了し、適切なワークフローラベルが適用されたら、デザイン、品質、開発（FE、BE、EM を含む）は、必要であれば、実装のために Issue をさらに分解するために協働すべきです。
 
-#### 技術調査（Technical Investigation）
+#### 技術調査 {#technical-investigation}
 
-洗練のプロセスの中で、新しい機能が[ブループリント](https://gitlab.com/gitlab-com/gl-infra/readiness/-/blob/master/doc/workflow.md)を必要とすることを発見したり、メンテナーからのインプットが問題のスコープを縮小し、機能のパフォーマンスを確保し、および/または将来の技術的負債を減らすのに役立つとチームが感じたりすることがあります。これが起きると、チームは調査のための技術調査 Issue を作成します。この Issue は 1 人のチームメンバーに割り当てられます。そのチームメンバーは、問題へのアプローチを明確にするドキュメント、概念実証、または他の成果物を作成するために最小限の時間（理想的には 5 営業日未満）を費やすべきです。これは、情報を収集し、他者と解決策を検証し、実行のための計画を提案するのに役立ちます。そのチームメンバーは、機能の作業を開始する前に、技術調査 Issue で概説された具体的な質問に答えます。このプロセスは[スパイク](/handbook/product/product-processes/#spikes)の概念に類似しています。
+洗練のプロセスの中で、新しい機能が[ブループリント](https://gitlab.com/gitlab-com/gl-infra/readiness/-/blob/master/doc/workflow.md)を必要とすることを発見したり、メンテナーからのインプットが問題のスコープを縮小し、機能のパフォーマンスを確保し、および／または将来の技術的負債を減らすのに役立つとチームが感じたりすることがあります。これが起きると、チームは調査のための技術調査 Issue を作成します。この Issue は 1 人のチームメンバーに割り当てられます。そのチームメンバーは、問題へのアプローチを明確にするドキュメント、概念実証、または他の成果物を作成するために最小限の時間（理想的には 5 営業日未満）を費やすべきです。これは、情報を収集し、他者と解決策を検証し、実行のための計画を提案するのに役立ちます。そのチームメンバーは、機能の作業を開始する前に、技術調査 Issue で概説された具体的な質問に答えます。このプロセスは[スパイク](/handbook/product/product-processes/#spikes)の概念に類似しています。
 
-可能な場合、割り当てられたチームメンバーには、別の開発者と調査と結果の公開でペアを組むために同期の時間をスケジュールすることが奨励されます（技術調査 Issue の例 [gitlab#336617](https://gitlab.com/gitlab-org/gitlab/-/issues/336617)）。デフォルトでは技術調査 Issue は重み 2 で、開始からデータの提示まで 3 営業日にタイムボックスします。チームメンバーはこの重みおよび/または時間枠を裁量で変更できます。
+可能な場合、割り当てられたチームメンバーには、別の開発者と調査と結果の公開でペアを組むために同期の時間をスケジュールすることが奨励されます（技術調査 Issue の例 [gitlab#336617](https://gitlab.com/gitlab-org/gitlab/-/issues/336617)）。デフォルトでは技術調査 Issue は重み 2 で、開始からデータの提示まで 3 営業日にタイムボックスします。チームメンバーはこの重みおよび／または時間枠を裁量で変更できます。
 
-私たちは、全体的なベロシティと [MR Rate](/handbook/product/groups/product-analysis/engineering/metrics/#merge-request-rates-mr-rates)を維持できるよう、各マイルストーンで割り当てられる技術調査 Issue の数を 2 つに制限します。
+私たちは、全体的なベロシティと[マージリクエスト率](/handbook/product/groups/product-analysis/engineering/metrics/#merge-request-rates-mr-rates)を維持できるよう、各マイルストーンで割り当てられる技術調査 Issue の数を 2 つに制限します。
 
 #### Issue の分割
 
@@ -191,7 +191,7 @@ Engineering Manager は、以下の基準を満たす Issue に `Deliverable` �
 - ~"type::bug" とラベル付けされた Issue は、再現手順を含む
 - 必要であれば、デザインがデザインタブにある
 - Issue が Software Supply Chain Security:Pipeline Security エンジニアによって取り組まれる場合、[重み](/handbook/engineering/devops/create/source-code/backend/#weighting-issues)を持つ
-- デザイン提案が [UX Definition of Done（DoD）](https://docs.gitlab.com/development/contributing/merge_request_workflow/#definition-of-done)を満たす
+- デザイン提案が [UX 完了の定義（DoD）](https://docs.gitlab.com/development/contributing/merge_request_workflow/#definition-of-done)を満たす
 
 #### ブロックの定義 {#definition-of-blocked}
 
@@ -203,13 +203,13 @@ Engineering Manager は、以下の基準を満たす Issue に `Deliverable` �
 
 #### リリース記事チェックリスト Issue
 
-各マイルストーン中、私たちは [Release Post Checklist](https://gitlab.com/gitlab-org/ci-cd/pipeline-security-group/-/issues/new?issuable_template=Release-Post-Issue) Issue を作成します。これは、チームの[リリース記事](https://docs.gitlab.com/development/documentation/release_notes/)の進捗を追跡するのに役立つようチームメンバーが使用します。私たちはチェックリスト Issue を使って、リリース記事のマージリクエストを実装 Issue へのリンク、更新されたドキュメントへのリンクと関連付け、どのエンジニアが各 Issue に取り組んでいるかをリストします。チェックリスト Issue は、このすべての情報を 1 か所で見られる場所を提供します。
+各マイルストーン中、私たちは[リリース記事チェックリスト](https://gitlab.com/gitlab-org/ci-cd/pipeline-security-group/-/issues/new?issuable_template=Release-Post-Issue) Issue を作成します。これは、チームの[リリース記事](https://docs.gitlab.com/development/documentation/release_notes/)の進捗を追跡するのに役立つようチームメンバーが使用します。私たちはチェックリスト Issue を使って、リリース記事のマージリクエストを実装 Issue へのリンク、更新されたドキュメントへのリンクと関連付け、どのエンジニアが各 Issue に取り組んでいるかをリストします。チェックリスト Issue は、このすべての情報を 1 か所で見られる場所を提供します。
 
 ### ワークフロー
 
 特に以下に記載がない限り、Software Supply Chain Security:Pipeline Security グループは標準の[エンジニアリング](/handbook/engineering/workflow/)、[製品](/handbook/product-development/how-we-work/product-development-flow/)、[プロダクトデザイン](/handbook/upstream-studios/product-design/workflow/)のワークフローに従います。
 
-#### 新しい作業の開始
+#### 新しい作業の開始 {#starting-new-work}
 
 Software Supply Chain Security:Pipeline Security のチームメンバーには、[私たちのマイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/364216?label_name[]=group%3A%3Apipeline%20security&milestone_title=Started)で **_右から左へ_** 作業を探し始めることが奨励されています。これは _「右から引く（Pulling from the right）」_ としても知られています。チームメンバーがボード上で進められる Issue がある場合は、新しい作業を始める代わりにそれを行うべきです。これには、価値を加えて Issue をボード上で進められると感じる場合、チームメンバーが割り当てられていない Issue のコードレビューを行うことも含まれます。
 
@@ -222,7 +222,7 @@ Software Supply Chain Security:Pipeline Security のチームメンバーには�
 
 このプロセスの目標は WIP を減らすことです。WIP を減らすことで、私たちは「Start less, finish more（始めることを減らし、完了させることを増やす）」を強いられ、サイクルタイムも短縮されます。エンジニアは、マージリクエストの DRI は **作成者** であることを念頭に置くべきです。チームワークの重要性を強調しているからといって、[DRI が私たちの価値観で奨励されている](/handbook/people-group/directly-responsible-individuals/#dris-and-our-values)という事実を薄めるべきではありません。
 
-##### 取り上げる Deliverable Issue がもうない場合はどうするか?
+##### 取り上げる Deliverable Issue がもうない場合はどうするか？
 
 チームメンバーが「右から引ける」`Deliverable` Issue がもうない場合、チームメンバーは以下のいずれかを行えます：
 
@@ -244,7 +244,7 @@ Software Supply Chain Security:Pipeline Security のチームメンバーには�
 
 コードレビューは、reviewer roulette を使ってレビュアーとメンテナーを選ぶ標準のプロセスに従います。ルーレットは **任意** なので、マージリクエストに私たちのグループ外の誰かが深く十分に理解できないかもしれない変更が含まれている場合は、問題を正しく解決することに焦点を当てた予備レビューのために、Software Supply Chain Security:Pipeline Security チームのメンバーを選ぶことが奨励されます。意図は、この選択をエンジニアの裁量に委ねることですが、Software Supply Chain Security:Pipeline Security のチームメンバー仲間が、私たちが実装している機能の影響を理解するのに最も適していることがあるという考えを提起することです。メンテナーレビューはその後、品質とコード標準により焦点を当てたものになります。
 
-私たちはまた、[GitLab コードレビュープロセス](/handbook/engineering/workflow/code-review/#reviewer)で説明されているように、チームメンバーが割り当てられていなくても、互いのマージリクエストをレビューする時間を取ることを推奨します。あなたのマージリクエストに、最初のドメインレビュアー以外の誰かを割り当てる必要はありません。このプロセスの拡張は、チームメンバーが割り当てられていないマージリクエストをレビューすることを奨励することを意図しています。新しいチームとして、互いのマージリクエストをレビューすることで、私たちの製品領域への精通を構築でき、機能や修正を実装する際に行う必要のある調査の量を減らすのに役立ち、私たちの [lottery factor](https://en.wikipedia.org/wiki/Bus_factor)を高めます。私たち自身でできるレビューが多いほど、メンテナーがマージリクエストを良い形にするために行う作業が少なくなります。
+私たちはまた、[GitLab コードレビュープロセス](/handbook/engineering/workflow/code-review/#reviewer)で説明されているように、チームメンバーが割り当てられていなくても、互いのマージリクエストをレビューする時間を取ることを推奨します。あなたのマージリクエストに、最初のドメインレビュアー以外の誰かを割り当てる必要はありません。このプロセスの拡張は、チームメンバーが割り当てられていないマージリクエストをレビューすることを奨励することを意図しています。新しいチームとして、互いのマージリクエストをレビューすることで、私たちの製品領域への精通を構築でき、機能や修正を実装する際に行う必要のある調査の量を減らすのに役立ち、私たちの[バス係数](https://en.wikipedia.org/wiki/Bus_factor)を高めます。私たち自身でできるレビューが多いほど、メンテナーがマージリクエストを良い形にするために行う作業が少なくなります。
 
 この戦術はまた、コラボレーションを通じて解決策がより良く洗練される可能性のある WIP のマージリクエストで早期レビューを求める環境を作り、チーム全体で知識を共有することも可能にします。
 
@@ -311,23 +311,23 @@ What's left to be done:
 - レトロスペクションの場合に備えて、Issue が遭遇した障害の履歴がすぐに利用できる
 - 製品とエンジニアリングのマネージャーが作業の進捗をより簡単に把握できる
 
-いくつかのメモ/提案：
+いくつかのメモ／提案：
 
 - 特別な状況を除き、私たちは通常、エンジニアが週に少なくとも 1 回ステータスアップデートを残すことを期待します
 - 理想的には、混乱を最小限に抑えるため、ステータスアップデートはエンジニアのワークフローの論理的な部分で行われます
-- アップデートが毎週同じ時刻/曜日に行われる必要はありません
+- アップデートが毎週同じ時刻／曜日に行われる必要はありません
 - 一般的に、アップデートを残す論理的なタイミングがあれば、それが最適なタイミングです
 - エンジニアには、Issue に取り組む中で技術的なメモや考えを集めたり「考えを声に出す」場所として、これらのアップデートを使うことが奨励されます
 
 #### フィーチャーフラグの背後にある変更の監視
 
-[GitLab でフィーチャーフラグを使って開発する](https://docs.gitlab.com/ee/development/feature_flags/)ためにドキュメント化された手順に加えて、Software Supply Chain Security:Pipeline Security のエンジニアは、可能な場合、ダッシュボードとログを使って、変更がインフラに与える影響を監視します。フィーチャーフラグによりエンジニアは本番環境でのコードを完全に制御できるため、変更が本番インフラに与える影響を監視するオーナーシップも取れます。変更を監視するため、私たちはこの[役立つダッシュボードのセレクション](/handbook/engineering/monitoring/#selection-of-useful-dashboards-from-the-monitoring)、特に本番環境での変更を監視するための [Rails controller dashboard](https://dashboards.gitlab.net/d/web-rails-controller/web-rails-controller)（社内のみ）を使います。私たちが評価する指標には、変更の期待される影響と Issue で指摘された考慮事項に応じて、レイテンシ、スループット、CPU 使用率、メモリ使用率、データベース呼び出しが含まれます。
+[GitLab でフィーチャーフラグを使って開発する](https://docs.gitlab.com/ee/development/feature_flags/)ためにドキュメント化された手順に加えて、Software Supply Chain Security:Pipeline Security のエンジニアは、可能な場合、ダッシュボードとログを使って、変更がインフラに与える影響を監視します。フィーチャーフラグによりエンジニアは本番環境でのコードを完全に制御できるため、変更が本番インフラに与える影響を監視するオーナーシップも取れます。変更を監視するため、私たちはこの[役立つダッシュボードのセレクション](/handbook/engineering/monitoring/#selection-of-useful-dashboards-from-the-monitoring)、特に本番環境での変更を監視するための [Rails コントローラーダッシュボード](https://dashboards.gitlab.net/d/web-rails-controller/web-rails-controller)（社内のみ）を使います。私たちが評価する指標には、変更の期待される影響と Issue で指摘された考慮事項に応じて、レイテンシ、スループット、CPU 使用率、メモリ使用率、データベース呼び出しが含まれます。
 
 このプロセスの目標は、変更が本番インフラに与える可能性のある時間を可能な限り小さなウィンドウに減らすことです。このプロセスの副次的なメリットは、私たちの監視ツールへのエンジニアの精通を高め、変更がインフラ指標に関連してどんな結果をもたらすかを予測することについてより多くの経験を積むことです。
 
 #### Issue のクローズ
 
-エンジニアが Issue について [Definition of Done](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#definition-of-done)が満たされていることを確認した後、Issue をクローズする責任はそのエンジニアにあります。Issue が完了したことを検証する責任のあるエンジニアは、その Issue の DRI であるエンジニア、または Issue の作業を完了する最終マージリクエストの DRI であるエンジニアです。
+エンジニアが Issue について[完了の定義](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#definition-of-done)が満たされていることを確認した後、Issue をクローズする責任はそのエンジニアにあります。Issue が完了したことを検証する責任のあるエンジニアは、その Issue の DRI であるエンジニア、または Issue の作業を完了する最終マージリクエストの DRI であるエンジニアです。
 
 #### コミュニティ貢献のための Issue
 
@@ -366,9 +366,9 @@ Pipeline Security グループは、以下に説明する製品マーケティ�
 
 私たちは非同期スタンドアップのために、Slack と統合された [geekbot](https://geekbot.com/)を使います。スタンドアップの目的は、各自が何に取り組んでいるかをチームに知らせ続け、ブロッカーを表面化させて取り除けるようにすることです。スタンドアップボットは火曜日と金曜日のチームメンバーの現地時間午前 10 時に実行され、3 つの質問をします：
 
-1. 前回のアップデートから何をしましたか?
-2. 現在何に取り組んでいますか?
-3. 進捗をブロックしているものはありますか?
+1. 前回のアップデートから何をしましたか？
+2. 現在何に取り組んでいますか？
+3. 進捗をブロックしているものはありますか？
 
 毎週、チームメンバーは現在のマイルストーンに割り当てられた Issue について簡潔なアップデートを共有します。
 アップデートは [Issue の進捗アップデート](#issue-progress-updates)ガイドラインに従ってコメントの形で Issue に共有されます。

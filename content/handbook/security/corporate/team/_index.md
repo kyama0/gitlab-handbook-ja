@@ -217,7 +217,7 @@ lastmod: "2026-08-13T20:57:11+02:00"
 </tbody>
 </table>
 
-## 機能組織図
+## 機能組織図 {#functional-org-chart}
 
 ```mermaid
 graph TB

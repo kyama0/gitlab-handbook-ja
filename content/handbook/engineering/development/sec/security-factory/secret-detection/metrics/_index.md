@@ -177,7 +177,7 @@ data_source: 'database' }
 
 `time_frame` は定義されたメトリクスの辞書の値（つまり `7d`、`28d`、または `all`）と一致する必要があります。
 
-## CI ベースのアナライザーオブザーバビリティメトリクス
+## CI ベースのアナライザーオブザーバビリティメトリクス {#ci-based-analyzer-observability-metrics}
 
 このセクションでは、[Secret Detection アナライザー](https://gitlab.com/gitlab-org/security-products/analyzers/secrets)へのオブザーバビリティメトリクスの追加について説明します。
 

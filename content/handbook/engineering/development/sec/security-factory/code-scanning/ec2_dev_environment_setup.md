@@ -8,7 +8,7 @@ stale: false
 lastmod: "2026-08-13T15:10:33+03:00"
 ---
 
-## Static Analysis グループ EC2 開発マシンセットアップガイド
+## Static Analysis グループ EC2 開発マシンセットアップガイド {#static-analysis-group-ec2-development-machine-setup-guide}
 
 [Semgrep を含む](https://github.com/semgrep/semgrep/issues/2252)一部の SAST アナライザーは、ARM64 がサポートされていないため M1 Mac では動作しません。
 

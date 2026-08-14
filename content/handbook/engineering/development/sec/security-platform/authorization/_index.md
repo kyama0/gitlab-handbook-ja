@@ -15,7 +15,7 @@ Authorization グループは [Security Platform ステージ](/handbook/enginee
 
 私たちの[プランニング Issue](https://gitlab.com/gitlab-org/software-supply-chain-security/authorization/team-tasks/-/issues?sort=created_date&state=opened&label_name%5B%5D=Planning%20Issue&first_page_size=50)は、現在私たちが取り組んでいることと、次に取り組むことの SSOT です。また、これらを `workflow` の観点から見るための [Issue ボード](https://gitlab.com/gitlab-org/gitlab/-/boards/9750781?milestone_title=Started&label_name[]=group%3A%3Aauthorization)もあります。Issue リストを維持するために、リーダーシップ（EM+PM）がリストをトリアージし続けます。
 
-### ワークフロー
+### ワークフロー {#workflow}
 
 | ラベル | 定義 |
 | ---   | ---        |
@@ -25,9 +25,9 @@ Authorization グループは [Security Platform ステージ](/handbook/enginee
 | `~workflow::solution validation` | 作業開始前にプロダクトのインプットが必要。 |
 | `~workflow::design` | 進行のためにデザインのインプットが必要、もしくは UX が積極的に作業中。 |
 
-## 週次非同期 Issue アップデート
+## 週次非同期 Issue アップデート {#weekly-async-issue-updates}
 
-毎週末、各エンジニアは取り組んでいるエピック/Issue について、以下のテンプレートを使ってアサインされた Issue にコメントすることで簡単な非同期アップデートを提供することが期待されています。
+毎週末、各エンジニアは取り組んでいるエピック／Issue について、以下のテンプレートを使ってアサインされた Issue にコメントすることで簡単な非同期アップデートを提供することが期待されています。
 
 ```markdown
 
@@ -90,7 +90,7 @@ Authorization グループ用のドキュメントは[こちら](https://drive.g
 
 ## コラボレーション
 
-### コードレビュー
+### コードレビュー {#code-review}
 
 このグループはアプリケーションの中で[広範囲に影響する](/handbook/engineering/devops/#reducing-the-impact-of-far-reaching-work)コンポーネントを扱っているため、本番インシデントのリスクを減らすために以下の追加ステップを取ります。
 
@@ -133,7 +133,7 @@ Authorization グループ用のドキュメントは[こちら](https://drive.g
   - Issue がフロントエンドとバックエンドの両方の作業を必要とする場合、異なるタスクを作成して作業を分割できる。これにより、異なるエンジニアが Issue で協業することができる。
   - 新しいまたは複雑な機能の場合、最初のイテレーションで提供できるものと、将来のイテレーションで提供できるものを指定する。
 - 実装プランを概説する
-  - Issue がフロントエンドとバックエンドの両方の作業を必要とする場合、Vue コンポーネントでの計算を最小限にするために API エンドポイントのリクエスト/レスポンス構造を定義する。
+  - Issue がフロントエンドとバックエンドの両方の作業を必要とする場合、Vue コンポーネントでの計算を最小限にするために API エンドポイントのリクエスト／レスポンス構造を定義する。
   - 実装プランを把握するためにさらなる調査が必要な場合、スパイク Issue を作成できる。スパイクからの調査結果が得られたら、Issue に戻ることができる。
 - [T シャツサイジングアプローチ](/handbook/enterprise-data/how-we-work/planning/#t-shirt-sizing-approach)を使ってウェイトを割り当て、`~workflow::scheduling` ラベルを設定し、`@jpr0c` と `@NellyVahab` にタグを付ける。Issue がタスクに分解されている場合、各タスクにウェイトを割り当てることができる。
 - 次のステップが明確になったら、Issue の説明を更新し、自分自身のアサインを解除する。

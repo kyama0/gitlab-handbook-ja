@@ -22,9 +22,9 @@ stale: false
 
 ## Secure QA プロセス
 
-Secure アナライザーは、サポートされる言語/フレームワークのダウンストリームテストプロジェクトに対して新しいコミットを実行することで、マージリクエストを検証します（例：`Dependency Scanning` の [`gemnasium` アナライザー](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium)は `php`、`go`、およびその[他いくつかの](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium/-/blob/v2.21.0/.gitlab-ci.yml#L35-89)テストプロジェクトに対してテストをトリガーします）。検証は、生成されたレポート出力をアナライザーのリポジトリにコミットされた期待レポートと比較することで行われます。アナライザーの動作が変更された場合、期待レポートと生成されたレポートの内容が一致しなくなるため、パイプラインは失敗します。
+Secure アナライザーは、サポートされる言語／フレームワークのダウンストリームテストプロジェクトに対して新しいコミットを実行することで、マージリクエストを検証します（例：`Dependency Scanning` の [`gemnasium` アナライザー](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium)は `php`、`go`、およびその[他いくつかの](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium/-/blob/v2.21.0/.gitlab-ci.yml#L35-89)テストプロジェクトに対してテストをトリガーします）。検証は、生成されたレポート出力をアナライザーのリポジトリにコミットされた期待レポートと比較することで行われます。アナライザーの動作が変更された場合、期待レポートと生成されたレポートの内容が一致しなくなるため、パイプラインは失敗します。
 
-`Dependency Scanning`、`SAST`、`Secrets Detection` アナライザーの期待値は、プロジェクトの `qa/expect` ディレクトリに、各フレームワーク/言語タイプのサブディレクトリとともに格納されています。
+`Dependency Scanning`、`SAST`、`Secrets Detection` アナライザーの期待値は、プロジェクトの `qa/expect` ディレクトリに、各フレームワーク／言語タイプのサブディレクトリとともに格納されています。
 
 ### テストプロジェクト
 
@@ -34,7 +34,7 @@ Secure アナライザーは、サポートされる言語/フレームワーク
 
 アナライザーへの変更がレポート出力を変更する場合、期待レポートも変更する必要があります。
 
-`SAST`、`Dependency Scanning`、`Secret Detection` では、期待レポートはアナライザーとともに、言語/フレームワークのサブディレクトリ内のテストプロジェクトに対応するパスに格納されています。例えば、`java-maven` の依存関係をスキャンするための期待レポートは [gemnasium-maven/qa/expect](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium-maven/-/tree/master/qa/expect/java-maven)に格納されています。このようにして、アナライザーの動作が変更された場合、期待値を同じコミットで変更してパッケージ化できます。
+`SAST`、`Dependency Scanning`、`Secret Detection` では、期待レポートはアナライザーとともに、言語／フレームワークのサブディレクトリ内のテストプロジェクトに対応するパスに格納されています。例えば、`java-maven` の依存関係をスキャンするための期待レポートは [gemnasium-maven/qa/expect](https://gitlab.com/gitlab-org/security-products/analyzers/gemnasium-maven/-/tree/master/qa/expect/java-maven)に格納されています。このようにして、アナライザーの動作が変更された場合、期待値を同じコミットで変更してパッケージ化できます。
 
 `License Compliance` については、期待値はテストプロジェクトの `qa/expect` ディレクトリ（例：[ruby-bundler/qa/expect](https://gitlab.com/gitlab-org/security-products/tests/ruby-bundler/-/tree/master/qa/expect)）に格納されています。
 

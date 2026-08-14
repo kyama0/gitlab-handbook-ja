@@ -25,7 +25,7 @@ Authentication グループは [Security Platform ステージ](/handbook/engine
 2. Cells の準備
 3. サービスアカウントの UI とデフォルトのマシン ID 化
 4. パスワードレス認証
-5. 不安定なテスト、古い FF、S3 バグ、サポート/CSM の質問の手動対応の削減。
+5. 不安定なテスト、古い FF、S3 バグ、サポート／CSM の質問の手動対応の削減。
 
 #### 私たちが GitLab のために推進している顧客の成果
 
@@ -62,10 +62,10 @@ Authentication グループは [Security Platform ステージ](/handbook/engine
   - グループに帰属するフレーキーテスト。
 
 - 製品の指標
-  - SAML、Identity provider、Group sync などの認証統合の採用
+  - SAML、ID プロバイダー、グループ同期などの認証統合の採用
   - クレームされた Enterprise ユーザー
 
-#### 私たちの違いは何か?
+#### 私たちの違いは何か？
 
 Authentication グループは GitLab 製品の中核となる部分です！ 多くのグループが単一の領域（リポジトリビューやマージリクエストビューなど）に焦点を当てるのに対し、このグループは多くの領域にわたってはるかに広い影響を持ちます。このため、他のグループ以上に私たちが心に留めているいくつかの重要なトピックがあります。
 
@@ -100,7 +100,7 @@ Authentication グループは GitLab 製品の中核となる部分です！ �
 ### 私たちの働き方
 
 - 私たちの [GitLab バリュー](/handbook/values/)に従います。
-- 透明性を持って、ほぼすべてを公開し、可能な限りミーティングを録画/ライブストリームします。
+- 透明性を持って、ほぼすべてを公開し、可能な限りミーティングを録画／ライブストリームします。
 - 私たちは取り組みたいことに取り組む機会を得ます。
 - 誰もが貢献できる、サイロはありません。
   - 目標は、製品がエンジニアリングとデザインに、最初から方向性と Issue の定義に関わる機会を与えることです。
@@ -174,7 +174,7 @@ CODEOWNER ファイルには、認証関連の挙動に影響を与える可能�
 
 Issue の作業を開始できる前に、予備調査の後にまずそれを見積もるべきです。特定の Issue の作業範囲が複数の分野（ドキュメント、デザイン、フロントエンド、バックエンドなど）に触れ、それらにわたって重大な複雑さを伴う場合は、各分野ごとに別々の Issue を作成することを検討してください（[例](https://gitlab.com/gitlab-org/gitlab/-/issues/9288)を参照）。
 
-PM が次のリリースのための[計画 Issue](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/authentication/-/issues/?sort=popularity&state=opened&label_name%5B%5D=Planning%20Issue&first_page_size=20)を作成した後、quad は検討すべき優先順位付けされた Issue のリストを集めます。その後、EM は見積もりが必要な Issue のチェックリストを含む「breakdown」Issue を作成します（[例](https://gitlab.com/gitlab-org/software-supply-chain-security/authentication/discussion/-/issues/45)）。グループのすべてのエンジニアがその Issue に割り当てられ、リストの重み付けまたは分解に参加すべきです。
+PM が次のリリースのための[計画 Issue](https://gitlab.com/groups/gitlab-org/software-supply-chain-security/authentication/-/issues/?sort=popularity&state=opened&label_name%5B%5D=Planning%20Issue&first_page_size=20)を作成した後、quad は検討すべき優先順位付けされた Issue のリストを集めます。その後、EM は見積もりが必要な Issue のチェックリストを含む「分解」Issue を作成します（[例](https://gitlab.com/gitlab-org/software-supply-chain-security/authentication/discussion/-/issues/45)）。グループのすべてのエンジニアがその Issue に割り当てられ、リストの重み付けまたは分解に参加すべきです。
 
 開発作業を見積もる際は、Issue に適切な重みを追加してください：
 
@@ -224,7 +224,7 @@ Issue の重みが 5 を超える場合（または 5 だが複数の Issue に�
 1. `~"workflow::in review"` - マージリクエストが提出され、レビューがリクエストされた
 1. `~"workflow::verification"` - 作業がマージされ、検証が必要
 1. `~"workflow::complete"` - 検証担当者によって作業が検証された。検証者が Issue をクローズしラベルを適用する
-1. `~"workflow::awaiting security release"` - （セキュリティ MR のみ）作業は完了しており、[backport](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/engineers.md#backports)を保留中
+1. `~"workflow::awaiting security release"` - （セキュリティ MR のみ）作業は完了しており、[バックポート](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/security/engineers.md#backports)を保留中
 
 Issue が見積もられ重みが付けられる前に、Issue の開発を開始すべきではありません。
 
@@ -281,7 +281,7 @@ T シャツサイジングのスケール：
 
 | 頻度 | ミーティング      | DRI    | 参加者 |トピック                                                              |
 | ----- | ----- | ----- | ----- | ----- |
-| 週次    | [Group-level meeting](https://docs.google.com/document/d/1xbwj81Rv2RfomqoQxbMGTxWsxoYczYfIbh_q74meot8/edit)（社内のみ）       | Product Manager | PM/EM/UX、任意でエンジニア | 現在または今後のロードマップのトピックを議論し、注目すべきエピック/Issue を取り上げ、優先イニシアチブの現状を提供する |
+| 週次    | [グループレベルミーティング](https://docs.google.com/document/d/1xbwj81Rv2RfomqoQxbMGTxWsxoYczYfIbh_q74meot8/edit)（社内のみ）       | Product Manager | PM/EM/UX、任意でエンジニア | 現在または今後のロードマップのトピックを議論し、注目すべきエピック／Issue を取り上げ、優先イニシアチブの現状を提供する |
 
 一回限りのトピック固有のミーティングについては、常にこれらのコールを録画して共有する（または[公開されているドキュメント](https://docs.google.com/document/d/1xbwj81Rv2RfomqoQxbMGTxWsxoYczYfIbh_q74meot8/edit)にメモを取る）ことを検討してください。
 
@@ -305,10 +305,10 @@ T シャツサイジングのスケール：
 
 <!-- include omitted: includes/engineering/software_supply_chain_security-shared-links.md (no localized version under content/ja/) -->
 
-- [Milestone retrospectives](https://gitlab.com/gl-retrospectives/sscs/authentication/-/issues/53)
+- [マイルストーンレトロスペクティブ](https://gitlab.com/gl-retrospectives/sscs/authentication/-/issues/53)
 - 私たちの Slack チャンネル
   - SSCS:Authentication [#g_sscs_authentication](https://gitlab.slack.com/archives/CLM1D8QR0)
-  - Daily standups [#g_sscs_authentication_daily](https://gitlab.slack.com/archives/C01311Z0LDD)
+  - デイリースタンドアップ [#g_sscs_authentication_daily](https://gitlab.slack.com/archives/C01311Z0LDD)
 - Issue ボード
-  - [Milestone board](https://gitlab.com/gitlab-org/gitlab/-/boards/4374016?not%5Blabel_name%5D%5B%5D=Quality&label_name%5B%5D=group%3A%3Aauthentication&label_name%5B%5D=Deliverable&milestone_title=17.4)
-  - [Task assignment board](https://gitlab.com/groups/gitlab-org/-/boards/4490634?label_name[]=Deliverable&label_name[]=group%3A%3Aauthentication&milestone_title=17.4)
+  - [マイルストーンボード](https://gitlab.com/gitlab-org/gitlab/-/boards/4374016?not%5Blabel_name%5D%5B%5D=Quality&label_name%5B%5D=group%3A%3Aauthentication&label_name%5B%5D=Deliverable&milestone_title=17.4)
+  - [タスク割り当てボード](https://gitlab.com/groups/gitlab-org/-/boards/4490634?label_name[]=Deliverable&label_name[]=group%3A%3Aauthentication&milestone_title=17.4)

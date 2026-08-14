@@ -27,7 +27,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 
 上記の監視対象のほとんど（リソース飽和度と集約 SLI）は、[**サービス概要ダッシュボード**](https://dashboards.gitlab.net/d/secret-detection-main/secret-detection3a-overview?orgId=1)で確認できます。
 
-繰り返しのアプリケーションエラーは通常、GitLab エラーモニタリング/[Sentry](https://new-sentry.gitlab.net/organizations/gitlab) ツールで確認できます。ただし、まだサービスとエラーモニタリングツールを統合していません。統合の進捗を追跡するには、この [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/499067)を参照してください。
+繰り返しのアプリケーションエラーは通常、GitLab エラーモニタリング／[Sentry](https://new-sentry.gitlab.net/organizations/gitlab) ツールで確認できます。ただし、まだサービスとエラーモニタリングツールを統合していません。統合の進捗を追跡するには、この [Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/499067)を参照してください。
 
 それまでの間、アプリケーション関連のエラーを探すために `ERROR` レベルのログメッセージをログで確認してください。**ログ**は[こちら](https://console.cloud.google.com/run/detail/us-east1/secret-detection/observability/logs?project=gitlab-runway-production)で確認できます。
 

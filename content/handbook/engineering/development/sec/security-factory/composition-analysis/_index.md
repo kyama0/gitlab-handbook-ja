@@ -232,9 +232,9 @@ Issue トラッカーで以下のラベルフィルターを使用して `SLA::B
 
 [私たちのポリシー](#security-policy)に一致し、関連プロジェクトで報告された項目に集中するためにフィルターを使用した脆弱性レポートを使用します。
 
-1. [Analyzers Vulnerability Report](https://gitlab.com/groups/gitlab-org/security-products/analyzers/-/security/vulnerabilities/?state=DETECTED&severity=CRITICAL,HIGH&projectId=13150952,15369510,24673064,52241202,6126012,9450192&activity=STILL_DETECTED)
+1. [アナライザー脆弱性レポート](https://gitlab.com/groups/gitlab-org/security-products/analyzers/-/security/vulnerabilities/?state=DETECTED&severity=CRITICAL,HIGH&projectId=13150952,15369510,24673064,52241202,6126012,9450192&activity=STILL_DETECTED)
     - レポートを手動で設定するには、すべての[共有](#shared)、[コンテナスキャン](#container-scanning)、[依存関係スキャン](#dependency-scanning)プロジェクトを選択し、`Still detected` アクティビティフィルターと `Needs Triage` ステータスを適用します。
-1. [License-db Vulnerability Report](https://gitlab.com/groups/gitlab-org/security-products/license-db/-/security/vulnerabilities/?state=DETECTED&severity=CRITICAL,HIGH&projectId=39193358,39229232,39233486,39298809,39622674,40857363,45266022&activity=STILL_DETECTED)
+1. [License-db 脆弱性レポート](https://gitlab.com/groups/gitlab-org/security-products/license-db/-/security/vulnerabilities/?state=DETECTED&severity=CRITICAL,HIGH&projectId=39193358,39229232,39233486,39298809,39622674,40857363,45266022&activity=STILL_DETECTED)
     - レポートを手動で設定するには、すべての [license-db](#license-db) プロジェクトを選択し、`Still detected` アクティビティフィルターと `Needs Triage` ステータスを適用します。
 
 各項目について調査し、[却下](#dismissing-a-vulnerability)または[確認](#confirming-a-vulnerability)します。確かな脅威があるか不明な場合は、[エスカレート](#creating-security-issues)して、私たちの[アプリケーションセキュリティチーム](/handbook/security/product-security/security-platforms-architecture/application-security/)に確認してください。
@@ -253,7 +253,7 @@ Issue トラッカーで以下のラベルフィルターを使用して `SLA::B
 
 [私たちのポリシー](#security-policy)に一致し、関連プロジェクトで報告された項目に集中するためにフィルターを使用した脆弱性レポートを使用します。
 
-1. [Upstream Scanners Vulnerability Report](https://gitlab.com/groups/gitlab-org/security-products/dependencies/-/security/vulnerabilities/?state=DETECTED&projectId=30616761,30684590,35335143,39545454,39545481,51420921&severity=CRITICAL,HIGH&activity=STILL_DETECTED)
+1. [アップストリームスキャナー脆弱性レポート](https://gitlab.com/groups/gitlab-org/security-products/dependencies/-/security/vulnerabilities/?state=DETECTED&projectId=30616761,30684590,35335143,39545454,39545481,51420921&severity=CRITICAL,HIGH&activity=STILL_DETECTED)
     - レポートを手動で設定するには、すべての[アップストリームスキャナー](#upstream-scanner-mirrors)プロジェクトを選択します。
 
 アップストリームスキャナーで発見された脆弱性については、GitLab の Issue トラッカーで Issue を作成し、関連するオープンソースコミュニティと連携して解決策を提供する必要があります。最後の手段として、脆弱性を早急に修正するために一時的にローカルでパッチを当てたり、アップストリームプロジェクトをフォークしたりすることができます。
