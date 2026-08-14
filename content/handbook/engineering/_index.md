@@ -408,7 +408,7 @@ FCL のスコープを決定する際には、副作用と関連原因を区別�
 
 [Product Analytics チーム](/handbook/product/groups/product-analysis/engineering/metrics/) は、Engineering Performance Indicator の維持に責任があります。KPI / RPI に関する作業は、[Product Analytics タスク受付トラッカー](https://gitlab.com/gitlab-data/product-analytics/-/issues/new?issuable_template=PI%20Chart%20Help) を使用して追跡されます。
 
-## 手動検証
+## 手動検証 {#manual-verification}
 
 私たちはコードが期待通りに動作することを手動で検証します。自動テストカバレッジは不可欠ですが、手動検証は機能が意図通りに動作し、バグが修正されているという、より高いレベルの信頼を提供します。
 

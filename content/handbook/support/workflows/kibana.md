@@ -14,7 +14,7 @@ lastmod: 2026-06-25T15:51:50+08:00
 
 このドキュメントでは、Kibana とは何か、検索方法、結果の解釈方法、特定の情報を取得するためのヒントとコツを提供します。
 
-## Kibana の使い方
+## Kibana の使い方 {#using-kibana}
 
 [Kibana](https://log.gprd.gitlab.net/) は [Elasticsearch](https://en.wikipedia.org/wiki/Elasticsearch) 用の [オープンソースのデータ可視化プラグイン](https://www.elastic.co/kibana) です。Elasticsearch クラスタ上にインデックスされたコンテンツに対する可視化機能を提供します。Support Engineering は Kibana を使って、GitLab.com 上のエラーイベントの検索と、ユーザーによってその様々な側面に対して特定の変更がいつ行われたかの検出の両方を行っています。
 

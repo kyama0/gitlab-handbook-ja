@@ -41,7 +41,7 @@ lastmod: "2026-08-13T15:10:33+03:00"
 | [CVE ID リクエスト - プラットフォーム UI](https://docs.gitlab.com/ee/user/application_security/cve_id_request.html) | {{< member-by-gitlab "abellucci" >}} | [Govern:Threat Insights](/handbook/product/categories/#threat-insights-group) |  |
 | [ユーザー招待フロー](https://docs.gitlab.com/ee/user/project/members/#add-users-to-a-project) | {{< member-by-gitlab "hsutor" >}} | [Govern:Authentication](https://about.gitlab.com/direction/software_supply_chain_security/authentication/) |  |
 
-## 技術的な境界
+## 技術的な境界 {#technical-boundaries}
 
 エンドツーエンドの技術的ソリューションの所有権は複数のグループにまたがります。このセクションでは、[Threat Insights](/handbook/product/categories/#threat-insights-group) と [Sec セクション](/handbook/product/categories/#sec-section)の残りのグループ間でのコードアーティファクトのクロスグループメンテナーシップを明確にします。
 

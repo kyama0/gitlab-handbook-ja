@@ -292,7 +292,7 @@ Engineering 主導の Section、Stage、Group については、同様のこと�
 
 例は [team members data README](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/data/team_members/person/README.md#team-tags) に示されています。
 
-## DevOps Stage
+## DevOps Stage {#devops-stages}
 
 ![DevOps ダイアグラム](/images/product/categories/devops-diagram.svg)
 

@@ -37,7 +37,7 @@ lastmod: "2026-04-22T13:35:43+00:00"
 リリースアーティファクトはミラーリングされたリポジトリから専用のCIランナーインフラストラクチャを使用してビルドされます。
 どのミラーが存在するか、何がどこでビルドされるか、およびこのアーキテクチャの背後にある理由の詳細については、[ビルドインフラストラクチャドキュメント](/handbook/engineering/infrastructure-platforms/gitlab-delivery/build-infrastructure.md)を参照してください。
 
-## 壊れたステーブルブランチ
+## 壊れたステーブルブランチ {#broken-stable-branches}
 
 ステーブルブランチのパイプラインが失敗した場合、[壊れたmasterインシデント](/handbook/engineering/workflow/#broken-master-escalation)と同じエスカレーションプロセスに従います。ただし、1つの重要な違いがあります: **インシデントはmaster-broken-incidentsプロジェクトではなく、[gitlab-org/release/tasks](https://gitlab.com/gitlab-org/release/tasks)プロジェクトに作成されます**。
 

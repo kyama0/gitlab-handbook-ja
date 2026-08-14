@@ -219,7 +219,7 @@ GitLab は、毎四半期、お客様にアナリストインタビューや市�
 
 Analyst Relations チームは、必要なお客様の参加者をソーシングする十分な時間を確保するため、新しいアンケートやインタビューのニーズについてできるだけ早期に Growth Community Programs チームと整合させます。
 
-### Executive Advisory Board（EAB）プログラム
+### Executive Advisory Board（EAB）プログラム {#executive-advisory-board-eab-program}
 
 EAB は、ビジョナリーな DevSecOps 戦略でビジネスとテクノロジーのトランスフォーメーションを推進している、選ばれた GitLab エンタープライズお客様アカウントの VP+ 級エグゼクティブ 12〜15 名による招待制のコホートです。年間プログラムを通じて、ボードは対面およびバーチャルで集まり、GitLab のリーダーと関与し、革新的なベストプラクティスを学び、GitLab の未来を形作るためのインサイトを共有します。EAB プログラムの詳細については、[内部ブリーフ](https://docs.google.com/document/d/15xSt5EPJEL988Y5j5qDWdtXnKrOI24pySdlwKp9affE/edit?tab=t.0) をご確認ください。
 

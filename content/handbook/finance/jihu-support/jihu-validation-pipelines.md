@@ -25,7 +25,7 @@ lastmod: "2025-11-20T17:06:05-08:00"
 検出の仕組みとこのバリデーションパイプラインの実行方法の技術的な詳細については、
 [as-if-JH クロスプロジェクトダウンストリームパイプライン](https://docs.gitlab.com/ee/development/pipelines/#as-if-jh-cross-project-downstream-pipeline)をご確認ください。
 
-## バリデーションパイプラインが失敗した場合の対処法
+## バリデーションパイプラインが失敗した場合の対処法 {#what-to-do-when-the-validation-pipeline-failed}
 
 バリデーションパイプラインが失敗した場合は、以下のワークフローに従ってください：
 

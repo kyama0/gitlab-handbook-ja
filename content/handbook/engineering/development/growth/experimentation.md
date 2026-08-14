@@ -172,7 +172,7 @@ Matej Latin は彼のブログ記事「[Small experiments, significant results a
 主なアイデアは、実験に対してイテレーティブなアプローチを目指すことです。
 「デプロイする価値があり、進め方を知るのに十分なデータをまだ提供するこの実験のよりシンプルなバージョンはありますか？」と自問してください。
 
-## 実験ステータス
+## 実験ステータス {#experiment-status}
 
 リアルタイムの実験ロールアウトステータスについて、GitLab チームメンバーは[実験 API](https://gitlab.com/api/v4/experiments)（[ドキュメント](https://docs.gitlab.com/ee/api/experiments.html)）を表示できます（ブラウザ用の JSON ビューアを推奨）。
 

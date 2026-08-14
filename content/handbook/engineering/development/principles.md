@@ -142,7 +142,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 ## 予測可能性 {#predictability}
 
-### 技術的意思決定の優先順位付け
+### 技術的意思決定の優先順位付け {#prioritizing-technical-decisions}
 
 業務の優先順位付け方法、および私たちの技術的意思決定を導くべき[プロダクトマネジメントセクション](/handbook/product/product-processes/cross-functional-prioritization/)を参照してください。
 
@@ -219,7 +219,7 @@ GitLab では、[アーキテクチャデザインワークフロー](/handbook/
 
 GitLab の外でツールを構築することを検討する際は、[プロダクトハンドブックで説明されているドッグフーディングプロセス](/handbook/product/product-processes/dogfooding-for-r-d/)に従ってください。
 
-### コード品質と標準
+### コード品質と標準 {#code-quality-and-standards}
 
 コード品質と標準を維持する必要があります。一般的に[開発ガイド](https://docs.gitlab.com/ee/development/)、特に自分のグループに関連するガイドに精通していることが非常に重要です:
 

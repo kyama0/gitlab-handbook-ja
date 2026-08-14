@@ -13,7 +13,7 @@ lastmod: "2026-05-29T14:14:34+02:00"
 
 マージリクエストはすべての Distribution エンジニアの責任です。基本的には、[コードレビューのエンジニアリングプロセス](/handbook/engineering/workflow/code-review/) に従います。
 
-## ワークフロー
+## ワークフロー {#workflow}
 
 Distribution チームはコードレビュープロセスで [レビュアー機能](https://docs.gitlab.com/ee/development/code_review.html#dogfooding-the-reviewers-feature) を使用します。プロセスは以下のとおりです:
 

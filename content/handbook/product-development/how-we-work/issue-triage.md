@@ -100,7 +100,7 @@ Issue の深刻度を決定したら、なぜその深刻度を選んだのか�
 1. 正当化を伴う [`~"backlog::no-commitment"](https://gitlab.com/groups/gitlab-org/-/epics/18639)`。
 1. 修正なしでクローズされる理由の正当化。
 
-### 深刻度 SLO
+### 深刻度 SLO {#severity-slos}
 
 深刻度ラベルは、以下のラベルが付いた Issue の完了時間を定義するのにも役立ちます。
 
