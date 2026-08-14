@@ -75,7 +75,7 @@ GitLab では、すべてのコードはマージ可能になる前にレビュ�
 変更が非常に軽微でない限り、または同じバージョンで導入されたバグを修正する場合を除き、[`Changelog` Git コミットトレーラー](https://docs.gitlab.com/ee/development/changelog.html)を使用してチェンジログエントリを作成してください。
 ボランティアコントリビューターに認識を与えるためにのみ名前を含めるため、エントリに自分の名前を含めないでください。
 
-### GitLab EE での作業（開発者ライセンス）
+### GitLab EE での作業（開発者ライセンス） {#working-on-gitlab-ee-developer-licenses}
 
 Premium および Ultimate 機能のロックを解除するには、有効なサブスクリプションが必要です。
 

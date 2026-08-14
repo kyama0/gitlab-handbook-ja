@@ -150,7 +150,7 @@ Chrome と Firefox にキーワード検索を追加する手順は上記にあ�
 
 これをテストするには、新しいタブに移動してアドレスバーにテキストを入力します。サジェストリストの一番下に新しい検索エンジンのアイコンが表示されるはずです。
 
-## Alfred (MacOS) を使った検索
+## Alfred (MacOS) を使った検索 {#searching-using-alfred-on-macos}
 
 [Alfred](https://www.alfredapp.com/) でキーワード検索を作成できます。
 以下の各 URL をクリックすると Alfred に追加できます。

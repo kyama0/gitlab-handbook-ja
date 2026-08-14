@@ -1,9 +1,9 @@
 ---
 title: CorpSec Engineering
 upstream_path: /handbook/security/corporate/engineering/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-lastmod: "2026-07-28T16:24:24+01:00"
-translated_at: "2026-07-30T07:50:13+09:00"
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
+lastmod: "2026-08-13T20:57:11+02:00"
+translated_at: "2026-08-14T06:06:19+09:00"
 translator: claude
 stale: false
 ---
@@ -11,7 +11,7 @@ stale: false
 
 Engineering チームのメンバーは、私たちが管理する Tech Stack アプリケーションのカテゴリーに基づいて、機能別に編成されています。
 
-CorpSec は、AWS、Azure、Google Cloud のアイデンティティおよびアクセス管理（IAM）を担当します。クラウドリソースの管理は、[Infrastructure Security](/handbook/security/product-security/infrastructure-security/) と [Infrastructure Platforms](/handbook/engineering/infrastructure-platforms/)（SRE）チームが担当します。
+CorpSec は、AWS、Azure、Google Cloud のアイデンティティおよびアクセス管理（IAM）を担当します。クラウドリソースの管理は、[Infrastructure Security](/handbook/security/product-security/infrastructure-security/)と [Infrastructure Platforms](/handbook/engineering/infrastructure-platforms/)（SRE）チームが担当します。
 
 ## システムオーナー
 
@@ -75,7 +75,7 @@ AuthN および AuthZ のポリシー<br>
 <a href="/handbook/security/corporate/systems/slack">Slack</a><br>
 </td>
 <td>
-<code>EM</code> David Zhu
+<code>EM</code> David Zhu<br>
 </td>
 <td>
 Andrew Rishwain<br>
@@ -83,8 +83,6 @@ Erik Lentz<br>
 Jacob Waters<br>
 Jenny Wong<br>
 Madison Spry<br>
-Marcus Whitaker<br>
-Mohammed Al Kobaisy<br>
 Steve Ladgrove<br>
 Vlad Stoianovici<br>
 </tr>

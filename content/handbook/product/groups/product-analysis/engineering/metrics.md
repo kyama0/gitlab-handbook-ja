@@ -147,7 +147,7 @@ Review Rate は、特定の時間枠内にチームメンバーが完了する�
 
 これらのメトリクスを改善するための提案はありますか？ 新しい [Product Data Insights Issue](https://gitlab.com/gitlab-data/product-analytics/-/issues/new) を作成してメモを残してください。
 
-### 作業タイプの分類
+### 作業タイプの分類 {#work-type-classification}
 
 Issue、Epic、マージリクエストを分類するために以下のタイプラベルを使用しています。
 

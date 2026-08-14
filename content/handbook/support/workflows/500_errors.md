@@ -77,7 +77,7 @@ data/repositories/@hashed/ee/98/ee98b34f343b4e48106fff666d12b61f23f.git/objects/
 
 [Kibana ワークフローの 500 固有セクション](/handbook/support/workflows/kibana#searching-kibana-for-500-level-errors) を参照してください。
 
-#### Sentry の検索
+#### Sentry の検索 {#searching-sentry}
 
 [Sentry ワークフロー](/handbook/support/workflows/sentry) を参照してください。
 

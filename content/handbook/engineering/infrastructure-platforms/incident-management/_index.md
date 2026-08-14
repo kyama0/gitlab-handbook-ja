@@ -432,7 +432,7 @@ _インシデント宣言の結果_
 
 GitLab インシデント Issue が開かれるだけでなく、専用のインシデント Slack チャンネルも開かれます。incident.io は対応する [インシデント告知チャンネル](#incident-announcement-channels) にこれらすべてのリソースへのリンクを投稿します。インシデント宣言の結果として作成およびリンクされるインシデント Slack チャンネルに参加して、オンコールエンジニアとインシデントを議論してください。S3 または S4 を宣言して EOC の支援が必要な場合は、Slack チャンネルに `/inc escalate` と入力してエスカレーションしてください。
 
-## Outage、Degraded、Disruption の定義およびコミュニケーションのタイミング
+## Outage、Degraded、Disruption の定義およびコミュニケーションのタイミング {#definition-of-outage-vs-degraded-vs-disruption-and-when-to-communicate}
 
 これは Status.io の用語に対する Service Disruption (Outage)、Partial Service Disruption、Degraded Performance の定義の初回改訂版です。
 データは [Key Service Metrics Dashboard](https://dashboards.gitlab.net/d/general-service/service-platform-metrics?orgId=1) のグラフに基づいています。

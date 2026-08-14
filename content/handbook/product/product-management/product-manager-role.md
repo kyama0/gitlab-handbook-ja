@@ -157,7 +157,7 @@ Deep Dive 面接に関する詳細と手順は[こちら](https://gitlab.com/git
 1. [休暇を伝える](/handbook/people-group/time-off-and-absence/time-off-types/)
 1. [PM カバレッジ Issue を作成する](https://gitlab.com/gitlab-com/Product/-/issues/new?issuable_template=PM-Coverage)（詳細は下記）
 
-### PM カバレッジ Issue の作成
+### PM カバレッジ Issue の作成 {#creating-a-pm-coverage-issue}
 
 [この Issue テンプレート](https://gitlab.com/gitlab-com/Product/-/issues/new?issuable_template=PM-Coverage)を使用して、ハンドシェイクの責任を定義できます。
 長期休暇の場合、あなたが不在の間にプロダクトの意思決定を行える 1 名以上の Directly Responsible Individual（DRI）を見つけることが重要です。

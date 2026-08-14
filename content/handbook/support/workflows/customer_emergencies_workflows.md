@@ -248,7 +248,7 @@ CEOC として、緊急対応を以下の段階で解決するために、顧客
    これには、GitLab URL、Zendesk URL、Slack ハンドル、Slack 会話が含まれます。これにより、何も失われないようにすることができます。
    ![Pairify emoji](/images/support/workflows/assets/pairify.png "Pairify emoji") (`:pairify:`) を使用してこれをスケジュールできます。
 
-#### 緊急リクエストのトリアージ
+#### 緊急リクエストのトリアージ {#triage-the-emergency-request}
 
 私たちの最初のタスクは、緊急リクエストの正しい前進方法を **すばやく** 判断することです。ほとんどの場合、それは通話を提案するか、顧客が提供した通話に参加することを意味します。そうでない場合もあります。
 

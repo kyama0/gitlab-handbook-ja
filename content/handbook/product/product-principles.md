@@ -38,7 +38,7 @@ stale: false
 
 DevOps ライフサイクル全体のためのシングルアプリケーションとして、GitLab はアイデアを素早く本番環境へ持っていけるようにすることを目指します。私たちはそれを実現しつつ、おもちゃのようなアプリのデモや単純で些細な例で自分たちのケイパビリティを誇示することは避けます。なぜなら、[プロトタイプを作るのは簡単だが、本番のラインを作るのは難しい](https://www.businessinsider.com/elon-musk-says-building-factory-100-times-harder-than-making-car-2019-3)ことを理解しているからです。
 
-### Minimal Valuable Change (MVC)
+### Minimal Valuable Change (MVC) {#the-minimal-valuable-change-mvc}
 
 Minimal Valuable Change（MVC）は、ユーザー、顧客、そしてより広いコミュニティにとって、測定可能な最小の改善を届けるための GitLab のアプローチです。
 
@@ -101,7 +101,7 @@ MVC アプローチは、私たちのイテレーションの精神の副産物�
 
 この原則は SaaS のみを意味するわけではありません。SaaS とセルフマネージドの間の同等性に関する詳細は、私たちの[パリティ原則](#design-for-self-managed-for-feature-parity-between-deployments)を参照してください。
 
-#### フィードバック Issue
+#### フィードバック Issue {#feedback-issues}
 
 MVC アプローチは、イテレーションしながら最大限のフィードバックを得ることを可能にします。そのフィードバックを集めやすくするために、Product Manager はフィードバック Issue（[例](https://gitlab.com/gitlab-org/manage/general-discussion/-/issues/15367)）を作成して、ユーザーからの提案や体験を集約することが推奨されます。認知のために、リリースポストの項目や関連する実装 Issue でフィードバック Issue に言及することを検討してください。
 
@@ -141,7 +141,7 @@ _学びの機会となりうる失敗があれば、このページに MR を作
 
 社内全体には、これが成功した例が他にも数多くあります。Product Manager として、あなたは自分の領域に関連するオープンソースの世界をモニタリングし、新しい革新的なツールがどこで開発されているかを確認し、それらを統合することを恐れるべきではありません。1 つ覚えておくべきことは、統合とは、ツールが GitLab とどのように連携するかを説明するブログ記事から、自社のインストールの中にバンドルすることまで、何でもあり得るということで、これはイテレーティブに発展できます。
 
-### Convention over Configuration（設定より規約）
+### Convention over Configuration（設定より規約） {#convention-over-configuration}
 
 アプリケーション開発ツールを使うときの自然な傾向は、押すボタンや回すつまみの数々を作りたくなることだと私たちは理解しています。しかし私たちは、アプリケーションにオプションを追加することが、必ずしもそのアプリケーションのユーザーエクスペリエンスを向上させるわけではないと信じています。ユーザーに最善のサービスを提供する最良の方法は、必要とする機能を提供しつつ、複雑さを減らすアプリケーションを作ることです。
 

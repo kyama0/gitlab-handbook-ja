@@ -39,7 +39,7 @@ GitLab チームメンバーは、`suppress-contributor-links` ラベルを追�
 
 広範コミュニティのマージリクエストとは、<https://about.gitlab.com/company/team/> に存在しない人 (任意のボット、サービスアカウントユーザー、または個人契約者を除く) が開いた MR です。
 
-### ラベル
+### ラベル {#labels}
 
 - `Community contribution` ラベルは、広範コミュニティメンバーが提出した MR に [GitLab Bot](https://gitlab.com/gitlab-bot) によって自動的に適用されます。
   - MR のリストは [`gitlab-org` のマージリクエストリスト](https://gitlab.com/groups/gitlab-org/-/merge_requests?label_name[]=Community+contribution)で確認できます。
@@ -77,7 +77,7 @@ GitLab チームメンバーがコミュニティ貢献に関する質問があ�
 
 マージリクエストコーチに関する詳細情報 (マージリクエストコーチになる方法を含む) は、[MR コーチライフサイクルページ](/handbook/marketing/developer-relations/engineering/merge-request-coach-lifecycle)で見つけることができます。
 
-## GitLab Enterprise Edition (EE) への貢献
+## GitLab Enterprise Edition (EE) への貢献 {#contributing-to-the-gitlab-enterprise-edition-ee}
 
 ### コミュニティ貢献者向け
 

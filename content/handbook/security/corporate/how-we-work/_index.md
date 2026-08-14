@@ -1,34 +1,34 @@
 ---
 title: 私たちの働き方（CorpSec）
 upstream_path: /handbook/security/corporate/how-we-work/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T07:45:33+09:00"
+upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
+translated_at: "2026-08-14T06:06:19+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T16:24:24+01:00"
+lastmod: "2026-08-13T20:57:11+02:00"
 ---
 
 私たちには 4 つの働き方のアプローチがあります：
 
 1. **[サポートヘルプデスクサービス](/handbook/security/corporate/support)** - チームメンバーと一時的なサービスプロバイダー（コントラクター）に対して 24x5 のテクニカルサポートとアクセスリクエストを提供しています。アクセスリクエストの優先順位付けには、`corpsec-priority::ar-high`（同日／翌日）または `corpsec-priority::ar-low`（同週／翌週）ラベルでご協力ください。
 
-2. **構成オペレーション** - CorpSec が責任を持つ [SaaS システム](/handbook/security/corporate/systems) の設定に関する日常的な小さな構成および変更リクエスト（1 時間未満）に対応します。これにはヘルプデスクアナリストからのエスカレーションも含まれます。リクエストは [Issue トラッカー](#issue-tracker) に Issue を作成し、`corpsec-priority::ops-high`（同日／翌日）または `corpsec-priority::ops-low`（同週／翌週）ラベルを追加してください。事前のガイダンスは Slack の Compass アプリ（上部検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com で求めることができ、オンコールチームメンバーが応答したり、適切なエンジニアにタグを付けたりします。
+2. **構成オペレーション** - CorpSec が責任を持つ [SaaS システム](/handbook/security/corporate/systems)の設定に関する日常的な小さな構成および変更リクエスト（1 時間未満）に対応します。これにはヘルプデスクアナリストからのエスカレーションも含まれます。リクエストは [Issue トラッカー](#issue-tracker)に Issue を作成し、`corpsec-priority::ops-high`（同日／翌日）または `corpsec-priority::ops-low`（同週／翌週）ラベルを追加してください。事前のガイダンスは Slack の Compass アプリ（上部検索バーに「Compass」と入力すると見つかります）または it-help@gitlab.com で求めることができ、オンコールチームメンバーが応答したり、適切なエンジニアにタグを付けたりします。
 
 3. **[エンジニアリングイテレーション](#iteration-cadences)** - 大きなリクエスト（1 時間以上）に対しては、チームのキャパシティと優先順位の競合に基づいてキューに入れられた、2 週間のアジャイルイテレーションスプリントサイクルがあります。これには他のチームのプロジェクトに関連する事前計画された実装作業も含まれます。Issue が作成されると、期日要件に基づいて優先順位を割り当て、バックログに追加するか、今後のイテレーション中にスケジュールします。Issue がイテレーションに追加されると、Issue 内で別途連絡されない限り、または担当エンジニアとの議論で別途連絡されない限り、2 週間サイクルの最終日までに完了することが期待できます。
 
-    > **可能な限り早く（理想的には 3〜6 週間前、ドラフトでも構いません）** Issue を作成してください。これによってキューに入り、土壇場のリクエストでチームメンバーが危機モードでバタバタすることを避けられます。あなたのチームが数か月前から知っていたのに、土壇場で 1〜2 日で何かを処理するように求めるような状況は避けようとしています。期日は数週間前に伝えられたはずです。
+    > **可能な限り早く（理想的には 3 〜 6 週間前、ドラフトでも構いません）** Issue を作成してください。これによってキューに入り、土壇場のリクエストでチームメンバーが危機モードでバタバタすることを避けられます。あなたのチームが数か月前から知っていたのに、土壇場で 1 〜 2 日で何かを処理するように求めるような状況は避けようとしています。期日は数週間前に伝えられたはずです。
 
-4. **エンジニアリングイニシアチブ** - 私たちの長期的な[方向性](https://internal.gitlab.com/handbook/security/corporate/direction/)の一部である、[ロードマップ](https://internal.gitlab.com/handbook/security/corporate/roadmap/)上のプログラム管理された大規模な戦略的イニシアチブです。新しいプロセス、サービス、システムへのリサーチ、ディスカバリー、実装、移行に整合した目標および主要結果（OKR）があります。現在のイニシアチブと進捗を確認するには、[エピック](#epics)を参照してください。
+4. **エンジニアリングイニシアチブ** - 私たちの[ロードマップ](https://internal.gitlab.com/handbook/security/corporate/roadmap/)上でプログラム管理され、長期的な[方向性](https://internal.gitlab.com/handbook/security/corporate/direction/)の一部となる大規模な戦略的イニシアチブです。新しいプロセス、サービス、システムへのリサーチ、ディスカバリー、実装、移行に整合した目標および主要結果（OKR）があります。現在のイニシアチブと進捗を確認するには、[エピック](#epics)を参照してください。
 
 ## エピック {#epics}
 
-大規模イニシアチブと OKR のすべてのエピックは、[CorpSec グループ](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/epics?state=opened&page=1&sort=start_date_desc) で作成されます。
+大規模イニシアチブと OKR のすべてのエピックは、[CorpSec グループ](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/epics?state=opened&page=1&sort=start_date_desc)で作成されます。
 
-[ガントチャートロードマップ](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/roadmap?state=opened&sort=START_DATE_ASC&layout=QUARTERS&timeframe_range_type=THREE_YEARS&progress=WEIGHT&show_progress=true&show_milestones=false&milestones_type=ALL&show_labels=true) もご覧ください。
+[ガントチャートロードマップ](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/roadmap?state=opened&sort=START_DATE_ASC&layout=QUARTERS&timeframe_range_type=THREE_YEARS&progress=WEIGHT&show_progress=true&show_milestones=false&milestones_type=ALL&show_labels=true)もご覧ください。
 
 ## Issue トラッカー {#issue-tracker}
 
-すべての Issue は、私たちが多くの時間をかけて実行する作業、または容易に発見可能な監査証跡が必要な構成およびプロビジョニング作業のために、[CorpSec Issue トラッカー](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues) で作成されます。コンサルティングの質問やサポートのために、他のチームの Issue トラッカーでタグ付けされることもあります。
+すべての Issue は、私たちが多くの時間をかけて実行する作業、または容易に発見可能な監査証跡が必要な構成およびプロビジョニング作業のために、[CorpSec Issue トラッカー](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues)で作成されます。コンサルティングの質問やサポートのために、他のチームの Issue トラッカーでタグ付けされることもあります。
 
 ## ワークフロー {#workflow}
 
@@ -127,7 +127,7 @@ classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
 
 私たちは（システム／チームに応じて）週次または隔週でスプリント計画を実施し、`corpsec-status::inbox` と `corpsec-status::backlog` ラベルが付いた Issue を評価します。
 
-完全な Issue のフローを確認するには、[ワークフロー](#workflow) を参照してください。
+完全な Issue のフローを確認するには、[ワークフロー](#workflow)を参照してください。
 
 - [ケイデンススケジュール](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/cadences)
 
@@ -143,34 +143,34 @@ classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
 
 ### ヘルプデスクアナリスト
 
-- (List) [アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues)
-  - (List) [プロビジョニングするベースラインエンタイトルメント](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?sort=created_date&state=opened&label_name%5B%5D=BaselineEntitlementAR&label_name%5B%5D=IT%20System%3A%3ABaseline%20Entitlement&first_page_size=100)
-  - (List) [チームメンバーアクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?sort=created_date&state=opened&label_name%5B%5D=AR-Approval%3A%3AManager%20Approved&label_name%5B%5D=IT%3A%3Ato%20do&first_page_size=100)
-  - (List) [一時的なサービスプロバイダーのアクセスリクエスト](https://gitlab.com/gitlab-com/temporary-service-providers/lifecycle/-/issues/)
+- （リスト） [アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues)
+  - （リスト） [プロビジョニングするベースラインエンタイトルメント](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?sort=created_date&state=opened&label_name%5B%5D=BaselineEntitlementAR&label_name%5B%5D=IT%20System%3A%3ABaseline%20Entitlement&first_page_size=100)
+  - （リスト） [チームメンバーアクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?sort=created_date&state=opened&label_name%5B%5D=AR-Approval%3A%3AManager%20Approved&label_name%5B%5D=IT%3A%3Ato%20do&first_page_size=100)
+  - （リスト） [一時的なサービスプロバイダーのアクセスリクエスト](https://gitlab.com/gitlab-com/temporary-service-providers/lifecycle/-/issues/)
 
 ### エンジニアリング
 
-- (Report) [マネジメントステータスレポート（毎日更新）](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/blob/main/status_report.md?ref_type=heads)
-- かんばんボード
-  - (Board) All Teams - [現在のイテレーション](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?iteration_id=Current&iteration_cadence_id=1053644) - [イテレーションスプリント Issue（ステータス別）](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111)
-  - (Board) CorpSec Devices - [現在のイテレーション](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?label_name[]=corpsec-team-device&iteration_id=Current&iteration_cadence_id=1053644) - [全オープン Issue](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?label_name[]=corpsec-team-device)
-  - (Board) Helpdesk - [全オープン Issue](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?label_name[]=corpsec-team-helpdesk)
-  - (Board) Identity - [現在のイテレーション](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?label_name[]=corpsec-team-identity&iteration_id=Current&iteration_cadence_id=1053644) - [全オープン Issue](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?label_name[]=corpsec-team-identity)
+- （レポート） [マネジメントステータスレポート（毎日更新）](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/blob/main/status_report.md?ref_type=heads)
+- カンバンボード
+  - （ボード） All Teams - [現在のイテレーション](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?iteration_id=Current&iteration_cadence_id=1053644) - [イテレーションスプリント Issue（ステータス別）](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111)
+  - （ボード） CorpSec Devices - [現在のイテレーション](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?label_name[]=corpsec-team-device&iteration_id=Current&iteration_cadence_id=1053644) - [全オープン Issue](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?label_name[]=corpsec-team-device)
+  - （ボード） Helpdesk - [全オープン Issue](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?label_name[]=corpsec-team-helpdesk)
+  - （ボード） Identity - [現在のイテレーション](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?label_name[]=corpsec-team-identity&iteration_id=Current&iteration_cadence_id=1053644) - [全オープン Issue](https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?label_name[]=corpsec-team-identity)
 - チーム別 Issue リスト
-  - (List) [小規模な日常運用リクエスト](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&or%5Blabel_name%5D%5B%5D=corpsec-metric%3A%3Aar&or%5Blabel_name%5D%5B%5D=corpsec-metric%3A%3Aops&first_page_size=20)
-  - (List) [大規模なプロジェクト作業（CorpSec Devices および Identity Engineering）](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&or%5Blabel_name%5D%5B%5D=corpsec-team-identity&or%5Blabel_name%5D%5B%5D=corpsec-team-device&first_page_size=20)
-  - (List) [CorpSec Devices の Issue](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-team-device&first_page_size=20)
-  - (List) [Helpdesk Services の Issue](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-team-helpdesk&first_page_size=20)
+  - （リスト） [小規模な日常運用リクエスト](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&or%5Blabel_name%5D%5B%5D=corpsec-metric%3A%3Aar&or%5Blabel_name%5D%5B%5D=corpsec-metric%3A%3Aops&first_page_size=20)
+  - （リスト） [大規模なプロジェクト作業（CorpSec Devices および Identity Engineering）](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&or%5Blabel_name%5D%5B%5D=corpsec-team-identity&or%5Blabel_name%5D%5B%5D=corpsec-team-device&first_page_size=20)
+  - （リスト） [CorpSec Devices の Issue](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-team-device&first_page_size=20)
+  - （リスト） [Helpdesk Services の Issue](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-team-helpdesk&first_page_size=20)
 - ステータス別 Issue リスト
-  - (List) [Inbox リクエスト（毎日レビュー）](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Ainbox&label_name%5B%5D=corpsec-metric%3A%3Ainbox&first_page_size=20)
-  - (List) [トリアージ進行中（隔週でレビュー）](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-metric%3A%3Atriage&first_page_size=20)
-  - (List) [バックログ](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Abacklog&first_page_size=20)
-  - (List) [スケジュール済み](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Ascheduled&first_page_size=20)
-  - (List) [作業中（WIP）](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Awip&first_page_size=20)
-  - (List) [ビジネス待ち](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Awaiting&first_page_size=20)
-  - (List) [技術的ブロック中](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Ablocked&first_page_size=20)
-  - (List) [最終レビュー](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Areview&first_page_size=20)
-- (List) 特定のシステム向けの Issue へのリンクは、[CorpSec Systems](/handbook/security/corporate/systems) ハンドブックページを参照してください。
+  - （リスト） [Inbox リクエスト（毎日レビュー）](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Ainbox&label_name%5B%5D=corpsec-metric%3A%3Ainbox&first_page_size=20)
+  - （リスト） [トリアージ進行中（隔週でレビュー）](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-metric%3A%3Atriage&first_page_size=20)
+  - （リスト） [バックログ](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Abacklog&first_page_size=20)
+  - （リスト） [スケジュール済み](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Ascheduled&first_page_size=20)
+  - （リスト） [作業中（WIP）](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Awip&first_page_size=20)
+  - （リスト） [ビジネス待ち](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Awaiting&first_page_size=20)
+  - （リスト） [技術的ブロック中](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Ablocked&first_page_size=20)
+  - （リスト） [最終レビュー](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?sort=created_date&state=opened&label_name%5B%5D=corpsec-status%3A%3Areview&first_page_size=20)
+- （リスト） 特定のシステム向けの Issue へのリンクは、[CorpSec Systems](/handbook/security/corporate/systems) ハンドブックページを参照してください。
 
 ### エンジニアリングチームメンバー
 
@@ -178,95 +178,77 @@ classDef fuchsia fill:#f0abfc,stroke:#c026d3,stroke-width:1px;
 <thead>
 <tr>
 <th>チームメンバー</th>
-<th>CorpSec Issues</th>
+<th>CorpSec Issue</th>
 <th>担当 AR</th>
 <th>ハンドブック MR</th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="https://gitlab.com/cshankgitlab">Clayton Shank</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=cshankgitlab">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=cshankgitlab">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=cshankgitlab&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=cshankgitlab">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=cshankgitlab">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=cshankgitlab">Internal</a></td>
+<td><a href="https://gitlab.com/arishwain">Andrew Rishwain</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=arishwain">Issue</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=arishwain">カンバン</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=arishwain&iteration_id=Current&iteration_cadence_id=1053644">現在のイテレーション</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=arishwain">ARs</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=arishwain">公開</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=arishwain">社内</a></td>
 </tr>
 <tr>
 <td><a href="https://gitlab.com/dzhu-gl">David Zhu</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=dzhu-gl">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=dzhu-gl">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=dzhu-gl&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=dzhu-gl">Issue</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=dzhu-gl">カンバン</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=dzhu-gl&iteration_id=Current&iteration_cadence_id=1053644">現在のイテレーション</a></td>
 <td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=dzhu-gl">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=dzhu-gl">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=dzhu-gl">Internal</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=dzhu-gl">公開</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=dzhu-gl">社内</a></td>
 </tr>
 <tr>
-<td><a href="https://gitlab.com/ericrubin">Eric Rubin</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=ericrubin">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=ericrubin">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=ericrubin&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=ericrubin">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=ericrubin">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=ericrubin">Internal</a></td>
-</tr>
-<tr>
-<td><a href="https://gitlab.com/eriklentz">Erik Lentz</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=eriklentz">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=eriklentz">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=eriklentz&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=eriklentz">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=eriklentz">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=eriklentz">Internal</a></td>
+<td><a href="https://gitlab.com/eriklentz-gl">Erik Lentz</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=eriklentz-gl">Issue</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=eriklentz-gl">カンバン</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=eriklentz-gl&iteration_id=Current&iteration_cadence_id=1053644">現在のイテレーション</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=eriklentz-gl">ARs</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=eriklentz-gl">公開</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=eriklentz-gl">社内</a></td>
 </tr>
 <tr>
 <td><a href="https://gitlab.com/jacobdwaters">Jacob Waters</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=jacobdwaters">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=jacobdwaters">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=jacobdwaters&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=jacobdwaters">Issue</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=jacobdwaters">カンバン</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=jacobdwaters&iteration_id=Current&iteration_cadence_id=1053644">現在のイテレーション</a></td>
 <td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=jacobdwaters">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=jacobdwaters">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=jacobdwaters">Internal</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=jacobdwaters">公開</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=jacobdwaters">社内</a></td>
 </tr>
 <tr>
-<td><a href="https://gitlab.com/jeffersonmartin">Jeff Martin</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=jeffersonmartin">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=jeffersonmartin">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=jeffersonmartin&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=jeffersonmartin">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=jeffersonmartin">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=jeffersonmartin">Internal</a></td>
+<td><a href="https://gitlab.com/jwong6">Jenny Wong</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=jwong6">Issue</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=jwong6">カンバン</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=jwong6&iteration_id=Current&iteration_cadence_id=1053644">現在のイテレーション</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=jwong6">ARs</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=jwong6">公開</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=jwong6">社内</a></td>
 </tr>
 <tr>
-<td><a href="https://gitlab.com/jbisutti-gl">Justin Bisutti</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=jbisutti-gl">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=jbisutti-gl">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=jbisutti-gl&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=jbisutti-gl">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=jbisutti-gl">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=jbisutti-gl">Internal</a></td>
+<td><a href="https://gitlab.com/lennyv-glab">Lenny Vaknine</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=lennyv-glab">Issue</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=lennyv-glab">カンバン</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=lennyv-glab&iteration_id=Current&iteration_cadence_id=1053644">現在のイテレーション</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=lennyv-glab">ARs</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=lennyv-glab">公開</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=lennyv-glab">社内</a></td>
 </tr>
 <tr>
-<td><a href="https://gitlab.com/kimwaters">Kim Waters</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=kimwaters">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=kimwaters">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=kimwaters&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=kimwaters">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=kimwaters">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=kimwaters">Internal</a></td>
+<td><a href="https://gitlab.com/mspry_gl">Madison Spry</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=mspry_gl">Issue</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=mspry_gl">カンバン</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=mspry_gl&iteration_id=Current&iteration_cadence_id=1053644">現在のイテレーション</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=mspry_gl">ARs</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=mspry_gl">公開</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=mspry_gl">社内</a></td>
 </tr>
 <tr>
-<td><a href="https://gitlab.com/mloveless">Mark Loveless</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=mloveless">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=mloveless">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=mloveless&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=mloveless">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=mloveless">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=mloveless">Internal</a></td>
-</tr>
-<tr>
-<td><a href="https://gitlab.com/malkobaisy">Mohammed Al Kobaisy</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=malkobaisy">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=malkobaisy">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=malkobaisy&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=malkobaisy">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=malkobaisy">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=malkobaisy">Internal</a></td>
+<td><a href="https://gitlab.com/nstrauss-gl">Nathaniel Strauss</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=nstrauss-gl">Issue</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=nstrauss-gl">カンバン</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=nstrauss-gl&iteration_id=Current&iteration_cadence_id=1053644">現在のイテレーション</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=nstrauss-gl">ARs</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=nstrauss-gl">公開</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=nstrauss-gl">社内</a></td>
 </tr>
 <tr>
 <td><a href="https://gitlab.com/p_han">Peter Hansen</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=p_han">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=p_han">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=p_han&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=p_han">Issue</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=p_han">カンバン</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=p_han&iteration_id=Current&iteration_cadence_id=1053644">現在のイテレーション</a></td>
 <td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=p_han">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=p_han">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=p_han">Internal</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=p_han">公開</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=p_han">社内</a></td>
 </tr>
 <tr>
 <td><a href="https://gitlab.com/stevesagan">Steve Sagan</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=stevesagan">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=stevesagan">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=stevesagan&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=stevesagan">Issue</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=stevesagan">カンバン</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=stevesagan&iteration_id=Current&iteration_cadence_id=1053644">現在のイテレーション</a></td>
 <td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=stevesagan">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=stevesagan">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=stevesagan">Internal</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=stevesagan">公開</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=stevesagan">社内</a></td>
 </tr>
 <tr>
 <td><a href="https://gitlab.com/vlad">Vlad Stoianovici</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=vlad">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=vlad">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=vlad&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=vlad">Issue</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=vlad">カンバン</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=vlad&iteration_id=Current&iteration_cadence_id=1053644">現在のイテレーション</a></td>
 <td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=vlad">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=vlad">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=vlad">Internal</a></td>
-</tr>
-<tr>
-<td><a href="https://gitlab.com/zhardie1">Zack Hardie</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/issues/?assignee_username%5B%5D=zhardie1">Issues</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=zhardie1">Kanban</a> - <a target="_blank" href="https://gitlab.com/groups/gitlab-com/gl-security/corp/-/boards/7606111?assignee_username=zhardie1&iteration_id=Current&iteration_cadence_id=1053644">Current Iteration</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/?assignee_username%5B%5D=zhardie1">ARs</a></td>
-<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=zhardie1">Public</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=zhardie1">Internal</a></td>
+<td><a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests?scope=all&state=all&author_username=vlad">公開</a> - <a target="_blank" href="https://gitlab.com/gitlab-com/content-sites/internal-handbook/-/merge_requests?scope=all&state=all&author_username=vlad">社内</a></td>
 </tr>
 </tbody>
 </table>
@@ -280,9 +262,9 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
 1. 時間見積が正確だったかどうかをエンジニアが検証できます。
 2. Issue にどれだけの作業が投入されたかをマネジメントチームに可視化します。
 
-エンジニアが時間消費を追加した Issue は、タイトルと消費時間とともに自動的にマネジメントチームステータスレポートに表示されます。時間消費のない Issue は、特定のプロジェクトで作業された Issue の数とともにステータスレポートに表示されます。ベストプラクティスとして、30〜60 分以上かかる場合は、時間消費の追加を検討してください。何かが重要でステータスレポートに表示されるべきものなら、5 分の時間消費でも追加できます。
+エンジニアが時間消費を追加した Issue は、タイトルと消費時間とともに自動的にマネジメントチームステータスレポートに表示されます。時間消費のない Issue は、特定のプロジェクトで作業された Issue の数とともにステータスレポートに表示されます。ベストプラクティスとして、30 〜 60 分以上かかる場合は、時間消費の追加を検討してください。何かが重要でステータスレポートに表示されるべきものなら、5 分の時間消費でも追加できます。
 
-時間トラッキングの代替手段として、[ウェイト](#weight) を参照してください。
+時間トラッキングの代替手段として、[ウェイト](#weight)を参照してください。
 
 ### ウェイト {#weight}
 
@@ -290,9 +272,9 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
 
 時間トラッキングの代わりに、作業の難易度を共有するためにウェイトを追加できます。ウェイトはスプリント計画でも使用されます。
 
-ウェイト 1 はおおよそ半日の作業（例：3〜4 時間のフォーカスブロック）に相当します。
+ウェイト 1 はおおよそ半日の作業（例：3 〜 4 時間のフォーカスブロック）に相当します。
 
-エンジニアがウェイトを追加した Issue は、タイトルとウェイト（時間見積が設定されている場合は時間見積も）とともに自動的にマネジメントチームステータスレポートに表示されます。ウェイトのない Issue は、特定のプロジェクトで作業された Issue の数とともにステータスレポートに表示されます。ベストプラクティスとして、1〜2 時間以上かかる場合は、ウェイトの追加を検討してください。
+エンジニアがウェイトを追加した Issue は、タイトルとウェイト（時間見積が設定されている場合は時間見積も）とともに自動的にマネジメントチームステータスレポートに表示されます。ウェイトのない Issue は、特定のプロジェクトで作業された Issue の数とともにステータスレポートに表示されます。ベストプラクティスとして、1 〜 2 時間以上かかる場合は、ウェイトの追加を検討してください。
 
 ## ラベル
 
@@ -318,7 +300,7 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
   - [corpsec-priority::research](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-priority%3A%3Aresearch) - 非優先のリサーチおよびディスカバリー。
 - **エンジニアリングリクエスト**
   - [corpsec-priority::p0](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-priority%3A%3Ap0) - プロジェクトファイアドリル（危機、インシデント、緊急の期日）。小さなリクエストには `corpsec-priority::ops-high` も参照。
-  - [corpsec-priority::p1](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-priority%3A%3Ap1) - 0〜2 週間以内のプロジェクト／タスク（現在のイテレーションでなければ次のイテレーション開始時）
+  - [corpsec-priority::p1](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-priority%3A%3Ap1) - 0 〜 2 週間以内のプロジェクト／タスク（現在のイテレーションでなければ次のイテレーション開始時）
   - [corpsec-priority::p2](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-priority%3A%3Ap2) - 次の四半期内のプロジェクト／タスク
   - [corpsec-priority::p3](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsec-priority%3A%3Ap3) - 次の四半期以降のプロジェクト／タスク
 - **計画されたプロジェクトとイニシアチブ**
@@ -349,7 +331,7 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
 
 ### チームラベル {#team-label}
 
-私たちのチームと、各チームが管理するサービスやシステムについて詳しくは、[機能組織図](/handbook/security/corporate/team/#functional-org-chart) を参照してください。
+私たちのチームと、各チームが管理するサービスやシステムについて詳しくは、[機能組織図](/handbook/security/corporate/team/#functional-org-chart)を参照してください。
 
 これらのラベルは、Issue 内でチームメンバーを CC（カーボンコピー）またはメンションする代わりに通知を受けるために、それぞれのチームメンバーに購読されます。また、Issue がどのチームによって作業されているかを識別するためにも使用されます。これらのラベルは多くの Issue テンプレートに含まれています。これらのラベルは `gitlab.com/gitlab-com` 内のどのエピックや Issue にも追加できます。複数のチームが同じ Issue で作業する必要があるかもしれないため、私たちはスコープラベルは使用しません。
 
@@ -364,7 +346,7 @@ Issue が優先順位付けされ、作業がスケジュールされたとき�
 
 これらのラベルは、Issue 内でチームメンバーを CC（カーボンコピー）またはメンションする代わりに通知を受けるために、それぞれのチームメンバーに購読されます。また、Issue がどのシステムに関連するかを識別するためにも使用されます。これらのラベルは `gitlab.com/gitlab-com` 内のどのエピックや Issue にも追加できます。複数のシステムが同じ Issue で作業されるかもしれないため、私たちはスコープラベルは使用しません。
 
-より広範なニーズについては、[チーム](#team-label) ラベルを参照してください。
+より広範なニーズについては、[チーム](#team-label)ラベルを参照してください。
 
 - [corpsys-1password](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-1password)
 - [corpsys-accessctl](https://gitlab.com/groups/gitlab-com/-/issues?label_name%5B%5D=corpsys-accessctl)

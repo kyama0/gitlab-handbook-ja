@@ -102,7 +102,7 @@ Security Department | GitLab
 https://handbook.gitlab.com/handbook/security/
 ```
 
-## 新しいセキュリティ Issue の作成
+## 新しいセキュリティ Issue の作成 {#creating-new-security-issues}
 
 新しいセキュリティ脆弱性を報告するには、[Vulnerability Disclosure Issue テンプレート](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Vulnerability%20Disclosure)を使うか、私たちの [HackerOne バグバウンティプログラム](https://hackerone.com/gitlab)を使ってください。なお、賞金支給の対象となる脆弱性については、HackerOne プラットフォーム経由でのみ支給可能であることに注意してください。
 
@@ -127,7 +127,7 @@ PSIRT によるレビューを受けるには、`@gitlab-com/gl-security/product
 
 より*緊急の*対応が必要な場合は、[セキュリティオンコールへのエンゲージメント](/handbook/security/security-operations/sirt/engaging-security-on-call/)を参照してください。
 
-### `~security` Issue の重大度と優先度ラベル
+### `~security` Issue の重大度と優先度ラベル {#severity-and-priority-labels-on-security-issues}
 
 重大度と優先度ラベルは、Issue が[脆弱性であると判断された](product-security/security-platforms-architecture/application-security/vulnerability-management/#vulnerability-vs-feature-vs-bug)場合に限り、トリアージ時にアプリケーションセキュリティエンジニアによって設定されます。
 そのような Issue を識別するため、エンジニアは `~bug::vulnerability` ラベルを追加します。
@@ -147,7 +147,7 @@ PSIRT によるレビューを受けるには、`@gitlab-com/gl-security/product
 
 Issue をより深く理解した結果、重大度が変わったと判断した場合は、Issue が起票された日からの修復までの時間を再計算します。その日付が過去である場合、Issue は次のセキュリティリリース以前に修復される必要があります。
 
-### `~security` Issue の期限
+### `~security` Issue の期限 {#due-date-on-security-issues}
 
 `~bug::vulnerability` ラベルが付き、`~severity::3` 以上の重大度の `~security` Issue については、セキュリティエンジニアが `Due date` を割り当てます。
 これは修正がリリース可能になるべき目標日です。

@@ -84,7 +84,7 @@ Growth のすべてのチームは、1 つの Slack チャンネル [#s_growth](
 - [技術的探索ガイドライン](technical_spikes) - リサーチとスパイク作業のガイドライン
 - [Growth 実験ガイドライン](experimentation) - Growth 実験のガイドライン
 
-## 実験
+## 実験 {#experimentation}
 
 Growth チームは GitLab [実験](/handbook/engineering/development/growth/experimentation/) に貢献し、GitLab.com で実験を実行してデータ主導のプロダクト意思決定を容易にしています。
 

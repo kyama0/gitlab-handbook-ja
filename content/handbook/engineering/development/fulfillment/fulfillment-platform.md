@@ -17,7 +17,7 @@ Fulfillment セクションのプロダクトビジョンの全体像につい�
 
 Platform グループは [Platform カテゴリ](/handbook/product/categories/#fulfillment-section) を管理しています。
 
-## チームメンバー
+## チームメンバー {#team-members}
 
 
 <p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/fulfillment/fulfillment-platform/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>

@@ -19,7 +19,7 @@ GitLab では[デフォルトで公開](/handbook/values/#public-by-default)し�
 一部のものは公開できず、会社にとって[内部](#internal)であるか、会社内でも[限定アクセス](#limited-access)が設定されています。
 以下のセクションに記載されていない場合は、追加のガイダンスについてセキュリティの[データ分類基準](/handbook/security/policies_and_standards/data-classification-standard/)と法務の[SAFE フレームワーク](/handbook/legal/safe-framework/)をハンドブックで参照してください。
 
-### 内部
+### 内部 {#internal}
 
 一部のものは GitLab チームメンバー限定の**内部向け**情報です。チームメンバーのみがアクセスできるが、そうでなければ公開ハンドブックに含まれるトピックについては、この情報を GitLab の[内部ハンドブック](https://internal.gitlab.com/)に追加する必要があります。[内部ハンドブックの背景](/handbook/about/handbook-usage/#the-internal-handbook)は公開ハンドブックで確認できます。公開ハンドブックまたは内部と公開のハンドブックをまとめて「ハンドブック」と呼んでも問題ありません。内部ハンドブックは常に「内部ハンドブック」と呼ぶ必要があります。
 

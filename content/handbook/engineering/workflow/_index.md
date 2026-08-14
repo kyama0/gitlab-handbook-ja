@@ -354,7 +354,7 @@ Failure in <JOB_URL> happens in `master` and is being worked on in <INCIDENT_URL
 
 安定ブランチへの変更をバックポートするには、[エンジニアリング Runbook](https://gitlab.com/gitlab-org/release/docs/-/blob/master/general/patch/engineers.md#backporting-a-bug-fix-in-the-gitlab-project) に従ってください。
 
-## セキュリティ Issue
+## セキュリティ Issue {#security-issues}
 
 セキュリティ Issue はセキュリティチームによって管理および優先順位付けされます。マイルストーン内のセキュリティ Issue に取り組むようアサインされた場合、
 [Security Release process](https://gitlab.com/gitlab-org/release/docs/blob/master/general/security/process.md) に従う必要があります。
@@ -385,7 +385,7 @@ regression ラベルは、機能が **これまで動作することが検証さ
 
 効率のために、回帰は Issue を作成せず、元の MR のリバートまたはコード変更を通じて MR で修正されることがよくあります。Issue があるかないかに関わらず、MR にも `~regression` と `~regression:xx.x` ラベルを付けるべきです。これにより傾向を正確に測定できます。
 
-## 基本
+## 基本 {#basics}
 
 1. アサインされている Issue から作業を始めます。アサインされている Issue がない場合は、取り組める最も高い優先度と関連ラベルを持つ Issue を見つけて、自分にアサインします。[開始されたマイルストーンの優先度でソートするこのクエリを使用できます](https://gitlab.com/groups/gitlab-org/-/issues?scope=all&utf8=%E2%9C%93&state=opened&milestone_title=Started&assignee_id=None&sort=priority)。自分のチーム用のラベルでフィルタしてください。
 1. 何かをスケジュールしたい、または優先順位付けしたい場合は、適切なラベルを適用します（[Issue のスケジューリング](#scheduling-issues) を参照）。
@@ -513,7 +513,7 @@ Issue のスケジュールをリクエストするには、[責任あるプロ�
 何かに取り組めない可能性が十分にあります。
 すべての Issue に値する優先度が与えられるよう、適切なラベル（`customer` など）が適用されていることを確認してください。
 
-## プロダクト開発タイムライン
+## プロダクト開発タイムライン {#product-development-timeline}
 
 [![''](/images/engineering/workflow/gitlab-release-timelines.png)](https://gitlab.com/gitlab-org/gitlab/-/snippets/3670861)
 

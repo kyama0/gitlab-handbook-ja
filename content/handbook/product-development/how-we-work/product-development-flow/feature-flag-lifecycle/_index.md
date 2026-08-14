@@ -195,7 +195,7 @@ graph TD
     M -. *Optional* Yes .-> N
 ```
 
-## フィーチャーフラグの背後にある機能を最終リリースに含める
+## フィーチャーフラグの背後にある機能を最終リリースに含める {#including-a-feature-behind-feature-flag-in-the-final-release}
 
 最終リリースを構築し、Self-Managed ユーザーに機能を提示するためには、フィーチャーフラグは少なくとも **on** にデフォルト設定されている必要があります。機能が安定していると判断され、フィーチャーフラグを削除しても安全であるという信頼がある場合は、フィーチャーフラグの完全な削除を検討してください。この判断を下す前に、[プロダクションでフラグを **グローバル** に有効化](https://docs.gitlab.com/ee/development/feature_flags/controls.html#enabling-a-feature-for-gitlabcom) して **少なくとも 1 日** 経過させることを *強く* 推奨します。この期間中に予期しないバグが発見されることがあります。
 

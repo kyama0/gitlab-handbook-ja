@@ -134,7 +134,7 @@ GitLab のエンジニアリング文化は、すべて [GitLab Values](/handboo
 
 **CI/CD** を使用する顧客向けには、利用可能な Runner のタイプを macOS、Linux/Docker、Windows を含むよう拡張し、ビルドエージェントをオートスケーリングしています。
 
-### 休暇の取得
+### 休暇の取得 {#taking-time-off}
 
 
 {{% note %}}
@@ -156,7 +156,7 @@ PTO Coverage Issue は適切な職位レベルで必要です。下位の職位�
 
 以下のプロセスは、チームメンバーのマネージャーとの調整を明示的にすることで、[Flexible PTO Policy](/handbook/people-group/time-off-and-absence/time-off-types/) を明確にし拡張します。
 
-#### 1. エンジニアリング coverage Issue の作成
+#### 1. エンジニアリング coverage Issue の作成 {#1-creating-an-engineering-coverage-issue}
 
 [この Issue テンプレート](https://gitlab.com/gitlab-com/engineering-division/pto-coverage/-/issues/new)を使用して、引き継ぎの責任を定義する必要があります。長期休暇の場合、不在中に意思決定を行える 1 人以上の Directly Responsible Individual (DRI) を見つけることが重要です。これは、マネージャー、別のエンジニア、またはチームのプロダクトマネージャーかもしれません。coverage Issue には、不在中に DRI が良い決定を下すために必要なすべての情報を含める必要があるため、必要なだけ詳細を含めるようにしてください。coverage Issue では、作業への影響の見積もり、特定された緩和策、および coverage の代替案を強調する必要があります。
 
@@ -408,7 +408,7 @@ FCL のスコープを決定する際には、副作用と関連原因を区別�
 
 [Product Analytics チーム](/handbook/product/groups/product-analysis/engineering/metrics/) は、Engineering Performance Indicator の維持に責任があります。KPI / RPI に関する作業は、[Product Analytics タスク受付トラッカー](https://gitlab.com/gitlab-data/product-analytics/-/issues/new?issuable_template=PI%20Chart%20Help) を使用して追跡されます。
 
-## 手動検証
+## 手動検証 {#manual-verification}
 
 私たちはコードが期待通りに動作することを手動で検証します。自動テストカバレッジは不可欠ですが、手動検証は機能が意図通りに動作し、バグが修正されているという、より高いレベルの信頼を提供します。
 

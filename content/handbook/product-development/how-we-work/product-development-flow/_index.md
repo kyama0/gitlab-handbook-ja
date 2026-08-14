@@ -33,7 +33,7 @@ GitLab のプロダクトミッションは、ユーザーが愛し、価値を�
 
 - GitLab の顧客からバグが報告されます。プロダクトマネージャーがバグをテストし、その存在を確認します（Problem Validation）。チームはソリューションに非常に自信があるため、Design と Solution Validation は不要です。バグは即座に Build に移されます。
 
-## ワークフローの概要
+## ワークフローの概要 {#workflow-summary}
 
 このページを通じて、[DRI](/handbook/people-group/directly-responsible-individuals/) が言及されるとき、参照される人物はフェーズによって異なる場合があり、また複数いる場合もあります。
 DRI が誰であるかについては、[Product Development Roles and Responsibilities ページ](../roles-and-responsibilities/)を参照してください。
@@ -288,7 +288,7 @@ Build トラックは、[MVC](/handbook/product/product-principles/#the-minimal-
 
 **成果:** 私たちの [Product KPI](https://internal.gitlab.com/handbook/company/performance-indicators/product/) および/または [Engineering KPI](/handbook/company/kpis/#engineering-kpis) の 1 つ以上を改善する、パフォーマンスの高い MVC を提供します。そうできない場合は、私たちの Efficiency バリュー（低レベルの恥を含む）を尊重し、それを放棄し、正しいソリューションを特定するために Validation サイクルを再開します。
 
-### Build フェーズ 1: Plan
+### Build フェーズ 1: Plan {#build-phase-1-plan}
 
 #### 必須ステータス
 
