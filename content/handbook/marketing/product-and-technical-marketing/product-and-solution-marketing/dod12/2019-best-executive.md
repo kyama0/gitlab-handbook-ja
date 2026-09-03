@@ -28,7 +28,7 @@ GitLab のバリューがミッションクリティカルなのは、[私たち
 
 GitLab のバリューは挑戦的でもあります。例えば私たちの最上位のバリューの 1 つは[透明性](/handbook/values/#transparency)で、これはすべての企業が目指すべきだと信じていますが、これがなければオールリモート企業は機能できません。私たちのバリューは実践が難しい場合があるため、特に困難なときでも透明であるよう、私たち全員に対する Sid の個人的な決意と励ましに頼っています。
 
-私たちは[バリューを意図的に定義し](/handbook/values/)、[それらがオールリモート作業をどう可能にしているか](/handbook/company/culture/all-remote/)を定義しました。それらと、今あなたが読んでいるこのページを含むすべての GitLab Handbook ページは、GitLab チームメンバーと GitLab.com サービスを通して誰でも編集可能です。透明性のために、私たちが行うすべては[このハンドブックのリポジトリと私たちのウェブサイト](https://gitlab.com/gitlab-com/www-gitlab-com/) から[Issue トラッカー](https://gitlab.com/gitlab-org/gitlab/issues)、[インフラストラクチャ](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues)、さらには[マーケティング](https://gitlab.com/groups/gitlab-com/marketing/-/issues)まで、デフォルトでパブリックです。
+私たちは[バリューを意図的に定義し](/handbook/values/)、[それらがオールリモート作業をどう可能にしているか](/handbook/company/culture/all-remote/)を定義しました。それらと、今あなたが読んでいるこのページを含むすべての GitLab ハンドブックページは、GitLab チームメンバーと GitLab.com サービスを通して誰でも編集可能です。透明性のために、私たちが行うすべては[このハンドブックのリポジトリと私たちのウェブサイト](https://gitlab.com/gitlab-com/www-gitlab-com/) から[Issue トラッカー](https://gitlab.com/gitlab-org/gitlab/issues)、[インフラストラクチャ](https://gitlab.com/gitlab-com/gl-infra/infrastructure/issues)、さらには[マーケティング](https://gitlab.com/groups/gitlab-com/marketing/-/issues)まで、デフォルトでパブリックです。
 
 オールリモートで働くことは、私たちの[ダイバーシティ、インクルージョン、ベロンギング](/handbook/values/#diversity-inclusion)というバリューのような他のバリューも支えています。[オールリモート作業はインクルージョンをサポートしコミュニティを強化する](https://about.gitlab.com/blog/2019/12/06/how-all-remote-supports-inclusion-and-bolsters-communities/)からです。GitLab のミッションは「誰もが貢献できる」です。私たちは、構築するプロダクトと、それを構築し会社を運営する方法を通じて、その未来を今日切り開いています。
 
