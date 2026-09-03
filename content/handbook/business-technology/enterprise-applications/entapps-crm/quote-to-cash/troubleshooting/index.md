@@ -1,11 +1,11 @@
 ---
 title: "トラブルシューティング: トゥルーアップ、ライセンス + EULA"
 upstream_path: /handbook/business-technology/enterprise-applications/entapps-crm/quote-to-cash/troubleshooting/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T06:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T22:54:52+09:00"
+translator: codex
 stale: false
-lastmod: "2025-01-06T17:31:07+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 社内向け重要リンク
@@ -26,7 +26,7 @@ lastmod: "2025-01-06T17:31:07+00:00"
   - [サブスクリプション更新見積もり](/handbook/sales/field-operations/sales-operations/deal-desk/#renew-subscription-quote)
 - [見積もり承認手順](/handbook/sales/field-operations/order-processing/#how-to-submit-a-quote-for-discount-and-payment-term-approval)
 - [CSM からの役立つリンク集](https://gitlab.com/gitlab-com/account-management/commercial/triage/blob/master/LINKS.md)
-- [GitLab.com サブスクリプションの仕組み](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions/)
+- [GitLab.com サブスクリプションの仕組み](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions/)
 
 ## 顧客・見込み客向けの重要リンク
 
@@ -67,7 +67,7 @@ lastmod: "2025-01-06T17:31:07+00:00"
 
 サブスクリプション期間中、インスタンスは毎日のアクティブユーザー数を記録します。
 
-以下のユーザーは請求対象のアクティブユーザーとして**カウントされません**:
+以下のユーザーは請求対象のアクティブユーザーとして*カウントされません*:
 
 - Ultimate プランのゲストユーザー
 - Support Bot や Alert Bot などの GitLab 自動生成ボット
@@ -98,7 +98,7 @@ lastmod: "2025-01-06T17:31:07+00:00"
 - ライセンスは CustomersDot アプリケーションによって生成され、顧客にライセンスキーがメールで送付されます。ライセンスは CustomersDot アプリケーション内でも確認できます。
 - ライセンスキーを手動で生成することも可能です。
 - ライセンスまたはバージョンアプリケーションへのアクセスが必要な場合は、[アクセスリクエストを開き](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request)、`GitLab DEV (required for license and version access)` の行以外のすべてのシステムを削除してください。
-この dev 認証情報は `GitLab でログイン` 経由でライセンス・バージョンアプリへ OAuth 認証する際に使用するため、他の GitLab 認証情報と区別できる形で保存してください。
+この dev 認証情報は `login with GitLab` 経由でライセンス・バージョンアプリへ OAuth 認証する際に使用するため、他の GitLab 認証情報と区別できる形で保存してください。
 
 ### ライセンスが送信されたことを確認するにはどうすればよいですか？
 

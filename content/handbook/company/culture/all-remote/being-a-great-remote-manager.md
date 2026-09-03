@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/being-a-great-remote-manager/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T00:00:00Z"
-translator: "claude"
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T22:54:52+09:00"
+translator: "codex"
 stale: false
-lastmod: "2025-12-01T16:21:31-05:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## リモートマネジメントとは何か？
@@ -92,7 +92,7 @@ GitLab では、[Slack](/handbook/communication/chat) はお互いとのコミ�
 
 ### スケジュールではなく思考に挑戦する
 
-オールリモート環境は、チームメンバーが最も充実した場所で生活・仕事できるよう力を与えます。[非同期ワークフロー](asynchronous/)の導入は効率を高め、機能不全を減らします。複数のフロアやオフィスにチームメンバーがいる同じ場所にいる会社でも、特に複数のタイムゾーンが関わる場合、非同期で運営することはますます必要になっています。オールリモート環境はよりインクルーシブです。例えば、育児提供者が仕事と親としての責任を組み合わせる際の柔軟性を提供します。非同期作業はタイムゾーンのバイアスも排除し、グローバルなチームメンバーが平等な立場に立てるようにします。
+オールリモート環境は、チームメンバーが最も充実した場所で生活・仕事できるよう力を与えます。[非同期ワークフロー](/handbook/communication/#asynchronous-communication)の導入は効率を高め、機能不全を減らします。複数のフロアやオフィスにチームメンバーがいる同じ場所にいる会社でも、特に複数のタイムゾーンが関わる場合、非同期で運営することはますます必要になっています。オールリモート環境はよりインクルーシブです。例えば、育児提供者が仕事と親としての責任を組み合わせる際の柔軟性を提供します。非同期作業はタイムゾーンのバイアスも排除し、グローバルなチームメンバーが平等な立場に立てるようにします。
 
 ### 委任する
 

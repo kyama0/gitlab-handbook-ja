@@ -2,27 +2,27 @@
 title: テスト検疫プロセス
 description: GitLab のテスト検疫プロセスの完全ガイド
 upstream_path: /handbook/engineering/testing/quarantine-process/
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-15T21:34:06Z"
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T22:50:04+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-15T17:51:54+00:00"
+lastmod: "2026-08-20T14:51:55+01:00"
 ---
 
 このページでは、フレーキーおよび壊れたテストを管理するための GitLab の検疫プロセスについて説明します。技術的な実装の構文（RSpec と Jest）については、[テストの検疫（開発者ドキュメント）](https://docs.gitlab.com/development/testing_guide/quarantining_tests/)を参照してください。フレーキーテストのデバッグについては、[不健全なテスト（開発者ドキュメント）](https://docs.gitlab.com/development/testing_guide/unhealthy_tests/)を参照してください。
 
 検疫プロセスは、将来修正するために保持しながら、フレーキーまたは壊れたテストを CI 実行から一時的に削除することでパイプラインの安定性を維持するのに役立ちます。テスト失敗のノイズを減らし、エンジニアが無関係な失敗によってブロックされないようにします。テストの検疫は一時的なものであるべきです：テストは修正、削除、またはより低いテストレベルに移動されなければなりません。
 
-## クイックナビゲーション
+## 🗺️ クイックナビゲーション
 
 | シナリオ | 対処方法 |
 |---------|---------|
-| 検疫 MR が割り当てられた | [レビューしてアクションを取る](#youve-been-assigned-a-quarantine-merge-request) |
-| テストを検疫する必要がある | [検疫ライフサイクル](#quarantine-lifecycle) |
-| テストの検疫を解除したい | [検疫解除プロセスに従う](#dequarantine-a-test) |
-| テストはどのようにして検疫されるか？ | [自動検出と手動プロセス](#how-tests-become-quarantined) |
-| データはどこにあるか？ | [フレーキーテストの検出と追跡](#flaky-test-detection-and-tracking) |
-| ヘルプが必要 | [Slack チャンネルとサポート](#get-help) |
+| 📬 **検疫 MR が割り当てられた** | [レビューしてアクションを取る](#youve-been-assigned-a-quarantine-merge-request) |
+| 🚨 **テストを検疫する必要がある** | [検疫ライフサイクル](#quarantine-lifecycle) |
+| ✅ **テストの検疫を解除したい** | [検疫解除プロセスに従う](#dequarantine-a-test) |
+| 🔍 **テストはどのようにして検疫されるか？** | [自動検出と手動プロセス](#how-tests-become-quarantined) |
+| 📊 **データはどこにあるか？** | [フレーキーテストの検出と追跡](#flaky-test-detection-and-tracking) |
+| 🆘 **ヘルプが必要** | [Slack チャンネルとサポート](#get-help) |
 
 ## 検疫マージリクエストが割り当てられた場合
 
@@ -257,6 +257,7 @@ Issue には以下が含まれていなければなりません：
 - **週次サマリー**：現在の検疫ステータスとテスト解決の奨励を含む、エンジニアリングチームへの週次サマリーが送られる。
 - **月次ロールアップ**：テスト健全性メトリクスに関する上級管理職への月次ロールアップが提供される。
 - **チームダッシュボード**：機能カテゴリ別にチームの検疫されたテストを追跡するために利用可能。
+- **Test Health スコア**：検疫されたテストは経過期間に応じて点数化され、グループの Quarantine pillar スコアに算入される。スコアの仕組みは [Test Health](/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/test-health)を参照。
 
 これらのレポートは、検疫がバックログではなく一時的な状態であることを確保するのに役立ちます。
 

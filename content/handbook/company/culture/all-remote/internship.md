@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/internship/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
-translator: claude
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T22:58:30+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-01T16:21:31-05:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 このページでは、[リモートインターンシップ](/handbook/hiring/)（見習いや Co-op とも呼ばれる）に関して、社員と雇用者の両方が考慮すべき事項を詳述しています。
@@ -65,7 +65,7 @@ lastmod: "2025-12-01T16:21:31-05:00"
 
 インターンが[自律的に動けるマネージャー](/handbook/values/#managers-of-one)になる準備ができていることはほとんどなく、企業はインターンにかなりのサポートが必要だと予想すべきです。
 
-明確な[コミュニケーション](/handbook/communication/)、意図的な[オンボーディング](/handbook/company/culture/all-remote/)、[非同期ワークフロー](asynchronous/)の活用の重要性については、ハーバード・ビジネス・スクールの「[成功するバーチャルインターンシップを作るためのベストプラクティス](https://www.hbs.edu/recruiting/insights-and-advice/blog/post/best-practices-for-creating-a-successful-virtual-internship)」という記事で学んでください。
+明確な[コミュニケーション](/handbook/communication/)、意図的な[オンボーディング](/handbook/company/culture/all-remote/)、[非同期ワークフロー](/handbook/communication/#asynchronous-communication)の活用の重要性については、ハーバード・ビジネス・スクールの「[成功するバーチャルインターンシップを作るためのベストプラクティス](https://www.hbs.edu/recruiting/insights-and-advice/blog/post/best-practices-for-creating-a-successful-virtual-internship)」という記事で学んでください。
 
 ## リモートインターンシップを管理するためのベストプラクティスは何か？
 
@@ -178,7 +178,7 @@ GitLab では、「[GitLab での仕事はどのようなものか？](/handbook
 
 インターンは、リモートインターンシップでは自分の時間を管理する期待値がおそらく高く、企業に成熟したインターンシップインフラが欠けている場合はリソースが*少ない*かもしれないことを認識する必要があります。
 
-面接フェーズで作業環境を理解するために質問することが重要です。リモートで働くことに関連する質問に答えてくれるリモートメンターや[オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies/)がいることを確認してください。
+面接フェーズで作業環境を理解するために質問することが重要です。リモートで働くことに関連する質問に答えてくれるリモートメンターや[オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies.md)がいることを確認してください。
 
 また、GitLab の[リモートの仕事を評価するためのガイド](/handbook/hiring/)を読み、面接時に関連する質問をすることを検討してください。
 

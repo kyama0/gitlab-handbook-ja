@@ -2,11 +2,11 @@
 title: "Customer 360"
 description: "Customer 360の主要コンポーネントの概要。"
 upstream_path: /handbook/customer-success/csm/gainsight/c360-overview/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T01:01:39Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:03:08+09:00"
+translator: codex
 stale: false
-lastmod: "2024-11-07T22:02:27+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 *Gainsightの概要およびログイン方法については、[Gainsight概要ページ](/handbook/sales/gainsight/)を参照してください。*
@@ -48,7 +48,7 @@ Customer 360（C360）は、各アカウントの完全な概要です。
 
 ### 参照可能顧客
 
-C360の属性セクションにある「Referenceable Customers」フィールドは、[顧客が参照可能な顧客かどうか](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/)を示しています。顧客が参照可能な顧客で*ない*場合で、優れた参照先になりそうであれば、参照顧客を推薦するプロセスに従ってください。
+C360の属性セクションにある「Referenceable Customers」フィールドは、[顧客が参照可能な顧客かどうか](/handbook/marketing/growth-marketing/growth-community-programs/)を示しています。顧客が参照可能な顧客で*ない*場合で、優れた参照先になりそうであれば、参照顧客を推薦するプロセスに従ってください。
 
 ### NPSおよびCSATスコア
 

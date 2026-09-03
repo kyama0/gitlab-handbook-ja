@@ -3,11 +3,11 @@ title: "GitLab パーパス"
 description: "GitLab は、ナレッジシェアリング、仕事へのアクセス、そして私たちのソフトウェアプラットフォームを通じて、すべての人をエンパワーします。"
 canonical_path: "/company/purpose/"
 upstream_path: "/handbook/company/purpose/"
-upstream_sha: "6de519f00917bcfc4fdb7cb5a9b7a7e0b33d7256"
-translated_at: "2026-04-19T00:00:00Z"
-translator: "claude"
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T23:03:08+09:00"
+translator: "codex"
 stale: false
-lastmod: "2025-12-19T11:53:19+00:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## パーパス
@@ -67,7 +67,7 @@ GitLab のパーパスは、以下の 4 つの円の交点に位置していま�
 1. Coursera の [How to Manage a Remote Team](https://www.coursera.org/learn/remote-team-management) コースを通じて、リモートへの移行者を数十万人規模で支援
 1. REMOTE by GitLab イベント
 1. リモートムーブメントの伝道におけるネットワーク効果: 30 以上の組織が公然と [GitLab にインスパイアされている](/handbook/)
-1. [非同期コミュニケーション](/handbook/company/culture/all-remote/asynchronous/) は柔軟性を与え、育児提供者が育児の責任と仕事をよりよく組み合わせられるようにする
+1. [非同期コミュニケーション](/handbook/communication/#asynchronous-communication) は柔軟性を与え、育児提供者が育児の責任と仕事をよりよく組み合わせられるようにする
 1. [非線形な勤務日](/handbook/company/culture/all-remote/non-linear-workday/)
 
 #### 商用オープンソースソフトウェア (COSS)
@@ -96,10 +96,10 @@ DevSecOps プラットフォームは、開発者・運用担当者・セキュ�
     1. 5 分で本番アプリを作る Ops2Dev
     1. Day 2 operations
 1. 以下を自動化して、もはや障壁にしない:
-    1. Secure
-    1. Compliance
-    1. Testing
-    1. Running
+    1. セキュリティ
+    1. コンプライアンス
+    1. テスト
+    1. 実行
 
 #### より安全に
 
@@ -135,4 +135,3 @@ DevSecOps プラットフォームは、開発者・運用担当者・セキュ�
 
 
 <!-- include omitted: includes/take-gitlab-for-a-spin.md (no localized version under content/ja/) -->
-

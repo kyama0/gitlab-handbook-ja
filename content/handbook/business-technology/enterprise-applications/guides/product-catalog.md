@@ -2,11 +2,11 @@
 title: "製品カタログガイド"
 description: "SKU の作成または変更をリクエストする方法。"
 upstream_path: "/handbook/business-technology/enterprise-applications/guides/product-catalog/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T06:02:44Z"
-translator: "claude"
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T22:54:52+09:00"
+translator: "codex"
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -151,7 +151,7 @@ Issue テンプレートでは、アスタリスク 3 つ（***）は「非標�
 
 **データ要件**
 
-- [GitLab Handbook](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers/) の定義に基づいて、この製品提供の Product Tier、Delivery、Deployment フィールドに関するインプットのために Israel Weeks `@iweeks` をアサインしてください
+- [GitLab Handbook](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/) の定義に基づいて、この製品提供の Product Tier、Delivery、Deployment フィールドに関するインプットのために Israel Weeks `@iweeks` をアサインしてください
 - これは SKU の構成とデータの整合性確保のために必要です
 
 ### ステップ 1b. 価格と非標準リクエストに対するクロスファンクショナルな承認

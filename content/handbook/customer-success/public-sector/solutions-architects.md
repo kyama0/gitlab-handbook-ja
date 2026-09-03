@@ -2,11 +2,11 @@
 title: Public Sector Solutions Architects
 description: "公共部門（Public Sector）を担当する Solutions Architect（SA）は、米国内の公共部門の顧客に対して、販売プロセス全体を通じて専門領域の知見と業界経験を提供します。"
 upstream_path: /handbook/customer-success/public-sector/solutions-architects/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:08:10+09:00"
+translator: codex
 stale: false
-lastmod: "2025-06-05T10:47:42-04:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 [公共部門](/handbook/sales/public-sector/) を担当する Solutions Architect（SA）は、米国内の公共部門の顧客に対して、販売プロセス全体を通じて専門領域の知見と業界経験を提供します。
@@ -30,7 +30,7 @@ GitLab Support チームは、米国市民がサポートチケットに対応�
 この紹介の目的は多岐にわたります。
 
 1. 新規顧客をサポート、ガイダンス、アドボカシー、成長のための販売後の関係性へスムーズに移行させる
-2. [Go to Market のユースケース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/) から [DevOps ステージ採用](/handbook/customer-success/csm/stage-adoption/) への会話のシフトを円滑に行う
+2. [Go to Market のユースケース](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/) から [DevOps ステージ採用](/handbook/customer-success/csm/stage-adoption/) への会話のシフトを円滑に行う
 3. 顧客の [GitLab Support](/handbook/support/) へのアクセスを検証する
 4. 調達後の CSM エンゲージメントレベルの選択を顧客に支援する
 5. 利用可能な [GitLab Professional Services および Enablement](https://about.gitlab.com/services/catalog/) のオプションを顧客が理解していることを確認する

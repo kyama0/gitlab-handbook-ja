@@ -1,11 +1,11 @@
 ---
 title: "CSM Secure ワークショップ ディスカバリー質問票"
 upstream_path: /handbook/customer-success/workshops/secure/questionnaire/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:08:10+09:00"
+translator: codex
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 この質問票は、顧客と実施するワークショップでカバーする情報を決定するために使用してください。以下の情報を顧客コラボレーションプロジェクトの Issue にコピーし、初期計画セッション中に質問を尋ねるか（推奨）、または非同期で顧客に Issue で質問に回答するよう依頼することで詳細を記入してください。
@@ -13,7 +13,7 @@ lastmod: "2024-06-27T22:14:31+00:00"
 この質問票について、いくつか念頭に置いておくこと:
 
 - リストされている機能は、[Secure ワークショップ資料](/handbook/customer-success/workshops/secure/#workshop-materials) が現在サポートしているものに基づいています。追加資料が追加されるにつれて、このリストは拡張されます。
-- 顧客とその目標についてのあなたの理解に合わせて質問を調整してください。必要に応じて、[Marketing チームが提供するディスカバリー質問](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions) を追加してください。
+- 顧客とその目標についてのあなたの理解に合わせて質問を調整してください。必要に応じて、[Marketing チームが提供するディスカバリー質問](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions) を追加してください。
 
 ```markdown
 ## Product Capabilities

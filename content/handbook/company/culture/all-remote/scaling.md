@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/scaling/"
-upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
-translated_at: "2026-08-15T06:54:56+09:00"
-translator: claude
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T22:58:30+09:00"
+translator: codex
 stale: false
-lastmod: "2026-08-14T11:43:03-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 このページでは、組織のスケーリングがオールリモートでこそうまく機能する仕組みを詳しく説明します。
@@ -36,7 +36,7 @@ GitLab はオールリモートが仕事の未来であり、スケールでう�
 >
 > 1 つの部屋のチームは非常にうまく機能します。1 つのフロアのチームはおそらくうまくいきます。複数のフロアにまたがるチームでは問題が出始めます。複数のオフィスにまたがるチームでは、さらに難しくなります。複数の都市にまたがるチームでは、さらに難しくなります。複数の大陸にまたがるチームでは、非常に難しくなります。そのモデルは崩壊します。
 >
-> 非常に大きな会社であれば、コロケーションのメリットはほとんどありません。一方、リモートのメリット — [プロセスを書き留めること](/handbook/marketing/technical-writing/#documentation)、会社全体の[非公式なコミュニケーション](informal-communication/)を刺激すること — これらは規模が大きくなるほど顕著になります。
+> 非常に大きな会社であれば、コロケーションのメリットはほとんどありません。一方、リモートのメリット — [プロセスを書き留めること](/handbook/marketing/product-and-technical-marketing/technical-writing/#documentation)、会社全体の[非公式なコミュニケーション](informal-communication/)を刺激すること — これらは規模が大きくなるほど顕著になります。
 >
 > [オールリモートが]スケールするだけでなく、はるかによくスケールします。- *GitLab 共同創業者 Sid Sijbrandij*
 

@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/collaboration-and-whiteboarding/"
-upstream_sha: 50ee631c98005b47a0caea9d46e4ba5cfc62891a
-translated_at: "2026-07-23T07:04:48+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T22:54:52+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-22T13:37:37-03:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 このページでは、グローバルなオールリモート企業においてコラボレーションとホワイトボーディングがどのように機能するかを詳しく説明します。
@@ -188,7 +188,7 @@ GitLab では、[ペアデザインプログラム](/handbook/upstream-studios/p
 ![GitLab all-remote team](/images/all-remote/gitlab-com-all-remote-v3-dark-1280x270.png)
 {style="max-width:50%;"}
 
-[非同期コミュニケーション](../asynchronous/)とは、他の人々の存在に依存せずに生産性を上げるプロセスです。非同期作業は、人々が独立して仕事をし、他の人々も同様に（ただし必ずしも同時ではなく）働いていると信頼することを力付けます。非同期でコラボレーションすることで、人々はカレンダーとタイムゾーンから解放されます。
+[非同期コミュニケーション](/handbook/communication/#asynchronous-communication)とは、他の人々の存在に依存せずに生産性を上げるプロセスです。非同期作業は、人々が独立して仕事をし、他の人々も同様に（ただし必ずしも同時ではなく）働いていると信頼することを力付けます。非同期でコラボレーションすることで、人々はカレンダーとタイムゾーンから解放されます。
 
 ドキュメントがあることで、作業負荷、プロジェクトの容量、そして全員の期待についての全体的な理解に透明性があります。焦点が仕事に費やした時間から仕事の実際の結果へとシフトします。
 

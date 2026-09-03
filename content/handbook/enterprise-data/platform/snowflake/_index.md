@@ -2,11 +2,11 @@
 title: "Snowflake ガイド"
 description: "Snowflake データウェアハウスガイド"
 upstream_path: "/handbook/enterprise-data/platform/snowflake/"
-upstream_sha: ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c
-translated_at: "2026-06-24T07:51:36+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T22:50:04+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-23T10:43:07+02:00"
+lastmod: "2026-08-28T06:41:23-06:00"
 ---
 
 ## 概要と目的
@@ -25,6 +25,7 @@ Snowflake には私たちのすべての分析データが含まれており、[
 - [Data Masking](/handbook/enterprise-data/platform/#data-masking)
 - [Backups](/handbook/enterprise-data/platform/#backups)
 - [AI Function Guide](/handbook/enterprise-data/platform/snowflake/snowflake-ai-function/snowflake-ai-function.md)
+- [Snowflake CLI](/handbook/enterprise-data/platform/snowflake/snowflake-cli/)
 
 ## 現在のアクセスモデル {#current-access-model}
 
@@ -142,9 +143,9 @@ SELECT COUNT(*) FROM your_table;
 <details>
 <summary>クリックして展開</summary>
 
-- **Simple scans**: Filters + aggregations → 推奨サイズのままにします
-- **Heavy operations**: Large joins、window functions、complex aggregations → **1 段階サイズアップ**
-- **Multi-table joins**: 特に unfiltered dimensions を伴う場合 → **1〜2 段階サイズアップ**
+- **単純なスキャン**: フィルター + 集計 → 推奨サイズのままにします
+- **負荷の高い処理**: 大規模な結合、ウィンドウ関数、複雑な集計 → **1 段階サイズアップ**
+- **複数テーブルの結合**: 特にフィルターされていないディメンションを伴う場合 → **1〜2 段階サイズアップ**
 
 </details>
 
@@ -165,7 +166,7 @@ WHERE BEHAVIOR_AT BETWEEN '2025-01-01' AND '2025-01-03'
   AND app_id = 'gitlab';
 ```
 
-**XS が機能する理由:** 3 日間の time window + specific event_action = small scan
+**XS が機能する理由:** 3 日間の時間範囲 + 特定の event_action = 小規模なスキャン
 
 </details>
 
@@ -185,7 +186,7 @@ HAVING ct > 50
 ORDER BY ct DESC;
 ```
 
-**XS が機能する理由:** Aggregation により result set が減り、2 週間の window は扱いやすいため
+**XS が機能する理由:** 集計により結果セットが減り、2 週間の時間範囲は扱いやすいため
 
 </details>
 
@@ -204,7 +205,7 @@ WHERE behavior_at >= CURRENT_DATE - 7
 LIMIT 10000;
 ```
 
-**M が必要な理由:** Large join + unfiltered dimension にはより多くのメモリが必要なため
+**M が必要な理由:** 大規模な結合 + フィルターされていないディメンションにはより多くのメモリが必要なため
 
 </details>
 

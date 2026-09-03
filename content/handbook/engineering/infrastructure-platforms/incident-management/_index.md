@@ -1,11 +1,11 @@
 ---
 title: インシデント管理
 upstream_path: "/handbook/engineering/infrastructure-platforms/incident-management/"
-upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
-translated_at: "2026-08-15T06:38:37+09:00"
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T22:50:04+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-14T12:11:43-06:00"
+lastmod: "2026-08-18T13:13:35Z"
 ---
 
 {{% alert color="warning" %}}
@@ -120,6 +120,7 @@ GitLab では、インシデント管理フレームワークは 2 つの重要�
 | ---- | ---- | ----------- | ---- | ---- |
 | **Engineer On Call (EOC)** | [Incident Responder](./roles/incident-responder.html)| 主に自動アラートおよび GitLab.com エスカレーションに対する最初の Incident Responder として機能します。役割への期待は [オンコールに関するハンドブック](/handbook/engineering/infrastructure-platforms/incident-management/on-call/#general-expectations-for-on-call) にあります。EOC のチェックリストは [runbooks](https://gitlab.com/gitlab-com/runbooks/blob/master/on-call/checklists/eoc.md) にあります。EOC が広範な問題のトラブルシューティングを支援するために設計されたランブックがあります - ランブックが不十分な場合、EOC は [Incident Manager と CMOC を関与させる](#how-to-engage-response-teams) ことでエスカレーションします。 | GitLab.com | 一般的に SRE で、インシデントを宣言できます。incident.io の "GitLab.com Production EOC" オンコールスケジュールの一部です。 |
 | **Incident Manager On Call (IMOC)** |[Incident Lead](./roles/incident-lead.html) | 複雑なインシデント中に戦術的な調整とリーダーシップを提供します | GitLab.com | [incident.io](https://app.incident.io/gitlab/on-call/schedules/01K77XZFD7X7E3W8T6GDVMKAFF) のローテーション |
+| **Service Team Engineer On Call (STEOC)** | [Incident Responder](./roles/incident-responder.html) | 担当する Service チームのサービスに向けられた自動アラートに対応します | GitLab.com | incident.io のローテーション |
 
 低重大度のインシデントでは、ページされた個人が複数の役割を担う場合があります。例えば S4 インシデントでは、EOC が Incident Lead と Incident Responder の両方を兼ねる場合があります。重大度が上がるにつれて、これらの役割を別々の個人が担うことがより重要になります。 [Tier 2](#tier-2) の人がページされる必要があります。
 

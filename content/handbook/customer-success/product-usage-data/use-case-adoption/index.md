@@ -2,11 +2,11 @@
 title: "健全スコアリング — 計算と手法"
 description: "一般的な GitLab および異なるユースケースにおける顧客の健全スコアの測定方法。"
 upstream_path: /handbook/customer-success/product-usage-data/use-case-adoption/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:08:10+09:00"
+translator: codex
 stale: false
-lastmod: "2025-05-29T12:13:04-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ---
@@ -58,7 +58,7 @@ lastmod: "2025-05-29T12:13:04-07:00"
 | SCM（Create） | 基本採用 | 顧客は基本的なツールセットを使用しているか？ほとんどの顧客は GitLab ジャーニーの比較的早い段階でこれらの機能を採用するはずです |
 | CI（Verify） | 製品の定着度 | 継続的な採用と顧客ジャーニーの一環として、顧客が CI を採用するのを支援するとともに、中央 DevOps チームが組織の CI 採用についてより深く理解できるよう支援したいと考えています。これらの指標を使用して採用に向けた進捗状況を把握します |
 | セキュリティ（DevSecOps） | イネーブルメントと拡大 | セキュリティ機能を使用している顧客、またはトライアルして[シフトレフト](https://about.gitlab.com/blog/2020/06/23/efficient-devsecops-nine-tips-shift-left/)を希望している顧客に対して、これらの指標を使用して採用を特定し成長を追跡します |
-| CD（Release） | イネーブルメントと拡大 | 顧客はデプロイに GitLab をどれだけ採用しているか？顧客ジャーニーの次のパスは [CD ユースケース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/)です |
+| CD（Release） | イネーブルメントと拡大 | 顧客はデプロイに GitLab をどれだけ採用しているか？顧客ジャーニーの次のパスは [CD ユースケース](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/cd/)です |
 
 ### Gainsight スコアリング概要
 

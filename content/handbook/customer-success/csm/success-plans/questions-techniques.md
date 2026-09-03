@@ -1,11 +1,11 @@
 ---
 title: "サクセスプランディスカバリーのための質問とテクニック"
 upstream_path: /handbook/customer-success/csm/success-plans/questions-techniques/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:40:38+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:03:08+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T05:53:28-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 CSM 関連のハンドブックページについては、[CSM ハンドブックのホームページ](/handbook/customer-success/csm/)を参照してください。
@@ -215,7 +215,7 @@ HA のセットアップを望むという最初の言及の後で「これは�
 
 ### GitLab の DORA メトリクスに関する顧客ミーティング
 
-ある顧客が GitLab のメトリクスに関連して GitLab が提供できるものを理解するためのミーティングを希望しており、具体的には [DORA メトリクス](https://docs.gitlab.com/ee/user/analytics/ci_cd_analytics.html#dora4-metrics)をトピックとして挙げ、[Developer Experience Lead](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead) が出席する予定です。メトリクス採用のサクセスプランを構築するための貴重な情報を集める機会を逃さないようにしましょう。
+ある顧客が GitLab のメトリクスに関連して GitLab が提供できるものを理解するためのミーティングを希望しており、具体的には [DORA メトリクス](https://docs.gitlab.com/ee/user/analytics/ci_cd_analytics.html#dora4-metrics)をトピックとして挙げ、[Developer Experience Lead](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead) が出席する予定です。メトリクス採用のサクセスプランを構築するための貴重な情報を集める機会を逃さないようにしましょう。
 
 [Orit Golowinski](https://gitlab.com/ogolowinski)（Release Stage シニアプロダクトマネージャー）は、上記で示した別の類似シナリオで有用なオープンエンドな質問をいくつか共有しています。
 

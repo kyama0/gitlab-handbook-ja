@@ -1,12 +1,12 @@
 ---
 title: "E-Group オフサイト"
-description: "E-Group オフサイトは、取締役会の会議後に 4 日間にわたって四半期ごとに開催されます。"
+description: "E-Group オフサイトは四半期ごとに開催され、通常は取締役会の会議の 4 日後に行われます。"
 upstream_path: "/handbook/company/offsite/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T15:43:48Z"
-translator: "claude"
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T23:03:08+09:00"
+translator: "codex"
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 E-Group オフサイトは四半期ごとに開催されます。通常、[取締役会の会議](/handbook/board-meetings/#board-meeting-schedule)の 4 日後に行われます。
@@ -230,7 +230,7 @@ E-Group メンバーへの EBA は E-Group オフサイトのアウトライン�
 - [選択されたコンテンツの読書](#content-choice)
 - エグゼクティブが People Business Partners と協力して[直属部下の業績/ポテンシャルマトリクス](/handbook/people-group/talent-assessment/#the-performancegrowth-potential-matrix)を準備する
 - エグゼクティブが People Business Partners と協力して[ディレクター+昇格候補者](/handbook/people-group/promotions-transfers/#promotions-to-senior-director)を準備する
-- [Growth セクションの方向性](/handbook/marketing/growth/)などのレビュー用セクション方向性資料のレビュー
+- [Growth セクションの方向性](/handbook/product/groups/growth/direction/)などのレビュー用セクション方向性資料のレビュー
 - [スティッキーベアーの危険性に関するこの短いクリップを見る](/handbook/company/offsite/beware-sticky-bears/)
 
 トピックのプレゼンターは全員、事前準備として資料を共有する必要があります。

@@ -2,11 +2,11 @@
 title: "Iteration 0 の基本"
 description: "GitLab PS と顧客とのエンゲージメントにおける Iteration 0 のコアとなる要素について学びます。"
 upstream_path: /handbook/customer-success/professional-services-engineering/professional-services-delivery-methodology/iteration-0-fundamentals/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:08:10+09:00"
+translator: codex
 stale: false
-lastmod: "2025-04-04T11:32:32-07:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## チームの立ち上げ
@@ -50,7 +50,7 @@ PMO 組織として、私たちは GitLab 内部および外部の GitLab パー
 * 対応不可能なときは「不在」とマークし、復帰予定時刻を示す。
 * Issue のステータスと時間追跡を毎日更新する。
 * コアコラボレーション時間: 10:00 AM - 4:00 PM EST。勤務時間外の対応は期待されない。
-* GitLab の [非同期コミュニケーション](/handbook/company/culture/all-remote/asynchronous/) への嗜好を認識する。これは勤務時間を定義する指示ではなく、チームメイトへの共有事項にすぎない。
+* GitLab の [非同期コミュニケーション](/handbook/communication/#asynchronous-communication) への嗜好を認識する。これは勤務時間を定義する指示ではなく、チームメイトへの共有事項にすぎない。
 * チームメイトおよび顧客への約束を尊重する。何かを行うことを約束したら、期待される時間内にやり遂げる。
 * 作業合意は権威的なものではなく、必要に応じて流動的に変更可能であると理解する。
 

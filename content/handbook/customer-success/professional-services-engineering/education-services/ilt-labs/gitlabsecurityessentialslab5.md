@@ -2,11 +2,11 @@
 title: "GitLab Security Essentials - ハンズオンラボ: DAST と API スキャン"
 description: "このハンズオンガイドは、プロジェクトでコンテナスキャンを使用するプロセスを案内します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabsecurityessentialslab5/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-14T01:31:06+09:00"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:08:10+09:00"
+translator: codex
 stale: false
-lastmod: "2026-08-13T07:16:24-04:00"
+lastmod: "2026-08-18T14:24:53-04:00"
 ---
 
 > 推定所要時間: 40 分
@@ -138,6 +138,8 @@ API スキャナーを使用すると、アプリケーションの API エン�
               APISEC_POSTMAN_COLLECTION: postman_collection.json
               APISEC_TARGET_URL: http://target:7777
       ```
+
+> このテンプレートは、このコース全体で見てきた他のすべてのテンプレートと同様に、[GitLab CI/CD テンプレートリポジトリ](https://gitlab.com/gitlab-org/gitlab/-/tree/master/lib/gitlab/ci/templates)にあります。
 
 1. これらの変更をコミットし、パイプラインが完了した後に結果を確認します。
 

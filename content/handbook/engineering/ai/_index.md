@@ -1,9 +1,9 @@
 ---
 title: AI Engineering
 upstream_path: /handbook/engineering/ai/
-upstream_sha: d51496d2a9ca5dfcbd3a4eef779fc95c357103f3
-lastmod: "2026-08-06T16:35:18+02:00"
-translated_at: "2026-08-07T06:19:17+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-03T23:08:10+09:00"
 translator: codex
 stale: false
 ---
@@ -12,7 +12,7 @@ stale: false
 
  **私たちの目標は、単に機能をリリースすることではなく、それらが確実に定着し、お客様に真の価値を提供するようにすることです。** 私たちは、高い品質基準を満たし、信頼性を確保しながら、多様なお客様のニーズに応える運用の容易さとスケーラビリティを維持することで、すべてのユーザーグループの期待を超えるクラス最高のプロダクト開発に努めています。すべてのチームメンバーは、私たちが行うあらゆることにおいて、対象となるお客様と、私たちがサポートする複数のプラットフォームを常に意識する必要があります。
 
-私たちのプロダクトが、特に主要なお客様である大企業の[組織アーキタイプ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/organization-archetype/)に対して、あらゆる面で優れたものになるようにします。これには、スケーラビリティ、適応性、シームレスなアップグレードパスが含まれます。機能を設計および実装する際は、セルフマネージド、Dedicated、Software as a Service (SaaS) というすべてのデプロイオプションとの互換性を常に考慮してください。
+私たちのプロダクトが、特に主要なお客様である大企業の[組織アーキタイプ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/organization-archetype/)に対して、あらゆる面で優れたものになるようにします。これには、スケーラビリティ、適応性、シームレスなアップグレードパスが含まれます。機能を設計および実装する際は、セルフマネージド、Dedicated、Software as a Service (SaaS) というすべてのデプロイオプションとの互換性を常に考慮してください。
 
 私たちの[バリュー](/handbook/values/)と[独自の働き方](/handbook/company/culture/all-remote/guide/)を維持しながら、プロダクトとお客様の成長を支える成果を生み出すために、技術力があり、多様でグローバルなチームを育成します。
 
