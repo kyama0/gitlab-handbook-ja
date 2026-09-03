@@ -2,11 +2,11 @@
 title: ツールとヒント
 simple_list: true
 upstream_path: /handbook/tools-and-tips/
-upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
-translated_at: "2026-07-29T06:11:55+09:00"
+upstream_sha: e044d1dc3f45ac23717b964db35ac97ee11f88a7
+translated_at: "2026-09-03T22:10:19+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-03T11:50:52+02:00"
 ---
 
 ## 概要
@@ -17,69 +17,39 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 ### GitLab.com でのユーザー名の変更
 
-- 開始点: ユーザー名が `old-mary` で、これを単に `mary` にしたいとします。
-- **注意:** 各 GitLab アカウントは **userID**（データベースに保存される番号）で追跡されます。
-ユーザー名を変更しても、userID は変わりません。
-そして GitLab 内のすべての権限、Issue、MR、関連する事項は、ユーザー名ではなく、あなたの **userID** に関連付けられています。
-- **注意:** GitLab Team メンバーでない場合、メールアドレス（[ステップ 2](#change-username-step-2)）を除いて同じプロセスが適用されます。これは異なります（@gitlab.com メールではない）ので、自分のメールアカウントに置き換えることができます。
+各 GitLab アカウントは、数値の **ユーザー ID** で追跡されます。ユーザー名を変更してもユーザー ID は変わらないため、すべての権限、Issue、マージリクエスト、その他のアクティビティは引き続きアカウントに関連付けられます。
 
-#### ステップ 1: 新しいユーザー名をリクエストする
+GitLab では、プロファイル設定から直接ユーザー名を変更できるようになりました—別のアカウントやユーザー名の入れ替えは必要ありません。希望するユーザー名がすでに取得されており、非アクティブな場合は、[ネームスクワッティングのリクエストは現在サポートされていない](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/5170)ことに注意してください。別のユーザー名を選択する必要があります。
 
-- この [マージリクエスト](https://gitlab.com/gitlab-com/support/support-team-meta/-/issues/5170) 以降、[Namesquatting プロセス](/handbook/support/workflows/namesquatting_policy) を介してユーザー名をリクエストすることはできなくなりました。使用したいユーザー名が利用できない場合、別のものを選択する必要があります。
+**GitLab チームメンバーではありませんか？** すべての前提条件と手順について[ユーザー名の変更に関する GitLab ドキュメント](https://docs.gitlab.com/user/profile/#change-your-username)を参照してください。
 
-#### ステップ 2: 新しいユーザー名で新しいアカウントを作成する {#change-username-step-2}
+#### ユーザー名を変更する手順
 
-- サポートからユーザー名が利用可能であると返事があった場合、それで新しい GitLab.com アカウントを作成します。
-新しいアカウントの登録には個人メールを使用し、古い GitLab アカウントで使用されていないものを選択してください。
-- [**Profile Settings** > **Emails**](https://gitlab.com/-/profile/emails) に移動し、新しいメールを追加します。
-⭐️ **トリック** ⭐️ GitLab のメールが `mary@gitlab.com` の場合、新しいメールを `mary+something@gitlab.com` として追加します: これは [Gmail のトリック](https://support.google.com/mail/answer/12096?hl=en) です！このエイリアスに送信されたすべてのメールは、GitLab のメールアカウントに届きます 😃
-- [https://gitlab.com/-/profile/notifications](https://gitlab.com/-/profile/notifications) に移動し、通知メールを `mary+something@gitlab.com` として選択します。
-- 古いアカウントを 1 つのブラウザで、新しいアカウントを別のブラウザで開きます（例: Chrome と Firefox、または Chrome と Safari）- 両方のアカウントに同時にログインします。
+ユーザー名を変更する前に、自分の名前空間に [Container Registry](https://docs.gitlab.com/user/packages/container_registry/) タグを含むプロジェクトや、[GitLab Pages](https://docs.gitlab.com/user/project/pages/) をホストするプロジェクトがないことを確認してください。いずれかに該当する場合は、先に解決してください。
 
-#### ステップ 3: ちょっと楽しもう (冗談です、これは重要です！)
+ユーザー名を変更するには、次の手順に従います。
 
-- 両方のアカウントで [https://gitlab.com/-/profile/account](https://gitlab.com/-/profile/account) に移動します。
-- ユーザー名を探します。
-この操作は素早く行う必要があります。さもないと、誰かに先を越されて素晴らしい新しいユーザー名を失うリスクがあります。
-両方のアカウント間でユーザー名を **入れ替える** 必要があります。これにより、すべての履歴、特権、Issue、割り当てられた MR などを保持できます。
-- 2 つのモニターで作業している場合、各ブラウザを 1 つのモニターに開きます。
-そうでない場合は、並べて開いて両方を同時に見られるようにします。
-- 新しいユーザー名 `mary` を `mary-1` のようなものに変更し、**まだ更新ユーザー名をクリックしないでください**。
-古いユーザー名 `old-mary` を新しいユーザー名 `mary` に変更し、**それも更新しないでください**。
-ボックスに入力したまま放置してください。
-- 前の手順を正しく行ったか確認してください！
-- ⚠️ **重要** ⚠️ 最初のもの（`mary` から `mary-1`）を更新します。
-すぐに、もう一方（`old-mary` から `mary`）の **更新** をクリックします。
-- すぐに、`mary-1` を古い `old-mary` に名前変更し、再度 **更新ユーザー名** をクリックします。
-- ジャジャーン！🙌
+1. GitLab.com の右上隅でアバターを選択します。
+1. **Edit profile** を選択します。
+1. 左サイドバーで **Account** を選択します。
+1. **Change username** セクションに新しいユーザー名を入力します。
+1. **Update username** を選択します。
 
-#### ステップ 4: プロジェクトを移動する（または移動しない）
+GitLab は、古い名前空間から新しい名前空間へのリダイレクトを自動的に設定します。既存のリンクやクローンがどうなるかを把握するため、[パス変更後のリダイレクトの動作](https://docs.gitlab.com/user/project/repository/#repository-path-changes)を確認してください。
 
-- 個人プロジェクトがある場合、新しいアカウント（古いユーザー名を持つもの）にインポートしたい場合があります。
-これを行うには、新しいアカウント（古いユーザー名を持つもの）で **Create a New Project** をクリックし、元のものとまったく同じ名前を付け、**Git - add repo by url** をクリックし、プロジェクトの `https://` URL をそこに貼り付けます。
-作業を簡単にするには、インポートしたいすべてのプロジェクトを `public` 表示に設定してください。
-後でプライベートにすることができます。
-- デフォルトの **GitLab.io** URL を持つ GitLab Pages プロジェクトがある場合、それらを新しいアカウントにインポートし、変更を加えて **ビルドをトリガー** してサイトを再デプロイする必要があります。
-[A レコードの代わりにサブドメイン付き CNAME](https://about.gitlab.com/blog/2016/04/07/gitlab-pages-setup/#custom-domains) を使用している場合のみ影響を受けます。
-これは、すべて `A` レコード経由で同じ Pages サーバー IP を指すカスタムドメインを使用する Pages プロジェクトには影響しません。
-グループも独自の名前空間で動作するため影響を受けません。
-両方のユーザーをグループのメンバーとして追加し、何も変わりません。
+#### 他の場所でユーザー名を更新する
 
-これで完了です！
+ユーザー名を変更した後、次の場所でも更新してください。
 
-#### ステップ 5: 他の場所でユーザー名を更新する
+1. Workday - プロファイルアクションの **Additional Data** > **Edit Effective-Dated Custom Object** にある GitLab Username
+1. ユーザー名を手動で記載しているチームのハンドブックページ。ハンドブックプロジェクト内で自分のユーザー名を検索します
+1. 古い名前空間 URL を参照しているブックマークやローカル Git リモート
 
-以下の場所でユーザー名を更新することを忘れないでください:
+#### 通知を設定する
 
-- [team page](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/team.yml)
-- マーケティングの一員である場合、[Marketing Handbook](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/source/handbook/marketing/index.html.md)
-- Workday - プロファイルアクションの 'Additional Data' > 'Edit Effective-Dated Custom Object' の下の GitLab Username
+チームメンバーは、それぞれ異なる方法で GitLab のアクティビティを管理しています。自分に最適な方法で通知を設定してください。
 
-#### ステップ 6: 通知を設定する
-
-チームメンバーは、さまざまな方法で GitLab アクティビティを管理することを選択します。あなたに最も適した方法で通知を設定してください。
-
-1. **To-do リスト:** すべてのチームメンバーは、GitLab アカウント内に [to-do リスト](https://docs.gitlab.com/ee/user/todos.html) を表示します。これにより、さまざまなアクションアイテムを追跡できます。完了したアイテムは done としてマークできます。
+1. **To-do リスト:** すべてのチームメンバーには、GitLab アカウント内に [to-do リスト](https://docs.gitlab.com/ee/user/todos.html) が表示されます。これにより、さまざまなアクションアイテムを追跡できます。完了したアイテムは完了としてマークできます。
 1. **メール:** チームメンバーは、[フィルタを使用](#filters) して Gmail アカウントに表示する通知（あれば）を選択できます。
 1. **Slack 通知:** チームメンバーは、[Slack 通知](https://docs.gitlab.com/ee/user/project/integrations/gitlab_slack_application.html) を有効化することを選択できます。GitLab slack は 90 日後に期限切れとなるため、長期的なアクティビティ管理のためのツールではないことに注意してください。
 
