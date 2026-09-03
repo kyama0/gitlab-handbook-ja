@@ -2,9 +2,9 @@
 title: "リクルート方法"
 description: "UX Research Operations Coordinator がどのようにリクルートを行うかを学びます"
 upstream_path: /handbook/upstream-studios/research-operations/recruitment-methods/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T06:46:21+09:00"
+upstream_sha: 4aea490fd6276e4dc6a9fba4f36820790b265fe9
+lastmod: "2026-08-18T16:33:51+01:00"
+translated_at: "2026-09-03T21:26:54+09:00"
 translator: codex
 stale: false
 ---
@@ -19,7 +19,7 @@ UX Research Operations Coordinator は、複数のソースから参加者をリ
     - 条件によりますが、通常は数時間以内に適格な参加者が現れ始めます。
 1. **ソーシャルアウトリーチ:** GitLab のブランドチャネルでソーシャル投稿が行われることがあります。UX Research Operations Coordinator は、[Corporate Marketing プロジェクト](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing) の [Social Request issue テンプレート](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/.gitlab/issue_templates/social-general-request.md?ref_type=heads) を使用して、この種類の投稿をリクエストします。リクルートリクエストを発行した DRI が、UX Research Operations Coordinator からソーシャルリクエストの Issue を開くよう促されることもあります。これは主に GitLab ユーザーを対象とした調査に適しています。プロダクトマネージャー、プロダクトデザイナー、その他のチームメイトは、自分のネットワークを通じてリサーチを宣伝することが強く推奨されます。
     - これらのリクエストが公開されるまで 1〜2 週間を見ておいてください。
-1. **直接ソーシング:** LinkedIn を活用して潜在的な参加者にアプローチしてソーシングできます。GitLab の誰でも [LinkedIn Recruiter ライセンス](/handbook/hiring) をリクエストできます。この [Unfiltered ビデオ](https://youtu.be/rc2IX1e2sQ8) と [スライドデッキ](https://docs.google.com/presentation/d/1LI9qXLRQSnikPiHztDQBapGrDn5Nimsf-K8g1r3j9Do/edit#slide=id.g29a70c6c35_0_68) は、調査の参加者をソーシングするために LinkedIn Recruiter を使用する方法の概要を提供しています。LinkedIn Recruiter のシートは、最初の週は 200 件の InMail 送信に制限される可能性が高いことに注意してください。この数量を超えると、アカウントが 1 週間無効になります。最初の週以降は 1 日あたり最大 1000 件の InMail を送信できます。この制限を超えると、アカウントが 1 日無効になります。
+1. **直接ソーシング:** プラットフォーム上でのアウトリーチを通じて、LinkedIn を活用して潜在的な参加者にアプローチし、ソーシングできます。調査の特定の条件に合う参加者を見つけて直接連絡するのに適した方法です。一定期間に送信できるメッセージ数について、プラットフォームの制限に注意してください。
     - 最も時間のかかるリクルート方法ですので、最低でも 2 週間は見ておいてください。
 1. **Docs サイトバナー:** [Docs サイト](https://docs.gitlab.com/) のバナーを使って、大規模なアンケートを宣伝することがあります。この方法でサンプリングする場合、考慮すべきバイアスがいくつかあります。
     - Docs チームはリクエストを許可しないことを選択できます。通常、稼働まで 1 週間かかります。

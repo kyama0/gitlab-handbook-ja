@@ -1,16 +1,16 @@
 ---
 title: "GitLab 導入リサーチプログラム"
 upstream_path: /handbook/upstream-studios/experience-research/strategic-research-at-gitlab/gitlab-adoption-research-program/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:44-03:00"
-translated_at: "2026-07-17T08:00:00+09:00"
+upstream_sha: 4aea490fd6276e4dc6a9fba4f36820790b265fe9
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-03T21:26:54+09:00"
 translator: codex
 stale: false
 ---
 
 ## GitLab 導入リサーチとは {#what-is-gitlab-adoption-research}
 
-ソリューションとして、GitLab は [DevOps Platform](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/)と見なされています。DevOps Platform は、複雑な統合、データのボトルネック、ツールチェーンの保守をなくし、生産性を高める単一のアプリケーションです。この単一のアプリケーションは、GitLab の[ステージ](/handbook/product/categories/#devops-stages)で構成されています。DevOps Platform の導入をよりよく理解するには、ユーザーがより多くのステージをどのように、またなぜ導入しているかを理解する必要があります。
+ソリューションとして、GitLab は [DevOps Platform](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/)と見なされています。DevOps Platform は、複雑な統合、データのボトルネック、ツールチェーンの保守をなくし、生産性を高める単一のアプリケーションです。この単一のアプリケーションは、GitLab の[ステージ](/handbook/product/categories/#devops-stages)で構成されています。DevOps Platform の導入をよりよく理解するには、ユーザーがより多くのステージをどのように、またなぜ導入しているかを理解する必要があります。
 
 導入に関するリサーチでは、**3 つ以上のステージ**を導入する新しい[ネームスペース](https://docs.gitlab.com/user/group/#namespaces)は、複数のステージを導入していないネームスペースと大きく異なることを学びました。まず、ネームスペースの無料から有料へのコンバージョン率が大幅に高くなります。また、顧客が使用するステージが増えるほどエンゲージメントは深まり、GitLab はより定着し、顧客が離れにくくなります。さらに、ステージの利用が増えると、ビジネスにとってアップセルおよび拡大という収益化の機会も増えます。
 

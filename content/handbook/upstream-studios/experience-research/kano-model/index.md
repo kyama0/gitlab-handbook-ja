@@ -2,9 +2,9 @@
 title: "機能の優先順位付けのための Kano アンケート"
 description: "Kano モデルは、構築予定の機能について考えるためのシンプルで強力な方法を提供します。"
 upstream_path: /handbook/upstream-studios/experience-research/kano-model/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-lastmod: "2026-07-16T17:32:42-03:00"
-translated_at: "2026-07-17T07:18:26+09:00"
+upstream_sha: 4aea490fd6276e4dc6a9fba4f36820790b265fe9
+lastmod: "2026-08-19T14:13:18-04:00"
+translated_at: "2026-09-03T21:26:54+09:00"
 translator: codex
 stale: false
 ---
@@ -96,7 +96,7 @@ Kano 調査用のアンケート設計はリサーチの観点ではかなり単
 {{% /alert %}}
 
 {{% alert title="💡 **ヒント**" color="primary" %}}
-機能の説明を非同期で作成するには多くの時間がかかる場合があります。チームが十分に迅速に前進していないと感じる場合は、[同期コミュニケーションに切り替えます](/handbook/company/culture/all-remote/asynchronous/)。
+機能の説明を非同期で作成するには多くの時間がかかる場合があります。チームが十分に迅速に前進していないと感じる場合は、同期コミュニケーションに切り替えてください。
 {{% /alert %}}
 
 ### アンケート {#survey}
