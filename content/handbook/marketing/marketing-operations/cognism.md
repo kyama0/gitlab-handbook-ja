@@ -2,11 +2,11 @@
 title: "Cognism"
 description: "Cognism は、コンタクトおよびアカウントデータを提供するセールスインテリジェンスソフトウェアであり、セールスチームとマーケティングチームが予測可能なパイプラインを推進するのに役立ちます。"
 upstream_path: /handbook/marketing/marketing-operations/cognism/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T09:02:57+09:00"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## Cognism について
@@ -56,7 +56,7 @@ Cognism では、Cognism カスタムフィールドのみをエンリッチし�
 
 ## Do Not Call と Do Not Email の自動化
 
-適切な基準が設定されていれば、Cognism によって SFDC 上のリード/コンタクトに `Do not email` および `Do not call` のラベルを付けることができます。ルールの詳細については [sales development ハンドブックページ](/handbook/marketing/sales-development/#do-not-call-and-do-not-email-automations) を参照してください。
+適切な基準が設定されていれば、Cognism によって SFDC 上のリード/コンタクトに `Do not email` および `Do not call` のラベルを付けることができます。ルールの詳細については [sales development ハンドブックページ](/handbook/sales/sales-development/#do-not-call-and-do-not-email-automations) を参照してください。
 
 ## Outreach 連携
 

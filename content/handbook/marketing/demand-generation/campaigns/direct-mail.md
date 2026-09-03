@@ -5,18 +5,18 @@ twitter_image: '/images/tweets/handbook-marketing.png'
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/marketing/demand-generation/campaigns/direct-mail/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T12:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2024-08-08T22:55:54+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
 
 このページでは、アカウント中心のキャンペーンを含むマーケティングキャンペーンの戦術として用いられるダイレクトメールに焦点を当てます。
 
-コンテンツシンジケーションキャンペーンの実施に関心がある場合は、デマンドジェネレーションチームにご連絡ください。フィールドマーケティングの方は、[このページ](/handbook/marketing/field-marketing/field-marketing-epics/#content-syndication)でフィールドマーケティングのエピック詳細をご確認ください。
+コンテンツシンジケーションキャンペーンの実施に関心がある場合は、デマンドジェネレーションチームにご連絡ください。フィールドマーケティングの方は、[このページ](/handbook/marketing/growth-marketing/regional-marketing/field-marketing-epics/#content-syndication)でフィールドマーケティングのエピック詳細をご確認ください。
 
 ### GitLab でダイレクトメールを企画するプロセス
 

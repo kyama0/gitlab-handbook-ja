@@ -2,11 +2,11 @@
 title: "Enterprise Applications - CRM チーム"
 description: "Enterprise Applications CRM チームは、GitLab 内のビジネスプロセスをサポートする専門アプリケーションを実装し、サポートしています。"
 upstream_path: /handbook/sales/field-operations/sales-systems/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T23:52:41+09:00"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-08-13T15:10:33+03:00"
+lastmod: "2026-08-28T11:36:35-06:00"
 ---
 
 
@@ -296,7 +296,7 @@ GitLab の[パスワードセキュリティのベストプラクティス](/han
 |User パスワードのリセット|@monalibhide <br> @xliawang <br> @bienrcb |@sheelaviswanathan  ||リクエスト/必要に応じてユーザーパスワードをリセットします。ユーザーが凍結されている場合は、解凍してリセットします。|
 |API Tokens/Keys の再生成|@sheelaviswanathan |@sheelaviswanathan ||API キーを持つマネージドパッケージがある場合、Systems チームにキーの再生成を依頼し、1Password でユーザーを更新します|
 |User Acceptance Testing を調整する「power users」がいる場合 - Delegated Administration 領域にエントリを作成して「login as」できるようにする|@sheelaviswanathan |@sheelaviswanathan |||
-|Marketo Sync の再確立|Marketing Operations|Marketing Operations|Marketing Sandbox/Staging| 再接続前に staging で Lead と Contact に `Marketo Sync` (Boolean) の新しいフィールドを作成する必要があります。<br>このボックスはチェック解除されるべきですが、Mops プロファイルによって編集可能で、Mops のページレイアウトに追加されます。Mops は再接続前にカスタム sync を設定するために Marketo support にリクエストする必要があります。 |
+|Marketo Sync の再確立|Marketing Operations|Marketing Operations|Marketing Sandbox/Staging| 再接続前に staging で Lead と Contact に `Marketo Sync` (Boolean) の新しいフィールドを作成する必要があります。<br>このボックスはチェック解除されるべきですが、Mops プロファイルによって編集可能で、Mops のページレイアウトに追加されます。Mops は再接続前にカスタム sync の設定を Marketo support に依頼し、Marketo インスタンスを[新しい SFDC ORG ID](https://experienceleaguecommunities.adobe.com/adobe-marketo-engage-27/sfdc-sandbox-refresh-new-org-id-160996)へ再接続する必要があります。 |
 |Marketo Sync の再認証 (Systems Tasks)|Sales Systems|Sales Systems|Staging|[Configure connected Oauth App](https://experienceleague.adobe.com/docs/marketo/using/product-docs/crm-sync/salesforce-sync/log-in-using-oauth-2-0.html?lang=en)、consumer secret、key、新しい OrgID を Mops に提供します。 |
 |Marketo Sync の再認証 (Mops Tasks)|Marketing Operations|Marketing Operations|Marketo Sandbox| 再マッピングのためにサポートチケットを作成します。再マッピングが完了したら、[OAuth 情報](https://experienceleague.adobe.com/docs/marketo/using/product-docs/crm-sync/salesforce-sync/log-in-using-oauth-2-0.html?lang=en)を更新して接続します。次に、`Login with salesforce` > use custom domain > `gitlab--staging` をクリックし、1pw vault の Marketo Integration の詳細でログインします。Systems は admin email に送信された認証コードを提供する必要がある場合があります。マッピングと sync を確認します。|
 | 新しい DKIM キーをセットアップして gitlab.com DNS に追加|Sales Systems|Sales Systems|Test1| [こちらの手順](https://help.salesforce.com/s/articleView?id=sf.emailadmin_setup_dkim_key.htm&type=5)に従って新しい DKIM キーをセットアップします。キーが公開されたら、CNAME と Alternate CNAME の値を gitlab.com の DNS に追加するために GitLab IT チームに提供します。これが完了したら、'Send an Email' 機能を使用して Case から外部メールアドレスにメールが送信でき、メールが問題なく配信されることを確認します。|

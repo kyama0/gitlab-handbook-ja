@@ -2,11 +2,11 @@
 title: "Development Analytics グループ"
 description: "Developer Experience セクション配下の Development Analytics グループ"
 upstream_path: /handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:19:21+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T14:48:53+02:00"
+lastmod: "2026-08-20T14:51:55+01:00"
 ---
 
 ## 戦略
@@ -216,6 +216,8 @@ flowchart LR
 ## ダッシュボード
 
 Development Analytics のダッシュボードは [Developer Experience ダッシュボードページ](/handbook/engineering/infrastructure-platforms/developer-experience/dashboards)に掲載されています。
+
+[Test Health](/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/test-health) ページでは、グループごとのテストスイート健全性スコア（Flaky、Quarantine、Slow の各ピラー）と、それらへの対応方法を説明しています。
 
 ## 共通リンク
 

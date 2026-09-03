@@ -2,9 +2,9 @@
 title: "不正ガバナンスフレームワーク"
 description: "GitLab の全社的な不正プログラムのガバナンスモデル、役割、RACI について説明します。"
 upstream_path: "/handbook/legal/ethics-compliance-program/fraud-governance-framework/"
-upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
-lastmod: "2026-07-31T20:16:55+00:00"
-translated_at: "2026-08-01T16:25:30+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+lastmod: "2026-08-25T13:52:02Z"
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
 ---
@@ -74,7 +74,7 @@ stale: false
 
 **Internal Audit の独立性:** Internal Audit は助言、独立した保証を提供し、不正の懸念事項の性質に応じて、本書に記載する RACI マトリックスに従って調査を主導または支援する場合があります。Internal Audit はビジネスプロセスや懲戒上の決定を担当しません。Internal Audit Charter に基づき、Internal Audit は、不正リスク、統制、報告が適切に設計され運用されているかを評価し、不正関連の重大なリスクエクスポージャーと統制上の問題を Audit Committee と E-Group に伝えることで、不正ガバナンス全体の十分性を監督する権限を有します。
 
-**LACA の可視性と ACP:** どのチームが調査を主導するかにかかわらず、LACA は全社的な不正関連案件台帳と関連コミュニケーションを通じて、すべての不正調査を把握します。これにより、弁護士・依頼人間秘匿特権を一貫して適用し、必要に応じて外部弁護士を起用できます。
+**LACA の可視性と ACP:** どのチームが調査を主導するかにかかわらず、LACA は全社的な不正関連案件[台帳](https://docs.google.com/spreadsheets/d/1EjJxCwTe2S5K52DoVpASJwj1rEIJB0H2c9M2ulmzhfk/edit?gid=2067029915#gid=2067029915)と関連コミュニケーションを通じて、すべての不正調査を把握します。これにより、弁護士・依頼人間秘匿特権を一貫して適用し、必要に応じて外部弁護士を起用できます。
 
 **従業員の懲戒に関する TMR のオーナーシップ:** 不正調査を主導する部門にかかわらず、案件によってチームメンバーに懲戒処分が科される可能性がある場合は、Team Member Relations（TMR）を関与させる必要があります。TMR は、Employment Legal および LACA Corporate and Compliance チームと協議して、警告、解雇、退職時のプロトコルを含むすべての懲戒上の決定と対応を主導します。調査のオーナーシップと懲戒のオーナーシップは別です。専門部門が調査を担当し、TMR はその結果として生じる従業員の懲戒を担当します。
 

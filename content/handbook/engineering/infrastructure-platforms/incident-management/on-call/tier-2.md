@@ -1,11 +1,11 @@
 ---
 title: オンコールプロセスとポリシー - Tier 2
 upstream_path: /handbook/engineering/infrastructure-platforms/incident-management/on-call/tier-2/
-upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
-translated_at: "2026-08-15T06:38:37+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-14T08:47:32-04:00"
+lastmod: "2026-08-28T14:41:23-06:00"
 ---
 
 Tier 2 ローテーションは、サポートのためにチームメンバーをページするかを人間が判断するオンコールローテーションを指します。
@@ -14,7 +14,7 @@ Tier 2 ローテーションは、サポートのためにチームメンバー�
 
 Tier-2 SME On-Call プログラムは、専門的なサポートの第二層を確立することで、インシデント対応を強化します。Subject Matter Experts (SME) は、複雑なインシデントをより速く解決し、MTTR (Mean Time To Recover) を改善し、サービスの信頼性に対するオーナーシップと説明責任を高めるためのドメイン固有の知識を提供します。
 
-このプログラムは、専門的なドメイン知識がインシデント対応を改善する領域に対して 24x7 のカバレッジを提供することを目標として、2025 年に GitLab で導入されました。実際には、多くのチームはこのレベルのカバレッジを提供できるように構成されていません。そのため、これらのギャップを理解し、このレベルのカバレッジを達成するためにこれらのチームを支援する方法を学ぶために、まず Pilot Program を始めました。
+Tier 2 チームは、[Tier 1 への移行プロセス](./tier-2-path-to-tier-1.md)に従って Tier 1 へ進みます。
 
 ## Tier 2 にエスカレーションするタイミング
 

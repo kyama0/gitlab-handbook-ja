@@ -1,11 +1,11 @@
 ---
 title: "Epic プロジェクト管理ガイドライン"
 upstream_path: /handbook/marketing/project-management-guidelines/epics/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T12:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2025-08-28T17:30:01+02:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 背景
@@ -31,7 +31,7 @@ lastmod: "2025-08-28T17:30:01+02:00"
 1. Epic はテンプレートから作成できません（[Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/37079)）。
 ただし、3 つの回避策があります。
     1. 第一 - Epic は Epic に昇格された Issue から作成**できます**（この場合、Issue テンプレートが Epic テンプレートの代替となる可能性があります）。
-    1. 第二 - Epic に関連する Issue の組み合わせは、スプレッドシートでテンプレート化し、所与の Epic に関連する Issue を生成するためにアップロードできます。この[Epic テンプレート概要](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/104/)を参照 - 複数の GitLab プロジェクト/チームにまたがる協働 Epic の場合、注意: このプロセスでは、Issue がまたがるプロジェクト/チームの総数だけ、プロジェクト/チームごとに分けてスプレッドシートのアップロードを完了する必要があります。
+    1. 第二 - Epic に関連する Issue の組み合わせは、スプレッドシートでテンプレート化し、所与の Epic に関連する Issue を生成するためにアップロードできます。この[Epic テンプレート概要](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/104/)を参照 - 複数の GitLab プロジェクト/チームにまたがる協働 Epic の場合、注意: このプロセスでは、Issue がまたがるプロジェクト/チームの総数だけ、プロジェクト/チームごとに分けてスプレッドシートのアップロードを完了する必要があります。
     1. 第三 - 関連するハンドブックページに Epic のコードを含めて、issuable テンプレートのハイパーリンク付きでコピペできるようにします。例として[このハンドブックページ](/handbook/marketing/lifecycle-marketing/#epic-code)を参照。
 1. Epic にはアサイニーがいません。
 1. Epic はプロジェクト内では作成できません（[Issue](https://gitlab.com/gitlab-org/gitlab/-/issues/31840)）。

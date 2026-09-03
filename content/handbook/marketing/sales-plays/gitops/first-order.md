@@ -2,11 +2,11 @@
 title: "セールスプレイ: First Order 向け GitOps"
 description: "このページには、FO GitOps セールスプレイに関するすべての情報が記載されています。"
 upstream_path: /handbook/marketing/sales-plays/gitops/first-order/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ### **FO AE 向け GitOps セールスプレイ**
@@ -51,7 +51,7 @@ lastmod: "2024-06-27T22:14:31+00:00"
    - CI パイプラインを構築し、基本的なものを動作させる
 1. 成功基準を概要化し確認する[メール](https://docs.google.com/document/d/1PSwEBCxkQMgMmtLKocNfP0EKTLnWIr2FZimG0yv1gTM/edit#bookmark=id.5grp5yaens0e)を送信
 1. SA と協力して GitOps のテクニカルデモを披露し、および/または[テクニカルデモ、ウェビナー、その他のリソース](https://learn.gitlab.com/l/gitops-gtm-content)を共有してください。
-1. [顧客事例](/handbook/marketing/sales-plays/gitops/#customer-stories)と[Gartner Peer Insights](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/#gartner-peer-insights)を共有
+1. [顧客事例](/handbook/marketing/sales-plays/gitops/#customer-stories)と[Gartner Peer Insights](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/#gartner-peer-insights)を共有
 1. トライアル期間中の各コール後、成功基準に対して達成した進捗と翌週に取り組むべきことを含む[メール](https://docs.google.com/document/d/1PSwEBCxkQMgMmtLKocNfP0EKTLnWIr2FZimG0yv1gTM/edit#bookmark=id.6tok4lob9uox)を送信。
 
 ### パート 4: 交渉 / 意思決定

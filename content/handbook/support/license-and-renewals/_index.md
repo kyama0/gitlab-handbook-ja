@@ -2,11 +2,11 @@
 title: ライセンスと更新
 description: ライセンスと更新（L&R）は、顧客が GitLab のサブスクリプションを購入または更新する際に直面する問題を解決するための活動全般を指します。
 upstream_path: /handbook/support/license-and-renewals/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T06:59:13+09:00"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-29T12:39:09-04:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
@@ -263,7 +263,7 @@ Slack の `#s_fulfillment` チャンネル
   - [Sales Segmentation](/handbook/sales/field-operations/gtm-resources/)
   - [Sales Territories](/handbook/sales/territories/)
 - [Marketing](/handbook/marketing/)
-  - [Sales Enablement: GitLab.com subscriptions](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions/)
+  - [Sales Enablement: GitLab.com subscriptions](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions/)
 
 ### Issue トラッカー
 

@@ -1,11 +1,11 @@
 ---
 title: "プログラムリソースとワークフロー"
 upstream_path: /handbook/marketing/developer-relations/programs/program-resources/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-09T17:22:26+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 このページには、プログラムの認知拡大、エンゲージメント、リテンション、アドボカシーを推進するために使用するツールとワークフローが含まれています。
@@ -82,7 +82,7 @@ Content Marketing チームは GitLab ブログを管理しており、ブログ
 
 ### 新規アセットの作成
 
-Brand Creative チームは、デザイン、tanuki tab、スワッグなどのアセットの設計、作成、サポート、レビューを支援できます。クリエイティブリクエストを送信するには、関連する [テンプレート](/handbook/marketing/brand-and-product-marketing/design/) を使用してください。
+Brand Creative チームは、デザイン、tanuki tab、スワッグなどのアセットの設計、作成、サポート、レビューを支援できます。クリエイティブリクエストを送信するには、関連する [テンプレート](/handbook/marketing/brand-experience/brand-creative/) を使用してください。
 
 Developer Advocacy チームは、開発者向けにカスタマイズされたコンテンツを作成します。チームの [プロセス](/handbook/marketing/developer-relations/content-request/#how-to-work-with-the-developer-advocate-team) に従って [Issue を提出](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?issuable_template=content-request) することでリクエストを送ることができます。
 

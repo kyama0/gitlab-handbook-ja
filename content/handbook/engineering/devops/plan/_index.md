@@ -1,11 +1,11 @@
 ---
 title: "Plan"
 upstream_path: /handbook/engineering/devops/plan/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:47:00+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-14T14:39:01+02:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 Plan チーム:
@@ -397,7 +397,7 @@ _UX Issue のウェイト付け_
 
 ##### ワークアイテムについて
 
-ワークアイテムアーキテクチャを使って構築された最初のオブジェクトは、計画と作業の追跡に関連するタスクで [Parker](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#parker-product-manager)、[Delaney](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead)、[Sasha](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer) のペルソナをサポートします。将来的に、さまざまなユーザーペルソナをサポートする追加のオブジェクトが追加されます。
+ワークアイテムアーキテクチャを使って構築された最初のオブジェクトは、計画と作業の追跡に関連するタスクで [Parker](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#parker-product-manager)、[Delaney](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead)、[Sasha](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer) のペルソナをサポートします。将来的に、さまざまなユーザーペルソナをサポートする追加のオブジェクトが追加されます。
 
 ワークアイテムの詳細を読む:
 

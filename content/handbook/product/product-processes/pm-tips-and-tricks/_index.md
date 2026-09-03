@@ -1,11 +1,11 @@
 ---
 title: プロダクトマネジメントのコツとテクニック
 upstream_path: /handbook/product/product-processes/pm-tips-and-tricks/
-upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
-translated_at: "2026-06-25T07:39:40+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-24T15:19:10-04:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## 概要
@@ -38,7 +38,7 @@ lastmod: "2026-06-24T15:19:10-04:00"
 
 - `#product`、`#s_`、`#g_`、`#f_` などのさまざまな製品ベースの Slack チャンネルで更新を共有する
 - 方向性やカテゴリの変更を #customer-success にクロスポストし、[ユースケース](/handbook/marketing/use-cases/) に影響する場合は認知のために `@cs-leadership` をタグ付けする
-- 方向性の更新について議論する短い動画を録画し、Customer Success と共有する。効率的なコミュニケーションを促進するために [必要に応じて](/handbook/company/culture/all-remote/asynchronous/#gitlab-experts-advise-on-when-to-use-sync-vs-async) 同期ミーティングを使用する。
+- 方向性の更新について議論する短い動画を録画し、Customer Success と共有する。効率的なコミュニケーションを促進するために必要に応じて同期ミーティングを使用する。
 - Field（Sales、Customer Success、Channel & Alliances）チームのためにより大規模な社内コミュニケーションプラン／アプローチが必要かどうかを判断するために [Field Communications チームとコラボレーションする](/handbook/sales/field-communications/#field-communications-playbook)。
 - 組織全体でセクションレベルで月次方向性ページ更新のハイライトを集約し、共有する
 

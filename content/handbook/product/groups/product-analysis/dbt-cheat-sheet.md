@@ -2,11 +2,11 @@
 title: "dbt チートシート"
 description: "機能アナリスト向けの data build tool (dbt) チートシート"
 upstream_path: /handbook/product/groups/product-analysis/dbt-cheat-sheet/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-23T15:35:45-08:00"
+lastmod: "2026-08-20T08:15:32-06:00"
 ---
 
 ## このページの目的
@@ -121,7 +121,7 @@ CLONE PROD.COMMON
 [`dbt run`](https://docs.getdbt.com/reference/commands/run) コマンドを使用できます。
 他の便利なリソースとヒント:
 
-- [GitLab Data Team dbt コマンドラインチートシート](/handbook/enterprise-data/platform/dbt-guide/#command-line-cheat-sheet)
+- [GitLab Data Team dbt コマンドリファレンス](/handbook/enterprise-data/platform/dbt-guide/#dbt-command-reference)
 - [モデル選択構文の概要](https://docs.getdbt.com/reference/node-selection/syntax)
 - 名前の間にスペースを入れてコマンドに含めることで、複数のモデルを指定できます
 - [グラフオペレーター](https://docs.getdbt.com/reference/node-selection/graph-operators)を使用して、

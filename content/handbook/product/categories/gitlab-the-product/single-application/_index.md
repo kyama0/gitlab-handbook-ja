@@ -2,11 +2,11 @@
 title: シングルアプリケーションの利点
 description: "シングルアプリケーションを持つことの利点について議論します"
 upstream_path: /handbook/product/categories/gitlab-the-product/single-application/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2025-04-01T09:22:28+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## シングルアプリケーション
@@ -223,7 +223,7 @@ flowchart LR
 
 #### 隠れたコスト
 
-ツールチェーンを管理する企業は、ツールチェーンの構築とメンテナンスに必要なエンジニアリング時間を、差別化された価値を提供するビジネスロジックを持つソフトウェアを書くために使う代わりに、隠れた運用コストとして支払います。大企業では、これは[20 人のエンジニアと 1 人のエンジニアの違い](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/)を意味する可能性があり、あなたのツールをメンテナンスするためです。
+ツールチェーンを管理する企業は、ツールチェーンの構築とメンテナンスに必要なエンジニアリング時間を、差別化された価値を提供するビジネスロジックを持つソフトウェアを書くために使う代わりに、隠れた運用コストとして支払います。大企業では、これは[20 人のエンジニアと 1 人のエンジニアの違い](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/)を意味する可能性があり、あなたのツールをメンテナンスするためです。
 
 ### さらなる例
 

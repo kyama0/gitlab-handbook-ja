@@ -1,11 +1,11 @@
 ---
 title: "Git チーム"
 upstream_path: "/handbook/engineering/infrastructure-platforms/tenant-scale/git/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-28T00:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## ミッションステートメント
@@ -68,7 +68,7 @@ Git プロジェクトはこの執筆時点でほぼ 20 年間有機的に成長
 [製品階層内での位置](/handbook/product/categories/#git-group)
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/tenant-scale/git/#team" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{< team-by-departments "Git Team" >}}
 
 
 ## チームへのお問い合わせ方法
@@ -76,7 +76,7 @@ Git プロジェクトはこの執筆時点でほぼ 20 年間有機的に成長
 他のチームやお客様が必要とするときは喜んでお手伝いします。ただし、私たちは主に_開発_チームであり、「フィールドエンジニアリング」に対応できるわけではありません。
 
 私たちの_エンジニア_は、Git 固有のユースケースとデータに基づいた深い技術調査と、サポート、CSM、Gitaly などの Git の直接ユーザーとの密接なパートナーシップによる技術的なコラボレーションについて、できれば
-[非同期](/handbook/company/culture/all-remote/asynchronous/)で支援できます。
+[非同期](/handbook/communication/#asynchronous-communication)で支援できます。
 
 _エンジニアリングマネージャー_（`@pks-gitlab`）と_プロダクトマネージャー_（`@mjwood`）は、ロードマップ、機能、タイムラインの明確化が必要な場合や、正しい優先順位付けを確保するためにお客様と関わることも喜んでいます。
 

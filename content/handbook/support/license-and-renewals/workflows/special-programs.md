@@ -3,11 +3,11 @@ title: "GitLab コミュニティプログラムのサポート"
 category: General
 description: コミュニティプログラムのサブスクリプションに関する問い合わせを適切な窓口へ案内するための手順
 upstream_path: /handbook/support/license-and-renewals/workflows/special-programs/
-upstream_sha: 9da08370100b76603b2eb82901592f9d21c9766c
-translated_at: "2026-05-08T11:18:50Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-27T11:47:23+01:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 GitLab は、本来であれば最も強力な機能にアクセスする手段を持たないコミュニティに対し、それらを紹介するためのいくつかのプログラムを提供しています。代表的なものは以下のとおりです。
@@ -17,7 +17,7 @@ GitLab は、本来であれば最も強力な機能にアクセスする手段�
 
 これらのプログラムの DRI は [Developer Relations Programs チーム](/handbook/marketing/developer-relations/programs/) です。
 
-登録済みの非営利団体については、GitLab は割引も提供しています。本プログラムについて詳しくは GitLab の [Environmental, Social, and Governance (ESG) チーム](/handbook/legal/esg/#faq) にお問い合わせください。スタートアップ向けには、HVS と FOs チームが [GitLab for Startups](/handbook/sales/high-velocity-sales-fo-team/startups-program/) プログラムを通じて割引を提供しています。
+登録済みの非営利団体については、GitLab は割引も提供しています。本プログラムについて詳しくは GitLab の [Environmental, Social, and Governance (ESG) チーム](/handbook/legal/esg/#faq) にお問い合わせください。スタートアップ向けには、HVS と FOs チームが [GitLab for Startups](/handbook/marketing/growth-marketing/growth-community-programs/#gitlab-for-startups-program) プログラムを通じて割引を提供しています。
 
 [GitLab for Education](https://about.gitlab.com/solutions/education/)、[GitLab for Open Source](https://about.gitlab.com/solutions/open-source/)、[GitLab for Startups](https://about.gitlab.com/solutions/startups/) に関するチケットを受け付けたら、以下の該当ワークフローを使用してください。
 

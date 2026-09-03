@@ -4,11 +4,11 @@ department: >-
   The Commercial Sales department at GitLab focuses on delivering maximum value
   to SMB and Mid-Market customers throughout their entire journey with GitLab
 upstream_path: /handbook/sales/commercial/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-14T07:59:50-06:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## Commercial Sales ハンドブックへようこそ
@@ -53,7 +53,7 @@ Commercial Sales 部門は、[GitLab Sales](/handbook/sales/)ディビジョン�
 - [GitLab Unfiltered YouTube](https://www.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A) 会社のミーティング、イネーブルメントセッション、その他のトピックに関する動画とプレイリストを含む、GitLab の従業員専用の YouTube チャネル。GitLab の[Sales Enablement プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KrirMKe3CyWl4ZBCKna5rJX)にアクセスしてください。
 - [Chorus Recordings](/handbook/business-technology/tech-stack/#chorus) 私たちのチームの通話とデモ録画の履歴は、新規および既存のセールスチームメンバーにとって貴重なトレーニングリソースです。
 - [Sales & SDR Enablement Sessions](/handbook/sales/training/sales-enablement-sessions/) セールスとマーケティングチームメンバーが選んだ人気の製品、市場、セールストレーニングトピックをカバーする週次トレーニングセッション。
-- [Product Study Guide](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers/) GitLab の各ティアで現在提供されている機能の全体像と、ティアアップグレードの理由をチームメンバーが理解するための学習コース。
+- [Product Study Guide](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/) GitLab の各ティアで現在提供されている機能の全体像と、ティアアップグレードの理由をチームメンバーが理解するための学習コース。
 - [Sales Training](/handbook/sales/training/)ページ
 - [Commercial Sales Enablement](/handbook/sales/commercial/enablement/)ページ
 

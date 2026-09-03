@@ -2,11 +2,11 @@
 title: "GitLab Contributors Program"
 description: "Developer Relations 配下の Contributor Success チームによる GitLab Contributors Program について"
 upstream_path: /handbook/marketing/developer-relations/programs/contributors-program/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T12:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-20T14:28:47+01:00"
+lastmod: "2026-08-24T10:58:12+02:00"
 ---
 
 ## サマリー
@@ -129,7 +129,7 @@ GitLab Contributors Program は、オープンソースコントリビュータ�
 #### マーケティングと戦略のアラインメント
 
 GitLab のマーケティング & ストラテジーの原則を適用することで、測定可能な価値を提供しながらコントリビューターコミュニティを成長させます。
-FY26 では、既存の [マーケティングアラインメント](/handbook/marketing/#marketing-alignment) の段階を私たちのコントリビューター戦略に採用します: 認知 => 検討 => 転換 => 拡大 => 伝道。
+FY26 では、コントリビューター戦略に認知からアドボカシーまでのジャーニーを用います: 認知 => 検討 => 転換 => 拡大 => 伝道。
 
 * **コントリビューターのジャーニー重視**
   * ユーザーを貢献機会の認知から、GitLab への貢献を支持するアクティブなコントリビューターへの転換まで導く

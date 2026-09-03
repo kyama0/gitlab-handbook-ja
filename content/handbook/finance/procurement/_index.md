@@ -1,11 +1,11 @@
 ---
 title: GitLab 調達チーム
 upstream_path: /handbook/finance/procurement/
-upstream_sha: a1349675d55d5e861385a14a4b2d2b617d2381b1
-translated_at: "2026-04-29T19:06:37Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-11T13:59:38-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 <!-- markdownlint-disable MD051 -->
 ## 調達とは何か？
@@ -386,7 +386,7 @@ SKO、プレジデントクラブ、Commit など、総コストが 100 万ド�
 - [保険証明書リクエストプロセス](/handbook/legal/procurement-guide-collaborating-with-gitlab-legal/#requesting-a-certificate-of-insurance)
 - [ContractWorks へのサードパーティ契約アップロード](/handbook/legal/vendor-contract-filing-process/)
 - [会社情報](https://gitlab.com/gitlab-com/Finance-Division/finance/-/wikis/company-information) - 会社の各法人に関する一般情報
-- [商標](/handbook/marketing/brand-and-product-marketing/brand/brand-activation/trademark-guidelines) - GitLab の商標使用に関する情報
+- [商標](/handbook/marketing/brand-experience/trademark-guidelines/) - GitLab の商標使用に関する情報
 - [権限マトリックス](https://internal.gitlab.com/handbook/company/authorization-matrix/) - 支出と会社拘束に関する権限マトリックスおよび法的書類への署名プロセス
 
 #### その他のサービス

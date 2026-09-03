@@ -2,11 +2,11 @@
 title: デモンストレーション
 description: "ソリューションアーキテクトは時に短い予告でデモを行ったり、特定の GitLab 機能を見込み客や顧客に示すための通話に参加したりすることを求められます"
 upstream_path: /handbook/solutions-architects/demonstrations/
-upstream_sha: cf317047d2c9678524c0db59ab7ed8c050713245
-translated_at: "2026-05-09T00:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2025-03-10T12:51:46-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## デモシステム概要と特定の環境
@@ -26,7 +26,7 @@ lastmod: "2025-03-10T12:51:46-05:00"
 - [GitLab.com の本番モニタリング](https://gitlab.com/gitlab-org/charts/gitlab/-/metrics?environment=190276)は、カスタムおよびアプリ内モニタリングに関するディスカッションで役立ちます
 - GitLab Runner の詳細を表示する[本番 Grafana インスタンス](https://dashboards.gitlab.com/d/000000159/ci?refresh=5m&orgId=1)は、モニタリングとダッシュボードに関する可能性の表現方法として優れています
 - ハンドブック内の GitLab [Direction](https://about.gitlab.com/direction/) ページは、将来を見据えた製品ビジョンの質問や今後の機能に関するディスカッションでよく役立ちます
-- オプション: 標準デモ環境を活用することで、[Integrations](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/integrations/) をロードしてディスカッションの準備ができます
+- オプション: 標準デモ環境を活用することで、[Integrations](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/integrations/) をロードしてディスカッションの準備ができます
 - 他の既存のデモグループとプロジェクトは次のセクションにリストされています
 
 ## GitLab Flow スタイルのデモ録画の保守の繰り返し可能なプロセス

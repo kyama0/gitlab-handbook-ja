@@ -2,11 +2,11 @@
 title: Allocadia
 description: Allocadia はマーケティングパフォーマンス管理ソフトウェアです。
 upstream_path: "/handbook/enterprise-data/marketing-analytics/allocadia/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T00:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-27T16:37:34+01:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## Allocadia について
@@ -207,7 +207,7 @@ GitLab 内の特定のグループには、Allocadia の詳細パネル内から
         - `External Virtual Events` カレンダーを使用
     - それ以外の場合はカレンダーの招待を作成せず、`Cannot create calendar invite for this Spend Type` というエラーメッセージを表示します。
 
-Workshops と Webcasts にはカレンダーの招待が必要ですが、意図的にプラグインから自動作成カレンダーの招待を除外しました。`GitLab Hosted Zoom Webcasts` カレンダーは Zoom インテグレーションの作業が必要であり、そのキャンペーンタイプを実行するために必要な技術的な作業を考慮してロックされたカレンダーだからです。GitLab がホストするワークショップやウェビナーの予約については、[このハンドブックページ](/handbook/marketing/field-marketing/field-marketing-owned-virtual-events/#securing-a-virtual-workshop-or-webcast-date)をご覧ください。
+Workshops と Webcasts にはカレンダーの招待が必要ですが、意図的にプラグインから自動作成カレンダーの招待を除外しました。`GitLab Hosted Zoom Webcasts` カレンダーは Zoom インテグレーションの作業が必要であり、そのキャンペーンタイプを実行するために必要な技術的な作業を考慮してロックされたカレンダーだからです。GitLab がホストするワークショップやウェビナーの予約については、[このハンドブックページ](/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events/#securing-a-virtual-workshop-or-webcast-date)をご覧ください。
 
 カレンダーの招待は終日に設定されています。特定の時間でイベントをカレンダーに登録したい場合は、手動で時間を変更することができます。
 

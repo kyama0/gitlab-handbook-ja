@@ -2,11 +2,11 @@
 title: Import グループ
 description: Import グループはマイグレーションを支援します。
 upstream_path: /handbook/engineering/devops/create/import/
-upstream_sha: 2e7a8730e4bbae1125f2d28ea6f22b445742c723
-translated_at: "2026-07-10T21:27:59+09:00"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-10T14:34:15+10:00"
+lastmod: "2026-08-17T13:05:42+12:00"
 ---
 
 ## 概要
@@ -28,7 +28,7 @@ Import グループに連絡を取るには、[GitLab プロジェクト](https:
 
 以下の人々はこのグループの常任メンバーです。
 
-{{< engineering/stable-counterparts role="Create:Import" >}}
+{{< engineering/stable-counterparts role="Dedicated:Import" >}}
 
 ## 作業
 

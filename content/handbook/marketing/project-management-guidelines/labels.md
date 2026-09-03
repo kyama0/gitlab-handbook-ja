@@ -1,11 +1,11 @@
 ---
 title: "ラベルプロジェクト管理ガイドライン"
 upstream_path: /handbook/marketing/project-management-guidelines/labels/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T12:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2025-08-28T17:30:01+02:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 背景
@@ -81,7 +81,7 @@ GitLab には 2 種類のラベルがあります:
 
 ### ラベル衛生を自動化する
 
-Triage Bot は、プロジェクトがプロセスにより一貫して従うようにするため、多くの Issue とマージリクエストの衛生タスクを自動化することを可能にするオープンソースプロジェクトです。[Triage Bot スクリプト](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/105/)を使用して、人為的エラーの影響を最小化し、適切なラベリングとワークフローを自動化してください。Triage Bot の一般的な使用例には、不足または不適切に適用されたラベルの特定、Issue またはマージリクエストの所有者へのラベル関連の問題の通知、事前定義された基準に基づいたラベルの適用が含まれます。
+Triage Bot は、プロジェクトがプロセスにより一貫して従うようにするため、多くの Issue とマージリクエストの衛生タスクを自動化することを可能にするオープンソースプロジェクトです。[Triage Bot スクリプト](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/105/)を使用して、人為的エラーの影響を最小化し、適切なラベリングとワークフローを自動化してください。Triage Bot の一般的な使用例には、不足または不適切に適用されたラベルの特定、Issue またはマージリクエストの所有者へのラベル関連の問題の通知、事前定義された基準に基づいたラベルの適用が含まれます。
 
 詳細については、@johnjeremiah の [YouTube チュートリアル](https://www.youtube.com/watch?v=Tp79e5sgpao)を参照してください。
 

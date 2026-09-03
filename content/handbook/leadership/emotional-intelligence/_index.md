@@ -1,11 +1,11 @@
 ---
 title: "感情知性"
 upstream_path: /handbook/leadership/emotional-intelligence/
-upstream_sha: 5a30517eddc68e6fac9fdeeae0ca9ba8ae77aef1
-translated_at: "2026-04-29T00:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-03T14:52:15-08:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## はじめに
@@ -60,7 +60,7 @@ EQ のコンポーネントは心理学者・作家の Daniel Goleman とその�
 <div style="width: 100%;"><div style="position: relative; padding-bottom: 99.45%; padding-top: 0; height: 0;"><iframe frameborder="0" width="1083" height="1077" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;" src="https://view.genially.com/630fb3c75f08a40011b7201c" type="text/html" allowscriptaccess="always" allowfullscreen="true" scrolling="yes" allownetworking="all"></iframe> </div> </div>
 
 1. **自己表現と認識をコントロールする。** GitLab では、オフィスでの[対面でのインタラクション](/handbook/company/culture/all-remote/)に頼るのとは対照的に、[書面によるコミュニケーション](/handbook/company/culture/all-remote/)と[バーチャル通話](/handbook/communication/#video-calls)を使用しています。リモートワーカーとして、私たちはプロジェクトでコラボレーションするだけでなく、画面を通じて同僚との関係、信頼、ラポールを構築する責任もあります。チームとの信頼を構築するためには、様々なコミュニケーション方法を通じて他者に感情を表現する方法を理解する必要があります。
-1. **自分の行動が他者にどのような影響を与えるかを理解する。** GitLab では、デフォルトのコミュニケーション形式はテキストを通じた[非同期](/handbook/company/culture/all-remote/asynchronous/)です。リモートチーム間の書面によるコミュニケーションは誤解を招くことがあります。メッセージを届けるためにどのような行動を取る必要があるかを意識しましょう。[テキストでのメッセージ作成](/handbook/company/culture/all-remote/)時に読み手の立場に立って考えましょう。読者に共感し、複数の視点からメッセージを見てみましょう。
+1. **自分の行動が他者にどのような影響を与えるかを理解する。** GitLab では、デフォルトのコミュニケーション形式はテキストを通じた[非同期](/handbook/communication/#asynchronous-communication)です。リモートチーム間の書面によるコミュニケーションは誤解を招くことがあります。メッセージを届けるためにどのような行動を取る必要があるかを意識しましょう。[テキストでのメッセージ作成](/handbook/company/culture/all-remote/)時に読み手の立場に立って考えましょう。読者に共感し、複数の視点からメッセージを見てみましょう。
 1. **自己認識（自分を知る）。** 自分自身を理解することは、自分の感情、強みと弱み、価値観、そして自分を動機づけるものを認識することを意味します。自分の EQ とそれが他者にどのような影響を与えるかをより深く理解するための戦略を以下に詳述しますが、他者との関係の改善は自己認識から始まります。
 1. **ストレス要因を知る（自己規制）。** ストレスの多い状況での感情の管理には、変化する状況への適応方法の理解が必要です。何があなたをストレスにさらすかを特定し、緩和するための積極的な手順を踏みましょう。冷静を保ち、すべてをコントロールできないという事実を受け入れましょう。感情知性の高い人は、自分の感情表現が他者にどのような影響を与えるかを考えます。
 1. **社会的スキルを強化する。** 強い社会的スキルを持つチームメンバーは、リモートな環境で自分の考えやアイデアを効果的に伝えることができます。GitLab では、[インフォーマルなコミュニケーション](/handbook/company/culture/all-remote/informal-communication/)を活用して社会的関係を意図的に強化しています。はじめの一歩として[コーヒーチャット](/handbook/company/culture/all-remote/informal-communication/#coffee-chats)を設定したり、[チームソーシャルコール](/handbook/company/culture/all-remote/informal-communication/#team-days-and-social-calls)に参加したりしましょう。バーチャルディスカッションで積極的に聴き、[フィードバック](/handbook/company/culture/all-remote/)を提供することで自身の社会的スキルを強化しましょう。

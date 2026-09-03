@@ -1,11 +1,11 @@
 ---
 title: "テクノロジーパートナー契約"
 upstream_path: "/handbook/legal/technology-partner-agreement/"
-upstream_sha: "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1"
-translated_at: "2026-05-23T00:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-21T14:03:07-04:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 *V3.1 テクノロジーパートナー契約 – ポータル | 2026 年 3 月 31 日*
@@ -65,7 +65,7 @@ lastmod: "2026-05-21T14:03:07-04:00"
 **4.3.** 各当事者による他方の当事者の商標の使用は、他方の当事者に提供される商標所有者の商標使用ガイドラインおよびロゴ使用ガイドラインに従うものとし、各当事者は、当該当事者の商標に関連するのれんを維持するために他方の当事者と協力します。パートナーは、以下の URL（随時更新されるもの、またはその後継 URL を含む）で入手可能な GitLab ブランド基準、商標ガイドライン、および承認済みロゴに従うものとします。
 
 - a. ブランド基準: https://design.gitlab.com/brand-introduction/
-- b. 商標ガイドライン: https://about.gitlab.com/handbook/marketing/brand-and-product-marketing/brand/brand-activation/trademark-guidelines/
+- b. 商標ガイドライン: https://about.gitlab.com/handbook/marketing/brand-experience/trademark-guidelines/
 - c. 承認済みロゴ: https://about.gitlab.com/press/press-kit/#logos
 
 **4.4.** 本第 4 条に定める場合を除き、いずれの当事者またはそれぞれの関連会社も、本契約または両当事者間の関係の存在に関連する一切の発表、声明、プレスリリース、その他の広報もしくはマーケティング資料を発行もしくは公表してはならず、また他方の当事者の事前の書面による同意なく、他方の当事者の商標、サービスマーク、商号、ロゴ、ドメイン名、その他の出所、関係もしくは後援を示すものを使用してはなりません。

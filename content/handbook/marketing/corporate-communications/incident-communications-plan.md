@@ -2,11 +2,11 @@
 title: GitLab インシデントコミュニケーション計画
 description: 'エスカレーション、プロセス、インシデント管理の方法'
 upstream_path: /handbook/marketing/corporate-communications/incident-communications-plan/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T12:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-01-23T15:08:44-08:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 **コーポレートコミュニケーションチームから潜在的なインシデントに関するレビューを受けたい場合は、Issue 内に情報を集めるか、Slack ディスカッションへのリンクを #corpcomms Slack チャンネルでチームへメッセージしてください。私たちは [セキュリティコミュニケーションマネージャーオンコール](/handbook/security/security-operations/sirt/security-incident-communication-plan/#roles-and-responsibilities-in-a-security-incident) と協力して次のステップを決定します。**
@@ -74,7 +74,7 @@ Developer Relations チームとソーシャルチームの両方によって、
 
 インシデントが私たちの製品によるものではなく、サービスに関連していない場合、サポートチームとの調整は不要かもしれません。しかし、Developer Relations チームと協力することで、コアおよびニッチなソーシャルメディアチャネルにも対応できます。
 
-インシデント中のソーシャルメディアの一時停止／ダークモードについて詳しくは、[ソーシャルメディアハンドブックを参照してください](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/#social-during-an-incident)。
+インシデント中のソーシャルメディアの一時停止／ダークモードについて詳しくは、[ソーシャルメディアハンドブックを参照してください](/handbook/marketing/corporate-communications/social-marketing/#social-during-an-incident)。
 
 #### コミュニティ対応
 

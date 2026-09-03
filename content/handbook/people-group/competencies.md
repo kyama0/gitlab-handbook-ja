@@ -2,11 +2,11 @@
 title: "コンピテンシー"
 description: "GitLab には学習のための共通フレームワークとしてのコンピテンシーがあります。このページは、私たちのコンピテンシーに関する Single Source of Truth (SSoT) リソースです。"
 upstream_path: /handbook/people-group/competencies/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T22:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-15T09:46:14-04:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 GitLab には学習のための共通フレームワークとしてのコンピテンシーがあります。このページは、私たちのコンピテンシーに関する [Single Source of Truth (SSoT)](https://docs.gitlab.com/ee/development/documentation/styleguide/#why-a-single-source-of-truth) リソースです。
@@ -99,7 +99,7 @@ GitLab には学習のための共通フレームワークとしてのコンピ�
 ### リモートワーク コンピテンシー
 
 1. [Manager of One](/handbook/leadership/#managers-of-one)
-1. [Effective Communication](/handbook/communication/#effective-communication-competency) : 非同期での働き方を含む: [Why](/handbook/company/culture/all-remote/asynchronous/) と [How](/handbook/communication/)、適切に書かれた成果物、[Single Source of Truth](https://docs.gitlab.com/development/documentation/styleguide/#documentation-is-the-single-source-of-truth-ssot)、[動画の制作](/handbook/marketing/marketing-operations/youtube/)
+1. [Effective Communication](/handbook/communication/#effective-communication-competency) : 非同期での働き方を含む: [Why](/handbook/communication/#asynchronous-communication) と [How](/handbook/communication/)、適切に書かれた成果物、[Single Source of Truth](https://docs.gitlab.com/development/documentation/styleguide/#documentation-is-the-single-source-of-truth-ssot)、[動画の制作](/handbook/marketing/marketing-operations/youtube/)
 1. [Handbook first](/handbook/about/handbook-usage/#handbook-first-competency)
 1. [Using GitLab](/handbook/people-group)
 

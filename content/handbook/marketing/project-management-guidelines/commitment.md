@@ -1,11 +1,11 @@
 ---
 title: "コミットメントの管理"
 upstream_path: /handbook/marketing/project-management-guidelines/commitment/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T12:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2025-08-28T17:30:01+02:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 背景
@@ -90,7 +90,7 @@ style legend fill:#FBFBF2, stroke: #b0b0a9
 
 通常は、**「sm_」**をチームのイニシャルに置き換えます。
 
-*重要な注意: ラベルベースでこのようなプロセスを管理することは、すべてを正しいステータスに保つためのオーバーヘッドを生む可能性があります。全員にすべてのラベルと正しいステップを記憶することを期待するのは課題かもしれません。**自動的に Issue をクローズしたり、ラベルを追加したりする**ルール/ポリシーを**自動化することが可能**です。* [ラベルの衛生を自動化する方法を学ぶ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/105/)
+*重要な注意: ラベルベースでこのようなプロセスを管理することは、すべてを正しいステータスに保つためのオーバーヘッドを生む可能性があります。全員にすべてのラベルと正しいステップを記憶することを期待するのは課題かもしれません。**自動的に Issue をクローズしたり、ラベルを追加したりする**ルール/ポリシーを**自動化することが可能**です。* [ラベルの衛生を自動化する方法を学ぶ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/105/)
 
 ### Issue テンプレートがプロセスを開始する
 

@@ -2,11 +2,11 @@
 title: プロダクトマネジメントの学習と能力開発
 description: "このページには、GitLab のプロダクトマネージャーがスキルを構築するために活用できる社内外のリソースへのリンクを掲載しています。"
 upstream_path: /handbook/product/product-management/learning-and-development/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-16T21:18:58Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:42-03:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 {{% include "includes/product/product-handbook-links.md" %}}
@@ -256,7 +256,7 @@ GitLab は、GitLab のチームメンバーが学習に関連して以下の活
 #### クイックリードとビデオ
 
 - [How to launch product experiments at GitLab](https://www.youtube.com/watch?v=rEHxAfxr9eU) (30 min ビデオ)
-- [GitLab Growth Team Coffee & Learn Sessions](/handbook/marketing/growth/)
+- [GitLab Growth Team Coffee & Learn Sessions](/handbook/marketing/growth-marketing/)
 - [Product Managers: It's Time to Move from Whole Product to Product-led Growth](https://expand.openviewpartners.com/product-managers-its-time-to-move-from-whole-product-to-product-based-go-to-market-304467093357#.1euz7drsb)
 - [10 Statistics Traps in A/B Testing: The Ultimate Guide for Optimizers](https://cxl.com/blog/testing-statistics-mistakes/)
 - [5 Common Threats to Your A/B Test's Validity](https://instapage.com/blog/validating-ab-tests)

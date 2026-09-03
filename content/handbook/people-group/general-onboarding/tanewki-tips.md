@@ -2,11 +2,11 @@
 title: TaNewKi のヒント
 description: GitLab で開始する新入社員のガイド
 upstream_path: /handbook/people-group/general-onboarding/tanewki-tips/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:53:50+09:00"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## チームへようこそ
@@ -64,7 +64,7 @@ People Operations チームは、オンボーディングおよび GitLab での
 
 #### コミュニケーションツール
 
-- 私たちは [非同期コミュニケーション](/handbook/company/culture/all-remote/asynchronous/) を取り入れたオールリモート企業です
+- 私たちは [非同期コミュニケーション](/handbook/communication/#asynchronous-communication) を取り入れたオールリモート企業です
 - [Slack](/handbook/tools-and-tips/slack/) は私たちの主要なコミュニケーションツールです — 他のチームメンバーや興味のあるグループとつながるために使用してください
 - 標準的なオフィスソフトウェアではなく、Google Workspace（[Gmail](https://workspace.google.com/intl/en/products/gmail/)、[Drive](https://workspace.google.com/intl/en/products/drive/)、Docs/Sheets）を使用します
 - チームメンバーは、特定のクエリに関するサポートや支援が必要な場合、[HelpLab](/handbook/business-technology/enterprise-applications/guides/helplab-guide/) を通じて該当チームに連絡できます

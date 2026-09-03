@@ -1,18 +1,18 @@
 ---
 title: DevOpsエンジニアリング
 upstream_path: /handbook/engineering/devops/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:47:00+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-14T14:39:01+02:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## ビジョン
 
  **私たちの目標は単に機能をリリースすることではなく、それらが成功裏に着地し、お客様に真の価値を提供することを保証することです。** 私たちは、信頼性を確保し、運用の容易さとスケーラビリティを維持して多様な顧客ニーズに応えながら、すべてのユーザーグループにわたって期待を超える高品質基準を満たす、業界最高の製品を開発するよう努めています。すべてのチームメンバーは、私たちが行うすべてにおいて、ターゲット顧客とサポートする複数のプラットフォームを念頭に置く必要があります。
 
-特に大企業の主要な顧客[組織アーキタイプ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/organization-archetype/)に対して、製品があらゆる面で優れていることを保証します。これには、スケーラビリティ、適応性、シームレスなアップグレードパスが含まれます。機能の設計と実装時には、常にすべてのデプロイメントオプション（セルフマネージド、Dedicated、Software as a Service (SaaS)）との互換性を念頭に置いてください。
+特に大企業の主要な顧客[組織アーキタイプ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/organization-archetype/)に対して、製品があらゆる面で優れていることを保証します。これには、スケーラビリティ、適応性、シームレスなアップグレードパスが含まれます。機能の設計と実装時には、常にすべてのデプロイメントオプション（セルフマネージド、Dedicated、Software as a Service (SaaS)）との互換性を念頭に置いてください。
 
 [私たちの価値観](/handbook/values/)と[独自の働き方](/handbook/company/culture/all-remote/guide/)を維持しながら、製品と顧客の成長を支える結果を出すための、技術力があり多様でグローバルなチームを育成します。
 

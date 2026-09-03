@@ -2,14 +2,14 @@
 title: "Distribution"
 description: "Distribution の主要ユーザーペルソナは、GitLab インスタンスの管理を担当するシステム管理者です。チームの目標は、さまざまなオンプレミスおよびクラウドプラットフォームで GitLab インスタンスをできるだけ簡単にデプロイ・スケール・アップグレード・チューニングできるようにすることです。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-28T00:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
+translator: codex
 stale: false
-lastmod: "2026-02-27T11:48:37+01:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
-## 概要
+## 概要 {#overview}
 
 Distribution チームは **Distribution:Build** と **Distribution:Deploy** という2つのサブグループで構成されています。
 
@@ -108,7 +108,7 @@ Deploy チームの焦点は、製品全体としての GitLab の設定・デ�
 以下の方々が Distribution:Build チームのメンバーです：
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/#distribution-build-team" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{< team-by-manager-slug manager="denisra" team="Build" >}}
 
 
 ### Distribution Deploy チーム
@@ -116,7 +116,7 @@ Deploy チームの焦点は、製品全体としての GitLab の設定・デ�
 以下の方々が Distribution:Deploy チームのメンバーです：
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/#distribution-build-team" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{< team-by-manager-slug manager="plu8" team="Deploy" >}}
 
 
 ### ステーブルカウンターパート
@@ -124,7 +124,7 @@ Deploy チームの焦点は、製品全体としての GitLab の設定・デ�
 以下の他の機能チームメンバーが私たちの[ステーブルカウンターパート](/handbook/leadership/#stable-counterparts)です：
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/infrastructure-platforms/gitlab-delivery/distribution/#distribution-build-team" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{< engineering/stable-counterparts manager-role="Backend Engineering Manager, Distribution" role="Core Platform:Distribution" >}}
 
 
 ## 共通リンク
@@ -134,7 +134,7 @@ Deploy チームの焦点は、製品全体としての GitLab の設定・デ�
 
 ## チームの責任
 
-Build と Deploy の[個別の責任](#概要)に加えて、Distribution チーム全体は以下の責任を持ちます：
+Build と Deploy の[個別の責任](#overview)に加えて、Distribution チーム全体は以下の責任を持ちます：
 
 1. omnibus-gitlab インストールパッケージ
    - パッケージを使用したインストールがシンプルで迅速・安全でデータの整合性を保護します。
@@ -335,7 +335,7 @@ Distribution チームでは特に、全員が以下のリソースにアクセ�
 
 ## ワークライフバランス
 
-[オールリモート](/handbook/company/culture/all-remote/)と[非同期ファースト](/handbook/company/culture/all-remote/asynchronous/)は、チームメンバーが自分の作業日にアプローチする方法に柔軟性を提供します。チームメンバーは仕事の時間と生活の他の領域をどのようにバランスを取るかを選択する必要があります。
+[オールリモート](/handbook/company/culture/all-remote/)と[非同期ファースト](/handbook/communication/#asynchronous-communication)は、チームメンバーが自分の作業日にアプローチする方法に柔軟性を提供します。チームメンバーは仕事の時間と生活の他の領域をどのようにバランスを取るかを選択する必要があります。
 
 新しいチームメンバーにとって、以下のリソースは時間の使い方に関する例を提供します：
 
