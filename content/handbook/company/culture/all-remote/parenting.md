@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab Team Member working from home office, happy to see ba
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/parenting/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T06:00:00Z"
-translator: claude
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T22:58:30+09:00"
+translator: codex
 stale: false
-lastmod: "2026-03-18T15:39:47+00:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 在宅勤務をしている親は、独自の需要や期待を持つとともに、独自の課題も抱えています。特に育児や学校が世界的な危機の影響を受けている場合、優れた同僚であり、優れた親であることは高い要求です。
@@ -37,7 +37,7 @@ GitLab では、[ほとんどの仕事はリモートで行える](terminology/)
 1. 休暇を取らずに[他の場所を旅行](https://about.gitlab.com/blog/2017/01/31/around-the-world-in-6-releases/)する能力（家族、楽しみなど）。
 1. [移住](/handbook/people-group/relocation)、[場所に縛られない働き方](https://about.gitlab.com/blog/2019/06/25/how-remote-work-at-gitlab-enables-location-independence/)、あるいは[他のリモートプロフェッショナルと一緒に旅する](/handbook/company/culture/all-remote/)自由。
 1. [自分に最も合った形](https://about.gitlab.com/blog/2019/08/01/working-remotely-with-children-at-home/)で[オフィスやワークスペースを設定・装飾](https://community.thriveglobal.com/how-remote-work-can-reduce-stress-and-revitalize-your-mindset/)できます。
-1. [最も生産性が高い](asynchronous/)時間帯に基づいて[勤務時間を選択](/handbook/company/culture/all-remote/)できます。
+1. [最も生産性が高い](/handbook/communication/#asynchronous-communication)時間帯に基づいて[勤務時間を選択](/handbook/company/culture/all-remote/)できます。
 
 ## Q: 在宅勤務で子育てをする際の課題は何ですか？
 
@@ -91,7 +91,7 @@ GitLab では、これらの各領域で健全なワークライフバランス�
 
 ## Q: リモート従業員として子育てと仕事のバランスを取るためのヒントは何ですか？
 
-親は職場に豊富な知恵と経験をもたらし、多様で包括的な文化に貢献します。誰も親やケアラーであることを謝罪するよう追い詰められるべきではありません。代わりに、あなたが体現する複数の役割を受け入れ、リモートワーカーであり親・ケアラーでもある GitLab の従業員からのアドバイスをいくつか参考にしましょう。
+親は職場に豊富な知恵と経験をもたらし、多様で包括的な文化に貢献します。誰も親や[ケアラー](/handbook/company/culture/all-remote/)であることを謝罪するよう追い詰められるべきではありません。代わりに、あなたが体現する複数の役割を受け入れ、リモートワーカーであり親・ケアラーでもある GitLab の従業員からのアドバイスをいくつか参考にしましょう。
 
 ### 支援的なバリューを作り、強化する
 

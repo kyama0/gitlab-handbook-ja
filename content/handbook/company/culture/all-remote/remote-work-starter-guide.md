@@ -6,16 +6,16 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/remote-work-starter-guide/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T06:00:00Z"
-translator: claude
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T22:58:30+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-01T16:21:31-05:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## リモートワーク/在宅勤務とは何ですか？
 
-![GitLab all-remote laptop illustration](/images/all-remote/gitlab-all-remote-laptop-map-illustration.jpg)
+![GitLab のオールリモート用ノートパソコンのイラスト](/images/all-remote/gitlab-all-remote-laptop-map-illustration.jpg)
 {style="max-width: 50%"}
 
 [オールリモート](stages/#9-all-remote)の組織では、各個人が最も充実した場所で[働き生活する](/handbook/company/culture/all-remote/)権限が与えられます。
@@ -50,7 +50,7 @@ lastmod: "2025-12-01T16:21:31-05:00"
 
 これは最も難しいハードルになる可能性があり、特に勤務時間中に家族が家にいる新しい在宅勤務の従業員には当てはまります。家族と専念した会話をして、あなたが家にいるからといって、利用可能であるとは限らないことを理解してもらいましょう。
 
-一方で、[物理的なオフィスを去る必要がない場合](/handbook/company/culture/all-remote/)は、予想される（または健全な）時間よりも長く働く誘惑があります。以前なら通勤に充てていた時間の使い方を前もって計画しておくことは、仕事モードへの切り替えと切り上げの両方で重要です。以前は通勤で埋まっていた空間の前後に活動を事前に計画できます。[日々のスケジュール](getting-started/#develop-a-schedule-that-you-can-initially-follow)は個人によって異なりますが、散歩や友人・コミュニティとの計画された活動のために外出することは、明確な仕事/生活の分離を作り出す良い方法かもしれません。
+一方で、[物理的なオフィスを去る必要がない場合](/handbook/company/culture/all-remote/)は、予想される（または健全な）時間よりも長く働く誘惑があります。以前なら通勤に充てていた時間の使い方を前もって計画しておくことは、仕事モードへの切り替えと切り上げの両方で重要です。仕事の開始・終了を知らせるリマインダーを設定したり、以前は通勤に使っていた時間帯の活動をあらかじめ計画したりできます。[日々のスケジュール](getting-started/#develop-a-schedule-that-you-can-initially-follow)は個人によって異なりますが、散歩や友人・コミュニティとの計画された活動のために外出することは、明確な仕事/生活の分離を作り出す良い方法かもしれません。
 
 GitLab は、[リモート職場でのバーンアウト、孤立感、不安に対処するための広範なガイド](mental-health/)を作成しました。
 
@@ -69,7 +69,7 @@ GitLab は、[リモート職場でのバーンアウト、孤立感、不安に
 
 [リモートのメリット](remote-benefits/)の一つは、非従来型の勤務日を試すことができることです。誰もが同じ[エネルギーと集中の最適時間帯](https://www.jonobacon.com/2019/01/14/remote-working-survival/)を共有しているわけではありません。たとえば、夜遅くに最も効率よく働ける場合は、チームにいくつかの[非直線的な勤務日](non-linear-workday/#q-what-is-a-non-linear-workday-routine)を試すことを伝えましょう。
 
-[オールリモート](terminology/)の状況で[非同期ワークフロー](asynchronous/)の恩恵を最大化できます。元の通勤スペースを、運動、休息、家族との絆づくり、料理、読書、勉強など、より[健康的](mental-health/)にする物事で満たせばよいのです。
+[オールリモート](terminology/)の状況で[非同期ワークフロー](/handbook/communication/#asynchronous-communication)の恩恵を最大化できます。元の通勤スペースを、運動、休息、家族との絆づくり、料理、読書、勉強など、より[健康的](mental-health/)にする物事で満たせばよいのです。
 
 ### 5. 変化を受け入れる（イテレーションを許容する）
 

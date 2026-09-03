@@ -2,11 +2,11 @@
 title: ドキュメントサポート Pod
 description: ドキュメント関連の MR やその他の Docs 関連項目に共同で取り組むサポート Pod です。
 upstream_path: /handbook/support/support-pods/docs/
-upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
-translated_at: "2026-05-08T00:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T22:50:04+09:00"
+translator: codex
 stale: false
-lastmod: "2024-11-05T18:25:31+00:00"
+lastmod: "2026-08-28T10:29:09-04:00"
 ---
 
 ## 目的
@@ -23,7 +23,6 @@ lastmod: "2024-11-05T18:25:31+00:00"
 
 ## サポート Pod のメンバー
 
-- {{< member-by-name "Keelan Lang" >}} (`@klang`)
 - {{< member-by-name "Michelle Almendarez" >}} (`@Michelle_Almendarez`)
 - {{< member-by-name "Michael Gibson" >}} (`@Mike G`)
 

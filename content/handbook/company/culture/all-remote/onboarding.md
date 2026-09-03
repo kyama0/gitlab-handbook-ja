@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/company/culture/all-remote/onboarding/
-upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
-translated_at: "2026-06-25T07:39:40+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T22:58:30+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-24T15:19:10-04:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ![GitLab customer path](/images/all-remote/gitlab-customer-path.jpg)
@@ -59,7 +59,7 @@ GitLab チームのハンドブックは、会社の運営方法に関する中�
 
 オンボーディングでは、新入社員を膨大な情報のリポジトリへ案内し、答えを探す際に自立的かつ積極的に行動することを教えています。[ハンドブックファーストのアプローチ](handbook-first/#make-handbook-first-a-value)を実施しているため、GitLab のハンドブックは新しいことを学ぶたびに常に変化・成長しています。
 
-チームメンバーがさまざまなタイムゾーンから働く可能性があるオールリモートの環境では、[非同期ワークフロー](/handbook/company/culture/all-remote/asynchronous/)をマスターすることが機能不全を避けるために不可欠です。ドキュメントを通じたオンボーディングは、スケーラブルで再現可能であり、非同期作業の基本を身に付けさせるため、より効率的です。
+チームメンバーがさまざまなタイムゾーンから働く可能性があるオールリモートの環境では、[非同期ワークフロー](/handbook/communication/#asynchronous-communication)をマスターすることが機能不全を避けるために不可欠です。ドキュメントを通じたオンボーディングは、スケーラブルで再現可能であり、非同期作業の基本を身に付けさせるため、より効率的です。
 
 **追加リソース：**
 
@@ -95,7 +95,7 @@ GitLab では[ドッグフーディング](/handbook/values/#dogfooding)を実�
 
 オールリモートの企業では、チームメンバーが関係を築けるよう[インフォーマルなコミュニケーション](informal-communication/)を促進することが重要です。これはオンボーディングプロセスにいくつかの重要な形で組み込めます：
 
-1. **オンボーディングバディを割り当てる。** この方は新入社員の親しみやすい窓口となり、他の人を紹介することもできます。オンボーディングバディは他のチームメンバーとの関係構築の期待値を設定することが多いため、新入社員とオンボーディングバディはビデオ通話、Slack でのチェックイン、コーヒーチャットなど、様々な方法でコミュニケーションを取るべきです。GitLab では、この役割を真剣に受け止め、[オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies/)専用のハンドブックページを設けています。
+1. **オンボーディングバディを割り当てる。** この方は新入社員の親しみやすい窓口となり、他の人を紹介することもできます。オンボーディングバディは他のチームメンバーとの関係構築の期待値を設定することが多いため、新入社員とオンボーディングバディはビデオ通話、Slack でのチェックイン、コーヒーチャットなど、様々な方法でコミュニケーションを取るべきです。GitLab では、この役割を真剣に受け止め、[オンボーディングバディ](/handbook/people-group/general-onboarding/onboarding-buddies.md)専用のハンドブックページを設けています。
 
 1. **インフォーマルなコミュニケーションを正式に設計する。** オールリモートの環境では、インフォーマルなコミュニケーションを正式に取り上げる必要があります。リーダーはインフォーマルなコミュニケーションを組織化し、新入社員が同僚と知り合うための構造化された機会を提供すべきです。私たちはオンボーディングテンプレートに、[コーヒーチャットのスケジューリング](informal-communication/#scheduling-a-coffee-chat)、`#new_team_members` Slack チャンネルでの自己紹介、ビデオ通話への参加などの交流タスクを組み込んでいます。
 

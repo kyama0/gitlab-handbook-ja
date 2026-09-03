@@ -2,11 +2,11 @@
 title: キャリア開発とモビリティ
 description: "すべての GitLab チームメンバーのためのキャリア開発とモビリティに関するリソースと方針"
 upstream_path: /handbook/people-group/learning-and-development/career-development/
-upstream_sha: a2af0b1d81734a87d89ce13f0302597755181359
-translated_at: "2026-08-05T06:27:42+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T22:50:04+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-04T09:49:53+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## キャリア開発とは
@@ -64,7 +64,6 @@ GitLab ハンドブック全体に配置されたキャリア開発リソース�
   <div>
     <a href="/handbook/ceo/shadow" class="btn btn-primary" style="margin:5px;">CEO シャドウ</a>
     <a href="/handbook/finance/growth-and-development/cfo-shadow-program/" class="btn btn-primary" style="margin:5px;">CFO シャドウ</a>
-    <a href="/handbook/marketing/cmo-shadow/" class="btn btn-primary" style="margin:5px;">CMO シャドウ</a>
     <a href="/handbook/security/security-shadow/" class="btn btn-primary" style="margin:5px;">Security チームシャドウ</a>
     <a href="https://gitlab.com/gitlab-com/support/support-team-meta/-/blob/master/.gitlab/issue_templates/Support%20Shadow%20Program.md" class="btn btn-primary" style="margin:5px;">Support チームシャドウ</a>
   </div>

@@ -2,9 +2,9 @@
 title: 'グループ'
 description: 'Zendesk グループに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/groups/"
-upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
-lastmod: "2026-07-21T11:29:58-05:00"
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+lastmod: "2026-08-19T13:20:01-05:00"
+translated_at: "2026-09-03T22:50:04+09:00"
 translator: codex
 stale: false
 ---
@@ -62,6 +62,7 @@ Support チームのメンバーのグループメンバーシップは、[エ�
 ### Zendesk Global グループ
 
 - `Accounts Receivable`
+- `ASEs`
 - `Billing`
 - `BPO`
 - `General`

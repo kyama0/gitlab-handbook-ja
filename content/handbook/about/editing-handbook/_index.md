@@ -2,11 +2,11 @@
 title: "ハンドブックの編集"
 description: "ヒントやトラブルシューティングを含む、ハンドブックの編集方法に関する情報。"
 upstream_path: /handbook/about/editing-handbook/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:54:56+09:00"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T22:54:52+09:00"
+translator: codex
 stale: false
-lastmod: "2026-08-14T11:43:03-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 このページではハンドブックの編集方法に焦点を当てています。
@@ -350,7 +350,7 @@ MR パイプラインは、関連リポジトリにマージされる前にほ�
 この[エラーの例](https://gitlab.com/gitlab-com/content-sites/handbook/-/jobs/5968799321#L123)を考えてみましょう。
 
 ```plain
-Error: error building site: failed to render shortcode: "/builds/gitlab-com/content-sites/handbook/content/handbook/marketing/technical-writing/_index.md:126:1": failed to render shortcode "tech-writing": failed to process shortcode: "/builds/gitlab-com/content-sites/handbook/layouts/shortcodes/tech-writing.html:16:28": execute of template failed: template: shortcodes/tech-writing.html:16:28: executing "shortcodes/tech-writing.html" at <ref page (printf "/handbook/product/categories#%s-section" $section)>: error calling ref: parse "/handbook/product/categories#%!s(<nil>)-section": invalid URL escape "%!s"
+Error: error building site: failed to render shortcode: "/builds/gitlab-com/content-sites/handbook/content/handbook/marketing/product-and-technical-marketing/technical-writing/_index.md:126:1": failed to render shortcode "tech-writing": failed to process shortcode: "/builds/gitlab-com/content-sites/handbook/layouts/shortcodes/tech-writing.html:16:28": execute of template failed: template: shortcodes/tech-writing.html:16:28: executing "shortcodes/tech-writing.html" at <ref page (printf "/handbook/product/categories#%s-section" $section)>: error calling ref: parse "/handbook/product/categories#%!s(<nil>)-section": invalid URL escape "%!s"
 ```
 
 エラートレースをたどると、フルパスと行番号を伴う最後のエラーは次のとおりであることに気付きます。

@@ -6,11 +6,11 @@ authors: [ "@skarbek" ]
 coach: "@rymai"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/feature_flags/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T10:00:00Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:08:10+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-02T12:41:38-07:00"
+lastmod: "2026-09-01T12:49:01+05:30"
 ---
 
 
@@ -26,6 +26,8 @@ lastmod: "2025-07-02T12:41:38-07:00"
 - [Blueprint 運用提案](/handbook/product-development/how-we-work/product-development-flow/feature-flag-lifecycle/)
 
 :warning: GitLab アプリケーションの機能セットである [フィーチャーフラグ](https://docs.gitlab.com/ee/operations/feature_flags.html) と混同しないようにしてください。
+
+:information_source: 現在の実装方針（Cell ローカルのコントロールプレーンサービスである Membrane とグローバルフィーチャーフラグサービス）については、[Cells ADR 028: Membrane とグローバルフィーチャーフラグサービスの方針](decisions/028_membrane_and_global_feature_flag_service_direction.md)を参照してください。
 
 ### 現在の使用状況
 

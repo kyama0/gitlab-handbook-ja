@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/workspace/"
-upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
-translated_at: "2026-08-01T16:12:50+09:00"
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T22:58:30+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-01T05:42:24Z"
 ---
 
 ## なぜホームオフィスの環境がそれほど重要なのですか？
@@ -243,7 +243,7 @@ GitLab のチームメンバーは[Autonomous](https://www.autonomous.ai)、[IKE
 ## 在宅勤務セットアップの例
 
 - GitLab のリモートヘッド、Darren M.が在宅勤務の様子を共有しており、最適なビデオ品質のためにミラーレスカメラをウェブカメラとして使用しています。
-- Remote 社 CEO の Job van der Voort が[トップクラスのホームオフィスセットアップの内訳](https://remote.com/blog/maximum-productivity-home-office)を提供しています。
+- Remote 社 CEO の Job van der Voort が[トップクラスのホームオフィスセットアップの内訳](https://remote.com/blog/insights-center/maximum-productivity-home-office)を提供しています。
 - GitLab Developer Advocate Michael F.が[現在のセットアップの詳細](https://dnsmichi.com/all-remote-workspace/)を照明、アプリと設定、ワークスペースのパーソナライズ方法についてのヒントとともに説明しています。
 - Spotify の Software Engineer である Emma Bostian 氏が[コースとポッドキャストを録音するためのホームオフィステックセットアップ](https://dev.to/emmabostian/lights-camera-action-my-tech-setup-for-recording-courses-podcasts-2p6j)について書いています。
 - [Remote First Capital](https://www.remotefirstcapital.com)の創業者 Andreas Klinger が、[例外的な在宅ワークスペースの継続的な Twitter スレッド](https://twitter.com/andreasklinger/status/1238325463300202497)を維持しています。

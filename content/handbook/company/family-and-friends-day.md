@@ -2,11 +2,11 @@
 title: "ファミリー＆フレンズデー"
 description: "GitLab では、ファミリー＆フレンズデーは家族や友人との時間・ボランティア活動・自己ケア、またはその他のことを優先するための共有のお休み日です。"
 upstream_path: "/handbook/company/family-and-friends-day/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
-translator: claude
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T23:03:08+09:00"
+translator: codex
 stale: false
-lastmod: "2026-04-09T20:14:47+00:00"
+lastmod: "2026-08-19T19:01:35-05:00"
 ---
 
 ## ファミリー＆フレンズデーとは？
@@ -30,4 +30,4 @@ FY27 のファミリー＆フレンズデーの予定日程は以下のとおり
 
 ## ファミリー＆フレンズデー FAQ
 
-Loop の[こちらの記事](https://theloop.gitlab.com/site/5ea8f77b-a0c3-4983-ba40-1463a96d8e21/page/120cee42-73fb-41a3-ba73-04893df3e90f)に、今年のファミリー＆フレンズデーに関する追加情報が掲載されています。Workday でのこれらの日程の処理方法については、**Q2 末までに**情報を共有します。
+Loop の[こちらの記事](https://theloop.gitlab.com/site/5ea8f77b-a0c3-4983-ba40-1463a96d8e21/page/8fd403f2-41a8-42cf-9738-6f508b47c15f)では、今年のファミリー＆フレンズデーの日程に関する Workday の手続きについて詳しい情報を共有し、いくつかの FAQ に回答しています。

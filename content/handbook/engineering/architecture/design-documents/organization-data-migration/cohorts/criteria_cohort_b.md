@@ -3,10 +3,10 @@ title: 'コホート B: アクティブなオプトイン Beta'
 owning-stage: "~devops::tenant scale"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization-data-migration/cohorts/criteria_cohort_b/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-lastmod: "2026-05-27T17:43:35+12:00"
-translated_at: "2026-05-28T21:12:16Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+lastmod: "2026-08-18T14:42:11+05:30"
+translated_at: "2026-09-03T23:08:10+09:00"
+translator: codex
 stale: false
 ---
 
@@ -35,7 +35,7 @@ organization は、厳選された登録プロセスを通じて明示的にオ�
 
 Tenant Scale、Protocells Steering Committee、Security が、承認前に各候補をレビューします。
 
-顧客は、移行中の短時間の読み取り専用ウィンドウが生じる可能性、転送が一方向である性質、そしてまだ採用していない特定の機能が利用できなくなる可能性を含め、この体験がベータ版である性質を認識する必要があります。
+顧客は、移行中に organization が完全に利用できなくなる可能性がある短時間のメンテナンスウィンドウ（[ADR 010: Organization メンテナンスモード](../../organization/decisions/010_organization_maintenance_mode.md)を参照）、転送が一方向である性質、そしてまだ採用していない特定の機能が利用できなくなる可能性を含め、この体験がベータ版である性質を認識する必要があります。
 
 #### 1.2 段階的なランプアップ
 

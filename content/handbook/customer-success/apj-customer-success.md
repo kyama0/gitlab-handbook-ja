@@ -1,11 +1,11 @@
 ---
 title: "APJ カスタマーサクセス"
 upstream_path: /handbook/customer-success/apj-customer-success/
-upstream_sha: 839c14e40e08e6fd4099a01ee623aaf85faafd12
-translated_at: "2026-06-01T21:39:56Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:03:08+09:00"
+translator: codex
 stale: false
-lastmod: "2026-06-01T12:55:15+02:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 APJ カスタマーサクセス部門は [GitLab セールス](/handbook/sales/)機能の一部であり、WW カスタマーサクセス組織の下で、コード開発ライフサイクルにおける GitLab 採用全体を通じて価値を提供するために、大規模・ミッドマーケット・戦略的顧客と協働しています。
 
@@ -135,7 +135,7 @@ APJ カスタマーサクセスチームは隔週で集まり、このハンズ�
 - 関心のあるトピックを紹介し、背景情報を提供
 - GitLab のプラットフォーム内でそのトピックがどこに位置するかをデモンストレーションし、所属する [GitLab Stage](https://about.gitlab.com/direction/#devops-stages) を発表
 - APJ の顧客にとってのそのトピックの利点を明確化
-- そのトピックが恩恵を受ける [GitLab Tier](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers/) を明確に説明
+- そのトピックが恩恵を受ける [GitLab Tier](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/) を明確に説明
 - 主な発見を社内の隔週 GitLab 新リリースミーティングドキュメントに記録
 
 このミーティングは定期的に隔週で開催されます。Zoom 経由で開催され、ミーティングアジェンダは gdrive Docs 経由で共有され、社内で閲覧可能です。

@@ -2,11 +2,11 @@
 title: Application Security Testing, Composition Analysis
 description: "GitLab の Composition Analysis グループは、コンテナスキャン、依存関係スキャン、ライセンスコンプライアンスを行うソリューションの開発を担当しています。"
 upstream_path: /handbook/engineering/development/sec/security-factory/composition-analysis/
-upstream_sha: c649549e971e74175edf1d5bc1190fcc86e359e6
-translated_at: "2026-08-14T08:35:00+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T22:50:04+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-13T15:10:33+03:00"
+lastmod: "2026-08-17T10:24:47+02:00"
 ---
 
 ## Composition Analysis
@@ -514,6 +514,7 @@ FIPS イメージをテストするために、独自のランナーインスタ
 - [Dependency Scanning アナライザーメトリクス](https://10az.online.tableau.com/#/site/gitlab/workbooks/3648287/views)
 - [Multi Container Scanning メトリクス](https://10az.online.tableau.com/#/site/gitlab/views/PDSecMetricHub/StandardView?:iid=1)
 - [Code Security Adoption ダッシュボード](https://code-security-adoption-dashboard-5959a6.gitlab.io/)
+- [GLAM 同期ログダッシュボード](https://log.gprd.gitlab.net/app/r/s/whjHw)
 
 ## 関連リソース
 

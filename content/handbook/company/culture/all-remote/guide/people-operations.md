@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/guide/people-operations/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
-translator: claude
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T22:58:30+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-01T16:21:31-05:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ![GitLab all-remote team collaboration](/images/all-remote/gitlab-collaboration.jpg)
@@ -68,7 +68,7 @@ People Operations（人事・ HR）は、ほかのどの部門よりも、[突�
 突然の変化が People Operations に与える影響は、チームメンバーによって異なります。ロードマップを構築・実装・調整する際に、以下の点を考慮してください。
 
 1. **文化の構築:** 組織の文化は意図的に構築・育成・増幅されるべきであり、偶然に任せてはいけません。同じことが突然のオールリモート環境でも当てはまります。仕事の進め方は変わるかもしれませんが、だからといって文化が変わるべきではありません。むしろ、オールリモートの場でも会社の文化を意図的にシフトし発信し続け、繰り返し強調することが重要です。[意図的なリモート文化の構築と維持についてのこのレビュー](../building-culture/)をご覧ください。
-1. **自己学習と自己支援の環境:** 新入社員が有効なプロセスの問題点を指摘し、それが以前は文書化されていなかった回答につながる場合、デフォルトの考え方はすぐに回答し文書化することであるべきです。これは[セルフサービス](/handbook/company/culture/all-remote/)、自己検索、自己学習の考え方を必要とします。また、勤勉さと共感も必要です。これは[非同期](../asynchronous/)へのバイアスと、[すべての会議が問われる](../meetings/#6-use-the-right-tools)文化を強化する上で重要な部分です。
+1. **自己学習と自己支援の環境:** 新入社員が有効なプロセスの問題点を指摘し、それが以前は文書化されていなかった回答につながる場合、デフォルトの考え方はすぐに回答し文書化することであるべきです。これは[セルフサービス](/handbook/company/culture/all-remote/)、自己検索、自己学習の考え方を必要とします。また、勤勉さと共感も必要です。これは[非同期](/handbook/communication/#asynchronous-communication)へのバイアスと、[すべての会議が問われる](../meetings/#6-use-the-right-tools)文化を強化する上で重要な部分です。
 1. **オンボーディング:** 従来の職場環境でのオンボーディングプロセスの開発・改善に費やした時間は、突然のオールリモート環境でも可能な限り踏まえ、各新入社員が組織に加わることの完全な影響を経験できるようにすべきです。可能な限り近道を避けてください。リモート環境における[オンボーディングについての詳細なレビュー](https://internal.gitlab.com/handbook/people-group/people-operations/people-connect/onboarding_process)をご覧ください。
 1. **採用:** オールリモート環境に移行したからといって、採用を止める必要はありません。実際、リモートでの採用は、リモートモデルを継続することを選択した場合、大きなメリットになり得ます。リモートでは、どこからでも採用でき、場所に関係なく最高の人材にアクセスできます。候補者をリモートで採用プロセスに移行させる際は、面接への参加方法（電話かビデオ通話か）、面接担当者、面接にかかる時間を詳細に説明することが重要です。考慮すべきロジスティクスについて候補者が考えやすくするよう手助けしましょう。例えば、ビデオ通話の場合は、良いインターネット環境を確保し、気が散ることが最小限の部屋で設定するよう確認しましょう。[オールリモート環境での採用の概要](/handbook/company/culture/all-remote/)をお読みください。
 1. **報酬:** 突然のオールリモート環境でチームメンバーへの支払いを確保・継続するには、特に外貨が関係する場合、財務チームとの計画が必要です。場所やその他の要因の詳細を含む[報酬の概要](/handbook/company/culture/all-remote/)をお読みください。

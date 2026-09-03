@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/drawbacks/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T00:00:00Z"
-translator: "claude"
+upstream_sha: "35c2295ab7e9139fbe16bd8b69e1712d0ef14206"
+translated_at: "2026-09-03T22:54:52+09:00"
+translator: "codex"
 stale: false
-lastmod: "2025-12-01T16:21:31-05:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 [多くのメリット](remote-benefits/)があるにもかかわらず、オールリモートワークは誰にでも向いているわけではありません。ライフスタイルや仕事の好みによって、潜在的な従業員や組織に不利な点があることがあります。[透明性](/handbook/values/#transparency)の精神に則り、これらの課題に対する反論と解決策も強調します。
@@ -176,7 +176,7 @@ GitLab が[オールリモートのチームメンバーをどのようにオン
 
 - [中断ストレス](https://about.gitlab.com/blog/2018/05/17/eliminating-distractions-and-getting-things-done/)の軽減と[生産性](https://www.inc.com/brian-de-haaff/3-ways-remote-workers-outperform-office-workers.html)の向上。
 - リモートにより、困難な同僚と遠隔で[コミュニケーションが容易になり](informal-communication/)、対人ドラマやオフィス政治からの[気を散らすものが減る](https://about.gitlab.com/blog/2018/03/15/working-at-gitlab-affects-my-life/)。
-- [最も生産的](asynchronous/)なときに基づいて[労働時間を選ぶ](/handbook/company/culture/all-remote/)柔軟性。
+- [最も生産的](/handbook/communication/#asynchronous-communication)なときに基づいて[労働時間を選ぶ](/handbook/company/culture/all-remote/)柔軟性。
 
 ## 独立したリモートワークのためのヒント
 
@@ -193,7 +193,7 @@ GitLab が[オールリモートのチームメンバーをどのようにオン
 オフィススペースのコスト削減から従業員の日々の生活における柔軟性の向上まで、オールリモートワークは組織とその人々に多くのメリットを提供します。
 
 
-{{< youtube "GKMUs7WXm-E" >}}
+{{< youtube "embed/GKMUs7WXm-E" >}}
 
 
 > **「リモートは乗り越えるべき課題ではありません。明確なビジネスの優位性です。」** -Victor、プロダクトマネージャー、GitLab

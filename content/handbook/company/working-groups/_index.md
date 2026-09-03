@@ -3,11 +3,11 @@ title: "ワーキンググループ"
 description: "GitLab の他のグループと同様に、ワーキンググループはさまざまな職能を持つメンバーで構成されます。詳細をご確認ください！"
 no_list: true
 upstream_path: /handbook/company/working-groups/
-upstream_sha: aa6010901a621fcf51a4f7f1b2dc39f5e40f5ecc
-translated_at: "2026-05-29T21:13:52Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:03:08+09:00"
+translator: codex
 stale: false
-lastmod: "2026-05-29T14:14:34+02:00"
+lastmod: "2026-09-01T16:15:24+01:00"
 ---
 
 ## ワーキンググループとは？
@@ -197,12 +197,12 @@ DRI はワーキンググループに適切なケイデンスでミーティン�
 1. [プロダクト部門における HPT](/handbook/company/working-groups/hpt-product-division/)
 1. [Keep around references](/handbook/company/working-groups/keep-around-refs/)
 1. [プロダクトアクセシビリティ](/handbook/company/working-groups/product-accessibility/)
-1. [AI セキュリティ](/handbook/company/working-groups/ai-security/)
 
 ## 過去のワーキンググループ（アルファベット順） {#past-working-groups-alphabetic-order}
 
 1. [アカウントエスカレーションプロセス](/handbook/company/working-groups/account-escalation-process/)
 1. [AI 統合](/handbook/company/working-groups/ai-integration/)
+1. [AI セキュリティ](/handbook/company/working-groups/ai-security/)
 1. [API ビジョン](/handbook/company/working-groups/api-vision/)
 1. [アーキテクチャキックオフ](/handbook/company/working-groups/architecture-kickoff/)
 1. [バウンデッドコンテキスト](/handbook/company/working-groups/bounded-contexts/)

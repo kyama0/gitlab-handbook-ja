@@ -2,11 +2,11 @@
 title: "GitLab Delivery"
 description: "GitLab Delivery ステージは、すべてのプラットフォームとオファリングにわたる GitLab のエンドツーエンドのソフトウェアデリバリーの信頼性、効率性、スピードの向上に注力しています。"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-delivery/
-upstream_sha: 0e6f01390a34aeb6706ace17d8d3c50e74e82d0d
-translated_at: "2026-04-28T22:31:40Z"
-translator: claude
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T22:50:04+09:00"
+translator: codex
 stale: false
-lastmod: "2025-12-16T14:23:50+00:00"
+lastmod: "2026-08-21T10:31:23+10:00"
 ---
 
 **このページはドラフトであり、現在作成中です**
@@ -35,7 +35,6 @@ GitLab Delivery ステージは、高品質なソフトウェアのシームレ�
 GitLab Delivery ステージは以下のチームで構成されています:
 
 - [Build](/handbook/engineering/infrastructure-platforms/gitlab-delivery/build/)
-- [Operate](/handbook/engineering/infrastructure-platforms/gitlab-delivery/operate/)
 - [Release & Deploy](/handbook/engineering/infrastructure-platforms/gitlab-delivery/delivery/)
 
 <!-- to add links to single teams pages -->
