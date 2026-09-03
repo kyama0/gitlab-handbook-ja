@@ -2,11 +2,11 @@
 description: "このページでは、顧客のヘルスを考慮するための要素、適切な評価の選択ガイドライン、コミュニケーションガイドライン、CSMの責任、アカウントトリアージのIssue作成手順について説明します。"
 title: "顧客ヘルスの評価と管理"
 upstream_path: /handbook/customer-success/csm/health-score-triage/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:50:51+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T05:53:28-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 CSM関連のハンドブックページについては、[CSMハンドブックホームページ](/handbook/customer-success/csm/)を参照してください。
@@ -33,7 +33,7 @@ CSMは赤、黄、緑を使用して、顧客ヘルスに対するセンチメ�
 - ミーティングにおける定期的なコミュニケーションとエンゲージメント
 - 製品とエクスペリエンスへの肯定的なフィードバック、および/またはNPSアンケートでの高スコア
 - チケット作成（月1〜5件）で定義されたサポートサービスの利用
-- 他のプログラムやイベント（Commitなど、[諮問・エグゼクティブ顧客プログラム](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/#executive-advisory-board-eab-program)）を通じたGitLabとのフィードバック提供とエンゲージメントへの関心
+- 他のプログラムやイベント（Commitなど、[諮問・エグゼクティブ顧客プログラム](/handbook/marketing/growth-marketing/growth-community-programs/#executive-advisory-board-eab-program)）を通じたGitLabとのフィードバック提供とエンゲージメントへの関心
 
 ### イエローとイエロー「要トリアージ」
 
@@ -60,9 +60,9 @@ CSMは赤、黄、緑を使用して、顧客ヘルスに対するセンチメ�
 - 成果を推進できるステークホルダーとのアライメントの欠如...
   - [エコノミックバイヤー](/handbook/sales/meddppicc/#economic-buyer)
   - [チャンピオン](/handbook/sales/meddppicc/#champion)
-  - 主要[ペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)
-    - [Cameron（コンプライアンスマネージャー）](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#cameron-compliance-manager)
-    - [Delaney（開発チームリード）](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead)
+  - 主要[ペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)
+    - [Cameron（コンプライアンスマネージャー）](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#cameron-compliance-manager)
+    - [Delaney（開発チームリード）](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead)
 - 製品がサクセスプランで定義された期待する価値や成果を提供しない
 - 製品の採用なしまたは低採用で進捗がない
 - 不良なセンチメントのコミュニケーション

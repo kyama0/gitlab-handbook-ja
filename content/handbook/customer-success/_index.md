@@ -2,11 +2,11 @@
 title: カスタマーエクスペリエンス
 description: GitLab のカスタマーエクスペリエンス
 upstream_path: /handbook/customer-success/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 カスタマーエクスペリエンス部門は [GitLab セールス](/handbook/sales/)機能の一部であり、お客様の GitLab とのジャーニーを通じて、価値とポジティブなビジネス成果を提供するためにお客様と協働します。
@@ -157,8 +157,8 @@ AWS の支出を抑えるために、AWS アカウントを自動的にクリー
 - [クライアントユースケース](/handbook/marketing/use-cases/)
 - [Proof of Value ガイドライン](/handbook/solutions-architects/playbooks/pov)
 - [大規模・戦略的アカウント向けアカウントプランニングテンプレート](https://docs.google.com/presentation/d/1yQ6W7I30I4gW5Vi-TURIz8ZxnmL88uksCl0u9oyRrew/edit?ts=58b89146#slide=id.g1c9fcf1d5b_0_24)
-- [セールスデモ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/)
-- [セールス開発グループハンドブック](/handbook/marketing/sales-development/)
+- [セールスデモ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/)
+- [セールス開発グループハンドブック](/handbook/sales/sales-development/)
 - [GitLab 機能に関する質問やフィードバックを誰に話すべきか](/handbook/product/categories/#devops-stages)
 
 ### カスタマーエクスペリエンスのミーティング

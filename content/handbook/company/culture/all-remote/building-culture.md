@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/building-culture/"
-upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
-translated_at: "2026-08-15T06:54:56+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-08-14T11:43:03-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 このページでは、リモート環境において持続可能な文化を構築し、伝え、強化する方法について詳しく説明します。
@@ -123,9 +123,9 @@ GitLab で働いていない人も含め、誰もがあらゆるトピックに�
 
 リモートスタッフ間のインクルージョンを作る一つの方法は、非同期コミュニケーションによってタイムゾーンのバイアスを排除することです。
 
-可能な限り[非同期](asynchronous/)で運営するよう率先して取り組んでください。これは、同じタイムゾーンにいないかもしれない、通常のタイムゾーン外を旅行している、または緊急の個人的・地域的コミットメントに合わせて[一日を構成している](/handbook/company/culture/all-remote/)人への配慮を示します。
+可能な限り[非同期](/handbook/communication/#asynchronous-communication)で運営するよう率先して取り組んでください。これは、同じタイムゾーンにいないかもしれない、通常のタイムゾーン外を旅行している、または緊急の個人的・地域的コミットメントに合わせて[一日を構成している](/handbook/company/culture/all-remote/)人への配慮を示します。
 
-例えば、テキスト、電話、または Slack メッセージを送る代わりに、GitLab の Issue とマージリクエストを使ってチーム[ミーティング](meetings/)を録画・共有することができます。地域の祝日、個人の休暇状況を把握し、勤務時間外にオンラインになるようチームメンバーに圧力をかけるのではなく、[ドキュメント](/handbook/marketing/technical-writing/#documentation)をデフォルトにするよう他者に奨励してください。
+例えば、テキスト、電話、または Slack メッセージを送る代わりに、GitLab の Issue とマージリクエストを使ってチーム[ミーティング](meetings/)を録画・共有することができます。地域の祝日、個人の休暇状況を把握し、勤務時間外にオンラインになるようチームメンバーに圧力をかけるのではなく、[ドキュメント](/handbook/marketing/product-and-technical-marketing/technical-writing/#documentation)をデフォルトにするよう他者に奨励してください。
 
 ## リモートで文化的適合性をどのように評価するか？
 
@@ -266,7 +266,7 @@ Veamly の創設者兼 CEO である Emna G. が、リモート文化を構築�
 >
 > これに構造を設け、文書化すれば、罪悪感と機会損失の恐れを排除できます。— *Emna G., Veamly 創設者兼 CEO*
 
-リーダーシップがトーンを設定することは重要ですが、会社の文化を定義するものを[文書化](/handbook/marketing/technical-writing/#documentation)することはさらに重要です。明確に定義された答えがないシナリオが生じるたびに、会社の価値観を参照して答えを決定し、文書化してください。
+リーダーシップがトーンを設定することは重要ですが、会社の文化を定義するものを[文書化](/handbook/marketing/product-and-technical-marketing/technical-writing/#documentation)することはさらに重要です。明確に定義された答えがないシナリオが生じるたびに、会社の価値観を参照して答えを決定し、文書化してください。
 
 ドキュメントは共有された利益であり、組織のすべてのメンバーが受け入れるべきものです。文化に関するニュアンスを文書化することは非効率に感じるかもしれませんが、これに関する良い習慣を作ることで、将来において会社の草創期と同じくらい強い文化が確保されます。
 

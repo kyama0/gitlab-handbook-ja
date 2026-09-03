@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/remote-benefits/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T06:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-12T10:48:57-04:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 リモートワークの歴史（[History](https://wrkfrce.com/a-brief-history-of-remote-work/)）
@@ -79,7 +79,7 @@ lastmod: "2026-03-12T10:48:57-04:00"
 1. 病気の同僚からの病原体への暴露が少なくなります。
 1. 対人ドラマやオフィスの政治による[気晴らし](https://about.gitlab.com/blog/2018/03/15/working-at-gitlab-affects-my-life/)を減らし、難しい同僚とも[より簡単にコミュニケーション](informal-communication/)できます。
 1. [自分に最も合った形](https://about.gitlab.com/blog/2019/08/01/working-remotely-with-children-at-home/)で[オフィスやワークスペースを設定・装飾](https://community.thriveglobal.com/how-remote-work-can-reduce-stress-and-revitalize-your-mindset/)できます。
-1. [最も生産性が高い](asynchronous/)時間帯に基づいて[勤務時間を選択](/handbook/company/culture/all-remote/)できます。
+1. [最も生産性が高い](/handbook/communication/#asynchronous-communication)時間帯に基づいて[勤務時間を選択](/handbook/company/culture/all-remote/)できます。
 1. 世界中の多くの場所から人々に会い、一緒に働く機会があり、世界の見方を広げ、新しいカルチャーについて学ぶ機会が生まれます。
 1. [オンボーディングが社会的に少しストレスが少ない場合があります](/handbook/company/culture/all-remote/)。
 1. 自宅での食事はより良い（時に）、そして安価です。
@@ -104,7 +104,7 @@ lastmod: "2026-03-12T10:48:57-04:00"
    - GitLabは[65カ国以上](/handbook/company/team)にチームメンバーを持つ真にグローバルに展開しています。
 1. リーダーシップが繁栄のための必要なツール、構造、カルチャーを備えたチームをサポートする限り、従業員は[気晴らしが少なくより生産的](https://about.gitlab.com/blog/2018/05/11/day-in-life-of-remote-sdr/)です。
    - たとえば、GitLabには[サポートスタッフ1人あたり月65件のチケットクローズ](/handbook/support/performance-indicators#average-daily-tickets-closed-per-support-team-member)というKPIがあります。
-1. [オフィスコスト](https://globalworkplaceanalytics.com/wp-content/The%20Remote%20Work%20ROI%20Calculator%20V0.97/The%20Remote%20Work%20ROI%20Calculator%20V0.97.htm)と[報酬](https://about.gitlab.com/blog/2019/02/28/why-we-pay-local-rates/)の[節約増加](https://about.gitlab.com/blog/2019/02/28/why-we-pay-local-rates/)（低コスト地域での採用による）。
+1. [オフィスコストの節約増加](https://globalworkplaceanalytics.com/wp-content/The%20Remote%20Work%20ROI%20Calculator%20V0.97/The%20Remote%20Work%20ROI%20Calculator%20V0.97.htm)と[報酬](https://about.gitlab.com/blog/2019/02/28/why-we-pay-local-rates/)（低コスト地域での採用による）。
    - GitLabは他のサンフランシスコベイエリアの共同作業会社よりも**バランスの取れた給与体系を維持**しています。
    - 各機能には新規採用のロケーションファクターターゲットがあります。たとえば、[マーケティング](/handbook/company/kpis/#marketing-kpis)はターゲットが0.72未満、[財務](/handbook/company/kpis/#finance-kpis)は0.69未満です。（参考: サンフランシスコは1.00）
    - 平均全体ロケーションファクターが0.65未満であるという[ピープルグループKPI](/handbook/company/kpis/#people-group-kpis)があります。
@@ -157,7 +157,7 @@ lastmod: "2026-03-12T10:48:57-04:00"
 
 ### 柔軟な勤務時間と可用性
 
-世界中に点在する従業員が[非同期で作業する](asynchronous/)ことで、あるタイムゾーンの作業日が終わっても貢献が続けられます。
+世界中に点在する従業員が[非同期で作業する](/handbook/communication/#asynchronous-communication)ことで、あるタイムゾーンの作業日が終わっても貢献が続けられます。
 
 ### 満足した従業員と生産性の向上
 

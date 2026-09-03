@@ -3,11 +3,11 @@ title: GitLab の管理責任
 description: "GitLab はオープンコアのビジネスモデルを持ち、有料ティアへのサブスクリプションでほぼすべての収益を得ています。詳細はこちら！"
 canonical_path: "/company/stewardship/"
 upstream_path: "/handbook/company/stewardship/"
-upstream_sha: "839c14e40e08e6fd4099a01ee623aaf85faafd12"
-translated_at: "2026-06-01T21:39:56Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-06-01T12:55:15+02:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## ビジネスモデル {#business-model}
@@ -51,7 +51,7 @@ GitLab SaaS については、コストと収益を最適化するために、�
 GitLab をより多く使えば使うほど、より上位のティアから恩恵を受ける可能性が高くなります。
 GitLab を使う 1 人であっても、最上位ティアを使うのが最善であることもあります。
 
-[ティア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/pricing-tiers/)を正しく決めることは難しく、もし高すぎるティアに何かを置いてしまった場合、私たちはためらわずに[オープンソース化](https://about.gitlab.com/releases/2016/12/24/were-bringing-gitlab-pages-to-community-edition/)[する](https://news.ycombinator.com/item?id=10931347)か、より低いティアに移動します。私たちはコミュニティに耳を傾け、適切なバランスを見つけ、そのフィードバックに基づいて反復し変更を加えます。同時に、プレミアム製品は価値を保持する必要があり、私たちはその価値を提供していると信じています。
+[ティア](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/pricing-tiers/)を正しく決めることは難しく、もし高すぎるティアに何かを置いてしまった場合、私たちはためらわずに[オープンソース化](https://about.gitlab.com/releases/2016/12/24/were-bringing-gitlab-pages-to-community-edition/)[する](https://news.ycombinator.com/item?id=10931347)か、より低いティアに移動します。私たちはコミュニティに耳を傾け、適切なバランスを見つけ、そのフィードバックに基づいて反復し変更を加えます。同時に、プレミアム製品は価値を保持する必要があり、私たちはその価値を提供していると信じています。
 
 [DevOps ライフサイクル](https://about.gitlab.com/direction/#scope)のすべてのステージには、少なくともいくつかの機能が GitLab Core で利用可能です。1 万人を超えるユーザーで GitLab Core を使っている企業もあります。
 
@@ -132,7 +132,7 @@ GitLab という製品は[他のシステムとうまく連携します](/handbo
 1. 提出されたコードの品質はどうか?
 1. ソースアベイラブル機能の完全な置き換えになっているか?
 1. [貢献受け入れ基準](https://docs.gitlab.com/ee/development/contributing/merge_request_workflow.html#contribution-acceptance-criteria)を満たしているか?
-1. [ミッドマーケット組織以上に関連するもの](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers/)か?
+1. [ミッドマーケット組織以上に関連するもの](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/)か?
 1. これを提出している人物または組織は、GitLab を [SMB](/handbook/sales/) で使用しているか?
 1. これを提出している人物または組織は、以前に GitLab に貢献したことがあるか?
 1. これは、多くの既存顧客が私たちの有料ティアを選ぶ理由となっているものか?

@@ -2,9 +2,9 @@
 title: "Infrastructure Platforms"
 description: "Infrastructure Platforms 部門は GitLab SaaS プラットフォームおよびサポートサービスの可用性、信頼性、パフォーマンス、スケーラビリティに責任を持ちます"
 upstream_path: "/handbook/engineering/infrastructure-platforms/"
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-lastmod: 2026-07-15T17:51:54+00:00
-translated_at: "2026-07-16T06:52:34+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+lastmod: "2026-08-28T15:18:47+10:00"
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: codex
 stale: false
 ---
@@ -44,7 +44,7 @@ flowchart LR
     I --> GD[GitLab Dedicated]
     click GD "/handbook/engineering/infrastructure-platforms/gitlab-dedicated/"
     I --> PRODENG[Production Engineering]
-    click PRODEND "/handbook/engineering/infrastructure-platforms/production-engineering/"
+    click PRODENG "/handbook/engineering/infrastructure-platforms/production-engineering/"
     I --> SD[GitLab Delivery]
     click SD "/handbook/engineering/infrastructure-platforms/gitlab-delivery/"
     I --> TS[Tenant Scale]
@@ -60,6 +60,8 @@ flowchart LR
     click Runway "/handbook/engineering/infrastructure-platforms/gitlab-delivery/runway/"
     PRODENG --> CCU[Cloud Cost Utilization]
     click CCU "/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/"
+    PRODENG --> Fleet[Fleet Management]
+    click Fleet "/handbook/engineering/infrastructure-platforms/production-engineering/fleet-management/"
 
     DE --> DevA[Development Analytics]
     click DevA "/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/"

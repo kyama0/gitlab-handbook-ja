@@ -5,11 +5,11 @@ twitter_image: /images/tweets/handbook-marketing.png
 twitter_site: '@gitlab'
 twitter_creator: '@gitlab'
 upstream_path: /handbook/marketing/marketing-operations/traction-lead-complete/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-09T20:42:10+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 - 概要
@@ -41,7 +41,7 @@ GitLab は、Channel Partners と協力して、Partner sponsored、MDF funded�
 
 ### Partner Sponsored Event
 
-GitLab は、Channel Partners が当社所有のイベントを後援することを許可しています。Traction は、新しいキャンペーンメンバーが [partner sponsored event](/handbook/marketing/channel-marketing/#partner-sponsored-events) に関連付けられていることを認識すると、次のステップを実行します:
+GitLab は、Channel Partners が当社所有のイベントを後援することを許可しています。Traction は、新しいキャンペーンメンバーが [partner sponsored event](/handbook/marketing/growth-marketing/partner-and-industry-marketing/#partner-sponsored-events) に関連付けられていることを認識すると、次のステップを実行します:
 
 1. リードフィールド `Lead Acquisition Source` = `Partner Sponsored Event` および `Impartner Partner Account` が空でないかを確認します
 1. リードフィールド `Partner Recalled Date` が空で `Partner Recalled` が `False` に等しいかを確認します
@@ -50,7 +50,7 @@ GitLab は、Channel Partners が当社所有のイベントを後援するこ�
 
 ### MDF と Free Trial キャンペーン
 
-Traction は、新しいキャンペーンメンバーが [MDF キャンペーン](/handbook/marketing/channel-marketing/#mdf-campaigns) およびトライアルキャンペーンに関連付けられていることを認識すると、次のステップを実行します:
+Traction は、新しいキャンペーンメンバーが [MDF キャンペーン](/handbook/marketing/growth-marketing/partner-and-industry-marketing/#mdf-campaigns) およびトライアルキャンペーンに関連付けられていることを認識すると、次のステップを実行します:
 
 1. キャンペーンフィールド `Will there be MDF funding` = `Yes`、`Partner - Trial` で始まるキャンペーン名、リードフィールド `Impartner Partner Account` が空でないかを確認します。
 1. リードフィールド `Partner Recalled Date` が空で `Partner Recalled` が `False` に等しいかを確認します
@@ -59,7 +59,7 @@ Traction は、新しいキャンペーンメンバーが [MDF キャンペー�
 
 ### Joint Partner キャンペーン
 
-Traction は、新しいキャンペーンメンバーが [joint partner キャンペーン](/handbook/marketing/channel-marketing/#joint-gitlab-and-partner-campaigns) に関連付けられていることを認識すると、次のステップを実行します:
+Traction は、新しいキャンペーンメンバーが [joint partner キャンペーン](/handbook/marketing/growth-marketing/partner-and-industry-marketing/#joint-gitlab-and-partner-campaigns) に関連付けられていることを認識すると、次のステップを実行します:
 
 1. キャンペーンフィールド `Is a Channel Partner Involved?` = `Yes` および パートナーエンゲージメントに関する `Campaign Member Status`、リードフィールド `Impartner Partner Account` が空でないかを確認します。
 1. キャンペーンメンバーが GitLab によって積極的に作業されていない、つまり `Person Status` が `Accepted`、`Qualifying`、`Qualified` でない、または `Actively Being Sequenced` = `False` であることを確認します。<br>

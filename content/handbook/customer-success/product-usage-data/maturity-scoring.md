@@ -2,11 +2,11 @@
 title: "ユースケース採用スコアリング"
 description: "採用スコアリングの概要、計算方法、および CSM が顧客との会話でその情報をどのように活用できるかについて。"
 upstream_path: /handbook/customer-success/product-usage-data/maturity-scoring/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2024-10-04T15:57:24-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 *Gainsight の概要およびログイン方法については、[Gainsight 概要ページ](/handbook/sales/gainsight/)をご参照ください。*
@@ -32,21 +32,21 @@ CSM が Gainsight をどのように使用するかの概要については、[G
 <details>
   <summary markdown="span"> ユースケースリソースページ </summary>
 
-- [SCM](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/#adoption-recommendation)
+- [SCM](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/#adoption-recommendation)
   <br>
-- [CI](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/#adoption-recommendation)
+- [CI](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/#adoption-recommendation)
   <br>
-- [CD](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/#adoption-recommendation)
+- [CD](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/cd/#adoption-recommendation)
   <br>
-- [セキュリティ（DevSecOps）](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/)
+- [セキュリティ（DevSecOps）](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/)
   <br>
-- [コンプライアンス](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/compliance/)
+- [コンプライアンス](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/compliance/)
   <br>
-- [アーティファクト管理（Package）](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/package/)
+- [アーティファクト管理（Package）](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/package/)
   <br>
-- [GitOps](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/#adoption-recommendation)
+- [GitOps](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/#adoption-recommendation)
   <br>
-- [アジャイル](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/agile/#adoption-recommendation)
+- [アジャイル](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/agile/#adoption-recommendation)
 
   </details>
 
@@ -109,13 +109,13 @@ GitLab のユースケースに新機能を追加しながら毎月更新され�
 <br>
 ![CI 採用スコアリング](https://lucid.app/publicSegments/view/14463ed0-bdf2-47a1-998b-40a6bdba9986/image.png)
 <br>
-[採用ガイドリファレンスリンク](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/#adoption-guide)
+[採用ガイドリファレンスリンク](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/#adoption-guide)
 
 #### リソース
 
 - [顧客会話用テンプレートデッキ](https://docs.google.com/presentation/d/13IVtUCA8-S3Tjtcnk3y6eY-zEG6R5hmD3bSoKn3C-N8/edit?usp=sharing)（内部のみ）
 - Gainsight の[ユースケース採用スコアカード](https://gitlab.gainsightcloud.com/v1/ui/dashboard#/f18df482-a70f-4a8b-8c82-1f99538d777e)ダッシュボードを使用して、顧客の CI 指標を表示・エクスポートし採用スコアを計算します
-- [CI 採用スコアのバリューステートメント](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/delivery-automation/#customer-adoption-and-value)
+- [CI 採用スコアのバリューステートメント](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/delivery-automation/#customer-adoption-and-value)
   - CI 採用の測定方法と採用を改善する方法についての会話をガイドするのに役立ちます。
 - [ユースケース採用スコアリング — 定義された指標](https://docs.google.com/spreadsheets/d/1dJLQIwoQxSK6pJL-ZmbMK_VUBmY0INZPgVsWqsypHzI/edit?usp=sharing)（内部のみ）
 
@@ -128,7 +128,7 @@ GitLab のユースケースに新機能を追加しながら毎月更新され�
 - CI 採用スコアリングウォークスルー
   - [セッション 1](https://youtu.be/E4IMgFWGkNM)（内部のみ）
   - [セッション 2](https://chorus.ai/meeting/E4F00AFC0C4A4036A7AC370653A50112?)（内部のみ）
-  - [CI 採用のバリューステートメント](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/delivery-automation/#customer-adoption-and-value)
+  - [CI 採用のバリューステートメント](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/delivery-automation/#customer-adoption-and-value)
 
 ### セキュリティ（DevSecOps）採用スコアリング
 
@@ -136,14 +136,14 @@ GitLab のユースケースに新機能を追加しながら毎月更新され�
 <br>
 ![DevSecOps 採用スコアリング](https://lucid.app/publicSegments/view/2ddbf5a5-0a5e-4695-ac50-b073e3dc6eec/image.png)
 <br>
-[採用ガイドリファレンスリンク](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#adoption-guide)
+[採用ガイドリファレンスリンク](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#adoption-guide)
 <br>
 
 #### リソース
 
 - [顧客会話用テンプレートデッキ](https://docs.google.com/presentation/d/13IVtUCA8-S3Tjtcnk3y6eY-zEG6R5hmD3bSoKn3C-N8/edit?usp=sharing)（内部のみ）
 - Gainsight の[ユースケース採用スコアカード](https://gitlab.gainsightcloud.com/v1/ui/dashboard#/f18df482-a70f-4a8b-8c82-1f99538d777e)ダッシュボードを使用して、顧客のセキュリティ（DevSecOps）指標を表示・エクスポートし採用スコアを計算します
-- [バリューステートメント](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#the-gitlab-solution)
+- [バリューステートメント](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#the-gitlab-solution)
 - [ユースケース採用スコアリング — 定義された指標](https://docs.google.com/spreadsheets/d/1dJLQIwoQxSK6pJL-ZmbMK_VUBmY0INZPgVsWqsypHzI/edit?usp=sharing)（内部のみ）
 
 #### CS イネーブルメント
@@ -165,7 +165,7 @@ GitLab のユースケースに新機能を追加しながら毎月更新され�
 <br>
 ![CD 採用スコアリング](https://lucid.app/publicSegments/view/52a3c35f-a4c0-4632-ab89-258a02d78042/image.jpeg)
 <br>
-[採用ガイドリファレンスリンク](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/#adoption-guide)
+[採用ガイドリファレンスリンク](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/cd/#adoption-guide)
 <br>
 
 #### リソース
@@ -194,7 +194,7 @@ GitLab のユースケースに新機能を追加しながら毎月更新され�
 <br>
 ![SCM 採用スコアリング](https://lucid.app/publicSegments/view/c9c1cd25-4435-4c40-965d-744852dd71b2/image.png)
 <br>
-[採用ガイドリファレンスリンク](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/#adoption-recommendation)
+[採用ガイドリファレンスリンク](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/#adoption-recommendation)
 
 ### 使用ロールアップ手法
 

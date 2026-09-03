@@ -3,11 +3,11 @@ title: Navan 購買カード
 decription: >-
   このページには GitLab の Navan 購買カードのガイドラインと手順が記載されています。
 upstream_path: /handbook/finance/accounts-payable/corp-credit-cards/
-upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
-translated_at: "2026-07-25T06:27:01+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-24T07:40:02-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 1. ポリシー
@@ -61,7 +61,7 @@ lastmod: "2026-07-24T07:40:02-07:00"
 **配送・郵送料**
 
 - イベント、賞品、重要な人生イベントへのギフトに関連する品目の配送。
-- SWAG 配送の詳細は[マーチャンダイジングワークフロー](/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/#swag-shop)をご覧ください。
+- SWAG 配送の詳細は[マーチャンダイジングワークフロー](/handbook/marketing/brand-experience/merchandise-handling/#swag-shop)をご覧ください。
 
 ## 4. 非許可品目
 
@@ -138,7 +138,7 @@ $5,000 USD（または現地通貨相当）を超えるすべての購入は許�
 ### 賞品
 
 - すべての賞品購入はバーチャルカードを要求する Zip を通じて提出する必要があります。
-- SWAG に関連する賞品については[マーチャンダイジングワークフローページ](/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/#swag-shop)をご覧ください。
+- SWAG に関連する賞品については[マーチャンダイジングワークフローページ](/handbook/marketing/brand-experience/merchandise-handling/#swag-shop)をご覧ください。
 
 ## 5. ポリシー外の取引
 

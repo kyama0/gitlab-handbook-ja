@@ -5,11 +5,11 @@ twitter_image: '/images/tweets/handbook-marketing.png'
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/marketing/virtual-events/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-09-02T12:51:00-04:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要 {#overview}
@@ -68,11 +68,11 @@ GitLab では、種類とプラットフォームの異なるバーチャルイ�
 
 ## 外部バーチャルイベントのリスケジュール
 
-最新のリスケジュール手順については、[このハンドブックページ](/handbook/marketing/field-marketing/#rescheduling-or-canceling-events) を参照してください。
+最新のリスケジュール手順については、[このハンドブックページ](/handbook/marketing/growth-marketing/regional-marketing/#rescheduling-or-canceling-events) を参照してください。
 
 ## 外部バーチャルイベントのキャンセル
 
-最新のリスケジュール手順については、[このハンドブックページ](/handbook/marketing/field-marketing/#rescheduling-or-canceling-events) を参照してください。
+最新のリスケジュール手順については、[このハンドブックページ](/handbook/marketing/growth-marketing/regional-marketing/#rescheduling-or-canceling-events) を参照してください。
 
 ## バーチャルイベントの意思決定ツリー {#decision-tree}
 
@@ -98,7 +98,7 @@ Field Marketing はハンズオンワークショップをバーチャルで運�
 * これらのワークショップに Zoom ウェブキャストを使用することで、より大きなオーディエンスからの Q&A を簡単に追跡・管理できます。セルフサービス Zoom 提供のチャット機能では、チャットが長くなり混乱しやすくなります。
 * セルフサービス運用のイベントよりも、ウェブキャスト運用のイベントの方がよりプロフェッショナルな見た目と雰囲気になります。
 
-バーチャルワークショップの詳細については、[Field Marketing ページ](/handbook/marketing/field-marketing/field-marketing-owned-virtual-events/#virtual-workshops) を参照してください。
+バーチャルワークショップの詳細については、[Field Marketing ページ](/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events/#virtual-workshops) を参照してください。
 
 ### バーチャルカンファレンス {#virtual-conference}
 
@@ -277,7 +277,7 @@ Zoom からバーチャルイベント用にエクスポートできるレポー
 
 [Zoom ランディングページでの登録ソーストラッキング](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065543) は、MPM が運用する `Webcast` タイプでのみ利用可能で、セルフサービスバーチャルイベントの `Meeting` タイプ設定では利用できません。
 
-現在、MPM が about.gitlab ランディングページを作成しフォーム入力を Marketo 経由で Zoom と統合してウェブキャスト登録プロセスを管理しているため、ウェブキャスト登録に Zoom のランディングページは使用していません。Zoom 統合は UTM パラメータを使用して登録元のソースを追跡します。[UTM の使い方と使うタイミングに関する完全なドキュメント](/handbook/marketing/integrated-marketing/digital-strategy/digital-strategy-management/#utms-for-url-tagging-and-tracking) を参照してください。
+現在、MPM が about.gitlab ランディングページを作成しフォーム入力を Marketo 経由で Zoom と統合してウェブキャスト登録プロセスを管理しているため、ウェブキャスト登録に Zoom のランディングページは使用していません。Zoom 統合は UTM パラメータを使用して登録元のソースを追跡します。[UTM の使い方と使うタイミングに関する完全なドキュメント](/handbook/marketing/growth-marketing/digital-agency/digital-strategy-management/#utm-tracking) を参照してください。
 
 ### ライブ配信 {#live-streaming}
 

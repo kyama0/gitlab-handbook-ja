@@ -1,11 +1,11 @@
 ---
 title: "パートナーテクニカルプリセールスイネーブルメント"
 upstream_path: /handbook/resellers/partner-enablement/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:10:01+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T05:53:28-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -88,9 +88,9 @@ GitLab とは何か、何を提供し、何を行うのかを学びます。
   - GitLab を市場でどう位置付けるかについて学べます（10 分）。
 - [GitLab Technical Discovery Guide](/handbook/sales/qualification-questions/#questions-for-selling-gitlab-premium-and-ultimate)（ハンドブック）
   - ディスカバリーはあらゆるソリューションアーキテクト (SA) にとって重要なスキルです。GitLab の SA がディスカバリーをどう行っているかを示します（10 分）。
-- [User Personas](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)（ハンドブック）
+- [User Personas](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)（ハンドブック）
   - これらはお客様内で GitLab の主要ユーザーとなるペルソナタイプです。
-- [Buyer Personas](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)（ハンドブック）
+- [Buyer Personas](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)（ハンドブック）
   - GitLab のようなプラットフォームを販売する際に理解すべき複数のバイヤーペルソナがあります。どれをより重視しますか?（20 分）
 
 **競合情報**

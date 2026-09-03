@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/informal-communication/"
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:54:56+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T11:43:03-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 このページでは、GitLab でインフォーマルコミュニケーションがどのように行われるか、それが [対面でのやり取り](/handbook/company/culture/all-remote/) をどのように補完するか、そしてなぜそれがオールリモート [カルチャー](/handbook/company/culture/#culture-at-gitlab) で重要なのかを詳しく説明します。以下に 20 以上のインフォーマルコミュニケーションを育む方法があり、私たちは常に新しい方法を発見し追加しています。
@@ -25,7 +25,7 @@ lastmod: "2026-08-14T11:43:03-05:00"
 
 ## 職場におけるフォーマルコミュニケーションとインフォーマルコミュニケーションの違いは何ですか？
 
-GitLab は [非同期で働く](asynchronous/) オールリモート組織なので、ほぼすべての仕事のコミュニケーションが [文書化](/handbook/marketing/technical-writing/#documentation) されており、すべての仕事関連のコミュニケーションが「フォーマル」なコミュニケーションになっています。これは私たちの [透明性](/handbook/values/#transparency) の価値観をサポートします。
+GitLab は [非同期で働く](/handbook/communication/#asynchronous-communication) オールリモート組織なので、ほぼすべての仕事のコミュニケーションが [文書化](/handbook/marketing/product-and-technical-marketing/technical-writing/#documentation) されており、すべての仕事関連のコミュニケーションが「フォーマル」なコミュニケーションになっています。これは私たちの [透明性](/handbook/values/#transparency) の価値観をサポートします。
 
 私たちは関係構築を大切にしています。インフォーマルコミュニケーションを通じて関係を構築する時間を意図的に作ることを非常に重視しています。
 
@@ -109,7 +109,7 @@ GitLab は [非同期で働く](asynchronous/) オールリモート組織なの
 
 グローバルなリモートワークは、より多様な場所からイノベーションが生まれる素晴らしい機会を作ります。リモートチームが、近隣や家のコミュニティのメンバーとのローカルなやり取りでソーシャルクォータの一部を満たす力を持つため、彼らははるかに豊かな入力のセットを経験します。
 
-毎週の [非同期](asynchronous/) デブリーフィングを検討してください。リモートチームメンバーが家庭のコミュニティで学んだ教訓や直面した課題を共有することで、新しい製品やソリューションにリンクされた職場内のスピンオフ会話が生まれる可能性があります。
+毎週の [非同期](/handbook/communication/#asynchronous-communication) デブリーフィングを検討してください。リモートチームメンバーが家庭のコミュニティで学んだ教訓や直面した課題を共有することで、新しい製品やソリューションにリンクされた職場内のスピンオフ会話が生まれる可能性があります。
 
 ## 関係構築に時間を捧げる
 

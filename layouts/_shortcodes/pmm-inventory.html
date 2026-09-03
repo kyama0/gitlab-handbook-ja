@@ -1,0 +1,42 @@
+{{- /* The legacy source page reads this list from data/inventory/pmm.yml. */ -}}
+{{- $dataURL := "https://gitlab.com/gitlab-com/www-gitlab-com/-/raw/721a5f8b7c53460ffcbeded6e554337eb1a8996d/data/inventory/pmm.yml" -}}
+{{- $resource := resources.GetRemote $dataURL -}}
+{{- if not $resource -}}
+  {{- errorf "Unable to fetch PMM inventory data from %s" $dataURL -}}
+{{- end -}}
+{{- $inventory := $resource | transform.Unmarshal -}}
+{{- $translations := dict
+  "https://docs.google.com/presentation/d/1dVPaGc-TnbUQ2IR7TV0w0ujCrCXymKP4vLf6_FDTgVg/edit" (dict "title" "ピッチデック" "assetType" "スライド")
+  "https://docs.google.com/presentation/d/1SHSmrEs0vE08iqse9ZhEfOQF1UWiAfpWodIE6_fFFLg/edit" (dict "title" "バリュードライバー - 顧客向けデック" "assetType" "スライド")
+  "https://about.gitlab.com/handbook/marketing/strategic-marketing/usecase-gtm/ci/" (dict "title" "CI リソースページ" "assetType" "ハンドブックページ")
+  "https://about.gitlab.com/handbook/marketing/strategic-marketing/usecase-gtm/ci/message-house" (dict "title" "CI メッセージハウス" "assetType" "ハンドブックページ")
+  "https://about.gitlab.com/handbook/marketing/strategic-marketing/usecase-gtm/ci/#customer-facing-slides" (dict "title" "CI 顧客向けデック" "assetType" "スライド")
+  "https://about.gitlab.com/handbook/marketing/strategic-marketing/usecase-gtm/devsecops/" (dict "title" "DevSecOps リソースページ" "assetType" "ハンドブックページ")
+  "https://about.gitlab.com/handbook/marketing/strategic-marketing/usecase-gtm/devsecops/message-house" (dict "title" "DevSecOps メッセージハウス" "assetType" "ハンドブックページ")
+  "https://docs.google.com/presentation/d/1WHTyUDOMuSVK9uK7hhSIQ_JbeUbo7k5AW3D6WwBReOg/edit#slide=id.g2823c3f9ca_0_9" (dict "title" "DevSecOps スライド" "assetType" "スライド")
+  "https://about.gitlab.com/handbook/marketing/strategic-marketing/usecase-gtm/version-control-collaboration/" (dict "title" "VCC リソースページ" "assetType" "ハンドブックページ")
+  "https://about.gitlab.com/handbook/marketing/strategic-marketing/usecase-gtm/version-control-collaboration/message-house/" (dict "title" "VCC メッセージハウス" "assetType" "ハンドブックページ")
+  "https://about.gitlab.com/handbook/marketing/strategic-marketing/usecase-gtm/version-control-collaboration/#customer-facing-slides" (dict "title" "VCC 顧客向けスライド" "assetType" "スライド")
+-}}
+{{- $sections := slice
+  (dict "id" "all" "title" "一般資料" "useCase" "all")
+  (dict "id" "agile" "title" "アジャイル" "useCase" "agile")
+  (dict "id" "ci" "title" "継続的インテグレーション" "useCase" "ci")
+  (dict "id" "cd" "title" "継続的デリバリー" "useCase" "cd")
+  (dict "id" "cloudnative" "title" "クラウドネイティブ" "useCase" "cloud native")
+  (dict "id" "devsecops" "title" "DevSecOps" "useCase" "devsecops")
+  (dict "id" "gitops" "title" "GitOps" "useCase" "gitops")
+  (dict "id" "simplifydevops" "title" "DevOps の簡素化" "useCase" "simplifydevops")
+  (dict "id" "vcc" "title" "バージョン管理とコラボレーション" "useCase" "vcc")
+-}}
+
+{{- range $sections }}
+<section class="text-center">
+  <h2 class="js-in-page-nav-section text-center" id="{{ .id }}">{{ .title }}</h2>
+  {{- range where $inventory "use_case" .useCase }}
+    {{- $localized := index $translations .link }}
+  <p class="text-left"><a href="{{ .link }}" target="_blank">{{ $localized.title }}</a>、タイプ: {{ $localized.assetType }}</p>
+  {{- end }}
+  <br>
+</section>
+{{- end }}

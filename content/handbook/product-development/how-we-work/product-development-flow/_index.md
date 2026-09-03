@@ -2,11 +2,11 @@
 title: プロダクト開発フロー
 description: クロスファンクショナルなプロダクト開発のワークフロープロセスとラベル付け。
 upstream_path: /handbook/product-development/how-we-work/product-development-flow/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:20:45+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-14T11:43:03-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要と哲学
@@ -356,7 +356,7 @@ Issue が `Verification` 状態にあるとき、担当エンジニアは Stagin
 | 成果 | 活動 |
 |----------|------------|
 |<i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:1.25em" aria-hidden="true"></i> **機能が構築される** | - DRI が[完了の定義](https://gitlab.com/gitlab-org/gitlab-foss/-/blob/master/doc/development/contributing/merge_request_workflow.md#definition-of-done)が満たされていることを確認する<br/>- ステークホルダーに定期的なステータス更新を提供する<br/>- ステータスチェックインや同期スタンドアップを避けるため、非同期の更新を提供する<br/> - エンジニアが割り当てられた Issue を実装するために[エンジニアリングプロセス](/handbook/engineering/workflow/#basics)に従う。 |
-|<i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:1.25em" aria-hidden="true"></i> **機能がテストされる** | - エンジニアが実装する機能をテストする（[完了の定義](https://gitlab.com/gitlab-org/gitlab-foss/-/blob/master/doc/development/contributing/merge_request_workflow.md#definition-of-done)を参照）。<br/>- DRI が Issue にテスト要件を設定する。<br/>- DRI が Quad Planning の成果として必要な特定のテストカバレッジの変更をフォローアップする。<br/>- Technical Writer が作成されたドキュメントの[レビュー](/handbook/marketing/technical-writing/#reviews)を完了する。<br/>- Application Security Engineer がノンブロッキングの[アプリケーションセキュリティレビュープロセス](/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/)を通じてリスク軽減を検証する。 |
+|<i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:1.25em" aria-hidden="true"></i> **機能がテストされる** | - エンジニアが実装する機能をテストする（[完了の定義](https://gitlab.com/gitlab-org/gitlab-foss/-/blob/master/doc/development/contributing/merge_request_workflow.md#definition-of-done)を参照）。<br/>- DRI が Issue にテスト要件を設定する。<br/>- DRI が Quad Planning の成果として必要な特定のテストカバレッジの変更をフォローアップする。<br/>- Technical Writer が作成されたドキュメントの[レビュー](/handbook/marketing/product-and-technical-marketing/technical-writing/#reviews)を完了する。<br/>- Application Security Engineer がノンブロッキングの[アプリケーションセキュリティレビュープロセス](/handbook/security/product-security/security-platforms-architecture/application-security/appsec-reviews/)を通じてリスク軽減を検証する。 |
 
 ### Build フェーズ 3: Launch
 
@@ -451,7 +451,7 @@ Issue ステータス: `Closed`
 - 壊れているものに関するフィードバックを得る方法として使うべきではありません。
 - 機能を早期にリリースするために使うべきではありません。
 - GA になる可能性が高いです。
-- プロジェクトリードは、beta ユーザーを募るために [Advisory and Executive customer programs](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/#executive-advisory-board-eab-program) や EAP の使用を検討すべきです。
+- プロジェクトリードは、beta ユーザーを募るために [Advisory and Executive customer programs](/handbook/marketing/growth-marketing/growth-community-programs/#executive-advisory-board-eab-program) や EAP の使用を検討すべきです。
 - プロジェクトリードは、外部コントリビューターが beta にどのように参加できるかを検討すべきです。
 - beta を実行するプロジェクトリードは、理想的には作業が始まる前に、UX と Engineering との議論の後で、beta の終了基準を定義すべきです。
 - TODO: [DRI が必要] テレメトリ要件をここに追加またはリンクすべきです。

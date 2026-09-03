@@ -1,11 +1,11 @@
 ---
 title: "買収プロセス"
 upstream_path: /handbook/acquisitions/acquisition-process/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T04:59:08Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-21T09:48:00-08:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 これは私たちの買収プロセスの詳細なビューです。買収アプローチについての詳細は[買収ハンドブック](/handbook/acquisitions/)をご覧ください。
@@ -119,7 +119,7 @@ lastmod: "2025-11-21T09:48:00-08:00"
 1. 統合 - 取引後統合の重要なコンポーネントは製品統合戦略です：取引のクロージング前に、GitLab プロダクトとエンジニアリングの買収チャンピオンは機能セット/機能に焦点を当てた統合戦略を正式化します：
     1. そのまま維持するもの、書き直すもの、廃棄/EOL するもの
     1. ユーザー移行に重要なもの
-    1. GitLab での対象[製品ティア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers/)
+    1. GitLab での対象[製品ティア](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/)
     1. 実装の障壁
     1. ディールマイルストーン：
         1. GitLab 参加から 2、4、6 ヶ月後に 3 つのマイルストーンを設定し、取引で特定された製品への関心の大部分をカバーする簡潔な目標セットを提供することを目指しています

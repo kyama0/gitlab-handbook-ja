@@ -2,11 +2,11 @@
 title: "セールス"
 description: "GitLab フィールドチームには、Enterprise Sales、Commercial Sales、Customer Success、Channel Partners、Alliances、Field Operations といった複数の機能が含まれます"
 upstream_path: /handbook/sales/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T07:54:58+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## セールスチームのホームページへようこそ
@@ -63,11 +63,11 @@ lastmod: "2026-07-28T15:04:15+01:00"
 | [Delivering a Quote via DocuSign](/handbook/sales/field-operations/order-processing/#how-to-send-an-order-form-to-a-customer) |  |  |  |
 | **Marketing Resources** | **Strategic Marketing** | **Product Resources** |  |
 | ------ | ------ | ------ | ------ |
-| [Marketing](/handbook/marketing/) | [Strategic Marketing Handbook](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/) | [Product Team Handbook](/handbook/product/) |  |
-| [Sales Development Handbook](/handbook/marketing/sales-development/) | [Product Marketing Manager Assignments](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/#which-product-marketing-manager-should-i-contact) | [Engaging Product Management](/handbook/product/product-management/#how-to-engage-product-managers) |  |
-| [GitLab Value Proposition](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/messaging/#gitlab-value-proposition) | [Customer-Facing Presentations](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/#customer-facing-presentations) | [Asking Questions/Giving Feedback on a Feature](/handbook/product/categories/#devops-stages) | |
-| [Lead and Contact Statuses](/handbook/marketing/marketing-operations/#lead-and-contact-statuses) |[Print Collateral](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/#print-collateral) | [Product Categories](/handbook/product/categories/) |  |
-| [Inbound Lead Generation](/handbook/marketing/sales-development/#inbound-lead-generation) | [Sales Collateral Google Drive](https://drive.google.com/open?id=0B-ytP5bMib9TaUZQeDRzcE9idVk) | [Features by Group](/handbook/product/categories/features/) |  |
+| [Marketing](/handbook/marketing/) | [Strategic Marketing Handbook](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | [Product Team Handbook](/handbook/product/) |  |
+| [Sales Development Handbook](/handbook/sales/sales-development/) | [Product Marketing Manager Assignments](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | [Engaging Product Management](/handbook/product/product-management/#how-to-engage-product-managers) |  |
+| [GitLab Value Proposition](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/messaging/#gitlab-value-proposition) | [Customer-Facing Presentations](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | [Asking Questions/Giving Feedback on a Feature](/handbook/product/categories/#devops-stages) | |
+| [Lead and Contact Statuses](/handbook/marketing/marketing-operations/#lead-and-contact-statuses) |[Print Collateral](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | [Product Categories](/handbook/product/categories/) |  |
+| [Inbound Lead Generation](/handbook/sales/sales-development/) | [Sales Collateral Google Drive](https://drive.google.com/open?id=0B-ytP5bMib9TaUZQeDRzcE9idVk) | [Features by Group](/handbook/product/categories/features/) |  |
 | **Finance Process** | **Business Operations Process** | **Legal Process** | |
 | ------ | ------ | ------ | ------ |
 | [Deal Desk: Assistance with Quotes](/handbook/sales/field-operations/order-processing/#assistance-with-quotes) | [Business Operations Handbook](/handbook/business-technology/) | [Collaborating with Legal - Sales](/handbook/legal/customer-negotiations/) |  |
@@ -100,9 +100,9 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 GitLab セールスチームは、私たちの仕事のあらゆる側面で CREDIT バリューを体現しています。具体的には、私たちは常にオーバーパフォームし、強力な [results](/handbook/values/#results) を達成するために働いています。私たちはプロセスと運営において [efficiency](/handbook/values/#efficiency) を優先します。私たちは、[transparent](/handbook/values/#transparency) な、クロスファンクショナルな [collaboration](/handbook/values/#collaboration) によって成功します。私たちは [diversity](/handbook/values/#diversity-inclusion) を採用し、祝福することにコミットしており、すべての人にとって [inclusiveness and belonging](/handbook/values/#diversity-inclusion) の環境を作るよう努力しています。そして、私たちは常に改善できることを理解し、[イテレーション](/handbook/values/#iteration) の精神を受け入れます。
 
-### セールステックスタック
+### Sales Tech Stack
 
-GitLab のテックスタックに関する情報については、Business Operations ハンドブックの [Tech Stack Applications page](/handbook/business-technology/tech-stack-applications/#tech-stack-applications) をご覧ください。ここでは、誰がどのツールにアクセスする必要があるか、質問の連絡先となる各ツールの指定オーナーのクイックリファレンステーブルを管理しています。テックスタックを構成するツールの完全なリストを表示するには、[Tech Stack Details page](/handbook/business-technology/tech-stack/) をご覧ください。
+GitLab の Tech Stack に関する情報については、Business Operations ハンドブックの [Tech Stack Applications page](/handbook/business-technology/tech-stack-applications/#tech-stack-applications) をご覧ください。ここでは、誰がどのツールにアクセスする必要があるか、質問の連絡先となる各ツールの指定オーナーのクイックリファレンステーブルを管理しています。Tech Stack を構成するツールの完全なリストを表示するには、[Tech Stack Details page](/handbook/business-technology/tech-stack/) をご覧ください。
 
 ### チームとのコラボレーション
 
@@ -154,7 +154,7 @@ Business Development Represenative (BDR) - アウトバウンドリードに焦�
    1. BDR と SDR は、セールス開発のベストプラクティスを使用して「at bat」ミーティングを設定する。
    1. ターゲットアカウント内でのブランド認知度を高める。
 
-詳細については、ハンドブックの [Sales Development ページ](/handbook/marketing/sales-development/#sdr-expectations) をご覧ください。
+詳細については、ハンドブックの [Sales Development ページ](/handbook/sales/sales-development/) をご覧ください。
 
 #### Support
 

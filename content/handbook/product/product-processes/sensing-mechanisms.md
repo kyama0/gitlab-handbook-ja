@@ -1,11 +1,11 @@
 ---
 title: センシングメカニズム
 upstream_path: /handbook/product/product-processes/sensing-mechanisms/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-17T06:29:12+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:42-03:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## センシングメカニズムとは？
@@ -41,13 +41,13 @@ lastmod: "2026-07-16T17:32:42-03:00"
 
 ### マーケット
 
-1. [競合](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/competitive-intelligence/) および [市場評価](/handbook/product/product-processes/#analyst-engagement) を維持する。GitLab の Orit Golowinski の Product League でのプロダクトマネージャー向け競合分析を議論したこの [素晴らしい動画](https://www.youtube.com/watch?v=Um9teDD6jt8&feature=youtu.be&t=300) をご覧ください。
+1. [競合](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/) および [市場評価](/handbook/product/product-processes/#analyst-engagement) を維持する。GitLab の Orit Golowinski の Product League でのプロダクトマネージャー向け競合分析を議論したこの [素晴らしい動画](https://www.youtube.com/watch?v=Um9teDD6jt8&feature=youtu.be&t=300) をご覧ください。
 1. カテゴリエピックの欠落している [機能](https://about.gitlab.com/features/)（競合状況セクション）をモニターし、維持する
 1. 所有するカテゴリの [方向性](https://about.gitlab.com/direction/) ページをモニターし、維持する
 1. 競合のブログを購読して、彼らが何をリリースしているかを認識することがここで役立ちます
-1. 関連する [アナリストレポート](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/#accessing-analyst-reports) をレビューする
+1. 関連する [アナリストレポート](/handbook/marketing/corporate-communications/analyst-relations/#accessing-analyst-reports) をレビューする
 1. [競合と市場のコンテンツレビュー](https://gitlab.com/gitlab-com/Product/-/blob/main/.gitlab/issue_templates/Product-Competitive-Content.md) のハイライトを消費する
-1. 関連する [アナリストレポート](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/#accessing-analyst-reports) をレビューする
+1. 関連する [アナリストレポート](/handbook/marketing/corporate-communications/analyst-relations/#accessing-analyst-reports) をレビューする
 1. アナリストと会い、セクションとステージの方向性とビジョンを確認する
 1. 競合のウィンとロスに定期的に注意を払う
 

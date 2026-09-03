@@ -2,11 +2,11 @@
 title: "Dovetailでリサーチインサイトを文書化する"
 description: "GitLab UXリサーチチームのDovetailでのインサイト文書化ガイド"
 upstream_path: /handbook/product/ux/dovetail/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-29T23:22:04Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T05:53:28-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 UXリサーチチームは、GitLabのUXリサーチプログラムを通じて発見されたすべてのリサーチインサイトを文書化するために [Dovetail](https://dovetailapp.com/) を使用しています。リサーチインサイトは、ユーザー[インタビュー](/handbook/upstream-studios/experience-research/facilitating-user-interviews/)、[ユーザビリティテスト](/handbook/upstream-studios/experience-research/usability-testing/)、サーベイ、カードソート、ツリーテスト、顧客との会話などの手法を通じて収集できます。
@@ -106,7 +106,7 @@ GitLab Global Tagsは6つのカテゴリーに整理されています。
 | User Feedback | リサーチセッション中にユーザーが言ったことを記述するのに有用。<br>また、汎用オプション（AからD）を持つタグのセットがあり、[解決策検証](/handbook/upstream-studios/experience-research/solution-validation-and-methods/) で使用できます。<br>| ワークフローに必要な機能について話すとき、ユーザーは `feature request` を持っているかもしれません。<br><br>または、デザイン評価でユーザーが `Prefer Option B` する場合もあります。                                            |
 | User Emotion  | これらのタグは、[ユーザビリティテスト](/handbook/upstream-studios/experience-research/usability-testing/) やウォークスルーのように、UIに対するユーザーの態度に関連しています。 | UIを提示されたとき、ユーザーは `overwhelmed` と感じる可能性があります。 |
 | Workflow      | ワークフローでのユーザーの行動を具体的に追跡するために使用できます。<br><br>また、汎用タスク番号（1〜10）を持つタグのサブセットがあり、[ユーザビリティテスト](/handbook/upstream-studios/experience-research/usability-testing/) や [UX Scorecards](/handbook/product/ux/ux-scorecards/#option-b-perform-a-formative-evaluation) で使用できます。| 一連のタスクを終えたが主要な成果物を逃した場合、`unsuccessful end task` タグを使用できます。<br><br>または、ユーザーが `task 1` と `task 2` を終えたタイミングを追跡したい場合があります。|
-| Personas      | 各タグは、私たちの [ユーザーペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#list-of-user-personas) の1つ、またはそれらのペルソナの特性に関連しています。<br><br>特定のペルソナに対応するジョブまたは機能を探すときに、これらのタグを使用してください。| ユーザーが静的スキャナーを設定するとき、`Amy, Application Security Engineer` の可能性があります。<br><br>または、ユーザーの組織について [基礎研究](/handbook/upstream-studios/experience-research/foundational-research/) を行う場合は、`enterprise` や `start-up` タグを使用できます。 |
+| Personas      | 各タグは、私たちの [ユーザーペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#list-of-user-personas) の1つ、またはそれらのペルソナの特性に関連しています。<br><br>特定のペルソナに対応するジョブまたは機能を探すときに、これらのタグを使用してください。| ユーザーが静的スキャナーを設定するとき、`Amy, Application Security Engineer` の可能性があります。<br><br>または、ユーザーの組織について [基礎研究](/handbook/upstream-studios/experience-research/foundational-research/) を行う場合は、`enterprise` や `start-up` タグを使用できます。 |
 | JTBD          | ほとんどのタグは、[ジョブのマッピング](/handbook/product/ux/jobs-to-be-done/jtbd-playbook/) のさまざまな段階に関連しています。<br><br>[コンテクスチュアル・インクワイアリー](/handbook/upstream-studios/experience-research/problem-validation-and-methods) のような基礎ジョブリサーチを行うときに使用できます。 | コンテクスチュアルを実施するとき、ユーザーはパイプラインの監視について話す可能性があり、これは `Step in Job - monitor` でタグ付けできます。|
 
 #### グローバルタグの定義
@@ -192,22 +192,22 @@ GitLab Global Tagsは6つのカテゴリーに整理されています。
 
 | タグ      | 定義       |
 | ------------- | ------------- |
-| Parker, Product Manager | 参加者の役割やタスクが [Parker](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#parker-product-manager) と一致する。 |
-| Delaney, Development Team Lead | 参加者の役割やタスクが [Delaney](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead) と一致する。 |
-| Presley, Product Designer | 参加者の役割やタスクが [Presley](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#presley-product-designer) と一致する。 |
-| Sasha, Software Developer | 参加者の役割やタスクが [Sasha](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer) と一致する。 |
-| Devon, DevOps Engineer | 参加者の役割やタスクが [Devon](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/devon/) と一致する。 |
-| Sidney, Systems Administrator | 参加者の役割やタスクが [Sidney](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator) と一致する。 |
-| Rachel, Release Manager | 参加者の役割やタスクが [Rachel](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager) と一致する。 |
-| Simone, Software Engineer in Test | 参加者の役割やタスクが [Simone](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#simone-software-engineer-in-test) と一致する。 |
-| Allison, Application Ops | 参加者の役割やタスクが [Allison](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#allison-application-ops) と一致する。 |
-| Ingrid, Infrastructure Operator | 参加者の役割やタスクが [Ingrid](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#ingrid-infrastructure-operator) と一致する。 |
-| Dakota, Application Development Director | 参加者の役割やタスクが [Dakota](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#dakota-application-development-director) と一致する。 |
-| Amy, Application Security Engineer | 参加者の役割やタスクが [Amy](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#amy-application-security-engineer) と一致する。 |
-| Isaac, Infrastructure Security Engineer | 参加者の役割やタスクが [Isaac](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#isaac-infrastructure-security-engineer) と一致する。 |
-| Alex, Security Operations Engineer | 参加者の役割やタスクが [Alex](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#alex-security-operations-engineer) と一致する。 |
-| Cameron, Compliance Manager | 参加者の役割やタスクが [Cameron](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#cameron-compliance-manager) と一致する。 |
-| New or unknown persona | [ハンドブック](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) で以前に特定していないユーザーペルソナ。 |
+| Parker, Product Manager | 参加者の役割やタスクが [Parker](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#parker-product-manager) と一致する。 |
+| Delaney, Development Team Lead | 参加者の役割やタスクが [Delaney](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#delaney-development-team-lead) と一致する。 |
+| Presley, Product Designer | 参加者の役割やタスクが [Presley](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#presley-product-designer) と一致する。 |
+| Sasha, Software Developer | 参加者の役割やタスクが [Sasha](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer) と一致する。 |
+| Devon, DevOps Engineer | 参加者の役割やタスクが [Devon](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/devon/) と一致する。 |
+| Sidney, Systems Administrator | 参加者の役割やタスクが [Sidney](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator) と一致する。 |
+| Rachel, Release Manager | 参加者の役割やタスクが [Rachel](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager) と一致する。 |
+| Simone, Software Engineer in Test | 参加者の役割やタスクが [Simone](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#simone-software-engineer-in-test) と一致する。 |
+| Allison, Application Ops | 参加者の役割やタスクが [Allison](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#allison-application-ops) と一致する。 |
+| Ingrid, Infrastructure Operator | 参加者の役割やタスクが [Ingrid](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#ingrid-infrastructure-operator) と一致する。 |
+| Dakota, Application Development Director | 参加者の役割やタスクが [Dakota](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#dakota-application-development-director) と一致する。 |
+| Amy, Application Security Engineer | 参加者の役割やタスクが [Amy](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#amy-application-security-engineer) と一致する。 |
+| Isaac, Infrastructure Security Engineer | 参加者の役割やタスクが [Isaac](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#isaac-infrastructure-security-engineer) と一致する。 |
+| Alex, Security Operations Engineer | 参加者の役割やタスクが [Alex](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#alex-security-operations-engineer) と一致する。 |
+| Cameron, Compliance Manager | 参加者の役割やタスクが [Cameron](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#cameron-compliance-manager) と一致する。 |
+| New or unknown persona | [ハンドブック](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/) で以前に特定していないユーザーペルソナ。 |
 | Buyer personas | 組織内で主要な購買者として機能するユーザー、またはエンタープライズ内で購買会話を推進するチャンピオン。 |
 | Team leader | マネジメント職にあり、直属の部下がいるユーザー。 |
 | C-Suite Executive | 組織内の高位幹部であるユーザー（CEO、CIO、CFO等）。 |

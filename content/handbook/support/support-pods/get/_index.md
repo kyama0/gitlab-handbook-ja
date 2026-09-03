@@ -2,11 +2,11 @@
 title: GET サポート Pod
 description: GitLab Environment Toolkit (GET) と GitLab Performance Toolkit (GPT) のためのサポート Pod です。
 upstream_path: /handbook/support/support-pods/get/
-upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: claude
 stale: false
-lastmod: "2024-08-15T15:04:43+00:00"
+lastmod: "2026-08-28T10:29:09-04:00"
 ---
 
 ## 目的
@@ -28,10 +28,6 @@ GitLab Environment Toolkit (GET) と GitLab Performance Toolkit (GPT) のため�
 ## サポート Pod のメンバー
 
 - リード: {{< member-by-name "Lewis Brown" >}} (`@lwbrown`)
-- {{< member-by-name "Jessie Lee" >}} (`@jessie`)
-- {{< member-by-name "Mario Mora" >}} (`@mmora`)
-- {{< member-by-name "Keelan Lang" >}} (`@klang`)
-- {{< member-by-name "Wade Jenkins" >}} (`@wwjenkins`)
 - {{< member-by-name "Ryan Castro" >}} (`@rcastro6`)
 
 ## コラボレーションチャネル

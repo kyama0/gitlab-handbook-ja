@@ -2,11 +2,11 @@
 title: "CI ワークショップ"
 Description: "継続的インテグレーションの深掘りワークショップを主導する CSM 向けのガイダンス"
 upstream_path: /handbook/customer-success/workshops/ci-workshop/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 - [CI ワークショップの概要](#ci-workshop-overview)
@@ -21,7 +21,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - 顧客の経験レベルや関心領域に最適な「Basic」または「Advanced」CI ワークショップのデックを選択する
 - [Collaboration Project Issue Template](#collaboration-project-issue-template) を使用して顧客に提案する
 - [Zoom ミーティング](#how-to-get-started) を顧客登録付きで作成し、関心のあるパーティとのフォローアップ連絡を促進する（潜在的に関係を広げたり深めたりする）
-- 適切な [ディスカバリー質問](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/#discovery-questions) を尋ねる
+- 適切な [ディスカバリー質問](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/#discovery-questions) を尋ねる
 - フォローアップアクションを推進する
 
 このワークショップは、「ハンズオンキーボード」のデモ体験を提供することを目的とは *していません*。
@@ -63,5 +63,5 @@ Advanced ワークショップで事前録画コンテンツを活用したい�
 
 ## ディスカバリー質問 {#discovery-questions}
 
-セッション前に Strategic Marketing のユースケース中心の [ディスカバリー質問](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/#discovery-questions) のリストを確認することを強く推奨します。
+セッション前に Strategic Marketing のユースケース中心の [ディスカバリー質問](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/#discovery-questions) のリストを確認することを強く推奨します。
 自己紹介とワークショップの紹介を行う際、参加チーム、個人が持つ役割についてのディスカバリー質問をし、現在の目標や課題についてコメントを促すことが役立ちます。

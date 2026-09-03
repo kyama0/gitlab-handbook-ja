@@ -2,11 +2,11 @@
 title: プロダクトステージリソースのクラッシュコース
 description: 各プロダクトステージの最も重要な Product Analytics 関連リソースの概要
 upstream_path: /handbook/product/groups/product-analysis/crash-course/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-01-23T15:08:44-08:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## このページの目的
@@ -32,7 +32,7 @@ lastmod: "2026-01-23T15:08:44-08:00"
 
 - [Centralized Metrics](https://10az.online.tableau.com/#/site/gitlab/workbooks/2069845/views): GitLab プロダクト使用メトリクスの主要レポーティングダッシュボード。
 
-- [Technical Marketing ハンドブックページ](/handbook/marketing/developer-relations/technical-marketing/) は、プロダクトデモ、ウェビナー、リリースビデオへのリンクを含んでいます。
+- [Technical Marketing ハンドブックページ](/handbook/marketing/product-and-technical-marketing/) は、プロダクトデモ、ウェビナー、リリースビデオへのリンクを含んでいます。
 
 - GitLab の会計年度は2月1日から1月31日まで実行されます。GitLab の会計四半期から月へのマップは [こちら](/handbook/finance/#fiscal-year) のリンクです。
 
@@ -470,7 +470,7 @@ Enablement::Systems は比較的新しいステージです。PDI は有用な�
 
 ### Growth Section
 
-[Growth Section](/handbook/marketing/growth/) は Marketing & Strategy 部門内に位置しますが、Growth Section は私たちのオーナーシップ領域内のトピックについて、Product Data Insights からの専用のサポートを受けています。
+[Growth Section](/handbook/marketing/growth-marketing/) は Marketing & Strategy 部門内に位置しますが、Growth Section は私たちのオーナーシップ領域内のトピックについて、Product Data Insights からの専用のサポートを受けています。
 
 #### Growth Stage (Acquisition, Activation Groups)
 
@@ -503,7 +503,7 @@ Growth は、無料およびトライアル登録と新規ユーザーオンボ�
 
 **プロダクトロードマップへのリンク**
 
-[Growth Direction ハンドブックページ](/handbook/marketing/growth/)
+[Growth Direction ハンドブックページ](/handbook/marketing/growth-marketing/)
 
 **パフォーマンス指標**
 
@@ -517,7 +517,7 @@ Growth は、無料およびトライアル登録と新規ユーザーオンボ�
 
 [Engineering 全体の Growth Section ハンドブックページ](/handbook/engineering/development/growth/)
 
-[Growth Direction ページ](/handbook/marketing/growth/)
+[Growth Direction ページ](/handbook/marketing/growth-marketing/)
 
 **Slack チャンネル**
 

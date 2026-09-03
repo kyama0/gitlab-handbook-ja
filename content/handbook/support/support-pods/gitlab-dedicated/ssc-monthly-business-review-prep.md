@@ -2,11 +2,11 @@
 title: GitLab Dedicated 月次ビジネスレビュー準備
 description: GitLab Dedicated Support Stable Counterpart がサポート部門の月次ビジネスレビューに向けた準備を行えるようにします。
 upstream_path: /handbook/support/support-pods/gitlab-dedicated/ssc-monthly-business-review-prep/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T06:52:01+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-29T12:39:09-04:00"
+lastmod: "2026-08-27T16:09:49-04:00"
 ---
 
 毎月、Support Stable Counterpart（SSC）は GitLab サポートの月次ビジネスレビュー（MBR）で利用する情報を準備します。このハンドブックページでは、GitLab Dedicated SSC が任意の MBR 向けに GitLab Dedicated に関するメモを準備するためにどのような手順を踏むべきかをドキュメント化しています。GitLab Dedicated SSC であれば誰でも MBR の調整を主導できます。
@@ -22,7 +22,7 @@ lastmod: "2026-07-29T12:39:09-04:00"
 
 各 MBR には他の情報源からの情報も含まれる場合があります。
 
-私たちは GitLab Dedicated（商用）と GitLab Dedicated for Government についてレポートします。GitLab Dedicated for Government に関する具体的なデータを取得するには、Brie または Wade と連携する必要があります。それらの領域は明示的に注記されています。
+私たちは GitLab Dedicated（商用）と GitLab Dedicated for Government についてレポートします。GitLab Dedicated for Government に関する具体的なデータが必要な場合は、`#spt_us-government` でチームに問い合わせてください。それらの領域は明示的に注記されています。
 
 ## メトリクスのまとめ方
 
@@ -77,8 +77,6 @@ CompSecGov 上の[該当プロジェクト](https://compsecgov.gitlab-dedicated.
 #### GitLab Dedicated for Government
 
 [Incident Management - GitLab Dedicated for U.S. Gov CMOC](https://gitlab.pagerduty.com/service-directory/PQRVHA8) サービスを使用し、集計期間内の **Resolved Incidents** の数を数えてください。
-
-執筆時点では、Wade と Brie だけがこの情報を取得できる GitLab Dedicated SSC です。（U.S. Government Support チームの他のメンバーが手伝うことができます。）
 
 ## 取り扱う領域
 

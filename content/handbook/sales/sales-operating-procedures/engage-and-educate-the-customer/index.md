@@ -2,11 +2,11 @@
 title: 顧客とのエンゲージと教育
 description: 顧客をエンゲージし教育するための GitLab セールスプロセス
 upstream_path: /handbook/sales/sales-operating-procedures/engage-and-educate-the-customer/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-28T11:19:46-04:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 セールス担当者としてのゴールは、年間 **[ARR](/handbook/sales/sales-term-glossary/)** クォータの 2.5〜3 倍を構築することです。このゴールを達成する能力は、**Moments That Matter (MTM)** を作り出す能力にかかっています。これは、皆さんと製品が顧客の組織にもたらす価値について、ポジティブな感情的影響を与える顧客とのインタラクションです。**顧客とのエンゲージと教育** の能力は、ポジティブな Moments That Matter を作り出すための基本です。
@@ -120,7 +120,7 @@ lastmod: "2026-04-28T11:19:46-04:00"
 
 この時点で、選択されたエンゲージメント活動は大量のリードを生み出しているはずです。これらのリードをふるいにかけて、どれが商談になる可能性があるかを判断する時です。これには初期の認定ミーティングが必要で、そのミーティングのために皆さんが行う準備の質は、ディールを獲得するか失うかの違いを意味します。成功するミーティングを準備して実行するために必要なステップは以下のとおりです。
 
-1. <b>[バイヤーペルソナを判断する](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/)</b> - バイヤーペルソナは主要な買い手の架空表現です。これにより、買い手にとって重要な障害、反対、イニシアチブ、メトリクスを事前に特定できます。このステップは、競合よりも顧客をよりよく理解する優位性を与えてくれます。一般的に出会う可能性のあるバイヤーペルソナは 5 つあります。
+1. <b>[バイヤーペルソナを判断する](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/)</b> - バイヤーペルソナは主要な買い手の架空表現です。これにより、買い手にとって重要な障害、反対、イニシアチブ、メトリクスを事前に特定できます。このステップは、競合よりも顧客をよりよく理解する優位性を与えてくれます。一般的に出会う可能性のあるバイヤーペルソナは 5 つあります。
     - テクノロジーリーダー
     - ビジネスアプリケーションリーダー
     - セキュリティリーダー
@@ -200,7 +200,7 @@ lastmod: "2026-04-28T11:19:46-04:00"
     2. インバウンドリードに応答する応答時間を設定します。
     3. 1 ヶ月にわたって分散されたリードあたりのタッチ数を設定します。
     4. リードが受け取る Email、電話、ソーシャルメディアタッチの数と種類を設定します。
-    5. リードが受け取るすべてのタッチには、**[Use Case GTM Bill of Material Priorities](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/)** マトリックスからの新しい情報またはリソースを含めるべきです。
+    5. リードが受け取るすべてのタッチには、**[Use Case GTM Bill of Material Priorities](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/)** マトリックスからの新しい情報またはリソースを含めるべきです。
 
 ### 予測
 

@@ -3,11 +3,11 @@ title: Digital Experience ハンドブック
 description: >-
   このハンドブックでは、Digital Experience のパーパス、ビジョン、ミッション、目標などについて学べます。
 upstream_path: /handbook/marketing/digital-experience/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T12:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-20T09:32:02-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
@@ -359,8 +359,8 @@ YouTube で私たちのチームの活動を見られます！
 
 1. **コンテンツの変更、更新、またはコンテンツの移動**。これらは [リポジトリ](https://gitlab.com/gitlab-com/marketing/digital-experience/about-gitlab-com) でページを編集するか、about.gitlab.com の任意のページの下部にある「Edit this page」をクリックして自分で行えます:
    1. 新規または更新ページをリクエストする場合、Issue を提出してください（/handbook/marketing/digital-experience/#issue-template-to-submit-an-idea-to-drive-our-business-goals）
-2. **コンテンツの作成**。このニーズには、優れた [Global Content チーム](/handbook/marketing/brand-and-product-marketing/content/) と協業できます。
-3. **ブランド資産、カスタムグラフィック、イラストの作成**。私たちの [Brand デザインチーム](/handbook/marketing/brand-and-product-marketing/design/) はこれが非常に得意なので、ぜひ彼らの専門性を活用してください。
+2. **コンテンツの作成**。このニーズには、優れた [Global Content チーム](/handbook/marketing/product-and-technical-marketing/content/) と協業できます。
+3. **ブランド資産、カスタムグラフィック、イラストの作成**。私たちの [Brand デザインチーム](/handbook/marketing/brand-experience/brand-creative/) はこれが非常に得意なので、ぜひ彼らの専門性を活用してください。
 
 ### ビジネス目標達成のためのアイデアを提出する Issue テンプレート
 

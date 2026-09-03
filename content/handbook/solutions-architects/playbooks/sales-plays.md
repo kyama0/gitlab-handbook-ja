@@ -2,11 +2,11 @@
 title: ソリューションアーキテクト Sales Plays
 description: "GitLab ソリューションアーキテクトの Sales Plays プラクティスを紹介します"
 upstream_path: /handbook/solutions-architects/playbooks/sales-plays/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 新規アカウントおよびチーム（既存顧客）獲得のための Sales Plays
@@ -64,8 +64,8 @@ SA は、アカウントのステータス（プリセールスとポストセ�
 1. SAE/SDR は、顧客が担当地域の見極めリストに載っていることを確認してください。
 1. 見極めの段階で、以下に挙げる資料を使って顧客のペインポイントとカスタマープロファイルを必ず特定してください。
     1. 顧客のニーズ、将来像、必要な機能をより深く理解するための[質問](/handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate/#engaging-the-customer)
-    1. 顧客向けプレゼンテーションと GTM ユースケースの[リンクはこちら](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/)
-    1. GitLab Protect/Secure 向けの[ディスカバリー質問](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions)
+    1. 顧客向けプレゼンテーションと GTM ユースケースの[リンクはこちら](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/)
+    1. GitLab Protect/Secure 向けの[ディスカバリー質問](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions)
     1. 見込み顧客／顧客から想定される[反論](/handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate/#objection-handling)
 1. GitLab の価値をどうポジショニングするか、なぜ GitLab がより優れているかは[こちら](/handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate/#positioning-value)を確認してください
 
@@ -85,9 +85,9 @@ SA は、アカウントのステータス（プリセールスとポストセ�
 1. ペインポイントを特定するため、カスタマープロファイルに基づいてディスカバリー質問のリストを選択し作成
     1. 一般的なディスカバリー質問および以下のリソースを通じてペインポイントを発見:
     1. SA の技術的ディスカバリー質問集
-    1. 市場[要件](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#market-requirements-in-priority-order)
+    1. 市場[要件](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#market-requirements-in-priority-order)
     1. [こちら](/handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate/#value-discovery)から、価値ディスカバリーのペイン、ベネフィット、必要な機能のうち該当するものを選択
-    1. 現在 Secure/Protect を利用していない顧客向けの、特定エントリポイント[を強調した](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions)ディスカバリー質問
+    1. 現在 Secure/Protect を利用していない顧客向けの、特定エントリポイント[を強調した](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions)ディスカバリー質問
     1. ミーティング前に、見込み顧客／顧客から想定される[反論](/handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate/#objection-handling)を確認してください
 1. セキュリティのハイレベル DRI を特定しアクセスを獲得
 1. 以下の資料を用いて、より上位のイニシアチブのためにハイレベルなエグゼクティブを特定しアクセスを獲得
@@ -110,9 +110,9 @@ SA および SAE
 1. ペインポイントを特定するため、カスタマープロファイルに基づいてディスカバリー質問のリストを選択し作成
     1. 一般的なディスカバリー質問および以下のリソースを通じてペインポイントを発見:
     1. SA の技術的ディスカバリー[質問集](https://docs.google.com/document/d/1GZnbqE_rtGFRAJxoeje4mtFyP1AfpLLueESijXgikm4/edit#heading=h.4b6ktib5prk9)
-    1. 市場[要件](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#market-requirements-in-priority-order)
+    1. 市場[要件](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#market-requirements-in-priority-order)
     1. [こちら](/handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate/#value-discovery)から、価値ディスカバリーのペイン、ベネフィット、必要な機能のうち該当するものを選択
-    1. 現在 Secure/Protect を利用していない顧客向けの、特定エントリポイント[を強調した](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions)ディスカバリー質問
+    1. 現在 Secure/Protect を利用していない顧客向けの、特定エントリポイント[を強調した](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions)ディスカバリー質問
     1. ミーティング前に、見込み顧客／顧客から想定される[反論](/handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate/#objection-handling)を確認してください
     1. 顧客が既に Premium を利用している場合は、この [sales play](/handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate/#meetings-to-get-to-value-alignment) 全体をすべて確認してください
 1. セキュリティのハイレベル DRI を特定しアクセスを獲得
@@ -136,10 +136,10 @@ SA および SAE
 1. ミーティング前に、どの play を実行するかをセールスチームと戦略を立て、期待される成果に合意してください。技術評価を POV から始めることは推奨しません。
     - Demo/Deck: ビジョンとトランスフォーメーション play。GitLab を全体的に取り扱う傾向があります
     1. [顧客向けスライド](https://docs.google.com/presentation/d/1WHTyUDOMuSVK9uK7hhSIQ_JbeUbo7k5AW3D6WwBReOg/edit)
-    1. [なぜ Ultimate を選ぶのか](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#ultimate)
-    1. [Customer proof point](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#proof-points---customers)
-    1. [GitLab がどのように市場要件を満たすか](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#how-gitlab-meets-the-market-requirements)
-    1. [差別化要因](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#top-differentiators) - 必要なだけ自由に選んでください
+    1. [なぜ Ultimate を選ぶのか](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#ultimate)
+    1. [Customer proof point](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#proof-points---customers)
+    1. [GitLab がどのように市場要件を満たすか](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#how-gitlab-meets-the-market-requirements)
+    1. [差別化要因](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#top-differentiators) - 必要なだけ自由に選んでください
     1. [SA Demo Repo](https://gitlabdemo.com/catalog/libraries/3c68d4b8): これを複数の play に分解する
     1. [Demo catalog](https://gitlab.com/gitlab-com/customer-success/solutions-architecture/demo-catalog)
     1. [End to End TCO planning workshop](https://docs.google.com/spreadsheets/d/1wVghmLv3E_IKs7rz-quc6jtjZW0p-u3h4iSaDqmm1Nc/edit#gid=467701643)、Recording
@@ -150,7 +150,7 @@ SA および SAE
     1. [TCO ワークショップを含む追加情報](https://gitlab.com/gitlab-com/customer-success/tko/nuts-and-bolts-devsecops-motion-feedback)
     - Demo/Deck: 統合 vs 競合 play
     1. [Compete : Argo CD/TeamCity](https://gitlabdemo.com/catalog/libraries/categories/ac509772)
-    1. [競合に対する GitLab の優位性](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#competitive-comparison)
+    1. [競合に対する GitLab の優位性](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#competitive-comparison)
 
 **期待される成果**
 
@@ -170,7 +170,7 @@ SA および SAE
 - [GitLab Ultimate 固有の機能と価値ハンドブックページ](https://about.gitlab.com/pricing/ultimate/#ultimate-specific-features)
 - [SKO Expanding to Ultimate スライドデック](https://docs.google.com/presentation/d/1oq7ODy9TJpuZqH_tvVtCm2t-C0QkTbuG4ZRlRzRNcUY/edit#slide=id.gb4749ff26b_0_85)
 - [Why GitLab Ultimate スライドデック](https://docs.google.com/presentation/d/1TP5cXH5Nr0VkH7mE6M_-DFXT_Jnq7o5LPxuMUz2paI4/edit?usp=sharing)
-- [DevSecOps の販売リソースページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#ultimate)
+- [DevSecOps の販売リソースページ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#ultimate)
 - セキュリティ販売（リンク必要）John Blevin のオンラインクラスルーム資料を参照
 - New Gartner MQ for Plan（5 月予定）
 - Gartner MQ for AST（2021 年 5 月予定）

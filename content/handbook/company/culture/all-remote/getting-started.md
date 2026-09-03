@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/getting-started/"
-upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
-translated_at: "2026-08-15T06:54:56+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-08-14T11:43:03-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 このページでは、新しいリモートの役割を始める際の考慮事項とヒントについて詳しく説明します。
@@ -25,7 +25,7 @@ lastmod: "2026-08-14T11:43:03-05:00"
 
 リモートワークはすべての人に向いているわけではありません。優れたリモートワーカーになるために、GitLab の[一人のマネージャー](/handbook/values/#managers-of-one)という運営原則を理解してください。
 
-面接中に具体化すべきもう一つの要素は、リモートコミュニケーションです。GitLab は[非同期](asynchronous/)の会社です。私たちが行うことの多くは[テキストを通じてコミュニケーションされます](/handbook/company/culture/all-remote/)。オフィスで働くことに慣れており、口頭コミュニケーションをデフォルトとしている人にとっては、テキストで情報を伝えることに移行するのに少し時間がかかるかもしれません。
+面接中に具体化すべきもう一つの要素は、リモートコミュニケーションです。GitLab は[非同期](/handbook/communication/#asynchronous-communication)の会社です。私たちが行うことの多くは[テキストを通じてコミュニケーションされます](/handbook/company/culture/all-remote/)。オフィスで働くことに慣れており、口頭コミュニケーションをデフォルトとしている人にとっては、テキストで情報を伝えることに移行するのに少し時間がかかるかもしれません。
 
 ## 異なるタイプのオンボーディングに備える
 
@@ -259,7 +259,7 @@ GitLab チームメンバーは、`#mental_health_aware` Slack チャンネル�
 
 リモートワークは大きな柔軟性、自由、自律性を可能にします。また、コミュニケーションに関して適応性を必要とし、チームメンバーが最高の楽しみに達するために実験が必要かもしれません。
 
-新しいリモートワーカーにとっては、同じ場所にいるスペースで使用していた戦術を、自宅やコワーキングスペースから単純に実装したくなることがあります。例えば、誰かの肩を叩いて質問するのではなく、[ドキュメント](/handbook/marketing/technical-writing/#documentation)内で答えを検索することを学ぶことです。
+新しいリモートワーカーにとっては、同じ場所にいるスペースで使用していた戦術を、自宅やコワーキングスペースから単純に実装したくなることがあります。例えば、誰かの肩を叩いて質問するのではなく、[ドキュメント](/handbook/marketing/product-and-technical-marketing/technical-writing/#documentation)内で答えを検索することを学ぶことです。
 
 これは、従業員の認識を含む、より微妙な仕事の側面にも当てはまります。ユニークな場所から働いたり、異なる方法で物事をすることが同じ場所にいるスペースでは推奨されないかもしれませんが、リモートスペースではそのような多様性を祝うことを検討してください。
 

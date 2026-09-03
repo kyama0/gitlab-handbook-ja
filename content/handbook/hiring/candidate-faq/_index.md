@@ -2,11 +2,11 @@
 title: 候補者向けハンドブックページ
 description: "このページでは、GitLabの採用プロセスについて説明します。面接プロセス全体を通じて自信を持てるよう、最新の情報をプロセスと慣行に関してお伝えします。"
 upstream_path: /handbook/hiring/candidate-faq/
-upstream_sha: fe88192cad67a795a237396e552566cb08c118b9
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-24T13:12:58-07:00"
+lastmod: "2026-08-26T16:34:18Z"
 ---
 
 GitLab 候補者向けハンドブックは、最近応募された方や面接プロセスを進めている候補者のためのスペースです。すべての求職者が、私たちの仕事内容、文化・価値観、採用プロセスで何が待ち受けているかについて、より深く学ぶ時間を取ることをお勧めします。
@@ -58,10 +58,6 @@ GitLab は均等雇用機会の職場であることを誇りとし、積極的�
 {{% /details %}}
 
 
-
-{{% details summary="勧誘なし" %}}
-GitLab では、リクルーター、採用エージェンシー、ヘッドハンター、またはアウトソーシング組織からの勧誘は受け付けていません。このような機会についてメールをいただいた場合、[こちらの段落へのリンク](#who-can-apply)を[返信](https://gitlab.com/gitlab-com/people-group/talent-acquisition/-/blob/master/Email%20Templates/third%20party%20agency%20response.md)として送信し、連絡リストからの削除を希望している旨をお伝えします。
-{{% /details %}}
 
 
 ### キャリアページで応募しました。次は何ですか？

@@ -2,9 +2,9 @@
 title: "R&D PMO"
 description: R&D PMO は、Engineering、Product、Security の各ドメイン領域を横断して活動する Technical Program Manager のチームです。
 upstream_path: /handbook/product-development/r-and-d-pmo/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-10T17:17:58+00:00
-translated_at: "2026-06-12T21:15:15Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: claude
 stale: false
 ---
@@ -55,7 +55,7 @@ Program Management Org (PMO) は、エンジニアリング組織内に拠点を
 
 | | Product 注力領域 | Engineering 注力領域  | Security 注力領域  |
 |-----------------|-------------|---------------|---------------|
-| ドメイン専門性の領域（主に注力する対象） | エンドツーエンドの機能デリバリーとローンチ（主にクロスファンクショナルな機能開発）、マネタイズ戦略と実行、ロードマップに反映される顧客エンゲージメントプログラム（例: [Advisory and Executive customer programs](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/#executive-advisory-board-eab-program)） | スケーラビリティ、品質、レジリエンスに注力する大規模なエンジニアリング主導のプログラム、専任の信頼性向上とマイグレーション、バグのトリアージ/管理 | セキュリティ脆弱性への対応、セキュリティ態勢の改善に注力する大規模なプログラム、コンプライアンス関連の取り組み |
+| ドメイン専門性の領域（主に注力する対象） | エンドツーエンドの機能デリバリーとローンチ（主にクロスファンクショナルな機能開発）、マネタイズ戦略と実行、ロードマップに反映される顧客エンゲージメントプログラム（例: [Advisory and Executive customer programs](/handbook/marketing/growth-marketing/growth-community-programs/#executive-advisory-board-eab-program)） | スケーラビリティ、品質、レジリエンスに注力する大規模なエンジニアリング主導のプログラム、専任の信頼性向上とマイグレーション、バグのトリアージ/管理 | セキュリティ脆弱性への対応、セキュリティ態勢の改善に注力する大規模なプログラム、コンプライアンス関連の取り組み |
 | 関連しやすい組織横断領域: | Product、Engineering、Marketing、Sales、CS、Security | Product、CS、Security | Engineering、Security、Legal |
 | 要件 | 一般に、技術的・ビジネス的なニーズを理解した上で、技術系企業での経験があることが求められます。これは個々の TPM の注力領域によって異なる場合があります。 | 一般に、エンジニアリングの学位、または技術系の職務での経験が求められます。これは個々の TPM の注力領域によって異なる場合があります。 | 一般に、セキュリティとコンプライアンスのドメインを理解した上で、技術系企業での経験があることが求められます。これは個々の TPM の注力領域によって異なる場合があります。 |
 

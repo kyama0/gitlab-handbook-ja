@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/what-not-to-do/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-03-18T15:39:47+00:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 [コロナウイルス（COVID-19）](https://www.cdc.gov/covid/index.html) に関するグローバルな問題、都市部における家賃の高騰、そして優秀な人材の獲得・維持をめぐる組織間の競争を背景に、リモートワークへの関心が高まっています。これまでリモートワークに否定的だった企業が、さまざまな程度の意図性を持って突然リモートを検討・導入するようになっています。
@@ -36,7 +36,7 @@ GitLab は **[リモートで優れた成果を上げるための包括的なガ
 1. [インフォーマルなコミュニケーション](informal-communication/)
 1. [カルチャーの構築](building-culture/)
 1. [燃え尽き症候群・孤立感・不安への対処](mental-health/)
-1. [非同期ワークフローの採用](asynchronous/)
+1. [非同期ワークフローの採用](/handbook/communication/#asynchronous-communication)
 1. [リモートワークスペース](guide/#workspace)
 1. [リモートな役割での始め方](getting-started/)
 
@@ -48,7 +48,7 @@ GitLab は **[リモートで優れた成果を上げるための包括的なガ
 
 リモートワークは、単に会社のオフィスではなく自宅のオフィスで行う従来の仕事ではありません。リモートワークを個人的に経験していない人にとっては、オフィスワークとリモートワークの核心的な（あるいは唯一の）違いは場所（オフィス内 vs. オフィス外）だと思い込む傾向があります。これは不正確であり、認識されなければリモートワーク全体の実践に悪影響を与えかねません。
 
-リモートワークの原則は異なります。業務の進め方も異なります。多階建てのオフィスビルがエレベーターや電話を必要としたように、リモートで働くチームは [非同期コミュニケーション](asynchronous/) を可能にする[ツール](handbook-first/#tools-for-building-a-handbook)（GitLab、Figma など）を積極的に活用し、[ミーティング](meetings/) や [インフォーマルコミュニケーション](informal-communication/) などについての従来の考え方を見直すべきです。
+リモートワークの原則は異なります。業務の進め方も異なります。多階建てのオフィスビルがエレベーターや電話を必要としたように、リモートで働くチームは [非同期コミュニケーション](/handbook/communication/#asynchronous-communication) を可能にする[ツール](handbook-first/#tools-for-building-a-handbook)（GitLab、Figma など）を積極的に活用し、[ミーティング](meetings/) や [インフォーマルコミュニケーション](informal-communication/) などについての従来の考え方を見直すべきです。
 
 ## すべての対面ミーティングをバーチャルに転換しないこと
 
@@ -72,17 +72,17 @@ GitLab は **[リモートで優れた成果を上げるための包括的なガ
 
 ## こうすべき、ああすべきではない
 
-コロケーションの慣行と最も近い対応するリモートの推奨事項を比較した例を参考にする方もいるでしょう。多くの提案が [非同期](asynchronous/) ワークフロー、[透明性](/handbook/values/#transparency)、[ハンドブックファースト](handbook-first/) にリンクしていることにお気づきになるでしょう。これらはリモートを上手く機能させるための礎です。
+コロケーションの慣行と最も近い対応するリモートの推奨事項を比較した例を参考にする方もいるでしょう。多くの提案が [非同期](/handbook/communication/#asynchronous-communication) ワークフロー、[透明性](/handbook/values/#transparency)、[ハンドブックファースト](handbook-first/) にリンクしていることにお気づきになるでしょう。これらはリモートを上手く機能させるための礎です。
 
 これらのすべての提案はリモートに限ったものではないことに注意してください。オフィスを維持するつもりの企業や[ハイブリッドリモート企業](/handbook/company/culture/all-remote/)への移行を検討している企業であっても、[リモートファーストの技術](/handbook/company/culture/all-remote/)を実装することで、すべての従業員が対等なメンバーとして扱われ、チームの[五つの機能不全](/handbook/values/#five-dysfunctions)を回避できます。
 
 - メールや Slack メッセージを送る <> [透明性のある非同期コミュニケーションツール](handbook-first/#tools-for-building-a-handbook)を活用する
-- ミーティングを設定する <> [非同期](asynchronous/)でコミュニケーションを取る
+- ミーティングを設定する <> [非同期](/handbook/communication/#asynchronous-communication)でコミュニケーションを取る
 - 共有スペースに幹部を集める <> [幹部チームをオフィスから出す](/handbook/company/culture/all-remote/)ことでリモートへのコミットメントを示す
 - 大きなプロジェクトに取り組む <> 議論を[最小限の実行可能な部分](/handbook/values/#iteration)に分解する
 - 一方通行の意思決定に対して合意を集める <> 意思決定を反復・撤回可能な一連の小さな[双方向の意思決定](/handbook/values/#make-two-way-door-decisions)に分解する
 - 口頭でアップデートを共有する <> [ローコンテキスト](/handbook/communication/#low-context)な方法で詳細・正確に書き記す
-- 即時の返答を期待する <> [他の全員が眠っている](asynchronous/#4-asynchronous-work-alleviates-stress-and-supports-mental-health)かのようにアプローチし、[判断しない文化](mental-health/#create-a-non-judgemental-culture)を作る
+- 即時の返答を期待する <> [他の全員が眠っている](/handbook/communication/#asynchronous-communication)かのようにアプローチし、[判断しない文化](mental-health/#create-a-non-judgemental-culture)を作る
 
 ## リモートが一夜にして実現すると思い込まないこと
 
@@ -104,7 +104,7 @@ GitLab は **[リモートで優れた成果を上げるための包括的なガ
 
 実際のところ、[リモート企業のマネジメント](/handbook/company/culture/all-remote/)はあらゆる企業のマネジメントに似ています。**信頼、コミュニケーション、そして共有目標への全社的なサポートに行き着きます**。これらすべてが[機能不全の回避](/handbook/values/#five-dysfunctions)に役立ちます。
 
-リモートは、本来[もっと早く・より良く](https://nohq.co/blog/sid-sijbrandij-people-dont-want-to-commute-they-ju/)実行すべきことを強制します。スケールアップにおいて文化と効率性を持続させる規律を強制します。特に、小規模なコロケーション企業では優先度が下がりがちな領域において特にそうです。
+リモートは、本来[もっと早く・より良く](https://nohq.co/blog/sid-sijbrandij-people-dont-want-to-commute-they-ju/)実行すべきことを強制します。[スケールアップにおいて](scaling/)文化と効率性を持続させる規律を強制します。特に、小規模なコロケーション企業では優先度が下がりがちな領域において特にそうです。
 
 チームメンバーが優れたリモートワーク実践を理解していると思い込まないことが重要です。GitLab のマネージャーは[期待されます](/handbook/company/structure/#management-group)：メンバーが[非同期コミュニケーション](/handbook/company/culture/all-remote/)を活用し、[ハンドブックファースト](/handbook/about/handbook-usage/#why-handbook-first)であり、[最適なワークスペース](workspace/)を設計し、[自学自習](/handbook/company/culture/all-remote/)の重要性を理解するようにコーチすることを。
 

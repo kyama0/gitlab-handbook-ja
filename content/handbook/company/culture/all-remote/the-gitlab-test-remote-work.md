@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/company/culture/all-remote/the-gitlab-test-remote-work/
-upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
-translated_at: "2026-06-25T07:39:40+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-24T15:19:10-04:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ![GitLab remote work spectrum illustration](/images/all-remote/spectrum_of_remote_work_gitlab.jpg)
@@ -42,13 +42,13 @@ GitLab は世界最大規模のオールリモート組織のひとつです。�
 
 ### 2. チームメンバーは自分の働く時間を決める権限を与えられていますか？
 
-優れたリモートチームは、厳格な就業時間を定めることなく相互に連携して仕事を進めることができます。大まかに言えば、定められた就業時間があると、[非同期（アシンクロナス）](asynchronous/) に働くほうが効率的であっても同期的なコラボレーションへの安心感が生まれてしまいます。より大きな問題は、同期性への *依存* が暗示されることです。これにより、誰かが決まったシフトで働けない場合に、コラボレーション・調整・反復的な意思決定が停滞するという根本的なリスクが生じます。
+優れたリモートチームは、厳格な就業時間を定めることなく相互に連携して仕事を進めることができます。大まかに言えば、定められた就業時間があると、[非同期（アシンクロナス）](/handbook/communication/#asynchronous-communication)に働くほうが効率的であっても同期的なコラボレーションへの安心感が生まれてしまいます。より大きな問題は、同期性への *依存* が暗示されることです。これにより、誰かが決まったシフトで働けない場合に、コラボレーション・調整・反復的な意思決定が停滞するという根本的なリスクが生じます。
 
 役割やクライアントの都合により定められた就業時間が必要な場面では、優れたリモート組織は冗長性を加えるか文書化を強化し、チームメンバーが可能な限り [非線形の働き方](non-linear-workday/) の恩恵を享受できるようにします。
 
 ### 3. 業務に関するコミュニケーションの大半は非同期で行われていますか？
 
-同期的に作業する [正当な理由](/handbook/company/culture/all-remote/asynchronous/#gitlab-experts-advise-on-when-to-use-sync-vs-async) は存在します。しかし、*業務についての* コミュニケーションは非同期で行うのが最善です。これにはステータスの更新、FYI（情報共有）、プロセスの文書化（例: [疑わしいフィッシングメールをセキュリティチームに報告する方法](/handbook/security/security-assurance/governance/phishing/#what-to-do-if-you-suspect-an-email-is-a-phishing-attack)）が含まれます。*ミーティングのためのミーティング* も同様です。
+同期的に作業する正当な理由は存在します。しかし、*業務についての* コミュニケーションは非同期で行うのが最善です。これにはステータスの更新、FYI（情報共有）、プロセスの文書化（例: [疑わしいフィッシングメールをセキュリティチームに報告する方法](/handbook/security/security-assurance/governance/phishing/#what-to-do-if-you-suspect-an-email-is-a-phishing-attack)）が含まれます。*ミーティングのためのミーティング* も同様です。
 
 これがうまく機能するための前提条件は以下のとおりです。
 

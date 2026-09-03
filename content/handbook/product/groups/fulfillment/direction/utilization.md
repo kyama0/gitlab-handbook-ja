@@ -2,11 +2,11 @@
 title: "Fulfillment: Utilization の方向性"
 description: "Utilization グループは、お客様が消費型リソースの使用状況データ (ストレージ、コンピュート分、転送量) にアクセスできるようにし、ビジネスニーズに最適な意思決定ができるようにすることを目指しています。"
 upstream_path: /handbook/product/groups/fulfillment/direction/utilization/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-27T09:56:28-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## Fulfillment Utilization の概要
@@ -73,7 +73,7 @@ _私たちのビジョン達成と機能成熟度の向上に向けた意義あ�
 | 質問 | 回答 |
 |---------|-------------|
 | Utilization はどんなタイプのお客様にサービスを提供するか? | - SM および SaaS のセルフサービスのお客様 <br>- SM および SaaS のセールス支援のお客様 <br>- SM および SaaS のチャネルパートナーとそのお客様  |
-| Utilization はどんなお客様ペルソナに向けて課題解決をしているか? | 私たちのお客様は [buyer persona](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/) に該当し、会社規模や役割に応じて意思決定および購入プロセスで異なる役割を担うことがあります。   |
-| Utilization はどんなお客様セグメントに注力しているか? | - SMB および中堅企業: [アプリケーション開発マネージャー](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#app-dev-avery) は、チーム全体の使用状況を可視化し、自社の方針/プロセス/予算に合わせて使用状況を制御できる必要がある。 <br> - 大企業またはエンタープライズ企業: [リリースおよび変更管理ディレクター](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#release-rory) は、正確な請求と、使用状況情報に基づいた購入判断ができることに関心がある。 |
+| Utilization はどんなお客様ペルソナに向けて課題解決をしているか? | 私たちのお客様は [buyer persona](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/) に該当し、会社規模や役割に応じて意思決定および購入プロセスで異なる役割を担うことがあります。   |
+| Utilization はどんなお客様セグメントに注力しているか? | - SMB および中堅企業: [アプリケーション開発マネージャー](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#app-dev-avery) は、チーム全体の使用状況を可視化し、自社の方針/プロセス/予算に合わせて使用状況を制御できる必要がある。 <br> - 大企業またはエンタープライズ企業: [リリースおよび変更管理ディレクター](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#release-rory) は、正確な請求と、使用状況情報に基づいた購入判断ができることに関心がある。 |
 | Utilization はどんな社内チームにサービスを提供するか? | - [Support](/handbook/support/) <br>- [Customer Success](/handbook/customer-success/) <br>- [Sales](/handbook/sales/)  |
 |Utilization が責任を負わないことは何か?|Utilization グループは、お客様や管理者向けに適切なレポーティングと可視化を構築する一部として、他のチームが提供する計算結果に依存しています。ただし、Utilization はこれらの基礎データの収集や生の計算には責任を負いません。具体的には、Utilization は以下のような事項に関する正確なデータを提供してもらうために Enablement チームに依存します: <br>1. プロジェクトレベルのストレージ計算 (git repo + git LFS)<br>2. ネームスペースのストレージ計算: git repo、LFS、アーティファクト、コンテナレジストリなど。 <br> 3. コンピュート分 |

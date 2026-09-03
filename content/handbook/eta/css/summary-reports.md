@@ -2,9 +2,9 @@
 title: CSS 概要レポート
 description: CSS 概要レポートのドキュメントとプロセス
 upstream_path: /handbook/eta/css/summary-reports/
-upstream_sha: "ad217b024ba77ae34e6f41cb4a28107135c5dba5"
-lastmod: "2026-07-31T08:53:42-05:00"
-translated_at: "2026-08-01T15:50:15+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+lastmod: "2026-08-17T11:32:51-05:00"
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: codex
 stale: false
 ---
@@ -29,10 +29,10 @@ Issue が作成されたら、[レポートをレビューする](#review-the-re
 
 ### 他のメンバーに通知する {#notify-others}
 
-レポートを生成してレビューしたら、Jeff、Kirsty、Kasey をメンションするコマンドを追加します。
+レポートを生成してレビューしたら、TJ、Jeff、Kirsty、Kasey をメンションするコマンドを追加します。
 
 ```plaintext
-cc @jstone10 @KirstyAllen @ktague
+cc @tjpais @jstone10 @KirstyAllen @ktague
 ```
 
 完了したら、Issue をクローズします。

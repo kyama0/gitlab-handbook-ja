@@ -1,11 +1,11 @@
 ---
 title: GitLab会計年度2023（FY23）ESGレポート
 upstream_path: "/handbook/legal/esg/fy23-esg-report/"
-upstream_sha: "18de125bd3131a62f0a7026bc69c7de124fc6c8a"
-translated_at: "2026-06-20T13:23:21Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-06-16T12:33:40-04:00"
+lastmod: "2026-08-28T11:50:58+02:00"
 ---
 
 ## 最高経営責任者からのメッセージ
@@ -69,20 +69,20 @@ GitLabのESG戦略とプログラム開発を推進する6つの主要トピッ�
 
 GitLabの現在の主要トピックは以下に記載されています:
 
-**Social**
+**社会**
 
-- Talent and Engagement
-- Diversity, Inclusion, and Belonging (DIB)
+- 人材とエンゲージメント
+- 多様性、インクルージョン、帰属意識（DIB）
 
-**Environment**
+**環境**
 
-- Greenhouse Gas Emissions
+- 温室効果ガス排出量
 
-**Governance**
+**ガバナンス**
 
-- Information Security and Data Privacy
-- Responsible Product Development
-- Business Ethics
+- 情報セキュリティとデータプライバシー
+- 責任ある製品開発
+- ビジネス倫理
 
 ### 国連持続可能な開発目標との整合
 
@@ -90,9 +90,9 @@ ESG戦略を開発する中で、私たちは取り組みを [国連持続可能
 
 ![5_SDGs](/images/legal/esg/all_5_icons.png)
 
-## Social
+## 社会
 
-### Talent and Engagement*
+### 人材とエンゲージメント*
 
 (UN SDG #8 and 10)
 
@@ -104,10 +104,10 @@ GitLabの [ミッション](/handbook/company/mission/#mission)、誰もが貢�
 
 私たちの [チームメンバーリレーション哲学](/handbook/people-group/team-member-relations/#team-member-relations-philosophy) には4つの柱があり、各柱は私たちの価値観と整合しています。これらの柱は以下です:
 
-- Collaboration
-- Diversity, Inclusion, and Belonging
-- Results
-- Transparency
+- コラボレーション
+- 多様性、インクルージョン、帰属意識
+- 結果
+- 透明性
 
 これらの柱は一緒に、各チームメンバーの尊厳を保つというGitLabのコミットメントをサポートします。すべてのチームメンバーは、公平さ、尊敬、透明性をもってお互いを扱うことが期待されます。タイトルやレベルに関係なく、すべてのチームメンバー間で直接的で正直なコミュニケーションが強く奨励されます。私たちは、建設的な仕事関係とコミュニケーション、情報共有、問題解決、違いを解決できる安全で中立的なプロセスのための相互責任を奨励します。
 
@@ -138,7 +138,7 @@ GitLabでは、[learning and development](/handbook/people-group/learning-and-de
 
 FY23で、私たちは [82%の参加率](/handbook/people-group/engagement/#fy23-q2-pulse-engagement-survey-results) と全体的に81%の「favorable」エンゲージメントスコアを達成しました。私たちはFY22 Q4 Engagement Survey全体よりも4%低くスコアしましたが、今年のスコアは、それぞれ1,000人以上のチームメンバーがいる約150の急速に成長し破壊的なテクノロジー企業で構成されるNew Techピアグループより8%高いです。したがって、GitLabはスコアの観点から業界リーダーであり続けています。
 
-### Diversity, Inclusion, and Belonging*
+### 多様性、インクルージョン、帰属意識*
 
 (UN SDG #5, 8, and 10)
 
@@ -185,11 +185,11 @@ FY24では、Leadership DIB Councilはいくつかのイニシアチブに焦点
 
 FY24に向けて、私たちはプログラム、メトリクスをイテレートし続け、DIBバリューが誰もが貢献できるようにエンパワーすることを確保します。
 
-### GitLab Community
+### GitLab コミュニティ
 
 (UN SDG #8)
 
-最初から、GitLabは [コミュニティ](/handbook/marketing/developer-relations/community-pathway/#how-community-fits-into-gitlabs-strategy) からの貢献によって可能になった [オープンソースプロジェクト](/handbook/company/stewardship/#:~:text=GitLab%20is%20open%20core%20built,Source%20As%20Part%20Of%20GitLab.) でした。私たちのアクティブな世界中のコミュニティは、決定、変更、オープンソースプロジェクトの全体的な方向性が誰でも見られるように、製品に対する信頼を築くのに役立つGitLabの透明性に基本的でした。
+最初から、GitLabは [コミュニティ](/handbook/marketing/developer-relations/) からの貢献によって可能になった [オープンソースプロジェクト](/handbook/company/stewardship/#:~:text=GitLab%20is%20open%20core%20built,Source%20As%20Part%20Of%20GitLab.) でした。私たちのアクティブな世界中のコミュニティは、決定、変更、オープンソースプロジェクトの全体的な方向性が誰でも見られるように、製品に対する信頼を築くのに役立つGitLabの透明性に基本的でした。
 
 GitLabへの貢献者、プラットフォームと会社は、GitLabコミュニティを構成し、GitLabの戦略とミッションの重要な部分であり、誰もが貢献できるようにします。
 
@@ -205,7 +205,7 @@ GitLabプログラム
 
 - [GitLab for Education](/handbook/marketing/developer-relations/programs/education-program/) プログラムのミッションは、世界中の教育機関でGitLabの採用を促進および推進し、労働力の次世代でGitLabのエバンジェリストと貢献者の関与の高いコミュニティを構築することです。2023年1月時点で、GitLab for Educationプログラムは、65以上の国の1,000以上の教育機関で、GitLabのトップティアサブスクリプションプランの300万以上のシートを持っています。
 - [GitLab for Open Source](https://about.gitlab.com/solutions/open-source/) プログラムは、誰もが貢献できる世界を作るというGitLabのミッションをサポートします。私たちはGitLabをオープンソースプロジェクトが成長し繁栄するのに最適な場所にする手助けをします。
-- [GitLab for Startups](/handbook/sales/high-velocity-sales-fo-team/startups-program/) プログラムは2023年初頭にローンチされ、適格なスタートアップが最大2年間、無料または大幅な割引で当社のトップティアにアクセスするのを助けます。
+- [GitLab for Startups](/handbook/marketing/growth-marketing/growth-community-programs/#gitlab-for-startups-program) プログラムは2023年初頭にローンチされ、適格なスタートアップが最大2年間、無料または大幅な割引で当社のトップティアにアクセスするのを助けます。
 
 *"コミュニティは私たちが誰であり、私たちが何をするかの中核です。私たちのミッションは、これらのコミュニティが誰もが貢献できる世界というGitLabのビジョンを経験するのを助けることです。"*
 -Emilio Salvador, GitLab Developer Relations担当バイスプレジデント
@@ -227,9 +227,9 @@ FoundationはGitLabとそのCEOであるSytse 'Sid' Sijbrandijによって資金
 
 詳細については、[GitLab Foundation](https://www.gitlabfoundation.org/) を訪問してください。
 
-## Environment
+## 環境
 
-### Climate Action and Greenhouse (GHG) Emissions*
+### 気候変動対策と温室効果ガス（GHG）排出量*
 
 (UN SDG #13)
 
@@ -248,7 +248,7 @@ GitLabは、会社所有施設からの直接排出または直接エネルギ�
 
 ([GitLab Impact Report, Pachama](https://app.pachama.com/impact/a38abb85-0e3e-4543-86b6-4e8dfa13693e), 2023年7月時点のデータ)
 
-## Governance
+## ガバナンス
 
 ### コーポレートガバナンス
 
@@ -271,7 +271,7 @@ Boardの責任には以下が含まれます:
 
 GitLabの [Nominating and Corporate Governance Committee](https://ir.gitlab.com/static-files/549b448d-bfd0-47cc-aa47-373121eff49e?_gl=1*bos64y*_ga*MTkyOTUzNTQ4LjE2NjMzNTIxOTY.*_ga_ENFH3X7M5Y*MTY3MjkzMzgxNC4yMDIuMS4xNjcyOTM0NjIyLjAuMC4w) チャーターは、委員会に環境的、社会的、コーポレートガバナンスの事項を含むコーポレートレスポンシビリティとサステナビリティに関するプログラムの監視を任せています。GitLabのSenior Director, ESGは、Chief Legal Officer & Head of Corporate Affairsに週次でレポートし、必要に応じてGitLabのエグゼクティブリーダーシップにレポートします。Nominating and Corporate Governance Committeeは少なくとも年に2回開催され、ESGトピックは必要に応じてこの委員会および完全なBoardと議論されます。
 
-### Information Security and Data Privacy*
+### 情報セキュリティとデータプライバシー*
 
 GitLabでは、セキュリティとプライバシーが顧客と利害関係者にとってどれほど重要かを知っています。GitLabは正式な [Security Assurance](/handbook/security/security-assurance/) 部門を維持しており、さまざまなセキュリティフレームワークと標準へのGitLabのコンプライアンスを監視および報告する責任があります。現在のセキュリティフレームワーク、認定の最新リスト、保証ドキュメントの取得方法については、GitLabの [Trust Center](https://about.gitlab.com/security/) を参照してください。
 
@@ -287,7 +287,7 @@ GitLabは、データ分類レベルを示すために色システムを使用�
 
 過去数年間、GitLabは、情報セキュリティマネジメントシステム（"ISMS"）を確立、実装、維持、継続的に改善するための要件を指定する [ISO/IEC 27001:2013](/handbook/security/security-assurance/security-compliance/certifications/) 認定を保持し続けてきました。最近、GitLabは、ISO 27017:2015クラウドセキュリティ標準、およびISO 27018:2019プライバシー標準を含むISO 27001認定の拡張を受け取りました。
 
-### Responsible Product Development*
+### 責任ある製品開発*
 
 GitLabの [プロダクトミッション](/handbook/product-development/how-we-work/product-development-flow/) は、ユーザーが愛し価値を見出す製品と体験を一貫して作成することです。責任ある製品開発は、このミッションに不可欠です。
 
@@ -332,7 +332,7 @@ GitLabの [プロダクトミッション](/handbook/product-development/how-we-
 
     GitLabは、グループおよびサブグループレベルでのスキャン結果ポリシーの管理をサポートします。これらのポリシーは、グループ内のすべてのプロジェクトに自動的に流れ、適用されます。これにより、多数のプロジェクトを持つ大規模組織のためのポリシーを均一に実施することが容易になります。
 
-### Business Ethics*
+### ビジネス倫理*
 
 GitLabは、法的および倫理的なビジネス行動の最高基準にコミットしています。長く、このコミットメントを強化する文書化された運営原則とポリシーと一致するビジネスを運営してきました。GitLabは、その活動に適用されるすべての法律および政府の規制に準拠し、すべてのチームメンバーが私たちの倫理基準、および法的および規制義務に従うことを期待しています。私たちは、各チームメンバーがGitLabの [ポリシー](/handbook/legal/#gitlab-policies) で説明されている倫理基準を読み、慣れ親しむことを要求します。法律および／または当社のコーポレートポリシーに違反するチームメンバーは、解雇までの懲戒措置の対象となる場合があります。
 

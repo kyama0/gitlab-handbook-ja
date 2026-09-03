@@ -2,11 +2,11 @@
 title: Growth ステージ
 description: "Growth ステージは、プロダクトの機能強化と実験を行う開発チームで構成されています"
 upstream_path: /handbook/engineering/development/growth/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T23:58:47+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: 2026-08-12T10:14:59-04:00
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## ビジョン
@@ -32,7 +32,7 @@ flowchart TD
     ACQ --> MON
 ```
 
-Growth のミッション、方向性、プロダクト戦略の詳細については、[Growth プロダクトハンドブック](/handbook/marketing/growth/) を参照してください。
+Growth のミッション、方向性、プロダクト戦略の詳細については、[Growth プロダクトハンドブック](/handbook/marketing/growth-marketing/) を参照してください。
 
 ## 作業方法 {#how-we-work}
 
@@ -92,7 +92,7 @@ Growth チームは GitLab [実験](/handbook/engineering/development/growth/exp
 
 私たちがどのように、何を取り組んでいるかを確認するための有用なリンク:
 
-- [Growth 方向性](/handbook/marketing/growth/)
+- [Growth 方向性](/handbook/marketing/growth-marketing/)
 - [Growth エピック Kanban ボード](https://gitlab.com/groups/gitlab-org/-/epic_boards/2079888)
 - [開発用 Growth Issue Kanban ボード](https://gitlab.com/groups/gitlab-org/-/boards/1392106?&label_name%5B%5D=devops%3A%3Agrowth)
 - [実験](experimentation/)

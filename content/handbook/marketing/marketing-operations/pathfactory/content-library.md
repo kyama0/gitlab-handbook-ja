@@ -2,11 +2,11 @@
 title: "コンテンツライブラリ"
 description: "コンテンツライブラリは、アップロードされたすべてのアセットを PathFactory に保存しタグ付けする場所です。"
 upstream_path: /handbook/marketing/marketing-operations/pathfactory/content-library/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: claude
 stale: false
-lastmod: "2025-03-07T10:45:14-08:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## コンテンツライブラリ
@@ -18,7 +18,7 @@ lastmod: "2025-03-07T10:45:14-08:00"
 1. 検索を使用して、既に追加されているかどうかを判断します。アセットには異なる URL がある可能性もあるため、徹底的に行ってください。既にライブラリにあるファイルや URL を追加しようとすると、システムから既に存在することが通知されます。たとえば、`https://about.gitlab.com/customers/extra-hop-networks/` と `https://about.gitlab.com/customers/extra-hop-networks` のアップロードは、異なる URL とみなされ、両方ともライブラリにアップロードされます（末尾の `/` に注意）。
 1. アセットの最も価値のあるバージョン（ブログ投稿 vs. ケーススタディまたは PDF）を持っていることを確認してください。
 1. アセットの最新バージョンを持っていることを確認してください。
-1. [ブログスタイルガイド](/handbook/marketing/brand-and-product-marketing/content/editorial-team/) に従ってください。
+1. [ブログスタイルガイド](/handbook/marketing/product-and-technical-marketing/content/editorial-team/) に従ってください。
 
 ### コンテンツのアップロード方法 {#how-to-upload-content}
 
@@ -34,7 +34,7 @@ lastmod: "2025-03-07T10:45:14-08:00"
 1. パブリックタイトルをコピーして、内部タイトルフィールドに貼り付けます。
 1. ファネルステージと推定コストは、先ほど選択したコンテンツタイプに基づいて自動的に設定されます。これらの自動生成されたタグはそのまま残し、強制的に変更しないでください。
 1. アセットの言語を設定します。
-1. [GTM モーション](/handbook/marketing/plan-fy22/#gtm-motions) に基づいて、アセットの Business Unit を選択します。
+1. GTM モーションに基づいて、アセットの Business Unit を選択します。
 1. 存在する場合は、アセットの有効期限を設定します。
 1. External ID は空白のままにします。
 1. アセットを分類する右側のコンテンツトピックを選択します。トピックでコンテンツにタグ付けするときは、[以下のコンテンツタグマップ](#content-types) に従ってください。

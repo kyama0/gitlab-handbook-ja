@@ -2,11 +2,11 @@
 title: Geo サポート Pod
 description:
 upstream_path: /handbook/support/support-pods/geo/
-upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-23T10:00:38+00:00"
+lastmod: "2026-08-28T10:29:09-04:00"
 ---
 
 ## 目的
@@ -27,16 +27,10 @@ Geo のチケットに一緒に取り組む専用のグループを作ります�
 
 - リード: {{< member-by-name "Ronald van Zon" >}} (`@rvzon`)
 - 副リード: {{< member-by-name "Anton Smith" >}} (`@anton`)
-- 副リード: {{< member-by-name "Keelan Lang" >}} (`@klang`)
 - {{< member-by-name "Alexander Strachan" >}} (`@astrachan`)
-- {{< member-by-name "Brie Carranza" >}} (`@bcarranza`)
 - {{< member-by-name "Bo Carbonell" >}} (`@bocarbonell`)
 - {{< member-by-name "Daniel Diniz" >}} (`@dnldnz`)
-- {{< member-by-name "Emily Chang" >}} (`@emchang`)
-- {{< member-by-name "Łukasz Korbasiewicz" >}} (`@lkorbasiewicz`)
 - {{< member-by-name "Mario Mora" >}} (`@mmora`)
-- {{< member-by-name "Harish Ramachandran" >}} (`@harishsr`)
-- {{< member-by-name "Aric Buerer" >}} (`@abuerer`)
 
 ## コラボレーションチャネル
 

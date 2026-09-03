@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/company/culture/all-remote/mental-health/
-upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
-translated_at: "2026-06-25T07:39:40+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-24T15:19:10-04:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 <!-- markdownlint-disable MD013 -->
@@ -129,11 +129,11 @@ GitLab は 2021 年 5 月に John Fitch を 2 回のライブスピーカーシ�
 
 リモートワークには[多くの精神的健康上のメリット](remote-benefits/#benefits-for-all-remote-employees)がありますが、リストの上位にあるものには以下が含まれます：
 
-1. [日常生活](/handbook/company/culture/all-remote/)（[子どもたち](https://about.gitlab.com/blog/2019/07/25/balancing-career-and-baby/)、両親、友人、買い物、スポーツ、配達のための）柔軟性の向上。
+1. [日常生活](/handbook/company/culture/all-remote/)（[子どもたち](https://about.gitlab.com/blog/2019/07/25/balancing-career-and-baby/)、両親、友人、買い物、スポーツ、配達のための）[柔軟性](https://web.archive.org/web/20200606214525/https://shedoesdatathings.com/post/1-year-at-gitlab/)の向上。
 1. [通勤](https://www.inc.com/business-insider/study-reveals-commute-time-impacts-job-satisfaction.html)（地下鉄・バスの料金、ガソリン、車のメンテナンス、通行料など）に費やされる時間と[ストレス](https://www.forbes.com/sites/markeghrari/2016/01/21/a-long-commute-could-be-the-last-thing-your-marriage-needs/)とお金の削減。
 1. [中断ストレス](https://about.gitlab.com/blog/2018/05/17/eliminating-distractions-and-getting-things-done/)の軽減と[生産性](https://www.inc.com/brian-de-haaff/3-ways-remote-workers-outperform-office-workers.html)の向上。
 1. 病気の同僚からの細菌へのさらなる曝露の減少。
-1. [最も生産的なとき](asynchronous/)に基づいて[勤務時間を選択できる](/handbook/company/culture/all-remote/)。
+1. [最も生産的なとき](/handbook/communication/#asynchronous-communication)に基づいて[勤務時間を選択できる](/handbook/company/culture/all-remote/)。
 
 ## リモートワークが精神的健康にもたらす課題とは何か？
 
@@ -174,7 +174,7 @@ GitLab は 2021 年 5 月に John Fitch を 2 回のライブスピーカーシ�
 
 [ドキュメント化](handbook-first/)により、マネージャーが離れて充電中でも、マネージャーの管理の専門知識のかなりの部分を活用できるようになります。この意図的な分散化は、リーダーと直属の部下の両方に対してより大きな平静さを生み出します。
 
-Time Off の共著者であり [Voltage Control](https://voltagecontrol.com) の Chief Product Officer である [John Fitch](https://twitter.com/johnwfitch) は、[The Culture Factor ポッドキャスト](https://the-culture-factor.simplecast.com/episodes/what-if-time-off-created-a-culture-of-productivity-that-surpassed-12-hour-days)でこのアプローチについての強力な逸話を共有しています。インタビューの一部を以下に書き起こします。
+[Time Off](https://www.timeoffbook.com) の共著者であり [Voltage Control](https://voltagecontrol.com) の Chief Product Officer である [John Fitch](https://twitter.com/johnwfitch) は、[The Culture Factor ポッドキャスト](https://the-culture-factor.simplecast.com/episodes/what-if-time-off-created-a-culture-of-productivity-that-surpassed-12-hour-days)でこのアプローチについての強力な逸話を共有しています。インタビューの一部を以下に書き起こします。
 
 > デザインとプロトタイピングの責任者という私の機能——私だけがそれを行っているなら、それは問題です。私が離れたり何か起きた場合、その機能全体が危険にさらされます。単一障害点です。分散化すると、単一障害点がなくなります。
 >
@@ -277,7 +277,7 @@ GitLab は会社[ハンドブック](/handbook)に多くの変更を追加し、
 
 年間リマインダー（年末近くが良い）を設定して、翌年の*潜在的な* PTO のウィンドウをブロックすることは、精神的に癒しになります。Google カレンダーの今後 12 ヶ月をトグルして、将来の自分が休暇をスケジュールする価値があると感じる日や週に「Blocked for Potential PTO」と題した `ビジー` ブロックを作成してください。主要な祝日の前後、記念日、誕生日、夏時間（より多くの日光を楽しむための休暇！）、または重要な瞬間の前後の日が良い出発点です。
 
-これらのブロックをリベラルにスケジュールしてください。それらは[双方向のドア](/handbook/values/#make-two-way-door-decisions)であり、いつでも削除または縮小できます。この作業は、*必要になる前に*休息と充電のための時間を積極的にスケジュールするための強制機能として機能します。また、他者に対する素晴らしい視覚的な一時停止を提供します。例えば、6 週間後にウェビナーのスケジュールを立てたいと思っている人がカレンダーに `潜在的な PTO ブロック` を見つけた場合、確定的な PTO ブロックに変換するつもりかどうかを尋ねるよう促します。これにより、休暇を正式化する機会を持つ前にスケジュールが永続的に埋まることを防ぎます。
+これらのブロックをリベラルにスケジュールしてください。それらは[双方向のドア](/handbook/values/#make-two-way-door-decisions)であり、いつでも削除または縮小できます。この作業は、*必要になる前に*[休息と充電](/handbook/people-group/time-off-and-absence/time-off-types/)のための時間を積極的にスケジュールするための強制機能として機能します。また、他者に対する素晴らしい視覚的な一時停止を提供します。例えば、6 週間後にウェビナーのスケジュールを立てたいと思っている人がカレンダーに `潜在的な PTO ブロック` を見つけた場合、確定的な PTO ブロックに変換するつもりかどうかを尋ねるよう促します。これにより、休暇を正式化する機会を持つ前にスケジュールが永続的に埋まることを防ぎます。
 
 ### PTO のやることリストを作る
 
@@ -295,7 +295,7 @@ GitLab チームメンバーは `#daily-gratitude` Slack チャンネルに参�
 
 同僚や会社外の誰かとコミュニケーションをとる場合でも、精神的健康、幸福、および仕事外の生活のために設定した境界線について透明性を持つことが助けになります。これはマネージャーやリーダーにとって特に影響力があります。なぜなら、精神的健康に関する会話を正常化し、チームの他の人々に手本を示すからです。
 
-[非同期的に貢献できる](/handbook/company/culture/all-remote/asynchronous/#gitlab-experts-advise-on-when-to-use-sync-vs-async)同期ミーティングに招待された場合は、メールへの返信に 1 行追加するほど簡単なことかもしれません。GitLab の [Head of Remote](/handbook/company/culture/all-remote/) である [Darren M.](https://gitlab.com/dmurph) からの例を以下に示します：
+[非同期的に貢献できる](/handbook/communication/#asynchronous-communication)同期ミーティングに招待された場合は、メールへの返信に 1 行追加するほど簡単なことかもしれません。GitLab の [Head of Remote](/handbook/company/culture/all-remote/) である [Darren M.](https://gitlab.com/dmurph) からの例を以下に示します：
 
 > 「2021 年に[幸福と家族を優先する](/handbook/values/#family-and-friends-first-work-second)ために、同期セッションを意図的に制限しています。ご理解ありがとうございます。」
 

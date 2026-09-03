@@ -2,11 +2,11 @@
 title: "Field Enablement Spotlight: GitLab における継続教育"
 description: "GitLab のフィールドセールス & カスタマーサクセスチームメンバー全員のための継続教育ウェブキャストシリーズ"
 upstream_path: /handbook/sales/training/sales-enablement-sessions/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T07:54:58+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## Field Enablement Spotlight セッション
@@ -246,7 +246,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 | 2020-03-19 | **[True-Ups](https://youtu.be/vNWUz1BGs2E)** | 公開 |
 | 2020-03-12 | **[GitLab ジャーニー & SCM ユースケース](https://youtu.be/GN891Bqc6QY)** | 公開 |
 | 2020-03-05 | **[GitLab ジャーニー & CI ユースケース](https://youtu.be/JoeaTYIH5lI)** | 公開 |
-| 2020-02-27 | **[Q1 FY21 GitLab リリースアップデート](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/release-updates/#123128-sales-enablement)** | 公開 |
+| 2020-02-27 | **[Q1 FY21 GitLab リリースアップデート](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/release-updates/#123128-sales-enablement)** | 公開 |
 | 2020-02-06 | **[SKO プレビュー](https://youtu.be/wFqMfGSXsXQ)** | 公開 |
 | 2020-01-13 | **[FY21 製品展望 - Ops セクション](https://youtu.be/dLBPS1T5Wbk)** | 公開 |
 | 2020-01-13 | **[FY21 製品展望 - Secure and Protect](https://youtu.be/jbuvqD2Ge3M)** | 公開 |
@@ -508,9 +508,9 @@ Spotlight Attendance Report は FY25-Q3 から利用可能で、Highspot 経由�
 ## 追加のイネーブルメントページ
 
 - [GitLab Duo Agent Platform リリースページ](https://gitlab.highspot.com/items/67be29b202a790628c0af3fe)
-- [GitLab CI/CD for GitHub FAQ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/github-ci-cd-faq/)
-- [Cloud Native Ecosystem](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/cloud-native-ecosystem/)
-- [Enterprise IT Roles](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enterprise-it-roles/)
-- [GitLab.com Subscriptions](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions/)
+- [GitLab CI/CD for GitHub FAQ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/github-ci-cd-faq/)
+- [Cloud Native Ecosystem](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/cloud-native-ecosystem/)
+- [Enterprise IT Roles](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enterprise-it-roles/)
+- [GitLab.com Subscriptions](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions/)
 - [Services to Accelerate Customer Adoption](/handbook/customer-success/professional-services-engineering/sales-enablement)
 - [Collaborating with Community Programs](/handbook/sales/training/sales-enablement-sessions/enablement/collaborating-community-programs/)

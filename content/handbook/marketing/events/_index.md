@@ -1,11 +1,11 @@
 ---
 title: GitLab イベント情報
 upstream_path: /handbook/marketing/events/
-upstream_sha: 197b140c5d91cf90c19d493d4723862ee691745f
-translated_at: "2026-08-05T06:53:49+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-04T21:32:31+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## GitLab のイベント
@@ -15,8 +15,8 @@ lastmod: "2026-08-04T21:32:31+00:00"
 マーケティング内には外部イベントを扱う 3 つのグループがあります。各グループには特定の目的があります。詳細については各ページを参照してください。
 
 - [Developer Relations](/handbook/marketing/developer-relations/events/)
-- [Corporate Events](/handbook/marketing/integrated-marketing/corporate-events/)
-- [Field Marketing](/handbook/marketing/field-marketing/)
+- [Corporate Events](/handbook/marketing/growth-marketing/corporate-events/)
+- [Field Marketing](/handbook/marketing/growth-marketing/regional-marketing/)
 
 ### すべてのイベント契約に含めるべき法的文言
 
@@ -91,7 +91,7 @@ Issue テンプレートをよく読み、Issue で求められるすべての�
 
 ### Step 3 - 契約完了 - FMM
 
-1. Plan から WIP へのプロセスは [こちら](/handbook/marketing/field-marketing/#slas) を参照してください。
+1. Plan から WIP へのプロセスは [こちら](/handbook/marketing/growth-marketing/regional-marketing/#slas) を参照してください。
 
 ### Step 3 - 契約完了 - Corporate Event DRI
 
@@ -140,7 +140,7 @@ Issue テンプレートをよく読み、Issue で求められるすべての�
 
 * Alliances/Partner Marketing involved - (if yes, must designate a DRI)
 * Will this event include use of Marketing Development Funds (MDFs)? YES/NO
-   * Requesting MDF Funds: `https://handbook.gitlab.com/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/channel-marketing/#requesting-mdf-funds`
+   * Requesting MDF Funds: `https://handbook.gitlab.com/handbook/marketing/corporate-communications/analyst-relations/channel-marketing/#requesting-mdf-funds`
 
 ## Issues to be created
 
@@ -177,7 +177,7 @@ Issue テンプレートをよく読み、Issue で求められるすべての�
    - 全員に旅行と宿泊をできるだけ早く予約するよう指示します。
    - 計画シートは、旅行、ミーティングセッティング、ブース当番、講演者リスト、ネットワーキングイベント、PR などのすべての詳細を追跡するために使用されます。
 1. イベントに講演者が必要な場合は、`Speaker Request` Issue テンプレートで Issue を開始してください。
-1. このイベントに顧客講演者が必要な場合は、`Speaker Request` を地域の [Customer Reference リード](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/#which-customer-reference-team-member-should-i-contact) にアサインしてください。Customer Reference リードは、イベントマネージャーおよび Sales チームと連携して、イベントで講演する顧客を特定しエンゲージします。
+1. このイベントに顧客講演者が必要な場合は、`Speaker Request` を地域の [Customer Reference リード](/handbook/marketing/growth-marketing/growth-community-programs/) にアサインしてください。Customer Reference リードは、イベントマネージャーおよび Sales チームと連携して、イベントで講演する顧客を特定しエンゲージします。
 1. イベント用ランディングページ (詳細手順)
    - Corporate イベントランディングページは `events.yml` から生成されます - 詳細手順
    - Corp DRI はコンテンツ提供のため Alliances および/または Product Marketing チームと連携する Issue を作成します。
@@ -196,7 +196,7 @@ Issue テンプレートをよく読み、Issue で求められるすべての�
    - イベント後のメールコピー - イベントの **1 〜 2 週間** 前
 1. ソーシャル
    - 一般的なソーシャルアウェアネス投稿および作成が必要なソーシャル広告には、`Social Request` テンプレートを使用して Issue を開始してください。
-   - イベントでソーシャルサポートを得る方法の完全な手順については、[ソーシャルリクエスト手順](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/admin/) を参照してください。
+   - イベントでソーシャルサポートを得る方法の完全な手順については、[ソーシャルリクエスト手順](/handbook/marketing/corporate-communications/social-marketing/admin/) を参照してください。
 1. PR
    - イベントに合わせてアナウンスされる予定の企業、パートナー、または製品ニュースには、Corporate Marketing プロジェクトの [アナウンステンプレート](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/issues/new?issuable_template=announcement) を使用して Issue を開始してください。Request for External Announcements プロセスの詳細については、Corporate Communications ハンドブックの[こちら](/handbook/marketing/corporate-communications/#requests-for-external-announcements) を参照してください。
 1. デザイン
@@ -204,7 +204,7 @@ Issue テンプレートをよく読み、Issue で求められるすべての�
    1. ブースデザインのため `Corporate Marketing` プロジェクトで Issue を開きます。デザインチームにアサインし、ブース仕様と期限を提供します。可能な限り早めに通知してください。
    1. コンテンツや主要なレイアウト変更については、`Corporate Marketing` プロジェクトで作成された関連ブースデザイン Issue 内で Product and Solution Marketing と Design をタグ付けしてください。
 1. デジタル
-   - すべてのデジタルマーケティングリクエストをデジタルマーケティングチームと調整してください。詳細は [Requesting Digital Marketing Promotions](/handbook/marketing/integrated-marketing/digital-strategy/digital-strategy-management/#how-do-we-get-there) を参照してください。
+   - すべてのデジタルマーケティングリクエストをデジタルマーケティングチームと調整してください。詳細は [Requesting Digital Marketing Promotions](/handbook/marketing/growth-marketing/digital-agency/digital-strategy-management/#how-do-we-get-there) を参照してください。
 1. Corporate イベント向け - ミーティングセッティング
    1. ミーティングセッティングを通じて収集されたすべてのリードは、Marketo エージェンシーによって設定され、メインイベントキャンペーンに関連付けられた独自のキャンペーンで追跡される必要があります。
    1. 私たちと打ち合わせを行うすべての人に、一般的に小さな贈り物 (50 米ドル未満または国の同等額) を提供します。
@@ -217,7 +217,7 @@ Issue テンプレートをよく読み、Issue で求められるすべての�
    1. ミーティングはマスターイベントスプレッドシートで追跡されます。
 1. デモ、ブースデッキ、ドキュメント
    - Product Marketing は、イベントで展示されるすべてのコラテラルの作成を支援します。
-   - [標準デモ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/) は、イベント iPad に事前ロードされる必要があります。
+   - [標準デモ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/) は、イベント iPad に事前ロードされる必要があります。
    - イベントで特定のものが必要な場合は、Product Marketing プロジェクトで Issue を開始してください。
 1. スワッグ
    - イベントとオーディエンスに適切なノベルティを決定します。
@@ -704,9 +704,9 @@ Sales nominated プロセスは、レコードがイベントへの招待を受�
 
 ## イベント用のスワッグ
 
-スワッグに関するすべての情報は[スワッグプロセスハンドブック](/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/) で確認できます。イベント関連のスワッグおよびトラッキング目的では、`swag_corporate` および `swag_community` タグを利用しています。
+スワッグに関するすべての情報は[スワッグプロセスハンドブック](/handbook/marketing/brand-experience/merchandise-handling/) で確認できます。イベント関連のスワッグおよびトラッキング目的では、`swag_corporate` および `swag_community` タグを利用しています。
 
-Field Marketing スワッグおよびイベントアセットに関するすべての詳細については、Field Marketing ページの[こちら](/handbook/marketing/field-marketing/#regional-marketing-swag) を参照してください。
+Field Marketing スワッグおよびイベントアセットに関するすべての詳細については、Field Marketing ページの[こちら](/handbook/marketing/growth-marketing/regional-marketing/#regional-marketing-swag) を参照してください。
 
 ## Developer Relations の詳細
 
@@ -714,7 +714,7 @@ GitLab の Developer Relations チームは、私たちのコミュニティイ�
 
 ## Corporate Events の詳細
 
-- [Corporate Events ハンドブック](/handbook/marketing/integrated-marketing/corporate-events/) を参照してください
+- [Corporate Events ハンドブック](/handbook/marketing/growth-marketing/corporate-events/) を参照してください
 
 ## Field Marketing イベントの詳細
 
@@ -773,7 +773,7 @@ Field Marketing と Corporate Events は両方とも、Marketing 1pass vault の
     - **色:** `Pattern color` と `Eye color` の両方が、私たちの Charcoal カラー `#171321` を使用しています。最適なコントラストのため、背景色は白 `#FFFFFF` に設定されています
     - **パターン:** 太い点のある 4 番目のオプションが選択されています
     - **アイスタイル:** ダイナミックコーナーのある 3 番目のオプションが選択されています
-    - **注:** QR コードをコラテラルに配置する際、効率的なスキャンのため [デザインチーム](/handbook/marketing/brand-and-product-marketing/design/) は 1 インチ × 1 インチ未満であってはならないと推奨しています
+    - **注:** QR コードをコラテラルに配置する際、効率的なスキャンのため [デザインチーム](/handbook/marketing/brand-experience/brand-creative/) は 1 インチ × 1 インチ未満であってはならないと推奨しています
 1. Tag & Organize セクションを使用して、整理しておくため Display Name と Tag を追加します
     - Display Name を使用して QR コードを簡単に検索できます
     - レポートで QR コード使用を追跡するため UTM を追加することもできます ([UTM ジェネレーター]/handbook/marketing/utm-strategy/#how-to-create-utms) を参照)

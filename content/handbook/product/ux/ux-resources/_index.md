@@ -2,9 +2,9 @@
 title: UX リソース
 description: "Upstream Studios の一部である Product Design、UX Research、Technical Writing、Design System の各 UX チームメンバー向けのリソースとツール。"
 upstream_path: /handbook/product/ux/ux-resources/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-lastmod: "2026-08-14T11:43:03-05:00"
-translated_at: "2026-08-15T06:20:45+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: codex
 stale: false
 ---
@@ -18,7 +18,7 @@ stale: false
 - [プロダクトデザイナーのワークフロー](/handbook/upstream-studios/product-design/workflow/) - 日々のデザインプロセスとコラボレーション
 - [プロダクトデザインオペレーション](/handbook/upstream-studios/product-design/operations/) - Issue 管理、ラベリング、スケジューリング
 - [UX リサーチャーのワークフロー](/handbook/upstream-studios/experience-research/)
-- [テクニカルライティングのワークフロー](/handbook/marketing/technical-writing/)
+- [テクニカルライティングのワークフロー](/handbook/marketing/product-and-technical-marketing/technical-writing/)
 - [UX オペレーション](/handbook/product/ux/operations/) - 人員計画、調達、ラベル、カレンダー
 
 ### デザインシステム
@@ -70,8 +70,8 @@ Figma の管理者とそのロールのスコープは以下のように定義�
 
 |管理者|スコープ|
 |-----|-----|
-|@tauriedavis|テックスタックオーナー、ユーザー管理（プロビジョニング/デプロビジョニング）、請求|
-|@vkarnes|テックスタックオーナーのバックアップ|
+|@tauriedavis|Tech Stack オーナー、ユーザー管理（プロビジョニング/デプロビジョニング）、請求|
+|@vkarnes|Tech Stack オーナーのバックアップ|
 |@jeldergl|ユーザー管理（プロビジョニング/デプロビジョニング）、デザインオペレーション|
 |@danmh|デザインオペレーション|
 
@@ -113,7 +113,7 @@ UX 部門の全員とすべてのプロダクトマネージャーは、新し�
 
 ### ユーザーペルソナ
 
-[ユーザーペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)は、実際に GitLab を使う人々を表します。UX チームとマーケティングチームは、ユーザーエクスペリエンスとデザインに関する意思決定に役立てるためにペルソナを使用します。
+[ユーザーペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)は、実際に GitLab を使う人々を表します。UX チームとマーケティングチームは、ユーザーエクスペリエンスとデザインに関する意思決定に役立てるためにペルソナを使用します。
 
 ## プレイブックとガイド
 

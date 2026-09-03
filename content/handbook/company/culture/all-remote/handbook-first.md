@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/handbook-first/"
-upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
-translated_at: "2026-08-15T06:54:56+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T11:43:03-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ![GitLab のナビゲーションとジャーニー](/images/all-remote/gitlab-journey-and-navigation.jpg)
@@ -47,9 +47,9 @@ GitLab は[単一の真実の情報源](/handbook/values/#single-source-of-truth
 
 ## Slack やチャットメッセージをすぐに期限切れにする
 
-GitLab では、[90 日間の Slack アクティビティのみが保持されます](/handbook/communication/#slack)。その後は消去されます。これは意図的なものであり、Slack がプロジェクトを端から端まで管理するためのツールとして役立つことを防ぎます。Slack、Microsoft Teams、および同様のツールは*インスタント*メッセージングプラットフォームであり、真の[非同期文化](asynchronous/)にとってはかえって不利益になる場合があります。
+GitLab では、[90 日間の Slack アクティビティのみが保持されます](/handbook/communication/#slack)。その後は消去されます。これは意図的なものであり、Slack がプロジェクトを端から端まで管理するためのツールとして役立つことを防ぎます。Slack、Microsoft Teams、および同様のツールは*インスタント*メッセージングプラットフォームであり、真の[非同期文化](/handbook/communication/#asynchronous-communication)にとってはかえって不利益になる場合があります。
 
-チームが[単一の真実の情報源](https://docs.gitlab.com/ee/development/documentation/styleguide/#documentation-is-the-single-source-of-truth-ssot)に依拠できるようにすることを真剣に考えるリーダーは、インスタントメッセージの保持に関して容赦なくなるでしょう。チームメンバーが特定のプロジェクトの更新についてインスタントメッセージ履歴を検索できることを知っていれば、誰でもアクセスできる場所に進捗をドキュメント化する動機がなくなります。これは大規模な[知識のギャップ](asynchronous/#6-asynchronous-work-bridges-the-knowledge-gap)を生み出し、組織全体のコミュニケーション、整合性、理解をさらに分断させます。
+チームが[単一の真実の情報源](https://docs.gitlab.com/ee/development/documentation/styleguide/#documentation-is-the-single-source-of-truth-ssot)に依拠できるようにすることを真剣に考えるリーダーは、インスタントメッセージの保持に関して容赦なくなるでしょう。チームメンバーが特定のプロジェクトの更新についてインスタントメッセージ履歴を検索できることを知っていれば、誰でもアクセスできる場所に進捗をドキュメント化する動機がなくなります。これは大規模な[知識のギャップ](/handbook/communication/#asynchronous-communication)を生み出し、組織全体のコミュニケーション、整合性、理解をさらに分断させます。
 
 限定された保持ポリシーは強制的な仕組みとして機能します。チームメンバーが最終的な単一の真実の情報源に直接結びついた場所で仕事の問題を議論するよう促します。GitLab では、すべての仕事、プロセス、方針は[ハンドブック](/handbook)にドキュメント化されています。
 
@@ -57,7 +57,7 @@ GitLab では、[90 日間の Slack アクティビティのみが保持され�
 
 インスタントメッセージングツールは会話に人を追加するのが難しく、すべての作業履歴はそのプログラムに残り、作業が最終的に行き着く場所にはコンテキストが伴いません。
 
-Slack を[インフォーマルなコミュニケーション](informal-communication/)のためにのみ使用するよう組織を促すことは難しいですが、それだけの価値があります。そうしなければ、人々が更新情報やデータの断片を求めて他の人に ping し続けるという苦痛なパターンを確実に生み出し、同期ワークフローという[混沌の火](asynchronous/#4-asynchronous-work-alleviates-stress-and-supports-mental-health)にさらに燃料を加えることになります。
+Slack を[インフォーマルなコミュニケーション](informal-communication/)のためにのみ使用するよう組織を促すことは難しいですが、それだけの価値があります。そうしなければ、人々が更新情報やデータの断片を求めて他の人に ping し続けるという苦痛なパターンを確実に生み出し、同期ワークフローという[混沌の火](/handbook/communication/#asynchronous-communication)にさらに燃料を加えることになります。
 
 ## 圧倒されない
 
@@ -192,7 +192,7 @@ GitLab ハンドブック使用法の[プレゼンテーションを作成する
 
 以下の GitLab リソースでドキュメントの重要性についてさらに学びましょう。
 
-1. [テクニカルライティングハンドブックセクション](/handbook/marketing/technical-writing)
+1. [テクニカルライティングハンドブックセクション](/handbook/marketing/product-and-technical-marketing/technical-writing/)
 1. [ドキュメントスタイルガイド](https://docs.gitlab.com/ee/development/documentation/styleguide/)
 1. [ドキュメントガイドライン](https://docs.gitlab.com/ee/development/documentation/)
 1. [ドキュメントによるスケーリング](/handbook/company/culture/all-remote/)

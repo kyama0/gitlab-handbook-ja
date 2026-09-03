@@ -2,9 +2,9 @@
 title: 昇進と異動
 description: "GitLab の昇進と異動に関する情報とプロトコル。"
 upstream_path: /handbook/people-group/promotions-transfers/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-lastmod: "2026-08-12T19:30:53-04:00"
-translated_at: "2026-08-13T23:52:41+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+lastmod: "2026-09-01T16:59:18+01:00"
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
 ---
@@ -105,7 +105,7 @@ Greenhouse 採用プロセスに従って募集中の役割のオファーを受
 
 GitLab では年 2 回の頻度で昇進を行います。昇進プロセスには 3 つのコアステージがあります: 計画、キャリブレーション、処理。
 
-セールス開発組織は、職務ファミリー構造内の各レベルの特定の[昇進基準](/handbook/marketing/sales-development/#sales-dev-career-path)により、サイクル内昇進を月次でレビューします。計画、キャリブレーション、処理ステップは以下の詳細に整合しています。
+セールス開発組織は、職務ファミリー構造内の各レベルの特定の[昇進基準](/handbook/sales/sales-development/#sales-dev-career-path)により、サイクル内昇進を月次でレビューします。計画、キャリブレーション、処理ステップは以下の詳細に整合しています。
 
 | ステージ | 目的 |
 | ---------- | ----- |
@@ -138,7 +138,7 @@ GitLab では年 2 回の頻度で昇進を行います。昇進プロセスに�
 
 **昇進指名の準備と提出**
 
-- **1 月 12-30 日**: マネージャーとチームメンバーが会って昇進準備状況について議論します。ビジネスニーズと個人の準備状況に整合がある場合、1 月 30 日までにマネージャー提出用に[昇進ドキュメント](https://docs.google.com/document/d/1oXH9HzdO8gjqdeosstQRC1Mqt_5lCaN1U2kaF9Av-Ec/edit?usp=sharing)フォームを準備するために協働します
+- **1 月 12-30 日**: マネージャーとチームメンバーが会って昇進準備状況について議論します。ビジネスニーズと個人の準備状況に整合がある場合、1 月 30 日までにマネージャー提出用に[昇進ドキュメント](https://docs.google.com/document/d/15Zll03CelNs091CDhntRiX2RweripppfQRf-nj4rSig/edit?tab=t.0)フォームを準備するために協働します
 - **1 月 30 日**: 締切 - すべてのマネージャー昇進指名は Workday で提出される必要があります
 - **2 月 2-27 日**: 昇進キャリブレーションセッションと昇進承認
 
@@ -165,7 +165,7 @@ FY26 Q4 昇進**計画**は、機密性を維持し、必要に応じて部門�
 
 ### 昇進ドキュメント
 
-[昇進ドキュメント](https://docs.google.com/document/d/1oXH9HzdO8gjqdeosstQRC1Mqt_5lCaN1U2kaF9Av-Ec/edit?usp=sharing)はすべてのインライン昇進に必要です。**昇進ドキュメントは合計 3 ページを超えてはなりません。**
+[昇進ドキュメント](https://docs.google.com/document/d/15Zll03CelNs091CDhntRiX2RweripppfQRf-nj4rSig/edit?tab=t.0)はすべてのインライン昇進に必要です。**昇進ドキュメントは合計 3 ページを超えてはなりません。**
 
 対象は他の GitLab チームメンバーであるため、テキストは三人称でチームメンバーの名前と適切な代名詞 (he/she/they) を使い、役割への適性の証拠として仕事とスキルを強調するように書く必要があります。説得力のあるドキュメントの作成を支援するために、[スタイルガイド](/handbook/people-group/promotion-document-style-guide/)が利用可能です。[ビジネス結果](/handbook/people-group/promotions-transfers/#business-results)ごとに関連するセクションを捉えるためにブレットフォーマットを活用するか、短い段落を使用できます。
 
