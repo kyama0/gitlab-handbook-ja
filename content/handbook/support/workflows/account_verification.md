@@ -4,11 +4,11 @@ category: GitLab.com
 subcategory: Accounts
 description: "2FA 解除を含む、アカウント所有権を確認する方法と時期を詳述するワークフロー"
 upstream_path: /handbook/support/workflows/account_verification/
-upstream_sha: "5934211cb62d0c36181bc3a4be1381e5e07aef42"
-translated_at: "2026-07-29T06:21:07+09:00"
+upstream_sha: "e044d1dc3f45ac23717b964db35ac97ee11f88a7"
+translated_at: "2026-09-03T22:19:44+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-01T14:14:23+12:00"
 ---
 
 ## 概要
@@ -69,6 +69,8 @@ Enterprise オーナーは、Enterprise ユーザーがいる有償グループ�
 チャレンジを送信する前に、チケットが Enterprise オーナーによって開かれたかを判定します。そうであれば、[`Support::SaaS::GitLab.com::Account Ownership Verification - GitLab.com - Enterprise Owner` マクロ](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Account%20Ownership%20Verification%20-%20GitLab.com%20Enterprise%20Owner.md?ref_type=heads) を使用してください。
 そうでなければ、[`Support::SaaS::GitLab.com::Account Ownership Verification - GitLab.com` マクロ](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/Account%20Ownership%20Verification%20-%20GitLab.com.md?ref_type=heads) を使用します。
 
+監査／ログのリクエストは、トップレベルネームスペースのオーナーが行う必要があります。これらのリクエストでは、常に Enterprise Owner マクロを使用してください。
+
 ### Step 2: チャレンジの回答を確認する {#step-2-checking-challenge-answers}
 
 > **注**: ユーザーが返してきた情報がごく僅かで、明らかに不十分または曖昧な場合は、その回答後すぐに追加情報を求める返信を行ってください。「コミットの正確な日付と時刻を提供してください、おおよそのものでなく」など、追加のガイダンスを提供できます。
@@ -77,16 +79,17 @@ Enterprise オーナーは、Enterprise ユーザーがいる有償グループ�
 1. ZenDesk [GitLab Super App](/handbook/eta/css/zendesk/apps/global#gitlab-super-app) の `2FA Helper` を使用して、ユーザーの回答に基づいて [リスクファクター](https://internal.gitlab.com/handbook/support/#risk-factors-for-account-ownership-verification) （GitLab 内部）を判定します。データ分類基準と注釈は [GitLab Internal Handbook - Data Classification table](https://internal.gitlab.com/handbook/support/#data-classification) にあり、これが情報源として扱われます。
    - ユーザーが有償ネームスペースのメンバーである場合、チャレンジの回答は有償ネームスペースに対して評価する必要があります。ユーザーが有償ネームスペースのメンバーでない場合は、追加のガイダンスのために [2FA リセット検討の条件](../workflows/2fa-removal.md#conditions-when-account-is-used-to-access-customers-portal) を参照してください。
    - グループオーナーが [Enterprise ユーザー](/handbook/support/workflows/gitlab-com_overview#enterprise-users) に代わって回答している場合、回答をどのアカウントに対して評価するかは [アカウント認証マトリクス](#account-verification-matrix) を参照してください。Enterprise ユーザーが現在の有償ネームスペースのメンバーでない場合でも、データ分類は RED です。
+   - `Enterprise owner verification` フォームはユーザー関連のアクションリクエストを対象としているため、グループ／プロジェクトの監査およびログのリクエストには `General Account Verification` フォームを使用してください。
    - アプリ経由ではなく手動でコメントを残す必要がある場合は、[`Support::SaaS::GitLab.com::2FA::2FA Internal Note` マクロ](https://gitlab.com/gitlab-com/support/zendesk-global/macros/-/blob/master/active/Support/SaaS/GitLab.com/2FA/2FA%20Internal%20Note.md?ref_type=heads) を使用してチケットに内部ノートを追加してください。
 
-1. **検証に合格した場合:** Slack `#support_gitlab-com` でチームの別のメンバーに自分の決定をピアレビューしてもらうようリクエストします。ピアレビュアーが 3a の手順を実行します
+1. **検証に合格した場合:** Slack `#support_gitlab-com` でチームの別のメンバーに自分の決定をピアレビューしてもらうようリクエストします。
 1. **検証に失敗した場合**: Step 3b に進みます
 
 ### Step 3a: ユーザーがアカウント所有権の証明に成功した場合
 
-このセクションは通常ピアレビュアーが行います。必要であれば、ピアレビュアー（または承認マネージャー）が承認ノートを残し、その場合は元のレビュアーがアクションを実行します。
+2FA 解除やその他のユーザー変更をレビューする場合、通常はレビュアーが最終アクションを完了します。監査イベントやコンソールエスカレーション作業などのリクエストは、通常、元のチケットオーナーが処理します。
 
-1. その決定に同意する場合、admin アカウントにサインインしてユーザーテーブルからユーザー名を見つけるか、`https://gitlab.com/admin/users/usernamegoeshere` に移動します
+1. ユーザーに対してアクションを実行する決定に同意する場合、admin アカウントにサインインしてユーザーテーブルからユーザー名を見つけるか、`https://gitlab.com/admin/users/usernamegoeshere` に移動します
       1. [Account Changes ワークフロー](../workflows/account_changes.md) を参照してください。
       1. account タブで `Edit` をクリックし、[Admin Note](../workflows/admin_note.md) を追加して保存します。
 

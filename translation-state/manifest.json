@@ -19914,11 +19914,11 @@
     },
     "content/handbook/tools-and-tips/_index.md": {
       "path": "content/handbook/tools-and-tips/_index.md",
-      "upstream_sha": "5934211cb62d0c36181bc3a4be1381e5e07aef42",
-      "translated_at": "2026-07-29T06:11:55+09:00",
+      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
+      "translated_at": "2026-09-03T22:10:19+09:00",
       "model": "codex",
-      "input_hash": "a41488b0d01a9ccc815a8cb480db17a9e213c7459241273c6be0a6bdbe112a6c",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "cafd60b3f6f4ec87c9b23ead3dfde61740f792f1b887523cbaad1a513f932e02",
+      "upstream_committed_at": "2026-09-03T11:50:52+02:00"
     },
     "content/handbook/tools-and-tips/ai/_index.md": {
       "path": "content/handbook/tools-and-tips/ai/_index.md",
@@ -20314,11 +20314,11 @@
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com.md",
-      "upstream_sha": "4253b2ab72b0791916a54411ca71a25276e128bd",
-      "translated_at": "2026-07-02T06:06:16+09:00",
+      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
+      "translated_at": "2026-09-03T22:10:19+09:00",
       "model": "codex",
-      "input_hash": "5e5380790798927a94fc0ea2b034a6f1b47aab201681101345b697da81146d11",
-      "upstream_committed_at": "2026-06-26T15:11:11-07:00"
+      "input_hash": "0e37c9ef322ba9e971f4bcb7e00890a24b4362c0a604f5070cc6f22a3f7f816f",
+      "upstream_committed_at": "2026-09-01T13:37:58-07:00"
     },
     "content/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd.md": {
       "path": "content/handbook/total-rewards/benefits/general-and-entity-benefits/singapore-pte-ltd.md",
@@ -20346,11 +20346,11 @@
     },
     "content/handbook/total-rewards/compensation/_index.md": {
       "path": "content/handbook/total-rewards/compensation/_index.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "e362e88a1f6127e677fed2a34803ab3cd63f2a67dd91c3e812309af1c94aa7c4",
-      "upstream_committed_at": "2026-06-05T13:36:11-07:00"
+      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
+      "translated_at": "2026-09-03T22:10:19+09:00",
+      "model": "codex",
+      "input_hash": "2b78a96e4a3f0088bf5f89f75c566b24bbe51decaf8b8d0eedacb97141004b94",
+      "upstream_committed_at": "2026-08-25T11:32:33-04:00"
     },
     "content/handbook/total-rewards/compensation/compensation-review-cycle/_index.md": {
       "path": "content/handbook/total-rewards/compensation/compensation-review-cycle/_index.md",
@@ -20946,11 +20946,11 @@
     },
     "content/handbook/support/support-idk.md": {
       "path": "content/handbook/support/support-idk.md",
-      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
-      "translated_at": "2026-05-08T18:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "3708c15dbe0085cbabc764e7b3178eca5b0c5372a4ea5a5a7678c266cd5eb3e4",
-      "upstream_committed_at": "2025-04-28T10:53:04-07:00"
+      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
+      "translated_at": "2026-09-03T22:10:19+09:00",
+      "model": "codex",
+      "input_hash": "9f78ef74fe95565014128538989efd36b8b47f7c5b6e14a662019d93f2439c5f",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
     },
     "content/handbook/support/support-incident-response.md": {
       "path": "content/handbook/support/support-incident-response.md",
@@ -20970,11 +20970,11 @@
     },
     "content/handbook/support/support-stable-counterparts.md": {
       "path": "content/handbook/support/support-stable-counterparts.md",
-      "upstream_sha": "18c3e90de89449f1cbbf92c21776a3ea7899476c",
-      "translated_at": "2026-05-08T18:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "570597b9d28f763abe86ffa1be67ce81a21204b9eae256f2c2a0ed7e8c0f5682",
-      "upstream_committed_at": "2026-01-23T13:43:51-05:00"
+      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
+      "translated_at": "2026-09-03T22:19:44+09:00",
+      "model": "codex",
+      "input_hash": "0f58bb3cadf747d9a38a5b7f3901ba475c0507dff8cf64dd84314f6cd3c5556e",
+      "upstream_committed_at": "2026-09-01T12:00:09-04:00"
     },
     "content/handbook/support/support-time-off-buddies.md": {
       "path": "content/handbook/support/support-time-off-buddies.md",
@@ -21290,11 +21290,11 @@
     },
     "content/handbook/support/workflows/account_verification.md": {
       "path": "content/handbook/support/workflows/account_verification.md",
-      "upstream_sha": "5934211cb62d0c36181bc3a4be1381e5e07aef42",
-      "translated_at": "2026-07-29T06:21:07+09:00",
+      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
+      "translated_at": "2026-09-03T22:19:44+09:00",
       "model": "codex",
-      "input_hash": "4c9b290f9fbf147fb969613f450d9b9da07b8e7851eb27988b450e93a5252924",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "c406a6fbca644a2b3cb7c8621bd46c9cef8e88f3d9cafe118759bfe3bb94225f",
+      "upstream_committed_at": "2026-09-01T14:14:23+12:00"
     },
     "content/handbook/support/workflows/admin_note.md": {
       "path": "content/handbook/support/workflows/admin_note.md",
@@ -21330,11 +21330,11 @@
     },
     "content/handbook/support/workflows/calendly.md": {
       "path": "content/handbook/support/workflows/calendly.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-29T21:19:18Z",
+      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
+      "translated_at": "2026-09-03T22:19:44+09:00",
       "model": "codex",
-      "input_hash": "fd821c014e93c8749868e6604fbcd5693363071116594faf0526da9b27013aeb",
-      "upstream_committed_at": "2026-07-29T12:39:09-04:00"
+      "input_hash": "13f21c80694822f9e0c11b281e1d2720b3cd6a764becb4e48c976d2cab2c6ea5",
+      "upstream_committed_at": "2026-08-17T15:49:32+10:00"
     },
     "content/handbook/support/workflows/chatops.md": {
       "path": "content/handbook/support/workflows/chatops.md",
@@ -21450,11 +21450,11 @@
     },
     "content/handbook/support/workflows/dedicated.md": {
       "path": "content/handbook/support/workflows/dedicated.md",
-      "upstream_sha": "d8fb317567e8e271f91f602d97d453ad1a69a00a",
-      "translated_at": "2026-08-13T23:52:41+09:00",
+      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
+      "translated_at": "2026-09-03T22:19:44+09:00",
       "model": "codex",
-      "input_hash": "8b6a83ad97401032e11510fa038175db1c02f44b9b54b3631d94bb4d7f125fc1",
-      "upstream_committed_at": "2026-08-13T18:09:23+08:00"
+      "input_hash": "287d8c9771a4361783ec3e62b4283f33805d267fbb40af903316d5c272e166f2",
+      "upstream_committed_at": "2026-08-27T16:09:49-04:00"
     },
     "content/handbook/support/workflows/dedicated_cmoc.md": {
       "path": "content/handbook/support/workflows/dedicated_cmoc.md",
@@ -21706,11 +21706,11 @@
     },
     "content/handbook/support/workflows/improving-documentation.md": {
       "path": "content/handbook/support/workflows/improving-documentation.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T06:11:46+09:00",
+      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
+      "translated_at": "2026-09-03T22:19:44+09:00",
       "model": "codex",
-      "input_hash": "946e09d0207146677a9c2740712b4d4ab253385975f3efb2540662cd4e9c337a",
-      "upstream_committed_at": "2026-08-14T11:43:03-05:00"
+      "input_hash": "300eb3cb76a049d64ffa4a7627dd3caeba1a0852f40aa5eafc8716b453e1577e",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
     },
     "content/handbook/support/workflows/information-request.md": {
       "path": "content/handbook/support/workflows/information-request.md",
@@ -22378,11 +22378,11 @@
     },
     "content/handbook/values/_index.md": {
       "path": "content/handbook/values/_index.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T06:11:46+09:00",
+      "upstream_sha": "e044d1dc3f45ac23717b964db35ac97ee11f88a7",
+      "translated_at": "2026-09-03T22:10:19+09:00",
       "model": "codex",
-      "input_hash": "537b60e24f2f6ec033cb0b4d09c1616fc6d6c805f41d63989ed42030f9759c47",
-      "upstream_committed_at": "2026-08-14T11:43:03-05:00"
+      "input_hash": "1e34902990c11c32ef5bdfc079411c318d93fb1c5d1b0c96e185b14059c678ca",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
     },
     "content/handbook/support/license-and-renewals/workflows/self-managed/sending_license_to_different_email.md": {
       "path": "content/handbook/support/license-and-renewals/workflows/self-managed/sending_license_to_different_email.md",

@@ -7,10 +7,10 @@ images:
 no_list: true
 weight: -20
 upstream_path: /handbook/values/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-lastmod: "2026-08-14T11:43:03-05:00"
-translated_at: "2026-08-15T06:11:46+09:00"
-translator: claude
+upstream_sha: e044d1dc3f45ac23717b964db35ac97ee11f88a7
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-03T22:10:19+09:00"
+translator: codex
 stale: false
 ---
 
@@ -422,9 +422,9 @@ GitLab において効率性とは、材料、時間、エネルギーを無駄�
 
 ##### 非同期コミュニケーションへのバイアス {#bias-towards-asynchronous-communication}
 
-可能な限り [非同期](/handbook/company/culture/all-remote/asynchronous/) で動くようイニシアチブを取りましょう。これは、同じタイムゾーンにいないかもしれない人、いつものタイムゾーンの外を旅している人、または家庭やコミュニティでの差し迫った用事を中心に [1 日を組み立てている](/handbook/company/culture/all-remote/) 人への配慮と思いやりを示します。
+可能な限り [非同期](/handbook/communication/#asynchronous-communication) で動くようイニシアチブを取りましょう。これは、同じタイムゾーンにいないかもしれない人、いつものタイムゾーンの外を旅している人、または家庭やコミュニティでの差し迫った用事を中心に [1 日を組み立てている](/handbook/company/culture/all-remote/) 人への配慮と思いやりを示します。
 
-これは、[ミーティング](/handbook/company/culture/all-remote/meetings/) の録画を共有すること、テキスト・通話・Slack メッセージよりも GitLab の Issue やマージリクエストを使うこと、現地の祝日や休暇のステータスに配慮することによって示されます。他者に勤務時間外もオンラインでいるよう圧力をかけるのではなく、[ドキュメント](/handbook/marketing/technical-writing/#documentation) をデフォルトにするよう促しましょう。
+これは、[ミーティング](/handbook/company/culture/all-remote/meetings/) の録画を共有すること、テキスト・通話・Slack メッセージよりも GitLab の Issue やマージリクエストを使うこと、現地の祝日や休暇のステータスに配慮することによって示されます。他者に勤務時間外もオンラインでいるよう圧力をかけるのではなく、[ドキュメント](/handbook/marketing/product-and-technical-marketing/technical-writing/#documentation) をデフォルトにするよう促しましょう。
 
 ##### 居心地の悪いアイデアや会話を受け入れる {#embracing-uncomfortable-ideas-and-conversations}
 

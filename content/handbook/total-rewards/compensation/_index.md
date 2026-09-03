@@ -3,10 +3,10 @@ title: GitLab における報酬
 description: GitLab の報酬フレームワークに関する質問の答えを見つけてください。
 date: 2026-02-19
 upstream_path: /handbook/total-rewards/compensation/
-upstream_sha: 7b4218e2684ab0e2d919cef32fcfba84065bf46b
-lastmod: 2026-06-05T13:36:11-07:00
-translated_at: "2026-06-06T12:00:00Z"
-translator: claude
+upstream_sha: e044d1dc3f45ac23717b964db35ac97ee11f88a7
+lastmod: 2026-08-25T11:32:33-04:00
+translated_at: "2026-09-03T22:10:19+09:00"
+translator: codex
 stale: false
 ---
 
@@ -199,7 +199,7 @@ GitLab の給与の透明性へのコミットメントに関する詳細は、T
 
 ## 為替レート {#exchange-rates}
 
-{{< people-group/exchange-rates >}}
+Global Compensation に関する特定時点の情報については、The Loop の [Global Compensation](https://theloop.gitlab.com/site/95c75657-3e12-4b3d-b139-04f3136aae47/landing-page/dashboard) を参照してください。
 
 ### ボーナス処理のための為替レート {#exchange-rates-for-bonus-processing}
 

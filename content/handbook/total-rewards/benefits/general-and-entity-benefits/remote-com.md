@@ -2,10 +2,10 @@
 title: "Remote.com"
 description: "Remote のチームメンバー向け福利厚生をご紹介します"
 upstream_path: "/handbook/total-rewards/benefits/general-and-entity-benefits/remote-com/"
-upstream_sha: 4253b2ab72b0791916a54411ca71a25276e128bd
-lastmod: 2026-06-26T15:11:11-07:00
-translated_at: "2026-07-02T06:06:16+09:00"
-translator: claude
+upstream_sha: e044d1dc3f45ac23717b964db35ac97ee11f88a7
+lastmod: 2026-09-01T13:37:58-07:00
+translated_at: "2026-09-03T22:10:19+09:00"
+translator: codex
 stale: false
 ---
 
@@ -170,7 +170,7 @@ Allianz 民間保険を通じた強化された医療オプションで、スウ
 **主な特徴**
 
 - **チームメンバーのみ:** Remote 経由のカバレッジが含まれる
-- **扶養家族カバレッジ:** $123.16 USD（パートナー）、$61.58 USD（18 歳未満の子供）給与控除経由
+- **扶養家族カバレッジ:** 2026 年 5 月 1 日より、パートナーは月額 $133.91 USD、18 歳未満の子供は月額 $66.96 USD。
 - **登録ウィンドウ:** 開始日から 30 日。ただし、このウィンドウを逃した場合、チームメンバーは Remote に連絡してオプションのロックを解除できるか確認できます。状況により異なります。
 - **管理:** [ThanksBen プラットフォーム](https://www.thanksben.com/) を通じて
 
@@ -251,15 +251,14 @@ Nordnet Hållbar/SPP との包括的な年金プランへの強制加入。
 **Allianz 民間保険**
 
 - **チームメンバーカバレッジ:** Remote を通じて利用可能
-- **扶養家族カバレッジ:** $157.09 USD（パートナー）、$78.55 USD（18 歳未満の子供）月次
+- **扶養家族カバレッジ:** 2026 年 5 月 1 日より、パートナーは月額 $196.00 USD、18 歳未満の子供は月額 $98.00 USD。
 - **登録ウィンドウ:** 開始日から 30 日。ただし、このウィンドウを逃した場合、チームメンバーは Remote に連絡してオプションのロックを解除できるか確認できます。状況により異なります。
 - **管理:** [ThanksBen プラットフォーム](https://www.thanksben.com/) を通じて
-- **リソース:** [Remote Allianz 福利厚生ガイド](https://drive.google.com/file/d/1krO_RGt_H1_kPNgudHeuSIFjJohJuq-h/view)
+- **リソース:** [Remote 福利厚生ディレクトリ](https://remote.com/benefits-directory)
 
 **政府補助の医療**
 
-- [Remote Allianz 福利厚生ガイド](https://drive.google.com/file/d/1krO_RGt_H1_kPNgudHeuSIFjJohJuq-h/view)
-- [Allianz](https://drive.google.com/file/d/1hMw61FsriqRPfcFRQ-mzQsu6HF03IUFB/view)
+- [Remote 福利厚生ディレクトリ](https://remote.com/benefits-directory)
 - チームメンバーは、その役割に応じて、Fondo Est または Qu.AS の政府補助の補完医療にもアクセスできます。Fond Est の年間費用は、チームメンバーが支払う 24 EUR と会社が支払う 120 EUR です。詳細は [Fondo Est ウェブサイト](https://www.fondoest.it/) にあります。Qu.AS の年間費用（quadro レベルのみ利用可能）は、チームメンバーが支払う 56 EUR と会社が支払う 350 EUR です。詳細は [Qu.AS ウェブサイト](https://www.quas.it/) にあります。
 - 年金および生命保険 - Remote の給与処理の一部として、社会保障基金への強制拠出が行われます。Remote は現在、補完年金を提供していませんが、来年これをレビューする予定です。[GitLab Life Insurance プラン](/handbook/total-rewards/benefits/general-and-entity-benefits/#life-insurance-coverage) は引き続き適用されます。
 
@@ -444,7 +443,7 @@ Allianz 民間保険を通じた強化された医療オプションで、ハン
 **主な特徴**
 
 - **チームメンバーカバレッジ:** Remote を通じて利用可能
-- **扶養家族カバレッジ:** $123.16 USD（パートナー）、$61.58 USD（18 歳未満の子供）月次（給与経由）
+- **扶養家族カバレッジ:** 2026 年 5 月 1 日より、パートナーは月額 $133.91 USD、18 歳未満の子供は月額 $66.96 USD。
 - **登録ウィンドウ:** 開始日から 30 日。ただし、このウィンドウを逃した場合、チームメンバーは Remote に連絡してオプションのロックを解除できるか確認できます。状況により異なります。
 - **管理:** [ThanksBen プラットフォーム](https://www.thanksben.com/) を通じて
 
@@ -513,10 +512,10 @@ Allianz 民間保険を通じた強化された医療カバレッジで、ルク
 **主な特徴**
 
 - **チームメンバーカバレッジ:** Remote を通じて利用可能
-- **扶養家族カバレッジ:** $157.09 USD（パートナー）、$78.55 USD（18 歳未満の子供）月次
+- **扶養家族カバレッジ:** 2026 年 5 月 1 日より、パートナーは月額 $196.00 USD、18 歳未満の子供は月額 $98.00 USD。
 - **登録ウィンドウ:** 開始日から 30 日。ただし、このウィンドウを逃した場合、チームメンバーは Remote に連絡してオプションのロックを解除できるか確認できます。状況により異なります。
 - **管理:** [ThanksBen プラットフォーム](https://www.thanksben.com/) を通じて
-- **リソース:** [Remote Allianz 福利厚生ガイド](https://drive.google.com/file/d/1krO_RGt_H1_kPNgudHeuSIFjJohJuq-h/view)
+- **リソース:** [Remote 福利厚生ディレクトリ](https://remote.com/benefits-directory)
 
 </details>
 
