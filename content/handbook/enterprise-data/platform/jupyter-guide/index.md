@@ -2,11 +2,11 @@
 title: "Jupyterガイド"
 description: "JupyterLabのセットアップに関するガイダンス"
 upstream_path: /handbook/enterprise-data/platform/jupyter-guide/
-upstream_sha: d638a3d5418a620365f135648ea547e0992abbf1
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-09-01T10:07:23-05:00"
 ---
 
 ---
@@ -135,7 +135,7 @@ c.JupyterLabTemplates.include_default = False
 
 - [GitLabDS](https://pypi.org/project/gitlabds/): 一般的なEDAタスクをすばやく実行するためのツール
 - [MLFlow](https://mlflow.org/docs/latest/index.html): 実験追跡とモデルレジストリ
-- [Feast](https://feast.dev/): オープンソースのフィーチャーストア
+- [Snowflake Feature Store](/handbook/enterprise-data/platform/feature-store/): 機械学習の特徴量管理と提供のための GitLab の Snowflake ネイティブな特徴量ストア
 - [Papermill](https://papermill.readthedocs.io/en/latest/): Jupyter Notebookのパラメーター化、実行、分析
 - [interpret](https://pypi.org/project/interpret/): 解釈可能なモデル開発
 

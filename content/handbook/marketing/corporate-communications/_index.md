@@ -6,11 +6,11 @@ twitter_image_alt: null
 twitter_site: '@gitlab'
 twitter_creator: '@gitlab'
 upstream_path: /handbook/marketing/corporate-communications/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## コーポレートコミュニケーションズ ハンドブックへようこそ
@@ -181,4 +181,4 @@ GitLab の名称、ブランド、またはロゴの使用には、以下に概�
 
 ### GitLab ベンダーリファレンスのリクエスト
 
-GitLab チームが使用している製品、サービス、または技術について、ベンダーから GitLab がリファレンス（ケーススタディ、ブログ投稿、Web サイト上の GitLab ロゴ、プレスリリースなど）として機能してほしいというリクエストを受けた場合は、Brand Strategy チームのハンドブックに概説された[プロセス](/handbook/marketing/brand-and-product-marketing/brand/brand-strategy/#vendor-reference-requests)を参照してください。パートナー主導のブログまたはプレスリリースについては、本ハンドブックの *パートナーからの対外コミュニケーションサポートのリクエスト* セクションを参照してください。リクエストの量が多いため、GitLab が共同プレスリリースを書くことは稀である点にご注意ください。
+GitLab チームが使用している製品、サービス、または技術について、ベンダーから GitLab がリファレンス（ケーススタディ、ブログ投稿、Web サイト上の GitLab ロゴ、プレスリリースなど）として機能してほしいというリクエストを受けた場合は、Brand Strategy チームのハンドブックに概説された[プロセス](/handbook/marketing/brand-experience/brand-strategy/#vendor-reference-requests)を参照してください。パートナー主導のブログまたはプレスリリースについては、本ハンドブックの *パートナーからの対外コミュニケーションサポートのリクエスト* セクションを参照してください。リクエストの量が多いため、GitLab が共同プレスリリースを書くことは稀である点にご注意ください。

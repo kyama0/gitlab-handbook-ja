@@ -5,11 +5,11 @@ twitter_image: /images/tweets/handbook-marketing.png
 twitter_site: '@gitlab'
 twitter_creator: '@gitlab'
 upstream_path: /handbook/marketing/demand-generation/campaigns/content-in-campaigns/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2024-08-21T16:14:24-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要 {#overview}
@@ -187,7 +187,7 @@ https://gitlab.lookbookhq.com/authoring/content-library/content
 
 外部コンテンツは、アナリストリレーション、パートナー、その他協業しているベンダーから入手できます。例として、ベンダー比較（Gartner/Forrester など）や業界／市場分析（DevOps Institute など）が挙げられます。
 
-GitLab チームメンバー（例: AR）が潜在的なコンテンツのスポンサーシップを評価する際、コンテンツの活用方法やスポンサーシップの妥当性について [GTM モーションチーム](/handbook/marketing/plan-fy22/#core-teams) と協議する責任を負います。これは、[ディシジョンマトリクス Issue](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new?issuable_template=decision-tree-matrix) を作成することで行えます（ステップバイステップのプロセスは下記参照）。キャンペーンマネージャーがディシジョンマトリクスのインプットを評価し、スポンサーシップの最終的なゴー／ノーゴー判断を下します。外部コンテンツをスポンサーすることが決定された場合、キャンペーンマネージャーはコンテンツアクティベーションエピックと、関連するすべてのチームの作業をリクエストする関連 Issue を作成します（効率的、包括的、再現可能になるよう以下に概説しています！）。
+GitLab チームメンバー（例: AR）が潜在的なコンテンツのスポンサーシップを評価する際、コンテンツの活用方法やスポンサーシップの妥当性について GTM モーションチームと協議する責任を負います。これは、[ディシジョンマトリクス Issue](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new?issuable_template=decision-tree-matrix) を作成することで行えます（ステップバイステップのプロセスは下記参照）。キャンペーンマネージャーがディシジョンマトリクスのインプットを評価し、スポンサーシップの最終的なゴー／ノーゴー判断を下します。外部コンテンツをスポンサーすることが決定された場合、キャンペーンマネージャーはコンテンツアクティベーションエピックと、関連するすべてのチームの作業をリクエストする関連 Issue を作成します（効率的、包括的、再現可能になるよう以下に概説しています！）。
 
 すべての外部コンテンツは、`少なくとも 30 営業日のローンチ日までの時間` を持って、購入の前に計画されるべきです。これにより、既存および将来の統合キャンペーンと GTM モーションへのアクティベーションを計画する時間が確保されます。
 

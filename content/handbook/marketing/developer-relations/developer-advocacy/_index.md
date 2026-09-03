@@ -2,9 +2,9 @@
 title: "Developer Advocacy"
 description: "Developer Advocates は、コミュニティに関連するエンジニアリングトピックについて深く有意義な対話を通じて、GitLab の技術的なブランドを構築します。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/
-upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
-lastmod: "2026-08-05T12:28:06-04:00"
-translated_at: "2026-08-06T07:24:45+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
 ---
@@ -148,7 +148,7 @@ Developer Advocate チームはコミュニティを理解し、GitLab に関す
 
 #### イベントサポート
 
-Developer Advocate チームは、イベントのサポートにおいて重要な役割を果たします。私たちは [Corporate Event Marketing](/handbook/marketing/integrated-marketing/corporate-events/)と緊密に連携し、Corporate Events とサードパーティ協賛イベントの両方に対して、戦略的なコンテンツと支援を提供します。このコラボレーションにより、さまざまな集まりの成功とスムーズな実施が保証されます。詳しくは [イベントページ](/handbook/marketing/developer-relations/events/)を参照してください。
+Developer Advocate チームは、イベントのサポートにおいて重要な役割を果たします。私たちは [Corporate Event Marketing](/handbook/marketing/growth-marketing/corporate-events/)と緊密に連携し、Corporate Events とサードパーティ協賛イベントの両方に対して、戦略的なコンテンツと支援を提供します。このコラボレーションにより、さまざまな集まりの成功とスムーズな実施が保証されます。詳しくは [イベントページ](/handbook/marketing/developer-relations/events/)を参照してください。
 
 私たちはまた、ローカルのテックイベントやミートアップでの講演の機会に向けて、チームメンバーが準備するのを支援します。そのようなイベントの準備に手助けが必要な場合は、Slack の [#developer-advocacy](https://app.slack.com/client/T02592416/CMELFQS4B) チャンネルでご連絡いただくか、[Developer Advocate リクエストのテンプレート](https://gitlab.com/gitlab-com/marketing/developer-relations/developer-advocacy/developer-advocacy-meta/-/issues/new?description_template=developer-advocate-request)を使用して Issue を作成してください。
 

@@ -1,11 +1,11 @@
 ---
 title: "デベロッパーアドボカシー コミュニティ対応プロセス"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/community-response/
-upstream_sha: 18de125bd3131a62f0a7026bc69c7de124fc6c8a
-translated_at: "2026-06-20T12:58:25Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: 2026-06-16T12:33:40-04:00
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## コミュニティ対応にデベロッパーアドボケイトを巻き込む方法
@@ -102,7 +102,7 @@ lastmod: 2026-06-16T12:33:40-04:00
 
 * 必要に応じて、デベロッパーアドボケイトは GitLab フォーラム、Hacker News、その他のフォーラムで、コミュニティの質問や懸念に対応します。
 * GitLab に関する投稿が Hacker News のフロントページに到達した場合、Zoom ルームと Google ドキュメントを使用して、同期的に応答について協力する場合があります。状況が議論されている Slack スレッドまたはチャンネル、または [#developer-advocacy Slack チャンネル](https://gitlab.slack.com/archives/CMELFQS4B) で Zoom ルームと Google ドキュメントへのリンクを共有します。
-* デベロッパーアドボカシーチームは、これらの発表や速報の状況の間、Twitter やその他のソーシャルメディアチャンネルでの応答にはほとんど関与しません。これらの状況では、Twitter、Facebook、LinkedIn は主に [ソーシャルメディアチーム](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/) が所有します。
+* デベロッパーアドボカシーチームは、これらの発表や速報の状況の間、Twitter やその他のソーシャルメディアチャンネルでの応答にはほとんど関与しません。これらの状況では、Twitter、Facebook、LinkedIn は主に [ソーシャルメディアチーム](/handbook/marketing/corporate-communications/social-marketing/) が所有します。
 * メッセージングが繊細な状況では、応答を作成するために [コーポレートコミュニケーションズチーム](/handbook/marketing/corporate-communications/) からの承認済みメッセージングに依存します。
 
 #### ラピッドアクション応答

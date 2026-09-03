@@ -2,9 +2,9 @@
 title: "セルフペース型の外部トレーニング"
 description: "GitLab の各部門が利用しているサードパーティのトレーニングプロバイダーの詳細"
 upstream_path: "/handbook/people-group/learning-and-development/self-paced-learning/"
-upstream_sha: "a2af0b1d81734a87d89ce13f0302597755181359"
-lastmod: "2026-08-04T09:49:53+00:00"
-translated_at: "2026-08-05T06:14:38+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+lastmod: "2026-08-28T11:49:01+01:00"
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
 ---
@@ -18,6 +18,8 @@ O'Reilly Learning のライブラリには、チームメンバーの専門的�
 ### O'Reilly ライセンスの取得方法
 
 O'Reilly は Engineering 部門が資金を提供しているため、現時点では Engineering のチームメンバーのみが利用可能です。アクセスは [Lumos](/handbook/security/corporate/systems/lumos/ar/) からリクエストしてください。シート数は非常に限られているため、空きが出るまで待つ必要がある場合があります。
+
+シートとライセンスを有効に活用するため、3 か月後にアクセスを削除し、ほかのユーザーへ再割り当てします。将来再びアクセスが必要になった場合は、改めてリクエストできます。
 
 Engineering 以外の部門に所属していて O'Reilly ライセンスを取得したい場合は、[G&D Fund](/handbook/people-group/learning-and-development/growth-and-development/) を利用して購入できます。
 

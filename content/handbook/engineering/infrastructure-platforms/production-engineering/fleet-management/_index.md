@@ -2,11 +2,11 @@
 title: "Fleet Management チーム"
 description: "Fleet Management チームは、GitLab の本番環境を支えるコア Kubernetes クラスター、VM、標準化された OS イメージ、主要な Infrastructure-as-Code プラットフォームを含む基盤インフラストラクチャをプロビジョニングし、セキュリティを確保し、保守します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/fleet-management/"
-upstream_sha: ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c
-translated_at: "2026-06-24T07:51:36+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-23T17:06:25+00:00"
+lastmod: "2026-08-28T14:27:26+10:00"
 ---
 
 Production Engineering の中で、Fleet Management チームは GitLab のコアインフラストラクチャ管理ユニットとして機能します。私たちは、コア Kubernetes クラスター、仮想マシン、標準化された OS イメージ、シークレット管理を含む基盤をプロビジョニング、スケール、セキュア化します。低レベルのコンピュートレイヤーを所有することで、社内のお客様が摩擦なく自分たちのサービスの構築とデプロイに完全に集中できるようにします。
@@ -41,7 +41,7 @@ Fleet Management チームは次に注力します。
 
 ## チームメンバー
 
-{{< team-by-manager-slug "galon" >}}
+{{< team-by-manager-slug manager="galon3" department="Production Engineering Fleet Management Team" >}}
 
 ## 私たちの働き方
 

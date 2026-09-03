@@ -2,11 +2,11 @@
 title: "セキュリティコンプライアンスチーム"
 description: "セキュリティコンプライアンスチーム"
 upstream_path: /handbook/security/security-assurance/security-compliance/
-upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
-translated_at: "2026-07-29T06:29:34+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T05:53:28-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ### セキュリティコンプライアンスチームチャーター
@@ -50,7 +50,7 @@ lastmod: "2026-07-28T05:53:28-07:00"
 1. ドッグフーディング
     - 私たちはコアコンピテンシーを実行するために GitLab 製品を使用します
     - 私たちは観察事項を是正しリスクを低減するための GitLab 機能ソリューションを推奨します
-    - 私たちは[コンプライアンスペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#cameron-compliance-manager)を体現することで製品にフィードバックを提供します。
+    - 私たちは[コンプライアンスペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#cameron-compliance-manager)を体現することで製品にフィードバックを提供します。
 
 ## 運用モデル
 

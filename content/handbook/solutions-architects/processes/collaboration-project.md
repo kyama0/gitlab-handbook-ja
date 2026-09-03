@@ -3,11 +3,11 @@ title: ソリューションアーキテクチャ コラボレーションプロ
 description: >-
   お客様および製品との議論の場としてのコラボレーションプロジェクト
 upstream_path: /handbook/solutions-architects/processes/collaboration-project/
-upstream_sha: 5eeae5a75957f16a16538b0ec5f531ce723f3a8a
-translated_at: "2026-05-09T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## お客様とのエンゲージメント中、いつコラボレーションプロジェクトを検討すべきか?
@@ -25,7 +25,7 @@ GitLab が複数の異なる部門の複数の異なるステークホルダー�
 ### 内部への影響
 
 GitLab コラボレーションプロジェクトは、ソリューションアーキテクトとお客様チームとのコラボレーションに基づくお客様のさまざまなインサイトを見つけるのに非常に有用です。GitLab のクロスファンクショナルチームの例として、GitLab コラボレーションプロジェクトから恩恵を受けるのは Product、Marketing、Professional Services、Sales チームです。内部への影響には、製品ロードマップの強化、製品フィードバック、戦略の強化、戦略マーケティングへの影響などが含まれます。
-たとえば、コラボレーションプロジェクトに基づくフィードバックにより、[Solutions Go-to-market](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/) マーケティングアクティビティを介して新しい製品ソリューションのレビュー、改善、または追加につながる場合があります。
+たとえば、コラボレーションプロジェクトに基づくフィードバックにより、[Solutions Go-to-market](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/) マーケティングアクティビティを介して新しい製品ソリューションのレビュー、改善、または追加につながる場合があります。
 
 ### 外部への影響
 

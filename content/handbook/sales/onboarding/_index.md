@@ -2,11 +2,11 @@
 title: "GitLab Academy"
 description: "GitLab Academy は、CRO 組織の新入社員全員を対象としたオンボーディングプログラムです。これまでで最も野心的なオンボーディング体験であり、新しいフィールドチームメンバーが入社後 30 日以内にカスタマー対応可能になることを目的とした、ブレンデッドラーニングジャーニーです。"
 upstream_path: /handbook/sales/onboarding/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-22T15:45:59+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## GitLab Academy について
@@ -108,7 +108,7 @@ GitLab Academy には、各セグメントとロールの独自のニーズを�
 - Customer Success (CSE) — [CSE Onboarding Handbook](/handbook/customer-success/csm/segment/cse/cse-tm-onboarding/)
 - Solutions Architects — [SA Onboarding Handbook](/handbook/solutions-architects/sa-enablement/sa-onboarding/)
 - Professional Services — [Professional Services Handbook](/handbook/customer-success/professional-services-engineering/)
-- Sales and Business Development — [SDR & BDR Onboarding (Tanuki Tech) Handbook](/handbook/marketing/sales-development/tanuki-tech/)
+- Sales and Business Development — [SDR & BDR Onboarding (Tanuki Tech) Handbook](/handbook/sales/sales-development/tanuki-tech/)
 
 ---
 

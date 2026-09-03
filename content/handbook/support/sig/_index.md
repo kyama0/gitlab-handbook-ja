@@ -2,9 +2,9 @@
 title: Support Innovation Group (SIG)
 description: Support Innovation Group（SIG）は、Support、IT、Product をつなぎ、AI を活用したワークフロー、ナレッジ、サポートイノベーションを推進する、GitLab の部門横断的な取り組みです。
 upstream_path: /handbook/support/sig/
-upstream_sha: 30048133aad0232ed4d59fa0c80643620c85adb3
-lastmod: "2026-08-03T15:25:29-04:00"
-translated_at: "2026-08-04T06:05:19+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+lastmod: "2026-09-01T08:13:52-04:00"
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
 ---
@@ -23,7 +23,7 @@ SIG と Support Ops（IT）は緊密に連携します —
 
 このセクションは、プロセスを簡素化し、SIG Team Lead と SIG Team Member の役割を理解しやすくするために作成されました。
 
-受付リクエストは、[SIG 受付リクエストフォーム](https://gitlab.com/gitlab-com/support/support-project-portfolio/-/work_items/new?description_template=sig_intake)を通じて行います。
+誰でも [SIG 受付リクエストフォーム](https://gitlab.com/gitlab-com/support/support-project-portfolio/-/work_items/new?description_template=sig_intake)から受付リクエストを作成できます。
 
 1. 変更リクエスト（既存プロセスへの変更の場合）
 1. プロジェクトリクエスト（まだ存在せず、開始とサブタスクが必要な大規模な依頼の場合）

@@ -2,11 +2,11 @@
 title: "チャネルパートナーツールとリソース"
 description: "GitLab ビジネスの成長を支援するチャネルパートナー向けのツールとリソース。"
 upstream_path: /handbook/resellers/channel-tools-resources/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2025-06-16T19:49:06+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 **GitLab チャネルパートナーになることに関心をお持ちの組織は [今すぐ申し込む](https://partners.gitlab.com/partner/registration) ことをお勧めします。**
@@ -35,7 +35,7 @@ GitLab チャネルパートナーは、組織のウェブサイトの一部と�
 
 - 組織の GitLab ウェブページでは、Authorized Reseller ロゴ（パートナーポータルで入手可能）を使用し、[about.gitlab.com](https://about.gitlab.com/) へのリンクを設置してください。
 
-- ウェブページには「GitLab とは何か？」の段落を含めてください。これは私たちのロゴと共に [プレスキット](https://about.gitlab.com/press/press-kit/) に掲載されています。追加情報は [リセラーマーケティングキット](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/reseller-kit/) で確認できます。
+- ウェブページには「GitLab とは何か？」の段落を含めてください。これは私たちのロゴと共に [プレスキット](https://about.gitlab.com/press/press-kit/) に掲載されています。追加情報は [リセラーマーケティングキット](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/reseller-kit/) で確認できます。
 
 - 私たちの製品をあなたのウェブサイト上で一貫して表現していただくため、GitLab 製品または機能を言及する場所には必ず [about.gitlab.com](https://about.gitlab.com/) の対応する項目へのリンクを設置することをお願いしています。
 

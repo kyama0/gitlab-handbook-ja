@@ -1,11 +1,11 @@
 ---
 title: バリューをどう実践するか
 upstream_path: /handbook/engineering/devops/create/engineering-managers/live/
-upstream_sha: 81a617744130f76604f641d4483828edd0d60d2f
-translated_at: "2026-04-28T10:21:26Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2025-12-05T19:47:34+00:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 Create エンジニアリングマネージャーは率先垂範します。このページでは、EM が GitLab の[バリュー](/handbook/values/)をどのように実践しているかを共有します。
@@ -69,7 +69,7 @@ Create エンジニアリングマネージャーは率先垂範します。こ�
 
 ## ダイバーシティ
 
-- [非同期コミュニケーションへの偏り](/handbook/company/culture/all-remote/asynchronous/)
+- [非同期コミュニケーションへの偏り](/handbook/communication/#asynchronous-communication)
 - [Family and Friends Day](/handbook/company/family-and-friends-day/)や Create チームデーなどの活動を通じて家族を歓迎する雰囲気を作る
 
 ## イテレーション

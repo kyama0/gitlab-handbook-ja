@@ -3,11 +3,11 @@ title: タレントブランド
 description: "雇用主としての私たちの野心、それを達成し伝達するための私たちが取るステップ、そしてそれに応えるための対策。"
 twitter_image: '/images/tweets/all-remote.jpg'
 upstream_path: /handbook/people-group/employment-branding/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-25T08:51:32-04:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## はじめに
@@ -148,7 +148,7 @@ GitLab タレントアンバサダーになることで、GitLab での生活に
 
 ### ソーシャルメディア
 
-私たちは、採用と文化に関するコンテンツを GitLab の [ソーシャルメディア](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/) アカウントに組み込んで、候補者やコミュニティが会社全体についてもっと知ることができる中央の場所が 1 つあるようにしています。
+私たちは、採用と文化に関するコンテンツを GitLab の [ソーシャルメディア](/handbook/marketing/corporate-communications/social-marketing/) アカウントに組み込んで、候補者やコミュニティが会社全体についてもっと知ることができる中央の場所が 1 つあるようにしています。
 
 LinkedIn には、候補者が GitLab での生活についてもっと知ることができる特定の [キャリアページ](https://www.linkedin.com/company/gitlab-com/life) があります。
 

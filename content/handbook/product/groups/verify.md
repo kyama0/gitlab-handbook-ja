@@ -2,9 +2,9 @@
 title: "Verify プロダクトグループ"
 description: "Verify Product Group は、共有、発見可能性、非同期コミュニケーションへのバイアスを高めることを目指しています。"
 upstream_path: /handbook/product/groups/verify/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-lastmod: "2026-08-13T15:10:33+03:00"
-translated_at: "2026-08-13T23:52:41+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
 ---
@@ -66,7 +66,7 @@ GitLab では、責任を割り当てるために [DACI](/handbook/people-group/
 
 #### Product Marketing との関わり
 
-私たちは [Product Marketing Management](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/core-product-marketing/) と非常に密接に連携しています。Verify ステージには、[PMM チーム構成](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/core-product-marketing/)で定義されている安定したカウンターパートが割り当てられており、これは [CI ユースケース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/)に沿っています。
+私たちは [Product Marketing Management](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/core-product-marketing/) と非常に密接に連携しています。Verify ステージには、[PMM チーム構成](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/core-product-marketing/)で定義されている安定したカウンターパートが割り当てられており、これは [CI ユースケース](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/)に沿っています。
 
 主なプロセスは 4 つあります:
 

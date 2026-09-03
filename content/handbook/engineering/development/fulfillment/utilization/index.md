@@ -2,11 +2,11 @@
 title: Fulfillment Utilization チーム
 description: "GitLab の Fulfillment サブ部門の Utilization チーム"
 upstream_path: /handbook/engineering/development/fulfillment/utilization/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-22T14:47:44+02:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## 概要
@@ -22,20 +22,20 @@ Utilization グループは [Utilization カテゴリ](/handbook/product/categor
 ## チームメンバー
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/fulfillment/utilization/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{% team-by-departments "Fulfillment:Utilization Team" %}}
 
 
 ## 安定したカウンターパート
 
 
-<p class="my-3 text-sm text-gray-600 italic">チームメンバー情報は <a href="https://handbook.gitlab.com/handbook/engineering/development/fulfillment/utilization/#team-members" rel="external noopener">原文 (英語)</a> を参照してください。</p>
+{{< engineering/stable-counterparts role="Fulfillment:Utilization|Security(.*)Fulfillment|Director(.*)Fulfillment" manager-role="Fullstack Engineering Manager, Fulfillment:Utilization" >}}
 
 
 ## 作業方法
 
 ### 同期時間は貴重
 
-私たちはできる限り [非同期で作業](/handbook/company/culture/all-remote/asynchronous/) しようとしています。しかし、同期コミュニケーションがタスクに適している場合もあります。週次チームシンクミーティングは、勝利を祝い、多くの Issue について素早くコラボレーションし、オールリモート環境で対面する機会となります。
+私たちはできる限り [非同期で作業](/handbook/communication/#asynchronous-communication) しようとしています。しかし、同期コミュニケーションがタスクに適している場合もあります。週次チームシンクミーティングは、勝利を祝い、多くの Issue について素早くコラボレーションし、オールリモート環境で対面する機会となります。
 
 重要なのは、この高帯域幅のコミュニケーションを使用して、チームからの追加的な議論と入力が必要な Issue を確認し、Issue を見積もり、最小限のやり取りで作業を開発できるようにすることです。
 

@@ -2,11 +2,11 @@
 title: "UserGems"
 description: "UserGems はジョブチェンジ追跡ツールで、シグナルを収集・統合することで、私たちのチームが最良のバイヤーを特定し、アプローチする説得力ある理由を持ち、自動化によってそのインサイトに基づいて行動できるよう支援します"
 upstream_path: /handbook/marketing/marketing-operations/usergems/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-01T01:10:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-17T16:13:00-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ### UserGems データへのアクセス方法
@@ -166,4 +166,4 @@ SDR/BDR 向けのトレーニングは 2024/09/19 に実施され、録画は[�
 
 ### Sales Dev Plays
 
-UserGems が作成したリードに対するさまざまなプレイの詳細については、[Sales Development ハンドブックの UserGems エントリ](/handbook/marketing/sales-development/#usergems)をご覧ください。
+UserGems が作成したリードに対するさまざまなプレイの詳細については、[Sales Development ハンドブックの UserGems エントリ](/handbook/sales/sales-development/#usergems)をご覧ください。

@@ -2,11 +2,11 @@
 title: 商談の推進
 description: 商談を推進するための GitLab セールスプロセス
 upstream_path: /handbook/sales/sales-operating-procedures/facilitate-the-opportunity/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 リードを認定し、それをセールスに変える必要があります。このフェーズは **商談の推進 (Facilitate the Opportunity)** と呼ばれます。このフェーズの目的は、顧客から **テクニカルコミット**、続いて **エコノミックコミット** を獲得することです。コミットとは、買い手がディールを進めたいという口頭での承認です。このフェーズでは、テクニカルコミットとエコノミックコミットを獲得するために完了させる必要のある 4 つのハイレベルなタスクがあります。
@@ -28,7 +28,7 @@ lastmod: "2026-05-08T14:07:20+02:00"
 
 #### 1.1.1 バイヤーペルソナを判断する
 
-[バイヤーペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)は、主要な買い手を架空表現したものです。これにより、買い手にとって重要な障害、反対、イニシアチブ、メトリクスを事前に特定できます。このステップは、競合よりも顧客をよりよく理解する優位性を与えてくれます。一般的に出会う可能性のあるバイヤーペルソナは 5 つあります。
+[バイヤーペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)は、主要な買い手を架空表現したものです。これにより、買い手にとって重要な障害、反対、イニシアチブ、メトリクスを事前に特定できます。このステップは、競合よりも顧客をよりよく理解する優位性を与えてくれます。一般的に出会う可能性のあるバイヤーペルソナは 5 つあります。
 
 - テクノロジーリーダー
 - ビジネスアプリケーションリーダー

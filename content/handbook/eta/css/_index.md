@@ -2,11 +2,11 @@
 title: Customer Support Systems
 description: GitLab Customer Support Systems
 upstream_path: "/handbook/eta/css/"
-upstream_sha: "db1b52fb5e65d37509c3eaaaebfd50dd491e4b36"
-translated_at: "2026-07-22T06:32:52+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-21T11:29:58-05:00"
+lastmod: "2026-08-17T11:34:58-05:00"
 ---
 
 ## 目的
@@ -21,7 +21,7 @@ Customer Support Systems の目的は、次の方法により GitLab が優れ�
 
 | 名前 | 役割 |
 |------|------|
-| [Namo Tiwari](https://gitlab.com/namotiwari) | VP - Business Systems |
+| [TJ Pais](https://gitlab.com/tjpais) | Director - Customer Support Systems |
 | [Jason Colyer](https://gitlab.com/jcolyer) | Fullstack Engineer, Customer Support Systems |
 | [Dylan Tragjasi](https://gitlab.com/dtragjasi) | Senior Customer Support Systems Specialist |
 | [Sarah Cole](https://gitlab.com/Secole) | Customer Support Systems Specialist |

@@ -2,11 +2,11 @@
 title: サポートポッド
 description: サポート内および各機能をまたいだ協働に焦点を当てる柔軟な関心グループ
 upstream_path: /handbook/support/support-pods/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T23:52:41+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-13T05:18:12-04:00"
+lastmod: "2026-08-28T10:29:09-04:00"
 ---
 
 サポートポッドは、任意のチームメンバーグループが、取り組みたい任意の課題セットに対して、関心ベースの自己組織化グループを立ち上げるために利用できる柔軟なフレームワークです。
@@ -34,7 +34,7 @@ GitLab の製品機能セットや顧客のユースケースは、ある程度�
 | [Documentation](docs) | [#spt_pod_docs](https://gitlab.enterprise.slack.com/archives/C07UU2R5SKU) | <ul><li>{{< member-by-name "Michelle Almendarez" >}}</li><li>{{< member-by-name "Michael Gibson" >}}</li></ul> |
 | [Geo](geo) | [#spt_pod_geo](https://app.slack.com/client/T02592416/C03D96JF4LD) | <ul><li>{{< member-by-name "Ronald van Zon" >}}</li><li>{{< member-by-name "Anton Smith" >}}</li></ul> |
 | [GET](get) | [#spt_pod_get](https://app.slack.com/client/T02592416/C05NL747NMD) | |
-| [Git and Gitaly](git-and-gitaly) | [#spt_pod_git](https://gitlab.enterprise.slack.com/archives/C04D5FUADAM) | <ul><li>{{< member-by-name "Jessie Lee" >}}</li></ul> |
+| [Git and Gitaly](git-and-gitaly) | [#spt_pod_git](https://gitlab.enterprise.slack.com/archives/C04D5FUADAM) | |
 | [GitLab Dedicated](gitlab-dedicated) | [#support_gitlab-dedicated](https://gitlab.enterprise.slack.com/archives/C058LM1RL3V) | <ul><li>{{< member-by-name "Nilanka De Silva" >}}</li><li>{{< member-by-name "Rommel Rodas" >}}</li><li>{{< member-by-name "Daphne Kua" >}}</li><li>{{< member-by-name "Wei-Meng Lee" >}}</li></ul> |
 | [Import](import) | [#spt_pod_import](https://gitlab.enterprise.slack.com/archives/C052K0Z1F8T) | <ul><li>{{< member-by-name "Anton Smith" >}}</li></ul> |
 | [Integrations](integrations) | [#spt_pod_integrations](https://gitlab.enterprise.slack.com/archives/C08VB43K9N0) | <ul><li>{{< member-by-name "Anton Smith" >}}</li></ul> |

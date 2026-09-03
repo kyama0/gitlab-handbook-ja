@@ -1,11 +1,11 @@
 ---
 title: "テクニカル面接"
 upstream_path: /handbook/hiring/interviewing/technical/
-upstream_sha: fe88192cad67a795a237396e552566cb08c118b9
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-04T12:15:15-08:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 **テクニカル面接ガイド**
@@ -16,7 +16,7 @@ lastmod: "2026-03-04T12:15:15-08:00"
 
 少なくともスケジュールされたコールの 72 時間前にマージリクエストへのリンクを受け取ります。プロジェクトへの貢献と同じようにアプローチして、最大 1 時間かけてレビューすることをお勧めします。マージリクエストは自己完結型であり、プロジェクト内で追加のコンテキストを検索する必要はありません。面接官が面接前に進捗を評価するのに十分な時間を確保するため、スケジュールされた時間の少なくとも 24 時間前にレビューを完了してください。また、非同期の貢献を完了した時点でプラットフォームにメモを残してください。
 
-このテクニカル面接は 90 分のビデオ通話とスクリーン共有セッションで、面接官がレビューを一通り案内してもらい、マージリクエストを改善するためのコードも書きます。この面接の目的は、[非同期](/handbook/company/culture/all-remote/asynchronous/)でどのようにコミュニケーションするか、技術の知識、そしてチームメンバーとどれだけ[コラボレーション](/handbook/values/#collaboration)できるかを確認することです。[バックエンド役割](/job-description-library/engineering/development/backend/)か[フロントエンド役割](/job-description-library/engineering/development/frontend/)かに関わらず、役割に記載されている資格を中心とした質問が予想されます。
+このテクニカル面接は 90 分のビデオ通話とスクリーン共有セッションで、面接官がレビューを一通り案内してもらい、マージリクエストを改善するためのコードも書きます。この面接の目的は、[非同期](/handbook/communication/#asynchronous-communication)でどのようにコミュニケーションするか、技術の知識、そしてチームメンバーとどれだけ[コラボレーション](/handbook/values/#collaboration)できるかを確認することです。[バックエンド役割](/job-description-library/engineering/development/backend/)か[フロントエンド役割](/job-description-library/engineering/development/frontend/)かに関わらず、役割に記載されている資格を中心とした質問が予想されます。
 
 [ライブコーディングはストレスがかかることを理解しています](https://about.gitlab.com/blog/2019/03/28/what-its-like-to-interview-at-gitlab/#stage-3-technical-interview)。[コードレビューガイドライン](https://docs.gitlab.com/ee/development/code_review.html)を確認し、スケジュールされた面接の前にリクルーターまたは CES チームメンバーにご質問ください。
 

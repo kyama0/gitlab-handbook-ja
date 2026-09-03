@@ -2,11 +2,11 @@
 title: "セールス向けの技術的質問"
 description: "セールス効率を改善するため、GitLab Solution Architect チームは GitLab セールスチームメンバーが回答できるようにすべき最も一般的な技術的質問を特定し、回答しました"
 upstream_path: /handbook/sales/training/technical-questions-for-sales/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## **はじめに**
@@ -91,7 +91,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 </figure>
 
 - **詳細**：
-  - [No Tissues with Issues](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/101/) ページを確認してください
+  - [No Tissues with Issues](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/101/) ページを確認してください
   - こちらの [How to set up GitLab groups and projects to run multiple Agile teams with microservices](https://www.youtube.com/watch?v=VR2r1TJCDew) 動画（2019 年 1 月、15 分）を視聴してください
 
 #### Jira をどのように統合できますか？

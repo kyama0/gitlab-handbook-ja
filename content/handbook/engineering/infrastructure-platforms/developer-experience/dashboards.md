@@ -2,11 +2,11 @@
 title: "Developer Experience ダッシュボード"
 description: "このハンドブックページは、すべての Developer Experience ダッシュボードの詳細の中央リポジトリとして機能します"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/dashboards/"
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T06:52:34+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-15T17:51:54+00:00"
+lastmod: "2026-08-20T14:51:55+01:00"
 ---
 
 > 耐障害性があり効率的で堅牢なプラットフォームを追求するにあたり、私たちのテストプラットフォームサブ部門は
@@ -24,7 +24,8 @@ lastmod: "2026-07-15T17:51:54+00:00"
 ||[dx: Failure Analysis Dashboard](https://dashboards.gitlab.net/d/dx-failure-analysis)| CI パイプラインの失敗分析。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
 ||[dx: Master-Broken Incident Detection](https://dashboards.gitlab.net/d/dx-master-broken-incident-detection)| Master-broken インシデント関連ダッシュボード。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
 ||[dx: Test Governance Key Metrics](https://dashboards.gitlab.net/d/dx-test-governance)| gitlab-org/gitlab の CI/CD パイプライン実行に関連する主要メトリクス。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
-|テストメトリクス|[dx: Test Suite Overview](https://dashboards.gitlab.net/d/dx-suite-overview/dx3a-test-suite-overview)| テストスイートのヘルスとステータスの概要。|[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
+|テストメトリクス|[dx: Test Health](https://dashboards.gitlab.net/d/dx-test-health)| Flaky、Quarantine、Slow の各ピラーにわたるグループごとのテストスイート健全性スコア。[Test Health スコアの読み方](/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/test-health)。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
+||[dx: Test Suite Overview](https://dashboards.gitlab.net/d/dx-suite-overview/dx3a-test-suite-overview)| テストスイートのヘルスとステータスの概要。|[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
 ||[dx: Predictive Tests](https://dashboards.gitlab.net/d/dx-predictive-tests)| 予測テストのメトリクス。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
 ||[dx: Quarantined Tests](https://dashboards.gitlab.net/d/dx-quarantined-tests)| 隔離されたテストの概要。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|
 ||[dx: Test File Failure Overview](https://dashboards.gitlab.net/d/dx-test-file-failure-overview)| テストファイル別に集計されたすべてのテスト失敗。 |[Development Analytics](../../infrastructure-platforms/developer-experience/development-analytics)|

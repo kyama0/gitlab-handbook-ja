@@ -2,11 +2,11 @@
 title: "セールスプレイ"
 description: "セールスプレイは、定義された Land and Expand のセールスモーションによって、案件数とクローズ済みビジネスの量を改善するために設計されています"
 upstream_path: /handbook/marketing/sales-plays/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## なぜセールスプレイが必要なのか
@@ -64,5 +64,5 @@ lastmod: "2024-06-27T22:14:31+00:00"
 | GitHub 競合対応 | ENT および COM。First Order および Growth | 包括的な Value Stream Delivery Platform (VSDP) で標準化したい組織 | エコノミックバイヤーおよびテクニカルインフルエンサー |
 | ソースコード管理の競合排除 | ENT および COM。主に First Order | レガシーな SCM ソリューションから、ベストオブブリードのオンプレミスまたは SaaS の SCM ソリューションに移行し、DevSecOps ツールチェーンを統合する能力を探している組織 | CIO または VP of IT。VP、Director、Manager of Application Development |
 | セキュリティの排除および/または強化 | 主に ENT。Growth | アプリケーションセキュリティの体制を改善したい組織 | CIO または VP of IT。CISO。IT Security Manager |
-| [デジタルトランスフォーメーション / DevOps プラットフォーム](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/) | ENT および COM。First Order および Growth | より広範なデジタルトランスフォーメーションの取り組みをサポートするために、アプリケーション開発とデリバリーのスピードを加速し、可視性を向上させたい組織 | エコノミックバイヤーおよびテクニカルインフルエンサー |
+| [デジタルトランスフォーメーション / DevOps プラットフォーム](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/) | ENT および COM。First Order および Growth | より広範なデジタルトランスフォーメーションの取り組みをサポートするために、アプリケーション開発とデリバリーのスピードを加速し、可視性を向上させたい組織 | エコノミックバイヤーおよびテクニカルインフルエンサー |
 | クラウドネイティブ & アプリケーションのモダナイゼーション | ENT および COM。First Order および Growth | アプリケーション開発により近代的でクラウドネイティブなアプローチを使用したい組織（例：コンテナ、Kubernetes、サーバーレス） | エコノミックバイヤーおよびテクニカルインフルエンサー |

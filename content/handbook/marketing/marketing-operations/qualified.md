@@ -2,11 +2,11 @@
 title: "Qualified"
 description: "Qualified は、GitLab マーケティングウェブサイト上の訪問者と即座にセールスの会話を促進します"
 upstream_path: /handbook/marketing/marketing-operations/qualified/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-04T13:04:56-08:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
@@ -37,7 +37,7 @@ BDR（アウトバウンド担当者）は、AI Rep と会話している間に�
 
 - 私たちの CRM に存在し、Actively Sequenced されている訪問者は、シーケンス担当者にルーティングされます。
 - US PubSec アカウントに関連付けられていると識別された訪問者は、そのアカウントの BDR Assigned にルーティングされます。アカウントに BDR Assigned が存在しない場合、PubSec チームにラウンドロビンされます。
-- Actively Working アカウントに関連付けられていると識別された訪問者は、そのアカウントの BDR Assigned にルーティングされます。担当者が利用できない場合、訪問者はリードをさらに認定するために Geo に基づいてインバウンド SDR チームにルーティングされます。SDR にルーティングされると、リードのオーナーシップは標準の [エンゲージメントルール](/handbook/marketing/sales-development/#rules-of-engagement-quick-guide) によって決定されます。
+- Actively Working アカウントに関連付けられていると識別された訪問者は、そのアカウントの BDR Assigned にルーティングされます。担当者が利用できない場合、訪問者はリードをさらに認定するために Geo に基づいてインバウンド SDR チームにルーティングされます。SDR にルーティングされると、リードのオーナーシップは標準の [エンゲージメントルール](/handbook/sales/sales-development/) によって決定されます。
 - 英語以外のエクスペリエンスのいずれかと対話する訪問者は、適切な言語を話すチームメンバーにルーティングされます。
 - シーケンスされていない、PubSec ではない、Actively Working アカウントの一部ではない訪問者は、適切な Geo ベースの SDR ラウンドロビンプールにルーティングされます。
 

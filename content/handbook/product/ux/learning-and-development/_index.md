@@ -3,11 +3,11 @@ title: UX 部門の学習と開発
 description: >-
   このページには、GitLab の UX 部門のメンバーがスキルを構築するために使用できる内部および外部リソースへのリンクが含まれています。
 upstream_path: /handbook/product/ux/learning-and-development/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2025-03-07T10:45:14-08:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 GitLab の UX 部門の学習と開発へようこそ！しばらくの間、ここでコンテンツを自由に探索してください。このコンテンツを GitLab Learn に追加した時点で、このページを更新します。
@@ -107,7 +107,7 @@ GitLab は、外部リソースにアクセスしてキャリアを開発する�
 
 - [Minimum Viable Experiment](/handbook/engineering/development/growth/experimentation/#minimum-viable-experiment-mve)
 - [Growth がどのように実験を起動するか](/handbook/product/groups/growth/#how-growth-launches-experiments)
-- [Growth Experiments ナレッジベース](/handbook/marketing/growth/)
+- [Growth Experiments ナレッジベース](/handbook/marketing/growth-marketing/)
 
 ### ビデオ
 

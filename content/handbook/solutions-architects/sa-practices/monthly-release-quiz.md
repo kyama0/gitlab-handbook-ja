@@ -2,11 +2,11 @@
 title: "月次リリースクイズ"
 description: "月次のクイズイベントで、SA とより広いカスタマーサクセスチームに新機能および既存機能の知識を身につけてもらう"
 upstream_path: /handbook/solutions-architects/sa-practices/monthly-release-quiz/
-upstream_sha: 5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8
-translated_at: "2026-05-08T18:13:56Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2024-06-27T22:14:31+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ソリューションアーキテクトはすべてのプロダクト変更に追従する必要がありますが、GitLab が毎月のアップデートで新機能をリリースしているため、追跡するのが難しいことがあります。
@@ -34,7 +34,7 @@ lastmod: "2024-06-27T22:14:31+00:00"
 5. イベント中、一方のオーガナイザーが画面を共有します
 6. イベントは、参加者に Kahoot への参加方法をリマインドして始まります。参加者はプレイの際に実名を使うことが推奨されます。
 7. 各オーガナイザーが準備した質問を読み上げ、答えを伝える際に追加情報を提供します
-8. クイズの後、賞品は[このプロセス](/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/#organizing-a-giveaway-or-gift)に従ってリクエストされます。
+8. クイズの後、賞品は[このプロセス](/handbook/marketing/brand-experience/merchandise-handling/)に従ってリクエストされます。
 予算は月 100 ドルです。推奨ギフト額は、1 位 45 ドル、2 位 30 ドル、3 位 25 ドルです。
 9. 当選者には、バウチャーの利用方法に関する情報をメールで送信します。
 

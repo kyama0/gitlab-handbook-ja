@@ -2,11 +2,11 @@
 title: "Zoominfo"
 description: "ZoomInfo は、ビジネスや専門職のコンタクト情報のデータベースを提供するセールスインテリジェンスソフトウェアです。"
 upstream_path: /handbook/marketing/marketing-operations/zoominfo/
-upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
-translated_at: "2026-07-30T09:08:29+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ### ZoomInfo について
@@ -70,7 +70,7 @@ GitLab 専用の Zoominfo トレーニングセッションにアクセスする
 
 ### Do Not Call と Do Not Email の自動化
 
-適切な条件が設定されている場合、Zoominfo は SFDC のリード/コンタクトに `Do not email` および `Do not call` のラベルを付けることができます。ルールの詳細については、[sales development handbook ページ](/handbook/marketing/sales-development/#do-not-call-and-do-not-email-automations)を参照してください。
+適切な条件が設定されている場合、Zoominfo は SFDC のリード/コンタクトに `Do not email` および `Do not call` のラベルを付けることができます。ルールの詳細については、[sales development handbook ページ](/handbook/sales/sales-development/#do-not-call-and-do-not-email-automations)を参照してください。
 
 ### Zoominfo ライセンスポリシーと手順
 

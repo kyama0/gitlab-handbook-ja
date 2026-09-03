@@ -1,11 +1,11 @@
 ---
 title: "ハンドブック スタイルガイド"
 upstream_path: /handbook/about/style-guide/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T04:59:08Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2025-04-01T09:22:28+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 GitLab の一般的なコミュニケーション実践については [GitLab Communication](/handbook/communication/) に詳しく記載されていますが、それ以外にもチャンネル固有のガイダンスがあります。
@@ -26,5 +26,5 @@ GitLab の一般的なコミュニケーション実践については [GitLab C
   - [ドキュメントスタイルガイド](https://docs.gitlab.com/ee/development/documentation/styleguide/)
 - [GitLab スタイルガイド](https://docs.gitlab.com/ee/development/contributing/style_guides.html)
 - [Pajamas デザインシステム](https://design.gitlab.com/)
-- [マーケティングサイト コンテンツスタイルガイド](/handbook/marketing/brand-and-product-marketing/brand/content-style-guide.md)
-- [ブログスタイルガイド](/handbook/marketing/brand-and-product-marketing/content/editorial-team/)
+- [マーケティングサイト コンテンツスタイルガイド](/handbook/marketing/brand-experience/content-style-guide.md)
+- [ブログスタイルガイド](/handbook/marketing/product-and-technical-marketing/content/editorial-team/)

@@ -2,11 +2,11 @@
 title: "マーケティングキャリア開発 - 概要"
 description: "このページではマーケティングキャリア開発プログラムの詳細を説明します。"
 upstream_path: /handbook/marketing/marketing-career-development/
-upstream_sha: 768e1a6af6ab56133195582e6a0b17d225df15f7
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-27T16:37:34+01:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
@@ -67,7 +67,7 @@ Todd は、このウェルカム [動画](https://gitlab.edcast.com/insights/wel
 
 ### マーケティングキャンペーン
 
-- [GitLab GTM のプラン、Motion、ユースケースを理解する](/handbook/marketing/plan-fy23/)
+- GitLab GTM のプラン、Motion、ユースケースを理解する
 - [GitLab における Demand Generation とは](/handbook/marketing/demand-generation/)
 - [Tanuki Tech によるメールマーケティング](https://gitlab.com/gitlab-com/marketing/sdr/-/issues/628)
 - [Demand Generation メトリクス](https://app.periscopedata.com/app/gitlab/793304/Demand-Gen-Dashboard) [およびデータの読み取り方](/handbook/marketing/demand-generation/#dashboard-metrics)

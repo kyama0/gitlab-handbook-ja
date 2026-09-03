@@ -2,9 +2,9 @@
 title: プロダクトとしての GitLab
 description: "プロダクトとしての GitLab について"
 upstream_path: /handbook/product/categories/gitlab-the-product/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-lastmod: "2026-05-20T09:32:02-07:00"
-translated_at: "2026-05-23T12:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
 ---
@@ -32,7 +32,7 @@ GitLab.com は GitLab Enterprise Edition を実行しています。
 
 コードのメンテナンスを容易に保ち、誰もがすべての取り組みの恩恵を受けられるようにするため、GitLab.com のコードベースを Enterprise Edition のコードベースから分離しません。
 
-複雑さを避けるため、[GitLab.com のティアと GitLab セルフマネージドのティア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers/)は同じ名前になっています。
+複雑さを避けるため、[GitLab.com のティアと GitLab セルフマネージドのティア](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/)は同じ名前になっています。
 
 #### GitLab.com サブスクリプションのスコープとティア
 

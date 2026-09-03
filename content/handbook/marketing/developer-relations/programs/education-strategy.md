@@ -1,16 +1,16 @@
 ---
 title: "Education グロース戦略"
 upstream_path: /handbook/marketing/developer-relations/programs/education-strategy/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-19T19:48:12+00:00"
+lastmod: "2026-08-24T10:58:12+02:00"
 ---
 
 ## Education グロース戦略
 
-この戦略は、教育アウトリーチを業界への影響力に変えるファネルを作り出すもので、[マーケティングのカスタマージャーニー](/handbook/marketing/#marketing-alignment)と整合しています。私たちの取り組みは認知を促進し、エバンジェリズムを生み出し、学生が労働市場へ移行する際には検討を加速し、コンバージョンを促進します。私たちは、4 つの並行する戦略領域にわたって Education アウトリーチを拡大します: 機関に対する Establishing Preference、教育者による Accelerating Enablement、学生間での Generating Advocacy、そして Influenced Professional への Nurturing Growth です。
+この戦略は、教育アウトリーチを業界への影響力に変えるファネルを作り出します。私たちの取り組みは認知を促進し、エバンジェリズムを生み出し、学生が労働市場へ移行する際には検討を加速し、コンバージョンを促進します。私たちは、4 つの並行する戦略領域にわたって Education アウトリーチを拡大します: 機関に対する Establishing Preference、教育者による Accelerating Enablement、学生間での Generating Advocacy、そして Influenced Professional への Nurturing Growth です。
 
 このモデルでは、エコシステムの各セグメントを 2 つの相補的な経路を通じて成長させます: 上流のセグメントを拡大すること（機関が教育者を強化し、教育者が学生を強化する）と、その特定オーディエンス向けの個別プログラムによる拡大です。学生は最終的に Influenced Professionals となって労働市場に参入し、学んだスキル・ツール・方法論を持ち込むことで、教育からキャリアへの自然なパイプラインを通じて長期的な市場インパクトを創出します。
 

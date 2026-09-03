@@ -1,9 +1,9 @@
 ---
 title: "調達ガイド: GitLab Legal との連携"
 upstream_path: /handbook/legal/procurement-guide-collaborating-with-gitlab-legal/
-upstream_sha: eff3a749f8927544a08073e8f660283a5d80478b
-lastmod: "2026-05-21T12:17:18-04:00"
-translated_at: "2026-05-22T12:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
 ---
@@ -44,7 +44,7 @@ GitLab Legal は、GitLab のリスク基準に沿うよう、適切な法的条
 - すべてのベンダーは以下に従い、遵守することに同意する必要があります。
   - [GitLab Code of Business Conduct and Ethics](https://ir.gitlab.com/governance/governance-documents/default.aspx)
   - [GitLab Modern Slavery Act Transparency Statement](/handbook/legal/modern-slavery-act-transparency-statement/)
-  - GitLab の名称またはロゴを使用するための [GitLab のブランドガイドラインページ](/handbook/marketing/brand-and-product-marketing/brand/brand-activation/trademark-guidelines/)。
+  - GitLab の名称またはロゴを使用するための [GitLab のブランドガイドラインページ](/handbook/marketing/brand-experience/trademark-guidelines/)。
 
 ## 調達リクエストおよび追加情報
 

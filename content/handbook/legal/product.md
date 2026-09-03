@@ -2,11 +2,11 @@
 title: "製品と知的財産"
 description: "Legal 製品・IP チームのページ"
 upstream_path: "/handbook/legal/product/"
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-29T10:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-27T22:49:21+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## マーケティング
@@ -22,7 +22,7 @@ lastmod: "2026-04-27T22:49:21+00:00"
 
 ## 商標
 
-- GitLab の商標の使用に関する情報については、[ブランドリソース](https://design.gitlab.com/resources/)および[商標ガイドライン](/handbook/marketing/brand-and-product-marketing/brand/brand-activation/trademark-guidelines/)をご参照ください。
+- GitLab の商標の使用に関する情報については、[ブランドリソース](https://design.gitlab.com/resources/)および[商標ガイドライン](/handbook/marketing/brand-experience/trademark-guidelines/)をご参照ください。
 - [GitLab におけるサードパーティ商標の使用](/handbook/legal/policies/product-third-party-trademarks-guidelines/)
 - [GitLab の商標について](/handbook/legal/trademarks-at-gitlab/)
 

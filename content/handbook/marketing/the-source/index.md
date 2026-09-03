@@ -2,14 +2,14 @@
 title: "The Source ハンドブック"
 description: "GitLab のソートリーダーシップポータル「The Source」について知っておくべきすべて。"
 upstream_path: /handbook/marketing/the-source/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2025-04-01T09:22:28+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
-[The Source](https://about.gitlab.com/the-source/) は、[Brand](/handbook/marketing/brand-and-product-marketing/brand/) チームと [Content Strategy & Ops](/handbook/marketing/brand-and-product-marketing/content/) チームが運営しており、[Corporate Communications](/handbook/marketing/corporate-communications/) のサポートを受けています。
+[The Source](https://about.gitlab.com/the-source/) は、[Brand](/handbook/marketing/brand-experience/) チームと [Content Strategy & Ops](/handbook/marketing/product-and-technical-marketing/content/) チームが運営しており、[Corporate Communications](/handbook/marketing/corporate-communications/) のサポートを受けています。
 
 ## The Source とは？
 

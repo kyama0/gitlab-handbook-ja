@@ -2,9 +2,9 @@
 title: AI Section のプロダクト開発フロー
 description: 部門横断のプロダクト開発ワークフロープロセス、オーナーシップ、およびラベリング。
 upstream_path: /handbook/product-development/how-we-work/ai-section-product-development-flow/
-upstream_sha: 50ee631c98005b47a0caea9d46e4ba5cfc62891a
-lastmod: 2026-07-22T14:30:59+01:00
-translated_at: "2026-07-23T06:22:46+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+lastmod: "2026-09-01T11:31:32-06:00"
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
 ---
@@ -162,6 +162,8 @@ AI section の組織構造は[こちら](/handbook/engineering/ai/#organizationa
 5. **CXO Interest。** この任意ラベルは、CPMO+ がフォローしているエピックをフィルタリングするために使用されます。これらのエピックでは、進行中のワークストリームに対して最も高いメタデータ忠実度が求められます。
 
 6. **PMM Shipping。** 任意の `pmm-ai-whats-shipping` ラベルは、Product Marketing team 向けにキュレーションされたリリースナラティブを作成するために適用されます。進行中の作業については、CXO と同じメタデータ衛生が期待されます。
+
+7. **リリースターゲット。** 作業をどのようにリリースするかを示す適切なリリースターゲットラベルを追加します。選択肢には `~release target::customer zero`、`~release target::experimental`、`~release target::beta`、`~release target::GA` があります。
 
 ### ダッシュボードがあなたの変更を拾う方法
 

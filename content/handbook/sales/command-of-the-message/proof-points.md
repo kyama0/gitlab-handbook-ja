@@ -3,11 +3,11 @@ title: "Proof Points"
 description: "GitLab の proof points (顧客リファレンス、ケーススタディ、業界アワード、アナリストレポートおよびスタディ、GitLab レポートおよびスタディ、ピアレビューを含む)"
 twitter_image: '/images/tweets/research-panel.png'
 upstream_path: /handbook/sales/command-of-the-message/proof-points/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2025-03-07T10:45:14-08:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
@@ -428,7 +428,7 @@ _[オリジナルかつ GitLab 内部の proof points Google Doc はこちらで
 
 #### 2020
 
-<big>[Forrester Total Economic Impact Study Commissioned By GitLab, June 2020](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/forrester-tei/)</big><br>
+<big>[Forrester Total Economic Impact Study Commissioned By GitLab, June 2020](/handbook/marketing/corporate-communications/analyst-relations/forrester-tei/)</big><br>
 *GitLab は Forrester Consulting に依頼し、エンタープライズが GitLab を使うことで実現できる投資収益率 (ROI) を検討する Total Economic Impact (TEI) スタディを実施した。*<br>
 このプロセスで、Forrester Consulting によって GitLab 顧客がインタビューされ、関連データが独立して収集された。収集されたデータ、結果のモデル、スタディそのものは、Forrester Research のアナリストによって独立してレビューされた。GitLab ステークホルダーもデータ収集とレビュープロセスの一部としてインタビューされた。このスタディは、Version Control & Collaboration (VC&C)/SCM、Continuous Integration (CI)、Continuous Delivery (CD) で GitLab を使用するエンタープライズのコスト削減とビジネス利益を調査した。
 **バリュードライバー:** 効率、スピード、リスク<br>

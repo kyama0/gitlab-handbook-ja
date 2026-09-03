@@ -1,11 +1,11 @@
 ---
 title: プロダクトマネジメントの CDF とコンピテンシー
 upstream_path: /handbook/product/product-management/product-cdf-competencies/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-19T09:43:34-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 このページでは、GitLab におけるプロダクトマネージャーのパフォーマンスを評価するための概要と、それに役立つリソースへのリンクを掲載しています。GitLab におけるプロダクトマネージャーの責務をより深く理解するには、[GitLab のプロダクトマネージャーの役割](/handbook/product/product-management/product-manager-role/) を参照してください。
@@ -202,7 +202,7 @@ _成果の例: MAU の成長 / 維持、ARR への影響、製品ロードマッ
 
 | [Group Manager](/job-description-library/product/product-management-leadership/) | [Director](/job-description-library/product/product-management-leadership/)| [Senior Director](/job-description-library/product/product-management-leadership/) | [VP](/job-description-library/product/product-management-leadership/) |
 | --- | --- | --- | --- |
-| 製品スコープを超えてまたがる戦略的調査をリード。年次および四半期の製品ビジョンサイクルで計画。クロスグループ、クロスステージ、またはクロスセクションのコラボレーションと学習の機会を見つける。ビジネススキルを示し、他者にコーチする。ハイレベルの方向性を定期的に維持し、スコープ全体で方向の整合性を確保する。グループとステージ全体での採用ファネルの深い理解を発展させる。 | GitLab の代表としてセクション全体で調査と顧客インタビューを実行する。3 年から年次の製品ビジョンサイクルで計画。クロスステージとクロスセクションのコラボレーションの機会を作る。オポチュニティキャンバス、製品提案、MVC に関するフィードバックを含む、Product 組織全体でビジネススキルのアクティブコーチ。 | 戦略的な顧客とのコール、[Advisory and Executive customer programs](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/#executive-advisory-board-eab-program)、見込み客で GitLab 製品を代表し、5 年以上の製品ビジョンと戦略に情報を提供する。年次テーマ、年次計画、OKR に貢献し、セクションを広範な会社戦略と整合させる。それぞれの領域でビジョンを作成するための直接の部下へのコーチングを提供する。 |  |
+| 製品スコープを超えてまたがる戦略的調査をリード。年次および四半期の製品ビジョンサイクルで計画。クロスグループ、クロスステージ、またはクロスセクションのコラボレーションと学習の機会を見つける。ビジネススキルを示し、他者にコーチする。ハイレベルの方向性を定期的に維持し、スコープ全体で方向の整合性を確保する。グループとステージ全体での採用ファネルの深い理解を発展させる。 | GitLab の代表としてセクション全体で調査と顧客インタビューを実行する。3 年から年次の製品ビジョンサイクルで計画。クロスステージとクロスセクションのコラボレーションの機会を作る。オポチュニティキャンバス、製品提案、MVC に関するフィードバックを含む、Product 組織全体でビジネススキルのアクティブコーチ。 | 戦略的な顧客とのコール、[Advisory and Executive customer programs](/handbook/marketing/growth-marketing/growth-community-programs/#executive-advisory-board-eab-program)、見込み客で GitLab 製品を代表し、5 年以上の製品ビジョンと戦略に情報を提供する。年次テーマ、年次計画、OKR に貢献し、セクションを広範な会社戦略と整合させる。それぞれの領域でビジョンを作成するための直接の部下へのコーチングを提供する。 |  |
 
 ### Sensing Mechanisms
 

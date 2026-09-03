@@ -2,11 +2,11 @@
 title: "デザイン判断のためのデータ"
 description: "デザイン判断を支えるデータを見つけるために GitLab 内で使用されているツールに関するガイド。"
 upstream_path: /handbook/product/ux/ux-resources/designers-guide-to-data/
-upstream_sha: a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca
-translated_at: "2026-07-16T21:37:21Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T17:32:42-03:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## GitLab でデザイン判断にデータを使う
@@ -95,5 +95,5 @@ lastmod: "2026-07-16T17:32:42-03:00"
 - [プロダクトマネージャー向けのデータ](/handbook/enterprise-data/organization/programs/data-for-product-managers/)
 - [GitLab の内部アナリティクス](https://docs.gitlab.com/development/internal_analytics/)
 - [実験の設計と分析](/handbook/product/groups/product-analysis/experimentation/)
-- [Growth Experiments ナレッジベース](/handbook/marketing/growth/)
+- [Growth Experiments ナレッジベース](/handbook/marketing/growth-marketing/)
 - [データを使ってインサイトを見つける](/handbook/upstream-studios/experience-research/quantitative-data/)

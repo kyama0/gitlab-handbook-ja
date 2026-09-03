@@ -1,11 +1,11 @@
 ---
 title: Growth セクションの仕組み
 upstream_path: /handbook/product/groups/growth/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:59:28+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T13:03:25-03:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
@@ -15,7 +15,7 @@ lastmod: "2026-07-20T13:03:25-03:00"
 - Activation、Conversion、Expansion、Adoption は、迅速な実験によって、GitLab がすでに提供している既存の価値にユーザーを接続します。
 - [Analytics Instrumentation](https://about.gitlab.com/direction/monitor/analytics-instrumentation/) は、他のグループが成功するために必要なデータの基盤を構築し、GitLab でのデータインフォームドな製品文化を可能にします。
 
-Growth の究極の目標は、Single DevOps Platform としての GitLab の価値を私たちの顧客と接続することです。そのために、ズームインとズームアウトのアプローチを取ります。GitLab の成長モデル全体を分解し、現時点で焦点を当てるべき最高 ROI のレバーを特定します。[Growth direction ページ](/handbook/marketing/growth/)では、Growth セクションの長期的な方向性と短期的な焦点領域を概説しています。
+Growth の究極の目標は、Single DevOps Platform としての GitLab の価値を私たちの顧客と接続することです。そのために、ズームインとズームアウトのアプローチを取ります。GitLab の成長モデル全体を分解し、現時点で焦点を当てるべき最高 ROI のレバーを特定します。[Growth direction ページ](/handbook/product/groups/growth/direction/)では、Growth セクションの長期的な方向性と短期的な焦点領域を概説しています。
 
 ## Growth セクションの仕組み
 

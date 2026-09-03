@@ -1,11 +1,11 @@
 ---
 title: "Outreach"
 upstream_path: /handbook/marketing/marketing-operations/outreach/
-upstream_sha: "7d467b8ae210e5b3bb843857cd3639cbc27af386"
-translated_at: "2026-06-02T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-06-01T16:41:36-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ### Outreach
@@ -535,7 +535,7 @@ Outreach のトリガーは、特定のプロスペクト/アカウント/タス
 
 ### Sales Development Kaia プレイリスト
 
-以下のプレイリストは、大きな可能性を示しているコールを紹介しています。私たちは [アウトバウンドプロスペクティングプロジェクトでの Claude コールランクプロンプト](/handbook/marketing/sales-development/#claude-sales-dev-bdrsdr-user-guide) を使用して、Outreach で 2 分以上の継続時間を持つすべてのコールを並べ替え、その後の手動スクリーニングを 2 番目のステップとして行います。
+以下のプレイリストは、大きな可能性を示しているコールを紹介しています。私たちは [アウトバウンドプロスペクティングプロジェクトでの Claude コールランクプロンプト](/handbook/sales/sales-development/#claude-sales-dev-bdrsdr-user-guide) を使用して、Outreach で 2 分以上の継続時間を持つすべてのコールを並べ替え、その後の手動スクリーニングを 2 番目のステップとして行います。
 
 完全なリストは [Outreach Kaia](https://web.outreach.io/kaia/playlists/101) で確認でき、以下にランキングの簡単な説明があります。
 

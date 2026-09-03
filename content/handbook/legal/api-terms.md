@@ -2,11 +2,11 @@
 title: "GitLab API 利用規約"
 description: "GitLabの公開APIを利用する際の権利と義務を理解してください"
 upstream_path: "/handbook/legal/api-terms/"
-upstream_sha: "02cf85a2ba59858c59b2a31a0356f2371a2a8979"
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-09T11:46:48-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 A. これらの API 利用規約（「**API 規約**」）は、あなたと GitLab との間の拘束力のある契約を形成し、GitLab の公開されているアプリケーションプログラミングインターフェース（「**GitLab API**」）を使用する際のあなたの権利と義務を説明します。
@@ -69,7 +69,7 @@ F. これらの API 規約と、(i) GitLab ソフトウェアの使用を管轄�
 
 2.3. GitLab は、GitLab API および GitLab ソフトウェアに関連してあなたが提供するいかなる提案、アイデア、機能強化要求、フィードバック、またはその他の推薦（「**フィードバック資料**」）に関連するすべての知的財産権を保持します。これらは GitLab に譲渡されます。フィードバック資料にはあなたが所有する知的財産は含まれません。
 
-2.4. 登録済みまたは未登録の GitLab 商標の使用は、随時更新される GitLab の[商標ガイドライン](/handbook/marketing/brand-and-product-marketing/brand/brand-activation/trademark-guidelines)および[ブランディング基準](https://design.gitlab.com/brand-overview/resources/)に従います。
+2.4. 登録済みまたは未登録の GitLab 商標の使用は、随時更新される GitLab の[商標ガイドライン](/handbook/marketing/brand-experience/trademark-guidelines/)および[ブランディング基準](https://design.gitlab.com/brand-overview/resources/)に従います。
 
 ## 3. 個人データの処理
 

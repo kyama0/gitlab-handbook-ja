@@ -3,11 +3,11 @@ title: "Premium から Ultimate へのアップセル sales play プランナー
 description: "description to add"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/sales-plays-cicd/planner-premium-to-ultimate/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2024-11-29T11:31:57+11:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ### **Sales play プランナーと戦略ページ**
@@ -195,7 +195,7 @@ wip、現時点では: [Glympse](https://gitlab.com/gitlab-com/marketing/strateg
 
 #### **異議処理: WIP** {#objection-handling-wip}
 
-[セキュリティ FAQ スライド](https://docs.google.com/presentation/d/1mLnmgQ5hqTzcwk3Vjh0BEIdx9SYgORV-2g7zPKmFKFc/edit) および [DevSecOps ユースケースページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#potential-objections) の異議を参照
+[セキュリティ FAQ スライド](https://docs.google.com/presentation/d/1mLnmgQ5hqTzcwk3Vjh0BEIdx9SYgORV-2g7zPKmFKFc/edit) および [DevSecOps ユースケースページ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#potential-objections) の異議を参照
 
 * なぜ価格が 5 倍なのか？
   * 価格の跳ね上がりを正当化するどのような機能または価値があるか？

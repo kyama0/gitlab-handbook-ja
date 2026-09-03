@@ -3,9 +3,9 @@ title: "GitLab ラップトップ管理"
 aliases:
   - /handbook/security/corporate/end-user-services/laptop-management/
 upstream_path: /handbook/eta/corporate-it/end-user-services/laptop-management/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:32:14+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+lastmod: "2026-08-17T17:29:53-04:00"
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
 ---
@@ -58,7 +58,7 @@ Linux は macOS の代替として利用できますが、サポートが限定�
 
 * **Fleet 登録:** すべての Linux エンドポイントには、[Fleet](#fleet)がインストールされている必要があります。
 * **EDR エージェント:** CrowdStrike または SentinelOne が必要です（Fleet 経由で自動インストールされます）。
-  * **SentinelOne:** オランダ、ドイツ、イタリア、オーストリア。
+  * **SentinelOne:** オランダ、ドイツ、イタリア、オーストリア、フランス。
   * **CrowdStrike:** その他すべての地域。
 * **フルディスク暗号化:** LUKS 暗号化が必要です。
 * **自己管理:** セキュリティパッチとバージョンアップグレードを含め、Linux 環境を維持する責任があります。

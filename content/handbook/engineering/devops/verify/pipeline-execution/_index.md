@@ -2,14 +2,14 @@
 title: "Verify:Pipeline Execution グループ"
 description: "Pipeline Execution グループの GitLab チームページです。"
 upstream_path: /handbook/engineering/devops/verify/pipeline-execution/
-upstream_sha: "a3ed2ed7423727a5f31c3f20f77f9547a3b7b152"
-translated_at: "2026-08-08T08:52:01+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-07T17:42:26-04:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
-このチームは [Verify](/handbook/product/categories/#verify-stage) DevOps ステージにマッピングされており、Continuous Integration [ユースケース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/) をサポートしています。
+このチームは [Verify](/handbook/product/categories/#verify-stage) DevOps ステージにマッピングされており、Continuous Integration [ユースケース](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/) をサポートしています。
 
 ## ビジョン
 

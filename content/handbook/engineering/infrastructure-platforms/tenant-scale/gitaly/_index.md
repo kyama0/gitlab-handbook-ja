@@ -1,11 +1,11 @@
 ---
 title: "Gitaly Team"
 upstream_path: /handbook/engineering/infrastructure-platforms/tenant-scale/gitaly/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:38:37+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T08:47:32-04:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## Gitaly とは?
@@ -96,7 +96,7 @@ Gitaly のオンコールがページされるのは、次の人々によるも�
 
 顧客が必要とするときに喜んで助けます! ただし、私たちは主に _開発_ チームであり、「フィールドエンジニアリング」のための装備がないことを念頭に置いてください。
 
-私たちの _エンジニア_ は、できれば [非同期](/handbook/company/culture/all-remote/asynchronous/) で、次のことを支援できます:
+私たちの _エンジニア_ は、できれば [非同期](/handbook/communication/#asynchronous-communication) で、次のことを支援できます:
 
 - _データ_ に基づく深い技術的調査と、Support および CSM との緊密なパートナーシップによる適切な技術的協働
 - プロダクトレベルの修正や改善の提供。作業はスケジュールされ、結果は通常どおりリリースされます（[EM と PM の指示](#working-with-product) の下）

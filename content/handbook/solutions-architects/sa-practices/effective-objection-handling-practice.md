@@ -1,11 +1,11 @@
 ---
 title: 効果的な異論対応プラクティス
 upstream_path: /handbook/solutions-architects/sa-practices/effective-objection-handling-practice/
-upstream_sha: 5449127cc9a1f5b32ba83e3cf8ddab79eac1e3e8
-translated_at: "2026-05-08T18:13:56Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-11T23:51:39+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 効果的な異論対応スキルは、私たちの営業/カスタマーサクセスにおける役割で信頼できるアドバイザーになるために重要です。異論対応とは、顧客の考えを変えたり、懸念を和らげるような形で顧客に応えることを意味します。異論は通常、これらの[カテゴリー](https://changingminds.org/disciplines/sales/objection/objection_types.htm)に分類されます。
@@ -121,7 +121,7 @@ lastmod: "2025-01-11T23:51:39+00:00"
 
 - <span class="colour" style="color:rgb(0, 0, 0)">SA ハンドブック </span>[<span class="colour" style="color:rgb(0, 0, 255)"><u>リソース</u></span>](/handbook/solutions-architects/sa-practices/effective-objection-handling-practice/)<span class="colour" style="color:rgb(0, 0, 0)"> — 異論対応と追加演習の「やり方」</span>
 - <span class="colour" style="color:rgb(0, 0, 0)">LinkedIn Learning </span>[<span class="colour" style="color:rgb(0, 0, 255)"><u>コース</u></span>](https://www.linkedin.com/learning/sales-handling-objections)
-- <span class="colour" style="color:rgb(0, 0, 0)">[<span class="colour" style="color:rgb(0, 0, 255)"><u>Ultimate sales plays</u></span>](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#potential-objections) に対する潜在的な異論</span>
+- <span class="colour" style="color:rgb(0, 0, 0)">[<span class="colour" style="color:rgb(0, 0, 255)"><u>Ultimate sales plays</u></span>](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#potential-objections) に対する潜在的な異論</span>
 - <span class="colour" style="color:rgb(0, 0, 0)">追加の異論対応 </span>[<span class="colour" style="color:rgb(0, 0, 255)"><u>テクニック</u></span>](https://docs.google.com/presentation/d/1mLnmgQ5hqTzcwk3Vjh0BEIdx9SYgORV-2g7zPKmFKFc/edit#slide=id.g9e2080204d_0_0)<span class="colour" style="color:rgb(0, 0, 255)"> </span><span class="colour" style="color:rgb(0, 0, 0)">— Secure & Protect 顧客向け（SKO 2021）</span>
 - <span class="colour" style="color:rgb(0, 0, 0)">7 Steps to Handling Objections: </span>[<span class="colour" style="color:rgb(95, 95, 95)"><u>https://www.youtube.com/watch?v=DBpLFAS2s3w</u></span>](https://www.youtube.com/watch?v=DBpLFAS2s3w)
 - <span class="colour" style="color:rgb(0, 0, 0)">Changing Minds </span>[<span class="colour" style="color:rgb(0, 0, 255)"><u>異論対応テクニック</u></span>](https://changingminds.org/disciplines/sales/objection/objection_handling.htm)

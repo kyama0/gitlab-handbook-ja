@@ -2,11 +2,11 @@
 title: Brilliant
 description: Brilliant Gifts は、一般公開されているスワッグショップサイト向けに、GitLab の「スワッグ」(企業ブランド製品) ベンダープラットフォームとして機能します。
 upstream_path: /handbook/marketing/marketing-operations/brilliant/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2024-11-04T22:11:28+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -37,7 +37,7 @@ Brilliant は、配送費と配送時間を削減するため、世界各地に�
 
 ### スワッグリクエスト
 
-[スワッグ](/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/) に関する Brand Strategy ハンドブックページを参照するか、新しいアイテムを [リクエスト](/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/#suggesting-new-items-or-designs) してください。
+[スワッグ](/handbook/marketing/brand-experience/merchandise-handling/) に関する Brand Strategy ハンドブックページを参照するか、新しいアイテムを [リクエスト](/handbook/marketing/brand-experience/merchandise-handling/#suggesting-new-items-or-designs) してください。
 
 ### 新規キャンペーンの作成
 

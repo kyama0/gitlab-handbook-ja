@@ -5,11 +5,11 @@ twitter_image: '/images/tweets/handbook-marketing.png'
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/marketing/virtual-events/webcasts/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-18T10:28:06-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ---
@@ -91,7 +91,7 @@ campaigns プロジェクトで [ウェブキャストアイデア Issue](https:
 
 バーチャルワークショップは Field Marketing が管理・モデレートし、ソリューションアーキテクトおよびその他の GitLab チームメンバーと緊密に連携します。
 
-バーチャルワークショップの詳細については、[Field Marketing ページ](/handbook/marketing/field-marketing/field-marketing-owned-virtual-events/#virtual-workshops-1) を参照してください。
+バーチャルワークショップの詳細については、[Field Marketing ページ](/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events/#virtual-workshops-1) を参照してください。
 
 ## ベストプラクティス {#webcast-best-practices}
 

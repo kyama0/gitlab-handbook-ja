@@ -2,11 +2,11 @@
 title: "GitLab Delivery:Build"
 description: "Build チームはカスタマーが GitLab をデプロイするために使用するアーティファクトに注力しています。これにはシステムパッケージ、コンテナイメージ、クラウドプロバイダーマーケットプレイス上のパッケージが含まれます。Build チームメンバーは開発チームとエンドユーザーの橋渡し役を担います。Build エンジニアはコンポーネントの効率的なビルドを可能にし、シンプルで安全かつ信頼性の高いインストール体験を提供するためのツールと専門知識を提供します。"
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-delivery/build/
-upstream_sha: ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c
-translated_at: "2026-06-24T07:28:04+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-23T13:40:50+00:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## 概要
@@ -315,7 +315,7 @@ Distribution チームでは特に、全員が以下のリソースにアクセ�
 
 ## ワークライフハーモニー
 
-[オールリモート](/handbook/company/culture/all-remote/)と[非同期ファースト](/handbook/company/culture/all-remote/asynchronous/)での作業は、チームメンバーが自分の作業日をどのようにアプローチするかに柔軟性をもたらします。チームメンバーは作業時間と生活の他の側面のバランスをどのように取るかを選択する必要があります。
+[オールリモート](/handbook/company/culture/all-remote/)と[非同期ファースト](/handbook/communication/#asynchronous-communication)での作業は、チームメンバーが自分の作業日をどのようにアプローチするかに柔軟性をもたらします。チームメンバーは作業時間と生活の他の側面のバランスをどのように取るかを選択する必要があります。
 
 新しいチームメンバーのために、以下のリソースが時間の集中方法の例を提供しています:
 

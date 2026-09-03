@@ -6,11 +6,11 @@ twitter_image_alt: "GitLab remote team graphic"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/leadership/building-trust/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T06:39:44+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## はじめに
@@ -116,7 +116,7 @@ GitLab の共同創業者であるSid Sijbrandijは、彼が特定した信頼�
 
 **任意の週次チームソーシャル通話の適用方法:** 任意の週次チームソーシャル通話の定期的なケイデンスを設定します（月次、隔週、週次）。各ソーシャル通話で、1人のチームメンバーがディスカッションの管理と進行の責任を持ちます。担当者はトピックの提案と通話を進めることに責任があります。これらを楽しくして、仕事の話はしないようにしましょう！
 
-タイムゾーンを考慮し、このようなソーシャル設定を好まない人を含めるために、同期のソーシャル通話と [非同期](/handbook/company/culture/all-remote/asynchronous/) のソーシャルスタンドアップを交互に行います。`Geekbot` Slack アプリに質問を移植して、チームメンバーが都合の良いときに共有できます。
+タイムゾーンを考慮し、このようなソーシャル設定を好まない人を含めるために、同期のソーシャル通話と [非同期](/handbook/communication/#asynchronous-communication) のソーシャルスタンドアップを交互に行います。`Geekbot` Slack アプリに質問を移植して、チームメンバーが都合の良いときに共有できます。
 
 ### Zoom 背景アイスブレーカー
 

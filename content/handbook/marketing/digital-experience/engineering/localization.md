@@ -3,16 +3,16 @@ title: ローカライゼーションのベストプラクティス
 description: >-
     About GitLab プロジェクトにおいて、開始から完了までスムーズに翻訳プロセスを進めるための方法。よくある落とし穴と、翻訳者・ステークホルダー・エンジニアにとってこのプロセスを容易にするためのヒントを紹介します。
 upstream_path: /handbook/marketing/digital-experience/engineering/localization/
-upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: claude
 stale: false
-lastmod: "2025-08-28T11:13:21-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 目的
 
-Digital Experience チームと[ローカライゼーションチーム](/handbook/marketing/localization/)が複数四半期にわたって協業してきた今、これまでの学びを整理し、より効率的に協力していけるようにすることを目的としています。
+Digital Experience チームと[Globalization チーム](/handbook/marketing/product-and-technical-marketing/globalization/)が複数四半期にわたって協業してきた今、これまでの学びを整理し、より効率的に協力していけるようにすることを目的としています。
 
 ## 既存のラベル
 

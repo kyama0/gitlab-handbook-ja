@@ -11,11 +11,11 @@ group: Organizations
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization/
-upstream_sha: 30048133aad0232ed4d59fa0c80643620c85adb3
-translated_at: "2026-08-04T06:12:43+09:00"
+upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
+translated_at: "2026-09-03T23:52:33+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-03T15:47:52+08:00"
+lastmod: "2026-08-18T14:42:11+05:30"
 ---
 
 {{< engineering/design-document-header >}}
@@ -326,7 +326,7 @@ Organization user 管理とダッシュボードを含む、Organization のユ�
 - [007: Self-managed と Dedicated の単一 Organization](decisions/007_self_managed_dedicated_single_organization.md)
 - [008: GitLab.com 上の非隔離 organization](decisions/008_non_isolated_organizations_gitlab_com.md)
 - [009: organization ライフサイクルのステートマシン](decisions/009_state_machine.md)
-- [010: Organization 読み取り専用モード](decisions/010_organization_read_only_mode.md)
+- [010: Organization メンテナンスモード](decisions/010_organization_maintenance_mode.md)
 - [011: 汎用オンボーディングワークフロー](decisions/011_onboarding.md)
 - [012: Organization はスコープ付き空間である](decisions/012_organization_space.md)
 - [013: Organization 内で Top-Level-Group を作成するときに警告する](decisions/013_warn_on_tlg_creation.md)
