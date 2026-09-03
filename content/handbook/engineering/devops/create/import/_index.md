@@ -4,7 +4,7 @@ description: Import グループはマイグレーションを支援します。
 upstream_path: /handbook/engineering/devops/create/import/
 upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
 translated_at: "2026-09-03T23:52:33+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-08-17T13:05:42+12:00"
 ---

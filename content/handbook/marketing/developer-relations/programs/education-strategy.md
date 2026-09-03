@@ -3,7 +3,7 @@ title: "Education グロース戦略"
 upstream_path: /handbook/marketing/developer-relations/programs/education-strategy/
 upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
 translated_at: "2026-09-03T23:52:33+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-08-24T10:58:12+02:00"
 ---

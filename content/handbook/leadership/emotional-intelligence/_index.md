@@ -3,7 +3,7 @@ title: "感情知性"
 upstream_path: /handbook/leadership/emotional-intelligence/
 upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
 translated_at: "2026-09-03T23:52:33+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-08-19T14:13:18-04:00"
 ---

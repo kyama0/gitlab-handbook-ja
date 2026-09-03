@@ -4,7 +4,7 @@ description: "機能アナリスト向けの data build tool (dbt) チートシ�
 upstream_path: /handbook/product/groups/product-analysis/dbt-cheat-sheet/
 upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
 translated_at: "2026-09-03T23:52:33+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-08-20T08:15:32-06:00"
 ---

@@ -4,7 +4,7 @@ description: "GitLab データチームのワークフロー"
 upstream_path: "/handbook/enterprise-data/how-we-work/"
 upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
 translated_at: "2026-09-03T23:52:33+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-01T17:02:40+02:00"
 ---

@@ -4,7 +4,7 @@ description: "月次のクイズイベントで、SA とより広いカスタマ
 upstream_path: /handbook/solutions-architects/sa-practices/monthly-release-quiz/
 upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
 translated_at: "2026-09-03T23:52:33+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"
 ---
