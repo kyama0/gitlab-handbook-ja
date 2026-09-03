@@ -2,9 +2,9 @@
 title: "Common Screener：複数の調査を効率的にスクリーニングする方法"
 description: "GitLab でリサーチ調査の参加者を見つけるために Common Screener を使用するアプローチの概要"
 upstream_path: /handbook/upstream-studios/experience-research/recruiting-participants/common-screener/
-upstream_sha: 5934211cb62d0c36181bc3a4be1381e5e07aef42
-lastmod: "2026-07-28T05:53:28-07:00"
-translated_at: "2026-07-29T06:11:55+09:00"
+upstream_sha: 4aea490fd6276e4dc6a9fba4f36820790b265fe9
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-03T21:26:54+09:00"
 translator: codex
 stale: false
 ---
@@ -17,7 +17,7 @@ Common Screener は、複数の調査にまたがって同じ質問を使用し�
 
 上の図は、Common Screener アプローチで同じ質問を使用して、参加者をさまざまな調査に一致させる方法を示しています。この例では、単一のスクリーナーを使用する場合、100 人超の会社の参加者は調査から除外される可能性がありますが、Common Screener アプローチを使用する場合は別の調査に一致する可能性があります。これは、各調査が同じ会社規模に関する質問に対して異なる含める基準を設定するために可能になります。この例では、Common Screener アプローチにより、主要タスクを選択するよう尋ねる JTBD の質問に基づいて、異なるペルソナに合致する参加者を一致させることもできます。
 
-Common Screener は Qualtrics の機能を活用して、共通質問への回答で構成された、調査の含める基準と参加者プロファイルの一致を見つけます。例のように、各回答者のペルソナを特定するために、ハンドブックの JTBD タスク一覧を含む質問を含める場合があります。その後、回答を使用して、そのペルソナを探している調査に一致させます。これを会社規模に関する質問と組み合わせて、異なる会社規模の同じペルソナ、または同じ会社規模の異なるペルソナを探す異なる調査に回答者を一致させることができます。
+Common Screener は Qualtrics の機能を活用して、共通質問への回答によって明らかになる参加者プロファイルと、各調査の選定基準との一致を見つけます。例のように、各回答者のペルソナを特定するために、ハンドブックの JTBD タスク一覧を含む質問を含める場合があります。その後、回答を使用して、そのペルソナを探している調査に一致させます。これを会社規模に関する質問と組み合わせて、異なる会社規模の同じペルソナ、または同じ会社規模の異なるペルソナを探す異なる調査に回答者を一致させることができます。
 
 この種のスクリーナーは、早期に計画され、会社規模のような参加者間で類似した質問を持つ調査に最も適しています。
 
@@ -37,13 +37,13 @@ Verify チームと Package チームは、2022 年初頭に Common Screener の
 
 パイロットでは、Verify チームと Package チーム全体のユーザーペルソナに焦点を当てています：
 
-- [Presley、Product Designer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#presley-product-designer)
-- [Sasha、Software Developer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer)
-- [Devon、DevOps Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer)
-- [Sidney、Systems Administrator](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator)
-- [Sam、Security Analyst](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#amy-application-security-engineer)
-- [Rachel、Release Manager](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager)
-- [Alex、Security Operations Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#alex-security-operations-engineer)
+- [Presley、Product Designer](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#presley-product-designer)
+- [Sasha、Software Developer](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer)
+- [Devon、DevOps Engineer](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer)
+- [Sidney、Systems Administrator](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator)
+- [Sam、Security Analyst](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#amy-application-security-engineer)
+- [Rachel、Release Manager](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager)
+- [Alex、Security Operations Engineer](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#alex-security-operations-engineer)
 
 共通のスクリーナーでは、回答者をリサーチ調査に一致させるため、次を含むいくつかの主要領域に関する質問を使用します：
 
@@ -75,13 +75,13 @@ Verify チームと Package チームは、2022 年初頭に Common Screener の
 
 | ユーザーペルソナ | 区別するタスク |
 | ------ | ------ |
-| [Presley、Product Designer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#presley-product-designer) | 効果的で、共感的かつ効率的なユーザー体験のデザインをリードする |
-| [Sasha、Software Developer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer) | プロダクトデザインをコードに変換する |
-| [Devon、DevOps Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer) | コードをデプロイ、ビルド、リリースする。パイプライン定義と CI テンプレートを提供する。コードを使用して機能とバグ修正を実装する |
-| [Sidney、Systems Administrator](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator) | インフラストラクチャと設定を維持・スケールする。サーバーを構築してデプロイし、および／または開発者がそうするのを支援する|
-| [Sam、Security Analyst](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#amy-application-security-engineer) | チームと協力してセキュリティ修正を実装する。セキュリティテストを実行し、および／または潜在的なセキュリティ Issue を報告する |
-| [Rachel、Release Manager](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager) | パイプラインビルドを実行・テストする。パイプラインを自動化する。リリース全体でチームを調整する |
-|  [Alex、Security Operations Engineer](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#alex-security-operations-engineer) | セキュリティインシデントに対処する。セキュリティを強化するツールを構築・実装する |
+| [Presley、Product Designer](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#presley-product-designer) | 効果的で、共感的かつ効率的なユーザー体験のデザインをリードする |
+| [Sasha、Software Developer](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#sasha-software-developer) | プロダクトデザインをコードに変換する |
+| [Devon、DevOps Engineer](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#priyanka-platform-engineer) | コードをデプロイ、ビルド、リリースする。パイプライン定義と CI テンプレートを提供する。コードを使用して機能とバグ修正を実装する |
+| [Sidney、Systems Administrator](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#sidney-systems-administrator) | インフラストラクチャと設定を維持・スケールする。サーバーを構築してデプロイし、および／または開発者がそうするのを支援する|
+| [Sam、Security Analyst](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#amy-application-security-engineer) | チームと協力してセキュリティ修正を実装する。セキュリティテストを実行し、および／または潜在的なセキュリティ Issue を報告する |
+| [Rachel、Release Manager](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#rachel-release-manager) | パイプラインビルドを実行・テストする。パイプラインを自動化する。リリース全体でチームを調整する |
+|  [Alex、Security Operations Engineer](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#alex-security-operations-engineer) | セキュリティインシデントに対処する。セキュリティを強化するツールを構築・実装する |
 
 ### 共通のスクリーナーを使用するための要件はありますか？ {#are-there-requirements-for-using-a-common-screener}
 

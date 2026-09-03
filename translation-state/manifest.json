@@ -22362,19 +22362,19 @@
     },
     "content/handbook/upstream-studios/_index.md": {
       "path": "content/handbook/upstream-studios/_index.md",
-      "upstream_sha": "d92acb119be844b83eb2f76de26d722afea570c3",
-      "translated_at": "2026-07-21T06:14:09+09:00",
+      "upstream_sha": "4aea490fd6276e4dc6a9fba4f36820790b265fe9",
+      "translated_at": "2026-09-03T21:26:54+09:00",
       "model": "codex",
-      "input_hash": "38b58ecf96cfdb4c688cf6a7e9cea880d1876bb8fd8d83bee7a4fee87720b6e8",
-      "upstream_committed_at": "2026-07-20T09:40:42-03:00"
+      "input_hash": "28b0b05bd1d14f93b62f9573e8c1d4632ceeab5f7b2fcce2976a67b4d01da4a1",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
     },
     "content/handbook/upstream-studios/vision-strategy/_index.md": {
       "path": "content/handbook/upstream-studios/vision-strategy/_index.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T06:11:46+09:00",
+      "upstream_sha": "4aea490fd6276e4dc6a9fba4f36820790b265fe9",
+      "translated_at": "2026-09-03T21:26:54+09:00",
       "model": "codex",
-      "input_hash": "d8225fe16b50130cd3cd63813dba1d094ed873a87254b1408d8dcf88f9e37235",
-      "upstream_committed_at": "2026-08-14T11:43:03-05:00"
+      "input_hash": "8e1857ebfff7b094b637b9e6036a65f104861ec1dd38573551b718db976e210e",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
     },
     "content/handbook/values/_index.md": {
       "path": "content/handbook/values/_index.md",
@@ -33322,11 +33322,11 @@
     },
     "content/handbook/upstream-studios/research-operations/recruitment-methods.md": {
       "path": "content/handbook/upstream-studios/research-operations/recruitment-methods.md",
-      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
-      "translated_at": "2026-07-17T06:46:21+09:00",
+      "upstream_sha": "4aea490fd6276e4dc6a9fba4f36820790b265fe9",
+      "translated_at": "2026-09-03T21:26:54+09:00",
       "model": "codex",
-      "input_hash": "c025f5141168aa5fd912575705cc57c1e9475c5d2ddc4d5a588bbbb9c80f5d0e",
-      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+      "input_hash": "73ae80452b937bec322e7641b6c2acbfa340857c9bf123fafd823766245932ac",
+      "upstream_committed_at": "2026-08-18T16:33:51+01:00"
     },
     "content/handbook/upstream-studios/research-operations/reops-procurement.md": {
       "path": "content/handbook/upstream-studios/research-operations/reops-procurement.md",
@@ -33618,11 +33618,11 @@
     },
     "content/handbook/upstream-studios/experience-research/kano-model/index.md": {
       "path": "content/handbook/upstream-studios/experience-research/kano-model/index.md",
-      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
-      "translated_at": "2026-07-17T07:18:26+09:00",
+      "upstream_sha": "4aea490fd6276e4dc6a9fba4f36820790b265fe9",
+      "translated_at": "2026-09-03T21:26:54+09:00",
       "model": "codex",
-      "input_hash": "3c06c813e0685a4813a4ebb31c91578e7b60f7fd29007a39e6ada2207aaf5962",
-      "upstream_committed_at": "2026-07-16T17:32:42-03:00"
+      "input_hash": "dcbf0a0df36a7f268a7206362bb2d5c9fef925c983dac42ecb7440ac1cb779e3",
+      "upstream_committed_at": "2026-08-19T14:13:18-04:00"
     },
     "content/handbook/upstream-studios/experience-research/longitudinal-studies/index.md": {
       "path": "content/handbook/upstream-studios/experience-research/longitudinal-studies/index.md",
@@ -33690,11 +33690,11 @@
     },
     "content/handbook/upstream-studios/experience-research/recruiting-participants/common-screener/index.md": {
       "path": "content/handbook/upstream-studios/experience-research/recruiting-participants/common-screener/index.md",
-      "upstream_sha": "5934211cb62d0c36181bc3a4be1381e5e07aef42",
-      "translated_at": "2026-07-29T06:11:55+09:00",
+      "upstream_sha": "4aea490fd6276e4dc6a9fba4f36820790b265fe9",
+      "translated_at": "2026-09-03T21:26:54+09:00",
       "model": "codex",
-      "input_hash": "d520147be7c7fde42e19caafeb2db4fbfd7fd39797d3f522de87e5488c7ad579",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
+      "input_hash": "b4903a9cf6ded38ef8880752bad8d736f5182fcdc7389360e5d49a2b267b71ec",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
     },
     "content/handbook/upstream-studios/experience-research/research-in-the-ai-space/index.md": {
       "path": "content/handbook/upstream-studios/experience-research/research-in-the-ai-space/index.md",
@@ -33786,19 +33786,19 @@
     },
     "content/handbook/upstream-studios/experience-research/strategic-research-at-gitlab/_index.md": {
       "path": "content/handbook/upstream-studios/experience-research/strategic-research-at-gitlab/_index.md",
-      "upstream_sha": "5934211cb62d0c36181bc3a4be1381e5e07aef42",
-      "translated_at": "2026-07-29T06:11:55+09:00",
+      "upstream_sha": "4aea490fd6276e4dc6a9fba4f36820790b265fe9",
+      "translated_at": "2026-09-03T21:26:54+09:00",
       "model": "codex",
-      "input_hash": "edc749cafff9f81d4de5225b6544eb02c9321fc017b83cef002eb425ee6e423e",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
+      "input_hash": "0a43c44c8c6cee716c50280d3cb151855be1bb0589b4f3dfa1aca87c92a1c2c8",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
     },
     "content/handbook/upstream-studios/experience-research/strategic-research-at-gitlab/gitlab-adoption-research-program.md": {
       "path": "content/handbook/upstream-studios/experience-research/strategic-research-at-gitlab/gitlab-adoption-research-program.md",
-      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
-      "translated_at": "2026-07-17T08:00:00+09:00",
+      "upstream_sha": "4aea490fd6276e4dc6a9fba4f36820790b265fe9",
+      "translated_at": "2026-09-03T21:26:54+09:00",
       "model": "codex",
-      "input_hash": "5af6009f3ea1a49a7f8c25e95f9ba018718d217ed7232e9bb96141516307197f",
-      "upstream_committed_at": "2026-07-16T17:32:44-03:00"
+      "input_hash": "bf9455db6ad226a9fe1d0e547016ecbf763f99068b24752d31b0867c7d1fdd59",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
     },
     "content/handbook/upstream-studios/experience-research/surveys/_index.md": {
       "path": "content/handbook/upstream-studios/experience-research/surveys/_index.md",
@@ -34842,11 +34842,11 @@
     },
     "content/handbook/upstream-studios/product-design/workflow/_index.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/_index.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T06:11:46+09:00",
+      "upstream_sha": "4aea490fd6276e4dc6a9fba4f36820790b265fe9",
+      "translated_at": "2026-09-03T21:26:54+09:00",
       "model": "codex",
-      "input_hash": "fdd6c3c871c9d758c0cc7be4b28fa10f5fc586db67e11fefae6fe60f8bea3845",
-      "upstream_committed_at": "2026-08-14T11:43:03-05:00"
+      "input_hash": "2afdb95733b3ed12a1d9ca88e6529e8f9c9fe5f7d1857bdcec52eccaf71d3e1a",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
     },
     "content/handbook/upstream-studios/product-design/workflow/ai-design.md": {
       "path": "content/handbook/upstream-studios/product-design/workflow/ai-design.md",
@@ -34930,11 +34930,11 @@
     },
     "content/handbook/upstream-studios/product-design/design-pair-rotation.md": {
       "path": "content/handbook/upstream-studios/product-design/design-pair-rotation.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T06:11:46+09:00",
+      "upstream_sha": "4aea490fd6276e4dc6a9fba4f36820790b265fe9",
+      "translated_at": "2026-09-03T21:26:54+09:00",
       "model": "codex",
-      "input_hash": "f404952ee016a1c9ed308a4e8472d1eb69631aef269673b563869b08293cdc53",
-      "upstream_committed_at": "2026-08-14T05:25:40-07:00"
+      "input_hash": "21aeda840187592d711ac0558934ab7a2503855ac04c8f90bd1ebe6e624c4504",
+      "upstream_committed_at": "2026-08-24T06:19:20-07:00"
     },
     "content/handbook/upstream-studios/product-design/hiring-product-designers.md": {
       "path": "content/handbook/upstream-studios/product-design/hiring-product-designers.md",

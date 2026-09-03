@@ -2,9 +2,9 @@
 title: Product Designer のワークフロー
 description: "プロダクト開発プロセスの上流に位置する戦略的パートナーとして働く Product Designer のための、デザインプロセス、協働の実践、クラフトに関する包括的なガイド。"
 upstream_path: /handbook/upstream-studios/product-design/workflow/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-lastmod: "2026-08-14T11:43:03-05:00"
-translated_at: "2026-08-15T06:11:46+09:00"
+upstream_sha: 4aea490fd6276e4dc6a9fba4f36820790b265fe9
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-03T21:26:54+09:00"
 translator: codex
 stale: false
 ---
@@ -13,16 +13,16 @@ Product Designer は [Product Design](/handbook/upstream-studios/product-design/
 
 Issue のトリアージ、ラベル付け、スケジュール設定などの運用の詳細については、[Product Design Operations](/handbook/upstream-studios/product-design/operations/)を参照してください。
 
-## プロダクトデザインプロセス
+## プロダクトデザインプロセス {#product-design-process}
 
 Product Designer は、早期の協働、ユーザー中心の思考、継続的な検証を重視する、戦略的かつ反復的なプロセスに従います。戦略的パートナーとして、私たちは最初から関わり、すでに行われた意思決定を単に実行するのではなく、方向性を形作ります。
 
-### 機会を定義する
+### 機会を定義する {#define-the-opportunity}
 
 まず、PM と協働して、誰が、何を、なぜ、を検証します:
 
 - 誰のためにデザインするのか、何をデザインするのか、なぜデザインするのかを検証する
-- ユーザーが達成しようとするジョブとその周辺のコンテキストを理解する [ジョブ理論（JTBD）](/handbook/product/ux/jobs-to-be-done/)として、PM がこれを明確に表現できるよう支援する
+- PM がこれを[ジョブ理論（JTBD）](/handbook/product/ux/jobs-to-be-done/)として明確に表現できるよう支援する。つまり、ユーザーが達成しようとしているジョブと、その周辺のコンテキストを理解する
 - エビデンスに基づかない「どのように」を実装するよう求められた場合は、PM が誰が、何を、なぜ、に焦点を戻し、最善の方法を協働して決定するよう促す
 - PM が [MVC](/handbook/product/product-principles/#the-minimal-valuable-change-mvc) の成功基準を定義するのを支援し、MVC の「必須」と、MVC ではない「望ましい」「あればよい」を優先順位付けする
 
@@ -39,7 +39,7 @@ Product Designer として、チーム内でのアイデア創出を主導し、
 **創造性を刺激する活動とリソース:**
 
 - **ワークショップを開催する**: アイデアをブレインストーミングするために、同期型（例: [ThinkBig!](/handbook/product/ux/thinkbig/)）または非同期型のワークショップを企画する
-- **カウンターパートと関わる**: 新鮮な視点を得るために、[Sales](/handbook/sales/)、[Customer Success](/handbook/customer-success/)、[Marketing](/handbook/marketing/brand-and-product-marketing/design/)のカウンターパートに連絡する
+- **カウンターパートと関わる**: 新鮮な視点を得るために、[Sales](/handbook/sales/)、[Customer Success](/handbook/customer-success/)、[Marketing](/handbook/marketing/brand-experience/brand-creative/)のカウンターパートに連絡する
 - **問題検証リサーチを実施する**: PM と UX Researcher と協働して、[問題検証リサーチ](/handbook/upstream-studios/experience-research/problem-validation-and-methods/)のラウンドに優先順位を付ける
 - **顧客との通話に参加する**: PM と顧客との通話に参加し、ユーザーが課題やワークフローをどのように説明するかを直接聞く
 - **未知のペインポイントを発見する**:
@@ -133,7 +133,7 @@ Product Designer として、チーム内でのアイデア創出を主導し、
 
 画像やデザイン作業へのリンクを含む、合意済みのすべての要素で Single Source of Truth を更新してください。
 
-## デザインレビュー
+## デザインレビュー {#design-reviews}
 
 Upstream Studios は、戦略的パートナーはまず強い社内のつながりを持ち、次に強い社外パートナーシップを持つことを重視します。デザインレビューは、戦略的思考とプラットフォーム全体の協働を可能にするデザイナー間の関係を構築します。
 
@@ -259,7 +259,7 @@ Upstream Studios はクラフトを高め、協働をデフォルトにするこ
 - この機能または能力は必要か、使われているか、あるいは取り除いた場合に何が起こるか
 - すべてが「手の届く範囲」にあるか、それともユーザーはさまよわされているか
 
-### モードを考慮したデザイン
+### モードを考慮したデザイン {#designing-with-modes}
 
 デザインは、現在ライトモードとダークモードを含む、一般提供されているすべてのモードで機能しなければなりません。デザインする際は、次の点を念頭に置いてください:
 
@@ -295,7 +295,7 @@ UI テキストには、ボタンまたはメニューのラベル、エラー�
 **円滑なプロセスを確保するには:**
 
 - **Issue と MR にラベルを付ける**: [UI text](https://gitlab.com/gitlab-org/gitlab/-/issues?label_name%5B%5D=UI+text) と `documentation` のラベルを適用する
-- **レビューを依頼する**: デザイン Issue で、[グループ担当の Technical Writer](/handbook/marketing/technical-writing/#assignments)にメッセージを送り、レビューを依頼する。レビューするファイルまたは行と、プレビューまたはコンテキストを理解する方法を指定する
+- **レビューを依頼する**: デザイン Issue で、[グループ担当の Technical Writer](/handbook/marketing/product-and-technical-marketing/technical-writing/#assignments)にメッセージを送り、レビューを依頼する。レビューするファイルまたは行と、プレビューまたはコンテキストを理解する方法を指定する
 - **テキストの最終化で協働する**: UI テキストが使いやすく正確になるよう、Technical Writer と密に協働して最終化する
 - **他部門からのフィードバックを取り入れる**: 他部門が UI コピーについて意見を提供する場合は、大幅な修正と委員会方式のデザインを避けるため、具体的なテキストではなく目標を尋ねる
 
