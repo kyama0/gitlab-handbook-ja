@@ -11,12 +11,12 @@ lastmod: "2024-07-29T14:59:05-05:00"
 ## CI と CD
 
 ![CD と CD パイプラインの比較](/images/blogimages/cicd_pipeline_infograph.png)
-出典: 「[Setting up GitLab CI/CD for Android projects](https://about.gitlab.com/blog/2018/02/14/setting-up-gitlab-ci-for-android-projects/)」
+出典: 「[Android プロジェクト向け GitLab CI/CD のセットアップ](https://about.gitlab.com/blog/2018/02/14/setting-up-gitlab-ci-for-android-projects/)」
 
 ### 継続的インテグレーション（CI）
 
 > **継続的インテグレーション（Continuous Integration）** は通常、開発環境内でコードを統合・ビルド・テストすることを指します。継続的デリバリー（Continuous Delivery）はこれを基盤とし、本番デプロイに必要な最終段階を扱います。
-> \- [Martin Fowler on continuous delivery, 2013](https://martinfowler.com/bliki/ContinuousDelivery.html)
+> \- [継続的デリバリーについての Martin Fowler の解説（2013 年）](https://martinfowler.com/bliki/ContinuousDelivery.html)
 
 #### 何か（What）
 
@@ -41,7 +41,7 @@ lastmod: "2024-07-29T14:59:05-05:00"
 ### 継続的デリバリー/デプロイ（CD）
 
 > **継続的デリバリー** は **継続的デプロイ** と混同されることがあります。継続的デプロイは、すべての変更がパイプラインを通って自動的に本番環境に投入されることを意味し、結果として 1 日に多数の本番デプロイが行われます。継続的デリバリーは、頻繁なデプロイが可能であることを意味しますが、ビジネス上の理由（より低い頻度のデプロイを好むなど）でそれを行わない選択をすることもあります。継続的デプロイを行うには、継続的デリバリーが行われている必要があります。
-> \- [Martin Fowler on continuous delivery, 2013](https://martinfowler.com/bliki/ContinuousDelivery.html)
+> \- [継続的デリバリーについての Martin Fowler の解説（2013 年）](https://martinfowler.com/bliki/ContinuousDelivery.html)
 
 #### 何か（What）
 

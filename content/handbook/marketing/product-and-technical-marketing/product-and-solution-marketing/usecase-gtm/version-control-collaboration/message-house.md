@@ -26,7 +26,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 | | [Goldman Sachs](https://about.gitlab.com/customers/goldman-sachs/) は **2 週間に 1 ビルドから 1 日 1000 以上**へ改善 |
 | | [Worldline](https://about.gitlab.com/customers/worldline/) は数秒でソースコードリポジトリを起動 |
 | | [NorthWestern Mutual](https://youtu.be/kPNMyxKRRoM) は 8 ヶ月で Enterprise 環境への完全移行を完了 |
-| | [Progressive Delivery at GitLab](https://redmonk.com/jgovernor/2019/07/10/progressive-delivery-at-gitlab/) は GitLab を Review Apps と短命ブランチでドッグフーディングしながら高速反復 |
+| | [GitLab におけるプログレッシブデリバリー](https://redmonk.com/jgovernor/2019/07/10/progressive-delivery-at-gitlab/) は GitLab を Review Apps と短命ブランチでドッグフーディングしながら高速反復 |
 
 *Gartner Peer Insights のレビューは、エンドユーザー個人の主観的な意見を彼ら自身の経験に基づいて構成しているものであり、Gartner やその関連会社の見解を表すものではありません。明らかなタイポは修正されています。*
 

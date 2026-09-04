@@ -11,7 +11,7 @@ lastmod: "2026-04-30T18:50:47+02:00"
 
 このページでは、翻訳マージリクエストにおける担当者およびレビュアーの役割、ドラフトステータス、レビュープロセスを定義します。
 
-一般的なガイダンスについては、[GitLab コードレビューガイドライン](https://docs.gitlab.com/development/code_review/) および [Engineering Workflow: Code Review](/handbook/engineering/workflow/code-review/) を参照してください。
+一般的なガイダンスについては、[GitLab コードレビューガイドライン](https://docs.gitlab.com/development/code_review/) および [Engineering ワークフロー：コードレビュー](/handbook/engineering/workflow/code-review/) を参照してください。
 
 ## Tech Docs（アップストリーム）
 
