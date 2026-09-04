@@ -2,11 +2,11 @@
 title: "Co-Create プログラム"
 description: "エンタープライズ顧客がガイド付きのコラボレーションを通じて GitLab に直接コントリビュートできるようにする"
 upstream_path: /handbook/marketing/developer-relations/programs/cocreate/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T06:15:26+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T13:37:38+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-30T12:52:16+01:00"
+lastmod: "2026-08-27T19:08:12+02:00"
 ---
 
 ## 概要
@@ -18,7 +18,7 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 1. **テクニカルイネーブルメントワークショップ**： GitLab Development Kit (GDK) のセットアップと GitLab のアーキテクチャ理解を支援するインタラクティブなセッション
 1. **オンサイトエンジニアリングサポート**： 1 名の GitLab エンジニアが 1 週間オンサイトでペアプログラミングを通じてコクリエーションを開始し、少なくとも 1 件のマージリクエスト完了を目指します
 1. **法務サポート**： 企業コントリビューター契約とオープンソースポリシーに関する支援
-1. **継続的なメンタリング**： Contributor Success チームによる長期的なコントリビューション成功のための専任サポート
+1. **継続的なメンタリング**： Co-Create and Community Engineering チームによる長期的なコントリビューション成功のための専任サポート
 
 ## プログラムの目標
 
@@ -142,7 +142,7 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 
 ## 役割と責任
 
-### Co-Create プログラムマネージャー
+### Co-Create ストラテジーリード
 
 1. プログラム全体の調整と実行
 1. 顧客コミュニケーションと期待管理
@@ -150,7 +150,7 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 1. 継続的なプログラム改善
 1. 問題解決とエスカレーション管理
 
-**DRI**: Wesley De Vrient @wdevrient-ext
+**DRI**: Isa Huerga @ihuerga
 
 ### アカウントチーム (AE/SA/CSM/As)
 
@@ -161,7 +161,7 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 1. Co-Create 参加拡大の機会特定（追加チーム、後続のコントリビューション）
 1. ビジネス拡大機会の特定（追加ユースケース、機能採用、シート増加）
 
-### Contributor Success
+### Co-Create and Community Engineering
 
 1. テクニカルイネーブルメントワークショップ（GDK セットアップ、アーキテクチャ概要）の実施
 1. コントリビューターへの継続的なメンタリング
@@ -200,7 +200,7 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 1. [顧客向けドキュメント](https://docs.google.com/document/d/1-abN7qF2Gd_XX9oaigNbFlEvvua1_YdZCXdrJ_6RFcM)
 1. [プログラムトレーニング録画](https://gitlab.zoom.us/rec/share/300tNBVE4R72losqQjoPAReWF5jc2NGLK_p2AswfmxHprPqdWqdY3WR4ywYsyYWl.s3Gw-ExF4sMa5EZa?startTime=1738092078000&pwd=kqmKPNHsLP5k4TB2FeQK3ReIY6ybyD1l) (社内のみ)
 1. [社内トレーニングデッキ](https://docs.google.com/presentation/d/13x7xZA_3L7EVpMb5t3hwdr1090mnBIOP5zhHUNSexEg/edit#slide=id.g273d5139f36_0_0) (社内のみ)
-1. Slack: `#devrel-cocreate-program`
+1. Slack: `#co-create-and-community-engineering`
 
 ### 顧客向け
 
@@ -218,26 +218,25 @@ Co-Create プログラムは、新機能の開発、既存機能の拡張、バ�
 
 **プログラム関連の質問と GitLab 社内の問い合わせ:**
 
-- **Slack**: `#devrel-cocreate-program` - プログラムに関する質問、候補者特定、社内調整のための一般チャンネル
+- **Slack**: `#co-create-and-community-engineering` - プログラムに関する質問、候補者特定、社内調整のための一般チャンネル
 
 **アクティブな顧客エンゲージメント:**
 
-- **専用 Slack チャンネル**： 各エンゲージメント用に `#cocreate-initiative-CUSTOMERNAME` 形式で作成されます
+- **専用 Slack チャンネル**： 各エンゲージメント用に `#cocreate-CUSTOMERNAME` 形式で作成されます
 - 含まれるメンバー: 顧客チーム、アカウントチーム（CSM、SA、AE）、プログラムマネージャー、テクニカルリード、GitLab エンジニア
 
 **顧客とコミュニティ向け:**
 
-- **メール**： contributors@gitlab.com
+- **メール**： co-create@gitlab.com
 - **コミュニティ**： [GitLab Community Discord](https://discord.gg/gitlab)
 
 #### チームの連絡先
 
-1. **プログラムマネージャー**： Ashley Sezer - @asezer
+1. **Co-Create ストラテジーリード**： Isa Huerga Ayza - @ihuerga
 1. **テクニカルリード**： Raimund Hook - @stingrayza
-1. **マネージャー、Developer Relations Programs**： Isa Huerga Ayza - @ihuerga
-1. **ディレクター、Contributor Success**： Nick Veenhof - @nick_vh
-1. **エンジニアリングコーディネーター**： Shekhar Patnaik - @shekharpatnaik
-1. **一般的なお問い合わせ**： contributors@gitlab.com
+1. **Demand Generation and Advocacy**： Rachel Lurie - @rlurie
+1. **フィールドリード**： Jess Perry - @jperry
+1. **一般的なお問い合わせ**： co-create@gitlab.com
 
 ## プレイブック
 
@@ -303,7 +302,7 @@ GitLab プロジェクトはエンゲージメントステータスの唯一の�
 ##### エンゲージメント後
 
 1. 2 週間以内に顧客の声のインタビューをスケジュール
-1. 継続的なサポートのために顧客を Contributor Success に接続
+1. 継続的なサポートのために顧客を Co-Create and Community Engineering に接続
 1. Product Marketing とケーススタディの作業
 1. 学んだ教訓を記録
 1. 四半期ごとのフォローアップを計画
@@ -319,7 +318,7 @@ OKR データは [Co-Create メトリクススプレッドシート](https://doc
 
 ##### 更新パイプラインの実行
 
-1. [Contributor Success Toolbox パイプライン](https://gitlab.com/gitlab-org/developer-relations/contributor-success/toolbox/-/pipelines/new)に移動
+1. [DevRel Engineering Toolbox パイプライン](https://gitlab.com/gitlab-org/developer-relations/contributor-success/toolbox/-/pipelines/new)に移動
 1. "Run pipeline" をクリック
 1. 以下の変数を追加:
    - `CO_CREATE_TRACKER = 1`
@@ -444,7 +443,7 @@ CSM、AE、または SA が（通常は Slack 経由で）Co-Create に興味の
 
 **"顧客はすでに応募フォーム経由で送信した"** フォームの回答を確認し、アカウントチームが提供した情報とマージし、ディスカバリーコールのスケジュール設定に進みます。
 
-#### Co-Create Issue への Product の承認取得
+#### Co-Create Issue への Product の承認取得 {#getting-product-approval-for-a-co-create-issue}
 
 このプレイブックは、顧客がキュレート済みの Co-Create リストにまだない Issue に取り組みたい場合に、プロダクトマネージャーの承認を確保するプロセスを扱います。
 
@@ -486,7 +485,7 @@ CSM、AE、または SA が（通常は Slack 経由で）Co-Create に興味の
 
 - Issue ラベルで stage/group のヒントを確認（例: `~devops::package`、`~group::pipeline authoring`）
 - `#product` Slack チャンネルで尋ねる
-- ガイダンスのために Contributor Success チームに連絡
+- ガイダンスのために Co-Create and Community Engineering チームに連絡
 
 ##### ステップ 2: Issue の準備状況を評価
 
@@ -518,8 +517,8 @@ PM に連絡する前に、Issue の現在の状態を素早く評価します:
 
 | 状況 | チャンネル |
 | --------- | ------- |
-| 顧客固有のチャンネルがすでに存在する | `#cocreate-initiative-[customer]` - そこで PM をタグ付け |
-| 顧客チャンネルがまだない | `#cocreate-initiative` - そこで会話を開始 |
+| 顧客固有のチャンネルがすでに存在する | `#cocreate-[customer]` - そこで PM をタグ付け |
+| 顧客チャンネルがまだない | `#co-create-and-community-engineering` - そこで会話を開始 |
 
 これにより、アカウントチームにコンテキストが見えるようになり、断片化された会話を回避できます。
 
@@ -614,7 +613,7 @@ PM に連絡する前に、Issue の現在の状態を素早く評価します:
 
 1. **最初に**： グループの関連エンジニアリングマネージャーに連絡
 2. **次に**： グループプロダクトマネージャー（PM のマネージャー）に連絡
-3. **第三に**： Contributor Success リーダーシップのガイダンスのために `#cocreate-initiative` で提起
+3. **第三に**： Co-Create and Community Engineering リーダーシップのガイダンスのために `#co-create-and-community-engineering` で提起
 
 **エスカレーションすべきでない場合**
 
@@ -797,8 +796,8 @@ CSM/AE とのクイック同期で:
 #### ステップ 3: 接続のファシリテーション
 
 1. 顧客を [応募フォーム](https://about.gitlab.com/community/co-create/#form)に案内
-1. Slack チャンネルを作成: `#cocreate-initiative-CUSTOMERNAME`
-1. 招待: CSM、SA、AE、@wdevrient-ext、@stingrayza
+1. Slack チャンネルを作成: `#cocreate-CUSTOMERNAME`
+1. 招待: CSM、SA、AE、@ihuerga、@stingrayza
 1. 顧客ステークホルダーとのディスカバリーコールをスケジュール
 
 ### Engineering 向け: オンサイトベストプラクティス
@@ -815,7 +814,7 @@ CSM/AE とのクイック同期で:
 
 **Q: Co-Create では具体的に何を行いますか？**
 
-A: GitLab は、GitLab へのコントリビューションを対象に、顧客チームとペアプログラミングを行うためにエンジニア 1 名を 1 週間オンサイトへ派遣します。その前に、[GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit)をセットアップし、アーキテクチャを説明するバーチャルワークショップを実施します。その後、Contributor Success チームがマージリクエストのレビュー進行中に継続的なメンタリングを提供します。
+A: GitLab は、GitLab へのコントリビューションを対象に、顧客チームとペアプログラミングを行うためにエンジニア 1 名を 1 週間オンサイトへ派遣します。その前に、[GitLab Development Kit (GDK)](https://gitlab.com/gitlab-org/gitlab-development-kit)をセットアップし、アーキテクチャを説明するバーチャルワークショップを実施します。その後、Co-Create and Community Engineering チームがマージリクエストのレビュー進行中に継続的なメンタリングを提供します。
 
 **Q: これはコンサルティング契約ですか？費用はかかりますか？**
 
@@ -899,7 +898,7 @@ A: 参加するエンジニアには、GDK を実行できる開発マシン（L
 
 **Q: 1 週間が終わった後はどうなりますか？**
 
-A: マージリクエストは GitLab の標準レビュー工程に進みます。Contributor Success チームは、そのサイクルを通じて継続的なサポートを提供します。その後、多くの顧客は独自にコントリビュートを継続します。より広いコミュニティのサポートのため、チームを [GitLab Community Discord](https://discord.gg/gitlab)にもつなげます。
+A: マージリクエストは GitLab の標準レビュー工程に進みます。Co-Create and Community Engineering チームは、そのサイクルを通じて継続的なサポートを提供します。その後、多くの顧客は独自にコントリビュートを継続します。より広いコミュニティのサポートのため、チームを [GitLab Community Discord](https://discord.gg/gitlab)にもつなげます。
 
 **Q: 構築したものを誰が維持しますか？**
 
@@ -1010,4 +1009,4 @@ A: コミットメント前にプロダクトマネージャーの整合が行�
 
 **Q: 顧客がオンサイト週後もコントリビューションを継続したい場合は？**
 
-A: 素晴らしい！継続的なメンタリングのため Contributor Success チームと接続します。多くの顧客が長期的なコントリビューターになります。
+A: 素晴らしい！継続的なメンタリングのため Co-Create and Community Engineering チームと接続します。多くの顧客が長期的なコントリビューターになります。

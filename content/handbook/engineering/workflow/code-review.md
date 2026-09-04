@@ -2,11 +2,11 @@
 title: コードレビューガイドライン
 description: "コードレビューはすべてのマージリクエストで必須です。コードレビューガイドラインに慣れ、それに従ってください。"
 upstream_path: "/handbook/engineering/workflow/code-review/"
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T23:58:47+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T12:58:42+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-13T15:10:33+03:00"
+lastmod: "2026-08-25T15:12:19+12:00"
 ---
 
 ## 概要
@@ -543,17 +543,9 @@ MR の作成者として、`Review-response` SLO を満たせず、アサイン�
 
 ## コードオーナー承認
 
-一部の GitLab プロジェクトでは、特定のファイルパスとタイプに対する承認を管理するために、GitLab の [CODEOWNERS ファイル機能](https://docs.gitlab.com/ee/user/project/codeowners/)を使用しています。`gitlab-org/gitlab` プロジェクトでは、[職務分離のベストプラクティスに従うため、CODEOWNERS 承認ルールと MR 承認設定の組み合わせを使用](https://docs.gitlab.com/ee/development/code_review.html#merging-a-merge-request)しています。このセクションでは、`gitlab-org/gitlab` プロジェクトの CODEOWNERS 変更の対象承認者を更新するプロセスを説明します。
+一部の GitLab プロジェクトでは、特定のファイルパスとタイプに対する承認を管理するために、GitLab の [CODEOWNERS ファイル機能](https://docs.gitlab.com/ee/user/project/codeowners/)を使用しています。
 
-[CODEOWNERS ファイル](https://gitlab.com/gitlab-org/gitlab/-/blob/master/.gitlab/CODEOWNERS)自体の Code Owners は、ファイル内のルールで管理されます。たとえば:
-
-```text
-CODEOWNERS @gitlab-org/development-leaders @gitlab-org/tw-leadership
-```
-
-`CODEOWNERS` ファイルの Code Owner を更新する方法は 2 つあります:
-
-1. CODEOWNERS 変更を承認する能力をすでに持つグループのメンバーシップを、[標準のアクセスリクエストプロセス](/handbook/eta/corporate-it/end-user-services/access-requests/access-requests/)で更新する。
-1. 関連する行を更新するためにマージリクエストを開く。既存の Code Owner がマージリクエストを承認する必要があります。可視性のためにセキュリティコンプライアンスチームメンバーにピングすることもお勧めします。
-
-`@gitlab-org/development-leaders` グループは、Engineering 内の開発部門の管理職トラックの Senior Manager 以上、および個人貢献者トラックの Distinguished Engineer 以上のチームメンバーで構成されます。
+`gitlab-org/gitlab` プロジェクトでは、職務分掌のベストプラクティスに従うために、
+[CODEOWNERS 承認](https://docs.gitlab.com/development/development_processes/#codeowners)と
+[MR 承認設定](https://docs.gitlab.com/development/development_processes/#merge-request-approval-settings)
+を組み合わせて使用しています。

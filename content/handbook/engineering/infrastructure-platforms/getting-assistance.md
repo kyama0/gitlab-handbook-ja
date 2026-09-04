@@ -2,11 +2,11 @@
 title: "インフラストラクチャプラットフォームでのサポートの受け方"
 description: "本番プラットフォームの問題に関するサポートを受ける方法"
 upstream_path: /handbook/engineering/infrastructure-platforms/getting-assistance/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T12:11:57+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-01T07:28:41-06:00"
+lastmod: "2026-08-28T15:18:47+10:00"
 ---
 
 ## GitLab.com
@@ -51,9 +51,36 @@ Slack チャンネル: [#g_observability](https://gitlab.enterprise.slack.com/ar
 私たちが助けられること:
 
 1. Runway
-1. フリート管理
 
 Slack チャンネル: [#f_runway](https://gitlab.enterprise.slack.com/archives/C05G970PHSA)
+
+#### Fleet Management
+
+[Request For Help トラッカー](https://gitlab.com/gitlab-com/request-for-help/-/issues/new)でヘルプリクエストを開いてください
+
+私たちが助けられること:
+
+1. Kubernetes のコアインフラストラクチャ（GKE クラスター）
+1. Kubernetes ワークロードツール（ArgoCD、Helmfile、Helm チャート）
+1. 仮想マシンと OS イメージの管理
+1. `ops.gitlab.net` と Ops ランナー
+1. シークレット管理（Vault）
+1. Infrastructure-as-Code と共有 CI ツール
+
+Slack チャンネル: [#g_fleet_management](https://gitlab.enterprise.slack.com/archives/C0ACE4T2R6W)
+
+#### Cloud Cost Utilization
+
+CCU Issue トラッカーで [Issue を作成](https://gitlab.com/gitlab-com/gl-infra/finops/team/-/issues/new?description_template=issue)してヘルプリクエストを開いてください
+
+私たちが助けられること:
+
+1. クラウドコストの分析とレポート
+1. コストの予測と予算策定
+1. リソース利用率と無駄のモニタリング
+1. コスト配分のラベル付けとタグ付け戦略
+
+Slack チャンネル: [#g_cloud-cost-utilization](https://gitlab.enterprise.slack.com/archives/C09MUMXRECC)
 
 #### Networking and Incident Management
 

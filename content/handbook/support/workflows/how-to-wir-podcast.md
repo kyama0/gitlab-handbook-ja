@@ -3,11 +3,11 @@ title: WIR ポッドキャストの作成方法
 category: References
 description: Support Week-in-Review ポッドキャストを作成するための一般的なガイド
 upstream_path: /handbook/support/workflows/how-to-wir-podcast/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T06:31:24+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T14:51:47+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-29T12:39:09-04:00"
+lastmod: "2026-09-04T11:57:39+12:00"
 ---
 
 ## 概要
@@ -84,7 +84,7 @@ Support Week-in-Review ポッドキャストを録音および公開する必要
 録音を完了し、Zoom が処理を完了したら:
 
 1. オプション: テーマ音楽を持っている場合は、録音に追加します
-1. [Support Week in Review - Audio Edition](https://drive.google.com/drive/search?q=Support%20Week%20in%20Review%20-%20Audio%20Edition) フォルダーにアップロードします
+1. [Support Week in Review - Audio Edition](https://drive.google.com/drive/search?q=%22Support%20Week%20in%20Review%20Audio%20Edition%22%20type:folder) フォルダーにアップロードします
 1. 共有設定を「GitLab 内の誰でも閲覧可能」に変更します
 1. URL をコピー/貼り付けして、TOC の下のダイジェスト作業項目に貼り付けます（追加するためのプレースホルダーがあります）
 1. リンクを Slack に共有します - #support_team-chat には木曜日の 23:00 UTC に slackbot リマインダーがあります - その会話のスレッド返信として、音声リンクとダイジェスト作業項目へのリンクを共有できます。

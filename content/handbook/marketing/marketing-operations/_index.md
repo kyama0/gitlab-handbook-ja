@@ -2,11 +2,11 @@
 title: "Marketing Operations"
 description: "Marketing Operations (MktgOps) は、マーケティングチーム全体をサポートし、プロセスを合理化し関連ツールを管理します。これらのツールにより、GitLab の他のチームもしばしばサポートします。"
 upstream_path: /handbook/marketing/marketing-operations/
-upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
-translated_at: "2026-07-30T08:58:52+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T13:37:38+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-08-28T11:36:35-06:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -28,9 +28,9 @@ Marketing Operations は、マーケティング組織がプロセスを合理�
 | 担当者 | 役職 |
 | ------ | ------ |
 | [Andy Ramirez](https://gitlab.com/anramirez) | VP, Growth Marketing |
-| [Amy Waller](https://gitlab.com/amy.waller) | [Director, Marketing Operations](/job-description-library/marketing/marketing-operations-manager/#director-marketing-operations) |
-| [Gill Murphy](https://gitlab.com/gillmurphy) | [Manager, Marketing Operations Manager](/job-description-library/marketing/marketing-operations-manager/#manager-marketing-operations) |
-| [Rob Rosu](https://gitlab.com/RobRosu) | [Manager, Marketing Operations Manager](/job-description-library/marketing/marketing-operations-manager/#manager-marketing-operations)|
+| [Filza Qureshi](https://gitlab.com/fqureshi) | [Director, Digital Experience](/job-description-library/marketing/digital-experience/#director-digital-experience) |
+| [Gill Murphy](https://gitlab.com/gillmurphy) | [Senior Manager, Marketing Operations](/job-description-library/marketing/marketing-operations-manager/#senior-manager-marketing-operations) |
+| [Rob Rosu](https://gitlab.com/RobRosu) | [Manager, Marketing Operations](/job-description-library/marketing/marketing-operations-manager/#manager-marketing-operations)|
 | [Jenny Tiemann](https://gitlab.com/jennyt) | [Staff Marketing Operations Manager](/job-description-library/marketing/marketing-operations-manager/#staff-marketing-operations-manager) |
 | [Salina Tran](https://gitlab.com/stran5) | [Senior Marketing Operations Manager](/job-description-library/marketing/marketing-operations-manager/#senior-marketing-operations-manager) |
 | [Jameson Burton](https://gitlab.com/jburton) | [Senior Marketing Operations Manager](/job-description-library/marketing/marketing-operations-manager/#senior-marketing-operations-manager)  |
@@ -113,7 +113,7 @@ MktgOps チームは Issue と Issue ボードから作業します。私たち�
 
 達成した key result について詳しく知るには、[四半期ごとのハイライトトラッカー](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/?sort=created_date&state=all&label_name%5B%5D=mktgops-highlights&first_page_size=20) をチェックしてください。
 
-### ラベリング
+### ラベリング {#labeling}
 
 私たちはラベルを 3 つの目的で使用します:
 
@@ -380,7 +380,7 @@ Tech Stack の補完として、ティア 1 およびティア 2 のツールを
 
 #### マネジメントテクノロジー - ティア 3
 
-- [Litmus](/handbook/marketing/marketing-operations/litmus)
+- [Inbox Monster](/handbook/marketing/marketing-operations/inbox-monster)
 - [Brilliant Gifts](/handbook/marketing/marketing-operations/brilliant/)
 - [OpenSense](/handbook/marketing/marketing-operations/opensense/)
 - [BeeFree](/handbook/marketing/marketing-operations/beefree/)
@@ -388,14 +388,14 @@ Tech Stack の補完として、ティア 1 およびティア 2 のツールを
 #### 機能テクノロジー - ティア 4
 
 - [Bitergia](/handbook/marketing/developer-relations/workflows-tools/) (Developer Relations)
-- [Canva](/handbook/marketing/brand-and-product-marketing/design/#canva-best-practices) (Brand)
+- [Canva](/handbook/marketing/brand-experience/brand-creative/#canva-best-practices) (Brand)
 - [Common Room](/handbook/marketing/developer-relations/workflows-tools/) (Devoper Relations)
 - Figma (UX)
 - [Optimizely](/handbook/marketing/digital-experience/optimizely/)
 - [MeetUp](/handbook/marketing/developer-relations/workflows-tools/)
-- [SEMRush](/handbook/marketing/inbound-marketing/search-marketing/seo-strategy/) (Search Marketing)
+- [SEMRush](/handbook/marketing/growth-marketing/digital-agency/search-marketing/seo-strategy/) (Search Marketing)
 - [Similarweb](/handbook/marketing/marketing-operations/similarweb) (Search Marketing)
-- [EveryOne Social](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/team-member-social-advocacy/#team-member-social-media-advocacy-and-enablement)
+- [EveryOne Social](/handbook/marketing/corporate-communications/social-marketing/team-member-social-advocacy/#team-member-social-media-advocacy-and-enablement)
 - [Vimeo](/handbook/marketing/marketing-operations/vimeo/) (Brand)
 - [Zendesk Community](/handbook/marketing/developer-relations/workflows-tools/)
 
@@ -456,7 +456,7 @@ Marketing Operations の役割:
 
 ## MarTech 変更管理
 
-### 新しいツール購入プロセス
+### 新しいツール購入プロセス {#new-tool-purchase-process}
 
 新しいツールをテックスタックに追加することを希望する場合、または興味がある場合は、Marketing Operations リポジトリの [tools eval Issue テンプレートを使用して Issue を提出してください](https://gitlab.com/gitlab-com/marketing/marketing-operations/issues/new?issuable_template=tools_eval)。Marketing Operations は、システム統合や予算などを考慮するため、すべての新しいツール評価に含まれる必要があります。予算設定後に必要となる新しいツールは、他の部門から Marketing Operations への予算移転によって処理されます。Issue が提出されると、Marketing Operations はリクエストを評価し、ツールにティアを割り当てます。現在および以前のツール評価を確認するには、[こちらをクリックしてください](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/?sort=created_date&state=opened&label_name%5B%5D=Ops%20Tool%20Evaluation&first_page_size=20)。
 
@@ -568,7 +568,7 @@ lead オブジェクトには 3 種類の住所情報があります。`Person A
   - これは Marketo がメールリストで参照する住所です。フォーム入力、リストアップロード、または ZI エンリッチメントを通じて既知の場合、レコードのローカル住所が含まれます。
 - `UPA Company Address` - `Company Adress: Country`、`Company Adress: State`、`Company Adress: City`、`Company Adress: Street`、`Company Adress: Postal Code` テキストフィールドに保存されます。これらのフィールドは、3 段階のウォーターフォールアプローチで APEX コードを通じて更新されます。
   1. `Account Demographics Fields`（例: `Account Demographics: UPA City`） - リードが既存のアカウントに一致する場合、住所はこのリードに関連付けられたアカウントから取得した Account Demographic フィールドを通じて入力されます;
-  2. `Admin Override Fields`（例: `[Admin] Company Address Country`） - リードがアカウントに一致しない場合、Company Address フィールドは空白か、ウォーターフォールのステップ 3（以下参照）を通じて入力されます。住所が空白か、ステップ 3 からの住所情報が間違っている場合、SDR/BDR はこれらの Admin Override フィールドを使用して住所情報を自分で更新できます。このプロセスの詳細については、[Sales Dev Handbook の Overriding Incorrect Account Assignments セクション](/handbook/marketing/sales-development/#scheduling-iqms) または [動画](https://www.youtube.com/watch?v=QT-oOceFU6k&ab_channel=GitLabUnfiltered) を参照してください。
+  2. `Admin Override Fields`（例: `[Admin] Company Address Country`） - リードがアカウントに一致しない場合、Company Address フィールドは空白か、ウォーターフォールのステップ 3（以下参照）を通じて入力されます。住所が空白か、ステップ 3 からの住所情報が間違っている場合、SDR/BDR はこれらの Admin Override フィールドを使用して住所情報を自分で更新できます。このプロセスの詳細については、[Sales Dev Handbook の Overriding Incorrect Account Assignments セクション](/handbook/sales/sales-development/#scheduling-iqms) または [動画](https://www.youtube.com/watch?v=QT-oOceFU6k&ab_channel=GitLabUnfiltered) を参照してください。
   3. `Zoominfo Company Address Fields`（例: `[ZI] Company Country`） - リードがアカウントに一致せず、上記の Admin Override Fields を使用して上書きされておらず、リードが Zoominfo のデータベースに一致する場合、Company Address フィールドは Zoominfo Company Address フィールドからの Zoominfo Company Address 情報で入力されます。
 - `Zoominfo enrichment address information` は、個人（ローカル）または会社レベルの住所の 2 つのタイプがあります;
 
@@ -629,7 +629,7 @@ SFDC にリードをアップロードできるようにするには、リード
 
 ### 内部 DNC（Do Not Call）リスト
 
-内部 DNC リストは、lead/contact レコードレイアウトの `Do Not Call` チェックボックスを使用してメンテナンスされます。sales development 組織は、このボックスをいつ、どのコンテキストでチェックすべきかについて明確なプロセスを持っています。詳細については、[Sales Development Handbook ページ - Cold Calling Checklist](/handbook/marketing/sales-development/#cold-calling-and-email-checklist) セクションを参照してください。
+内部 DNC リストは、lead/contact レコードレイアウトの `Do Not Call` チェックボックスを使用してメンテナンスされます。sales development 組織は、このボックスをいつ、どのコンテキストでチェックすべきかについて明確なプロセスを持っています。詳細については、[Sales Development Handbook ページ - Cold Calling Checklist](/handbook/sales/sales-development/#cold-calling-and-email-checklist) セクションを参照してください。
 
 ### 外部 DNC（Do Not Call）リスト
 

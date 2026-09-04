@@ -2,11 +2,11 @@
 title: 'プロビジョニング'
 description: 'Zendesk のユーザープロビジョニングに関するドキュメント'
 upstream_path: /handbook/eta/css/zendesk/users/provisioning/
-upstream_sha: 1312dadbdf7381446077faefcfae17ba323692b6
-translated_at: "2026-07-18T21:56:20Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T13:16:58+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-14T15:22:25-05:00"
+lastmod: "2026-09-01T10:10:19-05:00"
 ---
 
 このドキュメントでは、Zendesk におけるエージェントのプロビジョニングおよびデプロビジョニングのプロセスについて詳述します。
@@ -88,6 +88,23 @@ GitLab で誰かが業務を開始してから 2 日後、そのロールベー�
      - プロビジョニング済みであることを Issue に更新
    - People チームが市民権を確認できない場合:
      - アクセスリクエスト Issue に、市民権が確認できなかったため Issue がクローズされる旨をコメントします。People チームからの確認なしには、これ以上のアクションは取れません。
+
+{{% alert title="注" color="warning" %}}
+
+以下の情報はまだ稼働しておらず、使用されていません。詳細については、[gitlab-com/gl-security/corp/issue-tracker#737](https://gitlab.com/gitlab-com/gl-security/corp/issue-tracker/-/work_items/737)を参照してください。
+
+{{% /alert %}}
+
+これは、リクエスト送信者が Lumos 経由でリクエストすることで処理されます。これにより、[Light Agent Provisioning プロジェクト](https://gitlab.com/gitlab-support-readiness/zendesk-us-government/users/light-agent-provisioning)で CI/CD パイプラインが作成されます。
+
+これにより `bin/process_via_lumos` スクリプトがトリガーされ、次の処理が行われます。
+
+1. リクエスト送信者のメールのドメインが `gitlab.com` であるか確認します
+   - そうでない場合は処理を続行しません
+1. そのメールが現在 Zendesk で使用されているか確認します
+1. ユーザーが存在する場合、そのユーザーがすでにエージェントであるか確認します
+   - すでにエージェントである場合は、その旨を示すメッセージを出力し、処理を続行しません
+1. その後、必要なメタデータを持つエージェントとしてユーザーを作成または更新するアクションを実行します
 
 ## デプロビジョニング
 

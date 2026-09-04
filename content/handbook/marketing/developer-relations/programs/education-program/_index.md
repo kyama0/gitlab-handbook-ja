@@ -2,11 +2,11 @@
 title: "GitLab for Education プログラム"
 description: "GitLab の DevRel Programs チームが提供する GitLab for Education プログラムについて学びましょう"
 upstream_path: /handbook/marketing/developer-relations/programs/education-program/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T13:37:38+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-19T19:48:12+00:00"
+lastmod: "2026-08-31T17:51:01Z"
 ---
 
 ## 概要
@@ -91,9 +91,10 @@ GitLab は中国の機関にはライセンスを発行しません。中国に�
 
 ### チーム
 
-Developer Relations Programs チームリード: [@ihuerga](https://gitlab.com/ihuerga)
-
-GitLab for Education プログラムの DRI: [@rburns](https://gitlab.com/rodburns-gitlab)
+* Growth Community Programs Director: `@nicolecsmith`
+* GitLab for Education Program Specialist: `@dhavrosh-ext`
+* テクニカルサポートの Slack チャンネル: `#co-create-and-community-engineering`
+* テクニカルサポートの DRI: `@stingrayza`
 
 ### プログラムマネージャーの責任
 

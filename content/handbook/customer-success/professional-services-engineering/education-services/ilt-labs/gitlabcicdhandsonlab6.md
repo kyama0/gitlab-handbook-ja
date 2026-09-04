@@ -2,11 +2,11 @@
 title: "GitLab CI/CD - ハンズオンラボ: アプリケーションのデプロイ"
 description: "このハンズオンガイドでは、パイプラインを使ってアプリケーションをデプロイする方法をデモンストレーションします"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/gitlabcicdhandsonlab6/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-14T00:44:15+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T11:09:38+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-13T07:16:24-04:00"
+lastmod: "2026-08-21T13:48:39+02:00"
 ---
 
 > 完了までの推定時間: 15 分
@@ -58,18 +58,18 @@ Tanuki Enterprises は自動化されたパイプラインでアプリケーシ�
 
       ```yaml
       workflow:
-      rules:
-        - if: $CI_COMMIT_TAG
-          when: never
-        - when: always
+        rules:
+          - if: $CI_COMMIT_TAG
+            when: never
+          - when: always
 
       default:
         image: golang
 
       include:
         - component: <replace-with-link-to-your-component>
-        inputs:
-          stage: build
+          inputs:
+            stage: build
 
       stages:
         - test

@@ -2,11 +2,11 @@
 title: "マーケティング指標"
 description: "私たちは複数のデータソースからマーケティング指標を閲覧・分析するためにTableauを使用しています。"
 upstream_path: "/handbook/enterprise-data/marketing-analytics/marketing-metrics/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T00:00:00Z"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T12:58:42+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-27T16:37:34+01:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## マーケティング指標
@@ -42,7 +42,7 @@ personがInquiryになった時期を特定するためのロジックは`true_i
   inquiry_reporting_date
   FROM common_mart_marketing.mart_crm_person
   where
-  lower(Status) != 'raw'
+  lower(Status) != 'raw`
   and true_inquiry_date is not null
 ```
 
@@ -306,7 +306,7 @@ CW OpportunityはOpportunity Mart（[Opportunity Mart](https://dbt.gitlabdata.co
 
 #### サードパーティデジタルエージェンシー
 
-デジタル面での作業に対するエンゲージメントを追跡するために、キャンペーンUTMコードが作成されます。GitLabでのUTMに関する詳細は[こちら](/handbook/marketing/integrated-marketing/digital-strategy/digital-strategy-management/#utm-tracking)をご覧ください。
+デジタル面での作業に対するエンゲージメントを追跡するために、キャンペーンUTMコードが作成されます。GitLabでのUTMに関する詳細は[こちら](/handbook/marketing/growth-marketing/digital-agency/digital-strategy-management/#utm-tracking)をご覧ください。
 
 ターゲットオーディエンスに広告/LinkedIn InMailを配信するためにサードパーティデジタルエージェンシーと作業する際には、このプロセスに従います。
 
@@ -322,7 +322,7 @@ Inquiry（イベントへの登録や広告とのエンゲージメントが最�
 
 リードはSFDCキャンペーンやUTMレポートで追跡できますが、生成されたパイプラインは[Tableau](https://10az.online.tableau.com/#/site/gitlab/views/DraftTDCampaigns-L2RInteractions/Overview?:iid=2)のみで確認してください。SFDCのラストタッチモデルはマルチタッチアトリビューションモデルとは異なるためです。
 
-## チャネルマーケティングレポーティング
+## パートナーマーケティングレポーティング
 
 私たちはチャネルのオポチュニティに対するマーケティングの影響と、[Market Development Funds](/handbook/resellers/channel-program-guide/mdf/)からのディール登録の影響を追跡しています。
 
@@ -332,7 +332,7 @@ Inquiry（イベントへの登録や広告とのエンゲージメントが最�
 | Partner Sourced Opportunities                  | Tableau    | このダッシュボードはマーケティングキャンペーンによって生成されたオポチュニティを示します。                                                                                                                                                     | [🖇️](https://10az.online.tableau.com/#/site/gitlab/views/DraftPartnerMarketingv2/PartnerSourcedOpps?:iid=1)                  |
 | Focus Partner Tech Capabilities                | Salesforce | このレポートはすべてのフォーカスパートナーと会社情報の概要を示します。                                                                                                                                                        | [🖇️](https://gitlab.my.salesforce.com/00O8X00000963VI)                                                                               |
 | Partner Marketing Trials Funnel - SaaS & Self Managed        | Tableau    | このダッシュボードはパートナーによるすべてのSaaSおよびセルフマネージドの無料トライアル送信の概要を示します。                                                                                                                                                         | [🖇️](https://10az.online.tableau.com/#/site/gitlab/views/DraftPartnerMarketingv2/PartnerTrials?:iid=1) |
-| Channel Partner Participation                  | Salesforce | このレポートはパートナーが積極的に参加している[パートナープログラムの提供](/handbook/marketing/channel-marketing/)の概要を示します。                       | [🖇️](https://gitlab.my.salesforce.com/00O8X00000963dq)                                                                               |
+| Channel Partner Participation                  | Salesforce | このレポートはパートナーが積極的に参加している[パートナープログラムの提供](/handbook/marketing/growth-marketing/partner-and-industry-marketing/)の概要を示します。                       | [🖇️](https://gitlab.my.salesforce.com/00O8X00000963dq)                                                                               |
 | Partner Recall Leads & Contacts                        | Salesforce | このレポートは現在のFYに回収されたパートナーリードを示します。                                                                                                                                                            | [🖇️ リード](https://gitlab.my.salesforce.com/00O8X000008muTH)  [🖇️ コンタクト](https://gitlab.my.salesforce.com/00O8X000008muWG)                                                                        |
 | MDF Funds Request with Funds Claim                       | Salesforce | このレポートは現在のFYに受領した資金申請のリストとそれに対応するクレームを示します。                                                                                                                                                            | [🖇️](https://gitlab.my.salesforce.com/00OPL0000002ILp)                                                                               |
 | MDF Funds Request with Partner Account                       | Salesforce | このレポートはステータスでフィルタリングされたパートナーアカウント名と共に現在のFYの資金申請のリストを示します。                                                                                                                                                            | [🖇️](https://gitlab.my.salesforce.com/00OPL0000002IP3)                                                                               |

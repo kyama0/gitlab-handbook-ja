@@ -1,18 +1,18 @@
 ---
 title: "SentinelOne エンドポイント検出と対応 (EDR)"
 upstream_path: /handbook/security/corporate/systems/sentinelone/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T07:19:19+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T14:20:43+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T16:24:24+01:00"
+lastmod: "2026-08-17T17:29:53-04:00"
 ---
 
 ## 概要
 
-GitLab ではエンドポイント (チームメンバーのラップトップ) の検出と対応 (EDR) に [SentinelOne](https://www.sentinelone.com/) を使用しています。
+GitLab では、オランダ、ドイツ、イタリア、オーストリア、フランスを拠点とするチームメンバーのエンドポイント (チームメンバーのラップトップ) の検出と対応 (EDR) に [SentinelOne](https://www.sentinelone.com/) を使用しています。その他すべてのリージョンのチームメンバーは、EDR エージェントとして CrowdStrike Falcon を使用します。リージョン別の現在の EDR 要件については、[ラップトップ管理ページ](/handbook/eta/corporate-it/end-user-services/laptop-management/)を参照してください。
 
-GitLab チームメンバーが GitLab チームメンバーとしての職責を果たすために使用するすべての macOS、Windows、Linux デバイスには、SentinelOne EDR エージェントがインストールされ、機能している必要があります。
+GitLab チームメンバーが GitLab チームメンバーとしての職責を果たすために使用するすべての macOS、Windows、Linux デバイスには、EDR エージェントがインストールされ、機能している必要があります。
 
 Windows エンドポイントの使用には特定のビジネス上の理由と承認済みの例外が必要です。これは [Windows エンドポイントの使用が禁止されている](/handbook/eta/corporate-it/end-user-services/laptop-management/#windows-for-customer-support-and-product-development) ためです。
 
@@ -39,7 +39,7 @@ GitLab は成長中のグローバル企業として、各国のコンプライ�
 
 ### ベンダー選定
 
-- [EDR Proof of Concept リポジトリ](https://gitlab.com/gitlab-com/gl-security/security-research/edr-proof-of-concept/-/tree/master)
+- [EDR 概念実証リポジトリ](https://gitlab.com/gitlab-com/gl-security/security-research/edr-proof-of-concept/-/tree/master)
 
 ### 仕組み
 
@@ -47,28 +47,28 @@ GitLab は成長中のグローバル企業として、各国のコンプライ�
 
 第一の防御線は、ラップトップ上で一般的な脅威を停止する (または設定によってはアラート発出する) ことです。追加または「多層的」な防御線として、特定の種類の活動 (主にラップトップ上のプロセスに関するもの) が記録され、さらなる処理と調査のためにプライベートインスタンスにアップロードされます。より徹底的な脅威検出のために、はるかに高度な処理を行うことができます。その結果、ラップトップ上のエージェントは通常 40〜60MB のサイズに収まり、1GB を超えることもある従来型のアンチウイルスソリューションとは対照的です。これにより CPU やメモリの使用量が低く抑えられ、ラップトップで使用されるリソースが少なくなります。
 
-- [Wikipedia - Endpoint Security](https://en.wikipedia.org/wiki/Endpoint_security)
-- [Wikipedia - Endpoint Detection and Response](https://en.wikipedia.org/wiki/Endpoint_security)
-- [Wikipedia - Data Loss Prevention Software](https://en.wikipedia.org/wiki/Data_loss_prevention_software)
-- [Wikipedia - Network Detection and Response](https://en.wikipedia.org/wiki/Network_detection_and_response)
+- [Wikipedia - エンドポイントセキュリティ](https://en.wikipedia.org/wiki/Endpoint_security)
+- [Wikipedia - エンドポイント検出と対応](https://en.wikipedia.org/wiki/Endpoint_detection_and_response)
+- [Wikipedia - データ損失防止ソフトウェア](https://en.wikipedia.org/wiki/Data_loss_prevention_software)
+- [Wikipedia - ネットワーク検出と対応](https://en.wikipedia.org/wiki/Network_detection_and_response)
 
-### アンチウイルス vs EDR
+### アンチウイルスと EDR
 
 コンピュータにアンチウイルスやアンチマルウェアスキャナーをインストールしていた昔を覚えているなら、これは同種のスキャン技術の次世代版で、当社のセキュリティ態勢を改善するためにより広い範囲をカバーしています。
 
 アンチウイルスは EDR という総合的なセキュリティ技術ソリューションの一部と見なせます。従来、アンチウイルスソフトウェアは、ウイルスやさまざまな種類のマルウェアのスキャン、検出、削除といった基本的な目的を果たす単一のプログラムです。EDR では、リアルタイムのステータス、修復経路、エンドポイントファイアウォール、システム動作分析が一体となり、現代のデジタル攻撃に対抗する包括的な技術スタックを構成します。
 
-### MDM vs EDR
+### MDM と EDR
 
-EDR 技術は Jamf MDM に追加されるものです。Jamf もセキュリティ機能と保護を提供しますが、EDR ソリューションを Jamf と組み合わせることで、GitLab チームメンバーのラップトップに対する重大な脅威や高度なデジタル攻撃を検出し、停止する優れた能力を実現できます。
+EDR 技術は、デバイス管理 (macOS では Jamf MDM、Linux では Fleet) に追加されるものです。デバイス管理もセキュリティ機能と保護を提供しますが、EDR ソリューションをデバイス管理と組み合わせることで、GitLab チームメンバーのラップトップに対する重大な脅威や高度なデジタル攻撃を検出し、停止する優れた能力を実現できます。
 
-## FAQ
+## よくある質問
 
 ### モニタリング除外
 
 Corporate Security からトラブルシューティング目的で指示された場合を除き、SentinelOne コンポーネントを変更または削除しようとしないでください。
 
-SentinelOne があなたの職責遂行能力に問題を引き起こしている場合、[Information Security Policy Exception Management Process](/handbook/security/controlled-document-procedure/#exceptions) を使用して例外の付与をリクエストできます。
+SentinelOne があなたの職責遂行能力に問題を引き起こしている場合、[情報セキュリティポリシー例外管理プロセス](/handbook/security/controlled-document-procedure/#exceptions) を使用して例外の付与をリクエストできます。
 
 例外は最小限のニーズという目標に基づいて付与され、SentinelOne の有効性、効率性、セキュリティリスク低減効果を最大化しつつ、チームメンバーへの悪影響を最小化することを目指します。このため、SentinelOne を完全に無効化する例外が付与されることはまれです。むしろ、SentinelOne がクォランティンやシステムパフォーマンス低下を通じて悪影響を及ぼしている可能性のある特定のディレクトリパス、特定のアプリケーション、特定のデータコレクションに対して例外が付与されます。
 
@@ -84,7 +84,7 @@ SentinelOne があなたの職責遂行能力に問題を引き起こしてい�
 
 ホームネットワークにさらなるプライバシーとセキュリティを追加したい場合は、業務マシン用に別個のネットワークを作成することで、業務マシンをさらに分離できます。
 
-このタイプのネットワーク設定について直接的なサポートは提供できませんが、[ワイヤレスネットワーク](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/networks)および[ネットワーク分離](/handbook/security/network-isolation)ガイドを参照してください。[例](/handbook/security/network-isolation/) は出発点として役立つでしょう。
+このタイプのネットワーク設定について直接的なサポートは提供できませんが、[ワイヤレスネットワーク](/handbook/eta/corporate-it/end-user-services/laptop-management/laptop-security/networks)および[ネットワーク分離](/handbook/security/network-isolation/)ガイドを参照して、作業を開始してください。
 
 ### サードパーティベンダー
 
@@ -92,7 +92,7 @@ SentinelOne があなたの職責遂行能力に問題を引き起こしてい�
 
 私たちは独自の EDR ソリューションを書きたくはありませんし、コンプライアンス要件を満たすために部分的なソリューションを連結させて何らかのチェーンを組み立てたくもありません。サードパーティの EDR ソリューションは、要件をより徹底的かつ経済的に満たすことを可能にするだけでなく、監査人、規制当局、顧客に対し、私たちがセキュリティを真剣に受け止め、一貫して実装していることを示せます。
 
-### SaaS vs セルフホスト
+### SaaS とセルフホスト
 
 > よりコントロールを得るために自前でソリューションをセルフホストできませんか？
 

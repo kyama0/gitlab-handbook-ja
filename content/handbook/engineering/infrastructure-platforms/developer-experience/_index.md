@@ -2,11 +2,11 @@
 title: "Developer Experience"
 description: "Developer Experience セクションは、すべてのチームが高品質な変更をリリースできるよう、開発者体験の向上に取り組んでいます"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/"
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-translated_at: "2026-07-16T06:52:34+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T12:11:57+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-15T17:51:54+00:00"
+lastmod: "2026-08-21T10:31:23+10:00"
 ---
 
 ## ミッション
@@ -130,13 +130,15 @@ graph TD
     click DT "/handbook/engineering/infrastructure-platforms/developer-experience/development-tooling"
     DE --> PE[Performance Enablement]
     click PE "/handbook/engineering/infrastructure-platforms/developer-experience/performance-enablement"
+    DE --> AL[Application Lifecycle]
+    click AL "/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle"
 ```
 
 ## チームメンバー
 
 ### マネジメントチーム
 
-{{< member-and-role-by-gitlab "amyphillips" "pjphillips" "skodali3" "ndenisenko" "mkomor1" >}}
+{{< member-and-role-by-gitlab "chsanders" "pjphillips" "skodali3" "cjwilburn" "mkomor1" >}}
 
 ### チーム
 
@@ -163,3 +165,9 @@ graph TD
 次のメンバーが [Performance Enablement グループ](performance-enablement)に所属しています:
 
 {{< team-by-manager-slug manager="mkomor1" team="Performance Enablement(.*)" >}}
+
+#### Application Lifecycle
+
+次のメンバーが [Application Lifecycle グループ](application-lifecycle)に所属しています:
+
+{{< team-by-manager-slug manager="cjwilburn" team="Application Lifecycle(.*)" >}}

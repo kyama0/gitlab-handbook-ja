@@ -3,11 +3,11 @@ title: "GitLab SaaS サービスの可用性測定"
 description: "このポリシーは、GitLab.com、GitLab Dedicated、および GitLab Dedicated for Government の可用性の測定方法を規定します"
 controlled_document: true
 upstream_path: "/handbook/engineering/infrastructure-platforms/service-level-agreement/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T03:49:37Z"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T03:14:10Z"
 translator: claude
 stale: false
-lastmod: "2026-02-09T20:42:10+00:00"
+lastmod: "2026-08-25T07:01:19-07:00"
 ---
 
 ## GitLab サービスレベルアグリーメント - 可用性の定義
@@ -118,3 +118,88 @@ GitLab は、各暦月において[対象エクスペリエンス](#covered-expe
 ### クレジット適格性
 
 ダウンタイムによるクレジットの適格性を確認するには、[support.GitLab.com](https://support.gitlab.com) からリクエストを送信してください。
+
+## GitLab Dedicated 向けホストランナーのサービスレベルアグリーメント - 可用性の定義
+
+このサービスレベルアグリーメントは、GitLab Dedicated 向けホストランナーを使用する対象顧客にのみ適用されます。
+GitLab.com 上の GitLab ホストランナーまたは GitLab Dedicated for Government には適用されません。
+
+このサービスレベルアグリーメントは、顧客の GitLab Dedicated instance に対するサービスレベルアグリーメントとは別のものです。
+GitLab Dedicated 向けホストランナーのダウンタイムは、GitLab Dedicated instance のダウンタイムとしてカウントされません。
+
+### ホストランナーのサービス可用性コミットメント
+
+GitLab は、各暦月において GitLab Dedicated 向けホストランナーを月間稼働率少なくとも
+**99.9%** で利用可能にすることをコミットします。
+月間稼働率は、GitLab Dedicated tenant ごとに個別に計算され、その tenant にデプロイされた GitLab Dedicated 向け
+ホストランナーのすべての stack を含みます。
+
+### ホストランナーのダウンタイム分の定義
+
+**「ダウンタイム分」**は、GitLab Dedicated 向けホストランナーの可用性が低下している場合に発生します。つまり、その
+1 分間に pending 状態になった[有効なジョブ](#valid-job-definition-for-hosted-runners)の **5% 以上**が、5 分以内に GitLab Dedicated
+向けホストランナーで running 状態にならない場合です。
+
+stack が文書化された
+[runner stack の同時実行数上限](https://docs.gitlab.com/administration/dedicated/hosted_runners/#plan-runner-stack-concurrency)に達している、または超えている場合、その runner stack のジョブは SLA 計算から除外されます。
+
+ダウンタイム分には、このドキュメントで定義する[除外分](#excluded-minutes-for-hosted-runners)は含まれません。
+
+### ホストランナーの有効なジョブの定義
+
+**「有効なジョブ」**とは、以下のすべての条件を満たす CI/CD ジョブを意味します。
+
+1. ジョブが GitLab Dedicated tenant 内の認可されたユーザーまたはプロセスによって送信されている。
+1. サポートされる runner tag と capability の一致を含め、ジョブが tenant 向けにデプロイされた GitLab Dedicated 向けホストランナーの少なくとも 1 つの stack で実行可能である。
+1. ジョブが文書化された使用制限に従っている。
+1. GitLab Dedicated tenant に、ジョブに十分な compute minutes が割り当てられている。
+1. ジョブが、一般提供されている GitLab Dedicated 向けホストランナーの機能を使用している。
+1. ジョブが悪意のあるものではなく、アクセス制御の回避やセキュリティ脆弱性の悪用を試みていない。
+
+### ホストランナーの除外分
+
+以下の分は、ダウンタイム分としてカウントされません。
+
+1. GitLab Dedicated 向けホストランナーに影響する予定されたメンテナンスウィンドウ。
+1. 重大なセキュリティまたはデータ整合性の問題に対処するために必要な緊急メンテナンス。
+1. 不可抗力事象または一般的なインターネット接続の問題。
+1. 利用規約に違反した顧客の GitLab Dedicated 向けホストランナーの使用によって引き起こされる問題。
+1. GitLab が提供または管理していない機器、ソフトウェア、サービス、または構成によって引き起こされる問題。
+1. Alpha、Beta、または Preview として明示的にラベル付けされた機能またはサービス。
+
+### ホストランナーの月間稼働率の計算
+
+**「月間稼働率」**は以下のように計算されます。
+
+```math
+\text{Monthly Uptime Percentage} = \frac{\text{Total Minutes in Month} - \text{Downtime Minutes}}{\text{Total Minutes in Month}} \times 100
+```
+
+ここで:
+
+1. **「月の総分数」** = 暦月の総分数。
+1. **「ダウンタイム分」** = 除外分を除き、GitLab Dedicated 向けホストランナーがダウンタイム分の定義を満たした暦月の総分数。
+
+### ホストランナーのサービスクレジット
+
+月間稼働率が 99.9% を下回った場合、対象顧客は以下に従ってサービスクレジットをリクエストできます。
+
+| 月間稼働率 | サービスクレジット |
+| --- | --- |
+| 99.5% - <99.9% | GitLab Dedicated 向けホストランナーに対する月額コミットメントの 5% |
+| <99.5% | GitLab Dedicated 向けホストランナーに対する月額コミットメントの 10% |
+
+### ホストランナーのクレジットリクエストプロセス
+
+サービスクレジットを受け取るには、対象顧客は次のことを行う必要があります。
+
+1. 影響を受けた月の終了後 30 日以内に [support.gitlab.com](https://support.gitlab.com) でサポートリクエストを送信する。
+1. GitLab Dedicated 向けホストランナーが利用できなかった時期に関するすべての関連情報を含める。
+1. GitLab Dedicated 向けホストランナーの使用試行について合理的な詳細を提供する。
+
+受領後、GitLab は内部モニタリングデータに対してクレームを検証し、検証された場合、顧客の次回発行の請求書に対してサービスクレジットを発行します。
+発行されたサービスクレジットは、いかなる場合においても顧客への料金の返金にはなりません。
+
+### ホストランナーのクレジット適格性
+
+ダウンタイムによるクレジットの適格性を確認するには、[support.gitlab.com](https://support.gitlab.com) からリクエストを送信してください。

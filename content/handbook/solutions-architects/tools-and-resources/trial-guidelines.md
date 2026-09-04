@@ -2,11 +2,11 @@
 title: GitLab トライアルガイドライン
 description: GitLab トライアルガイドライン
 upstream_path: /handbook/solutions-architects/tools-and-resources/trial-guidelines/
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T14:51:47+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T15:54:56-04:00"
+lastmod: "2026-08-17T16:01:07+02:00"
 ---
 
 GitLab はデフォルトで、AI 搭載 DevSecOps プラットフォーム全体を無料で試すことができます。これにより、[Ultimate ティア](https://about.gitlab.com/pricing/ultimate/) と [GitLab Duo](https://about.gitlab.com/gitlab-duo/#features) のほぼすべての機能にフルアクセスできます。
@@ -144,7 +144,7 @@ GitLab は、さまざまなセキュリティスキャンの仕組みを示す�
 
 ### トライアルライセンスに関する注意
 
-- Ultimate トライアルではなく Premium トライアルが必要な場合、お客様は上記で定義されたようにトライアルライセンスをリクエストする必要があります。その後、GitLab Account Executive は、Ultimate から Premium へトライアルライセンスをダウングレードするために、[GitLab Support Internal Request](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/) (Internal) を作成する必要があります。**GitLab Support Internal Requests for Global customers** または **GitLab Support Internal Requests for Federal customers** リクエストオプションのいずれかを使用し、その後 **Self-Managed Trial related - Modify an existing Self-managed trial** リクエストタイプを選択します。GitLab サポートが Premium ライセンスを作成し、ユーザーにメールで送信します。
+- Ultimate トライアルではなく Premium トライアルが必要な場合、お客様は上記で定義されたようにトライアルライセンスをリクエストする必要があります。その後、GitLab Account Executive は、Ultimate から Premium へトライアルライセンスをダウングレードするために、[Licensing & Renewals (L&R) 内部リクエスト](/handbook/support/internal-support/#internal-requests) (Internal) を作成する必要があります。GitLab サポートが Premium ライセンスを作成し、ユーザーにメールで送信します。
 
 SaaS トライアルには以下の制限があります:
 
@@ -156,11 +156,9 @@ GitLab SaaS の既存 Premium 顧客で、現在のネームスペースで Ulti
 
 ### 既存のトライアルを延長する
 
-ライセンス、サブスクリプション、トライアル、猶予期間の延長に関するすべての内部リクエストは、[GitLab Support Internal Request フォーム](https://support-super-form-gitlab-com-support-support-op-651f22e90ce6d7.gitlab.io/) を使用して提出する必要があります。お客様を Internal Request の CC に入れるべきではありません。
+ライセンス、サブスクリプション、トライアル、猶予期間の延長に関するすべての内部リクエストは、[Licensing & Renewals (L&R) 内部リクエスト](/handbook/support/internal-support/#internal-requests)として提出する必要があります。お客様を Internal Request の CC に入れるべきではありません。
 
 _2025 年 8 月 14 日に、GitLab はドキュメント、ウェブサイト、更新バナーおよびメールから 14 日間の猶予期間への外部参照を削除しました。ただし、猶予期間自体は私たちのアプリケーションとシステムに依然として存在します。必要に応じて、こちらで詳細情報を参照してください。_
-
-フォームにアクセスしたら、メールを入力し、トライアルライセンスを更新および延長するために「GitLab L&R Internal Request for Global Customers」または「GitLab L&R Internal Request for US Federal Customers」を選択します。
 
 このリクエストを行う前に [Zendesk Light Agent アカウント](/handbook/support/internal-support/#requesting-a-zendesk-light-agent-account) を所有している必要がある点にも注意してください。
 

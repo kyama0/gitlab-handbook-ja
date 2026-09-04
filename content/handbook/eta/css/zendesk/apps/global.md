@@ -2,9 +2,9 @@
 title: 'Global アプリ'
 description: 'Zendesk Global アプリに関するドキュメント'
 upstream_path: "/handbook/eta/css/zendesk/apps/global/"
-upstream_sha: "d8fb317567e8e271f91f602d97d453ad1a69a00a"
-lastmod: "2026-08-12T14:22:07-05:00"
-translated_at: "2026-08-13T23:58:47+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+lastmod: "2026-08-19T13:20:01-05:00"
+translated_at: "2026-09-04T13:16:58+09:00"
 translator: codex
 stale: false
 ---
@@ -36,6 +36,40 @@ Advanced Search は、チケット、ユーザー、組織（orgs）に対する
 
 - 場所: ナビゲーションバー
 - このアプリケーションは [Zendesk](https://www.zendesk.com/marketplace/partners/zendesk/) によって開発され、[Zendesk Marketplace](https://www.zendesk.com/marketplace/apps/support/198393/advanced-search/)で利用できます。
+
+{{% /alert %}}
+
+## Contact Management
+
+<sup>*[gitlab-com/eta/css/issue-tracker#7](https://gitlab.com/gitlab-com/eta/css/issue-tracker/-/work_items/7) で導入*</sup>
+
+このアプリケーションは、Zendesk Global でサポート連絡先を管理するために使われます。その機能は、リクエスト送信者の関連付け状況と製品タイプによって異なります。
+
+- 関連付けられていないユーザーの場合:
+  - `L&R Product Type` が `GitLab.com` の場合:
+    - 自動関連付けを試行できます。これは、リクエスト送信者の gitlab.com アカウントを確認し、そのユーザーが Owner である有料のトップレベル名前空間を特定して、Salesforce Account を介して紐づく対応組織を見つけることで行われます。
+  - `L&R Product Type` が `Self-Managed` または `GitLab Dedicated` の場合:
+    - ユーザーを組織に関連付けます（Salesforce Account 経由）。必要な情報を求め、内部ノートを追加し、可能な変更を行います。
+- 関連付けられているユーザーの場合:
+  - リクエスト送信者の組織のサポート連絡先を一覧表示できます
+  - リクエスト送信者の組織にユーザーを追加できます
+  - リクエスト送信者の組織からユーザーを削除できます
+
+アプリが行うすべてのエンドユーザー変更では、変更されたエンドユーザーの `Details` 属性に、組織、チケット、エージェントを示すメッセージが追加されます。
+
+このアプリは、次のようなポリシー上の制限を回避しないことに注意してください。
+
+- `Support Ops` フォームを使ってチケット外でアクションを実行すること
+- サポート連絡先の上限である 30 人を超えること
+- 連絡先管理プロジェクトを使っている組織のサポート連絡先を変更すること
+
+{{% alert title="技術的な詳細" color="primary" %}}
+
+- 場所: チケットサイドバー
+- グループによる制限:
+  - Support Ops
+  - ASEs
+- このアプリケーションは社内で開発され、[Contact Management プロジェクト](https://gitlab.com/gitlab-support-readiness/zendesk-global/apps/contact-management)で確認できます。
 
 {{% /alert %}}
 

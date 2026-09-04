@@ -1,11 +1,11 @@
 ---
 title: KPI
 upstream_path: "/handbook/company/kpis/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T11:09:38+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-03-04T13:32:11-08:00"
+lastmod: "2026-08-24T16:35:52-04:00"
 ---
 
 ## KPI とは
@@ -56,7 +56,7 @@ GitLab KPI は会社のパフォーマンスを示す最も重要な 10 個の�
 1. [Percent of Ramped Reps at or Above Quota](https://internal.gitlab.com/handbook/company/performance-indicators/sales/#percent-of-ramped-reps-at-or-above-quota)（遅行指標）
 1. [Net Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)（遅行指標）
 1. [Gross Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)（遅行指標）
-1. [12 Month Team Member Voluntary Retention](/handbook/people-group/people-success-performance-indicators/#team-member-voluntary-retention-rolling-12-months)（遅行指標）
+1. [12 Month Team Member Voluntary Retention](https://10az.online.tableau.com/#/site/gitlab/workbooks/2147990?:origin=card_share_link) 🔗（遅行指標）
 1. [Unique Wider Community Contributors per Month](/handbook/marketing/developer-relations/performance-indicators/#unique-wider-community-contributors-per-month)（遅行指標）
 
 ## Sales KPI
@@ -77,7 +77,7 @@ GitLab KPI は会社のパフォーマンスを示す最も重要な 10 個の�
 
 ### People Success KPI
 
-{{< kpi "People Success" >}}
+People KPI は [Not Public](/handbook/communication/confidentiality-levels/#not-public) であり、社内の [KPI ダッシュボード](https://10az.online.tableau.com/#/site/gitlab/workbooks/2147990?:origin=card_share_link)で確認できます
 
 ## Finance KPI
 
@@ -119,7 +119,7 @@ SAT の前に以下の略称を 1 文字つけます。前置の文字なしで 
 - E = 使用しません。他社では employee が使われるものの、私たちは使いません
 - I = Interviewee（ここに応募するよう人にすすめますか）
 - L = Leadership（専任の事務サポートを持つエグゼクティブとして、提供される秘書サポートはどうですか）
-- O = [Onboarding](/handbook/people-group/people-success-performance-indicators/#onboarding-tsat)（オンボーディング体験はどうでしたか）
+- O = オンボーディング（オンボーディング体験はどうでしたか）
 - P = [Product](https://internal.gitlab.com/handbook/company/performance-indicators/product/)（GitLab プロダクトを他人にすすめますか）
 - S = [Support](/handbook/support/performance-indicators/#support-satisfaction-ssat)（私たちのサポートフォローアップを他人にすすめますか）
 - T = Team-members（ここで働くことを他人にすすめますか）
@@ -132,7 +132,7 @@ SAT の前に以下の略称を 1 文字つけます。前置の文字なしで 
 - [Net Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)
 - [Gross Retention](/handbook/customer-success/customer-success-vision/#retention-and-reasons-for-churn)
 - User Retention
-- [Team Member Retention](/handbook/people-group/people-success-performance-indicators/#team-member-retention)
+- [Team Member Retention](https://10az.online.tableau.com/#/site/gitlab/workbooks/2024177?:origin=card_share_link) 🔗
 
 ## KPI のレイヤー
 

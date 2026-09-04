@@ -6,11 +6,11 @@ authors: [ "@andrewn" ]
 coach: "@grzesiek"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/gitlab_ml_experiments/
-upstream_sha: 9e852ac812142230dfe1e1db31be2862cd857cfd
-translated_at: "2026-04-27T10:36:33Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T11:55:51+09:00"
 translator: claude
 stale: false
-lastmod: "2026-01-23T12:25:37-06:00"
+lastmod: "2026-08-27T16:39:03+01:00"
 ---
 
 
@@ -132,44 +132,44 @@ GitLab.com は数年前に Kubernetes に移行しましたが、多くの正当
 
 | ID | 必須 | 詳細 | エピック/Issue | 完了？ |
 |---|---|---|---|---|
-| `R100` | 必須    | プラットフォームは使いやすくあるべきです: [GitLab 本番対応承認済み](../../../infrastructure-platforms/production/readiness.md)のデフォルト設定を持つ Heroku のようなもの。| [Runway to [BETA] : Increased Adoption and Self Service](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1115) | **{dotted-circle}** No |
-| `R110` | 必須    | インフラ主導のオンボーディングプロセスを除き、サービスはステージグループチームが所有・デプロイ・管理します。つまり、サービスは「You Build It, You Run It」のオーナーシップモデルに従います。| [[Paused] Discussion: Tiered Support Model for Runway](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/97) | **{dotted-circle}** No |
-| `R120` | 必須    | プログラミング言語に依存しない: サービスへの要件なし。サービスはコンテナイメージとしてパッケージ化するべきです。| [Runway to [BETA] : Increased Adoption and Self Service](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1115) | **{dotted-circle}** No |
-| `R130` | 推奨 | 各サービスは GitLab.com の [Service Maturity Model](../../../infrastructure-platforms/service-maturity-model/) に対して評価するべきです。| [Discussion: Introduce an 'Infrastructure Well-Architected Service Framework'](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2537) | **{dotted-circle}** No |
-| `R140` | 推奨 | プラットフォームを使用するサービスには迅速な本番対応プロセスがあります。<ol><li>本番対応要件はサービス成熟度によってグレード付けされます: 低トラフィック、低成熟度の実験的サービスは、より成熟したサービスよりも低い要件閾値を持ちます。</li><li>デフォルトでは、プラットフォームは最低のサービス成熟度レベルの本番対応レビューに合格するデフォルト設定をサービスに提供するべきです。</li><li>導入時点では、最低成熟度のサービスは、自動的に検証された特定の要件を満たす場合、本番対応なしでデプロイできます。これにより、インフラのゲートキーピングが実験的サービス提供のブロッカーにならなくなります。</li></ol> | | |
+| `R100` | 必須    | プラットフォームは使いやすくあるべきです: [GitLab 本番対応承認済み](../../../infrastructure-platforms/production/readiness.md)のデフォルト設定を持つ Heroku のようなもの。| [Runway to [BETA] : Increased Adoption and Self Service](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1115) | {{< no >}} |
+| `R110` | 必須    | インフラ主導のオンボーディングプロセスを除き、サービスはステージグループチームが所有・デプロイ・管理します。つまり、サービスは「You Build It, You Run It」のオーナーシップモデルに従います。| [[Paused] Discussion: Tiered Support Model for Runway](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/97) | {{< no >}} |
+| `R120` | 必須    | プログラミング言語に依存しない: サービスへの要件なし。サービスはコンテナイメージとしてパッケージ化するべきです。| [Runway to [BETA] : Increased Adoption and Self Service](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1115) | {{< no >}} |
+| `R130` | 推奨 | 各サービスは GitLab.com の [Service Maturity Model](../../../infrastructure-platforms/service-maturity-model/) に対して評価するべきです。| [Discussion: Introduce an 'Infrastructure Well-Architected Service Framework'](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2537) | {{< no >}} |
+| `R140` | 推奨 | プラットフォームを使用するサービスには迅速な本番対応プロセスがあります。<ol><li>本番対応要件はサービス成熟度によってグレード付けされます: 低トラフィック、低成熟度の実験的サービスは、より成熟したサービスよりも低い要件閾値を持ちます。</li><li>デフォルトでは、プラットフォームは最低のサービス成熟度レベルの本番対応レビューに合格するデフォルト設定をサービスに提供するべきです。</li><li>導入時点では、最低成熟度のサービスは、自動的に検証された特定の要件を満たす場合、本番対応なしでデプロイできます。これにより、インフラのゲートキーピングが実験的サービス提供のブロッカーにならなくなります。</li></ol> | | {{< no >}} |
 
 ###### 可観測性要件
 
 | ID | 必須 | 詳細 | エピック/Issue | 完了？ |
 |---|---|---|---|---|
-| `R200` | 必須 | プラットフォームはすぐに使えるサービスの SLI を提供しなければなりません。<ol><li>サービスが内部メトリクスを公開することは推奨されますが、必須ではありません。プラットフォームはロードバランサーからの監視を提供します。これは実験へのバリアを取り除くことでデプロイを迅速化するためです。</li><li>内部メトリクスのスクレイプエンドポイントを提供するサービスについては、プラットフォームはそれらを収集できるように設定可能でなければなりません。</li><li>プラットフォームはすべてのサービスに対して一般的なロードバランサーレベルの SLI を提供しなければなりません。サービスオーナーは、内部アプリケーションメトリクス、プラットフォーム提供の外部 SLI、またはその両方の組み合わせから SLI を構築するよう選択できなければなりません。</li></ol> | [Observability: Default Metrics](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/72), [Observability: Custom Metrics](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/67) | **{check-circle}** Yes |
-| `R210` | 必須 | 可観測性ダッシュボード、ルール、アラート（ルーティングごと）はマニフェストから生成されなければなりません。| [Observability: Metrics Catalog](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/74) | **{check-circle}** Yes |
-| `R220` | 必須 | 標準化されたロギングインフラ。<ol><li>サービスから発行されるすべてのロギングは構造化 JSON でなければならないことを義務付ける。テキストログは許可されますが推奨されません。</li><li>可観測性のための共通 SDK 構築の詳細は <a href="#common-service-libraries">Common Service Libraries</a> を参照してください。</li></ol>  | [Observability: Logs in Elasticsearch for model-gateway](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/75), [Observability: Runway logs available to users](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/84) | |
+| `R200` | 必須 | プラットフォームはすぐに使えるサービスの SLI を提供しなければなりません。<ol><li>サービスが内部メトリクスを公開することは推奨されますが、必須ではありません。プラットフォームはロードバランサーからの監視を提供します。これは実験へのバリアを取り除くことでデプロイを迅速化するためです。</li><li>内部メトリクスのスクレイプエンドポイントを提供するサービスについては、プラットフォームはそれらを収集できるように設定可能でなければなりません。</li><li>プラットフォームはすべてのサービスに対して一般的なロードバランサーレベルの SLI を提供しなければなりません。サービスオーナーは、内部アプリケーションメトリクス、プラットフォーム提供の外部 SLI、またはその両方の組み合わせから SLI を構築するよう選択できなければなりません。</li></ol> | [Observability: Default Metrics](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/72), [Observability: Custom Metrics](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/67) | {{< yes >}} |
+| `R210` | 必須 | 可観測性ダッシュボード、ルール、アラート（ルーティングごと）はマニフェストから生成されなければなりません。| [Observability: Metrics Catalog](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/74) | {{< yes >}} |
+| `R220` | 必須 | 標準化されたロギングインフラ。<ol><li>サービスから発行されるすべてのロギングは構造化 JSON でなければならないことを義務付ける。テキストログは許可されますが推奨されません。</li><li>可観測性のための共通 SDK 構築の詳細は <a href="#common-service-libraries">Common Service Libraries</a> を参照してください。</li></ol>  | [Observability: Logs in Elasticsearch for model-gateway](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/75), [Observability: Runway logs available to users](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/84) | {{< no >}} |
 
 ###### デプロイメント要件
 
 | ID | 必須 | 詳細 | エピック/Issue | 完了？ |
 |---|---|---|---|---|
-| `R300` | 必須 | CI/CD にシークレットを保存しない。<ol><li>クラウドプロバイダーリソースとの認証はプラットフォームの一部として管理される OIDC のみで排他的に行うべきです。</li><li>シークレットは環境のインフラ提供の Hashicorp Vault に保存され、ファイルまたは環境変数を通じてアプリケーションに渡すべきです。</li><li>サービスアカウントトークンの生成と管理は、手動操作なしに宣言的に行うべきです。</li></ul> | [Secrets Management](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/52) | **{dotted-circle}** No |
-| `R310` | 必須 | ステージングと本番など、複数の環境をサポートするべきです。|  | **{check-circle}** Yes |
-| `R320` | 必須 | プラットフォームはコスト効率が高くあるべきです。Kubernetes クラスターは複数のサービスとチームをサポートするべきです。|  |  |
-| `R330` | 推奨 | 段階的ロールアウト、ロールバック、ブルーグリーンデプロイメント。|  |  |
-| `R340` | 必須 | サービスは互いに分離されているべきです。|  |  |
-| `R350` | 推奨 | サービスはノード特性要件（例: GPU）を指定できる能力を持つべきです。|  |  |
-| `R360` | 必須 | 開発者はデプロイするために Helm、Kubernetes、Prometheus の知識を必要としないべきです。必要なすべての値は、Kubernetes マニフェスト、Prometheus ルールなどを生成する前に、プロジェクトホストのマニフェストで設定・検証されます。|  |  |
-| `R370` |  | 当初、サービスは同期型のみにするべきです - REST または GRPC リクエストを使用します。<ol><li>ただし、長時間実行される HTTP(s) リクエスト（ロングポーリングや Websocket リクエストなど）は除外されません。</li></ol> |  |  |
-| `R390` |  | 各サービスは、デプロイメントマニフェストをリポジトリに保存した独自の GitLab リポジトリでホストされます。<ol><li>対応する GitLab リポジトリの CI パイプラインから開始される継続的デプロイメント。</li></ol>  | | |
+| `R300` | 必須 | CI/CD にシークレットを保存しない。<ol><li>クラウドプロバイダーリソースとの認証はプラットフォームの一部として管理される OIDC のみで排他的に行うべきです。</li><li>シークレットは環境のインフラ提供の Hashicorp Vault に保存され、ファイルまたは環境変数を通じてアプリケーションに渡すべきです。</li><li>サービスアカウントトークンの生成と管理は、手動操作なしに宣言的に行うべきです。</li></ul> | [Secrets Management](https://gitlab.com/gitlab-com/gl-infra/platform/runway/team/-/issues/52) | {{< no >}} |
+| `R310` | 必須 | ステージングと本番など、複数の環境をサポートするべきです。|  | {{< yes >}} |
+| `R320` | 必須 | プラットフォームはコスト効率が高くあるべきです。Kubernetes クラスターは複数のサービスとチームをサポートするべきです。|  | {{< no >}} |
+| `R330` | 推奨 | 段階的ロールアウト、ロールバック、ブルーグリーンデプロイメント。|  | {{< no >}} |
+| `R340` | 必須 | サービスは互いに分離されているべきです。|  | {{< no >}} |
+| `R350` | 推奨 | サービスはノード特性要件（例: GPU）を指定できる能力を持つべきです。|  | {{< no >}} |
+| `R360` | 必須 | 開発者はデプロイするために Helm、Kubernetes、Prometheus の知識を必要としないべきです。必要なすべての値は、Kubernetes マニフェスト、Prometheus ルールなどを生成する前に、プロジェクトホストのマニフェストで設定・検証されます。|  | {{< no >}} |
+| `R370` |  | 当初、サービスは同期型のみにするべきです - REST または GRPC リクエストを使用します。<ol><li>ただし、長時間実行される HTTP(s) リクエスト（ロングポーリングや Websocket リクエストなど）は除外されません。</li></ol> |  | {{< no >}} |
+| `R390` |  | 各サービスは、デプロイメントマニフェストをリポジトリに保存した独自の GitLab リポジトリでホストされます。<ol><li>対応する GitLab リポジトリの CI パイプラインから開始される継続的デプロイメント。</li></ol> | | {{< no >}} |
 
 ##### セキュリティ要件
 
 | ID | 必須 | 詳細 | エピック/Issue | 完了？ |
 |---|---|---|---|---|
-| `R400` |  | 独自のステートフルストレージ（例: カスタムデプロイの Postgres インスタンス）を利用するプラットフォーム上にデプロイされたステートフルサービスは、アプリケーションセキュリティトークン、クラウドプロバイダーサービスキー、その他の長命シークレットをステートフルストアに保存してはなりません。|  |  |
-| `R410` |  | 長命な共有シークレットは推奨されず、アカウンティングと監視を可能にするために、サービスマニフェストにそのように参照するべきです。|  |  |
-| `R420` |  | 長命な共有シークレットを使用するサービスは、ダウンタイムなしにシークレットローテーションができるようにするべきです。<ol><li>ローテーション中、古いシークレットと新しいシークレットの両方の世代が認証を通過し、新しいシークレットの段階的なロールアウトを可能にするべきです。</li></ol> |  |  |
+| `R400` |  | 独自のステートフルストレージ（例: カスタムデプロイの Postgres インスタンス）を利用するプラットフォーム上にデプロイされたステートフルサービスは、アプリケーションセキュリティトークン、クラウドプロバイダーサービスキー、その他の長命シークレットをステートフルストアに保存してはなりません。|  | {{< no >}} |
+| `R410` |  | 長命な共有シークレットは推奨されず、アカウンティングと監視を可能にするために、サービスマニフェストにそのように参照するべきです。|  | {{< no >}} |
+| `R420` |  | 長命な共有シークレットを使用するサービスは、ダウンタイムなしにシークレットローテーションができるようにするべきです。<ol><li>ローテーション中、古いシークレットと新しいシークレットの両方の世代が認証を通過し、新しいシークレットの段階的なロールアウトを可能にするべきです。</li></ol> |  | {{< no >}} |
 
 ##### Common Service Libraries
 
 | ID | 必須 | 詳細 | エピック/Issue | 完了？ |
 |---|---|---|---|---|
-| `R500` | 必須 | 実験的なサービスは可観測性、コンテキスト、相関、FIPS 検証などのために [LabKit](https://gitlab.com/gitlab-org/labkit)（Go サービス向け）または [LabKit-Ruby](https://gitlab.com/gitlab-org/ruby/gems/labkit-ruby) を採用・使用することが必要です。<ol><li>現在 LabKit-Python ライブラリは存在しませんが、いくつかの実験は Python で実行されるため、Python で可観測性、コンテキスト、相関サービスを提供するライブラリの構築が必要となります。</li></ol> | [Scalability: Labkit as the in-application platform toolkit](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2793) | |
+| `R500` | 必須 | 実験的なサービスは可観測性、コンテキスト、相関、FIPS 検証などのために [LabKit](https://gitlab.com/gitlab-org/labkit)（Go サービス向け）または [LabKit-Ruby](https://gitlab.com/gitlab-org/ruby/gems/labkit-ruby) を採用・使用することが必要です。<ol><li>現在 LabKit-Python ライブラリは存在しませんが、いくつかの実験は Python で実行されるため、Python で可観測性、コンテキスト、相関サービスを提供するライブラリの構築が必要となります。</li></ol> | [Scalability: Labkit as the in-application platform toolkit](https://gitlab.com/gitlab-com/gl-infra/scalability/-/issues/2793) | {{< no >}} |

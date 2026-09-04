@@ -2,11 +2,11 @@
 title: "Sales Order Processing"
 description: "このページは、アカウントとオポチュニティの作成から、クォート構成、承認、ブッキング要件、最終的な取引のクロージャまでの、Quote to Cash プロセスを概説します。"
 upstream_path: /handbook/sales/field-operations/order-processing/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T10:00:00Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T14:37:17+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-08T15:49:17+00:00"
+lastmod: "2026-08-24T17:41:09-04:00"
 ---
 
 **Sales Order Processing ページへようこそ！**
@@ -67,7 +67,62 @@ lastmod: "2026-04-08T15:49:17+00:00"
 2. すべてのコンタクトについて、フルネーム（名）、姓、役職、電話番号、メールアドレス、完全な住所を追加します。
     - Salesforce では、クォートに「Sold To」「Bill To」または「Invoice Owner Contact」として入力されたすべてのコンタクトに、完全な住所が必要です。完全な住所のないコンタクトを含むクォートオブジェクトは保存されません。
 
-### **クォート構成**
+### **オポチュニティへの製品追加（クォート作成前）**
+
+オポチュニティでクォートを作成する前に、製品レベルの詳細情報を含める必要があります。**2026 年 8 月 26 日** 以降、オポチュニティを `2-Scoping` から `3-Technical Evaluation` に進めるには、少なくとも 1 つの Opportunity Product が必要です。これは New Business、Add-On、Renewal のオポチュニティに適用されます。
+
+これにより、セールスサイクルの早い段階で製品レベルのオープンパイプラインレポートと Net ARR 予測が可能になり、`Intended Product Tier` フィールドを置き換えます。Web Direct のオポチュニティは対象外です。
+
+この要件を満たす方法は 2 つあります：
+
+1. **クォートを作成し、Primary Quote としてマークします。** Opportunity Product は、現在とまったく同じようにクォートから作成されます。この方法に変更はありません。
+1. **製品をオポチュニティへ直接追加します。** 以下で説明する **Opportunity Product Editor** を使用します。クォートを作成するには時期尚早でも、販売する製品がすでにわかっている場合に使用してください。
+
+#### オポチュニティに製品を追加する方法
+
+Opportunity Product Editor は、オポチュニティに **Primary Quote がない**場合に利用できます。
+
+1. オポチュニティを開きます。**Product Editor** ウィジェットは右ペインの *Related list* の上部にあり、バナーにはステージ 3 の要件が表示されます。
+1. **Add Product** をクリックします。ウィジェット、またはオポチュニティの右上にある **Actions** メニューから選択できます。
+1. 提案する製品を選択します。有効な製品のリストは検索と複数選択が可能です。**Next** をクリックします。
+1. 各行に数量と `Sales Price` を入力します。`List Price` は自動的に入力され、読み取り専用です。
+1. **Save** をクリックします。`Net ARR` と `Total Price` が行ごとに計算され、その行が *Products* 関連リストに表示されます。オポチュニティの `Net ARR` は、すべての製品行の `Net ARR` 値の合計です。
+
+Primary Quote がない間は、製品行をいつでも編集または削除できます。
+
+#### 入力する項目とシステムが計算する項目
+
+| フィールド | 入力者 | 備考 |
+|---|---|---|
+| `Product` | あなた | 有効な製品カタログから選択します。 |
+| `Quantity` | あなた | ユニット数。 |
+| `Net Quantity` | あなた | `Net ARR` を決定します。New Business では `Quantity` からコピーされます。 |
+| `Sales Price` | あなた | **年換算**の実効価格。契約期間フィールドはありません。 |
+| `List Price` | システム | 読み取り専用。一部の SKU ではゼロまたは空欄になる場合があります。 |
+| `Discount %` | あなたまたはシステム | 任意。`Sales Price` から計算されるか、直接入力した場合は価格を決定します。 |
+| `Net ARR` / `Total Price` | システム | `Net Quantity` × `Sales Price`。 |
+
+保存には `Product`、`Net Quantity`、`Sales Price` が必要です。Add-On と Renewal のオポチュニティでは、これらに加えて `Quantity` も必要です。
+
+#### オポチュニティタイプによる違い
+
+| オポチュニティタイプ | 相違点 |
+|---|---|
+| New Business | `Quantity` を入力します。`Net Quantity` はそこから自動的にコピーされます。 |
+| Add-On | `Quantity` と `Net Quantity` の両方を入力します。この 2 つは独立しています。参照用として、アカウントの有効なサブスクリプションがモーダルに表示されます。 |
+| Renewal | 通常、要件はすでに満たされています。Renewal のオポチュニティとそのクォートは自動作成され、新しく自動生成された Renewal クォートは作成時に Primary Quote としてマークされ、顧客の既存の割引が引き継がれます。 |
+
+#### 注意事項
+
+- **`Sales Price` を年換算してください。** 契約期間フィールドがないため、これは最も一般的なデータ品質エラーです。
+- **一部の SKU で `List Price` がゼロまたは空欄になるのは想定どおりです。** One Time Discount や Monthly Waiver などが該当します。`Discount %` はエラーにならず、0% と表示されます。
+- **ここでは Ecosystem のレートプランを選択できません。** Ecosystem の割引はパートナーによって異なり、クォートの段階で確定されます。標準レートプランのチャージを選択し、必要に応じて手動割引を適用してください。標準レートプランを選択すると、そのすべてのチャージが個別の製品行として読み込まれます。
+- **クォートが Primary としてマークされると、クォートによる管理に切り替わります。** 手動で作成した製品は削除され、クォートと同期された製品に置き換えられます。オポチュニティの `Net ARR` はクォートから再計算され、製品の手動作成はブロックされます。以下の[クォート構成](#quote-configuration)を参照してください。
+- **Renewal では、新しいクォートを生成しても割引は自動的に引き継がれません。** 引き継ぎは自動生成された Renewal クォートに適用されます。置き換える場合は価格を確認してください。
+
+質問がある場合や、説明どおりに動作しない場合は、[#sales-support](https://gitlab.slack.com/channels/sales-support) に投稿し、Jesse Rabbits をタグ付けしてください。
+
+### **クォート構成** {#quote-configuration}
 
 以下は、注文を処理する前に注意すべきクォートタイプと重要なクォート情報のハイレベルなガイドです。オポチュニティ作成手順とオポチュニティ管理ガイドラインについては、[**Go To Market Handbook**](/handbook/sales/field-operations/gtm-resources/) を確認してください。各クォートタイプに固有の文書化された手順とビデオチュートリアルについては、[**Deal Desk Quote Configuration Guide**](/handbook/sales/field-operations/sales-operations/deal-desk/#zuora-quote-configuration-guide---standard-quotes) を確認してください。
 
@@ -302,7 +357,7 @@ SuperSonics Billing and Subscription Management Experience に関する以下の
 #### Legal への連絡
 
 顧客に関する一般的な質問については、legal でケースを開いてください。
-
+f
 Customer Opportunity 内で:
 
 1. 「Legal Request」をクリック（オポチュニティ SFDC レイアウトの上部にあります）
@@ -635,7 +690,7 @@ Professional Services SKU [consulting block](https://about.gitlab.com/services/s
 
 **10 シート未満の Waived True-Ups の場合**
 
-Sales は True-Up 承認プロセスをバイパスし、`L&R internal requests option` オプションを使用して、その後 `Gitlab.com Subscription Related > Reset max seats for QSR` を使用して、[Zendesk Form](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780) に直接チケットを提出できます。waived するシート数が 10 以下であることを指定すると、フォームフィールド `What is the link to the chatter in SFDC where this was approved?` が自動的に削除され、事前承認なしでチケットを提出できます。
+Sales は True-Up 承認プロセスをバイパスし、`L&R internal requests option` オプションを使用して、その後 `Gitlab.com Subscription Related  > Reset max seats for QSR` を使用して、[Zendesk Form](https://gitlab-internal.zendesk.com/hc/en-us/requests/new?ticket_form_id=22783840298780) に直接チケットを提出できます。waived するシート数が 10 以下であることを指定すると、フォームフィールド `What is the link to the chatter in SFDC where this was approved?` が自動的に削除され、事前承認なしでチケットを提出できます。
 
 **10 シート以上の Waived True-Ups の場合、エグゼクティブの承認が必要です**
 

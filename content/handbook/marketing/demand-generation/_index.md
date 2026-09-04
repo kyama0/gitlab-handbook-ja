@@ -1,15 +1,17 @@
 ---
 title: デマンドジェネレーション
-description: "GitLab におけるデマンドジェネレーション。マーケティングキャンペーン、デジタルマーケティング、パートナー＆チャネルマーケティングを含みます。"
+description: "GitLab におけるデマンドジェネレーション。Marketing Campaigns、Digital Marketing、Partner & Industry Marketing を含みます。"
 twitter_image: '/images/tweets/handbook-marketing.png'
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/marketing/demand-generation/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T13:29:37+09:00"
 translator: claude
 stale: false
-lastmod: "2024-07-29T18:50:00+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
+---
+
 ---
 
 ### デマンドジェネレーションの主要指標 {#key-metrics}
@@ -22,8 +24,8 @@ lastmod: "2024-07-29T18:50:00+00:00"
 ## チーム {#teams}
 
 - [マーケティングキャンペーン](/handbook/marketing/demand-generation/campaigns/)
-- [デジタルマーケティング](/handbook/marketing/integrated-marketing/digital-strategy/)
-- [グローバルチャネル＆アライアンスマーケティング](/handbook/marketing/channel-marketing/)
+- [Digital Marketing](/handbook/marketing/growth-marketing/digital-agency/)
+- [Partner & Industry Marketing](/handbook/marketing/growth-marketing/partner-and-industry-marketing/)
 
 [組織図でチームメンバーを見る](https://comp-calculator.gitlab.net/org_chart)
 

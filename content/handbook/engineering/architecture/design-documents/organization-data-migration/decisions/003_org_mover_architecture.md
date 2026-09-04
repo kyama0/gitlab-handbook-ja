@@ -10,9 +10,9 @@ owning-stage: "~devops::tenant scale"
 participating-stages: ["~devops::tenant scale", "~devops::data stores", "~devops::systems"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/organization-data-migration/decisions/003_org_mover_architecture/
-upstream_sha: ce9fa1b620ec7b7d82d870744ba32e7c4c1fef1c
-lastmod: "2026-06-23T12:12:27+12:00"
-translated_at: "2026-06-24T07:28:04+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+lastmod: "2026-08-18T14:42:11+05:30"
+translated_at: "2026-09-04T11:55:51+09:00"
 translator: codex
 stale: false
 ---
@@ -28,7 +28,7 @@ stale: false
 | **ステータス** | 提案中 |
 | **スコープ** | GitLab.com SaaS のみ: レガシー Cell からターゲット Cell。詳しくは [スコープ](#scope) と [非目標](#non-goals) を参照。 |
 | **必要な決定** | Tenant Scale、Geo、Siphon、Infrastructure のステークホルダーによるコントロールプレーンの形、スコープ、非目標の承認。 |
-| **関連** | [ADR-002 ロールバック](002_rollback_strategy.md) · [ADR-010 読み取り専用モード](../../organization/decisions/010_organization_read_only_mode.md) · [Organization データ移行ブループリント](../_index.md) |
+| **関連** | [ADR-002 ロールバック](002_rollback_strategy.md) · [ADR-010 Organization メンテナンスモード](../../organization/decisions/010_organization_maintenance_mode.md) · [Organization データ移行ブループリント](../_index.md) |
 
 ### Organization を Cells 間で移動する必要がある理由
 
@@ -129,7 +129,7 @@ Org Mover は複数のシステムを調整します。高レベルのコント�
 - 移動状態を追跡する
 - デプロイフリーズやアクティブなバッチ化バックグラウンドマイグレーションの確認など、移動の遷移を事前検証する
 - チェックサム、行数、ソースとターゲット双方にまたがるスポットチェックを使い、カットオーバー前にターゲットのデータがソースと一致することを検証する
-- Organization Read-Only Mode を切り替える
+- Organization Maintenance Mode を切り替える
 - Siphon を設定および管理する
 - Geo を設定および管理する
 - 監査のためにオペレーターの操作を Org Mover で追跡する
@@ -166,7 +166,7 @@ Org Mover は複数のシステムを調整します。高レベルのコント�
 
 担当:
 
-- アプリケーションの読み取り専用モード（正しさはアプリケーション側が所有、[ADR-010 読み取り専用モード](../../organization/decisions/010_organization_read_only_mode.md)を参照）
+- アプリケーションのメンテナンスモード（正しさはアプリケーション側が所有、[ADR-010 Organization Maintenance Mode](../../organization/decisions/010_organization_maintenance_mode.md)を参照）
 - ターゲット Cell モード
 - スキーマと DDL
 
@@ -180,7 +180,7 @@ Org Mover は複数のシステムを調整します。高レベルのコント�
 ## 参考資料
 
 - [ADR-002: ロールバック戦略](002_rollback_strategy.md)
-- [Organization 読み取り専用モード (ADR-010)](../../organization/decisions/010_organization_read_only_mode.md)
+- [Organization Maintenance Mode (ADR-010)](../../organization/decisions/010_organization_maintenance_mode.md)
 - [Organization データ移行ブループリント](../_index.md)
 - [`gitlab-org/cells/org-mover` リポジトリ](https://gitlab.com/gitlab-org/cells/org-mover)
 - [Topology Service](../../cells/topology_service.md)

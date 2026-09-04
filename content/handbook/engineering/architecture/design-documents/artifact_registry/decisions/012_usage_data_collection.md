@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "SaaS およびセルフマネージドのデプロイにまたがるプロダクトアナリティクスとビジネスインテリジェンスのために、Artifact Registry が使用状況データを収集する方法に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/012_usage_data_collection/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-lastmod: "2026-07-29T12:07:01+02:00"
-translated_at: "2026-07-31T08:29:15+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+lastmod: "2026-08-20T11:39:10+02:00"
+translated_at: "2026-09-04T11:43:17+09:00"
 translator: codex
 stale: false
 ---
@@ -32,8 +32,8 @@ GitLab の主要なインストルメンテーションフレームワークで�
 
 Go サテライトサービス向けに、[LabKit v2](https://gitlab.com/gitlab-org/labkit) はネイティブな Snowplow トラッカー（`v2/events/snowplow/`）を提供しており、次の機能があります。
 
-- [`custom_event`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/custom_event/jsonschema/1-0-0) スキーマを使用したカスタム使用状況イベント。型付けされ、スキーマ検証された属性を運ぶために、1 つ以上の自己記述カスタムコンテキストを付加する。
-- [`billable_usage`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/billable_usage/jsonschema/1-0-2) スキーマを使用した課金対象の使用状況イベント。このスキーマには `organization_id`、`realm`、`deployment_type`、`quantity`、`unit_of_measure` のファーストクラスフィールドがある。
+- [`custom_event`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/custom_event/jsonschema) スキーマを使用したカスタム使用状況イベント。型付けされ、スキーマ検証された属性を運ぶために、1 つ以上の自己記述カスタムコンテキストを付加する。
+- [`billable_usage`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/billable_usage/jsonschema) スキーマを使用した課金対象の使用状況イベント。このスキーマのファーストクラスフィールドには、課金キー（`root_namespace_id`、`unique_instance_id`）、`realm`、`deployment_type`、`quantity`、`unit_of_measure` が含まれ、さらにスキーマがモデル化していないディメンション用の自由形式の `metadata` オブジェクトがある。
 - 自動リトライと FIFO キュー管理を備えた非同期バッチ送信
 - エミッターの可観測性のための組み込み Prometheus メトリクス
 - インメモリのイベントストレージ（10,000 イベントの容量）とオーバーフロー保護
@@ -44,8 +44,8 @@ Go サテライトサービス向けに、[LabKit v2](https://gitlab.com/gitlab-
 
 すべての AR カスタムイベントは、スコープごとに層を成す 2 つのコンテキストを付加します。
 
-- **[`gitlab_standard/1-1-8`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/gitlab_standard/jsonschema/1-1-8)** — 共通の ID および環境フィールド（`environment`、`realm`、`instance_id`、`deployment_type`、`organization_id`、`user_id`）。AR イベントをモノリスイベントと同じウェアハウスの列に格納し、プロダクト横断の分析を可能にする。
-- **[`artifact_registry_context/1-0-0`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/artifact_registry_context/jsonschema/1-0-0)** — AR 固有のディメンション: `ar_instance_version`（必須）、`ar_namespace_id`（ネームスペース UUID）と `ar_namespace_slug`、`format`、`repository_kind`（`hosted`/`virtual`/`remote`）、`repository_id`（リポジトリ UUID）と `repository_name`、`cache_hit`、`upstream_type`（`hosted`/`remote`）。ネームスペースとリポジトリは、それぞれ UUID と人が読める識別子を保持する。UUID は安定した結合キーであり、ネームスペース UUID は AR ネームスペースの粒度における課金の結合キーでもある。これは、スラッグは顧客にとって不変であるものの、管理上の再取得（スクワッティング紛争、法的請求）によって変更される可能性があるためである。
+- **[`gitlab_standard`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/gitlab_standard/jsonschema)** — 共通の ID および環境フィールド（`environment`、`realm`、`instance_id`、`deployment_type`、`organization_uuid`、`user_id`）。Artifact Registry は Organization の UUID のみを保存するため（[ADR-022](022_namespace_decoupling.md)）、`organization_uuid` を設定し、数値の `organization_id` は決して設定しない。AR イベントをモノリスイベントと同じウェアハウスの列に格納し、プロダクト横断の分析を可能にする。
+- **[`artifact_registry_context`](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/artifact_registry_context/jsonschema)** — AR 固有のディメンション: `ar_instance_version`（必須）、`ar_namespace_id`（ネームスペース UUID）と `ar_namespace_slug`、`format`、`repository_kind`（`hosted`/`virtual`/`remote`）、`repository_id`（リポジトリ UUID）と `repository_name`、`cache_hit`、`upstream_type`（`hosted`/`remote`）。ネームスペースとリポジトリは、それぞれ UUID と人が読める識別子を保持する。UUID はアナリティクス用の安定した結合キーである。これは、スラッグは顧客にとって不変であるものの、管理上の再取得（スクワッティング紛争、法的請求）によって変更される可能性があるためである。
 
 イベント固有の単発フィールド（例: `auth_method`、`deletion_type`、`artifacts_removed_count`）は、いずれのコンテキストでもなく、イベント自身の `custom_event` ペイロードに入れます。
 
@@ -57,10 +57,10 @@ Go サテライトサービス向けに、[LabKit v2](https://gitlab.com/gitlab-
 
 ### LabKit v2 Snowplow を介したイベントレベルのトラッキング
 
-**何を追跡するか**（初期セット。イテレーションで拡張する）。すべてのイベントは、カスタムコンテキストとして `gitlab_standard/1-1-8` と `artifact_registry_context/1-0-0` の両方を運びます。共通フィールド（`organization_id`、`realm`、`deployment_type`、`instance_id`、`environment`、`user_id`）は `gitlab_standard` に由来するため、以下では再掲しません。イベント固有の単発フィールドは、イベント自身の `custom_event` ペイロードに入れます。
+**何を追跡するか**（初期セット。イテレーションで拡張する）。すべてのイベントは、カスタムコンテキストとして `gitlab_standard` と `artifact_registry_context` の両方を運びます。共通フィールド（`organization_uuid`、`realm`、`deployment_type`、`instance_id`、`environment`、`user_id`）は `gitlab_standard` に由来するため、以下では再掲しません。
 
 | イベント | `artifact_registry_context` フィールド | イベントペイロード（単発）フィールド |
-|---|---|---|
+| --- | --- | --- |
 | `artifact_registry_artifact_pushed` | `format`、`repository_kind=hosted`、`repository_id`、`ar_namespace_id` | `auth_method` |
 | `artifact_registry_artifact_pulled` | `format`、`repository_kind`（`hosted`/`virtual`）、`repository_id`、`ar_namespace_id`、`cache_hit`（virtual のみ） | `auth_method`、`delivery_mode`（`proxy`/`redirect`） |
 | `artifact_registry_artifact_deleted` | `format`、`repository_kind`、`repository_id`、`ar_namespace_id` | `deletion_type`（`manual`/`lifecycle_policy`） |
@@ -82,7 +82,7 @@ Go サテライトサービス向けに、[LabKit v2](https://gitlab.com/gitlab-
 
 したがって、2 つのモードは異なる信頼度を持ちます。リダイレクトモードの pull は過大計上する可能性があります（クライアントがリダイレクトに従わない場合があります）。また、過小計上する可能性もあります（1 つの署名付き URL が TTL 内に複数の転送を提供でき、CDN が 1 回のオリジンフェッチから多くのクライアントに提供できるためです）。上のカタログに従い、イベントペイロードはモードを運ぶため、分析で両者を分離できます。両者を合計すると信頼度の水準が混ざります。特に請求対象の数量はリダイレクトモードのイベントに依拠できず、ストレージまたは CDN のアクセスログが必要です。
 
-AR ネームスペースは [ADR-022](022_namespace_decoupling.md) のスラッグアンカーされたエンティティであり、1 つの Organization が複数の AR ネームスペースを所有できます。[課金設計ドキュメント](https://gitlab.com/gitlab-org/architecture/usage-billing/-/merge_requests/27) は計量境界を AR ネームスペースに設定しているため、イベントは（`artifact_registry_context` 内の）`ar_namespace_id` を運び、同じ粒度で課金データときれいに結合します。（`gitlab_standard` 内の）`organization_id` は、ネームスペース横断のロールアップをサポートします。
+AR ネームスペースは [ADR-022](022_namespace_decoupling.md) のスラッグアンカーされたエンティティであり、1 つの Organization が複数の AR ネームスペースを所有できます。[課金設計ドキュメント](https://gitlab.com/gitlab-org/architecture/usage-billing/design-doc/-/merge_requests/27) は計量境界を AR ネームスペースに設定しています。課金対象イベントは `billable_usage.metadata` 内に、アナリティクスイベントは `artifact_registry_context` 内に `ar_namespace_id` を運ぶため、両方のデータセットを同じ粒度で集計できます。（`gitlab_standard` 内の）`organization_uuid` は、ネームスペース横断のロールアップをサポートします。
 
 **設定**： Snowplow コレクターのエンドポイントはサービス構成ファイルで提供されます。SaaS ではこれは `snowplowprd.trx.gitlab.net` を指します。オプトインしたセルフマネージドおよび Dedicated インスタンスでは、同じコレクターを指すように設定されます。オプトアウトしたインスタンスでは、エミッターは無効化されます（イベントは送信されません）。
 
@@ -102,7 +102,7 @@ LabKit の Snowplow エミッター自体が Prometheus メトリクス（エン
 
 1. **初日からの完全な SaaS カバレッジ**： LabKit v2 の Snowplow トラッカーは本番で実証済みであり、追加のインフラなしにイベントレベルの粒度を提供する
 2. **シンプルで単一パスのインストルメンテーション**： 1 つのメカニズム、1 つのコードパス。アナリティクスのデータフローのために Rails モノリスと調整する必要がない
-3. **Organization スコープのコンテキスト**： 課金イベントのペイロードに `organization_id` が含まれ、Artifact Registry の Organization アンカーアーキテクチャに整合する（[ADR-001](001_organizations_as_anchor_point.md)）
+3. **Organization スコープのコンテキスト**： すべてのイベントが `gitlab_standard.organization_uuid` を運び、Organization アンカーアーキテクチャに整合する（[ADR-001](001_organizations_as_anchor_point.md)）。サービスは UUID のみを保存するため、数値の `organization_id` フィールドは設定されない。課金の結合キーには、`root_namespace_id`（SaaS。ネームスペースの課金アンカー `billing_entity_type`／`billing_entity_id` から取得。[ADR-007](007_database_schema.md)）と `unique_instance_id`（セルフマネージドおよび Dedicated）を使用する
 4. **デフォルトでのプライバシー**： イベントは GitLab の既存の仮名化パイプライン（HMAC-SHA256）を経由し、追加のプライバシーエンジニアリングは不要
 5. **カスタムインフラ不要**： 既存の Snowplow パイプラインと Snowflake ウェアハウスを使用する
 6. **課金対応**： LabKit v2 の課金トラッカーが、realm、unit of measure、quantity のフィールドとともに、Artifact Registry SKU の使用量ベース課金への直接的なパスを提供する
@@ -160,19 +160,19 @@ Snowplow に加えて、Rails モノリスが毎週の Service Ping 組み立て
 ## 実装シーケンス
 
 1. **Phase 1 (MVP)**: LabKit v2 Snowplow トラッカーを統合する。`gitlab_standard` と `artifact_registry_context` を付加して、コアアクション（プッシュ、プル、削除、リポジトリ作成）のイベントを送出する。エミッターの Prometheus メトリクスを登録する。ステージングで両方のコンテキストが入った状態で、イベントが Snowflake に到着することを検証する。
-2. **Phase 2 (課金)**： 課金対象のアクション（ストレージ消費、アーティファクト転送）の課金イベントを `billable_usage/1-0-2` スキーマに準拠して送出する。AR ネームスペース ID（[課金設計ドキュメント](https://gitlab.com/gitlab-org/architecture/usage-billing/-/merge_requests/27) が設定する計量境界）は、スキーマの `entity_id` フィールドで運ばれ、カスタムイベント上の `ar_namespace_id` と一致するため、アナリティクスと課金データがきれいに結合する。Phase 1 とは独立。
+2. **Phase 2 (課金)**： 課金対象のアクション（ストレージ消費、アーティファクト転送）の課金イベントを `billable_usage` スキーマに準拠して送出する。SaaS では `root_namespace_id`（課金アンカーから取得。[ADR-007](007_database_schema.md)）が支払い対象のサブスクリプションを識別し、セルフマネージドおよび Dedicated では `unique_instance_id` を使用する。`ar_namespace_id`（[課金設計ドキュメント](https://gitlab.com/gitlab-org/architecture/usage-billing/design-doc/-/merge_requests/27) が定める計量境界）は、`feature_qualified_name` とともにイベントの `metadata` オブジェクトで運ばれる。課金パイプラインはトップレベルの `billable_usage` フィールドと `metadata` のみを読み取り、Snowplow カスタムコンテキストは決して読み取らないため、AR 固有の課金ディメンションは `artifact_registry_context` ではなく `metadata` に置く。Phase 1 とは独立。
 3. **Phase 3 (イテレーション)**： プロダクトアナリティクスの要求に基づいてイベントカバレッジを拡張する（仮想リポジトリの使用パターン、ライフサイクルポリシーの有効性、フォーマット固有の採用）。繰り返し現れる AR 固有のディメンションがファーストクラスのウェアハウス列に値する場合は、`artifact_registry_context` を拡張する（新しいマイナーバージョン）。
 
 ## 参考資料
 
 - [LabKit v2 Snowplow Tracker](https://gitlab.com/gitlab-org/labkit/-/tree/main/v2/events/snowplow) — サテライトサービスで使用される Go Snowplow クライアント
-- [Iglu `custom_event` schema 1-0-0](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/custom_event/jsonschema/1-0-0) — カスタムイベントペイロードのスキーマ
-- [Iglu `billable_usage` schema 1-0-2](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/billable_usage/jsonschema/1-0-2) — 課金対象使用状況イベントペイロードのスキーマ（`organization_id` を含む）
-- [Iglu `gitlab_standard` schema 1-1-8](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/gitlab_standard/jsonschema/1-1-8) — AR カスタムイベントに付加される共通の ID/環境コンテキスト
-- [Iglu `artifact_registry_context` schema 1-0-0](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/artifact_registry_context/jsonschema/1-0-0) — AR 固有のコンテキストスキーマ（[iglu!190](https://gitlab.com/gitlab-org/iglu/-/merge_requests/190) でマージ）
+- [Iglu `custom_event` schema](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/custom_event/jsonschema) — カスタムイベントペイロードのスキーマ
+- [Iglu `billable_usage` schema](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/billable_usage/jsonschema) — 課金対象使用状況イベントペイロードのスキーマ（課金キー: `root_namespace_id`、`unique_instance_id`）
+- [Iglu `gitlab_standard` schema](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/gitlab_standard/jsonschema) — AR カスタムイベントに付加される共通の ID/環境コンテキスト
+- [Iglu `artifact_registry_context` schema](https://gitlab.com/gitlab-org/iglu/-/tree/master/public/schemas/com.gitlab/artifact_registry_context/jsonschema) — AR 固有のコンテキストスキーマ（[iglu!190](https://gitlab.com/gitlab-org/iglu/-/merge_requests/190) でマージ）
 - [labkit!498](https://gitlab.com/gitlab-org/labkit/-/merge_requests/498) — LabKit v2 の Snowplow トラッカーにカスタムコンテキストサポートを追加
 - [labkit#103](https://gitlab.com/gitlab-org/labkit/-/work_items/103) — LabKit v2 のカスタムコンテキストサポートの追跡 work item（labkit!498 で解決）
-- [Usage Billing Design Doc !27](https://gitlab.com/gitlab-org/architecture/usage-billing/-/merge_requests/27) — AR ネームスペースを計量境界に設定する。アナリティクスイベントは課金データと結合するために `ar_namespace_id` を運ぶ
+- [Usage Billing Design Doc !27](https://gitlab.com/gitlab-org/architecture/usage-billing/design-doc/-/merge_requests/27) — AR ネームスペースを計量境界に設定する。課金対象イベントは `metadata` 内に、アナリティクスイベントは `artifact_registry_context` 内に `ar_namespace_id` を運ぶ
 - [ADR-022: Namespace Decoupling](022_namespace_decoupling.md) — AR ネームスペースを Rails ネームスペースとは異なるスラッグアンカーされたエンティティとして定義する
 - [Internal Analytics Documentation](https://docs.gitlab.com/ee/development/internal_analytics/) — GitLab のアナリティクスインストルメンテーションガイド
 - [Event Data Collection for Self-Managed and Dedicated](https://docs.gitlab.com/administration/settings/event_data) — セルフマネージドの Snowplow 収集に関する設定とプライバシーの詳細（18.0 以降）

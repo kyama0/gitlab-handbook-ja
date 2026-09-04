@@ -2,11 +2,11 @@
 title: "Geo とディザスタリカバリ - プランニング"
 description: "Geo チームの運営方法"
 upstream_path: "/handbook/engineering/infrastructure-platforms/tenant-scale/geo/process/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-28T00:00:00Z"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T12:16:50+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-02T19:44:15+00:00"
+lastmod: "2026-08-29T07:56:36+10:00"
 ---
 
 ## ディスカッション
@@ -250,53 +250,18 @@ Issue が「ノーゴー」の場合:
 
 #### エンジニアリング カスタマー/サポートローテーションプロセス
 
-2 週間ごとに、Geo エンジニアがカスタマーサポートチケットの技術的評価を行い、サポート Issue のために[#g_geo](https://gitlab.enterprise.slack.com/archives/C32LCGC1H)チャンネルを監視する DRI に割り当てられます。
+マイルストーンごとに、1 人の Geo エンジニアがプライマリ DRI、もう 1 人がセカンダリ DRI に割り当てられ、カスタマーサポートチケットの技術的評価と、サポート Issue のための [#g_geo](https://gitlab.enterprise.slack.com/archives/C32LCGC1H) チャンネルの監視を行います。現在と今後の担当者一覧は、アクティブな計画エピックの[カスタマー／サポートローテーションセクション](https://gitlab.com/groups/gitlab-org/geo-team/-/work_items/3#customersupport-rotation)で追跡されます。
 
 プロセスの概要:
 
-- 毎週、[#geo-lounge](https://gitlab.enterprise.slack.com/archives/C7U95P909) チャンネルで Slack リマインダーがグループに技術的評価トリアージのための新しいサポートシフトの開始を通知します。
-- すべての Geo エンジニアは、（以下のスケジュールに従って）自分の次のローテーションを把握し、Slack リマインダーに従ってアクションを取ることが期待されています。
-- 現在ローテーションに割り当てられている DRI は、2 週間をカスタマーサポートの[バックログ](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=opened&label_name%5B%5D=Help%20group%3A%3AGeo&first_page_size=100)からの Issue のレビューと [#g_geo](https://gitlab.enterprise.slack.com/archives/C32LCGC1H) チャンネルでのサポートに専念することが期待されます。
+- すべての Geo エンジニアは、自分の次のローテーションを把握し、マイルストーンの開始時に対応することが期待されます。
+- [`@gitlab-org/geo-team/rotation` のメンバー](https://gitlab.com/groups/gitlab-org/geo-team/rotation/-/group_members?with_inherited_permissions=exclude)を更新します。
+- プライマリ DRI はマイルストーンをカスタマーサポートの[バックログ](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=opened&label_name%5B%5D=Help%20group%3A%3AGeo&first_page_size=100)からの Issue のレビューと [#g_geo](https://gitlab.enterprise.slack.com/archives/C32LCGC1H) チャンネルでのサポートに専念し、セカンダリ DRI がバックアップします。
   - [#g_geo](https://gitlab.enterprise.slack.com/archives/C32LCGC1H) チャンネルの質問のトリアージに最初に対応します。Slack ワークフローができたので、より複雑な質問ごとに教えて/トリガーし、短くてシンプルなものに素早く答えてください。
   - 予期される業務: トリアージ、Issue の作成、初期調査の文書化、優先度ラベルの追加など、カスタマーサポート Issue が通常のワークフローに入れるように対処します。
-- DRI が何らかの理由（PTO、病欠、他の責任が優先するなど）により次のトリアージローテーションシフトを実行できない場合、別のチームメンバーとローテーションを交換するか、EM に通知して調整を促すことが期待されます。交換が決まったら、MR を通じてスケジュールを更新する必要があります。
-- DRI は 2025 年のローテーションのためにこの[Issue](https://gitlab.com/gitlab-org/geo-team/discussions/-/issues/5142) を更新する必要があります。
-- DRI は、サポートに費やした時間を推定し、各 Issue の `Time Tracking` を通じてチケットとトリアージに費やした時間を時間単位で追跡する必要があります。これはトライアル段階にある新しいプロセスです。
+- プライマリ DRI が何らかの理由で次のローテーションシフトを担当できない場合、セカンダリ DRI がその責任を引き継ぎます。
 
-ローテーションの終了時に、各エンジニアは[Issue](https://gitlab.com/gitlab-org/geo-team/discussions/-/issues/5142)内または RFH に直接引き継ぎノートを提供すべきです:
-
-- 以下の RFH 引き継ぎ用の標準化された Duo/AI チャットプロンプトを使用して
-- 必要に応じて Duo の出力を校正・修正する。
-- スレッドではなく、新しいルートコメントとして、新しい DRI へのピングと共に Issue に直接投稿する
-- 必要であれば、新しい DRI はコメントへの返信または Slack で明確化の質問をする。タイムゾーンが合う場合は、より難しいコンテキストを確認するためのミーティングを設定することも可能。
-
-##### RFH 引き継ぎ用 Duo/AI プロンプト
-
-```markdown
-Geo チームのカスタマーサポート担当の次のバックエンドエンジニアに引き継ぐために、この Issue の現在のステータスを簡潔にまとめてください。
-このテンプレートを使用してください:
-
-Duo が生成し私がレビューした引き継ぎコメント:
-
-### 現在のステータス
-
-<!-- 現在のステータスの内容 -->
-
-*信頼度: <!-- このステータスの正確さへの信頼度の割合 -->*
-
-### アクション項目
-
-- <!-- GitLab のハンドル名 of DRI --> (*信頼度: <!-- この項目の DRI が誰であるかへの信頼度の割合 -->*): <!-- アクション項目 -->. (*信頼度: <!-- このアクション項目の妥当性への信頼度の割合 -->*)
-```
-
-- 確信がある、または保守的に。アサーションを行う際は幻覚に注意してください。必要に応じて限定的な言い回しを使用してください。
-- URL を含むリソース（GitLab の Issue や Zendesk チケット番号など）を参照する場合は、リンクにしてください。
-- 追加のコンテキストが回答を改善する可能性がある場合は、リンクされた URL を読んでください。
-- Markdown コードのみで回答してください。私がレビューして投稿します。
-
-##### スケジュール
-
-スケジュールは[Google Sheets（内部リンク）](https://docs.google.com/spreadsheets/d/1-kvptYZfhCSV9WTVEs4epfUSVvxIMSf5wHxnT6BmjSw/edit?gid=1214041762#gid=1214041762)で管理されています。
+ローテーションの終了時に、各エンジニアは[ローテーション追跡 Issue](https://gitlab.com/gitlab-org/geo-team/discussions/-/issues/5170)内または RFH に直接引き継ぎノートを提供すべきです。
 
 ## ふりかえり
 

@@ -1,11 +1,11 @@
 ---
 title: Switchboard チーム
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/switchboard/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:41:40+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T12:11:57+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-14T07:35:14+00:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
 ## 概要
@@ -144,13 +144,9 @@ Switchboard はクロスファンクショナルチームですが、DRI は、�
 例えば、DRI がバックエンドエンジニアの場合、すべての Issue を直接実装するわけではないかもしれませんが、他のチームメンバーがプロジェクトを達成するために必要な情報にアクセスできるように、進捗を確認する責任があります。
 DRI はプロジェクトのすべての部分を直接実装するわけではないが、提供される責任を負います。これには、エンジニアリングチーム内で Issue が優先順位付けされることを確保するための EM とのコラボレーション、チーム内のさまざまな機能 (UX、フロントエンド、バックエンド、製品など) と協力してプロジェクトを達成するのに必要な情報にアクセスできるようにする、可能性のあるリスクを強調する、チーム全体での足並みを揃えるなどが含まれます。
 
-私たちは、アイデアについてコラボレーションし、問題を解決するために Issue を使用します。Issue で作業しているすべての人は、最新の決定で説明 (SSoT) を最新の状態に保ち、結果として生じるフォローアップ作業が追跡されていることを確保する責任があります。DRI は、ディスカッションスレッドが決定に達することを確保する責任があります。
-DRI はまた、スレッドがタイムリーな結論を得ていない場合、[非同期から同期ディスカッションへの転換](/handbook/company/culture/all-remote/asynchronous/#gitlab-experts-advise-on-when-to-use-sync-vs-async) を推進すべきです。
-UX デザインが実装前に合意されている場合、DRI は、MR デリバラブルが Figma で提供されたデザインと一致し、それに応じて承認することを確認することにより、MR レビュープロセスを加速し、PM と UX デザイナーの作業量を削減できます。
+私たちは、アイデアについてコラボレーションし、問題を解決するために Issue を使用します。Issue で作業しているすべての人は、最新の決定で説明 (SSoT) を最新の状態に保ち、結果として生じるフォローアップ作業が追跡されていることを確保する責任があります。DRI は、ディスカッションスレッドが決定に達することを確保する責任があります。DRI はまた、スレッドがタイムリーな結論を得ていない場合、同期ディスカッションへの転換を推進すべきです。UX デザインが実装前に合意されている場合、DRI は、MR デリバラブルが Figma で提供されたデザインと一致し、それに応じて承認することを確認することにより、MR レビュープロセスを加速し、PM と UX デザイナーの作業量を削減できます。
 
-プロジェクトの開始時に DRI が従う Epic Refinement プロセスは、以下の [Epic Refinement](#epic-refinement) セクションで説明されています。
-DRI は、週次ステータス更新 ([詳細](/handbook/engineering/infrastructure-platforms/project-management/#projects-are-reviewed-weekly-in-the-grand-review)) と、エピックにデモリンクが添付されることを確保する責任もあります ([Switchboard Demos](#switchboard-demos) を参照)。
-最終のステータス更新を提供し、エピックを閉じる手順は [ここ](/handbook/engineering/infrastructure-platforms/project-management/#when-a-project-is-finished) にあります。
+プロジェクトの開始時に DRI が従う Epic Refinement プロセスは、以下の [Epic Refinement](#epic-refinement) セクションで説明されています。DRI は、週次ステータス更新 ([詳細](/handbook/engineering/infrastructure-platforms/project-management/#projects-are-reviewed-weekly-in-the-grand-review)) と、エピックにデモリンクが添付されることを確保する責任もあります ([Switchboard Demos](#switchboard-demos) を参照)。最終のステータス更新を提供し、エピックを閉じる手順は [ここ](/handbook/engineering/infrastructure-platforms/project-management/#when-a-project-is-finished) にあります。
 
 #### エピックの洗練 (Epic Refinement) {#epic-refinement}
 
