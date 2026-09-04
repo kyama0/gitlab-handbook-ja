@@ -22,18 +22,18 @@ GitLab では、責任を追及しないインシデントレビューの実践�
 
 ## テンプレート {#template}
 
-- [レビュー開始者](#review-initiator)（ほとんどの場合はインシデントリード）は、インシデントの Slack チャンネルまたはインシデント Issue ダッシュボードで割り当てられたインシデント後タスクに従って、[GitLab.com Production Tracker](https://gitlab.com/gitlab-com/gl-infra/production/-/issues/new) または [Dedicated Issue トラッカー](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/work_items/new?description_template=internal_incident_review)でインシデントレビュー Issue を作成します。
+- [Review Initiator](#review-initiator)（ほとんどの場合はインシデントリード）は、インシデントの Slack チャンネルまたはインシデント Issue ダッシュボードで割り当てられたインシデント後タスクに従って、[GitLab.com Production Tracker](https://gitlab.com/gitlab-com/gl-infra/production/-/issues/new) または [Dedicated Issue トラッカー](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/work_items/new?description_template=internal_incident_review)でインシデントレビュー Issue を作成します。
 - インシデントレビューのテンプレートは、https://app.incident.io/gitlab/settings/post-mortem で編集できます。
 
 ## ロール {#roles}
 
-すべてのインシデントレビューには、レビューを作成する**レビュー開始者**、完了まで推進する **DRI**、完了を承認する **Bar Raiser** の 3 つのロールがあります。これらのロール以外にも、多くの参加者が RCA、是正措置、インシデントの詳細に貢献する場合があります。
+すべてのインシデントレビューには、レビューを作成する **Review Initiator**、完了まで推進する **DRI**、完了を承認する **Bar Raiser** の 3 つのロールがあります。これらのロール以外にも、多くの参加者が RCA、是正措置、インシデントの詳細に貢献する場合があります。
 
-### レビュー開始者 {#review-initiator}
+### Review Initiator {#review-initiator}
 
-レビュー開始者は、ほとんどの場合、インシデントリードです。すべての `Severity::1` および `Severity::2` のインシデントでは、インシデントリードがインシデント後タスクの一環としてレビュー Issue を作成する責任を負います。その他のすべてのインシデントでは、誰でもインシデント Issue に `Review-Requested` ラベルを適用し、自分でレビュー Issue を作成して、レビューを依頼できます。
+Review Initiator は、ほとんどの場合、インシデントリードです。すべての `Severity::1` および `Severity::2` のインシデントでは、インシデントリードがインシデント後タスクの一環としてレビュー Issue を作成する責任を負います。その他のすべてのインシデントでは、誰でもインシデント Issue に `Review-Requested` ラベルを適用し、自分でレビュー Issue を作成して、レビューを依頼できます。
 
-レビュー開始者は、適切なテンプレートを使用してレビュー Issue を作成し、初期メタデータを追加する責任を負います。これには以下が含まれます。
+Review Initiator は、適切なテンプレートを使用してレビュー Issue を作成し、初期メタデータを追加する責任を負います。これには以下が含まれます。
 
 - 適切な Issue タイトルを設定する
 - レビューをインシデントにリンクする
