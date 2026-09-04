@@ -3410,11 +3410,11 @@
     },
     "content/handbook/customer-success/demo-systems/_index.md": {
       "path": "content/handbook/customer-success/demo-systems/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T08:40:38+09:00",
+      "upstream_sha": "24ab594c7293ee988858a91b316798974a875cc1",
+      "translated_at": "2026-09-05T00:20:08+09:00",
       "model": "codex",
-      "input_hash": "9e4e7c484fbc38bfa8856aef7b7829cca5c2b4d54346c98f72f5b3ec3faeedc6",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "9c788f69b62374962ecbb0ce400f22e8688c329307b0eaca77cad795c902fe34",
+      "upstream_committed_at": "2026-09-04T15:13:44Z"
     },
     "content/handbook/customer-success/demo-systems/environments/_index.md": {
       "path": "content/handbook/customer-success/demo-systems/environments/_index.md",
@@ -3458,11 +3458,11 @@
     },
     "content/handbook/customer-success/demo-systems/onboarding.md": {
       "path": "content/handbook/customer-success/demo-systems/onboarding.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T02:17:48Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "6f8cb325b70510d71c1fbaada2f34a80bc638c473ffac259857809036fa31ee8",
-      "upstream_committed_at": "2025-10-14T17:59:32+00:00"
+      "upstream_sha": "24ab594c7293ee988858a91b316798974a875cc1",
+      "translated_at": "2026-09-05T00:20:08+09:00",
+      "model": "codex",
+      "input_hash": "aa0db1204ec36592675fb4488a5f9ebad17c2a8f80e0d3c8dbec26890c086375",
+      "upstream_committed_at": "2026-09-04T15:13:44Z"
     },
     "content/handbook/customer-success/demo-systems/tutorials/_index.md": {
       "path": "content/handbook/customer-success/demo-systems/tutorials/_index.md",
