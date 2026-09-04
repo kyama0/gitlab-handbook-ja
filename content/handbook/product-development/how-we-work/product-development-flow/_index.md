@@ -223,7 +223,7 @@ Ready for Design フェーズを開始するには、Issue ステータスを `R
 |<i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:1.25em" aria-hidden="true"></i> **デザインチームの認識とキャパシティ**: デザインチームは今後の作業を認識しており、デザインフェーズを始めるキャパシティがあります。 | - 割り当てられた Product Designer に今後のデザイン作業について伝える。<br/>- デザイナーが問題の文脈を理解し、関連するすべての調査にアクセスできることを確認する。<br/>- デザインチームのキャパシティと、デザイン作業の予想されるタイムラインを確認する。<br/>- 必要なハンドオフミーティングやデザインキックオフをスケジュールする。 |
 |<i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:1.25em" aria-hidden="true"></i> **技術的制約を文書化する**: デザインの決定に影響する可能性のある既知の技術的制約や考慮事項が文書化され、伝達されています。 | - デザインの決定に情報を提供すべき技術的制限や制約を文書化する。<br/>- 該当する場合、実現可能性に関するエンジニアリングチームのインプットが捉えられていることを確認する。<br/>- デザインアプローチに影響する可能性のあるプラットフォーム固有の考慮事項（Web、モバイル、API など）を記録する。 |
 
-### Validation フェーズ 4: Design
+### Validation フェーズ 4: Design {#validation-phase-4-design}
 
 <i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:1.25em" aria-hidden="true"></i> ステータス: `Design`
 
@@ -247,7 +247,7 @@ Design フェーズを開始するには、Issue ステータスを `Design` に
 |<i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:1.25em" aria-hidden="true"></i> **更新された Issue/エピックの説明**: DRI は Issue とエピックが最新であることを確認します。 | - 効率的かつ非同期に作業を続けられるよう、Issue とエピックが最新であることを確認する。<br/>- [実験の定義](/handbook/engineering/development/growth/#experimentation)。 |
 |Dogfooding プロセスを続ける | - 自分の機能に該当する場合、DRI は[機能を GitLab 内で構築するか、製品の外に置くか](/handbook/product/product-processes/dogfooding-for-r-d/)を決定することで Dogfooding プロセスを続ける。 |
 
-### Validation フェーズ 5: Solution Validation
+### Validation フェーズ 5: Solution Validation {#validation-phase-5-solution-validation}
 
 <i class="fab fa-gitlab fa-fw" style="color:rgb(252,109,38); font-size:1.25em" aria-hidden="true"></i> ステータス: `Solution validation`
 

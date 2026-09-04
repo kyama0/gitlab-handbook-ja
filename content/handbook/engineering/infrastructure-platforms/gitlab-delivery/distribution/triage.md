@@ -27,7 +27,7 @@ lastmod: "2025-10-22T09:53:02+11:00"
 
 重大度ラベルの説明については、[CE ドキュメント](https://gitlab.com/gitlab-org/gitlab-ce/blob/master/CONTRIBUTING.md#severity-labels) を参照してください。
 
-#### ラベル用語集
+#### ラベル用語集 {#label-glossary}
 
 | ラベル | 意味 | 対処法 |
 | - | - | - |
