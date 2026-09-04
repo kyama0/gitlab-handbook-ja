@@ -247,7 +247,7 @@ Veamly の創設者兼 CEO である Emna G. が、リモートファースト�
 1. [ありがとうと言う](/handbook/communication/#say-thanks)
 1. 価値観の絵文字—![CREDIT 絵文字](/images/handbook/values-emoji.png)—を使って、会社の価値観を体現するメッセージを認識する。
 1. 同僚を[裁量的ボーナス](/handbook/total-rewards/incentives/#discretionary-bonuses)に推薦する。認められれば、その理由と体現された価値観が文書化され、会社の通話で発表されます。これにより、他者が価値観を生きることで他者の生活を改善する方法の指針となります。
-1. GitLab Contribute アンバサダーを務めること。会社全体が 9〜12 ヶ月ごとに[一週間の旅行](/handbook/company/culture/summit/)に最大限活用できるよう支援します。
+1. GitLab Contribute アンバサダーを務めること。会社全体が 9 〜 12 ヶ月ごとに[一週間の旅行](/handbook/company/culture/summit/)に最大限活用できるよう支援します。
 1. 誰もが[マージリクエスト](https://docs.gitlab.com/ee/user/project/merge_requests/)を作成し、ディスカッションを促進することで、GitLab の価値観の強化に貢献できます。
 
 ## 文化に構造を設ける

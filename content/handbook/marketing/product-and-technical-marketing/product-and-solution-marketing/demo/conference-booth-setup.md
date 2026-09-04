@@ -79,7 +79,7 @@ Todo: EMEA のものを他のものと同じようにセットアップ（アカ
 
 使用できるデモのセットは 2 つあります: 通常版とショート版
 
-- [通常版](https://drive.google.com/drive/folders/1Qm8Y3oVLRa0nS1BARA631Ex6SKVzYp3C?usp=sharing) - より長いデモ（10〜15 分）または来場者の少ないブース向け。
+- [通常版](https://drive.google.com/drive/folders/1Qm8Y3oVLRa0nS1BARA631Ex6SKVzYp3C?usp=sharing) - より長いデモ（10 〜 15 分）または来場者の少ないブース向け。
 - [ショート版](https://drive.google.com/drive/folders/1NJdvHCaRlaM3--UGNQ1rPlx89i3msO-z?usp=sharing) - 来場者の多いブース向け。5 分以下で実行することを意図しており、特定のユースケースをどう解決するかの簡単な概要。
 
 どちらのファイルセットでも:

@@ -51,7 +51,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 1. [ ] - センシングメカニズムの Tips・コツ
     - センシングメカニズムについては、[ハンドブック](/handbook/product/product-processes/sensing-mechanisms/) に良い解説があります。私が役に立つと感じたほかのものを挙げます。
     - 顧客・ユーザーがいるほかの場所、例えば [GitLab フォーラム](https://forum.gitlab.com/) や Discord、[Reddit](https://www.reddit.com/r/gitlab/)、[HackerNews](https://news.ycombinator.com/news) などをチェックする。
-    - Issue - 週次トリアージで見落とされる可能性のある、自分のグループにアサインされた新しい Issue をレビューする習慣を持つとよいです。Issue 作成から 1〜2 日以内に、問題や望ましい結果についてユーザーと議論することで、良い会話が生まれることがあります。
+    - Issue - 週次トリアージで見落とされる可能性のある、自分のグループにアサインされた新しい Issue をレビューする習慣を持つとよいです。Issue 作成から 1 〜 2 日以内に、問題や望ましい結果についてユーザーと議論することで、良い会話が生まれることがあります。
     - Slack - 自分のカテゴリ名や競合名などを [Slack アラート](https://slack.com/help/articles/4412437167251-Get-notified-about-topics-you-care-about) のキーワードに追加することは、参加しているチャンネルで浮上してくる Issue や潜在顧客などを把握するのに有効です。
     - アナリストレポート - アナリストからのレポートへのアクセスについては、#analyst-relations チャンネルで問い合わせできます。
 1. [ ] - マイルストーンの流れ

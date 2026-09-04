@@ -99,7 +99,7 @@ GitLab Runner を使って CI/CD パイプラインをオーケストレーシ�
 
 ### ペルソナ
 
-- 開発者
-- 開発リード
-- DevOps の役割: エンジニア、アーキテクト、マネージャー
-- IT マネージャー
+- Developers
+- Development leads
+- DevOps roles: Engineer, architect, manager
+- IT managers

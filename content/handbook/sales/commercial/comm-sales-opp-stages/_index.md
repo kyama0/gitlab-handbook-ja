@@ -288,7 +288,7 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 - パートナーサービスをキックオフ (該当する場合)
 - AE が顧客との初期 30 日フォローアップミーティングをスケジュール (Named/Territory、または高価値商談)
 - Named/Territory AE - 顧客とのアカウントレビューケイデンスを作成
-- Named/Territory AE が [Account Rank](/handbook/sales/commercial/#account-ranking) 1、1.5、2 に基づいて 18〜24 ヶ月の成長プランを作成
+- Named/Territory AE が [Account Rank](/handbook/sales/commercial/#account-ranking) 1、1.5、2 に基づいて 18 〜 24 ヶ月の成長プランを作成
 - AE が顧客とケーススタディの期待値を構築 (何が機能しているか/していないかについていつ頃フィードバックをもらえるか、いつ法務にケーススタディを依頼できるか? あなたの尊敬を得てケーススタディを構築するためには何が必要か、または別の顧客とリファレンスとして会ってくれるか? パネルに参加してくれるかなど)
 - CSM 担当アカウント - 高優先度アカウントに対する [EBR](/handbook/customer-success/csm/ebr/) プロセスを確立
 - 該当する場合は Professional Services を紹介

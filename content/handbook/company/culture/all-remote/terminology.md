@@ -93,7 +93,7 @@ GitLab は世界最大のオールリモート企業です。私たちは 100%�
 ![GitLab in-person interactions at Commit SF 2020](/images/all-remote/gitlab-commit-sf-2020-in-person.jpg)
 {style="max-width: 50%;"}
 
-GitLab は、[対面での交流](/handbook/company/culture/all-remote/)が価値があると考えています。私たちは 9〜12 ヶ月ごとにチーム全体が共有体験のために集まることを意図的に行い（[GitLab Contribute](/handbook/company/culture/summit/)）、チームメンバーが[補助された休日の集まり](https://internal.gitlab.com/handbook/finance/expenses/#team-building)、[GitLab Commit](https://about.gitlab.com/events/)イベント、カンファレンスや展示会などの機会に対面で集まることを奨励しています。
+GitLab は、[対面での交流](/handbook/company/culture/all-remote/)が価値があると考えています。私たちは 9 〜 12 ヶ月ごとにチーム全体が共有体験のために集まることを意図的に行い（[GitLab Contribute](/handbook/company/culture/summit/)）、チームメンバーが[補助された休日の集まり](https://internal.gitlab.com/handbook/finance/expenses/#team-building)、[GitLab Commit](https://about.gitlab.com/events/)イベント、カンファレンスや展示会などの機会に対面で集まることを奨励しています。
 
 GitLab はまた、[四半期ごとの 4 日間のオフサイト](/handbook/company/offsite/)のために[e グループ](/handbook/company/structure/#e-group)を集めます。これらのオフサイトは例外的な効率性を生み出すために計画・高度に構造化されています。アジェンダ、成果、変更はすべて、専用の`#e-group` Slack チャンネルでの広範な会社全体の議論を伴いながら、残りの会社が見られるよう文書化されています。これは意図的に[透明性のある](/handbook/values/#transparency)設計です。
 

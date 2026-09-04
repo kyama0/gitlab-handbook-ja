@@ -47,7 +47,7 @@ GitLab Field チームメンバーは、さまざまなトピック、スキル�
 | マイクロサービスとは? | - [Video: What are microservices?](https://www.youtube.com/watch?v=petnTitp6CQ)（2019 年 1 月、19 分）<br> - [What are microservices?](https://about.gitlab.com/topics/microservices/) |
 | サーバーレスとは? | - [What is Serverless?](https://www.youtube.com/watch?v=GBOroGozm5w)（2019 年 1 月、18 分） |
 | コンテナとは? | - [What are containers and why do you need them?](https://www.cio.com/article/247005/what-are-containers-and-why-do-you-need-them.html)（2017 年 6 月）<br> - [What are containers?](https://www.youtube.com/watch?v=wuhxSLapDe0)（2018 年 3 月、9 分） |
-| Kubernetes とは? | - [What is Kubernetes?](https://www.youtube.com/watch?v=ALW6VBviSgQ)（2018 年 6 月、12 分）<br> - [The Evolution of the Kubernetes Landscape](https://www.youtube.com/watch?v=5OLkPK4MRVQ)（2019 年 11 月、30 分）<br> - [First Steps to Becoming Certified Kubernetes App Developer](https://www.oreilly.com/library/view/certified-kubernetes-application/9780136677628/)（30〜60 分）<br> - [Kubernetes API Fundamentals](https://www.oreilly.com/library/view/kubernetes-fundamentals/9781492032144/)（30 分） |
+| Kubernetes とは? | - [What is Kubernetes?](https://www.youtube.com/watch?v=ALW6VBviSgQ)（2018 年 6 月、12 分）<br> - [The Evolution of the Kubernetes Landscape](https://www.youtube.com/watch?v=5OLkPK4MRVQ)（2019 年 11 月、30 分）<br> - [First Steps to Becoming Certified Kubernetes App Developer](https://www.oreilly.com/library/view/certified-kubernetes-application/9780136677628/)（30 〜 60 分）<br> - [Kubernetes API Fundamentals](https://www.oreilly.com/library/view/kubernetes-fundamentals/9781492032144/)（30 分） |
 | Complete DevOps とは? | - [The entire DevOps lifecycle in one application](https://about.gitlab.com/stages-devops-lifecycle/) |
 | Concurrent DevOps とは? | - [ビデオ](https://www.youtube.com/watch?v=bDTYHGEIeM0)（2019 年 4 月、24.5 分）<br> - GitLab Concurrent DevOps ホワイトペーパー（[内部リンク](https://gitlab.com/gitlab-com/www-gitlab-com/-/blob/master/source/resources/downloads/gitlab-concurrent-devops-whitepaper.pdf)）（[ゲート付きリンク](https://about.gitlab.com/resources/whitepaper-concurrent-devops/)） |
 | 業界トレンドを追いかけるには? | - 以下のブログをレビュー・購読: [Hacker News](https://news.ycombinator.com/)、[Martin Fowler](https://martinfowler.com/)、[New Stack](https://thenewstack.io/) |
@@ -137,7 +137,7 @@ GitLab Field チームメンバーは、GitLab ポートフォリオのさまざ
 
 ## Field Enablement Spotlight セッション
 
-ライブセールスイネーブルメントセッションは、毎週木曜日の 12:00〜12:30pm ET に開催されます。各四半期の最後の 2 週間を除きます。セッションは録画され、[Highspot](https://gitlab.highspot.com/items/6480e56aff37cbf397ac752f?lfrm=srp.2) に公開され、オンデマンド再生で利用可能になり、上のインベントリに追加されます。[詳細はこちら](/handbook/sales/training/sales-enablement-sessions/)。
+ライブセールスイネーブルメントセッションは、毎週木曜日の 12:00 〜 12:30pm ET に開催されます。各四半期の最後の 2 週間を除きます。セッションは録画され、[Highspot](https://gitlab.highspot.com/items/6480e56aff37cbf397ac752f?lfrm=srp.2) に公開され、オンデマンド再生で利用可能になり、上のインベントリに追加されます。[詳細はこちら](/handbook/sales/training/sales-enablement-sessions/)。
 
 ## **その他の注記**
 

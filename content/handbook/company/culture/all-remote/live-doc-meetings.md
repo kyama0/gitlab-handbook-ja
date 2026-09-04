@@ -39,7 +39,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 ### 事前作業とミーティング開始
 
 1. 事前読み取り/視聴または事前作業の資料は、少なくとも 24 時間前に参加者にメールで送信してください。
-1. ミーティングのホスト（[DRI](/handbook/people-group/directly-responsible-individuals/)）はミーティングの最初の 1〜2 分で重要なポイントとコンテキストを要約することができますが、[ミーティングのほとんどはプレゼンテーションであるべきではありません](/handbook/communication/#few-meetings-with-presentations)。
+1. ミーティングのホスト（[DRI](/handbook/people-group/directly-responsible-individuals/)）はミーティングの最初の 1 〜 2 分で重要なポイントとコンテキストを要約することができますが、[ミーティングのほとんどはプレゼンテーションであるべきではありません](/handbook/communication/#few-meetings-with-presentations)。
 1. 質問は予定されたミーティング時間の前に[書き留め](/handbook/values/#write-things-down)てリストにしてください。これにより質問の質が向上する傾向があります。
 
 ### ミーティング中のメモ取りと構造

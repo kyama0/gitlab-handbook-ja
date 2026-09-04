@@ -73,7 +73,7 @@ GitLabのリサーチをより一貫したものに保つため、UXリサーチ
 1. `Use an existing board` を選択します
 1. `Workspace` タブの下で、`GitLab Global Tags` を選択し、`Link to project` をクリックします
 1. `Tags` の下にボードとして `GitLab Global Tags` が表示されるようになります
-1. `GitLab Section Tags` を有効にするために、ステップ3〜5を繰り返します
+1. `GitLab Section Tags` を有効にするために、ステップ3 〜 5を繰り返します
 1. 取り組んでいる各プロジェクトでこのプロセスを繰り返します
 
 ##### グローバルタグをノートと一緒に使う方法
@@ -105,7 +105,7 @@ GitLab Global Tagsは6つのカテゴリーに整理されています。
 | User Action   | これらのタグは、ユーザーがUIを使用中に何をしたかを示すために使用できます。 | タスクが与えられたとき、ユーザーは `unsure what to do` で、その後 `down the wrong path` に進む場合があります。|
 | User Feedback | リサーチセッション中にユーザーが言ったことを記述するのに有用。<br>また、汎用オプション（AからD）を持つタグのセットがあり、[解決策検証](/handbook/upstream-studios/experience-research/solution-validation-and-methods/) で使用できます。<br>| ワークフローに必要な機能について話すとき、ユーザーは `feature request` を持っているかもしれません。<br><br>または、デザイン評価でユーザーが `Prefer Option B` する場合もあります。                                            |
 | User Emotion  | これらのタグは、[ユーザビリティテスト](/handbook/upstream-studios/experience-research/usability-testing/) やウォークスルーのように、UIに対するユーザーの態度に関連しています。 | UIを提示されたとき、ユーザーは `overwhelmed` と感じる可能性があります。 |
-| Workflow      | ワークフローでのユーザーの行動を具体的に追跡するために使用できます。<br><br>また、汎用タスク番号（1〜10）を持つタグのサブセットがあり、[ユーザビリティテスト](/handbook/upstream-studios/experience-research/usability-testing/) や [UX Scorecards](/handbook/product/ux/ux-scorecards/#option-b-perform-a-formative-evaluation) で使用できます。| 一連のタスクを終えたが主要な成果物を逃した場合、`unsuccessful end task` タグを使用できます。<br><br>または、ユーザーが `task 1` と `task 2` を終えたタイミングを追跡したい場合があります。|
+| Workflow      | ワークフローでのユーザーの行動を具体的に追跡するために使用できます。<br><br>また、汎用タスク番号（1 〜 10）を持つタグのサブセットがあり、[ユーザビリティテスト](/handbook/upstream-studios/experience-research/usability-testing/) や [UX Scorecards](/handbook/product/ux/ux-scorecards/#option-b-perform-a-formative-evaluation) で使用できます。| 一連のタスクを終えたが主要な成果物を逃した場合、`unsuccessful end task` タグを使用できます。<br><br>または、ユーザーが `task 1` と `task 2` を終えたタイミングを追跡したい場合があります。|
 | Personas      | 各タグは、私たちの [ユーザーペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#list-of-user-personas) の1つ、またはそれらのペルソナの特性に関連しています。<br><br>特定のペルソナに対応するジョブまたは機能を探すときに、これらのタグを使用してください。| ユーザーが静的スキャナーを設定するとき、`Amy, Application Security Engineer` の可能性があります。<br><br>または、ユーザーの組織について [基礎研究](/handbook/upstream-studios/experience-research/foundational-research/) を行う場合は、`enterprise` や `start-up` タグを使用できます。 |
 | JTBD          | ほとんどのタグは、[ジョブのマッピング](/handbook/product/ux/jobs-to-be-done/jtbd-playbook/) のさまざまな段階に関連しています。<br><br>[コンテクスチュアル・インクワイアリー](/handbook/upstream-studios/experience-research/problem-validation-and-methods) のような基礎ジョブリサーチを行うときに使用できます。 | コンテクスチュアルを実施するとき、ユーザーはパイプラインの監視について話す可能性があり、これは `Step in Job - monitor` でタグ付けできます。|
 
@@ -268,7 +268,7 @@ Dovetail内でリサーチインサイトを適切に管理するために、独
 ##### Don'ts
 
 - 完全な文を使わない
-  - タグは1〜3単語の長さにすべきです。複数の異なるタグを使うことは、1つの長いタグよりも有用なインサイトをもたらします。
+  - タグは1 〜 3単語の長さにすべきです。複数の異なるタグを使うことは、1つの長いタグよりも有用なインサイトをもたらします。
 - 絵文字を使わない
   - 絵文字はテキストよりも本質的に曖昧で、タグは可能な限り明確であるべきです。
 
@@ -296,7 +296,7 @@ Dovetail内でリサーチインサイトを適切に管理するために、独
 
 リサーチ研究中に、興味深いものに気づくが、観察または聞いたことが [エッジケース](https://en.wikipedia.org/wiki/Edge_case) なのか、他のユーザーに影響を及ぼしているものなのかを判断するための十分なデータがまだない場合があります。
 
-一般的な経験則: 何かをインサイトに変えるべきかどうか確信が持てない、および/またはテーマを支持するハイライトが1〜2個しかない場合、観察は `insight` に変換するのではなく `highlight` のままにしておくべきです。
+一般的な経験則: 何かをインサイトに変えるべきかどうか確信が持てない、および/またはテーマを支持するハイライトが1 〜 2個しかない場合、観察は `insight` に変換するのではなく `highlight` のままにしておくべきです。
 
 ハイライトは、より多くのリサーチデータを集めた将来に、まだ検索、追跡、再訪することができます。
 

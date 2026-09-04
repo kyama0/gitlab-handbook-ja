@@ -167,9 +167,9 @@ lastmod: "2026-08-27T23:30:57+02:00"
 - **Social Selling 101 (Material - ビデオ - 20 分)**
   - ソーシャルセリングとは、顧客と見込み顧客を見つけ、つながり、育成するためにソーシャルネットワークを使用する技術です。[ビデオ](https://www.youtube.com/watch?v=w-C4jts-zUw) を見て、この [ガイド](https://drive.google.com/open?id=1UCRF6PC6al8XxT8E_4rDKkQjkW6WGPA6gybWeuRIg7A&authuser=0) を使って、見込み顧客に響くプロフィールの作り方を学んでください。
 - **質問: ビジネス開発 (Assignment - 15 分 - 10 ポイント - 事前作業)**
-  - ビジネス開発は難しいです... なぜなら、誰もがマーケティング適格リードを得たり、大きな紹介ネットワークを持っているわけではないからです。XDR パートナーとそのプロセスについてさらに理解するために、[Sales Development](/handbook/sales/sales-development/) ハンドブックページをご覧ください。経験から得た戦略やベストプラクティスについて 1〜2 つの洞察を共有してください。リードでパイプラインを一貫して満たし続けるにはどうすればよいですか？ベストプラクティスをクラウドソーシングしましょう！
+  - ビジネス開発は難しいです... なぜなら、誰もがマーケティング適格リードを得たり、大きな紹介ネットワークを持っているわけではないからです。XDR パートナーとそのプロセスについてさらに理解するために、[Sales Development](/handbook/sales/sales-development/) ハンドブックページをご覧ください。経験から得た戦略やベストプラクティスについて 1 〜 2 つの洞察を共有してください。リードでパイプラインを一貫して満たし続けるにはどうすればよいですか？ベストプラクティスをクラウドソーシングしましょう！
 - **質問: アカウント開発 (Assignment - 15 分 - 10 ポイント - 事前作業)**
-  - 営業担当者の仕事の最も重要な部分の 1 つはアカウント開発です。あなたのクライアントは一度あなたから購入しており、再び購入する可能性が非常に高いです！経験から得た戦略やベストプラクティスについて 1〜2 つの洞察を共有してください。クライアントにより多く購入させ、紹介を送り続けてもらうにはどうすればよいですか？経験をクラウドソーシングしましょう！
+  - 営業担当者の仕事の最も重要な部分の 1 つはアカウント開発です。あなたのクライアントは一度あなたから購入しており、再び購入する可能性が非常に高いです！経験から得た戦略やベストプラクティスについて 1 〜 2 つの洞察を共有してください。クライアントにより多く購入させ、紹介を送り続けてもらうにはどうすればよいですか？経験をクラウドソーシングしましょう！
 
 </details>
 
@@ -195,7 +195,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 - **Azure DevOps**
   - [GitLab vs. Azure DevOps](https://about.gitlab.com/why-gitlab/) をチェック
 - **アクティビティ: 友達に電話: 競合 (Assignment - 45 分 - 10 ポイント - 事前作業)**
-  - GitLab の経験豊富なセールスプロフェッショナル（個人の貢献者またはピープルマネージャー）3 人と話し、競合に成功裏に勝つためのヒントとコツを尋ねてください。電話からメモを取り、各会話から学んだ 1〜2 つのことを [Google フォーム](https://docs.google.com/forms/d/e/1FAIpQLSdCwvGRS_-fV9J57KGYIjkXNEUHDigKoPXss-kf9r3Zjozo9w/viewform?usp=sf_link) に簡潔にまとめて課題を提出してください。
+  - GitLab の経験豊富なセールスプロフェッショナル（個人の貢献者またはピープルマネージャー）3 人と話し、競合に成功裏に勝つためのヒントとコツを尋ねてください。電話からメモを取り、各会話から学んだ 1 〜 2 つのことを [Google フォーム](https://docs.google.com/forms/d/e/1FAIpQLSdCwvGRS_-fV9J57KGYIjkXNEUHDigKoPXss-kf9r3Zjozo9w/viewform?usp=sf_link) に簡潔にまとめて課題を提出してください。
 - **クイズ: 競合 (Assignment - 5 ポイント - 事前作業)**
 この短い [クイズ](https://docs.google.com/forms/d/e/1FAIpQLSc6-LgwwSBBnsXDn1spi68FCseBY8OjP0rur_DKqa9RmEwQIg/viewform) の質問に回答してください。このクイズの情報は、[Competitive Intelligence](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/) と [DevOps Tools Landscape](https://about.gitlab.com/why-gitlab/) のハンドブックページでカバーされています。
 
