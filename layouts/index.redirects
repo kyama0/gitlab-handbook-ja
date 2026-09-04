@@ -365,3 +365,12 @@
 /handbook/engineering/devops/plan/knowledge/ /handbook/engineering/devops/plan/planner-intelligence/ 301
 /handbook/engineering/devops/plan/project-management/ /handbook/engineering/devops/plan/work-items/ 301
 /handbook/product/groups/project-management/ /handbook/product/groups/work-items/ 301
+
+# Product and Solution Marketing moved under Product and Technical Marketing - remove 2027-08-27
+/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/ /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/ 301
+/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/ /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/ 301
+/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/ /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/ 301
+/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/ /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/ 301
+/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/ /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/ 301
+/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ 301
+/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/ /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/ 301
