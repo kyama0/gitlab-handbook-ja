@@ -3,7 +3,7 @@ title: Translation MR レビューワークフロー
 description: Tech Docs およびマーケティングサイトのワークフローをまたいで、翻訳マージリクエストの担当者・レビュアーの役割、ドラフトステータス、レビュープロセスを定義します。
 upstream_path: /handbook/marketing/product-and-technical-marketing/globalization/translation-mr-review-workflow/
 upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+translated_at: "2026-05-14T12:00:00Z"
 translator: claude
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"

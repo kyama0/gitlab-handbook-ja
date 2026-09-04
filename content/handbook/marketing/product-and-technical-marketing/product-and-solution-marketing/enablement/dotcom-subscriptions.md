@@ -2,7 +2,7 @@
 title: "GitLab.com サブスクリプション"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions/
 upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+translated_at: "2026-07-31T06:39:44+09:00"
 translator: codex
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"

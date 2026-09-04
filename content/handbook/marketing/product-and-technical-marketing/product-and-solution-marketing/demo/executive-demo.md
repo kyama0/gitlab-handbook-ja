@@ -3,7 +3,7 @@ title: "Scaled Agile Framework と GitLab"
 description: "Scaled Agile Framework は、大規模エンタープライズが大規模にアジャイル開発手法を採用するための一般的なアプローチへと進化してきました。"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/executive-demo/
 upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+translated_at: "2026-07-10T07:06:29+09:00"
 translator: codex
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"
@@ -20,11 +20,11 @@ GitLab がどのように SAFe をサポートできるかを説明する前に�
 
 GitLab におけるプロジェクトは中核の構成要素であり、作業を整理・管理・追跡・配信する場所です。GitLab のプロジェクトでは、Issue（ユースケース／要件）、Issue ボード（カンバン）、マイルストーン（スプリント）といった形式で、チームがコラボレーションし作業を計画できます。
 
-![GitLab Project](/images/solutions/scaled-agile/gitlab-project.png)
+![GitLab プロジェクト](/images/solutions/scaled-agile/gitlab-project.png)
 
 GitLab のプロジェクトは、単なるプロジェクト管理にとどまるものではありません。GitLab のプロジェクトは、業界をリードするソースコード管理リポジトリと CI/CD パイプラインの力を解き放ちます。マージリクエストは、Issue と実際のコード変更をつなぐリンクです。マージリクエストは、設計、実装の詳細（コード変更）、議論（コードレビュー）、承認、テスト（CI パイプライン）、セキュリティスキャンを記録します。
 
-![GitLab Repository](/images/solutions/scaled-agile/gitlab-repository.png)
+![GitLab リポジトリ](/images/solutions/scaled-agile/gitlab-repository.png)
 
 #### Issue
 
@@ -46,7 +46,7 @@ GitLab のラベルは、作業にタグ付けし追跡するための柔軟で�
 
 複数のプロジェクト（プロジェクトのポートフォリオ）を管理するために、GitLab のグループはビジネスイニシアチブの戦略的な計画と配信までの追跡を可能にするエンティティです。グループレベルでは、サブグループ、プロジェクト、エピック、マイルストーン、ロードマップ、グループレベルのボードを管理できます。
 
-![GitLab Group](/images/solutions/scaled-agile/gitlab-groups2.png)
+![GitLab グループ](/images/solutions/scaled-agile/gitlab-groups2.png)
 
 #### エピック
 
@@ -56,29 +56,29 @@ GitLab のラベルは、作業にタグ付けし追跡するための柔軟で�
 
 プロジェクトレベルのマイルストーンが多くの場合スプリントに合わせて設定されるのに対し、グループレベルでは、グループ内のすべてのプロジェクトとサブグループに対してマイルストーンを作成できます。これにより、チーム同士が同期を保ち、共通のリリース目標に集中できます。
 
-![Milestone burndown chart](https://docs.gitlab.com/ee/user/project/milestones/img/burndown_chart_v15_3.png)
+![マイルストーンバーンダウンチャート](https://docs.gitlab.com/ee/user/project/milestones/img/burndown_chart_v15_3.png)
 
 #### ロードマップ
 
 ロードマップは、グループのさまざまなエピックを視覚的に表現したものです。ロードマップビューはラベルでフィルタリングし、エピックの開始日／終了日で整理することで作業の順序を可視化できます。現時点では、GitLab は Issue やエピック間の依存関係を作成しません。
 
-![GitLab Roadmap](/images/solutions/scaled-agile/gitlab_roadmap.png)
+![GitLab ロードマップ](/images/solutions/scaled-agile/gitlab_roadmap.png)
 
 #### グループボード
 
 グループレベルの Issue ボードは、プロジェクトとサブグループの監督とガバナンスを可能にします。このビューでは、特定の Issue がライフサイクルをどのように流れているかを把握しやすく、チーム全体のキャパシティを理解できます。
 
-![GitLab Kanban Board](/images/gitlab-kanban-board.png)
+![GitLab カンバンボード](/images/gitlab-kanban-board.png)
 
 ## Scaled Agile Framework
 
 [Scaled Agile Framework](https://v5.scaledagileframework.com/) は、多くの大規模エンタープライズが複数のアジャイルチームの作業を定義、整理、同期するために使用しています。複雑な環境における複数のアジャイルチームのコーディネーション、コラボレーション、ガバナンス、監督を可能にするように設計されています。
 
-![SAFe Model Board](/images/solutions/scaled-agile/safe_model.png)
+![SAFe モデルボード](/images/solutions/scaled-agile/safe_model.png)
 
 GitLab のグループ、サブグループ、プロジェクトという構造により、Scaled Agile Framework のさまざまなバリエーションをモデル化しサポートすることが可能です。
 
-![GitLab to SAFe](/images/solutions/scaled-agile/gitlab-safe-overview.png)
+![GitLab から SAFe へ](/images/solutions/scaled-agile/gitlab-safe-overview.png)
 
 モデル全体（4 層 SAFe モデル）をサポートするには、組織はポートフォリオ計画作業を表すグループから始めます。次に、モデルの Large Solution 部分はサブグループになります。プログラムは Large Solution の下にそれぞれサブグループとして列挙され、最終的にアジャイルチームは GitLab プロジェクトで作業し、それぞれが「プログラム」の一部としてモデル化されます。
 

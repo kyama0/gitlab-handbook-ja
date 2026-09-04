@@ -36491,7 +36491,7 @@
     "content/handbook/marketing/brand-experience/brand-video/_index.md": {
       "path": "content/handbook/marketing/brand-experience/brand-video/_index.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-07-31T06:39:44+09:00",
       "model": "codex",
       "input_hash": "6219fb6b09aba72df52dbd7b5b91f4b6c3999a3430bfd21f74d84b9dfa84eba2",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36499,7 +36499,7 @@
     "content/handbook/marketing/brand-experience/brand-video/video-equipment.md": {
       "path": "content/handbook/marketing/brand-experience/brand-video/video-equipment.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "e6336d42bc4bd41e5312aba90d50cddad3d575d699cb640c65569d3d97c4901e",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36507,7 +36507,7 @@
     "content/handbook/marketing/brand-experience/content-style-guide.md": {
       "path": "content/handbook/marketing/brand-experience/content-style-guide.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "c493ef33948e1d02f33422249e951757b82c4ec93d1626d6a5692a30ed63e804",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36515,7 +36515,7 @@
     "content/handbook/marketing/brand-experience/naming.md": {
       "path": "content/handbook/marketing/brand-experience/naming.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "f6f9b7e97f3c309f0d1f63fc4d5769f6efbc7572ad89cb693631b5e723672a65",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36523,7 +36523,7 @@
     "content/handbook/marketing/brand-experience/trademark-guidelines.md": {
       "path": "content/handbook/marketing/brand-experience/trademark-guidelines.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "e598397658bb53df6986b383567aedb5f768ba33ebe6af37ff4dc4ae8e788884",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36531,7 +36531,7 @@
     "content/handbook/marketing/corporate-communications/analyst-relations/ar-inquiry.md": {
       "path": "content/handbook/marketing/corporate-communications/analyst-relations/ar-inquiry.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "f9b3606a645ddf9fa90be13aa12fa4591627a85c3b6a4a189c93275a6285e6ea",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36539,7 +36539,7 @@
     "content/handbook/marketing/corporate-communications/analyst-relations/sales-training.md": {
       "path": "content/handbook/marketing/corporate-communications/analyst-relations/sales-training.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "2a1d7f1a87c05040a3eca4f43da29ffca6666ff6d9e40b67ca2582b145aacf20",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36547,7 +36547,7 @@
     "content/handbook/marketing/corporate-communications/social-marketing/open-source-social.md": {
       "path": "content/handbook/marketing/corporate-communications/social-marketing/open-source-social.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T14:48:17Z",
       "model": "claude-opus-4-7",
       "input_hash": "df0dcddc63ff278da6deadb29b91f026afe1bed468ee5416e6f88f4625c88503",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36555,7 +36555,7 @@
     "content/handbook/marketing/corporate-communications/social-marketing/social-reporting.md": {
       "path": "content/handbook/marketing/corporate-communications/social-marketing/social-reporting.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T14:48:17Z",
       "model": "claude-opus-4-7",
       "input_hash": "ccc223bc4410b24684badb3f2b30262ab560fcb89ea46313c096e8ed8fedc57a",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36563,7 +36563,7 @@
     "content/handbook/marketing/growth-marketing/digital-agency/search-marketing/handbook-error-mash.md": {
       "path": "content/handbook/marketing/growth-marketing/digital-agency/search-marketing/handbook-error-mash.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T12:25:17Z",
       "model": "claude-opus-4-7",
       "input_hash": "d806cfd01360ac9417cb2940067e88feed14bbf63b4a875f9de154bd90f290ba",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36571,7 +36571,7 @@
     "content/handbook/marketing/growth-marketing/digital-agency/search-marketing/seo-strategy.md": {
       "path": "content/handbook/marketing/growth-marketing/digital-agency/search-marketing/seo-strategy.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "7c0326fab2c5365bb8aa9832abc740807a2bfbccbdaf6f854db1e05dbaf9f035",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36579,7 +36579,7 @@
     "content/handbook/marketing/growth-marketing/digital-agency/search-marketing/sitebulb.md": {
       "path": "content/handbook/marketing/growth-marketing/digital-agency/search-marketing/sitebulb.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-07-30T09:20:18+09:00",
       "model": "codex",
       "input_hash": "d2ae809b27fcef61a7eb06abf68f997a92ed7629756f5af542ab3c463f5bcbf0",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36587,7 +36587,7 @@
     "content/handbook/marketing/growth-marketing/regional-marketing/field-marketing-epics.md": {
       "path": "content/handbook/marketing/growth-marketing/regional-marketing/field-marketing-epics.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T12:25:17Z",
       "model": "claude-opus-4-7",
       "input_hash": "653cdf92ef0412fb90f333c1d06beabcc6987669c153448e056cca4f08864c2f",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36595,7 +36595,7 @@
     "content/handbook/marketing/product-and-technical-marketing/globalization/marketing-localization.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/globalization/marketing-localization.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "e0a2e73e4db13aa39773ae112889c1cf9158e669cac69411949c43c4cc2057a0",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36603,7 +36603,7 @@
     "content/handbook/marketing/product-and-technical-marketing/globalization/translation-mr-review-workflow.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/globalization/translation-mr-review-workflow.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "52154e587fb33c318027da4cc9d17386cbcabd7704258f44363cb865f0a18bfb",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36611,7 +36611,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/cicd.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/cicd.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "414dfeea626e715ac722a59d8f1226e38302de490b449d709976e63ecf85cd1c",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36619,7 +36619,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/core-product-marketing/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/core-product-marketing/_index.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "f51bcab2c75b33a9b85379aa8016371c9265c18794a8c1f95f7df20b445b7a4a",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36627,7 +36627,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/cicd-deep.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/cicd-deep.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "9fc104a78ef7ee9d38edd4ecb8d432405da03c296f33f0244da4420c1fdc43b6",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36635,7 +36635,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/conference-booth-setup.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/conference-booth-setup.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "dc6bd6ac9dad72990ed5e22aea68330954c6d25e6535edfad9adf9574f115fd4",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36643,7 +36643,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/executive-demo.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/executive-demo.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-07-10T07:06:29+09:00",
       "model": "codex",
       "input_hash": "80a4c4eca8af4efe69d507ddc6423f3330484bf156100376bcbb976f8dc023ce",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36651,7 +36651,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/integrations.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/integrations.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "e175aecc7acf14fc9afb83e26f50df4d29ca53757316751dc2f3fd2f07f50cc7",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36659,7 +36659,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/off-line-click-throughs.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/off-line-click-throughs.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "c809528f2c8f56f5b591176a06d47012ff19805cf92719d8d0e39817b0be3e53",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36667,7 +36667,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/devops-metrics.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/devops-metrics.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "d4a935be7309606b5dd8851633f6285e8bbfc11b523c000400915c4055465881",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36675,7 +36675,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/devops-tools.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/devops-tools.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "63c9b9acd3b426b4af10beb755a0f6a27f95e786881194694d305a3a38789829",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36683,7 +36683,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/dod12/2019-best-executive.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/dod12/2019-best-executive.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "c7fd4059d1818bedef7e6652a76db5c8219ca54affc05766c7b5c144efd9fa36",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36691,7 +36691,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/dod12/2019-best-solution.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/dod12/2019-best-solution.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "98bbf6af2c60524062664714e63bdecf288ddb4bdd15d0e36a6dba95dd72f036",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36699,7 +36699,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/dod12/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/dod12/_index.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "86658f1958f5ff2364c5ffba949b50489a28549ade2a66a071e258666a805da1",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36707,7 +36707,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/_index.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "77bf2197168c050c05eebbbbb24b40a70600ea1d6b73c7afe8b3a72a755fd286",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36715,7 +36715,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-07-31T06:39:44+09:00",
       "model": "codex",
       "input_hash": "d69d7f95e3705fa885fd62daa3e4b6576b06e2eb831105d18e87e03a6ca7ee6a",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36723,7 +36723,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/events_travel.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/events_travel.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "f7f1b71ae7f4d273bb4b4faee593e26b49c51cd916089d5df114a19bc5f5812c",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36731,7 +36731,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/103.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/103.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "c5c2423a48db71666ae3984922a4adca4249b2f14b659e94774e1ff00715dcc6",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36739,7 +36739,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/create-cluster-101.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/create-cluster-101.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "93dd1f78d8547e8c44557bcd36cdd659b866532696f0da8be1903aecd5cea956",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36747,7 +36747,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/build/cycle-time.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/build/cycle-time.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "c620456b989563e3ae2e533fa17cc25e928f42f68435a47301aae802c290d9df",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36755,7 +36755,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/build/modernize.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/build/modernize.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "f6a5e4dbeaf2b3e4c18c8d22b3e574a4ff257918e026d8b2a8b9937a7e935b3b",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36763,7 +36763,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/build/secure-applications.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/build/secure-applications.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "c1f50529a8c896f6e0d47bc5fc1fe4f4a7843a4ec389c8ff6a103b2d322d600c",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36771,7 +36771,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/organize.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/organize.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "8d9da5772fe31d7be9c3ea714a9e438cf4538f43de989a8e3c660f4ca1b2e484",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36779,7 +36779,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/protect.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/protect.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "a1bfb269401b1d70303c5373e3a2383bc47aab64442b67c9d648c0971d29d5d8",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36787,7 +36787,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/run.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/run.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "8966e4ebb0f27c9d1f56162df4367562e95c0b39034828207d49a0179010f8bc",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36795,7 +36795,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/test.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/test.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "0e28ee73e66bff6c30f0f05b65f9215ee933aa2faf5dd99549de1fdceef96bd7",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36803,7 +36803,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/market-segmentation.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/market-segmentation.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "0cd843505b2b05339660eab211533b119e057f6e55ef73b04260c918f7d6ce1f",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36811,7 +36811,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/peer-reviews.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/peer-reviews.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T03:20:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "3ac5cbf284613e6823472f8d2dc0dbbee7965d5d5fb72466df7be1274b513736",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36819,7 +36819,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/_index.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T03:20:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "97aa843fdaf6252bf2869b66ba4525dad1face67ee5009045164c757372d16fd",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36827,7 +36827,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/_index.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/_index.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T03:20:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "747858cf22123219179164405569b23b05f94354bb24e3809ba8bbcab435aeae",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36835,7 +36835,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/pmm-inventory.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/pmm-inventory.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "729ef90138472dc8763c245f6765890b156fde1580d2679bdd44a0a2c3c999d4",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36843,7 +36843,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/pmm-metrics.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/pmm-metrics.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "9f6c44ca2b358a4ac86f9783d07e9a0f4804044882da314014092884e1696223",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36851,7 +36851,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/pmm-professional-development.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/pmm-professional-development.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "7d72493acd0ab650172b54e57c0aaec0fc6c7e8098892838e2d6d81476c43a35",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36859,7 +36859,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/pricing-tiers.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/pricing-tiers.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-06-01T21:12:29Z",
       "model": "claude-opus-4-7",
       "input_hash": "dfb760a3bdf802b7ec286af98723b97f1c87672825d88e22a537f06e0294cd29",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36867,7 +36867,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/qbr.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/qbr.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "0bfcf5a72eb11607121da42d216275e875cfe42b3dbdb40318f1e87272c5c1b1",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36875,7 +36875,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/agile/keywords.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/agile/keywords.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "dd0f297ee1ea906836bc7d579d42646f61f13a2ca2f9b5bd7ccd76d69d12a788",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36883,7 +36883,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/agile/message-house-template.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/agile/message-house-template.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "e27249ab30190d7aa30136e7f206f3e76da48beba9978b0c18aaa20d18dc4645",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36891,7 +36891,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/bom.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/bom.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "0b021334fa10c008fd6c7f2046a066da95da40dc83a3dec6f1162922b0c1d9e4",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36899,7 +36899,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/cd/message-house.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/cd/message-house.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "4caf6faed9ae27b4264f7a1f2cd7466843bd5b94d8a574007f06a764a9f4a71e",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36907,7 +36907,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/runner-message-house.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/runner-message-house.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-01T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "ca492f97b4f4bac47abc18b49a9265afef0d6bf1fb34b1197c437cfacf659750",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36915,7 +36915,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/data-science/keywords.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/data-science/keywords.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "e5f42cd96f281af354cb913f49a147fd9c118c19383927c89bd90db7f0d94c44",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36923,7 +36923,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/data-science/message-house.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/data-science/message-house.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "6f32b44e5644ba36e4af461c9edf0f6e6a3f71b3daad5432864d5ca4075ed035",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36931,7 +36931,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/message-house.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/message-house.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "153ee7ab01f0dc0f30be6d86bcf50a5c7c7d5f8bc7cd70ef44516f4032a7402c",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36939,7 +36939,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/keywords.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/keywords.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "68486c98372fc1d665dbd2ffa6aa1eb7fc50d3ee7b313427d3b878b52cb44855",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36947,7 +36947,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/message-house-template.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/message-house-template.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "27bacaa1dec5a7d1e963e7fee724d875de00f1941e05fd6568126d0b78a8e89a",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36955,7 +36955,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/template/keywords.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/template/keywords.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "68486c98372fc1d665dbd2ffa6aa1eb7fc50d3ee7b313427d3b878b52cb44855",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36963,7 +36963,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/template/message-house-template.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/template/message-house-template.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "db37e4184a8e37c4b377b94e027b1e2e8e929f868b0c46df764b4fdd39cefc86",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36971,7 +36971,7 @@
     "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/message-house.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/message-house.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-04-30T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "68af8fac4d6366e4667c805f4e9a3e401cfe9c2a77148af2261940731e63df92",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36979,7 +36979,7 @@
     "content/handbook/marketing/product-and-technical-marketing/technical-writing/hiring.md": {
       "path": "content/handbook/marketing/product-and-technical-marketing/technical-writing/hiring.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-08-15T07:08:45+09:00",
       "model": "codex",
       "input_hash": "682cc16cb1a0b8ca0eb501b6fef05009212f7b67b6034e337ebb613f87a9ea06",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
@@ -36987,7 +36987,7 @@
     "content/handbook/sales/sales-development/tanuki-tech.md": {
       "path": "content/handbook/sales/sales-development/tanuki-tech.md",
       "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
-      "translated_at": "2026-09-04T07:56:05+09:00",
+      "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "49b1c23193cd6ba867dd599bcb6b8c3ff047fbb9b56f1622cd2e2b582f8cf923",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"

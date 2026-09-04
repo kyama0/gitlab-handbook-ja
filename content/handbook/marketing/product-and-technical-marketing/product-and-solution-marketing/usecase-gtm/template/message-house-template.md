@@ -2,7 +2,7 @@
 title: "メッセージハウステンプレート"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/template/message-house-template/
 upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+translated_at: "2026-04-30T00:00:00Z"
 translator: claude
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"
@@ -18,7 +18,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 | **キーバリュー** | バリュー 1: *<キーメッセージ/価値提案をリストする>* | バリュー 2: | バリュー 3: |
 |--------------|------------------------------------------------------------------|----------|----------|
 | **約束（Promise）** | *(ポジティブなビジネス成果をリストして説明する)* |  |  |
-| **ペインポイント** | *(一般的な Pain points を説明する)* |  |  |
+| **ペインポイント** | *(一般的なペインポイントを説明する)* |  |  |
 | **GitLab を選ぶ理由** | *(この価値をサポートする具体的な機能をリストする)* |  |  |
 
 | **プルーフポイント** | *(具体的なアナリストレポート、事例、推薦の言葉などをリストする)*  |

@@ -3,7 +3,7 @@ title: "マーケティングローカリゼーション"
 description: about.gitlab.com を複数言語で提供することを可能にする、GitLab のマーケティングローカリゼーションプロセスとインフラストラクチャの概要。
 upstream_path: /handbook/marketing/product-and-technical-marketing/globalization/marketing-localization/
 upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+translated_at: "2026-05-01T00:00:00Z"
 translator: claude
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"

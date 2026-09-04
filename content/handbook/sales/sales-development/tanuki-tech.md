@@ -3,7 +3,7 @@ title: Tanuki Tech - GitLab アカデミープログラム
 description: Tanuki Tech (Tanuki Institute of Technology の略) は、セールス開発組織向けに私たちが提供する世界クラスのセールス/テクノロジーブートキャンプです。このページを使って、当組織での在籍期間に修了することが期待されているコースと試験を確認してください。
 upstream_path: /handbook/sales/sales-development/tanuki-tech/
 upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+translated_at: "2026-05-14T00:00:00Z"
 translator: claude
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"

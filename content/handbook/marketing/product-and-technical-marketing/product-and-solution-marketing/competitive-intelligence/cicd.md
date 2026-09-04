@@ -2,7 +2,7 @@
 title: "CI/CD ツール入門"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/cicd/
 upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T07:56:05+09:00"
+translated_at: "2026-04-30T00:00:00Z"
 translator: claude
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"
@@ -89,11 +89,11 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 |機能           |GitLab      |CircleCI    |Azure DevOps|Jenkins     |Travis CI   |Bitbucket    |
 |:-----------------|:----------:|:----------:|:----------:|:----------:|:----------:|:-----------:|
-|オートスケーリング      |Y           |Y           |N           |Integration |Y           |Y            |
-|パイプライングラフ   |Y           |Y           |Y           |Integration |N           |Integration  |
+|オートスケーリング      |Y           |Y           |N           |統合 |Y           |Y            |
+|パイプライングラフ   |Y           |Y           |Y           |統合 |N           |統合  |
 |並列ジョブ     |Y           |Y           |Y           |Y           |Y           |Y            |
 |Config as Code    |Y           |Y           |Y           |Y           |Y           |Y            |
-|ネイティブ Docker サポート|Y        |Y           |Y           |Integration |Y           |Y            |
+|ネイティブ Docker サポート|Y        |Y           |Y           |統合 |Y           |Y            |
 
 ## 競合他社のスコープ - 継続的デリバリー/デプロイ（CI 製品）
 
@@ -102,12 +102,12 @@ lastmod: "2026-08-27T23:30:57+02:00"
 |環境      |Y           |N           |Y           |N           |Y           |Y            |
 |環境履歴       |Y           |N           |N           |N           |N           |Y            |
 |構成不要のステージングアプリ|Y           |N           |N           |N           |Y           |N            |
-|デプロイボード     |Y           |N           |Y           |Integration |Y           |N            |
+|デプロイボード     |Y           |N           |Y           |統合 |Y           |N            |
 |ネイティブ Canary デプロイ |Y           |N           |Y           |N           |Y           |N            |
-|セキュア変数  |Y           |N           |Y           |Integration |N           |Y            |
-|デプロイのトレーサビリティ|Y           |N           |Y           |Integration |Y           |Y            |
+|セキュア変数  |Y           |N           |Y           |統合 |N           |Y            |
+|デプロイのトレーサビリティ|Y           |N           |Y           |統合 |Y           |Y            |
 |保護された環境    |Y           |N           |Y           |N           |N           |Y            |
-|ネイティブ Kubernetes サポート|Y           |N           |Y           |Integration |N           |N            |
+|ネイティブ Kubernetes サポート|Y           |N           |Y           |統合 |N           |N            |
 |ネイティブフィーチャーフラグ|Y         |N           |N           |N           |N           |N            |
 
 ## 競合他社のスコープ - 継続的デリバリー/デプロイ（CD 製品）
