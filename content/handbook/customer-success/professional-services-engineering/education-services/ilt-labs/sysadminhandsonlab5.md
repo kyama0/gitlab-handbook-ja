@@ -2,11 +2,11 @@
 title: "GitLab システム管理者 - ハンズオンラボ: GitLab Omnibus のロギングと監視"
 description: "このハンズオンガイドでは、GitLab Omnibus インスタンスの監視とログ分析の方法を紹介します。"
 upstream_path: /handbook/customer-success/professional-services-engineering/education-services/ilt-labs/sysadminhandsonlab5/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-14T01:54:00+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T11:16:44+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-13T07:16:24-04:00"
+lastmod: "2026-08-26T12:29:48-04:00"
 ---
 
 > 推定所要時間: 30 分
@@ -120,11 +120,11 @@ Grafana は、ログの収集と分析のための便利なツールを提供し
 
       ```yml
       server:
-      http_listen_port: 9080
-      grpc_listen_port: 0
+        http_listen_port: 9080
+        grpc_listen_port: 0
 
       positions:
-      filename: /tmp/positions.yaml
+        filename: /tmp/positions.yaml
 
       clients:
       - url: http://localhost:3100/loki/api/v1/push
@@ -143,26 +143,26 @@ Grafana は、ログの収集と分析のための便利なツールを提供し
       ```yml
       scrape_configs:
       - job_name: nginx
-      static_configs:
-      - targets:
-          - localhost
+        static_configs:
+        - targets:
+            - localhost
           labels:
-          job: nginx
-          __path__: /var/log/gitlab/nginx/*
+            job: nginx
+            __path__: /var/log/gitlab/nginx/*
       - job_name: workhorse
-      static_configs:
-      - targets:
-          - localhost
+        static_configs:
+        - targets:
+            - localhost
           labels:
-          job: workhorse
-          __path__: /var/log/gitlab/gitlab-workhorse/*
+            job: workhorse
+            __path__: /var/log/gitlab/gitlab-workhorse/*
       - job_name: rails
-      static_configs:
-      - targets:
-          - localhost
+        static_configs:
+        - targets:
+            - localhost
           labels:
-          job: rails
-          __path__: /var/log/gitlab/gitlab-rails/production_json.log
+            job: rails
+            __path__: /var/log/gitlab/gitlab-rails/production_json.log
 
       ```
 
@@ -176,53 +176,53 @@ Grafana は、ログの収集と分析のための便利なツールを提供し
       auth_enabled: false
 
       server:
-      http_listen_port: 3100
-      grpc_listen_port: 9096
-      log_level: debug
-      grpc_server_max_concurrent_streams: 1000
+        http_listen_port: 3100
+        grpc_listen_port: 9096
+        log_level: debug
+        grpc_server_max_concurrent_streams: 1000
 
       common:
-      instance_addr: 127.0.0.1
-      path_prefix: /tmp/loki
-      storage:
+        instance_addr: 127.0.0.1
+        path_prefix: /tmp/loki
+        storage:
           filesystem:
-          chunks_directory: /tmp/loki/chunks
-          rules_directory: /tmp/loki/rules
-      replication_factor: 1
-      ring:
+            chunks_directory: /tmp/loki/chunks
+            rules_directory: /tmp/loki/rules
+        replication_factor: 1
+        ring:
           kvstore:
-          store: inmemory
+            store: inmemory
 
       query_range:
-      results_cache:
+        results_cache:
           cache:
-          embedded_cache:
+            embedded_cache:
               enabled: true
               max_size_mb: 100
 
       limits_config:
-      metric_aggregation_enabled: true
+        metric_aggregation_enabled: true
 
       schema_config:
-      configs:
+        configs:
           - from: 2020-10-24
-          store: tsdb
-          object_store: filesystem
-          schema: v13
-          index:
+            store: tsdb
+            object_store: filesystem
+            schema: v13
+            index:
               prefix: index_
               period: 24h
 
       pattern_ingester:
-      enabled: true
-      metric_aggregation:
+        enabled: true
+        metric_aggregation:
           loki_address: localhost:3100
 
       ruler:
-      alertmanager_url: http://localhost:9093
+        alertmanager_url: http://localhost:9093
 
       frontend:
-      encoding: protobuf
+        encoding: protobuf
 
       #querier:
       #  engine:

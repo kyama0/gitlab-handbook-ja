@@ -3,9 +3,9 @@ title: "dbt ガイド"
 description: "data build tool (dbt) ガイド"
 math: true
 upstream_path: /handbook/enterprise-data/platform/dbt-guide/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-31T07:45:00+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+lastmod: "2026-08-20T08:15:32-06:00"
+translated_at: "2026-09-04T12:58:42+09:00"
 translator: codex
 stale: false
 ---
@@ -118,11 +118,10 @@ gitlab-snowflake:
 
 <a id="venv-workflow"></a>
 
-Mac システムを使っているすべての人に推奨されるワークフローです。
+Mac ユーザーに推奨されるワークフローです。すべての dbt コマンドは Poetry が管理する仮想環境内で実行されるため、すべての開発者が同じ固定バージョンの dbt と依存関係を使えます。
 
 #### dbt の使用 {#using-dbt}
 
-- `DBT_PROFILE_PATH` 環境変数が設定されていることを確認します。[onboarding_script.zsh](https://gitlab.com/gitlab-data/analytics/-/blob/master/admin/onboarding_script.zsh)（最新で定期的に更新されるため、これを使うことを推奨します）を使っていれば設定されているはずですが、もし設定されていなければ、`.bashrc` または `.zshrc` に `export DBT_PROFILE_PATH="/<your_root_dir/.dbt/"` を追加するか、単にローカルのターミナルセッションで同じコマンドを実行することで設定できます
 - pyenv をセットアップするために、次のスニペットを `.bashrc` または `.zshrc` に追加します。これは pyenv のインストール場所（オンボーディングスクリプト経由）を定義し、それをパスに追加し、pyenv の初期化スクリプトを実行して python の呼び出しを正しい pyenv 管理バージョンにルーティングするためのシェル統合をセットアップします。
 
  ```bash
@@ -137,7 +136,7 @@ eval "$(pyenv init -)"
 - **注**： デフォルトのブラウザが chrome に設定されていることを確認します。組み込みの SSO ログインは chrome でのみ動作します
 - **注**： `/analytics` リポジトリがある場所のフォルダにいることを確認します。すべてを適切にインストールしていれば、`jump analytics` で `dbt` コマンドを正常に実行するために必要な場所に移動できます。
 - **注**： dbt を初めて実行する前に `make prepare-dbt` を実行します。これにより venv がインストールされていることが保証されます。
-  - これは `poetry` インストールスクリプトのダウンロードと実行を含む[一連のコマンド](https://gitlab.com/gitlab-data/analytics/-/blob/master/Makefile#L111-114)を実行します。
+  - これにより、仮想環境をセットアップするための `poetry` インストールスクリプトがダウンロードされ、実行されます。
   - `urllib.error.URLError: <urlopen error [SSL: CERTIFICATE_VERIFY_FAILED] certificate verify failed: unable to get local issuer certificate (_ssl.c:1124)>` のような証明書エラーが出た場合は、これらの [StackOverflow の手順](https://stackoverflow.com/questions/50236117/scraping-ssl-certificate-verify-failed-error-for-http-en-wikipedia-org/53310545#53310545)に従ってください。
   - `ssh: connect to host gitlab.com port 22: Operation timed out fatal: Could not read from remote repository.` のようなエラーが出て、正しいアクセス権があることとリポジトリが存在することを確認済みの場合、ポート 22 での GitLab への SSH 接続がネットワーク/ファイアウォールによってブロックされている SSH の問題である可能性があります。これを解決するには、SSH がポート 443 で GitLab の代替 SSH サービスを使うように設定します。
 
@@ -181,6 +180,20 @@ eval "$(pyenv init -)"
 #### なぜローカルの dbt 開発に仮想環境を使うのか {#why-do-we-use-a-virtual-environment-for-local-dbt-development}
 
 私たちがローカルの dbt 開発に仮想環境を使うのは、各開発者がまったく同じ依存関係を持つまったく同じ dbt バージョンを実行することを保証するためです。これにより、ソフトウェアバージョンの違いによって開発者ごとに開発体験が異なるリスクを最小化し、全員のソフトウェアを同時にアップグレードしやすくします。さらに、私たちのステージング環境と本番環境はコンテナ化されているため、このアプローチにより、同じコードがすべての環境でできる限り予測可能に実行されることが保証されます。
+
+#### dbt コマンドリファレンス
+
+標準的な dbt コマンド（`dbt run`、`dbt test`、`dbt compile`、`dbt seed` など）については、[dbt の主要コマンドリファレンス](https://docs.getdbt.com/reference/dbt-commands)を参照してください。
+
+[`transform/snowflake-dbt/Makefile`](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/Makefile) は、一般的な開発ワークフローをラップしています。完全なリストを表示するには、venv シェル内から `make help` を実行します。主なコマンドは次のとおりです。
+
+| コマンド | 説明 |
+|---|---|
+| `make build-changes` | 変更されたすべての SQL／CSV ファイルをクローンしてビルドします。`SELECTION`、`EXCLUDE`、`DOWNSTREAM`、`CONTIGUOUS`、`FAIL_FAST`、`FULL_REFRESH`、`VARS`、`TARGET` 変数を受け付けます |
+| `make lint-models` | 変更された SQL ファイルを SQLFluff でリントします。特定のファイルを対象にする `MODEL` と、修正をその場で適用する `FIX=true` を受け付けます |
+| `make safe-check` | SAFE データのダウンストリームにあり、適切にタグ付けされていないモデルを確認します |
+| `make row-counts` | 開発環境と本番環境の行数を比較する SQL クエリを生成します（`make build-changes` の後に実行します） |
+| `make list-models` | 現在の選択条件に一致するモデルを一覧表示します |
 
 #### ローカルでの変更ビルド {#build-changes-locally}
 
@@ -250,23 +263,6 @@ make DBT_MODELS="dim_subscription" clone-dbt-select-local-user-noscript
   ```
 
 - analytics フォルダのルートから `make dbt-deps` を実行して、コマンドを再試行します。
-
-**移行に関する注記:**
-
-私たちは新しい `clone-dbt-select-local-user-noscript` コマンドへの移行を積極的に進めています。古い `clone-dbt-select-local-user` コマンドは限られた期間まだ利用できますが、できるだけ早く新しいコマンドの使用を開始することを推奨します。
-
-##### ローカルユーザー DB へのクローン（python スクリプト - `dbt clone` 以前） {#cloning-into-local-user-db-python-scripts---pre-dbt-clone}
-
-- これは指定された dbt モデルのリネージをアクティブなブランチ DB（例: `{user_name}_PROD`）にクローンします
-  - `make DBT_MODELS="<dbt_selector>" clone-dbt-select-local-user`
-  - 例: `make DBT_MODELS="+dim_subscription" clone-dbt-select-local-user`
-
-##### ブランチ DB へのクローン {#cloning-into-branch-db}
-
-- これは指定された dbt モデルのリネージをアクティブなブランチ DB（例: `{branch_name}_PROD`）にクローンします。これは CI パイプラインのクローンステップを実行するのと同等です。
-- Master では動作しません。
-  - `make DBT_MODELS="<dbt_selector>" clone-dbt-select-local-branch`
-  - 例: `make DBT_MODELS="+dim_subscription" clone-dbt-select-local-branch`
 
 ### 本番オーケストレーション {#production-orchestration}
 
@@ -358,65 +354,6 @@ jobs:
 
 特定の頻度に対するモデルの適格性は、モデル自身のランタイムだけでなく、その **フルリネージのビルド時間** によって決定されます。これは、頻度ウィンドウ内で完全な上流グラフをビルドできることを保証するためです。重複ビルドを避けるため、各モデルはちょうど 1 つの処理頻度に現れるべきです。
 
-### Docker ワークフロー {#docker-workflow}
-
-以下は主に Linux を使うユーザーに推奨されるワークフローです。venv ワークフローは前提条件が少なく、かなり高速だからです。
-
-ローカルで `dbt` とその依存関係を扱う複雑さの一部を抽象化するため、メインの [analytics プロジェクト](https://gitlab.com/gitlab-data/analytics/)は `Docker` コンテナ内から `dbt` を使うことをサポートしています。
-私たちは [`data-image`](https://gitlab.com/gitlab-data/data-image) プロジェクトからコンテナをビルドします。
-これを実現するためのコマンドが `Makefile` 内にあり、さまざまな `make` コマンドとその動作について疑問があるときはいつでも、`make help` を使ってコマンドのリストとそれぞれの動作を取得できます。
-
-初回実行の前（およびコンテナが更新されるたび）に、必ず次のコマンドを実行してください。
-
-1. `make update-containers`
-1. `make cleanup`
-
-これらのコマンドにより、最新バージョンのコンテナを取得し、ローカルの `Docker` 環境を全般的にクリーンアップできます。
-
-#### dbt の使用 {#using-dbt-1}
-
-- `DBT_PROFILE_PATH` 環境変数が設定されていることを確認します。[onboarding_script.zsh](https://gitlab.com/gitlab-data/analytics/-/blob/master/admin/onboarding_script.zsh)（最新で定期的に更新されるため、これを使うことを推奨します）または [onboarding_script.sh](https://gitlab.com/gitlab-data/analytics/blob/master/admin/onboarding_script.sh) を使っていれば設定されているはずですが、もし設定されていなければ、`.bashrc` または `.zshrc` に `export DBT_PROFILE_PATH="/<your_root_dir/.dbt/"` を追加するか、単にローカルのターミナルセッションで同じコマンドを実行することで設定できます
-- `.dbt/profiles.yml` を自分固有のユーザー設定で更新したことを確認します
-- SSH 設定が [GitLab の手順](https://gitlab.com/help/ssh/README)に従ってセットアップされていることを確認します。鍵は `~/.ssh/` にあるはずで、パスワードなしで生成されているはずです。
-  - メインプロジェクトで `dbt deps` を実行するために、[このプロジェクト](https://gitlab.com/gitlab-data/data-tests)へのアクセス権も必要になります。
-- `dbt` コンテナを起動してその中のシェルからコマンドを実行するには、`make dbt-image` を使います
-- これにより、ローカルの `profiles.yml` やリポジトリのファイルを含め、`dbt` の実行に必要なすべてが自動的にインポートされます
-  - 不足している変数（`GIT_BRANCH`、`KUBECONFIG`、`GOOGLE_APPLICATION_CREDENTIALS` など）に関する WARNING が表示される場合があります。Airflow 上で開発しているのでなければ、これは問題なく、想定どおりです。
-- 現在のブランチのドキュメントを見るには、`make dbt-docs` を実行してから web ブラウザで `localhost:8081` にアクセスします。これには `profiles.yml` で `docs` プロファイルが設定されている必要があることに注意してください
-- `dbt` コンテナ内に入ったら、通常どおり任意の `dbt` コマンドを実行します
-- リポジトリ内のいずれかのファイルに加えた変更は、コンテナ内で自動的に更新されます。エディタでファイルを変更したときにコンテナを再起動する必要はありません!
-
-#### コマンドラインチートシート {#command-line-cheat-sheet}
-
-これは[プライマリコマンドリファレンス](https://docs.getdbt.com/reference/dbt-commands)の簡略版です。
-
-dbt 固有:
-
-- [`dbt clean`](https://docs.getdbt.com/reference/commands/clean) - `/dbt_modules`（deps の実行時に作成される）と `/target` フォルダ（モデルの実行時に作成される）を削除します
-- [`dbt run`](https://docs.getdbt.com/reference/commands/run) - 通常の実行
-- モデル選択構文（[ソース](https://docs.getdbt.com/reference/node-selection/syntax)）。モデルを指定することで、関連すると思われるモデルだけを実行/テストでき、多くの時間を節約できます。ただし、重要な上流の依存関係を指定し忘れるリスクがあるので、構文を十分に理解しておくとよいでしょう。
-  - `dbt run --models modelname` - `modelname` のみを実行します
-  - `dbt run --models +modelname` - `modelname` とすべての親を実行します
-  - `dbt run --models modelname+` - `modelname` とすべての子を実行します
-  - `dbt run --models +modelname+` - `modelname` と、すべての親および子を実行します
-  - `dbt run --models @modelname` - `modelname`、すべての親、すべての子、さらにすべての子のすべての親を実行します
-  - `dbt run --exclude modelname` - `modelname` を除くすべてのモデルを実行します
-  - これらはすべてフォルダ選択構文でも動作することに注意してください。
-    - `dbt run --models folder` - フォルダ内のすべてのモデルを実行します
-    - `dbt run --models folder.subfolder` - サブフォルダ内のすべてのモデルを実行します
-    - `dbt run --models +folder.subfolder` - サブフォルダ内のすべてのモデルとすべての親を実行します
-- `dbt run --full-refresh` - インクリメンタルモデルをリフレッシュします
-- [`dbt test`](https://docs.getdbt.com/reference/commands/test) - カスタムデータテストとスキーマテストを実行します。ヒント: `dbt test` は `dbt run` で参照されたのと同じ `--model` および `--exclude` 構文を取ります
-- [`dbt seed`](https://docs.getdbt.com/reference/commands/seed) - `data-paths` [ディレクトリ](https://gitlab.com/gitlab-data/analytics/-/tree/master/transform/snowflake-dbt/data)で指定された csv ファイルをデータウェアハウスに読み込みます。本ガイドの [seeds セクション](/handbook/enterprise-data/platform/dbt-guide/#seeds)も参照してください
-- [`dbt compile`](https://docs.getdbt.com/reference/commands/compile) - モデル内のテンプレート化されたコードをコンパイルし、結果を `target/` フォルダに出力します。
-    dbt は 'dbt run' 時にモデルを自動的にコンパイルするため、これは定期的に実行する必要のあるコマンドではありません。
-    一般的な使用例の 1 つは、コンパイルされたコードをモデルのデバッグのために Snowflake で直接実行できることです。
-
-    [オンボーディングスクリプト](https://gitlab.com/gitlab-data/analytics/-/blob/master/admin/onboarding_script.sh)を実行した場合のみ動作します:
-- `dbt_run_changed` - 変更されたモデルのみを実行するために私たちがあなたのコンピューターに追加した関数です（docker コンテナ内からアクセスできます）
-- `cycle_logs` - dbt ログをクリアするために私たちがあなたのコンピューターに追加した関数です（docker コンテナ内からはアクセスできません）
-- `make dbt-docs` - ローカルコンテナを起動して web ブラウザで `dbt` ドキュメントを提供するコマンドで、`localhost:8081` で見られます
-
 ### VSCode 拡張機能: dbt Power User {#vscode-extension-dbt-power-user}
 
 [dbt Power User](https://marketplace.visualstudio.com/items?itemName=innoverio.vscode-dbt-power-user) は、VScode を dbt とシームレスに連携させます。以下のガイドでは、[Venv ワークフロー](/handbook/enterprise-data/platform/dbt-guide/#Venv-workflow)に従った場合に dbt Power User をインストールできます。
@@ -450,7 +387,7 @@ dbt 固有:
   "SNOWFLAKE_LOAD_DATABASE":"RAW",
   "SNOWFLAKE_STATIC_DATABASE":"STATIC",
   "SNOWFLAKE_PREP_SCHEMA":"preparation",
-  "SNOWFLAKE_TRANSFORM_WAREHOUSE":"ANALYST_XS",
+  "SNOWFLAKE_TRANSFORM_WAREHOUSE":"DEV_XS",
   "SALT":"pizza",
   "SALT_IP":"pie",
   "SALT_NAME":"pepperoni",
@@ -485,30 +422,6 @@ dbt が最新でないという警告は無視してください。
   VS code の UI からモデルを実行/ビルド/テストする際、ポップアップするターミナルウィンドウはログ出力にすぎません。Cmd+C はジョブを停止せず、VS code のゴミ箱アイコンをクリックしても停止しません。VScode から開始したジョブを停止したい場合は、Snowflake UI とジョブリストを通じて、そこからジョブを kill してください。
   {{% /panel %}}
 
-### dbt プロジェクトへの貢献のための設定 {#configuration-for-contributing-to-dbt-project}
-
-dbt への貢献に興味がある場合、ローカル環境を簡単にセットアップするための推奨方法を以下に示します。
-
-- [dbt プロジェクト](https://github.com/dbt-labs/dbt-core)を GitHub UI 経由で自分のパーソナル名前空間にフォークします
-- プロジェクトをローカルにクローンします
-- 次のコマンドに従って dbt 用の仮想環境（venv）を作成します
-
-  ```bash
-  cd ~
-  mkdir .venv # This should be in your root "~" directory
-  python -m venv .venv/dbt
-  source ~/.venv/dbt/bin/activate
-  pip install dbt
-  ```
-
-- 仮想環境を起動しやすくするために、`alias dbt!="source ~/.venv/dbt/bin/activate"` を `.bashrc` または `.zshrc` に追加することを検討します
-- 同じターミナルウィンドウで dbt プロジェクトに移動します。コマンドプロンプトの先頭に `(dbt)` が表示されるはずです
-- `pip install -r editable_requirements.txt` を実行します。これにより、venv 内でローカルに dbt を実行したときに、自分のマシン上のコードを使うことが保証されます。
-- `which dbt` を実行して、venv を指していることを確認します
-- ローカルでコードを開発し、通常どおり変更をコミットして、GitHub の自分の名前空間にプッシュします
-
-MR のためにコードを提出する準備ができたら、[CLA に署名](https://github.com/dbt-labs/dbt-core/blob/dev/0.15.1/CONTRIBUTING.md#signing-the-cla)していることを確認してください。
-
 ## スタイルおよび使用法ガイド {#style-and-usage-guide}
 
 ### モデル構造 {#model-structure}
@@ -527,12 +440,6 @@ Kimball ディメンショナルモデリングに注力する前は、私たち
 - `end-user models` - 分析に使われる dbt モデルです。モデルの最終版は、`BEAM*` テーブルを目標とする場合、おそらく `_xf` サフィックスで示されます。ビジネスイベント分析＆モデル構造に従い、ビジネスを測定する who、what、where、when、how many、why、how の質問の組み合わせに答えるべきです。エンドユーザーモデルは `legacy` スキーマにあります。
 
 どの新しい Kimball モデルがレガシーモデルを置き換えるかを判断するには、[Use This Not That](https://docs.google.com/spreadsheets/d/1yr-J4ztkyl9vmJ6Euj58gczDLTIss7xIher5SV-1VDY/edit?usp=sharing) のマッピングを参照してください。
-{{% /panel %}}
-
-{{% panel header="**FY21-Q4 モデル移行**" header-bg="success" %}}
-FY21-Q4 に、`analytics` データベースを置き換えるために `prod` および `prep` データベースが導入されました。これら 2 つの新しいデータベースが `analytics` データベースを完全に置き換えます。
-
-ローカル開発も、カスタムスキーマからカスタムデータベースへ切り替えられました。
 {{% /panel %}}
 
 #### ソース {#sources}
@@ -1108,6 +1015,8 @@ seed ファイルは、そこに含まれる情報を所有する機能チーム
   )
 }}
 ```
+
+`product` および `non-product` モデルでは、デフォルトのウェアハウスサイズとして `L` を使います。モデルにより多くのコンピューティングが必要な場合（たとえば、タイムアウトする大規模な再帰 CTE を持つモデル）は、上記のように `generate_warehouse_name` を使ってモデルレベルでデフォルトを上書きします。サイズを増やすタイミングのガイダンスについては、以下の[ウェアハウスサイズの実現可能性のチェック](/handbook/enterprise-data/platform/dbt-guide/#check-warehouse-size-viability)セクションを参照してください。
 
 ### 開発時のサンプルデータ {#sample-data-in-development}
 
@@ -2125,21 +2034,3 @@ dbt を独立して非同期にアップグレードする方法の手順につ�
 ### dbt アップグレードのスケジューリング {#scheduling-a-dbt-upgrade}
 
 dbt のアップグレードは、世界的な主要な祝日や [Family and Friends Day](/handbook/company/family-and-friends-day/) がない週の火曜日に行うべきです。これは、テストで捕捉されなかった破壊的変更を、週末に働くことなく修正するための十分な時間をチームメンバーに与えるためです。最悪のシナリオでは、アップグレードを水曜日にロールバックして、その週の残りの間に通常の運用を再開できます。
-
-## dbt モデルレベルでのウェアハウスサイズの指定 {#specifying-warehouse-size-on-dbt-model-level}
-
-新しい `product` および `non-product` モデルは、今後デフォルトで 'L' ウェアハウスサイズを使います。
-
-背景: 本番の dbt DAG のランタイムを減らすため、`product` および `non-product` モデルは 1 つの Airflow タスクに統合されました（[MR](https://gitlab.com/gitlab-data/analytics/-/merge_requests/11305)）。これは、新しいデフォルトのウェアハウスサイズが 'L' になり、'XL' を使う必要がある場合は dbt モデルレベルで指定する必要があることを意味します。
-
-dbt モデルレベルでウェアハウスを指定する（つまりデフォルトのウェアハウスを上書きする）には、モデルに config ブロックを追加する必要があります。
-
-```sql
-{{ config(
-    snowflake_warehouse=generate_warehouse_name('XL')
-) }}
-```
-
-[dim_note.sql](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/models/common/dimensions_local/product_and_engineering/dim_note.sql) は参照できる例のモデルです。
-
-正しいウェアハウスを選択する方法の詳細については、このページの 'ウェアハウスサイズの実現可能性のチェック' セクションを参照してください。

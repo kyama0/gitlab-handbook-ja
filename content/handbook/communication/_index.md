@@ -2,9 +2,9 @@
 title: GitLab のコミュニケーション
 description: "オールリモートの企業として、つながりを保ちながらより効率的に働くために、明確なコミュニケーションを実践することが私たちにとって重要です。"
 upstream_path: /handbook/communication/
-upstream_sha: "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca"
-lastmod: "2026-07-16T16:32:06-04:00"
-translated_at: "2026-07-17T06:09:44+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+lastmod: "2026-09-02T10:04:44-04:00"
+translated_at: "2026-09-04T11:09:38+09:00"
 translator: codex
 stale: false
 ---
@@ -40,6 +40,20 @@ stale: false
 Slack、Issue、マージリクエスト、ビデオ、メール、その他あらゆるフォーラムで気になることを見かけたら、その個人に対して 1:1 形式で敬意を持って直接伝えることをお勧めします。
 
 誰かのコミュニケーションや振る舞いについて提起すべき問題がある場合、チームメンバーは[コミュニケーションに関する懸念を提起する](/handbook/people-group/team-member-relations/#raising-communication-concerns)プロセスに従い、マネージャーに懸念を共有するか、希望すれば Team Member Relations (teammemberrelations@gitlab.com) に直接メールを送ってください。
+
+### 透明性のあるコミュニケーション {#transparent-communication}
+
+GitLab の成長に伴い、複数のチームが連携してプロセス、ポリシー、システムのスケールアップに取り組んでいます。また、リーダーシップの DRI は、チームメンバーに直接的または間接的な影響を与える意思決定を行うよう努めています。今後の変更について十分なコミュニケーションを確実に提供するため、以下のコミュニケーションマトリクスでは、変更の種類ごとに何を期待できるかについて、リーダーシップとチームメンバーの両方にガイダンスを提供します。
+
+| コミュニケーションの種類 | 理由の説明 | フィードバックの仕組み | 例 |
+|-----------|-------------|---------|---------|
+| **意思決定はすでに行われている** | SAFE の範囲内で、この意思決定を行った理由と「この意思決定を行うきっかけは何だったか」を説明する | フィードバックを提出できる Issue などへのリンクを提供しますが、近い将来に意思決定が変わるとは限らないことを理解してもらう | GitLab の新しい運用モデル |
+| **意図／提案の議論** | データがある場合はそれを用いて「なぜ」を詳しく説明します。「何を求めているのか、解決すべき問題、選択肢のすべて、さらに掘り下げるべきこと」、つまり相手が影響を及ぼせる範囲に基づいて何を期待するのかを含めます | フィードバックを提供できる Issue などへのリンクを提供します。フィードバックを収集する期限も共有し、意思決定プロセスの最新情報を提供します | Friends and Family を年末へ移動する（XYZ に関する問題が見られたため年末へ移動したいと考えており、これらの具体的でより焦点を絞った領域についてフィードバックを求めています） |
+
+### 直接コミュニケーションを取る {#communicate-directly}
+
+問題や Issue に取り組むときは、レポートラインを通じてやり取りするのではなく、サポートを必要とする相手と直接コミュニケーションを取ってください。コラボレーションする必要がある相手との直接的なコミュニケーションは、自分のマネージャー、その相手のマネージャー、または別の仲介者を通じてやり取りするより効率的です。
+必要なサポートを得られない場合は、マネジメントにエスカレーションしてください。全員が [Manager of One](/handbook/values/#managers-of-one) であり、自分自身のアサインメントを完了してレポートラインに知らせる必要がある場合もあることを忘れないでください。
 
 ### 生成 AI ツールを使うときのコミュニケーション {#communicating-when-using-generative-ai-tools}
 
@@ -154,7 +168,7 @@ GitLab では、意図的な透明性やオープンな対話への人々の参�
 
 これを行う際は、[信頼できる唯一の情報源](/handbook/company/culture/all-remote/handbook-first/)を作成しリンクしてください: 理想的には[ハンドブック](/handbook/about/handbook-usage/#why-handbook-first)、そうでなければエピック、Issue、または Google Doc です。メールや Slack メッセージが信頼できる唯一の情報源であるべきではありません。
 
-受信者が受け取っているはずのメールに言及するときは、見つけやすいように送信者と件名を参照してください。たとえば、「Jane Smith から件名『Training Seminar Details』のメールを受け取っているはずです」のように。
+受信者が受け取っているはずのメールに言及するときは、見つけやすく、受信者が正規のメールであることを簡単に確認できるよう、送信者と件名を参照してください。たとえば、「Jane Smith から件名『Training Seminar Details』のメールを受け取っているはずです」のように。
 
 #### 「これは既知ですか」と尋ねる {#asking-is-this-known}
 
@@ -782,7 +796,7 @@ GitLab には、効果的なコミュニケーションを確保するために�
 
 ## 文章スタイルのガイドライン {#writing-style-guidelines}
 
-GitLab のために外部向けまたはビジネス向けのコンテンツを作成するときは、[GitLab Content Style Guide](/handbook/marketing/brand-and-product-marketing/brand/content-style-guide/)を参照してください。技術コンテンツについては、[この単語リスト](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html)を参照できます。
+GitLab のために外部向けまたはビジネス向けのコンテンツを作成するときは、[GitLab Content Style Guide](/handbook/marketing/brand-experience/content-style-guide/)を参照してください。技術コンテンツについては、[この単語リスト](https://docs.gitlab.com/ee/development/documentation/styleguide/word_list.html)を参照できます。
 
 このリストは、GitLab における書面によるコミュニケーションのための追加のガイダンスを提供します:
 
@@ -814,7 +828,7 @@ GitLab のために外部向けまたはビジネス向けのコンテンツを�
 
 ### 日付と時刻のコミュニケーション {#communicating-dates-and-time}
 
-1. 外部向けコンテンツについては、[GitLab Content Style Guide](/handbook/marketing/brand-and-product-marketing/brand/content-style-guide/#dates-and-times)のガイダンスを参照してください。
+1. 外部向けコンテンツについては、[GitLab Content Style Guide](/handbook/marketing/brand-experience/content-style-guide/#dates-and-times)のガイダンスを参照してください。
 1. 社内向けコンテンツには、ISO 日付を使ってください: `yyyy-mm-dd`
 1. 月については `yyyy-mm` を使ってください。たとえば 1 月なら 2018-01 です。
 1. 会計年度や四半期との混同を防ぐため、年は CY18（決して 2018 ではなく）で、四半期は CY18-Q1 で参照してください。コンテキストから年が明らかな場合は Dec 4 を使ってもかまいませんが、12/4 はだめです。
@@ -823,7 +837,7 @@ GitLab のために外部向けまたはビジネス向けのコンテンツを�
    1. 「Q1」= 現在の会計年度の第 1 四半期です。ですから 2020 年 2 月 1 日には、「Q1」は 2020 年 2 月 1 日から 2020 年 4 月 30 日までの期間です。GitLab の Epic は暦年と暦四半期に従うことに注意してください。
    1. 将来または過去の年の四半期を参照するときは、上記の 2 つを組み合わせます: 「FY21-Q1」
    1. 財務データを提示するときは、会計年度を示すための注記を含めてください（例: 「Fiscal Year ending January, 31 'YYYY」）
-1. 時刻フォーマットのガイドラインについては、[GitLab Content Style Guide](/handbook/marketing/brand-and-product-marketing/brand/content-style-guide/#time-formatting)を参照してください。
+1. 時刻フォーマットのガイドラインについては、[GitLab Content Style Guide](/handbook/marketing/brand-experience/content-style-guide/#time-formatting)を参照してください。
 1. 全員が同じタイムゾーンで働いているわけではないことを覚えておいてください。あなたにとって朝でも、誰かにとっては夕方です。「3 時間前」や「今から 4 時間後」と言うか、タイムゾーン参照を含むタイムスタンプを使うようにしてください。
 1. 成果物が[地球上のどこか](https://en.wikipedia.org/wiki/Anywhere_on_Earth#:~:text=World%20map%20of%20time%20zones,it%20ends%20on%20Howland%20Island)の終わりに期限となることで構わない場合を除き、「EOD」や「end of day」（「COB」や「close of business」、「EOB」や「end of business」）を使わないでください。チームメンバーはタイムゾーンをまたいでコミュニケーションを取り、「end of day」は正確な日時を指定しません。何かを特定の時刻までに期限としたいときは、リクエストがいつまでに完了すべきかの[日付と時刻を伝えて](/handbook/communication/#communicating-dates-and-time)ください。たとえば: `Please review before 2023-06-10 5PM PT`。
 
@@ -850,9 +864,9 @@ GitLab では、コミュニケーションの効率を高めるために[ユビ
 
 プロジェクトやワーキンググループに明確で直接的な名前を付けてください。「Project Raven Working Group」より「CI Spend Reduction Working Group」を好んでください。
 
-人々が言葉からできる限り多くを推測できるようにしてください。たとえば、私たちの[サブスクリプションオプション](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers/)では、誰かが self-managed と GitLab.com のどちらを使っているか分かります。
+人々が言葉からできる限り多くを推測できるようにしてください。たとえば、私たちの[サブスクリプションオプション](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/)では、誰かが self-managed と GitLab.com のどちらを使っているか分かります。
 
-用語が、どのように、なぜかを明確に定義せずに重複しないようにしてください。たとえば、私たちの[ティア定義](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers/#definitions)をご覧ください。
+用語が、どのように、なぜかを明確に定義せずに重複しないようにしてください。たとえば、私たちの[ティア定義](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/#definitions)をご覧ください。
 
 人々が用語を短縮することで曖昧さを持ち込まないよう、用語を 1 語、多くても 2 語に保ってください。2 語を使うときは、人々が 2 番目の語を落としがちなので、最初の語をユニークにしてください。
 
@@ -993,6 +1007,7 @@ Note to table contributors:
 1. 文の始まりや「I」という語など、大文字が必要なすべての文字と単語が大文字になっていることを確認してください。
 1. 文が正しく句読点を打たれ、タイプミスが修正され、文法が訂正されるよう、メッセージを校正してください。非常に役立つ [Grammarly](https://www.grammarly.com/) ツールの使用を検討してください。このツールは、英語のネイティブスピーカーにも、英語を追加言語として使う人々にも優れています。
 1. すべてのメッセージと返信は、プロフェッショナルな結びの言葉（例: Best regards）、あなたの名前、署名ブロックで署名してください。
+1. チームメンバーに何らかのアクション（リンクをクリックする、ログインする、何かを提出する）を求めるメールを送信する場合は、送信者と件名に言及した短いメモも関連する Slack チャンネルに投稿してください。受信者がフィッシングを警戒するのは当然であり、そうしなければ確認の問い合わせが寄せられます。Slack への投稿により、そのメールが正規のものであることをすぐに確認できます。私たちは、クリックする前にメールの送信者を確認するというセキュリティのベストプラクティスを奨励したいと考えています。先回りして確認手段を提供することは、全員で良好なセキュリティ文化を築く助けになります。
 
 ## Slack
 
@@ -1327,14 +1342,14 @@ GitLab の連絡先情報の詳細を提供する必要がある場合は、参�
 
 オールリモートの組織では、効果的なコミュニケーションが知識、アイデア、情報を交換する鍵です。GitLab における効果的なコミュニケーションは:
 
-- [非同期](/handbook/company/culture/all-remote/asynchronous/)コミュニケーションを起点とし、パブリックな Issue、マージリクエスト、Slack チャンネルを通じて（DM よりも）[テキストでコミュニケーションを取る](/handbook/communication/#writing-style-guidelines)ことで、可能な限りオープンで透明性のある状態を保ちます。
+- [非同期](/handbook/communication/#asynchronous-communication)コミュニケーションを起点とし、パブリックな Issue、マージリクエスト、Slack チャンネルを通じて（DM よりも）[テキストでコミュニケーションを取る](/handbook/communication/#writing-style-guidelines)ことで、可能な限りオープンで透明性のある状態を保ちます。
 - オフラインの会話の結論を書き留め、[信頼できる唯一の情報源](https://docs.gitlab.com/development/documentation/styleguide/#documentation-is-the-single-source-of-truth-ssot)を確保することを重視します。
 - 必要なときに[ビデオを制作](/handbook/marketing/marketing-operations/youtube/)します。
 
 GitLab におけるコミュニケーションに関連するトピックについてスキルを向上させたり知識を広げたりしたい場合は、私たちのリソースをチェックしてください:
 
 - [テキストを通じて効果的かつ責任を持ってコミュニケーションを取る](/handbook/company/culture/all-remote/)
-- [非同期コミュニケーションを受け入れる](/handbook/company/culture/all-remote/asynchronous/)
+- [非同期コミュニケーションを受け入れる](/handbook/communication/#asynchronous-communication)
 
 **チームメンバーとして効果的なコミュニケーションを適用するスキルと行動**:
 

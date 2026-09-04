@@ -3,11 +3,11 @@ title: プロダクトプロセス
 description: >-
   プロダクト組織として、私たちは顧客が愛し価値を見出す製品を開発するための、柔軟でありながら簡潔な製品開発フレームワークを作ることに取り組んでいます。
 upstream_path: /handbook/product/product-processes/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:30:39+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T14:10:14+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 <!-- include omitted: includes/product/product-handbook-links.md -->
@@ -99,7 +99,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 
 - `#product`、`#s_`、`#g_`、`#f_` などのさまざまなプロダクトベースの Slack チャンネルでアップデートを共有する
 - 方向性やカテゴリの変更を #customer-success にクロスポストし、[ユースケース](/handbook/marketing/use-cases/) に影響する場合は `@cs-leadership` を認知のためにタグ付け
-- 方向性のアップデートについて議論する短いビデオを録画してカスタマーサクセスと共有する。効率的なコミュニケーションを促進するために [必要に応じて](/handbook/company/culture/all-remote/asynchronous/#gitlab-experts-advise-on-when-to-use-sync-vs-async) 同期ミーティングを使用する。
+- 方向性のアップデートについて議論する短いビデオを録画してカスタマーサクセスと共有する。効率的なコミュニケーションを促進するために必要に応じて同期ミーティングを使用する。
 - [Field Communications チームと協力して](/handbook/sales/field-communications/#field-communications-playbook)、Field (Sales、Customer Success、Channel & Alliances) チームに対してより大きな社内コミュニケーション計画／アプローチが必要かを判断する
 - 月次の方向性ページ更新のハイライトを集約し、組織全体のセクションレベルで共有する
 
@@ -220,7 +220,7 @@ GitLab.com にまだマージされていないコードや、まだ RC の一�
 
 ### 基礎要件 {#foundational-requirements}
 
-新機能について考えるとき、機能の機能要件 (何をするかを定義するもの) だけでなく、基礎要件 (どのように機能するかを定義するもの) も考慮する必要があります。最も高いレベルでは、基礎要件は、機能のパフォーマンス、スケーラビリティ、互換性、保守性、ユーザビリティ特性などの項目を定義します。基礎要件を最初から確立することは重要です。後で追加して期待値を変更したり、既存のワークフローを壊したりするよりもはるかに簡単だからです。私たちの [definition of done](https://docs.gitlab.com/development/contributing/merge_request_workflow/#definition-of-done) には、新しいコントリビューションの受け入れに必要な特定の考慮事項が含まれています。
+新機能について考えるとき、機能の機能要件 (何をするかを定義するもの) だけでなく、基礎要件 (どのように機能するかを定義するもの) も考慮する必要があります。最も高いレベルでは、基礎要件は、機能のパフォーマンス、スケーラビリティ、互換性、保守性、ユーザビリティ特性などの項目を定義します。基礎要件を最初から確立することは重要です。後で追加して期待値を変更したり、既存のワークフローを壊したりするよりもはるかに簡単だからです。私たちの [完了の定義](https://docs.gitlab.com/development/contributing/merge_request_workflow/#definition-of-done) には、新しいコントリビューションの受け入れに必要な特定の考慮事項が含まれています。
 
 基礎要件 (しばしば非機能要件と呼ばれる) の詳細なレビューについては、[このリソース](https://www.altexsoft.com/blog/non-functional-requirements/) を参照してください。
 
@@ -282,7 +282,7 @@ GitLab でステージをまたいで作業する詳細については、[この
 可用性、セキュリティ、機能速度の相対的な重要性と優先順位付けに関する [エンジニアリングハンドブックセクション](/handbook/engineering/development/principles/#prioritizing-technical-decisions) も参照してください。セキュリティ、データ損失、可用性に適切な焦点を当てていることを保証するために、PM は次のことを考慮する必要があります:
 
 - **各優先順位付けカテゴリの適切なラベルを追跡すること**: エンジニアリングマネージャーとこれらの Issue について議論するためのスタンディング項目を使用し、リリースを計画する前にあなたの領域の関連 Issue の影響を理解していることを確認してください。
-- **マージリクエストがレビュー準備ができたら品質に最適化すること**: これは、何かを本番にするためにショートカットをせず、エンジニアリングが [definition of done](https://gitlab.com/gitlab-org/gitlab-foss/blob/master/doc/development/contributing/merge_request_workflow.md#definition-of-done) を満たすのに十分な時間を持つこと - [高品質のコードレビュー](/handbook/engineering/workflow/code-review/) を含む - を意味します。
+- **マージリクエストがレビュー準備ができたら品質に最適化すること**: これは、何かを本番にするためにショートカットをせず、エンジニアリングが [完了の定義](https://gitlab.com/gitlab-org/gitlab-foss/blob/master/doc/development/contributing/merge_request_workflow.md#definition-of-done) を満たすのに十分な時間を持つこと - [高品質のコードレビュー](/handbook/engineering/workflow/code-review/) を含む - を意味します。
 
 ##### 機能変更ロック（FCL）
 
@@ -290,7 +290,7 @@ GitLab でステージをまたいで作業する詳細については、[この
 
 #### 優先順位付けセッション {#prioritization-sessions}
 
-PM が計画を立てる手助けとして、ステージグループの安定したカウンターパートは、優先順位付けセッションに参加できます。これらは主に、PM がさまざまな計画ホライズンに対してより情報に基づいた優先順位付け決定をするための [internal sensing mechanism](/handbook/product/product-processes/sensing-mechanisms/#internal) として機能します。通常、チームは _プロダクトリリース_ ホライズンに焦点を当てますが、_FY テーマ_ または _戦略_ ホライズンに焦点を当てることもできます。このグループのエクササイズは、チームの士気を高め、コミュニケーションと共感を向上させ、個人の視点を広げます。さらに、チームをつなげ、仕事について議論する、よりインフォーマルで楽しい方法にもなり得ます。
+PM が計画を立てる手助けとして、ステージグループの安定したカウンターパートは、優先順位付けセッションに参加できます。これらは主に、PM がさまざまな計画ホライズンに対してより情報に基づいた優先順位付け決定をするための [内部センシングメカニズム](/handbook/product/product-processes/sensing-mechanisms/#internal) として機能します。通常、チームは _プロダクトリリース_ ホライズンに焦点を当てますが、_FY テーマ_ または _戦略_ ホライズンに焦点を当てることもできます。このグループのエクササイズは、チームの士気を高め、コミュニケーションと共感を向上させ、個人の視点を広げます。さらに、チームをつなげ、仕事について議論する、よりインフォーマルで楽しい方法にもなり得ます。
 
 これらのセッションの成果物は、2 つの重み付けされた基準に基づいて項目セットの相対的な優先度を示す [優先度マトリックス](https://www.nngroup.com/articles/prioritization-matrices/) です。一般的には、基準は _重要性_ と _実現可能性_ で、それぞれマトリックスの軸として可視化されます。計画ホライズンや目標に応じて基準を変更できます。セッションがどのように機能するかをよりよく理解するには、サンプル [mural](https://app.mural.co/t/gitlab2474/m/gitlab2474/1644233739498/018f4f87c17c9a8e7ecf1d8ce2834a72c4d8e34b) および [セッションの録画](https://youtu.be/xgeXUEzOpUY) を参照してください。
 
@@ -455,7 +455,7 @@ PM が Infradev Issue を特定し優先順位付けするために参照でき�
 
 #### エンタープライズ顧客のニーズ
 
-SaaS の採用に興味があるエンタープライズ顧客は、製品を使用するために共通のハード要件を持つことがあります。例えば、大企業はセキュリティチームが GitLab.com の使用に同意する前に、Audit Logs などの特定のセキュリティ関連機能が利用可能であることを必要とする場合があります。これは単に機能だけでなく、私たちが機能をどこにどのように適用するかについてもあり得ます。彼らがエンタープライズ規模で GitLab インスタンスを管理できるようにするためです。例えば、権限管理と共有設定は、100 または 1000 のプロジェクトと、これらのシステム全体の管理タスクを実行する少数の人員しかいない可能性のある大規模組織の要件を満たすには、プロジェクトからではなくトップダウンで最初に実装することが最善です。GitLab.com のエンタープライズ採用をより促進するため、採用への「nice to have」機能よりも、採用への共通の「hard-blockers」を優先順位付けします。PM は顧客インタビューを使って、SaaS の採用へのハードブロッカーである Issue と、後で提供できるより「nice to have」の機能を絞り込むことができます。
+SaaS の採用に興味があるエンタープライズ顧客は、製品を使用するために共通のハード要件を持つことがあります。例えば、大企業はセキュリティチームが GitLab.com の使用に同意する前に、Audit Logs などの特定のセキュリティ関連機能が利用可能であることを必要とする場合があります。これは単に機能だけでなく、私たちが機能をどこにどのように適用するかについてもあり得ます。彼らがエンタープライズ規模で GitLab インスタンスを管理できるようにするためです。例えば、権限管理と共有設定は、100 または 1000 のプロジェクトと、これらのシステム全体の管理タスクを実行する少数の人員しかいない可能性のある大規模組織の要件を満たすには、プロジェクトからではなくトップダウンで最初に実装することが最善です。GitLab.com のエンタープライズ採用をより促進するため、採用に「あれば望ましい」機能よりも、採用に共通する「重大なブロッカー」を優先順位付けします。PM は顧客インタビューを使って、SaaS の採用へのハードブロッカーである Issue と、後で提供できる「あれば望ましい」機能を絞り込むことができます。
 
 ハード採用ブロッカーを追跡するには、[GitLab-Org](https://gitlab.com/groups/gitlab-org/-/boards/2037713?label_name%5B%5D=GitLab.com%20Enterprise%20Readiness) および [GitLab-com](https://gitlab.com/groups/gitlab-com/-/boards/2037722?label_name%5B%5D=GitLab.com%20Enterprise%20Readiness) グループ内で ~"GitLab.com Enterprise Readiness" ラベルを使用してください。
 
@@ -732,7 +732,7 @@ View、Create、Update、Remove、Delete はユーザーがソフトウェアと
 
 しばしば、機能の構築基準は暗黙的です。テスト駆動開発のマインドセットを使い、ソフトウェアを構築する前に必要なテストと結果を書くことが役立つことがあります。これらのテストを書くことで、新機能を構築する際に開発チームが満たす必要のある異なる基準を発見できます。これらのテストをアウトラインしたら、それらを使って機能をテストごとに小さな部分にさらに分割できる可能性があります。いくつかの例:
 
-- データがないとき (empty/null state) のデフォルトの動作は何か？
+- データがないとき (空／null 状態) のデフォルトの動作は何か？
 - 機能の一部として発生する自動アクションやイベントはあるか？それらを書き留め、自動化を追加する前にユーザーが手動で実行できるものを特定します。
 - 異なるロールのユーザーは独自の体験を持つか？これらの体験の 1 つを優先して最初に構築できるか？(例: guest、user、developer、maintainer)。
 - ユーザーは情報のビューをカスタマイズできるようにしたいか？提供したいすべてのカスタマイズを定義し、一度に 1 つずつ構築します (例: トグルのオン／オフ、フィルター、ソート、検索)。
@@ -746,7 +746,7 @@ View、Create、Update、Remove、Delete はユーザーがソフトウェアと
 デザインを反復的にリリースできる部分に分解することは、何を構築しているかによります。プロセスをガイドするのに役立ついくつかの質問:
 
 - より速く進めるために再利用できる既存のコンポーネントは何か？
-- 「extra styling」とは何か？必要な情報を平易に表示し、後で詳細を追加する方法はあるか？
+- 「追加のスタイリング」とは何か？必要な情報を平易に表示し、後で詳細を追加する方法はあるか？
 - UX を魅力的にするためにデザインに多くのインタラクションがあるか？それらを別の Issue に分け、反復的に追加できるか？(例: ホバー状態、ドラッグ＆ドロップ、トグル、情報を表示／非表示にするオプション、折りたたみ／展開など)
 
 #### リファクタリング
@@ -860,13 +860,13 @@ Field チームに影響するかもしれない製品アナウンスやロー�
 
 - GitLab.com の Epic、Issue、マージリクエストでユーザーとエンゲージする。
 - [顧客と直接ミーティング](#customer-meetings) する。
-- [Advisory および Executive customer programs](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/#executive-advisory-board-eab-program) に参加する。
+- [アドバイザリーおよびエグゼクティブカスタマープログラム](/handbook/marketing/growth-marketing/growth-community-programs/#executive-advisory-board-eab-program) に参加する。
 - GitLab を使用している GitLab チームメンバーと話す。
 - 他の PM および [Product leadership](/handbook/product/product-leaders/product-leadership/) と話して、自分のステージのプロダクト方向性を GitLab の残りの部分と整合させる。
 
 新しい PM がステージ方向性、カテゴリ戦略、計画が最新で重要なステークホルダーに見えるようにするためのガイダンス:
 
-- 6 か月ごとに [Advisory および Executive customer programs](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/#executive-advisory-board-eab-program) からフィードバックを求める。
+- 6 か月ごとに [アドバイザリーおよびエグゼクティブカスタマープログラム](/handbook/marketing/growth-marketing/growth-community-programs/#executive-advisory-board-eab-program) からフィードバックを求める。
 - 月に 1 回マネージャーに計画を提示する。
 - 安定したカウンターパートに計画とステージ／カテゴリ戦略を提示する
 - 2 週間に 1 回 [顧客ミーティング](#customer-meetings) でステージ戦略と計画を提示する。
@@ -984,9 +984,9 @@ Zendesk アカウントを持っていない場合は、[ライトエージェ�
 
 **非ユーザー** はしばしば GitLab ユーザーよりも重要です。彼らは、最終的に彼らを GitLab ユーザーにするかもしれないアイデアを思いつくために必要な批判的な視点を提供できます。最良の非ユーザーは、GitLab に切り替える計画すらない人々です。これらの人々には地元のミートアップ、カンファレンス、または Hacker News のようなオンライングループでリーチできます。そのような場合、その場でユーザーをインタビューしようとせず、誰も気を散らされない別のミーティングを組織し、二人とも準備して到着できるようにします。
 
-#### Advisory および Executive customer program ミーティング
+#### アドバイザリーおよびエグゼクティブカスタマープログラムのミーティング {#advisory-and-executive-customer-program-meetings}
 
-高度にエンゲージした顧客から直接フィードバックを得る特定の繰り返しの機会は、[Advisory および Executive customer programs](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/#executive-advisory-board-eab-program) を通じてあります。
+高度にエンゲージした顧客から直接フィードバックを得る特定の繰り返しの機会は、[アドバイザリーおよびエグゼクティブカスタマープログラム](/handbook/marketing/growth-marketing/growth-community-programs/#executive-advisory-board-eab-program) を通じてあります。
 これらのミーティングであなたのステージを発表するよう依頼されるかもしれません。そうする際のいくつかのガイドラインは以下の通りです:
 
 これらのミーティングであなたのステージまたは特定の製品オファリングを発表するよう依頼されるかもしれません。発表のためのいくつかのガイドラインは以下の通りです:
@@ -1292,7 +1292,7 @@ Life Support PM の役割を行うときは、以下のみが期待されます:
 - アナリストのエンゲージメント
 - アドバイザリーおよびエグゼクティブカスタマープログラムの発表
 
-### Build vs "Buy"
+### 構築か「購入」か {#build-vs-buy}
 
 プロダクトマネージャーとして、GitLab が特定の問題の解決策をエンジニアリングすべきか、ニーズに対処するために既製のソフトウェアを使用すべきかについての決定を行う必要があるかもしれません。
 
@@ -1316,18 +1316,18 @@ Life Support PM の役割を行うときは、以下のみが期待されます:
 
 #### オープンソースソフトウェアの評価 {#evaluating-open-source-software}
 
-build vs "buy" の決定でオープンソースソフトウェアを検討する際、私たちは次の一般的な基準を利用してソフトウェアを統合するかどうかを決定します:
+構築か「購入」かを決定する際にオープンソースソフトウェアを検討する場合、私たちは次の一般的な基準を利用してソフトウェアを統合するかどうかを決定します:
 
 - **互換性** - そのソフトウェアは [互換性のあるオープンソースライセンス](https://docs.gitlab.com/development/licensing/#acceptable-licenses) を利用していますか？
 - **実行可能性** - そのソフトウェアは現在の状態で、検討中のユースケースに対して実行可能ですか？
 - **速度** - そのソフトウェアでのイテレーションの速度は高いか？新しい機能や機能拡張が素早く提案され完了するか？セキュリティパッチが定期的に適用されるか？
 - **コミュニティ** - ソフトウェアに貢献する多様なコミュニティがあるか？ソフトウェアはより広いコミュニティによって統治されているか、それとも単一の企業エンティティによって統治されているか？メンテナーはコミュニティからのフィードバックに定期的に対処するか？
 
-## Analytics instrumentation ガイド
+## アナリティクス計測ガイド {#analytics-instrumentation-guide}
 
-[Analytics Instrumentation Guide](/handbook/product/product-processes/analytics-instrumentation-guide/) を参照してください。
+[アナリティクス計測ガイド](/handbook/product/product-processes/analytics-instrumentation-guide/) を参照してください。
 
-## ローンチ後の Instrumentation ガイド
+## ローンチ後の計測ガイド {#post-launch-instrumentation-guide}
 
 **目標:**
 より優れた製品インサイトを提供するために、私たちのオファリング全体で製品の計測を増やすこと。過去の機能ローンチから、何の機能が計測されていて計測が必要かを後ろ向きに評価する必要があります。ローンチ後の実装により、現在キャプチャされていない可能性のある機能の使用と採用へのインサイトをよりよく可視化できます。
@@ -1358,7 +1358,7 @@ build vs "buy" の決定でオープンソースソフトウェアを検討す�
      - Incomplete - 一部計測されているが完了していない
      - None - 計測なし - 計測が必要
      - Not needed - 計測は不要
-1. Analytics 計測
+1. アナリティクス計測
    - PM/PDI: カテゴリ計測の監査が完了したら。赤 (実装が必要) または黄 (一部計測、完了していない) でマークされたカテゴリについて、
    - PM/EM: ラベル `analytics instrumentation` を持ち、[usage data instrumentation テンプレート](https://gitlab.com/gitlab-org/gitlab/-/issues/new?issuable_template=Usage+Data+Instrumentation) を活用する計測 Issue を作成します。
 

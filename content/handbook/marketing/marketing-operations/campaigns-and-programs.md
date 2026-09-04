@@ -2,9 +2,9 @@
 title: "キャンペーンとプログラム"
 description: "Campaign は、マーケティング施策の取り組みを追跡するために使用します"
 upstream_path: /handbook/marketing/marketing-operations/campaigns-and-programs/
-upstream_sha: 5ea6b5d6141bc938b1c87b63ca72396fbfe19b58
-lastmod: "2026-07-10T10:07:39-06:00"
-translated_at: "2026-07-11T06:05:57+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-04T13:59:00+09:00"
 translator: claude
 stale: false
 ---
@@ -345,7 +345,7 @@ _Bizible:_ 意図したとおり、この Campaign タイプは Bizible タッ�
 GitLab がホストおよび開催するあらゆるウェブキャスト。ウェブキャストを実施するグループはいくつかあります。セットアップの追加詳細については、それぞれの専用ページを参照してください。
 
 - [Campaign webcast](/handbook/marketing/virtual-events/webcasts/#campaign-webcasts)
-- [Field Marketing webcast](/handbook/marketing/field-marketing/field-marketing-owned-virtual-events/#webcasts-1)
+- [Field Marketing ウェブキャスト](/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events/#webcasts-1)
 - [Goldcast webcast](/handbook/marketing/marketing-operations/goldcast)
 
 **Bizible:** これは _オンライン_ の Bizible チャネルおよび _オフライン_ チャネルとして追跡されます。登録プロセスを私たちが所有しているため、誰かがウェブキャストに登録するたびに、ランディングページ上に置かれた Bizible スニペットに基づいて TP が作成され、さらに success/responded ステータスを持つ Campaign メンバーについては別の TP が作成されます。
@@ -366,7 +366,7 @@ GitLab がホストおよび開催するあらゆるウェブキャスト。ウ�
 
 参加者が GitLab 内での実際のユースケースのアジェンダに沿ってガイドされる、対面またはバーチャルのワークショップ。
 
-ロジスティクスのセットアップと詳細については、[こちら](/handbook/marketing/field-marketing/field-marketing-owned-virtual-events/#virtual-workshops-1)を参照してください。
+ロジスティクスのセットアップと詳細については、[こちら](/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events/#virtual-workshops-1)を参照してください。
 **Bizible:** これは _オフライン_ の Bizible チャネルとして追跡されます。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
 プログラムタイプは、`dietary restriction`（食事制限）関連のフィールドをクリアするスマートキャンペーンに含まれています。イベントのプログラムステータスが記録されてから 7 日後に、フィールドは自動的にクリアされます。
@@ -404,7 +404,7 @@ SFDC キャンペーンには、一般的な必須フィールドのセットが
   - `Is an Alliance Partner involved?` を更新します - 「No」の場合は空白のままで構いません
     - Yes の場合は `Alliance Partner Name` を追加します
   - `Will there be MDF Funding` を更新します - 「No」の場合は空白のままで構いません
-    - Yes の場合は、このフィールドで `MDF Request` をルックアップします: [詳細な手順](/handbook/marketing/channel-marketing/mdf-operations-process/#step-3-add-mdf-request-on-the-salesforce-campaign)
+    - Yes の場合は、このフィールドで `MDF Request` をルックアップします: [詳細な手順](/handbook/marketing/growth-marketing/partner-and-industry-marketing/mdf-operations-process/#step-3-add-mdf-request-on-the-salesforce-campaign)
   - 該当する場合は `Integrated Campaign` を更新します
   - 該当する場合は `GTM Motion` を更新します
   - `Sales Dev Invite Support` がある場合 - このボックスをチェックします。それ以外の場合は空白のままにします
@@ -526,7 +526,7 @@ Allocadia ユーザーで、私たちの Allocadia > Marketo > SFDC 同期を使
 
 一部のテンプレートは `in-person`（対面）と `virtual events`（バーチャルイベント）の両方に使用されている点に注意してください。これらのテンプレートには `Hybrid template` というマークが付いています。これらのテンプレートでは、追加の Campaign 情報が名前に表示されるため、命名規則がわずかに異なります。プログラムに名前を付ける際、`EventType` は `Virtual`、`In-Person`、または `Hybrid`（イベントが対面とバーチャルの両方になる場合）のいずれかに置き換えます。
 
-これが channel partner を含むプログラムのセットアップである場合は、その[セットアップページ](/handbook/marketing/channel-marketing/#joint-gitlab-and-partner-campaigns)の指示にも従う必要があります。開始するには、引き続き以下のリストからプログラムをクローンします。
+これがチャネルパートナーを含むプログラムのセットアップである場合は、その[セットアップページ](/handbook/marketing/growth-marketing/partner-and-industry-marketing/#joint-gitlab-and-partner-campaigns)の指示にも従う必要があります。開始するには、引き続き以下のリストからプログラムをクローンします。
 
 #### Marketo プログラムをクローンする方法
 
@@ -544,11 +544,11 @@ Allocadia ユーザーで、私たちの Allocadia > Marketo > SFDC 同期を使
 
 ##### Channel MDF Campaign
 
-Channel MDF は、Channel Marketing チームが管理する、パートナーが開始した Campaign の 50% を GitLab がカバーする場合です。生成されたすべてのリードは Channel Partner に帰属し、Partner Queue のオーナーシップの下にあります。Channel MDF には専用の Marketo テンプレートがあります。Campaign のセットアップ手順については[このページ](/handbook/marketing/channel-marketing/mdf-operations-process/)を参照してください。
+Channel MDF は、Partner Marketing チームが管理する、パートナーが開始した Campaign の 50% を GitLab がカバーする場合です。生成されたすべてのリードは Channel Partner に帰属し、Partner Queue のオーナーシップの下にあります。Channel MDF には専用の Marketo テンプレートがあります。Campaign のセットアップ手順については[このページ](/handbook/marketing/growth-marketing/partner-and-industry-marketing/mdf-operations-process/)を参照してください。
 
 #### Joint GitLab/Partner Campaign
 
-Joint GitLab/Partner キャンペーンは、GitLab Field Marketing チームがマーケティング Campaign を全額出資し、管理する場合です。パートナーがソースとなったリードは channel partner にルーティングされますが、BDR/SDR が積極的にリードに取り組んでいる場合は GitLab のオーナーシップにとどまります。パートナーがリードを受け取ったものの、30 日以内に正式に受諾しない（share status を更新しない）場合、私たちのシステムは自動的にそのリードをリコールし、「Recycled」とマークして、GitLab のナーチャープログラムに戻します。以下の各 Campaign タイプの Campaign セットアップ手順に従ってください。Joint/Partner キャンペーンの詳細については[こちら](/handbook/marketing/channel-marketing/#joint-gitlab-and-partner-campaigns)を参照してください - これらのステップが完了していることを確認してください。
+Joint GitLab/Partner キャンペーンは、GitLab Field Marketing チームがマーケティング Campaign を全額出資し、管理する場合です。パートナーがソースとなったリードはチャネルパートナーにルーティングされますが、BDR/SDR が積極的にリードに取り組んでいる場合は GitLab のオーナーシップにとどまります。パートナーがリードを受け取ったものの、30 日以内に正式に受諾しない（共有ステータスを更新しない）場合、私たちのシステムは自動的にそのリードをリコールし、「Recycled」とマークして、GitLab のナーチャープログラムに戻します。以下の各 Campaign タイプの Campaign セットアップ手順に従ってください。Joint/Partner キャンペーンの詳細については[こちら](/handbook/marketing/growth-marketing/partner-and-industry-marketing/#joint-gitlab-and-partner-campaigns)を参照してください - これらのステップが完了していることを確認してください。
 
 ##### Hyperscaler Campaign
 
@@ -577,7 +577,7 @@ Hyperscaler が出資する Hyperscaler キャンペーンは、Marketo の Hype
 - Speaking Session - `Hybrid template`: [YYYYMMDD_SpeakingSession_EventType_Template](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME5092A1)
 - Vendor Arranged Meetings (1:1 meetings) - `Hybrid template`: [YYYYMMDD_ArrangedMeetingsVendorName_Region_EventType_template](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG5698A1)
 - GitLab Hosted Workshops - `Hybrid template`:
-[バーチャルワークショップについては、virtual workshop set-up セクションの指示に従ってください。](/handbook/marketing/field-marketing/field-marketing-owned-virtual-events/#virtual-workshop-logistical-set-up) 対面ワークショップは同様のセットアップを利用しますが、Zoom 要件は含みません。以下にリストされていないワークショップをセットアップする場合でも、これらのテンプレートのいずれかをバックエンドのセットアップに利用し、その後[コピードキュメント](https://docs.google.com/document/d/1j43mf7Lsq2AXoNwiygGAr_laiFzmokNCfMHi7KNLjuA/edit#heading=h.tl82wncgutxu)を使用して、必要なすべてのコピー調整を示すことができます（セットアッププロセス中にベースラインの Marketo トークンも更新します）。
+[バーチャルワークショップについては、バーチャルワークショップのセットアップセクションの指示に従ってください。](/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events/#virtual-workshop-logistical-set-up) 対面ワークショップは同様のセットアップを利用しますが、Zoom 要件は含みません。以下にリストされていないワークショップをセットアップする場合でも、これらのテンプレートのいずれかをバックエンドのセットアップに利用し、その後[コピードキュメント](https://docs.google.com/document/d/1j43mf7Lsq2AXoNwiygGAr_laiFzmokNCfMHi7KNLjuA/edit#heading=h.tl82wncgutxu)を使用して、必要なすべてのコピー調整を示すことができます（セットアッププロセス中にベースラインの Marketo トークンも更新します）。
   - Project Management: [YYYYMMDD_Workshop_ProjectManagement_EventType](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME6536A1)
   - Security: [YYYYMMDD_Workshop_SecurityWorkshop_EventType](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME6521A1)
   - CI Workshop: [YYYYMMDD_Workshop_CI_EventType](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/ME6807A1)

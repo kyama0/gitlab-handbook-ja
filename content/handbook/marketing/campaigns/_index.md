@@ -3,11 +3,11 @@ title: "統合キャンペーン"
 description: "GitLab マーケティングハンドブック: 統合キャンペーン"
 twitter_image: '/images/tweets/handbook-marketing.png'
 upstream_path: /handbook/marketing/campaigns/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T00:00:00Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T13:29:37+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 統合キャンペーンの概要 {#integrated-campaigns}
@@ -187,7 +187,7 @@ _以下のリストには、Campaigns、Product Marketing、Developer Advocacy�
 <!-- DO NOT CHANGE THIS ANCHOR -->
 
 - **[FY23 統合キャンペーンはこちら>>](https://gitlab.com/groups/gitlab-com/marketing/-/epics/2851)**
-- **[FY22 統合キャンペーンと GTM モーションはこちら >>](/handbook/marketing/plan-fy22/)**
+- **FY22 統合キャンペーンと GTM モーションはこちら**
 - **[FY21 統合キャンペーンはこちら >>](https://gitlab.com/groups/gitlab-com/marketing/-/epics/749)**
 
 以下のグローバル統合キャンペーンは、Marketing Campaigns チームが Digital Marketing、Developer Advocacy、Product Marketing などと協力して継続的に最適化しています。これらのキャンペーンバンドルは、すべてのマーケティングチャネルと戦術全体で一貫した整合性のあるメッセージングとアプローチを適用するためにマーケティング内のすべてのチームによって活用されます。
@@ -257,10 +257,10 @@ _以下のリストには、Campaigns、Product Marketing、Developer Advocacy�
 - [キャンペーンコアチームメンバー](https://gitlab.com/groups/gitlab-com/marketing/-/epics/2850#busts_in_silhouette-campaign-core-team)
 - [現在/計画中のコンテンツとイベント](https://gitlab.com/groups/gitlab-com/marketing/-/epics/2850#fy23-new-planned-content-events)
 - [GitLab の Epic](https://gitlab.com/groups/gitlab-com/marketing/-/epics/2850)
-- [ハンドブック: CI ソリューションリソース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/)
-- [ハンドブック: CD ソリューションリソース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/)
-- [ハンドブック: CI メッセージハウス](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/message-house/)
-- [ハンドブック: CD メッセージハウス](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/message-house/)
+- [ハンドブック: CI ソリューションリソース](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/)
+- [ハンドブック: CD ソリューションリソース](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/cd/)
+- [ハンドブック: CI メッセージハウス](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/message-house/)
+- [ハンドブック: CD メッセージハウス](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/cd/message-house/)
 - [ウェブサイト: CI ソリューションページ](https://about.gitlab.com/solutions/continuous-integration/)
 - [ウェブサイト: CI ソリューションページ](https://about.gitlab.com/stages-devops-lifecycle/continuous-delivery/)
 - [2022-04-07 CI/CD キャンペーンレビューデック](https://docs.google.com/presentation/d/1mqYScmF1bjON0PsjfurmsChcVdCkMsjkDvTK5YyOlIQ/edit#slide=id.g5e411f22b2_0_0) - GitLab チームメンバーのみ
@@ -283,8 +283,8 @@ _以下のリストには、Campaigns、Product Marketing、Developer Advocacy�
 - [現在/計画中のコンテンツとイベント](https://gitlab.com/groups/gitlab-com/marketing/-/epics/2858#fy23-new-planned-content-events)
 - [キャンペーンコアチームメンバー](https://gitlab.com/groups/gitlab-com/marketing/-/epics/2858#busts_in_silhouette-campaign-core-team)
 - [GitLab の Epic](https://gitlab.com/groups/gitlab-com/marketing/-/epics/2858)
-- [ハンドブック: DevOps プラットフォームソリューションリソース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/)
-- [ハンドブック: DevOps プラットフォームメッセージハウス](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/message-house/)
+- [ハンドブック: DevOps プラットフォームソリューションリソース](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/)
+- [ハンドブック: DevOps プラットフォームメッセージハウス](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/message-house/)
 - [ウェブサイト: DevOps プラットフォームソリューションページ](https://about.gitlab.com/solutions/devops-platform/)
 - [2022-04-05 DevOps プラットフォームキャンペーンレビューデック](https://docs.google.com/presentation/d/1SaUSVSMr2vviMtZ6B30ld-or1bd4TuUjMn0EPFWT1QU/edit#slide=id.g5e411f22b2_0_0) - GitLab チームメンバーのみ
 - [2022-10-28 DevOps プラットフォームキャンペーンレビューデック](https://docs.google.com/presentation/d/1yGif0bLL2xiC_fFUVzM4eSRcU9g-aOkqpPVAElby1KY/edit#slide=id.gaf9c1b1f24_0_0) - GitLab チームメンバーのみ
@@ -303,7 +303,7 @@ _以下のリストには、Campaigns、Product Marketing、Developer Advocacy�
 
 - [FY23 キャンペーンフローの FigJam>>](https://www.figma.com/file/OuFSfs8Eb1DRepmDxG6OKj/DevOps-GTM-Campaign-Flow-FY23_2023-08-22_10-36-34?type=whiteboard&t=elKOAakWTl8snIYW-1)
 - [戦術的な Issue を含む Epic](https://gitlab.com/groups/gitlab-com/marketing/-/epics/743)
-- [ソリューションリソース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/)
+- [ソリューションリソース](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/)
 - [キャンペーンレビュー 2021-07-26](https://docs.google.com/presentation/d/1gPMLjIRPNOCt8DqHUWYdwxW2tNH528qg_YbmZaDYzl8/edit#slide=id.g5e411f22b2_0_0) - GitLab チームメンバーのみ
 - [SDR & Sales イネーブルメント Epic](https://gitlab.com/groups/gitlab-com/marketing/-/epics/874)
 - [ライブランディングページ](https://about.gitlab.com/solutions/security-compliance/)

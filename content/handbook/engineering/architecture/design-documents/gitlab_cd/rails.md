@@ -6,9 +6,9 @@ authors: [ "@josephburnett" ]
 owning-stage: "~devops::deploy"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/gitlab_cd/rails/
-upstream_sha: "1c5f183add4a3220f2aa77e0c98565c4fad645e2"
-lastmod: "2026-07-17T15:36:43+12:00"
-translated_at: "2026-07-18T06:20:49+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+lastmod: "2026-09-03T12:22:36+01:00"
+translated_at: "2026-09-04T11:43:17+09:00"
 translator: codex
 stale: false
 ---
@@ -68,6 +68,9 @@ erDiagram
     cd_rollout_environments ||--o{ cd_deployments : "one per service"
     cd_services ||--o{ cd_deployments : "actuated for"
     cd_rollouts ||--o{ cd_rollout_transitions : "immutable history"
+    cd_rollouts ||--o{ cd_rollout_steps : "step tree"
+    cd_rollout_environments ||--o{ cd_rollout_steps : "steps for this env"
+    cd_rollout_steps ||--o{ cd_rollout_transitions : "gate-opening step"
     cd_deployments ||--o{ cd_deployment_transitions : "immutable history"
     cd_services ||--o{ cd_service_environment_healths : "latest health"
     cd_environments ||--o{ cd_service_environment_healths : "per environment"
@@ -164,6 +167,21 @@ erDiagram
         timestamptz started_at
         timestamptz finished_at
     }
+    cd_rollout_steps {
+        bigint id PK
+        bigint organization_id FK "shard"
+        bigint rollout_id FK
+        bigint rollout_environment_id FK "nullable"
+        smallint state "pending|running|awaiting_approval|approved|rejected|success|failed|skipped|cancelled; literal state, not a derived gate (no per-step journal)"
+        text path UK "UNIQUE(rollout_id, path); hierarchical step address"
+        text parent_path "nullable; NULL for top-level steps"
+        text step_type "pipeline step kind (driver-invariant)"
+        text name "nullable"
+        text error "nullable"
+        jsonb params "nullable; step-specific config"
+        timestamptz started_at
+        timestamptz finished_at
+    }
     cd_deployments {
         bigint id PK
         bigint organization_id FK "shard"
@@ -184,12 +202,14 @@ erDiagram
         bigint id PK
         bigint organization_id FK "shard"
         bigint rollout_id FK
+        bigint rollout_step_id FK "nullable; step a gate-opening transition was opened for"
         smallint from_state "nullable"
         smallint to_state
         text event "verb"
-        text principal_type "user|agent|policy|schedule|system"
-        bigint principal_id
-        text reason
+        text principal "polymorphic actor ref, e.g. user:1234"
+        text on_behalf_of "nullable; human ultimately responsible, if composite identity"
+        text reason "nullable; why the event/gate was requested"
+        text resolution_reason "nullable; why a gate was approved or rejected"
         text triggered_by "upstream cause ref"
         timestamptz created_at "append-only"
     }
@@ -228,6 +248,7 @@ erDiagram
 - **Environment** — [ティア](#environment-tiers)を持つ名前付きのデプロイメントターゲット（staging、production-eu、…）。Deploy Driver をバインドします。Organization が所有します。
 - **Rollout** — Version Set を 1 つ以上の Environment にわたってプロモートすること。変更と監査のユニットです。1 つの Rollout は、Version Set を環境から環境へと完了するまで移動させる 1 つの AutoFlow ワークフローによって駆動されます。詳細は[後述](#rollouts-are-immutable-change-records)。
 - **Rollout Environment** — Rollout 内の *1 つの* Environment に Version Set が着地すること。その環境のピン留めされたドライバーバインディング、その移行元の Version Set、そしてプロモーション順序におけるその位置を保持します。
+- **Rollout Step** — Rollout のフラット化されたパイプライン内のステップ（stage、またはその中の leaf step）で、階層的な `path` によって指定されます。自身のライフサイクルを `state` カラムで追跡します。このカラムは、Rollout レベルの[ゲート](#the-transition-journal-is-the-system-of-record)とは異なり、`awaiting_approval`/`approved`/`rejected` をリテラルな状態として直接組み込みます。Step にはそれらを導出する独自の遷移ジャーナルがありません。
 - **Deployment** — Rollout Environment 内の 1 つの Service をアクチュエートすること。その Service の M ソースの M バージョン（Pod の M コンテナ）を担います。Service ごとの状態とヘルスのユニットです。
 - **Flow Definition** — パイプライン。Application ごとのバージョン管理されたドキュメントで、キャンバスで作成されます。
 - **Application Link** — Application 上の外部参照（ランブック、ダッシュボード、ドキュメントなど）で、概要ページに表示されます。
@@ -352,6 +373,23 @@ erDiagram
 | `started_at` | `timestamptz` | |
 | `finished_at` | `timestamptz` | |
 
+**`cd_rollout_steps`**
+
+| カラム | 型 | 備考 |
+|---|---|---|
+| `organization_id` | bigint FK | シャードキー |
+| `rollout_id` | bigint FK | → `cd_rollouts` |
+| `rollout_environment_id` | bigint FK | → `cd_rollout_environments`; NULL 可 |
+| state | `smallint` | 状態機械: `pending` → `running`（または承認ステップでは `awaiting_approval`）→ 終端状態（`success`、`failed`、`skipped`、`cancelled`）。承認ステップは `approved`/`rejected` も通過する。Rollout レベルのゲートとは異なり、これらはリテラルな状態であり、Step にはそれらを導出する独自の遷移ジャーナルがない |
+| path | text | 階層的なステップアドレス; `UNIQUE(rollout_id, path)` |
+| `parent_path` | text | NULL 可。トップレベル（stage）ステップでは NULL |
+| `step_type` | text | パイプラインステップの種類（ドライバー不変） |
+| name | text | NULL 可 |
+| error | text | NULL 可 |
+| params | `jsonb` | NULL 可。ステップ固有の設定 |
+| `started_at` | `timestamptz` | |
+| `finished_at` | `timestamptz` | |
+
 **`cd_deployments`**
 
 | カラム | 型 | 備考 |
@@ -378,12 +416,14 @@ erDiagram
 |---|---|---|
 | `organization_id` | bigint FK | シャードキー |
 | `rollout_id` | bigint FK | → `cd_rollouts` |
+| `rollout_step_id` | bigint FK | → `cd_rollout_steps`; NULL 可。ゲート開始遷移が開始された対象ステップ |
 | `from_state` | `smallint` | NULL 可（作成時） |
 | `to_state` | `smallint` | |
 | event | text | 動詞: start, pause, resume, `request_approval`, approve, reject, complete, fail, cancel |
-| `principal_type` | text | user / agent / policy / schedule / system |
-| `principal_id` | bigint | |
-| reason | text | NULL 可 |
+| principal | text | 多態なアクター参照（`"user:1234"`、agent、policy、schedule、system）。外部キーではなく自由テキスト |
+| `on_behalf_of` | text | NULL 可。複合アイデンティティ（例: 自動 workflow）が行動した場合に、最終的な責任を負う人間 |
+| reason | text | NULL 可。イベントまたは承認ゲートが要求された理由 |
+| `resolution_reason` | text | NULL 可。`request_approval` ゲートが承認または拒否された理由 |
 | `triggered_by` | text | NULL 可; 上流の原因の参照 |
 | `created_at` | `timestamptz` | 追記専用 |
 
@@ -622,9 +662,9 @@ Deployment: pending → deploying          → { healthy | degraded | failed | c
 
 意図的に `awaiting_approval` 状態はありません。承認は状態ではなく、前進に対する **ゲート** です。AutoFlow はほぼ任意のステップを human-in-the-loop のためにサスペンドできるので、ゲートは汎用でなければなりません。それぞれを状態として焼き込むと、すべての承認擬似状態からの遷移を列挙することになり、しかも誰がなぜ承認したかを記録できません。
 
-### 遷移ジャーナルが信頼できる記録元である
+### 遷移ジャーナルが信頼できる記録元である {#the-transition-journal-is-the-system-of-record}
 
-すべての状態変更、そして状態を変更するすべての *リクエスト* が、遷移ジャーナル — `cd_rollout_transitions` と `cd_deployment_transitions` — に行を書きます。追記専用。不変。各行は `from_state`/`to_state`、`event`（動詞）、行動した `principal`、`reason`、そして上流の原因への `triggered_by` リンクを記録します。
+すべての状態変更、そして状態を変更するすべての *リクエスト* が、遷移ジャーナル — `cd_rollout_transitions` と `cd_deployment_transitions` — に行を書きます。追記専用。不変。各行は `from_state`/`to_state`、`event`（動詞）、行動した `principal`、`reason`、そして上流の原因への `triggered_by` リンクを記録します。`cd_rollout_transitions` では、`resolution_reason` が `request_approval` ゲートが承認または拒否された理由を別に記録します。これは、要求された理由を記録する `reason` とは異なります。
 
 **ゲート** はジャーナルイベントです。`request_approval` 行が、`approve`/`reject` 行がそれを解決するまで前進をサスペンドします。2 つのルールがこれを明快にします。
 

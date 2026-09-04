@@ -1,17 +1,17 @@
 ---
 title: "テストカバレッジ"
-description: "Test Platform 部門は特定のシナリオのテストをサポートするカバレッジを有しています。"
+description: "オフライン環境、アップグレードパス、パフォーマンス環境など、特定のテストシナリオに対する GitLab のテストカバレッジの概要。"
 upstream_path: "/handbook/engineering/testing/test-coverage/"
-upstream_sha: "0e6f01390a34aeb6706ace17d8d3c50e74e82d0d"
-translated_at: "2026-04-29T12:00:00Z"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T12:22:23+09:00"
 translator: claude
 stale: false
-lastmod: "2025-07-21T10:07:01+12:00"
+lastmod: "2026-08-18T16:58:52-07:00"
 ---
 
 ### オフライン環境 / エアギャップ GitLab QA シナリオ
 
-Test Platform 部門は、[オフライン環境 / エアギャップ](https://docs.gitlab.com/ee/user/application_security/offline_deployments/)テストをサポートする GitLab QA シナリオを持っています。
+[GitLab QA](https://gitlab.com/gitlab-org/gitlab-qa) のシナリオは、[オフライン環境 / エアギャップ](https://docs.gitlab.com/ee/user/application_security/offline_deployments/)テストをサポートします。
 [シナリオ](https://gitlab.com/gitlab-org/gitlab-qa/-/blob/master/lib/gitlab/qa/scenario/test/instance/airgapped.rb) `Test::Instance::Airgapped` は [GitLab QA](https://gitlab.com/gitlab-org/gitlab-qa/-/blob/master/docs/what_tests_can_be_run.md#testinstanceairgapped) テストシナリオの一部です。このスイートは、特定のポートへのアクセスを許可しつつその他のトラフィックを `iptables` でドロップするよう設定された [Gitaly Cluster](https://docs.gitlab.com/ee/administration/gitaly/) を含むテスト環境に対して実行されます。
 
 #### テスト実行スケジュール
@@ -31,21 +31,21 @@ Secure ステージには、アナライザーがオフラインで実行でき�
 
 GitLab アップグレードテストカバレッジの目的は、[アップグレードパス](https://docs.gitlab.com/ee/update/index.html#upgrade-paths) に従うお客様が成功できることを確保することです。
 
-最良のカバレッジを達成するため、Test Platform は[テストピラミッドアプローチ](https://docs.gitlab.com/ee/development/testing_guide/testing_levels.html)に従い、マージリクエストにおけるビルド環境なしのユニットテストへシフトレフトし、実際の環境を構築するシステムレベルテストに進みます:
+最良のカバレッジを達成するため、GitLab は[テストピラミッドアプローチ](https://docs.gitlab.com/ee/development/testing_guide/testing_levels.html)に従い、マージリクエストにおけるビルド環境なしのユニットテストへシフトレフトし、実際の環境を構築するシステムレベルテストに進みます:
 
-1. 下位レベルテスト - [マルチバージョンマイグレーションアップグレードジョブ](#マルチバージョンマイグレーションアップグレードジョブ)
-1. システムレベルテスト - [シングルノード/Docker アップグレード](#gitlab-qa-アップデートシナリオ)
+1. 下位レベルテスト - [マルチバージョンマイグレーションアップグレードジョブ](#multi-version-migration-upgrade-jobs)
+1. システムレベルテスト - [シングルノード/Docker アップグレード](#gitlab-qa-update-scenario)
 1. システムレベルテスト - [マルチノード/セルフマネージドアップグレード](#upgrade-tester)
 
-#### マルチバージョンマイグレーションアップグレードジョブ
+#### マルチバージョンマイグレーションアップグレードジョブ {#multi-version-migration-upgrade-jobs}
 
 | アップグレードパスシナリオ | 例 |
 |--------------------------------------------|---------------------|
-| 最新アップデートストップ → GitLab マージリクエスト | [16.7.7 → MR in 16.11](https://gitlab.com/gitlab-org/gitlab/-/jobs/6488556764) |
+| 最新アップデートストップ → GitLab マージリクエスト | [16.7.7 → 16.11 の MR](https://gitlab.com/gitlab-org/gitlab/-/jobs/6488556764) |
 
-[`db:migrate:multi-version-upgrade`](https://docs.gitlab.com/ee/development/database/dbmigrate_multi_version_upgrade_job.html) は、最新の必須アップグレードストップから作業ブランチへのマルチバージョンアップグレードでマイグレーションが通過することを検証します。環境を構築せずにユニットレベルでマイグレーションエラーを早期発見できます。テストジョブはテストデータを含む最新の既知 GitLab バージョンストップから作成された PostgreSQL ダンプに対してデータベースマイグレーションを実行します。
+[`db:migrate:multi-version-upgrade`](https://docs.gitlab.com/ee/development/database/dbmigrate_multi_version_upgrade_job.html) は、最新の必須アップグレードストップから作者の作業ブランチへのマルチバージョンアップグレードでマイグレーションが通過することを検証します。環境を構築せずにユニットレベルでマイグレーションエラーを早期発見できます。テストジョブはテストデータを含む最新の既知 GitLab バージョンストップから作成された PostgreSQL ダンプに対してデータベースマイグレーションを実行します。
 
-#### GitLab QA アップデートシナリオ
+#### GitLab QA アップデートシナリオ {#gitlab-qa-update-scenario}
 
 | アップグレードパスの説明 | アップグレードパス | ジョブ名 | ジョブリンク例 |
 |--------------------------|--------------|----------|------------------|
@@ -62,22 +62,16 @@ GitLab QA には [`Test::Omnibus::UpdateFromPrevious`](https://gitlab.com/gitlab
 ##### テスト実行スケジュール
 
 1. `Test::Omnibus::UpdateFromPrevious` シナリオは以下で実行されます:
-   - GitLab `master` に対して [2時間ごとのスケジュールパイプライン](https://gitlab.com/gitlab-org/gitlab/-/pipeline_schedules) から実行される `e2e:test-on-omnibus-ee` / `e2e:test-on-omnibus-ce` ジョブ
+   - GitLab `master` に対して [2 時間ごとのスケジュールパイプライン](https://gitlab.com/gitlab-org/gitlab/-/pipeline_schedules) から実行される `e2e:test-on-omnibus-ee` / `e2e:test-on-omnibus-ce` ジョブ
    - GitLab `master` に対して [ナイトリースケジュールパイプライン](https://gitlab.com/gitlab-org/gitlab/-/pipeline_schedules) から実行される `e2e:test-on-omnibus-nightly` ジョブ
-   - MR 内でビルドされた pre-release パッケージへの安定リリースからのアップグレードをテストする [バックポート](/handbook/engineering/releases/backports/) マージリクエスト
+   - MR 内でビルドされたプレリリースパッケージへの安定リリースからのアップグレードをテストする [バックポート](/handbook/engineering/releases/backports/) マージリクエスト
 1. `Test::Omnibus::UpdateToNext` シナリオは以下で実行されます:
-   - MR 内でビルドされた pre-release パッケージから安定リリースへのアップグレードをテストする [バックポート](/handbook/engineering/releases/backports/) マージリクエスト
+   - MR 内でビルドされたプレリリースパッケージから安定リリースへのアップグレードをテストする [バックポート](/handbook/engineering/releases/backports/) マージリクエスト
 
 ##### リリースパイプラインでのテスト実行
 
 1. `Test::Omnibus::UpdateFromPrevious` シナリオは以下で実行されます:
    - [月次](https://gitlab.com/gitlab-org/release-tools/-/blob/8e91ba8c1a53e8f7cf3ec58b941c72b3258cd941/lib/tasks/monthly.rake#L254)および[パッチ](https://gitlab.com/gitlab-org/release-tools/-/blob/4bb7fc754df6d32c372f3683dfada93525a31a29/lib/tasks/security.rake#L415)リリースパイプラインで、現在の最新リリースバージョンから次のバージョンへのアップグレードをテスト
-
-#### パフォーマンス環境のナイトリーアップグレード
-
-Framework および Performance Enablement チームは、[Reference Architecture](https://docs.gitlab.com/ee/administration/reference_architectures/#how-to-interpret-the-results) ページに記載されているテストパフォーマンス環境をサポートしています。これらの環境は GitLab Environment Toolkit で構築され、環境に応じて毎日または毎週最新のナイトリーイメージにアップグレードされます。
-
-詳細なプロセスは [パフォーマンスとスケーラビリティ](https://docs.gitlab.com/ee/administration/reference_architectures/#how-to-interpret-the-results) ページに記載されています。
 
 #### Upgrade Tester
 
@@ -89,8 +83,4 @@ Framework および Performance Enablement チームは、[Reference Architectur
 
 [Reference Architectures](https://docs.gitlab.com/ee/administration/reference_architectures/) を使用して様々なアップグレードパスをビルドおよびテストすることに特化した Upgrade Tester パイプラインは、指定したバージョンから始まり最新のナイトリーパッケージまたは特定のバージョンで終わる環境をビルドおよびアップグレードします。各アップグレードで使用するパスは開始バージョンと終了バージョンによって異なります。例えば、バージョン 16.0.0 から開始する場合、アップグレードパスは `16.0.0, 16.1.6, 16.3.7, 16.7.7, nightly` となります。
 
-スケジュールおよびテストに使用される Reference Architecture タイプの詳細は [Upgrade Tester プロジェクト](https://gitlab.com/gitlab-org/quality/upgrade-tester) を参照してください。テスト結果は Slack の `#qa-upgrade-results` チャンネルに報告され、Self-Managed Platform チームがモニタリングします。
-
-#### 作業中
-
-Test Platform チームは GitLab アップグレードカバレッジの改善に取り組んでおり、この取り組みは [epic#12458](https://gitlab.com/groups/gitlab-org/-/epics/12458) で追跡されています。
+スケジュールおよびテストに使用される Reference Architecture タイプの詳細は [Upgrade Tester プロジェクト](https://gitlab.com/gitlab-org/quality/upgrade-tester) を参照してください。

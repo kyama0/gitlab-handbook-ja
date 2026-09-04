@@ -1,6 +1,6 @@
 ---
 title: "Kubernetes 上の Runner Manager"
-status: proposed
+status: ongoing
 creation-date: "2025-12-01"
 authors: [ "@igorwwwwwwwwwwwwwwwwwwww" ]
 coaches: [ "@josephburnett" ]
@@ -9,17 +9,21 @@ owning-stage: "~team::Runners Platform"
 participating-stages: ["~devops::verify"]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/runner_managers_kubernetes/
-upstream_sha: 4b2a1defc6e0116cecb1f346d7dc1d679e674d3f
-translated_at: "2026-04-27T10:00:00Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T11:55:51+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-05T10:00:38+00:00"
+lastmod: "2026-08-24T10:53:07Z"
 ---
 
 <!-- vale gitlab.FutureTense = NO -->
 
 
 {{< engineering/design-document-header >}}
+
+## ステータス
+
+移行はデプロイ済みで、本番トラフィックを処理しています。すべての Linux docker+machine シャードが Kubernetes 上で稼働し、Chef の削減と対になる形で段階的にキャパシティを増やしており、その後 Chef を廃止します。アーキテクチャは、ここで提案した単一クラスターから環境ごとに 1 つのマネージャークラスターへと発展しました。この決定と移行記録は[中央クラスターのエピック](https://gitlab.com/groups/gitlab-com/gl-infra/ci-runners/-/work_items/29)にあります。運用ドキュメントは [Kubernetes runner managers ランブック](https://runbooks.gitlab.com/ci-runners/linux/kubernetes-runner-managers/)にあります。
 
 
 ## まとめ
@@ -124,11 +128,11 @@ Helm チャートによるスケールでのランナー運用は、高度なユ
 - **ネットワーク接続性**: Kubernetes 上のランナーマネージャーは既存の Docker Machine サブネットへの適切なネットワークアクセスを維持する必要がある
 - **パフォーマンスとスケーリング**: Kubernetes デプロイは高負荷下で異なる動作を示す可能性があり、検証が必要
 - **設定のパリティ**: 移行中の旧新システム間の正確なパリティが重要。移行後は旧システムを放置し、最終的には設定から削除する
-- **単一クラスターの影響範囲**: クラスター全体の問題が複数のシャードに影響する可能性。マルチ AZ クラスターで軽減。必要であれば複数クラスターのデプロイも可能 — ArgoCD はマルチクラスター管理をネイティブにサポート
+- **単一クラスターの影響範囲**: クラスター全体の問題が複数のシャードに影響する可能性。マルチ AZ クラスターで軽減。必要であれば複数クラスターのデプロイも可能 — ArgoCD はマルチクラスター管理をネイティブにサポート。*結果: 環境ごとに 1 つのクラスターを使用するため、本番シャードはクラスターを共有しますが、環境間では共有しません。[中央クラスターのエピック](https://gitlab.com/groups/gitlab-com/gl-infra/ci-runners/-/work_items/29)を参照してください。*
 - **Kubernetes の運用複雑度**: Pod 固有の障害モード（OOM キル、イメージプルの失敗、エビクション）に Kubernetes 固有のトラブルシューティングの専門知識が必要
-- **浅いヘルスチェック**: 既存のヘルスチェックは主にプロセスが実行中であることを確認するのみ。Helm チャートは追加で `gitlab-runner verify` を呼び出すが、ジョブ処理を妨げる無効なトークンや設定の問題は検出できない。継続的なデプロイには、ランナーが実際のジョブを正常に処理したことを確認するより深いヘルスチェックが理想的
+- **浅いヘルスチェック**: 既存のヘルスチェックは主にプロセスが実行中であることを確認するのみ。Helm チャートは追加で `gitlab-runner verify` を呼び出すが、ジョブ処理を妨げる無効なトークンや設定の問題は検出できない。継続的なデプロイには、ランナーが実際のジョブを正常に処理したことを確認するより深いヘルスチェックが理想的。*結果: すべての Pod が起動時に boot_verify カナリアを実行し、startupProbe が Ready と報告できるようにする前に、エンドツーエンドで 1 台の VM を作成するようになりました。ジョブのポーリングは依然として probe の対象外です。[ランブック](https://runbooks.gitlab.com/ci-runners/linux/kubernetes-runner-managers/)にこのギャップが記載されています。*
 - **Cilium ヘルスチェックのバグ**: Cilium を持つ GKE クラスターには、ヘルスチェックが不安定な Pod がネットワーク接続を失う[バグ](https://gitlab.com/gitlab-org/build/CNG/-/merge_requests/2653#note_2791709931)がある。[上流での修正](https://github.com/cilium/cilium/pull/42170)はマージ済みだが GKE にはまだ届いていない。回避策: 安定したヘルスチェックを確保する
-- **Pod エフェメラルストレージ**: Pod が死ぬと、進行中のジョブは放棄される（転送不可）。孤立した VM は [ci-project-cleaner](https://ops.gitlab.net/gitlab-com/gl-infra/ci-project-cleaner/) によってクリーンアップされる
+- **Pod エフェメラルストレージ**: Pod が死ぬと、進行中のジョブは放棄される（転送不可）。孤立した VM は [ci-project-cleaner](https://ops.gitlab.net/gitlab-com/gl-infra/ci-project-cleaner/) によってクリーンアップされる。*結果: クリーナーはマネージャークラスター上の[毎時実行される CronJob](https://gitlab.com/gitlab-com/gl-infra/argocd/apps/-/merge_requests/3199)として、エフェメラル VM プロジェクトごとに 1 つずつ再構築されました。*
 
 ## 設計と実装の詳細
 
@@ -355,6 +359,8 @@ ls ${MACHINE_STORAGE_PATH}/machines/ | xargs -n 1 -P ${parallel} docker-machine 
 
 **推奨:** オプション1（docker+machine エグゼキューターへの組み込み）が推奨アプローチです。最もクリーンな統合を提供し、アイドルマシンを早期に削除してクリーンアップを最適化できます。オプション3（外部クリーンアップ）は、Pod がクリーンアップ完了前にクラッシュまたは OOM キルされるエッジケースのための安全網として有用です。
 
+**結果:** Pod は終了猶予期間内のグレースフルなドレイン中に自身のマシンを削除するため、シャットダウン後のフックは不要でした。オプション3は安全網として構築されました。マネージャークラスター上で毎時実行される CronJob をエフェメラル VM プロジェクトごとに 1 つ用意し、スケジュールされた ci-project-cleaner パイプラインを置き換えました。アップストリームの `MaxAge` マシン設定（[gitlab-runner!7220](https://gitlab.com/gitlab-org/gitlab-runner/-/merge_requests/7220)）は、長時間存続するアイドル VM をローテーションするため、外部クリーンアップの経過時間上限を厳しくできます。
+
 **デプロイ時のアイドルプールチャーン:** Docker Machine ステートは Kubernetes ではエフェメラルであるため、各デプロイ時にアイドル VM プールがドレインされて再作成されます。Chef ベースのセットアップはディスク上にステートを保持し、VM をサイクルせずに設定変更ができます。デプロイ頻度が増えるほどチャーンが増加します — これはデプロイ速度の増加によるトレードオフです。
 
 ### シークレット管理
@@ -416,10 +422,12 @@ GKE ノードのアップグレードは Pod をエビクトします。これ�
 
 ### 未解決の質問
 
-- ランナーマネージャー Pod のサイジング: 現在の VM はシャードにより大幅に異なります — プライベートと shared-gitlab-org シャードは `n2d-standard-4` を使用し、大部分のフリートは `c2-standard-30` を使用します。メトリクスは大幅な適正化の余地を示しています。シャードごとの適切なリソースリクエスト/制限を決定する必要があります。
-- docker-machine エグゼキューターとの Kubernetes デプロイメントの互換性を検証します。
-- GKE Autopilot の互換性: GKE Autopilot は `terminationGracePeriodSeconds` を600秒（10分）に制限しており、3〜4時間のジョブタイムアウトと互換性がありません。[拡張期間 Pod](https://cloud.google.com/kubernetes-engine/docs/how-to/extended-duration-pods) はアノテーションを使用して最大7日間実行できますが、グレース期間の制限を延長するかどうかは不明です。Autopilot が実現可能かどうかを調査します。
-- スコープ: macOS と Windows のシャードは異なるエグゼキューター（インスタンス/fleeting とカスタム/autoscaler）を使用します。macOS は fleeting 経由で AWS ベアメタル上で実行され、GKE クラスターへの VPN 接続が必要であり、ネットワーク配線と IP の競合に関する複雑さが追加されます。Windows ランナーマネージャーは現在 Windows VM 上で実行されていますが、いくつかのコード変更で Linux 上でデプロイ可能であり、同じ Kubernetes デプロイアプローチを使用できます。この移行のスコープに含めるか、別途処理するかを決定します。
+実装中にすべて回答されました:
+
+- ランナーマネージャー Pod のサイジング: 現在の VM はシャードにより大幅に異なります — プライベートと shared-gitlab-org シャードは `n2d-standard-4` を使用し、大部分のフリートは `c2-standard-30` を使用します。メトリクスは大幅な適正化の余地を示しています。*回答: フリートは大幅に過剰プロビジョニングされていました。数百の同時実行ジョブにおいて、マネージャー Pod は数百 MiB を使用します。リクエストはシャードごとに設定され、キャパシティとともに引き上げられます。*
+- docker-machine エグゼキューターとの Kubernetes デプロイメントの互換性を検証します。*回答: すべての Linux docker+machine シャードで本番検証済みです。*
+- GKE Autopilot の互換性: GKE Autopilot は `terminationGracePeriodSeconds` を600秒（10分）に制限しており、3〜4時間のジョブタイムアウトと互換性がありません。*回答: 実現不可能です。ブルー/グリーンのノードプールアップグレードを備えた標準クラスターを使用します。*
+- スコープ: macOS と Windows のシャードは異なるエグゼキューター（インスタンス/fleeting とカスタム/autoscaler）を使用します。*回答: スコープ外であり、別途扱います。*
 
 ### 現在のシャード設定
 

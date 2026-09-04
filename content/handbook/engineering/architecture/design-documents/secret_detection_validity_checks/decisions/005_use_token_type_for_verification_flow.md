@@ -2,12 +2,16 @@
 title: "GitLab Secret Detection Validity Checks ADR 005：検証フローにトークンタイプを使用する"
 description: "検出ルールから既知のトークンタイプで検証呼び出しを選択し、クライアントごとの正規表現による推測を置き換える ADR。"
 upstream_path: "/handbook/engineering/architecture/design-documents/secret_detection_validity_checks/decisions/005_use_token_type_for_verification_flow/"
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-lastmod: "2026-07-14T10:38:52+02:00"
-translated_at: "2026-07-16T06:10:53+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+lastmod: "2026-08-21T17:35:48+02:00"
+translated_at: "2026-09-04T11:55:51+09:00"
 translator: codex
 stale: false
 ---
+
+## ステータス
+
+**廃止** - この決定は [ADR 006: トークンタイプを検証器クラスに直接マッピングする](006_map_token_types_directly_to_verifiers.md)によって置き換えられました。
 
 ## 概要
 
@@ -77,6 +81,10 @@ def verify_partner_token(token_value, token_type:)
   verifier.new.verify_partner_token(token_value)
 end
 ```
+
+## 置き換えられた理由
+
+最初の実装マージリクエストのレビュー（[この構成を提案した実装レビューコメント](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/245758#note_3559670985)）で、レジストリはすでにトークンタイプごとにキー付けされているため、ディスパッチャーの検証器マップとクライアントメソッドを通して渡される `token_type:` 引数が、レジストリですでに行われているルーティングを重複させていると指摘されました。
 
 ## 結果
 

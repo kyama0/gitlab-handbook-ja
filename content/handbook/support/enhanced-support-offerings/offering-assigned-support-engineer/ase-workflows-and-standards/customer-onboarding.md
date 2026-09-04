@@ -2,11 +2,11 @@
 title: ASE アカウントのオンボーディング
 description: ASE サービスを新規に利用するアカウントをオンボーディングするためのワークフロー
 upstream_path: /handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/customer-onboarding/
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T14:51:47+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T12:27:22-04:00"
+lastmod: "2026-08-28T14:38:36-07:00"
 ---
 
 ## 概要
@@ -48,7 +48,7 @@ ASE アカウントごとにこれを繰り返します。これにより、新�
 
 ### ASE についてと、チケットの取り扱い方法を記載した Org Note
 
-ASE を持つお客様は、GitLab サポート内外の他のメンバーにとって混乱を招く可能性があります。特定のお客様が ASE を持っていることを顧客はどうやって知るのでしょうか？
+ASE を持つお客様は、GitLab サポート内外の他のメンバーにとって混乱を招く可能性があります。特定のお客様に ASE がいることを、そうしたメンバーはどうやって知るのでしょうか？
 
 これが、チケットの organization note が役立つ理由です。これにより、関心を持つすべての関係者（サポートエンジニア、カスタマーサクセスマネージャー、アカウントエグゼクティブなど）が、何をすべきかの正しいワークフローへ導かれます。
 
@@ -105,7 +105,7 @@ Slack 通知の場合、Slack ユーザー「incident」からのダイレクト
 
 次の画像は設定を示しています。
 
-![Incident.io personal alert configuration](/images/support/incident-io-personal-notifications.png)
+![Incident.io のパーソナルアラート設定](/images/support/incident-io-personal-notifications.png)
 
 ### `@dedicated-ase` Slack グループへのアクセスをリクエストする
 
@@ -113,9 +113,5 @@ Slack 通知の場合、Slack ユーザー「incident」からのダイレクト
 
 アクセスをリクエストするには:
 
-1. [Slack Request テンプレート](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Slack_Request) を使用してアクセスリクエストを提出します。
-1. **👨‍👩‍👧‍👦 Slack Group** の下に、以下を記載します:
-   - **Group handle**: `dedicated-ase`
-   - **Members**: あなたの GitLab メールアドレス
-   - **Action**: `Update Group`
+1. [Individual_Bulk_Access_Request](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?description_template=Individual_Bulk_Access_Request)（[アクセスリクエストの例](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/work_items/45187)）を使用してアクセスリクエストを提出します。
 1. アクセスリクエストに対するマネージャーの承認をリクエストします。

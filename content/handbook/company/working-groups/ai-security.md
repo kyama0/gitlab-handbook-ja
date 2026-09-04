@@ -1,13 +1,13 @@
 ---
 title: "AI セキュリティワーキンググループ"
 description: "このワーキンググループの憲章は、GitLab コンポーネント全体で AI セキュリティを推進することです。"
-status: active
+status: disbanded
 upstream_path: /handbook/company/working-groups/ai-security/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-25T09:00:00Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T11:09:38+09:00"
 translator: claude
 stale: false
-lastmod: "2025-09-24T11:45:16+01:00"
+lastmod: "2026-09-01T16:15:24+01:00"
 ---
 
 ## 属性
@@ -15,7 +15,7 @@ lastmod: "2025-09-24T11:45:16+01:00"
 | プロパティ      | 値         |
 |---------------|---------------|
 | 作成日  | 2025 年 6 月 12 日 |
-| 終了日      | 未定           |
+| 終了日      | 2026 年 2 月 25 日頃  |
 | Slack         | [#wg_ai_security](https://gitlab.enterprise.slack.com/archives/C0912QSD38D)（社内） |
 | Google ドキュメント    | [ワーキンググループアジェンダ](https://docs.google.com/document/d/1sShQ7VH0fsUzA29qsRClbiIel7u-Q1R0-ZOziX1_eAg/edit?usp=sharing)（社内） |
 | エピック          | [メインプロジェクトエピック](https://gitlab.com/groups/gitlab-org/-/epics/18135)（社内） |
@@ -49,16 +49,4 @@ Duo エージェントプラットフォームのローンチに伴い、GitLab 
 
 ## ロールと責任
 
-| ワーキンググループのロール | チームメンバー名        | 役職                                            |
-|--------------------|-------------------------|-------------------------------------------------|
-| エグゼクティブスポンサー  | Jamie Dicken            | ディレクター、セキュリティプラットフォーム & アーキテクチャ   |
-| エグゼクティブスポンサー  | Julie Davila            | VP、プロダクトセキュリティ                            |
-| エグゼクティブスポンサー  | Tim Zallmann            | VP、AI エンジニアリング                              |
-| ファンクショナルリード    | Erran Carey             | スタッフフルスタックエンジニア                        |
-| ファンクショナルリード    | Jessie Young            | プリンシパルエンジニア                              |
-| ファンクショナルリード    | Joern Schneeweisz       | プリンシパルセキュリティエンジニア                     |
-| メンバー             | Ameya Darshan           | シニアアプリケーションセキュリティエンジニア、プロダクトセキュリティ |
-| メンバー             | Daniel Hauenstein       | アプリケーションセキュリティエンジニア、プロダクトセキュリティ |
-| メンバー             | Dillon Wheeler          | バックエンドエンジニア、AI-powered:Duo Chat           |
-| メンバー             | Vitor Meireles De Sousa | シニアマネージャー、AppSec、プロダクトセキュリティ        |
-| メンバー             | Katherine Wu            | アプリケーションセキュリティエンジニア、PSIRT、プロダクトセキュリティ |
+このプロジェクトに以前関与していたチームメンバーについては、このページの Git 履歴を参照してください。

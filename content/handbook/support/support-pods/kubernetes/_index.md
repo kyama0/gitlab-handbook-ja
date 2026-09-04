@@ -2,11 +2,11 @@
 title: Kubernetes サポートポッド
 description: Kubernetes 関連すべて (k8s、openshift、kas、agent、runner agent、k8s executor、CN Hybrid ref arch、helm など) を扱うサポートポッドです。
 upstream_path: /handbook/support/support-pods/kubernetes/
-upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T14:51:47+09:00"
 translator: claude
 stale: false
-lastmod: "2024-08-22T14:49:57+00:00"
+lastmod: "2026-08-28T10:29:09-04:00"
 ---
 
 ## 目的
@@ -18,7 +18,7 @@ Kubernetes 関連すべて (k8s、openshift、kas、agent、runner agent、k8s e
 - チケットでの協働
 - 知識の獲得と共有
 - ドキュメントの改善
-- バグ、製品の Issue、MR の特定
+- バグを特定し、Issue と MR を作成する
 - 関連するサポートトレーニングモジュールの更新支援
 - より広範なサポートチームのリソースとして機能する
 - 自分たちの経験に基づいて製品に影響を与える
@@ -27,16 +27,11 @@ Kubernetes 関連すべて (k8s、openshift、kas、agent、runner agent、k8s e
 
 ## サポートポッドメンバー
 
-- リード: {{< member-by-name "Lewis Brown" >}} (`@lwbrown`)
-- {{< member-by-name "Jessie Lee" >}} (`@jessie`)
-- {{< member-by-name "Elif Munn" >}} (`@e_munn`)
-- {{< member-by-name "Aric Buerer" >}} (`@abuerer`)
+- リード: `none`
 - {{< member-by-name "Sam Bernal-Damasco" >}} (`@definitelynotsam`)
-- {{< member-by-name "Lyle Kozloff" >}} (`@lyle`)
 - {{< member-by-name "Andrew Winata" >}} (`@awinata`)
 - {{< member-by-name "Mario Mora" >}} (`@mmora`)
 - {{< member-by-name "Julian Dasmarninas" >}} (`@jdasmarinas`)
-- {{< member-by-name "Brie Carranza" >}} (`@bcarranza`)
 - {{< member-by-name "Christopher Mutua" >}} (`@cmutua`)
 - {{< member-by-name "Michelle Almendarez" >}} (`@malmendarez`)
 

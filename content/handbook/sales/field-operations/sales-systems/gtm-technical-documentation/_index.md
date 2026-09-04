@@ -2,11 +2,11 @@
 title: "Go-To-Market 技術文書"
 description: "このページは、セールスシステムが取り組み、開発、デプロイしてきた主要プロジェクトと自動化に関連するすべての技術文書のための、主要な GitLab ハンドブックページです。各プロジェクトの技術的な作業を取り巻くハイレベルなビジネス概要と技術的な詳細を含みます。"
 upstream_path: /handbook/sales/field-operations/sales-systems/gtm-technical-documentation/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-12T10:00:00Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T14:44:07+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-27T12:08:00-04:00"
+lastmod: "2026-09-01T09:42:13-04:00"
 ---
 
 ## この文書の使い方
@@ -344,7 +344,7 @@ Zuora Quotes に対して 2 つの承認プロセスがあり、1 つは割引�
 - Tests
   - [AccountClassTest.cls](https://gitlab.com/gitlab-com/sales-team/field-operations/salesforce-src/-/blob/master/force-app/main/default/classes/AccountClassTest.cls)
 
-### Order Type システム
+### Order Type システム {#order-type-system}
 
 **ビジネスプロセス:**  
 すべての商談を 7 つの Order Type 値のいずれかに分類することで、次のことを可能にします。
@@ -446,6 +446,13 @@ Subscription Type = New Business で、以下のようなカテゴリの場合:
 **Net ARR = 0、Recurring Amount > 0**
 
 - **フラット更新** として扱われ、`Growth` にマップされます。ビジネスルールでカバーされる特殊なケースもあります。
+
+**Stub Renewal オポチュニティ（`Opportunity_Category__c = Stub Renewal`）**
+
+Stub Renewal は、上記の Net ARR 符号ロジックの対象外です。[Stub Renewal オポチュニティ](#stub-renewal-opportunities)を参照してください。
+
+- Closed Won → Order Type = `Growth`（`ARR_Net__c` = `0`）。
+- Closed Lost → Order Type = `Contraction`（`ARR_Net__c` = −ARR Basis）。Account Family にアクティブなサブスクリプションが残っているかどうかは関係ありません。Stub Renewal に `Churn - Partial` と `Churn - Final` が適用されることはありません。
 
 #### 簡略化されたシナリオ表
 
@@ -622,6 +629,110 @@ UPA FO と DFO は異なるレベルで評価されるため:
 **一般的な自動化のメモ**
 
 - Salesforce にはデフォルトの挙動があり、商談が更新されると、商談の古いオーナーが所有する商談分割が商談の新しいオーナーに更新されます。これは分割の種類、分割されているかどうかに関係なくです。After トリガーでこの例外を回避しようとしても、SFDC の自動化は私たちが書いた After トリガーの後に発火します。
+
+## Stub Renewal オポチュニティ {#stub-renewal-opportunities}
+
+**サポートするビジネスプロセス:** [セールス更新プロセス](/handbook/sales/sales-renewal-process/) および [Go-To-Market – 更新](https://internal.gitlab.com/handbook/sales/go-to-market/renewals)。この自動化は、チャージの終了日が基盤となるサブスクリプションの終了日と**一致しない**複数年ランプ取引に含まれる、継続製品の更新を対象とします。
+
+**概要:**
+
+複数年ランプ取引では、あるランプ期間に存在する継続製品が次の期間には存在しない場合があります。例えば、36 か月の Ultimate サブスクリプションに含まれる 12 か月の GitLab Duo Enterprise アドオンです。これまでは、その期間の将来年度ランプオポチュニティがブッキング時に負の Net ARR で作成され、自動的にクローズされていたため、減少分は事前計上された **Contraction** として計上されていました。後から顧客が製品を延長すると、更新ベースライン上の維持 ATR ではなく、アドオン上の **Growth** として表面化し、ATR の割り当て、更新メトリクス、予測、報酬が歪められていました。
+
+**Stub Renewal** は、更新可能なベースラインを保持するためにオープンステージで作成される、軽量な製品レベルの更新オポチュニティです。これは**追加的**なものです。標準のサブスクリプションレベルの更新オポチュニティ、`Customer_Subscription__c` ごとに 1 つのプライマリ更新を持つモデル、および他の製品の数量と価格の差分に対する将来年度ランプオポチュニティは、すべて以前とまったく同じように動作します。
+
+この機能は、`Enable_Stub_Renewal` カスタムメタデータフィーチャーフラグ（`Feature_Flag.Enable_Stub_Renewal`）によって制御されているため、デプロイせずに切り替えられます。
+
+**関連フィールド**
+
+- Opportunity オブジェクト:
+  - `Opportunity Category`（`Opportunity_Category__c`）— 新しい選択リスト値 `Stub Renewal`
+  - `Subscription Type`（`Subscription_Type__c`）— `Renewal`
+  - `ARR Basis`（`Stamped_ARR_Basis__c`）
+  - `Net ARR`（`ARR_Net__c`）
+  - `Amount`
+  - `Quote Start Date`（`Quote_Start_Date__c`）
+  - `Subscription End Date`（`Subscription_End_Date__c`）
+  - `Parent Opportunity`（`Parent_Opportunity__c`）
+- Opportunity Product オブジェクト:
+  - `Amendment Type` — `StubRemoveProduct`
+
+**このロジックに入る基準:**
+
+次の**すべて**が当てはまる場合に Stub Renewal が作成されます:
+
+1. ソースオポチュニティが、Subscription Type が `New Business` または `Renewal` の真のランプオポチュニティである。
+1. 将来年度のオポチュニティ製品生成によって、1 つ以上の `RemoveProduct` 行項目が生成される。つまり、将来のランプ期間で継続製品が**完全に削除**される。
+1. 削除された製品が継続製品であり、トライアル製品でも 1 回限りの製品でもない。
+
+次の場合は Stub Renewal をトリガー**しません**:
+
+- 次の期間にも継続する製品の数量削減または価格引き下げ。
+- トライアル製品の削除。
+- 後の期間での新製品の追加。
+- `Add-On` オポチュニティ。
+- Closed Lost のソースランプオポチュニティ。
+
+**同じ**期間で複数の製品が削除されると、**1 つ**の Stub Renewal が生成されます。**異なる**期間で削除された製品は、期間ごとに**別々**の Stub Renewal を生成します。
+
+**入力:** ソースランプオポチュニティ、`OpportunityClass.generateOutYearOpps` によって生成された将来年度の Opportunity Product、各 `RemoveProduct` 行項目の `DeltaMRR`、ランプ期間の開始日と終了日、サブスクリプション期間の終了日。
+
+**出力:** 影響を受ける期間ごとに 1 つの Stub Renewal オポチュニティと、その Opportunity Product。
+
+| フィールド | 作成時の値 |
+|----|----|
+| `Name` | `Stub Renewal` というフレーズを含める必要があります。例: `[Account Name] – Stub Renewal [YYYY-MM-DD]` |
+| `Opportunity_Category__c` | `Stub Renewal` |
+| `Subscription_Type__c` | `Renewal` |
+| `StageName` | `2-Scoping`（オープン） |
+| `Quote_Start_Date__c` | 削除されたチャージの終了日 + 1 日、つまり製品が削除されたランプ期間の開始日 |
+| `Subscription_End_Date__c` | 基盤となるサブスクリプションの終了日 |
+| `CloseDate` | 製品が削除された期間に対応する将来年度ランプオポチュニティの Close Date |
+| `Stamped_ARR_Basis__c` | 削除されたチャージの**正**の年次 ARR（`DeltaMRR` × 12 の絶対値、オポチュニティごとに合計） |
+| `Amount` | サブスクリプション期間の残りの期間全体における、削除されたチャージの値 |
+| `ARR_Net__c` | `0` |
+| `Parent_Opportunity__c` | ソースランプ（ベース）オポチュニティ |
+| `OwnerId` | サブスクリプションレベルの更新と同じ Renewal Ownership ロジックに従う |
+| `Initial Source`, `Pricebook2Id` | ソースオポチュニティから継承 |
+
+クォートが作成されると、他のオポチュニティとまったく同じように、クォートがこれらのフィールドを制御します。
+
+**Opportunity Product**
+
+削除されたチャージに対する Opportunity Product が `Amendment Type = StubRemoveProduct` として Stub Renewal に作成されます。これらはプレースホルダーであり、クォートの作成後に削除される場合があります。
+
+**Order Type の挙動**
+
+Stub Renewal は、標準の Renewal Net ARR 符号ロジックの対象外です。[Order Type システム](#order-type-system)を参照してください:
+
+- Closed Won → Order Type = `Growth`、`ARR_Net__c` = `0`。
+- Closed Lost → Order Type = `Contraction`、`ARR_Net__c` = −(ARR Basis)。Account Family にアクティブなサブスクリプションが残っているかどうかは**関係ありません**。
+
+したがって、削除分は Stub Renewal の Close Date より前に負の Net ARR として予約されず、Contraction またはチャーンは Stub Renewal が失注した時点まで延期されます。
+
+**クォート作成**
+
+Stub Renewal には、自動生成または事前入力されたクォートが**ありません**。標準の更新オポチュニティでフラット更新クォートを事前入力するために使用される `Renewal_Quote_Processing_Stage__c` / `Renewal_Quote_Processing_Status__c` バッチフローの対象外です。更新に取り組む際、担当者はサブスクリプションに対して Amendment クォートを手動で作成します。
+
+**ロジックの場所:** [StubRenewalClass.cls](https://gitlab.com/gitlab-com/sales-team/field-operations/salesforce-src/-/blob/master/force-app/main/default/classes/StubRenewalClass.cls)
+
+コードユニット:
+
+- `StubRenewalClass`（すべてのメソッド）
+- `OpportunityClass.generateOutYearOpps`
+- `TA_Opportunity_OppActions_AI_AU_AD_AUD`
+- `OpportunityProductSyncClass`
+- `OpportunityProductBuilder`
+- `OpportunityLineItemClass`
+- `OrderTypeHelper`
+- `OpportunityConstantsClass`
+
+サポートするメタデータ:
+
+- `Feature_Flag.Enable_Stub_Renewal` — 機能全体を制御するカスタムメタデータフィーチャーフラグ
+- `Opportunity_Category__c` — 新しい `Stub Renewal` 選択リスト値
+- `Parent_Opportunity_Cannot_be_Add_On` 検証ルール — Stub Renewal が Parent Opportunity を保持できるように除外リストを更新
+
+**関連 Issue:** [ランプチャージのうち契約終了日が一致しないものに対する Renewal オポチュニティの生成](https://gitlab.com/gitlab-com/eta/business-systems/opportunity-to-quote/-/work_items/112)
 
 ## 返金商談
 

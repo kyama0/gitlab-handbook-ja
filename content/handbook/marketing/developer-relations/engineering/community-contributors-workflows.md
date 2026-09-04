@@ -1,15 +1,71 @@
 ---
 title: "コミュニティ貢献を扱うワークフロー"
-description: DevRel Engineering が扱うすべてのプロセス
+description: Co-Create & Community Engineering チームが扱うすべてのプロセス
 upstream_path: /handbook/marketing/developer-relations/engineering/community-contributors-workflows/
-upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
-translated_at: "2026-08-01T15:25:19+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T13:37:38+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-31T16:25:20+01:00"
+lastmod: "2026-09-03T15:09:13+02:00"
 ---
 
 ## ワークフロー
+
+## 私たちの作業計画の立て方 {#how-we-plan-work}
+
+このチームは [Contributor Success のかんばんボード](https://gitlab.com/groups/gitlab-org/-/boards/7745119?label_name[]=Contributor%20Success)を使用します。
+Issue は次を満たす必要があります:
+
+- `gitlab-org` グループで作成されていること
+- `Contributor Success` ラベルが付いていること
+- 以下のリストから少なくとも 1 つの `workflow` ラベルが付いていること
+
+私たちは `priority` ラベルを使って、四半期ごとの注力分野を指定します。
+
+### ワークフローラベル
+
+- `workflow::validation backlog`: Issue はまずバックログから始まり、チームが KPI、OKR、チーム戦略に対して労力と影響を検証できるようにします。
+- `workflow::refinement`: これらの Issue は、準備完了とマークされる前に、計画とチームでの議論を通じて検証・洗練されます。Issue は次のワークフローステージに移る前に、Implementation Plan セクションを持つべきです。
+- `workflow::ready for development`: これらの Issue は着手可能であり、Implementation Plan セクションと `priority` ラベルを持っています。
+- `workflow::in dev`: 今四半期に積極的に取り組んでいる Issue。
+- `workflow::blocked`: 現在ブロックされている Issue。説明にはブロッカーを記載し、ブロックを解除する Issue へのリンクを含める必要があります。
+- `workflow::complete`: 実装後に解決された Issue。これらは、クローズする前にチームおよび Developer Relations 部門へのレポートで強調すべきです。
+
+### 優先度ラベル
+
+- `priority::1`（最高優先度）: 今四半期の KPI と OKR に不可欠な Issue、またはコントリビューターの作業をブロックする緊急のバグ。
+- `priority::2`: 今四半期の目標に沿っているが、緊急の期限がない Issue。
+- `priority::3`: 今四半期の目標に影響しないが、長期的な目標を支える Issue。
+- `priority::4`（最低優先度）: 段階的な価値をもたらすが、追加のキャパシティを待てる Issue。
+
+### Issue の選び方
+
+チームメンバーは、`workflow::ready for development` から、`priority` ラベルに基づいて Issue を選択すべきです。
+チームは今四半期の `priority::1` と `priority::2` の Issue に注力しますが、大きなプロジェクトの合間に優先度の低いタスクに取り組むのが理にかなう場合もあります。
+私たちはタスクを選ぶ際、[効率](/handbook/values/#efficiency)と[イテレーション](/handbook/values/#iteration)という GitLab のバリューに導かれ、[Manager of One](/handbook/values/#managers-of-one)として行動します。
+
+### レトロスペクティブ
+
+四半期ごとに、GitLab の Issue を使って非同期のレトロスペクティブ[（例）](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/665)を実施します。
+
+質問は次のとおりです:
+
+- 何を始めるべきか?
+- 何をやめるべきか?
+- 何を続けるべきか?
+
+チームの DRI は、将来簡単に取り出せるよう、チームトラッカー
+[`gitlab-org/developer-relations/contributor-success/team-task`](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues)
+に Issue を作成する責任を負います。
+
+チームの DRI は、フィードバックを整理し、投票後に新しい四半期へ持ち込む 1 つの Issue を選ぶ責任を負います。
+
+### スタンドアップ
+
+このスタンドアップの目的は、チームメンバー間で協力することです。これは、ブロッカーや進捗を確認し、異なる視点で考え、私たちの目標に向けてイテレーションするための、チーム固有の
+ミーティングです。
+
+- アジェンダ: <https://docs.google.com/document/d/1chIzCdg1CNRrRRuYR7c7OW_BF1mBxKFTJoXyP2HLt4E/edit#heading=h.o6qzal1u0b7i>
 
 ## リアルタイムコミュニケーション
 
@@ -323,7 +379,7 @@ Contributor Success チームは、広範コミュニティ貢献者のブロッ
 1. [Everything is in draft](/handbook/values/#everything-is-in-draft)
 1. [Make two-way door decisions](/handbook/values/#make-two-way-door-decisions)
 
-### 広範コミュニティの貢献を求める
+### 広範コミュニティの貢献を求める {#seeking-wider-community-contributions}
 
 支援を求める GitLab チームメンバーは、貢献を求めて広範コミュニティに連絡することができます。より大きなプロジェクトのリクエストに移る前に、明確な実装計画を持つより小さな `quick win` Issue から始めることが推奨されます。
 
@@ -332,7 +388,7 @@ Contributor Success チームは、広範コミュニティ貢献者のブロッ
 - コミュニティ貢献者が興味を示したら、彼らを Issue に割り当てます。
 - コミュニティ貢献者と連絡を取り、助けが必要かどうかを確認します。
 
-### `quick win` Issue の基準
+### `quick win` Issue の基準 {#criteria-for-quick-win-issues}
 
 GitLab は広範コミュニティに、貢献したい場合は `quick win` ラベルが付いた Issue を検索するようガイドしています。
 これらの Issue は、コミュニティ貢献者にとってわかりやすく、貢献プロセスを学びながらもすぐに完了できるものを意図しています。
@@ -360,7 +416,7 @@ Issue が `quick win` に該当しないと AI が判断した場合、ラベル
 このセクションは非常に簡潔でも、Issue を解決するための可能なアクションを提供してもかまいません。
 - 少なくとも 1 人の GitLab チームメンバーまたは経験豊富なコミュニティ貢献者 (たとえば「Support contact: @username」) を `Implementation plan` セクションでタグ付けすることが推奨されます
 
-### 初回貢献者
+### 初回貢献者 {#first-time-contributors}
 
 貢献者が GitLab 名前空間に対して初めてマージリクエストを開くたびに、ラベル「~1st contribution」が自動的にマージリクエストに適用されます。
 
@@ -388,7 +444,7 @@ Issue が `quick win` に該当しないと AI が判断した場合、ラベル
 
 #### プロセス
 
-コミュニティボーナスラベルが付いた Issue がクローズされると、[トリアージレポート](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/960)に表示されます。Developer Relations Engineering チームメンバーは:
+コミュニティボーナスラベルが付いた Issue がクローズされると、[トリアージレポート](https://gitlab.com/gitlab-org/developer-relations/contributor-success/team-task/-/issues/960)に表示されます。Co-Create & Community Engineering チームメンバーは:
 
 ##### 貢献を検証する
 
@@ -398,7 +454,7 @@ Issue が `quick win` に該当しないと AI が判断した場合、ラベル
 - 上記が真でない場合、`community-bonus::` スコープラベルを削除します。
 - 不確実な点がある場合は、Issue で関連チームに ping して確認します。
 
-##### ボーナスポイントを授与する
+##### ボーナスポイントを授与する {#award-the-bonus-points}
 
 - https://contributors.gitlab.com/users/[GitLab username] に移動
 - **Bonus Points** までスクロール
@@ -543,7 +599,7 @@ Contributor Success チームは、次のものを削除するために候補プ
 これらの貢献者向けにカスタマイズされた GitLab グッズが作成され、Printfection で利用可能になります。GitLab チームメンバーは、以下の手順に従って広範コミュニティメンバーに賞を送ることができます。
 
 1. 1Password の認証情報を使用して Printfection にログインします。
-1. `Campaigns` の下の `Giveaways` に移動し、新しい `GIVEAWAY CAMPAIGN` を作成します (複数のアイテムを含めたい場合は、`Merchandise` タブの下に[新しい `Kit` を作成する](/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/)必要があるかもしれません)。
+1. `Campaigns` の下の `Giveaways` に移動し、新しい `GIVEAWAY CAMPAIGN` を作成します (複数のアイテムを含めたい場合は、`Merchandise` タブの下に[新しい `Kit` を作成する](/handbook/marketing/brand-experience/merchandise-handling/)必要があるかもしれません)。
 1. アイテム/キットをキャンペーンに追加します。
 1. 各貢献者用の Giveaway リンクを生成します。
 1. 個別の E メールに Giveaway リンクを含めて Top Annual Contributors に送信します。

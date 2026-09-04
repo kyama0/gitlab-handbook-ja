@@ -9,11 +9,11 @@ owning-stage: "~devops::package"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/container_registry_metadata_database/
-upstream_sha: 0ee1352c26e468fa8032143d735391a793de7086
-translated_at: "2026-04-26T10:00:00Z"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T11:43:17+09:00"
 translator: claude
 stale: false
-lastmod: "2025-04-28T10:53:04-07:00"
+lastmod: "2026-08-27T16:39:03+01:00"
 ---
 
 
@@ -89,12 +89,12 @@ GitLab Rails は HTTP API を通じてレジストリと連携し、その Webho
 
 | 操作 | UI | バックグラウンド | 備考 |
 | ---- | -- | -------------- | ---- |
-| [API バージョン確認](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#api-version-check) | **{check-circle}** Yes | **{check-circle}** Yes | レジストリが Docker Distribution V2 API をサポートしていることを確認するとともに、GitLab Rails が GitLab コンテナレジストリとサードパーティのものと通信しているかを識別するためにグローバルに使用されます（前者でのみ利用可能な機能を切り替えるために使用）。 |
-| [リポジトリタグのリスト](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#listing-image-tags) | **{check-circle}** Yes | **{check-circle}** Yes | UI でタグをリストおよび表示するために使用。バックグラウンドで[クリーンアップポリシー](../../../user/packages/container_registry/reduce_container_registry_storage.md#cleanup-policy)と [Geo レプリケーション](../../../administration/geo/replication/container_registry.md)のためにタグをリストするために使用。 |
-| [マニフェストの存在確認](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#existing-manifests) | **{check-circle}** Yes | **{dotted-circle}** No | タグでマニフェストのダイジェストを取得するために使用。これはマニフェストをプルして UI でタグの詳細を表示するために使用されます。 |
-| [マニフェストのプル](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#pulling-an-image-manifest) | **{check-circle}** Yes | **{dotted-circle}** No | タグの詳細 UI でイメージサイズとマニフェストダイジェストを表示するために使用。 |
-| [blob のプル](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#pulling-a-layer) | **{check-circle}** Yes | **{dotted-circle}** No | タグの詳細 UI で設定ダイジェストと作成日を表示するために使用。 |
-| [タグの削除](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#delete-tag) | **{check-circle}** Yes | **{check-circle}** Yes | UI からタグを削除し、バックグラウンド（クリーンアップポリシー）で使用。 |
+| [API バージョン確認](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#api-version-check) | {{< yes >}} | {{< yes >}} | レジストリが Docker Distribution V2 API をサポートしていることを確認するとともに、GitLab Rails が GitLab コンテナレジストリとサードパーティのものと通信しているかを識別するためにグローバルに使用されます（前者でのみ利用可能な機能を切り替えるために使用）。 |
+| [リポジトリタグのリスト](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#listing-image-tags) | {{< yes >}} | {{< yes >}} | UI でタグをリストおよび表示するために使用。バックグラウンドで[クリーンアップポリシー](../../../user/packages/container_registry/reduce_container_registry_storage.md#cleanup-policy)と [Geo レプリケーション](../../../administration/geo/replication/container_registry.md)のためにタグをリストするために使用。 |
+| [マニフェストの存在確認](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#existing-manifests) | {{< yes >}} | {{< no >}} | タグでマニフェストのダイジェストを取得するために使用。これはマニフェストをプルして UI でタグの詳細を表示するために使用されます。 |
+| [マニフェストのプル](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#pulling-an-image-manifest) | {{< yes >}} | {{< no >}} | タグの詳細 UI でイメージサイズとマニフェストダイジェストを表示するために使用。 |
+| [blob のプル](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#pulling-a-layer) | {{< yes >}} | {{< no >}} | タグの詳細 UI で設定ダイジェストと作成日を表示するために使用。 |
+| [タグの削除](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#delete-tag) | {{< yes >}} | {{< yes >}} | UI からタグを削除し、バックグラウンド（クリーンアップポリシー）で使用。 |
 
 有効な認証トークンが GitLab Rails で生成され、レジストリに送信する前にこれらすべてのリクエストに埋め込まれます。
 
@@ -221,22 +221,22 @@ PostgreSQL は[バージョン 12](https://www.postgresql.org/docs/12/release-12
 
 | 操作 | メソッド | パス | データベース必須 | ストレージ必須 | GitLab Rails が使用 * |
 |------|---------|------|----------------|--------------|---------------------|
-| [API バージョン確認](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#api-version-check) | `GET` | `/v2/` | **{dotted-circle}** No | **{dotted-circle}** No | **{check-circle}** Yes |
-| [リポジトリのリスト](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#listing-repositories) | `GET` | `/v2/_catalog` | **{check-circle}** Yes | **{dotted-circle}** No | **{dotted-circle}** No |
-| [リポジトリタグのリスト](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#listing-image-tags) | `GET` | `/v2/<name>/tags/list` | **{check-circle}** Yes | **{dotted-circle}** No | **{check-circle}** Yes |
-| [タグの削除](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#delete-tag) | `DELETE` | `/v2/<name>/manifests/<reference>` | **{check-circle}** Yes | **{dotted-circle}** No | **{check-circle}** Yes |
-| [マニフェストの存在確認](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#existing-manifests) | `HEAD` | `/v2/<name>/manifests/<reference>` | **{check-circle}** Yes | **{dotted-circle}** No | **{check-circle}** Yes |
-| [マニフェストのプル](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#pulling-an-image-manifest) | `GET` | `/v2/<name>/manifests/<reference>` | **{check-circle}** Yes | **{dotted-circle}** No | **{check-circle}** Yes |
-| [マニフェストのプッシュ](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#pushing-an-image-manifest) | `PUT` | `/v2/<name>/manifests/<reference>` | **{check-circle}** Yes | **{dotted-circle}** No | **{dotted-circle}** No |
-| [マニフェストの削除](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#deleting-an-image) | `DELETE` | `/v2/<name>/manifests/<reference>` | **{check-circle}** Yes | **{dotted-circle}** No | **{dotted-circle}** No |
-| [blob の存在確認](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#existing-layers) | `HEAD` | `/v2/<name>/blobs/<digest>` | **{check-circle}** Yes | **{dotted-circle}** No | **{dotted-circle}** No |
-| [blob のプル](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#fetch-blob) | `GET` | `/v2/<name>/blobs/<digest>` | **{check-circle}** Yes | **{check-circle}** Yes | **{check-circle}** Yes |
-| [blob の削除](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#delete-blob) | `DELETE` | `/v2/<name>/blobs/<digest>` | **{check-circle}** Yes | **{dotted-circle}** No | **{dotted-circle}** No |
-| [blob アップロード開始](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#starting-an-upload) | `POST` | `/v2/<name>/blobs/uploads/` | **{check-circle}** Yes | **{check-circle}** Yes | **{dotted-circle}** No |
-| [blob アップロード状態確認](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#get-blob-upload) | `GET` | `/v2/<name>/blobs/uploads/<uuid>` | **{check-circle}** Yes | **{check-circle}** Yes | **{dotted-circle}** No |
-| [blob チャンクプッシュ](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#chunked-upload-1) | `PATCH` | `/v2/<name>/blobs/uploads/<uuid>` | **{check-circle}** Yes | **{check-circle}** Yes | **{dotted-circle}** No |
-| [blob アップロード完了](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#put-blob-upload) | `PUT` | `/v2/<name>/blobs/uploads/<uuid>` | **{check-circle}** Yes | **{check-circle}** Yes | **{dotted-circle}** No |
-| [blob アップロードキャンセル](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#canceling-an-upload) | `DELETE` | `/v2/<name>/blobs/uploads/<uuid>` | **{check-circle}** Yes | **{check-circle}** Yes | **{dotted-circle}** No |
+| [API バージョン確認](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#api-version-check) | `GET` | `/v2/` | {{< no >}} | {{< no >}} | {{< yes >}} |
+| [リポジトリのリスト](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#listing-repositories) | `GET` | `/v2/_catalog` | {{< yes >}} | {{< no >}} | {{< no >}} |
+| [リポジトリタグのリスト](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#listing-image-tags) | `GET` | `/v2/<name>/tags/list` | {{< yes >}} | {{< no >}} | {{< yes >}} |
+| [タグの削除](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#delete-tag) | `DELETE` | `/v2/<name>/manifests/<reference>` | {{< yes >}} | {{< no >}} | {{< yes >}} |
+| [マニフェストの存在確認](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#existing-manifests) | `HEAD` | `/v2/<name>/manifests/<reference>` | {{< yes >}} | {{< no >}} | {{< yes >}} |
+| [マニフェストのプル](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#pulling-an-image-manifest) | `GET` | `/v2/<name>/manifests/<reference>` | {{< yes >}} | {{< no >}} | {{< yes >}} |
+| [マニフェストのプッシュ](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#pushing-an-image-manifest) | `PUT` | `/v2/<name>/manifests/<reference>` | {{< yes >}} | {{< no >}} | {{< no >}} |
+| [マニフェストの削除](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#deleting-an-image) | `DELETE` | `/v2/<name>/manifests/<reference>` | {{< yes >}} | {{< no >}} | {{< no >}} |
+| [blob の存在確認](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#existing-layers) | `HEAD` | `/v2/<name>/blobs/<digest>` | {{< yes >}} | {{< no >}} | {{< no >}} |
+| [blob のプル](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#fetch-blob) | `GET` | `/v2/<name>/blobs/<digest>` | {{< yes >}} | {{< yes >}} | {{< yes >}} |
+| [blob の削除](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#delete-blob) | `DELETE` | `/v2/<name>/blobs/<digest>` | {{< yes >}} | {{< no >}} | {{< no >}} |
+| [blob アップロード開始](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#starting-an-upload) | `POST` | `/v2/<name>/blobs/uploads/` | {{< yes >}} | {{< yes >}} | {{< no >}} |
+| [blob アップロード状態確認](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#get-blob-upload) | `GET` | `/v2/<name>/blobs/uploads/<uuid>` | {{< yes >}} | {{< yes >}} | {{< no >}} |
+| [blob チャンクプッシュ](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#chunked-upload-1) | `PATCH` | `/v2/<name>/blobs/uploads/<uuid>` | {{< yes >}} | {{< yes >}} | {{< no >}} |
+| [blob アップロード完了](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#put-blob-upload) | `PUT` | `/v2/<name>/blobs/uploads/<uuid>` | {{< yes >}} | {{< yes >}} | {{< no >}} |
+| [blob アップロードキャンセル](https://gitlab.com/gitlab-org/container-registry/-/blob/master/docs/spec/api.md#canceling-an-upload) | `DELETE` | `/v2/<name>/blobs/uploads/<uuid>` | {{< yes >}} | {{< yes >}} | {{< no >}} |
 
 `*` 理由と方法については[レジストリと Rails の連携リスト](#from-gitlab-rails-to-registry)を参照してください。
 

@@ -5,11 +5,11 @@ twitter_image: /images/tweets/handbook-marketing.png
 twitter_site: '@gitlab'
 twitter_creator: '@gitlab'
 upstream_path: /handbook/marketing/marketing-operations/campaign-operations/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T13:54:00+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-19T12:08:56-07:00"
+lastmod: "2026-08-28T11:36:35-06:00"
 ---
 
 ## 概要
@@ -34,7 +34,7 @@ Marketo キャンペーン/プログラムの作成とサポートは Marketing 
 
 - [Sales Nominated Invitations](/handbook/marketing/lifecycle-marketing/email-processes-requests/#sales-nominated-flows-in-marketo)
 - [Marketo Program + Salesforce Campaigns](/handbook/marketing/marketing-operations/campaigns-and-programs/#marketo-program-and-salesforce-campaign-set-up)
-- [Workshop Landing Page and Marketo Setup](/handbook/marketing/field-marketing/field-marketing-owned-virtual-events/#virtual-workshop-logistical-set-up)
+- [Workshop Landing Page and Marketo Setup](/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events/#virtual-workshop-logistical-set-up)
 
 ## プロジェクト管理
 <!-- DO NOT CHANGE THIS ANCHOR -->
@@ -67,7 +67,7 @@ MktgOps の SLA は 7 営業日であることに注意してください。事�
 
 ### Regional Marketing
 
-このプロセスに関連する Regional Marketing の SLA については [こちら](/handbook/marketing/field-marketing/#slas) を参照してください。
+このプロセスに関連する Regional Marketing の SLA については [こちら](/handbook/marketing/growth-marketing/regional-marketing/#slas) を参照してください。
 
 ### トリアージステップ
 <!-- DO NOT CHANGE THIS ANCHOR -->
@@ -150,7 +150,7 @@ Regional Marketer/Event Manager が特定の時間を指定しない場合、メ
      `<tr class="mktoModule" id="bgImagewText4990312b-fd20-449c-a184-d0500cdcc1aa" mktoname="Background Image with CTA">
                         <td background="${heroBackgroundImage}" bgcolor="#171321" valign="middle" style="max-width: 600px; width: 100%; text-align: center; height: 200px; background-repeat:no-repeat ;background-position: 100% !important; background-size: cover !important; border-bottom: 4px solid #171321;" width="100%" height="auto">`
     - コードの編集を保存した後、既存のヘッダーをクリックすると、Variable サイドバーが表示されます。新しい透明な画像を `Hero Background Image` セクションに追加し、リンクとボタンのコピーを確認します
-    - 専用画像を使用するすべてのメールは、さまざまなクライアントでのプレビューのために [Litmus に送信](/handbook/marketing/marketing-operations/litmus/#steps-to-test-an-email) する必要があります。確認すべきものについては Litmus ページを参照してください。
+    - 専用画像を使用するすべてのメールは、さまざまなクライアントでのプレビューのために [Inbox Monster に送信](/handbook/marketing/marketing-operations/inbox-monster/#steps-to-test-an-email) する必要があります。確認すべきものについては Inbox Monster ページを参照してください。
 - メールやその他の用途で utm 値付きの URL を使用する場合、Marketo ページの URL (page.gitlab.com で始まる) は `?` の前のページ URL の末尾に `/` を含めてはいけません。これによりページがリダイレクトされる可能性があります。(正しい例: `https://page.gitlab.com/webcast-example?{{my.utm}}`)。
 - メールやその他の用途で utm 値付きの URL を使用する場合、about.gitlab.com ページの URL (about.gitlab.com で始まる) は `?` の前のページ URL の末尾に `/` を含める必要があります。`/` を省略すると、ページにフォームが表示されない可能性があります。(正しい例: `https://about.gitlab.com/webcast-example/?{{my.utm}}`)。
 - ローカライズメールの場合は、必ず [Localized Email Snippet](/handbook/marketing/marketing-operations/marketo/#snippets) を使用してください

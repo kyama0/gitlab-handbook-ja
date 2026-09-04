@@ -2,11 +2,11 @@
 title: "Geo とディザスタリカバリ"
 description: "Geo チームに関する情報"
 upstream_path: "/handbook/engineering/infrastructure-platforms/tenant-scale/geo/"
-upstream_sha: "1099e381063485f55ad7088a1ce8b80dd7077696"
-translated_at: "2026-08-11T06:08:21+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T12:16:50+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-10T14:49:33+10:00"
+lastmod: "2026-08-29T07:56:36+10:00"
 ---
 
 ## Geo チーム
@@ -15,11 +15,11 @@ lastmod: "2026-08-10T14:49:33+10:00"
 
 ### チームメンバー
 
-{{< team-by-manager-slug manager="thiagocsf" team="Geo" >}}
+{{< team-by-manager-slug manager="thiagofigueiro" department="Geo Team" >}}
 
 ### Stable Counterparts
 
-{{< engineering/stable-counterparts role="Geo" manager-role="Fullstack Engineering Manager, Geo" >}}
+{{< engineering/stable-counterparts role="Geo" manager="thiagofigueiro" >}}
 
 ## 目標と優先事項
 
@@ -52,7 +52,7 @@ Geo はデータの冗長性を提供します。お客様は別の場所にデ�
 
 ### サポートを依頼する前に
 
-サポートリクエストを提出する前に、Geo の[ドキュメント](https://docs.gitlab.com/ee/administration/geo/)、[ディザスタリカバリ](https://docs.gitlab.com/ee/administration/geo/disaster_recovery/)ドキュメント、[バックアップとリストア](https://docs.gitlab.com/ee/administration/backup_restore/)ドキュメント、Geo ハンドブックページを確認するか、[Geo Customers プロジェクト](https://gitlab.com/gitlab-com/geo-customers)の以前のお客様 Issue を検索してください。質問への回答がそこで見つかる可能性があります。**RFH を提出する前に、まず Geo サポート Pod チャンネル `#spd_pod_geo` にお問い合わせください。**
+サポートリクエストを提出する前に、Geo の[ドキュメント](https://docs.gitlab.com/ee/administration/geo/)、[ディザスタリカバリ](https://docs.gitlab.com/ee/administration/geo/disaster_recovery/)ドキュメント、[バックアップとリストア](https://docs.gitlab.com/ee/administration/backup_restore/)ドキュメント、Geo ハンドブックページを確認するか、以前の[サポートリクエスト](https://gitlab.com/gitlab-com/request-for-help/-/issues/?sort=created_date&state=all&label_name%5B%5D=Help%20group%3A%3AGeo&first_page_size=100)を検索してください。質問への回答がそこで見つかる可能性があります。**RFH を提出する前に、まず Geo サポート Pod チャンネル `#spt_pod_geo` にお問い合わせください。**
 
 ### 一般的な質問をする
 
@@ -60,30 +60,9 @@ Geo はデータの冗長性を提供します。お客様は別の場所にデ�
 
 ### サポートリクエスト Issue を作成する
 
-お客様が Geo チームの支援を必要とする場合、Issue の使用を好みます。これにより、作業を優先順位付けし、Slack の保存ポリシーが適用された際に履歴を失わずコンテキストを維持することができます。リクエスターには [Geo Customers プロジェクト](https://gitlab.com/gitlab-com/geo-customers)で Issue を作成するようお願いしています。
+お客様が Geo チームの支援を必要とする場合、Issue の使用を好みます。これにより、作業を優先順位付けし、Slack の保存ポリシーが適用された際に履歴を失わずコンテキストを維持することができます。リクエスターには [Request for Help プロジェクト](https://gitlab.com/gitlab-com/request-for-help)で Issue を作成するようお願いしています。
 
-Geo 関連の質問には [Geo サポートリクエスト Issue テンプレート](https://gitlab.com/gitlab-com/geo-customers/-/blob/master/.gitlab/issue_templates/Support%20Request%20-%20Geo.md)を、バックアップとリストア機能エリアに関連する Issue には [バックアップとリストアサポートリクエスト Issue テンプレート](https://gitlab.com/gitlab-com/geo-customers/-/blob/master/.gitlab/issue_templates/Support%20Request%20-%20Backup%20and%20Restore.md)を必ず使用して記入してください。リクエスターは「お客様情報」と「サポートの質問」セクション**のみ**を記入する必要があります。
-
-[コラボレーションテンプレート](https://gitlab.com/gitlab-com/geo-customers/-/issues/new?issuable_template=Support%20Request%20-%20Collaboration)を除き、RFH はサポートチケットが開かれた後にサポートエンジニアが開く必要があります。
-
-[コラボレーションテンプレート](https://gitlab.com/gitlab-com/geo-customers/-/issues/new?issuable_template=Support%20Request%20-%20Collaboration)は、EM/PM/エンジニア側からのリクエストなど、コールへの参加リクエストに使用されます。
-
-**最低限、Zendesk のリンクとログは特に重要です。それらが欠けている場合、Issue は通常のトリアージプロセスに入りません。Issue に 2 週間更新がない場合、EM/PM/担当者によって自動的にクローズされます。**
-
-また、RFH Issue のトリアージプロセスがあります。詳細は[プロセス](/handbook/engineering/infrastructure-platforms/tenant-scale/geo/process/#engineering-customersupport-rotation-process)を参照してください。
-
-リクエストに優先度ラベルを割り当てることができます。Geo チームメンバーまたは PM が Issue のトリアージ中にこの優先度の割り当てを確認します。優先度レベルと期待される応答時間の参考として以下のテーブルを使用してください。
-
-| 優先度 | 通常の使用シナリオ | 期待される最初の応答時間 |
-| ---      | ---   |  ------  |
-| P4          | Geo エンジニアが Slack 上で即答できず、もう少し調査が必要な一般的な質問 | 2〜3 日 |
-| P3          | 時間的に緊急でない（つまり、簡単な回避策がある）お客様の問題、または将来的にお客様が目標を達成するための関与スケジュール | 1 日 |
-| P2          | 時間的にやや緊急で、お客様側での決定や進捗を妨げているお客様の問題 | 半日 |
-| P1          | お客様が経験している緊急事態 | 1〜2 時間 |
-
-\* 応答時間は平日（祝日を除く）のチームメンバーが所在するタイムゾーンの通常業務時間内を基準としています。
-
-\* 停止やその他の緊急事態は GitLab の[インシデント管理](/handbook/engineering/infrastructure-platforms/incident-management/)プロセスを通じて対処すべきです。
+Geo 関連の質問には [Geo サポートリクエスト Issue テンプレート](https://gitlab.com/gitlab-com/request-for-help/-/blob/main/.gitlab/issue_templates/SupportRequestTemplate-Geo.md)を、バックアップとリストア機能エリアに関連する Issue には [バックアップとリストアサポートリクエスト Issue テンプレート](https://gitlab.com/gitlab-com/request-for-help/-/blob/main/.gitlab/issue_templates/SupportRequestTemplate-BackupAndRestore.md)を必ず使用して記入してください。リクエスターは「お客様情報」と「サポートの質問」セクション**のみ**を記入する必要があります。
 
 ## よく使うリンク
 

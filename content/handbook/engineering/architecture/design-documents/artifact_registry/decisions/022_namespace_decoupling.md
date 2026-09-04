@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "不変なスラッグと仮想アンカータプルを持つ内部ネームスペースエンティティを導入し、Artifact Registry を Rails の内部識別子から切り離す提案"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling/
-upstream_sha: 6eef8dbb6a0d15167aa5378f476b04cd38b78675
-lastmod: "2026-07-06T09:56:59+10:00"
-translated_at: "2026-07-10T20:55:36+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+lastmod: "2026-08-17T15:27:08+02:00"
+translated_at: "2026-09-04T11:43:17+09:00"
 translator: claude
 stale: false
 ---
@@ -92,11 +92,15 @@ CREATE TABLE namespaces (
 ```
 
 - `slug` は作成後は不変。
-- `entity_id` は不透明な文字列（`TEXT`）であり、基となる値が数値（例: Rails の
-  `organization_id`）であっても同様。これにより、将来のアンカーが非数値の識別子を使用する可能性があるため、アンカー型をまたいで
-  スキーマが統一される。Artifact Registry は外部エンティティのセマンティクスを決して解釈しない。
+- `entity_id` は、値の形式にかかわらず不透明な文字列（`TEXT`）である。一部のアンカー型では数値、
+  その他では UUID となる。Artifact Registry は外部エンティティのセマンティクスを決して解釈せず、値が
+  どのエンティティを識別するかは `entity_type` がコンシューマーに示す。
 - `(platform, entity_type, entity_id)` の一意制約が、重複するアンカーを防ぐ。
-- Organization v1 では、すべての行が `('gitlab', 'organization', '<rails_org_id>')` を持つ。
+- Organization v1 では、すべての行が `('gitlab', 'organization', '<organizations.uuid>')`、つまり数値の
+  `organizations.id` ではなく Organization の UUIDv7 を持つ。IAM の Relationships API は、UUIDv7 ではないオブジェクト ID が含まれる
+  リクエスト全体を拒否するため、数値 ID では Organization の祖先を指定できなかった。
+- Organization の値には、これ以外の一意制約を設定してはならない。[Organization のマージ](#organization-merges)では、
+  存続する 1 つの Organization が複数のネームスペースを保持できなければならないためである。
 - 将来のアンカー型は、異なる `entity_type` の値を持つ行を追加する。スキーマのマイグレーションは不要。
 - `billing_entity_type` と `billing_entity_id` は、使用状況イベントの課金アンカーを識別する。AR はこれらを
   解釈することなく、すべての課金イベントにスタンプする。Core Module (Rails) がネームスペース作成時にこれらの値を

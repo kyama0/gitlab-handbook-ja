@@ -1,11 +1,11 @@
 ---
 title: "Executive Business Administrators (EBAs)"
 upstream_path: /handbook/eba/
-upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
-translated_at: "2026-07-25T06:36:16+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T11:16:44+09:00"
 translator: claude
 stale: false
-lastmod: 2026-07-24T07:25:48-07:00
+lastmod: 2026-08-26T14:00:52-04:00
 ---
 
 ## はじめに
@@ -19,10 +19,12 @@ lastmod: 2026-07-24T07:25:48-07:00
 | 組織 |  エグゼクティブサポート職務  | エグゼクティブ  |
 | --- | --- | --- |
 | [CEO](/job-description-library/chief-executive-officer/) | **Jeanne Rotenberry**<br>Staff EBA | Bill Staples (CEO) |
-| [Engineering](/handbook/engineering/) | **Vange Ingan**<br>Sr EBA（休職中）<br> **Sara Jamieson**（暫定カバー）| Siva Padisetty (CTO) |
-| [Engineering](/handbook/engineering/) | **Liki Simonot**<br>Sr EBA | <br>Tim Zallmann (VP of Engineering, Core Development)<br>Michael Wildpaner (VP Engineering) |
-| [Engineering](/handbook/engineering/) | **Kyra Wright**<br>EBA | Johnny Scarborough (VP of Support)<br>Nitin Singhal (VP Data Eng & Monitization) |
-| Enterprise Technology & AI | **Christina Lettire**<br>Sr EBA  | Manu Narayan (CIO)<br>Amie Bright (VP, Data) |
+| [Engineering](/handbook/engineering/) | **Romney Wyatt**<br>Sr EBA | Siva Padisetty (CTO) |
+| [Engineering](/handbook/engineering/) | **Kyra Wright**<br>Sr EBA<br>（暫定）| <br>Tim Zallmann (VP of Engineering, Core Development)<br>Michael Wildpaner (VP Engineering) |
+| [Engineering](/handbook/engineering/) | **Kyra Wright**<br>Sr EBA | Kimberly Wolk (VP of DevOps)<br>Nitin Singhal (VP Data Eng & Monitization) |
+| [Engineering](/handbook/engineering/) | **Charlotte Nguyen**<br>Sr EA | Mani Sundaram (VP of Platforms Eng)<br>Kranthi Erusu (VP of Scale & Architecture)<br>Rishi Rangarajan (Chief of Staff to CTO) |
+| Enterprise Technology & AI | **Mary Moreno**<br>Sr EBA  | Manu Narayan (CIO) |
+| Enterprise Technology & AI | **Christine Baez**<br>Sr EBA  | Namo Tiwari (VP Business Systems)<br>Johnny Scarborough Jr (VP Support) |
 | [Finance](/handbook/finance/) | **Darci Tadich**<br>Staff EBA |  Jessica Ross (CFO) |
 | [Finance](/handbook/finance/) | **Sarah Chapman**<br>Sr EBA | Simon Mundy (Chief Accounting Officer)<br>Danielle Ritter (VP of Internal Audit)<br>Danelle Foust (VP Corporate Controller) |
 | [Finance](/handbook/finance/) | **Anita Mall**<br>Sr EBA | James Shen (VP of FP&A)<br>Jim Gladen (VP of Tax )<br>Yao Chew (VP of Investor Relations) |

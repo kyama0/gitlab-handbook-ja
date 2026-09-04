@@ -1,21 +1,25 @@
 ---
 title: "クラウドコスト最適化チーム"
 upstream_path: "/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/"
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-translated_at: "2026-07-31T08:13:25+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T12:16:50+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T09:36:21+02:00"
+lastmod: "2026-08-28T14:27:26+10:00"
 ---
 
 [クラウドコスト最適化機能](../../../../../job-description-library/engineering/infrastructure/site-reliability-engineer#finops)は、サイトリライアビリティエンジニアリング（SRE）とソフトウェアエンジニアリング（SWE）の両方の経験を持ち、これらのスキルを活用してクラウドサービスとデータリソースの財務運営を最適化します。この技術的専門知識により、財務目標との整合を確保するだけでなく、スケールでの運用効率を推進できます。クラウドのコスト構造、インフラストラクチャ、データ管理、および自動化に対するチームの深い理解により、コスト配分から詳細な分析まで、クラウド消費のライフサイクル全体を管理しながら、現代のクラウド環境で求められる高い信頼性とパフォーマンスの基準を維持しています。
 
 |  |  |
 |--|--|
-| チーム | EM: @lmcandrew, SRE: @tonyganga, @irotman |
 | Issue トラッカー | [クラウドコスト最適化 Issue トラッカー](https://gitlab.com/gitlab-com/gl-infra/finops/team/-/boards/5046766) |
 | フレームワークボード | [クラウドコスト最適化フレームワークアクティビティ](https://gitlab.com/gitlab-com/gl-infra/finops/team/-/boards/5046766?group_by=epic) |
 | Slack | [#g_cloud-cost-utilization](https://gitlab.enterprise.slack.com/archives/C09MUMXRECC) |
+| Teamdeck | [Teamdeck](https://gitlab-com.gitlab.io/gl-infra/finops/teamdeck/)（チームメンバーのみ。[Teamdeck セクション](#teamdeck)を参照） |
+
+## チームメンバー
+
+{{< team-by-manager-slug manager="galon3" department="Production Engineering Cloud Cost Utilization Team" >}}
 
 ## コア責任
 
@@ -77,7 +81,7 @@ DM やアドホックなリクエストは重複した作業や文脈の見落�
 
 ## ステークホルダーの教育
 
-- ステークホルダーには、データリポジトリにアクセスし、ユースケースとビューの所有権を持つことを奨励します。私たちは有用と判断したデータが[データウェアハウス](../../../../enterprise-data/platform/)に入るよう最善を尽くします。
+- ステークホルダーには、データリポジトリにアクセスし、ユースケースとビューの所有権を持つことを奨励します。私たちは有用と判断したデータが[データウェアハウス](../../../../enterprise-data/platform/_index.md)に入るよう最善を尽くします。
 
 > **重要:** クラウドコスト最適化チームは、他のチームのためのダッシュボード（Tableau を含む）を作成・維持しません。これはビジネスステークホルダーに存在するドメイン知識の深さが必要なためです。ビジネス全体のダッシュボードを作成することは、小規模なチームにとってスケーラブルではなく、コスト分析と最適化というコア責任から離れてしまいます。
 
@@ -98,3 +102,27 @@ DM やアドホックなリクエストは重複した作業や文脈の見落�
 1. **FinOps Exec Overview** — Sybe（@stigchelaar）を直接支援する、クラウドコストのエグゼクティブレベルのビューです。[ソースリポジトリ](https://gitlab.com/gitlab-com/gl-infra/finops/executive-overview)
 1. **CCU レポート** — Grafana のクラウドコストレポートです。[Cloud Cost Utilization フォルダ](https://dashboards.gitlab.net/dashboards/f/cloud-cost-utilization/cloud-cost-utilization)
 1. **クラウドコストデータモデル** — FOCUS ベースのクラウドコストデータモデルは、[sqlmesh-catalog の cloud_cost カタログ](https://gitlab-com.gitlab.io/gl-infra/data/sqlmesh-catalog/catalog/cloud_cost/)で確認できます。
+
+## Teamdeck
+
+[Teamdeck](https://gitlab-com.gitlab.io/gl-infra/finops/teamdeck/) は CCU チーム独自の資料です。私たちが重視するデータを、必要な形で整理、可視化、操作するための 1 つの場所です。上記の[レポーティング](#reporting)の多くは他のステークホルダー向けに構築されています。Teamdeck は意図的にその逆で、チームとしての私たちに関連するビューです。また、トピックごとに個別の GitLab Pages サイトを作成する代わりに、この種の資料をまとめる 1 つの場所を提供します。
+
+これは GitLab Pages にデプロイされる小規模な Web アプリです。`gitlab-infra-data.cloud_cost` BigQuery データセットからエクスポートされたスナップショットを読み取ります。スナップショットはスケジュールされた CI ジョブによって毎日更新されるため、誰もがデータウェアハウスへのアクセスや手元のクエリを必要とせずにページを読み込めます。
+
+現在含まれているもの:
+
+1. [**コスト配分**](https://gitlab-com.gitlab.io/gl-infra/finops/teamdeck/cost-allocation): クラウド支出がプロバイダーからコストバケットへどう流れるかを示す Sankey ダイアグラム。`service_catalog` バケットは `gl_service` ラベルごとに分類されます。これは現在実際に実装されている配分であり、`unallocated`（分類ルールに一致しない）と `unlabelled`（サービスラベルがない）を第一級のカテゴリとして表示します。
+1. [**使用量と利用率**](https://gitlab-com.gitlab.io/gl-infra/finops/teamdeck/usage-utilization): GKE ワークロードが namespace ごとに実際の使用量に対してどれだけ予約しているか、その予約のうち安全に解放できる量。
+1. [**コスト帰属**](https://gitlab-com.gitlab.io/gl-infra/finops/teamdeck/cost-attribution): 私たちが目指しているコスト帰属モデルをモックデータで示したもの。
+1. [**サービスカタログアーキテクチャ**](https://gitlab-com.gitlab.io/gl-infra/finops/teamdeck/service-catalog-architecture): 現在のサービスカタログデータの流れと、サービスカタログのマイグレーションによって今後どう変わるか。
+
+使用方法:
+
+1. Issue やディスカッションで共有する参照資料として使用し、会話ごとに数値を導き直すのではなく、同じ図を基に議論します。
+1. `unallocated` と `unlabelled` が可視カテゴリとして表示されるため、コスト配分とラベルのカバレッジをレビューします。これにより、[ラベリング戦略](labeling-strategy)のロールアウトにおけるギャップを簡単に見つけられます。
+1. 利用率ペインからリソース最適化の候補を見つけます。
+1. 帰属やサービスカタログのデータフローなどの概念を、ドキュメントではなくダイアグラムで説明します。
+
+Teamdeck は、時間の経過とともにニーズに合わせて適応させる生きた資料であることを意図しています。チームメトリクス、プロジェクト、ロードマップは、さらにペインとして加える候補です。これはチーム向けのツールであり、他チーム向けのダッシュボードサービスではないことに注意してください。上記の[ステークホルダーの教育](#educating-stakeholders)を参照してください。
+
+ソースは [gitlab-com/gl-infra/finops/teamdeck](https://gitlab.com/gitlab-com/gl-infra/finops/teamdeck) にあります。README にはローカル開発が記載され、`docs/adr/` には設計上の決定が記録されています。コントリビューションや提案を歓迎します。できればそのプロジェクトの Issue または MR として提出してください。コストの数値は社内機密であるため、デプロイされたサイトへのアクセスはプロジェクトメンバーに制限されています。作成の背景と根拠は [finops/team#433](https://gitlab.com/gitlab-com/gl-infra/finops/team/-/work_items/433)に記載されています。

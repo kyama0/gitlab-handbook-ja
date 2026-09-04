@@ -2,11 +2,11 @@
 title: "データチーム CI ジョブ"
 description: "GitLab データチーム CI ジョブ"
 upstream_path: /handbook/enterprise-data/platform/ci-jobs/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:34:22+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T12:58:42+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T11:24:54+00:00"
+lastmod: "2026-08-17T14:13:39+02:00"
 ---
 
 ---
@@ -120,28 +120,15 @@ raw、prod、prep を強制的にリフレッシュしたい場合に実行し�
 
 これらのジョブは [`snowflake-dbt-ci.yml`](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/snowflake-dbt-ci.yml) で定義されています。
 
-> DBT モデル変更 MR の一部として、変更が本番環境を壊さないことをテストするためにパイプラインジョブをトリガーする必要があります。これらのジョブをトリガーするには、この MR の下部にある「Pipelines」タブに移動し、適切なステージ（dbt_run または dbt_misc）をクリックします。
+> dbt モデル変更 MR の一部として、変更が本番環境を壊さないことをテストするためにパイプラインジョブをトリガーする必要があります。`dbt_run` ステージの `build_changes` を使用することを推奨します。
 
-これらのジョブは `ci` ターゲットにスコープされています。このターゲットは Snowplow とバージョンデータセットのデータのサブセットを選択します。
+これらのジョブは `ci` ターゲットにスコープされており、Snowplow とバージョンデータセットのデータのサブセットを選択します。コンパイルされたコードと実行結果を含むジョブアーティファクトは、すべての dbt 実行ジョブで利用できます。
 
-dbt 実行ジョブではすべてのジョブアーティファクトが利用可能です。コンパイルされたコードと実行結果が含まれます。
+ほとんどの dbt 実行ジョブは、テストが必要な dbt モデルとその他の入力を指定する変数でパラメーター化できます。
 
-これらのジョブはプライマリの `RAW` データベースに対して実行されます。
+**注:** `build_changes` と `custom_invocation` のパラメーターは、GitLab CI/CD の[ジョブ入力](https://docs.gitlab.com/ee/ci/inputs/)を使って定義されています。**Run pipeline** からこれらのジョブを手動でトリガーすると、自由入力の変数キーと値のペアではなく、型付き入力フォームが表示されます。
 
-ほとんどの dbt 実行ジョブは、テストが必要な dbt モデルを指定する変数でパラメーター化できます。
-
-変数 `SELECTION` は [dbt ドキュメントのモデル選択構文](https://docs.getdbt.com/reference/node-selection/syntax#section-specifying-models-to-run)の例のいずれかを表すプレースホルダーです。
-
-`data-tests` プロジェクトのテストへの変更をテストする場合は、手動ジョブにブランチ名とともに `DATA_TEST_BRANCH` を渡すことができます。これにより data-tests パッケージの `packages.yml` のブランチが更新されます。これは `dbt test` を実行するすべてのジョブで機能します。
-
-また、モデル選択の末尾に `--fail-fast` を追加することで、最初の失敗で dbt コールをすぐに終了できます。詳細については [dbt ドキュメント](https://docs.getdbt.com/reference/commands/run#failing-fast)を参照してください。
-
-利用可能なセレクターは [selector.yml](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/selectors.yml) ファイルで確認できます。dbt build コマンドは選択の一部であるすべてのシード、スナップショット、モデル、テストを実行します。これは以下のシナリオで役立ちます：
-
-- Airflow DAG の新しいセレクターのテスト
-- dbt 環境のバージョンアップグレードのテスト
-
-#### DBT CI ジョブのサイズ
+#### DBT CI ジョブのウェアハウスサイズ
 
 `🏗️🏭build_changes` または `🎛️custom_invocation` 経由で dbt ジョブを実行する場合は、CI ジョブで使用する Snowflake ウェアハウスのサイズを選択できます。利用可能なウェアハウスサイズは XS、M、L、XL です。CI ジョブを開始するときに `WAREHOUSE` 変数を設定することで行えます：
 
@@ -160,53 +147,59 @@ dbt 実行ジョブではすべてのジョブアーティファクトが利用�
 
 #### `🏗️🏭build_changes`
 
-このジョブはユーザーの設定なしにほとんどの dbt 変更で動作するよう設計されています。変更されたすべての新しいモデル、変更されたモデル、および変更されたモデルの間にあるすべてのモデルをクローン、実行、テストします。また、変更されたマクロに依存するモデルも特定し、ビルドプロセスに含めることで、影響を受けるすべてのコンポーネントの包括的なテストを確保します。
+このジョブは、ユーザー設定なしでほとんどの dbt 変更に対応するよう設計されています。新規または変更されたすべてのモデルと、リネージ上で変更されたモデルの間にあるモデルをクローン、実行、テストします。また、変更されたマクロに依存するモデルも特定し、ビルドプロセスに含めることで、影響を受けるすべてのコンポーネントの包括的なテストを確保します。
 
 選択に含まれないテーブルについては、[dbt ドキュメント](https://dbt.gitlabdata.com/)の最新バージョンに従ってライブデータベース（`PROD`、`PREP`、`RAW`）を参照します。ジョブが失敗する場合、コード自体の問題を示しており、変更を加える開発者が対処する必要があります。
 
-変更が このジョブのデフォルト選択から外れる場合は、以下の方法で設定できます：
+ジョブは初期状態でデフォルト設定を使って実行されます。トリガーするには、`build_changes` ジョブの横にある ▶️ を押すだけです。
+
+![build_changes のスクリーンショット](/images/enterprise-data/platform/ci-jobs/build-changes-screenshot.png)
+
+異なる設定が必要な場合は、次のように更新できます。
 
 - `WAREHOUSE`：デフォルトは `DEV_M` ですが `DEV_XS`、`DEV_L`、`DEV_XL` も受け付けます。
-- `CONTIGUOUS`：デフォルトは `True` ですが、変更されたモデルのみを実行するには `False` を受け付けます。`True` の場合は `DOWNSTREAM` や `EXCLUDE` などの他の設定は無視されます。
-- `SELECTION`：デフォルトは変更された SQL または CSV ファイルのリストですが、有効な dbt 選択ステートメントを受け付けます。他のモデル選択を上書きします。
-- `DOWNSTREAM`：デフォルトは `None` ですが、`plus` と `n-plus` 演算子を受け付けます。`CONTIGUOUS` が `True`（デフォルト）の場合 `DOWNSTREAM` はバイパスされます。そのため `DOWNSTREAM` を使用したい場合は `CONTIGUOUS` を手動で `False` に設定する必要があります。`SELECTION` を上書きする場合 `DOWNSTREAM` は影響しません。各演算子の詳細については[ドキュメント](https://docs.getdbt.com/reference/node-selection/graph-operators)を参照してください。
-- `FAIL_FAST`：デフォルトは `True` ですが、テストが失敗またはモデルが構築できない場合でも実行を継続するには `False` を受け付けます。詳細は[ドキュメント](https://docs.getdbt.com/reference/global-configs/failing-fast)を参照してください。
-- `EXCLUDE`：デフォルトは `None` ですが、任意の dbt ノード選択を受け付けます。`CONTIGUOUS` が `True` の場合 `EXCLUDE` はバイパスされます。詳細は[ドキュメント](https://docs.getdbt.com/reference/node-selection/exclude)を参照してください。
-- `FULL_REFRESH`：デフォルトは `False` ですが、インクリメンタル状態で実行されるテーブルを再クローンして再構築するには `True` を受け付けます。詳細は[ドキュメント](https://docs.getdbt.com/reference/commands/run#refresh-incremental-models)を参照してください。
-- `VARS`：デフォルトは `None` ですが、引用符付きキーバリューペアのカンマ区切りリストを受け付けます。例：`"key1":"value1","key2":"value2"`。
-- `RAW_DB`：デフォルトは `Live` ですが `Dev` を受け付けます。`Dev` を選択すると、ジョブはライブ `RAW` データベースのブランチ固有バージョンを使用し、明示的にロードされたデータのみが存在します。同じブランチで新しい extract に基づいて構築されるモデルをテストする際に必要です。
+- `CONTIGUOUS`：デフォルトは `true` です。`true`（デフォルト）の場合、`contiguous_list` セレクターを使って変更されたモデル間の連続したサブグラフ内にあるすべてのモデルを実行します。直接変更されたモデルのみを実行するには `false` に設定します。`DOWNSTREAM` と `EXCLUDE` は `CONTIGUOUS` が `false` の場合にのみ有効で、`true` の場合は無視されます。
+- `SELECTION`：デフォルトは変更された SQL または CSV ファイルのリストですが、有効な dbt 選択ステートメントを受け付けます。他のモデル選択を上書きします。利用可能なセレクターは [selector.yml](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/selectors.yml) ファイルで確認できます。
+- `DOWNSTREAM`：デフォルトは `None` ですが、`plus` と `n-plus` 演算子を受け付けます。`CONTIGUOUS` が `true`（デフォルト）の場合はバイパスされるため、使用するには `CONTIGUOUS` を `false` に設定します。`SELECTION` を上書きする場合、`DOWNSTREAM` は影響しません。各演算子の詳細については[ドキュメント](https://docs.getdbt.com/reference/node-selection/graph-operators)を参照してください。
+- `FAIL_FAST`：CI でのデフォルトは `true` ですが、テストが失敗またはモデルが構築できない場合でも実行を継続するには `false` を受け付けます。詳細は[ドキュメント](https://docs.getdbt.com/reference/global-configs/failing-fast)を参照してください。ローカルでのデフォルトは `false` です。
+- `EXCLUDE`：デフォルトは `None` ですが、任意の dbt ノード選択を受け付けます。`CONTIGUOUS` が `true` の場合はバイパスされます。詳細は[ドキュメント](https://docs.getdbt.com/reference/node-selection/exclude)を参照してください。
+- `FULL_REFRESH`：デフォルトは `false` ですが、それ以外ではインクリメンタルに実行されるテーブルを再クローンして再構築するには `true` を受け付けます。詳細は[ドキュメント](https://docs.getdbt.com/reference/commands/run#refresh-incremental-models)を参照してください。
+- `VARS`：デフォルトは `None` ですが、`key:value` ペアのカンマ区切りリスト（例: `key1:value1, key2:value2`）を受け付けます。`only_force_full_refresh()` を使うモデルでは、`FULL_REFRESH=true` とともに `VARS=full_refresh_force:true` を設定します。
+- `RAW_DB`：デフォルトは `Live` ですが `Dev` を受け付けます。`Dev` を選択すると、ジョブはライブ `RAW` データベースのブランチ固有バージョンを使用するため、明示的にロードされたデータのみが存在します。同じブランチで新しい抽出データに基づいて構築されるモデルをテストする際に必要です。
+
+![build_changes の入力](/images/enterprise-data/platform/ci-jobs/build-changes-inputs.png)
 
 このジョブをマージリクエストパイプラインで実行すると、プロジェクトボットからのコメントとしてマージリクエストに直接追加される出力レポートが生成されます。このレポートはジョブの結果を要約し、合計実行時間、モデル数、実行されたモデル、1 時間以上実行されたモデルを表示します。このレポートはマージリクエストに {{< label name="Supress Results Report" >}} ラベルを追加することで抑制できます。
 
 <details markdown="1">
-<summary>クロスウォーク</summary>
+<summary>CI ジョブリファレンス</summary>
 
-|変更の例 | 以前の CI プロセス | 新しい CI プロセス|
-| --- | --- | --- |
-| 小さなテーブルやビューにカラムを追加 | <ol><li>🏗️🔆run_changed_️clone_model_dbt_select</li><ul><li>ANCESTOR_TYPE : +</li></ul><li>🏗🛺️run_changed_models_sql</li></ol> | <ol><li>🏗️🏭build_changes</li><ul><li>WAREHOUSE : DEV_XS</li></ul></ol> |
-| カラムの説明を更新 | <ol><li>📚✏️generate_dbt_docs</li></ol> | <ol><li>📚✏️generate_dbt_docs</li></ol> |
-| 小さな dbt スナップショットを更新または作成 | <ol><li>🥩clone_raw_full</li><li>🐭🥩specify_raw_model</li><ul><li>DBT_MODELS : snapshot_name</li></ul></ol> | <ol><li>🏗️🏭build_changes</li><ul><li>WAREHOUSE : DEV_XS</li></ul></ol> |
-| シードを追加または更新 | <ol><li>🌱specify_csv_seed</li><ul><li>DBT_MODELS : seed_name</li></ul></ol> | <ol><li>🏗️🏭build_changes</li><ul><li>WAREHOUSE : DEV_XS</li><li>FULL_REFRESH : True</li></ul></ol> |
-| モデルを更新してダウンストリームへの影響をテスト | <ol><li>🏗️🔆run_changed_️clone_model_dbt_select</li><ul><li>DEPENDANT_TYPE : +</li><li>ANCESTOR_TYPE: +1</li></ul><li>🏗🛺️run_changed_models_sql</li><ul><li>DEPENDANT_TYPE : +</li></ul></ol> | <ol><li>🏗️🏭build_changes</li><ul><li>WAREHOUSE : DEV_XS</li><li>DOWNSTREAM : +</li></ul></ol> |
-| モデルを更新して特定のモデルをテスト | <ol><li>🔆⚡️clone_model_dbt_select</li><ul><li>DBT_MODELS : 1+specific_models+1</li></ul><li>🐭specify_model</li><ul><li>DBT_MODELS : specific_models+1</li></ul></ol> | <ol><li>🏗️🏭build_changes</li><ul><li>WAREHOUSE : DEV_XS</li><li>SELECTION : specific_models+1</li></ul></ol> |
-| フルリフレッシュなしでインクリメンタルモデルを変更 | <ol><li>🏗️🔆run_changed_️clone_model_dbt_select</li><ul><li>ANCESTOR_TYPE : +</li></ul><li>🏗️🛺🐘run_changed_models_sql_xl</li><ul><li>REFRESH : ' ' </li></ul></ol>| <ol><li>🏗️🏭build_changes</li></ul></ol> |
-| フルリフレッシュありでインクリメンタルモデルを変更 | <ol><li>🏗️🔆run_changed_️clone_model_dbt_select</li><ul><li>ANCESTOR_TYPE : +</li></ul><li>🏗️🛺🐘run_changed_models_sql_xl</li></ol> | <ol><li>🏗️🏭build_changes</li><ul><li>FULL_REFRESH : True</li></ul></ol>|
-| モデルを更新してダウンストリームへの影響をテストし特定のモデルをスキップ | <ol><li>🏗️🔆run_changed_️clone_model_dbt_select</li><ul><li>DEPENDANT_TYPE : +</li><li>ANCESTOR_TYPE: +1</li></ul><li>🐘specify_xl_model</li><ul><li>DBT_MODELS : specific_model+ --exclude other_model</li></ul></ol> | <ol><li>🏗️🏭build_changes</li><ul><li>EXCLUDE : other_model</li><li>DOWNSTREAM : +</li></ul></ol> |
-| 変数が必要なモデルを変更 | NA | <ol><li>🏗️🏭build_changes</li><ul><li>VARS : "key1":"value1","key2":"value2"</li></ul></ol> |
-| 変更してすべてのエラーを確認 | <ol><li>🏗️🔆run_changed_️clone_model_dbt_select</li><ul><li>ANCESTOR_TYPE : +</li></ul><li>🏗🛺️run_changed_models_sql</li></ol> | <ol><li>🏗️🏭build_changes</li><ul><li>WAREHOUSE : DEV_XS</li><li>FAIL_FAST : False</li></ul></ol> |
-| セレクターを使用または変更 | <ol><li>➕🐘🏭⛏specify_selector_build_xl</li><ul><li>DBT_SELECTOR : customers_source_models</li></ul></ol> | <ol><li>🎛️custom_invocation</li><ul><li>STATEMENT : build --selector customers_source_models</li></ul></ol> |
-| 同じ MR で新しい Sheetload 上に構築されたモデルを追加 | <ol><li>❄️ Snowflake: clone_raw_sheetload</li><li>Extract: sheetload</li><li>specify_raw_model</li><ul><li>DBT_MODELS : sheetload_file_name_source</li></ul></ol> | <ol><li>❄️ Snowflake: clone_raw_sheetload</li><li>Extract: sheetload</li><li>🏗️🏭build_changes</li><ul><li>RAW_DB : Dev</li></ul></ol> |
+| 変更例 | 推奨 CI ジョブと入力 |
+| --- | --- |
+| 小さなテーブルやビューにカラムを追加 | <ol><li>🏗️🏭build_changes</li><ul><li>WAREHOUSE : DEV_XS</li></ul></ol> |
+| カラムの説明を更新 | <ol><li>📚✏️generate_dbt_docs</li></ol> |
+| 小さな dbt スナップショットを更新または作成 | <ol><li>🏗️🏭build_changes</li><ul><li>WAREHOUSE : DEV_XS</li></ul></ol> |
+| シードを追加または更新 | <ol><li>🏗️🏭build_changes</li><ul><li>WAREHOUSE : DEV_XS</li><li>FULL_REFRESH : true</li></ul></ol> |
+| モデルを更新してダウンストリームへの影響をテスト | <ol><li>🏗️🏭build_changes</li><ul><li>WAREHOUSE : DEV_XS</li><li>CONTIGUOUS : false</li><li>DOWNSTREAM : +</li></ul></ol> |
+| モデルを更新して特定のモデルをテスト | <ol><li>🏗️🏭build_changes</li><ul><li>WAREHOUSE : DEV_XS</li><li>SELECTION : specific_models+1</li></ul></ol> |
+| フルリフレッシュなしでインクリメンタルモデルを変更 | <ol><li>🏗️🏭build_changes</li></ol> |
+| フルリフレッシュありでインクリメンタルモデルを変更 | <ol><li>🏗️🏭build_changes</li><ul><li>FULL_REFRESH : true</li></ul></ol> |
+| モデルを更新してダウンストリームへの影響をテストし、特定のモデルをスキップ | <ol><li>🏗️🏭build_changes</li><ul><li>CONTIGUOUS : false</li><li>EXCLUDE : other_model</li><li>DOWNSTREAM : +</li></ul></ol> |
+| 変数が必要なモデルを変更 | <ol><li>🏗️🏭build_changes</li><ul><li>VARS : key1:value1,key2:value2</li></ul></ol> |
+| 変更してすべてのエラーを確認 | <ol><li>🏗️🏭build_changes</li><ul><li>WAREHOUSE : DEV_XS</li><li>FAIL_FAST : false</li></ul></ol> |
+| セレクターを変更または使用 | <ol><li>🎛️custom_invocation</li><ul><li>STATEMENT : build --selector customers_source_models</li></ul></ol> |
+| 同じ MR で新しい Sheetload 上に構築されたモデルを追加 | <ol><li>❄️ Snowflake: clone_raw_sheetload</li><li>Extract: sheetload</li><li>🏗️🏭build_changes</li><ul><li>RAW_DB : Dev</li></ul></ol> |
 
 </details>
 
 #### `🎛️custom_invocation`
 
-このジョブは他のあらかじめ設定されたジョブでは解決できないエッジケースに対応するために設計されています。ジョブは選択されたウェアハウスを使用して提供された dbt コマンドを処理します。`defer` コマンドの場合、参照 `manifest.json` は `--state reference_state` を使用して参照できます。
+このジョブは他のあらかじめ設定されたジョブでは解決できないエッジケースに対応するために設計されています。ジョブは選択されたウェアハウスを使用して提供された dbt コマンドを処理します。
 
 このジョブは以下の方法で設定できます：
 
-- `WAREHOUSE`：デフォルトなし。`DEV_XL`、`DEV_L`、または `DEV_XS` の値を提供する必要があります。
-- `STATEMENT`：デフォルトなし。完全な `dbt` ステートメントを提供する必要があります。例：`run --select +dim_date`。
+- `WAREHOUSE`：デフォルトは `DEV_M` ですが、`DEV_XL`、`DEV_L`、または `DEV_XS` に更新できます。
+- `STATEMENT`：デフォルトはありません。`dbt` 接頭辞を除く、有効な dbt コマンドを指定します。`run/build/test` コマンドでは、ブランチ内でアップストリームの参照を再構築するのではなく本番環境から解決するため、`'--defer --state reference_state'` を末尾に付けることを**推奨**します（例: `'run --select dim_date --defer --state reference_state'`）。利用可能なセレクターは [selector.yml](https://gitlab.com/gitlab-data/analytics/-/blob/master/transform/snowflake-dbt/selectors.yml) ファイルで確認できます。
 - `RAW_DB`：デフォルトは `Live` ですが `Dev` を受け付けます。`Dev` を選択すると、ジョブはライブ `RAW` データベースのブランチ固有バージョンを使用し、明示的にロードされたデータのみが存在します。同じブランチで新しい extract に基づいて構築されるモデルをテストする際に必要です。
 
 #### `📚📝generate_dbt_docs`
@@ -316,6 +309,8 @@ MNPI 例外タグ `mnpi_exception` は、モデルが MNPI データを含まな
 snowflake-dbt/macros フォルダで変更を加えると自動的に実行され、新しく作成されたマクロが正しい名前形式に一致するかどうかを確認します。
 
 #### `run_grants`
+
+**注:** `run_grants` のパラメーターは、GitLab CI/CD の[ジョブ入力](https://docs.gitlab.com/ee/ci/inputs/)を使って定義されています。**Run pipeline** からこのジョブを手動でトリガーすると、自由入力の変数キーと値のペアではなく、型付き入力フォームが表示されます。
 
 ブランチの `prep` と `prod` のコピーまたはクローンへのアクセスをあなたのロールまたはビジネスパートナーのロールに付与したい場合に実行します。`GRANT_TO_ROLES` CI 変数を使用してアクセスを付与する Snowflake ロール（[roles.yml](https://gitlab.com/gitlab-data/analytics/-/blob/master/permissions/snowflake/roles.yml) を参照）を指定します。単一のロール、または `role1 role2` のようにスペース区切りで複数を渡すことができます。このジョブはコミットで変更されたモデルをチェックし、提出されたロールが `PREP` と `PROD` で適切なアクセスを持っているかどうかを検証して、クローンでのアクセスを付与します。将来の付与は作成されないため、**適切なオブジェクト付与を確保したい場合は、このジョブを実行する前にクローンに関連するすべてのオブジェクトが構築されている必要があります。**
 

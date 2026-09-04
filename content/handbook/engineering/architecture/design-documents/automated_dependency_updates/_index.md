@@ -4,16 +4,16 @@ status: ongoing
 creation-date: "2025-06-17"
 authors: [ "@hacks4oats" ]
 coaches: [ "@mbenayoun" ]
-dris: [ "@connorgilbert", "@nilieskou" ]
+dris: [ "@cwidstrom", "@efeller" ]
 owning-stage: "~devops::application security testing"
 participating-stages: [ "~devops::application security testing" ]
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/automated_dependency_updates/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T11:43:17+09:00"
 translator: claude
 stale: false
-lastmod: "2025-09-08T22:45:41-04:00"
+lastmod: "2026-08-26T18:59:23+02:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -88,6 +88,8 @@ GitLab Duo Agent Platform と統合することで、ユーザーが手間のか
 
 ## 設計および実装の詳細
 
+> 更新: 以下のコンポーネントは当初の提案を説明しています。これらの決定のいくつかは、実装中に発展しました。実際に出荷されたものとその理由については、[決定](#decisions)を参照してください。
+
 高レベルでは、システムは次のコンポーネントとやり取りします。
 
 - **IngestCvsSliceService**: この
@@ -97,44 +99,48 @@ GitLab Duo Agent Platform と統合することで、ユーザーが手間のか
   の脆弱性を作成します。スキャンが完了すると、脆弱なコンポーネントを
   さらなる分析のために転送します。更新可能な脆弱なコンポーネントは、
   そうするためのキューに入れられます。
+  実装では、修復は CVS ではなく、後処理スキャンプロファイルを通じた SBOM 取り込みによってトリガーされます。[ADR 002](./decisions/002_trigger_via_sbom_ingestion.md) を参照してください。
 - **UpdateDependencyService**: この新しいサービスは、依存関係更新ジョブ **のみ** を実行する
   新しいパイプラインの作成を担当します。機能を有効にすること以外、
   ユーザー設定は不要です。
+  実装では、これは `DependencyManagement::SecurityUpdate::UpdateService` であり、単独のパイプラインではなく workload を駆動し、`DependencyManagement::SecurityUpdate::SchedulerService` によって脆弱なコンポーネントごとにスケジュールされます。[ADR 001](./decisions/001_bounded_severity_prioritized_remediation.md) を参照してください。
 - **dependabot-core**: このソフトウェアは CI/CD ジョブで実行され、
   依存関係が更新できる最新バージョンを解決します。その後、必要な変更を
   ブランチにコミットします。
+  実装では、バージョン解決は GitLab が所有する [dependency-management orchestrator and updater](https://gitlab.com/gitlab-org/security-products/dependency-management) プロジェクトで実行され、monolith が構築したジョブペイロードで呼び出されます。updater はコミットせず、`output.json` を出力し、monolith が `CreateMergeRequestService` でブランチを書き込みます。
 - **CreateMergeRequestService**: このサービスは、依存関係更新パイプラインが完了した後に
   マージリクエストを作成します。これは、dependabot-core コミットに使用されるアカウントが
   プロジェクト、グループ、またはインスタンスレベルでマージリクエストを作成する権限を必要としないことを意味します。
+  実装では、これは `DependencyManagement::SecurityUpdate::CreateMergeRequestService` です。アカウントの権限が実際にどのように機能するかは [ADR 003](./decisions/003_single_service_account.md) を参照してください。
 - **RebaseMergeRequestService**: このサービスは、コンフリクトの場合に
   オープンな依存関係更新マージリクエストをリベースする責任を負います。
+  このサービスは構築されませんでした。代わりに、コンフリクトした古いマージリクエストは、更新 workload を再実行することでその場でリフレッシュされます。[ADR 005](./decisions/005_refresh_instead_of_rebase.md) を参照してください。
 
-**プロジェクトベースのシステム**
+### 決定 {#decisions}
 
-```mermaid
-sequenceDiagram
-    IngestCvsSliceService->>UpdateDependencyService: triggers
-    UpdateDependencyService->>Pipeline: creates pipeline with dependabot-core job
-    Pipeline->>dependabot-core: runs
-    dependabot-core->>Project: updates dependency files and commits update to new branch
-    dependabot-core->>Pipeline: completes
-    Pipeline->>CreateMergeRequestService: completes and triggers
-    CreateMergeRequestService->>Project: opens merge request
-```
+1. [001: Bounded, severity-prioritized remediation](./decisions/001_bounded_severity_prioritized_remediation.md)
+1. [002: Trigger via SBOM-ingestion scan profile](./decisions/002_trigger_via_sbom_ingestion.md)
+1. [003: Single service account model](./decisions/003_single_service_account.md)
+1. [004: Package release cooldown](./decisions/004_package_release_cooldown.md)
+1. [005: Refresh open merge requests instead of rebasing them](./decisions/005_refresh_instead_of_rebase.md)
 
-**代替フォークベースのシステム**
+**実装されたシステム**
 
 ```mermaid
 sequenceDiagram
-    IngestCvsSliceService->>UpdateDependencyService: triggers
-    UpdateDependencyService->>Project Fork: creates
-    UpdateDependencyService->>Pipeline: creates pipeline in fork with dependabot-core job
-    Pipeline->>dependabot-core: runs
-    dependabot-core->>Project: updates dependency files and commits update to new branch
-    dependabot-core->>Pipeline: completes
-    Pipeline->>CreateMergeRequestService: completes and triggers
-    CreateMergeRequestService->>Project: opens merge request
+    SBOM ingestion->>SchedulerService: sbom_ingested post-processing trigger
+    SchedulerService->>UpdateService: schedules one workload per vulnerable component
+    UpdateService->>Workload pipeline: creates
+    Workload pipeline->>dependency-management updater: runs orchestrator and updater
+    dependency-management updater->>Workload pipeline: emits output.json
+    Workload pipeline->>CreateMergeRequestService: completes and triggers
+    CreateMergeRequestService->>Project: writes dependency files to update branch
+    CreateMergeRequestService->>Project: opens or updates merge request
 ```
+
+更新ジョブをプロジェクト自体ではなくプロジェクトの fork で実行する fork ベースのバリエーションも、当初の設計で検討されましたが、構築されませんでした。
+
+トリガーの変更については [ADR 002](./decisions/002_trigger_via_sbom_ingestion.md)、書き込みを実行するアカウントについては [ADR 003](./decisions/003_single_service_account.md)、オープンなマージリクエストを最新に保つ方法については [ADR 005](./decisions/005_refresh_instead_of_rebase.md) を参照してください。
 
 ### 責任の分離
 
@@ -157,6 +163,8 @@ CI/CD ジョブが API を介してマージリクエストを作成できない
 この設計により、侵害されたトークンは保護されていないブランチに対する
 読み書き権限のみを持つようになります。マージリクエスト作成を CI/CD ジョブからの API 呼び出しと
 バンドルすると、侵害されたトークンには過度に許容的な `api` スコープが付与されないことを意味します。
+
+**実装では**、更新ジョブとマージリクエスト作成の両方に、2 つの別々のアカウントではなく、プロジェクトごとに 1 つの Guest ロールのサービスアカウントを使用します。侵害されたアカウントの常設権限を最小限に保つ理由については、[ADR 003](./decisions/003_single_service_account.md) を参照してください。
 
 ### モジュールのグループ化
 
@@ -231,6 +239,8 @@ CI/CD ジョブが API を介してマージリクエストを作成できない
 その後、コミット詳細を表示することで関連するマージリクエストを見つけることができます。
 これは機能しますが、管理された依存関係更新がこの解決を支援したという非常に重要な詳細を
 隠します。
+
+**実装では**、最初の最も軽量な選択肢を採用しました。自動依存関係更新によって作成されたマージリクエストには（リンクされた脆弱性を通じて `EE::MergeRequest#dependency_management_auto_remediation?` で）フラグが付けられ、既存のマージリクエスト一覧ビューに表示されます。採用状況は専用ダッシュボードではなく、内部イベント（`trigger_dependency_management_auto_remediation_request`、`create_dependency_management_auto_remediation_mr`）を通じて追跡されます。軽量なアプローチが不十分と判明した場合は、他の 3 つの選択肢を再検討できます。
 
 ### 使用メトリクスとオブザーバビリティ
 

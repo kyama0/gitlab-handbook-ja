@@ -2,11 +2,11 @@
 title: "Marketo"
 description: "Marketo は、メールマーケティング、リード管理、プログラム管理に使用される私たちのマーケティングオートメーションプラットフォームです。"
 upstream_path: "/handbook/marketing/marketing-operations/marketo/"
-upstream_sha: "a6d55368c73e5825dab217629d9ddb5d23a5fb53"
-translated_at: "2026-07-30T09:14:12+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T13:54:00+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-08-28T11:36:35-06:00"
 ---
 
 ## Marketo について {#about-marketo}
@@ -87,7 +87,7 @@ Sales Systems は、[SFDC ステージング環境](/handbook/sales/field-operat
 
 ローカライズされたフォームでは、`Preferred Language` を適切にキャプチャするために特別な隠しフィールドが必要です。詳細なセットアップ手順については、[この Issue](https://gitlab.com/gitlab-com/marketing/marketing-operations/-/issues/10025) を参照してください。
 
-新しい言語が必要、または新しいフォームが必要な場合は、[翻訳](/handbook/marketing/localization/)を集めて、その後[サポートをリクエスト](https://form.asana.com/?k=1i4lL5h0RLzfTqNWBTH84Q&d=306855239930259)してください。
+新しい言語が必要、または新しいフォームが必要な場合は、[翻訳](/handbook/marketing/product-and-technical-marketing/globalization/)を集めて、その後[サポートをリクエスト](https://form.asana.com/?k=1i4lL5h0RLzfTqNWBTH84Q&d=306855239930259)してください。
 
 すべてのフォームは以下のガイドラインに従う必要があります:
 
@@ -159,7 +159,7 @@ dataLayer.push(
 
 マーケティングオペレーションのチームメンバーは、プロセスが正しく実行されていることを確認し、対処が必要となる潜在的な問題や例外を特定するために、削除ログを定期的にレビューする必要があります。
 
-このプロセスは[このスマートキャンペーン](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/classic/SC53025A1ZN19)を通じて実行され、[このリスト](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/classic/SL52963827C3LA1)から基準を満たすすべてのレコードを削除します。
+このプロセスは[このスマートキャンペーン](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC53025A1ZN19)を通じて実行され、[このリスト](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL52963827C3LA1)から基準を満たすすべてのレコードを削除します。
 
 ### プログラムアセットの有効期限 {#program-asset-expiration}
 
@@ -316,7 +316,7 @@ MQL の瞬間の `Demographic`、`Behavior`、`Person` スコアは、Marketo �
 |ファンクション - 高|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +20    |   1回|
 |ファンクション - 中|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|+15|   1回|
 |ファンクション - 低|[説明はこちら](https://docs.google.com/spreadsheets/d/1EztHU53vE9Y_mmxlb4taQJ5_oo7CatdFvZNxbMklJf4/edit?usp=sharing)|    +10 |    1回|
-|国 - Tier 1, Tier 2 |[Country = Tier 1, Tier 2](/handbook/marketing/localization/)|    +5   |1回|
+|国 - Tier 1, Tier 2 |[Country = Tier 1, Tier 2](/handbook/marketing/product-and-technical-marketing/globalization/)|    +5   |1回|
 
 #### スコア減衰 {#score-decay}
 
@@ -339,7 +339,7 @@ MQL の瞬間の `Demographic`、`Behavior`、`Person` スコアは、Marketo �
 
 標準のリードスコアリングモデルに加えて、GitLab は GitLab トライアル専用のセカンダリスコアリングモデルを活用し、特定の特性を示すトライアルユーザーを `MQL` させることを意図しています。トライアル閾値スコアリングシステムは、元のリードスコアリングワークフローと連携して機能します。スコアリングメカニズムは、AMER、APAC、EMEA リージョン内で、各リージョンの最も早いタイムゾーンに基づき、1 日 2 回、08:00 と 14:00 に発火します。トライアルユーザーは `31` ポイントに達すると `MQL` し、その後さらなるスコアリングから除外されます。スコアリングメカニズムは、プログラムメンバーシップと [Days Since Trial Counter](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC72010C3ZN19) でフィルタリングされ、これはトライアル開始の `40 日` 後に終了します。
 
-| **トライアルスコアリング特性**| **スコアリングの説明** | **割り当てポイント** | 
+| **トライアルスコアリング特性**| **スコアリングの説明** | **割り当てポイント** |
 | ------ | ------ | ------| ------ |
 |   6sense Grade     |   A-D のうち 6sense が割り当てるランキング     | `A` = +15<br>`B` = +7<br>`C` = +0<br>`D` = +3 |
 |   6sense Profile     |  6sense が割り当てる `Weak`、`Moderate`、または `Strong` のランキング      | `Strong` = +12<br>`Moderate` = +5<br>`Weak` = +0|
@@ -381,26 +381,13 @@ Marketo セグメンテーションはスマートリストに似ていますが
 
 承認され、稼働中の以下のセグメンテーションがあります。
 
-<details><summary>バイヤーペルソナ - ファンクション</summary>
+<details><summary>（廃止済み）バイヤーペルソナ - ファンクション</summary>
 
 [Marketo のセグメンテーション](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SG1008A1)
 
-[バイヤーペルソナページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#buyer-personas)のガイダンスに基づきます。
-
-- App Dev
-- Back Office
-- Blank title
-- Compliance
-- InfoSec
-- Platform
-- PMO
-- Release
-- Tech Leader
-- Default
-
 </details>
 
-[Compliant and Emailable](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/classic/SG1016A1)
+[Compliant and Emailable](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SG1016A1)
 
 <details><summary>ペルソナ - レベル</summary>
 
@@ -503,22 +490,29 @@ Marketo セグメンテーションはスマートリストに似ていますが
 
 [Marketo のセグメンテーション](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SG1020A1)
 
-- Developer
-- DevOps
-- Security / Compliance
-- Engineering
-- Education (Student / Professor)
+- Accounting / Finance
+- AI
 - Analyst
 - Architect
-- Database Admin
-- Project Manager
-- Sales and Marketing
-- IT
-- HR
-- Purchasing / Buyer
-- Accounting / Finance
 - C-Level (President / CEO/ COO)
+- Customer Success / Support
+- Database Admin
+- Design/UX
+- Developer
+- DevOps
+- Education (Student / Professor)
+- Engineering
+- HR
+- IT
+- Legal
+- Manager and above (function unknown)
+- Product
+- Project Manager
+- Purchasing / Buyer
 - Retired
+- Sales and Marketing
+- Security / Compliance
+- Blank title
 - Default
 
 </details>
@@ -654,14 +648,14 @@ Marketo セグメンテーションはスマートリストに似ていますが
 
 ### アカウントベースドマーケティングリスト {#account-based-marketing-list}
 
-ABM リストは、フィールドマーケティングおよびマーケティングプログラムチームが、セールスによって優先度が高いと判断されたアカウントをターゲットにしてメール/招待状を送信するために、リクエストに応じて構築されます。これらのリストは [Marketo データベース](https://engage-ab.marketo.com/?munchkinId=194-VVC-221#/classic/SL52943077A1)の DMA フォルダで見つけることができます。
+ABM リストは、フィールドマーケティングおよびマーケティングプログラムチームが、セールスによって優先度が高いと判断されたアカウントをターゲットにしてメール/招待状を送信するために、リクエストに応じて構築されます。これらのリストは [Marketo データベース](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL52943077A1)の DMA フォルダで見つけることができます。
 **MktgOps** チームは、これらのリストの作成と維持を担当しています。
 
 新しい ABM リストが必要な場合は、[Target list issue テンプレート](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/new#request-confirm-target-list)を使用して Issue を開き、マーケティングオペレーションをタグ付けしてください。
 
 ### 地理的 DMA リスト {#geographic-dma-list}
 
-地理的 DMA（direct marketing area）は、フィールドマーケティングおよびマーケティングキャンペーンチームが、フィールド &/または企業マーケティングイベントに関連するメール/招待状をターゲットに送信するために構築されました。**MktgOps** チームは、これらのリストの作成と維持を担当しています。これらのリストは Marketo の `Database` の `Geographic DMA List` [フォルダ](https://app-ab13.marketo.com/#SL52900024A1)で見つけることができます。
+地理的 DMA（direct marketing area）は、フィールドマーケティングおよびマーケティングキャンペーンチームが、フィールド &/または企業マーケティングイベントに関連するメール/招待状をターゲットに送信するために構築されました。**MktgOps** チームは、これらのリストの作成と維持を担当しています。これらのリストは Marketo の `Database` の `Geographic DMA List` [フォルダ](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL52900024A1)で見つけることができます。
 
 新しい DMA リストが必要な場合は、マーケティングオペレーションプロジェクトで Issue を開き、[DMA_request issue テンプレート](https://gitlab.com/gitlab-com/marketing/marketing-operations/issues/new?issuable_template=dma_request)を活用してください。
 

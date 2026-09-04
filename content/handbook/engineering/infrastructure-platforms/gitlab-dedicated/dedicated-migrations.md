@@ -2,9 +2,9 @@
 title: Dedicated Migration チーム
 description: Geo マイグレーションを Dedicated へスムーズに進めることに注力するチーム。ツール、プロセス、エンジニアリングを担当します
 upstream_path: /handbook/engineering/infrastructure-platforms/gitlab-dedicated/dedicated-migrations/
-upstream_sha: 6f812a8fec541dba51e50314e85d7890b9e71d7d
-lastmod: "2026-05-26T08:36:55-07:00"
-translated_at: "2026-05-28T21:12:16Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+lastmod: "2026-08-26T09:57:10+10:00"
+translated_at: "2026-09-04T12:11:57+09:00"
 translator: claude
 stale: false
 ---
@@ -27,6 +27,7 @@ stale: false
 
 | Name          | Role                                 |
 |---------------|--------------------------------------|
+| Douglas Alexandre | Staff Backend Engineer           |
 | Eren Akca     | Staff Migration Engineer             |
 | Petar Prokić  | Staff Migration Engineer             |
 | Jessykah Bird | Senior Migration Engineer            |
@@ -85,17 +86,28 @@ Dedicated 案件の Geo マイグレーション部分において、チーム�
 
 #### Dedicated マイグレーションにおける Geo エンゲージメントモデル
 
-##### プリプロダクションカットオーバーおよび 2 週間のプロダクションサポートウィンドウ外のリクエスト
+##### カットオーバー中のサポート
 
-プロダクションカットオーバーウィンドウ外の期間でサポートが必要な場合は、RFH を提出してください（下記参照）。**これにはプリプロダクションカットオーバーも含まれます。プリプロダクションには Geo エンジニアの割り当ては行われません。** お客様からの通話リクエストは個別の対応として扱われ、チームの空き状況に基づき Engineering Manager Lucie Zhao の承認が必要です。
+Dedicated Migrations は実行中の第一線のトラブルシューティングを担当します。Geo の専門知識が必要な場合は、次の順序で連絡してください。
 
-##### プロダクションカットオーバーおよびプロダクションサポートウィンドウ
+1. 現在[サポートローテーション](https://gitlab.com/groups/gitlab-org/geo-team/-/work_items/3#customersupport-rotation)を担当している Geo エンジニア。
+2. そのエンジニアが勤務時間外などで対応できない場合は、下記の Geo for Self-Managed ドメインエキスパートのいずれか。
 
-各プロダクションマイグレーション前後の 2 週間ウィンドウ（マイグレーション 1 週間前、マイグレーション週末、マイグレーション 1 週間後）について、Geo DRI が割り当てられます。DRI はプリ／ポストの週には Slack 経由でマイグレーション問題に完全にコミットし、マイグレーション週末そのものでは PagerDuty 経由で営業時間（自タイムゾーンの 9:00 〜 17:00）に対応します。問題が発生しなければ、DRI は通常の Geo 業務に戻れます。
+カットオーバーに Geo エンジニアが事前に割り当てられることはありません。
 
-###### マイグレーション週末の責任
+##### Geo for Self-Managed ドメインエキスパート
 
-Geo チームには、カットオーバーに備えて状況を把握している誰かが必要であり、Project Manager とタイミングを調整し、完全データ同期後のお客様インスタンスのカットオーバー中に発生する問題のトラブルシューティングに備えなければなりません。
+これらのエンジニアは以前 Geo で業務を行っており、サポートローテーションの DRI が対応できない場合に支援できます。これはバックアップ連絡先リストであり、オンコールスケジュールではありません。リスト上の誰も、即時または営業時間外の応答を保証されず、他の業務の優先度が高い場合は断ることができます。直接連絡できない場合やエスカレーションが必要な場合の参考として、マネージャーを記載しています。
+
+| エンジニア | マネージャー |
+|---|---|
+| [Brian Legault](https://gitlab.com/brianlegault) | {{< manager-by-report-name "Brian Legault" >}} |
+| [Douglas Alexandre](https://gitlab.com/dbalexandre) | {{< manager-by-report-name "Douglas Barbosa Alexandre" >}} |
+| [Michael Kozono](https://gitlab.com/mkozono) | {{< manager-by-report-name "Michael Kozono" >}} |
+| [Natanael Silva](https://gitlab.com/nsilva5) | {{< manager-by-report-name "Natanael Silva" >}} |
+| [Victor Prêté](https://gitlab.com/victorprete) | {{< manager-by-report-name "Victor Prêté" >}} |
+
+これらのエンジニアは現在の Geo ローテーションには参加していません。永続的な記録がどちらにも残るよう、問題、調査、結果は Slack ではなく Dedicated Migrations の作業項目または Geo サポートリクエスト Issue に記録してください。
 
 ##### RFH プロセス
 

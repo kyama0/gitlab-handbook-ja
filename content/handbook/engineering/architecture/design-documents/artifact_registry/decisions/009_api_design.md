@@ -4,11 +4,11 @@ owning-stage: "~devops::package"
 description: "レジストリの API エンドポイントの構成に関する決定"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/009_api_design/
-upstream_sha: "a3ed2ed7423727a5f31c3f20f77f9547a3b7b152"
-translated_at: "2026-08-08T09:11:37+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T11:43:17+09:00"
 translator: codex
 stale: false
-lastmod: 2026-08-07T14:35:33+01:00
+lastmod: "2026-09-01T08:29:28+02:00"
 ---
 
 ## コンテキスト
@@ -88,7 +88,7 @@ API の表面は、異なるルールを持つ 3 つの明確なカテゴリに�
 
 ## API 編成
 
-### 管理用 API
+### 管理用 API {#management-apis}
 
 管理 API は GitLab の [REST API 認証](https://docs.gitlab.com/api/rest/authentication/) を使用します。
 
@@ -139,6 +139,12 @@ API の表面は、異なるルールを持つ 3 つの明確なカテゴリに�
 - `GET    /api/v1/:slug/lifecycle_policy/rules/:rule_id` - ライフサイクルポリシールールを取得
 - `PATCH  /api/v1/:slug/lifecycle_policy/rules/:rule_id` - ライフサイクルポリシールールを更新
 - `DELETE /api/v1/:slug/lifecycle_policy/rules/:rule_id` - ライフサイクルポリシールールを削除
+
+**ネームスペースの詳細：**
+
+- `GET /api/v1/:slug/namespace` - このスコープが指定するネームスペースを取得
+
+権限の判定結果は、既存の `include_referrers` パラメータにならった `include_permissions` ブール値によるオプトインで、ネームスペース、リポジトリ詳細、リポジトリ一覧のレスポンスに埋め込まれます。[ADR-021](021_authorization.md#permission-checks-for-ui-gating) がセマンティクスを定義し、この ADR がルートとパラメータを確定します。
 
 #### リポジトリレベル API
 
@@ -238,7 +244,7 @@ API の表面は、異なるルールを持つ 3 つの明確なカテゴリに�
 
 ### アーティファクト管理クライアント API
 
-クライアント API の URL は、すべてのリポジトリタイプ（ホスト型、リモート、仮想）で同じです。レジストリはリポジトリの種類を内部的に解決し、タイプ固有の挙動を適用します（例：リモートおよび仮想リポジトリへの書き込みを拒否する）。
+クライアント API の URL は、すべてのリポジトリタイプ（ホスト型、リモート、仮想）で同じです。レジストリはリポジトリの種類を内部的に解決し、タイプ固有の挙動を適用します（例：リモートおよび仮想リポジトリへの書き込みを拒否する、現時点でリポジトリの種類が提供できない読み取りを拒否する）。
 
 #### Container
 
@@ -261,10 +267,18 @@ API の表面は、異なるルールを持つ 3 つの明確なカテゴリに�
 - `PUT    /v2/:slug/container/:repository_name/:image_name/blobs/uploads/:uuid?digest=:digest`    - blob アップロードを完了（リモートおよび仮想リポジトリでは利用不可）
 - `DELETE /v2/:slug/container/:repository_name/:image_name/blobs/uploads/:uuid`                   - blob アップロードをキャンセル（リモートおよび仮想リポジトリでは利用不可）
 - `POST   /v2/:slug/container/:repository_name/:image_name/blobs/uploads/?digest=:digest`         - 単一リクエストで完全な blob をアップロード（リモートおよび仮想リポジトリでは利用不可）
-- `GET    /v2/:slug/container/:repository_name/:image_name/tags/list`                             - リポジトリ内のすべてのタグをリスト
-- `GET    /v2/:slug/container/:repository_name/:image_name/tags/list?n=100&last=tag_name`         - ページネーションされたタグのリスト
-- `GET    /v2/:slug/container/:repository_name/:image_name/referrers/:digest`                     - マニフェストを参照するアーティファクト/アテステーションをリスト
-- `GET    /v2/:slug/container/:repository_name/:image_name/referrers/:digest?artifactType=<type>` - アーティファクトタイプで referrer をフィルタリング
+- `GET    /v2/:slug/container/:repository_name/:image_name/tags/list`                             - リポジトリ内のすべてのタグをリスト（MVP の仮想リポジトリでは利用不可）
+- `GET    /v2/:slug/container/:repository_name/:image_name/tags/list?n=100&last=tag_name`         - ページネーションされたタグのリスト（MVP の仮想リポジトリでは利用不可）
+- `GET    /v2/:slug/container/:repository_name/:image_name/referrers/:digest`                     - マニフェストを参照するアーティファクト/アテステーションをリスト（MVP の仮想リポジトリでは利用不可）
+- `GET    /v2/:slug/container/:repository_name/:image_name/referrers/:digest?artifactType=<type>` - アーティファクトタイプで referrer をフィルタリング（MVP の仮想リポジトリでは利用不可）
+
+**注：** `tags/list` と `referrers/:digest` が利用できないのは、**仮想**コンテナリポジトリのみです。リモートリポジトリでは、どちらもアップストリームへのライブプロキシとして提供されます。仮想リポジトリは、書き込み動詞に対する `405` ではなく、どちらにも `404 NAME_UNKNOWN` で応答します。書き込みは存在するエンドポイントを対象とするものの、そのメソッドが利用できないのに対し、仮想リストには、現在の解決モデルで生成できる単一のコレクションが存在しないためです。`referrers/:digest` では、`404` によって **一部の** OCI クライアントが referrer タグスキーマへフォールバックすることも可能になります。これは、他のタグと同様に仮想リポジトリのアップストリーム全体で解決されるため、referrer の検出は完全に失敗せず、機能を落とした形で継続できます。一方、空のリストを含む `200` は、どのアップストリームからも根拠が得られていないのに、referrer が存在しないとクライアントに伝えてしまいます。`tags/list` には、どのコードでも同等のフォールバックはありません。
+
+どのクライアントがフォールバックするかはエラーコードによって決まり、その分岐点が `NAME_UNKNOWN` です。`crane` はエラーコードをまったく読み取りません。`404`、`400`、`406`、または `Content-Type` が OCI index ではない `200` でフォールバックし、それ以外のステータスはエラーとして返します。`oras` は本文を解析し、コードが `NAME_UNKNOWN` の場合はエラーを返します。同じ `404` でも他のコードなら、タグスキーマへ移行します。Notation は `oras-go` を介してその挙動を継承します。これは `go-containerregistry` v0.20.6、`oras-go` v2.5.0 と v2.6.0、および `oras-go` v2.5.0 に固定された `notation-go` v1.3.2 を対象に測定しました。
+
+OCI のエラーセットには、「このリポジトリは存在するが、リストできるコレクションがない」ことを示すコードがありません。そのため、ここでは `NAME_UNKNOWN` を積極的に選んだのではなく再利用しており、2 つのコストが伴います。検出ツールはこれを「そのようなリポジトリはない」と解釈するため、同じ URL への pull は成功する一方、`crane ls`、`skopeo list-tags`、レジストリ UI は仮想リポジトリが存在しないと報告します。また、空の `200` より `404` を優先する動機となるフォールバックは、まさにコードを読み取るクライアントでは利用できません。
+
+これはアーキテクチャ上の制約ではなく、MVP の制限です。アップストリーム全体から単一のパスを解決する方法は定義されていますが、独立したカーソルを持つアップストリームをまたいでページネーションされたコレクションをマージする方法は定義されていません。アップストリーム横断のタグ一覧と referrer は [artifact-registry#264](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/264) で追跡されます。そのスコープは、暫定的に含まれるコードではなく、`404` を置き換えるマージです。コード自体は [artifact-registry#1019](https://gitlab.com/gitlab-org/ops/artifact-registry/-/work_items/1019) で追跡されます。`NAME_UNKNOWN` 以外のコードを含む `404` なら、`crane` だけでなく `oras` と Notation でもタグスキーマへのフォールバックが機能し続けます。
 
 **注：** OCI 必須の `GET /v2/` エンドポイントは `/:slug` プレフィックスを含まないため、[Cells](../../cells/) ルーターはパスだけからどの Cell がリクエストを処理すべきかを判断できません。`GET /v2/` はステートレスなバージョンプローブ（OCI 準拠を示す `200 OK`、そうでなければ `401 Unauthorized`）であるため、どの Cell でも提供できます。スラッグやルーティングコンテキストは不要です。他のすべてのクライアントリクエストは `/:slug` セグメントを持ち、Cells ルーターがそれを使用してターゲット Cell を判断します。クライアントは [`glab`](https://gitlab.com/gitlab-org/cli) を介してクライアント側で認証情報を取得し（[ADR-020](020_authentication_flow.md) を参照）、最初から Bearer トークンを提示するため、OCI の `401 WWW-Authenticate` リダイレクトチャレンジは使用されません。`GET /v2/_catalog`（Docker Registry HTTP API V2）は OCI Distribution Spec の一部ではなく、実装されません。
 
@@ -360,6 +374,7 @@ GitLab API は、提供先のプラットフォームバージョン間で後方
 - **リポジトリ名の不変性が柔軟性を制限する**：タイプミスや組織的なリネームには、単にリネームするのではなく、新しいリポジトリを作成してアーティファクトを移行することが必要になります
 - **グローバルな名前の一意性が制限的**：`my-app` のような名前はフォーマットをまたいで再利用できません（例：`my-app` という名前の Docker と Maven の両方のリポジトリ）。これは `my-app-docker` や `my-app-maven` のような命名規則につながる可能性があります。この制約は後で破壊的な変更なしに緩和できます
 - **フォーマット固有の API 表面**：フォーマットごとにエンドポイントを専用化することは、フォーマットをまたいだ一部の重複と、管理タスクに対する統合されたフォーマット横断の操作がないことを意味します
+- **仮想コンテナリポジトリが検出ツールに存在しないものとして報告される**：そこでは `tags/list` と `referrers/:digest` が `404 NAME_UNKNOWN` を返し、同じ URL への pull は成功する一方、`crane ls`、`skopeo list-tags`、レジストリ UI は「そのようなリポジトリはない」と解釈します。[コンテナルートの注記](#container)に、その理由とコードによって referrer のフォールバックに生じるコストを記載しています
 
 ## 参考文献
 

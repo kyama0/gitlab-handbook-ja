@@ -2,11 +2,11 @@
 title: "マーケティング - 緊急対応"
 description: "GitLab のマーケティング緊急時におけるメール対応プロセス"
 upstream_path: /handbook/marketing/emergency-response/
-upstream_sha: 2d678e92f3fbc59843a2973bbfa95041c6aef07f
-translated_at: "2026-05-01T12:25:17Z"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T13:29:37+09:00"
 translator: claude
 stale: false
-lastmod: "2025-04-04T15:37:12-07:00"
+lastmod: "2026-08-28T11:36:35-06:00"
 ---
 
 ## マーケティングの緊急対応
@@ -27,23 +27,21 @@ GitLab は時として「破壊的」な変更や、優先度の高い緊急パ�
 
 連絡先を判断する際は、自分のタイムゾーンに最も近いカバレッジオーナーを確認してください。
 
-| MOPs チームカバレッジ                          | PT / ET 対応可能時間                 | カバレッジオーナー: 月曜〜金曜 | バックアップ: 月曜〜金曜 | カバレッジオーナーの GEO 時間 |
+| MOPs チームカバレッジ         | PT / ET 対応可能時間                 | カバレッジオーナー: 月曜〜金曜 | バックアップ: 月曜〜金曜 | カバレッジオーナーの GEO 時間 |
 |---------------------------------------------|-------------------------------|---------------------------|----------------------|-------------------|
-| UTC (EMEA 業務時間)                          | 23時 - 3時 PT / 2時 - 6時 ET  | Mihai Conteanu            | Gillian Murphy       | 9時 - 13時 EET     |
-| UTC (EMEA 業務時間)                          | 3時 - 7時 PT / 6時 - 10時 ET  | Gillian Murphy            | Mihai Conteanu       | 11時 - 15時 UK     |
-| UTC (AMER-午前)                              | 7時 - 11時 PT / 10時 - 14時 ET | Bryce Weatherford         | Jameson Burton       | 10時 - 14時 ET     |
-| UTC (AMER-午後)                              | 11時 - 15時 PT / 14時 - 18時 ET  | Bryce Weatherford         | Jenny Tiemann        | 11時 - 15時 PT     |
-| UTC (AMER-夕方)                              | 15時 - 18時 PT / 18時 - 21時 ET   | Bryce Weatherford         | Amy Waller           | 15時 - 18時 PT      |
+| UTC (EMEA 業務時間)         | 23 時 〜 3 時 PT / 2 時 〜 6 時 ET          | Rob Rosu                        | Gillian Murphy          | 9 時 〜 13 時 EET           |
+| UTC (EMEA 業務時間)         | 3 時 〜 7 時 PT / 6 時 〜 10 時 ET          | Gillian Murphy                  | Rob Rosu                | 11 時 〜 15 時 UK           |
+| UTC (AMER-午前)         | 7 時 〜 11 時 PT / 10 時 〜 14 時 ET         | Esmira Khalilova                | Bryce Weatherford       | 10 時 〜 14 時 ET           |
+| UTC (AMER-午後)       | 11 時 〜 15 時 PT / 14 時 〜 18 時 ET          | Esmira Khalilova                | Jenny Tiemann           | 14 時 〜 18 時 ET            |
+| UTC (AMER-夕方)         | 15 時 〜 18 時 PT / 18 時 〜 21 時 ET           | Bryce Weatherford               | Jenny Tiemann           | 15 時 〜 18 時 PT            |
 
 **チームの代表的なタイムゾーン:**
 
-* Amy: PST 太平洋標準時 UTC:-8:00
+* Esmira: EST 東部標準時 UTC:-5:00
 * Jenny: PST 太平洋標準時 UTC:-8:00
-* Nikki: MST 山岳部時間 UTC:-7:00
 * Bryce: MST 山岳部時間 UTC:-7:00
-* Jameson: MST 山岳部時間 UTC: -5:00
 * Gillian: GMT グリニッジ標準時 UTC: +1:00
-* Mihai: EET 東欧時間 UTC: +2:00
+* Rob: EET 東欧時間 UTC: +2:00
 
 [タイムゾーン変換ツール](https://dateful.com/time-zone-converter)
 
@@ -52,8 +50,8 @@ GitLab は時として「破壊的」な変更や、優先度の高い緊急パ�
 通常の業務時間外には「オンコール」体制を設けていないため、上記マトリクスの誰にも連絡が取れない場合は、以下のエスカレーションパスに従ってください。
 
 * `#mktgops`
-* マネージャー (Amy Waller)
-* それでも応答がない場合は、Amy の Slack プロフィールに記載された電話番号を使い、テキストまたは WhatsApp で連絡してください。連絡が取れない場合は、上記マトリクスから自分のタイムゾーンに合うメンバーへ連絡を試みてください。
+* マネージャー (Gillian Murphy)
+* それでも応答がない場合は、Gillian の Slack プロフィールに記載された電話番号を使い、テキストまたは WhatsApp で連絡してください。連絡が取れない場合は、上記マトリクスから自分のタイムゾーンに合うメンバーへ連絡を試みてください。
 
 ## 役割と責任
 

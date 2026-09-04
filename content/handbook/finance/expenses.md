@@ -1,8 +1,8 @@
 ---
 title: グローバル出張・経費ポリシー
 upstream_path: /handbook/finance/expenses/
-upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
-translated_at: "2026-09-04T14:13:39+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T15:11:10+09:00"
 translator: codex
 stale: false
 lastmod: "2026-08-31T10:10:52-07:00"

@@ -2,9 +2,9 @@
 title: Agent Execution グループ
 description: "Agent Execution グループは、開発ワークフローのタスクを自動化して生産性向上を支援する AI システム、GitLab Duo Workflow の開発に注力しています。"
 upstream_path: /handbook/engineering/ai/agent-foundations/agent-execution/
-upstream_sha: ad217b024ba77ae34e6f41cb4a28107135c5dba5
-lastmod: "2026-07-31T12:38:28+02:00"
-translated_at: "2026-08-01T15:59:51+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+lastmod: "2026-08-18T13:41:28+02:00"
+translated_at: "2026-09-04T11:16:44+09:00"
 translator: codex
 stale: false
 ---
@@ -15,7 +15,7 @@ Agent Execution グループは、SDLC 全体でエージェントを実行す�
 
 ## 👥 リーダーシップ
 
-{{< group-by-slugs bastirehm amandarueda emilybauman >}}
+{{< group-by-slugs bastirehm arueda emilybauman >}}
 
 ## 🧭 チーム
 
@@ -28,7 +28,7 @@ Agent Tools は、エージェントが GitLab や外部サービスとやり取
 
 #### チームメンバー
 
-{{< group-by-slugs terrichu druid fdegier>}}
+{{< group-by-slugs terrichu adruid afilatov fdegier>}}
 
 ### Agent Observability
 
@@ -36,7 +36,7 @@ Agent Observability は、GitLab 全体でエージェントが何をしてい�
 
 #### チームメンバー
 
-{{< group-by-slugs lindsey-shelton afontaine allison_villa romaneisner>}}
+{{< group-by-slugs lindsey-shelton andrew-f allison_villa romaneisner>}}
 
 ### Runner Execution
 
@@ -44,7 +44,7 @@ Runner Execution は、GitLab runner をエージェントが実行されるネ�
 
 #### チームメンバー
 
-{{< group-by-slugs ssuman3 AndrasHerczeg a_akgun>}}
+{{< group-by-slugs ssuman3 andrasherczeg alperakgun>}}
 
 ## 📦 チームプロセス
 
@@ -73,7 +73,7 @@ Goalkeeper の担当期間に対応できない場合は、`#g_agent-execution` 
 
 ### 📚 Agent Execution ボードの概要
 
-Agent Execution チームはマイルストーンプロセスに従っています。現在優先されているすべての Issue は、[マイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/7828018?milestone_title=Started&label_name[]=group%3A%3Aagent%20execution)で可視化されています。 
+Agent Execution チームはマイルストーンプロセスに従っています。現在優先されているすべての Issue は、[マイルストーンボード](https://gitlab.com/groups/gitlab-org/-/boards/7828018?milestone_title=Started&label_name[]=group%3A%3Aagent%20execution)で可視化されています。
 過去および現在のマイルストーンの目標と重点項目を概説する概要 Issue は、[統括エピック](https://gitlab.com/groups/gitlab-org/ai-powered/agent-foundations/agent-execution/-/work_items/3)にあります。各チームには、日々の追跡用に個別のボードもあります。
 
 1. [Agent Tools](https://gitlab.com/groups/gitlab-org/-/boards/11408357)

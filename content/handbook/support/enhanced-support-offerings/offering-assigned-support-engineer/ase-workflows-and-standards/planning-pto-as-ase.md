@@ -2,11 +2,11 @@
 title: ASE としての PTO 計画
 description: Assigned Support Engineer の PTO 計画
 upstream_path: /handbook/support/enhanced-support-offerings/offering-assigned-support-engineer/ase-workflows-and-standards/planning-pto-as-ase/
-upstream_sha: "d8fb317567e8e271f91f602d97d453ad1a69a00a"
-translated_at: "2026-08-13T23:52:41+09:00"
+upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
+translated_at: "2026-09-04T14:51:47+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-12T14:22:07-05:00"
+lastmod: "2026-08-17T17:34:58-05:00"
 ---
 
 ## ASE PTO 計画
@@ -49,13 +49,14 @@ Assigned Support Engineer (ASE) 契約に定められているとおり、私た
 
 ASE チームは、PTO を享受できないこと、不明確なカバー体制によるストレス、すべての不在に対するマイクロマネジメント、構造化されたプロセスの欠如によるバーンアウトを経験してきました。このパイロットは、ASE の PTO 計画方法を再構築することによってこれらの課題に対処することを目指します。
 
-AMER の ASE は 3 名ずつのカバー Pod に編成されます。各グループは PTO 中のメンバーを互いにカバーします。Pod が何らかの理由でグループ内でカバーをこなせない場合は、[Pod がカバーできないとき](#when-your-pod-cant-cover)で定義されたガイダンスを使用します。
+AMER の ASE はカバー Pod に編成されます。各グループは PTO 中のメンバーを互いにカバーします。
+Pod が何らかの理由でグループ内でカバーをこなせない場合は、[Pod がカバーできないとき](#when-your-pod-cant-cover)で定義されたガイダンスを使用します。
 
 Pod は、アカウントの一貫したカバーを維持するために、緩やかにタイムゾーンに沿って編成されています。
 
 ### 仕組み
 
-各カバー Pod は 3 人の ASE で構成され、1 人の ASE が Pod リードを務めます。Pod は年に 2 回、メンバー構成をローテーションします。ASE は、同時期に他の何人がすでに不在かに基づいて PTO を計画します。
+各カバー Pod は数名の ASE で構成され、1 人の ASE が Pod リードを務めます。Pod は年に 2 回、メンバー構成をローテーションします。ASE は、同時期に他の何人がすでに不在かに基づいて PTO を計画します。
 
 - **1 人不在**: Workday に入力し、カバーグループと調整する
 - **2 人不在**: Workday に入力し、可視性のために `#support_assigned-support-eng` に投稿する
@@ -73,19 +74,20 @@ Pod にはリーダーがいません。メンバーは共有アカウントを�
 
 #### Pod alpha
 
-- {{< member-by-gitlab "michwalker" >}} - 4 accounts - United States
-- {{< member-by-gitlab "dbass90" >}} - 4 accounts - Canada
-- {{< member-by-gitlab "erisrenee" >}} - 1 accounts - United States
+- {{< member-by-gitlab "michwalker" >}} - 4 アカウント - 米国
+- {{< member-by-gitlab "dbass90" >}} - 4 アカウント - カナダ
+- {{< member-by-gitlab "erisrenee" >}} - 1 アカウント - 米国
 
 #### Pod beta
 
-- {{< member-by-gitlab "klang" >}} - 4 accounts - United States
-- {{< member-by-gitlab "adamlauzon" >}} - 4 accounts - Canada
-- {{< member-by-gitlab "magomez3" >}} - 3 accounts - United States
+- {{< member-by-gitlab "adamlauzon" >}} - 4 アカウント - カナダ
+- {{< member-by-gitlab "magomez3" >}} - 3 アカウント - 米国
+- {{< member-by-gitlab "m_lussier" >}} - 4 アカウント - 米国
+- {{< member-by-gitlab "japokatanidis" >}} - 2 アカウント - カナダ
 
 #### Pod gamma
 
-- {{< member-by-gitlab "a.conrad" >}} - 4 accounts - United States
-- {{< member-by-gitlab "pselva" >}} - 2 accounts - Canada
-- {{< member-by-gitlab "jessie" >}} - 1 account - United States
-- {{< member-by-gitlab "m_lussier" >}} - 1 account - United States
+- {{< member-by-gitlab "a.conrad" >}} - 4 アカウント - 米国
+- {{< member-by-gitlab "pselva" >}} - 2 アカウント - カナダ
+- {{< member-by-gitlab "jessie" >}} - 2 アカウント - 米国
+- {{< member-by-gitlab "dhickman" >}} - 2 アカウント - 米国

@@ -2,11 +2,11 @@
 title: "Developer Advocates のコンテンツライブラリとワークフロー"
 description: "Developer Advocacy チームのコンテンツライブラリ、コンテンツ作成と配信のワークフローについて学びます。"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/content/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:31:06+09:00"
+upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
+translated_at: "2026-09-04T13:29:37+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-14T11:43:03-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 Developer Advocacy チームは、キャンペーン、フィールドイネーブルメント、製品ローンチサポート、ユースケース採用、顧客向けデモ、一般的な学習・オンボーディングに使用できるコンテンツを作成しています。チームが参加するすべてのコンテンツとアクティビティは、[チームワークフロー](/handbook/marketing/developer-relations/developer-advocacy/workflow/)に従って Issue で追跡されます。
@@ -361,6 +361,8 @@ Developer Advocates は、採用と効率化のユースケースを支援する
 
 Screen Studio は、画面領域やウィンドウをキャプチャしてウェブカメラビューと組み合わせ、シンプルな編集 UI でインテリジェントな自動「[シーンへのズーム](https://screen.studio/guide/adding-editing-zooms)」を使用します。
 
+> 注: 「Shareable Links」機能の使用は承認されていません。録画が Screen Studio のクラウドストレージにアップロードされるためです。
+
 [録画を開始する](https://screen.studio/guide/new-recording)には、最小限のオーバーレイ UI を使用します:
 
 ![Screen Studio オーバーレイメニュー](/images/handbook/marketing/developer-relations/developer-advocacy/content/screenstudio-overlay-menu.png)
@@ -609,7 +611,7 @@ Developer Advocacy チームは、Developer Relations の [UTM 戦略](/handbook
 
 1. 役立つチュートリアルブログ記事やデモを [GitLab ドキュメント](https://docs.gitlab.com/)に追加します
    - コントリビュートのドキュメントに従い、必要に応じて[関連トピック](https://docs.gitlab.com/ee/development/documentation/topic_types/#related-topics)の見出しを作成します
-   - コンテンツの短縮 URL を含む MR を作成し、[担当テクニカルライター](/handbook/marketing/technical-writing/#assignments)にレビューを依頼します
+   - コンテンツの短縮 URL を含む MR を作成し、[担当テクニカルライター](/handbook/marketing/product-and-technical-marketing/technical-writing/#assignments)にレビューを依頼します
    - 例: [Add tutorial blog posts to workspaces docs](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/127500)
 2. コミュニティプラットフォームで共有します:
    - [GitLab Forum](https://forum.gitlab.com/)
@@ -622,7 +624,7 @@ Developer Advocacy チームは、Developer Relations の [UTM 戦略](/handbook
    - プラットフォームごとのヒントについては[コンテンツ共有](/handbook/marketing/developer-relations/developer-advocacy/social-media/#content)を参照してください
    - エンゲージメントのアイデアについては[メッセージのヒント](/handbook/marketing/developer-relations/developer-advocacy/social-media/#message-tips)を確認してください
 2. チームメンバーが共有できるよう、EveryoneSocial でコンテンツを提案します
-   - [EveryoneSocial でコンテンツを提案する方法](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/team-member-social-advocacy/#suggesting-content-for-team-members-to-share-on-everyonesocial)
+   - [EveryoneSocial でコンテンツを提案する方法](/handbook/marketing/corporate-communications/social-marketing/team-member-social-advocacy/#suggesting-content-for-team-members-to-share-on-everyonesocial)
 3. 投稿後、[`#social-media-action`](https://gitlab.slack.com/archives/C01AZ9C8Z4G) Slack チャンネルで共有し、ソーシャルメディアチームにプロモーションを依頼します
 
 **GitLab チーム:**
