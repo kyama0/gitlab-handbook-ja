@@ -1,7 +1,7 @@
 ---
 owning-stage: "~group::release-and-deploy"
-title: "Membrane とグローバルフィーチャーフラグサービスの方針"
-description: "Membrane とグローバルフィーチャーフラグサービスの段階的な方針です。第 1 フェーズでは、各 Cell からポーリングして得た観測状態を集約する最小限の読み取り専用
+title: "Membrane と Global Feature Flag Service の方針"
+description: "Membrane と Global Feature Flag Service の段階的な方針です。第 1 フェーズでは、各 Cell からポーリングして得た観測状態を集約する最小限の読み取り専用
 グローバルサービスを構築します。第 2 フェーズでは、望ましい状態の保存、フィーチャーフラグの変更、調整を追加し、
 最終フェーズでは長時間接続のストリーミングを追加します。"
 group: delivery
@@ -33,15 +33,15 @@ Cell の境界外へ持ち出してはなりません。中央サービスは Ce
 
 Membrane における最初のフィーチャーフラグ実装は、GitLab の `/api/v4/features` API を、その
 `/v1` API を介してバイト単位でそのまま転送するインバウンドプロキシであり、Cell の外部から呼び出すことを意図していました。この ADR は、そのインバウンドモデルから、
-Membrane がグローバルフィーチャーフラグサービスへアウトバウンド接続するモデルへ方針を変更します（[決定](#decision)および
-[検討した代替案](#alternatives-considered)を参照）。Membrane の前段となるグローバルフィーチャーフラグサービス（Cell 横断で
+Membrane が Global Feature Flag Service へアウトバウンド接続するモデルへ方針を変更します（[決定](#decision)および
+[検討した代替案](#alternatives-considered)を参照）。Membrane の前段となる Global Feature Flag Service（Cell 横断で
 集約するダッシュボード UI）はまだ存在しません。
 
 ## 決定 {#decision}
 
 ### 段階的な提供 {#phased-delivery}
 
-Cells でのフィーチャーフラグ管理を 3 つのフェーズで提供し、グローバルフィーチャーフラグサービスを反復的に構築するとともに、
+Cells でのフィーチャーフラグ管理を 3 つのフェーズで提供し、Global Feature Flag Service を反復的に構築するとともに、
 すべてのフェーズで Membrane をアウトバウンド接続するサービスとして維持します。各フェーズでは、まだ必要でない作業やプラットフォーム依存関係を
 避けるため、システムの各部分が準備でき次第、提供して利用できます。
 
@@ -210,7 +210,7 @@ sequenceDiagram
    詳細な調整メカニズム。これらはフォローアップの ADR または設計ドキュメントに記載します。
 1. きめ細かなロールアウト、リングのターゲティング、Cell ごとの段階的ロールアウト（フォローアップ[エピック &1448](https://gitlab.com/groups/gitlab-com/gl-infra/-/epics/1448)）。
 1. フィーチャーフラグの適用済み状態を記録するためのテナントモデルと Cell の Rails スキーマの変更。
-1. グローバルフィーチャーフラグサービスの内部設計と長期的な所有権。
+1. Global Feature Flag Service の内部設計と長期的な所有権。
 1. グローバルサービスの詳細な認証・認可モデル。方針（ユーザーがログインし、すべての変更が
    帰属されること）は上記に記載していますが、完全なモデルは先送りします。
 

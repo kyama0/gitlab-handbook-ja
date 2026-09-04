@@ -1,7 +1,7 @@
 ---
 owning-stage: "~devops::tenant scale"
 title: 'Organizations ADR 010: Organization Maintenance Mode'
-description: 'Cell をまたぐ移行や分離有効化の際に使用される Organization 単位のメンテナンス状態を導入し、ソース Cell 上のすべてのリクエストをブロックします。コントローラ、REST API、GraphQL、GitAccess、コンテナレジストリ、LFS、Sidekiq の各レイヤで強制されます。'
+description: 'Cell をまたぐ移行や分離有効化の際に使用される Organization 単位のメンテナンス状態を導入し、ソース Cell 上のすべてのリクエストをブロックします。コントローラ、REST API、GraphQL、GitAccess、Container Registry、LFS、Sidekiq の各レイヤで強制されます。'
 creation-date: "2026-04-28"
 authors: [ "@abdwdd" ]
 toc_hide: true
@@ -145,7 +145,7 @@ Cell 間の Organization 移行では、データのカットオーバー前の*
 - **Organization スコープのワーカーはドレインする。** Organization が `maintenance_initialization` に入る時点ですでにキューイングされているか実行中のジョブは、フリーズの前にフロントドアのリクエストが受け入れられた作業を表します。それらはソース Cell 上で完了まで実行されなければなりません。Sidekiq サーバミドルウェアはそれらをスキップ**しません**。新しいエンキューはコントローラ、REST、GraphQL、Git アクセスの各レイヤで防止されるため、フリーズが有効になった後はこれ以上の Organization スコープのジョブはキューに投入されません。カットオーバーは上記の準備状態コントラクトでゲートされており、Organization のキューイング済み、スケジュール済み、リトライ中、実行中のすべてのジョブが完了した場合にのみ true を返します。これはサイレントスキップではなく、本物のドレインです。
 - **cron ワーカーはメンテナンス中の Organization と、そのプロジェクトおよび namespace をスキップする。** Sidekiq サーバミドルウェアが、解決された Organization がメンテナンス中である cron ジョブの実行を構造化ログ付きで短絡します。Organization 所有のデータ（プロジェクト、namespace、その他 Organization に解決される行）を反復する Cell 全体の cron ワーカーは、フィルタコストを有界にするため、行ごとの述語ではなく結合（またはアクティブな Organization に対するサブセレクト）として表現された、アクティブな Organization へのフィルタを反復内に持たなければなりません。
 
-フィルタは、参加するすべてのモデル上の単一の共有スコープとして実装されます。Organization 所有のデータを反復するすべての cron ワーカーは、`active` でない Organization に属する行が yield されないことを表明するテストを持たなければなりません。
+フィルタは、参加するすべてのモデル上の単一の共有スコープとして実装されます。Organization 所有のデータを反復するすべての cron ワーカーは、`active` でない Organization に属する行が列挙されないことを確認するテストを持たなければなりません。
 
 #### Loose Foreign Keys (LFK) {#loose-foreign-keys-lfk}
 
@@ -232,7 +232,7 @@ Organization Maintenance Mode 中にリクエストが**許可される**のは�
 
 ### 2. `project.repository_read_only` のみに依存する {#2-rely-solely-on-projectrepository_read_only}
 
-このフラグは現在存在し、リポジトリストレージの移動中に使用されています。これは単一プロジェクトの Git レベルの push のみをカバーします。REST、GraphQL、Sidekiq、コンテナレジストリ、パッケージ、または非リポジトリ状態はカバーしません。これを唯一の仕組みとして使用すると、移行中にほとんどの書き込みがサイレントに許可されてしまいます。
+このフラグは現在存在し、リポジトリストレージの移動中に使用されています。これは単一プロジェクトの Git レベルの push のみをカバーします。REST、GraphQL、Sidekiq、Container Registry、パッケージ、または非リポジトリ状態はカバーしません。これを唯一の仕組みとして使用すると、移行中にほとんどの書き込みがサイレントに許可されてしまいます。
 
 ### 3. データベースレイヤでの単一チョークポイント {#3-single-chokepoint-at-the-database-layer}
 
