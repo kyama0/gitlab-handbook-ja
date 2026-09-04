@@ -83,17 +83,17 @@ lastmod: "2026-08-27T23:30:57+02:00"
    1. Fortify との技術ベンチマーク（NAIC で進行中） - 近日公開予定。
 1. 関連コンテンツ
    1. ファネル初期／認知／関心
-      1. DevOps ページ: [DevSecOps Solution page](https://about.gitlab.com/solutions/security-compliance/)
-      1. [Security deck](https://docs.google.com/presentation/d/1z4v6v_lP7BHCP2jfRJ9bK_XoUgQ9XW01X2ZhQcon8bY/edit#slide=id.g2823c3f9ca_0_9)
-      1. ブログ - [What our summit in South Africa taught me about cybersecurity](https://about.gitlab.com/blog/2018/09/11/what-south-africa-taught-me-about-cybersecurity/)
+      1. DevOps ページ: [DevSecOps ソリューションページ](https://about.gitlab.com/solutions/security-compliance/)
+      1. [セキュリティデック](https://docs.google.com/presentation/d/1z4v6v_lP7BHCP2jfRJ9bK_XoUgQ9XW01X2ZhQcon8bY/edit#slide=id.g2823c3f9ca_0_9)
+      1. ブログ - [南アフリカでのサミットからサイバーセキュリティについて学んだこと](https://about.gitlab.com/blog/2018/09/11/what-south-africa-taught-me-about-cybersecurity/)
       1. ブログ - コンテナセキュリティの課題（近日公開）
-      1. [Compliance landing page](https://about.gitlab.com/solutions/compliance/)
-      1. [Financial Services industry](https://about.gitlab.com/solutions/finance/)
-      1. [Security 101 webinar](https://youtu.be/VVzSToclmuk?t=2m33s)
+      1. [コンプライアンスランディングページ](https://about.gitlab.com/solutions/compliance/)
+      1. [金融サービス業界](https://about.gitlab.com/solutions/finance/)
+      1. [セキュリティ 101 ウェビナー](https://youtu.be/VVzSToclmuk?t=2m33s)
    1. ファネル中盤／関心／PoC
-      1. [Video interview with Alex](https://www.youtube.com/watch?v=k4vEJnGYy84)
-      1. **Whitepaper: Seismic shift…**
-      1. [Ungated](https://about.gitlab.com/resources/downloads/gitlab-seismic-shift-in-application-security-whitepaper.pdf)（社内利用）
-      1. [Gated](https://about.gitlab.com/resources/whitepaper-seismic-shift-application-security/)
-      1. ブログ - [How can teams secure applications at DevOps speed? Security Dashboards are here to help.](https://about.gitlab.com/blog/2018/09/14/inside-gitlab-security-dashboards/)
-      1. [Comparisons](https://about.gitlab.com/why-gitlab/)
+      1. [Alex とのビデオインタビュー](https://www.youtube.com/watch?v=k4vEJnGYy84)
+      1. **ホワイトペーパー: 大転換…**
+      1. [ゲートなし](https://about.gitlab.com/resources/downloads/gitlab-seismic-shift-in-application-security-whitepaper.pdf)（社内利用）
+      1. [ゲートあり](https://about.gitlab.com/resources/whitepaper-seismic-shift-application-security/)
+      1. ブログ - [DevOps の速度でアプリケーションを保護するには？Security Dashboards が役立ちます。](https://about.gitlab.com/blog/2018/09/14/inside-gitlab-security-dashboards/)
+      1. [比較](https://about.gitlab.com/why-gitlab/)

@@ -85,14 +85,14 @@ lastmod: "2025-01-04T01:51:25+00:00"
    1. ファネル初期／認知／関心
       1. DevOps ページ: [DevSecOps ソリューションページ](https://about.gitlab.com/solutions/security-compliance/)
       1. [セキュリティデック](https://docs.google.com/presentation/d/1z4v6v_lP7BHCP2jfRJ9bK_XoUgQ9XW01X2ZhQcon8bY/edit#slide=id.g2823c3f9ca_0_9)
-      1. ブログ - [南アフリカでのサミットから学んだサイバーセキュリティ](https://about.gitlab.com/blog/2018/09/11/what-south-africa-taught-me-about-cybersecurity/)
+      1. ブログ - [南アフリカでのサミットからサイバーセキュリティについて学んだこと](https://about.gitlab.com/blog/2018/09/11/what-south-africa-taught-me-about-cybersecurity/)
       1. ブログ - コンテナセキュリティの課題（近日公開）
       1. [コンプライアンスランディングページ](https://about.gitlab.com/solutions/compliance/)
       1. [金融サービス業界](https://about.gitlab.com/solutions/finance/)
       1. [セキュリティ 101 ウェビナー](https://youtu.be/VVzSToclmuk?t=2m33s)
    1. ファネル中盤／関心／PoC
       1. [Alex とのビデオインタビュー](https://www.youtube.com/watch?v=k4vEJnGYy84)
-      1. **ホワイトペーパー: アプリケーションセキュリティにおける大転換**
+      1. **ホワイトペーパー: 大転換…**
       1. [ゲートなし](https://about.gitlab.com/resources/downloads/gitlab-seismic-shift-in-application-security-whitepaper.pdf)（社内利用）
       1. [ゲートあり](https://about.gitlab.com/resources/whitepaper-seismic-shift-application-security/)
       1. ブログ - [DevOps の速度でアプリケーションを保護するには？Security Dashboards が役立ちます。](https://about.gitlab.com/blog/2018/09/14/inside-gitlab-security-dashboards/)
