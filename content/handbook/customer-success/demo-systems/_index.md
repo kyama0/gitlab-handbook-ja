@@ -2,27 +2,22 @@
 title: "デモシステム"
 description: "GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales・Training チームが、様々な非同期・ライブの場面で GitLab の機能・価値・ワークフローをデモするためのインフラを提供します。"
 upstream_path: /handbook/customer-success/demo-systems/
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T08:40:38+09:00"
+upstream_sha: 24ab594c7293ee988858a91b316798974a875cc1
+translated_at: "2026-09-05T00:20:08+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-09-04T15:13:44Z"
 ---
 
 ## デモシステムの概要
 
 GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales・Training チームが、様々な非同期・ライブの場面で GitLab の機能・価値・ワークフローをデモするためのインフラを提供します。
 
-デモシステムは 2019 年 10 月に設計されました。現在は [Logan Stucker](https://gitlab.com/lfstucker) と [Seraphine Young](https://gitlab.com/seraphiney) が ([デモアーキテクチャ](/handbook/solutions-architects/center-of-excellence/demo-architecture/)) チームで、[Scott Cosentino](https://gitlab.com/scottcosentinogitlab)（[GitLab University](https://university.gitlab.com)）とともにデモシステムの主要メンテナーを担い、トレーニングインストラクターや受講生の [GitLab Learn Labs](https://gitlab.com/gitlab-learn-labs) サポートも担当しています。
+デモシステムは 2019 年 10 月に設計されました。現在は [Logan Stucker](https://gitlab.com/lfstucker)、[Maria Redmond](https://gitlab.com/mredmond)、[Seraphine Young](https://gitlab.com/seraphiney) が [Demo Architecture](/handbook/solutions-architects/center-of-excellence/demo-architecture/) チームで、[Scott Cosentino](https://gitlab.com/scottcosentinogitlab)（[GitLab University](https://university.gitlab.com)）とともにデモシステムの主要メンテナーを引き継ぎ、トレーニングインストラクターや受講生の [GitLab Learn Labs](https://gitlab.com/gitlab-learn-labs) サポートも担当しています。
 
-利用可能なデモサンプルプロジェクトに関するご質問や、失敗したパイプラインジョブのトラブルシューティングについては、`#demo-architect-partners` Slack チャンネルでお問い合わせください。
+デモサンプルプロジェクト、インフラ、アクセスリクエストに関するご質問や、失敗したパイプラインジョブのトラブルシューティングについては、`#demo-architect-partners` Slack チャンネルでお問い合わせください。
 
-インフラやアクセスリクエストに関するご質問は、以下の Slack チャンネルで `@Logan Stucker` にタグ付けしてください。
-
-- `#demo-systems` — SA・CSM・PSE チームメンバーのご質問や技術サポート用。トレーニング・ワークショップ関連の投稿は対象外です。
-- `#demo-architect-partners` — ワークショップ関連の議論用。
-- `#demo-systems-ps-education` — Professional Services の ILT/SPT 等に関する議論用。
-- `#sandbox-cloud-questions` — [Sandbox Cloud](/handbook/company/infrastructure-standards/realms/sandbox/)（AWS アカウントおよび GCP プロジェクト）のサポート用。
+[Sandbox Cloud](/handbook/company/infrastructure-standards/realms/sandbox/)（AWS アカウントおよび GCP プロジェクト）に関するサポートは、`#sandbox-cloud-questions` Slack チャンネルでお問い合わせください。
 
 このハンドブックドキュメントを、`gitlabdemo.com`・`gitlabdemo.cloud`・`gitlabtraining.cloud` ドメイン名を使用するすべてのリソースに関する唯一の信頼できる情報源（SSOT）としてください。
 
@@ -32,13 +27,13 @@ GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales�
 
 - **インフラに特別な点はありますか？** デモシステムのインフラ自体は、適切な人員と技術投資があれば顧客やパートナー企業でも実現できる内容です。
 
-- **トレーニングクラスやワークショップには特別なスケーラビリティ上の考慮事項がありますか？** はい。GitLab 製品は、ユーザーが一日を通じてさまざまな操作を行うことを想定して設計されており、小規模なリファレンスアーキテクチャは、数十人から数百人のユーザーが同じボタンを同時にクリックしたり、同じバックグラウンドジョブやパイプラインジョブを同時に実行したりするようには設計されていません。また、ユーザーはエフェメラルで、通常の GitLab 製品のユースケースでは一般的でない自動ガベージコレクション要件があります。これにより、特に Container Registry・Sidekiq・Kubernetes に関して特別なスケーラビリティの考慮が必要です。スケーラビリティの課題として以下の点が挙げられます。
+- **トレーニングクラスやワークショップには、技術面またはスケーラビリティ上の特別な考慮事項がありますか？** はい。GitLab 製品は、ユーザーが一日を通じてさまざまな操作を行うことを想定して設計されており、小規模なリファレンスアーキテクチャは、数十人から数百人のユーザーが同じボタンを同時にクリックしたり、同じバックグラウンドジョブやパイプラインジョブを同時に実行したりするようには設計されていません。また、ユーザーはエフェメラルで、通常の GitLab 製品のユースケースでは一般的でない自動ガベージコレクション要件があります。これにより、特に Container Registry・Sidekiq・Kubernetes に関して特別なスケーラビリティの考慮が必要です。スケーラビリティの課題として以下の点が挙げられます。
 
-  - 10 秒で起動する 500 の同時パイプライン向けのオートスケーリングランナー
-  - 60 秒で 500 の同時レビューアプリ/デプロイ向けのオートスケーリング Kubernetes ノード
+  - 10 秒以内に開始される 500 本の同時パイプラインに対応するオートスケーリング Runner
+  - 60 秒以内に発生する 500 件の同時レビューアプリ/デプロイに対応するオートスケーリング Kubernetes ノード
   - 大量のリソースを消費する Auto DevOps パイプライン
   - 不要な Kubernetes サービス（例：Postgres データベース）
-  - ワークショップ中に不要な集中テストジョブ（例：Code Quality・Dependency Scanning 等）
+  - ワークショップ中には不要な、負荷の高いテストジョブ（例：Code Quality、Dependency Scanning など）
   - 500 の同時プロジェクトインポートで失敗するプロジェクトのエクスポート/インポートのキュージョブ
   - インポート/エクスポートプロセスで既知の問題がある機能（例：Wiki）
   - 受講生への管理者アクセス権限（代替ユースケース）
@@ -46,7 +41,7 @@ GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales�
   - コンテナレジストリのキャッシュとガベージコレクション
   - レート制限のある Docker Hub からの CI イメージのプル
   - 非互換またはバグ修正でアップグレードされた CI イメージバージョン
-  - `.gitlab-ci.yml` でテンプレートを使用する際の基礎的なジョブ負荷の見落とし
+  - `.gitlab-ci.yml` で CI/CD コンポーネントを使用する際に、背後で発生するジョブ負荷を把握していないこと
   - 実行するアクションのコメントのないカスタム `.gitlab-ci.yml` ファイルの使用
   - Dependency Proxy の設定（特に npm および maven の依存関係）
   - ステップバイステップの手順の欠如による受講生の設定ミスとエラー
@@ -55,17 +50,9 @@ GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales�
 
 これらの共有環境は、デモクラウドまたはトレーニングクラウドと呼ばれます。歴史的に、トレーニングユーザーはデモクラウドを使用していたため、会話によっては名前が混用されることがあります。
 
+共有インスタンスの最新一覧、各インスタンスの用途、資格情報をリクエストすべき対象者については、Demo Architect Portal の [Sandbox Instance Request](https://cloud.gitlabdap.com/sandbox_instance_request)（社内限定）ページを参照してください。この一覧を同ページで管理することで、常に最新の状態を維持し、GitLab チームメンバーだけが閲覧できるようにしています。
 
-{{% panel header="**デモシステム v1 廃止のお知らせ**" header-bg="warning" %}}
-<code>gitlab-core.us.gitlabdemo.cloud</code> インスタンスは 2021-04-20 に廃止され、2021-06-03 に削除されました。データのバックアップはありません。<code>cs.gitlabdemo.cloud</code> インスタンス（直接の置き換え）へのアクセス手順については、<a href="#access-shared-omnibus-instances">共有 Omnibus インスタンスへのアクセス</a>をご参照ください。
-{{% /panel %}}
-
-- `cs.gitlabdemo.cloud` — すべてのチームメンバーがアクセスできる主要な GitLab Omnibus インスタンスです。セルフマネージド Omnibus インスタンス上でグループ・プロジェクト・サンドボックスを作成できます。これは全チームメンバーが共有する環境ですので、管理者エリアは読み取り専用として扱ってください。
-- `cs-gitlabamazonq.com` — Amazon Q を中心としたイネーブルメントとデモに使用されます。
-- `gitlab-amazonq.com` — Amazon Q の公開インスタンスとして使用されます。
-- `ilt.gitlabtraining.cloud` — インストラクター主導のトレーニングクラスに使用されます。インストラクターでサンプルプロジェクトのインポートやクラス内の全受講生のグループを確認するための管理者アクセスが必要な場合は、このインスタンスの資格情報を生成してください。
-- `spt.gitlabtraining.cloud` — EdCast で公開されているセルフペーストレーニングクラスに使用されます。教材設計または自習型の受講生コースの認定採点に関わる場合のみ、このインスタンスの資格情報を生成してください。自習型トレーニングに登録している場合は、[招待コードの引き換え](#invitation-code-redemption)の手順に従い、トレーニングラボガイドの手順のために設定済みのインスタンスにアクセスするための一時的な資格情報を生成してください。
-- `workshop.gitlabtraining.cloud` — 定期的に開催されるイネーブルメントおよびフィールドマーケティングのワークショップに使用されます。ラボサンプルプロジェクトやラボガイドの作成、プレゼンテーション、またはワークショップのサポートに関わる場合は、このインスタンスの資格情報を生成してください。
+Sales CS と記載されている主要な共有 Omnibus インスタンスは、グループやプロジェクトの作成、サンドボックス用途のために、すべてのチームメンバーが利用できます。チーム全体で共有されているため、[共有 Omnibus インスタンスへのアクセス](#access-shared-omnibus-instances)に記載されているとおり、自分のユーザーで **Can create top-level group** を有効にする場合を除き、Admin エリアは読み取り専用として扱ってください。セルフペーストレーニングクラスに登録している場合は、インスタンスの資格情報をリクエストせず、[招待コードの引き換え](#invitation-code-redemption)手順に従ってください。
 
 ## 独立した環境
 
@@ -76,24 +63,21 @@ GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales�
 
 ## はじめ方
 
-これらの手順は、[gitlabdemo.cloud](https://gitlabdemo.cloud) ポータルを使用するデモシステム v2 向けです。[gitlabdemo.com](https://gitlabdemo.com) を使用していたデモシステム v1 インフラは、トレーニングクラスの招待コードを除いて廃止されました。
+共有環境へのアクセスは、[Demo Architect Portal](https://cloud.gitlabdap.com/)（社内限定）からリクエストします。
 
 ### 共有 Omnibus インスタンスへのアクセス {#access-shared-omnibus-instances}
 
 以下の手順により、[共有環境](#shared-environments)（Omnibus セルフマネージドインスタンス）の 1 つ以上にアクセスできます。
 
-> デモクラウドポータルとプロビジョニングシステムは、オープンソースプロジェクト [gitlabdemo-cloud-app](https://gitlab.com/gitlab-com/demo-systems/management-apps/gitlabdemo-cloud-app) によって提供されています。
-
-1. GitLab Demo Cloud ポータル（[https://gitlabdemo.cloud](https://gitlabdemo.cloud)）にアクセスし、Okta の資格情報でサインインします。
-1. ナビゲーションの Environments リンクをクリックするか、ダッシュボードの **View Environments** ボタンをクリックします。
-1. アクセスしたいインスタンスを探し、**Generate Credentials** ボタンをクリックします。
-1. 資格情報が生成されたら、**View Credentials** ボタンをクリックします。
-1. 生成された資格情報を 1Password の Vault に新しいレコードとして保存します。
-1. **Access Instance** ボタンをクリックすると、GitLab Omnibus インスタンスの URL が新しいタブで開きます。
-1. インスタンスをブックマークしておくと、次回以降のアクセスが簡単になります。資格情報の生成（アクセスリクエスト）時のみ [https://gitlabdemo.cloud](https://gitlabdemo.cloud) ポータルにアクセスする必要があります。
-1. サインイン後、プロジェクトを保存するためのグループが事前に作成されています。名前空間の一貫性とセキュリティのベストプラクティスのため、カスタム名の他のトップレベルグループは作成しないでください。事前作成されたグループまたは個人の名前空間の下であれば、サブグループやプロジェクトを自由に作成できます。
+1. [Demo Architect Portal](https://cloud.gitlabdap.com/)（社内限定）にアクセスし、**GitLab Team Member Login** をクリックします。
+1. [Sandbox Instance Request](https://cloud.gitlabdap.com/sandbox_instance_request)（社内限定）フォームを開き、必要なインスタンスを選択します。ほとんどのチームメンバー向けの共有インスタンスは Sales CS です。
+1. リクエストを送信します。
+1. 資格情報の準備ができたら、1Password の Vault に新しいレコードとして保存します。
+1. インスタンスを開き、生成された資格情報でサインインします。
+1. 次回から直接アクセスできるように、インスタンスをブックマークします。
+1. サインイン後、自分のユーザーがトップレベルグループを作成できることを確認します。Admin エリアで **Overview** > **Users** に移動し、自分のユーザーを選択して **Edit** を選び、**Can create top-level group** がチェックされていることを確認します。チェックされていない場合は、自分のユーザーだけでチェックしてください。これは、共有インスタンスを読み取り専用として扱うというガイダンスに対する、意図された唯一の例外です。その後、プロジェクトを保存するためのトップレベルグループを作成します。名前空間の一貫性とセキュリティのベストプラクティスのため、カスタム名のトップレベルグループを追加で作成しないでください。自分のグループまたは個人の名前空間の下であれば、サブグループやプロジェクトを自由に作成できます。
 1. 各インスタンスには、共有 GitLab Runner と Kubernetes クラスターが事前設定されています。これらは CI/CD パイプライン実行時に使用するためのもので、共有環境では管理アクセスはありません。
-1. `#cs-questions` Slack チャンネルで他のメンバーに質問できます。
+1. `#demo-architect-partners` Slack チャンネルで他のメンバーに質問できます。
 
 ### AWS アカウントまたは GCP プロジェクト（Sandbox Cloud） {#aws-account-or-gcp-project-sandbox-cloud}
 
@@ -101,13 +85,13 @@ GitLab デモシステムは、GitLab の Customer Success・Marketing・Sales�
 
 ### 招待コードの作成 {#invitation-code-creation}
 
-https://cloud.gitlabdap.com/ にアクセスし、GitLab チームメンバーとしてサインインして、ニーズに応じたコンテンツ/ラボリクエストフォームに入力してください。ご質問は `#demo-architect-partners` Slack チャンネルまでお問い合わせください。
+[Demo Architect Portal](https://cloud.gitlabdap.com/)（社内限定）にアクセスし、GitLab チームメンバーとしてサインインして、ニーズに応じた Content/Lab Request フォームに入力してください。ご質問は `#demo-architect-partners` Slack チャンネルまでお問い合わせください。
 
 ### 招待コードの引き換え {#invitation-code-redemption}
 
 > **GitLab チームメンバーへの警告:** このプロセスでは既存の GitLab.com アカウントを使用するため、事前に準備が完了していることを確認してください。
 
-1. [https://cloud.gitlabdap.com/](https://cloud.gitlabdap.com/) にアクセスし、**Workshop/Lab Redemption** ボタンをクリックします。
+1. [Demo Architect Portal](https://cloud.gitlabdap.com/)（社内限定）にアクセスし、**Workshop/Lab Redemption** ボタンをクリックします。
 1. **Sign In With GitLab** をクリックします。
 1. インストラクターまたはコース資料から提供された招待コードを入力します。
 1. **Submit Code** を押します。
@@ -121,11 +105,11 @@ https://cloud.gitlabdap.com/ にアクセスし、GitLab チームメンバー�
 
 フィールドマーケティングチームとのスケジュール調整以外に、ピアレビューや承認プロセスはありません。これらの手順はベストプラクティスのガイダンスです。サポートが必要な場合は、`#demo-architect-partners` Slack チャンネルで同様のワークショップを実施した経験のある他のチームメンバーに相談してください。
 
-ワークショップの準備手順は、[こちら](https://cloud.gitlabdap.com/)のリクエストフォームに記入すると作成される Issue にリンクされます。
+ワークショップの準備手順は、[リクエストフォーム](https://cloud.gitlabdap.com/)（社内限定）に記入すると作成される Issue にリンクされます。
 
 ### ワークショップラボガイドカタログ
 
-公式に作成されたワークショップコンテンツはすべて、[デモアーキテクトポータル](https://cloud.gitlabdap.com/)のコンテンツディスカバリーセクションで確認できます。
+公式に作成されたワークショップコンテンツはすべて、[Demo Architect Portal](https://cloud.gitlabdap.com/)（社内限定）の Content Discovery セクションで確認できます。
 
 ## バージョンアップグレードとメンテナンス
 
@@ -139,7 +123,7 @@ https://cloud.gitlabdap.com/ にアクセスし、GitLab チームメンバー�
 
 私たちは、最新の機能とソリューションが提供する価値を紹介するために、共有環境を最新バージョンに保ちます。
 
-古いバージョンが必要なデモやサンドボックスのユースケースについては、コンテナサンドボックスのコンテナや、コンピュートサンドボックスの Omnibus を使用して GitLab インスタンスをデプロイできます。データの移行やパリティ設定のサポートは提供しません。
+古いバージョンが必要なデモやサンドボックスのユースケースについては、Container Sandbox のコンテナや、Compute Sandbox の Omnibus を使用して GitLab インスタンスをデプロイできます。データの移行やパリティ設定のサポートは提供しません。
 
 ### GitLab Duo 機能
 
@@ -162,7 +146,7 @@ GitLab Duo はデモクラウド環境で有効化されています。管理者
 
 以下は、デモシステムを裏側で支えるプロジェクトです。ソースコードを自由に調べて学ぶことができます。各プロジェクトは、ソースコードや含まれる情報のセキュリティリスクに応じて `Public`（公開）または `Private`（非公開）に分類されています。
 
-### デモシステム v2（廃止済み）
+### デモシステム v2
 
 - `Public` 基礎となる Terraform モジュールと Ansible ロール
   - [terraform-modules](https://gitlab.com/gitlab-com/demo-systems/terraform-modules)

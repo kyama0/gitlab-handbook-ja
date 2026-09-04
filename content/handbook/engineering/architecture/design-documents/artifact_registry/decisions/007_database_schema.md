@@ -4,17 +4,17 @@ owning-stage: "~devops::package"
 description: "レジストリのデータテーブル構成"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/007_database_schema/
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-translated_at: "2026-09-04T11:43:17+09:00"
+upstream_sha: "ebe7ab593136b21df5f05a4d4b9df742864011d1"
+translated_at: "2026-09-05T00:10:20+09:00"
 translator: codex
 stale: false
-lastmod: "2026-09-01T07:44:34+02:00"
+lastmod: "2026-09-04T06:53:42-07:00"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
 <!-- vale gitlab.FutureTense = NO -->
 
-## 背景
+## 背景 {#context}
 
 Artifact Registry は次の点を考慮したデータベース構成を必要とします。
 
@@ -31,7 +31,7 @@ Artifact Registry は次の点を考慮したデータベース構成を必要�
 - 主キーやタイムスタンプなど、いくつかの共通カラムは明確さのために省略しています。
 - すべてのテーブルは `namespace_id` カラムを含みます。[Cells のシャーディングキー要件](https://docs.gitlab.com/ee/development/database/multiple_databases/#guidelines-on-choosing-a-sharding-key) はサテライトサービスのデータベースには適用されません。行はネームスペースのアンカータプル（`platform`、`entity_type`、`entity_id`）を通じて間接的に Organization に帰属します。このカラムは以下のすべてのテーブル定義に明示的に示しています。
 - すべての `jsonb` カラムは、無制限なペイロードを防ぎ期待される構造を強制するために、永続化前に厳格な JSON スキーマに対して検証されなければなりません。これはこのドキュメント内のすべての `jsonb` カラムに適用されます（例: `rule_configuration` および `package_json`）。
-- テーブルが複数の暗号化された認証情報カラムを持つ場合（例: リモートリポジトリテーブルの `encrypted_username` と `encrypted_password`）、CHECK 制約により、すべての認証情報カラムが設定されているか、いずれも設定されていないかのどちらかを強制しなければなりません。部分的な認証情報（例: パスワードのないユーザー名）は受け付けません。
+- リモートリポジトリテーブルの暗号化された認証情報カラムは、単独では成り立ちません。各行には、認証情報を復号するためのラップされたデータ暗号化キーと、それをラップしたネームスペースキーの識別情報（`wrapped_dek`、`ns_key_id`、`ns_key_version`）も保持されるため、この 3 つがなければ暗号文を読み取れません。この 3 つとテーブルの暗号文カラムは一括して有無が決まる単位を構成し、CHECK 制約により、この単位のすべてのカラムが設定されているか、すべてが `NULL` であるかのどちらかを強制しなければなりません。部分的な認証情報（例: パスワードのないユーザー名）は受け付けません。また、暗号文のないラップ済み DEK や、ラップ済み DEK のない暗号文など、この 3 つによって生じ得る部分的な状態も受け付けません。`npm_remote_repositories` のようにテーブルが 1 つの認証情報属性しか保存しない場合でも、このような部分的な状態はレコードが保持する属性数に左右されないため、制約は必要です。キーテーブルと共通のカラム構成については、[暗号化キー](#encryption-keys)を参照してください。
 - リモートリポジトリテーブルの暗号化された認証情報カラム（`encrypted_username`、`encrypted_password`、`encrypted_auth_token`）は、平文の入力を 2048 文字に制限し、暗号化前に Go の検証レイヤーで強制します。この上限は平文に対するものであり、平文はアプリケーションレイヤーにのみ存在します。データベースが見るのは `bytea` の暗号文だけなので、DB 側の CHECK（例: `octet_length(...) <= N`）は、暗号化方式の固定オーバーヘッド（IV、認証タグ、key-id ヘッダー）を介して間接的に平文を制約することしかできず、上限の近似となり、必須の Go チェックと冗長になります。CHECK を省略することで、スキーマを暗号フレーミングから切り離した状態にも保てます。暗号、key-id レイアウト、エンベロープ構造の変更がスキーママイグレーションを必要としません。
 - すべての `id` カラムは、Artifact Registry インスタンスのスコープ内で一意でなければなりません。`namespaces.id` は UUIDv7（[RFC 9562](https://datatracker.ietf.org/doc/rfc9562/)）を使用し、すべての Artifact Registry デプロイにまたがるグローバルな一意性を保証します。PostgreSQL の各バージョンで利用可能な生成方法を含む完全な根拠については、[ネームスペース ID の型](#namespace-id-type)を参照してください。その他すべての API 公開テーブルも `id` に UUIDv7 を使用し、アプリケーションレイヤーで生成します（カラムデフォルトもシーケンスも使用しません）。これにより、API に公開されるすべてのエンティティで単一の識別子型を維持し、調整なしでデプロイ間のグローバル一意性を保証します。アプリケーション生成の UUIDv7 は論理レプリケーションにも適しています（[出典](https://gitlab.com/gitlab-com/gl-infra/data-access/dbo/dbo-issue-tracker/-/work_items/691#note_3309931104)）。サブスクライバー間で調整すべきサーバー側シーケンスや `GENERATED` カラムがなく、UUIDv7 の時刻順序性により B-tree の挿入局所性は `BIGSERIAL` に近く保たれます。内部 blob ストレージ層（`blob_storage_attachments`、`blob_storage_blobs`、`upload_sessions`）は意図的な例外です。API には決して公開されず、最も大量の行を保持するため、`bigint DEFAULT nextval('<table>_id_seq')` の ID を維持します。その一意性は単一の Artifact Registry データベース内でローカルに強制されます。これらの行は常にネームスペース配下にスコープされるため、それで十分です。サーバー側デフォルトを持たないすべての `uuid` `id` カラムには値をバージョン 7 に制限する CHECK 制約があり、ジェネレーターを信頼するのではなくスキーマがバージョンを強制します。
 
@@ -41,7 +41,7 @@ Artifact Registry は次の点を考慮したデータベース構成を必要�
 
 - [ネームスペーステーブル](#namespaces)。不変のスラッグと仮想アンカータプルを持つ内部ネームスペースエンティティを導入することで、Artifact Registry を外部識別子から切り離します。完全な根拠については [ADR-022](022_namespace_decoupling.md) を参照してください。
 - [リポジトリコレクションテーブル](#repository-collections)。ネームスペース内のリポジトリの論理的なグループです。スキーマには初日から存在しますが、まだユーザーには公開されていません。すべてのネームスペースには「default」リポジトリコレクションが作成され、すべてのリポジトリが自動的にそこへ割り当てられます。
-- ネームスペースレベルのテーブル。これらは [ライフサイクルポリシーの設定とルール](#lifecycle-policies) および [ネームスペースレベルのストレージ統計](#storage-usage-calculation) をネームスペースに直接スコープして扱います。
+- ネームスペースレベルのテーブル。これらは [ライフサイクルポリシーの設定とルール](#lifecycle-policies)、[ネームスペースレベルのストレージ統計](#storage-usage-calculation)、およびこのネームスペースに保存されたシークレットをラップする [暗号化キー](#encryption-keys)を、ネームスペースに直接スコープして扱います。
 - [リポジトリ親テーブル](#repositories)。すべてのフォーマットにまたがるすべてのリポジトリ（ホスト型、仮想型、リモート型）の統一されたレジストリであり、ランディングページのハイブリッドリストとクロスフォーマットクエリを支えます。
 - アーティファクトフォーマットレベルのテーブル。ここには各フォーマット専用のテーブルがあります。ホスト型リポジトリ（[Container](#container-repositories)、[Maven](#maven-repositories)、[NPM](#npm-repositories)）、リモートリポジトリ（[Container](#container-remote-repositories)、[Maven](#maven-remote-repositories)、[NPM](#npm-remote-repositories)）、仮想リポジトリ（[Container](#virtual-container-repositories)、[Maven](#maven-virtual-repositories)、[NPM](#npm-virtual-repositories)）。それぞれ `repository_id` を介して親の `repositories` テーブルを参照します。
 - [blob ストレージレベルのテーブル](#blob-storage)。実際のストレージメタデータと [進行中のアップロードセッションの追跡](#upload-sessions) を扱います。
@@ -405,6 +405,42 @@ erDiagram
 
 これらのテーブルは、ある意味で [カスケード設定](https://docs.gitlab.com/development/cascading_settings/) のように動作します。それらの説明は [ネームスペースレベル](#lifecycle-policies) の同様の名前のテーブルとまったく同じであり、パーティショニングも同様です。すべてのオーバーライドテーブルは `HASH(namespace_id)` で 64 パーティションにパーティショニングされます。現在の 2 層の優先順位システム（ネームスペース → リポジトリ）は、MVP 後にリポジトリコレクションが公開される際に 3 層（ネームスペース → リポジトリコレクション → リポジトリ）に拡張できます。これには同じパターンに従ってリポジトリコレクションレベルのオーバーライドテーブルを追加する必要がありますが、既存のネームスペースレベルやリポジトリレベルのテーブルへの変更は不要です。
 
+### 暗号化キー {#encryption-keys}
+
+```mermaid
+erDiagram
+    namespaces ||--o{ namespace_encryption_keys : "has many"
+
+    namespace_encryption_keys {
+        uuid id PK "UUIDv7, application-generated, part of composite PK (id, namespace_id)"
+        uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
+        int version "NOT NULL, CHECK >= 1, UNIQUE (namespace_id, version)"
+        bytea wrapped_key "NOT NULL, the namespace key wrapped by the deployment root key; emptied to zero length on crypto-shred"
+        text root_key_uri "NOT NULL, limit 255, names the root key this row was wrapped under"
+        boolean active "NOT NULL, DEFAULT true"
+        timestamptz shredded_at "nullable, crypto-shred tombstone marker"
+        timestamptz created_at "NOT NULL, DEFAULT NOW()"
+    }
+```
+
+- **namespace_encryption_keys**: ネームスペースが保持したキー暗号化キーごとに 1 行を保存し、各キーをデプロイのルートキーでラップします。ネームスペースが一度に持つアクティブなキーは 1 つです。以前のバージョンでラップされた行は引き続きそのバージョンを介してキーを解決するため、置き換えられたバージョンは削除せず、非アクティブ化してテーブルに残します。`id` は参照用の識別情報であり、認証情報の行は `ns_key_id` でこれを指定します。一方、`version` はネームスペース単位の序数で、ネームスペースのキーを順序付け、ローテーションの走査を制御します。この 2 つは相互に置き換えられません。暗号学的に消去されたネームスペースを再度有効にすると `version` は 1 から再開するため、ネームスペースの存続期間全体にわたってキーを識別できず、読み取りでは `ns_key_id` によってラップ用キーを解決します。暗号学的消去では、行を削除せず tombstone として保持します。`wrapped_key` を長さ 0 の `bytea` で上書きし、`active` を解除して `shredded_at` に時刻を記録するため、消去済みの状態が再起動後も維持され、すべてのインスタンスに適用されます。2 つの行単位の CHECK 制約によって、この構成を維持します。一方は tombstone がアクティブのままになることを拒否し、もう一方はキー素材と未消去状態を双方向に関連付けて、`shredded_at` が `NULL` の場合に限りキー素材が存在するようにします。いずれかの tombstone が存在すればネームスペース全体が消去済みであるという、ネームスペース全体の不変条件はアプリケーションレイヤーで強制します。これは行単位の CHECK で対応できる範囲の限界です。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+
+#### インデックス {#encryption-keys-indexes}
+
+- **`namespace_encryption_keys`**: `(namespace_id, version)` に対するユニークインデックスは、ネームスペース単位のバージョン序数を維持します。`(namespace_id) WHERE active = true` に対する部分ユニークインデックスは、ネームスペースごとにアクティブなキーが 1 つだけであることを保証するとともに、認証情報を書き込む際にラップに使用するキーを検索するために使われます。`(namespace_id) WHERE shredded_at IS NOT NULL` に対する部分インデックスは、読み取りパスでキー履歴を走査せずに、ネームスペースが消去済みかを検出するために使われます。`(root_key_uri) WHERE shredded_at IS NULL` に対する部分インデックスは、特定のルートキーで現在もラップされている有効な行を検索するために使われ、ルートキーのローテーションで走査し、完了確認で数える対象となります。消去済みの行は、最後のインデックスから意図的に除外します。消去済みのネームスペースは以前の `root_key_uri` を永続的に保持し、その `wrapped_key` はすでに空になっているため、ローテーションでこれらの行を対象にしてはいけません。4 つのインデックスのうち、`namespace_id` 以外のカラムで始まるのはこれだけです。このインデックスが扱うクエリはルートキーを指定し、ネームスペースを指定しないためです。パーティショニングされたテーブルのすべてのインデックスと同様、各パーティションにローカルなため、この読み取りは 1 つのパーティションに絞られず、64 パーティションすべてに分散します。ルートキーのローテーションはバックグラウンドジョブとして一定数の行をまとめて走査するため、リクエストパスでは許容できないこの分散も、ここでは許容できます。
+
+#### リモートリポジトリテーブルの認証情報カラム {#credential-columns-on-remote-repository-tables}
+
+3 つのリモートリポジトリテーブル（[Container](#container-remote-repositories)、[Maven](#maven-remote-repositories)、[NPM](#npm-remote-repositories)）は、行単位のデータ暗号化キーによる暗号文として上流の認証情報を保存し、それぞれが暗号文とともに次の 3 つのカラムを持ちます。
+
+- `wrapped_dek`（`bytea`）: ネームスペースキーでラップされた、行のデータ暗号化キー。
+- `ns_key_id`（`uuid`）: このキーをラップした `namespace_encryption_keys` の行。`(ns_key_id, namespace_id)` に対する複合外部キーで `namespace_encryption_keys(id, namespace_id)` を参照し、`ON DELETE RESTRICT` を指定します。これにより、認証情報の行が引き続き依存している間は、キーのバージョンを削除できません。
+- `ns_key_version`（`int`）: 行のラップに使われたネームスペースキーのバージョン。ネームスペースキーのローテーション処理が、キーテーブルを結合せずに古いバージョンのままの行を選択できるよう、キーの行から非正規化します。この処理はネームスペースを指定するため、後述の `(namespace_id, ns_key_id)` インデックスを通じてそのネームスペースの行へ到達し、バージョンでフィルタリングします。`ns_key_version` から始まるインデックスはありません。`namespace_id` プレフィックスによって 1 つのパーティションに絞られ、ネームスペースが保持する認証情報の行はリモートリポジトリごとに 1 つであり、これらのテーブルは管理操作でしか変更されないため、フィルターが走査する行は少数です。読み取りでは常に `ns_key_id` によってラップ用キーを解決し、このカラムは使用しません。
+
+認証情報を必要としないリモートリポジトリも有効なため、この 3 つはいずれも NULL 許容です。[背景](#context)で説明した一括有無の CHECK により、行が単位の一部だけを保持することを防ぎます。また、各テーブルは `(namespace_id, ns_key_id)` に対するインデックスを持ちます。PostgreSQL は外部キーの参照される側にはインデックスを作成しますが、参照する側には作成しません。そのため、このインデックスがなければ、キーの行を削除しようとするたびに、`ON DELETE RESTRICT` を強制するため認証情報テーブル全体が走査されます。このアクションは `ON DELETE RESTRICT` と記述しますが、このドキュメントでは、削除を拒否する他のキーには `ON DELETE NO ACTION` と記述しています。これらのキーはいずれも `DEFERRABLE` ではないため、2 つの表記は同じように動作します。`RESTRICT` を選ぶのは、チェックを遅延させる可能性も排除し、キーの行を削除するステートメントで拒否されるようにして、トランザクションのコミット時に持ち越さないためです。
+
+行の上位には 2 段階のキーがあります。デプロイのルートキーがネームスペースキーをラップし、ネームスペースキーが各行の DEK をラップします。各段階は個別にローテーションされ、いずれも認証情報の暗号文を再暗号化しません。ルートキーをローテーションすると、`namespace_encryption_keys.wrapped_key` を新しいルートキーでラップして `root_key_uri` を更新しますが、認証情報の行には一切触れません。ネームスペースキーをローテーションすると、各認証情報の行の `wrapped_dek` を新しいネームスペースキーでラップし、その `ns_key_id` と `ns_key_version` を更新しますが、暗号文カラムは変更しません。暗号文を置き換えるのは認証情報への書き込み時だけで、そのたびに新しい DEK を生成します。
+
 ### コンテナリポジトリ {#container-repositories}
 
 この部分の課題は、[OCI Distribution Spec v1.1](https://github.com/opencontainers/distribution-spec/blob/main/spec.md) に準拠することです。
@@ -603,6 +639,9 @@ erDiagram
         uuid repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
         text url "NOT NULL, limit 1024"
         text auth_url "nullable, limit 1024"
+        bytea wrapped_dek "nullable, this row's data-encryption key, wrapped by the namespace key"
+        uuid ns_key_id FK "nullable, (ns_key_id, namespace_id) references namespace_encryption_keys(id, namespace_id), ON DELETE RESTRICT"
+        int ns_key_version "nullable, the namespace key version this row was wrapped under"
         bytea encrypted_username
         bytea encrypted_password
         smallint cache_validity_hours "NOT NULL, DEFAULT 24"
@@ -662,7 +701,7 @@ erDiagram
     }
 ```
 
-- **container_remote_repositories**: 外部のコンテナレジストリを表します。URL、オプションの認証 URL（`auth_url`）、認証情報、キャッシュ TTL（`cache_validity_hours`）を含みます。ヘルスチェックのステータスは監視のために追跡されます。`repository_id` を介して親の `repositories` テーブルを参照します。リモートリポジトリはスタンドアロンであるため、同じリモートを使用する 2 つの仮想リポジトリは 1 つのキャッシュを共有します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **container_remote_repositories**: 外部のコンテナレジストリを表します。URL、オプションの認証 URL（`auth_url`）、認証情報、キャッシュ TTL（`cache_validity_hours`）を含みます。ヘルスチェックのステータスは監視のために追跡されます。`repository_id` を介して親の `repositories` テーブルを参照します。リモートリポジトリはスタンドアロンであるため、同じリモートを使用する 2 つの仮想リポジトリは 1 つのキャッシュを共有します。上流の認証情報は、それを復号するラップ済みデータ暗号化キーとともに暗号文として保存します。カラムの構成と制約については、[暗号化キー](#encryption-keys)を参照してください。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **container_remote_images**: リモートリポジトリ内のキャッシュされたコンテナイメージです。`container_images` を反映します。`last_downloaded_at` はキャッシュされたイメージが最後にプルされた時刻を記録し、ホット行の競合を避けるためにバッファ書き込み/非同期書き込み（`repositories.downloads_count` と同じパターン）を介して維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持の評価に使用されます（[ADR-010](010_data_retention.md)）。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **container_remote_blobs**: キャッシュされたレイヤーまたは設定 blob です。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **container_remote_manifests**: キャッシュされたイメージマニフェストです。`size` カラムは、このキャッシュが把握しているサブツリーのバイトフットプリントを保持します。すなわち、キャッシュ時のマニフェスト自体のペイロードに加えて、子が到着するにつれて各子の `size` が加わります。イメージマニフェストの場合、値はキャッシュ時に完全です。マニフェストリストと OCI インデックスの場合、子がフェッチされるにつれて段階的にツリー全体のフットプリントに収束し、一部の子が一度もプルされなければ部分的なままになることもあります。この段階的なセマンティクスは遅延リモートキャッシングを反映しています。`size` を完全に保つためだけに積極的に子をフェッチすると、遅延設計が損なわれます。`created_at` はマニフェストが最初にキャッシュされた時刻を記録し、ホスト型の同等のもの（[`container_manifests`](#container-repositories)）と同じ公開履歴・時間範囲出所スキャンを支えます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
@@ -672,7 +711,7 @@ erDiagram
 
 #### インデックス {#container-remote-repositories-indexes}
 
-- **`container_remote_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によってリモートリポジトリを検索します。
+- **`container_remote_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によってリモートリポジトリを検索します。`(namespace_id, ns_key_id)` に対するインデックス — [暗号化キー](#encryption-keys)の外部キーを支え、キーの行を削除する際にテーブルを走査せず参照元の行を確認できるようにします。
 - **`container_remote_images`**: `(namespace_id, container_remote_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — 名前によってキャッシュされたイメージを検索します。部分条件により、ソフト削除後に同じ名前のイメージを再作成できます。
 - **`container_remote_blobs`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — イメージ内でダイジェストによってキャッシュされた blob を検索します。部分条件により、ソフト削除後に同じダイジェストを再キャッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによって blob を検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存された blob の sha256 から、それを参照するすべてのキャッシュされた blob への逆引きで、チェックサム検索と脆弱性影響がキャッシュ側の参照もカバーするようにします。このインデックスはリモートキャッシュ固有です。ホスト型の `container_blobs` テーブルはコンテンツアドレス指定であり、同じ検索を `(namespace_id, digest)` インデックスで処理するため、これを反映する `blob_sha256` インデックスはありません。リモートテーブルには、逆引きに再利用できるスタンドアロンの `(namespace_id, digest)` インデックスもありません。これはプル専用で、blob マウントパスを正当化するものがないためです。そのため、チェックサム検索とサイズ照合クエリが `blob_storage_blobs(namespace_id, sha256)` と JOIN するカラムである `blob_sha256` を直接インデックス化します。
 - **`container_remote_manifests`**: `(namespace_id, container_remote_image_id, digest) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — イメージ内でダイジェストによってキャッシュされたマニフェストを検索します。部分条件により、ソフト削除後に同じダイジェストを再キャッシュできます。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってマニフェストを検索します。`(namespace_id, blob_sha256)` に対するインデックス — マニフェストペイロードの保存された blob の sha256 から、それを参照するすべてのキャッシュされたマニフェストへの逆引きで、チェックサム検索と脆弱性影響がキャッシュ側の参照もカバーするようにします。このインデックスはリモートキャッシュ固有です。ホスト型の `container_manifests` テーブルには同等のインデックスがありません。また、リモート blob テーブルと同様に、リモートマニフェストテーブルにも再利用できるスタンドアロンの `(namespace_id, digest)` インデックスがないため、逆引きには `blob_sha256` を直接インデックス化します。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みマニフェストを削除時刻順に一覧し、キャッシュされたコンテナイメージのアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体の時系列スキャンで、ホスト型の [`container_manifests`](#container-repositories) インデックスを反映し、キャッシュ側の公開履歴と出所をカバーします。ホスト型のインデックスと同じ監査証跡の理由から無条件（`soft_deleted_at` 述語なし）です。
@@ -694,8 +733,8 @@ erDiagram
   INSERT INTO repository_collection_repositories (namespace_id, repository_collection_id, repository_id)
   VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', <repository_collection_id>, <returned_id>);
   -- Then create the format-specific record
-  INSERT INTO container_remote_repositories (namespace_id, repository_id, url, encrypted_username, encrypted_password)
-  VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', <returned_id>, 'https://registry.hub.docker.com', $1, $2);
+  INSERT INTO container_remote_repositories (namespace_id, repository_id, url, wrapped_dek, ns_key_id, ns_key_version, encrypted_username, encrypted_password)
+  VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', <returned_id>, 'https://registry.hub.docker.com', $1, $2, $3, $4, $5);
   ```
 
 - キャッシュされたマニフェストが新鮮かどうかを確認する
@@ -940,6 +979,9 @@ erDiagram
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         uuid repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
         text url "NOT NULL, limit 1024"
+        bytea wrapped_dek "nullable, this row's data-encryption key, wrapped by the namespace key"
+        uuid ns_key_id FK "nullable, (ns_key_id, namespace_id) references namespace_encryption_keys(id, namespace_id), ON DELETE RESTRICT"
+        int ns_key_version "nullable, the namespace key version this row was wrapped under"
         bytea encrypted_username
         bytea encrypted_password
         smallint cache_validity_hours "NOT NULL, DEFAULT 24"
@@ -986,7 +1028,7 @@ erDiagram
     }
 ```
 
-- **maven_remote_repositories**: 外部の Maven リポジトリを表します。URL、認証情報、アーティファクトのキャッシュ TTL（`cache_validity_hours`）、および `maven-metadata.xml` などのメタデータレスポンス用の別個の TTL（`metadata_cache_validity_hours`）を含みます。ヘルスチェックのステータスは監視のために追跡されます。`repository_id` を介して親の `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **maven_remote_repositories**: 外部の Maven リポジトリを表します。URL、認証情報、アーティファクトのキャッシュ TTL（`cache_validity_hours`）、および `maven-metadata.xml` などのメタデータレスポンス用の別個の TTL（`metadata_cache_validity_hours`）を含みます。ヘルスチェックのステータスは監視のために追跡されます。`repository_id` を介して親の `repositories` テーブルを参照します。上流の認証情報は、それを復号するラップ済みデータ暗号化キーとともに暗号文として保存します。カラムの構成と制約については、[暗号化キー](#encryption-keys)を参照してください。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **maven_remote_packages**: グループ ID とアーティファクト ID で識別される、キャッシュされた Maven パッケージです。`maven_packages` を反映します。`last_downloaded_at` はパッケージのいずれかのキャッシュされたファイルが最後にダウンロードされた時刻を記録し、ホット行の競合を避けるためにバッファ書き込み/非同期書き込みを介して維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持の評価に使用されます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **maven_remote_versions**: Maven パッケージのキャッシュされたバージョンです。`maven_versions` を反映します。`last_downloaded_at` はバージョンのいずれかのキャッシュされたファイルが最後にダウンロードされた時刻を記録し、ホット行の競合を避けるためにバッファ書き込み/非同期書き込みを介して維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持の評価に使用されます。`created_at` はバージョンが最初にキャッシュされた時刻を記録し、[`maven_versions`](#maven-repositories) を反映してキャッシュ側の公開履歴と出所スキャンを支えます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **maven_remote_files**: キャッシュされたファイル（JAR、POM、チェックサム、`maven-metadata.xml`）です。NULL 許容の `maven_remote_version_id` は、ホスト型と同じパターン（バージョン固有のファイル対 `maven-metadata.xml` のようなパッケージレベルのファイル）を保ちます。`sha1` と `md5` は、コンテンツがホストされているかキャッシュされているかに関係なく Maven プロトコルがこれらのチェックサムの提供を要求するため保持されます。`sha512` は、ホスト型の `maven_files` のカラム形状を反映するために整合性の観点から追加され、Maven Virtual 仕様（S30）が単一のクエリパスでどちらのバックエンドからも `.sha512` サイドカーを提供できるようにします。値はプロキシ書き込みステップ中に他のチェックサムとともにキャッシュされたバイトから計算されるため、初日から `NOT NULL` を達成できます。`upstream_checked_at` はファイルが上流リポジトリに対して最後に検証された時刻を記録し、アーティファクトファイルについては `cache_validity_hours`、メタデータファイル（例: `maven-metadata.xml`）については `metadata_cache_validity_hours` と比較して再検証が必要かどうかを判断します。`upstream_etag` は上流が返した ETag を保存し、変更されていないファイルの再ダウンロードを回避するための条件付きリクエスト（`If-None-Match`）を可能にします。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
@@ -994,7 +1036,7 @@ erDiagram
 
 #### インデックス {#maven-remote-repositories-indexes}
 
-- **`maven_remote_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によってリモートリポジトリを検索します。
+- **`maven_remote_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によってリモートリポジトリを検索します。`(namespace_id, ns_key_id)` に対するインデックス — [暗号化キー](#encryption-keys)の外部キーを支え、キーの行を削除する際にテーブルを走査せず参照元の行を確認できるようにします。
 - **`maven_remote_packages`**: `(namespace_id, maven_remote_repository_id, group_id, artifact_id) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — Maven 座標によってキャッシュされたパッケージを検索します。部分条件により、ソフト削除後に同じ座標のパッケージを再作成できます。
 - **`maven_remote_versions`**: `(namespace_id, maven_remote_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内のキャッシュされたバージョンを検索します。この部分条件により、ソフト削除後に同じ識別子でバージョンを再作成できます。`(namespace_id, maven_remote_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — バージョン一覧表示で、キャッシュされたパッケージのバージョンをサイズ順に並べます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みバージョンを削除時刻順に一覧し、キャッシュされた Maven アーティファクトに対するアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体を時系列でスキャンします。ローカルの [`maven_versions`](#maven-repositories) インデックスを反映し、キャッシュ側の公開履歴と来歴を対象にします。ローカルインデックスと同じ監査証跡上の理由から、無条件（`soft_deleted_at` の述語なし）のインデックスとします。
 - **`maven_remote_files`**: `(namespace_id, maven_remote_version_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NOT NULL` に対するユニークインデックス — バージョン固有のファイル名は、バージョン内で一意でなければなりません。`(namespace_id, maven_remote_package_id, file_name) WHERE soft_deleted_at IS NULL AND maven_remote_version_id IS NULL` に対するユニークインデックス — パッケージレベルのファイル名は、パッケージ内で一意でなければなりません。`(namespace_id, blob_storage_attachment_id)` に対するインデックス — ストレージアタッチメントによってファイルを検索します。`(namespace_id, blob_sha256)` に対するインデックス — 保存済み blob の sha256 から、それを参照するすべてのキャッシュ済み Maven ファイルを逆引きします。ローカルの [`maven_files`](#maven-repositories) インデックスを反映し、チェックサム検索でキャッシュ側の参照も対象にします。
@@ -1012,8 +1054,8 @@ erDiagram
   INSERT INTO repository_collection_repositories (namespace_id, repository_collection_id, repository_id)
   VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', '019a1b2c-0456-7abc-8def-000000000456', <returned_id>);
   -- Then create the format-specific record
-  INSERT INTO maven_remote_repositories (namespace_id, repository_id, url, encrypted_username, encrypted_password)
-  VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', <returned_id>, 'https://repo.maven.apache.org/maven2', $1, $2);
+  INSERT INTO maven_remote_repositories (namespace_id, repository_id, url, wrapped_dek, ns_key_id, ns_key_version, encrypted_username, encrypted_password)
+  VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', <returned_id>, 'https://repo.maven.apache.org/maven2', $1, $2, $3, $4, $5);
   ```
 
 - 座標でキャッシュされた Maven ファイルを検索する
@@ -1333,6 +1375,9 @@ erDiagram
         uuid namespace_id PK,FK "NOT NULL, references namespaces(id)"
         uuid repository_id FK "NOT NULL, UNIQUE (namespace_id, repository_id), (repository_id, namespace_id) references repositories(id, namespace_id)"
         text url "NOT NULL, limit 1024"
+        bytea wrapped_dek "nullable, this row's data-encryption key, wrapped by the namespace key"
+        uuid ns_key_id FK "nullable, (ns_key_id, namespace_id) references namespace_encryption_keys(id, namespace_id), ON DELETE RESTRICT"
+        int ns_key_version "nullable, the namespace key version this row was wrapped under"
         bytea encrypted_auth_token
         smallint cache_validity_hours "NOT NULL, DEFAULT 24"
         smallint metadata_cache_validity_hours "NOT NULL, DEFAULT 24"
@@ -1395,7 +1440,7 @@ erDiagram
     }
 ```
 
-- **npm_remote_repositories**: 外部の npm レジストリを表します。URL、認証情報、アーティファクトのキャッシュ TTL（`cache_validity_hours`）、およびパッケージメタデータレスポンス用の別個の TTL（`metadata_cache_validity_hours`）を含みます。ヘルスチェックのステータスは監視のために追跡されます。`repository_id` を介して親の `repositories` テーブルを参照します。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
+- **npm_remote_repositories**: 外部の npm レジストリを表します。URL、認証情報、アーティファクトのキャッシュ TTL（`cache_validity_hours`）、およびパッケージメタデータレスポンス用の別個の TTL（`metadata_cache_validity_hours`）を含みます。ヘルスチェックのステータスは監視のために追跡されます。`repository_id` を介して親の `repositories` テーブルを参照します。上流の認証情報は、それを復号するラップ済みデータ暗号化キーとともに暗号文として保存します。カラムの構成と制約については、[暗号化キー](#encryption-keys)を参照してください。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **npm_remote_packages**: キャッシュされた npm パッケージです。`last_downloaded_at` はパッケージのいずれかのキャッシュされたファイルが最後にダウンロードされた時刻を記録し、ホット行の競合を避けるためにバッファ書き込み/非同期書き込みを介して維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持の評価に使用されます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **npm_remote_versions**: その `package_json` メタデータを持つキャッシュされたバージョンです。packument がフェッチされたときに（すべてのバージョンのメタデータを含むため）入力されます。`last_downloaded_at` はバージョンのいずれかのキャッシュされたファイルが最後にダウンロードされた時刻を記録し、ホット行の競合を避けるためにバッファ書き込み/非同期書き込みを介して維持されます。`keep_last_downloaded_at` ライフサイクルルールとキャッシュ保持の評価に使用されます。`created_at` はバージョンが最初にキャッシュされた時刻を記録し、[`npm_versions`](#npm-repositories) を反映してキャッシュ側の公開履歴と出所スキャンを支えます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
 - **npm_remote_tags**: キャッシュされた dist-tag からバージョンへのマッピング（例: `latest`、`next`）です。packument から入力されます。`HASH(namespace_id)` で 64 パーティションにパーティショニングされます。
@@ -1405,7 +1450,7 @@ erDiagram
 
 #### インデックス {#npm-remote-repositories-indexes}
 
-- **`npm_remote_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によってリモートリポジトリを検索します。
+- **`npm_remote_repositories`**: `(namespace_id, repository_id)` に対するユニークインデックス — 親参照によってリモートリポジトリを検索します。`(namespace_id, ns_key_id)` に対するインデックス — [暗号化キー](#encryption-keys)の外部キーを支え、キーの行を削除する際にテーブルを走査せず参照元の行を確認できるようにします。
 - **`npm_remote_packages`**: `(namespace_id, npm_remote_repository_id, name) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — 名前によってキャッシュされたパッケージを検索します。部分条件により、ソフト削除後に同じ名前のパッケージを再作成できます。
 - **`npm_remote_versions`**: `(namespace_id, npm_remote_package_id, version) WHERE soft_deleted_at IS NULL` に対するユニークインデックス — パッケージ内のキャッシュされたバージョンを検索します。この部分条件により、ソフト削除後に同じ識別子でバージョンを再作成できます。`(namespace_id, npm_remote_package_id, size_bytes DESC) WHERE soft_deleted_at IS NULL` に対するインデックス — バージョン一覧表示で、キャッシュされたパッケージのバージョンをサイズ順に並べます。`(namespace_id, soft_deleted_at DESC) WHERE soft_deleted_at IS NOT NULL` に対するインデックス — ソフト削除されたキャッシュ済みバージョンを削除時刻順に一覧し、キャッシュされた npm アーティファクトに対するアーティファクト粒度のゴミ箱一覧クエリを支えます。`(namespace_id, created_at DESC)` に対するインデックス — ネームスペース全体を時系列でスキャンします。ローカルの [`npm_versions`](#npm-repositories) インデックスを反映し、キャッシュ側の公開履歴と来歴を対象にします。ローカルインデックスと同じ監査証跡上の理由から、無条件（`soft_deleted_at` の述語なし）のインデックスとします。
 - **`npm_remote_tags`**: `(namespace_id, npm_remote_package_id, name)` に対するユニークインデックス — 名前によってディストリビューションタグを検索します。`(namespace_id, npm_remote_version_id)` に対するインデックス — 特定のバージョンを指すすべてのタグを見つけます。
@@ -1425,8 +1470,8 @@ erDiagram
   INSERT INTO repository_collection_repositories (namespace_id, repository_collection_id, repository_id)
   VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', '019a1b2c-0456-7abc-8def-000000000456', <returned_id>);
   -- Then create the format-specific record
-  INSERT INTO npm_remote_repositories (namespace_id, repository_id, url, encrypted_auth_token)
-  VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', <returned_id>, 'https://registry.npmjs.org', $1);
+  INSERT INTO npm_remote_repositories (namespace_id, repository_id, url, wrapped_dek, ns_key_id, ns_key_version, encrypted_auth_token)
+  VALUES ('018f4d6f-0e10-7e3a-9bfd-23a4c5d6e7f8', <returned_id>, 'https://registry.npmjs.org', $1, $2, $3, $4);
   ```
 
 - パッケージのすべてのキャッシュされたバージョンを取得する（packument レスポンスを提供）
