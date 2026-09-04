@@ -10,7 +10,7 @@ lastmod: "2024-07-29T14:59:05-05:00"
 
 ## CI と CD
 
-![CD vs CD Pipeline](/images/blogimages/cicd_pipeline_infograph.png)
+![CD と CD パイプラインの比較](/images/blogimages/cicd_pipeline_infograph.png)
 出典: 「[Setting up GitLab CI/CD for Android projects](https://about.gitlab.com/blog/2018/02/14/setting-up-gitlab-ci-for-android-projects/)」
 
 ### 継続的インテグレーション（CI）
