@@ -69,7 +69,7 @@ lastmod: "2025-01-11T23:51:39+00:00"
    1. アナリストレポート
       1. Forrester は GitLab を The Forrester Wave™: Continuous Integration Tools, Q3 2017 レポートで Continuous Integration のリーダーと評価しました。
       1. Forrester は GitLab を、エンドツーエンドの DevOps 能力に加えて VSM 能力で Strong Performer と評価しました。
-      1. Gartner Peer Reviews - Customer's Choice（Applications release orchestration）
+      1. Gartner Peer Reviews - Customer's Choice（アプリケーションリリースオーケストレーション）
       1. IDC は GitLab を 2018 年の Agile Code Development Technologies のトップ 3 イノベーターとして認めました。
 
    1. 業界アワード
