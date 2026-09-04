@@ -2,15 +2,15 @@
 title: "GitLab Iberia s.r.l.（スペイン）の情報と福利厚生"
 description: "GitLab Iberia s.r.l. スペインのチームメンバー向けエンティティ情報"
 upstream_path: "/handbook/entity/iberia-srl-spain/"
-upstream_sha: "7b4218e2684ab0e2d919cef32fcfba84065bf46b"
-lastmod: "2026-06-05T10:35:32-07:00"
-translated_at: "2026-06-06T12:00:00Z"
+upstream_sha: "2964a66da5fafba0461d1476fa91593397881853"
+lastmod: "2026-09-03T20:53:51-07:00"
+translated_at: "2026-09-04T15:19:25+09:00"
 translator: claude
 stale: false
 ---
 
-{{% panel header="**This is a Secure Document**" header-bg="orange" %}}
-記載された [Roles & Responsibilities](/handbook/entity/iberia-srl-spain/#roles--responsibilities) に従い、このページへの変更はコードオーナーによる承認またはマージが必要です。すべての貢献を歓迎し、推奨します。
+{{% panel header="**これは保護された文書です**" header-bg="orange" %}}
+記載された [役割と責任](/handbook/entity/iberia-srl-spain/#roles--responsibilities) に従い、このページへの変更はコードオーナーによる承認またはマージが必要です。すべての貢献を歓迎し、推奨します。
 {{% /panel %}}
 
 Bienvenido! このハンドブックは GitLab Iberia s.r.l に雇用されているチームメンバー向けのもので、必要となるであろうすべての情報を（できる限り！）掲載しています。ここに掲載されていない情報で、含めるべきだと思うものがあれば、ぜひ提案してください。
@@ -268,6 +268,27 @@ Generali を通じた包括的な生命保険で、あなたと大切な人々�
 
 * 福利厚生に関する質問: [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=b7d7b30d474c069067429ee0026d4382)
 * 保険プロバイダーに関する質問: [Fernanda.dallagnese@wtwco.com](mailto:Fernanda.dallagnese@wtwco.com)
+
+</details>
+
+### 13 回目および 14 回目の給与 {#13th--14th-salaries}
+
+GitLab は、皆さんの貢献を認め、経済的なウェルビーイングをサポートするために、13 回目および 14 回目の給与を提供しています。この貴重な福利厚生は、総報酬パッケージに有意義な価値を加えます。
+
+<details markdown="1">
+
+<summary>対象資格</summary>
+
+GitLab Iberia s.r.l. のすべてのチームメンバー。
+
+</details>
+
+<details markdown="1">
+
+<summary>支払いの詳細</summary>
+
+* 13 回目および 14 回目の給与は、総報酬の一部として通常の 12 か月の給与に含めて支払われます（参考として Workday の年間給与を参照してください）。
+* 所得税および社会保障拠出金の対象
 
 </details>
 

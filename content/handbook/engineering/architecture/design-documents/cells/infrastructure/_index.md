@@ -8,11 +8,11 @@ coach: [ "@andrewn" ]
 status: proposed
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/infrastructure/
-upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
+translated_at: "2026-09-04T15:26:53+09:00"
 translator: claude
 stale: false
-lastmod: "2026-01-23T12:25:37-06:00"
+lastmod: "2026-09-04T14:27:38+12:00"
 ---
 
 
@@ -386,7 +386,7 @@ frame "Ring 3" <<cells 1.5+>> {
 @enduml
 ```
 
-[Cells 1.0](../iterations/cells-1.0.md) では、`リング 2` 内に最大 10 個の Cell を目標としています。
+Protocells では、`ring 2` 内に最大 10 個の Cell を目標としています。
 リング内の Cell 数は任意であり、そのサイズはまだ決定されていません。
 [公開リリース前に auto-deploy パッケージを適切にテストする](deployments.md#package-rollout-policy)必要性、
 セキュリティ修正のための本番ロールアウトの速度、

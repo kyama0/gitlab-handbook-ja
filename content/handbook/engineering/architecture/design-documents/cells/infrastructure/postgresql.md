@@ -9,11 +9,11 @@ owning-stage: "~devops::data_access"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/infrastructure/postgresql/
-upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
-translated_at: "2026-04-26T10:00:00Z"
+upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
+translated_at: "2026-09-04T15:26:53+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-03T17:49:46+01:00"
+lastmod: "2026-09-04T14:27:38+12:00"
 ---
 
 
@@ -221,13 +221,13 @@ GitLab は現在、Cloud SQL を[サポートされた PostgreSQL 実装](https:
 
 #### 検証すべき事項
 
-Cells イテレーションに基づいてスコープを分割 https://handbook.gitlab.com/handbook/engineering/architecture/design-documents/cells/#cells-iterations
+旧 Cells 1.0／1.5／2.0 イテレーションに基づいてスコープを分割します。
 
 ##### Cells 1.0（初期スコープ）
 
 （フォーカス: Cells 1.0 リリースの基盤的な検証と統合タスク）
 
-[Cells 1.0](../iterations/cells-1.0.md) のターゲットは、SaaS GitLab.com 提供を使用する社内顧客向けのソリューションを提供し、Cells の基盤的な作業を行うことです。
+Cells 1.0 の目標は、SaaS の GitLab.com サービスを利用する社内顧客向けのソリューションを提供し、Cells の基盤となる作業を行うことでした。
 
 - CloudSQL のデータベース可観測性と自動テレメトリー収集ツールを GitLab の可観測性スイートに評価・統合する。
   - [クエリインサイト](https://cloud.google.com/sql/docs/postgres/using-query-insights)は現在の可観測性ツールの十分な代替になるか？
@@ -244,11 +244,11 @@ Cells イテレーションに基づいてスコープを分割 https://handbook
 
 （フォーカス: 後のイテレーションの機能と検証）
 
-[Cells 1.5](../iterations/cells-1.5.md) のターゲットは、Cells 1.0 アーキテクチャを基に構築された SaaS GitLab.com 提供を使用する既存および新規エンタープライズ顧客向けの移行ソリューションを提供することです。
+Cells 1.5 の目標は、SaaS の GitLab.com サービスを利用する既存および新規のエンタープライズ顧客向けに、Cells 1.0 アーキテクチャを基盤とした移行ソリューションを提供することでした。
 
 - 書き込みと読み取り専用ワークロードの両方に対して接続プーリングソリューションを検証する:
   - VM 上の PgBouncer
-  - [CloudSQL データベース接続管理](https://cloud.google.com/sql/docs/postgres/manage-connections) / [Managed Connection Pooling (MCP)](https://www.youtube.com/watch?v=rGI3hIBl2s0)。セルフマネージドの PgBouncer と比較して機能が制限されています。
+  - [CloudSQL データベース接続管理] (https://cloud.google.com/sql/docs/postgres/manage-connections) / [Managed Connection Pooling (MCP)](https://www.youtube.com/watch?v=rGI3hIBl2s0)。セルフマネージドの PgBouncer と比較して機能が制限されています。
 - [CloudSQL Proxy](https://cloud.google.com/sql/docs/postgres/sql-proxy) を評価する
 - データベース移行オプションを比較する:
   - ネイティブ論理レプリケーション - [論理レプリケーション機能](https://cloud.google.com/sql/docs/postgres/replication/configure-external-replica)（[pglogical](https://github.com/2ndQuadrant/pglogical)）

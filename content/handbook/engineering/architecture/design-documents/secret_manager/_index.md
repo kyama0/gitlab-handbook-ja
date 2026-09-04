@@ -9,11 +9,11 @@ owning-stage: "~sec::govern"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/secret_manager/
-upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
-translated_at: "2026-06-25T07:39:40+09:00"
+upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
+translated_at: "2026-09-04T15:31:13+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-24T18:04:35+02:00"
+lastmod: "2026-09-04T14:27:38+12:00"
 ---
 
 
@@ -115,7 +115,8 @@ lb --routes to--> o
 
 パイプラインは GitLab インフラの外部に存在する可能性があるため、OpenBao は外部からアクセス可能で ACL 保護されている必要があります。ただし、当初はマルチテナンシー拡張を OpenBao に組み込むまで、GitLab Rails UI を通じたシークレットと認証ロールのプロビジョニングを制限し、JWT トークンの作成をパイプラインの実行に限定します。
 
-{{% details summary="OpenBao の可視性に関する補足説明" %}}
+<details>
+<summary> OpenBao の可視性に関する補足説明 </summary>
 技術的には、OpenBao を可視化する2つのアプローチがあります。
 
  1. API アドレスをグローバルにパブリックインターネットに開放する直接的な方法。
@@ -126,7 +127,7 @@ lb --routes to--> o
 ダイナミックシークレットを提供するプロプライエタリなベンダーはごく一部しかないため、スイッチする場合はいずれにせよ機能をゼロから書き直す可能性が高いです。したがって、（クライアント向けに）おおまかに OpenBao/Vault 互換の API 設計を維持しながら、必要に応じて修正することができます。
 
 このトレードオフを考慮し、スタティックな K/V シークレットを超えた拡張（データベース、クラウドプロバイダー、さらには GitLab トークンのダイナミックシークレット）への関心があることを踏まえて、OpenBao を公開して前者のアプローチを使用することを提案します。これにより、将来的に（ポリシー作成を GitLab Rails に任せながら単純にシークレットを読む）非パイプラインワークロードが可能になり、GitLab Rails 内の他のソリューションに Transit などのより高度な機能を使用できます。
-{{% /details %}}
+</details>
 
 OpenBao では、2つの認証エンジンを使用します。
 
@@ -244,8 +245,8 @@ orgTeam -- granted --> sm
 
 ```yaml
 openbao:
-  url: "https://openbao.example.com:8200"         # ランナー向けの外部 URL
-  internal_host: "http://openbao-internal:8200"   # Rails 向けの内部 URL（オプション）
+  url: "https://openbao.example.com:8200"         # External URL for runners
+  internal_host: "http://openbao-internal:8200"   # Internal URL for Rails (optional)
 ```
 
 フォールバック動作: `internal_host` が設定されていない場合、Rails はすべての接続に標準の URL を使用します。
@@ -545,14 +546,14 @@ OpenBao は多くの決定の真実の情報源であるため、GitLab はプ�
 CREATE TABLE secrets (
     id bigint NOT NULL,
 
-    // スコープ情報; 1つのみ設定される。現在はプロジェクトレベルの
-    // シークレットのみ許可。
+    // Scope information; only one is set. Currently only project-level
+    // secrets are allowed.
     // user_id bigint,
     // organization_id bigint,
     // group_id bigint,
     project_id bigint,
 
-    // 有効化ステータス: provisioning、active、または disabled。
+    // enablement status: provisioning, active, or disabled.
     status state_machine,
 );
 ```
@@ -625,7 +626,7 @@ OpenBao はネイティブに[高可用性](https://openbao.org/docs/internals/h
 
 当初は、インスタンスごとに1つのグローバルな OpenBao クラスターをサポートします。将来的に [Cells](/handbook/engineering/architecture/design-documents/cells/) を使用する場合、各テナントにクラスターアフィニティを持たせることを期待します。各 GitLab Cell は独自の OpenBao クラスターを持ちます。各 Cell には独自のローカルデータベース（中央データベースの一部またはシークレットマネージャー用の Secondary PostgreSQL インスタンス）があります。エンジニアリングの観点からは、すべてのデータは現在プロジェクトまたはグループ内に分離されており、1つの Cell に存在するため、クロス Cell データアクセスパターンは存在しません。したがって、Cells の統合はほぼ運用上のものです。
 
-最大の課題は、お客様を Cells アーキテクチャに[移行](/handbook/engineering/architecture/design-documents/cells/iterations/cells-1.5/)して、オペレーターが Cells を再バランスできるようにする機能のサポートです。これには2つの部分が必要です。
+最大の課題は、お客様を Cells アーキテクチャに[移行](/handbook/engineering/architecture/design-documents/organization-data-migration/)して、オペレーターが Cells を再バランスできるようにする機能のサポートです。これには2つの部分が必要です。
 
 1. シークレットを持つ既存の組織またはリポジトリセットを[分割](https://gitlab.com/gitlab-org/gitlab/-/issues/543014)できること。
 2. さまざまな Cells 間で組織を[移動](https://gitlab.com/gitlab-org/gitlab/-/issues/543001)できること。
@@ -661,7 +662,8 @@ OpenBao は、2つの異なるネットワークルートを通じてアクセ�
 
 これは [OpenBao v2.3.0 でランディング](https://github.com/openbao/openbao/releases/tag/v2.3.0)しました。
 
-{{% details summary="OpenBao ネームスペースのレガシー説明" %}}
+<details>
+<summary>OpenBao ネームスペースのレガシー説明</summary>
 現在の設計ドキュメントでは、別個のテナントのシークレットは同じバリア暗号化キーを使用して暗号化されます。これは、単一のテナントの侵害がすべてのテナントの侵害につながることを意味します。
 
 OpenBao には [Vault Enterprise のネームスペース](https://developer.hashicorp.com/vault/docs/enterprise/namespaces)がありません。これらはアップストリームで議論されているように、[テナントの論理的な分離](https://github.com/orgs/openbao/discussions/293)を可能にします。特に、ネームスペース内の管理者に限定されたスコープの `sys/` 機能を付与できます。
@@ -683,7 +685,7 @@ OpenBao には [Vault Enterprise のネームスペース](https://developer.has
 お客様が GitLab からシークレットへのアクセスを取り消したい場合、ネームスペースをシールして GitLab が選択したアンシールメカニズムにアクセスできないようにすることができます。
 
 最後に、プラグインの多重化をネームスペース内でのみ許可することで、お客様のメモリ分離を強化できます。プラグインの外部ランナー（コンテナや cgroups など）と組み合わせることで、テナントデータをメモリ内でさらに分離できます。
-{{% /details %}}
+</details>
 
 ##### 選択されたリーダー
 
@@ -698,23 +700,23 @@ Geo クラスターで動作する場合、OpenBao のプライマリノード�
 ```yaml
 openbao:
   url: "https://secrets.gitlab.com"
-  # internal_host は不要 - Rails とランナーが同じ URL を使用
+  # internal_host not needed - Rails and Runners use same URL
 ```
 
 Kubernetes デプロイメント:
 
 ```yaml
 openbao:
-  url: "https://secrets-manager.example.com"                     # ランナー向け外部ロードバランサー
-  internal_host: "http://secrets-manager-internal.example.net"   # Rails 向け Kubernetes サービス
+  url: "https://secrets-manager.example.com"                     # External load balancer for runners
+  internal_host: "http://secrets-manager-internal.example.net"   # Kubernetes service for rails
 ```
 
 GitLab.com 本番:
 
 ```yaml
 openbao:
-  url: "https://secrets.gitlab.com"                            # パブリックエンドポイント
-  internal_host: "http://secrets-manager-internal.gitlab.net"  # 内部クラスター
+  url: "https://secrets.gitlab.com"                            # Public endpoint
+  internal_host: "http://secrets-manager-internal.gitlab.net"  # Internal cluster
 ```
 
 ### バックアップと復元

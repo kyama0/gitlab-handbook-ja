@@ -6122,11 +6122,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/cells/decisions/007_internal_customers.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/decisions/007_internal_customers.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "e22429fe07877444a8d50243a31945c3d7ac4834e77c18344bdd8413b91e0e0a",
-      "upstream_committed_at": "2025-08-21T08:26:37+02:00"
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:19:25+09:00",
+      "model": "codex",
+      "input_hash": "40fcda4f788a415428998ae0221aafa01ccf3dde6ce262ec3313755fd464c819",
+      "upstream_committed_at": "2026-09-04T14:27:38+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/decisions/008_database_sequences.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/decisions/008_database_sequences.md",
@@ -6514,11 +6514,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/cells/impacted_features/secrets.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/impacted_features/secrets.md",
-      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
-      "translated_at": "2026-04-26T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "168475288982d7f6757b8f8b1884a6600cf43af80c1fceadd23ba4069fc21db6",
-      "upstream_committed_at": "2024-09-19T10:00:54+00:00"
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:19:25+09:00",
+      "model": "codex",
+      "input_hash": "e87f0b1c191c0ff836a08b3411670500ba6f4eacff7cba97a6077a4d7e490b79",
+      "upstream_committed_at": "2026-09-04T14:27:38+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/impacted_features/snippets.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/impacted_features/snippets.md",
@@ -6562,11 +6562,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/cells/infrastructure/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/infrastructure/_index.md",
-      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
-      "translated_at": "2026-04-26T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "9e127f80353830c59f1f26045d1d665441a3682743e7295850a9495c443d7d65",
-      "upstream_committed_at": "2026-01-23T12:25:37-06:00"
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:26:53+09:00",
+      "model": "codex",
+      "input_hash": "75851cdf384bdd8b977ccdefc515dfc1804415f36d708d5e73166b9d483864e9",
+      "upstream_committed_at": "2026-09-04T14:27:38+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/infrastructure/cell_arch_tooling.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/infrastructure/cell_arch_tooling.md",
@@ -6626,19 +6626,19 @@
     },
     "content/handbook/engineering/architecture/design-documents/cells/infrastructure/observability.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/infrastructure/observability.md",
-      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
-      "translated_at": "2026-04-26T10:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "fcb87cbcb9c47367a27c9e503a77f592faa63180ec9c2d01163c021b74863564",
-      "upstream_committed_at": "2025-04-28T10:53:04-07:00"
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:19:25+09:00",
+      "model": "codex",
+      "input_hash": "ea73147a190f39205b1b306f10c40ecb10269561c06baa2283c6b0fe7bf2addd",
+      "upstream_committed_at": "2026-09-04T14:27:38+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/infrastructure/postgresql.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/infrastructure/postgresql.md",
-      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
-      "translated_at": "2026-04-26T10:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "1959295746ed80eaf7794623a62098865aee645aedd3e312d0f09034750efe40",
-      "upstream_committed_at": "2025-11-03T17:49:46+01:00"
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:26:53+09:00",
+      "model": "codex",
+      "input_hash": "463b00ac3a026c2ed4b6ca971d44b089f670823b50ab4fdb9b93ac2781e85399",
+      "upstream_committed_at": "2026-09-04T14:27:38+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/infrastructure/runner.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/infrastructure/runner.md",
@@ -6730,11 +6730,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/cells/topology_service.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/topology_service.md",
-      "upstream_sha": "c82d3d351baf0f945623f1feaf9adc987ec1d4f9",
-      "translated_at": "2026-04-26T00:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "bf4efed7867a0d29e488649c17d93146eb7a5d44f2131a8c2a1c856cc0756c10",
-      "upstream_committed_at": "2026-02-24T12:53:30-05:00"
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:26:53+09:00",
+      "model": "codex",
+      "input_hash": "f75400e2c2f03d6fe7d2df0dd0d3fc3635180d585aab4e2df1c6507a611deb1a",
+      "upstream_committed_at": "2026-09-04T14:27:38+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/topology_service_transactional_behavior.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/topology_service_transactional_behavior.md",
@@ -8978,11 +8978,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/secret_manager/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/secret_manager/_index.md",
-      "upstream_sha": "62edb06625b18110a4f377cb1d2c733fed49f122",
-      "translated_at": "2026-06-25T07:39:40+09:00",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:31:13+09:00",
       "model": "codex",
-      "input_hash": "7c63f4e66ff4a14434b2f090a815e1c4f46149edd848b14486525a6b5f77c58a",
-      "upstream_committed_at": "2026-06-24T18:04:35+02:00"
+      "input_hash": "52ec76781535f38e68fe9d02a0c689ad4ab46361fe73110d217f003991e5e783",
+      "upstream_committed_at": "2026-09-04T14:27:38+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/secret_manager/decisions/001_envelop_encryption.md": {
       "path": "content/handbook/engineering/architecture/design-documents/secret_manager/decisions/001_envelop_encryption.md",
@@ -15082,11 +15082,11 @@
     },
     "content/handbook/entity/iberia-srl-spain.md": {
       "path": "content/handbook/entity/iberia-srl-spain.md",
-      "upstream_sha": "7b4218e2684ab0e2d919cef32fcfba84065bf46b",
-      "translated_at": "2026-06-06T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "1f21a2fc00c9365e77729fece15adefde20befd4624082c03e2d31671ab01f89",
-      "upstream_committed_at": "2026-06-05T10:35:32-07:00"
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:19:25+09:00",
+      "model": "codex",
+      "input_hash": "91a634cc734233a24c32529583790ac51326901d142afd659de865885e13c804",
+      "upstream_committed_at": "2026-09-03T20:53:51-07:00"
     },
     "content/handbook/entity/india-pvt-ltd.md": {
       "path": "content/handbook/entity/india-pvt-ltd.md",
@@ -36990,6 +36990,526 @@
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "49b1c23193cd6ba867dd599bcb6b8c3ff047fbb9b56f1622cd2e2b582f8cf923",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/erin.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/erin.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:35:11+09:00",
+      "model": "codex",
+      "input_hash": "7ad6c2e278f6ebf368e2fe47dd86b19df677d98c796ef76b08326259e06a46cc",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/parker.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/parker.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:35:11+09:00",
+      "model": "codex",
+      "input_hash": "972caa40ebd95a765a16e0cd3d706625d495c908c0bd78723ad43e643dfb1f44",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/rachel.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/rachel.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:35:11+09:00",
+      "model": "codex",
+      "input_hash": "e4d5762b7ac23108229d52a1200220a8f8b737e8ba9269876f65f8366208ca67",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/cameron.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/cameron.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:35:11+09:00",
+      "model": "codex",
+      "input_hash": "815b61ac9de4d5113dfd853bb3fe932a8fb9689d1f8aa6c04822d4a6c8cf475f",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/sidney.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/sidney.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:35:11+09:00",
+      "model": "codex",
+      "input_hash": "c6d6bbf6776c4bc03e16c3024dc37dd47151e4e88b7edd0f3264d1259e79ac10",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/casey.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/casey.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:35:11+09:00",
+      "model": "codex",
+      "input_hash": "341b562d7410349e333aea7049bb70aafa177b8681bd1e64c058c90cae6f153e",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/kennedy.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/kennedy.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:35:11+09:00",
+      "model": "codex",
+      "input_hash": "4debdb99583c28f89845cf8d460df404f3d4aa881d637a79957095cadf48571a",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:35:11+09:00",
+      "model": "codex",
+      "input_hash": "f397883adc68b38c0b0d0e60c8d98ef2e45a56f7a600353d4b5afe6f8f581a51",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/build/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/build/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:39:47+09:00",
+      "model": "codex",
+      "input_hash": "2fb08da22c9cb3ae4f45dfcdefe8eea54e17f4cc9a49ee57764d78858f614965",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:39:47+09:00",
+      "model": "codex",
+      "input_hash": "e19168a328cd79f32b527d2995e68637d1517a64269e305c149c6d7ba7954604",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:39:47+09:00",
+      "model": "codex",
+      "input_hash": "7c26ee1cacfc552326c38bb157da5a5ead8b5fc366fe0a817099bf5a62851b31",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/devon.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/devon.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:39:47+09:00",
+      "model": "codex",
+      "input_hash": "d48173727e32bb27ff4164d5ebf506350a3ffc57ff81bcc193d1f091f065cff9",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/dakota.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/dakota.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:39:47+09:00",
+      "model": "codex",
+      "input_hash": "b04d76edb0bdbb622215b8ce56ce32938a85d12017127fe40ac6b499ffd3afa0",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/reseller-kit.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/reseller-kit.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:39:47+09:00",
+      "model": "codex",
+      "input_hash": "11b9f83c6c06e035ba690c823ece263015a3222ff0de81919d7ce1f52435e5e8",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/mrnci.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/mrnci.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:39:47+09:00",
+      "model": "codex",
+      "input_hash": "c7f731ba3d3c7ca179c2690f8ab8e011509e75810f639bfeb72bceb031ba3b64",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/delaney.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/delaney.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:39:47+09:00",
+      "model": "codex",
+      "input_hash": "06b91199f5087114c94fbb99f7814e52556a34b661e2e9d3b27870807444ce13",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/alex.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/alex.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:43:01+09:00",
+      "model": "codex",
+      "input_hash": "8529a44fcecf4816f248f217be89e30959fa4eeb46c914df458d2580e6f52077",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/sasha.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/persona-snippets/user-personas/sasha.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:43:01+09:00",
+      "model": "codex",
+      "input_hash": "c0645546ddd94c75962f995570918f6443fb32a52488241758cd6d9ee81597f4",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/security-integrations-whitesource.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/security-integrations-whitesource.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:43:01+09:00",
+      "model": "codex",
+      "input_hash": "a3bf3951916b9393426f105122c227cfa953abdcbb8d3e4c44190eba6ca00f17",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/day-in-the-life-secopsengineer-persona.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/day-in-the-life-secopsengineer-persona.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:43:01+09:00",
+      "model": "codex",
+      "input_hash": "469fa197d1fe3ad81f806391e615f7286d0b7408e39b8899eceb6164fed3e130",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/cloud-native-ecosystem.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/cloud-native-ecosystem.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:43:01+09:00",
+      "model": "codex",
+      "input_hash": "49677fd16598bf24000c762da795de83fa2c16fbaad34f0aa37a8b0a2f103c74",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/template/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/template/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:43:01+09:00",
+      "model": "codex",
+      "input_hash": "b7dff8632d102c3ae1a419802f52cfdd5172ae234cabae1ca646e65a361e635c",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/message-house.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/message-house.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:43:01+09:00",
+      "model": "codex",
+      "input_hash": "1d4530fde8c0928349fcb314144e02b4829c43110d452d2c1b577d4b2f96a5e8",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/keeping-yourself-informed.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/keeping-yourself-informed.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:43:01+09:00",
+      "model": "codex",
+      "input_hash": "17b097fc6293002f7f510efad03e567ab45c6ddd242dfd44d484e6f44d84b613",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/organization-archetype.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/organization-archetype.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:46:54+09:00",
+      "model": "codex",
+      "input_hash": "697c8aa45fd807a9e1e87320701e630eb6804f0829c67a5864eb95cbfc64b897",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:46:54+09:00",
+      "model": "codex",
+      "input_hash": "2e3afeb69edb0bd4f25c3c77ed6f681e2453e937c4c8b0084db571abe07b2748",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/google.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/google.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:46:54+09:00",
+      "model": "codex",
+      "input_hash": "8b77c219ef9fadd9c4349eb35b4ff2c2400c70e797bc228484ecf779628f652e",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/messaging.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/messaging.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:46:54+09:00",
+      "model": "codex",
+      "input_hash": "c18efd6231356ba02c2441dc82c8eb5869f68262d8ec671a076ab27a6a6e6198",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/ct-demos.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/ct-demos.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:46:54+09:00",
+      "model": "codex",
+      "input_hash": "f9425b795abb212c78ed4ab181c9da1ec46046c13c08a0b6d2cbc38a22fb60db",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/core-product-marketing/onboarding.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/core-product-marketing/onboarding.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:46:54+09:00",
+      "model": "codex",
+      "input_hash": "24f893bb72e36050bbffc9966d22150f0ddc499f4a1a3771ab133d94013e96b1",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/104.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/104.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:46:54+09:00",
+      "model": "codex",
+      "input_hash": "456375ecca4fff623f25d407c768a77c2625888a2a1c9fd0a3eda780645f5e65",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/asset_inventory.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/asset_inventory.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:46:54+09:00",
+      "model": "codex",
+      "input_hash": "8b61eec0e8cbb11b2650db8a6aa9e2ece61c0c941dc852aa7b7bbcbf5f077748",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/data-science/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/data-science/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:57:36+09:00",
+      "model": "codex",
+      "input_hash": "b57f9159806117f3cbd189acb4c93b102d31aac8e964eefc5f410c99814a0e10",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/acs-setup.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/acs-setup.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:57:36+09:00",
+      "model": "codex",
+      "input_hash": "0cc683ee997cf0c0905f76ff65a75da0821b3a21bbdd0083e417b54015ff614f",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/metrics.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/metrics.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:57:36+09:00",
+      "model": "codex",
+      "input_hash": "1fca1eaf7f48302f29be40e13f326be7f359eeed9aea25e59f800f48d8acb8f0",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/application-security.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/application-security.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:57:36+09:00",
+      "model": "codex",
+      "input_hash": "4182e34036ef92024d17a8af90e60bb541154ea317be89dd1e51e95abddceec9",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/github-ci-cd-faq.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enablement/github-ci-cd-faq.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:57:36+09:00",
+      "model": "codex",
+      "input_hash": "7c3c78f7a7db39d11c62cb74a31dd3cb3f629ebf481878aa962172dd4cacd7f8",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:57:36+09:00",
+      "model": "codex",
+      "input_hash": "46b2356cb1ced2e88f786e1ca11c4929794b28df2d52ed18301ef5bfe1fa1a8d",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/incident-management.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/incident-management.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:57:36+09:00",
+      "model": "codex",
+      "input_hash": "495ab4b0e4a3a44d282b13032c8b3468fa5fa1f0085dd5b37eaac9cf26807dbc",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/105.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/105.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T15:57:36+09:00",
+      "model": "codex",
+      "input_hash": "1e40e66d4ef0deee7e2fa4b954b3b8d128b5474e644deb68cae46744f05d601d",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/gke-setup.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/gke-setup.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:06:09+09:00",
+      "model": "codex",
+      "input_hash": "5ddfefef84ef344c269b1495a277758cb821199ad018fffcb425378f78d90b02",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:06:09+09:00",
+      "model": "codex",
+      "input_hash": "6ffefa8aa8ebba909e3d8dba90eb035596e00ada12d53b9e94d0732f6be0547c",
+      "upstream_committed_at": "2026-08-28T11:50:58+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:06:09+09:00",
+      "model": "codex",
+      "input_hash": "422a94b36945e1c48a57118cc3a767e82659d6148b51e103aa2a372126f24a23",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/it-groups/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:06:09+09:00",
+      "model": "codex",
+      "input_hash": "d63f58a5e3de46e6a2747e10e8e945e2c8af7667ea113622e0d5a1d21530a406",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:06:09+09:00",
+      "model": "codex",
+      "input_hash": "670d81d1b7c1ecd28efd76723b96588c22fe009ab21b368037cf3d6b5289b872",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enterprise-it-roles.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/enterprise-it-roles.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:06:09+09:00",
+      "model": "codex",
+      "input_hash": "be214e59ae288dcc00b4b0a4b7ca7c3ec76c72641cf6183c8acca6ca4216b378",
+      "upstream_committed_at": "2026-08-31T09:27:37+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/101.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/101.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:06:09+09:00",
+      "model": "codex",
+      "input_hash": "1f3a7852e8787c93c107ca0453743f86e97bfb4ca262e8d35c90a2b628d98f26",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/public-sector-gtm.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/public-sector-gtm.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:06:09+09:00",
+      "model": "codex",
+      "input_hash": "87f046024f4a9852f2f998cb3d7798b45fa6a486e8ac20f4d27857507e61f3bd",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/package.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/package.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:19:34+09:00",
+      "model": "codex",
+      "input_hash": "2ac72d05b810d4d8fd1907ebb52ea6bea76a04387129617418ea1ed1f0adfacf",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/release-updates.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/release-updates.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:19:34+09:00",
+      "model": "codex",
+      "input_hash": "b8be40b88a55fdcd6b4ab16fbf896d8343af5961f9b0b92819aea0f9335fee14",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/market-insights.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/market-insights.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:19:34+09:00",
+      "model": "codex",
+      "input_hash": "980fd885e8b65ceca3e4f4050c106862bc7e7bccd7c89fba0e072b09e36c5f65",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/message-house/index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/message-house/index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:19:34+09:00",
+      "model": "codex",
+      "input_hash": "b1dee9061df8ba95cb520459270982812d69ce53e07d0e040c7aeb5ced24b421",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/sm-project-management.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/sm-project-management.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:19:34+09:00",
+      "model": "codex",
+      "input_hash": "f4e31f4ad9647c7f9e734a12694461406829771d8cabe9b1ed2972d348a1f5b8",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/i2p.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/i2p.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:19:34+09:00",
+      "model": "codex",
+      "input_hash": "1642eefd2f8c712fbaa249be186e12b2dc893722962346ef43ca07ee574707a5",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/agile/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/agile/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:19:34+09:00",
+      "model": "codex",
+      "input_hash": "13215408c1c399b1f529a59620e6d62369869af8fdb7fc42ea5282e23cbed830",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:19:34+09:00",
+      "model": "codex",
+      "input_hash": "4b3feb2f1131306aeabf61215de2579f22b1f5a90ed69f4f885857eb6a1033ae",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/compliance.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/compliance.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:30:53+09:00",
+      "model": "codex",
+      "input_hash": "443f4f21798be2b386c6502da05b326bc370cbd8f3518247267a8a214a08ff26",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:30:53+09:00",
+      "model": "codex",
+      "input_hash": "88283a93b4354c0f23ddff07c4534b2dac95cb5301bfb398f23e4e482570c2ff",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/delivery-automation.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/delivery-automation.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:30:53+09:00",
+      "model": "codex",
+      "input_hash": "06a584d7634fd072953f27a3d9559c472681f9e0b391aa10d2cd787323ddbf92",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:35:23+09:00",
+      "model": "codex",
+      "input_hash": "7808e1d44dee8d15549c7e18163484fe51ef1fbb9dc1e232ee09057892b60e1a",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/cd/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/cd/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:35:23+09:00",
+      "model": "codex",
+      "input_hash": "c0f2968685911877217ad44690e5532b9a93eb94e5c5256c01ee5be3047f5f4f",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:41:10+09:00",
+      "model": "codex",
+      "input_hash": "018c000139531320fb33f8eac11e9739b06cb832bb6d79b7b86993968470cf57",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:41:10+09:00",
+      "model": "codex",
+      "input_hash": "bef31490d3ba6840c2413d9a8daf5f80fc8736cc786dc329c940513611718594",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:41:10+09:00",
+      "model": "codex",
+      "input_hash": "9eed6febf4e3d4df82ac64aba6954b63e67c7822a8a367af78b22c223e88a34c",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/_index.md",
+      "upstream_sha": "2964a66da5fafba0461d1476fa91593397881853",
+      "translated_at": "2026-09-04T16:45:41+09:00",
+      "model": "codex",
+      "input_hash": "401917d2db5694051269fe079681dbc0e14f866a7423e4bbc16bacbc39f39655",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
     }
   }

@@ -3,17 +3,17 @@ owning-stage: "~devops::data stores"
 title: 'Cells ADR 007: Cells 1.0 は社内顧客のみ対象（廃止）'
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/decisions/007_internal_customers/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
+translated_at: "2026-09-04T15:19:25+09:00"
 translator: claude
 stale: false
-lastmod: "2025-08-21T08:26:37+02:00"
+lastmod: "2026-09-04T14:27:38+12:00"
 ---
 
 ## コンテキスト
 
 [当初](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/139519)、Cells 1.0 は新規顧客のみを対象として作成されました。
-テストされていないインフラに乗り入れてくれる新規顧客を見つけることは、特に[不足している機能](../iterations/cells-1.0.md)を考えると困難であることが判明しました。
+テストされていないインフラに乗り入れてくれる新規顧客を見つけることは、特に不足している機能を考えると困難であることが判明しました。
 対象顧客が決まっていないと、どの機能を提供すべきかスコープを定義することができません。
 
 ## 決定事項
