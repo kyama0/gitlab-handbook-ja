@@ -2,7 +2,7 @@
 title: "GitLab のオープンソーシャルメディア戦略"
 description: ソーシャルメディア戦略を強化するためのマイクロ戦略集
 twitter_image: "/images/opengraph/open-social-strategies.png"
-twitter_image_alt: "These social strategies are licensed under CC BY-SA 4.0"
+twitter_image_alt: "これらのソーシャル戦略は CC BY-SA 4.0 のもとでライセンスされています"
 twitter_site: "gitlab"
 twitter_creator: "gitlab"
 upstream_path: /handbook/marketing/corporate-communications/social-marketing/open-source-social/

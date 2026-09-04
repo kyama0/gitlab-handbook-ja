@@ -22,14 +22,14 @@ MVC として、まずは [プロダクトマーケティングプロジェク�
 |----|---|---|
 | Analyst Relations | ブリーフィング、レポート、問い合わせ | pmm::AR |
 | Customer Relations | ケーススタディ | pmm::Cust |
-| Collateral | ホワイトペーパー、データシート、ROI モデル | pmm::Collateral |
-| Enablement | セールス、XDR、パートナーなど | pmm::Enable |
-| Events | 物理および仮想イベント: 講演、ブース、アブストラクト執筆など | pmm::Event |
-| Research | 市場調査、研究のドラフト、文書化 | pmm::Research |
-| Presentation | デッキの作成と更新（ピッチデッキ、製品デッキなど） | pmm::Deck |
+| コラテラル | ホワイトペーパー、データシート、ROI モデル | pmm::Collateral |
+| イネーブルメント | セールス、XDR、パートナーなど | pmm::Enable |
+| イベント | 物理および仮想イベント: 講演、ブース、アブストラクト執筆など | pmm::Event |
+| リサーチ | 市場調査、研究のドラフト、文書化 | pmm::Research |
+| プレゼンテーション | デッキの作成と更新（ピッチデッキ、製品デッキなど） | pmm::Deck |
 | PR | ブリーフィング、プレスリリースなど | pmm::PR |
-| Sales Support | セールスサポート固有のミーティング、スライドなど | pmm::Sales |
-| Web updates | Web コンテンツ（ハンドブック、製品ページ、ソリューションページ、ブログなど） | pmm::Web |
+| セールスサポート | セールスサポート固有のミーティング、スライドなど | pmm::Sales |
+| Web 更新 | Web コンテンツ（ハンドブック、製品ページ、ソリューションページ、ブログなど） | pmm::Web |
 
 ### レポーティングと追跡
 

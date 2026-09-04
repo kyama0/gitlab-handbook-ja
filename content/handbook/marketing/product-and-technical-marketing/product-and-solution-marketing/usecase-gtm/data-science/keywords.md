@@ -14,7 +14,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 - [data science（データサイエンス）](https://en.wikipedia.org/wiki/Data_science): 科学的手法、アルゴリズム、システムを用いてデータから知識と洞察を抽出すること
 - [decision science（デシジョンサイエンス）](https://en.wikipedia.org/wiki/Decision_science): ビジネス課題に対して、データサイエンスを [behavioral science（行動科学）](https://en.wikipedia.org/wiki/Behavioural_sciences) や [design thinking（デザイン思考）](https://en.wikipedia.org/wiki/Design_thinking) と組み合わせ、エンドユーザーを理解する手法
-- [business intelligence (BI)](https://en.wikipedia.org/wiki/Business_intelligence): 売上統計や運用メトリクスといった過去データを分析・レポートし、戦略的意思決定を導くこと
+- [business intelligence（BI、ビジネスインテリジェンス）](https://en.wikipedia.org/wiki/Business_intelligence): 売上統計や運用メトリクスといった過去データを分析・レポートし、戦略的意思決定を導くこと
 - [data analysis（データ分析）](https://en.wikipedia.org/wiki/Data_analysis): 有用な情報を発見することを目的に、データの検査・クレンジング・変換・モデリングを行うこと
 - [data mining（データマイニング）](https://en.wikipedia.org/wiki/Data_mining): 機械学習、統計、データベースシステムなどの手法・ツールを用いてデータからパターンを発見すること
 - [exploratory data analysis (EDA、探索的データ分析)](https://en.wikipedia.org/wiki/Exploratory_data_analysis): データセットの主要な特性を要約し、より複雑なモデルや論理的な次のステップの設計に役立てること
@@ -31,13 +31,13 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 用語は対応する Wikipedia 記事にリンクしています。
 
-- [ETL (extract, transform, load)](https://en.wikipedia.org/wiki/Extract,_transform,_load): 複数ソースからのデータを統合し、共通または標準化されたフォーマットに正規化・変換すること。多くの場合データウェアハウスの構築に用いられる
+- [ETL（extract、transform、load：抽出、変換、読み込み）](https://en.wikipedia.org/wiki/Extract,_transform,_load): 複数ソースからのデータを統合し、共通または標準化されたフォーマットに正規化・変換すること。多くの場合データウェアハウスの構築に用いられる
 - [data visualization (dataviz、データ可視化)](https://en.wikipedia.org/wiki/Data_visualization): テキストベースの情報を視覚的に表現することで、パターン・傾向・相関の認識を助け、データの意味を理解しやすくすること
 - [data model（データモデル）](https://en.wikipedia.org/wiki/Data_model): データセット同士がどのように接続され、処理・保存されるかを定義するもの
 - [data warehouse（データウェアハウス）](https://en.wikipedia.org/wiki/Data_warehouse): 組織が収集したすべてのデータを格納し、ビジネス上の意思決定の指針として活用するためのリポジトリ
 - [R](https://en.wikipedia.org/wiki/R_(programming_language)): 統計計算用のプログラミング言語。統計学者やデータマイニング技術者がデータ分析や統計ソフトウェア開発に用いる
 - [Python](https://en.wikipedia.org/wiki/Python_(programming_language)): データの操作・保存に加え、汎用プログラミングにも広く使われているプログラミング言語
-- [SQL (Structured Query Language)](https://en.wikipedia.org/wiki/SQL): データの更新や取得などのタスクを実行するために使われる宣言型プログラミング言語
+- [SQL（Structured Query Language：構造化クエリ言語）](https://en.wikipedia.org/wiki/SQL): データの更新や取得などのタスクを実行するために使われる宣言型プログラミング言語
 - [big data（ビッグデータ）](https://en.wikipedia.org/wiki/Big_data): 従来のデータ処理ソフトウェアでは扱いきれないほど大規模・複雑なデータセット
 - [classification（分類）](https://en.wikipedia.org/wiki/Statistical_classification): 教師あり学習の一例で、アルゴリズムが既存カテゴリの特徴に基づいて新しいデータをそのカテゴリに割り当てる手法。たとえば、過去にオンラインで $20 以上を使った顧客との類似性に基づき、ある顧客がオンラインで $20 以上を使う可能性が高いかを判定するのに使える
 - [cluster analysis（クラスター分析）](https://en.wikipedia.org/wiki/Cluster_analysis): 分類に似ているが、アルゴリズムが入力データを受け取り、データ自体の中で類似点を見つけて、似ているデータポイントをグループ化する手法。つまり教師あり学習を伴わない分類

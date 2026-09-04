@@ -36,10 +36,10 @@ GitLab では、四半期ごとのビジネスレビュー（QBR）を実施し�
 1. QBR アクションアイテムを追跡するためのエピックを Marketing グループレベルで作成します。
 1. アクションアイテムドキュメントをセットアップします
     1. [Product and Solution Marketing QBR アクションアイテムテンプレート](https://docs.google.com/document/d/11I85raEvjeoVwQd1LeRtGHeW2DGN3hi7L-BwDzwKIVA/edit#) のコピーを作成します。テンプレートはこの[フォルダ](https://drive.google.com/drive/folders/1KpXA8KqHFhenhO2ZshTINOK1g4pHnLf0)に保存されています。
-    1. アクションドキュメントの名前を「FYXX -QN - QBR Product and Solution Marketing Action Item」とします。FY と Quarter は次の四半期のものを使用します。
+    1. アクションドキュメントの名前を「FYXX -QN - QBR Product and Solution Marketing Action Item」とします。FY と四半期は次の四半期のものを使用します。
     1. アクションドキュメントを正しい FY フォルダに移動します。
     1. アクションドキュメントを編集用に開き、以下を行います:
-       1. タイトル「FYNN-QN」を現在の FY と Quarter に更新します
+       1. タイトル「FYNN-QN」を現在の FY と四半期に更新します
        1. ページ 1 下部 ― **QBR Master Schedule**、**QBR Slide Folder（トップレベル）**、QBR アイテムの追跡に使用される **エピック** へのリンクを更新します
 
 **各 QBR ミーティングについて**:
@@ -53,4 +53,4 @@ GitLab では、四半期ごとのビジネスレビュー（QBR）を実施し�
 1. **Product Marketing** プロジェクトの `QBR-Action-Item` [Issue テンプレート](https://gitlab.com/gitlab-com/marketing/product-marketing/blob/master/.gitlab/issue_templates/QBR-Action-Item.md) を更新します
     1. アクションアイテムドキュメントへのリンクを、先ほど作成したドキュメントを指すように変更します
     1. エピックへのリンクを、今四半期の QBR エピックを指すように変更します
-    1. ラベル Quick Action を QBR の FY/Quarter に合わせて変更します
+    1. ラベル Quick Action を QBR の FY／四半期に合わせて変更します

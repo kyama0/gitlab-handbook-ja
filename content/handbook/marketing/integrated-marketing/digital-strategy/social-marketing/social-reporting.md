@@ -2,7 +2,7 @@
 title: "ソーシャルメディアレポーティング"
 description: 指標の定義、サイクル、目標
 twitter_image: "/images/opengraph/handbook/social-marketing/social-handbook-reporting.png"
-twitter_image_alt: "GitLab's Social Media Handbook branded image"
+twitter_image_alt: "GitLab ソーシャルメディアハンドブックのブランド画像"
 twitter_site: "gitlab"
 twitter_creator: "gitlab"
 upstream_path: /handbook/marketing/integrated-marketing/digital-strategy/social-marketing/social-reporting/
@@ -25,12 +25,12 @@ GitLab チームメンバーのみが閲覧可能
 
 | 探しているもの                                                       | ...こちらのレポートまたはダッシュボードが役立ちます。                                                    |
 |----------------------------------------------|----------------------------------------------------------------------------------------|
-| 生のパフォーマンスデータを入力するシート                              | [Sisense 用 Raw metrics sheetload](https://docs.google.com/spreadsheets/d/1Lc3uLs7gpoYYu10cLlzqzxWCFISja1Df-FSvY_xBQU4/edit#gid=0)（ソーシャルおよびデータチームのみ閲覧可） |
-| すべてのソーシャルデータの広告等価ダッシュボード                      | [目的とキャンペーン別 Social Ad Equivalency Dashboard](https://docs.google.com/spreadsheets/d/1sZwoUwnk5BXHrmRkAPkipgtMJZ8_stS-hMagTujym0k/edit?usp=sharing)                              |
+| 生のパフォーマンスデータを入力するシート                              | [Sisense 用の生メトリクスシートロード](https://docs.google.com/spreadsheets/d/1Lc3uLs7gpoYYu10cLlzqzxWCFISja1Df-FSvY_xBQU4/edit#gid=0)（ソーシャルおよびデータチームのみ閲覧可） |
+| すべてのソーシャルデータの広告等価ダッシュボード                      | [目的およびキャンペーン別ソーシャル広告等価ダッシュボード](https://docs.google.com/spreadsheets/d/1sZwoUwnk5BXHrmRkAPkipgtMJZ8_stS-hMagTujym0k/edit?usp=sharing)                              |
 
 ## FY23 のフォーカス
 
-[FY23 の OKR Epic はこちらから確認できます](https://gitlab.com/groups/gitlab-com/marketing/corporate_marketing/-/epics/184)
+[FY23 の OKR エピックはこちらから確認できます](https://gitlab.com/groups/gitlab-com/marketing/corporate_marketing/-/epics/184)
 
 ### FY23 におけるレポーティングの変更点
 
@@ -88,31 +88,31 @@ GitLab チームメンバーのみが閲覧可能
 
 サイクルにより、定期的なレポーティング期間を設け、他のグループのチームメンバーに対して説明責任を果たし、定期的にパフォーマンスをレポーティングできます。事前に必要・合意されていなかったランダムなレポーティング依頼や、データを使用・確認するのが時間的に不適切とチームが判断するものには対応しません。
 
-### FY 用レポーティング Epic を作成し、年間を通じてすべてのレポートをここにリンクする
+### FY 用レポーティングエピックを作成し、年間を通じてすべてのレポートをここにリンクする
 
-これらの Epic は、四半期の進捗やキャンペーン固有のラップアップ Issue からデータを参照する、GitLab 上の生きた倉庫として機能します。ソーシャルチームは FY パフォーマンス Epic に、これらのレポーティング Issue へのリンクを追加するべきです。
+これらのエピックは、四半期の進捗やキャンペーン固有のラップアップ Issue からデータを参照する、GitLab 上の生きた倉庫として機能します。ソーシャルチームは FY パフォーマンスエピックに、これらのレポーティング Issue へのリンクを追加するべきです。
 
-- [FY22 Performance Epic](https://gitlab.com/groups/gitlab-com/-/epics/1465)
+- [FY22 パフォーマンスエピック](https://gitlab.com/groups/gitlab-com/-/epics/1465)
 
 ### 月次レポーティング
 
 ソーシャルチームは、レポーティング対象月の翌月の第 2 週末までに、ブランド全体のパフォーマンスおよび一部のトピック／キャンペーンのデータを取得します（例：1 月のデータは 2 月中旬までに利用可能）。
 
-また、Google Sheets の [Ad Equivalency dashboard](https://docs.google.com/spreadsheets/d/1sZwoUwnk5BXHrmRkAPkipgtMJZ8_stS-hMagTujym0k/edit?usp=sharing) にも必要なデータを追加します。
+また、Google Sheets の [広告等価ダッシュボード](https://docs.google.com/spreadsheets/d/1sZwoUwnk5BXHrmRkAPkipgtMJZ8_stS-hMagTujym0k/edit?usp=sharing) にも必要なデータを追加します。
 
 ワークフローは次のとおりです：
 
-1. [Sprout reports](https://app.sproutsocial.com/reports/home) を開き、レポーティング対象月用に設定する
-1. [Sheetload intake sheet](https://docs.google.com/spreadsheets/d/1Lc3uLs7gpoYYu10cLlzqzxWCFISja1Df-FSvY_xBQU4/edit#gid=0) を別ウィンドウで開く - 横並びで作業するか、セカンドモニターを使用する。
-1. [Sheetload intake sheet](https://docs.google.com/spreadsheets/d/1Lc3uLs7gpoYYu10cLlzqzxWCFISja1Df-FSvY_xBQU4/edit#gid=0) で前月分のセクションをすべてハイライトします。これらのセクションをコピーし、最後の利用可能なデータセットの直下にシリーズ全体を貼り付けます。`month` と `value` セクションを削除して、レポーティング対象月用に更新できるようにします。
-1. Sprout からデータを取得します。各データポイントの最適な所在は [Sheetload intake sheet](https://docs.google.com/spreadsheets/d/1Lc3uLs7gpoYYu10cLlzqzxWCFISja1Df-FSvY_xBQU4/edit#gid=0) の `source_details` セクションに記載されています。
-1. ブランド全般の数値を完了したら、毎月レポートする各トピックに移ります。[Sheetload intake sheet](https://docs.google.com/spreadsheets/d/1Lc3uLs7gpoYYu10cLlzqzxWCFISja1Df-FSvY_xBQU4/edit#gid=0) の `Topic Template` タブに移動します。列 c から右側のすべてのデータをハイライトしてコピーします。
-1. この空のデータテンプレートを、[Sheetload intake sheet](https://docs.google.com/spreadsheets/d/1Lc3uLs7gpoYYu10cLlzqzxWCFISja1Df-FSvY_xBQU4/edit#gid=0) の `Campaign and Topic Reporting` タブに、列 c から右側に貼り付けます。これは、レポートする 1 つのトピック／キャンペーンの取り込み用として機能します。`Topic/Sprout Tag` 項目の 1 つを選択し、[Sprout の Tag Performance Report](https://app.sproutsocial.com/reports/tag_performance) に移動して該当のタグを選択し、すべてのデータを記入します。
+1. [Sprout レポート](https://app.sproutsocial.com/reports/home) を開き、レポーティング対象月用に設定する
+1. [シートロード取り込みシート](https://docs.google.com/spreadsheets/d/1Lc3uLs7gpoYYu10cLlzqzxWCFISja1Df-FSvY_xBQU4/edit#gid=0) を別ウィンドウで開く - 横並びで作業するか、セカンドモニターを使用する。
+1. [シートロード取り込みシート](https://docs.google.com/spreadsheets/d/1Lc3uLs7gpoYYu10cLlzqzxWCFISja1Df-FSvY_xBQU4/edit#gid=0) で前月分のセクションをすべてハイライトします。これらのセクションをコピーし、最後の利用可能なデータセットの直下にシリーズ全体を貼り付けます。`month` と `value` セクションを削除して、レポーティング対象月用に更新できるようにします。
+1. Sprout からデータを取得します。各データポイントの最適な所在は [シートロード取り込みシート](https://docs.google.com/spreadsheets/d/1Lc3uLs7gpoYYu10cLlzqzxWCFISja1Df-FSvY_xBQU4/edit#gid=0) の `source_details` セクションに記載されています。
+1. ブランド全般の数値を完了したら、毎月レポートする各トピックに移ります。[シートロード取り込みシート](https://docs.google.com/spreadsheets/d/1Lc3uLs7gpoYYu10cLlzqzxWCFISja1Df-FSvY_xBQU4/edit#gid=0) の `Topic Template` タブに移動します。列 c から右側のすべてのデータをハイライトしてコピーします。
+1. この空のデータテンプレートを、[シートロード取り込みシート](https://docs.google.com/spreadsheets/d/1Lc3uLs7gpoYYu10cLlzqzxWCFISja1Df-FSvY_xBQU4/edit#gid=0) の `Campaign and Topic Reporting` タブに、列 c から右側に貼り付けます。これは、レポートする 1 つのトピック／キャンペーンの取り込み用として機能します。`Topic/Sprout Tag` 項目の 1 つを選択し、[Sprout のタグパフォーマンスレポート](https://app.sproutsocial.com/reports/tag_performance) に移動して該当のタグを選択し、すべてのデータを記入します。
 1. 各レポーティング対象キャンペーン／トピックについて手順 6 を繰り返します。現在の対象は 3 つ：`Campaign: All Remote Brand`、`Tag: Press Coverage`、`Tag: Blog Shares`
 
 ### 四半期レポーティング
 
-ソーシャルチームが [ad equivalency dashboard](https://docs.google.com/spreadsheets/d/1sZwoUwnk5BXHrmRkAPkipgtMJZ8_stS-hMagTujym0k/edit?usp=sharing) に四半期の 3 ヶ月目のデータを追加した時点で、ソーシャルチャンネル別の平均 CPC と CPM を含めて、四半期のメトリクスをクローズします。なお、広告価値のパフォーマンスは四半期がクローズした後に利用可能になります。
+ソーシャルチームが [広告等価ダッシュボード](https://docs.google.com/spreadsheets/d/1sZwoUwnk5BXHrmRkAPkipgtMJZ8_stS-hMagTujym0k/edit?usp=sharing) に四半期の 3 ヶ月目のデータを追加した時点で、ソーシャルチャンネル別の平均 CPC と CPM を含めて、四半期のメトリクスをクローズします。なお、広告価値のパフォーマンスは四半期がクローズした後に利用可能になります。
 
 各四半期はパフォーマンスとインサイトを概説する Issue で締めくくります。[social-quarterly-report Issue テンプレート](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/blob/master/.gitlab/issue_templates/social-quarterly-report.md) を使用してください。[四半期パフォーマンスに関する完成済み Issue の例はこちら](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/issues/4647)。
 
@@ -122,9 +122,9 @@ GitLab チームメンバーのみが閲覧可能
 
 [FY21 パフォーマンスレビューデック](https://docs.google.com/presentation/d/1nlnysWmeVShRK4-frKKkKfUdBPz96qBOAkt26RmZmAM/edit?usp=sharing)
 
-年次レポートはあらゆる消費形式を網羅すべきです：Epic、Issue、文章による要約、デッキ、ソーシャルチームによるレビュー付きデッキ録画。
+年次レポートはあらゆる消費形式を網羅すべきです：エピック、Issue、文章による要約、デッキ、ソーシャルチームによるレビュー付きデッキ録画。
 
-[FY21 の Epic と Issue のアウトラインを使って FY22 版を作成してください。](https://gitlab.com/groups/gitlab-com/marketing/corporate_marketing/-/epics/67)
+[FY21 のエピックと Issue のアウトラインを使って FY22 版を作成してください。](https://gitlab.com/groups/gitlab-com/marketing/corporate_marketing/-/epics/67)
 
 年次レポーティングは、キャンペーン／トピックのステークホルダー、コミュニケーションおよびコーポレートマーケティングチーム、マーケティング組織全体に伝達すべきです。#marketing Slack チャンネルに最新情報として含めてください。
 
