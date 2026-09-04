@@ -18,16 +18,16 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 ### オフラインで表示したいデモファイルを事前に読み込む
 
-これらは [Company Google drive](https://drive.google.com/drive/u/1/folders/1Qm8Y3oVLRa0nS1BARA631Ex6SKVzYp3C) にあります
+これらは [社内 Google Drive](https://drive.google.com/drive/u/1/folders/1Qm8Y3oVLRa0nS1BARA631Ex6SKVzYp3C) にあります
 
 具体的なファイル:
 
-- [Secure Capabilities](https://docs.google.com/presentation/d/1fdTmdepdaq03OSfcA3pYduDxDnQEyvY4ARPqXEX8KrY/edit#slide=id.g2823c3f9ca_0_9) (11.8) - **2019-03-09 時点で新規**
-- [Auto DevOps Run](https://docs.google.com/presentation/d/1oKHU3MsbJmxVQyO-7c6JLMoCOS80uS-0NlcI-mRxAAY/edit?usp=sharing) (11.3)
-- [Auto DevOps Setup (GKE)](https://docs.google.com/presentation/d/1AGABPlNzMm5-rrYfwGIzueXIbPleVkGpnc2Qk6JtnWk/edit?usp=sharing) (11.3)
-- [Auto DevOps Setup (EKS)](https://docs.google.com/presentation/d/1Ejnho9pqXPj-OHNU2q51cC0xCG5c8pVLmvg-maIA7BQ/edit?usp=sharing) (11.3)
-- [Auto DevOps (short, guided)](https://docs.google.com/presentation/d/1UkQI_9V-CJZcbZJBDTB7tyOg14XHCKIwNoUHW1K6tC8/edit?usp=sharing) (11.0)
-- [Secure Capabilities Demo (short, guided)](https://drive.google.com/open?id=1cfzdLFWk3hYLw_aocgunVmJCD-TSiOgypr66A_nR8VQ) (11.8) - **2019-03-09 時点で新規**
+- [セキュリティ機能](https://docs.google.com/presentation/d/1fdTmdepdaq03OSfcA3pYduDxDnQEyvY4ARPqXEX8KrY/edit#slide=id.g2823c3f9ca_0_9) (11.8) - **2019-03-09 時点で新規**
+- [Auto DevOps の実行](https://docs.google.com/presentation/d/1oKHU3MsbJmxVQyO-7c6JLMoCOS80uS-0NlcI-mRxAAY/edit?usp=sharing) (11.3)
+- [Auto DevOps のセットアップ（GKE）](https://docs.google.com/presentation/d/1AGABPlNzMm5-rrYfwGIzueXIbPleVkGpnc2Qk6JtnWk/edit?usp=sharing) (11.3)
+- [Auto DevOps のセットアップ（EKS）](https://docs.google.com/presentation/d/1Ejnho9pqXPj-OHNU2q51cC0xCG5c8pVLmvg-maIA7BQ/edit?usp=sharing) (11.3)
+- [Auto DevOps（短縮版、ガイド付き）](https://docs.google.com/presentation/d/1UkQI_9V-CJZcbZJBDTB7tyOg14XHCKIwNoUHW1K6tC8/edit?usp=sharing) (11.0)
+- [セキュリティ機能デモ（短縮版、ガイド付き）](https://drive.google.com/open?id=1cfzdLFWk3hYLw_aocgunVmJCD-TSiOgypr66A_nR8VQ) (11.8) - **2019-03-09 時点で新規**
 
 ### オフライン中にデモファイルを使う
 

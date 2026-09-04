@@ -118,9 +118,9 @@ GitLab チームメンバーのみが閲覧可能
 
 ### 年次レポーティング
 
-[FY22 Performance Review Deck](https://docs.google.com/presentation/d/1_rLCvBP3fz0ttPOteRphOoAEji_LMvT1sfHrUYC91Gw/edit#slide=id.g639141d4c5_0_15)
+[FY22 パフォーマンスレビューデック](https://docs.google.com/presentation/d/1_rLCvBP3fz0ttPOteRphOoAEji_LMvT1sfHrUYC91Gw/edit#slide=id.g639141d4c5_0_15)
 
-[FY21 Performance Review Deck](https://docs.google.com/presentation/d/1nlnysWmeVShRK4-frKKkKfUdBPz96qBOAkt26RmZmAM/edit?usp=sharing)
+[FY21 パフォーマンスレビューデック](https://docs.google.com/presentation/d/1nlnysWmeVShRK4-frKKkKfUdBPz96qBOAkt26RmZmAM/edit?usp=sharing)
 
 年次レポートはあらゆる消費形式を網羅すべきです：Epic、Issue、文章による要約、デッキ、ソーシャルチームによるレビュー付きデッキ録画。
 
