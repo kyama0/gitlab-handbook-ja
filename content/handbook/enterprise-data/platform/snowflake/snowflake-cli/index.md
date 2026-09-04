@@ -53,7 +53,7 @@ chmod 0600 ~/.snowflake/config.toml
 
 ### 方法 1：ローカルリポジトリ経由 {#method-1-via-local-repo}
 
-analytics リポジトリをすでにクローンしている場合は、更新してスクリプトを直接 source します。
+analytics リポジトリをすでにクローンしている場合は、更新してスクリプトを直接読み込みます。
 
 ```zsh
 jump analytics
@@ -72,7 +72,7 @@ analytics リポジトリがローカルにない場合は、ブラウザから�
 
 [オンボーディングスクリプトをダウンロード](https://gitlab.com/gitlab-data/analytics/-/raw/master/admin/onboarding_script.zsh)
 
-次に、スクリプトを source して、関連する 2 つの関数を直接実行します。
+次に、スクリプトを読み込み、関連する 2 つの関数を直接実行します。
 
 ```zsh
 source ~/Downloads/onboarding_script.zsh

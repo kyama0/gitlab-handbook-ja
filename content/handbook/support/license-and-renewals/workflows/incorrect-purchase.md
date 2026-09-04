@@ -134,7 +134,7 @@ Account Owner が 24 時間以内に応答しない場合、または顧客が 2
 
 Community Program のサブスクリプションには、個別のプログラムワークフローが必要です。サブスクリプションタイプを変更するために、これらのリクエストを Accounts Receivable、Sales、Support に転送しないでください。
 
-プログラムへの申請時に使用したものと同じメールアドレスを使用して、該当するプログラムのメールアドレスへ顧客を案内します。
+プログラムへの申請時と同じメールアドレスから、該当するプログラムのメールアドレスへ連絡するよう顧客に案内します。
 
 - Education：[education@gitlab.com](mailto:education@gitlab.com)
 - Open Source：[opensource@gitlab.com](mailto:opensource@gitlab.com)

@@ -221,7 +221,7 @@ Organization メンテナンスモード中にリクエストが**許可され�
 - Cell 全体の cron ワーカーは、Organization 所有のデータを反復する際にアクティブな Organization フィルタを採用しなければならず、メンテナンス中の Organization が除外されることを表明するテストを持たなければなりません。これがないと、ロールアウト後に追加された新しい cron ワーカーが、まさに移動されようとしているデータをサイレントに変更してしまいます。
 - 上記の強制レイヤをバイパスする任意のコードパス（例: マイグレーション内の生 SQL `UPDATE` や、コントローラ、Grape、GraphQL、`Gitlab::GitAccess` を通らない直接の ActiveRecord 書き込み）は、このイテレーションでは**カバーされません**。将来のイテレーションでは、多層防御としてサービスレイヤまたはモデルレイヤのガードが追加される可能性があります。
 - インスタンス全体のメンテナンスモード（`Gitlab.maintenance_mode?`）は引き続き利用可能で、直交します。両方がアクティブな場合は、より制限的な状態が勝ちます。Organization メンテナンスモードは、インスタンスメンテナンスチェックをバイパスするコードパスを導入してはなりません。
-- Self-Managed および Dedicated インスタンス（インスタンスごとに単一 Organization、[ADR 007](007_self_managed_dedicated_single_organization.md)を参照）は、この仕組みを無料で継承しますが、実際には Organization 単位の分離による利点がないため、引き続きインスタンス全体のメンテナンスモードを使用すべきです。そこで休止状態を保つための永続的なトグルは不要です。これらのトポロジ上の単一 Organization は `active` 以外へ遷移しないため、強制コードは作動しません。
+- Self-Managed および Dedicated インスタンス（インスタンスごとに単一 Organization、[ADR 007](007_self_managed_dedicated_single_organization.md)を参照）は、追加実装なしでこの仕組みを利用できますが、実際には Organization 単位の分離による利点がないため、引き続きインスタンス全体のメンテナンスモードを使用すべきです。そこで休止状態を保つための永続的なトグルは不要です。これらのトポロジ上の単一 Organization は `active` 以外へ遷移しないため、強制コードは作動しません。
 - フリーズ中は書き込みとともに読み取りもブロックされるため、ユーザーには Organization が完全に利用できない状態として見えます。汎用的なメンテナンスページと構造化された API エラーによって混乱を緩和します。[Cohort B の基準](../../organization-data-migration/cohorts/criteria_cohort_b.md)では、お客様が移行中の短時間の完全な利用不能を許容することを求めています。メンテナンスウィンドウに関するお客様向けメッセージは、引き続き合意し、製品ドキュメントに反映する必要があります。
 
 ## 検討した代替案 {#alternatives-considered}
@@ -240,7 +240,7 @@ Organization メンテナンスモード中にリクエストが**許可され�
 
 - トリガーから素朴に表面化される `PG::Error` はユーザー体験を悪化させますが、これは解決可能です: PostgreSQL の [`RAISE`](https://www.postgresql.org/docs/17/plpgsql-errors-and-messages.html#PLPGSQL-STATEMENTS-RAISE)によるカスタム `SQLSTATE` は、`pg` gem からは汎用的な `PG::ServerError` として表面化します（`pg` gem の型付きサブクラスは標準 SQLSTATE コードのみをカバーし、ユーザー定義のものはカバーしません）。その後 ActiveRecord の PostgreSQL アダプタは `translate_exception` を通じて例外をルーティングします。私たちはサブクラス化したアダプタでそれを拡張し、カスタム SQLSTATE にマッチさせて専用の `ActiveRecord::OrganizationMaintenanceError`（`ActiveRecord::ReadOnlyError` のサブクラス）として再 raise できます。アプリケーションは単一の型付き例外を rescue し、それをコントローラレイヤの強制と同じユーザー向けレスポンス形状に変換します。このマッピングが整っていれば、トリガーは実行可能な最終ラインのバックストップです。
 - これは Sidekiq ジョブのエンキューや外部システムからのリクエスト発行を停止しないため、アプリケーションレイヤのフィードバックは依然として必要です。
-- トリガーのパフォーマンスにはベンチマークが必要です。シャーディングキーがテーブル上に直接存在しない場合に join 経由で `organization_id` を解決する行ごとのトリガーは、特にホットな書き込みパスでは無料ではありません。
+- トリガーのパフォーマンスにはベンチマークが必要です。シャーディングキーがテーブル上に直接存在しない場合に join 経由で `organization_id` を解決する行ごとのトリガーは、特にホットな書き込みパスでは、その処理コストを無視できません。
 
 シャーディングキーのカバレッジが普遍化したら**最終ライン**の安全網として再検討するかもしれませんが、それ単独では不十分です。
 
