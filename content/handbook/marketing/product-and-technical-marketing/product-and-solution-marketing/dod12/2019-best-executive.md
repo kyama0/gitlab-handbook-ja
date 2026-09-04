@@ -3,7 +3,7 @@ title: "2019 DevOps Dozen - 最優秀 DevOps ソリューションプロバイ�
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/dod12/2019-best-executive/
 upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
 translated_at: "2026-09-04T07:56:05+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"
 ---
@@ -14,7 +14,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 Sid は、GitLab という会社、その文化、GitLab というプロダクトの構築のあらゆる面で DevOps プラクティスを採用し従うことで、GitLab を率いています。彼は私たちのコアバリューに DevOps の哲学を植えつけることから始めます。良い例は、[イテレーション](/handbook/values/#iteration)と[透明性](/handbook/values/#transparency)というバリューです。Sid は、何らかの改善をもたらす最小限の変更を、低い恥のレベルで公開すべきだと心から信じています。これにより、GitLab の誰もが世界に最小限のイテレーションをプッシュし、コミュニティからフィードバックを受け取り、そのフィードバックを迅速で速い改善に組み込むことができるのです。これらの原則は、エンジニアリングからプロダクトマネジメント、マーケティング、さらにはセールスまで、会社のあらゆる側面に適用されます。
 
-透明性は、Sid のビジョンと、会社運営のあらゆる側面で DevOps を採用することを駆動するもう 1 つのコアバリューです。すべては[デフォルトでパブリック](/handbook/values/#public-by-default)で、機密の顧客データなど、いくつかの例外があります。これにより、DevOps の重要なテナントである、コミュニティからの継続的なフィードバックを得ることができます。
+透明性は、Sid のビジョンと、会社運営のあらゆる側面で DevOps を採用することを駆動するもう 1 つのコアバリューです。すべては[デフォルトでパブリック](/handbook/values/#public-by-default)で、機密の顧客データなど、いくつかの例外があります。これにより、DevOps の重要な原則である、コミュニティからの継続的なフィードバックを得ることができます。
 
 ### コミュニティリーダー
 

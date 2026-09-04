@@ -15,8 +15,8 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 ### チーム - 私たちについて
 
-- Joanna Cyprys - シニアマネージャー、ビデオ
-- Dale Harper - ビデオプロデューサー
+- Joanna Cyprys - Senior Manager, Video
+- Dale Harper - Video Producer
 
 ### 私たちの働き方
 

@@ -3,7 +3,7 @@ title: 出張の優先順位
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/events_travel/
 upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
 translated_at: "2026-09-04T07:56:05+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"
 ---
@@ -12,14 +12,14 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 **出張の優先順位**
 
-1. 講演機会 - 大規模な業界イベント（1,000人超）
-1. 講演機会 - 中規模イベント（200〜1,000人）
+1. 講演機会 - 大規模な業界イベント（1,000 人超）
+1. 講演機会 - 中規模イベント（200 〜 1,000 人）
 1. 顧客ミーティング - 大企業
 1. 顧客ミーティング - コマーシャル
 1. Sales Quick Start / イネーブルメント / SKO
 1. GitLab Commit
 1. キャンペーン／ロードショー
-1. 講演機会 - 小規模イベント（200人未満）
+1. 講演機会 - 小規模イベント（200 人未満）
 1. 業界カンファレンスへの参加（リサーチ目的）
 1. GitLab Connect
 1. ブース支援 - 大規模

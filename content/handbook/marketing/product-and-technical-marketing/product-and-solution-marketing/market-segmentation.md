@@ -3,7 +3,7 @@ title: "市場セグメンテーション"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/market-segmentation/
 upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
 translated_at: "2026-09-04T07:56:05+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"
 ---
@@ -20,7 +20,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 - 高度製造（自動車とは別）
 - 石油＆ガス／エネルギー
 
- セールスセグメンテーションに関する詳細情報は [Go To Market Resources page](/handbook/sales/field-operations/gtm-resources/) を参照してください。
+ セールスセグメンテーションに関する詳細情報は [Go To Market リソースページ](/handbook/sales/field-operations/gtm-resources/) を参照してください。
 
 ### 金融サービス
 
