@@ -1,11 +1,11 @@
 ---
 title: Plan:Planner Intelligence エンジニアリングチーム
 upstream_path: /handbook/engineering/devops/plan/planner-intelligence/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T07:00:16+09:00"
+upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
+translated_at: "2026-09-04T20:38:00+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T14:39:01+02:00"
+lastmod: "2026-09-04T13:17:59+02:00"
 ---
 
 ## Plan:Planner Intelligence チーム
@@ -25,7 +25,7 @@ Plan:Planner Intelligence チームは [Knowledge Management カテゴリ](/hand
 
 ### 安定したカウンターパート
 
-{{% engineering/stable-counterparts manager-role="(Engineering Manager|Manager, Engineering)(.*)Plan:Planner Intelligence" role="(.*)Plan:Planner Intelligence$|Product Manager(.*)Plan Stage|Security(.*)Plan|Engineering(.*)Plan$|Principal(.*)Plan$|Group(.*)Plan" %}}
+{{% engineering/stable-counterparts manager-role="(Engineering Manager|Manager, Engineering)(.*)Plan:Planner Intelligence" role="Plan:Planner Intelligence|Product Manager(.*)Plan Stage|Security(.*)Plan|Engineering(.*)Plan$|Principal(.*)Plan$|Group(.*)Plan" %}}
 
 ### 採用チャート
 
@@ -174,7 +174,7 @@ Issue には 1 つのマイルストーンしか添付できないため、`~"Ne
 
 ### ワークフロー
 
-#### ラベルの使用
+#### ラベルの使用 {#use-of-labels}
 
 Issue の適切なラベル付けは、チームができる作業とやっている作業の分類、追跡可能性、定量化に役立ちます。一部のラベルは必須です。以下の表ではこれらを説明し、その理由を示します。
 
