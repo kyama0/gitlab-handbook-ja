@@ -214,7 +214,7 @@ GitLab プラクティスエンジニア向けのデリバリードキュメン�
 - [Partner Portal から GitLab トレーニングにアクセス](https://partners.gitlab.com/)
   - GitLab University のトレーニングにアクセスするには、Partner Portal 経由でログインしてください。これにより、受講したトレーニングが GitLab との会社パートナーシップに紐付けられます！
 
-    ![Start Training from the Partner Portal](/images/resellers/partner-enablement/gitlab-partner-training.png)
+    ![パートナーポータルからトレーニングを開始](/images/resellers/partner-enablement/gitlab-partner-training.png)
 
 ## 2. GitLab の追加イネーブルメントリソース
 

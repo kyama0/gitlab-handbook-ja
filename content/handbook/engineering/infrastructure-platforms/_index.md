@@ -9,7 +9,7 @@ translator: codex
 stale: false
 ---
 
-## ミッション
+## ミッション {#mission}
 
 Infrastructure Platforms として、私たちのミッションは、高可用性・信頼性・高性能・スケーラブルなインフラソリューションを構築し、総所有コストを最低限に抑えながら、GitLab が SaaS および Self-Managed プラットフォーム全体で単一の DevSecOps プラットフォームを提供できるようにすることです。
 
@@ -21,13 +21,13 @@ Infrastructure Platforms として、私たちのミッションは、高可用�
 
 GitLab.com の可用性問題について Infrastructure Platforms チームにアラートを出したい GitLab チームメンバーは、インシデントの報告方法に関する簡単な手順をこちらで確認してください: [インシデントの報告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)。
 
-その他のすべての問い合わせについては、[getting assistance](/handbook/engineering/infrastructure-platforms/getting-assistance/) ページを参照してください。
+その他のすべての問い合わせについては、[サポートの取得](/handbook/engineering/infrastructure-platforms/getting-assistance/)ページを参照してください。
 
 ## 方向性
 
 Platforms セクション内で推進されるイニシアチブは、複数四半期にまたがることが多く、[SaaS Platforms セクションエピック](https://gitlab.com/groups/gitlab-com/-/epics/2115) (GitLab チームメンバー) に表現されています。
 
-{{% include "includes/engineering/we-are-also-product-development.md" %}}
+<!-- include omitted: includes/engineering/we-are-also-product-development.md (no localized version under content/ja/) -->
 
 ## 組織構造
 
@@ -213,7 +213,7 @@ Infrastructure ロードマップの変更方法の完全な手順は、
 |-----------|-----------|
 | [#infrastructure_-_platforms](https://gitlab.slack.com/archives/C02D1HQRTKQ) | 部門レベルのアイテムでここで協力します。このチャンネルは、より広いチームと重要な情報を共有するために使用されますが、Platforms 内のすべてのチームを共通のトピックで整合させる役割も果たします。 |
 | [#g_infrastructure_platforms_leads](https://gitlab.slack.com/archives/C010QV6RRB3) | マネージャー向けのコミュニケーション。トピックに興味がある方なら誰でもこのチャンネルに参加できます。 |
-| [confidential managers channel](https://gitlab.enterprise.slack.com/archives/C0808MLEXL1) | 追加の調整が必要なすべてのチームに影響する人員配置の問題を議論するために使用されます。可能な限りパブリックチャンネルを使うことをデフォルトとします。|
+| [機密マネージャーチャンネル](https://gitlab.enterprise.slack.com/archives/C0808MLEXL1) | 追加の調整が必要なすべてのチームに影響する人員配置の問題を議論するために使用されます。可能な限りパブリックチャンネルを使うことをデフォルトとします。|
 | [#infrastructure_platforms_social](https://gitlab.enterprise.slack.com/archives/C062T669RFD) | 私たちの社交チャンネル。 |
 
 **Dedicated**
@@ -333,7 +333,7 @@ Engineering リーダーシップと Engineering Manager は毎週集まり、�
 - **Issue 作成**: Slack ボットは、確認応答するエージェントが割り当てられた Issue を作成します。
 - **スレッドアタッチ**: メッセージに対応する Slack スレッドも、作成された GitLab Issue に投稿されます。
 - **ラベル割り当て**: エージェントは Slack メッセージにラベル絵文字 (`ops`、`foundations`、`observability`) を追加することで Issue をさらに分類できます。このアクションは、Issue をそれぞれのチーム: Ops、Foundations、Observability に自動的に割り当てます。
-- **プロジェクト追跡**: これらの変換された Issue は、[Infrastructure Lounge Slack Issue Tracker](https://gitlab.com/gitlab-com/gl-infra/infrastructure_platforms-slack-issue-tracker) でホストされる専用プロジェクトの下で追跡されます。
+- **プロジェクト追跡**: これらの変換された Issue は、[Infrastructure Lounge Slack Issue トラッカー](https://gitlab.com/gitlab-com/gl-infra/infrastructure_platforms-slack-issue-tracker)でホストされる専用プロジェクトの下で追跡されます。
 - **Issue クロージャ**: エージェント／要求者は、`resolved_emojis` (私たちのケースでは `green-circle-check`、`white_check_mark` または `checked`) のいずれかを追加することで解決時に Issue をクローズできます。
 
 #### 設定

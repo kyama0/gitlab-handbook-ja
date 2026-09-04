@@ -3,7 +3,7 @@ title: "非線形ワークデイと非同期勤務の完全ガイド"
 canonical_path: "./non-linear-workday/"
 description: オールリモート環境における日常ルーティンの再発明と非線形ワークデイの作り方
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/non-linear-workday/"
@@ -14,7 +14,7 @@ stale: false
 lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
-![GitLab customer path](/images/all-remote/gitlab-customer-path.jpg)
+![GitLab のカスタマージャーニー](/images/all-remote/gitlab-customer-path.jpg)
 
 このページでは、非線形ワークデイを取り入れた生活がどのようなものになるかを詳しく説明し、コロケーション（同一拠点勤務）型・同期型の職場では実現できない可能性を想像するためのヒントを提供します。
 
@@ -58,7 +58,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 - モンタナの冬は午後 5 時には日が暮れています。Darren は日照時間を最大限に活用し、働く時間を主に暗い時間帯にシフトしています。どうせその時間は室内にいるため、仕事に適しています。暗い中ではほとんど人が仕事を終えているにもかかわらず、それが一般的なルーティンの定義と相反していても、外に出て探索したいという衝動はありません。むしろ、これは仕事をするのに理想的な時間です。
 
-![GitLab all-remote team](/images/all-remote/all-remote-skiing-montana.jpg)
+![GitLab のオールリモートチーム](/images/all-remote/all-remote-skiing-montana.jpg)
 {style="max-width: 50%;"}
 
 ここで一度立ち止まり、時間が相対的であることを再認識する必要があります。Darren が午後 4 時 30 分に仕事を再開したとき、標準的な 8 時間勤務であれば、あと 6 時間貢献できます。現地時間にとらわれないことが大切です。午後 4 時 30 分に仕事を再開するのは一見非常識に思えますが、チームの他のメンバーにとってはそれが朝だったり、昼だったり、夜だったりします。
@@ -138,7 +138,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 ## 想像力を育む
 
-![GitLab all-remote team](/images/all-remote/remote_work_02.jpg)
+![GitLab のオールリモートチーム](/images/all-remote/remote_work_02.jpg)
 {style="max-width: 50%;"}
 
 - 毎日が全く同じでなかったら、あなたの生活はどうなるでしょうか？
@@ -173,7 +173,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 ## 非線形ワークデイを可能にするために必要なことは？
 
-![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
+![GitLab のバリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
 
 ここで説明した例は、いくつかの現実がすでに整っていなければ実現できなかったでしょう。

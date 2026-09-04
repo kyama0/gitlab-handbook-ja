@@ -59,7 +59,7 @@ PathFactory for Sales は、Salesforce 内の PathFactory の拡張機能で、S
 
 ファストムービングバイヤーアラート（FMB アラート）は、Marketo で設定されたメールアラートで、リードオーナーにリードの詳細を送信します。アラートは、リードが PathFactory エクスペリエンスで少なくとも 90 秒費やし、3 つ以上のアセットを表示したときにトリガーされます。以下は FMB アラートの例です:
 
-![image](/images/marketing/marketing-operations/pathfactory/pathfactory-for-sales/fmb-alertv2.png)
+![画像](/images/marketing/marketing-operations/pathfactory/pathfactory-for-sales/fmb-alertv2.png)
 
 ファストムービングバイヤーアラートは、Marketo からのグローバルな興味深い瞬間もトリガーします。
 

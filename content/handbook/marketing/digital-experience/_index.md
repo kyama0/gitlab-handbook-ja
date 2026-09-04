@@ -390,7 +390,7 @@ YouTube で私たちのチームの活動を見られます！
 - [BE Deploy ファイル](https://gitlab.com/gitlab-com/marketing/digital-experience/buyer-experience/-/blob/main/scripts/deploy)
 - [GitLab Blog Deploy ファイル](https://gitlab.com/gitlab-com/marketing/digital-experience/gitlab-blog/-/blob/main/scripts/deploy)
 
-![Mermaid diagram](/images/marketing/digital-experience/Dex-pipeline.png)
+![Mermaid 図](/images/marketing/digital-experience/Dex-pipeline.png)
 
 バケットをクリーンに保つために、これらのリポジトリで delete フラグ付きのスケジュールパイプラインを実行し、クラウドバケットから古くなったファイル（マーケティングサイトから削除されたページや古い JS バンドルなど）を削除しています。
 

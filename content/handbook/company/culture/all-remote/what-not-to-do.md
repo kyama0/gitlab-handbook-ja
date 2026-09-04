@@ -2,7 +2,7 @@
 title: "リモート導入時にやってはいけないこと：オフィス体験をリモートで再現しようとしない"
 description: リモート導入時にやってはいけないこと
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/what-not-to-do/"
@@ -21,7 +21,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 ## 利用できるリソースがまだないと思い込まないこと
 
-![GitLab all-remote team](/images/all-remote/gitlab-com-all-remote-1280x270.png)
+![GitLab のオールリモートチーム](/images/all-remote/gitlab-com-all-remote-1280x270.png)
 {style="max-width: 50%;"}
 
 GitLab は **[リモートで優れた成果を上げるための包括的なガイド](guide/)** を作成しており、次のような人気トピックを扱っています:
@@ -52,7 +52,7 @@ GitLab は **[リモートで優れた成果を上げるための包括的なガ
 
 ## すべての対面ミーティングをバーチャルに転換しないこと
 
-![GitLab customer path](/images/all-remote/gitlab-customer-path.jpg)
+![GitLab のカスタマージャーニー](/images/all-remote/gitlab-customer-path.jpg)
 {style="max-width: 50%;"}
 
 リモートワークは何かのイベントへの反応として行うものではありません — それは、より大きな [効率性](/handbook/values/#efficiency)、より [地理的・文化的に多様なチーム](https://about.gitlab.com/blog/2019/12/06/how-all-remote-supports-inclusion-and-bolsters-communities/)、そして高まる [透明性](/handbook/values/#transparency) を生み出す *意図的な* 働き方のアプローチです。
@@ -63,7 +63,7 @@ GitLab は **[リモートで優れた成果を上げるための包括的なガ
 
 ## 全員が最適なワークスペースを利用できると思い込まないこと
 
-![GitLab all-remote team](/images/all-remote/gitlab-com-all-remote-v3-dark-1280x270.png)
+![GitLab のオールリモートチーム](/images/all-remote/gitlab-com-all-remote-v3-dark-1280x270.png)
 {style="max-width: 50%;"}
 
 長期のリモートワーカーは何年もかけて[ホームオフィス](workspace/)を磨いてきましたが、突然どこからでも働くことになった人々は準備ができていない場合があります。組織はチームメンバーがオフィスデザインやエルゴノミクスの専門家であることを期待すべきではありません。また、ある人にとって最適なものが[別の人とは異なって見える](https://about.gitlab.com/blog/2019/09/12/not-everyone-has-a-home-office/) こともあります。
@@ -86,7 +86,7 @@ GitLab は **[リモートで優れた成果を上げるための包括的なガ
 
 ## リモートが一夜にして実現すると思い込まないこと
 
-![GitLab all-remote team](/images/all-remote/gitlab-com-all-remote-v4-dark-1280x270.png)
+![GitLab のオールリモートチーム](/images/all-remote/gitlab-com-all-remote-v4-dark-1280x270.png)
 {style="max-width: 50%;"}
 
 オフィスビルに引越しする企業にとって、初日からすべてが完璧に機能することはまずありません。看板が不足していたり、セキュリティゲートが誤作動したり、エレベーターが止まったりすることがあります。新しい職場に適応するには時間がかかり、[イテレーション](/handbook/values/#iteration)を経て洗練されていきます。
@@ -99,7 +99,7 @@ GitLab は **[リモートで優れた成果を上げるための包括的なガ
 
 ## リモートマネジメントが根本的に異なると思い込まないこと
 
-![GitLab journey illustration](/images/all-remote/gitlab-journey-and-navigation.jpg)
+![GitLab のジャーニーのイラスト](/images/all-remote/gitlab-journey-and-navigation.jpg)
 {style="max-width: 50%;"}
 
 実際のところ、[リモート企業のマネジメント](/handbook/company/culture/all-remote/)はあらゆる企業のマネジメントに似ています。**信頼、コミュニケーション、そして共有目標への全社的なサポートに行き着きます**。これらすべてが[機能不全の回避](/handbook/values/#five-dysfunctions)に役立ちます。
@@ -112,7 +112,7 @@ GitLab は **[リモートで優れた成果を上げるための包括的なガ
 
 ## 既存の価値観が静的なままでいられると思い込まないこと
 
-![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
+![GitLab のバリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
 
 リモートエンタープライズとして上手く機能するためには、価値観が[この働き方をサポートするものでなければなりません](/handbook/company/culture/all-remote/)。GitLab の[価値観](/handbook/values/)と[行動原則](/handbook/values/#operating-principles)のコレクションは、活気あるオールリモート環境に貢献しています。これらの価値観の細微を研究し、自社の既存の価値観を調整または追加することを検討してください。コロケーションの慣行をサポートするために確立された価値観は、リモートには適用できない場合があります。特に透明性を妨げるものは注意が必要です。
@@ -120,7 +120,7 @@ GitLab は **[リモートで優れた成果を上げるための包括的なガ
 価値観を当たり前のものとして見過ごすことのないようにしてください。例えば、コロケーションのスペースにおけるコラボレーションは、[合意](/handbook/company/culture/all-remote/)を求めて人々を共有物理スペースに集めることで日常的に示されます。リモート環境における[コラボレーション](/handbook/values/#collaboration)は、DRI（直接責任者）が[説明なしに意思決定できる](/handbook/people-group/directly-responsible-individuals/#empowering-dris)よう権限を持ちながら、最大数のメンバーが非同期でインサイトを提供できるよう権限を与えることで示されます。
 
 
-{{% include "includes/is_this_advice_any_good_remote.md" %}}
+<!-- include omitted: includes/is_this_advice_any_good_remote.md (no localized version under content/ja/) -->
 
 
 ## 学びを貢献してください

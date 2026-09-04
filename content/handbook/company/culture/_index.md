@@ -2,7 +2,7 @@
 title: "GitLab カルチャー"
 description: "私たちのカルチャーとオールリモート環境から何を期待できるかをご紹介します。"
 twitter_image: "/images/opengraph/Talent-Brand/hiring-group-shot-sko.png"
-twitter_image_alt: "GitLab Team Members gathered together at an event."
+twitter_image_alt: "イベントに集まった GitLab チームメンバー"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/company/culture/

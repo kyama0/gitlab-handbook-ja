@@ -41,7 +41,7 @@ GitLab の [ミッション](/handbook/company/mission/) は、誰もが貢献�
 
 GitLab（"GitLab"、"we"、"our"）の環境・社会・ガバナンス（"ESG"）レポートは、GitLab の ESG 主要トピック全体での優先事項、進捗、パフォーマンスを詳細に説明します。財務パフォーマンスに関するデータはこのレポートには含まれておらず、当社の [財務および SEC 提出書類](https://ir.gitlab.com/financials/sec-filings/default.aspx) で見つけられます。
 
-別途指定がない限り、本レポートに含まれる情報は 2023 年 7 月 20 日に最後に更新されました。本レポートに含まれるコンテンツは、会計年度 2023（"FY23"）（2023 年 1 月 31 日時点）を対象としています。レポートは毎年更新されます。レポート全体を通じて、2023 年 2 月 1 日から 2024 年 1 月 31 日までの会計年度 2024（"FY24"）への言及がある可能性があります。私たちは公開されている [Handbook](/handbook/) を維持しており、本レポート全体を通じて、特定の [Handbook](/handbook/) ページにリンクしています。これらの [Handbook](/handbook/) ページは別々に維持されており、本レポート内で見つかるものとは異なる報告期間を反映している場合があります。
+別途指定がない限り、本レポートに含まれる情報は 2023 年 7 月 20 日に最後に更新されました。本レポートに含まれるコンテンツは、会計年度 2023（"FY23"）（2023 年 1 月 31 日時点）を対象としています。レポートは毎年更新されます。レポート全体を通じて、2023 年 2 月 1 日から 2024 年 1 月 31 日までの会計年度 2024（"FY24"）への言及がある可能性があります。私たちは公開されている[ハンドブック](/handbook/)を維持しており、本レポート全体を通じて、特定の[ハンドブック](/handbook/)ページにリンクしています。これらの[ハンドブック](/handbook/)ページは別々に維持されており、本レポート内で見つかるものとは異なる報告期間を反映している場合があります。
 
 本レポートは、2021 年 10 月にリリースされた Global Reporting Initiative（"GRI"）の標準を参照して作成されました。私たちはまた、Software & IT Services 業界の下で Sustainability Accounting Standards Board（"SASB"）に沿って開示します。
 
@@ -65,7 +65,7 @@ GitLab の ESG [チーム](/job-description-library/legal-and-corporate-affairs/
 
 GitLab の ESG 戦略とプログラム開発を推進する 6 つの主要トピックが、GitLab の重要性評価で特定されました。
 
-![Materiality_Matrix](/images/legal/esg/2022-materiality-matrix-062123.png)
+![マテリアリティマトリクス](/images/legal/esg/2022-materiality-matrix-062123.png)
 
 GitLab の現在の主要トピックは以下に記載されています:
 
@@ -88,7 +88,7 @@ GitLab の現在の主要トピックは以下に記載されています:
 
 ESG 戦略を開発する中で、私たちは取り組みを [国連持続可能な開発目標（"UN SDGs"）](https://sdgs.un.org/goals) と整合させました。UN SDGs は、現在および未来の人々と地球の平和と繁栄のための共有された青写真を提供します。そのため、私たちの ESG の取り組みは 17 の UN SDG のうち 5 つと整合しており、私たちは運営内でゴールへの進捗を推進することを目指しています。ESG 戦略で進捗を遂げる中で、整合を再考し、深めていきます。このレポート全体を通じて、各セクションに関連する UN SDG 番号を含めています。
 
-![5_SDGs](/images/legal/esg/all_5_icons.png)
+![5 つの SDGs](/images/legal/esg/all_5_icons.png)
 
 ## 社会
 
@@ -126,7 +126,7 @@ GitLab におけるタレントマネジメントの成功は、タレントの�
 
 #### タレントエンゲージメント
 
-GitLab では、[learning and development](/handbook/people-group/learning-and-development/) の文化を積極的に促進しています。私たちは、働くのに素晴らしい場所として、そしてリモートの学習と開発を促進するリーダーとして認識されるように努力しています。
+GitLab では、[学習と開発](/handbook/people-group/learning-and-development/)の文化を積極的に促進しています。私たちは、働くのに素晴らしい場所として、そしてリモートの学習と開発を促進するリーダーとして認識されるように努力しています。
 
 私たちの Learning and Development チームは、チームメンバーをそのキャリアの旅でガイドし、個別の貢献者をエンパワーし、リーダーがセルフサービス学習を通じて装備されるようにすることにコミットしています。ビジョンは、誰もが好奇心の文化に貢献する未来です。これは、スキルベースの学習、キャリアモビリティを強化するために設計されたリソース、組織全体のチームのための学習旅行の開発を含む、いくつかのイニシアチブを通じて達成されます。私たちは、アクセス可能でリモートフレンドリーな開発を促進するという目標をサポートするため、学習機会への非同期アクセスを提供しています。
 
@@ -181,7 +181,7 @@ FY24 では、Leadership DIB Council はいくつかのイニシアチブに焦�
 - すべてのジョブレベル全体で、GitLab における DIB バリューを生きることが何を意味するかの整合を確保するための、DIB ビヘイビアの作成を支援する
 - ニューロダイバーシティインクルージョンのために、彼らの部門の主要な結果を積極的に推進し、開発する
 - グローバルインクルージョンプロセスとイニシアチブの運用化を支援する
-- 部門レベルで DIB 戦略を推進するのを助ける。これには objectives and key results（OKRs）、key performance indicators（KPIs）、戦略的イニシアチブが含まれる
+- 部門レベルで DIB 戦略を推進するのを助ける。これには目標と主要結果（OKR）、主要業績評価指標（KPI）、戦略的イニシアチブが含まれる
 
 FY24 に向けて、私たちはプログラム、メトリクスをイテレートし続け、DIB バリューが誰もが貢献できるようにエンパワーすることを確保します。
 
@@ -237,9 +237,9 @@ Foundation は GitLab とその CEO である Sytse 'Sid' Sijbrandij によっ�
 
 GitLab は、会社所有施設からの直接排出または直接エネルギー消費がないオールリモート企業です。したがって、私たちの GHG インベントリは Scope 3 排出のみを測定し、特にリモートワーク、購入された商品とサービス、クラウドサービス、ビジネス出張に関連する排出を測定します。Finance、Procurement、People Analytics、Engineering、Infrastructure を含む GitLab 全体のチームが、ESG チームと協力してインベントリのデータを収集しました。
 
-![GHG_Inventory](/images/legal/esg/ghg_inventory.png)
+![GHG インベントリ](/images/legal/esg/ghg_inventory.png)
 
-最初の GHG インベントリの結果は、[Performance Data Table](https://about.gitlab.com/documents/PERFORMANCE_DATA_TABLE.pdf) でも利用可能であり、サードパーティの保証レターは [こちら](https://about.gitlab.com/documents/GitLab_FY2023_Verification_Opinion.pdf) で利用可能です。
+最初の GHG インベントリの結果は、[パフォーマンスデータテーブル](https://about.gitlab.com/documents/PERFORMANCE_DATA_TABLE.pdf)でも利用可能であり、サードパーティの保証レターは [こちら](https://about.gitlab.com/documents/GitLab_FY2023_Verification_Opinion.pdf) で利用可能です。
 
 *"オールリモート企業として、所有および運営する施設がないため、GitLab には Scope 1 または 2 排出はありません。とはいえ、Scope 3 フットプリントを削減し、気候変動とどのように自分の生活でアクションを取るかについてチームメンバーを教育する機会がまだあることを知っています。"*
 -Stacy Cline, GitLab ESG 担当シニアディレクター
@@ -367,7 +367,7 @@ GitLab は、チームメンバーが合法かつ倫理的にビジネスを行�
 
 ### 結果の測定
 
-データを通じて進捗を開示することは、私たちの [透明性](/handbook/values/#transparency) と [results](/handbook/values/#results) の価値観と整合します。私たちは、進捗を定期的に更新する [key performance indicators（KPIs）](/handbook/company/kpis/) に関するハンドブックのセクションを持っています。GitLab のすべての部分には、会社の [objectives and key results（OKRs）](/handbook/company/okrs/) にリンクされた KPI があります。ESG 戦略を構築するにつれ、関連する ESG KPI をハンドブックに追加し更新し続けます。
+データを通じて進捗を開示することは、私たちの [透明性](/handbook/values/#transparency) と[結果](/handbook/values/#results)の価値観と整合します。私たちは、進捗を定期的に更新する[主要業績評価指標（KPI）](/handbook/company/kpis/)に関するハンドブックのセクションを持っています。GitLab のすべての部分には、会社の[目標と主要結果（OKR）](/handbook/company/okrs/)にリンクされた KPI があります。ESG 戦略を構築するにつれ、関連する ESG KPI をハンドブックに追加し更新し続けます。
 
 - [GRI 開示](https://about.gitlab.com/documents/GRI_CONTENT_INDEX_FY23.pdf)
 - [SASB 開示](https://about.gitlab.com/documents/SASB_INDEX_FY23.pdf)

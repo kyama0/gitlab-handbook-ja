@@ -26,7 +26,7 @@ Tech Docs の Translation MR は 2 段階のレビューを経ます: 1 段階�
 3. **必要に応じてリベースします。**
 4. **レビューアプリを確認します**（Duo は URL のリストの作成が得意です。[例](https://gitlab.com/gitlab-org/gitlab/-/merge_requests/229940#note_3218543601)）。
 5. **MR のドラフト状態を解除します。** これにより、GitLab Duo による初回レビューがトリガーされます。
-6. **GitLab Duo のレビューフィードバックに対応します。** Duo のレビューにより [言語コンテンツメンテナー](https://gitlab.com/gitlab-com/localization/maintainers) によるレビューが必要となる翻訳エラーが指摘された場合、担当者はメンテナーにメンションを送り、レビュアーとして追加します。注意: メンテナーがコミットを追加した後は、その人が MR を承認できなくなります。
+6. **GitLab Duo のレビューフィードバックに対応します。** Duo のレビューにより [言語コンテンツメンテナー](https://gitlab.com/gitlab-com/localization/maintainers/japanese) によるレビューが必要となる翻訳エラーが指摘された場合、担当者はメンテナーにメンションを送り、レビュアーとして追加します。注意: メンテナーがコミットを追加した後は、その人が MR を承認できなくなります。
 7. **レビュー担当者に引き継ぎます**: [Tech Docs メンテナー](https://gitlab.com/gitlab-com/localization/maintainers/tech-docs) に引き継ぎます。
 
 ### レビュアー

@@ -2,7 +2,7 @@
 title: "GitLab テスト — より良いリモートワークへの 12 ステップ"
 description: GitLab テスト — より良いリモートワークへの 12 ステップ
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/company/culture/all-remote/the-gitlab-test-remote-work/
@@ -13,7 +13,7 @@ stale: false
 lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
-![GitLab remote work spectrum illustration](/images/all-remote/spectrum_of_remote_work_gitlab.jpg)
+![GitLab のリモートワーク形態のスペクトラムを示すイラスト](/images/all-remote/spectrum_of_remote_work_gitlab.jpg)
 {style="max-width: 50%;"}
 
 GitLab は世界最大規模のオールリモート組織のひとつです。リモートへのスケールアップを進める中で、私たちはリモートファーストの仕事・文化・プロセス・最適化の実証済み原則を網羅した 40 以上の個別ガイドを文書化してきました。その基礎となる要素は [The Remote Playbook](https://allremote.info) に凝縮されています。
@@ -22,14 +22,14 @@ GitLab は世界最大規模のオールリモート組織のひとつです。�
 
 ## GitLab テスト: より良いリモートワークへの 12 ステップ
 
-![GitLab remote work checklist illustration](/images/all-remote/remote_checklist_illustration.jpg)
+![GitLab のリモートワークチェックリストのイラスト](/images/all-remote/remote_checklist_illustration.jpg)
 {style="max-width: 50%;"}
 
 そこで登場するのが **GitLab テスト: より良いリモートワークへの 12 ステップ** です。命名のヒントをくれた [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) に感謝します。
 
 このテストの素晴らしい点は、約 10 分（速読であればそれ以下）で完了できることです。各質問は「はい」か「いいえ」の二択です。12 点が満点で、11 点は許容範囲内です。10 点以下は、組織がリモート適応フェーズ 4 の目標である **[意図性（Intentionality）](phases-of-remote-adaptation/#phase-4-intentionality)** に到達することを妨げる重大な [オフィスファーストの障壁](what-not-to-do/) が存在することを示しています。
 
-![GitLab remote work environments illustration](/images/all-remote/remote_report_house_gitlab.jpg)
+![GitLab のリモートワーク環境のイラスト](/images/all-remote/remote_report_house_gitlab.jpg)
 {style="max-width: 50%;"}
 
 ### 1. シニアリーダーはデフォルトでリモートで働いていますか？
@@ -99,11 +99,11 @@ GitLab は世界最大規模のオールリモート組織のひとつです。�
 優れたリモート組織は、働く場所が 2 つ以上あることを認識しています。「オフィス」と「自宅」の 2 択だけでなく、第三の選択肢は多岐にわたります。[Codi](https://www.codi.com)、[Gable](https://www.gable.to)、[Switchyards](https://switchyards.com) などのプラットフォームがこのようなアレンジをサポートするために存在します。コワーキングや外部オフィスの利用に対して [払い戻し申請](https://internal.gitlab.com/handbook/finance/expenses/#co-working-space) を認めることは、組織がリモートファーストのワークフローに自信を持ち、多様な場所からの作業をチームメンバーに奨励する意思があることを示しています。
 
 
-{{% include "includes/is_this_advice_any_good_remote.md" %}}
+<!-- include omitted: includes/is_this_advice_any_good_remote.md (no localized version under content/ja/) -->
 
 
 
-{{% include "includes/coursera_gitlab_remote_course.md" %}}
+<!-- include omitted: includes/coursera_gitlab_remote_course.md (no localized version under content/ja/) -->
 
 
 ## 学びを貢献してください

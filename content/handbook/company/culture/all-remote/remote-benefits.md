@@ -2,7 +2,7 @@
 title: "オールリモート企業のメリット完全ガイド"
 description: "このガイドは、組織と従業員の双方にとってのオールリモート企業の優れたメリットの全体像を提供します。詳細はこちらをご覧ください！"
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/remote-benefits/"
@@ -13,7 +13,7 @@ stale: false
 lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
-リモートワークの歴史（[History](https://wrkfrce.com/a-brief-history-of-remote-work/)）
+リモートワークの簡単な[歴史](https://wrkfrce.com/a-brief-history-of-remote-work/)
 {.h2}
 
 - 1973 年: Jack Nilles が「テレコミューティング」と「テレワーキング」という用語を作成
@@ -40,7 +40,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 ## リモートワークのメリット
 
-![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
+![GitLab のバリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
 
 一日をどのように構成できるか、そしてそれが 24 時間ごとにどれほど容易に変化できるかを再考することは、力を与えてくれます。オールリモートがもたらす自由と柔軟性により、従業員は仕事をまったく新しい視点で見ることができます。

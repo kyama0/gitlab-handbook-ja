@@ -2,7 +2,7 @@
 title: "コミュニケーションにおけるハンドブックファーストアプローチの重要性"
 description: 優れたリモートマネージャーになる方法
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/handbook-first/"

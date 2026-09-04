@@ -1682,11 +1682,11 @@
     },
     "content/handbook/company/mission.md": {
       "path": "content/handbook/company/mission.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
+      "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
       "translated_at": "2026-05-14T00:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "26d563b2130d4f918720d4fcb16dafe7af7df88700b3c7597c3efbed4d2fbf55",
-      "upstream_committed_at": "2026-04-21T14:57:37+00:00"
+      "upstream_committed_at": "2026-05-13T15:44:52-04:00"
     },
     "content/handbook/company/offsite/_index.md": {
       "path": "content/handbook/company/offsite/_index.md",
@@ -15266,11 +15266,11 @@
     },
     "content/handbook/finance/expenses.md": {
       "path": "content/handbook/finance/expenses.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:39:44+09:00",
+      "upstream_sha": "b559d288e5c91c61e45871e6c59356f8cd555a59",
+      "translated_at": "2026-09-04T14:13:39+09:00",
       "model": "codex",
-      "input_hash": "18d5bde23f7edde1012f507eb8708b5c8197507c3c97198d572f16de2b8301cf",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "b2eb3c52a039aef9296a6105cdc2b9ecfe78b1790b7a34f01d8db7d6ed1f50e1",
+      "upstream_committed_at": "2026-08-31T10:10:52-07:00"
     },
     "content/handbook/finance/finance-team-performance-indicators.md": {
       "path": "content/handbook/finance/finance-team-performance-indicators.md",
@@ -19341,7 +19341,7 @@
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
       "translated_at": "2026-05-14T12:00:00Z",
       "model": "claude-opus-4-7",
-      "input_hash": "52154e587fb33c318027da4cc9d17386cbcabd7704258f44363cb865f0a18bfb",
+      "input_hash": "455984638570af6fb658a2ef1eefa07cb59072b51a0cfb1701ce0c422b244607",
       "upstream_committed_at": "2026-04-30T18:50:47+02:00"
     },
     "content/handbook/marketing/marketing-career-development/_index.md": {
@@ -31531,7 +31531,7 @@
     "content/handbook/people-group/engagement.md": {
       "path": "content/handbook/people-group/engagement.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "translated_at": "2026-05-13T22:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "670b0a2446908a62113b43ee6fd7589862a7063b2a60cbe211cb727db288cd98",
       "upstream_committed_at": "2026-03-04T12:15:15-08:00"
@@ -31763,7 +31763,7 @@
     "content/handbook/people-group/people-business-partners/_index.md": {
       "path": "content/handbook/people-group/people-business-partners/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
+      "translated_at": "2026-05-13T22:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "47314d178e124594b99b6956466d7a32e41be0ce1132928c0411b1b30a6ad005",
       "upstream_committed_at": "2026-03-31T15:00:01-04:00"

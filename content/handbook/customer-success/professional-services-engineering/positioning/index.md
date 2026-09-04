@@ -12,7 +12,7 @@ lastmod: "2025-04-04T10:27:20-04:00"
 
 ほとんどのプロフェッショナルサービスエンゲージメントは、[顧客ジャーニー](/handbook/customer-success/customer-success-vision/) のオンボーディング、実装、採用フェーズで発生します。
 
-![GitLab Customer Journey](/images/customer-success/customer-success-vision/customer-journey.png "GitLab Customer Journey")
+![GitLab カスタマージャーニー](/images/customer-success/customer-success-vision/customer-journey.png "GitLab カスタマージャーニー")
 
 オポチュニティが Closed/Won に近づき、これらのフェーズの計画が行われている際は、顧客の GitLab 利用への移行を加速して、[より速くバリューを実現](/handbook/customer-success/customer-success-vision/#time-to-value-kpis) できるようにするために、プロフェッショナルサービスを巻き込むことを検討するとよいでしょう。
 
@@ -20,7 +20,7 @@ lastmod: "2025-04-04T10:27:20-04:00"
 
 ## GitLab プロフェッショナルサービスの価値
 
-![Professional Services Value](/images/customer-success/professional-services-engineering/positioning/ps-value.png)
+![プロフェッショナルサービスの価値](/images/customer-success/professional-services-engineering/positioning/ps-value.png)
 
 <!-- ### Elevator Pitch
 
@@ -97,7 +97,7 @@ PS チームは、2019 年後半から 2020 年初頭にかけて、サービス
 
 サービスオファリングについて見込み客と話し合う際、プロフェッショナルサービスチームの役割を説明するためのいくつかのスライドがあると役立つことが多いです。SKU サービスのスライドが必要な場合は、下記のデッキから自由に引用してください。これがより大きなエンゲージメントだとお考えなら、[エンゲージメントマネージャー](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) にお問い合わせください
 
-[Professional Services Proposal Deck](https://docs.google.com/presentation/d/1M-7aA7f9S6dULvzuKuTJs4j3A4V1z2DtMsoN0T0SMZg/edit#slide=id.g277ce56021a_0_2036)
+[プロフェッショナルサービス提案資料](https://docs.google.com/presentation/d/1M-7aA7f9S6dULvzuKuTJs4j3A4V1z2DtMsoN0T0SMZg/edit#slide=id.g277ce56021a_0_2036)
 
 ### データシート
 

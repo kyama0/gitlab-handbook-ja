@@ -329,7 +329,7 @@ GitOps のロールアウトを支援するアドバイザリー/コンサルテ
 ### SFDC での Last interesting moment と最も閲覧されたコンテンツの確認方法 {#lim-anchor}
 
 - Last interesting moment は SFDC の Marketing info セクションにあります
-![Last Interesting Moment](/images/marketing/sales-plays/gitops/gitops-last-interesting-moment.png)
+![最後の重要なモーメント](/images/marketing/sales-plays/gitops/gitops-last-interesting-moment.png)
 
 - 時間で並べた最も消費されたコンテンツは SFDC の Pathfactory for sales セクションにあります
-![Top Content Consumed](/images/marketing/sales-plays/gitops/gitops-top-content-consumed.png)
+![最も多く閲覧されたコンテンツ](/images/marketing/sales-plays/gitops/gitops-top-content-consumed.png)

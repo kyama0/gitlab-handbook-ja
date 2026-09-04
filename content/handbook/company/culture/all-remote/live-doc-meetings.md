@@ -2,7 +2,7 @@
 title: "GitLab ミーティングのベストプラクティス：ライブドックミーティング"
 description: 効率的、透明、ドキュメントベースのミーティングを実現する GitLab のミーティングベストプラクティスの概要
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/company/culture/all-remote/live-doc-meetings/
@@ -13,14 +13,14 @@ stale: false
 lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
-![GitLab collaboration](/images/all-remote/gitlab-collaboration.jpg)
+![GitLab のコラボレーション](/images/all-remote/gitlab-collaboration.jpg)
 {style="width: 50%;"}
 
 このページでは、GitLab の実証済みの原則を活用して、効率的・透明性の高い・ドキュメントベースのミーティングを実現する方法を詳述しています。このスタイルのミーティングは、作業環境を問わず、結束力、規律、透明性を高めます。
 
 ## GitLab のミーティングベストプラクティス
 
-![GitLab all-remote mentor](/images/all-remote/ceo-shadow-gitlab-awesomeness.jpg)
+![GitLab のオールリモートメンター](/images/all-remote/ceo-shadow-gitlab-awesomeness.jpg)
 {style="width: 50%;"}
 
 「[アジェンダなし、出席なし](/handbook/communication/#external-communication)。」すべての業務関連ミーティングには、カレンダーの招待状に[ライブドックアジェンダ](https://docs.google.com/document/d/1eH-adpjfyo_RnlfbPvJ3i0e1Qb-aVoNc4yajnkZgJcU/edit#heading=h.6upuyp25d0wm)を添付する必要があります。GitLab がアジェンダドキュメントをどのように活用するかをよりよく理解するために、組織でコピーして使用できる[テンプレートの例](https://docs.google.com/document/d/1eH-adpjfyo_RnlfbPvJ3i0e1Qb-aVoNc4yajnkZgJcU/edit#heading=h.6upuyp25d0wm)があります。[コーヒーチャット](informal-communication/#coffee-chats)はインフォーマルコミュニケーションとしての機能から除外されています。
@@ -63,7 +63,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 ## Q: ライブドックミーティングのメリットとは？
 
-![GitLab collaboration illustration](/images/all-remote/gitlab-collaboration-illustration.jpg)
+![GitLab のコラボレーションのイラスト](/images/all-remote/gitlab-collaboration-illustration.jpg)
 {style="max-width: 50%"}
 
 チームメンバーが異なる場所にいる同僚や、ミーティングにライブで参加できない同僚と一緒に働いていることを認識しているという文化を確立することが重要です。ドキュメント作成は、チームの[機能不全](/handbook/values/#five-dysfunctions)を避けるための重要な部分です。

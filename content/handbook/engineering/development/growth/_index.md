@@ -15,12 +15,12 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 ```mermaid
 flowchart TD
-    ACQ["獲得\nサインアップ"]
-    ACT["活性化\nプロダクトから価値を得る"]
-    MON["マネタイズ\nプロダクトへの支払い"]
-    ENG["エンゲージメント\nプロダクトの継続使用"]
-    RET["維持\nプロダクトへの継続支払い"]
-    INV["招待速度\n他者をプロダクトに招待する"]
+    ACQ["Acquisition\nSignup"]
+    ACT["Activation\nGet value from the product"]
+    MON["Monetization\nPay for the product"]
+    ENG["Engagement\nContinue using the product"]
+    RET["Retention\nContinue paying for product"]
+    INV["Invite Velocity\nInvite others to the product"]
 
     ACQ --> ACT
     ACT --> MON

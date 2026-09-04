@@ -14,67 +14,67 @@ lastmod: "2026-08-27T23:30:57+02:00"
 *GitLab フィールドチームには、Enterprise Sales、Commercial Sales、Customer Success、Channel Partners、Alliances、Field Operations といった複数の機能が含まれます。*
 
 - このページは、私たちのホームベースとして機能します。ここから、私たちの部門のすべてのチームからの豊富なリソースを見つけることができます。
-- セールスチームと協力したいですか？[How We Work](/handbook/sales/#how-we-work) と [Communicating with the Team](/handbook/sales/#communicating-with-the-team) のセクションをご覧ください。
+- セールスチームと協力したいですか？[私たちの働き方](/handbook/sales/#how-we-work) と [チームとのコミュニケーション](/handbook/sales/#communicating-with-the-team) のセクションをご覧ください。
 - 私たちの目標についてもっと知りたいですか？[最新の Objectives and Key Results (OKRs)](https://gitlab.com/gitlab-com/gitlab-OKRs/-/issues/?sort=due_date&state=opened&label_name%5B%5D=Division%253A%253ASales) をチェックしてください。
 
 ## クイックリファレンスガイド
 
 | **どこから始めるか** | **フィールドイネーブルメントリソース** | **セールスプロセス & 標準業務手順** | **セールスミーティング & イベント** |
 | ------ | ------ | ------ | ------ |
-| [Sales & Customer Success Onboarding](/handbook/sales/onboarding/) | [Sales Training](/handbook/sales/training/) | [Sales Order Processing](/handbook/sales/field-operations/order-processing/) | [President's Club](/handbook/sales/club/) |
-| [Commercial Sales](/handbook/sales/commercial/)  |[Sales Enablement Sessions](/handbook/sales/training/sales-enablement-sessions/) | [Engage & Educate the Customer](/handbook/sales/sales-operating-procedures/engage-and-educate-the-customer/) |[Sales Kickoff](/handbook/sales/training/sko/) |
-| [Enterprise Sales](/handbook/sales/playbook/) |  [Command of the Message](/handbook/sales/command-of-the-message/)  |  [Facilitate The Opportunity](/handbook/sales/sales-operating-procedures/facilitate-the-opportunity/)  | [Sales Meetings](/handbook/sales/sales-meetings/) |
-| [Inside Sales](/handbook/sales/insidesales/) | [Most Commonly Used Sales Resources](https://gitlab.highspot.com/spots/615dd7e3911d70c4887812a7) | [Deal Closure](/handbook/sales/sales-operating-procedures/deal-closure/) |  |
-| [Channels](/handbook/resellers/)  | [Field Certification Program](/handbook/sales/training/field-certification/) | [Retain and Expand](/handbook/sales/sales-operating-procedures/retain-and-expand/) |  |
-| [Sales Territories](/handbook/sales/territories/)| [Sales Manager Best Practices](/handbook/sales/field-operations/field-enablement/sales-manager-best-practices/) | [Forecasting](https://internal.gitlab.com/handbook/sales/sales-forecasting/) |  |
-| [Sales Term Glossary](/handbook/sales/sales-term-glossary/) | [Field Flash Newsletter](/handbook/sales/field-communications/field-flash-newsletter/) | [Investor Sales Support](/handbook/sales/assistance-from-investors) |  |
-| [ACV Deep Dive](/handbook/sales/sales-term-glossary/arr-in-practice)  | [Field Team Recognition Programs](/handbook/sales/field-operations/field-enablement/field-team-recognition) | Customer Planning |  |
-| [ARR Deep Dive](/handbook/sales/sales-term-glossary/arr-in-practice)  | [Highspot - GitLab Sales Asset Management Tool](/handbook/sales/field-communications/gitlab-highspot) | [Rules of Engagement for Selling GitLab & Partner Professional Services](/handbook/sales/selling-professional-services) |  |
-| **Field Operations Teams and Resources** | **Customer Success Resources** | **Helpful Sales Handbook Tips** | **Sales Resources Outside of the Sales Handbook** |
+| [Sales & Customer Success オンボーディング](/handbook/sales/onboarding/) | [セールストレーニング](/handbook/sales/training/) | [セールス注文処理](/handbook/sales/field-operations/order-processing/) | [President's Club](/handbook/sales/club/) |
+| [Commercial Sales](/handbook/sales/commercial/)  |[セールスイネーブルメントセッション](/handbook/sales/training/sales-enablement-sessions/) | [顧客とのエンゲージと教育](/handbook/sales/sales-operating-procedures/engage-and-educate-the-customer/) |[セールスキックオフ](/handbook/sales/training/sko/) |
+| [Enterprise Sales](/handbook/sales/playbook/) |  [Command of the Message](/handbook/sales/command-of-the-message/)  |  [商談の推進](/handbook/sales/sales-operating-procedures/facilitate-the-opportunity/)  | [セールスミーティング](/handbook/sales/sales-meetings/) |
+| [Inside Sales](/handbook/sales/insidesales/) | [よく使われるセールスリソース](https://gitlab.highspot.com/spots/615dd7e3911d70c4887812a7) | [ディールクロージャー](/handbook/sales/sales-operating-procedures/deal-closure/) |  |
+| [Channels](/handbook/resellers/)  | [フィールド認定プログラム](/handbook/sales/training/field-certification/) | [維持と拡大](/handbook/sales/sales-operating-procedures/retain-and-expand/) |  |
+| [セールステリトリー](/handbook/sales/territories/)| [Sales Manager のベストプラクティス](/handbook/sales/field-operations/field-enablement/sales-manager-best-practices/) | [予測](https://internal.gitlab.com/handbook/sales/sales-forecasting/) |  |
+| [セールス用語集](/handbook/sales/sales-term-glossary/) | [Field Flash ニュースレター](/handbook/sales/field-communications/field-flash-newsletter/) | [投資家によるセールス支援](/handbook/sales/assistance-from-investors) |  |
+| [ACV 詳細解説](/handbook/sales/sales-term-glossary/arr-in-practice)  | [フィールドチーム表彰プログラム](/handbook/sales/field-operations/field-enablement/field-team-recognition) | 顧客計画 |  |
+| [ARR 詳細解説](/handbook/sales/sales-term-glossary/arr-in-practice)  | [Highspot - GitLab セールスアセット管理ツール](/handbook/sales/field-communications/gitlab-highspot) | [GitLab およびパートナーの Professional Services 販売に関するエンゲージメントルール](/handbook/sales/selling-professional-services) |  |
+| **Field Operations のチームとリソース** | **Customer Success のリソース** | **役立つセールスハンドブックのヒント** | **セールスハンドブック外のセールスリソース** |
 |  ------ | ------ | ------ | ------ |
-| [Field Operations](/handbook/sales/field-operations/) | [Customer Experience Teams](/handbook/customer-success/#customer-experience-teams) | [FAQ from Prospects](/handbook/sales/faq-from-prospects/) |[Resellers Handbook](/handbook/resellers/) |
-| [Sales Operations](/handbook/sales/field-operations/sales-operations/) | [How to Engage a Solutions Architect](/handbook/solutions-architects#when-and-how-to-engage-a-solutions-architect) | [Client Use Cases](/handbook/marketing/use-cases/) | [Customer Reference Sheet](https://docs.google.com/a/gitlab.com/spreadsheets/d/1Off9pVkc2krT90TyOEevmr4ZtTEmutMj8dLgCnIbhRs/edit?usp=sharing) |
+| [Field Operations](/handbook/sales/field-operations/) | [Customer Experience Teams](/handbook/customer-success/#customer-experience-teams) | [見込み客からの FAQ](/handbook/sales/faq-from-prospects/) |[リセラーハンドブック](/handbook/resellers/) |
+| [Sales Operations](/handbook/sales/field-operations/sales-operations/) | [Solutions Architect への依頼方法](/handbook/solutions-architects#when-and-how-to-engage-a-solutions-architect) | [クライアントのユースケース](/handbook/marketing/use-cases/) | [顧客リファレンスシート](https://docs.google.com/a/gitlab.com/spreadsheets/d/1Off9pVkc2krT90TyOEevmr4ZtTEmutMj8dLgCnIbhRs/edit?usp=sharing) |
 | [Revenue Analytics](/handbook/sales/revenue-analytics/) |  |  |  |
-| [Deal Desk](/handbook/sales/field-operations/sales-operations/deal-desk/) | [Account Planning Template for Large Accounts](https://docs.google.com/presentation/d/1yQ6W7I30I4gW5Vi-TURIz8ZxnmL88uksCl0u9oyRrew/edit?ts=58b89146#slide=id.g1c9fcf1d5b_0_24) | [Dealing with Security Questions From Prospects](/handbook/security/#security-questionnaires-for-customers) | [Customer Reference Case Study Dynamic Board](https://gitlab.com/gitlab-com/marketing/strategic-marketing/customer-reference-content/case-study-content/-/boards/1804878?scope=all&utf8=%E2%9C%93&) |
-| [Field Enablement](/handbook/sales/field-operations/field-enablement/) | [How to Engage a CSM/CSE](/handbook/customer-success/pre-sales-post-sales-transition/) | [How to conduct an executive meeting](https://www.youtube.com/watch?v=PSGMyoEFuMY&feature=youtu.be) | [GitLab Support Handbook](/handbook/support/) |
-| [Sales Strategy](/handbook/sales/field-operations/sales-strategy/) |  | [CEO Preferences when speaking w/ prospects/customers](/handbook/ceo/) | |
-| [Sales Systems](/handbook/sales/field-operations/sales-systems/) |  | [Best Practices for Building Value with Customers](/handbook/sales/build-value-with-customers) |  |
-| [Commissions](/handbook/sales/commissions/) |   | [Understanding How Our Customers Use GitLab](/handbook/sales/understand-customer-gitlab-use) |  |
-| [Customer Success Operations](/handbook/customer-success/) |  | [Prospect Engagement Best Practices](/handbook/sales/prospect-engagement-best-practices/)  |  |
-| [Account Ownership Rules of Engagement](/handbook/sales/field-operations/gtm-resources/rules-of-engagement/#account-ownership-rules-of-engagement) |  |  |  |
-| [Parent and Child Accounts](/handbook/sales/sales-term-glossary/#parent-and-child-accounts) |  |  |  |
-| [Opportunity Stages](/handbook/sales/field-operations/gtm-resources/#opportunity-stages) |  | [Growth Resources (Finding Seat Count)](/handbook/sales/field-operations/finding-seat-counts/) |  |
-| [Record Ownership](/handbook/sales/field-operations/gtm-resources/#record-ownership) |  |  |  |
-| [Routing Rules](/handbook/sales/field-operations/gtm-resources/#routing) |  |  |  |
-| [Forecasting Definitions and Processes](https://internal.gitlab.com/handbook/sales/sales-forecasting/) |  |  |  |
+| [Deal Desk](/handbook/sales/field-operations/sales-operations/deal-desk/) | [大口アカウント向けアカウント計画テンプレート](https://docs.google.com/presentation/d/1yQ6W7I30I4gW5Vi-TURIz8ZxnmL88uksCl0u9oyRrew/edit?ts=58b89146#slide=id.g1c9fcf1d5b_0_24) | [見込み客からのセキュリティ質問への対応](/handbook/security/#security-questionnaires-for-customers) | [顧客リファレンス事例動的ボード](https://gitlab.com/gitlab-com/marketing/strategic-marketing/customer-reference-content/case-study-content/-/boards/1804878?scope=all&utf8=%E2%9C%93&) |
+| [Field Enablement](/handbook/sales/field-operations/field-enablement/) | [CSM/CSE への依頼方法](/handbook/customer-success/pre-sales-post-sales-transition/) | [エグゼクティブミーティングの進め方](https://www.youtube.com/watch?v=PSGMyoEFuMY&feature=youtu.be) | [GitLab Support ハンドブック](/handbook/support/) |
+| [Sales Strategy](/handbook/sales/field-operations/sales-strategy/) |  | [見込み客／顧客と話す際の CEO の希望事項](/handbook/ceo/) | |
+| [Sales Systems](/handbook/sales/field-operations/sales-systems/) |  | [顧客との価値構築のベストプラクティス](/handbook/sales/build-value-with-customers) |  |
+| [Commissions](/handbook/sales/commissions/) |   | [顧客による GitLab 利用方法の理解](/handbook/sales/understand-customer-gitlab-use) |  |
+| [Customer Success Operations](/handbook/customer-success/) |  | [見込み客エンゲージメントのベストプラクティス](/handbook/sales/prospect-engagement-best-practices/)  |  |
+| [アカウント所有権のエンゲージメントルール](/handbook/sales/field-operations/gtm-resources/rules-of-engagement/#account-ownership-rules-of-engagement) |  |  |  |
+| [親アカウントと子アカウント](/handbook/sales/sales-term-glossary/#parent-and-child-accounts) |  |  |  |
+| [商談ステージ](/handbook/sales/field-operations/gtm-resources/#opportunity-stages) |  | [拡大リソース（シート数の確認）](/handbook/sales/field-operations/finding-seat-counts/) |  |
+| [レコード所有権](/handbook/sales/field-operations/gtm-resources/#record-ownership) |  |  |  |
+| [ルーティングルール](/handbook/sales/field-operations/gtm-resources/#routing) |  |  |  |
+| [予測の定義とプロセス](https://internal.gitlab.com/handbook/sales/sales-forecasting/) |  |  |  |
 | [Data Intelligence](/handbook/sales/field-operations/data-intelligence/) |  |  |  |
-| [Associating emails to Salesforce](/handbook/sales/prospect-engagement-best-practices/#associating-emails-to-opportunities) |  |  |  |
-| **Early to Mid-Stage** | **Late Stage** | **Post Sales Processes** | **Team Member & Manager Resources** |
+| [メールを Salesforce に関連付ける](/handbook/sales/prospect-engagement-best-practices/#associating-emails-to-opportunities) |  |  |  |
+| **初期〜中期ステージ** | **後期ステージ** | **セールス後のプロセス** | **チームメンバーとマネージャー向けリソース** |
 | ------ | ------ | ------ | ------ |
-| [Opportunity Types](/handbook/sales/field-operations/gtm-resources/#opportunity-types) | [Submitting an Opportunity for Approval](/handbook/sales/field-operations/order-processing/#what-happens-when-you-submit-an-opportunity-for-approval) | [How to Amend a Subscription Quote](/handbook/sales/field-operations/sales-operations/deal-desk/#amend-subscription-quote) | [Leadership Handbook](/handbook/leadership/) |
-| [Opportunity Naming Conventions](/handbook/sales/field-operations/gtm-resources/#opportunity-naming-convention)  | [How to Handle Vendor Setup Forms](/handbook/sales/field-operations/order-processing/#how-to-process-customer-requested-vendor-setup-forms) | [How to Renew a Subscription Quote](/handbook/sales/field-operations/sales-operations/deal-desk/#renew-subscription-quote) | [GitLab Values & Certification Process](/handbook/values/) |
-| [How to Create an Opportunity](/handbook/sales/field-operations/gtm-resources/#how-to-create-an-opportunity) |  | [True Ups](/handbook/sales/sales-term-glossary/#true-up) | [GitLab Competencies & Certification Process](/handbook/people-group/competencies/) |
-| [MEDDPPICC Qualification](/handbook/sales/meddppicc/) |  | [Contract Resets](/handbook/sales/field-operations/sales-operations/deal-desk/#contract-reset) | [GitLab Diversity, Inclusion & Belonging](/handbook/company/culture/inclusion/) |
-| [Sales Discovery & Qualification Questions](/handbook/sales/qualification-questions/) | [People Business Partner Alignment for Sales](/handbook/people-group/people-business-partners/#people-business-partner-alignments) | | |
-| [GitLab ROI calculator](/handbook/sales/command-of-the-message/metrics/#economic-metrics) |  |  | |
-| [Proof of Value](/handbook/solutions-architects/playbooks/pov/) |  |  | |
-| [Creating a Quote](/handbook/sales/field-operations/sales-operations/deal-desk/#zuora-quote-configuration-guide---standard-quotes) |  |  |  |
-| [Quote Approval Matrix](https://docs.google.com/document/d/1-CH-uH_zr0qaVaV1QbmVZ1rF669DsaUeq9w-q1QiKPE/edit?usp=sharing) |  |  |  |
-| [Delivering a Quote via DocuSign](/handbook/sales/field-operations/order-processing/#how-to-send-an-order-form-to-a-customer) |  |  |  |
-| **Marketing Resources** | **Strategic Marketing** | **Product Resources** |  |
+| [商談タイプ](/handbook/sales/field-operations/gtm-resources/#opportunity-types) | [承認を得るための商談提出](/handbook/sales/field-operations/order-processing/#what-happens-when-you-submit-an-opportunity-for-approval) | [サブスクリプション見積の修正方法](/handbook/sales/field-operations/sales-operations/deal-desk/#amend-subscription-quote) | [リーダーシップハンドブック](/handbook/leadership/) |
+| [商談の命名規則](/handbook/sales/field-operations/gtm-resources/#opportunity-naming-convention)  | [ベンダー設定フォームの処理方法](/handbook/sales/field-operations/order-processing/#how-to-process-customer-requested-vendor-setup-forms) | [サブスクリプション見積の更新方法](/handbook/sales/field-operations/sales-operations/deal-desk/#renew-subscription-quote) | [GitLab バリューと認定プロセス](/handbook/values/) |
+| [商談の作成方法](/handbook/sales/field-operations/gtm-resources/#how-to-create-an-opportunity) |  | [トゥルーアップ](/handbook/sales/sales-term-glossary/#true-up) | [GitLab コンピテンシーと認定プロセス](/handbook/people-group/competencies/) |
+| [MEDDPPICC による適格性評価](/handbook/sales/meddppicc/) |  | [契約リセット](/handbook/sales/field-operations/sales-operations/deal-desk/#contract-reset) | [GitLab の多様性、包摂性、帰属意識](/handbook/company/culture/inclusion/) |
+| [セールスディスカバリーと適格性評価の質問](/handbook/sales/qualification-questions/) | [セールス向け People Business Partner の連携](/handbook/people-group/people-business-partners/#people-business-partner-alignments) | | |
+| [GitLab ROI 計算ツール](/handbook/sales/command-of-the-message/metrics/#economic-metrics) |  |  | |
+| [価値実証](/handbook/solutions-architects/playbooks/pov/) |  |  | |
+| [見積の作成](/handbook/sales/field-operations/sales-operations/deal-desk/#zuora-quote-configuration-guide---standard-quotes) |  |  |  |
+| [見積承認マトリックス](https://docs.google.com/document/d/1-CH-uH_zr0qaVaV1QbmVZ1rF669DsaUeq9w-q1QiKPE/edit?usp=sharing) |  |  |  |
+| [DocuSign による見積送付](/handbook/sales/field-operations/order-processing/#how-to-send-an-order-form-to-a-customer) |  |  |  |
+| **Marketing のリソース** | **Strategic Marketing** | **Product のリソース** |  |
 | ------ | ------ | ------ | ------ |
-| [Marketing](/handbook/marketing/) | [Strategic Marketing Handbook](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | [Product Team Handbook](/handbook/product/) |  |
-| [Sales Development Handbook](/handbook/sales/sales-development/) | [Product Marketing Manager Assignments](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | [Engaging Product Management](/handbook/product/product-management/#how-to-engage-product-managers) |  |
-| [GitLab Value Proposition](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/messaging/#gitlab-value-proposition) | [Customer-Facing Presentations](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | [Asking Questions/Giving Feedback on a Feature](/handbook/product/categories/#devops-stages) | |
-| [Lead and Contact Statuses](/handbook/marketing/marketing-operations/#lead-and-contact-statuses) |[Print Collateral](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | [Product Categories](/handbook/product/categories/) |  |
-| [Inbound Lead Generation](/handbook/sales/sales-development/) | [Sales Collateral Google Drive](https://drive.google.com/open?id=0B-ytP5bMib9TaUZQeDRzcE9idVk) | [Features by Group](/handbook/product/categories/features/) |  |
-| **Finance Process** | **Business Operations Process** | **Legal Process** | |
+| [Marketing](/handbook/marketing/) | [Strategic Marketing ハンドブック](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | [Product チームハンドブック](/handbook/product/) |  |
+| [Sales Development ハンドブック](/handbook/sales/sales-development/) | [Product Marketing Manager の担当割り当て](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | [Product Management への依頼](/handbook/product/product-management/#how-to-engage-product-managers) |  |
+| [GitLab の価値提案](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/messaging/#gitlab-value-proposition) | [顧客向けプレゼンテーション](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | [機能に関する質問／フィードバック](/handbook/product/categories/#devops-stages) | |
+| [リードとコンタクトのステータス](/handbook/marketing/marketing-operations/#lead-and-contact-statuses) |[印刷コラテラル](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) | [製品カテゴリー](/handbook/product/categories/) |  |
+| [インバウンドリード生成](/handbook/sales/sales-development/) | [セールスコラテラル用 Google Drive](https://drive.google.com/open?id=0B-ytP5bMib9TaUZQeDRzcE9idVk) | [グループ別の機能](/handbook/product/categories/features/) |  |
+| **Finance のプロセス** | **Business Operations のプロセス** | **Legal のプロセス** | |
 | ------ | ------ | ------ | ------ |
-| [Deal Desk: Assistance with Quotes](/handbook/sales/field-operations/order-processing/#assistance-with-quotes) | [Business Operations Handbook](/handbook/business-technology/) | [Collaborating with Legal - Sales](/handbook/legal/customer-negotiations/) |  |
-| [Deal Desk: Approval Process](/handbook/sales/field-operations/order-processing/#deal-desk-approval-process) | [Data Team Handbook](/handbook/enterprise-data/) | [Legal Page](/handbook/legal/) |  |
-| [Sending a Quote to Zuora](/handbook/sales/field-operations/order-processing/#step-8--sending-the-quote-to-zuora) | [Data Quality Process](/handbook/enterprise-data/data-governance/data-quality/) | [Engaging Legal in Deals](/handbook/sales/field-operations/order-processing/#process-for-agreement-terms-negotiations-when-applicable) |  |
-| [How to Initiate a Refund](/handbook/finance/accounting/#7-invoice-cancellations-and-refunds) | [IT Ops Handbook](/handbook/eta/corporate-it/end-user-services/access-requests/) |  |  |
-|  | [Access Requests](https://gitlab.com/gitlab-com/team-member-epics/access-requests) |  |  |
+| [Deal Desk：見積に関する支援](/handbook/sales/field-operations/order-processing/#assistance-with-quotes) | [Business Operations ハンドブック](/handbook/business-technology/) | [Legal との連携 - セールス](/handbook/legal/customer-negotiations/) |  |
+| [Deal Desk：承認プロセス](/handbook/sales/field-operations/order-processing/#deal-desk-approval-process) | [Data チームハンドブック](/handbook/enterprise-data/) | [Legal ページ](/handbook/legal/) |  |
+| [Zuora への見積送付](/handbook/sales/field-operations/order-processing/#step-8--sending-the-quote-to-zuora) | [データ品質プロセス](/handbook/enterprise-data/data-governance/data-quality/) | [ディールでの Legal への依頼](/handbook/sales/field-operations/order-processing/#process-for-agreement-terms-negotiations-when-applicable) |  |
+| [返金の開始方法](/handbook/finance/accounting/#7-invoice-cancellations-and-refunds) | [IT Ops ハンドブック](/handbook/eta/corporate-it/end-user-services/access-requests/) |  |  |
+|  | [アクセスリクエスト](https://gitlab.com/gitlab-com/team-member-epics/access-requests) |  |  |
 
 ## 私たちは誰か
 
@@ -88,7 +88,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 - [VP, Alliances](/job-description-library/alliances/alliances-manager/)
 - [Chief of Staff, CRO](/job-description-library/sales/chief-of-staff-cro/)
 
-セールスチームは、Large、Mid-Market、SMB のセグメントに編成されています。（セールスセグメントの説明は [Field Operations Handbook - Segmentation セクション](/handbook/sales/field-operations/gtm-resources/#segmentation) にあります。）
+セールスチームは、Large、Mid-Market、SMB のセグメントに編成されています。（セールスセグメントの説明は [Field Operations ハンドブック - セグメンテーションセクション](/handbook/sales/field-operations/gtm-resources/#segmentation) にあります。）
 
 各セグメントで働く人々とそのクオータは以下のとおりです。
 
@@ -98,11 +98,11 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 ## 私たちの働き方
 
-GitLab セールスチームは、私たちの仕事のあらゆる側面で CREDIT バリューを体現しています。具体的には、私たちは常にオーバーパフォームし、強力な [results](/handbook/values/#results) を達成するために働いています。私たちはプロセスと運営において [efficiency](/handbook/values/#efficiency) を優先します。私たちは、[transparent](/handbook/values/#transparency) な、クロスファンクショナルな [collaboration](/handbook/values/#collaboration) によって成功します。私たちは [diversity](/handbook/values/#diversity-inclusion) を採用し、祝福することにコミットしており、すべての人にとって [inclusiveness and belonging](/handbook/values/#diversity-inclusion) の環境を作るよう努力しています。そして、私たちは常に改善できることを理解し、[イテレーション](/handbook/values/#iteration) の精神を受け入れます。
+GitLab セールスチームは、私たちの仕事のあらゆる側面で CREDIT バリューを体現しています。具体的には、私たちは常にオーバーパフォームし、強力な [成果](/handbook/values/#results) を達成するために働いています。私たちはプロセスと運営において [効率性](/handbook/values/#efficiency) を優先します。私たちは、[透明性](/handbook/values/#transparency)のあるクロスファンクショナルな [コラボレーション](/handbook/values/#collaboration) によって成功します。私たちは [多様性](/handbook/values/#diversity-inclusion) を採用し、祝福することにコミットしており、すべての人にとって [包摂性と帰属意識](/handbook/values/#diversity-inclusion) の環境を作るよう努力しています。そして、私たちは常に改善できることを理解し、[イテレーション](/handbook/values/#iteration) の精神を受け入れます。
 
 ### Sales Tech Stack
 
-GitLab の Tech Stack に関する情報については、Business Operations ハンドブックの [Tech Stack Applications page](/handbook/business-technology/tech-stack-applications/#tech-stack-applications) をご覧ください。ここでは、誰がどのツールにアクセスする必要があるか、質問の連絡先となる各ツールの指定オーナーのクイックリファレンステーブルを管理しています。Tech Stack を構成するツールの完全なリストを表示するには、[Tech Stack Details page](/handbook/business-technology/tech-stack/) をご覧ください。
+GitLab の Tech Stack に関する情報については、Business Operations ハンドブックの [Tech Stack アプリケーションページ](/handbook/business-technology/tech-stack-applications/#tech-stack-applications) をご覧ください。ここでは、誰がどのツールにアクセスする必要があるか、質問の連絡先となる各ツールの指定オーナーのクイックリファレンステーブルを管理しています。Tech Stack を構成するツールの完全なリストを表示するには、[Tech Stack 詳細ページ](/handbook/business-technology/tech-stack/) をご覧ください。
 
 ### チームとのコラボレーション
 
@@ -116,11 +116,11 @@ GitLab の Tech Stack に関する情報については、Business Operations �
 
 - セールスチームは、日常の業務で主に Slack を介してコミュニケーションを取ります。私たちのメインのチームチャンネルは、一般的なチャンネルである **#sales** と、公式のフィールドチームのアナウンスのための読み取り専用チャンネルである **#field-fyi** です。
   - 顧客のプライバシーが追加のセキュリティ対策を必要とする一部のセグメントでは、メールが使用されます。
-  - すべての Field Slack グループの詳細と Google グループの階層については、[Communicating with the Field Handbook ページ](/handbook/sales/sales-google-groups/) をご覧ください。
-- ディールデスクのリソースとの関わり方の概要については、[Sales Support and Sales Operation Handbook ページ](/handbook/sales/field-operations/sales-operations) を参照してください。
+  - すべての Field Slack グループの詳細と Google グループの階層については、[フィールドとのコミュニケーションに関するハンドブックページ](/handbook/sales/sales-google-groups/) をご覧ください。
+- ディールデスクのリソースとの関わり方の概要については、[Sales Support and Sales Operation ハンドブックページ](/handbook/sales/field-operations/sales-operations) を参照してください。
 - 法務チームからの支援が必要な Salesforce の特定のレコードで @contracts に Chatter してください。
 
-ディスカッションをみんながレビューして学べるようにするために、個人に直接連絡することは避けてください。チームに参加する際にはすべてのチームメンバーが [GitLab Communication Handbook ページ](/handbook/communication/) をレビューし、ここでの在職期間中に時々リフレッシュとして戻ることを強く推奨します。（GitLab でのコミュニケーションについて [認定](/handbook/communication/#communication-certification) を取得することもできます。）
+ディスカッションをみんながレビューして学べるようにするために、個人に直接連絡することは避けてください。チームに参加する際にはすべてのチームメンバーが [GitLab コミュニケーションハンドブックページ](/handbook/communication/) をレビューし、ここでの在職期間中に時々リフレッシュとして戻ることを強く推奨します。（GitLab でのコミュニケーションについて [認定](/handbook/communication/#communication-certification) を取得することもできます。）
 
 ### サポートチーム
 
@@ -163,20 +163,20 @@ Business Development Represenative (BDR) - アウトバウンドリードに焦�
 セールスサイクル中、セールスの範囲外の質問を持つ潜在的な顧客は、アカウントサイズに応じて異なる方法でクエリをエスカレートできます。
 
    1. Solutions Architect 専属の Strategic/Large アカウントの場合、リクエストをトリアージして開発できるよう [SA に関与](/handbook/solutions-architects/#when-and-how-to-engage-a-solutions-architect) してください。
-   1. 技術スタッフが 10 分未満で答えられると思う質問については、#questions Slack チャンネルを使用してください。詳細については、Support Handbook の [internal support](/handbook/support/internal-support/#should-i-contact-gitlab-support) セクションをご覧ください。
-   1. デフォルトでは、トライアルライセンスにはサポートは含まれていません。GitLab の評価にサポート専門知識または SLA パフォーマンスの評価が含まれるプロスペクトから連絡があった場合、セールスチームのメンバーとして、トライアルライセンスに一時的なサポートを付与できます。詳細については、[Internal Support Handbook](/handbook/support/internal-support/#trials-and-prospect-support) をご覧ください。
+   1. 技術スタッフが 10 分未満で答えられると思う質問については、#questions Slack チャンネルを使用してください。詳細については、Support Handbook の [内部サポート](/handbook/support/internal-support/#should-i-contact-gitlab-support) セクションをご覧ください。
+   1. デフォルトでは、トライアルライセンスにはサポートは含まれていません。GitLab の評価にサポート専門知識または SLA パフォーマンスの評価が含まれるプロスペクトから連絡があった場合、セールスチームのメンバーとして、トライアルライセンスに一時的なサポートを付与できます。詳細については、[内部サポートハンドブック](/handbook/support/internal-support/#trials-and-prospect-support) をご覧ください。
    1. 顧客が技術サポートを必要として連絡してきた場合は、すぐに Support Portal (https://support.gitlab.com/) を通じてチケットを開くよう案内してください。顧客の代わりにサポートチケットを開かないでください。詳細は [こちら](/handbook/support/internal-support/#requesting-support-for-customers) です。
-   1. Support チケットのエスカレーションについては、[I want to escalate a ticket](/handbook/support/internal-support/#i-want-to-escalate-a-ticket) セクションをご覧ください。
+   1. Support チケットのエスカレーションについては、[チケットをエスカレーションしたい](/handbook/support/internal-support/#i-want-to-escalate-a-ticket) セクションをご覧ください。
 
 #### Product
 
-私たちは Product チームと協力して、顧客のフィードバックとニーズに基づいて [GitLab Direction](https://about.gitlab.com/direction/) を推進します。
+私たちは Product チームと協力して、顧客のフィードバックとニーズに基づいて [GitLab の方向性](https://about.gitlab.com/direction/) を推進します。
 
 フィードバックを聞いたり、自分自身がフィードバックを持っている場合は、Issue が存在する場合はその Issue 内でコメントするか、私たちの [Issue トラッカー](https://gitlab.com/gitlab-org/gitlab/-/issues) で独自の Issue を作成することをお勧めします。
 
-機能に興味がある組織がいて、Issue でコメントし、Salesforce にアカウントへのリンクを追加した場合は、[Product Handbook で概説されているプロセス](/handbook/product/product-management/#examples-a-customer-has-a-feature-request) に従って、プロダクトマネージャーとアカウントとの通話を手配し、機能リクエストについてさらに議論してください。
+機能に興味がある組織がいて、Issue でコメントし、Salesforce にアカウントへのリンクを追加した場合は、[Product ハンドブックで概説されているプロセス](/handbook/product/product-management/#examples-a-customer-has-a-feature-request) に従って、プロダクトマネージャーとアカウントとの通話を手配し、機能リクエストについてさらに議論してください。
 
-クライアントが製品の特定の部分について質問または提案を持っている場合は、Product stages, groups, and categories ページの [DevOps Stages](/handbook/product/categories/#devops-stages) で、誰と話す必要があるかを Product チームの個人を確認してください。
+クライアントが製品の特定の部分について質問または提案を持っている場合は、Product stages, groups, and categories ページの [DevOps ステージ](/handbook/product/categories/#devops-stages) で、誰と話す必要があるかを Product チームの個人を確認してください。
 
 ### コロナウイルスのビジネスへの影響の追跡
 
@@ -184,7 +184,7 @@ Business Development Represenative (BDR) - アウトバウンドリードに焦�
 
 - [標準化された会話のガイダンス](https://docs.google.com/document/d/1NLHsJ72lTG7o93UnmSHIWF-ifW0202NPiBRJPWacTJc/edit?usp=sharing) にこれを使用してください
 - [プロスペクトと顧客からの個人的なフィードバックを取得](https://docs.google.com/document/d/1lFnM1SlVtOjy0IsUmGT5rjwpLdgt4TIlxg154czX1p4/edit) するためにこれを使用してください
-- SFDC Opportunity フィールド `[CP]` Close Plan に文字列 `#covid` を追加して、この会話をプロスペクト/顧客と行ったことを示し、このレポートを使用して Opportunity が正しくタグ付けされていることを確認してください: [COVID Mentions in CP Close Plan](https://gitlab.my.salesforce.com/00O4M000004e58i)
+- SFDC Opportunity フィールド `[CP]` Close Plan に文字列 `#covid` を追加して、この会話をプロスペクト/顧客と行ったことを示し、このレポートを使用して Opportunity が正しくタグ付けされていることを確認してください: [CP Close Plan での COVID への言及](https://gitlab.my.salesforce.com/00O4M000004e58i)
 - 「COVID-19 Risk Scale」フィールドを使用して、以下の定義で各 SFDC Deal を評価してフラグを立てます。
 
 1. 空白: 会話やインサイトはまだ集められていない
@@ -203,4 +203,4 @@ GitLab の輸出管理分類（または ECCN）は 5D992.c です。この分�
 
 ## パフォーマンス指標
 
-[セールス KPI](https://internal.gitlab.com/handbook/company/performance-indicators/sales/#kpi-summary) は [非公開](/handbook/communication/confidentiality-levels/#not-public) であり、[Internal handbook](/handbook/about/handbook-usage/#the-internal-handbook) で文書化されています。
+[セールス KPI](https://internal.gitlab.com/handbook/company/performance-indicators/sales/#kpi-summary) は [非公開](/handbook/communication/confidentiality-levels/#not-public) であり、[社内ハンドブック](/handbook/about/handbook-usage/#the-internal-handbook) で文書化されています。

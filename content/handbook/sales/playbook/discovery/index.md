@@ -13,7 +13,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 効果的なディスカバリーは、顧客のニーズを徹底的に理解するために重要であり、GitLab の価値と差別化を魅力的で顧客中心の方法で効果的に明確化できる基盤を確立します。効果的なディスカバリーは、顧客の最大の課題に結び付き、より上位のビジネスステークホルダーへのアクセスを獲得し、顧客の信頼されるアドバイザーとして機能するのに役立ちます。これは、健全で予測可能なパイプラインを構築・維持し、顧客がビジネス目標を達成するのを支援しながら、セールス目標を達成・超過するのに役立ちます。以下の情報をレビューした後、GitLab フィールドチームメンバーは GitLab Learn のインタラクティブな [Effective Discovery コース](https://gitlab.edcast.com/insights/ECL-c0a6e34d-a997-4200-b0d9-65e3305e3761) を受講することが推奨されます。
 
-![discovery-components-visual](/images/sales/playbook/discovery/discovery-components-visual.png)
+![ディスカバリーの構成要素](/images/sales/playbook/discovery/discovery-components-visual.png)
 
 ## 資格認定
 

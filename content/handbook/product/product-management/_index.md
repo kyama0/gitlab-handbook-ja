@@ -82,7 +82,7 @@ The following ~customer is interested in this capability
 
 - Subscription: ~"GitLab Ultimate" OR ~"GitLab Premium" OR ~"GitLab Free"
 - Product: ~"self-managed" OR ~"gitlab.com" OR ~"GitLab Dedicated"
-- Link to request: 
+- Link to request:
 - Customer Priority: [low/medium/high]
 - Use case: [why interested, problem to solve, current workaround, impact]
 - PM to mention: @

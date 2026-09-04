@@ -48,7 +48,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 
 **各ステップの開始時と終了時に UX リサーチャーと相談することを強く推奨します。** これにより、活動を開始する際の成功に役立ち、データをレビューするための別の目を提供してもらえます。
 
-![Persona Creation Steps](/images/product/ux/persona-creation/persona-creation-steps.png)
+![ペルソナ作成手順](/images/product/ux/persona-creation/persona-creation-steps.png)
 
 ### ステップ 1: ステークホルダーとのミーティング {#step-1-meet-with-stakeholders}
 
@@ -167,7 +167,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 1. ステークホルダーは、対象のペルソナに関するすべての既知の情報を収集する必要があります。たとえば、これには顧客とのインタビューや、特定のペルソナに関する以前にリサーチされた JTBD ステートメントが含まれます。
 1. ペルソナに関するすべての既存データをマッピングして、ステークホルダーが一度にすべての情報を視覚化できるようにする必要があります。ペルソナ間の重複の量を評価する 1 つの方法は、[ベン図](https://www.lucidchart.com/pages/tutorial/venn-diagram)です。
 
-![PersonaVennDiagram](/images/product/ux/persona-creation/PersonaVennDiagram.png)
+![ペルソナのベン図](/images/product/ux/persona-creation/PersonaVennDiagram.png)
 
 1. ベン図を作成する際に従うべき一般的なガイドラインがいくつかあります:
     1. 対象のペルソナ間で類似する箇条書きの数（つまり、jobs to be done、動機、フラストレーションの合計数）が、異なる箇条書きの数**より多い**場合、ペルソナを統合できます。

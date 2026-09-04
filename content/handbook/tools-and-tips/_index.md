@@ -525,7 +525,7 @@ GA に関する詳細情報は、[Google Analytics ハンドブック](/handbook
 
 世界の他の場所のチームメイトとイベントをスケジュールするときは、特に Google Calendar の Find a Time タブを活用してください:
 
-![Google Calendar - Find a Time](/images/tools-and-tips/google-calendar-find-a-time.png)
+![Google Calendar - 時間を探す](/images/tools-and-tips/google-calendar-find-a-time.png)
 
 Find a Time は、必要に応じてタイムゾーンを調整して、すべての参加者の新しいまたは既存のイベントの時間を提示します。
 Find a Time を使用するには:

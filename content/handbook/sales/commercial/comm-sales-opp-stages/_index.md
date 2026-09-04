@@ -21,7 +21,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 [終了基準の一覧:](https://docs.google.com/presentation/d/1x6ycY7SdPET5ioD2bPyV6RURafdU_fn4P7vD6X0QRsM/edit#slide=id.p)
 
-![comm-sales-stages-exit-criteria](/images/sales/commercial/comm-sales-opp-stages/comm-sales-stages-exit-criteria.png)
+![Commercial Sales ステージの終了基準](/images/sales/commercial/comm-sales-opp-stages/comm-sales-stages-exit-criteria.png)
 
 ---
 

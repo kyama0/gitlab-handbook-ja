@@ -2,7 +2,7 @@
 title: "GitLab が 100% リモートの従業員を表すために「オールリモート」という用語を使用する理由"
 description: リモートワークの用語
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/terminology/"
@@ -13,7 +13,7 @@ stale: false
 lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
-![GitLab all-remote team](/images/all-remote/gitlab-com-all-remote-1280x270.png)
+![GitLab のオールリモートチーム](/images/all-remote/gitlab-com-all-remote-1280x270.png)
 {style="max-width: 50%;"}
 
 GitLab は世界最大のオールリモート企業です。私たちは 100% リモートであり、地球上の*どこにも*会社所有のオフィスはありません。私たちには 65 カ国以上に {{< team-size >}} 人のチームメンバーがいます。このページでは、この構造を**オールリモート**と呼ぶ理由と、他の用語よりもこの用語を好む理由を詳述します。
@@ -90,7 +90,7 @@ GitLab は世界最大のオールリモート企業です。私たちは 100% �
 
 ## 対面での配慮
 
-![GitLab in-person interactions at Commit SF 2020](/images/all-remote/gitlab-commit-sf-2020-in-person.jpg)
+![Commit SF 2020 で対面交流する GitLab チームメンバー](/images/all-remote/gitlab-commit-sf-2020-in-person.jpg)
 {style="max-width: 50%;"}
 
 GitLab は、[対面での交流](/handbook/company/culture/all-remote/)が価値があると考えています。私たちは 9 〜 12 ヶ月ごとにチーム全体が共有体験のために集まることを意図的に行い（[GitLab Contribute](/handbook/company/culture/summit/)）、チームメンバーが[補助された休日の集まり](https://internal.gitlab.com/handbook/finance/expenses/#team-building)、[GitLab Commit](https://about.gitlab.com/events/)イベント、カンファレンスや展示会などの機会に対面で集まることを奨励しています。
@@ -101,7 +101,7 @@ GitLab はまた、[四半期ごとの 4 日間のオフサイト](/handbook/com
 
 ## 「オールリモート」という用語はなぜ重要なのですか？
 
-![GitLab all-remote workspace](/images/all-remote/gitlab-all-remote-laptop-map-illustration.jpg)
+![GitLab のオールリモートワークスペース](/images/all-remote/gitlab-all-remote-laptop-map-illustration.jpg)
 {style="max-width: 50%;"}
 
 私たちは、仕事の未来を詳述する際に用語が重要だと感じています。これを単なる意味論として片付けることで、各人が用語を異なって解釈できるようになります。これは問題のある混同につながる可能性があります。オールリモートが何であるか、そしてリモートワークに関連する他の用語とどのように異なるかの共通理解は、生産的な会話にとって不可欠です。
@@ -147,7 +147,7 @@ GitLab はまた、[四半期ごとの 4 日間のオフサイト](/handbook/com
 追加のコンテキストとして、GitLab の[リモートワークのさまざまなステージのガイド](stages/)と、[ハイブリッドリモート](/handbook/company/culture/all-remote/)の包括的なルックをお読みください。
 
 
-{{% include "includes/is_this_advice_any_good_remote.md" %}}
+<!-- include omitted: includes/is_this_advice_any_good_remote.md (no localized version under content/ja/) -->
 
 
 ## 学んだことを共有する

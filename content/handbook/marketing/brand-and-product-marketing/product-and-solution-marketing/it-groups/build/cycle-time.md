@@ -79,8 +79,8 @@ lastmod: "2025-01-11T23:51:39+00:00"
    1. その他の資料？
       1. https://about.gitlab.com/why-gitlab/
       1. ホワイトペーパー: SCALED CONTINUOUS INTEGRATION & DELIVERY https://page.gitlab.com/rs/194-VVC-221/images/gitlab-scaled-ci-cd-whitepaper.pdf
-      1. GitLab and Agile Project Management
+      1. GitLab とアジャイルプロジェクト管理
       1. https://about.gitlab.com/topics/devops/reduce-devops-costs/
-      1. What is DevOps
-      1. Starting and Scaling DevOps https://about.gitlab.com/enterprise/
+      1. DevOps とは
+      1. DevOps の導入とスケーリング https://about.gitlab.com/enterprise/
       1. ホワイトペーパー: Plan ステージについて（現在デザイン中で、できるだけ早く公開予定）

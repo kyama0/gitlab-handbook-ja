@@ -2,7 +2,7 @@
 title: "リモートワーク環境におけるバーンアウト・孤立・不安との闘い方"
 description: リモートワーク環境におけるバーンアウト・孤立・不安との闘い方
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/company/culture/all-remote/mental-health/
@@ -52,7 +52,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 ### 休息と休暇は生産的
 
-![GitLab collaboration illustration](/images/all-remote/gitlab-collaboration-illustration.jpg)
+![GitLab のコラボレーションのイラスト](/images/all-remote/gitlab-collaboration-illustration.jpg)
 {style="max-width: 50%;"}
 
 従来の知恵に反するように聞こえますが、仕事から離れることで明晰さが得られます。人間が生存するために呼吸を吸い込み、吐き出さなければならないように、より多くの仕事だけを吸い込んでいれば健康で生産的であり続けることは期待できません。
@@ -151,7 +151,7 @@ GitLab は 2021 年 5 月に John Fitch を 2 回のライブスピーカーシ�
 
 ### 精神的健康に関するプロセスをドキュメント化する
 
-![GitLab commit illustration](/images/all-remote/gitlab-commit-illustration.jpg)
+![GitLab のコミットのイラスト](/images/all-remote/gitlab-commit-illustration.jpg)
 {style="max-width: 50%;"}
 
 バーンアウト、孤立、不安は、組織構造に関わらず、すべての企業のチームメンバーに影響する問題です。常に絡み合っているわけではありませんが、それらの間には大きな相互作用があります。
@@ -196,7 +196,7 @@ GitLab は、同じ場所にいる人々も複数のタイムゾーンにまた�
 
 ### 非判断的な文化を作る
 
-![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
+![GitLab のバリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
 
 [透明性](/handbook/values/#transparency)は GitLab のコアバリューであり、リモートチームメンバーを雇用するすべての組織の価値観であるべきです。リーダーは、一部のチームメンバーが職場での孤立、バーンアウト、不安に関わる問題を表面に出すことに不快感を感じると想定すべきです。これは、そのような問題を明るみに出すことが悪影響につながる可能性があった以前の経験から生じる場合があります。
@@ -217,7 +217,7 @@ GitLab はまた、精神的健康に関連するトピックを表面化し議�
 
 ## より少なく働く方法についてワークショップを行う
 
-![GitLab code illustration](/images/all-remote/gitlab-code-review.jpg)
+![GitLab のコードレビューのイラスト](/images/all-remote/gitlab-code-review.jpg)
 {style="max-width: 50%;"}
 
 [効率性](/handbook/values/#efficiency)を疑問視することにスティグマはあってはなりません。1 年前に最も効率的だったことが今日も当てはまるとは限りません。チームが過労していて、近くにいる人々に過労のサイクルを作っていると感じる場合、より*少なく*働く方法についてワークショップを行うことを検討してください。

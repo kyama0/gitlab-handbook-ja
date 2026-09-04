@@ -2,7 +2,7 @@
 title: "持続可能なリモートワーク文化の構築と強化"
 description: "この完全ガイドでは、従業員と会社の双方にとって強固なリモートワーク文化と価値観を構築する方法を学べます。詳しくはこちら！"
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/building-culture/"
@@ -277,7 +277,7 @@ Veamly の創設者兼 CEO である Emna G. が、リモート文化を構築�
 これが実行可能でなく、会社が[リモートのスペクトラム](stages/)の別の場所で運営している場合は、会社の文化がリモートファーストのビジネス方法を強化することを確認してください。廊下の会話をハンドブックや Slack チャンネルに書き起こすには協調的な努力が必要ですが、各従業員がリモート従業員として見られることを確保することが、情報への平等なアクセスを確保する唯一の方法です。
 
 
-{{% include "includes/is_this_advice_any_good_remote.md" %}}
+<!-- include omitted: includes/is_this_advice_any_good_remote.md (no localized version under content/ja/) -->
 
 
 ## 教訓を共有する

@@ -2,7 +2,7 @@
 title: "リモートの仕事を始めるための完全ガイド"
 description: "このガイドでは、リモートワーカーとして新しい役割を始める際に期待できること、成功と幸福のために考慮すべきことの完全な概要を提供します。詳しくはこちら！"
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/getting-started/"
@@ -214,7 +214,7 @@ GitLab チームメンバーは、`#mental_health_aware` Slack チャンネル�
 {style="max-width: 50%;"}
 
 
-{{% alert title="Spreading aloha on a GitLab company call" color="success" %}}
+{{% alert title="GitLab の全社会議で aloha を広める" color="success" %}}
 **GitLab 会社通話でアロハを広める**
 {{% /alert %}}
 
@@ -266,7 +266,7 @@ GitLab チームメンバーは、`#mental_health_aware` Slack チャンネル�
 リモートで働くことには、単に通勤をなくすこと以上のメリットがあります。このパラダイムが新しい人は、チームの仲間やリモート中心のフォーラムの両方で探索し、実験し、学ぶ許可を自分自身に与えるべきです。
 
 
-{{% include "includes/coursera_gitlab_remote_course.md" %}}
+<!-- include omitted: includes/coursera_gitlab_remote_course.md (no localized version under content/ja/) -->
 
 
 ## リモートワークの最良のリソースは何か？
@@ -276,7 +276,7 @@ GitLab チームメンバーは、`#mental_health_aware` Slack チャンネル�
 [GitLab のリモートワークガイドのライブラリ](guide/)も素晴らしいリソースです。
 
 
-{{% include "includes/is_this_advice_any_good_remote.md" %}}
+<!-- include omitted: includes/is_this_advice_any_good_remote.md (no localized version under content/ja/) -->
 
 
 ## 教訓を共有する
