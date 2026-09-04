@@ -5,11 +5,11 @@ title: 'Cells: Topology Service'
 status: accepted
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/topology_service/
-upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
+translated_at: "2026-09-04T15:26:53+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-24T12:53:30-05:00"
+lastmod: "2026-09-04T14:27:38+12:00"
 ---
 
 このドキュメントでは、Cells が使用する Topology Service の設計目標とアーキテクチャを説明します。
@@ -323,8 +323,8 @@ skip_range_validation = true # For short lived cells, min 100 billion IDs valida
 
 NOTE:
 
-- 上記の決定は [Cells 1.5](iterations/cells-1.5.md) までサポートしますが、[Cells 2.0](iterations/cells-2.0.md) はサポートしません。
-  - Cells 2.0 をサポートするため（つまり Organization をレガシー Cell から Cells に移動できるようにする）、レガシー Cell のすべての整数 ID を `bigint` に変換する必要があります。
+- 上記の決定は Protocells の初期ロールアウトをサポートしますが、Organization を Cells からレガシー Cell に戻すことはサポートしません。
+  - これをサポートするため（つまり Organization を Cells からレガシー Cell に移動できるようにする）、レガシー Cell のすべての整数 ID を `bigint` に変換する必要があります。
   この取り組みはエピック [すべての整数 ID をプライマリ Cell の bigint に変換する (#15591)](https://gitlab.com/groups/gitlab-org/-/epics/15591) で追跡されています。
 
 この決定と評価された他のソリューションの詳細は[こちら](decisions/008_database_sequences.md)に記載されています。
@@ -993,7 +993,6 @@ Cloud Spanner はマルチバージョン同時実行制御（MVCC）を使用�
 
 ## リンク
 
-- [Cells 1.0](iterations/cells-1.0.md)
 - [ルーティングサービス](http_routing_service.md)
 
 ### Topology Service の議論

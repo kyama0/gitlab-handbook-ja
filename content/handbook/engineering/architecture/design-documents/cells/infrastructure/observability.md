@@ -9,11 +9,11 @@ owning-stage: "~devops::platforms"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/infrastructure/observability/
-upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
-translated_at: "2026-04-26T10:00:00Z"
+upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
+translated_at: "2026-09-04T15:19:25+09:00"
 translator: claude
 stale: false
-lastmod: "2025-04-28T10:53:04-07:00"
+lastmod: "2026-09-04T14:27:38+12:00"
 ---
 
 
@@ -26,7 +26,7 @@ lastmod: "2025-04-28T10:53:04-07:00"
 
 デプロイする監視ツールはすべての Cell で一貫している必要があり、加えた変更はサイズや数に関わらずすべての Cell に適用できる必要があります。
 
-このドキュメントでは、そのようなシステムの要件について説明します。[Cells 1.0](../iterations/cells-1.0.md) イテレーションを対象としています。
+このドキュメントでは、そのようなシステムの要件について説明します。旧 Cells 1.0 イテレーションを対象としています。
 
 ## 動機
 

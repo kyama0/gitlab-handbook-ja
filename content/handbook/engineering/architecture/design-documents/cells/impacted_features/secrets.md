@@ -4,11 +4,11 @@ group: Tenant Scale
 title: 'Cells: シークレットと認証情報'
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/impacted_features/secrets/
-upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
+translated_at: "2026-09-04T15:19:25+09:00"
 translator: claude
 stale: false
-lastmod: "2024-09-19T10:00:54+00:00"
+lastmod: "2026-09-04T14:27:38+12:00"
 ---
 
 
@@ -42,7 +42,7 @@ GitLab には設定が必要な[シークレット](https://docs.gitlab.com/char
 ## 3. 提案
 
 1. `secret_key_base` は https://guides.rubyonrails.org/security.html#session-storage に基づいて、暗号化 Cookie、署名付き Cookie、および Active Storage ファイルに使用されます。
-   私たちは Active Storage を使用していないため（私の知る限り）、影響を受けるのは Cookie のみです。Cells 1.0 ではユーザーが単一の Cell に紐付けられ、[セッション Cookie の名前に Cell ID が含まれる](../iterations/cells-1.0.md#proposal)ため、Cell ごとに一意の `secret_key_base` を持つことは問題ありません。
+   私たちは Active Storage を使用していないため（私の知る限り）、影響を受けるのは Cookie のみです。Cells 1.0 ではユーザーが単一の Cell に紐付けられ、[セッション Cookie の名前に Cell ID が含まれる](../http_routing_service.md#cell-infrastructure-routing)ため、Cell ごとに一意の `secret_key_base` を持つことは問題ありません。
    調査 Issue: [`secret_key_base`](https://gitlab.com/gitlab-org/gitlab/-/issues/451146)。
 1. `db_key_base` はデータベースの保存時暗号化に使用され、Cell 間でデータを容易に移動できるよう、すべての Cell で一貫している必要があります。
    調査 Issue: [`db_key_base`](https://gitlab.com/gitlab-org/gitlab/-/issues/451148)。
