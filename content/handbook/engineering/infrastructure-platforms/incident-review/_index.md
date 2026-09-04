@@ -22,7 +22,7 @@ GitLab では、責任を追及しないインシデントレビューの実践�
 
 ## テンプレート {#template}
 
-- [Review Initiator](#review-initiator)（ほとんどの場合はインシデントリード）は、インシデントの Slack チャンネルまたはインシデント Issue ダッシュボードで割り当てられたインシデント後タスクに従って、[GitLab.com Production Tracker](https://gitlab.com/gitlab-com/gl-infra/production/-/issues/new) または [Dedicated Issue トラッカー](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/work_items/new?description_template=internal_incident_review)でインシデントレビュー Issue を作成します。
+- [Review Initiator](#review-initiator)（ほとんどの場合は Incident Lead）は、インシデントの Slack チャンネルまたはインシデント Issue ダッシュボードで割り当てられたインシデント後タスクに従って、[GitLab.com Production Tracker](https://gitlab.com/gitlab-com/gl-infra/production/-/issues/new) または [Dedicated Issue トラッカー](https://gitlab.com/gitlab-com/gl-infra/gitlab-dedicated/team/-/work_items/new?description_template=internal_incident_review)でインシデントレビュー Issue を作成します。
 - インシデントレビューのテンプレートは、https://app.incident.io/gitlab/settings/post-mortem で編集できます。
 
 ## ロール {#roles}
@@ -31,7 +31,7 @@ GitLab では、責任を追及しないインシデントレビューの実践�
 
 ### Review Initiator {#review-initiator}
 
-Review Initiator は、ほとんどの場合、インシデントリードです。すべての `Severity::1` および `Severity::2` のインシデントでは、インシデントリードがインシデント後タスクの一環としてレビュー Issue を作成する責任を負います。その他のすべてのインシデントでは、誰でもインシデント Issue に `Review-Requested` ラベルを適用し、自分でレビュー Issue を作成して、レビューを依頼できます。
+Review Initiator は、ほとんどの場合、Incident Lead です。すべての `Severity::1` および `Severity::2` のインシデントでは、Incident Lead がインシデント後タスクの一環としてレビュー Issue を作成する責任を負います。その他のすべてのインシデントでは、誰でもインシデント Issue に `Review-Requested` ラベルを適用し、自分でレビュー Issue を作成して、レビューを依頼できます。
 
 Review Initiator は、適切なテンプレートを使用してレビュー Issue を作成し、初期メタデータを追加する責任を負います。これには以下が含まれます。
 
