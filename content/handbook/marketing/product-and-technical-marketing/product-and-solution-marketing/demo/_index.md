@@ -3,7 +3,7 @@ title: "DEPRECATED-デモ"
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/
 upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
 translated_at: "2026-09-04T16:06:09+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-08-28T11:50:58+02:00"
 ---

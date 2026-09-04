@@ -3,7 +3,7 @@ title: "ユースケース: アーティファクト管理"
 upstream_path: "/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/package/"
 upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
 translated_at: "2026-09-04T16:19:34+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"
 ---

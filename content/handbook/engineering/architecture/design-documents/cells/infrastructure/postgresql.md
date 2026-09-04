@@ -248,7 +248,7 @@ Cells 1.5 の目標は、SaaS の GitLab.com サービスを利用する既存�
 
 - 書き込みと読み取り専用ワークロードの両方に対して接続プーリングソリューションを検証する:
   - VM 上の PgBouncer
-  - [CloudSQL データベース接続管理] (https://cloud.google.com/sql/docs/postgres/manage-connections) / [Managed Connection Pooling (MCP)](https://www.youtube.com/watch?v=rGI3hIBl2s0)。セルフマネージドの PgBouncer と比較して機能が制限されています。
+  - [CloudSQL データベース接続管理](https://cloud.google.com/sql/docs/postgres/manage-connections) / [Managed Connection Pooling (MCP)](https://www.youtube.com/watch?v=rGI3hIBl2s0)。セルフマネージドの PgBouncer と比較して機能が制限されています。
 - [CloudSQL Proxy](https://cloud.google.com/sql/docs/postgres/sql-proxy) を評価する
 - データベース移行オプションを比較する:
   - ネイティブ論理レプリケーション - [論理レプリケーション機能](https://cloud.google.com/sql/docs/postgres/replication/configure-external-replica)（[pglogical](https://github.com/2ndQuadrant/pglogical)）

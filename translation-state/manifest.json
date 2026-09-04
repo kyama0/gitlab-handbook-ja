@@ -17136,14 +17136,6 @@
       "input_hash": "7d8668f2a49afd44d5f6e51d45f1d7e431f80b5bf2cc6403a8528c46d034a2ea",
       "upstream_committed_at": "2026-07-28T15:04:15+01:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/_index.md",
-      "upstream_sha": "9bcc3fa641f3c78cb94b2ff71f5a8170ff5b412b",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b45d4ccff42e845f3039637b294f53520b65db2ddfd583792e2d3d7a1f5ebecf",
-      "upstream_committed_at": "2025-11-30T10:21:56-08:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/_index.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/_index.md",
       "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
@@ -17184,30 +17176,6 @@
       "input_hash": "2a1d7f1a87c05040a3eca4f43da29ffca6666ff6d9e40b67ca2582b145aacf20",
       "upstream_committed_at": "2024-09-27T18:30:37+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/asset_inventory.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/asset_inventory.md",
-      "upstream_sha": "9bcc3fa641f3c78cb94b2ff71f5a8170ff5b412b",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9c62a5dc67325643ff21fbe8c43ae0a6d9609f6b5edb320bf01f1f4969a1a6f8",
-      "upstream_committed_at": "2026-04-27T16:37:34+01:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/competitive-intelligence/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/competitive-intelligence/_index.md",
-      "upstream_sha": "9bcc3fa641f3c78cb94b2ff71f5a8170ff5b412b",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "11e23e3e241c3da0b508d47d687508978d8ab700e9e633b1b8159825693b846c",
-      "upstream_committed_at": "2026-01-14T07:59:50-06:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/competitive-intelligence/application-security.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/competitive-intelligence/application-security.md",
-      "upstream_sha": "c26b483f365d397f86ef45e60a892d0783588ac1",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "d804edbc8f8f5894ddab2f09c7a73d1ae4f2c80243965b9a21b903b01c93bb8a",
-      "upstream_committed_at": "2024-10-29T23:31:43+00:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/competitive-intelligence/cicd.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/competitive-intelligence/cicd.md",
       "upstream_sha": "c26b483f365d397f86ef45e60a892d0783588ac1",
@@ -17224,14 +17192,6 @@
       "input_hash": "f51bcab2c75b33a9b85379aa8016371c9265c18794a8c1f95f7df20b445b7a4a",
       "upstream_committed_at": "2025-11-30T11:31:48-08:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/core-product-marketing/onboarding.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/core-product-marketing/onboarding.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T06:31:06+09:00",
-      "model": "codex",
-      "input_hash": "1aa6590d40b55cb9005b88270eaed1874c28367486d53efdffc1855a43a88157",
-      "upstream_committed_at": "2026-08-14T11:43:03-05:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/_index.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/_index.md",
       "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
@@ -17239,22 +17199,6 @@
       "model": "codex",
       "input_hash": "7fc1398b8fd330a89f1b86e5c532265ba5f3baaa18e01776cc15609b849e4058",
       "upstream_committed_at": "2026-08-14T18:11:36+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/_index.md",
-      "upstream_sha": "c26b483f365d397f86ef45e60a892d0783588ac1",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "cf85314f0ef669ed920389f9fb5a05cbd5c852d467fc7183a7a28065cfcd3dbc",
-      "upstream_committed_at": "2025-01-07T16:47:36-08:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/acs-setup.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/acs-setup.md",
-      "upstream_sha": "c26b483f365d397f86ef45e60a892d0783588ac1",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a734c6fee5957fa591be84b50cd247d99b64d9eeb1cd998bf8dfc0db2f9972ba",
-      "upstream_committed_at": "2025-01-04T01:51:25+00:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/cicd-deep.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/cicd-deep.md",
@@ -17272,14 +17216,6 @@
       "input_hash": "dc6bd6ac9dad72990ed5e22aea68330954c6d25e6535edfad9adf9574f115fd4",
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/ct-demos.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/ct-demos.md",
-      "upstream_sha": "c26b483f365d397f86ef45e60a892d0783588ac1",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "18e6eadc19b346ab7876dbc67e4b48d89768bf238b2de22a52829e2bd6a33863",
-      "upstream_committed_at": "2025-01-07T16:47:36-08:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/executive-demo.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/executive-demo.md",
       "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
@@ -17287,22 +17223,6 @@
       "model": "codex",
       "input_hash": "80a4c4eca8af4efe69d507ddc6423f3330484bf156100376bcbb976f8dc023ce",
       "upstream_committed_at": "2026-06-29T08:59:00-04:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/gke-setup.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/gke-setup.md",
-      "upstream_sha": "c26b483f365d397f86ef45e60a892d0783588ac1",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5ce3b1bafc887593b726f11fe0f235481e775a95e9f77a7117fdebcc8c03a9be",
-      "upstream_committed_at": "2025-04-01T09:22:28+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/i2p.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/i2p.md",
-      "upstream_sha": "c26b483f365d397f86ef45e60a892d0783588ac1",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "fb40c886640c726857ab9e7cd803a7d211052e780bd7199a4ec606cfb6e683d3",
-      "upstream_committed_at": "2026-03-02T07:33:04-05:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/integrations.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/integrations.md",
@@ -17376,14 +17296,6 @@
       "input_hash": "77bf2197168c050c05eebbbbb24b40a70600ea1d6b73c7afe8b3a72a755fd286",
       "upstream_committed_at": "2023-11-16T16:43:45+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/cloud-native-ecosystem.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/cloud-native-ecosystem.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "e02191d0171de3879081c54543d9890dbac8fa7b765261328a759a21ba2052ff",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/dotcom-subscriptions.md",
       "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
@@ -17391,30 +17303,6 @@
       "model": "codex",
       "input_hash": "d69d7f95e3705fa885fd62daa3e4b6576b06e2eb831105d18e87e03a6ca7ee6a",
       "upstream_committed_at": "2026-07-28T15:04:15+01:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/github-ci-cd-faq.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/github-ci-cd-faq.md",
-      "upstream_sha": "072f834e2cd849e6ac3cfa985e4eb1249dd62cd6",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "d147fed028998fe8a8e2819d04bcdbcbef92a6d871a3f916f98fa64e990933a7",
-      "upstream_committed_at": "2025-04-01T09:22:28+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/security-integrations-whitesource.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enablement/security-integrations-whitesource.md",
-      "upstream_sha": "072f834e2cd849e6ac3cfa985e4eb1249dd62cd6",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "0237f5b54987d0efa6f5184fdd984d8a4e5acdbf55a893599f34491171f4187c",
-      "upstream_committed_at": "2024-11-26T00:36:40+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enterprise-it-roles.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/enterprise-it-roles.md",
-      "upstream_sha": "072f834e2cd849e6ac3cfa985e4eb1249dd62cd6",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "53fe13269b8d6443effcdd3cfd009ba43802d6a95d90112ee2cceac1a1fa3352",
-      "upstream_committed_at": "2025-06-03T23:53:00+00:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/events_travel.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/events_travel.md",
@@ -17424,14 +17312,6 @@
       "input_hash": "f7f1b71ae7f4d273bb4b4faee593e26b49c51cd916089d5df114a19bc5f5812c",
       "upstream_committed_at": "2026-02-27T10:12:54-08:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/101.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/101.md",
-      "upstream_sha": "6eef8dbb6a0d15167aa5378f476b04cd38b78675",
-      "translated_at": "2026-07-10T07:06:29+09:00",
-      "model": "codex",
-      "input_hash": "9cc817884e8913479f8842037808684741ab123e192bd2492b1446365e5e5a3d",
-      "upstream_committed_at": "2026-06-29T08:59:00-04:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/103.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/103.md",
       "upstream_sha": "072f834e2cd849e6ac3cfa985e4eb1249dd62cd6",
@@ -17440,68 +17320,12 @@
       "input_hash": "c5c2423a48db71666ae3984922a4adca4249b2f14b659e94774e1ff00715dcc6",
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/104.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/104.md",
-      "upstream_sha": "ce0ccdac3443c7d547631da8cba8f3148892a0c3",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "001b2137fa4c8a99cad5466903ca2b5473a6496df694182e3a08d6221f0c477b",
-      "upstream_committed_at": "2025-01-07T16:47:36-08:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/105.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/105.md",
-      "upstream_sha": "ce0ccdac3443c7d547631da8cba8f3148892a0c3",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "1350ab820b4a202135d85cf409d31780f012ef9c2ec22168b621e29d26b635e0",
-      "upstream_committed_at": "2025-01-07T16:47:36-08:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/_index.md",
-      "upstream_sha": "ce0ccdac3443c7d547631da8cba8f3148892a0c3",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b1f85a16d2df07e2b3dd7f4b7087bc730cff23bfc3fdda18663818817aa24586",
-      "upstream_committed_at": "2025-06-02T12:24:11-07:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/create-cluster-101.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/create-cluster-101.md",
       "upstream_sha": "ce0ccdac3443c7d547631da8cba8f3148892a0c3",
       "translated_at": "2026-04-30T12:00:00Z",
       "model": "claude-opus-4-7",
       "input_hash": "93dd1f78d8547e8c44557bcd36cdd659b866532696f0da8be1903aecd5cea956",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/keeping-yourself-informed.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/keeping-yourself-informed.md",
-      "upstream_sha": "ce0ccdac3443c7d547631da8cba8f3148892a0c3",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "25b3ac3eddf570c04f224c5fa9d1f79bd44927ee72c79632271ed8654087c7e2",
-      "upstream_committed_at": "2025-04-29T11:15:59-04:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/sm-project-management.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/sm-project-management.md",
-      "upstream_sha": "ce0ccdac3443c7d547631da8cba8f3148892a0c3",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "3ad6633e6ad8722ebadc23f784f0cf9b6f8edb2dbc833643c8fc1b1f5dbd1f3f",
-      "upstream_committed_at": "2025-01-07T16:47:36-08:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/it-groups/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/it-groups/_index.md",
-      "upstream_sha": "ce0ccdac3443c7d547631da8cba8f3148892a0c3",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "4a38c7fb73f2266c0c65c67533b3813d956cd64b478fbb2e6074cefb861860fd",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/it-groups/build/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/it-groups/build/_index.md",
-      "upstream_sha": "ce0ccdac3443c7d547631da8cba8f3148892a0c3",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "4f06e81097137a02e66c5363a2da21e63a4d235ae1387ef78b2d0a5b6894a8d8",
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/it-groups/build/cycle-time.md": {
@@ -17560,14 +17384,6 @@
       "input_hash": "0e28ee73e66bff6c30f0f05b65f9215ee933aa2faf5dd99549de1fdceef96bd7",
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/market-insights.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/market-insights.md",
-      "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "c0942abfdc98dfb11dc4670226f30448fb8e1ea1603ade76bc21ddcc19e2f26b",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/market-segmentation.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/market-segmentation.md",
       "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
@@ -17575,30 +17391,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "0cd843505b2b05339660eab211533b119e057f6e55ef73b04260c918f7d6ce1f",
       "upstream_committed_at": "2025-01-04T01:51:25+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/messaging.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/messaging.md",
-      "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "169d66b7ff9082fd575a0cfe08b5f6cf62772cd4c203f5601fd5f87b16e047ff",
-      "upstream_committed_at": "2025-03-05T11:52:36+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/metrics.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/metrics.md",
-      "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "be20586bedacbe91f7994a64d7d22b8496dcf760cb83d73158e6d1b81c54a813",
-      "upstream_committed_at": "2026-02-27T10:12:54-08:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/mrnci.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/mrnci.md",
-      "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5c5393d06506f77573f0aed306b499a7774e269c05474eaac1d8beeb710f26b0",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/peer-reviews.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/peer-reviews.md",
@@ -17608,14 +17400,6 @@
       "input_hash": "3ac5cbf284613e6823472f8d2dc0dbbee7965d5d5fb72466df7be1274b513736",
       "upstream_committed_at": "2023-12-18T18:04:33+01:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/_index.md",
-      "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
-      "translated_at": "2026-05-01T03:20:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9ba494b72bf5d910b183bc10d7025351253c109ed59a5bf665b41ab1d0471c57",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/_index.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/_index.md",
       "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
@@ -17624,46 +17408,6 @@
       "input_hash": "97aa843fdaf6252bf2869b66ba4525dad1face67ee5009045164c757372d16fd",
       "upstream_committed_at": "2023-11-16T16:43:45+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/alex.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/alex.md",
-      "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
-      "translated_at": "2026-05-01T03:20:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "89115c66113102ca5d9f340a56bb035d3af4ace2316524fca8b5d7944d4cb092",
-      "upstream_committed_at": "2024-08-08T22:55:54+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/casey.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/casey.md",
-      "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
-      "translated_at": "2026-05-01T03:20:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "4f6c0859e99aebc5ba9d2a0dd368eacfd38d6a8971e76486f7c3af7f9dc90a32",
-      "upstream_committed_at": "2024-08-08T22:55:54+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/dakota.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/dakota.md",
-      "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
-      "translated_at": "2026-05-01T03:20:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "0f7866aa387fdce3c8e74283f30dd16c41776edba181af6f658c530d087ae0f9",
-      "upstream_committed_at": "2024-08-08T22:55:54+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/erin.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/erin.md",
-      "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
-      "translated_at": "2026-05-01T03:20:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "bcf671d64d049b8ead75ffaef3087cc60bb72ff1b11e299acd854a02fc1ec870",
-      "upstream_committed_at": "2024-08-08T22:55:54+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/kennedy.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/buyer-personas/kennedy.md",
-      "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
-      "translated_at": "2026-05-01T03:20:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "ee189bbdd0661ffddec23e4db9d7f49756d7aee3de460c664c05b0b6a0f9bed9",
-      "upstream_committed_at": "2024-08-08T22:55:54+00:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/_index.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/_index.md",
       "upstream_sha": "214b98c98d2eb739dbe3a358027667a7f128ec69",
@@ -17671,62 +17415,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "747858cf22123219179164405569b23b05f94354bb24e3809ba8bbcab435aeae",
       "upstream_committed_at": "2023-11-16T16:43:45+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/cameron.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/cameron.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:28:23+09:00",
-      "model": "codex",
-      "input_hash": "ba3df495676e7fe41d30eabfd9a674e1ff725a6638dfdd6bd1298a725d24a0ab",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/delaney.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/delaney.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:28:23+09:00",
-      "model": "codex",
-      "input_hash": "1df12015e71d4e450888e4c17ebc1524e60f020bb6c2dd32b63b614829131d91",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/devon.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/devon.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:28:23+09:00",
-      "model": "codex",
-      "input_hash": "e965344a903fc125a93070a9a82d9e223ce395fe46d7825fc596b4111dab5a4e",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/parker.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/parker.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:28:23+09:00",
-      "model": "codex",
-      "input_hash": "60ff84ac16912294a5003421a58adf66aa1223b8b92ff79d05aad13b28b6bb42",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/rachel.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/rachel.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:28:23+09:00",
-      "model": "codex",
-      "input_hash": "37487ec9a7414a6aba71be81c4bb31993750c7052b1e4b3caf4949b6da1548d8",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/sasha.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/sasha.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:28:23+09:00",
-      "model": "codex",
-      "input_hash": "2a0406ad7a97267b62b4ce97dbb0ee1029f7b2d62b27279a5c174bf8155c0513",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/sidney.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/persona-snippets/user-personas/sidney.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:28:23+09:00",
-      "model": "codex",
-      "input_hash": "0b13b81eebfc0b3c375d633a53595c51f8681a0e94d9b66ec786ab84e9593130",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/pmm-inventory.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/pmm-inventory.md",
@@ -17760,14 +17448,6 @@
       "input_hash": "dfb760a3bdf802b7ec286af98723b97f1c87672825d88e22a537f06e0294cd29",
       "upstream_committed_at": "2026-06-01T12:55:15+02:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/public-sector-gtm.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/public-sector-gtm.md",
-      "upstream_sha": "d0a19ab78fc5e0d322868c8f35ab8f81e761bd21",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "911425695fd53a08d5d6332d192270179c6a9634f638bd512d0028cb415486fd",
-      "upstream_committed_at": "2025-01-04T01:51:25+00:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/qbr.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/qbr.md",
       "upstream_sha": "d0a19ab78fc5e0d322868c8f35ab8f81e761bd21",
@@ -17775,70 +17455,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "0bfcf5a72eb11607121da42d216275e875cfe42b3dbdb40318f1e87272c5c1b1",
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/release-updates.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/release-updates.md",
-      "upstream_sha": "d0a19ab78fc5e0d322868c8f35ab8f81e761bd21",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "31069c76e4df9842cf91dc7ac60e8796fb2036815af8eeccd30f508639f84fd0",
-      "upstream_committed_at": "2025-01-04T01:51:25+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/reseller-kit.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/reseller-kit.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T09:43:30+09:00",
-      "model": "codex",
-      "input_hash": "0220a91082836a77c8d5128ea425a4076476bdbf01bdceb3a1d6e08c84cb5195",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:22:17+09:00",
-      "model": "codex",
-      "input_hash": "e25590fd9042ce7eed46a9c471a5e99afdb961db00f0cebc8d4faffcd60223ca",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona.md",
-      "upstream_sha": "839c14e40e08e6fd4099a01ee623aaf85faafd12",
-      "translated_at": "2026-06-01T13:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5ad7f33285aca96c19233571b69595586d60db0275b1b629793147caede1c0a7",
-      "upstream_committed_at": "2026-06-01T12:55:15+02:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/day-in-the-life-secopsengineer-persona.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/day-in-the-life-secopsengineer-persona.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:28:23+09:00",
-      "model": "codex",
-      "input_hash": "3a01f76c1ebe6e9863adb987b4cfcae02a0b08833362d2e7273711262a4b75fa",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers.md",
-      "upstream_sha": "d0a19ab78fc5e0d322868c8f35ab8f81e761bd21",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "f6341d4af007059124ffc6b755d0e080245910f8d3e54172ca410d048a3daf9c",
-      "upstream_committed_at": "2025-10-16T13:22:33+02:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/_index.md",
-      "upstream_sha": "d0a19ab78fc5e0d322868c8f35ab8f81e761bd21",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "89472506427bdf548b86285332d7dd88c179cf8da48cbe993d9cf72594ba68f2",
-      "upstream_committed_at": "2025-12-05T19:47:34+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/agile/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/agile/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:22:17+09:00",
-      "model": "codex",
-      "input_hash": "f809c50f864fcfdcd575a66ca253b58619428e75585203e4b89fc2473ca984be",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/agile/keywords.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/agile/keywords.md",
@@ -17864,14 +17480,6 @@
       "input_hash": "0b021334fa10c008fd6c7f2046a066da95da40dc83a3dec6f1162922b0c1d9e4",
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:22:17+09:00",
-      "model": "codex",
-      "input_hash": "93154250094d67127271d1cda2f7c6f2eca0ded97bf4cf406092a5a1c900835d",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/message-house.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/message-house.md",
       "upstream_sha": "d0a19ab78fc5e0d322868c8f35ab8f81e761bd21",
@@ -17880,22 +17488,6 @@
       "input_hash": "4caf6faed9ae27b4264f7a1f2cd7466843bd5b94d8a574007f06a764a9f4a71e",
       "upstream_committed_at": "2024-07-09T00:48:53+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:22:17+09:00",
-      "model": "codex",
-      "input_hash": "449524ac482b1ef1497075c47041327dd991be9630841345832378596f7bee93",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/message-house.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/message-house.md",
-      "upstream_sha": "d0a19ab78fc5e0d322868c8f35ab8f81e761bd21",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9fa63e4994b51802a3b2efaa165c3b77d9910b31e8468fbf1ec115b8f8925917",
-      "upstream_committed_at": "2024-11-04T22:11:28+00:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/runner-message-house.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/runner-message-house.md",
       "upstream_sha": "d0a19ab78fc5e0d322868c8f35ab8f81e761bd21",
@@ -17903,22 +17495,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "ca492f97b4f4bac47abc18b49a9265afef0d6bf1fb34b1197c437cfacf659750",
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/compliance.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/compliance.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T09:43:30+09:00",
-      "model": "codex",
-      "input_hash": "9bf261111b90e63d5da87cc85405e9f65174f8b37644f2885d2ec87e14a78ee5",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/data-science/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/data-science/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:22:17+09:00",
-      "model": "codex",
-      "input_hash": "6a6b1e5a34f0c4a06df520965e54e0b039488f16a5c1b88a7970c56342cf47de",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/data-science/keywords.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/data-science/keywords.md",
@@ -17936,38 +17512,6 @@
       "input_hash": "6f32b44e5644ba36e4af461c9edf0f6e6a3f71b3daad5432864d5ca4075ed035",
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/delivery-automation.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/delivery-automation.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "4862443797b11d71fcddac952b656586323a18fcdce682b82831f9e4c3585fd2",
-      "upstream_committed_at": "2025-01-04T01:51:25+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:15:26+09:00",
-      "model": "codex",
-      "input_hash": "b7d68aa57b7ebcdad8cc4b3cab0d05c739a80aa8dfbc13d62dc8ee35447146f4",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/message-house/index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/message-house/index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:15:26+09:00",
-      "model": "codex",
-      "input_hash": "9b2721ccb1fac55ef06ae4e5657c53c7b7fafa89f27fa9f4ab6c7f4658520d0e",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:15:26+09:00",
-      "model": "codex",
-      "input_hash": "8378db4ff77e5e7ecdc15646ae4e8d43d260457a3e24f98c3f8e55c3649cd3c5",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/message-house.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/message-house.md",
       "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
@@ -17975,14 +17519,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "153ee7ab01f0dc0f30be6d86bcf50a5c7c7d5f8bc7cd70ef44516f4032a7402c",
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/_index.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T09:52:04+09:00",
-      "model": "codex",
-      "input_hash": "4e1f62d78484c8afe6a7cac1c5cbf9387f9cdb3d9fdd59bd80e40a79c5dc4a5c",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/keywords.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/keywords.md",
@@ -18000,38 +17536,6 @@
       "input_hash": "27bacaa1dec5a7d1e963e7fee724d875de00f1941e05fd6568126d0b78a8e89a",
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/google.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/google.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T09:43:30+09:00",
-      "model": "codex",
-      "input_hash": "e4d6a2926dbb4e4422b20732fe70f400d22e33339a6b55a82595d3c6b333b815",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/incident-management.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/incident-management.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T09:43:30+09:00",
-      "model": "codex",
-      "input_hash": "bf0dedceeb2dad50dde6c3dbb18301866c092b08a793bf039c1afc24fb6d4ff1",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/package.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/package.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T09:52:04+09:00",
-      "model": "codex",
-      "input_hash": "a66bef111c9305a8246aef771db6408e3722bb22edeb93cabccd812376e455d0",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/template/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/template/_index.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5b0f6db1301327cbae78ccd1f090feac1587ed873567e118012a22aeb7e9fbae",
-      "upstream_committed_at": "2024-07-09T00:48:53+00:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/template/keywords.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/template/keywords.md",
       "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
@@ -18047,14 +17551,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "db37e4184a8e37c4b377b94e027b1e2e8e929f868b0c46df764b4fdd39cefc86",
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/_index.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T09:52:04+09:00",
-      "model": "codex",
-      "input_hash": "de77dfc00d9d8df8c8262bc6c7b03cf05840a6a0f4925cb1dc36bf94fe3c720c",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/message-house.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/message-house.md",
@@ -34999,22 +34495,6 @@
       "model": "codex",
       "input_hash": "76038e2211ee98768759be912a985ae7f7bf7ec2093f53ef7cd1200b4626e695",
       "upstream_committed_at": "2026-07-28T16:24:24+01:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/organization-archetype.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/organization-archetype.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:28:23+09:00",
-      "model": "codex",
-      "input_hash": "048ffb9319557d3754bb8361be4244bcafc5c240365b868c3f2041b5bf54eab4",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T06:28:23+09:00",
-      "model": "codex",
-      "input_hash": "bb857ce1cbd6e290be353fec807f2be8092feccd7b5a4214211f90e0a6922a0a",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
     },
     "content/handbook/eta/css/zendesk/copilot/admin-copilot.md": {
       "path": "content/handbook/eta/css/zendesk/copilot/admin-copilot.md",

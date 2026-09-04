@@ -4,7 +4,7 @@ description: "ダウンタイムは高くつきます。GitLab のインシデ�
 upstream_path: /handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/incident-management/
 upstream_sha: 2964a66da5fafba0461d1476fa91593397881853
 translated_at: "2026-09-04T15:57:36+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-08-27T23:30:57+02:00"
 ---
