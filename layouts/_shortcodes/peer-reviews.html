@@ -35,7 +35,7 @@
 <h4>{{ index $reviewTitles $review | default $review }}<hr></h4>
   {{- range $reviewComments }}
     {{- $localized := index $translations .quotelink }}
-<li><a href="{{ .quotelink }}" target="_blank">{{ $localized.quote }}</a>、{{ .role }}、{{ $localized.industry }}、{{ $localized.csize }}、{{ $localized.region }}</li>
+<li><a href="{{ .quotelink }}" target="_blank">{{ $localized.quote }}</a>、{{ .role }}{{ with $localized.industry }}、{{ . }}{{ end }}{{ with $localized.csize }}、{{ . }}{{ end }}{{ with $localized.region }}、{{ . }}{{ end }}</li>
   {{- end }}
 <hr>
 {{- end }}

@@ -27,7 +27,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 利用可能な Jira 統合は 3 種類あります。
 
 1. リアルタイムの MR／コメント統合（別名「Jira Integration」）。GitLab 単体での運用ができないすべての Jira + GitLab 顧客はこれを使用すべきです。
-2. Dev Panel (DVCS) 統合。GitLab セルフマネージドおよび／または Jira Server を使用している場合、GitLab から Jira の Dev Panel にデータを供給する唯一の方法です。データ同期は 1 時間に 1 回 `Premium`
+2. Dev Panel (DVCS) 統合。GitLab セルフマネージドおよび／または Jira Server を使用している場合、GitLab から Jira の Dev Panel にデータを供給する唯一の方法です。データは 1 時間に 1 回同期されます。`Premium`
 3. Atlassian Marketplace の GitLab for Jira アプリを使用する Dev Panel 統合。Jira Cloud と GitLab SaaS の統合に最適で、データがリアルタイムに同期されます！— Jira Cloud と GitLab SaaS のみで動作 `Premium`
 
 以下のガイドを使って GitLab.com を Jira Software Cloud と統合できます:
