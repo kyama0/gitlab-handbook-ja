@@ -26,7 +26,7 @@ Search Marketing チームでは、ハンドブック全体の SEO エラーを�
 
 ## ビデオ
 
-Search Marketing チームは、これらのエラーを修正することがなぜ GitLab の SEO に役立つか、また WebIDE で各種類の問題をどう修正するかを示す一連のビデオを作成しました。GitLab Unfiltered の [Improving Website Health](https://www.youtube.com/playlist?list=PL05JrBw4t0KpLkZdh-GJdluUjrNeY5X5K) プレイリストですべて視聴できます。
+Search Marketing チームは、これらのエラーを修正することがなぜ GitLab の SEO に役立つか、また WebIDE で各種類の問題をどう修正するかを示す一連のビデオを作成しました。GitLab Unfiltered の [ウェブサイトヘルスの改善](https://www.youtube.com/playlist?list=PL05JrBw4t0KpLkZdh-GJdluUjrNeY5X5K) プレイリストですべて視聴できます。
 
 ### ハンドブックエラーマッシュ キックオフビデオ
 

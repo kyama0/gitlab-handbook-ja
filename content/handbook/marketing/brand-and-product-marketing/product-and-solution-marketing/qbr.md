@@ -25,7 +25,7 @@ GitLab では、四半期ごとのビジネスレビュー（QBR）を実施し�
 1. サポートする QBR ミーティングまでスクロールします（ドキュメントにはアジェンダと主要リンクがあらかじめ読み込まれています）
    1. 必要に応じて、**QBR 詳細ノートドキュメント**（ライブノートが記録される場所）、**スライドフォルダーへのリンク**、**個別の担当者スライド**へのリンクを追加します
 1. **具体的な**戦略的マーケティングリクエストやアクションアイテムをリスニングします。可能な限り詳細に Google Doc にアクションアイテムを記録します。質問をして明確化します ― そのために QBR に参加しているのです
-1. [Create Product and Solution Marketing QBR Action Issue](https://gitlab.com/gitlab-com/marketing/product-marketing/issues/new?issuable_template=QBR-Action-Item) リンクをクリックします
+1. [Product and Solution Marketing QBR アクション Issue を作成](https://gitlab.com/gitlab-com/marketing/product-marketing/issues/new?issuable_template=QBR-Action-Item) リンクをクリックします
 1. 2 行目の Quick Action `/title` を使用して Issue のタイトルを更新します。
 1. 何を、誰に、なぜサポートが必要なのかを Issue に詳細に記述します。（曖昧で、漠然とした、行動できない Issue は避けてください）
 1. Issue を送信した後、Issue リンクをコピーして Action Item ドキュメントに追加します。
@@ -35,7 +35,7 @@ GitLab では、四半期ごとのビジネスレビュー（QBR）を実施し�
 1. Sales Ops／Sales Enablement チームと連携して QBR スケジュールを決定します。いつ、どこで、誰がスピーカーになるか。QBR スライドが保存されるフォルダへのリンクを取得します。
 1. QBR アクションアイテムを追跡するためのエピックを Marketing グループレベルで作成します。
 1. アクションアイテムドキュメントをセットアップします
-    1. [Product and Solution Marketing QBR Action Item template](https://docs.google.com/document/d/11I85raEvjeoVwQd1LeRtGHeW2DGN3hi7L-BwDzwKIVA/edit#) のコピーを作成します。テンプレートはこの[フォルダ](https://drive.google.com/drive/folders/1KpXA8KqHFhenhO2ZshTINOK1g4pHnLf0)に保存されています。
+    1. [Product and Solution Marketing QBR アクションアイテムテンプレート](https://docs.google.com/document/d/11I85raEvjeoVwQd1LeRtGHeW2DGN3hi7L-BwDzwKIVA/edit#) のコピーを作成します。テンプレートはこの[フォルダ](https://drive.google.com/drive/folders/1KpXA8KqHFhenhO2ZshTINOK1g4pHnLf0)に保存されています。
     1. アクションドキュメントの名前を「FYXX -QN - QBR Product and Solution Marketing Action Item」とします。FY と Quarter は次の四半期のものを使用します。
     1. アクションドキュメントを正しい FY フォルダに移動します。
     1. アクションドキュメントを編集用に開き、以下を行います:
@@ -50,7 +50,7 @@ GitLab では、四半期ごとのビジネスレビュー（QBR）を実施し�
        1. QBR アジェンダから、担当者の名前をプレゼンする順に並べたアジェンダアウトラインを更新します。
        1. スライドがフォルダに読み込まれている場合、担当者名を更新して特定のスライドデッキへのリンクを含めます。
 
-1. **Product Marketing** プロジェクトの `QBR-Action-Item` [issue template](https://gitlab.com/gitlab-com/marketing/product-marketing/blob/master/.gitlab/issue_templates/QBR-Action-Item.md) を更新します
+1. **Product Marketing** プロジェクトの `QBR-Action-Item` [Issue テンプレート](https://gitlab.com/gitlab-com/marketing/product-marketing/blob/master/.gitlab/issue_templates/QBR-Action-Item.md) を更新します
     1. アクションアイテムドキュメントへのリンクを、先ほど作成したドキュメントを指すように変更します
     1. エピックへのリンクを、今四半期の QBR エピックを指すように変更します
     1. ラベル Quick Action を QBR の FY/Quarter に合わせて変更します

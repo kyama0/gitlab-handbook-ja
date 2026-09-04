@@ -37,7 +37,7 @@ lastmod: "2026-06-01T12:55:15+02:00"
 
 下表は、各ティアで追加される新機能を示しています。
 
-個別の機能の詳細については、[Why starter](https://about.gitlab.com/pricing/premium/)、[Why premium](https://about.gitlab.com/pricing/premium/)、[Why ultimate](https://about.gitlab.com/pricing/ultimate/) ページを参照してください。
+個別の機能の詳細については、[Starter を選ぶ理由](https://about.gitlab.com/pricing/premium/)、[Premium を選ぶ理由](https://about.gitlab.com/pricing/premium/)、[Ultimate を選ぶ理由](https://about.gitlab.com/pricing/ultimate/) ページを参照してください。
 
 |  | [Premium](https://about.gitlab.com/pricing/premium/) で新規 | [Ultimate](https://about.gitlab.com/pricing/ultimate/) で新規 |
 | --- | --- | --- |
