@@ -3,24 +3,24 @@ title: "非線形ワークデイと非同期勤務の完全ガイド"
 canonical_path: "./non-linear-workday/"
 description: オールリモート環境における日常ルーティンの再発明と非線形ワークデイの作り方
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/non-linear-workday/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-12-03T14:52:15-08:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
-![GitLab customer path](/images/all-remote/gitlab-customer-path.jpg)
+![GitLab のカスタマージャーニー](/images/all-remote/gitlab-customer-path.jpg)
 
 このページでは、非線形ワークデイを取り入れた生活がどのようなものになるかを詳しく説明し、コロケーション（同一拠点勤務）型・同期型の職場では実現できない可能性を想像するためのヒントを提供します。
 
 ## Q: 非線形ワークデイとはどのようなルーティンですか？
 
-非線形ワークデイとは、PTO（有給休暇）を取得することなく、[非同期](asynchronous/)スケジュールで勤務時間と非勤務時間を自由に行き来できる働き方です。たとえば、リモートワーカーが現地時間の午前 6 時に仕事を始め、午前 9 時まで作業するとします。その後、家族と過ごすために仕事メールを確認せず、午後 3 時に再び仕事を始めて午後 8 時まで継続します。そして翌日は、仕事や生活の状況に応じて全く異なるスケジュールになることもあります。
+非線形ワークデイとは、PTO（有給休暇）を取得することなく、[非同期](/handbook/communication/#asynchronous-communication)スケジュールで勤務時間と非勤務時間を自由に行き来できる働き方です。たとえば、リモートワーカーが現地時間の午前 6 時に仕事を始め、午前 9 時まで作業するとします。その後、家族と過ごすために仕事メールを確認せず、午後 3 時に再び仕事を始めて午後 8 時まで継続します。そして翌日は、仕事や生活の状況に応じて全く異なるスケジュールになることもあります。
 
 ## ルーティンに関する先入観を打ち破る
 
@@ -34,7 +34,7 @@ lastmod: "2025-12-03T14:52:15-08:00"
 
 ルーティンが推奨されるのは、それが*良いもの*だからではなく、*伝統*だからにすぎません。コロケーション型の環境では、チームメンバーが通勤し、固定された時間内に働くことが求められるため、ルーティンが強制されます。私たちはルーティンが規律を保つものだと信じるよう刷り込まれてきましたが、実際にはルーティンは、コロケーション型企業が従業員を管理しやすくするためのものにすぎません。
 
-多くの人は他の方法を知らないためにルーティンを守っています。リモートワークでは、[非同期ワークフロー](asynchronous/)、[ハンドブックファースト型ドキュメント](handbook-first/)、そして会社全体の[透明性](/handbook/values/#transparency)という大きなメリットのおかげで、別の選択肢が生まれます。
+多くの人は他の方法を知らないためにルーティンを守っています。リモートワークでは、[非同期ワークフロー](/handbook/communication/#asynchronous-communication)、[ハンドブックファースト型ドキュメント](handbook-first/)、そして会社全体の[透明性](/handbook/values/#transparency)という大きなメリットのおかげで、別の選択肢が生まれます。
 
 ## 非線形ワークデイとは何か？
 
@@ -58,7 +58,7 @@ lastmod: "2025-12-03T14:52:15-08:00"
 
 - モンタナの冬は午後 5 時には日が暮れています。Darren は日照時間を最大限に活用し、働く時間を主に暗い時間帯にシフトしています。どうせその時間は室内にいるため、仕事に適しています。暗い中ではほとんど人が仕事を終えているにもかかわらず、それが一般的なルーティンの定義と相反していても、外に出て探索したいという衝動はありません。むしろ、これは仕事をするのに理想的な時間です。
 
-![GitLab all-remote team](/images/all-remote/all-remote-skiing-montana.jpg)
+![GitLab のオールリモートチーム](/images/all-remote/all-remote-skiing-montana.jpg)
 {style="max-width: 50%;"}
 
 ここで一度立ち止まり、時間が相対的であることを再認識する必要があります。Darren が午後 4 時 30 分に仕事を再開したとき、標準的な 8 時間勤務であれば、あと 6 時間貢献できます。現地時間にとらわれないことが大切です。午後 4 時 30 分に仕事を再開するのは一見非常識に思えますが、チームの他のメンバーにとってはそれが朝だったり、昼だったり、夜だったりします。
@@ -94,7 +94,7 @@ lastmod: "2025-12-03T14:52:15-08:00"
 
 ### タイムゾーンの調整
 
-自分やチームメンバーが主に拠点としている場所によっては、[異なるタイムゾーン](asynchronous/#3-asynchronous-work-is-more-inclusive)の人たちと上手にコミュニケーションすることが難しい場合があります。
+自分やチームメンバーが主に拠点としている場所によっては、[異なるタイムゾーン](/handbook/communication/#asynchronous-communication)の人たちと上手にコミュニケーションすることが難しい場合があります。
 
 ### 整理整頓の維持
 
@@ -132,13 +132,13 @@ lastmod: "2025-12-03T14:52:15-08:00"
 - 同僚との戦略的な[つながり](getting-started/#how-to-connect-with-people-when-starting-a-remote-job)を作る
 - [仕事とプライベートの境界線](getting-started/#set-up-work-life-boundaries)を設定する
 
-非線形ワークデイは時間と仕事を切り離し、[非同期ワークフロー](asynchronous/)を取り入れることを促します。現地時間は、会社が物事を進めるために同期性にどれだけ依存しているかによってのみ重要になります。
+非線形ワークデイは時間と仕事を切り離し、[非同期ワークフロー](/handbook/communication/#asynchronous-communication)を取り入れることを促します。現地時間は、会社が物事を進めるために同期性にどれだけ依存しているかによってのみ重要になります。
 
 これが気になるほど、同期型のデフォルトから組織を遠ざける必要があります。
 
 ## 想像力を育む
 
-![GitLab all-remote team](/images/all-remote/remote_work_02.jpg)
+![GitLab のオールリモートチーム](/images/all-remote/remote_work_02.jpg)
 {style="max-width: 50%;"}
 
 - 毎日が全く同じでなかったら、あなたの生活はどうなるでしょうか？
@@ -173,13 +173,13 @@ lastmod: "2025-12-03T14:52:15-08:00"
 
 ## 非線形ワークデイを可能にするために必要なことは？
 
-![GitLab values illustration](/images/all-remote/gitlab-values-tanukis.jpg)
+![GitLab のバリューのイラスト](/images/all-remote/gitlab-values-tanukis.jpg)
 {style="max-width: 50%;"}
 
 ここで説明した例は、いくつかの現実がすでに整っていなければ実現できなかったでしょう。
 
 - 会社は[ハンドブックファースト](/handbook/about/handbook-usage/#why-handbook-first)で運営しなければなりません。会話から得られた意味ある内容がすべて 24 時間適切な場所にドキュメント化されるようにするためです。
-- 会社は意図的かつ徹底的に[非同期ワークフロー](asynchronous/)（[GitLab などのツール](https://about.gitlab.com/stages-devops-lifecycle/)やプロセスを含む）を取り入れなければなりません。
+- 会社は意図的かつ徹底的に[非同期ワークフロー](/handbook/communication/#asynchronous-communication)（[GitLab などのツール](https://about.gitlab.com/stages-devops-lifecycle/)やプロセスを含む）を取り入れなければなりません。
 - 会社は[非難しない文化](mental-health/#create-a-non-judgemental-culture)をサポートし、チームメンバーを[活動量ではなくインパクトで評価](/handbook/company/culture/all-remote/)しなければなりません。これにより、全員が働いている中でスキーをしたり、全員がスキーに行けばよかったと思っている中で働いたりするような非常識な行為をしても、報復を恐れることなく自由に仕事に入ったり出たりできます。
 - [自分自身のマネージャー](/handbook/values/#managers-of-one)として、見慣れない環境でも適切なタスクに集中できる個人的な誓約。
 - 毎日がこのようになるわけではないという理解。非線形ワークデイの達人でも、昼間の外出が難しい日があることを認識しています。そのことを残念に思うのではなく、それが可能であること自体のスリルを受け入れ、そのような日ができるようにスケジュールを組む努力をしましょう。自分自身のマネージャーとして、スケジュールをコントロールし（そして責任を持つ）必要があります。そうしなければ、世界と仕事の他の力があなたのスケジュールをコントロールします。
@@ -204,7 +204,7 @@ GitLab の[ミーティングへのアプローチ](meetings/)は、他のすべ
 
 ### 明確な優先事項を設定する：3 つのタスク
 
-非線形ワークデイは結果重視です。結果に集中するためのシステムを構築することで、過負荷や燃え尽き症候群を防ぎます。以下の動画では、重要な優先事項を設定・達成するための方法として**3 タスクシステム**を紹介しています。
+非線形ワークデイは結果重視です。結果に集中するためのシステムを構築することで、過負荷や燃え尽き症候群を防ぎます。以下の動画では、重要な優先事項を設定・達成するための方法として **3 タスクシステム**を紹介しています。
 
 
 {{< youtube "H5Sg3Gw8E0Y" >}}

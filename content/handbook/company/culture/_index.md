@@ -2,7 +2,7 @@
 title: "GitLab カルチャー"
 description: "私たちのカルチャーとオールリモート環境から何を期待できるかをご紹介します。"
 twitter_image: "/images/opengraph/Talent-Brand/hiring-group-shot-sko.png"
-twitter_image_alt: "GitLab Team Members gathered together at an event."
+twitter_image_alt: "イベントに集まった GitLab チームメンバー"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/company/culture/
@@ -23,7 +23,7 @@ GitLab に関する一般的な情報については、[会社ページ](/handbo
 </figure>
 <!-- blank line -->
 
-## GitLab での生活
+## GitLab での生活 {#life-at-gitlab}
 
 GitLab のミッションはシンプルです：誰もが私たちの世界を支えるソフトウェアに貢献し、共創できるようにすることです。私たちのプラットフォームは人々を結びつけるだけでなく、チームや組織を一つにし、障壁を取り除き、ソフトウェア開発において何が可能かを再定義します。
 

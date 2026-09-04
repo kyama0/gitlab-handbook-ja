@@ -64,11 +64,11 @@ GitLab のブランドボイスは、ブランドとしての私たちが何者�
 
 **例:**
 
-> - ブログ: [GitLab's 2023 predictions: What's next for DevSecOps?](https://about.gitlab.com/blog/2023/01/26/whats-next-for-devsecops/)
-> - ブログ: [What the ML is up with DevSecOps and AI?](https://about.gitlab.com/blog/2023/03/16/what-the-ml-ai/)
-> - ブログ: [Building GitLab with GitLab: How GitLab.com inspired Dedicated](https://about.gitlab.com/blog/2023/08/03/building-gitlab-with-gitlabcom-how-gitlab-inspired-dedicated/)
-> - ウェブサイト: [10 reasons why enterprises choose GitLab](https://about.gitlab.com/why-gitlab/)
-> - ウェブサイト: [Global DevSecOps Survey](https://about.gitlab.com/developer-survey/)
+> - ブログ: [GitLab の 2023 年予測：DevSecOps の次は？](https://about.gitlab.com/blog/2023/01/26/whats-next-for-devsecops/)
+> - ブログ: [DevSecOps と AI で ML はどうなっている？](https://about.gitlab.com/blog/2023/03/16/what-the-ml-ai/)
+> - ブログ: [GitLab で GitLab を構築：GitLab.com が Dedicated に与えた着想](https://about.gitlab.com/blog/2023/08/03/building-gitlab-with-gitlabcom-how-gitlab-inspired-dedicated/)
+> - ウェブサイト: [エンタープライズが GitLab を選ぶ 10 の理由](https://about.gitlab.com/why-gitlab/)
+> - ウェブサイト: [グローバル DevSecOps 調査](https://about.gitlab.com/developer-survey/)
 
 #### エンパセティック
 
@@ -87,8 +87,8 @@ GitLab のブランドボイスは、ブランドとしての私たちが何者�
 
 **例:**
 
-> - ブログ: [Quickstart guide for GitLab Workspaces](https://about.gitlab.com/blog/2023/06/26/quick-start-guide-for-gitlab-workspaces/)
-> - ブログ: [The ultimate guide to SBoMs](https://about.gitlab.com/blog/2022/10/25/the-ultimate-guide-to-sboms/)
+> - ブログ: [GitLab Workspaces クイックスタートガイド](https://about.gitlab.com/blog/2023/06/26/quick-start-guide-for-gitlab-workspaces/)
+> - ブログ: [SBoM の究極ガイド](https://about.gitlab.com/blog/2022/10/25/the-ultimate-guide-to-sboms/)
 > - ハンドブック: [CEO ハンドブックページ](/handbook/ceo/)
 > - ハンドブック: [コミュニケーションハンドブックページ](/handbook/communication/)
 > - ハンドブック: [バリューハンドブックページ](/handbook/values/)
@@ -110,10 +110,10 @@ GitLab のブランドボイスは、ブランドとしての私たちが何者�
 
 **例:**
 
-> - ブログ: [New pricing for GitLab Premium](https://about.gitlab.com/blog/2023/03/02/gitlab-premium-update/)
-> - ブログ: [Upcoming changes to user limits on Free tier of GitLab.com](https://about.gitlab.com/blog/2022/03/24/efficient-free-tier/)
-> - ブログ: [GitLab's first ESG and DIB reports: Here's what to know](https://about.gitlab.com/blog/2023/07/26/gitlab-first-esg-and-dib-reports/)
-> - ウェブサイト: [GitLab Duo solution page](https://about.gitlab.com/gitlab-duo/)
+> - ブログ: [GitLab Premium の新料金](https://about.gitlab.com/blog/2023/03/02/gitlab-premium-update/)
+> - ブログ: [GitLab.com Free ティアのユーザー上限に関する今後の変更](https://about.gitlab.com/blog/2022/03/24/efficient-free-tier/)
+> - ブログ: [GitLab 初の ESG および DIB レポート：知っておくべきこと](https://about.gitlab.com/blog/2023/07/26/gitlab-first-esg-and-dib-reports/)
+> - ウェブサイト: [GitLab Duo ソリューションページ](https://about.gitlab.com/gitlab-duo/)
 
 ## スタイルとフォーマット
 

@@ -42,7 +42,7 @@ lastmod: "2025-01-11T23:51:39+00:00"
 
 1. これを実現するためにどんな能力が必要か？
    1. 開発プロジェクト / チームに、新しい要件を取り込み、コーディング、テスト、提供して、バックログを増やすことなくビジネス需要を満たす **能力** がある。
-   1. **すべてのチーム（dev、test、security、ops）が同じプロジェクト成果物について、共通のビューで同時に協力して作業する** 能力
+   1. **すべてのチーム（開発、テスト、セキュリティ、運用）が同じプロジェクト成果物について、共通のビューで同時に協力して作業する** 能力
    1. すべての SDLC 能力が連携 - 異なるツールを縫い合わせる必要なく、開発者の時間を機能の提供に集中できる
 
 1. 成功はどう測るか（メトリクス）
@@ -69,7 +69,7 @@ lastmod: "2025-01-11T23:51:39+00:00"
    1. アナリストレポート
       1. Forrester は GitLab を The Forrester Wave™: Continuous Integration Tools, Q3 2017 レポートで Continuous Integration のリーダーと評価しました。
       1. Forrester は GitLab を、エンドツーエンドの DevOps 能力に加えて VSM 能力で Strong Performer と評価しました。
-      1. Gartner Peer Reviews - Customer's Choice（Applications release orchestration）
+      1. Gartner Peer Reviews - Customer's Choice（アプリケーションリリースオーケストレーション）
       1. IDC は GitLab を 2018 年の Agile Code Development Technologies のトップ 3 イノベーターとして認めました。
 
    1. 業界アワード
@@ -79,8 +79,8 @@ lastmod: "2025-01-11T23:51:39+00:00"
    1. その他の資料？
       1. https://about.gitlab.com/why-gitlab/
       1. ホワイトペーパー: SCALED CONTINUOUS INTEGRATION & DELIVERY https://page.gitlab.com/rs/194-VVC-221/images/gitlab-scaled-ci-cd-whitepaper.pdf
-      1. GitLab and Agile Project Management
+      1. GitLab とアジャイルプロジェクト管理
       1. https://about.gitlab.com/topics/devops/reduce-devops-costs/
-      1. What is DevOps
-      1. Starting and Scaling DevOps https://about.gitlab.com/enterprise/
+      1. DevOps とは
+      1. DevOps の導入とスケーリング https://about.gitlab.com/enterprise/
       1. ホワイトペーパー: Plan ステージについて（現在デザイン中で、できるだけ早く公開予定）

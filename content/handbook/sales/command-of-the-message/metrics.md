@@ -2,11 +2,11 @@
 title: "メトリクス会話の解明"
 description: "Command of the Message 顧客会話フレームワークの Metrics コンポーネントを解明するための、営業担当者向けの実践的なヒント"
 upstream_path: /handbook/sales/command-of-the-message/metrics/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
@@ -84,7 +84,7 @@ Nico Ochoa (Strategic Account Executive, US West) が、ソフトウェアファ
   - [GitLab Standard ROI Models イネーブルメントウェブキャスト](https://youtu.be/znCrnpTDRoE) をチェック (36 分、2020 年 9 月)
   - [GitLab Standardized ROI Model](https://docs.google.com/spreadsheets/d/1zYeKV51thbqUjKKQqOtE0a0iVuXBWytc_5ThNV6U_1c/edit?usp=sharing) (GitLab 内部のみ)
   - [Standardized GitLab ROI Model プレゼンテーション](https://docs.google.com/presentation/d/1-Qq6TLpgOuooAlmHj1tumwHxUTK86uWBD_7Lv6K47w8/edit?usp=sharing) (GitLab 内部のみ)
-- [Forrester Total Economic Impact Study](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/forrester-tei/) ハンドブックページをチェック
+- [Forrester Total Economic Impact Study](/handbook/marketing/corporate-communications/analyst-relations/forrester-tei/) ハンドブックページをチェック
   - Forrester アナリストをフィーチャーした [Forrester TEI Report ウェブキャスト](https://youtu.be/J_6QgemCz2E) を見る (1 時間、2020 年 7 月、内部のみ)
   - [オンライン Forrester TEI Estimator/Calculator](https://tools.totaleconomicimpact.com/go/gitlab/devopsplatform/index.html) をチェック
   - 上記で参照されたハンドブックページにさらなるリソースあり!
@@ -99,7 +99,7 @@ Nico Ochoa (Strategic Account Executive, US West) が、[大手テック企業�
 
 **テクニカル・メトリクス** は、ソリューションのケイパビリティを証明する測定可能な結果をハイライトします。
 
-- [Getting Started with Agile Metrics](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/devops-metrics/) をレビュー
+- [Getting Started with Agile Metrics](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/devops-metrics/) をレビュー
 - ["Accelerate: The Science of Lean Software and DevOps: Building and Scaling High Performing Technology Organizations"](https://itrevolution.com/product/accelerate/) を読むことを検討
 
 Nico がサイクルタイムの圧縮、組織がより少ないリソースでより多くを実現することの支援、開発者満足度の向上について何を言っているか聞いてください。
@@ -126,8 +126,8 @@ Nico がサイクルタイムの圧縮、組織がより少ないリソースで
 
 | **バリュードライバー** | **メトリクス** |
 | :------: | ------ |
-| **オペレーショナル効率の向上** | - 開発の低コスト化 (ライセンス、FTE、コンピュート)<br> - 開発者/チーム生産性の向上<br> - サイクルタイム (リードタイム) の削減<br> - [デプロイ頻度](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/devops-metrics/#deployment-frequency) の増加<br> - [変更失敗率](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/devops-metrics/#change-failure-rate-cfr) の削減<br> - [MTTR (平均復旧時間)](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/devops-metrics/#mean-time-to-recover-mttr) の削減<br> - 開発者満足度とリテンションの改善 |
-| **より良い製品をより速く提供** | - 収益、顧客数、および/または市場シェアの改善<br> - 開発者/チーム生産性の向上<br> - サイクルタイム (リードタイム) の削減<br> - [デプロイ頻度](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/devops-metrics/#deployment-frequency) の増加<br> - [変更失敗率](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/devops-metrics/#change-failure-rate-cfr) の削減<br> - [MTTR (平均復旧時間)](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/devops-metrics/#mean-time-to-recover-mttr) の削減 |
+| **オペレーショナル効率の向上** | - 開発の低コスト化 (ライセンス、FTE、コンピュート)<br> - 開発者/チーム生産性の向上<br> - サイクルタイム (リードタイム) の削減<br> - [デプロイ頻度](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/devops-metrics/#deployment-frequency) の増加<br> - [変更失敗率](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/devops-metrics/#change-failure-rate-cfr) の削減<br> - [MTTR (平均復旧時間)](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/devops-metrics/#mean-time-to-recover-mttr) の削減<br> - 開発者満足度とリテンションの改善 |
+| **より良い製品をより速く提供** | - 収益、顧客数、および/または市場シェアの改善<br> - 開発者/チーム生産性の向上<br> - サイクルタイム (リードタイム) の削減<br> - [デプロイ頻度](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/devops-metrics/#deployment-frequency) の増加<br> - [変更失敗率](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/devops-metrics/#change-failure-rate-cfr) の削減<br> - [MTTR (平均復旧時間)](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/devops-metrics/#mean-time-to-recover-mttr) の削減 |
 | **セキュリティとコンプライアンスリスクの削減** | - 開発から漏れる重大なセキュリティ脆弱性の % の減少<br> - スキャンされたコードの % の増加<br> - 監査合格率の改善<br> - 監査および/またはコンプライアンス遵守努力に費やす時間の削減<br> - セキュリティ脆弱性を解決する平均時間の削減 |
 
 ## proof points を知る

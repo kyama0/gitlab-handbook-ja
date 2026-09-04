@@ -1,11 +1,11 @@
 ---
 title: "マーケティングプロジェクト管理ガイドライン"
 upstream_path: /handbook/marketing/project-management-guidelines/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-09-17T18:25:42+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ### サブページ
@@ -82,7 +82,7 @@ www-gitlab-com リポジトリ（マーケティングの親リポジトリ）�
 1. Epic は、複数の Issue で構成されるプロジェクトを表します。（この目的で「メタ」 Issue を使用しないでください。既存のメタ Issue がある場合は、`/promote` クイックコマンドを使って Epic に昇格できます。）
     - Epic はグループレベルに存在します（例: 複数のマーケティングプロジェクトの Issue を Epic に追加できます。）
     - Epic には、Epic を所有するチームのグループラベルが付けられます。
-1. トップ 3〜5 の戦略的イニシアチブは、`CMO` ラベルを使った Epic で追跡されます。（CMO ラベルを他の Epic に適用しないでください。）
+1. トップ 3 〜 5 の戦略的イニシアチブは、`CMO` ラベルを使った Epic で追跡されます。（CMO ラベルを他の Epic に適用しないでください。）
 1. ロードマップは、開始日と終了日を持つ Epic を時間ベースで表示するために使用されます。（例: イベントや時間ベースのキャンペーン。）
 
 ### ボードとラベル
@@ -113,9 +113,9 @@ www-gitlab-com リポジトリ（マーケティングの親リポジトリ）�
 
 マーケティング内の各部門は「追加的」ラベルを持つことができます。これは、それぞれのチームのトラッキングとワークフローを強化するために使用されることを意味します。これらの「追加的」ラベルは、より広範な[マーケティングラベル](#boards-and-labels)と組み合わせて使用されます。部門ラベルの使用方法は、それぞれのハンドブックページに文書化されています:
 
-- [Marketing Programs](/handbook/marketing/integrated-marketing/digital-strategy/)
+- [Marketing Programs](/handbook/marketing/growth-marketing/digital-agency/)
 - [Operations](/handbook/marketing/marketing-operations/)
-- [Sales Development Organization](/handbook/marketing/sales-development/)
+- [Sales Development Organization](/handbook/sales/sales-development/)
 - [Account Based Marketing](/handbook/marketing/account-based-marketing/)
 
 ### デフォルト Issue テキスト

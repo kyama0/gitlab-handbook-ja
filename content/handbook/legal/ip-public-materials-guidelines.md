@@ -2,11 +2,11 @@
 title: "外部資料におけるクリエイティブアセットおよびサードパーティコンテンツの利用ガイドライン"
 description: "外部資料におけるクリエイティブアセットおよびサードパーティコンテンツの利用に関するガイドライン"
 upstream_path: /handbook/legal/ip-public-materials-guidelines/
-upstream_sha: "6eef8dbb6a0d15167aa5378f476b04cd38b78675"
-translated_at: "2026-07-10T07:06:25+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-06-29T08:59:00-04:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 適用範囲と目的
@@ -38,7 +38,7 @@ lastmod: "2026-06-29T08:59:00-04:00"
 
 ### すべきこと
 
-- GitLab と商業的な関係を持つ顧客、パートナー、またはその他の第三者の**ロゴ**または**ワードマーク**を使用する場合、顧客については [GitLab ハンドブックの顧客アドボカシーページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/) を参照してください。不明な場合は [#customer-advoocacy-and-references](https://app.slack.com/client/T02592416/CLFCPMF8E) に相談してください。パートナーのロゴを使用する場合は、[#channel-marketing](https://app.slack.com/client/T02592416/C013DF4A7QV) に相談し、パートナー契約の下での提案された使用について権利と承認が整っていることを確認してください。ISV テクノロジーパートナーのロゴを使用する場合は、[#global-ecosystem-programs-ops](https://app.slack.com/client/E03N1RJJX7C/CTM4T5BPF) に相談してください。
+- GitLab と商業的な関係を持つ顧客、パートナー、またはその他の第三者の**ロゴ**または**ワードマーク**を使用する場合、顧客については [GitLab ハンドブックの顧客アドボカシーページ](/handbook/marketing/growth-marketing/growth-community-programs/) を参照してください。不明な場合は [#customer-advoocacy-and-references](https://app.slack.com/client/T02592416/CLFCPMF8E) に相談してください。パートナーのロゴを使用する場合は、[#channel-marketing](https://app.slack.com/client/T02592416/C013DF4A7QV) に相談し、パートナー契約の下での提案された使用について権利と承認が整っていることを確認してください。ISV テクノロジーパートナーのロゴを使用する場合は、[#global-ecosystem-programs-ops](https://app.slack.com/client/E03N1RJJX7C/CTM4T5BPF) に相談してください。
 
 - **ワードマーク**を参照的に使用します。マーク、またはそのオーナーの製品やサービスを参照する際に、当該企業、製品、またはサービスをマークを使用せずに簡単に識別できない場合に限り使用します。例えば、*GitLab* を指す場合、*DevOps プラットフォームを単一アプリケーションとして提供する企業* と表現するよりも、*GitLab* というワードマークを使用した方がずっと簡単です。
 
@@ -52,15 +52,15 @@ lastmod: "2026-06-29T08:59:00-04:00"
 
 ## クリエイティブアセット
 
-クリエイティブアセットは、ブランドチームの[クリエイティブアセットの調達](/handbook/marketing/brand-and-product-marketing/design/#sourcing-creative-assets)ガイドラインに従って調達する必要があります。既存のブランド承認済みアセットから始め、前のオプションで適切なアセットが提供できないことを確認してから次のオプションに進んでください。
+クリエイティブアセットは、ブランドチームの[クリエイティブアセットの調達](/handbook/marketing/brand-experience/brand-creative/#sourcing-creative-assets)ガイドラインに従って調達する必要があります。既存のブランド承認済みアセットから始め、前のオプションで適切なアセットが提供できないことを確認してから次のオプションに進んでください。
 
 ## AI 生成画像
 
-AI 生成画像は、既存のブランド承認済みアセット、ストック写真、および新規デザインが選択肢にない場合にのみ使用してください。まずブランドチームの[クリエイティブアセット調達ガイダンス](/handbook/marketing/brand-and-product-marketing/design/#sourcing-creative-assets)を参照してください。
+AI 生成画像は、既存のブランド承認済みアセット、ストック写真、および新規デザインが選択肢にない場合にのみ使用してください。まずブランドチームの[クリエイティブアセット調達ガイダンス](/handbook/marketing/brand-experience/brand-creative/#sourcing-creative-assets)を参照してください。
 
 ### **AI 生成画像の一般要件：**
 
-- すべての AI 生成画像は、使用前にブランドによるレビューと承認が必要です。承認を依頼するには[ブランドチームへの連絡](/handbook/marketing/brand-and-product-marketing/design/#contacting-the-team)をしてください。
+- すべての AI 生成画像は、使用前にブランドによるレビューと承認が必要です。承認を依頼するには[ブランドチームへの連絡](/handbook/marketing/brand-experience/brand-creative/#contacting-the-team)をしてください。
 - ブランドの[写真ガイドライン](https://design.gitlab.com/brand-design/photography/)および[汎用 AI ツール使用要件](https://internal.gitlab.com/handbook/ai-security-at-gitlab/ai-tool-usage-requirements/)に従ってください。
 - 画像の生成には以下のツールのみを使用してください：
   - Google Gemini
@@ -70,7 +70,7 @@ AI 生成画像は、既存のブランド承認済みアセット、ストッ�
 - 映画のキャラクター、著名な建物、著名なアーティストのスタイルなど、著作権で保護された素材を含む画像を生成しない。
 - 使用しているツールが付与した透かしやその他の表示を削除しない。
 - 画像の出所を偽らない（人間が作成したと主張するなど）。
-- すべての AI 生成画像の下に次の記述を適用してください：`AI-generated image`（AI生成画像）
+- すべての AI 生成画像の下に次の記述を適用してください：`AI-generated image`（AI 生成画像）
 
 ### **書籍、論文、ブログ投稿、ニュース記事などの成文コンテンツ**
 
@@ -108,7 +108,7 @@ AI 生成画像は、既存のブランド承認済みアセット、ストッ�
 
 ### すべきこと
 
-- ロイヤルティの支払いや別のライセンスの取得なしに**商業的**使用を許可する寛容ライセンスのソースからオーディオコンテンツを取得する、またはGitLab が作成したコンテンツを使用する。不明な場合は、[#legal](https://app.slack.com/client/T02592416/C78E74A6L) に連絡して、使用したいコンテンツのライセンスをレビューしてもらってください。
+- ロイヤルティの支払いや別のライセンスの取得なしに**商業的**使用を許可する寛容ライセンスのソースからオーディオコンテンツを取得する、または GitLab が作成したコンテンツを使用する。不明な場合は、[#legal](https://app.slack.com/client/T02592416/C78E74A6L) に連絡して、使用したいコンテンツのライセンスをレビューしてもらってください。
 
 ### してはいけないこと
 

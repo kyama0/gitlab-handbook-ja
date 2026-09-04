@@ -2,11 +2,11 @@
 title: "CI 採用ランディングゾーン"
 description: "CSM チームとお客様向けの CI に関する有用なリソースへのリンクをまとめたページです。"
 upstream_path: /handbook/customer-success/csm/adoption-landing-zones/ci/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-03-08T16:32:26+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ![CI 採用ジャーニーマップ](/csm/adoption-landing-zones/images/ci-adoption-journey-map.png)
@@ -49,7 +49,7 @@ lastmod: "2025-03-08T16:32:26+00:00"
 
 ## ディスカバリー質問
 
-1. 顧客ユースケースをより深く理解するための初期ディスカバリー質問の包括的なリスト: [パブリックハンドブックページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/#discovery-questions)
+1. 顧客ユースケースをより深く理解するための初期ディスカバリー質問の包括的なリスト: [パブリックハンドブックページ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/#discovery-questions)
 
 ## クイックスタートガイド
 
@@ -61,7 +61,7 @@ lastmod: "2025-03-08T16:32:26+00:00"
      - **Ultimate バージョン:**
        - [ピッチテンプレート](https://gitlab.highspot.com/items/64d9afedc17499f9125f9ca3?lfrm=srp.1)
        - [ピッチスタイル](https://gitlab.highspot.com/items/63ca2a7a7d574a620e8b41e0?lfrm=srp.0)
-2. DevOps ソリューションリソース: 継続的インテグレーション: [パブリックハンドブックページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/#sample-discovery-questions)
+2. DevOps ソリューションリソース: 継続的インテグレーション: [パブリックハンドブックページ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/#sample-discovery-questions)
 3. CI ワークショップ計画概要: [パブリックハンドブックページ](/handbook/customer-success/workshops/ci-workshop/)
 
 ## GitLab への移行

@@ -52,7 +52,7 @@ GitLab は、私たちの[ビジョンとロードマップ](https://about.gitla
 
 #### ピアレビュー
 
-GitLab は、最近の [2019 Enterprise Agile Planning Tools](https://www.gartner.com/reviews/market/enterprise-agile-planning-tools/vendor/gitlab/product/gitlab?months=12) に続き、[2018 Application Release Orchestration](https://www.gartner.com/reviews/market/devops-platforms/vendor/gitlab/product/gitlab) での認識を含み、Gartner Peer Insights "Customers Choice" 賞を 2 度受賞しました。Gartner Peer Insights と G2 Crowd レビューからの抜粋を以下に示します:
+GitLab は、最近の [2019 年エンタープライズアジャイルプランニングツール](https://www.gartner.com/reviews/market/enterprise-agile-planning-tools/vendor/gitlab/product/gitlab?months=12) に続き、[2018 年アプリケーションリリースオーケストレーション](https://www.gartner.com/reviews/market/devops-platforms/vendor/gitlab/product/gitlab) での認識を含み、Gartner Peer Insights "Customers Choice" 賞を 2 度受賞しました。Gartner Peer Insights と G2 Crowd レビューからの抜粋を以下に示します:
 
 - "[GitLab は DevOps の中心ハブ。これは DevOps ライフサイクル全体のための包括的なアプリケーションで、素晴らしいです。](https://www.gartner.com/reviews/market/devops-platforms/vendor/gitlab/product/gitlab/review/view/1017404)"
 - "[大人数のグループでソフトウェアを開発するときに、非常に効率的になります。](https://www.gartner.com/reviews/review/view/987403)"

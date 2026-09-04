@@ -2,11 +2,11 @@
 title: "Developer Relations プログラム"
 description: "Developer Relations プログラムチームは、GitLab の Developer Relations の一部です"
 upstream_path: /handbook/marketing/developer-relations/programs/
-upstream_sha: 12455b65f7f70cf1c18488a44bbab3cff0097c8a
-translated_at: "2026-04-30T12:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-23T13:40:32+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## Developer Relations プログラムについて
@@ -68,7 +68,7 @@ GitLab のソフトウェア開発分野でイノベーションを推進する�
 
 | プログラム | 概要 | ウェブサイト |  メールアドレス | DRI
 |-----------|-----------|-----------|-----------|-----
-| Co-Create| [ハンドブック](/handbook/marketing/developer-relations/programs/cocreate/) | [ウェブサイト](https://about.gitlab.com/community/co-create/)  | `contributors@gitlab.com` | [@ashleysezer](https://gitlab.com/ashleysezer)
+| Co-Create| [ハンドブック](/handbook/marketing/developer-relations/programs/cocreate/) | [ウェブサイト](https://about.gitlab.com/community/co-create/)  | `co-create@gitlab.com` | [@ihuerga](https://gitlab.com/ihuerga)
 |Notable Contributors|  | [ウェブサイト](https://contributors.gitlab.com/docs/notable-contributors) | `contributors@gitlab.com` | [@ihuerga](https://gitlab.com/ihuerga)
 
 ## Developer Relations 以外のプログラム
@@ -77,4 +77,4 @@ GitLab のソフトウェア開発分野でイノベーションを推進する�
 
 * **GitLab for Non-Profits プログラム**: [ハンドブック](/handbook/legal/esg/#gitlab-for-non-profits)
 GitLab Environment, Social, and Governance（ESG）が管理しています
-* **GitLab for Startups**: [ハンドブック](/handbook/sales/high-velocity-sales-fo-team/startups-program/)
+* **GitLab for Startups**: [ハンドブック](/handbook/marketing/growth-marketing/growth-community-programs/#gitlab-for-startups-program)

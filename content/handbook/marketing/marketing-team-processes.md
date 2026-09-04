@@ -2,11 +2,11 @@
 title: "マーケティングチームプロセス - 私たちの働き方"
 description: "このページは、マーケティングチームのリソースとプロセスを格納することを目的としています。"
 upstream_path: /handbook/marketing/marketing-team-processes/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-01T01:50:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-04-27T16:37:34+01:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 <link rel="stylesheet" type="text/css" href="/stylesheets/biztech.css" />
@@ -157,7 +157,7 @@ www-gitlab-com リポジトリ (マーケティングの親リポジトリ) 内�
 1. エピックは、複数の Issue を含むプロジェクトを表します。(この目的のために「meta」Issue を使用しないでください。既存の meta Issue がある場合、`/promote` クイックコマンドを使用してエピックに昇格できます。)
     * エピックはグループレベルで存在します (例: 複数のマーケティングプロジェクトの Issue をエピックに追加できます)。
     * エピックは、エピックを所有するチームのグループラベルでラベル付けされます。
-1. トップ 3〜5 の戦略的イニシアチブは、`CMO` ラベルを使用してエピックで追跡されます。(他のエピックには CMO ラベルを適用しないでください。)
+1. トップ 3 〜 5 の戦略的イニシアチブは、`CMO` ラベルを使用してエピックで追跡されます。(他のエピックには CMO ラベルを適用しないでください。)
 1. Roadmap は、開始日と終了日を持つエピックの時間ベースの表示に使用されます。(例: イベントや時間ベースのキャンペーン)。
 
 ### ボードとラベル
@@ -188,9 +188,9 @@ www-gitlab-com リポジトリ (マーケティングの親リポジトリ) 内�
 
 マーケティング内の各部門は、「追加的」ラベルを持つことができます。これは、それぞれのチームのトラッキングとワークフローを強化するために使用されることを意味します。これらの「追加的」ラベルは、より広い [Marketing ラベル](#boards-and-labels) と組み合わせて使用されます。部門ラベルの使用は、それぞれのハンドブックページにドキュメント化されています:
 
-* [Marketing Programs](/handbook/marketing/integrated-marketing/digital-strategy/)
+* [Marketing Programs](/handbook/marketing/growth-marketing/digital-agency/)
 * [Operations](/handbook/marketing/marketing-operations/)
-* [Sales Development Organization](/handbook/marketing/sales-development/)
+* [Sales Development Organization](/handbook/sales/sales-development/)
 * [Account Based Marketing](/handbook/marketing/account-based-marketing/)
 
 ### デフォルトの Issue テキスト

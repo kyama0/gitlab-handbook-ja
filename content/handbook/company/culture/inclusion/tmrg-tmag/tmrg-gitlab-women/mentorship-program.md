@@ -1,15 +1,15 @@
 ---
 title: "Women TMRG が主催する GitLab メンターシッププログラム"
-description: "Women TMRG、GitLab L&D チーム、GitLab DIB チームのパートナーシップによる GitLab の女性向けメンタリング機会"
+description: "GitLab で女性を自認する方を第一に対象とし、メンターの参加状況に応じてすべての方に開かれるメンターシップの機会。本プログラムは Women TMRG、他の TMxG、GitLab DIB チームのパートナーシップによって支援されます"
 upstream_path: "/handbook/company/culture/inclusion/tmrg-tmag/tmrg-gitlab-women/mentorship-program/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T12:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-14T10:08:55+00:00"
+lastmod: "2026-09-02T14:21:13-07:00"
 ---
 
-Women TMRG が主催する GitLab メンターシッププログラムは、参加者が組織全体で信頼を築き、内部での成長・発展への道を開き、チーム間のコラボレーションを促進するための 5 か月間のキャリア開発の機会です。本プログラムは Women TMRG が主催しています。
+Women TMRG が主催する GitLab メンターシッププログラムは、参加者が組織全体で信頼を築き、内部での成長・発展への道を開き、チーム間のコラボレーションを促進するための 5 か月間のキャリア開発の機会です。
 
 質問・コメント・フィードバックは [#women-at-gitlab-mentorship](https://app.slack.com/client/T02592416/C0219QJR1K5) Slack チャンネルに投稿してください。
 
@@ -188,9 +188,9 @@ GitLab における他のメンタリングリソースは[ハンドブックの
 
 - 状況に応じたコーチング（70.8%）
 - 傾聴（66.7%）
-- メンタリング（58.3%）
-- 自己認識（41.7%）
-- 共感（41.7%）
+- メンタリング（58.3）
+- 自己認識（41.7）
+- 共感（41.7）
 
 **メンティーが習得した上位 5 スキル**
 
@@ -198,7 +198,7 @@ GitLab における他のメンタリングリソースは[ハンドブックの
 - 自己アピール（57.1%）
 - リーダーシップ（52.4%）
 - 目標設定（47.6%）
-- 自己評価（47.6%）
+- 自己評価（47.6）
 
 **フィードバック**
 

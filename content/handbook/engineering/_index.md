@@ -45,7 +45,7 @@ GitLab のエンジニアリング文化は、すべて [GitLab Values](/handboo
 
 エンジニアリング・イノベーションは、エンジニアが新しいアイデアと Proof-of-Concept を探求することを奨励する、個人または小規模チームのコラボレーションを目的とした新しいプロセスです。これらのプロジェクトは通常、リーンで、時間制限があり、イテレーティブで、アイデアが実現可能な実験的機能や製品に発展する可能性があるかどうかを検証するように設計されています。[GitLab における Innovation ガイド](./workflow/engineering-innovation.md)を参照してください。
 
-### テクニカルロードマップ
+### テクニカルロードマップ {#technical-roadmaps}
 
 40% 時間予算の上記の例の一部は、グループの長期的なテクニカルロードマップを形成し、全体的なビジネス目標をサポートするために技術的な作業をどのように優先順位付けするのが最適かを判断するのに役立ちます。上記の例に加えて、以下を行います。
 
@@ -202,45 +202,45 @@ coverage タスクの割り当てのためのクロスファンクショナル�
 
 - [CTO Leadership Team](/handbook/engineering/cto-leadership-team/)
 - [Database Engineering](/handbook/engineering/development/database/)
-- [Development Principles](/handbook/engineering/development/principles/)
-- [Engineering Metrics](/handbook/product/groups/product-analysis/engineering/dashboards/)
-- [Engineering READMEs](/handbook/engineering/readmes/)
-- [Frequently Used Projects](/handbook/engineering/projects/)
+- [開発原則](/handbook/engineering/development/principles/)
+- [Engineering メトリクス](/handbook/product/groups/product-analysis/engineering/dashboards/)
+- [Engineering の README](/handbook/engineering/readmes/)
+- [よく使うプロジェクト](/handbook/engineering/projects/)
 - [GitLab Innovation Program](/handbook/legal/patent-program/) (GitLab 法務チームが管理)
-- [Mentorship](/handbook/people-group/learning-and-development/mentor/)
+- [メンターシップ](/handbook/people-group/learning-and-development/mentor/)
 - [Pajamas Design System](/handbook/upstream-studios/design-expression/design-system/)
-- [R&D Tax Credit Applications](/handbook/engineering/tax-credits)
+- [R&D 税額控除の申請](/handbook/engineering/tax-credits)
 
 ### ワークフロー
 
-- [Engineering Workflow](/handbook/engineering/workflow/)
-  - [Code Review](/handbook/engineering/workflow/code-review/)
-  - [Security Issues](/handbook/engineering/workflow/#security-issues)
-  - [Architecture Design](/handbook/engineering/architecture/workflow/)
-  - [Root Cause Analysis](/handbook/engineering/workflow/root-cause-analysis/)
-  - [Strategic Priority Codes](/handbook/engineering/workflow/strategic-priority-codes/)
-  - [Automation](/handbook/engineering/workflow/automation/)
-  - [GitLab Repositories](/handbook/engineering/workflow/gitlab-repositories/)
-  - [Hiring](/handbook/engineering/workflow/hiring/)
-  - [Demos](/handbook/engineering/workflow/demos/)
-  - [Cross-Functional Prioritization](/handbook/engineering/workflow/cross-functional-prioritization/)
-  - [Developer Onboarding](/handbook/engineering/workflow/developer-onboarding/)
-  - [Engineering Communication](/handbook/engineering/workflow/engineering-comms/)
-  - [Development Processes](/handbook/engineering/workflow/development-processes/)
-  - [Development Onboarding](/handbook/engineering/workflow/development-onboarding/)
-- [Issue Triage Policies](/handbook/product-development/how-we-work/issue-triage/)
-- [Contributing to Go projects](https://docs.gitlab.com/ee/development/go_guide/index.html)
-- [Wider Community Merge Request Triage Policies](/handbook/engineering/infrastructure-platforms/developer-experience/merge-request-triage/)
-- [Unplanned Critical Patch releases](/handbook/engineering/releases/patch-releases/#patch-release-types)
-- [Incident Management](/handbook/engineering/infrastructure-platforms/incident-management/)
+- [Engineering ワークフロー](/handbook/engineering/workflow/)
+  - [コードレビュー](/handbook/engineering/workflow/code-review/)
+  - [セキュリティ Issue](/handbook/engineering/workflow/#security-issues)
+  - [アーキテクチャ設計](/handbook/engineering/architecture/workflow/)
+  - [根本原因分析](/handbook/engineering/workflow/root-cause-analysis/)
+  - [戦略的優先度コード](/handbook/engineering/workflow/strategic-priority-codes/)
+  - [自動化](/handbook/engineering/workflow/automation/)
+  - [GitLab リポジトリ](/handbook/engineering/workflow/gitlab-repositories/)
+  - [採用](/handbook/engineering/workflow/hiring/)
+  - [デモ](/handbook/engineering/workflow/demos/)
+  - [クロスファンクショナルな優先順位付け](/handbook/engineering/workflow/cross-functional-prioritization/)
+  - [開発者オンボーディング](/handbook/engineering/workflow/developer-onboarding/)
+  - [Engineering のコミュニケーション](/handbook/engineering/workflow/engineering-comms/)
+  - [開発プロセス](/handbook/engineering/workflow/development-processes/)
+  - [開発オンボーディング](/handbook/engineering/workflow/development-onboarding/)
+- [Issue トリアージポリシー](/handbook/product-development/how-we-work/issue-triage/)
+- [Go プロジェクトへのコントリビュート](https://docs.gitlab.com/ee/development/go_guide/index.html)
+- [幅広いコミュニティのマージリクエストトリアージポリシー](/handbook/engineering/infrastructure-platforms/developer-experience/merge-request-triage/)
+- [計画外の重要パッチリリース](/handbook/engineering/releases/patch-releases/#patch-release-types)
+- [インシデント管理](/handbook/engineering/infrastructure-platforms/incident-management/)
 
 ### 本番環境の GitLab
 
-- [Workflow Diagram](/handbook/engineering/workflow/related-workflows/)
-- [Error Budgets](/handbook/engineering/error-budgets/)
-- [Performance of GitLab](/handbook/engineering/performance/)
-- [Monitoring of GitLab.com](/handbook/engineering/monitoring/)
-- [Production Readiness Guide](https://gitlab.com/gitlab-com/gl-infra/readiness/-/blob/master/.gitlab/issue_templates/production_readiness.md)
+- [ワークフロー図](/handbook/engineering/workflow/related-workflows/)
+- [エラーバジェット](/handbook/engineering/error-budgets/)
+- [GitLab のパフォーマンス](/handbook/engineering/performance/)
+- [GitLab.com のモニタリング](/handbook/engineering/monitoring/)
+- [本番環境対応ガイド](https://gitlab.com/gitlab-com/gl-infra/readiness/-/blob/master/.gitlab/issue_templates/production_readiness.md)
 
 ### 人材マネジメント
 

@@ -537,7 +537,7 @@ Marketing Ops はメールマーケティングデータベースの維持を担
 
 新しい Initial Source を追加したい場合は、Mops の誰かに [このシートに追加する](https://docs.google.com/spreadsheets/d/1s0n1vrcROrG7qjJ55hz3qs5UyOLvSO-ljEx4IT5ENf4/edit?gid=2063842207#gid=2063842207) よう依頼してください。新しい初期ソースとバケットが追加されると、自動的にレポーティングに反映されます。使用する前に SFDC に追加するために、sales systems の Issue も必要となります。
 
-## Lead と Contact のステータス
+## Lead と Contact のステータス {#lead-and-contact-statuses}
 
 Salesforce の Lead および Contact オブジェクトは、以下の定義で統一されたステータスを持っています。ステータス間の遷移方法については [Re-MQL workflow](/handbook/marketing/marketing-operations/marketo/#re-mql) も参照してください。lead/contact ステータスや Lifecycle Classification を含む当社のライフサイクル管理についての詳細は、[こちら](/handbook/marketing/marketing-operations/lead-lifecycle/) を参照してください。
 

@@ -1,11 +1,11 @@
 ---
 title: "セールスプレイ: GitOps によるインフラストラクチャ自動化"
 upstream_path: /handbook/marketing/sales-plays/gitops/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-07T16:47:36-08:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
@@ -92,7 +92,7 @@ GitOps に関心を持つペルソナは、一般的に開発組織やエンジ�
 | **エコノミックバイヤー** | Director/VP/CIO of IT、Head of IT Infrastructure / Platform Engineering / Operations | SVP of Technology Operations、Sr. Manager Systems Engineering、Cloud Architect、Information Systems Architect |
 | **ユーザー** | SRE、Infra Engineer、Sys Admin、Platform Engineer - 動的に変化する弾力的な環境をサポートするために、頻繁な繰り返しタスクを実行する必要がある | DevOps エンジニア、Architect、Team Lead、DevOps Ninja |
 
-詳細は[こちら](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/#personas)
+詳細は[こちら](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/#personas)
 
 ### 注意すべきキーワード {#keywords}
 
@@ -127,7 +127,7 @@ GitOps に関心を持つペルソナは、一般的に開発組織やエンジ�
 | - 適切な担当者によって変更がレビュー・承認され、ステージング/本番環境への混乱を最小限に抑えられるようにできていますか。 | 不正な変更が本番環境にリリースされ、パフォーマンスの問題やダウンタイムが発生する可能性が高くなる、ハイスキル/高給なリソースが雑用をしている可能性がある |
 | - インフラチームは、毎回環境をセットアップする手順を一貫して再現できますか。 | 標準化なし、手作業のプロセス - よりエラーが起きやすい |
 
-その他の質問は[こちら](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/#discovery-questions)
+その他の質問は[こちら](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/#discovery-questions)
 
 ### 共通のベネフィット {#common-benefits}
 
@@ -161,7 +161,7 @@ GitOps に関心を持つペルソナは、一般的に開発組織やエンジ�
 
 他のベンダーとは異なり、GitLab による GitOps は、物理、仮想、クラウドネイティブのインフラを管理するのに役立ちます。Terraform、AWS Cloud Formation などの業界をリードするインフラ自動化ツールとの緊密な統合を活用し、あなたの状況に合わせて対応します。これらすべてが 1 つのアプリケーションで実現します。
 
-GitLab が市場要件をどのように満たしているかの詳細セクションは[こちら](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/#market-requirements)
+GitLab が市場要件をどのように満たしているかの詳細セクションは[こちら](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/#market-requirements)
 
 ### 差別化要因（GitLab はどうやってそれをよりうまく実現するのか） {#differentiators-how-gitlab-does-it-better}
 
@@ -170,14 +170,14 @@ GitLab が市場要件をどのように満たしているかの詳細セクシ�
 - ほとんどの競合は主にクラウドネイティブをサポート - GitLab はオンプレミスとクラウド、物理、仮想、クラウドネイティブのインフラをサポートしながら顧客に対応します
 - エージェントベースとエージェントレスのアプローチ - 顧客が自分の環境に合った正しいアプローチを選択できます
 
-詳細は[こちら](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/#top-3-differentiators)
+詳細は[こちら](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/#top-3-differentiators)
 
 ### 競合
 
 主要競合: Flux (Weaveworks)、Argo CD、Terraform Cloud
 副次的競合: Codefresh、Transposit、Red Hat/IBM
 
-主要競合に対する詳細な競合比較は[こちら](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/#competitive-comparison)
+主要競合に対する詳細な競合比較は[こちら](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/#competitive-comparison)
 
 ### 反論への対処 {#handling-objections}
 
@@ -188,7 +188,7 @@ GitLab が市場要件をどのように満たしているかの詳細セクシ�
 - GitOps は開発者にデプロイをいじる機会をより多く与えてしまい、インフラチームはそれに不安を感じる
 - (Infra / DevOps Engineer) 自分の仕事と環境のコントロールを失ってしまう
 
-詳細な Q&A 一覧は[こちら](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/#objection-handling)
+詳細な Q&A 一覧は[こちら](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/#objection-handling)
 
 ## セールスプレイの戦術 {#sales-tactics}
 
@@ -220,7 +220,7 @@ GitOps の会話で先導する必要があるかをどう判断するか。
 
 1. GitOps 関連の[顧客リファレンス](#customer-stories)を共有
 1. [GitOps の Pathfactory トラック](https://learn.gitlab.com/l/gitops-gtm-content)の一部であるテクニカルデモやウェビナーを共有
-1. [Gartner Peer Insights](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/#gartner-peer-insights) を共有
+1. [Gartner Peer Insights](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/#gartner-peer-insights) を共有
 1. SA と協力して GitOps のテクニカルデモを披露
 1. 通話後、GitOps の会話のためにカスタマイズされた[GitOps デモメールテンプレート](https://docs.google.com/document/d/1uvZPw39OAExz7sIivIlPi3jNlUXKodVNy0mmIb-X0Cs/edit#)を顧客にメールで送信することを検討してください。
 
@@ -310,7 +310,7 @@ GitOps のロールアウトを支援するアドバイザリー/コンサルテ
 ### ウェビナー、e-book、ホワイトペーパー、動画 {#resources-list}
 
 - 顧客と共有するための [GitOps の Pathfactory トラック](https://learn.gitlab.com/l/gitops-gtm-content)
-- プレゼンテーション、Web ページ、ホワイトペーパー、ブログ、動画の完全な一覧は[こちら](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/#resources)で利用可能です。
+- プレゼンテーション、Web ページ、ホワイトペーパー、ブログ、動画の完全な一覧は[こちら](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/#resources)で利用可能です。
 - GitOps [イネーブルメントプレゼンテーション](https://docs.google.com/presentation/d/1o728pUdk1rrNqWAZpzZVdfZ3gzADvTXSssVzqL-6WB4/edit#slide=id.g8d846209b0_25_172)
 
 ### 顧客事例 {#customer-stories}
@@ -324,12 +324,12 @@ GitOps のロールアウトを支援するアドバイザリー/コンサルテ
 - [ValidaTek](https://learn.gitlab.com/gitops-gtm-all/valida-tek-iac?lx=AZeFEd)
 さらに多くは[こちら](https://learn.gitlab.com/l/gitops-gtm-content)
 
-- [Gartner Peer Insights](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/#gartner-peer-insights)
+- [Gartner Peer Insights](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/#gartner-peer-insights)
 
 ### SFDC での Last interesting moment と最も閲覧されたコンテンツの確認方法 {#lim-anchor}
 
 - Last interesting moment は SFDC の Marketing info セクションにあります
-![Last Interesting Moment](/images/marketing/sales-plays/gitops/gitops-last-interesting-moment.png)
+![最後の重要なモーメント](/images/marketing/sales-plays/gitops/gitops-last-interesting-moment.png)
 
 - 時間で並べた最も消費されたコンテンツは SFDC の Pathfactory for sales セクションにあります
-![Top Content Consumed](/images/marketing/sales-plays/gitops/gitops-top-content-consumed.png)
+![最も多く閲覧されたコンテンツ](/images/marketing/sales-plays/gitops/gitops-top-content-consumed.png)

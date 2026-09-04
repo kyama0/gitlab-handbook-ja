@@ -2,20 +2,20 @@
 title: "ユーザーペルソナの作成方法"
 description: "このページでは、高い信頼度でユーザーペルソナを作成するために必要な手順を詳細に説明します。"
 upstream_path: /handbook/product/ux/persona-creation/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:15:54+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T05:53:28-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 このハンドブックページでは、ユーザーペルソナを作成するプロセスのみを定義します。
 
 GitLab では、ユーザーのニーズと感情に焦点を当てたデータ駆動型の洞察に基づいて、2 種類のペルソナを作成し使用しています:
 
-- [ユーザーペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/) - UX 専門家とプロダクトマネージャー（PM）が、エンドユーザーのニーズ、動機、行動、スキルとつながるためのメカニズムとして使用します。プロダクトマネージャーが所有し、ペルソナ関連のリサーチ活動の DRI でもあります。
+- [ユーザーペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/) - UX 専門家とプロダクトマネージャー（PM）が、エンドユーザーのニーズ、動機、行動、スキルとつながるためのメカニズムとして使用します。プロダクトマネージャーが所有し、ペルソナ関連のリサーチ活動の DRI でもあります。
 
-- [バイヤーペルソナ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/) - ユーザーになる可能性のある潜在的な顧客の高レベルな目標に焦点を当てます。マーケティングチームが所有します。
+- [バイヤーペルソナ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/) - ユーザーになる可能性のある潜在的な顧客の高レベルな目標に焦点を当てます。マーケティングチームが所有します。
 
 この洞察に富んだ[UX Collective の記事](https://uxdesign.cc/while-we-are-talking-about-personas-what-exactly-are-we-talking-525a645eb61a)は、これらの違いやその他について詳しく説明しています。
 
@@ -23,7 +23,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 
 ## ユーザーペルソナを構成するものは？
 
-[GitLab のペルソナページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)の各ペルソナには、以下の特性が含まれている必要があります:
+[GitLab のペルソナページ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)の各ペルソナには、以下の特性が含まれている必要があります:
 
 - ジョブの概要 - 主要な焦点領域と、スキルおよび責任の一般的な説明を含むべきです
 - 代替タイトル
@@ -38,7 +38,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 - ワークフロー - ユーザーが通常タスクを完了するために行う一連のステップ
 - 協働するチーム - 責任の重複がある可能性のある、またはペルソナのワークフローが依存している、組織内のチーム
 
-私たちの[Simone（Software Engineer in Test）](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/#simone-software-engineer-in-test)は、これらの多くの良い例です。
+私たちの[Simone（Software Engineer in Test）](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/#simone-software-engineer-in-test)は、これらの多くの良い例です。
 
 追加の詳細すべてが必要なわけではないため、どれが有用かを知るためにステークホルダーと話し合うことが役立つ場合があります。疑問がある場合、ガイドラインとしては、詳細であるほど良いとされています。
 
@@ -48,7 +48,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 
 **各ステップの開始時と終了時に UX リサーチャーと相談することを強く推奨します。** これにより、活動を開始する際の成功に役立ち、データをレビューするための別の目を提供してもらえます。
 
-![Persona Creation Steps](/images/product/ux/persona-creation/persona-creation-steps.png)
+![ペルソナ作成手順](/images/product/ux/persona-creation/persona-creation-steps.png)
 
 ### ステップ 1: ステークホルダーとのミーティング {#step-1-meet-with-stakeholders}
 
@@ -66,7 +66,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 
 ### ステップ 2: 内部インタビュー {#step-2-internal-interviews}
 
-2 番目のステップは、作成するユーザーペルソナと同じまたは類似のジョブタイトルを持つ 5〜10 人の GitLab チームメンバーをインタビューすることです。このミーティングは約 30 分ですが、より多くの情報が必要な場合は、より多くの時間を確保することをお勧めします。
+2 番目のステップは、作成するユーザーペルソナと同じまたは類似のジョブタイトルを持つ 5 〜 10 人の GitLab チームメンバーをインタビューすることです。このミーティングは約 30 分ですが、より多くの情報が必要な場合は、より多くの時間を確保することをお勧めします。
 
 このステップの目的は、すでに収集された情報を拡張し、理解しようとしている人口と直接対話することです。これにより、適切な参加者に正しい質問をしていることを知るのに役立ちます。
 
@@ -86,7 +86,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 ### ステップ 3: より広い GitLab コミュニティのユーザーとユーザーペルソナを検証する
 
 これは重要なステップです！このステップの目的は、内部インタビューから派生した特性を検証して優先順位を付け、私たちの期待と実世界の発見との違いを確立することです。
-これらの司会者付きインタビューは約 1 時間かかるはずです。特定のペルソナのために 8〜10 人の参加者を募集し、市場の一般的な構成を反映する参加者に焦点を当てます。これらのインタビューの目的は、ユーザーとつながり、実際のユーザーデータでユーザーペルソナのフレームワークを埋めることです。
+これらの司会者付きインタビューは約 1 時間かかるはずです。特定のペルソナのために 8 〜 10 人の参加者を募集し、市場の一般的な構成を反映する参加者に焦点を当てます。これらのインタビューの目的は、ユーザーとつながり、実際のユーザーデータでユーザーペルソナのフレームワークを埋めることです。
 
 #### A) 参加者の募集とスケジューリング
 
@@ -139,7 +139,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 
 | 探すべき傾向                                                | 例                                                 |
 |------------------------------------------------------------------|---------------------------------------------------------|
-| 参加者の 50%以上が少数の回答を選択 | **回答 A: 60%** <br>回答 B: 20% <br>回答 C: 10% <br>回答 D: 10% |
+| 参加者の 50% 以上が少数の回答を選択 | **回答 A: 60%** <br>回答 B: 20% <br>回答 C: 10% <br>回答 D: 10% |
 | 他と比較した特定の回答の大きな落ち込み           | **回答 A: 40%** <br>**回答 B: 40%** <br>回答 C: 10% <br>回答 D: 10% |
 
 #### B) 結果の比較
@@ -148,7 +148,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 
 ### ステップ 5: マージリクエストを通じて新しいペルソナを公開する
 
-すべてのデータが収集され、要約されたら、[Roles & Personas ハンドブックページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)を更新する時が来ました。
+すべてのデータが収集され、要約されたら、[Roles & Personas ハンドブックページ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)を更新する時が来ました。
 
 既存のユーザーペルソナの 1 つからテキストをコピーし、現在記入されている最後のペルソナの下に貼り付けます。データを収集したペルソナの情報を編集し、ペルソナの名前とタイトルを含むすべての情報をダブルチェックします。
 
@@ -167,7 +167,7 @@ GitLab では、ユーザーのニーズと感情に焦点を当てたデータ�
 1. ステークホルダーは、対象のペルソナに関するすべての既知の情報を収集する必要があります。たとえば、これには顧客とのインタビューや、特定のペルソナに関する以前にリサーチされた JTBD ステートメントが含まれます。
 1. ペルソナに関するすべての既存データをマッピングして、ステークホルダーが一度にすべての情報を視覚化できるようにする必要があります。ペルソナ間の重複の量を評価する 1 つの方法は、[ベン図](https://www.lucidchart.com/pages/tutorial/venn-diagram)です。
 
-![PersonaVennDiagram](/images/product/ux/persona-creation/PersonaVennDiagram.png)
+![ペルソナのベン図](/images/product/ux/persona-creation/PersonaVennDiagram.png)
 
 1. ベン図を作成する際に従うべき一般的なガイドラインがいくつかあります:
     1. 対象のペルソナ間で類似する箇条書きの数（つまり、jobs to be done、動機、フラストレーションの合計数）が、異なる箇条書きの数**より多い**場合、ペルソナを統合できます。

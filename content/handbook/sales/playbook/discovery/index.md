@@ -2,18 +2,18 @@
 title: "効果的なディスカバリー"
 description: "効果的なディスカバリーは、顧客のニーズを徹底的に理解するために重要であり、GitLab の価値と差別化を魅力的で顧客中心の方法で効果的に明確化できる基盤を確立します"
 upstream_path: /handbook/sales/playbook/discovery/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:03:43+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-28T05:53:28-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
 
 効果的なディスカバリーは、顧客のニーズを徹底的に理解するために重要であり、GitLab の価値と差別化を魅力的で顧客中心の方法で効果的に明確化できる基盤を確立します。効果的なディスカバリーは、顧客の最大の課題に結び付き、より上位のビジネスステークホルダーへのアクセスを獲得し、顧客の信頼されるアドバイザーとして機能するのに役立ちます。これは、健全で予測可能なパイプラインを構築・維持し、顧客がビジネス目標を達成するのを支援しながら、セールス目標を達成・超過するのに役立ちます。以下の情報をレビューした後、GitLab フィールドチームメンバーは GitLab Learn のインタラクティブな [Effective Discovery コース](https://gitlab.edcast.com/insights/ECL-c0a6e34d-a997-4200-b0d9-65e3305e3761) を受講することが推奨されます。
 
-![discovery-components-visual](/images/sales/playbook/discovery/discovery-components-visual.png)
+![ディスカバリーの構成要素](/images/sales/playbook/discovery/discovery-components-visual.png)
 
 ## 資格認定
 
@@ -60,8 +60,8 @@ lastmod: "2026-07-28T05:53:28-07:00"
 
 見込み顧客の組織内のさまざまな役割は、本質的に異なるものを気にし、異なるものに動機付けられます。あなたが関与しているペルソナの課題と動機を理解するために、以下のリソースを活用してください。
 
-- [Buyer personas](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)
-- [User personas](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)
+- [Buyer personas](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)
+- [User personas](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)
 
 <!-- blank line -->
 <figure class="video_container">

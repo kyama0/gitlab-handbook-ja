@@ -2,11 +2,11 @@
 title: "Impartner"
 description: "PRM およびパートナーポータル"
 upstream_path: /handbook/marketing/marketing-operations/impartner/
-upstream_sha: eb9c7122b4259a2111ed65628e5384768922a597
-translated_at: "2026-05-01T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: claude
 stale: false
-lastmod: "2025-10-14T17:59:32+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 GitLab は、Channel および Alliance パートナー向けの主要な Partner Relationship Management（PRM）プラットフォーム、パートナーポータル、マーケティングセンターとして Impartner を使用しています。
@@ -15,9 +15,9 @@ GitLab は、Channel および Alliance パートナー向けの主要な Partne
 
 ## PRM MDF 承認 / プロセス
 
-Channel Marketing チームは、**チャネルパートナー** のマーケティングキャンペーンやイベントを支援するために Market Development Funds（市場開拓資金）を提供しています。チャネルパートナーは MDF リクエストおよびクレームをパートナーポータルから提出し、それらは精算前に承認される必要があります。
+Partner Marketing チームは、**チャネルパートナー** のマーケティングキャンペーンやイベントを支援するために Market Development Funds（市場開拓資金）を提供しています。チャネルパートナーは MDF リクエストおよびクレームをパートナーポータルから提出し、それらは精算前に承認される必要があります。
 
-このプロセスは Iteration 2 に反映されています。[フローチャートを参照](https://www.figma.com/board/5JXv8yRHDyXttWt669A67E/MDF-Process-Iterations?node-id=0-1&p=f&t=PhdMoT9RvpJz9VKz-0)してください。
+このプロセスはイテレーション 2 に反映されています。[フローチャートを参照](https://www.figma.com/board/5JXv8yRHDyXttWt669A67E/MDF-Process-Iterations?node-id=0-1&p=f&t=PhdMoT9RvpJz9VKz-0)してください。
 
 <iframe style="border: 1px solid rgba(0, 0, 0, 0.1);" width="800" height="450" src="https://embed.figma.com/board/5JXv8yRHDyXttWt669A67E/MDF-Process-Iterations?node-id=0-1&embed-host=share" allowfullscreen></iframe>
 
@@ -140,7 +140,7 @@ MDF リクエストにアクセスするには、PRM へ移動して `MDF` タ�
 
 ### チャネルパートナー リードフロー概要
 
-**チャネルパートナー** は Channel Marketing チームと協力し、プロスペクトに共有するキャンペーンを作成できます。[キャンペーンタイプ](/handbook/marketing/channel-marketing/#types-of-partner-campaigns) には、Partner sponsored、MDF funded、ジョイントパートナーキャンペーンが含まれます。
+**チャネルパートナー** は Partner Marketing チームと協力し、プロスペクトに共有するキャンペーンを作成できます。[キャンペーンタイプ](/handbook/marketing/growth-marketing/partner-and-industry-marketing/#types-of-partner-campaigns)には、Partner sponsored、MDF funded、ジョイントパートナーキャンペーンが含まれます。
 
 フローは Marketo > Salesforce > Traction > Impartner の順で進みます。
 

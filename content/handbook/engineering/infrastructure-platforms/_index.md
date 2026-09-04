@@ -2,14 +2,14 @@
 title: "Infrastructure Platforms"
 description: "Infrastructure Platforms 部門は GitLab SaaS プラットフォームおよびサポートサービスの可用性、信頼性、パフォーマンス、スケーラビリティに責任を持ちます"
 upstream_path: "/handbook/engineering/infrastructure-platforms/"
-upstream_sha: "f469f09c3347a37927c75866af3d2611a5421062"
-lastmod: 2026-07-15T17:51:54+00:00
-translated_at: "2026-07-16T06:52:34+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+lastmod: "2026-08-28T15:18:47+10:00"
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: codex
 stale: false
 ---
 
-## ミッション
+## ミッション {#mission}
 
 Infrastructure Platforms として、私たちのミッションは、高可用性・信頼性・高性能・スケーラブルなインフラソリューションを構築し、総所有コストを最低限に抑えながら、GitLab が SaaS および Self-Managed プラットフォーム全体で単一の DevSecOps プラットフォームを提供できるようにすることです。
 
@@ -21,13 +21,13 @@ Infrastructure Platforms として、私たちのミッションは、高可用�
 
 GitLab.com の可用性問題について Infrastructure Platforms チームにアラートを出したい GitLab チームメンバーは、インシデントの報告方法に関する簡単な手順をこちらで確認してください: [インシデントの報告](/handbook/engineering/infrastructure-platforms/incident-management/#reporting-an-incident)。
 
-その他のすべての問い合わせについては、[getting assistance](/handbook/engineering/infrastructure-platforms/getting-assistance/) ページを参照してください。
+その他のすべての問い合わせについては、[サポートの取得](/handbook/engineering/infrastructure-platforms/getting-assistance/)ページを参照してください。
 
 ## 方向性
 
 Platforms セクション内で推進されるイニシアチブは、複数四半期にまたがることが多く、[SaaS Platforms セクションエピック](https://gitlab.com/groups/gitlab-com/-/epics/2115) (GitLab チームメンバー) に表現されています。
 
-{{% include "includes/engineering/we-are-also-product-development.md" %}}
+<!-- include omitted: includes/engineering/we-are-also-product-development.md (no localized version under content/ja/) -->
 
 ## 組織構造
 
@@ -44,7 +44,7 @@ flowchart LR
     I --> GD[GitLab Dedicated]
     click GD "/handbook/engineering/infrastructure-platforms/gitlab-dedicated/"
     I --> PRODENG[Production Engineering]
-    click PRODEND "/handbook/engineering/infrastructure-platforms/production-engineering/"
+    click PRODENG "/handbook/engineering/infrastructure-platforms/production-engineering/"
     I --> SD[GitLab Delivery]
     click SD "/handbook/engineering/infrastructure-platforms/gitlab-delivery/"
     I --> TS[Tenant Scale]
@@ -60,6 +60,8 @@ flowchart LR
     click Runway "/handbook/engineering/infrastructure-platforms/gitlab-delivery/runway/"
     PRODENG --> CCU[Cloud Cost Utilization]
     click CCU "/handbook/engineering/infrastructure-platforms/production-engineering/cloud-cost-utilization/"
+    PRODENG --> Fleet[Fleet Management]
+    click Fleet "/handbook/engineering/infrastructure-platforms/production-engineering/fleet-management/"
 
     DE --> DevA[Development Analytics]
     click DevA "/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/"
@@ -136,7 +138,7 @@ Infrastructure Platforms 部門のプロジェクトの分類は、[インフラ
 
 ## テクニカルロードマップ
 
-Infrastructure は、短期 (1年)、中期 (2年)、長期 (3年) のプロジェクト計画のための [テクニカルロードマップ](/handbook/engineering/#technical-roadmaps) を維持しています。
+Infrastructure は、短期 (1 年)、中期 (2 年)、長期 (3 年) のプロジェクト計画のための [テクニカルロードマップ](/handbook/engineering/#technical-roadmaps) を維持しています。
 これは私たちの戦略的な羅針盤として機能し、
 即時のニーズと長期的な持続可能性のバランスを取るのに役立ちます。
 
@@ -146,7 +148,7 @@ Infrastructure は、短期 (1年)、中期 (2年)、長期 (3年) のプロジ�
 エンジニアリングマネージャーは「いつ」(スケジューリング) を計画します。
 この包括的なロードマップは、持続可能な方法で高品質で完全な機能を構築することを重視しています。
 
-テクニカルロードマップには3つの重要な目的があります。
+テクニカルロードマップには 3 つの重要な目的があります。
 
 1. プロダクトバックログに表れない可能性のある重要な領域に対処することで、エンジニアリングの卓越性を構築するのに役立ちます。
    例えば技術的負債、パフォーマンス改善、プラットフォーム改善、システムのスケーラビリティなどです。
@@ -211,7 +213,7 @@ Infrastructure ロードマップの変更方法の完全な手順は、
 |-----------|-----------|
 | [#infrastructure_-_platforms](https://gitlab.slack.com/archives/C02D1HQRTKQ) | 部門レベルのアイテムでここで協力します。このチャンネルは、より広いチームと重要な情報を共有するために使用されますが、Platforms 内のすべてのチームを共通のトピックで整合させる役割も果たします。 |
 | [#g_infrastructure_platforms_leads](https://gitlab.slack.com/archives/C010QV6RRB3) | マネージャー向けのコミュニケーション。トピックに興味がある方なら誰でもこのチャンネルに参加できます。 |
-| [confidential managers channel](https://gitlab.enterprise.slack.com/archives/C0808MLEXL1) | 追加の調整が必要なすべてのチームに影響する人員配置の問題を議論するために使用されます。可能な限りパブリックチャンネルを使うことをデフォルトとします。|
+| [機密マネージャーチャンネル](https://gitlab.enterprise.slack.com/archives/C0808MLEXL1) | 追加の調整が必要なすべてのチームに影響する人員配置の問題を議論するために使用されます。可能な限りパブリックチャンネルを使うことをデフォルトとします。|
 | [#infrastructure_platforms_social](https://gitlab.enterprise.slack.com/archives/C062T669RFD) | 私たちの社交チャンネル。 |
 
 **Dedicated**
@@ -265,7 +267,7 @@ SaaS Platforms グループは、ヘルプリクエストを徐々に [#infrastr
 
 #### ミーティング
 
-週に1度、`Platforms leads call` を開催し、キャリア開発に関するアクションアイテムを整合させ、一般的な方向性、または非同期で対応されていない進行中の質問に答えます。当日朝にトピックが追加されていない場合、コールはキャンセルされます。
+週に 1 度、`Platforms leads call` を開催し、キャリア開発に関するアクションアイテムを整合させ、一般的な方向性、または非同期で対応されていない進行中の質問に答えます。当日朝にトピックが追加されていない場合、コールはキャンセルされます。
 
 `Platforms leads call` に加えて、[SaaS Platforms リーダーシップカレンダー](https://calendar.google.com/calendar/embed?src=c_8a81f7acc76d72b8e4189a61f7a259b9d722e3fe1e05693236f592e7dd52e83b%40group.calendar.google.com) で見られる定期的なイベントとリマインダーがあります。これをカレンダーに追加して、さまざまなイベントの最新情報を入手してください。
 
@@ -331,7 +333,7 @@ Engineering リーダーシップと Engineering Manager は毎週集まり、�
 - **Issue 作成**: Slack ボットは、確認応答するエージェントが割り当てられた Issue を作成します。
 - **スレッドアタッチ**: メッセージに対応する Slack スレッドも、作成された GitLab Issue に投稿されます。
 - **ラベル割り当て**: エージェントは Slack メッセージにラベル絵文字 (`ops`、`foundations`、`observability`) を追加することで Issue をさらに分類できます。このアクションは、Issue をそれぞれのチーム: Ops、Foundations、Observability に自動的に割り当てます。
-- **プロジェクト追跡**: これらの変換された Issue は、[Infrastructure Lounge Slack Issue Tracker](https://gitlab.com/gitlab-com/gl-infra/infrastructure_platforms-slack-issue-tracker) でホストされる専用プロジェクトの下で追跡されます。
+- **プロジェクト追跡**: これらの変換された Issue は、[Infrastructure Lounge Slack Issue トラッカー](https://gitlab.com/gitlab-com/gl-infra/infrastructure_platforms-slack-issue-tracker)でホストされる専用プロジェクトの下で追跡されます。
 - **Issue クロージャ**: エージェント／要求者は、`resolved_emojis` (私たちのケースでは `green-circle-check`、`white_check_mark` または `checked`) のいずれかを追加することで解決時に Issue をクローズできます。
 
 #### 設定

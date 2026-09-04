@@ -1,11 +1,11 @@
 ---
 title: "Developer Relations のイベント"
 upstream_path: /handbook/marketing/developer-relations/events/
-upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
-translated_at: "2026-08-06T07:24:45+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-05T12:28:06-04:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 イベントは、GitLab と Developer Relations チームが顧客や広範な GitLab コミュニティとつながるための優れた手段です。
@@ -27,13 +27,13 @@ GitLab の Developer Relations チームは、[GitLab ハッカソン](https://a
 
 Corporate Events には、[KubeCon](https://about.gitlab.com/events/kubecon/)や [AWS Re:Invent](https://about.gitlab.com/events/aws-reinvent/)のような大規模な参加者を集めるカンファレンス、ユーザーカンファレンス（[DevSecOps World Tour](https://about.gitlab.com/events/devsecops-world-tour/)）、社内カンファレンス（GitLab Summit）などが含まれます。
 
-Corporate Marketing Events について詳しくは、[GitLab ハンドブックの「Corporate Event Marketing」ページ](/handbook/marketing/integrated-marketing/corporate-events/)をご覧ください。
+Corporate Marketing Events について詳しくは、[GitLab ハンドブックの「Corporate Event Marketing」ページ](/handbook/marketing/growth-marketing/corporate-events/)をご覧ください。
 
 ### Field Marketing Events
 
 Field Marketing Events は、対面およびバーチャルでのインタラクションを通じて、地域レベルで Large、Mid-Market、Public Sector の go-to-market チームを戦略的に支援するイベントです。
 
-Field Marketing Events について詳しくは、[GitLab ハンドブックの Field Marketing ページ](/handbook/marketing/field-marketing/)をご覧ください。
+Field Marketing Events について詳しくは、[GitLab ハンドブックの Field Marketing ページ](/handbook/marketing/growth-marketing/regional-marketing/)をご覧ください。
 
 ## イベント参加の評価基準
 
@@ -111,7 +111,7 @@ Developer Advocate チームは、イベント用のコンテンツを作成し�
 
 3. **Slack で結果を共有**: `#developer-relations` または `#whats-happening-at-gitlab` に以下を含むアップデートを投稿:
    - 主要指標（参加者数、獲得リード、実施したデモ）
-   - 上位 2〜3 件の洞察や学び
+   - 上位 2 〜 3 件の洞察や学び
    - 完全なレポートへのリンク
 
 4. **週次アップデートに追加**: リーダーシップに見えるよう、DevRel & Strategy の週末アップデートドキュメントにイベントレポートを含めます。
@@ -136,7 +136,7 @@ Developer Advocate チームは、イベント向けコンテンツの作成に�
 
 Developer Relations チームのメンバーは、イベントでライトニングトークを行うことで参加します。セッションの長さは、イベントの要件に応じて短いもの（5 分）から長いもの（20 分）まであります。チームメンバー、GitLab パートナー、広範なコミュニティメンバーがライトニングトークを発表します。
 
-トピックは、インフォーマルなものから技術的・文化的な洞察まで多岐にわたり、時間が許せばライブデモで内容を充実させることもあります。トピックは、[Corporate Events チーム](/handbook/marketing/integrated-marketing/corporate-events/)と協力して、ライトニングトーク CFP を通じて方向性を合わせています。例として [KubeCon NA 2023（社内）](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/issues/8318)があります。
+トピックは、インフォーマルなものから技術的・文化的な洞察まで多岐にわたり、時間が許せばライブデモで内容を充実させることもあります。トピックは、[Corporate Events チーム](/handbook/marketing/growth-marketing/corporate-events/)と協力して、ライトニングトーク CFP を通じて方向性を合わせています。例として [KubeCon NA 2023（社内）](https://gitlab.com/gitlab-com/marketing/corporate_marketing/corporate-marketing/-/issues/8318)があります。
 
 ライトニングトークの推奨構成は以下のとおりです。
 
@@ -244,7 +244,7 @@ Developer Advocacy チームは、必要に応じて新規および経験豊富�
 
 ## コードチャレンジ
 
-コードチャレンジは、イベント参加者が GitLab を使用したり、GitLab に直接貢献したりする方法を提供します。これらのチャレンジは、GitLab を使って特定の問題を解決するというものです。チャレンジは通常、Developer Advocates が [Corporate Events チーム](/handbook/marketing/integrated-marketing/corporate-events/)や他のチームと協力して調整するイベントで開催されます。
+コードチャレンジは、イベント参加者が GitLab を使用したり、GitLab に直接貢献したりする方法を提供します。これらのチャレンジは、GitLab を使って特定の問題を解決するというものです。チャレンジは通常、Developer Advocates が [Corporate Events チーム](/handbook/marketing/growth-marketing/corporate-events/)や他のチームと協力して調整するイベントで開催されます。
 
 [CodeChallenge.dev](https://codechallenge.dev/)は、GitLab の機能に紐づいたチャレンジを作成するためのアプリケーションです。アプリケーションの使い方については [ドキュメント](https://docs.codechallenge.dev/en/introduction/)を確認してください。
 
@@ -254,7 +254,7 @@ Developer Advocacy チームは、必要に応じて新規および経験豊富�
 ## スポンサーシップ
 
 GitLab の Developer Relations チームは、イベントスポンサーシップ用の予算を保有・配分していません。
-すべてのイベントスポンサーシップのリクエストは、[Corporate Events](/handbook/marketing/integrated-marketing/corporate-events/) または [Field Marketing](/handbook/marketing/field-marketing/)に送ってください。[スポンサーシップ対象イベントの提案に関する判断パス](/handbook/marketing/events/#suggesting-an-event)に従ってください。
+すべてのイベントスポンサーシップのリクエストは、[Corporate Events](/handbook/marketing/growth-marketing/corporate-events/) または [Field Marketing](/handbook/marketing/growth-marketing/regional-marketing/)に送ってください。[スポンサーシップ対象イベントの提案に関する判断パス](/handbook/marketing/events/#suggesting-an-event)に従ってください。
 
 ### 学生主催のハッカソン
 

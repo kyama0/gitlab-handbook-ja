@@ -2,11 +2,11 @@
 title: "セールスプロスペクティング"
 description: "プロスペクティングは、自社の製品やサービスに対する潜在顧客、クライアント、買い手を探すことで新規ビジネスを開始し開発するプロセスです"
 upstream_path: /handbook/sales/prospecting/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-09-19T15:27:03+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## GitLab におけるプロスペクティングとは？
@@ -39,7 +39,7 @@ lastmod: "2025-09-19T15:27:03+00:00"
 
 目標から逆算することで、成功するために必要なアカウント数と Opportunity 数を計算できます。ターゲットリストを見るときは、今買う可能性が高いものと 1 年以上かかるものをミックスして含めるようにしてください。戦略的パートナーシップには時間がかかるため、リストとアウトリーチの両方を多様化する必要があります。
 
-[セールスデベロップメントチームメンバー](/handbook/marketing/sales-development/#working-with-sales) と連携して次のことを行います:
+[セールスデベロップメントチームメンバー](/handbook/sales/sales-development/) と連携して次のことを行います:
 
 - テリトリープランへのインプットと、それが彼らのアクティビティとどうマッピングされるかを得る。
 - [6Sense](/handbook/marketing/marketing-operations/6sense/) でアクティビティとエンゲージメントをレビューする。
@@ -64,7 +64,7 @@ lastmod: "2025-09-19T15:27:03+00:00"
 
 **パートナーと連携する:** チャネルアカウントマネージャー (CAM) と連携し、ピアと話したり、[Partner Directory](https://partners.gitlab.com/English/directory/) を使って、特定のアカウントをサポートしターゲットコンタクトまたはステークホルダーへのインサイトを提供できるパートナーがいるかを特定します。
 
-**リージョナルマーケティングと連携する:** 自分の地域で現在スケジュールされているイベントを把握し、自分の整合するリージョナルマーケターの名前は [こちら](/handbook/marketing/field-marketing/#regional-marketing-manager-support) でご確認ください。
+**リージョナルマーケティングと連携する:** 自分の地域で現在スケジュールされているイベントを把握し、自分の整合するリージョナルマーケターの名前は [こちら](/handbook/marketing/growth-marketing/regional-marketing/#regional-marketing-manager-support) でご確認ください。
 
 GitLab Unfiltered でホストされている下記の YouTube ビデオを視聴して、AE が結果を出すために通常どのようにセールスデベロップメントチームメンバーと連携するかをご覧ください。これらを視聴するには、まず YouTube アカウントを GitLab Unfiltered アカウントに切り替える必要があることを忘れないでください。[これに関する手順は、ここで YouTube ハンドブックページをご覧ください。](/handbook/marketing/marketing-operations/youtube/#unable-to-view-a-video-on-youtube)
 
@@ -94,7 +94,7 @@ GitLab のチームは、プロスペクティングと顧客中心のアクテ�
 
 - 信念:
   - アウトバウンドアクティビティのために水曜日をブロックする
-  - 週の 20%以上をお客様との対面ミーティングに専念する
+  - 週の 20% 以上をお客様との対面ミーティングに専念する
   - お客様とのライブ同期を優先し、彼らがそれを行いやすくする
   - より多くの顧客ミーティングを持つのに役立つアクティビティとリソースを推進する
   - ONE チームとして顧客中心性を示すために利用可能である
@@ -112,9 +112,9 @@ Outbound Wednesdays は強制ではありません。ただし、Americas Enterp
 
 **検証、検証、検証。** 効果的なクオリフィケーションは最初のステップにすぎません。見込み客に投資する際は、セールスサイクル全体を通じて Opportunity を継続的に検証し、結果を出せるか、また私たちが見込み客にとって効果的なソリューションであるかを確認することが重要です。
 
-**Opportunity を検証するためにデータを使用する。** 見込み客が考えを変えると 'hope' しているために大きな賭けをしているなら、検証プロセスに戻る必要があるサインです:
+**Opportunity を検証するためにデータを使用する。** 見込み客が考えを変えることを「期待」しているために大きな賭けをしているなら、検証プロセスに戻る必要があるサインです:
 
-- このディールが 'real' であるという証拠は何ですか？
+- このディールに「実現性」があるという証拠は何ですか？
 - 今期または次期に発生することをどのデータが示していますか？
 - 議論されていないことは通常、何かが計画通りに進んでいないサインです。たとえば、彼らの契約プロセスを内外から知っていますか？後で取引を脱線させる可能性のあるチームのメンバーを把握していますか？
 
@@ -141,8 +141,8 @@ Outbound Wednesdays は強制ではありません。ただし、Americas Enterp
 
 ### サポート
 
-- [Regional Marketing Support](/handbook/marketing/field-marketing/#regional-marketing-manager-support) と [Regional Marketing events calendar](https://app.asana.com/1/306855239930259/project/1209020056902315/calendar/1209020173960870)
-- [Compete support](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/competitive-intelligence/#account-specific-support) と [Competition Slack channel](https://gitlab.slack.com/archives/C1BBL1V3K)
+- [Regional Marketing Support](/handbook/marketing/growth-marketing/regional-marketing/#regional-marketing-manager-support) と [Regional Marketing events calendar](https://app.asana.com/1/306855239930259/project/1209020056902315/calendar/1209020173960870)
+- [Compete support](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/) と [Competition Slack channel](https://gitlab.slack.com/archives/C1BBL1V3K)
 - [Executive sponsorship program](/handbook/sales/field-operations/gtm-resources/#executive-sponsorship-program)
 - [ABM マーケティングサポートのアカウントを推薦](/handbook/marketing/account-based-marketing/)
 

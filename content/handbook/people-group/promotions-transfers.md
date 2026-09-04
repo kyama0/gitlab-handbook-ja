@@ -2,9 +2,9 @@
 title: 昇進と異動
 description: "GitLab の昇進と異動に関する情報とプロトコル。"
 upstream_path: /handbook/people-group/promotions-transfers/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-lastmod: "2026-08-12T19:30:53-04:00"
-translated_at: "2026-08-13T23:52:41+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+lastmod: "2026-09-01T16:59:18+01:00"
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
 ---
@@ -67,7 +67,7 @@ Greenhouse 採用プロセスに従って募集中の役割のオファーを受
 **内部モビリティ昇進:** 内部モビリティ昇進は、チームメンバーが現在の役割と比較して高いグレード/職務責任のポジションに応募してそれを受け入れたときに発生します。
 
 - 内部モビリティを通じた昇進が発生するためには、スキップレベルリーダーからの承認が必要です。
-- さらに、整合性と可視性のために、整合するPeople Business Partnerにも相談する必要があります。
+- さらに、整合性と可視性のために、整合する People Business Partner にも相談する必要があります。
 
 ## 昇進の哲学
 
@@ -101,11 +101,11 @@ Greenhouse 採用プロセスに従って募集中の役割のオファーを受
 
 ほとんどの昇進は年 2 回の昇進キャリブレーションを通じて処理され、個人が面接を受け承認されたヘッドカウントを埋めるポジションを受け入れたかどうかに応じて、例外は Greenhouse または Workday を経由します。これら 3 つの昇進処理方法の詳細は以下にあります。
 
-## 年 2 回の昇進キャリブレーションプロセスとタイムライン
+## 年 2 回の昇進キャリブレーションプロセスとタイムライン {#twice-per-year-promotion-calibration-process--timeline}
 
 GitLab では年 2 回の頻度で昇進を行います。昇進プロセスには 3 つのコアステージがあります: 計画、キャリブレーション、処理。
 
-セールス開発組織は、職務ファミリー構造内の各レベルの特定の[昇進基準](/handbook/marketing/sales-development/#sales-dev-career-path)により、サイクル内昇進を月次でレビューします。計画、キャリブレーション、処理ステップは以下の詳細に整合しています。
+セールス開発組織は、職務ファミリー構造内の各レベルの特定の[昇進基準](/handbook/sales/sales-development/#sales-dev-career-path)により、サイクル内昇進を月次でレビューします。計画、キャリブレーション、処理ステップは以下の詳細に整合しています。
 
 | ステージ | 目的 |
 | ---------- | ----- |
@@ -125,7 +125,7 @@ GitLab では年 2 回の頻度で昇進を行います。昇進プロセスに�
 
 今後の昇進への洞察、必要なサポートの特定、成長軌道への可視性の向上のため、エンジニアリングは昇進トラッカーを保持しています。マネージャーは、チームメンバーの昇進準備状況を特定するときに、会計年度を通じて[このフォーム](https://docs.google.com/forms/d/e/1FAIpQLScK24g4ia2oshA3krcXNvVtqip1byhgKc2X2gJhiCyx0qcVGw/viewform)を記入することが求められます。
 
-回答は、エンジニアリングリーダーシップチーム (CTO 直属の部下) とエンジニアリングPeople Business Partnerにのみ表示されます。
+回答は、エンジニアリングリーダーシップチーム (CTO 直属の部下) とエンジニアリング People Business Partner にのみ表示されます。
 
 ### 半年に 1 回のプロセス
 
@@ -138,17 +138,17 @@ GitLab では年 2 回の頻度で昇進を行います。昇進プロセスに�
 
 **昇進指名の準備と提出**
 
-- **1 月 12-30 日**: マネージャーとチームメンバーが会って昇進準備状況について議論します。ビジネスニーズと個人の準備状況に整合がある場合、1 月 30 日までにマネージャー提出用に[昇進ドキュメント](https://docs.google.com/document/d/1oXH9HzdO8gjqdeosstQRC1Mqt_5lCaN1U2kaF9Av-Ec/edit?usp=sharing)フォームを準備するために協働します
+- **1 月 12 〜 30 日**: マネージャーとチームメンバーが会って昇進準備状況について議論します。ビジネスニーズと個人の準備状況に整合がある場合、1 月 30 日までにマネージャー提出用に[昇進ドキュメント](https://docs.google.com/document/d/15Zll03CelNs091CDhntRiX2RweripppfQRf-nj4rSig/edit?tab=t.0)フォームを準備するために協働します
 - **1 月 30 日**: 締切 - すべてのマネージャー昇進指名は Workday で提出される必要があります
-- **2 月 2-27 日**: 昇進キャリブレーションセッションと昇進承認
+- **2 月 2 〜 27 日**: 昇進キャリブレーションセッションと昇進承認
 
 **報酬 / ACR 計画 (暫定スケジュール)**
 
 - **3 月 23 日週**: ACR がプランナーに公開されます (Workday でプロセスを開く前に昇進承認が必要)
 - **3 月 23 日 - 4 月 3 日**: プランナーはグリッドに報酬額を入力します
-- **4 月 9-13 日**: eGroup / PBP comp 承認
+- **4 月 9 〜 13 日**: eGroup / PBP comp 承認
 - **4 月 21 日**: Workday でステートメント生成
-- **4 月 21-30 日**: チームメンバーコミュニケーションウィンドウ
+- **4 月 21 〜 30 日**: チームメンバーコミュニケーションウィンドウ
 - **5 月 1 日**: 昇進が発効！
 
 *注: すべての日付は軽微な調整の対象となります。変更は事前にコミュニケーションされます。
@@ -157,15 +157,15 @@ GitLab では年 2 回の頻度で昇進を行います。昇進プロセスに�
 
 ステータス: 日付は未定で投稿予定です。後で確認してください！
 
-## 計画
+## 計画 {#planning}
 
-FY26 Q4 昇進**計画**は、機密性を維持し、必要に応じて部門リーダー間のコラボレーションを可能にするために、Workday 経由で完了します。上記のタイムラインの計画フェーズに入る前に、People Business Partnerは、キャリブレーションフェーズに入る前に Workday が最新であることを確認します。
+FY26 Q4 昇進**計画**は、機密性を維持し、必要に応じて部門リーダー間のコラボレーションを可能にするために、Workday 経由で完了します。上記のタイムラインの計画フェーズに入る前に、People Business Partner は、キャリブレーションフェーズに入る前に Workday が最新であることを確認します。
 
-部門ごとのキャリブレーションフェーズが完了すると、ディレクター以上は、[Workday 計画グリッド](https://docs.google.com/document/d/1KwpFnZC5MFpCwS9ElqkSh0f1bdZ3l0Gp-B4lDdJwIg0/edit?usp=sharing)に昇進報酬の推奨を入力できるようになります。部門のキャリブレーションミーティングタイムラインの詳細については、People Business Partnerに連絡してください。
+部門ごとのキャリブレーションフェーズが完了すると、ディレクター以上は、[Workday 計画グリッド](https://docs.google.com/document/d/1KwpFnZC5MFpCwS9ElqkSh0f1bdZ3l0Gp-B4lDdJwIg0/edit?usp=sharing)に昇進報酬の推奨を入力できるようになります。部門のキャリブレーションミーティングタイムラインの詳細については、People Business Partner に連絡してください。
 
-### 昇進ドキュメント
+### 昇進ドキュメント {#promotion-document}
 
-[昇進ドキュメント](https://docs.google.com/document/d/1oXH9HzdO8gjqdeosstQRC1Mqt_5lCaN1U2kaF9Av-Ec/edit?usp=sharing)はすべてのインライン昇進に必要です。**昇進ドキュメントは合計 3 ページを超えてはなりません。**
+[昇進ドキュメント](https://docs.google.com/document/d/15Zll03CelNs091CDhntRiX2RweripppfQRf-nj4rSig/edit?tab=t.0)はすべてのインライン昇進に必要です。**昇進ドキュメントは合計 3 ページを超えてはなりません。**
 
 対象は他の GitLab チームメンバーであるため、テキストは三人称でチームメンバーの名前と適切な代名詞 (he/she/they) を使い、役割への適性の証拠として仕事とスキルを強調するように書く必要があります。説得力のあるドキュメントの作成を支援するために、[スタイルガイド](/handbook/people-group/promotion-document-style-guide/)が利用可能です。[ビジネス結果](/handbook/people-group/promotions-transfers/#business-results)ごとに関連するセクションを捉えるためにブレットフォーマットを活用するか、短い段落を使用できます。
 
@@ -173,7 +173,7 @@ FY26 Q4 昇進**計画**は、機密性を維持し、必要に応じて部門�
 
 #### 昇進サマリー
 
-このセクションは、チームメンバーが次のレベルでパフォーマンスする能力を持っていることを示す成果のハイレベルなサマリー (3〜5 文) です。
+このセクションは、チームメンバーが次のレベルでパフォーマンスする能力を持っていることを示す成果のハイレベルなサマリー (3 〜 5 文) です。
 
 #### ビジネス結果
 
@@ -185,7 +185,7 @@ FY26 Q4 昇進**計画**は、機密性を維持し、必要に応じて部門�
 
 **プロジェクト/達成のインパクト**
 
-- 例: Org Design Playbook の作成は、会社全体のあらゆる組織変更に対する反復可能なプロセスを概説します。リーダーとPeople Business Partnerが活用して変化を実行しリードできる、コラボレーティブで、チームメンバー指向、コミュニケーション中心、結果駆動型のフォーマットを作成します。これは、変化管理、実行、ステークホルダーの整合性のための重要なリソースとして、ハイパフォーマンスカルチャーの構築に直接結びついています。
+- 例: Org Design Playbook の作成は、会社全体のあらゆる組織変更に対する反復可能なプロセスを概説します。リーダーと People Business Partner が活用して変化を実行しリードできる、コラボレーティブで、チームメンバー指向、コミュニケーション中心、結果駆動型のフォーマットを作成します。これは、変化管理、実行、ステークホルダーの整合性のための重要なリソースとして、ハイパフォーマンスカルチャーの構築に直接結びついています。
 
 **ビジネス結果**
 
@@ -215,7 +215,7 @@ GitLab は、昇進について考えるときに、個人の準備状況とビ�
 
 #### 価値観の整合性
 
-価値観は、GitLab で私たちが行うすべてのことの中心にあります。チームメンバーの成果とイニシアチブを、それらがサポートする価値観に結び付けることは不可欠です。すべての価値観は、昇進ドキュメントで*少なくとも 1 回*、昇進候補者がビジネス結果への貢献が価値観にどのように整合しているかの例とともに参照されるべきです。ビジネス結果セクションで参照されなかった価値観については、チームメンバーが CREDIT をどのように示したかをさらに強調する 1〜2 文の例を提供してください。
+価値観は、GitLab で私たちが行うすべてのことの中心にあります。チームメンバーの成果とイニシアチブを、それらがサポートする価値観に結び付けることは不可欠です。すべての価値観は、昇進ドキュメントで*少なくとも 1 回*、昇進候補者がビジネス結果への貢献が価値観にどのように整合しているかの例とともに参照されるべきです。ビジネス結果セクションで参照されなかった価値観については、チームメンバーが CREDIT をどのように示したかをさらに強調する 1 〜 2 文の例を提供してください。
 
 - 各職務レベルに整合する [DIB 行動](/handbook/values/#values-competencies)に関するガイダンスをレビューしてください。これは、私たちの[多様性インクルージョン&ビロンギング価値観](/handbook/values/#diversity-inclusion)を示す方法の例を提供します
 
@@ -232,7 +232,7 @@ GitLab は、昇進について考えるときに、個人の準備状況とビ�
 
 ## キャリブレーション
 
-各四半期、部門/部署リーダーシップと整合するPeople Business Partnerは、予測される昇進をレビューするキャリブレーションセッションを計画します。これらのキャリブレーションセッションの目標は、部門での昇進に対して公正で一貫した基準を設定し、ピアレビューを可能にし、質問する機会を提供することです。これらのセッションは非同期または同期で行うことができます。
+各四半期、部門/部署リーダーシップと整合する People Business Partner は、予測される昇進をレビューするキャリブレーションセッションを計画します。これらのキャリブレーションセッションの目標は、部門での昇進に対して公正で一貫した基準を設定し、ピアレビューを可能にし、質問する機会を提供することです。これらのセッションは非同期または同期で行うことができます。
 
 キャリブレーションセッション中、リーダーは以下を議論する準備をする必要があります:
 
@@ -259,7 +259,7 @@ GitLab は、昇進について考えるときに、個人の準備状況とビ�
 
 Senior Director+ レベルへの昇進には、以下の違いがあります:
 
-1. **計画**: Senior Director+ 昇進は、可視性のために、希望する昇進四半期の少なくとも 2 四半期前に E-group の昇進プロジェクトシートに追加する必要があります。たとえば、Q1 (2 月) 発効で個人を昇進させたい場合、Q3 (10 月最遅) 中にこのチームメンバーを E-group の予測シートに追加してもらう必要があります。整合するPeople Business Partnerと協働し、昇進予測が追加されることを確認してください。
+1. **計画**: Senior Director+ 昇進は、可視性のために、希望する昇進四半期の少なくとも 2 四半期前に E-group の昇進プロジェクトシートに追加する必要があります。たとえば、Q1 (2 月) 発効で個人を昇進させたい場合、Q3 (10 月最遅) 中にこのチームメンバーを E-group の予測シートに追加してもらう必要があります。整合する People Business Partner と協働し、昇進予測が追加されることを確認してください。
 1. **レベルスコーピング**: 組織設計の原則とシニアリーダーシップ役割の期待において、厳格さと一貫性を確保したいと考えています。Senior Director+ 昇進の場合、ビジネスニーズと職務フレームワークへの整合性のために役割を評価するために (チームメンバーではなく)、スコーピングツールを使用します。
 1. **クロスファンクショナルフィードバック**: Senior Director+ 昇進をレビューする際、少なくとも 3 つのクロスファンクショナルフィードバックの例が必要です。このフィードバックは公開されず、キャリブレーション委員会、PBP、直接マネージャー、チームメンバーによってのみレビューされます。
 
@@ -289,7 +289,7 @@ GitLab は内部モビリティ率を追跡します。市場データは、会�
 
 #### 平均 % 報酬変更
 
-GitLab は、昇進に対して一般に[5〜10% の報酬変更](/handbook/people-group/promotions-transfers/#recommending-a-compensation-increase)の平均をターゲットとしています。この指標は、競争力があり意味のある昇進増加を確保しつつ、会社全体で昇進報酬の引き上げをチームメンバーに割り当てる際に一貫性と公平性を確保するために設けられています。
+GitLab は、昇進に対して一般に [5 〜 10% の報酬変更](/handbook/people-group/promotions-transfers/#recommending-a-compensation-increase)の平均をターゲットとしています。この指標は、競争力があり意味のある昇進増加を確保しつつ、会社全体で昇進報酬の引き上げをチームメンバーに割り当てる際に一貫性と公平性を確保するために設けられています。
 
 ### 予算インパクト (以下を参照)
 
@@ -310,9 +310,9 @@ FP&A は年 2 回、部門/部署ごとに予算への影響を追跡します�
 1. [暫定/代理役割](/handbook/people-group/promotions-transfers/#interim-and-acting-roles)の個人からの昇進。
 1. 年 2 回のプロセス外で、上記のタイプのいずれにも整合しない例外。
 
-### 例外の処理方法: Workday でのサイクル外昇進リクエストの提出
+### 例外の処理方法: Workday でのサイクル外昇進リクエストの提出 {#how-to-process-an-exception-submitting-an-out-of-cycle-promotion-request-in-workday}
 
-年 2 回の昇進キャリブレーションプロセスや Greenhouse での募集中の要請を通じて処理されない、昇進が発生した例外的な状況については、マネージャーはPeople Business Partnerと協働して Workday 経由で昇進を提出できます。マネージャーは PBP にメールで連絡し、昇進ドキュメント、例外の正当化、10% を超える報酬増加の推奨に対する次のレベルマネージャーの承認を含める必要があります。People Business Partnerが例外を承認したら、昇進を処理でき、People Business Partnerが Workday で昇進を提出できます。変更の提出に関するヘルプは [Workday ガイド](https://docs.google.com/document/d/1hpPikG0STncYKamaY8XlfMTwYdoszP-0Xogvpp5hyZ4/edit)を参照してください。
+年 2 回の昇進キャリブレーションプロセスや Greenhouse での募集中の要請を通じて処理されない、昇進が発生した例外的な状況については、マネージャーは People Business Partner と協働して Workday 経由で昇進を提出できます。マネージャーは PBP にメールで連絡し、昇進ドキュメント、例外の正当化、10% を超える報酬増加の推奨に対する次のレベルマネージャーの承認を含める必要があります。People Business Partner が例外を承認したら、昇進を処理でき、People Business Partner が Workday で昇進を提出できます。変更の提出に関するヘルプは [Workday ガイド](https://docs.google.com/document/d/1hpPikG0STncYKamaY8XlfMTwYdoszP-0Xogvpp5hyZ4/edit)を参照してください。
 
 #### 例外の承認
 
@@ -379,13 +379,13 @@ CTO 組織では、会社のプロセスに従い、標準昇進ドキュメン�
     - この [Google フォーム](https://docs.google.com/forms/d/1h-_ZOQS8Hug168P76qgdO5Coj2rfPceLHZ6xjjLPWjQ/edit) は、セキュリティ部署全体での昇進フィードバック収集のフォーマットと質問の一貫性を確保し、より一貫性のある公平な[キャリブレーションプロセス](/handbook/people-group/promotions-transfers/#calibration)を促進するテンプレートを提供します。このプロセスは、フィードバックが次のレベルのパフォーマンスを示す主要な成果物に一貫して結びつくよう、昇進ドキュメントのビジネス結果セクションに関連するフィードバックに特に焦点を当てています。
     - *各昇進候補者は、それぞれのフィードバック提供者からフィードバックを収集するために使用するために、このフォームのコピーを作成する必要があります。*
 4. チームメンバーはフィードバックリクエストのステークホルダーを特定する
-    - チームメンバーは理想的には、[昇進ドキュメント](/handbook/people-group/promotions-transfers/#promotion-document)で強調された 3 つのビジネス結果全体でフィードバックを提供する 3〜4 人の異なるチームメンバーを選択する必要がありますが、フィードバックを提供する*少なくとも* 2 人の異なるチームメンバーを選択する必要があります。昇進ドキュメントで強調された 3 つのビジネス結果はすべて、少なくとも 1 人のフィードバック提供者からフィードバックを提供される必要があります。チームメンバーは、フィードバックフォームを送信する前に、整合を確保するためにマネージャーに提案されたフィードバック提供者をレビューしてもらう必要があります。
+    - チームメンバーは理想的には、[昇進ドキュメント](/handbook/people-group/promotions-transfers/#promotion-document)で強調された 3 つのビジネス結果全体でフィードバックを提供する 3 〜 4 人の異なるチームメンバーを選択する必要がありますが、フィードバックを提供する*少なくとも* 2 人の異なるチームメンバーを選択する必要があります。昇進ドキュメントで強調された 3 つのビジネス結果はすべて、少なくとも 1 人のフィードバック提供者からフィードバックを提供される必要があります。チームメンバーは、フィードバックフォームを送信する前に、整合を確保するためにマネージャーに提案されたフィードバック提供者をレビューしてもらう必要があります。
     - フィードバック提供者の要件:
         - フィードバック提供者は、プロジェクトチームメンバー、DRI、またはステークホルダーとして、[ビジネス結果](/handbook/people-group/promotions-transfers/#business-results)のうち、[昇進ドキュメント](/handbook/people-group/promotions-transfers/#promotion-document)で強調されている 1 つ以上についてチームメンバーと直接協働した経験を持つ必要があります。
         - フィードバック提供者は、マネージャーと同じレポートラインにいない (つまり、チームメンバーのマネージャー、スキップレベルなどではない)。
         - フィードバック提供者は、クロスファンクショナルまたは部署内のいずれかであり、両方の組み合わせが好まれ推奨されます。フィードバックを提供する最も適切なチームメンバーを考える際のコアな焦点は、昇進ドキュメントで強調されたビジネス結果について、昇進候補者と最も密接に協働した人を反映することです。**注: クロスファンクショナルフィードバックは、キャリブレーションの目的でセキュリティ部署外からのフィードバックとして定義されます。クロスファンクショナルフィードバックは Staff+ 昇進に必要です。このルールへの例外は、キャリブレーションで CISO direct によって正当化され説明される必要があります。**
         - フィードバック提供者は、ターゲットの昇進レベル以上である必要があります (つまり、セキュリティエンジニアがシニアセキュリティエンジニアの昇進をターゲットにしている場合、フィードバック提供者のレベルはシニアセキュリティエンジニア以上である必要があります)。フィードバック提供者は、ターゲットの昇進レベル以上の個人コントリビューターまたはピープルマネージャーである可能性があります。フィードバック提供者にターゲットの昇進レベル以上を要求する理由は、すでに次のレベルで動作しているチームメンバーとして、次のレベルの期待のコンテキストで、ビジネス結果とコラボレーションについて話す能力があることを確認するためです。
-    - ピープルマネジメントと個人コントリビューターの対応する職務レベルの復習として、[職務レベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)を、会社全体のレベルごとの主要な違いの概要として[GitLab 職務フレームワーク](https://docs.google.com/spreadsheets/d/1A46wqVK0ZdhmN7HT7G3QrBbExJw6vZJrSCFIiFd9T7U/edit?gid=0#gid=0)を、レベルごとの期待におけるセキュリティ固有の違いに関するリソースとして[職務記述ライブラリ](/job-description-library/security/)を参照できます。
+    - ピープルマネジメントと個人コントリビューターの対応する職務レベルの復習として、[職務レベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)を、会社全体のレベルごとの主要な違いの概要として [GitLab 職務フレームワーク](https://docs.google.com/spreadsheets/d/1A46wqVK0ZdhmN7HT7G3QrBbExJw6vZJrSCFIiFd9T7U/edit?gid=0#gid=0)を、レベルごとの期待におけるセキュリティ固有の違いに関するリソースとして[職務記述ライブラリ](/job-description-library/security/)を参照できます。
     - フィードバック提供者を選択するためのこれらの要件を満たすためにサポートが必要な場合は、マネージャーに相談してサポートを得てください。
     - **期日: 2026-01-21**
 5. チームメンバーはフィードバックフォームのコピーをフィードバック提供者に送信する
@@ -401,7 +401,7 @@ CTO 組織では、会社のプロセスに従い、標準昇進ドキュメン�
     - **期日: 2026-02-10**
 7. CISO direct がキャリブレーションスプレッドシートにフィードバックサマリーを追加する
     - CISO direct は、キャリブレーションセッションに先立って可視性を確保するため、ステップ 6 でコンパイルされた昇進フィードバック分析を CISO directs 昇進キャリブレーションスプレッドシートに追加する責任があります。スプレッドシートは参考用に `Security Promotion Projections` と題されています。
-    - 各昇進候補者の完全な[フィードバック分析](https://docs.google.com/document/d/11w4fI2iJj0-GRgtQxRGgRMiUyt60Z1Xv1w19UkC2ubE/edit)を列 J に追加し、CISO、CISO directs、セキュリティ[People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments)がアクセスできることを確認します。
+    - 各昇進候補者の完全な[フィードバック分析](https://docs.google.com/document/d/11w4fI2iJj0-GRgtQxRGgRMiUyt60Z1Xv1w19UkC2ubE/edit)を列 J に追加し、CISO、CISO directs、セキュリティ [People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments) がアクセスできることを確認します。
     - **期日: 2026-02-12**
 8. キャリブレーションセッションが行われる
     - キャリブレーションは 2026-02-16 の週にスケジュールされ、CISO directs が部署全体で昇進候補者をキャリブレーションします。
@@ -416,7 +416,7 @@ CTO 組織では、会社のプロセスに従い、標準昇進ドキュメン�
 
 フィードバックフォームはフィードバック提供者の情報を要求するため、昇進候補者とそのマネージャーは、提供されたフィードバックの詳細を可視化できます。CISO directs キャリブレーションセッションでは、[この構造](https://docs.google.com/document/d/11w4fI2iJj0-GRgtQxRGgRMiUyt60Z1Xv1w19UkC2ubE/edit)でテーマをレビューします。
 
-提供されたフィードバックは、昇進候補者のリーダーシップチェーン、CISO directs グループ、整合する[People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments)外では**共有されません**。
+提供されたフィードバックは、昇進候補者のリーダーシップチェーン、CISO directs グループ、整合する [People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments) 外では**共有されません**。
 
 #### リソース
 
@@ -437,7 +437,7 @@ CTO 組織では、会社のプロセスに従い、標準昇進ドキュメン�
 
 ## VP+ 役割の採用
 
-社内昇進と新しいリーダーシップ役割の両方に一貫したレベルのレビューを確保するため、すべての新規 VP 以上の「採用予定」役割は e-group によってレビューおよび承認されます。シニアリーダーは、提案された役割の正当化ドキュメントを作成するために、People Business Partnerとパートナーシップを組む必要があります。[正当化ドキュメント](https://docs.google.com/document/d/1feA04oVpXYa1QWAnQA0OB1zC_KuaDNDq97gtmEJMUIk/edit#heading=h.o7rctrz9uxl7)により、e-group は役割のビジネスニーズと、組織内でどのように整合するかをよりよく理解できます。
+社内昇進と新しいリーダーシップ役割の両方に一貫したレベルのレビューを確保するため、すべての新規 VP 以上の「採用予定」役割は e-group によってレビューおよび承認されます。シニアリーダーは、提案された役割の正当化ドキュメントを作成するために、People Business Partner とパートナーシップを組む必要があります。[正当化ドキュメント](https://docs.google.com/document/d/1feA04oVpXYa1QWAnQA0OB1zC_KuaDNDq97gtmEJMUIk/edit#heading=h.o7rctrz9uxl7)により、e-group は役割のビジネスニーズと、組織内でどのように整合するかをよりよく理解できます。
 
 このレビューは、e-group オフサイト中に行われる組織設計議論の一部です。
 
@@ -450,8 +450,8 @@ CTO 組織では、会社のプロセスに従い、標準昇進ドキュメン�
 
 ## マネージャーのプロセス: 昇進のリクエスト
 
-1. 昇進変更が[年 2 回の昇進サイクル](/handbook/people-group/promotions-transfers/#twice-per-year-promotion-calibration-process--timeline)を通じて処理されるべきか、[Greenhouse](/handbook/people-group/promotions-transfers/#how-to-process-an-exception-submitting-an-out-of-cycle-promotion-request-in-workday)を通じて処理されるべきかを判断します
-1. [年 2 回の昇進サイクル](/handbook/people-group/promotions-transfers/#twice-per-year-promotion-calibration-process--timeline)で進める場合、People Business Partnerとリーダーシップと協働して、[計画プロセス](/handbook/people-group/promotions-transfers/#planning)の前に昇進を推奨し、チームメンバーが計画とキャリブレーションに含まれるようにします。この時点で[昇進または報酬変更ドキュメント](promotions-transfers#promotion-document)が作成されていることを確認します。
+1. 昇進変更が[年 2 回の昇進サイクル](/handbook/people-group/promotions-transfers/#twice-per-year-promotion-calibration-process--timeline)を通じて処理されるべきか、[Greenhouse](/handbook/people-group/promotions-transfers/#how-to-process-an-exception-submitting-an-out-of-cycle-promotion-request-in-workday) を通じて処理されるべきかを判断します
+1. [年 2 回の昇進サイクル](/handbook/people-group/promotions-transfers/#twice-per-year-promotion-calibration-process--timeline)で進める場合、People Business Partner とリーダーシップと協働して、[計画プロセス](/handbook/people-group/promotions-transfers/#planning)の前に昇進を推奨し、チームメンバーが計画とキャリブレーションに含まれるようにします。この時点で[昇進または報酬変更ドキュメント](promotions-transfers#promotion-document)が作成されていることを確認します。
    - 昇進を推奨しているチームメンバーが director またはそれ以上の場合は、[director およびそれ以上への昇進](/handbook/people-group/promotions-transfers/#promotions-to-senior-director)を参照してください。
 1. 昇進/報酬変更が Greenhouse を通じて処理されるべき場合は、[Greenhouse 昇進/異動プロセスセクション](/handbook/people-group/promotions-transfers/#process-for-managers-requesting-a-promotion)で概説されているステップに従ってください。
 1. 昇進が例外と見なされる場合は、[例外の処理方法: Workday でのサイクル外昇進リクエストの提出](/handbook/people-group/promotions-transfers/#how-to-process-an-exception-submitting-an-out-of-cycle-promotion-request-in-workday)で概説されているステップに従ってください。
@@ -461,15 +461,15 @@ CTO 組織では、会社のプロセスに従い、標準昇進ドキュメン�
 - チームメンバーが昇進を通じて次のレベルに移動する準備ができていても、ビジネスの性質上、その特定の役割または次のレベルが利用できない場合があります。たとえば、チームメンバーは Manager または Director の役割の準備ができていますが、ビジネスにはその時点で追加のマネージャー/ディレクターのニーズ、予算、範囲がありません。そのポジションは将来利用可能になる場合とならない場合があります。
 - 空席が[ジョブページ](https://about.gitlab.com/jobs/all-jobs/)を通じて広告されている場合、個人は役割の応募を提出する必要があります。同様に、空席投稿がない場合は、誰もが応募し検討される機会を持てるよう、空席投稿を作成し `#new-vacancies` Slack チャンネルに共有する必要があります。
 
-## 報酬の増加の推奨
+## 報酬の増加の推奨 {#recommending-a-compensation-increase}
 
-GitLab では、昇進が報酬の観点でインパクトがあり、同じ役割のピアと公平であることを確保しています。マネージャーは、直接の部下のキャッシュ報酬の増加の推奨を提案します。質問がある場合は、People Business Partnerまたは Total Rewards チームに気軽に連絡してください。
+GitLab では、昇進が報酬の観点でインパクトがあり、同じ役割のピアと公平であることを確保しています。マネージャーは、直接の部下のキャッシュ報酬の増加の推奨を提案します。質問がある場合は、People Business Partner または Total Rewards チームに気軽に連絡してください。
 
 ### 昇進報酬ガイドライン
 
 - チームメンバーが同じ職務ファミリー内のあるレベルから次のレベルに昇進する場合、報酬範囲の最小値と中央値の間に持っていくのが一般的です。
-- Total Rewards チームは通常、昇進の一部としてキャッシュ報酬への 5〜10% の増加を推奨します。追加のエクイティは、[昇進のエクイティ](/handbook/total-rewards/stock-options/#promotions)に基づいて固定されます。
-  - ベンチマークデータは、通常[人口の 4〜8% が昇進する](https://www.shrm.org/content/dam/en/shrm/research/benchmarking/Human%20Capital%20Report-TOTAL.pdf)ことを示しており、平均[基本給与の 4.1% 増加](https://worldatwork.org/media/CDN/dist/CDN2/documents/pdf/resources/sbs/SBS2022-23_TopLevelData.pdf)を示しています。
+- Total Rewards チームは通常、昇進の一部としてキャッシュ報酬への 5 〜 10% の増加を推奨します。追加のエクイティは、[昇進のエクイティ](/handbook/total-rewards/stock-options/#promotions)に基づいて固定されます。
+  - ベンチマークデータは、通常[人口の 4 〜 8% が昇進する](https://www.shrm.org/content/dam/en/shrm/research/benchmarking/Human%20Capital%20Report-TOTAL.pdf)ことを示しており、平均[基本給与の 4.1% 増加](https://worldatwork.org/media/CDN/dist/CDN2/documents/pdf/resources/sbs/SBS2022-23_TopLevelData.pdf)を示しています。
 - 以下の条件を持つ昇進は、Total Rewards チームとエグゼクティブ承認者への追加の正当化が必要です。昇進ワークシートのコメントとしてビジネス上の正当化を追加してください。
     1. 10% を超える増加
 
@@ -478,19 +478,19 @@ GitLab では、昇進が報酬の観点でインパクトがあり、同じ役�
 Greenhouse で異動の報酬をレビューする際、Total Rewards チームは、以下の一般的なガイドラインを使用してオファー詳細を承認する前に、同じような役割間で内部公平性を確保します:
 
 1. **ラテラル異動 (異なるまたは同じ職務ファミリー、同じグレード)**: 通常、チームメンバーがラテラル異動で増加を受けることは期待しません。これには、グレードまたは職務レベルの変更なしにテリトリー、セグメント、専門分野の変更を受けるチームメンバーが含まれます。
-1. **昇進異動 (異なるまたは同じ職務ファミリー、より高いグレード)**: 通常、チームメンバーが 5〜10% の増加を受けることを期待します (昇進の期待される増加に整合)。
+1. **昇進異動 (異なるまたは同じ職務ファミリー、より高いグレード)**: 通常、チームメンバーが 5 〜 10% の増加を受けることを期待します (昇進の期待される増加に整合)。
 1. **その他の異動タイプ**: ケースバイケースでレビューできる他の異動があります。たとえば、誰かが異なるまたは同じ職務ファミリーのより低いグレードに異動する場合、役割の市場レートとの整合性を確保するために報酬が下方調整される場合があります。レビューを行うために Greenhouse で Total Rewards チームをタグ付けしてください。
 
 ## Workday サイクル外昇進承認プロセス
 
-このセクションでは、People Business Partnerが Workday で昇進リクエストを送信した後の承認チェーンについて説明します。
+このセクションでは、People Business Partner が Workday で昇進リクエストを送信した後の承認チェーンについて説明します。
 
 1. 変更は、マネージャー、次のレベルマネージャー、e-Group リーダーに承認のためにルーティングされます。
 1. リクエストが承認された場合、People Operations チームは DocuSign で[職務変更レター](/handbook/people-group/promotions-transfers/#job-change-letter)をステージングします。
 1. DocuSign はマネージャーにチームメンバーと昇進について議論するよう促します。マネージャーは、`1-1 ミーティングでコールで職務変更レターを共有することにより、チームメンバーに変更をコミュニケートします`。マネージャーとチームメンバーはレターを処理/署名します。署名後、マネージャーは Slack の `#team-member-updates` チャンネルで昇進をアナウンスします。アナウンスでは、マネージャーは個人が昇進基準をどのように満たしたかを記述し、お祝いを述べます。
 1. 部門とマネージャーの変更については、People Operations チームメンバーは組織変更チェックリスト Issue を作成します。
 
-### People Operations チーム向け: 昇進、内部異動、報酬変更の処理
+### People Operations チーム向け: 昇進、内部異動、報酬変更の処理 {#for-people-operations-team-processing-promotions-internal-transfers--compensation-changes}
 
 1. リクエストが Workday を通じて承認された場合、People Operations チームは[職務変更レター](/handbook/hiring)を作成しますが、リクエストが Greenhouse を通じての場合、`People Operations チームは People Operations チームメールで通知されます`、CES チームによって[職務変更レター](/handbook/hiring)が作成され署名されました。
 
@@ -535,7 +535,7 @@ Greenhouse で異動の報酬をレビューする際、Total Rewards チーム�
 
 1. *CES*: 暫定期間の開始を最終化するための[職務変更レター](/handbook/hiring)を発行します。レターには、暫定職務タイトル、開始日、終了日 (既知の場合) を含める必要があります。職務変更レターは重要です。これは、Total Rewards が Greenhouse からの変更を通知される方法です。
 1. *People Operations*: Workday でチームメンバーの職務およびビジネスタイトルを更新して、暫定役割を開始したことを反映します (例: `Senior Manager, Engineering (Interim)`)。この更新は、暫定の開始日と終了日を追跡するための SSOT として機能し、現在暫定役割で執行している人物に関する透明性を提供します。暫定期間は報酬への影響がないため、職務コードと職務レベルは同じままです。つまり、[Change Job プロセス](https://docs.google.com/document/d/1hpPikG0STncYKamaY8XlfMTwYdoszP-0Xogvpp5hyZ4/edit)を開始する際に他のフィールドを更新しないでください。
-1. *現在のマネージャー*: 暫定マネージャーに移動する必要のある直属の部下がいる場合、この変更は現在のマネージャーまたは必要に応じてそれぞれのグループのPeople Business Partnerが [Change Manager プロセス](https://docs.google.com/document/d/1JEobACNSMeHU4pU5DaaF7aqmv9wmSDoXx7veZ6_SM_I/edit)に従って Workday で開始する必要があります。ここでの哲学は、チームメンバーが面接プロセスを成功裏に経て、マネージャー役割の暫定期間に対応できる準備ができていることを示したのであれば、Workday で直属の部下を持つために必要なレベルの EQ と裁量を持っているということです。もちろん、暫定期間が昇進で終わらない場合、チームメンバーは引き続き機密情報を機密として扱うことが期待されます。
+1. *現在のマネージャー*: 暫定マネージャーに移動する必要のある直属の部下がいる場合、この変更は現在のマネージャーまたは必要に応じてそれぞれのグループの People Business Partner が [Change Manager プロセス](https://docs.google.com/document/d/1JEobACNSMeHU4pU5DaaF7aqmv9wmSDoXx7veZ6_SM_I/edit)に従って Workday で開始する必要があります。ここでの哲学は、チームメンバーが面接プロセスを成功裏に経て、マネージャー役割の暫定期間に対応できる準備ができていることを示したのであれば、Workday で直属の部下を持つために必要なレベルの EQ と裁量を持っているということです。もちろん、暫定期間が昇進で終わらない場合、チームメンバーは引き続き機密情報を機密として扱うことが期待されます。
 
 #### 暫定期間の終了
 
@@ -543,10 +543,10 @@ Greenhouse で異動の報酬をレビューする際、Total Rewards チーム�
 
 - チームメンバーが[成功基準](/handbook/engineering/careers/#interim-manager)に整合して暫定期間を成功裏に完了し、永続的に暫定役割に移動します。
   - 一般的なガイドラインとして、暫定期間は 30 日以下にならず、4 か月以上にもならないようにする必要があります。
-  - People Business Partnerは、変更を公式にするために、昇進ドキュメントを含む [Change Job](https://docs.google.com/document/d/1hpPikG0STncYKamaY8XlfMTwYdoszP-0Xogvpp5hyZ4/edit) job aid を使用して Workday で昇進リクエストを送信する必要があります。Workday では、変更の理由を `Promotion - Promotion` にする必要があります。暫定までの達成と暫定中の達成を昇進ドキュメントに使用できます。マネージャーは、昇進ドキュメントを作成し、[報酬の増加を推奨する](/handbook/people-group/promotions-transfers/#recommending-a-compensation-increase)責任があります。*注: チームメンバーの移動が昇進につながる場合にのみ、昇進ドキュメントが必要です。ラテラル移動の場合、昇進ドキュメントは必要ありません。*
+  - People Business Partner は、変更を公式にするために、昇進ドキュメントを含む [Change Job](https://docs.google.com/document/d/1hpPikG0STncYKamaY8XlfMTwYdoszP-0Xogvpp5hyZ4/edit) job aid を使用して Workday で昇進リクエストを送信する必要があります。Workday では、変更の理由を `Promotion - Promotion` にする必要があります。暫定までの達成と暫定中の達成を昇進ドキュメントに使用できます。マネージャーは、昇進ドキュメントを作成し、[報酬の増加を推奨する](/handbook/people-group/promotions-transfers/#recommending-a-compensation-increase)責任があります。*注: チームメンバーの移動が昇進につながる場合にのみ、昇進ドキュメントが必要です。ラテラル移動の場合、昇進ドキュメントは必要ありません。*
 - チームメンバーが暫定期間を成功裏に完了しないか、マネージャートラックを追求したいものではないと決定し、暫定期間前の役割に戻ります。
   - 暫定期間が成功しなかった理由がチームメンバーに明確になるよう、チームメンバーと採用マネージャー間でフィードバックセッションが行われるべきです。
-  - People Business Partnerは、マネージャーのリクエストに応じて、暫定期間が終了したらチームメンバーの職務タイトルを元に戻すために、[Workday Change Job プロセスおよび承認フロー](https://docs.google.com/document/d/1hpPikG0STncYKamaY8XlfMTwYdoszP-0Xogvpp5hyZ4/edit)を Workday で送信する必要があります。
+  - People Business Partner は、マネージャーのリクエストに応じて、暫定期間が終了したらチームメンバーの職務タイトルを元に戻すために、[Workday Change Job プロセスおよび承認フロー](https://docs.google.com/document/d/1hpPikG0STncYKamaY8XlfMTwYdoszP-0Xogvpp5hyZ4/edit)を Workday で送信する必要があります。
   - 暫定期間を成功裏に完了しないことは、チームメンバーが将来同様の役割に移動できないことを意味するわけではありません
 
 結果に関係なく、暫定期間が終了する際、マネージャーは[暫定ボーナス](/handbook/total-rewards/incentives/#calculation-of-interim-bonus)の[適格基準](/handbook/total-rewards/incentives/#criteria-for-eligibility)をレビューし、チームメンバーのために[暫定ボーナスリクエストを送信](/handbook/total-rewards/incentives/#submitting)する必要があります。完全なボーナス計算がボーナス提出のコメントに記載されていることを確認してください。
@@ -584,7 +584,7 @@ Greenhouse で異動の報酬をレビューする際、Total Rewards チーム�
 1. チームメンバーがマネージャーに、ポジションを永続的に追求することへの興味を表明します。
 1. チームメンバーが、代理の役割でのこれまでのパフォーマンスについてフィードバックを受けるために、採用マネージャーに連絡します。
 1. チームメンバーは、標準的な採用慣行に整合して、Greenhouse でポジションに応募することを歓迎されます。
-  **注:** 採用マネージャーと代理チームメンバーが相互に同意して役割の検討を進める場合、ポジションが現在の役割と同じまたはより低い[職務レベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)で、同じ部署内にあり、ピープルマネジメントポジションでない場合、正式な面接プロセスは必要ない場合があります。採用マネージャーが面接プロセスを含めないことを好む場合、整合するPeople Business Partner (PBP) と接続して、彼らがサポートしていることを確認する必要があります。代理ポジションにいるチームメンバーが時間をかけてポジションで成功する能力を実証する独自の経験のため、この面接例外の可能性が存在します。
+  **注:** 採用マネージャーと代理チームメンバーが相互に同意して役割の検討を進める場合、ポジションが現在の役割と同じまたはより低い[職務レベル](https://docs.google.com/spreadsheets/d/1kcDb-A2uwchPtTNSJON65BdqS9P0KQmNz0fbNMZMt_M/edit?gid=819074618#gid=819074618)で、同じ部署内にあり、ピープルマネジメントポジションでない場合、正式な面接プロセスは必要ない場合があります。採用マネージャーが面接プロセスを含めないことを好む場合、整合する People Business Partner (PBP) と接続して、彼らがサポートしていることを確認する必要があります。代理ポジションにいるチームメンバーが時間をかけてポジションで成功する能力を実証する独自の経験のため、この面接例外の可能性が存在します。
 1. チームメンバーが正式にオープン役割に移動した後、バックフィルポジションが作成されます。
 
 ## 降格
@@ -595,7 +595,7 @@ Greenhouse で異動の報酬をレビューする際、Total Rewards チーム�
 - 降格には Google ドキュメントでの[報酬](/handbook/total-rewards/compensation/)と[エクイティ](/handbook/total-rewards/stock-options/#equity-incentive-plans)のレビューも含める必要があります。マネージャーはこれらのトピックについて Total Rewards チームに相談する必要があります。
 - チームでの降格と変更 (もしあれば) について合意に達したら、関連する Google ドキュメントが完了した後、降格を Compensation Group がレビューおよび承認するためのエスカレーションポイントとして機能します。
 - 承認されたら、マネージャーは個人に通知し、[HelpLab 経由でリクエスト](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=c15e3b45478c069067429ee0026d43e1)を提出して必要な変更をリクエストする必要があります。その後[職務変更レター](https://docs.google.com/document/d/12AscsmP3qnTqCC9h6cx1UpIVrnZUfoN6AvfMjf8guyg/editm)が作成されます。
-- その後、People Operations チームは[People Operations チーム向け: 昇進と報酬変更の処理](/handbook/people-group/promotions-transfers/#for-people-operations-team-processing-promotions-internal-transfers--compensation-changes)の下にリストされているプロセスに従う必要があります。
+- その後、People Operations チームは [People Operations チーム向け: 昇進と報酬変更の処理](/handbook/people-group/promotions-transfers/#for-people-operations-team-processing-promotions-internal-transfers--compensation-changes)の下にリストされているプロセスに従う必要があります。
 - コミュニケーションは個人への敬意のために必要な人に限定し、公開してはなりません。
 - マネージャーは必要なアクセスリクエストまたはアクセス変更リクエストを開始します。
 
@@ -668,7 +668,7 @@ GitLab のさまざまな部署は、職務タイトル専門分野をさまざ�
 
 1. すべての職務変更リクエストを監査し、変更が Payroll トラッカーで捕捉されていることを確認します。
 1. `Job Title Specialty` 変更リクエストの場合、マネージャーは Workday でチームメンバーの `Speciality` を更新してもらうために People Operations チーム [HelpLab](https://helplab.gitlab.systems/esc?id=emp_taxonomy_topic&topic_id=14aff309478c069067429ee0026d4372) に連絡します。
-    - People Operations チームメンバーは、タイトルが既に Workday に存在するかどうかを確認する必要があります。存在しない場合は、`Job Speciality` がそれぞれの部門ハンドブックページに追加されているかどうかをチェックします (例: <https://handbook.gitlab.com/handbook/engineering/ai/search/>、または People Operations チームメンバーがそれを追加するためにそれぞれの Issue にタグ付けされているかどうか。不明な場合は、[それぞれのPeople Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments)に連絡してください)。
+    - People Operations チームメンバーは、タイトルが既に Workday に存在するかどうかを確認する必要があります。存在しない場合は、`Job Speciality` がそれぞれの部門ハンドブックページに追加されているかどうかをチェックします (例: <https://handbook.gitlab.com/handbook/engineering/ai/search/>、または People Operations チームメンバーがそれを追加するためにそれぞれの Issue にタグ付けされているかどうか。不明な場合は、[それぞれの People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments) に連絡してください)。
 
 ## 部門異動
 
@@ -685,7 +685,7 @@ GitLab のさまざまな部署は、職務タイトル専門分野をさまざ�
   - ビジネス主導の異動 (再編成の例)
   - SDR/BDR 12 か月の役割期間
 
-**社内応募者は応募提出前に現在のマネージャーまたはPeople Business Partnerと話す必要があることに注意してください。公式の応募は、チームメンバーが募集中の役割に応募するか、タレント獲得チームに連絡することによってシグナルされます。役割に関する非公式の会話では、チームメンバーがマネージャーに通知する必要はありません。内部役割への関心をマネージャーにコミュニケートすることに懸念がある場合は、People Business Partnerに連絡してください。**
+**社内応募者は応募提出前に現在のマネージャーまたは People Business Partner と話す必要があることに注意してください。公式の応募は、チームメンバーが募集中の役割に応募するか、タレント獲得チームに連絡することによってシグナルされます。役割に関する非公式の会話では、チームメンバーがマネージャーに通知する必要はありません。内部役割への関心をマネージャーにコミュニケートすることに懸念がある場合は、People Business Partner に連絡してください。**
 
 詳細については、私たちの[内部採用プロセス](/handbook/hiring/)ハンドブックページを参照してください。
 
@@ -694,8 +694,8 @@ GitLab のさまざまな部署は、職務タイトル専門分野をさまざ�
 #### 異なる職務ファミリー
 
 - 異動に興味がある場合は、新しいポジションに応募するだけです。新しい役割が良いフィットかどうか確信が持てない場合は、採用マネージャーと時間を取って役割についてさらに学んでください。その会話の後、社内の機会を追求することに興味がある場合は、役割に応募する意図を現在のマネージャーに伝えることをお勧めします。応募に許可は必要ありませんが、彼らに対して透明であることをお勧めします。ほとんどの人は、リファレンスチェックとして連絡してきた誰かからあなたの移動を知るより一般的に良いため、その透明性を評価するでしょう。これを、現在のマネージャーおよび/または過去のマネージャーからのあなたのパフォーマンスに関する潜在的な新しいマネージャーに与えられるフィードバックについて議論する機会としても使用できます。
-- 異動は、新しいポジションに応募する応募プロセスを経る必要があります ([ジョブページ](https://gitlab.greenhouse.io/internal_job_board)で応募)。チームメンバーは、空席記述で概説されているフルインタビュープロセス全体を経る場合があります。標準面接プロセスへの一般的な例外は、行動または「価値観の整合性」段階です。リクルーターは、標準面接プランへの変更の背後にある理由をチームメンバーの Greenhouse プロフィールに文書化します。役割またはプロセスに関する質問がある場合は、部門または部署の[People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments)に連絡するか、私たちの[内部採用プロセス](/handbook/hiring/)ハンドブックページを訪問してください。いずれの場合も、異動が確認される前に、該当するPeople Business Partnerにメールで通知する必要があります。
-- 異動の場合、ゲイニングマネージャーが GitLab の社内リファレンス (以前と現在のマネージャーに限定) で確認することが期待され、要求されます。ピアまたは直属の部下と社内リファレンスチェックを行わないでください。質問または例外については、リクルーターとPeople Business Partnerに関与させてください。
+- 異動は、新しいポジションに応募する応募プロセスを経る必要があります ([ジョブページ](https://gitlab.greenhouse.io/internal_job_board)で応募)。チームメンバーは、空席記述で概説されているフルインタビュープロセス全体を経る場合があります。標準面接プロセスへの一般的な例外は、行動または「価値観の整合性」段階です。リクルーターは、標準面接プランへの変更の背後にある理由をチームメンバーの Greenhouse プロフィールに文書化します。役割またはプロセスに関する質問がある場合は、部門または部署の [People Business Partner](/handbook/people-group/people-business-partners/#people-business-partner-alignments) に連絡するか、私たちの[内部採用プロセス](/handbook/hiring/)ハンドブックページを訪問してください。いずれの場合も、異動が確認される前に、該当する People Business Partner にメールで通知する必要があります。
+- 異動の場合、ゲイニングマネージャーが GitLab の社内リファレンス (以前と現在のマネージャーに限定) で確認することが期待され、要求されます。ピアまたは直属の部下と社内リファレンスチェックを行わないでください。質問または例外については、リクルーターと People Business Partner に関与させてください。
 - 応募者、現在のマネージャー、またはゲイニングマネージャーが、異動を調整するためにプライベート Slack チャンネルを作成することが推奨されます (必須ではありません)。関連するマネージャー、ディレクター、People Business Partner、財務ビジネスパートナー、リクルーターなど、関与する人を全員招待します。
 - 現在のマネージャーがエンジニアリングで役割をバックフィルする必要がある場合、彼らは[このプロセス](/handbook/engineering/workflow/hiring/#rd-new-headcount-ghpid-request-backfill--transfer-process)に従う必要があります。他の部署の場合、彼らは部門長、リクルーター、財務ビジネスパートナーと協働してバックフィルが利用可能であることを確認する必要があります。異動が確認されたら、現在のマネージャーはリクルーターと財務パートナーと協働してバックフィルのための [GHP ID](/handbook/finance/financial-planning-and-analysis/#single-source-of-truth-ssot-headcount-forecast-and-hiring-plan) を取得し、Greenhouse で役割を開きます。
 - オファーが行われる前に、リクルーターは、チームメンバーとゲイニングマネージャーが現在のマネージャーに実際に連絡を取ったことを確認します。彼らは新しい機会と、チームメンバーにオファーが行われることを議論します。

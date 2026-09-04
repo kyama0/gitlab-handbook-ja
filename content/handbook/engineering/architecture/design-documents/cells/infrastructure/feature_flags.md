@@ -1,5 +1,6 @@
 ---
 title: "Cells におけるフィーチャーフラグの設定"
+description: "ロールアウト戦略やインターフェース設計を含む、Cells 全体でフィーチャーフラグを設定・管理するためのハイレベル設計。"
 status: proposed
 creation-date: "2024-10-14"
 authors: [ "@rpereira2" ]
@@ -8,11 +9,11 @@ owning-stage: "~devops::platforms"
 group: Software Delivery::Deploy
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/cells/infrastructure/feature_flags/
-upstream_sha: c82d3d351baf0f945623f1feaf9adc987ec1d4f9
-translated_at: "2026-04-26T10:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: claude
 stale: false
-lastmod: "2025-08-21T08:26:37+02:00"
+lastmod: "2026-09-01T12:49:01+05:30"
 ---
 
 <!-- Design Documents often contain forward-looking statements -->
@@ -34,6 +35,9 @@ lastmod: "2025-08-21T08:26:37+02:00"
 
 この ADR の前のイテレーションも参照してください:
 [Cells: Feature Flags](../feature_flags.md/)
+
+Membrane とグローバルフィーチャーフラグサービスを含む現在の実装方針については、
+[Cells ADR 028: Membrane とグローバルフィーチャーフラグサービスの方針](../decisions/028_membrane_and_global_feature_flag_service_direction.md)を参照してください。
 
 ## 動機
 

@@ -2,22 +2,22 @@
 title: "PathFactory"
 description: "PathFactory は、視聴者向けにパーソナライズされたコンテンツジャーニーを作成するために使用される、インテリジェントな B2B コンテンツエクスペリエンスプラットフォームです。"
 upstream_path: /handbook/marketing/marketing-operations/pathfactory/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-21T16:35:14-06:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## PathFactory とは何か
 
-PathFactory は、視聴者向けにパーソナライズされたコンテンツジャーニーを作成するために使用される、インテリジェントな B2B コンテンツエクスペリエンスプラットフォームです。[グローバルコンテンツ](/handbook/marketing/brand-and-product-marketing/content/) チームは主に PathFactory 内のすべてのコンテンツを担当します。キャンペーンマネージャーは、マーケティングの他のチームと協力して、アセットをトラックに整理・キュレーションし、Marketo、`about.gitlab.com`、その他のキャンペーン関連チャンネルで使用できるよう配信します。
+PathFactory は、視聴者向けにパーソナライズされたコンテンツジャーニーを作成するために使用される、インテリジェントな B2B コンテンツエクスペリエンスプラットフォームです。[グローバルコンテンツ](/handbook/marketing/product-and-technical-marketing/content/) チームは主に PathFactory 内のすべてのコンテンツを担当します。キャンペーンマネージャーは、マーケティングの他のチームと協力して、アセットをトラックに整理・キュレーションし、Marketo、`about.gitlab.com`、その他のキャンペーン関連チャンネルで使用できるよう配信します。
 
 ## PathFactory は何に使用されるか
 
 - PathFactory は主に、メールナーチャストリーム、ランディングページ、広告、バーチャルイベントのフォローアップに使用されます。
 
-- アセットは「コンテンツトラック」として（5〜7 個程度を）バンドルされ、1 つのリンクとして共有されます。個別のアセットへの複数のリンクを共有する代わりに、**1 つのリンク** がキュレーションされたコンテンツ体験を提供します。
+- アセットは「コンテンツトラック」として（5 〜 7 個程度を）バンドルされ、1 つのリンクとして共有されます。個別のアセットへの複数のリンクを共有する代わりに、**1 つのリンク** がキュレーションされたコンテンツ体験を提供します。
 
 ### PathFactory が _使用されない_ こと
 
@@ -59,7 +59,7 @@ PathFactory for Sales は、Salesforce 内の PathFactory の拡張機能で、S
 
 ファストムービングバイヤーアラート（FMB アラート）は、Marketo で設定されたメールアラートで、リードオーナーにリードの詳細を送信します。アラートは、リードが PathFactory エクスペリエンスで少なくとも 90 秒費やし、3 つ以上のアセットを表示したときにトリガーされます。以下は FMB アラートの例です:
 
-![image](/images/marketing/marketing-operations/pathfactory/pathfactory-for-sales/fmb-alertv2.png)
+![画像](/images/marketing/marketing-operations/pathfactory/pathfactory-for-sales/fmb-alertv2.png)
 
 ファストムービングバイヤーアラートは、Marketo からのグローバルな興味深い瞬間もトリガーします。
 
@@ -196,7 +196,7 @@ PathFactory には、コンテンツライブラリ内の変更（更新され�
 
 ### アセット
 
-[コンテンツライブラリ](/handbook/marketing/marketing-operations/pathfactory/content-library/) にアセットを追加するときは、パブリックタイトルと内部タイトルの両方がアセットのタイトルと一致することを確認してください。アセットタイトルに余分なプレフィックスを追加しないでください（例: `[BLOG] - Title of blog`）。コンテンツタイプは既にコンテンツタイプフィールドで示されています。PathFactory が URL からアセットに関する情報を取得すると、タイトルに付加される `|GitLab` などの余分な SEO メタタイトル情報を削除してください。フォーマットと[ケース](/handbook/marketing/brand-and-product-marketing/content/editorial-team/#case)（センテンスケース）について [編集チームのガイドライン](/handbook/marketing/brand-and-product-marketing/content/editorial-team/) に従ってください。
+[コンテンツライブラリ](/handbook/marketing/marketing-operations/pathfactory/content-library/) にアセットを追加するときは、パブリックタイトルと内部タイトルの両方がアセットのタイトルと一致することを確認してください。アセットタイトルに余分なプレフィックスを追加しないでください（例: `[BLOG] - Title of blog`）。コンテンツタイプは既にコンテンツタイプフィールドで示されています。PathFactory が URL からアセットに関する情報を取得すると、タイトルに付加される `|GitLab` などの余分な SEO メタタイトル情報を削除してください。フォーマットと[ケース](/handbook/marketing/product-and-technical-marketing/content/editorial-team/#case)（センテンスケース）について [編集チームのガイドライン](/handbook/marketing/product-and-technical-marketing/content/editorial-team/) に従ってください。
 
 ローカライズされたコンテンツを Pathfactory に追加するときは、`Public Configuration` セクションにローカライズされたタイトルと説明を入力します。これは外部の閲覧者がコンテンツとして見るものです。`Internal Configuration` の下に、英語のアセット名と言語を入力します（例: [Japanese] GitLab in Action Overview Demo）。`Internal Configuration` は、Pathfactory 内でのみ表示されます。
 
@@ -239,7 +239,7 @@ PathFactory には、コンテンツライブラリ内の変更（更新され�
 
 ### フォーム
 
-フォームは、トラックで費やした時間の量ではなく、訪問者が 2〜3 個のコンテンツを消費した後に提供される必要があります。訪問者が次のコンテンツに進む（最初の 2〜3 個の後）と、フォームに入力するよう求められます。
+フォームは、トラックで費やした時間の量ではなく、訪問者が 2 〜 3 個のコンテンツを消費した後に提供される必要があります。訪問者が次のコンテンツに進む（最初の 2 〜 3 個の後）と、フォームに入力するよう求められます。
 
 フォームに名前を付ける際は、命名規則に従ってください:
 
@@ -258,7 +258,7 @@ PathFactory には、コンテンツライブラリ内の変更（更新され�
 1. キュレーションされたコンテンツ
 1. 既知のオーディエンス
 1. パーソナライズされたジャーニー（メール、ウェブサイト、ターゲットディスプレイ）
-1. 5〜7 個のコンテンツ
+1. 5 〜 7 個のコンテンツ
 1. ウェビナー登録およびフォローアップで target を使用
 1. ガイド（GUIDE）するために target を使用
 
@@ -331,7 +331,7 @@ PathFactory には、コンテンツライブラリ内の変更（更新され�
 1. 設定（歯車アイコン）をクリックし、`User Experience` の下の `CTAs` に移動します。
 1. `Add CTA` ボタンをクリックします。
 1. CTA の名前を入力します（内部目的のみ）。CTA の主な目標が他者にわかるように具体的にしてください。
-1. CTA のボタンラベルを入力します。これはユーザーに表示されるものです。CTA のコピーは通常最大 2〜3 単語（18 文字）で、`Watch a demo` などのアクションワードを含める必要があります。
+1. CTA のボタンラベルを入力します。これはユーザーに表示されるものです。CTA のコピーは通常最大 2 〜 3 単語（18 文字）で、`Watch a demo` などのアクションワードを含める必要があります。
 1. CTA タイプ（フォーム、リンク、メール）を選択します。
    - **フォーム** を CTA タイプとして選択する場合、適切なキャプチャタグとスクリプトを **含める必要があります**。CTA として `WIP` フォームを選択しないでください。
    - **リンク** を CTA タイプとして選択する場合、適切な追跡のために UTM パラメータを **含める必要があります**（例: `utm_source=pathfactory&utm_medium=cta-name`）
@@ -346,7 +346,7 @@ PathFactory には、コンテンツライブラリ内の変更（更新され�
 
 - [フォーム戦略のベストプラクティス](https://support.pathfactory.com/kb/form-strategy-best-practices/)
 
-**GDPR の考慮事項:** 時間ベースのフォーム戦略を使用するときは、ユーザーがフォームに入力する前にクッキー同意ポップアップを受け入れる十分な時間を持つために、少なくとも 15〜30 秒を目指してください。
+**GDPR の考慮事項:** 時間ベースのフォーム戦略を使用するときは、ユーザーがフォームに入力する前にクッキー同意ポップアップを受け入れる十分な時間を持つために、少なくとも 15 〜 30 秒を目指してください。
 
 #### コンテンツトラックにフォーム戦略を追加する
 
@@ -377,7 +377,7 @@ PathFactory には、コンテンツライブラリ内の変更（更新され�
 
 1. アセット、CTA、フォームが正しく読み込まれ、プロモーターが意図した通り動作することを確認するために、エクスペリエンスをクリックスルーします。
 1. 余分な `?` を削除してください（URL の末尾の直後には 1 つだけあるべきです）。
-1. [UTM を追加する](/handbook/marketing/integrated-marketing/digital-strategy/digital-strategy-management/#utm-tracking) ときに余分な `&` に注意してください。
+1. [UTM を追加する](/handbook/marketing/growth-marketing/digital-agency/digital-strategy-management/#utm-tracking) ときに余分な `&` に注意してください。
 1. テストして、エクスペリエンスが意図した通り動作することを確認してください。
 
 **トラックが LIVE（使用中）の場合:**
@@ -401,7 +401,7 @@ PathFactory には、コンテンツライブラリ内の変更（更新され�
 - これらのトラックは [Target Tracks](https://gitlab.lookbookhq.com/authoring/content-library/target) > Demand Gen > `Segment Campaigns` の下に存在します（フォルダが膨大になった場合は変更される可能性があります - 必要に応じて HB を更新）
 - これらのトラックは、マーケティング全体で協力的に反復される [規範的バイヤージャーニー（"PBJs"）](/handbook/marketing/prescriptive-buyer-journeys/) と一致します
 - Campaigns Team は、さまざまなスタイル、フォーム戦略、エンドプロモーター設定をテストして反復します。
-- [サンプル "PBJ" トラック](https://gitlab.lookbookhq.com/authoring/content-library/target/57384) には、次の要素と設定が適用されています（簡単なクローン用）が、将来のものには 3〜4 個のアセットが含まれるのに対し、1 つのアセットしか含まれていません:
+- [サンプル "PBJ" トラック](https://gitlab.lookbookhq.com/authoring/content-library/target/57384) には、次の要素と設定が適用されています（簡単なクローン用）が、将来のものには 3 〜 4 個のアセットが含まれるのに対し、1 つのアセットしか含まれていません:
   - _Reminder Campaigns Team: 以下の例は単なる出発点です。実験とテストをお勧めします！_
   - トラック設定:（FYI）[これらの指示](/handbook/marketing/marketing-operations/pathfactory/#configure-content-track-settings) に従ってデフォルトに設定
   - トラック設定: カスタム URL スラグ（必須）: `[motion]-[stage]-[persona][#]`（例: `ci-awareness-prac1` または `vcc-`） - [詳細を見る](/handbook/marketing/marketing-operations/pathfactory/#configure-content-track-settings)
@@ -590,7 +590,7 @@ Explore ページのコンテンツへのすべての変更は、Explore ペー�
 
 [Languages 機能](https://support.pathfactory.com/kb/introduction-to-languages/) を使用すると、コンテンツトラック内のプロモーターおよびウェブサイトプロモーターで訪問者に表示されるテキストを完全に制御できます。この機能では、英語以外の言語の言語グループを作成し、それらの言語に表示されるテキストをカスタマイズすることもできます。
 
-[ローカリゼーションテクノロジースタック](/handbook/marketing/localization/localization_technology/) と PathFactory との統合はありません。PathFactory で新しい言語構成を作成し、PathFactory の言語構成メニューで利用可能なデフォルトの英語ソーステキストを送信するには、CSV を作成する必要があります。CSV では、翻訳のために列を含める/除外することしかできません。CSV ファイルを翻訳のために送信するためのフォーマットの詳細については、[ヘルプセンターの記事](https://help.smartling.com/hc/en-us/articles/360008000593-CSV-Files) を参照してください。
+[ローカリゼーションテクノロジースタック](/handbook/marketing/product-and-technical-marketing/globalization/localization-technology/) と PathFactory との統合はありません。PathFactory で新しい言語構成を作成し、PathFactory の言語構成メニューで利用可能なデフォルトの英語ソーステキストを送信するには、CSV を作成する必要があります。CSV では、翻訳のために列を含める/除外することしかできません。CSV ファイルを翻訳のために送信するためのフォーマットの詳細については、[ヘルプセンターの記事](https://help.smartling.com/hc/en-us/articles/360008000593-CSV-Files) を参照してください。
 
 1. 現在、`Languages` には英語、フランス語、ドイツ語、韓国語、日本語の構成があります。
 1. [PathFactory が現在サポートしている言語](https://support.pathfactory.com/kb/using-languages/)

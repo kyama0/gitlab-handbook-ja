@@ -1,11 +1,11 @@
 ---
 title: "ジャーニー"
 upstream_path: /handbook/marketing/journeys/
-upstream_sha: 45c75393c11589128fb6c8af61ce5be83a8031dd
-translated_at: "2026-05-01T14:48:17Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-02-27T10:12:54-08:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## はじめに
@@ -68,11 +68,11 @@ lastmod: "2026-02-27T10:12:54-08:00"
 |<span style="color: orange">意思決定/購入</span>       | 契約金額                                                                  | 営業、財務、法務      | 私たちの書類への署名/PO の提出                    |
 | 採用               | 各 DevOps ステージの利用ピング                                                                        | カスタマーサクセス    |                                                   |
 | リファレンス       | リファレンス可能性のスケール：例えば、動画はより高ポイント、次にブログ、公開リファレンス、非公開リファレンス | カスタマーアドボケイト | 公開資料、またはリファレンスデータベースへの登録 |
-| コントリビュート   | リファレンス以上に、お客様が GitLab プロジェクトまたはコミュニティに貢献する                          | コミュニティアドボケイト | コード、機能リクエスト、[アドバイザリーおよびエグゼクティブ顧客プログラム](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/#executive-advisory-board-eab-program)  |
+| コントリビュート   | リファレンス以上に、お客様が GitLab プロジェクトまたはコミュニティに貢献する                          | コミュニティアドボケイト | コード、機能リクエスト、[アドバイザリーおよびエグゼクティブ顧客プログラム](/handbook/marketing/growth-marketing/growth-community-programs/#executive-advisory-board-eab-program)  |
 
 ### バイヤージャーニーのコンテンツステージ
 
-より詳細な説明は、ハンドブックの [バイヤージャーニーの定義](/handbook/marketing/brand-and-product-marketing/content/#content-stage--buyers-journey-definitions) ページを参照してください。
+より詳細な説明は、ハンドブックの [バイヤージャーニーの定義](/handbook/marketing/product-and-technical-marketing/content/) ページを参照してください。
 
 #### 認知（初期ステージ）
 

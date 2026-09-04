@@ -2,11 +2,11 @@
 title: "セールス & カスタマーサクセス Quick Start 学習パス"
 description: "GitLab のセールス & カスタマーサクセスオンボーディングのコアカリキュラム"
 upstream_path: /handbook/sales/onboarding/sales-learning-path/
-upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
-translated_at: "2026-07-25T06:27:01+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-24T14:14:48+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## セールス & カスタマーサクセス学習パス - コアカリキュラム
@@ -67,7 +67,7 @@ lastmod: "2026-07-24T14:14:48+00:00"
   - 以下のリンクをクリックして、コースモジュールを進めてください。
   - [Our Customers](https://gitlabfieldenablement.s3.us-east-2.amazonaws.com/Our+Customers+-+Storyline+output/story.html)
 - **クイズ: バイヤーペルソナ (Assignment - 5 ポイント - 事前作業)**
-  - [ハンドブック](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/) の情報に基づいて、この短い [クイズ](https://docs.google.com/forms/d/e/1FAIpQLSeIDnYn4kWcBZSeRJ98AjUZK7pfj0DqOsnVIcbZjE-atYFExg/viewform) を完了してください。
+  - [ハンドブック](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/) の情報に基づいて、この短い [クイズ](https://docs.google.com/forms/d/e/1FAIpQLSeIDnYn4kWcBZSeRJ98AjUZK7pfj0DqOsnVIcbZjE-atYFExg/viewform) を完了してください。
 - **質問: ペルソナとペインポイント (Assignment - 1 ポイント - 事前作業)**
   - 以下の質問について考えを共有してください。これは教室のディスカッションボードです。クラウドソーシングで知識を集めましょう！営業担当者として、さまざまなバイヤーペルソナを理解することが重要なのはなぜでしょうか？
 - **顧客成功事例とプルーフポイント (Material - ハンドブック - 10 分)**
@@ -157,7 +157,7 @@ lastmod: "2026-07-24T14:14:48+00:00"
   - Command of the Message 学習パスを完了してください。
   - 完了までの時間は約 1.5 時間
 - **MEDDPPICC Full E-Learning Course (Assignment - 2 時間 - 10 ポイント - 事前作業)**
-  - [MEDDPPICC ハンドブックページ](/handbook/sales/meddppicc/) をレビューしてください。フル eラーニングはオプションです。
+  - [MEDDPPICC ハンドブックページ](/handbook/sales/meddppicc/) をレビューしてください。フル e ラーニングはオプションです。
   - 完了までの時間は約 1.5 時間
 - **GitLab バリューフレームワーク (Material - セールス資料 - 35 分)**
   - GitLab の [バリューフレームワーク](https://internal.gitlab.com/handbook/sales/command-of-the-message/#resources-core-content) (内部のみ) は、営業担当者が利用できる最も役立つツールの 1 つです。私たちのバリュードライバ、顧客のニーズを発見する方法、価値と差別化を明確に表現する方法を理解するためにご覧ください。クイック参照のための [フレームワーク要約](https://internal.gitlab.com/handbook/sales/command-of-the-message/#resources-core-content) (内部のみ) も利用できます。
@@ -167,9 +167,9 @@ lastmod: "2026-07-24T14:14:48+00:00"
 - **Social Selling 101 (Material - ビデオ - 20 分)**
   - ソーシャルセリングとは、顧客と見込み顧客を見つけ、つながり、育成するためにソーシャルネットワークを使用する技術です。[ビデオ](https://www.youtube.com/watch?v=w-C4jts-zUw) を見て、この [ガイド](https://drive.google.com/open?id=1UCRF6PC6al8XxT8E_4rDKkQjkW6WGPA6gybWeuRIg7A&authuser=0) を使って、見込み顧客に響くプロフィールの作り方を学んでください。
 - **質問: ビジネス開発 (Assignment - 15 分 - 10 ポイント - 事前作業)**
-  - ビジネス開発は難しいです... なぜなら、誰もがマーケティング適格リードを得たり、大きな紹介ネットワークを持っているわけではないからです。XDR パートナーとそのプロセスについてさらに理解するために、[Sales Development](/handbook/marketing/sales-development/) ハンドブックページをご覧ください。経験から得た戦略やベストプラクティスについて 1〜2 つの洞察を共有してください。リードでパイプラインを一貫して満たし続けるにはどうすればよいですか？ベストプラクティスをクラウドソーシングしましょう！
+  - ビジネス開発は難しいです... なぜなら、誰もがマーケティング適格リードを得たり、大きな紹介ネットワークを持っているわけではないからです。XDR パートナーとそのプロセスについてさらに理解するために、[Sales Development](/handbook/sales/sales-development/) ハンドブックページをご覧ください。経験から得た戦略やベストプラクティスについて 1 〜 2 つの洞察を共有してください。リードでパイプラインを一貫して満たし続けるにはどうすればよいですか？ベストプラクティスをクラウドソーシングしましょう！
 - **質問: アカウント開発 (Assignment - 15 分 - 10 ポイント - 事前作業)**
-  - 営業担当者の仕事の最も重要な部分の 1 つはアカウント開発です。あなたのクライアントは一度あなたから購入しており、再び購入する可能性が非常に高いです！経験から得た戦略やベストプラクティスについて 1〜2 つの洞察を共有してください。クライアントにより多く購入させ、紹介を送り続けてもらうにはどうすればよいですか？経験をクラウドソーシングしましょう！
+  - 営業担当者の仕事の最も重要な部分の 1 つはアカウント開発です。あなたのクライアントは一度あなたから購入しており、再び購入する可能性が非常に高いです！経験から得た戦略やベストプラクティスについて 1 〜 2 つの洞察を共有してください。クライアントにより多く購入させ、紹介を送り続けてもらうにはどうすればよいですか？経験をクラウドソーシングしましょう！
 
 </details>
 
@@ -195,9 +195,9 @@ lastmod: "2026-07-24T14:14:48+00:00"
 - **Azure DevOps**
   - [GitLab vs. Azure DevOps](https://about.gitlab.com/why-gitlab/) をチェック
 - **アクティビティ: 友達に電話: 競合 (Assignment - 45 分 - 10 ポイント - 事前作業)**
-  - GitLab の経験豊富なセールスプロフェッショナル（個人の貢献者またはピープルマネージャー）3 人と話し、競合に成功裏に勝つためのヒントとコツを尋ねてください。電話からメモを取り、各会話から学んだ 1〜2 つのことを [Google フォーム](https://docs.google.com/forms/d/e/1FAIpQLSdCwvGRS_-fV9J57KGYIjkXNEUHDigKoPXss-kf9r3Zjozo9w/viewform?usp=sf_link) に簡潔にまとめて課題を提出してください。
+  - GitLab の経験豊富なセールスプロフェッショナル（個人の貢献者またはピープルマネージャー）3 人と話し、競合に成功裏に勝つためのヒントとコツを尋ねてください。電話からメモを取り、各会話から学んだ 1 〜 2 つのことを [Google フォーム](https://docs.google.com/forms/d/e/1FAIpQLSdCwvGRS_-fV9J57KGYIjkXNEUHDigKoPXss-kf9r3Zjozo9w/viewform?usp=sf_link) に簡潔にまとめて課題を提出してください。
 - **クイズ: 競合 (Assignment - 5 ポイント - 事前作業)**
-この短い [クイズ](https://docs.google.com/forms/d/e/1FAIpQLSc6-LgwwSBBnsXDn1spi68FCseBY8OjP0rur_DKqa9RmEwQIg/viewform) の質問に回答してください。このクイズの情報は、[Competitive Intelligence](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/competitive-intelligence/) と [DevOps Tools Landscape](https://about.gitlab.com/why-gitlab/) のハンドブックページでカバーされています。
+この短い [クイズ](https://docs.google.com/forms/d/e/1FAIpQLSc6-LgwwSBBnsXDn1spi68FCseBY8OjP0rur_DKqa9RmEwQIg/viewform) の質問に回答してください。このクイズの情報は、[Competitive Intelligence](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/) と [DevOps Tools Landscape](https://about.gitlab.com/why-gitlab/) のハンドブックページでカバーされています。
 
 </details>
 
@@ -215,7 +215,7 @@ lastmod: "2026-07-24T14:14:48+00:00"
 - **GitLab Tech Stack の詳細 (Material - ハンドブック - 10 分)**
   - 事業をスムーズに運営するために [GitLab が使用するすべてのツール](/handbook/business-technology/tech-stack/) を理解するために、ご覧ください。
 - **アクティビティ: あなたには Issue があります！(Assignment - 20 分 - 10 ポイント - 事前作業)**
-  - [Sales Enablement Sandbox](https://gitlab.com/gitlab-com/sales-team/sales-enablement-sandbox) Project を見つけて、ハンドブックページ [「Issue で No Tissues」](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/getting-started/101/) を読んでください。ラベル、期日、ウェイトを含む Issue を作成し、自分自身に割り当ててください。Issue へのリンクを提出して課題を完了してください。Markdown を使用したコーディング方法について詳しく学ぶために、[Markdown シンタックスガイド](https://www.markdownguide.org/basic-syntax/) もご覧ください。Issue やマージリクエストを作成する際にこれは非常に役立ちます。
+  - [Sales Enablement Sandbox](https://gitlab.com/gitlab-com/sales-team/sales-enablement-sandbox) Project を見つけて、ハンドブックページ [「Issue で No Tissues」](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/getting-started/101/) を読んでください。ラベル、期日、ウェイトを含む Issue を作成し、自分自身に割り当ててください。Issue へのリンクを提出して課題を完了してください。Markdown を使用したコーディング方法について詳しく学ぶために、[Markdown シンタックスガイド](https://www.markdownguide.org/basic-syntax/) もご覧ください。Issue やマージリクエストを作成する際にこれは非常に役立ちます。
 - **アクティビティ: Issue 検索とラベルフィルタリングの練習 (Assignment - 10 分 - 10 ポイント)**
   - [ラベルを使用した Issue の検索とフィルタリング](https://gitlab.com/gitlab-org/gitlab-foss/-/labels) を練習してください
 - **LinkedIn プロフィールを更新！(Assignment - 30 分 - 10 ポイント - 事前作業)**
@@ -330,7 +330,7 @@ lastmod: "2026-07-24T14:14:48+00:00"
    -Kubernetes (k8s) の基礎を理解することが不可欠です。既存の Kubernetes 経験に基づいて、最初のコース「Kubernetes for the Absolute Beginner」(6 時間) または「Learn DevOps: the Complete Kubernetes Course」(13 時間) のいずれかを受講してください。
 - **リソース (オプション資料)
    -これらの [AWS と CI のリファレンス](https://docs.google.com/document/d/1bB7vlefsD_jwVgRxwaGuc8-AmR5sMyGSssS_alkNxuc/edit) をブックマーク
-   -これらの [マーケティングデモ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/) をブックマーク
+   -これらの [マーケティングデモ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/) をブックマーク
 
 </details>
 

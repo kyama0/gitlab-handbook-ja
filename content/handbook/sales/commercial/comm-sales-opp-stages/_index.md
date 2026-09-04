@@ -2,11 +2,11 @@
 title: "Commercial Sales 商談ステージ"
 description: "セールスステージのアクティビティと終了基準"
 upstream_path: /handbook/sales/commercial/comm-sales-opp-stages/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-11-13T09:24:20-08:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## <i class="fas fa-users fa-fw icon-color font-awesome"></i>なぜセールスステージが重要か?
@@ -21,7 +21,7 @@ lastmod: "2025-11-13T09:24:20-08:00"
 
 [終了基準の一覧:](https://docs.google.com/presentation/d/1x6ycY7SdPET5ioD2bPyV6RURafdU_fn4P7vD6X0QRsM/edit#slide=id.p)
 
-![comm-sales-stages-exit-criteria](/images/sales/commercial/comm-sales-opp-stages/comm-sales-stages-exit-criteria.png)
+![Commercial Sales ステージの終了基準](/images/sales/commercial/comm-sales-opp-stages/comm-sales-stages-exit-criteria.png)
 
 ---
 
@@ -34,7 +34,7 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 - [MEDDPPICC](/handbook/sales/meddppicc/) (商談の required qualification criteria セクション内) の入力を開始 - 痛み/ニーズ、Economic buyer、または見込み顧客の場合は economic buyer への経路を特定。プラス、インバウンドリードまたは現顧客の場合は意思決定プロセスを特定。
 - AE または SAE とのディスカバリーコールをスケジュール
-- SDR 起因の商談の場合、商談は [Sales Accepted Opportunity](/handbook/marketing/sales-development/#qualification-criteria-and-saos) 基準を満たすこと。
+- SDR 起因の商談の場合、商談は [Sales Accepted Opportunity](/handbook/sales/sales-development/) 基準を満たすこと。
 - SDR がコールをスケジュールし、招待状を送信し、account オブジェクトにイベントを作成し、イベントに次の名前を付けます: GitLab Introductory Meeting - {{Account Name}}。-
 - ミーティングが設定されたタイミングを強調するため、次のステップ日を入力します。両当事者によって招待が受諾されると、商談の所有権が AE/SAE に移管されます。
 - ディスカバリー会話後、営業チームが商談が Sales Accepted Opportunity 基準を満たすことを検証したら、SAE または AE が商談を次のステージ (Stage 1) に移動し、Amount フィールドに予測パイプラインを入力する必要があります。商談がこのステージから次のステージにセールスサイクル内で移動する日付が、商談レコードの Sales Accepted Date フィールドに入ります。
@@ -111,7 +111,7 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 - GitLab がどう、誰によって実装されるかをレビュー、必要に応じて GitLab および/またはパートナーの [professional services](/handbook/customer-success/professional-services-engineering/selling/#selling-gitlab-professional-services) についてのディスカッションを開く
 - 必要に応じて [パートナー/チャネル](https://docs.google.com/document/d/18xqRRCkIXlR7r4BvBQnK9n9zE70q-KPga-lVHhVw4n4/edit) を紹介
 - [競合差別化](https://internal.gitlab.com/handbook/sales/command-of-the-message/#gitlab-differentiators)
-- [proof points](/handbook/sales/command-of-the-message/proof-points/)、[ケーススタディ](https://gitlab.com/gitlab-com/marketing/strategic-marketing/customer-reference-content/case-study-content/-/boards/1804878?scope=all&utf8=%E2%9C%93)、[競合情報](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/competitive-intelligence/#competitive-intelligence-at-gitlab) を提供 (防御可能な差別化要因)
+- [proof points](/handbook/sales/command-of-the-message/proof-points/)、[ケーススタディ](https://gitlab.com/gitlab-com/marketing/strategic-marketing/customer-reference-content/case-study-content/-/boards/1804878?scope=all&utf8=%E2%9C%93)、[競合情報](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/competitive-intelligence/#competitive-intelligence-at-gitlab) を提供 (防御可能な差別化要因)
 - 顧客とともに [GitLab maturity/adoption](/handbook/product/product-principles/#multi-feature-usage-adoption-journey) ロードマップを作成
 - 顧客組織を横断して [Multi-thread](/handbook/sales/playbook/discovery/#lack-of-multi-threading)
 - Salesforce 商談で **SA Request ボタン** を使って SA エンゲージメントリクエストを作成。SA のエンゲージメントの詳細は [Commercial SA Engagement Model ハンドブックページ](/handbook/solutions-architects/processes/commercial/) を参照。
@@ -187,7 +187,7 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 
 - 該当する場合はパートナー経由で見積もり
 - [次のステップ](/handbook/sales/commercial/#opportunity-next-steps-best-practices) を更新
-- [リファレンス可能な顧客](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/) の場合、適切なリファレンス情報で Account オブジェクトの Referenceable Customer セクションを更新
+- [リファレンス可能な顧客](/handbook/marketing/growth-marketing/growth-community-programs/) の場合、適切なリファレンス情報で Account オブジェクトの Referenceable Customer セクションを更新
 - AE が見積もりを構築し、買い手とのレビューに備える
 - 見込み顧客に正式契約を提供
 - プロポーザルが顧客の [Positive Business Outcomes](/handbook/sales/command-of-the-message/metrics/#connect-metrics-with-positive-business-outcomes) と整合
@@ -288,7 +288,7 @@ Sales Development の商談はインバウンドの関心またはアウトバ�
 - パートナーサービスをキックオフ (該当する場合)
 - AE が顧客との初期 30 日フォローアップミーティングをスケジュール (Named/Territory、または高価値商談)
 - Named/Territory AE - 顧客とのアカウントレビューケイデンスを作成
-- Named/Territory AE が [Account Rank](/handbook/sales/commercial/#account-ranking) 1、1.5、2 に基づいて 18〜24 ヶ月の成長プランを作成
+- Named/Territory AE が [Account Rank](/handbook/sales/commercial/#account-ranking) 1、1.5、2 に基づいて 18 〜 24 ヶ月の成長プランを作成
 - AE が顧客とケーススタディの期待値を構築 (何が機能しているか/していないかについていつ頃フィードバックをもらえるか、いつ法務にケーススタディを依頼できるか? あなたの尊敬を得てケーススタディを構築するためには何が必要か、または別の顧客とリファレンスとして会ってくれるか? パネルに参加してくれるかなど)
 - CSM 担当アカウント - 高優先度アカウントに対する [EBR](/handbook/customer-success/csm/ebr/) プロセスを確立
 - 該当する場合は Professional Services を紹介

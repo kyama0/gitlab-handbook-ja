@@ -1,8 +1,7 @@
 ---
 title: Commercial Sales
 department: >-
-  The Commercial Sales department at GitLab focuses on delivering maximum value
-  to SMB and Mid-Market customers throughout their entire journey with GitLab
+  GitLab の Commercial Sales 部門は、SMB および Mid-Market のお客様が GitLab と共に歩む全ジャーニーを通じて最大の価値を提供することに注力しています
 upstream_path: /handbook/sales/commercial/
 upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
 translated_at: "2026-09-03T23:52:33+09:00"
@@ -209,7 +208,7 @@ Area Sales Managers は休暇前に検討する追加のステップがありま
     - ([トレーニングセッションはこちら](https://youtu.be/zN_0J6syxmM)と[トレーニングデッキはこちら](https://bit.ly/2WNlzbZ))
 1. 商談を[常に最新の状態に保つ](/handbook/sales/commercial/#salesforce-pipeline-activity) [動画](https://youtu.be/o5gm7_5321w)
 
-### アカウントランキング
+### アカウントランキング {#account-ranking}
 
 Commercial Sales チームは、Account Object のフィールドを使用してアカウントを階層化する必要があります。これは、新規または拡大の見込み客を探す際に、追跡するアカウントを優先するのに役立ちます。SMB および Mid-Market AE に特有の定義を以下に示します。
 
@@ -301,14 +300,14 @@ Lightweight Deal Review (LDR)は、[Command Plan](/handbook/sales/command-of-the
 ### Opportunity Next Steps ベストプラクティス
 
 1. Next Steps Date および Next Steps を常に最新の状態に保ち、お客様の購入プロセスを続けるためにアクションを取るという、将来の自分への課題としてください。
-2. 日の始まりには Email、Zendesk、リードキューなどのすべての入力をチェックして、その日の優先事項にこれらの依頼をトリアージできるようにしてください。
-3. 1 日の時間を 4 つの方法で割り当てます:
+1. 日の始まりには Email、Zendesk、リードキューなどのすべての入力をチェックして、その日の優先事項にこれらの依頼をトリアージできるようにしてください。
+1. 1 日の時間を 4 つの方法で割り当てます:
     - 予定されたお客様ミーティング
     - プロアクティブな E メールと社内の取り組み
     - プロアクティブな電話の取り組み
     - 入力を再度チェックする時間
-4. プロアクティブな時間ブロックを開始するとき、商談ビューを開き、Next Steps Date で並べ替えます。
-5. Next Steps は具体的かつ説得力があり、読んでから 3 分以内にアクションを取れるようにすべきです。
+1. プロアクティブな時間ブロックを開始するとき、商談ビューを開き、Next Steps Date で並べ替えます。
+1. Next Steps は具体的かつ説得力があり、読んでから 3 分以内にアクションを取れるようにすべきです。
     1. `Next Steps`には<b>*行動を取る次のもののみ*</b>を含むべきです: 日付なし、履歴なし、ネクストステップのみ
     1. `Next Steps`を更新すると、`Next Steps History`が自動的に以前の`Next Steps`を捕捉し、日付スタンプを適用して逆時系列順に保存します
     1. **注意:** 以前に`Next Steps`フィールドに履歴を含めていた場合、次回`Next Steps`を更新する際にフィールドを完全にクリアし、ネクストステップのみを入力する必要があります
@@ -386,7 +385,7 @@ ASM の効果的なコーチングが、なぜ今、なぜ何かをするか、�
 
 ## SMB Account Executives
 
-SMB Account Executives「SMB AEs」は、[SMB](/handbook/sales/field-operations/gtm-resources/)見込み客およびお客様に対する Account Executives およびとして、GitLab の顔として行動します。彼らは、従業員 1 名から 99 名を雇用する企業の主な連絡先です。
+SMB Account Executives（SMB AEs）は、[SMB](/handbook/sales/field-operations/gtm-resources/)の見込み客およびお客様に対する Account Executive かつ GitLab の顔として行動します。彼らは、従業員 1 名から 99 名を雇用する企業の主な連絡先です。
 
 ### SMB の役割
 
@@ -459,10 +458,10 @@ Support はキューに来るすべての依頼をリードし、以下の場合
 
 - パイプライン管理は、予測可能でスケーラブルな収益達成の鍵であり、単に目標を達成することと、目標を超えることの違いを生むことができます。適切な営業パイプライン管理は、時間を正しく割り当て、ディール速度を増加させ、正確な予測実践を通じてディール全体のボリューム、サイズ、収益を増加させるのに役立ちます。
 - よく管理された営業パイプラインには、ディールをディスカバリーからクローズドウォンに（または素早く認定外に）持ち込むためのロードマップとして機能する、定義されたアクティビティと出口基準を含む明確なプロセスが必要です。次のプロセスは Commercial Sales チームに固有のもので、クリーンなパイプラインと正確な予測を確保します。
-- [Detailed Exit Stage Criteria Google Sheet](https://docs.google.com/spreadsheets/d/1tVtJvfSsmWL2L1vTcJZgARlzC9Qy3Ae7pPqGBH9_KOQ/edit#gid=1399111321)
-- [Exit Criteria at a Glance](https://gitlab.highspot.com/items/6245c14f198094aabf1cfe52?lfrm=srp.0)
+- [詳細なステージ終了基準の Google スプレッドシート](https://docs.google.com/spreadsheets/d/1tVtJvfSsmWL2L1vTcJZgARlzC9Qy3Ae7pPqGBH9_KOQ/edit#gid=1399111321)
+- [終了基準の概要](https://gitlab.highspot.com/items/6245c14f198094aabf1cfe52?lfrm=srp.0)
 
-![comm-sales-stages-exit-criteria](/images/sales/commercial/comm-sales-opp-stages/comm-sales-stages-exit-criteria.png)
+![Commercial Sales ステージの終了基準](/images/sales/commercial/comm-sales-opp-stages/comm-sales-stages-exit-criteria.png)
 
 - 詳細については[Commercial Sales Opportunity Stages ハンドブックページ](/handbook/sales/commercial/comm-sales-opp-stages/)をお読みください。
 

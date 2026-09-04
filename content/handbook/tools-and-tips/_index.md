@@ -150,7 +150,7 @@ sudo apt install imagemagick
 
 これについてはハンドブックに [専用セクション](/handbook/product/product-processes/making-gifs/) があります。
 
-### 画像のリサイズ
+### 画像のリサイズ {#resizing-images}
 
 [ImageMagick](#imagemagick) は、画像のリサイズに使用できる `convert` CLI コマンドを提供します。私たちのブログ画像は 1920x1080 を超える解像度は必要ありません。これにより帯域幅が節約され、ウェブサイトの読み込みが速くなります。
 
@@ -525,7 +525,7 @@ GA に関する詳細情報は、[Google Analytics ハンドブック](/handbook
 
 世界の他の場所のチームメイトとイベントをスケジュールするときは、特に Google Calendar の Find a Time タブを活用してください:
 
-![Google Calendar - Find a Time](/images/tools-and-tips/google-calendar-find-a-time.png)
+![Google Calendar - 時間を探す](/images/tools-and-tips/google-calendar-find-a-time.png)
 
 Find a Time は、必要に応じてタイムゾーンを調整して、すべての参加者の新しいまたは既存のイベントの時間を提示します。
 Find a Time を使用するには:

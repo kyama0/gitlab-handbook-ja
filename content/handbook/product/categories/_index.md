@@ -1,9 +1,9 @@
 ---
 title: 製品セクション、ステージ、グループ、カテゴリ
 upstream_path: /handbook/product/categories/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-lastmod: "2026-08-14T11:43:03-05:00"
-translated_at: "2026-08-15T06:23:48+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
 ---
@@ -26,7 +26,7 @@ stale: false
 - [Engineering](/handbook/engineering/) Engineering Manager/Developer/Designer のタイトル、専門領域、部門、チーム名。
 - [Product Manager](/handbook/product/) の責任。詳細は本ページに記載されています
 - [私たちのピッチデック](https://gitlab.highspot.com/spots/615dd7e3911d70c4887812a7)。会社を説明するために使用するスライド
-- [Strategic marketing](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/) の専門分野
+- [Strategic marketing](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/) の専門分野
 
 ## 階層
 
@@ -40,7 +40,7 @@ Section は [`data/sections.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/b
 グループは [`data/stages.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/stages.yml) で管理されています。
 各グループには、`gitlab-org` および `gitlab-com` グループ配下に対応する [`group::<group>` ラベル](https://docs.gitlab.com/development/labels/#group-labels) があります。
 1. **Category**: グループは 1 つ以上のカテゴリを持ちます。カテゴリは、他社では単独の製品となりうるような高水準の機能群です。例えば
-Portfolio Management のようなものです。可能な限り、私たちはカテゴリを [アナリスト](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/) が定義するベンダーカテゴリにマッピングすべきです。
+Portfolio Management のようなものです。可能な限り、私たちはカテゴリを [アナリスト](/handbook/marketing/corporate-communications/analyst-relations/) が定義するベンダーカテゴリにマッピングすべきです。
 カテゴリは [`data/categories.yml`](https://gitlab.com/gitlab-com/www-gitlab-com/blob/master/data/categories.yml) で管理されています。
 各カテゴリには、`gitlab-org` グループ配下に対応する [`Category:<Category>` ラベル](https://docs.gitlab.com/development/labels/#category-labels) があります。
 1. **Feature**: Issue の重みのような、小さく個別の機能です。一部の
@@ -266,7 +266,7 @@ Engineering 主導の Section、Stage、Group については、同様のこと�
    - 例えば、Group レベルの変更の場合、Group の Engineering Lead と Group が属する Stage の Engineering Lead をメンションします。
 1. 影響を受ける Section の Engineering Lead
 1. 関連する Product Marketing Manager
-1. [テクニカルライティングのカウンターパート](/handbook/marketing/technical-writing/#assignments-to-devops-stages-and-groups)
+1. [テクニカルライティングのカウンターパート](/handbook/marketing/product-and-technical-marketing/technical-writing/#assignments-to-devops-stages-and-groups)
 1. Technical Writing の Lead (Director)
 1. UX Research の Lead
 1. Product Design の Lead (Director)

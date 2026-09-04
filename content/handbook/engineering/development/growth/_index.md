@@ -2,11 +2,11 @@
 title: Growth ステージ
 description: "Growth ステージは、プロダクトの機能強化と実験を行う開発チームで構成されています"
 upstream_path: /handbook/engineering/development/growth/
-upstream_sha: d8fb317567e8e271f91f602d97d453ad1a69a00a
-translated_at: "2026-08-13T23:58:47+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: 2026-08-12T10:14:59-04:00
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## ビジョン
@@ -15,12 +15,12 @@ lastmod: 2026-08-12T10:14:59-04:00
 
 ```mermaid
 flowchart TD
-    ACQ["獲得\nサインアップ"]
-    ACT["活性化\nプロダクトから価値を得る"]
-    MON["マネタイズ\nプロダクトへの支払い"]
-    ENG["エンゲージメント\nプロダクトの継続使用"]
-    RET["維持\nプロダクトへの継続支払い"]
-    INV["招待速度\n他者をプロダクトに招待する"]
+    ACQ["Acquisition\nSignup"]
+    ACT["Activation\nGet value from the product"]
+    MON["Monetization\nPay for the product"]
+    ENG["Engagement\nContinue using the product"]
+    RET["Retention\nContinue paying for product"]
+    INV["Invite Velocity\nInvite others to the product"]
 
     ACQ --> ACT
     ACT --> MON
@@ -32,13 +32,13 @@ flowchart TD
     ACQ --> MON
 ```
 
-Growth のミッション、方向性、プロダクト戦略の詳細については、[Growth プロダクトハンドブック](/handbook/marketing/growth/) を参照してください。
+Growth のミッション、方向性、プロダクト戦略の詳細については、[Growth プロダクトハンドブック](/handbook/marketing/growth-marketing/) を参照してください。
 
 ## 作業方法 {#how-we-work}
 
 [バリュー](/handbook/values/) に沿って、[イテレーション](/handbook/values/#iteration) と [コラボレーション](/handbook/values/#collaboration) に焦点を当て、開発部門のカウンターパートが管理するプロダクトの領域と協力して取り組んでいます。
 
-プロダクトチームが優先するIssueに取り組み、GitLab.com での [実験](/handbook/engineering/development/growth/experimentation/) も実行しています。Growth ステージのチームにはフルスタックエンジニアがいます。その理由は、Growth ステージはフロントエンドとバックエンドの両方のスキルセットを必要としますが、小規模なチームとして、チームメンバーの効率を最適化するためにフルスタックロールを採用しているからです。
+プロダクトチームが優先する Issue に取り組み、GitLab.com での [実験](/handbook/engineering/development/growth/experimentation/) も実行しています。Growth ステージのチームにはフルスタックエンジニアがいます。その理由は、Growth ステージはフロントエンドとバックエンドの両方のスキルセットを必要としますが、小規模なチームとして、チームメンバーの効率を最適化するためにフルスタックロールを採用しているからです。
 
 ## Growth リーダーシップとチーム
 
@@ -60,7 +60,7 @@ Growth のミッション、方向性、プロダクト戦略の詳細につい�
 
 ### チームとコミュニケーション
 
-Growth のすべてのチームは、1 つの Slack チャンネル [#s_growth](https://gitlab.slack.com/channels/s_growth)を共有しています。
+Growth のすべてのチームは、1 つの Slack チャンネル [#s_growth](https://gitlab.slack.com/channels/s_growth) を共有しています。
 
 | チーム | GitLab ハンドル |
 |------|---------------|
@@ -92,7 +92,7 @@ Growth チームは GitLab [実験](/handbook/engineering/development/growth/exp
 
 私たちがどのように、何を取り組んでいるかを確認するための有用なリンク:
 
-- [Growth 方向性](/handbook/marketing/growth/)
+- [Growth 方向性](/handbook/marketing/growth-marketing/)
 - [Growth エピック Kanban ボード](https://gitlab.com/groups/gitlab-org/-/epic_boards/2079888)
 - [開発用 Growth Issue Kanban ボード](https://gitlab.com/groups/gitlab-org/-/boards/1392106?&label_name%5B%5D=devops%3A%3Agrowth)
 - [実験](experimentation/)

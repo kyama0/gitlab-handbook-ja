@@ -2,25 +2,25 @@
 title: "GitLab ミーティングのベストプラクティス：ライブドックミーティング"
 description: 効率的、透明、ドキュメントベースのミーティングを実現する GitLab のミーティングベストプラクティスの概要
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/company/culture/all-remote/live-doc-meetings/
-upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
-translated_at: "2026-06-25T07:39:40+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-24T15:19:10-04:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
-![GitLab collaboration](/images/all-remote/gitlab-collaboration.jpg)
+![GitLab のコラボレーション](/images/all-remote/gitlab-collaboration.jpg)
 {style="width: 50%;"}
 
 このページでは、GitLab の実証済みの原則を活用して、効率的・透明性の高い・ドキュメントベースのミーティングを実現する方法を詳述しています。このスタイルのミーティングは、作業環境を問わず、結束力、規律、透明性を高めます。
 
 ## GitLab のミーティングベストプラクティス
 
-![GitLab all-remote mentor](/images/all-remote/ceo-shadow-gitlab-awesomeness.jpg)
+![GitLab のオールリモートメンター](/images/all-remote/ceo-shadow-gitlab-awesomeness.jpg)
 {style="width: 50%;"}
 
 「[アジェンダなし、出席なし](/handbook/communication/#external-communication)。」すべての業務関連ミーティングには、カレンダーの招待状に[ライブドックアジェンダ](https://docs.google.com/document/d/1eH-adpjfyo_RnlfbPvJ3i0e1Qb-aVoNc4yajnkZgJcU/edit#heading=h.6upuyp25d0wm)を添付する必要があります。GitLab がアジェンダドキュメントをどのように活用するかをよりよく理解するために、組織でコピーして使用できる[テンプレートの例](https://docs.google.com/document/d/1eH-adpjfyo_RnlfbPvJ3i0e1Qb-aVoNc4yajnkZgJcU/edit#heading=h.6upuyp25d0wm)があります。[コーヒーチャット](informal-communication/#coffee-chats)はインフォーマルコミュニケーションとしての機能から除外されています。
@@ -39,7 +39,7 @@ lastmod: "2026-06-24T15:19:10-04:00"
 ### 事前作業とミーティング開始
 
 1. 事前読み取り/視聴または事前作業の資料は、少なくとも 24 時間前に参加者にメールで送信してください。
-1. ミーティングのホスト（[DRI](/handbook/people-group/directly-responsible-individuals/)）はミーティングの最初の 1〜2 分で重要なポイントとコンテキストを要約することができますが、[ミーティングのほとんどはプレゼンテーションであるべきではありません](/handbook/communication/#few-meetings-with-presentations)。
+1. ミーティングのホスト（[DRI](/handbook/people-group/directly-responsible-individuals/)）はミーティングの最初の 1 〜 2 分で重要なポイントとコンテキストを要約することができますが、[ミーティングのほとんどはプレゼンテーションであるべきではありません](/handbook/communication/#few-meetings-with-presentations)。
 1. 質問は予定されたミーティング時間の前に[書き留め](/handbook/values/#write-things-down)てリストにしてください。これにより質問の質が向上する傾向があります。
 
 ### ミーティング中のメモ取りと構造
@@ -63,7 +63,7 @@ lastmod: "2026-06-24T15:19:10-04:00"
 
 ## Q: ライブドックミーティングのメリットとは？
 
-![GitLab collaboration illustration](/images/all-remote/gitlab-collaboration-illustration.jpg)
+![GitLab のコラボレーションのイラスト](/images/all-remote/gitlab-collaboration-illustration.jpg)
 {style="max-width: 50%"}
 
 チームメンバーが異なる場所にいる同僚や、ミーティングにライブで参加できない同僚と一緒に働いていることを認識しているという文化を確立することが重要です。ドキュメント作成は、チームの[機能不全](/handbook/values/#five-dysfunctions)を避けるための重要な部分です。
@@ -79,7 +79,7 @@ lastmod: "2026-06-24T15:19:10-04:00"
 
 すべてのミーティングが本質的に悪いわけではありません。例えば、マネージャーにはチームと[定期的な 1 対 1 のミーティング](/handbook/leadership/1-1/)を設けることを奨励しています。短い同期チャットが複数時間の非同期作業を置き換えられる場合もあります。同期と非同期を戦略的に活用することは、科学よりも芸術です。
 
-多くのミーティングは[非同期でうまく作業する](asynchronous/)方法を理解することで避けられます。
+多くのミーティングは[非同期でうまく作業する](/handbook/communication/#asynchronous-communication)方法を理解することで避けられます。
 
 GitLab がリモートワーク環境でミーティングを実施する方法について深く掘り下げるには、[オールリモートミーティングガイド](meetings/)を参照してください。GitLab のコミュニケーションについてさらに学ぶには、[コミュニケーションページ](/handbook/communication/)を参照してください。
 
@@ -97,11 +97,11 @@ GitLab がリモートワーク環境でミーティングを実施する方法�
 
 ## Q: ライブドックミーティングにどのように参加できるか？
 
-ライブドックミーティングへの参加方法は 2 つあります：[ライブの Zoom コールに参加する](/handbook/communication/#video-calls)のように同期的に参加するか、ミーティング終了後に記録されたビデオと一緒にドキュメント化されたディスカッションをレビューすることで[非同期](asynchronous/)に参加するかです。
+ライブドックミーティングへの参加方法は 2 つあります：[ライブの Zoom コールに参加する](/handbook/communication/#video-calls)のように同期的に参加するか、ミーティング終了後に記録されたビデオと一緒にドキュメント化されたディスカッションをレビューすることで[非同期](/handbook/communication/#asynchronous-communication)に参加するかです。
 
 ## Q: ライブドックミーティングはいつ開催されるか？
 
-ライブドックミーティングは通常、ホストのタイムゾーンで開催されます。ただし、リーダーは[より多様なタイムゾーンに対応するためにミーティングをローテーション](/handbook/company/culture/all-remote/asynchronous/#how-does-asynchronous-communication-work)し、後で視聴できるよう録画することも検討すべきです。
+ライブドックミーティングは通常、ホストのタイムゾーンで開催されます。ただし、リーダーは[より多様なタイムゾーンに対応するためにミーティングをローテーション](/handbook/communication/#asynchronous-communication)し、後で視聴できるよう録画することも検討すべきです。
 
 ## Q: ライブドックミーティングはどこで開催されるか？
 

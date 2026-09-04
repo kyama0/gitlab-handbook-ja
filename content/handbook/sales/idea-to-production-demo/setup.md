@@ -1,16 +1,16 @@
 ---
 title: "アイデアから本番環境までのデモ用に独自のテストOpenShift Originインスタンスをセットアップする"
 upstream_path: /handbook/sales/idea-to-production-demo/setup/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-11T23:51:39+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
 
-このドキュメントは、Idea to Production [デモ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/)を披露するための OpenShift Origin テストボックスをセットアップする簡単な方法を概説するものです。
+このドキュメントは、Idea to Production [デモ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/)を披露するための OpenShift Origin テストボックスをセットアップする簡単な方法を概説するものです。
 
 ## ハードウェアおよび OS 要件
 
@@ -261,7 +261,7 @@ OpenShift Origin の最新の安定リリースを使用してデモを実行し
 
 前のステップの出力により、テンプレートへのリンクが提供されたはずです。
 
-残りのデモプロセスは、ほとんどの場合、[Demo スクリプト](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/)から従うことができますが、セットアップスクリプトから提供されたテンプレートリンクを使用したいでしょう。
+残りのデモプロセスは、ほとんどの場合、[Demo スクリプト](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/demo/)から従うことができますが、セットアップスクリプトから提供されたテンプレートリンクを使用したいでしょう。
 
 これは: `https://gitlab.com/gitlab-org/omnibus-gitlab/raw/i2ptest/docker/openshift/idea-2-prod-template.json` です
 

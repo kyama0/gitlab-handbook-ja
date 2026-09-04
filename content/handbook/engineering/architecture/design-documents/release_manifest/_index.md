@@ -9,9 +9,9 @@ dris: ["@skarbek"]
 coaches: ["@nolith", "@skarbek"]
 toc_hide: false
 upstream_path: /handbook/engineering/architecture/design-documents/release_manifest/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-lastmod: "2026-08-14T12:52:01+05:30"
-translated_at: "2026-08-15T07:12:58+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+lastmod: "2026-08-18T15:21:26-04:00"
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: codex
 stale: false
 ---
@@ -56,7 +56,7 @@ GitLab リリースマニフェストは、特定の上位 GitLab バージョ�
 
 ``` mermaid
 flowchart LR
-    MCR[Modular Component - Release tagged] -->|Component entry updated in the Mutable catalog| RMMut[(Mutable Catalog)]
+    MCR[Modular Component - Release published] -->|Component entry updated in the Mutable catalog| RMMut[(Mutable Catalog)]
 
     GRS[GitLab Release Schedule] -->|GitLab monthly or weekly scheduled release published| GRP[GitLab Release Published]
 
@@ -119,6 +119,8 @@ flowchart LR
 ```
 
 このようなエントリは、[コンポーネント](https://gitlab.com/gitlab-com/gl-infra/infra-mgmt/-/blob/main/data/projects/release-platform/repos.yaml)のうち、[Release Framework](https://internal.gitlab.com/handbook/engineering/architecture/design-documents/release-platform/) を使用して管理されるすべてのものに存在します。
+
+可変カタログは、モジュール式コンポーネントのバージョンがユーザーに公開された**後にのみ**更新されます。これにより、モジュール式コンポーネントチームは、コンポーネントのバージョンを包括的な GitLab バージョンに含めるタイミングを制御できます。
 
 ### 不変レコード {#immutable-record}
 

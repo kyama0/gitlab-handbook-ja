@@ -2,11 +2,11 @@
 title: "GitLab における商標"
 description: "GitLab チームメンバー向けの商標情報"
 upstream_path: "/handbook/legal/trademarks-at-gitlab/"
-upstream_sha: "6eef8dbb6a0d15167aa5378f476b04cd38b78675"
-translated_at: "2026-07-10T07:06:25+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-06-29T08:59:00-04:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## GitLab における商標
@@ -17,14 +17,14 @@ GitLab のブランドは、その最も価値ある資産の一つです。こ�
 
 GitLab の商標の適切な使用に関する情報については、以下を参照してください。
 
-- [商標ガイドライン](/handbook/marketing/brand-and-product-marketing/brand/brand-activation/trademark-guidelines/)
+- [商標ガイドライン](/handbook/marketing/brand-experience/trademark-guidelines/)
 - [ブランド入門](https://gitlab.com/-/ide/project/gitlab-org/gitlab-services/design.gitlab.com/edit/main/-/contents/brand-introduction.md/)
 
 ## 新しい GitLab 商標のプロセス
 
 新しい商標を検討する場合は、以下を確認してください。
 
-- [GitLab における命名プロセス](/handbook/marketing/brand-and-product-marketing/brand/naming/#the-naming-process)
+- [GitLab における命名プロセス](/handbook/marketing/brand-experience/naming/#the-naming-process)
 - [製品および機能の命名ガイドライン](/handbook/product/product-principles/#product-and-feature-naming-guidelines)
 
 上記のガイドラインを確認した後、提案するマーク（ロゴかワードマークかを含む）を [#brand](https://app.slack.com/client/E03N1RJJX7C/C0119M5HUER) の Brand チームに連絡してください。Brand が提案されたロゴまたはワードマークの使用を承認した場合、次のステップを話し合うために Legal に連絡します。

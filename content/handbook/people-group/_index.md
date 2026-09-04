@@ -44,7 +44,7 @@ GitLab のピープルチームから緊急サポートが必要な場合は、[
 
 自然災害のためにチームメンバーが安全でない状況にある場合は、[Disaster Recovery Plan](/handbook/people-group/incident-response) ページを参照してください。
 
-### 違反の報告方法
+### 違反の報告方法 {#how-to-report-violations}
 
 [Code of Business Conduct and Ethics](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf) に記載されているとおり、違反の報告に関連するセクションがあります。GitLab は、すべてのチームメンバー向けの包括的で機密性のある報告ツールおよび匿名の倫理ホットラインである Ethico（https://www.mycompliancereport.com/report?cid=GTLB）を起用しています。サービスの目的は、[Code of Business Conduct and Ethics](https://s204.q4cdn.com/984476563/files/doc_downloads/govdoc/GitLab-Code-of-Business-Conduct-Ethics-2024-06-25.pdf) で扱われている行為について匿名で報告したいチームメンバーが、報復を恐れることなくそうできるようにすることです。
 

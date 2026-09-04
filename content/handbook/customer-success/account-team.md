@@ -2,11 +2,11 @@
 title: "アカウントチーム"
 description: "アカウントチームは、顧客の価値、成功、成長を推進するために協力して取り組みます"
 upstream_path: /handbook/customer-success/account-team/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ---
@@ -156,7 +156,7 @@ lastmod: "2026-05-08T14:07:20+02:00"
   - 戦略的イニシアティブと目標に関する継続的なアラインメント
   - 年次セキュリティおよびコンプライアンスアンケート（更新または調達プロセスの一環）
 
-- **[Customer Advocacy／Events](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/) との関わり**
+- **[Customer Advocacy／Events](/handbook/marketing/growth-marketing/growth-community-programs/) との関わり**
   - スピーキングエンゲージメントへの顧客ボランティア
   - リファラルプログラム
   - エンゲージメントを高めるケーススタディ
@@ -185,7 +185,7 @@ lastmod: "2026-05-08T14:07:20+02:00"
   - 更新マネージャーとの更新ディスカッションを準備しサポートする
   - リスクがある場合は[AE](/handbook/sales/) と更新マネージャーと積極的に協働する
 
-- **[セールス開発担当者（SDR）](/handbook/marketing/sales-development/)および[ビジネス開発担当者（BDR）](/handbook/marketing/sales-development/)との関わり**
+- **[セールス開発担当者（SDR）](/handbook/sales/sales-development/)および[ビジネス開発担当者（BDR）](/handbook/sales/sales-development/)との関わり**
   - [AE](/handbook/sales/) はファシリテーターとして機能し、アカウント拡張のための統一された戦略に CSM の専門知識とセールス／ビジネス開発活動を橋渡しし、CSM は必要に応じてサポートと洞察を提供する
     - カスタマージャーニーからの洞察を活用して、更新に関する早期ディスカッションを開始する
 

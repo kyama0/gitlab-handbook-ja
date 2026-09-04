@@ -2,11 +2,11 @@
 title: バディタスク
 draft: true
 upstream_path: /handbook/product/product-management/product-manager-buddy-tasks/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-translated_at: "2026-07-30T08:35:48+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T15:04:15+01:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 1. [ ] - 新しいプロダクトマネージャーと Day 1 の 1:1 を設定する
@@ -20,8 +20,8 @@ lastmod: "2026-07-28T15:04:15+01:00"
         - [Managing your Product Direction](/handbook/product/product-processes/#managing-your-product-direction)
         - [How to work as a PM](/handbook/product/product-processes/#how-to-work-as-a-pm)
     - 価格・ティア関連
-        - [GitLab Tiers](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers/)
-        - [Buyer Personas](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)
+        - [GitLab Tiers](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/)
+        - [Buyer Personas](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/)
     - カテゴリの DRI を確認するための [Product Categories ページ](/handbook/product/categories/)
     - [ティアとグループごとの機能一覧](/handbook/product/categories/features/)
     - [Analytics Direction Page](https://about.gitlab.com/direction/monitor/)
@@ -51,7 +51,7 @@ lastmod: "2026-07-28T15:04:15+01:00"
 1. [ ] - センシングメカニズムの Tips・コツ
     - センシングメカニズムについては、[ハンドブック](/handbook/product/product-processes/sensing-mechanisms/) に良い解説があります。私が役に立つと感じたほかのものを挙げます。
     - 顧客・ユーザーがいるほかの場所、例えば [GitLab フォーラム](https://forum.gitlab.com/) や Discord、[Reddit](https://www.reddit.com/r/gitlab/)、[HackerNews](https://news.ycombinator.com/news) などをチェックする。
-    - Issue - 週次トリアージで見落とされる可能性のある、自分のグループにアサインされた新しい Issue をレビューする習慣を持つとよいです。Issue 作成から 1〜2 日以内に、問題や望ましい結果についてユーザーと議論することで、良い会話が生まれることがあります。
+    - Issue - 週次トリアージで見落とされる可能性のある、自分のグループにアサインされた新しい Issue をレビューする習慣を持つとよいです。Issue 作成から 1 〜 2 日以内に、問題や望ましい結果についてユーザーと議論することで、良い会話が生まれることがあります。
     - Slack - 自分のカテゴリ名や競合名などを [Slack アラート](https://slack.com/help/articles/4412437167251-Get-notified-about-topics-you-care-about) のキーワードに追加することは、参加しているチャンネルで浮上してくる Issue や潜在顧客などを把握するのに有効です。
     - アナリストレポート - アナリストからのレポートへのアクセスについては、#analyst-relations チャンネルで問い合わせできます。
 1. [ ] - マイルストーンの流れ

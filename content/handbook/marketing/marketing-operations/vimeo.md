@@ -9,7 +9,7 @@ stale: false
 lastmod: "2026-07-28T15:04:15+01:00"
 ---
 
-## Vimeo について
+## Vimeo について {#about-vimeo}
 
 Vimeo は動画ホスティング、共有、サービスのプラットフォームです。
 

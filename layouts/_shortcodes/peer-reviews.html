@@ -1,0 +1,41 @@
+{{- /* The legacy source page reads this list from data/proofpoints.yml. */ -}}
+{{- $dataURL := "https://gitlab.com/gitlab-com/www-gitlab-com/-/raw/1cd5cb0fe963053b25036b8c7118c2406866f750/data/proofpoints.yml" -}}
+{{- $resource := resources.GetRemote $dataURL -}}
+{{- if not $resource -}}
+  {{- errorf "Unable to fetch peer review data from %s" $dataURL -}}
+{{- end -}}
+{{- $reviews := $resource | transform.Unmarshal -}}
+{{- $reviewTitles := dict
+  "G2 Crowd Reviews - Version Control Hosting Software" "G2 Crowd レビュー - バージョン管理ホスティングソフトウェア"
+-}}
+{{- $translations := dict
+  "https://www.g2.com/products/gitlab/reviews/gitlab-review-1976773" (dict
+    "quote" "ソフトウェア開発プロジェクトを管理するための強力なチームコラボレーションツール"
+    "industry" "サービス"
+    "csize" "エンタープライズ（従業員 10,001 人以上）"
+    "region" "")
+  "https://www.g2.com/products/gitlab/reviews/gitlab-review-2388492" (dict
+    "quote" "クラウドとオンプレミスの DevOps に最適なソリューション"
+    "industry" ""
+    "csize" "ミッドマーケット（従業員 201 〜 500 人）"
+    "region" "")
+  "https://www.g2.com/products/gitlab/reviews/gitlab-review-436746" (dict
+    "quote" "優れたセルフホスト型オープンソースのソース管理システム"
+    "industry" "バイオテクノロジー"
+    "csize" "ミッドマーケット（従業員 51 〜 200 人）"
+    "region" "")
+  "https://www.g2.com/products/gitlab/reviews/gitlab-review-701837" (dict
+    "quote" "効率的で、履歴をたどることができ、コラボレーションしやすい"
+    "industry" "市場調査"
+    "csize" "スモールビジネス（従業員 11 〜 50 人）"
+    "region" "")
+-}}
+
+{{- range $review, $reviewComments := $reviews }}
+<h4>{{ index $reviewTitles $review | default $review }}<hr></h4>
+  {{- range $reviewComments }}
+    {{- $localized := index $translations .quotelink }}
+<li><a href="{{ .quotelink }}" target="_blank">{{ $localized.quote }}</a>、{{ .role }}{{ with $localized.industry }}、{{ . }}{{ end }}{{ with $localized.csize }}、{{ . }}{{ end }}{{ with $localized.region }}、{{ . }}{{ end }}</li>
+  {{- end }}
+<hr>
+{{- end }}

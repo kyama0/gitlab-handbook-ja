@@ -1,11 +1,11 @@
 ---
 title: カスタマーサクセス プレイブック
 upstream_path: /handbook/customer-success/playbooks/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-05-08T14:07:20+02:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 追加のカスタマーサクセス ハンドブックコンテンツについては、[カスタマーサクセスホームページ](/handbook/customer-success/)を参照してください。
@@ -69,13 +69,13 @@ lastmod: "2026-05-08T14:07:20+02:00"
 | Agile Expansion Stage Enablement（アジャイル拡大ステージイネーブルメント） | 手動 | 目標 | |
 | CD Enablement Stage Adoption（CD イネーブルメントステージ導入） | 手動 | 目標 | [Continuous Delivery/Release](/handbook/customer-success/playbooks/cd-release/) |
 | CD Expansion Stage Adoption（CD 拡大ステージ導入） | 手動 | 目標 | |
-| CI Enablement Stage Adoption（CI イネーブルメントステージ導入） | 手動 | 目標 | [Continuous Integration/Verify](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/) <br> [CSM CI ワークショップ](/handbook/customer-success/playbooks/ci-verify/) |
+| CI Enablement Stage Adoption（CI イネーブルメントステージ導入） | 手動 | 目標 | [Continuous Integration/Verify](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/) <br> [CSM CI ワークショップ](/handbook/customer-success/playbooks/ci-verify/) |
 | CI Expansion Stage Adoption（CI 拡大ステージ導入） | 手動 | 目標 | |
 | Configure Enablement Stage Adoption（Configure イネーブルメントステージ導入） | 手動 | 目標 | |
 | Configure Expansion Stage Adoption（Configure 拡大ステージ導入） | 手動 | 目標 | |
-| Create Enablement Stage Adoption（Create イネーブルメントステージ導入） | 手動 | 目標 | [Source Code Management（SCM）/Create Stage](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/) |
+| Create Enablement Stage Adoption（Create イネーブルメントステージ導入） | 手動 | 目標 | [Source Code Management（SCM）/Create Stage](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/) |
 | Create Expansion Stage Adoption（Create 拡大ステージ導入） | 手動 | 目標 | |
-| DevSecOps Enablement Stage Adoption（DevSecOps イネーブルメントステージ導入） | 手動 | 目標 | [DevSecOps/Security](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/) |
+| DevSecOps Enablement Stage Adoption（DevSecOps イネーブルメントステージ導入） | 手動 | 目標 | [DevSecOps/Security](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/) |
 | DevSecOps Expansion Stage Adoption（DevSecOps 拡大ステージ導入） | 手動 | 目標 | |
 | Geo Implementation（Geo 実装） | 手動 | 目標 | [情報シート](https://docs.google.com/document/d/1Gn93NUWq4RxPvfxJRodEyvb-6-dLqUV6euPV8k9yIvw/edit)<br> [ディスカバリー質問](https://docs.google.com/document/d/1KgSHHsYFHPB__xA9rlUEbLBRYDlPl6FyKzn1V8I2Wfk/edit)<br>[実装のヒントとコツ](https://docs.google.com/document/d/1EhXT-_Wf0GrmDSh2vthca0sl6bWb-1hQruv2lHd4aFs/edit?ts=60356ba2) |
 | Improve Cycle Time (Lead Time for Changes)（サイクルタイムの改善 / 変更のリードタイム） | 手動 | 目標 | |

@@ -105,12 +105,12 @@ GitLab Team Member Engagement Survey は 11 のセクションで構成されて
 
 私たちが主に焦点を当てるサーベイ要素:
 
-1. Overall Sentiment and Inclusivity
-2. Confidence in GitLab and Management
-3. Your Role & Connecting at GitLab
-4. Team and Company Values
-5. Action
-6. Open text questions
+1. 全体的なセンチメントとインクルーシビティ
+2. GitLab と経営陣への信頼
+3. あなたの役割と GitLab でのつながり
+4. チームと会社のバリュー
+5. アクション
+6. 自由記述式の質問
 
 全体的なサーベイは 40〜50 個の質問で構成されています。サーベイの形式は主に Likert またはレーティングスケールで、最後にいくつかのフリーテキスト質問またはコメントがあります。好意的なスコアは、「同意する」および「強く同意する」を選択した参加者のパーセンテージです。
 
@@ -151,8 +151,8 @@ FY26-Q4 パルスサーベイは、私たちの最初のパルスサーベイで
 
 ### リソース
 
-- [FY26-Q4 Pulse Survey Manager FAQ Guide](https://theloop.gitlab.com/site/86fb486b-2c79-43d7-85f0-edbb946866b4/page/0e140917-2308-449c-93b5-92826e5ec9d7)
-- Culture Amp Self-Service Reporting Documentation - LINK TO BE ADDED
+- [FY26-Q4 パルスサーベイのマネージャー向け FAQ ガイド](https://theloop.gitlab.com/site/86fb486b-2c79-43d7-85f0-edbb946866b4/page/0e140917-2308-449c-93b5-92826e5ec9d7)
+- Culture Amp セルフサービスレポートのドキュメント - リンク追加予定
 - 質問やサポートについては、People Business Partner に連絡するか、HelpLab を介してリクエストを送信してください
 
 ### なぜパルスサーベイなのか
@@ -200,29 +200,29 @@ FY26 年次エンゲージメントサーベイは 2025-06-09 から 2025-06-30 
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Psychological Safety | 88% |
-| Your Manager | 85% |
-| Values | 83% |
+| 心理的安全性 | 88% |
+| あなたのマネージャー | 85% |
+| バリュー | 83% |
 
 | **トップスコア - 個別ステートメント** | **好意度評価** |
 | ------ | -------------------- |
-| Members of my team are able to bring up problems and tough issues | 90% |
-| I trust team members at GitLab | 89% |
-| I would rate my team as high performing | 88% |
+| 私のチームのメンバーは、問題や難しい課題を提起できる | 90% |
+| 私は GitLab のチームメンバーを信頼している | 89% |
+| 私は自分のチームをハイパフォーマンスなチームだと評価する | 88% |
 
 ### トップ 3 機会
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Change Success | 56% |
-| Action | 59% |
-| Our Leaders | 62% |
+| 変革の成功 | 56% |
+| アクション | 59% |
+| 私たちのリーダー | 62% |
 
 | **機会 - 個別ステートメント** | **好意度評価** |
 | ------ | -------------------- |
-| The changes introduced during this fiscal year have improved our company culture | 36% |
-| I can easily find the information I need in the handbook | 46% |
-| I believe action will take place as a result of this survey | 58% |
+| この会計年度に導入された変更により、会社のカルチャーが改善された | 36% |
+| 必要な情報をハンドブックで簡単に見つけられる | 46% |
+| このサーベイの結果を受けてアクションが取られると信じている | 58% |
 
 #### エピックと Issue を使用したアクションプランの作成
 
@@ -232,7 +232,7 @@ FY26 年次エンゲージメントサーベイは 2025-06-09 から 2025-06-30 
 
 #### FY25 エンゲージメントサーベイアクションプランニングエピック
 
-- [Company wide focus areas](https://gitlab.com/groups/gitlab-com/people-group/-/epics/109)
+- [全社的な重点領域](https://gitlab.com/groups/gitlab-com/people-group/-/epics/109)
 - [Product](https://gitlab.com/groups/gitlab-com/-/epics/2402)
 - [Engineering](https://gitlab.com/groups/gitlab-com/engineering-division/-/epics/1)
 - [Sales](https://gitlab.com/groups/gitlab-com/sales-team/-/epics/114)
@@ -309,29 +309,29 @@ FY'24 Q2 エンゲージメントサーベイは 2023-05-22 から 2023-06-07 �
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Psychological Safety | 88% |
-| Your Manager | 84% |
-| Connectedness | 78% |
+| 心理的安全性 | 88% |
+| あなたのマネージャー | 84% |
+| つながり | 78% |
 
 | **トップスコア - 個別ステートメント** | **好意度評価** |
 | ------ | -------------------- |
-| I enjoy engaging with my peers at GitLab | 94% |
-| It is easy to ask other members of your team for help | 92% |
-| No one on my team would deliberately act in a way that undermines my efforts | 91% |
+| GitLab の同僚と交流することを楽しんでいる | 94% |
+| チームの他のメンバーに助けを求めやすい | 92% |
+| 私のチームには、私の努力を損なうような行動を意図的に取る人はいない | 91% |
 
 #### トップ 3 機会
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Action | 58% |
-| Company Confidence | 60% |
-| Our Leaders | 62% |
+| アクション | 58% |
+| 会社への信頼 | 60% |
+| 私たちのリーダー | 62% |
 
 | **機会 - 個別ステートメント** | **好意度評価** |
 | ------ | -------------------- |
-| I believe action will take place as a result of this survey | 55% |
-| GitLab effectively directs resources (funding, people and effort) towards company goals | 57% |
-| When there are career opportunities at GitLab, I am aware of them | 58% |
+| このサーベイの結果を受けてアクションが取られると信じている | 55% |
+| GitLab は会社の目標に向けてリソース（資金、人員、労力）を効果的に配分している | 57% |
+| GitLab でキャリアの機会があるとき、私はそれを把握している | 58% |
 
 これらの機会に関連する追加分析は、GitLab チームメンバーのみが利用可能な詳細な FY24 Culture Amp エンゲージメントサーベイ結果[プレゼンテーション](https://docs.google.com/presentation/d/1fs5mPdQUdZXR6blK-5cFZL_N-Qr2Y8eta_EhKQAYa64/edit?usp=sharing)に含まれています。
 
@@ -417,13 +417,13 @@ FY23 エンゲージメントサーベイについては、すべての部門に
 
 #### マネージャー向けリソース
 
-[Engagement Survey Manager Toolkit - GitLab Learn pathway](https://gitlab.edcast.com/pathways/engagement-survey-manager-toolkit)
+[エンゲージメントサーベイのマネージャー向けツールキット - GitLab Learn ラーニングパス](https://gitlab.edcast.com/pathways/engagement-survey-manager-toolkit)
 
-[Managers Guide to Taking Action](https://support.cultureamp.com/en/articles/7048670-manager-s-guide-to-taking-action-on-engagement-survey-results)
+[アクションを取るためのマネージャー向けガイド](https://support.cultureamp.com/en/articles/7048670-manager-s-guide-to-taking-action-on-engagement-survey-results)
 
-[Take Action with Action Framework](https://support.cultureamp.com/en/articles/7048673-take-action-with-the-action-framework)
+[アクションフレームワークでアクションを取る](https://support.cultureamp.com/en/articles/7048673-take-action-with-the-action-framework)
 
-## FY'23 Q2 パルスエンゲージメントサーベイ結果
+## FY'23 Q2 パルスエンゲージメントサーベイ結果 {#fy23-q2-pulse-engagement-survey-results}
 
 FY'23 Q2 パルスエンゲージメントサーベイは 2022-05-16 から 2022-05-25 まで実施されました。サーベイは 2022-04-30 以前に採用されたチームメンバーに開放されました。
 
@@ -448,17 +448,17 @@ FY'23 Q2 パルスエンゲージメントサーベイは 2022-05-16 から 2022
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Your Manager | 87% |
-| Inclusion | 82% |
-| Growth & Development | 81% |
+| あなたのマネージャー | 87% |
+| インクルージョン | 82% |
+| 成長と能力開発 | 81% |
 
 GitLab は、上記の 3 つの要素すべてにわたって、業界ベンチマーク（つまり、New Tech (1,000+) 2022）より 5%〜8% 高く評価されました。
 
 | **質問** | **好意度評価** |
 | -------- | -------------------- |
-| I am proud to work for GitLab | 94% |
-| I would recommend GitLab as a great place to work | 91% |
-| My manager keeps me informed about what is happening | 90% |
+| GitLab で働くことを誇りに思う | 94% |
+| GitLab を素晴らしい職場として勧めたい | 91% |
+| 私のマネージャーは、何が起きているかを常に知らせてくれる | 90% |
 
 GitLab は、上記の 3 つの質問すべてにわたって、業界ベンチマーク（つまり、New Tech (1,000+) 2022）より 6〜8% 高く評価されました。
 
@@ -466,17 +466,17 @@ GitLab は、上記の 3 つの質問すべてにわたって、業界ベンチ�
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Action | 59% |
-| Your Role | 70% |
-| Our Leaders | 77% |
+| アクション | 59% |
+| あなたの役割 | 70% |
+| 私たちのリーダー | 77% |
 
 GitLab は業界ベンチマーク（つまり、New Tech (1,000+) 2022）より最大 3% 高く評価されました。
 
 | **質問** | **好意度評価** |
 | -------- | -------------------- |
-| I have seen positive changes taking place based on recent team member survey results | 54% |
-| I believe my Compensation (Base, Bonus, etc.) is competitive relative to similar roles at other companies | 62% |
-| I believe action will take place as a result of this survey| 64% |
+| 最近のチームメンバーサーベイの結果に基づき、ポジティブな変化が起きている | 54% |
+| 私の報酬（基本給、ボーナスなど）は、他社の同様の役割と比べて競争力があると思う | 62% |
+| このサーベイの結果を受けてアクションが取られると信じている| 64% |
 
 GitLab はポジティブなアクションに関する最低スコアの質問で、業界ベンチマーク（New Tech +1,000 2022）より 4% 高く、報酬に関しては 9% 高く、サーベイから取られたアクションに関しては 2% 高くスコアされました。
 
@@ -546,11 +546,11 @@ FY22 エンゲージメントサーベイについては、すべての部門に
 
 #### マネージャー向けリソース
 
-[Engagement Survey Manager Toolkit - GitLab Learn pathway](https://gitlab.edcast.com/pathways/engagement-survey-manager-toolkit)
+[エンゲージメントサーベイのマネージャー向けツールキット - GitLab Learn ラーニングパス](https://gitlab.edcast.com/pathways/engagement-survey-manager-toolkit)
 
-[Managers Guide to Taking Action](https://support.cultureamp.com/en/articles/7048670-manager-s-guide-to-taking-action-on-engagement-survey-results)
+[アクションを取るためのマネージャー向けガイド](https://support.cultureamp.com/en/articles/7048670-manager-s-guide-to-taking-action-on-engagement-survey-results)
 
-[Take Action with Action Framework](https://support.cultureamp.com/en/articles/7048673-take-action-with-the-action-framework)
+[アクションフレームワークでアクションを取る](https://support.cultureamp.com/en/articles/7048673-take-action-with-the-action-framework)
 
 ## FY' 22 Q4 パルスエンゲージメントサーベイ結果
 
@@ -574,17 +574,17 @@ FY'22 Q4 パルスエンゲージメントサーベイは 2021-11-4 から 2021-
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Company Confidence | 94% |
-| Inclusion | 88% |
-| Our Leaders | 83% |
+| 会社への信頼 | 94% |
+| インクルージョン | 88% |
+| 私たちのリーダー | 83% |
 
 GitLab は、上記の 3 つの要素すべてにわたって、業界ベンチマーク（つまり、New Tech (1,000+) 2021）より 4%〜12% 高く評価されました。
 
 | **質問** | **好意度評価** |
 | -------- | -------------------- |
-| I am proud to work for GitLab | 96% |
-| GitLab is in a position to really succeed over the next three years | 94% |
-| I would recommend GitLab as a great place to work | 94% |
+| GitLab で働くことを誇りに思う | 96% |
+| GitLab は今後 3 年間で大きな成功を収められる立場にある | 94% |
+| GitLab を素晴らしい職場として勧めたい | 94% |
 
 GitLab は、上記の 3 つの質問すべてにわたって、業界ベンチマーク（つまり、New Tech (1,000+) 2021）より 7〜12% 高く評価されました。
 
@@ -592,17 +592,17 @@ GitLab は、上記の 3 つの質問すべてにわたって、業界ベンチ�
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Action | 55% |
-| Your Role | 67% |
-| Growth & Development | 79% |
+| アクション | 55% |
+| あなたの役割 | 67% |
+| 成長と能力開発 | 79% |
 
 GitLab は、上記の 3 つの要素すべてにわたって、業界ベンチマーク（つまり、New Tech (1,000+) 2021）より 1%〜10% 高く評価されました。
 
 | **質問** | **好意度評価** |
 | -------- | -------------------- |
-| I have seen positive changes taking place based on recent team member survey results | 48% |
-| I believe action will take place as a result of this survey | 61% |
-| I believe there are good career opportunities for me at GitLab | 72% |
+| 最近のチームメンバーサーベイの結果に基づき、ポジティブな変化が起きている | 48% |
+| このサーベイの結果を受けてアクションが取られると信じている | 61% |
+| GitLab には自分にとって良いキャリア機会があると思う | 72% |
 
 GitLab は、ポジティブなアクションに関する 2 つの最低スコアの質問で、業界ベンチマーク（New Tech +1,000 2021）より 1〜2% 下回ったが、キャリア機会に関しては、ベンチマークより 6% 高くスコアされました。
 
@@ -616,7 +616,7 @@ FY'22 Q4 パルスエンゲージメントサーベイの結果については�
 
 #### 前回のサーベイ以降に取られたアクション
 
-**Growth & Development**
+**成長と能力開発**
 
 1. 2 名の L&D チームメンバーが Crucial Conversations を提供するためのトレーニングを受け、これまでに 2021 年に 3 つのコホートを提供
 1. 複数のライブラーニングセッションを開催
@@ -631,7 +631,7 @@ FY'22 Q4 パルスエンゲージメントサーベイの結果については�
 1. 15 件以上の CEO Handbook Learning セッションを実施
 1. GitLab Learn で Functional Learning Hubs を開始
 
-**Compensation**
+**報酬**
 
 1. 場所要素にリージョンを実装。
 1. 3.5 年のリフレッシュから年次リフレッシュ付与に移行、最初のサイクルは 2021 年 3 月に発効。
@@ -639,7 +639,7 @@ FY'22 Q4 パルスエンゲージメントサーベイの結果については�
 1. RSU のベスティングを新入社員の 6 ヶ月のクリフに削減し、昇進/リフレッシュにはクリフなし。
 1. GitLab のすべてのチームメンバー向けに、業界をリードする ESPP / Alternate ESPP を実装。
 
-**Resource Allocation**
+**リソース配分**
 
 1. 2020 年 12 月の 1267 名のチームメンバーから 2021 年 12 月の 1574 名のチームメンバーへとヘッドカウントを増加。
 1. 2021 年の平均昇進率は 16.77% で、平均市場昇進率より高くなっています
@@ -672,14 +672,14 @@ New Tech 1,000+ 2020 のベンチマーク好意度スコアは 73% で、GitLab
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Your Manager | 88% |
-| Well-being COVID-19 | 85% |
-| Culture | 84% |
+| あなたのマネージャー | 88% |
+| ウェルビーイング COVID-19 | 85% |
+| カルチャー | 84% |
 | **質問** | **好意度評価** |
 | -------- | -------------------- |
-| I am proud to work for GitLab | 93% |
-| I feel supported when I need to take time off or make use of flexible working arrangements | 93% |
-| I know how my work contributes to the goals of GitLab | 93% |
+| GitLab で働くことを誇りに思う | 93% |
+| 休暇を取ったり柔軟な勤務形態を利用したりする必要があるとき、サポートされていると感じる | 93% |
+| 自分の仕事が GitLab の目標にどう貢献しているかを理解している | 93% |
 
 GitLab は、上記の 3 つの質問すべてにわたって、業界ベンチマーク（つまり、New Tech +1,000 2020）より 5〜13% 高く評価されました。
 
@@ -687,23 +687,23 @@ GitLab は、上記の 3 つの質問すべてにわたって、業界ベンチ�
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Our Leaders | 79% |
-| Growth & Development | 70% |
-| Action | 54% |
+| 私たちのリーダー | 79% |
+| 成長と能力開発 | 70% |
+| アクション | 54% |
 | **質問** | **好意度評価** |
 | -------- | -------------------- |
-| I have been provided an opportunity to see and discuss prior engagement survey results | 60% |
-| The Learning & Development programs provided by GitLab help me grow my career | 47% |
-| I have seen positive changes since the previous engagement survey | 39% |
+| 過去のエンゲージメントサーベイ結果を確認し、話し合う機会が提供された | 60% |
+| GitLab が提供する学習と能力開発プログラムは、私のキャリア成長に役立っている | 47% |
+| 前回のエンゲージメントサーベイ以降、ポジティブな変化が見られた | 39% |
 
 GitLab は、ポジティブな変更に関する最低スコアの質問で、業界ベンチマーク（New Tech +1,000 2020）より 5% 下回ったが、他の 2 つの質問には比較対象がありませんでした。
 
 #### FY' 21 E-Group 焦点領域
 
-- Action（アクションは私たちの最低スコアですが、年々の改善が見られ、この領域への焦点を継続します）
-- Growth & Development
-- Compensation
-- Resource Allocations
+- アクション（アクションは私たちの最低スコアですが、年々の改善が見られ、この領域への焦点を継続します）
+- 成長と能力開発
+- 報酬
+- リソース配分
 
 ### FY' 20 エンゲージメントサーベイ
 
@@ -727,14 +727,14 @@ FY20 サーベイは New Tech Size >500 2019 に対してベンチマークさ�
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Culture | 87% |
-| Your Manager | 87% |
-| Teamwork | 86% |
+| カルチャー | 87% |
+| あなたのマネージャー | 87% |
+| チームワーク | 86% |
 | **質問** | **好意度評価** |
 | -------- | -------------------- |
-| I would recommend GitLab as a great place to work | 95% |
-| GitLab is in a position to really succeed over the next three years | 94% |
-| I am proud to work for GitLab | 94% |
+| GitLab を素晴らしい職場として勧めたい | 95% |
+| GitLab は今後 3 年間で大きな成功を収められる立場にある | 94% |
+| GitLab で働くことを誇りに思う | 94% |
 
 GitLab は、上記の 3 つの質問すべてにわたって、業界ベンチマーク（つまり、New Tech Size >500 2019）より 11〜17% 高く評価されました。
 
@@ -742,22 +742,22 @@ GitLab は、上記の 3 つの質問すべてにわたって、業界ベンチ�
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Your Role | 84% |
-| Growth & Development | 80% |
-| Action | 46% |
+| あなたの役割 | 84% |
+| 成長と能力開発 | 80% |
+| アクション | 46% |
 | **質問** | **好意度評価** |
 | -------- | -------------------- |
-| I believe action will take place as a result of this survey | 64% |
-| I have been provided an opportunity to see and discuss prior engagement survey results | 46% |
-| I have seen positive changes since the previous engagement survey | 29% |
+| このサーベイの結果を受けてアクションが取られると信じている | 64% |
+| 過去のエンゲージメントサーベイ結果を確認し、話し合う機会が提供された | 46% |
+| 前回のエンゲージメントサーベイ以降、ポジティブな変化が見られた | 29% |
 
 GitLab は、ポジティブな変更に関する最低スコアの質問で、業界ベンチマーク（New Tech Size >500 2019）より 15% 下回ったが、他の 2 つの質問には比較対象がありませんでした。
 
 #### FY' 20 E-Group 焦点領域
 
-- GitLab Team Member Engagement Survey Results からのガイダンスによる領域からアクションを取る。
+- GitLab チームメンバーエンゲージメントサーベイの結果から示された領域についてアクションを取る。
 - チームメンバーの開発に対するマネージャーによる奨励。
-- Total Compensation。
+- 総報酬。
 
 ### FY' 19 エンゲージメントサーベイ
 
@@ -781,15 +781,15 @@ FY19 サーベイは 2018 New Tech Size - Large Companies (500+) に対してベ
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Company Confidence | 84% |
-| Management | 84% |
-| Collaboration and Communication | 84% |
-| Work / Life Balance | 84% |
+| 会社への信頼 | 84% |
+| 経営陣 | 84% |
+| コラボレーションとコミュニケーション | 84% |
+| ワークライフバランス | 84% |
 | **質問** | **好意度評価** |
 | -------- | -------------------- |
-| I am proud to work for GitLab | 95% |
-| I know how my work contributes to the goals of GitLab | 94% |
-| GitLab is really in a position to succeed over the next three years | 93% |
+| GitLab で働くことを誇りに思う | 95% |
+| 自分の仕事が GitLab の目標にどう貢献しているかを理解している | 94% |
+| GitLab は今後 3 年間で本当に成功できる立場にある | 93% |
 
 GitLab は、上記の 3 つの質問すべてにわたって、業界ベンチマーク（つまり、2018 New Tech Size - Large Companies (500+)）より 4〜14% 高く評価されました。
 
@@ -797,22 +797,22 @@ GitLab は、上記の 3 つの質問すべてにわたって、業界ベンチ�
 
 | **要素** | **好意度評価** |
 | ------ | -------------------- |
-| Alignment and Involvement | 74% |
-| Feedback and Recognition | 63% |
-| Action | 41% |
+| 目標の整合と参画 | 74% |
+| フィードバックと評価 | 63% |
+| アクション | 41% |
 | **質問** | **好意度評価** |
 | -------- | -------------------- |
-| I believe my total compensation (base salary+any bonus+benefits+equity) is fair relative to similar roles at other companies | 43% |
-| My manager or someone else has communicated clear actions based on recent team member survey results | 33% |
-| I have seen positive changes taking place based on recent employee survey results | 32% |
+| 私の総報酬（基本給＋ボーナス＋福利厚生＋株式）は、他社の同様の役割と比べて公平だと思う | 43% |
+| 私のマネージャーまたは他の誰かが、最近のチームメンバーサーベイの結果に基づく明確なアクションを伝えた | 33% |
+| 最近の従業員サーベイの結果に基づき、ポジティブな変化が起きている | 32% |
 
 GitLab は、ポジティブな変更に関する最低スコアの質問で、業界ベンチマーク（2018 New Tech Size - Large Companies (500+)）より 12% 下回ったが、他の 2 つの質問には比較対象がありませんでした。
 
 #### FY' 19 E-Group 焦点領域
 
-- GitLab Team Member Engagement Survey Results からのガイダンスによる領域からアクションを取る。
+- GitLab チームメンバーエンゲージメントサーベイの結果から示された領域についてアクションを取る。
 - チームメンバーの開発に対するマネージャーによる奨励。
-- Total Compensation。
+- 総報酬。
 
 ## People Operations 手順
 

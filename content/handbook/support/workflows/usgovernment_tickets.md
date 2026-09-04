@@ -3,11 +3,11 @@ title: U.S. Government Support チケットへの対応
 category: Handling tickets
 description: "U.S. Government Support チケットへの対応方法を解説するサポートエンジニアリングのワークフロー"
 upstream_path: /handbook/support/workflows/usgovernment_tickets/
-upstream_sha: 1268785362042c88e891d4f2270f8ad87cd6b6ad
-translated_at: "2026-08-06T06:28:14+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: codex
 stale: false
-lastmod: "2026-08-03T18:29:52-07:00"
+lastmod: "2026-08-27T16:09:49-04:00"
 ---
 
 U.S. Government Support は、Zendesk U.S. Government インスタンスにおける新規チケットの割り当てに、重み付きラウンドロビンワークフローを使用します。
@@ -236,7 +236,7 @@ U.S. Government Support チケットシステム内のチケットについて�
 
 ### ヘルプリクエスト（Requests for Help）
 
-ヘルプリクエストは、境界内の [CompSecGov](https://compsecgov.gitlab-dedicated.us/gitlab-dedicated-us-public-sector/customer-support) にあります。CompSecGov へのアクセスは [FedRAMP Okta](https://gitlabus.okta.com) を通じて行われます。アクセスが必要で持っていない場合は、Wade または Kasey に連絡してプロセスを開始してください。
+ヘルプリクエストは、境界内の [CompSecGov](https://compsecgov.gitlab-dedicated.us/gitlab-dedicated-us-public-sector/customer-support) にあります。CompSecGov へのアクセスは [FedRAMP Okta](https://gitlabus.okta.com) を通じて行われます。アクセスが必要で持っていない場合は、Rommel または Kasey に連絡してプロセスを開始してください。
 
 いかなる GitLab Dedicated チケットでも、問題が GitLab アプリケーションの問題なのか、インフラの問題なのかを判断します。インフラ問題の RFH は CompSecGov の手順に従い、アプリケーション問題の RFH は[通常の手順](/handbook/support/workflows/how-to-get-help/#how-to-formally-request-help-from-the-gitlab-development-team)に従います。
 
@@ -260,4 +260,4 @@ CompSecGov で RFH を開くには、`Customer Support` グループに移動し
 
 FedRAMP Okta インスタンスは、90 日間の非アクティブ状態の後にアカウントをロックします。アカウントのロックを解除するには、ロックアウトされた CompSecGov 上で [アクセスリクエスト](https://compsecgov.gitlab-dedicated.us/corporate-security/access-management/-/issues) を開く必要があります。
 
-このプロセスについては、`#g_dedicated-us-pubsec`、Wade、Kasey、または Nick のいずれかに支援を求めてください。
+このプロセスについて支援が必要な場合は、`#g_dedicated-us-pubsec` に投稿してください

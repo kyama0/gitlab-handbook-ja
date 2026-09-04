@@ -2,11 +2,11 @@
 title: "GitLab フィールドチームメンバー向け製品認定"
 description: "顧客、見込み顧客、パートナーに対する信頼されるアドバイザーとして、顧客や見込み顧客から表明されたニーズや課題に基づき、適切な GitLab ソリューションを正しくポジショニングするために必要な知識をフィールドチームメンバーに確実に身に付けさせるためのトレーニングおよび認定プログラム"
 upstream_path: /handbook/sales/training/product-certification/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
@@ -34,9 +34,9 @@ graph TD;
 
 ### フィールドが知る必要があること
 
-製品トレーニングと認定の学習目標は、各顧客ユースケースについて、優先順位付けされた[市場要件](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/#market-requirements)に対して、主要な GitLab の機能とケイパビリティが何をどのように提供するかに基づいて、[顧客ユースケース](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/)ごとに定義されています。
+製品トレーニングと認定の学習目標は、各顧客ユースケースについて、優先順位付けされた[市場要件](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/#market-requirements)に対して、主要な GitLab の機能とケイパビリティが何をどのように提供するかに基づいて、[顧客ユースケース](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/)ごとに定義されています。
 
-学習目標は、フィールドが GitLab の[製品ティア](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/tiers/)について知る必要のある事項についても定義されています。優先順位付けされた製品の学習目標は 2 セット維持されており、1 つは Sales のロール、もう 1 つは Customer Success のロール向けです。
+学習目標は、フィールドが GitLab の[製品ティア](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/tiers/)について知る必要のある事項についても定義されています。優先順位付けされた製品の学習目標は 2 セット維持されており、1 つは Sales のロール、もう 1 つは Customer Success のロール向けです。
 
 ### トレーニング
 

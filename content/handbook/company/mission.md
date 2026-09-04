@@ -3,13 +3,13 @@ title: "GitLab ミッション"
 description: "AI 時代に向けた私たちのミッション"
 canonical_path: "/company/mission/"
 upstream_path: "/handbook/company/mission/"
-upstream_sha: "1e195b58b9f249ff10bd0e705106c320fee86141"
+upstream_sha: "b559d288e5c91c61e45871e6c59356f8cd555a59"
 translated_at: "2026-05-14T00:00:00Z"
 translator: "claude"
 stale: false
-lastmod: "2026-04-21T14:57:37+00:00"
+lastmod: "2026-05-13T15:44:52-04:00"
 ---
-## ミッション
+## ミッション {#mission}
 
 すべてのチームの能力を解き放ち、想像のスピードで信頼できるソフトウェアを届けられるようにする。
 
@@ -98,4 +98,4 @@ Act 2 はその DNA を引き継ぎます。「すべての人」は今でも私
 
 私たちは、目標達成に対する懸念事項を認識しています。それらは [Mitigating Concerns ページ](https://internal.gitlab.com/handbook/leadership/mitigating-concerns/) に文書化しています。
 
-{{% include "includes/take-gitlab-for-a-spin.md" %}}
+<!-- include omitted: includes/take-gitlab-for-a-spin.md (no localized version under content/ja/) -->

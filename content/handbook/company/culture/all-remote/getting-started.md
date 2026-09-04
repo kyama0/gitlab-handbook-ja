@@ -2,15 +2,15 @@
 title: "リモートの仕事を始めるための完全ガイド"
 description: "このガイドでは、リモートワーカーとして新しい役割を始める際に期待できること、成功と幸福のために考慮すべきことの完全な概要を提供します。詳しくはこちら！"
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/getting-started/"
-upstream_sha: "e6de02eba910babdd302a4f920edec669cff51cf"
-translated_at: "2026-08-15T06:54:56+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: "claude"
 stale: false
-lastmod: "2026-08-14T11:43:03-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 このページでは、新しいリモートの役割を始める際の考慮事項とヒントについて詳しく説明します。
@@ -25,7 +25,7 @@ lastmod: "2026-08-14T11:43:03-05:00"
 
 リモートワークはすべての人に向いているわけではありません。優れたリモートワーカーになるために、GitLab の[一人のマネージャー](/handbook/values/#managers-of-one)という運営原則を理解してください。
 
-面接中に具体化すべきもう一つの要素は、リモートコミュニケーションです。GitLab は[非同期](asynchronous/)の会社です。私たちが行うことの多くは[テキストを通じてコミュニケーションされます](/handbook/company/culture/all-remote/)。オフィスで働くことに慣れており、口頭コミュニケーションをデフォルトとしている人にとっては、テキストで情報を伝えることに移行するのに少し時間がかかるかもしれません。
+面接中に具体化すべきもう一つの要素は、リモートコミュニケーションです。GitLab は[非同期](/handbook/communication/#asynchronous-communication)の会社です。私たちが行うことの多くは[テキストを通じてコミュニケーションされます](/handbook/company/culture/all-remote/)。オフィスで働くことに慣れており、口頭コミュニケーションをデフォルトとしている人にとっては、テキストで情報を伝えることに移行するのに少し時間がかかるかもしれません。
 
 ## 異なるタイプのオンボーディングに備える
 
@@ -67,7 +67,7 @@ GitLab では、[オンボーディングバディ](/handbook/people-group/gener
 ![GitLab コラボレーションのイラスト](/images/all-remote/gitlab-collaboration-illustration.jpg)
 {style="max-width: 50%;"}
 
-GitLab の[100%リモート文化](_index.md)と職場方法論は非常にユニークです。同じ場所にいる企業の規範をどこでも働けるシナリオに移植することを期待すべきではありません。GitLab で繁栄する人は、これまでの職場の荷物を入り口に置き去りにし、解放的で力を与える[価値観のセット](/handbook/values/)を受け入れ、本当に異なる方法で運営する許可を自分自身に与える機会を利用します。
+GitLab の[100% リモート文化](_index.md)と職場方法論は非常にユニークです。同じ場所にいる企業の規範をどこでも働けるシナリオに移植することを期待すべきではありません。GitLab で繁栄する人は、これまでの職場の荷物を入り口に置き去りにし、解放的で力を与える[価値観のセット](/handbook/values/)を受け入れ、本当に異なる方法で運営する許可を自分自身に与える機会を利用します。
 
 実際、GitLab の最も効果的なプロセスの多くは、従来の企業では推奨されないか禁止されているでしょう。これは罠ではありません。これが仕事の未来です。
 
@@ -145,7 +145,7 @@ GitLab では、チームメンバーは[会社のお金を自分のものとし
 以下は、つながりを育むために作られた [GitLab の文化](/handbook/company/culture/#culture-at-gitlab)の意図的な側面の一部です。
 
 1. [ソーシャル通話](informal-communication/#team-days-and-social-calls)：毎月火曜日に行われる一連のオプション通話で、組織内の全員が招待されます。決まったアジェンダはありませんが、リンクされたドキュメントに項目を追加できます。これは全員がモデレーターとしてオープンに話し合うための時間です。
-1. [Contribute Unconference](/handbook/company/culture/summit/)：会社全体を一か所に集め、9〜12 ヶ月ごとにお互いをよりよく知るための対面での一週間のイベント。
+1. [Contribute Unconference](/handbook/company/culture/summit/)：会社全体を一か所に集め、9 〜 12 ヶ月ごとにお互いをよりよく知るための対面での一週間のイベント。
 1. ソーシャルアワー：より個人的なレベルでお互いを知るために、直属のチーム内で組織されるインフォーマルなソーシャル通話。
 1. ローカルミートアップ：同じ場所にいるチームメンバーは、コワーキングスペースや一緒に夕食を取るなど、独自のミートアップを組織するよう奨励されています。
 1. [Slack](/handbook/communication/#slack)：会社全体のインフォーマルなコミュニケーションに Slack チャンネルを使用しています。チーム専用のチャンネルでも、他のチームメンバーと休暇の写真を共有するためのチャンネルでも。
@@ -214,7 +214,7 @@ GitLab チームメンバーは、`#mental_health_aware` Slack チャンネル�
 {style="max-width: 50%;"}
 
 
-{{% alert title="Spreading aloha on a GitLab company call" color="success" %}}
+{{% alert title="GitLab の全社会議で aloha を広める" color="success" %}}
 **GitLab 会社通話でアロハを広める**
 {{% /alert %}}
 
@@ -259,14 +259,14 @@ GitLab チームメンバーは、`#mental_health_aware` Slack チャンネル�
 
 リモートワークは大きな柔軟性、自由、自律性を可能にします。また、コミュニケーションに関して適応性を必要とし、チームメンバーが最高の楽しみに達するために実験が必要かもしれません。
 
-新しいリモートワーカーにとっては、同じ場所にいるスペースで使用していた戦術を、自宅やコワーキングスペースから単純に実装したくなることがあります。例えば、誰かの肩を叩いて質問するのではなく、[ドキュメント](/handbook/marketing/technical-writing/#documentation)内で答えを検索することを学ぶことです。
+新しいリモートワーカーにとっては、同じ場所にいるスペースで使用していた戦術を、自宅やコワーキングスペースから単純に実装したくなることがあります。例えば、誰かの肩を叩いて質問するのではなく、[ドキュメント](/handbook/marketing/product-and-technical-marketing/technical-writing/#documentation)内で答えを検索することを学ぶことです。
 
 これは、従業員の認識を含む、より微妙な仕事の側面にも当てはまります。ユニークな場所から働いたり、異なる方法で物事をすることが同じ場所にいるスペースでは推奨されないかもしれませんが、リモートスペースではそのような多様性を祝うことを検討してください。
 
 リモートで働くことには、単に通勤をなくすこと以上のメリットがあります。このパラダイムが新しい人は、チームの仲間やリモート中心のフォーラムの両方で探索し、実験し、学ぶ許可を自分自身に与えるべきです。
 
 
-{{% include "includes/coursera_gitlab_remote_course.md" %}}
+<!-- include omitted: includes/coursera_gitlab_remote_course.md (no localized version under content/ja/) -->
 
 
 ## リモートワークの最良のリソースは何か？
@@ -276,7 +276,7 @@ GitLab チームメンバーは、`#mental_health_aware` Slack チャンネル�
 [GitLab のリモートワークガイドのライブラリ](guide/)も素晴らしいリソースです。
 
 
-{{% include "includes/is_this_advice_any_good_remote.md" %}}
+<!-- include omitted: includes/is_this_advice_any_good_remote.md (no localized version under content/ja/) -->
 
 
 ## 教訓を共有する

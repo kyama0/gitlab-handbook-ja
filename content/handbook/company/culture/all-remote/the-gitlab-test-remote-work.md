@@ -2,18 +2,18 @@
 title: "GitLab テスト — より良いリモートワークへの 12 ステップ"
 description: GitLab テスト — より良いリモートワークへの 12 ステップ
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: /handbook/company/culture/all-remote/the-gitlab-test-remote-work/
-upstream_sha: 62edb06625b18110a4f377cb1d2c733fed49f122
-translated_at: "2026-06-25T07:39:40+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: codex
 stale: false
-lastmod: "2026-06-24T15:19:10-04:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
-![GitLab remote work spectrum illustration](/images/all-remote/spectrum_of_remote_work_gitlab.jpg)
+![GitLab のリモートワーク形態のスペクトラムを示すイラスト](/images/all-remote/spectrum_of_remote_work_gitlab.jpg)
 {style="max-width: 50%;"}
 
 GitLab は世界最大規模のオールリモート組織のひとつです。リモートへのスケールアップを進める中で、私たちはリモートファーストの仕事・文化・プロセス・最適化の実証済み原則を網羅した 40 以上の個別ガイドを文書化してきました。その基礎となる要素は [The Remote Playbook](https://allremote.info) に凝縮されています。
@@ -22,14 +22,14 @@ GitLab は世界最大規模のオールリモート組織のひとつです。�
 
 ## GitLab テスト: より良いリモートワークへの 12 ステップ
 
-![GitLab remote work checklist illustration](/images/all-remote/remote_checklist_illustration.jpg)
+![GitLab のリモートワークチェックリストのイラスト](/images/all-remote/remote_checklist_illustration.jpg)
 {style="max-width: 50%;"}
 
 そこで登場するのが **GitLab テスト: より良いリモートワークへの 12 ステップ** です。命名のヒントをくれた [The Joel Test](https://www.joelonsoftware.com/2000/08/09/the-joel-test-12-steps-to-better-code/) に感謝します。
 
 このテストの素晴らしい点は、約 10 分（速読であればそれ以下）で完了できることです。各質問は「はい」か「いいえ」の二択です。12 点が満点で、11 点は許容範囲内です。10 点以下は、組織がリモート適応フェーズ 4 の目標である **[意図性（Intentionality）](phases-of-remote-adaptation/#phase-4-intentionality)** に到達することを妨げる重大な [オフィスファーストの障壁](what-not-to-do/) が存在することを示しています。
 
-![GitLab remote work environments illustration](/images/all-remote/remote_report_house_gitlab.jpg)
+![GitLab のリモートワーク環境のイラスト](/images/all-remote/remote_report_house_gitlab.jpg)
 {style="max-width: 50%;"}
 
 ### 1. シニアリーダーはデフォルトでリモートで働いていますか？
@@ -42,13 +42,13 @@ GitLab は世界最大規模のオールリモート組織のひとつです。�
 
 ### 2. チームメンバーは自分の働く時間を決める権限を与えられていますか？
 
-優れたリモートチームは、厳格な就業時間を定めることなく相互に連携して仕事を進めることができます。大まかに言えば、定められた就業時間があると、[非同期（アシンクロナス）](asynchronous/) に働くほうが効率的であっても同期的なコラボレーションへの安心感が生まれてしまいます。より大きな問題は、同期性への *依存* が暗示されることです。これにより、誰かが決まったシフトで働けない場合に、コラボレーション・調整・反復的な意思決定が停滞するという根本的なリスクが生じます。
+優れたリモートチームは、厳格な就業時間を定めることなく相互に連携して仕事を進めることができます。大まかに言えば、定められた就業時間があると、[非同期（アシンクロナス）](/handbook/communication/#asynchronous-communication)に働くほうが効率的であっても同期的なコラボレーションへの安心感が生まれてしまいます。より大きな問題は、同期性への *依存* が暗示されることです。これにより、誰かが決まったシフトで働けない場合に、コラボレーション・調整・反復的な意思決定が停滞するという根本的なリスクが生じます。
 
 役割やクライアントの都合により定められた就業時間が必要な場面では、優れたリモート組織は冗長性を加えるか文書化を強化し、チームメンバーが可能な限り [非線形の働き方](non-linear-workday/) の恩恵を享受できるようにします。
 
 ### 3. 業務に関するコミュニケーションの大半は非同期で行われていますか？
 
-同期的に作業する [正当な理由](/handbook/company/culture/all-remote/asynchronous/#gitlab-experts-advise-on-when-to-use-sync-vs-async) は存在します。しかし、*業務についての* コミュニケーションは非同期で行うのが最善です。これにはステータスの更新、FYI（情報共有）、プロセスの文書化（例: [疑わしいフィッシングメールをセキュリティチームに報告する方法](/handbook/security/security-assurance/governance/phishing/#what-to-do-if-you-suspect-an-email-is-a-phishing-attack)）が含まれます。*ミーティングのためのミーティング* も同様です。
+同期的に作業する正当な理由は存在します。しかし、*業務についての* コミュニケーションは非同期で行うのが最善です。これにはステータスの更新、FYI（情報共有）、プロセスの文書化（例: [疑わしいフィッシングメールをセキュリティチームに報告する方法](/handbook/security/security-assurance/governance/phishing/#what-to-do-if-you-suspect-an-email-is-a-phishing-attack)）が含まれます。*ミーティングのためのミーティング* も同様です。
 
 これがうまく機能するための前提条件は以下のとおりです。
 
@@ -86,7 +86,7 @@ GitLab は世界最大規模のオールリモート組織のひとつです。�
 
 ### 10. 対面戦略が文書化・定義されていますか？
 
-人間は社会的な生き物であり、[研究](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2443551) によって対面でのインタラクションに価値があることが示されています。100%リモート企業として運営することには大きな [メリット](remote-benefits/) がある一方で、リーダーは[対面要素の計画](/handbook/company/culture/all-remote/)について意図的に考慮することを推奨します（チームメンバーにとって任意であったとしても）。
+人間は社会的な生き物であり、[研究](https://papers.ssrn.com/sol3/papers.cfm?abstract_id=2443551) によって対面でのインタラクションに価値があることが示されています。100% リモート企業として運営することには大きな [メリット](remote-benefits/) がある一方で、リーダーは[対面要素の計画](/handbook/company/culture/all-remote/)について意図的に考慮することを推奨します（チームメンバーにとって任意であったとしても）。
 
 四半期または半年に一度のリトリート、年次全社集会、対面でのオンボーディング合宿、場当たり的な対面の機会のための予算などがその例です。優れたリモート組織は、人々が毎日数時間かけて通勤して 24 時間ごとに顔を合わせる必要はないと認識していますが、*戦略的な* 対面の集まりへの予算は文化を強化し信頼関係を構築するのに役立ちます。
 
@@ -99,11 +99,11 @@ GitLab は世界最大規模のオールリモート組織のひとつです。�
 優れたリモート組織は、働く場所が 2 つ以上あることを認識しています。「オフィス」と「自宅」の 2 択だけでなく、第三の選択肢は多岐にわたります。[Codi](https://www.codi.com)、[Gable](https://www.gable.to)、[Switchyards](https://switchyards.com) などのプラットフォームがこのようなアレンジをサポートするために存在します。コワーキングや外部オフィスの利用に対して [払い戻し申請](https://internal.gitlab.com/handbook/finance/expenses/#co-working-space) を認めることは、組織がリモートファーストのワークフローに自信を持ち、多様な場所からの作業をチームメンバーに奨励する意思があることを示しています。
 
 
-{{% include "includes/is_this_advice_any_good_remote.md" %}}
+<!-- include omitted: includes/is_this_advice_any_good_remote.md (no localized version under content/ja/) -->
 
 
 
-{{% include "includes/coursera_gitlab_remote_course.md" %}}
+<!-- include omitted: includes/coursera_gitlab_remote_course.md (no localized version under content/ja/) -->
 
 
 ## 学びを貢献してください

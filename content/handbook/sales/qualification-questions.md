@@ -2,20 +2,20 @@
 title: "セールスディスカバリーとクオリフィケーション質問"
 description: "効果的な質問戦略は、お客様と対話を通じて真にニーズを理解し、信頼性と信頼を構築し、Opportunity をクオリファイするために重要です"
 upstream_path: /handbook/sales/qualification-questions/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-11T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 [効果的な質問戦略](https://docs.google.com/presentation/d/1caRLqSGNhFAQ9KuRVBaxI9cExOvBQBC4hd36uVfWFvs/edit?usp=sharing) は、お客様と対話を通じて真にニーズを理解し、信頼性と信頼を構築し、Opportunity をクオリファイするために重要です。さらに、効果的なディスカバリーとニーズ分析は、テーラーメイドで説得力のある顧客中心のソリューションを開発するのに役立ち、ビジネスを獲得し購買決定を進める可能性を高めます。
 
 ターゲット買い手ペルソナには、CIO、CTO、VP of Application Development、Product Owner、App Developer/DevOps Engineer が含まれます。
 
-## **CUSTOMER STRATEGY**
+## **顧客戦略** {#customer-strategy}
 
-### Goal
+### ゴール {#goal}
 
 - 御社のニーズと当社が支援できる方法を最もよく理解するため、ビジネスにより高い価値を提供するためのアプリケーション開発プラクティスを近代化するための長期的な目標は何ですか？
 - 何を達成しようとしており、なぜこれらの目標が重要ですか？
@@ -23,9 +23,9 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - 各目標の成功をどのように測定しますか？
 - クラウド戦略は何ですか？
 
-### Objectives
+### 目的 {#objectives}
 
-- 長期的な目標を理解した上で、今後 6～12 ヶ月の主要な目的は何ですか？
+- 長期的な目標を理解した上で、今後 6 〜 12 ヶ月の主要な目的は何ですか？
 - アプリケーション開発プラクティスの近代化でどのような課題を経験していますか？
 - 現在の DevOps スタックの実装と実行で 1 つまたは少数のことを対処または改善できるとしたら、何で、なぜですか？
 - これまで <x> への移動を妨げてきたものは何ですか？
@@ -33,7 +33,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - 将来を見据えて、他にどのような課題や障害に遭遇すると予想されますか？それらの課題に備えて今日何をしていますか？
 - チームがさらに成功するのを妨げる他のものは何ですか？
 
-### Initiatives
+### 施策 {#initiatives}
 
 - あなたとあなたのチームは現在、どのような優先順位付けされた施策にフォーカスしていますか？
 - 現在計画中、または検討中の施策は何ですか？
@@ -41,14 +41,14 @@ lastmod: "2025-01-04T01:51:25+00:00"
   - 全社的または事業部全体の施策ですか？それとも他のものですか？
 - クラウドネイティブな施策はありますか？もしそうなら、どのソリューション（例: Kubernetes）を探求していますか？
 
-## **CUSTOMER NEEDS**
+## **顧客ニーズ** {#customer-needs}
 
-### Desired Outcomes
+### 望ましい成果 {#desired-outcomes}
 
 - このプロジェクトの要件は何ですか？成功はどのように見えますか？
 - 成功はどのように測定されますか？
 
-### Current Situation
+### 現状 {#current-situation}
 
 - 現在の状況について教えていただけますか？
 - 何が GitLab を見るきっかけとなりましたか？（該当する場合）
@@ -79,14 +79,14 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - Static Application Security Testing、Dependency Scanning、および／または License Compliance に関する脆弱性を見つけるための現在のプロセスは何ですか？
 - 他のテストおよびレビューツールでの組織／チーム予算への財務的影響は何ですか？
 - 追加のお客様ユースケースベースのディスカバリー質問については、次を参照してください:
-  - [Version Control and Collaboration (VC&C)](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/#discovery-questions)
-  - [Continuous Integration (CI)](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/ci/#discovery-questions)
-  - [DevSecOps](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions)
-  - [Agile Planning and Management](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/agile/#discovery-questions)
-  - [Continuous Delivery (CD)](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/cd/#discovery-questions)
-  - [GitOps](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/#discovery-questions)
+  - [Version Control and Collaboration (VC&C)](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration/#discovery-questions)
+  - [Continuous Integration (CI)](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/ci/#discovery-questions)
+  - [DevSecOps](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions)
+  - [Agile Planning and Management](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/agile/#discovery-questions)
+  - [Continuous Delivery (CD)](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/cd/#discovery-questions)
+  - [GitOps](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/#discovery-questions)
 
-### Level of Satisfaction
+### 満足度 {#level-of-satisfaction}
 
 - 現在のアプリケーション開発＆デリバリーツールスタックは全体としてどう機能していますか？
 - 何がうまく機能していますか？
@@ -95,7 +95,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - あなたとチームが経験している問題の根本的な原因は何ですか？
 - 成功するために他に何が必要ですか？
 
-### Personal Needs
+### 個人的なニーズ {#personal-needs}
 
 - この目的を達成するうえで、*あなた* にとって最も重要なことは何ですか？
 - プロジェクトの成功にあなたが個人的に深くコミットしているのはなぜですか？
@@ -107,9 +107,9 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - GitLab について何を聞いており、GitLab に対する認識は何ですか？
 - GitLab に関する以前の経験はありますか？どうやって私たちのことを知りましたか？
 
-## **CUSTOMER DECISION**
+## **顧客の意思決定** {#customer-decision}
 
-### Decision Process
+### 意思決定プロセス {#decision-process}
 
 - 御社の意思決定プロセスをどのように説明しますか？
 - 意思決定プロセスに何人または何チームが関与していますか？
@@ -117,23 +117,23 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - 各チーム／グループが独自のソリューションを購入しますか、それとも一元化された部署がこれを行いますか？一元化された部署の場合、そのグループの名前は何ですか？
 - 高可用性は、あなたのニーズと達成しようとしていることの中でどれくらいランクされますか？
 
-### Decision Criteria
+### 意思決定基準 {#decision-criteria}
 
 - 意思決定にどのような基準が使用されますか？
 
-### Budget and Timeline
+### 予算とタイムライン {#budget-and-timeline}
 
 - いつ実装を計画していますか？そのタイムラインを推進しているものは何で、タイムラインに柔軟性はありますか？
-- タイムラインに影響を与えている compelling event（または一連のイベント）はどの程度ありますか？それについて他に何を教えていただけますか？
+- タイムラインに影響を与えている重要な契機（または一連の出来事）はどの程度ありますか？それについて他に何を教えていただけますか？
 - このプロジェクトにどのような予算とリソースが割り当てられていますか？
 
-### Competitors
+### 競合 {#competitors}
 
 - 他の Git ベースのオファリングを検討していますか？もしそうなら、どれですか？
 - 他のどのサプライヤー／ベンダー／ソリューションを検討および／または評価していますか？
 - GitLab は他のサプライヤーと比較してどのように見られていますか？
 
-### Time to Value
+### 価値実現までの時間 {#time-to-value}
 
 - ロールアウトを成功させるために必要な最も重要なことを教えてください。
 - 価値を得るまでの時間を加速させる機会があると思う箇所を説明してください。
@@ -142,7 +142,7 @@ lastmod: "2025-01-04T01:51:25+00:00"
 - GitLab、git、または GitLab CI/CD を使用するためのベストプラクティスに関する教育によって、開発者の生産性がどう影響を受けるかを説明してください。
 - 新しいツールまたはプラットフォームを追加することに関連するリスクをチームはどのように管理していますか？
 
-## **GITLAB PREMIUM および ULTIMATE を販売するための質問**
+## **GITLAB PREMIUM および ULTIMATE を販売するための質問** {#questions-for-selling-gitlab-premium-and-ultimate}
 
 GitLab Premium および GitLab Ultimate Opportunity をより多く特定する鍵は、*見込み客とお客様のエンゲージメントで真にコンサルタティブなマインドセットを取り入れる* ことです。具体的には:
 
@@ -222,7 +222,7 @@ GitLab Premium および GitLab Ultimate Opportunity をより多く特定する
 - 変更点で協働できるとしたら、それは生産性にどう影響しますか？
 - 次のリリースはいつですか？そのリリースを逃すリスクはどれくらいありますか？どの時点でこれが上位マネジメントにエスカレーションされますか？
 - 既存のソフトウェア開発ツールチェーンでの監査とコンプライアンスを現在どのように管理していますか？
-- 複数のツール間で監査の証拠と proof point を集約することはどれくらい簡単または難しいですか？より速いプロセスからどう恩恵を受けますか？
+- 複数のツールから監査証跡と裏付けとなる情報を集約することは、どの程度簡単または困難ですか？より速いプロセスからどう恩恵を受けますか？
 - セキュリティとコンプライアンスのデータを定期的にどのように収集していますか？侵害が発生した場合、影響は何で、誰が関与する必要がありますか？どのような種類の情報が必要ですか？チームが監査の証拠を提供するのにどれくらいの時間がかかりますか？
 - GitLab Premium には、以下を含む監査とコンプライアンスに役立ついくつかの機能強化が含まれています（これらの各機能の価値説明については [Why GitLab Premium? ページ](https://about.gitlab.com/pricing/premium/) を参照）
   - [Audit Logs](https://docs.gitlab.com/ee/administration/audit_event_reports.html) - ユーザーごとの変更をレビューし、アクセスを追跡

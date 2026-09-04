@@ -2,11 +2,11 @@
 title: アップグレードサポートポッド
 description: GitLab のアップグレードに関するあらゆる側面に注力するサポートポッドです。
 upstream_path: /handbook/support/support-pods/upgrade/
-upstream_sha: 1426909c018f3e75bf94ea36ef7e2a30be77e167
-translated_at: "2026-05-08T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: claude
 stale: false
-lastmod: "2026-01-08T14:57:30+01:00"
+lastmod: "2026-08-28T10:29:09-04:00"
 ---
 
 ## 目的
@@ -20,14 +20,9 @@ GitLab のアップグレードに関するあらゆる側面に注力するサ�
 
 ## サポートポッドメンバー
 
-- {{< member-by-name "Davin Walker" >}} (`@davinwalker`)
 - {{< member-by-name "Diana Stanley" >}} (`@dstanley`)
-- {{< member-by-name "Nathaniel Rosario" >}} (`@nrosario`)
 - {{< member-by-name "Sam Bernal-Damasco" >}} (`@definitelynotsam`)
-- {{< member-by-name "Julie Martin" >}} (`@juliemartin`)
 - {{< member-by-name "Justin Farmiloe" >}} (`@jfarmiloe`)
-- {{< member-by-name `Amaury "Mau" Yacksmith` >}} (`@myacksmith`)
-- {{< member-by-name "Wade Jenkins" >}} (`@wwjenkins`)
 - {{< member-by-name "Olivier Némoz Saint-Dizier" >}} (`@onemoz`)
 
 ## コラボレーションチャネル

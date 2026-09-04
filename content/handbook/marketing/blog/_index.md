@@ -1,19 +1,19 @@
 ---
-title: "Blog Handbook"
+title: "ブログハンドブック"
 description: "GitLab Blog への投稿提案と公開について知っておくべきすべての情報。"
 upstream_path: "/handbook/marketing/blog/"
-upstream_sha: c75ccd81af7d76262c8cb188bf7e7e2a7f838894
-translated_at: "2026-07-31T06:39:44+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T05:53:28-07:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 GitLab Blog ハンドブックへようこそ! [GitLab Blog](https://about.gitlab.com/blog/) は Content Marketing チームによって管理されています。ブログのマネージングエディターは Sandra Gittlen（@sgittlen）です。
 
 ## ブログ投稿とは何か?
 
-GitLab では、ブログ投稿は主に、オーディエンス（[DevSecOps プロフェッショナル](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/user-personas/)）に役立つ情報を共有することに焦点を当てています。ブログ投稿を提案または執筆する際は、それが読者に何を提供するかを常に考えてください。投稿がより内部向け、あるいは一種の個人的なエッセイである場合、ブログには合わない可能性が高いです（ただし、あなた個人の LinkedIn ページには載せられるかもしれません）。
+GitLab では、ブログ投稿は主に、オーディエンス（[DevSecOps プロフェッショナル](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/user-personas/)）に役立つ情報を共有することに焦点を当てています。ブログ投稿を提案または執筆する際は、それが読者に何を提供するかを常に考えてください。投稿がより内部向け、あるいは一種の個人的なエッセイである場合、ブログには合わない可能性が高いです（ただし、あなた個人の LinkedIn ページには載せられるかもしれません）。
 
 ブログは以下のカテゴリーに分類されます。
 
@@ -34,7 +34,7 @@ GitLab Blog についてご質問がある場合は、[sgittlen@gitlab.com](mail
 
 ## ブログのアイデアを提案する方法 - 新プロセス {#how-to-suggest-a-blog-post}
 
-ブログのアイデアを提案するには、[blog submission template](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/content-strategy-and-ops/blog/-/issues/new?issuable_template=blog-post-submission) を使って Issue を作成してください。
+ブログのアイデアを提案するには、[ブログ投稿テンプレート](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/content-strategy-and-ops/blog/-/issues/new?issuable_template=blog-post-submission)を使って Issue を作成してください。
 
 アイデアを提出する際は:
 
@@ -42,7 +42,7 @@ GitLab Blog についてご質問がある場合は、[sgittlen@gitlab.com](mail
 - 目標とする公開日の少なくとも 2 週間前にアイデアを提出してください。
 - コーポレート/comms のリクエスト、または短納期のブログについては、Issue を提出した上で @sgittlen に直接連絡してください。
 
-**注:** [blog submission template](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/content-strategy-and-ops/blog/-/issues/new?issuable_template=blog-post-submission) を通じて、Blog チームにタイポを通知したり、変更をリクエストしたりすることもできます。
+**注:** [ブログ投稿テンプレート](https://gitlab.com/gitlab-com/marketing/brand-product-marketing/content-strategy-and-ops/blog/-/issues/new?issuable_template=blog-post-submission)を通じて、Blog チームにタイポを通知したり、変更をリクエストしたりすることもできます。
 
 ブログエディターはあなたのピッチをレビューし、a) 投稿を承認する、b) 改善の提案をする、または c) なぜそのアイデアがブログに合わないかもしれないかを説明し、メッセージを発信する他のアイデアを提供する、のいずれかを行います。
 
@@ -79,7 +79,7 @@ GitLab Blog についてご質問がある場合は、[sgittlen@gitlab.com](mail
 
 - 私たちの基本的なコンテンツ管理システムである Decap を通じて、[これらの手順](/handbook/marketing/digital-experience/decap-cms/#creating-a-blog-post-using-decap-cms)を使って提出する。注意深く従ってください! ご質問があれば @sgittlen に連絡してください。
 
-- [Blog Submission template](https://docs.google.com/document/d/1iWk0a5T14dG5fvIxvG4doqqRxx0pyv3ej_aMDqYXjgA/template/preview)（Google ドキュメント）を使って Google Docs 経由で提出し、ブログを執筆し、Google ドキュメントが Issue にリンクされていることを確認する。**Blog チームが提出物を受け付けるには、テンプレートのすべてのフィールドを記入する必要があります。** 執筆者は Issue で @sgittlen をタグ付けし、ドキュメントのリンクをコメントに記載し、編集の準備が整ったら（必要なすべての承認とレビューが完了した後に）Google ドキュメントを共有します。**注:** すべての画像は Google ドキュメント内にインラインで含める必要があります。
+- [ブログ投稿テンプレート](https://docs.google.com/document/d/1iWk0a5T14dG5fvIxvG4doqqRxx0pyv3ej_aMDqYXjgA/template/preview)（Google ドキュメント）を使って Google Docs 経由で提出し、ブログを執筆し、Google ドキュメントが Issue にリンクされていることを確認する。**Blog チームが提出物を受け付けるには、テンプレートのすべてのフィールドを記入する必要があります。** 執筆者は Issue で @sgittlen をタグ付けし、ドキュメントのリンクをコメントに記載し、編集の準備が整ったら（必要なすべての承認とレビューが完了した後に）Google ドキュメントを共有します。**注:** すべての画像は Google ドキュメント内にインラインで含める必要があります。
 
 **注:** すべてのブログ提出物には現在、**call to action**（CTA）が必要であり、ブログのドラフトテンプレートで CTA の提供を求められます。CTA とは、読者があなたのブログを読んだ後に次に取ってほしい行動のことです。別のページに移動して詳しく知ってほしいですか、トライアルに登録してほしいですか、ウェビナーに登録してほしいですか、デモを見てほしいですか、など? 私たちは、ブログの全体的なメトリクスの一部として CTA を追跡できます。
 
@@ -155,13 +155,13 @@ GitLab には bias for action がありますが、Blog チームも同様です
 
 ## その他の関連ページ
 
-- [Editorial style guide](/handbook/marketing/brand-and-product-marketing/content/editorial-team/)
-- [Brand guidelines](https://design.gitlab.com/)
-- [Monthly release post](https://docs.gitlab.com/development/documentation/release_notes/)
+- [編集スタイルガイド](/handbook/marketing/product-and-technical-marketing/content/editorial-team/)
+- [ブランドガイドライン](https://design.gitlab.com/)
+- [月次リリース投稿](https://docs.gitlab.com/development/documentation/release_notes/)
 
 ## ブログを起草する際の考慮事項
 
-### ブログ執筆者向けの Diversity, Inclusion, and Belonging（DIB）チェックリスト
+### ブログ執筆者向けの Diversity, Inclusion, and Belonging（DIB）チェックリスト {#diversity-inclusion-and-belonging-dib-checklist-for-blog-writers}
 
 私たちのブログコンテンツが、diversity、inclusion、belonging という私たちの会社の価値観を表現していることが重要です。これらの点のすべてがあなたのブログ投稿に関連するわけではありませんが、執筆プロセス全体を通じて意識すべき重要な価値観とプラクティスです。ブログ編集チームはこれらを確認しようとしますが、すべてのコンテンツがこれらの価値観とプラクティスを念頭に置いて作成される方が良いです。ご質問があれば、私たちや [DIB チーム](/handbook/company/culture/inclusion/)のメンバーをタグ付けしてください!
 
@@ -171,7 +171,7 @@ GitLab には bias for action がありますが、Blog チームも同様です
 - 専門用語の使用を制限し、専門用語的な言葉を使わなければならない場合は、最初の出現時に定義しましょう。
 - GitLab はグローバルコミュニティを持つグローバルチームなので、グローバルなオーディエンスに向けて書くようにしましょう。これは、地域的なメタファーの使用を制限し、米国中心の方法で書かないことを意味します。
 - 投稿は [インクルーシブな言葉遣い](/handbook/company/culture/inclusion/#inclusive-language)を使っていますか?
-- ブログ投稿内のすべての個人は、その [希望する代名詞](/handbook/people-group/orientation-identity/#how-do-i-know-which-pronouns-to-use)を使って引用されていますか? ヒント: 誰かの希望する代名詞が分からない場合は、本人に尋ねるだけです。その人は [team page profile](https://gitlab.com/close-modal) と Slack プロフィールにも含まれているはずです。
+- ブログ投稿内のすべての個人は、その [希望する代名詞](/handbook/people-group/orientation-identity/#how-do-i-know-which-pronouns-to-use)を使って引用されていますか? ヒント: 誰かの希望する代名詞が分からない場合は、本人に尋ねるだけです。その人は[チームページのプロフィール](https://gitlab.com/close-modal)と Slack プロフィールにも含まれているはずです。
 
 #### その他の DIB ライティングのヒント
 
@@ -198,7 +198,7 @@ GitLab には bias for action がありますが、Blog チームも同様です
 - `product` - 機能、ロードマップ、戦略に関する詳細
 - `news` – 会社または製品のアナウンス（ポリシー変更、運用上のアナウンス、破壊的変更を含む）、ニュース、またはイベント
 - `security` – セキュリティ関連の投稿
-- `releases` - リリース投稿、セキュリティおよびパッチリリース。`releases` カテゴリーの投稿は、`sites/uncategorized/source/blog/blog-posts` ではなく `sites/uncategorized/source/releases/posts` ディレクトリに入れる必要があります。詳細は [Release Post handbook](https://docs.gitlab.com/development/documentation/release_notes/) を参照してください。
+- `releases` - リリース投稿、セキュリティおよびパッチリリース。`releases` カテゴリーの投稿は、`sites/uncategorized/source/blog/blog-posts` ではなく `sites/uncategorized/source/releases/posts` ディレクトリに入れる必要があります。詳細は[リリース投稿ハンドブック](https://docs.gitlab.com/development/documentation/release_notes/)を参照してください。
 
 #### タグ
 
@@ -267,7 +267,7 @@ GitLab には bias for action がありますが、Blog チームも同様です
 
 [ビデオを含める手順](/handbook/marketing/digital-experience/decap-cms/#creating-a-blog-post-using-the-web-ide)。
 
-### コードブロックの追加
+### コードブロックの追加 {#adding-code-blocks}
 
 [コードブロックを追加する手順](/handbook/marketing/digital-experience/decap-cms/#creating-a-blog-post-using-the-web-ide)。
 

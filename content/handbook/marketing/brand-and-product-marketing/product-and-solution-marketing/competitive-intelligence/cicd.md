@@ -10,13 +10,13 @@ lastmod: "2024-07-29T14:59:05-05:00"
 
 ## CI と CD
 
-![CD vs CD Pipeline](/images/blogimages/cicd_pipeline_infograph.png)
-出典: 「[Setting up GitLab CI/CD for Android projects](https://about.gitlab.com/blog/2018/02/14/setting-up-gitlab-ci-for-android-projects/)」
+![CD と CD パイプラインの比較](/images/blogimages/cicd_pipeline_infograph.png)
+出典: 「[Android プロジェクト向け GitLab CI/CD のセットアップ](https://about.gitlab.com/blog/2018/02/14/setting-up-gitlab-ci-for-android-projects/)」
 
 ### 継続的インテグレーション（CI）
 
 > **継続的インテグレーション（Continuous Integration）** は通常、開発環境内でコードを統合・ビルド・テストすることを指します。継続的デリバリー（Continuous Delivery）はこれを基盤とし、本番デプロイに必要な最終段階を扱います。
-> \- [Martin Fowler on continuous delivery, 2013](https://martinfowler.com/bliki/ContinuousDelivery.html)
+> \- [継続的デリバリーについての Martin Fowler の解説（2013 年）](https://martinfowler.com/bliki/ContinuousDelivery.html)
 
 #### 何か（What）
 
@@ -41,7 +41,7 @@ lastmod: "2024-07-29T14:59:05-05:00"
 ### 継続的デリバリー/デプロイ（CD）
 
 > **継続的デリバリー** は **継続的デプロイ** と混同されることがあります。継続的デプロイは、すべての変更がパイプラインを通って自動的に本番環境に投入されることを意味し、結果として 1 日に多数の本番デプロイが行われます。継続的デリバリーは、頻繁なデプロイが可能であることを意味しますが、ビジネス上の理由（より低い頻度のデプロイを好むなど）でそれを行わない選択をすることもあります。継続的デプロイを行うには、継続的デリバリーが行われている必要があります。
-> \- [Martin Fowler on continuous delivery, 2013](https://martinfowler.com/bliki/ContinuousDelivery.html)
+> \- [継続的デリバリーについての Martin Fowler の解説（2013 年）](https://martinfowler.com/bliki/ContinuousDelivery.html)
 
 #### 何か（What）
 
@@ -89,11 +89,11 @@ lastmod: "2024-07-29T14:59:05-05:00"
 
 |機能           |GitLab      |CircleCI    |Azure DevOps|Jenkins     |Travis CI   |Bitbucket    |
 |:-----------------|:----------:|:----------:|:----------:|:----------:|:----------:|:-----------:|
-|オートスケーリング      |Y           |Y           |N           |Integration |Y           |Y            |
-|パイプライングラフ   |Y           |Y           |Y           |Integration |N           |Integration  |
+|オートスケーリング      |Y           |Y           |N           |統合 |Y           |Y            |
+|パイプライングラフ   |Y           |Y           |Y           |統合 |N           |統合  |
 |並列ジョブ     |Y           |Y           |Y           |Y           |Y           |Y            |
-|Config as Code    |Y           |Y           |Y           |Y           |Y           |Y            |
-|ネイティブ Docker サポート|Y        |Y           |Y           |Integration |Y           |Y            |
+|構成のコード化    |Y           |Y           |Y           |Y           |Y           |Y            |
+|ネイティブ Docker サポート|Y        |Y           |Y           |統合 |Y           |Y            |
 
 ## 競合他社のスコープ - 継続的デリバリー/デプロイ（CI 製品）
 
@@ -102,12 +102,12 @@ lastmod: "2024-07-29T14:59:05-05:00"
 |環境      |Y           |N           |Y           |N           |Y           |Y            |
 |環境履歴       |Y           |N           |N           |N           |N           |Y            |
 |構成不要のステージングアプリ|Y           |N           |N           |N           |Y           |N            |
-|デプロイボード     |Y           |N           |Y           |Integration |Y           |N            |
+|デプロイボード     |Y           |N           |Y           |統合 |Y           |N            |
 |ネイティブ Canary デプロイ |Y           |N           |Y           |N           |Y           |N            |
-|セキュア変数  |Y           |N           |Y           |Integration |N           |Y            |
-|デプロイのトレーサビリティ|Y           |N           |Y           |Integration |Y           |Y            |
+|セキュア変数  |Y           |N           |Y           |統合 |N           |Y            |
+|デプロイのトレーサビリティ|Y           |N           |Y           |統合 |Y           |Y            |
 |保護された環境    |Y           |N           |Y           |N           |N           |Y            |
-|ネイティブ Kubernetes サポート|Y           |N           |Y           |Integration |N           |N            |
+|ネイティブ Kubernetes サポート|Y           |N           |Y           |統合 |N           |N            |
 |ネイティブフィーチャーフラグ|Y         |N           |N           |N           |N           |N            |
 
 ## 競合他社のスコープ - 継続的デリバリー/デプロイ（CD 製品）

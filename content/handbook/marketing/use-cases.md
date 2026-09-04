@@ -1,11 +1,11 @@
 ---
 title: "コア DevOps ソリューション"
 upstream_path: /handbook/marketing/use-cases/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-01-04T01:51:25+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## コア DevOps ソリューションの定義
@@ -18,13 +18,13 @@ DevOps ソリューションとは：
 - 時間の経過とともに比較的安定している
 - バリュープレイと収益プログラムに沿っている
 
-これらは、私たちが GitLab が解決すると信じている個別の問題であり、顧客が GitLab を選ぶ理由（したがって見込み客に求めるべきもの）です。GitLab がソリューションをどのように使用しているかについての詳細は、[ソリューション市場参入ページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/) で見つけることができます
+これらは、私たちが GitLab が解決すると信じている個別の問題であり、顧客が GitLab を選ぶ理由（したがって見込み客に求めるべきもの）です。GitLab がソリューションをどのように使用しているかについての詳細は、[ソリューション市場参入ページ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/) で見つけることができます
 
 ## コア DevOps ソリューションの市場参入の動き
 
 ### 1. DevOps プラットフォーム
 
-[1. DevOps プラットフォーム](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/)
+[1. DevOps プラットフォーム](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devops-platform/)
 
 **ビジネス目標：サイロ化されたチーム、可視性とコラボレーションの欠如により配信速度が阻害されている問題を解決することにより、DevOps の期待された結果を達成したい。** - (**DevOps プラットフォーム**)
 DevOps ライフサイクル全体をより効率的に、より良い結果で管理したいと考えています。ツールの数と統合のメンテナンスは圧倒的でコストがかかり、セキュリティを統合することは困難です。私のプロセスには計画から本番までが含まれる場合もあれば、SDLC のセグメントの場合もあります。（GitLab の例：GitLab からの Epic、Issue Board、Source Code Management、CI、CD、セキュリティスキャン、モニタリング。Value Stream Management (VSM) は、アイデアから顧客への新しいイノベーションの流れを視覚化し管理するのに役立ちます。GitLab では、サイクル分析がバリューストリームの管理の重要な要素です。）
@@ -52,9 +52,9 @@ DevOps ライフサイクル全体をより効率的に、より良い結果で�
 
 ### 3. 継続的ソフトウェアセキュリティ保証
 
-[継続的ソフトウェアセキュリティ保証](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/)
+[継続的ソフトウェアセキュリティ保証](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/)
 
-[DevSecOps](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/)（別名シフトレフトセキュリティ）に整合します
+[DevSecOps](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/)（別名シフトレフトセキュリティ）に整合します
 
 **ビジネス目標：アプリ開発ライフサイクルの早期にアプリケーションセキュリティの脆弱性をテストしたい。**
 開発者がライフサイクルの早期に脆弱性を修復する力を与える実行可能な情報で、開発中に脆弱性を特定する必要があります。（GitLab では、SAST、DAST、依存関係スキャン、コンテナスキャンなど）。
@@ -69,7 +69,7 @@ DevOps ライフサイクル全体をより効率的に、より良い結果で�
 
 ### 4. 継続的ソフトウェアコンプライアンス
 
-[4. 継続的ソフトウェアコンプライアンス](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/compliance/)
+[4. 継続的ソフトウェアコンプライアンス](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/compliance/)
 
 **ビジネス目標：パイプラインが共通コントロールと一般的な業界規制に準拠していることを確認することで、リスクを低減したい。**
 必要なテストを含む標準化された CI パイプラインを強制し、共通コンプライアンスコントロール（職務の分離など）が従われることを確認する必要があります。
@@ -88,7 +88,7 @@ DevOps ライフサイクル全体をより効率的に、より良い結果で�
 
 ### 1. GitOps
 
-[1. GitOps](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/gitops/)
+[1. GitOps](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/gitops/)
 
 **インフラストラクチャをコードとして自動的にプロビジョニング、管理、メンテナンスする方法を探しています。** - (CI/CD Infrastructure-as-code または **GitOps**)
 インフラストラクチャの環境を手動でステージングしテストしているため、追跡が難しくエラーが発生しやすいです。リリースパイプラインを自動化し、一貫性を提供し、コストを削減し、エラーを排除するために、すべてのコンポーネントをステージングしてテストしたいと考えています。Terraform、Kubernetes、Ansible、OpenStack などとの統合を頻繁に活用する可能性があります。
@@ -105,7 +105,7 @@ DevOps ライフサイクル全体をより効率的に、より良い結果で�
 
 ### 2. ソースコード管理（別名バージョン管理とコラボレーション、VC&C）
 
-[2. ソースコード管理（別名バージョン管理とコラボレーション、VC&C）](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration)
+[2. ソースコード管理（別名バージョン管理とコラボレーション、VC&C）](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/version-control-collaboration)
 
 **私たちは知的財産（つまり、ソースコード、デザイン、画像など）を作成、管理、保護する方法を探しています。** - 簡単に言えば [バージョン管理](https://about.gitlab.com/solutions/source-code-management/) とコラボレーション (VC&C)、しかしより包括的には、*製品構成管理* または *製品アセット管理*。
 分散したチーム間でドキュメント、ソフトウェア、画像、大規模な Web サイト、その他のコード、構成、メタデータのコレクションへの変更を管理するためのより良い方法が必要です。（GitLab の例には、Git、ブランチ、マージリクエスト、コードレビュー、InnerSourcing、WebIDE、ファイルが含まれます。）

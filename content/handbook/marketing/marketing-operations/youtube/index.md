@@ -54,27 +54,27 @@ GitLab チーム内のすべての人が、ミーティングやイベントを 
 
 1. Zoom の[詳細ミーティングオプション](https://zoom.us/profile/setting#advanced_meeting_options)を構成して、YouTube のライブストリーミングを有効にします。
 
-![click the more button](/images/marketing/marketing-operations/youtube/zoom_livestream_settings.png)
+![その他ボタンをクリック](/images/marketing/marketing-operations/youtube/zoom_livestream_settings.png)
 
 1. \[ More ] ボタンをクリックして `Live on YouTube` をクリックします
 
-![click the more button](/images/marketing/marketing-operations/youtube/zoom_live_on_youtube.png)
+![その他ボタンをクリック](/images/marketing/marketing-operations/youtube/zoom_live_on_youtube.png)
 
 1. `GitLab Unfiltered` または `GitLab` を選択します
 
-![choose your account](/images/marketing/marketing-operations/youtube/choose_your_account.png)
+![アカウントを選択](/images/marketing/marketing-operations/youtube/choose_your_account.png)
 
 1. `[Allow]` ボタンをクリックして YouTube アカウントに権限を付与します
 
-![grant permissions](/images/marketing/marketing-operations/youtube/grant_permissions.png)
+![権限を付与](/images/marketing/marketing-operations/youtube/grant_permissions.png)
 
 1. [録画動画の開始](/handbook/eta/corporate-it/end-user-services/supported-apps/zoom/zoom-recording)の手順に従います。
 
-![configure stream](/images/marketing/marketing-operations/youtube/stream_settings.png)
+![ストリームを設定](/images/marketing/marketing-operations/youtube/stream_settings.png)
 
 1. ストリーミングが開始されたら、左上の「Live on YouTube」の横にある下矢印をクリックします。次に「Copy Streaming Link」をクリックして、ミーティング後に簡単に参照できるよう、agenda に貼り付けます。
 
-![stream link](/images/marketing/marketing-operations/youtube/youtube-stream-link.jpg)
+![ストリームリンク](/images/marketing/marketing-operations/youtube/youtube-stream-link.jpg)
 
 #### YouTube へのライブストリーム方法のビデオウォークスルー
 
@@ -91,16 +91,16 @@ GitLab チーム内のすべての人が、ミーティングやイベントを 
 1. [OBS Studio](https://obsproject.com/download) をインストールして起動します
 
 1. OBS が設定を自動的に構成できるようにします:
-    ![OBS Auto-Config](/images/marketing/marketing-operations/youtube/obs_run_autoconfig.png)
+    ![OBS 自動設定](/images/marketing/marketing-operations/youtube/obs_run_autoconfig.png)
 
 1. 推奨されるビデオ設定を承諾します:
-    ![OBS Recommended Settings](/images/marketing/marketing-operations/youtube/obs_default_video_settings.png)
+    ![OBS 推奨設定](/images/marketing/marketing-operations/youtube/obs_default_video_settings.png)
 
 1. 「Custom」サービスを選択し、OBS を構成して [GitLab の Unfiltered チャンネル](https://www.youtube.com/live_dashboard?nv=1#)にライブストリーミングします:
-    ![OBS Configure Service](/images/marketing/marketing-operations/youtube/obs_configure_stream.png)
+    ![OBS でサービスを設定](/images/marketing/marketing-operations/youtube/obs_configure_stream.png)
 
 1. Sources ツールから「Video Capture Device」として Webcam を追加します:
-    ![OBS Add Webcam](/images/marketing/marketing-operations/youtube/obs_video_source.png)
+    ![OBS に Web カメラを追加](/images/marketing/marketing-operations/youtube/obs_video_source.png)
 
 ## すべて投稿する
 
@@ -221,7 +221,7 @@ Google Drive は動画配信を処理することを意図していないため�
 時々、いくつかの動画は依然として限定公開として投稿されます。これらは(`GitLab Unfiltered` アカウントを使用しながら)この[リンク](https://studio.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A/videos/upload?filter=%5B%7B%22name%22%3A%22VISIBILITY%22%2C%22value%22%3A%5B%22UNLISTED%22%5D%7D%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D)で見つけられます。
 上記でリンクされたリストの動画にホバーしたときに `Details` ボタンをクリックすることで、動画の可視性を変更できます。
 
-## YouTube で動画が表示できない
+## YouTube で動画が表示できない {#unable-to-view-a-video-on-youtube}
 
 YouTube で「Video unavailable This video is private.」エラーが表示される場合、エラーは動画が GitLab Unfiltered にプライベートで、個人の YouTube アカウントで動画にアクセスしているために発生する可能性があります。
 動画を見るには、
@@ -230,11 +230,11 @@ YouTube で「Video unavailable This video is private.」エラーが表示さ�
 
 1. 次に > Switch Account をクリックします
 
-![Switch-Account](/images/marketing/marketing-operations/youtube/Switch_account.png)
+![アカウントを切り替える](/images/marketing/marketing-operations/youtube/Switch_account.png)
 
 1. 次に > GitLab Unfiltered を選択します。あなたの名前のアカウントを選択しないでください。GitLab Unfiltered がオプションにない場合は、[Access](/handbook/marketing/marketing-operations/youtube/#access) を参照してください
 
-![Select-User](/images/marketing/marketing-operations/youtube/YouTube_account.png)
+![ユーザーを選択](/images/marketing/marketing-operations/youtube/YouTube_account.png)
 
 1. GitLab unfiltered になったら、ページを **再読み込み** すると動画を見ることができます
 
@@ -369,7 +369,7 @@ GitLab の人々の 99% はこれを使用しませんが、使用したい場�
 - OBS Studio を開き、preferences を開きます
 - 「Stream」の下にエンコーダー変数を入力します
 
-![obs studio preferences](/images/marketing/marketing-operations/youtube/OBS_Studio_Stream.jpeg)
+![OBS Studio の環境設定](/images/marketing/marketing-operations/youtube/OBS_Studio_Stream.jpeg)
 
 - 録画予定のソフトウェアの音声を、代替の音声ソース/出力に再ルーティングするように構成します。
 - OBS Studio の preferences の「Audio」の下で、Mic/Auxiliary Device 2 の下で代替の音声ソース/出力を選択します。詳しいヘルプは[このページ](https://code-zest.blogspot.com/2016/02/setting-up-obs-with-audio-output-in-mac.html)を参照

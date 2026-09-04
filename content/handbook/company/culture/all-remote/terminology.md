@@ -1,22 +1,22 @@
 ---
-title: "GitLab が 100%リモート労働力を表すために all-remote という用語を使用する理由"
+title: "GitLab が 100% リモートの従業員を表すために「オールリモート」という用語を使用する理由"
 description: リモートワークの用語
 twitter_image: "/images/opengraph/all-remote.jpg"
-twitter_image_alt: "GitLab remote team graphic"
+twitter_image_alt: "GitLab リモートチームの画像"
 twitter_site: "@gitlab"
 twitter_creator: "@gitlab"
 upstream_path: "/handbook/company/culture/all-remote/terminology/"
-upstream_sha: "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89"
-translated_at: "2026-04-25T06:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-18T15:39:47+00:00"
+lastmod: "2026-08-19T14:13:18-04:00"
 ---
 
-![GitLab all-remote team](/images/all-remote/gitlab-com-all-remote-1280x270.png)
+![GitLab のオールリモートチーム](/images/all-remote/gitlab-com-all-remote-1280x270.png)
 {style="max-width: 50%;"}
 
-GitLab は世界最大のオールリモート企業です。私たちは 100%リモートであり、地球上の*どこにも*会社所有のオフィスはありません。私たちには 65 カ国以上に 2,000+人のチームメンバーがいます。このページでは、この構造を**オールリモート**と呼ぶ理由と、他の用語よりもこの用語を好む理由を詳述します。
+GitLab は世界最大のオールリモート企業です。私たちは 100% リモートであり、地球上の*どこにも*会社所有のオフィスはありません。私たちには 65 カ国以上に {{< team-size >}} 人のチームメンバーがいます。このページでは、この構造を**オールリモート**と呼ぶ理由と、他の用語よりもこの用語を好む理由を詳述します。
 
 ## 「オールリモート」とはどういう意味ですか？
 
@@ -44,7 +44,7 @@ GitLab は世界最大のオールリモート企業です。私たちは 100%�
 
 ### リモートファーストとの対比
 
-オールリモートは[リモートファースト](/handbook/company/culture/all-remote/)とは異なります。リモートファーストの組織は、[繁栄するオールリモートカルチャー](building-culture/)を生み出す多くの原則を体現しています。[ハンドブックファーストのドキュメント](handbook-first/)、[非同期ワークフロー](asynchronous/)、[ハイブリッド通話なし](/handbook/communication/#hybrid-calls-are-annoying)など。しかし、これらの組織は物理的な会社本社を設立する権利を留保しています。
+オールリモートは[リモートファースト](/handbook/company/culture/all-remote/)とは異なります。リモートファーストの組織は、[繁栄するオールリモートカルチャー](building-culture/)を生み出す多くの原則を体現しています。[ハンドブックファーストのドキュメント](handbook-first/)、[非同期ワークフロー](/handbook/communication/#asynchronous-communication)、[ハイブリッド通話なし](/handbook/communication/#hybrid-calls-are-annoying)など。しかし、これらの組織は物理的な会社本社を設立する権利を留保しています。
 
 コロケーションとリモートの同僚の両方をサポートするために健全で理解のあるカルチャーを持つ[リモートファーストの企業を見つける](/handbook/company/culture/all-remote/)ことは*可能*です。見込みの従業員は、必要なバリューが確立され実践されていることを確認するために独自の精査を行うべきです。
 
@@ -58,7 +58,7 @@ GitLab は世界最大のオールリモート企業です。私たちは 100%�
 
 ### 場所の階層なし
 
-オールリモート企業では、他の場所や地域よりも重要な単一の場所や地域はありません。チームメンバーは[非同期](asynchronous/)で作業し、あるタイムゾーンが他のタイムゾーンよりも[重要](stages/#8-remote-only)と見られないようにします。
+オールリモート企業では、他の場所や地域よりも重要な単一の場所や地域はありません。チームメンバーは[非同期](/handbook/communication/#asynchronous-communication)で作業し、あるタイムゾーンが他のタイムゾーンよりも[重要](stages/#8-remote-only)と見られないようにします。
 
 ### 場所を変える自由
 
@@ -90,10 +90,10 @@ GitLab は世界最大のオールリモート企業です。私たちは 100%�
 
 ## 対面での配慮
 
-![GitLab in-person interactions at Commit SF 2020](/images/all-remote/gitlab-commit-sf-2020-in-person.jpg)
+![Commit SF 2020 で対面交流する GitLab チームメンバー](/images/all-remote/gitlab-commit-sf-2020-in-person.jpg)
 {style="max-width: 50%;"}
 
-GitLab は、[対面での交流](/handbook/company/culture/all-remote/)が価値があると考えています。私たちは 9〜12 ヶ月ごとにチーム全体が共有体験のために集まることを意図的に行い（[GitLab Contribute](/handbook/company/culture/summit/)）、チームメンバーが[補助された休日の集まり](https://internal.gitlab.com/handbook/finance/expenses/#team-building)、[GitLab Commit](https://about.gitlab.com/events/)イベント、カンファレンスや展示会などの機会に対面で集まることを奨励しています。
+GitLab は、[対面での交流](/handbook/company/culture/all-remote/)が価値があると考えています。私たちは 9 〜 12 ヶ月ごとにチーム全体が共有体験のために集まることを意図的に行い（[GitLab Contribute](/handbook/company/culture/summit/)）、チームメンバーが[補助された休日の集まり](https://internal.gitlab.com/handbook/finance/expenses/#team-building)、[GitLab Commit](https://about.gitlab.com/events/)イベント、カンファレンスや展示会などの機会に対面で集まることを奨励しています。
 
 GitLab はまた、[四半期ごとの 4 日間のオフサイト](/handbook/company/offsite/)のために[e グループ](/handbook/company/structure/#e-group)を集めます。これらのオフサイトは例外的な効率性を生み出すために計画・高度に構造化されています。アジェンダ、成果、変更はすべて、専用の`#e-group` Slack チャンネルでの広範な会社全体の議論を伴いながら、残りの会社が見られるよう文書化されています。これは意図的に[透明性のある](/handbook/values/#transparency)設計です。
 
@@ -101,7 +101,7 @@ GitLab はまた、[四半期ごとの 4 日間のオフサイト](/handbook/com
 
 ## 「オールリモート」という用語はなぜ重要なのですか？
 
-![GitLab all-remote workspace](/images/all-remote/gitlab-all-remote-laptop-map-illustration.jpg)
+![GitLab のオールリモートワークスペース](/images/all-remote/gitlab-all-remote-laptop-map-illustration.jpg)
 {style="max-width: 50%;"}
 
 私たちは、仕事の未来を詳述する際に用語が重要だと感じています。これを単なる意味論として片付けることで、各人が用語を異なって解釈できるようになります。これは問題のある混同につながる可能性があります。オールリモートが何であるか、そしてリモートワークに関連する他の用語とどのように異なるかの共通理解は、生産的な会話にとって不可欠です。
@@ -147,7 +147,7 @@ GitLab はまた、[四半期ごとの 4 日間のオフサイト](/handbook/com
 追加のコンテキストとして、GitLab の[リモートワークのさまざまなステージのガイド](stages/)と、[ハイブリッドリモート](/handbook/company/culture/all-remote/)の包括的なルックをお読みください。
 
 
-{{% include "includes/is_this_advice_any_good_remote.md" %}}
+<!-- include omitted: includes/is_this_advice_any_good_remote.md (no localized version under content/ja/) -->
 
 
 ## 学んだことを共有する

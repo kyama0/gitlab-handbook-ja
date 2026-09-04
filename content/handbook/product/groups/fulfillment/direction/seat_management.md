@@ -2,11 +2,11 @@
 title: "Fulfillment: Seat Management の方向性"
 description: "Seat Management グループは、購入したシートとアドオンのユーザー割り当てを扱い、ネームスペースをまたいだシート利用状況の可視性を提供します。"
 upstream_path: /handbook/product/groups/fulfillment/direction/seat_management/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-13T12:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-03-27T09:56:28-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 **最終更新日**: 2025-08
@@ -74,10 +74,10 @@ Seat Management グループは以下にサービスを提供します:
 - 自己管理型、GitLab.com、GitLab Dedicated のセールス支援のお客様
 - 自己管理型、GitLab.com、GitLab Dedicated のチャネルパートナーとそのお客様
 
-私たちのお客様は [buyer persona](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/) に該当し、会社規模や役割に応じて意思決定および購入プロセスで異なる役割を担うことがあります。
+私たちのお客様は [buyer persona](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/) に該当し、会社規模や役割に応じて意思決定および購入プロセスで異なる役割を担うことがあります。
 
-- SMB および中堅企業: [アプリケーション開発マネージャー](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#app-dev-avery) は、チーム全体の使用状況を可視化し、自社の方針/プロセス/予算に合わせて使用状況を制御できる必要があります。
-- 大企業またはエンタープライズ企業: [リリースおよび変更管理ディレクター](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#release-rory) は、正確な請求と、使用状況情報に基づいた購入判断ができることに関心があります。
+- SMB および中堅企業: [アプリケーション開発マネージャー](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#app-dev-avery) は、チーム全体の使用状況を可視化し、自社の方針/プロセス/予算に合わせて使用状況を制御できる必要があります。
+- 大企業またはエンタープライズ企業: [リリースおよび変更管理ディレクター](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/roles-personas/buyer-persona/#release-rory) は、正確な請求と、使用状況情報に基づいた購入判断ができることに関心があります。
 
 私たちがサービスを提供する社内チーム:
 

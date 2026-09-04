@@ -1,11 +1,11 @@
 ---
 title: GitLab プロダクトマネジメント
 upstream_path: /handbook/product/product-management/
-upstream_sha: d92acb119be844b83eb2f76de26d722afea570c3
-translated_at: "2026-07-21T06:59:28+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T08:02:21+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-20T13:03:25-03:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 このドキュメントでは、プロダクトマネジメントの業務内容、関わり方の場、タイミング、そしてプロダクトマネジメントチームとの関わり方について説明します。
@@ -22,7 +22,7 @@ PM が入ってくるすべてのバグや Issue を逐一さばくことは期�
 
 そして、これらすべてのインプットを総合的に判断し、優先順位を決定するのは PM の役目です。GitLab のすべての目標を念頭に置きつつ、優先順位付けに最適な立場にあるのは PM だと考えられます。
 
-## プロダクトマネージャーとの関わり方
+## プロダクトマネージャーとの関わり方 {#how-to-engage-product-managers}
 
 ### プロダクトマネージャーへの連絡先
 
@@ -65,7 +65,7 @@ Issue でフィードバックを共有する際 (例: "顧客 X がこれを望
 
 これらをすべて理解するのはプロダクトマネージャーの責任ですが、一歩先回りすれば物事が速く進みます。
 
-顧客が [Advisory and Executive customer programs](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/#executive-advisory-board-eab-program) に参加している場合、CSM はそのフィードバックを追跡するために Issue に関連ラベルを追加する必要があります。
+顧客が [Advisory and Executive customer programs](/handbook/marketing/growth-marketing/growth-community-programs/#executive-advisory-board-eab-program) に参加している場合、CSM はそのフィードバックを追跡するために Issue に関連ラベルを追加する必要があります。
 
 これを容易にするために、以下のフィードバックテンプレートを使用することを強く推奨します。
 
@@ -82,7 +82,7 @@ The following ~customer is interested in this capability
 
 - Subscription: ~"GitLab Ultimate" OR ~"GitLab Premium" OR ~"GitLab Free"
 - Product: ~"self-managed" OR ~"gitlab.com" OR ~"GitLab Dedicated"
-- Link to request: 
+- Link to request:
 - Customer Priority: [low/medium/high]
 - Use case: [why interested, problem to solve, current workaround, impact]
 - PM to mention: @
@@ -243,7 +243,7 @@ CSM は顧客と定期的に [Executive Business Reviews](/handbook/customer-suc
 
 CSM は EBR の準備に PM を巻き込み、内容、タイミング、望ましい成果の期待値を完全に確立できるよう協力します。
 
-EBR は通常かなり長く (60〜90 分)、製品プレゼンテーションは全体の EBR のうち小さな部分 (15〜20 分) を占めるだけなので、PM は自分が話す時だけ参加することも歓迎されます。もちろん、フルコールに参加したい場合、それも歓迎です。EBR では顧客が製品フィードバックやリクエストをよく共有するからです。
+EBR は通常かなり長く (60 〜 90 分)、製品プレゼンテーションは全体の EBR のうち小さな部分 (15 〜 20 分) を占めるだけなので、PM は自分が話す時だけ参加することも歓迎されます。もちろん、フルコールに参加したい場合、それも歓迎です。EBR では顧客が製品フィードバックやリクエストをよく共有するからです。
 
 ## Product サポートのリクエスト
 

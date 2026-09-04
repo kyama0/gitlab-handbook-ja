@@ -2,11 +2,11 @@
 title: "Sales Play: Premium から Ultimate へのアップセル"
 description: "このページには GTM-CICD sales play のすべての情報が含まれています。"
 upstream_path: /handbook/marketing/sales-plays-cicd/playbook-premium-to-ultimate/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-14T00:00:00Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2025-03-05T11:52:36+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 注: sales play はレシピだと考えてください。レシピに従えば、より予測可能で一貫した結果を達成できます。最適に機能する（または失敗する）アセットやアプローチを見つけたら、レシピを微調整して継続的に改善できます。**改善案があれば、[この MR](https://gitlab.com/gitlab-com/marketing/strategic-marketing/product-marketing/-/issues/5095) にコメントで提案し、他の人の提案にアップボートしてください。
@@ -72,7 +72,7 @@ GitLab Premium 顧客は、以下の課題のうち 1 つ以上を経験して�
 |   スキャンが一貫して実行され、ポリシーが適用されることをどのように確認するか          |      チームはスキャンをスキップしたり、例外を使用して進めたりする可能性があり、これが発生したときにツール間で確認するのが難しい      |
 | DevOps がスケールするにつれてセキュリティコストが予測不可能または懸念される | アプリ数が増えるにつれて、より多くのお金を見つけなければならない |
 
-セキュリティのペインポイントとそれらに関する探索的な質問の詳細なビューは、[DevSecOps リソースページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions) で見つかります
+セキュリティのペインポイントとそれらに関する探索的な質問の詳細なビューは、[DevSecOps リソースページ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions) で見つかります
 
 ### 共通の利益
 
@@ -99,7 +99,7 @@ GitLab Premium から GitLab Ultimate にアップグレードすることで、
 
 ## 顧客とのエンゲージメント
 
-注: たぶん私たちは [このリンクを mvc1 として](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions) 使用し、それから提案された形式にリソースページを変更しますか？
+注: たぶん私たちは [このリンクを mvc1 として](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#discovery-questions) 使用し、それから提案された形式にリソースページを変更しますか？
 
 | 顧客のニーズをよりよく理解するための質問  | ディスカバリー質問  |
 | ------------- | ------------- |
@@ -121,7 +121,7 @@ GitLab Ultimate は、優先事項、セキュリティ、リスク、コンプ�
 
 ### GitLab はどうそれを行うか
 
-[GitLab がセキュリティの市場要件をどのように満たすか](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#how-gitlab-meets-the-market-requirements)（リンクには利益、ビデオなどが含まれます）。
+[GitLab がセキュリティの市場要件をどのように満たすか](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#how-gitlab-meets-the-market-requirements)（リンクには利益、ビデオなどが含まれます）。
 
 ### GitLab はそれをどうよりよく行うか
 
@@ -137,7 +137,7 @@ GitLab Ultimate を使用すると、組織は DevOps のベロシティとク�
 
 DevOps とセキュリティの単一アプリケーションの利点には、ポリシーと規制要件への一貫したコンプライアンスを備えた比類のない可視性とインサイト/トレーサビリティが含まれ、よりクリーンで容易な監査が可能になります。
 
-**[主要な GitLab 差別化要因](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#top-differentiators)** には以下が含まれます:
+**[主要な GitLab 差別化要因](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#top-differentiators)** には以下が含まれます:
 
 1. Feature Branch から作成された MR に表示される詳細で実用的なスキャン結果
    * Microsoft は SAST と Dependencies に対してこれを行います。他のスキャンタイプには統合と独自のライセンスが必要です。
@@ -162,7 +162,7 @@ DevOps とセキュリティの単一アプリケーションの利点には、�
 
 ### 証拠ポイント
 
-[証拠ポイント](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#proof-points---customers)
+[証拠ポイント](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#proof-points---customers)
 
 ## 異議処理
 
@@ -172,9 +172,9 @@ DevOps とセキュリティの単一アプリケーションの利点には、�
 | ------------- | ------------- |
 | あなたのスキャン機能はリーディングスキャナーとどう比較されますか？それらはどのくらい正確ですか？    | [精度スライド](https://docs.google.com/presentation/d/1mLnmgQ5hqTzcwk3Vjh0BEIdx9SYgORV-2g7zPKmFKFc/edit#slide=id.g9e2080204d_0_1084)、[G2 SAST](https://www.g2.com/categories/static-application-security-testing-sast#grid) |
 | 既存のスキャナーと統合できますか？ | 私たちは [他のスキャナーと連携](https://docs.gitlab.com/ee/development/integrations/secure.html) するか [それらを置き換える](https://docs.google.com/presentation/d/1mLnmgQ5hqTzcwk3Vjh0BEIdx9SYgORV-2g7zPKmFKFc/edit#slide=id.g9e2080204d_0_3374) ことができます |
-| Ultimate は 5 倍です。       | [なぜ Ultimate](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#ultimate)         |
+| Ultimate は 5 倍です。       | [なぜ Ultimate](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#ultimate)         |
 
-その他の異議と応答は、[Potential objections](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#potential-objections) について詳しい情報がある [FAQ デッキ](https://docs.google.com/presentation/d/1mLnmgQ5hqTzcwk3Vjh0BEIdx9SYgORV-2g7zPKmFKFc/edit#slide=id.g2823c3f9ca_0_9) で見つかります。
+その他の異議と応答は、[Potential objections](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#potential-objections) について詳しい情報がある [FAQ デッキ](https://docs.google.com/presentation/d/1mLnmgQ5hqTzcwk3Vjh0BEIdx9SYgORV-2g7zPKmFKFc/edit#slide=id.g2823c3f9ca_0_9) で見つかります。
 
 ## サービス
 
@@ -207,7 +207,7 @@ GitLab（または GitLab パートナー）は、価値実現までの時間を
 1. [ ] どの連絡先が応答したかを示すアラートのために自分のメール受信箱をチェックします（アラートメールの例: [Contact request](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/1120#white_check_mark-lead-alert)、[Email offer engagement](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/1135#sample-alert-email)）
 1. [ ] 彼らが応答したメールに対応する以下の提案されたミーティング（1、2、または 3）を実施します。
 1. [ ] SFDC でセールスステージを更新します。
-1. [ ] 最初のミーティングに基づいて、次のステップに進むためのケイデンスを決定します。前回送信したメールに応答がなくても、7 ～ 10 日後にシーケンスの次のメールを送信することを推奨します。フローは、各メールについて議論するための電話がなくても、彼らの考えを前進させることを意図しています。
+1. [ ] 最初のミーティングに基づいて、次のステップに進むためのケイデンスを決定します。前回送信したメールに応答がなくても、7 〜 10 日後にシーケンスの次のメールを送信することを推奨します。フローは、各メールについて議論するための電話がなくても、彼らの考えを前進させることを意図しています。
 1. [ ] POV または販売に至るまで、または推奨メールの最後まで、次の推奨メールで繰り返します。推奨メールとミーティングの最後に達し、進捗が見られない場合は、[この Issue](https://gitlab.com/gitlab-com/marketing/strategic-marketing/product-marketing/-/issues/5095) または slack の #gtm-ci-cd でフィードバックを残してください。どこで詰まっていますか？どうすれば助けられますか？
 
 ### スモールビジネスアカウント
@@ -225,7 +225,7 @@ SMB 顧客の場合、推奨メールシーケンスのマーケティング生�
 1. [ ] どの連絡先が応答したかを示すアラートのために自分のメール受信箱をチェックします（アラートメールの例: [Contact request](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/1120#white_check_mark-lead-alert)、[Email offer engagement](https://gitlab.com/gitlab-com/marketing/demand-generation/campaigns/-/issues/1135#sample-alert-email)）
 1. [ ] 彼らが応答したメールに対応する以下の提案されたミーティング（1、2、または 3）を実施します。
 1. [ ] SFDC でセールスステージを更新します。
-1. [ ] 最初のミーティングに基づいて、次のステップに進むためのケイデンスを決定します。前回送信したメールに応答がなくても、7 ～ 10 日後にシーケンスの次のメールを送信することを推奨します。フローは、各メールについて議論するための電話がなくても、彼らの考えを前進させることを意図しています。
+1. [ ] 最初のミーティングに基づいて、次のステップに進むためのケイデンスを決定します。前回送信したメールに応答がなくても、7 〜 10 日後にシーケンスの次のメールを送信することを推奨します。フローは、各メールについて議論するための電話がなくても、彼らの考えを前進させることを意図しています。
 1. [ ] 彼らが自動メールで「contact sales」をクリックしたら、**あなた** は提供されたテンプレートを使用して手動でその後のメールを送信する必要があります。これにより、最初のミーティングに基づいてケイデンスと次のステップを決定できます。**テンプレートを使用してください** これにはトラッキングリンクが提供されており、彼らの応答についてアラートできます（マーケティングは何が最も有用かを確認できます）。必要に応じて、独自の会話に合わせて Gmail でテンプレートを変更できます。
 1. [ ] POV または販売に至るまで、次の推奨メールで繰り返します。推奨メールとミーティングの最後に達し、進捗が見られない場合は、[この Issue](https://gitlab.com/gitlab-com/marketing/strategic-marketing/product-marketing/-/issues/5095) または slack の #gtm-ci-cd でフィードバックを残してください。どこで詰まっていますか？どうすれば助けられますか？
 
@@ -329,7 +329,7 @@ GitLab セキュリティ機能の認知と関心から、検討、ソリュー�
 * [GitLab Ultimate 固有の機能と価値ハンドブックページ](https://about.gitlab.com/pricing/ultimate/#ultimate-specific-features)
 * [SKO Expanding to Ultimate スライドデッキ](https://docs.google.com/presentation/d/1oq7ODy9TJpuZqH_tvVtCm2t-C0QkTbuG4ZRlRzRNcUY/edit#slide=id.gb4749ff26b_0_85)
 * [Why GitLab Ultimate スライドデッキ](https://docs.google.com/presentation/d/1TP5cXH5Nr0VkH7mE6M_-DFXT_Jnq7o5LPxuMUz2paI4/edit?usp=sharing)
-* [Selling DevSecOps リソースページ](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#ultimate)
+* [Selling DevSecOps リソースページ](/handbook/marketing/product-and-technical-marketing/product-and-solution-marketing/usecase-gtm/devsecops/#ultimate)
 * セキュリティの販売（リンクが必要）John Blevin のオンラインクラスルーム資料を参照
 * Plan の新しい Gartner MQ（5 月予定）
 * AST の Gartner MQ（2021 年 5 月予定）

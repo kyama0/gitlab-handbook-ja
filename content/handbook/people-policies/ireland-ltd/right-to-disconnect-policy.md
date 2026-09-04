@@ -2,11 +2,11 @@
 title: "GitLab Ireland Ltd つながらない権利ポリシー"
 description: GitLab Ireland Ltd つながらない権利ポリシー
 upstream_path: /handbook/people-policies/ireland-ltd/right-to-disconnect-policy/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T06:23:48+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T11:43:03-05:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 {{% panel header="**これは Secure Document です**" header-bg="orange" %}}
@@ -23,7 +23,7 @@ lastmod: "2026-08-14T11:43:03-05:00"
 
 ## 1. 目的
 
-GitLab（「会社」）では、すべてのチームメンバーの安全、健康、[well-being](/handbook/company/culture/all-remote/mental-health/) を支援し、[非同期コミュニケーション](/handbook/company/culture/all-remote/asynchronous/)を重視し、活動ではなくインパクトに焦点を当てて運営しています。私たちは、[家族と友人が第一で、仕事は第二であるべき](/handbook/values/#family-and-friends-first-work-second)だと信じています。会社の価値観に沿って、私たちは、健康的で充実した生活を促進するためには、仕事から「つながらない」ことが重要であると理解しています。技術の進歩、世界の出来事、仕事の要求により、私たちはときに、リフレッシュするために仕事からの休息が必要であることを忘れがちです。
+GitLab（「会社」）では、すべてのチームメンバーの安全、健康、[well-being](/handbook/company/culture/all-remote/mental-health/) を支援し、[非同期コミュニケーション](/handbook/communication/#asynchronous-communication)を重視し、活動ではなくインパクトに焦点を当てて運営しています。私たちは、[家族と友人が第一で、仕事は第二であるべき](/handbook/values/#family-and-friends-first-work-second)だと信じています。会社の価値観に沿って、私たちは、健康的で充実した生活を促進するためには、仕事から「つながらない」ことが重要であると理解しています。技術の進歩、世界の出来事、仕事の要求により、私たちはときに、リフレッシュするために仕事からの休息が必要であることを忘れがちです。
 
 通常の労働時間外および PTO 中にはチームメンバーが仕事および仕事関連のコミュニケーションからつながらないことが期待されており、このつながらない権利ポリシー（「ポリシー」）の目的は、つながらないことを奨励し、会社がすべてのチームメンバーがそうすることを支援するためにどのようにコミットしているかについてのガイダンスを提供することです。
 
@@ -88,7 +88,7 @@ GitLab（「会社」）では、すべてのチームメンバーの安全、�
 
 ## 8. コミュニケーション
 
-私たちは、会社の価値観に沿って、常に敬意を持ってプロフェッショナルにコミュニケーションをとり、非同期コミュニケーションと[ドキュメントファースト](/handbook/marketing/technical-writing/#documentation)を志向し、他者とのやり取りでは[ポジティブな意図を仮定](/handbook/values/#assume-positive-intent)します（コミュニケーションのトーンとタイミングに関するものも含む）。可能な限り非同期で運営することにイニシアチブをとってください。これは、特に労働時間外で仕事からつながらない人々への配慮を示すものです。これは、会議の録画の伝達、テキスト、電話、Slack メッセージではなく GitLab Issue と Merge Request の使用、現地の祝日と休暇ステータスへの配慮によって示されます。労働時間外のオンラインを強要するのではなく、ドキュメントをデフォルトとするよう他者を奨励してください。コミュニケーションを送信する際、送信者はタイミングと邪魔になる可能性に十分な配慮を払うべきであり、受信者は労働時間が再開するまで応答することを期待されていないことを理解すべきです。チームメンバーは、毎日どれだけのバーチャルコミュニケーションを行うかを認識し管理する必要があります。
+私たちは、会社の価値観に沿って、常に敬意を持ってプロフェッショナルにコミュニケーションをとり、非同期コミュニケーションと[ドキュメントファースト](/handbook/marketing/product-and-technical-marketing/technical-writing/#documentation)を志向し、他者とのやり取りでは[ポジティブな意図を仮定](/handbook/values/#assume-positive-intent)します（コミュニケーションのトーンとタイミングに関するものも含む）。可能な限り非同期で運営することにイニシアチブをとってください。これは、特に労働時間外で仕事からつながらない人々への配慮を示すものです。これは、会議の録画の伝達、テキスト、電話、Slack メッセージではなく GitLab Issue と Merge Request の使用、現地の祝日と休暇ステータスへの配慮によって示されます。労働時間外のオンラインを強要するのではなく、ドキュメントをデフォルトとするよう他者を奨励してください。コミュニケーションを送信する際、送信者はタイミングと邪魔になる可能性に十分な配慮を払うべきであり、受信者は労働時間が再開するまで応答することを期待されていないことを理解すべきです。チームメンバーは、毎日どれだけのバーチャルコミュニケーションを行うかを認識し管理する必要があります。
 
 多くのチームメンバーがソーシャルメディアに参加していることを認識しており、ソーシャルメディアで GitLab の同僚チームメンバーとつながることを選択する場合は、プロフェッショナルに保ち、常に [GitLab's Communication Guidelines](/handbook/communication/) を考慮する必要があることに留意してください。チームメンバーは、労働時間外の同僚からのソーシャルコミュニケーションに応答する必要があると感じるべきではありません。詳細については [Team Member Social Media Policy](/handbook/marketing/team-member-social-media-policy/) を参照してください。
 

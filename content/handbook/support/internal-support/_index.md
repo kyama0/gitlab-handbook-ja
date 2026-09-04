@@ -98,7 +98,7 @@ Zendesk 顧客ポータルへのログインに困難がある顧客は、まず
 
 Light エージェントアカウントでは、顧客への公開返信を送信できないことに注意してください。これを行う必要がある場合は、[フルエージェントアカウントの新しいアクセスリクエスト Issue を提出](https://gitlab.com/gitlab-com/team-member-epics/access-requests/-/issues/new?issuable_template=Individual_Bulk_Access_Request) し、予算承認のためにマネージャーをタグ付けしてください。必要に応じて、Zendesk から Light エージェントアカウントに関する [詳細情報を読むこと](https://support.zendesk.com/hc/en-us/articles/4408829504154-Collaboration-overview) ができます。
 
-## 一般的なリクエスト
+## 一般的なリクエスト {#common-requests}
 
 ### GitLab サポート、プラン、ネームスペースについて
 

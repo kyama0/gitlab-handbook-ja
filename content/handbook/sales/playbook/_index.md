@@ -2,11 +2,11 @@
 title: "Enterprise Sales"
 description: "GitLab の Enterprise Sales 部門は、戦略的および大規模な見込み顧客と顧客に対し、GitLab とのジャーニー全体を通じて最大限の価値を提供することに注力しています。"
 upstream_path: /handbook/sales/playbook/
-upstream_sha: 886c0f074266fdc336cfcc58cd53699da6c71a73
-translated_at: "2026-07-25T06:17:55+09:00"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
-lastmod: "2026-07-24T14:14:48+00:00"
+lastmod: "2026-08-27T23:30:57+02:00"
 ---
 
 ## 概要
@@ -39,14 +39,14 @@ Enterprise Sales 部門は [GitLab Sales](/handbook/sales/#welcome-to-the-sales-
 |---------------------------|---------------------|
 |[Channel Account Manager (CAM)](https://partners.gitlab.com/English/directory/):| パートナーランドスケープを理解しマッピング: 機会と協業、オンボーディングとリクルートのためのパートナーを提案、システムインテグレーターをプランに組み込む、[Partner Directory](https://partners.gitlab.com/English/directory/) で現在のパートナーを表示 |
 |[Professional services](/handbook/customer-success/professional-services-engineering/working-with/):| あなたのソリューションや顧客のニーズを、このチームが提供するトレーニング、教育、採用、または展開サポートにマッチさせる。または、見込み顧客や顧客にサービスを提案する手助けに招き入れる。|
-| [Regional Marketing](/handbook/marketing/field-marketing/#regional-marketing-manager-support) とアカウントベースマーケティング:| テリトリー、アカウント、パイプライン生成の戦略的計画にこのチームを含める。イベントやウェビナーを開催・ホストする計画を立てる際、関連する第三者イベントに参加する。スケジュールを把握: [GitLab event site](https://about.gitlab.com/events/)、[All marketing activities (internal)](https://docs.google.com/spreadsheets/d/1ni6gKeWhjtrNppMdYvPESsCRjDbfVdYjTNtUtcNBFGg/edit#gid=571560493)。優先アカウントを [Account-based marketing (ABM) サポート](/handbook/marketing/account-based-marketing/) にノミネート。Slack: #abmteam、#emea_marketing (EMEA)、#regional-partner-marketing (Global)|
+| [Regional Marketing](/handbook/marketing/growth-marketing/regional-marketing/#regional-marketing-manager-support) とアカウントベースマーケティング:| テリトリー、アカウント、パイプライン生成の戦略的計画にこのチームを含める。イベントやウェビナーを開催・ホストする計画を立てる際、関連する第三者イベントに参加する。スケジュールを把握: [GitLab event site](https://about.gitlab.com/events/)、[All marketing activities (internal)](https://docs.google.com/spreadsheets/d/1ni6gKeWhjtrNppMdYvPESsCRjDbfVdYjTNtUtcNBFGg/edit#gid=571560493)。優先アカウントを [Account-based marketing (ABM) サポート](/handbook/marketing/account-based-marketing/) にノミネート。Slack: #abmteam、#emea_marketing (EMEA)、#regional-partner-marketing (Global)|
 | Sales leaders と executives | アカウントのエグゼクティブスポンサーシップを提供、[ミーティングへの e-group メンバー参加をリクエスト](/handbook/eba/#customer-prospect-and-partner-meetings-with-an-e-group-member)、または [CEO がミーティングに参加することをリクエスト](/handbook/eba/ceo-scheduling/#how-to-request-a-meeting-with-ceo) する必要があるかもしれません |
 |[Sales operations と deal desk:](/handbook/sales/field-operations/sales-operations/deal-desk/) |ディールの構造化とクロージングのため、特に非標準見積もりに対しては、Deal Desk と頻繁に作業します。#sales-support は、私たちのプロセスを通じてディールを進めることに関する緊急の質問の go-to チャネルでもあります。 |
 | [GitLab Support](/handbook/support/): | サポートチームは、購入したものに応じてさまざまなレベルでお客様にサービスを提供します。|
 |[Product team](/handbook/product/categories/): | 戦略的なディールでは、お客様が最も気にする機能の利点や成熟度について話してもらうため、Product のエキスパートを連れてくることがしばしば理にかなっています。GitLab でまだ何かが不可能な場合、Product にはそれが利用可能になる時期のプランとロードマップがあることが多いです。 |
 |[Strategic Field Organization](/handbook/solutions-architects/strategic-field-org/)| または、DevSecOps トランスフォーメーション、ソリューション推奨、ハイバリューな戦略的ディール（$400k+）におけるお客様のシニア技術リーダーシップへのアドバイザリーなど、高度な戦略計画を必要とする大規模エンゲージメントのための strategic field チーム。|
 | Compete:| インテリジェンスやポジショニングを支援するため、compete チームを連れてくることもできます。Slack の #competition チャネルで協業し、ブックマーク内の重要なリソースを表示してください。 |
-| [Customer Advocacy team](/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/):| 顧客がリファレンスやロゴ使用に同意するディールを構築したい場合、または信じられないほどの価値を提供してケーススタディの準備ができている場合があります。|
+| [Customer Advocacy team](/handbook/marketing/growth-marketing/growth-community-programs/):| 顧客がリファレンスやロゴ使用に同意するディールを構築したい場合、または信じられないほどの価値を提供してケーススタディの準備ができている場合があります。|
 
 ## セールスプランニング
 
@@ -126,7 +126,7 @@ Enterprise Sales のすべての Strategic Account Executive は、自分のパ�
 - [Outreach.io](https://university.outreach.io/prospecting-specialist-badge) は、シーケンスの形でメールを自動化するために使用されるツールです。ユーザーは、さまざまなテンプレートのオープン率、クリックスルー率、レスポンス率を追跡し、これらのメトリクスに基づいてシーケンスを更新できます。Outreach.io は、コールなどのセールスアクティビティの追跡にも役立ちます。Outreach.io を通じて行われたすべてのメール／コール／タスクは、対応する disposition と共に Salesforce に自動的に記録されます。
 - Conversica は、エンタープライズマーケティング、セールス、カスタマーサクセス、ファイナンスチームが顧客収益ライフサイクル全体で大規模に顧客を引き付け、獲得し、成長させるのを支援する会話型 AI ツールです。AI アシスタントは、見込み顧客をさらに資格認定するため、メールを介して見込み顧客を人間のような会話で関与させることで機能します。
 - [Thnks](https://thnks.com/) は、メールや電話だけで顧客、見込み顧客、コンタクトに小さな感謝の印を送る方法です。現時点では GitLab によって提供されていませんが、経費精算のオプションについてマネージャーと相談できます。見込み顧客や顧客への贈り物に関する [私たちのポリシー](/handbook/legal/anti-corruption-policy/) を遵守し、質問がある場合は Slack の #legal で確認することを忘れないでください。
-- [GitLab Swag store](https://shop.gitlab.com/) は、ビジネスコンタクトや家族に感謝を送ったり、GitLab スピリットを共有するもう 1 つの方法です。[swag に関する私たちのポリシーをここで確認してください。](/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/) 見込み顧客や顧客への贈り物に関する [私たちのポリシー](/handbook/legal/anti-corruption-policy/) を遵守し、質問がある場合は Slack の #legal で確認することを忘れないでください。Slack の #swag チャネルを使って、緊急の質問への回答を得ることもできます。
+- [GitLab Swag store](https://shop.gitlab.com/) は、ビジネスコンタクトや家族に感謝を送ったり、GitLab スピリットを共有するもう 1 つの方法です。[swag に関する私たちのポリシーをここで確認してください。](/handbook/marketing/brand-experience/merchandise-handling/) 見込み顧客や顧客への贈り物に関する [私たちのポリシー](/handbook/legal/anti-corruption-policy/) を遵守し、質問がある場合は Slack の #legal で確認することを忘れないでください。Slack の #swag チャネルを使って、緊急の質問への回答を得ることもできます。
 
 ### **ビジネスを理解する**
 

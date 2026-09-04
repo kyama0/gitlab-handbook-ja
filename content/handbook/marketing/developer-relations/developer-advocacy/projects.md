@@ -1,9 +1,9 @@
 ---
 title: "プロジェクト"
 upstream_path: /handbook/marketing/developer-relations/developer-advocacy/projects/
-upstream_sha: 0505a0f5a670366af5dd620eb2b9f12ebd7a79fe
-lastmod: 2026-06-08T11:30:44+02:00
-translated_at: "2026-06-12T21:17:35Z"
+upstream_sha: b559d288e5c91c61e45871e6c59356f8cd555a59
+lastmod: "2026-08-27T23:30:57+02:00"
+translated_at: "2026-09-04T07:56:05+09:00"
 translator: claude
 stale: false
 ---
@@ -44,7 +44,7 @@ stale: false
 
 プロジェクト/グループの目的を説明する `README.md` ファイルを必ず追加し（テキストを `Settings > General > Description` にコピーして）、すべてのリソース（Issue、ディレクションページ、ブログ記事など）をリンクしてください。GitLab はプロジェクトの README に加えて [グループ README](https://docs.gitlab.com/ee/user/group/manage#add-group-readme)もサポートしています。
 
-任意ですが推奨: トピックを示すプロジェクト/グループのアバター画像を追加してください。画像を選ぶ際は、Brand の[クリエイティブアセットの調達に関するガイダンス](/handbook/marketing/brand-and-product-marketing/design/#sourcing-creative-assets)を参照してください。ヒント: [画像のサイズを変更](/handbook/tools-and-tips/#resizing-images)できます。
+任意ですが推奨: トピックを示すプロジェクト/グループのアバター画像を追加してください。画像を選ぶ際は、Brand の[クリエイティブアセットの調達に関するガイダンス](/handbook/marketing/brand-experience/brand-creative/#sourcing-creative-assets)を参照してください。ヒント: [画像のサイズを変更](/handbook/tools-and-tips/#resizing-images)できます。
 
 また、`.gitignore`、`AGENTS.md`、CI/CD 設定など、その他のベストプラクティスも、適用可能な場合はデフォルトで適用してください。
 
@@ -90,7 +90,7 @@ stale: false
 
 ### ソーシャルチームと連携した LinkedIn Live
 
-GitLab は、月次リリースを紹介し、製品アップデートやソートリーダーシップを共有するために、通常は毎月第 4 木曜日に月次の LinkedIn Live 配信を開催しています。各配信には、GitLab のチームメンバーとスペシャルゲストが登場し、AI を活用したソフトウェア開発の最新事情について議論します。これは [Developer Advocacy](/handbook/marketing/developer-relations/developer-advocacy/) と [Social Media](/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/) の両チームによる共同プロジェクトです。
+GitLab は、月次リリースを紹介し、製品アップデートやソートリーダーシップを共有するために、通常は毎月第 4 木曜日に月次の LinkedIn Live 配信を開催しています。各配信には、GitLab のチームメンバーとスペシャルゲストが登場し、AI を活用したソフトウェア開発の最新事情について議論します。これは [Developer Advocacy](/handbook/marketing/developer-relations/developer-advocacy/) と [Social Media](/handbook/marketing/corporate-communications/social-marketing/) の両チームによる共同プロジェクトです。
 
 エピソードは通常 30 分間で、4 〜 5 名のパネリストとモデレーターが登場し、あらかじめ決められたトピックや製品アップデートについて議論します。場合によっては、会話は事前に録画されます。
 
@@ -127,7 +127,7 @@ GitLab は、月次リリースを紹介し、製品アップデートやソー�
 ### コミュニティニュースレター
 
 - ゴール: 開発者向けのコンテンツを共有し、コミュニティメンバーに今後のイベントについて知らせ、コミュニティ内でのコントリビューションを促進する。このニュースレターのターゲットオーディエンスは、私たちのコミュニティにおける GitLab のコントリビューター志望者および既存のコントリビューターです。このニュースレターは、リードの獲得や創出には使用しません。
-- 期間: 2022-2024
+- 期間: 2022 〜 2024
 - [組織エピック](https://gitlab.com/groups/gitlab-com/-/work_items/1821)
 - メンテナー: @sugaroverflow
 - アーカイブ:
