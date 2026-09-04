@@ -101,7 +101,7 @@ Greenhouse 採用プロセスに従って募集中の役割のオファーを受
 
 ほとんどの昇進は年 2 回の昇進キャリブレーションを通じて処理され、個人が面接を受け承認されたヘッドカウントを埋めるポジションを受け入れたかどうかに応じて、例外は Greenhouse または Workday を経由します。これら 3 つの昇進処理方法の詳細は以下にあります。
 
-## 年 2 回の昇進キャリブレーションプロセスとタイムライン
+## 年 2 回の昇進キャリブレーションプロセスとタイムライン {#twice-per-year-promotion-calibration-process--timeline}
 
 GitLab では年 2 回の頻度で昇進を行います。昇進プロセスには 3 つのコアステージがあります: 計画、キャリブレーション、処理。
 
@@ -157,13 +157,13 @@ GitLab では年 2 回の頻度で昇進を行います。昇進プロセスに�
 
 ステータス: 日付は未定で投稿予定です。後で確認してください！
 
-## 計画
+## 計画 {#planning}
 
 FY26 Q4 昇進**計画**は、機密性を維持し、必要に応じて部門リーダー間のコラボレーションを可能にするために、Workday 経由で完了します。上記のタイムラインの計画フェーズに入る前に、People Business Partner は、キャリブレーションフェーズに入る前に Workday が最新であることを確認します。
 
 部門ごとのキャリブレーションフェーズが完了すると、ディレクター以上は、[Workday 計画グリッド](https://docs.google.com/document/d/1KwpFnZC5MFpCwS9ElqkSh0f1bdZ3l0Gp-B4lDdJwIg0/edit?usp=sharing)に昇進報酬の推奨を入力できるようになります。部門のキャリブレーションミーティングタイムラインの詳細については、People Business Partner に連絡してください。
 
-### 昇進ドキュメント
+### 昇進ドキュメント {#promotion-document}
 
 [昇進ドキュメント](https://docs.google.com/document/d/15Zll03CelNs091CDhntRiX2RweripppfQRf-nj4rSig/edit?tab=t.0)はすべてのインライン昇進に必要です。**昇進ドキュメントは合計 3 ページを超えてはなりません。**
 
@@ -310,7 +310,7 @@ FP&A は年 2 回、部門/部署ごとに予算への影響を追跡します�
 1. [暫定/代理役割](/handbook/people-group/promotions-transfers/#interim-and-acting-roles)の個人からの昇進。
 1. 年 2 回のプロセス外で、上記のタイプのいずれにも整合しない例外。
 
-### 例外の処理方法: Workday でのサイクル外昇進リクエストの提出
+### 例外の処理方法: Workday でのサイクル外昇進リクエストの提出 {#how-to-process-an-exception-submitting-an-out-of-cycle-promotion-request-in-workday}
 
 年 2 回の昇進キャリブレーションプロセスや Greenhouse での募集中の要請を通じて処理されない、昇進が発生した例外的な状況については、マネージャーは People Business Partner と協働して Workday 経由で昇進を提出できます。マネージャーは PBP にメールで連絡し、昇進ドキュメント、例外の正当化、10% を超える報酬増加の推奨に対する次のレベルマネージャーの承認を含める必要があります。People Business Partner が例外を承認したら、昇進を処理でき、People Business Partner が Workday で昇進を提出できます。変更の提出に関するヘルプは [Workday ガイド](https://docs.google.com/document/d/1hpPikG0STncYKamaY8XlfMTwYdoszP-0Xogvpp5hyZ4/edit)を参照してください。
 
@@ -461,7 +461,7 @@ CTO 組織では、会社のプロセスに従い、標準昇進ドキュメン�
 - チームメンバーが昇進を通じて次のレベルに移動する準備ができていても、ビジネスの性質上、その特定の役割または次のレベルが利用できない場合があります。たとえば、チームメンバーは Manager または Director の役割の準備ができていますが、ビジネスにはその時点で追加のマネージャー/ディレクターのニーズ、予算、範囲がありません。そのポジションは将来利用可能になる場合とならない場合があります。
 - 空席が[ジョブページ](https://about.gitlab.com/jobs/all-jobs/)を通じて広告されている場合、個人は役割の応募を提出する必要があります。同様に、空席投稿がない場合は、誰もが応募し検討される機会を持てるよう、空席投稿を作成し `#new-vacancies` Slack チャンネルに共有する必要があります。
 
-## 報酬の増加の推奨
+## 報酬の増加の推奨 {#recommending-a-compensation-increase}
 
 GitLab では、昇進が報酬の観点でインパクトがあり、同じ役割のピアと公平であることを確保しています。マネージャーは、直接の部下のキャッシュ報酬の増加の推奨を提案します。質問がある場合は、People Business Partner または Total Rewards チームに気軽に連絡してください。
 
@@ -490,7 +490,7 @@ Greenhouse で異動の報酬をレビューする際、Total Rewards チーム�
 1. DocuSign はマネージャーにチームメンバーと昇進について議論するよう促します。マネージャーは、`1-1 ミーティングでコールで職務変更レターを共有することにより、チームメンバーに変更をコミュニケートします`。マネージャーとチームメンバーはレターを処理/署名します。署名後、マネージャーは Slack の `#team-member-updates` チャンネルで昇進をアナウンスします。アナウンスでは、マネージャーは個人が昇進基準をどのように満たしたかを記述し、お祝いを述べます。
 1. 部門とマネージャーの変更については、People Operations チームメンバーは組織変更チェックリスト Issue を作成します。
 
-### People Operations チーム向け: 昇進、内部異動、報酬変更の処理
+### People Operations チーム向け: 昇進、内部異動、報酬変更の処理 {#for-people-operations-team-processing-promotions-internal-transfers--compensation-changes}
 
 1. リクエストが Workday を通じて承認された場合、People Operations チームは[職務変更レター](/handbook/hiring)を作成しますが、リクエストが Greenhouse を通じての場合、`People Operations チームは People Operations チームメールで通知されます`、CES チームによって[職務変更レター](/handbook/hiring)が作成され署名されました。
 

@@ -209,7 +209,7 @@ Area Sales Managers は休暇前に検討する追加のステップがありま
     - ([トレーニングセッションはこちら](https://youtu.be/zN_0J6syxmM)と[トレーニングデッキはこちら](https://bit.ly/2WNlzbZ))
 1. 商談を[常に最新の状態に保つ](/handbook/sales/commercial/#salesforce-pipeline-activity) [動画](https://youtu.be/o5gm7_5321w)
 
-### アカウントランキング
+### アカウントランキング {#account-ranking}
 
 Commercial Sales チームは、Account Object のフィールドを使用してアカウントを階層化する必要があります。これは、新規または拡大の見込み客を探す際に、追跡するアカウントを優先するのに役立ちます。SMB および Mid-Market AE に特有の定義を以下に示します。
 

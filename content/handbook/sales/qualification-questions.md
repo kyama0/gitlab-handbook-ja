@@ -142,7 +142,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 - GitLab、git、または GitLab CI/CD を使用するためのベストプラクティスに関する教育によって、開発者の生産性がどう影響を受けるかを説明してください。
 - 新しいツールまたはプラットフォームを追加することに関連するリスクをチームはどのように管理していますか？
 
-## **GITLAB PREMIUM および ULTIMATE を販売するための質問**
+## **GITLAB PREMIUM および ULTIMATE を販売するための質問** {#questions-for-selling-gitlab-premium-and-ultimate}
 
 GitLab Premium および GitLab Ultimate Opportunity をより多く特定する鍵は、*見込み客とお客様のエンゲージメントで真にコンサルタティブなマインドセットを取り入れる* ことです。具体的には:
 

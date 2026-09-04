@@ -1067,7 +1067,7 @@ PM として、あなたは最終的に出荷する解決策の品質に責任�
 
 Opportunity Canvases は、まったく新しい機能をもたらす可能性のある、よく定義されていないか、よく理解されていない、顧客が経験している問題に対する素晴らしいアセスメントです。前述のように、機会キャンバスは既存の機能にも役立ちますが、それらは新機能開発に合わせて調整されているため、[`Product-Opportunity-Opportunity-Canvas-Lite`](https://gitlab.com/gitlab-com/Product/-/issues/new?issuable_template=Product-Opportunity-Canvas-Lite) Issue テンプレートが提供されています。このテンプレートは、便利な Issue で顧客の問題、ビジネスケース、機能計画を素早く特定する軽量なアプローチを提供します。テンプレートを使う手順は [Instructions](https://gitlab.com/gitlab-com/Product/-/blob/main/.gitlab/issue_templates/Product-Opportunity-Canvas-Lite.md#instructions) セクションでアウトラインされており、明確にするために、拡張に興味のある既存の機能のためにこの Issue テンプレートを作成します。例えば、このテンプレートは、MVC に 3 番目または 4 番目のイテレーションを追加する機会を評価している場合に使用するのに最適です。この Issue は、すでに利用可能なリソースを活用し、リーダーシップにレビューのために提出するために詳細を集めるために使用すべきです。テンプレートを記入したら、Issue で特定された関係者にアサインし、可視性のためにいつでも `#product` チャンネルに投稿できます。
 
-### アナリストとのエンゲージメント
+### アナリストとのエンゲージメント {#analyst-engagement}
 
 GitLab のプロダクトマネージャーであることの一部は、ステージに該当する様々なアナリストレポートに繋がる、アナリストとのエンゲージメントを維持することです。これが成功し、アナリストスコアカードで私たちの製品が正しく評価されることを保証するために、いくつかのガイドラインに従います:
 

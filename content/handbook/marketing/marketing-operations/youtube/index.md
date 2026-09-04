@@ -221,7 +221,7 @@ Google Drive は動画配信を処理することを意図していないため�
 時々、いくつかの動画は依然として限定公開として投稿されます。これらは(`GitLab Unfiltered` アカウントを使用しながら)この[リンク](https://studio.youtube.com/channel/UCMtZ0sc1HHNtGGWZFDRTh5A/videos/upload?filter=%5B%7B%22name%22%3A%22VISIBILITY%22%2C%22value%22%3A%5B%22UNLISTED%22%5D%7D%5D&sort=%7B%22columnType%22%3A%22date%22%2C%22sortOrder%22%3A%22DESCENDING%22%7D)で見つけられます。
 上記でリンクされたリストの動画にホバーしたときに `Details` ボタンをクリックすることで、動画の可視性を変更できます。
 
-## YouTube で動画が表示できない
+## YouTube で動画が表示できない {#unable-to-view-a-video-on-youtube}
 
 YouTube で「Video unavailable This video is private.」エラーが表示される場合、エラーは動画が GitLab Unfiltered にプライベートで、個人の YouTube アカウントで動画にアクセスしているために発生する可能性があります。
 動画を見るには、

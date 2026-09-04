@@ -93,7 +93,7 @@ GitLab のプロフェッショナルサービスチームは、貴社の GitLab
 
 PS チームは、2019 年後半から 2020 年初頭にかけて、サービスの成熟度と再現性を構築してきました。最近のいくつかの勝利を内部の証言として、[こちらの highspot ページ](https://gitlab.highspot.com/items/65047cc5d2ccf775a19de0f6) に記録しています。
 
-### ピッチデッキ
+### ピッチデッキ {#pitch-deck}
 
 サービスオファリングについて見込み客と話し合う際、プロフェッショナルサービスチームの役割を説明するためのいくつかのスライドがあると役立つことが多いです。SKU サービスのスライドが必要な場合は、下記のデッキから自由に引用してください。これがより大きなエンゲージメントだとお考えなら、[エンゲージメントマネージャー](https://docs.google.com/document/d/1bdVOf3jL6aJF79qRMFLQsmMxIgQh5ZQ-WiLuNgsWB08/edit?tab=t.0#heading=h.qzgxpwqxme5) にお問い合わせください
 

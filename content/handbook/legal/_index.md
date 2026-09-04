@@ -72,7 +72,7 @@ Legal の [Employment](/handbook/legal/employment-law/) チームは、チーム
 
 私たちは従業員の懸念を非常に真剣に受け止めており、すべての GitLab チームメンバーが [Ethico](https://www.mycompliancereport.com/report?cid=GTLB) を使って倫理および/またはコンプライアンス違反を報告することを奨励しています。詳細は [People Group ハンドブック](/handbook/people-group/) の [違反の報告方法](/handbook/people-group/#how-to-report-violations) および [Code of Business Conduct and Ethics](/handbook/legal/gitlab-code-of-business-conduct-and-ethics/) を参照してください。
 
-## GitLab ポリシー
+## GitLab ポリシー {#gitlab-policies}
 
 ポリシー、コンプライアンス基準、ガイドライン、その他のリソースの一覧は [GitLab の Ethics and Compliance Program](/handbook/legal/ethics-compliance-program/#compliance-standards-guidelines--other-resources) を参照してください。
 

@@ -423,7 +423,7 @@ FY23 エンゲージメントサーベイについては、すべての部門に
 
 [Take Action with Action Framework](https://support.cultureamp.com/en/articles/7048673-take-action-with-the-action-framework)
 
-## FY'23 Q2 パルスエンゲージメントサーベイ結果
+## FY'23 Q2 パルスエンゲージメントサーベイ結果 {#fy23-q2-pulse-engagement-survey-results}
 
 FY'23 Q2 パルスエンゲージメントサーベイは 2022-05-16 から 2022-05-25 まで実施されました。サーベイは 2022-04-30 以前に採用されたチームメンバーに開放されました。
 
