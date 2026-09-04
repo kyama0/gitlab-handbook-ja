@@ -38,7 +38,7 @@ Growth のミッション、方向性、プロダクト戦略の詳細につい�
 
 [バリュー](/handbook/values/) に沿って、[イテレーション](/handbook/values/#iteration) と [コラボレーション](/handbook/values/#collaboration) に焦点を当て、開発部門のカウンターパートが管理するプロダクトの領域と協力して取り組んでいます。
 
-プロダクトチームが優先するIssueに取り組み、GitLab.com での [実験](/handbook/engineering/development/growth/experimentation/) も実行しています。Growth ステージのチームにはフルスタックエンジニアがいます。その理由は、Growth ステージはフロントエンドとバックエンドの両方のスキルセットを必要としますが、小規模なチームとして、チームメンバーの効率を最適化するためにフルスタックロールを採用しているからです。
+プロダクトチームが優先する Issue に取り組み、GitLab.com での [実験](/handbook/engineering/development/growth/experimentation/) も実行しています。Growth ステージのチームにはフルスタックエンジニアがいます。その理由は、Growth ステージはフロントエンドとバックエンドの両方のスキルセットを必要としますが、小規模なチームとして、チームメンバーの効率を最適化するためにフルスタックロールを採用しているからです。
 
 ## Growth リーダーシップとチーム
 
@@ -60,7 +60,7 @@ Growth のミッション、方向性、プロダクト戦略の詳細につい�
 
 ### チームとコミュニケーション
 
-Growth のすべてのチームは、1 つの Slack チャンネル [#s_growth](https://gitlab.slack.com/channels/s_growth)を共有しています。
+Growth のすべてのチームは、1 つの Slack チャンネル [#s_growth](https://gitlab.slack.com/channels/s_growth) を共有しています。
 
 | チーム | GitLab ハンドル |
 |------|---------------|

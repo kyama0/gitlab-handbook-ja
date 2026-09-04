@@ -54,7 +54,7 @@ Zendesk の制限により、すべての Pod が共有ビューを持つこと�
 1. `Conditions` に移動
     1. `Tickets must meet all of these conditions to appear in the view`
         1. `Add condition` をクリックし、左から右へ `Status`、`Less than`、`Pending` を設定
-        1. 2つ目の条件として（左から右へ）`Form`、`Is`、`Self-Managed` を追加
+        1. 2 つ目の条件として（左から右へ）`Form`、`Is`、`Self-Managed` を追加
     1. `Tickets can meet any of these conditions to appear in the view`
         1. `Add condition` をクリックし（左から右へ）`Descripition`、`Contains at least one of the following words`、`geo` を設定
 1. `Formatting options` に進む

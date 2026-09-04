@@ -157,7 +157,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
   - Command of the Message 学習パスを完了してください。
   - 完了までの時間は約 1.5 時間
 - **MEDDPPICC Full E-Learning Course (Assignment - 2 時間 - 10 ポイント - 事前作業)**
-  - [MEDDPPICC ハンドブックページ](/handbook/sales/meddppicc/) をレビューしてください。フル eラーニングはオプションです。
+  - [MEDDPPICC ハンドブックページ](/handbook/sales/meddppicc/) をレビューしてください。フル e ラーニングはオプションです。
   - 完了までの時間は約 1.5 時間
 - **GitLab バリューフレームワーク (Material - セールス資料 - 35 分)**
   - GitLab の [バリューフレームワーク](https://internal.gitlab.com/handbook/sales/command-of-the-message/#resources-core-content) (内部のみ) は、営業担当者が利用できる最も役立つツールの 1 つです。私たちのバリュードライバ、顧客のニーズを発見する方法、価値と差別化を明確に表現する方法を理解するためにご覧ください。クイック参照のための [フレームワーク要約](https://internal.gitlab.com/handbook/sales/command-of-the-message/#resources-core-content) (内部のみ) も利用できます。

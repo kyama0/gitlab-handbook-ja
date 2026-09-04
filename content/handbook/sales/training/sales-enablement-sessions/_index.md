@@ -13,32 +13,32 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 Field Enablement Spotlight は、GitLab のセールス、セールスデベロップメント、カスタマーサクセス、ソリューションアーキテクト、パートナーエコシステム、リニューアル、プロフェッショナルサービス & オペレーションの各チームメンバー全員を対象とした、毎週開催される継続教育シリーズです。
 
-Field Enablement Spotlight は毎週木曜日に開催され、グローバルな GitLab フィールドセールス & カスタマーサクセスのオーディエンスに対応するため、2つのセッションオプションを用意しています。
+Field Enablement Spotlight は毎週木曜日に開催され、グローバルな GitLab フィールドセールス & カスタマーサクセスのオーディエンスに対応するため、2 つのセッションオプションを用意しています。
 
-- **(オプション1) 11:00 AM (米国東部時間)(UTC -4)** = (午前8時 太平洋時間) = **(午後4時 中央ヨーロッパ時間)(UTC +1)**
+- **(オプション 1) 11:00 AM (米国東部時間)(UTC -4)** = (午前 8 時 太平洋時間) = **(午後 4 時 中央ヨーロッパ時間)(UTC +1)**
 
-- **(オプション2) 11:00 AM (オーストラリア東部時間)(UTC +11)** = (午後5時 米国太平洋時間)(UTC -7)
+- **(オプション 2) 11:00 AM (オーストラリア東部時間)(UTC +11)** = (午後 5 時 米国太平洋時間)(UTC -7)
 
-毎週の Field Enablement Spotlight セッションへの参加は必須であり、グローバルなオーディエンスに対応するために2つのオプションを提供しています。チームメンバーが有給休暇中の場合や、顧客とのスケジュールの都合がつかない場合は、適時にセッションの録画を視聴することができます。
+毎週の Field Enablement Spotlight セッションへの参加は必須であり、グローバルなオーディエンスに対応するために 2 つのオプションを提供しています。チームメンバーが有給休暇中の場合や、顧客とのスケジュールの都合がつかない場合は、適時にセッションの録画を視聴することができます。
 
 ## 今後のトレーニング
 
 近日開催予定のトレーニングを確認するには、[Field Enablement Spotlight Issue リスト](https://gitlab.com/groups/gitlab-com/sales-team/-/issues?scope=all&utf8=%E2%9C%93&state=opened&label_name[]=sales%20enablement%20sessions)を参照してください。
 
-**2025年冬のラインナップ**
+**2025 年冬のラインナップ**
 
 | 日付   | トピック | スピーカー |
 |--------|--------|--------|
-| 11月27日  |  **セッションなし**   |    |
-| 12月4日 |   GitLab 18.6 リリース  |  プロダクトマーケティング   |
-| 12月11日 |  (空きあり)   |    |
-| 12月18日/19日 |  GitLab 18.7 リリース   |  プロダクトマーケティング   |
-| 12月25日  |  **セッションなし**    |    |
-| 1月1日 |   **セッションなし**   |    |
-| 1月8日 |  (空きあり)   |    |
-| 1月19日/20日 |  GitLab 18.8 リリース   |  プロダクトマーケティング   |
-| 1月22日 |  *四半期最終2週間はセッションなし*   |    |
-| 1月29日 |  *四半期最終2週間はセッションなし*   |    |
+| 11 月 27 日  |  **セッションなし**   |    |
+| 12 月 4 日 |   GitLab 18.6 リリース  |  プロダクトマーケティング   |
+| 12 月 11 日 |  (空きあり)   |    |
+| 12 月 18 日/19 日 |  GitLab 18.7 リリース   |  プロダクトマーケティング   |
+| 12 月 25 日  |  **セッションなし**    |    |
+| 1 月 1 日 |   **セッションなし**   |    |
+| 1 月 8 日 |  (空きあり)   |    |
+| 1 月 19 日/20 日 |  GitLab 18.8 リリース   |  プロダクトマーケティング   |
+| 1 月 22 日 |  *四半期最終 2 週間はセッションなし*   |    |
+| 1 月 29 日 |  *四半期最終 2 週間はセッションなし*   |    |
 
 ## 過去のセッション
 
@@ -56,7 +56,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 | 2025-09-23 | **[GitLab 18.4 リリース + Gartner AI Code Assistants Magic Quadrant](https://gitlab.highspot.com/items/68d2d0df5e698e6ee5c31e31)**  |  非公開  |
 | 2025-09-11 |  **[パイプライン創出技術の習得](https://gitlab.highspot.com/items/68c3004d1210c2073ae7c8d7)** | 非公開 |
 | 2025-09-04 |  **[Duo Agent Platform: Dedicated アップデート](https://gitlab.highspot.com/items/68b9ce4f686bf998ab6dbfc0)**  | 非公開   |
-| 2025-08-28 |  **[2つの新しい画期的なプロフェッショナルサービス提供](https://gitlab.highspot.com/items/68b096b0b52e064147872ed5)**  |  非公開  |
+| 2025-08-28 |  **[2 つの新しい画期的なプロフェッショナルサービス提供](https://gitlab.highspot.com/items/68b096b0b52e064147872ed5)**  |  非公開  |
 | 2025-08-21 |  **[GitLab 18.3 リリース](https://gitlab.highspot.com/items/68a74fe205c115126bfbb618)**  |  非公開   |
 | 2025-08-14 | **[First Order マスタークラス](https://gitlab.highspot.com/items/689f712f8b2f5fc28a7d72a3)**   |  非公開 |
 | 2025-08-07 |  **[Partner Velocity: エコシステムディールの新時代](https://gitlab.highspot.com/items/6894dec4130a946fcd0627f1)**  | 非公開  |
@@ -119,7 +119,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 | 2023-11-16 | **[FY24-Q4 競合アップデート](https://drive.google.com/file/d/12DsBAI4vC9mwc8_SrJuixNERL1_JKbzu/view?usp=drive_link)**  | 非公開 |
 | 2023-11-09 | **[Sales Ops アップデート: AE Clari ベストプラクティス](https://drive.google.com/file/d/1RGjNV4XvB-MkW-OTgw3ITu8-oGlKkns1/view?usp=drive_link)** | 非公開 |
 | 2023-11-02 | **[GitLab における DORA メトリクスの実装方法](https://drive.google.com/file/d/1XDqR6peiMYIBs-jdNuvXaz4WlTVqJsTU/view?usp=drive_link)** | 非公開 |
-| 2023-10-19 | **[GitLab を売り込むためのトップ10の理由](https://drive.google.com/file/d/1Mod-ZvWgt85gg55JQke0H1OmGlGm-0sp/view?usp=share_link)**  | 非公開 |
+| 2023-10-19 | **[GitLab を売り込むためのトップ 10 の理由](https://drive.google.com/file/d/1Mod-ZvWgt85gg55JQke0H1OmGlGm-0sp/view?usp=share_link)**  | 非公開 |
 | 2023-10-12 | **[Analyst Relations - 新 Gartner & Forrester セキュリティレポート](https://drive.google.com/file/d/1eHc9R-hOtnUT9KNB0oGMTi5mANZGLDKd/view?usp=drive_link)**  | 非公開 |
 | 2023-09-28 | **[Value Framework リフレッシュ概要](https://drive.google.com/file/d/1AtxF67rCbGiCc8CqoFsp1D7WZG0Zrnnu/view?usp=drive_link)**  | 非公開 |
 | 2023-09-14 | **[Propensity to Purchase (PTP) Score ローンチ](https://drive.google.com/file/d/1dJvpME0GKpRczdMpOu5O6ZnBJRSbGHn9/view?usp=drive_link)**  | 非公開 |
@@ -270,11 +270,11 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 
 </details>
 
-**注: GitLab Unfiltered の非公開動画を視聴するには、ハンドブックの[非公開動画の視聴方法](/handbook/marketing/marketing-operations/youtube/#unable-to-view-a-video-on-youtube)ページを参照してください。このページには、[2分間のこちらの動画](https://www.youtube.com/watch?v=dZtCuOf5aGk)へのリンクが含まれています。**
+**注: GitLab Unfiltered の非公開動画を視聴するには、ハンドブックの[非公開動画の視聴方法](/handbook/marketing/marketing-operations/youtube/#unable-to-view-a-video-on-youtube)ページを参照してください。このページには、[2 分間のこちらの動画](https://www.youtube.com/watch?v=dZtCuOf5aGk)へのリンクが含まれています。**
 
 ## 新しい Field Enablement Spotlight セッションをリクエストする方法
 
-- この [Field Enablement Spotlight Request issue テンプレート](https://gitlab.com/gitlab-com/sales-team/sales-enablement-videocast-series/-/issues/new#) を記入し、提出してください
+- この [Field Enablement Spotlight Request Issue テンプレート](https://gitlab.com/gitlab-com/sales-team/sales-enablement-videocast-series/-/issues/new#) を記入し、提出してください
 - 緊急の場合は、#field-enablement-team へ Slack メッセージを送り、@John Blevins にメンションしてください
 - 各セクションの記入ガイダンス付きのテンプレート例を以下に示します。
 
@@ -284,23 +284,23 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 
 ### **日付 & 時刻**
 
-> *セッションの希望日付を記載してください。Field Enablement Spotlight は毎週木曜日に開催され、グローバルな GitLab フィールドセールスのオーディエンスに対応するため、2つのセッションオプションを用意しています。*
+> *セッションの希望日付を記載してください。Field Enablement Spotlight は毎週木曜日に開催され、グローバルな GitLab フィールドセールスのオーディエンスに対応するため、2 つのセッションオプションを用意しています。*
 
 ### **プレゼンター & モデレーター**
 
 > *プレゼンターが両方のセッションオプションをカバーできることを確認するか、両方をカバーできる代替プレゼンターを見つけてください。可能な限り、フィールドセールスチームのメンバーをトピックを支援する経験について話してもらうために招待してください。モデレーターはセッションを進行し、コラボレーションの主要連絡窓口となるため、Enablement チームから割り当てられます。多くの場合、両方のセッションオプションをカバーするために複数のモデレーターが割り当てられます。*
 
-- **(オプション1) 11:00 AM (米国東部時間)(UTC -5)** = (午前8時 太平洋時間) = **(午後5時 中央ヨーロッパ時間)(UTC +1)**
+- **(オプション 1) 11:00 AM (米国東部時間)(UTC -5)** = (午前 8 時 太平洋時間) = **(午後 5 時 中央ヨーロッパ時間)(UTC +1)**
 
-- **(オプション2) 12:00 PM (オーストラリア東部時間)(UTC +11)** = (午後5時 米国太平洋時間)(UTC -8)
+- **(オプション 2) 12:00 PM (オーストラリア東部時間)(UTC +11)** = (午後 5 時 米国太平洋時間)(UTC -8)
 
 ### **学習目標**
 
-> *セッションの結果としてオーディエンスに伝えたい主要なテイクアウェイを2-3個記載してください。*
+> *セッションの結果としてオーディエンスに伝えたい主要なテイクアウェイを 2 〜 3 個記載してください。*
 
 ### **リソース**
 
-> *プレゼンテーションやその他の関連コンテンツを含むすべてのセッションリソースをプランニング issue 内に記載してください。すべてのセッションコンテンツは、セッション放映日の1週間前までに Field Enablement と部門リーダーシップによるレビュー準備が整っている必要があります。*
+> *プレゼンテーションやその他の関連コンテンツを含むすべてのセッションリソースをプランニング Issue 内に記載してください。すべてのセッションコンテンツは、セッション放映日の 1 週間前までに Field Enablement と部門リーダーシップによるレビュー準備が整っている必要があります。*
 
 ### **セッション形式**
 
@@ -308,7 +308,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 
 ### **セッションの長さ**
 
-> *Field Enablement Spotlight は毎週木曜日に開催されます。トピック、プレゼンテーションの長さ、オーディエンスからの質問の予想ボリュームに応じた適切なセッションの長さを選択してください。標準的なセッションの長さは30分で、プレゼンテーション15分、オーディエンスからの質問15分です。必要に応じてセッションは45分または50分まで延長できます。*
+> *Field Enablement Spotlight は毎週木曜日に開催されます。トピック、プレゼンテーションの長さ、オーディエンスからの質問の予想ボリュームに応じた適切なセッションの長さを選択してください。標準的なセッションの長さは 30 分で、プレゼンテーション 15 分、オーディエンスからの質問 15 分です。必要に応じてセッションは 45 分または 50 分まで延長できます。*
 
 ### **コール・トゥ・アクション**
 
@@ -340,47 +340,47 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 
 ## トレーニングのスケジュール設定
 
-**新しい四半期開始の4-6週間前**
+**新しい四半期開始の 4 〜 6 週間前**
 
 - セールスリーダー、Product Marketing、Partner Ecosystem、Competitive Intelligence、Analyst Relations、その他（例: Sales Ops）から、次の四半期のセールスイネーブルメントトピックについての意見を募集
 
-**新しい四半期開始の2-4週間前**
+**新しい四半期開始の 2 〜 4 週間前**
 
 - 以下のメンバーとアラインメントコールでトピック & 暫定スケジュールを最終決定:
   - Sr. Program Manager, Onboarding & Continuous Education (John Blevins)
   - Director, Sales & Customer Enablement
 
-- アラインメントコール後、John Blevins が各イネーブルメントセッションの issue を開きます
+- アラインメントコール後、John Blevins が各イネーブルメントセッションの Issue を開きます
   - 予備的な学習目標、タイトル、期待される成果などの文書化
   - 暫定日付を「TENTATIVE - ZZZ」として記載
-  - 想定される SME/スピーカーを issue に割り当て
-  - issue 内で SME にメンションし、コミットできるか尋ねる。スケジュール設定前にコミットメントを得る。
+  - 想定される SME/スピーカーを Issue に割り当て
+  - Issue 内で SME にメンションし、コミットできるか尋ねる。スケジュール設定前にコミットメントを得る。
 
-**新しい四半期開始の1-2週間前**
+**新しい四半期開始の 1 〜 2 週間前**
 
 - John Blevins がすべての SME/スピーカーとミーティングをスケジュール
   - 目標: SME/スピーカーが今後のセッションを認識し、セッションを所有できることを確実にする
     - スケジュール、成果、目標をレビュー
     - 質問に回答
     - 必要に応じて調整
-  - issue、Google Docs、パブリック Slack チャネル（例: #product-marketing または #field-enablement-team）を通じて継続的なコラボレーションを管理
+  - Issue、Google Docs、パブリック Slack チャネル（例: #product-marketing または #field-enablement-team）を通じて継続的なコラボレーションを管理
 
   - Sales and Customer Enablement チームは、セールスリーダーシップおよび GitLab Product Marketing Management (PMM) チームとの定期的なミーティングで今後のトレーニングについて議論します。
-- 実行するセッションは、バックログから選択するか、新しい issue を作成し、`status:plan` カラムに移動します。
-- issue をスピーカーに割り当て、issue の説明に `Moderator: <name>` を追加します。
+- 実行するセッションは、バックログから選択するか、新しい Issue を作成し、`status:plan` カラムに移動します。
+- Issue をスピーカーに割り当て、Issue の説明に `Moderator: <name>` を追加します。
   - スピーカーがトレーニング用のコンテンツを調査・作成します。
 - スピーカーの準備が整ったら、トレーニングのモデレーターと日付を選択する必要があります。
-  - モデレーターを（スピーカーに加えて）issue に割り当て、issue の説明に `Moderator: <name>` を追加します。
-  - issue に期日を追加します。
-  - ISO 形式の日付を issue タイトルに追加します。
-  - issue を `status:scheduled` カラムに移動します。
-  - カラム内の issue を日付順に並べるため、issue を手動でドラッグします。
+  - モデレーターを（スピーカーに加えて）Issue に割り当て、Issue の説明に `Moderator: <name>` を追加します。
+  - Issue に期日を追加します。
+  - ISO 形式の日付を Issue タイトルに追加します。
+  - Issue を `status:scheduled` カラムに移動します。
+  - カラム内の Issue を日付順に並べるため、Issue を手動でドラッグします。
 
-**セッション開始の2週間前**
+**セッション開始の 2 週間前**
 
 - スピーカーの可用性とセッションの学習目標を確認
 
-**セッション開始の1週間前**
+**セッション開始の 1 週間前**
 
 - スピーカーのコンテンツの準備状況、コール・トゥ・アクション、コミュニケーションプランを確認します。
 - #field-enablement-team チャネル経由で、地域リーダーに今週のセッション参加状況および翌週セッションのプレビューを Slack でレポート送信します。
@@ -396,17 +396,17 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 
 Field Enablement Spotlight セッションは、Sales and Customer Enablement と PMM チームの全員がカレンダーイベントを編集できるよう、[Sales Enablement カレンダー](https://calendar.google.com/calendar/embed?src=gitlab.com_5n3g60l58thum9aovp8iisav34%40group.calendar.google.com&ctz=America%2FLos_Angeles)でスケジュール設定されています。
 
-Field Enablement Spotlight は毎週木曜日に開催され、グローバルな GitLab フィールドセールスのオーディエンスに対応するため、2つのセッションオプションを用意しています。
+Field Enablement Spotlight は毎週木曜日に開催され、グローバルな GitLab フィールドセールスのオーディエンスに対応するため、2 つのセッションオプションを用意しています。
 
-- **(オプション1) 11:00 AM (米国東部時間)(UTC -5)** = (午前8時 太平洋時間) = **(午後5時 中央ヨーロッパ時間)**
+- **(オプション 1) 11:00 AM (米国東部時間)(UTC -5)** = (午前 8 時 太平洋時間) = **(午後 5 時 中央ヨーロッパ時間)**
 
-- **(オプション2) 12:00 PM (オーストラリア東部時間)(UTC +11)** = (午後5時 米国太平洋時間)
+- **(オプション 2) 12:00 PM (オーストラリア東部時間)(UTC +11)** = (午後 5 時 米国太平洋時間)
 
 ## Field Enablement Spotlight セッションの実施方法
 
 - 各トレーニングセッションには [スピーカー](#speaker) と [モデレーター](#moderator) がいます
-- セッションは通常30分です
-- プレゼンテーション部分は15分で、Q&A に15分残します
+- セッションは通常 30 分です
+- プレゼンテーション部分は 15 分で、Q&A に 15 分残します
 
 ## 録画
 
@@ -450,7 +450,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 
 **セッション中のモデレーターのタスク**
 
-- 5分前に zoom にログインします
+- 5 分前に zoom にログインします
 - ビデオは録画されていないはずですが、録画されている場合は一時停止します
 - 米国東部時間 11 AM / 太平洋時間 8 AM に全員をコールに歓迎し、プレゼンテーションが公開/非公開であることを思い出させます。すべてのイントロで機密情報の話し方について明確に言及します。
 
@@ -460,7 +460,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 
 > 本日の GitLab セールスイネーブルメントトレーニングでは、`<スピーカー名>` に `<トピック>` についてお話しいただけることを嬉しく思います。それでは、`<スピーカー名>` にお渡しします。
 
-- 時間を監視します。プレゼンテーションが15分以上に及ぶ場合は、スピーカーに15分経過し Q&A の時間を残したいことを思い出させるために割り込みます。
+- 時間を監視します。プレゼンテーションが 15 分以上に及ぶ場合は、スピーカーに 15 分経過し Q&A の時間を残したいことを思い出させるために割り込みます。
 - 録画を停止します。
 
 **セッション後のモデレーターのタスク**
@@ -470,7 +470,7 @@ Field Enablement Spotlight は毎週木曜日に開催され、グローバル�
 - 今後 & 過去のセッションリストを Google Drive 録画リンクで [Sales Enablement Sessions Handbook](/handbook/sales/training/sales-enablement-sessions/#sales-enablement-sessions) に更新します。
 - セッション録画を [Field Enablement Spotlight: GitLab における継続教育](https://gitlab.highspot.com/items/6480e56aff37cbf397ac752f) Highspot ページに追加します。
 - #sales & #customer-success Slack チャネルで録画セッションが利用可能であることを宣伝します。
-- zoom ミーティングレポートを確認し、issue のコメントとして総参加者数を記録します。
+- zoom ミーティングレポートを確認し、Issue のコメントとして総参加者数を記録します。
 - zoom からの .csv 参加レポートで四半期の Spotlight 参加レポートを地域、部門、リーダー別の参加状況を表示するように更新します。
 
 ## Spotlight レポーティング
@@ -481,7 +481,7 @@ Spotlight Attendance Report は FY25-Q3 から利用可能で、Highspot 経由�
 
 ### 満足度 & 有用性レポート
 
-各 Spotlight セッションの終了時に、zoom アンケートが自動的に起動し、参加者に3つの質問をします。毎週、満足度と有用性の評価が平均化され、5で割ってパーセンテージが計算されます。評価スケールは以下に概説されています。
+各 Spotlight セッションの終了時に、zoom アンケートが自動的に起動し、参加者に 3 つの質問をします。毎週、満足度と有用性の評価が平均化され、5 で割ってパーセンテージが計算されます。評価スケールは以下に概説されています。
 
 - 1 〜 5 のスケールで、**プレゼンされた情報に対する満足度**を評価してください。
 
@@ -499,7 +499,7 @@ Spotlight Attendance Report は FY25-Q3 から利用可能で、Highspot 経由�
 
 - **改善が必要 (50%-70%):** 影響が限定的; コンテンツや配信の大幅な変更が必要かもしれません。
 
-- **非効果的 (50%未満):** 関連性やエンゲージメントが低く、コンテンツの大規模な見直しまたは方向転換が必要です。
+- **非効果的 (50% 未満):** 関連性やエンゲージメントが低く、コンテンツの大規模な見直しまたは方向転換が必要です。
 
 **毎週レポートが** Slack の #field-enablement-team を通じて、ミーティング後のアンケート結果を含むプレゼンターと地域リーダーに提供されます。スコアは改善領域を特定するために分析されます。インサイトは、セッションのコンテンツ、ペース、関連性を洗練し、フィールドのニーズとの継続的な整合とエンゲージメントの最適化を確保するために使用されます。
 

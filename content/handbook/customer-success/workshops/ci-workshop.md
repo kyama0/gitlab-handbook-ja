@@ -26,7 +26,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 このワークショップは、「ハンズオンキーボード」のデモ体験を提供することを目的とは *していません*。
 
-*標準的な時間*: 60-120 分が良いガイドラインです。事前録画ビデオ付きの Advanced CI ワークショップは、約 80 分の事前録画ビデオに加えて約 5-15 分の「`rules:` の例」が含まれます。質問のための時間も忘れずに確保してください。
+*標準的な時間*: 60 〜 120 分が良いガイドラインです。事前録画ビデオ付きの Advanced CI ワークショップは、約 80 分の事前録画ビデオに加えて約 5 〜 15 分の「`rules:` の例」が含まれます。質問のための時間も忘れずに確保してください。
 
 <figure class="video_container">
   <iframe src="https://www.youtube.com/embed/bF53StwhMUc" frameborder="0" allowfullscreen="true"> </iframe>
@@ -35,7 +35,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 ## はじめ方 {#how-to-get-started}
 
 1. 顧客の Collaboration Project に [CI Sell Sheet issue template](https://gitlab.com/gitlab-com/customer-success/tam/-/blob/master/.gitlab/issue_templates/CICDv2WorshopTopics.md) を使用して Issue を作成し、Basic または Advanced ワークショップのどちらが適切かを顧客と議論します。
-1. 顧客とのセッションに適切な時間量に合意します（90-120 分推奨）
+1. 顧客とのセッションに適切な時間量に合意します（90 〜 120 分推奨）
 1. ワークショップ用に [Zoom 経由でサインアップページを作成](https://support.zoom.com/hc/en/article?id=zm_kb&sysparm_article=KB0065026) して、顧客が社内で共有できるようにします。サインアップページのメリットは:
     1. 事前に予想される参加者数を把握し、それに応じて準備（例: 非同期 Q&A を処理するためのボランティアリソースを巻き込む）できます。
     1. 誰が参加するか分かり、参加者の特定のレベル/役職に合わせてコンテンツを調整できます（サインアップページに `title` の質問を追加することを忘れないでください！）。

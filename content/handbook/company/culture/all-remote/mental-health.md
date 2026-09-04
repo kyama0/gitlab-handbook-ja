@@ -46,7 +46,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 特定のプロジェクトを前進させるために 1 時間余分に作業することは、孤立して見ると壊滅的ではないかもしれませんが、新しいステータスクォーを維持するために*継続して*過労しなければならない改訂されたベースラインを引き起こす可能性があります。
 
-これは、マネージャーが特定のスプリントが持続的な基準として継続的に達成できるものをリセットすべきではないことを認識しない場合に毒性を帯びます。チームメンバーが[1 対 1 の設定](/handbook/leadership/1-1/)でマネージャーにこれを伝えることが安全と感じない場合には災害になります。
+これは、マネージャーが特定のスプリントが持続的な基準として継続的に達成できるものをリセットすべきではないことを認識しない場合に毒性を帯びます。チームメンバーが [1 対 1 の設定](/handbook/leadership/1-1/)でマネージャーにこれを伝えることが安全と感じない場合には災害になります。
 
 特に[成果](/handbook/values/#results)が何よりも評価される会社では、マネージャーは特定の過労期間に得られた成果が新しい標準であると想定しないよう注意すべきです。これにより、チームメンバーは増え続ける（そして持続不可能な）期待を満たすために永続的に過労することを強いられる不公平な状況に置かれます。より広範には、他のチームメンバーがこれを目撃すると、同様の過労サイクルに自分を閉じ込めることへの恐れから、特別な場合に上を行くことをしなくなります。
 
@@ -57,7 +57,7 @@ lastmod: "2026-08-19T14:13:18-04:00"
 
 従来の知恵に反するように聞こえますが、仕事から離れることで明晰さが得られます。人間が生存するために呼吸を吸い込み、吐き出さなければならないように、より多くの仕事だけを吸い込んでいれば健康で生産的であり続けることは期待できません。
 
-John Fitch は著書 [Time Off](https://maxfrenzel.com/time-off) で、創造性の 4 つの段階について説明しています。これは最初に英国の社会心理学者でLondon School of Economicsの共同創業者 Graham Wallas によって[概説](https://www.themarginalian.org/2013/08/28/the-art-of-thought-graham-wallas-stages/)されました。
+John Fitch は著書 [Time Off](https://maxfrenzel.com/time-off) で、創造性の 4 つの段階について説明しています。これは最初に英国の社会心理学者で London School of Economics の共同創業者 Graham Wallas によって[概説](https://www.themarginalian.org/2013/08/28/the-art-of-thought-graham-wallas-stages/)されました。
 
 1. 準備
 1. 孵化
@@ -68,7 +68,7 @@ Time Off の共同創業者 [John Fitch](https://twitter.com/johnwfitch) は、[
 
 > 孵化と照明は休暇によってのみ活性化されます——実際の仕事をしないことで、他のことをすることで。休んでいる間も、あなたの一部はまだ働いています。あなたの最高の仕事は実際には仕事の外で培われるという逆張りの信念に至りました。
 >
-> 創造的なプロセスの 50%は仕事を*しないこと*を必要とします。 — *John Fitch*
+> 創造的なプロセスの 50% は仕事を*しないこと*を必要とします。 — *John Fitch*
 
 この現実に声を与える文化を確立することは、休憩を取ることと幸福を優先することへのスティグマを取り除くために不可欠です。休息は仕事の犠牲ではなく、*優れた*仕事の核心的な機能です。
 
@@ -107,7 +107,7 @@ GitLab の Chief People Officer である Wendy Barnes が、[学習と開発](/
 1. 仕事の一日の準備をする朝のルーティンを実践する
 1. 仕事をオフにして、友人、家族、または一人の時間に集中する夜のルーティンを実践する
 
-**Britt Turpack がホストするこの[8 分間の瞑想](https://youtu.be/5QOAUbto2rg)で今すぐ休息倫理の構築を始めましょう。** [GitLab Unfiltered YouTube チャンネルで Britt との完全なスピーカーシリーズイベント](https://youtu.be/K0JA0t7xtrc)をご覧ください。
+**Britt Turpack がホストするこの [8 分間の瞑想](https://youtu.be/5QOAUbto2rg)で今すぐ休息倫理の構築を始めましょう。** [GitLab Unfiltered YouTube チャンネルで Britt との完全なスピーカーシリーズイベント](https://youtu.be/K0JA0t7xtrc)をご覧ください。
 
 休息倫理の構築についてさらに学ぶには、John Fitch と TimeOff による「[Design your Rest Ethic](https://timeoff.thinkific.com/courses/time-off-design-your-rest-ethic)」というコースを参照してください。
 
@@ -156,7 +156,7 @@ GitLab は 2021 年 5 月に John Fitch を 2 回のライブスピーカーシ�
 
 バーンアウト、孤立、不安は、組織構造に関わらず、すべての企業のチームメンバーに影響する問題です。常に絡み合っているわけではありませんが、それらの間には大きな相互作用があります。
 
-コロケーション環境では、チームメンバーが*外見上は*良さそうでも、これらの問題を内側で抱えていることは完全に可能です。とは言え、オフィスでは、バーンアウト、孤立、または不安が職場で繁栄する能力に影響している場合に、信頼できるチームメンバー（または[People 部門](/handbook/people-group)）に連絡するのがより簡単な傾向があります。
+コロケーション環境では、チームメンバーが*外見上は*良さそうでも、これらの問題を内側で抱えていることは完全に可能です。とは言え、オフィスでは、バーンアウト、孤立、または不安が職場で繁栄する能力に影響している場合に、信頼できるチームメンバー（または [People 部門](/handbook/people-group)）に連絡するのがより簡単な傾向があります。
 
 [対面での交流](/handbook/company/culture/all-remote/)が少ないリモート環境では、[孤立](drawbacks/)に陥りやすくなります。これは特に、リモートワークに慣れていない人や[初めてのリモートロールを始めたばかりの人](getting-started/)に当てはまります。
 
@@ -164,7 +164,7 @@ GitLab は 2021 年 5 月に John Fitch を 2 回のライブスピーカーシ�
 
 #### ドキュメント化を通じて明晰さを生み出す
 
-この現実は、これらの困難に直面するチームメンバーのためのプロセスを[ドキュメント化すること](/handbook/total-rewards/benefits/modern-health/#mental-wellness-support)に多大な焦点を置くリモートワーカーを雇用するすべての企業にとって、ますます重要にします。プロフェッショナルな支援を提供すること（[GitLab Modern Health](/handbook/total-rewards/benefits/modern-health/)を例として）とともに、[オンボーディング](/handbook/company/culture/all-remote/)中にどこに相談すればよいかのドキュメント化されたリソースを提示し、継続的な[学習と開発](/handbook/company/culture/all-remote/)セッションでこれを強化してください。
+この現実は、これらの困難に直面するチームメンバーのためのプロセスを[ドキュメント化すること](/handbook/total-rewards/benefits/modern-health/#mental-wellness-support)に多大な焦点を置くリモートワーカーを雇用するすべての企業にとって、ますます重要にします。プロフェッショナルな支援を提供すること（[GitLab Modern Health](/handbook/total-rewards/benefits/modern-health/) を例として）とともに、[オンボーディング](/handbook/company/culture/all-remote/)中にどこに相談すればよいかのドキュメント化されたリソースを提示し、継続的な[学習と開発](/handbook/company/culture/all-remote/)セッションでこれを強化してください。
 
 リモートチームメンバーは精神的な苦悩を経験しているとき、人に連絡することにためらいを感じるかもしれないため、会社のハンドブック内で回答とリソースが簡単に発見できることが重要です。
 
@@ -281,7 +281,7 @@ GitLab は会社[ハンドブック](/handbook)に多くの変更を追加し、
 
 ### PTO のやることリストを作る
 
-見落としや*仕事に関連するやることリスト*を見逃すことに不安を感じる場合は、[有給休暇](/handbook/people-group/time-off-and-absence/time-off-types/)の期間中、そのやることリストを**PTO のやることリスト**に置き換えることを検討してください。これにはヨガの練習、家族や友人とのコーヒーのスケジュール、散歩/ハイキング/サイクリングをする、1 晩に X 時間寝る、1 日に X 時間昼寝する、新しい本の X チャプターを読む、などの項目が含まれることがあります。
+見落としや*仕事に関連するやることリスト*を見逃すことに不安を感じる場合は、[有給休暇](/handbook/people-group/time-off-and-absence/time-off-types/)の期間中、そのやることリストを **PTO のやることリスト**に置き換えることを検討してください。これにはヨガの練習、家族や友人とのコーヒーのスケジュール、散歩/ハイキング/サイクリングをする、1 晩に X 時間寝る、1 日に X 時間昼寝する、新しい本の X チャプターを読む、などの項目が含まれることがあります。
 
 ### 感謝の瞬間を取る
 
@@ -303,7 +303,7 @@ GitLab チームメンバーは `#daily-gratitude` Slack チャンネルに参�
 
 ### 現実的な期待値を設定する
 
-リーダーシップは期待について分別を持たなければなりません。会社の[OKR](/handbook/company/okrs)（目標と主な成果）と[KPI](/handbook/company/kpis/)（主要業績評価指標）が会社の[価値観](/handbook/company/culture/all-remote/)を侵害せずに達成不可能であれば、この不一致はチーム全体のバーンアウト、孤立、不安を促進するレシピです。
+リーダーシップは期待について分別を持たなければなりません。会社の [OKR](/handbook/company/okrs)（目標と主な成果）と [KPI](/handbook/company/kpis/)（主要業績評価指標）が会社の[価値観](/handbook/company/culture/all-remote/)を侵害せずに達成不可能であれば、この不一致はチーム全体のバーンアウト、孤立、不安を促進するレシピです。
 
 会社の価値観の犠牲を必要とする持続的な作業量でチームメンバーが優れた精神的健康を維持することを期待することは愚かです。野心的な目標について協力することと、不可能と思われるタスクを割り当てることの間には微妙な線があります。
 
@@ -369,7 +369,7 @@ GitLab の社員 Matej L. は、[リモートワークの気晴らしを排除�
 | ----- | ----- |
 | [Headspace](https://www.headspace.com/subscriptions) | 瞑想アプリ |
 | [非線形ワークデイ](non-linear-workday/) | 生活の調和を高めるオールリモートの作業戦略 |
-| README ファイル | 自己紹介、リモート作業セットアップ、作業スタイルに関する情報を共有するためのスペース。例として[GitLab エンジニアリングチームの README ファイル](/handbook/engineering/readmes)を確認してください。|
+| README ファイル | 自己紹介、リモート作業セットアップ、作業スタイルに関する情報を共有するためのスペース。例として [GitLab エンジニアリングチームの README ファイル](/handbook/engineering/readmes)を確認してください。|
 | Slack | `#mindfulness` や `#mental-health-aware` などのチャンネルでの非業務的な会話 |
 | [Donut ボット](informal-communication/#the-donut-bot) | ランダムなコーヒーチャットミーティングマッチボット |
 | [Modern Health コミュニティサークル](https://circles.modernhealth.com) | Modern Health がホストするパブリックコミュニティの会話 |

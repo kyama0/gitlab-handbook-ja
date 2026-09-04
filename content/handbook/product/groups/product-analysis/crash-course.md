@@ -34,7 +34,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 - [Technical Marketing ハンドブックページ](/handbook/marketing/product-and-technical-marketing/) は、プロダクトデモ、ウェビナー、リリースビデオへのリンクを含んでいます。
 
-- GitLab の会計年度は2月1日から1月31日まで実行されます。GitLab の会計四半期から月へのマップは [こちら](/handbook/finance/#fiscal-year) のリンクです。
+- GitLab の会計年度は 2 月 1 日から 1 月 31 日まで実行されます。GitLab の会計四半期から月へのマップは [こちら](/handbook/finance/#fiscal-year) のリンクです。
 
 ## セクション別にグループ化された分析関連のプロダクトステージトピックについて学ぶ
 
@@ -337,7 +337,7 @@ Dynamic Analysis Metrics の一見重複しているように見えるチャー�
 
 **プロダクト方向性へのリンク**
 
-[Secure プロダクト方向性ページ - 1年計画](https://about.gitlab.com/direction/application_security_testing/#1-year-plan)
+[Secure プロダクト方向性ページ - 1 年計画](https://about.gitlab.com/direction/application_security_testing/#1-year-plan)
 
 **パフォーマンス指標**
 
@@ -379,7 +379,7 @@ Dynamic Analysis Metrics の一見重複しているように見えるチャー�
 
 **プロダクト方向性へのリンク**
 
-[Software Supply Chain Security プロダクト方向性ページ - 1年計画](https://about.gitlab.com/direction/software_supply_chain_security/#1-year-plan)
+[Software Supply Chain Security プロダクト方向性ページ - 1 年計画](https://about.gitlab.com/direction/software_supply_chain_security/#1-year-plan)
 
 **パフォーマンス指標**
 
@@ -421,11 +421,11 @@ GitLab.com の Postgres Replica データには、現在 Enablement メトリク
 
 - common_mart.mart_ping_instance_metric_all_time - 全期間タイムフレームメトリクス用
 
-- common_mart.mart_ping_instance_metric_7_day - 7日タイムフレームメトリクス用
+- common_mart.mart_ping_instance_metric_7_day - 7 日タイムフレームメトリクス用
 
-- common_mart.mart_ping_instance_metric_28_day - 28日タイムフレームメトリクス用
+- common_mart.mart_ping_instance_metric_28_day - 28 日タイムフレームメトリクス用
 
-- common_mart.mart_ping_instance_metric_monthly - 全期間、7日、28日タイムフレームメトリクス（月の最後の ping にプレフィルタされたもの、none または null タイムフレームメトリクスは含まれない）用
+- common_mart.mart_ping_instance_metric_monthly - 全期間、7 日、28 日タイムフレームメトリクス（月の最後の ping にプレフィルタされたもの、none または null タイムフレームメトリクスは含まれない）用
 
 - workpace_product.wk_fct_ping_instance_metric_none - none タイムフレームのメトリクス用
 
