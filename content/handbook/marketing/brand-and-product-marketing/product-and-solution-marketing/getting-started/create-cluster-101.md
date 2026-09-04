@@ -25,13 +25,13 @@ Google Cloud Platform アカウントが必要です。GitLab の従業員はこ
 | --- | --- |
 | 1. ブラウザを開いて [Google Kubernetes Engine](https://console.cloud.google.com/kubernetes) にログインします |  |
 | 2. GitLab の従業員 - GitLab メールアドレスでサインインします。  |  |
-| 3. GitLab の従業員は gitlab-demos プロジェクトを使用してください。それ以外の方は、作業用のプロジェクトを選択または作成してください。| ![gitlab demos](/images/workshop/k8s/2_gitlab_demos.png)|
-| 4. サイドバーの COMPUTE 配下から Kubernetes Engine -> Clusters を選択します。|  ![kubernetes engine](/images/workshop/k8s/3_clusters.png)|
-| 5. CREATE CLUSTER をクリックします。 | ![kubernetes engine](/images/workshop/k8s/4_create_cluster.png)|
-| 6. クラスター名を設定します。<br> GitLab Product and Solution Marketing の従業員は、命名規則は sm_\<yourname\>、Product Marketing サブグループの場合は pmm_\<yourname\>、Technical Marketing グループの場合は tmm_\<yourname\> です。全体の名前は短く（最大 16 文字）保ってください。<br>ノード数を 3 に設定し、追加設定のためページを展開します。| ![kubernetes engine](/images/workshop/k8s/5_name_pool.png)|
-| 7. GitLab の従業員は Networking で 'demonet' ネットワークを選択してください。それ以外の方はネットワークを選択または作成してください。  | ![kubernetes engine](/images/workshop/k8s/6_cluster_network.png)|
-| 8. レガシー認可を有効にします。 | ![kubernetes engine](/images/workshop/k8s/7_legacy_auth.png)|
-| 9. クラスター作成の準備が整いました。Create をクリックします。 | ![kubernetes engine](/images/workshop/k8s/8_create.png)|
-| 10. クラスターの作成には数分かかります。作成されると、リストに作成したばかりのクラスターが表示されます。| ![kubernetes engine](/images/workshop/k8s/9_cluster_list.png)|
+| 3. GitLab の従業員は gitlab-demos プロジェクトを使用してください。それ以外の方は、作業用のプロジェクトを選択または作成してください。| ![GitLab デモ](/images/workshop/k8s/2_gitlab_demos.png)|
+| 4. サイドバーの COMPUTE 配下から Kubernetes Engine -> Clusters を選択します。|  ![Kubernetes Engine](/images/workshop/k8s/3_clusters.png)|
+| 5. CREATE CLUSTER をクリックします。 | ![Kubernetes Engine](/images/workshop/k8s/4_create_cluster.png)|
+| 6. クラスター名を設定します。<br> GitLab Product and Solution Marketing の従業員は、命名規則は sm_\<yourname\>、Product Marketing サブグループの場合は pmm_\<yourname\>、Technical Marketing グループの場合は tmm_\<yourname\> です。全体の名前は短く（最大 16 文字）保ってください。<br>ノード数を 3 に設定し、追加設定のためページを展開します。| ![Kubernetes Engine](/images/workshop/k8s/5_name_pool.png)|
+| 7. GitLab の従業員は Networking で 'demonet' ネットワークを選択してください。それ以外の方はネットワークを選択または作成してください。  | ![Kubernetes Engine](/images/workshop/k8s/6_cluster_network.png)|
+| 8. レガシー認可を有効にします。 | ![Kubernetes Engine](/images/workshop/k8s/7_legacy_auth.png)|
+| 9. クラスター作成の準備が整いました。Create をクリックします。 | ![Kubernetes Engine](/images/workshop/k8s/8_create.png)|
+| 10. クラスターの作成には数分かかります。作成されると、リストに作成したばかりのクラスターが表示されます。| ![Kubernetes Engine](/images/workshop/k8s/9_cluster_list.png)|
 | 11. これで、GitLab プロジェクトを Kubernetes と連携させ、Auto DevOps 機能を使う準備ができました。 |  |
-| 12. クリーンアップ手順 PLACEHOLDER |  |
+| 12. クリーンアップ手順（仮） |  |

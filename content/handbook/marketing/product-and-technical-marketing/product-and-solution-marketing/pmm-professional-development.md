@@ -60,9 +60,9 @@ lastmod: "2026-08-27T23:30:57+02:00"
 
 1. アジャイル（スクラム、カンバンなど）
    1. **動画と Web ページ**
-      - [GitLab Agile Delivery](https://about.gitlab.com/solutions/agile-delivery/)
-      - [Scrum.org - What is Scrum](https://www.scrum.org/learning-series/what-is-scrum)
-      - [What is Kanban](https://www.nimblework.com/kanban/what-is-kanban/)
+      - [GitLab アジャイルデリバリー](https://about.gitlab.com/solutions/agile-delivery/)
+      - [Scrum.org - Scrum とは](https://www.scrum.org/learning-series/what-is-scrum)
+      - [Kanban とは](https://www.nimblework.com/kanban/what-is-kanban/)
    1. **コース:**
 
    1. **カンファレンス:**
