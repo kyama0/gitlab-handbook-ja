@@ -161,7 +161,7 @@ GitLab には bias for action がありますが、Blog チームも同様です
 
 ## ブログを起草する際の考慮事項
 
-### ブログ執筆者向けの Diversity, Inclusion, and Belonging（DIB）チェックリスト
+### ブログ執筆者向けの Diversity, Inclusion, and Belonging（DIB）チェックリスト {#diversity-inclusion-and-belonging-dib-checklist-for-blog-writers}
 
 私たちのブログコンテンツが、diversity、inclusion、belonging という私たちの会社の価値観を表現していることが重要です。これらの点のすべてがあなたのブログ投稿に関連するわけではありませんが、執筆プロセス全体を通じて意識すべき重要な価値観とプラクティスです。ブログ編集チームはこれらを確認しようとしますが、すべてのコンテンツがこれらの価値観とプラクティスを念頭に置いて作成される方が良いです。ご質問があれば、私たちや [DIB チーム](/handbook/company/culture/inclusion/)のメンバーをタグ付けしてください!
 

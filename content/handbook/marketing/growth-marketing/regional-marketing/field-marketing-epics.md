@@ -142,7 +142,7 @@ lastmod: "2026-08-27T23:30:57+02:00"
 /confidential
 ```
 
-## コンテンツシンジケーション
+## コンテンツシンジケーション {#content-syndication}
 
 ```markdown
 <!-- Name this epic: Name of Content - Launch - End Date of Content -->
