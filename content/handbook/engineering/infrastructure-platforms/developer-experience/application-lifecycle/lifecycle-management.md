@@ -1,5 +1,5 @@
 ---
-title: "Developer Experience: Application Lifecycle / ライフサイクル管理"
+title: "Developer Experience: Application Lifecycle / Lifecycle Management"
 description: "GitLab Helm chart、platform charts、GitLab Operator、Bridge など、GitLab デプロイのライフサイクルツールを担当します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/application-lifecycle/lifecycle-management/"
 upstream_sha: "bc76a1a59f8b471f304263e712307581bdc7d128"

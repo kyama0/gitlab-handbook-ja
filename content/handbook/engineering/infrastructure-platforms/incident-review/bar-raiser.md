@@ -1,6 +1,6 @@
 ---
-title: "インシデントレビュー Bar Raiser"
-description: "インシデントレビュー Bar Raiser になることの意味、レビューの割り当て方法、Bar Raiser になる方法を説明します。"
+title: "Incident Review Bar Raiser"
+description: "Incident Review Bar Raiser になることの意味、レビューの割り当て方法、Bar Raiser になる方法を説明します。"
 upstream_path: "/handbook/engineering/infrastructure-platforms/incident-review/bar-raiser/"
 upstream_sha: "bc76a1a59f8b471f304263e712307581bdc7d128"
 lastmod: "2026-08-20T12:31:43-06:00"
@@ -18,7 +18,7 @@ stale: false
 
 Bar Raiser パネルは、すべてのインシデントレビューをレビューします。**レビューを終了するには、Bar Raiser の承認が必要です。**
 
-Bar Raiser は、メンテナーがコードの基準を維持するのと同じように、インシデントレビューの高い基準を維持します。このロールの概要は、[インシデントレビューの Bar Raiser](/handbook/engineering/infrastructure-platforms/incident-review/#bar-raiser)セクションにあります。
+Bar Raiser は、メンテナーがコードの基準を維持するのと同じように、インシデントレビューの高い基準を維持します。このロールの概要は、[Incident Review Bar Raiser](/handbook/engineering/infrastructure-platforms/incident-review/#bar-raiser)セクションにあります。
 
 ## Bar Raiser ではないもの {#what-a-bar-raiser-is-not}
 

@@ -1,6 +1,6 @@
 ---
 owning-stage: "~devops::tenant scale"
-title: 'Organizations ADR 010: Organization メンテナンスモード'
+title: 'Organizations ADR 010: Organization Maintenance Mode'
 description: 'Cell をまたぐ移行や分離有効化の際に使用される Organization 単位のメンテナンス状態を導入し、ソース Cell 上のすべてのリクエストをブロックします。コントローラ、REST API、GraphQL、GitAccess、コンテナレジストリ、LFS、Sidekiq の各レイヤで強制されます。'
 creation-date: "2026-04-28"
 authors: [ "@abdwdd" ]
@@ -17,13 +17,13 @@ lastmod: "2026-08-18T14:42:11+05:30"
 
 Organization をある Cell から別の Cell に移行する際（[Organization データ移行ブループリント](../../organization-data-migration/_index.md)を参照）、ソース Cell から宛先 Cell へデータがコピーされる期間が存在します。データの一貫性を保証するため、ソース Organization はカットオーバーの開始時点で書き込みの受け入れを停止しなければなりません。HTTP メソッドは「書き込みなし」の信頼できる代替指標ではありません。一部の `GET` は [DB 書き込みをトリガーしたり Sidekiq ジョブをエンキューしたりします](https://gitlab.com/gitlab-org/gitlab/-/issues/586370)（ログイン時の監査イベント、遅延バックフィル）。そのため最初のイテレーションでは、フリーズによって読み取りを含む、その Organization への**すべての**リクエストをブロックします。将来のイテレーションでは、完全または部分的な読み取りを許可する可能性があります。これについては後で決定します。
 
-Cohort B の基準（[Cohort B の基準](../../organization-data-migration/cohorts/criteria_cohort_b.md)）では、お客様が「移行中に Organization が完全に利用できなくなる短時間のメンテナンスウィンドウ」を許容することを明示的に求めています。現在 GitLab には**インスタンス全体**のメンテナンスモード（[メンテナンスモード管理ガイド](https://gitlab.com/help/administration/maintenance_mode/_index)）しかなく、これは粒度が粗すぎます。ソース Cell 全体をメンテナンスにすると、その Cell を共有している他のすべての Organization もブロックされてしまいます。
+Cohort B の基準（[Cohort B の基準](../../organization-data-migration/cohorts/criteria_cohort_b.md)）では、お客様が「移行中に Organization が完全に利用できなくなる短時間のメンテナンスウィンドウ」を許容することを明示的に求めています。現在 GitLab には**インスタンス全体**の Maintenance Mode（[Maintenance Mode 管理ガイド](https://gitlab.com/help/administration/maintenance_mode/_index)）しかなく、これは粒度が粗すぎます。ソース Cell 全体をメンテナンスにすると、その Cell を共有している他のすべての Organization もブロックされてしまいます。
 
 私たちが必要とするのは、**単一の Organization** にスコープされた仕組みであり、以下を満たすものです:
 
 - ソース Cell 上で、影響を受ける Organization に限ってすべてのリクエストをブロックする。
 - 同じ Cell 上の他のすべての Organization は完全に稼働した状態のままにする。
-- Organization へのリクエストを処理するすべてのレイヤ（コントローラ、REST API、GraphQL、Git アクセス、コンテナレジストリ、LFS、Sidekiq ジョブ、内部サービス）で一貫して強制する。
+- Organization へのリクエストを処理するすべてのレイヤ（コントローラ、REST API、GraphQL、Git アクセス、Container Registry、LFS、Sidekiq ジョブ、内部サービス）で一貫して強制する。
 - 観測可能で、監査可能で、元に戻せる。
 
 ### 関連する作業 {#related-work}
@@ -37,7 +37,7 @@ Cohort B の基準（[Cohort B の基準](../../organization-data-migration/coho
 
 ## 決定 {#decision}
 
-私たちは **Organization メンテナンスモード**を導入します。これは Organization 単位の状態であり、`Organizations::Organization` 上のファーストクラスの遷移としてモデル化され、アプリケーション内のすべてのリクエストサーフェスで一貫して強制されます。状態が `maintenance_initialization` または `maintenance` の間、その Organization が所有するリソースへのすべてのリクエストが拒否されます。一部の読み取りパスが副作用として書き込みを実行するため、読み取りも含まれます。将来のイテレーションでは、完全または部分的な読み取りを許可する可能性があります。これについては後で決定します。
+私たちは **Organization Maintenance Mode** を導入します。これは Organization 単位の状態であり、`Organizations::Organization` 上のファーストクラスの遷移としてモデル化され、アプリケーション内のすべてのリクエストサーフェスで一貫して強制されます。状態が `maintenance_initialization` または `maintenance` の間、その Organization が所有するリソースへのすべてのリクエストが拒否されます。一部の読み取りパスが副作用として書き込みを実行するため、読み取りも含まれます。将来のイテレーションでは、完全または部分的な読み取りを許可する可能性があります。これについては後で決定します。
 
 この状態には監査と可観測性のために記録される `reason`（migration、isolation、incident、billing、legal）が伴います。理由はメンテナンスページやエラーレスポンスでエンドユーザーに公開されず、ユーザーに見えるコピーは汎用的なものになります（*ユーザーに見える挙動*を参照）。
 
@@ -47,7 +47,7 @@ Cohort B の基準（[Cohort B の基準](../../organization-data-migration/coho
 
 メンテナンスは、既存の `Organizations::Stateful` concern 上の新しい状態のペアとして追加されます。この concern はすでに Organization のライフサイクル（`unconfirmed`、`confirmed`、`active`、`deletion_scheduled`、`deletion_in_progress`）を駆動しています:
 
-- `maintenance_initialization` — Organization が定常状態の `maintenance` に達する前に入る中間状態です。新規のリクエストはすべての強制レイヤ（コントローラ、REST、GraphQL、Git アクセス、コンテナレジストリ、LFS）ですでにブロックされていますが、進行中の Organization スコープの Sidekiq ジョブは引き続き完了が許可され、進行中の CI ジョブはキャンセルされており、カットオーバーの準備状態チェックが評価中の状態です。Organization はメンテナンスに*入ろうとしている*ものの、まだドレインしていない状態です。
+- `maintenance_initialization` — Organization が定常状態の `maintenance` に達する前に入る中間状態です。新規のリクエストはすべての強制レイヤ（コントローラ、REST、GraphQL、Git アクセス、Container Registry、LFS）ですでにブロックされていますが、進行中の Organization スコープの Sidekiq ジョブは引き続き完了が許可され、進行中の CI ジョブはキャンセルされており、カットオーバーの準備状態チェックが評価中の状態です。Organization はメンテナンスに*入ろうとしている*ものの、まだドレインしていない状態です。
 - `maintenance` — 定常状態です。下記の*カットオーバーの準備状態*の準備状態コントラクトが、必要な確認ウィンドウの間ゼロに収束した後にのみ入ります。
 
 遷移は `active → maintenance_initialization → maintenance` および逆方向（中止／回復経路としての `maintenance → active`、フリーズが完了する前にオペレータがカットオーバーをキャンセルできるように `maintenance_initialization → active` 遷移も存在）に制限されます。新しいイベントは既存の `after_transition :log_transition` 監査フックと、[`app/models/concerns/organizations/stateful.rb`](https://gitlab.com/gitlab-org/gitlab/-/blob/master/app/models/concerns/organizations/stateful.rb)がすでにインクルードしている `Gitlab::TenantContainerLifecycle::Stateful::TransitionValidation` バリデータを再利用するため、遷移ログとバリデーションは再実装ではなく継承されます。任意の `deletion_*` 状態や、確認前の状態から `maintenance_initialization` または `maintenance` に入ることは許可されません。これらの状態への出入りはすべて、既存の遷移フックによって監査されます。
@@ -65,11 +65,11 @@ Cohort B の基準（[Cohort B の基準](../../organization-data-migration/coho
 - インシデント、請求、リーガルホールドのための **Admin / SRE 制御**。Rails コンソールに加えて、インスタンスの Admin エリアと Rake タスクから利用できます。
 - 移行、分離、インシデント対応中のオペレータ起点の遷移のための **Rails コンソール**。
 
-**デフォルト Organization は Organization メンテナンスモードから除外**されます。デフォルト Organization はインスタンスレベルのリソースと Self-Managed/Dedicated デプロイメントをホストしており（[ADR 007](007_self_managed_dedicated_single_organization.md)を参照）、これをフリーズすることはインスタンス全体をオフラインにすることに等しくなります。Admin エリアはこれに対するメンテナンストグルを公開せず、内部の遷移ガードがその操作を拒否します。SM/Dedicated → dotCom 移行のケースでは、Organization メンテナンスモードではなく、インスタンス全体のメンテナンスモードが正しいツールです。
+**デフォルト Organization は Organization Maintenance Mode から除外**されます。デフォルト Organization はインスタンスレベルのリソースと Self-Managed/Dedicated デプロイメントをホストしており（[ADR 007](007_self_managed_dedicated_single_organization.md)を参照）、これをフリーズすることはインスタンス全体をオフラインにすることに等しくなります。Admin エリアはこれに対するメンテナンストグルを公開せず、内部の遷移ガードがその操作を拒否します。SM/Dedicated → dotCom 移行のケースでは、Organization Maintenance Mode ではなく、インスタンス全体の Maintenance Mode が正しいツールです。
 
 ### カットオーバーの準備状態 {#cutover-readiness}
 
-Cell 間の Organization 移行では、データのカットオーバー前の*ドレイン*フェーズとして Organization メンテナンスモードを使用します。Redis は Cell 単位であり、宛先 Cell には**コピーされない**ため、カットオーバー時にソース Cell の Redis に滞留している Sidekiq ジョブはすべて失われます。したがって Organization メンテナンスモードは、カットオーバーが進行する前に、Organization に対してソース Cell をチェック可能でインフライト 0 の状態に持っていかなければなりません。
+Cell 間の Organization 移行では、データのカットオーバー前の*ドレイン*フェーズとして Organization Maintenance Mode を使用します。Redis は Cell 単位であり、宛先 Cell には**コピーされない**ため、カットオーバー時にソース Cell の Redis に滞留している Sidekiq ジョブはすべて失われます。したがって Organization Maintenance Mode は、カットオーバーが進行する前に、Organization に対してソース Cell をチェック可能でインフライト 0 の状態に持っていかなければなりません。
 
 準備状態のコントラクトは次のとおりです: カットオーバーは、ソース Cell 上の Organization について以下の**すべて**が真である場合にのみ進行します:
 
@@ -100,7 +100,7 @@ Cell 間の Organization 移行では、データのカットオーバー前の*
 - **REST API（Grape）。** コントローラと同じ理由により、現在の Organization がメンテナンス中の場合は、`GET`/`HEAD` を含むすべてのリクエストが短絡されます。
 - **GraphQL。** クエリとミューテーションの両方が拒否されます。クエリは書き込みの副作用を伴うリゾルバを呼び出せるため、例外ではありません。チェックはリゾルバの実行前に走るので、バッチ化されたリクエストで部分的な状態が書き込まれることはありません。
 - **Git アクセス（`Gitlab::GitAccess`）。** pull、clone（`git-upload-pack`）、push（`git-receive-pack`）はすべて拒否されます。HTTP と SSH の両方が `GitAccess` を通るためカバーされます。Wiki、スニペット、design リポジトリも同じルールに従います。
-- **コンテナレジストリ。** `pull`、`push`、`delete`、`*` はすべて拒否されます。
+- **Container Registry。** `pull`、`push`、`delete`、`*` はすべて拒否されます。
 - **Git LFS。** ダウンロード、アップロード、ロック、アンロック、verify はすべて拒否されます。
 - **Sidekiq。** Organization スコープのワーカーはドレインし、cron ワーカーはメンテナンス中の Organization をスキップします。理由については下記の *Sidekiq ジョブ* を参照してください。これは他のサーフェスとアーキテクチャ的に異なります。
 - **トークン、自動化、インテグレーション、Webhook。** パーソナルアクセストークン、グループ/プロジェクトアクセストークン、デプロイトークン、CI ジョブトークン、インバウンド Webhook はすべてコントローラ / Grape スタックを通り、上記のルールでカバーされます。「信頼できるインテグレーション」のための特別なバイパスはありません。書き込みによってトリガーされるアウトバウンド Webhook は、起点となる書き込みがブロックされるため、フリーズ中には関係ありません。
@@ -173,7 +173,7 @@ BBM は、`Database::BatchedBackgroundMigration::SingleDatabaseWorker` concern �
 
 スキップ、キャンセル、フィルタの各イベントは、`organization_id`、`worker`（クラス）、`jid` を含む構造化ログを発行します。同じデータを *カットオーバーの準備状態* エンドポイントが読み取るので、カットオーバーの判断と定常状態の可観測性は 1 つのシグナルを共有します。
 
-この Sidekiq ポリシーは、すべてのバックグラウンドジョブの実行を継続させるインスタンス全体のメンテナンスモードよりも意図的に厳格です。
+この Sidekiq ポリシーは、すべてのバックグラウンドジョブの実行を継続させるインスタンス全体の Maintenance Mode よりも意図的に厳格です。
 
 ### CI/CD の挙動 {#cicd-behavior}
 
@@ -184,7 +184,7 @@ BBM は、`Database::BatchedBackgroundMigration::SingleDatabaseWorker` concern �
 
 ### 許可リストの原則 {#allowlist-principles}
 
-Organization メンテナンスモード中にリクエストが**許可される**のは、以下の少なくとも 1 つが真である場合です:
+Organization Maintenance Mode 中にリクエストが**許可される**のは、以下の少なくとも 1 つが真である場合です:
 
 - プラットフォームの稼働を維持するために必要な内部 API 呼び出しである。
 - 移行または分離のコントロールプレーン（DMS、Topology Service、Organization 移行 / 分離エンドポイント）の一部である。
@@ -215,18 +215,18 @@ Organization メンテナンスモード中にリクエストが**許可され�
 
 ## 帰結 {#consequences}
 
-- Organization の移行は、もはや Cell 全体（およびその結果として無関係な Organization 群）をインスタンス全体のメンテナンスモードに置く必要はありません。
+- Organization の移行は、もはや Cell 全体（およびその結果として無関係な Organization 群）をインスタンス全体の Maintenance Mode に置く必要はありません。
 - 同じ仕組みが分離有効化、インシデントスコーピング、請求/リーガルホールドをカバーし、ワンオフトグルの増殖を回避できます。
-- 強制は多くのレイヤ（コントローラ、Grape、GraphQL、GitAccess、Sidekiq）にわたって複製されます。これは意図的なもの（多層防御）ですが、同期を保ち続けなければならないサーフェス領域が増えます。各新規エントリポイントは、Organization メンテナンスモードを尊重するかどうかを明示的に宣言しなければなりません。
+- 強制は多くのレイヤ（コントローラ、Grape、GraphQL、GitAccess、Sidekiq）にわたって複製されます。これは意図的なもの（多層防御）ですが、同期を保ち続けなければならないサーフェス領域が増えます。各新規エントリポイントは、Organization Maintenance Mode を尊重するかどうかを明示的に宣言しなければなりません。
 - Cell 全体の cron ワーカーは、Organization 所有のデータを反復する際にアクティブな Organization フィルタを採用しなければならず、メンテナンス中の Organization が除外されることを表明するテストを持たなければなりません。これがないと、ロールアウト後に追加された新しい cron ワーカーが、まさに移動されようとしているデータをサイレントに変更してしまいます。
 - 上記の強制レイヤをバイパスする任意のコードパス（例: マイグレーション内の生 SQL `UPDATE` や、コントローラ、Grape、GraphQL、`Gitlab::GitAccess` を通らない直接の ActiveRecord 書き込み）は、このイテレーションでは**カバーされません**。将来のイテレーションでは、多層防御としてサービスレイヤまたはモデルレイヤのガードが追加される可能性があります。
-- インスタンス全体のメンテナンスモード（`Gitlab.maintenance_mode?`）は引き続き利用可能で、直交します。両方がアクティブな場合は、より制限的な状態が勝ちます。Organization メンテナンスモードは、インスタンスメンテナンスチェックをバイパスするコードパスを導入してはなりません。
-- Self-Managed および Dedicated インスタンス（インスタンスごとに単一 Organization、[ADR 007](007_self_managed_dedicated_single_organization.md)を参照）は、追加実装なしでこの仕組みを利用できますが、実際には Organization 単位の分離による利点がないため、引き続きインスタンス全体のメンテナンスモードを使用すべきです。そこで休止状態を保つための永続的なトグルは不要です。これらのトポロジ上の単一 Organization は `active` 以外へ遷移しないため、強制コードは作動しません。
+- インスタンス全体の Maintenance Mode（`Gitlab.maintenance_mode?`）は引き続き利用可能で、直交します。両方がアクティブな場合は、より制限的な状態が勝ちます。Organization Maintenance Mode は、インスタンスメンテナンスチェックをバイパスするコードパスを導入してはなりません。
+- Self-Managed および Dedicated インスタンス（インスタンスごとに単一 Organization、[ADR 007](007_self_managed_dedicated_single_organization.md)を参照）は、追加実装なしでこの仕組みを利用できますが、実際には Organization 単位の分離による利点がないため、引き続きインスタンス全体の Maintenance Mode を使用すべきです。そこで休止状態を保つための永続的なトグルは不要です。これらのトポロジ上の単一 Organization は `active` 以外へ遷移しないため、強制コードは作動しません。
 - フリーズ中は書き込みとともに読み取りもブロックされるため、ユーザーには Organization が完全に利用できない状態として見えます。汎用的なメンテナンスページと構造化された API エラーによって混乱を緩和します。[Cohort B の基準](../../organization-data-migration/cohorts/criteria_cohort_b.md)では、お客様が移行中の短時間の完全な利用不能を許容することを求めています。メンテナンスウィンドウに関するお客様向けメッセージは、引き続き合意し、製品ドキュメントに反映する必要があります。
 
 ## 検討した代替案 {#alternatives-considered}
 
-### 1. ソース Cell でインスタンス全体のメンテナンスモードを再利用する {#1-reuse-instance-wide-maintenance-mode-on-the-source-cell}
+### 1. ソース Cell でインスタンス全体の Maintenance Mode を再利用する {#1-reuse-instance-wide-maintenance-mode-on-the-source-cell}
 
 ソース Cell で `Gitlab.maintenance_mode?` をトグルすれば書き込みはブロックされますが、その Cell 上の**すべての** Organization に対してそれらをブロックします。Cell が複数の Organization をホストすると、これは受け入れがたいものとなります。
 
@@ -250,7 +250,7 @@ Organization メンテナンスモード中にリクエストが**許可され�
 
 ### 5. Rack / パスベースのミドルウェアによる強制 {#5-rack--path-based-middleware-enforcement}
 
-URL を検査し、パスパターンに基づいて変更の可能性のあるエンドポイントをブロックする Rack または ingress ミドルウェアとして Organization メンテナンスモードを実装することは脆弱です: GraphQL だけでもパス/動詞のマッチングは不十分です（1 つのエンドポイントがクエリとミューテーションの両方を提供し、スコープ内の Organization は潜在的にバッチ化されたリクエストボディを解析した後にのみわかります）。代わりに使用するコントローラ / Grape / GraphQL / GitAccess アプローチについては *どこで強制されるか* を参照してください。
+URL を検査し、パスパターンに基づいて変更の可能性のあるエンドポイントをブロックする Rack または ingress ミドルウェアとして Organization Maintenance Mode を実装することは脆弱です: GraphQL だけでもパス/動詞のマッチングは不十分です（1 つのエンドポイントがクエリとミューテーションの両方を提供し、スコープ内の Organization は潜在的にバッチ化されたリクエストボディを解析した後にのみわかります）。代わりに使用するコントローラ / Grape / GraphQL / GitAccess アプローチについては *どこで強制されるか* を参照してください。
 
 ### 6. Organization 状態を持たないトップレベルグループ単位のメンテナンス {#6-top-level-group-maintenance-without-an-organization-state}
 
@@ -280,7 +280,7 @@ Organization に解決されるすべてのモデルに `before_create`、`befor
 - Rake タスクや Rails コンソールからの直接 `INSERT`/`UPDATE`。
 - Arel や `exec_query` 経由のあらゆるもの。
 
-コードベース内で最も一般的なバルク書き込みイディオムによってバイパスされるチョークポイントは、チョークポイントではありません。コールバックは、この ADR がカバーしようとしているものの大部分を占める非データベース書き込みサーフェス（Sidekiq エンキュー、Git push、コンテナレジストリ、LFS）でも役に立ちません。
+コードベース内で最も一般的なバルク書き込みイディオムによってバイパスされるチョークポイントは、チョークポイントではありません。コールバックは、この ADR がカバーしようとしているものの大部分を占める非データベース書き込みサーフェス（Sidekiq エンキュー、Git push、Container Registry、LFS）でも役に立ちません。
 
 データベースレイヤのトリガー（代替案 #3）はこれらすべての下に位置し、最終ラインの安全網に正しい形状を持ちます。
 

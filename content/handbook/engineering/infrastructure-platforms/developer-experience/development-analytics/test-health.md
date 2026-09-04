@@ -1,5 +1,5 @@
 ---
-title: "テスト健全性"
+title: "Test Health"
 description: "Flaky、Quarantine、Slow の各ピラーにわたるグループ別のテストスイート健全性スコア"
 upstream_path: "/handbook/engineering/infrastructure-platforms/developer-experience/development-analytics/test-health/"
 upstream_sha: "bc76a1a59f8b471f304263e712307581bdc7d128"
