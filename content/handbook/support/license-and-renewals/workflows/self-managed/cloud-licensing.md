@@ -158,7 +158,7 @@ Offline と Legacy のどちらを提供すべきかは、顧客の具体的な�
 
 この回避策の詳細なコンテキストについては、[このコメントスレッド](https://gitlab.com/gitlab-org/fulfillment-meta/-/issues/610#note_1052615060) を参照してください。
 
-#### 4. 購入が web-direct かどうかをどう確認しますか？
+#### 4. 購入が web-direct かどうかをどう確認しますか？ {#4-how-do-i-tell-if-a-purchase-was-web-direct}
 
 (1) 顧客の Zuora アカウントにある特定の購入の請求書（<https://www.zuora.com/apps/CustomerAccount.do?method=view&id=><ACCOUNT_ID>）または (2) サブスクリプションの Change History（<https://www.zuora.com/platform/subscriptions/><SUBSCRIPTION_ID>）の `Created By` 値を確認します。
 
