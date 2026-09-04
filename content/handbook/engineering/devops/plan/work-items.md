@@ -1,11 +1,11 @@
 ---
 title: Plan:Work Items チーム
 upstream_path: /handbook/engineering/devops/plan/work-items/
-upstream_sha: e6de02eba910babdd302a4f920edec669cff51cf
-translated_at: "2026-08-15T07:00:16+09:00"
+upstream_sha: bc76a1a59f8b471f304263e712307581bdc7d128
+translated_at: "2026-09-04T20:38:00+09:00"
 translator: claude
 stale: false
-lastmod: "2026-08-14T14:39:01+02:00"
+lastmod: "2026-09-04T13:17:59+02:00"
 ---
 
 ## Plan:Work Items チーム
@@ -20,7 +20,7 @@ Plan:Work Items チームは [Plan ステージ](/handbook/engineering/devops/pl
 
 ### 安定したカウンターパート
 
-{{% engineering/stable-counterparts manager-role="Engineering Manager(.*)Plan:Work Items" role="(.*)Plan:Work Items$|Product Manager(.*)Plan Stage|Security(.*)Plan|Principal(.*)Plan$" %}}
+{{% engineering/stable-counterparts manager-role="Engineering Manager(.*)Plan:Work Items" role="Plan:Work Items|Product Manager(.*)Plan Stage|Security(.*)Plan|Principal(.*)Plan$" %}}
 
 ### 採用チャート
 

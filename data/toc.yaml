@@ -88,16 +88,14 @@
   url: /handbook/marketing/
   svg: '<svg fill="currentColor" height="32" fill-opacity="0" viewBox="0 0 32 33" class="slp-icon slp-icon slp-icon--size-lg slp-icon--color-color-text-300 slp-mr-8" style="" role="img" aria-hidden="true" data-icon-name="" data-v-c3411281="" data-v-6769a1a0=""><g clip-path="url(#clip0_7608_14965)"><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.27982" d="M4.97144 17.0143C5.80529 19.2113 7.31272 21.0883 9.27801 22.3767C9.56103 22.5663 9.7927 22.823 9.95237 23.1239C10.112 23.4248 10.1947 23.7606 10.1931 24.1013V27.144C10.1914 28.521 10.7363 29.8423 11.7082 30.8178C12.68 31.7933 13.9994 32.3431 15.3763 32.3465V32.3465C16.0595 32.3469 16.736 32.2126 17.3672 31.9512C17.9984 31.6899 18.5719 31.3067 19.0548 30.8234C19.5377 30.3402 19.9206 29.7665 20.1816 29.1352C20.4425 28.5038 20.5764 27.8272 20.5756 27.144V24.1013C20.5744 23.6371 20.73 23.1861 21.0171 22.8214"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.27982" d="M24.7044 7.04123C23.6472 5.41078 22.1807 4.08619 20.4515 3.19968C18.7223 2.31318 16.7908 1.89578 14.8498 1.98915C13.8133 2.03543 12.7888 2.22936 11.8071 2.56507"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.27982" d="M10.1765 24.1012H20.575"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.27982" d="M9.39221 26.8496H21.3585"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.27982" d="M10.0903 29.5979H20.8375"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.27982" d="M11.6615 13.2099C10.4499 12.1377 8.88795 11.5458 7.27009 11.5458C5.65224 11.5458 4.09028 12.1377 2.87872 13.2099"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.27982" d="M7.26612 9.2461C8.33708 9.2461 9.20527 8.37792 9.20527 7.30695C9.20527 6.23599 8.33708 5.3678 7.26612 5.3678C6.19515 5.3678 5.32697 6.23599 5.32697 7.30695C5.32697 8.37792 6.19515 9.2461 7.26612 9.2461Z"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.27982" d="M7.28982 14.9312C10.9618 14.9312 13.9385 11.9545 13.9385 8.28255C13.9385 4.61061 10.9618 1.63391 7.28982 1.63391C3.61787 1.63391 0.641174 4.61061 0.641174 8.28255C0.641174 11.9545 3.61787 14.9312 7.28982 14.9312Z"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.27982" d="M29.076 19.2284C27.8637 18.1526 26.2991 17.5586 24.6783 17.5586C23.0575 17.5586 21.4929 18.1526 20.2805 19.2284"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.27982" d="M24.6801 15.2069C25.751 15.2069 26.6192 14.3387 26.6192 13.2678C26.6192 12.1968 25.751 11.3286 24.6801 11.3286C23.6091 11.3286 22.7409 12.1968 22.7409 13.2678C22.7409 14.3387 23.6091 15.2069 24.6801 15.2069Z"></path><path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.27982" d="M24.7013 20.9496C28.3733 20.9496 31.35 17.9729 31.35 14.301C31.35 10.629 28.3733 7.65234 24.7013 7.65234C21.0294 7.65234 18.0527 10.629 18.0527 14.301C18.0527 17.9729 21.0294 20.9496 24.7013 20.9496Z"></path></g><defs><clipPath id="clip0_7608_14965"><rect width="31.9954" height="31.9954" fill="white" transform="translate(0 0.990845)"></rect></clipPath></defs></svg>'
   links:
-    - name: ブランド & プロダクトマーケティング
-      url: /handbook/marketing/brand-and-product-marketing/
-    - name: インテグレーテッドマーケティング
-      url: /handbook/marketing/integrated-marketing/
-    - name: マーケティングオペレーション・アナリティクス
-      url: /handbook/marketing/marketing-strategy-and-platforms/
-    - name: Developer Relations
-      url: /handbook/marketing/developer-relations/
-    - name: コーポレートコミュニケーションズ
-      url: /handbook/marketing/corporate-communications/
+    - name: Brand Experience
+      url: /handbook/marketing/#brand-experience
+    - name: Corporate Communications
+      url: /handbook/marketing/#corporate-communications
+    - name: Product and Technical Marketing
+      url: /handbook/marketing/#product-and-technical-marketing
+    - name: Growth Marketing
+      url: /handbook/marketing/#growth-marketing
 
 - name: セールス
   url: /handbook/sales/

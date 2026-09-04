@@ -11562,11 +11562,11 @@
     },
     "content/handbook/engineering/devops/plan/planner-intelligence.md": {
       "path": "content/handbook/engineering/devops/plan/planner-intelligence.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T07:00:16+09:00",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:38:00+09:00",
       "model": "codex",
-      "input_hash": "019e5279d7b601af2348d3d9f71d3ef420df90ef745131e5bfba44fbe3267c6f",
-      "upstream_committed_at": "2026-08-14T14:39:01+02:00"
+      "input_hash": "955667442e8563cebe19065031bf005d496f6b0c916c29ee31912060d689bba8",
+      "upstream_committed_at": "2026-09-04T13:17:59+02:00"
     },
     "content/handbook/engineering/devops/plan/portfolio-planning/_index.md": {
       "path": "content/handbook/engineering/devops/plan/portfolio-planning/_index.md",
@@ -11594,11 +11594,11 @@
     },
     "content/handbook/engineering/devops/plan/work-items.md": {
       "path": "content/handbook/engineering/devops/plan/work-items.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T07:00:16+09:00",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:38:00+09:00",
       "model": "codex",
-      "input_hash": "2af033218e1aaedf3d68f2ce7667a3e01e581421308e9376fdb2d43d9edcfe0f",
-      "upstream_committed_at": "2026-08-14T14:39:01+02:00"
+      "input_hash": "aa9909218ad925b2b789273b60550b4f8fd66b5cd826ceeda1defa37248c9db9",
+      "upstream_committed_at": "2026-09-04T13:17:59+02:00"
     },
     "content/handbook/engineering/devops/plan/working-groups/_index.md": {
       "path": "content/handbook/engineering/devops/plan/working-groups/_index.md",
@@ -17048,14 +17048,6 @@
       "input_hash": "e6336d42bc4bd41e5312aba90d50cddad3d575d699cb640c65569d3d97c4901e",
       "upstream_committed_at": "2025-10-14T17:59:32+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/brand/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/brand/_index.md",
-      "upstream_sha": "e0d8017702cf1eae5871d425237e50751324adc6",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "75dcd4ecffaf7550920d6e5a1b15698d1d19ff5f13b6776ba4961465c8f4d752",
-      "upstream_committed_at": "2025-11-14T10:05:38-05:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/brand/brand-activation/_index.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/brand/brand-activation/_index.md",
       "upstream_sha": "e0d8017702cf1eae5871d425237e50751324adc6",
@@ -17072,14 +17064,6 @@
       "input_hash": "e598397658bb53df6986b383567aedb5f768ba33ebe6af37ff4dc4ae8e788884",
       "upstream_committed_at": "2025-10-14T17:59:32+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/brand/brand-strategy.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/brand/brand-strategy.md",
-      "upstream_sha": "e0d8017702cf1eae5871d425237e50751324adc6",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "6a0ece27326e02ad9f254c5bba34ba9713365dce92080cfabb434ae7f155543d",
-      "upstream_committed_at": "2025-10-14T17:59:32+00:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/brand/content-style-guide.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/brand/content-style-guide.md",
       "upstream_sha": "e0d8017702cf1eae5871d425237e50751324adc6",
@@ -17087,22 +17071,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "c493ef33948e1d02f33422249e951757b82c4ec93d1626d6a5692a30ed63e804",
       "upstream_committed_at": "2025-05-22T17:11:50+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/_index.md",
-      "upstream_sha": "8451bcaa23ef826bedc5422c87ee89de121dd85b",
-      "translated_at": "2026-07-14T08:37:30+09:00",
-      "model": "codex",
-      "input_hash": "09be7edc794252157d572fea7bdd1fdba27bbe6d3198292b164e0c41c6ddcf24",
-      "upstream_committed_at": "2026-07-13T17:20:59-04:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/cro-swag.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/brand/merchandise-handling/cro-swag.md",
-      "upstream_sha": "e0d8017702cf1eae5871d425237e50751324adc6",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5171442d89d3fd6fa66a625f34d54b0216fc486e542f9cb62320fedb8b4c60d7",
-      "upstream_committed_at": "2026-04-07T09:43:45+02:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/brand/naming.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/brand/naming.md",
@@ -17112,46 +17080,6 @@
       "input_hash": "f6f9b7e97f3c309f0d1f63fc4d5769f6efbc7572ad89cb693631b5e723672a65",
       "upstream_committed_at": "2025-10-14T17:59:32+00:00"
     },
-    "content/handbook/marketing/brand-and-product-marketing/content/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/content/_index.md",
-      "upstream_sha": "e0d8017702cf1eae5871d425237e50751324adc6",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "decd08aa1bc26863d2342727d1074c34295e7d70597d547c23f6b747b0b00cb9",
-      "upstream_committed_at": "2026-01-20T14:24:15-07:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/content/editorial-team.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/content/editorial-team.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "5c38b98123040f8fd42019e3f40ad1b790c3ba2b6afd73b6fc48d6265bc049c1",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/design.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/design.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T09:37:27+09:00",
-      "model": "codex",
-      "input_hash": "7d8668f2a49afd44d5f6e51d45f1d7e431f80b5bf2cc6403a8528c46d034a2ea",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/_index.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-14T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "7b88c4b7c66b54134ea9c9df3c6c6e6e213337fabe6bd604d4ca8ba80ef2750c",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/ar-briefings.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/ar-briefings.md",
-      "upstream_sha": "9bcc3fa641f3c78cb94b2ff71f5a8170ff5b412b",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "7dc9a4a8cbe3a8d422f099a7f11492649dd6d06c058f9280cf61e05eda9393fd",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
-    },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/ar-inquiry.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/ar-inquiry.md",
       "upstream_sha": "9bcc3fa641f3c78cb94b2ff71f5a8170ff5b412b",
@@ -17159,14 +17087,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "f9b3606a645ddf9fa90be13aa12fa4591627a85c3b6a4a189c93275a6285e6ea",
       "upstream_committed_at": "2024-06-27T22:14:31+00:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/forrester-tei.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/forrester-tei.md",
-      "upstream_sha": "9bcc3fa641f3c78cb94b2ff71f5a8170ff5b412b",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "dea3602c5ff55cba19d29b31274ecd34de4720553239dc991a068d45c634a12e",
-      "upstream_committed_at": "2024-11-26T00:36:40+00:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/sales-training.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/analyst-relations/sales-training.md",
@@ -17191,14 +17111,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "f51bcab2c75b33a9b85379aa8016371c9265c18794a8c1f95f7df20b445b7a4a",
       "upstream_committed_at": "2025-11-30T11:31:48-08:00"
-    },
-    "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/_index.md": {
-      "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/customer-advocacy/_index.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T06:31:06+09:00",
-      "model": "codex",
-      "input_hash": "7fc1398b8fd330a89f1b86e5c532265ba5f3baaa18e01776cc15609b849e4058",
-      "upstream_committed_at": "2026-08-14T18:11:36+00:00"
     },
     "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/cicd-deep.md": {
       "path": "content/handbook/marketing/brand-and-product-marketing/product-and-solution-marketing/demo/cicd-deep.md",
@@ -17591,46 +17503,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "9963790d7b60022edcbf2578b2f638f23cefaaed5da059337249a9bf23e0ec5b",
       "upstream_committed_at": "2024-07-29T14:59:05-05:00"
-    },
-    "content/handbook/marketing/channel-marketing/_index.md": {
-      "path": "content/handbook/marketing/channel-marketing/_index.md",
-      "upstream_sha": "877082e5cd4baeabe3d6e802b3b4b1efdb6573f1",
-      "translated_at": "2026-05-23T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "251b7725066911a124df0b1909a7e8de674d36dcbdb9a90f9a64a7855d5630c8",
-      "upstream_committed_at": "2026-05-21T16:35:14-06:00"
-    },
-    "content/handbook/marketing/channel-marketing/channel-marketing-epics/_index.md": {
-      "path": "content/handbook/marketing/channel-marketing/channel-marketing-epics/_index.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "26be4e23713c4496c61dab34942b812c0c3f9d304dc1c10e60cc8095b15435f1",
-      "upstream_committed_at": "2025-08-20T15:31:05-04:00"
-    },
-    "content/handbook/marketing/channel-marketing/channel-marketing-epics/channel-marketing-service-offerings.md": {
-      "path": "content/handbook/marketing/channel-marketing/channel-marketing-epics/channel-marketing-service-offerings.md",
-      "upstream_sha": "12455b65f7f70cf1c18488a44bbab3cff0097c8a",
-      "translated_at": "2026-04-30T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "f2375766daf37c3080b6b3234ccd8b76356f8c997e74cdb75ab226e916d56c39",
-      "upstream_committed_at": "2024-08-16T13:10:36+00:00"
-    },
-    "content/handbook/marketing/channel-marketing/hyperscalers.md": {
-      "path": "content/handbook/marketing/channel-marketing/hyperscalers.md",
-      "upstream_sha": "4253b2ab72b0791916a54411ca71a25276e128bd",
-      "translated_at": "2026-07-02T06:06:16+09:00",
-      "model": "codex",
-      "input_hash": "b3102332a70cdbf30675659b6906d3d46b947b2fa3cf455ab3705e692e07d375",
-      "upstream_committed_at": "2026-06-26T16:42:42+00:00"
-    },
-    "content/handbook/marketing/channel-marketing/mdf-operations-process.md": {
-      "path": "content/handbook/marketing/channel-marketing/mdf-operations-process.md",
-      "upstream_sha": "6a7e263deb491dffe5c490fb2d26a0cbadc431d5",
-      "translated_at": "2026-07-12T06:05:38+09:00",
-      "model": "codex",
-      "input_hash": "70b418c6b6e31e09e319b87394a9784bdf7e726062ea82f4719716bf696c6f26",
-      "upstream_committed_at": "2026-07-10T21:20:21+00:00"
     },
     "content/handbook/marketing/cmo-shadow.md": {
       "path": "content/handbook/marketing/cmo-shadow.md",
@@ -18560,14 +18432,6 @@
       "input_hash": "45f89fe2faee99877146c6b773875e29a39f8bdcbb1896fa1acccecbee6619bb",
       "upstream_committed_at": "2024-06-27T15:57:54+00:00"
     },
-    "content/handbook/marketing/field-marketing/_index.md": {
-      "path": "content/handbook/marketing/field-marketing/_index.md",
-      "upstream_sha": "197b140c5d91cf90c19d493d4723862ee691745f",
-      "translated_at": "2026-08-05T06:54:54+09:00",
-      "model": "codex",
-      "input_hash": "f23efecc00f9c6e977247238b947d491ceb34bd32f87000f92e666adc789e897",
-      "upstream_committed_at": "2026-08-04T21:32:31+00:00"
-    },
     "content/handbook/marketing/field-marketing/field-marketing-epics.md": {
       "path": "content/handbook/marketing/field-marketing/field-marketing-epics.md",
       "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
@@ -18575,22 +18439,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "653cdf92ef0412fb90f333c1d06beabcc6987669c153448e056cca4f08864c2f",
       "upstream_committed_at": "2025-09-16T22:43:31+00:00"
-    },
-    "content/handbook/marketing/field-marketing/field-marketing-owned-virtual-events.md": {
-      "path": "content/handbook/marketing/field-marketing/field-marketing-owned-virtual-events.md",
-      "upstream_sha": "82fbf0e2626c904de9d6bd562ea4359a0c7e8ab2",
-      "translated_at": "2026-07-09T09:23:13+09:00",
-      "model": "codex",
-      "input_hash": "069b08b78e5e44e121a002648dcc8d3db2dd4652cf6fdbe535ddb662df3e5466",
-      "upstream_committed_at": "2026-07-08T14:46:05-04:00"
-    },
-    "content/handbook/marketing/growth/_index.md": {
-      "path": "content/handbook/marketing/growth/_index.md",
-      "upstream_sha": "d8fb317567e8e271f91f602d97d453ad1a69a00a",
-      "translated_at": "2026-08-13T23:52:41+09:00",
-      "model": "codex",
-      "input_hash": "5d23a16fdf6c998c65684ca7026d3f2e3fd94942dc2b45ebfefd71c2891bcb2e",
-      "upstream_committed_at": "2026-08-12T10:14:59-04:00"
     },
     "content/handbook/marketing/inbound-marketing/_index.md": {
       "path": "content/handbook/marketing/inbound-marketing/_index.md",
@@ -18600,14 +18448,6 @@
       "input_hash": "1a432cac712d17f117f5377a92969e7b75a20c5ee97b7670638ecf217750d5ec",
       "upstream_committed_at": "2025-07-11T20:56:59+00:00"
     },
-    "content/handbook/marketing/inbound-marketing/search-marketing/_index.md": {
-      "path": "content/handbook/marketing/inbound-marketing/search-marketing/_index.md",
-      "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
-      "translated_at": "2026-05-01T12:25:17Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "885234675c8bc7e4ae3098188705d42c3665e8f7b890d1ed7c370fe759c8d800",
-      "upstream_committed_at": "2026-04-30T16:57:54+00:00"
-    },
     "content/handbook/marketing/inbound-marketing/search-marketing/handbook-error-mash.md": {
       "path": "content/handbook/marketing/inbound-marketing/search-marketing/handbook-error-mash.md",
       "upstream_sha": "2d678e92f3fbc59843a2973bbfa95041c6aef07f",
@@ -18615,14 +18455,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "d806cfd01360ac9417cb2940067e88feed14bbf63b4a875f9de154bd90f290ba",
       "upstream_committed_at": "2024-10-29T23:31:43+00:00"
-    },
-    "content/handbook/marketing/inbound-marketing/search-marketing/seo-content-manual.md": {
-      "path": "content/handbook/marketing/inbound-marketing/search-marketing/seo-content-manual.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T09:20:18+09:00",
-      "model": "codex",
-      "input_hash": "760ea53731eebae8b75e7ace4ff26e6c717b8f1affbe0440ab090393a8287402",
-      "upstream_committed_at": "2026-07-28T05:53:28-07:00"
     },
     "content/handbook/marketing/inbound-marketing/search-marketing/seo-strategy.md": {
       "path": "content/handbook/marketing/inbound-marketing/search-marketing/seo-strategy.md",
@@ -18640,78 +18472,6 @@
       "input_hash": "d2ae809b27fcef61a7eb06abf68f997a92ed7629756f5af542ab3c463f5bcbf0",
       "upstream_committed_at": "2026-07-28T15:04:15+01:00"
     },
-    "content/handbook/marketing/inbound-marketing/search-marketing/testing.md": {
-      "path": "content/handbook/marketing/inbound-marketing/search-marketing/testing.md",
-      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "27ad5dd38b5c203278b016aef415bc2c423eaf7b5059da0b136431c666e53511",
-      "upstream_committed_at": "2024-05-30T08:11:40+00:00"
-    },
-    "content/handbook/marketing/integrated-marketing/_index.md": {
-      "path": "content/handbook/marketing/integrated-marketing/_index.md",
-      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "be324f4dcfcc279816389b2949c53dd346cb298389a85bd3c02a34687061374c",
-      "upstream_committed_at": "2025-04-01T09:22:28+00:00"
-    },
-    "content/handbook/marketing/integrated-marketing/corporate-events.md": {
-      "path": "content/handbook/marketing/integrated-marketing/corporate-events.md",
-      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "4ed86ac51017e4ac52d6539ea813ed5f5e414830b170b3505b95febbffef44f9",
-      "upstream_committed_at": "2026-03-17T08:13:13-04:00"
-    },
-    "content/handbook/marketing/integrated-marketing/digital-strategy/_index.md": {
-      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/_index.md",
-      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "838dd1c3fc61cef6940050a2fde1de6d0b322429c4d446263a0d7bedca88819b",
-      "upstream_committed_at": "2026-03-04T12:15:15-08:00"
-    },
-    "content/handbook/marketing/integrated-marketing/digital-strategy/agency.md": {
-      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/agency.md",
-      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "9f0935a49fbb14868e861309d292b30db01600466e8be02e9de31b91bb8a99c9",
-      "upstream_committed_at": "2024-07-29T18:50:00+00:00"
-    },
-    "content/handbook/marketing/integrated-marketing/digital-strategy/digital-strategy-management/_index.md": {
-      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/digital-strategy-management/_index.md",
-      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "2133c366563afa537a148d3fed3202cf80a3e38d549623aecfac8bd222bcb32d",
-      "upstream_committed_at": "2026-02-27T10:12:54-08:00"
-    },
-    "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/_index.md": {
-      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/_index.md",
-      "upstream_sha": "2aee792005d83a7f758d3cf1573626202b05037c",
-      "translated_at": "2026-04-30T12:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b970f6814bc9ba33fc8011dd2ef4c4c539c7093a8b9df850f8b1ce6d84e93472",
-      "upstream_committed_at": "2025-03-21T17:36:09-04:00"
-    },
-    "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/admin.md": {
-      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/admin.md",
-      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
-      "translated_at": "2026-05-01T14:48:17Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "8da3873590c64f46a3a0a21129dfb0930ac0467ab4b0e8a44c7c7becf0616f42",
-      "upstream_committed_at": "2025-02-15T00:38:09+00:00"
-    },
-    "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/community-management.md": {
-      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/community-management.md",
-      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
-      "translated_at": "2026-05-01T14:48:17Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "fe690d34a54b79a7220d3c4b455902806001ada55436519f3c5f2909bb60cacc",
-      "upstream_committed_at": "2024-06-27T22:14:31+00:00"
-    },
     "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/open-source-social.md": {
       "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/open-source-social.md",
       "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
@@ -18720,14 +18480,6 @@
       "input_hash": "df0dcddc63ff278da6deadb29b91f026afe1bed468ee5416e6f88f4625c88503",
       "upstream_committed_at": "2024-11-01T18:42:22+00:00"
     },
-    "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/social-advocacy-curators.md": {
-      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/social-advocacy-curators.md",
-      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
-      "translated_at": "2026-05-01T14:48:17Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "b2a010484fcff959df5f68eb46d81d413c579282866ffc3b04255e65fdf59c00",
-      "upstream_committed_at": "2024-08-08T22:55:54+00:00"
-    },
     "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/social-reporting.md": {
       "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/social-reporting.md",
       "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
@@ -18735,14 +18487,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "ccc223bc4410b24684badb3f2b30262ab560fcb89ea46313c096e8ed8fedc57a",
       "upstream_committed_at": "2024-07-29T14:59:05-05:00"
-    },
-    "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/team-member-social-advocacy.md": {
-      "path": "content/handbook/marketing/integrated-marketing/digital-strategy/social-marketing/team-member-social-advocacy.md",
-      "upstream_sha": "45c75393c11589128fb6c8af61ce5be83a8031dd",
-      "translated_at": "2026-05-01T14:48:17Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "87ef35550ea3a1272f6ed7afd009760bda4242346ceecdf35d767721f0e785b7",
-      "upstream_committed_at": "2025-12-01T16:21:31-05:00"
     },
     "content/handbook/marketing/journeys.md": {
       "path": "content/handbook/marketing/journeys.md",
@@ -18784,22 +18528,6 @@
       "input_hash": "5e2b3ba91b67a88ca374abbf0bba0707af1c703284800b8f27765f12cd179c98",
       "upstream_committed_at": "2025-08-04T10:28:09-07:00"
     },
-    "content/handbook/marketing/localization/_index.md": {
-      "path": "content/handbook/marketing/localization/_index.md",
-      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "a1dd1ec011cbb6c35b2fb3d0a94cab9a0d4159b22c676aa982fdd36f8188a430",
-      "upstream_committed_at": "2026-04-08T09:15:01-07:00"
-    },
-    "content/handbook/marketing/localization/category_internationalization.md": {
-      "path": "content/handbook/marketing/localization/category_internationalization.md",
-      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "553f1248c091c953d7e526083944eef218cdedd5225f9b3f0730abaf2d034043",
-      "upstream_committed_at": "2025-10-14T17:59:32+00:00"
-    },
     "content/handbook/marketing/localization/engineering.md": {
       "path": "content/handbook/marketing/localization/engineering.md",
       "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
@@ -18808,14 +18536,6 @@
       "input_hash": "ec7d7c97f91cca4882e74e5ad94274d7b866d2d4dac64a205277f79d16613cce",
       "upstream_committed_at": "2026-08-13T19:19:31-04:00"
     },
-    "content/handbook/marketing/localization/localization_technology.md": {
-      "path": "content/handbook/marketing/localization/localization_technology.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T06:31:06+09:00",
-      "model": "codex",
-      "input_hash": "6ff5a9b6cc9b3b7fa632fc45964d108ba9b899a6806fc539b75ab8b60a444509",
-      "upstream_committed_at": "2026-08-13T14:09:12-04:00"
-    },
     "content/handbook/marketing/localization/marketing_localization.md": {
       "path": "content/handbook/marketing/localization/marketing_localization.md",
       "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
@@ -18823,14 +18543,6 @@
       "model": "claude-opus-4-7",
       "input_hash": "e0a2e73e4db13aa39773ae112889c1cf9158e669cac69411949c43c4cc2057a0",
       "upstream_committed_at": "2025-12-05T15:21:29+01:00"
-    },
-    "content/handbook/marketing/localization/tech_docs_localization.md": {
-      "path": "content/handbook/marketing/localization/tech_docs_localization.md",
-      "upstream_sha": "768e1a6af6ab56133195582e6a0b17d225df15f7",
-      "translated_at": "2026-05-01T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "2fe27a55cab8c5b9249504cc00b712af614592530acb206795185c9c870f1544",
-      "upstream_committed_at": "2026-03-30T17:27:46-04:00"
     },
     "content/handbook/marketing/localization/translation_mr_review_workflow.md": {
       "path": "content/handbook/marketing/localization/translation_mr_review_workflow.md",
@@ -29352,22 +29064,6 @@
       "input_hash": "d6d1c07eda36c2a795ead9dd589b8e484ab0a39adc4aab2c9a015992ed5a4db3",
       "upstream_committed_at": "2026-06-16T09:26:31-04:00"
     },
-    "content/handbook/marketing/technical-writing/_index.md": {
-      "path": "content/handbook/marketing/technical-writing/_index.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T07:08:45+09:00",
-      "model": "codex",
-      "input_hash": "725077fe329f867d61b5965ef361674c5145611d71c01c64b1e6a1f5669892fe",
-      "upstream_committed_at": "2026-08-14T11:43:03-05:00"
-    },
-    "content/handbook/marketing/technical-writing/feature-prioritization.md": {
-      "path": "content/handbook/marketing/technical-writing/feature-prioritization.md",
-      "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
-      "translated_at": "2026-08-15T07:08:45+09:00",
-      "model": "codex",
-      "input_hash": "136c02fe601ee8d64e9a03e2ca08873334d439c7ad56abf4d0c46d3f35416921",
-      "upstream_committed_at": "2026-08-14T11:43:03-05:00"
-    },
     "content/handbook/marketing/technical-writing/hiring.md": {
       "path": "content/handbook/marketing/technical-writing/hiring.md",
       "upstream_sha": "e6de02eba910babdd302a4f920edec669cff51cf",
@@ -31639,14 +31335,6 @@
       "model": "codex",
       "input_hash": "6336404f23ab4156afea6d3832a8827f39aa80e892e5c0ed7e1599c57c702000",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
-    },
-    "content/handbook/marketing/sales-development/_index.md": {
-      "path": "content/handbook/marketing/sales-development/_index.md",
-      "upstream_sha": "8194127ea2690cda322cc5bdda07644aa275d6cc",
-      "translated_at": "2026-08-12T06:25:09+09:00",
-      "model": "codex",
-      "input_hash": "365b61e72ce9a2289c1b0a27e54ae70eca6e22ad8265cd066ad83510f34aee9a",
-      "upstream_committed_at": "2026-08-11T11:05:40+01:00"
     },
     "content/handbook/marketing/sales-development/tanuki-tech.md": {
       "path": "content/handbook/marketing/sales-development/tanuki-tech.md",
@@ -36990,6 +36678,318 @@
       "translated_at": "2026-09-04T16:45:41+09:00",
       "model": "codex",
       "input_hash": "401917d2db5694051269fe079681dbc0e14f866a7423e4bbc16bacbc39f39655",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/brand-experience/_index.md": {
+      "path": "content/handbook/marketing/brand-experience/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:43:04+09:00",
+      "model": "codex",
+      "input_hash": "1601699acbb565cc44ad445f1e5eb1c7cad3ad10fa3541a3b77a0f44e7a11789",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/brand-experience/brand-creative/_index.md": {
+      "path": "content/handbook/marketing/brand-experience/brand-creative/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:43:04+09:00",
+      "model": "codex",
+      "input_hash": "5babc5234cc397917280b86ca2adbb748b8a1928722e12a6241715b1033bbba6",
+      "upstream_committed_at": "2026-08-31T14:37:55-06:00"
+    },
+    "content/handbook/marketing/brand-experience/brand-strategy/_index.md": {
+      "path": "content/handbook/marketing/brand-experience/brand-strategy/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:43:04+09:00",
+      "model": "codex",
+      "input_hash": "dd9570942ec3a8007072372f69b7ad1732dbc126d0881aa9fd930b0684185c5b",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/brand-experience/merchandise-handling/_index.md": {
+      "path": "content/handbook/marketing/brand-experience/merchandise-handling/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:43:04+09:00",
+      "model": "codex",
+      "input_hash": "8fc5ec058e5996c9a1bfff23bb4f6424a7ee986b3e451a15922ec2c22f317c98",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/brand-experience/merchandise-handling/cro-swag.md": {
+      "path": "content/handbook/marketing/brand-experience/merchandise-handling/cro-swag.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:43:04+09:00",
+      "model": "codex",
+      "input_hash": "85b39e02e2cb3b4022cc891ff4ac919a1513cef7b3571c613555d386f5ce1579",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/corporate-communications/analyst-relations/_index.md": {
+      "path": "content/handbook/marketing/corporate-communications/analyst-relations/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:48:59+09:00",
+      "model": "codex",
+      "input_hash": "73578980680672629b8b0b50019486a970e9af4f07d87cc05221668f09980583",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/corporate-communications/analyst-relations/ar-briefings.md": {
+      "path": "content/handbook/marketing/corporate-communications/analyst-relations/ar-briefings.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:48:59+09:00",
+      "model": "codex",
+      "input_hash": "0aeb372ad681294d170caa7242c35488c3c5b0b6d0248c0811f87f1cdc676efb",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/corporate-communications/analyst-relations/forrester-tei.md": {
+      "path": "content/handbook/marketing/corporate-communications/analyst-relations/forrester-tei.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:48:59+09:00",
+      "model": "codex",
+      "input_hash": "8c0c5b4c9b936943c13908cbf772e2c5888a3ce7d40de6f66946df0c06aa0d94",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/corporate-communications/social-marketing/_index.md": {
+      "path": "content/handbook/marketing/corporate-communications/social-marketing/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:48:59+09:00",
+      "model": "codex",
+      "input_hash": "b388e0b92f83d9395ba5d3135126eed3b03c786834c5e8cc1a9a7671c2a4988d",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/corporate-communications/social-marketing/admin.md": {
+      "path": "content/handbook/marketing/corporate-communications/social-marketing/admin.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:48:59+09:00",
+      "model": "codex",
+      "input_hash": "2e1cf62f5bd3b3c1edd4c23bfdac802e047d1cdf6f7c8ec9a2ccf53276630827",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/corporate-communications/social-marketing/community-management.md": {
+      "path": "content/handbook/marketing/corporate-communications/social-marketing/community-management.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:50:53+09:00",
+      "model": "codex",
+      "input_hash": "a405c6a8078a0b8bc5189c6ee7c735fe8d467009812024b294c9c65315016838",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/corporate-communications/social-marketing/social-advocacy-curators.md": {
+      "path": "content/handbook/marketing/corporate-communications/social-marketing/social-advocacy-curators.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:50:53+09:00",
+      "model": "codex",
+      "input_hash": "cb741339aa8be083c3319f8fe6c0e128c38982ef61049447d82761c8a1b76f55",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/corporate-communications/social-marketing/team-member-social-advocacy.md": {
+      "path": "content/handbook/marketing/corporate-communications/social-marketing/team-member-social-advocacy.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:50:53+09:00",
+      "model": "codex",
+      "input_hash": "c762140ef89289318051a6d6eedba4c2109975d9a016501b10a24b002001de92",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/_index.md": {
+      "path": "content/handbook/marketing/growth-marketing/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:50:53+09:00",
+      "model": "codex",
+      "input_hash": "a5b3f9b96a6432facff68a5a6f11aa72f3745e121b8fdc33b0092bf72bbdb84f",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/corporate-events.md": {
+      "path": "content/handbook/marketing/growth-marketing/corporate-events.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:50:53+09:00",
+      "model": "codex",
+      "input_hash": "8cead7c5bc2c2365ab9e46b522a915c601d2a7e4ed49acdb7240e5347c8f9612",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/growth-community-programs/_index.md": {
+      "path": "content/handbook/marketing/growth-marketing/growth-community-programs/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:51:48+09:00",
+      "model": "codex",
+      "input_hash": "8c07bd2286ada09475f538edb130d6e0ce186512ac1c8e72072e4335ef198025",
+      "upstream_committed_at": "2026-09-01T17:31:31Z"
+    },
+    "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/_index.md": {
+      "path": "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:51:48+09:00",
+      "model": "codex",
+      "input_hash": "2f0bb305c85793ff04eed48dacdeff537f81c8af3fafb274db04ce3328c7d839",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/hyperscalers.md": {
+      "path": "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/hyperscalers.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:51:48+09:00",
+      "model": "codex",
+      "input_hash": "ca40c390736fc0458b057b8f8a173e3572a7ce490491b307d396b7eb6acaa56c",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/mdf-operations-process.md": {
+      "path": "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/mdf-operations-process.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:51:48+09:00",
+      "model": "codex",
+      "input_hash": "48ae06f8409d0011db157531aee2d7628c0571dfdac02a2a4e6d53eb00d89958",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/partner-marketing-epics/_index.md": {
+      "path": "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/partner-marketing-epics/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:51:48+09:00",
+      "model": "codex",
+      "input_hash": "52c8de05ab183cab64103e16273f166577864d14fd4dc219175227574220f2b4",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/partner-marketing-epics/partner-marketing-service-offerings.md": {
+      "path": "content/handbook/marketing/growth-marketing/partner-and-industry-marketing/partner-marketing-epics/partner-marketing-service-offerings.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:51:48+09:00",
+      "model": "codex",
+      "input_hash": "426831e7b9a98a29006dac55fa2bee9763cd8d879bedb2bb98a4fa5c075d79bc",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/regional-marketing/_index.md": {
+      "path": "content/handbook/marketing/growth-marketing/regional-marketing/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:55:21+09:00",
+      "model": "codex",
+      "input_hash": "e5412e121248696153f453eec0b9750740360a45486905b4c43be599a4f640f7",
+      "upstream_committed_at": "2026-08-31T14:37:56-06:00"
+    },
+    "content/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events.md": {
+      "path": "content/handbook/marketing/growth-marketing/regional-marketing/field-marketing-owned-virtual-events.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:55:21+09:00",
+      "model": "codex",
+      "input_hash": "6dcc0a26dc0d40989e0b98658ccd8f8c12e8a261e3c0456b30abc7d734f38135",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/digital-agency/_index.md": {
+      "path": "content/handbook/marketing/growth-marketing/digital-agency/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:50:33+09:00",
+      "model": "codex",
+      "input_hash": "635633e2069f1e1c77d38c67e1a7cca68bfe736fa63b62307e9c922cda62cf8c",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/digital-agency/agency.md": {
+      "path": "content/handbook/marketing/growth-marketing/digital-agency/agency.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:50:33+09:00",
+      "model": "codex",
+      "input_hash": "a2be4807416bb38381e8a6a1f43432d64c3c69caa6ea4871e01f027d3e35a284",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/digital-agency/digital-strategy-management/_index.md": {
+      "path": "content/handbook/marketing/growth-marketing/digital-agency/digital-strategy-management/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:50:33+09:00",
+      "model": "codex",
+      "input_hash": "bb4483efa530839897e4eb79b27be3b4ce77277447d85d63d26535b414ead1da",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/digital-agency/search-marketing/_index.md": {
+      "path": "content/handbook/marketing/growth-marketing/digital-agency/search-marketing/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:50:33+09:00",
+      "model": "codex",
+      "input_hash": "6af3fc6c01c74728d21dc8d3907ff1aa17dc8ef27c74dfc48147a250bf60717e",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/digital-agency/search-marketing/seo-content-manual.md": {
+      "path": "content/handbook/marketing/growth-marketing/digital-agency/search-marketing/seo-content-manual.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:50:33+09:00",
+      "model": "codex",
+      "input_hash": "53316dbe91612b311d542edc41935880dbd3101aad9f839f0e4d5ec1f1be9382",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/growth-marketing/digital-agency/search-marketing/testing.md": {
+      "path": "content/handbook/marketing/growth-marketing/digital-agency/search-marketing/testing.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:50:33+09:00",
+      "model": "codex",
+      "input_hash": "51464cafe9bc3f72730afbbe45d8558a668db3508f3e963a4e50ac6175cb048e",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/technical-writing/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/technical-writing/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:59:59+09:00",
+      "model": "codex",
+      "input_hash": "726d0b0838b94b59cd3b58b6f65bd487653630ff4b0f6ce890d8a822fdb05cd0",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/technical-writing/feature-prioritization.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/technical-writing/feature-prioritization.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:59:59+09:00",
+      "model": "codex",
+      "input_hash": "d83359bce261862cabd60e9b8f43c11b429332a0a753d12d303d183fd544a101",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/product/groups/growth/direction.md": {
+      "path": "content/handbook/product/groups/growth/direction.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:59:59+09:00",
+      "model": "codex",
+      "input_hash": "eab5e16c6b54eb22d7d70195dd5d48a26686e36d29a8a44bb498c9e8273a1e78",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/sales/sales-development/_index.md": {
+      "path": "content/handbook/sales/sales-development/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T20:59:59+09:00",
+      "model": "codex",
+      "input_hash": "a1afe79ce8c2f3069c4e298521562e1b58275c94f03b97e73b19527f72dc9a61",
+      "upstream_committed_at": "2026-09-01T11:48:29+01:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/content/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/content/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T21:00:56+09:00",
+      "model": "codex",
+      "input_hash": "4d22f627196f1993f8e06aaf89420c27178f45960a4f92f63d66afcbc23ab1bf",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/content/editorial-team.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/content/editorial-team.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T21:00:56+09:00",
+      "model": "codex",
+      "input_hash": "9c239ce091903d11715881761b5ee35f6ca4150a6e214dd7070e8203762efc2c",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/globalization/_index.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/globalization/_index.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T21:00:56+09:00",
+      "model": "codex",
+      "input_hash": "f4b85ae7c00099899831c1af4c44c5f3ec35070c54615c6bae4b90b75d9ce76f",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/globalization/category-internationalization.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/globalization/category-internationalization.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T21:00:56+09:00",
+      "model": "codex",
+      "input_hash": "18e1d97b2c0261223203ce9d7a46cbc55bc44f203779cc1a01ec9de196ef9fec",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/globalization/localization-technology.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/globalization/localization-technology.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T21:00:56+09:00",
+      "model": "codex",
+      "input_hash": "32cb250ee6e2510e3e4bc8b68b3d320a6277f0d16c32402cd11d8197a3ecaa20",
+      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+    },
+    "content/handbook/marketing/product-and-technical-marketing/globalization/tech-docs-localization.md": {
+      "path": "content/handbook/marketing/product-and-technical-marketing/globalization/tech-docs-localization.md",
+      "upstream_sha": "bc76a1a59f8b471f304263e712307581bdc7d128",
+      "translated_at": "2026-09-04T21:00:56+09:00",
+      "model": "codex",
+      "input_hash": "59deea692a1c6a883b3757d15e94337c5e5f6594789c1d74df644657b1c9c858",
       "upstream_committed_at": "2026-08-27T23:30:57+02:00"
     }
   }
