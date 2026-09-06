@@ -3,9 +3,9 @@ title: Upstream Forum
 description: >-
   Upstream Forum は、UX チームメンバーが作業を共有し、議論するための定期的なミーティングです。
 upstream_path: /handbook/product/ux/upstream-forum/
-upstream_sha: a6d55368c73e5825dab217629d9ddb5d23a5fb53
-lastmod: "2026-07-28T15:04:15+01:00"
-translated_at: "2026-07-30T08:15:54+09:00"
+upstream_sha: 4165803c1cf9adeae2826f1af918668be5c942f6
+lastmod: "2026-09-04T09:36:37-07:00"
+translated_at: "2026-09-06T09:49:51+09:00"
 translator: codex
 stale: false
 ---
@@ -144,7 +144,7 @@ Upstream Forum 後の編集量を抑えるため、各トピックの後で録�
 1. 「Upstream Forum」+ トピックのタイトルという形式で動画に名前を付けます。
 1. 動画を一般公開してよいか（顧客名が含まれていないか）発表者に確認します。
 1. 動画を [GitLab Unfiltered](https://m.youtube.com/playlist?list=PL05JrBw4t0Kq89nFXtkVviaIfYQPptwJz) にアップロードします。
-1. 動画を [Upstream Forum プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq89nFXtkVviaIfYQPptwJz)と [UX Team プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KqkW0oPW3n0HqVgKcONVnO5)に追加します。
+1. 動画を [Upstream Forum プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0Kq89nFXtkVviaIfYQPptwJz)と [Upstream Studios プレイリスト](https://www.youtube.com/playlist?list=PL05JrBw4t0KqkW0oPW3n0HqVgKcONVnO5)に追加します。
 1. 公開設定を Public にします。
    1. 注: 動画の内容に un[SAFE](/handbook/legal/safe-framework/) な項目が含まれる場合は、動画を Private に設定します。
 1. 各トピックの簡単な説明とともに、YouTube リンクを `#upstream-studios` と `#product` の Slack チャネルで共有します。
