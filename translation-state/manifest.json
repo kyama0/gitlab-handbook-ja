@@ -18690,11 +18690,11 @@
     },
     "content/handbook/marketing/marketing-operations/campaigns-and-programs.md": {
       "path": "content/handbook/marketing/marketing-operations/campaigns-and-programs.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T13:59:00+09:00",
+      "upstream_sha": "4165803c1cf9adeae2826f1af918668be5c942f6",
+      "translated_at": "2026-09-06T09:49:51+09:00",
       "model": "codex",
-      "input_hash": "3e1d6ec9eabd03d644f4f77ac72793204925e45c24a0944ca38a65f52ffd3dba",
-      "upstream_committed_at": "2026-08-27T23:30:57+02:00"
+      "input_hash": "a10dd6f65d13c9c93f0cdf99fa77d3a2758900a9c1aa8603dc6d02134b569ad5",
+      "upstream_committed_at": "2026-09-04T16:02:33-06:00"
     },
     "content/handbook/marketing/marketing-operations/cognism.md": {
       "path": "content/handbook/marketing/marketing-operations/cognism.md",
@@ -32354,11 +32354,11 @@
     },
     "content/handbook/product/ux/upstream-forum.md": {
       "path": "content/handbook/product/ux/upstream-forum.md",
-      "upstream_sha": "a6d55368c73e5825dab217629d9ddb5d23a5fb53",
-      "translated_at": "2026-07-30T08:15:54+09:00",
+      "upstream_sha": "4165803c1cf9adeae2826f1af918668be5c942f6",
+      "translated_at": "2026-09-06T09:49:51+09:00",
       "model": "codex",
-      "input_hash": "1bf85336c4102a08df13f0af3c1fdfccb6a552c20ad5a5ad223b4afbc73f0c5c",
-      "upstream_committed_at": "2026-07-28T15:04:15+01:00"
+      "input_hash": "de32bc1fe2d93864449d4cb8badb09a7aa67530e3931c8033c01626ce3baf09b",
+      "upstream_committed_at": "2026-09-04T09:36:37-07:00"
     },
     "content/handbook/engineering/architecture/design-documents/orbit/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/orbit/_index.md",

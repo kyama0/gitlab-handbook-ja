@@ -2,10 +2,10 @@
 title: "キャンペーンとプログラム"
 description: "Campaign は、マーケティング施策の取り組みを追跡するために使用します"
 upstream_path: /handbook/marketing/marketing-operations/campaigns-and-programs/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-lastmod: "2026-08-27T23:30:57+02:00"
-translated_at: "2026-09-04T13:59:00+09:00"
-translator: claude
+upstream_sha: 4165803c1cf9adeae2826f1af918668be5c942f6
+lastmod: "2026-09-04T16:02:33-06:00"
+translated_at: "2026-09-06T09:49:51+09:00"
+translator: codex
 stale: false
 ---
 
@@ -65,22 +65,27 @@ Marketing Ops は Field Marketing チームおよび Corporate Events チーム�
 | No Action | すべてのレコードのデフォルトの開始位置 |  | No |
 | Downloaded | コンテンツをダウンロード | Yes | Yes |
 
-#### Direct Mail
+#### Direct Mail（Brilliant 向けに最適化）
 
 パッケージまたは郵送物が発送される場合です。現在の手順では Brilliant Gifts と Qualified の使用が必要です。配送プログラムのステータスとアラートを利用するには、Marketing チームメンバーが Brilliant のインターフェースを通じて受信者に注文フォームメールを送信し、Marketo または SFDC のいずれかでプログラムステータスを手動で変更する必要があります。受信者にギフトを選択するオプションが与えられる場合は、Brilliant 内で `Send a Gift -> Campaign or Quick Send` を使用します。ギフトが Marketing または Sales チームによって選択される場合は、`Send a Gift -> Surprise Send` を利用します。`Meeting Booked` ステータスは Qualified を介して更新され、`Meeting Attended` はミーティング成功後に Sales または Marketing が手動で更新する必要があります。`Meeting No Show` は、Qualified の自動メールを介して Sales/Sales Dev が更新します。
+
+Brilliant はプログラムステータスの更新を通じて配送ステータスを Marketo と SFDC に同期できるようになりましたが、これは [Direct_Mail_eGift_Global - Brilliant connected](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1) でのみ機能します。また、Brilliant の webhook 呼び出しはすべて、メインのスマートキャンペーン [Send to Brilliant webhook (do not alter)](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC77009A1ZN19) を使用して行う**必要があります**。Brilliant を正常に呼び出せるのは、このプログラムとスマートキャンペーンのみです。注意: このプログラムタイプ内には、私たちが必ずしも使用しない Brilliant 用のステータスがいくつかありますが、これらは配送ステータスの追跡に役立ちます
 
 **Bizible:** これは _オフライン_ チャネルとして追跡されます。オフラインチャネルのタッチポイントは、AMM（旧 Bizible）の Campaign 同期ルールによって作成されます。これは[このスプレッドシート](https://docs.google.com/spreadsheets/d/1xR2Q7YKskfNaxclnfGOkK8Vi739zdKypQ6GgF9MLG58/edit#gid=92970564)で確認できます。
 
 | Member Status | 定義 | Success | ギフトの webhook をトリガーするか？|
 | ------------- | ---------- | ------- | ------------ |
 | No Action | すべてのレコードのデフォルトの開始位置 |  |  |
+| **Created** | | | |
 | Nominated | このステータスでプログラムに追加されたリードは、ミーティング招待を受け取ることを示す |  |  |
 | Invite Sent | ミーティングのメール招待が送信されたことを示す |  |  |
-| Email Opened | 現在このプログラムタイプ内では使用されていない | | |
-| Gift Accepted | 受信者がギフトリクエストフォームに記入 | | |
-| Gift Ordered | ギフトが Brilliant で手動注文され、Sales に知らせるためプログラムステータスが手動で変更された | | |
-| Gift Shipped | ギフトが発送され、Sales に知らせるためプログラムステータスが手動で変更された | | |
-| Gift Delivered | ギフトが配達され、Sales に知らせるためプログラムステータスが手動で変更された | | |
+| Clicked | 現在このプログラムタイプ内では使用されていない | | |
+| **Gift Requested** | | | |
+| Claimed | 受信者がギフトリクエストフォームに記入 | | |
+| **Pending** | | | |
+| In Fulfillment | ギフトが Brilliant で注文された  | | |
+| Partially Shipped <br> Externally Shipped <br> Shipped | ギフトが発送され、Sales に知らせるためプログラムステータスが Brilliant によって自動で変更された | | |
+| Out for Delivery <br> Partially Delivered <br> Delivered | ギフトが配達され、Sales に知らせるためプログラムステータスが Brilliant によって自動で変更された | | |
 | Meeting Booked | ミーティング招待の受信者が Qualified を介してミーティングをスケジュール | Yes | |
 | Meeting Attended | 受信者が予定されたミーティングで No Show とラベル付けされなかった | Yes | Yes |
 |Cancelled | 本人が予定されたミーティングの前にキャンセルした  | | |
@@ -1000,29 +1005,22 @@ Direct Mail キャンペーンには Qualified、Marketo、Brilliant Gifts の�
 
 ### ステップ 1: Marketo プログラムと Salesforce キャンペーンを作成する
 
-- [#TEMPLATE - FY00_Q0_Brilliant Gifts Direct Mail TEMPLATE](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG24060A1) を適切なフォルダーにクローンし、プログラムの名前を変更します。1 つの地域で実行する意図がある場合は、1 回クローンします。複数の地域で実行する意図がある場合は、「parent」プログラムと、すべての地域に十分な数のプログラム（例: AMER、APJ、EMEA）をクローンし、それら専用のフォルダーに配置します。地域別／child プログラムの命名規則を似たものに保ちますが、プログラム名の末尾に地域タグを追加します（例: `FY00_Q0_Campaign_AMER`）。parent プログラムについては、SFDC キャンペーンで冗長なタッチポイントを防ぐために、プログラム名の末尾に `_Parent` を追加します
-- 1 つのプログラムをクローンした場合は、それを SFDC に同期します。複数のプログラムを作成した場合は、それらの **すべて** を SFDC に同期します。
-  - 地域別の SFDC キャンペーンを parent Campaign の下にアンカーしないでください。parent Campaign は Qualified と同期するために存在しますが、Campaign が _完全に_ 完了したら、parent のすべてのメンバーを Campaign から削除し、parent を child Campaign にリンクできます。parent は child Campaign を持ちながらメンバーを含むことはできません
+- [#TEMPLATE - FY00_Q0_Brilliant Gifts Direct Mail TEMPLATE](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG24060A1) を適切なフォルダーにクローンし、プログラムの名前を変更します。1 つの地域で実施する場合は、1 回クローンします。複数の地域で実施し、各地域を個別に追跡したい場合は、すべての地域（例: AMER、APJ、EMEA）に必要な数のプログラムをクローンし、メインの [Brilliant Gifts プログラムのフォルダー](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)内にある、それぞれの `FYXX_QX` フォルダーに配置します。地域別／子プログラムの命名規則を揃え、プログラム名の末尾に地域タグを追加します（例: `FY00_Q0_Campaign_AMER`）。
+- すべてのプログラムを SFDC に同期します
+- テンプレートについて、いくつか注意点があります。[01 - Processing](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC63769A1ZN19) スマートキャンペーンが実行されるのは、特定のプログラムステータスで、かつ[リードがターゲットリストに含まれる場合のみ](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SL53588098A1LA1)です。必要に応じてターゲットリストを入れ替えられますが、その場合は必ず処理用のスマートキャンペーンを更新してください。フロー内では、`Meeting Attended` ステータスの場合のみ、リードがメインの Brilliant プログラムの静的リストに送られます。[メインの Brilliant プログラム](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/PG28387A1)内の適切な `FYXX_QX` フォルダーに新しい静的リストを作成し、クローンした各プログラムのフローステップ 6 に追加する必要があります。フローステップ 4 はリードを `Invite Sent` ステータスでメインの Brilliant プログラムに追加しますが、静的リストはメインのプログラム内での長期的な追跡と整理に使用します
 
 ### ステップ 2: Marketo プログラムをセットアップする
 
 - 必須のプログラムトークンを入力します。このプログラムタイプに固有のトークンは `my.qualifiedlink` トークンで、`Sales Nominated Invite` メールに表示されます。Qualified リンクは、準備ができたときに Qualified テックオーナーによって共有されます（詳細は以下）
-- スマートキャンペーンフォルダーには多くのフローがあり、どれを使用するかは、Direct Mail キャンペーンが単一地域向けか、プログラムが Qualified と通信する「parent」プログラムか（Qualified は SFDC キャンペーンと同期）、または地域別の「child」プログラムかによって異なります
-- Campaign が単一地域で行われ、プログラムが 1 つしかない場合は、`01 Processing - Single region campaign` を確認し、フローステップで更新されるすべてのフィールドが適切なプログラム名で最新であることを確認します
-- Campaign が複数の地域で行われている場合は、`parent` プログラムで、関与する地域のすべての地域別処理スマートキャンペーンを活性化します。例: EMEA と AMER のプログラムがある場合は `00 Processing - Parent - AMER` と `00 Processing - Parent - EMEA`。各地域別 child プログラムでは、`00 Processiong - Child` スマートキャンペーンを活性化します
-  - parent プログラムは Qualified からの入力を処理し、ギフト引き換えメールを送信するために Brilliant への webhook を呼び出し（プログラムステータスが `Meeting Attended` の場合のみ）、また地域別 child プログラムにプログラムステータス更新を中継します
-- 処理スマートキャンペーン内では、最初の `if` フローステップで、スマートキャンペーンが参照するプログラムを正しい地域別 child プログラムに必ず変更してください。スマートキャンペーンの名前が `AMER` の場合、フローステップは `AMER` プログラムを呼び出すべきです。
-- このテンプレートは複数の地域での使用のためにセットアップされているため、ロジックに余分な部分がある場合は、ロジックエラーを避けるためにそれらの部分を削除しても構いません
+- プログラムは Qualified から `Meeting Booked` と `Meeting Attended` の入力を受け取り、Processing スマートキャンペーンが Brilliant への webhook を呼び出して、ギフト引き換えメールを送信します（プログラムステータスが `Meeting Attended` の場合のみ）
 - `no show` アクティビティを登録するために、単一または parent プログラムで `03 Change to No Show` を活性化します * この機能は現時点では実験的です
 
 ### ステップ 3: ターゲットリストと nominated リードのロード
 
-プログラムテンプレートには、各地域の静的リストとスマートリストの両方を含む複数のターゲットリストアセットが含まれています。この段階では MktgOps に相談することを推奨します。
+プログラムテンプレートには、ターゲットリスト用のスマートリストアセットが含まれています。この段階では MktgOps に相談することを推奨します。
 
-- ターゲットリストを計画するには、`target list w/leads (global)` を使用します。複数地域の Campaign の場合は、事前に作成された地域スマートリストでスマートリストを再作成するか、グローバルをクローンしてスマートキャンペーンでアセットを入れ替えます
-- プログラムが 1 つしかない場合は、スマートキャンペーン `Load static list and parent program from target list` を使用して、ターゲットリストを静的リストとプログラムにロードします
-- 複数の地域別プログラムがある場合は、スマートキャンペーン `Load static lists and child programs from target list` を使用して、ターゲットリストを適切な地域別静的リストと地域別 child プログラムにロードします
-  - プログラムにロードされたリードは、ロードされると `Nominated` ステータスを持つべきです
+- ターゲットリストを計画するには、`Target List NEW` を使用します。ターゲットリストとして別のスマートリストを使用する場合は、処理用のスマートキャンペーン内の必要な箇所を更新します
+- ターゲットリスト全体を、クローンしたプログラムに `Nominated` ステータスで追加することを推奨します
 
 ### ステップ 4: ターゲットリストへのメール送信
 
@@ -1036,13 +1034,13 @@ Direct Mail キャンペーンには Qualified、Marketo、Brilliant Gifts の�
 - Brilliant のストアフロントが確立されており、この Campaign のニーズに適切か？
 - Brilliant でどのバックエンドアセットを更新する必要があるか？ 例: ブランド化されたギフト引き換えメール
 
-Brilliant チームは、Marketo の webhook がバックエンドに到達していることも確認する必要があります
+Brilliant チームは、Marketo プログラムと webhook がバックエンドに到達していることも確認する必要があります
 
-注意: MktgOps は、プログラムテンプレートにある `Call to Brilliant TEST` と `Call to Brilliant TEST trigger` を利用して webhook が機能していることを確認する必要があります。webhook を呼び出すにはトリガー Campaign が必要なため、2 つのスマートキャンペーンがあります
+注意: MktgOps は、メインのプログラムにある [Call to Brilliant TEST](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC76999A1ZN19) を利用して webhook が機能していることを確認する必要があります。webhook をリクエストするスマートキャンペーンは、バッチ型ではなくトリガー型である必要があるため、2 つのスマートキャンペーンが関わります。TEST スマートキャンペーンは、Brilliant の webhook を呼び出せる唯一のスマートキャンペーン [Send to Brilliant webhook do not alter](https://experience.adobe.com/#/@gitlab/so:194-VVC-221/marketo-engage/classic/SC77009A1ZN19) にリンクしています
 
 ### ステップ 6: Qualified を活用したミーティング予約のセットアップ
 
-この次のステップでは、Qualified テックオーナーの支援が必要になります。単一または parent Campaign として使用されている SFDC キャンペーンをテックオーナーに提供します。そこから、Qualified リンクが作成され、テックオーナーによってリクエスト者に共有されます。このリンクは、nominated された見込み客が Sales Dev とのミーティングを予約するために必要な手法として、見込み客へのアウトリーチ中に使用されます
+この次のステップでは、Qualified テックオーナーの支援が必要になります。そのキャンペーンで使用する SFDC キャンペーン（メインの Brilliant プログラムではなく、クローンしたもの）をテックオーナーに提供します。そこから、Qualified リンクが作成され、テックオーナーによってリクエスト者に共有されます。このリンクは、nominated された見込み客が Sales Dev とのミーティングを予約するために必要な手法として、見込み客へのアウトリーチ中に使用されます
 
 - 見込み客がミーティングを予約すると、Qualified はプログラムステータスを `Meeting Booked` に変更します
 - ミーティングの 1 時間前にリマインダーメールが送信されます
@@ -1051,7 +1049,7 @@ Brilliant チームは、Marketo の webhook がバックエンドに到達し�
 
 ### ステップ 7: Campaign の完了
 
-Campaign の終了時に、Qualified のロジックを取り下げるようリクエストします。Brilliant のストアフロントと preferred キャンペーンへの更新は未定です。複数地域の Campaign の場合、リードは parent SFDC キャンペーン／Marketo プログラムから削除できます。リードが parent Campaign から削除されている限り、地域別 Campaign は SFDC で parent Campaign の child Campaign として追加できます
+Campaign の終了時に、Qualified のロジックを取り下げるようリクエストします。Brilliant のストアフロントと Preferred キャンペーンへの更新は未定ですが、新しいキャンペーンごとに Brilliant に連絡し、電子ギフトの金額と確認メールを更新する必要があります
 
 ## LinkedIn Lead Gen Form のセットアップ手順
 
