@@ -1418,11 +1418,11 @@
     },
     "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-global-voices.md": {
       "path": "content/handbook/company/culture/inclusion/tmrg-tmag/tmrg-global-voices.md",
-      "upstream_sha": "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca",
-      "translated_at": "2026-07-17T06:09:44+09:00",
+      "upstream_sha": "df66e66b937d38c1ed4e3dd452927ddf01be58b0",
+      "translated_at": "2026-09-08T07:04:23+09:00",
       "model": "codex",
-      "input_hash": "73597eb056bd13d24de973b052f162a5d95264d719914c27fd44d77c3566fc46",
-      "upstream_committed_at": "2026-07-16T18:03:25+02:00"
+      "input_hash": "39abc13a55a6eb78eaed00c964ba354c21c23ef538a581ad2d9fa24270a373d7",
+      "upstream_committed_at": "2026-09-07T11:40:25+02:00"
     },
     "content/handbook/company/culture/inclusion/unconscious-bias.md": {
       "path": "content/handbook/company/culture/inclusion/unconscious-bias.md",
@@ -5730,11 +5730,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/ai_gateway/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/ai_gateway/_index.md",
-      "upstream_sha": "b4eeb07f0d5f46e2fc5f8572be1a2547261aed89",
-      "translated_at": "2026-04-26T03:00:00Z",
-      "model": "claude-sonnet-4-6",
-      "input_hash": "2061f1fe58b23d6fe2dd9117f2d1111d0ee9e9aebb18dd90b998129ea1db45d1",
-      "upstream_committed_at": "2025-07-12T03:44:08+00:00"
+      "upstream_sha": "df66e66b937d38c1ed4e3dd452927ddf01be58b0",
+      "translated_at": "2026-09-08T07:12:08+09:00",
+      "model": "codex",
+      "input_hash": "b5f4822ec66e5137f3bac5780b2f469d29add564a8aca41c57631b445e6bd2ec",
+      "upstream_committed_at": "2026-09-07T11:47:46+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/ai_gateway/decisions/001_direct_connections.md": {
       "path": "content/handbook/engineering/architecture/design-documents/ai_gateway/decisions/001_direct_connections.md",
@@ -5850,11 +5850,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode.md",
-      "upstream_sha": "0505a0f5a670366af5dd620eb2b9f12ebd7a79fe",
-      "translated_at": "2026-06-12T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "4bb3af8e6115b8c0c9dacaabb81603786e2261a8dbaeb222392cd1467022b86a",
-      "upstream_committed_at": "2026-06-08T16:47:20+01:00"
+      "upstream_sha": "df66e66b937d38c1ed4e3dd452927ddf01be58b0",
+      "translated_at": "2026-09-08T07:12:08+09:00",
+      "model": "codex",
+      "input_hash": "1020cec993b44818d11666106c0e18583cd947450096beb99f0f4fec3245a76b",
+      "upstream_committed_at": "2026-09-07T12:23:16+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/006_technology_stack.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/006_technology_stack.md",
@@ -5914,11 +5914,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T11:43:17+09:00",
+      "upstream_sha": "df66e66b937d38c1ed4e3dd452927ddf01be58b0",
+      "translated_at": "2026-09-08T07:12:08+09:00",
       "model": "codex",
-      "input_hash": "c04f83256f3106c47961dac28929109a7c1fdbbcb066731a8e0816a7e3c9156e",
-      "upstream_committed_at": "2026-08-18T14:06:58+02:00"
+      "input_hash": "bd60770ff4222497535c2293057e5abe05ff7aa0c0acfecfe05b5bc6bd45c50c",
+      "upstream_committed_at": "2026-09-07T15:22:46+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/022_namespace_decoupling.md",
@@ -6058,11 +6058,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/cells/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/_index.md",
-      "upstream_sha": "c75ccd81af7d76262c8cb188bf7e7e2a7f838894",
-      "translated_at": "2026-07-31T08:29:15+09:00",
+      "upstream_sha": "df66e66b937d38c1ed4e3dd452927ddf01be58b0",
+      "translated_at": "2026-09-08T07:04:23+09:00",
       "model": "codex",
-      "input_hash": "ba218e869759560700fdb8d8829e65da4e5a6784c93978776dc9474e8d0e4644",
-      "upstream_committed_at": "2026-07-29T15:19:52-04:00"
+      "input_hash": "cbeb3f5dd7a038b58d7fe54575d208c8469fb708b6c605134a50bb2c0f83bdaa",
+      "upstream_committed_at": "2026-09-07T14:25:49+12:00"
     },
     "content/handbook/engineering/architecture/design-documents/cells/container_registry_routing_service.md": {
       "path": "content/handbook/engineering/architecture/design-documents/cells/container_registry_routing_service.md",
@@ -12850,11 +12850,11 @@
     },
     "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/_index.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/_index.md",
-      "upstream_sha": "c649549e971e74175edf1d5bc1190fcc86e359e6",
-      "translated_at": "2026-08-14T06:13:39+09:00",
+      "upstream_sha": "df66e66b937d38c1ed4e3dd452927ddf01be58b0",
+      "translated_at": "2026-09-08T07:04:23+09:00",
       "model": "codex",
-      "input_hash": "1c91f7c5baa5bf504deb7fd9ecabd9bff1b4e22d1dd011e7cd91e7841da2dace",
-      "upstream_committed_at": "2026-08-13T13:32:58-06:00"
+      "input_hash": "4a5e1576ec1245a13f507745b7595d5e5d8af46be7c3ff41631714f60ac10694",
+      "upstream_committed_at": "2026-09-07T13:00:32+02:00"
     },
     "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/best-effort-rotations.md": {
       "path": "content/handbook/engineering/infrastructure-platforms/incident-management/on-call/best-effort-rotations.md",
@@ -32234,11 +32234,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/021_authorization.md": {
       "path": "content/handbook/engineering/architecture/design-documents/artifact_registry/decisions/021_authorization.md",
-      "upstream_sha": "68426776f854464b95a942162d83ddb29afbcf7d",
-      "translated_at": "2026-09-04T11:43:17+09:00",
+      "upstream_sha": "df66e66b937d38c1ed4e3dd452927ddf01be58b0",
+      "translated_at": "2026-09-08T07:12:08+09:00",
       "model": "codex",
-      "input_hash": "47615266b6496cd7fc9421627a9e7cdd6ee5f0e7a5cb54e4a7d914bd8d4c07d8",
-      "upstream_committed_at": "2026-09-01T14:57:29+02:00"
+      "input_hash": "46858dba85cea8b20dc64bed0b14cd9a0c9ca54bec8affc4a96fd55ffc0e0e49",
+      "upstream_committed_at": "2026-09-07T15:22:46+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/chunking.md": {
       "path": "content/handbook/engineering/architecture/design-documents/codebase_as_chat_context/chunking.md",
@@ -32338,11 +32338,11 @@
     },
     "content/handbook/support/sig/_index.md": {
       "path": "content/handbook/support/sig/_index.md",
-      "upstream_sha": "35c2295ab7e9139fbe16bd8b69e1712d0ef14206",
-      "translated_at": "2026-09-03T23:52:33+09:00",
+      "upstream_sha": "df66e66b937d38c1ed4e3dd452927ddf01be58b0",
+      "translated_at": "2026-09-08T07:04:23+09:00",
       "model": "codex",
-      "input_hash": "f1a7e20e0b162b53b6ed7a0a4d77cd41cb469c354e1a0baaeead8937827737d6",
-      "upstream_committed_at": "2026-09-01T08:13:52-04:00"
+      "input_hash": "46cd9d9712a23b3df1bd8dce28372f9c5d3c8796c5e344441457d61363442195",
+      "upstream_committed_at": "2026-09-07T05:44:28-04:00"
     },
     "content/handbook/support/sig/support-innovation-group.md": {
       "path": "content/handbook/support/sig/support-innovation-group.md",

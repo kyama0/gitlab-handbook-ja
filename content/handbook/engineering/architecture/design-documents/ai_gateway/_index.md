@@ -9,11 +9,11 @@ owning-stage: "~devops::modelops"
 participating-stages: []
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/ai_gateway/
-upstream_sha: b4eeb07f0d5f46e2fc5f8572be1a2547261aed89
-translated_at: "2026-04-26T03:00:00Z"
-translator: claude
+upstream_sha: "df66e66b937d38c1ed4e3dd452927ddf01be58b0"
+translated_at: "2026-09-08T07:12:08+09:00"
+translator: codex
 stale: false
-lastmod: "2025-07-12T03:44:08+00:00"
+lastmod: "2026-09-07T11:47:46+02:00"
 ---
 
 
@@ -62,7 +62,7 @@ AI Gateway の API は、さまざまなクライアントによって利用さ�
 
 API はバージョン管理されませんが、後方互換性があります。詳細は [バージョン間互換性](#cross-version-compatibility) を参照してください。AI Gateway は最新の 2 つのメジャーバージョンをサポートします。例えば、GitLab 17.2 で作業している場合、GitLab 17 と GitLab 16 の両方をサポートします。
 
-クライアントは AI Gateway に直接接続できるため、レート制限、サーキットブレーカー、シークレット編集などの一般的な機能は、このスタックレベルと GitLab Rails の両方に追加する必要があります。
+クライアントは AI Gateway に直接接続できるため、レート制限、サーキットブレーカー、シークレットの秘匿化などの一般的な機能は、このスタックレベルと GitLab Rails の両方に追加する必要があります。
 
 #### プロトコル
 
@@ -81,7 +81,7 @@ GitLab インスタンス間の通信プロトコルとして gRPC も検討し�
 | gRPC                                                                                                                                                                    | REST + JSON                                                                                       |
 |-------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------------------------------------------------------------------------------------------------|
 | + バージョンレスでも進化させやすい厳密なプロトコル定義                                                                                                       | - 厳密なスキーマがないため、実装で複数バージョンのサポートをきちんと行う必要がある |
-| + vscode 用の新しい Ruby-gRPC サーバー: 依存関係のロードを制限できるためおそらく高速（[modular monolith](https://gitlab.com/gitlab-org/gitlab/-/issues/365293)） | - vscode 用の既存の Grape API: 起動が遅く、不要なリソースがロードされる             |
+| + vscode 用の新しい Ruby-gRPC サーバー: 依存関係のロードを制限できるためおそらく高速（[モジュラーモノリス](https://gitlab.com/gitlab-org/gitlab/-/issues/365293)） | - vscode 用の既存の Grape API: 起動が遅く、不要なリソースがロードされる             |
 | + 双方向ストリーミング                                                                                                                                              | - リクエストとレスポンスをストリーミングするための直感的な方法（追加可能ではある）                    |
 | - 新しい Python-gRPC サーバー: gRPC-Python サーバーの運用経験がない                                                                                        | + 既存の Python fastapi サーバー（コード提案用にすでに動いている）を拡張すればよい                  |
 | - vscode から GitLab を経由して ai-gateway へ未知のメッセージを通すのが困難                                                                                             | + 古い GitLab インスタンス経由で、新しい VS Code + 新しい AI Gateway を簡単にサポートできる                  |
@@ -92,7 +92,7 @@ GitLab インスタンス間の通信プロトコルとして gRPC も検討し�
 
 #### 単一目的エンドポイント {#single-purpose-endpoints}
 
-AI を使用する機能については、ダイレクトプロキシとして [公開している provider API](#exposing-ai-providers) よりも、安定した API を持つ単一目的エンドポイントを構築することを優先します。
+AI を使用する機能については、ダイレクトプロキシとして [公開しているプロバイダー API](#exposing-ai-providers) よりも、安定した API を持つ単一目的エンドポイントを構築することを優先します。
 
 一部の機能には固有のエンドポイントがあり、他のいくつかの機能はエンドポイントを共有できます。例えば、コード提案やチャットには独自のエンドポイントがあり、Issue やマージリクエストを要約するいくつかの機能は同じエンドポイントを使用してペイロードで提供される情報で区別を行うことができます。
 
@@ -349,9 +349,9 @@ AI Gateway は GitLab がホストするインフラ内で動作し、Anthropic 
 
 AI Gateway はステートレスサービスとして設計されており、お客様固有のデータを保存しません。ペイロードの復号化はアプリケーション層ではなくネットワーク層で行われ、暗号化キーは GKE ネイティブの GCP プロセスを使用してリクエストごとに生成されます。Anthropic API へのリクエストはパブリックインターネットを介して行われますが、Vertex AI モデルへのリクエストは同じ GCP リージョン内に配置されることで最適化されます。すべての接続は TLS/HTTPS で保護されており、データフロー全体を通じて暗号化された通信が確保されます。
 
-## Embeddings
+## 埋め込み
 
-NOTE:
+注:
 埋め込みデータベースについては、[RAG for GitLab Duo](https://docs.gitlab.com/ee/architecture/blueprints/gitlab_duo_rag/index.html) を参照してください。
 
 埋め込みは、すべての機能から単一のエンドポイントでリクエストできます。例えば次のようなリクエストです。
@@ -390,28 +390,18 @@ POST /internal/embeddings
 
 ## デプロイ
 
-現在、AI Gateway となる model-gateway は、プロジェクトリポジトリ
-[`gitlab-org/modelops/applied-ml/code-suggestions/ai-assist`](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist) からデプロイされています。
-
-独自のプロジェクトの Kubernetes クラスターにデプロイされています。エンジニアがテスト用に直接利用しているステージング環境があります。
-
-将来的には [Runway](https://gitlab.com/gitlab-com/gl-infra/platform/runway/) を使用してデプロイされる予定です。その時点で、本番環境とステージング環境のデプロイが行われます。ステージングデプロイは、本番環境への到達を停止する可能性のある自動 QA 実行に使用できます。
-
-さらなるテスト戦略は [&10563](https://gitlab.com/groups/gitlab-org/-/epics/10563) で議論されています。
+AI Gateway は、
+[`gitlab-org/modelops/applied-ml/code-suggestions/ai-assist`](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist) リポジトリで管理され、
+[Runway](https://gitlab.com/gitlab-org/modelops/applied-ml/code-suggestions/ai-assist/-/blob/main/ai_gateway/README.md#deployment)を通じてデプロイされます。
 
 ### AI Gateway の self-hosted デプロイ
 
 self-hosted 環境内のお客様も、self-hosted 版の AIGW をデプロイでき、FedRAMP 準拠を必要とするものを含むエアギャップソリューションでも Duo 機能を使用できるようになります。このアプローチにより、独自の LLM インフラストラクチャを管理できる高度なお客様にもサービスを提供でき、より高度な制御と柔軟性を提供します。
-self-managed での AIGW のセットアップ方法に関する手順は、[ドキュメント](https://docs.gitlab.com/ee/administration/self_hosted_models/install_infrastructure.html) で確認できます。
+self-managed での AIGW のセットアップ方法に関する手順は、[AI Gateway のインストールドキュメント](https://docs.gitlab.com/install/install_ai_gateway/)で確認できます。
 
-これによりインストールするコンポーネントが 1 つ追加されますが、代替案はモノリスにモデルインターフェイスを実装することになります。これには次のようなさまざまな課題があります。
+### GitLab Dedicated 向け AI Gateway
 
-- LLM 処理のために Python に存在するすべてのライブラリを Ruby で再実装する必要がある
-- コードベースとメンテナンスの重複
-- self-hosted と `.com` の機能のパリティの欠如
-- self-hosted 顧客のためのロギングとトレースの困難さ
-
-一方、self-hosted と `.com` 環境の両方で AI Gateway に依存することで、LLM とのインターフェイス処理に関するインフラストラクチャの課題と解決策が一元化されます。
+GitLab Dedicated のお客様は、[GitLab Dedicated 向け AI Gateway チャート](https://docs.gitlab.com/charts/charts/ai-gateway/)のページに従って、GitLab Chart を使用して AI Gateway をインストールできます。
 
 #### AI Gateway と GitLab のバージョンマッチング
 
