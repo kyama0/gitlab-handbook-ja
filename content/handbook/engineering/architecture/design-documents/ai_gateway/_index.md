@@ -11,7 +11,7 @@ toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/ai_gateway/
 upstream_sha: "df66e66b937d38c1ed4e3dd452927ddf01be58b0"
 translated_at: "2026-09-08T07:12:08+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-07T11:47:46+02:00"
 ---

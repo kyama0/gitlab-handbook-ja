@@ -3,7 +3,7 @@ title: オンコールのプロセスとポリシー
 upstream_path: "/handbook/engineering/infrastructure-platforms/incident-management/on-call/"
 upstream_sha: "df66e66b937d38c1ed4e3dd452927ddf01be58b0"
 translated_at: "2026-09-08T07:04:23+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-07T13:00:32+02:00"
 ---

@@ -6,7 +6,7 @@ toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/005_artifact_delivery_mode/
 upstream_sha: "df66e66b937d38c1ed4e3dd452927ddf01be58b0"
 translated_at: "2026-09-08T07:12:08+09:00"
-translator: codex
+translator: claude
 stale: false
 lastmod: "2026-09-07T12:23:16+02:00"
 ---
