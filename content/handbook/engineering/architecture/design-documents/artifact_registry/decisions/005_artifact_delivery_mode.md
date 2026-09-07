@@ -45,7 +45,7 @@ Artifact Registry は、複数のデプロイモデル（GitLab.com（SaaS）、
 
 このモデルでは、GitLab.com の Artifact Registry は、基盤となるストレージプロバイダー（GCS、Cloud CDN）の IP レンジを許可リストに追加できない企業ファイアウォールの背後にいる可能性のあるクライアントへダウンロードを提供します。サービスは、それらの namespace に対してはアーティファクトコンテンツをプロキシしつつ、クライアントがストレージに直接到達できる namespace に対しては引き続きリダイレクトできなければなりません。
 
-このため、グローバル（インスタンスレベル）のリダイレクトまたはプロキシのトグルでは不十分です。同一インスタンスまたは同一組織内の異なる namespace が異なるネットワーク制約を持ちうるため、namespace ごとの設定（[ADR-022](022_namespace_decoupling.md)）はインスタンスのデフォルトに関係なく利用可能でなければなりません。
+このため、グローバル（インスタンスレベル）のリダイレクトまたはプロキシのトグルでは不十分です。同一インスタンスまたは同一 organization 内の異なる namespace が異なるネットワーク制約を持ちうるため、namespace ごとの設定（[ADR-022](022_namespace_decoupling.md)）はインスタンスのデフォルトに関係なく利用可能でなければなりません。
 
 ## 決定
 
@@ -74,7 +74,7 @@ null 許容の namespace ごとのオーバーライド（namespace レコード
 effective = namespace.delivery_mode_override ?? instance.delivery_mode
 ```
 
-namespace ごとの設定は、namespace 管理 API（実装仕様では S17 が所有）を通じて GitLab 組織のオーナーによって管理されます。粒度は namespace ごとであり、組織ごと、リポジトリごと、アーティファクトごとではありません。
+namespace ごとの設定は、namespace 管理 API（実装仕様では S17 が所有）を通じて GitLab organization のオーナーによって管理されます。粒度は namespace ごとであり、organization ごと、リポジトリごと、アーティファクトごとではありません。
 
 この二軸の形式が、サービスが公開する唯一のつまみの形状です。別個の「ハイブリッド」インスタンスモードは存在しません。オーバーライドはすべてのインスタンスで同じカラムであり、オペレーターは必要な組み合わせを選択します。
 

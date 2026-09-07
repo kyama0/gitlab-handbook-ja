@@ -84,7 +84,7 @@ Rails は、クライアントの認証情報を受け付け、Artifact Registry
 1. **サポートされる認証情報の種類。** エンドポイントは、それぞれが `User` に解決される標準的な GitLab API の認証情報で呼び出し元を認証します。パーソナルアクセストークン（レガシーまたは粒度の細かいもの）、OAuth トークン、CI ジョブトークン、プロジェクト/グループアクセストークンです。**デプロイトークンは最初のイテレーションではサポートされません**。デプロイトークンは、最初のイテレーションでトークンを発行する唯一のプリンシパル型である `User` ではありません。型付けされた `sub` クレーム（[トークンペイロード](#token-payload-r3) を参照）は、後から他のプリンシパル型を受け入れられるように設計されているため、[R1](../agreements/auth.md#r1--token-exchange-service) のターゲットとして挙げられているデプロイトークンは、フォローアップとして追跡されます。
 1. **クライアント側の交換。** トークン交換はクライアント側で行われます。クライアントは自身の GitLab インスタンスからトークンを取得し、それを Artifact Registry に提示します。Artifact Registry が交換を実行することは決してありません。エンドポイントは `curl`、`glab` CLI、または CI ジョブによって自動的に駆動できます。トークンは短命であるため、静的な認証情報を期待するネイティブなパッケージツール（例: Maven の `settings.xml` や npm の `.npmrc`）は、それを取得・リフレッシュするためのヘルパーツールを必要とします。Docker、Maven、npm にまたがるクライアントツールの設計は [クライアント認証情報管理の作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150) で追跡されています。
 1. **トークンの有効期間。** トークンはデフォルトの有効期間が 5 分、最大が 12 時間です。クライアントは、デフォルトより長いものを含め、1 秒から 12 時間の上限まで任意の有効期間を要求できます。クライアントが要求可能な TTL には AppSec のサインオフが必要です（[トークン交換の TTL に関する決定](https://gitlab.com/gitlab-org/gitlab/-/work_items/601469)）。この境界は、Maven/Gradle のビルドが処理の途中で期限切れにならない限りにおいて、[クライアント認証情報管理の作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150) に文書化された委任認証レジストリの業界の前例に従います。
-1. **有効化の強制。** トークン交換は、Artifact Registry を有効化していない組織に対しては失敗すべきです（R1、SHOULD）。これは可用性のゲートにすぎず、リポジトリごとの認可は Artifact Registry に留まります。このチェックは、組織レベルの有効化設定を所有する Rails 側で、トークン発行時に実行されます。アクセスは Unit Primitives やアドオンに依存しません。クレジットベースの課金モデルでは Artifact Registry アドオンが存在しないためです。Artifact Registry 側では、namespace レベルでアクセスを強制します。組織 UUID であるトークンの `gitlab.origin_id` クレームは、namespace の owner anchor（[ADR-001](001_organizations_as_anchor_point.md)）の `entity_id` と一致しなければなりません。これは組織の認識を必要としない不透明な比較です。有効化は、権限を評価するのではなくトークンの *発行* をゲートするため、[ADR-021](021_authorization.md) ではなくここに記録されます。
+1. **有効化の強制。** トークン交換は、Artifact Registry を有効化していない organization に対しては失敗すべきです（R1、SHOULD）。これは可用性のゲートにすぎず、リポジトリごとの認可は Artifact Registry に留まります。このチェックは、organization レベルの有効化設定を所有する Rails 側で、トークン発行時に実行されます。アクセスは Unit Primitives やアドオンに依存しません。クレジットベースの課金モデルでは Artifact Registry アドオンが存在しないためです。Artifact Registry 側では、namespace レベルでアクセスを強制します。organization UUID であるトークンの `gitlab.origin_id` クレームは、namespace の owner anchor（[ADR-001](001_organizations_as_anchor_point.md)）の `entity_id` と一致しなければなりません。これは organization の認識を必要としない不透明な比較です。有効化は、権限を評価するのではなくトークンの *発行* をゲートするため、[ADR-021](021_authorization.md) ではなくここに記録されます。
 
 ## トークン検証 (R2) {#token-validation-r2}
 
@@ -122,7 +122,7 @@ Cloud Connector v1 の仕組みを再利用することで、最初のイテレ�
 1. `iss` — 発行インスタンスの OIDC 発行者 URL。これは情報提供のみ（ログ記録される）であり、Artifact Registry はこれを検証鍵の選択に **使用しない**（[トークン検証](#token-validation-r2) を参照）。
 1. `aud` — 2 つの値を運ぶ。クライアントが要求したオーディエンスである `gitlab-artifact-registry` と、`gitlab-iam-data-access` である。2 つ目の値により、Artifact Registry は同じトークンを変更せずに relationships API へ転送できる。[サービス間認証](#service-to-service-authentication) を参照。
 1. `ver` — トークンペイロードのスキーマバージョン。現在は `1` であり、ペイロードの形状に破壊的変更がある場合にのみ上げられる。IAM のバリデーターはそれ以外の値を拒否する。
-1. `gitlab` — 呼び出し元のコンテキストを運ぶネストされたオブジェクト。`origin`（`organization`。ローンチ時の唯一の値）、`origin_id`（組織の UUID）、`local_id`（ユーザー ID）、`identity_kind`（`user`）、`organization_role`（`owner` または `member`）を含む。
+1. `gitlab` — 呼び出し元のコンテキストを運ぶネストされたオブジェクト。`origin`（`organization`。ローンチ時の唯一の値）、`origin_id`（organization の UUID）、`local_id`（ユーザー ID）、`identity_kind`（`user`）、`organization_role`（`owner` または `member`）を含む。
 1. `gitlab.organization_role` は、認可を運ぶクレームを ADR-021 で扱うという以下のルールの唯一の例外である。ロール割り当てが存在する前に読み取られるため、relationships API を通じて解決できない。何を認可するか、すなわち R6 のブートストラップ要件については [ADR-021](021_authorization.md) を参照。
 1. `jti`、`iat`、`nbf`、`exp` — 標準的な JWT クレーム。`exp = iat + ttl`。
 1. `gitlab_instance_uid` は **現時点では省略される**。最初のイテレーションの同一境界トポロジーには単一の信頼アンカーがあるため、インスタンス識別子は不要である。それはクロス境界のフォローアップでのみ関連する。
@@ -152,7 +152,7 @@ Cloud Connector v1 の仕組みを再利用することで、最初のイテレ�
 
 各側が JWT を独立して検証します。Artifact Registry は入口で自身の期待するオーディエンスに対して検証し、relationships API は自身の側でもう一度検証します。両方のサービスに同じ検証ライブラリが組み込まれています。トークンの転送はチェックの委任ではなく、各側での完全かつ独立したチェックです。
 
-データパスでは、Artifact Registry は `ReadRelationships` と `LookupResources` を呼び出し、クライアント自身のトークンを変更せずに転送するため、ユーザーのアイデンティティがエンドツーエンドで流れます。これは、Rails のトークン交換エンドポイントが、要求されたオーディエンス（`gitlab-artifact-registry`）と並べて、すべてのトークンの `aud` 配列に `gitlab-iam-data-access` を追加することで機能します。 `LookupResources` がこのパスに含まれるのは、Artifact Registry がリクエストごとにその結果をすべて取得し、リポジトリ一覧の可視範囲を呼び出し元自身への権限付与に基づいて制限するためです。IAM は、`organization` を起点とするサブジェクトの ID を、転送されたトークンの `gitlab.origin_id` と `gitlab.local_id` に照合し、呼び出し元自身の組織に属するサブジェクトについてのみ、この呼び出しを許可します。
+データパスでは、Artifact Registry は `ReadRelationships` と `LookupResources` を呼び出し、クライアント自身のトークンを変更せずに転送するため、ユーザーのアイデンティティがエンドツーエンドで流れます。これは、Rails のトークン交換エンドポイントが、要求されたオーディエンス（`gitlab-artifact-registry`）と並べて、すべてのトークンの `aud` 配列に `gitlab-iam-data-access` を追加することで機能します。 `LookupResources` がこのパスに含まれるのは、Artifact Registry がリクエストごとにその結果をすべて取得し、リポジトリ一覧の可視範囲を呼び出し元自身への権限付与に基づいて制限するためです。IAM は、`organization` を起点とするサブジェクトの ID を、転送されたトークンの `gitlab.origin_id` と `gitlab.local_id` に照合し、呼び出し元自身の organization に属するサブジェクトについてのみ、この呼び出しを許可します。
 
 管理フローと UI フローは異なります。`LookupSubjects`、`LookupRelationships`、`WriteRelationships`、`DeleteRelationships`、`DeleteRelationshipsByFilter` は Rails GraphQL ラッパーから呼び出されます。このラッパーは Rails のトークン発行者から、独自の `gitlab-iam-data-access` スコープのトークンを要求します。
 
@@ -197,7 +197,7 @@ Cloud Connector v1 の仕組みを再利用することで、最初のイテレ�
 
 ## 参考文献
 
-1. [ADR-001: アンカーポイントとしての組織](001_organizations_as_anchor_point.md)
+1. [ADR-001: アンカーポイントとしての Organizations](001_organizations_as_anchor_point.md)
 1. ADR-021: 認可 — 認可のための対をなす ADR
 <!-- TODO: link to ADR-021 once merged — https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18717 -->
 1. [ADR-022: namespace の分離](022_namespace_decoupling.md)

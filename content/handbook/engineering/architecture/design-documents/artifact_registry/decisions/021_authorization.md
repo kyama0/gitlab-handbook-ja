@@ -84,7 +84,7 @@ Artifact Registry は、Artifact Registry にスコープされた、プラッ�
 
 ロールが割り当てられていないプリンシパルはアクセスできません（デフォルトでは閉じる）。クローズドベータではすべてのリポジトリが private であるため、割り当てなしで読み取り可能なものはありません。[リポジトリの可視性](#repository-visibility)を参照してください。
 
-Organization Administrator には、Artifact Admin と同等のフルアクセスが**ブートストラップ**されます（R6）。Organization Administrator は organization レベルの Owner と組織の関係、つまり owner と organization を束ねるタプルを持ちます。これは所有者の変更に合わせて継続的に維持されます（[Owner ロール割り当ての作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/601665)）。ポリシーエンジンは、そのタプルを organization の Artifact Registry namespace とその配下のすべてのリポジトリへの暗黙的アクセスとして扱います。この付与は暗黙的で取り消し不可です。owner であり続ける限り、取り消したりダウングレードしたりできません。これは通常の関係のレコードを通じて流れ、他の割り当てと同じように評価されるため、Artifact Registry 側で特別な処理は不要です。これにより、有効化時に割り当てがまだ存在しなくても、Organization Administrator がリポジトリを作成し、他のユーザーへロールを割り当てられることが保証されます。
+Organization Administrator には、Artifact Admin と同等のフルアクセスが**ブートストラップ**されます（R6）。Organization Administrator は organization レベルの Owner と organization の関係、つまり owner と organization を束ねるタプルを持ちます。これは所有者の変更に合わせて継続的に維持されます（[Owner ロール割り当ての作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/601665)）。ポリシーエンジンは、そのタプルを organization の Artifact Registry namespace とその配下のすべてのリポジトリへの暗黙的アクセスとして扱います。この付与は暗黙的で取り消し不可です。owner であり続ける限り、取り消したりダウングレードしたりできません。これは通常の関係のレコードを通じて流れ、他の割り当てと同じように評価されるため、Artifact Registry 側で特別な処理は不要です。これにより、有効化時に割り当てがまだ存在しなくても、Organization Administrator がリポジトリを作成し、他のユーザーへロールを割り当てられることが保証されます。
 
 カスタムロールはクローズドベータのスコープ外です。[カスタムロール](#custom-roles)を参照してください。
 
@@ -369,7 +369,7 @@ Artifact Registry は、auth platform に依存せず、独自のユーザー・
 
 ## 参考文献
 
-- [ADR-001: アンカーポイントとしての組織](001_organizations_as_anchor_point.md)
+- [ADR-001: アンカーポイントとしての Organizations](001_organizations_as_anchor_point.md)
 - [ADR-007: データベーススキーマ](007_database_schema.md) — アクセスルール
 - [ADR-009: API 設計](009_api_design.md) — 管理 API とクライアント API エンドポイント
 - [ADR-020: 認証フロー](020_authentication_flow.md) — アイデンティティの確立とトークン検証
@@ -382,5 +382,5 @@ Artifact Registry は、auth platform に依存せず、独自のユーザー・
 - [UI ゲーティングの方向性（gitlab#602144）](https://gitlab.com/gitlab-org/gitlab/-/work_items/602144#note_3532439195) — UI ゲーティングがレジストリの回答するアクションベースのチェックを使用するという合意
 - [GATE 設計ドキュメント](https://gitlab.com/gitlab-org/architecture/auth-architecture/design-doc/-/blob/main/design.md) — GitLab Adaptive Trust Environment
 - [Organization Teams のブループリント](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/17975)
-- [ADR-012: Artifact Registry の組織、ロール、権限](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/20030)
+- [ADR-012: Artifact Registry の Organizations、ロール、権限](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/20030)
 - [カスタムロールのロードマップ](https://gitlab.com/gitlab-org/gitlab/-/work_items/590721)
