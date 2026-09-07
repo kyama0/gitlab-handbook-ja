@@ -218,7 +218,7 @@ AMER、EMEA、APAC の 3 つのチームメンバーグループを作成する�
 - 30 分後、顧客が最初の連絡に応答していない場合は、緊急チケットをクローズして通常優先度のチケットをオープンしていることを通知してください。必要に応じて新しい緊急チケットを開けることも知らせてください。
 - PagerDuty で[スケジュール](https://gitlab.pagerduty.com/schedules#PIQ317K)と[エスカレーションポリシー](https://gitlab.pagerduty.com/escalation_policies#PKV6GCH)を確認できます。[オンコールスケジュールをサブスクライブ](https://support.pagerduty.com/main/docs/schedules-in-apps#export-only-your-on-call-shifts)することもでき、これは毎日更新されます。
 - アラート／インシデントがあった場合、各シフト後にオンコール担当者は次のオンコール担当者に何が起きたか、何が進行中かを説明し、適切な Issue とその進捗を示したハンドオフメールを送信します。
-- 現在のオンコールエンジニアに連絡する必要があり Slack でアクセスできない場合（例：週末またはシフトの終わり）は、[PagerDuty インシデントを手動でトリガー](https://support.pagerduty.com/main/docs/incidents#trigger-an-incident)して注意を引き、**Customer Support** を Impacted Service として選択して関連する Support Engineer にアサインできます。
+- 現在のオンコールエンジニアに連絡する必要があり Slack でアクセスできない場合（例: 週末またはシフトの終わり）は、[PagerDuty インシデントを手動でトリガー](https://support.pagerduty.com/main/docs/incidents#trigger-an-incident)して注意を引き、**Customer Support** を Impacted Service として選択して関連する Support Engineer にアサインできます。
 - 顧客緊急事態の処理に関するより包括的なガイドは [GitLab サポートオンコールガイド](/handbook/support/on-call)をご覧ください。
 
 ### セキュリティチームオンコールローテーション {#security-team-on-call-rotation}

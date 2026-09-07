@@ -152,7 +152,7 @@ Cloud Connector v1 の仕組みを再利用することで、最初のイテレ�
 
 各側が JWT を独立して検証します。Artifact Registry は入口で自身の期待するオーディエンスに対して検証し、relationships API は自身の側でもう一度検証します。両方のサービスに同じ検証ライブラリが組み込まれています。トークンの転送はチェックの委任ではなく、各側での完全かつ独立したチェックです。
 
-データパスでは、Artifact Registry は `ReadRelationships` と `LookupResources` を呼び出し、クライアント自身のトークンを変更せずに転送するため、ユーザーのアイデンティティがエンドツーエンドで流れます。これは、Rails のトークン交換エンドポイントが、要求されたオーディエンス（`gitlab-artifact-registry`）と並べて、すべてのトークンの `aud` 配列に `gitlab-iam-data-access` を追加することで機能します。 `LookupResources` がこのパスに含まれるのは、Artifact Registry がリクエストごとにその結果をすべて取得し、リポジトリ一覧の可視範囲を呼び出し元自身への権限付与に基づいて制限するためです。IAM は、転送されたトークンの `gitlab.origin_id` と `gitlab.local_id` に照合し、呼び出し元自身の組織に属する、`organization` を起点とするサブジェクトについてのみ、この呼び出しを許可します。
+データパスでは、Artifact Registry は `ReadRelationships` と `LookupResources` を呼び出し、クライアント自身のトークンを変更せずに転送するため、ユーザーのアイデンティティがエンドツーエンドで流れます。これは、Rails のトークン交換エンドポイントが、要求されたオーディエンス（`gitlab-artifact-registry`）と並べて、すべてのトークンの `aud` 配列に `gitlab-iam-data-access` を追加することで機能します。 `LookupResources` がこのパスに含まれるのは、Artifact Registry がリクエストごとにその結果をすべて取得し、リポジトリ一覧の可視範囲を呼び出し元自身への権限付与に基づいて制限するためです。IAM は、`organization` を起点とするサブジェクトの ID を、転送されたトークンの `gitlab.origin_id` と `gitlab.local_id` に照合し、呼び出し元自身の組織に属するサブジェクトについてのみ、この呼び出しを許可します。
 
 管理フローと UI フローは異なります。`LookupSubjects`、`LookupRelationships`、`WriteRelationships`、`DeleteRelationships`、`DeleteRelationshipsByFilter` は Rails GraphQL ラッパーから呼び出されます。このラッパーは Rails のトークン発行者から、独自の `gitlab-iam-data-access` スコープのトークンを要求します。
 
