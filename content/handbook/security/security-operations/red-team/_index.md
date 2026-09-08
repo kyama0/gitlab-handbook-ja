@@ -2,11 +2,11 @@
 title: "レッドチーム"
 no_list: true
 upstream_path: /handbook/security/security-operations/red-team/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T17:00:00Z"
+upstream_sha: "401db1960414fc91f11d1a68caf048b4d9aec1be"
+translated_at: "2026-09-08T21:10:47+00:00"
 translator: claude
 stale: false
-lastmod: "2026-04-09T16:05:51+10:00"
+lastmod: "2026-09-08T20:14:58Z"
 ---
 
 ## お探しの情報は何ですか？
@@ -67,7 +67,7 @@ lastmod: "2026-04-09T16:05:51+10:00"
 
 ### パープルチーミング
 
-パープルチームは、レッドチームとブルーチーム（私たちの防御チーム、通常は [SIRT](../sirt/) または [Signals Engineering](../signals-engineering)）の協力的な演習を表します。これらは以下のいずれかになります:
+パープルチームは、レッドチームとブルーチーム（私たちの防御チーム、通常は [SIRT](../sirt/) または [Detection Engineering](../detection-engineering)）の協力的な演習を表します。これらは以下のいずれかになります:
 
 - フラッシュオペレーション。これは [脅威インテリジェンスフラッシュレポート](../threat-intelligence/#threat-intelligence-reports) によってトリガーされる 1〜2 週間の演習で、新興の脅威に対する私たちの防御を迅速にテストするためのものです。または
 - 長期的なコラボレーション

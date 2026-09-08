@@ -6,9 +6,9 @@ authors: [ "@josephburnett" ]
 owning-stage: "~devops::deploy"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/gitlab_cd/rails/
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-lastmod: "2026-09-03T12:22:36+01:00"
-translated_at: "2026-09-04T11:43:17+09:00"
+upstream_sha: "401db1960414fc91f11d1a68caf048b4d9aec1be"
+lastmod: "2026-09-08T11:42:24+02:00"
+translated_at: "2026-09-08T21:05:07+00:00"
 translator: codex
 stale: false
 ---
@@ -220,8 +220,8 @@ erDiagram
         smallint from_state "nullable"
         smallint to_state
         text event "verb"
-        text principal_type "polymorphic actor"
-        bigint principal_id
+        text principal "polymorphic actor ref, e.g. user:1234"
+        text on_behalf_of "nullable; human ultimately responsible, if composite identity"
         text reason
         text triggered_by
         timestamptz created_at "append-only"
@@ -436,8 +436,8 @@ erDiagram
 | `from_state` | `smallint` | NULL 可 |
 | `to_state` | `smallint` | |
 | event | text | 動詞 |
-| `principal_type` | text | 多態なアクター |
-| `principal_id` | bigint | |
+| principal | text | 多態なアクター参照（`"user:1234"`、エージェント、ポリシー、スケジュール、システム）。外部キーではなく自由テキスト |
+| `on_behalf_of` | text | NULL 可。複合アイデンティティ（例: 自動ワークフロー）が行動した場合に、最終的な責任を負う人間 |
 | reason | text | NULL 可 |
 | `triggered_by` | text | NULL 可 |
 | `created_at` | `timestamptz` | 追記専用 |

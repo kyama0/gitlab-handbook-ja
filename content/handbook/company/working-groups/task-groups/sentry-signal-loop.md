@@ -2,9 +2,9 @@
 title: "Sentry Signal Loop"
 description: "フロントエンド Sentry をトリアージに役立つツールとして復活させるためのタスクグループ。ソースでノイズを削減し、Duo Developer によるトリアージを行う Sentry から GitLab Issue への自動化のプロトタイプを作成します。"
 upstream_path: /handbook/company/working-groups/task-groups/sentry-signal-loop/
-upstream_sha: 68426776f854464b95a942162d83ddb29afbcf7d
-lastmod: "2026-08-26T18:11:21+01:00"
-translated_at: "2026-09-04T11:09:38+09:00"
+upstream_sha: "401db1960414fc91f11d1a68caf048b4d9aec1be"
+lastmod: "2026-08-27T11:37:04+02:00"
+translated_at: "2026-09-08T21:08:18+00:00"
 translator: codex
 stale: false
 ---
@@ -14,7 +14,7 @@ stale: false
 | プロパティ        | 値                                                                                                          |
 | --------------- | -------------------------------------------------------------------------------------------------------------- |
 | 作成日    | 2026-05-19                                                                                               |
-| 目標終了日 | 2026-08-30                                                                                                     |
+| 目標終了日 | 2026-09-27                                                                                                     |
 | Slack           | [#tg_sentry_signal_loop](https://gitlab.enterprise.slack.com/archives/C0B41EVB4J3)（社内からのみアクセス可能）       |
 
 ## コンテキスト {#context}

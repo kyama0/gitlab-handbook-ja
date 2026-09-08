@@ -3,11 +3,11 @@ title: セキュリティオペレーション
 description: " "
 no_list: true
 upstream_path: /handbook/security/security-operations/
-upstream_sha: 1099e381063485f55ad7088a1ce8b80dd7077696
-translated_at: "2026-08-11T06:08:21+09:00"
+upstream_sha: "401db1960414fc91f11d1a68caf048b4d9aec1be"
+translated_at: "2026-09-08T21:10:47+00:00"
 translator: claude
 stale: false
-lastmod: "2026-08-10T10:42:11-04:00"
+lastmod: "2026-09-08T20:14:58Z"
 ---
 
 ## ミッション
@@ -24,7 +24,7 @@ lastmod: "2026-08-10T10:42:11-04:00"
 - [Trust & Safety](/handbook/security/security-operations/trustandsafety/) - GitLab.com プラットフォームの不正利用の防止と緩和
 - [Red Team](/handbook/security/security-operations/red-team/) - 敵対者エミュレーション
 - [Threat Intelligence](/handbook/security/security-operations/threat-intelligence/) - 現実世界の脅威に関する実用的な洞察
-- [Signals Engineering](/handbook/security/security-operations/signals-engineering/) - 検知エンジニアリング
+- [Detection Engineering](/handbook/security/security-operations/detection-engineering/) - 検知エンジニアリング
 - [Security Logging](/handbook/security/security-operations/security-logging/) - SIEM およびログ管理
 
 ## セキュリティオペレーションへのお問い合わせ

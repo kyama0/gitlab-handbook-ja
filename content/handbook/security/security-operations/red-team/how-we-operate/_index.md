@@ -2,11 +2,11 @@
 title: "レッドチームの運用方法"
 no_list: true
 upstream_path: /handbook/security/security-operations/red-team/how-we-operate/
-upstream_sha: 1e195b58b9f249ff10bd0e705106c320fee86141
-translated_at: "2026-05-09T17:00:00Z"
+upstream_sha: "401db1960414fc91f11d1a68caf048b4d9aec1be"
+translated_at: "2026-09-08T21:10:47+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-02T09:46:16+12:00"
+lastmod: "2026-09-08T20:14:58Z"
 ---
 
 ## 一般的な運用ガイドライン
@@ -52,7 +52,7 @@ lastmod: "2026-05-02T09:46:16+12:00"
 
 その後、オペレーションを要約し、セキュリティ態勢を改善するための私たちの推奨事項をまとめた[レポート](#reporting)をリリースします。[Issue テンプレート](https://gitlab.com/gitlab-com/gl-security/security-operations/redteam/redteam-public/resources/red-team-issue-templates)を使用して Issue を作成し、関連するラベルを適用し、これを使用して[メトリクス](#red-team-metrics)を追跡します。次に、関連する検知を作成できるように、ツールと技術をブルーチームに提供します。
 
-私たちはしばしば [Signals Engineering](../../signals-engineering/) および [Security Incident Response Team (SIRT)](../../sirt/) と協力して、発見事項、攻撃手順、検知とアラートをレビューします。
+私たちはしばしば [Detection Engineering](../../detection-engineering/) および [Security Incident Response Team (SIRT)](../../sirt/) と協力して、発見事項、攻撃手順、検知とアラートをレビューします。
 
 #### GitLab 全体のセキュリティ推奨事項
 

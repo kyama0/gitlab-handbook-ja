@@ -1,11 +1,11 @@
 ---
 title: GitLab.com のモニタリング
 upstream_path: /handbook/engineering/monitoring/
-upstream_sha: "30048133aad0232ed4d59fa0c80643620c85adb3"
-translated_at: "2026-08-04T06:05:19+09:00"
+upstream_sha: "401db1960414fc91f11d1a68caf048b4d9aec1be"
+translated_at: "2026-09-08T21:05:07+00:00"
 translator: "codex"
 stale: false
-lastmod: "2026-08-03T10:38:40-06:00"
+lastmod: "2026-09-08T14:12:51Z"
 ---
 
 ## GitLab.com サービス可用性
@@ -25,6 +25,7 @@ GitLab.com サービス可用性定義の計算方法論は、[モニタリン�
 
 | **年月** | **可用性** | **コメント** |
 | ---- | ----------- | ---- |
+| 2026 年 8 月 | 99.74% |  |
 | 2026年7月 | 99.98% |  |
 | 2026年6月 | 99.91% |  |
 | 2026年5月 | 99.47% |  |
