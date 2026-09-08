@@ -4,9 +4,9 @@ owning-stage: "~devops::package"
 description: "Artifact Registry の認証設計"
 toc_hide: true
 upstream_path: /handbook/engineering/architecture/design-documents/artifact_registry/decisions/020_authentication_flow/
-upstream_sha: "68426776f854464b95a942162d83ddb29afbcf7d"
-lastmod: "2026-08-18T14:06:58+02:00"
-translated_at: "2026-09-04T11:43:17+09:00"
+upstream_sha: "df66e66b937d38c1ed4e3dd452927ddf01be58b0"
+lastmod: "2026-09-07T15:22:46+02:00"
+translated_at: "2026-09-08T07:12:08+09:00"
 translator: codex
 stale: false
 ---
@@ -18,14 +18,14 @@ stale: false
 
 **提案中。**
 
-この ADR は **認証** のみを扱います。つまり、呼び出し元のアイデンティティをどう確立するかです。**認可**（ロール、ポリシー評価、ロール割り当て）は、ADR-021: Authorization で別途扱われます。
+この ADR は **認証** のみを扱います。つまり、呼び出し元のアイデンティティをどう確立するかです。**認可**（ロール、ポリシー評価、ロール割り当て）は、ADR-021: 認可 で別途扱われます。
 <!-- TODO: link to ADR-021 once merged — https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18717 -->
 
 ## コンテキスト
 
 クライアントは、専用の API エンドポイントを通じて自身の GitLab Rails インスタンスが発行する短命のトークンを使用して、Artifact Registry に認証します。Artifact Registry はこれらのトークンをローカルで検証し、その発行には関与しません。
 
-Auth Platform チームとの契約は [Artifact Registry and Auth Platform interface agreement](../agreements/auth.md) であり、これは Artifact Registry が必要とするものを 6 つの要件（R1〜R6）にわたって定義します。この ADR は、その認証要件、すなわち R1（トークン交換）、R2（トークン検証）、R3（トークンペイロード）を消費します。
+Auth Platform チームとの契約は [Artifact Registry と Auth Platform のインターフェイス合意](../agreements/auth.md) であり、これは Artifact Registry が必要とするものを 6 つの要件（R1〜R6）にわたって定義します。この ADR は、その認証要件、すなわち R1（トークン交換）、R2（トークン検証）、R3（トークンペイロード）を消費します。
 
 ## 決定
 
@@ -37,7 +37,7 @@ Auth Platform チームとの契約は [Artifact Registry and Auth Platform inte
 
 ## アーキテクチャ上の制約
 
-[interface agreement](../agreements/auth.md#no-callbacks-during-request-processing) からの 1 つの制約が、この決定を形作ります。
+[インターフェイス合意](../agreements/auth.md#no-callbacks-during-request-processing) からの 1 つの制約が、この決定を形作ります。
 
 **リクエスト処理中のコールバックなし。** Artifact Registry は、**リクエストを処理している間**、GitLab インスタンス、Rails、その他のリモートサービスにコールバックすることは決してありません。1 つのリモート依存性は持っています。信頼された発行者の公開鍵を定期的に帯域外で同期することです（[トークン検証](#token-validation-r2) を参照）。しかしそれはリクエストごとではなく、リクエスト処理の外で発生します。これはクロス境界のセットアップで最も重要になります。SaaS Artifact Registry に接続するセルフマネージドインスタンスでは、そのインスタンスがネットワーク条件（ファイアウォール、エアギャップ環境）によって到達不能になる可能性があります。リクエストトークンを検証するために必要なものはすべて、トークン自体の中にあるか、すでにローカルにキャッシュされていなければなりません。これが、ローカルでステートレスな検証を最適化ではなく厳格な要件にしている理由です。
 
@@ -81,10 +81,10 @@ sequenceDiagram
 
 Rails は、クライアントの認証情報を受け付け、Artifact Registry に対して使用可能な短命のトークンを返す、専用のトークン交換 API エンドポイントを公開します。
 
-1. **サポートされる認証情報の種類。** エンドポイントは、それぞれが `User` に解決される標準的な GitLab API の認証情報で呼び出し元を認証します。パーソナルアクセストークン（レガシーまたは粒度の細かいもの）、OAuth トークン、CI ジョブトークン、プロジェクト/グループアクセストークンです。**デプロイトークンは最初のイテレーションではサポートされません**。デプロイトークンは `User` ではなく、最初のイテレーションでトークンを発行する唯一のプリンシパル型は `User` です。型付けされた `sub` クレーム（[トークンペイロード](#token-payload-r3) を参照）は、後から他のプリンシパル型を受け入れられるように設計されているため、[R1](../agreements/auth.md#r1--token-exchange-service) のターゲットとして挙げられているデプロイトークンは、フォローアップとして追跡されます。
-1. **クライアント側の交換。** トークン交換はクライアント側で行われます。クライアントは自身の GitLab インスタンスからトークンを取得し、それを Artifact Registry に提示します。Artifact Registry が交換を実行することは決してありません。エンドポイントは `curl`、`glab` CLI、または CI ジョブによって自動的に駆動できます。トークンは短命であるため、静的な認証情報を期待するネイティブなパッケージツール（例: Maven の `settings.xml` や npm の `.npmrc`）は、それを取得・リフレッシュするためのヘルパーツールを必要とします。Docker、Maven、npm にまたがるクライアントツールの設計は [client credential management work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150) で追跡されています。
-1. **トークンの有効期間。** トークンはデフォルトの有効期間が 5 分、最大が 12 時間です。クライアントは、デフォルトより長いものを含め、1 秒から 12 時間の上限まで任意の有効期間を要求できます。クライアントが要求可能な TTL には AppSec のサインオフが必要です（[token-exchange TTL decision](https://gitlab.com/gitlab-org/gitlab/-/work_items/601469)）。この境界は、Maven/Gradle のビルドが処理の途中で期限切れにならない限りにおいて、[client credential management work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150) に文書化された委任認証レジストリの業界の前例に従います。
-1. **有効化の強制。** トークン交換は、Artifact Registry を有効化していない組織に対しては失敗すべきです（R1、SHOULD）。これは可用性のゲートにすぎず、リポジトリごとの認可は Artifact Registry に留まります。このチェックは、組織レベルの有効化設定を所有する Rails 側で、トークン発行時に実行されます。アクセスは Unit Primitives やアドオンに依存しません。クレジットベースの課金モデルでは Artifact Registry アドオンが存在しないためです。Artifact Registry 側では、namespace レベルでアクセスを強制します。組織 UUID であるトークンの `gitlab.origin_id` クレームは、namespace の owner anchor（[ADR-001](001_organizations_as_anchor_point.md)）の `entity_id` と一致しなければなりません。これは組織の認識を必要としない不透明な比較です。有効化は、権限を評価するのではなくトークンの *発行* をゲートするため、[ADR-021](021_authorization.md) ではなくここに記録されます。
+1. **サポートされる認証情報の種類。** エンドポイントは、それぞれが `User` に解決される標準的な GitLab API の認証情報で呼び出し元を認証します。パーソナルアクセストークン（レガシーまたは粒度の細かいもの）、OAuth トークン、CI ジョブトークン、プロジェクト/グループアクセストークンです。**デプロイトークンは最初のイテレーションではサポートされません**。デプロイトークンは、最初のイテレーションでトークンを発行する唯一のプリンシパル型である `User` ではありません。型付けされた `sub` クレーム（[トークンペイロード](#token-payload-r3) を参照）は、後から他のプリンシパル型を受け入れられるように設計されているため、[R1](../agreements/auth.md#r1--token-exchange-service) のターゲットとして挙げられているデプロイトークンは、フォローアップとして追跡されます。
+1. **クライアント側の交換。** トークン交換はクライアント側で行われます。クライアントは自身の GitLab インスタンスからトークンを取得し、それを Artifact Registry に提示します。Artifact Registry が交換を実行することは決してありません。エンドポイントは `curl`、`glab` CLI、または CI ジョブによって自動的に駆動できます。トークンは短命であるため、静的な認証情報を期待するネイティブなパッケージツール（例: Maven の `settings.xml` や npm の `.npmrc`）は、それを取得・リフレッシュするためのヘルパーツールを必要とします。Docker、Maven、npm にまたがるクライアントツールの設計は [クライアント認証情報管理の作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150) で追跡されています。
+1. **トークンの有効期間。** トークンはデフォルトの有効期間が 5 分、最大が 12 時間です。クライアントは、デフォルトより長いものを含め、1 秒から 12 時間の上限まで任意の有効期間を要求できます。クライアントが要求可能な TTL には AppSec のサインオフが必要です（[トークン交換の TTL に関する決定](https://gitlab.com/gitlab-org/gitlab/-/work_items/601469)）。この境界は、Maven/Gradle のビルドが処理の途中で期限切れにならない限りにおいて、[クライアント認証情報管理の作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150) に文書化された委任認証レジストリの業界の前例に従います。
+1. **有効化の強制。** トークン交換は、Artifact Registry を有効化していない organization に対しては失敗すべきです（R1、SHOULD）。これは可用性のゲートにすぎず、リポジトリごとの認可は Artifact Registry に留まります。このチェックは、organization レベルの有効化設定を所有する Rails 側で、トークン発行時に実行されます。アクセスは Unit Primitives やアドオンに依存しません。クレジットベースの課金モデルでは Artifact Registry アドオンが存在しないためです。Artifact Registry 側では、namespace レベルでアクセスを強制します。organization UUID であるトークンの `gitlab.origin_id` クレームは、namespace の owner anchor（[ADR-001](001_organizations_as_anchor_point.md)）の `entity_id` と一致しなければなりません。これは organization の認識を必要としない不透明な比較です。有効化は、権限を評価するのではなくトークンの *発行* をゲートするため、[ADR-021](021_authorization.md) ではなくここに記録されます。
 
 ## トークン検証 (R2) {#token-validation-r2}
 
@@ -122,7 +122,7 @@ Cloud Connector v1 の仕組みを再利用することで、最初のイテレ�
 1. `iss` — 発行インスタンスの OIDC 発行者 URL。これは情報提供のみ（ログ記録される）であり、Artifact Registry はこれを検証鍵の選択に **使用しない**（[トークン検証](#token-validation-r2) を参照）。
 1. `aud` — 2 つの値を運ぶ。クライアントが要求したオーディエンスである `gitlab-artifact-registry` と、`gitlab-iam-data-access` である。2 つ目の値により、Artifact Registry は同じトークンを変更せずに relationships API へ転送できる。[サービス間認証](#service-to-service-authentication) を参照。
 1. `ver` — トークンペイロードのスキーマバージョン。現在は `1` であり、ペイロードの形状に破壊的変更がある場合にのみ上げられる。IAM のバリデーターはそれ以外の値を拒否する。
-1. `gitlab` — 呼び出し元のコンテキストを運ぶネストされたオブジェクト。`origin`（`organization`。ローンチ時の唯一の値）、`origin_id`（組織の UUID）、`local_id`（ユーザー ID）、`identity_kind`（`user`）、`organization_role`（`owner` または `member`）を含む。
+1. `gitlab` — 呼び出し元のコンテキストを運ぶネストされたオブジェクト。`origin`（`organization`。ローンチ時の唯一の値）、`origin_id`（organization の UUID）、`local_id`（ユーザー ID）、`identity_kind`（`user`）、`organization_role`（`owner` または `member`）を含む。
 1. `gitlab.organization_role` は、認可を運ぶクレームを ADR-021 で扱うという以下のルールの唯一の例外である。ロール割り当てが存在する前に読み取られるため、relationships API を通じて解決できない。何を認可するか、すなわち R6 のブートストラップ要件については [ADR-021](021_authorization.md) を参照。
 1. `jti`、`iat`、`nbf`、`exp` — 標準的な JWT クレーム。`exp = iat + ttl`。
 1. `gitlab_instance_uid` は **現時点では省略される**。最初のイテレーションの同一境界トポロジーには単一の信頼アンカーがあるため、インスタンス識別子は不要である。それはクロス境界のフォローアップでのみ関連する。
@@ -152,9 +152,9 @@ Cloud Connector v1 の仕組みを再利用することで、最初のイテレ�
 
 各側が JWT を独立して検証します。Artifact Registry は入口で自身の期待するオーディエンスに対して検証し、relationships API は自身の側でもう一度検証します。両方のサービスに同じ検証ライブラリが組み込まれています。トークンの転送はチェックの委任ではなく、各側での完全かつ独立したチェックです。
 
-データパスでは、Artifact Registry は `ReadRelationships` を呼び出し、クライアント自身のトークンを変更せずに転送するため、ユーザーのアイデンティティがエンドツーエンドで流れます。これは、Rails のトークン交換エンドポイントが、要求されたオーディエンス（`gitlab-artifact-registry`）と並べて、すべてのトークンの `aud` 配列に `gitlab-iam-data-access` を追加することで機能します。
+データパスでは、Artifact Registry は `ReadRelationships` と `LookupResources` を呼び出し、クライアント自身のトークンを変更せずに転送するため、ユーザーのアイデンティティがエンドツーエンドで流れます。これは、Rails のトークン交換エンドポイントが、要求されたオーディエンス（`gitlab-artifact-registry`）と並べて、すべてのトークンの `aud` 配列に `gitlab-iam-data-access` を追加することで機能します。 `LookupResources` がこのパスに含まれるのは、Artifact Registry がリクエストごとにその結果をすべて取得し、リポジトリ一覧の可視範囲を呼び出し元自身への権限付与に基づいて制限するためです。IAM は、`organization` を起点とするサブジェクトの ID を、転送されたトークンの `gitlab.origin_id` と `gitlab.local_id` に照合し、呼び出し元自身の organization に属するサブジェクトについてのみ、この呼び出しを許可します。
 
-管理フローと UI フローは異なります。`LookupResources`、`LookupSubjects`、`LookupRelationships`、`WriteRelationships`、`DeleteRelationships`、`DeleteRelationshipsByFilter` は Rails GraphQL ラッパーから呼び出されます。このラッパーは Rails のトークン発行者から、独自の `gitlab-iam-data-access` スコープのトークンを要求します。
+管理フローと UI フローは異なります。`LookupSubjects`、`LookupRelationships`、`WriteRelationships`、`DeleteRelationships`、`DeleteRelationshipsByFilter` は Rails GraphQL ラッパーから呼び出されます。このラッパーは Rails のトークン発行者から、独自の `gitlab-iam-data-access` スコープのトークンを要求します。
 
 この接続で除外されるヘルス RPC は、`grpc.health.v1.Health/Check`、`Watch`、`List`、および各サービス自身の `Health` RPC です。
 
@@ -166,7 +166,7 @@ Cloud Connector v1 の仕組みを再利用することで、最初のイテレ�
 
 ## 検討した代替案
 
-この ADR は代替の認証アーキテクチャを比較検討しません。Artifact Registry 側の設計は、[Artifact Registry and Auth Platform interface agreement](../agreements/auth.md) から導かれます。Artifact Registry は R1〜R3 の要件を消費し、メカニズムはそれらをどう実装するかに関する Authentication チームの決定によって駆動されます。代替案はプラットフォーム側で評価されており（[モジュラーサービスモデルにおける認証および認可の方向性](https://gitlab.com/gitlab-org/gitlab/-/work_items/595148) を参照）、ここではスコープ外です。
+この ADR は代替の認証アーキテクチャを比較検討しません。Artifact Registry 側の設計は、[Artifact Registry と Auth Platform のインターフェイス合意](../agreements/auth.md) から導かれます。Artifact Registry は R1〜R3 の要件を消費し、メカニズムはそれらをどう実装するかに関する Authentication チームの決定によって駆動されます。代替案はプラットフォーム側で評価されており（[モジュラーサービスモデルにおける認証および認可の方向性](https://gitlab.com/gitlab-org/gitlab/-/work_items/595148) を参照）、ここではスコープ外です。
 
 ## 帰結
 
@@ -191,23 +191,23 @@ Cloud Connector v1 の仕組みを再利用することで、最初のイテレ�
 これらは未解決の認証に関する問いであり、最初のイテレーションではスコープ外ですが、失われないように記録しています。ほとんどはクロス境界のフォローアップとターゲット（GATE）状態の周辺に集まっています。
 
 1. **GATE のデプロイトポロジー。** ターゲット状態では、発行者キーは発行インスタンス自身の OIDC/JWKS エンドポイントではなく GATE が提供する。GATE がどのようにデプロイされるかに応じて、Artifact Registry は対応する GATE コンポーネントから発行者キーを取得する。デプロイトポロジーはまだ確定していない。
-1. **クロス境界の発行者キーと `gitlab_instance_uid`。** 最初のイテレーションは単一の信頼アンカーがあるため `gitlab_instance_uid` を省略する。クロス境界のフォローアップでは、1 つの信頼アンカーの背後に多数のセルフマネージドインスタンスがあるため、トークンは発行インスタンスを識別しなければならない。`gitlab_instance_uid`（または同等のもの）の再導入と、それに伴う検証モデルの変更は未解決である。CI 固有のケース、すなわち SaaS Artifact Registry に接続するリモートランナーのための自動 `CI_JOB_TOKEN` 交換は、このフォローアップに含まれ、[CI_JOB_TOKEN exchange for remote runners work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/599087) で追跡されている。
-1. **定期的な JWKS リフレッシュはまだ実装されていない。** [トークン検証 (R2)](#token-validation-r2) は望ましい状態を説明している。現在、共有検証ライブラリは起動時に JWKS を 1 度取得するだけで、定期的なリフレッシュも古いキーの保持も行わない。そのため、発行者の署名キーローテーション後に新しく署名されたトークンは、プロセスが再起動するまで拒否される。[JWKS refresh work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/616174) で追跡されており、出荷された時点でこの項目は削除される。
+1. **クロス境界の発行者キーと `gitlab_instance_uid`。** 最初のイテレーションは単一の信頼アンカーがあるため `gitlab_instance_uid` を省略する。クロス境界のフォローアップでは、1 つの信頼アンカーの背後に多数のセルフマネージドインスタンスがあるため、トークンは発行インスタンスを識別しなければならない。`gitlab_instance_uid`（または同等のもの）の再導入と、それに伴う検証モデルの変更は未解決である。CI 固有のケース、すなわち SaaS Artifact Registry に接続するリモートランナーのための自動 `CI_JOB_TOKEN` 交換は、このフォローアップに含まれ、[リモート Runner 向け CI_JOB_TOKEN 交換の作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/599087) で追跡されている。
+1. **定期的な JWKS リフレッシュはまだ実装されていない。** [トークン検証 (R2)](#token-validation-r2) は望ましい状態を説明している。現在、共有検証ライブラリは起動時に JWKS を 1 度取得するだけで、定期的なリフレッシュも古いキーの保持も行わない。そのため、発行者の署名キーローテーション後に新しく署名されたトークンは、プロセスが再起動するまで拒否される。[JWKS リフレッシュの作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/616174) で追跡されており、出荷された時点でこの項目は削除される。
 1. **ターゲット状態のサービス認証情報。** サービストークンは暫定的なメカニズムである。方向性は、共有シークレットを相互 TLS とワークロードアイデンティティに置き換え、SPIFFE 形式の呼び出し元識別子を使用し、呼び出し元のアイデンティティを GitLab Unified Request Token（[URT](https://gitlab.com/gitlab-org/architecture/auth-architecture/design-doc/-/blob/main/glossary.md)）で運ぶことである。どちらの方向性も決定されておらず、URT はまだ存在しない。
 
 ## 参考文献
 
-1. [ADR-001: Organizations as Anchor Point](001_organizations_as_anchor_point.md)
-1. ADR-021: Authorization — 認可のための対をなす ADR
+1. [ADR-001: アンカーポイントとしての Organizations](001_organizations_as_anchor_point.md)
+1. ADR-021: 認可 — 認可のための対をなす ADR
 <!-- TODO: link to ADR-021 once merged — https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/18717 -->
-1. [ADR-022: Namespace Decoupling](022_namespace_decoupling.md)
-1. [Artifact Registry and Auth Platform interface agreement](../agreements/auth.md) — ここで消費される R1〜R3（認証）の要件
-1. [Authentication and authorization direction work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/595148)
-1. [Client credential management for remote artifact clients](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150)
-1. [Token-exchange endpoint work item](https://gitlab.com/gitlab-org/gitlab/-/work_items/601475)
-1. [GATE identity federation design doc (cross-boundary auth)](https://gitlab.com/gitlab-org/architecture/auth-architecture/design-doc/-/blob/main/decisions/019-gate-identity-federation.md)
-1. [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) — interface agreement で使用される要件レベルのキーワード
-1. [OCI Distribution Spec - Authentication](https://github.com/opencontainers/distribution-spec/blob/main/spec.md#authentication)
-1. [Container Registry Token Authentication](https://docs.docker.com/registry/spec/auth/token/)
-1. [IAM service access documentation](https://gitlab.com/gitlab-org/auth/iam/-/blob/main/docs/service-access.md) — IAM サービスが強制する 2 つの認証レイヤー
+1. [ADR-022: namespace の分離](022_namespace_decoupling.md)
+1. [Artifact Registry と Auth Platform のインターフェイス合意](../agreements/auth.md) — ここで消費される R1〜R3（認証）の要件
+1. [認証と認可の方向性に関する作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/595148)
+1. [リモートアーティファクトクライアントの認証情報管理](https://gitlab.com/gitlab-org/gitlab/-/work_items/595150)
+1. [トークン交換エンドポイントの作業アイテム](https://gitlab.com/gitlab-org/gitlab/-/work_items/601475)
+1. [GATE アイデンティティフェデレーション設計ドキュメント（境界をまたぐ認証）](https://gitlab.com/gitlab-org/architecture/auth-architecture/design-doc/-/blob/main/decisions/019-gate-identity-federation.md)
+1. [RFC 2119](https://www.rfc-editor.org/rfc/rfc2119) — インターフェイス合意で使用される要件レベルのキーワード
+1. [OCI Distribution 仕様 - 認証](https://github.com/opencontainers/distribution-spec/blob/main/spec.md#authentication)
+1. [Container Registry のトークン認証](https://docs.docker.com/registry/spec/auth/token/)
+1. [IAM サービスアクセスドキュメント](https://gitlab.com/gitlab-org/auth/iam/-/blob/main/docs/service-access.md) — IAM サービスが強制する 2 つの認証レイヤー
 1. [IAM relationships API](https://gitlab.com/gitlab-org/auth/iam/-/blob/main/docs/relationships-api.md) — 契約と RPC ごとのトークン要件

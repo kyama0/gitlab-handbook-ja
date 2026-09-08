@@ -2,9 +2,9 @@
 title: Support Innovation Group (SIG)
 description: Support Innovation Group（SIG）は、Support、IT、Product をつなぎ、AI を活用したワークフロー、ナレッジ、サポートイノベーションを推進する、GitLab の部門横断的な取り組みです。
 upstream_path: /handbook/support/sig/
-upstream_sha: 35c2295ab7e9139fbe16bd8b69e1712d0ef14206
-lastmod: "2026-09-01T08:13:52-04:00"
-translated_at: "2026-09-03T23:52:33+09:00"
+upstream_sha: "df66e66b937d38c1ed4e3dd452927ddf01be58b0"
+lastmod: "2026-09-07T05:44:28-04:00"
+translated_at: "2026-09-08T07:04:23+09:00"
 translator: codex
 stale: false
 ---
@@ -95,4 +95,4 @@ SIG Support チームメンバーは、以下を行います。
 
 ## SIG リソース
 
-- [Support Innovation Group Slack チャネル](https://gitlab.slack.com/archives/CHANNEL_ID)
+- [Support Innovation Group Slack チャネル](https://gitlab.enterprise.slack.com/archives/C0AQPCFQ6T0)

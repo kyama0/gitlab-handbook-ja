@@ -2,11 +2,11 @@
 title: "TMRG - Global Voices"
 description: "GitLab の Global Voices TMRG"
 upstream_path: "/handbook/company/culture/inclusion/tmrg-tmag/tmrg-global-voices/"
-upstream_sha: "a15c0bfc1dd89fbbe4aff8969605eb60ab63f1ca"
-translated_at: "2026-07-17T06:09:44+09:00"
+upstream_sha: "df66e66b937d38c1ed4e3dd452927ddf01be58b0"
+translated_at: "2026-09-08T07:04:23+09:00"
 translator: codex
 stale: false
-lastmod: "2026-07-16T18:03:25+02:00"
+lastmod: "2026-09-07T11:40:25+02:00"
 ---
 
 ## ミッション
@@ -21,19 +21,18 @@ Global Voices TMRG には、3 つの主要目標があります。
 2. **発想を促す**: GitLab 社員の日常におけるグローバルなインクルーシブネスを改善するアイデアを促す
 3. **擁護する**: 組織全体でグローバルな多様性を推進する
 
-## リード
+## リード {#leads}
 
-1. [Bindu Upadhyay](https://gitlab.com/binduupadhyay) - 共同リード
-1. [Rakhi Reddy](https://gitlab.com/rakhireddy) - 共同リード
-1. [Ravi Kumar](https://gitlab.com/rkumar555) - 共同リード
+1. [Bindu Upadhyay](https://gitlab.com/binduupadhyay) - Co-Lead
+1. [Rakhi Reddy](https://gitlab.com/rakhireddy) - Co-Lead
+1. [Ravi Kumar](https://gitlab.com/rkumar555) - Co-Lead
 
-もう 1 名の共同リードを歓迎しており、アイデアを持つボランティアをぜひお待ちしています。
+もう 1 名の Co-Lead を歓迎しており、アイデアを持つボランティアをぜひお待ちしています。
 
 ## エグゼクティブスポンサー
 
-TBC
-
-## 現在の目標
+1. [Sherrod Patching](https://gitlab.com/spatching) - Co-Sponsor
+1. [Namo Tiwari](https://gitlab.com/namotiwari) - Co-Sponsor
 
 以下の各目標は、これらの目標の 1 つ以上に対応しています:
 
