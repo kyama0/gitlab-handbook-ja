@@ -2,11 +2,11 @@
 title: "データチームプラットフォーム"
 description: "GitLabデータチームプラットフォーム"
 upstream_path: /handbook/enterprise-data/platform/
-upstream_sha: "c75ccd81af7d76262c8cb188bf7e7e2a7f838894"
-translated_at: "2026-07-31T07:45:00+09:00"
+upstream_sha: "401db1960414fc91f11d1a68caf048b4d9aec1be"
+translated_at: "2026-09-08T21:05:07+00:00"
 translator: codex
 stale: false
-lastmod: "2026-07-28T22:48:58+00:00"
+lastmod: "2026-09-08T21:16:07+02:00"
 ---
 
 ## データプラットフォームのビジョン
@@ -1278,7 +1278,13 @@ Qualtricsメーリングリストデータポンププロセス（コード内�
 
 プロセス中、Google Sheetが更新され、プロセスのステータスが反映されます。最初の列の名前は、プロセスが開始されたときに `processing` に設定され、その後メーリングリストと連絡先がQualtricsにアップロードされたときに `processed` に設定されます。列の名前を変更することで、リクエスト者にプロセスのステータスが通知され、デバッグの支援、そして各スプレッドシートに対してメーリングリストが一度だけ作成されることが確実になります。
 
-エンドユーザー体験は [UX Qualtrics page](/handbook/upstream-studios/experience-research/surveys/qualtrics/#distributing-your-survey-to-gitlabcom-users) で説明されています。
+ファイルの処理が完了すると、Google Drive 上でもファイル名に `archived_` というプレフィックスが付き、`qualtrics_mailing_list.MyList` は `archived_qualtrics_mailing_list.MyList` になります。DAG は名前が `qualtrics_mailing_list` で始まるファイルだけを読み込むため、名前を変更すると処理済みファイルが処理対象から外れ、以降の実行で再び開かれることはありません。これは機能上の対策ではなく、パフォーマンス上の対策です。`processed` という列名ですでに再処理は防止されていますが、名前を変更しないと、これまでに提出されたすべてのファイルを実行のたびにダウンロードして確認することになります。なお、Drive のサブフォルダーにファイルを移動しても、この効果は**ありません**。パイプラインはフォルダーに関係なくアクセス可能なすべてのスプレッドシートを列挙し、ファイル名だけで絞り込むためです。
+
+正常に完了した実行だけがアーカイブされます。最初の列の名前は、正確に `processed` でなければなりません。`processed except [...]` と表示されるファイルはアーカイブ**されません**。この状態は Qualtrics が一部の連絡先を拒否したことを意味し、誰かが確認できるようにファイルを処理対象に残しておく必要があるためです。Qualtrics のエラー状態のまま残ったファイルも、再試行の対象として認識できるよう元の名前を維持します。最初の列がそもそも `id` ではなかったファイルも同様です。
+
+DAG は 2 時間ごとに実行されるため、新たに提出されたファイルはその時間内に処理対象になります。リクエストが緊急の場合は、Airflow で手動実行することもできます。
+
+エンドユーザー体験は [UX Qualtrics ページ](/handbook/upstream-studios/experience-research/surveys/qualtrics/#distributing-your-survey-to-gitlabcom-users)で説明されています。
 
 ##### Qualtricsプロセスのデバッグ
 
@@ -1288,7 +1294,8 @@ Qualtricsメーリングリストリクエストファイルを再処理する�
     1. AirflowでQualtrics Sheetload DAGを無効にします。
     2. エラーが発生しているスプレッドシートから作成されたQualtricsの任意のメーリングリストを削除します。`Qualtrics - API user` 認証情報を使用してQualtricsにログインし、メーリングリストを削除できるはずです。メーリングリストの名前は、`qualtrics_mailing_list.` の後のスプレッドシートファイルの名前に対応します。これはスプレッドシートファイルのタブの名前と同じである必要もあります。
     3. エラーが発生しているファイルのセルA1を `id` に編集します。
-    4. AirflowでQualtrics Sheetload DAGを再度有効にし、Airflowタスクログを密接に監視しながら実行させます。
+    4. ファイル名に `archived_` というプレフィックスが付いている場合は、そのプレフィックスを削除して、ファイル名が再び `qualtrics_mailing_list.` で始まるようにします。この手順と前の手順の両方が必要です。プレフィックスはファイルを読み込むかどうかを制御し、セル A1 は読み込んだ後に処理するかどうかを制御します。
+    5. Airflow で Qualtrics Sheetload DAG を再度有効にし、Airflow タスクログを注意深く監視しながら実行させます。
 
 ## <i class="fas fa-toggle-on -text-purple"></i>Data Spigot {#data-spigot}
 

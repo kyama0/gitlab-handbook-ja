@@ -4,11 +4,11 @@ category: GitLab.com
 subcategory: Billing
 description: "ダウンタイムによるクレジットの顧客リクエストを処理するためのワークフロー"
 upstream_path: /handbook/support/workflows/downtime_credits_workflow/
-upstream_sha: 47fdb6582389288bed0f04a23aa5d972c3ce1ff5
-translated_at: "2026-05-08T21:00:00Z"
+upstream_sha: "401db1960414fc91f11d1a68caf048b4d9aec1be"
+translated_at: "2026-09-08T21:05:07+00:00"
 translator: claude
 stale: false
-lastmod: "2026-02-09T20:42:10+00:00"
+lastmod: "2026-09-07T22:39:10Z"
 ---
 
 ## フローチャート
@@ -91,7 +91,7 @@ flowchart TD
 - **Monthly Uptime**: モニタリングデータから計算した、暦月中に GitLab.com サービスが利用可能だった時間の割合。
 - **Eligible Customer**: GitLab.com または GitLab Dedicated（Self-Managed ではない）で、新規または更新された Ultimate サブスクリプションを持つ顧客。サブスクリプションは 2025-12-01 以降の開始日を持つ必要があるか、組織のメモに例外が記載されている必要があります。
 - **Affected Month**: ダウンタイムが発生した暦月。
-- **Credit Tiers**: クレジットは月間稼働時間の割合に基づいて計算されます。クレジット計算については [SLA ハンドブックページ](https://gitlab.com/gitlab-com/content-sites/handbook/-/merge_requests/15942/diffs#c01d3f1a95e516a85744800ee399622ba1e31df3_0_96) を参照してください。
+- **Credit Tiers**: クレジットは月間稼働時間の割合に基づいて計算されます。クレジット計算については [SLA ハンドブックページ](/handbook/engineering/infrastructure-platforms/service-level-agreement/#service-credits) を参照してください。
 
 ## 適格要件
 

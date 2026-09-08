@@ -2,11 +2,11 @@
 title: "タスクグループ"
 description: "クロスファンクショナルな性質の特定タスクに対処するためのアプローチ。タスクグループは、専門知識を持つ特定分野の専門家で構成される、DRI（直接責任者）が率いるリーンで集中したグループです。"
 upstream_path: /handbook/company/working-groups/task-groups/
-upstream_sha: 877082e5cd4baeabe3d6e802b3b4b1efdb6573f1
-translated_at: "2026-05-23T12:00:00Z"
+upstream_sha: "401db1960414fc91f11d1a68caf048b4d9aec1be"
+translated_at: "2026-09-08T21:08:18+00:00"
 translator: claude
 stale: false
-lastmod: "2026-05-20T13:21:20+01:00"
+lastmod: "2026-09-08T19:46:21+02:00"
 ---
 
 ## タスクグループとは？
@@ -75,6 +75,7 @@ lastmod: "2026-05-20T13:21:20+01:00"
 
 1. [アクセシビリティ監査トリアージ](https://internal.gitlab.com/handbook/company/internal-working-groups/internal-task-groups/accessibility-audit-triage)
 1. [BootstrapVue 削除](bootstrap-vue-removal/)
+1. [インテリジェントなモデル選択](intelligent-model-selection/)
 1. [Sentry Signal Loop](sentry-signal-loop/)
 
 ## 過去のタスクグループ（アルファベット順）
