@@ -1,6 +1,6 @@
 ---
-title: Proof of Value (POV)
-description: Proof of Value (POV)
+title: 価値実証 (POV)
+description: 価値実証 (POV)
 upstream_path: /handbook/solutions-architects/playbooks/pov/_index_bak/
 upstream_sha: a0d167307f5d32554672c5cf99e3f47abb35e1dc
 translated_at: "2026-09-08T23:15:08+00:00"
@@ -9,9 +9,9 @@ stale: false
 lastmod: "2026-09-08T01:01:41-04:00"
 ---
 
-## Proof of Value (POV)
+## 価値実証 (POV) {#proof-of-value-pov}
 
-Proof of Value (POV) は、見極めの済んだ見込み顧客／顧客と GitLab との間で行う構造化された協働的なエンゲージメントであり、GitLab が顧客特有の技術的課題とビジネス目標に対応する最適なソリューションであることを示すことで、確固たる技術的な勝利を達成することを目的としています。POV は次の 5 つの重要なアウトカムを検証します。
+価値実証 (POV) は、見極めの済んだ見込み顧客／顧客と GitLab との間で行う構造化された協働的なエンゲージメントであり、GitLab が顧客特有の技術的課題とビジネス目標に対応する最適なソリューションであることを示すことで、確固たる技術的な勝利を達成することを目的としています。POV は次の 5 つの重要なアウトカムを検証します。
 
 - 技術的検証 - GitLab の機能が必要な機能および運用ワークフローを満たす、もしくは上回ることを実証可能な形で示す
 - 第一候補のソリューション - GitLab が代替案と比較して明確なリーダーまたは最も有利な技術選択肢として認識される
