@@ -436,7 +436,7 @@ erDiagram
 | `from_state` | `smallint` | NULL 可 |
 | `to_state` | `smallint` | |
 | event | text | 動詞 |
-| principal | text | 多態なアクター参照（`"user:1234"`、エージェント、ポリシー、スケジュール、システム）。外部キーではなく自由テキスト |
+| principal | text | 多態なアクター参照（`"user:1234"`、agent、policy、schedule、system）。外部キーではなく自由テキスト |
 | `on_behalf_of` | text | NULL 可。複合アイデンティティ（例: 自動ワークフロー）が行動した場合に、最終的な責任を負う人間 |
 | reason | text | NULL 可 |
 | `triggered_by` | text | NULL 可 |
