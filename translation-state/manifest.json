@@ -9306,11 +9306,11 @@
     },
     "content/handbook/engineering/architecture/design-documents/teams/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/teams/_index.md",
-      "upstream_sha": "18de125bd3131a62f0a7026bc69c7de124fc6c8a",
-      "translated_at": "2026-06-20T12:49:33Z",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "translated_at": "2026-09-08T22:49:12Z",
       "model": "codex",
-      "input_hash": "9d53192cf13b46e15cb05b418a21f9d004a834c8601354eb791c12c394976a2f",
-      "upstream_committed_at": "2026-06-18T11:31:48+12:00"
+      "input_hash": "7e61318bba8ad359048906461bc6b3317b57d193362ed95d60f598f6652d5aae",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00"
     },
     "content/handbook/engineering/architecture/design-documents/token_consolidation/_index.md": {
       "path": "content/handbook/engineering/architecture/design-documents/token_consolidation/_index.md",
@@ -22570,19 +22570,19 @@
     },
     "content/handbook/solutions-architects/playbooks/pov/_index.md": {
       "path": "content/handbook/solutions-architects/playbooks/pov/_index.md",
-      "upstream_sha": "886c0f074266fdc336cfcc58cd53699da6c71a73",
-      "translated_at": "2026-07-25T06:17:55+09:00",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "translated_at": "2026-09-08T23:15:08+00:00",
       "model": "codex",
-      "input_hash": "0bb59dbd17eae744f3d2ab2919c839ffc634409494b1e31bdb247f2b550d5637",
-      "upstream_committed_at": "2026-07-24T14:14:48+00:00"
+      "input_hash": "f123e8c2998bc1dac43a110cbabe3337e540c2ab36ceb0d3158e7699cd4cd6bc",
+      "upstream_committed_at": "2026-09-08T01:01:41-04:00"
     },
     "content/handbook/solutions-architects/playbooks/pov/ai.md": {
       "path": "content/handbook/solutions-architects/playbooks/pov/ai.md",
-      "upstream_sha": "1e195b58b9f249ff10bd0e705106c320fee86141",
-      "translated_at": "2026-05-09T00:00:00Z",
-      "model": "claude-opus-4-7",
-      "input_hash": "20ee90181325a9705dafe88b55570e5e9d5298bc5a03674a88f4274f1bb96570",
-      "upstream_committed_at": "2026-05-08T14:07:20+02:00"
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "translated_at": "2026-09-08T23:21:17+00:00",
+      "model": "codex",
+      "input_hash": "a3a4436de58b876a352a75dfd00c5d5bdb69110d0d9b553876569452fd70b19a",
+      "upstream_committed_at": "2026-09-08T01:01:41-04:00"
     },
     "content/handbook/solutions-architects/playbooks/pov/automation.md": {
       "path": "content/handbook/solutions-architects/playbooks/pov/automation.md",
@@ -37215,6 +37215,118 @@
       "translated_at": "2026-09-08T21:10:47+00:00",
       "model": "codex",
       "input_hash": "c347d7ccf602f1cee1ca51037a0e6f9e8cecea7797e3553356381fa02268caab"
+    },
+    "content/handbook/engineering/architecture/design-documents/teams/decisions/001-teams_complement_groups.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/teams/decisions/001-teams_complement_groups.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00",
+      "translated_at": "2026-09-08T22:49:12Z",
+      "model": "codex",
+      "input_hash": "58cde4144973c4adc5c57404419ac663b384eca98d6f50b9c4d05f93ea309f48"
+    },
+    "content/handbook/engineering/architecture/design-documents/teams/decisions/002-teams_are_organization_scoped.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/teams/decisions/002-teams_are_organization_scoped.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00",
+      "translated_at": "2026-09-08T22:49:12Z",
+      "model": "codex",
+      "input_hash": "044873c06b4f39b0cf4f8623d50055d24578ee071886c0c756cc9edb25691c0e"
+    },
+    "content/handbook/engineering/architecture/design-documents/teams/decisions/003-a_team_is_a_principal_not_a_container.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/teams/decisions/003-a_team_is_a_principal_not_a_container.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00",
+      "translated_at": "2026-09-08T22:49:12Z",
+      "model": "codex",
+      "input_hash": "344d508a3b95aaaed7563c1c6b9408e5a5eb9faacffb9ea825e197baae1bc61d"
+    },
+    "content/handbook/engineering/architecture/design-documents/teams/decisions/004-team_membership_is_an_ordinary_membership.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/teams/decisions/004-team_membership_is_an_ordinary_membership.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00",
+      "translated_at": "2026-09-08T22:49:12Z",
+      "model": "codex",
+      "input_hash": "b7a7141196c55bea9c2f0b994007131b596c87a1916eb1d19cd395cba949a12e"
+    },
+    "content/handbook/engineering/architecture/design-documents/teams/decisions/005-grants_target_namespaces.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/teams/decisions/005-grants_target_namespaces.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00",
+      "translated_at": "2026-09-08T22:55:31Z",
+      "model": "codex",
+      "input_hash": "7552cd6d4e470b21b60476da1d8ed3fdd289d058b7469f1199bffda9baa1ceb3"
+    },
+    "content/handbook/engineering/architecture/design-documents/teams/decisions/006-the_teams_api_surface.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/teams/decisions/006-the_teams_api_surface.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00",
+      "translated_at": "2026-09-08T22:55:31Z",
+      "model": "codex",
+      "input_hash": "73beebaaed95117beccc06716a19be1a56b629f91b5c686b59bf74910c114363"
+    },
+    "content/handbook/engineering/architecture/design-documents/teams/decisions/007-parity_before_migration.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/teams/decisions/007-parity_before_migration.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00",
+      "translated_at": "2026-09-08T22:55:31Z",
+      "model": "codex",
+      "input_hash": "094b1bdef9437a17ac7c28213129786e83ff84cc0865cff0486f5708293fa637"
+    },
+    "content/handbook/engineering/architecture/design-documents/teams/decisions/008-a_team_derived_membership_is_its_own_row.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/teams/decisions/008-a_team_derived_membership_is_its_own_row.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00",
+      "translated_at": "2026-09-08T22:55:31Z",
+      "model": "codex",
+      "input_hash": "34b3571562315e40ef69418c0c0e23d89d628acc4d00c114a6511b795cfdd227"
+    },
+    "content/handbook/engineering/architecture/design-documents/teams/appendices/a-dual_purpose_group_problem.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/teams/appendices/a-dual_purpose_group_problem.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00",
+      "translated_at": "2026-09-08T23:04:10Z",
+      "model": "codex",
+      "input_hash": "0115f99019ce78d0cf7e48f330d53adbf4700d1d53995ab2633fd55ab1bc2277"
+    },
+    "content/handbook/engineering/architecture/design-documents/teams/appendices/b-customer_pain_points_research.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/teams/appendices/b-customer_pain_points_research.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00",
+      "translated_at": "2026-09-08T23:04:10Z",
+      "model": "codex",
+      "input_hash": "df8d985ff0a87146833827793609c015e4138f2b7362b37d415d7fccd6075544"
+    },
+    "content/handbook/engineering/architecture/design-documents/teams/appendices/c-industry_and_competitive_context.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/teams/appendices/c-industry_and_competitive_context.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00",
+      "translated_at": "2026-09-08T23:04:10Z",
+      "model": "codex",
+      "input_hash": "ca8238bd3046b8e07ab83b76f956d1f25863d8a83796d9b99e076515e9f141eb"
+    },
+    "content/handbook/engineering/architecture/design-documents/teams/appendices/d-proposal_reconciliation.md": {
+      "path": "content/handbook/engineering/architecture/design-documents/teams/appendices/d-proposal_reconciliation.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T16:19:34+02:00",
+      "translated_at": "2026-09-08T23:04:10Z",
+      "model": "codex",
+      "input_hash": "764d37ee8a35b7ea41e41240d65d829cdd823b1a8c1324e98e9d9eebcb606362"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/_index_bak.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/_index_bak.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T01:01:41-04:00",
+      "translated_at": "2026-09-08T23:15:08+00:00",
+      "model": "codex",
+      "input_hash": "0bb59dbd17eae744f3d2ab2919c839ffc634409494b1e31bdb247f2b550d5637"
+    },
+    "content/handbook/solutions-architects/playbooks/pov/ai_bank.md": {
+      "path": "content/handbook/solutions-architects/playbooks/pov/ai_bank.md",
+      "upstream_sha": "a0d167307f5d32554672c5cf99e3f47abb35e1dc",
+      "upstream_committed_at": "2026-09-08T01:01:41-04:00",
+      "translated_at": "2026-09-08T23:21:17+00:00",
+      "model": "codex",
+      "input_hash": "20ee90181325a9705dafe88b55570e5e9d5298bc5a03674a88f4274f1bb96570"
     }
   }
 }
